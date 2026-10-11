@@ -22,7 +22,7 @@ The article assumes *Reflections as Signed Two-Sided Operators on a Jordan Algeb
 
 **Proposition (the symmetrised form).** The reflection by a **symmetry** $u = u^{-1}$ coincides with the symmetrised signed sandwich $U_u\circ\alpha$, and the diagonal signed sandwich $S^{\alpha}_{u,u^{-1}}$ has this symmetrisation.
 
-*Proof.* The symmetrisation of the sandwich $S^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ over the outer parameter is the twisted quadratic representation $U_u\circ\alpha$; for a symmetry the conjugation and the sandwich agree, as in *The Signed Sandwich on a Jordan Algebra*. $\square$
+*Proof.* The symmetrisation of the sandwich $S^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ over the outer parameter is the twisted quadratic representation $U_u\circ\alpha$; for a symmetry the conjugation and the sandwich agree, as in *The Signed Sandwich on a Jordan Algebra*.
 
 ### The Adjoint
 
@@ -32,7 +32,7 @@ $$
 \bigl(U_u\circ\alpha\bigr)^{\dagger} = U_{\alpha(u)}\circ\alpha .
 $$
 
-*Proof.* By *The Signed Adjoint Sandwich on a Jordan Algebra*, $(U_{a,b}\circ\alpha)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha$; with $a = b = u$ and $U_{u,u} = U_u$ this is the displayed formula. $\square$
+*Proof.* By *The Signed Adjoint Sandwich on a Jordan Algebra*, $(U_{a,b}\circ\alpha)^{\dagger} = U_{\alpha(a),\alpha(b)}\circ\alpha$; with $a = b = u$ and $U_{u,u} = U_u$ this is the displayed formula.
 
 **Theorem (self-adjointness).** A reflection is self-adjoint exactly when its parameter is fixed by the grade involution:
 
@@ -40,13 +40,13 @@ $$
 \bigl(U_u\circ\alpha\bigr)^{\dagger} = U_u\circ\alpha \iff \alpha(u) = u .
 $$
 
-*Proof.* The adjoint is $U_{\alpha(u)}\circ\alpha$; it is equal to $U_u\circ\alpha$ exactly when $U_{\alpha(u)} = U_u$, which for a non-degenerate trace form holds exactly when $\alpha(u) = u$. $\square$
+*Proof.* The adjoint is $U_{\alpha(u)}\circ\alpha$; it is equal to $U_u\circ\alpha$ exactly when $U_{\alpha(u)} = U_u$, which for a non-degenerate trace form holds exactly when $\alpha(u) = u$.
 
 ### The Degenerate Case
 
 **Proposition.** If the twisted square $u\alpha(u)$ is not central, then $r_u$ is not an involution, the reflection correspondence fails, and $r_u$ is an automorphism of infinite order; its adjoint $r_{\alpha(u)}$ is a different signed conjugation, and the operator is neither self-adjoint nor unitary in general.
 
-*Proof.* The square of the signed conjugation is the inner conjugation by $u\alpha(u)$, which is trivial exactly when that element is central; when it is not central, $r_u^2\ne\mathrm{id}$ and $r_u$ has infinite order. The adjoint is computed as the signed conjugation at $\alpha(u)$, which differs from $r_u$ whenever $\alpha(u)\ne u$. $\square$
+*Proof.* The square of the signed conjugation is the inner conjugation by $u\alpha(u)$, which is trivial exactly when that element is central; when it is not central, $r_u^2\ne\mathrm{id}$ and $r_u$ has infinite order. The adjoint is computed as the signed conjugation at $\alpha(u)$, which differs from $r_u$ whenever $\alpha(u)\ne u$.
 
 ## Reflection for Its Own Grade Involution
 
@@ -58,13 +58,13 @@ $$
 
 which is self-adjoint and unitary; the reflection at the parameter equal to its own involution degenerates to the identity of the algebra.
 
-*Proof.* $\alpha_r(x) = rxr$ and $r^{-1} = r$, so $r_r(x) = r(rxr)r^{-1} = x$; the identity is self-adjoint for every pairing and unitary. $\square$
+*Proof.* $\alpha_r(x) = rxr$ and $r^{-1} = r$, so $r_r(x) = r(rxr)r^{-1} = x$; the identity is self-adjoint for every pairing and unitary.
 
 ## Unitarity
 
 **Proposition.** A reflection that is a symmetry is unitary with respect to the adjoint exactly when the quadratic representation is an involution, $U_u^2 = \mathrm{id}$, which holds for the symmetries; in that case $(U_u\circ\alpha)^{\dagger}(U_u\circ\alpha) = \mathrm{id}$.
 
-*Proof.* By *The Signed Adjoint Sandwich on a Jordan Algebra* the unitarity of the signed sandwich is $U_{u,u}^2 = \mathrm{id}$, that is $U_u^2 = \mathrm{id}$; the symmetries satisfy it. $\square$
+*Proof.* By *The Signed Adjoint Sandwich on a Jordan Algebra* the unitarity of the signed sandwich is $U_{u,u}^2 = \mathrm{id}$, that is $U_u^2 = \mathrm{id}$; the symmetries satisfy it.
 
 ## Examples
 

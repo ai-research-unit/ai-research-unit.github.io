@@ -46,7 +46,7 @@ $K(y,x)^{*}=-K(x,y)$.
 the other factor using its sesquilinearity and the module axiom; the resulting expression is
 $\int\!\!\int(f(y),K(x,y)^{*}g(x))\,dy\,dx$, which is $\langle f,T^{\dagger}g\rangle$ with the
 kernel $K(y,x)^{*}$ after the interchange of the variables. The statement is the Clifford-module
-instance of the general kernel theorem of *Hermitian Kernels and the Integral Operator*. $\square$
+instance of the general kernel theorem of *Hermitian Kernels and the Integral Operator*.
 
 **Remark (why the conjugate-reverse is the object of this article).** The Euclidean and Hermitian
 Cauchy kernels are built from the **conjugate** variable: $F_r(X)=-X_r/(a_{4n}|X|^{4n})$ is odd,
@@ -76,7 +76,7 @@ evenness of $|Z|$; the involution statement is the conjugation of the numerator 
 coefficients, with the same normalisation; the matrix statement is that $D^{\mathsf T}E=\delta I$ of
 *The Hermitian Cauchy Integral and the Boundary Values*, which exhibits $E$ as the kernel of the
 operation inverse to the adjoint matrix operator. The verification in
-$\mathbb{H}\otimes_{\mathbb{R}}\mathrm{Cl}_{0,4}$ is in *Clifford Analysis*. $\square$
+$\mathbb{H}\otimes_{\mathbb{R}}\mathrm{Cl}_{0,4}$ is in *Clifford Analysis*.
 
 **Theorem (the matrix kernel is the adjoint partner of the matrix operator).** With the circulant
 matrix $D$ of the four Hermitian Dirac operators, the circulant matrix $E$ of the four Hermitian
@@ -91,7 +91,7 @@ distributions, and it is the kernel of the adjoint operation that inverts $D^{\m
 
 *Proof.* The first identity is the fundamental-solution theorem of *The Hermitian Cauchy Integral
 and the Boundary Values*; the second follows by the Hermitian symmetry of the matrix kernel and the
-commutativity of the circulant matrices, or by the second Borel–Pompeiu formula. $\square$
+commutativity of the circulant matrices, or by the second Borel–Pompeiu formula.
 
 ## The Adjoint Pairing of the Cauchy Theory
 
@@ -125,7 +125,7 @@ $$
 *Proof.* The one-operator statement is that of *The Cauchy Integral Operator*; passing to the matrix
 of the Hermitian theory, the conjugate-reverse kernel of the matrix transform is the same matrix
 transform with the conormal on the other side, and the Hermitian symmetry of the kernel $E$ and the
-reality of the conormal element give the self-adjointness of the singular operator. $\square$
+reality of the conormal element give the self-adjointness of the singular operator.
 
 **Corollary (the Szegő projection and the adjoint).** The Szegő projection $P^+$ of the monogenic
 Hardy space is self-adjoint, and its kernel — the Szegő kernel of *Positive Definite Kernels in
@@ -137,7 +137,6 @@ over a Clifford Algebra*.
 *Proof.* A projection is self-adjoint exactly when it is the orthogonal projection onto its range;
 the range of $P^+$ is the monogenic Hardy space, closed by *Hermitian Hilbert Modules over a
 Clifford Algebra*, and the reproducing property of its kernel makes $P^+$ the orthogonal projection.
-$\square$
 
 ## The Jump Relations
 
@@ -157,7 +156,7 @@ operator.
 *Proof.* The formulae are the decompositions of the identity with the projections
 $\mathcal{C}^{\pm}=\tfrac12(I\pm\mathcal{S})$; the existence of the limits is the Plemelj calculus
 of *The Cauchy Integral Operator* and *The Hermitian Cauchy Integral and the Boundary Values* read
-in the Hermitian refinement. $\square$
+in the Hermitian refinement.
 
 **Theorem (the jump of the adjoint).** The adjoint of the jump is the jump of the adjoint: with the
 adjoint taken with respect to the module form,
@@ -175,7 +174,7 @@ relation.
 *Proof.* The jump is the identity by the theorem above, and the identity is self-adjoint; the sum is
 twice $\mathcal{S}$, whose self-adjointness is the preceding section. The kernel form of the jump is
 the conjugate-reverse of the Plemelj formula $K\,N^{\mathsf T}$ computed on the two sides, where the
-two sides differ by the conormal term of the Cauchy–Pompeiu formula. $\square$
+two sides differ by the conormal term of the Cauchy–Pompeiu formula.
 
 **Remark (the jump as the boundary of the adjoint pairing).** The jump relation and the adjointness
 of the boundary operators are two readings of the same structure: the pairing

@@ -27,11 +27,11 @@ $$
 
 are injective and isometric, $\|L_f\| = \|R_f\| = \|f\|_1$, and the first is an algebra homomorphism while the second is an anti-homomorphism; their images $\mathcal{C}_L, \mathcal{C}_R$ are closed subalgebras of $B(L^1(G))$ isomorphic to $\mathcal{A}$ and to its opposite.
 
-**Proof.** Injectivity and the norms are *Convolution on a Group*, §The Convolution Operators; the homomorphism and anti-homomorphism laws are $L_fL_g = L_{f*g}$ and $R_fR_g = R_{g*f}$ there. An isometric isomorphic embedding has closed image because the image of a complete space under an isometry is complete. $\square$
+**Proof.** Injectivity and the norms are *Convolution on a Group*, §The Convolution Operators; the homomorphism and anti-homomorphism laws are $L_fL_g = L_{f*g}$ and $R_fR_g = R_{g*f}$ there. An isometric isomorphic embedding has closed image because the image of a complete space under an isometry is complete.
 
 **Corollary (the module structure).** The left and the right actions commute, $L_fR_g = R_gL_f$, so that $\mathcal{A}$ is a bimodule over itself, and $\mathcal{C}_R \subseteq \mathcal{C}_L'$ and $\mathcal{C}_L \subseteq \mathcal{C}_R'$ inside $B(L^1(G))$.
 
-**Proof.** The commutation law is associativity, $f*(h*g) = (f*h)*g$, from *Convolution on a Group*. $\square$
+**Proof.** The commutation law is associativity, $f*(h*g) = (f*h)*g$, from *Convolution on a Group*.
 
 **Remark (why the regular module is not enough).** The algebra acts on its own Banach space faithfully, but a Banach space is not a Hilbert space and the module carries no inner product adapted to the involution; the representation on $L^2(G)$ repairs both defects, and it is the one whose weak closure is the von Neumann algebra of the next sections.
 
@@ -47,7 +47,7 @@ $$
 
 and $\lambda(x), \rho(x)$ are unitary on $L^2(G)$ when $G$ is unimodular; in general $\lambda$ is unitary and $\rho$ is unitary for the weighted inner product with weight $\Delta$.
 
-**Proof.** The composition laws are the associativity of the product on the argument $y\mapsto x^{-1}y$ and $y\mapsto yx$; unitarity of $\lambda$ is the left invariance of $dx$, and unitarity of $\rho$ on $L^2(G)$ holds exactly when $dx$ is also right-invariant, that is when $\Delta\equiv1$; the weighted form is the standard correction. $\square$
+**Proof.** The composition laws are the associativity of the product on the argument $y\mapsto x^{-1}y$ and $y\mapsto yx$; unitarity of $\lambda$ is the left invariance of $dx$, and unitarity of $\rho$ on $L^2(G)$ holds exactly when $dx$ is also right-invariant, that is when $\Delta\equiv1$; the weighted form is the standard correction.
 
 **Proposition (the integrated form and the products).** For $f, g \in L^1(G)$,
 
@@ -57,11 +57,11 @@ $$
 
 and $\|\lambda(f)\| \leq \|f\|_1$, $\|\rho(f)\| \leq \|f\|_1$ in $B(L^2(G))$; on the invariant subspace $L^1(G)\cap L^2(G)$ the operator $\lambda(f)$ agrees with left convolution by $f$.
 
-**Proof.** The products follow by integrating the group products $\lambda(x)\lambda(y) = \lambda(xy)$ against $f(x)g(y)$, and the bounds are the triangle inequality for the operator-valued integral; the agreement on $L^1\cap L^2$ is the convolution theorem. $\square$
+**Proof.** The products follow by integrating the group products $\lambda(x)\lambda(y) = \lambda(xy)$ against $f(x)g(y)$, and the bounds are the triangle inequality for the operator-valued integral; the agreement on $L^1\cap L^2$ is the convolution theorem.
 
 **Corollary (the regular representation of $G\times G$).** The pair $(\lambda,\rho)$ is a unitary representation of $G\times G$ on $L^2(G)$ whose two factors commute; on a unimodular group it is the regular representation, and it is the representation whose decomposition is the content of the Plancherel theorem.
 
-**Proof.** The product law of $G\times G$ and the commutation give the representation; the two factors being the left and right translations, the representation is standard. $\square$
+**Proof.** The product law of $G\times G$ and the commutation give the representation; the two factors being the left and right translations, the representation is standard.
 
 ## The Two $\mathrm{C}^*$-Completions
 
@@ -75,7 +75,7 @@ and the **full (universal) group $\mathrm{C}^*$-algebra** $C^*(G)$ is the comple
 
 **Theorem (the completions and the algebra).** The map $f \mapsto \lambda(f)$ extends to a surjective $\mathrm{C}^*$-homomorphism $C^*(G)\to C^*_r(G)$, which is an isomorphism exactly when $G$ is amenable; the algebra $\mathcal{A} = L^1(G)$ is dense in both, and a nondegenerate $*$-representation of $\mathcal{A}$ extends uniquely to $C^*(G)$.
 
-**Proof.** The reduced norm is dominated by the universal norm, giving the quotient map; the algebraic facts are the standard properties of the full and reduced completions and amenability is the standard criterion for the two norms to agree. The representation statement is the universal property of $C^*(G)$. $\square$
+**Proof.** The reduced norm is dominated by the universal norm, giving the quotient map; the algebraic facts are the standard properties of the full and reduced completions and amenability is the standard criterion for the two norms to agree. The representation statement is the universal property of $C^*(G)$.
 
 **Remark (the involution enters here).** The completions are $\mathrm{C}^*$-algebras for the involution $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$, which is the structure of the `- * Theory` group of this category and is cited, not developed; the equality of the involution on the elements with the adjoint on the operators is the content of *Hermitian Operators on a Group Algebra*, in the `- * Operator Theory` group.
 
@@ -85,7 +85,7 @@ and the **full (universal) group $\mathrm{C}^*$-algebra** $C^*(G)$ is the comple
 
 **Theorem (weak closure of the algebra).** The algebra $\lambda(L^1(G))$ is strongly dense in $L(G)$, and the strong, weak and ultraweak closures of $\lambda(L^1(G))$ coincide; hence $L(G)$ is the smallest von Neumann algebra containing the image of $\mathcal{A}$, and $\lambda : \mathcal{A}\to L(G)$ extends to a normal $*$-homomorphism $C^*_r(G)\to L(G)$.
 
-**Proof.** The double commutant of a $*$-closed set is its closure in the weak (equivalently strong, equivalently ultraweak) topology by von Neumann's double-commutant theorem, and $\lambda(L^1(G))$ is $*$-closed because $\lambda(f^*) = \lambda(f)^*$ (proved in the `- * Operator Theory` group); the strong closure of $\lambda(L^1(G))$ is $\lambda(G)''$ because the approximate identity converges to the identity strongly. The normal extension is the standard one. $\square$
+**Proof.** The double commutant of a $*$-closed set is its closure in the weak (equivalently strong, equivalently ultraweak) topology by von Neumann's double-commutant theorem, and $\lambda(L^1(G))$ is $*$-closed because $\lambda(f^*) = \lambda(f)^*$ (proved in the `- * Operator Theory` group); the strong closure of $\lambda(L^1(G))$ is $\lambda(G)''$ because the approximate identity converges to the identity strongly. The normal extension is the standard one.
 
 **Theorem (the commutant description).** On a unimodular group the right regular representation generates the commutant of the left one,
 
@@ -95,7 +95,7 @@ $$
 
 so the von Neumann algebra generated by the left translations is exactly the algebra of operators commuting with the right translations.
 
-**Proof.** Every $\rho(y)$ commutes with every $\lambda(x)$, so $\rho(G)\subseteq\lambda(G)'$ and $\lambda(G)\subseteq\rho(G)'$; the reverse inclusions $\lambda(G)''\supseteq\rho(G)'$ and $\rho(G)''\supseteq\lambda(G)'$ are the standard commutant theorem for the regular representation of a unimodular group, the unimodularity being needed for $\rho$ to be unitary on $L^2(G)$ and for the two representations to be in duality. $\square$
+**Proof.** Every $\rho(y)$ commutes with every $\lambda(x)$, so $\rho(G)\subseteq\lambda(G)'$ and $\lambda(G)\subseteq\rho(G)'$; the reverse inclusions $\lambda(G)''\supseteq\rho(G)'$ and $\rho(G)''\supseteq\lambda(G)'$ are the standard commutant theorem for the regular representation of a unimodular group, the unimodularity being needed for $\rho$ to be unitary on $L^2(G)$ and for the two representations to be in duality.
 
 **Proposition (the trace and the weights).** On a unimodular group the algebra $L(G)$ carries the faithful normal semifinite trace
 
@@ -105,11 +105,11 @@ $$
 
 the Plancherel trace of *The Plancherel Theorem*, normalised by $\tau(\lambda(f)\lambda(g)^*) = \langle f,g\rangle_{L^2(G)}$; when $G$ is discrete and the left regular representation is irreducible-free in the sense of a factor, $\tau(T) = \langle T\delta_e,\delta_e\rangle$ is a finite trace with $\tau(1) = 1$.
 
-**Proof.** The trace is integration of the ordinary trace against the Plancherel measure, established in *The Plancherel Theorem* and *Noncommutative Harmonic Analysis*; the normalisation is the definite Plancherel form; for discrete $G$ the vector $\delta_e$ is separating and the vector state is the same trace. $\square$
+**Proof.** The trace is integration of the ordinary trace against the Plancherel measure, established in *The Plancherel Theorem* and *Noncommutative Harmonic Analysis*; the normalisation is the definite Plancherel form; for discrete $G$ the vector $\delta_e$ is separating and the vector state is the same trace.
 
 **Corollary (the centre and the factors).** The centre of $L(G)$ is $\lambda(G)'' \cap \rho(G)''$, and its spectrum is the space over which the left regular representation decomposes; $L(G)$ is a factor exactly when the centre is $\mathbb{C}$, which for a discrete group happens when every nontrivial conjugacy class is infinite (the ICC groups).
 
-**Proof.** The centre is the intersection of the algebra with its commutant; the factor statement is the standard criterion for the reduced group von Neumann algebra of a discrete ICC group. $\square$
+**Proof.** The centre is the intersection of the algebra with its commutant; the factor statement is the standard criterion for the reduced group von Neumann algebra of a discrete ICC group.
 
 ## The Passage from $L^1$ to $L(G)$
 
@@ -121,7 +121,7 @@ $$
 
 exhibit three completions of the same algebra: the norm completion in the universal norm, the norm completion in the regular representation, and the weak closure in the regular representation. The convolution operators $L_f, R_f$ on $L^1(G)$ are the restrictions to $\mathcal{A}$ of the operators $\lambda(f), \rho(f)$, and the algebra $L(G)$ is the smallest von Neumann algebra on $L^2(G)$ containing them.
 
-**Proof.** The inclusions are by definition; the identification of the convolution operators with the integrated representations is the agreement on $L^1\cap L^2$ together with density; the last statement is the weak-closure theorem. $\square$
+**Proof.** The inclusions are by definition; the identification of the convolution operators with the integrated representations is the agreement on $L^1\cap L^2$ together with density; the last statement is the weak-closure theorem.
 
 **Remark (what the article does not do).** The article has used the involution only through its citation from *The Convolution Algebra $L^1(G)$* and the standard equality $\lambda(f^*) = \lambda(f)^*$; the equality is proved in the `- * Operator Theory` group of this category, and no adjoint is taken here. The direct-integral decomposition of $L(G)$, the Plancherel measure and the multiplicity theory are *Noncommutative Harmonic Analysis*, *The Plancherel Theorem* and *The Plancherel Operator* (immediately following); the Tomita–Takesaki modular theory of $L(G)$ for a non-unimodular group belongs to *Operator Algebras* and is not used.
 

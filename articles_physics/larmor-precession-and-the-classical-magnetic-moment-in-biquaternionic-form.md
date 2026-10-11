@@ -58,7 +58,6 @@ $$
 \tilde{\boldsymbol{\mu}}\,\mathbf{B} = -\,\boldsymbol{\mu}\cdot\mathbf{B} + \boldsymbol{\mu}\times\mathbf{B}.
 $$
 
-<!-- CONVENTION — moment and field in H_B: the classical magnetic moment and the magnetic induction are both written as pure real quaternions in the real-quaternion subspace H_B, the slot of the material axial vectors. The intrinsic (spin) moment of the informational sector uses the same vector slot but with the central factor i, as mu_k i e_k in M_+. The two representatives differ by the central i that exchanges the sectors, i M_+ = M_-, and a reviewer must not "align" them by dropping the i: the real representative carries the material description, the imaginary one the observable, and the factor between them is the sector exchange. -->
 
 ### The Moment of a Rigid Rotor
 
@@ -161,7 +160,6 @@ $$
 
 the minus sign expressing the fact that the rotation sense is opposite to the field when $\gamma$ is positive. Equivalently, the moment rotates about $\mathbf{B}$ with angular frequency $\omega_L = |\gamma|\,B$, in the sense fixed by the sign of $\gamma$.
 
-<!-- CONVENTION — precession sense: the Larmor equation is written dot(mu) = gamma mu x B, so the angular-velocity vector is bold-omega_L = -gamma B and a moment with positive gamma precesses *negatively* about B (clockwise when viewed along B). The sign is the same one that appears in the quantum exercise, where the evolution is exp(-iHt/hbar) with H = -gamma B_0 S_z and the Bloch vector rotates as (cos(gamma B t), -sin(gamma B t)), the signed rate being gamma B. A reviewer must not "fix" the minus sign in bold-omega_L = -gamma B: it is the physically correct sense and it agrees with the quantum article. -->
 
 ### The Biquaternion Commutator Form
 
@@ -230,7 +228,6 @@ $$
 
 The conjugation rotates $\mathbf{v}$ through the angle $\theta$ about $\hat{\mathbf{n}}$ in the right-handed sense. Two elementary properties are used repeatedly. First, the rotor is normalized, $N(\tilde{R}) = \tilde{R}\tilde{R}^{\natural} = e_0$, so the conjugation preserves the biquaternion norm of every vector it acts on. Second, the half-angle makes the rotor a **double cover** of the rotation: $\tilde{R}(\theta + 2\pi,\hat{\mathbf{n}}) = -\tilde{R}(\theta,\hat{\mathbf{n}})$, and the two rotors $\pm\tilde{R}$ produce the same rotation. The rotation group is therefore $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\}$, with $\mathbb{H}_{\mathbb{B}}^1$ the group of unit real quaternions, which is $SU(2)$.
 
-<!-- CONVENTION — rotor sign and action: the rotation rotor is R(theta,n) = cos(theta/2) e_0 + sin(theta/2) n_k e_k and acts by R v R_dag, rotating a pure real vector by +theta about n in the right-handed sense. Both the sign of the sine and the right-handedness are conventions of the series, fixed by the spatial rotation rotors of *Angular Momentum and Spin in Biquaternionic Form*. A reviewer must not flip the sign of the sine to "make it a rotation by theta": with the sine positive the conjugation is a right-handed rotation by +theta, and all the rotation formulae of the series depend on it. -->
 
 ### The Precession as a Rotor
 

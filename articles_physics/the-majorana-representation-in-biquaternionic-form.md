@@ -106,7 +106,7 @@ $$
 \zeta \longmapsto \frac{a^*\zeta - b^*}{b\zeta + a} .
 $$
 
-The Möbius transformation is exactly the rotation of the sphere induced by $g$: the star of the rotated state is the rotated star. This was checked numerically. For the rotation about $\hat{y}$ by angle $\beta$ the rotor is $\tilde{R} = e^{\beta e_2/2}$, whose matrix is
+The Möbius transformation is exactly the rotation of the sphere induced by $g$: the star of the rotated state is the rotated star. For the rotation about $\hat{y}$ by angle $\beta$ the rotor is $\tilde{R} = e^{\beta e_2/2}$, whose matrix is
 
 $$
 g = \begin{pmatrix} \cos\tfrac{\beta}{2} & -\sin\tfrac{\beta}{2}\\ \sin\tfrac{\beta}{2} & \cos\tfrac{\beta}{2}\end{pmatrix},

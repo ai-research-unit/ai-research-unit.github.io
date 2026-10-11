@@ -27,7 +27,7 @@ $$
 
 **Proposition.** $L^{\alpha}_a \in \operatorname{End}_R(M)$ and $L^{\alpha}_a=L_a\circ\alpha=\alpha\circ L_{\alpha^{-1}(a)}$.
 
-*Proof.* It is the composite of the two $R$-linear maps $L_a$ and $\alpha$; the second identity is $\alpha(L_{\alpha^{-1}(a)}(m))=\alpha(\alpha^{-1}(a)\,m)=a\,\alpha(m)$. $\square$
+*Proof.* It is the composite of the two $R$-linear maps $L_a$ and $\alpha$; the second identity is $\alpha(L_{\alpha^{-1}(a)}(m))=\alpha(\alpha^{-1}(a)\,m)=a\,\alpha(m)$.
 
 The map $a \mapsto L^{\alpha}_a$ is $R$-linear and additive in $a$, but it is **not** multiplicative: the composition of two of them is computed below, and it returns an unsigned left multiplication.
 
@@ -41,7 +41,7 @@ $$
 
 In particular $L^{\alpha}_a=L_a$ for all $a$ exactly when $\alpha=\mathrm{id}$ on $M$, and $L^{\alpha}_1=\alpha$.
 
-*Proof.* The first two displays are the proposition. For the third, $L^{\alpha}_a(\alpha(m))=a\,\alpha(\alpha(m))=am=L_a(m)$. For the fourth, $\alpha(L^{\alpha}_a(m))=\alpha(a\alpha(m))=\alpha(a)m=L_{\alpha(a)}(m)$; composing with $\alpha$ gives the displayed identity. Setting $a=1$ gives $L^{\alpha}_1=\alpha$. $\square$
+*Proof.* The first two displays are the proposition. For the third, $L^{\alpha}_a(\alpha(m))=a\,\alpha(\alpha(m))=am=L_a(m)$. For the fourth, $\alpha(L^{\alpha}_a(m))=\alpha(a\alpha(m))=\alpha(a)m=L_{\alpha(a)}(m)$; composing with $\alpha$ gives the displayed identity. Setting $a=1$ gives $L^{\alpha}_1=\alpha$.
 
 Thus the signed left multiplication is the unsigned one at the grade involution of its argument, and the two families differ by the single operator $\alpha$: the signed family is $\{L_a\alpha\}$ and the unsigned family is $\{L_a\}$.
 
@@ -55,7 +55,7 @@ $$
 
 Consequently $L^{\alpha}_a$ is injective exactly when $L_a$ is, it is surjective exactly when $L_a$ is, and it is invertible exactly when $a$ acts invertibly on $M$.
 
-*Proof.* $L^{\alpha}_a(m)=0$ says $\alpha(m) \in \ker L_a$, that is $m \in \alpha(\ker L_a)$ because $\alpha$ is an involution. The image is $a\alpha(M)=aM$. The last clauses follow because $\alpha$ is a bijection, and $L_a$ is invertible exactly when $am=0 \Rightarrow m=0$ and $aM=M$. $\square$
+*Proof.* $L^{\alpha}_a(m)=0$ says $\alpha(m) \in \ker L_a$, that is $m \in \alpha(\ker L_a)$ because $\alpha$ is an involution. The image is $a\alpha(M)=aM$. The last clauses follow because $\alpha$ is a bijection, and $L_a$ is invertible exactly when $am=0 \Rightarrow m=0$ and $aM=M$.
 
 The signed and the unsigned left multiplication of the same element have the same image but conjugate kernels.
 
@@ -77,11 +77,11 @@ $$
 
 Thus a product of two left multiplications of the same parity is unsigned and a product of two of opposite parity is signed: the family $\{L_a\}\cup\{L^{\alpha}_a\}$ is a monoid graded by $\mathbb{Z}/2$, the unsigned operators even and the signed operators odd.
 
-*Proof.* The first is the homomorphism property of $L$. For the second, $L^{\alpha}_a(L_b(m))=a\,\alpha(bm)=a\alpha(b)\alpha(m)=L^{\alpha}_{a\alpha(b)}(m)$. For the third, $L_a(L^{\alpha}_b(m))=a\,b\,\alpha(m)=L^{\alpha}_{ab}(m)$. For the fourth, $L^{\alpha}_a(L^{\alpha}_b(m))=a\,\alpha(b\alpha(m))=a\,\alpha(b)\,m=L_{a\alpha(b)}(m)$, the two grade involutions cancelling. $\square$
+*Proof.* The first is the homomorphism property of $L$. For the second, $L^{\alpha}_a(L_b(m))=a\,\alpha(bm)=a\alpha(b)\alpha(m)=L^{\alpha}_{a\alpha(b)}(m)$. For the third, $L_a(L^{\alpha}_b(m))=a\,b\,\alpha(m)=L^{\alpha}_{ab}(m)$. For the fourth, $L^{\alpha}_a(L^{\alpha}_b(m))=a\,\alpha(b\alpha(m))=a\,\alpha(b)\,m=L_{a\alpha(b)}(m)$, the two grade involutions cancelling.
 
 **Corollary.** The signed left multiplications are closed under composition with the unsigned ones to the extent the rule permits: the product of an even number of signed operators is unsigned, and the operator $\alpha=L^{\alpha}_1$ is the odd generator.
 
-*Proof.* Iterate the four rules; the parity of the number of signed factors determines the parity of the product. $\square$
+*Proof.* Iterate the four rules; the parity of the number of signed factors determines the parity of the product.
 
 ### The generated algebra
 
@@ -95,7 +95,7 @@ $$
 
 is a surjective homomorphism of $R$-algebras, where $A\rtimes\mathbb{Z}/2$ is the crossed product with multiplication $(a,\epsilon)(b,\eta)=(a\,\alpha^{\epsilon}(b),\,\epsilon+\eta)$.
 
-*Proof.* $L^{\alpha}_a=L_a\alpha$, so $L_A$ and $\alpha$ generate everything; the crossed-product multiplication is designed so that $(a,\epsilon)\mapsto L_a\alpha^{\epsilon}$ respects it: $\alpha L_b\alpha^{-1}=L_{\alpha(b)}$, which is the twist in $(a,\epsilon)(b,\eta)$. $\square$
+*Proof.* $L^{\alpha}_a=L_a\alpha$, so $L_A$ and $\alpha$ generate everything; the crossed-product multiplication is designed so that $(a,\epsilon)\mapsto L_a\alpha^{\epsilon}$ respects it: $\alpha L_b\alpha^{-1}=L_{\alpha(b)}$, which is the twist in $(a,\epsilon)(b,\eta)$.
 
 The crossed product, its multiplication and its relation to the grading are the subject of *Crossed Products*, named here and not developed.
 
@@ -109,7 +109,7 @@ $$
 
 Consequently $L^{\alpha}_a$ is an involution if and only if $a\alpha(a)$ acts as the identity on $M$, that is, $a\alpha(a)-1 \in \operatorname{Ann}_A(M)$; for a faithful module this says $a\alpha(a)=1$.
 
-*Proof.* $L^{\alpha}_a(L^{\alpha}_a(m))=a\,\alpha(a\alpha(m))=a\,\alpha(a)\,m=L_{a\alpha(a)}(m)$. $\square$
+*Proof.* $L^{\alpha}_a(L^{\alpha}_a(m))=a\,\alpha(a\alpha(m))=a\,\alpha(a)\,m=L_{a\alpha(a)}(m)$.
 
 The result is the one-sided case of the reflection criterion of the sandwich articles: a signed one-sided operator is an involution exactly when the product $a\alpha(a)$ is absorbed by the annihilator.
 
@@ -133,7 +133,7 @@ $$
 
 the even part of the module, and if $a \in \operatorname{Ann}_A(M)$ then $\operatorname{Fix}(L^{\alpha}_a)=\{0\}$.
 
-*Proof.* The first is the definition; $L^{\alpha}_1=\alpha$ gives the second; and $aM=0$ turns $a\alpha(m)=m$ into $m=0$. $\square$
+*Proof.* The first is the definition; $L^{\alpha}_1=\alpha$ gives the second; and $aM=0$ turns $a\alpha(m)=m$ into $m=0$.
 
 ### The even case
 
@@ -147,7 +147,7 @@ $$
 
 For a unit $a$ this is the sum of the $1$-eigenspace of $L_a$ on $M_{\bar0}$ and the $(-1)$-eigenspace of $L_a$ on $M_{\bar1}$.
 
-*Proof.* If $\alpha(a)=a$ then $L^{\alpha}_a\alpha=\alpha L^{\alpha}_a$ by the fourth relation, so $L^{\alpha}_a$ preserves the eigenspaces of $\alpha$. Write $m=m_0+m_1$; then $a\alpha(m)=a m_0-a m_1$, and the equation $a\alpha(m)=m$ reads $a m_0-a m_1=m_0+m_1$, which by the directness of $M_{\bar0}\oplus M_{\bar1}$ is the pair of equations $am_0=m_0$ and $am_1=-m_1$. $\square$
+*Proof.* If $\alpha(a)=a$ then $L^{\alpha}_a\alpha=\alpha L^{\alpha}_a$ by the fourth relation, so $L^{\alpha}_a$ preserves the eigenspaces of $\alpha$. Write $m=m_0+m_1$; then $a\alpha(m)=a m_0-a m_1$, and the equation $a\alpha(m)=m$ reads $a m_0-a m_1=m_0+m_1$, which by the directness of $M_{\bar0}\oplus M_{\bar1}$ is the pair of equations $am_0=m_0$ and $am_1=-m_1$.
 
 ### The general case
 
@@ -155,7 +155,7 @@ For a general $a$ the fixed set is a single $\alpha$-twisted condition, and the 
 
 **Proposition.** For arbitrary $a \in A$, a fixed element $m$ of $L^{\alpha}_a$ satisfies $\alpha(m)=a^{-1}m$ when $a$ acts invertibly; conversely an $m$ with $\alpha(m)=a^{-1}m$ is fixed. If in addition $\alpha(a)=a^{-1}$, such an $m$ has $\alpha^{2}(m)=\alpha(a^{-1})\alpha(m)=\alpha(a)^{-1}\alpha(m)=a\,\alpha(m)=m$, so the condition is consistent with $\alpha^{2}=\mathrm{id}$.
 
-*Proof.* The first two clauses restate $a\alpha(m)=m$. For the last, apply $\alpha$ to $\alpha(m)=a^{-1}m$: $m=\alpha(a^{-1})\alpha(m)=\alpha(a)^{-1}\alpha(m)$, so with $\alpha(a)=a^{-1}$ one has $m=a\,\alpha(m)$, which is the fixed-point equation again. $\square$
+*Proof.* The first two clauses restate $a\alpha(m)=m$. For the last, apply $\alpha$ to $\alpha(m)=a^{-1}m$: $m=\alpha(a^{-1})\alpha(m)=\alpha(a)^{-1}\alpha(m)$, so with $\alpha(a)=a^{-1}$ one has $m=a\,\alpha(m)$, which is the fixed-point equation again.
 
 In the antisymmetric case $\alpha(a)=a^{-1}$ the fixed set of $L^{\alpha}_a$ is the set of elements whose $\alpha$-image is $a^{-1}m$; this is the one-sided counterpart of the antisymmetric units of *Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra*.
 

@@ -132,7 +132,7 @@ $$
 
 for a unit vector $\mathbf{n}$ determined by $\mathbf{Q}$. Moreover $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$ on the cone.
 
-**Proof.** Off the cone, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, the element and its Hermitian conjugate are invertible, so $\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}} \circ R_{\tilde{Q}^{*}}$ is a composite of two bijections and has rank $4$. On the cone, with $\tilde{Q} \neq 0$, the matrix of the element has rank one (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), so $\tilde{Q}$ is a nonzero zero divisor, the left ideal $\mathbb{B}\tilde{Q}^{*}$ is minimal of complex dimension $2$ (*Biquaternion Ideals and Peirce Decomposition*), and
+**Proof.** Off the cone, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, the element and its Hermitian conjugate are invertible, so $\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}} \circ R_{\tilde{Q}^{*}}$ is a composite of two bijections and has rank $4$. On the cone, with $\tilde{Q} \neq 0$, the matrix of the element has rank one (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), so $\tilde{Q}$ is a nonzero zero divisor, the left ideal $\mathbb{B}\tilde{Q}^{*}$ is minimal of complex dimension $2$ (*Ideals and Peirce Decomposition of the General Plain Algebra*), and
 
 $$
 \operatorname{im}\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}}\bigl(\mathbb{B}\tilde{Q}^{*}\bigr) = \mathbb{B}\,\tilde{Q}\tilde{Q}^{*} = \mathbb{C}\cdot\tilde{Q}\tilde{Q}^{*},
@@ -171,7 +171,7 @@ $$
 \mathrm{H}_{\tilde{Q}}(\tilde U) = 2\bigl(U^0 + i U^3\bigr)\bigl(e_0 + ie_3\bigr) = 4\bigl(U^0 + iU^3\bigr)\tilde\Pi_1 ,
 $$
 
-in which the image depends only on the two coefficients $U^0$ and $U^3$; the operator has forgotten the other two. Applying it twice gives zero, as the nilpotent case requires. The element $\tilde\Pi_1$ is the idempotent of *Biquaternion Ideals and Peirce Decomposition*, and its vanishing norm is the vanishing of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
+in which the image depends only on the two coefficients $U^0$ and $U^3$; the operator has forgotten the other two. Applying it twice gives zero, as the nilpotent case requires. The element $\tilde\Pi_1$ is the idempotent of *Ideals and Peirce Decomposition of the General Plain Algebra*, and its vanishing norm is the vanishing of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
 
 **A null operand with a nonzero scalar part.** Take $\tilde{Q} = \tfrac12(e_0 - ie_3) = \tilde\Pi_2$. Then $Q^\mu = (\tfrac12, 0, 0, -\tfrac{i}{2})$, of norm $\tfrac14 + (-\tfrac{i}{2})^2 = \tfrac14 - \tfrac14 = 0$ and of scalar part $\tfrac12 \neq 0$. This operand is **Hermitian**: $(\tfrac12)^{\dagger} = \tfrac12$ and $(ie_3)^{\dagger} = i^{\dagger}e_3^{\dagger} = (-i)(-e_3) = ie_3$, so $\tilde{Q}^{*} = \tilde{Q}$ and the operator is the two-sided product $\tilde\Pi_2\,\tilde U\,\tilde\Pi_2$. On a general $\tilde U = U^0e_0 + U^1e_1 + U^2e_2 + U^3e_3$ its value is
 

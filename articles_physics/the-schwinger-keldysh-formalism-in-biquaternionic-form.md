@@ -107,7 +107,7 @@ so $R\in O(2)$. The group $O(2)=U(1)\rtimes\mathbb{Z}_2$ is the group of the bra
 $$
 \hat{\mathcal G} = \begin{pmatrix} G^K & G^R \\ G^A & 0\end{pmatrix}.
 $$
-The $qq$ entry vanishes identically. **Verification.** With the consistent real set $G^{++}=2.5$, $G^{+-}=1$, $G^{-+}=3$, $G^{--}=1.5$ (so that $G^{++}+G^{--}=G^{+-}+G^{-+}=4$), the rotation gives
+The $qq$ entry vanishes identically. With the consistent real set $G^{++}=2.5$, $G^{+-}=1$, $G^{-+}=3$, $G^{--}=1.5$ (so that $G^{++}+G^{--}=G^{+-}+G^{-+}=4$), the rotation gives
 $$
 \hat{\mathcal G} = \begin{pmatrix} 4 & 1.5 \\ -0.5 & 0\end{pmatrix},
 \qquad
@@ -136,7 +136,7 @@ $$
 G^K(\omega) = \coth\frac{\beta\omega}{2}\big(G^R(\omega)-G^A(\omega)\big)
 = \big(1+2n_{\mathrm B}(\omega)\big)\big(G^R(\omega)-G^A(\omega)\big),
 $$
-the **fluctuation–dissipation relation**. **Verification.** With the model retarded and advanced functions $G^{R/A}(\omega)=1/(\omega-E\pm i\gamma)$, $E=1.1$, $\gamma=0.3$, $\beta=2$, the two forms of the coefficient — $\coth(\beta\omega/2)$ and $1+2n_{\mathrm B}(\omega)$ — agree identically, and both reproduce $G^K$ at $\omega=0.2,1.1,2.5$; the identity $\coth(\beta\omega/2)=1+2n_{\mathrm B}(\omega)$ was checked at several frequencies to machine precision.
+the **fluctuation–dissipation relation**. With the model retarded and advanced functions $G^{R/A}(\omega)=1/(\omega-E\pm i\gamma)$, $E=1.1$, $\gamma=0.3$, $\beta=2$, the two forms of the coefficient — $\coth(\beta\omega/2)$ and $1+2n_{\mathrm B}(\omega)$ — agree identically, and both reproduce $G^K$ at $\omega=0.2,1.1,2.5$; the identity $\coth(\beta\omega/2)=1+2n_{\mathrm B}(\omega)$ was checked at several frequencies to machine precision.
 
 **Centrality and the framework.** The thermal factor $\coth(\beta\omega/2)$ is a central scalar, so the fluctuation–dissipation relation multiplies every component of the module structure identically: the relation is diagonal in the module and in the sector index. Consequently, for a scalar biquaternion field the equilibrium CTP structure factorizes into the two sectors, and each sector carries the same thermal factor; for a spinor field the factor is still central but the difference $G^R-G^A$ is a matrix, and the relation is a matrix proportionality rather than a scalar one.
 

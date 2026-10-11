@@ -39,17 +39,18 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Idempotents of the General Plain Algebra](../articles_maths/idempotents-of-the-general-plain-algebra.html)
 - [Zero Divisors of the General Plain Algebra](../articles_maths/zero-divisors-of-the-general-plain-algebra.html)
 
-#### Associative and Unital Theory
+#### Specific Theory
 
-- [Biquaternion Ideals and Peirce Decomposition](../articles_maths/biquaternion-ideals-and-peirce-decomposition.html)
+- [Ideals and Peirce Decomposition of the General Plain Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.html)
 - [Modules over the General Plain Algebra of Biquaternions](../articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.html)
-- [The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
-- [Biquaternion Square Roots of Minus One, Zero and Plus One](../articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.html)
-- [Biquaternion Square Roots of a General Element](../articles_maths/biquaternion-square-roots-of-a-general-element.html)
+- [The Enveloping Algebra of the General Plain Algebra and the Bi-module Structure](../articles_maths/the-enveloping-algebra-of-the-general-plain-algebra-and-the-bi-module-structure.html)
+- [Biquaternion Square Roots of Minus One, Zero and Plus One](../articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.html)
+- [Biquaternion Square Roots of a General Element](../articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.html)
+- [The Specificities of the General Plain Algebra](../articles_maths/the-specificities-of-the-general-plain-algebra.html)
 
 #### Form
 
-- [Association and the Transpose on the Biquaternion Algebra](../articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.html)
+- [Association and the Transpose on the General Plain Algebra](../articles_maths/association-and-the-transpose-on-the-general-plain-algebra.html)
 - [Remarkable Subspaces under the General Plain Algebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.html)
 
 #### Operators
@@ -69,7 +70,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Introduction to the Symmetric Plain Algebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-plain-algebra-of-biquaternions.html)
 
-#### Commutative and Unital Theory
+#### Specific Theory
 
 - [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra](../articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html)
 
@@ -93,7 +94,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Introduction to the Antisymmetric Plain Algebra of Biquaternions](../articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.html)
 
-#### Lie Theory
+#### Specific Theory
 
 - [The Lie Algebra of the Antisymmetric Plain Algebra](../articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.html)
 
@@ -119,12 +120,13 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Idempotents of the Quaternionic Product](../articles_maths/idempotents-of-the-quaternionic-product.html)
 - [The Nilpotents and the Zero Divisors of the Quaternionic Product](../articles_maths/the-nilpotents-and-the-zero-divisors-of-the-quaternionic-product.html)
 
-#### Non-Associative Theory
+#### Specific Theory
 
 - [The Associator and the Ternary Product of the Quaternionic Product](../articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.html)
 - [The Symmetrised Quaternionic Product and the Hermitian Subspace](../articles_maths/the-symmetrised-quaternionic-product-and-the-hermitian-subspace.html)
 - [The Left Multiplications of the Quaternionic Product and the Opposite Monoid](../articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.html)
 - [The Quaternionic Product on the Quaternion Subspace](../articles_maths/the-quaternionic-product-on-the-quaternion-subspace.html)
+- [The Specificities of the General Quaternionic Algebra](../articles_maths/the-specificities-of-the-general-quaternionic-algebra.html)
 
 #### Form
 
@@ -148,9 +150,10 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Introduction to the Symmetric Quaternionic Algebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.html)
 
-#### Commutative Theory
+#### Specific Theory
 
 - [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](../articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html)
+- [The Specificities of the Symmetric Quaternionic Algebra](../articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.html)
 
 #### Form
 
@@ -172,7 +175,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions](../articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.html)
 
-#### Alternating Theory
+#### Specific Theory
 
 - [The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra](../articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.html)
 
@@ -199,7 +202,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html)
 - [The Biquaternion Sesqualgebra Is Simple](../articles_maths/the-biquaternion-sesqualgebra-is-simple.html)
 
-#### Non-Associative Theory
+#### Specific Theory
 
 - [The Ternary Product and the Associator of the Biquaternion Sesqualgebra](../articles_maths/the-ternary-product-and-the-associator-of-the-biquaternion-sesqualgebra.html)
 - [The Left and Right Multiplications of the Biquaternion Sesqualgebra](../articles_maths/the-left-and-right-multiplications-of-the-biquaternion-sesqualgebra.html)
@@ -236,7 +239,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Introduction to the Symmetric Plain Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.html)
 
-#### Conjugate-Commutative Theory
+#### Specific Theory
 
 - [The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra](../articles_maths/the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.html)
 
@@ -260,7 +263,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.html)
 
-#### Conjugate-Alternating Theory
+#### Specific Theory
 
 - [The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra](../articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.html)
 
@@ -283,10 +286,10 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 #### Common Theory
 
 - [Introduction to the General Quaternionic Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-general-quaternionic-sesqualgebra-of-biquaternions.html)
-- [Idempotents of the General Quaternionic Sesquilinear Product](../articles_maths/idempotents-of-the-quaternionic-sesquilinear-product.html)
+- [Idempotents of the General Quaternionic Sesqualgebra](../articles_maths/idempotents-of-the-general-quaternionic-sesqualgebra.html)
 - [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](../articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html)
 
-#### Non-Associative Theory
+#### Specific Theory
 
 - [The Two One-Sided Actions and the Absence of a Unit](../articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.html)
 - [The Associator of the General Quaternionic Sesquilinear Product](../articles_maths/the-associator-of-the-quaternionic-sesquilinear-product.html)
@@ -318,7 +321,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.html)
 
-#### Conjugate-Commutative Theory
+#### Specific Theory
 
 - [The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html)
 
@@ -331,6 +334,10 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.html)
 
+#### Realification
+
+- [The Realification of the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-realification-of-the-symmetric-quaternionic-sesqualgebra.html)
+
 #### Representations
 
 - [The Symmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-symmetric-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.html)
@@ -342,7 +349,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.html)
 
-#### Conjugate-Alternating Theory
+#### Specific Theory
 
 - [The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html)
 
@@ -355,42 +362,14 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 - [The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-sesqualgebra.html)
 
+#### Realification
+
+- [The Realification of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/the-realification-of-the-antisymmetric-quaternionic-sesqualgebra.html)
+
 #### Representations
 
 - [The Antisymmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-antisymmetric-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.html)
 - [The Antisymmetric Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-antisymmetric-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.html)
-
-### Biquaternions as an Algebra over $\mathbb{R}$
-
-#### Common Theory
-
-- [Biquaternions as an Algebra over $\mathbb{R}$](../articles_maths/biquaternions-as-an-algebra-over-r.html)
-- [The Change of Scalars from $\mathbb{C}$ to $\mathbb{R}$](../articles_maths/the-change-of-scalars-from-c-to-r.html)
-- [The Real Subalgebras of the Biquaternion Algebra](../articles_maths/the-real-subalgebras-of-the-biquaternion-algebra.html)
-
-#### Real Structure Theory
-
-- [The Four Conjugations Are All $\mathbb{R}$-Linear](../articles_maths/the-four-conjugations-are-all-r-linear.html)
-- [Why the Ideals, the Idempotents and the Zero Divisors Do Not Change](../articles_maths/why-the-ideals-the-idempotents-and-the-zero-divisors-do-not-change.html)
-- [The Automorphisms and Derivations of the Real Biquaternion Algebra](../articles_maths/the-automorphisms-and-derivations-of-the-real-biquaternion-algebra.html)
-- [Biquaternions as a Bimodule over $\mathbb{H}$](../articles_maths/biquaternions-as-a-bimodule-over-h.html)
-- [The Biquaternion Algebra as a Real Module over Itself](../articles_maths/the-biquaternion-algebra-as-a-real-module-over-itself.html)
-
-#### Form
-
-- [The Realification of the Four Forms](../articles_maths/the-realification-of-the-four-forms.html)
-- [The Trace Form of the Real Biquaternion Algebra](../articles_maths/the-trace-form-of-the-real-biquaternion-algebra.html)
-- [Remarkable Subspaces under the Real Biquaternion Algebra](../articles_maths/remarkable-subspaces-under-the-real-biquaternion-algebra.html)
-
-#### Operators
-
-- [Operators of the Real Biquaternion Algebra](../articles_maths/operators-of-the-real-biquaternion-algebra.html)
-
-#### Representations
-
-- [The Biquaternion Algebra over $\mathbb{R}$ in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-biquaternion-algebra-over-r-in-the-2x2-matrix-element-representation.html)
-- [The Biquaternion Algebra over $\mathbb{R}$ in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-biquaternion-algebra-over-r-in-the-4x4-matrix-element-representation.html)
-- [The Clifford Algebra Representation](../articles_maths/the-clifford-algebra-representation.html)
 
 ### Synthesis of the Four General Products
 
@@ -422,7 +401,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html)
 - [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html)
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html)
-- [Biquaternion Norm and Invertibility](../articles_maths/biquaternion-norm-and-invertibility.html)
+- [Biquaternion Norm and Invertibility](../articles_maths/norm-and-invertibility-in-the-general-plain-algebra.html)
 
 ### Metrics of the Biquaternion Algebra
 

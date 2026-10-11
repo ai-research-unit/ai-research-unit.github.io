@@ -19,7 +19,7 @@ It is **compatible with the parity** when it preserves the grading, $\omega(\mat
 
 **Proposition.** An involution is compatible with the parity if and only if it commutes with the grade involution $\alpha$; the compatible involutions are exactly the graded automorphisms of order two.
 
-**Proof.** Preserving the two parts means $\omega\alpha=\alpha\omega$, since $\alpha$ multiplies each homogeneous element by $(-1)^{|x|}$; conversely commuting with $\alpha$ preserves the eigenspaces of $\alpha$, which are the two parts. $\square$
+**Proof.** Preserving the two parts means $\omega\alpha=\alpha\omega$, since $\alpha$ multiplies each homogeneous element by $(-1)^{|x|}$; conversely commuting with $\alpha$ preserves the eigenspaces of $\alpha$, which are the two parts.
 
 **Theorem.** A parity-compatible involution decomposes the superalgebra into its eigenspaces,
 
@@ -33,13 +33,13 @@ $$
 [\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}.
 $$
 
-**Proof.** A diagonalisable involution gives the eigenspace decomposition in characteristic not two; compatibility with the parity makes the eigenspaces graded; the bracket relations follow from $\omega[x,y]=[\omega x,\omega y]$ and the degrees. $\square$
+**Proof.** A diagonalisable involution gives the eigenspace decomposition in characteristic not two; compatibility with the parity makes the eigenspaces graded; the bracket relations follow from $\omega[x,y]=[\omega x,\omega y]$ and the degrees.
 
 **Corollary.** $\mathrm{K}$ is a graded Lie subsuperalgebra, $\mathrm{P}$ is a graded module over it, and the pair $(\mathrm{G},\mathrm{K})$ is the super analogue of a symmetric pair; when $\mathrm{G}$ is a Lie algebra in even part alone this reduces to the Cartan decomposition of *The Cartan Involution and the Cartan Decomposition*.
 
 **Proposition.** The fixed superalgebra $\mathrm{K}=\mathrm{G}^{\omega}$ has even part $\mathrm{K}^0=\mathrm{G}^{0}\cap\mathrm{K}$ and odd part $\mathrm{K}^1=\mathrm{G}^1\cap\mathrm{K}$, and the induced bracket is the restriction; the centre and the derived superalgebra are $\omega$-stable, and the quotient by $\mathrm{K}$ is identified with $\mathrm{P}$ as a graded $\mathrm{K}$-module.
 
-**Proof.** The fixed set of an automorphism is a subsuperalgebra; stability of the centre and the derived algebra is immediate from $\omega$ being an automorphism; the identification is the linear isomorphism $\mathrm{G}/\mathrm{K}\cong\mathrm{P}$. $\square$
+**Proof.** The fixed set of an automorphism is a subsuperalgebra; stability of the centre and the derived algebra is immediate from $\omega$ being an automorphism; the identification is the linear isomorphism $\mathrm{G}/\mathrm{K}\cong\mathrm{P}$.
 
 ## The Super-Involution
 
@@ -53,7 +53,7 @@ the sign $(-1)^{|x||y|}$ being the Koszul sign; the map is parity-compatible and
 
 **Proposition.** A super-involution is an involution exactly when the Koszul sign is trivial, that is on the even part; on the odd part it is an involution of the bracket up to the sign $-1$ on products of two odd elements.
 
-**Proof.** For $x,y$ even the sign is $+1$ and the condition is the ordinary one; for $x,y$ both odd the sign is $-1$, and the twisted compatibility differs from the ordinary one by that sign. $\square$
+**Proof.** For $x,y$ even the sign is $+1$ and the condition is the ordinary one; for $x,y$ both odd the sign is $-1$, and the twisted compatibility differs from the ordinary one by that sign.
 
 **Theorem.** If $\omega$ is a super-involution then the associated form
 
@@ -63,7 +63,7 @@ $$
 
 is a graded bilinear form with $\beta(x,y)=-(-1)^{|x||y|}\beta(y,x)$ when the underlying pairing is the super trace form, and the eigenspaces of $\omega$ give a super-symmetric decomposition; when $\mathrm{G}$ is a real Lie superalgebra with an even part a real semisimple Lie algebra, the super-involution restricts on the even part to a Cartan involution, and the odd part is exchanged or fixed according to the parity of the twist.
 
-**Proof.** The graded antisymmetry of $\beta$ is the graded antisymmetry of the super trace form composed with the parity-compatible $\omega$; the restriction statement follows because on the even part the Koszul sign is trivial. $\square$
+**Proof.** The graded antisymmetry of $\beta$ is the graded antisymmetry of the super trace form composed with the parity-compatible $\omega$; the restriction statement follows because on the even part the Koszul sign is trivial.
 
 **Corollary.** The super-involution is the super analogue of the Cartan involution and the super-involutive superalgebras are the super analogues of the real semisimple algebras; the theory of real forms of a Lie superalgebra, with its classification by decorated diagrams, is the super analogue of *Real Forms of a Complex Lie Algebra* and is named here only.
 
@@ -77,7 +77,6 @@ $$
 
 is an involution compatible with the parity on the complex algebra and is the super analogue of the negative transpose; its fixed superalgebra is the orthosymplectic superalgebra $\mathfrak{osp}(m|n)$, the super analogue of the fixed algebra $\mathfrak{so}$ of a Cartan involution. The eigenspaces have even parts of dimensions $\binom{m+1}{2}$ and $\binom{m}{2}$ and odd part of dimension $mn$, and the bracket relations of the decomposition hold on the standard basis.
 
-**Verified.** For $m=n=1$ the involution was checked to be an automorphism of $\mathfrak{gl}(1|1)$ on the four brackets, with the fixed superalgebra of dimension $2$ and the complement of dimension $2$, and the twisted condition of the super-involution was checked on the two odd elements, where the Koszul sign is $-1$.
 
 ## Summary
 

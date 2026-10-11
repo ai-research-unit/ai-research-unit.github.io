@@ -25,11 +25,11 @@ $$
 
 with respect to the Haar pairing, for every locally compact $G$; in the unimodular case the right convolution has the mirror adjoint $(R_f)^* = R_{f^*}$.
 
-**Proof.** The left regular representation is unitary, so its integrated form satisfies $\lambda(f)^* = \lambda(f^*)$: expanding the integrated form, $\lambda(f)^* = \int\overline{f(x)}\lambda(x)^{-1}dx$, and the substitution $x\to x^{-1}$ with the inversion identity $dx = \Delta(y)^{-1}dy$ at $x = y^{-1}$ gives $\int\overline{f(y^{-1})}\Delta(y)^{-1}\lambda(y)dy = \lambda(f^*) = C_{f^*}$. The right-handed identity is the same computation for the right regular representation, which is unitary exactly in the unimodular case. $\square$
+**Proof.** The left regular representation is unitary, so its integrated form satisfies $\lambda(f)^* = \lambda(f^*)$: expanding the integrated form, $\lambda(f)^* = \int\overline{f(x)}\lambda(x)^{-1}dx$, and the substitution $x\to x^{-1}$ with the inversion identity $dx = \Delta(y)^{-1}dy$ at $x = y^{-1}$ gives $\int\overline{f(y^{-1})}\Delta(y)^{-1}\lambda(y)dy = \lambda(f^*) = C_{f^*}$. The right-handed identity is the same computation for the right regular representation, which is unitary exactly in the unimodular case.
 
 **Corollary (the elementary cases recover the earlier adjoints).** With $f = a$ a general element, the adjoint of the left multiplication is $C_{a^*}$; the sandwich, the reflection and the signed left multiplication have the adjoints $S_{a,b}^* = S_{\alpha(a^*),\alpha(b^*)}$, $\rho_u^* = \rho_{\alpha(u^*)}$ and $\Lambda_a^* = \Lambda_{\alpha(a^*)}$, each obtained from the present identity by composing with the twist and using $\mathrm{A}^* = \mathrm{A}$.
 
-**Proof.** $C_a = L_a$ and $L_a^* = L_{a^*}$ is the theorem; the signed formulas are the computations of the three preceding articles, which used exactly this identity for the convolution factor and the self-adjointness of $\mathrm{A}$. $\square$
+**Proof.** $C_a = L_a$ and $L_a^* = L_{a^*}$ is the theorem; the signed formulas are the computations of the three preceding articles, which used exactly this identity for the convolution factor and the self-adjointness of $\mathrm{A}$.
 
 ## The Involutive Algebra of Convolution Operators
 
@@ -41,35 +41,35 @@ $$
 
 whose image is a `*`-subalgebra; the map $f\mapsto C_f$ is the left regular representation $\lambda$, and its injectivity is the faithfulness of $\lambda$.
 
-**Proof.** $C_{f*g}g' = (f*g)*g' = f*(g*g') = C_fC_gg'$ by associativity of convolution, so the map is multiplicative; the adjoint identity is the theorem; the norm bound is Young's inequality, $\|f*g\|_p\leq\|f\|_1\|g\|_p$; injectivity of $\lambda$ is *The Group Algebra as an Involutive Algebra*. $\square$
+**Proof.** $C_{f*g}g' = (f*g)*g' = f*(g*g') = C_fC_gg'$ by associativity of convolution, so the map is multiplicative; the adjoint identity is the theorem; the norm bound is Young's inequality, $\|f*g\|_p\leq\|f\|_1\|g\|_p$; injectivity of $\lambda$ is *The Group Algebra as an Involutive Algebra*.
 
 **Corollary (the two completions).** The closure of the image in the operator norm is the reduced group $\mathrm{C}^*$-algebra $C^*_r(G)$, a `*`-subalgebra of $B(L^2(G))$ closed under the adjoint; the closure in the weak operator topology is the group von Neumann algebra $L(G)$, a von Neumann algebra closed under the adjoint; and the two are the operator completions of the same involutive algebra.
 
-**Proof.** The norm closure of a `*`-subalgebra of $B(L^2(G))$ is a `*`-subalgebra, closed in norm; the weak closure is a von Neumann algebra; the identifications are the definitions of $C^*_r(G)$ and $L(G)$. $\square$
+**Proof.** The norm closure of a `*`-subalgebra of $B(L^2(G))$ is a `*`-subalgebra, closed in norm; the weak closure is a von Neumann algebra; the identifications are the definitions of $C^*_r(G)$ and $L(G)$.
 
 **Theorem (the involution is not the inverse).** The adjoint $C_f^* = C_{f^*}$ is convolution by the involution, not by the inverse; the two agree, $C_f^* = C_{f}^{-1}$, exactly when $f$ is a unitary element of $L^1(G)$, and in the group algebra of a non-discrete group there are no unitary elements, so the identity is the only self-adjoint element with unitary convolution operator.
 
-**Proof.** $C_f^* = C_{f^*}$ and $C_f^{-1} = C_{f^{-1}}$ for a unit $f$; they agree exactly when $f^* = f^{-1}$, which is the definition of a unitary element. The absence of unitary elements on a non-discrete $L^1(G)$ is *The Group Algebra as an Involutive Algebra*. $\square$
+**Proof.** $C_f^* = C_{f^*}$ and $C_f^{-1} = C_{f^{-1}}$ for a unit $f$; they agree exactly when $f^* = f^{-1}$, which is the definition of a unitary element. The absence of unitary elements on a non-discrete $L^1(G)$ is *The Group Algebra as an Involutive Algebra*.
 
 ## The Measure Case and the $L^p$ Picture
 
 **Theorem (the measure case).** For a bounded Radon measure $\mu\in M(G)$ the operator $\lambda(\mu)$ of left convolution on $L^2(G)$ has adjoint $\lambda(\mu)^* = \lambda(\mu^*)$ with the measure involution $\mu^*(E) = \overline{\mu(E^{-1})}$; since $L^1(G)$ is weak-`*` dense in $M(G)$ and both convolution and the involution are weak-`*` continuous, the identity extends the group-algebra statement to the whole measure algebra.
 
-**Proof.** This is *The Involution on the Measure Algebra*, where the adjoint is computed for measures; the extension from $L^1(G)$ to $M(G)$ uses the density of the absolutely continuous measures. $\square$
+**Proof.** This is *The Involution on the Measure Algebra*, where the adjoint is computed for measures; the extension from $L^1(G)$ to $M(G)$ uses the density of the absolutely continuous measures.
 
 **Proposition (the $L^p$ adjoint, qualitatively).** For $1<p<\infty$ and its conjugate exponent $p'$, the adjoint of $C_f$ with respect to the duality pairing between $L^p(G)$ and $L^{p'}(G)$ is the convolution operator with the reflected-conjugate kernel, and on $L^2(G)$ it is $C_{f^*}$; the conjugation of the pairing is what distinguishes the two, exactly as the passage from the bilinear form of the discrete theory to the Haar pairing distinguishes the adjoints $(L_a)^\dagger = L_{a^{-1}}$ and $(L_a)^* = L_{a^*}$.
 
-**Proof.** The duality $(L^p)' = L^{p'}$ is realised by the bilinear integral, while the Haar pairing is conjugate-linear in the second variable; the two pairings differ by the involution $g\mapsto\overline{g}$, which conjugates the kernel and turns the reflected kernel into $f^*$. The case $p = 2$ is the theorem, and the discrete comparison is *The Signed Adjoint of the Left Multiplication on a Topological Group*. $\square$
+**Proof.** The duality $(L^p)' = L^{p'}$ is realised by the bilinear integral, while the Haar pairing is conjugate-linear in the second variable; the two pairings differ by the involution $g\mapsto\overline{g}$, which conjugates the kernel and turns the reflected kernel into $f^*$. The case $p = 2$ is the theorem, and the discrete comparison is *The Signed Adjoint of the Left Multiplication on a Topological Group*.
 
 **Corollary (the $\mathrm{C}^*$-identity).** The convolution operators satisfy $C_{f^*\!*f} = C_f^*C_f$, hence $\|C_{f^*\!*f}\|_{B(L^2)} = \|C_f\|_{B(L^2)}^2$; the norm closure $C^*_r(G)$ therefore carries the $\mathrm{C}^*$-norm, and the involution is isometric on it.
 
-**Proof.** $C_{f^*\!*f} = C_{f^*}C_f = C_f^*C_f$ by multiplicativity and the adjoint identity, and the operator norm obeys the $\mathrm{C}^*$-identity $\|T^*T\| = \|T\|^2$; a norm-closed `*`-subalgebra of $B(L^2(G))$ satisfying it is a $\mathrm{C}^*$-algebra, and the involution is isometric there because $\|C_f\|^2 = \|C_f^*C_f\|\leq\|C_f^*\|\|C_f\|$ gives $\|C_f\|\leq\|C_f^*\|$ and, symmetrically, equality. $\square$
+**Proof.** $C_{f^*\!*f} = C_{f^*}C_f = C_f^*C_f$ by multiplicativity and the adjoint identity, and the operator norm obeys the $\mathrm{C}^*$-identity $\|T^*T\| = \|T\|^2$; a norm-closed `*`-subalgebra of $B(L^2(G))$ satisfying it is a $\mathrm{C}^*$-algebra, and the involution is isometric there because $\|C_f\|^2 = \|C_f^*C_f\|\leq\|C_f^*\|\|C_f\|$ gives $\|C_f\|\leq\|C_f^*\|$ and, symmetrically, equality.
 
 ## The Degenerate Cases
 
 **Theorem (abelian and discrete groups).** If $G$ is abelian then convolution is commutative, $C_fC_g = C_gC_f$, the `*`-algebra of convolution operators is commutative, and its completion is the algebra of multiplication by the Fourier transform; if $G$ is discrete then $L^1(G) = \ell^1(G)$ has unitary elements, the point masses, $\delta_g^* = \delta_{g^{-1}}$, and $C_{\delta_g}$ is the unitary operator $\lambda(g)$.
 
-**Proof.** For abelian $G$ the commutativity is that of convolution and the completion statement is the Fourier transform of *Harmonic Analysis on Groups*; for discrete $G$ the point masses are unitary and $C_{\delta_g} = \lambda(g)$ by $\lambda(\delta_g) = \lambda(g)$. $\square$
+**Proof.** For abelian $G$ the commutativity is that of convolution and the completion statement is the Fourier transform of *Harmonic Analysis on Groups*; for discrete $G$ the point masses are unitary and $C_{\delta_g} = \lambda(g)$ by $\lambda(\delta_g) = \lambda(g)$.
 
 **Remark (what the article does not do).** The measure algebra and its involution are *The Involution on the Measure Algebra*; the Plancherel transform as an operator and the unitary equivalence with the direct integral over the dual are *The Plancherel Operator*; the group von Neumann algebra and the regular representation are *The Left and Right Regular Representation* and *The Group Algebra as an Algebra of Operators*. The exact form of the $L^p$ adjoint is stated only qualitatively above; the conjugation of the pairing and the reflected kernel are its content, and the computation for each $p$ is left to the duality theory of *Harmonic Analysis on Groups*.
 

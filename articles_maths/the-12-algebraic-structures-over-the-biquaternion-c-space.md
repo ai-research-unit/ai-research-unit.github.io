@@ -172,7 +172,7 @@ Of the twelve, two are the product of a classical nonassociative algebra and bot
 | $\mathrm A$, $\mathrm S$ (third letter) | the family: the algebra over $\mathbb{C}$, the sesqualgebra over $\mathbb{C}$ |
 | $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$ | the six structures of the two algebras over $\mathbb{C}$ |
 | $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ | the six structures of the two sesqualgebras over $\mathbb{C}$ |
-| $B(\tilde{P},\tilde{Q})=P_0Q_0+(\mathbf{P},\mathbf{Q})$ | the quaternion form, the scalar part of $\mathrm{SQA}$ |
+| $N(\tilde{P},\tilde{Q})=P_0Q_0+(\mathbf{P},\mathbf{Q})$ | the quaternion form, the scalar part of $\mathrm{SQA}$ |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ | the centre, the vector subspace and the Hermitian and anti-Hermitian subspaces |
 | Jacobi, Jordan | the two identities that single out $\mathrm{APA}$ and $\mathrm{SPA}$ |
 | $\overline{\mathbf{Q}}$, $(\mathbf{P},\mathbf{Q})$, $\mathbf{P}\times\mathbf{Q}$ | the coefficientwise conjugate of the vector part, the bilinear dot product and the bilinear cross product |

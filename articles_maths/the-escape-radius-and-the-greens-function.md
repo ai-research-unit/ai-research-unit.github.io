@@ -44,7 +44,7 @@ In particular $R(c) \leq 2$ exactly when $|c| \leq 2$, so the round number $2$ i
 
 **Proof.** $|z^2+c| \geq |z|^2 - |c|$; this exceeds $|z|$ exactly when $|z|^2 - |z| - |c| > 0$, that is when $|z| > R(c)$. The radius is the least one valid for all the parameters of modulus $|c|$: for the real parameter $c = -|c|$ the filled Julia set is the real interval ending at the repelling fixed point $R(c)$, so for every $R' < R(c)$ there are non-escaping points of modulus greater than $R'$.
 
-**Example.** $R(0) = 1$, the escape radius of $z^2$; $R(-1) = R(i) = (1+\sqrt5)/2 = 1.618034\ldots$; $R(-2) = R(2) = 2$. The values were recomputed from the formula.
+**Example.** $R(0) = 1$, the escape radius of $z^2$; $R(-1) = R(i) = (1+\sqrt5)/2 = 1.618034\ldots$; $R(-2) = R(2) = 2$.
 
 **Corollary (termination of the algorithm).** The escape-time algorithm of *The Mandelbrot Set and the Quadratic Family* may stop at the first $n$ with $|f_c^n(0)| > 2$: once the orbit leaves the disk of radius $2$, it escapes, so the escape time $n(c)$ is finite for every $c \notin M$, and it is bounded by the escape time of the initial value when $|c| > 2$.
 

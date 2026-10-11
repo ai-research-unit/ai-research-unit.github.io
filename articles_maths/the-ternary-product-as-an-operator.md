@@ -32,7 +32,7 @@ $$
 \Theta_{\lambda x,y}=\lambda\,\Theta_{x,y}, \qquad \Theta_{x,\lambda y}=\varsigma(\lambda)\,\Theta_{x,y}, \qquad \lambda\in R .
 $$
 
-**Proof.** The variable $z$ enters through the plain product on the right, so $\Theta_{x,y}(\lambda z+\mu w)=\lambda \Theta_{x,y}(z)+\mu \Theta_{x,y}(w)$ and $\Theta_{x,y}\in\operatorname{End}_R(A)$. In the first parameter, $(\lambda x)y^{*}z=\lambda(xy^{*}z)$; in the second, $x(\lambda y)^{*}z=x\,\varsigma(\lambda)y^{*}z=\varsigma(\lambda)xy^{*}z$ by the scalar rule of the involution. $\square$
+**Proof.** The variable $z$ enters through the plain product on the right, so $\Theta_{x,y}(\lambda z+\mu w)=\lambda \Theta_{x,y}(z)+\mu \Theta_{x,y}(w)$ and $\Theta_{x,y}\in\operatorname{End}_R(A)$. In the first parameter, $(\lambda x)y^{*}z=\lambda(xy^{*}z)$; in the second, $x(\lambda y)^{*}z=x\,\varsigma(\lambda)y^{*}z=\varsigma(\lambda)xy^{*}z$ by the scalar rule of the involution.
 
 **Remark.** The parities are those of the ternary product, read with one slot promoted to a parameter: the ternary product is $R$-linear in its first and its third slot and $\varsigma$-semilinear in its middle slot, as *The Sesquilinear Associator and the Ternary Product* records. The parameter $x$ is therefore linear, the parameter $y$ is conjugate-linear and the variable $z$ is linear, and the pair map is the only place where the conjugate-linearity of the middle slot survives.
 
@@ -48,7 +48,7 @@ $$
 \Theta_{x,y}(z)=T_{x\star y,\,1}(z)=S_{x,z}(y)=T_{1,\,y^{*}z}(x).
 $$
 
-**Proof.** The first identity is $xy^{*}z=(x\star y)z$, the product being read as the plain left multiplication by the derived product $x\star y$; the second is $xy^{*}z=S_{x,z}(y)$ by the definition of the sandwich; the third is $xy^{*}z=x(y^{*}z)=T_{1,\,y^{*}z}(x)$, the product read as the plain right multiplication by the element $y^{*}z$. $\square$
+**Proof.** The first identity is $xy^{*}z=(x\star y)z$, the product being read as the plain left multiplication by the derived product $x\star y$; the second is $xy^{*}z=S_{x,z}(y)$ by the definition of the sandwich; the third is $xy^{*}z=x(y^{*}z)=T_{1,\,y^{*}z}(x)$, the product read as the plain right multiplication by the element $y^{*}z$.
 
 **Remark.** The third slot gives a plain left multiplication, the first slot a plain right multiplication, and the middle slot a sandwich. The middle reading is the only one that is not $R$-linear in the parameters, because the sandwich is $\varsigma$-semilinear in its own parameter, and that is the same statement as the $\varsigma$-semilinearity of the pair map in its second slot. The three readings are three operators of the earlier entries of the group, and the content of the theorem is that the ternary product introduces no operator that those entries had not already named.
 
@@ -66,11 +66,11 @@ $$
 
 Consequently $\Theta_{x,y}=0$ if and only if $x\star y=0$, and $\Theta_{x,y}=\Theta_{u,v}$ if and only if $x\star y=u\star v$; the pair $(x,y)$ is seen by the operator only through the derived product.
 
-**Proof.** The identity is the first reading above. For the kernels, $T_{a,1}$ is the plain left multiplication by $a$, and over a unital $A$ the left multiplication by $a$ vanishes identically only for $a=0$, since $T_{a,1}(1)=a$; the same evaluation at the unit gives $T_{a,1}=T_{c,1}$ only for $a=c$. $\square$
+**Proof.** The identity is the first reading above. For the kernels, $T_{a,1}$ is the plain left multiplication by $a$, and over a unital $A$ the left multiplication by $a$ vanishes identically only for $a=0$, since $T_{a,1}(1)=a$; the same evaluation at the unit gives $T_{a,1}=T_{c,1}$ only for $a=c$.
 
 **Corollary (no loss of information).** Over a unital sesqualgebra the map $a\mapsto T_{a,1}$ is an isomorphism of $R$-algebras from $A$ onto the family of the third-slot operators, because $T_{a,1}T_{c,1}=T_{ac,1}$ and $T_{1,1}=\mathrm{id}_A$. In particular $x\star 1=x$ for every $x$, so the derived products already fill $A$ and the third-slot family is the whole left regular family.
 
-**Proof.** The composition law is $T_{a,1}\bigl(T_{c,1}(z)\bigr)=a(cz)=(ac)z=T_{ac,1}(z)$; the unit is $T_{1,1}(z)=z$; the kernel is trivial by the evaluation at $1$ above. The identity $x\star 1=x1^{*}=x$ uses $1^{*}=1$ and the unit of the algebra. $\square$
+**Proof.** The composition law is $T_{a,1}\bigl(T_{c,1}(z)\bigr)=a(cz)=(ac)z=T_{ac,1}(z)$; the unit is $T_{1,1}(z)=z$; the kernel is trivial by the evaluation at $1$ above. The identity $x\star 1=x1^{*}=x$ uses $1^{*}=1$ and the unit of the algebra.
 
 **Remark.** The theorem is the reason the ternary operator of the third slot is invisible: it is a plain one-sided operator, and over a unital sesqualgebra the pairs generate the whole left regular family. What the reading does carry is the parity: the map $(x,y)\mapsto \Theta_{x,y}$ is $R$-bilinear on $A\times A^{\varsigma}$ and not on $A\times A$, so the derived product is visible in the pair map and not in the operators it produces.
 
@@ -88,7 +88,7 @@ $$
 [[\Theta_{x,y},\Theta_{u,v}],\Theta_{p,q}]=T_{[[x\star y,\,u\star v],\,p\star q],\,1}.
 $$
 
-**Proof.** By the factorisation, $\Theta_{x,y}=T_{a,1}$ with $a=x\star y$ and $\Theta_{u,v}=T_{c,1}$ with $c=u\star v$; then $T_{a,1}T_{c,1}=T_{ac,1}$ by the corollary, so the commutator is $T_{ac-ca,1}$; the second identity is the first applied twice. $\square$
+**Proof.** By the factorisation, $\Theta_{x,y}=T_{a,1}$ with $a=x\star y$ and $\Theta_{u,v}=T_{c,1}$ with $c=u\star v$; then $T_{a,1}T_{c,1}=T_{ac,1}$ by the corollary, so the commutator is $T_{ac-ca,1}$; the second identity is the first applied twice.
 
 **Remark.** The triple commutator is the operation of the Lie triple system of *Lie Algebras of Sesqualgebras*, read with the Lie algebra of the operators as its Lie algebra. The triple system is therefore present twice in the sesquilinear kind: once on the elements, where it is $\{x,y,z\}_{\mathrm{L}}=[[x,y],z]$, and once on the operators of this article, where it is the triple commutator of the one-sided operators produced by the derived products.
 
@@ -114,7 +114,7 @@ $$
 
 the operator $z\mapsto[[x,y],z]$; it is a derivation of $A$, it is the difference of a plain left multiplication and a plain right multiplication, and it is a one-sided operator only when $[x,y]$ is central, in which case it vanishes.
 
-**Proof.** The commutator $[a,z]=az-za$ is the difference of the left and the right multiplication by $a$, so it is a derivation by the Leibniz rule; the two one-sided operators are those of the present notation. A difference $T_{a,1}-T_{1,a}$ equals one of its two terms only when the other vanishes, and evaluating at the unit forces the operator to be $0$; so the companion is one-sided only when it vanishes, that is when $[x,y]$ is central. $\square$
+**Proof.** The commutator $[a,z]=az-za$ is the difference of the left and the right multiplication by $a$, so it is a derivation by the Leibniz rule; the two one-sided operators are those of the present notation. A difference $T_{a,1}-T_{1,a}$ equals one of its two terms only when the other vanishes, and evaluating at the unit forces the operator to be $0$; so the companion is one-sided only when it vanishes, that is when $[x,y]$ is central.
 
 **Theorem (the family of the Lie layer).** For all $x,y,u,v,p,q\in A$,
 
@@ -125,7 +125,7 @@ $$
 
 and the $R$-span of the operators $\mathrm{ad}_{[x,y]}$ is the image of the commutator subalgebra $[A,A]$ under the adjoint map, a Lie subalgebra of the derivations of $A$ isomorphic to the quotient $[A,A]/\bigl([A,A]\cap Z(A)\bigr)$.
 
-**Proof.** The identity $[\mathrm{ad}_a,\mathrm{ad}_b]=\mathrm{ad}_{[a,b]}$ is the Jacobi identity, in the form $\mathrm{ad}_a\mathrm{ad}_b-\mathrm{ad}_b\mathrm{ad}_a=\mathrm{ad}_{[a,b]}$; the second display is that identity applied to $z$. The image of the adjoint map is a Lie subalgebra because the adjoint map is a Lie homomorphism, and its kernel on the commutator subalgebra is $[A,A]\cap Z(A)$, by the definition of the centre. $\square$
+**Proof.** The identity $[\mathrm{ad}_a,\mathrm{ad}_b]=\mathrm{ad}_{[a,b]}$ is the Jacobi identity, in the form $\mathrm{ad}_a\mathrm{ad}_b-\mathrm{ad}_b\mathrm{ad}_a=\mathrm{ad}_{[a,b]}$; the second display is that identity applied to $z$. The image of the adjoint map is a Lie subalgebra because the adjoint map is a Lie homomorphism, and its kernel on the commutator subalgebra is $[A,A]\cap Z(A)$, by the definition of the centre.
 
 **Remark.** The adjoint map has kernel the centre on $A$, so the family is the inner derivations of the commutator Lie algebra, isomorphic to $[A,A]$ modulo its central part $[A,A]\cap Z(A)$; the definitions are those of *The Commutator Operator* and *Lie Algebras of Sesqualgebras*. The family of the Lie layer is therefore the image of the commutator subalgebra, and it is a Lie algebra and not only a set of operators.
 
@@ -162,7 +162,7 @@ $$
 
 the operator $T_{x,1}$ being the plain left multiplication, $T_{x,1}(z)=xz$.
 
-**Proof.** With $*=\mathrm{id}$ the ternary product is $xy^{*}z=xyz$ and the commutativity gives $xyz=x^{2}z$ for $y=x$; the middle slot gives $xzx=x^{2}z$. The identity $U_x=2T_{x,1}^{2}-T_{x^{2},1}$ is the classical form of the quadratic representation in a commutative associative algebra, read on $z$: $2x(xz)-x^{2}z=x^{2}z$. $\square$
+**Proof.** With $*=\mathrm{id}$ the ternary product is $xy^{*}z=xyz$ and the commutativity gives $xyz=x^{2}z$ for $y=x$; the middle slot gives $xzx=x^{2}z$. The identity $U_x=2T_{x,1}^{2}-T_{x^{2},1}$ is the classical form of the quadratic representation in a commutative associative algebra, read on $z$: $2x(xz)-x^{2}z=x^{2}z$.
 
 **Remark.** The quadratic representation is therefore the diagonal of the pair map, the case $x=y$ of the ternary operator, and the two readings of the theorem are the two slots in which the quadratic variable may sit. In the sesquilinear case the diagonal $\Theta_{x,x}$ is the plain left multiplication by $x\star x=xx^{*}$, the square of the element in the derived sense, and it is the operator $z\mapsto xx^{*}z$ and not the classical $z\mapsto xzx$; the difference is the involution, and it is what the degenerate case recovers.
 

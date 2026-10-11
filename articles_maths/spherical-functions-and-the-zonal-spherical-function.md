@@ -19,11 +19,11 @@ the **spherical dual** $\operatorname{Irr}(G,K)$ is the set of irreducible unita
 
 **Proposition (the subalgebra).** The space $L^1(K\backslash G/K)$ of bi-$K$-invariant elements of $L^1(G)$ is a closed subalgebra of $L^1(G)$ under convolution, and it contains a normalised approximate identity consisting of bi-$K$-invariant functions.
 
-**Proof.** Bi-invariance is preserved by convolution because $K$ is a subgroup and $dk$ is invariant: if $f,h$ are bi-$K$-invariant then $(f*h)(k_1xk_2) = (f*h)(x)$, which is checked by translating the integration variable. Closedness is the closedness of the fixed-point subspace of the compact group $K\times K$ acting continuously by isometries on $L^1(G)$; the approximate identity is found by averaging any approximate identity over $K\times K$, the average again being normalised. $\square$
+**Proof.** Bi-invariance is preserved by convolution because $K$ is a subgroup and $dk$ is invariant: if $f,h$ are bi-$K$-invariant then $(f*h)(k_1xk_2) = (f*h)(x)$, which is checked by translating the integration variable. Closedness is the closedness of the fixed-point subspace of the compact group $K\times K$ acting continuously by isometries on $L^1(G)$; the approximate identity is found by averaging any approximate identity over $K\times K$, the average again being normalised.
 
 **Theorem (the Gelfand-pair criterion).** The following are equivalent: (i) $L^1(K\backslash G/K)$ is commutative; (ii) $C_c(K\backslash G/K)$ is commutative; (iii) the algebra $L^1(K\backslash G/K)$ is a commutative Banach `*`-algebra, so that its Gelfand transform is a `*`-homomorphism with dense image in $C_0$ of its spectrum. The condition is the definition of a Gelfand pair, and when it holds the Gelfand theory of a commutative Banach `*`-algebra applies to the invariant algebra.
 
-**Proof.** The equivalence of (i) and (ii) is the density of $C_c$ in $L^1$ together with the continuity of the product; that (i) implies (iii) is the general theorem that a commutative Banach `*`-algebra with isometric involution is symmetric and has a `*`-preserving Gelfand transform, so that every character is Hermitian. The details are in the references. $\square$
+**Proof.** The equivalence of (i) and (ii) is the density of $C_c$ in $L^1$ together with the continuity of the product; that (i) implies (iii) is the general theorem that a commutative Banach `*`-algebra with isometric involution is symmetric and has a `*`-preserving Gelfand transform, so that every character is Hermitian. The details are in the references.
 
 **Remark (why commutativity is the whole content).** Once the invariant algebra is commutative, its Gelfand theory applies: the characters are multiplicative functionals, the Gelfand transform is a `*`-homomorphism, and the spectral decomposition is a measure on the spectrum. The Gelfand pair condition is exactly what makes the invariant algebra commutative, and it is the hypothesis of everything below.
 
@@ -37,7 +37,7 @@ $$
 
 and $\omega$ is positive definite; conversely a normalised positive definite bi-$K$-invariant function satisfying the integral equation is spherical.
 
-**Proof.** Setting $x = y = e$ in the integral equation and using $\omega\ne0$ gives $\omega(e) = \omega(e)^2$, so $\omega(e) = 1$ or $\omega(e) = 0$; the second forces $\omega\equiv0$ by the equation, so $\omega(e) = 1$. Positivity is Godement's theorem that a spherical function is a matrix coefficient of a spherical representation, quoted from the references; the Hermitian property $\omega(x^{-1}) = \overline{\omega(x)}$ and the bound $|\omega(x)|\leq1$ are then the elementary properties of a positive definite function, established in *Positive Definite Functions and the Gelfand–Raikov Theorem*. $\square$
+**Proof.** Setting $x = y = e$ in the integral equation and using $\omega\ne0$ gives $\omega(e) = \omega(e)^2$, so $\omega(e) = 1$ or $\omega(e) = 0$; the second forces $\omega\equiv0$ by the equation, so $\omega(e) = 1$. Positivity is Godement's theorem that a spherical function is a matrix coefficient of a spherical representation, quoted from the references; the Hermitian property $\omega(x^{-1}) = \overline{\omega(x)}$ and the bound $|\omega(x)|\leq1$ are then the elementary properties of a positive definite function, established in *Positive Definite Functions and the Gelfand–Raikov Theorem*.
 
 **Theorem (spherical functions are the characters of the invariant algebra).** The assignment
 
@@ -47,7 +47,7 @@ $$
 
 is a bijection between the bounded spherical functions and the characters of the commutative Banach algebra $L^1(K\backslash G/K)$; the bounded spherical functions are exactly the positive definite ones, and they form a locally compact space, the **spherical spectrum** $\Sigma(G,K)$, in the weak-`*` topology.
 
-**Proof.** A character $\chi$ of the invariant algebra satisfies the functional equation $\chi(f*g) = \chi(f)\chi(g)$; representing it by a bounded measurable $\omega$ through the Riesz theorem and using the invariance, one recovers the integral equation, so $\chi$ is the functional of a bounded spherical function. Conversely the integral equation makes $\chi_\omega$ multiplicative. Positivity and boundedness are equivalent for a spherical function by the theorem above, and the topology is the weak-`*` topology of the unit ball of $L^\infty(G)$, compact by Banach–Alaoglu and locally compact after the removal of the zero functional. $\square$
+**Proof.** A character $\chi$ of the invariant algebra satisfies the functional equation $\chi(f*g) = \chi(f)\chi(g)$; representing it by a bounded measurable $\omega$ through the Riesz theorem and using the invariance, one recovers the integral equation, so $\chi$ is the functional of a bounded spherical function. Conversely the integral equation makes $\chi_\omega$ multiplicative. Positivity and boundedness are equivalent for a spherical function by the theorem above, and the topology is the weak-`*` topology of the unit ball of $L^\infty(G)$, compact by Banach–Alaoglu and locally compact after the removal of the zero functional.
 
 ## The Zonal Spherical Function
 
@@ -67,11 +67,11 @@ $$
 
 and $\omega_\pi$ is positive definite; the representation $\pi$ is recovered from $\omega_\pi$ as its GNS representation, and the pair $(\pi,\xi)$ is determined by $\omega_\pi$ up to unitary equivalence.
 
-**Proof.** The $K$-fixed subspace $\mathcal{H}_\pi^K$ is one-dimensional when $\pi$ is irreducible and spherical and the pair is a Gelfand pair (multiplicity one), so the projection $P_\xi$ onto $\mathbb{C}\xi$ is the unique $K$-invariant rank-one projection and $\int_K\pi(k)dk = P_\xi$; hence $\int_K\omega_\pi(xky)dk = \int_K\langle\pi(x)\pi(k)\pi(y)\xi,\xi\rangle dk = \langle\pi(x)P_\xi\pi(y)\xi,\xi\rangle$, and $\pi(y)\xi = \omega_\pi(y)\xi + $ (a vector orthogonal to $\xi$). Squaring the projection gives the equation. Positive definiteness is the matrix-coefficient property of *Positive Definite Functions and the Gelfand–Raikov Theorem*, and the recovery is the GNS correspondence there. $\square$
+**Proof.** The $K$-fixed subspace $\mathcal{H}_\pi^K$ is one-dimensional when $\pi$ is irreducible and spherical and the pair is a Gelfand pair (multiplicity one), so the projection $P_\xi$ onto $\mathbb{C}\xi$ is the unique $K$-invariant rank-one projection and $\int_K\pi(k)dk = P_\xi$; hence $\int_K\omega_\pi(xky)dk = \int_K\langle\pi(x)\pi(k)\pi(y)\xi,\xi\rangle dk = \langle\pi(x)P_\xi\pi(y)\xi,\xi\rangle$, and $\pi(y)\xi = \omega_\pi(y)\xi + $ (a vector orthogonal to $\xi$). Squaring the projection gives the equation. Positive definiteness is the matrix-coefficient property of *Positive Definite Functions and the Gelfand–Raikov Theorem*, and the recovery is the GNS correspondence there.
 
 **Corollary (the correspondence).** The map $\pi\mapsto\omega_\pi$ is a bijection from the spherical dual onto the positive definite spherical functions; through the identification with the characters it is the identification of the spherical dual with the spherical spectrum, $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$.
 
-**Proof.** Injectivity: $\omega_\pi$ determines $\pi$ by the theorem. Surjectivity: given a positive definite spherical $\omega$, its GNS representation has a $K$-fixed cyclic vector, the integral equation forces the representation to be irreducible and spherical, and the cyclic vector is $K$-fixed; the recovery of $\omega$ is the matrix coefficient. The identification with the spectrum is the previous theorem. $\square$
+**Proof.** Injectivity: $\omega_\pi$ determines $\pi$ by the theorem. Surjectivity: given a positive definite spherical $\omega$, its GNS representation has a $K$-fixed cyclic vector, the integral equation forces the representation to be irreducible and spherical, and the cyclic vector is $K$-fixed; the recovery of $\omega$ is the matrix coefficient. The identification with the spectrum is the previous theorem.
 
 ## The Decomposition and the Spherical Transform
 
@@ -91,7 +91,7 @@ $$
 
 and it is injective with dense image in $C_0(\Sigma(G,K))$; the spherical functions are the evaluations at the points of the spectrum.
 
-**Proof.** The multiplicativity is the multiplicativity of the Gelfand transform; the involution identity uses that every character of a commutative Banach `*`-algebra with isometric involution is Hermitian, which is condition (ii) of the Gelfand-pair criterion. Injectivity is semisimplicity and density is the Gelfand–Naimark theorem for commutative Banach `*`-algebras. $\square$
+**Proof.** The multiplicativity is the multiplicativity of the Gelfand transform; the involution identity uses that every character of a commutative Banach `*`-algebra with isometric involution is Hermitian, which is condition (ii) of the Gelfand-pair criterion. Injectivity is semisimplicity and density is the Gelfand–Naimark theorem for commutative Banach `*`-algebras.
 
 **Theorem (decomposition of the invariant $L^2$ space).** On the invariant Hilbert space $L^2(K\backslash G/K)$ the representation of $G$ by left translation decomposes as a direct integral of the spherical representations over the spherical spectrum,
 
@@ -105,7 +105,7 @@ $$
 \int_G |f(x)|^2\,dx = \int_{\Sigma(G,K)} |\hat f(\omega)|^2\,d\mu(\omega) .
 $$
 
-**Proof.** For a Gelfand pair with $G$ of type I the left regular representation restricted to the invariant vectors is multiplicity-free, and the decomposition is the spectral decomposition of the commutative algebra acting on the invariant space; the plancherel identity is the statement that the Gelfand transform extends to a unitary from the invariant $L^2$ to the $L^2$ of the spectral measure, which is the general Plancherel theorem of *The Plancherel Theorem* specialised to the multiplicity-free part. $\square$
+**Proof.** For a Gelfand pair with $G$ of type I the left regular representation restricted to the invariant vectors is multiplicity-free, and the decomposition is the spectral decomposition of the commutative algebra acting on the invariant space; the plancherel identity is the statement that the Gelfand transform extends to a unitary from the invariant $L^2$ to the $L^2$ of the spectral measure, which is the general Plancherel theorem of *The Plancherel Theorem* specialised to the multiplicity-free part.
 
 **Example (the symmetric pairs and the Gegenbauer case).** Let $K$ be the fixed subgroup of an involutive automorphism of $G$, so that $(G,K)$ is a symmetric pair and a Gelfand pair; then the spherical dual is the set of irreducible representations with a $K$-fixed vector, the zonal spherical functions are the matrix coefficients of those vectors, $\operatorname{Irr}(G,K)\cong\Sigma(G,K)$, and the spherical Plancherel measure is a measure on the spherical dual. For $G = SO(n+1)$ and $K = SO(n)$ the spherical functions are the Gegenbauer functions, but their explicit form is not needed here; the structure above is the content, and the explicit computation is the subject of the literature.
 

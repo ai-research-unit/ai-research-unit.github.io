@@ -4,7 +4,7 @@
 
 The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra of Biquaternions*. The algebra carries remarkable real subspaces, and this article reads the product on each of them: whether it stays inside, and the rule it follows where it does; the units and the idempotents it contains; and its isotropic elements. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*, with their natural real bases.
 
-The reading follows the pattern of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, and the subspaces themselves, their bases and their relations are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The products of the four general products on the same remarkable subspaces are *Remarkable Subspaces and the Four General Products*; the isotropic set of the block is the isotropic cone of *Biquaternion Norm and Invertibility*; and the idempotents are those of *Idempotents of the General Plain Algebra*. This article owns the product $\bullet$ on the remarkable subspaces and the table that gathers the readings.
+The reading follows the pattern of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, and the subspaces themselves, their bases and their relations are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The products of the four general products on the same remarkable subspaces are *Remarkable Subspaces and the Four General Products*; the isotropic set of the block is the isotropic cone of *Norm and Invertibility in the General Plain Algebra*; and the idempotents are those of *Idempotents of the General Plain Algebra*. This article owns the product $\bullet$ on the remarkable subspaces and the table that gathers the readings.
 
 **Conventions and the criterion.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, and the product is $\bullet$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$. The remarkable subspaces are real and their natural real bases are the ones of *Introduction to the Remarkable Subspaces*:
 
@@ -36,7 +36,7 @@ The rule is the multiplication of the complex numbers, restricted to the scalar 
 
 ### Units, Idempotents and Isotropic Elements
 
-The generic norm of a central element is $N(Ae_0)=A^2$, so the **units** of the centre are the non-zero scalars, $A\neq0$, and the element $Ae_0$ with $A\neq0$ is invertible in the block with inverse $A^{-1}e_0$. The **idempotents** of the centre are the solutions of $A^2=A$, namely $0$ and $e_0$; these are the two trivial idempotents of the block, and no non-trivial idempotent is central, because a non-trivial idempotent $\tfrac12(e_0+\xi i)$ has the non-central element $\xi i$ in its vector part. The **isotropic** elements are the solutions of $A^2=0$, namely $0$ alone: the centre contains no non-zero isotropic element. Verified on the coordinate rule.
+The generic norm of a central element is $N(Ae_0)=A^2$, so the **units** of the centre are the non-zero scalars, $A\neq0$, and the element $Ae_0$ with $A\neq0$ is invertible in the block with inverse $A^{-1}e_0$. The **idempotents** of the centre are the solutions of $A^2=A$, namely $0$ and $e_0$; these are the two trivial idempotents of the block, and no non-trivial idempotent is central, because a non-trivial idempotent $\tfrac12(e_0+\xi i)$ has the non-central element $\xi i$ in its vector part. The **isotropic** elements are the solutions of $A^2=0$, namely $0$ alone: the centre contains no non-zero isotropic element.
 
 ## The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 
@@ -64,9 +64,9 @@ the first of which leaves the vector subspace and the second of which stays in i
 
 ### Units, Idempotents and Isotropic Elements
 
-A vector element $\mathbf{P}$ has $N(\mathbf{P})=(\mathbf{P},\mathbf{P})$, so the **units** of the vector subspace are the elements with $(\mathbf{P},\mathbf{P})\neq0$; the elements with $(\mathbf{P},\mathbf{P})=0$ are isotropic, and the non-zero ones among them are exactly the zero divisors inside the subspace. The **idempotents** are the solutions of $\mathbf{P}\bullet\mathbf{P}=\mathbf{P}$, that is $-\bigl(\mathbf{P},\mathbf{P}\bigr)e_0=\mathbf{P}$, and since the left side is central and the right side is a vector part, both must vanish: $\mathbf{P}=0$. So the vector subspace contains no non-zero idempotent. The **isotropic** elements are the isotropic cone of the vector subspace, $\{(\mathbf{P},\mathbf{P})=0\}$, and it is non-empty: for instance $e_1+ie_1$ has $(e_1+ie_1,e_1+ie_1)=1+i^2=0$. Verified on the coordinate rule.
+A vector element $\mathbf{P}$ has $N(\mathbf{P})=(\mathbf{P},\mathbf{P})$, so the **units** of the vector subspace are the elements with $(\mathbf{P},\mathbf{P})\neq0$; **every non-zero element of the subspace is a zero divisor of the block**, since the product of two pure elements is the scalar $-(\mathbf{P},\mathbf{Q})$, which vanishes for the orthogonal $\mathbf{Q}$, and the isotropic elements are those with $(\mathbf{P},\mathbf{P})=0$ (*Zero Divisors of the Symmetric Plain Algebra*). The **idempotents** are the solutions of $\mathbf{P}\bullet\mathbf{P}=\mathbf{P}$, that is $-\bigl(\mathbf{P},\mathbf{P}\bigr)e_0=\mathbf{P}$, and since the left side is central and the right side is a vector part, both must vanish: $\mathbf{P}=0$. So the vector subspace contains no non-zero idempotent. The **isotropic** elements are the isotropic cone of the vector subspace, $\{(\mathbf{P},\mathbf{P})=0\}$, and it is non-empty: for instance $e_1+ie_1$ has $(e_1+ie_1,e_1+ie_1)=1+i^2=0$.
 
-**Remark (the isotropic elements of the vector subspace are of square zero).** On the vector subspace the generic norm is the dot form itself, $N(\mathbf{P})=(\mathbf{P},\mathbf{P})$, so an isotropic vector is exactly a vector of square zero: $\mathbf{P}\bullet\mathbf{P}=-(\mathbf{P},\mathbf{P})e_0=0$. **On the vector subspace the isotropic elements and the elements of square zero are the same set**, and both are the isotropic cone of the dot form; on the block as a whole the two sets differ, as *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* records. Verified on the rule.
+**Remark (the isotropic elements of the vector subspace are of square zero).** On the vector subspace the generic norm is the dot form itself, $N(\mathbf{P})=(\mathbf{P},\mathbf{P})$, so an isotropic vector is exactly a vector of square zero: $\mathbf{P}\bullet\mathbf{P}=-(\mathbf{P},\mathbf{P})e_0=0$. **On the vector subspace the isotropic elements and the elements of square zero are the same set**, and both are the isotropic cone of the dot form; on the block as a whole the two sets differ, as *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* records.
 
 ## The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$
 
@@ -84,7 +84,7 @@ the quaternion product with the cross term $-\mathbf{h}\times\mathbf{k}$ dropped
 
 ### Units, Idempotents and Isotropic Elements
 
-The **units** are all the non-zero elements, by the positive-definiteness of the norm. The **idempotents** are the solutions of $h\bullet h=h$, that is $h^2=h$, or $h(h-e_0)=0$; the quaternions have no zero divisors, so $h=0$ or $h=e_0$. Thus the quaternion subspace contains exactly the two trivial idempotents $0$ and $e_0$, and the non-trivial idempotents of the block — the Hermitian idempotents and the mixed ones — are not in it. The **isotropic** elements are the solutions of $N(h)=\sum_\mu h_\mu^2=0$, namely $0$ alone. Verified on the coordinate rule.
+The **units** are all the non-zero elements, by the positive-definiteness of the norm. The **idempotents** are the solutions of $h\bullet h=h$, that is $h^2=h$, or $h(h-e_0)=0$; the quaternions have no zero divisors, so $h=0$ or $h=e_0$. Thus the quaternion subspace contains exactly the two trivial idempotents $0$ and $e_0$, and the non-trivial idempotents of the block — the Hermitian idempotents and the mixed ones — are not in it. The **isotropic** elements are the solutions of $N(h)=\sum_\mu h_\mu^2=0$, namely $0$ alone.
 
 ## The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
 
@@ -112,7 +112,7 @@ a central element outside the anti-quaternion subspace. In the mixed products th
 
 ### Units, Idempotents and Isotropic Elements
 
-An anti-quaternion element $i\mu$ has $N(i\mu)=-(\mu,\mu)=-|\mu|^2$, so the **units** are all the non-zero elements, as in the quaternion subspace, and the **isotropic** elements are $0$ alone. The **idempotents** are the solutions of $(i\mu)\bullet(i\mu)=i\mu$; the square is the real quaternion $-(\mu\bullet\mu)$, lying in $\mathbb{H}_{\mathbb{B}}$, while $i\mu$ lies in $i\mathbb{H}_{\mathbb{B}}$, and the two subspaces meet only at $0$; so $\mu\bullet\mu=0$ and $\mu=0$. The anti-quaternion subspace contains no non-zero idempotent. Verified on the coordinate rule.
+An anti-quaternion element $i\mu$ has $N(i\mu)=-(\mu,\mu)=-|\mu|^2$, so the **units** are all the non-zero elements, as in the quaternion subspace, and the **isotropic** elements are $0$ alone. The **idempotents** are the solutions of $(i\mu)\bullet(i\mu)=i\mu$; the square is the real quaternion $-(\mu\bullet\mu)$, lying in $\mathbb{H}_{\mathbb{B}}$, while $i\mu$ lies in $i\mathbb{H}_{\mathbb{B}}$, and the two subspaces meet only at $0$; so $\mu\bullet\mu=0$ and $\mu=0$. The anti-quaternion subspace contains no non-zero idempotent.
 
 ## The Hermitian Subspace $\mathbb{M}_+$
 
@@ -136,7 +136,7 @@ $$
 
 the pure states, together with the trivial $0$ and $e_0$.
 
-**Remark (the trace form is definite but the norm is not).** The trace form of *The Trace Form and the Invariance of the Symmetric Plain Algebra* restricts to the Hermitian subspace as the **positive definite** form $P_0Q_0+\sum_kP'_kQ'_k$ of signature $(4,0)$; the generic norm restricts as $P_0^2-\sum_k(P'_k)^2$, of signature $(1,3)$. **On the Hermitian subspace the trace form is definite and the generic norm is indefinite**, and it is the generic norm that decides the isotropic elements and the units. Verified on the restriction.
+**Remark (the trace form is definite but the norm is not).** The trace form of *The Trace Form and the Invariance of the Symmetric Plain Algebra* restricts to the Hermitian subspace as the **positive definite** form $P_0Q_0+\sum_kP'_kQ'_k$ of signature $(4,0)$; the generic norm restricts as $P_0^2-\sum_k(P'_k)^2$, of signature $(1,3)$. **On the Hermitian subspace the trace form is definite and the generic norm is indefinite**, and it is the generic norm that decides the isotropic elements and the units.
 
 ## The Anti-Hermitian Subspace $\mathbb{M}_-$
 
@@ -158,7 +158,7 @@ a central Hermitian element.
 
 ### Units, Idempotents and Isotropic Elements
 
-An anti-Hermitian element has $N(\tilde P)=-(P'_0)^2+\sum_kP_k^2$, so the **units** are the anti-Hermitian elements with $\sum_kP_k^2\neq(P'_0)^2$, and the **isotropic** elements are those with $\sum_kP_k^2=(P'_0)^2$, a non-empty set: the element $ie_0+e_1$ is anti-Hermitian and $N(ie_0+e_1)=-1+1=0$. The **idempotents** are the solutions of $\tilde P\bullet\tilde P=\tilde P$ with $\tilde P=iP'_0e_0+\mathbf{P}$. Writing the square as $\bigl((iP'_0)^2-(\mathbf{P},\mathbf{P})\bigr)e_0+2(iP'_0)\mathbf{P}$ and equating to $\tilde P$, the vector equation gives $2iP'_0\mathbf{P}=\mathbf{P}$; if $\mathbf{P}\neq0$ this forces $iP'_0=\tfrac12$, impossible because $iP'_0$ is purely imaginary, so $\mathbf{P}=0$, and the scalar equation gives $(iP'_0)^2=iP'_0$, with purely imaginary root $0$. The anti-Hermitian subspace contains no non-zero idempotent. Verified on the coordinate rule.
+An anti-Hermitian element has $N(\tilde P)=-(P'_0)^2+\sum_kP_k^2$, so the **units** are the anti-Hermitian elements with $\sum_kP_k^2\neq(P'_0)^2$, and the **isotropic** elements are those with $\sum_kP_k^2=(P'_0)^2$, a non-empty set: the element $ie_0+e_1$ is anti-Hermitian and $N(ie_0+e_1)=-1+1=0$. The **idempotents** are the solutions of $\tilde P\bullet\tilde P=\tilde P$ with $\tilde P=iP'_0e_0+\mathbf{P}$. Writing the square as $\bigl((iP'_0)^2-(\mathbf{P},\mathbf{P})\bigr)e_0+2(iP'_0)\mathbf{P}$ and equating to $\tilde P$, the vector equation gives $2iP'_0\mathbf{P}=\mathbf{P}$; if $\mathbf{P}\neq0$ this forces $iP'_0=\tfrac12$, impossible because $iP'_0$ is purely imaginary, so $\mathbf{P}=0$, and the scalar equation gives $(iP'_0)^2=iP'_0$, with purely imaginary root $0$. The anti-Hermitian subspace contains no non-zero idempotent.
 
 ## The Table of the Remarkable Subspaces
 
@@ -171,9 +171,9 @@ An anti-Hermitian element has $N(\tilde P)=-(P'_0)^2+\sum_kP_k^2$, so the **unit
 | Hermitian $\mathbb{M}_+$ | yes | $(\tilde P\bullet\tilde Q)^{*}=\tilde P\bullet\tilde Q$ | $P_0^2\neq\sum_k(P'_k)^2$ | $0,\ e_0,\ \tfrac12(e_0\pm i\hat\mu)$ | $\{P_0^2=\sum_k(P'_k)^2\}$, non-empty |
 | Anti-Hermitian $\mathbb{M}_-$ | no | $(\tilde P\bullet\tilde Q)^{*}=\tilde P\bullet\tilde Q$ | $\sum_kP_k^2\neq(P'_0)^2$ | $0$ only | $\{\sum_kP_k^2=(P'_0)^2\}$, non-empty |
 
-**Remark (three of the remarkable subspaces are closed).** Exactly **three of the remarkable subspaces are closed under $\bullet$ — the centre, the quaternion subspace and the Hermitian subspace** — and each of the three is a Jordan subalgebra: the centre is the field $\mathbb{C}$, the quaternion subspace is the Jordan division algebra of the symmetrised quaternions, and the Hermitian subspace is the Hermitian Jordan algebra $J(\mathbb{B})$. The other three fail: the vector subspace squares into the centre, the anti-quaternion subspace into the quaternion subspace, and the anti-Hermitian subspace into the Hermitian subspace. **The three failures are the three sign changes $e_k^2=-e_0$, $i^2=-1$ and $(ie_0)^2=-e_0$**, each sending an element out of its subspace. Verified on the readings.
+**Remark (three of the remarkable subspaces are closed).** Exactly **three of the remarkable subspaces are closed under $\bullet$ — the centre, the quaternion subspace and the Hermitian subspace** — and each of the three is a Jordan subalgebra: the centre is the field $\mathbb{C}$, the quaternion subspace is the Jordan division algebra of the symmetrised quaternions, and the Hermitian subspace is the Hermitian Jordan algebra $J(\mathbb{B})$. The other three fail: the vector subspace squares into the centre, the anti-quaternion subspace into the quaternion subspace, and the anti-Hermitian subspace into the Hermitian subspace. **The three failures are the three sign changes $e_k^2=-e_0$, $i^2=-1$ and $(ie_0)^2=-e_0$**, each sending an element out of its subspace.
 
-**Remark (isotropic and square zero on the remarkable subspaces).** The isotropic elements are non-zero in the vector, Hermitian and anti-Hermitian subspaces, and absent in the centre, the quaternion subspace and the anti-quaternion subspace. The elements of square zero are the **pure** isotropic elements, so on the vector subspace the two coincide and on the Hermitian and anti-Hermitian subspaces the isotropic elements $e_0+ie_1$ and $ie_0+e_1$ are isotropic without being of square zero. **The two notions agree on the vector subspace and differ on the two Hermitian sectors.** Verified on the witnesses.
+**Remark (isotropic and square zero on the remarkable subspaces).** The isotropic elements are non-zero in the vector, Hermitian and anti-Hermitian subspaces, and absent in the centre, the quaternion subspace and the anti-quaternion subspace. The elements of square zero are the **pure** isotropic elements, so on the vector subspace the two coincide and on the Hermitian and anti-Hermitian subspaces the isotropic elements $e_0+ie_1$ and $ie_0+e_1$ are isotropic without being of square zero. **The two notions agree on the vector subspace and differ on the two Hermitian sectors.**
 
 ## Summary
 
@@ -194,7 +194,7 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 
 - *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*, for the remarkable subspaces, their bases and their relations.
 - *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, for the same remarkable subspaces under the general plain bilinear form, and *Remarkable Subspaces and the Four General Products*, for the readings of the four general products.
-- *Biquaternion Norm and Invertibility*, for the generic norm, the units and the isotropic cone.
+- *Norm and Invertibility in the General Plain Algebra*, for the generic norm, the units and the isotropic cone.
 - *Idempotents of the General Plain Algebra*, for the idempotents and the pure states.
 - *The 12 Products of the Biquaternion Complex Space*, for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, for the isotropic cone of the block and the elements of square zero.

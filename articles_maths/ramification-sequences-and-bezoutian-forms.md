@@ -126,7 +126,7 @@ $$
 \frac{r(t)}{g(t)} = t^{-1}\left(\sum_{i=1}^n\frac{r(\alpha_i)}{g'(\alpha_i)}\right) + O(t^{-2}),
 $$
 
-while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\theta)/g'(\theta)$. $\square$
+while $\deg r < n$ and $g$ monic of degree $n$ give $\frac{r(t)}{g(t)} = r_{n-1}t^{-1} + O(t^{-2})$, where $r_{n-1}$ is the coefficient of $t^{n-1}$ in $r$. Comparing the coefficients of $t^{-1}$ gives the first identity, and the second is the definition of the trace of $y(\theta)/g'(\theta)$.
 
 ### The Bezoutian Form of a Pair
 
@@ -160,7 +160,7 @@ on $E_g$. In particular $B(f/g)$ depends on $f$ only through its class in $E_g^\
 
 **Theorem (non-degeneracy).** Let $g \in F[t]$ be monic and square-free and $f \in F[t]$ coprime to $g$. Then the Bezoutian form $q_{f,g}$ is non-degenerate. It is degenerate for every $f$ sharing a factor with $g$.
 
-**Proof for $n = 1$.** Here $g = t + c$ and $\theta = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $q_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted. $\square$
+**Proof for $n = 1$.** Here $g = t + c$ and $\theta = -c$, so $E_g = F$, $s_g$ is the identity of $F$, and $q_{f,g}(x) = f(-c)x^2$. This is non-degenerate exactly when $f(-c) \neq 0$, that is, exactly when $t + c$ does not divide $f$. The general case is the theorem of Becher and Raczek, and is quoted.
 
 The non-degeneracy is the reason the Bezoutian is taken over the square-free $g$ and the coprime $f$: the form is then a genuine element of the Witt group, and its triviality is a meaningful condition.
 
@@ -230,7 +230,7 @@ $$
 a_2\langle\!\langle a_1a_2, b\rangle\!\rangle = \langle a_2, -a_1a_2^2, -a_2b, a_1a_2^2b\rangle \cong \langle a_2, -a_1, -a_2b, a_1b\rangle,
 $$
 
-the two entries $-a_1a_2^2$ and $a_1a_2^2b$ being the square multiples $-a_1$ and $a_1b$ of the corresponding entries, and the multiset of square classes is the same one. Hence the two forms are isometric up to the scalar, as claimed. $\square$
+the two entries $-a_1a_2^2$ and $a_1a_2^2b$ being the square multiples $-a_1$ and $a_1b$ of the corresponding entries, and the multiset of square classes is the same one. Hence the two forms are isometric up to the scalar, as claimed.
 
 ## The Criterion of Becher and Raczek
 
@@ -248,7 +248,7 @@ $$
 \partial\big(\{g_1, a_1\} + \{g_2, a_2\}\big) \neq \partial(\sigma) \qquad \text{for every symbol } \sigma \in k_2(F(t)).
 $$
 
-**Proof.** Write $\rho = \partial(\{g_1,a_1\}+\{g_2,a_2\}) \in R_2(F)$. The hypotheses on the $a_i$ give $\operatorname{Supp}(\rho) = \{p \in P : p \text{ divides } g_1g_2\}$ and $\deg(\rho) = \deg g_1 + \deg g_2$. If a symbol $\sigma$ had $\partial(\sigma) = \rho$, then by the structure of the sequences of symbols there would be polynomials $f, h$ and a square-free $g$, pairwise coprime, with $g = g_1g_2$, such that $\sigma = \{f, gh\}$ and $\partial(\sigma) = R(f/g)$; the criterion would give $B(f/g) = 0$. Moreover $R(f/g_1) + R(f/g_2) = R(f/g) = \partial(\sigma) = \rho = R(a_1/g_1) + R(a_2/g_2)$, because the support of $R(f/g)$ splits into the places dividing $g_1$ and those dividing $g_2$; comparing the entries at the places dividing $g_i$ gives $R(f/g_i) = R(a_i/g_i)$, that is, $a_if$ is a square modulo $g_i$. The lemma then gives $B(f/g) \sim [\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle]$, so $a_2\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle$ is hyperbolic and the form $\langle 1, -a_1a_2\rangle$ represents $g_2(0)$, against the hypothesis. $\square$
+**Proof.** Write $\rho = \partial(\{g_1,a_1\}+\{g_2,a_2\}) \in R_2(F)$. The hypotheses on the $a_i$ give $\operatorname{Supp}(\rho) = \{p \in P : p \text{ divides } g_1g_2\}$ and $\deg(\rho) = \deg g_1 + \deg g_2$. If a symbol $\sigma$ had $\partial(\sigma) = \rho$, then by the structure of the sequences of symbols there would be polynomials $f, h$ and a square-free $g$, pairwise coprime, with $g = g_1g_2$, such that $\sigma = \{f, gh\}$ and $\partial(\sigma) = R(f/g)$; the criterion would give $B(f/g) = 0$. Moreover $R(f/g_1) + R(f/g_2) = R(f/g) = \partial(\sigma) = \rho = R(a_1/g_1) + R(a_2/g_2)$, because the support of $R(f/g)$ splits into the places dividing $g_1$ and those dividing $g_2$; comparing the entries at the places dividing $g_i$ gives $R(f/g_i) = R(a_i/g_i)$, that is, $a_if$ is a square modulo $g_i$. The lemma then gives $B(f/g) \sim [\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle]$, so $a_2\langle\!\langle a_1a_2, g_2(0)\rangle\!\rangle$ is hyperbolic and the form $\langle 1, -a_1a_2\rangle$ represents $g_2(0)$, against the hypothesis.
 
 ## The Example over $\mathbb{Q}$
 

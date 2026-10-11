@@ -53,7 +53,7 @@ function of two distinct values.
 
 **Proof.** $(\tau_g\tau_hf)(x)=\tau_hf(g^{-1}x)=f(h^{-1}g^{-1}x)=f((gh)^{-1}x)=(\tau_{gh}f)(x)$ by the
 inverse law $(gh)^{-1}=h^{-1}g^{-1}$, and the rest is immediate. If $g\neq h$, a function separating $g^{-1}x$
-from $h^{-1}x$ at some point $x$ is moved differently by the two. $\blacksquare$
+from $h^{-1}x$ at some point $x$ is moved differently by the two.
 
 ### Isometry and Unitarity
 
@@ -65,7 +65,6 @@ $\tau_y^\dagger=\tau_{-y}=\tau_y^{-1}$ and $\langle\tau_yf,\tau_yg\rangle=\langl
 **Proof.** The change of variable $x\mapsto x+y$ preserves Lebesgue measure, so $\int\lvert f(x-y)\rvert^pdx=\int\lvert f\rvert^p$;
 the inner product identity is the polarisation, and the adjoint is computed from
 $\langle\tau_yf,g\rangle=\int f(x-y)\overline{g(x)}dx=\int f(u)\overline{g(u+y)}du=\langle f,\tau_{-y}g\rangle$.
-$\blacksquare$
 
 On a group with a measure, the same proof needs the measure to be invariant under the left action, which is
 the defining property of the Haar measure; this is why the general theory belongs to *Locally Compact Groups
@@ -84,7 +83,7 @@ $p=\infty$ with the supremum norm the statement is false.
 continuous compactly supported function, for which the statement is uniform continuity, and using the
 density; the translation-invariance of the norm gives the difference form. For $p=\infty$ the indicator of a
 half-line is moved by the translation by an amount bounded away from $0$ in the supremum norm, so the
-statement fails. $\blacksquare$
+statement fails.
 
 **Remark (the strong operator topology).** The theorem says that $y\mapsto\tau_y$ is continuous when the
 space of operators carries the strong operator topology, the topology of pointwise convergence, but not
@@ -116,7 +115,7 @@ on $\mathcal S$, and $\mathcal S$ is a core. The identification with the Fourier
 $\mathcal F(-\partial_j)\mathcal F^{-1}=M_{-2\pi i\xi_j}$, the differentiation identity of the Fourier
 article with a sign. The exponential identity and the closedness are the content of Stone's theorem for a
 strongly continuous one-parameter unitary group, in *Semigroups and Evolution Equations*, later in this
-Part. $\blacksquare$
+Part.
 
 **Corollary.** The finite differences $\tau_{te_j}-\mathrm{id}$ approximate the generator, and
 $\tau_{te_j}=\mathrm{id}+tA_j+o(t)$; the forward difference $\Delta_h=\tau_{-h}-\mathrm{id}$ is the discrete
@@ -139,7 +138,7 @@ Consequently the characters simultaneously diagonalise the whole representation,
 by the translations is commutative.
 
 **Proof.** $\tau_ge_\xi(x)=e_\xi(x-g)=e_\xi(x)e_\xi(-g)=\overline{e_\xi(g)}e_\xi(x)$, using
-$e_\xi(-g)=\overline{e_\xi(g)}$ for a character. $\blacksquare$
+$e_\xi(-g)=\overline{e_\xi(g)}$ for a character.
 
 ### The Spectrum
 
@@ -155,7 +154,7 @@ essential range of $m$, and for $y\neq0$ the function $\xi\mapsto e^{-2\pi iy\cd
 so the essential range is $\mathbb T$. An eigenvalue would require $e_y$ to be constant on a set of positive
 measure, which it is not. On a finite group the characters form an orthonormal basis and the eigenvalues are
 $\overline{\chi(g)}$, roots of unity; on $\ell^2(\mathbb Z)$ the shift equation $Sf=\lambda f$ gives
-$f_n=\lambda^{-n}f_0$, which is square-summable only if $f=0$, whatever $\lambda$. $\blacksquare$
+$f_n=\lambda^{-n}f_0$, which is square-summable only if $f=0$, whatever $\lambda$.
 
 **Corollary (the diagonalisation).** On a finite abelian group the translation operators are diagonal in
 the character basis; on $\mathbb R^n$ and on $\mathbb Z$ the characters diagonalise the representation in
@@ -174,7 +173,7 @@ operators $T_k$ with $k\in L^1$ are exactly the translation-invariant operators 
 **Proof.** This is the translation-invariance theorem of *Convolution Operators*, the previous article of
 this group: the Fourier operator carries the translations into the multiplications by the characters, and
 an operator commuting with all of them is a multiplication operator. The analysis case is the measure
-algebra. $\blacksquare$
+algebra.
 
 ### Translation as the Atoms of Convolution
 
@@ -188,7 +187,7 @@ translations in the strong operator topology is the algebra of translation-invar
 **Proof.** The identity is the definition of the convolution in the two-variable form, and the convergence
 is Minkowski's integral inequality, $\lVert\int k(y)\tau_yf\,dy\rVert_p\leq\lVert k\rVert_1\lVert f\rVert_p$;
 the closure statement is the theorem above together with the density of the profiles in the multipliers
-that are transforms of measures. $\blacksquare$
+that are transforms of measures.
 
 ## The General Locally Compact Group
 

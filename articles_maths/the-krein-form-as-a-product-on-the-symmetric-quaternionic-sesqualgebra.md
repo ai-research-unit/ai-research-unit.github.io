@@ -32,7 +32,7 @@ $$
 
 and $K$ is Hermitian: $K(\tilde P,\tilde Q)=\overline{K(\tilde Q,\tilde P)}$, with $K(\tilde Q,\tilde Q)=|Q_0|^{2}-\sum_k|Q_k|^{2}$ real.
 
-*Proof.* The first display is the scalar part of the product, computed once. For the Hermitian property, conjugate $K(\tilde Q,\tilde P)=Q_0\overline{P_0}-\sum_kQ_k\overline{P_k}$ and use $\overline{Q_0\overline{P_0}}=P_0\overline{Q_0}$ and $\overline{Q_k\overline{P_k}}=P_k\overline{Q_k}$. The diagonal value is real because each term is the real square $|Q_\mu|^{2}$ with its sign. $\square$
+*Proof.* The first display is the scalar part of the product, computed once. For the Hermitian property, conjugate $K(\tilde Q,\tilde P)=Q_0\overline{P_0}-\sum_kQ_k\overline{P_k}$ and use $\overline{Q_0\overline{P_0}}=P_0\overline{Q_0}$ and $\overline{Q_k\overline{P_k}}=P_k\overline{Q_k}$. The diagonal value is real because each term is the real square $|Q_\mu|^{2}$ with its sign.
 
 **Theorem (the two Gram matrices).** In the coefficient basis the Gram matrix of $K$ is
 
@@ -48,7 +48,7 @@ $$
 
 so $K$ has inertia $(1,3)$ as a Hermitian form over $\mathbb{C}$, and its real part is the real symmetric bilinear form of signature $(2,6)$; $K$ is non-degenerate with zero radical, of rank four over $\mathbb{C}$ and eight over $\mathbb{R}$.
 
-*Proof.* On the coefficient basis, $K(e_\mu,e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, so the Gram matrix is $E$. The real basis Gram matrix records the real part of $K$, the realification: $\mathrm{Re}\,K(e_\mu,e_\nu)=\mathrm{Re}\,K(ie_\mu,ie_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\mathrm{Re}\,K(e_\mu,ie_\nu)=0$, since $K(e_\mu,ie_\nu)=-i\varepsilon_\mu\delta_{\mu\nu}$ is purely imaginary; the matrix is block diagonal with two copies of $E$, hence the displayed diagonal. The inertia follows from the signs, the non-degeneracy from the nonzero determinant, and the rank from the number of nonzero entries. $\square$
+*Proof.* On the coefficient basis, $K(e_\mu,e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, so the Gram matrix is $E$. The real basis Gram matrix records the real part of $K$, the realification: $\mathrm{Re}\,K(e_\mu,e_\nu)=\mathrm{Re}\,K(ie_\mu,ie_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\mathrm{Re}\,K(e_\mu,ie_\nu)=0$, since $K(e_\mu,ie_\nu)=-i\varepsilon_\mu\delta_{\mu\nu}$ is purely imaginary; the matrix is block diagonal with two copies of $E$, hence the displayed diagonal. The inertia follows from the signs, the non-degeneracy from the nonzero determinant, and the rank from the number of nonzero entries.
 
 **Remark.** The basis $e_0,e_1,e_2,e_3$ is a Gram-orthogonal basis of $K$ with the signs $+,-,-,-$, so the form is indefinite by one positive direction and three negative ones; on the realification the two copies of the complex direction give the real signature $(2,6)$. The form is non-degenerate, and its condition of invariance is used in *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
 
@@ -62,7 +62,7 @@ $$
 
 a real algebraic cone of real dimension seven through the origin, of real codimension one, meeting the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ in the real cone $\{p_0^{2}=p_1^{2}+p_2^{2}+p_3^{2}\}$ of real dimension three.
 
-*Proof.* $K(\tilde P,\tilde P)=|P_0|^{2}-\sum_k|P_k|^{2}$, which vanishes exactly on the displayed set; the equation is one real equation on the eight real coordinates, so the real dimension is seven, and on the four real coordinates of the real quaternion subspace it is one real equation, of real dimension three. The cone is algebraic and homogeneous of degree two in the real coordinates. $\square$
+*Proof.* $K(\tilde P,\tilde P)=|P_0|^{2}-\sum_k|P_k|^{2}$, which vanishes exactly on the displayed set; the equation is one real equation on the eight real coordinates, so the real dimension is seven, and on the four real coordinates of the real quaternion subspace it is one real equation, of real dimension three. The cone is algebraic and homogeneous of degree two in the real coordinates.
 
 **Worked examples.** $e_0+e_1$, $e_0+e_2$, $e_0+e_3$ are isotropic; $e_1+ie_2$ is not, since $K(e_1+ie_2,e_1+ie_2)=-1-1=-2$; and the square-zero elements of *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*, among them $e_0+i\boldsymbol\mu$ for real unit $\boldsymbol\mu$, are isotropic.
 
@@ -81,7 +81,7 @@ a real algebraic cone of real dimension seven through the origin, of real codime
 | Hermitian $\mathbb{M}_{+}$ | $p_0q_0-\sum_kp_kq_k$ | $4$ | $(1,3)$ |
 | anti-Hermitian $\mathbb{M}_{-}$ | $p_0q_0-\sum_kp_kq_k$ | $4$ | $(1,3)$ |
 
-*Proof.* On the centre, $K(\lambda e_0,\mu e_0)=\lambda\overline{\mu}$, positive of rank two over the real coordinates of $\lambda$. On the vector subspace, $P_0=Q_0=0$ leaves $-(\mathbf{P},\overline{\mathbf{Q}})$, negative definite of rank six over the real coordinates of $\mathbf{P}$. On the real quaternion subspace all coefficients are real, so $K$ is the real bilinear form $p_0q_0-\sum_kp_kq_k$ of signature $(1,3)$. On the anti-quaternion subspace $P_k=ip_k$ with $p_k$ real, so $K(\tilde P,\tilde Q)=p_0q_0-\sum_k(ip_k)\overline{(iq_k)}=p_0q_0-\sum_kp_kq_k$, the same form. On $\mathbb{M}_{+}$ the coefficients are $(p_0,ip_1,ip_2,ip_3)$, and $P_k\overline{Q_k}=(ip_k)\overline{(iq_k)}=(ip_k)(-iq_k)=p_kq_k$, so $K=p_0q_0-\sum_kp_kq_k$; on $\mathbb{M}_{-}$ the roles of the scalar and vector coefficients are exchanged and the same computation applies. $\square$
+*Proof.* On the centre, $K(\lambda e_0,\mu e_0)=\lambda\overline{\mu}$, positive of rank two over the real coordinates of $\lambda$. On the vector subspace, $P_0=Q_0=0$ leaves $-(\mathbf{P},\overline{\mathbf{Q}})$, negative definite of rank six over the real coordinates of $\mathbf{P}$. On the real quaternion subspace all coefficients are real, so $K$ is the real bilinear form $p_0q_0-\sum_kp_kq_k$ of signature $(1,3)$. On the anti-quaternion subspace $P_k=ip_k$ with $p_k$ real, so $K(\tilde P,\tilde Q)=p_0q_0-\sum_k(ip_k)\overline{(iq_k)}=p_0q_0-\sum_kp_kq_k$, the same form. On $\mathbb{M}_{+}$ the coefficients are $(p_0,ip_1,ip_2,ip_3)$, and $P_k\overline{Q_k}=(ip_k)\overline{(iq_k)}=(ip_k)(-iq_k)=p_kq_k$, so $K=p_0q_0-\sum_kp_kq_k$; on $\mathbb{M}_{-}$ the roles of the scalar and vector coefficients are exchanged and the same computation applies.
 
 **Corollary (the form is negative on the vector directions and positive on the centre).** On the decomposition $\mathbb{B}=\mathbb{C}e_0\oplus\mathbf{e}$, the form $K$ is the direct sum of a positive rank-two piece on the centre and a negative rank-six piece on the vector subspace.
 
@@ -110,7 +110,7 @@ $$
 (\tilde A\star\tilde X)^{*}=\mathrm{SPA}(\tilde X,\overline{\tilde A})
 $$
 
-follow from the definition of the block and the two anti-automorphism properties of ${}^{\natural}$ and ${}^{*}$. Then $K(\tilde A\star\tilde P,\tilde A\star\tilde Q)=\mathrm{Sc}\bigl((\tilde A\star\tilde P)^{\natural}(\tilde A\star\tilde Q)^{*}\bigr)$, which is the displayed value. On the pair $\tilde A=\tilde P=e_0+e_1$, $\tilde Q=e_1$ one has $\tilde A\star\tilde P=-2e_1$ and $\tilde A\star\tilde Q=-e_0-e_1$, so $K(\tilde A\star\tilde P,\tilde A\star\tilde Q)=-2$ against $K(\tilde P,\tilde Q)=K(e_0+e_1,e_1)=-1$: the defect is $-1$ and the invariance fails. $\square$
+follow from the definition of the block and the two anti-automorphism properties of ${}^{\natural}$ and ${}^{*}$. Then $K(\tilde A\star\tilde P,\tilde A\star\tilde Q)=\mathrm{Sc}\bigl((\tilde A\star\tilde P)^{\natural}(\tilde A\star\tilde Q)^{*}\bigr)$, which is the displayed value. On the pair $\tilde A=\tilde P=e_0+e_1$, $\tilde Q=e_1$ one has $\tilde A\star\tilde P=-2e_1$ and $\tilde A\star\tilde Q=-e_0-e_1$, so $K(\tilde A\star\tilde P,\tilde A\star\tilde Q)=-2$ against $K(\tilde P,\tilde Q)=K(e_0+e_1,e_1)=-1$: the defect is $-1$ and the invariance fails.
 
 **Theorem (the compatibility that does hold).** The block and the form are tied by the adjoint relation
 
@@ -130,7 +130,7 @@ $$
 K(\tilde A^{\natural}\star\tilde Y,\tilde X)=\mathrm{Sc}\bigl((\tilde A^{\natural}\star\tilde Y)^{\natural}\tilde X^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Y}\tilde A^{\natural}+\tilde A^{\natural}\overline{\tilde Y})\tilde X^{*}\bigr).
 $$
 
-The two agree term by term: the natural conjugation sends $\overline{\tilde X}\tilde A\tilde Y^{*}$ to $\overline{\tilde Y}\tilde A^{\natural}\tilde X^{*}$ and $\tilde A\overline{\tilde X}\tilde Y^{*}$ to $\overline{\tilde Y}\tilde X^{*}\tilde A^{\natural}$, since $(\overline{\tilde X})^{\natural}=\tilde X^{*}$ and $(\tilde Y^{*})^{\natural}=\overline{\tilde Y}$, and the scalar part is invariant under it; the second pair is then carried one onto the other by the cyclic invariance. Hence $K(\tilde A\star\tilde X,\tilde Y)=K(\tilde A^{\natural}\star\tilde Y,\tilde X)=\overline{K(\tilde X,\tilde A^{\natural}\star\tilde Y)}$ by the Hermitian symmetry of $K$, which is the display. $\square$
+The two agree term by term: the natural conjugation sends $\overline{\tilde X}\tilde A\tilde Y^{*}$ to $\overline{\tilde Y}\tilde A^{\natural}\tilde X^{*}$ and $\tilde A\overline{\tilde X}\tilde Y^{*}$ to $\overline{\tilde Y}\tilde X^{*}\tilde A^{\natural}$, since $(\overline{\tilde X})^{\natural}=\tilde X^{*}$ and $(\tilde Y^{*})^{\natural}=\overline{\tilde Y}$, and the scalar part is invariant under it; the second pair is then carried one onto the other by the cyclic invariance. Hence $K(\tilde A\star\tilde X,\tilde Y)=K(\tilde A^{\natural}\star\tilde Y,\tilde X)=\overline{K(\tilde X,\tilde A^{\natural}\star\tilde Y)}$ by the Hermitian symmetry of $K$, which is the display.
 
 **Remark.** The invariance fails, and the compatibility that holds is the adjoint relation rather than the multiplicativity. The distinction is the one of the whole block: the product is conjugate-linear in one slot, so its left multiplications do not preserve $K$ the way a group of linear maps does, and the form records the failure through the two identities of the adjoint theorem.
 
@@ -138,7 +138,7 @@ The two agree term by term: the natural conjugation sends $\overline{\tilde X}\t
 
 **Theorem (the Hermitian and anti-Hermitian restrictions).** On $\mathbb{M}_{+}$ and on $\mathbb{M}_{-}$ the form $K$ restricts to the same real bilinear form of signature $(1,3)$, and on each of them it is the Krein form of a real four-space with one positive and three negative directions.
 
-*Proof.* The two restrictions were computed in the table of §*The Restriction to the Remarkable Subspaces*: on both, the coefficients are real up to the factor $i$ and the form reads $p_0q_0-\sum_kp_kq_k$, of signature $(1,3)$. $\square$
+*Proof.* The two restrictions were computed in the table of §*The Restriction to the Remarkable Subspaces*: on both, the coefficients are real up to the factor $i$ and the form reads $p_0q_0-\sum_kp_kq_k$, of signature $(1,3)$.
 
 **Theorem (the four scalar parts).** The four symmetric parts of the four general products have the scalar parts
 
@@ -156,7 +156,7 @@ $$
 
 The first two are the two symmetric bilinear forms of the algebra and the last two the two Hermitian forms, $H$ and $K$, of opposite sign in the vector term; on the real quaternion subspace $K$ coincides with the first bilinear form and $H$ with the second.
 
-*Proof.* The four scalar parts are the scalar parts of the four symmetric parts, written out product by product in *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and collected in *The 12 Products of the Biquaternion Complex Space*. On a real element the bar is the identity, so $K$ reads $p_0q_0-(p,q)$, the first bilinear form, and $H$ reads $p_0q_0+(p,q)$, the second. $\square$
+*Proof.* The four scalar parts are the scalar parts of the four symmetric parts, written out product by product in *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and collected in *The 12 Products of the Biquaternion Complex Space*. On a real element the bar is the identity, so $K$ reads $p_0q_0-(p,q)$, the first bilinear form, and $H$ reads $p_0q_0+(p,q)$, the second.
 
 **Remark (the comparison).** The two bilinear forms differ by the sign of the vector term, and so do the two Hermitian forms; the passage from the bilinear pair to the Hermitian pair is the passage from a symmetric bilinear product to a symmetric sesquilinear one, and $K$ is the Hermitian form whose vector term carries the negative sign. The four forms and their comparison are *Comparison Between the Four General Products*; the two Hermitian forms are the two articles *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* and the present one.
 

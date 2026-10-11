@@ -37,7 +37,7 @@ $$
 \Sigma^{\alpha}_{a,b}=\Sigma_{a,b}\circ\alpha=L_a\circ\alpha\circ R_b .
 $$
 
-**Proof.** Both sides send $x$ to $a\alpha(x)b$. $\square$
+**Proof.** Both sides send $x$ to $a\alpha(x)b$.
 
 **Corollary.** Since $\alpha$ is an algebra automorphism and additive, the map $\Sigma_{a,b}\mapsto\Sigma^{\alpha}_{a,b}$ is an involutive transformation of the set of unsigned sandwiches, and the signed sandwich is unsigned exactly when $\alpha(x)=x$ on the elements that matter, in particular when $\alpha=\mathrm{id}$, that is when $A^1=0$.
 
@@ -51,7 +51,7 @@ $$
 
 and the unsigned sandwiches compose by $\Sigma_{a,b}\circ\Sigma_{c,d}=\Sigma_{ac,db}$.
 
-**Proof.** For the signed case, $\Sigma^{\alpha}_{a,b}(\Sigma^{\alpha}_{c,d}(x))=a\,\alpha(c\alpha(x)d)\,b=a\,\alpha(c)\,\alpha(\alpha(x))\,\alpha(d)\,b=a\alpha(c)\,x\,\alpha(d)\,b=\Sigma^{\alpha}_{a\alpha(c),\alpha(d)b}(x)$, using $\alpha^2=\mathrm{id}$ and the multiplicativity of $\alpha$. The unsigned case is associativity. $\square$
+**Proof.** For the signed case, $\Sigma^{\alpha}_{a,b}(\Sigma^{\alpha}_{c,d}(x))=a\,\alpha(c\alpha(x)d)\,b=a\,\alpha(c)\,\alpha(\alpha(x))\,\alpha(d)\,b=a\alpha(c)\,x\,\alpha(d)\,b=\Sigma^{\alpha}_{a\alpha(c),\alpha(d)b}(x)$, using $\alpha^2=\mathrm{id}$ and the multiplicativity of $\alpha$. The unsigned case is associativity.
 
 **Corollary.** The signed sandwiches form a monoid under composition, with unit $\Sigma^{\alpha}_{1,1}$; the unsigned sandwiches form a monoid with unit $\Sigma_{1,1}$. The product of two signed sandwiches is a signed sandwich, not an unsigned one; the product of a signed and an unsigned sandwich is a signed sandwich, and the unsigned part is a submonoid.
 
@@ -61,7 +61,7 @@ $$
 \bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1}=\Sigma^{\alpha}_{\alpha(a^{-1}),\,\alpha(b^{-1})} .
 $$
 
-**Proof.** Compose on the right: $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}=\Sigma^{\alpha}_{a\alpha(\alpha(a^{-1})),\ \alpha(\alpha(b^{-1}))b}=\Sigma^{\alpha}_{a a^{-1},\ b^{-1}b}=\Sigma^{\alpha}_{1,1}$, by the composition law, the multiplicativity of $\alpha$ and $\alpha^2=\mathrm{id}$; the same computation with the factors interchanged gives the left inverse. Conversely if $\Sigma^{\alpha}_{a,b}$ is invertible then left multiplication by $a$ is invertible, so $a$ is a unit, and right multiplication by $b$ is invertible, so $b$ is a unit. $\square$
+**Proof.** Compose on the right: $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}=\Sigma^{\alpha}_{a\alpha(\alpha(a^{-1})),\ \alpha(\alpha(b^{-1}))b}=\Sigma^{\alpha}_{a a^{-1},\ b^{-1}b}=\Sigma^{\alpha}_{1,1}$, by the composition law, the multiplicativity of $\alpha$ and $\alpha^2=\mathrm{id}$; the same computation with the factors interchanged gives the left inverse. Conversely if $\Sigma^{\alpha}_{a,b}$ is invertible then left multiplication by $a$ is invertible, so $a$ is a unit, and right multiplication by $b$ is invertible, so $b$ is a unit.
 
 ## The Parity of the Sandwiches
 
@@ -69,7 +69,7 @@ $$
 
 **Proposition.** If $a$ and $b$ are homogeneous of degrees $|a|,|b|$, then $\Sigma_{a,b}$ and $\Sigma^{\alpha}_{a,b}$ map $A^k$ to $A^{k+|a|+|b|}$; the sign of the twist is $(-1)^k$ on $A^k$.
 
-**Proof.** The left multiplication by $a$ shifts the degree by $|a|$, the right by $|b|$; the twist multiplies by $(-1)^k$ on $A^k$. $\square$
+**Proof.** The left multiplication by $a$ shifts the degree by $|a|$, the right by $|b|$; the twist multiplies by $(-1)^k$ on $A^k$.
 
 **Corollary.** The signed sandwich is homogeneous of degree $|a|+|b|$ as a map of graded $R$-modules, and the unsigned sandwich has the same degree; the two differ only by the sign $(-1)^k$ on each homogeneous component.
 
@@ -85,7 +85,7 @@ $$
 
 is an involution, a **signed reflection**; more generally $\Sigma^{\alpha}_{a,b}$ is an involution whenever $a,b$ are units with $a\alpha(a)=1$ and $b\alpha(b)=1$ and $a,b$ lie in the centre. An element $x$ is fixed by $\Sigma^{\alpha}_{a,a^{-1}}$ exactly when $\alpha(x)=a^{-1}xa$.
 
-**Proof.** By the composition law $\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}$; with $a\alpha(a)=1$ the first factor is $1$, and the second is $\alpha(a^{-1})a^{-1}=(a\alpha(a))^{-1}=1$. The general condition is the same computation with two pairs; the fixed-point statement is $a\alpha(x)a^{-1}=x$. $\square$
+**Proof.** By the composition law $\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}$; with $a\alpha(a)=1$ the first factor is $1$, and the second is $\alpha(a^{-1})a^{-1}=(a\alpha(a))^{-1}=1$. The general condition is the same computation with two pairs; the fixed-point statement is $a\alpha(x)a^{-1}=x$.
 
 **Corollary.** In a Clifford algebra the signed sandwich $x\mapsto u\alpha(x)u^{-1}$ with $u\alpha(u)=1$ is the reflection in the direction of $u$ on the space of vectors, since $\alpha(v)=-v$ there; this is the algebraic mechanism by which a signed sandwich realises a reflection, and it is developed in *Reflections as Signed Two-Sided Operators on a Graded Algebra*. The Clifford algebra itself, its quadratic form and its orthogonal group belong to the symmetric algebras and are named here only as the model; nothing of them is used.
 
@@ -93,7 +93,6 @@ is an involution, a **signed reflection**; more generally $\Sigma^{\alpha}_{a,b}
 
 Let $A=\Lambda^\bullet V$ be the exterior algebra of a finite-dimensional $K$-vector space $V$, graded by the degree modulo two, with the grade involution $\alpha$ acting by $(-1)^k$ on $\Lambda^kV$. For homogeneous $a,b$ the signed sandwich is $\Sigma^{\alpha}_{a,b}(\omega)=a\wedge\alpha(\omega)\wedge b$, and the composition law reads $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\wedge\alpha(c),\alpha(d)\wedge b}$. For $a$ of even degree and $b=a^{-1}$ when $a$ is a unit in the even part, the sandwich is an unsigned conjugation; for $a$ of odd degree, for example $a=v$ a vector, one has $\alpha(v)=-v$ and $\Sigma^{\alpha}_{v,v}(\omega)=v\wedge\alpha(\omega)\wedge v=v\wedge(-1)^{|\omega|}\omega\wedge v$, which is $0$ on the whole algebra because $v\wedge v=0$. The degenerate case shows that the involution condition is not automatic and is the reason the next entry separates the nondegenerate from the degenerate correspondences.
 
-**Verified.** The composition law and the parity of $\Sigma^{\alpha}_{a,b}$ were checked on the exterior algebra of a two-dimensional space on homogeneous basis elements, and the vanishing of the odd vector sandwich was checked on the four basis elements $1,e_1,e_2,e_1e_2$.
 
 ## Summary
 

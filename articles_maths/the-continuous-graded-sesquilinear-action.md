@@ -22,11 +22,11 @@ $$
 
 **Proposition (the parts are closed, and the even part is a sub-sesqualgebra).** In a graded topological sesqualgebra the projections are continuous, $A^{0}$ is a closed unital sub-sesqualgebra and $A^{1}$ is a closed $A^{0}$-bimodule. In the normed case the decomposition is the direct sum of the closed subspaces $A^{0}$ and $A^{1}$ and the norm is equivalent to $\lVert a^{0}\rVert+\lVert a^{1}\rVert$.
 
-**Proof.** The definition of a topological direct sum makes the projections continuous and the pieces closed. The closure of $A^{0}$ under the product and the unit is the grading rule $A^{0}A^{0}\subseteq A^{0}$, and $A^{0}$ is complete when $A$ is, hence a closed sub-sesqualgebra; $A^{0}A^{1}\cup A^{1}A^{0}\subseteq A^{1}$ makes $A^{1}$ a bimodule. In the normed case a finite direct sum of closed subspaces is a topological direct sum, and all norms on the finite-dimensional space of the decomposition are equivalent. $\square$
+**Proof.** The definition of a topological direct sum makes the projections continuous and the pieces closed. The closure of $A^{0}$ under the product and the unit is the grading rule $A^{0}A^{0}\subseteq A^{0}$, and $A^{0}$ is complete when $A$ is, hence a closed sub-sesqualgebra; $A^{0}A^{1}\cup A^{1}A^{0}\subseteq A^{1}$ makes $A^{1}$ a bimodule. In the normed case a finite direct sum of closed subspaces is a topological direct sum, and all norms on the finite-dimensional space of the decomposition are equivalent.
 
 **Proposition (the involution is even).** Let $*$ be a $\varsigma$-semilinear involution of a graded sesqualgebra whose parts are closed. Then $*$ preserves the grading, $*(A^{i})\subseteq A^{i}$, and it is continuous exactly when the graded pieces are given the topology of the object; in the normed case it is isometric.
 
-**Proof.** The degree count of *The Graded Sesquilinear Action*, $\lvert x^{*}\rvert=\lvert x\rvert+\delta$ with $\delta=2\delta$, gives $\delta=0$, an algebraic statement independent of the topology; the continuity is the standing hypothesis of the normed case, where the involution is isometric. $\square$
+**Proof.** The degree count of *The Graded Sesquilinear Action*, $\lvert x^{*}\rvert=\lvert x\rvert+\delta$ with $\delta=2\delta$, gives $\delta=0$, an algebraic statement independent of the topology; the continuity is the standing hypothesis of the normed case, where the involution is isometric.
 
 **Remark.** The count is Part I and the topology adds nothing to it; what the topology adds is that the two parts are closed and that the degree is a continuous projection, so the even and the odd $*$-stable summands are genuine topological subobjects.
 
@@ -44,7 +44,7 @@ $$
 
 and with a normed module action ($C=1$) and an isometric conjugation ($D=1$) the constant is one.
 
-**Proof.** The factorisation exhibits the derived action as a composite of continuous maps, and the estimate is the product of the two bounds. $\square$
+**Proof.** The factorisation exhibits the derived action as a composite of continuous maps, and the estimate is the product of the two bounds.
 
 **Proposition (the parities and the degree).** The derived action is linear in the algebra element and $\varsigma$-semilinear in the module element, and it is homogeneous:
 
@@ -52,7 +52,7 @@ $$
 (\lambda a)\star m=\lambda(a\star m),\qquad a\star(\lambda m)=\varsigma(\lambda)(a\star m),\qquad A^{i}\star M^{j}\subseteq M^{i+j}.
 $$
 
-**Proof.** The two scalar rules are the linearity of the action in the first slot and the $\varsigma$-semilinearity of $\theta$; the degree is $\lvert a\star m\rvert=\lvert a\rvert+\lvert\theta(m)\rvert=\lvert a\rvert+\lvert m\rvert$, the conjugation being even. $\square$
+**Proof.** The two scalar rules are the linearity of the action in the first slot and the $\varsigma$-semilinearity of $\theta$; the degree is $\lvert a\star m\rvert=\lvert a\rvert+\lvert\theta(m)\rvert=\lvert a\rvert+\lvert m\rvert$, the conjugation being even.
 
 **Remark.** The derived action is not an action and is not $\mathbb{K}$-bilinear; it is the module-level form of the derived product $x\star y=xy^{*}$ of the standard example, and $\theta=\mathrm{id}$ recovers the action map. The continuity is the only respect in which the topological statement differs from the algebraic one, and it is free, being a composite.
 
@@ -60,7 +60,7 @@ $$
 
 **Proposition (the closure of the compatible even action).** Suppose a subset $M_{0}\subseteq M$ is invariant under $\theta$ and under every $a\cdot$ with $a\in A^{0}$, and that $\theta$ intertwines the even action on $M_{0}$, $\theta(a\cdot m)=a^{*}\cdot\theta(m)$ for $m\in M_{0}$. Then the same identity holds on the closure $\overline{M_{0}}$.
 
-**Proof.** Both sides are continuous in $m$ and agree on the dense subset $M_{0}$. $\square$
+**Proof.** Both sides are continuous in $m$ and agree on the dense subset $M_{0}$.
 
 **Remark.** The proposition is the topological use of the compatibility: an identity of continuous maps, checked on a dense set, extends to the closure. In the normed case every closed invariant submodule is available as such an $M_{0}$.
 
@@ -74,7 +74,7 @@ $$
 
 **Theorem (the even part intertwines, the odd part obstructs).** The condition of the definition is a closed condition on the pair $(A,M,\theta)$, and the even part $A^{0}$ acts on a compatible module through $\theta$; the identity cannot be extended to the odd part, because $\theta(a\cdot m)=a^{*}\cdot\theta(m)$ fails for every conjugation as soon as some $a\in A^{1}$ acts nontrivially.
 
-**Proof.** The two sides of the even identity are continuous, so the set of pairs for which it holds is closed, and its restriction to $A^{0}$ is the intertwining; this is the closedness. For the odd part, choose $a\in A^{1}$ with $a\cdot m\neq0$ for some $m$; the witness of *The Graded Sesquilinear Action*, §*The Graded $\varsigma$-Compatibility* is reproduced there for the matrix superalgebra, and it is a finite algebraic computation that uses neither a norm nor a limit. Its content is that the involution reverses the order of a product of two odd elements and does not reverse it on the even part, so the odd part cannot be intertwined. $\square$
+**Proof.** The two sides of the even identity are continuous, so the set of pairs for which it holds is closed, and its restriction to $A^{0}$ is the intertwining; this is the closedness. For the odd part, choose $a\in A^{1}$ with $a\cdot m\neq0$ for some $m$; the witness of *The Graded Sesquilinear Action*, §*The Graded $\varsigma$-Compatibility* is reproduced there for the matrix superalgebra, and it is a finite algebraic computation that uses neither a norm nor a limit. Its content is that the involution reverses the order of a product of two odd elements and does not reverse it on the even part, so the odd part cannot be intertwined.
 
 **Example (the matrix superalgebra with the operator norm).** Let $A=M_{1|1}(\mathbb{C})$ with the parity grading, the conjugate transpose as the involution and the operator norm, and let $M=\mathbb{C}^{1|1}$ with the Euclidean norm, the standard action and the coefficientwise conjugation $\theta(\lambda f_{1}+\mu f_{2})=\varsigma(\lambda)f_{1}+\varsigma(\mu)f_{2}$. The module is compatible: the conjugate transpose fixes the two idempotents of $A^{0}$, so the identity holds on $A^{0}$. It fails on $A^{1}$: with $a=E_{12}$ and $m=f_{2}$ one has $\theta(a\cdot m)=f_{1}\neq0=(a^{*}\cdot\theta(m))$. Both are continuous modules with an isometric conjugation, so the derived action is bounded with constant one, and the failure is visible at finite witnesses.
 
@@ -84,7 +84,7 @@ $$
 
 **Theorem (the degeneration).** Put $\varsigma=\mathrm{id}$ and $*=\mathrm{id}$, so that $A$ is a commutative topological algebra, and take $\theta=\mathrm{id}$. Then the derived action is the action, the conjugation adds nothing, and the article reduces to *The Graded Action on a Module over an Algebra*.
 
-**Proof.** With $\varsigma=\mathrm{id}$ the module is a topological module in the ordinary sense and the derived action is $a\cdot m$; with $*=\mathrm{id}$ the involution is trivial and the product is bilinear, so the object is a topological algebra of the bilinear layer; and the compatibility of the definition is the identity $\theta(a\cdot m)=a\cdot\theta(m)$, which $\theta=\mathrm{id}$ satisfies. The degree rule and the module structure are those of the graded action. $\square$
+**Proof.** With $\varsigma=\mathrm{id}$ the module is a topological module in the ordinary sense and the derived action is $a\cdot m$; with $*=\mathrm{id}$ the involution is trivial and the product is bilinear, so the object is a topological algebra of the bilinear layer; and the compatibility of the definition is the identity $\theta(a\cdot m)=a\cdot\theta(m)$, which $\theta=\mathrm{id}$ satisfies. The degree rule and the module structure are those of the graded action.
 
 **Remark.** As in *Sesqualgebras*, the collapse has the two independent steps of *Topological Sesqualgebras*: $\varsigma=\mathrm{id}$ removes the conjugate-linearity and $*=\mathrm{id}$ removes the involution, and what is lost is the conjugation and its obstruction. The continuous graded sesquilinear action is therefore a structure on top of the graded action, with one more datum and one more obstruction, and the topology is carried along by both.
 

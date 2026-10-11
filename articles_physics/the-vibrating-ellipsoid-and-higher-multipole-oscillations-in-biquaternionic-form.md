@@ -40,7 +40,7 @@ $$
 \mathbf{v} \;\longmapsto\; \mathbf{v}' = \tilde{\Lambda}\,\mathbf{v}\,\tilde{\Lambda}^{\natural} .
 $$
 
-The action has been verified against the standard rotation matrix $R(\theta,\hat{\mathbf{n}})$ on thirty random axis–angle pairs: the image of a vector equals $R\mathbf{v}$ to $10^{-10}$, and the norm $\mathbf{v}\cdot\mathbf{v}$ is preserved to machine precision. The composition law is
+The composition law is
 
 $$
 \tilde{\Lambda}_2\tilde{\Lambda}_1 \;\longleftrightarrow\; R_2R_1 ,
@@ -204,7 +204,7 @@ Q^{(lab)}_{zz}(t) &= \lambda_3 , \qquad Q^{(lab)}_{xz} = Q^{(lab)}_{yz} = 0 .
 \end{aligned}
 $$
 
-Every component is a constant plus a term at $2\Omega$. The identities have been verified at four times to machine precision. The moment therefore oscillates at **twice** the rotation frequency,
+Every component is a constant plus a term at $2\Omega$. The moment therefore oscillates at **twice** the rotation frequency,
 
 $$
 \omega_{quad} = 2\Omega ,

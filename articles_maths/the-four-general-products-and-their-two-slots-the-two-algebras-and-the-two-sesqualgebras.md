@@ -94,11 +94,11 @@ $$
 (L_x\circ L_y)(x')=K_1(x)\,\varsigma\!\left(K_1(y)\,\varsigma(x')\right)=K_1(x)\,x'\,\varsigma(K_1(y)),
 $$
 
-using that $\varsigma$ is an involution and an anti-automorphism. The right-hand side is $\mathbb{C}$-linear in $x'$, while $L_z(x')=K_1(z)\varsigma(x')$ is conjugate-linear, and no non-zero map is both. For $x,y\neq0$ the composition is non-zero, so it is not a left multiplication. $\square$
+using that $\varsigma$ is an involution and an anti-automorphism. The right-hand side is $\mathbb{C}$-linear in $x'$, while $L_z(x')=K_1(z)\varsigma(x')$ is conjugate-linear, and no non-zero map is both. For $x,y\neq0$ the composition is non-zero, so it is not a left multiplication.
 
 **Theorem (the first slot rules the right unit).** With the hypotheses and notation of the previous theorem, $1$ is a right unit for $\star$ if and only if $K_1=\mathrm{id}$.
 
-**Proof.** $x\star1=K_1(x)K_2(1)=K_1(x)$, since $\varsigma(1)=1$. This equals $x$ for every $x$ if and only if $K_1=\mathrm{id}$. $\square$
+**Proof.** $x\star1=K_1(x)K_2(1)=K_1(x)$, since $\varsigma(1)=1$. This equals $x$ for every $x$ if and only if $K_1=\mathrm{id}$.
 
 **Theorem (associativity requires both slots trivial, in $\mathbb{B}$).** In $\mathbb{B}$ the product $\star_{K_1K_2}$ is associative if and only if $K_1=\mathrm{id}$ and $K_2=\mathrm{id}$.
 
@@ -108,7 +108,7 @@ $$
 x\star(y\star z)=K_1(x)\,\varsigma\!\left(K_1(y)\,\varsigma(z)\right)=K_1(x)\,z\,\varsigma(K_1(y))
 $$
 
-is $\mathbb{C}$-linear, by the computation of the previous theorem; a map that is both must vanish, and the second one does not, being $z\mapsto z$ at $x=y=e_0$. $\square$
+is $\mathbb{C}$-linear, by the computation of the previous theorem; a map that is both must vanish, and the second one does not, being $z\mapsto z$ at $x=y=e_0$.
 
 **Remark (associativity is the one rule of the three that is not general).** The two theorems above hold in any $A$ of §*The Two Slots*, because their proofs use only that $\varsigma$ is conjugate-linear and not linear and that $\natural$ is an anti-automorphism. Associativity does not. In a commutative algebra with $\natural=\varsigma=\mathrm{id}$ all four settings coincide and all four are associative, so no slot rule can be stated in that generality; the theorem is a statement about $\mathbb{B}$, and it is the statement the property table of *Comparison Between the Four General Products* already carries. It is proved here in the slot language because the proof is two lines of it and because it is the row that makes the two-sided unit unique.
 
@@ -172,7 +172,7 @@ Again associativity and a unit are not assumed. The two definitions are those of
 
 **Theorem (the second slot is the split).** With the notation of §*The Two Slots*, the product $\star_{K_1K_2}$ is the multiplication of an algebra over $\mathbb{C}$ if and only if $K_2=\mathrm{id}$, and of a sesqualgebra over $\mathbb{C}$ if and only if $K_2=\varsigma$.
 
-**Proof.** $\mathbb{C}$-linearity in the first argument holds for all four settings because $K_1$ is $\mathbb{C}$-linear, and $\mathbb{C}$-linearity or conjugate-linearity in the second argument is the theorem of §*The Slot Calculus*. The two definitions differ in nothing else. $\square$
+**Proof.** $\mathbb{C}$-linearity in the first argument holds for all four settings because $K_1$ is $\mathbb{C}$-linear, and $\mathbb{C}$-linearity or conjugate-linearity in the second argument is the theorem of §*The Slot Calculus*. The two definitions differ in nothing else.
 
 **Corollary (two and two, and the names track the second slot).** The four general products are the multiplications of exactly two algebra structures and two sesqualgebra structures on the underlying space of $\mathbb{B}$, the division being the column of the grid. The four named objects of the category are therefore indexed by the grid as follows; the adjective *quaternionic* records the first slot and nothing else.
 
@@ -216,7 +216,7 @@ $$
 =\sum_\mu\varepsilon_\mu^{\,1-[K_1={}^{\natural}]}P_\mu(K_2\tilde{Q})_\mu,
 $$
 
-using $\varepsilon_\mu^{2}=1$. The four settings are read off, and the identity $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ is the one the corpus writes $\langle\tilde{P},\tilde{Q}\rangle_{*}$. $\square$
+using $\varepsilon_\mu^{2}=1$. The four settings are read off, and the identity $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ is the one the corpus writes $\langle\tilde{P},\tilde{Q}\rangle_{*}$.
 
 **Corollary (the coefficient $\varepsilon$ survives when the two slots agree).** In the table of the theorem the coefficient is $\varepsilon_\mu$ for the plain product and for the general quaternionic sesquilinear product — the two settings in which the slots are equal, both trivial or both non-trivial — and it is $1$ for the general quaternionic bilinear and the general plain sesquilinear products, the two settings in which the slots differ. The general plain bilinear form and the general quaternionic sesquilinear form are the two forms whose coordinate expression carries the signature of the scalar part; the other two are the ones in which it has cancelled.
 
@@ -240,13 +240,13 @@ $$
 \tilde{Q}^{\natural}\tilde{Q}=N(\tilde{Q})\,e_0,\qquad N(\tilde{Q})=\sum_{\mu=0}^{3}Q_\mu^{2}.
 $$
 
-**Proof.** For the plain product the vector part $2Q_0\mathbf{Q}+\mathbf{Q}\times\mathbf{Q}$ survives; for the two products whose second slot is ${}^{*}$ the vector part survives as well, since the star negates the vector coefficients and leaves the cross terms. For $({}^{\natural},\mathrm{id})$, $\natural$ is the standard involution of the quaternion algebra $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$, whose norm form $\natural(\tilde{Q})\tilde{Q}$ takes values in the centre $\mathbb{C}e_0$ by definition of a quaternion algebra; the value $\sum_\mu Q_\mu^{2}$ is the computation on the basis. $\square$
+**Proof.** For the plain product the vector part $2Q_0\mathbf{Q}+\mathbf{Q}\times\mathbf{Q}$ survives; for the two products whose second slot is ${}^{*}$ the vector part survives as well, since the star negates the vector coefficients and leaves the cross terms. For $({}^{\natural},\mathrm{id})$, $\natural$ is the standard involution of the quaternion algebra $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$, whose norm form $\natural(\tilde{Q})\tilde{Q}$ takes values in the centre $\mathbb{C}e_0$ by definition of a quaternion algebra; the value $\sum_\mu Q_\mu^{2}$ is the computation on the basis.
 
 **Remark (this rule is not general, unlike the two of §*The Slot Calculus*).** In the second instance of §*A Second Instance* the square $A^TA$ is not a scalar multiple of $\mathrm{I}_2$; the property depends on $\natural$ being the standard involution of a quaternion algebra, so the norm form lands in the centre. The two slot rules of §*The Slot Calculus* hold in any such $A$; this one holds in $\mathbb{B}$ because $\mathbb{B}$ is a quaternion algebra over $\mathbb{C}$. The distinction is the reason the row is italicised in the table of §*The Table of the Slots*.
 
 **Theorem (the first slot is isotopy, the second is the derived operation).** Let $K_1\in\{\mathrm{id},\natural\}$ and $K_2\in\{\mathrm{id},{}^{*}\}$. The product $\star_{K_1K_2}$ is the $K_1$-**isotope** of the product $\star_{\mathrm{id}K_2}$, that is, it is the product obtained from the latter by the read-out $K_1$ in the first slot; and $\star_{\mathrm{id}\mathrm{id}}$ and $\star_{\mathrm{id}{}^{*}}$ are respectively the multiplication of the associative algebra $\mathbb{B}$ and its **derived operation** with respect to the involution ${}^{*}$, while $\star_{{}^{\natural}\mathrm{id}}$ and $\star_{{}^{\natural}{}^{*}}$ are their $\natural$-isotopes.
 
-**Proof.** The isotope statement is the definition: $x\star_{K_1K_2}y=K_1(x)\star_{\mathrm{id}K_2}y$ and $K_1$ is a bijection. For the other, the derived operation of an associative algebra $A$ with a conjugate-linear involution $\varsigma$ is the product $x\varsigma(y)$, and the corpus's theorem (*Introduction to the General Plain Sesqualgebra of Biquaternions*) is that $\tilde{P}\tilde{Q}^{*}$ is exactly this with $\varsigma={}^{*}$; the failure of the same test for $\tilde{P}^{\natural}\tilde{Q}^{*}$, and the identification of the fourth product as the $\natural$-isotope of the derived operation, are the content of *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, §*The Product Is Not the Derived Operation*. $\square$
+**Proof.** The isotope statement is the definition: $x\star_{K_1K_2}y=K_1(x)\star_{\mathrm{id}K_2}y$ and $K_1$ is a bijection. For the other, the derived operation of an associative algebra $A$ with a conjugate-linear involution $\varsigma$ is the product $x\varsigma(y)$, and the corpus's theorem (*Introduction to the General Plain Sesqualgebra of Biquaternions*) is that $\tilde{P}\tilde{Q}^{*}$ is exactly this with $\varsigma={}^{*}$; the failure of the same test for $\tilde{P}^{\natural}\tilde{Q}^{*}$, and the identification of the fourth product as the $\natural$-isotope of the derived operation, are the content of *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, §*The Product Is Not the Derived Operation*.
 
 **Corollary (the four settings are one product and its three modifications).** The four general products are the plain multiplication, its $\natural$-isotope, the derived operation with respect to ${}^{*}$, and the $\natural$-isotope of that derived operation. Each modification is one slot, and the two modifications commute because the two slots are read independently. **The four objects of the category are therefore the four vertices of the square generated by two operations on one product, and not four general products chosen from a list of sixteen.**
 

@@ -24,7 +24,7 @@ The set of the involutions is written $\operatorname{Inv}(A)$, or $\operatorname
 
 **Proposition.** Every $\alpha \in \operatorname{Inv}(A)$ fixes the unit, $\alpha(1) = 1$, and it is its own inverse, $\alpha^{-1} = \alpha$.
 
-**Proof.** From $\alpha^{2} = \mathrm{id}$ the map is the inverse of itself. For the unit, $\alpha(1) = \alpha(1 \cdot 1) = \alpha(1)\alpha(1)$, so $\alpha(1)$ is an idempotent; more precisely, for every $a \in A$ one has $\alpha(1)a = \alpha(1)\alpha(\alpha(a)) = \alpha(\alpha(a) \cdot 1) = \alpha(\alpha(a)) = a$, so $\alpha(1)$ is a left unit, and $A$ has the unit $1$. $\square$
+**Proof.** From $\alpha^{2} = \mathrm{id}$ the map is the inverse of itself. For the unit, $\alpha(1) = \alpha(1 \cdot 1) = \alpha(1)\alpha(1)$, so $\alpha(1)$ is an idempotent; more precisely, for every $a \in A$ one has $\alpha(1)a = \alpha(1)\alpha(\alpha(a)) = \alpha(\alpha(a) \cdot 1) = \alpha(\alpha(a)) = a$, so $\alpha(1)$ is a left unit, and $A$ has the unit $1$.
 
 **Remark.** The datum $*$ is an element of $\operatorname{Inv}(A)$, so the set is not empty, and every statement below is a statement about the datum and its neighbours. The definition is the same as that of the involutions of an algebra when $\varsigma = \mathrm{id}$, and it differs when $\varsigma \neq \mathrm{id}$ only through the first of the three displayed conditions: the twist is carried by the involution itself, not by the algebra.
 
@@ -32,7 +32,7 @@ The set of the involutions is written $\operatorname{Inv}(A)$, or $\operatorname
 
 **Proposition (the collapse at the identity).** Let $\varsigma = \mathrm{id}$. Then the involutions of $A$ over $(R,\mathrm{id})$ are the $R$-linear anti-automorphisms $\alpha$ with $\alpha^{2} = \mathrm{id}$, that is the involutions of the algebra $A$ in the sense of *Algebras: A General Introduction*; the fixed ring is all of $R$ and the twist disappears from every formula.
 
-**Proof.** With $\varsigma = \mathrm{id}$ the condition $\alpha(\lambda x) = \varsigma(\lambda)\alpha(x)$ reads $\alpha(\lambda x) = \lambda \alpha(x)$, which is $R$-linearity, and the other two conditions are unchanged. $\square$
+**Proof.** With $\varsigma = \mathrm{id}$ the condition $\alpha(\lambda x) = \varsigma(\lambda)\alpha(x)$ reads $\alpha(\lambda x) = \lambda \alpha(x)$, which is $R$-linearity, and the other two conditions are unchanged.
 
 **Remark.** The collapse is the reason the present article is a sesquilinear one and not merely a restatement of the classical theory: for $\varsigma = \mathrm{id}$ the set $\operatorname{Inv}(A)$ and the fixed subspace carry no twist, all the scalars are available, and the constructions of *Algebras: A General Introduction* apply without change. The content of the sesquilinear case is that the set of the involutions depends on $\varsigma$, that its scalars live in the fixed ring $R^{\varsigma}$, and that the inner family is cut by a centrality condition, as the next sections show.
 
@@ -52,17 +52,17 @@ $$
 (\alpha\beta)^{2} = \alpha\beta\alpha\beta ,
 $$
 
-and this is $\mathrm{id}$ exactly when $\alpha\beta = (\alpha\beta)^{-1} = \beta^{-1}\alpha^{-1} = \beta\alpha$, using $\alpha^{2} = \beta^{2} = \mathrm{id}$. The composite is multiplicative and not anti-multiplicative, so it belongs to $\operatorname{Inv}(A)$ only when the two rules coincide, that is only when $A$ is commutative. $\square$
+and this is $\mathrm{id}$ exactly when $\alpha\beta = (\alpha\beta)^{-1} = \beta^{-1}\alpha^{-1} = \beta\alpha$, using $\alpha^{2} = \beta^{2} = \mathrm{id}$. The composite is multiplicative and not anti-multiplicative, so it belongs to $\operatorname{Inv}(A)$ only when the two rules coincide, that is only when $A$ is commutative.
 
 **Corollary.** $\operatorname{Inv}(A)$ is closed under inversion, and it is not closed under composition unless $A$ is commutative: the composite of two of its elements is an $R$-linear automorphism, and it lies in $\operatorname{Inv}(A)$ only when the two rules of multiplication coincide. In particular $\operatorname{Inv}(A)$ is not a group under composition.
 
-**Proof.** The inverse of an element of $\operatorname{Inv}(A)$ is the element itself, by the proposition on the unit. The composite of two of its elements is multiplicative and not anti-multiplicative, so it fails the second of the three defining conditions of $\operatorname{Inv}(A)$; the two rules coincide exactly when $A$ is commutative. $\square$
+**Proof.** The inverse of an element of $\operatorname{Inv}(A)$ is the element itself, by the proposition on the unit. The composite of two of its elements is multiplicative and not anti-multiplicative, so it fails the second of the three defining conditions of $\operatorname{Inv}(A)$; the two rules coincide exactly when $A$ is commutative.
 
 **Remark.** The theorem is the reason the set of the involutions is a set and not a group: the composite of two of its elements leaves the set, and the commutation of the pair is exactly what makes its square the identity, while the products the set generates lie in the ambient group of the semilinear automorphisms and anti-automorphisms of $A$ over the twists $\{\mathrm{id},\varsigma\}$, which is *Anti-Automorphisms Twisted by the Base Involution*, where the two orientations and the two twists give the four classes. Here only the order-two part is kept.
 
 **Proposition (conjugation).** For $\alpha, \beta \in \operatorname{Inv}(A)$ the conjugate $\alpha\beta\alpha^{-1} = \alpha\beta\alpha$ is again an involution, and $H(A,\alpha\beta\alpha) = \alpha H(A,\beta)$.
 
-**Proof.** The conjugate of an anti-automorphism by an anti-automorphism is an anti-automorphism, it is $\varsigma$-semilinear, and its square is $\alpha\beta^{2}\alpha^{-1} = \mathrm{id}$, so it lies in $\operatorname{Inv}(A)$. For the fixed subspace, $(\alpha\beta\alpha)(\alpha x) = \alpha\beta x = \alpha x$ exactly when $x \in H(A,\beta)$, so the fixed subspace of the conjugate is the image of $H(A,\beta)$. $\square$
+**Proof.** The conjugate of an anti-automorphism by an anti-automorphism is an anti-automorphism, it is $\varsigma$-semilinear, and its square is $\alpha\beta^{2}\alpha^{-1} = \mathrm{id}$, so it lies in $\operatorname{Inv}(A)$. For the fixed subspace, $(\alpha\beta\alpha)(\alpha x) = \alpha\beta x = \alpha x$ exactly when $x \in H(A,\beta)$, so the fixed subspace of the conjugate is the image of $H(A,\beta)$.
 
 ### The Fixed Subspace
 
@@ -74,7 +74,7 @@ $$
 
 **Proposition.** For every $\alpha \in \operatorname{Inv}(A)$ the sets $H(A,\alpha)$ and $S(A,\alpha)$ are $R^{\varsigma}$-submodules of $A$, they are closed under addition, and when $2$ is invertible in $R$ the map $x \mapsto \bigl(\tfrac12(x + \alpha(x)), \tfrac12(x - \alpha(x))\bigr)$ is an isomorphism $A \cong H(A,\alpha) \oplus S(A,\alpha)$.
 
-**Proof.** The computation is the one of *Hermitian and Skew-Hermitian Elements*, §*The Scalar Action*, with $\alpha$ in place of $*$: for $\lambda \in R^{\varsigma}$ and $x \in H(A,\alpha)$ one has $\alpha(\lambda x) = \varsigma(\lambda)\alpha(x) = \lambda x$, and the computation for $S(A,\alpha)$ carries the two signs. The decomposition is the standard one, and the two components are fixed and anti-fixed. $\square$
+**Proof.** The computation is the one of *Hermitian and Skew-Hermitian Elements*, §*The Scalar Action*, with $\alpha$ in place of $*$: for $\lambda \in R^{\varsigma}$ and $x \in H(A,\alpha)$ one has $\alpha(\lambda x) = \varsigma(\lambda)\alpha(x) = \lambda x$, and the computation for $S(A,\alpha)$ carries the two signs. The decomposition is the standard one, and the two components are fixed and anti-fixed.
 
 **Remark.** For the datum, $H(A,*) = H(A)$ is the Hermitian part and $S(A,*) = S(A)$ the skew-Hermitian part, so the definitions generalise the two halves from one involution to all of them. The generalised halves are $R^{\varsigma}$-submodules and not $R$-submodules, by the same argument as for the datum: a scalar with $\varsigma(\lambda) = -\lambda$ exchanges the two.
 
@@ -100,19 +100,19 @@ $$
 \sigma_{u}^{2}(x) = u(u x^{*} u^{*})^{*}u^{*} = u\,(u x u^{*})\,u^{*} = u^{2}\,x\,(u^{*})^{2} = \alpha_{u^{2}}(x) ,
 $$
 
-so $\sigma_{u}^{2} = \mathrm{id}$ exactly when $u^{2}$ commutes with every $x$, that is $u^{2} \in Z(A)$. $\square$
+so $\sigma_{u}^{2} = \mathrm{id}$ exactly when $u^{2}$ commutes with every $x$, that is $u^{2} \in Z(A)$.
 
 **Remark.** The criterion is not $u \in U(A)$ alone: the unitary element $u = \mathrm{diag}(i,1)$ of $M_{2}(\mathbb{C})$ has $u^{2} = \mathrm{diag}(-1,1)$, which is not central, and $\sigma_{u}$ is then not an involution, since $\sigma_{u}^{2}(E_{12}) = -E_{12}$; the unitary element $u = \mathrm{diag}(i,i)$ has $u^{2} = -I$ central and $\sigma_{u}$ is an involution. The condition $u^{2} \in Z(A)$ holds in particular for every unitary involution, $u^{2} = 1$, and for every central unitary.
 
 **Corollary.** The family $\{\sigma_{u}\}$ is a family of involutions exactly over the unitary elements with $u^{2} \in Z(A)$, and $\sigma_{u} = *$ for every central unitary $u$.
 
-**Proof.** The criterion above gives the first statement. For a central unitary $u$ one has $\sigma_{u}(x) = ux^{*}u^{*} = uu^{*}x^{*} = x^{*}$, by the centrality of $u$. $\square$
+**Proof.** The criterion above gives the first statement. For a central unitary $u$ one has $\sigma_{u}(x) = ux^{*}u^{*} = uu^{*}x^{*} = x^{*}$, by the centrality of $u$.
 
 ### The Orbit of the Datum
 
 **Proposition.** For $u, v \in U(A)$ the maps $\sigma_{u}$ and $\sigma_{v}$ are equal exactly when $v^{*}u$ is central, and the assignment $u \mapsto \sigma_{u}$ identifies the family with the unitary elements modulo the central unitary ones.
 
-**Proof.** From $ux^{*}u^{*} = vx^{*}v^{*}$ for every $x$, multiplying by $v^{*}$ on the left and by $v$ on the right, one gets $w x^{*} = x^{*} w$ with $w = v^{*}u$, for every $x$; this says exactly that $w$ is central. Conversely a central $w$ gives the equality. $\square$
+**Proof.** From $ux^{*}u^{*} = vx^{*}v^{*}$ for every $x$, multiplying by $v^{*}$ on the left and by $v$ on the right, one gets $w x^{*} = x^{*} w$ with $w = v^{*}u$, for every $x$; this says exactly that $w$ is central. Conversely a central $w$ gives the equality.
 
 **Remark.** The family is the coset of the inner $*$-automorphisms applied to the datum: $\sigma_{u} = \alpha_{u} \circ *$, so the family is the orbit of $*$ under the inner automorphism group, and its stabiliser is the group of the central unitary elements, the kernel computed in *Units and the Unitary Elements*, §*Inner $*$-Automorphisms*. The datum is therefore the base point of the family, and an involution outside the family is reached from it only by an automorphism that is not inner, as in *Involutions of a Central Simple Algebra*, §*Comparing Two Involutions*.
 
@@ -120,7 +120,7 @@ so $\sigma_{u}^{2} = \mathrm{id}$ exactly when $u^{2}$ commutes with every $x$, 
 
 **Lemma (determination by the fixed subspace).** Let $\alpha, \beta \in \operatorname{Inv}(A)$ and suppose that $H(A,\alpha)$ generates $A$ as an $R$-algebra and that $H(A,\alpha) = H(A,\beta)$. Then $\alpha = \beta$.
 
-**Proof.** Both $\alpha$ and $\beta$ are additive and both reverse products, $\alpha(xy) = \alpha(y)\alpha(x)$ and $\beta(xy) = \beta(y)\beta(x)$; both fix the unit, so they agree on $1$, both fix $H(A,\alpha) = H(A,\beta)$ by hypothesis, and both carry a scalar $\lambda$ to $\varsigma(\lambda)$, so they agree on $R$ as well. On sums they agree because they agree on the summands, and on a product of two elements $h_{1}, h_{2}$ of $H(A,\alpha)$ they agree as well, since $\alpha(h_{1}h_{2}) = \alpha(h_{2})\alpha(h_{1}) = h_{2}h_{1} = \beta(h_{2})\beta(h_{1}) = \beta(h_{1}h_{2})$; the same computation on longer products shows that the two maps agree on the whole $R$-subalgebra generated by $H(A,\alpha)$ and $1$, which is $A$ by hypothesis, so $\alpha = \beta$. $\square$
+**Proof.** Both $\alpha$ and $\beta$ are additive and both reverse products, $\alpha(xy) = \alpha(y)\alpha(x)$ and $\beta(xy) = \beta(y)\beta(x)$; both fix the unit, so they agree on $1$, both fix $H(A,\alpha) = H(A,\beta)$ by hypothesis, and both carry a scalar $\lambda$ to $\varsigma(\lambda)$, so they agree on $R$ as well. On sums they agree because they agree on the summands, and on a product of two elements $h_{1}, h_{2}$ of $H(A,\alpha)$ they agree as well, since $\alpha(h_{1}h_{2}) = \alpha(h_{2})\alpha(h_{1}) = h_{2}h_{1} = \beta(h_{2})\beta(h_{1}) = \beta(h_{1}h_{2})$; the same computation on longer products shows that the two maps agree on the whole $R$-subalgebra generated by $H(A,\alpha)$ and $1$, which is $A$ by hypothesis, so $\alpha = \beta$.
 
 **Theorem (the stability criterion).** Let $\alpha, \beta \in \operatorname{Inv}(A)$ and suppose that $H(A,\alpha)$ and $H(A,\beta)$ generate $A$. Then
 
@@ -128,11 +128,11 @@ $$
 \alpha H(A,\beta) = H(A,\beta) \iff \alpha\beta = \beta\alpha .
 $$
 
-**Proof.** By the conjugation proposition, $\alpha H(A,\beta) = H(A,\alpha\beta\alpha)$. Since $\alpha$ is bijective, $\alpha H(A,\beta)$ generates $A$ exactly when $H(A,\beta)$ does, so the determination lemma applies to the pair $\alpha\beta\alpha$, $\beta$: the subspace $\alpha H(A,\beta)$ is $H(A,\beta)$ exactly when $\alpha\beta\alpha = \beta$. This equality is $\alpha\beta\alpha\alpha = \beta\alpha$, that is $\alpha\beta = \beta\alpha$. $\square$
+**Proof.** By the conjugation proposition, $\alpha H(A,\beta) = H(A,\alpha\beta\alpha)$. Since $\alpha$ is bijective, $\alpha H(A,\beta)$ generates $A$ exactly when $H(A,\beta)$ does, so the determination lemma applies to the pair $\alpha\beta\alpha$, $\beta$: the subspace $\alpha H(A,\beta)$ is $H(A,\beta)$ exactly when $\alpha\beta\alpha = \beta$. This equality is $\alpha\beta\alpha\alpha = \beta\alpha$, that is $\alpha\beta = \beta\alpha$.
 
 **Corollary.** For commuting involutions $\alpha, \beta$ the composite $\alpha\beta$ is an $R$-linear automorphism of order two with $H(A,\alpha) \cap H(A,\beta) \subseteq H(A,\alpha\beta)$, and $H(A,\alpha) \cap H(A,\alpha\beta) = H(A,\alpha) \cap H(A,\beta)$.
 
-**Proof.** If $x$ is fixed by $\alpha$ and by $\beta$ then $\alpha\beta x = x$, so the first inclusion holds. For the second, $x \in H(A,\alpha) \cap H(A,\alpha\beta)$ gives $\alpha x = x$ and $\alpha\beta x = x$, hence $\beta x = \alpha^{-1}x = x$, so $x \in H(A,\beta)$. $\square$
+**Proof.** If $x$ is fixed by $\alpha$ and by $\beta$ then $\alpha\beta x = x$, so the first inclusion holds. For the second, $x \in H(A,\alpha) \cap H(A,\alpha\beta)$ gives $\alpha x = x$ and $\alpha\beta x = x$, hence $\beta x = \alpha^{-1}x = x$, so $x \in H(A,\beta)$.
 
 **Remark.** The theorem is the Galois-type content of the set of the involutions: the involutions that preserve a given fixed subspace are exactly the involutions commuting with its involution. The determination lemma is the one hypothesis that is not automatic, and it holds in the matrix model, where the Hermitian matrices generate the whole algebra; the lemma is stated with the generation condition so that the correspondence is not asserted where it does not hold.
 
@@ -140,7 +140,7 @@ $$
 
 **Proposition.** Define $\alpha \preceq \beta$ on $\operatorname{Inv}(A)$ by $H(A,\alpha) \subseteq H(A,\beta)$, under the hypotheses of the determination lemma for every pair. Then $\preceq$ is a partial order: it is reflexive and transitive because the inclusion of subspaces is, and it is antisymmetric because $\alpha \mapsto H(A,\alpha)$ is injective.
 
-**Proof.** Reflexivity and transitivity are those of $\subseteq$. For antisymmetry, if $H(A,\alpha) \subseteq H(A,\beta)$ and $H(A,\beta) \subseteq H(A,\alpha)$ then the two subspaces are equal, so $\alpha = \beta$ by the determination lemma. $\square$
+**Proof.** Reflexivity and transitivity are those of $\subseteq$. For antisymmetry, if $H(A,\alpha) \subseteq H(A,\beta)$ and $H(A,\beta) \subseteq H(A,\alpha)$ then the two subspaces are equal, so $\alpha = \beta$ by the determination lemma.
 
 **Remark.** The order is not the order of a lattice in general, and it is not compatible with the composition: the criterion of the composite is commutation and not the order. Its role is to record the containment of the fixed subspaces, which is the inclusion of the two generalised Hermitian parts, and the datum is one element of the ordered set with $H(A,*)$ = $H(A)$.
 
@@ -148,7 +148,7 @@ $$
 
 **Theorem.** Let $\alpha \in \operatorname{Inv}(A)$ and define $x \star_{\alpha} y = x\,\alpha(y)$. Then $(A,\star_{\alpha})$ is a sesqualgebra over $(R,\varsigma)$, the datum gives $\star_{*} = \star$, and the map $\alpha \mapsto \star_{\alpha}$ is injective. Conversely, if $x \star' y = x\,\alpha(y)$ is a sesqualgebra product on $A$ for some $\alpha \in \operatorname{Inv}(A)$, then $\alpha$ is determined by $\star'$.
 
-**Proof.** The product is additive in each variable, and it need not be associative, which the definition of a sesqualgebra allows; for the scalars, $(\lambda x)\star_{\alpha} y = \lambda(x \star_{\alpha} y)$ and $x \star_{\alpha}(\lambda y) = x\,\alpha(\lambda y) = x\,\varsigma(\lambda)\alpha(y) = \varsigma(\lambda)(x\star_{\alpha} y)$, using the $\varsigma$-semilinearity of $\alpha$ and the $R$-bilinearity of the product of $A$. For the injectivity, $x \star_{\alpha} y = x\star_{\beta} y$ for all $x, y$ gives $\alpha(y) = \beta(y)$ on taking $x = 1$. $\square$
+**Proof.** The product is additive in each variable, and it need not be associative, which the definition of a sesqualgebra allows; for the scalars, $(\lambda x)\star_{\alpha} y = \lambda(x \star_{\alpha} y)$ and $x \star_{\alpha}(\lambda y) = x\,\alpha(\lambda y) = x\,\varsigma(\lambda)\alpha(y) = \varsigma(\lambda)(x\star_{\alpha} y)$, using the $\varsigma$-semilinearity of $\alpha$ and the $R$-bilinearity of the product of $A$. For the injectivity, $x \star_{\alpha} y = x\star_{\beta} y$ for all $x, y$ gives $\alpha(y) = \beta(y)$ on taking $x = 1$.
 
 **Remark.** The theorem is the sense in which the involutions are the involutions of the **sesqualgebra**: each of them equips the same module with a sesqualgebra structure of the form $x\alpha(y)$, the datum gives the sesqualgebra one started from, and no two involutions give the same product. The map is the one of *Sesqualgebras*, §*The Standard Example*, read backwards: there the derived operation is built from a fixed involution, here the involution is recovered from the derived operation.
 

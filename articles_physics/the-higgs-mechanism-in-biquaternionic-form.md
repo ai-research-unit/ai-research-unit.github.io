@@ -145,7 +145,6 @@ This is the standard abelian-Higgs result. It reproduces the textbook value: wit
 - **No gauge mass term was written by hand.** The derivation began from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$, which is gauge invariant, and produced $\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$ only after substituting a vacuum that is *not* gauge invariant. The non-invariance of the result is inherited from the non-invariance of the vacuum, not inserted.
 - **The kinetic term itself remains gauge invariant.** Under $\varphi\mapsto\lambda\varphi$ and $\tilde{A}'\mapsto\tilde{A}-\tilde{\nabla}\Gamma$, $D_\mu\varphi\mapsto\lambda D_\mu\varphi$, so $(D_\mu\varphi)^*(D_\mu\varphi)\mapsto|\lambda|^2(D_\mu\varphi)^*(D_\mu\varphi) = (D_\mu\varphi)^*(D_\mu\varphi)$ because $|\lambda| = 1$.
 
-**Verification.** The algebra above was recomputed independently. Writing the connection as $A_0 = i a_0$ with $a_0$ real and $A_k = a_k$ real, the exact symbolic evaluation of the kinetic density at the vacuum returns
 
 $$
 -\,g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)\Big|_{\text{vac}}

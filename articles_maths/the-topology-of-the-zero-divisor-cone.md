@@ -10,7 +10,7 @@ $$
 
 of the underlying real space $\mathbb{B}\cong\mathbb{R}^8$ (*Topology in the Space of Biquaternions*). That norm is one of the equivalent norms of that space; any equivalent norm gives the same topology, the same singular set and the same link, and it is the only metric input of the article.
 
-That the singular set is also the null set $\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$ of the algebraic norm is a computational convenience and nothing more. The equation describes the cone; it does not equip the space with its topology, which is fixed by the linear structure alone. The algebraic norm itself — its multiplicativity, its real forms and its polarisations — belongs to *Biquaternion Norm and Invertibility*, and the zero-divisor set in its own right to *Zero Divisors of the General Plain Algebra*. The space with its unique topology is *Topology in the Space of Biquaternions*; the ambient Euclidean structure, the topological unit sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; the complement of the cone, with its group structure and its own topology, is *The Biquaternion Unit Group as a Topological Group*; and the projective geometry of the complex lines the cone contains — the quadric surface, its two rulings and its polarity — is *The Null Quadric and Its Projective Geometry*.
+That the singular set is also the null set $\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$ of the algebraic norm is a computational convenience and nothing more. The equation describes the cone; it does not equip the space with its topology, which is fixed by the linear structure alone. The algebraic norm itself — its multiplicativity, its real forms and its polarisations — belongs to *Norm and Invertibility in the General Plain Algebra*, and the zero-divisor set in its own right to *Zero Divisors of the General Plain Algebra*. The space with its unique topology is *Topology in the Space of Biquaternions*; the ambient Euclidean structure, the topological unit sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; the complement of the cone, with its group structure and its own topology, is *The Biquaternion Unit Group as a Topological Group*; and the projective geometry of the complex lines the cone contains — the quadric surface, its two rulings and its polarity — is *The Null Quadric and Its Projective Geometry*.
 
 **Scope.** The article owns the singular set as a closed algebraic cone, its smooth structure away from its apex, its contractibility, its link with the topological unit sphere, and the homotopy invariants of that link, together with the sphere of real roots of $-1$ that the pure real slice carries. The ambient Euclidean structure and the unit sphere are quoted from *The Euclidean Topology of the Biquaternion Algebra* rather than re-derived; the two facts about the cone that are read from that sphere are proved here.
 
@@ -28,7 +28,7 @@ and $\mathcal{Z}$ is the **zero-divisor cone**. The group of units is its comple
 
 The two descriptions agree with the null set of the algebraic norm.
 
-**Proposition (the singular set is the null set; quoted).** $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (*The Four Pairings of the Biquaternion Algebra*, §*The Algebraic Norm*; *Zero Divisors of the General Plain Algebra*). $\square$
+**Proposition (the singular set is the null set; quoted).** $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (*The Four Pairings of the Biquaternion Algebra*, §*The Algebraic Norm*; *Zero Divisors of the General Plain Algebra*).
 
 **Proposition (elementary properties).** With the Euclidean topology of the ambient space:
 
@@ -37,7 +37,7 @@ The two descriptions agree with the null set of the algebraic norm.
 3. $\mathcal{N}$ is a **real algebraic cone** with apex $0$: if $\tilde Q\in\mathcal{N}$ then $\lambda\tilde Q\in\mathcal{N}$ for every $\lambda\in\mathbb{C}$.
 4. $\mathcal{N}$ has real **dimension $6$**.
 
-*Proof.* (2) $\mathcal{N}$ is the zero set of the nonzero polynomial $\langle\tilde Q,\tilde Q\rangle_{\natural}$ on $\mathbb{C}^4$, so it is a complex hypersurface and has empty interior; the units, its complement, are therefore dense. (1) $\mathbb{B}^\times$ is the preimage of $\mathbb{C}\setminus\{0\}$ under the continuous map $\tilde Q\mapsto\tilde Q\tilde Q^{\natural}$, hence open, so $\mathcal{N}$ is closed. The cone $\mathcal{Z}$ fails to be closed, because the apex lies in its closure but not in it; and it fails to be open, because it is a nonempty subset of $\mathcal{N}$, which has empty interior. (3) $\langle\lambda\tilde Q,\lambda\tilde Q\rangle_{\natural}=\lambda^{2}\langle\tilde Q,\tilde Q\rangle_{\natural}$ by bilinearity, so $\lambda$ carries the null set into itself. (4) The zero set of one polynomial equation in $\mathbb{C}^4$ has complex dimension $3$, hence real dimension $6$. $\square$
+*Proof.* (2) $\mathcal{N}$ is the zero set of the nonzero polynomial $\langle\tilde Q,\tilde Q\rangle_{\natural}$ on $\mathbb{C}^4$, so it is a complex hypersurface and has empty interior; the units, its complement, are therefore dense. (1) $\mathbb{B}^\times$ is the preimage of $\mathbb{C}\setminus\{0\}$ under the continuous map $\tilde Q\mapsto\tilde Q\tilde Q^{\natural}$, hence open, so $\mathcal{N}$ is closed. The cone $\mathcal{Z}$ fails to be closed, because the apex lies in its closure but not in it; and it fails to be open, because it is a nonempty subset of $\mathcal{N}$, which has empty interior. (3) $\langle\lambda\tilde Q,\lambda\tilde Q\rangle_{\natural}=\lambda^{2}\langle\tilde Q,\tilde Q\rangle_{\natural}$ by bilinearity, so $\lambda$ carries the null set into itself. (4) The zero set of one polynomial equation in $\mathbb{C}^4$ has complex dimension $3$, hence real dimension $6$.
 
 ## The Cone Is Smooth Away from Its Apex
 
@@ -55,7 +55,7 @@ $$
 \mathcal{Z}=\mathcal{N}\setminus\{0\}
 $$
 
-is a smooth complex $3$-manifold, of real dimension $6$. $\square$
+is a smooth complex $3$-manifold, of real dimension $6$.
 
 The complex structure of the punctured cone is induced from the ambient $\mathbb{C}^4$ and is analytic; it is read in the analysis of the algebra, which is where the local theory of functions on that manifold is developed.
 
@@ -73,7 +73,7 @@ $$
 K(s,\tilde Q)=(1-s)\tilde Q,\qquad (s,\tilde Q)\in[0,1]\times\mathcal{N},
 $$
 
-maps $[0,1]\times\mathcal{N}$ into $\mathcal{N}$, since scaling by a complex number preserves the equation $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$, and it contracts $\mathcal{N}$ to the apex. It is continuous, fixes the apex at every $s$, and carries every element to $0$ at $s=1$. $\square$
+maps $[0,1]\times\mathcal{N}$ into $\mathcal{N}$, since scaling by a complex number preserves the equation $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$, and it contracts $\mathcal{N}$ to the apex. It is continuous, fixes the apex at every $s$, and carries every element to $0$ at $s=1$.
 
 The same homotopy contracts the ambient space $\mathbb{B}$, which is why the cone is homotopy trivial "as well"; but the two statements are different. The ambient contractibility is a statement about $\mathbb{B}$, and it is *The Euclidean Topology of the Biquaternion Algebra*; the contractibility of $\mathcal{N}$ is a statement about a singular subset of $\mathbb{B}$, and it is proved here.
 
@@ -119,7 +119,7 @@ $$
 q:L\longrightarrow\mathbb{P}(\mathcal{N}),\qquad \varphi(u,v)\longmapsto([u],[v]),
 $$
 
-is well defined and is a fibre bundle whose fibre over $([u],[v])$ is the circle of pairs $(e^{i\theta}u_0,e^{-i\theta}v_0)$; the base is the projectivised cone $\mathbb{P}(\mathcal{N})$, a copy of $\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$ whose geometry — the Segre quadric, its rulings and its polarity — is *The Null Quadric and Its Projective Geometry*. $\square$
+is well defined and is a fibre bundle whose fibre over $([u],[v])$ is the circle of pairs $(e^{i\theta}u_0,e^{-i\theta}v_0)$; the base is the projectivised cone $\mathbb{P}(\mathcal{N})$, a copy of $\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$ whose geometry — the Segre quadric, its rulings and its polarity — is *The Null Quadric and Its Projective Geometry*.
 
 **Proposition (homotopy invariants of the link).** The quotient map $S^3\times S^3\to L$ is a principal $S^1$-bundle, and its long exact homotopy sequence, with $\pi_1(S^3\times S^3)=\pi_2(S^3\times S^3)=0$, gives
 
@@ -127,9 +127,9 @@ $$
 \pi_1(L)=0,\qquad \pi_2(L)\cong\pi_1(S^1)=\mathbb{Z}.
 $$
 
-Hence $L$ is simply connected but is **not** homeomorphic to $S^5$, whose $\pi_2$ vanishes. $\square$
+Hence $L$ is simply connected but is **not** homeomorphic to $S^5$, whose $\pi_2$ vanishes.
 
-**Corollary (the apex is a genuine singularity).** The cone is not a topological manifold at its apex. If it were, the link of the apex would be a sphere; the link computed above has $\pi_2\cong\mathbb{Z}$, and no sphere has that homotopy group in degree $2$. $\square$
+**Corollary (the apex is a genuine singularity).** The cone is not a topological manifold at its apex. If it were, the link of the apex would be a sphere; the link computed above has $\pi_2\cong\mathbb{Z}$, and no sphere has that homotopy group in degree $2$.
 
 ## The Pure Slices and the Sphere of Real Roots of $-1$
 
@@ -169,7 +169,7 @@ $$
 \langle\tilde Q,\tilde Q\rangle_{\natural}=-\bigl((q'_1)^{2}+(q'_2)^{2}+(q'_3)^{2}\bigr),
 $$
 
-the negative of a sum of three squares, which likewise vanishes only at $\tilde Q=0$. $\square$
+the negative of a sum of three squares, which likewise vanishes only at $\tilde Q=0$.
 
 **Remark (what the argument does and does not use).** The two slices are **not** subalgebras, and no multiplication property is invoked above. Neither is closed under multiplication: $e_1^{2}=-e_0$ leaves the first slice, and $(ie_1)(ie_2)=-e_3$ leaves the second. What makes each slice meet the cone only at the apex is that the algebraic norm restricted to it is **definite** — positive on the first slice, negative on the second.
 
@@ -187,7 +187,7 @@ $$
 \mu^{2}=-\bigl(q_1^{2}+q_2^{2}+q_3^{2}\bigr)e_0,
 $$
 
-the condition is $q_1^{2}+q_2^{2}+q_3^{2}=1$: the real roots of $-1$ are exactly the unit vectors of the three-dimensional slice, so the set is the ordinary $2$-sphere. Its cell structure gives compactness, connectedness and simple connectedness, and $\pi_2(S^2)\cong\mathbb{Z}$ is standard; conjugation by the unit quaternions acts transitively on it, so it is the homogeneous space $Sp(1)/U(1)$ and the base of the Hopf fibration $S^{3}\to S^{2}$. It is not a group, since the only spheres that carry a continuous group structure are $S^0$, $S^1$ and $S^3$. For the roots of $+1$: if $\mu$ is a root of $-1$ in the slice then $(i\mu)^{2}=i^{2}\mu^{2}=e_0$, and conversely every root of $+1$ in $i\mathbb{H}_{\mathbb{B}}$ is of this form, so the two spheres correspond under multiplication by $i$ and are homeomorphic. The classifications of the roots of $-1$, $0$ and $+1$ are *Biquaternion Square Roots of Minus One, Zero and Plus One*. $\square$
+the condition is $q_1^{2}+q_2^{2}+q_3^{2}=1$: the real roots of $-1$ are exactly the unit vectors of the three-dimensional slice, so the set is the ordinary $2$-sphere. Its cell structure gives compactness, connectedness and simple connectedness, and $\pi_2(S^2)\cong\mathbb{Z}$ is standard; conjugation by the unit quaternions acts transitively on it, so it is the homogeneous space $Sp(1)/U(1)$ and the base of the Hopf fibration $S^{3}\to S^{2}$. It is not a group, since the only spheres that carry a continuous group structure are $S^0$, $S^1$ and $S^3$. For the roots of $+1$: if $\mu$ is a root of $-1$ in the slice then $(i\mu)^{2}=i^{2}\mu^{2}=e_0$, and conversely every root of $+1$ in $i\mathbb{H}_{\mathbb{B}}$ is of this form, so the two spheres correspond under multiplication by $i$ and are homeomorphic. The classifications of the roots of $-1$, $0$ and $+1$ are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*.
 
 The three-dimensional spaces above are the pure real slices. The Minkowski slices $\mathbb{M}_\pm$ behave differently: their null set is the three-dimensional light cone, treated in the Lorentzian reading of the real slices (*Biquaternion Lorentzian and Conformal Geometry*, §*The Lorentzian Slice and Its Light Cone*). The point of the contrast is that the cone of the algebra meets the pure slices only at its apex while it cuts the Minkowski slices in a genuine three-dimensional cone.
 

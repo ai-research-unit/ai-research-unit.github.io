@@ -105,7 +105,6 @@ The four-dimensional carrier has one more piece of visible structure. In the tri
 
 ## What Is Verified and What Is the Source's
 
-**Verified** on the corpus's convention, each identity on random arguments, $\le 100$ per identity, throwaway script outside the repository:
 
 - Jacobi for the antisymmetric half;
 - the Jordan identity for the symmetric half;

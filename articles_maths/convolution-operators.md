@@ -52,7 +52,7 @@ $$
 (\tau_yT_kf)(x)=\int k(x-y-z)f(z)\,dz=\int k(x-w)f(w-y)\,dw=(T_k\tau_yf)(x)
 $$
 after the change of variable $w=y+z$, and by Fubini the two iterated integrals are equal for almost every
-$x$. $\blacksquare$
+$x$.
 
 **Theorem (the profile algebra).** Convolution is commutative and associative on $L^1(\mathbb R^n)$,
 $$
@@ -66,7 +66,7 @@ the norm inequality is Fubini. The composition is the kernel product of *The Int
 $(k*l)(x-y)=\int k(x-z)l(z-y)\,dz$. There is no identity: an identity $\delta$ would satisfy
 $k*\delta=k$, and taking the Fourier transform below would give $\hat k\hat\delta=\hat k$ for every
 $k\in L^1$ with $\hat k\not\equiv0$, so $\hat\delta\equiv1$, which is not the transform of an $L^1$
-function; the point mass at $0$ has this property but is not an $L^1$ function. $\blacksquare$
+function; the point mass at $0$ has this property but is not an $L^1$ function.
 
 **Example (approximate identities).** A sequence $\phi_m\in L^1$ with $\int\phi_m=1$, $\lVert\phi_m\rVert_1$
 bounded and $\int_{\lvert x\rvert>\delta}\lvert\phi_m\rvert\to0$ for every $\delta>0$ satisfies
@@ -111,7 +111,7 @@ Euclidean Spaces*.
 **Proof.** By Fubini–Tonelli and the change of variable $z=x-y$, the double integral
 $\iint k(y)f(x-y)e^{-2\pi ix\cdot\xi}dy\,dx$ equals
 $\int k(y)e^{-2\pi iy\cdot\xi}dy\int f(z)e^{-2\pi iz\cdot\xi}dz$, and the two factors are
-$\hat k(\xi)$ and $\hat f(\xi)$. $\blacksquare$
+$\hat k(\xi)$ and $\hat f(\xi)$.
 
 **Definition.** A **Fourier multiplier** is a function $m\in L^\infty(\mathbb R^n)$, and the
 **multiplier operator** it defines is
@@ -135,7 +135,7 @@ $$
 equivalent to multiplication by $m$; and a multiplication operator $M_m$ on $L^2$ has norm
 $\lVert m\rVert_\infty$, the estimate $\lVert M_mf\rVert_2\leq\lVert m\rVert_\infty\lVert f\rVert_2$ being
 immediate and the reverse inequality following from the existence, for each $\epsilon>0$, of a set of
-positive finite measure on which $\lvert m\rvert\geq\lVert m\rVert_\infty-\epsilon$. $\blacksquare$
+positive finite measure on which $\lvert m\rvert\geq\lVert m\rVert_\infty-\epsilon$.
 
 **Corollary.** For $k\in L^1(\mathbb R^n)$ the convolution operator is bounded on $L^2$ with
 $$
@@ -159,7 +159,7 @@ $\lVert T_k\rVert_{L^p\to L^p}\leq\lVert k\rVert_1$.
 **Proof.** The case $p=1$, $q=r$ is Minkowski's integral inequality applied to
 $\lvert k*f\rvert(x)\leq\int\lvert k(y)\rvert\lvert f(x-y)\rvert\,dy$; the case $q=1$ is the same by
 commutativity of the convolution; and the general case follows from these two by the Riesz–Thorin
-interpolation theorem of *Fourier Analysis on Euclidean Spaces*. $\blacksquare$
+interpolation theorem of *Fourier Analysis on Euclidean Spaces*.
 
 **Corollary (the profile-to-operator map).** The map $k\mapsto T_k$ is an injective algebra homomorphism
 of the commutative Banach algebra $L^1(\mathbb R^n)$ into the algebra of bounded operators on $L^p$, for
@@ -168,7 +168,7 @@ is injective because $\hat k=0$ forces $k=0$ almost everywhere.
 
 **Proof.** Linearity and multiplicativity are the profile algebra; the injectivity is the injectivity of
 the Fourier transform on $L^1$, which follows from the inversion theorem of *Fourier Analysis on Euclidean
-Spaces*. $\blacksquare$
+Spaces*.
 
 ### Multipliers Beyond $L^1$
 
@@ -206,7 +206,7 @@ characters generate $L^\infty(\mathbb R^n)$ in the strong operator topology — 
 the duality theory behind the Gelfand transform — so the hypothesis gives such a $B$ with
 $B=M_m$, and $\tilde A=\mathcal F A\mathcal F^{-1}=M_m$ with $m\in L^\infty$. The uniqueness of $m$ and the
 norm are the preceding theorem, and the converse is the definition. The $\sigma$-finite case is reduced to
-the finite one by exhausting $\mathbb R^n$ with sets of finite measure. $\blacksquare$
+the finite one by exhausting $\mathbb R^n$ with sets of finite measure.
 
 **Remark (the $L^1$ case and the measure algebra).** A bounded operator on $L^1(\mathbb R^n)$ commuting
 with all translations is convolution with a finite complex measure $\mu$, $T_\mu f=\mu*f$, and the finite

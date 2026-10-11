@@ -119,7 +119,6 @@ $$
 = \big(\det \tilde K\big)^{-1/2}\, e^{\frac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle},
 $$
 where $\langle\tilde\Phi,\tilde\Psi\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde\Phi^{*}\tilde\Psi)$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box+m^2$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$; the Lorentzian action's operator $\tilde K=\Box-m^2$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $\tilde K^{-1}$. The determinant is the object that *The Functional Determinant in Biquaternionic Form* computes; this article records only that the Gaussian integral reduces to it.
-<!-- CONVENTION — module determinant, do not "correct": the determinant is taken on the two-complex-dimensional module, so a central fluctuation operator has $\det=\kappa^2$ (one complex dimension would give $\kappa$) and the Gaussian prefactor is $(\det\tilde K)^{-1/2}$, i.e. $\prod_k(\tilde k\tilde k^{\natural}+m^2)^{-1}$ per mode — not the per-mode exponent $-1/2$, which would count a single complex dimension. The operator $\tilde K=\Box-m^2$ is the negative of the Euclidean kinetic operator; the sign does not change the determinant on the module, as *The Functional Determinant in Biquaternionic Form* states. -->
 
 **Finite-dimensional verification.** The **real** form of the identity was checked as follows, on a real symmetric — hence Hermitian — matrix $K$, with complex arithmetic carried through the elimination. For
 $$
@@ -145,7 +144,6 @@ $$
 
 **Proof.** It suffices to check the statement on the sector bases, since the real form is bilinear. For $\tilde\phi_- = \sum_\mu a_\mu b^-_\mu$ with $b^-_\mu\in\{ie_0,e_1,e_2,e_3\}$ and $\tilde\phi_+ = \sum_\nu c_\nu b^+_\nu$ with $b^+_\nu\in\{e_0,ie_1,ie_2,ie_3\}$, each elementary term is $\mathrm{Re}\,\mathrm{Tr}(b_\mu^{-}{}^{*} b^+_\nu)$. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.
 
-**Verification.** Over the sixteen elementary products of the sector bases, $\mathrm{Re}\,\mathrm{Tr}(b_\mu^{-}{}^{*} b^+_\nu)=0$ for all $\mu,\nu$, with a maximum absolute value of exactly $0$ in the coefficient representation, so the cross terms can be dropped identically and not merely at leading order. Two related checks are worth recording, because they guard against a plausible mistake: the cross part of the **full complex trace** does *not* vanish — one has $\mathrm{Tr}(\tilde\phi_-^{*}\tilde\phi_+)=-2i$ for $\tilde\phi_-=ie_0$, $\tilde\phi_+=e_0$ — but it is purely imaginary, so its real part, which is what the physical action uses, does vanish. It is the real form, not the full complex trace, that is sector-orthogonal. This is consistent with the sectors being the $\pm1$ eigenspaces of the antilinear involution $\flat=-{}^{*}$: such eigenspaces are orthogonal for the associated *real* form. The imaginary cross part is a central $i\mathbb{R}$ contribution to the complexified exponent; being central and purely imaginary, it multiplies the weight by a phase and does not affect the real action.
 
 **Consequence: factorisation.** With the source split as $\tilde J=\tilde J_-+\tilde J_+$, the free functional integral is
 $$
@@ -200,7 +198,7 @@ $$
 ict\,e_0 \;\longmapsto\; c\tau\,e_0 ,
 $$
 i.e. the relabeling of the imaginary-time coefficient as a real one, $ic(-i\tau)=c\tau$, as *The Wick Rotation in the Biquaternion Universe* establishes.
-<!-- CONVENTION — Wick rotation, do not "invert": the series rotation is $t\mapsto-i\tau$, hence $ict\mapsto ic(-i\tau)=c\tau$. The coefficient $ct$ therefore maps to $-ic\tau$, not to $+ic\tau$; the Euclidean direction is the real $c\tau$. Authority: *The Wick Rotation in the Biquaternion Universe*, whose own display is $ict\mapsto c\tau$. --> Under this identification the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ becomes the Euclidean metric $\delta=\mathrm{diag}(+1,+1,+1,+1)$ (the biquaternion norm), and the oscillatory weight becomes a decaying one:
+Under this identification the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ becomes the Euclidean metric $\delta=\mathrm{diag}(+1,+1,+1,+1)$ (the biquaternion norm), and the oscillatory weight becomes a decaying one:
 $$
 e^{\,iS[\tilde\Phi]} \;\longrightarrow\; e^{-S_E[\tilde\Phi]},
 \qquad

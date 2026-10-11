@@ -77,7 +77,6 @@ deliberately weak: it is a map and not an evolution, and the product of *two* ma
 informational — it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
 lies in neither sector. The square is the coupling; the product is not. The identity is owned by *The
 Interval as the Square and the Charge of the Material Composition*, and the grid-level pointer by *The Four General Products and Their Physical Readings*.
-Recomputed on $100$ random material elements: central, real, and equal to $N(\tilde{Q})e_0$ on $100$ of
 $100$; on $100$ random pairs of material elements the product lies in neither sector on $100$ of $100$.
 
 ### The Preparation Map
@@ -120,9 +119,7 @@ coordinates, the exchange reads one sector's time against the other's, which is 
 Sector Is the Other's Clock: the Sector Exchange as Relational Time*. Its boundary is that the exchange
 is invertible and of order four, so it cannot by itself supply an arrow; the arrow needs the non-units of
 the acting monoid (see below). Multiplication by the central scalar is developed by *The Central
-Rotation: Phase, Duality and the Wick Rotation as One Generator*. Recomputed on $100$ elements of each
-sector: $i$ sends $\mathbb{M}_-$ to $\mathbb{M}_+$ and $\mathbb{M}_+$ to $\mathbb{M}_-$ with no exception
-on $200$ of $200$.
+Rotation: Phase, Duality and the Wick Rotation as One Generator*. The scalar $i$ sends $\mathbb{M}_-$ to $\mathbb{M}_+$ and $\mathbb{M}_+$ to $\mathbb{M}_-$, with no exception.
 
 ### The Rotor Action
 
@@ -140,8 +137,7 @@ supplies the transformations of the material sector. It is a coupling of a third
 $\mathbb{M}_-\to\mathbb{M}_+$, but an action of one sector on the other, and it preserves the sector it
 acts on. Its boundary is that only the unit-norm elements are rotors, and the general action form of the
 framework is the one *Biquaternion Rotations and Lorentz Transformations* develops; the operator side is
-*The Sandwich Action in Subspaces*. Recomputed on $100$ random boost rotors and $100$ material elements:
-the sandwich result is anti-Hermitian on $100$ of $100$.
+*The Sandwich Action in Subspaces*. The sandwich result is anti-Hermitian.
 
 ## The Off-Sector Pairings
 
@@ -165,8 +161,7 @@ which is the off-sector reading of *The Ordinary Product and the Material Sector
 not a map, and it produces no element of either sector. The **imaginary part of the norm** is the same
 phenomenon from the other side: the cross terms of $N$ couple the material and informational parameters
 of one element, and that is the reading the introduction records for the imaginary part of $N$, owned by
-*Biquaternion Norm and Invertibility*. Recomputed on $100$ material–informational pairs: the scalar part
-is purely imaginary on $100$ of $100$.
+*Biquaternion Norm and Invertibility*.
 
 ## The Couplings of Time and of Thermodynamics
 
@@ -174,17 +169,17 @@ Two further cross-sector readings are already owned and are recorded here becaus
 couplings is incomplete without them.
 
 - **Imaginary (Matsubara) time.** The imaginary-time axis of thermal field theory is the informational
-  temporal direction, so the continuation that the KMS condition and the Matsubara formalism use is the
-  material–informational exchange read as a temperature. The owners are *The KMS Condition and the
-  Biquaternion Framework* and *The Matsubara Formalism in Biquaternionic Form*; the reading is a
-  continuation and not a new coupling.
+temporal direction, so the continuation that the KMS condition and the Matsubara formalism use is the
+material–informational exchange read as a temperature. The owners are *The KMS Condition and the
+Biquaternion Framework* and *The Matsubara Formalism in Biquaternionic Form*; the reading is a
+continuation and not a new coupling.
 - **The thermodynamic exchange.** A material operation that loses information passes it to the
-  informational sector: the Landauer exchange is the thermodynamic face of the same split, and the
-  information loss is counted by the algebra's own logarithm. The owners are *Landauer's Principle and
-  the Material–Informational Exchange in Biquaternionic Form* and *The Lyapunov Exponent and Information
-  Loss in the Biquaternion Framework*; the arrow that orders the exchange is the split of the acting
-  monoid into its units and its non-units (*The Monoid of Acting Maps: the Process Is the Multiplication,
-  the State Is the Idempotent*).
+informational sector: the Landauer exchange is the thermodynamic face of the same split, and the
+information loss is counted by the algebra's own logarithm. The owners are *Landauer's Principle and
+the Material–Informational Exchange in Biquaternionic Form* and *The Lyapunov Exponent and Information
+Loss in the Biquaternion Framework*; the arrow that orders the exchange is the split of the acting
+monoid into its units and its non-units (*The Monoid of Acting Maps: the Process Is the Multiplication,
+the State Is the Idempotent*).
 
 ## What Does Not Couple: the Superselection Boundary
 
@@ -232,12 +227,12 @@ scalar reads a state against an operation. The rigidity and the crossings are no
 two halves of one statement.
 
 - **Bridge reading.** Each positive entry is a bridge of a different kind — a map, a bijection, an
-  action, a pairing — and no two entries are the same bridge. Boundary: the reading names the shape of
-  each bridge and supplies no dynamics; the grid-level comparison is *The Four General Products and Their Physical Readings*.
+action, a pairing — and no two entries are the same bridge. Boundary: the reading names the shape of
+each bridge and supplies no dynamics; the grid-level comparison is *The Four General Products and Their Physical Readings*.
 - **Boundary reading.** The superselection entry is the statement that the bridges are not observables.
-  Read with the positive entries, it says that a coupling can be algebraic and unobservable at once: the
-  square exists and no measurement uses it to prepare a coherence between the sectors. Boundary: the
-  reading is the superselection article's, restated here only to mark the edge of the catalogue.
+Read with the positive entries, it says that a coupling can be algebraic and unobservable at once: the
+square exists and no measurement uses it to prepare a coherence between the sectors. Boundary: the
+reading is the superselection article's, restated here only to mark the edge of the catalogue.
 
 ## Summary
 
@@ -276,12 +271,12 @@ each of its instances owned by an article that proves it.
 ## Further Reading
 
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, companion article, for the
-  material sector, its four-vectors and the interval.
+material sector, its four-vectors and the interval.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, companion article, for the
-  informational sector, the trace pairing and the state space.
+informational sector, the trace pairing and the state space.
 - *The Interval as the Square and the Charge of the Material Composition*, companion article, for the
-  square map and its real-scalar image.
+square map and its real-scalar image.
 - *The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, companion
-  article, for the negative statement and its real-form reading.
+article, for the negative statement and its real-form reading.
 - *The Four General Products and Their Physical Readings*,
-  companion article, for the grid-level comparison of the four products.
+companion article, for the grid-level comparison of the four products.

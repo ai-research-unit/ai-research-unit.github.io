@@ -15,7 +15,7 @@ The endomorphism ring is an $R$-algebra, and this is the object of the article.
 
 **Proposition.** With $E=\operatorname{End}_A(M)$, the multiplication by $r \in R$ given by $(rf)(m)=r f(m)$ turns $E$ into a unital associative $R$-algebra, and the inclusion $E \subseteq \operatorname{End}_R(M)$ is a homomorphism of $R$-algebras.
 
-*Proof.* The map $rf$ is $A$-linear because $r$ acts centrally, so $E$ is closed under the $R$-action; the algebra axioms are inherited from $\operatorname{End}_R(M)$, and the inclusion preserves the product, the unit and the scalars. $\square$
+*Proof.* The map $rf$ is $A$-linear because $r$ acts centrally, so $E$ is closed under the $R$-action; the algebra axioms are inherited from $\operatorname{End}_R(M)$, and the inclusion preserves the product, the unit and the scalars.
 
 The word *algebra* rather than *ring* records that the base ring acts; when $R=F$ is a field and $M$ is finite-dimensional over $F$, the endomorphism algebra is finite-dimensional over $F$, and its dimension is at most $(\dim_F M)^2$.
 
@@ -31,7 +31,7 @@ $$
 
 given on the row $e_i$ of the standard basis by $f(e_j)=\sum_i e_i\,a_{ij}$, so that $f(v)=vX$ for the matrix $X=(a_{ij})$, and the product on the right is the matrix product in $A^{\mathrm{op}}$.
 
-*Proof.* An $A$-linear map is determined by its values on the basis, and $A$-linearity forces $f(a e_j)=a f(e_j)$, which is the row-vector computation $f(av)=(av)X=a(vX)$ by associativity. Thus every such $f$ is right multiplication by a unique matrix $X$ with entries in $A$. Composition is $f_X \circ f_Y(v)=(vY)X=v(YX)$, so the ring of endomorphisms is the opposite of the matrix ring $M_n(A)$ with the usual product, that is $M_n(A^{\mathrm{op}})$. The $R$-linearity is entrywise. $\square$
+*Proof.* An $A$-linear map is determined by its values on the basis, and $A$-linearity forces $f(a e_j)=a f(e_j)$, which is the row-vector computation $f(av)=(av)X=a(vX)$ by associativity. Thus every such $f$ is right multiplication by a unique matrix $X$ with entries in $A$. Composition is $f_X \circ f_Y(v)=(vY)X=v(YX)$, so the ring of endomorphisms is the opposite of the matrix ring $M_n(A)$ with the usual product, that is $M_n(A^{\mathrm{op}})$. The $R$-linearity is entrywise.
 
 For $n=1$ this is the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ of *Automorphisms of Modules over an Algebra*, and it is the base case of the theorem.
 
@@ -47,7 +47,7 @@ $$
 
 as $R$-algebras, with the entries acting on the components.
 
-*Proof.* This is the isotypic computation of *Module Endomorphisms*: an endomorphism of $S^n$ is a matrix of maps $S \to S$, each in $D$, and composition is matrix composition. $\square$
+*Proof.* This is the isotypic computation of *Module Endomorphisms*: an endomorphism of $S^n$ is a matrix of maps $S \to S$, each in $D$, and composition is matrix composition.
 
 ### The general semisimple structure
 
@@ -61,7 +61,7 @@ $$
 
 as $R$-algebras, and $M$ is the direct sum of the natural modules $D_i^{\,n_i}$ over the factors.
 
-*Proof.* By Schur's lemma there are no nonzero maps between non-isomorphic simple modules, so an endomorphism preserves each isotypic component $S_i^{n_i}$, and on that component it is a matrix over $D_i$ by the proposition; the product decomposition follows. $\square$
+*Proof.* By Schur's lemma there are no nonzero maps between non-isomorphic simple modules, so an endomorphism preserves each isotypic component $S_i^{n_i}$, and on that component it is a matrix over $D_i$ by the proposition; the product decomposition follows.
 
 The theorem is the operator form of the semisimple structure theorem, and it exhibits $E$ as a product of matrix algebras over division rings, hence as a semisimple ring.
 
@@ -81,7 +81,7 @@ It is a commutative subalgebra of $E$ containing the image of $R$.
 
 **Proposition.** $Z(E)=E\cap E'$, where $E'$ is the centralizer of $E$ in $\operatorname{End}_R(M)$; consequently $Z(E)$ is a commutative $R$-algebra, and $M$ is a left $Z(E)$-module on which every element of $E$ acts $Z(E)$-linearly.
 
-*Proof.* An element lies in the centre exactly when it belongs to $E$ and commutes with all of $E$, which is $E\cap E'$. For the module statement, $z \in Z(E)$ acts on $M$ through its action as an endomorphism, and $f(zm)=z f(m)$ because $z$ commutes with $f$. $\square$
+*Proof.* An element lies in the centre exactly when it belongs to $E$ and commutes with all of $E$, which is $E\cap E'$. For the module statement, $z \in Z(E)$ acts on $M$ through its action as an endomorphism, and $f(zm)=z f(m)$ because $z$ commutes with $f$.
 
 Since $E=L_A'$ and $L_A \subseteq E'$, the centre sits between the two commutants: it is the part of the endomorphism algebra that is also in the bicommutant of the action.
 
@@ -95,7 +95,7 @@ $$
 Z(M_n(B)) = Z(B)\cdot I_n = \{ \lambda I_n : \lambda \in Z(B) \}.
 $$
 
-*Proof.* A matrix $C$ commutes with every matrix unit $E_{ij}$; commuting with $E_{ij}$ forces the entries of $C$ to be constant across each row and column, so $C=\lambda I_n$ for some $\lambda \in B$. Such a scalar matrix commutes with an arbitrary $X=(x_{ij})$ exactly when $\lambda x_{ij}=x_{ij}\lambda$ for all $i,j$; as the entries range over all of $B$, this says $\lambda \in Z(B)$. $\square$
+*Proof.* A matrix $C$ commutes with every matrix unit $E_{ij}$; commuting with $E_{ij}$ forces the entries of $C$ to be constant across each row and column, so $C=\lambda I_n$ for some $\lambda \in B$. Such a scalar matrix commutes with an arbitrary $X=(x_{ij})$ exactly when $\lambda x_{ij}=x_{ij}\lambda$ for all $i,j$; as the entries range over all of $B$, this says $\lambda \in Z(B)$.
 
 ### The centre of a free module's endomorphism algebra
 
@@ -107,7 +107,7 @@ $$
 
 the scalar matrices with entries in the centre of the algebra.
 
-*Proof.* Combine the matrix theorem with the identification $\operatorname{End}_A(A^n)\cong M_n(A^{\mathrm{op}})$ and $Z(A^{\mathrm{op}})=Z(A)$. $\square$
+*Proof.* Combine the matrix theorem with the identification $\operatorname{End}_A(A^n)\cong M_n(A^{\mathrm{op}})$ and $Z(A^{\mathrm{op}})=Z(A)$.
 
 Thus for the regular module $E=A^{\mathrm{op}}$ and $Z(E)=Z(A)$, and enlarging the rank does not enlarge the centre: the centre of the endomorphism algebra of a free module is the centre of the algebra, whatever the rank.
 
@@ -121,7 +121,7 @@ $$
 
 the set of central endomorphisms of the simple module.
 
-*Proof.* $E\cong M_n(D)$ and the matrix theorem gives $Z(M_n(D))=Z(D)\cdot I_n$. $\square$
+*Proof.* $E\cong M_n(D)$ and the matrix theorem gives $Z(M_n(D))=Z(D)\cdot I_n$.
 
 In the semisimple case the centre is therefore $\prod_i Z(D_i)$, a product of fields when the $D_i$ are division rings finite-dimensional over a field, and the centre is a field exactly when there is a single isotypic component with $Z(D)$ a field.
 
@@ -131,7 +131,7 @@ The centre has an intrinsic description that does not mention matrices.
 
 **Proposition.** $Z(E)$ is exactly the subalgebra of $E$ consisting of the maps $z$ such that $z$ is $A$-linear and commutes with every $A$-linear map; equivalently $z \in E'$, the centralizer of $E$ inside $\operatorname{End}_R(M)$ that happens to lie in $E$.
 
-*Proof.* Restatement of $Z(E)=E\cap E'$. $\square$
+*Proof.* Restatement of $Z(E)=E\cap E'$.
 
 The description shows that the centre is the largest subalgebra of $\operatorname{End}_R(M)$ that is centralised by the whole endomorphism algebra; it is the algebra of scalars that the module's own symmetry forces.
 
@@ -143,7 +143,7 @@ The endomorphism algebra is commutative exactly when all its operators commute, 
 
 **Proposition.** Let $M$ be semisimple of finite length, $M=S_1^{n_1}\oplus\cdots\oplus S_k^{n_k}$. Then $E$ is commutative if and only if $n_i=1$ for all $i$ and each $D_i$ is a field.
 
-*Proof.* $E\cong\prod_i M_{n_i}(D_i)$ is commutative exactly when each factor is: $M_{n_i}(D_i)$ is commutative only for $n_i=1$ with $D_i$ commutative, and for $n_i=1$ it is $D_i$, commutative when it is a field. $\square$
+*Proof.* $E\cong\prod_i M_{n_i}(D_i)$ is commutative exactly when each factor is: $M_{n_i}(D_i)$ is commutative only for $n_i=1$ with $D_i$ commutative, and for $n_i=1$ it is $D_i$, commutative when it is a field.
 
 In the commutative case $E$ is a product of fields, so every endomorphism is a scalar on each isotypic component, and the module is multiplicity-free.
 
@@ -151,7 +151,7 @@ In the commutative case $E$ is a product of fields, so every endomorphism is a s
 
 **Proposition.** If $M$ is simple then $E=\operatorname{End}_A(M)$ is a division ring and $Z(E)$ is a field.
 
-*Proof.* Schur's lemma gives the division ring, and the centre of a division ring is a field. $\square$
+*Proof.* Schur's lemma gives the division ring, and the centre of a division ring is a field.
 
 ## Examples
 

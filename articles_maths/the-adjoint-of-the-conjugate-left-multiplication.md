@@ -32,7 +32,7 @@ $$
 L_{\lambda a}=\lambda L_{a}, \qquad L_{a+b}=L_{a}+L_{b} .
 $$
 
-**Proof.** For the parity, $L_{a}(\lambda x)=a(\lambda x)^{*}=a\,\varsigma(\lambda)\,x^{*}=\varsigma(\lambda)ax^{*}=\varsigma(\lambda)L_{a}(x)$, by the scalar rule of the involution. At the unit, $L_{a}(1)=a1^{*}=a$, so $L_{a}=0$ forces $a=0$, and conversely $a=0$ gives the zero operator. The two linearity laws are the distributivity and the $R$-linearity of the product in its first slot. $\square$
+**Proof.** For the parity, $L_{a}(\lambda x)=a(\lambda x)^{*}=a\,\varsigma(\lambda)\,x^{*}=\varsigma(\lambda)ax^{*}=\varsigma(\lambda)L_{a}(x)$, by the scalar rule of the involution. At the unit, $L_{a}(1)=a1^{*}=a$, so $L_{a}=0$ forces $a=0$, and conversely $a=0$ gives the zero operator. The two linearity laws are the distributivity and the $R$-linearity of the product in its first slot.
 
 **Remark.** The failure of linearity is the scalar defect of the second slot: for $a\neq0$ the operator $L_{a}$ is $R$-linear if and only if $\varsigma=\mathrm{id}$. The general criterion of *Sesqualgebras* for the sesquilinear product keeps the alternative $(\lambda-\varsigma(\lambda))ax=0$ for all $\lambda$ and $x$; the hypotheses here remove it, because the evaluation at $x=1$ gives $(\varsigma(\lambda)-\lambda)a=0$, and a nonzero value of $\varsigma(\lambda)-\lambda$ would force $a=0$: the ring has no zero divisors, and the algebra is torsion-free, a torsion element of $A$ lying in the radical of the perfect pairing. The right multiplication $R_{b}(x)=xb^{*}$ is $R$-linear in every case, because the variable enters the first slot and the parameter the second; the asymmetry of the two slots of the product is therefore visible in the two operators already, before any adjoint is taken.
 
@@ -46,7 +46,7 @@ $$
 \varphi(L_{a}x,y)=\varphi(x,Uy)\qquad\text{for all }x,y\in A .
 $$
 
-**Proof.** Suppose there is one, and replace $x$ by $\lambda x$ in the identity. On the left, $\varphi\bigl(L_{a}(\lambda x),y\bigr)=\varphi\bigl(\varsigma(\lambda)L_{a}x,y\bigr)=\varsigma(\lambda)\varphi(L_{a}x,y)$; on the right, $\varphi(\lambda x,Uy)=\lambda\varphi(x,Uy)=\lambda\varphi(L_{a}x,y)$. Hence $\bigl(\varsigma(\lambda)-\lambda\bigr)\varphi(L_{a}x,y)=0$ for every $\lambda$, $x$ and $y$. Choosing $\lambda$ with $\varsigma(\lambda)\neq\lambda$, which is possible because $\varsigma\neq\mathrm{id}$ and which is a non-zero-divisor by the hypothesis on $R$, gives $\varphi(L_{a}x,y)=0$ for all $x$ and $y$; since $a\neq0$ the operator $L_{a}$ does not vanish, and the perfection of the pairing supplies $y$ with $\varphi(L_{a}x,y)\neq0$ for some $x$, a contradiction. $\square$
+**Proof.** Suppose there is one, and replace $x$ by $\lambda x$ in the identity. On the left, $\varphi\bigl(L_{a}(\lambda x),y\bigr)=\varphi\bigl(\varsigma(\lambda)L_{a}x,y\bigr)=\varsigma(\lambda)\varphi(L_{a}x,y)$; on the right, $\varphi(\lambda x,Uy)=\lambda\varphi(x,Uy)=\lambda\varphi(L_{a}x,y)$. Hence $\bigl(\varsigma(\lambda)-\lambda\bigr)\varphi(L_{a}x,y)=0$ for every $\lambda$, $x$ and $y$. Choosing $\lambda$ with $\varsigma(\lambda)\neq\lambda$, which is possible because $\varsigma\neq\mathrm{id}$ and which is a non-zero-divisor by the hypothesis on $R$, gives $\varphi(L_{a}x,y)=0$ for all $x$ and $y$; since $a\neq0$ the operator $L_{a}$ does not vanish, and the perfection of the pairing supplies $y$ with $\varphi(L_{a}x,y)\neq0$ for some $x$, a contradiction.
 
 **Remark (why the ring has no zero divisors).** The proof cancels $\varsigma(\lambda)-\lambda$, and that step is not idle: over $R=\mathbb{Q}[\varepsilon]/(\varepsilon^{2})$ with $\varsigma(\varepsilon)=-\varepsilon$, $A=M_{2}(R)$ with $X^{*}=\varsigma(X)^{T}$ and $\tau$ the trace, the pairing is perfect and $L_{a}$ for $a=\varepsilon E_{11}$ has the $R$-linear adjoint $U(Y)=-\varepsilon Y^{T}E_{11}$ beside its twisted adjoint $S_{1,a}$: for every $\lambda$ the difference $\varsigma(\lambda)-\lambda$ annihilates the image of $L_{a}$, so the argument has nothing to cancel. The same hypothesis is used in the criterion for $R$-linearity, which evaluates at the unit: there a zero divisor of $R$ lets $(\varsigma(\lambda)-\lambda)a$ vanish although $\varsigma(\lambda)\neq\lambda$ and $a\neq0$.
 
@@ -64,11 +64,11 @@ $$
 
 The adjoint is $\varsigma$-semilinear, it is a sandwich and not a one-sided multiplication, and it is a left multiplication $L_{a}$ again exactly when $a$ is central.
 
-**Proof.** The defining identity is $\varphi(L_{a}x,y)=\varsigma\bigl(\varphi(x,L_{a}^{\dagger}y)\bigr)$, and for the candidate $L_{a}^{\dagger}(y)=y^{*}a$ the right-hand side is $\varsigma\bigl(\tau(x(y^{*}a)^{*})\bigr)=\varsigma\bigl(\tau(xa^{*}y)\bigr)=\tau\bigl((xa^{*}y)^{*}\bigr)=\tau(y^{*}ax^{*})=\tau(ax^{*}y^{*})$, using the anti-multiplicativity of $*$ and the compatibility of $\tau$; the cyclicity of $\tau$ turns the last expression into $\tau(ax^{*}y^{*})=\varphi(L_{a}x,y)$, which is the identity. The operator is $\varsigma$-semilinear by its definition, and the sandwich $S_{1,a}$ is a left multiplication $L_{c}$ only if $y^{*}a=cy^{*}$ for all $y$, that is only if $a=c$ is central. $\square$
+**Proof.** The defining identity is $\varphi(L_{a}x,y)=\varsigma\bigl(\varphi(x,L_{a}^{\dagger}y)\bigr)$, and for the candidate $L_{a}^{\dagger}(y)=y^{*}a$ the right-hand side is $\varsigma\bigl(\tau(x(y^{*}a)^{*})\bigr)=\varsigma\bigl(\tau(xa^{*}y)\bigr)=\tau\bigl((xa^{*}y)^{*}\bigr)=\tau(y^{*}ax^{*})=\tau(ax^{*}y^{*})$, using the anti-multiplicativity of $*$ and the compatibility of $\tau$; the cyclicity of $\tau$ turns the last expression into $\tau(ax^{*}y^{*})=\varphi(L_{a}x,y)$, which is the identity. The operator is $\varsigma$-semilinear by its definition, and the sandwich $S_{1,a}$ is a left multiplication $L_{c}$ only if $y^{*}a=cy^{*}$ for all $y$, that is only if $a=c$ is central.
 
 **Corollary (the order of the operation).** $L_{a}^{\dagger\dagger}=L_{a}$; the adjoint operation is an order-two map on the union of the left regular family with the sandwiches $S_{1,a}$.
 
-**Proof.** The adjoint is an involution on the $\varsigma$-semilinear operators, as the general theory records, and $S_{1,a}^{\dagger}=S_{a,1}=L_{a}$, since $S_{a,1}(y)=ay^{*}=L_{a}(y)$; the two families $\{L_{a}\}$ and $\{S_{1,a}\}$ are therefore exchanged, and exchanged back. $\square$
+**Proof.** The adjoint is an involution on the $\varsigma$-semilinear operators, as the general theory records, and $S_{1,a}^{\dagger}=S_{a,1}=L_{a}$, since $S_{a,1}(y)=ay^{*}=L_{a}(y)$; the two families $\{L_{a}\}$ and $\{S_{1,a}\}$ are therefore exchanged, and exchanged back.
 
 **Remark.** The adjoint of the conjugate left multiplication is not one-sided, and that is a genuine loss of the family: the right multiplication is adjoint to another right multiplication, $R_{b}^{\dagger}=R_{b^{*}}$, while the left multiplication does not stay in it. The two slots are met differently by the adjoint, exactly as they are met differently by the product.
 
@@ -80,7 +80,7 @@ $$
 {}^{\dagger}L_{a}=L_{a}^{\dagger}=S_{1,a} .
 $$
 
-**Proof.** The two adjoints are the adjoint taken against $\varphi$ and against $\varphi^{T}$, and for the sesqui-symmetric pairing $\varphi^{T}=\varsigma\circ\varphi$ makes them agree, as *The Sesquilinear Adjoint Operator* proves. $\square$
+**Proof.** The two adjoints are the adjoint taken against $\varphi$ and against $\varphi^{T}$, and for the sesqui-symmetric pairing $\varphi^{T}=\varsigma\circ\varphi$ makes them agree, as *The Sesquilinear Adjoint Operator* proves.
 
 **Remark.** The coincidence is the reason a single symbol $\dagger$ serves. It is not a general fact about pairings: for a pairing that is not sesqui-symmetric the two adjoints differ, and the difference is the sesquilinear analogue of the defect that separates the adjoint from the left adjoint of the bilinear case.
 
@@ -96,7 +96,7 @@ $$
 L_{a}^{\dagger}L_{b}=R_{a^{*}b}, \qquad L_{b}L_{a}^{\dagger}=T_{ba^{*},1} .
 $$
 
-**Proof.** For the first, $(L_{a}^{\dagger}L_{b})(x)=L_{a}^{\dagger}(bx^{*})=(bx^{*})^{*}a=xb^{*}a$, and the right multiplication with parameter $a^{*}b$ is $R_{a^{*}b}(x)=x(a^{*}b)^{*}=xb^{*}a$. For the second, $(L_{b}L_{a}^{\dagger})(x)=L_{b}(x^{*}a)=b(x^{*}a)^{*}=ba^{*}x=T_{ba^{*},1}(x)$. $\square$
+**Proof.** For the first, $(L_{a}^{\dagger}L_{b})(x)=L_{a}^{\dagger}(bx^{*})=(bx^{*})^{*}a=xb^{*}a$, and the right multiplication with parameter $a^{*}b$ is $R_{a^{*}b}(x)=x(a^{*}b)^{*}=xb^{*}a$. For the second, $(L_{b}L_{a}^{\dagger})(x)=L_{b}(x^{*}a)=b(x^{*}a)^{*}=ba^{*}x=T_{ba^{*},1}(x)$.
 
 **Remark.** The products are the plain one-sided operators: the derived product does not appear, because the two conjugate-linear factors contribute the star that cancels. The first product is a right multiplication and the second a plain left multiplication, so the composite of the adjoint pair fills the two one-sided families that the derived product itself does not produce from the pairs; the contrast with the conjugate left multiplication, which is derived and not plain, is the whole content of the two displays.
 
@@ -110,13 +110,13 @@ $$
 
 Both squares are self-adjoint, and both are the identity when $a$ is unitary.
 
-**Proof.** The two identities are the theorem above at $b=a$. For the self-adjointness, $R_{c}^{\dagger}=R_{c^{*}}$, so $R_{a^{*}a}^{\dagger}=R_{(a^{*}a)^{*}}=R_{a^{*}a}$; and $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$, so $T_{aa^{*},1}^{\dagger}=T_{(aa^{*})^{*},1}=T_{aa^{*},1}$, since $aa^{*}$ is Hermitian. If $aa^{*}=a^{*}a=1$ then $R_{a^{*}a}=R_{1}=\mathrm{id}$ and $T_{aa^{*},1}=T_{1,1}=\mathrm{id}$. $\square$
+**Proof.** The two identities are the theorem above at $b=a$. For the self-adjointness, $R_{c}^{\dagger}=R_{c^{*}}$, so $R_{a^{*}a}^{\dagger}=R_{(a^{*}a)^{*}}=R_{a^{*}a}$; and $T_{p,q}^{\dagger}=T_{p^{*},q^{*}}$, so $T_{aa^{*},1}^{\dagger}=T_{(aa^{*})^{*},1}=T_{aa^{*},1}$, since $aa^{*}$ is Hermitian. If $aa^{*}=a^{*}a=1$ then $R_{a^{*}a}=R_{1}=\mathrm{id}$ and $T_{aa^{*},1}=T_{1,1}=\mathrm{id}$.
 
 **Remark.** The two squares are different operators, a right multiplication by $a^{*}a$ and a plain left multiplication by $aa^{*}$, and the difference is the noncommutativity of $A$; both parameters are Hermitian, which is why both squares are self-adjoint, and the two squares are the identity exactly for the unitary elements.
 
 **Corollary (the unitary case).** Let $a$ be unitary. Then $L_{a}$ is invertible, $L_{a}^{\dagger}=L_{a}^{-1}$, and $L_{a}$ satisfies the conjugate-linear analogue of the unitary condition $T^{\dagger}=T^{-1}$. The invertible conjugate-linear operators of this kind are the antiunitary operators of *The Unitary Operators of a Sesqualgebra*, the later entry of the group, and the conjugate left multiplications by the unitary elements are the antiunitary operators that the algebra itself supplies.
 
-**Proof.** $L_{a}^{\dagger}L_{a}=L_{a}L_{a}^{\dagger}=\mathrm{id}$ makes $L_{a}$ invertible with inverse $L_{a}^{\dagger}$. The operator is conjugate-linear by its parity, and its adjoint is its inverse, which is the antiunitary condition of *The Unitary Operators of a Sesqualgebra*. $\square$
+**Proof.** $L_{a}^{\dagger}L_{a}=L_{a}L_{a}^{\dagger}=\mathrm{id}$ makes $L_{a}$ invertible with inverse $L_{a}^{\dagger}$. The operator is conjugate-linear by its parity, and its adjoint is its inverse, which is the antiunitary condition of *The Unitary Operators of a Sesqualgebra*.
 
 ## The Self-Adjoint Elements
 
@@ -128,7 +128,7 @@ $$
 L_{a}^{\dagger}=L_{a}\quad\Longleftrightarrow\quad a\in Z(A) .
 $$
 
-**Proof.** By the adjoint theorem $L_{a}^{\dagger}=S_{1,a}$, and $S_{1,a}=L_{a}$ means $y^{*}a=ay^{*}$ for every $y$. As $y$ runs over $A$ the elements $y^{*}$ run over $A$, so the condition is that $a$ commute with every element, that is $a$ central. $\square$
+**Proof.** By the adjoint theorem $L_{a}^{\dagger}=S_{1,a}$, and $S_{1,a}=L_{a}$ means $y^{*}a=ay^{*}$ for every $y$. As $y$ runs over $A$ the elements $y^{*}$ run over $A$, so the condition is that $a$ commute with every element, that is $a$ central.
 
 **Remark.** The criterion is the element-level statement of the asymmetry: a conjugate left multiplication is self-adjoint exactly when the element does not see the order, and otherwise its adjoint is a sandwich. On a commutative algebra every conjugate left multiplication is self-adjoint, and on a noncommutative one only the scalars are.
 

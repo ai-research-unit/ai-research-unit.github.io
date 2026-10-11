@@ -65,7 +65,6 @@ $$
 
 is idempotent, $\tilde\Pi^2 = \tilde\Pi$, and Hermitian, $\tilde\Pi^{*} = \tilde\Pi$, so it is a projector; and it is exactly the rank-one projector $\tilde\Pi_1(\hat{\mathbf k}) = \tfrac12(e_0+i\hat{\mathbf k})$ of the idempotent convention of *Conventions in the Biquaternion Universe*. The square of the un-normalised flagpole is $2\tilde\Pi$ rather than $\tilde\Pi$, which is the sense in which the flagpole is twice a state: the natural normalisation of the null direction carries the factor two that the projector removes. The set of null elements is the light cone, and the light cone is the zero-divisor cone (*The Light Cone as the Biquaternion Zero-Divisor Cone*); the flagpole is therefore a null direction that is simultaneously a projector of the informational sector, and the two readings — a lightlike vector and a pure state — are the two faces of the same eight parameters.
 
-**Verification.** For a hundred random unit $\hat{\mathbf k}$: $N(e_0+i\hat{\mathbf k}) = 0$, the pacwoman identity holds in both orders, and $\tilde\Pi$ is idempotent and Hermitian, all to machine precision.
 
 ## The Boost of the Null Wave Element
 
@@ -96,7 +95,7 @@ so that the two terms carry a common factor $i+\hat{\mathbf k}$:
 
 $$
 \tilde\Lambda\left(i + \hat{\mathbf k}\right)
-= \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\hat{\mathbf u}\hat{\mathbf k}\right)\left(i + \hat{\mathbf k}\right). 
+= \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\hat{\mathbf u}\hat{\mathbf k}\right)\left(i + \hat{\mathbf k}\right).
 $$
 
 The point of the proposition is that the factor

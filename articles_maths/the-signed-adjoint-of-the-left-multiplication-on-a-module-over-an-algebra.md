@@ -17,9 +17,9 @@ $$
 \bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}, \qquad \beta=\alpha\sigma .
 $$
 
-*Proof.* The signed left multiplication is the signed sandwich with right parameter $1$, $L^{\alpha}_a=S^{\alpha}_{a,1}$. By *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, $\bigl(S^{\alpha}_{a,1}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(1)}$, and $\beta(1)=1$ because $\beta$ is an involution of the algebra. Hence the adjoint is $S^{\alpha}_{\beta(a),1}=L^{\alpha}_{\beta(a)}$. $\square$
+*Proof.* The signed left multiplication is the signed sandwich with right parameter $1$, $L^{\alpha}_a=S^{\alpha}_{a,1}$. By *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*, $\bigl(S^{\alpha}_{a,1}\bigr)^{*}=S^{\alpha}_{\beta(a),\beta(1)}$, and $\beta(1)=1$ because $\beta$ is an involution of the algebra. Hence the adjoint is $S^{\alpha}_{\beta(a),1}=L^{\alpha}_{\beta(a)}$.
 
-**Proof (direct).** Write $L^{\alpha}_a=L_a\circ\alpha$, so by anti-multiplicativity $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha^{*}(L_a)^{*}$. The pairing is $\alpha$-invariant, so $\alpha^{*}=\alpha$, and *The Adjoint of a Sandwich on a Bimodule over an Algebra* gives $(L_a)^{*}=L_{\sigma(a)}$. Hence $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha L_{\sigma(a)}=L^{\alpha}_{\alpha\sigma(a)}$, using the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$ of *The Signed Left Multiplication on a Module over an Algebra*. $\square$
+**Proof (direct).** Write $L^{\alpha}_a=L_a\circ\alpha$, so by anti-multiplicativity $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha^{*}(L_a)^{*}$. The pairing is $\alpha$-invariant, so $\alpha^{*}=\alpha$, and *The Adjoint of a Sandwich on a Bimodule over an Algebra* gives $(L_a)^{*}=L_{\sigma(a)}$. Hence $\bigl(L^{\alpha}_a\bigr)^{*}=\alpha L_{\sigma(a)}=L^{\alpha}_{\alpha\sigma(a)}$, using the identity $\alpha L_b=L^{\alpha}_{\alpha(b)}$ of *The Signed Left Multiplication on a Module over an Algebra*.
 
 The parameter transforms by the composite $\beta=\alpha\sigma$, exactly as for the general signed sandwich: the grading and the involution both act, and only their product is visible.
 
@@ -31,11 +31,11 @@ $$
 \bigl(L^{\alpha}_a\bigr)^{*}=\alpha\,(L_{\sigma(a)})^{*}=\alpha\,L_{\sigma(a)}, \qquad \bigl(L_a\bigr)^{*}=L_{\sigma(a)} .
 $$
 
-*Proof.* The first is the direct computation in the proof of the theorem; the second is the unsigned rule. $\square$
+*Proof.* The first is the direct computation in the proof of the theorem; the second is the unsigned rule.
 
 **Corollary (parity).** The signed left multiplications are odd for the $\mathbb{Z}/2$-grading of the sandwich monoid, and the adjoint sends an odd operator to an odd operator: $\bigl(L^{\alpha}_a\bigr)^{*}=L^{\alpha}_{\beta(a)}$. The adjoint commutes with the grading, as it does for the two-sided operators.
 
-*Proof.* Immediate from the theorem and the parity statement of *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*. $\square$
+*Proof.* Immediate from the theorem and the parity statement of *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*.
 
 ## Relation to the Signed Sandwich
 
@@ -47,7 +47,7 @@ $$
 S^{\alpha}_{a,b}=L^{\alpha}_a\circ R_{\alpha(b)}, \qquad L^{\alpha}_a=S^{\alpha}_{a,1}, \qquad R^{\alpha}_b:=S^{\alpha}_{1,b} .
 $$
 
-*Proof.* $L^{\alpha}_a(R_{\alpha(b)}(x))=a\,\alpha(x\alpha(b))=a\,\alpha(x)\,\alpha(\alpha(b))=a\,\alpha(x)\,b=S^{\alpha}_{a,b}(x)$, and the other identities are the parameter choices. $\square$
+*Proof.* $L^{\alpha}_a(R_{\alpha(b)}(x))=a\,\alpha(x\alpha(b))=a\,\alpha(x)\,\alpha(\alpha(b))=a\,\alpha(x)\,b=S^{\alpha}_{a,b}(x)$, and the other identities are the parameter choices.
 
 **Corollary.** The adjoint of the signed sandwich is the composite of the adjoints of its factors in the reverse order, and the one-sided adjoints assemble it:
 
@@ -55,7 +55,7 @@ $$
 \bigl(S^{\alpha}_{a,b}\bigr)^{*}=\bigl(R_{\alpha(b)}\bigr)^{*}\bigl(L^{\alpha}_a\bigr)^{*}=R_{\sigma(\alpha(b))}L^{\alpha}_{\beta(a)}=R_{\beta(b)}L^{\alpha}_{\beta(a)}=S^{\alpha}_{\beta(a),\beta(b)} .
 $$
 
-*Proof.* Anti-multiplicativity and the theorem, with the right-handed adjoint $R_c^{*}=R_{\sigma(c)}$ obtained from the opposite algebra as in *The Adjoint of the Sandwich on a Bimodule over an Algebra*. For the middle equality, $\sigma(\alpha(b))=\sigma\alpha(b)=\alpha\sigma(b)=\beta(b)$ because $\alpha$ and $\sigma$ commute. For the last, $R_dL^{\alpha}_c=S^{\alpha}_{c,d}$ directly, since $R_dL^{\alpha}_c(x)=c\,\alpha(x)\,d$. $\square$
+*Proof.* Anti-multiplicativity and the theorem, with the right-handed adjoint $R_c^{*}=R_{\sigma(c)}$ obtained from the opposite algebra as in *The Adjoint of the Sandwich on a Bimodule over an Algebra*. For the middle equality, $\sigma(\alpha(b))=\sigma\alpha(b)=\alpha\sigma(b)=\beta(b)$ because $\alpha$ and $\sigma$ commute. For the last, $R_dL^{\alpha}_c=S^{\alpha}_{c,d}$ directly, since $R_dL^{\alpha}_c(x)=c\,\alpha(x)\,d$.
 
 The one-sided case is therefore not an analogy but a factorisation: the sandwich is a signed left multiplication composed with a right multiplication, and its adjoint is the composite of the one-sided adjoints.
 
@@ -71,7 +71,7 @@ $$
 
 For a faithful module these read $\beta(a)=a$ and $\beta(a)=-a$.
 
-*Proof.* $L^{\alpha}_a=L^{\alpha}_{a'}$ is $L^{\alpha}_{a-a'}=0$, that is $(a-a')M=0$, by the kernel statement of *The Signed Left Multiplication on a Module over an Algebra*; applying this to the theorem gives the criteria. $\square$
+*Proof.* $L^{\alpha}_a=L^{\alpha}_{a'}$ is $L^{\alpha}_{a-a'}=0$, that is $(a-a')M=0$, by the kernel statement of *The Signed Left Multiplication on a Module over an Algebra*; applying this to the theorem gives the criteria.
 
 So the self-adjoint signed left multiplications are those with $\beta$-symmetric parameter (modulo the annihilator), the analogue of the symmetric operators among the unsigned left multiplications.
 
@@ -83,11 +83,11 @@ $$
 \bigl(L^{\alpha}_a\bigr)^{*}L^{\alpha}_a=L^{\alpha}_a\bigl(L^{\alpha}_a\bigr)^{*}=\mathrm{id} \iff \sigma(a)a=a\sigma(a)=1 .
 $$
 
-*Proof.* This is the unitarity criterion of *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra* with $(a,b)=(a,1)$. $\square$
+*Proof.* This is the unitarity criterion of *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra* with $(a,b)=(a,1)$.
 
 **Corollary.** The unitary signed left multiplications form a group isomorphic to the unitary group of $A$ modulo the annihilator: the map $a \mapsto L^{\alpha}_a$ restricted to the unitary elements of $A$ is multiplicative on unitary parameters and has kernel the unitary elements of $\operatorname{Ann}_A(M)$.
 
-*Proof.* For unitary $a,b$ the composition rule gives $L^{\alpha}_aL^{\alpha}_b=L_{a\alpha(b)}$, and $a\alpha(b)$ is unitary when $a$ and $b$ are; the kernel is computed as above. $\square$
+*Proof.* For unitary $a,b$ the composition rule gives $L^{\alpha}_aL^{\alpha}_b=L_{a\alpha(b)}$, and $a\alpha(b)$ is unitary when $a$ and $b$ are; the kernel is computed as above.
 
 ## Kernel, Image and the Paired Complement
 
@@ -99,7 +99,7 @@ $$
 \ker\bigl(L^{\alpha}_a\bigr)^{*}=\bigl(\operatorname{im}L^{\alpha}_a\bigr)^{\mathrm{c}}, \qquad \operatorname{im}\bigl(L^{\alpha}_a\bigr)^{*}={}^{\mathrm{c}}\bigl(\ker L^{\alpha}_a\bigr) .
 $$
 
-*Proof.* These are the general identities of *The Adjoint of a Module Homomorphism* for the operator $L^{\alpha}_a$. $\square$
+*Proof.* These are the general identities of *The Adjoint of a Module Homomorphism* for the operator $L^{\alpha}_a$.
 
 ### The explicit complements
 
@@ -109,11 +109,11 @@ $$
 \ker\bigl(L^{\alpha}_a\bigr)^{*}=\ker L_{\sigma(a)}, \qquad \operatorname{im}\bigl(L^{\alpha}_a\bigr)^{*}=\beta(a)M .
 $$
 
-*Proof.* The first is $(aM)^{\mathrm{c}}=\{n : \langle am,n\rangle=0\ \forall m\}=\{n : \langle m,\sigma(a)n\rangle=0\ \forall m\}=\ker L_{\sigma(a)}$ by non-degeneracy. The second is the image of $L^{\alpha}_{\beta(a)}$, namely $\beta(a)M$. $\square$
+*Proof.* The first is $(aM)^{\mathrm{c}}=\{n : \langle am,n\rangle=0\ \forall m\}=\{n : \langle m,\sigma(a)n\rangle=0\ \forall m\}=\ker L_{\sigma(a)}$ by non-degeneracy. The second is the image of $L^{\alpha}_{\beta(a)}$, namely $\beta(a)M$.
 
 **Corollary.** The two descriptions agree: $\alpha(\ker L_{\beta(a)})=\ker L_{\sigma(a)}$, which is the identity $\alpha(\ker L_c)=\ker L_{\alpha(c)}$ for $c=\beta(a)$.
 
-*Proof.* $\alpha(\ker L_{\beta(a)})=\{m : \beta(a)\,\alpha(m)=0\}=\{m : \alpha(\sigma(a)m)=0\}=\ker L_{\sigma(a)}$ using $\alpha(\beta(a))=\sigma(a)$. $\square$
+*Proof.* $\alpha(\ker L_{\beta(a)})=\{m : \beta(a)\,\alpha(m)=0\}=\{m : \alpha(\sigma(a)m)=0\}=\ker L_{\sigma(a)}$ using $\alpha(\beta(a))=\sigma(a)$.
 
 ## Examples
 

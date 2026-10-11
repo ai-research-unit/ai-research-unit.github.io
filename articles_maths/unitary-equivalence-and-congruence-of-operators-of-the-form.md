@@ -20,7 +20,7 @@ $$
 
 Then $\cdot$ is a left action of the unitary group $U(A,h)$ on $B(A)$: $1 \cdot T = T$ and $(UV)\cdot T = U\cdot(V\cdot T)$. The action preserves the adjoint, $(U\cdot T)^{\dagger} = U\cdot T^{\dagger}$, and it therefore preserves self-adjointness, skew-adjointness, normality and unitarity.
 
-*Proof.* The unit acts by $1T1 = T$, and $(UV)T(UV)^{\dagger} = U(VTV^{\dagger})U^{\dagger}$ by the anti-multiplicativity and the identity $(UV)^{\dagger} = V^{\dagger}U^{\dagger} = V^{-1}U^{-1}$. For the adjoint, $(UTU^{\dagger})^{\dagger} = (U^{\dagger})^{\dagger}T^{\dagger}U^{\dagger} = UT^{\dagger}U^{\dagger}$, using the order two of the adjoint operation. The preservation of the four properties is immediate from the preservation of the adjoint. $\square$
+*Proof.* The unit acts by $1T1 = T$, and $(UV)T(UV)^{\dagger} = U(VTV^{\dagger})U^{\dagger}$ by the anti-multiplicativity and the identity $(UV)^{\dagger} = V^{\dagger}U^{\dagger} = V^{-1}U^{-1}$. For the adjoint, $(UTU^{\dagger})^{\dagger} = (U^{\dagger})^{\dagger}T^{\dagger}U^{\dagger} = UT^{\dagger}U^{\dagger}$, using the order two of the adjoint operation. The preservation of the four properties is immediate from the preservation of the adjoint.
 
 **Proposition (the covariance of the matrix elements).** For a unitary $U$ and an operator $T$,
 
@@ -28,17 +28,17 @@ $$
 h(Tx,y) = h\bigl((UTU^{\dagger})(Ux), Uy\bigr) \qquad \text{for all } x, y .
 $$
 
-*Proof.* The right side is $h(UTU^{\dagger}Ux, Uy) = h(UTx, Uy) = h(Tx, U^{\dagger}Uy) = h(Tx,y)$, using $U^{\dagger}U = 1$. $\square$
+*Proof.* The right side is $h(UTU^{\dagger}Ux, Uy) = h(UTx, Uy) = h(Tx, U^{\dagger}Uy) = h(Tx,y)$, using $U^{\dagger}U = 1$.
 
 ### The Invariants
 
 **Theorem (the invariants of unitary equivalence).** Unitary equivalence preserves the spectrum, the modulus and the polar factors: $\sigma(UTU^{\dagger}) = \sigma(T)$ and $\lvert UTU^{\dagger}\rvert = U\lvert T\rvert U^{\dagger}$; if $T = U_{T}\lvert T\rvert$ is the polar decomposition of $T$, then $UTU^{\dagger} = (U U_{T}U^{\dagger})\,\lvert UTU^{\dagger}\rvert$ is the polar decomposition of $UTU^{\dagger}$.
 
-*Proof.* The conjugation is a similarity by an invertible operator, so the spectrum is unchanged. For the modulus, $(UTU^{\dagger})^{\dagger}(UTU^{\dagger}) = UT^{\dagger}U^{\dagger}UTU^{\dagger} = U(T^{\dagger}T)U^{\dagger}$, and $U\lvert T\rvert U^{\dagger}$ is self-adjoint, positive and of square $U(T^{\dagger}T)U^{\dagger}$, so it is the modulus by the uniqueness of the positive square root. The polar statement is the same computation read on the pair. $\square$
+*Proof.* The conjugation is a similarity by an invertible operator, so the spectrum is unchanged. For the modulus, $(UTU^{\dagger})^{\dagger}(UTU^{\dagger}) = UT^{\dagger}U^{\dagger}UTU^{\dagger} = U(T^{\dagger}T)U^{\dagger}$, and $U\lvert T\rvert U^{\dagger}$ is self-adjoint, positive and of square $U(T^{\dagger}T)U^{\dagger}$, so it is the modulus by the uniqueness of the positive square root. The polar statement is the same computation read on the pair.
 
 **Theorem (completeness for normal operators).** Let the form be definite and finite dimensional over the sesquilinear base $R = k(\mathrm{i})$. Then two normal operators are unitarily equivalent if and only if they have the same spectrum.
 
-*Proof.* Unitary equivalence preserves the spectrum by the theorem above. Conversely, by *The Spectra of Self-Adjoint Operators of the Form*, a normal operator over the sesquilinear base is diagonalisable in an $h$-orthonormal basis with its spectrum on the diagonal, and the multiplicities are determined by the spectrum; a unitary sending the eigenbasis of the first operator to the eigenbasis of the second, matching the eigenvalues, conjugates one into the other. $\square$
+*Proof.* Unitary equivalence preserves the spectrum by the theorem above. Conversely, by *The Spectra of Self-Adjoint Operators of the Form*, a normal operator over the sesquilinear base is diagonalisable in an $h$-orthonormal basis with its spectrum on the diagonal, and the multiplicities are determined by the spectrum; a unitary sending the eigenbasis of the first operator to the eigenbasis of the second, matching the eigenvalues, conjugates one into the other.
 
 **Remark (the invariant is not complete for general operators).** Beyond the normal operators the spectrum is only a partial invariant, and two operators with the same spectrum need not be unitarily equivalent: the Jordan structure is an additional invariant, which the definite layer does not develop. The comparison with the congruence is sharp: the *whole* of the spectral data, including the multiplicities, is invariant under unitary equivalence, whereas a general congruence preserves only what the similarity $C^{-1}TC$ preserves and moves everything that refers to the form — the adjoint, the self-adjointness, the modulus and the polar factors.
 
@@ -56,7 +56,7 @@ written $k = h_{C}$.
 
 **Proposition (the congruent form is Hermitian and nonsingular).** If $h$ is Hermitian and $C$ invertible, then $h_{C}$ is Hermitian; $h_{C}$ is nonsingular exactly when $h$ is; and if $h$ is positive definite then $h_{C}$ is positive definite.
 
-*Proof.* Hermitian: $h_{C}(y,x) = h(Cy,Cx) = \varsigma(h(Cx,Cy)) = \varsigma(h_{C}(x,y))$. Nonsingularity: the radical of $h_{C}$ is $C^{-1}(A^{\perp})$, so it vanishes exactly when $A^{\perp}$ does. Definiteness: $h_{C}(x,x) = h(Cx,Cx) > 0$ for $x \neq 0$ because $C$ is injective and $h$ is definite. $\square$
+*Proof.* Hermitian: $h_{C}(y,x) = h(Cy,Cx) = \varsigma(h(Cx,Cy)) = \varsigma(h_{C}(x,y))$. Nonsingularity: the radical of $h_{C}$ is $C^{-1}(A^{\perp})$, so it vanishes exactly when $A^{\perp}$ does. Definiteness: $h_{C}(x,x) = h(Cx,Cx) > 0$ for $x \neq 0$ because $C$ is injective and $h$ is definite.
 
 **Theorem (the Gram matrix transformation).** Let $H$ and $K$ be the Gram matrices of $h$ and $k$ in a basis, and let $C$ have matrix $\Gamma$ in the same basis. Then $k = h_{C}$ if and only if
 
@@ -64,13 +64,13 @@ $$
 K = \Gamma^{T} H\, \varsigma(\Gamma) .
 $$
 
-*Proof.* The value $k(x,y) = h(Cx,Cy)$ is the quadratic form of the matrix $\Gamma^{T}H\varsigma(\Gamma)$ evaluated at the coordinate vectors of $x$ and $y$, and the two forms have the same Gram matrix exactly when they agree, by the reconstruction of a form from its Gram matrix of *The Sesquilinear Form and the Conjugation*, §*The Reconstruction*. $\square$
+*Proof.* The value $k(x,y) = h(Cx,Cy)$ is the quadratic form of the matrix $\Gamma^{T}H\varsigma(\Gamma)$ evaluated at the coordinate vectors of $x$ and $y$, and the two forms have the same Gram matrix exactly when they agree, by the reconstruction of a form from its Gram matrix of *The Sesquilinear Form and the Conjugation*, §*The Reconstruction*.
 
 ### Sylvester's Law of Inertia
 
 **Theorem (Sylvester's law).** Let the base be one of the two classical kinds, and let $h$ be a Hermitian form on a free module of finite rank with Gram matrix $H$. Then $h$ is congruent to the diagonal form with $r$ entries $+1$, $s$ entries $-1$ and $t$ entries $0$, where $(r,s,t)$ is the inertia of $H$; the inertia is invariant under congruence; over either classical base the inertia $(r,s,t)$ is the complete invariant of congruence. Over $k(\mathrm{i})$ this is the same statement as over $k$: the diagonal entry of a congruent form is scaled by $\lambda\varsigma(\lambda) = \lvert\lambda\rvert^{2} \geq 0$, so the signs are invariant, exactly as in *Congruence and the Stabiliser of a Form* for the Hermitian forms over $\mathbb{C}$.
 
-*Proof.* The reduction by simultaneous row and column operations to the diagonal form and the invariance of the inertia are *The Indefinite Case and the Signature*, §*Sylvester's Law*; the completeness is the Lagrange reduction of the form to a sum of squares and the classification of the nonzero squares by their sign over the ordered field $k$. $\square$
+*Proof.* The reduction by simultaneous row and column operations to the diagonal form and the invariance of the inertia are *The Indefinite Case and the Signature*, §*Sylvester's Law*; the completeness is the Lagrange reduction of the form to a sum of squares and the classification of the nonzero squares by their sign over the ordered field $k$.
 
 ### The Cone and the Tolerance under Congruence
 
@@ -80,13 +80,13 @@ $$
 x \succeq_{h_{C}} y \iff Cx \succeq_{h} Cy .
 $$
 
-*Proof.* The diagonal of the congruent form is $h_{C}(x,x) = h(Cx,Cx)$, which is nonnegative for every $x$ exactly when $h$ is positive semi-definite on the range of $C$, that is on all of $A$; the definiteness is the proposition above. For the tolerance, $h_{C}(x-y,x-y) = h(C(x-y),C(x-y)) = h(Cx-Cy,Cx-Cy)$ by the linearity of $C$, which is the assertion. $\square$
+*Proof.* The diagonal of the congruent form is $h_{C}(x,x) = h(Cx,Cx)$, which is nonnegative for every $x$ exactly when $h$ is positive semi-definite on the range of $C$, that is on all of $A$; the definiteness is the proposition above. For the tolerance, $h_{C}(x-y,x-y) = h(C(x-y),C(x-y)) = h(Cx-Cy,Cx-Cy)$ by the linearity of $C$, which is the assertion.
 
 ### The Stabiliser of the Form
 
 **Theorem (the unitary group is the stabiliser).** For an invertible $C$, the congruence $h_{C}$ equals $h$ if and only if $C$ is an isometry of $h$; the invertible isometries are the unitary operators, so the unitary group is the stabiliser of $h$ in the congruence action on the Hermitian forms.
 
-*Proof.* The equality $h(Cx,Cy) = h(x,y)$ for all $x,y$ is the isometry condition of *Unitary and Isometric Operators of the Form*, §*The Definitions*, and by *Unitary and Isometric Operators of the Form*, §*The Equivalences*, an invertible isometry is unitary. $\square$
+*Proof.* The equality $h(Cx,Cy) = h(x,y)$ for all $x,y$ is the isometry condition of *Unitary and Isometric Operators of the Form*, §*The Definitions*, and by *Unitary and Isometric Operators of the Form*, §*The Equivalences*, an invertible isometry is unitary.
 
 **Remark (the compatibility under a congruence).** A congruence does not preserve the *compatibility* with the product in general: the congruent form $h_{C}$ need not be compatible for the involution $*$, and the adjoint operation is transported rather than preserved — the $h_{C}$-adjoint of the transported operator $T^{C} = C^{-1}TC$ is the conjugate $C^{-1}T^{\dagger}C$ of the $h$-adjoint of $T$, and not $T^{\dagger}$ itself. What is preserved is the involution itself in the multiplicative case: if $C$ is a $*$-automorphism of the algebra — multiplicative and commuting with $*$ — then
 
@@ -102,13 +102,13 @@ so $h_{C}$ is again compatible for $*$. The compatible forms of the layer are th
 
 **Theorem (the comparison).** The two relations are the two halves of one normal form. Unitary equivalence is the orbit relation of the unitary group on the operators of a fixed form, and its complete invariant for the normal operators over the sesquilinear base is the spectrum. Congruence is the orbit relation of the general linear group on the Hermitian forms of a fixed module, and its complete invariant is the inertia. The layer first brings the form to the diagonal model $\operatorname{diag}(1_{r},-1_{s},0_{t})$ by a congruence, and then classifies the operators on the model up to unitary equivalence by their spectra.
 
-*Proof.* The two orbit statements are the definition of the two actions; the invariants are the completeness theorems quoted above. The last clause is the combination: the congruence normalises the form and the unitary equivalence normalises the operator. $\square$
+*Proof.* The two orbit statements are the definition of the two actions; the invariants are the completeness theorems quoted above. The last clause is the combination: the congruence normalises the form and the unitary equivalence normalises the operator.
 
 ### The Transport of the Operator Theory
 
 **Theorem (the transport).** Let $k = h_{C}$ and let $T$ be an operator on $(A,h)$. Then the operator $T^{C} = C^{-1}TC$ on $(A,k)$ is $k$-self-adjoint if and only if $T$ is $h$-self-adjoint; the two adjoints are related by $(T^{C})^{\dagger_{k}} = C^{-1}T^{\dagger}C$; $T^{C}$ is similar to $T$, so the two have the same spectrum; and the transport is a left action of the general linear group, $(T^{C})^{D} = T^{CD}$.
 
-*Proof.* The map $C : (A,k) \to (A,h)$ is an isometry by the definition of $k$, so it carries the adjoint of the one form to the adjoint of the other: $k(T^{C}x,y) = h(TCx,Cy) = h(Cx,T^{\dagger}Cy) = k(x,C^{-1}T^{\dagger}Cy)$, whence $(T^{C})^{\dagger_{k}} = C^{-1}T^{\dagger}C$, and $T^{C}$ is $k$-self-adjoint exactly when $T$ is $h$-self-adjoint. The similarity statement is that $C$ conjugates $T^{C}$ back to $T$, $C\,T^{C}\,C^{-1} = T$, so the two operators are similar, and the action law is the computation $(T^{C})^{D} = D^{-1}C^{-1}TCD = (CD)^{-1}T(CD)$. $\square$
+*Proof.* The map $C : (A,k) \to (A,h)$ is an isometry by the definition of $k$, so it carries the adjoint of the one form to the adjoint of the other: $k(T^{C}x,y) = h(TCx,Cy) = h(Cx,T^{\dagger}Cy) = k(x,C^{-1}T^{\dagger}Cy)$, whence $(T^{C})^{\dagger_{k}} = C^{-1}T^{\dagger}C$, and $T^{C}$ is $k$-self-adjoint exactly when $T$ is $h$-self-adjoint. The similarity statement is that $C$ conjugates $T^{C}$ back to $T$, $C\,T^{C}\,C^{-1} = T$, so the two operators are similar, and the action law is the computation $(T^{C})^{D} = D^{-1}C^{-1}TCD = (CD)^{-1}T(CD)$.
 
 **Remark (what congruence forgets and what it keeps).** A congruence of the form keeps the spectrum, because the transport is a similarity; it forgets self-adjointness, because the conjugate of a self-adjoint operator of $h$ is self-adjoint for the congruent form and not for $h$ unless the congruence is an isometry. This is the precise sense in which the layer's operator theory lives on the pair (algebra, form) and not on the algebra alone: the form is exactly the datum that selects the unitary group inside the general linear group, and with it the self-adjoint operators and the spectral theory.
 

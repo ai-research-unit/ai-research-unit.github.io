@@ -51,7 +51,7 @@ $\Delta_N=16\sum_r\partial_{Z_r}\partial_{Z_r}^{\dagger}$.
 *Proof.* Expand $(\partial_{\underline z}+\partial_{\bar z})^2$ and use
 $\partial_{\underline z}^2=\partial_{\bar z}^2=0$ and
 $\{\partial_{\underline z},\partial_{\bar z}\}=\tfrac14\Delta_{2n}$ of *Hermitian Clifford Analysis
-and the Hermitian Monogenic Functions*. $\square$
+and the Hermitian Monogenic Functions*.
 
 **Remark (two square roots of the Laplacian).** The Euclidean operator gives another square root,
 $D=2(\partial_{\underline z}-\partial_{\bar z})$ with $D^2=-\Delta_{2n}$; the two square roots are
@@ -94,7 +94,7 @@ Clifford conjugation; it carries the Witt basis element $f_j$ to $f_j^{*}$, the 
 differentiation $\partial_{z_j}$ to $\partial_{\bar z_j}$, and conversely, so it interchanges
 $\partial_{\underline z}$ and $\partial_{\bar z}$; a sum of two terms that the involution
 interchanges is fixed by it, and the symmetry with respect to the form is precisely the fixed-point
-property. Integrating by parts on compactly supported sections removes the boundary terms. $\square$
+property. Integrating by parts on compactly supported sections removes the boundary terms.
 
 **Remark (why the two halves are conjugate).** The pairing is the module form's version of the
 pairing of $\partial_{\underline z}$ with $\partial_{\bar z}$: the two operators are conjugate
@@ -119,7 +119,6 @@ parts — so the spectrum is the whole line, in contrast with a symmetric ellipt
 positive square, whose spectrum is a half line if the square is positive. The argument is the
 standard one for a first-order constant-coefficient operator, and the statement is the Hermitian
 refinement of the spectral statement of *Dirac Differential Operators*' for the Euclidean operator.
-$\square$
 
 **Corollary (the sign of the square and the spectrum).** The spectrum of $\mathcal{D}$ is the whole
 real line because $\mathcal{D}^2=\tfrac14\Delta_{2n}$ is a **negative** operator — the Laplacian
@@ -132,7 +131,7 @@ operator self-adjoint with respect to the Hermitian form is the one of the defin
 *Proof.* The spectrum of a self-adjoint operator whose square is $-\Delta$ with $\Delta$ negative is
 $\mathbb{R}$ when the square root is chosen as $\mathcal{D}$ and $i\mathbb{R}$ when it is chosen as
 $D$; the two differ by the factor $i$, and the Hermitian choice absorbs that factor into the switch
-from difference to sum. $\square$
+from difference to sum.
 
 ## The Relation to the Finite-Dimensional Dirac Element
 

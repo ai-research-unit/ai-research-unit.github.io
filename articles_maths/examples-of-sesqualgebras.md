@@ -102,7 +102,7 @@ $$
 \varsigma(\lambda)\,h^{-1}g^{-1} = \lambda\, gh^{-1} \qquad \text{for all } \lambda\in R , \quad g, h\in G .
 $$
 
-*Proof.* The two sides are the two coefficientwise products of the basis computation. For the second display, $zy = \lambda\mu gh$ when $y = \mu h$, so $(zy)^{*} = \varsigma(\lambda\mu)(gh)^{-1} = \varsigma(\lambda)\varsigma(\mu)h^{-1}g^{-1}$, while $z\,y^{*} = (\lambda g)(\varsigma(\mu)h^{-1}) = \lambda\varsigma(\mu)gh^{-1}$; putting $\mu = 1$ gives the display. $\square$
+*Proof.* The two sides are the two coefficientwise products of the basis computation. For the second display, $zy = \lambda\mu gh$ when $y = \mu h$, so $(zy)^{*} = \varsigma(\lambda\mu)(gh)^{-1} = \varsigma(\lambda)\varsigma(\mu)h^{-1}g^{-1}$, while $z\,y^{*} = (\lambda g)(\varsigma(\mu)h^{-1}) = \lambda\varsigma(\mu)gh^{-1}$; putting $\mu = 1$ gives the display.
 
 **Corollary.** If $\varsigma \neq \mathrm{id}$ the product $x\star y = xy^{*}$ of the group algebra is **never** associative, because the display with $g = h = 1$ reads $\varsigma(\lambda) = \lambda$, which must hold for every $\lambda$. If $\varsigma = \mathrm{id}$ the involution is $g\mapsto g^{-1}$ and the product is the ordinary group-algebra product exactly when $g = g^{-1}$ for every $g$, that is when $G$ is an elementary abelian two-group, and otherwise it is a non-associative $R$-algebra. Testing the identity on the group elements alone would find the exponent-two condition and miss the scalar obstruction altogether, which is the reason the corollary is stated on the whole algebra.
 
@@ -122,7 +122,7 @@ $$
 
 **Proposition.** Let $A$ be a sesqualgebra over $(R,\varsigma)$ that is faithful over $R$ and whose products generate $A$. If $A$ is also a sesqualgebra over $(R,\varsigma')$ with the same product, then $\varsigma = \varsigma'$; in particular a product that is $\varsigma$-sesquilinear in the second slot and $\varsigma'$-sesquilinear in the same slot with $\varsigma\neq\varsigma'$ is possible only through the annihilation of the difference, and the datum of an example of full type is determined by its product.
 
-*Proof.* The two scalar rules of *Sesqualgebras*, §*The Two Scalar Rules*, read with the two data give $(\varsigma(\lambda) - \varsigma'(\lambda))xy = 0$ for all $\lambda, x, y$: the first rule is the same for both data, and the second reads the same left-hand side $x(\lambda y)$ as $\varsigma(\lambda)(xy)$ and as $\varsigma'(\lambda)(xy)$. The products generate $A$, so $(\varsigma(\lambda) - \varsigma'(\lambda))A = 0$, and faithfulness over $R$ makes the scalar zero, which is the collapse criterion of §*The Collapse at the Identity*. $\square$
+*Proof.* The two scalar rules of *Sesqualgebras*, §*The Two Scalar Rules*, read with the two data give $(\varsigma(\lambda) - \varsigma'(\lambda))xy = 0$ for all $\lambda, x, y$: the first rule is the same for both data, and the second reads the same left-hand side $x(\lambda y)$ as $\varsigma(\lambda)(xy)$ and as $\varsigma'(\lambda)(xy)$. The products generate $A$, so $(\varsigma(\lambda) - \varsigma'(\lambda))A = 0$, and faithfulness over $R$ makes the scalar zero, which is the collapse criterion of §*The Collapse at the Identity*.
 
 ### The Two Lists
 

@@ -59,7 +59,7 @@ $$
 =\langle f,T_{K^*}g\rangle ,
 $$
 the inner integral being $(T_{K^*}g)(y)$ with $K^*(y,x)=\overline{K(x,y)}$. Hence
-$T_K^\dagger=T_{K^*}$, and the fixed-point statement is immediate. $\blacksquare$
+$T_K^\dagger=T_{K^*}$, and the fixed-point statement is immediate.
 
 ### Positive Definite Kernels and Positive Operators
 
@@ -77,7 +77,7 @@ so the positivity of the quadratic form of the operator is the positivity of the
 **Proof.** The identity is the expansion of the double integral on simple functions; the passage to all of
 $L^2$ is the density of the simple functions and the boundedness of $T_K$; the positive definite condition on
 the kernel is the positivity of the same form for all finite data, which is the density of the finite
-combinations of indicators in the relevant sense. $\blacksquare$
+combinations of indicators in the relevant sense.
 
 **Corollary (the Hermitian and the positive).** The Hermitian kernels correspond to the self-adjoint integral
 operators and the positive definite kernels to the positive operators; the value-conjugation is not involved,
@@ -107,7 +107,7 @@ $\ast$-isometry.
 $\lVert T_K\rVert_{\mathrm{HS}}^2=\iint\lvert K\rvert^2$ for an orthonormal basis, and the kernel is
 recovered from the operator by the formula $K(x,y)=\sum_n(T_Ke_n)(x)\overline{e_n(y)}$ in the $L^2$ sense;
 the inner product identity is the polarisation of the norm. The involution statement is the theorem of the
-previous section. $\blacksquare$
+previous section.
 
 **Forward reference.** The spectral theory of a Hermitian kernel — the reality of the spectrum, the
 orthogonal eigenfunctions, the expansion of the kernel and Mercer's theorem — is the subject of
@@ -131,7 +131,7 @@ kernel is positive definite as a distribution.
 **Proof.** The existence and uniqueness of the kernel is the Schwartz kernel theorem of *The Schwartz Kernel
 Theorem*, later in this Part; the identification of the Hermitian and positive conditions is the
 distributional form of the computations of the previous sections, with the pairing of *Positive Definite
-Distributions*, the previous article of this group. $\blacksquare$
+Distributions*, the previous article of this group.
 
 The general bounded operator therefore has a kernel in the sense of distributions, and the kernel dictionary
 of this article — the involution $K\mapsto K^*$ with the adjoint, the positive definite with the positive —
@@ -154,7 +154,7 @@ the recovery of the kernel from the operator. The row that carries the spectral 
 kernel belongs to *Hermitian Integral Kernels*, later in this group.
 
 **Proof.** The rows are the theorems of the previous sections; the Hilbert–Schmidt case is the isometry, and
-the general rows are the distributional form. $\blacksquare$
+the general rows are the distributional form.
 
 ## The Spectral Theory of the Hermitian Kernel
 

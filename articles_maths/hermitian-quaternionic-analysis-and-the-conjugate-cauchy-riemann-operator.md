@@ -79,7 +79,7 @@ $$
 patterns show, whence $X_r^2=-|X|^2$ and the vanishing of the six anticommutators; the corresponding
 operator identities follow by applying the operators to the scalar coefficients, the relations being
 those of the same sign patterns. The verification is carried out in
-$\mathbb{H}\otimes_\mathbb{R} \mathrm{Cl}_{0,4}$ in *Clifford Analysis*. $\square$
+$\mathbb{H}\otimes_\mathbb{R} \mathrm{Cl}_{0,4}$ in *Clifford Analysis*.
 
 ### The Hermitian Variables and Operators
 
@@ -135,7 +135,7 @@ the cross patterns, leaving $4\sum_r(\text{pattern})^2=4\cdot4|X|^2$ in the vari
 corresponding operator identity. The full verification in
 $\mathbb{H}\otimes_\mathbb{R}\mathrm{Cl}_{0,4}$ is in *Clifford Analysis*: the norm identity holds,
 and the split of the Laplacian holds only when the involution is the composition of the two
-conjugations, as stated. $\square$
+conjugations, as stated.
 
 **Remark (the involution is not the $L^2$ adjoint).** The involution entering the split is an
 algebra anti-involution, under which a $1$-vector changes sign; it is *not* the adjoint with respect
@@ -174,7 +174,7 @@ variables into the Cauchy kernel.
 computation is the computation $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$, in which the conjugate variable
 appears in the numerator and the kernel satisfies the Euclidean identities
 $\partial_{X_r}F_r=\delta$ and $\partial_{X_r}F_s+\partial_{X_s}F_r=0$ for $r\neq s$; these are
-stated in *The Hermitian Cauchy Integral and the Boundary Values*. $\square$
+stated in *The Hermitian Cauchy Integral and the Boundary Values*.
 
 **Remark (the complex reduction).** In the complex case $n=1$ of the preceding article the two
 Hermitian Dirac operators are conjugates in the same sense: the conjugate of
@@ -205,7 +205,7 @@ the monogenic one, the four equations being one equation read four times through
 coefficients are the signs of the Hadamard matrix with quaternionic weights — so its vanishing
 follows from theirs; the Laplacian is the sum of the four general products
 $\partial_{Z_r}\partial_{Z_r}^{\dagger}$, so it vanishes too. The strictness is that of a system
-over a single equation, and it is recorded in *Clifford Analysis*. $\square$
+over a single equation, and it is recorded in *Clifford Analysis*.
 
 **Remark (the axial and the slice structures).** For $n=1$ the four-operator system reduces to a
 five-dimensional structure in $\mathbb{H}\otimes_\mathbb{R}\mathrm{Cl}_{0,4}$; the axial description
@@ -246,7 +246,7 @@ conjugation of the values; the relation between the kernel of an operator and th
 adjoint is the one proved for $\partial_{Z_r}$ and $\partial_{Z_r}^{\dagger}$ in *The Hermitian
 Dirac Operator*, and the eight-operator kernel is the intersection, which the singular split does
 not preserve because the split $\mathcal{D}=\partial_{\underline z}+\partial_{\bar z}$ is a sum and
-not a direct sum on the kernel. $\square$
+not a direct sum on the kernel.
 
 **Remark (why the pair matters).** The Hermitian refinement carries the monogenic and the
 anti-monogenic classes together: the Cauchy kernel of the Hermitian theory is monogenic in the first

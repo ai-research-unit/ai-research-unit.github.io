@@ -84,7 +84,6 @@ $$
 
 **Proof.** Under the isomorphism $\Phi$, left multiplication becomes left multiplication by the matrix $P=\Phi(\tilde Q)$ on $M_2(\mathbb{C})$, which is $P\otimes I_2$ in the basis $E_{ij}$ of matrix units; its determinant is $(\det P)^2$. Right multiplication becomes right multiplication by $P$, which is $I_2\otimes P^T$ in the same basis, with the same determinant $(\det P)^2$. By the previous proposition $\det P=N(\tilde Q)$, so both determinants equal $N(\tilde Q)^2$.
 
-**Verification.** With $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$ in the basis $(e_0,e_1,e_2,e_3)$, the $2\times2$ representation gives
 $$
 \det\Phi(\tilde Q) = -0.180000-0.060000\,i = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big),
 $$

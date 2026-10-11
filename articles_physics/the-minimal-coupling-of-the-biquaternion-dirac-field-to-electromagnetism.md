@@ -256,14 +256,13 @@ where $\mathbf{E}_g = -\nabla\varphi_g - \partial_t\mathbf{A}_g$ and $\mathbf{B}
 
 **Domain.** The matter fields of the source are built from its own biquaternion Dirac field, in its own conventions, and are read off a Maxwell-like system that costs one of the field's four components: the constraint $\psi_0 = -c\beta\,\vec{\gamma}\cdot\vec{\psi}$ must be imposed, and the source's Appendix B gives the modified system that replaces it, with an extra real field $\Lambda=\beta\psi_0+c\vec{\gamma}\cdot\vec{\psi}$ appearing in all four equations. The identity is therefore stated on the constrained system, and it is a statement about the source's field strengths, not about the corpus's $\tilde{\Psi}$ or about its $\tilde{R}$.
 
-**Verified.** Recomputing, with the four equations of the source written with their residuals $r_5$, $r_6$, $r_7$ and $r_8$, the defect of the identity is exactly the residual combination
 
 $$
 \mathbf{B}_g\cdot\mathbf{B}_D - \frac{1}{c^2}\mathbf{E}_g\cdot\mathbf{E}_D - \mu_0\left(\mathbf{A}_g\cdot\mathbf{J}_D - \varphi_g\rho_D\right)
 = \frac{\hbar}{qc}\,\nabla\cdot\mathbf{r}_6 + \mathbf{A}_g\cdot\mathbf{r}_7 - \frac{\varphi_g}{c^2}\,r_5 - \frac{\hbar}{qc}\,\partial_t r_8 ,
 $$
 
-so that the identity holds exactly on the solution set of the four equations and not for arbitrary fields. Both this identity and the covariant reading $\tfrac12 F^{g}_{\mu\nu}F_{D}^{\mu\nu} = \mathbf{B}_g\cdot\mathbf{B}_D - c^{-2}\mathbf{E}_g\cdot\mathbf{E}_D$ were confirmed symbolically, exactly, and the residual identity was confirmed independently on $100$ random points of random plane-wave fields, where the two sides agreed to $1.3\times10^{-7}$, the finite-difference accuracy, while the defect itself reached $17$, so the identity is not vacuous.
+so that the identity holds exactly on the solution set of the four equations and not for arbitrary fields.
 
 **Not adopted.** The same source carries three further claims, and none of them is used here. It reports an inertial mass and a "magnetic mass" as separately conserved; its own continuity equation has a vanishing right-hand side, and the split into two separately vanishing continuity equations is declared — "the continuity equation dictates that it split" — rather than derived, and the source states that no further definition of the magnetic mass is given. It reads the photon as carrying a magnetic charge, quotes the product $q_mq_e = \hbar/2$ as Dirac's quantisation rule, and reads that product as an uncertainty relation between two behaviours of one photon; the condition of *The Magnetic Monopole in Biquaternionic Form* fixes the product $eg = 2\pi n\hbar c$ of a monopole charge and an electric charge, and says nothing about the state of a single photon. And it presents Wilczek's axion electrodynamics as a special case reached by matching the axion derivatives to the potentials, which is a matching and not a derivation. The corpus records the identity above and cites the source for that identity alone.
 

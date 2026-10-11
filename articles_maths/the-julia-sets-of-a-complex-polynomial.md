@@ -154,7 +154,7 @@ of Ledrappier and Young, where $h$ is the measure-theoretic entropy. For a polyn
 $$
 0 \mapsto i \mapsto -1+i \mapsto -i \mapsto -1+i,\qquad (f_i^2)'(-i) = 2(-i)\cdot 2(-1+i) = 4+4i ,
 $$
-of modulus $4\sqrt2 = 5.656854\ldots > 1$, so the critical point lands on a **repelling** two-cycle: $f_i$ is **not hyperbolic**, it is a **Misiurewicz** parameter, and its Julia set is a dendrite, of the tree-like type of *Fractal Trees and Dendrites*. The parameter $c = 1/4$ gives a parabolic fixed point: the point $z = 1/2$ satisfies $f_c(1/2) = 1/2$ and $f_c'(1/2) = 1$, so the multiplier is a root of unity and the critical orbit $0 \mapsto 1/4 \mapsto 5/16 \mapsto \cdots$ converges to $1/2$ without reaching it. The multiplier is exactly $1$ and the Julia set is a **parabolic** one, of the type treated in *The Fatou Components and the Classification of the Dynamics*. The values of the orbit and of the multiplier were recomputed.
+of modulus $4\sqrt2 = 5.656854\ldots > 1$, so the critical point lands on a **repelling** two-cycle: $f_i$ is **not hyperbolic**, it is a **Misiurewicz** parameter, and its Julia set is a dendrite, of the tree-like type of *Fractal Trees and Dendrites*. The parameter $c = 1/4$ gives a parabolic fixed point: the point $z = 1/2$ satisfies $f_c(1/2) = 1/2$ and $f_c'(1/2) = 1$, so the multiplier is a root of unity and the critical orbit $0 \mapsto 1/4 \mapsto 5/16 \mapsto \cdots$ converges to $1/2$ without reaching it. The multiplier is exactly $1$ and the Julia set is a **parabolic** one, of the type treated in *The Fatou Components and the Classification of the Dynamics*.
 
 ## Summary
 

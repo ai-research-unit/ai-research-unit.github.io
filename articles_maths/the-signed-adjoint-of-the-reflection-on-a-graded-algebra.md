@@ -19,7 +19,7 @@ $$
 $$
 (\Sigma^{\alpha}_{a,a^{-1}})^{\dagger}=\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)} .
 $$
-Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1})=\alpha(a)^{-1}=a$, so the adjoint is $\Sigma^{\alpha}_{a,a^{-1}}$. $\square$
+Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1})=\alpha(a)^{-1}=a$, so the adjoint is $\Sigma^{\alpha}_{a,a^{-1}}$.
 
 **Corollary.** The grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is self-adjoint, and the reflection $\Sigma^{\alpha}_{u,u^{-1}}$ attached to a unitary element $u$ of a star is self-adjoint; the reflections form a family all of whose members are self-adjoint, in contrast with the general sandwiches of *The Signed Adjoint Sandwich on a Graded Algebra*, whose adjoint reverses the elements.
 
@@ -29,7 +29,7 @@ Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1}
 
 **Theorem.** Let $a$ be a unit, and put $c=a\,\alpha(a)$. Then $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint if and only if $c$ is central. In particular every reflection ($c=1$) is self-adjoint, and the self-adjointness of a signed sandwich of reflection shape is exactly the centrality of its normalising element.
 
-**Proof.** By the adjoint formula, $(\Sigma^{\alpha}_{a,a^{-1}})^{\dagger}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which is the reflection-shaped sandwich $\Sigma^{\alpha}_{b,b^{-1}}$ with $b=\alpha(a)^{-1}$. By the injectivity-up-to-the-centre of the reflection correspondence of *Reflections as Signed Two-Sided Operators on a Graded Algebra*, two reflection-shaped signed sandwiches with the same shape coincide if and only if the corresponding elements differ by a central unit; here $b^{-1}a=\alpha(a)a=c$ must be central. Conversely, if $c$ is central then $b^{-1}a=c$ is central and the sandwiches coincide. $\square$
+**Proof.** By the adjoint formula, $(\Sigma^{\alpha}_{a,a^{-1}})^{\dagger}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which is the reflection-shaped sandwich $\Sigma^{\alpha}_{b,b^{-1}}$ with $b=\alpha(a)^{-1}$. By the injectivity-up-to-the-centre of the reflection correspondence of *Reflections as Signed Two-Sided Operators on a Graded Algebra*, two reflection-shaped signed sandwiches with the same shape coincide if and only if the corresponding elements differ by a central unit; here $b^{-1}a=\alpha(a)a=c$ must be central. Conversely, if $c$ is central then $b^{-1}a=c$ is central and the sandwiches coincide.
 
 **Corollary.** The self-adjointness of a reflection is therefore automatic, and the self-adjointness of the wider family of reflection-shaped sandwiches is a centrality condition on the product $a\alpha(a)$; the centrality is the algebraic form in which the normalisation $a\alpha(a)=1$ is relaxed.
 
@@ -39,7 +39,7 @@ Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1}
 
 **Theorem (failure of self-adjointness).** There exist graded algebras with a balanced α-compatible form and a unit $a$ for which $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint; concretely, in $A=\mathrm{End}_K(V)$ with the grade involution $\alpha(X)=JXJ^{-1}$, $J=\operatorname{diag}(1,-1)$, the trace form $\beta(X,Y)=\operatorname{tr}(XY)$ and the unit $a=\operatorname{diag}(1,2)$ one has $\alpha(a)=a$, hence $c=a\alpha(a)=\operatorname{diag}(1,4)$ non-central, and the conjugation $\Sigma^{\alpha}_{a,a^{-1}}(X)=aXa^{-1}$ has adjoint $\Sigma^{\alpha}_{a^{-1},a}(X)=a^{-1}Xa\neq aXa^{-1}$.
 
-**Proof.** The element $a=\operatorname{diag}(1,2)$ commutes with $J$, so $\alpha(a)=a$ and $c=\operatorname{diag}(1,4)$, which is not a scalar and therefore not central in $\mathsf{M}_2(K)$; by the criterion the sandwich is not self-adjoint. The adjoint is computed by the general formula as $\Sigma^{\alpha}_{a^{-1},a}$, and $a^{-1}Xa\neq aXa^{-1}$ for example at $X=\begin{pmatrix}0&1\\0&0\end{pmatrix}$. $\square$
+**Proof.** The element $a=\operatorname{diag}(1,2)$ commutes with $J$, so $\alpha(a)=a$ and $c=\operatorname{diag}(1,4)$, which is not a scalar and therefore not central in $\mathsf{M}_2(K)$; by the criterion the sandwich is not self-adjoint. The adjoint is computed by the general formula as $\Sigma^{\alpha}_{a^{-1},a}$, and $a^{-1}Xa\neq aXa^{-1}$ for example at $X=\begin{pmatrix}0&1\\0&0\end{pmatrix}$.
 
 **Corollary (the totally degenerate case).** When $a$ is not a unit the reflection-shaped sandwich does not exist; the related operator $\Sigma^{\alpha}_{a,a}$ is defined for every $a$ and satisfies $\Sigma^{\alpha}_{a,a}\circ\Sigma^{\alpha}_{a,a}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a)a}$, which is the zero operator when $a\alpha(a)=0$; in the exterior algebra an odd vector $v$ gives $\Sigma^{\alpha}_{v,v}=0$, a square-zero operator that is not a reflection, and the self-adjointness question for the reflection does not arise because the reflection is not defined.
 
@@ -47,7 +47,7 @@ Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1}
 
 **Proposition.** A reflection $S=\Sigma^{\alpha}_{a,a^{-1}}$ satisfies $S^{2}=\mathrm{id}$, so it decomposes $A$ into the two eigenspaces $A_\pm=\{x:Sx=\pm x\}$, the fixed part and the anti-fixed part; the decomposition is defined by the operator alone, and the two projectors $\tfrac12(\mathrm{id}\pm S)$ are the spectral projectors of $S$.
 
-**Proof.** An involutive operator is diagonalisable with eigenvalues $\pm1$ in characteristic not two, and the eigenspaces are the ranges of the spectral projectors $\tfrac12(\mathrm{id}\pm S)$; self-adjointness does not change the decomposition, which is determined by $S$. $\square$
+**Proof.** An involutive operator is diagonalisable with eigenvalues $\pm1$ in characteristic not two, and the eigenspaces are the ranges of the spectral projectors $\tfrac12(\mathrm{id}\pm S)$; self-adjointness does not change the decomposition, which is determined by $S$.
 
 **Corollary.** The fixed part of the grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is the even part and the anti-fixed part the odd part; the fixed part of a general reflection is the set of $x$ with $a\alpha(x)a^{-1}=x$, that is $\alpha(x)=a^{-1}xa$; and the two parts have the same dimension when the reflection is described by an even element and conjugate to $\alpha$.
 
@@ -57,7 +57,6 @@ Let $A=\mathrm{End}_K(V)$ with $J=\operatorname{diag}(1,-1)$, $\alpha(X)=JXJ$, a
 
 For the non-reflection unit $a=\operatorname{diag}(1,2)$ the sandwich $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint, as displayed; the adjoint is $\Sigma^{\alpha}_{a^{-1},a}$, the conjugation by $a^{-1}$, and the two differ on the elementary matrix $E_{12}$.
 
-**Verified.** Self-adjointness of $\Sigma^{\alpha}_{J,J}$ was checked on the four basis elements of $\mathsf{M}_2(K)$; the non-self-adjointness of the conjugation by $\operatorname{diag}(1,2)$ was checked by comparing $\beta(SX,Y)$ and $\beta(X,S^{\dagger}Y)$ at the basis element $X=E_{12}$, $Y=E_{11}$.
 
 ## Summary
 

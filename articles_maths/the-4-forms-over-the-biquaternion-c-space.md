@@ -70,7 +70,7 @@ $$
 \mathrm{Sc}\,f^{\mathrm a}(\tilde P,\tilde Q)=0 .
 $$
 
-*Proof.* For the two bilinear families the scalar part is commutative, $\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde Q\tilde P)$, so $\mathrm{Sc}\,f^{\mathrm s}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde P,\tilde Q)+\mathrm{Sc}\,f(\tilde Q,\tilde P)\bigr)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$ and $\mathrm{Sc}\,f^{\mathrm a}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde P,\tilde Q)-\mathrm{Sc}\,f(\tilde Q,\tilde P)\bigr)=0$. For the two sesquilinear families the exchange carries the conjugation of the value and the forms are Hermitian, $\mathrm{Sc}\,f(\tilde P,\tilde Q)=\overline{\mathrm{Sc}\,f(\tilde Q,\tilde P)}$, so $\mathrm{Sc}\,f^{\mathrm s}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde P,\tilde Q)+\overline{\mathrm{Sc}\,f(\tilde Q,\tilde P)}\bigr)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$ and $\mathrm{Sc}\,f^{\mathrm a}=0$. $\square$
+*Proof.* For the two bilinear families the scalar part is commutative, $\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde Q\tilde P)$, so $\mathrm{Sc}\,f^{\mathrm s}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde P,\tilde Q)+\mathrm{Sc}\,f(\tilde Q,\tilde P)\bigr)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$ and $\mathrm{Sc}\,f^{\mathrm a}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde P,\tilde Q)-\mathrm{Sc}\,f(\tilde Q,\tilde P)\bigr)=0$. For the two sesquilinear families the exchange carries the conjugation of the value and the forms are Hermitian, $\mathrm{Sc}\,f(\tilde P,\tilde Q)=\overline{\mathrm{Sc}\,f(\tilde Q,\tilde P)}$, so $\mathrm{Sc}\,f^{\mathrm s}=\tfrac12\bigl(\mathrm{Sc}\,f(\tilde P,\tilde Q)+\overline{\mathrm{Sc}\,f(\tilde Q,\tilde P)}\bigr)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$ and $\mathrm{Sc}\,f^{\mathrm a}=0$.
 
 **Proposition (the twelve operations carry four forms).** The twelve operations have exactly four distinct non-zero forms, the four above, each attained by two operations, and four operations have the zero form.
 
@@ -80,7 +80,7 @@ $$
 B=-(1+i),\qquad N=1+i,\qquad H=1-i,\qquad K=-(1-i),
 $$
 
-four different complex numbers, and no two of the four agree. $\square$
+four different complex numbers, and no two of the four agree.
 
 **Remark (the zero form is not a form of the count).** The four antisymmetric operations have the zero scalar part because their scalar part vanishes identically — $\mathbf P\times\mathbf Q$ for $\mathrm{APA}$ and $\mathrm{AQA}$, and the alternating forms of the two Hermitian forms for $\mathrm{APS}$ and $\mathrm{AQS}$. A vanishing scalar part is counted as no form rather than as a fifth form, so the twelve operations are counted four ways and no more.
 
@@ -144,7 +144,7 @@ The table separates the four by their bracket and pair, by their symmetry, by th
 
 **Proposition (no two of the four agree).** No two of the four forms are equal as functions of two elements.
 
-*Proof.* On $\tilde P=e_1$, $\tilde Q=e_1+ie_1$ the four values are $-(1+i)$, $1+i$, $1-i$ and $-(1-i)$, four different complex numbers, as in the proposition of §*From Twelve Operations to Four Forms*. $\square$
+*Proof.* On $\tilde P=e_1$, $\tilde Q=e_1+ie_1$ the four values are $-(1+i)$, $1+i$, $1-i$ and $-(1-i)$, four different complex numbers, as in the proposition of §*From Twelve Operations to Four Forms*.
 
 **The second slot gives the symmetry, the first slot the signature.** The four forms fall into two pairs by symmetry, $\{B,N\}$ bilinear and $\{H,K\}$ sesquilinear, and into two other pairs by Gram matrix, $\{B,K\}$ of Gram $\mathrm E$ and $\{N,H\}$ of Gram $\mathrm I_4$. The two divisions are independent, and their product is the four: each form is the intersection of one symmetry with one Gram matrix, which is the two-by-two grid of the two slots.
 

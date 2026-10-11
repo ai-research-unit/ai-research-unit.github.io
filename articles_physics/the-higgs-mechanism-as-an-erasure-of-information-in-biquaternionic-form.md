@@ -19,7 +19,7 @@ $$
 g = \mathrm{diag}(-1,+1,+1,+1)
 $$
 
-on these coordinates, the same convention in which the Maxwell density is $-\tfrac14 F_{\mu\nu}F^{\mu\nu}$. <!-- CONVENTION — metric levels: the $g$ written here is the LEVEL-2 $ict$-coordinate metric used for index contractions, not the LEVEL-3 Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ that defines the $\gamma^\mu$. The two are different objects at different levels; the appearance of $\mathrm{diag}(-1,+1,+1,+1)$ here is not a discrepancy with the Clifford convention and must not be "reconciled" with it. --> Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{\rho}\in\mathbb{M}_+$ with $\mathrm{Tr}\tilde{\rho} = 1$, parametrized by the Bloch vector, $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq1$; the relative entropy is $S(\tilde{\rho}\|\tilde{\sigma})$.
+on these coordinates, the same convention in which the Maxwell density is $-\tfrac14 F_{\mu\nu}F^{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{\rho}\in\mathbb{M}_+$ with $\mathrm{Tr}\tilde{\rho} = 1$, parametrized by the Bloch vector, $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq1$; the relative entropy is $S(\tilde{\rho}\|\tilde{\sigma})$.
 
 ## The Symmetric Phase and the Information in Its Vacuum
 

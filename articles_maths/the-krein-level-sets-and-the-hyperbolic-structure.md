@@ -111,7 +111,7 @@ the closed cone of *Indefinite Positivity and the Krein Cone of the Biquaternion
 
 ## The Definite Companion and the Twisted Sphere
 
-**Definition.** The **definite companion** of the general quaternionic sesquilinear form is the positive definite Hermitian form $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$ of *Biquaternion Norm and Invertibility*.
+**Definition.** The **definite companion** of the general quaternionic sesquilinear form is the positive definite Hermitian form $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$ of *Norm and Invertibility in the General Plain Algebra*.
 
 **Theorem (the definite levels are spheres).** The level sets of the definite companion are the Euclidean spheres $\{\|\tilde{Q}\|_E=r\}$, of real dimension $7$ and compact; the unit sphere $S^{7}$ is the boundary of the Euclidean unit ball, the only compact level set among those compared in *The Four Pairings of the Biquaternion Algebra*, §*The Level Sets Compared*, and the definite form is complete and positive definite.
 
@@ -195,6 +195,6 @@ The sign level sets of the general quaternionic sesquilinear form are the hyperb
 - *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for the symmetric space $U(1,3)/(U(1)\times U(3))$
 - *Biquaternion Rotations and Lorentz Transformations* (`articles_maths/biquaternion-rotations-and-lorentz-transformations.md`), for the boosts acting on the Minkowski hyperboloid
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the compact sphere used here for contrast
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the definite companion and its spheres
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the definite companion and its spheres
 - *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the comparison of the level sets and of the null sets of the four forms

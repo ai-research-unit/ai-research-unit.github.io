@@ -214,7 +214,7 @@ Third, the **equations** themselves are the corpus's Dirac-Maxwell package in th
 
 **Established, and recomputed.**
 
-- The spintensor degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals the representation degree $(2l+1)(2\dot l+1)$ at $l=k/2$, $\dot l=r/2$; for the proton's chain member $60\times59=3540$. Confirmed in the companion verification.
+- The spintensor degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals the representation degree $(2l+1)(2\dot l+1)$ at $l=k/2$, $\dot l=r/2$; for the proton's chain member $60\times59=3540$.
 - The determinant factorisation $D(p)=\tilde D(s^2)$, the relation $m_i=\mu_0\lambda_i$ (and $m_i=\mu_0\lambda_i\dot\lambda_i$ for $\tau^{l\dot l}$), and the $\pm$ pairing of the eigenvalues of $\Gamma^0$; reproduced in outline.
 - The bivector metric's $(3,3)$ signature, matching the six-dimensional Lorentz parameter space's boost/rotation split.
 - The Dirac-limit generators reducing to the Pauli matrices at $c_{\frac12,\frac12}=2$; reproduced from the printed matrices.

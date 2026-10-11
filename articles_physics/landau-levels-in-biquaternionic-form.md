@@ -194,7 +194,6 @@ is the quantum length scale of the problem, the radius of the ground-state orbit
 
 For orientation, a laboratory field of $1$ T gives, in SI units where $\omega_c=|q|B/m$ and $\ell_B=\sqrt{\hbar/|q|B}$ (no factor of $c$), a magnetic length of $25.66$ nm, a cyclotron frequency of $1.759\times10^{11}$ rad s$^{-1}$, and a cyclotron quantum $\hbar\omega_c=0.116$ meV, with flux quantum $\Phi_0=h/|q|=4.136\times10^{-15}$ Wb. The three scales are all central real scalars; their values are quoted for the electron charge and mass and were recomputed from the defining formulas.
 
-<!-- CONVENTION — Landau units: the main text of this article is Gaussian, with \omega_c = |q|B/mc and \ell_B^2 = \hbar c/|q|B and \Phi_0 = hc/|q|. The laboratory numbers just above are SI, with \ell_B = \sqrt{\hbar/|q|B} and no c, and are labelled as such. A reviewer must not "reconcile" the two systems by inserting or removing a factor of c. -->
 
 ## Degeneracy and the Flux Quantum
 

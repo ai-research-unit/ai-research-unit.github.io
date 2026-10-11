@@ -21,7 +21,7 @@ and $T$ is **bounded** when $\lVert T\rVert < +\infty$. The bounded operators fo
 
 **Proposition (boundedness is continuity).** For $T \in \operatorname{End}(A)$ the following are equivalent: $T$ is bounded; $T$ is continuous; $T$ is continuous at $0$; there is $C \geq 0$ with $\lVert Tx\rVert \leq C\lVert x\rVert$ for all $x$. Consequently $B(A)$ is exactly the algebra of continuous $\mathbb{K}$-linear operators on $A$, and $\lVert T\rVert$ is the least such $C$.
 
-**Proof.** If $T$ is bounded with norm $M$ then $\lVert Tx - Ty\rVert \leq M\lVert x - y\rVert$, so $T$ is Lipschitz and continuous. Conversely a continuous $T$ is continuous at $0$, so there is a neighbourhood of $0$ on which $\lVert Tx\rVert \leq 1$; by the definition of the topology of a normed space this neighbourhood contains a ball $B(0,r)$, whence $\lVert Tx\rVert \leq 1$ whenever $\lVert x\rVert \leq r$ and $\lVert Tx\rVert \leq r^{-1}\lVert x\rVert$ for all $x$ by scaling. The last two conditions are recastings of the first, and the least constant is the supremum in the definition. $\square$
+**Proof.** If $T$ is bounded with norm $M$ then $\lVert Tx - Ty\rVert \leq M\lVert x - y\rVert$, so $T$ is Lipschitz and continuous. Conversely a continuous $T$ is continuous at $0$, so there is a neighbourhood of $0$ on which $\lVert Tx\rVert \leq 1$; by the definition of the topology of a normed space this neighbourhood contains a ball $B(0,r)$, whence $\lVert Tx\rVert \leq 1$ whenever $\lVert x\rVert \leq r$ and $\lVert Tx\rVert \leq r^{-1}\lVert x\rVert$ for all $x$ by scaling. The last two conditions are recastings of the first, and the least constant is the supremum in the definition.
 
 **Theorem ($B(A)$ is a Banach algebra).** $B(A)$ is a unital algebra under the pointwise linear structure, the composition of operators and the identity $\mathrm{id}$, and
 
@@ -31,11 +31,11 @@ $$
 
 so the operator norm is a submultiplicative norm on $B(A)$; $B(A)$ is complete for it, hence a unital Banach algebra, and the multiplication of $B(A)$ is continuous.
 
-**Proof.** Composition is bilinear and associative, and $\mathrm{id}$ is its unit. Submultiplicativity is $\lVert STx\rVert \leq \lVert S\rVert\lVert Tx\rVert \leq \lVert S\rVert\lVert T\rVert\lVert x\rVert$. For completeness, let $(T_n)$ be Cauchy in $B(A)$; then $(T_nx)$ is Cauchy in the Banach space $A$ for every $x$, so $Tx = \lim_n T_nx$ defines a linear $T$, and the uniform bound $\lVert T_n\rVert \leq M$ transfers to $\lVert Tx\rVert \leq M\lVert x\rVert$, so $T$ is bounded, and $\lVert T - T_n\rVert \leq \sup_{m \geq n}\lVert T_m - T_n\rVert \to 0$. Continuity of the product is submultiplicativity. $\square$
+**Proof.** Composition is bilinear and associative, and $\mathrm{id}$ is its unit. Submultiplicativity is $\lVert STx\rVert \leq \lVert S\rVert\lVert Tx\rVert \leq \lVert S\rVert\lVert T\rVert\lVert x\rVert$. For completeness, let $(T_n)$ be Cauchy in $B(A)$; then $(T_nx)$ is Cauchy in the Banach space $A$ for every $x$, so $Tx = \lim_n T_nx$ defines a linear $T$, and the uniform bound $\lVert T_n\rVert \leq M$ transfers to $\lVert Tx\rVert \leq M\lVert x\rVert$, so $T$ is bounded, and $\lVert T - T_n\rVert \leq \sup_{m \geq n}\lVert T_m - T_n\rVert \to 0$. Continuity of the product is submultiplicativity.
 
 **Corollary (the closed graph and the open map).** A linear map $T : A \to A$ is bounded if and only if its graph is closed in $A \times A$; a bounded bijection $T \in B(A)$ has bounded inverse, and its inverse is again in $B(A)$.
 
-**Proof.** A bounded map has closed graph because $x_n \to x$ and $Tx_n \to y$ give $Tx_n \to Tx = y$ by continuity. Conversely a linear map with closed graph is bounded by the closed graph theorem of *Normed and Banach Spaces*, whose hypotheses are the completeness of $A$. A bounded bijection is continuous, surjective and injective, so its inverse is bounded by the open mapping theorem. $\square$
+**Proof.** A bounded map has closed graph because $x_n \to x$ and $Tx_n \to y$ give $Tx_n \to Tx = y$ by continuity. Conversely a linear map with closed graph is bounded by the closed graph theorem of *Normed and Banach Spaces*, whose hypotheses are the completeness of $A$. A bounded bijection is continuous, surjective and injective, so its inverse is bounded by the open mapping theorem.
 
 **Remark (the unit group of the operator algebra).** An operator $T \in B(A)$ is invertible in the algebra $B(A)$ exactly when it is a bijection, and then $T^{-1} \in B(A)$ by the corollary; the unit group of $B(A)$ is therefore the group of bounded bijections of $A$, and the spectrum of $T$ in $B(A)$ is the set of $\lambda$ for which $T - \lambda\,\mathrm{id}$ is not a bijection.
 
@@ -55,7 +55,7 @@ $$
 
 and when $A$ is unital both inequalities are equalities, $\lVert L_a\rVert = \lVert R_a\rVert = \lVert a\rVert$.
 
-**Proof.** $\lVert L_ax\rVert = \lVert ax\rVert \leq \lVert a\rVert\lVert x\rVert$ by submultiplicativity, so $L_a$ is bounded with norm at most $\lVert a\rVert$, and likewise on the right. If $A$ has a unit then $L_a(1) = a$ and $R_a(1) = a$, so $\lVert L_a\rVert \geq \lVert a\rVert$ and $\lVert R_a\rVert \geq \lVert a\rVert$ on the unit vector $1/\lVert 1\rVert$. $\square$
+**Proof.** $\lVert L_ax\rVert = \lVert ax\rVert \leq \lVert a\rVert\lVert x\rVert$ by submultiplicativity, so $L_a$ is bounded with norm at most $\lVert a\rVert$, and likewise on the right. If $A$ has a unit then $L_a(1) = a$ and $R_a(1) = a$, so $\lVert L_a\rVert \geq \lVert a\rVert$ and $\lVert R_a\rVert \geq \lVert a\rVert$ on the unit vector $1/\lVert 1\rVert$.
 
 **Proposition (composition and commutation).** For all $a,b \in A$,
 
@@ -65,7 +65,7 @@ $$
 
 Hence $a \mapsto L_a$ is a unital algebra homomorphism and $a \mapsto R_a$ a unital anti-homomorphism, and the two families commute.
 
-**Proof.** $L_a(L_bx) = a(bx) = (ab)x = L_{ab}x$; $R_a(R_bx) = (xb)a = x(ba) = R_{ba}x$; and $L_aR_bx = a(xb) = (ax)b = R_bL_ax$ by associativity. $\square$
+**Proof.** $L_a(L_bx) = a(bx) = (ab)x = L_{ab}x$; $R_a(R_bx) = (xb)a = x(ba) = R_{ba}x$; and $L_aR_bx = a(xb) = (ax)b = R_bL_ax$ by associativity.
 
 **Corollary (the regular representations).** The maps
 
@@ -75,11 +75,11 @@ $$
 
 are a bounded unital algebra homomorphism and a bounded unital algebra anti-homomorphism, with $\lVert\lambda\rVert \leq 1$ and $\lVert\rho\rVert \leq 1$; when $A$ is unital both are isometric, and both are injective, since $L_a = 0$ or $R_a = 0$ forces $a = L_a(1) = 0$ or $a = R_a(1) = 0$.
 
-**Proof.** The homomorphism properties are the composition laws, and the norm bound is the proposition. Injectivity on a unital algebra is evaluation at $1$, and isometry then follows from the norm equalities. $\square$
+**Proof.** The homomorphism properties are the composition laws, and the norm bound is the proposition. Injectivity on a unital algebra is evaluation at $1$, and isometry then follows from the norm equalities.
 
 **Proposition (invertibility and the units).** For $a \in A$ the operators $L_a$ and $R_a$ are invertible in $B(A)$ if and only if $a \in A^\times$, and then $L_a^{-1} = L_{a^{-1}}$ and $R_a^{-1} = R_{a^{-1}}$. If $L_a$ or $R_a$ is a bijection of $A$ then $a$ is a unit.
 
-**Proof.** If $a$ is a unit then $L_aL_{a^{-1}} = L_{aa^{-1}} = L_1 = \mathrm{id}$ and $L_{a^{-1}}L_a = \mathrm{id}$, so $L_a$ is invertible with the stated inverse, and likewise on the right. Conversely if $L_a$ is surjective then $a = L_a(1)$ lies in $LA = A$, so $a$ has a right inverse $b$ with $ab = 1$; if $L_a$ is injective then $ax = 0$ forces $x = 0$, so $a$ is not a left zero divisor, and then $ba = 1$ from $(ba - 1)a = a(ba) - a = a - a = 0$; hence $a$ is a unit. The right-handed argument is the mirror image. $\square$
+**Proof.** If $a$ is a unit then $L_aL_{a^{-1}} = L_{aa^{-1}} = L_1 = \mathrm{id}$ and $L_{a^{-1}}L_a = \mathrm{id}$, so $L_a$ is invertible with the stated inverse, and likewise on the right. Conversely if $L_a$ is surjective then $a = L_a(1)$ lies in $LA = A$, so $a$ has a right inverse $b$ with $ab = 1$; if $L_a$ is injective then $ax = 0$ forces $x = 0$, so $a$ is not a left zero divisor, and then $ba = 1$ from $(ba - 1)a = a(ba) - a = a - a = 0$; hence $a$ is a unit. The right-handed argument is the mirror image.
 
 ## The Multipliers
 
@@ -91,11 +91,11 @@ $$
 
 **Proposition (the multiplications are multipliers).** For every $a$ the operator $L_a$ is a left multiplier and $R_a$ a right multiplier, and $(L_c,R_c)$ is a double centraliser for every $c$; moreover $L_a$ is a left multiplier and $R_b$ a right multiplier for every pair $a,b$, with the centralising relation $a\,L_c(b) = R_c(a)\,b$.
 
-**Proof.** $L_c(ab) = c(ab) = (ca)b = L_c(a)b$ and $R_c(ab) = (ab)c = a(bc) = aR_c(b)$; the centralising relation is $a(cb) = (ac)b$. $\square$
+**Proof.** $L_c(ab) = c(ab) = (ca)b = L_c(a)b$ and $R_c(ab) = (ab)c = a(bc) = aR_c(b)$; the centralising relation is $a(cb) = (ac)b$.
 
 **Proposition (the unital case).** If $A$ is unital then every left multiplier is a left multiplication and every right multiplier is a right multiplication, $T = L_{T(1)}$ and $S = R_{S(1)}$, the centralising relation forces $T(1) = S(1)$, and the double centralisers are exactly the pairs $(L_c,R_c)$ with $c \in A$. Hence the map $a \mapsto (L_a,R_a)$ is a bijection of $A$ onto the double centralisers, and it is an algebra isomorphism for the algebra structure fixed in *Multipliers of a Banach Algebra*.
 
-**Proof.** A left multiplier satisfies $T(b) = T(1b) = T(1)b = L_{T(1)}(b)$, and a right multiplier $S(b) = S(b1) = bS(1) = R_{S(1)}(b)$. Setting $a = b = 1$ in $aT(b) = S(a)b$ gives $T(1) = S(1) = c$, so the pair is $(L_c,R_c)$; conversely every such pair is a double centraliser by the previous proposition, and $c \mapsto (L_c,R_c)$ is injective because $L_c(1) = c$. $\square$
+**Proof.** A left multiplier satisfies $T(b) = T(1b) = T(1)b = L_{T(1)}(b)$, and a right multiplier $S(b) = S(b1) = bS(1) = R_{S(1)}(b)$. Setting $a = b = 1$ in $aT(b) = S(a)b$ gives $T(1) = S(1) = c$, so the pair is $(L_c,R_c)$; conversely every such pair is a double centraliser by the previous proposition, and $c \mapsto (L_c,R_c)$ is injective because $L_c(1) = c$.
 
 **Remark (the boundary of the section).** On a non-unital algebra the multipliers are genuinely more than the multiplications, and they carry a Banach-algebra structure of their own, the **multiplier algebra** $M(A)$, whose product is the composition of double centralisers and whose topology of interest is the strict topology; both are the subject of *Multipliers of a Banach Algebra*, later in this group. The present article fixes only the operator-theoretic definition and the unital identification, and it uses no strict topology.
 
@@ -117,7 +117,7 @@ $$
 
 with equality not asserted; moreover $\operatorname{ad}_x = L_x - R_x$.
 
-**Proof.** $\operatorname{ad}_x(ab) = x(ab) - (ab)x = (xa - ax)b + a(xb - bx) = \operatorname{ad}_x(a)b + a\operatorname{ad}_x(b)$ by associativity, and $\operatorname{ad}_x = L_x - R_x$ is bounded with norm at most $\lVert L_x\rVert + \lVert R_x\rVert \leq 2\lVert x\rVert$. $\square$
+**Proof.** $\operatorname{ad}_x(ab) = x(ab) - (ab)x = (xa - ax)b + a(xb - bx) = \operatorname{ad}_x(a)b + a\operatorname{ad}_x(b)$ by associativity, and $\operatorname{ad}_x = L_x - R_x$ is bounded with norm at most $\lVert L_x\rVert + \lVert R_x\rVert \leq 2\lVert x\rVert$.
 
 **Proposition (the Leibniz calculus).** A derivation $D$ satisfies $D(1) = 0$ when $A$ is unital, $D(a^n) = \sum_{i=0}^{n-1} a^i\,D(a)\,a^{n-1-i}$ for $n \geq 1$, and $D(a^{-1}) = -a^{-1}D(a)a^{-1}$ for $a \in A^\times$. The inner derivations satisfy
 
@@ -127,11 +127,11 @@ $$
 
 so $x \mapsto \operatorname{ad}_x$ is a homomorphism of the commutator algebra of $A$ into the commutator algebra of $B(A)$.
 
-**Proof.** $D(1) = D(1 \cdot 1) = D(1) + D(1)$. The power rule is induction: $D(a^{n+1}) = D(a^n)a + a^nD(a) = \sum_{i=0}^{n-1} a^iD(a)a^{n-i} + a^nD(a)$, which is the stated sum for $n+1$. For the inverse, $0 = D(aa^{-1}) = D(a)a^{-1} + aD(a^{-1})$ gives $D(a^{-1}) = -a^{-1}D(a)a^{-1}$. Finally $\operatorname{ad}_{[x,y]} = \operatorname{ad}(xy - yx) = [L_{xy} - R_{xy}] - [L_{yx} - R_{yx}] = \operatorname{ad}_x\operatorname{ad}_y - \operatorname{ad}_y\operatorname{ad}_x$ by the composition laws. $\square$
+**Proof.** $D(1) = D(1 \cdot 1) = D(1) + D(1)$. The power rule is induction: $D(a^{n+1}) = D(a^n)a + a^nD(a) = \sum_{i=0}^{n-1} a^iD(a)a^{n-i} + a^nD(a)$, which is the stated sum for $n+1$. For the inverse, $0 = D(aa^{-1}) = D(a)a^{-1} + aD(a^{-1})$ gives $D(a^{-1}) = -a^{-1}D(a)a^{-1}$. Finally $\operatorname{ad}_{[x,y]} = \operatorname{ad}(xy - yx) = [L_{xy} - R_{xy}] - [L_{yx} - R_{yx}] = \operatorname{ad}_x\operatorname{ad}_y - \operatorname{ad}_y\operatorname{ad}_x$ by the composition laws.
 
 **Proposition (the space of derivations).** The bounded derivations of $A$ form a closed linear subspace $\operatorname{Der}(A)$ of $B(A)$, and a Lie subalgebra under the commutator bracket $[D_1,D_2] = D_1D_2 - D_2D_1$; the inner derivations form a linear subspace $\operatorname{Inn}(A)$ and a Lie ideal of $\operatorname{Der}(A)$.
 
-**Proof.** If $D_1,D_2$ are derivations then so is $D_1 - D_2$ and so is $[D_1,D_2]$: $[D_1,D_2](ab) = D_1(D_2(ab)) - D_2(D_1(ab))$, expanded, gives $[D_1,D_2](a)b + a[D_1,D_2](b)$. If $D_n \to D$ in $B(A)$ and each $D_n$ is a derivation, then $D(ab) = \lim D_n(ab) = \lim(D_n(a)b + aD_n(b)) = D(a)b + aD(b)$, so the derivation property is closed; $\operatorname{Der}(A)$ is closed in the Banach space $B(A)$. The inner derivations are in $\operatorname{Der}(A)$ and are an ideal by $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x,\operatorname{ad}_y]$ and $[D,\operatorname{ad}_x] = \operatorname{ad}_{D(x)}$. $\square$
+**Proof.** If $D_1,D_2$ are derivations then so is $D_1 - D_2$ and so is $[D_1,D_2]$: $[D_1,D_2](ab) = D_1(D_2(ab)) - D_2(D_1(ab))$, expanded, gives $[D_1,D_2](a)b + a[D_1,D_2](b)$. If $D_n \to D$ in $B(A)$ and each $D_n$ is a derivation, then $D(ab) = \lim D_n(ab) = \lim(D_n(a)b + aD_n(b)) = D(a)b + aD(b)$, so the derivation property is closed; $\operatorname{Der}(A)$ is closed in the Banach space $B(A)$. The inner derivations are in $\operatorname{Der}(A)$ and are an ideal by $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x,\operatorname{ad}_y]$ and $[D,\operatorname{ad}_x] = \operatorname{ad}_{D(x)}$.
 
 **Theorem (the exponential of a bounded derivation).** Let $D \in \operatorname{Der}(A) \cap B(A)$ be a bounded derivation. Then the series $\exp D = \sum_{n \geq 0} D^n/n!$ converges in the Banach algebra $B(A)$, its sum is a bounded algebra automorphism of $A$, and
 
@@ -141,7 +141,7 @@ $$
 
 Hence the exponential carries the bounded derivations into the automorphism group $\operatorname{Aut}(A)$.
 
-**Proof.** The series converges absolutely because $\lVert D^n\rVert \leq \lVert D\rVert^n$ and $\sum\lVert D\rVert^n/n!$ is finite; $B(A)$ is complete. That $\exp D$ is multiplicative is the Leibniz rule reorganized: $D^n(ab) = \sum_{i=0}^{n} \binom{n}{i} D^i(a)D^{n-i}(b)$, which is the binomial theorem for the derivation, and summing against $1/n!$ gives $(\exp D)(ab) = (\exp Da)(\exp Db)$. The identity $\exp(D)\exp(-D) = \mathrm{id}$ is the Cauchy product and $\exp(0) = \mathrm{id}$. $\square$
+**Proof.** The series converges absolutely because $\lVert D^n\rVert \leq \lVert D\rVert^n$ and $\sum\lVert D\rVert^n/n!$ is finite; $B(A)$ is complete. That $\exp D$ is multiplicative is the Leibniz rule reorganized: $D^n(ab) = \sum_{i=0}^{n} \binom{n}{i} D^i(a)D^{n-i}(b)$, which is the binomial theorem for the derivation, and summing against $1/n!$ gives $(\exp D)(ab) = (\exp Da)(\exp Db)$. The identity $\exp(D)\exp(-D) = \mathrm{id}$ is the Cauchy product and $\exp(0) = \mathrm{id}$.
 
 **Example (the matrix algebra).** On $A = M_n(\mathbb{K})$ every derivation is inner, $D = \operatorname{ad}_X$ for some $X$, and the exponential of $\operatorname{ad}_X$ is the inner automorphism $Y \mapsto e^{X}Ye^{-X}$, whose inverse is conjugation by $e^{-X}$; the derivation $\operatorname{ad}_X$ is the operator $Y \mapsto XY - YX$ of commutator with $X$.
 
@@ -157,7 +157,7 @@ $$
 
 **Proposition (the separating space is closed).** $\mathfrak{S}(T)$ is a linear subspace of $A$, closed in $A$, and $T$ is bounded if and only if $\mathfrak{S}(T) = \{0\}$.
 
-**Proof.** If $y_n \in \mathfrak{S}(T)$ and $y_n \to y$, pick $x_n \to 0$ with $Tx_n \to y_n$, and a diagonal subsequence $x_{n_k} \to 0$ with $Tx_{n_k} \to y$; hence $y \in \mathfrak{S}(T)$ and the space is closed. If $T$ is bounded then $x_n \to 0$ gives $Tx_n \to 0$, so $\mathfrak{S}(T) = \{0\}$. If $\mathfrak{S}(T) = \{0\}$ then $T$ is bounded: otherwise there are $x_n$ with $\lVert x_n\rVert = 1$ and $\lVert Tx_n\rVert \to \infty$, and $x_n/\lVert Tx_n\rVert \to 0$ while $T(x_n/\lVert Tx_n\rVert)$ has norm $1$, whose limit points lie in $\mathfrak{S}(T)$ and are nonzero. $\square$
+**Proof.** If $y_n \in \mathfrak{S}(T)$ and $y_n \to y$, pick $x_n \to 0$ with $Tx_n \to y_n$, and a diagonal subsequence $x_{n_k} \to 0$ with $Tx_{n_k} \to y$; hence $y \in \mathfrak{S}(T)$ and the space is closed. If $T$ is bounded then $x_n \to 0$ gives $Tx_n \to 0$, so $\mathfrak{S}(T) = \{0\}$. If $\mathfrak{S}(T) = \{0\}$ then $T$ is bounded: otherwise there are $x_n$ with $\lVert x_n\rVert = 1$ and $\lVert Tx_n\rVert \to \infty$, and $x_n/\lVert Tx_n\rVert \to 0$ while $T(x_n/\lVert Tx_n\rVert)$ has norm $1$, whose limit points lie in $\mathfrak{S}(T)$ and are nonzero.
 
 **Theorem (characters are continuous).** Let $A$ be a unital Banach algebra and let $\chi : A \to \mathbb{K}$ be a nonzero multiplicative linear functional, $\chi(ab) = \chi(a)\chi(b)$ and $\chi(1) = 1$. Then $\chi$ is bounded, with $\lVert\chi\rVert = 1$, and
 
@@ -165,15 +165,15 @@ $$
 \lvert \chi(a)\rvert \leq \lVert a\rVert \qquad \text{for all } a \in A .
 $$
 
-**Proof.** Suppose $\lvert\chi(a)\rvert > \lVert a\rVert$ for some $a$. Then $u = a/\chi(a)$ has $\lVert u\rVert < 1$, so $1 - u$ is invertible, by the Neumann series of *Topological Algebras and Banach Algebras*; applying $\chi$ gives $\chi(1 - u) = 1 - 1 = 0$, and a multiplicative functional sends a unit to a nonzero scalar, since $\chi(v)\chi(v^{-1}) = 1$; contradiction. Hence $\lvert\chi(a)\rvert \leq \lVert a\rVert$, and $\chi(1) = 1$ makes the norm exactly $1$. $\square$
+**Proof.** Suppose $\lvert\chi(a)\rvert > \lVert a\rVert$ for some $a$. Then $u = a/\chi(a)$ has $\lVert u\rVert < 1$, so $1 - u$ is invertible, by the Neumann series of *Topological Algebras and Banach Algebras*; applying $\chi$ gives $\chi(1 - u) = 1 - 1 = 0$, and a multiplicative functional sends a unit to a nonzero scalar, since $\chi(v)\chi(v^{-1}) = 1$; contradiction. Hence $\lvert\chi(a)\rvert \leq \lVert a\rVert$, and $\chi(1) = 1$ makes the norm exactly $1$.
 
 **Corollary (the character space).** The set $\operatorname{Max}(A)$ of nonzero multiplicative functionals of a unital commutative Banach algebra $A$ is contained in the unit sphere of the dual $A'$ and is closed in the weak-$*$ topology; it is the Gelfand spectrum of $A$, and the evaluation $a \mapsto \hat a$, $\hat a(\chi) = \chi(a)$, is the Gelfand transform, the subject of *The Gelfand Transform as an Operator* later in this group.
 
-**Proof.** Boundedness is the theorem, so $\operatorname{Max}(A) \subseteq A'$; the relations $\chi(ab) = \chi(a)\chi(b)$ and $\chi(1) = 1$ are closed conditions under pointwise convergence, so a weak-$*$ limit of characters is a character, and $\operatorname{Max}(A)$ is closed. $\square$
+**Proof.** Boundedness is the theorem, so $\operatorname{Max}(A) \subseteq A'$; the relations $\chi(ab) = \chi(a)\chi(b)$ and $\chi(1) = 1$ are closed conditions under pointwise convergence, so a weak-$*$ limit of characters is a character, and $\operatorname{Max}(A)$ is closed.
 
 **Theorem (automatic continuity of derivations, Johnson–Sinclair; standard).** Every derivation of a semisimple Banach algebra is continuous, hence bounded, and every derivation of a $\mathrm{C}^*$-algebra is continuous.
 
-**Proof (sketch).** For a derivation $D$ the separating space $\mathfrak{S}(D)$ is a two-sided ideal, because $D$ satisfies the Leibniz rule: if $x_n \to 0$ and $Dx_n \to y$ then for fixed $a$ one has $ax_n \to 0$ and $D(ax_n) = D(a)x_n + aDx_n \to ay$, and $x_na \to 0$ with $D(x_na) = D(x_n)a + x_nD(a) \to ya$; so $\mathfrak{S}(D)$ absorbs multiplication on both sides. For a semisimple algebra the radical vanishes, and one shows $\mathfrak{S}(D)$ is nilpotent, hence zero; for a $\mathrm{C}^*$-algebra the same argument with the closed ideal structure gives $\mathfrak{S}(D) = \{0\}$. The details, due to Johnson and Sinclair, are standard and are quoted here. $\square$
+**Proof (sketch).** For a derivation $D$ the separating space $\mathfrak{S}(D)$ is a two-sided ideal, because $D$ satisfies the Leibniz rule: if $x_n \to 0$ and $Dx_n \to y$ then for fixed $a$ one has $ax_n \to 0$ and $D(ax_n) = D(a)x_n + aDx_n \to ay$, and $x_na \to 0$ with $D(x_na) = D(x_n)a + x_nD(a) \to ya$; so $\mathfrak{S}(D)$ absorbs multiplication on both sides. For a semisimple algebra the radical vanishes, and one shows $\mathfrak{S}(D)$ is nilpotent, hence zero; for a $\mathrm{C}^*$-algebra the same argument with the closed ideal structure gives $\mathfrak{S}(D) = \{0\}$. The details, due to Johnson and Sinclair, are standard and are quoted here.
 
 **Remark (what is not automatic).** The continuity of characters does not extend to every homomorphism. A unital algebra homomorphism $\varphi : A \to B$ between Banach algebras need not be continuous when $B$ is only a Banach algebra, even a commutative one: Dales constructed discontinuous homomorphisms from certain $\mathrm{C}^*$-algebras into commutative Banach algebras. The positive statements are the character theorem above, the continuity of derivations, and the contractivity of a ${}^*$-homomorphism of $\mathrm{C}^*$-algebras recorded in *Operators on a $\mathrm{C}^*$-Algebra*; the general homomorphism problem is named here and deferred, not used.
 

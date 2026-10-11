@@ -41,7 +41,7 @@ $$
 $$
 one pair per line, so that every product of two distinct imaginary units is fixed once and only once. On each line $(a,b,c)$ the three units act as $-i$ times the Pauli matrices: $e_ae_b=e_c$, $e_be_c=e_a$, $e_ce_a=e_b$.
 
-*Proof.* Direct verification: the shift rule carries a line to a line (indices modulo seven), the doubling rule likewise, and the two rules are jointly consistent with $e_1e_2=e_4$ and with the relation $e_ie_j=-e_je_i$. The claims about the lines were checked exhaustively on the $21$ unordered pairs, with no violation.
+*Proof.* Direct verification: the shift rule carries a line to a line (indices modulo seven), the doubling rule likewise, and the two rules are jointly consistent with $e_1e_2=e_4$ and with the relation $e_ie_j=-e_je_i$.
 
 **Example.** $e_6e_1=e_5$, $e_1e_5=e_6$, $e_5e_6=e_1$, $e_4e_1=e_2$, $e_1e_2=e_4$, and $e_1e_2e_3e_4e_5e_6=e_7$.
 

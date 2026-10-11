@@ -28,7 +28,6 @@ $$
 $$
 
 with $\gamma_5=\mathrm{diag}(-I_2,I_2)$ and the spacetime metric of the $ict$ gradient $\eta=-g$. The Clifford isomorphism identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$ by $e_1\mapsto\gamma^2\gamma^3$, $e_2\mapsto\gamma^3\gamma^1$, $e_3\mapsto\gamma^1\gamma^2$ and $i\mapsto\omega=\gamma^0\gamma^1\gamma^2\gamma^3$, so that $\gamma_5=i\omega$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
-<!-- CONVENTION — the linear mass term: the massive biquaternion fermion is the chirality-off-diagonal pair ∇̃Ψ_R = mΨ_L, ∇̃^♮Ψ_L = mΨ_R, and the axial transformation Ψ → e^{iαγ5}Ψ is the broken one. The algebra's antilinear real structure ♭ = −† is a separate object and is not this article's mass. Do not replace the linear pair by an antilinear single-field equation. -->
 
 The framework results used here are those of the companion articles:
 

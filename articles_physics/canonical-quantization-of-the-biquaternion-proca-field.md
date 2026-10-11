@@ -56,7 +56,6 @@ $$
 
 whose massless case $\tilde{\nabla}\tilde{F}=0$ is the source-free Maxwell equation of the companion article. The right-hand side $\mu^2\tilde{A}$ lies in the material sector, as does the left-hand side, so the biquaternion equation is sector-consistent: the algebra does not mix $\mathbb{M}_-$ with $\mathbb{M}_+$.
 
-<!-- CONVENTION — Proca mass term and the field equation: the signs of this article are a matched chain in the series ict metric eta = diag(-1,+1,+1,+1) with Box = d_{ict}^2 + Delta = grad^2 - d_t^2. The Lagrangian is L = -(1/4) F F - (1/2) mu^2 A A, the field equation is d_mu F^{mu nu} - mu^2 A^nu = 0, its biquaternion form is nabla-tilde F-tilde = + mu^2 A-tilde, and in the Lorenz gauge it reduces to (Box - mu^2) A-tilde = 0, the same sign as the companion Klein–Gordon equation. The mass term is the central real scalar times the biquaternion norm of the material four-vector. Because the series ict Box is the negative of the mostly-minus Box, the same physics is written in a mostly-minus text with opposite signs on the mass term; do not "reconcile" the two forms, and check the local definition of Box before changing any sign here. -->
 
 ### The Lorenz Condition Is a Consequence
 
@@ -113,7 +112,6 @@ $$
 
 in the components appropriate to the series metric. The minus sign in the spatial entry is forced by transversality: with the plus sign the contraction $p^\mu\varepsilon^{L}_\mu$ is $2\omega_{\mathbf{p}}|\mathbf{p}|/\mu$ instead of zero.
 
-<!-- CONVENTION — Proca polarisation vectors: the components displayed are the four components of the polarisation vector, and the contraction used throughout is the plain p^mu eps_mu = omega_p eps_0 + p.eps of those components. With the series coordinate metric eta = diag(-1,+1,+1,+1), the series momentum invariant p^2 = omega_p^2 - |p|^2 (so that p^mu p_mu = -p^2 = -mu^2 on shell, as in the conventions of the gauge-field companion) and the covariant components p_mu = (omega_p, -p), the three physical polarisations satisfy p^mu eps^r_mu = 0 and eps^r_mu eps^{s mu} = delta_rs with all three norms +1, and sum_r eps^r_mu eps^r_nu = eta_{mu nu} + p_mu p_nu / mu^2, which is idempotent under the mixed-index contraction, has trace three, and annihilates the momentum. The longitudinal vector carries a minus sign on its spatial entry, (-|p|, 0, 0, omega_p)/mu, the same sign the covariant momentum's spatial components have; the plus-signed version does not satisfy p^mu eps_mu = 0. Do not "correct" the sign without changing the index convention of the momentum at the same time. -->
 
 The three polarizations are orthonormal and complete: they satisfy $\varepsilon^{r}_\mu\varepsilon^{s\mu}=\delta_{rs}$, all three norms being $+1$, and the completeness relation
 

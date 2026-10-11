@@ -17,7 +17,7 @@ $$
 
 **Proposition.** For each $x$ the operator $\operatorname{ad}_x$ is linear, and the map $\operatorname{ad}$ is linear.
 
-**Proof.** The bracket is bilinear, so $\operatorname{ad}_x$ is linear in $y$; and for scalars $\lambda,\mu$ and elements $x,x'$, $\operatorname{ad}_{\lambda x+\mu x'}(y)=[\lambda x+\mu x',y]=\lambda[x,y]+\mu[x',y]$, so $\operatorname{ad}$ is linear in $x$. $\square$
+**Proof.** The bracket is bilinear, so $\operatorname{ad}_x$ is linear in $y$; and for scalars $\lambda,\mu$ and elements $x,x'$, $\operatorname{ad}_{\lambda x+\mu x'}(y)=[\lambda x+\mu x',y]=\lambda[x,y]+\mu[x',y]$, so $\operatorname{ad}$ is linear in $x$.
 
 ## The Jacobi Identity as the Derivation Property
 
@@ -27,7 +27,7 @@ $$
 \operatorname{ad}_x([y,z])=[\operatorname{ad}_x y,z]+[y,\operatorname{ad}_x z]\qquad\text{for all }x,y,z .
 $$
 
-**Proof.** The displayed identity reads $[x,[y,z]]=[[x,y],z]+[y,[x,z]]$, which is the Jacobi identity rearranged. $\square$
+**Proof.** The displayed identity reads $[x,[y,z]]=[[x,y],z]+[y,[x,z]]$, which is the Jacobi identity rearranged.
 
 **Theorem.** The Jacobi identity is equivalently the statement that the adjoint map is a homomorphism of Lie algebras:
 
@@ -35,7 +35,7 @@ $$
 \operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]\qquad\text{for all }x,y .
 $$
 
-**Proof.** Both sides are operators on $\mathrm{G}$; evaluated on $z$, the left is $[[x,y],z]$ and the right is $[x,[y,z]]-[y,[x,z]]$, whose equality is again the Jacobi identity. $\square$
+**Proof.** Both sides are operators on $\mathrm{G}$; evaluated on $z$, the left is $[[x,y],z]$ and the right is $[x,[y,z]]-[y,[x,z]]$, whose equality is again the Jacobi identity.
 
 **Corollary.** The image $\operatorname{Inn}(\mathrm{G})=\operatorname{ad}(\mathrm{G})$ is a Lie subalgebra of $\operatorname{End}_K(\mathrm{G})$ with the commutator bracket, and $\operatorname{ad}$ is a homomorphism of Lie algebras onto it, so $\operatorname{ad}$ is a representation of $\mathrm{G}$ on $\mathrm{G}$, the adjoint representation of *Representations of Lie Algebras*. The derivations $\operatorname{Der}(\mathrm{G})$ of *Derivations of a Lie Algebra* contain $\operatorname{Inn}(\mathrm{G})$ as an ideal.
 
@@ -47,19 +47,19 @@ $$
 \ker\operatorname{ad}=\{x:\operatorname{ad}_x=0\}=\{x:[x,y]=0\text{ for all }y\}=\mathrm{Z}(\mathrm{G}).
 $$
 
-**Proof.** $\operatorname{ad}_x=0$ means $[x,y]=0$ for every $y$, which is the definition of the centre. $\square$
+**Proof.** $\operatorname{ad}_x=0$ means $[x,y]=0$ for every $y$, which is the definition of the centre.
 
 **Corollary.** The adjoint representation is faithful exactly when $\mathrm{G}$ has trivial centre; and $\operatorname{ad}(\mathrm{G})\cong\mathrm{G}/\mathrm{Z}(\mathrm{G})$ as Lie algebras.
 
 **Proposition.** The centre is an ideal and is the smallest ideal $\mathrm{I}$ with $\operatorname{ad}(\mathrm{G})\subseteq\operatorname{Der}(\mathrm{G})$ having $\mathrm{I}$ in its kernel; equivalently, a subspace $\mathrm{I}$ lies in the kernel of every $\operatorname{ad}_x$ exactly when $[\mathrm{G},\mathrm{I}]=0$, which for an ideal $\mathrm{I}$ means $\mathrm{I}\subseteq\mathrm{Z}(\mathrm{G})$ when $\mathrm{G}$ is spanned by $[\mathrm{G},\mathrm{G}]$.
 
-**Proof.** The centre is an ideal because $[[x,y],z]=[x,[y,z]]-[y,[x,z]]\in\mathrm{Z}$ for $z$ central; the span statement is the definition of the bracket. $\square$
+**Proof.** The centre is an ideal because $[[x,y],z]=[x,[y,z]]-[y,[x,z]]\in\mathrm{Z}$ for $z$ central; the span statement is the definition of the bracket.
 
 ## Ideals as Invariant Subspaces
 
 **Theorem.** A subspace $\mathrm{I}\subseteq\mathrm{G}$ is an ideal if and only if it is stable under every operator $\operatorname{ad}_x$, $x\in\mathrm{G}$; it is characteristic if and only if it is stable under every derivation.
 
-**Proof.** Stability under $\operatorname{ad}_x$ means $[x,\mathrm{I}]\subseteq\mathrm{I}$ for every $x$, which is the definition of an ideal; the characteristic statement is the analogous reading with derivations in place of the $\operatorname{ad}_x$. $\square$
+**Proof.** Stability under $\operatorname{ad}_x$ means $[x,\mathrm{I}]\subseteq\mathrm{I}$ for every $x$, which is the definition of an ideal; the characteristic statement is the analogous reading with derivations in place of the $\operatorname{ad}_x$.
 
 **Corollary.** The sum and the intersection of ideals are ideals, the quotient $\mathrm{G}/\mathrm{I}$ is a Lie algebra with the induced bracket, and the induced map on the quotient is the adjoint action of the quotient; the correspondence between ideals and invariant subspaces is the linear-algebraic form of the isomorphism theorems.
 
@@ -73,11 +73,11 @@ $$
 
 so $\operatorname{ad}$ is a representation; the operators $\operatorname{ad}_x$ are the inner elements of the normaliser of $\operatorname{ad}(\mathrm{G})$ in $\operatorname{End}_K(\mathrm{G})$, and they act on $\operatorname{End}_K(\mathrm{G})$ by the commutator.
 
-**Proof.** The first is the homomorphism property; the second is the Jacobi identity in the associative algebra $\operatorname{End}_K(\mathrm{G})$. $\square$
+**Proof.** The first is the homomorphism property; the second is the Jacobi identity in the associative algebra $\operatorname{End}_K(\mathrm{G})$.
 
 **Proposition (the transpose action).** The transpose operators $\operatorname{ad}_x^{*}$ on $\mathrm{G}^*$ define the **coadjoint action**, and it is again a representation, $\operatorname{ad}_{[x,y]}^{*}=[\operatorname{ad}_x^{*},\operatorname{ad}_y^{*}]$; with respect to the pairing $\mathrm{G}^*\times\mathrm{G}\to K$ the coadjoint and adjoint actions are transposed, $\langle\operatorname{ad}_x^{*}\xi,y\rangle=-\langle\xi,\operatorname{ad}_x y\rangle$ in the convention in which the pairing is $\xi(y)$.
 
-**Proof.** Transposition reverses the commutator, so the homomorphism property is preserved; the sign in the pairing is the definition of the transpose. $\square$
+**Proof.** Transposition reverses the commutator, so the homomorphism property is preserved; the sign in the pairing is the definition of the transpose.
 
 ## Worked Case: $\mathrm{sl}(2,K)$
 
@@ -91,7 +91,6 @@ $$
 
 the centre is zero, so the adjoint representation is faithful and $\operatorname{ad}(\mathrm{G})\cong\mathrm{sl}(2,K)$; the image is the three-dimensional Lie algebra spanned by the displayed matrices, with $[\operatorname{ad}_h,\operatorname{ad}_e]=2\operatorname{ad}_e$ and $[\operatorname{ad}_e,\operatorname{ad}_f]=\operatorname{ad}_h$, the same brackets as $\mathrm{G}$. The operators have trace zero, as they must, and each is a derivation of the bracket by the Jacobi identity.
 
-**Verified.** The three matrices were recomputed from the brackets, the brackets of the matrices were checked to reproduce $[h,e]=2e$, $[h,f]=-2f$, $[e,f]=h$, and $\ker\operatorname{ad}=0$ was confirmed by the rank $3$ of the adjoint map.
 
 ## Summary
 

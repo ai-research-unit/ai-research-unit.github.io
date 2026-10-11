@@ -133,7 +133,6 @@ so that $\{E_i, E_j\} = -2\delta_{ij}$. They therefore generate a copy of the re
 $$
 E_k^2 = j^2e_k^2 = -1, \qquad E_iE_j = j^2e_ie_j = -e_je_i = -E_jE_i .
 $$
-$\square$
 
 **Proposition (identification and volume element).** The eight monomials in $E_1,E_2,E_3$ are linearly independent and span $\mathbb{H}_{\mathbb{D}}$, so
 
@@ -149,7 +148,7 @@ $$
 
 which is central with square $+1$; the Clifford idempotents $\tfrac12(1 \pm E_1E_2E_3) = \tfrac12(1 \mp j)$ are the idempotents $\tilde\Pi_{1,2}$ of the idempotent decomposition, with the index reversed.
 
-*Proof.* The monomials are the eight elements $\tilde\Pi_{1,2}$ times the quaternion basis and are independent; the product is immediate from $j^2=1$, $e_1e_2=e_3$ and $e_3^2=-1$. $\square$
+*Proof.* The monomials are the eight elements $\tilde\Pi_{1,2}$ times the quaternion basis and are independent; the product is immediate from $j^2=1$, $e_1e_2=e_3$ and $e_3^2=-1$.
 
 **Proposition (the complexification).** The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}$ is the complex Clifford algebra
 
@@ -159,7 +158,7 @@ $$
 
 whose two simple summands are the complexified quaternion halves; its volume element is the element $-j$, central and an involution, and it is the algebra studied in *Complex Split Biquaternions and the Clifford Algebra Cl(3)*.
 
-*Proof.* Complexification extends scalars, so the relations of the $E_i$ are unchanged and the complexified monomials are a basis; the classification of the odd complex Clifford algebras gives $\mathrm{Cl}_3(\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, and the complexified idempotent decomposition gives the two summands $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{B}$. $\square$
+*Proof.* Complexification extends scalars, so the relations of the $E_i$ are unchanged and the complexified monomials are a basis; the classification of the odd complex Clifford algebras gives $\mathrm{Cl}_3(\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, and the complexified idempotent decomposition gives the two summands $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{B}$.
 
 The Clifford reading is the reason the split biquaternion algebra is the natural lower rung of a doubling: its volume element is a central involution rather than a complex structure, so its complexification splits into two copies of the biquaternion algebra where the biquaternion algebra itself is simple.
 

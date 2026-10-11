@@ -70,7 +70,6 @@ $(\varphi,\psi)\mapsto\langle T,\varphi*\psi^{*}\rangle$ is a positive semidefin
 $K(\varphi,\psi)=\langle T,\varphi*\psi^{*}\rangle$ and the polarisation of the quadratic form
 $\varphi\mapsto K(\varphi,\varphi)=\langle T,\varphi*\varphi^{*}\rangle$; the Hermitian property is obtained
 by applying the inequality to $\varphi+\lambda\psi$ and varying $\lambda$, as for kernels and for measures.
-$\blacksquare$
 
 **Theorem (functions give distributions).** A locally integrable function $f$ on $\mathbb R^n$ of at most
 polynomial growth, regarded as a distribution, is positive definite exactly when the function $f$ is
@@ -79,7 +78,7 @@ positive definite in the sense of *Positive Definite Functions and Hermitian Ker
 **Proof.** If $f$ is a positive definite function then
 $\langle f,\varphi*\varphi^{*}\rangle=\iint f(x-y)\varphi(y)\overline{\varphi(x)}\,dydx\geq0$ by the
 definition; conversely the inequality for a smooth nonnegative approximate identity concentrated at the
-points recovers the positive definiteness of the function. $\blacksquare$
+points recovers the positive definiteness of the function.
 
 Thus the positive definite distributions contain the positive definite functions of polynomial growth, and
 the theorem below shows that they contain nothing wilder than a positive measure.
@@ -126,7 +125,7 @@ of finite order — bounds the growth of the masses $\mu_\epsilon$ on the balls 
 $\int(1+\lvert\xi\rvert)^{-N}d\mu<\infty$ for $N$ large enough, so that $\mu$ is tempered and
 $T=\hat\mu$. Uniqueness is the injectivity of the Fourier transform on tempered distributions. The
 details of the growth control and the weak convergence belong to *Measure Theory and Integration* and
-*Distributions and Fundamental Solutions*. $\blacksquare$
+*Distributions and Fundamental Solutions*.
 
 The proof is the smoothing argument: the distribution is regularised into positive definite functions, each
 of which is the transform of a positive measure by Bochner's theorem, and the measures are shown to
@@ -144,7 +143,7 @@ Under the Fourier transform the cone becomes the cone of positive tempered measu
 
 **Proof.** The defining inequality is preserved by nonnegative linear combinations and by distributional
 limits; the Hermitian property comes from polarisation; the cone statement on the transform side is
-Bochner–Schwartz, and the positivity and temperedness of the measures are preserved by limits. $\blacksquare$
+Bochner–Schwartz, and the positivity and temperedness of the measures are preserved by limits.
 
 **Theorem (order and the measure).** A positive definite distribution has a well-defined **order**, and the
 growth of its spectral measure is tied to it: if $T$ is of order at most $N$, then
@@ -156,7 +155,7 @@ finite (Bochner's theorem in the function case).
 **Proof.** The order of a distribution is the least $N$ with $\lvert\langle T,\varphi\rangle\rvert\leq
 C\sum_{\lvert\alpha\rvert\leq N}\sup\lvert\partial^\alpha\varphi\rvert$, and the transformed pairing
 $\int\hat\varphi\,d\mu$ shows that the growth of $\mu$ is controlled by the seminorms of $\varphi$ used;
-the finite-measure case is Bochner's theorem for bounded continuous functions. $\blacksquare$
+the finite-measure case is Bochner's theorem for bounded continuous functions.
 
 ### Examples
 

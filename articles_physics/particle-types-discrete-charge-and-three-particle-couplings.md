@@ -118,7 +118,7 @@ the identification the two elements $\pm e_0$.
 **Proof.** $U$ is the group of isometries of the positive definite form that the algebra's own left
 multiplications supply, $U=\{\tilde U:\lVert\tilde U\tilde Q\rVert_E=\lVert\tilde Q\rVert_E\ \forall\tilde Q\}$; its defining condition is polynomial and so closed, and it lies in the unit sphere and so is
 bounded. Closed and bounded in $\mathbb{R}^{8}$ is compact. Positivity of the dagger is what supplies the
-boundedness. $\square$
+boundedness.
 
 **Reading: discrete charge.** The finite-dimensional unitary representations of a compact group are
 labelled by discrete data, so the **internal charge** — the label of a representation of the internal

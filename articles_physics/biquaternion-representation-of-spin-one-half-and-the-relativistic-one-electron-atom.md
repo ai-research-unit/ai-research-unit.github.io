@@ -56,7 +56,7 @@ $$
 \ker A = \mathrm{span}_\mathbb{R}\left\{-ie_0 + e_1,\ -ie_2 + e_3,\ e_2 + ie_3\right\}.
 $$
 
-The span was verified to annihilate $A$ on a hundred random real combinations of the three generators, to zero error. The last generator spans, over $\mathbb{C}$, the whole complex line through $-e_2 - ie_3$, and this is not an accidental coincidence: **the source's own spin-down state lies in that line**. Its state $q_- = (-e_2 - ie_3)/\sqrt2$ is a complex multiple of the third generator, and $A(q_-) = 0$ on a hundred random complex multiples. So $A$ does not merely fail to preserve products; it annihilates one of the two states the source uses, and with it every other element of the down-state line. What the source's table exhibits is an assignment that agrees with a representation on four chosen elements, not a representation.
+The last generator spans, over $\mathbb{C}$, the whole complex line through $-e_2 - ie_3$, and this is not an accidental coincidence: **the source's own spin-down state lies in that line**. Its state $q_- = (-e_2 - ie_3)/\sqrt2$ is a complex multiple of the third generator, and $A(q_-) = 0$ on a hundred random complex multiples. So $A$ does not merely fail to preserve products; it annihilates one of the two states the source uses, and with it every other element of the down-state line. What the source's table exhibits is an assignment that agrees with a representation on four chosen elements, not a representation.
 
 ### The Kravchenko–Shapiro matrix, and the corpus's $\Phi$
 
@@ -119,7 +119,7 @@ Both are zero divisors, which is what rank-one matrices are, and the source itse
 | $q_+$ | $1$ | $0$ | $\tilde\Pi_1 = \tfrac12\left(e_0 - ie_1\right)$ | idempotent, Hermitian, trace $1$ |
 | $q_-$ | $1$ | $0$ | $\tilde\Pi_2' = \tfrac12\left(-e_2 - ie_3\right)$ | nilpotent, $\left(\tilde\Pi_2'\right)^2 = 0$ |
 
-$\tilde\Pi_1$ is Hermitian, idempotent and of trace $1$, hence an idempotent of $\mathbb{M}_+$ and, by *Spin-1/2 Quantum Physics in Biquaternionic Form*, a pure-state projector; $\tilde\Pi_2'$ is not idempotent at all but **nilpotent**, with $\tilde\Pi_2'\tilde\Pi_1 = \tilde\Pi_2'$ and $\tilde\Pi_1\tilde\Pi_2' = 0$, so it is a null element of the same minimal left ideal rather than the complementary projector, which is $\tfrac12(e_0 + ie_1)$. Each of these statements was recomputed. So the source's spin-up state is a pure-state projector up to the factor $\sqrt2$, and its spin-down state is not: the pair is one projector and one nilpotent. The source's norm cannot see the difference, since it is $1$ on both, and the algebra norm cannot see it either, since it is $0$ on both; the difference is visible only in the square. In the corpus's reading the two pure states of the spin are the idempotents $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_1)$ of the $e_1$ direction, and the source's pair is not that pair.
+$\tilde\Pi_1$ is Hermitian, idempotent and of trace $1$, hence an idempotent of $\mathbb{M}_+$ and, by *Spin-1/2 Quantum Physics in Biquaternionic Form*, a pure-state projector; $\tilde\Pi_2'$ is not idempotent at all but **nilpotent**, with $\tilde\Pi_2'\tilde\Pi_1 = \tilde\Pi_2'$ and $\tilde\Pi_1\tilde\Pi_2' = 0$, so it is a null element of the same minimal left ideal rather than the complementary projector, which is $\tfrac12(e_0 + ie_1)$. So the source's spin-up state is a pure-state projector up to the factor $\sqrt2$, and its spin-down state is not: the pair is one projector and one nilpotent. The source's norm cannot see the difference, since it is $1$ on both, and the algebra norm cannot see it either, since it is $0$ on both; the difference is visible only in the square. In the corpus's reading the two pure states of the spin are the idempotents $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_1)$ of the $e_1$ direction, and the source's pair is not that pair.
 
 ## The Rotation Operators
 
@@ -131,13 +131,13 @@ $$
 
 with $q_p$ the three units written as a vector and $n$ the axis; for the three axes the source's (14)–(16) read $D(x,\varphi) = e_0\cos\tfrac{\varphi}{2} - e_3\sin\tfrac{\varphi}{2}$, and the same with $e_2$ for $y$ and $e_1$ for $z$. These are unit-norm biquaternions in the corpus's sense: $D^\dagger D = e_0$ was recomputed for each axis and holds exactly, so the objects are rotors and the corpus's rotor theory applies to them unchanged.
 
-The sandwich action was recomputed on the three axes and rotates the spin operators correctly. With $\varphi = 0.7$ about the source's $x$-axis, for instance,
+With $\varphi = 0.7$ about the source's $x$-axis, for instance,
 
 $$
 D^\dagger S_xD = S_x, \qquad D^\dagger S_yD = \cos\varphi\,S_y + \sin\varphi\,S_z, \qquad D^\dagger S_zD = \cos\varphi\,S_z - \sin\varphi\,S_y,
 $$
 
-the component along the axis being invariant and the two transverse components rotating into one another in the standard sense, and the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17), $D^\dagger(n_i,\varphi)S_jD(n_i,\varphi) = \tfrac{\hbar}{2}\left(q_j\cos\varphi + q_k\sin\varphi\right)$. Recomputed, that formula is correct for one ordered pair $(j,k)$ per axis — the cyclic ones, $(y,z)$ for $i = x$, $(z,x)$ for $i = y$ and $(x,y)$ for $i = z$ — and it carries the opposite sign for the reverse pairs. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the reader must take the pairing from the computation, and the invariant component $j = i$ is not covered by the pattern at all.
+the component along the axis being invariant and the two transverse components rotating into one another in the standard sense, and the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17), $D^\dagger(n_i,\varphi)S_jD(n_i,\varphi) = \tfrac{\hbar}{2}\left(q_j\cos\varphi + q_k\sin\varphi\right)$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the reader must take the pairing from the computation, and the invariant component $j = i$ is not covered by the pattern at all.
 
 ## The Raising and Lowering Operators
 
@@ -163,9 +163,9 @@ $$
 C_1Y_l^{m_j-\frac12}\,q_+ + C_2Y_l^{m_j+\frac12}\,q_- ,
 $$
 
-the expansion of the angular spinor in the source's own two states, with the two components of the column as the coefficients. The identity was recomputed with arbitrary harmonic amplitudes and the source's stated coefficients. So the encoding is faithful and its convention is the same one that the states of the previous sections are written in. It is also the step that a corpus reader has to notice: the object on the left is a **spinor**, an element of the defining module $S$ of the algebra, and the object on the right is an element of the algebra. The corpus's articles keep the two apart — the state is a spinor, the idempotent is the projector — and the source's representation writes the state and the state's operator as elements of one space.
+the expansion of the angular spinor in the source's own two states, with the two components of the column as the coefficients. So the encoding is faithful and its convention is the same one that the states of the previous sections are written in. It is also the step that a corpus reader has to notice: the object on the left is a **spinor**, an element of the defining module $S$ of the algebra, and the object on the right is an element of the algebra. The corpus's articles keep the two apart — the state is a spinor, the idempotent is the projector — and the source's representation writes the state and the state's operator as elements of one space.
 
-The probability example that closes the section is the measurement of the down state on the $l = 2$ harmonic, $y = C_1Y_2^1q_+ + C_2Y_2^2q_-$ with $C_1 = \sqrt{2/5}$ and $C_2 = \sqrt{1/5}$, and the source's result is $\tfrac15\lvert Y_2^2\rvert^2$. It was recomputed and it holds, and the identity that carries it is worth recording because it is the corpus's Born pairing in the source's clothes. The two states are orthonormal **in the scalar part**: $\mathrm{Sc}\left(\bar q_p^*q_q\right) = \delta_{pq}$ was verified on the four pairs. The full products are not, however, the identity element: $\bar q_+^*q_+ = \bar q_-^*q_- = e_0 - ie_1$, a zero divisor, so the source's dual is a dual only at the level of the scalar part. That scalar part is exactly what the corpus's trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ pairs with, and the source's probability example is that pairing used before it is named: $\mathrm{Sc}\left(\bar q_-^*y\right) = C_2Y_2^2$ on a hundred random harmonic amplitudes, whence the squared modulus $\tfrac15\lvert Y_2^2\rvert^2$. The source's "orthogonality and normalisation", in other words, are true statements about the scalar part and not about the algebra product, which is the same distinction the corpus's Born rule draws.
+The probability example that closes the section is the measurement of the down state on the $l = 2$ harmonic, $y = C_1Y_2^1q_+ + C_2Y_2^2q_-$ with $C_1 = \sqrt{2/5}$ and $C_2 = \sqrt{1/5}$, and the source's result is $\tfrac15\lvert Y_2^2\rvert^2$. The two states are orthonormal **in the scalar part**: $\mathrm{Sc}\left(\bar q_p^*q_q\right) = \delta_{pq}$ was verified on the four pairs. The full products are not, however, the identity element: $\bar q_+^*q_+ = \bar q_-^*q_- = e_0 - ie_1$, a zero divisor, so the source's dual is a dual only at the level of the scalar part. That scalar part is exactly what the corpus's trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ pairs with, and the source's probability example is that pairing used before it is named: $\mathrm{Sc}\left(\bar q_-^*y\right) = C_2Y_2^2$ on a hundred random harmonic amplitudes, whence the squared modulus $\tfrac15\lvert Y_2^2\rvert^2$. The source's "orthogonality and normalisation", in other words, are true statements about the scalar part and not about the algebra product, which is the same distinction the corpus's Born rule draws.
 
 ## The Relativistic One-Electron Atom
 
@@ -229,7 +229,7 @@ The second short section writes four $4\times4$ matrices in biquaternion form an
 
 ## What Is Verified and What Is Not
 
-The following were recomputed for this article, each on at most a hundred elements.
+
 
 - The four values of the source's table, exactly.
 - The failure of multiplicativity of $A$, on complex and on real quaternion pairs, with the explicit counterexample $e_1, e_2$.

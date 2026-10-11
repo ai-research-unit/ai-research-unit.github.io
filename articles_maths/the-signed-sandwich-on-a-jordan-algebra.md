@@ -32,7 +32,7 @@ $$
 
 the quadratic representation of *The Left and Right Multiplication Operators on a Jordan Algebra*; in particular the symmetrisation of the sandwiches is an operator of the Jordan structure, and it lies in $\operatorname{Mult}(J)$.
 
-*Proof.* For $x \in J$ one has $\tfrac12(S_{a,b}+S_{b,a})(x) = \tfrac12(axb+bxa)$, and the special form of the quadratic representation is $U_{a,b}(x) = \tfrac12(axb+bxa)$. That $U_{a,b}$ lies in $\operatorname{Mult}(J)$ is its definition, $U_{a,b} = L_aL_b+L_bL_a-L_{a\bullet b}$. $\square$
+*Proof.* For $x \in J$ one has $\tfrac12(S_{a,b}+S_{b,a})(x) = \tfrac12(axb+bxa)$, and the special form of the quadratic representation is $U_{a,b}(x) = \tfrac12(axb+bxa)$. That $U_{a,b}$ lies in $\operatorname{Mult}(J)$ is its definition, $U_{a,b} = L_aL_b+L_bL_a-L_{a\bullet b}$.
 
 **Corollary.** The antisymmetrisation $\tfrac12(S_{a,b}-S_{b,a})$ is nonzero exactly when the sandwich does not commute with the transposition of its parameters; it equals $\tfrac12(axb-bxa)$ and is the operator that the Jordan structure discards. The Jordan two-sided operator is the part of $S_{a,b}$ that is symmetric in $a$ and $b$, and the discarded part measures the failure of the Jordan product to see the order of the factors.
 
@@ -52,7 +52,7 @@ makes $A$ a $\mathbb{Z}/2$-graded algebra, with $A_iA_j \subseteq A_{i+j}$; this
 
 **Proposition.** $\alpha$ is a grade involution of the Jordan algebra $J$, that is, an automorphism of $J$ with $\alpha^2 = \mathrm{id}$, and the Jordan product respects the induced grading, $J_i\bullet J_j \subseteq J_{i+j}$ with $J_i = A_i$; the commutativity of $\bullet$ is not disturbed, and the only new datum is the sign rule that an odd element carries.
 
-*Proof.* $\alpha$ preserves the associative product, hence the halved product, hence is an automorphism of $J$; $\alpha^2 = \mathrm{id}$ is assumed; the grading statement is the multiplicativity of $\alpha$ read on the decomposition. $\square$
+*Proof.* $\alpha$ preserves the associative product, hence the halved product, hence is an automorphism of $J$; $\alpha^2 = \mathrm{id}$ is assumed; the grading statement is the multiplicativity of $\alpha$ read on the decomposition.
 
 ### The Signed Sandwich
 
@@ -76,7 +76,7 @@ $$
 
 and the two coincide exactly when $\alpha = \mathrm{id}$.
 
-*Proof.* $S_{a,b}(\alpha(x)) = a\alpha(x)b = S^{\alpha}_{a,b}(x)$, by the definitions. If $\alpha = \mathrm{id}$ the two formulas are identical; conversely if $S^{\alpha}_{a,b} = S_{a,b}$ for all $a,b$ then $\alpha(x) = x$ for all $x$ by choosing $a, b$ with $a\alpha(x)b \ne axb$ unless $\alpha(x) = x$. $\square$
+*Proof.* $S_{a,b}(\alpha(x)) = a\alpha(x)b = S^{\alpha}_{a,b}(x)$, by the definitions. If $\alpha = \mathrm{id}$ the two formulas are identical; conversely if $S^{\alpha}_{a,b} = S_{a,b}$ for all $a,b$ then $\alpha(x) = x$ for all $x$ by choosing $a, b$ with $a\alpha(x)b \ne axb$ unless $\alpha(x) = x$.
 
 **Proposition (the symmetrisation of the signed sandwich).** For all $a, b \in J$,
 
@@ -86,7 +86,7 @@ $$
 
 and the operator on the right lies in $\operatorname{Mult}(J)$; write it $\Sigma^{\alpha}_{a,b} = U_{a,b}\circ\alpha$ and call it the **symmetrised signed sandwich**. The symmetrisation is exactly the twist of the quadratic representation by the grade involution, and it is the signed two-sided operator of the Jordan structure.
 
-*Proof.* $\tfrac12(S^{\alpha}_{a,b}+S^{\alpha}_{b,a})(x) = \tfrac12(a\alpha(x)b+b\alpha(x)a) = U_{a,b}(\alpha(x)) = (U_{a,b}\circ\alpha)(x)$, using the special form of $U_{a,b}$. $\square$
+*Proof.* $\tfrac12(S^{\alpha}_{a,b}+S^{\alpha}_{b,a})(x) = \tfrac12(a\alpha(x)b+b\alpha(x)a) = U_{a,b}(\alpha(x)) = (U_{a,b}\circ\alpha)(x)$, using the special form of $U_{a,b}$.
 
 ## Composition and the Failure of the Ring Law
 
@@ -116,7 +116,7 @@ $$
 U_{a,a}U_{c,c}(x) = E_{12}\,(qE_{21})\,E_{12} = q\,E_{12} .
 $$
 
-This operator is the $(1,2)$-coordinate functional times the matrix unit $E_{12}$. Suppose it were a quadratic representation $U_{e,f}$ with $e = \bigl(\begin{smallmatrix}a&b\\ c&d\end{smallmatrix}\bigr)$, $f = \bigl(\begin{smallmatrix}p&q_1\\ r&s\end{smallmatrix}\bigr)$. Evaluating at $x = E_{12}$ gives $U_{e,f}(E_{12}) = E_{12}$, whose $(1,2)$-entry is the $(1,2)$-entry of $\tfrac12(eE_{12}f+fE_{12}e)$, namely $\tfrac12(bq_1+q_1b) = bq_1$; hence $bq_1 = 1$. Evaluating at $x = E_{21}$ gives $U_{e,f}(E_{21}) = 0$, whose $(1,2)$-entry is $\tfrac12(bq_1+q_1b) = bq_1$ again; hence $bq_1 = 0$, a contradiction. So the composite is not a quadratic representation. $\square$
+This operator is the $(1,2)$-coordinate functional times the matrix unit $E_{12}$. Suppose it were a quadratic representation $U_{e,f}$ with $e = \bigl(\begin{smallmatrix}a&b\\ c&d\end{smallmatrix}\bigr)$, $f = \bigl(\begin{smallmatrix}p&q_1\\ r&s\end{smallmatrix}\bigr)$. Evaluating at $x = E_{12}$ gives $U_{e,f}(E_{12}) = E_{12}$, whose $(1,2)$-entry is the $(1,2)$-entry of $\tfrac12(eE_{12}f+fE_{12}e)$, namely $\tfrac12(bq_1+q_1b) = bq_1$; hence $bq_1 = 1$. Evaluating at $x = E_{21}$ gives $U_{e,f}(E_{21}) = 0$, whose $(1,2)$-entry is $\tfrac12(bq_1+q_1b) = bq_1$ again; hence $bq_1 = 0$, a contradiction. So the composite is not a quadratic representation.
 
 **Corollary.** The set $\{\Sigma^{\alpha}_{a,b} : a, b \in J\}$ generates an algebra under composition, but it is not a monoid, and the composition law of the ring case is replaced by the multiplication in the algebra of quadratic representations. The **one-sided** signed operator $x\mapsto a\,\alpha(x)$ of *The Signed Left Multiplication on a Jordan Algebra*, which is linear in a single parameter, is the element from which the symmetrised signed sandwiches are rebuilt in the next articles of this group.
 
@@ -140,7 +140,7 @@ $$
 
 Hence $r_u$ is an involution, a **reflection**, exactly when $u\,\alpha(u)$ is central in $A$; it is then the inner automorphism of $J$ by $u\alpha(u)$, of order two.
 
-*Proof.* The square is computed from the ring law $S^{\alpha}_{a,b}S^{\alpha}_{c,d} = S^{\alpha}_{a\alpha(c),b\alpha(d)}$ with $a = c = u$ and $b = d = u^{-1}$: $r_u^2 = S^{\alpha}_{u\alpha(u),\,u^{-1}\alpha(u^{-1})}$, and $u^{-1}\alpha(u^{-1}) = (u\alpha(u))^{-1}$ because $\alpha(u^{-1}) = \alpha(u)^{-1}$. The conjugation by an element is the identity exactly when that element is central. $\square$
+*Proof.* The square is computed from the ring law $S^{\alpha}_{a,b}S^{\alpha}_{c,d} = S^{\alpha}_{a\alpha(c),b\alpha(d)}$ with $a = c = u$ and $b = d = u^{-1}$: $r_u^2 = S^{\alpha}_{u\alpha(u),\,u^{-1}\alpha(u^{-1})}$, and $u^{-1}\alpha(u^{-1}) = (u\alpha(u))^{-1}$ because $\alpha(u^{-1}) = \alpha(u)^{-1}$. The conjugation by an element is the identity exactly when that element is central.
 
 **Corollary (parity).** If $u$ is fixed by $\alpha$ then $u\alpha(u) = u^2$, and $r_u$ is an involution exactly when $u^2$ is central; if $u$ is negated by $\alpha$ then $u\alpha(u) = -u^2$, central exactly when $u^2$ is central. In particular $u^2 \in Z(A)$ makes $r_u$ an involution whatever the parity of $u$, and this is the criterion inherited from *The Signed Sandwich on a Ring*.
 
@@ -154,7 +154,7 @@ $$
 
 and it is an element of $\operatorname{Mult}(J)$. It is an involution when $U_{u,u^{-1}}$ commutes with the twist in the appropriate sense; the exact statement and the correspondence between reflections and the elements acting by an involution — with its failure in the degenerate case of a non-central $u\alpha(u)$ — is the subject of *Reflections as Signed Two-Sided Operators on a Jordan Algebra*, next in this group.
 
-*Proof.* The formula is the symmetrisation of $r_u$, together with the identification $\tfrac12(S^{\alpha}_{u,u^{-1}}+S^{\alpha}_{u^{-1},u}) = U_{u,u^{-1}}\alpha$ proved above. $\square$
+*Proof.* The formula is the symmetrisation of $r_u$, together with the identification $\tfrac12(S^{\alpha}_{u,u^{-1}}+S^{\alpha}_{u^{-1},u}) = U_{u,u^{-1}}\alpha$ proved above.
 
 ## A Worked Example
 

@@ -38,13 +38,13 @@ $$
 
 Every isometry is injective, and $T$ is unitary exactly when it is an invertible isometry, equivalently exactly when $T^{\dagger} = T^{-1}$.
 
-*Proof.* (i) implies (ii) by rewriting $h(Tx,Ty) = h(x,T^{\dagger}Ty)$ and using the nondegeneracy of $h$: $h(x,T^{\dagger}Ty) = h(x,y)$ for all $x,y$ gives $T^{\dagger}T = 1$. (ii) implies (i) by $h(Tx,Ty) = h(x,T^{\dagger}Ty) = h(x,y)$. Injectivity is the implication (ii) $\Rightarrow$ ($Tx = 0 \Rightarrow x = 0$): from $0 = h(Tx,Ty) = h(x,y)$ for all $y$ and the nondegeneracy of $h$. If $T$ is an invertible isometry then $T^{\dagger} = T^{\dagger}TT^{-1} = T^{-1}$ and $TT^{\dagger} = 1$; conversely $T^{\dagger} = T^{-1}$ gives $T^{\dagger}T = TT^{\dagger} = 1$. $\square$
+*Proof.* (i) implies (ii) by rewriting $h(Tx,Ty) = h(x,T^{\dagger}Ty)$ and using the nondegeneracy of $h$: $h(x,T^{\dagger}Ty) = h(x,y)$ for all $x,y$ gives $T^{\dagger}T = 1$. (ii) implies (i) by $h(Tx,Ty) = h(x,T^{\dagger}Ty) = h(x,y)$. Injectivity is the implication (ii) $\Rightarrow$ ($Tx = 0 \Rightarrow x = 0$): from $0 = h(Tx,Ty) = h(x,y)$ for all $y$ and the nondegeneracy of $h$. If $T$ is an invertible isometry then $T^{\dagger} = T^{\dagger}TT^{-1} = T^{-1}$ and $TT^{\dagger} = 1$; conversely $T^{\dagger} = T^{-1}$ gives $T^{\dagger}T = TT^{\dagger} = 1$.
 
 **Remark (the companion form is a different condition).** The isometry of a definite companion, $\langle Tx,Ty\rangle = \langle x,y\rangle$ for a companion with fundamental symmetry $J$, is **not** equivalent to (i). By *The Fundamental Symmetry of the Form*, §*The Adjoints under the Two Forms*, the $h$-isometry is the identity $T^{*}JT = J$ while the companion isometry is $T^{*}T = 1$, and the two differ as soon as $J \neq \pm\mathrm{id}$: on the plane of signature $(1,1)$ the Lorentz boost $T_{t}$ satisfies $h(T_{t}x,T_{t}y) = h(x,y)$ and $\langle T_{t}x,T_{t}y\rangle \neq \langle x,y\rangle$ for the Euclidean companion. The isometry criterion is therefore a statement about the given form, and its indefinite reading is the theorem of §*The Indefinite Case* below.
 
 **Corollary (the monoid and its group of units).** The isometries are closed under composition and contain $\mathrm{id}$, and the unitary operators are exactly the invertible isometries; hence $\mathrm{Iso}(A,h)$ is a monoid and $U(A,h)$ is its group of units. Moreover $U(A,h)$ is a group under composition, and $U(A,h) \subseteq \mathrm{Iso}(A,h)$.
 
-*Proof.* If $S, T$ are isometries then $h(STx,STy) = h(Tx,Ty) = h(x,y)$, so $ST$ is an isometry, and $\mathrm{id}$ is one. That the unitary operators are the invertible isometries is the theorem; a monoid's invertible elements form its group of units. $\square$
+*Proof.* If $S, T$ are isometries then $h(STx,STy) = h(Tx,Ty) = h(x,y)$, so $ST$ is an isometry, and $\mathrm{id}$ is one. That the unitary operators are the invertible isometries is the theorem; a monoid's invertible elements form its group of units.
 
 ### Inversion Is the Adjoint
 
@@ -56,7 +56,7 @@ $$
 
 and it is an involutive anti-automorphism of the group: $(ST)^{\dagger} = T^{\dagger}S^{\dagger}$, $(T^{\dagger})^{\dagger} = T$, $1^{\dagger} = 1$. So the group $U(A,h)$ is stable under the adjoint, and the adjoint operation is the inversion of the group together with the $\varsigma$-semilinear action on the scalars.
 
-*Proof.* The formula is the characterization of the unitary operators; the anti-automorphism laws are those of *The Adjoint under a Hermitian Form*, §*The Anti-Automorphism*, restricted to the group, and the restriction makes sense because the adjoint of a unitary operator is again unitary, $(T^{\dagger})^{\dagger} = T$ and $T^{\dagger}(T^{\dagger})^{\dagger} = T^{\dagger}T = 1$. $\square$
+*Proof.* The formula is the characterization of the unitary operators; the anti-automorphism laws are those of *The Adjoint under a Hermitian Form*, §*The Anti-Automorphism*, restricted to the group, and the restriction makes sense because the adjoint of a unitary operator is again unitary, $(T^{\dagger})^{\dagger} = T$ and $T^{\dagger}(T^{\dagger})^{\dagger} = T^{\dagger}T = 1$.
 
 **Remark (an anti-automorphism that is an inversion).** The theorem is a small but consequential coincidence: on the unitary group the two operations of the ambient algebra, the adjoint $T \mapsto T^{\dagger}$ and the inverse $T \mapsto T^{-1}$, coincide, so an anti-automorphism of $B(A)$ restricts to the inversion of $U(A,h)$. This is the form-layer statement of the coincidence of the adjoint with the inverse on the unitary elements, and it is what makes $U(A,h)$ a group under composition and not only under the opposite operation.
 
@@ -66,7 +66,7 @@ and it is an involutive anti-automorphism of the group: $(ST)^{\dagger} = T^{\da
 
 **Theorem (finite dimension).** Let $A$ be finite dimensional over $R$ and $h$ nonsingular. Then every isometry is unitary, so $\mathrm{Iso}(A,h) = U(A,h)$.
 
-*Proof.* An isometry is injective on a finite-dimensional space, hence bijective; by the theorem it is then unitary. $\square$
+*Proof.* An isometry is injective on a finite-dimensional space, hence bijective; by the theorem it is then unitary.
 
 **Remark (the finite models).** On $\mathbb{C}^{n}$ with a nondegenerate Hermitian form the isometry group is therefore the full indefinite unitary group of the signature, and on the matrices of the examples it is a compact or an indefinite unitary group according to the sign; the equality of the two sets is the reason the definite finite-dimensional theory never has to distinguish them.
 
@@ -74,7 +74,7 @@ and it is an involutive anti-automorphism of the group: $(ST)^{\dagger} = T^{\da
 
 **Theorem (the shift; the inclusion can be proper).** Let $H$ be a complex Hilbert space of infinite dimension, identifiable with $\ell^{2}$, and let $S$ be the unilateral shift, $S(x_{0},x_{1},\dots) = (0,x_{0},x_{1},\dots)$. Then $S$ is an isometry, $S^{*}S = 1$, but $SS^{*} = 1 - P_{0}$ where $P_{0}$ is the projection onto the first coordinate, so $S$ is not surjective and not unitary. The unitary operators are exactly the surjective isometries; in the definite complete case they are not all the isometries, and $U(H) \subsetneq \mathrm{Iso}(H)$ strictly.
 
-*Proof.* The shift is isometric because $\lVert Sx\rVert = \lVert x\rVert$, and its adjoint is the backward shift, $S^{*}(x_{0},x_{1},\dots) = (x_{1},x_{2},\dots)$, so $S^{*}S = 1$ and $SS^{*}$ kills the first coordinate. A surjective isometry is invertible with $T^{-1} = T^{\dagger}$, hence unitary; $S$ is injective but not surjective. The example is the standard one of the Hilbert-space theory of isometries. $\square$
+*Proof.* The shift is isometric because $\lVert Sx\rVert = \lVert x\rVert$, and its adjoint is the backward shift, $S^{*}(x_{0},x_{1},\dots) = (x_{1},x_{2},\dots)$, so $S^{*}S = 1$ and $SS^{*}$ kills the first coordinate. A surjective isometry is invertible with $T^{-1} = T^{\dagger}$, hence unitary; $S$ is injective but not surjective. The example is the standard one of the Hilbert-space theory of isometries.
 
 **Remark (why the two conditions separate).** A form isometry is a geometric condition, $h(Tx,Ty) = h(x,y)$, and the nondegeneracy of the form makes it injective; surjectivity is a completeness and dimension condition independent of the form, and in infinite dimension an isometry can miss a topologically complementable subspace. The defect $1 - TT^{\dagger}$ of an isometry is the projection onto the orthogonal complement of its range, the object of the **defect operators** of the isometry theory, and it vanishes exactly on the unitary operators.
 
@@ -88,7 +88,7 @@ $$
 
 where $T^{*}$ is the companion adjoint and $U(J)$ is the group of the companion operators preserving $J$. On a finite-dimensional space the conditions reduce to $h(Tx,Ty) = h(x,y)$ for all $x,y$.
 
-*Proof.* The equivalence is the theorem of *The Fundamental Symmetry of the Form*, §*The Adjoints under the Two Forms*: $T^{\dagger}T = 1$ reads $JT^{*}JT = 1$, that is $T^{*}JT = J$ after applying $J$; the reverse reading is the same computation. In finite dimension the injectivity gives invertibility, so the isometry condition and the unitary condition coincide. $\square$
+*Proof.* The equivalence is the theorem of *The Fundamental Symmetry of the Form*, §*The Adjoints under the Two Forms*: $T^{\dagger}T = 1$ reads $JT^{*}JT = 1$, that is $T^{*}JT = J$ after applying $J$; the reverse reading is the same computation. In finite dimension the injectivity gives invertibility, so the isometry condition and the unitary condition coincide.
 
 **Remark (the boosts).** The theorem is the reason the indefinite isometry group is not the unitary group of the companion: an operator can be $h$-unitary and not companion-unitary, and the Lorentz boosts of the signature $(1,1)$ plane are the smallest examples, $T_{t} = \begin{pmatrix}\cosh t & \sinh t \\ \sinh t & \cosh t\end{pmatrix}$, which satisfies $T_{t}^{T}JT_{t} = J$ and $T_{t}^{T}T_{t} \neq I$. The group $U(J)$ is the **Krein isometry group** of the indefinite form, non-compact and containing the boosts, and the concrete case is *The Krein Isometry Group and Its $J$-Contractions*; the operator theory of its elements is *J-Self-Adjoint and J-Unitary Operators* and, for the biquaternion algebra, *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*.
 
@@ -104,7 +104,7 @@ $$
 
 and the assignment $u \mapsto m_{u}$ is an injective homomorphism on a unital object, with $m_{u}^{\dagger} = m_{u^{*}}$.
 
-*Proof.* By the adjointness of the multiplications, $m_{u}^{\dagger} = m_{u^{*}}$, so $m_{u}^{\dagger}m_{u} = m_{u^{*}u}$; this is the identity exactly when $u^{*}u = 1$, by the injectivity of $m$ on a unital object, and the isometry criterion gives the first equivalence. For the second, $m_{u}$ is invertible exactly when $u$ is a unit, with $m_{u}^{-1} = m_{u^{-1}}$, and it is unitary exactly when $u^{*}u = uu^{*} = 1$. Injectivity is $m_{u} = \mathrm{id} \Rightarrow u = u\cdot 1 = 1$ on a unital object. $\square$
+*Proof.* By the adjointness of the multiplications, $m_{u}^{\dagger} = m_{u^{*}}$, so $m_{u}^{\dagger}m_{u} = m_{u^{*}u}$; this is the identity exactly when $u^{*}u = 1$, by the injectivity of $m$ on a unital object, and the isometry criterion gives the first equivalence. For the second, $m_{u}$ is invertible exactly when $u$ is a unit, with $m_{u}^{-1} = m_{u^{-1}}$, and it is unitary exactly when $u^{*}u = uu^{*} = 1$. Injectivity is $m_{u} = \mathrm{id} \Rightarrow u = u\cdot 1 = 1$ on a unital object.
 
 **Remark (what the theorem says).** The unitary group of the algebra embeds in the unitary group of the form as the group of the left multiplications, and the whole isometry monoid of the form contains the image of the **left-unitary** elements, those with $u^{*}u = 1$ alone. The embedding is the source of the containment of $U(A)$ in $U(A,h)$ that makes the operator group carry the algebra's own group, and it is the form-layer analogue of *The Unitary Operators of a Sesqualgebra*, where the same assignment is read without the form on the operator-theoretic unitary condition.
 
@@ -112,7 +112,7 @@ and the assignment $u \mapsto m_{u}$ is an injective homomorphism on a unital ob
 
 **Theorem (the inner automorphisms are unitary operators).** Let $u \in U(A)$ and let $\alpha_{u}(x) = uxu^{*}$. Then $\alpha_{u} \in U(A,h)$, with $\alpha_{u}^{\dagger} = \alpha_{u}^{-1} = \alpha_{u^{*}}$, so the assignment $u \mapsto \alpha_{u}$ is a group homomorphism $U(A) \to U(A,h)$ whose kernel is the group of the **central unitary elements**, $U(A)\cap Z(A)$, and whose image is the group of the inner $\ast$-automorphisms.
 
-*Proof.* The isometry and adjoint formulas are the theorem of *The Adjoint under a Hermitian Form*, §*The Inner Automorphisms*; a homomorphism of groups lands in the unitary group, and $\alpha_{u} = \mathrm{id}$ exactly when $uxu^{*} = x$ for all $x$, that is when $u$ is central, the standard computation of *Units and the Unitary Elements*, §*Inner $*$-Automorphisms*. $\square$
+*Proof.* The isometry and adjoint formulas are the theorem of *The Adjoint under a Hermitian Form*, §*The Inner Automorphisms*; a homomorphism of groups lands in the unitary group, and $\alpha_{u} = \mathrm{id}$ exactly when $uxu^{*} = x$ for all $x$, that is when $u$ is central, the standard computation of *Units and the Unitary Elements*, §*Inner $*$-Automorphisms*.
 
 **Remark (two containments).** The algebra's unitary group thus sits in the form's unitary group in two ways: injectively through the left multiplications, $u \mapsto m_{u}$, and with the centre for kernel through the inner automorphisms, $u \mapsto \alpha_{u}$. On the matrices both are visible, $U(n) \hookrightarrow U(n^{2})$ in the first case and $PU(n) \hookrightarrow U(n^{2})$ in the second.
 
@@ -152,7 +152,7 @@ a permutation of the four matrix units, the image of $\sigma_1$ inside $U(4)$.
 
 **Theorem (the collapse).** Let $\varsigma = \mathrm{id}$. Then the form is symmetric and bilinear, the criterion $T^{\dagger}T = 1$ is the criterion $h(Tx,Ty) = h(x,y)$ of an isometry of a symmetric form, the isometry monoid is the **orthogonal group** of the form, and the construction is that of *Isometries and Orthogonal Transformations*; at $* = \mathrm{id}$ as well the left multiplication is self-adjoint and every unitary element is self-adjoint, so $U(A)$ is the group of the involutive units and the containment $U(A) \subseteq U(A,h)$ is read for the orthogonal group of the form.
 
-*Proof.* At $\varsigma = \mathrm{id}$ the twist vanishes, the form is symmetric, and the two criteria coincide; the identification with the bilinear isometry theory is *The Sesquilinear Adjoint Operator*, §*The Comparison with the Bilinear Case* and *Isometries and Orthogonal Transformations*. The statement for $U(A)$ at $* = \mathrm{id}$ is $u^{*}u = u^{2} = 1$. $\square$
+*Proof.* At $\varsigma = \mathrm{id}$ the twist vanishes, the form is symmetric, and the two criteria coincide; the identification with the bilinear isometry theory is *The Sesquilinear Adjoint Operator*, §*The Comparison with the Bilinear Case* and *Isometries and Orthogonal Transformations*. The statement for $U(A)$ at $* = \mathrm{id}$ is $u^{*}u = u^{2} = 1$.
 
 **Remark (what the collapse preserves and what it drops).** The collapse preserves the isometry monoid, the unitary group, the containment of the algebra's group and the distinction of isometries from unitaries; it drops the twist of the scalar action, through which the adjoint operation is $\varsigma$-semilinear on the linear operators, and its companion, indefinite or not, becomes a symmetric bilinear form. The sesquilinear content of the article is therefore in the slot rules of the form that the operators preserve and in the two groups of the algebra that the operator groups contain.
 

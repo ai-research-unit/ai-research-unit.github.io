@@ -6,7 +6,7 @@ The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = H(\ti
 
 The central image **flattens the table**, and the point of the article is to say so and to read what is left. Because every value is a scalar multiple of $e_0$, the product of two elements of a subspace $S$ lies in $S$ exactly when $S$ contains the idempotent $e_0$; the closure of the product, which in a product with a vector part is a genuine computation on each subspace, here reduces to the single question *does $S$ contain $e_0$*. The answer is yes for the centre, for the quaternion subspace and for the Hermitian subspace, and no for the vector subspace, for the anti-quaternion subspace and for the anti-Hermitian subspace, each with a smallest witness that is the square of one of its basis elements, $e_1\star e_1 = e_0$ in the vector and anti-Hermitian subspaces and $(ie_1)\star(ie_1) = e_0$ in the anti-quaternion subspace. What remains is the reading of each subspace — the restricted form, its rank and signature, the idempotents, the elements of square zero and the isotropic elements — which the sections give one by one; the restricted form is the identity form on the natural real basis, positive definite, of rank the real dimension in every case, so apart from the closure and the idempotents the readings coincide, and this flatness is the mark of the central image.
 
-**Boundaries.** The subspaces and their names are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*; the pattern is the sibling *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions*; the form $H$ and its restriction are *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* and *Biquaternion Norm and Invertibility*, and the closure of the remarkable subspaces under the general plain sesquilinear product is the sibling article's. This article owns only the reading of the remarkable subspaces under the product of the block. Nothing topological and nothing metric appears.
+**Boundaries.** The subspaces and their names are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*; the pattern is the sibling *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions*; the form $H$ and its restriction are *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* and *Norm and Invertibility in the General Plain Algebra*, and the closure of the remarkable subspaces under the general plain sesquilinear product is the sibling article's. This article owns only the reading of the remarkable subspaces under the product of the block. Nothing topological and nothing metric appears.
 
 **Conventions.** As in the companion articles: $\mathbb{B}$ with basis $e_0,e_1,e_2,e_3$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the block is $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q) = P_0\overline{Q_0} + (\mathbf P,\overline{\mathbf Q})$. The remarkable subspaces are the eigenspaces of the three involutions of the algebra: the centre and the vector subspace for the natural conjugation, the quaternion and the anti-quaternion subspace for the coefficientwise conjugation, the Hermitian and the anti-Hermitian subspace for the Hermitian conjugation.
 
@@ -14,9 +14,9 @@ The central image **flattens the table**, and the point of the article is to say
 
 **Theorem (closure, read by the idempotent).** Let $S$ be one of the remarkable subspaces. Then $S$ is closed under the product of the block, $\tilde P\star\tilde Q \in S$ for all $\tilde P,\tilde Q \in S$, if and only if $e_0 \in S$.
 
-*Proof.* If $e_0\in S$ then the value $H(\tilde P,\tilde Q)e_0$ lies in $S$: for the complex subspace $\mathbb{C}_{\mathbb{B}}$ the coefficient is an arbitrary complex number and $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$; for the real subspaces $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$ the coefficient is real, and the real multiples of $e_0$ lie in the subspace. If $e_0\notin S$, take any nonzero $\tilde P\in S$; then $\tilde P\star\tilde P = H(\tilde P,\tilde P)e_0$ is a strictly positive real multiple of $e_0$, so it lies in $S$ only if $e_0$ lies in $S$, and the product therefore leaves $S$. $\square$
+*Proof.* If $e_0\in S$ then the value $H(\tilde P,\tilde Q)e_0$ lies in $S$: for the complex subspace $\mathbb{C}_{\mathbb{B}}$ the coefficient is an arbitrary complex number and $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$; for the real subspaces $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$ the coefficient is real, and the real multiples of $e_0$ lie in the subspace. If $e_0\notin S$, take any nonzero $\tilde P\in S$; then $\tilde P\star\tilde P = H(\tilde P,\tilde P)e_0$ is a strictly positive real multiple of $e_0$, so it lies in $S$ only if $e_0$ lies in $S$, and the product therefore leaves $S$.
 
-**Corollary (the three closed and the three that are not).** Of the remarkable subspaces, the centre, the quaternion subspace and the Hermitian subspace contain $e_0$ and are closed; the vector subspace, the anti-quaternion subspace and the anti-Hermitian subspace do not and are not. The remarkable subspaces were recomputed on $200$ pairs each: the closed ones gave $0$ failures, the ones that are not closed gave $200$ failures.
+**Corollary (the three closed and the three that are not).** Of the remarkable subspaces, the centre, the quaternion subspace and the Hermitian subspace contain $e_0$ and are closed; the vector subspace, the anti-quaternion subspace and the anti-Hermitian subspace do not and are not.
 
 ## The Centre
 
@@ -40,7 +40,7 @@ and it is **not closed**: the smallest witness is $e_1\star e_1 = H(e_1,e_1)e_0 
 
 ## The Quaternion Subspace
 
-The quaternion subspace is $\mathbb{H}_{\mathbb{B}} = \{\sum_\mu P_\mu e_\mu : P_\mu\in\mathbb{R}\}$, the real span of the basis, of real dimension four. On it the form is real, $H(\tilde P,\tilde Q) = P_0Q_0 + (\mathbf P,\mathbf Q) = B(\tilde P,\tilde Q)$, so the product is
+The quaternion subspace is $\mathbb{H}_{\mathbb{B}} = \{\sum_\mu P_\mu e_\mu : P_\mu\in\mathbb{R}\}$, the real span of the basis, of real dimension four. On it the form is real and is the quaternion form, $H(\tilde P,\tilde Q) = P_0Q_0 + (\mathbf P,\mathbf Q) = N(\tilde P,\tilde Q)$, so the product is
 
 $$
 \tilde P\star\tilde Q = \bigl(P_0Q_0 + (\mathbf P,\mathbf Q)\bigr)e_0 ,
@@ -66,7 +66,7 @@ $$
 H(\tilde P,\tilde Q) = p_0q_0 + \sum_{k=1}^{3} p_kq_k , \qquad \tilde P,\tilde Q\in\mathbb{M}_+ ,
 $$
 
-which is the positive part of the Hermitian form of *Biquaternion Norm and Invertibility* restricted to its coordinates, so the product reads
+which is the positive part of the Hermitian form of *Norm and Invertibility in the General Plain Algebra* restricted to its coordinates, so the product reads
 
 $$
 \tilde P\star\tilde Q = \Bigl(p_0q_0 + \sum_{k=1}^{3}p_kq_k\Bigr)e_0 ,
@@ -130,5 +130,5 @@ Under the product of the symmetric plain sesqualgebra every value is central, an
 - *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.md`), the sibling article whose pattern this one follows.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the subspaces and their definitions.
 - *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the relations between them.
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the forms restricted to the remarkable real subspaces.
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the forms restricted to the remarkable real subspaces.
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the closure of the remarkable subspaces under the four general products of the space.

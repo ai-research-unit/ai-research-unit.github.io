@@ -54,7 +54,6 @@ $$
 
 the sum of three squares. Two remarks fix the sign bookkeeping. First, **the Hamiltonian density is not minus the Lagrangian density**, although it is so for a mechanical Lagrangian whose kinetic energy is quadratic in the velocities: here $-\mathcal{L}=\frac{1}{c^2}|\dot\phi|^2-|\nabla\phi|^2-\mu^2|\phi|^2$, which differs from $\mathcal{H}$ by the kinetic term again, since the Legendre transform of a complex field pairs $\pi$ with $\dot\phi$ *and* $\pi^\dagger$ with $\dot\phi^*$. Second, **the density is the energy density**: the expression above is exactly the time–time component $T^0{}_0$ that *Noether's Theorem in Biquaternionic Form* obtains from translation invariance, positive because it is a sum of squares. The Hamiltonian of the field and the energy of the field are the same functional, and that is not a coincidence of the conventions but the content of the Legendre transform for a Lagrangian with no explicit time dependence.
 
-**Verification.** At the event $t=0.7$, $\mathbf{x}=(0.31,-0.47,0.23)$, with $c=2$, $\mu=1.1$, and $\phi$ a superposition of three on-shell plane waves of wavevectors $(1.3,0.2,-0.5)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$ and complex amplitudes $1.0+0.3i$, $0.7-0.2i$, $-0.5+0.4i$, the equation of motion had residual $1.8\times10^{-15}$; the direct evaluation of $\mathcal{H}$ and its evaluation from the Legendre transform $\pi\dot\phi+\pi^\dagger\dot\phi^*-\mathcal{L}$ agreed to the last bit $(6.684439532033879)$; and $-\mathcal{L}$ was $-1.3880$, below $\mathcal{H}$ by $2c^{-2}|\dot\phi|^2=8.0724$ as the remark requires. The superposition is used rather than a single plane wave because the cross terms are what a sign error in the Legendre transform would disturb.
 
 ### The Hamiltonian Field Equations
 
@@ -109,7 +108,6 @@ $$
 
 time-independent, the statement that the flux of the companion stress–energy article is a conserved current.
 
-**Verification.** On the same on-shell superposition as above, the flux $\mathbf{S}$ computed from $\dot\phi$ and $\nabla\phi$ and the time derivative $\partial_t\mathcal{H}$ computed analytically gave $\nabla\cdot\mathbf{S}=1.6415626452868701$ and $-\partial_t\mathcal{H}=1.6415626452868741$, a residual of $4.0\times10^{-15}$. The cancellation is a genuine test of the mass-term bookkeeping: dropping the equation of motion, or flipping the sign of the mass term, leaves the $\mu^2$ contributions uncancelled and the residual at order unity.
 
 ## The Biquaternionic Transcription
 
@@ -133,7 +131,6 @@ $$
 
 The second term is the mass form, positive and central. The first is the **kinetic-plus-gradient form**, and the identity $\mathrm{Sc}[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)]=c^{-2}|\dot\phi|^2+|\nabla\phi|^2$ is where the $ict$ convention does its quiet work: the time coefficient of the gradient is $\partial_{ict}\phi=-ic^{-1}\dot\phi$, so $|\partial_{ict}\phi|^2=c^{-2}|\dot\phi|^2$ and the kinetic term is *positive*, not negative. This is the same sign that makes the norm of a material four-vector have signature $(3,1)$ and the d'Alembertian $\Box=\partial_{ict}^2+\Delta$; a reader who computes $|\partial_{ict}\phi|^2$ as $-\frac{1}{c^2}|\dot\phi|^2$ has conjugated the operator instead of the field, and will find the kinetic energy negative. The form $\tilde X^{*}\tilde X$ is of course positive definite on the algebra — that is the Hermitian form of $\mathbb{M}_+$ — and it is *this* form, not the holomorphic norm $N(\tilde X) = \langle\tilde X,\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ of signature $(3,1)$, that the energy density uses. The distinction matters: the norm's vanishing set is the light cone, the Hermitian form's is only the origin.
 
-**Verification.** On the same superposition the biquaternion expression and the component expression $c^{-2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$ agreed exactly, $6.684439532033879$ both ways, with the scalar part evaluated through the $2\times2$ matrix representation $\Phi$ of the conventions article; the check confirms the sign of the $ict$ term and the reality of each form.
 
 ### The Energy–Momentum Biquaternion
 
@@ -176,7 +173,6 @@ $$
 
 the sum of the two sectors' kinetic, gradient and mass terms. Three features of this split are the ones the informational articles use. First, **both sectors contribute to the energy with the same sign**, so the energy is positive whichever sector carries the field. Second, the split is not the charge: the energy is the sum of the sector contributions, positive definite, whereas the charge is the pairing of the two sectors' fields that is antisymmetric in them, $j^0\propto\mathrm{Im}(\phi^*\dot\phi)\propto\phi_1\dot\phi_2-\phi_2\dot\phi_1$, and its sign is not fixed. The same two readings appear in the phase-space biquaternion of the companion symplectic article as the real and imaginary parts of the Hermitian pairing: the real part is the metric and is additive over the sectors, the imaginary part is the symplectic form and is antisymmetric. Third, **the split is a split of the kinetic and gradient terms as well as the mass term**, so the sector exchange that the oscillator article realises as a quarter-period advance is, in the field, an exchange of the two real scalars at every point.
 
-**Verification.** With $\phi_1$ a superposition of three real on-shell modes and $\phi_2$ a superposition of two, so that both sectors are occupied, $\mathrm{Sc}[\tilde\Phi^{*}\tilde\Phi]$ and $\frac12(\phi_1^2+\phi_2^2)$ agreed exactly, and the biquaternion density agreed with the component form above to $4.4\times10^{-16}$ at the event used throughout. Two-sector superpositions are used because with a single real scalar the split is invisible: the cross-sector terms that the check exercises vanish when one sector is empty.
 
 ## Covariant Hamiltonian Field Theory
 

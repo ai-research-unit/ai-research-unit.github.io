@@ -17,6 +17,8 @@ The general construction of the sesqualgebra parts is *The Symmetric and Antisym
 
 ## The Product
 
+**Definition (the class and its two slot involutions).** Let $\star$ be a product on the complex space $\mathbb{B}$ that is $\mathbb{C}$-linear in its first argument and $\bar{\cdot}$-semilinear in its second, so that $(\lambda\tilde P)\star\tilde Q=\lambda(\tilde P\star\tilde Q)$ and $\tilde P\star(\lambda\tilde Q)=\overline{\lambda}(\tilde P\star\tilde Q)$; such a product is a **sesquilinear product over $(\mathbb{C},\bar{\cdot}\,)$**, and the definition is stated once and for all in *The Sesquilinear Product*. The four general products of the space are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the product of the fourth general row carries the two slot involutions that the class uses, the natural conjugation ${}^{\natural}$ in the first slot and the Hermitian conjugation ${}^{*}$ in the second; the block is the part of that product that the adapted exchange fixes, and the exchange is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*. The definition below fixes the two slot involutions and the two orders, and the tables that follow are read from it.
+
 **Definition.** The **symmetric quaternionic sesquilinear product** of two biquaternions is
 
 $$
@@ -33,7 +35,7 @@ $$
 
 The scalar part is the Krein form $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ and the vector part is the mixed term $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$.
 
-*Proof.* Write the plain product of two quaternions as $XY=[X_0Y_0-(\mathbf{X},\mathbf{Y})]+X_0\mathbf{Y}+Y_0\mathbf{X}+\mathbf{X}\times\mathbf{Y}$. For the first order put $X=\tilde P^{\natural}$, of scalar part $P_0$ and vector part $-\mathbf{P}$, and $Y=\tilde Q^{*}$, of scalar part $\overline{Q_0}$ and vector part $-\overline{\mathbf{Q}}$: the vector part of the product is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}}$. For the second order the same computation with the factors exchanged gives $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$, since $\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$. The two vector parts differ by the sign of the cross product, whose half-sum vanishes and whose half-difference is $\mathbf{P}\times\overline{\mathbf{Q}}$, and their scalar parts are equal, since $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$; the half-sum is the displayed value. $\square$
+*Proof.* Write the plain product of two quaternions as $XY=[X_0Y_0-(\mathbf{X},\mathbf{Y})]+X_0\mathbf{Y}+Y_0\mathbf{X}+\mathbf{X}\times\mathbf{Y}$. For the first order put $X=\tilde P^{\natural}$, of scalar part $P_0$ and vector part $-\mathbf{P}$, and $Y=\tilde Q^{*}$, of scalar part $\overline{Q_0}$ and vector part $-\overline{\mathbf{Q}}$: the vector part of the product is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}}$. For the second order the same computation with the factors exchanged gives $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$, since $\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$. The two vector parts differ by the sign of the cross product, whose half-sum vanishes and whose half-difference is $\mathbf{P}\times\overline{\mathbf{Q}}$, and their scalar parts are equal, since $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$; the half-sum is the displayed value.
 
 **Corollary (the two projections of the value).** The scalar part of the value is a complex multiple of $e_0$, and the vector part of the value is a complex vector in $\mathbf{e}=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; concretely
 
@@ -43,7 +45,7 @@ $$
 \mathrm{Vect}(\tilde P\star\tilde Q)=-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}.
 $$
 
-*Proof.* The scalar part is the scalar part of the value, the first display; the vector part is read in the second. $\square$
+*Proof.* The scalar part is the scalar part of the value, the first display; the vector part is read in the second.
 
 **Proposition (the class).** The product $\star$ is additive in each argument, $\mathbb{C}$-linear in the first and $\bar{\cdot}$-semilinear in the second:
 
@@ -53,7 +55,7 @@ $$
 \tilde P\star(\lambda\tilde Q)=\bar\lambda\,(\tilde P\star\tilde Q).
 $$
 
-*Proof.* Both orders of the general quaternionic sesquilinear product are sesquilinear of the same size in their slots, and $\star$ is their half-sum; the linearity in the first slot is that of $\tilde P^{\natural}\tilde Q^{*}$ and the conjugate-linearity in the second is that of both orders, since ${}^{*}$ is conjugate-linear. The two rules are the two scalar rules of *Sesqualgebras* read on $\star$. $\square$
+*Proof.* Both orders of the general quaternionic sesquilinear product are sesquilinear of the same size in their slots, and $\star$ is their half-sum; the linearity in the first slot is that of $\tilde P^{\natural}\tilde Q^{*}$ and the conjugate-linearity in the second is that of both orders, since ${}^{*}$ is conjugate-linear. The two rules are the two scalar rules of *Sesqualgebras* read on $\star$.
 
 **Theorem (conjugate-commutativity).** The product is conjugate-commutative:
 
@@ -61,7 +63,7 @@ $$
 \tilde P\star\tilde Q=\overline{\tilde Q\star\tilde P}.
 $$
 
-*Proof.* The coefficientwise conjugation satisfies $\overline{\tilde P^{\natural}}=\tilde P^{*}$ and $\overline{\tilde Q^{*}}=\tilde Q^{\natural}$, so $\overline{\tilde Q\star\tilde P}=\tfrac12\bigl(\overline{\tilde Q^{\natural}\tilde P^{*}}+\overline{\tilde P^{*}\tilde Q^{\natural}}\bigr)=\tfrac12\bigl(\tilde Q^{*}\tilde P^{\natural}+\tilde P^{\natural}\tilde Q^{*}\bigr)=\tilde P\star\tilde Q$. $\square$
+*Proof.* The coefficientwise conjugation satisfies $\overline{\tilde P^{\natural}}=\tilde P^{*}$ and $\overline{\tilde Q^{*}}=\tilde Q^{\natural}$, so $\overline{\tilde Q\star\tilde P}=\tfrac12\bigl(\overline{\tilde Q^{\natural}\tilde P^{*}}+\overline{\tilde P^{*}\tilde Q^{\natural}}\bigr)=\tfrac12\bigl(\tilde Q^{*}\tilde P^{\natural}+\tilde P^{\natural}\tilde Q^{*}\bigr)=\tilde P\star\tilde Q$.
 
 **Remark.** The conjugate-commutativity is the symmetry the block inherits from its construction, and it is *not* commutativity: the product is not commutative, and it is not associative either. The block is the one of the four symmetric parts that is neither central nor commutative, and its diagonal is the subject of *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*.
 
@@ -77,7 +79,7 @@ $$
 
 where $\mathrm{SPA}(\tilde X,\tilde Y)=\tfrac12(\tilde X\tilde Y+\tilde Y\tilde X)$ is the symmetric plain product.
 
-*Proof.* The natural conjugation is an anti-automorphism, so $(\overline{\tilde Q}\tilde P)^{\natural}=\tilde P^{\natural}(\overline{\tilde Q})^{\natural}=\tilde P^{\natural}\tilde Q^{*}$, since $(\overline{\tilde Q})^{\natural}=\tilde Q^{*}$; the second identity is the same with the factors exchanged. Averaging gives $\tilde P\star\tilde Q=\bigl[\tfrac12(\overline{\tilde Q}\tilde P+\tilde P\overline{\tilde Q})\bigr]^{\natural}=\bigl[\mathrm{SPA}(\overline{\tilde Q},\tilde P)\bigr]^{\natural}$. $\square$
+*Proof.* The natural conjugation is an anti-automorphism, so $(\overline{\tilde Q}\tilde P)^{\natural}=\tilde P^{\natural}(\overline{\tilde Q})^{\natural}=\tilde P^{\natural}\tilde Q^{*}$, since $(\overline{\tilde Q})^{\natural}=\tilde Q^{*}$; the second identity is the same with the factors exchanged. Averaging gives $\tilde P\star\tilde Q=\bigl[\tfrac12(\overline{\tilde Q}\tilde P+\tilde P\overline{\tilde Q})\bigr]^{\natural}=\bigl[\mathrm{SPA}(\overline{\tilde Q},\tilde P)\bigr]^{\natural}$.
 
 **Remark (the orders are not conjugate to each other).** The second order $\tilde Q^{*}\tilde P^{\natural}$ is not $\overline{\tilde P^{\natural}\tilde Q^{*}}$; the two differ by the cross product, $(\tilde P^{\natural}\tilde Q^{*})-(\tilde Q^{*}\tilde P^{\natural})=2\,\mathbf{P}\times\overline{\mathbf{Q}}$, so the cross-product cancellation in the half-sum is not a conjugation but a genuine cancellation of two independent orders.
 
@@ -91,11 +93,11 @@ e_0\star\tilde Q=\tilde Q^{*},
 \tilde Q\star e_0=\tilde Q^{\natural}.
 $$
 
-*Proof.* $e_0\star\tilde Q=\tfrac12\bigl(e_0^{\natural}\tilde Q^{*}+\tilde Q^{*}e_0^{\natural}\bigr)=\tfrac12(\tilde Q^{*}+\tilde Q^{*})=\tilde Q^{*}$, since $e_0^{\natural}=e_0$ is the unit of the plain product; the second is the conjugate-commutative mirror, or the same computation with the factors exchanged. $\square$
+*Proof.* $e_0\star\tilde Q=\tfrac12\bigl(e_0^{\natural}\tilde Q^{*}+\tilde Q^{*}e_0^{\natural}\bigr)=\tfrac12(\tilde Q^{*}+\tilde Q^{*})=\tilde Q^{*}$, since $e_0^{\natural}=e_0$ is the unit of the plain product; the second is the conjugate-commutative mirror, or the same computation with the factors exchanged.
 
 **Corollary (no unit on either side).** There is no element $\tilde E$ with $\tilde E\star\tilde Q=\tilde Q$ for all $\tilde Q$, and none with $\tilde Q\star\tilde E=\tilde Q$ for all $\tilde Q$.
 
-*Proof.* A left unit would satisfy $\tilde E\star e_0=e_0$, that is $\tilde E^{\natural}=e_0$, whence $\tilde E=e_0$; but $e_0\star e_1=e_1^{*}=-e_1\neq e_1$, so $e_0$ is not a left unit. The right case is the mirror, through $\tilde Q\star e_0=\tilde Q^{\natural}$, and $\tilde Q^{\natural}\neq\tilde Q$ for $\tilde Q=e_1$. $\square$
+*Proof.* A left unit would satisfy $\tilde E\star e_0=e_0$, that is $\tilde E^{\natural}=e_0$, whence $\tilde E=e_0$; but $e_0\star e_1=e_1^{*}=-e_1\neq e_1$, so $e_0$ is not a left unit. The right case is the mirror, through $\tilde Q\star e_0=\tilde Q^{\natural}$, and $\tilde Q^{\natural}\neq\tilde Q$ for $\tilde Q=e_1$.
 
 **Remark.** The two actions are the two conjugations of the algebra, so the unit candidate $e_0$ acts as the star conjugation on the left and as the natural conjugation on the right; the same computation shows that no other element can do better, since it must already fail at $e_1$. The one-sided actions are *The Two One-Sided Actions and the Absence of a Unit*, read on the general quaternionic sesquilinear product; here they are the actions of the block, and they agree with the general ones.
 
@@ -112,7 +114,7 @@ $$
 
 and it is symmetric, the table being symmetric across its diagonal.
 
-*Proof.* The entries are read from the definition. For the first row and column, $e_0\star e_k=e_k^{*}=-e_k$ and $e_k\star e_0=e_k^{\natural}=-e_k$. For the diagonal, $e_k\star e_k=\tfrac12\bigl(e_k^{\natural}e_k^{*}+e_k^{*}e_k^{\natural}\bigr)=\tfrac12\bigl((-e_k)(-e_k)+(-e_k)(-e_k)\bigr)=e_k^{2}=-e_0$. For two distinct vector directions, $e_i\star e_j=\tfrac12\bigl((-e_i)(-e_j)+(-e_j)(-e_i)\bigr)=\tfrac12(e_ie_j+e_je_i)=0$ by the anti-commutation of the quaternion units. The symmetry is the conjugate-commutativity read on real elements. $\square$
+*Proof.* The entries are read from the definition. For the first row and column, $e_0\star e_k=e_k^{*}=-e_k$ and $e_k\star e_0=e_k^{\natural}=-e_k$. For the diagonal, $e_k\star e_k=\tfrac12\bigl(e_k^{\natural}e_k^{*}+e_k^{*}e_k^{\natural}\bigr)=\tfrac12\bigl((-e_k)(-e_k)+(-e_k)(-e_k)\bigr)=e_k^{2}=-e_0$. For two distinct vector directions, $e_i\star e_j=\tfrac12\bigl((-e_i)(-e_j)+(-e_j)(-e_i)\bigr)=\tfrac12(e_ie_j+e_je_i)=0$ by the anti-commutation of the quaternion units. The symmetry is the conjugate-commutativity read on real elements.
 
 **Remark (the table is the real symmetric product of the basis).** The same sixteen entries are the values of the symmetric part of the general quaternionic sesquilinear product on the real basis. The block is not an algebra with a unit, since the first row and column carry the two conjugations rather than the identity, and it is not the quaternion multiplication, since $e_i\star e_j$ vanishes for distinct vector directions instead of giving the third unit.
 
@@ -128,7 +130,7 @@ $$
 
 The scalar part is real, and the vector part vanishes exactly when the mixed term does.
 
-*Proof.* Put $\tilde P=\tilde Q$ in the scalar–vector form: the scalar part is $K(\tilde Q,\tilde Q)=|Q_0|^{2}-\sum_k|Q_k|^{2}$, a sum of real squares with signs, and the vector part is $-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}=-2\mathrm{Re}(Q_0\overline{\mathbf{Q}})$, a real vector. $\square$
+*Proof.* Put $\tilde P=\tilde Q$ in the scalar–vector form: the scalar part is $K(\tilde Q,\tilde Q)=|Q_0|^{2}-\sum_k|Q_k|^{2}$, a sum of real squares with signs, and the vector part is $-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}=-2\mathrm{Re}(Q_0\overline{\mathbf{Q}})$, a real vector.
 
 **Theorem (the polarisation).** For all biquaternions,
 
@@ -138,7 +140,7 @@ $$
 
 so the block is the sum of the polarisation of its square and the half-difference of its two orders, the two parts being the conjugate-even and the conjugate-odd part of the value.
 
-*Proof.* Expand the square by additivity: $(\tilde P+\tilde Q)\star(\tilde P+\tilde Q)=\tilde P\star\tilde P+\tilde P\star\tilde Q+\tilde Q\star\tilde P+\tilde Q\star\tilde Q$. The first summand of the display is therefore $\tfrac12(\tilde P\star\tilde Q+\tilde Q\star\tilde P)$, and adding the half-difference $\tfrac12(\tilde P\star\tilde Q-\tilde Q\star\tilde P)$ recovers $\tilde P\star\tilde Q$. Since $\tilde Q\star\tilde P=\overline{\tilde P\star\tilde Q}$ by conjugate-commutativity, the two parts are $\tfrac12(\tilde P\star\tilde Q+\overline{\tilde P\star\tilde Q})$ and $\tfrac12(\tilde P\star\tilde Q-\overline{\tilde P\star\tilde Q})$, the conjugate-even and conjugate-odd parts. $\square$
+*Proof.* Expand the square by additivity: $(\tilde P+\tilde Q)\star(\tilde P+\tilde Q)=\tilde P\star\tilde P+\tilde P\star\tilde Q+\tilde Q\star\tilde P+\tilde Q\star\tilde Q$. The first summand of the display is therefore $\tfrac12(\tilde P\star\tilde Q+\tilde Q\star\tilde P)$, and adding the half-difference $\tfrac12(\tilde P\star\tilde Q-\tilde Q\star\tilde P)$ recovers $\tilde P\star\tilde Q$. Since $\tilde Q\star\tilde P=\overline{\tilde P\star\tilde Q}$ by conjugate-commutativity, the two parts are $\tfrac12(\tilde P\star\tilde Q+\overline{\tilde P\star\tilde Q})$ and $\tfrac12(\tilde P\star\tilde Q-\overline{\tilde P\star\tilde Q})$, the conjugate-even and conjugate-odd parts.
 
 **Remark.** The polarisation separates the conjugate-even part of the value, which is the polarisation of the square, from the conjugate-odd half-difference $\tfrac12(\tilde P\star\tilde Q-\tilde Q\star\tilde P)$. The antisymmetric companion of the *general* quaternionic sesquilinear product is a different object: from $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$ one reads $\tilde P^{\natural}\tilde Q^{*}=\tilde P\star\tilde Q+\mathbf{P}\times\overline{\mathbf{Q}}$, the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$ being the product of Block 8 of the batch, and that reconstruction is the one of *The 12 Products of the Biquaternion Complex Space*.
 
@@ -154,7 +156,7 @@ $$
 
 and they differ by $-2e_0$. The product satisfies no Jordan identity.
 
-*Proof.* $e_1\star e_1=-e_0$ by the table. Then $x^{2}\star x=(-e_0)\star e_1=-e_0^{\natural}e_1^{*}$ composed as the half-sum: $-e_0^{\natural}=-e_0$ and $e_1^{*}=-e_1$, so $(-e_0)\star e_1=\tfrac12\bigl((-e_0)(-e_1)+(-e_1)(-e_0)\bigr)=e_1$; hence $(x^{2}\star x)\star x=e_1\star e_1=-e_0$. The right side is $x^{2}\star(x\star x)=(-e_0)\star(-e_0)=\tfrac12\bigl((-e_0)^{\natural}(-e_0)^{*}+(-e_0)^{*}(-e_0)^{\natural}\bigr)=\tfrac12(e_0+e_0)=e_0$. $\square$
+*Proof.* $e_1\star e_1=-e_0$ by the table. Then $x^{2}\star x=(-e_0)\star e_1=-e_0^{\natural}e_1^{*}$ composed as the half-sum: $-e_0^{\natural}=-e_0$ and $e_1^{*}=-e_1$, so $(-e_0)\star e_1=\tfrac12\bigl((-e_0)(-e_1)+(-e_1)(-e_0)\bigr)=e_1$; hence $(x^{2}\star x)\star x=e_1\star e_1=-e_0$. The right side is $x^{2}\star(x\star x)=(-e_0)\star(-e_0)=\tfrac12\bigl((-e_0)^{\natural}(-e_0)^{*}+(-e_0)^{*}(-e_0)^{\natural}\bigr)=\tfrac12(e_0+e_0)=e_0$.
 
 **Remark (the shape of the failure).** The failure of the block is a **central shift**: the two sides are $-e_0$ and $e_0$, and their difference $-2e_0$ lies in the centre. The sibling $\mathrm{SPS}$ fails on the same witness differently: there one side vanishes and the other is $e_0$, so the failure is an outright vanishing rather than a shift. The two failures are the two ways a symmetric sesquilinear product can miss the Jordan identity, and they are recorded side by side in *The 12 Products of the Biquaternion Complex Space*.
 
@@ -170,7 +172,7 @@ $$
 
 the two halves being sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ and valued, the first in no subspace of the remarkable subspaces and the second in the vector subspace.
 
-*Proof.* The split is the conjugate-transpose split of $\tilde P^{\natural}\tilde Q^{*}$: the exchange of the product is $\overline{\tilde Q^{\natural}\tilde P^{*}}=\tilde Q^{*}\tilde P^{\natural}$, and the fixed and negated halves are the two displayed operations. The value of $\mathrm{AQS}$ is the cross product by the vector-part computation of §*The Product*, and its image is the vector subspace by definition. The placement is the row $\mathrm{SQS}$ and the row $\mathrm{AQS}$ of the table of *The 12 Products of the Biquaternion Complex Space*. $\square$
+*Proof.* The split is the conjugate-transpose split of $\tilde P^{\natural}\tilde Q^{*}$: the exchange of the product is $\overline{\tilde Q^{\natural}\tilde P^{*}}=\tilde Q^{*}\tilde P^{\natural}$, and the fixed and negated halves are the two displayed operations. The value of $\mathrm{AQS}$ is the cross product by the vector-part computation of §*The Product*, and its image is the vector subspace by definition. The placement is the row $\mathrm{SQS}$ and the row $\mathrm{AQS}$ of the table of *The 12 Products of the Biquaternion Complex Space*.
 
 **Remark.** Together with $\mathrm{SPA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$ the block is one of the four symmetric parts of the four general products. The two sesquilinear symmetric parts separate the block from the plain sesquilinear one: $\mathrm{SPS}$ collapses to the centre, with the central diagonal that is the positive Hermitian form times $e_0$, while $\mathrm{SQS}$ images the whole algebra and has a non-central diagonal. Among the two bilinear symmetric parts $\mathrm{SQA}$ collapses to the centre too, while $\mathrm{SPA}$ shares with the block the whole-algebra image and the non-central square, the plain square of $e_0+e_1$ being $2e_1$; the block is singled out by its value, the form $K$ in the scalar part and the mixed term alone in the vector part, the cross product having cancelled. The value of a general pair generates the whole algebra, a fact read in *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions*; the diagonal and the idempotents are read in *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*.
 

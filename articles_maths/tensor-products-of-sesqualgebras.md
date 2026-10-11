@@ -6,7 +6,7 @@ The direct product of two sesqualgebras multiplies them componentwise and needs 
 
 The answer has two parts. The product of the tensor product is built from the products of the two factors and inherits their scalar rules, so $A\otimes_R B$ is a sesqualgebra over the same datum $(R,\varsigma)$ and the $\varsigma$-twist is carried through untouched. The involution is the subtler half: it is an anti-automorphism of the tensor product of the two associative products, and read on the sesquilinear product of the layer, which is the **derived** operation of those products, it does not preserve that product but **transposes** it, $\natural(X\star Y)=Y\star X$. That is what the involution of a tensor product of sesquilinear objects does, and it is the reason the tensor product is not the componentwise construction of *Direct Products of Sesqualgebras*: in the direct product the two factors annihilate one another, and here they commute and their products fill the algebra.
 
-The setting is that of *Sesqualgebras*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and a sesqualgebra over $(R,\varsigma)$ is an $R$-module $A$ with a product that is $R$-linear in the first variable and $\varsigma$-semilinear in the second; throughout, the product in play is the **derived** operation $x\star y=xy^{*}$ of an associative algebra carrying a $\varsigma$-semilinear involution ${}^{*}$ of order two with $(xy)^{*}=y^{*}x^{*}$, which is the standard example of *Sesqualgebras*, §*The Standard Example*, and ${}^{*}$ is the datum involution of the layer. Both factors are taken over the same datum. The universal property, the comparison with the free product and the tensor product of ideals are *Tensor Products of Algebras*; the componentwise construction and the central idempotents it cuts are *Direct Products of Sesqualgebras*; the transposed product and the two parities are *The Sesquilinear Product*; the two-sided ideals and the quotients are *Ideals and Quotients of a Sesqualgebra*; and the worked algebras are *Introduction to the General Plain Algebra of Biquaternions*, *Biquaternions as an Algebra over $\mathbb{R}$* and *Biquaternions as a Vector Space over $\mathbb{C}$*.
+The setting is that of *Sesqualgebras*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and a sesqualgebra over $(R,\varsigma)$ is an $R$-module $A$ with a product that is $R$-linear in the first variable and $\varsigma$-semilinear in the second; throughout, the product in play is the **derived** operation $x\star y=xy^{*}$ of an associative algebra carrying a $\varsigma$-semilinear involution ${}^{*}$ of order two with $(xy)^{*}=y^{*}x^{*}$, which is the standard example of *Sesqualgebras*, §*The Standard Example*, and ${}^{*}$ is the datum involution of the layer. Both factors are taken over the same datum. The universal property, the comparison with the free product and the tensor product of ideals are *Tensor Products of Algebras*; the componentwise construction and the central idempotents it cuts are *Direct Products of Sesqualgebras*; the transposed product and the two parities are *The Sesquilinear Product*; the two-sided ideals and the quotients are *Ideals and Quotients of a Sesqualgebra*; and the worked algebras are *Introduction to the General Plain Algebra of Biquaternions*, *The Realification of the General Plain Algebra* and *Biquaternions as a Vector Space over $\mathbb{C}$*.
 
 ---
 
@@ -26,7 +26,7 @@ The definition presumes that the displayed value on elementary tensors extends, 
 
 **Proposition (well-definedness).** The product above is well defined, and $A\otimes_R B$ is an $R$-module with a product additive in each variable.
 
-*Proof.* By the universal property of the tensor product of modules, an $R$-bilinear map $A\times B\to M$ into an $R$-module $M$ induces an $R$-linear map $A\otimes_R B\to M$. Fix $c\in A$ and $d\in B$ and consider $(a,b)\mapsto ac\otimes bd$; it is $R$-bilinear because the products of $A$ and $B$ are additive in each variable, so it induces an $R$-linear $L_{c,d}$ with $L_{c,d}(a\otimes b)=ac\otimes bd$. Fixing instead $x=\sum_ia_i\otimes b_i$ and mapping $(c,d)\mapsto L_{c,d}(x)$ is again $R$-bilinear and induces $R_x$ with $R_x(c\otimes d)=\sum_i a_ic\otimes b_id$; setting $xy=R_x(y)$ gives the product, well defined because $R_x$ depends on $x$ alone. $\square$
+*Proof.* By the universal property of the tensor product of modules, an $R$-bilinear map $A\times B\to M$ into an $R$-module $M$ induces an $R$-linear map $A\otimes_R B\to M$. Fix $c\in A$ and $d\in B$ and consider $(a,b)\mapsto ac\otimes bd$; it is $R$-bilinear because the products of $A$ and $B$ are additive in each variable, so it induces an $R$-linear $L_{c,d}$ with $L_{c,d}(a\otimes b)=ac\otimes bd$. Fixing instead $x=\sum_ia_i\otimes b_i$ and mapping $(c,d)\mapsto L_{c,d}(x)$ is again $R$-bilinear and induces $R_x$ with $R_x(c\otimes d)=\sum_i a_ic\otimes b_id$; setting $xy=R_x(y)$ gives the product, well defined because $R_x$ depends on $x$ alone.
 
 **Theorem (the two scalar rules).** If the products of $A$ and of $B$ are $R$-linear in the first variable and $\varsigma$-semilinear in the second, then so is the product of $A\otimes_R B$; the tensor product is therefore a sesqualgebra over the same datum $(R,\varsigma)$.
 
@@ -42,7 +42,7 @@ $$
 (a\otimes b)\bigl(\lambda(c\otimes d)\bigr) = (a\otimes b)(\lambda c\otimes d) = a(\lambda c)\otimes bd = \varsigma(\lambda)(ac)\otimes bd = \varsigma(\lambda)\bigl((a\otimes b)(c\otimes d)\bigr),
 $$
 
-by the second rule of $A$. The two computations use $A$ alone; the same ones with $B$ in the second slot give the same conclusion, and the general case follows by additivity. $\square$
+by the second rule of $A$. The two computations use $A$ alone; the same ones with $B$ in the second slot give the same conclusion, and the general case follows by additivity.
 
 **Corollary (the collapse at $\varsigma = \mathrm{id}$).** If $\varsigma = \mathrm{id}$ then the products of $A$ and $B$ are bilinear, the product above is the ordinary tensor product of algebras, and $A\otimes_R B$ is an ordinary $R$-algebra. As in *Sesqualgebras*, the sesquilinear construction contains the bilinear one as the case of the trivial base involution, and the tensor product contains the tensor product of algebras as the same case.
 
@@ -74,7 +74,7 @@ $$
 \natural\bigl((a\otimes b)(c\otimes d)\bigr) = \natural(ac\otimes bd) = (ac)^{*}\otimes(bd)^{*} = c^{*}a^{*}\otimes d^{*}b^{*} = (c^{*}\otimes d^{*})(a^{*}\otimes b^{*}) = \natural(c\otimes d)\,\natural(a\otimes b),
 $$
 
-and the general case is additivity. $\square$
+and the general case is additivity.
 
 **Remark.** The hypothesis of the last clause is a hypothesis on the factors and not on the construction: the anti-multiplicativity of $\natural$ is the anti-multiplicativity of the two factor involutions read coordinatewise. It holds for the **envelope**, that is the associative product, where ${}^{*}$ reverses products by definition, and it fails for the **derived** operation $x\star y=xy^{*}$ that is the sesquilinear product of the layer; the next section shows what survives in that case, namely the transposition $\natural(x\star y)=y\star x$. The two readings of the construction are the tensor product of the two associative algebras and the sesquilinear tensor product of the two sesqualgebras, and they are different objects: the subalgebra of the tensor product generated by the two canonical images is closed under $\natural$ in the first reading and not in the second.
 
@@ -90,7 +90,7 @@ $$
 (a\otimes b)\star(c\otimes d) = (a\star c)\otimes(b\star d) .
 $$
 
-*Proof.* $(a\otimes b)\star(c\otimes d)=(a\otimes b)\,\natural(c\otimes d)=(a\otimes b)(c^{*}\otimes d^{*})=ac^{*}\otimes bd^{*}=(a\star c)\otimes(b\star d)$. $\square$
+*Proof.* $(a\otimes b)\star(c\otimes d)=(a\otimes b)\,\natural(c\otimes d)=(a\otimes b)(c^{*}\otimes d^{*})=ac^{*}\otimes bd^{*}=(a\star c)\otimes(b\star d)$.
 
 **Theorem (the involution transposes the sesquilinear product).** Suppose the involutions of $A$ and of $B$ are anti-automorphisms of their products, as in the theorem above. Then for all $x, y\in A\otimes_R B$,
 
@@ -98,7 +98,7 @@ $$
 \natural(x\star y) = y\star x .
 $$
 
-*Proof.* By the two theorems above and the anti-multiplicativity of the involutions of the factors, on elementary tensors $\natural\bigl((a\otimes b)\star(c\otimes d)\bigr)=\natural\bigl((ac^{*})\otimes(bd^{*})\bigr)=(ac^{*})^{*}\otimes(bd^{*})^{*}=ca^{*}\otimes db^{*}=(c\star a)\otimes(d\star b)=(c\otimes d)\star(a\otimes b)$, and the general case is additivity. $\square$
+*Proof.* By the two theorems above and the anti-multiplicativity of the involutions of the factors, on elementary tensors $\natural\bigl((a\otimes b)\star(c\otimes d)\bigr)=\natural\bigl((ac^{*})\otimes(bd^{*})\bigr)=(ac^{*})^{*}\otimes(bd^{*})^{*}=ca^{*}\otimes db^{*}=(c\star a)\otimes(d\star b)=(c\otimes d)\star(a\otimes b)$, and the general case is additivity.
 
 **Corollary.** Suppose the factors are unital, so that $A\otimes_R B$ has the unit $1\otimes 1$. Then the tensor involution is an anti-automorphism of the sesquilinear product $\star$, that is $\natural(x\star y)=\natural(y)\star\natural(x)$ for all $x$, $y$, if and only if both factor involutions are trivial and the tensor product of the envelopes is commutative. Whenever either factor carries a nontrivial involution it is not, and the identity $\natural(x\star y)=y\star x$ is then the sharp form of what it does. The reason is that $\natural$ is anti-multiplicative for the envelopes, so that $\natural(x\star y)=y\,\natural(x)$ and $\natural(y)\star\natural(x)=\natural(y)\,x$, and with the unit $y=1\otimes 1$ the two agree for every pair only if $\natural$ is the identity; the case of trivial involutions is left with the commutativity of the envelope alone. Without a unit the "only if" direction fails: the **zero product** is $\varsigma$-sesquilinear for every involution, its involution is an anti-automorphism because both products vanish, and the anti-automorphism property then holds with a nontrivial $\natural$. The transposed product $y\star x$ and its opposite parity are *The Sesquilinear Product*.
 
@@ -120,7 +120,7 @@ $$
 \iota_A(a)\iota_B(b) = a\otimes b = \iota_B(b)\iota_A(a) .
 $$
 
-*Proof.* Additivity and $R$-linearity of $\iota_A$ are $(a+a')\otimes 1=(a\otimes 1)+(a'\otimes 1)$ and $(\lambda a)\otimes 1=\lambda(a\otimes 1)$, and its multiplicativity is $aa'\otimes 1=(a\otimes 1)(a'\otimes 1)$; the same holds with $\iota_B$. Compatibility with the involution is $\natural(a\otimes 1)=a^{*}\otimes 1$ and $\natural(1\otimes b)=1\otimes b^{*}$. The commuting is $(a\otimes 1)(1\otimes b)=a\otimes b=(1\otimes b)(a\otimes 1)$. $\square$
+*Proof.* Additivity and $R$-linearity of $\iota_A$ are $(a+a')\otimes 1=(a\otimes 1)+(a'\otimes 1)$ and $(\lambda a)\otimes 1=\lambda(a\otimes 1)$, and its multiplicativity is $aa'\otimes 1=(a\otimes 1)(a'\otimes 1)$; the same holds with $\iota_B$. Compatibility with the involution is $\natural(a\otimes 1)=a^{*}\otimes 1$ and $\natural(1\otimes b)=1\otimes b^{*}$. The commuting is $(a\otimes 1)(1\otimes b)=a\otimes b=(1\otimes b)(a\otimes 1)$.
 
 **Corollary.** Every element of $A\otimes_R B$ is a finite sum of products of an element of the image of $\iota_A$ and an element of the image of $\iota_B$, and the two images generate $A\otimes_R B$ as a sesqualgebra; the tensor product is generated by two commuting copies of its factors.
 
@@ -149,7 +149,7 @@ $$
 \Phi\bigl(\natural(a\otimes b)\bigr) = \Phi(a^{*}\otimes b^{*}) = f(a^{*})g(b^{*}) = f(a)^{*}g(b)^{*} = \bigl(f(a)g(b)\bigr)^{*} = \Phi(a\otimes b)^{*},
 $$
 
-the second-to-last equality again by the commuting of the images. The two constructions are inverse. $\square$
+the second-to-last equality again by the commuting of the images. The two constructions are inverse.
 
 **Corollary (the coproduct of the commutative factors).** If $A$, $B$, $C$ are commutative, the commuting condition is automatic and the theorem reads
 
@@ -163,7 +163,7 @@ so that $A\otimes_R B$ with the two canonical maps is the **coproduct** of $A$ a
 
 **Proposition.** The tensor product is not the coproduct in the category of all sesqualgebras over $(R,\varsigma)$. For noncommutative factors the coproduct is the free product, and the tensor product is its quotient by the relation that every element of $A$ commutes with every element of $B$.
 
-*Proof.* The free product of *Tensor Products of Algebras*, §*The Universal Property*, satisfies the universal property of pairs of morphisms with no commuting condition; imposing $f(a)g(b)=g(b)f(a)$ is exactly the tensor product's condition, so the tensor product is the quotient of the free product by those relations. $\square$
+*Proof.* The free product of *Tensor Products of Algebras*, §*The Universal Property*, satisfies the universal property of pairs of morphisms with no commuting condition; imposing $f(a)g(b)=g(b)f(a)$ is exactly the tensor product's condition, so the tensor product is the quotient of the free product by those relations.
 
 **Remark.** The three constructions are distinguished by what they ask of the two factors, and the table is the one of *Direct Products of Sesqualgebras* with the sesquilinear column added.
 

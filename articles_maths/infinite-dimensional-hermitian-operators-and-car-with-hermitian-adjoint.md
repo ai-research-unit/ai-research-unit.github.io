@@ -81,7 +81,7 @@ and the assignment $U\mapsto\alpha_U$ is a homomorphism from the unitary group t
 
 ## Worked Anchor: The Finite Truncation
 
-Every statement of the article whose finite shadow is computable was checked in the finite Clifford algebra. In $\mathrm{Cl}_{0,2n}(\mathbb{R})$ with the Witt basis $a_j = \tfrac12(e_{2j-1}+ie_{2j})$: the CAR relations $\{a_j,a_k^{\ast}\} = \delta_{jk}$, $\{a_j,a_k\} = 0$, $a_j^{2} = 0$; the CAR adjoint is the Clifford dagger; the number operator $N = \sum_ja_j^{\ast}a_j$ is self-adjoint; the identity $a_ja_j^{\ast} = 1-a_j^{\ast}a_j$ holds; the vacuum idempotent $\prod_ja_ja_j^{\ast}$ is a self-adjoint idempotent; and the Fock space is the exterior algebra of the creation operators, with the number operator grading it by the exterior degree. These are the finite anchors of the infinite statements, and they are the reason the finite Hermitian Clifford algebra is the right model of the fermionic Fock space.
+In $\mathrm{Cl}_{0,2n}(\mathbb{R})$ with the Witt basis $a_j = \tfrac12(e_{2j-1}+ie_{2j})$: the CAR relations $\{a_j,a_k^{\ast}\} = \delta_{jk}$, $\{a_j,a_k\} = 0$, $a_j^{2} = 0$; the CAR adjoint is the Clifford dagger; the number operator $N = \sum_ja_j^{\ast}a_j$ is self-adjoint; the identity $a_ja_j^{\ast} = 1-a_j^{\ast}a_j$ holds; the vacuum idempotent $\prod_ja_ja_j^{\ast}$ is a self-adjoint idempotent; and the Fock space is the exterior algebra of the creation operators, with the number operator grading it by the exterior degree. These are the finite anchors of the infinite statements, and they are the reason the finite Hermitian Clifford algebra is the right model of the fermionic Fock space.
 
 ## Summary
 

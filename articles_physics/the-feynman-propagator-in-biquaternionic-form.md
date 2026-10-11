@@ -137,7 +137,6 @@ $$
 \tilde{k}\tilde{k}^{\natural}=(iE)^2+\mathbf p^2=-E^2+\mathbf p^2=-p^2 .
 $$
 
-Recomputed on the case above, $\tilde{k}\tilde{k}^{\natural}=-0.49$ and $-(E_{\mathbf p}^2-\mathbf p^2)=-m^2=-0.49$, agreeing to machine precision. The mass shell is the single condition
 
 $$
 \tilde{k}\tilde{k}^{\natural}=-m^2 \quad\Longleftrightarrow\quad E_{\mathbf p}^2=\mathbf p^2+m^2 ,
@@ -205,7 +204,7 @@ $$
 S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,e^{-ip\cdot(x-y)}\frac{\not p+m}{p^2-m^2+i\epsilon}.
 $$
 
-The $p^0$ integral has poles at $p^0=\pm(E_{\mathbf p}-i\epsilon/2E_{\mathbf p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x^0-y^0>0$ and above for $x^0-y^0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus. Recomputed on $m=0.7$, $\mathbf p=(0.3,-0.9,1.1)$, the spinor identities and spin sums hold to machine precision, the poles lie on opposite sides as stated, and a direct numerical evaluation of the contour integral matches the residues to the discretization error.
+The $p^0$ integral has poles at $p^0=\pm(E_{\mathbf p}-i\epsilon/2E_{\mathbf p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x^0-y^0>0$ and above for $x^0-y^0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus.
 
 Writing the wave biquaternion $\tilde{k}=iE\,e_0+\mathbf p$, so that $\tilde{k}\tilde{k}^{\natural}=-p^2$, the propagator amplitude becomes
 

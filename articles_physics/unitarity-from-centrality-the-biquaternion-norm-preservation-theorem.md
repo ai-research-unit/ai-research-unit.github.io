@@ -239,7 +239,7 @@ which returns $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ for all $\tilde{P}$ and $\ti
 
 ## Worked Examples and Counterexamples
 
-The following computations exhibit each hypothesis failing when it is dropped. Every one has been recomputed symbolically and confirmed numerically on superpositions, not on a single basis element.
+The following computations exhibit each hypothesis failing when it is dropped.
 
 **Example 1: a non-unitary element of unit norm.** Take $\tilde{U}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde{U}=\cosh t\,e_0+i\sinh t\,e_3$ in the algebra, with $\lambda=e^{t}$, which the matrix model sends to $\mathrm{diag}(e^{t},e^{-t})$. Its determinant is $1$, so $N(\tilde{U})=e_0$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
 $$

@@ -138,7 +138,6 @@ In biquaternionic form the Dirac mass is the linear chiral pair of the parent ar
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$
-<!-- CONVENTION — the massive equation, canonical form. This linear, chirality-off-diagonal pair IS the biquaternionic Dirac mass for m ≠ 0; the derived articles state it in this orientation (∇̃ acting on Ψ_R, ∇̃^♮ on Ψ_L). Two standing facts. (i) The mass term is LINEAR: the continuous central phase (fermion number) passes through it, so the vector U(1) is exact for the massive field, and what the mass breaks is the AXIAL symmetry. (ii) It is NOT the antilinear single-field equation ∇̃Ψ = mΨ♭ of the next section: that equation belongs to the algebra's real structure ♭ and is a different equation. Do not replace this pair by the antilinear form; this article exists to state the distinction. -->
 
 the massless case being $\tilde{\nabla}\tilde{\Psi} = 0$. Applying $\tilde{\nabla}^{\natural}$ to the first and substituting the second, with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives the Klein–Gordon equation for each chirality,
 
@@ -236,7 +235,6 @@ The series previously wrote the massive equation as a single **antilinear** equa
 $$
 \tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat , \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^{*} ,
 $$
-<!-- CONVENTION — verified, do not "fix". The claim that the retired equation ∇̃Ψ = mΨ♭ has its central-phase plane waves on the SPACELIKE locus is deliberate and is re-derived in this section (pure real arithmetic, no libraries): the two-frequency system for a single-mode field has nullity 0 on the timelike shell k₀² = k² + m² and nullity 4 on the spacelike shell k² = k₀² + m². So the spacelike dispersion is a property of that equation, not a typo, and it is exactly why the equation was retired as the mass term. Do not relocate it to the physical mass shell. -->
 
 using the algebra's real structure. The equation is well formed; what disqualifies it is not its shape but its solutions.
 
@@ -332,7 +330,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 
 5. **The $\mathrm{Spin}^c$ structure organises charge conjugation, and it decides who is charged.** $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times U(1)\bigr)/\{\pm 1\}$ is the spin group extended by a central circle, and the framework's central $U(1)$ — the phase that minimal coupling localizes — is that circle. Being central it commutes with $\gamma_5$ and is therefore **vector-like**: the electromagnetic $U(1)$, not a chiral one. A Dirac spinor carries it; a Majorana or ELKO spinor is fixed by an antilinear condition and is blind to it, hence neutral. It is the module's $\mathcal{C}$, not the algebra's $\flat$, that enforces the neutrality.
 
-6. **The retired equation failed on its dispersion.** Its central-phase plane waves have nullity $0$ on the timelike shell and $4$ on the spacelike one, so its modes are spacelike. Verified by elimination in the block representation. It is one of four: every antilinear self-pairing of the algebra shares the spacelike locus — nullity $4$ on the two sector fixed spaces and $8$ on the real-quaternion one — while the single linear involution has a timelike solution space and none spacelike.
+6. **The retired equation failed on its dispersion.** Its central-phase plane waves have nullity $0$ on the timelike shell and $4$ on the spacelike one, so its modes are spacelike. It is one of four: every antilinear self-pairing of the algebra shares the spacelike locus — nullity $4$ on the two sector fixed spaces and $8$ on the real-quaternion one — while the single linear involution has a timelike solution space and none spacelike.
 
 7. **The failure was the pairing, not the antilinearity.** A Majorana mass is antilinear and physical. The retired equation paired a field with the algebra's conjugate, on a space where its kinetic operator does not respect it.
 

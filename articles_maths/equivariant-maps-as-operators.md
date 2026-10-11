@@ -46,11 +46,11 @@ $$
 
 and $f_\#$ is an element of $\operatorname{Hom}_{R[G]}(C_*(X;R), C_*(Y;R))$: it is $R$-linear, it commutes with $\partial$, and it commutes with the action, $f_\# \, g_\# = g_\# \, f_\#$ for every $g \in G$.
 
-*Proof.* The map on simplices is additive, so $f_\#$ is $R$-linear; the boundary commutes with composition of maps, so $f_\#\partial = \partial f_\#$; and the action commutes because $f(g \cdot x) = g \cdot f(x)$, that is $f \circ g = g \circ f$ on the underlying points, whence $f_\#(g \circ \eta) = g \circ (f_\# \eta)$. $\square$
+*Proof.* The map on simplices is additive, so $f_\#$ is $R$-linear; the boundary commutes with composition of maps, so $f_\#\partial = \partial f_\#$; and the action commutes because $f(g \cdot x) = g \cdot f(x)$, that is $f \circ g = g \circ f$ on the underlying points, whence $f_\#(g \circ \eta) = g \circ (f_\# \eta)$.
 
 **Corollary.** An equivariant homeomorphism induces an isomorphism of the operator complexes, and the assignment $X \mapsto C_*(X;R)$, $f \mapsto f_\#$ is a functor from $G\text{-}\mathbf{Top}$ to the category of complexes of $R[G]$-modules: $(g \circ f)_\# = g_\# \circ f_\#$ and $(\mathrm{id}_X)_\# = \mathrm{id}$.
 
-*Proof.* Both identities are the associativity of composition. $\square$
+*Proof.* Both identities are the associativity of composition.
 
 So a $G$-map is exactly an operator between the equivariant complexes that intertwines the two actions, and the functor sends the equivariant category to the category of differential graded modules over the group ring.
 
@@ -66,7 +66,7 @@ from the $G$-equivariant self-homeomorphisms to the equivariant operators. This 
 
 **Proposition.** The assignment is compatible with the operator algebra: for $G$-maps $f : X \to Y$ and $h : Y \to Z$ the composites satisfy $(h \circ f)_\# = h_\# \circ f_\#$, and for an equivariant operator $T \in \mathcal{E}(Y;R)$ the composite $T \circ f_\#$ is again an intertwining operator. Consequently the operators of $\mathcal{E}(X;R)$ act on the homology of any $G$-space mapping equivariantly to $X$, by postcomposition.
 
-*Proof.* The first two statements are associativity of composition; the third is the definition of the action. $\square$
+*Proof.* The first two statements are associativity of composition; the third is the definition of the action.
 
 ### Equivariant Homotopy and Chain Homotopy
 
@@ -84,11 +84,11 @@ $$
 P(g_\#\eta)(x,t) = H(g \cdot \eta(x), t) = g \cdot H(\eta(x), t) = g_\# (P\eta)(x,t),
 $$
 
-using that $g$ acts trivially on the interval. $\square$
+using that $g$ acts trivially on the interval.
 
 **Corollary (homotopy invariance).** The functor on chain complexes sends equivariantly homotopic $G$-maps to $R[G]$-chain-homotopic maps; it therefore descends to the equivariant homotopy category as a functor to the homotopy category of complexes of $R[G]$-modules.
 
-*Proof.* The prism operator is the chain homotopy, and a chain homotopy induces the zero map on homology. $\square$
+*Proof.* The prism operator is the chain homotopy, and a chain homotopy induces the zero map on homology.
 
 ## The Two Derived Complexes
 
@@ -98,7 +98,7 @@ The **coinvariant complex** is $C_*(X;R)_G = C_*(X;R) \otimes_{R[G]} R$, the quo
 
 **Theorem.** If $G$ is finite and acts freely on $X$, then the orbit map $\pi : X \to X/G$ induces an isomorphism of complexes $C_*(X;R)_G \cong C_*(X/G;R)$ up to the transfer of *The Transfer Map*, and hence an isomorphism in homology $H_n(C_*(X;R)_G) \cong H_n(X/G;R)$. The induced maps agree, so that on free actions the coinvariant functor computes the homology of the orbit space and is natural in the $G$-maps.
 
-*Proof.* The transfer $\tau : C_*(X/G;R) \to C_*(X;R)$ of the covering $X \to X/G$ is $G$-equivariant and satisfies $p_\# \tau = |G|$, from which $\tau$ followed by the quotient $C_*(X;R) \to C_*(X;R)_G$ is an isomorphism when $|G|$ is inverted; integrally it is a chain homotopy equivalence, and the naturality is that of the transfer. The details are those of *The Transfer Map*. $\square$
+*Proof.* The transfer $\tau : C_*(X/G;R) \to C_*(X;R)$ of the covering $X \to X/G$ is $G$-equivariant and satisfies $p_\# \tau = |G|$, from which $\tau$ followed by the quotient $C_*(X;R) \to C_*(X;R)_G$ is an isomorphism when $|G|$ is inverted; integrally it is a chain homotopy equivalence, and the naturality is that of the transfer. The details are those of *The Transfer Map*.
 
 For a non-free action the coinvariant complex computes the derived functor $H_*(X;R)_G$ of the coinvariants, which is not the homology of the orbit space; the Borel complex is the invariant that keeps the correct information.
 
@@ -124,7 +124,7 @@ $$
 
 in the sense of *Group Cohomology*, and for a free action it reduces to the homology of the orbit space, $H_n^G(X;R) \cong H_n(X/G;R)$.
 
-*Proof.* The homotopy quotient $EG \times_G X$ is the geometric realisation of the two-sided bar construction $R \otimes_{R[G]} C_*(X;R)$, whose homology is the derived functor $\operatorname{Tor}$; the free case is the homotopy equivalence $EG \times_G X \simeq X/G$ of *Two-Fold Coverings and the Borel Construction*. $\square$
+*Proof.* The homotopy quotient $EG \times_G X$ is the geometric realisation of the two-sided bar construction $R \otimes_{R[G]} C_*(X;R)$, whose homology is the derived functor $\operatorname{Tor}$; the free case is the homotopy equivalence $EG \times_G X \simeq X/G$ of *Two-Fold Coverings and the Borel Construction*.
 
 A $G$-map $f : X \to Y$ induces $\mathrm{id} \times_G f : EG \times_G X \to EG \times_G Y$, hence a map of Borel complexes and a map
 
@@ -138,11 +138,11 @@ $$
 
 **Theorem.** The assignments $X \mapsto H_n^G(X;R)$ and $f \mapsto H_n^G(f)$ are functorial on $G\text{-}\mathbf{Top}$, and $H_n^G(f) = H_n^G(g)$ whenever $f$ and $g$ are equivariantly homotopic. Hence the equivariant homology is a functor on the equivariant homotopy category.
 
-*Proof.* Functoriality is that of the Borel construction; homotopy invariance follows from the chain homotopy of the previous section, which passes to the quotient $EG \times_G (-)$ because the homotopy operator is $R[G]$-linear. $\square$
+*Proof.* Functoriality is that of the Borel construction; homotopy invariance follows from the chain homotopy of the previous section, which passes to the quotient $EG \times_G (-)$ because the homotopy operator is $R[G]$-linear.
 
 **Corollary.** An equivariant homotopy equivalence induces an isomorphism in equivariant homology, and the same statements hold for the coinvariant complex in the free case. The maps induced by two $G$-maps that are equivariantly homotopic agree on every invariant constructed functorially from the complex.
 
-*Proof.* An equivariant homotopy equivalence has an equivariant homotopy inverse, and a functor on the equivariant homotopy category sends invertible morphisms to isomorphisms. $\square$
+*Proof.* An equivariant homotopy equivalence has an equivariant homotopy inverse, and a functor on the equivariant homotopy category sends invertible morphisms to isomorphisms.
 
 ### Naturality and the Comparison
 
@@ -170,7 +170,7 @@ which is $R[G]$-linear because it is a central element of $R[G]$, and which sati
 
 **Proposition.** A $G$-map $f$ satisfies $f_\# N_X = N_Y f_\#$, so it carries the fixed subcomplex to the fixed subcomplex and induces a map on the invariant homology. When $|G|$ is invertible in $R$, $H_n(X;R)^G$ is a direct summand of $H_n(X;R)$ and the induced map restricts to it.
 
-*Proof.* The identity is $f_\# g_\# = g_\# f_\#$ summed over $g$; the summand statement is the idempotent $|G|^{-1}N$ of the previous paragraph. $\square$
+*Proof.* The identity is $f_\# g_\# = g_\# f_\#$ summed over $g$; the summand statement is the idempotent $|G|^{-1}N$ of the previous paragraph.
 
 ## Examples
 

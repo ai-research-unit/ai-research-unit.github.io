@@ -8,7 +8,7 @@ Because the bracket is the cross product of the vector parts and nothing else, t
 
 The bracket is introduced in *Introduction to the Antisymmetric Plain Algebra of Biquaternions* and its Lie structure on the whole algebra is *The Lie Algebra of the Antisymmetric Plain Algebra*, where the centre and the identifications of the vector, quaternion and anti-Hermitian subspaces are established; this article owns the reading of the bracket on each of the remarkable subspaces and the two failures, and it defers the whole-algebra structure to that article and the invariant form to *The Killing Form of the Antisymmetric Plain Algebra*. The remarkable subspaces themselves are *Introduction to the Remarkable Subspaces* and their relations *Comparison of the Remarkable Subspaces*; their reading under the four general products is *Remarkable Subspaces and the Four General Products*; the pattern of the reading is *Remarkable Subspaces under the General Plain Algebra of Biquaternions*; and the operators of the block are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*.
 
-## The Bracket on the remarkable subspaces: the Rule
+## The Bracket on the Remarkable Subspaces: the Rule
 
 **Lemma (the sector rule).** Let $\tilde P,\tilde Q$ have vector parts in the real vector triple $\mathbf{B}_1=\mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3$ or in the imaginary triple $i\mathbf{B}_1=\mathbb{R}(ie_1)\oplus\mathbb{R}(ie_2)\oplus\mathbb{R}(ie_3)$. Then
 
@@ -20,7 +20,7 @@ i\mathbf{B}_1, & \text{one in }\mathbf{B}_1\text{ and one in }i\mathbf{B}_1.
 \end{cases}
 $$
 
-*Proof.* Write $\mathbf{P}=i^{\varepsilon}\mathbf{p}$, $\mathbf{Q}=i^{\eta}\mathbf{q}$ with $\mathbf{p},\mathbf{q}$ in the real vector triple and $\varepsilon,\eta\in\{0,1\}$. Then $\mathbf{P}\times\mathbf{Q}=i^{\varepsilon+\eta}(\mathbf{p}\times\mathbf{q})$, and $\mathbf{p}\times\mathbf{q}\in\mathbf{B}_1$; the sector is $\varepsilon+\eta$ modulo two, which is the statement. $\square$
+*Proof.* Write $\mathbf{P}=i^{\varepsilon}\mathbf{p}$, $\mathbf{Q}=i^{\eta}\mathbf{q}$ with $\mathbf{p},\mathbf{q}$ in the real vector triple and $\varepsilon,\eta\in\{0,1\}$. Then $\mathbf{P}\times\mathbf{Q}=i^{\varepsilon+\eta}(\mathbf{p}\times\mathbf{q})$, and $\mathbf{p}\times\mathbf{q}\in\mathbf{B}_1$; the sector is $\varepsilon+\eta$ modulo two, which is the statement.
 
 **Remark (the two gradings).** The rule is a $\mathbb{Z}/2$-grading of the real algebra in two ways. With the two real subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the brackets are $[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]\subseteq\mathbb{H}_{\mathbb{B}}$, $[\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}}]\subseteq i\mathbb{H}_{\mathbb{B}}$ and $[i\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}}]\subseteq\mathbb{H}_{\mathbb{B}}$; with the two subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ they are $[\mathbb{M}_-,\mathbb{M}_-]\subseteq\mathbb{M}_-$, $[\mathbb{M}_-,\mathbb{M}_+]\subseteq\mathbb{M}_+$ and $[\mathbb{M}_+,\mathbb{M}_+]\subseteq\mathbb{M}_-$. **Both decompositions of the real algebra, $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$, are gradings of the bracket**, the first with subalgebra $\mathbb{H}_{\mathbb{B}}$ and the second with subalgebra $\mathbb{M}_-$.
 
@@ -34,7 +34,7 @@ $$
 
 The centre is a Lie subalgebra of $\mathfrak{g}$, abelian of complex dimension one and real dimension two; it is the kernel of the adjoint of every element and the radical of the bracket, and it is the radical of the Killing form of *The Killing Form of the Antisymmetric Plain Algebra*.
 
-*Proof.* An element of the centre has vector part zero, so every bracket with it vanishes by the vector-part formula; an abelian subalgebra is a Lie subalgebra. The centre is the annihilator of the bracket by *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Centre and the Quotient*, and its identification with the radical of the invariant form is *The Killing Form of the Antisymmetric Plain Algebra*, §*The Radical and the Rank*. Computed on the two real coordinates $e_0$ and $ie_0$. $\square$
+*Proof.* An element of the centre has vector part zero, so every bracket with it vanishes by the vector-part formula; an abelian subalgebra is a Lie subalgebra. The centre is the annihilator of the bracket by *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Centre and the Quotient*, and its identification with the radical of the invariant form is *The Killing Form of the Antisymmetric Plain Algebra*, §*The Radical and the Rank*. Computed on the two real coordinates $e_0$ and $ie_0$.
 
 **Remark.** **The centre is the subspace of the remarkable subspaces on which the bracket is the zero operation**, and it is the only one on which every bracket vanishes. It is not the whole of the kernel of the block, since the bracket of an element with itself vanishes by alternation; it is the common kernel of all the adjoints, which is the stronger statement.
 
@@ -54,7 +54,7 @@ $$
 
 and it is simple: it has no nonzero proper ideal.
 
-*Proof.* The vector subspace is the image of the bracket, so it is stable and it is the derived algebra; the identification and the simplicity are *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Derived Algebra and the Identifications*. Computed on the complex basis $e_1,e_2,e_3$ and on the real basis $e_1,e_2,e_3,ie_1,ie_2,ie_3$. $\square$
+*Proof.* The vector subspace is the image of the bracket, so it is stable and it is the derived algebra; the identification and the simplicity are *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Derived Algebra and the Identifications*. Computed on the complex basis $e_1,e_2,e_3$ and on the real basis $e_1,e_2,e_3,ie_1,ie_2,ie_3$.
 
 **Remark.** **The vector subspace is the smallest of the remarkable subspaces that contains the values of the bracket and the largest simple piece of the block.** Its real and imaginary halves obey the sector rule: the bracket of two real vectors is a real vector, of two imaginary vectors a real vector, and of one of each an imaginary vector; the composition table of the cross product of $\mathbb{C}^3$ is thus the real and imaginary reading of the three complex brackets $e_1\wedge e_2=e_3$ and its cyclic analogues.
 
@@ -74,7 +74,7 @@ $$
 
 with the scalar direction $\mathbb{R}e_0$ central and the vector triple $\mathbf{B}_1$ identified with $\mathfrak{su}(2)$, and its derived algebra is $\mathbf{B}_1$.
 
-*Proof.* An element of $\mathbb{H}_{\mathbb{B}}$ has real scalar and real vector parts; the bracket sees only the vector parts and is the cross product of two real vectors, which is a real vector, so the subspace is stable. Its derived algebra is $\mathbf{B}_1$, since $e_1\wedge e_2=e_3$ and cyclically; the real vector triple with the cross product is the real form $\mathfrak{so}(3,\mathbb{R})\cong\mathfrak{su}(2)$ of $\mathfrak{sl}(2,\mathbb{C})$, and the scalar direction is central. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Real Forms*. Computed on the real basis. $\square$
+*Proof.* An element of $\mathbb{H}_{\mathbb{B}}$ has real scalar and real vector parts; the bracket sees only the vector parts and is the cross product of two real vectors, which is a real vector, so the subspace is stable. Its derived algebra is $\mathbf{B}_1$, since $e_1\wedge e_2=e_3$ and cyclically; the real vector triple with the cross product is the real form $\mathfrak{so}(3,\mathbb{R})\cong\mathfrak{su}(2)$ of $\mathfrak{sl}(2,\mathbb{C})$, and the scalar direction is central. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Real Forms*. Computed on the real basis.
 
 **Remark.** The quaternion subspace is one of the two real forms of the block that carry the real vector triple as their derived algebra; the other is the anti-Hermitian subspace below. **The scalar direction is central and the vector triple is simple, so the quaternion subspace is the direct sum of an abelian line and $\mathfrak{su}(2)$.** In the grading $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ it is the subalgebra, and $i\mathbb{H}_{\mathbb{B}}$ is the complement, read next.
 
@@ -100,7 +100,7 @@ $$
 
 which is a real vector and does not lie in $i\mathbb{H}_{\mathbb{B}}$.
 
-*Proof.* Write the vector parts of two elements of $i\mathbb{H}_{\mathbb{B}}$ as $i\mathbf{p}$ and $i\mathbf{q}$ with $\mathbf{p},\mathbf{q}\in\mathbf{B}_1$; then $(i\mathbf{p})\times(i\mathbf{q})=-(\mathbf{p}\times\mathbf{q})\in\mathbf{B}_1$, by the sector rule. The bracket therefore leaves the subspace and its image is spanned by the cross products of real vectors, which is the whole of $\mathbf{B}_1$; the witness is the explicit computation. Verified on the real basis. $\square$
+*Proof.* Write the vector parts of two elements of $i\mathbb{H}_{\mathbb{B}}$ as $i\mathbf{p}$ and $i\mathbf{q}$ with $\mathbf{p},\mathbf{q}\in\mathbf{B}_1$; then $(i\mathbf{p})\times(i\mathbf{q})=-(\mathbf{p}\times\mathbf{q})\in\mathbf{B}_1$, by the sector rule. The bracket therefore leaves the subspace and its image is spanned by the cross products of real vectors, which is the whole of $\mathbf{B}_1$; the witness is the explicit computation.
 
 **Remark.** The anti-quaternion subspace is one of the two failures, and the failure is total: **its bracket is not merely outside it, it is in the other grading half.** With the quaternion subspace it forms the grading $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ in which $\mathbb{H}_{\mathbb{B}}$ is the subalgebra, $i\mathbb{H}_{\mathbb{B}}$ the module, and the module is large enough that its own bracket fills the vector triple of the subalgebra.
 
@@ -120,7 +120,7 @@ $$
 
 A witness is the pair $ie_1,ie_2$: both lie in $\mathbb{M}_+$ and $(ie_1)\wedge(ie_2)=-e_3$, which does not lie in $\mathbb{M}_+$.
 
-*Proof.* Write the vector parts as $i\mathbf{p},i\mathbf{q}$ with $\mathbf{p},\mathbf{q}\in\mathbf{B}_1$; the sector rule gives $(i\mathbf{p})\times(i\mathbf{q})=-(\mathbf{p}\times\mathbf{q})\in\mathbf{B}_1$, outside $i\mathbf{B}_1$, and the image is the whole of $\mathbf{B}_1$. Verified on the real basis. $\square$
+*Proof.* Write the vector parts as $i\mathbf{p},i\mathbf{q}$ with $\mathbf{p},\mathbf{q}\in\mathbf{B}_1$; the sector rule gives $(i\mathbf{p})\times(i\mathbf{q})=-(\mathbf{p}\times\mathbf{q})\in\mathbf{B}_1$, outside $i\mathbf{B}_1$, and the image is the whole of $\mathbf{B}_1$.
 
 **Theorem (the anti-Hermitian subspace is stable).** The anti-Hermitian subspace
 
@@ -134,7 +134,7 @@ $$
 \mathbb{M}_-\cong\mathfrak{u}(2),\qquad[\mathbb{M}_-,\mathbb{M}_-]=\mathbf{B}_1\cong\mathfrak{su}(2).
 $$
 
-*Proof.* An element of $\mathbb{M}_-$ has purely imaginary scalar part and real vector part; the bracket sees only the vector parts, so it is a real vector in $\mathbf{B}_1$, which lies in $\mathbb{M}_-$. The derived algebra is $\mathbf{B}_1$, and the real Lie algebra with a central line and derived algebra $\mathfrak{su}(2)$ is $\mathfrak{u}(2)$, read on the skew-Hermitian elements in *The Unitary Lie Algebra*. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Real Forms*. Computed on the real basis. $\square$
+*Proof.* An element of $\mathbb{M}_-$ has purely imaginary scalar part and real vector part; the bracket sees only the vector parts, so it is a real vector in $\mathbf{B}_1$, which lies in $\mathbb{M}_-$. The derived algebra is $\mathbf{B}_1$, and the real Lie algebra with a central line and derived algebra $\mathfrak{su}(2)$ is $\mathfrak{u}(2)$, read on the skew-Hermitian elements in *The Unitary Lie Algebra*. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Real Forms*. Computed on the real basis.
 
 **Remark.** The two Hermitian halves are the second grading of the block: **$\mathbb{M}_-$ is the subalgebra and $\mathbb{M}_+$ the module, and $\mathbb{M}_+$ is the second of the two failures, of image again $\mathfrak{su}(2)$.** The quaternion grading and the Hermitian grading share the failure pattern — in each, one half is a subalgebra and the other half is not — and they differ in which central direction, real or imaginary, the subalgebra's scalar part occupies. The identification $\mathbb{M}_-\cong\mathfrak{u}(2)$ is the biquaternion case of the skew-Hermitian Lie algebra; the group of linear maps preserving the form of those elements, and the exponential that relates it to this algebra, are *The Unitary Lie Algebra* and are not read here.
 
@@ -144,7 +144,7 @@ The invariant form of the block is computed in *The Killing Form of the Antisymm
 
 **Theorem.** The isotropic elements of the remarkable subspaces are: the whole centre, since the form vanishes there; the scalar directions $\mathbb{R}e_0$ and $\mathbb{R}(ie_0)$ on the four real subspaces, and no vector direction, because the vector part there is real or purely imaginary and a sum of three squares of real numbers vanishes only at zero; and the complex null cone $\{\mathbf{P}\cdot\mathbf{P}=0\}$ on the vector subspace, of real dimension four. On the centre and on the scalar directions the isotropy is the vanishing of the bracket as well, since those are the central directions; on the vector null cone the bracket is not identically zero, and the isotropic elements are the elements of the simple derived algebra that are isotropic for its invariant form.
 
-*Proof.* The form is $-2\,\mathbf{Q}\cdot\mathbf{Q}$ on the vector part and zero on the scalar part, by *The Killing Form of the Antisymmetric Plain Algebra*; the four real subspaces have real or purely imaginary vector parts, and the two complex subspaces, the centre and the vector subspace, have the components as displayed. The vanishing of the bracket on the central directions is the previous sections. Verified on the basis and on general elements. $\square$
+*Proof.* The form is $-2\,\mathbf{Q}\cdot\mathbf{Q}$ on the vector part and zero on the scalar part, by *The Killing Form of the Antisymmetric Plain Algebra*; the four real subspaces have real or purely imaginary vector parts, and the two complex subspaces, the centre and the vector subspace, have the components as displayed. The vanishing of the bracket on the central directions is the previous sections.
 
 **Remark.** **The isotropic elements of the block are not its zero divisors, and on the four real subspaces they are only the null directions of the bracket.** The comparison with the zero-divisor cone and with the null cones of the four pairings is *Remarkable Subspaces and the Four General Products* and *Zero Divisors of the General Plain Algebra*; the two cones agree on the vector subspace at the complex null cone of the scalar product and differ on the real subspaces, where the Killing isotropy is a line and the zero-divisor condition is a genuine cone.
 

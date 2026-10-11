@@ -34,7 +34,7 @@ the negative of the divergence of the form read as an alternating tensor; its co
 
 **Theorem.** The codifferential is $\mathbb{C}$-linear, it lowers the degree by one, and it is **nilpotent**, $(d^{*})^2=0$; it is the formal adjoint of $d$, so $(d\alpha,\beta)=(\alpha,d^{*}\beta)$ for compactly supported forms, and the pair $(d,d^{*})$ forms a two-term complex in each direction that vanishes on composition.
 
-**Proof.** The nilpotency is the adjoint of $d^2=0$; the adjointness is the definition, and the sign in $d^{*}=(-1)^{k}\star^{-1}d\star$ is that of the identity $\star\,d\,\star^{-1}=\pm d^{*}$ of the Hodge star. $\square$
+**Proof.** The nilpotency is the adjoint of $d^2=0$; the adjointness is the definition, and the sign in $d^{*}=(-1)^{k}\star^{-1}d\star$ is that of the identity $\star\,d\,\star^{-1}=\pm d^{*}$ of the Hodge star.
 
 ## The Laplacian and the Harmonic Forms
 
@@ -52,11 +52,11 @@ $$
 \Delta\omega=0\iff d\omega=0\ \text{and}\ d^{*}\omega=0 .
 $$
 
-**Proof.** The self-adjointness is the adjointness of $d$ and $d^{*}$ together with the self-adjointness of each term $dd^{*}$ and $d^{*}d$; the quadratic form is the expanded product, and it is a sum of two norms, vanishing exactly when both vanish. $\square$
+**Proof.** The self-adjointness is the adjointness of $d$ and $d^{*}$ together with the self-adjointness of each term $dd^{*}$ and $d^{*}d$; the quadratic form is the expanded product, and it is a sum of two norms, vanishing exactly when both vanish.
 
 **Theorem (ellipticity and discreteness).** The Laplacian is elliptic, of order two, with principal symbol $\sigma_\Delta(\xi)=|\xi|^2\mathrm{id}$; on a closed manifold its spectrum is discrete, real and nonnegative, it accumulates only at infinity, and the heat semigroup $e^{-t\Delta}$ is a smoothing operator for $t>0$. Consequently $\mathcal{H}^{k}(M)$ is finite-dimensional and $\Omega^{k}(M)=\mathcal{H}^{k}\oplus\Delta\Omega^{k}$.
 
-**Proof.** The symbol is the squared length of the covector, hence invertible for $\xi\neq0$; the spectral theory of a self-adjoint elliptic operator on a closed manifold gives the rest, and the smoothness of the heat kernel is the standard parabolic regularity. $\square$
+**Proof.** The symbol is the squared length of the covector, hence invertible for $\xi\neq0$; the spectral theory of a self-adjoint elliptic operator on a closed manifold gives the rest, and the smoothness of the heat kernel is the standard parabolic regularity.
 
 ## The Hodge Decomposition and the Hodge Theorem
 
@@ -68,7 +68,7 @@ $$
 
 the **harmonic**, **exact** and **coexact** parts, and the decomposition is unique. Equivalently the closed forms split as $\ker(d|_{\Omega^{k}})=\mathcal{H}^{k}\oplus d\Omega^{k-1}$.
 
-**Proof.** The three summands are mutually orthogonal: $(\Delta\omega,\eta)=0$ for a harmonic $\omega$ and $\eta$ exact or coexact because the Laplacian is self-adjoint and exact/coexact forms are orthogonal to the kernel of a self-adjoint operator; and $\Omega^{k}=\ker\Delta\oplus\mathrm{im}\,\Delta$ by the spectral theorem for the self-adjoint elliptic operator. Since $\mathrm{im}\,\Delta=\mathrm{im}\,dd^{*}+\mathrm{im}\,d^{*}d=d\Omega^{k-1}+d^{*}\Omega^{k+1}$, the decomposition follows; uniqueness is the orthogonality. $\square$
+**Proof.** The three summands are mutually orthogonal: $(\Delta\omega,\eta)=0$ for a harmonic $\omega$ and $\eta$ exact or coexact because the Laplacian is self-adjoint and exact/coexact forms are orthogonal to the kernel of a self-adjoint operator; and $\Omega^{k}=\ker\Delta\oplus\mathrm{im}\,\Delta$ by the spectral theorem for the self-adjoint elliptic operator. Since $\mathrm{im}\,\Delta=\mathrm{im}\,dd^{*}+\mathrm{im}\,d^{*}d=d\Omega^{k-1}+d^{*}\Omega^{k+1}$, the decomposition follows; uniqueness is the orthogonality.
 
 **Theorem (Hodge).** The map that assigns to a harmonic form its de Rham class is an isomorphism
 
@@ -79,7 +79,7 @@ $$
 
 so every de Rham class has a unique harmonic representative, and the Betti numbers are the dimensions of the kernels of the Laplacian.
 
-**Proof.** A harmonic form is closed, so the map is defined; it is injective, since an exact harmonic form is orthogonal to the harmonic forms and hence zero; it is surjective, since a closed form differs from its harmonic part by an exact form, by the decomposition of $\ker d$. The dimension statement is the finite-dimensionality of the kernel. $\square$
+**Proof.** A harmonic form is closed, so the map is defined; it is injective, since an exact harmonic form is orthogonal to the harmonic forms and hence zero; it is surjective, since a closed form differs from its harmonic part by an exact form, by the decomposition of $\ker d$. The dimension statement is the finite-dimensionality of the kernel.
 
 **Remark.** The decomposition and the isomorphism depend on the metric through the Laplacian, but the dimension $b_{k}$ does not: the same cohomology is presented by the kernels of different operators. This is the content of the Hodge theorem read geometrically — the metric supplies a canonical representative of every class, and the choice of representative changes with the metric while the class and the dimension do not.
 
@@ -93,7 +93,7 @@ $$
 
 which is, under the Hodge isomorphism, the Poincaré duality pairing $H^{k}\times H^{n-k}\to\mathbb{C}$, $\langle u\cup v,[M]\rangle$, up to the metric normalization. In particular $b_{k}=b_{n-k}$, and for a closed oriented manifold the pairing is nondegenerate.
 
-**Proof.** The star intertwines $d$ and $d^{*}$ up to sign, so it conjugates $\Delta=dd^{*}+d^{*}d$ to itself; the induced map on cohomology is the composition of the Hodge isomorphism with the Poincaré pairing, and the nondegeneracy of the latter is Poincaré duality. $\square$
+**Proof.** The star intertwines $d$ and $d^{*}$ up to sign, so it conjugates $\Delta=dd^{*}+d^{*}d$ to itself; the induced map on cohomology is the composition of the Hodge isomorphism with the Poincaré pairing, and the nondegeneracy of the latter is Poincaré duality.
 
 **Corollary (the middle form and the signature).** For a closed oriented manifold of dimension $4k$ the star acts on the middle harmonic forms as the chirality, and the pairing
 
@@ -122,11 +122,11 @@ $$
 
 in a $g$-orthonormal frame $(e_i)$, the natural action of the curvature on forms; for $k=1$ the endomorphism is the Ricci tensor, $\mathcal{R}_1=\operatorname{Ric}$, and for $k=0$ it vanishes, so on functions $\Delta f=-\operatorname{tr}_g\nabla^2f=\nabla^{*}\nabla f$.
 
-**Proof sketch.** The identity is the Weitzenböck decomposition of the second-order operator $\Delta$: the two operators have the same principal symbol, and their difference is the zeroth-order curvature term computed from the commutator $[\nabla_i,\nabla_j]$ on forms, which is the curvature; the case $k=1$ traces the curvature to the Ricci tensor. The argument is the standard one of the Bochner technique. $\square$
+**Proof sketch.** The identity is the Weitzenböck decomposition of the second-order operator $\Delta$: the two operators have the same principal symbol, and their difference is the zeroth-order curvature term computed from the commutator $[\nabla_i,\nabla_j]$ on forms, which is the curvature; the case $k=1$ traces the curvature to the Ricci tensor. The argument is the standard one of the Bochner technique.
 
 **Theorem (Bochner vanishing).** Let $(M,g)$ be closed and oriented, and let $\operatorname{Ric}\geq0$ on $M$. Then every harmonic $1$-form is parallel, $\nabla\omega=0$; if $\operatorname{Ric}>0$ at some point, there is no nonzero harmonic $1$-form and $b_{1}(M)=0$. More generally, if the curvature endomorphism $\mathcal{R}_k$ is nonnegative on $\Lambda^{k}T^{*}M$, every harmonic $k$-form is parallel and $b_{k}\leq\binom{n}{k}$ with equality forcing $\mathcal{R}_k=0$.
 
-**Proof.** For a harmonic $\omega$ the Weitzenböck formula gives $0=(\Delta\omega,\omega)=\|\nabla\omega\|^2+(\mathcal{R}_k\omega,\omega)$; under the curvature assumption both terms are nonnegative, so both vanish; a parallel form is determined by its value at one point, which gives the rank bound, and the strict positivity forces $\omega=0$. $\square$
+**Proof.** For a harmonic $\omega$ the Weitzenböck formula gives $0=(\Delta\omega,\omega)=\|\nabla\omega\|^2+(\mathcal{R}_k\omega,\omega)$; under the curvature assumption both terms are nonnegative, so both vanish; a parallel form is determined by its value at one point, which gives the rank bound, and the strict positivity forces $\omega=0$.
 
 **Corollary.** A closed Riemannian manifold of positive Ricci curvature has $b_1=0$; the round sphere $S^n$ of dimension $n\geq2$ has $b_1=0$, and the flat torus has $\operatorname{Ric}=0$ and harmonic $1$-forms $dx^i$ that are parallel.
 

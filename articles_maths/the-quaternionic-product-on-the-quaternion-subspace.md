@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
 $$
 
-the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The previous five articles read the product over the whole algebra; this one reads it on the four-dimensional real subspace on which the whole batch becomes classical,
+the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The preceding articles read the product over the whole algebra; this one reads it on the four-dimensional real subspace on which the whole batch becomes classical,
 
 $$
 \mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3 ,
@@ -35,7 +35,7 @@ $$
 
 where $\bar h$ is the quaternion conjugate of $h$.
 
-**Proof.** For a real quaternion $h = h_0+h_1e_1+h_2e_2+h_3e_3$ the natural conjugation is $h^{\natural} = h_0-h_1e_1-h_2e_2-h_3e_3$, the quaternion conjugate; the conjugation is an anti-automorphism of the plain product, so $\bar h g$ is again a real quaternion, and the coefficients of $\bar h g$ are sums of products of real numbers and of the structure constants of the quaternion algebra, hence real. $\square$
+**Proof.** For a real quaternion $h = h_0+h_1e_1+h_2e_2+h_3e_3$ the natural conjugation is $h^{\natural} = h_0-h_1e_1-h_2e_2-h_3e_3$, the quaternion conjugate; the conjugation is an anti-automorphism of the plain product, so $\bar h g$ is again a real quaternion, and the coefficients of $\bar h g$ are sums of products of real numbers and of the structure constants of the quaternion algebra, hence real.
 
 **Corollary (the subspace is a real algebra with a left unit only).** $\mathbb{H}_{\mathbb{B}}$ is a four-dimensional real algebra under $\star$, with $e_0$ as a left unit, $e_0\star g = g$, and no right unit, $h\star e_0 = \bar h$, which differs from $h$ as soon as the vector part of $h$ is nonzero. In particular the subspace is closed under $\star$ but is not the quaternion algebra: the element $h = i$ gives $i\star e_0 = -i$ whereas $i e_0 = i$.
 
@@ -79,7 +79,7 @@ $$
 
 so the two bracketings are $j$ and $-j$.
 
-**Proof.** The computations use the multiplication table $ij = k$ and $ik = -j$ of the quaternion units and the left unit $e_0\star j = j$. $\square$
+**Proof.** The computations use the multiplication table $ij = k$ and $ik = -j$ of the quaternion units and the left unit $e_0\star j = j$.
 
 **Corollary (what the subspace is not).** The restricted product is neither the quaternion algebra nor its opposite: both are associative, and the restricted product is not. The witness $h = i$, $g = e_0$ separates it from the quaternion algebra, $i\star e_0 = -i$ against $i e_0 = i$, and the same pair separates it from the opposite algebra, whose product is $e_0 i = i$ against $-i$.
 
@@ -95,11 +95,11 @@ $$
 
 the reduced norm of the real quaternion $h$, a non-negative real number that vanishes only at $h = 0$.
 
-**Proof.** The square lemma of *Idempotents of the Quaternionic Product* gives $h\star h = N(h)e_0$, and on real quaternions $N(h) = \bar h h$ is the sum of the four real squares $h_0^2+h_1^2+h_2^2+h_3^2$, which is real, non-negative and zero only at the origin. $\square$
+**Proof.** The square lemma of *Norm and Invertibility in the General Quaternionic Algebra* gives $h\star h = N(h)e_0$, and on real quaternions $N(h) = \bar h h$ is the sum of the four real squares $h_0^2+h_1^2+h_2^2+h_3^2$, which is real, non-negative and zero only at the origin.
 
 **Corollary (the element theory of the subspace is classical).** On $\mathbb{H}_{\mathbb{B}}$: the only idempotents are $0$ and $e_0$; the only square-zero element is $0$; every nonzero element is a unit, the inverse of $h$ being $\bar h/|h|^2$. In particular the nilpotent cone of the second article meets the subspace at the origin alone, and the zero-divisor theory of the algebra has no content on the real quaternions.
 
-**Proof.** An idempotent satisfies $|h|^2e_0 = h$, so $h$ lies in the real line and $h_0^2 = h_0$, giving $0$ and $1$; a square-zero element has $|h|^2 = 0$, giving $h = 0$; the inverse formula is checked directly, $\bar h h = h\bar h = |h|^2\neq0$. $\square$
+**Proof.** An idempotent satisfies $|h|^2e_0 = h$, so $h$ lies in the real line and $h_0^2 = h_0$, giving $0$ and $1$; a square-zero element has $|h|^2 = 0$, giving $h = 0$; the inverse formula is checked directly, $\bar h h = h\bar h = |h|^2\neq0$.
 
 **Remark.** This is the classical contrast of the batch. On the real quaternion subspace the product is a non-associative operation with a left unit only, and its element theory is as good as it can be: no nontrivial idempotent, no nilpotent, and every element invertible. On the whole algebra the same product has a nonzero cone of zero divisors, of real dimension six. The two statements are the same statement read on different subspaces: the norm form is positive definite on $\mathbb{H}_{\mathbb{B}}$ and indefinite on $\mathbb{B}$, and the cone $\{N = 0\}$ is the origin on the former and a six-dimensional cone on the latter.
 
@@ -119,7 +119,7 @@ $$
 
 and the monoid $\{L_h : h \in \mathbb{H}_{\mathbb{B}}\}$ is isomorphic to the **opposite** of the quaternion algebra, $\mathbb{H}^{\mathrm{op}}$.
 
-**Proof.** $L_h(L_g(k)) = \bar h(\bar g k) = (\bar h\bar g)k = \overline{gh}\,k = L_{gh}(k)$ by the associativity of the quaternion product and the anti-automorphism property $\bar h\bar g = \overline{gh}$. The monoid is therefore the quaternion algebra with its product reversed, and $\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$ as an abstract algebra because the conjugation is an isomorphism onto the opposite. $\square$
+**Proof.** $L_h(L_g(k)) = \bar h(\bar g k) = (\bar h\bar g)k = \overline{gh}\,k = L_{gh}(k)$ by the associativity of the quaternion product and the anti-automorphism property $\bar h\bar g = \overline{gh}$. The monoid is therefore the quaternion algebra with its product reversed, and $\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$ as an abstract algebra because the conjugation is an isomorphism onto the opposite.
 
 **Remark (the precise sense in which the opposite algebra appears).** The restricted product **is not** the opposite quaternion algebra — the opposite of the quaternion algebra is associative, and the restricted product is not. What coincides with the opposite quaternion algebra is its family of left multiplications: the monoid they form is $\mathbb{H}^{\mathrm{op}}$, by the theorem just proved and by the general theorem of the previous article, $M_L\cong\mathbb{B}^{\mathrm{op}}$, restricted to the real quaternions. Equivalently, the restricted product $\bar hg$ is the isotope of the quaternion algebra by the conjugation; the conjugation is an isomorphism of the quaternion algebra onto its opposite, since $\bar h\bar g = \overline{gh}$, so the isotope sits in the isotopy class of the opposite algebra. Isotopy and not isomorphism is the exact relation: an isomorphism with the opposite quaternion algebra would carry its associativity back to the restricted product, and the restricted product is not associative (*A Taste of Jordan Algebras* §*Isotopes and Homotopes*).
 
@@ -132,7 +132,7 @@ The restricted product is a four-dimensional real algebra. Three other four-dime
 **Not the symmetric bilinear form.** The symmetrisation of the restricted product is
 
 $$
-h\circ g = \tfrac12\bigl(\bar h g + \bar g h\bigr) = \langle h,g\rangle\,e_0 ,
+h\bullet g = \tfrac12\bigl(\bar h g + \bar g h\bigr) = \langle h,g\rangle\,e_0 ,
 $$
 
 the definite inner product placed on the real line, a commutative operation with no vector part. It is not a Jordan algebra: at $h = g = e_1$ its two sides in the Jordan identity are $e_0$ and $0$, which is the failure computed for the whole algebra in *The Symmetrised Quaternionic Product and the Hermitian Subspace* and recorded for the subspace in *Remarkable Subspaces and the Four General Products*.
@@ -156,6 +156,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, of real dimension four, is th
 | $\bar h = h_0-h_1e_1-h_2e_2-h_3e_3$ | the quaternion conjugate, the restriction of ${}^{\natural}$ |
 | ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0-\mathbf P$ |
 | $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
+| $h\bullet g = \tfrac12(\bar hg+\bar gh)$ | the symmetrisation of the restricted product, the definite inner product of the subspace |
 | $\tilde P\tilde Q$ | the plain (associative) product of the algebra |
 | $N(h) = \bar hh = |h|^2$ | the reduced norm of a real quaternion |
 | $L_h$ | the left multiplication of the product, $L_h(g) = \bar hg$ |

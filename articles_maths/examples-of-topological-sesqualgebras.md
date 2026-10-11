@@ -44,7 +44,7 @@ the first with $(X\star X)\star X\neq X\star(X\star X)$, the second the failure 
 
 **Proposition (the trivial involution).** Let $A$ be a unital Banach algebra over $\mathbb{K}$ with the identity involution, $* = \mathrm{id}$, and $\varsigma = \mathrm{id}$. Then $A$ is a unital Banach sesqualgebra whose derived product is the product of $A$, the conjugate module is the module, and the object is exactly a Banach algebra of *Topological Algebras and Banach Algebras*, §*Topological Algebras*.
 
-*Proof.* The identity map is a $\varsigma$-semilinear involution for $\varsigma = \mathrm{id}$, and it is isometric, so $A$ is a Banach sesqualgebra of the standard model; the derived product is $x \star y = xy^{*} = xy$, the product of the algebra, and the conjugate module is the module because the twisted action is the scalar action. $\square$
+*Proof.* The identity map is a $\varsigma$-semilinear involution for $\varsigma = \mathrm{id}$, and it is isometric, so $A$ is a Banach sesqualgebra of the standard model; the derived product is $x \star y = xy^{*} = xy$, the product of the algebra, and the conjugate module is the module because the twisted action is the scalar action.
 
 **Remark.** The proposition is the sense in which the sesquilinear layer contains the bilinear one: the objects with $* = \mathrm{id}$ are the Banach algebras, and the inclusion is not a coincidence but the collapse of the two scalar rules into one. Note that $* = \mathrm{id}$ forces $\varsigma = \mathrm{id}$, because $\varsigma$-semilinearity at the unit reads $*(\lambda 1) = \varsigma(\lambda)1 = \lambda1$; so the full collapse is the case of the trivial algebra involution, and the two collapses at $\varsigma = \mathrm{id}$ and at $* = \mathrm{id}$ are distinct.
 
@@ -79,7 +79,7 @@ the first with $(X\star X)\star X\neq X\star(X\star X)$, the second the failure 
 
 **Theorem (the collapse of the layer).** Let $A$ be an object with $\varsigma = \mathrm{id}$. Then the twisted action is the ordinary action, the conjugate module is the module, the derived operation is the algebra product read through the algebra involution, and the layer of the objects is the layer of *Topological Algebras and Banach Algebras* with a continuous involution. If in addition $* = \mathrm{id}$ then the derived operation is the algebra product and the object is a Banach algebra.
 
-*Proof.* This is the collapse theorem of *Topological Sesqualgebras*, §*The Collapse*, together with the proposition of §*The Banach Algebras with the Identity Involution* for the second clause. $\square$
+*Proof.* This is the collapse theorem of *Topological Sesqualgebras*, §*The Collapse*, together with the proposition of §*The Banach Algebras with the Identity Involution* for the second clause.
 
 **Remark.** The table exhibits both collapses: the objects with $\varsigma = \mathrm{id}$ are those in which the conjugate module is the module, so the base has collapsed, and among them the objects with $* = \mathrm{id}$ are those in which also the derived operation is the product, so the object has collapsed to a Banach algebra. The standard models have neither collapse, and they are the objects the operator theory of the category studies.
 

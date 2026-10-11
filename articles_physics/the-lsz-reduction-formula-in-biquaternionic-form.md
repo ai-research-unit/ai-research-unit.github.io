@@ -66,7 +66,6 @@ $$
 $$
 so the amputation is multiplication by the inverse propagator $\mathcal{M}(\tilde k)$ in momentum space, equivalently by the negative of the wave operator's symbol. The mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2=m^2-p^2$ is the object whose vanishing is the shell, $\mathcal{M}(\tilde k)=0$, i.e. $\tilde k\tilde k^{\natural}=-m^2$. The remaining sections spell out the consequences of the fact that $\mathcal{M}$ is a *central* scalar for a scalar field and a *matrix* for a spinor field.
 
-<!-- CONVENTION — LSZ wave operator: the wave operator is written $(\Box-m^2)$ with the series d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$, so its momentum symbol is $p^2-m^2=-\mathcal{M}(\tilde k)$ with $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$; the textbook $(\Box+m^2)$ of the mostly-minus convention is the same operator up to the overall sign, $\Box_{\mathrm{textbook}}=-\Box_{\mathrm{series}}$, as *Conventions in the Biquaternion Universe* records. Do not "correct" $(\Box-m^2)$ to $(\Box+m^2)$ without changing the definition of $\Box$ with it. -->
 
 ## Amputation as the Inverse Mass-Shell Operator
 
@@ -88,7 +87,6 @@ Multiplying a correlation function by $\mathcal{M}(\tilde k)$ on a leg is precis
 
 **The pole set is a biquaternion-norm level set.** The mass shell $\mathcal{M}(\tilde k)=0$ is the statement $\tilde k\tilde k^{\natural}=-m^2$, a level set of the biquaternion norm. For $m=0$ it is the zero set of the biquaternion norm, i.e. the zero-divisor cone, the light cone of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The reduction formula thus places the external legs on a level set of the same biquaternion norm that determines the algebra's singular elements, the metric, and the zero-divisor cone; the mass shell and the light cone are the $m\ne0$ and $m=0$ members of one family.
 
-**Verification.** With $m=0.7$, $\mathbf p=(0.3,-0.9,1.1)$ and $E_{\mathbf p}=\sqrt{\mathbf p^2+m^2}=1.6124515497$, the wave biquaternion gives
 $$
 \tilde k\tilde k^{\natural} = -E^2+\mathbf p^2 = -0.490000
 = -m^2 ,

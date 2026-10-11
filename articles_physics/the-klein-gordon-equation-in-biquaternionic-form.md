@@ -9,7 +9,6 @@ $$
 \qquad
 \Box = -\frac{1}{c^2}\partial_t^2 + \Delta,
 $$
-<!-- CONVENTION — notation. This article's d'Alembertian is the series one, □ = ∇̃∇̃^♮ = ∂²/∂Q₀² + Δ_Q, read on the material sector as ∂²_{ict} + Δ = Δ − c⁻²∂_t², and it is the one operator of the whole series. The same □ and the same mass equation (□ − m²c²/ℏ²)ψ = 0 are used by every companion article; the Weyl-spinor exercise writes the operator in real time as −∂₀² + ∇², which is the same operator, since ∂²_{ict} = −∂₀². -->
 
 the wave equation for a relativistic scalar field. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**. The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded its biquaternion form in one line, $\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - m^2c^2/\hbar^2\right)\tilde{\Phi} = 0$, as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry.
 
@@ -68,7 +67,6 @@ $$
 
 which is the same elimination applied to the pair that carries one gradient of each kind: the conjugate gradient squares to $\Box$, and eliminating the auxiliary field leaves $\Box\tilde{A}=(m^2c^2/\hbar^2)\tilde{A}$, whose scalar restriction is the equation above.
 
-<!-- CONVENTION — the two gradients are the two square roots of □: ∇̃∇̃^♮ = ∇̃^♮∇̃ = □, established at the top of this article and in the companion Maxwell article. The family must therefore carry one of each for its square to be □. The companion articles write Lanczos's system with ∇̃ on both equations, as the source does; the square there is ∇̃∇̃ = ∂_{ict}² − Δ, which differs from □ = ∂_{ict}² + Δ in the sign of the spatial part. The two coincide for a spatially constant field (ΔA_0 = 0), which is exactly the degenerate case above, and are related by the Wick rotation of the time coordinate. Do not transplant the family's square between the two writings without fixing the signature. -->
 
 ## Second Order in Time and the Conjugate Pair
 
@@ -137,7 +135,7 @@ $$
 \Box_A = \partial^2_\tau - \Delta ,
 $$
 
-which is the Klein–Gordon–Fock operator $\Box_A + m^2$ with $m^2 = (\mathbf{F},\mathbf{F})$ — the coefficient's own norm supplies the mass — **plus** the first-order directional term $2i(\mathbf{F},\nabla)$. That term is of exactly the kind that made the scalar factorisation impossible above; here it is not an obstruction but the product structure itself, and the operator is a genuine composition of two first-order operators. The identity was recomputed on 100 random constant complex vectors and plane waves, with maximum error $2 \times 10^{-15}$.
+which is the Klein–Gordon–Fock operator $\Box_A + m^2$ with $m^2 = (\mathbf{F},\mathbf{F})$ — the coefficient's own norm supplies the mass — **plus** the first-order directional term $2i(\mathbf{F},\nabla)$. That term is of exactly the kind that made the scalar factorisation impossible above; here it is not an obstruction but the product structure itself, and the operator is a genuine composition of two first-order operators.
 
 **Fundamental solution.** The kernel of the operator is elementary. Alexeyeva's Theorem 4.1.2, in her variables $\tau$ and $\Box_A$, gives
 

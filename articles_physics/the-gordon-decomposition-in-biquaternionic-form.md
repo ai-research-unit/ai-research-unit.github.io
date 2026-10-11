@@ -160,7 +160,7 @@ $$
 = \bar u(p')\left(\gamma^\mu\gamma_5\,\not p + \not p'\,\gamma^\mu\gamma_5\right)u(p),
 $$
 
-which is the same statement for the axial current and is used in the analysis of the axial anomaly. Both parent identities were verified to machine precision in the numerical check ($4.8\times10^{-15}$ and $4.4\times10^{-15}$ respectively).
+which is the same statement for the axial current and is used in the analysis of the axial anomaly.
 
 ## The Physical Reading
 

@@ -19,7 +19,7 @@ $$
 
 and it is an isometric $*$-isomorphism onto $C^*(a,1)$; it sends the identity function to $a$, the constant $1$ to the unit, and conjugation to the involution, $\overline{f}(a) = f(a)^*$. For a polynomial $p$, $p(a)$ is the element computed by the algebra, so the calculus extends the polynomial calculus.
 
-**Proof.** By *The Spectrum of a Self-Adjoint Element* the Gelfand transform is an isometric $*$-isomorphism $C^*(a,1) \to C(\sigma(a))$ sending $a$ to the identity function; its inverse is $\Phi_a$, it is an isometric $*$-isomorphism, and on polynomials it agrees with evaluation because the Gelfand transform is multiplicative and unital. Uniqueness: two unital $*$-homomorphisms agreeing on the identity function agree on its continuous functions by continuity and the Stone–Weierstrass density of the polynomials. $\square$
+**Proof.** By *The Spectrum of a Self-Adjoint Element* the Gelfand transform is an isometric $*$-isomorphism $C^*(a,1) \to C(\sigma(a))$ sending $a$ to the identity function; its inverse is $\Phi_a$, it is an isometric $*$-isomorphism, and on polynomials it agrees with evaluation because the Gelfand transform is multiplicative and unital. Uniqueness: two unital $*$-homomorphisms agreeing on the identity function agree on its continuous functions by continuity and the Stone–Weierstrass density of the polynomials.
 
 **Theorem (the spectral mapping theorem).** For self-adjoint $a$ and continuous $f : \sigma(a) \to \mathbb{C}$,
 
@@ -27,7 +27,7 @@ $$
 \sigma\bigl(f(a)\bigr) = f\bigl(\sigma(a)\bigr) .
 $$
 
-**Proof.** Under the identification of $C^*(a,1)$ with $C(\sigma(a))$, the element $f(a)$ is the function $f$, whose spectrum as an element of the algebra $C(\sigma(a))$ is its range $f(\sigma(a))$; the spectrum is an invariant of the algebra $C^*(a,1)$ because invertibility in a unital $\mathrm{C}^*$-subalgebra with the same unit is the same as invertibility in $A$. $\square$
+**Proof.** Under the identification of $C^*(a,1)$ with $C(\sigma(a))$, the element $f(a)$ is the function $f$, whose spectrum as an element of the algebra $C(\sigma(a))$ is its range $f(\sigma(a))$; the spectrum is an invariant of the algebra $C^*(a,1)$ because invertibility in a unital $\mathrm{C}^*$-subalgebra with the same unit is the same as invertibility in $A$.
 
 **Corollary (positivity and the calculus).** For self-adjoint $a$, $f(a) \geq 0$ exactly when $f \geq 0$ on $\sigma(a)$; the calculus is **positive**, and it produces the square root and the absolute value:
 
@@ -37,13 +37,13 @@ $$
 
 with unique $a^{1/2} \geq 0$ and $(a^{1/2})^2 = a$.
 
-**Proof.** If $f \geq 0$ then $f = g\bar g$ for the continuous $g = f^{1/2}$, so $\Phi_a(f) = \Phi_a(g)\Phi_a(g)^* \in P$; conversely $f(a) \geq 0$ implies $f \geq 0$ because $f$ is the Gelfand transform of $f(a)$ and the characters are positive on positive elements. The square root and the absolute value are the functions displayed; the uniqueness of the positive square root is *Self-Adjoint Elements and the Positive Cone*. $\square$
+**Proof.** If $f \geq 0$ then $f = g\bar g$ for the continuous $g = f^{1/2}$, so $\Phi_a(f) = \Phi_a(g)\Phi_a(g)^* \in P$; conversely $f(a) \geq 0$ implies $f \geq 0$ because $f$ is the Gelfand transform of $f(a)$ and the characters are positive on positive elements. The square root and the absolute value are the functions displayed; the uniqueness of the positive square root is *Self-Adjoint Elements and the Positive Cone*.
 
 ## The Normal Case and the Comparison
 
 **Theorem (the calculus for a normal element).** The continuous functional calculus holds for a normal element $a$ ($a^*a = aa^*$): $\Phi_a$ is an isometric $*$-isomorphism $C(\sigma(a)) \to C^*(a,1)$, and for two continuous functions $f,g$, $f(a)g(a) = (fg)(a)$. The spectrum $\sigma(a)$ is a compact subset of $\mathbb{C}$, and $\lVert f(a)\rVert = \lVert f\rVert_\infty$.
 
-**Proof.** For normal $a$ the $\mathrm{C}^*$-algebra $C^*(a,1)$ is commutative, so the Gelfand transform identifies it with $C(\sigma(a))$ and the same argument applies; multiplicativity and isometry are inherited. $\square$
+**Proof.** For normal $a$ the $\mathrm{C}^*$-algebra $C^*(a,1)$ is commutative, so the Gelfand transform identifies it with $C(\sigma(a))$ and the same argument applies; multiplicativity and isometry are inherited.
 
 **Remark (the two calculi).** The continuous calculus works for self-adjoint and, more generally, normal elements, because the algebra generated is commutative; for a general element the polynomial calculus does not extend continuously, and one uses the **holomorphic functional calculus**, which for a function holomorphic on a neighbourhood of $\sigma(a)$ produces $f(a)$ by a contour integral. The holomorphic calculus is *Holomorphic Functional Calculus*; the continuous calculus is its boundary case for normal elements, and it is this calculus that is used in the spectral theory of a self-adjoint element. The operator-valued version, with the projection-valued measure, is *Operator Algebras*.
 

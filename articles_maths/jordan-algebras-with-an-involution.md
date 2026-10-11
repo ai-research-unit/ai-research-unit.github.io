@@ -30,7 +30,7 @@ It is **linear** when $\varsigma = \mathrm{id}$ and **conjugate-linear** when $\
 
 **Proposition.** The map $\sigma$ is bijective, its restriction to the copy $F\cdot 1$ of the scalars is $\varsigma$, it preserves the powers, $\sigma(a^n) = \sigma(a)^n$ for every $n \ge 0$, and it commutes with the quadratic representation, $\sigma\circ U_{a,b} = U_{\sigma(a),\sigma(b)}\circ\sigma$, so that $\sigma\,U_a\,\sigma^{-1} = U_{\sigma(a)}$.
 
-*Proof.* Bijectivity is $\sigma^2 = \mathrm{id}$. The restriction is $\sigma(\lambda\cdot1) = \varsigma(\lambda)\cdot1$. Powers are preserved by multiplicativity and additivity. For the quadratic representation, $\sigma(a\bullet(b\bullet x)) = \sigma(a)\bullet(\sigma(b)\bullet\sigma(x))$ and the defining formula $U_{a,b} = L_aL_b+L_bL_a-L_{a\bullet b}$ is carried to its analogue at $\sigma(a),\sigma(b)$. $\square$
+*Proof.* Bijectivity is $\sigma^2 = \mathrm{id}$. The restriction is $\sigma(\lambda\cdot1) = \varsigma(\lambda)\cdot1$. Powers are preserved by multiplicativity and additivity. For the quadratic representation, $\sigma(a\bullet(b\bullet x)) = \sigma(a)\bullet(\sigma(b)\bullet\sigma(x))$ and the defining formula $U_{a,b} = L_aL_b+L_bL_a-L_{a\bullet b}$ is carried to its analogue at $\sigma(a),\sigma(b)$.
 
 **Corollary.** The map $\sigma$ is an automorphism of the Jordan algebra $J$ in the $\varsigma$-semilinear sense; in the linear case it is an involutive automorphism and the fixed set is a Jordan subalgebra, by *Involutive Algebras*; in the conjugate-linear case the fixed set is only a linear space over the fixed field and needs the decomposition below.
 
@@ -48,7 +48,7 @@ its elements are the **self-adjoint** (or **Hermitian**) elements, and an elemen
 
 **Proposition.** If $\sigma$ is linear, $H(J)$ and $S(J)$ are $F$-subspaces of $J$ and $J = H(J)\oplus S(J)$ when $2 \neq 0$. If $\sigma$ is $\varsigma$-semilinear and nontrivial, $H(J)$ and $S(J)$ are linear spaces over the fixed field $F^\varsigma$, and $J = H(J)\oplus S(J)$ as $F^\varsigma$-linear spaces still; $H(J)$ is not an $F$-subspace, and $\lambda H(J)\subseteq H(J)$ only for $\lambda \in F^\varsigma$.
 
-*Proof.* The additive decomposition $x = \tfrac12(x+\sigma(x)) + \tfrac12(x-\sigma(x))$ is additive and $F^\varsigma$-linear; it is $F$-linear when $\varsigma = \mathrm{id}$. The scalar behaviour follows from $\sigma(\lambda x) = \varsigma(\lambda)\sigma(x)$. $\square$
+*Proof.* The additive decomposition $x = \tfrac12(x+\sigma(x)) + \tfrac12(x-\sigma(x))$ is additive and $F^\varsigma$-linear; it is $F$-linear when $\varsigma = \mathrm{id}$. The scalar behaviour follows from $\sigma(\lambda x) = \varsigma(\lambda)\sigma(x)$.
 
 ### The Decomposition by a Quadratic Extension
 
@@ -60,7 +60,7 @@ $$
 
 where $i \in K$ satisfies $\varsigma(i) = -i$ and $K = F\oplus Fi$; the sum is direct and is a decomposition of $J$ into two copies of the $F$-Jordan algebra $H(J)$.
 
-*Proof.* For $x \in J$ put $h_1 = \tfrac12(x+\sigma(x))$ and $h_2 = \tfrac{1}{2i}(x-\sigma(x))$. Then $\sigma(h_1) = \tfrac12(\sigma(x)+x) = h_1$ and $\sigma(h_2) = \tfrac{1}{2\varsigma(i)}(\sigma(x)-x) = \tfrac{-1}{-2i}(\sigma(x)-x) = \tfrac{1}{2i}(x-\sigma(x)) = h_2$, so both lie in $H(J)$, and $x = h_1+ih_2$. If $h_1 + ih_2 = 0$ with $h_i \in H(J)$, applying $\sigma$ gives $h_1 - ih_2 = 0$, whence $2h_1 = 0$ and $2ih_2 = 0$, so $h_1 = h_2 = 0$ when $2 \neq 0$. $\square$
+*Proof.* For $x \in J$ put $h_1 = \tfrac12(x+\sigma(x))$ and $h_2 = \tfrac{1}{2i}(x-\sigma(x))$. Then $\sigma(h_1) = \tfrac12(\sigma(x)+x) = h_1$ and $\sigma(h_2) = \tfrac{1}{2\varsigma(i)}(\sigma(x)-x) = \tfrac{-1}{-2i}(\sigma(x)-x) = \tfrac{1}{2i}(x-\sigma(x)) = h_2$, so both lie in $H(J)$, and $x = h_1+ih_2$. If $h_1 + ih_2 = 0$ with $h_i \in H(J)$, applying $\sigma$ gives $h_1 - ih_2 = 0$, whence $2h_1 = 0$ and $2ih_2 = 0$, so $h_1 = h_2 = 0$ when $2 \neq 0$.
 
 **Corollary.** In the conjugate-linear case the fixed set is a **real form** of $J$ in the sense of the extension of scalars: $J \cong H(J)\otimes_F K$, and $\sigma$ is the map $\mathrm{id}\otimes\varsigma$. The passage from a complex Jordan algebra with conjugate-linear involution to its self-adjoint part is the **descent**, and it is the subject of *Real Forms and the Descent of an Algebra*.
 
@@ -68,7 +68,7 @@ where $i \in K$ satisfies $\varsigma(i) = -i$ and $K = F\oplus Fi$; the sum is d
 
 **Theorem.** $H(J)$ is closed under the Jordan product, so it is a Jordan subalgebra of $J$ over the fixed field.
 
-*Proof.* If $\sigma(x) = x$ and $\sigma(y) = y$ then $\sigma(x\bullet y) = \sigma(x)\bullet\sigma(y) = x\bullet y$. $\square$
+*Proof.* If $\sigma(x) = x$ and $\sigma(y) = y$ then $\sigma(x\bullet y) = \sigma(x)\bullet\sigma(y) = x\bullet y$.
 
 **Corollary.** The self-adjoint part is the Jordan algebra of the fixed points, and in the linear case it is exactly the fixed subalgebra of the involutive automorphism $\sigma$. The quadratic representation of $H(J)$ is the restriction of that of $J$, because $U_{x,y}$ for self-adjoint $x,y$ is self-adjoint as an operator: $U_{x,y}$ commutes with $\sigma$ by the proposition above.
 
@@ -82,7 +82,7 @@ $$
 
 **Theorem.** A linear involution $\sigma$ of a formally real Jordan algebra $J$ is formally real, and the condition is equivalent to the statement that $-1$ is not a sum of squares in $H(J)$.
 
-*Proof.* If $J$ is formally real as a Jordan algebra, a sum of squares $\sum h_i^2 = 0$ with $h_i \in J$ forces each $h_i = 0$, hence in particular for $h_i \in H(J)$; conversely the displayed condition applied with $h_i$ self-adjoint and $-1 = \sum h_i^2$ gives the second form, since then $\sum h_i^2 + 1 = 0$ is a nontrivial sum of squares. $\square$
+*Proof.* If $J$ is formally real as a Jordan algebra, a sum of squares $\sum h_i^2 = 0$ with $h_i \in J$ forces each $h_i = 0$, hence in particular for $h_i \in H(J)$; conversely the displayed condition applied with $h_i$ self-adjoint and $-1 = \sum h_i^2$ gives the second form, since then $\sum h_i^2 + 1 = 0$ is a nontrivial sum of squares.
 
 **Remark.** Formal reality is a condition on the Jordan algebra of self-adjoint elements, and the order it carries, the existence of the square roots and the Sylvester law are the subject of *Formally Real Algebras and the Sum of Squares*, later in this group; the article records only the condition and its equivalence with the non-vanishing of the sum of squares.
 
@@ -100,11 +100,11 @@ $$
 
 the self-adjoint part of $J$ being exactly the set of the $\ast$-self-adjoint elements of $A$; the self-adjoint part is a Jordan subalgebra of $A^+$.
 
-*Proof.* $\ast$ is an anti-automorphism of $A$ with $\ast^2 = \mathrm{id}$, so $\sigma(x\bullet y) = \tfrac12((xy+yx))^* = \tfrac12(y^*x^*+x^*y^*) = \tfrac12(x^*y^*+y^*x^*) = \sigma(x)\bullet\sigma(y)$ by the commutativity of the symmetrised product; and $\sigma^2 = \mathrm{id}$. The fixed set is the $\ast$-self-adjoint part by definition, and it is closed under $\bullet$ by the theorem of the previous section. $\square$
+*Proof.* $\ast$ is an anti-automorphism of $A$ with $\ast^2 = \mathrm{id}$, so $\sigma(x\bullet y) = \tfrac12((xy+yx))^* = \tfrac12(y^*x^*+x^*y^*) = \tfrac12(x^*y^*+y^*x^*) = \sigma(x)\bullet\sigma(y)$ by the commutativity of the symmetrised product; and $\sigma^2 = \mathrm{id}$. The fixed set is the $\ast$-self-adjoint part by definition, and it is closed under $\bullet$ by the theorem of the previous section.
 
 **Theorem (realisation).** Every special Jordan algebra with involution $J\subseteq A^+$ for an associative algebra $A$ arises from an involution of $A$ when $A$ is generated by $J$ and $J$ is the self-adjoint part of a $\ast$-algebra: the involution $\ast$ of $A$ restricting to $\sigma$ on $J$ is an **associative envelope** of the involution, and it is unique when $A$ is the universal envelope of $J$.
 
-*Proof.* The involution $\sigma$ of $J$ extends to the associative algebra generated by $J$ by the universal property of the free algebra and the anti-multiplicativity of $\ast$ on the generators; the extension is an involution because it preserves the relations $\sigma^2 = \mathrm{id}$ and the multiplication on the generators. $\square$
+*Proof.* The involution $\sigma$ of $J$ extends to the associative algebra generated by $J$ by the universal property of the free algebra and the anti-multiplicativity of $\ast$ on the generators; the extension is an involution because it preserves the relations $\sigma^2 = \mathrm{id}$ and the multiplication on the generators.
 
 ### Examples
 

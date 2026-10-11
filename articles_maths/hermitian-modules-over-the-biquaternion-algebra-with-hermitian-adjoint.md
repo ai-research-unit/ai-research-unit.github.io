@@ -15,7 +15,7 @@ The computation is that the form of the algebra itself, $\langle\tilde T,\tilde 
 
 The article closes with the **Dirac element**. On a Hermitian module the Clifford action supplies an operator $D=\sum_\mu\rho(e_\mu)\partial_\mu$ whose two factors are skew-adjoint and whose formal adjoint is therefore itself (*Dirac Operators with Hermitian Adjoint*); in the finite-dimensional model, with no derivation, it is $D_{\mathrm{alg}}=\sum_k L_{e_k}$, it is skew-adjoint, its square is $-3\,\mathrm{id}$, and its Hermitian square $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}}=3\,\mathrm{id}$ is positive. The model has no harmonic spinors, and the gap $3$ is the content of the module.
 
-The module theory, the idempotents and the Peirce decomposition are *Modules over the General Plain Algebra of Biquaternions* and *Biquaternion Ideals and Peirce Decomposition*; the scalar form, the adjoint of the one-sided action and the characterisation of the algebra itself as a module are *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*; the positivity of the involution and the cone are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; the spinor reading of the module is *Biquaternion Spin Geometry*; and the general statements are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*, *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *Dirac Operators with Hermitian Adjoint*.
+The module theory, the idempotents and the Peirce decomposition are *Modules over the General Plain Algebra of Biquaternions* and *Ideals and Peirce Decomposition of the General Plain Algebra*; the scalar form, the adjoint of the one-sided action and the characterisation of the algebra itself as a module are *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*; the positivity of the involution and the cone are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; the spinor reading of the module is *Biquaternion Spin Geometry*; and the general statements are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*, *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *Dirac Operators with Hermitian Adjoint*.
 
 ## Hermitian Forms and the Adjointness Axiom
 
@@ -89,7 +89,7 @@ $$
 \tilde T=\tfrac12(ie_1+e_2),
 $$
 
-be the idempotents and the off-diagonal elements of *Biquaternion Ideals and Peirce Decomposition*. They satisfy $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=0$, $\tilde\Pi_1+\tilde\Pi_2=e_0$, the multiplication table
+be the idempotents and the off-diagonal elements of *Ideals and Peirce Decomposition of the General Plain Algebra*. They satisfy $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=0$, $\tilde\Pi_1+\tilde\Pi_2=e_0$, the multiplication table
 
 $$
 \tilde\Pi_1\tilde R=\tilde R=\tilde R\tilde\Pi_2,\qquad
@@ -130,7 +130,7 @@ $$
 \langle e,e\rangle_{*}=\mathrm{Sc}(e^{\dagger}e)=\tfrac12\operatorname{Tr}\bigl(e^{\dagger}e\bigr)>0,
 $$
 
-since $e^{\dagger}e$ is a nonzero positive semidefinite matrix and its trace is the squared Frobenius norm of $e$. So every minimal left ideal of $\mathbb{B}$ carries a positive definite restriction of the scalar form. Since all minimal left ideals are isomorphic (*Modules over the General Plain Algebra of Biquaternions*), the form is attached to the isomorphism class of the module and not merely to the representative $\mathbb{B}\tilde\Pi_1$, and it is transported by the automorphisms of the algebra along the projective line $\mathbb{P}^1(\mathbb{C})$ that parametrises them (*Biquaternion Ideals and Peirce Decomposition*).
+since $e^{\dagger}e$ is a nonzero positive semidefinite matrix and its trace is the squared Frobenius norm of $e$. So every minimal left ideal of $\mathbb{B}$ carries a positive definite restriction of the scalar form. Since all minimal left ideals are isomorphic (*Modules over the General Plain Algebra of Biquaternions*), the form is attached to the isomorphism class of the module and not merely to the representative $\mathbb{B}\tilde\Pi_1$, and it is transported by the automorphisms of the algebra along the projective line $\mathbb{P}^1(\mathbb{C})$ that parametrises them (*Ideals and Peirce Decomposition of the General Plain Algebra*).
 
 **Theorem (uniqueness: Schur).** Every Hermitian form on the simple module $S$ satisfying the adjointness axiom is a positive real multiple of the restriction of the scalar form.
 
@@ -208,7 +208,7 @@ The **unitary slice** $U=U(2)$ acts on every Hermitian module by unitary operato
 ## Further Reading
 
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
-- *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
+- *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
 - *Modules over the General Plain Algebra of Biquaternions* (`articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.md`), for the classification of the modules, the simple module, the projective-not-free dichotomy and the endomorphism algebra.
 - *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, the uniqueness of the invariant form and the module picture of the regular module.
 - *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the sandwich, the cone and the definite slice viewed as a group of operators.

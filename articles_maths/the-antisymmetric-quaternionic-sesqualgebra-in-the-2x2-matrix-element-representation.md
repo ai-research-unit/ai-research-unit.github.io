@@ -16,7 +16,7 @@ $$
 $$
 fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: $\mathsf{M}_2(e_0)=I$ and $\mathsf{M}_2(e_k)=-i\sigma_k$, with $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$, where $\operatorname{adj}$ is the adjugate and ${}^{\dagger}$ the conjugate transpose.
 
-*Proof.* The model, its multiplicativity and the two conjugation identities are those of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; they are used, not re-derived. Verified on the generators and on general elements. $\square$
+*Proof.* The model, its multiplicativity and the two conjugation identities are those of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; they are used, not re-derived.
 
 ## The Matrix Form of the Block
 
@@ -30,13 +30,13 @@ $$
 
 the half-difference of the matrix product with the adjugate in the first slot and the conjugate transpose in the second, and of the same product with the two factors in the other order.
 
-*Proof.* The product $\tilde P^{\natural}\tilde Q^{*}$ reads $\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ in the model, and the product $\tilde Q^{*}\tilde P^{\natural}$ reads $\mathsf{M}_2(\tilde Q)^{\dagger}\operatorname{adj}\mathsf{M}_2(\tilde P)$; the rule of the block is the half-difference of the two, and $\mathsf{M}_2$ is linear. Verified on general elements. $\square$
+*Proof.* The product $\tilde P^{\natural}\tilde Q^{*}$ reads $\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ in the model, and the product $\tilde Q^{*}\tilde P^{\natural}$ reads $\mathsf{M}_2(\tilde Q)^{\dagger}\operatorname{adj}\mathsf{M}_2(\tilde P)$; the rule of the block is the half-difference of the two, and $\mathsf{M}_2$ is linear.
 
 **Remark (the matrix of the natural conjugation).** The adjugation is the matrix of ${}^{\natural}$, and the conjugate transpose is the matrix of ${}^{*}$; the block is therefore written on a general pair with the **matrix of the natural conjugation** in the first slot and the **conjugate transpose** in the second, in the two orders. The two factors of the half-difference are the two readings of that pair, and their difference is the matrix form of the conjugate cross product.
 
 **Proposition (the value is traceless).** For all biquaternions, $\operatorname{Tr}\mathsf{M}_2(\tilde P\diamond\tilde Q)=0$ and $\det\mathsf{M}_2(\tilde P\diamond\tilde Q)$ is the sum of the squares of the coordinates of the conjugate cross product.
 
-*Proof.* The trace of the realization is $2Q_0$, and the block is pure vector, so $Q_0=0$ and the trace vanishes; the determinant of the realization is $\sum_\mu Q_\mu^{2}$, the value of the block, whose scalar coordinate is zero. Verified on general elements. $\square$
+*Proof.* The trace of the realization is $2Q_0$, and the block is pure vector, so $Q_0=0$ and the trace vanishes; the determinant of the realization is $\sum_\mu Q_\mu^{2}$, the value of the block, whose scalar coordinate is zero.
 
 ## The Diagonal in the Model
 
@@ -49,7 +49,7 @@ $$
 
 and $\mathsf{M}_2(e_1+ie_2)=\begin{pmatrix}0&-2i\\0&0\end{pmatrix}$.
 
-*Proof.* Direct evaluation of the model on $e_1+ie_2$ and on the value $-2ie_3$. Verified on the witness. $\square$
+*Proof.* Direct evaluation of the model on $e_1+ie_2$ and on the value $-2ie_3$.
 
 **Remark (the diagonal is visible in the trace-zero matrices).** The block is pure vector, so its matrices are traceless; the diagonal element $\operatorname{diag}(-2,2)$ is the model form of $-2ie_3$, of determinant $-4$, the sum of the squares of the coordinates of the value. On the real basis the block is the ordinary cross product, and its matrices are the traceless matrices of the cross product; off the real basis the value is the conjugate cross product, and the model keeps the trace zero.
 
@@ -62,7 +62,7 @@ $$
 \mathsf{M}_2\bigl(\tilde P\diamond(A\tilde Q)\bigr)=\overline{A}\,\mathsf{M}_2(\tilde P\diamond\tilde Q)\qquad(A\in\mathbb{C}).
 $$
 
-*Proof.* The adjugate is linear and the conjugate transpose is conjugate-linear in the entries, so the first slot enters linearly and the second through the conjugate transpose, which carries the conjugate. Verified on general elements. $\square$
+*Proof.* The adjugate is linear and the conjugate transpose is conjugate-linear in the entries, so the first slot enters linearly and the second through the conjugate transpose, which carries the conjugate.
 
 **Remark (the model expresses the class).** The class of the block is visible in the model as the split between the adjugate, which is linear, and the conjugate transpose, which is conjugate-linear; the half-difference of the two twisted products is again of that class, and this is the matrix form of the sesquilinearity of the block.
 
@@ -82,7 +82,7 @@ K\bigl(\tilde P\diamond\tilde Q,\tilde R\bigr)
 =-\bigl(\mathbf{P}\times\overline{\mathbf{Q}},\overline{\mathbf{R}}\bigr).
 $$
 
-*Proof.* The trace form of the model is the Krein form, by *The Krein Gram Matrix and the Restrictions of the Form* and *The Symmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, $\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}\bigr)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$; the block is pure vector, so the trace reads the vector part with the sign $-1$ and the conjugation on the third argument. Verified on general elements. $\square$
+*Proof.* The trace form of the model is the Krein form, by *The Krein Gram Matrix and the Restrictions of the Form* and *The Symmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, $\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}\bigr)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$; the block is pure vector, so the trace reads the vector part with the sign $-1$ and the conjugation on the third argument.
 
 ## The Comparison with the Plain Row
 

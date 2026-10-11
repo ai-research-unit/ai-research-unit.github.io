@@ -143,7 +143,6 @@ $$
 
 the shift operations of the spin-one multiplet, with the matrix elements $\sqrt{s(s+1)-m(m\pm1)}=\sqrt2$ up to the relative signs shown. Those signs are the phases fixed by the displayed basis; flipping the phase of $\varepsilon_+$ restores the Condon–Shortley signs, so that the weight assignments and the multiplet structure are independent of the convention. The triplet is therefore not merely a list of three vectors; it is a weighted multiplet with the ladder structure that the adjoint action supplies.
 
-<!-- CONVENTION — weight-basis phases: for the basis eps_+ = (e_1 + i e_2)/sqrt2, eps_- = (e_1 - i e_2)/sqrt2, eps_0 = e_3 and the generators J_k = (1/2) ad_{i e_k}, the ladder operators satisfy J_+ eps_- = +sqrt2 eps_0, J_+ eps_0 = -sqrt2 eps_+, J_- eps_+ = -sqrt2 eps_0, J_- eps_0 = +sqrt2 eps_-, and J_± eps_± = 0. The signs are a consequence of the phases of the displayed basis; the standard Condon–Shortley form is recovered by the phase shift eps_+ → -eps_+. The eigenvalue statement J_3 eps_± = ±eps_±, J_3 eps_0 = 0 is convention independent. Do not "correct" these signs without also changing the phase of eps_+. -->
 
 ### The Triplet as the Polarization Triad
 

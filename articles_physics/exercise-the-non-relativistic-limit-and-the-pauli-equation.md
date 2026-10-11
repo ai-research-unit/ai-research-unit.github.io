@@ -199,7 +199,7 @@ $$
 
 the Hermitian element of the informational sector, exactly as the parent states. The kinetic and electrostatic terms multiply the identity and map to the scalar part $(\boldsymbol\pi^2/2m)e_0$ and $q\Phi e_0$ of $\mathbb M_+$.
 
-*Numerical checks.* The Pauli identity of Step 3 was verified with random complex vectors against $2\times2$ matrices, maximum error $8.9\times10^{-15}$ over $1000$ samples. The commutator identity of Step 2 was verified by finite differences on a grid with $\mathbf A=(-y,0,0)$, for which $\mathbf B=(0,0,1)$; the operator identity $[\pi_x,\pi_y]\psi=iqB_z\psi$ was confirmed at five test points with a maximum absolute error $4.8\times10^{-3}$, consistent with the second-order truncation error of the central difference.
+*Numerical checks.* The commutator identity of Step 2 was verified by finite differences on a grid with $\mathbf A=(-y,0,0)$, for which $\mathbf B=(0,0,1)$; the operator identity $[\pi_x,\pi_y]\psi=iqB_z\psi$ was confirmed at five test points with a maximum absolute error $4.8\times10^{-3}$, consistent with the second-order truncation error of the central difference.
 
 ## Problem 3: The spin–orbit and Darwin terms at the next order
 

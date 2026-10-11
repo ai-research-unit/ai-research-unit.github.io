@@ -257,7 +257,7 @@ $$
 $$
 
 which agrees with the form quoted above to first order in $\boldsymbol\theta$ (the source states it to
-$O(\theta^2)$). Verified by recomputation for the companion `.context`: the total-derivative relation to
+$O(\theta^2)$).
 $3.6\times10^{-9}$ on random fields and random time derivatives, the $O(\theta)$ agreement of the two energy
 forms, the printed $T_{4m}$, and the mixed antisymmetry to machine precision.
 

@@ -88,7 +88,6 @@ a form of signature $(1,3)$ wherever $f>0$, whose single free function is the sq
 
 *Proof.* Substitute $\hat\imath_0^2 = f$ and $\imath_k^2 = 1/f$ in the theorem. The signature is the diagonal one: the temporal coefficient $f$ is positive and the three spatial coefficients $-1/(9f)$ are negative when $f>0$.
 
-**Verification.** The interval of the theorem and its corollary have been checked, exactly, on $100$ frames with rational frame functions and rational displacements; both hold without exception, and the rope below has been checked on the same set.
 
 ### The Metric Is Dynamic
 

@@ -89,7 +89,6 @@ $$
 
 The two invariants $\mathcal{L}_2$ and $\mathcal{L}_4$ are the first two terms of the derivative expansion of the pion effective theory; the first fixes the target geometry and $f_\pi$, and the second is weighted by $1/e^2$. The framework's contribution is that both are biquaternion norms of the algebra-valued current, and the reason the Skyrme term is a commutator is that $\mathrm{SU}(2)$ is the algebra the current lies in.
 
-<!-- CONVENTION — biquaternion-norm kinetic term: the contraction $\mathrm{Sc}(\bar j_\mu j_\mu)$ is summed over the four coordinate derivatives with both indices down, and the overall minus sign in $\mathcal{L}_2$ is what makes the kinetic energy positive. Much of the standard literature writes the same term with a plus and a mostly-minus contraction. Do not "fix" the minus sign. -->
 
 **Why the fourth-order term is needed.** A term with four derivatives has dimension of length to the minus four in four spacetime dimensions and is therefore non-renormalizable; it is admitted in the effective theory because it is the leading term that can stabilise a soliton. The next section shows that the two-derivative term alone cannot.
 
@@ -134,7 +133,6 @@ $$
 
 is a minimum. With $E_4 = 0$ the function $E(\lambda) = E_2/\lambda$ has no minimum: it decreases without bound as $\lambda\to\infty$, so the configuration shrinks, and a purely two-derivative static soliton is unstable to collapse. The four-derivative term supplies the increasing branch and bounds the energy from below. This is Derrick's theorem (Derrick 1964) applied to the Skyrme model, and it is standard.
 
-**Verification.** For the representative values $E_2 = 2$ and $E_4 = 3$, the numerical minimisation of $E(\lambda) = E_2/\lambda + \lambda E_4$ gives $\lambda_* = 0.81649658$ and $E(\lambda_*) = 4.8989795$, against the closed forms $\lambda_* = \sqrt{E_2/E_4} = 0.81649658$ and $2\sqrt{E_2E_4} = 4.8989795$. With $E_4 = 0$ the energy decreases monotonically, confirming the absence of a minimum.
 
 **The energy functional.** In the static gauge the two terms give the Skyrme energy
 
@@ -198,7 +196,6 @@ $$
 
 For a profile that starts at $F(0) = \pi$ and falls to $F(\infty) = 0$, the bracket is $\pi$ and $B = 1$; for $F(0) = k\pi$ it is $k\pi$ and $B = k$. The profile function is fixed by minimising the energy functional at fixed $B$; its equation of motion is the nonlinear Skyrme equation, and the solution interpolates monotonically between the two endpoints.
 
-**Verification.** The reduction was checked against a direct evaluation. For the profile $F(r) = \pi e^{-r^2/2}$, the full density $B^0$ computed from the field by central differences of the four-component real quaternion — with $j_i = \tilde U^{-1}\partial_i\tilde U$ evaluated numerically and the trace performed in the real representation — agreed with $-\frac{1}{2\pi^2}\sin^2F\,F'/r^2$ at the sampled radii $r = 0.8, 1.1, 1.5$ to the finite-difference error. The radial integral gave $B = 1.0000000002$ for $F(0) = \pi$, $B = 2.000000000$ for $F(0) = 2\pi$ and $B = 3.000000000$ for $F(0) = 3\pi$. The last line is the check of **additivity**: the winding number of a configuration that wraps the target $k$ times is $k$, so two well-separated skyrmions of unit charge have $B = 2$ in the asymptotic regime where the product configuration is defined. The representation used is the real four-dimensional one, and the numerical derivatives were central differences.
 
 ## The Hedgehog, the Soliton and the Nucleon
 

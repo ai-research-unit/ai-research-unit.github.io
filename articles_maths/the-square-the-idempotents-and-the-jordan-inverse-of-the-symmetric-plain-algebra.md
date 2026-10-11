@@ -4,11 +4,11 @@
 
 The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra of Biquaternions*. This article reads the three structures a commutative unital Jordan algebra is built from: the **square** $\tilde Q\mapsto\tilde Q\bullet\tilde Q$ and the quadratic map it defines, the **idempotents** $\tilde Q\bullet\tilde Q=\tilde Q$, and the **inverse** of an element.
 
-The results are collected here because they are one subject. The block is a Jordan algebra of degree two, and its degree is the statement that every element satisfies a quadratic identity with a **generic trace** $T(\tilde Q)=2Q_0$ and a **generic norm** $N(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2$; the idempotents are read off the same identity at $N=1$; the inverse is the companion root of the quadratic; and the isotropic cone $\{N(\tilde Q)=0\}$ is what makes the algebra not a division Jordan algebra.
+The results are collected here because they are one subject. The block is a Jordan algebra of degree two, and its degree is the statement that every element satisfies a quadratic identity with a **generic trace** $T(\tilde Q)=2Q_0$ and a **generic norm** $N(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2$; the idempotents are read off the same identity at integral trace; the inverse is the companion root of the quadratic; and the isotropic cone $\{N(\tilde Q)=0\}$ is what makes the algebra not a division Jordan algebra.
 
-The square of the block is the plain square, so the idempotents of the block are the idempotents of the plain product, already classified in *Idempotents of the General Plain Algebra*, and the norm is the biquaternion norm of *Biquaternion Norm and Invertibility*. What this article adds is the reading of those facts as the degree-two structure of the Jordan algebra, and the computation of the Jordan inverse. The trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the idempotents as minimal ideals are *Biquaternion Ideals and Peirce Decomposition*; the zero divisors are *Zero Divisors of the General Plain Algebra*; the roots of $-1$ are *Biquaternion Square Roots of Minus One, Zero and Plus One*; and the placement of the block among the twelve operations is *The 12 Products of the Biquaternion Complex Space*.
+The square of the block is the plain square, so the idempotents of the block are the idempotents of the plain product, classified in *Idempotents of the General Plain Algebra*, and the norm is the biquaternion norm of *Norm and Invertibility in the General Plain Algebra*. What this article adds is the reading of those facts as the degree-two structure of the Jordan algebra, and the fuller theory of the Jordan inverse. The Common Theory articles of the block are *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors of the Symmetric Plain Algebra*, *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Algebra*, *Square Roots of a General Element in the Symmetric Plain Algebra*, *Idempotents of the Symmetric Plain Algebra*, *Nilpotents of the Symmetric Plain Algebra* and *The Specificities of the Symmetric Plain Algebra*; the trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the idempotents as minimal ideals of the parent are *Ideals and Peirce Decomposition of the General Plain Algebra*; and the placement of the block among the twelve operations is *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\mathbf{Q},\mathbf{Q})=\sum_kQ_k^2$. The product is $\bullet$, the symmetric plain product; the product $\tilde P\tilde Q$ without a mark is the general plain one. The natural conjugate is $\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, and the biquaternion norm is $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ of *Biquaternion Norm and Invertibility*, written $N(\tilde Q)$ here.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\mathbf{Q},\mathbf{Q})=\sum_kQ_k^2$. The product is $\bullet$, the symmetric plain product; the product $\tilde P\tilde Q$ without a mark is the general plain one. The natural conjugate is $\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, and the biquaternion norm is $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ of *Norm and Invertibility in the General Plain Algebra*, written $N(\tilde Q)$ here.
 
 ## The Square and the Quadratic Map
 
@@ -20,7 +20,7 @@ $$
 \tilde Q\bullet\tilde Q=\tilde Q^2=\bigl[Q_0^2-(\mathbf{Q},\mathbf{Q})\bigr]e_0+2Q_0\mathbf{Q}.
 $$
 
-*Proof.* $\tilde Q\bullet\tilde Q=\tfrac12(\tilde Q^2+\tilde Q^2)=\tilde Q^2$, and the plain square is the displayed form, read from the scalar–vector rule of *Introduction to the General Plain Algebra of Biquaternions* at $\tilde P=\tilde Q$. Verified on the coordinate rule.
+*Proof.* $\tilde Q\bullet\tilde Q=\tfrac12(\tilde Q^2+\tilde Q^2)=\tilde Q^2$, and the plain square is the displayed form, read from the scalar–vector rule of *Introduction to the General Plain Algebra of Biquaternions* at $\tilde P=\tilde Q$.
 
 **Remark (the block's square and the algebra's square are one).** Because the antisymmetric part of the plain product is alternating, its diagonal vanishes, and the plain square is carried by the symmetric part alone. **The square of the block and the square of the algebra are therefore the same map** $\tilde Q\mapsto\tilde Q^2$, and the antisymmetric part carries none of it. The spectrum of the block is the spectrum of the algebra, and the minimal polynomial is read from this square.
 
@@ -32,7 +32,7 @@ $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl((\tilde P+\tilde Q)\bullet(\tilde P+\tilde Q)-\tilde P\bullet\tilde P-\tilde Q\bullet\tilde Q\bigr).
 $$
 
-*Proof.* The product is $\mathbb{C}$-bilinear and commutative, so the square of a sum expands as the sum of the two squares and twice the product. Verified on the coordinate rule.
+*Proof.* The product is $\mathbb{C}$-bilinear and commutative, so the square of a sum expands as the sum of the two squares and twice the product.
 
 So the quadratic map $\tilde Q\mapsto\tilde Q\bullet\tilde Q$ and the linear structure determine the product, and the two are the data a Jordan algebra is generated by; this is $\sigma_2$ in the notation of *The Symmetric and Antisymmetric Parts of an Algebra Product*.
 
@@ -45,7 +45,7 @@ $$
 T(\tilde Q)=2Q_0,\quad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2 .
 $$
 
-*Proof.* On the square of the previous section, $\tilde Q\bullet\tilde Q=Q_0^2-(\mathbf{Q},\mathbf{Q})+2Q_0\mathbf{Q}$ and $T(\tilde Q)\tilde Q=2Q_0\cdot(Q_0e_0+\mathbf{Q})=2Q_0^2e_0+2Q_0\mathbf{Q}$. Subtracting the two leaves $\bigl(Q_0^2-(\mathbf{Q},\mathbf{Q})-2Q_0^2+N(\tilde Q)\bigr)e_0$, and the coefficient vanishes because $N(\tilde Q)=Q_0^2+(\mathbf{Q},\mathbf{Q})$. Verified on the coordinate rule.
+*Proof.* On the square of the previous section, $\tilde Q\bullet\tilde Q=Q_0^2-(\mathbf{Q},\mathbf{Q})+2Q_0\mathbf{Q}$ and $T(\tilde Q)\tilde Q=2Q_0\cdot(Q_0e_0+\mathbf{Q})=2Q_0^2e_0+2Q_0\mathbf{Q}$. Subtracting the two leaves $\bigl(Q_0^2-(\mathbf{Q},\mathbf{Q})-2Q_0^2+N(\tilde Q)\bigr)e_0$, and the coefficient vanishes because $N(\tilde Q)=Q_0^2+(\mathbf{Q},\mathbf{Q})$.
 
 **Definition.** The functional $T(\tilde Q)=2Q_0$ is the **generic trace** of the block and $N(\tilde Q)=\sum_\mu Q_\mu^2$ its **generic norm**. The quadratic identity is the generic minimal polynomial of the block, of degree two.
 
@@ -61,57 +61,15 @@ $$
 
 ## The Idempotents of the Block
 
-### The Equation
-
 **Definition.** An **idempotent** of the block is an element $\tilde\Pi$ with
 
 $$
 \tilde\Pi\bullet\tilde\Pi=\tilde\Pi .
 $$
 
-Writing $\tilde\Pi=\Pi_0e_0+\boldsymbol{\Pi}$, the equation reads, by the square of the block,
+The idempotents of the block are the idempotents of the plain product, since the two squares agree, and their theory — the classification, the parametrisation by the roots of $-1$ and by the pure roots of $+1$, the complementary idempotent $e_0-\tilde\Pi$, the isotropy, the cubic Peirce identity and the Jordan Peirce decomposition — is the Common Theory article *Idempotents of the Symmetric Plain Algebra*. **It is not repeated here**, and this section keeps only the definition and the two facts that bear on the degree-two structure of the block.
 
-$$
-\Pi_0^2-(\boldsymbol{\Pi},\boldsymbol{\Pi})=\Pi_0,\qquad 2\Pi_0\boldsymbol{\Pi}=\boldsymbol{\Pi}.
-$$
-
-### The Idempotents Are Those of the Plain Product
-
-**Theorem.** The idempotents of the block are exactly the idempotents of the plain product.
-
-*Proof.* The square of the block is the plain square, $\tilde\Pi\bullet\tilde\Pi=\tilde\Pi^2$, so the equation $\tilde\Pi\bullet\tilde\Pi=\tilde\Pi$ is the equation $\tilde\Pi^2=\tilde\Pi$ of the plain product. Verified on the square.
-
-The classification is therefore the one of *Idempotents of the General Plain Algebra*, and it is restated here in the language of the block.
-
-**Theorem (classification).** Every idempotent of the block is either trivial, $\tilde\Pi=0$ or $\tilde\Pi=e_0$, or has the form
-
-$$
-\tilde\Pi=\tfrac12e_0\pm\tfrac12\xi i
-$$
-
-for a **root of $-1$** $\xi\in\mathbb{B}$, $\xi^2=-1$. There are no others.
-
-*Proof.* If $\boldsymbol{\Pi}=0$ the two equations give $\Pi_0^2=\Pi_0$, hence $\Pi_0=0$ or $1$. If $\boldsymbol{\Pi}\neq0$ the second equation gives $\Pi_0=\tfrac12$ and the first gives $(\boldsymbol{\Pi},\boldsymbol{\Pi})=-\tfrac14$; putting $\xi=-2i\boldsymbol{\Pi}$ gives $(\xi,\xi)=1$, hence $\xi^2=-1$ and $\boldsymbol{\Pi}=\xi\cdot\tfrac{i}{2}$. The sign is the replacement of $\xi$ by $-\xi$. The computation is the proof of *Idempotents of the General Plain Algebra*, read in the block; verified on the classification.
-
-**Theorem (the bijection).** The map $\xi\mapsto\tfrac12(e_0+\xi i)$ is a bijection from the roots of $-1$ onto the idempotents of the block, and the complementary pairs $\{\tilde\Pi,e_0-\tilde\Pi\}$ correspond to the classes $\{\xi,-\xi\}$.
-
-*Proof.* If $\xi^2=-1$ then $\tfrac12(e_0+\xi i)$ satisfies the idempotent equation, because $\tfrac14(e_0+2\xi i+\xi^2i^2)=\tfrac14(e_0+2\xi i+1)=\tfrac12(e_0+\xi i)$; the map is injective because $\xi i=\xi'i$ forces $\xi=\xi'$; and it is surjective by the classification. The complement reads $\tfrac12(e_0-\xi i)$, which is the image of $-\xi$. Verified on the construction.
-
-### The Families of Idempotents
-
-Substituting the classification of the roots of $-1$ of *Biquaternion Square Roots of Minus One, Zero and Plus One* gives the three families:
-
-- the **trivial roots** $\xi=\pm i$ give the trivial idempotents $0$ and $e_0$;
-- the **real roots** $\xi=\pm\hat\mu$ over a unit real vector $\hat\mu\in\mathbb{R}^3$ give the **Hermitian idempotents** $\tfrac12(e_0\pm i\hat\mu)$, which lie in $\mathbb{M}_+$ and are the pure states of *Idempotents of the General Plain Algebra*;
-- the **non-trivial roots** $\xi=\mathbf{p}+i\mathbf{p}'$, cut by $p_1^2+p_2^2+p_3^2-p_1'^2-p_2'^2-p_3'^2=1$ and $p_1p'_1+p_2p'_2+p_3p'_3=0$, give idempotents whose vector part mixes a real and an imaginary direction, and they lie in none of the four four-dimensional subspaces.
-
-**Remark (the idempotents are isotropic).** A non-trivial idempotent has generic trace $T(\tilde\Pi)=2\Pi_0=1$ and generic norm
-
-$$
-N(\tilde\Pi)=\Pi_0^2+(\boldsymbol{\Pi},\boldsymbol{\Pi})=\tfrac14+\bigl(\tfrac{i}{2}\bigr)^2(\xi,\xi)=\tfrac14-\tfrac14=0,
-$$
-
-because $(\xi,\xi)=1$ for a root of $-1$. Its quadratic identity is therefore $(1-T)\tilde\Pi+Ne_0=0$, which reads $0=0$. **Every non-trivial idempotent is isotropic and hence a zero divisor, not an invertible element of the block**, in agreement with the algebra identity $\tilde\Pi(e_0-\tilde\Pi)=0$. Verified on the formula.
+**Remark (the idempotents and the degree-two structure).** An idempotent is read off the quadratic identity at integral trace: the trivial idempotents have $(T,N)=(0,0)$ and $(2,1)$, and the non-trivial ones $(T,N)=(1,0)$. The non-trivial idempotents are therefore **isotropic**, $N(\tilde\Pi)=0$, and hence are the non-invertible idempotents, the invertibility criterion being $N\neq0$; the full theory is *Idempotents of the Symmetric Plain Algebra*, and the isotropic idempotents as the scalar family of the zero divisors are *Zero Divisors of the Symmetric Plain Algebra*.
 
 ## The Jordan Inverse
 
@@ -143,7 +101,7 @@ $$
 \frac{\tilde Q\bullet\tilde Q}{N(\tilde Q)}-\frac{T(\tilde Q)}{N(\tilde Q)}\tilde Q+e_0=0,
 $$
 
-that is, $\tilde Q\bullet\bigl((T(\tilde Q)e_0-\tilde Q)/N(\tilde Q)\bigr)=e_0$, so the displayed element is a Jordan inverse; the second equation $x\bullet(y\bullet x)=x$ follows, since $\bullet$ is commutative and associative with respect to the unit in the Jordan sense. The identity $T(\tilde Q)e_0-\tilde Q=2Q_0e_0-\tilde Q=\tilde Q^{\natural}$ is the definition of the natural conjugate. Verified on the formula and on random invertible elements.
+that is, $\tilde Q\bullet\bigl((T(\tilde Q)e_0-\tilde Q)/N(\tilde Q)\bigr)=e_0$, so the displayed element is a Jordan inverse; the second equation $x\bullet(y\bullet x)=x$ follows, since $\bullet$ is commutative and associative with respect to the unit in the Jordan sense. The identity $T(\tilde Q)e_0-\tilde Q=2Q_0e_0-\tilde Q=\tilde Q^{\natural}$ is the definition of the natural conjugate.
 
 ### The Comparison with the Algebra Inverse
 
@@ -154,7 +112,7 @@ $$
 \tilde Q\bullet\tilde Q^{-1}=\tilde Q\tilde Q^{-1}=e_0 .
 $$
 
-*Proof.* The inverse formula of the algebra is $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ in *Biquaternion Norm and Invertibility*, and $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}$. The two formulas are the same element; the Jordan inverse was computed above as the same quotient. Verified on random invertible elements.
+*Proof.* The inverse formula of the algebra is $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ in *Norm and Invertibility in the General Plain Algebra*, and $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}$. The two formulas are the same element; the Jordan inverse was computed above as the same quotient.
 
 **Remark (the inverse agrees because the block is special).** In a general Jordan algebra the inverse is a new operation; here the block is the symmetrisation of an associative algebra, and **the Jordan inverse coincides with the associative inverse and is therefore computed by the natural conjugate and the norm**, exactly as in the algebra. The invertibility criterion is the same in the two readings: an element is invertible in the block precisely when it is invertible in $\mathbb{B}$, that is, precisely when it is not a zero divisor.
 
@@ -162,7 +120,7 @@ $$
 
 ### The Generic Norm and the Isotropic Cone
 
-The generic norm $N(\tilde Q)=\sum_\mu Q_\mu^2$ is the biquaternion norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$ of *Biquaternion Norm and Invertibility*, a complex-valued multiplicative algebraic norm vanishing exactly on the isotropic cone $\{N=0\}$, the origin together with the zero divisors. Its polar form is the complex bilinear dot product $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, symmetric and non-degenerate, with Gram matrix the identity $\mathrm{I}_4$ in the coefficient basis.
+The generic norm $N(\tilde Q)=\sum_\mu Q_\mu^2$ is the biquaternion norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$ of *Norm and Invertibility in the General Plain Algebra*, a complex-valued multiplicative algebraic norm vanishing exactly on the isotropic cone $\{N=0\}$, the origin together with the zero divisors. Its polar form is the complex bilinear dot product $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, symmetric and non-degenerate, with Gram matrix the identity $\mathrm{I}_4$ in the coefficient basis.
 
 **Definition.** The **isotropic cone** of the block is the set
 
@@ -172,7 +130,7 @@ $$
 
 **Remark (the isotropic cone is the zero-divisor cone).** $N(\tilde Q)=0$ holds for $\tilde Q=0$ and for the zero divisors of *Zero Divisors of the General Plain Algebra*, and for no other element. **The isotropic cone of the block is the union of the origin and the zero-divisor cone of the algebra, so the symmetric plain algebra possesses non-zero isotropic elements and is not a division Jordan algebra.** This is the Jordan reading of the failure of $\mathbb{B}$ to be a division algebra: the block is a Jordan algebra whose norm form is **non-degenerate** but isotropic, of realified signature $(4,4)$; **it is the Hermitian form, and not the norm form, that is definite**.
 
-An element is isotropic exactly when it fails to be invertible, so the invertible elements of the block are its non-isotropic elements, the group of units of *Biquaternion Norm and Invertibility*.
+An element is isotropic exactly when it fails to be invertible, so the invertible elements of the block are its non-isotropic elements, the group of units of *Norm and Invertibility in the General Plain Algebra*.
 
 ### The Elements of Square Zero
 
@@ -184,9 +142,9 @@ $$
 
 that is, exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{B})$ on which the norm vanishes. They are a proper subset of the isotropic cone.
 
-*Proof.* By the square of the block, $\tilde Q\bullet\tilde Q=\bigl(Q_0^2-(\mathbf{Q},\mathbf{Q})\bigr)e_0+2Q_0\mathbf{Q}$. Its vanishing gives the two scalar conditions $Q_0^2=(\mathbf{Q},\mathbf{Q})$ and $Q_0\mathbf{Q}=0$. If $Q_0\neq0$ the second gives $\mathbf{Q}=0$, and the first gives $Q_0=0$, a contradiction; so $Q_0=0$, and the first condition becomes $(\mathbf{Q},\mathbf{Q})=0$. Conversely a pure element with $(\mathbf{Q},\mathbf{Q})=0$ has zero square. Verified on the square and on constructed pure isotropic vectors.
+*Proof.* By the square of the block, $\tilde Q\bullet\tilde Q=\bigl(Q_0^2-(\mathbf{Q},\mathbf{Q})\bigr)e_0+2Q_0\mathbf{Q}$. Its vanishing gives the two scalar conditions $Q_0^2=(\mathbf{Q},\mathbf{Q})$ and $Q_0\mathbf{Q}=0$. If $Q_0\neq0$ the second gives $\mathbf{Q}=0$, and the first gives $Q_0=0$, a contradiction; so $Q_0=0$, and the first condition becomes $(\mathbf{Q},\mathbf{Q})=0$. Conversely a pure element with $(\mathbf{Q},\mathbf{Q})=0$ has zero square.
 
-**Remark (square zero is stronger than isotropic).** The isotropic cone is $\{N(\tilde Q)=0\}$, which for a pure element is the same condition $(\mathbf{Q},\mathbf{Q})=0$; but for $Q_0\neq0$ the equation $N(\tilde Q)=0$ has the solutions $(\mathbf{Q},\mathbf{Q})=-Q_0^2$, whose square has the non-zero vector part $2Q_0\mathbf{Q}$ since $\mathbf{Q}\neq0$. The element $e_0+ie_1$ is the witness: $N(e_0+ie_1)=1+i^2=0$, while $(e_0+ie_1)\bullet(e_0+ie_1)=2e_0+2ie_1\neq0$. **The elements of square zero are the pure part of the isotropic cone, and the isotropic cone is strictly larger**, so the two notions must not be identified. Verified on the witness.
+**Remark (square zero is stronger than isotropic).** The isotropic cone is $\{N(\tilde Q)=0\}$, which for a pure element is the same condition $(\mathbf{Q},\mathbf{Q})=0$; but for $Q_0\neq0$ the equation $N(\tilde Q)=0$ has the solutions $(\mathbf{Q},\mathbf{Q})=-Q_0^2$, whose square has the non-zero vector part $2Q_0\mathbf{Q}$ since $\mathbf{Q}\neq0$. The element $e_0+ie_1$ is the witness: $N(e_0+ie_1)=1+i^2=0$, while $(e_0+ie_1)\bullet(e_0+ie_1)=2e_0+2ie_1\neq0$. **The elements of square zero are the pure part of the isotropic cone, and the isotropic cone is strictly larger**, so the two notions must not be identified.
 
 ### The Isotopy with the Two by Two Matrices
 
@@ -197,11 +155,11 @@ T(\tilde Q)=2Q_0=\operatorname{Tr}\Phi(\tilde Q),\qquad
 N(\tilde Q)=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q).
 $$
 
-Two Jordan algebras of degree two whose norm forms are carried to one another by an invertible linear map are isotopic, so the block is isotopic to the degree-two matrix algebra, and its quadratic identity is the Cayley–Hamilton identity of the $2\times2$ matrices. **The degree-two structure of the block is the degree-two structure of the matrices**, and the correspondence is read in full in *The Symmetric Plain Algebra in the $2\times2$ and $4\times4$ Matrix Element Representations*. Verified on the matrix model.
+Two Jordan algebras of degree two whose norm forms are carried to one another by an invertible linear map are isotopic, so the block is isotopic to the degree-two matrix algebra, and its quadratic identity is the Cayley–Hamilton identity of the $2\times2$ matrices. **The degree-two structure of the block is the degree-two structure of the matrices**, and the correspondence is read in full in *The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*.
 
 ## Summary
 
-The symmetric plain algebra is a commutative unital Jordan algebra of degree two. Its square is the plain square, $\tilde Q\bullet\tilde Q=Q_0^2-(\mathbf{Q},\mathbf{Q})+2Q_0\mathbf{Q}$, and it satisfies the quadratic identity $\tilde Q\bullet\tilde Q-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ with generic trace $T(\tilde Q)=2Q_0$ and generic norm $N(\tilde Q)=\sum_\mu Q_\mu^2$, of discriminant $-4(\mathbf{Q},\mathbf{Q})$. Its idempotents are the idempotents of the plain product, the trivial ones $0$ and $e_0$ and the elements $\tfrac12(e_0+\xi i)$ over the roots of $-1$, with the Hermitian idempotents the projectors of $\mathbb{M}_+$. Its inverse is $\tilde Q^{-1}=(2Q_0e_0-\tilde Q)/N(\tilde Q)=\tilde Q^{\natural}/N(\tilde Q)$, which is the inverse of the algebra, and the invertibility criterion is $N(\tilde Q)\neq0$. The isotropic cone is $\{N(\tilde Q)=0\}$, the union of the origin and the zero-divisor cone, so the block is not a division Jordan algebra; the elements of square zero are the pure isotropic vectors, a proper subset of that cone, and $e_0+ie_1$ separates the two. The block is a degree-two Jordan algebra isotopic to the symmetrised $2\times2$ matrices, with the generic trace as the matrix trace and the generic norm as the determinant.
+The symmetric plain algebra is a commutative unital Jordan algebra of degree two. Its square is the plain square, $\tilde Q\bullet\tilde Q=Q_0^2-(\mathbf{Q},\mathbf{Q})+2Q_0\mathbf{Q}$, and it satisfies the quadratic identity $\tilde Q\bullet\tilde Q-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ with generic trace $T(\tilde Q)=2Q_0$ and generic norm $N(\tilde Q)=\sum_\mu Q_\mu^2$, of discriminant $-4(\mathbf{Q},\mathbf{Q})$. Its idempotents are the idempotents of the plain product — the trivial elements $0$ and $e_0$ and the isotropic elements $\tfrac12(e_0+\mathbf u)$ with $\mathbf u^2=e_0$ pure — and their theory is the Common Theory article *Idempotents of the Symmetric Plain Algebra*. Its inverse is $\tilde Q^{-1}=(2Q_0e_0-\tilde Q)/N(\tilde Q)=\tilde Q^{\natural}/N(\tilde Q)$, which is the inverse of the algebra, and the invertibility criterion is $N(\tilde Q)\neq0$. The isotropic cone is $\{N(\tilde Q)=0\}$, the union of the origin and the zero-divisor cone, so the block is not a division Jordan algebra; the elements of square zero are the pure isotropic vectors, a proper subset of that cone, and $e_0+ie_1$ separates the two. The block is a degree-two Jordan algebra isotopic to the symmetrised $2\times2$ matrices, with the generic trace as the matrix trace and the generic norm as the determinant.
 
 ## Summary of Notation
 
@@ -211,7 +169,7 @@ The symmetric plain algebra is a commutative unital Jordan algebra of degree two
 | $T(\tilde Q)=2Q_0$ | the generic trace |
 | $N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2=\langle\tilde Q,\tilde Q\rangle_{\natural}$ | the generic norm, the biquaternion norm |
 | $\tilde Q\bullet\tilde Q-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ | the quadratic identity, the generic minimal polynomial |
-| $\tfrac12(e_0+\xi i)$, $\xi^2=-1$ | the non-trivial idempotents |
+| $\tfrac12(e_0+\mathbf u)$, $\mathbf u^2=e_0$ pure | the non-trivial idempotents (*Idempotents of the Symmetric Plain Algebra*) |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | the Jordan inverse, the algebra inverse |
 | $\{N(\tilde Q)=0\}$ | the isotropic cone, the zero-divisor cone with the origin |
 | $Q_0=0,\ (\mathbf{Q},\mathbf{Q})=0$ | the elements of square zero, the pure isotropic vectors |
@@ -219,9 +177,10 @@ The symmetric plain algebra is a commutative unital Jordan algebra of degree two
 
 ## Further Reading
 
+- *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors of the Symmetric Plain Algebra*, *Idempotents of the Symmetric Plain Algebra* and *Nilpotents of the Symmetric Plain Algebra*, for the Common Theory of the block.
 - *Idempotents of the General Plain Algebra*, for the classification of the idempotents, the projections and the minimal left ideals.
-- *Biquaternion Norm and Invertibility*, for the biquaternion norm, its multiplicativity and the invertibility criterion.
+- *Norm and Invertibility in the General Plain Algebra*, for the biquaternion norm, its multiplicativity and the invertibility criterion.
 - *Zero Divisors of the General Plain Algebra*, for the zero divisors and the structure of the isotropic set.
-- *Biquaternion Square Roots of Minus One, Zero and Plus One*, for the classification of the roots of $-1$ and the families of idempotents.
-- *The 12 Products of the Biquaternion Complex Space*, for the degree-two reading and the placement of the block.
-- *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, for the matrix model and the isotopy with the symmetrised matrices.
+- *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, for the classification of the roots of $-1$ and the families of idempotents.
+- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the degree-two reading and the placement of the block.
+- *The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, for the matrix model and the isotopy with the symmetrised matrices.

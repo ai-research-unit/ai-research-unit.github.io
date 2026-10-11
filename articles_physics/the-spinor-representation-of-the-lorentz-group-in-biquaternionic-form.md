@@ -97,7 +97,6 @@ $$
 
 and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $u\otimes\bar{v}\mapsto \tilde{Q}=u\,v^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(uv^{\dagger}+vu^{\dagger})$ is the element of $\mathbb{M}_+$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself.
 
-**Verification on a chosen case.** Take the diagonal generator $J_3=e_3$ and the third boost generator $K_3=ie_3$, represented on $S$ by $J_3\mapsto-i\sigma_3$, $K_3\mapsto\sigma_3$. On the four-dimensional space $S\otimes\bar{S}$ the diagonal generator acts by $-i\sigma_3\otimes I+I\otimes(i\sigma_3)$ — note that $\bar{S}$ carries $\overline{(-i\sigma_3)}=i\sigma_3$ — and its eigenvalues on the basis $e_a\otimes\bar{e}_b$ are
 
 $$
 -i s_a + i s_b, \qquad s_a,s_b\in\{+1,-1\},

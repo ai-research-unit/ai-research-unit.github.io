@@ -165,9 +165,7 @@ $$
 
 the canonical kinetic term of three real pion fields, with coefficient exactly one and no free parameter. The higher terms are the interactions: every vertex carries derivatives, their coefficients are fixed by the algebra, and at four derivatives the terms include the Skyrme term of the companion article. This is the chiral Lagrangian at leading order, and it is the framework's principal chiral model with $f = f_\pi$.
 
-<!-- CONVENTION — biquaternion-norm kinetic term: the contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ is summed over the four coordinate derivatives with both indices down, and the overall minus sign in $\mathcal{L}_\pi^{(2)}$ is what makes the kinetic energy positive. Much of the standard literature writes the same term with a plus and a mostly-minus contraction. Do not "fix" the minus sign. -->
 
-**Verification.** The expansion coefficient was checked directly: for a field with $\pi^a(x^\mu) = \epsilon\,x\,\delta^{a1}$ and $\tilde U = \exp(\tilde\pi/f_\pi)$, the biquaternion norm $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ divided by $(\epsilon/f_\pi)^2$ came out exactly $1$ (to double precision), confirming the normalisation $\mathrm{Sc}(\overline{e_1}e_1) = +1$ and hence the coefficient $\frac12$ in the kinetic term. The calculation used the real four-dimensional representation of $\mathbb{H}$.
 
 ## Pion Mass and the Gell-Mann–Oakes–Renner Relation
 

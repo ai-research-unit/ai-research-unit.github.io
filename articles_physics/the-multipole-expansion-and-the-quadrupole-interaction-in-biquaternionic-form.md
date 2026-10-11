@@ -291,7 +291,7 @@ $$
 \mathbf{u}\mathbf{v} = -\mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v},
 $$
 
-a central scalar plus a vector. The identity was verified on fifty random vector pairs. Equivalently, symmetrizing,
+a central scalar plus a vector. Equivalently, symmetrizing,
 
 $$
 \tfrac12\left(\mathbf{u}\mathbf{v} + \mathbf{v}\mathbf{u}\right) = -(\mathbf{u}\cdot\mathbf{v})\,e_0 ,

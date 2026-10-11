@@ -32,7 +32,7 @@ $$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_{\alpha(a)} .
 $$
 
-*Proof.* The associativity of the trace form says $T(L_ax,y) = T(x,L_ay)$, so $L_a^{\dagger} = L_a$; the grade involution is an isometry, $T(\alpha x,y) = T(x,\alpha y)$, so $\alpha^{\dagger} = \alpha$. Hence $(\ell^{\alpha}_a)^{\dagger} = (L_a\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ L_a^{\dagger} = \alpha\circ L_a$. Since $\alpha$ is an automorphism, $\alpha L_a = L_{\alpha(a)}\alpha$, so $\alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)}$. $\square$
+*Proof.* The associativity of the trace form says $T(L_ax,y) = T(x,L_ay)$, so $L_a^{\dagger} = L_a$; the grade involution is an isometry, $T(\alpha x,y) = T(x,\alpha y)$, so $\alpha^{\dagger} = \alpha$. Hence $(\ell^{\alpha}_a)^{\dagger} = (L_a\circ\alpha)^{\dagger} = \alpha^{\dagger}\circ L_a^{\dagger} = \alpha\circ L_a$. Since $\alpha$ is an automorphism, $\alpha L_a = L_{\alpha(a)}\alpha$, so $\alpha\circ L_a = L_{\alpha(a)}\circ\alpha = \ell^{\alpha}_{\alpha(a)}$.
 
 ### Self-Adjointness
 
@@ -42,7 +42,7 @@ $$
 \bigl(\ell^{\alpha}_a\bigr)^{\dagger} = \ell^{\alpha}_a \iff \alpha(a) = a .
 $$
 
-*Proof.* The adjoint is $\ell^{\alpha}_{\alpha(a)}$; the two are equal exactly when $L_{\alpha(a)} = L_a$, which for a non-degenerate trace form holds exactly when $\alpha(a) = a$. $\square$
+*Proof.* The adjoint is $\ell^{\alpha}_{\alpha(a)}$; the two are equal exactly when $L_{\alpha(a)} = L_a$, which for a non-degenerate trace form holds exactly when $\alpha(a) = a$.
 
 **Corollary.** The signed left multiplication by an **even** element is self-adjoint and coincides with the unsigned left multiplication, $\ell^{\alpha}_a = L_a$ for $a$ even; for an odd element $\ell^{\alpha}_a = L_a\circ\alpha$ is the negative of the ordinary action conjugated by $\alpha$ on the argument, and it is not self-adjoint.
 
@@ -56,7 +56,7 @@ $$
 
 that is, exactly when $a$ is a **symmetry**.
 
-*Proof.* $\ell^{\alpha\dagger}_a\ell^{\alpha}_a = \ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = L_{\alpha(a)}\alpha L_a\alpha = L_{\alpha(a)}L_{\alpha(a)}\alpha^2 = L_{\alpha(a)}^2$, and similarly $\ell^{\alpha}_a\ell^{\alpha\dagger}_a = L_a^2$; the two are the identity exactly when $L_a^2 = L_{\alpha(a)}^2 = \mathrm{id}$, which is the symmetry condition. $\square$
+*Proof.* $\ell^{\alpha\dagger}_a\ell^{\alpha}_a = \ell^{\alpha}_{\alpha(a)}\ell^{\alpha}_a = L_{\alpha(a)}\alpha L_a\alpha = L_{\alpha(a)}L_{\alpha(a)}\alpha^2 = L_{\alpha(a)}^2$, and similarly $\ell^{\alpha}_a\ell^{\alpha\dagger}_a = L_a^2$; the two are the identity exactly when $L_a^2 = L_{\alpha(a)}^2 = \mathrm{id}$, which is the symmetry condition.
 
 ## Relation to the Signed Sandwich
 
@@ -68,7 +68,7 @@ $$
 
 which is the signed sandwich $\Sigma^{\alpha}_{\alpha(a),\alpha(b)}$ after the symmetrisation, in agreement with *The Signed Adjoint Sandwich on a Jordan Algebra*.
 
-*Proof.* The anti-multiplicativity of the adjoint gives $(S^{\alpha}_{a,b})^{\dagger} = (\rho_b\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}L_{\alpha(b)}$; the symmetrisation of $\rho_b\ell^{\alpha}_a$ over the outer parameter is the signed sandwich $U_{a,b}\circ\alpha$, and its adjoint is $U_{\alpha(a),\alpha(b)}\circ\alpha$ by *The Signed Adjoint Sandwich on a Jordan Algebra*. $\square$
+*Proof.* The anti-multiplicativity of the adjoint gives $(S^{\alpha}_{a,b})^{\dagger} = (\rho_b\ell^{\alpha}_a)^{\dagger} = \ell^{\alpha\dagger}_a\rho_b^{\dagger} = \ell^{\alpha}_{\alpha(a)}L_{\alpha(b)}$; the symmetrisation of $\rho_b\ell^{\alpha}_a$ over the outer parameter is the signed sandwich $U_{a,b}\circ\alpha$, and its adjoint is $U_{\alpha(a),\alpha(b)}\circ\alpha$ by *The Signed Adjoint Sandwich on a Jordan Algebra*.
 
 **Corollary.** The adjoint of the one-sided layer and the adjoint of the two-sided layer are the same rule at the images of the parameters; the signed left multiplication is thus the one-sided case of the signed sandwich adjoint, exactly as in the associative case of *The Signed Adjoint of the Left Multiplication on a Ring*.
 

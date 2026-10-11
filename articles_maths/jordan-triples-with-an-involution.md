@@ -41,7 +41,7 @@ $$
 
 makes $J$ a Jordan triple system, and the linear map $y\mapsto \{x,y,x\}$ on $J$ is twice the quadratic representation $U_x$, $\{x,y,x\} = 2\,U_x(y)$.
 
-*Proof.* The symmetry in $x$ and $z$ is the commutativity of $\bullet$; the Jordan triple identity is the linearisation of the Jordan identity $[L_x,L_{x^2}] = 0$, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2U_x(y)$ is the defining formula $U_x = 2L_x^2-L_{x^2}$ read on $y$. $\square$
+*Proof.* The symmetry in $x$ and $z$ is the commutativity of $\bullet$; the Jordan triple identity is the linearisation of the Jordan identity $[L_x,L_{x^2}] = 0$, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2U_x(y)$ is the defining formula $U_x = 2L_x^2-L_{x^2}$ read on $y$.
 
 **Definition (morphism).** A **homomorphism** of Jordan triple systems is an $R$-linear map $\varphi$ with $\varphi\{x,y,z\} = \{\varphi x,\varphi y,\varphi z\}$; an **anti-homomorphism** reverses the order of the arguments, and $T$ with the reversed arguments is the **opposite** triple.
 
@@ -59,7 +59,7 @@ It is **linear** when $\varsigma = \mathrm{id}$ and **conjugate-linear** otherwi
 
 **Theorem.** A $\varsigma$-semilinear involution of a Jordan triple is a bijective morphism of the ternary structure, its restriction to the scalar copy of $R$ is $\varsigma$, and it commutes with the operator $y\mapsto\{x,y,x\}$: $\sigma\{x,y,x\} = \{\sigma x,\sigma y,\sigma x\}$.
 
-*Proof.* The preservation of the triple product is the third axiom; bijectivity is $\sigma^2 = \mathrm{id}$; the commuting with the outer operator is the product preservation read with the outer variables equal. $\square$
+*Proof.* The preservation of the triple product is the third axiom; bijectivity is $\sigma^2 = \mathrm{id}$; the commuting with the outer operator is the product preservation read with the outer variables equal.
 
 ### The Fixed Sub-Triple
 
@@ -79,7 +79,7 @@ $$
 
 and $H(T)$ is the **fixed subtriple**, a Jordan triple over the fixed field $F$.
 
-*Proof.* For the closure, $\sigma\{x,y,z\} = \{\sigma x,\sigma y,\sigma z\} = \{x,y,z\}$ when the three arguments are self-adjoint. The decomposition is the one of *Jordan Algebras with an Involution*: $h_1 = \tfrac12(x+\sigma x)$ and $h_2 = \tfrac{1}{2i}(x-\sigma x)$ are self-adjoint and $x = h_1+ih_2$. The ternary product of the fixed field is the restriction. $\square$
+*Proof.* For the closure, $\sigma\{x,y,z\} = \{\sigma x,\sigma y,\sigma z\} = \{x,y,z\}$ when the three arguments are self-adjoint. The decomposition is the one of *Jordan Algebras with an Involution*: $h_1 = \tfrac12(x+\sigma x)$ and $h_2 = \tfrac{1}{2i}(x-\sigma x)$ are self-adjoint and $x = h_1+ih_2$. The ternary product of the fixed field is the restriction.
 
 **Corollary.** The fixed subtriple $H(T)$ is the set of the self-adjoint elements and is a Jordan triple over the fixed field; the map $x\mapsto \sigma(x)$ is the identity on $H(T)$ and the negation on the skew part, and it is the semilinear extension of the identity of $H(T)$.
 
@@ -93,7 +93,7 @@ $$
 H(T) = H(J), \qquad \{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y \ \text{ on } \ H(J) .
 $$
 
-*Proof.* The preservation of the ternary product follows from the preservation of the binary product: $\sigma\{x,y,z\} = (\sigma x\bullet\sigma y)\bullet\sigma z+\cdots = \{\sigma x,\sigma y,\sigma z\}$; the fixed sites coincide by definition. $\square$
+*Proof.* The preservation of the ternary product follows from the preservation of the binary product: $\sigma\{x,y,z\} = (\sigma x\bullet\sigma y)\bullet\sigma z+\cdots = \{\sigma x,\sigma y,\sigma z\}$; the fixed sites coincide by definition.
 
 **Corollary.** The involution of a Jordan triple restricts to the involution of any Jordan subalgebra that it preserves, and the fixed subtriple of the triple of $J$ is the Jordan triple of the fixed subalgebra; in particular the theory of the involutions of a Jordan triple contains that of the involutions of a Jordan algebra.
 
@@ -101,7 +101,7 @@ $$
 
 **Theorem (descent).** Let $T$ be a $K$-Jordan triple with a conjugate-linear involution $\sigma$ over a quadratic extension $K/F$. Then the fixed subtriple is an $F$-Jordan triple and $T = H(T)\otimes_F K$ as $K$-triples with the involution $\mathrm{id}\otimes\varsigma$; a $\sigma$-equivariant $K$-linear morphism of triples is the scalar extension of its restriction to $H(T)$.
 
-*Proof.* The scalar extension of $H(T)$ by $K$ is $H(T)\oplus iH(T) = T$; the tensor product of triples is taken componentwise and the ternary product is $K$-trilinear; a $\sigma$-equivariant map preserves $H(T)$ and is $K$-linear, hence determined by its restriction. $\square$
+*Proof.* The scalar extension of $H(T)$ by $K$ is $H(T)\oplus iH(T) = T$; the tensor product of triples is taken componentwise and the ternary product is $K$-trilinear; a $\sigma$-equivariant map preserves $H(T)$ and is $K$-linear, hence determined by its restriction.
 
 **Corollary.** The fixed subtriple is the **real form** of the triple, and the passing to the fixed subtriple is the ternary analogue of the descent of *Real Forms and the Descent of an Algebra*.
 

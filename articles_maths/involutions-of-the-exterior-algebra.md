@@ -15,7 +15,7 @@ The base is a field $K$ of characteristic not two and $V$ has dimension $m$; the
 
 **Proposition.** A signed identity is an involution exactly when every $\epsilon_k=\pm1$; it is an algebra automorphism exactly when $\epsilon_k=\epsilon_1^{k}$ for all $k$, and then it is the identity if $\epsilon_1=1$ and the grade involution if $\epsilon_1=-1$.
 
-**Proof.** An involution requires $\epsilon_k^2=1$; multiplicativity requires $\epsilon_{j+k}=\epsilon_j\epsilon_k$, which for a multiplicative family forces $\epsilon_k=\epsilon_1^k$; and then $\epsilon_1^2=1$ gives $\epsilon_1=\pm1$. $\square$
+**Proof.** An involution requires $\epsilon_k^2=1$; multiplicativity requires $\epsilon_{j+k}=\epsilon_j\epsilon_k$, which for a multiplicative family forces $\epsilon_k=\epsilon_1^k$; and then $\epsilon_1^2=1$ gives $\epsilon_1=\pm1$.
 
 **Corollary.** The only degree-preserving algebra involutions of the exterior algebra that act by a scalar on each component are the identity and the grade involution; every other order-two automorphism of the exterior algebra arises from an order-two automorphism of $V$ and is not a signed identity unless it is one of these two.
 
@@ -29,7 +29,7 @@ $$
 
 **Proposition.** $\alpha$ is an algebra automorphism, $\alpha^2=\mathrm{id}$, and it is the unique automorphism of $A$ that extends the map $v\mapsto-v$ on $V$.
 
-**Proof.** Multiplicativity is $\alpha(xy)=(-1)^{|x|+|y|}xy=\alpha(x)\alpha(y)$; the extension statement follows because $V=A^1$ determines the signs $\epsilon_k=(-1)^k$ and hence $\alpha$. $\square$
+**Proof.** Multiplicativity is $\alpha(xy)=(-1)^{|x|+|y|}xy=\alpha(x)\alpha(y)$; the extension statement follows because $V=A^1$ determines the signs $\epsilon_k=(-1)^k$ and hence $\alpha$.
 
 **Corollary.** The fixed algebra of $\alpha$ is the even part $A^{\mathrm{even}}$ and its anti-fixed part is the odd part $A^{\mathrm{odd}}$; $\alpha$ is the grade involution of the $\mathbb{Z}/2$-grading of $A$, in the sense of *Superalgebras and Graded Structures*.
 
@@ -47,11 +47,11 @@ $$
 r(x)=(-1)^{k(k-1)/2}x,\qquad \alpha r(x)=(-1)^{k(k+1)/2}x .
 $$
 
-**Proof.** Reversing the order of $k$ factors takes $k(k-1)/2$ transpositions of neighbours, each contributing $-1$ by the graded commutativity of the wedge product; composing with $\alpha$ adds the sign $(-1)^k$, and $k(k-1)/2+k=k(k+1)/2$. $\square$
+**Proof.** Reversing the order of $k$ factors takes $k(k-1)/2$ transpositions of neighbours, each contributing $-1$ by the graded commutativity of the wedge product; composing with $\alpha$ adds the sign $(-1)^k$, and $k(k-1)/2+k=k(k+1)/2$.
 
 **Theorem.** The reversion is an anti-involution, $r(xy)=r(y)r(x)$ and $r^2=\mathrm{id}$; so is the reversal; and $\alpha$ commutes with $r$. The three maps $\mathrm{id},\alpha,r,\alpha r$ form a group isomorphic to $(\mathbb{Z}/2)^2$ under composition.
 
-**Proof.** Reversion reverses the order of each wedge of factors, so it converts a product into the product in the reverse order; applying it twice restores the order; the reversal is the composite of two commuting order-two maps; the group table is immediate. $\square$
+**Proof.** Reversion reverses the order of each wedge of factors, so it converts a product into the product in the reverse order; applying it twice restores the order; the reversal is the composite of two commuting order-two maps; the group table is immediate.
 
 **Corollary.** The signs $(-1)^k$, $(-1)^{k(k-1)/2}$ and $(-1)^{k(k+1)/2}$ distinguish the three non-identity members on the homogeneous components, and they agree on the even part; on the odd part the grade involution is $-1$, while reversion is $-1$ for $k\equiv2,3\pmod 4$.
 
@@ -71,7 +71,6 @@ Let $V$ have basis $e_1,e_2$, so $A$ has basis $1,e_1,e_2,e_1e_2$. The three inv
 
 so $\alpha$ negates the vectors and fixes the top element, $r$ fixes the vectors and negates the top element, and $\alpha r$ negates both. The anti-involution property of $r$ is visible on $e_1e_2$: $r(e_1e_2)=e_2\wedge e_1=-e_1e_2=r(e_2)r(e_1)$.
 
-**Verified.** The table was recomputed from the signs $(-1)^k$, $(-1)^{k(k-1)/2}$, $(-1)^{k(k+1)/2}$ and checked against the products of the basis elements; the anti-involution property was checked on all products of basis elements.
 
 ## Summary
 

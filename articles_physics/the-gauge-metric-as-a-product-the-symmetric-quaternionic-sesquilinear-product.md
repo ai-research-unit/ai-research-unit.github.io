@@ -162,7 +162,7 @@ and vector part the mixed term $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{
 *Proof.* The value of the fourth product is the display of §*The Two Parts of the Fourth Product*; the
 swapped order has the same scalar part, because $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$ for the plain product,
 and its cross term opposite, because $\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$;
-the half-sum is the display. Verified on $100$ random pairs. $\square$
+the half-sum is the display.
 
 **Corollary (the two projections sit side by side).** The scalar part of the value is a complex multiple of
 $e_0$ and the vector part is a complex vector in
@@ -207,7 +207,7 @@ conjugate-linear in the second.
 *Proof.* The coefficientwise conjugation interchanges the two orders, $\overline{\tilde Q^{\natural}\tilde P^{*}}=\tilde Q^{*}\tilde P^{\natural}$
 and $\overline{\tilde Q^{*}\tilde P^{\natural}}=\tilde Q^{\natural}\tilde P^{*}$, so it fixes the
 half-sum; the scalar rules are those of the two orders read together, and the star in the second slot
-supplies the conjugate-linearity. Verified on $100$ random pairs. $\square$
+supplies the conjugate-linearity.
 
 **Remark.** The symmetry is the one the construction announces and it is **not** commutativity. The
 operation is neither commutative nor associative: the two-sided symmetry of a sesqualgebra product is
@@ -226,14 +226,13 @@ e_0\bullet\tilde Q=\tilde Q^{*},
 $$
 
 *Proof.* At $\tilde P=e_0$ both orders of the fourth product coincide, $\tilde Q^{*}$, and the half-sum is
-$\tilde Q^{*}$; the second display is the conjugate-commutative mirror. Verified on $100$ random elements.
-$\square$
+$\tilde Q^{*}$; the second display is the conjugate-commutative mirror.
 
 **Corollary (no unit).** There is no left unit and no right unit.
 
 *Proof.* A left unit $\tilde E$ forces $\tilde E\bullet e_0=\tilde E^{\natural}=e_0$, hence
 $\tilde E=e_0$, but $e_0\bullet e_1=-e_1$; a right unit would need $\tilde Q^{\natural}=\tilde Q$ for every
-$\tilde Q$, which fails at $e_1$. $\square$
+$\tilde Q$, which fails at $e_1$.
 
 The absence of a unit is the algebra's statement that the operation is a **pairing** and not a
 multiplication of the frame: a unit would supply a preferred element through which one argument could be
@@ -248,7 +247,7 @@ are $-e_0$ and $e_0$.
 
 *Proof.* The square is $e_1\bullet e_1=-e_0$, because $K(e_1,e_1)=-1$ and the mixed term vanishes at
 $e_1$. Then $(-e_0)\bullet e_1=e_1$ and $(-e_0)\bullet(-e_0)=e_0$, so the two sides are
-$e_1\bullet e_1=-e_0$ and $(-e_0)\bullet(-e_0)=e_0$. Verified on the witness. $\square$
+$e_1\bullet e_1=-e_0$ and $(-e_0)\bullet(-e_0)=e_0$.
 
 **Remark (what the failure says and does not say).** The identity fails and the failure is witnessed on
 the real basis, so unlike the antisymmetric half it is visible to a real-form computation. What fails is
@@ -302,20 +301,20 @@ transformation theory to those articles.
 Four cautions bound the reading, and they are the ledger's own.
 
 1. **An indefinite pairing is a metric in the algebraic sense and not a norm.** There is no positivity, no
-   distance and no length: $K(e_1,e_1)=-1$ and $K(e_0,e_0)=+1$, and a negative squared length is a datum
-   and not an error.
+distance and no length: $K(e_1,e_1)=-1$ and $K(e_0,e_0)=+1$, and a negative squared length is a datum
+and not an error.
 
 2. **The vanishing of the form is not a pathology.** The null set $\{K=0\}$ is a real cone of dimension
-   seven, it contains $e_0+e_1$, and it contains the pure states (*The States the Indefinite Metric Cannot
-   Normalise*). A null element is a fact about one form.
+seven, it contains $e_0+e_1$, and it contains the pure states (*The States the Indefinite Metric Cannot
+Normalise*). A null element is a fact about one form.
 
 3. **The metric is not the state-space inner product.** The states are normalised by the positive definite
-   form $H$, not by $K$; the positivity of $H$ and the absence of ghosts are *Mass, Rank and the
-   Positivity of the Dagger*, and the two forms are not interchangeable.
+form $H$, not by $K$; the positivity of $H$ and the absence of ghosts are *Mass, Rank and the
+Positivity of the Dagger*, and the two forms are not interchangeable.
 
 4. **No scale is attached here.** The algebra has no scale; the coupling, the charge and $\hbar$ enter at
-   the physical reading, in the places the corpus has already fixed (*Action, Units, and the Constants of
-   the Biquaternion Universe*). The Krein form is a structure, not a dimensionful metric.
+the physical reading, in the places the corpus has already fixed (*Action, Units, and the Constants of
+the Biquaternion Universe*). The Krein form is a structure, not a dimensionful metric.
 
 ## One Insertion, Read Twice
 
@@ -376,19 +375,19 @@ Four further readings of the symmetric gauge product are recorded here, each und
 ## The Limits
 
 - **The article does not supply the metric.** The signature, the inertia, the fundamental symmetry and the
-  isometry group are *The Fourth Product and Its Indefinite Metric*; the restrictions to the remarkable subspaces
-  are *The Krein Gram Matrix and the Restrictions of the Form*. This article reads the symmetric half as a
-  product and locates the metric in its scalar part.
+isometry group are *The Fourth Product and Its Indefinite Metric*; the restrictions to the remarkable subspaces
+are *The Krein Gram Matrix and the Restrictions of the Form*. This article reads the symmetric half as a
+product and locates the metric in its scalar part.
 - **The article does not claim positivity.** The operation has an indefinite scalar part, and the
-  positivity of the framework lives on the plain sesquilinear row and not here. The two symmetric
-  sesquilinear products are not two halves of one state structure.
+positivity of the framework lives on the plain sesquilinear row and not here. The two symmetric
+sesquilinear products are not two halves of one state structure.
 - **The article does not claim a gauge algebra.** The symmetric half is not a Lie structure, and the
-  antisymmetric half fails the Jacobi identity, so no gauge algebra is read from either; the negative
-  reading is referred to *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not
-  SU(3)* and to *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*.
+antisymmetric half fails the Jacobi identity, so no gauge algebra is read from either; the negative
+reading is referred to *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not
+SU(3)* and to *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*.
 - **The invariance reading is a reading.** That the pairing is *the* invariant pairing of the gauge side is
-  the framework's grouping, stated as such and not proved here; the transformation theory that makes it
-  precise is cited and not restated.
+the framework's grouping, stated as such and not proved here; the transformation theory that makes it
+precise is cited and not restated.
 
 ## The Ledger
 
@@ -401,8 +400,7 @@ product. The symmetric half is conjugate-commutative, sesquilinear over $(\mathb
 neither commutative nor associative; $e_0\bullet\tilde Q=\tilde Q^{*}$ and
 $\tilde Q\bullet e_0=\tilde Q^{\natural}$, so there is no unit on either side; it fails the Jordan identity
 at $x=y=e_1$, with the two sides $-e_0$ and $e_0$; its diagonal at $e_0+e_1$ is $-2e_1$, not central; its
-value lies in no one of the remarkable subspaces for a general pair and the real span of its values is the whole algebra. Recomputed on $100$
-random pairs and on the named witnesses, and reproduced from *Introduction to the Symmetric Quaternionic
+value lies in no one of the remarkable subspaces for a general pair and the real span of its values is the whole algebra. The form is reproduced from *Introduction to the Symmetric Quaternionic
 Sesqualgebra of Biquaternions*, *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
 Sesqualgebra*, *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* and *The 12 Products of the Biquaternion Complex Space*.
 

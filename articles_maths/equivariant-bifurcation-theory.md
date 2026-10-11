@@ -50,7 +50,6 @@ the trivial solution $x=0$ is stable for $\lambda<0$ and unstable for $\lambda>0
 
 *Proof.* The equivariance $f(-x,\lambda)=-f(x,\lambda)$ forces the even coefficients of the Taylor expansion to vanish, in particular the quadratic coefficient, so the linear term is followed by the cubic; the branch equation $x(\lambda+a x^2)=0$ has the roots $x=0$ and $x=\pm\sqrt{-\lambda/a}$, and the stability is read from $\partial f/\partial x=\lambda+3ax^2$ at each root. The two non-trivial roots differ by the sign of $x$, which is exactly the involution, so the two branches are exchanged by $\sigma$ and each has trivial isotropy: the bifurcation is **symmetry-breaking**.
 
-**Verified example.** For the normal form $f(x,\lambda)=\lambda x-x^3$, checked numerically in exact floating point, the equivariance holds identically at all tested $(\lambda,x)$, the second derivative at the origin is zero to machine precision (a finite-difference check gave $0.0$), the trivial solution has stability $\lambda$, and the branch $x=\pm\sqrt\lambda$ has stability $\lambda-3\lambda=-2\lambda$, negative for $\lambda>0$ and positive for $\lambda<0$; the branches are real and stable exactly for $\lambda>0$, the supercritical case $a=-1$. This is the canonical picture of the symmetry-breaking bifurcation.
 
 ### Symmetry Breaking and the Branch as a Set
 

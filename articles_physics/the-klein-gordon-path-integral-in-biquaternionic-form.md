@@ -137,7 +137,7 @@ $$
 \partial_{J_i}\partial_{J_j}\ln Z_N\big|_{J=0}=\left(A^{-1}\right)_{ij}.
 $$
 
-Both statements were verified numerically. For $N=2$ with $A=\begin{pmatrix}1.7&0.4\\0.4&1.1\end{pmatrix}$ and $J=(0.3,-0.8)$, direct two-dimensional quadrature of the integral gave $7.191119$, and the closed formula gave $7.191119$, agreeing to a relative error of $4.8\times10^{-13}$. For a four-site lattice Klein–Gordon form with spacing $h=0.25$ and $\mu=0.7$, the product $AA^{-1}$ differed from the identity by at most $5.6\times10^{-16}$. The Gaussian identity is therefore the exact backbone of the free theory, and the lattice version is the regulator that makes the formal continuum statement well defined.
+For $N=2$ with $A=\begin{pmatrix}1.7&0.4\\0.4&1.1\end{pmatrix}$ and $J=(0.3,-0.8)$, direct two-dimensional quadrature of the integral gave $7.191119$, and the closed formula gave $7.191119$, agreeing to a relative error of $4.8\times10^{-13}$. For a four-site lattice Klein–Gordon form with spacing $h=0.25$ and $\mu=0.7$, the product $AA^{-1}$ differed from the identity by at most $5.6\times10^{-16}$. The Gaussian identity is therefore the exact backbone of the free theory, and the lattice version is the regulator that makes the formal continuum statement well defined.
 
 ### The lattice Klein–Gordon form and its inverse
 

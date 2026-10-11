@@ -108,7 +108,7 @@ so that $Z_1(G) = Z(G)$ and $Z_i(G) \trianglelefteq G$ for all $i$, and $Z_i(G) 
 
 **Example (finite $p$-groups).** Every finite $p$-group is nilpotent: a nontrivial finite $p$-group has a nontrivial centre by the class equation, as proved in *Groups*, and the quotient by the centre is again a $p$-group of smaller order, so induction on the order shows that the upper central series reaches $G$. The quotients $\gamma_iG/\gamma_{i+1}G$ are elementary abelian $p$-groups.
 
-**Example (the quaternion and dihedral groups).** The quaternion group $Q_8 = \{\pm 1, \pm i, \pm j, \pm k\}$ has centre $\{\pm 1\}$, derived subgroup $\{\pm 1\} = \gamma_2Q_8$ and $Q_8/\{\pm1\} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ abelian; hence $\gamma_3Q_8 = 1$ and $Q_8$ is nilpotent of class $2$. The dihedral group $D_8 = \langle r, s \mid r^4 = s^2 = 1,\ srs = r^{-1}\rangle$ has centre $\{1, r^2\}$ and the same argument gives nilpotency of class $2$. Both computations are reproduced in the verification accompanying this article.
+**Example (the quaternion and dihedral groups).** The quaternion group $Q_8 = \{\pm 1, \pm i, \pm j, \pm k\}$ has centre $\{\pm 1\}$, derived subgroup $\{\pm 1\} = \gamma_2Q_8$ and $Q_8/\{\pm1\} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ abelian; hence $\gamma_3Q_8 = 1$ and $Q_8$ is nilpotent of class $2$. The dihedral group $D_8 = \langle r, s \mid r^4 = s^2 = 1,\ srs = r^{-1}\rangle$ has centre $\{1, r^2\}$ and the same argument gives nilpotency of class $2$.
 
 ## Theorems on Nilpotent and Solvable Groups
 

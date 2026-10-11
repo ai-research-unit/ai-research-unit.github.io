@@ -41,7 +41,7 @@ $$
 
 Conversely, a map $\alpha$ with these properties determines the grading by $A_i=\{a : \alpha(a)=(-1)^{i}a\}$ and $M_j=\{m : \alpha(m)=(-1)^{j}m\}$.
 
-*Proof.* $\alpha$ is linear and $\alpha(ab)=(-1)^{i+j}ab=\alpha(a)\alpha(b)$ for $a \in A_i$, $b \in A_j$, so it is an automorphism; $\alpha^{2}=\mathrm{id}$ because $(-1)^{2i}=1$. For the compatibility, $a \in A_i$ and $m \in M_j$ have $am \in M_{i+j}$, and both sides of $\alpha(am)=\alpha(a)\alpha(m)$ equal $(-1)^{i+j}am$. The converse is the eigenspace decomposition of an involution when $2$ is invertible. $\square$
+*Proof.* $\alpha$ is linear and $\alpha(ab)=(-1)^{i+j}ab=\alpha(a)\alpha(b)$ for $a \in A_i$, $b \in A_j$, so it is an automorphism; $\alpha^{2}=\mathrm{id}$ because $(-1)^{2i}=1$. For the compatibility, $a \in A_i$ and $m \in M_j$ have $am \in M_{i+j}$, and both sides of $\alpha(am)=\alpha(a)\alpha(m)$ equal $(-1)^{i+j}am$. The converse is the eigenspace decomposition of an involution when $2$ is invertible.
 
 Thus a graded module over a graded algebra is the same thing as a module with a compatible grade involution, which is the structure used by the two signed articles cited above; the grading and the involution are two descriptions of one datum.
 
@@ -53,7 +53,7 @@ $$
 a \in A_i \implies L_a(M_j) \subseteq M_{i+j}.
 $$
 
-*Proof.* This is the compatibility $A_iM_j \subseteq M_{i+j}$ read as a statement about the image of the left multiplication. $\square$
+*Proof.* This is the compatibility $A_iM_j \subseteq M_{i+j}$ read as a statement about the image of the left multiplication.
 
 The action of a graded algebra on a graded module is therefore **even**: it preserves the degree, $\deg(am)=\deg a+\deg m$ for homogeneous $a$ and $m$.
 
@@ -77,7 +77,7 @@ $$
 \alpha\,T\,\alpha^{-1}=(-1)^{\deg T}\,T .
 $$
 
-*Proof.* $\alpha L_a\alpha^{-1}(m)=\alpha(a\,\alpha^{-1}(m))=\alpha(a)m=(-1)^{\deg a}am=(-1)^{\deg a}L_a(m)$. For a homogeneous $T$ of parity $i$ and $m \in M_j$, $T(m) \in M_{i+j}$ and $\alpha T\alpha^{-1}(m)=(-1)^{j}\alpha(T(m))=(-1)^{j}(-1)^{i+j}T(m)=(-1)^{i}T(m)$. $\square$
+*Proof.* $\alpha L_a\alpha^{-1}(m)=\alpha(a\,\alpha^{-1}(m))=\alpha(a)m=(-1)^{\deg a}am=(-1)^{\deg a}L_a(m)$. For a homogeneous $T$ of parity $i$ and $m \in M_j$, $T(m) \in M_{i+j}$ and $\alpha T\alpha^{-1}(m)=(-1)^{j}\alpha(T(m))=(-1)^{j}(-1)^{i+j}T(m)=(-1)^{i}T(m)$.
 
 This is the exact sense in which the grade involution imposes a sign on the operators: conjugation by $\alpha$ multiplies an operator of parity $i$ by $(-1)^{i}$, so the two-sided operators of the signed sandwich are exactly the operators twisted by that sign.
 
@@ -105,11 +105,11 @@ $$
 
 Consequently $M$ is a graded $(A,A)$-bimodule, and each $R_b$ is $R$-linear of parity $\deg b$.
 
-*Proof.* For the associativity, $(m\cdot b)\cdot c=(-1)^{\deg c(\deg m+\deg b)}(-1)^{\deg b\deg m}c\,b\,m$ and $m\cdot(bc)=(-1)^{(\deg b+\deg c)\deg m}(bc)m$; the two exponents differ by $\deg b\deg c$, and graded-commutativity of $A$ supplies exactly that sign, $cb=(-1)^{\deg b\deg c}bc$. For the compatibility, $a(m\cdot b)=(-1)^{\deg b\deg m}a\,b\,m$ and $(am)\cdot b=(-1)^{\deg b(\deg a+\deg m)}b\,a\,m$, whose exponents differ again by $\deg a\deg b$, supplied by graded-commutativity. The parity is read from $R_b(M_j) \subseteq M_{j+\deg b}$. $\square$
+*Proof.* For the associativity, $(m\cdot b)\cdot c=(-1)^{\deg c(\deg m+\deg b)}(-1)^{\deg b\deg m}c\,b\,m$ and $m\cdot(bc)=(-1)^{(\deg b+\deg c)\deg m}(bc)m$; the two exponents differ by $\deg b\deg c$, and graded-commutativity of $A$ supplies exactly that sign, $cb=(-1)^{\deg b\deg c}bc$. For the compatibility, $a(m\cdot b)=(-1)^{\deg b\deg m}a\,b\,m$ and $(am)\cdot b=(-1)^{\deg b(\deg a+\deg m)}b\,a\,m$, whose exponents differ again by $\deg a\deg b$, supplied by graded-commutativity. The parity is read from $R_b(M_j) \subseteq M_{j+\deg b}$.
 
 **Corollary.** $R_b=L_b\alpha^{\deg b}$, that is, $R_b=L_b$ for even $b$ and $R_b=L^{\alpha}_b=L_b\alpha$ for odd $b$.
 
-*Proof.* For $b$ even, $R_b(m)=bm=L_b(m)$; for $b$ odd, $R_b(m)=(-1)^{\deg m}bm=b\,\alpha(m)=L_b(\alpha(m))$. $\square$
+*Proof.* For $b$ even, $R_b(m)=bm=L_b(m)$; for $b$ odd, $R_b(m)=(-1)^{\deg m}bm=b\,\alpha(m)=L_b(\alpha(m))$.
 
 The theorem is the precise form of the assertion that the grading imposes a sign: without the sign $(-1)^{\deg b\deg m}$ the right action would not be associative, and without graded-commutativity even the signed formula fails.
 
@@ -123,7 +123,7 @@ $$
 
 and $S_{a,b}=L_{ab}\alpha^{\deg b}$. The signed sandwich $S^{\alpha}_{a,b}=S_{a,b}\alpha$ has the same parity $\deg a+\deg b$ and obeys the same sign rule.
 
-*Proof.* $R_b(M_j) \subseteq M_{j+\deg b}$ and $L_a(M_{j+\deg b}) \subseteq M_{j+\deg b+\deg a}$; the sign rule is the proposition above applied to the operator of parity $\deg a+\deg b$. The identity $S_{a,b}=L_aR_b=L_aL_b\alpha^{\deg b}=L_{ab}\alpha^{\deg b}$ uses the corollary. $\square$
+*Proof.* $R_b(M_j) \subseteq M_{j+\deg b}$ and $L_a(M_{j+\deg b}) \subseteq M_{j+\deg b+\deg a}$; the sign rule is the proposition above applied to the operator of parity $\deg a+\deg b$. The identity $S_{a,b}=L_aR_b=L_aL_b\alpha^{\deg b}=L_{ab}\alpha^{\deg b}$ uses the corollary.
 
 Since $\alpha$ has parity $0$ but acts on odd elements by $-1$, the signed sandwich $S^{\alpha}_{a,b}$ is the unsigned one with the middle factor sign-flipped on the odd part; this is the operator form of the Koszul sign, and it agrees with the composition rule of *The Signed Sandwich on a Bimodule over an Algebra*.
 
@@ -139,7 +139,7 @@ $$
 
 **Proposition.** $\operatorname{End}_R(M)$ is a graded $R$-algebra: $\operatorname{End}_i\operatorname{End}_j \subseteq \operatorname{End}_{i+j}$, the identity is even, and $L_a$ has parity $\deg a$. The grade involution acts on it by conjugation, $T\mapsto\alpha T\alpha^{-1}$, and this is an algebra automorphism of order two whose eigenvalue on $\operatorname{End}_i$ is $(-1)^{i}$.
 
-*Proof.* If $S$ has parity $i$ and $T$ has parity $j$, then $ST(M_k)\subseteq S(M_{j+k})\subseteq M_{i+j+k}$, so $\operatorname{End}_i\operatorname{End}_j\subseteq\operatorname{End}_{i+j}$; the identity preserves each $M_j$. The parity of $L_a$ is the proposition on the action. The conjugation is an automorphism because $\alpha$ is invertible, and its eigenvalue is the sign rule above. $\square$
+*Proof.* If $S$ has parity $i$ and $T$ has parity $j$, then $ST(M_k)\subseteq S(M_{j+k})\subseteq M_{i+j+k}$, so $\operatorname{End}_i\operatorname{End}_j\subseteq\operatorname{End}_{i+j}$; the identity preserves each $M_j$. The parity of $L_a$ is the proposition on the action. The conjugation is an automorphism because $\alpha$ is invertible, and its eigenvalue is the sign rule above.
 
 ### The graded commutator
 
@@ -159,7 +159,7 @@ $$
 
 and an even operator $T$ is $A$-linear exactly when $[T,L_a]=0$ for all homogeneous $a$.
 
-*Proof.* The alternation is a rewriting of the definition. The derivation identity is the Leibniz rule with the Koszul sign inserted before moving $T$ past $S$, checked by expanding both sides. For the last clause, an even $T$ has $\deg T=0$, so $[T,L_a]=TL_a-L_aT$, whose vanishing is $A$-linearity by *Module Endomorphisms*; for an odd $T$ the graded bracket carries the sign $(-1)^{\deg a}$ and its vanishing is a twisted condition, not $A$-linearity. $\square$
+*Proof.* The alternation is a rewriting of the definition. The derivation identity is the Leibniz rule with the Koszul sign inserted before moving $T$ past $S$, checked by expanding both sides. For the last clause, an even $T$ has $\deg T=0$, so $[T,L_a]=TL_a-L_aT$, whose vanishing is $A$-linearity by *Module Endomorphisms*; for an odd $T$ the graded bracket carries the sign $(-1)^{\deg a}$ and its vanishing is a twisted condition, not $A$-linearity.
 
 ## Examples
 

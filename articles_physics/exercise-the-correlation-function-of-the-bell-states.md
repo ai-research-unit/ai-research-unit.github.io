@@ -180,7 +180,6 @@ where $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ runs over the four sign 
 | $|\Phi^-\rangle$ | $(+1,-1,-1)$ | $\tfrac{1}{4}(e_0\otimes e_0 + e_1\otimes e_1 - e_2\otimes e_2 - e_3\otimes e_3)$ |
 | $|\Psi^+\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_0\otimes e_0 - e_1\otimes e_1 - e_2\otimes e_2 + e_3\otimes e_3)$ |
 
-**Verification of the general form.** For any sign pattern with $\epsilon_1\epsilon_2\epsilon_3 = +1$, the element $P_\epsilon$ is idempotent and of trace one.
 
 *Idempotency.* The square of $P_\epsilon$ is
 

@@ -92,7 +92,7 @@ the chain rule gives
 $$
 \Box\,\phi_\lambda = \lambda^{-(\Delta+2)}\,\bigl(\Box\phi\bigr)\bigl(\lambda^{-1}\tilde{Q}\bigr) ,
 $$
-so $\phi_\lambda$ solves $\Box\phi_\lambda = 0$ whenever $\phi$ does, for **every** weight $\Delta$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The identity was checked numerically by comparing the two sides at three random points, with agreement to $2\times10^{-8}$. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
+so $\phi_\lambda$ solves $\Box\phi_\lambda = 0$ whenever $\phi$ does, for **every** weight $\Delta$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
 
 ### The inversion and the conformal Laplacian
 

@@ -32,7 +32,7 @@ $$
 \mathsf{M}_2(\tilde P\star\tilde Q)=\tfrac12\bigl(\operatorname{adj}\mathsf{M}_2(\tilde P)\,\mathsf{M}_2(\tilde Q)^{\dagger}+\mathsf{M}_2(\tilde Q)^{\dagger}\,\operatorname{adj}\mathsf{M}_2(\tilde P)\bigr).
 $$
 
-*Proof.* The isomorphism $\mathsf{M}_2$ is $\mathbb{C}$-linear and multiplicative, and it carries the two conjugations to the adjugate and the conjugate transpose; applying it to $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ gives the display. Verified on random pairs. $\square$
+*Proof.* The isomorphism $\mathsf{M}_2$ is $\mathbb{C}$-linear and multiplicative, and it carries the two conjugations to the adjugate and the conjugate transpose; applying it to $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ gives the display.
 
 **Theorem (the trace and the determinant).** For all biquaternions,
 
@@ -42,7 +42,7 @@ $$
 \det\mathsf{M}_2(\tilde P\star\tilde Q)=N(\tilde P\star\tilde Q).
 $$
 
-*Proof.* The trace of $\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ is twice the scalar part of $\tilde P^{\natural}\tilde Q^{*}$, by the identification of the trace with twice the scalar part; the second term contributes the same, so the trace of the half-sum is $\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=K(\tilde P,\tilde Q)$ counted with the two orders, that is $2K$. The determinant is the norm of the value because $\det\mathsf{M}_2(\tilde X)=N(\tilde X)$ for every element and $\mathsf{M}_2$ is multiplicative. Verified on the model. $\square$
+*Proof.* The trace of $\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ is twice the scalar part of $\tilde P^{\natural}\tilde Q^{*}$, by the identification of the trace with twice the scalar part; the second term contributes the same, so the trace of the half-sum is $\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=K(\tilde P,\tilde Q)$ counted with the two orders, that is $2K$. The determinant is the norm of the value because $\det\mathsf{M}_2(\tilde X)=N(\tilde X)$ for every element and $\mathsf{M}_2$ is multiplicative.
 
 **Corollary (the matrix form of $K$).** The Krein form is recovered from the model by
 
@@ -52,11 +52,11 @@ $$
 
 and its Gram matrix in the coefficient basis is $E=\operatorname{diag}(1,-1,-1,-1)$.
 
-*Proof.* The first display is the trace theorem applied to the first order alone, which contributes $K$; the Gram matrix is the matrix of the form on $e_0,e_1,e_2,e_3$, computed in *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*. $\square$
+*Proof.* The first display is the trace theorem applied to the first order alone, which contributes $K$; the Gram matrix is the matrix of the form on $e_0,e_1,e_2,e_3$, computed in *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*.
 
 **Theorem (rank).** The rank of $\mathsf{M}_2(\tilde P\star\tilde Q)$ is two when $N(\tilde P\star\tilde Q)\neq0$, and is zero or one on the degeneracy set $N(\tilde P\star\tilde Q)=0$.
 
-*Proof.* A two-by-two matrix has rank two exactly when its determinant is nonzero; the determinant is $N(\tilde P\star\tilde Q)$, so the rank is two off the set where the norm of the value vanishes and drops to at most one on it. Verified on the model. $\square$
+*Proof.* A two-by-two matrix has rank two exactly when its determinant is nonzero; the determinant is $N(\tilde P\star\tilde Q)$, so the rank is two off the set where the norm of the value vanishes and drops to at most one on it.
 
 ## The Deformation of the Diagonal in the Model
 
@@ -69,7 +69,7 @@ $$
 
 so it is the scalar matrix of the form value minus the matrix of the mixed term.
 
-*Proof.* Apply $\mathsf{M}_2$ to the diagonal form $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ of *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the first summand becomes $K(\tilde Q,\tilde Q)I$ and the second the matrix of the mixed term. $\square$
+*Proof.* Apply $\mathsf{M}_2$ to the diagonal form $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ of *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the first summand becomes $K(\tilde Q,\tilde Q)I$ and the second the matrix of the mixed term.
 
 **Corollary (the two witnesses give scalar matrices).** On the two witnesses,
 
@@ -81,7 +81,7 @@ $$
 
 both scalar matrices, because both elements lie in the vector subspace and their mixed term vanishes.
 
-*Proof.* $e_1\star e_1=-e_0$ and $(e_1+ie_2)\star(e_1+ie_2)=-2e_0$ by the diagonal article; their matrices are $-I$ and $-2I$. $\square$
+*Proof.* $e_1\star e_1=-e_0$ and $(e_1+ie_2)\star(e_1+ie_2)=-2e_0$ by the diagonal article; their matrices are $-I$ and $-2I$.
 
 **Remark (where the deformation appears).** The menu of the block records the deformation of the diagonal as a matrix that is no longer scalar, exhibited on the witnesses $e_1$ and $e_1+ie_2$. The computation gives the opposite on those two: both are scalar matrices, $-I$ and $-2I$, because both elements lie in the vector subspace, where the mixed term vanishes. The deformation is real, and the element that exhibits it is $e_0+e_1$, whose diagonal is $-2e_1$ and whose matrix is
 
@@ -101,7 +101,7 @@ $$
 
 with Gram matrix $E=\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis.
 
-*Proof.* The display is the trace theorem; the Gram matrix is the matrix of $K$ on the coefficient basis. $\square$
+*Proof.* The display is the trace theorem; the Gram matrix is the matrix of $K$ on the coefficient basis.
 
 **Corollary (the indefinite cone in the model).** The image of the isotropic cone of $K$ under $\mathsf{M}_2$ is the set of matrices
 
@@ -111,7 +111,7 @@ $$
 
 a cone through the origin whose elements are exactly the values $\mathsf{M}_2(\tilde P)$ with $\operatorname{Tr}\mathsf{M}_2(\tilde P^{\natural}\tilde P^{*})=0$.
 
-*Proof.* The isotropic cone is $\{|P_0|^{2}=\sum_k|P_k|^{2}\}$ by the form article; applying the isomorphism $\mathsf{M}_2$ and the trace formula gives the displayed set, since $K(\tilde P,\tilde P)=\mathrm{Sc}(\tilde P^{\natural}\tilde P^{*})=\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde P^{\natural}\tilde P^{*})$. $\square$
+*Proof.* The isotropic cone is $\{|P_0|^{2}=\sum_k|P_k|^{2}\}$ by the form article; applying the isomorphism $\mathsf{M}_2$ and the trace formula gives the displayed set, since $K(\tilde P,\tilde P)=\mathrm{Sc}(\tilde P^{\natural}\tilde P^{*})=\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde P^{\natural}\tilde P^{*})$.
 
 **Remark.** The matrix form of the form is the adjugate-twisted trace pairing; the indefinite cone is the cone of the elements of zero form value, mapped into the matrix algebra. The form itself, its Gram matrix and its cone, independently of the models, are in *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix and the Restrictions of the Form*.
 

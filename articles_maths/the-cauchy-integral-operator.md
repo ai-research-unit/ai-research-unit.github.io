@@ -78,7 +78,7 @@ is integrable by the homogeneity of $E$, and the excision of a small ball about 
 principal value. Inside the ball the kernel is that of the Laplacian's fundamental solution, and its
 flux over the half-sphere gives the terms $\pm\tfrac12 h$; the outside contribution is the principal
 value. The computation is the classical one, carried out in the Clifford setting in *Clifford
-Analysis* and *Hypercomplex Integration*; the two displays are quoted there and used here. $\square$
+Analysis* and *Hypercomplex Integration*; the two displays are quoted there and used here.
 
 **Corollary (the jump and the sum).** The two formulae give
 
@@ -111,7 +111,7 @@ values. The double-layer potentials of a monogenic function reproduce it, which 
 $\mathcal{C}^\pm$ as the projections of the trace space onto the two complementary subspaces; since
 $\mathcal{C}^\pm=\tfrac12(\mathcal{S}\pm I)$, idempotency of either projection is equivalent to
 $\mathcal{S}^2=I$. The Clifford proof is the one of the classical complex case, with the kernel and
-the conormal element in place of $dz/(z-\zeta)$. $\square$
+the conormal element in place of $dz/(z-\zeta)$.
 
 **Corollary (the projections).** The operators
 
@@ -157,7 +157,6 @@ Cauchy–Pompeiu formula.
 of *The Dirac Operator*; differentiating under the integral sign gives the first identity. The
 second is the Cauchy–Pompeiu formula of *Clifford Analysis*,
 $f=\mathcal{C}_{\partial\Omega}f-\mathcal{T}_\Omega(Df)$, read as an operator identity on $f$.
-$\square$
 
 **Corollary (a right inverse and the monogenic class).** The Teodorescu transform is a right inverse
 of $D$ on $\Omega$, and its kernel is exactly the boundary transform's: a function $f$ on $\Omega$
@@ -185,7 +184,7 @@ degree $-(m-1)$ and odd, and the theorem of Coifman–McIntosh–Meyer supplies 
 for Lipschitz surfaces with small constant; the $L^p$ statement follows from the $L^2$ result by
 interpolation and duality in the range in which the operator is of weak type. The Clifford case with
 operator-valued kernels is the one developed in *Harmonic Analysis over Hypercomplex Systems* and
-*Clifford Analysis*. $\square$
+*Clifford Analysis*.
 
 **Remark (the measure-theoretic refinements).** When the boundary carries only a Federer normal, or
 is a fractal of Hausdorff dimension $d$ strictly between $m$ and $m+1$, there is no boundary measure
@@ -214,7 +213,7 @@ $P^+=\tfrac12(I+\mathcal{S})$.
 it, the reproducing kernel of the range is the Cauchy kernel, and the Cauchy integral formula
 identifies the monogenic extensions with the elements of the range. The statement is the Clifford
 form of the classical Hardy-space theorem; its development is *Clifford Analysis*'s and the general
-theory of the boundary value map is *Hypercomplex Integration*'s. $\square$
+theory of the boundary value map is *Hypercomplex Integration*'s.
 
 **Remark (the two realisations of one operator).** The Cauchy integral operator has two faces. As a
 boundary operator, $\mathcal{S}=2\,\mathcal{C}^+-I$ is the odd part of the traces, and it is the

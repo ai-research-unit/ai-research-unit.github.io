@@ -66,7 +66,6 @@ $\mathcal{S}$.
 *Proof.* Quoted. The proof is the general one: the span of the functions $K(x,\cdot)s$ with the
 inner product induced by positivity is a pre-Hilbert space, its completion is $H_K$, and the
 reproducing property makes the evaluation continuous and recovers the kernel from the space.
-$\square$
 
 **Remark (what the Clifford structure adds).** Three features distinguish the case at hand from the
 scalar theory. The kernel takes values in a non-commutative algebra, so the order of the factors in
@@ -96,7 +95,7 @@ $L^2(\Omega;\mathcal{S})$ onto $\mathcal{A}^2(\Omega;\mathcal{S})$.
 *Proof.* The point evaluation is continuous on $\mathcal{A}^2$ because $D$ is elliptic and the
 domain is bounded, so the Aronszajn construction applies; the monogenicity in each variable follows
 by applying $D$ in $w$ and $\bar D$ in $z$ to the reproducing identity, and the projection statement
-is the reproducing property read as an integral operator. $\square$
+is the reproducing property read as an integral operator.
 
 **Remark (the relation to the Cauchy kernel).** The Bergman kernel of the monogenic space is not the
 Cauchy kernel: the Cauchy kernel is the reproducing kernel of the space of boundary values, i.e. the
@@ -133,7 +132,7 @@ is the Szegő projection $P^+=\tfrac12(I+\mathcal{S})$ of *The Cauchy Integral O
 against the Cauchy kernel and the conormal element, which is exactly the reproducing property for
 the kernel $E(w-z)\nu_B(z)$; the Hermitian symmetry follows from the Hermitian symmetry of the
 kernel $E$ and the reality of the conormal element, and the projection statement is the Cauchy
-integral formula as the orthogonal projection onto the space of boundary values. $\square$
+integral formula as the orthogonal projection onto the space of boundary values.
 
 **Remark (why the boundary kernel is the Cauchy one).** In the monogenic theory the Hardy space is
 the range of the boundary Cauchy transform, so its reproducing kernel is the Cauchy kernel itself;
@@ -160,7 +159,7 @@ properties are the operator form of the two conditions defining the reproducing 
 theorem of *Hermitian Kernels and the Integral Operator*, so $T_K$ is self-adjoint exactly when
 $K(x,y)=K(y,x)^{*}$; the positivity of the quadratic form is the definition of positive definiteness
 read as the integral $\int\!\!\int(K(x,y)f(y),f(x))\,dy\,dx\ge0$. The statement is the
-Clifford-module instance of the general theory of *Banach and Hilbert Spaces*. $\square$
+Clifford-module instance of the general theory of *Banach and Hilbert Spaces*.
 
 **Remark (the spectral consequences).** A compact self-adjoint integral operator with a positive
 definite kernel therefore has a nonnegative spectrum, an orthonormal basis of eigenspinors and a

@@ -612,7 +612,7 @@ $$
 4|\bar z|^4 + \left(Q-2iP\right)\bar z^2 = 4\left(b_0-i b_{123}\right)|\bar z|^2 \bar z ,
 $$
 
-after using \(\delta^2-\tau^2 = \mathrm{Re}\,\bar z^2\), \(2\delta\tau = \mathrm{Im}\,\bar z^2\) and \(|\bar z|^2=\sigma^2\). Dividing by \(\bar z^2|\bar z|^2\) — legitimate because \(\bar z\neq0\) when \(\sigma\neq0\) — and putting \(\gamma=Q-2iP\), \(\beta=b_0-ib_{123}\), yields \(4\bar z^2 - 4\beta\bar z + \gamma = 0\). Taking the conjugate, and renaming, gives the stated quadratic in \(z\). \(\square\)
+after using \(\delta^2-\tau^2 = \mathrm{Re}\,\bar z^2\), \(2\delta\tau = \mathrm{Im}\,\bar z^2\) and \(|\bar z|^2=\sigma^2\). Dividing by \(\bar z^2|\bar z|^2\) — legitimate because \(\bar z\neq0\) when \(\sigma\neq0\) — and putting \(\gamma=Q-2iP\), \(\beta=b_0-ib_{123}\), yields \(4\bar z^2 - 4\beta\bar z + \gamma = 0\). Taking the conjugate, and renaming, gives the stated quadratic in \(z\).
 
 The discriminant of \(4z^2-4\beta z+\gamma=0\) is \(16(\beta^2-\gamma)\), and
 
@@ -642,7 +642,7 @@ $$
 
 and the vectors are \(v_k=(s b_k+S c_k)/(2\sigma)\), \(V_k=(s c_k-S b_k)/(2\sigma)\). The two signs of \(s\) give the two roots \(\pm A\), so that a nonzero \(z\) contributes a pair.
 
-**Proof.** \(\sigma=|z|=s^2+S^2>0\) for \(z\neq0\), so the linear system is solvable and \(v,V\) are given by the formulas of §29. The scalars are recovered from \(z\) by \(s^2=(\sigma+\delta)/2\) and \(S^2=(\sigma-\delta)/2\), and the relative sign of \(s\) and \(S\) is fixed by \(2sS=\tau\); changing both signs gives \(-A\). The lemma of §29 shows that the quadratic is exactly the remaining pair of graded equations, so every solution of the quadratic yields a root and only those. \(\square\)
+**Proof.** \(\sigma=|z|=s^2+S^2>0\) for \(z\neq0\), so the linear system is solvable and \(v,V\) are given by the formulas of §29. The scalars are recovered from \(z\) by \(s^2=(\sigma+\delta)/2\) and \(S^2=(\sigma-\delta)/2\), and the relative sign of \(s\) and \(S\) is fixed by \(2sS=\tau\); changing both signs gives \(-A\). The lemma of §29 shows that the quadratic is exactly the remaining pair of graded equations, so every solution of the quadratic yields a root and only those.
 
 Because the quadratic is of degree two, the count of isolated roots is read off its discriminant:
 
@@ -663,7 +663,7 @@ $$
 
 with \(v\) and \(V\) real vectors subject only to those two equations.
 
-**Proof.** A root with \(s=S=0\) has the form \(A=v+V\omega\), and \(A^2=(Q(v)-Q(V))+2B(v,V)\omega\) by the product rule of §28. Conversely the graded equations with \(s=S=0\) force \(b_k=c_k=0\) for every \(k\). The two displayed equations are two affine equations in the six components of \((v,V)\), so their solution set has real dimension four; it is nonempty over \(\mathbb{R}\) because the pair \((Q(v),B(v,V))\) takes all prescribed values. \(\square\)
+**Proof.** A root with \(s=S=0\) has the form \(A=v+V\omega\), and \(A^2=(Q(v)-Q(V))+2B(v,V)\omega\) by the product rule of §28. Conversely the graded equations with \(s=S=0\) force \(b_k=c_k=0\) for every \(k\). The two displayed equations are two affine equations in the six components of \((v,V)\), so their solution set has real dimension four; it is nonempty over \(\mathbb{R}\) because the pair \((Q(v),B(v,V))\) takes all prescribed values.
 
 The family sits in the four cases where the data are a complex scalar. When \(b_0b_{123}\neq0\) the two values of \(z\) are distinct and nonzero, so the four isolated roots of §30 coexist with the family; when one value of \(z\) vanishes the family is present and two isolated roots remain; when both vanish the family is the whole root set. The root of \(0\) is the extreme instance: \(b_0=b_{123}=0\), and the roots of \(0\) are the nonzero elements of the family, the null elements \(v+V\omega\) with \(Q(v)=Q(V)\) and \(B(v,V)=0\) — the isotropic cone of the form.
 

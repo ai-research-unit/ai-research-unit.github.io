@@ -183,7 +183,7 @@ the cross product, which is a Lie bracket; it fails on every subspace that mixes
 directions, which is exactly where the mixed terms live.
 
 **Remark (verified).** The explicit form, the table, the witness, the closed form and the count were
-recomputed on the basis and on $100$ random triples in exact complex arithmetic. The explicit form agrees
+The explicit form agrees
 with $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ to $8.9\times10^{-16}$; the
 reconstruction $\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$
 is **exactly** satisfied on every sample, the two halves being exact; the witness gives
@@ -264,34 +264,34 @@ internal group**, and no group and no gauge algebra can be read off it. The two 
 are the content of the band's word, Obstruction.
 
 - **The failure is not removable by a change of sign or of scale.** The defect is the associator of the
-  parent product, an intrinsic nonzero object; neither $-\tilde P\wedge_{\natural}\tilde Q$ nor
-  $\lambda\,\tilde P\wedge_{\natural}\tilde Q$ changes the associator, and the derived bracket, which does
-  close, is the cross product on the vector subspace alone and not a bracket on the whole algebra, so it
-  cannot carry the internal action of the whole algebra.
+parent product, an intrinsic nonzero object; neither $-\tilde P\wedge_{\natural}\tilde Q$ nor
+$\lambda\,\tilde P\wedge_{\natural}\tilde Q$ changes the associator, and the derived bracket, which does
+close, is the cross product on the vector subspace alone and not a bracket on the whole algebra, so it
+cannot carry the internal action of the whole algebra.
 - **The derived bracket is a bound, not a repair.** That the vector subspace is a Lie algebra under this
-  operation says where the failure is not; it does not give a bracket on the algebra, and the mixed terms
-  cannot be discarded without leaving the quaternionic row.
+operation says where the failure is not; it does not give a bracket on the algebra, and the mixed terms
+cannot be discarded without leaving the quaternionic row.
 - **The Jacobiator is a three-form: a degree-three obstruction, not a bracket defect.** The closed form
-  proved above is $\mathbb{C}$-trilinear and alternating, so the failure of the identity is not the failure
-  of a bracket to be one but a **cochain in the third degree** — a single alternating three-form on the
-  algebra, valued in the vector subspace, nonzero on $18$ of the $64$ ordered triples of basis elements.
-  Offered as a reading, the Jacobi failure is an obstruction of **order three** and not a merely wrong
-  bracket: the operation is alternating, the derived bracket on the vector subspace is Lie, and the failure
-  appears only on triples, where it is this one three-form; and $18$ of $64$ is offered as the **support**
-  of the obstruction on the chosen basis. The word *anomaly* is used in the companion article *Boosts, Mixed Terms and the
-  Missing Lie Structure* for a **different** object, the non-invariance of the trace form $K$; the two are
-  kept apart, and the name offered here is a degree-three cochain and not that non-invariance. The algebra
-  proves the trilinear form and its support and nothing about a physical anomaly; the name is the
-  framework's, and the support is a count on a basis and not an invariant.
+proved above is $\mathbb{C}$-trilinear and alternating, so the failure of the identity is not the failure
+of a bracket to be one but a **cochain in the third degree** — a single alternating three-form on the
+algebra, valued in the vector subspace, nonzero on $18$ of the $64$ ordered triples of basis elements.
+Offered as a reading, the Jacobi failure is an obstruction of **order three** and not a merely wrong
+bracket: the operation is alternating, the derived bracket on the vector subspace is Lie, and the failure
+appears only on triples, where it is this one three-form; and $18$ of $64$ is offered as the **support**
+of the obstruction on the chosen basis. The word *anomaly* is used in the companion article *Boosts, Mixed Terms and the
+Missing Lie Structure* for a **different** object, the non-invariance of the trace form $K$; the two are
+kept apart, and the name offered here is a degree-three cochain and not that non-invariance. The algebra
+proves the trilinear form and its support and nothing about a physical anomaly; the name is the
+framework's, and the support is a count on a basis and not an invariant.
 - **The closable part is exactly the rotations, and the boost-like part is the obstruction.** The proved facts
-  are that the derived bracket on $\mathrm{Vect}(\mathbb{B})$ is $\mathfrak{sl}(2,\mathbb{C})$ and that the
-  failure enters through the mixed terms $P_0\mathbf Q-Q_0\mathbf P$. Read together they say that the
-  bracket **closes on the compact rotations** and **fails through the boost-like mixed terms**: offered as
-  a reading, the identity is carried by the rotations and the obstruction by the boosts, so the price of
-  the boost-like direction is the Jacobi identity. The boost-like reading of the mixed terms is the
-  companion article *Boosts, Mixed Terms and the Missing Lie Structure*; the clause added here is that the
-  boost-like part is exactly the part that costs the identity. The algebra proves the derived bracket and
-  the mixed terms and nothing about boosts as physical transformations.
+are that the derived bracket on $\mathrm{Vect}(\mathbb{B})$ is $\mathfrak{sl}(2,\mathbb{C})$ and that the
+failure enters through the mixed terms $P_0\mathbf Q-Q_0\mathbf P$. Read together they say that the
+bracket **closes on the compact rotations** and **fails through the boost-like mixed terms**: offered as
+a reading, the identity is carried by the rotations and the obstruction by the boosts, so the price of
+the boost-like direction is the Jacobi identity. The boost-like reading of the mixed terms is the
+companion article *Boosts, Mixed Terms and the Missing Lie Structure*; the clause added here is that the
+boost-like part is exactly the part that costs the identity. The algebra proves the derived bracket and
+the mixed terms and nothing about boosts as physical transformations.
 
 **The bearing on the gauge ceiling.** The group the algebra does reach is read elsewhere, and this is what
 makes the failure informative. *Observables, Gauge Generators and the Chirality of the Internal Action*
@@ -391,35 +391,35 @@ bracket are the companion *Boosts, Mixed Terms and the Missing Lie Structure*.
 ## Further Reading
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
-  which this block sits.
+which this block sits.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space*
-  (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve
-  operations, the method of the decomposition and the laws of each.
+(`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve
+operations, the method of the decomposition and the laws of each.
 - Mathematics article *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*
-  (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the
-  operation, its class, its image and the sixteen brackets.
+(`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the
+operation, its class, its image and the sixteen brackets.
 - Mathematics article *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
-  Algebra*
-  (`articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md`),
-  for the cyclic sum, its closed form, the associator criterion and the derived bracket.
+Algebra*
+(`articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md`),
+for the cyclic sum, its closed form, the associator criterion and the derived bracket.
 - Mathematics article *The Associator and the Ternary Product of the Quaternionic Product*
-  (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
-  associator of the parent product.
+(`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
+associator of the parent product.
 - Mathematics article *The Symmetric and Antisymmetric Parts of an Algebra Product*
-  (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the general
-  associator criterion.
+(`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the general
+associator criterion.
 - Companion article *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations* and
-  *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*, for the symmetric half
-  of the same parent.
+*Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*, for the symmetric half
+of the same parent.
 - Companion article *Boosts, Mixed Terms and the Missing Lie Structure*, for the mixed term, the invariant
-  forms and the operators of this bracket.
+forms and the operators of this bracket.
 - Companion article *Observables, Gauge Generators and the Chirality of the Internal Action*, for the
-  compact and non-compact directions and the one-sided action that does carry the group.
+compact and non-compact directions and the one-sided action that does carry the group.
 - Companion article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*,
-  for the group the algebra reaches.
+for the group the algebra reaches.
 - Companion article *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*, for the plain
-  bracket $\mathrm{APA}$ that does satisfy the identity and is the one Lie product of the twelve.
+bracket $\mathrm{APA}$ that does satisfy the identity and is the one Lie product of the twelve.
 - Companion article *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*, for
-  one of the two sesquilinear Jacobi failures contrasted here, whose witness needs a complex element.
+one of the two sesquilinear Jacobi failures contrasted here, whose witness needs a complex element.
 - Companion article *What the Biquaternion Algebra Cannot Do: a Catalogue of Algebraic Obstructions*, for
-  the catalogue of negative results this failure belongs to.
+the catalogue of negative results this failure belongs to.

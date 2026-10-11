@@ -115,14 +115,14 @@ So the phase is a unitary element and not a Lorentz rotor. The two notions of "u
 Because each phase factor is central, it commutes with every element of $\mathbb{B}$. Three consequences are immediate.
 
 1. **The amplitude is a complex scalar.** The integral of central elements is central, so the full kernel is
-   $$K(x_f,t_f;x_i,t_i)=\mathcal{K}\,e_0,\qquad \mathcal{K}\in\mathbb{C},$$
-   a complex number times the identity. It is not a general biquaternion.
+$$K(x_f,t_f;x_i,t_i)=\mathcal{K}\,e_0,\qquad \mathcal{K}\in\mathbb{C},$$
+a complex number times the identity. It is not a general biquaternion.
 
 2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde{P}\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $e^{iS/\hbar}\psi$. A non-central phase would mix or relatively phase the components; a central one does not.
 
 3. **The overall phase cancels in the state.** With $\psi\mapsto e^{iS/\hbar}\psi$ and $\tilde{\rho}=\psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)\in\mathbb{M}_+$, centrality gives
-   $$\tilde{\rho}\;\longmapsto\;\frac{e^{iS/\hbar}\psi\,\psi^\dagger e^{-iS/\hbar}}{\mathrm{Tr}(\psi^\dagger\psi)}=\tilde{\rho},$$
-   so the global phase of a single path is unobservable, and the Born probabilities $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ are unchanged. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
+$$\tilde{\rho}\;\longmapsto\;\frac{e^{iS/\hbar}\psi\,\psi^\dagger e^{-iS/\hbar}}{\mathrm{Tr}(\psi^\dagger\psi)}=\tilde{\rho},$$
+so the global phase of a single path is unobservable, and the Born probabilities $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ are unchanged. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
 
 ### The sector chain
 
@@ -204,7 +204,7 @@ $$
 e^{iS/\hbar}=e^{i(iS_E)/\hbar}=e^{-S_E/\hbar},
 $$
 
-a decaying real exponential. Checked numerically on a specific trajectory, the identity $e^{iS/\hbar}=e^{-S_E/\hbar}$ holds to machine precision.
+a decaying real exponential.
 
 In the reading of the Wick-rotation article, the substitution is the identification
 
@@ -234,7 +234,7 @@ $$
 
 with the Maslov index supplying a phase $e^{-i\pi\nu/2}$ at each conjugate point (caustic), where the determinant vanishes. The next correction comes from the cubic term in the expansion and is of order $\hbar$ relative to the leading term; it is the first term that feels the anharmonicity of the action, and it is not pursued here.
 
-For the free particle $S_{\mathrm{cl}}=m(x_f-x_i)^2/2T$ and $\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f=-m/T$, so the prefactor is $(m/2\pi i\hbar T)^{1/2}$ and the semiclassical kernel is the exact kernel. Checked by recomputation: composing the semiclassical kernels for $t_1=0.6$ and $t_2=1.1$ reproduces $K(t_1+t_2)$ for the free particle to $8.3\times10^{-17}$, and the van Vleck prefactor matches $(m/2\pi i\hbar T)^{1/2}$ to $2.8\times10^{-17}$. A quadratic action is semiclassically exact; the free particle and the harmonic oscillator are the two elementary cases.
+For the free particle $S_{\mathrm{cl}}=m(x_f-x_i)^2/2T$ and $\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f=-m/T$, so the prefactor is $(m/2\pi i\hbar T)^{1/2}$ and the semiclassical kernel is the exact kernel. A quadratic action is semiclassically exact; the free particle and the harmonic oscillator are the two elementary cases.
 
 **The phase.** The stationary-phase phase $e^{iS_{\mathrm{cl}}/\hbar}$ is a **central unitary** element of $\mathbb{C}_{\mathbb{B}}$, for the same reason the phase of an individual path is: the classical action is still a real scalar, its exponent is still a purely imaginary scalar in $\mathbb{M}_-$, and the phase is still central. The classical limit changes which paths contribute; it does not change the sector of the phase.
 
@@ -247,7 +247,7 @@ $$
 A_{\mathrm{WKB}}=\sqrt{\big|\det\nolimits\delta^2S\big|},
 $$
 
-so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{2\pi i\hbar}$. This is the amplitude that the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation. Checked for the free particle: $A_{\mathrm{WKB}}=\sqrt{m/T}=0.766965$, and $A_{\mathrm{WKB}}/\sqrt{2\pi i\hbar}$ reproduces the exact free prefactor to $2.8\times10^{-17}$.
+so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{2\pi i\hbar}$. This is the amplitude that the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation.
 
 Both factors are central — the phase is central, and the prefactor is a real number over the central $\sqrt{2\pi i\hbar}$ — so the semiclassical kernel is central:
 
@@ -273,7 +273,7 @@ $$
 \qquad
 \frac{1}{\varepsilon}\big\langle x_j(x_j-x_{j-1})\big\rangle=\frac{\hbar}{m},
 $$
-so the forward and backward derivatives of the two-point function differ by the **contact term** $\hbar/m$. Checked numerically at $\varepsilon=10^{-1},10^{-2},10^{-3}$ with $\hbar=m=1$: the forward correlator is $0$ and the backward correlator is $1.000000$ at every step size, so the difference is exactly $1$ and does not relax with $\varepsilon$. This is the statement that the fluctuation of $x\dot x$ is a normalised Gaussian process which is $1$ in every expectation value — "equal to 1 as an operator identity" in physics, "weakly convergent to 1" in mathematics — and that its content is the **Itô lemma** of stochastic calculus. Defining the time order to be the operator order converts it to the Euclidean canonical relation, and the extra imaginary unit of the quantum action, $e^{iS/\hbar}$ in place of the Euclidean weight, converts that to
+so the forward and backward derivatives of the two-point function differ by the **contact term** $\hbar/m$. This is the statement that the fluctuation of $x\dot x$ is a normalised Gaussian process which is $1$ in every expectation value — "equal to 1 as an operator identity" in physics, "weakly convergent to 1" in mathematics — and that its content is the **Itô lemma** of stochastic calculus. Defining the time order to be the operator order converts it to the Euclidean canonical relation, and the extra imaginary unit of the quantum action, $e^{iS/\hbar}$ in place of the Euclidean weight, converts that to
 $$
 [\hat x,\hat p]=i\hbar .
 $$

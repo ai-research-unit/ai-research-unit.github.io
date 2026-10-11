@@ -33,11 +33,11 @@ $$
 
 and it extends to a surjective isometry, hence a unitary operator, $\mathcal{F} : L^2(G)\to\mathcal{H}_P$; consequently $\|\mathcal{F}\| = \|\mathcal{F}^{-1}\| = 1$ and $\mathcal{F}$ is invertible.
 
-**Proof.** The isometry is the Plancherel theorem of *The Plancherel Theorem*; an isometry from a dense subspace of a Hilbert space extends to the whole space with the same norm, and the image is dense because it contains the finite-rank fields supported on compact subsets of the dual, which are total in $\mathcal{H}_P$; a surjective isometry of Hilbert spaces is unitary and has an isometric inverse. $\square$
+**Proof.** The isometry is the Plancherel theorem of *The Plancherel Theorem*; an isometry from a dense subspace of a Hilbert space extends to the whole space with the same norm, and the image is dense because it contains the finite-rank fields supported on compact subsets of the dual, which are total in $\mathcal{H}_P$; a surjective isometry of Hilbert spaces is unitary and has an isometric inverse.
 
 **Proposition (the fibre is Hilbert–Schmidt).** For $\mu_P$-almost every $\pi$ the operator $\hat f(\pi)$ is Hilbert–Schmidt, the field $\pi\mapsto\hat f(\pi)$ is measurable, and the squared norm of the field is the integral of the squared Hilbert–Schmidt norms; the transform is thus an operator whose values are the trace-class-friendly operators on the representation spaces.
 
-**Proof.** The Hilbert–Schmidt property $\mu_P$-almost everywhere and the measurability are part of the Plancherel theorem's construction of the measure on the coefficient algebra; the norm statement is the isometry above. $\square$
+**Proof.** The Hilbert–Schmidt property $\mu_P$-almost everywhere and the measurability are part of the Plancherel theorem's construction of the measure on the coefficient algebra; the norm statement is the isometry above.
 
 **Remark (the abelian reading).** If $G$ is abelian then every $\mathcal{H}_\pi = \mathbb{C}$, the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^* = \mathbb{C}$, the direct integral is $L^2(G^\vee,\mu_P)$, and $\mathcal{F}$ is the classical Fourier–Plancherel operator $L^2(G)\to L^2(G^\vee)$; this is the operator studied in *The Fourier Operator*, written in parallel in this Part.
 
@@ -51,7 +51,7 @@ $$
 
 the field acting on the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ by left multiplication, $A\mapsto\hat f(\pi)A$; the operator $\lambda(f)$ is thereby unitarily equivalent to a decomposable operator with the fibres $\hat f(\pi)$.
 
-**Proof.** The convolution theorem gives $(\mathcal{F}\lambda(f)h)(\pi) = \widehat{f*h}(\pi) = \hat f(\pi)\hat h(\pi) = \hat f(\pi)(\mathcal{F}h)(\pi)$, which is the displayed identity on the dense subspace and hence everywhere. $\square$
+**Proof.** The convolution theorem gives $(\mathcal{F}\lambda(f)h)(\pi) = \widehat{f*h}(\pi) = \hat f(\pi)\hat h(\pi) = \hat f(\pi)(\mathcal{F}h)(\pi)$, which is the displayed identity on the dense subspace and hence everywhere.
 
 **Theorem (the regular representations become the fields).** Under $\mathcal{F}$,
 
@@ -62,11 +62,11 @@ $$
 
 where the first factor acts on $\mathcal{H}_\pi$ and the second on $\mathcal{H}_\pi^*$; the two fields generate the decomposable algebra $\int^\oplus B(\mathcal{H}_\pi)\,d\mu_P(\pi)$.
 
-**Proof.** The left regular representation corresponds to the field $\pi\otimes\pi^*$, and left convolution is the first leg, so $\lambda(x)$ acts on the first factor of the fibre while $\rho(x)$, commuting with it, acts on the second through the contragredient; the generation statement is the multiplicity-one decomposition of the regular representation, from *Noncommutative Harmonic Analysis*. $\square$
+**Proof.** The left regular representation corresponds to the field $\pi\otimes\pi^*$, and left convolution is the first leg, so $\lambda(x)$ acts on the first factor of the fibre while $\rho(x)$, commuting with it, acts on the second through the contragredient; the generation statement is the multiplicity-one decomposition of the regular representation, from *Noncommutative Harmonic Analysis*.
 
 **Corollary (the group von Neumann algebra as a decomposable algebra).** The Plancherel operator carries $L(G) = \lambda(G)''$ onto the algebra of decomposable fields $\int^\oplus B(\mathcal{H}_\pi)\,d\mu_P(\pi)$, and the centre onto the diagonalisable fields $L^\infty(\operatorname{Irr}(G),\mu_P)$; the Plancherel measure is the spectral measure of the trace.
 
-**Proof.** A von Neumann algebra is carried to its commutant-equivalent by a unitary equivalence; the identification $L(G)\cong\int^\oplus B(\mathcal{H}_\pi)\,d\mu_P$ and the description of the centre are those of *The Plancherel Theorem*, §Construction and Normalisation. $\square$
+**Proof.** A von Neumann algebra is carried to its commutant-equivalent by a unitary equivalence; the identification $L(G)\cong\int^\oplus B(\mathcal{H}_\pi)\,d\mu_P$ and the description of the centre are those of *The Plancherel Theorem*, §Construction and Normalisation.
 
 ## The Inverse and the Inversion Formula
 
@@ -86,7 +86,7 @@ $$
 
 for almost every $x$; equivalently $\mathcal{F}^{-1}\mathcal{F} = \mathrm{id}$ and $\mathcal{F}\mathcal{F}^{-1} = \mathrm{id}$.
 
-**Proof.** The formula is the inversion theorem of *The Plancherel Theorem*; it identifies the right-hand side with $f$ and hence with $\mathcal{F}^{-1}(\mathcal{F}f)$, which gives the two identities by the unitarity of $\mathcal{F}$. $\square$
+**Proof.** The formula is the inversion theorem of *The Plancherel Theorem*; it identifies the right-hand side with $f$ and hence with $\mathcal{F}^{-1}(\mathcal{F}f)$, which gives the two identities by the unitarity of $\mathcal{F}$.
 
 **Proposition (the definite form as a fibre trace).** The operator trace of the transform recovers the value at the identity,
 
@@ -96,17 +96,17 @@ $$
 
 for $f$ in the coefficient algebra for which the integral converges absolutely, the trace being the ordinary trace on the finite-rank operators; in operator language the Plancherel isomorphism sends the evaluation functional at $e$ to the fibre-wise operator trace.
 
-**Proof.** This is the definite form of the Plancherel theorem; the operator reading is the statement that $\operatorname{Tr}$ is the trace of the $B(\mathcal{H}_\pi)$ fibre, so that the identity is the disintegration of the trace $\tau$ of $L(G)$ along $\mu_P$. $\square$
+**Proof.** This is the definite form of the Plancherel theorem; the operator reading is the statement that $\operatorname{Tr}$ is the trace of the $B(\mathcal{H}_\pi)$ fibre, so that the identity is the disintegration of the trace $\tau$ of $L(G)$ along $\mu_P$.
 
 ## Decomposability and the Measurable Field
 
 **Theorem (the operator is decomposable).** The Plancherel operator is a **decomposable** operator of the direct integral: it is measurable in the field sense, its inverse is decomposable, and for every $f \in L^1(G)$ the operator $\mathcal{F}\lambda(f)\mathcal{F}^{-1}$ has constant fibre $\hat f(\pi)$ on the diagonal of the field algebra. The fibres are the multiplication operators $\hat f(\pi)$, and their essential supremum against $\mu_P$ is the norm of the operator in the algebra.
 
-**Proof.** A unitary equivalence onto a direct integral carries the measurable-field structure of the algebra to that of the fibres; the fibre of $\mathcal{F}\lambda(f)\mathcal{F}^{-1}$ is $\hat f(\pi)$ by the intertwining theorem, and the norm of a decomposable operator's image in the algebra of the field is the essential supremum of the fibre norms. $\square$
+**Proof.** A unitary equivalence onto a direct integral carries the measurable-field structure of the algebra to that of the fibres; the fibre of $\mathcal{F}\lambda(f)\mathcal{F}^{-1}$ is $\hat f(\pi)$ by the intertwining theorem, and the norm of a decomposable operator's image in the algebra of the field is the essential supremum of the fibre norms.
 
 **Corollary (the type I condition in operator form).** The existence of the operator $\mathcal{F}$ with all fibres $B(\mathcal{H}_\pi)$ and diagonal action is exactly the type I property of $G$; for a group that is not of type I the operator exists only as a direct integral over a non-atomic space of factors and is not indexed by the unitary dual. The operator realisation of the dichotomy is that of *The Plancherel Theorem*, §Non-Unimodular and Non-Type-I Cases.
 
-**Proof.** The equivalence of the type I property, the direct-integral decomposition of the regular representation and the existence of $\mu_P$ is the dichotomy of *The Plancherel Theorem*; the operator statement is its restatement in terms of the field algebra. $\square$
+**Proof.** The equivalence of the type I property, the direct-integral decomposition of the regular representation and the existence of $\mu_P$ is the dichotomy of *The Plancherel Theorem*; the operator statement is its restatement in terms of the field algebra.
 
 **Remark (what the article does not do).** The article has taken no adjoint: unitarity is stated as isometry and surjectivity, and the inverse is $\mathcal{F}^{-1}$, not $\mathcal{F}^*$; the equality $\mathcal{F}^* = \mathcal{F}^{-1}$ and the adjoints of the operators on the Plancherel side belong to the `- * Operator Theory` group of this category. The construction of the measure, the definite and inversion forms are *The Plancherel Theorem*, cited; the abelian operator is *The Fourier Operator*, written in parallel.
 

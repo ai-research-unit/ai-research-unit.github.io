@@ -33,11 +33,11 @@ $$
 
 the bracket of operators being the commutator in $\operatorname{End}_K(\mathrm{G})$.
 
-**Proof.** For every $y$, $[D,\operatorname{ad}_x](y)=D([x,y])-[x,Dy]$; the Leibniz rule says exactly that this equals $[Dx,y]=\operatorname{ad}_{Dx}(y)$ for all $x,y$. $\square$
+**Proof.** For every $y$, $[D,\operatorname{ad}_x](y)=D([x,y])-[x,Dy]$; the Leibniz rule says exactly that this equals $[Dx,y]=\operatorname{ad}_{Dx}(y)$ for all $x,y$.
 
 **Corollary.** A derivation $D$ commutes with $\operatorname{ad}_x$ exactly when $Dx$ is central; in particular $D(\mathrm{Z}(\mathrm{G}))\subseteq\mathrm{Z}(\mathrm{G})$.
 
-**Proof.** $[D,\operatorname{ad}_x]=0$ is $\operatorname{ad}_{Dx}=0$, whose kernel is the centre; apply this to a central $z$. $\square$
+**Proof.** $[D,\operatorname{ad}_x]=0$ is $\operatorname{ad}_{Dx}=0$, whose kernel is the centre; apply this to a central $z$.
 
 ### The Derivation Algebra as a Normaliser
 
@@ -51,11 +51,11 @@ It is the largest subspace of $\operatorname{End}_K(\mathrm{G})$ in which $\oper
 
 **Theorem.** $\operatorname{Der}(\mathrm{G})\subseteq\mathrm{N}$, and a member $T$ of $\mathrm{N}$ lies in $\operatorname{Der}(\mathrm{G})$ if and only if $[T,\operatorname{ad}_x]=\operatorname{ad}_{Tx}$ for all $x$.
 
-**Proof.** A derivation satisfies this by the proposition, hence lies in $\mathrm{N}$. Conversely a member of $\mathrm{N}$ satisfies $[T,\operatorname{ad}_x]=\operatorname{ad}_{\varphi(x)}$ for some linear $\varphi$ determined up to an element of the centre; the displayed condition says $\varphi=T$, which by the proposition is the Leibniz rule. $\square$
+**Proof.** A derivation satisfies this by the proposition, hence lies in $\mathrm{N}$. Conversely a member of $\mathrm{N}$ satisfies $[T,\operatorname{ad}_x]=\operatorname{ad}_{\varphi(x)}$ for some linear $\varphi$ determined up to an element of the centre; the displayed condition says $\varphi=T$, which by the proposition is the Leibniz rule.
 
 **Proposition (the inclusion is proper).** If $\mathrm{G}$ is not abelian and has nonzero centre then $\operatorname{Der}(\mathrm{G})\neq\mathrm{N}$.
 
-**Proof.** The identity lies in $\mathrm{N}$, because $[\operatorname{id},\operatorname{ad}_x]=0$, and it is not a derivation by the remark. $\square$
+**Proof.** The identity lies in $\mathrm{N}$, because $[\operatorname{id},\operatorname{ad}_x]=0$, and it is not a derivation by the remark.
 
 **Example.** In the Heisenberg algebra the identity lies in $\mathrm{N}$ and not in $\operatorname{Der}(\mathrm{G})$; the discrepancy measures the centre, through which every operator commutes with $\operatorname{ad}(\mathrm{G})$.
 
@@ -69,7 +69,7 @@ $$
 0\longrightarrow\mathrm{Z}(\mathrm{G})\longrightarrow\mathrm{G}\xrightarrow{\operatorname{ad}}\operatorname{Der}(\mathrm{G})\longrightarrow\operatorname{Out}(\mathrm{G})\longrightarrow0 .
 $$
 
-**Proof.** The homomorphism property is $\operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]$, which is the Jacobi identity; the kernel is the centre; the image is $\operatorname{Inn}(\mathrm{G})$; the quotient is $\operatorname{Out}(\mathrm{G})$. $\square$
+**Proof.** The homomorphism property is $\operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]$, which is the Jacobi identity; the kernel is the centre; the image is $\operatorname{Inn}(\mathrm{G})$; the quotient is $\operatorname{Out}(\mathrm{G})$.
 
 **Corollary.** $\operatorname{Inn}(\mathrm{G})\cong\mathrm{G}$ exactly when $\mathrm{G}$ has trivial centre, and $\operatorname{Inn}(\mathrm{G})=0$ exactly when $\mathrm{G}$ is abelian.
 
@@ -83,7 +83,7 @@ $$
 \operatorname{Out}(\mathrm{G})=H^1(\mathrm{G};\mathrm{G}).
 $$
 
-**Proof.** The differential on a one-cochain $\delta:\mathrm{G}\to\mathrm{G}$ is $d\delta(x,y)=[x,\delta(y)]-[y,\delta(x)]-\delta([x,y])$; its vanishing is the Leibniz rule read with one argument transposed. The coboundaries are the inner derivations, by the identification recorded in *Lie Algebra Cohomology*, and the quotient is $\operatorname{Out}(\mathrm{G})$. $\square$
+**Proof.** The differential on a one-cochain $\delta:\mathrm{G}\to\mathrm{G}$ is $d\delta(x,y)=[x,\delta(y)]-[y,\delta(x)]-\delta([x,y])$; its vanishing is the Leibniz rule read with one argument transposed. The coboundaries are the inner derivations, by the identification recorded in *Lie Algebra Cohomology*, and the quotient is $\operatorname{Out}(\mathrm{G})$.
 
 **Corollary.** $\operatorname{Out}(\mathrm{G})=0$ for a semisimple $\mathrm{G}$ over a field of characteristic zero, by the vanishing of the first cohomology with coefficients in the adjoint module, which is the first Whitehead lemma of *Lie Algebra Cohomology* and the cohomological form of the theorem of *Structure of Lie Algebras* that every derivation of such an algebra is inner.
 
@@ -93,7 +93,7 @@ $$
 
 **Proposition.** Let $\mathrm{G}_1$ and $\mathrm{G}_2$ be Lie algebras. Then $\operatorname{Der}(\mathrm{G}_1\oplus\mathrm{G}_2)$ contains $\operatorname{Der}(\mathrm{G}_1)\oplus\operatorname{Der}(\mathrm{G}_2)$, and in addition contains the operators with a single cross component $\phi:\mathrm{G}_1\to\mathrm{G}_2$ or $\psi:\mathrm{G}_2\to\mathrm{G}_1$ that kills the derived subalgebra of the source and takes values in the centre of the target.
 
-**Proof.** A derivation $D$ of the direct sum has four components, and the diagonal ones are derivations of the summands. For a single cross component $D(x_1,x_2)=(0,\phi(x_1))$ the Leibniz rule reads $\phi([x_1,y_1])=[\phi(x_1),y_2]+[x_2,\phi(y_1)]$; taking $x_2=y_2=0$ forces $\phi([x_1,y_1])=0$, so $\phi$ kills the derived subalgebra, and then the right-hand side must vanish for all $x_2,y_2$, so $\phi$ takes values in the centre. The converse is immediate. $\square$
+**Proof.** A derivation $D$ of the direct sum has four components, and the diagonal ones are derivations of the summands. For a single cross component $D(x_1,x_2)=(0,\phi(x_1))$ the Leibniz rule reads $\phi([x_1,y_1])=[\phi(x_1),y_2]+[x_2,\phi(y_1)]$; taking $x_2=y_2=0$ forces $\phi([x_1,y_1])=0$, so $\phi$ kills the derived subalgebra, and then the right-hand side must vanish for all $x_2,y_2$, so $\phi$ takes values in the centre. The converse is immediate.
 
 **Corollary.** If both summands are perfect with trivial centre then $\operatorname{Der}(\mathrm{G}_1\oplus\mathrm{G}_2)=\operatorname{Der}(\mathrm{G}_1)\oplus\operatorname{Der}(\mathrm{G}_2)$.
 
@@ -107,11 +107,11 @@ $$
 
 with $D^0=\operatorname{id}$.
 
-**Proof.** Induction on $n$ using $D([u,v])=[Du,v]+[u,Dv]$ and Pascal's rule. $\square$
+**Proof.** Induction on $n$ using $D([u,v])=[Du,v]+[u,Dv]$ and Pascal's rule.
 
 **Corollary (the $p$-th power of a derivation).** Let $K$ have characteristic $p>0$. If $D$ is a derivation then $D^p$ is a derivation.
 
-**Proof.** With $n=p$ the binomial coefficient $\binom{p}{i}$ is divisible by $p$, hence zero in $K$, for $0<i<p$, so only the end terms survive: $D^p([x,y])=[D^px,y]+[x,D^py]$. $\square$
+**Proof.** With $n=p$ the binomial coefficient $\binom{p}{i}$ is divisible by $p$, hence zero in $K$, for $0<i<p$, so only the end terms survive: $D^p([x,y])=[D^px,y]+[x,D^py]$.
 
 **Remark.** The corollary makes $\operatorname{Der}(\mathrm{G})$ a restricted Lie algebra under the $p$-map $D\mapsto D^p$ when $K$ has characteristic $p$; the restricted structure is treated with the graded Lie algebras in characteristic $p$, later in this Part. If a derivation is nilpotent then $\exp(D)$ is an automorphism, the nilpotent instance of the correspondence between the derivation algebra and the automorphism group of Part II.
 
@@ -127,9 +127,8 @@ $$
 \operatorname{Out}(\mathrm{G})=\operatorname{End}_K(\mathrm{G}).
 $$
 
-**Proof.** The bracket vanishes identically, so the Leibniz rule is vacuous; the adjoint operators are all zero. $\square$
+**Proof.** The bracket vanishes identically, so the Leibniz rule is vacuous; the adjoint operators are all zero.
 
-**Verified.** In dimensions $2$ and $3$ the derivation algebra has dimensions $4$ and $9$, in agreement with $\dim\operatorname{End}_K(K^n)=n^2$, and the adjoint image has dimension $0$.
 
 ### The Two-Dimensional Non-Abelian Algebra
 
@@ -137,9 +136,8 @@ Let $\mathrm{L}$ have basis $x,y$ with $[x,y]=x$. Then $\mathrm{L}$ has trivial 
 
 **Proposition.** $\operatorname{Der}(\mathrm{L})=\operatorname{Inn}(\mathrm{L})$ has dimension $2$, so $\operatorname{Out}(\mathrm{L})=0$.
 
-**Proof.** For $Dx=ax+cy$ and $Dy=bx+dy$ the Leibniz rule on the single bracket gives $Dx=(a+d)x$, so $c=d=0$; the derivations form the two-dimensional space killing $y$ and sending $x$ into $\operatorname{span}(x,y)$. The inner derivations $\operatorname{ad}_x,\operatorname{ad}_y$ are independent and span this space. $\square$
+**Proof.** For $Dx=ax+cy$ and $Dy=bx+dy$ the Leibniz rule on the single bracket gives $Dx=(a+d)x$, so $c=d=0$; the derivations form the two-dimensional space killing $y$ and sending $x$ into $\operatorname{span}(x,y)$. The inner derivations $\operatorname{ad}_x,\operatorname{ad}_y$ are independent and span this space.
 
-**Verified.** Solved as a linear system in the four matrix entries, the derivation space has dimension $2$, equal to the rank of the adjoint image.
 
 ### The Heisenberg Algebra
 
@@ -147,11 +145,10 @@ Let $\mathrm{H}$ have basis $x,y,z$ with $[x,y]=z$ and $z$ central.
 
 **Proposition.** $\operatorname{Der}(\mathrm{H})$ has dimension $6$, $\operatorname{Inn}(\mathrm{H})$ has dimension $2$, and $\operatorname{Out}(\mathrm{H})$ has dimension $4$.
 
-**Proof.** Write $Dx=a_1x+a_2y+a_3z$, $Dy=b_1x+b_2y+b_3z$, $Dz=c_1x+c_2y+c_3z$. The Leibniz rule on $[x,y]=z$ reads $Dz=[Dx,y]+[x,Dy]=a_1z+b_2z$, so $c_1=c_2=0$ and $c_3=a_1+b_2$, the six remaining coefficients being free. The inner derivations $\operatorname{ad}_x(y)=z$ and $\operatorname{ad}_y(x)=-z$ have dimension $2$ and kill $z$, so $\dim\operatorname{Out}(\mathrm{H})=6-2=4$. $\square$
+**Proof.** Write $Dx=a_1x+a_2y+a_3z$, $Dy=b_1x+b_2y+b_3z$, $Dz=c_1x+c_2y+c_3z$. The Leibniz rule on $[x,y]=z$ reads $Dz=[Dx,y]+[x,Dy]=a_1z+b_2z$, so $c_1=c_2=0$ and $c_3=a_1+b_2$, the six remaining coefficients being free. The inner derivations $\operatorname{ad}_x(y)=z$ and $\operatorname{ad}_y(x)=-z$ have dimension $2$ and kill $z$, so $\dim\operatorname{Out}(\mathrm{H})=6-2=4$.
 
 **Example.** The derivation $D_0=\operatorname{diag}(1,1,2)$ is not inner, since every inner derivation kills $z$; its class is a nonzero outer derivation.
 
-**Verified.** Solved as a linear system in the nine matrix entries: $\dim\operatorname{Der}(\mathrm{H})=6$ and the adjoint image has rank $2$.
 
 ### The Lie Algebra $\mathrm{SL}(2,K)$
 
@@ -159,9 +156,8 @@ Let $\mathrm{SL}(2,K)$ have basis $e,h,f$ with $[e,f]=h$, $[h,e]=2e$ and $[h,f]=
 
 **Proposition.** Every derivation of $\mathrm{SL}(2,K)$ is inner, $\operatorname{Der}(\mathrm{SL}(2,K))=\operatorname{Inn}(\mathrm{SL}(2,K))$ has dimension $3$, and $\operatorname{Out}(\mathrm{SL}(2,K))=0$.
 
-**Proof.** This is the semisimple case of the theorem of *Structure of Lie Algebras*; the inner derivations already have dimension $3$ because the centre is zero, and direct solution of the derivation equations gives dimension $3$ as well. $\square$
+**Proof.** This is the semisimple case of the theorem of *Structure of Lie Algebras*; the inner derivations already have dimension $3$ because the centre is zero, and direct solution of the derivation equations gives dimension $3$ as well.
 
-**Verified.** Solved as a linear system in the nine matrix entries, the derivation space has dimension $3$, equal to the rank of the adjoint image; in particular $\operatorname{id}$ is not a derivation.
 
 ## Summary
 

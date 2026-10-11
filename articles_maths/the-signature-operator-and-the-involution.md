@@ -23,7 +23,7 @@ $$
 
 so that $\iota^{*}$ commutes with the Laplacian, $\iota^{*}\Delta=\Delta\iota^{*}$, and with the signature operator in the sense that $\iota^{*}$ preserves the space of harmonic forms. If $\iota$ is orientation-preserving then $\iota^{*}$ commutes with the chirality, $\tau\iota^{*}=\iota^{*}\tau$, and preserves the two eigenspaces $\Omega^{\pm}$; if $\iota$ is orientation-reversing then $\iota^{*}$ anticommutes with the chirality, $\tau\iota^{*}=-\iota^{*}\tau$, and exchanges $\Omega^{+}$ and $\Omega^{-}$.
 
-**Proof.** The pullback commutes with $d$ because $d$ is natural; the action on the star is the change of the volume form under the pullback, $\iota^{*}\mathrm{vol}_g=\det(d\iota)\,\mathrm{vol}_g$, so $\iota^{*}\star=\det(d\iota)\star\iota^{*}$; the commutation with the Laplacian follows from that with $d$ and $d^{*}$, or from the fact that $\iota$ is an isometry and the Laplacian is metric; the chirality is a phase times the star, so the commutation sign is that of the star together with the exchanged degree in the phase, which is the determinant sign. $\square$
+**Proof.** The pullback commutes with $d$ because $d$ is natural; the action on the star is the change of the volume form under the pullback, $\iota^{*}\mathrm{vol}_g=\det(d\iota)\,\mathrm{vol}_g$, so $\iota^{*}\star=\det(d\iota)\star\iota^{*}$; the commutation with the Laplacian follows from that with $d$ and $d^{*}$, or from the fact that $\iota$ is an isometry and the Laplacian is metric; the chirality is a phase times the star, so the commutation sign is that of the star together with the exchanged degree in the phase, which is the determinant sign.
 
 **Remark.** The action of $\iota$ descends to the cohomology, and the **invariant cohomology** $H^{*}(M;\mathbb{C})^{\iota}$ is the fixed part of the induced operator; by the Hodge theorem its elements are represented by the $\iota$-invariant harmonic forms, so the fixed part of the cohomology is a space of harmonic forms, and the intersection pairing restricted to it is the pairing of *Hermitian Pairings on a Topological Space*. The orthogonal decomposition of the cohomology under an involution, and the splitting of the signature over the eigenspaces, are those of that article.
 
@@ -31,7 +31,7 @@ so that $\iota^{*}$ commutes with the Laplacian, $\iota^{*}\Delta=\Delta\iota^{*
 
 **Theorem.** The signature operator $D=d+d^{*}$ commutes with the action of every isometry, $D\iota^{*}=\iota^{*}D$, so the spaces $\Omega^{\pm}(M)$ are $\Gamma$-modules; when $\iota$ is orientation-preserving the operators $D^{\pm}:\Omega^{\pm}\to\Omega^{\mp}$ are $\Gamma$-equivariant, and the kernels $\ker D^{\pm}$ are finite-dimensional $\Gamma$-modules. When $\iota$ is orientation-reversing the operator $D$ is still equivariant but it exchanges the chirality eigenspaces, and the pairing between the parts is a $\Gamma$-antilinear duality.
 
-**Proof.** The exterior derivative is natural for the action and the codifferential is natural for an isometry because the metric is preserved; hence $D$ commutes with $\iota^{*}$, and the chirality commutation of the preceding theorem gives the preservation or the exchange of the parts. The finite-dimensionality of the kernels is the ellipticity of $D$. $\square$
+**Proof.** The exterior derivative is natural for the action and the codifferential is natural for an isometry because the metric is preserved; hence $D$ commutes with $\iota^{*}$, and the chirality commutation of the preceding theorem gives the preservation or the exchange of the parts. The finite-dimensionality of the kernels is the ellipticity of $D$.
 
 **Definition.** For an element $g\in\Gamma$ the **equivariant index** of the signature operator is the virtual trace
 
@@ -49,7 +49,7 @@ $$
 
 where $H^{2k}_{\pm}$ are the self-dual and anti-self-dual middle cohomology.
 
-**Proof.** The equality of the analytic and topological traces is the Hodge theorem applied equivariantly: the harmonic forms are the cohomology, and $g$ preserves the harmonic forms and the chirality; the cobordism invariance is the invariance of the index under the equivariant deformations, as for the ordinary index. $\square$
+**Proof.** The equality of the analytic and topological traces is the Hodge theorem applied equivariantly: the harmonic forms are the cohomology, and $g$ preserves the harmonic forms and the chirality; the cobordism invariance is the invariance of the index under the equivariant deformations, as for the ordinary index.
 
 ## The $G$-Signature Theorem
 
@@ -69,7 +69,7 @@ $$
 
 the product of the cotangents of the half-angles; the formula is the local form of the $G$-signature theorem at an isolated fixed point, and the contributions of the higher-dimensional fixed components are the corresponding expressions in the Chern classes of the normal bundle and in the classes of the fixed submanifold.
 
-**Proof sketch.** The equivariant index is computed by the equivariant index theorem, whose local density at a fixed point is the character of the $g$-action on the symbol of the signature operator; at an isolated fixed point the symbol is the product of the rotation factors, and the resulting density integrates to the product of the cotangents. The computation is the Atiyah–Singer $G$-index theorem in the case of the signature operator, and the corresponding fixed point formula of Atiyah–Bott for the elliptic complexes. $\square$
+**Proof sketch.** The equivariant index is computed by the equivariant index theorem, whose local density at a fixed point is the character of the $g$-action on the symbol of the signature operator; at an isolated fixed point the symbol is the product of the rotation factors, and the resulting density integrates to the product of the cotangents. The computation is the Atiyah–Singer $G$-index theorem in the case of the signature operator, and the corresponding fixed point formula of Atiyah–Bott for the elliptic complexes.
 
 **Corollary.** If the action of $g$ is free — the fixed point set empty — then $\sigma(g,M)=0$. If $g=1$ the theorem is the signature theorem, $\sigma(1,M)=\sigma(M)=\int_ML(TM)$, the sum of the local terms reducing to the integral of the $L$-class. If $g$ is orientation-reversing and fixes an isolated point, the contribution is the product of the cotangents, and the equivariant signature need not be the signature of the fixed part.
 
@@ -91,7 +91,7 @@ $$
 
 when the fixed point set is a smooth submanifold; the number $L(g)$ is the equivariant index of the Gauss–Bonnet operator, the analogue for the Euler characteristic of the equivariant signature.
 
-**Proof sketch.** The Lefschetz number is the supertrace of the action on the de Rham complex, hence the index of the equivariant Gauss–Bonnet operator $d+d^{*}$ graded by the total degree; the local density of the equivariant index is supported on the fixed point set and integrates to the Euler characteristic of the fixed manifold, by the same equivariant index theorem used for the $G$-signature theorem. $\square$
+**Proof sketch.** The Lefschetz number is the supertrace of the action on the de Rham complex, hence the index of the equivariant Gauss–Bonnet operator $d+d^{*}$ graded by the total degree; the local density of the equivariant index is supported on the fixed point set and integrates to the Euler characteristic of the fixed manifold, by the same equivariant index theorem used for the $G$-signature theorem.
 
 **Remark.** The two fixed point formulas are the two ends of the index theory of the de Rham complex: the total-degree grading gives the Lefschetz number and the Euler characteristic of the fixed set, and the chirality grading gives the $g$-signature and the local terms of the $G$-signature theorem. Both are specialisations of the equivariant Atiyah–Singer index theorem, whose general statement is in *The Atiyah–Singer Index Theorem and K-Theory*; the algebraic version of the action of an involution on a pairing is *Hermitian Pairings on a Topological Space*.
 

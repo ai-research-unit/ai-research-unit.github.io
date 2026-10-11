@@ -31,7 +31,7 @@ $$
 
 **Proposition.** $M^{\sigma}$ is a left $A$-module.
 
-*Proof.* Distributivity and the unit are inherited from $M$. For associativity, $(ab) \cdot_{\sigma} m=\sigma(ab)m=\sigma(b)\sigma(a)m$, while $a \cdot_{\sigma}(b \cdot_{\sigma} m)=a \cdot_{\sigma}(\sigma(b)m)=\sigma(a)\sigma(b)m$; the two agree because $\sigma$ is an anti-automorphism. $\square$
+*Proof.* Distributivity and the unit are inherited from $M$. For associativity, $(ab) \cdot_{\sigma} m=\sigma(ab)m=\sigma(b)\sigma(a)m$, while $a \cdot_{\sigma}(b \cdot_{\sigma} m)=a \cdot_{\sigma}(\sigma(b)m)=\sigma(a)\sigma(b)m$; the two agree because $\sigma$ is an anti-automorphism.
 
 The underlying $R$-module of $M^{\sigma}$ is that of $M$; only the action is changed, and it is changed by $\sigma$.
 
@@ -45,11 +45,11 @@ $$
 
 so the functor is an equivalence of categories and an involution up to the identity.
 
-*Proof.* A map $f : M \to N$ that is $A$-linear is $A$-linear for the twisted actions: $f(a \cdot_{\sigma} m)=f(\sigma(a)m)=\sigma(a)f(m)=a \cdot_{\sigma} f(m)$. Identities and composites are unchanged, so the assignment is a functor; and the action of $M^{\sigma}$ twisted again is $a \cdot_{\sigma\cdot_{\sigma}} m=\sigma(\sigma(a))m=am$, so twisting twice returns the original action. $\square$
+*Proof.* A map $f : M \to N$ that is $A$-linear is $A$-linear for the twisted actions: $f(a \cdot_{\sigma} m)=f(\sigma(a)m)=\sigma(a)f(m)=a \cdot_{\sigma} f(m)$. Identities and composites are unchanged, so the assignment is a functor; and the action of $M^{\sigma}$ twisted again is $a \cdot_{\sigma\cdot_{\sigma}} m=\sigma(\sigma(a))m=am$, so twisting twice returns the original action.
 
 **Corollary.** Twisting preserves and reflects the elementary properties of a module: it preserves submodules, quotients, direct sums, free modules and finitely generated modules, and it carries a simple module to a simple module.
 
-*Proof.* The two categories are equal as categories through an invertible functor that is the identity on the underlying additive groups; all these properties are preserved under such an equivalence. $\square$
+*Proof.* The two categories are equal as categories through an invertible functor that is the identity on the underlying additive groups; all these properties are preserved under such an equivalence.
 
 Twisting is the categorical meaning of the involution: it is a symmetry of the module category of order two.
 
@@ -63,7 +63,7 @@ $$
 \operatorname{End}_A(M) \xrightarrow{\ \sim\ } \operatorname{End}_A(M^{\sigma}), \qquad f \longmapsto f .
 $$
 
-*Proof.* The map is additive and preserves composition and the identity; it is bijective because $M$ and $M^{\sigma}$ have the same underlying set and the same notion of $A$-linear map, as the preceding proposition shows. $\square$
+*Proof.* The map is additive and preserves composition and the identity; it is bijective because $M$ and $M^{\sigma}$ have the same underlying set and the same notion of $A$-linear map, as the preceding proposition shows.
 
 So the endomorphism ring cannot distinguish a module from its twist; the twist is invisible to the operators, and this is why an involution on the endomorphisms needs an extra structure, which is a pairing, supplied in the articles that follow.
 
@@ -73,7 +73,7 @@ For the regular module the induced involution is $\sigma$ itself.
 
 **Proposition.** Under the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ of *Automorphisms of Modules over an Algebra*, the involution $\sigma$ of $A$ is an involution of $A^{\mathrm{op}}$, and the corresponding map on $\operatorname{End}_A({}_A A)$ carries the right multiplication $R_a$ to $R_{\sigma(a)}$.
 
-*Proof.* $\sigma$ is an involution of $A^{\mathrm{op}}$ by the observations above, and the isomorphism $A^{\mathrm{op}}\to\operatorname{End}_A(A)$ sends $a$ to $R_a$, so it carries $\sigma$ to $R_a \mapsto R_{\sigma(a)}$. $\square$
+*Proof.* $\sigma$ is an involution of $A^{\mathrm{op}}$ by the observations above, and the isomorphism $A^{\mathrm{op}}\to\operatorname{End}_A(A)$ sends $a$ to $R_a$, so it carries $\sigma$ to $R_a \mapsto R_{\sigma(a)}$.
 
 This is the base case: the involution of the algebra is the involution induced on the endomorphism ring of the regular module.
 
@@ -95,17 +95,17 @@ $$
 \Theta(XY)_{ij}=\sigma\!\left(\sum_k Y_{ki}X_{jk}\right)=\sum_k \sigma(X_{jk})\sigma(Y_{ki})=\sum_k \Theta(X)_{kj}\cdot_{\mathrm{op}}\Theta(Y)_{ik}=(\Theta(Y)\Theta(X))_{ij},
 $$
 
-so $\Theta(XY)=\Theta(Y)\Theta(X)$: it is an anti-automorphism. It has order two because $\Theta^{2}(X)_{ij}=\sigma(\Theta(X)_{ji})=\sigma(\sigma(X_{ij}))=X_{ij}$. Hence $\Theta$ is an involution. Uniqueness is clear from the formula. $\square$
+so $\Theta(XY)=\Theta(Y)\Theta(X)$: it is an anti-automorphism. It has order two because $\Theta^{2}(X)_{ij}=\sigma(\Theta(X)_{ji})=\sigma(\sigma(X_{ij}))=X_{ij}$. Hence $\Theta$ is an involution. Uniqueness is clear from the formula.
 
 **Corollary.** The involution of the algebra $A$ induces an involution of the endomorphism ring of every free module, and on the regular module this is $\sigma$ itself, recovering the proposition above at $n=1$.
 
-*Proof.* $n=1$ gives $\Theta(X)_{11}=\sigma(X_{11})$ on $M_1(A^{\mathrm{op}})=A^{\mathrm{op}}$, which is $\sigma$. $\square$
+*Proof.* $n=1$ gives $\Theta(X)_{11}=\sigma(X_{11})$ on $M_1(A^{\mathrm{op}})=A^{\mathrm{op}}$, which is $\sigma$.
 
 ### Dependence on the basis
 
 **Proposition.** The involution $\Theta$ of a free module depends on the chosen basis: if $P \in M_n(A^{\mathrm{op}})$ is the change-of-basis matrix from the standard basis to another basis, the induced involution for the second basis is $X \mapsto P\,\Theta(P^{-1}XP)\,P^{-1}$, an involution conjugate to $\Theta$ by the inner automorphism of $P$.
 
-*Proof.* Change of basis is an isomorphism of $\operatorname{End}_A(A^n)$ sending an endomorphism of matrix $X$ to $P^{-1}XP$ for a suitable $P$, and conjugation transports a map on the matrix ring; carrying $\Theta$ through gives the displayed formula, which is an involution because conjugation by $P$ is an algebra automorphism. $\square$
+*Proof.* Change of basis is an isomorphism of $\operatorname{End}_A(A^n)$ sending an endomorphism of matrix $X$ to $P^{-1}XP$ for a suitable $P$, and conjugation transports a map on the matrix ring; carrying $\Theta$ through gives the displayed formula, which is an involution because conjugation by $P$ is an algebra automorphism.
 
 Thus for a free module the involution induced by $\sigma$ is determined up to conjugation by a change of basis; the canonical choice is the one that applies $\sigma$ entrywise and transposes.
 
@@ -123,7 +123,7 @@ $$
 
 is a unital $R$-algebra automorphism of $\operatorname{End}_A(M)$, namely the inner automorphism by $u$; it is an involution exactly when $u^{2}$ is central in $\operatorname{End}_A(M)$, and it need not be an involution in general.
 
-*Proof.* A self-conjugacy $u$ is in particular an element of the ring $\operatorname{End}_R(M)$, and conjugation by it is an algebra automorphism; its square is conjugation by $u^{2}$, which is the identity when $u^{2}$ is central, and not otherwise. $\square$
+*Proof.* A self-conjugacy $u$ is in particular an element of the ring $\operatorname{End}_R(M)$, and conjugation by it is an algebra automorphism; its square is conjugation by $u^{2}$, which is the identity when $u^{2}$ is central, and not otherwise.
 
 This shows why the general module does not by itself carry an induced involution: the only involution produced by a self-conjugacy is inner, and inner automorphisms do not see the involution of the algebra. A pairing is the missing datum, and it is introduced in the next articles.
 

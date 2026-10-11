@@ -14,7 +14,7 @@ The discipline this forces on the article is the one the genre requires: **an ag
 
 **The three-way classification.** The article sorts every item into one of three categories, and the distinction is the point of the agenda.
 
-1. **Established.** Recomputed in the series and inherited here: the abelian gauge principle on the centre; the compact algebra $\mathrm{SU}(2)$ inside $\mathbb{M}_-$ with the full non-abelian machinery; the ceiling on the gauge algebra; and the exact chiral structure on the spinor module.
+1. **Established.**
 2. **Obstacle with a known route.** The object does not exist, but the route to it is identifiable, usually because standard field theory or a finite algebraic check supplies the computation and the framework must reproduce it on its own carrier.
 3. **Obstacle with no route yet.** No mechanism has been proposed, and naming an object is not the same as having a route to it. Colour, weak isospin, hypercharge, and the scalar sector are in this class.
 
@@ -346,7 +346,7 @@ The article commits throughout to the agenda's central discipline: no section as
 - *Modules over the General Plain Algebra of Biquaternions* and *Lie Algebras: A General Introduction* — the module structure and the compact-subalgebra facts behind the ceiling.
 - *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and *The Dirac Equation in Biquaternionic Form* — the spinor module, the mass term, and the real-structure origin of chirality.
 
-- *Biquaternion Ideals and Peirce Decomposition* — the ideal decomposition, distinguished from the chiral and sector decompositions.
+- *Ideals and Peirce Decomposition of the General Plain Algebra* — the ideal decomposition, distinguished from the chiral and sector decompositions.
 - *The Spinor-Helicity Formalism and Biquaternions* — the corpus's explicit statement that the framework "does not contain a colored gauge theory"; the transcription boundary this agenda makes systematic.
 - *The Empirical Status of the Biquaternion Framework* — the standing empirical-equivalence result, the caution under which any biquaternionic Standard Model would labour.
 - A. Gsponer and J.-P. Hurni, "Comment on Formulating and Generalizing Dirac's, Proca's, and Maxwell's Equations with Biquaternions or Clifford Numbers", *Foundations of Physics Letters* **14**(1) (2001) 77–85 (arXiv:math-ph/0201049), for the Gürsey isospin reading of the doubled solutions, the Poincaré-and-reversion legitimacy test, and the Einstein–Mayer equation with its proton–neutron, electron–neutrino, Petiau-wave, and Higgs readings.

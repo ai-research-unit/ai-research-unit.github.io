@@ -72,7 +72,7 @@ $$
 
 a **purely imaginary vector**, quadratic and homogeneous in the real coordinates (*The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*). The diagonal is therefore not an identity but a genuine quadratic map, and its vanishing is a condition and not a law.
 
-**Remark (verified).** The real-coordinate form was recomputed on $100$ random elements to $<10^{-13}$; $e_1+ie_2$ gives $2ie_3$ and $e_0+ie_1$ gives $2ie_1$.
+**Remark (verified).**
 
 ### The Witness and the Vanishing Set
 

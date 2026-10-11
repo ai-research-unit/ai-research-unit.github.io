@@ -36,11 +36,11 @@ $$
 \lVert x_ny_n - x_0y_0\rVert = \lVert x_n(y_n - y_0) + (x_n - x_0)y_0\rVert \leq \lVert x_n - x_0\rVert\lVert y_n\rVert + \lVert x_0\rVert\lVert y_n - y_0\rVert ,
 $$
 
-by submultiplicativity and the triangle inequality; the sequence $(y_n)$ is bounded and the two differences tend to $0$, so the sum tends to $0$. $\square$
+by submultiplicativity and the triangle inequality; the sequence $(y_n)$ is bounded and the two differences tend to $0$, so the sum tends to $0$.
 
 **Corollary (the two notions of continuity coincide).** Every normed sesqualgebra is an object of the layer *Topological Sesqualgebras*, with the separately continuous product required there, and the separate and the joint hypotheses of the layer are the same hypothesis. In particular the left and the right multiplication $L_a(x) = ax$ and $R_a(x) = xa$ are continuous for every $a$.
 
-*Proof.* Joint continuity implies separate continuity, so $A$ satisfies the definition of the layer, whose topology is the norm topology and whose base involution is continuous by hypothesis. The two hypotheses of the layer coincide because the stronger one is automatic, which is the ambiguity recorded in *Topological Sesqualgebras*, §*Joint Continuity*. The continuity of $L_a$ and $R_a$ is the separate continuity, and it is the statement of *Topological Sesqualgebras*, §*The One-Sided Multiplications*. $\square$
+*Proof.* Joint continuity implies separate continuity, so $A$ satisfies the definition of the layer, whose topology is the norm topology and whose base involution is continuous by hypothesis. The two hypotheses of the layer coincide because the stronger one is automatic, which is the ambiguity recorded in *Topological Sesqualgebras*, §*Joint Continuity*. The continuity of $L_a$ and $R_a$ is the separate continuity, and it is the statement of *Topological Sesqualgebras*, §*The One-Sided Multiplications*.
 
 **Remark (submultiplicativity is an axiom).** The estimate is not a theorem about a product that happens to satisfy the scalar rules; a product on a normed space may satisfy the two scalar rules and still be discontinuous, and then the object is a normed space with a product that is not an object of the layer. The axiom $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$ is the compatibility of the norm with the product, and it is exactly what passes to the completion.
 
@@ -56,7 +56,7 @@ $$
 
 Consequently the conjugate module $A^{\varsigma}$ is a normed $\mathbb{K}$-space with the norm of $A$, the identity $A \to A^{\varsigma}$ is an isometry, and it is $\mathbb{K}$-linear exactly when $\varsigma = \mathrm{id}$.
 
-*Proof.* Over $\mathbb{R}$ the identity is the only involution, and it is isometric. Over $\mathbb{C}$ a continuous involution of the field is either the identity or the conjugation: an involution of $\mathbb{C}$ is a field automorphism of order two, its fixed field is $\mathbb{R}$ when it is not the identity, by *Involutive Topological Rings and Fields*, §*Topological Fields with Involution*, and a continuous automorphism of $\mathbb{C}$ fixing $\mathbb{R}$ is the identity or the conjugation. The identity is isometric, and the conjugation satisfies $\lvert\bar\lambda\rvert = \lvert\lambda\rvert$ by the definition of the modulus of a complex number. The homogeneity of the norm of the conjugate module is the displayed computation, and the identity is a linear isometry onto its image in all cases; it is $\mathbb{K}$-linear exactly when $\varsigma(\lambda)x = \lambda x$ for every $\lambda$ and $x$, which for $x \neq 0$ is $\varsigma = \mathrm{id}$. $\square$
+*Proof.* Over $\mathbb{R}$ the identity is the only involution, and it is isometric. Over $\mathbb{C}$ a continuous involution of the field is either the identity or the conjugation: an involution of $\mathbb{C}$ is a field automorphism of order two, its fixed field is $\mathbb{R}$ when it is not the identity, by *Involutive Topological Rings and Fields*, §*Topological Fields with Involution*, and a continuous automorphism of $\mathbb{C}$ fixing $\mathbb{R}$ is the identity or the conjugation. The identity is isometric, and the conjugation satisfies $\lvert\bar\lambda\rvert = \lvert\lambda\rvert$ by the definition of the modulus of a complex number. The homogeneity of the norm of the conjugate module is the displayed computation, and the identity is a linear isometry onto its image in all cases; it is $\mathbb{K}$-linear exactly when $\varsigma(\lambda)x = \lambda x$ for every $\lambda$ and $x$, which for $x \neq 0$ is $\varsigma = \mathrm{id}$.
 
 **Remark.** The theorem is the reason a normed sesqualgebra carries a norm on both of its two modules: $A$ and $A^{\varsigma}$ are the same normed space with two actions, and the identity between them is an isometry that is semilinear and not linear. Without the isometry of $\varsigma$ the twisted action would have a bound but not a norm, and the normed theory of the second slot would require a modification of the norm of $A$; over $\mathbb{R}$ and $\mathbb{C}$ this never happens.
 
@@ -70,11 +70,11 @@ $$
 
 with the norm of $A$ on the first factor and the norm of $A^{\varsigma}$ on the second; it is jointly continuous.
 
-*Proof.* The bilinearity is *Topological Sesqualgebras*, §*The Two Slots*, and the estimate is the submultiplicative axiom, the norm of $A^{\varsigma}$ being the norm of $A$ and the twisted scalar multiplying by $\varsigma(\lambda)$ of the same modulus. Joint continuity is the corollary above. $\square$
+*Proof.* The bilinearity is *Topological Sesqualgebras*, §*The Two Slots*, and the estimate is the submultiplicative axiom, the norm of $A^{\varsigma}$ being the norm of $A$ and the twisted scalar multiplying by $\varsigma(\lambda)$ of the same modulus. Joint continuity is the corollary above.
 
 **Corollary (the left and the right multiplication are bounded).** Let $a \in A$. Then $L_a$ is a bounded $\varsigma$-semilinear operator with $\lVert L_a\rVert \leq \lVert a\rVert$, and $R_a$ is a bounded $\mathbb{K}$-linear operator with $\lVert R_a\rVert \leq \lVert a\rVert$.
 
-*Proof.* The parities are *Topological Sesqualgebras*, §*The One-Sided Multiplications*, and the bounds are the submultiplicative estimate applied to $\lVert ax\rVert$ and $\lVert xa\rVert$, the operator norm being the supremum over $\lVert x\rVert \leq 1$. $\square$
+*Proof.* The parities are *Topological Sesqualgebras*, §*The One-Sided Multiplications*, and the bounds are the submultiplicative estimate applied to $\lVert ax\rVert$ and $\lVert xa\rVert$, the operator norm being the supremum over $\lVert x\rVert \leq 1$.
 
 ## The Banach Object
 
@@ -82,7 +82,7 @@ with the norm of $A$ on the first factor and the norm of $A^{\varsigma}$ on the 
 
 **Theorem (the Banach object).** Let $A$ be a Banach sesqualgebra. Then $A$ is a complete object of the layer *Topological Sesqualgebras*, its conjugate module $A^{\varsigma}$ is a Banach space with the norm of $A$, and the product on the pair, the two one-sided multiplications and the twisted action are continuous.
 
-*Proof.* Completeness is the hypothesis, and the normed $\mathbb{K}$-space $A^{\varsigma}$ is complete because it is $A$ with the same norm and the same additive uniformity, the twisted action differing only in the scalars. The continuity statements are the theorems of the two preceding sections. $\square$
+*Proof.* Completeness is the hypothesis, and the normed $\mathbb{K}$-space $A^{\varsigma}$ is complete because it is $A$ with the same norm and the same additive uniformity, the twisted action differing only in the scalars. The continuity statements are the theorems of the two preceding sections.
 
 **Remark (the norm is unique only up to equivalence).** Two submultiplicative norms on the same sesqualgebra that define the same topology define the same layer, because the layer sees the topology and not the norm; for a finite-dimensional object over a complete valued field all norms are equivalent, by *Normed and Banach Spaces*, §*Equivalence of Norms*, so the normed layer on a finite-dimensional sesqualgebra is unique. The non-uniqueness is real in infinite dimension: the operator norm and the normalised submultiplicative norm of *Topological Algebras and Banach Algebras*, §*Normed Algebras* define the same topology on a unital algebra and differ by a constant.
 
@@ -96,7 +96,7 @@ $$
 \lVert x \star y\rVert = \lVert xy^{*}\rVert \leq \lVert x\rVert\,\lVert y^{*}\rVert = \lVert x\rVert\,\lVert y\rVert,
 $$
 
-submultiplicativity of the algebra product and the isometry of the involution. The first scalar rule is $(\lambda x) \star y = (\lambda x)y^{*} = \lambda(xy^{*})$, and the second is $x \star (\lambda y) = x(\lambda y)^{*} = \varsigma(\lambda)xy^{*} = \varsigma(\lambda)(x \star y)$ by the semilinearity of $*$. Completeness is the hypothesis on $B$. $\square$
+submultiplicativity of the algebra product and the isometry of the involution. The first scalar rule is $(\lambda x) \star y = (\lambda x)y^{*} = \lambda(xy^{*})$, and the second is $x \star (\lambda y) = x(\lambda y)^{*} = \varsigma(\lambda)xy^{*} = \varsigma(\lambda)(x \star y)$ by the semilinearity of $*$. Completeness is the hypothesis on $B$.
 
 **Corollary (the model covers every involutive Banach algebra).** Every Banach algebra with an isometric involution is a Banach sesqualgebra under its derived operation, and the involution of the layer is the involution of the algebra. The derived operation $x \star y = xy^{*}$ and the algebra product $xy$ coincide exactly when the involution is trivial, $* = \mathrm{id}$; then also $\varsigma = \mathrm{id}$ and the object has collapsed to a Banach algebra.
 
@@ -112,7 +112,7 @@ $$
 
 so $1$ is a right unit and not a left unit of $\star$ unless $* = \mathrm{id}$, and $\lVert 1\rVert = 1$ if the norm is normalised.
 
-*Proof.* By definition $x \star 1 = x1^{*} = x$ and $1 \star x = 1x^{*} = x^{*}$. The two agree for every $x$ exactly when $* = \mathrm{id}$, and the norm is normalised by the standing convention. $\square$
+*Proof.* By definition $x \star 1 = x1^{*} = x$ and $1 \star x = 1x^{*} = x^{*}$. The two agree for every $x$ exactly when $* = \mathrm{id}$, and the norm is normalised by the standing convention.
 
 **Remark.** The asymmetry is the algebraic one of *Units and the Unitary Elements*: the unit of the algebra is a right unit of the sesquilinear product and the left multiplication by the unit is the involution. It is the smallest instance of the failure of associativity of the layer, and it is the reason the derived operation has no two-sided unit when the involution is nontrivial.
 
@@ -122,13 +122,13 @@ so $1$ is a right unit and not a left unit of $\star$ unless $* = \mathrm{id}$, 
 
 **Theorem (the collapse of the normed layer).** Let $A$ be a normed sesqualgebra over $(\mathbb{K},\varsigma)$ with $\varsigma = \mathrm{id}$. Then the two scalar rules coincide, the product is $\mathbb{K}$-bilinear, $A^{\varsigma} = A$ as a normed space with the same action, and $A$ is a normed algebra over $\mathbb{K}$ in the sense of *Topological Algebras and Banach Algebras*, §*Normed Algebras*; if $A$ is complete it is a Banach algebra. Conversely every normed algebra is a normed sesqualgebra over $(\mathbb{K},\mathrm{id})$, so the two categories are the same.
 
-*Proof.* With $\varsigma = \mathrm{id}$ the second rule reads $x(\lambda y) = \lambda(xy)$ and is the first; the twisted action is the ordinary action, so the conjugate module is the module and the identity is linear. The submultiplicative axiom and the completeness are those of a normed or Banach algebra. Conversely a normed algebra satisfies all the axioms of a normed sesqualgebra over $(\mathbb{K},\mathrm{id})$. $\square$
+*Proof.* With $\varsigma = \mathrm{id}$ the second rule reads $x(\lambda y) = \lambda(xy)$ and is the first; the twisted action is the ordinary action, so the conjugate module is the module and the identity is linear. The submultiplicative axiom and the completeness are those of a normed or Banach algebra. Conversely a normed algebra satisfies all the axioms of a normed sesqualgebra over $(\mathbb{K},\mathrm{id})$.
 
 ### The Objects of Full Type
 
 **Theorem (objects of full type).** Let $A$ be a Banach sesqualgebra of **full type** in the sense of *Sesqualgebras*, §*The Collapse at the Identity*: faithful over $\mathbb{K}$, with products generating $A$ and no nonzero element annihilating $A$ on the left. If $\varsigma \neq \mathrm{id}$ then $A$ is neither associative nor commutative, and in particular it is not a Banach algebra.
 
-*Proof.* The algebraic collapse theorem of *Sesqualgebras*, §*The Collapse at the Identity* applies to the scalars and the product alone and is unchanged by the norm, exactly as *Topological Sesqualgebras*, §*The Objects of Full Type* records for the topological layer; its conclusion is that the associativity or the commutativity of the product forces $\varsigma = \mathrm{id}$. $\square$
+*Proof.* The algebraic collapse theorem of *Sesqualgebras*, §*The Collapse at the Identity* applies to the scalars and the product alone and is unchanged by the norm, exactly as *Topological Sesqualgebras*, §*The Objects of Full Type* records for the topological layer; its conclusion is that the associativity or the commutativity of the product forces $\varsigma = \mathrm{id}$.
 
 **Remark.** The theorem is the reason the normed layer is not a reparametrisation of the normed algebras: the obstruction to being an algebra is a scalar rule, it is present whether the norm is complete or not, and it is what the derived operation of an involutive Banach algebra exhibits. The norm contributes the convergence of the power series, which the later entries of the category read.
 

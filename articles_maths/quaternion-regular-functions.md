@@ -342,7 +342,7 @@ $$
 
 **Theorem (dimension of the monogenic polynomials).** $\dim\mathcal{R}^+(B_r;\mathcal{A};n) = 2n+3$.
 
-The count is fixed by the ladder: the space of $\mathcal{A}$-valued homogeneous polynomials of degree $n$ has dimension $3(n+1)$, the derivative $\tfrac12\bar D$ maps the monogenic subspace of degree $n$ onto that of degree $n-1$ with kernel of dimension two, and the rank and the kernel dimensions are $2n+1$ and $2$, so the dimension is $2n+3$. Verified in exact arithmetic for $n = 0,\dots,5$: $3,5,7,9,11,13$.
+The count is fixed by the ladder: the space of $\mathcal{A}$-valued homogeneous polynomials of degree $n$ has dimension $3(n+1)$, the derivative $\tfrac12\bar D$ maps the monogenic subspace of degree $n$ onto that of degree $n-1$ with kernel of dimension two, and the rank and the kernel dimensions are $2n+1$ and $2$, so the dimension is $2n+3$.
 
 **Remark (dimension counts).** In one complex variable the monogenic polynomials of degree $n$ form a two-dimensional space, spanned by the trace of the holomorphic power and its companion, for every $n$. Here the count grows linearly, $2n+3$, because the two hyperholomorphic constants of each degree account for two dimensions and the remaining $2n+1$ carry the sphere's worth of harmonics that must be paired in each degree. The generic Clifford dimension formula belongs to the Clifford-type systems of *Harmonic Analysis over Hypercomplex Systems* and does not apply here, because $\mathcal{A}$ is not an algebra.
 

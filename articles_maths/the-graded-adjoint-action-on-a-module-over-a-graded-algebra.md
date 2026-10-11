@@ -21,7 +21,7 @@ The base is a field $K$ of characteristic not two, $A$ a $\mathbb{Z}/2$-graded a
 
 **Proposition.** The **evaluation pairing** $\langle f,m\rangle=f(m)$ vanishes unless $|f|=|m|$ and is a map of degree zero; it is nondegenerate on each side for a finite-dimensional module, and the shift $M[1]$ with $(M[1])^i=M^{i+1}$ satisfies $(M[1])^{\vee}=M^{\vee}[1]$.
 
-**Proof.** A functional in $(M^i)^{*}$ vanishes on $M^j$ for $j\neq i$ by definition, and eats only the component $M^i$; the equality $i=j$ in $\mathbb{Z}/2$ means $i+j=0$, so the pairing has degree zero; nondegeneracy is the finite-dimensional duality, and the shift statement is the reindexing of the dual. $\square$
+**Proof.** A functional in $(M^i)^{*}$ vanishes on $M^j$ for $j\neq i$ by definition, and eats only the component $M^i$; the equality $i=j$ in $\mathbb{Z}/2$ means $i+j=0$, so the pairing has degree zero; nondegeneracy is the finite-dimensional duality, and the shift statement is the reindexing of the dual.
 
 **Remark.** The convention taken here grades $(M^{\vee})^i=(M^i)^{*}$ and pairs equal degrees; the opposite convention, $(M^{\vee})^i=(M^{-i})^{*}$, is obtained by the shift and carries the same adjoint action up to that shift.
 
@@ -52,7 +52,7 @@ $$
 \rho^{\vee}([x,y])f(m)=-(-1)^{(|x|+|y|)|f|}f([x,y]\cdot m)
 =(-1)^{|x||f|+|y||f|}\big((-1)^{|x||y|}f(y\cdot x\cdot m)-f(x\cdot y\cdot m)\big);
 $$
-the two agree, using $(-1)^{(|x|+|y|)|f|}=(-1)^{|x||f|+|y||f|}$ and the bilinearity of the action. $\square$
+the two agree, using $(-1)^{(|x|+|y|)|f|}=(-1)^{|x||f|+|y||f|}$ and the bilinearity of the action.
 
 **Remark (the associative case).** The dual of a graded left module over a graded associative algebra is naturally a graded **right** module, $f\cdot a=\rho(a)^{t}f$; when the algebra carries an element star $a\mapsto a^{*}$, $({}^{*})^{2}=\mathrm{id}$, $(ab)^{*}=b^{*}a^{*}$, the same computation with $a^{*}$ in place of the Lie bracket makes the adjoint action a graded **left** action on $M^{\vee}$, the star supplying the reversal, and the sign rule is unchanged.
 
@@ -66,13 +66,13 @@ so that the adjoint action is graded; without the sign $(-1)^{|x||f|}$ in its de
 
 **Proposition.** The adjoint action preserves the grading in the sense $\rho^{\vee}(x)(M^{\vee})^j\subseteq (M^{\vee})^{i+j}$ for $x\in A^i$; the operator $\rho^{\vee}(x)$ has degree $i$, as does $\rho(x)$; and the two are transposes for the evaluation pairing, $\langle\rho^{\vee}(x)f,m\rangle=-(-1)^{|x||f|}\langle f,\rho(x)m\rangle$.
 
-**Proof.** The action $\rho^{\vee}(x)$ raises the degree of a functional by $|x|$ because $\rho(x)$ raises the degree of an element by $|x|$ and the dual grades are the same; the transpose relation is the definition of $\rho^{\vee}(x)$ read through the pairing. $\square$
+**Proof.** The action $\rho^{\vee}(x)$ raises the degree of a functional by $|x|$ because $\rho(x)$ raises the degree of an element by $|x|$ and the dual grades are the same; the transpose relation is the definition of $\rho^{\vee}(x)$ read through the pairing.
 
 **Corollary.** The **grade involution** of $A$ acts on the adjoint action by the sign: if $\alpha$ is the automorphism of $A$ that is $(-1)^i$ on $A^i$, then $\rho^{\vee}(\alpha(x))=(-1)^{|x|}\rho^{\vee}(x)$, so the adjoint action is compatible with the grading exactly through the sign rule.
 
 **Proposition (the invariant pairing).** If $M$ carries a nondegenerate graded form $\beta$ invariant under the action, $\beta(x\cdot m,n)+(-1)^{|x||m|}\beta(m,x\cdot n)=0$, then $\beta$ identifies $M$ with $M^{\vee}$ by $m\mapsto\beta(m,\cdot)$, and under this identification the adjoint action corresponds to the operator adjoint $\rho(x)^{\dagger}$ up to the sign $(-1)^{|x||\cdot|}$; the invariant form makes the module **self-dual**.
 
-**Proof.** The form gives an isomorphism $M\to M^{\vee}$ of graded vector spaces, since it is nondegenerate and homogeneous; transporting $\rho^{\vee}(x)$ gives an operator on $M$ that is $\pm\rho(x)^{\dagger}$ with the sign coming from the graded invariance relation, and the self-duality is the existence of the invariant form. $\square$
+**Proof.** The form gives an isomorphism $M\to M^{\vee}$ of graded vector spaces, since it is nondegenerate and homogeneous; transporting $\rho^{\vee}(x)$ gives an operator on $M$ that is $\pm\rho(x)^{\dagger}$ with the sign coming from the graded invariance relation, and the self-duality is the existence of the invariant form.
 
 **Corollary (the involution).** If $A$ carries an involution $\theta$ whose transport under the duality is isomorphic to the original action, then the module is **$\theta$-self-dual**; the adjoint representation of a Lie algebra with an involution is the model, its self-duality being the isomorphism of *The Adjoint Representation and the Involution*.
 
@@ -90,7 +90,6 @@ For a graded (super) Lie algebra the sign is visible: if $x$ is odd and $f$ is o
 
 For $\mathrm{G}=\mathrm{sl}(2,K)$ with basis $e,h,f$ and the dual basis $e^{*},h^{*},f^{*}$ defined by $\langle e^{*},e\rangle=1=\langle h^{*},h\rangle=\langle f^{*},f\rangle$, the coadjoint action is $\operatorname{ad}^{\vee}(x)=-\operatorname{ad}_x^{t}$, and the invariant form is the Killing form, which identifies the adjoint and coadjoint modules; the self-duality of the adjoint representation is the statement that this identification is an isomorphism of modules, as in *The Adjoint Representation and the Involution*.
 
-**Verified.** The sign rule of the adjoint action was checked on the homogeneous pairs of a two-dimensional super Lie algebra with an odd generator; the coadjoint action $\operatorname{ad}^{\vee}(x)=-\operatorname{ad}_x^{t}$ was checked on the basis of $\mathrm{sl}(2,K)$.
 
 ## Summary
 

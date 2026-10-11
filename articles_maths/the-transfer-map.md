@@ -54,7 +54,7 @@ $$
 \sum_{g \in G} g \circ \tilde\sigma' = \sum_{g \in G} g \circ h \circ \tilde\sigma = \sum_{g \in G} g \circ \tilde\sigma,
 $$
 
-the last equality because $g \mapsto gh$ is a bijection of $G$. $\square$
+the last equality because $g \mapsto gh$ is a bijection of $G$.
 
 Note that no global section of $p$ and no choice of a basepoint of $E$ is involved: each simplex is handled separately, and the ambiguity is absorbed by the summation over the finite group.
 
@@ -65,7 +65,7 @@ p_\#\, \tau_n = d \cdot \mathrm{id}_{C_n(B;R)}, \qquad\qquad
 \tau_n\, p_\# = \sum_{g \in G} g_\# \quad \text{on } C_n(E;R).
 $$
 
-*Proof.* For the first, $h_\# \tau_n(\sigma) = \sum_g h g_\# \tilde\sigma = \sum_g (hg)_\# \tilde\sigma = \sum_g g_\# \tilde\sigma$, again because left multiplication by $h$ permutes $G$. For the second, $p_\# \tilde\sigma = \sigma$, so $p_\# \tau_n(\sigma) = \sum_g p_\# g_\# \tilde\sigma = \sum_g \sigma = d\,\sigma$. For the third, let $\eta : \Delta_n \to E$ be a simplex of the cover; then $p_\# \eta$ is a simplex of the base and $\eta$ is one of its lifts, so that $\tau_n(p_\# \eta) = \sum_g g_\# \eta$ by the definition; extending over the sum gives the identity. $\square$
+*Proof.* For the first, $h_\# \tau_n(\sigma) = \sum_g h g_\# \tilde\sigma = \sum_g (hg)_\# \tilde\sigma = \sum_g g_\# \tilde\sigma$, again because left multiplication by $h$ permutes $G$. For the second, $p_\# \tilde\sigma = \sigma$, so $p_\# \tau_n(\sigma) = \sum_g p_\# g_\# \tilde\sigma = \sum_g \sigma = d\,\sigma$. For the third, let $\eta : \Delta_n \to E$ be a simplex of the cover; then $p_\# \eta$ is a simplex of the base and $\eta$ is one of its lifts, so that $\tau_n(p_\# \eta) = \sum_g g_\# \eta$ by the definition; extending over the sum gives the identity.
 
 The second identity is the **multiplicity** of the covering: the composite $p_\# \tau_n$ is multiplication by the number of sheets. The third is the **norm** operator $N = \sum_{g} g_\#$, whose image lies in the invariant subcomplex and whose square is $dN$.
 
@@ -89,13 +89,13 @@ $$
 \partial_n \tau_n(\sigma) = \partial_n \sum_g g_\#(\tilde\sigma) = \sum_g g_\# \partial_n(\tilde\sigma) = \sum_g g_\#\Bigl(\sum_i (-1)^i \tilde\sigma \circ \delta^i\Bigr) = \tau_{n-1}\partial_n(\sigma),
 $$
 
-so the two sides agree on the generators and therefore on all chains. A chain map carries cycles to cycles and boundaries to boundaries, whence the induced map on homology. $\square$
+so the two sides agree on the generators and therefore on all chains. A chain map carries cycles to cycles and boundaries to boundaries, whence the induced map on homology.
 
 The proof uses only that the deck action is by homeomorphisms and that lifts of faces are faces of lifts; no smoothness and no analytic structure is involved.
 
 **Corollary (reduced homology).** The transfer descends to reduced homology, $\tau_* : \tilde H_n(B;R) \to \tilde H_n(E;R)$, and the identities of the previous proposition hold with $\tilde H$ in place of $H$.
 
-*Proof.* The augmentation $\varepsilon : C_0 \to R$ of *Simplicial and Singular Homology* satisfies $\varepsilon p_\# = \varepsilon$ on $C_0(E;R)$, so $\tau$ carries the augmented complex of the base to the augmented complex of the cover; the induced map is the reduced transfer. $\square$
+*Proof.* The augmentation $\varepsilon : C_0 \to R$ of *Simplicial and Singular Homology* satisfies $\varepsilon p_\# = \varepsilon$ on $C_0(E;R)$, so $\tau$ carries the augmented complex of the base to the augmented complex of the cover; the induced map is the reduced transfer.
 
 ## The Transfer on Homology
 
@@ -109,7 +109,7 @@ $$
 
 Consequently the image of $\tau_*$ is contained in the fixed part $H_n(E;R)^G = \{x : g_* x = x \ \forall g\}$.
 
-*Proof.* The first two identities are the homology of the chain-level identities of the previous section, a chain map inducing the induced map. For the third, if $x = \tau_* y$ then $g_* x = g_* \tau_* y = \tau_* y = x$ by $g_\# \tau = \tau$; hence the image is fixed. $\square$
+*Proof.* The first two identities are the homology of the chain-level identities of the previous section, a chain map inducing the induced map. For the third, if $x = \tau_* y$ then $g_* x = g_* \tau_* y = \tau_* y = x$ by $g_\# \tau = \tau$; hence the image is fixed.
 
 The composite $\tau_* p_*$ need not be the identity; it is the norm $N_*$, which is multiplication by $d$ on the fixed part and zero on the part where $G$ acts through a non-trivial module in characteristic not dividing $d$.
 
@@ -127,7 +127,7 @@ $$
 H_n(B;R) \;\cong\; H_n(E;R)^G, \qquad\qquad H_n(E;R) \;\cong\; H_n(B;R) \oplus \ker p_* .
 $$
 
-*Proof.* Both maps $p_*$ and $d^{-1}\tau_*$ carry the fixed part to the fixed part: $p_*$ commutes with the deck action because $p \circ g = p$, and $\tau_*$ lands in the fixed part by the theorem. On the fixed part, $p_* d^{-1}\tau_* = d^{-1} (d\,\mathrm{id}) = \mathrm{id}$ and $d^{-1}\tau_* p_* = d^{-1} N_* = d^{-1}(d\,\mathrm{id}) = \mathrm{id}$, the last because every element of the fixed part is fixed by each $g_*$, so $N_* = d\cdot\mathrm{id}$ there. Hence the two maps are inverse isomorphisms. The splitting is the standard splitting of a linear map with a section up to the invertible scalar $d$; on the fixed part the sequence $0 \to H_n(E;R)^G \to H_n(E;R) \to \ker p_* \to 0$ is split by $d^{-1}\tau_* p_*$. $\square$
+*Proof.* Both maps $p_*$ and $d^{-1}\tau_*$ carry the fixed part to the fixed part: $p_*$ commutes with the deck action because $p \circ g = p$, and $\tau_*$ lands in the fixed part by the theorem. On the fixed part, $p_* d^{-1}\tau_* = d^{-1} (d\,\mathrm{id}) = \mathrm{id}$ and $d^{-1}\tau_* p_* = d^{-1} N_* = d^{-1}(d\,\mathrm{id}) = \mathrm{id}$, the last because every element of the fixed part is fixed by each $g_*$, so $N_* = d\cdot\mathrm{id}$ there. Hence the two maps are inverse isomorphisms. The splitting is the standard splitting of a linear map with a section up to the invertible scalar $d$; on the fixed part the sequence $0 \to H_n(E;R)^G \to H_n(E;R) \to \ker p_* \to 0$ is split by $d^{-1}\tau_* p_*$.
 
 The theorem is the precise sense in which a finite covering does not lose the homology of the cover: rationally, the homology of the base is the invariant part, and the complementary part is the kernel of the projection. It also shows that the transfer contains all the information of the covering at the level of homology when the degree is invertible.
 
@@ -145,7 +145,7 @@ $$
 
 with $p_* \tau_* = d$ and $\tau_* p_* = \sum_g g_*$ on relative homology.
 
-*Proof.* A singular simplex of $A$ lifts to a simplex of $E_A$, so $\tau_n$ carries $C_n(A;R)$ into $C_n(E_A;R)$ and descends to the quotient of the relative complexes; the boundary of the quotient is induced by the boundary of the complexes, and $\partial \tau = \tau \partial$ descends. The two composites are computed as before. $\square$
+*Proof.* A singular simplex of $A$ lifts to a simplex of $E_A$, so $\tau_n$ carries $C_n(A;R)$ into $C_n(E_A;R)$ and descends to the quotient of the relative complexes; the boundary of the quotient is induced by the boundary of the complexes, and $\partial \tau = \tau \partial$ descends. The two composites are computed as before.
 
 ### The Map of Long Exact Sequences
 
@@ -157,7 +157,7 @@ $$
 
 where $\tau_*^{A}$ is the transfer of the restricted covering on $A$ and $\tau_*^{\mathrm{rel}}$ is the relative transfer. The absolute and relative transfers are the one chain map $\tau$ restricted to the appropriate complex.
 
-*Proof.* The chain-level squares commute because $\tau$ is a chain map of the complexes of the pairs and the inclusions of the two pairs are natural; the snake lemma of *Exact Sequences* is natural in a map of short exact sequences of complexes, so the induced connecting maps commute with the induced maps on homology. Concretely, a relative cycle in $H_n(B,A;R)$ is represented by a chain whose boundary lies in $A$; its transfer has boundary the transfer of that boundary, which lies in $E_A$, so the transfer of a relative cycle is a relative cycle, and the two ways of taking the connecting class agree. $\square$
+*Proof.* The chain-level squares commute because $\tau$ is a chain map of the complexes of the pairs and the inclusions of the two pairs are natural; the snake lemma of *Exact Sequences* is natural in a map of short exact sequences of complexes, so the induced connecting maps commute with the induced maps on homology. Concretely, a relative cycle in $H_n(B,A;R)$ is represented by a chain whose boundary lies in $A$; its transfer has boundary the transfer of that boundary, which lies in $E_A$, so the transfer of a relative cycle is a relative cycle, and the two ways of taking the connecting class agree.
 
 **Remark.** This is the sense in which the transfer is compatible with the boundary: it commutes with the boundary operator $\partial$, so it is a chain map, and it therefore commutes with every map built formally from $\partial$, of which the connecting homomorphism of a pair is the first. The same statement for the connecting map of a short exact sequence of coefficient systems, and for the differential of the Leray–Serre spectral sequence of the covering as a fibration, follows by naturality. The transfer for the two-fold covering, where $d = 2$ and the connecting homomorphism is cup product with the Euler class, is the subject of the sibling article *The Gysin Sequence of a Two-Fold Covering*, written below in this Part.
 
@@ -181,7 +181,7 @@ $$
 
 so that $\tau^*$ is the adjoint of $\tau_*$ with respect to the evaluation pairings. Consequently $p^* \tau^* = d$ and $\tau^* p^* = \sum_g g^*$, and when $d$ is invertible $H^n(B;R) \cong H^n(E;R)^G$.
 
-*Proof.* The first identity is the definition of the dual map; the composite identities are the duals of those for $\tau_*$, since $(p_* \tau_*)^* = \tau^* p^*$ and $(\tau_* p_*)^* = p^* \tau^*$. The fixed-part isomorphism is the dual of the homology statement. $\square$
+*Proof.* The first identity is the definition of the dual map; the composite identities are the duals of those for $\tau_*$, since $(p_* \tau_*)^* = \tau^* p^*$ and $(\tau_* p_*)^* = p^* \tau^*$. The fixed-part isomorphism is the dual of the homology statement.
 
 **Remark (the general finite covering).** For a covering that is not regular the deck group need not act transitively on the fibres, and the transfer cannot be written as a sum over a group; it is then defined by summing a simplex over the $d$ points of its fibre with local choices of lift, the sum being independent of the choices, and it satisfies $p_*\tau_* = d$ with $\tau_*$ landing in the part of $H_*(E;R)$ fixed by the finite-index subgroup $p_*\pi_1(E)$ of $\pi_1(B)$. The regular case above is the one used later in the corpus, and the general case is quoted.
 

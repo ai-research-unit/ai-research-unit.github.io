@@ -30,7 +30,7 @@ and, since $z\mapsto uzu^{-1}$ is an algebra automorphism of $A$ and therefore p
 $$
 u\,\bigl(\alpha(x)\bullet\alpha(y)\bigr)\,u^{-1} = \bigl(u\alpha(x)u^{-1}\bigr)\bullet\bigl(u\alpha(y)u^{-1}\bigr) = c_u(x)\bullet c_u(y) .
 $$
-Hence $c_u$ preserves the Jordan product; being bijective, it is an automorphism of $J$. $\square$
+Hence $c_u$ preserves the Jordan product; being bijective, it is an automorphism of $J$.
 
 **Corollary.** The map $u \mapsto c_u$ is a homomorphism from $A^\times$ to the automorphism group of $J$ (with the composition law computed below); its kernel is the group of units fixed by the automorphism, that is, the units $u$ with $uzu^{-1} = \alpha(z)$ for all $z$, which is $Z(A)^\times$ when $\alpha = \mathrm{id}$.
 
@@ -50,7 +50,7 @@ N(uv) = u\,N(v)\,\alpha(u) ,
 $$
 and $N(uv) = N(u)N(v)$ whenever $N(v)$ is central.
 
-*Proof.* $N(uv) = uv\,\alpha(uv) = uv\,\alpha(v)\,\alpha(u) = u\,N(v)\,\alpha(u)$; if $N(v)$ is central it commutes with $\alpha(u)$ and the product is $u\alpha(u)N(v) = N(u)N(v)$. $\square$
+*Proof.* $N(uv) = uv\,\alpha(uv) = uv\,\alpha(v)\,\alpha(u) = u\,N(v)\,\alpha(u)$; if $N(v)$ is central it commutes with $\alpha(u)$ and the product is $u\alpha(u)N(v) = N(u)N(v)$.
 
 **Theorem (the square of a signed conjugation).** For every unit $u$,
 
@@ -58,7 +58,7 @@ $$
 c_u^2 = \operatorname{conj}_{N(u)} , \qquad c_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1} .
 $$
 
-*Proof.* Compose: $c_u(c_u(x)) = u\,\alpha(u\alpha(x)u^{-1})\,u^{-1} = u\alpha(u)\,\alpha(\alpha(x))\,\alpha(u)^{-1}u^{-1} = N(u)\,x\,N(u)^{-1}$. $\square$
+*Proof.* Compose: $c_u(c_u(x)) = u\,\alpha(u\alpha(x)u^{-1})\,u^{-1} = u\alpha(u)\,\alpha(\alpha(x))\,\alpha(u)^{-1}u^{-1} = N(u)\,x\,N(u)^{-1}$.
 
 **Corollary.** The square of a signed conjugation is an **inner conjugation** of $J$, by the twisted square $N(u)$.
 
@@ -70,7 +70,7 @@ $$
 
 **Theorem (the criterion).** A signed conjugation $c_u$ is a reflection exactly when the twisted square $N(u) = u\alpha(u)$ is central in $A$; it is then the inner automorphism $\operatorname{conj}_{N(u)}$ of order two, and the reflection satisfies $c_u^2 = \mathrm{id}$.
 
-*Proof.* By the square theorem, $c_u^2 = \operatorname{conj}_{N(u)}$, and an inner conjugation is the identity exactly when the conjugating element is central. $\square$
+*Proof.* By the square theorem, $c_u^2 = \operatorname{conj}_{N(u)}$, and an inner conjugation is the identity exactly when the conjugating element is central.
 
 **Corollary (parity).** If $u$ is fixed by $\alpha$ then $N(u) = u^2$; if $u$ is negated by $\alpha$ then $N(u) = -u^2$; in both cases $N(u)$ is central exactly when $u^2$ is central, so a unit with $u^2$ central gives a reflection whatever its parity. In particular every symmetry of $J$, a unit $u$ with $u \bullet u = 1$ in the special product, has $N(u) = u\alpha(u)$ with $\alpha(u) = u^{-1}$ when $u$ is even, whence $N(u) = 1$; and if $u$ is odd then $N(u) = -1$; in either case the reflection condition holds.
 
@@ -84,7 +84,7 @@ $$
 
 where $U_u$ is the quadratic representation and $\Sigma^{\alpha}_{u,u}$ is the symmetrised signed sandwich of *The Signed Sandwich on a Jordan Algebra*.
 
-*Proof.* $U_u(\alpha(x)) = u\alpha(x)u$ for the special quadratic representation, and $u = u^{-1}$ turns this into $u\alpha(x)u^{-1} = c_u(x)$. On the other hand $\Sigma^{\alpha}_{u,u} = U_u\circ\alpha$ by definition, so $c_u = U_u\circ\alpha$. $\square$
+*Proof.* $U_u(\alpha(x)) = u\alpha(x)u$ for the special quadratic representation, and $u = u^{-1}$ turns this into $u\alpha(x)u^{-1} = c_u(x)$. On the other hand $\Sigma^{\alpha}_{u,u} = U_u\circ\alpha$ by definition, so $c_u = U_u\circ\alpha$.
 
 **Corollary.** The reflections by the symmetries of $J$ are exactly the symmetrised signed sandwiches $\Sigma^{\alpha}_{u,u}$ with $u$ a unit and $u^{-1} = u$; these operators lie in the multiplication algebra and are self-adjoint for the trace form of *The Left and Right Multiplication Operators on a Jordan Algebra*, whereas the general reflection $c_u$ with $u \ne u^{-1}$ is an operator on the module $J$ and need not lie in $\operatorname{Mult}(J)$.
 
@@ -97,7 +97,7 @@ $$
 c_u = c_v \iff u^{-1}v \in Z(A)^\times .
 $$
 
-*Proof.* Suppose $c_u = c_v$, so $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for all $x$. Applying this with $x = \alpha^{-1}(z)$, which runs through all $z$ as $x$ does, gives $uzu^{-1} = vzv^{-1}$ for all $z$, that is $u^{-1}v$ commutes with every $z$, so $u^{-1}v$ is central. Conversely if $u^{-1}v$ is central then it commutes with $\alpha(x)$, and $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ follows from $v = u(u^{-1}v)$ with $u^{-1}v$ central. $\square$
+*Proof.* Suppose $c_u = c_v$, so $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for all $x$. Applying this with $x = \alpha^{-1}(z)$, which runs through all $z$ as $x$ does, gives $uzu^{-1} = vzv^{-1}$ for all $z$, that is $u^{-1}v$ commutes with every $z$, so $u^{-1}v$ is central. Conversely if $u^{-1}v$ is central then it commutes with $\alpha(x)$, and $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ follows from $v = u(u^{-1}v)$ with $u^{-1}v$ central.
 
 **Corollary.** The correspondence $u \mapsto c_u$ factors through the quotient $A^\times/Z(A)^\times$, and it is injective there; the signed conjugations are in bijection with the **cosets** of the units modulo the central units of $A$.
 
@@ -111,7 +111,7 @@ be the set of units with central twisted square, the **reflection group** of the
 
 **Theorem.** $G$ is a subgroup of $A^\times$ containing $Z(A)^\times$, and the reflections are the images $c_u$ of the elements $u \in G$; the reflections are in bijection with the cosets $uZ(A)^\times$ with $u \in G$.
 
-*Proof.* If $u, v \in G$ then $N(v)$ is central, so $N(uv) = N(u)N(v)$ by the multiplicativity up to conjugation, and it is central; thus $uv \in G$. The inverse: $N(u^{-1}) = u^{-1}\alpha(u^{-1}) = (u\alpha(u))^{-1}$? This is $u^{-1}\alpha(u)^{-1} = (u\alpha(u))^{-1} = N(u)^{-1}$ only if $\alpha(u)$ and $u$ commute, which is not automatic; instead $N(u^{-1}) = u^{-1}\alpha(u^{-1}) = u^{-1}\alpha(u)^{-1}$, and its conjugate by $u$ is $u\,u^{-1}\alpha(u)^{-1}\,u^{-1} = \alpha(u)^{-1}u^{-1} = N(u)^{-1}$, so $N(u^{-1})$ is conjugate to $N(u)^{-1}$ and is therefore central exactly when $N(u)$ is; hence $u^{-1} \in G$. The classification is the previous theorem restricted to $G$. $\square$
+*Proof.* If $u, v \in G$ then $N(v)$ is central, so $N(uv) = N(u)N(v)$ by the multiplicativity up to conjugation, and it is central; thus $uv \in G$. The inverse: $N(u^{-1}) = u^{-1}\alpha(u^{-1}) = (u\alpha(u))^{-1}$? This is $u^{-1}\alpha(u)^{-1} = (u\alpha(u))^{-1} = N(u)^{-1}$ only if $\alpha(u)$ and $u$ commute, which is not automatic; instead $N(u^{-1}) = u^{-1}\alpha(u^{-1}) = u^{-1}\alpha(u)^{-1}$, and its conjugate by $u$ is $u\,u^{-1}\alpha(u)^{-1}\,u^{-1} = \alpha(u)^{-1}u^{-1} = N(u)^{-1}$, so $N(u^{-1})$ is conjugate to $N(u)^{-1}$ and is therefore central exactly when $N(u)$ is; hence $u^{-1} \in G$. The classification is the previous theorem restricted to $G$.
 
 **Remark (the reflections do not form a group).** The composite of two reflections is
 $$
@@ -119,7 +119,7 @@ c_u\,c_v = \operatorname{conj}_{u\alpha(v)} ,
 $$
 because $c_u(c_v(x)) = u\alpha(v)\,x\,\alpha(v)^{-1}u^{-1}$. This inner conjugation is generally not of the form $c_w$: it is a signed conjugation only when $u\alpha(v) = w\alpha(w)w^{-1}$ for some unit $w$, which is not automatic. The reflections therefore generate the inner automorphism group of $J$ without forming a subgroup of it, and the group they generate is the **inner automorphism group** of the graded Jordan algebra.
 
-*Proof.* The computation is the one displayed; the failure of closure is shown by the degenerate example below, where $c_uc_v$ has non-central conjugating element $u\alpha(v)$. $\square$
+*Proof.* The computation is the one displayed; the failure of closure is shown by the degenerate example below, where $c_uc_v$ has non-central conjugating element $u\alpha(v)$.
 
 ## Degenerate Cases
 
@@ -127,7 +127,7 @@ because $c_u(c_v(x)) = u\alpha(v)\,x\,\alpha(v)^{-1}u^{-1}$. This inner conjugat
 
 **Proposition.** If $N(u) = u\alpha(u)$ is not central, the signed conjugation $c_u$ is not a reflection: $c_u^2 = \operatorname{conj}_{N(u)} \ne \mathrm{id}$, and $c_u$ is an inner automorphism of infinite order whenever no power of $N(u)$ is central.
 
-*Proof.* $c_u^2 = \operatorname{conj}_{N(u)}$ by the square theorem, and a non-central element does not conjugate to the identity. For the order: $c_u^{2m} = \operatorname{conj}_{N(u)^m}$, which is the identity exactly when $N(u)^m$ is central; if no positive power is central, $c_u$ has infinite order. $\square$
+*Proof.* $c_u^2 = \operatorname{conj}_{N(u)}$ by the square theorem, and a non-central element does not conjugate to the identity. For the order: $c_u^{2m} = \operatorname{conj}_{N(u)^m}$, which is the identity exactly when $N(u)^m$ is central; if no positive power is central, $c_u$ has infinite order.
 
 **Example (the unipotent unit).** Let $A = M_2(k)$ with $\alpha = \mathrm{id}$ and $u = I+E_{12}$, a unipotent unit with $u^{-1} = I-E_{12}$. Then $N(u) = u^2 = I+2E_{12}$, which is not central in characteristic not two, and $N(u)^m = I+2mE_{12}$ is non-central for every $m \ne 0$; hence $c_u = \operatorname{conj}_u$ is an inner automorphism of $J$ of infinite order, not a reflection. The failure is exactly the non-centrality of $u\alpha(u)$.
 

@@ -123,7 +123,7 @@ $1$ if $N(\tilde Q)=0$; the rank is one exactly on the zero-divisor cone.
 
 **Proof.** $\Phi(\tilde Q\tilde Q^{*})=\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}$, and a matrix times its
 own adjoint has the rank of the factor; $\Phi(\tilde Q)$ is invertible exactly when
-$\det\Phi(\tilde Q)=N(\tilde Q)\neq0$. $\square$
+$\det\Phi(\tilde Q)=N(\tilde Q)\neq0$.
 
 | Element | $N(\tilde Q)$ | $\Phi(\tilde Q)$ | Square | Name |
 |---|---|---|---|---|
@@ -164,10 +164,6 @@ $$
 \text{interior}\ =\ \text{positive definite}\ =\ \text{units}\ =\ \text{rank-two squares},\qquad
 \text{boundary}\ =\ \text{rank-one squares}\ =\ \text{zero divisors on the cone}\ =\ \text{massless} .
 $$
-
-**Remark (verified).** The equivalence "$t\geq\lvert\mathbf u\rvert$ iff positive semidefinite" holds on
-$200$ random Hermitian elements; and on $100$ random rank-two squares the two eigenvalues are
-nonnegative, so each splits into a sum of two nonnegative rank-one pieces.
 
 ### The Cone as Effects and as Causal Order
 

@@ -76,7 +76,6 @@ so $\hat\phi^{(+)}$ is the **annihilation part** and $\hat\phi^{(-)}$ the **crea
 
 **The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $e^{-iE_{\mathbf{p}}t}$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}$ is the phase in which the statement is made.
 
-**Verification.** The annihilation property was checked on the explicit truncated Fock space: with $\hat\phi^{(+)}$ represented by the lowering operator on the span of $|0\rangle,\dots,|6\rangle$, the vector $\hat\phi^{(+)}|0\rangle$ vanished exactly, and the number operator $\hat N=\hat a^\dagger\hat a$ returned $0$ on the vacuum state.
 
 ## Real and Complex Scalar Fields
 
@@ -128,7 +127,6 @@ $$
 
 The right-hand side of the first relation is a multiple of the identity, so the field generates a **CCR algebra** whose brackets are central; the field is an operator, but the failure of its operators at two events to commute is a fixed function of the separation and not an operator. This is the precise sense in which the scalar field is a classical field with operator coefficients. For the Dirac field the analogous object is an operator-valued matrix, and the difference is exactly the difference between bosonic and fermionic quantization.
 
-**Verification on the truncated space.** On a two-mode truncation with $\hat\phi(f)=f_1\hat a_1+f_2\hat b_2^\dagger$ and $\hat\phi(g)=g_1\hat a_1+g_2\hat b_2^\dagger$, the abstract commutators give $[\hat\phi(f),\hat\phi(g)^\dagger]=(f_1g_1^*-f_2g_2^*)e_0$; the explicit matrices for $\hat a|n\rangle=\sqrt n|n-1\rangle$ reproduce the diagonal values $+1$ and $-1$ for the two modes on the low-lying states, with the expected boundary entry at the top level of the truncation. The central conclusion — that the bracket is a scalar and not an operator — is the content of the identity $0=\mathrm{Tr}[\tilde A,\tilde B]$ applied to the algebra, and it is what forbids the ladder from living in $\mathbb{B}$: a canonical commutator $[\tilde a,\tilde a^\dagger]=c\,e_0$ would have trace $2c\ne0$, so $c=0$.
 
 The field commutator has the two physical properties recorded for it in the companion quantization. At equal times it vanishes, because the momentum integrand is odd; for spacelike separation it vanishes, which is microcausality; and its support is the light cone and its interior, which is the causal structure the quantization preserves.
 

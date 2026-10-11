@@ -42,7 +42,6 @@ $$
 
 up to the overall normalisation, which is a convention; varying with respect to $\bar{\psi}_\mu$ returns the equation displayed above. The index structure is fixed by the requirement that the equation be first order and that its free solutions carry spin $\tfrac32$. No first-order equation for a single lower-spin field can do that: the two-index structure is necessary, and the antisymmetrizations are what make the equation carry an irreducible spin-$\tfrac32$ rather than a reducible sum. The Lagrangian also shows where the mass term sits: it is the antisymmetrized pair $\gamma^{\mu\nu}$, not the Clifford metric $g^{\mu\nu}$, and this is what distinguishes the spin-$\tfrac32$ mass term from the Proca mass term $\tfrac12m^2A_\mu A^\mu$.
 
-<!-- CONVENTION — Rarita–Schwinger writing and the relative sign of the mass term: with the chirality operator $\gamma_5=i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3$, unit-weight antisymmetrized products $\gamma^{\mu\nu}=\tfrac12[\gamma^\mu,\gamma^\nu]$ and $\gamma^{\mu\nu\rho}=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma^\mu\gamma^\nu\gamma^\rho$, and the totally antisymmetric symbol normalized by $\epsilon^{0123}=+1$, the duality identity is $\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial_\rho\psi_\sigma=-i\gamma^{\mu\sigma\rho}\partial_\rho\psi_\sigma$. Hence the $\epsilon$–$\gamma_5$ form that is equivalent to $(i\gamma^{\mu\nu\rho}\partial_\rho-m\gamma^{\mu\nu})\psi_\nu=0$ carries $+m\gamma^{\mu\nu}\psi_\nu$, NOT $-m\gamma^{\mu\nu}\psi_\nu$. Do not "correct" one of the two displayed mass terms to match the other: their relative sign is fixed by the duality identity, and it is the sign that makes the massive system equivalent to the component Dirac equation of the companion article together with the trace. The overall sign is the free convention: replacing $\psi_\mu$ by $\gamma_5\psi_\mu$ flips the sign of $\gamma^{\mu\nu}$ in a Lagrangian and exchanges the two possibilities, leaving the free spectrum and the state count unchanged. -->
 
 ### The constraint and the reduction
 
@@ -174,7 +173,6 @@ $$
 
 up to the index-position conventions that translate $\gamma^\mu$ into the basis, and its independence is what makes the constraint algebraic. In the explicit rest-frame computation below the contraction is carried out with the Dirac matrices directly, so that no convention is left implicit.
 
-<!-- CONVENTION — Rarita–Schwinger trace: the trace constraint is written $\sum_\mu e_\mu\tilde{\Psi}_\mu=0$, i.e. the contraction of the vector index with the basis units, which is the biquaternion image of $\gamma^\mu\psi_\mu=0$. The mass term in this form is the ordinary Dirac mass on each component, NOT a separate $\gamma^{\mu\nu}$ term, because the antisymmetrized equation is equivalent to the Dirac-plus-trace system. Do not add a second mass term when the trace form is used. -->
 
 ## The Rest-Frame Reduction
 
@@ -252,7 +250,6 @@ $$
 
 where $\tilde{\epsilon}$ is a biquaternion playing the role of the Dirac-spinor parameter and $\tilde{\nabla}_\mu$ is the $\mu$-th component of the gradient. The transformation shifts the field by a gradient, and the antisymmetrized kinetic structure of the equation is insensitive to it, just as the electromagnetic field strength is insensitive to a gradient of the potential. The number of gauge parameters is the number of components of $\tilde{\epsilon}$, namely four, which is one Dirac spinor; and the gauge freedom removes two of the four spin-$\tfrac12$ multiplets of the representation content. The remaining two are removed by the trace condition and the equations of motion — with the difference, recorded above, that in the massless case the trace is a gauge choice and the divergence condition is the consequence of the equation, so that the two mechanisms do not simply add but interlock. What is left is a single spin-$\tfrac32$ multiplet per frequency sign, that is, the two helicities $\pm\tfrac32$.
 
-<!-- CONVENTION — massless Rarita–Schwinger gauge: the gauge parameter is a SINGLE Dirac spinor, $\tilde{\epsilon}$, giving four gauge functions, and the gauge freedom removes two spin-1/2 multiplets. Do not identify the gauge parameter with a vector-spinor or with a biquaternion-valued four-vector: that would overcount the gauge freedom and remove the spin-3/2 content as well. -->
 
 ### Helicities and the two physical states
 

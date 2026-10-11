@@ -27,11 +27,11 @@ $$
 
 so $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector; conversely every signed conjugation that is an involution has a reflector parameter.
 
-**Proof.** The signed conjugation is the composite of the automorphisms $c_u$ and $\alpha$, hence an automorphism, and it is bounded because $c_u$, $\alpha$ and $c_{u^{-1}}$ are. The square is $\rho_u^2(f) = u*\alpha(u*\alpha(f)*u^{-1})*u^{-1} = (u*\alpha(u))*f*(u*\alpha(u))^{-1} = c_{u*\alpha(u)}(f)$, using that $\alpha$ is an automorphism and $\alpha^2 = \mathrm{id}$. An inner automorphism is the identity exactly when its element is central, which gives the involution criterion; reading the computation backwards gives the converse. $\square$
+**Proof.** The signed conjugation is the composite of the automorphisms $c_u$ and $\alpha$, hence an automorphism, and it is bounded because $c_u$, $\alpha$ and $c_{u^{-1}}$ are. The square is $\rho_u^2(f) = u*\alpha(u*\alpha(f)*u^{-1})*u^{-1} = (u*\alpha(u))*f*(u*\alpha(u))^{-1} = c_{u*\alpha(u)}(f)$, using that $\alpha$ is an automorphism and $\alpha^2 = \mathrm{id}$. An inner automorphism is the identity exactly when its element is central, which gives the involution criterion; reading the computation backwards gives the converse.
 
 **Corollary (the identity and the grade involution).** When $\mathcal{A}$ has a unit, $1$ is a reflector with $\rho_1 = \alpha$, so the grade involution is always a reflection of the family; and $\rho_u = \mathrm{id}$ exactly when $u$ is a central unit and $\alpha = c_{u^{-1}}$, which for $\alpha = \mathrm{id}$ means exactly $u \in Z(\mathcal{A})^\times$.
 
-**Proof.** $1*\alpha(1) = 1$ is central and $\rho_1 = c_1\alpha = \alpha$; $\rho_u = \mathrm{id}$ is $c_u\alpha = \mathrm{id}$, that is $\alpha = c_{u^{-1}}$. $\square$
+**Proof.** $1*\alpha(1) = 1$ is central and $\rho_1 = c_1\alpha = \alpha$; $\rho_u = \mathrm{id}$ is $c_u\alpha = \mathrm{id}$, that is $\alpha = c_{u^{-1}}$.
 
 **Proposition (the reflection is an operator of the sandwich family).** The reflection is the signed sandwich whose second factor is the inverse of the first, $\rho_u = S_{u,u^{-1}}$; conversely the signed sandwich is recovered from the reflections and the one-sided operators by
 
@@ -41,7 +41,7 @@ $$
 
 so the reflections together with the right convolutions generate the whole signed family.
 
-**Proof.** $S_{u,u^{-1}}(f) = u*\alpha(f)*u^{-1} = \rho_u(f)$. For the reconstruction, $\rho_aR_{\alpha(b)*\alpha(a)}(f) = \rho_a(f*\alpha(b)*\alpha(a)) = a*\alpha(f)*\alpha(\alpha(b)*\alpha(a))*a^{-1} = a*\alpha(f)*(b*a)*a^{-1} = a*\alpha(f)*b = S_{a,b}(f)$, using $\alpha^2 = \mathrm{id}$ and the associativity of convolution. $\square$
+**Proof.** $S_{u,u^{-1}}(f) = u*\alpha(f)*u^{-1} = \rho_u(f)$. For the reconstruction, $\rho_aR_{\alpha(b)*\alpha(a)}(f) = \rho_a(f*\alpha(b)*\alpha(a)) = a*\alpha(f)*\alpha(\alpha(b)*\alpha(a))*a^{-1} = a*\alpha(f)*(b*a)*a^{-1} = a*\alpha(f)*b = S_{a,b}(f)$, using $\alpha^2 = \mathrm{id}$ and the associativity of convolution.
 
 ## The Eigenvalue Decomposition
 
@@ -57,11 +57,11 @@ $$
 \mathcal{A}^+_\rho\mathcal{A}^+_\rho\subseteq\mathcal{A}^+_\rho, \quad \mathcal{A}^+_\rho\mathcal{A}^-_\rho\subseteq\mathcal{A}^-_\rho, \quad \mathcal{A}^-_\rho\mathcal{A}^+_\rho\subseteq\mathcal{A}^-_\rho, \quad \mathcal{A}^-_\rho\mathcal{A}^-_\rho\subseteq\mathcal{A}^+_\rho .
 $$
 
-**Proof.** $\rho$ is a continuous involutive automorphism, so its $\pm1$-eigenspaces decompose $\mathcal{A}$ by the averaging $f = \tfrac12(f+\rho(f)) + \tfrac12(f-\rho(f))$; the multiplication table is the multiplicativity of $\rho$, $\rho(fg) = \rho(f)\rho(g)$. The fixed set is the kernel of the continuous map $\rho - \mathrm{id}$ and the negated part the kernel of $\rho + \mathrm{id}$, hence both closed. $\square$
+**Proof.** $\rho$ is a continuous involutive automorphism, so its $\pm1$-eigenspaces decompose $\mathcal{A}$ by the averaging $f = \tfrac12(f+\rho(f)) + \tfrac12(f-\rho(f))$; the multiplication table is the multiplicativity of $\rho$, $\rho(fg) = \rho(f)\rho(g)$. The fixed set is the kernel of the continuous map $\rho - \mathrm{id}$ and the negated part the kernel of $\rho + \mathrm{id}$, hence both closed.
 
 **Corollary (determination by the fixed subalgebra).** A reflection is determined by its fixed subalgebra and by its negated part; two reflections with the same fixed subalgebra are equal.
 
-**Proof.** An automorphism of order two is determined by its action on the $\pm1$-eigenspaces, and the two eigenspaces determine each other by the direct sum. $\square$
+**Proof.** An automorphism of order two is determined by its action on the $\pm1$-eigenspaces, and the two eigenspaces determine each other by the direct sum.
 
 **Remark (the topology adds closedness).** The algebraic content of the decomposition is that of any involutive automorphism; the topology adds that the two parts are closed, because $\rho$ is continuous, and that the averaging maps are continuous. No norm, no form and no measure enters the algebra of the reflection beyond that.
 
@@ -75,15 +75,15 @@ $$
 
 so the reflections are parametrised by the reflectors modulo the central units, $\mathrm{Ref}(\mathcal{A},\alpha)\cong R^\times(\mathcal{A},\alpha)/Z(\mathcal{A})^\times$.
 
-**Proof.** If $\rho_u = \rho_v$ then $u*\alpha(f)*u^{-1} = v*\alpha(f)*v^{-1}$ for all $f$, so $(v^{-1}*u)*\alpha(f) = \alpha(f)*(v^{-1}*u)$ for all $f$; since $\alpha$ is onto, $v^{-1}*u$ commutes with every element and lies in $Z(\mathcal{A})^\times$. Conversely a central unit is absorbed by the inner conjugation, and every reflector is in the image by definition. $\square$
+**Proof.** If $\rho_u = \rho_v$ then $u*\alpha(f)*u^{-1} = v*\alpha(f)*v^{-1}$ for all $f$, so $(v^{-1}*u)*\alpha(f) = \alpha(f)*(v^{-1}*u)$ for all $f$; since $\alpha$ is onto, $v^{-1}*u$ commutes with every element and lies in $Z(\mathcal{A})^\times$. Conversely a central unit is absorbed by the inner conjugation, and every reflector is in the image by definition.
 
 **Corollary (the reflector as the correcting element).** For a reflector $u$, $\rho_u(u) = \alpha(u)$, and $\rho_u$ is the composite of the inner automorphism by $u$ with the twist; the reflector is the element whose inner automorphism corrects $\alpha$ to the desired reflection.
 
-**Proof.** $u*\alpha(u)$ is central, so $u$ commutes with it and $\rho_u(u) = u*\alpha(u)*u^{-1} = \alpha(u)$. $\square$
+**Proof.** $u*\alpha(u)$ is central, so $u$ commutes with it and $\rho_u(u) = u*\alpha(u)*u^{-1} = \alpha(u)$.
 
 **Proposition (the coset of the inner automorphisms).** The reflections relative to $\alpha$ are exactly the involutive automorphisms lying in the coset $\mathrm{Inn}(\mathcal{A})\alpha$ of the inner automorphism group, and the map $[u]\mapsto[c_u]$ sends the reflectors to the classes of the reflections in $\mathrm{Out}(\mathcal{A}) = \mathrm{Aut}(\mathcal{A})/\mathrm{Inn}(\mathcal{A})$. If every automorphism of $\mathcal{A}$ is inner then every involutive automorphism is a reflection for a suitable $\alpha$.
 
-**Proof.** The reflection is $c_u\alpha$ by the corollary, so it lies in the coset; conversely an element of the coset is $c_u\alpha$, and it is an involution exactly when $u$ is a reflector. The map $[u]\mapsto[c_u]$ is the standard isomorphism $\mathcal{A}^\times/Z(\mathcal{A})^\times\to\mathrm{Inn}(\mathcal{A})$. $\square$
+**Proof.** The reflection is $c_u\alpha$ by the corollary, so it lies in the coset; conversely an element of the coset is $c_u\alpha$, and it is an involution exactly when $u$ is a reflector. The map $[u]\mapsto[c_u]$ is the standard isomorphism $\mathcal{A}^\times/Z(\mathcal{A})^\times\to\mathrm{Inn}(\mathcal{A})$.
 
 ## The Degenerate Cases
 
@@ -95,11 +95,11 @@ $$
 
 so the reflections are exactly the inner automorphisms of $\mathcal{A}$ of order two, with reflector condition $u*z*u*z^{-1} \in Z(\mathcal{A})$.
 
-**Proof.** $\rho_u = c_u\alpha = c_uc_z = c_{u*z}$, an inner automorphism; it is an involution exactly when $(u*z)*f*(u*z)^{-1} = f$ for all $f$, that is when $u*z\in Z(\mathcal{A})$. $\square$
+**Proof.** $\rho_u = c_u\alpha = c_uc_z = c_{u*z}$, an inner automorphism; it is an involution exactly when $(u*z)*f*(u*z)^{-1} = f$ for all $f$, that is when $u*z\in Z(\mathcal{A})$.
 
 **Theorem (the commutative case).** If $G$ is abelian then every unit is a reflector and $\rho_u = \alpha$ for every unit $u$; the reflection family collapses to the two-element group $\{\mathrm{id},\alpha\}$ and the correspondence $u\mapsto\rho_u$ is constant on the units.
 
-**Proof.** In a commutative algebra every element is central, so every unit is a reflector and $\rho_u = c_u\alpha = \alpha$; the reflections are therefore only $\alpha$, together with $\mathrm{id}$ when $\alpha = \mathrm{id}$. $\square$
+**Proof.** In a commutative algebra every element is central, so every unit is a reflector and $\rho_u = c_u\alpha = \alpha$; the reflections are therefore only $\alpha$, together with $\mathrm{id}$ when $\alpha = \mathrm{id}$.
 
 **Remark (the failure of the correspondence).** The map $u\mapsto\rho_u$ is neither injective nor, when $\alpha$ is not inner, surjective onto all involutive automorphisms: only the signed conjugations are reflections, and the involutive automorphisms outside the coset $\mathrm{Inn}(\mathcal{A})\alpha$ are not. The parametrisation is also not a group homomorphism in general, because the product of two reflections is an unsigned sandwich rather than a reflection; each reflection is individually of order two, and the reflections are a coset of the inner automorphisms, not a subgroup.
 

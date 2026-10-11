@@ -16,7 +16,7 @@ $$
 $$
 its $m$-th column being the coordinate column of the left multiplication $\tilde R\mapsto\tilde Q\tilde R$ of the plain product in the basis $e_0,e_1,e_2,e_3$; it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity, and it satisfies $\mathsf{M}_4(\tilde Q^{\natural})=\mathsf{M}_4(\tilde Q)^{\mathsf T}$, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$, and $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0$.
 
-*Proof.* The regular representation of an associative algebra is multiplicative, and the two conjugations are the transpose and the conjugate transpose of the matrix, as in *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Verified on the generators. $\square$
+*Proof.* The regular representation of an associative algebra is multiplicative, and the two conjugations are the transpose and the conjugate transpose of the matrix, as in *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## The Matrix Form of the Block
 
@@ -30,11 +30,11 @@ $$
 
 the half-difference of the two twisted regular products, with the transpose in the first slot and the conjugate transpose in the second.
 
-*Proof.* The products $\tilde P^{\natural}\tilde Q^{*}$ and $\tilde Q^{*}\tilde P^{\natural}$ read $\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger}$ and $\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{\mathsf T}$ in the model, and the block is their half-difference. Verified on general elements. $\square$
+*Proof.* The products $\tilde P^{\natural}\tilde Q^{*}$ and $\tilde Q^{*}\tilde P^{\natural}$ read $\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger}$ and $\mathsf{M}_4(\tilde Q)^{\dagger}\mathsf{M}_4(\tilde P)^{\mathsf T}$ in the model, and the block is their half-difference.
 
 **Proposition (the value is traceless).** $\operatorname{Tr}\mathsf{M}_4(\tilde P\diamond\tilde Q)=0$ for all biquaternions, the block being pure vector.
 
-*Proof.* The trace of the regular matrix is $4Q_0$, and the block has scalar coordinate zero. Verified on general elements. $\square$
+*Proof.* The trace of the regular matrix is $4Q_0$, and the block has scalar coordinate zero.
 
 **Proposition (the conjugate-linearity in the model).** The right-hand side is $\mathbb{C}$-linear in $\mathsf{M}_4(\tilde P)$ and conjugate-linear in $\mathsf{M}_4(\tilde Q)$:
 
@@ -43,7 +43,7 @@ $$
 \mathsf{M}_4\bigl(\tilde P\diamond(A\tilde Q)\bigr)=\overline{A}\,\mathsf{M}_4(\tilde P\diamond\tilde Q)\qquad(A\in\mathbb{C}).
 $$
 
-*Proof.* The transpose is linear and the conjugate transpose is conjugate-linear in the entries, so the first slot enters linearly and the second through the conjugate transpose, which carries the conjugate. Verified on general elements. $\square$
+*Proof.* The transpose is linear and the conjugate transpose is conjugate-linear in the entries, so the first slot enters linearly and the second through the conjugate transpose, which carries the conjugate.
 
 **Remark (the two models agree on the block).** The half-difference is the same expression in the two models, with the adjugate in the $2\times2$ model and the transpose in the regular model, both being the matrices of the natural conjugation; the conjugate transpose is the second operation in both. The two models therefore carry the same theorem, and the value is traceless in both because the block is pure vector. On the real basis the block is the ordinary cross product and the value is traceless; off the real basis the value is the conjugate cross product, and the model keeps the trace zero.
 
@@ -63,13 +63,13 @@ K\bigl(\tilde P\diamond\tilde Q,\tilde R\bigr)
 =-\bigl(\mathbf{P}\times\overline{\mathbf{Q}},\overline{\mathbf{R}}\bigr).
 $$
 
-*Proof.* $\operatorname{Tr}\mathsf{M}_4(\tilde P)=4P_0$, so $\operatorname{Tr}(\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger})=\operatorname{Tr}\mathsf{M}_4(\tilde P^{\natural}\tilde Q^{*})=4K(\tilde P,\tilde Q)$, which is the form of *The Krein Gram Matrix and the Restrictions of the Form*; the block is pure vector, so the trace reads the vector part with the sign $-1$ and the conjugation on the third argument. The transpose on the first factor is the matrix of the natural conjugation, as for the form of the row. Verified on general elements. $\square$
+*Proof.* $\operatorname{Tr}\mathsf{M}_4(\tilde P)=4P_0$, so $\operatorname{Tr}(\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)^{\dagger})=\operatorname{Tr}\mathsf{M}_4(\tilde P^{\natural}\tilde Q^{*})=4K(\tilde P,\tilde Q)$, which is the form of *The Krein Gram Matrix and the Restrictions of the Form*; the block is pure vector, so the trace reads the vector part with the sign $-1$ and the conjugation on the third argument. The transpose on the first factor is the matrix of the natural conjugation, as for the form of the row.
 
 ## The Comparison with the Plain Row
 
 **Remark (the two sesquilinear antisymmetric parts).** The two sesqualgebras carry the antisymmetric parts $\mathrm{APS}$ and $\mathrm{AQS}$, both sesquilinear, and their matrix forms are the half-differences of a product with one conjugation in each slot and the same product in the other order: for $\mathrm{APS}$ the first slot is unadorned and the second is the conjugate transpose, while for $\mathrm{AQS}$ the first slot carries the matrix of the natural conjugation — the **transpose** here — and the second the conjugate transpose. The block is therefore the $\mathrm{AQS}$ of the table, the half-difference with the transpose in the first slot, and this single distinction from $\mathrm{APS}$ is the whole difference between the two sesquilinear antisymmetric parts in the regular model.
 
-**Remark (the model invariants of the block).** In the regular model the block is carried to the traceless matrices, and the pairing is the trace form of the regular matrix; the trace form $\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde P\diamond\tilde Q)\mathsf{M}_2(\tilde R)^{\dagger})$ of the $2\times2$ companion reads the same form $K$ on the value. The operator-side statement of the same facts is *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*.
+**Remark (the model invariants of the block).** In the regular model the block is carried to the traceless matrices, and the pairing is the trace form of the regular matrix; the trace form $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde P\diamond\tilde Q)\mathsf{M}_2(\tilde R)^{\dagger})$ of the $2\times2$ companion reads the same form $K$ on the value. The operator-side statement of the same facts is *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*.
 
 ## The Matrices
 
@@ -103,9 +103,9 @@ $$
 the two twisted products are the two matrices
 
 $$
-\operatorname{adj}\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde P)^{\dagger}=\begin{pmatrix}-2&0&0&2i\\0&-2&2i&0\\0&-2i&-2&0\\-2i&0&0&-2\end{pmatrix},
+\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde P)^{\dagger}=\begin{pmatrix}-2&0&0&2i\\0&-2&2i&0\\0&-2i&-2&0\\-2i&0&0&-2\end{pmatrix},
 \qquad
-\mathsf{M}_4(\tilde P)^{\dagger}\operatorname{adj}\mathsf{M}_4(\tilde P)=\begin{pmatrix}-2&0&0&-2i\\0&-2&-2i&0\\0&2i&-2&0\\2i&0&0&-2\end{pmatrix},
+\mathsf{M}_4(\tilde P)^{\dagger}\mathsf{M}_4(\tilde P)^{\mathsf T}=\begin{pmatrix}-2&0&0&-2i\\0&-2&-2i&0\\0&2i&-2&0\\2i&0&0&-2\end{pmatrix},
 $$
 
 differing in the signs of the off-diagonal entries, and the half-difference is the regular matrix

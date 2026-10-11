@@ -143,7 +143,6 @@ $$
 
 an algebra homomorphism. The image is all of $\mathrm{End}_F(\mathrm{Cl}(V,q))$, of dimension $(\dim\mathrm{Cl})^2$, exactly when $\mathrm{Cl}(V,q)$ is **central simple** over $F$; otherwise it is a proper subalgebra.
 
-**Verified.** The dimension of the span of the maps $y\mapsto ayb$ over a basis is $(\dim\mathrm{Cl})^2$ for the central simple algebras $\mathrm{Cl}_{0,2}(\mathbb{R})\cong\mathbb{H}$, $\mathrm{Cl}_{0,4}(\mathbb{R})\cong\mathbb{H}(2)$ and $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and it is half of $(\dim\mathrm{Cl})^2$ for $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ and for $\mathrm{Cl}_{1,2}(\mathbb{R})$, which are not central simple.
 
 **Counterexample (the naive double centraliser).** For $\mathrm{Cl}_{0,3}(\mathbb{R})$ one has $\dim\mathrm{Cl}=8$ and $\dim\mathrm{End}_F(\mathrm{Cl})=64$, while the maps $L_aR_b$ span only $32$ dimensions. So the claim that the left and the right multiplications always generate $\mathrm{End}_F(\mathrm{Cl}(V,q))$ is false; the correct statement carries the central-simplicity hypothesis, and the two-sided family spans the same image, being a subfamily of the same maps.
 
@@ -155,7 +154,6 @@ $$
 \{\,x : L_x(V)\subseteq V\,\}=F\cdot 1 .
 $$
 
-**Verified.** Solved as a linear system in $\mathrm{Cl}_{0,3}(\mathbb{R})$, in $\mathrm{Cl}_{0,4}(\mathbb{R})$ and in $\mathrm{Cl}_{1,3}(\mathbb{R})$, the space of such $x$ has dimension one.
 
 **Example.** In $\mathrm{Cl}_{0,3}(\mathbb{R})$ with $e_j^{2}=-1$ the left multiplication $L_{e_1}$ sends the vector $e_1$ to the scalar $-1$ and the vector $e_2$ to the bivector $e_1e_2$, and the even left multiplication by $e_1e_2$ sends $e_1$ to $e_2$ but $e_3$ to the trivector $e_1e_2e_3$. So no non-scalar left multiplication preserves $V$.
 

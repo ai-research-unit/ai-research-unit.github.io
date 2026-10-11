@@ -106,7 +106,7 @@ $e_\mu\bar e_\nu+\bar e_\nu e_\mu=0$ for $\mu\neq\nu$, this being the Clifford r
 $e_\mu e_\nu+e_\nu e_\mu=-2\delta_{\mu\nu}$ after the sign $\bar e_\nu=\epsilon_\nu e_\nu$ with
 $\epsilon_0=1$, $\epsilon_i=-1$. The value $|\xi|^2$ is a positive real number, hence a unit of $A$,
 and the displayed inverse is immediate. The computation is identical in the other order because
-$\xi_0$ is central and the two factors commute. $\square$
+$\xi_0$ is central and the two factors commute.
 
 **Corollary.** The equality $D\bar D=\bar DD=\Delta$ holds, $\Delta=\sum_{\mu=0}^{m}\partial_\mu^2$
 being the Laplacian of the ambient space, and $D$ is a first-order elliptic operator with constant
@@ -114,7 +114,7 @@ coefficients.
 
 *Proof.* Applying the symbol computation to the covector $i\xi$ and separating orders gives the
 operator identity; equivalently, expand $D\bar D$ directly as in *Regularity and the Cauchy–Riemann
-Operator*. $\square$
+Operator*.
 
 ### Divergence Form
 
@@ -133,7 +133,7 @@ $$
 $$
 
 *Proof.* The derivative of a constant times a function is the constant times the derivative, and
-$\partial_\mu(e_\mu f)=e_\mu\partial_\mu f$. $\square$
+$\partial_\mu(e_\mu f)=e_\mu\partial_\mu f$.
 
 ## The Square and the Failure of Symmetry
 
@@ -145,7 +145,7 @@ componentwise, hence real-analytic.
 *Proof.* The first statement is the Corollary above. For the second, if $Df=0$ then
 $\Delta f=\bar DDf=0$, and the components of a harmonic function are real-analytic by the classical
 theory; the Weyl lemma and the identity theorem are stated in *Regularity and the Cauchy–Riemann
-Operator*. $\square$
+Operator*.
 
 ### The Adjoint and the Split into Hermitian Parts
 
@@ -167,7 +167,7 @@ $e_0^{*}=e_0$; the coordinate derivative satisfies $\partial_\mu^{*}=-\partial_\
 supported functions. Reversing the factors in the adjoint of a product,
 $(e_\mu\partial_\mu)^{*}=\partial_\mu^{*}e_\mu^{*}=(-\partial_\mu)e_\mu^{*}$, which is $-\partial_0$
 for $\mu=0$ and $+e_i\partial_i$ for $\mu=i\ge1$. Summing over $\mu$ gives
-$D^{*}=-\partial_0+\sum_{i\ge1}e_i\partial_i=-\bar D$. $\square$
+$D^{*}=-\partial_0+\sum_{i\ge1}e_i\partial_i=-\bar D$.
 
 **Corollary (the operator is not symmetric).** $D$ satisfies $D^{*}=-\bar D$, so $D$ is symmetric
 only if $D=-\bar D$, that is only if $\partial_0=0$; on the full space of functions $D$ is neither
@@ -179,7 +179,7 @@ self-adjoint operator.
 
 *Proof.* The split is immediate from the Proposition. For the square, $D_{\mathrm{sa}}$ has all
 coefficients skew, so expanding $D_{\mathrm{sa}}^2$ gives
-$\sum_{i,j}e_ie_j\partial_i\partial_j =-\sum_i\partial_i^2=-\Delta$. $\square$
+$\sum_{i,j}e_ie_j\partial_i\partial_j =-\sum_i\partial_i^2=-\Delta$.
 
 **Remark (the two factorisations, and which article owns which).** The operator $D_{\mathrm{sa}}$
 and its spectral theory belong to *Dirac Differential Operators*; the present article records the
@@ -213,7 +213,7 @@ and $E(x-y)$ is the **Cauchy kernel** of the theory.
 
 *Proof.* $DE=D\bar D\Phi=\Delta\Phi=\delta_0$. The explicit computation of $\bar D\Phi$ for the
 radially symmetric fundamental solution of the Laplacian produces the displayed homogeneity and the
-constant $\omega_m$, as in *Clifford Analysis*. $\square$
+constant $\omega_m$, as in *Clifford Analysis*.
 
 **Remark (normalisation and the operator).** The normalisation in the theorem is fixed by the flux
 of $E$ through a small sphere, and it is the reason the operator $D$ and the kernel $E$ are
@@ -249,7 +249,7 @@ the multiplier being left multiplication by the $j$-th power of the conjugate va
 $\mathcal{M}_k+(x^{\natural})\mathcal{P}_{k-1}$ is direct of dimension
 $\dim\mathcal{M}_k+\dim\mathcal{P}_{k-1}=\dim\mathcal{P}_k$, hence equal to $\mathcal{P}_k$;
 iterating gives the displayed decomposition. The argument is the standard triangular induction of
-*Clifford Analysis*, quoted there and not reproduced. $\square$
+*Clifford Analysis*, quoted there and not reproduced.
 
 **Corollary (the counting).** With $\dim\mathcal{P}_k=\dim\mathcal{S}\binom{m+k}{k}$,
 

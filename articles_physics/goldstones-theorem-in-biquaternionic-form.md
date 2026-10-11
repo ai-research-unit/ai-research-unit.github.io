@@ -92,7 +92,6 @@ $$
 
 The choice is a choice of phase; no physical quantity depends on it, and the remaining symmetry is trivial, $U(1)\to\{1\}$. The order parameter is central-valued, as the field is, and it is the framework's scalar condensate.
 
-**Verification.** With $\lambda=0.8$ and $v=1.3$, the potential $V=\frac{\lambda}{4}(\frac{\phi_1^2+\phi_2^2}{2}-v^2)^2$ has curvature $\lambda v^2=1.352$ in the radial direction at the minimum and curvature $1.0\times10^{-11}$, the numerical zero of a second difference, in the angular direction; the mixed derivative vanishes identically. The masslessness of the angular mode is the numerical reflection of an exact algebraic fact, not of a small parameter.
 
 ## The Goldstone Mode and the Mass Matrix
 
@@ -169,7 +168,6 @@ which is the statement that the current interpolates the Goldstone boson with st
 
 The framework's contribution to these expressions is only that the current lies in the material sector, $\tilde J\in\mathbb{M}_-$, as the companion Noether article records, and that both the order parameter and the Goldstone field are central-valued. The normalization of $f$ depends on the normalization of the order parameter and is fixed once the potential's normalization is fixed; the physical statement is that $f$ is nonzero whenever the symmetry is broken, $f\propto\langle\hat\phi\rangle$, and that it vanishes continuously as the order parameter is turned off. The decay constant is thus the order parameter in the units fixed by the kinetic term, and the Goldstone boson's couplings are all proportional to derivatives divided by $f$.
 
-**Verification.** The current identity is exact, and its remainder is explicit rather than numerical: with $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ and no approximation,
 $$
 -(\phi_1\dot\phi_2-\phi_2\dot\phi_1)=-f\dot\theta-\big(h\,\dot\theta-\theta\,\dot h\big),
 \qquad

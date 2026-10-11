@@ -221,7 +221,7 @@ $$
 
 on account of the field equation.
 
-The conservation was recomputed directly, on a superposition rather than on a single plane wave, in the free theory. Taking
+Taking
 
 $$
 \psi(x)=c_1u^{(1)}(\mathbf p_1)e^{-ip_1\cdot x}+c_2u^{(2)}(\mathbf p_1)e^{-ip_1\cdot x}

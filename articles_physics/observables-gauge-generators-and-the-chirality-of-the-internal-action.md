@@ -35,7 +35,7 @@ $$
 $$
 
 **Proof.** $\langle L_{\tilde B}\tilde T,\tilde V\rangle_{*}=\mathrm{Sc}\bigl((\tilde B\tilde T)\tilde V^{*}\bigr)=\mathrm{Sc}\bigl(\tilde T\tilde V^{*}\tilde B\bigr)=\langle\tilde T,L_{\tilde B^{*}}\tilde V\rangle_{*}$, by the cyclicity of the scalar part; the right-handed computation
-is the same. $\square$
+is the same.
 
 The classification follows from the sector of the parameter.
 
@@ -83,7 +83,7 @@ $\Theta_{\tilde Q}=-\Theta_{\tilde Q^{*}}$.
 
 **Proof.** Evaluating at $\tilde P=e_0$ and taking the trace,
 $\mathrm{Tr}(\tilde Q\tilde Q^{*})=-\mathrm{Tr}(\tilde Q^{*}\tilde Q)$, that is
-$2\lVert\tilde Q\rVert_E^{2}=-2\lVert\tilde Q\rVert_E^{2}$, whence $\tilde Q=0$. $\square$
+$2\lVert\tilde Q\rVert_E^{2}=-2\lVert\tilde Q\rVert_E^{2}$, whence $\tilde Q=0$.
 
 The sandwich therefore occupies the self-adjoint side of the operator split and never the generator side.
 That is the structural difference between the two operators, and the reason the sandwich can serve as an
@@ -162,7 +162,7 @@ and the **sesquilinear commutator** $[\tilde P,\tilde Q]_\varsigma$ is skew-Herm
 pair, with no restriction on the arguments.
 
 **Proof.** $(\tilde P\tilde Q^{*})^{*}=\tilde Q\tilde P^{*}$ because ${}^{*}$ is an anti-automorphism that
-is an involution, so the symmetrisation is fixed by ${}^{*}$ and the difference is anti-fixed. $\square$
+is an involution, so the symmetrisation is fixed by ${}^{*}$ and the difference is anti-fixed.
 
 | Product | Definition | Value | Sector |
 |---|---|---|---|

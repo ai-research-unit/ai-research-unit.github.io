@@ -17,7 +17,7 @@ The rank-one case is exactly the sandwich of *Two-Sided Operators on the General
 
 **Proposition (the sandwich is positive).** For every $\tilde{Q}$, the two-sided operator $\Theta_{\tilde{Q}}$ is positive: if $\tilde V\succeq0$ then $\tilde{Q}\tilde V\tilde{Q}^{*}\succeq0$. Moreover every $\Theta_{\tilde{Q}}$ is **completely positive**, since in the amplified algebra $\mathrm{id}_{n}\otimes \Theta_{\tilde{Q}}$ is again a sandwich, by the matrix $I_{n}\otimes\Phi(\tilde{Q})$.
 
-*Proof.* For $\tilde V\succeq0$, write $\tilde V=\bar{\tilde S}\tilde S$; then $\tilde{Q}\tilde V\tilde{Q}^{*}=(\tilde R\tilde S)^{\dagger}(\tilde R\tilde S)\succeq0$. The amplified statement is the same computation blockwise. Verified: sandwiches sent thousands of random positive semidefinite elements to positive semidefinite elements.
+*Proof.* For $\tilde V\succeq0$, write $\tilde V=\bar{\tilde S}\tilde S$; then $\tilde{Q}\tilde V\tilde{Q}^{*}=(\tilde R\tilde S)^{\dagger}(\tilde R\tilde S)\succeq0$. The amplified statement is the same computation blockwise.
 
 **Proposition (positivity is not complete positivity).** A positive map need not be completely positive; the canonical example on the biquaternion algebra is the **transposition** $\Phi(\tilde V)=\tilde V^{T}$, which is positive and not completely positive. This is the content of the section *The Transposition* below.
 
@@ -55,7 +55,7 @@ $$
 
 The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.
 
-*Proof.* If $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$ then $C_{\Phi}=\sum_{k}C_{\Theta_{\tilde{Q}_{k}}}$ with $C_{\Theta_{\tilde{Q}_{k}}}\succeq0$ of rank one, hence $C_{\Phi}\succeq0$ and $\Phi$ is CP. Conversely, if $C_{\Phi}\succeq0$ then its spectral decomposition $C_{\Phi}=\sum_{k=1}^{r}w_{k}\bar{w_{k}}$, $r=\mathrm{rank}\,C_{\Phi}\le4$, produces the elements $\tilde{Q}_{k}$ by the inverse of the vectorisation of the definition; the identity $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$ then follows from the round-trip property of the Choi correspondence. All steps were verified numerically, together with the rank-one case below.
+*Proof.* If $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$ then $C_{\Phi}=\sum_{k}C_{\Theta_{\tilde{Q}_{k}}}$ with $C_{\Theta_{\tilde{Q}_{k}}}\succeq0$ of rank one, hence $C_{\Phi}\succeq0$ and $\Phi$ is CP. Conversely, if $C_{\Phi}\succeq0$ then its spectral decomposition $C_{\Phi}=\sum_{k=1}^{r}w_{k}\bar{w_{k}}$, $r=\mathrm{rank}\,C_{\Phi}\le4$, produces the elements $\tilde{Q}_{k}$ by the inverse of the vectorisation of the definition; the identity $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$ then follows from the round-trip property of the Choi correspondence.
 
 **Corollary (the sandwiches are exactly the rank-one completely positive maps).** For $\tilde{Q}\neq0$ the Choi matrix of $\Theta_{\tilde{Q}}$ is positive semidefinite of **rank one**. Consequently the two-sided operators of the corpus are exactly the completely positive maps of **Choi rank one**, and the general completely positive map is a sum of at most four of them.
 
@@ -69,7 +69,7 @@ The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.
 2. $\Phi$ is **trace preserving**, $\mathrm{tr}\,\Phi(\tilde V)=\mathrm{tr}\,\tilde V$ for all $\tilde V$, if and only if $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{0}$;
 3. the sandwich $\Theta_{\tilde{Q}}$ is unital if and only if $\tilde{Q}\in U$, and then it is trace preserving and reversible; more generally $\Theta_{\tilde{Q}}$ is trace preserving exactly for $\tilde{Q}\in U$.
 
-*Proof.* (1) $\Phi(e_{0})=\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}$. (2) $\mathrm{tr}(\tilde{Q}_{k}\tilde V\tilde{Q}_{k}^{*})=\mathrm{tr}(\tilde{Q}_{k}^{*}\tilde{Q}_{k}\tilde V)$, so the trace is preserved for all $\tilde V$ exactly when $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{0}$. (3) is (1) and (2) for $r=1$ with $\tilde{Q}^{*}\tilde{Q}=\tilde{Q}\tilde{Q}^{*}=e_{0}$. All three were verified on random Kraus sums, including the failure of the conditions and the reversibility of the unitary case.
+*Proof.* (1) $\Phi(e_{0})=\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}$. (2) $\mathrm{tr}(\tilde{Q}_{k}\tilde V\tilde{Q}_{k}^{*})=\mathrm{tr}(\tilde{Q}_{k}^{*}\tilde{Q}_{k}\tilde V)$, so the trace is preserved for all $\tilde V$ exactly when $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{0}$. (3) is (1) and (2) for $r=1$ with $\tilde{Q}^{*}\tilde{Q}=\tilde{Q}\tilde{Q}^{*}=e_{0}$.
 
 **Remark (the invertible ones with positive inverse are the unitaries).** A completely positive map with a single Kraus operator, $\Phi=\Theta_{\tilde{Q}}$, is invertible as a linear map exactly when $\tilde{Q}$ is invertible, but its inverse is again a completely positive map (indeed again a sandwich $\Theta_{\tilde{Q}^{-1}}$) exactly when $\tilde{Q}\in U$. The completely positive maps whose inverse is completely positive are therefore the **unitary conjugations** $\tilde V\mapsto \tilde{Q}\tilde V\tilde{Q}^{*}$ with $\tilde{Q}\in U$, which are exactly the automorphisms $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*; every other completely positive map has a non-positive inverse even when invertible as a linear map.
 

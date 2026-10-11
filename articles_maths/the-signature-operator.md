@@ -50,7 +50,7 @@ $$
 \tau(d+d^{*})\tau^{-1}=-(d+d^{*}) .
 $$
 
-**Proof sketch.** The square uses $\star^2=(-1)^{k(n-k)}$ and the identity $i^{k(k-1)+m}i^{(n-k)(n-k-1)+m}(-1)^{k(n-k)}=1$. The conjugation of $d$ is the standard Hodge identity $\star d\star^{-1}=\pm d^{*}$, and the phase $i^{k(k-1)+m}$ is chosen so that the sign is $-1$; the third identity is the sum of the first two with the adjoint identity that follows from it. $\square$
+**Proof sketch.** The square uses $\star^2=(-1)^{k(n-k)}$ and the identity $i^{k(k-1)+m}i^{(n-k)(n-k-1)+m}(-1)^{k(n-k)}=1$. The conjugation of $d$ is the standard Hodge identity $\star d\star^{-1}=\pm d^{*}$, and the phase $i^{k(k-1)+m}$ is chosen so that the sign is $-1$; the third identity is the sum of the first two with the adjoint identity that follows from it.
 
 The operator $\tau$ is the **chirality** or **grading**, and it splits the complexified forms into the two eigenspaces
 
@@ -78,7 +78,7 @@ D^{+}:\Omega^{+}(M)\longrightarrow\Omega^{-}(M),\qquad
 (D^{+})^{*}=D^{-} .
 $$
 
-**Proof.** The adjointness of $d$ and $d^{*}$ gives $D^{*}=d^{*}+d=D$. The symbol of $D$ at a covector $\xi$ is $\sigma(\xi)=i(\varepsilon(\xi)+\iota(\xi))$, the Clifford multiplication by $\xi$, which is invertible for $\xi\neq0$ because its square is $|\xi|^2$; hence $D$ is elliptic. The oddness is the identity $\tau D\tau^{-1}=-D$ of the preceding section, which says $D\Omega^{\pm}\subseteq\Omega^{\mp}$. $\square$
+**Proof.** The adjointness of $d$ and $d^{*}$ gives $D^{*}=d^{*}+d=D$. The symbol of $D$ at a covector $\xi$ is $\sigma(\xi)=i(\varepsilon(\xi)+\iota(\xi))$, the Clifford multiplication by $\xi$, which is invertible for $\xi\neq0$ because its square is $|\xi|^2$; hence $D$ is elliptic. The oddness is the identity $\tau D\tau^{-1}=-D$ of the preceding section, which says $D\Omega^{\pm}\subseteq\Omega^{\mp}$.
 
 **Remark.** The operator $D$ is assembled from the three metric objects of the article: the exterior derivative, the codifferential and the chirality, the codifferential being $d^{*}=-\tau d\tau^{-1}$ and the chirality being the star times a phase. A change of metric changes $d^{*}$, hence $D$, and the operator is a genuine geometric object and not a topological one. Its kernel and cokernel, however, are governed by the Hodge theorem and are finite-dimensional.
 
@@ -92,7 +92,7 @@ $$
 
 the operator whose kernel is the space $\mathcal{H}^{k}(M)$ of **harmonic $k$-forms**.
 
-**Proof.** Expand $(d+d^{*})^2=dd^{*}+d^{*}d+ d^2+(d^{*})^2$; the last two vanish, $d^2=0$ being the defining property of the exterior derivative and $(d^{*})^2=0$ its adjoint. $\square$
+**Proof.** Expand $(d+d^{*})^2=dd^{*}+d^{*}d+ d^2+(d^{*})^2$; the last two vanish, $d^2=0$ being the defining property of the exterior derivative and $(d^{*})^2=0$ its adjoint.
 
 **Corollary (the harmonic representatives).** On a closed manifold $\Delta$ is self-adjoint and elliptic with a discrete spectrum of nonnegative eigenvalues, and the **Hodge theorem** identifies its kernel with the de Rham cohomology,
 
@@ -132,7 +132,7 @@ $$
 
 in the Pontryagin classes $p_i$ of $TM$.
 
-**Proof sketch.** A harmonic form is closed and coclosed and represents its cohomology class, and the index of $D^{+}$ is the trace of the chirality on the kernel, $\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)$, because $\ker D^{\pm}$ are the $\pm1$ eigenspaces of $\tau$ on $\ker D=\mathcal{H}^{\bullet}(M)$. On the middle degree the chirality is the Hodge star, so its trace on $\mathcal{H}^{2k}(M)$ is the signature $b_{+}-b_{-}$ of the intersection form; on a pair $\mathcal{H}^{j}(M)\oplus\mathcal{H}^{n-j}(M)$ with $j\neq n-j$ the chirality maps $\Omega^{j}$ to $\Omega^{n-j}$ and exchanges the two summands, so its trace there is $0$ and the non-middle harmonic forms cancel in the index. Hence $\operatorname{ind}D^{+}=b_{+}-b_{-}$. The identification of the index with $\int_ML(TM)$ is the Atiyah–Singer theorem in the case of the symbol of $d+d^{*}$, the symbol class being the Thom class whose Chern character is the $L$-class; the theorem and its heat-kernel proof are stated in *The Atiyah–Singer Index Theorem and K-Theory*. $\square$
+**Proof sketch.** A harmonic form is closed and coclosed and represents its cohomology class, and the index of $D^{+}$ is the trace of the chirality on the kernel, $\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)$, because $\ker D^{\pm}$ are the $\pm1$ eigenspaces of $\tau$ on $\ker D=\mathcal{H}^{\bullet}(M)$. On the middle degree the chirality is the Hodge star, so its trace on $\mathcal{H}^{2k}(M)$ is the signature $b_{+}-b_{-}$ of the intersection form; on a pair $\mathcal{H}^{j}(M)\oplus\mathcal{H}^{n-j}(M)$ with $j\neq n-j$ the chirality maps $\Omega^{j}$ to $\Omega^{n-j}$ and exchanges the two summands, so its trace there is $0$ and the non-middle harmonic forms cancel in the index. Hence $\operatorname{ind}D^{+}=b_{+}-b_{-}$. The identification of the index with $\int_ML(TM)$ is the Atiyah–Singer theorem in the case of the symbol of $d+d^{*}$, the symbol class being the Thom class whose Chern character is the $L$-class; the theorem and its heat-kernel proof are stated in *The Atiyah–Singer Index Theorem and K-Theory*.
 
 **Remark.** The theorem is the sharp form of the observation that the operator depends on the metric but its index does not: the signature is read off the chosen metric through the operator, and the answer is a topological invariant of the manifold. The same operator on the even and odd forms, graded by the total degree instead of the chirality, has index the Euler characteristic, $\operatorname{ind}(d+d^{*})=b_{0}-b_{1}+b_{2}-\cdots=\chi(M)$; the signature and the Euler characteristic are the two characteristic numbers that the de Rham complex yields, computed by the $L$-class and the Euler class respectively.
 

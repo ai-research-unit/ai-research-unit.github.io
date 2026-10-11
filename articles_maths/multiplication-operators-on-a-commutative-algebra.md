@@ -32,7 +32,7 @@ $$
 L_{a+b} = L_a + L_b, \qquad L_{ab} = L_a \circ L_b = L_b \circ L_a, \qquad L_{ra} = rL_a, \qquad L_1 = \mathrm{id}_A .
 $$
 
-*Proof.* Each identity is checked on an element $x$: $L_{a+b}(x) = (a+b)x = ax + bx$, $L_{ab}(x) = (ab)x = a(bx) = L_a(L_b x)$, $L_{ra}(x) = (ra)x = r(ax) = (rL_a)(x)$, and $L_1(x) = x$. Commutativity gives $L_aL_b = L_{ab} = L_{ba} = L_bL_a$. $\square$
+*Proof.* Each identity is checked on an element $x$: $L_{a+b}(x) = (a+b)x = ax + bx$, $L_{ab}(x) = (ab)x = a(bx) = L_a(L_b x)$, $L_{ra}(x) = (ra)x = r(ax) = (rL_a)(x)$, and $L_1(x) = x$. Commutativity gives $L_aL_b = L_{ab} = L_{ba} = L_bL_a$.
 
 **Corollary.** The image $L(A) = \{L_a : a \in A\}$ is a commutative subalgebra of $\operatorname{End}_R(A)$ with identity $L_1$, and $L : A \to L(A)$ is a surjective $R$-algebra homomorphism. If $A$ is unital then $L$ is injective, because $L_a = 0$ forces $a = L_a(1) = 0$; hence
 
@@ -60,7 +60,7 @@ $$
 
 Equivalently, every $A$-linear endomorphism of the regular module $A$ is a multiplication operator, and $A \cong \operatorname{End}_A(A)$.
 
-*Proof.* An operator $T$ commutes with every $L_a$ precisely when $T(ax) = a\,T(x)$ for all $a, x$, which is $A$-linearity of the regular module; putting $a = x$ gives $T(a) = a\,T(1) = L_{T(1)}(a)$, so $T = L_b$ with $b = T(1)$. Conversely every $L_b$ is $A$-linear by associativity. Here the unit is again used, in the evaluation at $1$. $\square$
+*Proof.* An operator $T$ commutes with every $L_a$ precisely when $T(ax) = a\,T(x)$ for all $a, x$, which is $A$-linearity of the regular module; putting $a = x$ gives $T(a) = a\,T(1) = L_{T(1)}(a)$, so $T = L_b$ with $b = T(1)$. Conversely every $L_b$ is $A$-linear by associativity. Here the unit is again used, in the evaluation at $1$.
 
 **Corollary.** When $A$ is free of finite rank over the field $k$, the subalgebra $L(A)$ is a maximal commutative subalgebra of $\operatorname{End}_k(A)$: it equals its own centralizer and is commutative. The double centralizer theorem for the regular module therefore terminates at the first step.
 
@@ -76,7 +76,7 @@ $$
 \delta \circ L_a = L_{\delta(a)} + L_a \circ \delta, \qquad \text{equivalently} \qquad [\delta, L_a] = L_{\delta(a)} .
 $$
 
-*Proof.* Apply both sides to $x$: $\delta(ax) = \delta(a)x + a\delta(x) = L_{\delta(a)}(x) + L_a(\delta x)$. $\square$
+*Proof.* Apply both sides to $x$: $\delta(ax) = \delta(a)x + a\delta(x) = L_{\delta(a)}(x) + L_a(\delta x)$.
 
 **Corollary.** The $R$-linear map $\operatorname{Der}_R(A) \to L(A)$, $\delta \mapsto L_{\delta(a)}$ for a fixed $a$, is the restriction of the adjoint action of $\operatorname{Der}_R(A)$ on the operator algebra; on the whole of $L(A)$ the derivation acts by $L_b \mapsto L_{\delta(b)}$, and this is the derivation of the commutative algebra $L(A) \cong A$ carried across the isomorphism. In particular the derivation space depends only on the algebra structure of $A$, as it must.
 
@@ -102,13 +102,13 @@ $$
 
 that is, $\chi$ is a linear functional on $A$ that is an eigenvector of the transposed operator $L_a^{\mathsf T}$ with eigenvalue $\chi(a)$. Equivalently, the ideal $\ker\chi$ is a maximal ideal of $A$ and $A/\ker\chi \cong R$.
 
-*Proof.* $\chi(L_a x) = \chi(ax) = \chi(a)\chi(x) = \chi(a)\,\chi(x)$; the quotient statement is the first isomorphism theorem for algebras, and $\ker\chi$ is maximal because $A/\ker\chi$ is a subalgebra of the field $R$ (or of $R$ itself) containing $1$. $\square$
+*Proof.* $\chi(L_a x) = \chi(ax) = \chi(a)\chi(x) = \chi(a)\,\chi(x)$; the quotient statement is the first isomorphism theorem for algebras, and $\ker\chi$ is maximal because $A/\ker\chi$ is a subalgebra of the field $R$ (or of $R$ itself) containing $1$.
 
 The eigenvalue assigned to $a$ by the character is forced: a character is a multiplicative functional, and the eigenvalues of the family are exactly the values of the characters.
 
 **Proposition (simultaneous triangularisation).** Suppose $A$ is a finitely generated free $R$-module and that the characters separate the elements of $A$, in the sense that $\chi(a) = 0$ for all $\chi$ forces $a = 0$. Then the family $L(A)$ is **simultaneously diagonalisable** in a suitable extension of scalars: there is a basis of $A \otimes_R S$ over a ring $S$ in which every $L_a$ is diagonal, with the diagonal entries the values $\chi(a)$.
 
-*Proof.* The hypothesis exhibits $A$ as a subalgebra of the algebra of functions $\mathfrak X(A) \to R$ and hence of a product of copies of $R$, one for each character; in the corresponding idempotent decomposition $A \otimes_R S \cong \prod_\chi S$, the operator $L_a$ is multiplication by the scalar $\chi(a)$ in the $\chi$-th coordinate. $\square$
+*Proof.* The hypothesis exhibits $A$ as a subalgebra of the algebra of functions $\mathfrak X(A) \to R$ and hence of a product of copies of $R$, one for each character; in the corresponding idempotent decomposition $A \otimes_R S \cong \prod_\chi S$, the operator $L_a$ is multiplication by the scalar $\chi(a)$ in the $\chi$-th coordinate.
 
 For a finite-dimensional reduced commutative algebra over an algebraically closed field $k$, the characters are exactly the $k$-algebra homomorphisms into $k$, they separate points, and the proposition reduces to the classical diagonalisation of a commuting family of diagonalisable operators.
 
@@ -130,7 +130,7 @@ $$
 
 where $\hat a = \Gamma(a)$.
 
-*Proof.* For $a, b \in A$ and a character $\chi$, $\Gamma(a+b)(\chi) = \chi(a+b) = \chi(a)+\chi(b)$ and $\Gamma(ab)(\chi) = \chi(ab) = \chi(a)\chi(b) = \Gamma(a)(\chi)\Gamma(b)(\chi)$, so $\Gamma$ is additive and multiplicative; $\Gamma(1)(\chi) = 1$. The second display is the defining property $\chi(ax) = \chi(a)\chi(x)$. $\square$
+*Proof.* For $a, b \in A$ and a character $\chi$, $\Gamma(a+b)(\chi) = \chi(a+b) = \chi(a)+\chi(b)$ and $\Gamma(ab)(\chi) = \chi(ab) = \chi(a)\chi(b) = \Gamma(a)(\chi)\Gamma(b)(\chi)$, so $\Gamma$ is additive and multiplicative; $\Gamma(1)(\chi) = 1$. The second display is the defining property $\chi(ax) = \chi(a)\chi(x)$.
 
 The kernel of $\Gamma$ is the **Jacobson radical** — the intersection of the maximal ideals, that is, the elements annihilated by every character — and $\Gamma$ is injective exactly when the characters separate points, which is the hypothesis of the triangularisation proposition. For a reduced algebra of finite type over a field the radical vanishes and the transform is injective.
 
@@ -188,7 +188,7 @@ $$
 T(L_a x, y) = T(x, L_a y) \qquad \text{for all } a, x, y \in A .
 $$
 
-*Proof.* $T(L_a x, y) = \operatorname{tr}(L_{(ax)y}) = \operatorname{tr}(L_{a(xy)}) = T(x, ay) = T(x, L_a y)$, using associativity of $A$ in the middle. $\square$
+*Proof.* $T(L_a x, y) = \operatorname{tr}(L_{(ax)y}) = \operatorname{tr}(L_{a(xy)}) = T(x, ay) = T(x, L_a y)$, using associativity of $A$ in the middle.
 
 **Corollary.** The family $L(A)$ is a commutative subalgebra of the space of operators self-adjoint for $T$. When $T$ is non-degenerate the adjoint operation makes $\operatorname{End}_R(A)$ an algebra with an involution, and $L(A)$ lies in its self-adjoint part; the involution is developed in the `* Operator Theory` group of this category, where the pairing and the adjoint are read with the involution of the elements.
 

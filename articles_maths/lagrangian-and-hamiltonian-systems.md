@@ -63,7 +63,7 @@ $$
 \sum_am_a\ddot{\mathbf r}_a\cdot\frac{\partial\mathbf r_a}{\partial q^j} = \frac{d}{dt}\Bigl(\sum_am_a\dot{\mathbf r}_a\cdot\frac{\partial\mathbf r_a}{\partial q^j}\Bigr)-\sum_am_a\dot{\mathbf r}_a\cdot\frac{d}{dt}\frac{\partial\mathbf r_a}{\partial q^j} ,
 $$
 
-and with $T=\tfrac12\sum_am_a\lvert\dot{\mathbf r}_a\rvert^2$ the identities $\partial\mathbf r_a/\partial q^j=\partial\dot{\mathbf r}_a/\partial\dot q^j$ and $\frac{d}{dt}\partial\mathbf r_a/\partial q^j=\partial\dot{\mathbf r}_a/\partial q^j$ make the two terms $\frac{d}{dt}\partial T/\partial\dot q^j$ and $\partial T/\partial q^j$. ∎
+and with $T=\tfrac12\sum_am_a\lvert\dot{\mathbf r}_a\rvert^2$ the identities $\partial\mathbf r_a/\partial q^j=\partial\dot{\mathbf r}_a/\partial\dot q^j$ and $\frac{d}{dt}\partial\mathbf r_a/\partial q^j=\partial\dot{\mathbf r}_a/\partial q^j$ make the two terms $\frac{d}{dt}\partial T/\partial\dot q^j$ and $\partial T/\partial q^j$.
 
 **Definition.** A constraint is **holonomic** if it is the vanishing of a relation $\phi(q,t)=0$ among the coordinates; it is **scleronomic** when $\phi$ carries no explicit time and **rheonomic** when it does. A holonomic constraint is used by elimination: it removes one coordinate, and the remaining coordinates are free. A constraint that is linear in the velocities, $A^a_j(q)\dot q^j=0$, and that admits no integrating factor is **non-holonomic**; it cannot be eliminated, and it must be imposed by multipliers.
 
@@ -75,7 +75,7 @@ $$
 
 the $\lambda_a$ being functions of $t$ determined together with the solution.
 
-*Proof.* At a configuration the admissible virtual displacements form the subspace annihilated by the rows of $A$; D'Alembert's principle requires the generalised force to annihilate that same subspace, so it is a combination $\lambda_aA^a_j$ of the rows, by the independence of the rows. The constraint is imposed on the velocity rather than on the virtual displacement, and the difference is not merely formal: imposing the same relation on the variation of the action instead gives the **vakonomic** equations, which agree with these for holonomic constraints and differ from them otherwise, and it is D'Alembert's principle, not stationary action, that reproduces Newton's law. The pair of equations is the differential-algebraic system of the article of this Part on differential-algebraic equations. ∎
+*Proof.* At a configuration the admissible virtual displacements form the subspace annihilated by the rows of $A$; D'Alembert's principle requires the generalised force to annihilate that same subspace, so it is a combination $\lambda_aA^a_j$ of the rows, by the independence of the rows. The constraint is imposed on the velocity rather than on the virtual displacement, and the difference is not merely formal: imposing the same relation on the variation of the action instead gives the **vakonomic** equations, which agree with these for holonomic constraints and differ from them otherwise, and it is D'Alembert's principle, not stationary action, that reproduces Newton's law. The pair of equations is the differential-algebraic system of the article of this Part on differential-algebraic equations.
 
 **Example (the skate, or knife edge).** A body moving in the plane with position $(x,y)$ and heading $\theta$, whose velocity is along its heading, satisfies
 
@@ -99,7 +99,7 @@ the acceleration of the contact point lying along the heading and the heading tu
 
 **Theorem (the energy of a non-holonomic system).** For an autonomous Lagrangian and a constraint that is homogeneous in the velocities, the energy $E=\dot q^j\partial L/\partial\dot q^j-L$ is conserved along the solutions of the Lagrange–d'Alembert equations, even though the system has no stationary-action principle.
 
-*Proof.* Multiply the equation by $\dot q^j$ and sum over $j$: the multiplier term contributes $\lambda_aA^a_j\dot q^j=0$, by the constraint. Hence $\dot q^j\bigl(\frac{d}{dt}L_{\dot q^j}-L_{q^j}\bigr)=0$, and the left-hand side is $\frac{d}{dt}E+L_t$; with $L_t=0$ the energy is constant. The computation is the one that gives the Beltrami identity, with the multiplier term killed by the constraint rather than absent. ∎
+*Proof.* Multiply the equation by $\dot q^j$ and sum over $j$: the multiplier term contributes $\lambda_aA^a_j\dot q^j=0$, by the constraint. Hence $\dot q^j\bigl(\frac{d}{dt}L_{\dot q^j}-L_{q^j}\bigr)=0$, and the left-hand side is $\frac{d}{dt}E+L_t$; with $L_t=0$ the energy is constant. The computation is the one that gives the Beltrami identity, with the multiplier term killed by the constraint rather than absent.
 
 The multiplier structure — an unknown function determined by the constraint rather than eliminated — is the same one that the constrained problem of the calculus of variations exhibits, and it is the finite-dimensional form of the costate of optimal control, where the constraint is a differential equation for the state rather than a velocity relation; the article of this Part on optimal control treats that case, and the same multiplier rule produces the costate there.
 
@@ -132,7 +132,7 @@ The homogeneity of the potential is what lets the kinetic and potential terms sc
 
 **Theorem (conservation of a cyclic momentum).** If $q^k$ is cyclic, then $p_k$ is constant along every solution of the Euler–Lagrange equations.
 
-*Proof.* The Euler–Lagrange equation with index $k$ reads $\frac{d}{dt}p_k=\frac{\partial L}{\partial q^k}$, and the right-hand side vanishes by cyclicity, so $p_k$ is a constant of the motion. The conserved quantity is the Noether charge of the one-parameter family of translations of $q^k$, which leaves the Lagrangian invariant exactly when $q^k$ is cyclic. ∎
+*Proof.* The Euler–Lagrange equation with index $k$ reads $\frac{d}{dt}p_k=\frac{\partial L}{\partial q^k}$, and the right-hand side vanishes by cyclicity, so $p_k$ is a constant of the motion. The conserved quantity is the Noether charge of the one-parameter family of translations of $q^k$, which leaves the Lagrangian invariant exactly when $q^k$ is cyclic.
 
 **Example (angular momentum).** A particle of mass $m$ in a plane, in a central potential $V(r)$, has the Lagrangian in polar coordinates $(t,r,\theta)$
 $$
@@ -228,7 +228,7 @@ along an integral curve of $X$, the Euler–Lagrange equation. Conversely, $\alp
 $$
 \sum_j L_{\dot q^i\dot q^j}\,X(\dot q^j) = L_{q^i}-\dot q^jL_{\dot q^i q^j}
 $$
-for the accelerations, with the Hessian as coefficient matrix; regularity makes the matrix invertible, so the accelerations, and with them $X$, are unique. ∎
+for the accelerations, with the Hessian as coefficient matrix; regularity makes the matrix invertible, so the accelerations, and with them $X$, are unique.
 
 **Remark (the Cartan form and the field case).** For a time-dependent Lagrangian the one-form is replaced on $TQ\times\mathbb{R}$ by the Poincaré–Cartan form $L\,dt+p_i(dq^i-\dot q^i\,dt)$, whose Lie derivative along the field of the system carries the same content together with the conservation of the energy. In a field theory the momentum is an $(m-1)$-form rather than a one-form, the Lie derivative is replaced by a divergence, and the local coordinate form is the multi-index equation of *The Calculus of Variations*. The Hamiltonian side of the field case is the subject of the article of this Part *Multisymplectic and Covariant Hamiltonian Field Theory*: there the single momentum is replaced by a polymomentum indexed by the directions of the independent variables, the momentum being correspondingly a family of $(m-1)$-forms, the symplectic form by a closed form of higher degree, and the two-form's invertibility by a degree count that leaves no covariant Poisson bracket. The case $m=1$ of that article is the present theory, so the remark is a forward reference and not an analogy.
 
@@ -322,7 +322,7 @@ $$
 
 so that $g$ is a constant of the motion if and only if $\{g,H\}+\partial_tg=0$; when $g$ has no explicit time dependence the condition is $\{g,H\}=0$.
 
-*Proof.* The derivative of $g$ along a curve of the flow has one part from the motion in phase space and one part from the explicit time dependence, $\frac{d}{dt}g=dg(X_H)+\partial_tg$, and $dg(X_H)=X_H(g)=\{g,H\}$ by the definition of the bracket. ∎
+*Proof.* The derivative of $g$ along a curve of the flow has one part from the motion in phase space and one part from the explicit time dependence, $\frac{d}{dt}g=dg(X_H)+\partial_tg$, and $dg(X_H)=X_H(g)=\{g,H\}$ by the definition of the bracket.
 
 The bracket formulation is the reason the bracket, and not the vector field, is the working object of Hamiltonian mechanics: a conserved quantity is a function whose bracket with the Hamiltonian vanishes, and the search for integrals is the search for the centraliser of $H$.
 
@@ -332,7 +332,7 @@ The bracket formulation is the reason the bracket, and not the vector field, is 
 $$
 \{\{u,v\},H\}=\{\{u,H\},v\}+\{u,\{v,H\}\} ,
 $$
-which is the Jacobi identity together with the Leibniz rule, says that the map $g\mapsto\{g,H\}$ is a derivation; both terms on the right vanish because $\{u,H\}=0$ and $\{v,H\}=0$. Hence $\{u,v\}$ is conserved. ∎
+which is the Jacobi identity together with the Leibniz rule, says that the map $g\mapsto\{g,H\}$ is a derivation; both terms on the right vanish because $\{u,H\}=0$ and $\{v,H\}=0$. Hence $\{u,v\}$ is conserved.
 
 **Corollary (the constants of motion form a Lie algebra).** The constants of the motion of $H$ are closed under the bracket, so they form a Lie subalgebra of $C^\infty(M)$, the centraliser of $H$. The bracket of two known integrals is a further integral, which may be a function of the integrals already known — as the three components of the angular momentum close on one another — or may be independent and enlarge the algebra.
 
@@ -352,7 +352,7 @@ The symplectic form fixes the flow but not the coordinates: a change of phase-sp
 - every Hamiltonian flow is carried to the flow of the pulled-back Hamiltonian, so that Hamilton's equations keep their form;
 - the Jacobian is symplectic, $(D\varphi)^{\mathsf T}\Omega(D\varphi)=\Omega$, with $\Omega$ the matrix of $\omega$, $\Omega_{i,n+j}=\delta_{ij}$ and $\Omega_{n+i,j}=-\delta_{ij}$.
 
-*Proof sketch.* Preservation of $\omega$ is the first clause, and it is equivalent to the preservation of the bracket because the bracket is $\omega(X_f,X_g)$ and the nondegeneracy of $\omega$ lets the brackets of the coordinate functions determine the form. A bracket-preserving map carries $X_H$ to $X_{\varphi^*H}$ and hence preserves Hamilton's equations, and conversely; and the matrix clause is the first clause differentiated at a point. ∎
+*Proof sketch.* Preservation of $\omega$ is the first clause, and it is equivalent to the preservation of the bracket because the bracket is $\omega(X_f,X_g)$ and the nondegeneracy of $\omega$ lets the brackets of the coordinate functions determine the form. A bracket-preserving map carries $X_H$ to $X_{\varphi^*H}$ and hence preserves Hamilton's equations, and conversely; and the matrix clause is the first clause differentiated at a point.
 
 **Theorem (generating functions).** Let $\varphi$ be a local canonical transformation whose graph is simply connected, and let $F_1$ be a function of the old and the new coordinates with
 
@@ -374,7 +374,7 @@ $$
 F_4(p,P) = F_1 + \sum_iQ^iP_i - \sum_iq^ip_i, \qquad q^i = -\frac{\partial F_4}{\partial p_i}, \qquad Q^i = \frac{\partial F_4}{\partial P_i} .
 $$
 
-*Proof sketch.* The graph of a canonical transformation carries the two symplectic potentials $\sum_i p_idq^i$ and $\sum_i P_idQ^i$, and their difference is closed because both differentiate to $\omega$ on the graph; the graph being simply connected, the difference is exact, $\sum_i p_idq^i-\sum_i P_idQ^i=dF_1$, and reading the differential in the independent variables $(q,Q)$ gives the two relations. The Legendre transforms eliminate the variables that are no longer independent, the invertibility of each transform being the regularity of the canonical map in that pair. ∎
+*Proof sketch.* The graph of a canonical transformation carries the two symplectic potentials $\sum_i p_idq^i$ and $\sum_i P_idQ^i$, and their difference is closed because both differentiate to $\omega$ on the graph; the graph being simply connected, the difference is exact, $\sum_i p_idq^i-\sum_i P_idQ^i=dF_1$, and reading the differential in the independent variables $(q,Q)$ gives the two relations. The Legendre transforms eliminate the variables that are no longer independent, the invertibility of each transform being the regularity of the canonical map in that pair.
 
 **Theorem (time-dependent generating functions).** If the generating function depends on the time, the transformation is canonical at each fixed $t$ and the new Hamiltonian is
 
@@ -384,7 +384,7 @@ $$
 
 for any of the four types $F$.
 
-*Proof.* Extend the exactness relation to include the time: on the graph the one-form $\sum_i p_idq^i-\sum_i P_idQ^i+(K-H)dt$ is exact with potential $F$, which is the statement $p=F_q$, $P=-F_Q$ and $K=H+F_t$ when $F$ is read in $(q,Q,t)$; the Legendre transforms carry the computation to the other types. ∎
+*Proof.* Extend the exactness relation to include the time: on the graph the one-form $\sum_i p_idq^i-\sum_i P_idQ^i+(K-H)dt$ is exact with potential $F$, which is the statement $p=F_q$, $P=-F_Q$ and $K=H+F_t$ when $F$ is read in $(q,Q,t)$; the Legendre transforms carry the computation to the other types.
 
 The Hamiltonian is therefore fixed only up to the partial time derivative of an arbitrary function of the coordinates, the momenta and the time, which is the ambiguity that the Hamiltonian carries in every formulation; requiring the derivative to vanish is what produces the Hamilton–Jacobi equation below.
 

@@ -6,9 +6,9 @@ The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}
 
 The construction is short and the consequences long. The product is $\mathbb{C}$-bilinear, associative and unital, so the space becomes an associative unital $\mathbb{C}$-algebra; a bilinear product is determined by its values on a basis, so the four basis elements carry all of it; and once the algebra is in place, its scalar structure, its centre, its generators and its presentation by relations are read off in turn.
 
-Two boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and what the four rules are to one another is *Relations Between the Four General Products* and *Comparison Between the Four General Products*. And the question of which base rings $\mathbb{B}$ admits, together with the reading of the same product with the real scalars, is *Biquaternions as an Algebra over $\mathbb{R}$*, where the two admissible bases and the failure of the quaternions are treated; the centre of $\mathbb{B}$ and the centrality criterion are §*The Scalars Are the Centre* below. What this article adds is the algebra as the product makes it.
+Two boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and what the four rules are to one another is *Relations Between the Four General Products* and *Comparison Between the Four General Products*. And the question of which base rings $\mathbb{B}$ admits, together with the reading of the same product with the real scalars, is *The Realification of the General Plain Algebra*, where the two admissible bases and the failure of the quaternions are treated; the centre of $\mathbb{B}$ and the centrality criterion are §*The Scalars Are the Centre* below. What this article adds is the algebra as the product makes it.
 
-The elements, the basis and the conjugations are *Biquaternions as a Vector Space over $\mathbb{C}$*. The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the tensor product is *Tensor Products of Algebras*, the presentation of an algebra by generators and relations is *Quotients of the Tensor Algebra*, and the anti-automorphism as an isomorphism onto the opposite algebra is *Opposite Algebras and Anti-Isomorphisms*. On the biquaternion side, the two-sided ideals and the simplicity of $\mathbb{B}$ are *Biquaternion Ideals and Peirce Decomposition*, the units and the invertibility criterion are *Introduction to the Remarkable Subspaces*, the zero divisors are *Zero Divisors of the General Plain Algebra*, the square of one element is *Biquaternion Square Roots of a General Element*, and the matrix model of the algebra is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*.
+The elements, the basis and the conjugations are *Biquaternions as a Vector Space over $\mathbb{C}$*. The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the tensor product is *Tensor Products of Algebras*, the presentation of an algebra by generators and relations is *Quotients of the Tensor Algebra*, and the anti-automorphism as an isomorphism onto the opposite algebra is *Opposite Algebras and Anti-Isomorphisms*. On the biquaternion side, the two-sided ideals and the simplicity of $\mathbb{B}$ are *Ideals and Peirce Decomposition of the General Plain Algebra*, the units and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*, the zero divisors are *Zero Divisors of the General Plain Algebra*, the square of one element is *Square Roots of a General Element in the General Plain Algebra*, and the matrix model of the algebra is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*.
 
 **Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = \sum_{k=1}^{3} Q_ke_k$, and $(\mathbf P,\mathbf Q) = \sum_k P_kQ_k$ is the complex bilinear dot product of the vector parts.
 
@@ -132,7 +132,7 @@ $$
 
 are unital algebra homomorphisms over $\mathbb{R}$ and have commuting images (*Tensor Products of Algebras*); the commuting of the images is the statement that the scalars are central, which is the centrality used in the next section. The second image is the real quaternion subspace $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 + \mathbb{R}e_1 + \mathbb{R}e_2 + \mathbb{R}e_3$, and on it the multiplication is the quaternion product of *Quaternion Algebra*.
 
-The multiplication is thus the $\mathbb{C}$-bilinear extension of the quaternion product, and $\mathbb{B}$ is the **complexification** of $\mathbb{H}$: one quaternion algebra, read with the complex scalars. This is the sense in which the name is exact. The real algebra of *Biquaternions as an Algebra over $\mathbb{R}$* carries the same multiplication as the complex algebra here; only the scalar system changes, and with it the dimension, which doubles.
+The multiplication is thus the $\mathbb{C}$-bilinear extension of the quaternion product, and $\mathbb{B}$ is the **complexification** of $\mathbb{H}$: one quaternion algebra, read with the complex scalars. This is the sense in which the name is exact. The real algebra of *The Realification of the General Plain Algebra* carries the same multiplication as the complex algebra here; only the scalar system changes, and with it the dimension, which doubles.
 
 ## The Scalars, the Centre and the Structure Map
 
@@ -172,7 +172,7 @@ $$
 
 **Proof.** The centre of a tensor product of algebras over a field is the tensor product of their centres, and $Z(\mathbb{C}) = \mathbb{C}$ while $Z(\mathbb{H}) = \mathbb{R}$. In coordinates, $[\tilde Q,e_1] = 2Q_3e_2 - 2Q_2e_3$ vanishes exactly when $Q_2 = Q_3 = 0$, and $[\tilde Q,e_2]$ vanishes exactly when $Q_1 = Q_3 = 0$, so centrality forces $Q_1 = Q_2 = Q_3 = 0$; conversely every $Q_0e_0$ is central because $i$ commutes with the units.
 
-The scalars cannot be enlarged further, because there is no room in the centre for more; which base rings are admissible, and why the quaternion factor cannot serve, is *Biquaternions as an Algebra over $\mathbb{R}$*, §*The Admissible Bases: $\mathbb{R}$, $\mathbb{C}$ and Not $\mathbb{H}$*.
+The scalars cannot be enlarged further, because there is no room in the centre for more; which base rings are admissible, and why the quaternion factor cannot serve, is *The Realification of the General Plain Algebra*.
 
 **Corollary.** The algebra is **central** over $\mathbb{C}$: the image of the structure map is the whole centre, so no scalar is lost and no non-scalar is admitted as a scalar. The centre is a subalgebra isomorphic to the field $\mathbb{C}$, and it is proper, the algebra being non-commutative.
 
@@ -180,7 +180,7 @@ The scalars cannot be enlarged further, because there is no room in the centre f
 
 ### Central Simplicity and the Absence of Division
 
-**Proposition.** $\mathbb{B}$ is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. This is *Biquaternion Ideals and Peirce Decomposition*, cited and not repeated. Since the algebra is also central, it is a **central simple** $\mathbb{C}$-algebra, the subject of *Central Simple Algebras and the Brauer Group*.
+**Proposition.** $\mathbb{B}$ is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. This is *Ideals and Peirce Decomposition of the General Plain Algebra*, cited and not repeated. Since the algebra is also central, it is a **central simple** $\mathbb{C}$-algebra, the subject of *Central Simple Algebras and the Brauer Group*.
 
 Being central simple of dimension four over the algebraically closed field $\mathbb{C}$, the algebra admits a model as the full algebra of $2 \times 2$ matrices over $\mathbb{C}$, which is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the module theory that model carries is *Modules over the General Plain Algebra of Biquaternions*. Nothing of the model is used here.
 
@@ -192,7 +192,7 @@ $$
 (e_0 + ie_1)(e_0 - ie_1) = e_0^2 - (ie_1)^2 = e_0 - i^2e_1^2 = e_0 - e_0 = 0
 $$
 
-vanishes with both factors non-zero, so the algebra has zero divisors and is not a division ring. Equivalently the element $e_0+ie_1$ is not a unit, the product of an element with its natural conjugate being scalar and vanishing exactly on the non-units; the group of units and the invertibility criterion are *Introduction to the Remarkable Subspaces*, and the zero divisors themselves are classified in *Zero Divisors of the General Plain Algebra*.
+vanishes with both factors non-zero, so the algebra has zero divisors and is not a division ring. Equivalently the element $e_0+ie_1$ is not a unit, the product of an element with its natural conjugate being scalar and vanishing exactly on the non-units; the group of units and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*, and the zero divisors themselves are classified in *Zero Divisors of the General Plain Algebra*.
 
 ## Generators and the Presentation
 
@@ -218,29 +218,11 @@ $$
 
 **Proof.** The relations hold on the basis by the table, so $E_1 \mapsto e_1$, $E_2 \mapsto e_2$ descends to a homomorphism from the quotient onto $\mathbb{B}$, which is surjective because the two generate. In the quotient every word in $E_1,E_2$ is a $\mathbb{C}$-combination of $1, E_1, E_2, E_1E_2$: the relation $E_1E_2 + E_2E_1 = 0$, read as $E_2E_1 = -E_1E_2$, moves every occurrence of $E_1$ to the left of every occurrence of $E_2$, and then $E_1^2 = E_2^2 = -1$ reduces the exponents of the two letters modulo two. The reduced words are $\pm 1, \pm E_1, \pm E_2, \pm E_1E_2$, so the quotient is at most four-dimensional, and a surjection from a space of dimension at most four onto the four-dimensional algebra $\mathbb{B}$ is an isomorphism (*Quotients of the Tensor Algebra*, for algebras presented by generators and relations).
 
-The algebra presented is the **quaternion algebra over $\mathbb{C}$**: the quaternion relations of *Quaternion Algebra*, with the base field enlarged from $\mathbb{R}$ to $\mathbb{C}$. This is the second reading of the name biquaternion, and it agrees with the first, the complexification of the previous section.
+The algebra presented is the **quaternion algebra over $\mathbb{C}$**: the quaternion relations of *Quaternion Algebra*, with the base field enlarged from $\mathbb{R}$ to $\mathbb{C}$. This is the second reading of the name biquaternion, and it agrees with the first, the complexification of §*The Multiplication as a Scalar Extension*.
 
 The relation that ties $e_3$ to the two generators is not redundant. Were the three imaginary units taken as generators with the pairwise relations $E_jE_k + E_kE_j = 0$ for $j \neq k$ and $E_k^2 = -1$ alone, the element $E_1E_2$ would remain independent of $1, E_1, E_2, E_3$: the three square relations and the three anticommutations do not force $E_1E_2$ into the span of the generators, and the algebra presented is eight-dimensional rather than four.
 
-## The Subalgebras and the Real Form
-
-### The Scalar Line
-
-The centre $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$ is a $\mathbb{C}$-subalgebra of $\mathbb{B}$, isomorphic to the field $\mathbb{C}$ and proper. It is the only scalar line the algebra has, by the preceding section, and it sits in every unital subalgebra, since a unital subalgebra contains the identity and hence every $\mathbb{C}$-multiple of it (*Unital Algebras*). A subalgebra need not be unital: the line $\mathbb{C}(e_1 + ie_2)$ is a subalgebra of $\mathbb{B}$ in which the product vanishes identically, because $(e_1 + ie_2)^2 = 0$.
-
-### The Quaternion Subalgebra and Its Imaginary
-
-The quaternion subspace $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 + \mathbb{R}e_1 + \mathbb{R}e_2 + \mathbb{R}e_3$ is closed under the product, each of the sixteen products of the table lying in $\{\pm e_0, \pm e_1, \pm e_2, \pm e_3\}$, so it is a real subalgebra of $\mathbb{B}$, and on it the multiplication is the quaternion product. It is not a $\mathbb{C}$-subalgebra, being closed under real scalars only. Since $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ as real vector spaces (*Biquaternions as a Vector Space over $\mathbb{C}$*), the subalgebra is a **real form** of $\mathbb{B}$: the real algebra whose complexification is $\mathbb{B}$ (*Real Forms and the Descent of an Algebra*).
-
-The real subspace $i\mathbb{H}_{\mathbb{B}} = \mathbb{R}(ie_0) + \mathbb{R}(ie_1) + \mathbb{R}(ie_2) + \mathbb{R}(ie_3)$ is a real subspace but not a $\mathbb{C}$-subspace, since $i\,(ie_1) = -e_1 \notin i\mathbb{H}_{\mathbb{B}}$, and it is **not** a subalgebra: the element $ie_1$ squares to
-
-$$
-(ie_1)^2 = i^2e_1^2 = (-1)(-e_0) = e_0 ,
-$$
-
-which lies outside $i\mathbb{H}_{\mathbb{B}}$. The two halves of the quaternion decomposition differ in this: one is a subalgebra and one is not.
-
-### The Subalgebra Generated by One Element
+## The Subalgebra Generated by One Element
 
 The subalgebra $\mathbb{C}[\tilde Q] = \mathbb{C}e_0 + \mathbb{C}\tilde Q + \mathbb{C}\tilde Q^2 + \cdots$ generated by one element is commutative and at most two-dimensional:
 
@@ -248,21 +230,9 @@ $$
 \tilde Q^2 = \bigl(Q_0^2 - (\mathbf Q,\mathbf Q)\bigr) + 2Q_0\mathbf Q \in \mathbb{C}e_0 + \mathbb{C}\tilde Q ,
 $$
 
-the developed square being that of *Biquaternion Square Roots of a General Element*. So $\mathbb{C}[\tilde Q] = \mathbb{C}e_0$ for central $\tilde Q$, and $\mathbb{C}[\tilde Q] = \mathbb{C}e_0 \oplus \mathbb{C}\tilde Q$ otherwise. In the second case the element $\tilde Q - Q_0e_0$ has square $-(\mathbf Q,\mathbf Q)e_0$, and the plane is read off from it: when $(\mathbf Q,\mathbf Q) \neq 0$ it is the algebra $\mathbb{C} \oplus \mathbb{C}$ of two copies of the field with coordinatewise multiplication, and when $(\mathbf Q,\mathbf Q) = 0$ it is the algebra of dual numbers $\mathbb{C}[t]/(t^2)$.
+the developed square being that of *Square Roots of a General Element in the General Plain Algebra*. So $\mathbb{C}[\tilde Q] = \mathbb{C}e_0$ for central $\tilde Q$, and $\mathbb{C}[\tilde Q] = \mathbb{C}e_0 \oplus \mathbb{C}\tilde Q$ otherwise. In the second case the element $\tilde Q - Q_0e_0$ has square $-(\mathbf Q,\mathbf Q)e_0$, and the plane is read off from it: when $(\mathbf Q,\mathbf Q) \neq 0$ it is the algebra $\mathbb{C} \oplus \mathbb{C}$ of two copies of the field with coordinatewise multiplication, and when $(\mathbf Q,\mathbf Q) = 0$ it is the algebra of dual numbers $\mathbb{C}[t]/(t^2)$.
 
-## The Other Three Products
-
-The comparison of the four general products settles which of them is a multiplication. The two sesquilinear products are conjugate-linear in their second argument, so neither can be the multiplication of a $\mathbb{C}$-algebra; the $\natural$-product is $\mathbb{C}$-bilinear, but it is not associative and it has an identity on the left only, so it is a bilinear product that is not the multiplication of an associative unital algebra (*Comparison Between the Four General Products*). **Exactly one of the four general products is the multiplication of an associative unital $\mathbb{C}$-algebra, and it is the general plain bilinear product.**
-
-The four are not unrelated, and the algebra determines all of them. Each is the multiplication with a conjugation applied in one or both slots:
-
-$$
-\tilde P^{\natural}\tilde Q = \natural(\tilde P)\,\tilde Q , \qquad
-\tilde P\tilde Q^{*} = \tilde P\,\natural(\bar{\tilde Q}) , \qquad
-\tilde P^{\natural}\tilde Q^{*} = \natural(\tilde P)\,\natural(\bar{\tilde Q}) ,
-$$
-
-where the complex conjugation $\bar{\cdot}$ conjugates the coefficients, ${}^{\natural}$ negates the vector units, the two commute, and $\tilde Q^{*} = \natural(\bar{\tilde Q}) = \bar{\tilde Q^{\natural}}$. The map ${}^{\natural}$ is a $\mathbb{C}$-linear anti-automorphism of $\mathbb{B}$, and $\bar{\cdot}$ is an automorphism of its underlying real algebra that is conjugate-linear over $\mathbb{C}$ (*The Group of Involutions*). Each of the three products is therefore the multiplication with one of these maps inserted in one or both slots, and this is the source of the properties the comparison tabulates: the reversed order in which the left multiplications of the $\natural$-product compose, and the conjugate-linearity of the two sesquilinear products in their second argument.
+A unital subalgebra contains the identity $e_0$ and hence every $\mathbb{C}$-multiple of it, so it contains the centre $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$, the only scalar line the algebra has; a subalgebra need not be unital, and the line $\mathbb{C}(e_1 + ie_2)$ is one, its product vanishing identically because $(e_1 + ie_2)^2 = 0$. The real subalgebras of $\mathbb{B}$, among them the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and its imaginary $i\mathbb{H}_{\mathbb{B}}$, are read with the real scalars in *The Realification of the General Plain Algebra* and *The Realification of the General Plain Algebra*.
 
 ## Summary
 
@@ -274,7 +244,7 @@ $$
 
 Its scalars enter through the structure map $\varphi(A) = Ae_0$, whose image is the scalar line and which is central; the algebra is the complexification of $\mathbb{H}$ by the tensor product of algebras; its centre is the scalar line, so it is central, simple and hence central simple; and it is not a division algebra, the product of $e_0 + ie_1$ and $e_0 - ie_1$ being zero. Two generators suffice, and the relations $e_1^2 = e_2^2 = -e_0$ and $e_1e_2 + e_2e_1 = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.
 
-The real quaternion subspace is a real subalgebra and a real form; its imaginary $i\mathbb{H}_{\mathbb{B}}$ is not a subalgebra and not a $\mathbb{C}$-subspace; and the subalgebra generated by one element is the plane spanned by $e_0$ and that element, a product of two copies of $\mathbb{C}$ when $(\mathbf Q,\mathbf Q) \neq 0$ and the dual numbers when $(\mathbf Q,\mathbf Q) = 0$. The other three of the four general products are the multiplication with a conjugation in one or both slots, which is why the comparison finds only one multiplication among them.
+The subalgebra generated by one element is the plane spanned by $e_0$ and that element, a product of two copies of $\mathbb{C}$ when $(\mathbf Q,\mathbf Q) \neq 0$ and the dual numbers when $(\mathbf Q,\mathbf Q) = 0$, and its real counterpart is *The Realification of the General Plain Algebra*. That exactly one of the four general products is a multiplication of an associative unital $\mathbb{C}$-algebra, and why the other three are not, is *Comparison Between the Four General Products*.
 
 ## Summary of Notation
 
@@ -288,10 +258,10 @@ The real quaternion subspace is a real subalgebra and a real form; its imaginary
 | $\varphi : \mathbb{C} \to Z(\mathbb{B})$, $A \mapsto Ae_0$ | the structure map of the complex algebra |
 | $i$, $J : \tilde Q \mapsto i\tilde Q$ | the central element of square $-1$, and the complex structure it defines |
 | $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$ | the centre, equal to the scalar line |
-| $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 + \mathbb{R}e_1 + \mathbb{R}e_2 + \mathbb{R}e_3$ | the quaternion subspace, a real subalgebra and a real form |
+| $\mathbb{H}_{\mathbb{B}} = \mathbb{R}e_0 + \mathbb{R}e_1 + \mathbb{R}e_2 + \mathbb{R}e_3$ | the quaternion subspace, the image of the second factor embedding |
 | ${}^{\natural}$, $\bar{\cdot}$ | the natural and the complex conjugation |
 | ${}^{*} = \bar{\cdot} \circ {}^{\natural} = \natural \circ \bar{\cdot}$ | the Hermitian conjugation |
-| $\tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$ | the product of an element with its natural conjugate, central and scalar |
+| $\tilde Q\tilde Q^{\natural} = \bigl(\sum_\mu Q_\mu^2\bigr)e_0$ | the product of an element with its natural conjugate, central and scalar |
 
 ## Further Reading
 

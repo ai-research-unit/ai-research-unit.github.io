@@ -34,7 +34,7 @@ $$
 
 of a self-adjoint and a skew-adjoint operator, and the two summands are the only such decomposition of $T$ when $2$ is invertible in $k$.
 
-*Proof.* The scalar $\tfrac{1}{2}$ lies in the fixed field $k = R^{\varsigma}$, so $\varsigma(\tfrac{1}{2}) = \tfrac{1}{2}$ and $(\tfrac{1}{2}T)^{\dagger} = \tfrac{1}{2}T^{\dagger}$; the adjoint of $\tfrac{1}{2}(T + T^{\dagger})$ is $\tfrac{1}{2}(T^{\dagger} + T)$, which is itself, and the adjoint of $\tfrac{1}{2}(T - T^{\dagger})$ is $\tfrac{1}{2}(T^{\dagger} - T)$, which is its negative. If $T = S + K$ with $S$ self-adjoint and $K$ skew-adjoint, then $T^{\dagger} = S - K$, so $S = \tfrac{1}{2}(T + T^{\dagger})$ and $K = \tfrac{1}{2}(T - T^{\dagger})$, which is the uniqueness. $\square$
+*Proof.* The scalar $\tfrac{1}{2}$ lies in the fixed field $k = R^{\varsigma}$, so $\varsigma(\tfrac{1}{2}) = \tfrac{1}{2}$ and $(\tfrac{1}{2}T)^{\dagger} = \tfrac{1}{2}T^{\dagger}$; the adjoint of $\tfrac{1}{2}(T + T^{\dagger})$ is $\tfrac{1}{2}(T^{\dagger} + T)$, which is itself, and the adjoint of $\tfrac{1}{2}(T - T^{\dagger})$ is $\tfrac{1}{2}(T^{\dagger} - T)$, which is its negative. If $T = S + K$ with $S$ self-adjoint and $K$ skew-adjoint, then $T^{\dagger} = S - K$, so $S = \tfrac{1}{2}(T + T^{\dagger})$ and $K = \tfrac{1}{2}(T - T^{\dagger})$, which is the uniqueness.
 
 **Remark (the decomposition is an involution splitting, and the summands are not ideals).** The theorem writes $B(A)$ as the sum of the two eigenspaces of the operator $T \mapsto T^{\dagger}$, for the eigenvalues $+1$ and $-1$, a direct sum because $2$ is invertible; but the summands are $k$-submodules and not ideals, and the projection $T \mapsto \tfrac{1}{2}(T \pm T^{\dagger})$ is $k$-linear but only $\varsigma$-semilinear over $R$; the whole difficulty of the subject is that the self-adjoint part is not closed under the product and the skew part is not either.
 
@@ -42,7 +42,7 @@ of a self-adjoint and a skew-adjoint operator, and the two summands are the only
 
 **Proposition (the normal operators).** For $T \in B(A)$ the following are equivalent: $T$ is normal; the two parts of $T$ commute, $[T + T^{\dagger}, T - T^{\dagger}] = 0$; and $h(Tx,Ty) = h(T^{\dagger}x,T^{\dagger}y)$ for all $x, y$.
 
-*Proof.* The equality $TT^{\dagger} = T^{\dagger}T$ is equivalent, by the decomposition, to the commutativity of the sum and the difference $T \pm T^{\dagger}$, which expands to $[T+T^{\dagger}, T-T^{\dagger}] = -2[T,T^{\dagger}]$. The last clause is $h(T^{\dagger}Tx,y) = h(TT^{\dagger}x,y)$, and by the nonsingularity of $h$ this is $T^{\dagger}T = TT^{\dagger}$. $\square$
+*Proof.* The equality $TT^{\dagger} = T^{\dagger}T$ is equivalent, by the decomposition, to the commutativity of the sum and the difference $T \pm T^{\dagger}$, which expands to $[T+T^{\dagger}, T-T^{\dagger}] = -2[T,T^{\dagger}]$. The last clause is $h(T^{\dagger}Tx,y) = h(TT^{\dagger}x,y)$, and by the nonsingularity of $h$ this is $T^{\dagger}T = TT^{\dagger}$.
 
 The proposition is the form-layer reason the spectral theorem is stated for normal operators: a normal operator is $A + \mathrm{i}B$ with $A, B$ commuting self-adjoint operators, and a commuting family of self-adjoint operators is what the definite spectral theorem diagonalises.
 
@@ -56,17 +56,17 @@ $$
 (ST + TS)^{\dagger} = \epsilon\delta\,(ST + TS) , \qquad (ST - TS)^{\dagger} = -\epsilon\delta\,(ST - TS) .
 $$
 
-*Proof.* By the anti-multiplicativity, $(ST)^{\dagger} = T^{\dagger}S^{\dagger} = \delta T \cdot \epsilon S = \epsilon\delta\,TS$, and $(TS)^{\dagger} = \epsilon\delta\,ST$. Adding and subtracting give the two assertions. $\square$
+*Proof.* By the anti-multiplicativity, $(ST)^{\dagger} = T^{\dagger}S^{\dagger} = \delta T \cdot \epsilon S = \epsilon\delta\,TS$, and $(TS)^{\dagger} = \epsilon\delta\,ST$. Adding and subtracting give the two assertions.
 
 **Corollary (the three product relations).** The anticommutator of two self-adjoint operators is self-adjoint, the commutator of two self-adjoint operators is skew-adjoint, the anticommutator of a self-adjoint and a skew-adjoint operator is skew-adjoint, their commutator is self-adjoint, the anticommutator of two skew-adjoint operators is self-adjoint, and their commutator is skew-adjoint.
 
-*Proof.* The six cases are the sign rule read at the four sign choices. $\square$
+*Proof.* The six cases are the sign rule read at the four sign choices.
 
 ### The Skew-Adjoint Part is a Lie Algebra
 
 **Theorem (the Lie algebra).** The skew-adjoint operators form a real Lie algebra under the commutator $[S,T] = ST - TS$, and in the definite complete case this Lie algebra is the Lie algebra of the unitary group $U(A,h)$.
 
-*Proof.* The commutator of two skew-adjoint operators is skew-adjoint by the sign rule at $\epsilon = \delta = -1$; the commutator is bilinear and alternating, and the Jacobi identity is the associativity of the product. For the second clause, in the definite complete case the exponential $e^{tS}$ of a skew-adjoint operator is unitary for every real $t$ by the next section, so the Lie algebra exponentiates into $U(A,h)$; conversely a unitary one-parameter group has skew-adjoint generator, obtained by differentiating $h(e^{tS}x, e^{tS}y) = h(x,y)$ at $t = 0$. $\square$
+*Proof.* The commutator of two skew-adjoint operators is skew-adjoint by the sign rule at $\epsilon = \delta = -1$; the commutator is bilinear and alternating, and the Jacobi identity is the associativity of the product. For the second clause, in the definite complete case the exponential $e^{tS}$ of a skew-adjoint operator is unitary for every real $t$ by the next section, so the Lie algebra exponentiates into $U(A,h)$; conversely a unitary one-parameter group has skew-adjoint generator, obtained by differentiating $h(e^{tS}x, e^{tS}y) = h(x,y)$ at $t = 0$.
 
 **Remark (what the Lie algebra is not).** The Lie algebra is real: multiplying a skew-adjoint operator by a scalar $\lambda$ gives a skew-adjoint operator only when $\varsigma(\lambda) = \lambda$, that is when $\lambda \in k$, so the Lie algebra is a Lie algebra over the fixed field $k$ and not an $R$-module of operators closed under scalars. Over the sesquilinear base every operator is $A + \mathrm{i}B$ with $A$ and $B$ self-adjoint, so the complexification of the skew-adjoint operators is the whole operator algebra; over the collapsed base the complexification is only the part they span, the difference between the two bases being the difference between $\mathfrak{u}(n)$ and $\mathfrak{so}(n)$ at the level of the scalar field. In both cases the passage from the Lie algebra to the unitary group is the passage from $k$ to the circle of the scalars of modulus one, exactly as for the scalar field.
 
@@ -80,7 +80,7 @@ $$
 
 that is, the circle product is commutative, it is $R$-bilinear, and it satisfies the Jordan identity.
 
-*Proof.* The anticommutator of two self-adjoint operators is self-adjoint by the sign rule at $\epsilon = \delta = +1$, so the circle product stays in the self-adjoint part; it is manifestly symmetric and bilinear. The Jordan identity is inherited from the associative law: it is a linearisation of $(ST)S^{2} = S(TS^{2})$ and holds in every algebra that is associative, which is the meaning of a special Jordan algebra. $\square$
+*Proof.* The anticommutator of two self-adjoint operators is self-adjoint by the sign rule at $\epsilon = \delta = +1$, so the circle product stays in the self-adjoint part; it is manifestly symmetric and bilinear. The Jordan identity is inherited from the associative law: it is a linearisation of $(ST)S^{2} = S(TS^{2})$ and holds in every algebra that is associative, which is the meaning of a special Jordan algebra.
 
 **Remark (the geometric reading).** The pair of structures is the standard pair attached to a group with an involution: the Lie algebra is the skew-adjoint part and the Jordan algebra the self-adjoint part, and the unitary group acts on the self-adjoint part, whose orbit at the identity is the symmetric space of the group. The reading of that space for the layer is the business of the geometry of the form and is not developed here.
 
@@ -94,11 +94,11 @@ $$
 (e^{S})^{\dagger} = e^{-S} = (e^{S})^{-1} .
 $$
 
-*Proof.* The series converges in the operator norm because the operator norm makes $B(A)$ a Banach algebra. The adjoint operation is continuous and additive, so $(e^{S})^{\dagger} = \sum (S^{\dagger})^{n}/n! = e^{S^{\dagger}} = e^{-S}$. The two series $e^{S}$ and $e^{-S}$ multiply to $e^{S - S} = 1$ because $S$ and $-S$ commute, so $e^{S}$ is invertible with inverse $e^{-S}$; since its adjoint is its inverse, it is unitary. The group law $e^{(s+t)S} = e^{sS}e^{tS}$ is the commutativity of $sS$ and $tS$. $\square$
+*Proof.* The series converges in the operator norm because the operator norm makes $B(A)$ a Banach algebra. The adjoint operation is continuous and additive, so $(e^{S})^{\dagger} = \sum (S^{\dagger})^{n}/n! = e^{S^{\dagger}} = e^{-S}$. The two series $e^{S}$ and $e^{-S}$ multiply to $e^{S - S} = 1$ because $S$ and $-S$ commute, so $e^{S}$ is invertible with inverse $e^{-S}$; since its adjoint is its inverse, it is unitary. The group law $e^{(s+t)S} = e^{sS}e^{tS}$ is the commutativity of $sS$ and $tS$.
 
 **Corollary (the infinitesimal characterisation).** Let the form be definite and the object complete. Then $S$ is skew-adjoint if and only if $t \mapsto e^{tS}$ is unitary for every real $t$.
 
-*Proof.* One implication is the theorem. For the other, suppose $e^{tS}$ is unitary for every real $t$; then $h(e^{tS}x, e^{tS}y) = h(x,y)$ for all $x,y$, and differentiating with respect to $t$ at $t = 0$ gives $h(Sx,y) + h(x,Sy) = 0$, that is $h(Sx,y) = h(x,-Sy)$; by the nonsingularity of $h$ this is $S^{\dagger} = -S$. $\square$
+*Proof.* One implication is the theorem. For the other, suppose $e^{tS}$ is unitary for every real $t$; then $h(e^{tS}x, e^{tS}y) = h(x,y)$ for all $x,y$, and differentiating with respect to $t$ at $t = 0$ gives $h(Sx,y) + h(x,Sy) = 0$, that is $h(Sx,y) = h(x,-Sy)$; by the nonsingularity of $h$ this is $S^{\dagger} = -S$.
 
 ### The Cayley Transform
 
@@ -110,7 +110,7 @@ $$
 
 is unitary, and it is the unique operator with $1 + U$ invertible and $S = (1 - U)(1 + U)^{-1}$.
 
-*Proof.* The factors $1 - S$ and $(1 + S)^{-1}$ commute, being functions of $S$; their adjoints are $(1 + S)^{\dagger} = 1 - S$ and $((1+S)^{-1})^{\dagger} = (1 - S)^{-1}$, so $U^{\dagger} = (1 - S)^{-1}(1 + S)$. Then $U^{\dagger}U = (1-S)^{-1}(1+S)(1-S)(1+S)^{-1} = (1-S)^{-1}(1-S)(1+S)(1+S)^{-1} = 1$, using the commutation, and similarly $UU^{\dagger} = 1$. For the inversion, $1 - U = 2S(1+S)^{-1}$ and $1 + U = 2(1+S)^{-1}$, whose ratio is $S$. $\square$
+*Proof.* The factors $1 - S$ and $(1 + S)^{-1}$ commute, being functions of $S$; their adjoints are $(1 + S)^{\dagger} = 1 - S$ and $((1+S)^{-1})^{\dagger} = (1 - S)^{-1}$, so $U^{\dagger} = (1 - S)^{-1}(1 + S)$. Then $U^{\dagger}U = (1-S)^{-1}(1+S)(1-S)(1+S)^{-1} = (1-S)^{-1}(1-S)(1+S)(1+S)^{-1} = 1$, using the commutation, and similarly $UU^{\dagger} = 1$. For the inversion, $1 - U = 2S(1+S)^{-1}$ and $1 + U = 2(1+S)^{-1}$, whose ratio is $S$.
 
 **Remark (why the Cayley transform is the algebraic form of the exponential).** The two constructions are the two ends of the same dictionary between the Lie algebra and the group: the exponential needs a topology and a complete norm, while the Cayley transform is algebraic and exists as soon as $1 + S$ is invertible. The transform is the form-layer analogue of the Cayley transform of a Hermitian operator and is the reason the skew-adjoint operators and the unitary operators of the layer can be called the same object with and without a scale.
 
@@ -126,7 +126,7 @@ $$
 
 so on a unital object $m_{x}$ is self-adjoint exactly when $x = x^{*}$ and skew-adjoint exactly when $x = -x^{*}$, and $R_{b}$ is self-adjoint exactly when $b = b^{*}$ and skew-adjoint exactly when $b = -b^{*}$.
 
-*Proof.* The adjoint formulas are those of *The Adjoint under a Hermitian Form*, §*The Multiplications*. On a unital object the map $x \mapsto m_{x}$ is injective, since $m_{x}(1) = x$, so $m_{x}^{\dagger} = m_{x}$ is $m_{x^{*}} = m_{x}$, that is $x^{*} = x$; the other three assertions are identical. $\square$
+*Proof.* The adjoint formulas are those of *The Adjoint under a Hermitian Form*, §*The Multiplications*. On a unital object the map $x \mapsto m_{x}$ is injective, since $m_{x}(1) = x$, so $m_{x}^{\dagger} = m_{x}$ is $m_{x^{*}} = m_{x}$, that is $x^{*} = x$; the other three assertions are identical.
 
 ### The Hermitian and the Skew Part of the Algebra
 
@@ -138,7 +138,7 @@ $$
 
 of a **Hermitian** element and a **skew** element, $m_{x}$ is the sum of the corresponding multiplications, and $m_{x}$ is normal exactly when the Hermitian and the skew parts of $x$ commute.
 
-*Proof.* The involution $*$ is an involution of the algebra, so the decomposition is the algebraic case of the decomposition of an operator and its two parts are invariant under $*$; the second clause is the additivity of $x \mapsto m_{x}$. For the last, $m_{x}$ is normal when $m_{x}m_{x^{*}} = m_{x^{*}}m_{x}$, which by the injectivity of $m$ is $xx^{*} = x^{*}x$; expanding $x$ in its Hermitian and skew parts gives $[\tfrac{1}{2}(x+x^{*}), \tfrac{1}{2}(x-x^{*})] = 0$. $\square$
+*Proof.* The involution $*$ is an involution of the algebra, so the decomposition is the algebraic case of the decomposition of an operator and its two parts are invariant under $*$; the second clause is the additivity of $x \mapsto m_{x}$. For the last, $m_{x}$ is normal when $m_{x}m_{x^{*}} = m_{x^{*}}m_{x}$, which by the injectivity of $m$ is $xx^{*} = x^{*}x$; expanding $x$ in its Hermitian and skew parts gives $[\tfrac{1}{2}(x+x^{*}), \tfrac{1}{2}(x-x^{*})] = 0$.
 
 **Remark (the element and the operator).** The proposition is the exact point where the involution of the algebra and the involution of the operators meet: for a Hermitian element $x$ the element $e^{\mathrm{i}x}$ is unitary when $\mathrm{i}$ lies in the base, while by the theorem $e^{m_{x}}$ is a unitary operator exactly when $m_{x}$ is skew-adjoint, that is when $x$ is skew; and the two exponentials agree on the left multiplications, $e^{m_{x}} = m_{e^{x}}$.
 
@@ -156,7 +156,7 @@ where $T^{*}$ is the companion adjoint. The transport of the two definitions is 
 
 **Theorem (the transport of the splitting).** With the notation above, $T$ is $h$-self-adjoint if and only if $JT$ is companion-self-adjoint, and $T$ is $h$-skew-adjoint if and only if $JT$ is companion-skew-adjoint.
 
-*Proof.* The equality $T = JT^{*}J$ is equivalent, after multiplying by $J$ on the left, to $JT = T^{*}J$, and the companion self-adjointness of $JT$ is $(JT)^{*} = T^{*}J^{*} = T^{*}J$, using the companion self-adjointness of $J$. The skew case is the same computation with the two sides negated. $\square$
+*Proof.* The equality $T = JT^{*}J$ is equivalent, after multiplying by $J$ on the left, to $JT = T^{*}J$, and the companion self-adjointness of $JT$ is $(JT)^{*} = T^{*}J^{*} = T^{*}J$, using the companion self-adjointness of $J$. The skew case is the same computation with the two sides negated.
 
 **Remark (the splitting is transported, the structure is not).** The signature rule is transported by the theorem: the $h$-self-adjoint operators are the $J$-self-adjoint operators of the bilinear layer, and the Lie and Jordan structures of the two halves are the companion ones with $J$ inserted. What is **not** transported is the spectral consequence: a $J$-self-adjoint operator of an indefinite form can have non-real spectrum, so the definite statements of the next article require the definiteness and cannot be read off from the transport alone.
 

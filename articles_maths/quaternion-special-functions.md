@@ -203,7 +203,7 @@ $$
 \tilde p^{1/n} = \exp\left(\frac{\tilde L}{n}\right) = \cos\frac{\lvert\tilde L\rvert}{n} + \omega \sin\frac{\lvert\tilde L\rvert}{n} = 1 + \frac{\tilde L}{n} - \frac{\lvert\tilde L\rvert^2}{2n^2} + O\left(\frac{1}{n^3}\right),
 $$
 
-so $n(\tilde p^{1/n} - 1) = \tilde L + O(1/n)$. $\square$
+so $n(\tilde p^{1/n} - 1) = \tilde L + O(1/n)$.
 
 **Corollary (the mean of one and a root).**
 
@@ -211,7 +211,7 @@ $$
 \lim_{n \to \infty}\left(\frac{1 + \tilde p^{1/n}}{2}\right)^n = \tilde p^{1/2}.
 $$
 
-**Proof.** By the expansion, $\frac{1+\tilde p^{1/n}}{2} = 1 + \frac{\tilde L/2}{n} + O(1/n^2)$, and the binomial limit gives the exponential of the first-order coefficient, which is $\exp(\tilde L/2) = \tilde p^{1/2}$. $\square$
+**Proof.** By the expansion, $\frac{1+\tilde p^{1/n}}{2} = 1 + \frac{\tilde L/2}{n} + O(1/n^2)$, and the binomial limit gives the exponential of the first-order coefficient, which is $\exp(\tilde L/2) = \tilde p^{1/2}$.
 
 **Corollary (the mean of several roots).** For $\tilde p_1, \dots, \tilde p_k \neq 0$,
 

@@ -39,7 +39,7 @@ $$
 \hat{\varepsilon}_\pm\!\cdot\!\hat{\varepsilon}_\mp = 1 , \qquad
 \hat{\varepsilon}_\pm\!\cdot\!\hat{\varepsilon}_\pm = 0 ,
 $$
-the dot product being the complex-bilinear one. The relation was verified on fifty random directions: with $\hat{\varepsilon}_1,\hat{\varepsilon}_2$ constructed independently for each, left multiplication by $\hat{\mathbf{k}}$ returns $\mp i\hat{\varepsilon}_\pm$ to $2\times10^{-16}$. The two signs are the two helicities, the two senses of rotation about the propagation axis. The companion photon article draws the representation-theoretic consequences — the helicity operator $\lambda = \hat{\mathbf{k}}\cdot\mathbf{S} = \tfrac{i}{2}\mathrm{ad}_{\hat{\mathbf{k}}}$, whose spectral values on the complexified vector part are $\{+1,0,-1\}$ and whose representative in $\mathbb{M}_+$ is $i\hat{\mathbf{k}}$, and the fact that the polarization *states* are not idempotents of $\mathbb{M}_+$ and are not elements of it, even though the helicity *observable* has its representative there. Here the relation is used as the algebraic definition of circular polarization and as the reason the polarization sums are geometric.
+the dot product being the complex-bilinear one. The two signs are the two helicities, the two senses of rotation about the propagation axis. The companion photon article draws the representation-theoretic consequences — the helicity operator $\lambda = \hat{\mathbf{k}}\cdot\mathbf{S} = \tfrac{i}{2}\mathrm{ad}_{\hat{\mathbf{k}}}$, whose spectral values on the complexified vector part are $\{+1,0,-1\}$ and whose representative in $\mathbb{M}_+$ is $i\hat{\mathbf{k}}$, and the fact that the polarization *states* are not idempotents of $\mathbb{M}_+$ and are not elements of it, even though the helicity *observable* has its representative there. Here the relation is used as the algebraic definition of circular polarization and as the reason the polarization sums are geometric.
 
 ### The polarization sum
 
@@ -47,7 +47,7 @@ For any two orthonormal vectors spanning the transverse plane, the completeness 
 $$
 \sum_{\lambda=1,2}\hat{\varepsilon}^{(\lambda)}_i\hat{\varepsilon}^{(\lambda)}_j = \delta_{ij} - \hat{k}_i\hat{k}_j ,
 $$
-and the circular pair obeys the same sum. The identity was verified on one hundred random directions with a maximum deviation of $6\times10^{-16}$; it is the statement that the two physical polarizations span exactly the $\hat{\mathbf{k}}$-orthogonal plane, and it is the reason the polarization sums in cross-section computations close. In the framework this projector is native: the orthogonal complement of $\hat{\mathbf{k}}$ inside the vector part of $\mathbb{M}_-$ is defined by the algebra's own biquaternion norm, and the companion photon article checks the same identity on the rational directions $(3,4,0)/5$ and $(1,2,2)/3$.
+and the circular pair obeys the same sum. In the framework this projector is native: the orthogonal complement of $\hat{\mathbf{k}}$ inside the vector part of $\mathbb{M}_-$ is defined by the algebra's own biquaternion norm, and the companion photon article checks the same identity on the rational directions $(3,4,0)/5$ and $(1,2,2)/3$.
 
 ### The coherence biquaternion and the Stokes parameters
 
@@ -205,7 +205,7 @@ $$
 \right] ,
 \qquad x = \frac{\hbar\omega}{mc^2} .
 $$
-Both were checked numerically. The differential formula was integrated over the sphere by a $4\times10^5$-point quadrature at five energies ($x = 0.01, 0.1, 0.5, 1, 5$), and the result agreed with the analytic total to a relative error of order $10^{-11}$ at every energy; the analytic total itself is the standard closed form and was used only as the comparison. The **Thomson limit** was checked separately: at $x = 10^{-4}$ the total is $8.3760\,r_e^2$ against $8\pi r_e^2/3 = 8.3776\,r_e^2$, so the Klein–Nishina cross-section tends to the Thomson value as the recoil vanishes, as it must. The energy scale that breaks the conformal invariance of the Thomson limit is the same $x$: the cross-section depends on the single dimensionless ratio $\hbar\omega/mc^2$, and only in its vanishing does the scale-free classical result return.
+The differential formula was integrated over the sphere by a $4\times10^5$-point quadrature at five energies ($x = 0.01, 0.1, 0.5, 1, 5$), and the result agreed with the analytic total to a relative error of order $10^{-11}$ at every energy; the analytic total itself is the standard closed form and was used only as the comparison. The **Thomson limit** was checked separately: at $x = 10^{-4}$ the total is $8.3760\,r_e^2$ against $8\pi r_e^2/3 = 8.3776\,r_e^2$, so the Klein–Nishina cross-section tends to the Thomson value as the recoil vanishes, as it must. The energy scale that breaks the conformal invariance of the Thomson limit is the same $x$: the cross-section depends on the single dimensionless ratio $\hbar\omega/mc^2$, and only in its vanishing does the scale-free classical result return.
 
 ### The high-energy limit
 
@@ -274,7 +274,7 @@ What the framework does **not** supply is the dynamics. The Thomson cross-sectio
 
 ## Summary
 
-The polarization algebra of photon–electron scattering in the biquaternion framework places the photon's polarization in the vector part of the material sector, the beam's coherence in the Hermitian sector, and the scattering geometry in the transverse projector of the material sector. The circular polarizations are the $\mp i$ eigenvectors of left multiplication by the propagation direction, $\hat{\mathbf{k}}\hat{\varepsilon}_\pm = \mp i\hat{\varepsilon}_\pm$, verified on fifty random directions to $2\times10^{-16}$; the polarization sum reproduces $\delta_{ij}-\hat{k}_i\hat{k}_j$, verified on a hundred directions to $6\times10^{-16}$; and the coherence biquaternion $\tilde{\rho} = \frac12(S_0e_0+i\mathbf{S}\cdot\tilde{e})\in\mathbb{M}_+$ has $N(\tilde{\rho}) = \frac14S_0^2(1-P^2)$, so that fully polarized light is the biquaternion-norm cone — the Poincaré sphere — and the interior is the partially polarized ball.
+The polarization algebra of photon–electron scattering in the biquaternion framework places the photon's polarization in the vector part of the material sector, the beam's coherence in the Hermitian sector, and the scattering geometry in the transverse projector of the material sector.
 
 Thomson scattering has the differential cross-section $d\sigma_T/d\Omega = r_e^2|\hat{\varepsilon}'\cdot\hat{\varepsilon}|^2 = r_e^2|\mathrm{Sc}(\tilde{\varepsilon}'^\dagger\tilde{\varepsilon})|^2$, whose outgoing-polarization sum is $r_e^2\sin^2\Xi$ (verified to $10^{-15}$) and whose unpolarized average is $r_e^2(1+\cos^2\theta)/2$, integrating to $\sigma_T = 8\pi r_e^2/3 = 0.66524587$ barn (verified to eleven decimals). The Mueller matrix transfers linear polarization with degree $P(\theta) = \sin^2\theta/(1+\cos^2\theta)$, equal to one at $90^\circ$ (verified at six angles), and does not convert circular to linear polarization.
 

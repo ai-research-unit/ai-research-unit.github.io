@@ -27,7 +27,7 @@ $$
 
 where the bracket on the right is the complex bilinear dot product of the value with the conjugate of the vector part of the third argument.
 
-*Proof.* The value $\mathbf{P}\times\overline{\mathbf{Q}}$ is pure vector, so the scalar term of $K$ drops and only the three vector terms remain, with the sign $\varepsilon_k=-1$ and the conjugation on the third argument. Verified on general elements.
+*Proof.* The value $\mathbf{P}\times\overline{\mathbf{Q}}$ is pure vector, so the scalar term of $K$ drops and only the three vector terms remain, with the sign $\varepsilon_k=-1$ and the conjugation on the third argument.
 
 **Proposition (the self-pairing is non-positive).** For all biquaternions,
 
@@ -38,7 +38,7 @@ $$
 
 and it vanishes exactly when the value of the block vanishes, that is exactly when $\tilde P\diamond\tilde Q=0$.
 
-*Proof.* The self-pairing of a pure vector $\mathbf{V}$ is $-\sum_kV_k\overline{V_k}=-|\mathbf{V}|^{2}$, a non-positive real number, and it vanishes exactly when $\mathbf{V}=0$. Verified on general elements.
+*Proof.* The self-pairing of a pure vector $\mathbf{V}$ is $-\sum_kV_k\overline{V_k}=-|\mathbf{V}|^{2}$, a non-positive real number, and it vanishes exactly when $\mathbf{V}=0$.
 
 **Remark (the value on the negative side).** The self-pairing is never positive, and it is strictly negative exactly on the nonzero values of the block. The values of the block lie in the vector subspace, which is the negative definite row of the form, so the block never carries a value on which the form is positive or null except the value zero. The pairing of the block with the form is therefore a map into the negative cone of the form, conjugate-linear in the third argument, and the relation of the block to the norm of its value is the statement $K(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)=-|\tilde P\diamond\tilde Q|^{2}$. The paired value is null exactly on the elements of square zero of the block, which are the elements whose vector part lies on the quadric cone of the diagonal of *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*: the self-pairing vanishes on $\tilde P\diamond\tilde Q$ exactly when $\mathbf{P}$ and $\overline{\mathbf{Q}}$ are $\mathbb{C}$-linearly dependent; in particular the diagonal self-pairing $K(\tilde Q\diamond\tilde Q,\tilde Q\diamond\tilde Q)$ vanishes exactly at the elements whose vector part is a complex multiple of a real vector, which are the square-zero elements of the block, and the self-pairing vanishes for every $\tilde Q$ only when $\tilde P$ is central.
 
@@ -53,11 +53,11 @@ $$
 
 the ten remaining pairs being zero.
 
-*Proof.* The sixteen products of the basis of the introduction to the block. Verified on the six nonzero pairs.
+*Proof.* The sixteen products of the basis of the introduction to the block.
 
 **Theorem (the Gram matrix).** The Gram matrix of the block on the sixteen basis pairs, with entries $K(e_\mu\diamond e_\nu,e_\alpha\diamond e_\beta)$, has rank $3$ over $\mathbb{C}$, and its radical has complex dimension $13$. Over $\mathbb{R}$ the induced form is negative semidefinite of rank $6$.
 
-*Proof.* The sixteen values span the vector subspace, of complex dimension $3$, and on that subspace the form $K$ is negative definite, of real signature $(0,6)$ by *The Krein Gram Matrix and the Restrictions of the Form*. The Gram matrix of a non-degenerate form restricted to a spanning set of complex dimension $3$ has rank $3$ over $\mathbb{C}$ and rank $6$ over $\mathbb{R}$; the radical consists of the linear relations among the sixteen values, of complex dimension $16-3=13$. Verified by computation of the sixteen-by-sixteen matrix, whose rank and radical dimensions are as displayed.
+*Proof.* The sixteen values span the vector subspace, of complex dimension $3$, and on that subspace the form $K$ is negative definite, of real signature $(0,6)$ by *The Krein Gram Matrix and the Restrictions of the Form*. The Gram matrix of a non-degenerate form restricted to a spanning set of complex dimension $3$ has rank $3$ over $\mathbb{C}$ and rank $6$ over $\mathbb{R}$; the radical consists of the linear relations among the sixteen values, of complex dimension $16-3=13$.
 
 **Remark (the radical of the Gram matrix).** The radical is spanned by the relations among the sixteen pairs, and it is not the radical of the form, which is zero on the whole algebra. It is the failure of the sixteen pairs to be independent: the ten vanishing pairs and the antisymmetry relations $e_\mu\diamond e_\nu=-e_\nu\diamond e_\mu$ generate it, and the form itself keeps its non-degeneracy on the span of the values. The same phenomenon is the degeneracy of the Gram matrix of a map and not of its form.
 
@@ -81,7 +81,7 @@ $$
 
 or the corresponding doubly conjugate-linear form according to the class, and it contains no other form of that class.
 
-*Proof.* Write $\beta$ with a coefficient matrix $G$, of sixteen complex entries in the homogeneous classes, and impose the displayed identity on the 64 triples of the coefficient basis; the condition is multilinear over $\mathbb{C}$ in each slot up to the conjugations of the class, so the coefficient basis suffices. The resulting linear system over $\mathbb{R}$ has a solution space of real dimension $2$ in each of the four classes, spanned by the central form above with coefficient $1$ and with coefficient $i$. The computation shows that every solution is supported on the entry $(0,0)$ alone, that is, depends only on the scalar coordinates of the two arguments. Verified on the coefficient basis in each of the four classes; the enlarged class below is checked on the 512 triples of the real basis, where the multilinearity is only real.
+*Proof.* Write $\beta$ with a coefficient matrix $G$, of sixteen complex entries in the homogeneous classes, and impose the displayed identity on the triples of the **real** basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, that is on the $8^{3}=512$ real triples. The identity is multilinear over $\mathbb{R}$ and not over $\mathbb{C}$, because the conjugation of the second slot of the block and the conjugations that define the class are not complex-linear; the four-element complex basis of each slot does not suffice, and a check reduced to its $4^{3}=64$ triples reports spurious solutions — the form $i\,(P_1\overline{Q_1}+P_2\overline{Q_2}+P_3\overline{Q_3})$, for instance, passes the $64$ triples and fails the ordinary triple $(e_1,ie_2,e_3)$. The linear system over $\mathbb{R}$ built on the real basis has a solution space of real dimension $2$ in each of the four classes, spanned by the central form above with coefficient $1$ and with coefficient $i$. The computation shows that every solution is supported on the entry $(0,0)$ alone, that is, depends only on the scalar coordinates of the two arguments.
 
 **Remark (the enlarged class is the sum of the four central lines).** If the class is enlarged to all real-bilinear complex-valued forms on the real space, of real dimension $128$, the invariant space has real dimension $8$, the direct sum of the four central lines of the theorem: the forms $a\,P_0Q_0+b\,P_0\overline{Q_0}+c\,\overline{P_0}Q_0+d\,\overline{P_0}\,\overline{Q_0}$ with $a,b,c,d\in\mathbb{C}$. Every invariant is central, and the enlargement adds the sums of one form of each class and no form outside the four lines. The reason is a vanishing forced on the real-bilinear class. Taking the third argument central in the displayed identity kills the right side and leaves $\beta(\tilde P\diamond\tilde Q,\tilde R)=0$ for a central $\tilde R$ and an arbitrary value, so a real-bilinear form vanishes as soon as its first argument is a pure vector and its second is central; taking the first argument central gives the mirror vanishing, on the value that varies in the second slot; and on the pure vectors alone the identity leaves only the zero form. The two scalar coordinates are therefore the only entries that survive.
 
@@ -95,9 +95,9 @@ or the corresponding doubly conjugate-linear form according to the class, and it
 
 **Proposition.** The trace form $\tau(\tilde P,\tilde Q)=\mathrm{Tr}(\tilde P\diamond\tilde Q)=2\,\mathrm{Sc}(\tilde P\diamond\tilde Q)$ vanishes identically on the block.
 
-*Proof.* The block is pure vector and the trace of a pure vector is zero; equivalently the scalar part is zero. Verified on general elements.
+*Proof.* The block is pure vector and the trace of a pure vector is zero; equivalently the scalar part is zero.
 
-**Remark (the block has no trace form).** Of the twelve operations, the ones that carry a non-degenerate trace form are the two general products and the symmetric parts of the two sesqualgebras; the block, being pure vector with a conjugate-linear slot, has none. The vanishing is the form side of the absence of a unit and of the pure-vector image.
+**Remark (the block has no trace form).** Of the twelve operations, the ones that carry a non-degenerate trace form are the eight general and symmetric parts, of the two algebras and of the two sesqualgebras alike; the block, being pure vector with a conjugate-linear slot, has none, and it shares that vanishing with the other three antisymmetric parts. The vanishing is the form side of the absence of a unit and of the pure-vector image.
 
 ## The Restriction to the Remarkable Subspaces
 

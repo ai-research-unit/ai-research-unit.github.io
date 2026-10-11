@@ -20,13 +20,13 @@ The involution does two things to the decomposition. It singles out the idempote
 
 **Proposition.** If $e$ is an idempotent then $e^{*}$ is an idempotent, so the involution permutes the idempotents, and the map $e \mapsto e^{*}$ is an involution of the set of idempotents whose fixed points are the Hermitian idempotents.
 
-**Proof.** Since $*$ is anti-multiplicative and of order two, $(e^{*})(e^{*}) = (ee)^{*} = e^{*}$; hence $e^{*}$ is idempotent, and applying the same computation to $e^{*}$ returns $e$. The fixed points are by definition the elements with $e^{*} = e$, which are the Hermitian idempotents. $\square$
+**Proof.** Since $*$ is anti-multiplicative and of order two, $(e^{*})(e^{*}) = (ee)^{*} = e^{*}$; hence $e^{*}$ is idempotent, and applying the same computation to $e^{*}$ returns $e$. The fixed points are by definition the elements with $e^{*} = e$, which are the Hermitian idempotents.
 
 ### The Idempotents of the Derived Operation
 
 **Theorem.** Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution $*$ and let $\star$ be the derived operation $x \star y = xy^{*}$. An element $e \in A$ satisfies $e \star e = e$ if and only if $e^{2} = e$ and $e^{*} = e$.
 
-**Proof.** One has $e \star e = ee^{*}$. If $ee^{*} = e$, applying the involution gives $(ee^{*})^{*} = e^{*}$, that is $e e^{*} = e^{*}$ because $(e^{*})^{*} = e$, so $e = ee^{*} = e^{*}$ and $e$ is Hermitian; then $e^{2} = ee^{*} = e$. Conversely if $e^{2} = e$ and $e^{*} = e$ then $e \star e = ee^{*} = e^{2} = e$. $\square$
+**Proof.** One has $e \star e = ee^{*}$. If $ee^{*} = e$, applying the involution gives $(ee^{*})^{*} = e^{*}$, that is $e e^{*} = e^{*}$ because $(e^{*})^{*} = e$, so $e = ee^{*} = e^{*}$ and $e$ is Hermitian; then $e^{2} = ee^{*} = e$. Conversely if $e^{2} = e$ and $e^{*} = e$ then $e \star e = ee^{*} = e^{2} = e$.
 
 **Remark.** The theorem is the reason the article is about Hermitian idempotents: the derived operation of the model has no $\star$-idempotent other than them. An idempotent of the algebra that the involution moves is an idempotent of the algebra product and not of the sesquilinear one. In $M_2(k)$ with the transpose, for instance, the element
 
@@ -52,9 +52,9 @@ $$
 (e_i A e_j)(e_k A e_l) \subseteq \delta_{jk}\, e_i A e_l .
 $$
 
-The **corners** $eAe$ and $fAf$ are subalgebras with units $e$ and $f$, and the **mixed spaces** $eAf$ and $fAe$ are bimodules over the two corners and not subalgebras.
+The **corners** $eAe$ and $fAf$ are subalgebras with units $e$ and $f$, and the **mixed spaces** $eAf$ and $fAe$ are bimodules over the two corners, carrying no unit and with identically vanishing product, so that they are subalgebras only in that degenerate sense.
 
-**Proof.** This is the Peirce decomposition of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, and it is recalled here in the notation of the present article. The expansion $a = (e + f)a(e + f) = eae + eaf + fae + faf$ gives the sum, the annihilation $e_{j}e_{k} = \delta_{jk}e_{j}$ gives the table, and the two corners are closed because $eAe \cdot eAe \subseteq e^{2}Ae^{2} = eAe$, with $e$ acting as their unit. $\square$
+**Proof.** This is the Peirce decomposition of *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, and it is recalled here in the notation of the present article. The expansion $a = (e + f)a(e + f) = eae + eaf + fae + faf$ gives the sum, the annihilation $e_{j}e_{k} = \delta_{jk}e_{j}$ gives the table, and the two corners are closed because $eAe \cdot eAe \subseteq e^{2}Ae^{2} = eAe$, with $e$ acting as their unit.
 
 ### The Role of the Unit
 
@@ -72,11 +72,11 @@ $$
 
 so the two corners $eAe$ and $fAf$ are carried to themselves and the involution exchanges the two mixed spaces, $(eAf)^{*} = fAe$ and $(fAe)^{*} = eAf$.
 
-**Proof.** For the complement, $f^{*} = (1 - e)^{*} = 1 - e^{*} = 1 - e = f$, so $f$ is Hermitian. For the spaces, $(e_i a e_j)^{*} = e_j^{*} a^{*} e_i^{*} = e_j a^{*} e_i$ by the anti-multiplicativity of $*$ and the Hermitian character of the two idempotents, and $a^{*}$ runs over $A$ with $a$, so $(e_i A e_j)^{*} = e_j A e_i$. $\square$
+**Proof.** For the complement, $f^{*} = (1 - e)^{*} = 1 - e^{*} = 1 - e = f$, so $f$ is Hermitian. For the spaces, $(e_i a e_j)^{*} = e_j^{*} a^{*} e_i^{*} = e_j a^{*} e_i$ by the anti-multiplicativity of $*$ and the Hermitian character of the two idempotents, and $a^{*}$ runs over $A$ with $a$, so $(e_i A e_j)^{*} = e_j A e_i$.
 
 **Corollary (the corners are $*$-subalgebras).** For a Hermitian idempotent the corners $eAe$ and $fAf$ are stable under the involution, so each is a $*$-subalgebra of $A$, and the restriction of $*$ to it is a $\varsigma$-semilinear involution.
 
-**Proof.** They are subalgebras by the classical theorem and $(eAe)^{*} = eAe$, $(fAf)^{*} = fAf$ by the exchange; the restriction of $*$ is additive, of order two, anti-multiplicative, and $\varsigma$-semilinear on the same scalars. $\square$
+**Proof.** They are subalgebras by the classical theorem and $(eAe)^{*} = eAe$, $(fAf)^{*} = fAf$ by the exchange; the restriction of $*$ is additive, of order two, anti-multiplicative, and $\varsigma$-semilinear on the same scalars.
 
 **Remark.** Writing $A_{ij} = e_i A e_j$, the theorem says $A_{ij}^{*} = A_{ji}$: the involution acts on the four spaces as the transposition of their two indices. This is the algebraic form of the statement that conjugation reverses the order of a product, read on the decomposition.
 
@@ -98,7 +98,7 @@ which is $fAe$ when $e$ is Hermitian, since then $f$ is too, and which need not 
 
 **Proposition.** For Hermitian idempotents, $ef = 0$ if and only if $fe = 0$.
 
-**Proof.** For Hermitian $e$ and $f$, $(ef)^{*} = f^{*}e^{*} = fe$, so $fe = (ef)^{*}$ and one of the two products vanishes exactly when the conjugate of the other does. $\square$
+**Proof.** For Hermitian $e$ and $f$, $(ef)^{*} = f^{*}e^{*} = fe$, so $fe = (ef)^{*}$ and one of the two products vanishes exactly when the conjugate of the other does.
 
 **Remark.** For Hermitian idempotents one has $e \star f = ef^{*} = ef$ and $f \star e = fe$, so the two notions of orthogonality, for the algebra product and for the derived product, coincide on Hermitian idempotents.
 
@@ -106,7 +106,7 @@ which is $fAe$ when $e$ is Hermitian, since then $f$ is too, and which need not 
 
 **Theorem.** Suppose $A$ associative and $2$ invertible in $R$, and let $e$ and $f$ be Hermitian idempotents. Then $e + f$ is an idempotent if and only if $ef = fe = 0$.
 
-**Proof.** If $ef = fe = 0$ then $(e + f)^{2} = e^{2} + ef + fe + f^{2} = e + f$, so $e + f$ is an idempotent, and this direction uses neither associativity nor $2$. Conversely if $(e + f)^{2} = e + f$ then $e^{2} + ef + fe + f^{2} = e + f$, that is $ef + fe = 0$. Multiplying that relation on the left by $e$ gives $ef + efe = 0$ and on the right by $e$ gives $efe + fe = 0$, whence $ef = fe = -efe$; then $ef = fe$ and $2ef = ef + fe = 0$. As $2$ is invertible, $ef = 0$, and $fe = ef = 0$. $\square$
+**Proof.** If $ef = fe = 0$ then $(e + f)^{2} = e^{2} + ef + fe + f^{2} = e + f$, so $e + f$ is an idempotent, and this direction uses neither associativity nor $2$. Conversely if $(e + f)^{2} = e + f$ then $e^{2} + ef + fe + f^{2} = e + f$, that is $ef + fe = 0$. Multiplying that relation on the left by $e$ gives $ef + efe = 0$ and on the right by $e$ gives $efe + fe = 0$, whence $ef = fe = -efe$; then $ef = fe$ and $2ef = ef + fe = 0$. As $2$ is invertible, $ef = 0$, and $fe = ef = 0$.
 
 **Remark.** Both hypotheses are used in the forward direction: the multiplication by $e$ on either side is associativity, and the deduction $ef = 0$ from $2ef = 0$ is the invertibility of $2$. The second cannot be dropped. Over $\mathbb{F}_{2}$ the Hermitian idempotents $e = E_{22}$ and $f = 1$ of $M_2(\mathbb{F}_{2})$ with the transpose satisfy $e + f = E_{11}$, an idempotent, because $1 = E_{11} + E_{22}$ in characteristic two, while $ef = E_{22} \neq 0$. The Hermitian hypothesis is carried for the rest of the section, where the equivalence of $ef = 0$ and $fe = 0$ does use it; the implication proved here does not.
 
@@ -122,7 +122,7 @@ $$
 eg = (ef)g = e(fg) = ef = e, \qquad ge = g(fe) = (gf)e = fe = e ,
 $$
 
-and $e \preceq g$; both chains use associativity. Finally $0 \preceq e$ because $0e = e0 = 0$, and $e \preceq 1$ because $e1 = 1e = e$. $\square$
+and $e \preceq g$; both chains use associativity. Finally $0 \preceq e$ because $0e = e0 = 0$, and $e \preceq 1$ because $e1 = 1e = e$.
 
 **Proposition.** If $e \preceq f$ then $g = f - e$ is a Hermitian idempotent orthogonal to $e$ with $f = e + g$. Conversely if $g$ is a Hermitian idempotent orthogonal to $e$ then $e \preceq e + g$.
 
@@ -132,7 +132,7 @@ $$
 g^{2} = (f - e)^{2} = f^{2} - fe - ef + e^{2} = f - e - e + e = f - e = g ,
 $$
 
-while $eg = ef - e^{2} = e - e = 0$ and $ge = fe - e^{2} = 0$. Conversely if $g$ is Hermitian and $eg = ge = 0$ then $e(e + g) = e^{2} + eg = e$ and $(e + g)e = e^{2} + ge = e$, so $e \preceq e + g$. $\square$
+while $eg = ef - e^{2} = e - e = 0$ and $ge = fe - e^{2} = 0$. Conversely if $g$ is Hermitian and $eg = ge = 0$ then $e(e + g) = e^{2} + eg = e$ and $(e + g)e = e^{2} + ge = e$, so $e \preceq e + g$.
 
 **Proposition (the join of orthogonal idempotents).** If $e$ and $f$ are orthogonal Hermitian idempotents then $e + f$ is their least upper bound for $\preceq$.
 
@@ -142,7 +142,7 @@ $$
 (e + f)g = eg + fg = e + f, \qquad g(e + f) = ge + gf = e + f ,
 $$
 
-and $e + f \preceq g$. Hence $e + f$ is the least upper bound. $\square$
+and $e + f \preceq g$. Hence $e + f$ is the least upper bound.
 
 **Remark.** The Hermitian idempotents carry the operations that a Boolean algebra carries: $0$ is the least element and $1$ the greatest, $f - e$ is the complement of $e$ inside $f$, and a pair of orthogonal idempotents has a join. The analogy stops short of the Boolean laws because two Hermitian idempotents need not be comparable or orthogonal, and the complement is available only inside a larger idempotent rather than in the algebra as a whole.
 
@@ -156,7 +156,7 @@ $$
 u \star v = uv^{*} = (eae)(eb^{*}e) = e\,(ae b^{*})\,e \in eAe ,
 $$
 
-and the corner is closed under the derived product; it is stable under $*$ and contains $e$. The two scalar rules are inherited from $A$, and the restriction of $*$ is an additive, anti-multiplicative involution of order two with the same $\varsigma$-semilinearity, so $eAe$ is a sesqualgebra. In it the element $e$ acts on the right, $u \star e = u e^{*} = ue = u$, and not on the left in general, so $e$ is a right $\star$-unit. The restricted juxtaposition is the product of the subalgebra $eAe$, whose unit is $e$, and the restricted $\star$ is by definition its derived operation. $\square$
+and the corner is closed under the derived product; it is stable under $*$ and contains $e$. The two scalar rules are inherited from $A$, and the restriction of $*$ is an additive, anti-multiplicative involution of order two with the same $\varsigma$-semilinearity, so $eAe$ is a sesqualgebra. In it the element $e$ acts on the right, $u \star e = u e^{*} = ue = u$, and not on the left in general, so $e$ is a right $\star$-unit. The restricted juxtaposition is the product of the subalgebra $eAe$, whose unit is $e$, and the restricted $\star$ is by definition its derived operation.
 
 **Remark.** The corner is an object of the same kind as the algebra it comes from, so the theory of this article applies to it in turn: its Hermitian idempotents are the elements of $eAe$ with $g^{2} = g$ and $g^{*} = g$, and its Hermitian elements are $H(eAe) = eAe \cap H(A)$.
 
@@ -178,13 +178,13 @@ $$
 u \star v = u v^{*} = e_i a\,(e_j e_l)\,b^{*} e_k = \delta_{jl}\, e_i a e_j b^{*} e_k ,
 $$
 
-and the last element lies in $e_i A e_k = A_{ik}$ because $e_j b^{*} e_k$ is an element of $A$. The ordinary table is the classical one of *Unital Algebras*. $\square$
+and the last element lies in $e_i A e_k = A_{ik}$ because $e_j b^{*} e_k$ is an element of $A$. The ordinary table is the classical one of *Unital Algebras*.
 
 ### The Products of the Derived Table
 
 **Corollary.** With the notation above: $A_{ij} \star A_{kl} = 0$ unless $j = l$; $A_{ij} \star A_{kj} \subseteq A_{ik}$; and $A_{ij} \star A_{ij} \subseteq A_{ii}$. In particular each diagonal corner is closed under $\star$, and the two mixed spaces annihilate in the reversed order, $A_{12} \star A_{21} = 0$, whereas $A_{12}A_{21} \subseteq A_{11}$ for the algebra product.
 
-**Proof.** The first statement is the general rule; the second is the rule with $l = j$; the third is the rule with $l = j$ and $k = i$. For the mixed spaces, $A_{12} \star A_{21} \subseteq \delta_{21}A_{11} = 0$, while $A_{12}A_{21} \subseteq \delta_{22}A_{11} = A_{11}$ in the ordinary table. $\square$
+**Proof.** The first statement is the general rule; the second is the rule with $l = j$; the third is the rule with $l = j$ and $k = i$. For the mixed spaces, $A_{12} \star A_{21} \subseteq \delta_{21}A_{11} = 0$, while $A_{12}A_{21} \subseteq \delta_{22}A_{11} = A_{11}$ in the ordinary table.
 
 **Remark (the reading).** The mechanism is the exchange: the involution swaps the two indices of the second factor and sends $A_{kl}$ to $A_{lk}$, and then the classical table is applied to the first factor and to that conjugate, its agreeing indices $j$ and $l$ now both on the right. The reflection is exactly the transposition of the table, and it is the mark that the conjugate-linear slot leaves on the decomposition.
 
@@ -212,7 +212,7 @@ $$
 (e_i A e_j) \star (e_k A e_l) = e_i A (e_j e_l) A e_k \subseteq \delta_{jl}\, e_i A e_k .
 $$
 
-The diagonal sum is closed under the product, since $e_i A e_i \cdot e_j A e_j \subseteq \delta_{ij}\, e_i A e_i$, and under $*$, and it contains $1 = \sum e_i$; the off-diagonal sum is carried into itself by multiplication on either side by the diagonal sum, because $e_i A e_i \cdot e_j A e_k \subseteq \delta_{ij}\, e_i A e_k$ with $j \neq k$, and symmetrically, so it is a two-sided bimodule over the diagonal sum. $\square$
+The diagonal sum is closed under the product, since $e_i A e_i \cdot e_j A e_j \subseteq \delta_{ij}\, e_i A e_i$, and under $*$, and it contains $1 = \sum e_i$; the off-diagonal sum is carried into itself by multiplication on either side by the diagonal sum, because $e_i A e_i \cdot e_j A e_k \subseteq \delta_{ij}\, e_i A e_k$ with $j \neq k$, and symmetrically, so it is a two-sided bimodule over the diagonal sum.
 
 **Remark.** The case $n = 2$ is the one-idempotent theorem read with $e_{1} = e$ and $e_{2} = f = 1 - e$, and the two statements are the same. There the off-diagonal sum is the two mixed spaces and its square lands in the diagonal sum, $e_1 A e_2 \cdot e_2 A e_1 \subseteq e_1 A e_1$ and $e_2 A e_1 \cdot e_1 A e_2 \subseteq e_2 A e_2$, the other products of two off-diagonal spaces being zero. For $n \geq 3$ that last statement fails: with three distinct indices $e_1 A e_2 \cdot e_2 A e_3 \subseteq e_1 A e_3$ is again off-diagonal, so only the bimodule statement survives in general. The family form is the one that a coordinate decomposition of a matrix algebra produces.
 

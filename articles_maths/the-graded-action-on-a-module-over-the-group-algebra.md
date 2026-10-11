@@ -19,7 +19,7 @@ satisfying $a\cdot(b\cdot m) = (a*b)\cdot m$, with the **homogeneity** $\mathcal
 
 **Theorem (the grading recapped).** The eigenspace decomposition $\mathcal{A} = \mathcal{A}^+\oplus\mathcal{A}^-$ makes $\mathcal{A}$ a $\mathbb{Z}/2$-graded Banach algebra: $\mathcal{A}^+\mathcal{A}^+\subseteq\mathcal{A}^+$, $\mathcal{A}^+\mathcal{A}^-\subseteq\mathcal{A}^-$, $\mathcal{A}^-\mathcal{A}^+\subseteq\mathcal{A}^-$ and $\mathcal{A}^-\mathcal{A}^-\subseteq\mathcal{A}^+$, and the operator $\mathrm{A}$ is the grading automorphism, $\mathrm{A}|_{\mathcal{A}^\pm} = \pm\mathrm{id}$, with $\mathrm{A}(a*b) = \mathrm{A}a*\mathrm{A}b$.
 
-**Proof.** This is the grading theorem of *The Signed Sandwich on the Group Algebra*, restated for the algebra alone; the multiplicativity of $\mathrm{A}$ is the multiplicativity of $\alpha$. $\square$
+**Proof.** This is the grading theorem of *The Signed Sandwich on the Group Algebra*, restated for the algebra alone; the multiplicativity of $\mathrm{A}$ is the multiplicativity of $\alpha$.
 
 **Remark (the two instances of the grading).** The grade involution is the sign character or a group automorphism of the examples of *The Signed Sandwich on the Group Algebra*; for the sign character $\mathcal{A}^\pm$ are the functions of the two sign classes, and for a group automorphism $\mathcal{A}^\pm$ are the symmetric and antisymmetric functions. The grading is a structure of the algebra and is fixed before any module is considered; the article uses it and does not rebuild it.
 
@@ -41,7 +41,7 @@ $$
 
 defines a second bounded module action of $\mathcal{A}$ on $M$, the **$\alpha$-twisted action**.
 
-**Proof.** Suppose the action is homogeneous. For $a = a_+ + a_-$ with $a_\pm\in\mathcal{A}^\pm$ and $m\in M^j$, homogeneity gives $a_+\cdot m\in M^j$ and $a_-\cdot m\in M^{\overline{j+1}}$, so $\varepsilon(a\cdot m) = (-1)^j a_+\cdot m + (-1)^{j+1}a_-\cdot m = (-1)^j(a_+ - a_-)\cdot m$; hence $\varepsilon(a\cdot\varepsilon m) = (-1)^j\varepsilon(a\cdot m) = (a_+ - a_-)\cdot m = \mathrm{A}a\cdot m = \alpha(a)\cdot m$. Conversely, if $\varepsilon(a\cdot)\varepsilon = \alpha(a)\cdot$ for all $a$, then for homogeneous $a$ of parity $i$ and $m\in M^j$ the identity $\varepsilon(a\cdot)\varepsilon = (-1)^i(a\cdot)$ read on $m$ gives $(-1)^j\varepsilon(a\cdot m) = (-1)^i a\cdot m$, that is $\varepsilon(a\cdot m) = (-1)^{i+j}a\cdot m$, so $a\cdot m\in M^{\overline{i+j}}$. The twisted assignment is a module action because it is $\varepsilon$-conjugate to the homogeneous one: $\varepsilon(a\cdot_\alpha(b\cdot_\alpha m)) = a\cdot\varepsilon(b\cdot_\alpha m) = (a*b)\cdot\varepsilon m$, hence $a\cdot_\alpha(b\cdot_\alpha m) = (a*b)\cdot_\alpha m$; it is bounded with the same constant as the given action. $\square$
+**Proof.** Suppose the action is homogeneous. For $a = a_+ + a_-$ with $a_\pm\in\mathcal{A}^\pm$ and $m\in M^j$, homogeneity gives $a_+\cdot m\in M^j$ and $a_-\cdot m\in M^{\overline{j+1}}$, so $\varepsilon(a\cdot m) = (-1)^j a_+\cdot m + (-1)^{j+1}a_-\cdot m = (-1)^j(a_+ - a_-)\cdot m$; hence $\varepsilon(a\cdot\varepsilon m) = (-1)^j\varepsilon(a\cdot m) = (a_+ - a_-)\cdot m = \mathrm{A}a\cdot m = \alpha(a)\cdot m$. Conversely, if $\varepsilon(a\cdot)\varepsilon = \alpha(a)\cdot$ for all $a$, then for homogeneous $a$ of parity $i$ and $m\in M^j$ the identity $\varepsilon(a\cdot)\varepsilon = (-1)^i(a\cdot)$ read on $m$ gives $(-1)^j\varepsilon(a\cdot m) = (-1)^i a\cdot m$, that is $\varepsilon(a\cdot m) = (-1)^{i+j}a\cdot m$, so $a\cdot m\in M^{\overline{i+j}}$. The twisted assignment is a module action because it is $\varepsilon$-conjugate to the homogeneous one: $\varepsilon(a\cdot_\alpha(b\cdot_\alpha m)) = a\cdot\varepsilon(b\cdot_\alpha m) = (a*b)\cdot\varepsilon m$, hence $a\cdot_\alpha(b\cdot_\alpha m) = (a*b)\cdot_\alpha m$; it is bounded with the same constant as the given action.
 
 **Corollary (the sign rule).** The grading involution interchanges the two actions,
 
@@ -51,7 +51,7 @@ $$
 
 so the twisted action is the given action transported by $\varepsilon$; in particular the two actions have the same operator norms and the same invariant subspaces under $\varepsilon$.
 
-**Proof.** The first identity is $\varepsilon\varepsilon(a\cdot\varepsilon m) = a\cdot\varepsilon m$; the second is the first with $a$ replaced by $\alpha(a)$ and $\varepsilon^2 = \mathrm{id}$. $\square$
+**Proof.** The first identity is $\varepsilon\varepsilon(a\cdot\varepsilon m) = a\cdot\varepsilon m$; the second is the first with $a$ replaced by $\alpha(a)$ and $\varepsilon^2 = \mathrm{id}$.
 
 ## The Twisted Action
 
@@ -63,7 +63,7 @@ $$
 
 and then the action factors through the even quotient $\mathcal{A}/\mathcal{A}^-$. In particular, if $\alpha = \mathrm{id}$ the two actions are equal for every module.
 
-**Proof.** For $a = a_+ + a_-$, $a\cdot m - a\cdot_\alpha m = a\cdot m - \alpha(a)\cdot m = 2\,a_-\cdot m$, because $\alpha(a) = a_+ - a_-$; the difference vanishes for all $a, m$ exactly when $\mathcal{A}^-\cdot M = 0$. The action then descends to the quotient by $\mathcal{A}^-$, which is the even part up to the identification. The case $\alpha = \mathrm{id}$ has $\mathcal{A}^- = 0$. $\square$
+**Proof.** For $a = a_+ + a_-$, $a\cdot m - a\cdot_\alpha m = a\cdot m - \alpha(a)\cdot m = 2\,a_-\cdot m$, because $\alpha(a) = a_+ - a_-$; the difference vanishes for all $a, m$ exactly when $\mathcal{A}^-\cdot M = 0$. The action then descends to the quotient by $\mathcal{A}^-$, which is the even part up to the identification. The case $\alpha = \mathrm{id}$ has $\mathcal{A}^- = 0$.
 
 **Proposition (the twisted action on the regular module).** On the regular module $M = \mathcal{A}$ with the grading $\mathcal{A} = \mathcal{A}^+\oplus\mathcal{A}^-$ and the action $a\cdot m = a*m$, the twisted action is
 
@@ -73,7 +73,7 @@ $$
 
 which is the signed left multiplication of *The Signed Left Multiplication on the Group Algebra* with the argument unchanged; the twisted action and the original action differ by the grade involution acting on the coefficient.
 
-**Proof.** $\varepsilon = \mathrm{A}$ on $M = \mathcal{A}$, so $a\cdot_\alpha m = \mathrm{A}(a*\mathrm{A}m) = \alpha(a)*m$, using $\mathrm{A}^2 = \mathrm{id}$. This is $\Lambda_{\alpha(a)}$ applied to $m$, that is the signed left multiplication by $\alpha(a)$. $\square$
+**Proof.** $\varepsilon = \mathrm{A}$ on $M = \mathcal{A}$, so $a\cdot_\alpha m = \mathrm{A}(a*\mathrm{A}m) = \alpha(a)*m$, using $\mathrm{A}^2 = \mathrm{id}$. This is $\Lambda_{\alpha(a)}$ applied to $m$, that is the signed left multiplication by $\alpha(a)$.
 
 **Remark (the action on $L^p(G)$).** On $M = L^p(G)$ with the convolution action of $L^1(G)$ and the grading by the sign character, $M^\pm = \{\xi : \varepsilon\xi = \pm\xi\}$ and the homogeneity is the computation $\varepsilon(a*m) = (\varepsilon a)*(\varepsilon m)$, which is the sign rule for convolution; the twisted action is $a\cdot_\alpha m = \alpha(a)*m$, and the two actions agree exactly when the odd part of $L^1(G)$ convolves $L^p(G)$ to zero. The analytic structure — a Banach module over a Banach algebra — is what the group algebra adds to the discrete group-algebra picture of *The Graded Action on a Module over a Topological Group*.
 
@@ -87,11 +87,11 @@ $$
 
 **Theorem (the fixed submodule is a module over the even part).** $M^+$ is a closed linear subspace and a module over the even subalgebra, $\mathcal{A}^+\cdot M^+\subseteq M^+$; the odd part satisfies $\mathcal{A}^+\cdot M^-\subseteq M^-$ and $\mathcal{A}^-\cdot M^+\subseteq M^-$, $\mathcal{A}^-\cdot M^-\subseteq M^+$; and $M^{\mathcal{A}^-}$ is a closed subspace contained in the common kernel of the odd operators.
 
-**Proof.** The even part is closed as the $1$-eigenspace of the bounded involution $\varepsilon$, and the inclusions are the homogeneity of the action; the invariant set is the intersection of the closed kernels of the bounded maps $m\mapsto a\cdot m$ for $a\in\mathcal{A}^-$, hence closed, and the identification with the difference set is the theorem on the agreement of the actions. $\square$
+**Proof.** The even part is closed as the $1$-eigenspace of the bounded involution $\varepsilon$, and the inclusions are the homogeneity of the action; the invariant set is the intersection of the closed kernels of the bounded maps $m\mapsto a\cdot m$ for $a\in\mathcal{A}^-$, hence closed, and the identification with the difference set is the theorem on the agreement of the actions.
 
 **Corollary (the invariants vanish when the odd part contains a unit).** If $\mathcal{A}^-$ contains a unit $u$ of $\mathcal{A}$, then $M^{\mathcal{A}^-} = \{0\}$; if $G$ is discrete and the odd part contains a point mass $\delta_h$ with $\alpha(\delta_h) = -\delta_h$, then every invariant element is annihilated by $\delta_h$, that is, $M^{\mathcal{A}^-} = \{m : \delta_h\cdot m = 0\}$.
 
-**Proof.** A unit $u\in\mathcal{A}^-$ acts by the invertible operator $m\mapsto u\cdot m$, whose kernel is $\{0\}$. For the point mass statement, the invariant set is the kernel of the single operator because $\mathcal{A}^-$ is spanned by the odd point masses and $\delta_h$ is a unit. $\square$
+**Proof.** A unit $u\in\mathcal{A}^-$ acts by the invertible operator $m\mapsto u\cdot m$, whose kernel is $\{0\}$. For the point mass statement, the invariant set is the kernel of the single operator because $\mathcal{A}^-$ is spanned by the odd point masses and $\delta_h$ is a unit.
 
 **Example (the trivial and the maximal grading).** If $\alpha = \mathrm{id}$ then $\mathcal{A}^- = 0$, $M^{\mathcal{A}^-} = M$, and the twisted action is the original one. If $M$ carries the trivial grading $M^- = 0$, every module action is homogeneous and the twisted action equals the original one on the even part of the algebra; the grading involution is the identity.
 

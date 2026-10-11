@@ -16,7 +16,7 @@ Nothing analytic and nothing geometric is used. The vector bundles are topologic
 
 **Proposition.** The isomorphism classes of $G$-bundles over $X$ form a commutative monoid $\mathrm{Vect}_G(X)$ under direct sum, with the trivial bundle $X\times\mathbb{C}$ as unit; a $G$-bundle is trivial as an equivariant bundle exactly when it has an equivariant trivialisation, which is a strictly stronger condition than the existence of a trivialisation of the underlying bundle.
 
-*Proof.* Direct sum is associative and commutative up to canonical isomorphism compatible with the action, and the pullback along a $G$-map is a monoid homomorphism; the last statement is the definition of an equivariant trivialisation, and the standard example is the product bundle $X\times V$ with a non-trivial representation of $G$ on the fibre $V$, trivial as a bundle and non-trivial as an equivariant bundle. $\square$
+*Proof.* Direct sum is associative and commutative up to canonical isomorphism compatible with the action, and the pullback along a $G$-map is a monoid homomorphism; the last statement is the definition of an equivariant trivialisation, and the standard example is the product bundle $X\times V$ with a non-trivial representation of $G$ on the fibre $V$, trivial as a bundle and non-trivial as an equivariant bundle.
 
 ### The Grothendieck Group and the Representation Ring
 
@@ -36,7 +36,7 @@ the Grothendieck group of the finite-dimensional complex representations of $G$,
 
 **Theorem.** $K_G^0$ is a contravariant functor on the $G$-spaces: an equivariant map $f : X \to Y$ gives the pullback $f^* : K_G^0(Y)\to K_G^0(X)$, functorially, and $K_G^0(\mathrm{pt}) = R(G)$. The tensor product of bundles makes $K_G^0(X)$ a commutative ring and a module over $R(G)$; the module structure is the pullback along $X\to\mathrm{pt}$, and the ring is the equivariant analogue of the ordinary $K^0$ of *Topological K-Theory*.
 
-*Proof.* The pullback of a bundle along a $G$-map is a $G$-bundle, and the pullback is functorial and preserves direct sums, hence descends to the Grothendieck groups; the tensor product is bilinear and respects the relations, giving the ring and the module structure. $\square$
+*Proof.* The pullback of a bundle along a $G$-map is a $G$-bundle, and the pullback is functorial and preserves direct sums, hence descends to the Grothendieck groups; the tensor product is bilinear and respects the relations, giving the ring and the module structure.
 
 The value at a point is the representation ring, and the whole theory is thus a family of rings and modules over $R(G)$: this is the sense in which the equivariant $K$-theory contains the representation theory of the group, and it is why the theory is not determined by the ordinary $K$-theory of the underlying space.
 
@@ -60,7 +60,7 @@ $$
 
 for every compact $G$-space $X$, periodic of period two; the isomorphism is the multiplication by the Bott class of the equivariant line bundle over $\mathbb{P}^1_{\mathbb{C}} = S^2$ of the canonical line bundle, and it is equivariant for the natural action of $G$ on $S^2$, so the periodicity of the ordinary theory of *Topological K-Theory* holds with all the operators acting equivariantly.
 
-*Proof.* The clutching construction of *Topological K-Theory* classifies the bundles over $\Sigma X_+$ by the bundles over $X$ up to an equivalence given by a loop, and the Bott class of the canonical line bundle over $S^2$ provides the periodicity element; the construction is natural and the action of $G$ on $S^2$ commutes with it, so the resulting isomorphism is equivariant. $\square$
+*Proof.* The clutching construction of *Topological K-Theory* classifies the bundles over $\Sigma X_+$ by the bundles over $X$ up to an equivalence given by a loop, and the Bott class of the canonical line bundle over $S^2$ provides the periodicity element; the construction is natural and the action of $G$ on $S^2$ commutes with it, so the resulting isomorphism is equivariant.
 
 ### The Exact Sequence
 
@@ -72,7 +72,7 @@ $$
 
 the equivariant form of the exact sequence of *Topological K-Theory*, the last map returning to the first term; and for a closed subgroup $H \leq G$ the induction and restriction functors relate $K_G^*$ and $K_H^*$ in a six-term sequence. The sequence is the one that makes the equivariant $K$-theory computable on the equivariant cell attachments of *Equivariant Homotopy Theory*.
 
-*Proof.* The six-term sequence is the standard exact sequence of a generalised cohomology theory and a pair, with the periodicity identifying the degrees; the induction–restriction sequence is the equivariant form of the classical one. $\square$
+*Proof.* The six-term sequence is the standard exact sequence of a generalised cohomology theory and a pair, with the periodicity identifying the degrees; the induction–restriction sequence is the equivariant form of the classical one.
 
 The exact sequence is the computational engine of the theory: the equivariant $K$-groups of a $G$-CW complex are computed cell by cell, and the induction functor $K_H^*\to K_G^*$ together with the orbit decomposition of *Equivariant Homotopy Theory* reduces the computation to the representation rings of the isotropy groups.
 
@@ -88,7 +88,7 @@ $$
 
 with the multiplication given by the tensor product and the decomposition into irreducibles; it has an involution induced by the dual representation, and its complexification is the ring of class functions. For a compact Lie group the same description holds with the irreducible representations of the compact group, and for the circle $R(S^1) = \mathbb{Z}[z,z^{-1}]$.
 
-*Proof.* The Grothendieck group of the representations is free on the irreducibles by the semisimplicity of the group algebra of a finite group, and the tensor product of the representations decomposes into irreducibles; the identification with the class functions is the character theory of *Character Theory*, and the circle case is the Fourier decomposition. $\square$
+*Proof.* The Grothendieck group of the representations is free on the irreducibles by the semisimplicity of the group algebra of a finite group, and the tensor product of the representations decomposes into irreducibles; the identification with the class functions is the character theory of *Character Theory*, and the circle case is the Fourier decomposition.
 
 So the coefficient ring of the equivariant $K$-theory is the representation ring, and its augmentation ideal $I = \ker(\varepsilon : R(G)\to\mathbb{Z})$ with $\varepsilon$ the dimension is the ideal that the completion theorem completes.
 
@@ -101,7 +101,7 @@ So the coefficient ring of the equivariant $K$-theory is the representation ring
 3. **The trivial action.** If $G$ acts trivially on $X$, then $K_G^0(X)\cong K^0(X)\otimes_{\mathbb{Z}} R(G)$ as a ring, the fibre contributing the ordinary $K$-theory of the space and the group contributing the representation ring.
 4. **The point with a group action.** The general point is $K_G^0(\mathrm{pt}) = R(G)$; for the orbit $G/H$ the point is the case of the first item, and the whole theory is assembled from the representation rings of the isotropy groups by the exact sequences.
 
-*Proof.* The first statement is the equivalence between $G$-bundles on $G/H$ and representations of $H$, by evaluation at the coset $H$; the second is the descent of the equivariant bundles to the quotient for a free action, which is the bundle version of the homotopy equivalence $X_G\simeq X/G$ of *Equivariant Cohomology*; the third is the product decomposition of the equivariant bundles when the action is trivial. $\square$
+*Proof.* The first statement is the equivalence between $G$-bundles on $G/H$ and representations of $H$, by evaluation at the coset $H$; the second is the descent of the equivariant bundles to the quotient for a free action, which is the bundle version of the homotopy equivalence $X_G\simeq X/G$ of *Equivariant Cohomology*; the third is the product decomposition of the equivariant bundles when the action is trivial.
 
 These four computations, with the six-term sequence and the orbit decomposition, compute the equivariant $K$-theory of a $G$-CW complex from the representation rings of its isotropy groups, which is the strategy of the theory in practice.
 
@@ -117,13 +117,13 @@ $$
 
 the maps being the natural comparison map followed by completion, and the isomorphism is natural in the equivariant map. Equivalently, the Atiyah–Segal completion theorem identifies the Borel model of $K$-theory with the $I$-adic completion of the equivariant theory.
 
-*Proof sketch.* The theorem is proved by a comparison of the Atiyah–Hirzebruch spectral sequences of the two theories, or by an induction over the skeleta of the $G$-CW complex with the induction functors and the completion of the representation rings of the isotropy groups; the statement is quoted from the literature, and the proof uses the exact sequences and the periodicity developed above with the spectral sequence of *The Leray–Serre Spectral Sequence* for the Borel fibration of *Equivariant Cohomology*. $\square$
+*Proof sketch.* The theorem is proved by a comparison of the Atiyah–Hirzebruch spectral sequences of the two theories, or by an induction over the skeleta of the $G$-CW complex with the induction functors and the completion of the representation rings of the isotropy groups; the statement is quoted from the literature, and the proof uses the exact sequences and the periodicity developed above with the spectral sequence of *The Leray–Serre Spectral Sequence* for the Borel fibration of *Equivariant Cohomology*.
 
 ### The Relation to Borel Cohomology
 
 **Corollary.** The completion theorem is the $K$-theoretic analogue of the identification of the Borel cohomology of *Equivariant Cohomology* with the cohomology of the homotopy quotient: the equivariant theory computed internally, from the representation rings and the exact sequences, agrees after completion with the theory computed externally from the single space $X_G$. For a free action the completion is unnecessary and the theorem reduces to $K_G^*(X)\cong K^*(X/G)$; for the trivial action it reduces to $K^*(X)\otimes R(G)$ completed at $I$, which is $K^*(X)\otimes \mathbb{Z} = K^*(X)$ in the connected case, consistent with the product formula.
 
-*Proof.* Apply the theorem to the two extreme cases, using the free-action and trivial-action computations above and the fact that the completion of $R(G)$ at the augmentation ideal is $\mathbb{Z}$ for a connected compact Lie group. $\square$
+*Proof.* Apply the theorem to the two extreme cases, using the free-action and trivial-action computations above and the fact that the completion of $R(G)$ at the augmentation ideal is $\mathbb{Z}$ for a connected compact Lie group.
 
 The completion theorem is the reason the Borel model is the operative definition of equivariant $K$-theory in the applications: it says that the Borel construction computes the equivariant theory up to a completion that is invisible on the free part, and it makes the equivariant $K$-theory computable by the ordinary $K$-theory of a single space.
 
@@ -147,7 +147,7 @@ $$
 
 with $W$ the Weyl group of $G$; for the torus $W$ acts trivially and the Chern character is the isomorphism $K_T^0(X)\otimes\mathbb{Q}\cong H_T^{\mathrm{even}}(X;\mathbb{Q})$. The theorem is the equivariant refinement of the Chern character isomorphism of *Topological K-Theory* and the bridge between the equivariant $K$-theory of this article and the equivariant cohomology of *Equivariant Cohomology*.
 
-*Proof.* The ordinary Chern character is a rational isomorphism, and the equivariance restricts it to the invariants under the action of the Weyl group on the Borel cohomology; the statement is quoted, and it is the equivariant form of the Chern character theorem. $\square$
+*Proof.* The ordinary Chern character is a rational isomorphism, and the equivariance restricts it to the invariants under the action of the Weyl group on the Borel cohomology; the statement is quoted, and it is the equivariant form of the Chern character theorem.
 
 ### The Localization Theorem
 
@@ -159,7 +159,7 @@ $$
 
 In particular the equivariant $K$-theory of a torus action is determined by the fixed set, and the Euler classes of the normal bundles are the localization denominators. The theorem is the $K$-theoretic counterpart of the localization theorem of *Equivariant Cohomology* and the tool by which the equivariant index is computed from the fixed set in *The Atiyah–Singer Index Theorem and K-Theory*.
 
-*Proof.* The localization is proved by the equivariant Bott periodicity and the exact sequence of the pair $(X, X\smallsetminus F)$, in which the composite of the restriction to the fixed set and the Euler class of the normal bundle is an isomorphism after inverting the classes; the statement is quoted. $\square$
+*Proof.* The localization is proved by the equivariant Bott periodicity and the exact sequence of the pair $(X, X\smallsetminus F)$, in which the composite of the restriction to the fixed set and the Euler class of the normal bundle is an isomorphism after inverting the classes; the statement is quoted.
 
 ## Examples
 

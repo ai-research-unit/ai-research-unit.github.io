@@ -229,7 +229,7 @@ and its expansion is contracted by precisely the theorem above: each term of the
 
 **Established (algebra).**
 - The mode operators generate the four-real-dimensional subalgebra $\mathcal{A}_{\mathrm{tr}} = \mathrm{span}_{\mathbb{R}}\{e_0,ie_1,e_2,ie_3\}\cong\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, a real form of $\mathbb{B}$; it is closed under multiplication, and the vacuum projector lies in it.
-- The one-mode Wick identity $\tilde a\tilde a^\dagger = \,:\tilde a\tilde a^\dagger:\,+\langle\tilde a\tilde a^\dagger\rangle_0 e_0$, with $:\tilde a\tilde a^\dagger:\,=-\tilde N_{\mathrm{tr}}$ and $\langle\tilde a\tilde a^\dagger\rangle_0=1$, holds as an identity in $\mathbb{B}$, and every $2m$-point one-mode contraction equals the signed sum over complete pairings. All values in the table were recomputed directly.
+- The one-mode Wick identity $\tilde a\tilde a^\dagger = \,:\tilde a\tilde a^\dagger:\,+\langle\tilde a\tilde a^\dagger\rangle_0 e_0$, with $:\tilde a\tilde a^\dagger:\,=-\tilde N_{\mathrm{tr}}$ and $\langle\tilde a\tilde a^\dagger\rangle_0=1$, holds as an identity in $\mathbb{B}$, and every $2m$-point one-mode contraction equals the signed sum over complete pairings.
 - The fermionic sign is implemented by $(-1)^F=ie_3\in\mathcal{A}_{\mathrm{tr}}$, with $(-1)^F\tilde\Upsilon_1(-1)^F=-\tilde\Upsilon_1$.
 
 **Standard, and transcribed.**

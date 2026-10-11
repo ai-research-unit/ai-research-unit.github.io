@@ -165,7 +165,7 @@ The counterpart statement in the biquaternion algebra is different in kind. Ther
 
 The set of idempotents of $\mathbb{H}_{\mathbb{D}}$ is the four-point set $\{0, \tilde\Pi_1, \tilde\Pi_2, 1\}$, of real dimension $0$. It is a discrete subset of the centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, whose real dimension is $2$; the four points are its extremal points, and they are exactly the idempotents that the two-dimensional algebra $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ possesses.
 
-This is the sharpest form of the rigidity noted in the introduction. In $\mathbb{B}$ the non-trivial idempotents form a real four-dimensional family with a two-dimensional boundary stratum inherited from the roots of $-1$; in $\mathbb{H}_{\mathbb{D}}$ the corresponding set has collapsed to two isolated points. The collapse is a consequence of the classification theorem: because the algebra is a product of two division algebras, its idempotent set is finite.
+This is the sharpest form of the rigidity noted in the introduction. In $\mathbb{B}$ the non-trivial idempotents form a real four-dimensional manifold whose two-dimensional real locus is the sphere of Hermitian idempotents, inherited from the real roots of $-1$; in $\mathbb{H}_{\mathbb{D}}$ the corresponding set has collapsed to two isolated points. The collapse is a consequence of the classification theorem: because the algebra is a product of two division algebras, its idempotent set is finite.
 
 ## Summary
 

@@ -16,11 +16,11 @@ The article completes the underlying space, extends the product and the twisted 
 
 **Proposition (the completion of the normed space).** Let $A$ be a normed $\mathbb{K}$-space. Then there is a complete normed $\mathbb{K}$-space $\widehat{A}$ and a linear isometry $\iota : A \to \widehat{A}$ with dense image, unique up to isometric isomorphism; every uniformly continuous map from $A$ into a complete Hausdorff uniform space extends uniquely to $\widehat{A}$.
 
-*Proof.* This is the construction of *Normed and Banach Spaces*, §*Quotients, Direct Sums and Completion*: the completion of the metric space $A$ with the extended vector operations, or equivalently the space of Cauchy sequences modulo the null sequences, and the universal property is that of a completion. $\square$
+*Proof.* This is the construction of *Normed and Banach Spaces*, §*Quotients, Direct Sums and Completion*: the completion of the metric space $A$ with the extended vector operations, or equivalently the space of Cauchy sequences modulo the null sequences, and the universal property is that of a completion.
 
 **Proposition (the completion is blind to the closure of zero).** Let $A$ be a topological sesqualgebra with the closure of zero $\overline{\{0\}}$ and let $q : A \to A/\overline{\{0\}}$ be the Hausdorff quotient. Then the completion of $A$ is the completion of $A/\overline{\{0\}}$, and $\iota$ factors as $q$ followed by the injective completion map of the Hausdorff quotient. In the normed case the space is already Hausdorff, $\overline{\{0\}} = \{0\}$, and the statement is the identity; it belongs to the general layer and is quoted here for completeness.
 
-*Proof.* This is the proposition of *The Completion Operator*, §*The Completion* applied to the additive uniform structure, which the sesqualgebra carries unchanged, and to the definition of the completion of a uniform space; the quotient $A/\overline{\{0\}}$ is Hausdorff, by *Topological Sesqualgebras*, §*The Closure of Zero*. $\square$
+*Proof.* This is the proposition of *The Completion Operator*, §*The Completion* applied to the additive uniform structure, which the sesqualgebra carries unchanged, and to the definition of the completion of a uniform space; the quotient $A/\overline{\{0\}}$ is Hausdorff, by *Topological Sesqualgebras*, §*The Closure of Zero*.
 
 ### The Extension of the Twisted Action
 
@@ -32,7 +32,7 @@ $$
 
 and the twisted action of $\mathbb{K}$ on $\widehat{A}$ is the unique continuous extension of the twisted action on $A$.
 
-*Proof.* The conjugate module is $A$ with the twisted action, and the twisted action is isometric, $\lVert\lambda \cdot x\rVert = \lvert\varsigma(\lambda)\rvert\lVert x\rVert = \lvert\lambda\rvert\lVert x\rVert$, by *Banach Sesqualgebras*, §*The Isometric Involution*; so $A$ and $A^{\varsigma}$ are the same normed space with the same uniformity and the same Cauchy filters, and their completions are the same complete normed space. The scalar action of a normed space extends to its completion, by *Normed and Banach Spaces*, §*Quotients, Direct Sums and Completion*; the extension of the twisted action is the twisted action of the extension, because both are scalar multiplication and the scalar field is unchanged. $\square$
+*Proof.* The conjugate module is $A$ with the twisted action, and the twisted action is isometric, $\lVert\lambda \cdot x\rVert = \lvert\varsigma(\lambda)\rvert\lVert x\rVert = \lvert\lambda\rvert\lVert x\rVert$, by *Banach Sesqualgebras*, §*The Isometric Involution*; so $A$ and $A^{\varsigma}$ are the same normed space with the same uniformity and the same Cauchy filters, and their completions are the same complete normed space. The scalar action of a normed space extends to its completion, by *Normed and Banach Spaces*, §*Quotients, Direct Sums and Completion*; the extension of the twisted action is the twisted action of the extension, because both are scalar multiplication and the scalar field is unchanged.
 
 **Remark.** The identity $\widehat{A^{\varsigma}} = \widehat{A}^{\varsigma}$ is the reason the twisted structure does not complicate the completion: there is one completion and two actions on it, as there is one normed space and two actions before completing. The failure of the identity would occur for a base ring whose involution is not isometric, where the two twisted modules would have different uniformities; over $\mathbb{R}$ and $\mathbb{C}$ it holds always.
 
@@ -48,7 +48,7 @@ $$
 \lVert x_1y_1 - x_0y_0\rVert \leq \lVert x_1 - x_0\rVert\lVert y_1\rVert + \lVert x_0\rVert\lVert y_1 - y_0\rVert
 $$
 
-of *Banach Sesqualgebras*, §*The Submultiplicative Estimate* bounds the difference by a multiple of $\lVert(x_1,y_1) - (x_0,y_0)\rVert$ as long as $\lVert x_0\rVert$ and $\lVert y_1\rVert$ are bounded, which on $B_1 \times B_2$ they are. $\square$
+of *Banach Sesqualgebras*, §*The Submultiplicative Estimate* bounds the difference by a multiple of $\lVert(x_1,y_1) - (x_0,y_0)\rVert$ as long as $\lVert x_0\rVert$ and $\lVert y_1\rVert$ are bounded, which on $B_1 \times B_2$ they are.
 
 ### The Product on the Completion
 
@@ -66,11 +66,11 @@ $$
 \lVert xy\rVert = \lim_n\lVert x_ny_n\rVert \leq \lim_n\lVert x_n\rVert\lVert y_n\rVert = \lVert x\rVert\lVert y\rVert ,
 $$
 
-continuity of the norm and of the product and the isometry of $\iota$. $\square$
+continuity of the norm and of the product and the isometry of $\iota$.
 
 **Corollary (the completion is a Banach sesqualgebra).** $\widehat{A}$ with the extended product and the norm of the completion is a Banach sesqualgebra over $(\mathbb{K},\varsigma)$, and $\iota : A \to \widehat{A}$ is an isometric morphism with dense image.
 
-*Proof.* Completeness is that of the completion, and the axioms of *Banach Sesqualgebras*, §*The Definition* are those verified in the theorem; $\iota$ preserves the norm, the product and the actions by construction. $\square$
+*Proof.* Completeness is that of the completion, and the axioms of *Banach Sesqualgebras*, §*The Definition* are those verified in the theorem; $\iota$ preserves the norm, the product and the actions by construction.
 
 **Remark (the product is not assumed associative).** The extension theorem uses only the continuity of the object and not its associativity, so it applies to every object of the layer, associative or not. When the object carries the envelope of a sesquilinear product, the extension is the envelope of the extended product, and the associativity of the envelope passes to the limit by the same density argument.
 
@@ -80,13 +80,13 @@ continuity of the norm and of the product and the isometry of $\iota$. $\square$
 
 **Theorem (the extension of the algebra involution).** Let $A$ be a normed algebra over $\mathbb{K}$ with a continuous $\varsigma$-semilinear involution $*$, and let $\widehat{A}$ be the completion of the underlying normed space. Then $*$ extends to a unique continuous $\varsigma$-semilinear involution $\widehat{*}$ of $\widehat{A}$, and the completion is a normed algebra with a continuous involution.
 
-*Proof.* A continuous involution of a normed algebra is uniformly continuous for the additive uniformity, being a continuous homomorphism of the additive topological group; it therefore extends uniquely to the completion by the universal property, and the extension is additive, of order two and reverses products on the dense image, hence everywhere by continuity. This is the theorem of *The Involution and the Completion of a Ring*, §*The Extension to the Completion*, read on the additive group of the normed space; when the involution is continuous but not isometric it is made isometric by the equivalent norm $\max(\lVert x\rVert,\lVert x^{*}\rVert)$ of *The Continuity of the Involution*, §*The Normal Form of a Continuous Involution*, and the normal form commutes with the completion. $\square$
+*Proof.* A continuous involution of a normed algebra is uniformly continuous for the additive uniformity, being a continuous homomorphism of the additive topological group; it therefore extends uniquely to the completion by the universal property, and the extension is additive, of order two and reverses products on the dense image, hence everywhere by continuity. This is the theorem of *The Involution and the Completion of a Ring*, §*The Extension to the Completion*, read on the additive group of the normed space; when the involution is continuous but not isometric it is made isometric by the equivalent norm $\max(\lVert x\rVert,\lVert x^{*}\rVert)$ of *The Continuity of the Involution*, §*The Normal Form of a Continuous Involution*, and the normal form commutes with the completion.
 
 ### The Derived Operation
 
 **Theorem (the derived operation of the completion is the extension).** Let $A$ be a normed involutive algebra with a continuous isometric involution $*$, and let $\star$ be its derived operation $x \star y = xy^{*}$, so that $A$ is a normed sesqualgebra over $(\mathbb{K},\varsigma)$ by *Banach Sesqualgebras*, §*The Derived Operation of an Involutive Banach Algebra*. Then $\widehat{A}$ with the algebra product, the extended involution $\widehat{*}$ and the derived operation $\widehat{x} \star \widehat{y} = \widehat{x}\,\widehat{y}^{\widehat{*}}$ is a Banach sesqualgebra, and the derived operation of the completion is the extension of the derived operation of $A$; the two descriptions of $\widehat{A}$ agree.
 
-*Proof.* The completion of a normed algebra is a Banach algebra with the extended product, by the completion paragraph of *Topological Algebras and Banach Algebras*, §*Normed Algebras*, and the extended involution is isometric because it is the continuous extension of an isometry; so the derived operation of the completion is defined and is submultiplicative. The derived operation $\star$ of $A$ is a continuous product, so it extends by §*The Product on the Completion*, and the extension agrees with $\widehat{x}\,\widehat{y}^{\widehat{*}}$ on the dense image, hence everywhere. $\square$
+*Proof.* The completion of a normed algebra is a Banach algebra with the extended product, by the completion paragraph of *Topological Algebras and Banach Algebras*, §*Normed Algebras*, and the extended involution is isometric because it is the continuous extension of an isometry; so the derived operation of the completion is defined and is submultiplicative. The derived operation $\star$ of $A$ is a continuous product, so it extends by §*The Product on the Completion*, and the extension agrees with $\widehat{x}\,\widehat{y}^{\widehat{*}}$ on the dense image, hence everywhere.
 
 **Remark (the involution is not part of the layer datum).** The base involution $\varsigma$ is fixed and its extension is the identity on $\mathbb{K}$; the algebra involution $*$ is an extra structure that some sesqualgebras carry, and it is the involution that the article extends. The distinction is the one of *Topological Sesqualgebras*, §*The Conjugate Module*: the twisted action uses $\varsigma$ and is not the algebra involution.
 
@@ -96,17 +96,17 @@ continuity of the norm and of the product and the isometry of $\iota$. $\square$
 
 **Theorem (the universal property).** Let $A$ be a normed sesqualgebra over $(\mathbb{K},\varsigma)$ and let $T$ be a complete Hausdorff topological sesqualgebra over $(\mathbb{K},\varsigma)$. Then for every continuous morphism $g : A \to T$ there is a unique continuous morphism $h : \widehat{A} \to T$ with $h \circ \iota = g$.
 
-*Proof.* The map $g$ is uniformly continuous for the additive uniformities, so it carries the Cauchy filter of $A$ to a Cauchy filter of $T$, which converges because $T$ is complete; the limit $h(x)$ is independent of the approximating net, and it is continuous, additive and multiplicative because those operations are continuous and compatible with limits, exactly as in the universal property of *The Completion Operator*, §*The Universal Property*. The scalar rules pass to the limit by the same density argument, so $h$ is a morphism of sesqualgebras over $(\mathbb{K},\varsigma)$. Uniqueness is the density of $\iota(A)$. $\square$
+*Proof.* The map $g$ is uniformly continuous for the additive uniformities, so it carries the Cauchy filter of $A$ to a Cauchy filter of $T$, which converges because $T$ is complete; the limit $h(x)$ is independent of the approximating net, and it is continuous, additive and multiplicative because those operations are continuous and compatible with limits, exactly as in the universal property of *The Completion Operator*, §*The Universal Property*. The scalar rules pass to the limit by the same density argument, so $h$ is a morphism of sesqualgebras over $(\mathbb{K},\varsigma)$. Uniqueness is the density of $\iota(A)$.
 
 **Corollary (the completion is a reflection).** The operator $A \mapsto \widehat{A}$ with the unit $\iota$ is the reflection of the category of normed sesqualgebras over $(\mathbb{K},\varsigma)$ into the full subcategory of Banach sesqualgebras: it is left adjoint to the inclusion, and the adjunction is the bijection of the theorem.
 
-*Proof.* The universal property is the statement that $h \mapsto h \circ \iota$ is a bijection from the continuous morphisms $\widehat{A} \to T$ to those $A \to T$, which is the defining property of a reflection. $\square$
+*Proof.* The universal property is the statement that $h \mapsto h \circ \iota$ is a bijection from the continuous morphisms $\widehat{A} \to T$ to those $A \to T$, which is the defining property of a reflection.
 
 ### Idempotence
 
 **Theorem (idempotence).** Let $A$ be a normed sesqualgebra. Then the canonical morphism $\iota : \widehat{A} \to \widehat{\widehat{A}}$ is an isomorphism of sesqualgebras over $(\mathbb{K},\varsigma)$.
 
-*Proof.* The completion $\widehat{A}$ is complete, so its own completion is isomorphic to it by the universal property applied to the identity; the same argument as the idempotence of *The Completion Operator*, §*Idempotence*, with the product and the twist carried along because they are continuous. $\square$
+*Proof.* The completion $\widehat{A}$ is complete, so its own completion is isomorphic to it by the universal property applied to the identity; the same argument as the idempotence of *The Completion Operator*, §*Idempotence*, with the product and the twist carried along because they are continuous.
 
 ## The Collapse at the Trivial Involution
 
@@ -114,7 +114,7 @@ continuity of the norm and of the product and the isometry of $\iota$. $\square$
 
 **Theorem (the collapse).** Let $A$ be a normed sesqualgebra over $(\mathbb{K},\varsigma)$ with $\varsigma = \mathrm{id}$. Then the product is bilinear, $A$ is a normed algebra, and $\widehat{A}$ is its Banach algebra completion in the sense of *Topological Algebras and Banach Algebras*, §*Normed Algebras*; conversely the completion of a normed algebra is the completion of the corresponding sesqualgebra over $(\mathbb{K},\mathrm{id})$.
 
-*Proof.* With $\varsigma = \mathrm{id}$ the second scalar rule is the first, and the construction is the completion paragraph of the bilinear layer; the twisted action is the scalar action, so §*The Extension of the Twisted Action* is the extension of the scalar action of a normed space, and the extended product is the extended algebra product. $\square$
+*Proof.* With $\varsigma = \mathrm{id}$ the second scalar rule is the first, and the construction is the completion paragraph of the bilinear layer; the twisted action is the scalar action, so §*The Extension of the Twisted Action* is the extension of the scalar action of a normed space, and the extended product is the extended algebra product.
 
 ### Full Type
 

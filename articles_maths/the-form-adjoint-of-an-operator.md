@@ -78,7 +78,7 @@ $$
 
 the equation of the indefinite unitary group of $G$; for $G = 1$ it is $T^{*} = T^{\dagger}$, the conjugate transpose of the definite case, and the form is then the canonical form of *Hermitian Algebras*.
 
-**Proof.** $h_{G}(Tx,y) = \tau(x^{\dagger}T^{\dagger}Gy)$ and $h_{G}(x,T^{*}y) = \tau(x^{\dagger}GT^{*}y)$, and the two agree for all $x,y$ exactly when $T^{\dagger}G = GT^{*}$, that is $T^{*} = G^{-1}T^{\dagger}G$. The isometry statement is the substitution $T^{\dagger}GT = G$. The verification by recomputation on the left multiplications by the $2\times2$ matrices over $\mathbb{Z}[\mathrm{i}]$ confirms both formulas ($4096$ triples, no failure).
+**Proof.** $h_{G}(Tx,y) = \tau(x^{\dagger}T^{\dagger}Gy)$ and $h_{G}(x,T^{*}y) = \tau(x^{\dagger}GT^{*}y)$, and the two agree for all $x,y$ exactly when $T^{\dagger}G = GT^{*}$, that is $T^{*} = G^{-1}T^{\dagger}G$. The isometry statement is the substitution $T^{\dagger}GT = G$.
 
 **Remark (the other convention).** With the dagger in the second slot and the form $h(x,y) = \tau(xGy^{\dagger})$ the Gram matrix leaves the adjoint of a multiplication invisible: $T^{*} = T^{\dagger}$, and the isometry equation is $T^{\dagger}T = 1$. The two conventions occur in the corpus — the blade form $\operatorname{Sc}(x^{\dagger}y)$ is of the first kind, the trace form $\tau(xy^{*})$ of the second — and the placement of the dagger decides whether the Gram matrix enters the adjoint.
 

@@ -46,7 +46,7 @@ There is no right identity for $\star$.
 **Proof.** The first is $e_0^{\natural}\tilde Q=e_0\tilde Q=\tilde Q$; the second is
 $\tilde Q^{\natural}e_0=\tilde Q^{\natural}$. For the last statement, suppose $\tilde U$ satisfies
 $\tilde Q\star\tilde U=\tilde Q$ for all $\tilde Q$. At $\tilde Q=e_0$ this reads $\tilde U=e_0$; at
-$\tilde Q=e_1$ it reads $e_1\star e_0=e_1$, that is $-e_1=e_1$, which is false. $\square$
+$\tilde Q=e_1$ it reads $e_1\star e_0=e_1$, that is $-e_1=e_1$, which is false.
 
 The asymmetry is visible on a single element. Multiplying by the identity on the left changes nothing;
 multiplying by it on the right conjugates. The framework reads the first slot as the operation whose
@@ -70,7 +70,7 @@ so a **chain of material operations has a well-defined composite as a map**, by 
 composition, while the chain of the corresponding elements has no bracketing-free product. The failure of
 associativity therefore lives on the elements and not on the operations.
 
-**Remark (verified).** The two one-sided rules and the composition rule were checked on $100$ random
+**Remark (verified).**
 triples in exact complex arithmetic, with deviations at machine precision. The failure of associativity is
 not a rounding effect: the associator is nonzero on $24$ of the $64$ triples of basis elements.
 
@@ -101,7 +101,7 @@ $$
 The **first half is a central number** and the second half is a **vector**. The central half is the
 order-independent part of the composite, the vector half the order-dependent one.
 
-**Proof.** Add and subtract the two expansions of the product. $\square$
+**Proof.** Add and subtract the two expansions of the product.
 
 On the material sector this reads concretely. The square of a material element is its interval and lands
 on the central line, so the material sector is not closed under the composition: $e_1\star e_1=e_0$
@@ -130,7 +130,7 @@ solutions exactly $\tilde\Pi=0$ and $\tilde\Pi=e_0$.
 
 **Proof.** By the square identity the left side is $N(\tilde\Pi)e_0$, which is central, so
 $\tilde\Pi=N(\tilde\Pi)e_0$ is central and its vector part vanishes; writing $\tilde\Pi=\Pi_0e_0$ the
-equation becomes $\Pi_0^{2}=\Pi_0$, whence $\Pi_0\in\{0,1\}$. $\square$
+equation becomes $\Pi_0^{2}=\Pi_0$, whence $\Pi_0\in\{0,1\}$.
 
 No material element is a projection, and no nontrivial element at all is one: the material composition
 therefore supplies no resolution of the algebra against a reference. The check on $100$ random unit
@@ -165,7 +165,7 @@ $$
 **Proof.** The first two are the standard projector identities for $\tfrac12(e_0+i\hat{\boldsymbol\mu})$
 with $\hat{\boldsymbol\mu}^{2}=-e_0$; the trace is the definition, and the last is the square identity of
 the companion article applied to $\tilde\Pi$, whose norm vanishes because
-$N(\tilde\Pi)=\tfrac14(1-1)=0$. $\square$
+$N(\tilde\Pi)=\tfrac14(1-1)=0$.
 
 The objects a quantum theory counts as pure states are therefore **null for the material composition**: the
 composition sends them to zero rather than holding them fixed. That is the sharpest form of the contrast
@@ -223,23 +223,23 @@ cross and must not be conflated.
 **Proposed reading, labelled as such.** The material composition is **oriented and mute**.
 
 - **The slots are not interchangeable.** The first factor is read through the conjugation, the second is
-  not, and the identity acts as the identity from one side only. Composing an interval-one operation on the
-  left of an element returns the element; using the identity on the right returns the conjugate.
+not, and the identity acts as the identity from one side only. Composing an interval-one operation on the
+left of an element returns the element; using the identity on the right returns the conjugate.
 - **The composite is a number plus a direction.** The order-independent half of a material composite is a
-  central number, the pairing of the two operations; the order-dependent half is a direction, with a real
-  and an imaginary part. Read as an **amplitude and a direction**: the number is a magnitude, and the
-  direction would read as a phase only through the geometric-phase material, a pointer offered and not
-  claimed.
+central number, the pairing of the two operations; the order-dependent half is a direction, with a real
+and an imaginary part. Read as an **amplitude and a direction**: the number is a magnitude, and the
+direction would read as a phase only through the geometric-phase material, a pointer offered and not
+claimed.
 - **The composition cannot measure.** Its only projections are $0$ and $e_0$; a measurement is supplied by
-  the informational structure, whose projectors are null for the composition.
+the informational structure, whose projectors are null for the composition.
 - **Composition and measurement are done by different structures.** The material row carries the interval
-  and the composition; the informational row carries the projection and the measurement.
+and the composition; the informational row carries the projection and the measurement.
 - **A chain of three has an ordering cost.** Because the product is not associative, a word of three
-  material operations has no bracketing-free value: the value depends on where the middle operation is
-  bracketed, and that dependence is the associator, nonzero on $24$ of the $64$ triples of basis elements.
-  It is a cost of the ordering of the elements and not of the maps, since the left multiplications compose
-  associatively; a process with an intrinsic intermediate ordering has a non-associative algebra of
-  elements and an associative monoid of operators.
+material operations has no bracketing-free value: the value depends on where the middle operation is
+bracketed, and that dependence is the associator, nonzero on $24$ of the $64$ triples of basis elements.
+It is a cost of the ordering of the elements and not of the maps, since the left multiplications compose
+associatively; a process with an intrinsic intermediate ordering has a non-associative algebra of
+elements and an associative monoid of operators.
 
 ## The Limits
 
@@ -334,26 +334,26 @@ their monoid by *The Left Multiplications of the Quaternionic Product and the Op
 ## Further Reading
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
-  which this block sits.
+which this block sits.
 - Companion article *The Interval as the Square and the Charge of the Material Composition*, for the square
-  identity, the interval and the multiplicativity used throughout.
+identity, the interval and the multiplicativity used throughout.
 - Mathematics article *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*
-  (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for
-  the left multiplications and their anti-isomorphism.
+(`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for
+the left multiplications and their anti-isomorphism.
 - Mathematics article *Idempotents of the Quaternionic Product*
-  (`articles_maths/idempotents-of-the-quaternionic-product.md`), for the idempotent reduction.
+(`articles_maths/idempotents-of-the-quaternionic-product.md`), for the idempotent reduction.
 - Mathematics article *The Associator and the Ternary Product of the Quaternionic Product*
-  (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
-  associator and the failure of the weaker identities.
+(`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
+associator and the failure of the weaker identities.
 - Mathematics article *Introduction to the General Quaternionic Algebra of Biquaternions*
-  (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product and its table.
+(`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product and its table.
 - Mathematics article *The Two-Sided Operators on a Hermitian Algebra*
-  (`articles_maths/the-two-sided-operators-on-a-hermitian-algebra.md`), for the
-  two-sided operators of the sandwich and their Hermitian adjoints.
+(`articles_maths/the-two-sided-operators-on-a-hermitian-algebra.md`), for the
+two-sided operators of the sandwich and their Hermitian adjoints.
 - Companion article *The States the Indefinite Metric Cannot Normalise* and
-  *Decoherence as Idempotent Projection*, for the states and for the measurement.
+*Decoherence as Idempotent Projection*, for the states and for the measurement.
 - Companion article *The Material-Informational Split as a Superselection Structure in Biquaternionic
-  Form*, for the two-sector split by the Hermitian conjugation.
+Form*, for the two-sector split by the Hermitian conjugation.
 - Companion article *Relations Between Subspaces*, for the remarkable subspaces and the real–imaginary split.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the one-sided units and the
-  non-associativity of the conjugating products on a quaternion algebra.
+non-associativity of the conjugating products on a quaternion algebra.

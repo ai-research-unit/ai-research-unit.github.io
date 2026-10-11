@@ -35,11 +35,11 @@ $$
 \det(S_{\tilde A,\tilde B})=\prod_{i,j}(\lambda_{i}+\mu_{j}).
 $$
 
-*Proof.* $S_{\tilde A,\tilde B}=\Phi(\tilde A)\otimes I+I\otimes\Phi(\tilde B)^{T}$ in the vectorisation of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and the spectrum of a Kronecker sum is the set of pairwise sums. Verified on random pairs.
+*Proof.* $S_{\tilde A,\tilde B}=\Phi(\tilde A)\otimes I+I\otimes\Phi(\tilde B)^{T}$ in the vectorisation of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and the spectrum of a Kronecker sum is the set of pairwise sums.
 
 **Theorem (the solvability criterion).** The Sylvester equation $\tilde A\tilde P+\tilde P\tilde B=c$ has a **unique** solution for every $c$ if and only if no eigenvalue of $\Phi(\tilde A)$ is the negative of an eigenvalue of $\Phi(\tilde B)$. If the criterion fails, the equation is solvable exactly when $c$ is orthogonal to the kernel of the adjoint $L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, and the solution set is an affine subspace of dimension $\sum_{m}(\text{multiplicity of }0\text{ in the spectrum})$.
 
-*Proof.* $S_{\tilde A,\tilde B}$ is invertible iff $0$ is not an eigenvalue, i.e. iff no $\lambda_{i}+\mu_{j}=0$; the remaining statements are the Fredholm alternative for a finite-dimensional operator. Verified: on random pairs $S_{\tilde A,\tilde B}$ was singular exactly when the spectra met in the way described, and the solution of the invertible case was checked by substitution.
+*Proof.* $S_{\tilde A,\tilde B}$ is invertible iff $0$ is not an eigenvalue, i.e. iff no $\lambda_{i}+\mu_{j}=0$; the remaining statements are the Fredholm alternative for a finite-dimensional operator.
 
 **Remark (the Hermitian case).** When both parameters are **Hermitian**, the spectrum of $S_{\tilde A,\tilde B}$ is real and the criterion becomes: **no eigenvalue of $\tilde A$ is the negative of an eigenvalue of $\tilde B$**. For $\tilde A=\tilde B$ Hermitian the anticommutator $\tilde A\tilde P+\tilde P\tilde A=c$ is uniquely solvable exactly when $\tilde A$ has no pair of **opposite** eigenvalues: this is the Hermitian Sylvester equation proper, and it fails exactly at $\tilde A=\mathrm{diag}(1,-1)$ (for which $\tilde P=\mathrm{diag}(0,0)$ is a nonzero solution of the homogeneous equation) and at the elements with a zero eigenvalue.
 
@@ -47,13 +47,13 @@ $$
 
 **Theorem (the adjoint).** $(L_{\tilde A}+R_{\tilde B})^{*}=L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, that is $S_{\tilde A,\tilde B}^{*}=S_{\tilde{A}^{*},\tilde{B}^{*}}$.
 
-*Proof.* From $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and $(R_{\tilde B})^{*}=R_{\tilde{B}^{*}}$ of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*. Verified on random pairs.
+*Proof.* From $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and $(R_{\tilde B})^{*}=R_{\tilde{B}^{*}}$ of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*.
 
 **Corollary (self-adjointness needs both parameters Hermitian).** $S_{\tilde A,\tilde B}$ is self-adjoint if and only if $\tilde A$ and $\tilde B$ are both Hermitian. In particular the Lyapunov operator $S_{\tilde A,\tilde{A}^{*}}=L_{\tilde A}+R_{\tilde{A}^{*}}$ is self-adjoint if and only if $\tilde A$ is Hermitian; for general $\tilde A$ it is not, and its adjoint is $L_{\tilde{A}^{*}}+R_{\tilde A}$. **The temptation to call $L_{\tilde A}+R_{\tilde{A}^{*}}$ self-adjoint for every $\tilde A$ is the trap of this article.**
 
-*Proof.* $S_{\tilde A,\tilde B}^{*}=S_{\tilde{A}^{*},\tilde{B}^{*}}$ equals $S_{\tilde A,\tilde B}$ iff $\tilde{A}^{*}=\tilde A$ and $\tilde{B}^{*}=\tilde B$. The Lyapunov case: $S_{\tilde A,\tilde{A}^{*}}^{*}=S_{\tilde{A}^{*},\tilde A}$, which equals $S_{\tilde A,\tilde{A}^{*}}$ iff $\tilde A=\tilde{A}^{*}$. Verified on random, Hermitian and anti-Hermitian samples.
+*Proof.* $S_{\tilde A,\tilde B}^{*}=S_{\tilde{A}^{*},\tilde{B}^{*}}$ equals $S_{\tilde A,\tilde B}$ iff $\tilde{A}^{*}=\tilde A$ and $\tilde{B}^{*}=\tilde B$. The Lyapunov case: $S_{\tilde A,\tilde{A}^{*}}^{*}=S_{\tilde{A}^{*},\tilde A}$, which equals $S_{\tilde A,\tilde{A}^{*}}$ iff $\tilde A=\tilde{A}^{*}$.
 
-**Corollary (the anticommutator spectrum in the Hermitian case).** For Hermitian $\tilde A$ the operator $L_{\tilde A}+R_{\tilde A}$ is self-adjoint with the real spectrum $\{2\lambda_{1},\ \lambda_{1}+\lambda_{2},\ \lambda_{1}+\lambda_{2},\ 2\lambda_{2}\}$: the two **doubled** eigenvalues $2\lambda_{i}$ and the **sum** $\lambda_{1}+\lambda_{2}$ counted twice. Consequently: if $\tilde A$ is definite the anticommutator operator is definite with the sign of $\tilde A$; if $\tilde A$ is indefinite it has eigenvalues of both signs and is never definite; and it is **singular** exactly when $\lambda_{1}+\lambda_{2}=0$, that is, exactly when the Hermitian and indefinite $\tilde A$ has trace zero. Verified numerically. The same computation for the sandwich gives the products $\lambda_{i}\lambda_{j}$ and the signature $(p^{2}+q^{2},2pq)$ of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*: the anticommutator uses the **sums** and the sandwich the **products** of the eigenvalues, and the two patterns must not be interchanged.
+**Corollary (the anticommutator spectrum in the Hermitian case).** For Hermitian $\tilde A$ the operator $L_{\tilde A}+R_{\tilde A}$ is self-adjoint with the real spectrum $\{2\lambda_{1},\ \lambda_{1}+\lambda_{2},\ \lambda_{1}+\lambda_{2},\ 2\lambda_{2}\}$: the two **doubled** eigenvalues $2\lambda_{i}$ and the **sum** $\lambda_{1}+\lambda_{2}$ counted twice. Consequently: if $\tilde A$ is definite the anticommutator operator is definite with the sign of $\tilde A$; if $\tilde A$ is indefinite it has eigenvalues of both signs and is never definite; and it is **singular** exactly when $\lambda_{1}+\lambda_{2}=0$, that is, exactly when the Hermitian and indefinite $\tilde A$ has trace zero. The same computation for the sandwich gives the products $\lambda_{i}\lambda_{j}$ and the signature $(p^{2}+q^{2},2pq)$ of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*: the anticommutator uses the **sums** and the sandwich the **products** of the eigenvalues, and the two patterns must not be interchanged.
 
 ## The Commutator, the Anticommutator and the Derivation
 
@@ -63,7 +63,7 @@ $$
 [L_{\tilde A},L_{\tilde B}]=L_{[\tilde A,\tilde B]},\qquad [R_{\tilde A},R_{\tilde B}]=-R_{[\tilde A,\tilde B]},\qquad [L_{\tilde A},R_{\tilde B}]=0 .
 $$
 
-*Proof.* $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$ from the composition laws, and $L$ and $R$ commute because left and right multiplication commute. Verified as matrices.
+*Proof.* $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$ from the composition laws, and $L$ and $R$ commute because left and right multiplication commute.
 
 **Corollary (the inner derivation is a Lie algebra homomorphism).** The map $\tilde A\mapsto\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$ is a representation of the Lie algebra of $\mathbb{B}$ on $\mathbb{B}$,
 
@@ -71,14 +71,14 @@ $$
 [\mathrm{ad}_{\tilde A},\mathrm{ad}_{\tilde B}]=\mathrm{ad}_{[\tilde A,\tilde B]},\qquad\text{that is}\qquad [L_{\tilde A}-R_{\tilde A},\ L_{\tilde B}-R_{\tilde B}]=L_{[\tilde A,\tilde B]}-R_{[\tilde A,\tilde B]},
 $$
 
-and $\mathrm{ad}_{\tilde A}$ is a derivation of the associative algebra, $\mathrm{ad}_{\tilde A}(\tilde P\tilde Q)=\mathrm{ad}_{\tilde A}(\tilde P)\tilde Q+\tilde P\,\mathrm{ad}_{\tilde A}(\tilde Q)$. Its spectrum is the set of pairwise differences $\lambda_{i}-\lambda_{j}$: for Hermitian $\tilde A$ these are the real **roots** and $\mathrm{ad}_{\tilde A}$ is the infinitesimal generator of the inner automorphism group. Both statements verified numerically. This is the operator form of *Biquaternion Automorphisms and Derivations*.
+and $\mathrm{ad}_{\tilde A}$ is a derivation of the associative algebra, $\mathrm{ad}_{\tilde A}(\tilde P\tilde Q)=\mathrm{ad}_{\tilde A}(\tilde P)\tilde Q+\tilde P\,\mathrm{ad}_{\tilde A}(\tilde Q)$. Its spectrum is the set of pairwise differences $\lambda_{i}-\lambda_{j}$: for Hermitian $\tilde A$ these are the real **roots** and $\mathrm{ad}_{\tilde A}$ is the infinitesimal generator of the inner automorphism group. This is the operator form of *Biquaternion Automorphisms and Derivations*.
 
 **Theorem (adjointness of the commutator and the anticommutator).** For $\tilde A\in\mathbb{B}$:
 
 1. $(\mathrm{ad}_{\tilde A})^{*}=\mathrm{ad}_{\tilde{A}^{*}}$; hence the inner derivation $\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$ is **self-adjoint** exactly when $\tilde A$ is Hermitian and **skew-adjoint** exactly when $\tilde A$ is anti-Hermitian;
 2. the anticommutator operator $L_{\tilde A}+R_{\tilde A}$ is **self-adjoint** exactly when $\tilde A$ is Hermitian.
 
-*Proof.* $(L_{\tilde A}+R_{\tilde A})^{*}=L_{\tilde{A}^{*}}+R_{\tilde{A}^{*}}$, which equals $L_{\tilde A}+R_{\tilde A}$ iff $\tilde{A}^{*}=\tilde A$ for (2); the same computation with the relative sign gives $(\mathrm{ad}_{\tilde A})^{*}=\mathrm{ad}_{\tilde{A}^{*}}$ for (1). Both verified numerically on random, Hermitian and anti-Hermitian samples.
+*Proof.* $(L_{\tilde A}+R_{\tilde A})^{*}=L_{\tilde{A}^{*}}+R_{\tilde{A}^{*}}$, which equals $L_{\tilde A}+R_{\tilde A}$ iff $\tilde{A}^{*}=\tilde A$ for (2); the same computation with the relative sign gives $(\mathrm{ad}_{\tilde A})^{*}=\mathrm{ad}_{\tilde{A}^{*}}$ for (1).
 
 **Remark (the sector reading).** The two statements are the sector decomposition at the operator level: the **anticommutator** is the self-adjoint operator of the **Hermitian** elements, and the **commutator** is the skew-adjoint operator of the **anti-Hermitian** elements. Since $e_{k}\in\mathbb{M}_-$ for $k=1,2,3$, the derivations $\mathrm{ad}_{e_{k}}$ are skew-adjoint with purely imaginary spectra, and $\exp(\mathrm{ad}_{e_{k}})$ are rotations, of period $\pi$ because the elementary rotation is at half-angle: this is the operator form of the compact internal group of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*.
 
@@ -90,7 +90,7 @@ $$
 P_{ij} = \frac{c_{ij}}{\lambda_{i}+\mu_{j}} .
 $$
 
-*Proof.* The vectorised equation is a linear system with matrix $\Phi(\tilde A)\otimes I+I\otimes\Phi(\tilde B)^{T}$; the diagonal case is the $2\times2$ instance of it. Verified by solving the system and substituting.
+*Proof.* The vectorised equation is a linear system with matrix $\Phi(\tilde A)\otimes I+I\otimes\Phi(\tilde B)^{T}$; the diagonal case is the $2\times2$ instance of it.
 
 **Theorem (the integral representation).** Let $\tilde A,\tilde B$ have spectra in the open right half-plane (so that $\exp(-t\tilde A)$ and $\exp(-t\tilde B)$ decay). Then
 
@@ -100,7 +100,7 @@ $$
 
 is the solution of $\tilde A\tilde P+\tilde P\tilde B=c$.
 
-*Proof.* Differentiate: $\tilde A\tilde P+\tilde P\tilde B=\int_{0}^{\infty}\bigl(\tilde A e^{-t\tilde A}ce^{-t\tilde B}+e^{-t\tilde A}ce^{-t\tilde B}\tilde B\bigr)dt=-\int_{0}^{\infty}\frac{d}{dt}\bigl(e^{-t\tilde A}ce^{-t\tilde B}\bigr)dt=e^{0}ce^{0}=c$. The diagonal positive case was verified numerically, and the invertible case by substitution.
+*Proof.* Differentiate: $\tilde A\tilde P+\tilde P\tilde B=\int_{0}^{\infty}\bigl(\tilde A e^{-t\tilde A}ce^{-t\tilde B}+e^{-t\tilde A}ce^{-t\tilde B}\tilde B\bigr)dt=-\int_{0}^{\infty}\frac{d}{dt}\bigl(e^{-t\tilde A}ce^{-t\tilde B}\bigr)dt=e^{0}ce^{0}=c$.
 
 **Remark (why the Hermitian case is the interesting one).** For Hermitian $\tilde A,\tilde B$ the operator is self-adjoint and the equation is the **operator form of the Hermitian condition**: it is the equation satisfied by the fixed point of the linear relaxation $\tilde P\mapsto c-\tilde A\tilde P-\tilde P\tilde B$, by the correction term of any perturbative expansion, and by the solution of the Lyapunov problem of linear systems theory. The integral representation is the statement that the solution is a **time-ordered average** of the two exponential factors, and it is the reason the solution of a stable equation is written with two decaying exponentials rather than one.
 
@@ -118,7 +118,7 @@ is the solution of $\tilde A\tilde P+\tilde P\tilde B=c$.
 
 ## Summary
 
-The Sylvester equation $\tilde A\tilde P+\tilde P\tilde B=c$ on the biquaternion algebra is the equation of the operator $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}$, whose spectrum is the set of pairwise sums $\lambda_{i}+\mu_{j}$ and whose determinant is their product; it is uniquely solvable exactly when no eigenvalue of $\tilde A$ is the negative of an eigenvalue of $\tilde B$, and in the Hermitian case exactly when the two Hermitian parameters have no opposite eigenvalues. The adjoint is $S_{\tilde A,\tilde B}^{*}=L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, so $S_{\tilde A,\tilde B}$ is self-adjoint exactly when **both** parameters are Hermitian — in particular the Lyapunov operator $L_{\tilde A}+R_{\tilde{A}^{*}}$ is self-adjoint only for Hermitian $\tilde A$, which is the trap of the article. The companion operator $L_{\tilde A}-R_{\tilde A}$ is the inner derivation $\mathrm{ad}_{\tilde A}=[\tilde A,\cdot\,]$, with spectrum the pairwise differences $\lambda_{i}-\lambda_{j}$, skew-adjoint exactly for the anti-Hermitian parameters, and a Lie algebra homomorphism $\tilde A\mapsto\mathrm{ad}_{\tilde A}$; the anticommutator is self-adjoint exactly for the Hermitian parameters. The solution is given by the Kronecker inverse, by the entrywise formula $P_{ij}=c_{ij}/(\lambda_{i}+\mu_{j})$ in the diagonalisable case, and by the time-ordered integral $\int_{0}^{\infty}e^{-t\tilde A}ce^{-t\tilde B}dt$ in the stable case. All statements were verified to machine precision.
+The Sylvester equation $\tilde A\tilde P+\tilde P\tilde B=c$ on the biquaternion algebra is the equation of the operator $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}$, whose spectrum is the set of pairwise sums $\lambda_{i}+\mu_{j}$ and whose determinant is their product; it is uniquely solvable exactly when no eigenvalue of $\tilde A$ is the negative of an eigenvalue of $\tilde B$, and in the Hermitian case exactly when the two Hermitian parameters have no opposite eigenvalues. The adjoint is $S_{\tilde A,\tilde B}^{*}=L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, so $S_{\tilde A,\tilde B}$ is self-adjoint exactly when **both** parameters are Hermitian — in particular the Lyapunov operator $L_{\tilde A}+R_{\tilde{A}^{*}}$ is self-adjoint only for Hermitian $\tilde A$, which is the trap of the article. The companion operator $L_{\tilde A}-R_{\tilde A}$ is the inner derivation $\mathrm{ad}_{\tilde A}=[\tilde A,\cdot\,]$, with spectrum the pairwise differences $\lambda_{i}-\lambda_{j}$, skew-adjoint exactly for the anti-Hermitian parameters, and a Lie algebra homomorphism $\tilde A\mapsto\mathrm{ad}_{\tilde A}$; the anticommutator is self-adjoint exactly for the Hermitian parameters. The solution is given by the Kronecker inverse, by the entrywise formula $P_{ij}=c_{ij}/(\lambda_{i}+\mu_{j})$ in the diagonalisable case, and by the time-ordered integral $\int_{0}^{\infty}e^{-t\tilde A}ce^{-t\tilde B}dt$ in the stable case.
 
 ## Summary of Notation
 

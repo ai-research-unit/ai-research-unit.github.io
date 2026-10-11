@@ -76,7 +76,7 @@ The column of $\tilde{R}=e_0+e_1$, namely $R=(1,1,0,0)$, is carried to the colum
 
 **Theorem (multiplicativity).** For all $\tilde Q,\tilde R\in\mathbb{B}$, $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde R)=\mathsf{M}_4(\tilde Q\tilde R)$. Hence $\mathsf{M}_4$ is an algebra homomorphism, and the coefficient space is a left $\mathbb{B}$-module under it.
 
-**Proof.** Both sides are computed on the basis: for every $m$, associativity gives $\tilde Q(\tilde Re_m)=(\tilde Q\tilde R)e_m$, so the two matrices agree on every column $\operatorname{col}(e_m)$ and hence everywhere. $\square$
+**Proof.** Both sides are computed on the basis: for every $m$, associativity gives $\tilde Q(\tilde Re_m)=(\tilde Q\tilde R)e_m$, so the two matrices agree on every column $\operatorname{col}(e_m)$ and hence everywhere.
 
 **Corollary (injectivity).** The map $\mathsf{M}_4$ is injective, so the algebra is realized faithfully; indeed $\mathsf{M}_4(\tilde Q)=0$ forces its first column, which is the column of $\tilde Q$, to vanish, and the first column alone recovers the four coefficients.
 
@@ -92,7 +92,7 @@ $$
 
 The determinant of the regular matrix is the **square** of the determinant of the $2\times2$ model, and it is not that determinant itself.
 
-**Proof.** Write $A=\Phi(\tilde Q)$, so that $A$ is the matrix of $\tilde Q$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, of trace $2Q_0$ and determinant $\Delta(\tilde Q)$. The map $\mathsf{M}_4(\tilde Q)$ is left multiplication by $A$ on $M_2(\mathbb{C})$, and in the basis of $M_2(\mathbb{C})$ grouped by columns that operator is block diagonal with two copies of $A$, because $A(Xe_j)=(AX)e_j$ for each column $Xe_j$. The trace and the determinant of a block diagonal matrix are the sum and the product of those of the blocks, so $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=2\operatorname{Tr}A=4Q_0$ and $\det\mathsf{M}_4(\tilde Q)=\det(A)^2=\Delta(\tilde Q)^2$. $\square$
+**Proof.** Write $A=\Phi(\tilde Q)$, so that $A$ is the matrix of $\tilde Q$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, of trace $2Q_0$ and determinant $\Delta(\tilde Q)$. The map $\mathsf{M}_4(\tilde Q)$ is left multiplication by $A$ on $M_2(\mathbb{C})$, and in the basis of $M_2(\mathbb{C})$ grouped by columns that operator is block diagonal with two copies of $A$, because $A(Xe_j)=(AX)e_j$ for each column $Xe_j$. The trace and the determinant of a block diagonal matrix are the sum and the product of those of the blocks, so $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=2\operatorname{Tr}A=4Q_0$ and $\det\mathsf{M}_4(\tilde Q)=\det(A)^2=\Delta(\tilde Q)^2$.
 
 **Example.** For $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the $2\times2$ determinant is $\Delta(\tilde Q)=11+2i$, hence $\det\mathsf{M}_4(\tilde Q)=(11+2i)^2=117+44i$ and $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4(2+i)=8+4i$.
 
@@ -113,7 +113,7 @@ The remarkable subspaces have the following images under $\mathsf{M}_4$, read fr
 
 Here $\dagger$ is the conjugate transpose, and a matrix is Hermitian or anti-Hermitian in the ordinary sense.
 
-**Proof.** A central element is $\tilde Q=Ae_0$, and $\mathsf{M}_4(Ae_0)=AI_4$ because $e_0$ is the identity. The trace of the matrix is $4Q_0$, so the traceless matrices are exactly the elements with vanishing scalar part, that is the vector subspace. For the quaternion subspace the coefficients $Q_\mu=h_\mu$ are real, and each entry of the matrix is a single coefficient up to sign, so the image is the set of real matrices; the anti-quaternion subspace, whose coefficients are purely imaginary, is its $i$-multiple, the purely imaginary matrices. Finally $\mathsf{M}_4(e_k)$ is real and skew-symmetric, so for a Hermitian element, whose scalar part is real and whose vector coefficients are purely imaginary, the image $q_0I_4+\sum_k iq'_k\mathsf{M}_4(e_k)$ is a real scalar matrix plus a purely imaginary skew matrix, which is Hermitian; the anti-Hermitian element gives the negative pattern. $\square$
+**Proof.** A central element is $\tilde Q=Ae_0$, and $\mathsf{M}_4(Ae_0)=AI_4$ because $e_0$ is the identity. The trace of the matrix is $4Q_0$, so the traceless matrices are exactly the elements with vanishing scalar part, that is the vector subspace. For the quaternion subspace the coefficients $Q_\mu=h_\mu$ are real, and each entry of the matrix is a single coefficient up to sign, so the image is the set of real matrices; the anti-quaternion subspace, whose coefficients are purely imaginary, is its $i$-multiple, the purely imaginary matrices. Finally $\mathsf{M}_4(e_k)$ is real and skew-symmetric, so for a Hermitian element, whose scalar part is real and whose vector coefficients are purely imaginary, the image $q_0I_4+\sum_k iq'_k\mathsf{M}_4(e_k)$ is a real scalar matrix plus a purely imaginary skew matrix, which is Hermitian; the anti-Hermitian element gives the negative pattern.
 
 The table is the matrix reading of the linear-spaces picture, and it is visibly different from the $2\times2$ one: in the regular model the quaternion and anti-quaternion subspaces are the real and the purely imaginary matrices, an entrywise condition, whereas in the $2\times2$ model the same two subspaces are the $\epsilon$-conjugation pattern and its $i$-multiple. The two models agree on the centre, the vector subspace and the two Hermitian subspaces.
 
@@ -182,7 +182,7 @@ $$
 
 and each block has trace $2Q_0$ and determinant $\Delta(\tilde Q)$.
 
-**Proof.** Left multiplication preserves each left ideal, so the matrix is block diagonal in a basis adapted to the splitting. Each block is left multiplication by $\tilde Q$ on a minimal left ideal, every minimal left ideal is isomorphic to the simple module $V=\mathbb{C}^2$, and on $V$ left multiplication is $\Phi(\tilde Q)$; a change of basis inside the block replaces it by a conjugate matrix, which has the same trace and determinant. $\square$
+**Proof.** Left multiplication preserves each left ideal, so the matrix is block diagonal in a basis adapted to the splitting. Each block is left multiplication by $\tilde Q$ on a minimal left ideal, every minimal left ideal is isomorphic to the simple module $V=\mathbb{C}^2$, and on $V$ left multiplication is $\Phi(\tilde Q)$; a change of basis inside the block replaces it by a conjugate matrix, which has the same trace and determinant.
 
 **Corollary.** $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=2\operatorname{Tr}\Phi(\tilde Q)=4Q_0$ and $\det\mathsf{M}_4(\tilde Q)=\det\Phi(\tilde Q)^2$: the factor two in the trace and the square in the determinant are one block decomposition and not two coincidences. In both models the trace is the scalar part times the size of the matrix, so it separates the centre from the vector subspace and sees nothing else.
 

@@ -161,7 +161,6 @@ $$
 
 recomputed for a range of $f_a$ and matching the standard value of about $5.7\ \mu\mathrm{eV}$ at $f_a = 10^{12}$ GeV to within the spread of the quark-mass inputs. This is the standard axion mass formula (Weinberg 1978; Wilczek 1978; Bardeen and Tye 1978; the modern determination via the chiral Lagrangian is reviewed in the axion literature), and the framework's contribution is the periodic field and the kinetic normalisation of the phase, not the coefficient.
 
-**Verification.** The potential's curvature, the position of its minimum and the mass relation were checked symbolically and numerically. For $\Lambda^2 = 5.79\times10^{15}$ eV² and $f_a = 10^{21}$ eV ($=10^{12}$ GeV), $m_a = \Lambda^2/f_a = 5.79\times10^{-6}$ eV; the numerical second derivative of $\Lambda^4[1-\cos(a/f_a)]$ at $a = 0$ returned the same value to eight figures, and evaluating the potential on the superposition $a/f_a = 0.3 + 0.2$ (two angular samples) confirmed that only the total $\bar\theta+a/f_a$ appears. For the same inputs at $f_a = 10^{11}$ GeV and $10^{13}$ GeV the mass scaled as $1/f_a$, as the formula requires.
 
 **The axion's couplings.** The axion couples to two photons through the anomaly,
 

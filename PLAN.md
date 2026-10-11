@@ -35,6 +35,9 @@ The folders containing the articles are articles_maths for maths articles and ar
 
 From time to time, update the article "The Mathematical Study of Biquaternions" with the links toward the new maths articles that may have been written category of biquaternions.
 
+From time to time, strip the proof-end marks :
+grep -rnE '(\$\\square\$|\\\(\\square\\\)|\$\\blacksquare\$)[ \t]*$' articles_maths articles_physics | wc -l   # expect 0
+
 ################################
 ### RULES DURING THE CHATTING PHASE
 ################################

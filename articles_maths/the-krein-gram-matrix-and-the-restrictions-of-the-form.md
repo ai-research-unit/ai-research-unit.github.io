@@ -231,6 +231,6 @@ In the coefficient basis the general quaternionic sesquilinear form has the Gram
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the definitions and dimensions of the remarkable subspaces
 - *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the definitions and the coordinate blocks of the remarkable subspaces
 - *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the restrictions as subspaces, their null cones and their automorphism groups
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the positive definite general plain sesquilinear form
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the positive definite general plain sesquilinear form
 - *Krein Orthogonality and the Fundamental Decomposition* (`articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md`) and *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the two companion articles of this layer
 - *Quadratic Forms and Polarisation* (`articles_maths/quadratic-forms-and-polarisation.md`), for Sylvester's law, congruence and the discriminant

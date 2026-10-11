@@ -122,7 +122,7 @@ e_1\bullet(e_1\bullet e_2)=e_1\bullet 0=0 .
 $$
 
 *Proof.* The products of the basis are the quaternion table with the six off-diagonal vector entries set
-to $0$, so $e_1\bullet e_2=0$ and the two bracketings differ. Verified on the basis.
+to $0$, so $e_1\bullet e_2=0$ and the two bracketings differ.
 
 The failure of associativity is what makes the block a Jordan algebra rather than an associative one, and
 the Jordan identity is the substitute it keeps. The block is weaker than associativity, and the two
@@ -139,8 +139,7 @@ operation reads $\tfrac12(e_ie_j+e_je_i)=-\delta_{ij}e_0$, that is $\{e_i,e_j\}=
 two real pure vectors the symmetrised product is central,
 $\tfrac12(\mathbf P\mathbf Q+\mathbf Q\mathbf P)=-(\mathbf P\!\cdot\!\mathbf Q)\,e_0$. **The scalar part
 of the symmetrised composition is the scalar product of the two directions**, which is the
-anticommutation relation from which a Clifford algebra is built. *Verified on the basis and on $100$
-random real pure pairs, max deviation $4.4\times10^{-16}$.*
+anticommutation relation from which a Clifford algebra is built.
 
 ## The Square of an Element
 
@@ -151,7 +150,7 @@ $$
 $$
 
 *Proof.* $\tilde Q\bullet\tilde Q=\tfrac12(\tilde Q^{2}+\tilde Q^{2})=\tilde Q^{2}$, and the displayed
-form is the scalar-vector rule with $\tilde P=\tilde Q$. Verified on the coordinate rule.
+form is the scalar-vector rule with $\tilde P=\tilde Q$.
 
 The square is the diagonal of the operation, and it is the ordinary square because the antisymmetric part
 vanishes on the diagonal: an alternating operation has zero diagonal, so the square carries the symmetric
@@ -260,7 +259,7 @@ symmetrisation of two material operations leaves the sector.
 *Proof.* The anticommutator of two anti-Hermitian elements is Hermitian and the commutator is
 anti-Hermitian, as the display records; the closure failure is the case
 $ie_0\bullet ie_0=(ie_0)^{2}=-e_0$ of *Remarkable Subspaces under the Symmetric Plain Algebra of
-Biquaternions*. Verified on random pairs of $\mathbb{M}_-$ elements.
+Biquaternions*.
 
 **Proposed reading, labelled as such.** The symmetrised plain product is read as the **order-free
 composition of two material operations**. The ordinary product of two material elements is the full
@@ -354,20 +353,20 @@ order. The Jordan identity is a law of the algebra and not a statement about mea
 ## Further Reading
 
 - Pascual Jordan, John von Neumann and Eugene Wigner, "On an Algebraic Generalization of the Quantum
-  Mechanical Formalism" (1934), for the origin of the symmetrised product and the Jordan identity.
+Mechanical Formalism" (1934), for the origin of the symmetrised product and the Jordan identity.
 - Mathematics article *Introduction to the Symmetric Plain Algebra of Biquaternions*, for the operation,
-  its class, its table, its square and its placement among the twelve.
+its class, its table, its square and its placement among the twelve.
 - Mathematics article *The Symmetric and Antisymmetric Parts of an Algebra Product*, for the splitting,
-  its projections and its uniqueness.
+its projections and its uniqueness.
 - Mathematics article *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain
-  Algebra*, for the square, the quadratic identity, the idempotents and the norm of the block.
+Algebra*, for the square, the quadratic identity, the idempotents and the norm of the block.
 - Mathematics article *Jordan Algebras* and *Special and Exceptional Jordan Algebras*, for the Jordan
-  identity, the symmetrisation of an associative algebra and the special class.
+identity, the symmetrisation of an associative algebra and the special class.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space*, for the
-  twelve operations and the uniqueness of the Jordan and Jacobi laws.
+twelve operations and the uniqueness of the Jordan and Jacobi laws.
 - Companion article *The Ordinary Product and the Material Sector*, for the ordinary product, its scalar
-  form and the sector structure of a material composite.
+form and the sector structure of a material composite.
 - Companion article *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical
-  Composition*, for the reading of the block on the Hermitian sector.
+Composition*, for the reading of the block on the Hermitian sector.
 - Companion article *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*, for the
-  antisymmetric half and its Jacobi identity.
+antisymmetric half and its Jacobi identity.

@@ -76,7 +76,7 @@ $$
 \sigma^{0k}\gamma_5 = \text{(anti-Hermitian)},\qquad \sigma^{ij}\gamma_5 = \text{(Hermitian)}.
 $$
 
-Both statements were recomputed in the block basis. The pattern is the standard one: $\gamma^0$ is Hermitian and $\gamma^k$ anti-Hermitian; the boost generators $\sigma^{0k}$ therefore change sign under Hermitian conjugation while the rotation generators $\sigma^{ij}$ do not, and $\gamma_5$, being Hermitian and anticommuting with the $\gamma^\mu$, conjugates the same way as $\gamma_5^2$ would suggest. **The $\mathbf{E}$-coupling insertion is the anti-Hermitian one.**
+The pattern is the standard one: $\gamma^0$ is Hermitian and $\gamma^k$ anti-Hermitian; the boost generators $\sigma^{0k}$ therefore change sign under Hermitian conjugation while the rotation generators $\sigma^{ij}$ do not, and $\gamma_5$, being Hermitian and anticommuting with the $\gamma^\mu$, conjugates the same way as $\gamma_5^2$ would suggest. **The $\mathbf{E}$-coupling insertion is the anti-Hermitian one.**
 
 **The Hodge duality.** The two families of insertions are dual to each other. In terms of the totally antisymmetric symbol,
 

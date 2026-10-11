@@ -83,7 +83,7 @@ $$
 
 since the sum is over $y' = (x,z)$ with $r(y') = x = r(x,y)$ and $(y')^{-1}(x,y) = (z,x)(x,y) = (z,y)$. Hence the convolution algebra is the algebra $M_n(\mathbb{C})$ of $n\times n$ matrices, the involution is the conjugate transpose, $(f^*)(x,y) = \overline{f(y,x)}$, and the algebra has dimension $\lvert G\rvert = n^2$. These statements have been checked exactly in rational arithmetic for $n = 2,3$ on random integer functions: the convolution is associative, it satisfies $(f*g)^* = g^*\!*f^*$, it agrees with the matrix product under the identification $f \leftrightarrow F$, and the involution agrees with the transpose.
 
-**Example (a finite transformation groupoid).** Let $H = \mathbb{Z}/2$ act on $X = \{1,2\}$ by the swap. The transformation groupoid has four arrows and two units, so its convolution algebra has dimension $4$; the underlying algebra is $\mathbb{C}^2\rtimes\mathbb{Z}/2 \cong M_2(\mathbb{C})$, in agreement with the finite-dimensional count of *Crossed Products of C*-Algebras*. The composition and the associativity of the convolution have been verified exactly on $200$ random rational functions on the groupoid.
+**Example (a finite transformation groupoid).** Let $H = \mathbb{Z}/2$ act on $X = \{1,2\}$ by the swap. The transformation groupoid has four arrows and two units, so its convolution algebra has dimension $4$; the underlying algebra is $\mathbb{C}^2\rtimes\mathbb{Z}/2 \cong M_2(\mathbb{C})$, in agreement with the finite-dimensional count of *Crossed Products of C*-Algebras*.
 
 ### The Full and Reduced Groupoid Algebras
 

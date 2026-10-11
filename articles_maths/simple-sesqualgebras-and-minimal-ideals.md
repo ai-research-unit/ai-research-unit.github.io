@@ -20,7 +20,7 @@ The two **products** behave differently, and this is the second point. The sesqu
 
 **Proposition.** If $A$ is simple then $A$ is invariant-simple.
 
-**Proof.** A $\ast$-ideal is a two-sided ideal, so a proper $\ast$-ideal is a proper two-sided ideal. If the only two-sided ideals are $0$ and $A$, the only $\ast$-ideals are $0$ and $A$. $\square$
+**Proof.** A $\ast$-ideal is a two-sided ideal, so a proper $\ast$-ideal is a proper two-sided ideal. If the only two-sided ideals are $0$ and $A$, the only $\ast$-ideals are $0$ and $A$.
 
 **Remark.** The proof uses the definition of the $\ast$-ideal and nothing else, and on its own it is weaker than the equivalence proved next. The obstruction it does not touch is the map $I \mapsto I^{*}$, which sends a two-sided ideal to a two-sided ideal and might a priori send it to a different one; the point of the next theorem is that in the derived model this cannot happen.
 
@@ -30,11 +30,11 @@ The converse of the proposition needs one computation, and the unit supplies it.
 
 **Lemma.** A $\ast$-ideal is a two-sided $\star$-ideal.
 
-**Proof.** For a $\ast$-stable $I$ one has $A \star I = AI^{*} = AI \subseteq I$ and $I \star A = IA^{*} = IA \subseteq I$, because $I$ is a two-sided algebra ideal. $\square$
+**Proof.** For a $\ast$-stable $I$ one has $A \star I = AI^{*} = AI \subseteq I$ and $I \star A = IA^{*} = IA \subseteq I$, because $I$ is a two-sided algebra ideal.
 
 **Theorem.** In the derived model $x \star y = xy^{*}$ with a unit $1$, every two-sided $\star$-ideal is stable under the involution; consequently $A$ is invariant-simple if and only if $A$ is simple.
 
-**Proof.** Let $I$ be a two-sided $\star$-ideal. Since $1 \in A$ and $1 \star i = i^{*}$ for $i \in I$, the conjugate of every element of $I$ lies in $A \star I \subseteq I$, so $I^{*} \subseteq I$; applying the involution, which is of order two, gives $I = (I^{*})^{*} \subseteq I^{*}$, hence $I^{*} = I$. With $I$ stable, the two $\star$-conditions read $AI \subseteq I$ and $IA \subseteq I$, so $I$ is a two-sided algebra ideal as well, that is, a $\ast$-ideal. Every two-sided $\star$-ideal is therefore a $\ast$-ideal, and by the lemma the two classes of two-sided ideals coincide. An invariant-simple algebra has no proper $\ast$-ideal, hence no proper two-sided $\star$-ideal, hence is simple; the converse is the proposition. $\square$
+**Proof.** Let $I$ be a two-sided $\star$-ideal. Since $1 \in A$ and $1 \star i = i^{*}$ for $i \in I$, the conjugate of every element of $I$ lies in $A \star I \subseteq I$, so $I^{*} \subseteq I$; applying the involution, which is of order two, gives $I = (I^{*})^{*} \subseteq I^{*}$, hence $I^{*} = I$. With $I$ stable, the two $\star$-conditions read $AI \subseteq I$ and $IA \subseteq I$, so $I$ is a two-sided algebra ideal as well, that is, a $\ast$-ideal. Every two-sided $\star$-ideal is therefore a $\ast$-ideal, and by the lemma the two classes of two-sided ideals coincide. An invariant-simple algebra has no proper $\ast$-ideal, hence no proper two-sided $\star$-ideal, hence is simple; the converse is the proposition.
 
 **Remark.** The unit is what makes the theorem work: it supplies the single product $1 \star i = i^{*}$ that drags the conjugate into the ideal. In the abstract sesqualgebra of *Ideals and Quotients of a Sesqualgebra*, where the product is not tied to the involution, the corresponding step is unavailable and a two-sided ideal need not be stable; the example of the principal ideal $(x - i)$ there is the witness. The derived model is thus the case in which the second scalar rule is strong enough to close that gap, and the coincidence of the two notions of simplicity is a consequence of the model, not of the definitions.
 
@@ -50,7 +50,7 @@ By the theorem the two-sided $\star$-ideals are the $\ast$-ideals, so the invari
 
 **Proposition.** In the derived model with a unit, a one-sided $\star$-ideal is stable: if $I$ is a left $\star$-ideal or a right $\star$-ideal then $I^{*} = I$.
 
-**Proof.** For a left $\star$-ideal, $i^{*} = 1 \star i \in A \star I \subseteq I$ for $i \in I$, so $I^{*} \subseteq I$ and hence $I = I^{*}$ as above. For a right $\star$-ideal the same computation is read on the other side: $i^{*} = i^{*} \star 1 \in I \star A \subseteq I$, using $1^{*} = 1$. $\square$
+**Proof.** For a left $\star$-ideal, $i^{*} = 1 \star i \in A \star I \subseteq I$ for $i \in I$, so $I^{*} \subseteq I$ and hence $I = I^{*}$ as above. For a right $\star$-ideal the same computation is read on the other side: $i^{*} = i^{*} \star 1 \in I \star A \subseteq I$, using $1^{*} = 1$.
 
 **Remark.** The definitions differ from the algebra ideals by the conjugate on the ideal rather than on the algebra: $I$ is a left $\star$-ideal when $AI^{*} \subseteq I$, not when $AI \subseteq I$. The identities $1 \star i = i^{*}$ and $i^{*} \star 1 = i^{*}$ that stabilise the one-sided ideals are the same ones that drive the theorem above, and they are also what makes the $\ast$-ideals insensitive to the choice of product.
 
@@ -66,11 +66,11 @@ By the theorem the two-sided $\star$-ideals are the $\ast$-ideals, so the invari
 
 **Theorem.** Let $A$ be semisimple and let $e$ be a primitive idempotent. Then $Ae$ is a minimal left ideal and the conjugate image $(Ae)^{*} = e^{*}A$ is a minimal right ideal, and the involution matches the two collections: it sends the minimal left ideal $Ae$ to the minimal right ideal $e^{*}A$, and the minimal right ideal $eA$ to the minimal left ideal $Ae^{*}$.
 
-**Proof.** That $Ae$ is minimal is the recall. Since $*$ is bijective and anti-multiplicative, $(Ae)^{*} = e^{*}A^{*} = e^{*}A$, which is a minimal right ideal by the right-hand form of the recall applied to the primitive idempotent $e^{*}$. The last statement is the same computation with $e$ and $e^{*}$ exchanged. $\square$
+**Proof.** That $Ae$ is minimal is the recall. Since $*$ is bijective and anti-multiplicative, $(Ae)^{*} = e^{*}A^{*} = e^{*}A$, which is a minimal right ideal by the right-hand form of the recall applied to the primitive idempotent $e^{*}$. The last statement is the same computation with $e$ and $e^{*}$ exchanged.
 
 **Corollary.** If $e$ is a Hermitian primitive idempotent then $(Ae)^{*} = eA$, so the minimal left ideal $Ae$ and the minimal right ideal $eA$ are conjugate, and the corner $eAe$ is a $\ast$-stable subalgebra that is a division algebra.
 
-**Proof.** For a Hermitian $e$ one has $(Ae)^{*} = eA$ with $e^{*} = e$, the corner is stable by *Hermitian Idempotents and the Peirce Decomposition*, and it is a division algebra by the recall. $\square$
+**Proof.** For a Hermitian $e$ one has $(Ae)^{*} = eA$ with $e^{*} = e$, the corner is stable by *Hermitian Idempotents and the Peirce Decomposition*, and it is a division algebra by the recall.
 
 ### Minimal Two-Sided Ideals and Central Idempotents
 
@@ -80,11 +80,11 @@ The two-sided case runs along the centre.
 
 **Theorem.** Let $z$ be a central idempotent. Then $Az$ and $A(1-z)$ are two-sided ideals with $A = Az \oplus A(1-z)$, and $Az$ is a $\ast$-ideal if and only if $z$ is Hermitian.
 
-**Proof.** The decomposition is the Peirce decomposition relative to a central idempotent, in *Unital Algebras*, §*Idempotents and the Peirce Decomposition*. Since $z$ is central so is $z^{*}$, and $(Az)^{*} = z^{*}A = Az^{*}$. Suppose $Az = Az^{*}$. Then $z \in Az^{*}$, and every element of $Az^{*}$ is annihilated by $1 - z^{*}$ since $z^{*}$ is central and idempotent; hence $z = z z^{*}$, and symmetrically $z^{*} = z^{*} z$. As $z$ and $z^{*}$ are both central they commute, so $z = z z^{*} = z^{*} z = z^{*}$. Conversely $z^{*} = z$ plainly gives $Az^{*} = Az$. $\square$
+**Proof.** The decomposition is the Peirce decomposition relative to a central idempotent, in *Unital Algebras*, §*Idempotents and the Peirce Decomposition*. Since $z$ is central so is $z^{*}$, and $(Az)^{*} = z^{*}A = Az^{*}$. Suppose $Az = Az^{*}$. Then $z \in Az^{*}$, and every element of $Az^{*}$ is annihilated by $1 - z^{*}$ since $z^{*}$ is central and idempotent; hence $z = z z^{*}$, and symmetrically $z^{*} = z^{*} z$. As $z$ and $z^{*}$ are both central they commute, so $z = z z^{*} = z^{*} z = z^{*}$. Conversely $z^{*} = z$ plainly gives $Az^{*} = Az$.
 
 **Corollary.** Let $A$ be semisimple. The minimal two-sided ideals of $A$ are the ideals $Az$ generated by the central primitive idempotents $z$, and they are $\ast$-ideals exactly when those idempotents are Hermitian. A $\star$-simple algebra has no proper nonzero two-sided $\star$-ideal, so its only minimal two-sided $\star$-ideal is $A$ itself; it may still have proper two-sided algebra ideals.
 
-**Proof.** The generation of the simple direct factors by central primitive idempotents is the standard structure of a semisimple algebra, recorded in *List of Rings by Their Idempotents*. The stability criterion is the theorem above. $\square$
+**Proof.** The generation of the simple direct factors by central primitive idempotents is the standard structure of a semisimple algebra, recorded in *List of Rings by Their Idempotents*. The stability criterion is the theorem above.
 
 **Remark.** For a noncentral primitive idempotent $e$, the ideal $AeA$ is a nonzero two-sided algebra ideal, and in an algebra with no proper two-sided algebra ideal it is all of $A$; in general it may be proper, which is a way in which a $\star$-simple algebra can fail to be simple for the algebra product. The left ideal $Ae$ is proper nevertheless, and it stays inside the two-sided lattice only by being one-sided: it is exactly one-sidedness, not size, that lets a minimal ideal escape a simplicity condition stated two-sidedly.
 
@@ -94,7 +94,7 @@ The two-sided case runs along the centre.
 
 **Theorem.** If $A$ is unital with $1 \neq 0$ and has no proper two-sided algebra ideal, then the centre $Z(A)$ is a field.
 
-**Proof.** The centre is a commutative ring with $1$. For $0 \neq z \in Z(A)$ the set $AzA$ is a nonzero two-sided algebra ideal, so $AzA = A$ and $1 = \sum_i a_i z b_i$ for finitely many $a_i, b_i \in A$. Since $z$ is central, $1 = z \sum_i a_i b_i = \bigl(\sum_i a_i b_i\bigr) z$, so $u = \sum_i a_i b_i$ is a two-sided inverse of $z$. The inverse is central: for any $x$ one has $x u = u z x u = u x z u = u x$, using $z u = u z = 1$. Hence every nonzero central element is a unit with central inverse, so $Z(A)$ is a field. $\square$
+**Proof.** The centre is a commutative ring with $1$. For $0 \neq z \in Z(A)$ the set $AzA$ is a nonzero two-sided algebra ideal, so $AzA = A$ and $1 = \sum_i a_i z b_i$ for finitely many $a_i, b_i \in A$. Since $z$ is central, $1 = z \sum_i a_i b_i = \bigl(\sum_i a_i b_i\bigr) z$, so $u = \sum_i a_i b_i$ is a two-sided inverse of $z$. The inverse is central: for any $x$ one has $x u = u z x u = u x z u = u x$, using $z u = u z = 1$. Hence every nonzero central element is a unit with central inverse, so $Z(A)$ is a field.
 
 **Remark.** The hypothesis is simplicity for the product by juxtaposition, and it is strictly stronger than simplicity for $\star$. The algebra $\mathbb{F}_2 \times \mathbb{F}_2$ with the exchange involution is $\star$-simple and invariant-simple, and its centre is $\mathbb{F}_2 \times \mathbb{F}_2$, not a field; the point is that $\mathbb{F}_2 \times 0$ is a proper two-sided algebra ideal even though it is not a $\star$-ideal. For an algebra that is simple for the product by juxtaposition the centre is a field, and it may be larger than the scalars: $M_n(\mathbb{C})$ has centre $\mathbb{C}$, the quaternions have centre $\mathbb{R}$, and an algebra over $R$ whose centre is $R$ is central, in the sense of *Central Simple Algebras and the Brauer Group*.
 
@@ -104,7 +104,7 @@ The two-sided case runs along the centre.
 
 **Proposition.** An algebra with no proper two-sided algebra ideal need not be a division algebra and may have zero divisors, and a commutative one is a field and has none.
 
-**Proof.** For the commutative case, the centre of the commutative algebra is the algebra itself, so the theorem above makes it a field. For the failure in the noncommutative case, the matrix model below exhibits two Hermitian idempotents with product $0$. $\square$
+**Proof.** For the commutative case, the centre of the commutative algebra is the algebra itself, so the theorem above makes it a field. For the failure in the noncommutative case, the matrix model below exhibits two Hermitian idempotents with product $0$.
 
 **Remark.** Simplicity constrains the two-sided ideals and says nothing about the one-sided ones. A zero divisor is the shadow of a proper one-sided ideal: if $xy = 0$ with $x \neq 0$ and $y \neq 0$, then $x$ is not a unit, and the left annihilator of $y$ is a nonzero left ideal which is proper because it omits $1$. A simple algebra may therefore be a full matrix algebra rather than a division algebra, and the one-sided ideals, not the two-sided ones, are what separate the two cases.
 

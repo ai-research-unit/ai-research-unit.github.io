@@ -262,4 +262,4 @@ The left multiplications of the four are the general plain bilinear ones read th
 
 - *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four definitions and their scalar–vector forms.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table of the four.
-- *The Enveloping Algebra of the Biquaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for the left and right multiplications as operators.
+- *The Enveloping Algebra of the General Plain Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-algebra-of-the-general-plain-algebra-and-the-bi-module-structure.md`), for the left and right multiplications as operators.

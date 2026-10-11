@@ -104,7 +104,7 @@ $$
 \boxed{\;\text{fully polarized states}=\text{the biquaternion-norm cone of }\mathbb{M}_+=\text{the Poincaré sphere}\;}
 $$
 
-for the beam, and the same cone is the idempotent manifold of the sector. The unpolarized state $S_0\neq0$, $\mathbf S=0$ is the centre of the ball; the partially polarized states are the interior points $0<P<1$; and the closure of the interior is the ball of radius $S_0$, with the cone as its boundary. Depolarization moves the coherence biquaternion inward along a radius, and the cone is the extremal boundary where the coherence is complete.
+for the beam, and the same cone is the Hermitian idempotent sphere of the sector. The unpolarized state $S_0\neq0$, $\mathbf S=0$ is the centre of the ball; the partially polarized states are the interior points $0<P<1$; and the closure of the interior is the ball of radius $S_0$, with the cone as its boundary. Depolarization moves the coherence biquaternion inward along a radius, and the cone is the extremal boundary where the coherence is complete.
 
 ## Polarizers and Phase Shifters as Algebra Elements
 
@@ -152,7 +152,6 @@ acting by $\tilde\rho \mapsto \tilde U\tilde\rho\,\tilde U^{*}$ with $\tilde U^{
 
 **Two kinds of operation.** The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general lossless optical element is a product of the two — a rotor for the retardation and a projector for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$.
 
-**Verification.** For a hundred random axes and states: $\tilde\Pi_{\hat{\mathbf n}}$ idempotent and Hermitian, the complementary pair summing to $e_0$ with vanishing product, the rank-one identity $\tilde\Pi\tilde\rho\tilde\Pi = \mathrm{Tr}(\tilde\rho\tilde\Pi)\tilde\Pi$, the rotor unitary with $\tilde U\tilde U^{*} = e_0$, and the invariance of $S_0$ and $\hat{\mathbf n}\cdot\mathbf S$ under the rotor with the transverse part rotated by $\alpha$ — all to machine precision.
 
 ## Pancharatnam's In-Phase Criterion
 
@@ -298,7 +297,7 @@ The analogy with the dynamical case is exact at the level of the geometry. For t
 
 1. The coherence matrix is an element of the Hermitian sector $\mathbb{M}_+$; written as a biquaternion, it is $\tilde\rho=\frac12(S_0e_0+i\mathbf S\cdot\tilde e)$.
 2. The biquaternion norm on $\mathbb{M}_+$ is indefinite, $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$, and the **degree of polarization** is $P^2=1-4N(\tilde\rho)/S_0^2$.
-3. The fully polarized states are the **biquaternion-norm cone** $N(\tilde\rho)=0$, which after normalisation is the Poincaré sphere; it is simultaneously the idempotent manifold of the sector. The unpolarized state is the centre, and the partially polarized states are the interior.
+3. The fully polarized states are the **biquaternion-norm cone** $N(\tilde\rho)=0$, which after normalisation is the Poincaré sphere; it is simultaneously the Hermitian idempotent sphere of the sector. The unpolarized state is the centre, and the partially polarized states are the interior.
 4. The Pancharatnam connection on the cone has curvature $-\frac12\,d\Omega$, half the area form, so the phase around a circuit is $-\frac12$ of the enclosed solid angle, and the three-polarizer rule and Girard's theorem follow.
 5. The half-strength curvature and the half-solid-angle rule are the double-cover factor: the amplitude is the spinor of the Stokes vector, and the dynamical counterpart of the same geometry gives the full solid angle.
 
@@ -307,7 +306,7 @@ The analogy with the dynamical case is exact at the level of the geometry. For t
 Pancharatnam's phase is the classical optical geometric phase, and in the biquaternion algebra it is the holonomy of the natural connection on the biquaternion-norm cone of the Hermitian sector.
 
 - A beam's polarization is described by its coherence biquaternion $\tilde\rho=\frac12(S_0e_0+i\mathbf S\cdot\tilde e)\in\mathbb{M}_+$, with $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$ and degree of polarization $P^2=1-4N(\tilde\rho)/S_0^2$.
-- The fully polarized states are the cone $N(\tilde\rho)=0$, which is the Poincaré sphere after normalisation and the idempotent manifold of $\mathbb{M}_+$; the unpolarized state is the centre and the partially polarized states the interior.
+- The fully polarized states are the cone $N(\tilde\rho)=0$, which is the Poincaré sphere after normalisation and the Hermitian idempotent sphere of $\mathbb{M}_+$; the unpolarized state is the centre and the partially polarized states the interior.
 - Pancharatnam's in-phase criterion, $\arg\langle A|B\rangle$, defines the connection $\mathcal A=i\langle J|dJ\rangle=-\frac12(1-\cos\theta)d\phi$ on the ray space, in the horizontal gauge of the amplitude written in the circular basis.
 - The curvature is $\mathcal F=-\frac12\sin\theta\,d\theta\wedge d\phi=-\frac12\,d\Omega$, so the phase around a circuit is $-\frac12$ of the enclosed solid angle; the three-state rule is $\gamma_{\mathrm{Panch}}=-\arg(\langle A|B\rangle\langle B|C\rangle\langle C|A\rangle)=-\Omega_{ABC}/2$, and Girard's theorem gives $\Omega_{ABC}=\alpha+\beta+\gamma-\pi$.
 - The dynamical counterpart (Hannay's angle) transports the Stokes vector rather than the amplitude and accumulates the full solid angle; the factor $\tfrac12$ is the double cover, the amplitude being the spinor of the Stokes vector.

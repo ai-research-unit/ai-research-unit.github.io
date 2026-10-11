@@ -20,7 +20,7 @@ $$
 
 **Proposition.** The associator is additive in each variable, $R$-linear in the first variable, and $\varsigma$-semilinear in the second; it vanishes identically if and only if the product is associative.
 
-**Proof.** Both groupings are additive in each variable, because the product is, so the difference is; in the first variable, both groupings are linear, so $[\lambda x, y, z] = \lambda [x, y, z]$; in the second variable, both groupings are $\varsigma$-semilinear, so $[x, \lambda y, z] = \varsigma(\lambda)[x, y, z]$. The product is associative exactly when the two groupings agree for all $x, y, z$, which is the vanishing of the difference. $\square$
+**Proof.** Both groupings are additive in each variable, because the product is, so the difference is; in the first variable, both groupings are linear, so $[\lambda x, y, z] = \lambda [x, y, z]$; in the second variable, both groupings are $\varsigma$-semilinear, so $[x, \lambda y, z] = \varsigma(\lambda)[x, y, z]$. The product is associative exactly when the two groupings agree for all $x, y, z$, which is the vanishing of the difference.
 
 **Remark.** With the third variable fixed the associator is $R$-bilinear as a map $A \times A^{\varsigma} \to A$ in its first two variables, and the vanishing criterion is the sense in which the associator measures associativity without deciding it: associativity is an identity of two products, and the associator is the difference of those two products, so "associative" is exactly "$[\,,\,,\,] = 0$".
 
@@ -40,13 +40,13 @@ $$
 
 which is neither $\lambda [x,y,z]$ nor $\varsigma(\lambda)[x,y,z]$ unless $[x,y,z] = 0$.
 
-**Proof.** For $A$: it is linear in $x$ because it is a product in the first slot of an outer product; its second variable passes through the inner product as a second slot and then through the outer product as a first slot, so it is $\varsigma$-semilinear in $y$; its third variable is the second slot of the outer product, so $A(x,y,\lambda z) = \varsigma(\lambda) A(x,y,z)$. Reading the second variable on $A^{\varsigma}$ and the third on $A^{\varsigma}$ makes $A$ trilinear. For $B$: it is linear in $x$; its second variable is the first slot of the inner product and then the second slot of the outer product, hence $\varsigma$-semilinear in $y$; its third variable is the second slot of the inner product and then the second slot of the outer product, and the two conjugations cancel, so $B(x,y,\lambda z) = \lambda B(x,y,z)$. Reading the second variable on $A^{\varsigma}$ makes $B$ trilinear on $A \times A^{\varsigma} \times A$. The last display is the two scalar rules subtracted. $\square$
+**Proof.** For $A$: it is linear in $x$ because it is a product in the first slot of an outer product; its second variable passes through the inner product as a second slot and then through the outer product as a first slot, so it is $\varsigma$-semilinear in $y$; its third variable is the second slot of the outer product, so $A(x,y,\lambda z) = \varsigma(\lambda) A(x,y,z)$. Reading the second variable on $A^{\varsigma}$ and the third on $A^{\varsigma}$ makes $A$ trilinear. For $B$: it is linear in $x$; its second variable is the first slot of the inner product and then the second slot of the outer product, hence $\varsigma$-semilinear in $y$; its third variable is the second slot of the inner product and then the second slot of the outer product, and the two conjugations cancel, so $B(x,y,\lambda z) = \lambda B(x,y,z)$. Reading the second variable on $A^{\varsigma}$ makes $B$ trilinear on $A \times A^{\varsigma} \times A$. The last display is the two scalar rules subtracted.
 
 **Remark.** The two groupings are not two trilinear maps on the same module: the third slot is on $A^{\varsigma}$ for $A$ and on $A$ for $B$, and no single module makes both linear in that slot. The associator is therefore the difference of a trilinear map and a trilinear map of the other parity in the third slot, and it is not homogeneous in that slot. This is the twist the associator carries, and it is why the associator is not itself a trilinear object: it carries one definite parity in each of the first two slots and a difference of parities in the third.
 
 **Corollary.** An algebra of full type with a nontrivial involution is not associative; its associator is not identically zero, and the two trilinear groupings $A$ and $B$, which live on two different modules, are distinct maps.
 
-**Proof.** The collapse theorem of *Sesqualgebras*: associativity forces $\varsigma = \mathrm{id}$ for an algebra of full type. So with $\varsigma \neq \mathrm{id}$ the product is not associative, and by the proposition above the associator does not vanish identically, which is $A \neq B$ somewhere. $\square$
+**Proof.** The collapse theorem of *Sesqualgebras*: associativity forces $\varsigma = \mathrm{id}$ for an algebra of full type. So with $\varsigma \neq \mathrm{id}$ the product is not associative, and by the proposition above the associator does not vanish identically, which is $A \neq B$ somewhere.
 
 ### The Associator of the Derived Product
 
@@ -58,7 +58,7 @@ $$
 
 which is $R$-linear in $x$ and $\varsigma$-semilinear in $y$, in agreement with the general theorem.
 
-**Proof.** This is the associator proposition of *Sesqualgebras*, read in the present notation: $(x \star y) \star z = xy^{*}z^{*}$ and $x \star (y \star z) = xz y^{*}$, whose difference is $x(y^{*}z^{*} - zy^{*}) = x((zy)^{*} - zy^{*})$. $\square$
+**Proof.** This is the associator proposition of *Sesqualgebras*, read in the present notation: $(x \star y) \star z = xy^{*}z^{*}$ and $x \star (y \star z) = xz y^{*}$, whose difference is $x(y^{*}z^{*} - zy^{*}) = x((zy)^{*} - zy^{*})$.
 
 **Corollary.** The derived operation is associative if and only if $x\bigl((zy)^{*} - zy^{*}\bigr) = 0$ for all $x, y, z$. For an $A$ with zero left annihilator this is the condition $(zy)^{*} = zy^{*}$ for all $y, z$, and for a unital $A$ it holds if and only if the involution is the identity; the proof is in *Sesqualgebras*.
 
@@ -76,7 +76,7 @@ $$
 
 **Proposition.** The ternary product is additive in each variable, $R$-linear in the first and the third variables, and $\varsigma$-semilinear in the middle variable; it satisfies the Hermitian symmetry $\{x,y,z\}^{*} = \{z^{*}, y^{*}, x^{*}\}$, and the plain symmetry $\{x,y,z\} = \{z,y,x\}$ fails as soon as the algebra is noncommutative.
 
-**Proof.** The parity is read from $xy^{*}z$: a scalar in $x$ or in $z$ is a scalar of one of the products, and a scalar in $y$ meets the involution and is sent to $\varsigma(\lambda)$. The symmetry is $(xy^{*}z)^{*} = z^{*}yx^{*} = \{z^{*}, y^{*}, x^{*}\}$; the plain symmetry would read $xy^{*}z = zy^{*}x$. $\square$
+**Proof.** The parity is read from $xy^{*}z$: a scalar in $x$ or in $z$ is a scalar of one of the products, and a scalar in $y$ meets the involution and is sent to $\varsigma(\lambda)$. The symmetry is $(xy^{*}z)^{*} = z^{*}yx^{*} = \{z^{*}, y^{*}, x^{*}\}$; the plain symmetry would read $xy^{*}z = zy^{*}x$.
 
 **Remark.** The parity of the ternary product is the parity of the binary product with one slot promoted: the binary product is linear in the first slot and $\varsigma$-semilinear in the second, and the ternary product is linear in the two outer slots and $\varsigma$-semilinear in the middle. The middle slot is where the conjugation sits, and the two outer slots are the linear slots that flank it; the ternary product is not a linearisation of the binary one — the two do not even have the same number of arguments — but the parity of the middle slot is the parity of the second slot of the binary product, and the outer slots carry no conjugation.
 
@@ -102,7 +102,7 @@ $$
 
 so the ternary product determines the binary derived operation and the involution; since the original product is $xy = x \star y^{*}$, with $y^{*} = \{1,y,1\}$, the ternary product determines the algebra as well.
 
-**Proof.** $\{x,y,1\} = (x \star y) \star 1^{*} = (x \star y) \star 1 = xy^{*}1 = xy^{*} = x \star y$, and $\{1,y,1\} = (1 \star y) \star 1^{*} = y^{*} \star 1 = y^{*}$. The original product is then $xy = x \star y^{*}$, because $(y^{*})^{*} = y$. $\square$
+**Proof.** $\{x,y,1\} = (x \star y) \star 1^{*} = (x \star y) \star 1 = xy^{*}1 = xy^{*} = x \star y$, and $\{1,y,1\} = (1 \star y) \star 1^{*} = y^{*} \star 1 = y^{*}$. The original product is then $xy = x \star y^{*}$, because $(y^{*})^{*} = y$.
 
 **Remark.** The ternary product carries strictly more than the binary one: from $\{x,y,1\}$ one recovers the derived operation, and from $\{1,y,1\}$ the involution, while the derived operation alone does not determine the involution, which is part of the datum by *Sesqualgebras*. This is the precise sense in which the binary product is read as the **shadow** of the ternary one: the binary operation is the ternary operation with the unit in the third slot, and the whole ternary operation is what the failure of associativity forces one to consider.
 

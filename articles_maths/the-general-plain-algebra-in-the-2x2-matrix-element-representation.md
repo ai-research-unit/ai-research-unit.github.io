@@ -7,7 +7,7 @@ The reading group *Topology on the Introduction to the General Plain Algebra of 
 
 The plain product becomes the matrix product under $\mathsf{M}_2$, and the general plain bilinear form becomes the plain trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q}))$. The two facts are the whole content of the group law on the matrices: the product transports because $\mathsf{M}_2$ is an algebra isomorphism, and the trace carries the scalar part because $\mathrm{Sc}(\tilde{R}\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{R})\mathsf{M}_2(\tilde{S}))$.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; a generic element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the scalar part is $\mathrm{Sc}$, the sign vector is $\varepsilon=(1,-1,-1,-1)$, the natural conjugation ${}^{\natural}$ negates $e_1,e_2,e_3$, and the Hermitian conjugation is ${}^{*}={}^{\natural}\circ\bar{\cdot}$. All matrix claims of this article are recomputed in the verification script of the pass.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; a generic element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the scalar part is $\mathrm{Sc}$, the sign vector is $\varepsilon=(1,-1,-1,-1)$, the natural conjugation ${}^{\natural}$ negates $e_1,e_2,e_3$, and the Hermitian conjugation is ${}^{*}={}^{\natural}\circ\bar{\cdot}$.
 
 ## The Representation
 
@@ -148,6 +148,6 @@ The matrix realization $\mathsf{M}_2$ turns the plain product of the algebra int
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the realization and its first properties
 - *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the further reading of the isomorphism
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the general plain bilinear form and its comparison with the other three
-- *Association and the Transpose on the Biquaternion Algebra* (`articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md`), for the operators of this group
+- *Association and the Transpose on the General Plain Algebra* (`articles_maths/association-and-the-transpose-on-the-general-plain-algebra.md`), for the operators of this group
 - *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-plain-algebra-in-the-4x4-matrix-element-representation.md`), for the companion reading of the group
 - *Remarkable Subspaces under the General Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction theory of the form

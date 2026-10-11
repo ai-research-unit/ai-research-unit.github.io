@@ -172,17 +172,17 @@ The three answer sets are summarised in one table.
 root is sought, and the table reads together with the remarkable subspaces.
 
 - Sought in the **centre** $\mathbb{C}_{\mathbb{B}}$, the roots are the central ones: $\pm ie_0$ for
-  $-1$ and $\pm e_0$ for $+1$, the two complex structures and the two trivial involutions.
+$-1$ and $\pm e_0$ for $+1$, the two complex structures and the two trivial involutions.
 - Sought **pure**, in the vector subspace, the roots are the sphere $S^{2}$ of real roots of $-1$ (with
-  the wider complex family about it), the cone $\sum_k P_k^{2}=0$ of nilpotents for $0$, and the pure
-  involutions for $+1$.
+the wider complex family about it), the cone $\sum_k P_k^{2}=0$ of nilpotents for $0$, and the pure
+involutions for $+1$.
 - Sought in the **informational sector** $\mathbb{M}_+$, the roots of $+1$ include the Hermitian
-  reflections $i\hat\mu=2\tilde\Pi-e_0$, the reality conditions of the state space.
+reflections $i\hat\mu=2\tilde\Pi-e_0$, the reality conditions of the state space.
 - Sought in the **material sector** $\mathbb{M}_-$, the element $ie_0$ is a root of $-1$ and so is every
-  real unit vector, so the distinguished central root and the whole sphere $S^{2}$ of real roots of $-1$
-  lie in the material sector, while $\mathbb{M}_-$ contains **no** root of $+1$ — the central roots
-  $\pm e_0$ are Hermitian and a pure root would need a real vector of square $-1$ — and **no** nonzero
-  root of $0$.
+real unit vector, so the distinguished central root and the whole sphere $S^{2}$ of real roots of $-1$
+lie in the material sector, while $\mathbb{M}_-$ contains **no** root of $+1$ — the central roots
+$\pm e_0$ are Hermitian and a pure root would need a real vector of square $-1$ — and **no** nonzero
+root of $0$.
 
 The equation is therefore one, and the physical name of its solution is decided by where in the algebra
 the solution lives. This is the content of the reading "three physical answers to one algebraic
@@ -287,11 +287,11 @@ a square root, so that it is the square of some other element. The criterion is 
 condition on the quantity.
 
 - A quantity whose element is **off the nilpotent locus** is realised: it has a square root, and the root
-  is the element of which it is the square.
+is the element of which it is the square.
 - A quantity whose element is a **nonzero nilpotent** is not realised: there is no element whose square it
-  is, and the algebra refuses it.
+is, and the algebra refuses it.
 - The **material sector carries no refusal**: by the corollary above every material four-vector is
-  realised.
+realised.
 
 The three central cases are read the same way: a quantity that is a complex structure, a nilpotent or an
 involution is a quantity whose square is one of the three distinguished values, and the three values are
@@ -324,7 +324,7 @@ classification is the four rows of §*Square Roots of a General Element*; the cr
 has no square root if and only if it is a nonzero nilpotent; every element of the material sector has a
 square root; the conjugate scalar $n$ is the biquaternion norm; the root set is symmetric under
 $\tilde P\to-\tilde P$; and the scalar slice of the ordinary square is the union of the centre and the
-vector subspace. *Verified numerically on the radicands $e_0+e_1$, $-(2+i)e_3$, $2e_0$, $e_1+ie_2$,
+vector subspace.
 $3ie_0+e_1$, $ie_0$, $e_1$ and $ie_0+e_1$.*
 
 **Readings, partly speculative and labelled.** That a root of $-1$ is a **local complex structure** and a
@@ -394,36 +394,36 @@ reality conditions of *Antilinear Structure and the Two Kinds of Mass in Biquate
 ## Further Reading
 
 - A. Dargys and A. Acus, *Square roots of complexified quaternions*, arXiv:2601.08391 (2026), for the
-  general square-root problem of complexified quaternions.
+general square-root problem of complexified quaternions.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford
-  Algebras* **16** (2006) 63–68, for the central case of the roots of $-1$.
+Algebras* **16** (2006) 63–68, for the central case of the roots of $-1$.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the
-  idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the
-  nilpotent cone and the idempotents.
+idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the
+nilpotent cone and the idempotents.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the sphere of imaginary units
-  and the complex structures of the quaternion algebra.
+and the complex structures of the quaternion algebra.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw–Hill, 1980), for the mass shell,
-  the interval and the positive-frequency cone.
+the interval and the positive-frequency cone.
 - Mathematics article *Biquaternion Square Roots of Minus One, Zero and Plus One*
-  (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the three
-  classifications proved directly.
+(`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md`), for the three
+classifications proved directly.
 - Mathematics article *Biquaternion Square Roots of a General Element*
-  (`articles_maths/biquaternion-square-roots-of-a-general-element.md`), for the general classification and
-  the reduced quadratic.
+(`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the general classification and
+the reduced quadratic.
 - Mathematics article *Biquaternion Norm and Invertibility*
-  (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm, the zero-divisor cone, the
-  interval and the mass shell.
+(`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm, the zero-divisor cone, the
+interval and the mass shell.
 - Companion article *Biquaternion Norm and Invertibility*, for the mass shell and the interval owned in
-  physics.
+physics.
 - Companion article *The Local Complex Structure and the Speed of Light*, for the root of $-1$ as a local
-  complex structure and its propagation reading.
+complex structure and its propagation reading.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the null cone of the
-  algebra.
+algebra.
 - Companion article *Zero Divisors as a Physical Locus in Biquaternionic Form*, for the zero divisors and
-  their physical loci.
+their physical loci.
 - Companion article *Particle Types, Discrete Charge and Three-Particle Couplings*, for the
-  classification of the possible reality conditions on the state space.
+classification of the possible reality conditions on the state space.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the
-  involutions as reality conditions and the two kinds of mass.
+involutions as reality conditions and the two kinds of mass.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the
-  separation of the ordinary square from the sesquilinear one and the rank reading of mass.
+separation of the ordinary square from the sesquilinear one and the rank reading of mass.

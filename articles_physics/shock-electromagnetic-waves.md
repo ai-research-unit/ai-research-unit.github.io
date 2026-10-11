@@ -142,7 +142,7 @@ $$
 [\mathbf{B}] = i\,\bigl([b]\,\mathbf{n} + [\mathbf{n},[\mathbf{B}]]\bigr) .
 $$
 
-The scalar equation carries the whole transversality statement: if the scalar jump vanishes — as it does for a pure-vector biquaternion, which is the electromagnetic case — then $(\mathbf{n},[\mathbf{B}]) = 0$ and the front is transverse, exactly as in the light-cone condition above. Both equations and the corollary were checked on random biquaternions to $10^{-16}$. The constant coefficient appears in neither, which is the same statement as the companion article's composition lemma read in the other direction: a constant zeroth-order coefficient enters the equation as a mass-like term and the jump condition not at all, because a discontinuity is a property of the derivative.
+The scalar equation carries the whole transversality statement: if the scalar jump vanishes — as it does for a pure-vector biquaternion, which is the electromagnetic case — then $(\mathbf{n},[\mathbf{B}]) = 0$ and the front is transverse, exactly as in the light-cone condition above. The constant coefficient appears in neither, which is the same statement as the companion article's composition lemma read in the other direction: a constant zeroth-order coefficient enters the equation as a mass-like term and the jump condition not at all, because a discontinuity is a property of the derivative.
 
 ## The Joint Jump Conditions and Transversality
 

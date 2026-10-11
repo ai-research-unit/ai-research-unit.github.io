@@ -172,7 +172,7 @@ Z_n=\cos^{2n}\theta+\sin^{2n}\theta,
 \qquad
 S_n=\frac{1}{1-n}\log\big(\cos^{2n}\theta+\sin^{2n}\theta\big).
 $$
-The entropies are tabulated for three angles and four orders. All values were recomputed from the eigenvalue formula.
+The entropies are tabulated for three angles and four orders.
 
 | $\theta$ | $Z_2$ | $S_1$ | $S_2$ | $S_3$ | $S_5$ | $S_\infty$ |
 |---|---|---|---|---|---|---|

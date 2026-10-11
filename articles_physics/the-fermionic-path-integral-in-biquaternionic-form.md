@@ -163,7 +163,7 @@ $$
 \mathrm{Pf}(A)^2=\det A .
 $$
 
-Both identities were recomputed. For a random complex antisymmetric $4\times4$ the Grassmann integral equals the closed-form Pfaffian $\mathrm{Pf}=A_{12}A_{34}-A_{13}A_{24}+A_{14}A_{23}$ with ratio $1.0000000000000002+2.3\times10^{-17}i$; and $\mathrm{Pf}^2-\det A$ vanishes to $5\times10^{-16}$. The Pfaffian is thus the exact result of a finite Berezin integral, and it is the natural output of the measure for a field that is its own conjugate.
+For a random complex antisymmetric $4\times4$ the Grassmann integral equals the closed-form Pfaffian $\mathrm{Pf}=A_{12}A_{34}-A_{13}A_{24}+A_{14}A_{23}$ with ratio $1.0000000000000002+2.3\times10^{-17}i$; and $\mathrm{Pf}^2-\det A$ vanishes to $5\times10^{-16}$. The Pfaffian is thus the exact result of a finite Berezin integral, and it is the natural output of the measure for a field that is its own conjugate.
 
 **The sign of the Pfaffian.** Unlike $\det$, $\mathrm{Pf}$ has a sign that is not determined by the magnitudes, and the sign is fixed by the ordering of the generators — that is, by the *conventions of the measure*, not by the algebra. Two consequences are worth recording.
 

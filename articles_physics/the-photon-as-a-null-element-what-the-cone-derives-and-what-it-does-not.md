@@ -51,7 +51,7 @@ $$
 N(\tilde{P}) = N(m\tilde{U}) = m^2N(\tilde{U}) = -m^2c^2,
 $$
 
-the middle step being the multiplicativity of the norm. This is worth pausing on. The four-velocity is a **fixed** element of the sector's geometry, of the same norm for every particle; the mass is a scale factor on it; and the algebra's own multiplicativity converts the fixed geometric statement into the mass-dependent shell. Verified on 100 random pairs $(m,\mathbf{v})$: the worst deviation of $N(m\tilde{U})$ from $-m^2c^2$ was $1.1\times10^{-14}$, and the reconstruction $\tilde{P}=i(E/c)e_0+\mathbf{p}$ matched to $1.8\times10^{-15}$.
+the middle step being the multiplicativity of the norm. This is worth pausing on. The four-velocity is a **fixed** element of the sector's geometry, of the same norm for every particle; the mass is a scale factor on it; and the algebra's own multiplicativity converts the fixed geometric statement into the mass-dependent shell.
 
 ### Mass is the value of the norm
 
@@ -69,7 +69,7 @@ Mass is the negative of the norm of the four-momentum, up to the constant $c^2$.
 
 Set $m=0$ in the shell. The condition becomes $N(\tilde{P})=0$, which is $E=c|\mathbf{p}|$, and $N(\tilde{P})=0$ on a nonzero element of $\mathbb{B}$ is precisely the definition of a zero divisor. So the massless shell is the part of the zero-divisor set that lies in the material sector, which is the light cone. This identification is the subject of *The Light Cone as the Biquaternion Zero-Divisor Cone* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, and it is restated here only to fix what the cone owns.
 
-What the cone adds to the bare equation $E=c|\mathbf{p}|$ is that the equation is not an accident of the units but the statement that the four-momentum is not invertible in the algebra, and that the non-invertibility is the same non-invertibility that the wave operator exhibits. Verified: over 100 random momenta, $N(\tilde{P})=0$ held to $2.7\times10^{-15}$ exactly when the momentum was built with $E=c|\mathbf{p}|$, and no massive momentum with $m\ge0.1$ had $|N|<10^{-9}$.
+What the cone adds to the bare equation $E=c|\mathbf{p}|$ is that the equation is not an accident of the units but the statement that the four-momentum is not invertible in the algebra, and that the non-invertibility is the same non-invertibility that the wave operator exhibits.
 
 **Uniqueness of the shell.** Among the level sets of $N$ on $\mathbb{M}_-$, the null set is the only cone. The set $N = -m^2c^2$ with $m\neq0$ is a two-sheeted hyperboloid, disconnected and with a positive minimum gap from the origin; the set $N=0$ is a cone, and it is the only level set with the apex at the origin and with scaling invariance. So the algebra does not merely admit the massless case; it **singles it out geometrically** as the degenerate level. It singles it out and does not select it, and that gap is the subject of the next section.
 
@@ -83,13 +83,13 @@ $$
 N\!\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\right) = N(\tilde{\Lambda})\,N(\tilde{Q})\,N(\tilde{\Lambda}^{*}) = \left|N(\tilde{\Lambda})\right|^2N(\tilde{Q}) = N(\tilde{Q}),
 $$
 
-using $N(\tilde{\Lambda}^{*})=\overline{N(\tilde{\Lambda})}$ and $N(\tilde{\Lambda})=1$. The norm, and therefore its zero set, is invariant. A null four-momentum is null in every frame, so the condition $\omega=c|\mathbf{k}|$ is frame-independent, and the speed read off it is the same for every inertial observer. The constancy of the speed of light is thus not a second postulate laid beside the first; it is the multiplicativity of the norm applied to the invariance group of the cone. Verified on 100 random rotors and elements: the norm was preserved to $1.2\times10^{-12}$ and the rotor norm was $1$ to $10^{-15}$.
+using $N(\tilde{\Lambda}^{*})=\overline{N(\tilde{\Lambda})}$ and $N(\tilde{\Lambda})=1$. The norm, and therefore its zero set, is invariant. A null four-momentum is null in every frame, so the condition $\omega=c|\mathbf{k}|$ is frame-independent, and the speed read off it is the same for every inertial observer. The constancy of the speed of light is thus not a second postulate laid beside the first; it is the multiplicativity of the norm applied to the invariance group of the cone.
 
 The argument is short but it is doing real work. In the metric formulation the invariance of the light cone under the Lorentz group and the constancy of $c$ are two statements, and their agreement is a consistency to be checked. Here there is one statement: the norm is multiplicative and the rotor has unit norm. The cone article states the invariance; the point made here is the consequence for the speed, and the fact that the speed is a *derived* frame-independent number rather than a separate kinematical postulate.
 
 ### A null four-momentum has no rest frame
 
-A rest frame is a frame in which the vector part of the four-momentum vanishes, $\mathbf{p}=0$. In such a frame $N(\tilde{P}) = -E^2/c^2$, which is strictly negative whenever $E\neq0$. But $N$ is invariant, so if $\tilde{P}$ is null in one frame it is null in every frame, and no frame can produce the negative value. Hence a null four-momentum has no rest frame: the transformation that would annihilate $\mathbf{p}$ does not exist in the group that preserves the cone. This is the algebraic form of the statement that light has no rest frame, and it is a consequence of the two facts already established, the invariance of the norm and the sign of the norm at rest. Verified on 100 null momenta: $N=0$ to $1.3\times10^{-15}$, while the rest configuration had $N=-E^2/c^2<0$ in every case.
+A rest frame is a frame in which the vector part of the four-momentum vanishes, $\mathbf{p}=0$. In such a frame $N(\tilde{P}) = -E^2/c^2$, which is strictly negative whenever $E\neq0$. But $N$ is invariant, so if $\tilde{P}$ is null in one frame it is null in every frame, and no frame can produce the negative value. Hence a null four-momentum has no rest frame: the transformation that would annihilate $\mathbf{p}$ does not exist in the group that preserves the cone. This is the algebraic form of the statement that light has no rest frame, and it is a consequence of the two facts already established, the invariance of the norm and the sign of the norm at rest.
 
 The physical reading is immediate. A rest frame for the photon would be a frame in which it is at rest, and in that frame its four-momentum would be timelike, hence not null, hence not the four-momentum of a photon. The cone forbids it. This is not an extra rule about photons; it is the statement that "null" and "at rest" are contradictory values of one invariant.
 
@@ -112,7 +112,6 @@ At $m=0$ the expression is exactly $1$ for every $|\mathbf{p}|$, with no limitin
 | $0.001$ | $1.000000$ | $0.999999$ | $-0.000001$ |
 | $0$ | $1.000000$ | $1.000000$ | $0.000000$ |
 
-Verified on 100 random momenta: $v/c=pc/E$ gave exactly $1$ at $m=0$ to $2.2\times10^{-16}$, and lay strictly between $0$ and $c$ for every $m>0$.
 
 ## What the Cone Does Not Derive
 
@@ -130,7 +129,7 @@ $$
 N(\lambda\tilde{Q}) = \lambda^2N(\tilde{Q})
 $$
 
-for every complex $\lambda$, verified on 100 random pairs to $7.1\times10^{-15}$. The null set is therefore invariant under every rescaling: if $\tilde{Q}$ is null then so is $\lambda\tilde{Q}$, for every $\lambda$. The cone is a scale-invariant object, and an algebra whose special locus is scale-invariant contains no preferred scale. To generate a mass scale one must put one in, and the framework does: the mass term is a term in the Lagrangian or the field equation, not in the algebra. The companion articles record the two choices side by side — *Canonical Quantization of the Biquaternion Maxwell Field* for the massless case and *Canonical Quantization of the Biquaternion Proca Field* for the massive one — and the difference is precisely the presence of a term the algebra does not contain.
+The null set is therefore invariant under every rescaling: if $\tilde{Q}$ is null then so is $\lambda\tilde{Q}$, for every $\lambda$. The cone is a scale-invariant object, and an algebra whose special locus is scale-invariant contains no preferred scale. To generate a mass scale one must put one in, and the framework does: the mass term is a term in the Lagrangian or the field equation, not in the algebra. The companion articles record the two choices side by side — *Canonical Quantization of the Biquaternion Maxwell Field* for the massless case and *Canonical Quantization of the Biquaternion Proca Field* for the massive one — and the difference is precisely the presence of a term the algebra does not contain.
 
 This is the cleanest statement of the article. The framework's algebra cannot fix the photon's mass, because it cannot fix any mass; the value is empirical and is inserted where a scale must enter, that is, in the dynamics.
 
@@ -156,7 +155,7 @@ $$
 \tilde\Pi(\hat{\boldsymbol{\mu}}) \;=\; \tfrac{1}{2}\left(e_0 + i\hat{\boldsymbol{\mu}}\right),
 $$
 
-an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a **rank-one projector**. Verified on 100 random null momenta: the reconstruction held to $1.1\times10^{-16}$, the idempotent relation to machine precision, and the idempotent lay in $\mathbb{M}_+$ in every case.
+an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a **rank-one projector**.
 
 This is what makes the identification "the photon's four-momentum is a zero divisor" more than a restatement of $E=c|\mathbf{p}|$. The null momentum is, up to the factor $2iE/c$, a **pure state** of the informational sector: the flagpole reading of the companion article *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*, where the null direction and the projector are two faces of one object. The photon's lightlike momentum and a rank-one projector are the same element read in two sectors.
 

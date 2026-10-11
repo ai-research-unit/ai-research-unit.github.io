@@ -12,7 +12,7 @@ one section to a subspace, and closes on the table of the remarkable subspaces. 
 
 The subspace that carries the sharpest information is the **real span** of $e_0,e_1,e_2,e_3$: on it the coefficientwise conjugation acts trivially, the block is $\tilde P\diamond\tilde Q=-P_0\mathbf{Q}+Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$, its diagonal vanishes, and it is at the same time the reading of a cross product on the real vectors and, off them, the reading of $\mathrm{AQA}$ with the sign of the mixed term reversed. The two quaternion subspaces are the two halves of the real span, and the block reads them very differently: it is closed on the real span and not on the imaginary one. The Hermitian and anti-Hermitian subspaces are the two halves cut by the involution, and the block reads them by the form $H$ that the involution polarises; they are the only two subspaces on which the diagonal is a non-zero scalar multiple of the element's own vector part, $2iQ_0\mathbf{q}$ on $\mathbb{M}_+$ and $-2iq_0\mathbf{q}$ on $\mathbb{M}_-$ — on the other four it either vanishes identically or is the cross product $-\mathbf{Q}\times\overline{\mathbf{Q}}$ — and the element $e_1+ie_2$ of the introduction lies in neither.
 
-The setting is that of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the general split is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the subspaces and their bases are *Introduction to the Remarkable Subspaces* and *Decompositions Along the Remarkable Subspaces*; the form that the two halves cut is $H$ of *Biquaternion Norm and Invertibility*; the quaternion form $B$ and its comparison with $H$ are *Comparison Between the Four General Products*; the pattern of the reading is *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions*; and the action of the operation on pairs of subspaces is followed, in its form reading, in *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, above in this block.
+The setting is that of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the general split is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the subspaces and their bases are *Introduction to the Remarkable Subspaces* and *Decompositions Along the Remarkable Subspaces*; the form that the two halves cut is $H$ of *Norm and Invertibility in the General Plain Algebra*; the quaternion form $N$ and its comparison with $H$ are *Comparison Between the Four General Products*; the pattern of the reading is *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions*; and the action of the operation on pairs of subspaces is followed, in its form reading, in *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, above in this block.
 
 **Conventions.** The remarkable subspaces and their real bases are
 
@@ -35,7 +35,7 @@ $$
 \tilde R\diamond(\lambda e_0)=\overline{\lambda}\,\mathbf{R}.
 $$
 
-*Proof.* The first is $\lambda\,(e_0\diamond\tilde R)=\lambda\,\mathrm{Vect}(\tilde R^{*})=-\lambda\overline{\mathbf{R}}$; the second is $\tilde R\diamond(\lambda e_0)=\mathrm{Vect}(\tilde R(\lambda e_0)^{*})=\mathrm{Vect}(\overline{\lambda}\tilde R)=\overline{\lambda}\mathbf{R}$. $\square$
+*Proof.* The first is $\lambda\,(e_0\diamond\tilde R)=\lambda\,\mathrm{Vect}(\tilde R^{*})=-\lambda\overline{\mathbf{R}}$; the second is $\tilde R\diamond(\lambda e_0)=\mathrm{Vect}(\tilde R(\lambda e_0)^{*})=\mathrm{Vect}(\overline{\lambda}\tilde R)=\overline{\lambda}\mathbf{R}$.
 
 **Remark (the centre is not annihilating).** The two displays show that the centre is **not** in the kernel of the operation on either side: a nonzero central element sends every element with nonzero vector part to a nonzero vector part. What is true is the converse direction: the operation annihilates no value in the centre, and the **kernel of the left operator of the unit is the centre**,
 
@@ -57,7 +57,7 @@ $$
 
 so the vector subspace is closed under the block, and its reading is the complex cross product of the first vector part with the conjugate of the second.
 
-*Proof.* At $P_0=Q_0=0$ the coordinate rule keeps the third term alone. $\square$
+*Proof.* At $P_0=Q_0=0$ the coordinate rule keeps the third term alone.
 
 **Corollary (the diagonal and the square-zero elements).** The diagonal on the vector subspace is
 
@@ -79,7 +79,7 @@ $$
 
 whose coefficients are real: the value lies in the real vector triple $\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$, and therefore in $\mathbb{H}_{\mathbb{B}}$. The quaternion subspace is closed under the block.
 
-*Proof.* At real coefficients the coefficientwise conjugation is the identity, so the coordinate rule becomes the display; the three terms have real coefficients and no scalar part. $\square$
+*Proof.* At real coefficients the coefficientwise conjugation is the identity, so the coordinate rule becomes the display; the three terms have real coefficients and no scalar part.
 
 **Corollary (the diagonal vanishes on the whole subspace).** At a real element,
 
@@ -101,7 +101,7 @@ $$
 
 a **real** vector: the value lies in the real vector triple of $\mathbb{H}_{\mathbb{B}}$ and not in $i\mathbb{H}_{\mathbb{B}}$. The anti-quaternion subspace is therefore **not closed** under the block.
 
-*Proof.* Substitute the imaginary coordinates in the coordinate rule; $\overline{\mathbf{Q}}=-i\mathbf{q}$ and $\overline{Q_0}=-iq_0$, the products of the two imaginary units being real, and the cross product of two real vectors being real. $\square$
+*Proof.* Substitute the imaginary coordinates in the coordinate rule; $\overline{\mathbf{Q}}=-i\mathbf{q}$ and $\overline{Q_0}=-iq_0$, the products of the two imaginary units being real, and the cross product of two real vectors being real.
 
 **Corollary (the diagonal vanishes there too).** At a purely imaginary element the display with $\tilde P=\tilde Q$ gives $p_0=q_0=p$, $\mathbf{p}=\mathbf{q}$, hence $-p_0\mathbf{p}+p_0\mathbf{p}-\mathbf{p}\times\mathbf{p}=0$. So the anti-quaternion subspace, like the quaternion one, is wholly contained in the set of the elements of square zero, and it is the second cell of the quadric cone of *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*. The closure fails while the vanishing holds; the two facts are the two halves of the same conjugation.
 
@@ -115,7 +115,7 @@ $$
 
 whose real part is the cross term and whose imaginary part is the mixed term. The value is neither Hermitian nor anti-Hermitian in general, so $\mathbb{M}_+$ is **not closed** under the block and its image meets neither half in general; the image is contained in $\mathrm{Vect}(\mathbb{B})$.
 
-*Proof.* Substitute in the coordinate rule: $\mathbf{P}=i\mathbf{p}$ and $\overline{\mathbf{Q}}=-i\mathbf{q}$ give $P_0i\mathbf{q}$, $\overline{Q_0}=Q_0$ real gives $Q_0i\mathbf{p}$, and $(i\mathbf{p})\times(-i\mathbf{q})=\mathbf{p}\times\mathbf{q}$, with the sign of the coordinate rule. The scalar part of the value is zero, so the value is a vector part; it is Hermitian only when its real part vanishes, and anti-Hermitian only when its imaginary part vanishes, and neither holds in general. $\square$
+*Proof.* Substitute in the coordinate rule: $\mathbf{P}=i\mathbf{p}$ and $\overline{\mathbf{Q}}=-i\mathbf{q}$ give $P_0i\mathbf{q}$, $\overline{Q_0}=Q_0$ real gives $Q_0i\mathbf{p}$, and $(i\mathbf{p})\times(-i\mathbf{q})=\mathbf{p}\times\mathbf{q}$, with the sign of the coordinate rule. The scalar part of the value is zero, so the value is a vector part; it is Hermitian only when its real part vanishes, and anti-Hermitian only when its imaginary part vanishes, and neither holds in general.
 
 **Corollary (the diagonal on the Hermitian subspace).** At a Hermitian element,
 
@@ -135,7 +135,7 @@ $$
 
 whose real part is the cross term and whose imaginary part is the mixed term, with the opposite assignment to the Hermitian case. The value is neither anti-Hermitian nor Hermitian in general, so $\mathbb{M}_-$ is **not closed** under the block either.
 
-*Proof.* Substitute $P_0=ip_0$, $\overline{\mathbf{Q}}=\mathbf{q}$, $\overline{Q_0}=-iq_0$ in the coordinate rule. $\square$
+*Proof.* Substitute $P_0=ip_0$, $\overline{\mathbf{Q}}=\mathbf{q}$, $\overline{Q_0}=-iq_0$ in the coordinate rule.
 
 **Corollary (the diagonal on the anti-Hermitian subspace).** At an anti-Hermitian element,
 
@@ -186,4 +186,4 @@ On the remarkable subspaces the block is read as follows. It is central-free: no
 - *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.md`), for the pattern of the reading and the indefinite sesquilinear form
 - *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`) and *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the readings side by side
 - *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the ten operations of the real part and the coincidences there
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the form and the involution that cut the two halves
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the form and the involution that cut the two halves

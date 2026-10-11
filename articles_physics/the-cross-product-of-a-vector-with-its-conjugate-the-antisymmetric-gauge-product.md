@@ -68,7 +68,7 @@ $$
 
 The value is a **pure vector** and its image is therefore the vector subspace
 $\mathrm{Vect}(\mathbb{B})=\{Q_0=0\}$; this is the sharpest difference from its symmetric companion
-$\tilde P\bullet\tilde Q$, whose values lie in no one of the remarkable subspaces for a general pair. Verified on
+$\tilde P\bullet\tilde Q$, whose values lie in no one of the remarkable subspaces for a general pair.
 $100$ random pairs.
 
 ### The Coordinate Rule
@@ -82,7 +82,7 @@ $$
 $$
 
 *Proof.* Read the components of the bilinear cross product and substitute the conjugate coordinates of
-$\overline{\mathbf{Q}}$. Verified on the coordinate rule. $\square$
+$\overline{\mathbf{Q}}$.
 
 ## The Laws of the Operation
 
@@ -97,8 +97,7 @@ $$
 $$
 
 *Proof.* The cross product is $\mathbb{C}$-linear in $\mathbf{P}$ and the conjugate is
-$\mathbb{C}$-antilinear in $\mathbf{Q}$, as the coordinate rule shows directly. Verified on the coordinate
-rule. $\square$
+$\mathbb{C}$-antilinear in $\mathbf{Q}$, as the coordinate rule shows directly.
 
 **Proposition (conjugate-alternation).** The operation is **conjugate-alternating**,
 
@@ -107,8 +106,7 @@ $$
 $$
 
 *Proof.* Exchanging the arguments gives $\mathbf{Q}\times\overline{\mathbf{P}}$, and conjugating it gives
-$\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$. Verified on $100$ random
-pairs. $\square$
+$\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$.
 
 The symmetry is the antisymmetry of a sesqualgebra part read through the conjugate of the value, and it is
 **not** alternation in the bilinear sense. In the bilinear theory an alternating product vanishes on the
@@ -139,7 +137,7 @@ $$
 *Proof.* Put $\tilde P=\tilde Q$ in the rule. The vector part $\mathbf{Q}=(1,i,0)$ and its conjugate
 $\overline{\mathbf{Q}}=(1,-i,0)$ have cross product $(0,0,-2i)$. The vanishing condition is the
 parallelism of $\mathbf{Q}$ and $\overline{\mathbf{Q}}$, which holds exactly when $\mathbf{Q}=z\,\mathbf{u}$
-with $z\in\mathbb{C}$ and $\mathbf{u}$ real. Verified on the witness and on $100$ random pairs. $\square$
+with $z\in\mathbb{C}$ and $\mathbf{u}$ real.
 
 **Remark (why this diagonal is different).** In the bilinear theory the diagonal of an antisymmetric part
 is zero and the diagonal of the symmetric part carries the square; the two are separated cleanly. For a
@@ -223,28 +221,28 @@ The law of the operation is **conjugate-alternation**, $\tilde P\diamond\tilde Q
 The reading is bounded on three sides, and the boundaries are the reason it is stated carefully.
 
 1. **The corpus's polarisation is owned elsewhere.** The physical polarisation is the coherence biquaternion
-   of a light beam and the points of the Poincaré sphere, in *Pancharatnam's Phase and the Polarization
-   Sphere in Biquaternionic Form*; the spin-one representation carried by the material sector is *The
-   Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*; and the state sphere
-   is *The Bloch Ball as the Trace-One Slice of the Future Light Cone*. Those articles own the physical
-   objects. This article reads a *value of an operation* as a direction; it does not claim to describe a
-   beam, a spin state or a point of a sphere, and the value is not a state.
+of a light beam and the points of the Poincaré sphere, in *Pancharatnam's Phase and the Polarization
+Sphere in Biquaternionic Form*; the spin-one representation carried by the material sector is *The
+Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*; and the state sphere
+is *The Bloch Ball as the Trace-One Slice of the Future Light Cone*. Those articles own the physical
+objects. This article reads a *value of an operation* as a direction; it does not claim to describe a
+beam, a spin state or a point of a sphere, and the value is not a state.
 
 2. **The operation is not a state.** The states of the framework are the positive trace-one elements for
-   the form $H$, and they are null for the gauge metric (*The States the Indefinite Metric Cannot
-   Normalise*). The antisymmetric half returns a vector, not a positive element and not a trace-one one,
-   and the diagonal of the operation at $e_1+ie_2$ is $-2ie_3$, a nonzero vector and not a state. The
-   polarisation direction is a direction attached to a pairing; it is not a state vector of the state
-   space.
+the form $H$, and they are null for the gauge metric (*The States the Indefinite Metric Cannot
+Normalise*). The antisymmetric half returns a vector, not a positive element and not a trace-one one,
+and the diagonal of the operation at $e_1+ie_2$ is $-2ie_3$, a nonzero vector and not a state. The
+polarisation direction is a direction attached to a pairing; it is not a state vector of the state
+space.
 
 3. **An axial vector is not a generator.** The gauge generators of the framework are the left
-   multiplications by the anti-Hermitian elements of $\mathbb{M}_-$, the compact sector whose
-   exponentiation gives the internal unitary group (*Observables, Gauge Generators and the Chirality of the
-   Internal Action*). The value $\mathbf{P}\times\overline{\mathbf{Q}}$ is a vector of
-   $\mathrm{Vect}(\mathbb{B})$; it is not in general an element of $\mathbb{M}_-$ and it is not a left
-   multiplication. The passage from an axial vector to a generator is a passage between two different
-   constructions, and this article does not make it. The positive form of the same statement is that the
-   axial vector is the *carrier* of a direction, and the generator is the *operator* that rotates it.
+multiplications by the anti-Hermitian elements of $\mathbb{M}_-$, the compact sector whose
+exponentiation gives the internal unitary group (*Observables, Gauge Generators and the Chirality of the
+Internal Action*). The value $\mathbf{P}\times\overline{\mathbf{Q}}$ is a vector of
+$\mathrm{Vect}(\mathbb{B})$; it is not in general an element of $\mathbb{M}_-$ and it is not a left
+multiplication. The passage from an axial vector to a generator is a passage between two different
+constructions, and this article does not make it. The positive form of the same statement is that the
+axial vector is the *carrier* of a direction, and the generator is the *operator* that rotates it.
 
 ### Named Readings of the Polarisation
 
@@ -256,16 +254,16 @@ Two further readings of the same value are recorded here, each under a name of i
 ## The Limits
 
 - **A conjugate cross product is an axial vector and not a spin.** The reading of the value as a
-  polarisation direction is a reading of the value; it is not a claim that the operation produces a spin
-  state or a spin quantum number, and the spin of the framework is owned by the articles named above.
+polarisation direction is a reading of the value; it is not a claim that the operation produces a spin
+state or a spin quantum number, and the spin of the framework is owned by the articles named above.
 - **The non-vanishing diagonal is an algebraic fact and not a pathology.** It is the anti-fixed part of the
-  square, and it is what makes the antisymmetric half a genuine part of the fourth product rather than a
-  foreign bracket.
+square, and it is what makes the antisymmetric half a genuine part of the fourth product rather than a
+foreign bracket.
 - **The reading is labelled.** That the axial vector should be read as *polarisation* is the framework's
-  grouping of the four jobs of the four general products; it is offered as a reading and not as a theorem, and no
-  numerical identification with a measured polarisation is claimed.
+grouping of the four jobs of the four general products; it is offered as a reading and not as a theorem, and no
+numerical identification with a measured polarisation is claimed.
 - **No scale is attached.** No coupling, charge or $\hbar$ enters the operation; the places of entry are
-  those the corpus has already fixed, and none is invented here.
+those the corpus has already fixed, and none is invented here.
 
 ## The Ledger
 
@@ -275,8 +273,7 @@ pure vector, with the coordinate rule displayed; it is sesquilinear over $(\math
 $\mathbb{C}$-linear in the first slot and conjugate-linear in the second; it is conjugate-alternating,
 $\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}$; and it has no unit on either side. Its
 diagonal is $\mathbf{Q}\times\overline{\mathbf{Q}}$, vanishing exactly when $\mathbf{Q}$ is a complex
-multiple of a real vector, and equal to $-2ie_3$ at $\tilde Q=e_1+ie_2$. Recomputed on $100$ random pairs
-and on the named witness, and reproduced from *Introduction to the Antisymmetric Quaternionic Sesqualgebra
+multiple of a real vector, and equal to $-2ie_3$ at $\tilde Q=e_1+ie_2$. The form is reproduced from *Introduction to the Antisymmetric Quaternionic Sesqualgebra
 of Biquaternions*, *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic
 Sesqualgebra* and *The 12 Products of the Biquaternion Complex Space*.
 

@@ -136,7 +136,7 @@ split of the value, and it is exactly the content of the Jacobi failure, as the 
 failure needs a scalar part in one argument and two non-parallel vector parts in the other two, which is
 precisely a boost-like configuration; on the pure vectors (rotations only) the identity holds.
 
-**Remark (verified).** The split was recomputed on $100$ random pairs of material elements in exact
+**Remark (verified).**
 complex arithmetic. The value of the bracket is always a pure vector; its real part equals
 $-\mathbf p\times\mathbf q$ and its imaginary part equals $i(p_0\mathbf q-q_0\mathbf p)$ exactly; and the
 mixed term is Hermitian while the cross term is anti-Hermitian, to machine precision. The two pieces are
@@ -255,37 +255,37 @@ operation whose derivations are all outer has its symmetry outside itself.
 **Proposed reading, labelled as such.**
 
 - **The failure is a boost phenomenon.** The Jacobi identity holds on the rotations, where the bracket is
-  the cross product, and fails as soon as a boost-like mixed term is present; the failure needs a scalar
-  part in one argument and two non-parallel vector parts in the other two. So the obstruction is the price
-  of the boost-like part of the bracket, and the compact rotation part is untouched.
+the cross product, and fails as soon as a boost-like mixed term is present; the failure needs a scalar
+part in one argument and two non-parallel vector parts in the other two. So the obstruction is the price
+of the boost-like part of the bracket, and the compact rotation part is untouched.
 - **The bracket spans two sectors, and closure is the price.** The value of the bracket of two material
-  operations is not material: it is a rotation in $\mathbb{M}_-$ plus a boost in $\mathbb{M}_+$, so the
-  material sector is not closed under the bracket either. The failure is not an accident of one term; it is
-  the price of an operation asked to produce two sectors at once.
+operations is not material: it is a rotation in $\mathbb{M}_-$ plus a boost in $\mathbb{M}_+$, so the
+material sector is not closed under the bracket either. The failure is not an accident of one term; it is
+the price of an operation asked to produce two sectors at once.
 - **The non-invariance is an anomaly of the internal symmetry.** The trace form $K$ is non-degenerate but
-  not invariant, and its failure of invariance is exactly the Jacobiator. That is the pattern of an
-  **anomaly**: a symmetry that cannot be preserved by the structure that would carry it. The reading is
-  offered as a name for the pattern and is not claimed as a physical anomaly of a gauge theory.
+not invariant, and its failure of invariance is exactly the Jacobiator. That is the pattern of an
+**anomaly**: a symmetry that cannot be preserved by the structure that would carry it. The reading is
+offered as a name for the pattern and is not claimed as a physical anomaly of a gauge theory.
 - **The one invariant reads the time direction.** The only invariant form, $\varphi=P_0Q_0$, is blind to
-  the vector part, so the single invariant of the operation isolates the temporal direction and carries no
-  invariant geometry of space — the direction the boost-like part mixes is exactly the direction that is
-  invisible to the only invariant there is.
+the vector part, so the single invariant of the operation isolates the temporal direction and carries no
+invariant geometry of space — the direction the boost-like part mixes is exactly the direction that is
+invisible to the only invariant there is.
 - **The symmetry is outside the operation.** Every derivation is outer, so the bracket generates no
-  transformation of itself: a gauge transformation attached to the algebra, an inner derivation, does not
-  exist here, and the internal transformations must come from the associative action.
+transformation of itself: a gauge transformation attached to the algebra, an inner derivation, does not
+exist here, and the internal transformations must come from the associative action.
 - **A higher structure is an open proposal.** Whether the Jacobi failure is a defect or the first layer of
-  a homotopy ($L_\infty$/$A_\infty$) structure is recorded as an open question and not claimed.
+a homotopy ($L_\infty$/$A_\infty$) structure is recorded as an open question and not claimed.
 - **The bracket is a deformed cross product, not a Lie algebra.** The operation is the cross product of
-  the vector subspace plus the mixed terms; the mixed terms make the centre act, so the bracket is a
-  **deformation** of the cross product in which the algebra's centre has ceased to be central, not a
-  central extension of it.
+the vector subspace plus the mixed terms; the mixed terms make the centre act, so the bracket is a
+**deformation** of the cross product in which the algebra's centre has ceased to be central, not a
+central extension of it.
 - **The missing structure is exactly the Killing structure.** No invariant non-degenerate form, hence no
-  Killing form, no Casimir, no adjoint representation in the Lie sense — the whole standard apparatus of a
-  gauge algebra is absent, and it is absent for the reason the Jacobi identity is: the operation has no
-  Lie structure above its derived subalgebra.
+Killing form, no Casimir, no adjoint representation in the Lie sense — the whole standard apparatus of a
+gauge algebra is absent, and it is absent for the reason the Jacobi identity is: the operation has no
+Lie structure above its derived subalgebra.
 - **The internal group is read elsewhere.** As in the companion article, the framework's group is reached
-  by the **associative** one-sided action on the anti-Hermitian sector, not by this bracket; the missing
-  structure of this article is not a missing group.
+by the **associative** one-sided action on the anti-Hermitian sector, not by this bracket; the missing
+structure of this article is not a missing group.
 
 **Caution.** An obstruction is a negative result, and a negative result constrains a reading without
 supplying one. This article says that the quaternionic bracket has no invariant non-degenerate form, no
@@ -381,32 +381,32 @@ are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*; th
 ## Further Reading
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
-  which this block sits.
+which this block sits.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space*
-  (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve
-  operations, the method of the decomposition and the laws of each.
+(`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve
+operations, the method of the decomposition and the laws of each.
 - Mathematics article *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*
-  (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the
-  form $\varphi$, the rank-one invariant space and the non-invariance of the trace form.
+(`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the
+form $\varphi$, the rank-one invariant space and the non-invariance of the trace form.
 - Mathematics article *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*
-  (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the matrices,
-  the traces, the ranks, the derivations and the automorphism group of the bracket.
+(`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the matrices,
+the traces, the ranks, the derivations and the automorphism group of the bracket.
 - Mathematics article *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
-  Algebra*
-  (`articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md`),
-  for the closed form of the cyclic sum and the derived bracket.
+Algebra*
+(`articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md`),
+for the closed form of the cyclic sum and the derived bracket.
 - Mathematics article *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*
-  (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the
-  operation and its table.
+(`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the
+operation and its table.
 - Companion article *The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator*,
-  for the failure, the witness and the group reading.
+for the failure, the witness and the group reading.
 - Companion article *Observables, Gauge Generators and the Chirality of the Internal Action*, for the
-  compact and non-compact directions and the one-sided action.
+compact and non-compact directions and the one-sided action.
 - Companion article *Particle Types, Discrete Charge and Three-Particle Couplings*, for the compact
-  internal group and the non-compact boosts with their rapidity.
+internal group and the non-compact boosts with their rapidity.
 - Companion article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*,
-  for the group the algebra does reach.
+for the group the algebra does reach.
 - Companion article *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*,
-  for the symmetric half of the same parent.
+for the symmetric half of the same parent.
 - Companion article *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*, for the
-  compact rotation bracket $\mathrm{APA}$, the Lie case this article contrasts with.
+compact rotation bracket $\mathrm{APA}$, the Lie case this article contrasts with.

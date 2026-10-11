@@ -27,7 +27,7 @@ $$
 
 the set $M(A)$ is a unital associative algebra with identity $(\mathrm{id},\mathrm{id})$, and the two components determine each other on an algebra with $A^2 = A$.
 
-**Proof.** The sum of two double centralisers is a double centraliser, and the product $(L_1L_2,R_2R_1)$ is one: $L_1L_2(ab) = L_1(L_2(a)b) = L_1L_2(a)b$, $R_2R_1(ab) = aR_2R_1(b)$, and $aL_1L_2(b) = aL_1(L_2(b))$ while $R_2R_1(a)b = R_2(R_1(a))b$; the two agree by the centralising relations applied twice. Associativity is the associativity of composition, and $(\mathrm{id},\mathrm{id})$ is the identity. The components determine each other when $A^2 = A$ because $aL(b) = R(a)b$ for all $a,b$ forces $L$ to determine $R$ on the ideal $A^2$ and $R$ to determine $L$. $\square$
+**Proof.** The sum of two double centralisers is a double centraliser, and the product $(L_1L_2,R_2R_1)$ is one: $L_1L_2(ab) = L_1(L_2(a)b) = L_1L_2(a)b$, $R_2R_1(ab) = aR_2R_1(b)$, and $aL_1L_2(b) = aL_1(L_2(b))$ while $R_2R_1(a)b = R_2(R_1(a))b$; the two agree by the centralising relations applied twice. Associativity is the associativity of composition, and $(\mathrm{id},\mathrm{id})$ is the identity. The components determine each other when $A^2 = A$ because $aL(b) = R(a)b$ for all $a,b$ forces $L$ to determine $R$ on the ideal $A^2$ and $R$ to determine $L$.
 
 **Theorem ($M(A)$ is a Banach algebra).** Give $M(A)$ the norm
 
@@ -37,7 +37,7 @@ $$
 
 where $\lVert L\rVert,\lVert R\rVert$ are the operator norms. Then $M(A)$ is a unital Banach algebra under the product above, the maps $(L,R) \mapsto L$ and $(L,R) \mapsto R$ are contractions, and $\lVert(L,R)\rVert = \lVert L\rVert = \lVert R\rVert$ on the double centralisers of a faithful algebra.
 
-**Proof.** The norm is a norm because it is the max of two norms, and it is submultiplicative: $\lVert L_1L_2\rVert \leq \lVert L_1\rVert\lVert L_2\rVert$ and $\lVert R_2R_1\rVert \leq \lVert R_2\rVert\lVert R_1\rVert$, so $\lVert(L_1,R_1)(L_2,R_2)\rVert \leq \lVert(L_1,R_1)\rVert\lVert(L_2,R_2)\rVert$. Completeness: a Cauchy sequence of double centralisers has Cauchy components in the complete spaces $B(A)$, with limits $L,R$; the defining relations pass to the limit by continuity of the products, so the limit is a double centraliser, and the norm converges. The identity has norm one. The equality of the norms on a faithful algebra is the standard consequence of $aL(b) = R(a)b$. $\square$
+**Proof.** The norm is a norm because it is the max of two norms, and it is submultiplicative: $\lVert L_1L_2\rVert \leq \lVert L_1\rVert\lVert L_2\rVert$ and $\lVert R_2R_1\rVert \leq \lVert R_2\rVert\lVert R_1\rVert$, so $\lVert(L_1,R_1)(L_2,R_2)\rVert \leq \lVert(L_1,R_1)\rVert\lVert(L_2,R_2)\rVert$. Completeness: a Cauchy sequence of double centralisers has Cauchy components in the complete spaces $B(A)$, with limits $L,R$; the defining relations pass to the limit by continuity of the products, so the limit is a double centraliser, and the norm converges. The identity has norm one. The equality of the norms on a faithful algebra is the standard consequence of $aL(b) = R(a)b$.
 
 **Proposition (the canonical embedding).** The map
 
@@ -47,17 +47,17 @@ $$
 
 is an isometric algebra homomorphism when $A$ is unital and a bounded algebra homomorphism in general, with image $\iota(A)$ a two-sided ideal of $M(A)$; it is injective on a faithful algebra and, in particular, on a unital one. The identity of $M(A)$ lies in $\iota(A)$ exactly when $A$ is unital, and then $\iota$ is onto.
 
-**Proof.** $(L_a,R_a)$ is a double centraliser by *Operators on a Banach Algebra*, and $\iota(ab) = (L_{ab},R_{ab}) = (L_aL_b,R_bR_a) = \iota(a)\iota(b)$ by the composition laws, so $\iota$ is a homomorphism. On a unital algebra $\lVert L_a\rVert = \lVert R_a\rVert = \lVert a\rVert$, giving the isometry, and $\iota$ is onto by the unital identification of the multipliers. That $\iota(A)$ is an ideal: for a double centraliser $(L,R)$ and $a \in A$, $(L,R)(L_a,R_a) = (LL_a, R_aR)$, and $LL_a = L_{L(a)}$, $R_aR = R_{R(a)}$ by the multiplier identities, so the product lies in $\iota(A)$, and likewise on the left. $\square$
+**Proof.** $(L_a,R_a)$ is a double centraliser by *Operators on a Banach Algebra*, and $\iota(ab) = (L_{ab},R_{ab}) = (L_aL_b,R_bR_a) = \iota(a)\iota(b)$ by the composition laws, so $\iota$ is a homomorphism. On a unital algebra $\lVert L_a\rVert = \lVert R_a\rVert = \lVert a\rVert$, giving the isometry, and $\iota$ is onto by the unital identification of the multipliers. That $\iota(A)$ is an ideal: for a double centraliser $(L,R)$ and $a \in A$, $(L,R)(L_a,R_a) = (LL_a, R_aR)$, and $LL_a = L_{L(a)}$, $R_aR = R_{R(a)}$ by the multiplier identities, so the product lies in $\iota(A)$, and likewise on the left.
 
 **Corollary (the unital case).** If $A$ is unital then $M(A) = \iota(A) \cong A$, the multiplier algebra is the algebra itself, and the construction adds nothing. The multipliers are genuinely new only for a non-unital algebra.
 
-**Proof.** On a unital algebra every left multiplier is $L_{L(1)}$ and every right multiplier is $R_{R(1)}$, and the centralising relation forces $L(1) = R(1)$; hence every double centraliser is $\iota(c)$ with $c = L(1)$, and $\iota$ is a bijection. $\square$
+**Proof.** On a unital algebra every left multiplier is $L_{L(1)}$ and every right multiplier is $R_{R(1)}$, and the centralising relation forces $L(1) = R(1)$; hence every double centraliser is $\iota(c)$ with $c = L(1)$, and $\iota$ is a bijection.
 
 ## The Multiplier Algebra
 
 **Theorem (the multiplier algebra is unital with essential ideal $A$).** Let $A$ be a Banach algebra with $A^2 = A$ (in particular a non-unital algebra with a bounded approximate identity). Then $\iota(A)$ is a two-sided ideal of $M(A)$ with $\iota(A)^2 = \iota(A)$, the algebra $M(A)$ is unital, and $\iota(A)$ is **essential**: a double centraliser $(L,R)$ with $(L,R)\iota(A) = 0$ is zero, and the same on the other side.
 
-**Proof.** $\iota(A)$ is an ideal by the proposition, and it is essential because $(L,R)\iota(a) = 0$ for all $a$ gives $(LL_a, R_aR) = 0$, so $LL_a = 0$ for all $a$ and $L = 0$ on $A^2 = A$, that is $L = 0$; then $R = 0$ by the centralising relation on a faithful algebra. The unit is $(\mathrm{id},\mathrm{id})$. $\square$
+**Proof.** $\iota(A)$ is an ideal by the proposition, and it is essential because $(L,R)\iota(a) = 0$ for all $a$ gives $(LL_a, R_aR) = 0$, so $LL_a = 0$ for all $a$ and $L = 0$ on $A^2 = A$, that is $L = 0$; then $R = 0$ by the centralising relation on a faithful algebra. The unit is $(\mathrm{id},\mathrm{id})$.
 
 **Theorem (the multiplier algebra as the double centraliser algebra).** Let $A$ be a unital Banach algebra and let $\lambda(A)$ and $\rho(A)$ be the two regular representations in $B(A)$. Then the double centraliser algebra of the pair $(\lambda(A),\rho(A))$ is $\lambda(A)' = \rho(A)$ and $\rho(A)' = \lambda(A)$, and $M(A) = \iota(A)$. In the non-unital case, if the algebra is faithful and has a bounded approximate identity, then
 
@@ -67,7 +67,7 @@ $$
 
 the operators normalising both regular representations, and the isomorphism pairs $T$ with the double centraliser of the two inclusions.
 
-**Proof.** The centraliser identities in the unital case are *Left and Right Multiplication in a Banach Algebra*, and the identification with $\iota(A)$ is the corollary above. In the non-unital case a double centraliser $(L,R)$ defines, through the inclusions $L\lambda(a) = \lambda(L(a))$ and $\rho(a)R = \rho(R(a))$, an operator normalising both families, and conversely such an operator gives a double centraliser by its actions; the correspondence is bijective on a faithful algebra with an approximate identity. $\square$
+**Proof.** The centraliser identities in the unital case are *Left and Right Multiplication in a Banach Algebra*, and the identification with $\iota(A)$ is the corollary above. In the non-unital case a double centraliser $(L,R)$ defines, through the inclusions $L\lambda(a) = \lambda(L(a))$ and $\rho(a)R = \rho(R(a))$, an operator normalising both families, and conversely such an operator gives a double centraliser by its actions; the correspondence is bijective on a faithful algebra with an approximate identity.
 
 **Remark (the boundary).** The identification of the multiplier algebra with the operators normalising the regular representations is the operator form of the double centraliser theorem; the abstract form is in *Left and Right Multiplication in a Banach Algebra*. The multiplier algebra of a $\mathrm{C}^*$-algebra is again a $\mathrm{C}^*$-algebra, and the multiplier algebra of a Hilbert $\mathrm{C}^*$-module is the source of the strongly continuous strict topology, both owned by the involutive groups of this category and by *Operator Algebras*.
 
@@ -83,15 +83,15 @@ The **strict topology** on $A$ is the topology generated by the seminorms $x \ma
 
 **Proposition (the strict topology is well defined and the multiplications are strictly continuous).** The family of seminorms above separates the points of $M(A)$ on a faithful algebra with $A^2 = A$, so the strict topology is Hausdorff; for each fixed $a$ the maps $(L,R) \mapsto L(a)$ and $(L,R) \mapsto R(a)$ are strictly continuous, and the product of $M(A)$ is strictly continuous in each variable separately.
 
-**Proof.** If all seminorms vanish then $L(a) = 0$ for every $a$, so $L = 0$, and $R = 0$ by faithfulness; hence the topology is Hausdorff. Continuity of evaluation is the definition of the seminorms. For the product in the first variable: $((L_1,R_1)(L,R))(a) = L_1L(a) = L_1(L(a))$, which depends strictly continuously on $(L,R)$ through $L(a)$ and then on $L_1$ through its value at $L(a)$; the second variable is the mirror. $\square$
+**Proof.** If all seminorms vanish then $L(a) = 0$ for every $a$, so $L = 0$, and $R = 0$ by faithfulness; hence the topology is Hausdorff. Continuity of evaluation is the definition of the seminorms. For the product in the first variable: $((L_1,R_1)(L,R))(a) = L_1L(a) = L_1(L(a))$, which depends strictly continuously on $(L,R)$ through $L(a)$ and then on $L_1$ through its value at $L(a)$; the second variable is the mirror.
 
 **Theorem ($A$ is strictly dense in $M(A)$).** Let $A$ be a Banach algebra with a bounded approximate identity $(u_\lambda)$. Then $\iota(A)$ is dense in $M(A)$ in the strict topology, and $M(A)$ is complete in the strict topology; consequently $M(A)$ is the strict completion of $A$ and the identity of $M(A)$ is the strict limit of the approximate identity.
 
-**Proof.** For a double centraliser $(L,R)$ and $a \in A$ one has $L(u_\lambda a) = L(u_\lambda)a \to L(a)$ and $L(u_\lambda)$ is a bounded net in $A$, so $\iota(L(u_\lambda)) \to (L,R)$ in the seminorms generated by $L$, using the boundedness of $L$; the right component is handled by $R(u_\lambda)$. Hence $\iota(A)$ is strictly dense. Completeness is the standard statement that a strict Cauchy net has strictly convergent left and right components by completeness of $B(A)$ and the boundedness of the approximate identity; the limit double centraliser is $(L,R)$, and the identity is the limit of $\iota(u_\lambda)$. $\square$
+**Proof.** For a double centraliser $(L,R)$ and $a \in A$ one has $L(u_\lambda a) = L(u_\lambda)a \to L(a)$ and $L(u_\lambda)$ is a bounded net in $A$, so $\iota(L(u_\lambda)) \to (L,R)$ in the seminorms generated by $L$, using the boundedness of $L$; the right component is handled by $R(u_\lambda)$. Hence $\iota(A)$ is strictly dense. Completeness is the standard statement that a strict Cauchy net has strictly convergent left and right components by completeness of $B(A)$ and the boundedness of the approximate identity; the limit double centraliser is $(L,R)$, and the identity is the limit of $\iota(u_\lambda)$.
 
 **Corollary (the strict topology and the norm topology).** The strict topology is coarser than the norm topology on $M(A)$, and it agrees with the norm topology on a unital algebra; on the unit ball of $M(A)$ the strict topology is the topology of pointwise convergence on the image of $\iota$, and the closed unit ball is strictly bounded but need not be strictly compact.
 
-**Proof.** The seminorms are dominated by the norm, since $\lVert L(a)\rVert \leq \lVert L\rVert\lVert a\rVert$, so strict is coarser; on a unital algebra $a = 1$ gives $\lVert L\rVert \leq \lVert L(1)\rVert$ and the two topologies agree. The ball statement is the definition of the seminorms. $\square$
+**Proof.** The seminorms are dominated by the norm, since $\lVert L(a)\rVert \leq \lVert L\rVert\lVert a\rVert$, so strict is coarser; on a unital algebra $a = 1$ gives $\lVert L\rVert \leq \lVert L(1)\rVert$ and the two topologies agree. The ball statement is the definition of the seminorms.
 
 **Remark (bounded approximate identities).** The existence of a bounded approximate identity is a hypothesis, not automatic for a Banach algebra; it holds for $c_0$, for $K(H)$, for $C_0(X)$ and for the group algebra $\ell^1(G)$ for an amenable $G$. The strict density theorem is stated under this hypothesis, and the multiplier algebra is defined in general.
 

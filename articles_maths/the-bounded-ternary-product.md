@@ -28,7 +28,7 @@ $$
 
 and it satisfies the Hermitian symmetry $\{x,y,z\}^{*} = \{z^{*},y^{*},x^{*}\}$.
 
-*Proof.* The parities are those of *The Sesquilinear Associator and the Ternary Product*, §*Definition and Parity*; the middle slot is the one carrying the involution, and the two outer slots are the linear slots that flank it. Read as a map $A \times A^{\varsigma} \times A \to A$ the ternary product is $R$-trilinear. $\square$
+*Proof.* The parities are those of *The Sesquilinear Associator and the Ternary Product*, §*Definition and Parity*; the middle slot is the one carrying the involution, and the two outer slots are the linear slots that flank it. Read as a map $A \times A^{\varsigma} \times A \to A$ the ternary product is $R$-trilinear.
 
 ### The Trilinear Bound
 
@@ -40,7 +40,7 @@ $$
 
 and $\{x,y,z\}$ is continuous as a map $A \times A \times A \to A$ for the product topology.
 
-*Proof.* By the definition and the submultiplicative estimate, $\lVert(x \star y) \star z^{*}\rVert \leq \lVert x \star y\rVert\lVert z^{*}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$, the last step by the isometry of the involution. A trilinear map bounded by a constant is continuous. $\square$
+*Proof.* By the definition and the submultiplicative estimate, $\lVert(x \star y) \star z^{*}\rVert \leq \lVert x \star y\rVert\lVert z^{*}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$, the last step by the isometry of the involution. A trilinear map bounded by a constant is continuous.
 
 **Corollary (the triple product is a bounded trilinear form).** The ternary product factors through the projective tensor product,
 
@@ -50,7 +50,7 @@ $$
 
 with $\lVert T\rVert \leq 1$, and the norm of the ternary product, $\sup\{\lVert\{x,y,z\}\rVert : \lVert x\rVert,\lVert y\rVert,\lVert z\rVert \leq 1\}$, is at most one.
 
-*Proof.* The product is trilinear on the three modules $A$, $A^{\varsigma}$ and $A$, so it factors through the tensor product by the universal property of *Topological Tensor Products of Sesqualgebras*, §*The Projective Topology*; the bound is the theorem. $\square$
+*Proof.* The product is trilinear on the three modules $A$, $A^{\varsigma}$ and $A$, so it factors through the tensor product by the universal property of *Topological Tensor Products of Sesqualgebras*, §*The Projective Topology*; the bound is the theorem.
 
 ## The Pair Operators
 
@@ -70,11 +70,11 @@ $$
 
 The pair map $(x,y) \mapsto \Theta_{x,y}$ is a bounded bilinear map $A \times A^{\varsigma} \to B(A)$ of norm at most one.
 
-*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Readings*: the pair operator is the ordinary left multiplication by the derived product, $\Theta_{x,y} = T_{x \star y,1}$, and it is also the sandwich $S_{x,z}$ read in the middle slot and the right multiplication $T_{1,y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$. $\square$
+*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Readings*: the pair operator is the ordinary left multiplication by the derived product, $\Theta_{x,y} = T_{x \star y,1}$, and it is also the sandwich $S_{x,z}$ read in the middle slot and the right multiplication $T_{1,y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$.
 
 **Corollary (the middle reading is a sandwich).** With the first and the third slots fixed, the map $y \mapsto x\,y^{*}\,z$ is the sandwich $S_{x,z}$ of *The Bounded Sesquilinear Sandwich*, so the pair operator and the sandwich are the two readings of the same trilinear object, one with the middle slot promoted and one with the outer slots promoted.
 
-*Proof.* $\{x,y,z\} = x y^{*} z = S_{x,z}(y)$, which is the corollary of *The Ternary Product as an Operator*, §*The Three Readings*. $\square$
+*Proof.* $\{x,y,z\} = x y^{*} z = S_{x,z}(y)$, which is the corollary of *The Ternary Product as an Operator*, §*The Three Readings*.
 
 ### The Lie Triple System
 
@@ -86,7 +86,7 @@ $$
 
 where the brackets in the right-hand members are the commutators of the envelope. The operators $\Theta$ form a bounded Lie triple system: the bracket is bounded with $\lVert[\Theta_{x,y},\Theta_{u,v}]\rVert \leq 2\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert$, and the triple commutator is again a left multiplication of the same shape, $T_{b,1}$ with $b = [[x \star y, u \star v], p \star q]$, hence a pair operator $\Theta_{b,1}$ in the unital case, of norm at most $4\lVert x\rVert\lVert y\rVert\lVert u\rVert\lVert v\rVert\lVert p\rVert\lVert q\rVert$.
 
-*Proof.* The two identities are the theorem of *The Ternary Product as an Operator*, §*The Bracket and the Lie Triple System*: with $\Theta_{x,y} = T_{a,1}$ for $a = x \star y$ and $\Theta_{u,v} = T_{c,1}$ for $c = u \star v$ one has $T_{a,1}T_{c,1} = T_{ac,1}$, so the commutator is $T_{ac-ca,1}$, and the second identity is the first applied twice. The bounds follow from $\lVert T_{b,1}\rVert \leq \lVert b\rVert$, from $\lVert[b,c]\rVert \leq 2\lVert b\rVert\lVert c\rVert$ and from the bound of the pair operator. $\square$
+*Proof.* The two identities are the theorem of *The Ternary Product as an Operator*, §*The Bracket and the Lie Triple System*: with $\Theta_{x,y} = T_{a,1}$ for $a = x \star y$ and $\Theta_{u,v} = T_{c,1}$ for $c = u \star v$ one has $T_{a,1}T_{c,1} = T_{ac,1}$, so the commutator is $T_{ac-ca,1}$, and the second identity is the first applied twice. The bounds follow from $\lVert T_{b,1}\rVert \leq \lVert b\rVert$, from $\lVert[b,c]\rVert \leq 2\lVert b\rVert\lVert c\rVert$ and from the bound of the pair operator.
 
 **Proposition (the Lie companion).** For $x,y$ let
 
@@ -96,7 +96,7 @@ $$
 
 the bracket in $[x,y] = xy - yx$ being the commutator of the envelope. Then $\delta_{x,y}$ is a bounded derivation of the envelope, $\lVert\delta_{x,y}\rVert \leq 4\lVert x\rVert\lVert y\rVert$, and the family of the pairs is the family of the inner derivations of the commutator Lie algebra, which is the bounded form of *The Ternary Product as an Operator*, §*The Inner Derivation of a Pair*.
 
-*Proof.* The element $[x,y]$ has norm at most $2\lVert x\rVert\lVert y\rVert$, and $\mathrm{ad}_a = T_{a,1} - T_{1,a}$ is bounded with norm at most $2\lVert a\rVert$ by *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, §*The Adjoint Action* read in the ordinary product; the composition gives the bound. It is an inner derivation by the Leibniz rule. $\square$
+*Proof.* The element $[x,y]$ has norm at most $2\lVert x\rVert\lVert y\rVert$, and $\mathrm{ad}_a = T_{a,1} - T_{1,a}$ is bounded with norm at most $2\lVert a\rVert$ by *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, §*The Adjoint Action* read in the ordinary product; the composition gives the bound. It is an inner derivation by the Leibniz rule.
 
 ## The Bounded Triple Product and the Completion
 
@@ -112,13 +112,13 @@ for all $x,y,z$ and some $C \geq 0$; the least such $C$ is the **norm** of the t
 
 **Theorem (the ternary product of a sesqualgebra is a bounded triple product).** Let $A$ be a normed sesqualgebra with submultiplicative norm and isometric involution. Then the ternary product is bounded with $C = 1$, so $A$ is a normed triple system with $\lVert\{\cdot,\cdot,\cdot\}\rVert \leq 1$.
 
-*Proof.* This is the trilinear bound. $\square$
+*Proof.* This is the trilinear bound.
 
 ### The Completion
 
 **Theorem (the completion is a Banach triple system).** Let $A$ be a normed sesqualgebra and let $\widehat{A}$ be its completion. Then the product and the involution extend uniquely to $\widehat{A}$, the extended ternary product $\{x,y,z\} = (x \star y) \star z^{*}$ is defined on $\widehat{A}$ and is bounded with the same constant, and $\widehat{A}$ is a Banach triple system in which $A$ is dense.
 
-*Proof.* The product extends to a bounded bilinear map on the completion and the involution to an isometric involution by *The Completion of a Sesqualgebra*, §*The Product on the Completion* and §*The Extension of the Involution*, and the extended derived operation is the extension of the derived operation by §*The Derived Operation*. The composite of three bounded maps is bounded with the product of the constants, so the ternary product is bounded with constant one, and the completion is complete. $\square$
+*Proof.* The product extends to a bounded bilinear map on the completion and the involution to an isometric involution by *The Completion of a Sesqualgebra*, §*The Product on the Completion* and §*The Extension of the Involution*, and the extended derived operation is the extension of the derived operation by §*The Derived Operation*. The composite of three bounded maps is bounded with the product of the constants, so the ternary product is bounded with constant one, and the completion is complete.
 
 ### The Preservation of the Jordan Triple Identity
 
@@ -130,7 +130,7 @@ $$
 
 so the completion of a normed sesqualgebra is a Banach $J^{*}$-triple.
 
-*Proof.* Both sides are obtained from the extended product and involution by composition of bounded multilinear maps, hence are continuous functions of $(x,y,u,v,w)$; they agree on the dense subset $A^{5}$ by the Jordan triple identity of *The Sesquilinear Associator and the Ternary Product*, §*The Jordan Triple Identity*; and a continuous function vanishing on a dense subset vanishes everywhere in a Hausdorff space. $\square$
+*Proof.* Both sides are obtained from the extended product and involution by composition of bounded multilinear maps, hence are continuous functions of $(x,y,u,v,w)$; they agree on the dense subset $A^{5}$ by the Jordan triple identity of *The Sesquilinear Associator and the Ternary Product*, §*The Jordan Triple Identity*; and a continuous function vanishing on a dense subset vanishes everywhere in a Hausdorff space.
 
 **Remark.** The preservation is the first place where the topological layer proves something the algebraic layer cannot even state: the identity is a polynomial identity of the algebraic object and is inherited by the completion, so the class of the $J^{*}$-triples is closed under completion. The same argument gives the bound of the pair operators on the completion and the closure of the Lie triple system, and it is the standard device for passing from a dense subalgebra to a complete one.
 
@@ -142,7 +142,7 @@ so the completion of a normed sesqualgebra is a Banach $J^{*}$-triple.
 
 **Theorem (the sesqualgebra is a normed $J^{*}$-triple).** The standard example of a normed sesqualgebra is a normed $J^{*}$-triple, and its completion is a Banach $J^{*}$-triple; the pair operators are its bounded operators, the sandwich is its middle reading, and the triple system of the pairs is its Lie triple system.
 
-*Proof.* The parities and the Hermitian symmetry are the proposition of §*The Definition and the Parity*, the bound is §*The Trilinear Bound*, the identity is §*The Preservation of the Jordan Triple Identity* on the completion, and the identifications are the corollaries above. $\square$
+*Proof.* The parities and the Hermitian symmetry are the proposition of §*The Definition and the Parity*, the bound is §*The Trilinear Bound*, the identity is §*The Preservation of the Jordan Triple Identity* on the completion, and the identifications are the corollaries above.
 
 ### The Passage to the J*-Algebra
 
@@ -154,7 +154,7 @@ $$
 
 and on the completion $\widehat{A}$ the triple product, the binary product and the involution form a normed $J^{*}$-algebra with unit, whose norm satisfies $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$ on the binary product and $\lVert\{x,y,z\}\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$ on the ternary one.
 
-*Proof.* The two identities are those of *The Sesquilinear Associator and the Ternary Product*, §*The Passage from the Binary to the Ternary Product*, and they express the binary product as the ternary product with the unit in the third slot; the norm inequalities are the submultiplicative estimate on the completed product and the trilinear bound on the completed triple product. The completed object is the normed $J^{*}$-algebra of *The Topological J\*-Algebra*. $\square$
+*Proof.* The two identities are those of *The Sesquilinear Associator and the Ternary Product*, §*The Passage from the Binary to the Ternary Product*, and they express the binary product as the ternary product with the unit in the third slot; the norm inequalities are the submultiplicative estimate on the completed product and the trilinear bound on the completed triple product. The completed object is the normed $J^{*}$-algebra of *The Topological J\*-Algebra*.
 
 **Remark.** The passage is the passage from the operation with an uncontrolled associator to the operation with a controlled identity: the binary product carries at most the submultiplicative inequality, while the ternary product carries the Jordan triple identity and determines the binary product. The topological layer states this as the closure of the classes under completion, and it is the reason the ternary product, and not the binary one, is the operation whose bounded operators the next articles of the category study.
 

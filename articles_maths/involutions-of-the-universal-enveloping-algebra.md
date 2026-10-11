@@ -11,7 +11,7 @@ The base is a field $K$ of characteristic zero, $\mathrm{G}$ is a finite-dimensi
 
 **Theorem (extension of an involution).** Every involution $\theta$ of $\mathrm{G}$ extends to a unique algebra automorphism $\Theta$ of $U(\mathrm{G})$ with $\Theta=\theta$ on $\mathrm{G}$, and $\Theta^2=\mathrm{id}$; consequently $\Theta$ is an involution of the enveloping algebra.
 
-**Proof.** The universal property of $U(\mathrm{G})$: an algebra homomorphism on $U(\mathrm{G})$ is determined by the induced Lie homomorphism $\mathrm{G}\to U(\mathrm{G})$, and $\theta$ followed by the embedding is such; since $\theta^2=\mathrm{id}$ on the generators the extension squares to the identity. $\square$
+**Proof.** The universal property of $U(\mathrm{G})$: an algebra homomorphism on $U(\mathrm{G})$ is determined by the induced Lie homomorphism $\mathrm{G}\to U(\mathrm{G})$, and $\theta$ followed by the embedding is such; since $\theta^2=\mathrm{id}$ on the generators the extension squares to the identity.
 
 **Proposition.** The map $\mathrm{G}\to U(\mathrm{G})$, $x\mapsto-x$, is a Lie homomorphism, and it extends to an algebra **anti-automorphism** with the reversed product; it is called the **principal anti-automorphism**.
 
@@ -25,13 +25,13 @@ equivalently on a monomial $\sigma(x_1\cdots x_n)=(-1)^n x_n\cdots x_1$.
 
 **Theorem.** $\sigma$ is an anti-involution, $\sigma^2=\mathrm{id}$, and it is the unique anti-automorphism of $U(\mathrm{G})$ whose restriction to $\mathrm{G}$ is $x\mapsto-x$.
 
-**Proof.** Anti-multiplicativity and $\sigma(x)=-x$ determine $\sigma$ on monomials, giving the displayed formula; applying it twice returns the monomial; uniqueness is the universal property for anti-homomorphisms. $\square$
+**Proof.** Anti-multiplicativity and $\sigma(x)=-x$ determine $\sigma$ on monomials, giving the displayed formula; applying it twice returns the monomial; uniqueness is the universal property for anti-homomorphisms.
 
 ## The Extension of the Cartan Involution and the Star
 
 **Proposition.** Let $\theta$ be an involution of $\mathrm{G}$ and $\Theta$ its extension. Then $\Theta$ and $\sigma$ commute exactly when $\theta$ commutes with $-1$ on $\mathrm{G}$, which is automatic, so $\Theta\sigma=\sigma\Theta$; the composite $\tau=\Theta\sigma=\sigma\Theta$ is an anti-involution, and it satisfies $\tau(x)=-\theta(x)$ on $\mathrm{G}$.
 
-**Proof.** On a monomial $x_1\cdots x_n$ the two orders give $\theta(x_1)\cdots\theta(x_n)$ reversed with the sign $(-1)^n$ in both cases, so the maps agree; the composite is an anti-involution as the product of two commuting anti-involutions, and its value on $\mathrm{G}$ is $x\mapsto-\theta(x)$. $\square$
+**Proof.** On a monomial $x_1\cdots x_n$ the two orders give $\theta(x_1)\cdots\theta(x_n)$ reversed with the sign $(-1)^n$ in both cases, so the maps agree; the composite is an anti-involution as the product of two commuting anti-involutions, and its value on $\mathrm{G}$ is $x\mapsto-\theta(x)$.
 
 **Definition.** The **star structure** of the enveloping algebra attached to the involution $\theta$ is the anti-involution
 
@@ -43,7 +43,7 @@ and the **unitary elements** are those with $u^{*}u=uu^{*}=1$.
 
 **Theorem.** The star structure satisfies $\tau^2=\mathrm{id}$ and $\tau(ab)=\tau(b)\tau(a)$; when $\theta=\mathrm{id}$ it is the principal anti-automorphism, and when $\theta$ is the Cartan involution of a real form it restricts on the skew elements of $\mathrm{G}$ to $x^{*}=-x$.
 
-**Proof.** The composite of the two commuting anti-involutions is an anti-involution; the specialisations are the definitions. $\square$
+**Proof.** The composite of the two commuting anti-involutions is an anti-involution; the specialisations are the definitions.
 
 **Corollary.** The star structure is the algebraic source of the adjoint operation on the representations of $\mathrm{G}$: a representation is **unitary** when its operators satisfy $\pi(\tau(a))=\pi(a)^{*}$ for an adjoint on the representation space, and the analysis of that condition belongs to the `- * Operator Theory` group.
 
@@ -51,7 +51,7 @@ and the **unitary elements** are those with $u^{*}u=uu^{*}=1$.
 
 **Proposition.** Both $\Theta$ and $\sigma$ preserve the filtration of $U(\mathrm{G})$ and act on the associated graded algebra $S(\mathrm{G})$: $\Theta$ by the extension of $\theta$ and $\sigma$ by the anti-involution of the symmetric algebra with $x\mapsto-x$; both preserve the centre $\mathrm{Z}(U(\mathrm{G}))$.
 
-**Proof.** The maps send the $n$-th filtered piece to itself, so they induce maps on the associated graded algebra; the action of $\sigma$ is the displayed one; the centre is preserved because an automorphism and an anti-automorphism of an algebra map central elements to central elements. $\square$
+**Proof.** The maps send the $n$-th filtered piece to itself, so they induce maps on the associated graded algebra; the action of $\sigma$ is the displayed one; the centre is preserved because an automorphism and an anti-automorphism of an algebra map central elements to central elements.
 
 **Corollary.** The Casimir element $C=\sum x_ix^i$ of *The Casimir Operator* satisfies $\sigma(C)=C$ when the dual bases are adapted, and $\Theta(C)=C$ for the extension of an involution preserving the Killing form; the star structure fixes the Casimir element, which is the algebraic reason it is symmetric as an operator.
 
@@ -65,7 +65,6 @@ $$
 
 satisfies $\sigma(C)=\tfrac14\sigma(f)\sigma(e)+\tfrac18 h^2+\tfrac14 e\,f=\tfrac14 fe+\tfrac18h^2+\tfrac14ef=C$, using the reversal of monomials and $\sigma(x)=-x$. For the Cartan involution $\theta(x)=-x^{t}$ of $\mathrm{sl}(2,\mathbb{R})$ one has $\theta(e)=-f$, $\theta(f)=-e$, $\theta(h)=-h$, so the extension and the principal map give the star with $e^{*}=f$, $f^{*}=e$, $h^{*}=h$ on the generators; the star is the one used by the unitary representations of the later group theory.
 
-**Verified.** The anti-involution property $\sigma(ab)=\sigma(b)\sigma(a)$ and the invariance $\sigma(C)=C$ were checked by hand on the monomials of $U(\mathrm{sl}(2,K))$ of degree at most two, with the Casimir element of *The Casimir Operator*.
 
 ## Summary
 

@@ -19,7 +19,7 @@ The base is a field $K$ of characteristic not two; the graded Lie algebra is $\m
 
 **Proposition.** If $\omega^2=\mathrm{id}$ and $\omega(\mathrm{G}_i)\subseteq\mathrm{G}_{i+d}$ for all $i$, then $\mathrm{G}_i=0$ whenever $2d\neq0$ and $i$ is outside a suitable range; more precisely the square forces $\mathrm{G}_i\subseteq\mathrm{G}_{i+2d}$, so an odd involution of a finitely supported grading has $d=0$ unless the grading is periodic.
 
-**Proof.** Applying the compatibility twice gives $\mathrm{G}_i\subseteq\mathrm{G}_{i+2d}$; if $2d\neq0$ this shifts every component, which is possible only when the grading is compatible with the shift, and for a grading with finitely many nonzero components it forces the components to vanish in a pattern, in particular $d=0$ unless the algebra is periodic. $\square$
+**Proof.** Applying the compatibility twice gives $\mathrm{G}_i\subseteq\mathrm{G}_{i+2d}$; if $2d\neq0$ this shifts every component, which is possible only when the grading is compatible with the shift, and for a grading with finitely many nonzero components it forces the components to vanish in a pattern, in particular $d=0$ unless the algebra is periodic.
 
 **Corollary.** For a $\mathbb{Z}$-graded algebra with finitely many nonzero components every involution compatible with the grading is even; odd involutions occur only for the periodic gradings, and in particular for the $\mathbb{Z}/2$-grading, where $2d=0$ automatically.
 
@@ -37,23 +37,23 @@ $$
 [\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}.
 $$
 
-**Proof.** An involution is diagonalisable; an even involution preserves each component, so the eigenspaces are graded; the bracket relations follow from $\omega[x,y]=[\omega x,\omega y]$ and the degrees. $\square$
+**Proof.** An involution is diagonalisable; an even involution preserves each component, so the eigenspaces are graded; the bracket relations follow from $\omega[x,y]=[\omega x,\omega y]$ and the degrees.
 
 **Corollary.** The pair $(\mathrm{G},\mathrm{K})$ is a symmetric pair whose members are graded, and the induced grading on $\mathrm{K}$ and on $\mathrm{P}$ is the restriction of the grading of $\mathrm{G}$.
 
 **Proposition (odd case).** If $\omega$ is an odd involution of degree $d\neq0$, the fixed and anti-fixed sets are not graded but satisfy $\omega(\mathrm{K}\cap\mathrm{G}_i)\subseteq\mathrm{K}\cap\mathrm{G}_{i+d}$ and similarly for $\mathrm{P}$; the even and odd parts of the reflection are exchanged by the grading shift, and the pair structure is the **reflected** one.
 
-**Proof.** For $x\in\mathrm{K}\cap\mathrm{G}_i$ one has $\omega x=x\in\mathrm{G}_{i+d}$, so $x$ has both degrees unless the grading is periodic; the statements are the componentwise reading of the compatibility. $\square$
+**Proof.** For $x\in\mathrm{K}\cap\mathrm{G}_i$ one has $\omega x=x\in\mathrm{G}_{i+d}$, so $x$ has both degrees unless the grading is periodic; the statements are the componentwise reading of the compatibility.
 
 ## Induced Structures
 
 **Proposition.** An even involution $\omega$ induces on the quotient $\mathrm{G}/\mathrm{K}$ an isomorphism with $\mathrm{P}$ preserving the grading, and induces on the graded algebra $\mathrm{G}$ the structure of a module over the fixed graded subalgebra $\mathrm{K}$ with the complement as a submodule.
 
-**Proof.** The quotient is identified with the image of the projector $\tfrac12(\mathrm{id}-\omega)$, which is $\mathrm{P}$; the projector commutes with the grading and with the adjoint action of $\mathrm{K}$. $\square$
+**Proof.** The quotient is identified with the image of the projector $\tfrac12(\mathrm{id}-\omega)$, which is $\mathrm{P}$; the projector commutes with the grading and with the adjoint action of $\mathrm{K}$.
 
 **Theorem.** The even involutions of the graded Lie algebra are exactly the involutions compatible with the **total** grading, and the grading together with an even involution makes $\mathrm{G}$ a bigraded object graded by $\mathbb{Z}\times\mathbb{Z}/2$; the involution is the sign change on the second factor.
 
-**Proof.** The involution provides a $\mathbb{Z}/2$-grading whose even part is $\mathrm{K}$ and odd part $\mathrm{P}$; it commutes with the $\mathbb{Z}$-grading, so the two gradings coexist, and the involution acts by $+1$ on the first factor of $\mathbb{Z}/2$ and $-1$ on the second. $\square$
+**Proof.** The involution provides a $\mathbb{Z}/2$-grading whose even part is $\mathrm{K}$ and odd part $\mathrm{P}$; it commutes with the $\mathbb{Z}$-grading, so the two gradings coexist, and the involution acts by $+1$ on the first factor of $\mathbb{Z}/2$ and $-1$ on the second.
 
 **Corollary.** The Cartan decomposition of a real semisimple Lie algebra is the case of the trivial grading; the graded case with nontrivial $\mathbb{Z}$-grading occurs for the Kac–Moody algebras and for the loop algebras, where the involution acts on the loop parameter by inversion, an odd involution.
 
@@ -61,7 +61,7 @@ $$
 
 **Proposition.** When the grading is the $\mathbb{Z}/2$-grading, every involution compatible with it is even (since $2d=0$), and the theory reduces to the involutions of a Lie superalgebra of *Involutive Lie Superalgebras*; the fixed subalgebra is the fixed superalgebra and the bracket relations are the super ones.
 
-**Proof.** The compatibility degree satisfies $2d=0$ in $\mathbb{Z}/2$, so $d=0$; an involution preserving the parity is the parity-compatible involution of the super entry, and the bracket relations are the same. $\square$
+**Proof.** The compatibility degree satisfies $2d=0$ in $\mathbb{Z}/2$, so $d=0$; an involution preserving the parity is the parity-compatible involution of the super entry, and the bracket relations are the same.
 
 **Corollary.** The two entries agree on the super case, and the present one extends it to the higher gradings; the super-involution, whose bracket compatibility is twisted by the Koszul sign, is the odd analogue in the $\mathbb{Z}/2$-setting, where the degree shift is invisible on the parity.
 
@@ -69,7 +69,6 @@ $$
 
 Let $\mathrm{G}=L\mathfrak{g}=\mathfrak{g}\otimes K[t,t^{-1}]$ with the grading by the exponent of $t$; let $\theta$ be an involution of $\mathfrak{g}$ and let $\omega(a\otimes t^n)=\theta(a)\otimes t^{-n}$. Then $\omega$ is an involution mapping $\mathrm{G}_n$ to $\mathrm{G}_{-n}$, an odd involution of degree $d=0$ in the $\mathbb{Z}$-grading read as a reflection $n\mapsto-n$: it is compatible with the grading in the reflected sense and its fixed subalgebra is the "twisted" subalgebra of $\theta$-fixed, $t$-symmetric elements. This is the algebraic form of the involution used in the theory of affine Lie algebras, and it shows that a grading-reversing involution is natural once the grading is not bounded below.
 
-**Verified.** The reflection $n\mapsto-n$ on the exponent was checked to be compatible with the bracket of the loop algebra, and the fixed subalgebra for $\mathfrak{g}=\mathrm{sl}(2,K)$ with $\theta(x)=-x^{t}$ was computed on monomials of low degree.
 
 ## Summary
 

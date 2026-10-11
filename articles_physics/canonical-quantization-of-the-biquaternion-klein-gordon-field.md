@@ -59,7 +59,6 @@ $$
 \left(\Box-\mu^2\right)\tilde{\Phi}=0 .
 $$
 
-**Verification.** With $\mu=1.1$ and a superposition of three on-shell plane waves whose wavevectors have magnitudes $1.3,2.1,0.8$ along the directions $(0.2,-0.5,0.7)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$ and amplitudes $1.0,0.7,-0.5$, the finite-difference evaluation of $(\Box-\mu^2)\phi$ at generic events, with step $10^{-4}$, had residuals of order $10^{-8}$, against a stencil's truncation error $(h^2/12)\sum_m|a_m|(\omega_m^4+\sum_i k_{mi}^4)=3.6\times10^{-8}$ at this step, the rounding of the second differences contributing at the same order. The superposition is the test rather than a single plane wave because the linearity of the equation makes the residual insensitive to the mode structure; what the check confirms is that the signs of $\mathcal{L}$, of $\Box$ and of the mass term are mutually consistent.
 
 ## The Field as a Central-Valued Object
 
@@ -89,7 +88,6 @@ $$
 N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}=-\frac{m^2c^2}{\hbar^2}\,e_0 .
 $$
 
-**Verification.** For $\mu=0.7$ and the three on-shell wavevectors $(1.3,0.2,-0.5)$, $(-0.9,0.4,0.1)$, $(0.6,0.6,-0.3)$, the direct biquaternion product gave $\tilde{K}\tilde{K}^{\natural}=-0.49\,e_0$ to twelve decimal places in every case, with the vector part vanishing to machine precision, and the phase identity $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})=\mathbf{k}\cdot\mathbf{x}-\omega t$ was reproduced exactly on an independent four-vector. The mass shell is a level set of the biquaternion norm, in the sense recorded by the parent article.
 
 ## Equal-Time Commutation Relations
 
@@ -182,7 +180,6 @@ with the occupation basis $|n_{\mathbf{p}_1},n_{\mathbf{p}_2},\dots\rangle$ and 
 
 The obstruction to anything more is worth stating precisely, because it distinguishes the scalar case from the Dirac case. The mode operators $\hat a_{\mathbf{p}},\hat a_{\mathbf{p}}^\dagger$ are **not** elements of $\mathbb{B}$. They are elements of the Weyl algebra of the one-particle space, which is infinite-dimensional, and no finite-dimensional algebra can contain them: if $[\tilde a,\tilde a^\dagger]=c\,e_0$ held for $\tilde a,\tilde a^\dagger\in\mathbb{B}$, the trace would give $0=\mathrm{Tr}([\tilde a,\tilde a^\dagger])=c\,\mathrm{Tr}(e_0)=2c$, hence $c=0$. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* draws the consequence for the algebra: $\mathbb{B}\cong M_2(\mathbb{C})$ hosts exactly one **fermionic** mode and no bosonic mode at all. The scalar field, being bosonic, has no native one-mode core in $\mathbb{B}$; its ladder is a construction on an imported module. The contrast with the Dirac quantization is exact: there the algebra at least carried the one-mode anticommutator and the fermion-parity grading; here it carries neither the commutator nor any scalar analog of the grading.
 
-**Verification of the truncation.** Although $\mathbb{B}$ has no bosonic mode, the finite-$n$ truncation of a bosonic mode is a useful explicit model of the algebra above. On the span of $|0\rangle,\dots,|n_{\max}\rangle$ with $\hat a|n\rangle=\sqrt{n}\,|n-1\rangle$ and $\hat a^\dagger|n\rangle=\sqrt{n+1}\,|n+1\rangle$ (and $\hat a^\dagger|n_{\max}\rangle=0$), the explicit matrices for $n_{\max}=6$ give $[\hat a,\hat a^\dagger]=\mathrm{diag}(+1,\dots,+1,-6)$ and $[\hat N,\hat a^\dagger]=\hat a^\dagger$, $[\hat N,\hat a]=-\hat a$ to $1.8\times10^{-15}$, the rounding of the square roots that enter the matrices; the entry $-6$ at the top is the truncation boundary, and the whole point of the trace argument is that no truncation removes it while remaining finite-dimensional.
 
 ## The Hamiltonian, Momentum and Charge
 

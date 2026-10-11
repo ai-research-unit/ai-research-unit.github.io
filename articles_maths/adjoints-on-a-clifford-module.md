@@ -68,7 +68,7 @@ is such a pairing, and every pairing of the regular module is of this form up to
 *Proof.* The existence and uniqueness are the module-level statement of Part II's *Hermitian Modules
 over a Hermitian Algebra with Hermitian Adjoint*, of which this is the Clifford instance; on the
 regular module the formula is checked directly, Hermitian symmetry being $(s^{*}t)^{*}=t^{*}s$ and
-left linearity being clear. $\square$
+left linearity being clear.
 
 ### The Scalar Hermitian Form
 
@@ -94,7 +94,7 @@ the biquaternionic model.
 Hermitian symmetry and the sesquilinearity pass to $\mathrm{Sc}\circ(\cdot,\cdot)_A$; the positivity
 is the defining property of the cone $P$ of Part II's *Positivity and the Hermitian Cone of a
 Hilbert Algebra with Hermitian Adjoint*, and the regular-module formula is the computation
-$\mathrm{Sc}(s^{*}t)=\sum_\mu\lvert s_\mu\rvert^2$ of that article. $\square$
+$\mathrm{Sc}(s^{*}t)=\sum_\mu\lvert s_\mu\rvert^2$ of that article.
 
 **Remark (the two forms are not interchangeable).** The Clifford-valued pairing is non-degenerate
 but **isotropic**: there are nonzero $s$ with $(s,s)_A=0$, because the algebra contains zero
@@ -128,7 +128,7 @@ $T^{\mathrm{Cl}}=-T$.
 the dual represented by a unique vector $T^{\mathrm{Cl}}s$, giving existence and uniqueness; the
 involution laws follow by applying the defining identity twice and to a composite, exactly as for
 the adjoint with respect to any non-degenerate sesquilinear form. The anti-linearity in the
-quaternionic case is the non-commutativity of the scalars. $\square$
+quaternionic case is the non-commutativity of the scalars.
 
 **Proposition (the regular module is real).** On the regular module $\mathcal{S}=A$ with the pairing
 $(s,t)_A=s^{*}t$, the Clifford-adjoint of the left multiplication is the left multiplication
@@ -143,7 +143,6 @@ and the Clifford-adjoint of a two-sided operator $M\mapsto aMb$ is again two-sid
 $L_{a^{*}}$; the right multiplication is the same computation on the other side, and the two-sided
 statement is the two applications. The result is the Clifford instance of the algebraic identity
 $L_a^{*}=L_{a^{*}}$ of Part II's *The Adjoint of the One-Sided Action with Hermitian Adjoint*.
-$\square$
 
 ## The Hermitian-Adjoint
 
@@ -171,7 +170,7 @@ Spectral Measures*.
 
 *Proof.* Quoted from Part II's *The Hermitian Adjoint on a Hermitian Module*: the bounded-operator
 adjoint exists by the Riesz representation theorem applied to $g\mapsto\langle Tg,f\rangle$, and the
-laws follow as above. $\square$
+laws follow as above.
 
 **Theorem (the adjoint of the multiplication).** On $L^2(\Omega;\mathcal{S})$ the pointwise Clifford
 multiplication has $c(x)^{\dagger}=c(x^{*})$:
@@ -186,7 +185,7 @@ multiplication by a unit scalar is unitary.
 *Proof.* The pointwise module axiom $(x\cdot s,t)_{\mathbb{K}}=(s,x^{*}\cdot t)_{\mathbb{K}}$
 integrates to the displayed identity. The relation between the two adjoints of the multiplication is
 the reason the Dirac operator is formally self-adjoint, and that algebraic reason is Part II's, in
-*The Adjoint of the One-Sided Action with Hermitian Adjoint*. $\square$
+*The Adjoint of the One-Sided Action with Hermitian Adjoint*.
 
 **Remark (the two adjoints of one operator).** Every operator has both adjoints. They agree on an
 $A$-linear operator because such an operator commutes with the module structure and the two pairings
@@ -212,7 +211,7 @@ inside the same form by an $A$-linear $T^{\mathrm{Cl}}$; taking the scalar part 
 $(Ts,t)_{\mathbb{K}}=(s,T^{\mathrm{Cl}}t)_{\mathbb{K}}$ by centrality of $\mathrm{Sc}$, which
 identifies $T^{\dagger}=T^{\mathrm{Cl}}$. The converse is the same computation read backwards. The
 general theory of the commutant and the invariant operators is Part II's, in *Invariant Operators
-and Intertwiners with Hermitian Adjoint*. $\square$
+and Intertwiners with Hermitian Adjoint*.
 
 **Theorem (the unitary groups).** The operators preserving the Clifford pairing form the
 **Clifford-unitary group** $\mathrm{U}(\mathcal{S},(\cdot,\cdot)_A)$ and those preserving the scalar
@@ -226,7 +225,6 @@ $(us,ut)_A=(s,t)_A$ for all $s,t$ reads $u^{*}u=1$ for the left multiplications.
 inclusions and the compactness are the statements of Part II's *Hermitian Modules over a Hermitian
 Algebra with Hermitian Adjoint* and *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint*,
 and the regular-module computation is immediate from $(us,ut)_A=(us)^{*}(ut)=s^{*}u^{*}ut$.
-$\square$
 
 **Remark (which adjoint is used where).** The Clifford-adjoint is the one used when the algebra
 matters: in the duality of spinors, in the Fierz identity and the bilinear covariants, and in the
@@ -259,7 +257,7 @@ $$
 Hermitian by the theorem above; the boundary term is the flux of the vector field $c(e_\mu)f$
 against $g$. The computation is the one of *Hermitian Hilbert Modules over a Clifford Algebra*, and
 the algebraic reason the multiplications make the result formally self-adjoint is Part II's *The
-Adjoint of the One-Sided Action with Hermitian Adjoint*. $\square$
+Adjoint of the One-Sided Action with Hermitian Adjoint*.
 
 **Corollary (self-adjointness of the operator, two senses).** The operator $iD$ is
 Hermitian-self-adjoint on a domain without boundary, and the vector operator
@@ -271,7 +269,7 @@ is $A$-linear over the algebra. The spectral theory is *Dirac Differential Opera
 *Proof.* The multiplications by the generators are skew for both forms and the derivatives are
 formally skew, so $iD$ and $D_{\mathrm{sa}}$ are self-adjoint on the appropriate domains; the
 Clifford statement is the same computation with the algebra-valued form, and the agreement is the
-theorem of the preceding section applied to the $A$-linear coefficient algebra. $\square$
+theorem of the preceding section applied to the $A$-linear coefficient algebra.
 
 **Remark (the Hermitian refinement).** In the Hermitian refinement the differential part of these
 statements is refined once more: the two Hermitian Dirac operators are exchanged by the involution,

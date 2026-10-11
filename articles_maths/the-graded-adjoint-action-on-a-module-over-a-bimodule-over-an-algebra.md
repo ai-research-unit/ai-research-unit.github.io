@@ -27,7 +27,7 @@ $$
 
 and it satisfies $a\triangleright x = L_a^{*}(x)$; the original left action is recovered from the adjoint action by $a x=\sigma(a)\triangleright x$.
 
-*Proof.* $(ab)\triangleright x=\sigma(ab)x=\sigma(b)\sigma(a)x=b\triangleright(\sigma(a)x)=b\triangleright(a\triangleright x)$, so it is a right action; the last two clauses are the definitions and $\sigma^{2}=\mathrm{id}$. $\square$
+*Proof.* $(ab)\triangleright x=\sigma(ab)x=\sigma(b)\sigma(a)x=b\triangleright(\sigma(a)x)=b\triangleright(a\triangleright x)$, so it is a right action; the last two clauses are the definitions and $\sigma^{2}=\mathrm{id}$.
 
 The pairing converts the left action of $A$ into the right adjoint action of $A$; the two actions together are the module-level form of the statement that the adjoint reverses the order, the content of $(L_{ab})^{*}=(L_b)^{*}(L_a)^{*}$.
 
@@ -39,7 +39,7 @@ $$
 a \in A_i \implies a\triangleright M_j \subseteq M_{i+j}, \qquad \deg(a\triangleright x)=\deg a+\deg x \quad (a,x \text{ homogeneous}).
 $$
 
-*Proof.* $a\triangleright M_j=\sigma(a)M_j$, and $\deg\sigma(a)=\deg a$ because $\sigma$ is graded, so $a\triangleright M_j\subseteq M_{i+j}$. $\square$
+*Proof.* $a\triangleright M_j=\sigma(a)M_j$, and $\deg\sigma(a)=\deg a$ because $\sigma$ is graded, so $a\triangleright M_j\subseteq M_{i+j}$.
 
 **Corollary.** The operator $L_a^{*}=L_{\sigma(a)}$ has the same parity as $L_a$, and the adjoint operation preserves the $\mathbb{Z}/2$-degree of every homogeneous one-sided operator:
 
@@ -47,7 +47,7 @@ $$
 \deg L_a^{*}=\deg L_a=\deg a .
 $$
 
-*Proof.* $L_a$ has parity $\deg a$ by the evenness of the action, and $\deg\sigma(a)=\deg a$, so $L_{\sigma(a)}$ has the same parity. $\square$
+*Proof.* $L_a$ has parity $\deg a$ by the evenness of the action, and $\deg\sigma(a)=\deg a$, so $L_{\sigma(a)}$ has the same parity.
 
 The adjoint is therefore not only additive and anti-multiplicative but **graded**: it maps operators of parity $i$ to operators of parity $i$, so no sign appears in the parity alone.
 
@@ -61,7 +61,7 @@ $$
 \alpha\,L_a\,\alpha^{-1}=(-1)^{\deg a}L_a, \qquad \alpha\,T\,\alpha^{-1}=(-1)^{\deg T}T .
 $$
 
-*Proof.* This is the sign rule of *The Graded Action on a Module over a Bimodule over an Algebra*. $\square$
+*Proof.* This is the sign rule of *The Graded Action on a Module over a Bimodule over an Algebra*.
 
 **Corollary.** The sign rule is compatible with the adjoint: for homogeneous $T$,
 
@@ -69,7 +69,7 @@ $$
 \alpha\,T^{*}\,\alpha^{-1}=(-1)^{\deg T}T^{*}.
 $$
 
-*Proof.* $T^{*}$ has the same parity as $T$ by the gradedness of the adjoint, so applying the sign rule to $T^{*}$ gives the identity. $\square$
+*Proof.* $T^{*}$ has the same parity as $T$ by the gradedness of the adjoint, so applying the sign rule to $T^{*}$ gives the identity.
 
 Conjugation by the grade involution, the adjoint, and the grading are therefore mutually compatible: both operations multiply a homogeneous operator by the same sign $(-1)^{\deg T}$.
 
@@ -91,7 +91,7 @@ $$
 
 and it vanishes exactly when $L_{ab-\epsilon ba}=0$, that is, when $ab-\epsilon ba$ annihilates $M$.
 
-*Proof.* $L_aL_b-L_bL_a\cdot\epsilon=\ldots$: since $L_aL_b=L_{ab}$, the expression is $L_{ab}-\epsilon L_{ba}=L_{ab-\epsilon ba}$; the last clause is the kernel statement for $L$. $\square$
+*Proof.* $L_aL_b-L_bL_a\cdot\epsilon=\ldots$: since $L_aL_b=L_{ab}$, the expression is $L_{ab}-\epsilon L_{ba}=L_{ab-\epsilon ba}$; the last clause is the kernel statement for $L$.
 
 The graded commutator is the graded version of the commutator, and the sign $\epsilon$ is the Koszul sign attached to the exchange of $a$ and $b$.
 
@@ -110,7 +110,7 @@ Thus the adjoint of the graded commutator is the graded commutator of the adjoin
 *Proof.* By the laws of the adjoint, $(L_aT)^{*}=T^{*}L_{\sigma(a)}$ and $(TL_a)^{*}=L_{\sigma(a)}T^{*}$, and $T^{*}$ has parity $\deg T$; hence
 
 $$
-[L_a,T]_{\epsilon}^{*}=T^{*}L_{\sigma(a)}-\epsilon\,L_{\sigma(a)}T^{*}=-\epsilon\bigl(L_{\sigma(a)}T^{*}-\epsilon\,T^{*}L_{\sigma(a)}\bigr)=-\epsilon\,[L_{\sigma(a)},T^{*}]_{\epsilon}. \qquad\square
+[L_a,T]_{\epsilon}^{*}=T^{*}L_{\sigma(a)}-\epsilon\,L_{\sigma(a)}T^{*}=-\epsilon\bigl(L_{\sigma(a)}T^{*}-\epsilon\,T^{*}L_{\sigma(a)}\bigr)=-\epsilon\,[L_{\sigma(a)},T^{*}]_{\epsilon}.
 $$
 
 **Corollary.** For two homogeneous left multiplications,
@@ -119,7 +119,7 @@ $$
 [L_a,L_b]_{\epsilon}^{*}=L_{\sigma(ab-\epsilon ba)}=-\epsilon\,[L_{\sigma(a)},L_{\sigma(b)}]_{\epsilon}.
 $$
 
-*Proof.* Apply the theorem with $T=L_b$, $T^{*}=L_{\sigma(b)}$, and use $[L_a,L_b]_\epsilon=L_{ab-\epsilon ba}$ and $\sigma(ab-\epsilon ba)=\sigma(b)\sigma(a)-\epsilon\,\sigma(a)\sigma(b)$. $\square$
+*Proof.* Apply the theorem with $T=L_b$, $T^{*}=L_{\sigma(b)}$, and use $[L_a,L_b]_\epsilon=L_{ab-\epsilon ba}$ and $\sigma(ab-\epsilon ba)=\sigma(b)\sigma(a)-\epsilon\,\sigma(a)\sigma(b)$.
 
 The theorem is the sign rule the grading imposes on the adjoint action: for two odd operators the anticommutator has a self-adjoint bracket, $[L_a,T]_{-1}^{*}=[L_{\sigma(a)},T^{*}]_{-1}$, while for the ordinary commutator a sign is required. It is the graded refinement of the elementary fact that the adjoint of a composite reverses the order.
 
@@ -133,7 +133,7 @@ $$
 
 and it sends operators of parity $i$ to operators of parity $i$: the adjoint action preserves the degree and the sign rule of the graded operators.
 
-*Proof.* This is *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*; the parity statement follows because $\sigma$ and $\alpha$ are graded and their composite $\beta$ is graded, so both parameters keep their degrees. $\square$
+*Proof.* This is *The Signed Adjoint of the Sandwich on a Bimodule over an Algebra*; the parity statement follows because $\sigma$ and $\alpha$ are graded and their composite $\beta$ is graded, so both parameters keep their degrees.
 
 ## The Adjoint Action on the Operators
 
@@ -151,11 +151,11 @@ $$
 (L_a T)^{*}=T^{*}L_{\sigma(a)}, \qquad (T L_a)^{*}=L_{\sigma(a)}T^{*} .
 $$
 
-*Proof.* The two formulas are the anti-multiplicativity of the adjoint with $(L_a)^{*}=L_{\sigma(a)}$. $\square$
+*Proof.* The two formulas are the anti-multiplicativity of the adjoint with $(L_a)^{*}=L_{\sigma(a)}$.
 
 **Corollary.** The adjoint action intertwines the involution of the algebra with the involution of the operators: the algebra element $a$ acts through $L_{\sigma(a)}$, so the adjoint action is the original action precomposed with $\sigma$, and applying the operator involution to an action applies $\sigma$ to the algebra element.
 
-*Proof.* $L_a^{*}=L_{\sigma(a)}$ is the identity defining the adjoint action; the rest is its restatement. $\square$
+*Proof.* $L_a^{*}=L_{\sigma(a)}$ is the identity defining the adjoint action; the rest is its restatement.
 
 ### Self-adjointness under the adjoint action
 
@@ -167,7 +167,7 @@ $$
 
 and conversely $T^{*}=T$ follows when this holds for a separating family of such $a$.
 
-*Proof.* By the theorem $[L_a,T]_{\epsilon}^{*}=-\epsilon[L_a,T^{*}]_{\epsilon}$, and with $\sigma(a)=a$ this is $-\epsilon[L_a,T^{*}]_{\epsilon}$. If $T^{*}=T$ it equals $-\epsilon[L_a,T]_{\epsilon}$, which is the displayed skewness. Conversely, if the skewness holds then $[L_a,T^{*}]_{\epsilon}=[L_a,T]_{\epsilon}$ for the family, that is $L_{a(T^{*}-T)-\epsilon(T^{*}-T)a}=0$, and for a separating family this forces $T^{*}=T$. $\square$
+*Proof.* By the theorem $[L_a,T]_{\epsilon}^{*}=-\epsilon[L_a,T^{*}]_{\epsilon}$, and with $\sigma(a)=a$ this is $-\epsilon[L_a,T^{*}]_{\epsilon}$. If $T^{*}=T$ it equals $-\epsilon[L_a,T]_{\epsilon}$, which is the displayed skewness. Conversely, if the skewness holds then $[L_a,T^{*}]_{\epsilon}=[L_a,T]_{\epsilon}$ for the family, that is $L_{a(T^{*}-T)-\epsilon(T^{*}-T)a}=0$, and for a separating family this forces $T^{*}=T$.
 
 ## Examples
 

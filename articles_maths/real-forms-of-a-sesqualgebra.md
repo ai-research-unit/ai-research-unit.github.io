@@ -22,7 +22,7 @@ $$
 R = R^{\varsigma}\oplus R^{-}, \qquad \lambda = \tfrac12\bigl(\lambda+\varsigma(\lambda)\bigr) + \tfrac12\bigl(\lambda-\varsigma(\lambda)\bigr).
 $$
 
-*Proof.* Sums and products of fixed elements are fixed because $\varsigma$ is a ring homomorphism, and $\varsigma(1)=1$. For $\lambda\in R^{-}$ and $\mu\in R^{\varsigma}$ one has $\varsigma(\mu\lambda)=\varsigma(\mu)\varsigma(\lambda)=\mu(-\lambda)=-\mu\lambda$, so $R^{-}$ is an $R^{\varsigma}$-submodule. The displayed decomposition is the standard one of the two projections $\tfrac12(\mathrm{id}\pm\varsigma)$, and it is direct because a scalar that is both fixed and anti-fixed satisfies $\lambda=-\lambda$, hence $2\lambda=0$ and $\lambda=0$ when $2$ is invertible. $\square$
+*Proof.* Sums and products of fixed elements are fixed because $\varsigma$ is a ring homomorphism, and $\varsigma(1)=1$. For $\lambda\in R^{-}$ and $\mu\in R^{\varsigma}$ one has $\varsigma(\mu\lambda)=\varsigma(\mu)\varsigma(\lambda)=\mu(-\lambda)=-\mu\lambda$, so $R^{-}$ is an $R^{\varsigma}$-submodule. The displayed decomposition is the standard one of the two projections $\tfrac12(\mathrm{id}\pm\varsigma)$, and it is direct because a scalar that is both fixed and anti-fixed satisfies $\lambda=-\lambda$, hence $2\lambda=0$ and $\lambda=0$ when $2$ is invertible.
 
 **Remark.** The two parts are the fixed and the anti-fixed elements of the base, and they are the base-level analogue of the Hermitian and skew-Hermitian elements of *Hermitian and Skew-Hermitian Elements*. The difference is that only the fixed part is a subring: it is closed under the product because $\varsigma$ is multiplicative, while a product of two anti-fixed scalars is fixed, so $R^{-}$ is a module and not a ring.
 
@@ -34,7 +34,7 @@ $$
 (\mu x)y = \mu(xy) = x(\mu y) .
 $$
 
-*Proof.* The restriction of the $R$-action to $R^{\varsigma}$ is an action because $R^{\varsigma}$ is a subring. The first equality is the first scalar rule and the second is the second rule with $\varsigma(\mu)=\mu$. $\square$
+*Proof.* The restriction of the $R$-action to $R^{\varsigma}$ is an action because $R^{\varsigma}$ is a subring. The first equality is the first scalar rule and the second is the second rule with $\varsigma(\mu)=\mu$.
 
 **Corollary.** Read over $R^{\varsigma}$ alone, the product of $A$ is $R^{\varsigma}$-bilinear. The $\varsigma$-twist is invisible over the fixed ring, and $A$ is an $R^{\varsigma}$-algebra in the ordinary sense together with its involution ${}^{*}$; whether that algebra is sesquilinear or bilinear is a question about the scalars one admits, and over $R^{\varsigma}$ it is bilinear.
 
@@ -60,11 +60,11 @@ $$
 
 **Theorem.** The fixed set $A^{\alpha}$ is a subalgebra of $A$ and an $R^{\varsigma}$-submodule; the anti-fixed part $A^{-\alpha}$ is an $R^{\varsigma}$-submodule; and when $2$ is invertible in $R$ the module decomposes as $A=A^{\alpha}\oplus A^{-\alpha}$ through $\tfrac12(x\pm\alpha(x))$.
 
-*Proof.* For $x,y\in A^{\alpha}$ the multiplicativity gives $\alpha(xy)=xy$ and the semilinearity gives $\alpha(\mu x)=\varsigma(\mu)x=\mu x$ for $\mu\in R^{\varsigma}$, so $A^{\alpha}$ is closed under the product and under the scalars of the fixed ring; the anti-fixed part is closed under the same scalars and under addition. The decomposition is $\tfrac12(\mathrm{id}\pm\alpha)$ and is direct because an element of both parts satisfies $x=-x$. $\square$
+*Proof.* For $x,y\in A^{\alpha}$ the multiplicativity gives $\alpha(xy)=xy$ and the semilinearity gives $\alpha(\mu x)=\varsigma(\mu)x=\mu x$ for $\mu\in R^{\varsigma}$, so $A^{\alpha}$ is closed under the product and under the scalars of the fixed ring; the anti-fixed part is closed under the same scalars and under addition. The decomposition is $\tfrac12(\mathrm{id}\pm\alpha)$ and is direct because an element of both parts satisfies $x=-x$.
 
 **Corollary.** The fixed subalgebra $A^{\alpha}$ is a sesqualgebra over the datum $(R^{\varsigma},\varsigma|_{R^{\varsigma}})=(R^{\varsigma},\mathrm{id})$, that is an ordinary $R^{\varsigma}$-algebra; its inclusion in $A$ is a morphism over $R^{\varsigma}$; and the datum involution ${}^{*}$ restricts to an $R^{\varsigma}$-linear involution of $A^{\alpha}$ when $\alpha$ commutes with ${}^{*}$, ${}^{*}\alpha=\alpha{}^{*}$.
 
-*Proof.* The first two statements are the theorem with the corollary above; the restriction of ${}^{*}$ is additive and of order two, and it is $R^{\varsigma}$-linear because $\varsigma$ is the identity on $R^{\varsigma}$, so it is an involution of the ordinary algebra $A^{\alpha}$. Its restriction to $A^{\alpha}$ is well defined when $\alpha(x^{*})=x^{*}$ for $x\in A^{\alpha}$, which holds as soon as the two involutions commute, $\alpha{}^{*}={}^{*}\alpha$; whether commutation is also necessary is not established here. $\square$
+*Proof.* The first two statements are the theorem with the corollary above; the restriction of ${}^{*}$ is additive and of order two, and it is $R^{\varsigma}$-linear because $\varsigma$ is the identity on $R^{\varsigma}$, so it is an involution of the ordinary algebra $A^{\alpha}$. Its restriction to $A^{\alpha}$ is well defined when $\alpha(x^{*})=x^{*}$ for $x\in A^{\alpha}$, which holds as soon as the two involutions commute, $\alpha{}^{*}={}^{*}\alpha$; whether commutation is also necessary is not established here.
 
 ## The Descent of the Sesquilinear Structure
 
@@ -78,7 +78,7 @@ $$
 
 is a homomorphism of $R^{\varsigma}$-algebras which is also $R$-linear; and it is compatible with the involutions when the tensor product carries $x\otimes\lambda\mapsto x^{*}\otimes\varsigma(\lambda)$. It is an isomorphism in each of the worked cases below.
 
-*Proof.* The restriction of the product to $A^{\alpha}$ is closed by the theorem above, and it is $R^{\varsigma}$-bilinear because both scalars rules coincide over the fixed ring. For $\mu$: the assignment $(x,\lambda)\mapsto\lambda x$ is $R^{\varsigma}$-bilinear, so it induces $\mu$; multiplicativity is $\mu\bigl((x\otimes\lambda)(y\otimes\eta)\bigr)=\mu(xy\otimes\lambda\eta)=\lambda\eta\,xy=(\lambda x)(\eta y)=\mu(x\otimes\lambda)\mu(y\otimes\eta)$, and $R$-linearity is $\mu(x\otimes r\lambda)=r\lambda x=r\mu(x\otimes\lambda)$. $\square$
+*Proof.* The restriction of the product to $A^{\alpha}$ is closed by the theorem above, and it is $R^{\varsigma}$-bilinear because both scalars rules coincide over the fixed ring. For $\mu$: the assignment $(x,\lambda)\mapsto\lambda x$ is $R^{\varsigma}$-bilinear, so it induces $\mu$; multiplicativity is $\mu\bigl((x\otimes\lambda)(y\otimes\eta)\bigr)=\mu(xy\otimes\lambda\eta)=\lambda\eta\,xy=(\lambda x)(\eta y)=\mu(x\otimes\lambda)\mu(y\otimes\eta)$, and $R$-linearity is $\mu(x\otimes r\lambda)=r\lambda x=r\mu(x\otimes\lambda)$.
 
 **Remark.** The map $\mu$ is the formal statement that the object is recovered from its fixed subalgebra by extension of scalars, and it is the shadow of the Galois-type descent of *Real Forms and the Descent of an Algebra*. One caution belongs with it in this generality: $\mu$ need not be an isomorphism for an arbitrary base, and what fails is the generation of the anti-fixed part by the fixed part, $A^{-\alpha}=A^{\alpha}R^{-}$. The smallest witness is the base $R=\mathbb{C}$ with $\varsigma=\mathrm{id}$, where $R^{\varsigma}=\mathbb{C}$, the object $A=\mathbb{C}^{2}$ with the coordinate exchange $\alpha(x,y)=(y,x)$ of order two: then $A^{\alpha}$ is the diagonal, $\mu$ is injective, and its image is the diagonal in $\mathbb{C}^{2}$, so $\mu$ is not onto. The isomorphism is therefore asserted in the worked cases and not in general. And the map is a statement about the algebra and the involution, not about the sesquilinear structure: over $R^{\varsigma}$ that structure is bilinear, so what descends is an ordinary algebra with an involution. The passage from the sesquilinear layer to the bilinear one that *Sesqualgebras* records at $\varsigma=\mathrm{id}$ is here performed by the fixed ring, on the subalgebra and not on the whole object.
 
@@ -88,7 +88,7 @@ The datum involution ${}^{*}$ and the descent automorphism $\alpha$ are two orde
 
 **Proposition.** Suppose $\alpha$ commutes with ${}^{*}$. Then the composite $\alpha{}^{*}$ is a $\varsigma$-semilinear map of order two, the four maps $\mathrm{id}$, ${}^{*}$, $\alpha$, $\alpha{}^{*}$ are commuting involutions, and their fixed subspaces are $A$, the Hermitian elements $H(A)$, the fixed subalgebra $A^{\alpha}$ and the fixed subspace of $\alpha{}^{*}$; the involution ${}^{*}$ carries $A^{\alpha}$ to itself and $\alpha$ carries $H(A)$ to itself.
 
-*Proof.* $(\alpha{}^{*})^{2}=\alpha{}^{*}\alpha{}^{*}=\alpha^{2}{}^{*2}=\mathrm{id}$ by the commuting, and the semilinearity is the composition of two semilinear maps with $\varsigma^{2}=\mathrm{id}$. The involution ${}^{*}$ carries fixed elements of $\alpha$ to fixed elements of $\alpha$ when $\alpha{}^{*}={}^{*}\alpha$, so $\alpha$ restricts to $H(A)$. $\square$
+*Proof.* $(\alpha{}^{*})^{2}=\alpha{}^{*}\alpha{}^{*}=\alpha^{2}{}^{*2}=\mathrm{id}$ by the commuting, and the semilinearity is the composition of two semilinear maps with $\varsigma^{2}=\mathrm{id}$. The involution ${}^{*}$ carries fixed elements of $\alpha$ to fixed elements of $\alpha$ when $\alpha{}^{*}={}^{*}\alpha$, so $\alpha$ restricts to $H(A)$.
 
 ## The Two Involutions and the Four Subobjects
 
@@ -103,7 +103,7 @@ The base involution acts on $R$ and the order-two automorphism on $A$, and each 
 
 **Theorem.** The four subobjects are as tabulated; each fixed part is closed under its own product, each anti-fixed part is a module over the corresponding fixed part, and both decompositions are direct when $2$ is invertible. The fixed ring $R^{\varsigma}$ acts on all four, and it is the only one of the four that is a ring.
 
-*Proof.* The statements about $R^{\varsigma}$, $R^{-}$ are the first theorem of the article and those about $A^{\alpha}$, $A^{-\alpha}$ are the second, and the action of $R^{\varsigma}$ on $A$ and on its two parts is the proposition on the scalars of the object. $\square$
+*Proof.* The statements about $R^{\varsigma}$, $R^{-}$ are the first theorem of the article and those about $A^{\alpha}$, $A^{-\alpha}$ are the second, and the action of $R^{\varsigma}$ on $A$ and on its two parts is the proposition on the scalars of the object.
 
 **Remark.** The four are not independent: $A^{\alpha}$ and $A^{-\alpha}$ are modules over $R^{\varsigma}$ and not over $R$, while the scalars of $R^{-}$ lie outside $R^{\varsigma}$ and act on $A$ through the $R$-action by scalars the involution does not fix. The asymmetry is the asymmetry of the two involutions: $\varsigma$ is an involution of the scalars and $\alpha$ is an involution of the object, and only the first changes the ring over which the object is read. This is why the descent of the sesquilinear structure is a statement about $R^{\varsigma}$ and $A^{\alpha}$ jointly and cannot be made with either involution alone.
 
@@ -117,7 +117,7 @@ Let $R=\mathbb{C}$ with $\varsigma$ the conjugation, so that $R^{\varsigma}=\mat
 
 **Theorem.** For the conjugation of $\mathbb{C}$ the sesquilinear structure of $A$ descends to the real form: $A^{\alpha}$ is an $\mathbb{R}$-algebra, its product is $\mathbb{R}$-bilinear, the multiplication map $A^{\alpha}\otimes_{\mathbb{R}}\mathbb{C}\to A$ is an isomorphism because $A=A^{\alpha}\oplus iA^{\alpha}$, and the datum involution ${}^{*}$ restricts to an $\mathbb{R}$-linear involution of it when it commutes with $\alpha$. In particular the real form of a complex sesqualgebra is an ordinary real algebra with an involution, and the sesquilinear structure lives on the complex object and not on its real form.
 
-*Proof.* $R^{\varsigma}=\mathbb{R}$ and $\varsigma$ is the identity there, so the corollary on the scalars of the object and the descent theorem apply with $R^{\varsigma}=\mathbb{R}$. For the isomorphism, $\alpha$ is $\mathbb{C}$-antilinear of order two, so every $x$ decomposes as $x=\tfrac12(x+\alpha x)+\tfrac12(x-\alpha x)$ with $\tfrac12(x+\alpha x)\in A^{\alpha}$ and $\tfrac12(x-\alpha x)=iy$ for $y=-\tfrac12 i(x-\alpha x)$, which lies in $A^{\alpha}$ because $\alpha(y)=-\tfrac12\varsigma(i)(\alpha x-x)=y$. The sum $A^{\alpha}+iA^{\alpha}$ is direct because an element of both parts satisfies $x=-x$. Hence $A=A^{\alpha}\oplus iA^{\alpha}$ and the multiplication map is a real-linear isomorphism, since it sends $x\otimes1\mapsto x$ and $x\otimes i\mapsto ix$. $\square$
+*Proof.* $R^{\varsigma}=\mathbb{R}$ and $\varsigma$ is the identity there, so the corollary on the scalars of the object and the descent theorem apply with $R^{\varsigma}=\mathbb{R}$. For the isomorphism, $\alpha$ is $\mathbb{C}$-antilinear of order two, so every $x$ decomposes as $x=\tfrac12(x+\alpha x)+\tfrac12(x-\alpha x)$ with $\tfrac12(x+\alpha x)\in A^{\alpha}$ and $\tfrac12(x-\alpha x)=iy$ for $y=-\tfrac12 i(x-\alpha x)$, which lies in $A^{\alpha}$ because $\alpha(y)=-\tfrac12\varsigma(i)(\alpha x-x)=y$. The sum $A^{\alpha}+iA^{\alpha}$ is direct because an element of both parts satisfies $x=-x$. Hence $A=A^{\alpha}\oplus iA^{\alpha}$ and the multiplication map is a real-linear isomorphism, since it sends $x\otimes1\mapsto x$ and $x\otimes i\mapsto ix$.
 
 **Remark.** The word **real form** is used here in the sense of *Real Forms and the Descent of an Algebra*: a real object whose extension of scalars is the given complex one. The two involutions are both needed for the definition — the base involution to say which ring is the real one, the order-two automorphism to say which subalgebra is the form — and neither alone gives a real form. The caution of the next section is that this pair of data is not available for every real algebra.
 
@@ -163,7 +163,7 @@ $$
 \mathbb{B}^{\bar{\cdot}} = \mathbb{R}e_0\oplus\mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3 \cong \mathbb{H},
 $$
 
-the biquaternions with real coefficients. So the quaternion algebra is a real form of the biquaternion algebra, $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B}$, which is the statement of *Biquaternions as an Algebra over $\mathbb{R}$*; the datum involution ${}^{*}$ restricts to $\natural$ on the form, and $\natural$ is the quaternion conjugation. The base involution of this case is trivial, because $R=\mathbb{R}$; the twist is not in the base but in the coefficient conjugation of the complex object, and the real form is cut by that conjugation and not by $\varsigma$.
+the biquaternions with real coefficients. So the quaternion algebra is a real form of the biquaternion algebra, $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B}$, which is the statement of *The Realification of the General Plain Algebra*; the datum involution ${}^{*}$ restricts to $\natural$ on the form, and $\natural$ is the quaternion conjugation. The base involution of this case is trivial, because $R=\mathbb{R}$; the twist is not in the base but in the coefficient conjugation of the complex object, and the real form is cut by that conjugation and not by $\varsigma$.
 
 ### The Quaternions
 
@@ -206,4 +206,4 @@ The two involutions, $\varsigma$ on the scalars and $\alpha$ on the object, cut 
 - I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the fixed rings and the symmetric elements of an involutive ring.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for the fixed subalgebras and the descent in the Jordan setting.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, second edition, 2001), for the quaternion algebra, its centre and the biquaternion algebra.
-- The companion articles of this series: *Sesqualgebras*, *Hermitian and Skew-Hermitian Elements*, *The Involutions of a Sesqualgebra*, *Anti-Automorphisms Twisted by the Base Involution*, *Subalgebras and the Involution*, *Real Forms and the Descent of an Algebra*, *Tensor Products of Sesqualgebras* and *Biquaternions as an Algebra over $\mathbb{R}$*.
+- The companion articles of this series: *Sesqualgebras*, *Hermitian and Skew-Hermitian Elements*, *The Involutions of a Sesqualgebra*, *Anti-Automorphisms Twisted by the Base Involution*, *Subalgebras and the Involution*, *Real Forms and the Descent of an Algebra*, *Tensor Products of Sesqualgebras* and *The Realification of the General Plain Algebra*.

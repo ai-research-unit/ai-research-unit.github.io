@@ -13,7 +13,7 @@ The base is a field $K$ of characteristic zero, $\mathrm{G}$ a finite-dimensiona
 
 **Proposition.** The trace form attached to a finite-dimensional module is symmetric and invariant; the PBW form is symmetric and nondegenerate. On both forms an operator has an adjoint with respect to the form when it is continuous in the finite-dimensional sense, and on the finite-dimensional quotients of $U(\mathrm{G})$ every operator has an adjoint.
 
-**Proof.** The trace of a product of operators is symmetric and invariant under cyclic permutation; the PBW form is symmetric and nondegenerate by the PBW theorem; the existence of adjoints on finite-dimensional quotients is linear algebra. $\square$
+**Proof.** The trace of a product of operators is symmetric and invariant under cyclic permutation; the PBW form is symmetric and nondegenerate by the PBW theorem; the existence of adjoints on finite-dimensional quotients is linear algebra.
 
 **Definition.** Let $b$ be a nondegenerate form. The **adjoint** of a linear operator $T$ is the operator $T^{\dagger}$ with $b(Tu,v)=b(u,T^{\dagger}v)$ for all $u,v$; it exists when the form is nondegenerate and the relevant linear functionals are represented.
 
@@ -25,7 +25,7 @@ $$
 \Theta^{\dagger}=\Theta .
 $$
 
-**Proof.** Since $\Theta^2=\mathrm{id}$ and the form is $\Theta$-invariant, $b(\Theta u,v)=b(\Theta^2u,\Theta v)=b(u,\Theta v)$; comparing with the defining equation $b(\Theta u,v)=b(u,\Theta^{\dagger}v)$ gives $\Theta^{\dagger}=\Theta$. $\square$
+**Proof.** Since $\Theta^2=\mathrm{id}$ and the form is $\Theta$-invariant, $b(\Theta u,v)=b(\Theta^2u,\Theta v)=b(u,\Theta v)$; comparing with the defining equation $b(\Theta u,v)=b(u,\Theta^{\dagger}v)$ gives $\Theta^{\dagger}=\Theta$.
 
 **Corollary.** With respect to the PBW form and with respect to the trace form of a module on which $\Theta$ acts by an isometry, the extension of any involution is self-adjoint; in particular the extension of the Cartan involution is self-adjoint, and the $\pm1$-eigenspaces of $\Theta$ in $U(\mathrm{G})$, the images of the spectral projectors $\tfrac12(\mathrm{id}\pm\Theta)$, are the subalgebra and the complement of the induced decomposition.
 
@@ -37,7 +37,7 @@ $$
 
 and the star satisfies $\tau^{\dagger}=\tau$; thus all three involutions are self-adjoint with respect to a symmetric invariant form.
 
-**Proof.** For $\sigma$, use $b(\sigma u,v)=b(\sigma u,\sigma\sigma v)$ and the invariance of $b$ under the anti-automorphism: $b(\sigma u,\sigma w)=b(u,w)$ when $b$ is compatible with $\sigma$ (the **$\sigma$-invariance** of the form), giving $\sigma^{\dagger}=\sigma$. The star is the composite of two commuting self-adjoint operators, hence self-adjoint. $\square$
+**Proof.** For $\sigma$, use $b(\sigma u,v)=b(\sigma u,\sigma\sigma v)$ and the invariance of $b$ under the anti-automorphism: $b(\sigma u,\sigma w)=b(u,w)$ when $b$ is compatible with $\sigma$ (the **$\sigma$-invariance** of the form), giving $\sigma^{\dagger}=\sigma$. The star is the composite of two commuting self-adjoint operators, hence self-adjoint.
 
 **Remark.** The self-adjointness is not automatic: it holds exactly for the forms invariant under the operator in question. The PBW form is invariant under $\Theta$ when $\theta$ permutes the PBW monomials of each degree, which holds for the involutions induced by the automorphisms of $\mathrm{G}$ that preserve the chosen basis; for a general invariant form the adjoint of $\Theta$ is $\Theta^{-1}$ conjugated by the form, and $\Theta^{-1}=\Theta$.
 
@@ -45,7 +45,7 @@ and the star satisfies $\tau^{\dagger}=\tau$; thus all three involutions are sel
 
 **Proposition.** The Casimir element $C$ of *The Casimir Operator and the Involution* is fixed by $\Theta,\sigma,\tau$ and is therefore self-adjoint with respect to any invariant form for which these maps are self-adjoint; the operator of left multiplication by $C$ satisfies $L_C^{\dagger}=L_C$.
 
-**Proof.** $C$ is central, so $L_C=R_C$ and $L_C$ commutes with the maps; the invariance of the form under $C$ and the self-adjointness of $L_C$ follow from the centrality and the theorem. $\square$
+**Proof.** $C$ is central, so $L_C=R_C$ and $L_C$ commutes with the maps; the invariance of the form under $C$ and the self-adjointness of $L_C$ follow from the centrality and the theorem.
 
 **Corollary.** The adjoint of the extension of an involution and the adjoint of the star coincide on the image of the centre, since both fix $C$; the eigenspaces of the adjoint action are the images of the spectral projectors $\tfrac12(\mathrm{id}\pm\Theta)$ and the associated decomposition is the one used by the symmetric pair.
 
@@ -53,7 +53,7 @@ and the star satisfies $\tau^{\dagger}=\tau$; thus all three involutions are sel
 
 **Proposition.** The algebra $\operatorname{End}_K(U(\mathrm{G}))$ of operators is $\mathbb{Z}/2$-graded by the conjugation by $\Theta$, with even operators those commuting with $\Theta$ and odd those anticommuting; the involutions $\Theta,\sigma,\tau$ are even, $\Theta$ because it commutes with itself, and $\sigma,\tau$ because they commute with $\Theta$ as shown in *Involutions of the Universal Enveloping Algebra*.
 
-**Proof.** The conjugation $T\mapsto\Theta T\Theta$ is an automorphism of order two of the operator algebra, giving the grading; the three maps are fixed by it. $\square$
+**Proof.** The conjugation $T\mapsto\Theta T\Theta$ is an automorphism of order two of the operator algebra, giving the grading; the three maps are fixed by it.
 
 **Corollary.** The adjoint operation ${}^{\dagger}$ with respect to a $\Theta$-invariant form commutes with the $\mathbb{Z}/2$-grading: the adjoint of an even operator is even and of an odd operator is odd, and the self-adjoint involutions are even.
 
@@ -61,7 +61,6 @@ and the star satisfies $\tau^{\dagger}=\tau$; thus all three involutions are sel
 
 Let $\mathrm{G}=\mathrm{sl}(2,K)$ and let $b$ be the PBW form for which the monomials $e^ih^jf^k$ are diagonal with weight $i!j!k!$, that is $b(e^ih^jf^k,e^{i'}h^{j'}f^{k'})=i!j!k!\,\delta_{ii'}\delta_{jj'}\delta_{kk'}$. The extension $\Theta$ of the Cartan involution $\theta(x)=-x^{t}$ permutes the monomials of each degree and preserves $b$; it is self-adjoint, and its $\pm1$-eigenspaces are spanned by the $\theta$-symmetric and $\theta$-antisymmetric monomials. The principal anti-automorphism $\sigma(e^ih^jf^k)=(-1)^{i+j+k}f^kh^je^i$ is an isometry of $b$ up to the weight comparison $i!j!k!=k!j!i!$, hence self-adjoint; the star $\tau=\Theta\sigma$ is self-adjoint and fixes the Casimir element $C$, whose left multiplication is self-adjoint and whose eigenvalues on the finite-dimensional representations are real.
 
-**Verified.** The self-adjointness of $\Theta$ and $\sigma$ was checked on the PBW monomials of degree at most two of $U(\mathrm{sl}(2,K))$ for the weighted PBW form, and the weights were checked to be symmetric under the reversal $e^ih^jf^k\mapsto f^kh^je^i$.
 
 ## Summary
 

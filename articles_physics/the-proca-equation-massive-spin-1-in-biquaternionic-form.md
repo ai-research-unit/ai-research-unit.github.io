@@ -88,7 +88,6 @@ $$
 
 The left-hand side is the biquaternion expression of $\partial_\mu F^{\mu\nu}$; the right-hand side is the mass term. The equation is the massive analogue of the companion Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, with the external source $\tilde{R}$ replaced by a current proportional to the potential itself.
 
-<!-- CONVENTION — Proca sign: the equation is written $\tilde{\nabla}\tilde{F} = +\mu^2\tilde{A}$ with $\mu=mc/\hbar$, and the sign is fixed by the requirement that the equation reduce to $(\Box-m^2c^2/\hbar^2)\tilde{A}=0$ with the SERIES d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The standard mostly-minus form reads $(\Box_{\text{mm}}+m^2)A^\nu=0$, and since $\Box_{\text{mm}}=-\Box$ the two are the same equation. Do not "correct" the sign to $-\mu^2$: that gives $(\Box+\mu^2)\tilde{A}=0$, which is the wrong-sign dispersion in this convention. -->
 
 ### Why the equation is the right one
 
@@ -125,7 +124,6 @@ $$
 
 which is the **Lorenz condition** of the companion Maxwell article, whose components are $\partial_{ict}A_0 + \mathrm{div}\,\mathbf{A} = 0$. The derivation uses only three facts: the field strength is a pure vector, the d'Alembertian is central and scalar, and the mass parameter is nonzero. In the massless case the same computation gives $0 = 0$ and no constraint, which is exactly why the gauge freedom survives there and is absent here.
 
-<!-- CONVENTION — Lorenz condition derived, not imposed: in the Proca system $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ is a CONSEQUENCE of the equation of motion. Applying $\tilde{\nabla}^{\natural}$ to both sides of $\tilde{\nabla}\tilde{F}=\mu^2\tilde{A}$ gives $\Box\tilde{F}=\mu^2\tilde{\nabla}^{\natural}\tilde{A}$, and the scalar part of the left-hand side vanishes because $\tilde{F}$ is a pure vector and $\Box$ is central and scalar. Note the right-hand side: applying the second gradient to the EQUATION converts $\mu^2\tilde{A}$ into $\mu^2\tilde{\nabla}^{\natural}\tilde{A}$, whose scalar part is $\mu^2S$; taking the scalar part of $\Box\tilde{F}=\mu^2\tilde{A}$ itself instead would give $0=\mu^2A_0$, which is not the Lorenz condition. In the Maxwell system the same $S=0$ is a choice of gauge. Do not describe the Proca Lorenz condition as a gauge fixing: there is no gauge symmetry to fix, and the constraint is part of the equations. -->
 
 ## Reduction to the Klein–Gordon Equation
 
@@ -289,7 +287,6 @@ $$
 
 The **reversal-even** combination is Proca's equation; the **reversal-odd** combination is the statement that there are no magnetic monopoles. The mass term is reversal-even and the monopole-free constraint is reversal-odd, so the two are halves of one equation, and the Maxwell equation of the companion article is what remains when the even half is massless. The splitting requires the potential to be ordinal-invariant — this is the assumption the source notes is made silently when Maxwell's equation is first written — and it is the same assumption under which the field strength is the vector part of the conjugate gradient of the potential.
 
-<!-- CONVENTION — one reversal, not two. The source's order reversal $\sim$ is the Clifford reversal, which the corpus identifies with quaternion conjugation ${}^{\natural}$ in *The Dirac Algebra and Biquaternions — A Dictionary* (signs $+$ on $e_0,ie_0$ and $-$ on $e_k,ie_k$ on the even basis). The source writes the reversed field bivector as $\tilde F^\sim=[0;\vec E-i\vec B]$, in its own sign and imaginary-conjugation conventions for the field components; that is the source's writing of the reversed field strength, not a second involution. Do not introduce a new "order reversal" map: the corpus has one reversal, and the involution lattice is already ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$, $\flat$. -->
 
 ### The two parities and the two massive particles
 

@@ -22,7 +22,7 @@ The definition is that of *The Sesquilinear Sandwich Operator*, §*The Sandwich*
 
 **Proposition (the parities).** The sandwich $S_{a,b}$ is additive and $\varsigma$-semilinear, $S_{a,b}(\lambda x) = \varsigma(\lambda)S_{a,b}(x)$, so it lies in $B^{\varsigma}(A)$; the two-sided multiplication $T_{a,b}$ is additive and $\mathbb{K}$-linear, so it lies in $B(A)$.
 
-*Proof.* The parities are those of *The Sesquilinear Sandwich Operator*, §*The Sandwich*, read in the operator classes of *Bounded Operators on a Sesqualgebra*: the variable enters through the middle slot of the triple product, which is the $\varsigma$-semilinear one, while the two-sided multiplication is linear in the variable. $\square$
+*Proof.* The parities are those of *The Sesquilinear Sandwich Operator*, §*The Sandwich*, read in the operator classes of *Bounded Operators on a Sesqualgebra*: the variable enters through the middle slot of the triple product, which is the $\varsigma$-semilinear one, while the two-sided multiplication is linear in the variable.
 
 ### The Norm and the Involution
 
@@ -34,7 +34,7 @@ $$
 
 and on a unital object with $\lVert 1\rVert = 1$ one has $\lVert T_{a,b}\rVert \geq \lVert ab\rVert$, hence $\lVert S_{a,b}\rVert \geq \lVert ab\rVert$.
 
-*Proof.* The identity is the definition: $T_{a,b}(x^{*}) = ax^{*}b = S_{a,b}(x)$. Composition with the involution is an isometry $B(A) \to B^{\varsigma}(A)$ by *Bounded Operators on a Sesqualgebra*, §*The Involution as an Operator*, so the two operator norms agree. For the bound, $\lVert T_{a,b}x\rVert = \lVert axb\rVert \leq \lVert a\rVert\lVert x\rVert\lVert b\rVert$ by the submultiplicative estimate, and the unital lower bound is the value at the unit, $\lVert T_{a,b}(1)\rVert = \lVert ab\rVert$. $\square$
+*Proof.* The identity is the definition: $T_{a,b}(x^{*}) = ax^{*}b = S_{a,b}(x)$. Composition with the involution is an isometry $B(A) \to B^{\varsigma}(A)$ by *Bounded Operators on a Sesqualgebra*, §*The Involution as an Operator*, so the two operator norms agree. For the bound, $\lVert T_{a,b}x\rVert = \lVert axb\rVert \leq \lVert a\rVert\lVert x\rVert\lVert b\rVert$ by the submultiplicative estimate, and the unital lower bound is the value at the unit, $\lVert T_{a,b}(1)\rVert = \lVert ab\rVert$.
 
 **Corollary (the parametrisation is bounded and bilinear).** The map
 
@@ -44,7 +44,7 @@ $$
 
 is $\mathbb{K}$-bilinear and continuous, $\lVert S_{a,b}\rVert \leq \lVert a\rVert\lVert b\rVert$, and it factors through a linear map $A \otimes A \to B^{\varsigma}(A)$ of norm at most one for the projective norm, by the universal property of *Topological Tensor Products of Sesqualgebras*, §*The Projective Topology*.
 
-*Proof.* Bilinearity is read on the parameters, $S_{\lambda a + \mu c,b} = \lambda S_{a,b} + \mu S_{c,b}$ and $S_{a,\lambda b+\mu d} = \lambda S_{a,b} + \mu S_{a,d}$, which holds because the involution is additive and scalar-fixed on the middle slot; the bound is the theorem, and continuity follows because a bilinear map bounded by a constant is continuous. The factorisation is the universal property. $\square$
+*Proof.* Bilinearity is read on the parameters, $S_{\lambda a + \mu c,b} = \lambda S_{a,b} + \mu S_{c,b}$ and $S_{a,\lambda b+\mu d} = \lambda S_{a,b} + \mu S_{a,d}$, which holds because the involution is additive and scalar-fixed on the middle slot; the bound is the theorem, and continuity follows because a bilinear map bounded by a constant is continuous. The factorisation is the universal property.
 
 **Remark.** The bilinear layer has the same map without the involution: $(a,b) \mapsto T_{a,b}$ with $T_{a,b}(x) = axb$ is the elementary operator of *The Left and Right Multiplication Operators on a Banach Algebra*, §*The Multiplication Operators and their Norms*, and the sandwiches are its composite with the involution on the right. The two parameter maps therefore carry the same information and the same norms; the difference is the class of the value, odd for the sandwich and even for the two-sided multiplication, and it is the whole of the difference between the sesquilinear and the bilinear two-sided operator.
 
@@ -60,11 +60,11 @@ $$
 
 and every composite is bounded with norm at most the product of the norms of the factors, which are at most the products $\lVert c\rVert\lVert d\rVert\lVert a\rVert\lVert b\rVert$ and so on.
 
-*Proof.* The four identities are the composition table of *The Sesquilinear Sandwich Operator*, §*The Multiplication Table*, obtained by direct computation with $(uv)^{*} = v^{*}u^{*}$ and the associativity of the involutive algebra; the bounds follow from $\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$ and the theorem of §*The Norm and the Involution* applied to each factor. $\square$
+*Proof.* The four identities are the composition table of *The Sesquilinear Sandwich Operator*, §*The Multiplication Table*, obtained by direct computation with $(uv)^{*} = v^{*}u^{*}$ and the associativity of the involutive algebra; the bounds follow from $\lVert ST\rVert \leq \lVert S\rVert\lVert T\rVert$ and the theorem of §*The Norm and the Involution* applied to each factor.
 
 **Corollary (the parity of a composite and its norm).** The composite of two sandwiches is a two-sided multiplication, that of a sandwich and a two-sided multiplication in either order is a sandwich, and that of two two-sided multiplications is a two-sided multiplication; the parity of the composite is the product of the parities, $\lVert S_{c,d}S_{a,b}\rVert = \lVert T_{cb^{*},a^{*}d}\rVert$, and the sandwiches are not closed under composition.
 
-*Proof.* The four cases are the table; the parity statement is the grading of *Bounded Operators on a Sesqualgebra*, §*The Parity of a Composite*; and the second sentence exhibits two sandwiches composing to a two-sided multiplication, so the family is not closed. $\square$
+*Proof.* The four cases are the table; the parity statement is the grading of *Bounded Operators on a Sesqualgebra*, §*The Parity of a Composite*; and the second sentence exhibits two sandwiches composing to a two-sided multiplication, so the family is not closed.
 
 ### The Square and the Reflections
 
@@ -76,7 +76,7 @@ $$
 
 bounded with norm at most $\lVert a\rVert^{2}\lVert b\rVert^{2}$; for a unitary $u$ the sandwich $S_{u,u}$ is the reflection of *The Sesquilinear Sandwich Operator*, §*The Reflections*, an involution of $A$ with $\lVert S_{u,u}\rVert \leq 1$, and it is an isometry exactly when $\lVert ux^{*}u\rVert = \lVert x\rVert$ for all $x$, which holds when the norm is a $\mathrm{C}^{*}$-norm.
 
-*Proof.* The square is the table with $c = a$ and $d = b$, giving $T_{ab^{*},a^{*}b}$, and the norm bound is $(\lVert a\rVert\lVert b\rVert)^{2}$ by the theorem. For unitary $u$ one has $\lVert S_{u,u}\rVert \leq 1$, and $S_{u,u}$ is an involution by *The Sesquilinear Sandwich Operator*, §*The Sandwich as a Reflection*; the isometry criterion is the identity $\lVert S_{u,u}x\rVert = \lVert ux^{*}u\rVert$ and the ordinary definition of an isometry. $\square$
+*Proof.* The square is the table with $c = a$ and $d = b$, giving $T_{ab^{*},a^{*}b}$, and the norm bound is $(\lVert a\rVert\lVert b\rVert)^{2}$ by the theorem. For unitary $u$ one has $\lVert S_{u,u}\rVert \leq 1$, and $S_{u,u}$ is an involution by *The Sesquilinear Sandwich Operator*, §*The Sandwich as a Reflection*; the isometry criterion is the identity $\lVert S_{u,u}x\rVert = \lVert ux^{*}u\rVert$ and the ordinary definition of an isometry.
 
 **Remark.** The reflections are the bounded sandwiches that are also involutions of the space, and the square of an arbitrary sandwich is a two-sided multiplication, so the family of the reflections is the intersection of the sandwiches with the involutions, parametrised by the unitary elements. The operator norm is exactly one, $\lVert S_{u,u}\rVert = 1$, because $S_{u,u}(u) = u u^{*} u = u$; what is not automatic is that $S_{u,u}$ is an isometry of $A$ on the nose, and that equality, $\lVert ux^{*}u\rVert = \lVert x\rVert$ for all $x$, is the $\mathrm{C}^{*}$-condition on the norm, which is the subject of *Banach Sesqualgebras*, §*The Function Algebras*.
 
@@ -92,11 +92,11 @@ $$
 
 and $\lVert S_{a,b}^{-1}\rVert = \lVert T_{a,b}^{-1}\rVert$ is the norm of the inverse two-sided multiplication.
 
-*Proof.* $S_{a,b} = T_{a,b}\circ *$ is the composite of the invertible involution with $T_{a,b}$, so it is invertible exactly when $T_{a,b}$ is; the two-sided multiplication $T_{a,b}(x) = axb$ is invertible exactly when $a$ and $b$ are units, since $T_{a,b}T_{r,s} = T_{ar,sb}$ and the unit is $T_{1,1}$. The formula is the inverse of *The Sesquilinear Sandwich Operator*, §*The Invertible Sandwiches*: $S_{a,b}S_{(b^{-1})^{*},(a^{-1})^{*}} = T_{a((a^{-1})^{*})^{*},\,((b^{-1})^{*})^{*}b} = T_{aa^{-1},\,b^{-1}b} = T_{1,1} = \mathrm{id}$. The norm equality is the isometry of composition with the involution. $\square$
+*Proof.* $S_{a,b} = T_{a,b}\circ *$ is the composite of the invertible involution with $T_{a,b}$, so it is invertible exactly when $T_{a,b}$ is; the two-sided multiplication $T_{a,b}(x) = axb$ is invertible exactly when $a$ and $b$ are units, since $T_{a,b}T_{r,s} = T_{ar,sb}$ and the unit is $T_{1,1}$. The formula is the inverse of *The Sesquilinear Sandwich Operator*, §*The Invertible Sandwiches*: $S_{a,b}S_{(b^{-1})^{*},(a^{-1})^{*}} = T_{a((a^{-1})^{*})^{*},\,((b^{-1})^{*})^{*}b} = T_{aa^{-1},\,b^{-1}b} = T_{1,1} = \mathrm{id}$. The norm equality is the isometry of composition with the involution.
 
 **Corollary (the parametrisation on the units).** On the units the parametrisation has kernel the group of central units, $S_{ap,p^{-1}b} = S_{a,b}$ for $p$ central and invertible, so the set of invertible sandwiches is the quotient of the group $A^{\times} \times A^{\times}$ by that action.
 
-*Proof.* The identity is that of *The Sesquilinear Sandwich Operator*, §*The Invertible Sandwiches*: for central invertible $p$ the element $p$ commutes with the middle slot's involution and $S_{ap,p^{-1}b}(x) = ap\,x^{*}p^{-1}b = a\,x^{*}b$. Conversely, if $S_{a,b} = S_{a',b'}$ then $T_{a,b} = T_{a',b'}$, and evaluating at the unit and at a general element gives $ab = a'b'$ and $a x b = a' x b'$ for all $x$, whence $a'a^{-1}$ is central, so the kernel is the central units. $\square$
+*Proof.* The identity is that of *The Sesquilinear Sandwich Operator*, §*The Invertible Sandwiches*: for central invertible $p$ the element $p$ commutes with the middle slot's involution and $S_{ap,p^{-1}b}(x) = ap\,x^{*}p^{-1}b = a\,x^{*}b$. Conversely, if $S_{a,b} = S_{a',b'}$ then $T_{a,b} = T_{a',b'}$, and evaluating at the unit and at a general element gives $ab = a'b'$ and $a x b = a' x b'$ for all $x$, whence $a'a^{-1}$ is central, so the kernel is the central units.
 
 ### The Group Generated
 
@@ -114,7 +114,7 @@ $$
 
 is the group generated by the invertible sandwiches, in which $\Sigma^{\times} = G_0 \circ *$ is the nontrivial coset of $G_0$.
 
-*Proof.* The multiplication of the $T_{p,q}$ is $T_{p,q}T_{r,s} = T_{pr,sq}$ with inverse $T_{p^{-1},q^{-1}}$, so $G_0$ is a subgroup and the assignment $(p,q)\mapsto T_{p,q}$ is an isomorphism onto it. The conjugation identity $(*\circ T_{p,q}\circ *)(x) = (p x^{*} q)^{*} = q^{*}xp^{*} = T_{q^{*},p^{*}}(x)$ shows that $*$ normalises $G_0$, and $*^{2} = \mathrm{id}$, so $G_0$ and $*$ generate $G_0 \rtimes \mathbb{Z}/2$. Every invertible sandwich is $T_{a,b}\circ *$ with $T_{a,b} \in G_0$, so $\Sigma^{\times} = G_0 \circ *$ is the other coset, and the union is all of $G$. $\square$
+*Proof.* The multiplication of the $T_{p,q}$ is $T_{p,q}T_{r,s} = T_{pr,sq}$ with inverse $T_{p^{-1},q^{-1}}$, so $G_0$ is a subgroup and the assignment $(p,q)\mapsto T_{p,q}$ is an isomorphism onto it. The conjugation identity $(*\circ T_{p,q}\circ *)(x) = (p x^{*} q)^{*} = q^{*}xp^{*} = T_{q^{*},p^{*}}(x)$ shows that $*$ normalises $G_0$, and $*^{2} = \mathrm{id}$, so $G_0$ and $*$ generate $G_0 \rtimes \mathbb{Z}/2$. Every invertible sandwich is $T_{a,b}\circ *$ with $T_{a,b} \in G_0$, so $\Sigma^{\times} = G_0 \circ *$ is the other coset, and the union is all of $G$.
 
 **Remark.** The theorem is the topological form of the statement that the sandwiches are the coset of the two-sided multiplications by the involution, and it is the reason the family is read as a group rather than as an algebra: the sandwiches are not closed under composition, their products being even, but together with the even operators they fill a group which is the semidirect product of two copies of the unit group by the order-two group of the involution. The boundedness of all the operators is what makes the group an object of the topological layer, and the norms of the elements are the operator norms computed above.
 
@@ -122,7 +122,7 @@ is the group generated by the invertible sandwiches, in which $\Sigma^{\times} =
 
 **Proposition (the relation to the sandwich operator on an algebra).** Let $A$ be a normed sesqualgebra with the trivial involution, $\varsigma = \mathrm{id}$ and $* = \mathrm{id}$. Then the sandwich is the two-sided multiplication, $S_{a,b} = T_{a,b}$, the two families coincide, the composition table is the classical one, and the operator layer of this article is that of *The Sandwich Operator on an Algebra*, with the boundedness and the bounds of the bilinear layer.
 
-*Proof.* With $* = \mathrm{id}$ the middle slot carries no involution and $S_{a,b}(x) = axb = T_{a,b}(x)$; the composition table reduces to $T_{a,b}T_{r,s} = T_{ar,sb}$ and the invertibility to the units. $\square$
+*Proof.* With $* = \mathrm{id}$ the middle slot carries no involution and $S_{a,b}(x) = axb = T_{a,b}(x)$; the composition table reduces to $T_{a,b}T_{r,s} = T_{ar,sb}$ and the invertibility to the units.
 
 **Remark.** The difference between the two layers is the involution in the middle slot, and it is exactly one factor of the bounded conjugate-linear operator $*$. The sandwich of the sesquilinear layer is therefore never itself a two-sided multiplication unless the involution is trivial or the element is adapted to it, and it is the simplest operator that separates the two layers: the left multiplication is the sandwich $S_{a,1}$, the right multiplication is the two-sided multiplication $T_{1,a^{*}}$, and the two-sided sandwich is the general $S_{a,b}$.
 

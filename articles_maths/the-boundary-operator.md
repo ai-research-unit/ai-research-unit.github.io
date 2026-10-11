@@ -68,13 +68,13 @@ $$
 
 **Theorem.** A chain map carries cycles to cycles and boundaries to boundaries, and hence induces $H_n(f) : H_n(C_*) \to H_n(D_*)$; the assignments $(C_*,\partial) \mapsto H_n(C_*,\partial)$, $f \mapsto H_n(f)$ are functorial. Chain-homotopic maps induce the same map on homology.
 
-*Proof.* If $\partial c = 0$ then $\partial(fc) = f\partial c = 0$, so $fc$ is a cycle; if $c = \partial c'$ then $fc = f\partial c' = \partial f c'$, so $fc$ is a boundary. The induced map is therefore well defined on classes; $(g \circ f)_n = g_n \circ f_n$ and $(\mathrm{id})_n = \mathrm{id}$ give functoriality. For the last statement, the displayed identity applied to a cycle $c$ gives $g c - f c = \partial P c$, a boundary, so the two classes agree. $\square$
+*Proof.* If $\partial c = 0$ then $\partial(fc) = f\partial c = 0$, so $fc$ is a cycle; if $c = \partial c'$ then $fc = f\partial c' = \partial f c'$, so $fc$ is a boundary. The induced map is therefore well defined on classes; $(g \circ f)_n = g_n \circ f_n$ and $(\mathrm{id})_n = \mathrm{id}$ give functoriality. For the last statement, the displayed identity applied to a cycle $c$ gives $g c - f c = \partial P c$, a boundary, so the two classes agree.
 
 The theorem is the exact content of the phrase that homology is a functor on the homotopy category of complexes: the objects are the complexes, the morphisms are the chain maps modulo chain homotopy, and the functor is homology.
 
 **Proposition (the boundary is determined by its values on generators).** If a graded module is free with a basis and $\partial$ is defined on the basis with $\partial^2 = 0$, then $\partial$ extends uniquely to an $R$-linear boundary operator, and the homology is computed from the matrix of $\partial$ in the basis. In particular a boundary operator on a finitely generated free complex is a matrix operator, and its rank and nullity are the data from which the homology is read.
 
-*Proof.* The extension is the universal property of a free module, and the square-zero condition is checked on the basis because both sides are $R$-linear. The matrix description and the rank-nullity computation of $H_n = \ker\partial_n/\operatorname{im}\partial_{n+1}$ are then linear algebra. $\square$
+*Proof.* The extension is the universal property of a free module, and the square-zero condition is checked on the basis because both sides are $R$-linear. The matrix description and the rank-nullity computation of $H_n = \ker\partial_n/\operatorname{im}\partial_{n+1}$ are then linear algebra.
 
 This is the operator under which the concrete computations of *The Boundary Operator of a Simplicial Complex* are performed, and the incidence matrices of a triangulation are its matrix expression.
 
@@ -108,13 +108,13 @@ $$
 
 is exact. The map $\Delta$ satisfies $\Delta j_* = 0$ and $i_* \Delta = 0$, and it is the composite of the inverse of $j$ on a lift, an application of $\partial$, and the inverse of $i$ — the **snake** of the diagram.
 
-*Proof.* This is the snake lemma of *Exact Sequences*, applied to the $3\times 3$ diagram whose two rows of complexes and two columns are the two adjacent degrees of the short exact sequence; the connecting map is built from $\partial_B$ by the chase, and the naturality is that of the chase. $\square$
+*Proof.* This is the snake lemma of *Exact Sequences*, applied to the $3\times 3$ diagram whose two rows of complexes and two columns are the two adjacent degrees of the short exact sequence; the connecting map is built from $\partial_B$ by the chase, and the naturality is that of the chase.
 
 The connecting homomorphism is thus an operator *constructed from* the boundary operator of the middle complex and the inverses of the two maps of the sequence; it is the reason an exact sequence of complexes produces an exact sequence of homology modules, and it is the pattern that every long exact sequence of this Part follows.
 
 **Corollary (the boundary of a pair).** For a pair $(X,A)$ of spaces, the connecting homomorphism $\partial : H_n(X,A;R) \to H_{n-1}(A;R)$ of the long exact sequence of *Simplicial and Singular Homology* is the connecting homomorphism of the short exact sequence $0 \to C_*(A) \to C_*(X) \to C_*(X,A) \to 0$ of complexes. The same statement holds for the relative complex of a pair of chain complexes and for every quotient by a subcomplex.
 
-*Proof.* The relative complex is the quotient of the ambient complex by the subcomplex of the subspace, so the sequence of complexes is short exact; apply the theorem. $\square$
+*Proof.* The relative complex is the quotient of the ambient complex by the subcomplex of the subspace, so the sequence of complexes is short exact; apply the theorem.
 
 ## The Coboundary as the Adjoint
 
@@ -140,7 +140,7 @@ $$
 
 because a cocycle pairs with a boundary to zero and a coboundary pairs with a cycle to zero. A chain map $f : C_* \to D_*$ has a dual $f^* : D^* \to C^*$ with $\langle f^*\alpha, c\rangle = \langle \alpha, f c\rangle$; the dual is a cochain map, and dualising is contravariant.
 
-*Proof.* The first identity is the definition of $\delta$; the bilinearity of the pairing together with the two vanishing statements — $\langle\delta\alpha, c\rangle = \langle\alpha,\partial c\rangle = 0$ for a cycle $c$ and a cocycle $\alpha$ — shows that the pairing of classes is well defined. The dual statements are the definition of the transpose and the associativity of composition. $\square$
+*Proof.* The first identity is the definition of $\delta$; the bilinearity of the pairing together with the two vanishing statements — $\langle\delta\alpha, c\rangle = \langle\alpha,\partial c\rangle = 0$ for a cycle $c$ and a cocycle $\alpha$ — shows that the pairing of classes is well defined. The dual statements are the definition of the transpose and the associativity of composition.
 
 The theorem is the operator-layer form of the universal coefficient theorem: it says that passage to the dual exchanges the boundary and the coboundary and reverses the direction of the operators, and it is the reason the cohomology of a complex is computed from the same matrix as the homology, transposed.
 
@@ -154,7 +154,7 @@ $$
 
 so that on classes the cap product makes $H_*(X;R)$ a graded module over the graded ring $H^*(X;R)$, with the boundary measuring the failure of the two terms on the right to cancel. The dual statement, the Leibniz rule $\delta(\varphi \smile \psi) = (\delta\varphi)\smile\psi + (-1)^{|\varphi|}\varphi\smile(\delta\psi)$, makes the coboundary a graded derivation for the cup product; its operator form is the subject of *The Cup Product as an Operator*.
 
-*Proof.* Both are the cochain-level identities of *Cup and Cap Products*, where the sign is forced by the convention for the evaluation of a cochain on a chain; the first is the boundary rule for the cap product, the second the Leibniz rule for the cup product. $\square$
+*Proof.* Both are the cochain-level identities of *Cup and Cap Products*, where the sign is forced by the convention for the evaluation of a cochain on a chain; the first is the boundary rule for the cap product, the second the Leibniz rule for the cup product.
 
 **Remark (the derivation and the product operators).** The two rules say that $\partial$ and $\delta$ are derivations of the products that the complexes carry, and they are exactly the identities needed for the products to pass to homology and cohomology. An operator that is a derivation of a product is the operator-layer form of the product's compatibility with the boundary; in the differential graded algebra of the cochains the operator $\delta$ is the differential, the product is the cup product, and the Leibniz rule is the defining relation of the differential graded structure.
 

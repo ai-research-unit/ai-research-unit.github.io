@@ -143,7 +143,6 @@ $$
 $$
 
 which is exactly the ABJ form of the companion article. The mass term is the classical breaking and the Jacobian term is the quantum one; the two are additive and independent.
-<!-- CONVENTION — anomaly normalization: the density A(x) is written with eps^{munurhosigma}F_{munu}F_{rhosigma} and coefficient q^2/16pi^2, gamma5 = i omega, eps^{0123}=+1. Conventions that use (1/2)epsFF or the opposite gamma5 sign carry the complementary factor of 2 or a minus; do not "reconcile" the coefficients across conventions without checking the definitions of gamma5 and eps. -->
 
 ## The Regulator and the Symmetry It Preserves
 

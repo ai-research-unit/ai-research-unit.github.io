@@ -38,13 +38,13 @@ $$
 
 **Theorem.** The diagonal action is free, so $X_G$ is the base of a fibre bundle with fibre $X$ and the projection $p : X_G \to BG$, $[e,x]\mapsto[e]$, is a fibration with fibre $X$. The construction is natural in the group and in the space: an equivariant map $f : X \to Y$ induces $\mathrm{id}\times_G f : X_G \to Y_G$, giving $H_G^*(f) : H_G^*(Y;R)\to H_G^*(X;R)$, contravariantly and functorially; and a homomorphism $\alpha : H \to G$ induces a map $X_H \to X_G$ from the induced $H$-action.
 
-*Proof.* The action on the product is free because it is free on the second factor: if $g(e,x)=(e,x)$ then $ge=e$, and $EG$ has trivial stabilisers, so $g=1$. Local triviality is that of the bundle $EG\times_G X\to BG$ along $EG\to BG$, with fibre $X$; the functoriality is the universal property of the quotient. $\square$
+*Proof.* The action on the product is free because it is free on the second factor: if $g(e,x)=(e,x)$ then $ge=e$, and $EG$ has trivial stabilisers, so $g=1$. Local triviality is that of the bundle $EG\times_G X\to BG$ along $EG\to BG$, with fibre $X$; the functoriality is the universal property of the quotient.
 
 ### Homotopy Invariance
 
 **Theorem.** The construction is homotopy invariant on the equivariant homotopy category: if $f$ and $g$ are equivariantly homotopic $G$-maps then $H_G^*(f) = H_G^*(g)$, and an equivariant homotopy equivalence induces an isomorphism in equivariant cohomology.
 
-*Proof.* An equivariant homotopy $X\times I\to Y$ with the trivial action on $I$ induces $\mathrm{id}\times_G H : X_G\times I\to Y_G$, an ordinary homotopy between the induced maps; homotopic maps induce the same map in cohomology. $\square$
+*Proof.* An equivariant homotopy $X\times I\to Y$ with the trivial action on $I$ induces $\mathrm{id}\times_G H : X_G\times I\to Y_G$, an ordinary homotopy between the induced maps; homotopic maps induce the same map in cohomology.
 
 So $H_G^*(X;R)$ depends only on the equivariant homotopy type of $X$ and not on the free resolution $EG$ chosen, since any two models of $EG$ are $G$-homotopy equivalent and the construction is homotopy invariant.
 
@@ -60,7 +60,7 @@ $$
 
 Hence $H_G^*(X;R) \cong H^*(X/G;R)$ for a free action, and the Borel fibration is the composite $X/G \to BG$ classifying the principal bundle $X\to X/G$.
 
-*Proof.* The projection $EG\times X\to X$ is a homotopy equivalence because $EG$ is contractible, it is $G$-equivariant for the diagonal action and the action on $X$, and it descends because the action is free; a descended homotopy equivalence is a homotopy equivalence of the quotients of *Equivariant Maps and Equivariant Homotopy*. $\square$
+*Proof.* The projection $EG\times X\to X$ is a homotopy equivalence because $EG$ is contractible, it is $G$-equivariant for the diagonal action and the action on $X$, and it descends because the action is free; a descended homotopy equivalence is a homotopy equivalence of the quotients of *Equivariant Maps and Equivariant Homotopy*.
 
 ### The Trivial Action
 
@@ -72,7 +72,7 @@ $$
 
 when the Künneth sequence of *Cup and Cap Products* splits, in particular over a field; the fibration is the projection $X\times BG\to BG$ and the module structure over $H^*(BG;R)$ is the multiplication on the second factor.
 
-*Proof.* For the trivial action the diagonal action is only on the first factor of $EG\times X$, so the quotient is $X\times BG$; the cohomology is that of a product and the Künneth theorem applies. $\square$
+*Proof.* For the trivial action the diagonal action is only on the first factor of $EG\times X$, so the quotient is $X\times BG$; the cohomology is that of a product and the Künneth theorem applies.
 
 The two cases are the anchors of the theory: a free action has the equivariant cohomology of its orbit space, and a trivial action has the equivariant cohomology of the product with the classifying space, so the equivariant groups interpolate between the two according to how far the action is from free.
 
@@ -94,7 +94,7 @@ $$
 
 when the action of the fundamental group is trivial, in particular for a connected group $G$ or when $X$ has trivial monodromy. The spectral sequence converges to the equivariant cohomology, is natural in equivariant maps, and its edge maps are the pullback $H^*(BG;R)\to H_G^*(X;R)$ along $X_G\to BG$ and the map $H_G^*(X;R)\to H^*(X;R)^G$ to the invariants.
 
-*Proof.* The Serre spectral sequence of the fibration with fibre $X$ and base $BG$, with local coefficients in the cohomology of the fibre; the triviality of the monodromy in the stated cases, and the edge maps are the standard edge homomorphisms. $\square$
+*Proof.* The Serre spectral sequence of the fibration with fibre $X$ and base $BG$, with local coefficients in the cohomology of the fibre; the triviality of the monodromy in the stated cases, and the edge maps are the standard edge homomorphisms.
 
 ### The Module Structure and the Transgression
 
@@ -106,7 +106,7 @@ $$
 
 as a module over $H^*(BG;R)$. A class of $H^*(X;R)$ that survives to the $E_\infty$ page and a class of $H^*(BG;R)$ that transgresses combine by the transgression differential, and the product structure couples the two.
 
-*Proof.* The action is the ring structure on the cohomology of $X_G$ and the naturality of the pullback along $X_G\to BG$; the collapse at $E_2$ identifies the associated graded with $H^*(BG)\otimes H^*(X)$, and the module is free because the base is the ring and the fibre contributes central coefficients. The transgression is the standard differential of the spectral sequence. $\square$
+*Proof.* The action is the ring structure on the cohomology of $X_G$ and the naturality of the pullback along $X_G\to BG$; the collapse at $E_2$ identifies the associated graded with $H^*(BG)\otimes H^*(X)$, and the module is free because the base is the ring and the fibre contributes central coefficients. The transgression is the standard differential of the spectral sequence.
 
 The module structure is the precise sense in which the equivariant cohomology is not merely a group but a structure over the cohomology of the group, and it is what the computations below use: the ring $H^*(BG;R)$ is known for the classical groups, and the equivariant groups are modules over it.
 
@@ -131,7 +131,7 @@ $$
 
 and hence $H_G^*(G/H;R) \cong H^*(BH;R)$.
 
-*Proof.* The action of $G$ on $G/H$ is transitive, so the map $EG\times G/H\to BH$ sending $(e,gH)$ to the class of $g$ is a homeomorphism on the quotient, since $EG\times G/H \cong EG/H$ with $H$ acting by the restriction on the right. $\square$
+*Proof.* The action of $G$ on $G/H$ is transitive, so the map $EG\times G/H\to BH$ sending $(e,gH)$ to the class of $g$ is a homeomorphism on the quotient, since $EG\times G/H \cong EG/H$ with $H$ acting by the restriction on the right.
 
 So the equivariant cohomology of a homogeneous space is the cohomology of the classifying space of its isotropy group, and the Borel fibration $BH\to BG$ is the map induced by the inclusion $H\to G$. For the free case $H=1$ this is $H_G^*(G;R) \cong H^*(\mathrm{pt};R)$.
 
@@ -157,7 +157,7 @@ $$
 
 and with field coefficients of characteristic not dividing $|G|$.
 
-*Proof.* The map $c$ exists because the equivariant projection is constant on the orbits; the free case is the theorem above. For a finite $G$ the transfer and the averaging argument of *The Transfer Map* split the action on the rational cohomology, so the invariants and the coinvariants agree and the Leray–Serre spectral sequence of $EG\times_G X\to X/G$ degenerates; the transfer argument with the group order inverted gives the stated characteristic restriction. $\square$
+*Proof.* The map $c$ exists because the equivariant projection is constant on the orbits; the free case is the theorem above. For a finite $G$ the transfer and the averaging argument of *The Transfer Map* split the action on the rational cohomology, so the invariants and the coinvariants agree and the Leray–Serre spectral sequence of $EG\times_G X\to X/G$ degenerates; the transfer argument with the group order inverted gives the stated characteristic restriction.
 
 The general comparison, the exact sequence that measures the failure of the isomorphism in the presence of fixed points, and the relation to the cohomology of the orbit space are the subject of *The Cohomology of an Orbit Space*. The essential point is that the Borel construction and the orbit space agree for a free action and differ in a controlled way otherwise, the difference being carried by the cohomology of the group.
 
@@ -171,7 +171,7 @@ $$
 
 and since the action on $F$ is trivial there, the right side is $H^*(F;\mathbb{Q})\otimes H^*(BT;\mathbb{Q})$ localized. In particular, for a torus action the rational equivariant cohomology is determined by the fixed set.
 
-*Proof.* The theorem of Atiyah–Bott and Borel; the localization uses the Euler classes of the normal directions to the fixed set and the fact that on the complement of the fixed set the equivariant Euler class is invertible in the localized ring. The statement is quoted, and the equivariant $K$-theory version is used in *Equivariant K-Theory*. $\square$
+*Proof.* The theorem of Atiyah–Bott and Borel; the localization uses the Euler classes of the normal directions to the fixed set and the fact that on the complement of the fixed set the equivariant Euler class is invertible in the localized ring. The statement is quoted, and the equivariant $K$-theory version is used in *Equivariant K-Theory*.
 
 ## Summary
 

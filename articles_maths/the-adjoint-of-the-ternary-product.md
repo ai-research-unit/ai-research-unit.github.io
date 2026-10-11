@@ -30,7 +30,7 @@ $$
 \Theta_{\lambda x,y}=\lambda\,\Theta_{x,y}, \qquad \Theta_{x,\lambda y}=\varsigma(\lambda)\,\Theta_{x,y}, \qquad \Theta_{x,y}(\lambda z)=\lambda\,\Theta_{x,y}(z) .
 $$
 
-**Proof.** The variable $z$ enters the plain product on the right, the first parameter on the left, and the second parameter through the involution. $\square$
+**Proof.** The variable $z$ enters the plain product on the right, the first parameter on the left, and the second parameter through the involution.
 
 **Remark.** The adjoint of $\Theta_{x,y}$ is therefore taken by the plain rule, and the parity obstruction of *The Sesquilinear Adjoint Operator* does not arise: the conjugate-linearity of the ternary product sits in the middle slot, which is a parameter of the operator and not its variable. A parameter can be conjugate-linear while the operator it names is linear, and the adjoint reads the operator and not the parameter.
 
@@ -42,11 +42,11 @@ $$
 \Theta_{x,y}^{\dagger}=\Theta_{y,x};\qquad\text{that is,}\qquad \varphi(\Theta_{x,y}z,w)=\varphi(z,\Theta_{y,x}w)\quad\text{for all }z,w\in A .
 $$
 
-**Proof.** By the definition of the pairing, $\varphi(\Theta_{x,y}z,w)=\tau\bigl(xy^{*}zw^{*}\bigr)$, and the cyclicity of $\tau$ turns it into $\tau\bigl(zw^{*}xy^{*}\bigr)$. On the other side, $\varphi(z,\Theta_{y,x}w)=\tau\bigl(z(yx^{*}w)^{*}\bigr)=\tau\bigl(zw^{*}xy^{*}\bigr)$, by the anti-multiplicativity of $*$. The two are equal, and the adjoint is unique. $\square$
+**Proof.** By the definition of the pairing, $\varphi(\Theta_{x,y}z,w)=\tau\bigl(xy^{*}zw^{*}\bigr)$, and the cyclicity of $\tau$ turns it into $\tau\bigl(zw^{*}xy^{*}\bigr)$. On the other side, $\varphi(z,\Theta_{y,x}w)=\tau\bigl(z(yx^{*}w)^{*}\bigr)=\tau\bigl(zw^{*}xy^{*}\bigr)$, by the anti-multiplicativity of $*$. The two are equal, and the adjoint is unique.
 
 **Corollary (the order of the operation).** $\Theta_{x,y}^{\dagger\dagger}=\Theta_{x,y}$, and $\Theta_{x,x}^{\dagger}=\Theta_{x,x}$: the diagonal of the pair map is self-adjoint.
 
-**Proof.** The adjoint operation is of order two by the general theory, and the first identity gives $\Theta_{x,x}^{\dagger}=\Theta_{x,x}$. $\square$
+**Proof.** The adjoint operation is of order two by the general theory, and the first identity gives $\Theta_{x,x}^{\dagger}=\Theta_{x,x}$.
 
 **Remark (the parities of the adjoint).** The adjoint $\Theta_{y,x}$ is, as a function of the pair, $\varsigma$-semilinear in $x$ and $R$-linear in $y$, because that is the parity of the pair map of the swapped pair. The adjoint operation therefore exchanges the two parities of the parameters: the linear parameter of $\Theta_{x,y}$ becomes the conjugate-linear parameter of the adjoint, and conversely. In the factorisation of the next section the same exchange appears as the star on the derived product.
 
@@ -60,7 +60,7 @@ $$
 \Theta_{x,x}=T_{x\star x,1},\qquad \Theta_{x,x}^{\dagger}=T_{(x\star x)^{*},1} .
 $$
 
-**Proof.** The first identity is the factorisation of the pair through the derived product, $\Theta_{x,x}=T_{x\star x,1}$, and the diagonal is self-adjoint by the corollary of the adjoint theorem. The second identity is the same factorisation read on the adjoint, and it agrees with the first because the derived square is Hermitian: $(x\star x)^{*}=(xx^{*})^{*}=(x^{*})^{*}x^{*}=xx^{*}=x\star x$. $\square$
+**Proof.** The first identity is the factorisation of the pair through the derived product, $\Theta_{x,x}=T_{x\star x,1}$, and the diagonal is self-adjoint by the corollary of the adjoint theorem. The second identity is the same factorisation read on the adjoint, and it agrees with the first because the derived square is Hermitian: $(x\star x)^{*}=(xx^{*})^{*}=(x^{*})^{*}x^{*}=xx^{*}=x\star x$.
 
 **Remark.** The quadratic representation of the Jordan theory is the diagonal of the pair map, and the theorem says that it is self-adjoint whatever the involution and whatever the algebra. In the degenerate case of a commutative algebra with $*=\mathrm{id}$ the operator $U_x=\Theta_{x,x}$ is $2T_{x,1}^{2}-T_{x^{2},1}$ of *The Ternary Product as an Operator*, and its self-adjointness is the classical self-adjointness of the quadratic representation; the general theorem recovers it.
 
@@ -74,7 +74,7 @@ $$
 
 The operator of a pair is therefore self-adjoint exactly when the derived product of the pair is Hermitian.
 
-**Proof.** By the adjoint theorem, $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$, and the two operators agree exactly when the derived products $x\star y$ and $y\star x$ agree, because the factorisation $\Theta_{p,q}=T_{p\star q,1}$ identifies the operator with its derived product and the left multiplication does not lose the element. Finally $y\star x=(xy^{*})^{*}=(x\star y)^{*}$, so the agreement of the two derived products is the Hermitian condition. $\square$
+**Proof.** By the adjoint theorem, $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$, and the two operators agree exactly when the derived products $x\star y$ and $y\star x$ agree, because the factorisation $\Theta_{p,q}=T_{p\star q,1}$ identifies the operator with its derived product and the left multiplication does not lose the element. Finally $y\star x=(xy^{*})^{*}=(x\star y)^{*}$, so the agreement of the two derived products is the Hermitian condition.
 
 **Corollary (the Hermitian pairs).** Every diagonal operator $\Theta_{x,x}$ is self-adjoint, since $x\star x=xx^{*}$ is Hermitian; more generally $\Theta_{x,y}$ is self-adjoint for the pairs whose derived product is Hermitian, for instance $y=cx$ with $c$ a central Hermitian element, where $x\star y=xx^{*}c$ and $y\star x=cxx^{*}$ agree. The condition is not automatic, and it is not met for $y=x^{*}$ in general: for $A=M_2(\mathbb{C})$ and $x=E_{11}+E_{12}$ the derived products $x\star x^{*}=x^{2}=E_{11}+E_{12}$ and $x^{*}\star x=(x^{*})^{2}=E_{11}+E_{21}$ differ, so the operator of that pair is not self-adjoint, while the diagonal $\Theta_{x,x}$ is.
 
@@ -90,7 +90,7 @@ $$
 \Theta_{x,y}^{\dagger}=\Theta_{y,x}, \qquad S_{x,z}^{\dagger}=S_{z,x}, \qquad T_{x\star y,1}^{\dagger}=T_{(x\star y)^{*},1} .
 $$
 
-**Proof.** The first identity is the adjoint theorem above. The second is the adjoint of the sandwich of *The Sesquilinear Adjoint Operator*, read with the middle reading $\Theta_{x,y}(z)=S_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\Theta_{x,y}=T_{x\star y,1}$ it reproduces the first identity. $\square$
+**Proof.** The first identity is the adjoint theorem above. The second is the adjoint of the sandwich of *The Sesquilinear Adjoint Operator*, read with the middle reading $\Theta_{x,y}(z)=S_{x,z}(y)$. The third is the adjoint of the plain left multiplication, which sends the parameter to its star; with the factorisation $\Theta_{x,y}=T_{x\star y,1}$ it reproduces the first identity.
 
 **Corollary (no new adjoint).** The adjoint of the ternary operator of a pair is the plain left multiplication by the star of its derived product,
 
@@ -114,7 +114,7 @@ $$
 
 The triple is reversible: the pairing of $\{x,y,z\}$ with $w$ equals the pairing of $z$ with the triple $\{y,x,w\}$, and this is the statement that the operator of the pair $(x,y)$ has the operator of the reversed pair $(y,x)$ as its adjoint.
 
-**Proof.** The identity is the adjoint theorem written with the ternary product: $\varphi(xy^{*}z,w)=\tau(xy^{*}zw^{*})=\tau(zw^{*}xy^{*})=\varphi(z,yx^{*}w)$. $\square$
+**Proof.** The identity is the adjoint theorem written with the ternary product: $\varphi(xy^{*}z,w)=\tau(xy^{*}zw^{*})=\tau(zw^{*}xy^{*})=\varphi(z,yx^{*}w)$.
 
 **Remark.** The reversibility is the symmetry that the $J^{*}$-triples carry: the operator of a pair has the operator of the reversed pair as its adjoint, so the family of the pair operators is closed under the adjoint, and the first slot of the triple may be exchanged with the outside element against the pairing at the cost of swapping the two middle parameters. Read on the derived product, the reversal is $y\star x=(x\star y)^{*}$: the derived product of the swapped pair is the star of the derived product of the pair, and it is this identity that the self-adjointness criterion of the preceding section turns into a condition on the pair.
 

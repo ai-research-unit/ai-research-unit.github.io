@@ -45,7 +45,7 @@ $$
 $$
 
 The result holds for every pair, and the operation restricted to the sector is an operation **of** the
-sector. Verified on $100$ random pairs. This is the closure cell of *Remarkable Subspaces under the Symmetric
+sector. This is the closure cell of *Remarkable Subspaces under the Symmetric
 Plain Algebra of Biquaternions*.
 
 **Proposition.** The material sector $\mathbb{M}_-$ is **not** closed under the symmetrised plain product,
@@ -75,7 +75,7 @@ $\tilde P=ie_1$, $\tilde Q=ie_2$: then
 $\tilde P\tilde Q=(ie_1)(ie_2)=-e_1e_2=-e_3$, which is anti-Hermitian and not an observable, while the
 two parts of the split read $\tilde P\bullet\tilde Q=\tfrac12(-e_3+e_3)=0$ and
 $\tilde P\wedge\tilde Q=\tfrac12(-e_3-e_3)=-e_3$. So the ordinary product of two observables need not be
-an observable, and the antisymmetric part is where it leaves the sector. Verified on the basis.
+an observable, and the antisymmetric part is where it leaves the sector.
 
 The observables therefore form a commutative unital algebra over $\mathbb{R}$ of real dimension four,
 with the unit $e_0$, and it satisfies the Jordan identity because the ambient operation does. The algebra
@@ -169,8 +169,7 @@ $\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde R)+\mathrm{Sc}(\tilde Q\tilde 
 the right side $\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde R)+\mathrm{Sc}(\tilde P\tilde R\tilde Q)\bigr)$.
 The first terms agree, and the second terms agree because the scalar part of the ordinary product is
 invariant under a cyclic permutation,
-$\mathrm{Sc}(\tilde Q\tilde P\tilde R)=\mathrm{Sc}(\tilde P\tilde R\tilde Q)$. Verified on $100$ random
-triples, max deviation $0$. The invariance is *The Trace Form and the Invariance of the Symmetric Plain
+$\mathrm{Sc}(\tilde Q\tilde P\tilde R)=\mathrm{Sc}(\tilde P\tilde R\tilde Q)$. The invariance is *The Trace Form and the Invariance of the Symmetric Plain
 Algebra*.
 
 **Proposition (positivity on the observables).** On $\mathbb{M}_+$ the trace form is real and strictly
@@ -180,7 +179,7 @@ $\mathrm{Sc}(\tilde P\tilde Q^{*})$, the Born pairing of the frame.
 
 *Proof.* For $\tilde Q$ Hermitian, $\tilde Q^{*}=\tilde Q$, so
 $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$; the diagonal
-is the sum of the squares of the four real coordinates $h_0,\mathbf{h}$. Verified on $100$ random pairs.
+is the sum of the squares of the four real coordinates $h_0,\mathbf{h}$.
 The Born pairing and the Hilbert–Schmidt reading are *The Hermitian Subspace $\mathbb{M}_+$ as the
 Informational Sector*.
 
@@ -318,22 +317,22 @@ are the closure, the positivity and the invariance, and none of the three readin
 ## Further Reading
 
 - Pascual Jordan, John von Neumann and Eugene Wigner, "On an Algebraic Generalization of the Quantum
-  Mechanical Formalism" (1934), for the Jordan programme and the classification of the formally real
-  Jordan algebras.
+Mechanical Formalism" (1934), for the Jordan programme and the classification of the formally real
+Jordan algebras.
 - Mathematics article *The Symmetric and Antisymmetric Parts of an Algebra Product*, for the bilinear
-  splitting, and *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, for the sesquilinear
-  one.
+splitting, and *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, for the sesquilinear
+one.
 - Mathematics article *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the form,
-  its symmetry, its non-degeneracy and its invariance.
+its symmetry, its non-degeneracy and its invariance.
 - Mathematics article *Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions*, for the
-  closure of the sector and the failure of closure of the others.
+closure of the sector and the failure of closure of the others.
 - Mathematics article *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain
-  Algebra*, for the square, the polarisation and the Jordan inverse.
+Algebra*, for the square, the polarisation and the Jordan inverse.
 - Mathematics article *Jordan Algebras*, *Special and Exceptional Jordan Algebras* and *Jordan Algebras
-  of Sesqualgebras*, for the Jordan identity, the special class and the sesquilinear counterpart.
+of Sesqualgebras*, for the Jordan identity, the special class and the sesquilinear counterpart.
 - Companion article *The Symmetrised Material Composition and the Jordan Identity*, for the operation and
-  its reading on the material sector.
+its reading on the material sector.
 - Companion article *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*, for the
-  antisymmetric half and its reading on the generators.
+antisymmetric half and its reading on the generators.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the
-  observables, the states, the cone and the Born pairing.
+observables, the states, the cone and the Born pairing.

@@ -39,7 +39,6 @@ whose biquaternion norm is
 $$
 N(d\tilde{Q}) = d\tilde{Q}\,d\overline{\tilde{Q}} = -c^2dt^2 + d\mathbf{x}^2 .
 $$
-<!-- CONVENTION — biquaternion norm on the material sector: N(dX) = dX dXbar = -c^2 dt^2 + dx^2. The minus sign comes from the ict coordinate, (ic dt)^2 = -c^2 dt^2, not from a choice of metric. The level-1 identity form diag(+1,+1,+1,+1) on B restricts to the level-2 Minkowski form eta = diag(-1,+1,+1,+1) on the real material slice. Do not "correct" the sign by importing a direct Euclidean metric on (t,x). -->
 
 Off the null set, $N(d\tilde{Q})$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
 

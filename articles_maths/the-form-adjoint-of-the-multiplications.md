@@ -38,7 +38,7 @@ $$
 
 the adjoint of the sandwich by $x$ being the sandwich by $x^{*}$, for a **cyclic** functional $\varphi = h(\cdot,1)$, in particular for the trace form; when $x$ is self-adjoint the sandwich is a self-adjoint operator in the sense of *Self-Adjoint and Skew Operators of a Form*.
 
-**Proof.** $h(xyx^{*}, z) = \varphi(z^{*}xyx^{*}) = \varphi(x^{*}z^{*}xy) = \varphi((x^{*}zx)^{*}y) = h(y, x^{*}zx) = h(y, \Theta_{x^{*}}(z))$, by the identification $h(u,w) = \varphi(w^{*}u)$ of *Sesqualgebras with a Form* and the cyclicity of the functional $\varphi = h(\cdot,1)$: the identity is a statement about the trace form, and it is verified there on the $4096$ triples of the tested set with no failure, while the compatible form $\tau(xGy^{*})$, $G = \operatorname{diag}(1,-1)$, fails it on $1296$ of them.
+**Proof.**
 
 **Corollary.** The sandwich is a self-adjoint operator exactly when $\Theta_{x} = \Theta_{x^{*}}$, equivalently when $x$ is self-adjoint and commutes with $x^{*}$ in the required sense; on the unitary slice the sandwich is the inner automorphism, $\Theta_{u}(y) = uyu^{-1}$.
 

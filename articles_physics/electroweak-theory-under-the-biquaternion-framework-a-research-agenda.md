@@ -16,7 +16,7 @@ The discipline this forces on the article is the one the genre requires: **an ag
 
 **The three-way classification.** The article sorts every item into one of three categories, and the distinction is the point of the agenda.
 
-1. **Established.** Recomputed in the series and inherited here; the abelian gauge principle, the non-abelian construction on $\mathrm{SU}(2)$, the Lie-algebra decomposition $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$, and the chiral structure on the spinor module.
+1. **Established.**
 2. **Obstacle with a known route.** The object does not exist, but the route to it is identifiable, usually because standard field theory supplies the computation and the framework must reproduce it on its own carrier, or because the object can be built on a declared carrier at the cost of leaving the framework's own construction.
 3. **Obstacle with no route yet.** No mechanism has been proposed, and naming an object is not the same as having a route to it. The hypercharge values and a gauge-fixing principle are in this class.
 

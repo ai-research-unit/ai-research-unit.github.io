@@ -22,7 +22,7 @@ the restriction of the adjoint involution of $\operatorname{End}_R(A)$. On the g
 
 **Theorem.** The restriction ${}^{*}$ is well defined, coincides with the induced involution of *Involutions of the Multiplication Operators*, and makes $\operatorname{Mult}(A)$ an involutive subalgebra of $\operatorname{End}_R(A)$: the inclusion $\iota : \operatorname{Mult}(A)\hookrightarrow\operatorname{End}_R(A)$ satisfies $\iota(F^{*}) = \iota(F)^{\dagger}$.
 
-*Proof.* $L_a^{\dagger} = L_{\sigma(a)}$ by *Adjoints in a Commutative Involutive Algebra*, so the restriction agrees with the displayed definition on the generators and hence on the whole algebra; the compatibility with the inclusion is the definition of the restriction. $\square$
+*Proof.* $L_a^{\dagger} = L_{\sigma(a)}$ by *Adjoints in a Commutative Involutive Algebra*, so the restriction agrees with the displayed definition on the generators and hence on the whole algebra; the compatibility with the inclusion is the definition of the restriction.
 
 **Corollary (uniqueness).** The involution ${}^{*}$ is the unique algebra involution of $\operatorname{Mult}(A)$ with $L_a^{*} = L_{\sigma(a)}$ for all $a$, because the $L_a$ generate the multiplication algebra and $a\mapsto L_a$ is injective; equivalently, it is the unique involution making the isomorphism $A\cong\operatorname{Mult}(A)$ equivariant.
 
@@ -30,7 +30,7 @@ the restriction of the adjoint involution of $\operatorname{End}_R(A)$. On the g
 
 **Proposition.** The restricted involution is compatible with the composition, $(FG)^{*} = G^{*}F^{*} = F^{*}G^{*}$, with the linearity, with the unit, $\mathrm{id}^{*} = \mathrm{id}$, and with the commutator in the sense $[F,G]^{*} = [G^{*},F^{*}]$.
 
-*Proof.* The first two are the anti-multiplicativity of ${}^{\dagger}$ and the commutativity of the algebra; the unit is $L_1^{*} = L_{\sigma(1)} = L_1$; the commutator identity is the graded derivation of the anti-automorphism. $\square$
+*Proof.* The first two are the anti-multiplicativity of ${}^{\dagger}$ and the commutativity of the algebra; the unit is $L_1^{*} = L_{\sigma(1)} = L_1$; the commutator identity is the graded derivation of the anti-automorphism.
 
 ## The Fixed Algebra
 
@@ -45,7 +45,7 @@ $$
 
 and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^{*}\oplus\operatorname{Mult}(A)^{-}$ when $2$ is invertible.
 
-*Proof.* $L_a^{\dagger} = L_a$ iff $\sigma(a) = a$; the injectivity of $a\mapsto L_a$ gives the isomorphisms; the direct sum is the involution decomposition of *Involutive Algebras*. $\square$
+*Proof.* $L_a^{\dagger} = L_a$ iff $\sigma(a) = a$; the injectivity of $a\mapsto L_a$ gives the isomorphisms; the direct sum is the involution decomposition of *Involutive Algebras*.
 
 **Corollary.** The fixed algebra of the involution on the multiplication operators is the multiplication algebra of the fixed subalgebra; it is $\operatorname{Mult}(A^\sigma)$, it is closed under the symmetrised product, and it is a Jordan subalgebra of the self-adjoint operators $E^+$ of $\operatorname{End}_R(A)$.
 
@@ -53,17 +53,17 @@ and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^{*}\oplus\operatorname{Mult
 
 **Proposition.** With the symmetrised product $F\bullet G = \tfrac12(FG+GF)$ the fixed algebra $\operatorname{Mult}(A)^{*}$ is a Jordan algebra, isomorphic to $(A^\sigma)^+$; the skew part is a Lie algebra under the commutator, isomorphic to the Lie algebra of $A^-$ under the commutator.
 
-*Proof.* The fixed algebra of an involution is closed under the symmetrised product and the anti-fixed part under the commutator, by *Involutive Algebras*; the isomorphism with $A^\sigma$ and $A^-$ is $a\mapsto L_a$, which carries the products to the products. $\square$
+*Proof.* The fixed algebra of an involution is closed under the symmetrised product and the anti-fixed part under the commutator, by *Involutive Algebras*; the isomorphism with $A^\sigma$ and $A^-$ is $a\mapsto L_a$, which carries the products to the products.
 
 ## Descent and Quotients
 
 **Proposition.** Let $I$ be a $\sigma$-stable ideal of $A$ and let $\bar\sigma$ be the induced involution of the quotient $A/I$. Then the multiplication operators of the quotient are the images of the multiplication operators of $A$ under the quotient map, and the induced involution of the quotient's multiplication operators is $\overline{L_a^{*}} = \overline{L_{\sigma(a)}}$; the fixed algebra is the multiplication algebra of $(A/I)^{\bar\sigma}\cong A^\sigma/(I\cap A^\sigma)$.
 
-*Proof.* $L_{a+I} = \pi L_a$ where $\pi$ is the quotient map, and $\bar\sigma(a+I) = \sigma(a)+I$ gives $\overline{L_a^{*}} = L_{\bar\sigma(a+I)} = L_{\sigma(a)+I}$; the fixed subalgebra of the quotient is the quotient of the fixed subalgebra by $I\cap A^\sigma$ by *Involution-Invariant Ideals of the Symmetric Algebra*. $\square$
+*Proof.* $L_{a+I} = \pi L_a$ where $\pi$ is the quotient map, and $\bar\sigma(a+I) = \sigma(a)+I$ gives $\overline{L_a^{*}} = L_{\bar\sigma(a+I)} = L_{\sigma(a)+I}$; the fixed subalgebra of the quotient is the quotient of the fixed subalgebra by $I\cap A^\sigma$ by *Involution-Invariant Ideals of the Symmetric Algebra*.
 
 **Proposition (descent).** Under the descent of *Commutative Algebras with an Involution*, the multiplication operators of $A$ with a $\sigma$-semilinear involution are the scalar extensions of the multiplication operators of $A^\sigma$; the fixed algebra $L_{A^\sigma}$ is the algebra of the fixed points of the involution on $\operatorname{Mult}(A)$.
 
-*Proof.* The descent identifies the $A$-modules with a $\sigma$-semilinear involution with the $A^\sigma$-modules, and the multiplication operators restrict to the multiplications of the fixed subalgebra. $\square$
+*Proof.* The descent identifies the $A$-modules with a $\sigma$-semilinear involution with the $A^\sigma$-modules, and the multiplication operators restrict to the multiplications of the fixed subalgebra.
 
 ## Examples
 

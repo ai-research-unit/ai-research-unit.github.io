@@ -55,7 +55,7 @@ $$
 
 Thus $f \mapsto L_f$ is an algebra homomorphism, $f \mapsto R_f$ an algebra anti-homomorphism, and every left convolution commutes with every right convolution.
 
-**Proof.** The bound is submultiplicativity, $\|L_f h\|_1 = \|f*h\|_1 \leq \|f\|_1\|h\|_1$. The first two composition laws are associativity read on the two sides; the third is the associativity $(f*h)*g = f*(h*g)$, which says $L_fR_g = R_gL_f$. An anti-homomorphism reverses the order of the product, which is exactly $R_fR_g = R_{g*f}$. $\square$
+**Proof.** The bound is submultiplicativity, $\|L_f h\|_1 = \|f*h\|_1 \leq \|f\|_1\|h\|_1$. The first two composition laws are associativity read on the two sides; the third is the associativity $(f*h)*g = f*(h*g)$, which says $L_fR_g = R_gL_f$. An anti-homomorphism reverses the order of the product, which is exactly $R_fR_g = R_{g*f}$.
 
 **Theorem (the norm is attained).** The left regular representation is isometric,
 
@@ -65,7 +65,7 @@ $$
 
 so $\mathcal{C}_L = \{L_f : f \in L^1(G)\}$ and $\mathcal{C}_R = \{R_f : f \in L^1(G)\}$ are closed subalgebras of $B(L^1(G))$ isometrically isomorphic to $L^1(G)$ and to its opposite algebra.
 
-**Proof.** The upper bound is the theorem above. For the lower bound let $\{u_i\}$ be a contractive approximate identity as in the next section, so that $\|u_i\|_1 = 1$ and $f*u_i \to f$ in $L^1(G)$. Then $\|f\|_1 = \lim_i \|f*u_i\|_1 = \lim_i\|L_fu_i\|_1 \leq \|L_f\|$. The same argument with $u_i*f$ gives the statement for $R_f$. The map $f\mapsto L_f$ is an injective homomorphism (for $L_f = 0$ gives $f*u_i\to0$ and $f = 0$) that is isometric, hence isometric onto its image, which is complete hence closed. $\square$
+**Proof.** The upper bound is the theorem above. For the lower bound let $\{u_i\}$ be a contractive approximate identity as in the next section, so that $\|u_i\|_1 = 1$ and $f*u_i \to f$ in $L^1(G)$. Then $\|f\|_1 = \lim_i \|f*u_i\|_1 = \lim_i\|L_fu_i\|_1 \leq \|L_f\|$. The same argument with $u_i*f$ gives the statement for $R_f$. The map $f\mapsto L_f$ is an injective homomorphism (for $L_f = 0$ gives $f*u_i\to0$ and $f = 0$) that is isometric, hence isometric onto its image, which is complete hence closed.
 
 **Proposition (commutation with the translations).** For all $f \in L^1(G)$ and all $x \in G$,
 
@@ -75,7 +75,7 @@ $$
 
 where $\lambda(x)h = \delta_x*h$ and $\rho(x)h = h*\delta_x$; that is, a left convolution commutes with the right translations and a right convolution commutes with the left translations.
 
-**Proof.** $L_f\rho(x)h = f*(h*\delta_x) = (f*h)*\delta_x = \rho(x)L_fh$, and the second identity is the mirror image. $\square$
+**Proof.** $L_f\rho(x)h = f*(h*\delta_x) = (f*h)*\delta_x = \rho(x)L_fh$, and the second identity is the mirror image.
 
 **Remark (the two families and the commutant).** The two families commute with each other by the composition law, and each commutes with the translations on the opposite side; the identification of the full commutant of the translations as the convolution operators of bounded measures is *The Involution on the Measure Algebra*, later in this category, where the measure algebra is available. On $L^1(G)$ the operators $L_f$ and $R_f$ alone do not exhaust the commutant in general.
 
@@ -97,11 +97,11 @@ $$
 
 that is $L_{u_i} \to \mathrm{id}$ and $R_{u_i} \to \mathrm{id}$ in the strong operator topology of $B(L^1(G))$, while $\|L_{u_i}\| = \|R_{u_i}\| = 1$ for every $i$. Hence the strong limit of the operators $L_{u_i}$ is the identity although $\mathcal{A}$ has no identity element unless $G$ is discrete.
 
-**Proof.** For $f \in C_c(G)$ the continuity of translation gives $\|u_i*f - f\|_1 \to 0$ and $\|f*u_i - f\|_1 \to 0$, and $C_c(G)$ is dense in $L^1(G)$; the isometry $\|L_{u_i}\| = \|u_i\|_1 = 1$ is the theorem of the previous section. The strong convergence is the definition of the approximate identity, and the last sentence records that a strong limit of isometries need not be attained. $\square$
+**Proof.** For $f \in C_c(G)$ the continuity of translation gives $\|u_i*f - f\|_1 \to 0$ and $\|f*u_i - f\|_1 \to 0$, and $C_c(G)$ is dense in $L^1(G)$; the isometry $\|L_{u_i}\| = \|u_i\|_1 = 1$ is the theorem of the previous section. The strong convergence is the definition of the approximate identity, and the last sentence records that a strong limit of isometries need not be attained.
 
 **Corollary (the identity in the discrete case).** If $G$ is discrete the net may be taken constant, $u_i = \delta_e$, and $L_{\delta_e} = R_{\delta_e} = \mathrm{id}$; the strong convergence is attained and $\mathcal{A} = \ell^1(G)$ is unital.
 
-**Proof.** $\delta_e$ is the unit of $\ell^1(G)$ by the proposition on the algebra laws, and $L_{\delta_e} = \mathrm{id}$ by definition. $\square$
+**Proof.** $\delta_e$ is the unit of $\ell^1(G)$ by the proposition on the algebra laws, and $L_{\delta_e} = \mathrm{id}$ by definition.
 
 ## The Fourier Transform
 
@@ -125,7 +125,7 @@ $$
 
 the first for abelian $G$, the second in general; both are continuous, with $|\hat f(\chi)| \leq \|f\|_1$ in the abelian case and $\|\hat f(\pi)\| \leq \|f\|_1$ in general.
 
-**Proof.** The abelian identity is Fubini and the multiplicativity of $\chi$: $\widehat{f*g}(\chi) = \iint f(y)g(y^{-1}x)\chi(x)\,dy\,dx = \int f(y)\chi(y)\,dy\int g(z)\chi(z)\,dz$. The general identity is the same computation with the operator product in place of the scalar product, the integrals converging in the operator norm. Continuity is the triangle inequality for the vector-valued integral. $\square$
+**Proof.** The abelian identity is Fubini and the multiplicativity of $\chi$: $\widehat{f*g}(\chi) = \iint f(y)g(y^{-1}x)\chi(x)\,dy\,dx = \int f(y)\chi(y)\,dy\int g(z)\chi(z)\,dz$. The general identity is the same computation with the operator product in place of the scalar product, the integrals converging in the operator norm. Continuity is the triangle inequality for the vector-valued integral.
 
 **Proposition (the transform diagonalises convolution).** On a unimodular group of type I the Plancherel transform $\mathcal{F} : L^2(G) \to \int^\oplus (\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)\,d\mu_P(\pi)$ intertwines left convolution with the field of its transforms,
 
@@ -135,7 +135,7 @@ $$
 
 the field acting by multiplication on the fibre $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$; in the abelian case this is the statement that $L_f$ on $L^2(G)$ is unitarily equivalent to multiplication by the bounded continuous function $\hat f$ on $G^\vee$.
 
-**Proof.** The convolution theorem gives $\widehat{f*h}(\pi) = \hat f(\pi)\hat h(\pi)$, and the Plancherel transform carries $h$ to the field $\hat h(\pi)$; hence it carries $L_fh$ to $\hat f(\pi)\hat h(\pi)$. The abelian case is the specialisation $\mathcal{H}_\pi = \mathbb{C}$ and $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^* = \mathbb{C}$, where the field is multiplication by $\hat f(\chi)$. $\square$
+**Proof.** The convolution theorem gives $\widehat{f*h}(\pi) = \hat f(\pi)\hat h(\pi)$, and the Plancherel transform carries $h$ to the field $\hat h(\pi)$; hence it carries $L_fh$ to $\hat f(\pi)\hat h(\pi)$. The abelian case is the specialisation $\mathcal{H}_\pi = \mathbb{C}$ and $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^* = \mathbb{C}$, where the field is multiplication by $\hat f(\chi)$.
 
 **Remark (norm realised on the spectrum).** The transform of the previous proposition realises the operator norm of $L_f$ on $L^2(G)$ as an essential supremum in the abelian case, $\|L_f\|_{B(L^2)} = \|\hat f\|_\infty$, and in general as the essential supremum of $\pi \mapsto \|\hat f(\pi)\|$ against $\mu_P$; the $L^1$ norm of the theorem on $L_f$ is the norm of the same operator on $L^1(G)$, and the two need not agree. The $L^2$ norms belong to *The Plancherel Operator* and *Noncommutative Harmonic Analysis*.
 
@@ -143,7 +143,7 @@ the field acting by multiplication on the fibre $\mathcal{H}_\pi\otimes\mathcal{
 
 **Theorem (the convolution operators form the group algebra).** The assignment $f \mapsto L_f$ is an isometric algebra isomorphism of $L^1(G)$ onto the closed subalgebra $\mathcal{C}_L \subseteq B(L^1(G))$; the algebra $\mathcal{C}_L$ is commutative exactly when $G$ is abelian, unital exactly when $G$ is discrete, and its strong closure contains the identity of $B(L^1(G))$ while containing no identity of itself when $G$ is non-discrete.
 
-**Proof.** The map is an isometric homomorphism by the theorems above; the algebra properties are transferred from $\mathcal{A}$ along it; the strong closure contains the strong limit of the approximate identity, which is the identity operator, and the last statement is that of the section on approximate identities. $\square$
+**Proof.** The map is an isometric homomorphism by the theorems above; the algebra properties are transferred from $\mathcal{A}$ along it; the strong closure contains the strong limit of the approximate identity, which is the identity operator, and the last statement is that of the section on approximate identities.
 
 **Proposition (the action on $L^p$).** For $1 \leq p \leq \infty$ and $f \in L^1(G)$ the formula $L_fh = f*h$ defines a bounded operator on $L^p(G)$ with
 
@@ -153,7 +153,7 @@ $$
 
 and on $L^\infty(G)$ the operator is weak-$*$ continuous; the left convolution operators on the several $L^p$ are the several integrated regular representations of the same element.
 
-**Proof.** Young's inequality $\|f*h\|_p \leq \|f\|_1\|h\|_p$ is Minkowski's integral inequality, and the weak-$*$ continuity is duality with the $L^q$ action for $q$ conjugate to $p$, $1 < p < \infty$; the endpoint cases are the usual ones. The identification with the integrated regular representation is the definition. $\square$
+**Proof.** Young's inequality $\|f*h\|_p \leq \|f\|_1\|h\|_p$ is Minkowski's integral inequality, and the weak-$*$ continuity is duality with the $L^q$ action for $q$ conjugate to $p$, $1 < p < \infty$; the endpoint cases are the usual ones. The identification with the integrated regular representation is the definition.
 
 **Remark (what the article does not do).** The article has used no involution and no adjoint: the anti-linear structure of $L^1(G)$ and the adjoint of $L_f$ on $L^2(G)$ are the `- * Theory` and `- * Operator Theory` groups of this category, and the group $C^*$-algebras $C^*(G)$ and $C^*_r(G)$, together with the von Neumann algebra $L(G)$, are treated where their operator-algebraic foundations are available. The measure algebra and convolution by a bounded measure, which complete the commutant of the translations, are *The Involution on the Measure Algebra*, later in this category.
 

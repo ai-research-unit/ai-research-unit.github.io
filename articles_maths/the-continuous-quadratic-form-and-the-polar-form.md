@@ -24,7 +24,7 @@ The three conditions are the algebraic definition of *Quadratic Forms and Polari
 
 **Proposition (the polar form is continuous).** Let $q$ be a continuous quadratic form. Then $B : V\times V\to F$ is continuous.
 
-*Proof.* By the definition, $B$ is the composite of the map $(x,y)\mapsto (q(x+y),q(x),q(y))$, which is continuous because $q$ is and the operations of the module are, with the continuous map $(u,v,w)\mapsto\tfrac12(u-v-w)$ of $F^{3}$ into $F$. A composite of continuous maps is continuous. $\square$
+*Proof.* By the definition, $B$ is the composite of the map $(x,y)\mapsto (q(x+y),q(x),q(y))$, which is continuous because $q$ is and the operations of the module are, with the continuous map $(u,v,w)\mapsto\tfrac12(u-v-w)$ of $F^{3}$ into $F$. A composite of continuous maps is continuous.
 
 **Remark (the converse is the definition).** For a symmetric bilinear form $B$, the diagonal $q(x)=B(x,x)$ is a quadratic form, and it is continuous whenever $B$ is; the statement of the proposition is that the continuity of $q$ alone implies that of $B$, so in the layer the quadratic form is the primitive datum and the bilinear form a derived one. In characteristic $2$ the polarisation identity is not available and a quadratic form is not determined by a symmetric bilinear form; the corpus excludes that case, as *Quadratic Forms and Polarisation*, §*The Failure of Polarisation* records.
 
@@ -34,7 +34,7 @@ The three conditions are the algebraic definition of *Quadratic Forms and Polari
 
 **Proposition.** Let $q$ be a continuous quadratic form on a Hausdorff module over a Hausdorff field. Then the radical is a closed subspace of $V$.
 
-*Proof.* For each $w\in V$ the map $\varphi_{w}(v)=B(v,w)$ is continuous, by the continuity of $B$ and that of the pairing with the fixed vector $w$; its kernel is closed. The radical is the intersection $\bigcap_{w\in V}\ker\varphi_{w}$, and an intersection of closed sets is closed. $\square$
+*Proof.* For each $w\in V$ the map $\varphi_{w}(v)=B(v,w)$ is continuous, by the continuity of $B$ and that of the pairing with the fixed vector $w$; its kernel is closed. The radical is the intersection $\bigcap_{w\in V}\ker\varphi_{w}$, and an intersection of closed sets is closed.
 
 The proposition is the reason the radical is a topological object and not only an algebraic one, and it is what allows the quotient by the radical to be formed as a topological space in the finite-dimensional case; the quotient by the radical of a continuous form is treated in *Topological Clifford Algebras*, §*The Closure of Zero and the Hausdorff Quotient*, where it is compared with the closure of zero.
 
@@ -70,11 +70,11 @@ $$
 \lvert B(x,y)\rvert \le \tfrac14\lVert q\rVert\bigl(\lVert x+y\rVert^{2}+\lVert x-y\rVert^{2}\bigr) = \tfrac14\lVert q\rVert\cdot2\bigl(\lVert x\rVert^{2}+\lVert y\rVert^{2}\bigr) \le \lVert q\rVert ,
 $$
 
-using $\lVert u\pm v\rVert^{2}+\lVert u\mp v\rVert^{2}=2\lVert u\rVert^{2}+2\lVert v\rVert^{2}$. Taking the supremum over the unit ball gives $\lVert B\rVert\le\lVert q\rVert$. $\square$
+using $\lVert u\pm v\rVert^{2}+\lVert u\mp v\rVert^{2}=2\lVert u\rVert^{2}+2\lVert v\rVert^{2}$. Taking the supremum over the unit ball gives $\lVert B\rVert\le\lVert q\rVert$.
 
 **Corollary (completeness).** The spaces $Q(V)$ and $\operatorname{Sym}(V)$ are isometric, and $Q(V)$ is complete when $V$ is a Banach space: a uniform limit of continuous quadratic forms is a quadratic form, the algebraic identities passing to the limit because the field is complete.
 
-*Proof.* The isometry is the theorem, so the two are complete together. A bounded bilinear form on a Banach space $V$ is a continuous bilinear map, and the space of continuous bilinear maps $V\times V\to\mathbb{R}$ is complete for the operator norm by *Bounded Operators on a Topological Vector Space*, §*The Space of Continuous Operators*; the symmetric ones form a closed subspace, so $\operatorname{Sym}(V)$ is complete, and so is $Q(V)$. A uniform limit of quadratic forms is quadratic because each of the three defining properties is a closed condition. $\square$
+*Proof.* The isometry is the theorem, so the two are complete together. A bounded bilinear form on a Banach space $V$ is a continuous bilinear map, and the space of continuous bilinear maps $V\times V\to\mathbb{R}$ is complete for the operator norm by *Bounded Operators on a Topological Vector Space*, §*The Space of Continuous Operators*; the symmetric ones form a closed subspace, so $\operatorname{Sym}(V)$ is complete, and so is $Q(V)$. A uniform limit of quadratic forms is quadratic because each of the three defining properties is a closed condition.
 
 **Remark (the complex case).** Over $\mathbb{C}$ the same computation applies to symmetric complex bilinear forms and complex-valued quadratic forms, and the polarisation is again an isometry. What is **not** obtained this way is the positive definite Hermitian form, whose conjugate slot and positivity make it a sesquilinear object of the category *Topology on Sesqualgebras with a degree-2 form*; over $\mathbb{C}$ the quadratic form $q(v)=\lVert v\rVert^{2}$ is not a complex quadratic form in the present sense, and the norm is owned by *Topology on Linear Spaces*. The two layers are distinguished by the slot, exactly as *Topology on Sesqualgebras* distinguishes the two products.
 
@@ -86,11 +86,11 @@ using $\lVert u\pm v\rVert^{2}+\lVert u\mp v\rVert^{2}=2\lVert u\rVert^{2}+2\lVe
 
 **Theorem (the non-degenerate forms and the signature).** Let $V=\mathbb{R}^{n}$ with its Euclidean topology, let $\operatorname{Sym}_{n}(\mathbb{R})$ be the space of symmetric matrices with the operator norm, and let $q$ be the quadratic form of the symmetric matrix $G$. Then the set of non-degenerate forms is open, and the signature is locally constant on it. Consequently the forms of a given signature form an open set, and the number of signatures is the number of connected components of the open set of non-degenerate forms.
 
-*Proof.* The determinant $\det G$ is a polynomial, hence continuous, in the entries, so the set $\{\det G\neq0\}$ is open and its complement, the singular forms, is closed. On that open set the eigenvalues of $G$, which depend continuously on $G$ by *The Spectra of Self-Adjoint Operators of the Form*, never vanish, so each eigenvalue has a constant sign in a neighbourhood, and the signature $(p,q,n-p-q)$ is therefore locally constant. A locally constant integer-valued function on the open set is constant on each connected component, and different signatures define disjoint open sets. $\square$
+*Proof.* The determinant $\det G$ is a polynomial, hence continuous, in the entries, so the set $\{\det G\neq0\}$ is open and its complement, the singular forms, is closed. On that open set the eigenvalues of $G$, which depend continuously on $G$ by *The Spectra of Self-Adjoint Operators of the Form*, never vanish, so each eigenvalue has a constant sign in a neighbourhood, and the signature $(p,q,n-p-q)$ is therefore locally constant. A locally constant integer-valued function on the open set is constant on each connected component, and different signatures define disjoint open sets.
 
 **Corollary (the definite forms).** The positive definite forms are one of those components, open in $\operatorname{Sym}_{n}(\mathbb{R})$, and the negative definite forms another; a form on the boundary of the positive cone has a zero eigenvalue and is degenerate.
 
-*Proof.* Positive definiteness is the signature $(n,0,0)$, which is locally constant by the theorem, so it is open; the same for the negative signature. A form with a zero eigenvalue is degenerate by the criterion of the radical in the diagonal basis, and lies in the closed complement of the open set of non-degenerate forms. $\square$
+*Proof.* Positive definiteness is the signature $(n,0,0)$, which is locally constant by the theorem, so it is open; the same for the negative signature. A form with a zero eigenvalue is degenerate by the criterion of the radical in the diagonal basis, and lies in the closed complement of the open set of non-degenerate forms.
 
 The corollary is the topological form of Sylvester's law of inertia: the classification of *Quadratic Forms and Polarisation*, §*Sylvester's Law of Inertia* is a partition into finitely many open sets, and the partition is locally constant, so no continuous path in the space of non-degenerate forms can change the signature. This is the reason the topological Witt group of *The Topological Witt Group and the Brauer–Wall Group* is a discrete group of components.
 
@@ -100,7 +100,7 @@ The corollary is the topological form of Sylvester's law of inertia: the classif
 
 **Proposition.** Let $q$ be a continuous quadratic form on a Hausdorff module and let $N$ be the image of $\operatorname{rad}(q)$ in $\mathrm{Cl}(V,q)$. Then $N$ is contained in every maximal ideal of the algebra, and $N^{2}=0$; the algebra is Hausdorff when the form is non-degenerate and the filtration is Hausdorff.
 
-*Proof.* A radical element $v$ satisfies $B(v,w)=0$ for every $w$, hence $vw=-wv$ for every $w$ and, taking $w=v$, $v^{2}=-v^{2}$, so $v^{2}=q(v)=0$; the subspace generated by such elements has square zero and its elements are nilpotent, and a nilpotent ideal is contained in every maximal ideal of an associative algebra with unit, by the standard argument of *Algebras*. For the last statement, if the radical is zero then $V$ injects into the algebra and the filtration of the non-degenerate algebra is Hausdorff, so the intersection of the neighbourhoods of zero is zero. $\square$
+*Proof.* A radical element $v$ satisfies $B(v,w)=0$ for every $w$, hence $vw=-wv$ for every $w$ and, taking $w=v$, $v^{2}=-v^{2}$, so $v^{2}=q(v)=0$; the subspace generated by such elements has square zero and its elements are nilpotent, and a nilpotent ideal is contained in every maximal ideal of an associative algebra with unit, by the standard argument of *Algebras*. For the last statement, if the radical is zero then $V$ injects into the algebra and the filtration of the non-degenerate algebra is Hausdorff, so the intersection of the neighbourhoods of zero is zero.
 
 ## Isometries and the Continuity of the Group
 
@@ -108,13 +108,13 @@ The corollary is the topological form of Sylvester's law of inertia: the classif
 
 **Proposition.** Let $q$ be continuous and $T$ an isometry that is continuous. Then the transpose of $T$ with respect to the polar form exists in the sense that $B(Tx,y)=B(x,T' y)$ for a continuous $T'$, and the two conditions $q\circ T=q$ and $B\circ(T\times T)=B$ are equivalent.
 
-*Proof.* The equivalence is algebraic and holds for every form: $q(Tv)=B(Tv,Tv)$ if $B$ is preserved, and conversely the polarisation of $q\circ T=q$ gives the bilinear identity, both sides being the polar forms of quadratic forms that agree, by the injectivity in the theorem above. For the transpose, the map $y\mapsto B(Tx,y)$ is continuous, and if the form is non-degenerate and $V$ is a reflexive topological module the Riesz-type representation supplies $T'$; the general construction is that of the adjoint of an operator in *Adjoints of Bounded Sesquilinear Operators*, whose bilinear case is the transpose read here. $\square$
+*Proof.* The equivalence is algebraic and holds for every form: $q(Tv)=B(Tv,Tv)$ if $B$ is preserved, and conversely the polarisation of $q\circ T=q$ gives the bilinear identity, both sides being the polar forms of quadratic forms that agree, by the injectivity in the theorem above. For the transpose, the map $y\mapsto B(Tx,y)$ is continuous, and if the form is non-degenerate and $V$ is a reflexive topological module the Riesz-type representation supplies $T'$; the general construction is that of the adjoint of an operator in *Adjoints of Bounded Sesquilinear Operators*, whose bilinear case is the transpose read here.
 
 **Remark (finite dimension).** When $V$ is finite-dimensional and Hausdorff over a complete valued field, every linear map $V\to V$ is continuous, so the condition on $T$ is automatic and $\mathrm{O}(V,q)$ is exactly the algebraic isometry group of *Bilinear Forms*, with no further hypothesis. In infinite dimension a $q$-preserving linear map need not be continuous, and the **continuous** isometries are the ones that form the object of *The Topological Orthogonal Group and the Spin Group*; the set of them is closed in the space of continuous linear maps, since it is the intersection of the closed sets $\{T : q(Tv)=q(v)\}$ over $v$ in a spanning set, and it is a topological group.
 
 **Proposition (the non-degenerate forms are preserved by an isometry).** Let $T$ be a continuous linear isometry of $(V,q)$. Then $T$ carries the radical into itself and induces an isometry of the reduced space $V/\operatorname{rad}(q)$ for the induced form.
 
-*Proof.* If $v\in\operatorname{rad}(q)$ then $B(Tv,Tw)=B(v,w)=0$ for every $w$, so $Tv\in\operatorname{rad}(q)$; the induced map on the quotient is well defined and preserves the induced form, which is non-degenerate and is the form of the algebra's non-degenerate factor. $\square$
+*Proof.* If $v\in\operatorname{rad}(q)$ then $B(Tv,Tw)=B(v,w)=0$ for every $w$, so $Tv\in\operatorname{rad}(q)$; the induced map on the quotient is well defined and preserves the induced form, which is non-degenerate and is the form of the algebra's non-degenerate factor.
 
 ## Summary
 

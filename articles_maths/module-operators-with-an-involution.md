@@ -13,7 +13,7 @@ The article is the second of the `* Operator Theory` group of this category. The
 
 **Proposition.** The pair $(E,{}^{*})$ is an involutive $R$-algebra: ${}^{*}$ is an additive, $R$-linear, anti-multiplicative map of order two, and $E$ is a unital associative $R$-algebra. The map ${}^{*}$ restricts to the involution $\sigma$ of $A$ on the image of the action, in the sense $(L_a)^{*}=L_{\sigma(a)}$.
 
-*Proof.* This is *The Involution on the Endomorphism Ring of a Module*; the last clause is the formula for the adjoint of a left multiplication. $\square$
+*Proof.* This is *The Involution on the Endomorphism Ring of a Module*; the last clause is the formula for the adjoint of a left multiplication.
 
 An operator $f \in E$ is therefore an element of an involutive algebra, and the definitions of the symmetric, the antisymmetric and the unitary elements of such an algebra apply to it. The concrete origin of the involution — the pairing — enters whenever one asks what an operator does to the pairing, and the isometry characterisation below is the bridge.
 
@@ -27,7 +27,7 @@ $$
 
 **Proposition.** $\operatorname{Sym}(M)$ and $\operatorname{Skew}(M)$ are $R$-submodules with $\operatorname{Sym}(M)\cap\operatorname{Skew}(M)=0$ and $E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M)$; the map $f \mapsto \frac12(f+f^{*})$ is the projection onto the first summand. $U(M)$ is a subgroup of $E^{\times}$.
 
-*Proof.* The decomposition, the projection formula and the group property are *The Involution on the Endomorphism Ring of a Module*. $\square$
+*Proof.* The decomposition, the projection formula and the group property are *The Involution on the Endomorphism Ring of a Module*.
 
 ## Self-Adjoint Operators
 
@@ -43,7 +43,7 @@ so that $f=\operatorname{Re}f+\operatorname{Im}f$ and $(\operatorname{Re}f)^{*}=
 
 **Proposition.** The assignment $f \mapsto (\operatorname{Re}f,\operatorname{Im}f)$ is an $R$-linear isomorphism $E \to \operatorname{Sym}(M)\oplus\operatorname{Skew}(M)$, natural in $f$, and $\operatorname{Re}f=f$ exactly for self-adjoint $f$ while $\operatorname{Im}f=f$ exactly for skew-adjoint $f$.
 
-*Proof.* The map is $R$-linear because ${}^{*}$ is, it is injective because its composite with the sum is the identity, and its image is contained in the direct sum; dimensions (or the projection formula) give the isomorphism. The last clauses are the definitions. $\square$
+*Proof.* The map is $R$-linear because ${}^{*}$ is, it is injective because its composite with the sum is the identity, and its image is contained in the direct sum; dimensions (or the projection formula) give the isomorphism. The last clauses are the definitions.
 
 This is the operator-level form of the decomposition of an involutive algebra into its symmetric and antisymmetric parts; no order structure is attached to $\operatorname{Sym}(M)$, because positivity needs a norm and belongs to Part II.
 
@@ -51,7 +51,7 @@ This is the operator-level form of the decomposition of an involutive algebra in
 
 **Theorem.** Let $f$ and $g$ be self-adjoint. Then $fg$ is self-adjoint if and only if $f$ and $g$ commute; $fg+gf$ and $fgf$ are self-adjoint always; and $f^{2}$ is self-adjoint.
 
-*Proof.* $(fg)^{*}=g^{*}f^{*}=gf$, so $fg$ is self-adjoint exactly when $gf=fg$. For the sum, $(fg+gf)^{*}=gf+fg=fg+gf$; for the product $fgf$, $(fgf)^{*}=f^{*}g^{*}f^{*}=fgf$; and $f^{2}$ is the case $g=f$. $\square$
+*Proof.* $(fg)^{*}=g^{*}f^{*}=gf$, so $fg$ is self-adjoint exactly when $gf=fg$. For the sum, $(fg+gf)^{*}=gf+fg=fg+gf$; for the product $fgf$, $(fgf)^{*}=f^{*}g^{*}f^{*}=fgf$; and $f^{2}$ is the case $g=f$.
 
 So the self-adjoint operators are closed under the Jordan product $\frac12(fg+gf)$ and under the square, as *The Involution on the Endomorphism Ring of a Module* records, but not under the ordinary product unless the factors commute.
 
@@ -59,7 +59,7 @@ So the self-adjoint operators are closed under the Jordan product $\frac12(fg+gf
 
 **Proposition.** For every $f \in E$ the operators $f^{*}f$ and $ff^{*}$ are self-adjoint, and $f$ is unitary if and only if $f^{*}f=ff^{*}=\mathrm{id}$; consequently $u^{*}fu$ is self-adjoint when $f$ is self-adjoint and $u$ is unitary.
 
-*Proof.* $(f^{*}f)^{*}=f^{*}f$ and $(ff^{*})^{*}=ff^{*}$, by $(f^{*})^{*}=f$ and anti-multiplicativity; if $u\in U(M)$ then $(u^{*}fu)^{*}=u^{*}f^{*}u=u^{*}fu$. $\square$
+*Proof.* $(f^{*}f)^{*}=f^{*}f$ and $(ff^{*})^{*}=ff^{*}$, by $(f^{*})^{*}=f$ and anti-multiplicativity; if $u\in U(M)$ then $(u^{*}fu)^{*}=u^{*}f^{*}u=u^{*}fu$.
 
 The operators $f^{*}f$ and $ff^{*}$ are the two self-adjoint squares of $f$; in Part II they receive a norm and an order, and the polar decomposition is built from them, but over a general ring they are only self-adjoint elements.
 
@@ -73,7 +73,7 @@ $$
 
 **Proposition.** For every $g$ the congruence preserves self-adjointness: if $f^{*}=f$ then $(g^{*}fg)^{*}=g^{*}fg$. If $g$ is unitary, the congruence is the inner automorphism $f \mapsto g^{-1}fg$ and is an algebra automorphism; for general $g$ it is additive and $R$-linear, it satisfies $\operatorname{cong}_g\circ\operatorname{cong}_h=\operatorname{cong}_{hg}$, and it is invertible exactly when $g$ is a unit.
 
-*Proof.* $(g^{*}fg)^{*}=g^{*}f^{*}(g^{*})^{*}=g^{*}fg$. For unitary $g$, $g^{*}=g^{-1}$ and $g^{*}fg=g^{-1}fg$, which is conjugation and preserves products; for general $g$, $\operatorname{cong}_g(fh)=g^{*}fhg$ while $\operatorname{cong}_g(f)\operatorname{cong}_g(h)=g^{*}fgg^{*}hg$, equal only when $gg^{*}$ is central. The composition is $\operatorname{cong}_g(\operatorname{cong}_h(f))=g^{*}h^{*}fhg=(hg)^{*}f(hg)=\operatorname{cong}_{hg}(f)$; when $g$ is a unit, $\operatorname{cong}_{g^{-1}}$ is a two-sided inverse. $\square$
+*Proof.* $(g^{*}fg)^{*}=g^{*}f^{*}(g^{*})^{*}=g^{*}fg$. For unitary $g$, $g^{*}=g^{-1}$ and $g^{*}fg=g^{-1}fg$, which is conjugation and preserves products; for general $g$, $\operatorname{cong}_g(fh)=g^{*}fhg$ while $\operatorname{cong}_g(f)\operatorname{cong}_g(h)=g^{*}fgg^{*}hg$, equal only when $gg^{*}$ is central. The composition is $\operatorname{cong}_g(\operatorname{cong}_h(f))=g^{*}h^{*}fhg=(hg)^{*}f(hg)=\operatorname{cong}_{hg}(f)$; when $g$ is a unit, $\operatorname{cong}_{g^{-1}}$ is a two-sided inverse.
 
 Congruences are the general "change of pairing" operation on operators: replacing the pairing by an equivalent one conjugates the involution, and composing the new involution with the old gives a congruence, as the last section shows.
 
@@ -87,7 +87,7 @@ $$
 (ufu^{*})^{*}=u f^{*}u^{*}, \qquad (ufu^{-1})^{*}=u f^{*}u^{-1}.
 $$
 
-*Proof.* The isometry characterisation and the group property are *The Involution on the Endomorphism Ring of a Module*; the two identities use $u^{*}=u^{-1}$ and anti-multiplicativity. $\square$
+*Proof.* The isometry characterisation and the group property are *The Involution on the Endomorphism Ring of a Module*; the two identities use $u^{*}=u^{-1}$ and anti-multiplicativity.
 
 The action $f \mapsto ufu^{-1}$ of $U(M)$ on $E$ is **unitary conjugation**, an inner action by the unitary group; it preserves products, self-adjointness and skew-adjointness, and it is the operator-level counterpart of the action of the unitary group of an involutive algebra on its symmetric elements.
 
@@ -97,7 +97,7 @@ The action $f \mapsto ufu^{-1}$ of $U(M)$ on $E$ is **unitary conjugation**, an 
 
 **Proposition.** Unitary equivalence is an equivalence relation on $E$ and preserves the classes of self-adjoint, skew-adjoint and unitary operators. Congruence by an invertible $g$ preserves self-adjointness and is transitive; it coincides with unitary equivalence exactly when $g$ is unitary.
 
-*Proof.* The group $U(M)$ acts, so unitary equivalence is an equivalence relation, and the class preservation is the displayed identities. Congruence preserves self-adjointness by the proposition above and composes as $\operatorname{cong}_g\circ\operatorname{cong}_h=\operatorname{cong}_{gh}$ up to a congruence; it is unitary equivalence when $g^{*}=g^{-1}$. $\square$
+*Proof.* The group $U(M)$ acts, so unitary equivalence is an equivalence relation, and the class preservation is the displayed identities. Congruence preserves self-adjointness by the proposition above and composes as $\operatorname{cong}_g\circ\operatorname{cong}_h=\operatorname{cong}_{gh}$ up to a congruence; it is unitary equivalence when $g^{*}=g^{-1}$.
 
 The two relations differ in the same way the symmetric bilinear and the hermitian classifications differ: unitary equivalence preserves the pairing, congruence does not.
 
@@ -111,7 +111,7 @@ $$
 
 **Proposition.** The unitary orbit of a self-adjoint operator consists of self-adjoint operators, and the unitary group acts on the set of self-adjoint operators with orbits the unitary orbits. The stabiliser of $f$ is the subgroup $\{u : uf=fu\}$.
 
-*Proof.* If $f^{*}=f$ then $(ufu^{*})^{*}=ufu^{*}$, so the orbit is inside the self-adjoint part; the stabiliser computation is immediate from the action's definition. $\square$
+*Proof.* If $f^{*}=f$ then $(ufu^{*})^{*}=ufu^{*}$, so the orbit is inside the self-adjoint part; the stabiliser computation is immediate from the action's definition.
 
 The classification of the orbits of self-adjoint operators requires invariants (in the classical theory the eigenvalues, or the spectrum), which need a field, a norm and the spectral theorem; they belong to Part II, and only the orbit–stabiliser statement is available here.
 
@@ -127,13 +127,13 @@ $$
 
 Moreover $f$ is self-adjoint if and only if $f=f^{*}$, and $f$ is skew-adjoint if and only if $f=-f^{*}$.
 
-*Proof.* $(f+f^{*})^{*}=f^{*}+f$; $(f-f^{*})^{*}=f^{*}-f=-(f-f^{*})$; the products are the self-adjoint squares. $\square$
+*Proof.* $(f+f^{*})^{*}=f^{*}+f$; $(f-f^{*})^{*}=f^{*}-f=-(f-f^{*})$; the products are the self-adjoint squares.
 
 ### The $*$-congruence and equivalence
 
 **Proposition.** The map $f \mapsto g^{*}fg$ is additive and $R$-linear; if $g$ is a unit then the map is invertible with inverse $h \mapsto (g^{*})^{-1}h\,g^{-1}$, and it carries the involutive algebra structure $(E,{}^{*})$ to the involutive algebra structure with involution $f \mapsto g^{-1}f^{*}g$.
 
-*Proof.* Additivity and $R$-linearity are clear. For invertibility, $g^{*}f g=h$ with $g$ a unit is solved by $f=(g^{*})^{-1}hg^{-1}$; and $(g^{*}fg)^{*}=g^{*}f^{*}g$, so the transformed involution is $f\mapsto g^{-1}f^{*}g$ on the transformed element. $\square$
+*Proof.* Additivity and $R$-linearity are clear. For invertibility, $g^{*}f g=h$ with $g$ a unit is solved by $f=(g^{*})^{-1}hg^{-1}$; and $(g^{*}fg)^{*}=g^{*}f^{*}g$, so the transformed involution is $f\mapsto g^{-1}f^{*}g$ on the transformed element.
 
 This is how a module with two pairings carries two involutions on one ring, as *The Involution on the Endomorphism Ring of a Module* notes.
 

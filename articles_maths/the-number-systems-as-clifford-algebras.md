@@ -162,7 +162,7 @@ $$
 
 the direct sum of two copies of the even complex Clifford algebra; equivalently $M_{2^n}(\mathbb{C}) \oplus M_{2^n}(\mathbb{C})$.
 
-*Proof.* The volume element of an odd Clifford algebra is central; over $\mathbb{C}$ the generators can be rescaled so that it is an involution, and its two idempotents are central, orthogonal and complete, so they split the algebra. Equivalently, the classification of the complex Clifford algebras gives $\mathbb{C}\mathrm{l}_{2n}\cong M_{2^n}(\mathbb{C})$ and $\mathbb{C}\mathrm{l}_{2n+1}\cong M_{2^n}(\mathbb{C})\oplus M_{2^n}(\mathbb{C})$. $\square$
+*Proof.* The volume element of an odd Clifford algebra is central; over $\mathbb{C}$ the generators can be rescaled so that it is an involution, and its two idempotents are central, orthogonal and complete, so they split the algebra. Equivalently, the classification of the complex Clifford algebras gives $\mathbb{C}\mathrm{l}_{2n}\cong M_{2^n}(\mathbb{C})$ and $\mathbb{C}\mathrm{l}_{2n+1}\cong M_{2^n}(\mathbb{C})\oplus M_{2^n}(\mathbb{C})$.
 
 **Examples.**
 

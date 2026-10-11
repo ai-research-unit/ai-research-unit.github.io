@@ -58,7 +58,7 @@ $$
 
 Consequently $\circ$ is linear in each variable over the fixed ring $R^{\varsigma} = \{\lambda : \varsigma(\lambda) = \lambda\}$, and it is linear in a variable over all of $R$ exactly in the degenerate case $(\varsigma(\lambda) - \lambda)A = 0$ for every $\lambda$, the case in which the product of $A$ is bilinear.
 
-**Proof.** In the first slot, $(\lambda x) \star y = \lambda (x \star y)$ by the first scalar rule of *Sesqualgebras* and $y \star (\lambda x) = \varsigma(\lambda)(y \star x)$ by the second, the scalar sitting in the second slot of the transposed product; the two terms give the first display, and the second is the same computation with the slots exchanged. For $\lambda \in R^{\varsigma}$ the two displayed right-hand sides both equal $\lambda (x \circ y)$, so $\circ$ is $R^{\varsigma}$-linear in each variable. Conversely, if $(\lambda x) \circ y = \lambda (x \circ y)$ for all $x, y$ then $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $x, y$, which is the degeneracy condition, and the same condition arises from the second variable. $\square$
+**Proof.** In the first slot, $(\lambda x) \star y = \lambda (x \star y)$ by the first scalar rule of *Sesqualgebras* and $y \star (\lambda x) = \varsigma(\lambda)(y \star x)$ by the second, the scalar sitting in the second slot of the transposed product; the two terms give the first display, and the second is the same computation with the slots exchanged. For $\lambda \in R^{\varsigma}$ the two displayed right-hand sides both equal $\lambda (x \circ y)$, so $\circ$ is $R^{\varsigma}$-linear in each variable. Conversely, if $(\lambda x) \circ y = \lambda (x \circ y)$ for all $x, y$ then $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $x, y$, which is the degeneracy condition, and the same condition arises from the second variable.
 
 **Remark.** The symmetrisation does not average the two parities, it destroys them: each slot of $\circ$ receives one linear and one conjugate-linear contribution, so the surviving scalars are exactly the fixed ones. This is the same ring that the two halves of the algebra are modules over, and the reason is the same, that $\varsigma(\lambda) = \lambda$ is what makes a conjugate-linear slot agree with a linear one. For $\varsigma = \mathrm{id}$ the fixed ring is $R$ and the statement is the familiar bilinearity, which is the case of *The Self-Adjoint Part of an Algebra*.
 
@@ -70,7 +70,7 @@ $$
 x \circ y = \tfrac12\Bigl((x + y) \star (x + y) - x \star x - y \star y\Bigr).
 $$
 
-**Proof.** The product is additive in each variable, so $(x+y)\star(x+y) = x\star x + x\star y + y\star x + y\star y$; halving the difference gives the symmetrisation. $\square$
+**Proof.** The product is additive in each variable, so $(x+y)\star(x+y) = x\star x + x\star y + y\star x + y\star y$; halving the difference gives the symmetrisation.
 
 **Remark.** The square $x \mapsto x \star x$ determines the product on the diagonal and, by the proposition, the whole symmetrised product off the diagonal: two products with the same squares of all linear combinations have the same symmetrisation. The difference bracket is what the squares do not see, since it takes opposite values on $y \star x$ and $x \star y$ and cancels in every square.
 
@@ -88,7 +88,7 @@ $$
 
 so that $\circ$ is an operation $A \times A \to H(A)$.
 
-**Proof.** Conjugation reverses the derived product, $(x \star y)^{*} = y \star x$, by *The Sesquilinear Product*, §*The Conjugate of a Product*; hence $(x \circ y)^{*} = \tfrac12\bigl((x \star y)^{*} + (y \star x)^{*}\bigr) = \tfrac12\bigl(y \star x + x \star y\bigr) = x \circ y$. $\square$
+**Proof.** Conjugation reverses the derived product, $(x \star y)^{*} = y \star x$, by *The Sesquilinear Product*, §*The Conjugate of a Product*; hence $(x \circ y)^{*} = \tfrac12\bigl((x \star y)^{*} + (y \star x)^{*}\bigr) = \tfrac12\bigl(y \star x + x \star y\bigr) = x \circ y$.
 
 **Remark.** The image of the symmetrised sesquilinear product is contained in the Hermitian elements, whatever the two arguments are: the symmetrisation is a map from the whole square $A \times A$ into one half of the algebra. The plain symmetrisation $x \bullet y = \tfrac12(xy + yx)$ has no such property, its value being Hermitian only when the two arguments lie in the right halves; this is the sharpest sense in which the sesquilinear product enters the Hermitian part more easily than the algebra product does.
 
@@ -102,7 +102,7 @@ $$
 
 and $H(A)$ is closed under both.
 
-**Proof.** For a Hermitian $y$ the derived operation is the algebra product, $x \star y = xy^{*} = xy$, and for a Hermitian $x$ the transposed product is $y \star x = yx$. Adding and halving gives the identity; the closure of $H(A)$ under $\bullet$ is *Hermitian and Skew-Hermitian Elements*, §*The Hermitian Part is a Jordan Algebra*. $\square$
+**Proof.** For a Hermitian $y$ the derived operation is the algebra product, $x \star y = xy^{*} = xy$, and for a Hermitian $x$ the transposed product is $y \star x = yx$. Adding and halving gives the identity; the closure of $H(A)$ under $\bullet$ is *Hermitian and Skew-Hermitian Elements*, §*The Hermitian Part is a Jordan Algebra*.
 
 **Remark.** On the Hermitian part the two symmetrisations coincide, and off it they differ: the operation $\circ$ is the symmetrisation of the derived product, $\bullet$ the symmetrisation of the algebra product, and the two products agree only on the Hermitian slot. The next section measures the distance.
 
@@ -120,7 +120,7 @@ $$
 
 and with this product $H(A)$ is a commutative Jordan algebra over $R^{\varsigma}$.
 
-**Proof.** On the Hermitian part $\circ$ is the plain symmetrisation $\bullet$, by the theorem above, and $\bullet$ is the symmetrisation $x \bullet y = \tfrac12(xy+yx)$ of the associative product of $A$; the symmetrisation of an associative product satisfies the Jordan identity, by *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*. Commutativity is built into the definition and $R^{\varsigma}$-bilinearity is the scalar theorem above. $\square$
+**Proof.** On the Hermitian part $\circ$ is the plain symmetrisation $\bullet$, by the theorem above, and $\bullet$ is the symmetrisation $x \bullet y = \tfrac12(xy+yx)$ of the associative product of $A$; the symmetrisation of an associative product satisfies the Jordan identity, by *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*. Commutativity is built into the definition and $R^{\varsigma}$-bilinearity is the scalar theorem above.
 
 The Jordan algebra is read in *The Hermitian Jordan Algebra*, where its idempotents, its Peirce decomposition and its degree are developed.
 
@@ -146,7 +146,7 @@ $$
 
 and the first is not zero.
 
-**Proof.** The computations are the displays: $E_{12}E_{21} = E_{11}$ and $E_{12}E_{22} = E_{12}$, $E_{22}E_{21} = E_{21}$ by the multiplication of the matrix units, and $E_{22}E_{11} = E_{11}E_{22} = 0$; the symmetrisation of $E_{12}$ with $E_{11}$ is $\tfrac12(E_{12}E_{11} + E_{11}E_{21}) = \tfrac12 E_{21}$, whence $(\tfrac12(E_{12}+E_{21})) \circ E_{11} = \tfrac14(E_{12}+E_{21})$. $\square$
+**Proof.** The computations are the displays: $E_{12}E_{21} = E_{11}$ and $E_{12}E_{22} = E_{12}$, $E_{22}E_{21} = E_{21}$ by the multiplication of the matrix units, and $E_{22}E_{11} = E_{11}E_{22} = 0$; the symmetrisation of $E_{12}$ with $E_{11}$ is $\tfrac12(E_{12}E_{11} + E_{11}E_{21}) = \tfrac12 E_{21}$, whence $(\tfrac12(E_{12}+E_{21})) \circ E_{11} = \tfrac14(E_{12}+E_{21})$.
 
 **Remark.** One of the two elements is Hermitian, $y = E_{22}$, and the other is not, $x = E_{12}$; a single element outside $H(A)$ is enough to break the identity. The perturbation is exactly the failure of $x$ to be Hermitian: the value $x \circ x = E_{11} = xx^{*}$ is Hermitian, as the theorem on the Hermitian value promises, but the symmetry of the derived product with one slot off $H(A)$ is the wrong one to carry the identity.
 

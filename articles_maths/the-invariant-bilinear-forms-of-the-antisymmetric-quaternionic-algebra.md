@@ -20,7 +20,7 @@ for all $\tilde P,\tilde Q,\tilde R$; equivalently, for a symmetric $\beta$, if 
 
 **Proposition.** For a symmetric $\beta$ the second condition implies the first, for any alternating operation, and for the block of this article the two conditions are equivalent, both returning the same one-dimensional space. The condition is $\mathbb{C}$-linear in $\beta$, so the invariant forms of the block form a vector space.
 
-*Proof.* If (II) holds then $\beta(\tilde Y,\tilde X\diamond\tilde Z)=\beta(\tilde Y\diamond\tilde X,\tilde Z)=-\beta(\tilde X\diamond\tilde Y,\tilde Z)$, where the first equality is (II) with the first two arguments exchanged and the second is the antisymmetry of the operation; that is (I). For the converse, write $G$ for the Gram matrix of $\beta$ and $M_{\tilde A}$ for the matrix of the operator of $\tilde A$; then (I) is the matrix condition $M_{\tilde A}^{\mathsf T}G+GM_{\tilde A}=0$ and (II) is $M_{\tilde A}^{\mathsf T}G-GM_{\tilde A}=0$, and solving either over the four basis operators gives the same solution, $G_{00}$ free and the other entries zero. So for the block the two are equivalent, and both single out the multiples of $\varphi$. Linearity in $\beta$ is immediate from the definition, the two terms being linear in $\beta$. $\square$
+*Proof.* If (II) holds then $\beta(\tilde Y,\tilde X\diamond\tilde Z)=\beta(\tilde Y\diamond\tilde X,\tilde Z)=-\beta(\tilde X\diamond\tilde Y,\tilde Z)$, where the first equality is (II) with the first two arguments exchanged and the second is the antisymmetry of the operation; that is (I). For the converse, write $G$ for the Gram matrix of $\beta$ and $M_{\tilde A}$ for the matrix of the operator of $\tilde A$; then (I) is the matrix condition $M_{\tilde A}^{\mathsf T}G+GM_{\tilde A}=0$ and (II) is $M_{\tilde A}^{\mathsf T}G-GM_{\tilde A}=0$, and solving either over the four basis operators gives the same solution, $G_{00}$ free and the other entries zero. So for the block the two are equivalent, and both single out the multiples of $\varphi$. Linearity in $\beta$ is immediate from the definition, the two terms being linear in $\beta$.
 
 ## The Space of Invariant Forms
 
@@ -32,13 +32,13 @@ $$
 
 the product of the two scalar parts. Every invariant form is a multiple of $\varphi$.
 
-*Proof.* Let $G$ be the Gram matrix of $\beta$ in the coefficient basis, $G_{\mu\nu}=\beta(e_\mu,e_\nu)$, and let $M_{\tilde A}$ be the matrix of the left multiplication operator $L_{\tilde A}$, so that the coordinate vector of $\tilde A\diamond e_\nu$ is the $\nu$-th column of $M_{\tilde A}$, determined by the table of the block. Writing $\beta(\tilde X,\tilde Y)=X^{\mathsf T}G\,Y$ for the coordinate columns, the condition at $\tilde P=e_\mu$, $\tilde Q=e_\nu$, $\tilde R=e_\rho$ reads $M_{\tilde A}^{\mathsf T}G+GM_{\tilde A}=0$ for every $\tilde A$, and the four basis elements $\tilde A=e_0,e_1,e_2,e_3$ generate it. Solving the sixty-four equations $\beta(e_\mu\diamond e_\nu,e_\rho)+\beta(e_\nu,e_\mu\diamond e_\rho)=0$ over the sixteen entries of $G$ gives $G_{00}=g$ free and $G_{\mu\nu}=0$ otherwise; the solution space is one-dimensional, with basis $\varphi$. $\square$
+*Proof.* Let $G$ be the Gram matrix of $\beta$ in the coefficient basis, $G_{\mu\nu}=\beta(e_\mu,e_\nu)$, and let $M_{\tilde A}$ be the matrix of the left multiplication operator $L_{\tilde A}$, so that the coordinate vector of $\tilde A\diamond e_\nu$ is the $\nu$-th column of $M_{\tilde A}$, determined by the table of the block. Writing $\beta(\tilde X,\tilde Y)=X^{\mathsf T}G\,Y$ for the coordinate columns, the condition at $\tilde P=e_\mu$, $\tilde Q=e_\nu$, $\tilde R=e_\rho$ reads $M_{\tilde A}^{\mathsf T}G+GM_{\tilde A}=0$ for every $\tilde A$, and the four basis elements $\tilde A=e_0,e_1,e_2,e_3$ generate it. Solving the sixty-four equations $\beta(e_\mu\diamond e_\nu,e_\rho)+\beta(e_\nu,e_\mu\diamond e_\rho)=0$ over the sixteen entries of $G$ gives $G_{00}=g$ free and $G_{\mu\nu}=0$ otherwise; the solution space is one-dimensional, with basis $\varphi$.
 
-**Remark (why the scalar form survives).** The operation has zero scalar part, so $\varphi(\tilde P\diamond\tilde Q,\tilde R)=(\tilde P\diamond\tilde Q)_0R_0=0$ and the first term of the condition vanishes for every triple; and $\varphi(\tilde Q,\tilde P\diamond\tilde R)=Q_0(\tilde P\diamond\tilde R)_0=0$ likewise. The form $\varphi$ is invariant for the trivial reason that both of its terms vanish, and it is the only form for which that happens on the scalar slot. A form that reads a vector slot, such as the quaternion form $B$, is not invariant, because the block moves the scalar part into the vector part and the mixed terms then survive in the condition.
+**Remark (why the scalar form survives).** The operation has zero scalar part, so $\varphi(\tilde P\diamond\tilde Q,\tilde R)=(\tilde P\diamond\tilde Q)_0R_0=0$ and the first term of the condition vanishes for every triple; and $\varphi(\tilde Q,\tilde P\diamond\tilde R)=Q_0(\tilde P\diamond\tilde R)_0=0$ likewise. The form $\varphi$ is invariant for the trivial reason that both of its terms vanish, and it is the only form for which that happens on the scalar slot. A form that reads a vector slot, such as the quaternion form $N$, is not invariant, because the block moves the scalar part into the vector part and the mixed terms then survive in the condition.
 
 **Proposition (the Gram matrix and the rank).** The Gram matrix of $\varphi$ in the coefficient basis $e_0,e_1,e_2,e_3$ is $\operatorname{diag}(1,0,0,0)$, of rank $1$.
 
-*Proof.* $\varphi(e_\mu,e_\nu)=\delta_{\mu0}\delta_{\nu0}$, by the definition of the scalar part. $\square$
+*Proof.* $\varphi(e_\mu,e_\nu)=\delta_{\mu0}\delta_{\nu0}$, by the definition of the scalar part.
 
 ## The Trace Form Vanishes
 
@@ -50,7 +50,7 @@ $$
 
 so the trace form of the block, the bilinear form that reads the scalar part of the product, is the zero form and is not an invariant form of the block.
 
-*Proof.* The scalar part of the value is zero by the explicit form, the value being a pure vector. The trace form of the block is therefore zero as a bilinear form, and the zero form is invariant but carries no information; it is a multiple of $\varphi$, so it is not a second invariant form. $\square$
+*Proof.* The scalar part of the value is zero by the explicit form, the value being a pure vector. The trace form of the block is therefore zero as a bilinear form, and the zero form is invariant but carries no information; it is a multiple of $\varphi$, so it is not a second invariant form.
 
 The vanishing is the structural difference from the plain row. The plain product has the trace form $\mathrm{Sc}(\tilde P\tilde Q)$ and its symmetrisation; the block removes the scalar part, and with it the trace form. There is no coefficient attached to the block's values, because the values have no coefficient to read.
 
@@ -58,13 +58,13 @@ The vanishing is the structural difference from the plain row. The plain product
 
 **Proposition.** The single invariant form $\varphi$ is symmetric, and there is no nonzero alternating invariant form; the space of invariant forms splits as one dimension symmetric and zero alternating, and the two parts are invariant subspaces of the condition.
 
-*Proof.* $\varphi(\tilde P,\tilde Q)=P_0Q_0=\varphi(\tilde Q,\tilde P)$, so $\varphi$ is symmetric. The solution of the same linear system with the added antisymmetry $G^{\mathsf T}=-G$ is $G=0$: the solution space of the system without the added symmetry is one-dimensional and its basis is symmetric, so its only antisymmetric element is zero. The condition is preserved by the transposition of $\beta$, so the symmetric and the alternating forms may be searched for separately, and the search returns one dimension and zero. $\square$
+*Proof.* $\varphi(\tilde P,\tilde Q)=P_0Q_0=\varphi(\tilde Q,\tilde P)$, so $\varphi$ is symmetric. The solution of the same linear system with the added antisymmetry $G^{\mathsf T}=-G$ is $G=0$: the solution space of the system without the added symmetry is one-dimensional and its basis is symmetric, so its only antisymmetric element is zero. The condition is preserved by the transposition of $\beta$, so the symmetric and the alternating forms may be searched for separately, and the search returns one dimension and zero.
 
 ## The Radical
 
 **Proposition (the radical).** The radical of $\varphi$, the set of $\tilde X$ with $\varphi(\tilde X,\tilde Y)=0$ for all $\tilde Y$, is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three; the isotropic elements of $\varphi$, those with $\varphi(\tilde X,\tilde X)=0$, are the same set.
 
-*Proof.* $\varphi(\tilde X,\tilde Y)=X_0Y_0$ vanishes for all $\tilde Y$ exactly when $X_0=0$, that is when $\tilde X$ is a pure vector; and $\varphi(\tilde X,\tilde X)=X_0^2$ vanishes exactly when $X_0=0$. The radical and the isotropic cone therefore coincide with the kernel of the scalar part. $\square$
+*Proof.* $\varphi(\tilde X,\tilde Y)=X_0Y_0$ vanishes for all $\tilde Y$ exactly when $X_0=0$, that is when $\tilde X$ is a pure vector; and $\varphi(\tilde X,\tilde X)=X_0^2$ vanishes exactly when $X_0=0$. The radical and the isotropic cone therefore coincide with the kernel of the scalar part.
 
 The form is thus as degenerate as it can be without being zero: its rank is one, its radical is the three-dimensional image of the block, and the isotropic elements are exactly the elements the block produces. The form reads only the one-dimensional quotient $\mathbb{B}/\mathrm{Vect}(\mathbb{B})$ and is non-degenerate there, so it is the pull-back of a one-dimensional form along the scalar-part map.
 
@@ -72,7 +72,7 @@ The form is thus as degenerate as it can be without being zero: its rank is one,
 
 **Proposition (the adjoint is undetermined).** With respect to the invariant form $\varphi$ the adjoint of a multiplication operator is not determined: $\varphi(L_{\tilde A}\tilde X,\tilde Y)=0$ for all $\tilde X,\tilde Y$, so every operator is adjoint to $0$ modulo the radical, and the form is too degenerate to define the adjoint uniquely.
 
-*Proof.* $L_{\tilde A}\tilde X=\tilde A\diamond\tilde X$ is a pure vector, so its scalar part is zero, and $\varphi(L_{\tilde A}\tilde X,\tilde Y)=(L_{\tilde A}\tilde X)_0Y_0=0$. The adjoint $(L_{\tilde A})^*$ is defined by $\varphi(L_{\tilde A}\tilde X,\tilde Y)=\varphi(\tilde X,(L_{\tilde A})^*\tilde Y)$; the left side vanishes for all $\tilde X$, so $(L_{\tilde A})^*\tilde Y$ lies in the radical for every $\tilde Y$, and the freedom in the adjoint is the freedom of the radical. $\square$
+*Proof.* $L_{\tilde A}\tilde X=\tilde A\diamond\tilde X$ is a pure vector, so its scalar part is zero, and $\varphi(L_{\tilde A}\tilde X,\tilde Y)=(L_{\tilde A}\tilde X)_0Y_0=0$. The adjoint $(L_{\tilde A})^*$ is defined by $\varphi(L_{\tilde A}\tilde X,\tilde Y)=\varphi(\tilde X,(L_{\tilde A})^*\tilde Y)$; the left side vanishes for all $\tilde X$, so $(L_{\tilde A})^*\tilde Y$ lies in the radical for every $\tilde Y$, and the freedom in the adjoint is the freedom of the radical.
 
 The degeneracy is the reason the invariant form is not the form to adjoint against, and the next section supplies the substitution: a non-degenerate form on the operators, on which the adjoint is determined.
 
@@ -94,7 +94,7 @@ $$
 
 its Gram matrix in the coefficient basis is $\operatorname{diag}(3,-2,-2,-2)$, of rank $4$, and the form is non-degenerate.
 
-*Proof.* The matrix of $L_{\tilde A}$ is read off the table, and the trace of the product is computed entry by entry; the diagonal entries of $L_{\tilde A}$ are $0,A_0,A_0,A_0$ on the scalar line and the three vector lines, and the off-diagonal contributions of the two factors give the cross terms. The determinant of $\operatorname{diag}(3,-2,-2,-2)$ is $3\cdot(-2)^3=-24$, nonzero. $\square$
+*Proof.* The matrix of $L_{\tilde A}$ is read off the table, and the trace of the product is computed entry by entry; the diagonal entries of $L_{\tilde A}$ are $0,A_0,A_0,A_0$ on the scalar line and the three vector lines, and the off-diagonal contributions of the two factors give the cross terms. The determinant of $\operatorname{diag}(3,-2,-2,-2)$ is $3\cdot(-2)^3=-24$, nonzero.
 
 **Proposition (it is not invariant).** The operator trace form is not invariant under the block. The failure
 
@@ -104,7 +104,7 @@ $$
 
 does not vanish identically; at $(\tilde A,\tilde B,\tilde C)=(e_0,e_1,e_1)$ it is $K(e_1,e_1)+K(e_1,e_1)=-2-2=-4$.
 
-*Proof.* Insert the explicit form into the two terms and collect. Each term is twice a scalar product of the vector part of the first argument with the third, since the first factor of $K$ is a scalar product on the vector lines; at the displayed triple the two terms are each $K(e_1,e_1)=-2$, and the sum is $-4$. The general expression is the one displayed, and it is nonzero for a general triple. $\square$
+*Proof.* Insert the explicit form into the two terms and collect. Each term is twice a scalar product of the vector part of the first argument with the third, since the first factor of $K$ is a scalar product on the vector lines; at the displayed triple the two terms are each $K(e_1,e_1)=-2$, and the sum is $-4$. The general expression is the one displayed, and it is nonzero for a general triple.
 
 The operator trace form is thus the natural substitution for the Killing form and it does not serve. It is symmetric, non-degenerate and canonical, and it fails the one property the theory needs. This is the expected outcome of the absence of a Jacobi identity: the Killing form of a Lie algebra is invariant because the Jacobi identity makes the adjoint representation a representation, and here the adjoint map is not a representation, so the trace form of the operators is not invariant either. The substitute computed here is therefore a form of the *operators* and not an invariant form of the *block*, and the only invariant form of the block remains the degenerate $\varphi$.
 
@@ -121,7 +121,7 @@ The operator trace form is thus the natural substitution for the Killing form an
 | $\mathbb{M}_{+}$ | $a_0\in\mathbb{R}$ | $a_0b_0$ | $(1,0)$ | $\mathbb{R}\{ie_1,ie_2,ie_3\}$ |
 | $\mathbb{M}_{-}$ | $ia_0$, $a_0\in\mathbb{R}$ | $-a_0b_0$ | $(0,1)$ | $\mathbb{R}\{e_1,e_2,e_3\}$ |
 
-*Proof.* The form reads the two scalar parts; the remarkable subspaces are distinguished by their scalar and vector lines (*Introduction to the Remarkable Subspaces*). The centre has the scalar line $e_0,ie_0$ and no vector line, so the form is the complex product $A_0B_0$ there, non-degenerate over $\mathbb{C}$, of real rank two and real signature $(1,1)$ as the realification of the complex form prescribes; the vector subspace has no scalar line, so the form is zero there. The four four-dimensional subspaces have a scalar line of real dimension one and a vector part; on the scalar line the form is $\pm a_0b_0$, positive for $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{+}$, whose scalar line is real, and negative for $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{-}$, whose scalar line is the imaginary one, and the vector part lies in the radical. The signatures of the four are those of the real form $\pm a_0b_0$ on the one-dimensional scalar line. $\square$
+*Proof.* The form reads the two scalar parts; the remarkable subspaces are distinguished by their scalar and vector lines (*Introduction to the Remarkable Subspaces*). The centre has the scalar line $e_0,ie_0$ and no vector line, so the form is the complex product $A_0B_0$ there, non-degenerate over $\mathbb{C}$, of real rank two and real signature $(1,1)$ as the realification of the complex form prescribes; the vector subspace has no scalar line, so the form is zero there. The four four-dimensional subspaces have a scalar line of real dimension one and a vector part; on the scalar line the form is $\pm a_0b_0$, positive for $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{+}$, whose scalar line is real, and negative for $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{-}$, whose scalar line is the imaginary one, and the vector part lies in the radical. The signatures of the four are those of the real form $\pm a_0b_0$ on the one-dimensional scalar line.
 
 The restriction is therefore definite wherever it is not zero, and the two negative cases are the two subspaces on which the scalar line is imaginary. The radical of the restriction is the vector part of the subspace in every case in which the subspace has a vector part, and the whole subspace in the case of $\mathrm{Vect}(\mathbb{B})$.
 
@@ -155,7 +155,7 @@ The invariant bilinear forms of the block, the $\beta$ with $\beta(\tilde P\diam
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its table and its image
 - *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md`), for the cyclic sum whose multiples are the failure of the operator trace form
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the matrix of the operator, its trace and the derivation of the operator trace form
-- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the quaternion form $B$ and the forms of the parent algebra
+- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the quaternion form $N$ and the forms of the parent algebra
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the forms of the associative algebra $\mathbb{B}$
 - *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md`), for the invariant form that the adjacent Lie case carries and this block does not
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the scalar and vector lines of the remarkable subspaces

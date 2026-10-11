@@ -31,7 +31,7 @@ $$
 
 and it is nondegenerate when $A$ is semisimple; the grade involution is $T$-self-adjoint, $\alpha^{\dagger}=\alpha$, exactly when $\alpha$ is an inner automorphism, in particular for the algebra of endomorphisms of a graded vector space.
 
-**Proof.** $T(ax,y)=\operatorname{tr}(L_aL_xL_y)=\operatorname{tr}(L_xL_yL_a)=T(x,ya)$ by the cyclicity of the trace, and $T(xb,y)=\operatorname{tr}(L_xL_bL_y)=\operatorname{tr}(L_xL_{by})=T(x,by)$; symmetry is the cyclicity. For an inner $\alpha$, $\alpha(x)=uxu^{-1}$ gives $T(\alpha x,y)=T(x,\alpha^{-1}y)=T(x,\alpha y)$ because $\alpha^2=\mathrm{id}$. $\square$
+**Proof.** $T(ax,y)=\operatorname{tr}(L_aL_xL_y)=\operatorname{tr}(L_xL_yL_a)=T(x,ya)$ by the cyclicity of the trace, and $T(xb,y)=\operatorname{tr}(L_xL_bL_y)=\operatorname{tr}(L_xL_{by})=T(x,by)$; symmetry is the cyclicity. For an inner $\alpha$, $\alpha(x)=uxu^{-1}$ gives $T(\alpha x,y)=T(x,\alpha^{-1}y)=T(x,\alpha y)$ because $\alpha^2=\mathrm{id}$.
 
 **Definition.** Let $\beta$ be a nondegenerate form. The **adjoint** of a linear operator $S$ is the operator $S^{\dagger}$ with
 
@@ -41,7 +41,7 @@ $$
 
 **Proposition.** The adjoint is unique when it exists, and the assignment $S\mapsto S^{\dagger}$ is additive and reverses products; when $\beta$ is balanced, every left or right multiplication has an adjoint.
 
-**Proof.** Uniqueness and linearity are the nondegeneracy of $\beta$; the reversal of products is $\beta(STx,y)=\beta(Tx,S^{\dagger}y)=\beta(x,T^{\dagger}S^{\dagger}y)$; the multiplications have adjoints by the balanced conditions. $\square$
+**Proof.** Uniqueness and linearity are the nondegeneracy of $\beta$; the reversal of products is $\beta(STx,y)=\beta(Tx,S^{\dagger}y)=\beta(x,T^{\dagger}S^{\dagger}y)$; the multiplications have adjoints by the balanced conditions.
 
 **Assumption.** From here the form $\beta$ is balanced, nondegenerate and **α-compatible**, with $\alpha^{\dagger}=\alpha$; the trace form of a semisimple graded algebra with inner grade involution is the model.
 
@@ -53,7 +53,7 @@ $$
 (L_a)^{\dagger}=R_a,\qquad (R_b)^{\dagger}=L_b .
 $$
 
-**Proof.** $\beta(L_ax,y)=\beta(ax,y)=\beta(x,ya)=\beta(x,R_ay)$ gives the first; the second is the second balanced condition. $\square$
+**Proof.** $\beta(L_ax,y)=\beta(ax,y)=\beta(x,ya)=\beta(x,R_ay)$ gives the first; the second is the second balanced condition.
 
 **Corollary.** The unsigned sandwich satisfies $(\Sigma_{a,b})^{\dagger}=\Sigma_{b,a}$, since $\Sigma_{a,b}=L_aR_b$ and $(\Sigma_{a,b})^{\dagger}=R_b^{\dagger}L_a^{\dagger}=L_bR_a=\Sigma_{b,a}$.
 
@@ -63,7 +63,7 @@ $$
 (\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\,\alpha(a)} .
 $$
 
-**Proof.** Write $\Sigma^{\alpha}_{a,b}=L_aR_b\alpha$. Then $(\Sigma^{\alpha}_{a,b})^{\dagger}=\alpha^{\dagger}R_b^{\dagger}L_a^{\dagger}=\alpha L_bR_a$, and $\alpha L_bR_a(x)=\alpha(b\,x\,a)=\alpha(b)\alpha(x)\alpha(a)=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}(x)$. $\square$
+**Proof.** Write $\Sigma^{\alpha}_{a,b}=L_aR_b\alpha$. Then $(\Sigma^{\alpha}_{a,b})^{\dagger}=\alpha^{\dagger}R_b^{\dagger}L_a^{\dagger}=\alpha L_bR_a$, and $\alpha L_bR_a(x)=\alpha(b\,x\,a)=\alpha(b)\alpha(x)\alpha(a)=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}(x)$.
 
 **Corollary.** The adjoint of the signed sandwich is the signed sandwich with the two elements replaced by their images under the grade involution and their order reversed; for the unsigned sandwich, which is the case $\alpha=\mathrm{id}$, this is $\Sigma_{b,a}$, as before; and the adjoint of the signed left multiplication is read from the case $b=1$, $(\ell_a)^{\dagger}=\Sigma^{\alpha}_{\alpha(1),\alpha(a)}=\Sigma^{\alpha}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$, the signed right multiplication.
 
@@ -88,7 +88,7 @@ $$
 =\Sigma^{\alpha}_{\alpha(b)\alpha(a),\,\alpha(b)\alpha(a)}
 =\Sigma^{\alpha}_{c,c},\qquad c=\alpha(ba),
 $$
-and $\Sigma^{\alpha}_{c,c}$ is the identity exactly when $c=1$, that is $ba=1$. Similarly $\Sigma^{\alpha}_{a,b}(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{ab,ba}$ is the identity exactly when $ab=1$. Both conditions hold exactly when $a$ and $b$ are inverse units. $\square$
+and $\Sigma^{\alpha}_{c,c}$ is the identity exactly when $c=1$, that is $ba=1$. Similarly $\Sigma^{\alpha}_{a,b}(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{ab,ba}$ is the identity exactly when $ab=1$. Both conditions hold exactly when $a$ and $b$ are inverse units.
 
 **Corollary.** Every signed reflection $\Sigma^{\alpha}_{a,a^{-1}}$ is an isometry, and the isometries of the signed sandwich family are exactly these; in particular the grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is an isometry, and the reflection $\Sigma^{\alpha}_{u,u^{-1}}$ attached to a unitary element $u$ of the star below is an isometry.
 
@@ -108,7 +108,7 @@ $$
 (L_a)^{\dagger}=L_{a^{*}},\qquad (R_b)^{\dagger}=R_{b^{*}},\qquad (\Sigma_{a,b})^{\dagger}=\Sigma_{a^{*},b^{*}} .
 $$
 
-**Proof.** For the left multiplication, $\beta_{*}(L_ax,y)=\beta((ax)^{*},y)=\beta(x^{*}a^{*},y)=\beta(x^{*},a^{*}y)=\beta_{*}(x,L_{a^{*}}y)$ using the balanced property; the right multiplication is the same computation; the unsigned sandwich is their composite. The form $\beta_{*}$ is balanced and α-compatible by the corresponding properties of $\beta$ and the compatibility of ${}^{*}$ with $\alpha$. $\square$
+**Proof.** For the left multiplication, $\beta_{*}(L_ax,y)=\beta((ax)^{*},y)=\beta(x^{*}a^{*},y)=\beta(x^{*},a^{*}y)=\beta_{*}(x,L_{a^{*}}y)$ using the balanced property; the right multiplication is the same computation; the unsigned sandwich is their composite. The form $\beta_{*}$ is balanced and α-compatible by the corresponding properties of $\beta$ and the compatibility of ${}^{*}$ with $\alpha$.
 
 **Definition.** The **unitary elements** of the pair $(A,{}^{*})$ are those with
 
@@ -120,7 +120,7 @@ and they form a subgroup $U(A,{}^{*})$ of the units; the condition is the **unit
 
 **Theorem.** If $u$ is unitary then the signed sandwich $\Sigma^{\alpha}_{u,u^{*}}$ is an isometry of the star form.
 
-**Proof.** The form $\beta_{*}$ is balanced and α-compatible by the previous proposition, so the isometry criterion of the previous section applies: $\Sigma^{\alpha}_{a,b}$ is a $\beta_{*}$-isometry exactly when $b=a^{-1}$. For $a=u$ unitary one has $u^{-1}=u^{*}$, so $b=u^{*}=u^{-1}$ and the sandwich is an isometry. $\square$
+**Proof.** The form $\beta_{*}$ is balanced and α-compatible by the previous proposition, so the isometry criterion of the previous section applies: $\Sigma^{\alpha}_{a,b}$ is a $\beta_{*}$-isometry exactly when $b=a^{-1}$. For $a=u$ unitary one has $u^{-1}=u^{*}$, so $b=u^{*}=u^{-1}$ and the sandwich is an isometry.
 
 **Corollary.** The unitary elements give the isometric signed sandwiches; the condition $u^{*}u=uu^{*}=1$ is exactly what makes $\Sigma^{\alpha}_{u,u^{*}}$ unitary, and the map $u\mapsto\Sigma^{\alpha}_{u,u^{*}}$ carries the unitary group into the isometries of $\beta_{*}$, with kernel the central unitary elements by the injectivity-up-to-the-centre of the sandwich correspondence.
 
@@ -132,7 +132,6 @@ For $a=J$ one has $\alpha(a)=J$, so $a\alpha(a)=J^2=1$ and $\Sigma^{\alpha}_{J,J
 
 For $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ one computes $\alpha(a)=\begin{pmatrix}1&-1\\0&1\end{pmatrix}$ and $a\alpha(a)=I$, so $a$ lies in $\mathrm{R}(A)$; $\Sigma^{\alpha}_{a,a^{-1}}$ is a signed reflection, self-adjoint by the corollary, and an isometry by the theorem. Taking the element star $X^{*}=X^{\dagger}_{\text{Herm}}$ the adjoint transpose, the unitary elements are the matrices with $X^{*}X=XX^{*}=I$, and for such a $u$ the sandwich $\Sigma^{\alpha}_{u,u^{*}}$ is isometric, the explicit verification being the multiplication of the two $2\times2$ matrices.
 
-**Verified.** The adjoint formula $(\Sigma^{\alpha}_{a,b})^{\dagger}=\Sigma^{\alpha}_{\alpha(b),\alpha(a)}$ was checked on the four basis elements of $\mathsf{M}_2(K)$ for the trace form and the grade involution $\alpha(X)=JXJ^{-1}$; the self-adjointness of $\Sigma^{\alpha}_{a,a^{-1}}$ was checked for $a=J$ and for $a=\begin{pmatrix}1&1\\0&1\end{pmatrix}$; the isometry condition was checked to be $ba=1$.
 
 ## Summary
 

@@ -42,7 +42,7 @@ $$
 L_{\tilde B}L_{\tilde C} = L_{\tilde B\tilde C},\qquad R_{\tilde B}R_{\tilde C} = R_{\tilde C\tilde B},\qquad L_{\tilde B}R_{\tilde C} = R_{\tilde C}L_{\tilde B},\qquad L_{\tilde B}R_{\tilde{B}^{*}} = \Theta_{\tilde B}.
 $$
 
-*Proof.* Associativity gives the first two, and the third is the associativity identity $\tilde B\,(\tilde V\,\tilde C)=(\tilde B\,\tilde V)\,\tilde C$; the fourth is the definition of the two-sided operator. All four were verified on random triples.
+*Proof.* Associativity gives the first two, and the third is the associativity identity $\tilde B\,(\tilde V\,\tilde C)=(\tilde B\,\tilde V)\,\tilde C$; the fourth is the definition of the two-sided operator.
 
 **Corollary (the two families, and the two-sided family as their product).** The left multiplications form a subalgebra of the operators isomorphic to $\mathbb{B}$ and the right multiplications form a subalgebra anti-isomorphic to $\mathbb{B}$, and the two subalgebras commute inside $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$; the products $L_{\tilde B}R_{\tilde C}$ are the **mixed** operators $\tilde V\mapsto \tilde B\tilde V\tilde C$, of which the two-sided family is the diagonal case $\tilde C=\tilde{B}^{*}$. A general mixed operator has two independent parameters and is a two-sided operator only when $\tilde C=\lambda \tilde{B}^{*}$ for a scalar $\lambda$, in which case it is $\lambda \Theta_{\tilde B}$; the mixed family is the subject of *Mixed Inner Conjugation and Hermitian Adjoint*.
 
@@ -60,7 +60,7 @@ $$
 (L_{\tilde B}\tilde V,\tilde Q) = \mathrm{Sc}\bigl((\tilde B\tilde V)^{\dagger}\tilde Q\bigr) = \mathrm{Sc}\bigl(\tilde{V}^{*}\tilde{B}^{*}\tilde Q\bigr) = \bigl(\tilde V,\ L_{\tilde{B}^{*}}\tilde Q\bigr) ,
 $$
 
-and the same computation on the right with $(\tilde V\tilde C)^{\dagger}=\tilde{C}^{*}\tilde{V}^{*}$ gives $(R_{\tilde C}\tilde V,\tilde Q)=(\tilde V,R_{\tilde{C}^{*}}\tilde Q)$. The adjoint is unique, since the form is non-degenerate. Verified on the generators and on random elements.
+and the same computation on the right with $(\tilde V\tilde C)^{\dagger}=\tilde{C}^{*}\tilde{V}^{*}$ gives $(R_{\tilde C}\tilde V,\tilde Q)=(\tilde V,R_{\tilde{C}^{*}}\tilde Q)$. The adjoint is unique, since the form is non-degenerate.
 
 **Corollary (the dagger is natural for the one-sided operators).** The assignments $\tilde B\mapsto L_{\tilde B}$ and $\tilde C\mapsto R_{\tilde C}$ carry the dagger of the algebra to the adjoint of the operator: $L_{\tilde B}^{\dagger}=L_{\tilde B}^{*}=L_{\tilde B^{*}}$ and $R_{\tilde C}^{\dagger}=R_{\tilde C}^{*}=R_{\tilde C^{*}}$, the dagger and the star coinciding because the adjoint in view is the one of the definite form. Consequently $L$ is a **faithful $*$-representation** of the algebra on the Hilbert space $(\mathbb{B},(\cdot,\cdot))$: it is linear, multiplicative, injective and compatible with the dagger. Since $\mathbb{B}\cong M_{2}(\mathbb{C})$ and $\dim_{\mathbb{C}}\mathbb{B}=4$, the representation is the left regular representation, that is two copies of the standard module $\mathbb{C}^{2}$ of the algebra (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
 
@@ -82,7 +82,7 @@ $$
 
 and $L_{\tilde B}$ is invertible if and only if $\tilde B\in\mathbb{B}^{\times}$, with inverse $L_{\tilde B^{-1}}$. The same four statements hold for the right multiplication with the same criteria on the parameter.
 
-*Proof.* By the adjoint theorem, $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, and the assignment is injective, so $L_{\tilde B}^{*}=L_{\tilde B}$ if and only if $\tilde{B}^{*}=\tilde B$, $L_{\tilde B}^{*}=-L_{\tilde B}$ if and only if $\tilde{B}^{*}=-\tilde B$, and $(L_{\tilde B})^{*}L_{\tilde B}=L_{\tilde{B}^{*}\tilde B}$ is the identity if and only if $\tilde{B}^{*}\tilde B=e_{0}$. The form preservation criterion is the same computation, $(L_{\tilde B}\tilde V,L_{\tilde B}\tilde Q)=(\tilde V,\tilde{B}^{*}\tilde B\tilde Q)$, and it coincides with unitarity of the operator. Invertibility is the inverse of an algebra element. All four were verified over random parameters and over both sectors.
+*Proof.* By the adjoint theorem, $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, and the assignment is injective, so $L_{\tilde B}^{*}=L_{\tilde B}$ if and only if $\tilde{B}^{*}=\tilde B$, $L_{\tilde B}^{*}=-L_{\tilde B}$ if and only if $\tilde{B}^{*}=-\tilde B$, and $(L_{\tilde B})^{*}L_{\tilde B}=L_{\tilde{B}^{*}\tilde B}$ is the identity if and only if $\tilde{B}^{*}\tilde B=e_{0}$. The form preservation criterion is the same computation, $(L_{\tilde B}\tilde V,L_{\tilde B}\tilde Q)=(\tilde V,\tilde{B}^{*}\tilde B\tilde Q)$, and it coincides with unitarity of the operator. Invertibility is the inverse of an algebra element.
 
 **Corollary (the two sectors give the two types).** The Hermitian and the anti-Hermitian elements act by the self-adjoint and by the skew-adjoint operators respectively, and the correspondence is exactly that of the involutions of the algebra:
 
@@ -139,7 +139,7 @@ and it is, up to a positive scalar, the **only** general plain sesquilinear form
 
 **The identity and the central scalars.** $L_{e_{0}}=R_{e_{0}}=\mathrm{id}$. For a central scalar $\lambda e_{0}$ the two one-sided operators agree, $L_{\lambda e_{0}}=R_{\lambda e_{0}}=\lambda\,\mathrm{id}$, and they are self-adjoint exactly for $\lambda$ real, skew-adjoint exactly for $\lambda$ imaginary, unitary exactly for $\lvert\lambda\rvert=1$. The central circle gives the scalar unitary operators, a subgroup $U(1)$ of the group of unitary operators, to be compared with the kernel $U(1)$ of the two-sided assignment.
 
-**The vector generators.** For $\tilde B=e_{k}$, $k=1,2,3$, one has $e_{k}^{\dagger}=-e_{k}$ and $e_{k}^{2}=-e_{0}$, so $L_{e_{k}}$ is skew-adjoint and $L_{e_{k}}^{2}=L_{-e_{0}}=-\mathrm{id}$: the left multiplication by a vector generator is a complex structure on the algebra, of square minus the identity. This is the operator form of the relations of the Clifford structure (*The Clifford Algebra Representation*), and the three operators $L_{e_{1}},L_{e_{2}},L_{e_{3}}$ satisfy the anticommutation relations of the generators.
+**The vector generators.** For $\tilde B=e_{k}$, $k=1,2,3$, one has $e_{k}^{\dagger}=-e_{k}$ and $e_{k}^{2}=-e_{0}$, so $L_{e_{k}}$ is skew-adjoint and $L_{e_{k}}^{2}=L_{-e_{0}}=-\mathrm{id}$: the left multiplication by a vector generator is a complex structure on the algebra, of square minus the identity. This is the operator form of the relations of the Clifford structure (*The Realification of the General Plain Algebra*), and the three operators $L_{e_{1}},L_{e_{2}},L_{e_{3}}$ satisfy the anticommutation relations of the generators.
 
 **A parameter in neither sector.** For $\tilde B=e_{1}+ie_{2}$ the dagger acts as $\tilde{B}^{*}=-e_{1}+ie_{2}$, so the Hermitian part of the parameter is $(\tilde B+\tilde{B}^{*})/2=ie_{2}$, which lies in $\mathbb{M}_+$, and the anti-Hermitian part is $(\tilde B-\tilde{B}^{*})/2=e_{1}$, which lies in $\mathbb{M}_-$. Accordingly the operator splits into a self-adjoint and a skew-adjoint part,
 

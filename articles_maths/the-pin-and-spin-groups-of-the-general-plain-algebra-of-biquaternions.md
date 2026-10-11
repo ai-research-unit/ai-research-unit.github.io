@@ -9,7 +9,7 @@ The companion article for the general quaternionic bilinear form reads a pin gro
 
 The article is the plain twin of the quaternionic one and it is written as its parallel, section for section. Three of its statements are the sharp differences, and each is proved here. The isometry condition is vacuous, so the action of the algebra on itself is not read on a shell. The kernel of the action is the whole centre $\mathbb{C}^{\times}$, not the two-element group $\{\pm e_0\}$, so the cover of the rotation group is not finite until it is normalised. And the reflections of the plain form, unlike the reflections of the vector subspace, are not operators of the two-sided family at all.
 
-The algebra, the conjugations and the remarkable subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*, *The Group of Involutions* and *Introduction to the Remarkable Subspaces*; the form and its four pairings are *The Four Pairings of the Biquaternion Algebra*; the adjoint of the form is *Association and the Transpose on the Biquaternion Algebra*; the two-sided and one-sided operators are the two articles named above; the inner automorphisms and the outer coset are *Biquaternion Automorphisms and Derivations*; the ambient group is *The Biquaternion Unit Group as a Topological Group*; the Clifford carrier of the reflections is *Biquaternion Versors and the Orthogonal Group* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+The algebra, the conjugations and the remarkable subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*, *The Group of Involutions* and *Introduction to the Remarkable Subspaces*; the form and its four pairings are *The Four Pairings of the Biquaternion Algebra*; the adjoint of the form is *Association and the Transpose on the General Plain Algebra*; the two-sided and one-sided operators are the two articles named above; the inner automorphisms and the outer coset are *Biquaternion Automorphisms and Derivations*; the ambient group is *The Biquaternion Unit Group as a Topological Group*; the Clifford carrier of the reflections is *Biquaternion Versors and the Orthogonal Group* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 ## The Two Candidate Groups
 
@@ -87,7 +87,7 @@ $$
 \bigl(\mathrm{Ad}_{\tilde A}\bigr)^{\approx}=\mathrm{Ad}_{\tilde A^{-1}}=\bigl(\mathrm{Ad}_{\tilde A}\bigr)^{-1}.
 $$
 
-*Proof.* The first identity is the cyclicity of the scalar part, $\mathrm{Sc}(\tilde A(\tilde X\tilde Y)\tilde A^{-1})=\mathrm{Sc}(\tilde X\tilde Y)$; the second follows from the composition law or by applying the swap law $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$ to the pair $(\tilde A,\tilde A^{-1})$. Both were verified on random units.
+*Proof.* The first identity is the cyclicity of the scalar part, $\mathrm{Sc}(\tilde A(\tilde X\tilde Y)\tilde A^{-1})=\mathrm{Sc}(\tilde X\tilde Y)$; the second follows from the composition law or by applying the swap law $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$ to the pair $(\tilde A,\tilde A^{-1})$.
 
 **Remark (the isometry condition is vacuous, and that is the difference).** For the general quaternionic bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$ the twisted operator $\Theta_{\tilde A}(\tilde Y)=\tilde A\tilde Y\tilde A^{\natural}$ satisfies
 
@@ -241,5 +241,5 @@ The plain form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ c
 - *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the real form whose orthogonal group the algebra reaches, the odd slot that carries the reflections, and the reason the Pin group is not an object of the algebra.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the inner automorphisms as the isometric motions and for the outer coset.
 - *The Biquaternion Unit Group as a Topological Group* (`articles_maths/the-biquaternion-unit-group-as-a-topological-group.md`), for the ambient group, its centre and the quotient by it.
-- *Association and the Transpose on the Biquaternion Algebra* (`articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md`), for the associate $F^{\approx}$ and the swap law of the one-sided families used throughout.
+- *Association and the Transpose on the General Plain Algebra* (`articles_maths/association-and-the-transpose-on-the-general-plain-algebra.md`), for the associate $F^{\approx}$ and the swap law of the one-sided families used throughout.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the null elements of the examples and their role in the algebra.

@@ -91,11 +91,11 @@ In either case, if $A$ is faithful over $R$, then $c_\lambda = 0$ for every $\la
 
 (ii) The associativity of the product turns the identity $(xy)(\lambda z) = x\bigl(y(\lambda z)\bigr)$ into $\varsigma(\lambda)((xy)z) = \lambda((xy)z)$: the left side is the second rule applied to the outer product, while the right side is the second rule applied to $y(\lambda z)$, whose scalar comes back as $\varsigma(\varsigma(\lambda)) = \lambda$ and is then reassociated. Hence $(\varsigma(\lambda) - \lambda)(xy)z = 0$ for all $x, y, z$, that is $c_\lambda(xy)$ annihilates $A$ on the left for every pair. If no nonzero element of $A$ annihilates $A$ on the left, then $c_\lambda(xy) = 0$ for all $x, y$, and if the products generate $A$ then $c_\lambda A = 0$.
 
-In both cases $c_\lambda A = 0$, that is $c_\lambda \in \operatorname{ann}_R(A)$, and faithfulness gives $c_\lambda = 0$. $\square$
+In both cases $c_\lambda A = 0$, that is $c_\lambda \in \operatorname{ann}_R(A)$, and faithfulness gives $c_\lambda = 0$.
 
 **Corollary (a sesqualgebra of full type is neither associative nor commutative).** Say that a sesqualgebra is **of full type** when it is faithful over $R$, its products generate $A$, and no nonzero element of $A$ annihilates $A$ on the left. If $A$ is of full type and $\varsigma \neq \mathrm{id}$, then $A$ is **neither associative nor commutative**. The generation and the annihilation conditions are automatic when $A$ has a unit, so a unital faithful sesqualgebra with $\varsigma \neq \mathrm{id}$ is neither associative nor commutative.
 
-**Proof.** Were $A$ associative, (ii) would give $c_\lambda A = 0$ for every $\lambda$, hence $c_\lambda = 0$ by faithfulness, contradicting $\varsigma \neq \mathrm{id}$; were $A$ commutative the same conclusion follows from (i). $\square$
+**Proof.** Were $A$ associative, (ii) would give $c_\lambda A = 0$ for every $\lambda$, hence $c_\lambda = 0$ by faithfulness, contradicting $\varsigma \neq \mathrm{id}$; were $A$ commutative the same conclusion follows from (i).
 
 **Remark.** The hypotheses are not decorative, and each is used at a definite place. **Generation** is what turns the vanishing of $c_\lambda$ on the products into its vanishing on $A$; without it the **zero product** on a nontrivial module is commutative and associative for any $\varsigma$, with $A \cdot A = 0$ and $A \neq 0$. **Faithfulness** is what turns $c_\lambda \in \operatorname{ann}_R(A)$ into $c_\lambda = 0$; without it the honest conclusion is only that $\varsigma$ becomes the identity after the base ring is reduced by $\operatorname{ann}_R(A)$. **Absence of left annihilators** is used only in (ii), to read $c_\lambda(xy)z = 0$ for all $z$ as $c_\lambda(xy) = 0$; like generation it is automatic when $A$ has a unit. With the hypotheses in place the collapse is sharp: an algebra with a nontrivial involution is then never a disguised associative or commutative algebra, and the derived operation of the next section is the model. Dividing the base ring by $\operatorname{ann}_R(A)$ is the general reduction that turns an associative or commutative sesqualgebra into an ordinary algebra.
 
@@ -130,7 +130,7 @@ $$
 (i) The unit $1$ of $A$ is a right $\star$-unit: $x \star 1 = x\,1^{*} = x$ for every $x$.
 (ii) $A$ has a left $\star$-unit if and only if $* = \mathrm{id}$, and then $1$ is a two-sided unit and $\star$ is the original product.
 
-**Proof.** (i) $1^{*} = 1$, so $x \star 1 = x$. (ii) Let $e$ be a left $\star$-unit, so that $e \star x = e\,x^{*} = x$ for every $x$. At $x = 1$ this gives $e\,1^{*} = e = 1$, so $e = 1$; then $1 \star x = x^{*}$ must equal $x$ for every $x$, so $* = \mathrm{id}$. Conversely if $* = \mathrm{id}$ then $\star$ is the original product and $1$ is its unit. $\square$
+**Proof.** (i) $1^{*} = 1$, so $x \star 1 = x$. (ii) Let $e$ be a left $\star$-unit, so that $e \star x = e\,x^{*} = x$ for every $x$. At $x = 1$ this gives $e\,1^{*} = e = 1$, so $e = 1$; then $1 \star x = x^{*}$ must equal $x$ for every $x$, so $* = \mathrm{id}$. Conversely if $* = \mathrm{id}$ then $\star$ is the original product and $1$ is its unit.
 
 **Remark.** The failure of unitality is one-sided, and it is the asymmetry of the two slots read at the level of the unit: the right unit $1$ survives the twist and the left unit does not. The derived operation of a unital algebra with a nontrivial involution therefore has a right unit and no unit at all, and it is unital exactly when it is the original product.
 

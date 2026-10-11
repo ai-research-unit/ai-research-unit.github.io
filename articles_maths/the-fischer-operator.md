@@ -54,7 +54,7 @@ and $-1$ respectively and the raising operators increase it by $2$ and $1$.
 because $x_\mu\partial_\mu$ and $\partial_\nu$ satisfy
 $[\partial_\nu,x_\mu\partial_\mu]=\partial_\nu$ and the second derivatives cancel. For the
 multipliers, $E(fP)=(Ef)P+f(EP)$ for a homogeneous $f$, giving $[E,L_f]=(\deg f)L_f$, and
-$\deg|x|^2=2$, $\deg x^{\natural}=1$. $\square$
+$\deg|x|^2=2$, $\deg x^{\natural}=1$.
 
 **Corollary (the grading of the two decompositions).** The harmonic decomposition has layers of
 degree $k,k-2,k-4,\dots$ and the monogenic one has layers of degree $k,k-1,k-2,\dots$; the parity of
@@ -70,7 +70,7 @@ $\mathcal{P}_{k-2}$ injectively with image meeting $\mathcal{H}_k$ only at $0$.
 $\Delta$ is induced by the quadratic form $\sum_\mu\xi_\mu^2$, which is nondegenerate, so the
 multiplication $\mathcal{P}_{k-2}\to\mathcal{P}_k$, $Q\mapsto|x|^2Q$, has kernel $0$ and the
 orthogonality is by the argument of *Regularity and the Cauchy–Riemann Operator*, where the lemma is
-stated and proved. $\square$
+stated and proved.
 
 **Theorem (the commutator identity).** With $n=m+1$ the dimension of the ambient space,
 
@@ -80,7 +80,7 @@ $$
 
 *Proof.* Direct computation: $\partial_\mu(|x|^2Q)=2x_\mu Q+|x|^2\partial_\mu Q$, so
 $\partial_\mu^2(|x|^2Q)=2Q+4x_\mu\partial_\mu Q+|x|^2\partial_\mu^2Q$; summing over the $n$
-coordinates gives $\Delta(|x|^2Q)=2nQ+4EQ+|x|^2\Delta Q$, which is the identity. $\square$
+coordinates gives $\Delta(|x|^2Q)=2nQ+4EQ+|x|^2\Delta Q$, which is the identity.
 
 **Corollary (the triangularity and the isomorphism).** On $\mathcal{P}_{k-2}$ the composition
 $\Delta L_{|x|^2}$ is triangular with respect to degree, of the form
@@ -90,7 +90,7 @@ an isomorphism for $k\ge2$.
 *Proof.* By the theorem, $\Delta(|x|^2Q)=(4E+2n)Q+|x|^2\Delta Q$; on $\mathcal{P}_{k-2}$ the first
 term is the scalar $4(k-2)+2n=4k+2m-6$ times $Q$, and the second raises the degree. The scalar does
 not vanish for $k\ge2$ and the degree-raising term is nilpotent on $\mathcal{P}_{k-2}$, so the map
-is invertible. $\square$
+is invertible.
 
 **Definition (the harmonic Fischer operator).** For $k\ge2$ the **Fischer projection** of degree $k$
 is
@@ -117,7 +117,7 @@ $Q=(\Delta|_{L_{|x|^2}\mathcal{P}_{k-2}})^{-1}\Delta P$; conversely a harmonic $
 so $Q=0$ and $\pi^{\mathrm{har}}_kP=P$. The map kills $|x|^2Q$ because $\Delta(|x|^2Q)$ is its own
 image under $\Delta$; idempotency follows. The equivariance is that of $\Delta$ and of $|x|^2$, both
 of which are rotation-invariant. Applying the projection repeatedly to the remainder gives the
-layered form. $\square$
+layered form.
 
 **Remark (the classical statement).** The harmonic Fischer decomposition is the statement that the
 harmonic polynomials of all degrees, multiplied by the radial factors $|x|^{2j}$, exhaust the
@@ -146,7 +146,7 @@ $$
 $\mathcal{P}_k=\mathcal{M}_k\oplus x^{\natural}\mathcal{P}_{k-1}$; the first equality is the
 dimension count, the second the direct-sum statement, and iterating the second gives the layered
 form. The lemma and the resulting decomposition are quoted as standard, the proof being the
-triangular induction of *Clifford Analysis*. $\square$
+triangular induction of *Clifford Analysis*.
 
 **Definition (the monogenic Fischer operator).** Let $\pi^{\mathrm{mon}}_k$ be the projection of
 $\mathcal{P}_k$ onto $\mathcal{M}_k$ along $x^{\natural}\mathcal{P}_{k-1}$, which exists and is
@@ -168,7 +168,6 @@ orthogonal group and for the symmetry group of the system, and it commutes with 
 $\mathcal{M}$ and the kernel is $\bigoplus_k x^{\natural}\mathcal{P}_{k-1}=x^{\natural}\mathcal{P}$.
 The equivariance is that of $D$ and of the Clifford multiplication, which are both invariant under
 the orthogonal group, and commutation with $E$ is the grading statement of the first section.
-$\square$
 
 **Remark (the two projections compared).** Every monogenic polynomial is harmonic, because
 $\Delta f=\bar DDf=0$ when $Df=0$, so $\mathcal{M}_k\subseteq\mathcal{H}_k$. The inclusion is proper

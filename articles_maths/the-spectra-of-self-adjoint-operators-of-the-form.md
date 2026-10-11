@@ -16,7 +16,7 @@ Let $h$ be positive definite. By *The Norm Defined by a Form*, §*The Norm and I
 
 **Theorem (the finite-dimensional spectral theorem).** Let $h$ be positive definite, let $A$ be free of finite rank over $k$ or $k(\mathrm{i})$, and let $T$ be $h$-self-adjoint. Then there is an $h$-orthonormal basis $e_{1},\dots,e_{m}$ of $A$ and real numbers $\lambda_{1},\dots,\lambda_{m}$ with $Te_{i} = \lambda_{i}e_{i}$.
 
-*Proof.* Choose an $h$-orthonormal basis of $A$, which exists by the Gram–Schmidt process because $h$ is positive definite; in it the form has matrix the identity, so the $h$-self-adjointness of $T$ reads $T^{T} = \varsigma(T)$, the classical hermitian condition, and $T$ is a hermitian matrix over $k$ or $k(\mathrm{i})$. The classical finite-dimensional spectral theorem for a hermitian matrix supplies a unitary change of basis in which $T$ is diagonal with real entries; the change of basis is by a matrix that is unitary for the identity form, so the new basis is again $h$-orthonormal. $\square$
+*Proof.* Choose an $h$-orthonormal basis of $A$, which exists by the Gram–Schmidt process because $h$ is positive definite; in it the form has matrix the identity, so the $h$-self-adjointness of $T$ reads $T^{T} = \varsigma(T)$, the classical hermitian condition, and $T$ is a hermitian matrix over $k$ or $k(\mathrm{i})$. The classical finite-dimensional spectral theorem for a hermitian matrix supplies a unitary change of basis in which $T$ is diagonal with real entries; the change of basis is by a matrix that is unitary for the identity form, so the new basis is again $h$-orthonormal.
 
 **Remark (the theorem is the definite case of a general isometry).** The proof is the finite-dimensional case of the reduction of the article: the $h$-self-adjoint operator is the conjugate, by the isometry of the form, of a euclidean self-adjoint operator, and the two have the same spectrum. In the indefinite case the isometry exists only after the choice of a fundamental decomposition, and the spectrum it transports is the companion spectrum, not the $h$-spectrum, which is the content of the last section.
 
@@ -28,7 +28,7 @@ $$
 P_{i}P_{j} = \delta_{ij}P_{i} , \qquad \textstyle\sum_{i=1}^{r} P_{i} = 1 , \qquad P_{i}^{\dagger} = P_{i} , \qquad T = \sum_{i=1}^{r}\lambda_{i}P_{i} .
 $$
 
-*Proof.* The eigenspaces of a self-adjoint operator for distinct eigenvalues are $h$-orthogonal: if $Tx = \lambda x$ and $Ty = \mu y$ with $\lambda \neq \mu$, then $\lambda h(x,y) = h(Tx,y) = h(x,Ty) = \mu h(x,y)$, and $h(x,y) = 0$ because $\lambda - \mu$ is invertible in $k$. The projections onto the eigenspaces are therefore $h$-orthogonal, which gives the first two relations, and each is self-adjoint because its image and kernel are $h$-orthogonal complements. The last relation is the diagonalisation read in the eigenbasis. $\square$
+*Proof.* The eigenspaces of a self-adjoint operator for distinct eigenvalues are $h$-orthogonal: if $Tx = \lambda x$ and $Ty = \mu y$ with $\lambda \neq \mu$, then $\lambda h(x,y) = h(Tx,y) = h(x,Ty) = \mu h(x,y)$, and $h(x,y) = 0$ because $\lambda - \mu$ is invertible in $k$. The projections onto the eigenspaces are therefore $h$-orthogonal, which gives the first two relations, and each is self-adjoint because its image and kernel are $h$-orthogonal complements. The last relation is the diagonalisation read in the eigenbasis.
 
 **Remark (the projection is the operator, not the vector).** The $P_{i}$ are operators of the form and not elements of the algebra; they are self-adjoint idempotents, and they are the form-layer analogue of the idempotents of the algebra. The distinction is the same as the one between the multiplication $m_{x}$ and the element $x$ in the regular representation of *Self-Adjoint and Skew Operators of the Form*.
 
@@ -36,7 +36,7 @@ $$
 
 **Theorem (the functional calculus).** For every function $f$ on the spectrum the operator $f(T) = \sum_{i}f(\lambda_{i})P_{i}$ is well defined, the assignment $f \mapsto f(T)$ is an algebra homomorphism, it satisfies $f(T)^{\dagger} = \overline{f}(T)$, it is continuous for the sup norm on the spectrum with the operator norm on $B(A)$, and if $f$ is real and nonnegative then $f(T)$ is self-adjoint and positive.
 
-*Proof.* The definition is a finite sum, so the assignment is well defined and is visibly $k$-linear; the multiplicativity is $f(T)g(T) = \sum f(\lambda_{i})g(\lambda_{i})P_{i}$ by the orthogonality $P_{i}P_{j} = \delta_{ij}P_{i}$. The adjoint statement is the computation $f(T)^{\dagger} = \sum \varsigma(f(\lambda_{i}))P_{i}^{\dagger} = \sum \overline{f}(\lambda_{i})P_{i}$, using $\lambda_{i} \in k$ and the self-adjointness of each $P_{i}$. The norm bound is $\lVert f(T)\rVert \leq \sup_{i}\lvert f(\lambda_{i})\rvert$, and for $f \geq 0$, $h(f(T)x,x) = \sum f(\lambda_{i})h(P_{i}x,x) = \sum f(\lambda_{i})\lVert P_{i}x\rVert^{2} \geq 0$. $\square$
+*Proof.* The definition is a finite sum, so the assignment is well defined and is visibly $k$-linear; the multiplicativity is $f(T)g(T) = \sum f(\lambda_{i})g(\lambda_{i})P_{i}$ by the orthogonality $P_{i}P_{j} = \delta_{ij}P_{i}$. The adjoint statement is the computation $f(T)^{\dagger} = \sum \varsigma(f(\lambda_{i}))P_{i}^{\dagger} = \sum \overline{f}(\lambda_{i})P_{i}$, using $\lambda_{i} \in k$ and the self-adjointness of each $P_{i}$. The norm bound is $\lVert f(T)\rVert \leq \sup_{i}\lvert f(\lambda_{i})\rvert$, and for $f \geq 0$, $h(f(T)x,x) = \sum f(\lambda_{i})h(P_{i}x,x) = \sum f(\lambda_{i})\lVert P_{i}x\rVert^{2} \geq 0$.
 
 ## The Rayleigh Quotient and the Extremal Characterisation
 
@@ -58,7 +58,7 @@ $$
 
 the maximum and the minimum running over the subspaces $V, W$ of $A$ of the stated dimension. In particular $\lambda_{1} = \max_{x \neq 0} R_{T}(x)$ and $\lambda_{m} = \min_{x \neq 0} R_{T}(x)$.
 
-*Proof.* The quotients of the subspaces reduce to the euclidean case by the $h$-orthonormal basis, where the statement is the Courant–Fischer theorem for a hermitian matrix; the Rayleigh quotient is unchanged by the change of basis because both numerator and denominator are computed in the same $h$-orthonormal coordinates. $\square$
+*Proof.* The quotients of the subspaces reduce to the euclidean case by the $h$-orthonormal basis, where the statement is the Courant–Fischer theorem for a hermitian matrix; the Rayleigh quotient is unchanged by the change of basis because both numerator and denominator are computed in the same $h$-orthonormal coordinates.
 
 ### The Spectral Radius and the Norm
 
@@ -70,7 +70,7 @@ $$
 
 the spectral radius, and the maximum modulus is attained at one of the two extreme eigenvalues, $\lVert T\rVert = \max(\lvert\lambda_{1}\rvert, \lvert\lambda_{m}\rvert)$.
 
-*Proof.* In an $h$-orthonormal basis the operator is a diagonal matrix with the eigenvalues on the diagonal, and the operator norm of the form is the norm of *The Norm Defined by a Form*, §*The Adjoint Pairs and the Operator Norm*, which in those coordinates is the euclidean operator norm; for a diagonal matrix that norm is the largest modulus of a diagonal entry. $\square$
+*Proof.* In an $h$-orthonormal basis the operator is a diagonal matrix with the eigenvalues on the diagonal, and the operator norm of the form is the norm of *The Norm Defined by a Form*, §*The Adjoint Pairs and the Operator Norm*, which in those coordinates is the euclidean operator norm; for a diagonal matrix that norm is the largest modulus of a diagonal entry.
 
 ## The Positivity Criterion
 
@@ -90,7 +90,7 @@ $$
 h(Tx,x) = \sum_{i}\lambda_{i}h(P_{i}x,x) = \sum_{i}\lambda_{i}\lVert P_{i}x\rVert^{2} ,
 $$
 
-which shows at once that a nonnegative spectrum gives a nonnegative diagonal and that a positive spectrum gives a positive diagonal for $x \neq 0$, since $\sum_{i}P_{i}x = x \neq 0$ makes some $P_{i}x$ nonzero. Conversely, if some $\lambda_{j} < 0$ and $x \neq 0$ lies in the eigenspace of $\lambda_{j}$, then $h(Tx,x) = \lambda_{j}\lVert x\rVert^{2} < 0$, so a positive operator has nonnegative spectrum; and if some $\lambda_{j} = 0$ with $x \neq 0$ in its eigenspace, then $h(Tx,x) = 0$, so a strictly positive operator has positive spectrum. $\square$
+which shows at once that a nonnegative spectrum gives a nonnegative diagonal and that a positive spectrum gives a positive diagonal for $x \neq 0$, since $\sum_{i}P_{i}x = x \neq 0$ makes some $P_{i}x$ nonzero. Conversely, if some $\lambda_{j} < 0$ and $x \neq 0$ lies in the eigenspace of $\lambda_{j}$, then $h(Tx,x) = \lambda_{j}\lVert x\rVert^{2} < 0$, so a positive operator has nonnegative spectrum; and if some $\lambda_{j} = 0$ with $x \neq 0$ in its eigenspace, then $h(Tx,x) = 0$, so a strictly positive operator has positive spectrum.
 
 **Corollary (the positive square root exists).** A positive self-adjoint operator has the positive self-adjoint square root $T^{1/2} = \sum_{i}\lambda_{i}^{1/2}P_{i}$, a function of $T$ in the functional calculus; it is the unique such square root, the uniqueness being the square-root theorem of *The Polar Decomposition of an Operator of the Form*, where the construction is used.
 
@@ -100,19 +100,19 @@ which shows at once that a nonnegative spectrum gives a nonnegative diagonal and
 
 **Theorem (the spectrum of a skew-adjoint operator).** Let $T$ be skew-adjoint in the definite finite-dimensional case, $T^{\dagger} = -T$, over the sesquilinear base $R = k(\mathrm{i})$. Then the spectrum of $T$ is purely imaginary, and $T = \mathrm{i}S$ for a unique self-adjoint $S$.
 
-*Proof.* The operator $\mathrm{i}T$ is self-adjoint, because $(\mathrm{i}T)^{\dagger} = \varsigma(\mathrm{i})T^{\dagger}$, and $\varsigma(\mathrm{i}) = -\mathrm{i}$ for the sesquilinear base, where the twist is the conjugation and $\mathrm{i}$ lies in $R$; hence $(\mathrm{i}T)^{\dagger} = -\mathrm{i}(-T) = \mathrm{i}T$. The spectrum of the self-adjoint operator $\mathrm{i}T$ is real, and the spectrum of $T = -\mathrm{i}(\mathrm{i}T)$ is that real set multiplied by $-\mathrm{i}$, hence purely imaginary. $\square$
+*Proof.* The operator $\mathrm{i}T$ is self-adjoint, because $(\mathrm{i}T)^{\dagger} = \varsigma(\mathrm{i})T^{\dagger}$, and $\varsigma(\mathrm{i}) = -\mathrm{i}$ for the sesquilinear base, where the twist is the conjugation and $\mathrm{i}$ lies in $R$; hence $(\mathrm{i}T)^{\dagger} = -\mathrm{i}(-T) = \mathrm{i}T$. The spectrum of the self-adjoint operator $\mathrm{i}T$ is real, and the spectrum of $T = -\mathrm{i}(\mathrm{i}T)$ is that real set multiplied by $-\mathrm{i}$, hence purely imaginary.
 
 ### Normal Operators and Simultaneous Diagonalisation
 
 **Theorem (the normal operators).** A normal operator in the definite finite-dimensional case over the sesquilinear base $R = k(\mathrm{i})$ is diagonalisable in an $h$-orthonormal basis, with eigenvalues in $k(\mathrm{i})$, and a commuting family of self-adjoint operators is simultaneously diagonalised in one $h$-orthonormal basis.
 
-*Proof.* A normal operator commutes with its adjoint, so $A = \tfrac{1}{2}(T + T^{\dagger})$ and $B = \tfrac{1}{2\mathrm{i}}(T - T^{\dagger})$ are commuting self-adjoint operators with $T = A + \mathrm{i}B$, and the two halves are the form-layer decomposition of *Self-Adjoint and Skew Operators of the Form*; the classical finite-dimensional spectral theorem for a commuting family of hermitian matrices diagonalises the pair in one orthonormal basis, which in the $h$-orthonormal coordinates is the assertion. $\square$
+*Proof.* A normal operator commutes with its adjoint, so $A = \tfrac{1}{2}(T + T^{\dagger})$ and $B = \tfrac{1}{2\mathrm{i}}(T - T^{\dagger})$ are commuting self-adjoint operators with $T = A + \mathrm{i}B$, and the two halves are the form-layer decomposition of *Self-Adjoint and Skew Operators of the Form*; the classical finite-dimensional spectral theorem for a commuting family of hermitian matrices diagonalises the pair in one orthonormal basis, which in the $h$-orthonormal coordinates is the assertion.
 
 ### The Unitary Group and the Unit Circle
 
 **Theorem (the spectrum of a unitary operator).** Let $U$ be unitary in the definite finite-dimensional case, over the sesquilinear base $R = k(\mathrm{i})$. Then every eigenvalue of $U$ has modulus one, and $U = e^{\mathrm{i}S}$ for a self-adjoint $S$; conversely the exponential of a self-adjoint operator is unitary. The spectrum of $e^{\mathrm{i}S}$ is the image of the spectrum of $S$ under the exponential.
 
-*Proof.* If $Ux = \lambda x$ with $x \neq 0$ then $h(x,x) = h(Ux,Ux) = \lambda\overline{\lambda}\,h(x,x)$, so $\lambda\overline{\lambda} = 1$ and $\lvert\lambda\rvert = 1$. The diagonalisation gives one $h$-orthonormal basis in which $U$ has the eigenvalues $e^{\mathrm{i}\theta_{i}}$ of modulus one on the diagonal, and choosing $\theta_{i}$ real gives a self-adjoint diagonal $S$ with $e^{\mathrm{i}S} = U$; the last clause is the functional calculus applied to the exponential. $\square$
+*Proof.* If $Ux = \lambda x$ with $x \neq 0$ then $h(x,x) = h(Ux,Ux) = \lambda\overline{\lambda}\,h(x,x)$, so $\lambda\overline{\lambda} = 1$ and $\lvert\lambda\rvert = 1$. The diagonalisation gives one $h$-orthonormal basis in which $U$ has the eigenvalues $e^{\mathrm{i}\theta_{i}}$ of modulus one on the diagonal, and choosing $\theta_{i}$ real gives a self-adjoint diagonal $S$ with $e^{\mathrm{i}S} = U$; the last clause is the functional calculus applied to the exponential.
 
 ## Invariance under the Unitary Group
 
@@ -120,7 +120,7 @@ which shows at once that a nonnegative spectrum gives a nonnegative diagonal and
 
 **Theorem (the invariance of the spectrum).** Let $U$ be unitary and $T$ an operator in the definite finite-dimensional case. Then $T$ and $UTU^{\dagger}$ have the same spectrum and the same $h$-self-adjointness, normality and unitary properties; and over the sesquilinear base $R = k(\mathrm{i})$, two normal operators are unitarily equivalent if and only if they have the same spectrum.
 
-*Proof.* The assignment $T \mapsto UTU^{\dagger}$ is a conjugation by an invertible operator whose inverse is $U^{\dagger}$, so it preserves the spectrum and the adjoint relations, $UTU^{\dagger}$ having the adjoint $UT^{\dagger}U^{\dagger}$. For the completeness of the invariant over the sesquilinear base, the diagonalisation writes each normal operator as $\sum_{i}\lambda_{i}P_{i}$ with mutually $h$-orthogonal self-adjoint projections by the normal-operators theorem above; two operators with the same spectrum have the same list of eigenvalues and the same multiplicities, and the unitary sending one eigenbasis to the other conjugates them. $\square$
+*Proof.* The assignment $T \mapsto UTU^{\dagger}$ is a conjugation by an invertible operator whose inverse is $U^{\dagger}$, so it preserves the spectrum and the adjoint relations, $UTU^{\dagger}$ having the adjoint $UT^{\dagger}U^{\dagger}$. For the completeness of the invariant over the sesquilinear base, the diagonalisation writes each normal operator as $\sum_{i}\lambda_{i}P_{i}$ with mutually $h$-orthogonal self-adjoint projections by the normal-operators theorem above; two operators with the same spectrum have the same list of eigenvalues and the same multiplicities, and the unitary sending one eigenbasis to the other conjugates them.
 
 **Remark (where the invariant stops).** Over the sesquilinear base the spectrum is the complete invariant of unitary equivalence for normal operators and only a partial one for general operators, whose Jordan structure is an additional invariant; over the collapsed base the normal operators are no longer diagonalisable (the rotation of the plane is normal with spectrum $\{\mathrm{i},-\mathrm{i}\}$ and no real eigenvector) and the diagonalisation argument does not apply. The comparison with the congruence of forms, whose invariant is the inertia and not the spectrum, is the subject of *Unitary Equivalence and Congruence of Operators of the Form*.
 

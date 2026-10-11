@@ -48,7 +48,7 @@ so that $C^2=(-1)^{k}\,\mathrm{id}$ on $V_{\mathbb{C}}$: it is an involution for
 
 **Theorem.** The Hodge structures of weight $k$ on $V$ correspond to the real representations of the group $\mathbb{U}(1)$ on $V$ of the form $z\mapsto z^{p}\bar z^{q}$ on $H^{p,q}$, and the Weil operator is the value of the representation at the element $i$; the operator $C$ determines the decomposition as its eigenspaces, and $C^2=(-1)^{k}$.
 
-**Proof.** The representation $z\mapsto z^{p-q}$ on $H^{p,q}$ has derivative data that fix the bidegree; the operator $C$ is the value at $i$, whose eigenspaces are the $H^{p,q}$ because $i^{p-q}$ takes the value $i^{r}$ on the diagonal $p-q=r$; the sum of the eigenspaces is the complexification, and the conjugation condition is the reality of the representation. $\square$
+**Proof.** The representation $z\mapsto z^{p-q}$ on $H^{p,q}$ has derivative data that fix the bidegree; the operator $C$ is the value at $i$, whose eigenspaces are the $H^{p,q}$ because $i^{p-q}$ takes the value $i^{r}$ on the diagonal $p-q=r$; the sum of the eigenspaces is the complexification, and the conjugation condition is the reality of the representation.
 
 **Remark.** The Weil operator is the involution on the elements of the Hodge structure: the conjugation $\bar\cdot$ is an antilinear involution and $C$ is the linear order-two-up-to-sign operator, and together they generate the structure. In the Kähler case $C$ acts on a $(p,q)$-form as multiplication by $i^{p-q}$, and it is the operator whose commutation with the Laplacian is the Hodge decomposition on the level of harmonic forms of *Hermitian Metrics and the Hodge Theory*.
 
@@ -74,7 +74,7 @@ is positive definite on $V_{\mathbb{C}}$.
 
 **Theorem.** The second Hodge–Riemann relation makes $\langle x,y\rangle=Q(Cx,\bar y)$ a positive definite Hermitian form on $V_{\mathbb{C}}$; consequently the form $Q$ has a definite signature on the real part of each piece $H^{p,q}$, and the polarisation determines the Hodge numbers through the signature of its restriction to the real forms of the pieces.
 
-**Proof.** The bilinearity and the symmetry of $Q$ give the Hermitian symmetry of $\langle\cdot,\cdot\rangle$, since $Q(Cy,\bar x)=\overline{Q(Cx,\bar y)}$ by the $(-1)^{k}$-symmetry and the reality of $C$; the positivity is the stated relation, and it is a sum of the contributions of the pieces by the first relation. $\square$
+**Proof.** The bilinearity and the symmetry of $Q$ give the Hermitian symmetry of $\langle\cdot,\cdot\rangle$, since $Q(Cy,\bar x)=\overline{Q(Cx,\bar y)}$ by the $(-1)^{k}$-symmetry and the reality of $C$; the positivity is the stated relation, and it is a sum of the contributions of the pieces by the first relation.
 
 **Theorem (Hodge index theorem).** Let $X$ be a compact Kähler manifold of even complex dimension and let $Q$ be the intersection form on its middle cohomology, the polarisation furnished by the $\varepsilon$-Hermitian pairing $\langle u\cup v,[X]\rangle$ of *Hermitian Pairings on a Topological Space*. Then the signature of $Q$ is
 
@@ -84,7 +84,7 @@ $$
 
 the alternating sum over the Hodge numbers; for a compact Kähler surface this is $\sigma=h^{0,0}-h^{1,0}-h^{1,1}+h^{2,0}+h^{2,2}-\cdots$, and the positivity of the polarisation on the primitive cohomology is what fixes the signs.
 
-**Proof sketch.** The Hodge–Riemann relations make $\langle x,y\rangle=Q(Cx,\bar y)$ positive definite; decomposing $Q$ by bidegree with the first relation and counting the signs of $i^{p-q}=C$ on the primitive part of each $H^{p,q}$ gives the index of $Q$ as the alternating sum of the Hodge numbers, the primitive decomposition contributing $h^{p,q}$ with the sign $(-1)^{p}$; the computation is the Hodge index theorem, and it is the precise form of the positivity of the middle form. $\square$
+**Proof sketch.** The Hodge–Riemann relations make $\langle x,y\rangle=Q(Cx,\bar y)$ positive definite; decomposing $Q$ by bidegree with the first relation and counting the signs of $i^{p-q}=C$ on the primitive part of each $H^{p,q}$ gives the index of $Q$ as the alternating sum of the Hodge numbers, the primitive decomposition contributing $h^{p,q}$ with the sign $(-1)^{p}$; the computation is the Hodge index theorem, and it is the precise form of the positivity of the middle form.
 
 **Example.** For the complex projective plane $h^{0,0}=h^{1,1}=h^{2,2}=1$ and the remaining Hodge numbers vanish, so $\sigma=1-1+1=1$; for a $K3$ surface $h^{2,0}=h^{0,2}=1$, $h^{1,1}=20$ and $h^{2,2}=h^{0,0}=1$, so $\sigma=2-20+2=-16$. Both agree with the signature computed in *The Signature Operator*, and they are the standard checks of the Hodge index theorem.
 
@@ -100,7 +100,7 @@ $$
 
 where $G_{\mathbb{R}}=\operatorname{Aut}(V_{\mathbb{R}},Q)$ is the real form of the orthogonal or symplectic group that preserves $Q$ and $V$ is the compact subgroup preserving the Hodge filtration and the positivity; the tangent space of $D$ at a point is $\operatorname{Hom}(H^{p,q},H^{p-1,q+1})$ modulo the stabiliser.
 
-**Proof.** The flag manifold of filtrations with $\dim F^{p}$ fixed is a complex homogeneous space of $G_{\mathbb{C}}=\operatorname{Aut}(V_{\mathbb{C}},Q)$; the Hodge–Riemann relations are open conditions — an inequality and an incidence condition — so $D$ is an open subset, and the automorphisms of $Q$ act transitively on it with the compact stabiliser $V$ of a polarised structure. The tangent description is the linearisation of the filtration condition. $\square$
+**Proof.** The flag manifold of filtrations with $\dim F^{p}$ fixed is a complex homogeneous space of $G_{\mathbb{C}}=\operatorname{Aut}(V_{\mathbb{C}},Q)$; the Hodge–Riemann relations are open conditions — an inequality and an incidence condition — so $D$ is an open subset, and the automorphisms of $Q$ act transitively on it with the compact stabiliser $V$ of a polarised structure. The tangent description is the linearisation of the filtration condition.
 
 **Definition.** A **variation of Hodge structure** over a base $S$ is a local system of lattices with a Hodge filtration varying holomorphically, such that the **Griffiths transversality** holds:
 

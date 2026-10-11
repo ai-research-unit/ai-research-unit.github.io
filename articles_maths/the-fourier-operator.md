@@ -67,7 +67,7 @@ product identity is the polarisation of the norm identity over $\mathbb C$ (the 
 $\mathbb K=\mathbb R$ or $\mathbb C$; over $\mathbb R$ the norm identity is equivalent to the inner product
 identity by the polarisation formula). The inverse is the conjugate transform, since the inversion theorem
 gives $\check{\hat f}=f$ on $\mathcal S$ and hence, by density and continuity, on $L^2$; surjectivity
-follows. $\blacksquare$
+follows.
 
 The word **unitary** for $\mathcal F$ is used in the sense of *Banach and Hilbert Spaces*, later in this
 Part: a bounded operator with $\mathcal F^\dagger\mathcal F=\mathcal F\mathcal F^\dagger=\mathrm{id}$. The
@@ -97,7 +97,7 @@ and the inner integral is the delta distribution at $x+y$, so it selects $y=-x$ 
 Both sides extend to $L^2$ by continuity and density. Then $\mathcal F^4=(\mathcal F^2)^2=P^2=\mathrm{id}$,
 and $\mathcal F^{-1}=\mathcal F^3$ follows by multiplying by $\mathcal F$; the last identity is
 $\mathcal F\mathcal F^2=\mathcal F^2\mathcal F$, that is, parity commutes with $\mathcal F$, which holds
-because $\mathcal F^2$ is a function of $\mathcal F$. $\blacksquare$
+because $\mathcal F^2$ is a function of $\mathcal F$.
 
 **Corollary (the eigenvalues).** A unitary operator satisfying $\mathcal F^4=\mathrm{id}$ has spectrum
 contained in the fourth roots of unity $\{1,i,-1,-i\}$. In finite dimension it would be diagonalisable
@@ -106,7 +106,7 @@ no eigenvectors in $L^2$ beyond the eigenbasis below, and no other spectral valu
 
 **Proof.** If $\mathcal F^4=\mathrm{id}$ and $\lambda$ is an eigenvalue, then $\lambda^4=1$. The spectrum
 statement is the spectral mapping theorem for the polynomial $z^4-1$, applied in *Banach and Hilbert
-Spaces*, later in this Part. $\blacksquare$
+Spaces*, later in this Part.
 
 ## The Hermite Eigenbasis
 
@@ -124,7 +124,7 @@ form an orthonormal basis of $L^2(\mathbb R^n)$.
 
 **Proof.** The orthonormality and completeness are those of the Hermite basis of *Fourier Analysis on
 Euclidean Spaces*; the normalising constant is chosen so that $\lVert h_k\rVert_2=1$, and the products are
-orthonormal in $L^2(\mathbb R^n)$ by Fubini. $\blacksquare$
+orthonormal in $L^2(\mathbb R^n)$ by Fubini.
 
 ### The Eigenvalues
 
@@ -142,7 +142,7 @@ carries $h_k$ to a multiple of $h_k$; the eigenvalue is then fixed on $h_0$ by t
 $\mathcal F(e^{-\pi x^2})=e^{-\pi x^2}$ of the Fourier article, giving eigenvalue $1$ for $k=0$, and the
 commutation with the raising operator multiplies the eigenvalue by $-i$ at each step, giving
 $\mathcal Fh_k=(-i)^kh_k$. In $n$ variables the eigenvalue of $h_\alpha$ is the product of the one-variable
-eigenvalues along the coordinates, $(-i)^{\lvert\alpha\rvert}$. $\blacksquare$
+eigenvalues along the coordinates, $(-i)^{\lvert\alpha\rvert}$.
 
 **Corollary (the four eigenspaces).** The eigenvalues $1,i,-1,-i$ correspond to the values
 $\lvert\alpha\rvert\equiv0,1,2,3\pmod 4$, so $L^2(\mathbb R^n)$ is the orthogonal direct sum of four
@@ -164,7 +164,7 @@ equivalence carrying the differentiation $\frac1{2\pi i}\partial_j$ into multipl
 **Proof.** The first identity is the rearrangement of $\mathcal F(\partial_jf)=2\pi i\xi_j\mathcal Ff$, the
 second of $\mathcal F(x_jf)=-\frac1{2\pi i}\partial_j\mathcal Ff$; both are the differentiation identities
 of *Fourier Analysis on Euclidean Spaces*. On $\mathcal S$ they are identities of operators, and they
-extend to the closures. $\blacksquare$
+extend to the closures.
 
 The theorem is the reason the transform solves constant-coefficient equations: a polynomial in the
 derivatives becomes multiplication by the same polynomial in the coordinates, so a differential equation
@@ -185,7 +185,7 @@ for the multiplier operator $T_m$.
 **Proof.** $\mathcal F(\tau_yf)=\widehat{f(\cdot-y)}=e_y\mathcal Ff$ is the translation identity of the
 Fourier article and gives the first formula; the convolution theorem $\widehat{k*f}=\hat k\hat f$ gives
 $T_k=\mathcal F^{-1}M_{\hat k}\mathcal F$, and the multiplier operator is defined by
-$T_m=\mathcal F^{-1}M_m\mathcal F$. $\blacksquare$
+$T_m=\mathcal F^{-1}M_m\mathcal F$.
 
 **Corollary.** Conjugation by $\mathcal F$ is a unitary isomorphism of the algebra of translation-invariant
 bounded operators onto the algebra of multiplication operators $M_m$ with $m\in L^\infty$; it carries

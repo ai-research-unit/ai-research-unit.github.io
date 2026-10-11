@@ -123,7 +123,6 @@ S:\ \tau\mapsto-\frac1\tau = -\,\frac{1}{4\pi i/g^2}=\frac{i g^2}{4\pi}=\frac{4\
 g'=\frac{4\pi}{g}.
 $$
 
-<!-- CONVENTION — complex coupling: this article uses $\tau=\theta/2\pi+4\pi i/g^2$, the normalisation in which the self-dual point is $g^2=4\pi$ and which the instanton and theta articles of the series use. Other normalisations ($\tau=\theta/2\pi+i/g^2$) exist in the literature; do not "align" this article to them, since the angle $\theta$ and the lattice spacing $g_m=4\pi n/e$ are fixed by the same choice. -->
 
 This was verified numerically at three couplings: for $g=1$ the image $\tau'=0.079577i$ equals $4\pi i/g'^2$ with $g'=4\pi$; for $g=2$ it is $0.318310i$ with $g'=2\pi$; and for $g=\sqrt{4\pi}$ the exchange is the self-dual point $g'=g$ at $\tau=i$. The map $g\mapsto4\pi/g$ is the strong–weak duality of the electric and magnetic couplings, and the self-dual coupling is $g^2=4\pi$. For general $\theta$ the transformation mixes the two parameters, $g'^2=g^2\bigl((\theta/2\pi)^2+(4\pi/g^2)^2\bigr)$ and $\theta'=-\theta/\bigl((\theta/2\pi)^2+(4\pi/g^2)^2\bigr)$, so the angle is not preserved by the exchange; this is the standard statement that the theta angle rotates under the duality.
 

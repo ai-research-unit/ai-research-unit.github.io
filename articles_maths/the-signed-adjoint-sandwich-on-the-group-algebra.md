@@ -25,11 +25,11 @@ $$
 
 and the adjoint is an anti-linear involution, $(ST)^* = T^*S^*$, $(T^*)^* = T$.
 
-**Proof.** These are the computations of *Hermitian Operators on a Group Algebra*, obtained from the unitary representation $\lambda$ for the left identity and from the right regular representation in the unimodular case for the right identity; the operator identities are general. $\square$
+**Proof.** These are the computations of *Hermitian Operators on a Group Algebra*, obtained from the unitary representation $\lambda$ for the left identity and from the right regular representation in the unimodular case for the right identity; the operator identities are general.
 
 **Corollary (the inversion in the parameter).** $a^{**} = a$ and $(a^{-1})^* = (a^*)^{-1}$, so the adjoint of an elementary operator is the elementary operator of the involuted parameter; for a point mass $\delta_x$ on a discrete group, $\delta_x^* = \delta_{x^{-1}}$ and $(L_{\delta_x})^* = L_{\delta_{x^{-1}}}$.
 
-**Proof.** $(a^{-1})^* = (a^*)^{-1}$ is the anti-automorphism law applied to $a*a^{-1} = 1$; the point-mass statement is the discrete case of $a^*$. $\square$
+**Proof.** $(a^{-1})^* = (a^*)^{-1}$ is the anti-automorphism law applied to $a*a^{-1} = 1$; the point-mass statement is the discrete case of $a^*$.
 
 ## The Adjoint of the Signed Sandwich
 
@@ -41,7 +41,7 @@ $$
 
 and the adjoint operation is an involution on each family, $\bigl((S_{a,b})^*\bigr)^* = S_{a,b}$.
 
-**Proof.** By the anti-automorphism property and the elementary adjoints, $(S_{a,b})^* = (L_a\mathrm{A}R_b)^* = R_b^*\mathrm{A}^*L_a^* = R_{b^*}\mathrm{A}L_{a^*}$. Now $\mathrm{A}L_c = L_{\alpha(c)}\mathrm{A}$ and $R_d\mathrm{A} = \mathrm{A}R_{\alpha^{-1}(d)} = \mathrm{A}R_{\alpha(d)}$, so $R_{b^*}\mathrm{A}L_{a^*} = L_{\alpha(a^*)}\mathrm{A}R_{\alpha(b^*)} = S_{\alpha(a^*),\alpha(b^*)}$. The unsigned formula is the case $\alpha = \mathrm{id}$ read off the same computation, and the double adjoint uses $\alpha^2 = \mathrm{id}$ and $a^{**} = a$. $\square$
+**Proof.** By the anti-automorphism property and the elementary adjoints, $(S_{a,b})^* = (L_a\mathrm{A}R_b)^* = R_b^*\mathrm{A}^*L_a^* = R_{b^*}\mathrm{A}L_{a^*}$. Now $\mathrm{A}L_c = L_{\alpha(c)}\mathrm{A}$ and $R_d\mathrm{A} = \mathrm{A}R_{\alpha^{-1}(d)} = \mathrm{A}R_{\alpha(d)}$, so $R_{b^*}\mathrm{A}L_{a^*} = L_{\alpha(a^*)}\mathrm{A}R_{\alpha(b^*)} = S_{\alpha(a^*),\alpha(b^*)}$. The unsigned formula is the case $\alpha = \mathrm{id}$ read off the same computation, and the double adjoint uses $\alpha^2 = \mathrm{id}$ and $a^{**} = a$.
 
 **Corollary (compatibility with the coset structure and the composition law).** The adjoint carries the signed sandwiches to the signed sandwiches and the unsigned to the unsigned, and it is compatible with the composition law of *The Signed Sandwich on the Group Algebra*,
 
@@ -51,7 +51,7 @@ $$
 
 and it respects the coset decomposition $S_{a,b} = T_{a,b}\mathrm{A}$, carrying $\mathrm{A}$ to itself.
 
-**Proof.** The first identity is the anti-automorphism property of the adjoint applied to the composition; the second is the decomposition $S_{a,b}^* = (T_{a,b}\mathrm{A})^* = \mathrm{A}^*T_{a,b}^* = \mathrm{A}T_{a^*,b^*}$ and the intertwining relations; the coset statement is immediate from $\mathrm{A}^* = \mathrm{A}$. $\square$
+**Proof.** The first identity is the anti-automorphism property of the adjoint applied to the composition; the second is the decomposition $S_{a,b}^* = (T_{a,b}\mathrm{A})^* = \mathrm{A}^*T_{a,b}^* = \mathrm{A}T_{a^*,b^*}$ and the intertwining relations; the coset statement is immediate from $\mathrm{A}^* = \mathrm{A}$.
 
 ## The Unitarity Condition
 
@@ -65,11 +65,11 @@ $$
 
 On the group algebra $L^1(G)$ of a non-discrete group there are no unitary elements, so no signed sandwich is unitary there; the unitarity condition is nonvacuous exactly on a discrete group or in the measure algebra, where the point masses are unitary.
 
-**Proof.** By the composition law, $S_{\alpha(a^*),\alpha(b^*)}S_{a,b} = T_{\alpha(a^*)*\alpha(a),\,\alpha(b)*\alpha(b^*)}$ and $S_{a,b}S_{\alpha(a^*),\alpha(b^*)} = T_{a*a^*,\,b^*\!*b}$; the identity criterion for unsigned sandwiches, $T_{c,d} = 1$ iff $c = d = 1$ in the unital case, gives $\alpha(a^*\!*a) = 1$ and $\alpha(b*\!b^*) = 1$ for the first product and $a*a^* = 1$, $b^*\!*b = 1$ for the second. Applying $\alpha^{-1}$ and combining, the condition is that $a$ and $b$ be unitary. The absence of unitary elements on a non-discrete $L^1(G)$ is *The Group Algebra as an Involutive Algebra*. $\square$
+**Proof.** By the composition law, $S_{\alpha(a^*),\alpha(b^*)}S_{a,b} = T_{\alpha(a^*)*\alpha(a),\,\alpha(b)*\alpha(b^*)}$ and $S_{a,b}S_{\alpha(a^*),\alpha(b^*)} = T_{a*a^*,\,b^*\!*b}$; the identity criterion for unsigned sandwiches, $T_{c,d} = 1$ iff $c = d = 1$ in the unital case, gives $\alpha(a^*\!*a) = 1$ and $\alpha(b*\!b^*) = 1$ for the first product and $a*a^* = 1$, $b^*\!*b = 1$ for the second. Applying $\alpha^{-1}$ and combining, the condition is that $a$ and $b$ be unitary. The absence of unitary elements on a non-discrete $L^1(G)$ is *The Group Algebra as an Involutive Algebra*.
 
 **Corollary (the fixed elements give self-adjoint sandwiches).** If $\alpha(a^*) = a$ and $\alpha(b^*) = b$, then $S_{a,b}^* = S_{a,b}$, so the sandwich is self-adjoint; the elements fixed by the composite anti-automorphism $\sigma = \alpha\circ\,{}^{*}$ form a closed real subspace, and the self-adjoint signed sandwiches are exactly those whose parameters lie in it, up to the identification of the sandwich map.
 
-**Proof.** $S_{a,b}^* = S_{\alpha(a^*),\alpha(b^*)} = S_{a,b}$ by the hypothesis; the fixed set of an anti-linear involution is a closed real subspace, and the last statement is the definition of the sandwich map read on the parameters. $\square$
+**Proof.** $S_{a,b}^* = S_{\alpha(a^*),\alpha(b^*)} = S_{a,b}$ by the hypothesis; the fixed set of an anti-linear involution is a closed real subspace, and the last statement is the definition of the sandwich map read on the parameters.
 
 ## The Sandwich Identity Criterion
 
@@ -81,17 +81,17 @@ $$
 
 the criterion of *The Signed Sandwich on a Topological Group*, read in the measure algebra; consequently the map $(a,b)\mapsto S_{a,b}$ is injective exactly on the pairs modulo the central relation, and the self-adjointness criterion of the corollary is exact.
 
-**Proof.** $S_{c,d} = S_{a,b}$ means $c*\alpha(f)*d = a*\alpha(f)*b$ for all $f$; since $\alpha$ is onto this says $c^{-1}a$ commutes with every $\alpha(f)$, that is with all of $\mathcal{A}$, and equals $b d^{-1}$; the criterion follows. The parametric description of the self-adjoint sandwiches is then immediate from the adjoint formula. $\square$
+**Proof.** $S_{c,d} = S_{a,b}$ means $c*\alpha(f)*d = a*\alpha(f)*b$ for all $f$; since $\alpha$ is onto this says $c^{-1}a$ commutes with every $\alpha(f)$, that is with all of $\mathcal{A}$, and equals $b d^{-1}$; the criterion follows. The parametric description of the self-adjoint sandwiches is then immediate from the adjoint formula.
 
 ## The Degenerate Cases
 
 **Theorem (the trivial grade involution).** If $\alpha = \mathrm{id}$ then every signed sandwich is unsigned, $S_{a,b} = T_{a,b}$, and its adjoint is $T_{a^*,b^*}$; every unsigned sandwich with unitary parameters is unitary.
 
-**Proof.** With $\alpha = \mathrm{id}$ the operator $\mathrm{A}$ is the identity, $S_{a,b} = T_{a,b}$, and the adjoint formula collapses to $(T_{a,b})^* = T_{a^*,b^*}$; the unitarity criterion is the last theorem with $\alpha = \mathrm{id}$. $\square$
+**Proof.** With $\alpha = \mathrm{id}$ the operator $\mathrm{A}$ is the identity, $S_{a,b} = T_{a,b}$, and the adjoint formula collapses to $(T_{a,b})^* = T_{a^*,b^*}$; the unitarity criterion is the last theorem with $\alpha = \mathrm{id}$.
 
 **Corollary (the inner grade involution).** If $\alpha = c_z$ is inner, $S_{a,b} = T_{a*z,\,z^{-1}*b}$, and the adjoint is $(S_{a,b})^* = T_{(a*z)^*,\,(z^{-1}*b)^*}$; the signed adjoint differs from the unsigned adjoint of the transported sandwich by the transport only, and the unitarity criterion is unchanged.
 
-**Proof.** The transport is that of *The Signed Sandwich on the Group Algebra*; the adjoint formula applied to the transported parameters gives the displayed expression, and unitarity is invariant under a transport by a fixed element because $z$ cancels. $\square$
+**Proof.** The transport is that of *The Signed Sandwich on the Group Algebra*; the adjoint formula applied to the transported parameters gives the displayed expression, and unitarity is invariant under a transport by a fixed element because $z$ cancels.
 
 **Remark (what the article does not do).** The adjoint of the reflection and of the signed left multiplication are the next two articles; the adjoint of a general convolution operator, its expression on $L^p$ and the involutive algebra it generates are *The Adjoint of a Convolution Operator*; the discrete version with the natural and signed bilinear forms, where the adjoint relation is $(L_a)^\dagger = L_{a^{-1}}$, is *The Signed Adjoint Sandwich on a Topological Group*, and the two forms are reconciled by the passage from the bilinear form to the Haar pairing through the involution $a\mapsto a^*$.
 

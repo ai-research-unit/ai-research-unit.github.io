@@ -72,7 +72,6 @@ $TT^\dagger=T^\dagger T$.
 later in this Part, and are quoted from there; the anti-multiplicativity is the computation
 $\langle STf,g\rangle=\langle Tf,S^\dagger g\rangle=\langle f,T^\dagger S^\dagger g\rangle$, and the
 isometry is $\lVert T^\dagger\rVert=\sup_{\lVert g\rVert=1}\sup_{\lVert f\rVert=1}\lvert\langle Tf,g\rangle\rvert=\lVert T\rVert$.
-$\blacksquare$
 
 **Remark (the marks).** By *Conventions in Mathematics* the **dagger** names the adjoint of an operator and
 the **star** names the involution of an element, the layer of the `* Theory` group. The two are distinct
@@ -106,7 +105,7 @@ $$
 $$
 the middle integral being $(T_{K^{\mathrm t}}g)(y)$ with the kernel $K(y,x)$; the Hilbert case replaces $g$ by
 $\bar g$ throughout and produces $\overline{K(y,x)}$. The two differ by the conjugation on the second slot,
-which is exactly the relation $K^*=\overline{K^{\mathrm t}}$. $\blacksquare$
+which is exactly the relation $K^*=\overline{K^{\mathrm t}}$.
 
 ## The Adjoint of an Integral Operator
 
@@ -128,7 +127,7 @@ $$
 $$
 and the inner integral is $(T_{K^*}g)(y)$ with $K^*(y,x)=\overline{K(x,y)}$, that is
 $K^*(x,y)=\overline{K(y,x)}$. The uniqueness of the adjoint identifies $T_K^\dagger$ with $T_{K^*}$, and the
-norm identity is the substitution $x\leftrightarrow y$. $\blacksquare$
+norm identity is the substitution $x\leftrightarrow y$.
 
 **Corollary (the Hermitian case).** The following are equivalent: $T_K$ is self-adjoint; $K^*=K$, that is
 $K(y,x)=\overline{K(x,y)}$ for almost every $(x,y)$; and the sesquilinear form
@@ -138,7 +137,7 @@ In particular a real kernel is self-adjoint exactly when it is symmetric, $K(y,x
 **Proof.** The first two are equivalent by the theorem and the uniqueness of the kernel of a Hilbert–Schmidt
 operator; the Hermitian property of the form is the polarisation of self-adjointness and is the kernel form
 of the Hermitian condition, as in the `* Theory` article. For a real kernel, $\overline{K(x,y)}=K(x,y)$, so
-$K^*=K$ is $K(y,x)=K(x,y)$. $\blacksquare$
+$K^*=K$ is $K(y,x)=K(x,y)$.
 
 ### The Involution on the Operators
 
@@ -154,7 +153,7 @@ and it is an isometry of the Hilbert–Schmidt class onto itself.
 **Proof.** The first identity is the theorem above; the anti-multiplicativity is the property of the adjoint
 of a bounded operator, read on the kernels through the correspondence
 $\langle T_K,T_L\rangle_{\mathrm{HS}}=\iint K\bar L$ of the `* Theory` article; the involution property
-$T^{\dagger\dagger}=T$ and the isometry are the same properties transported. $\blacksquare$
+$T^{\dagger\dagger}=T$ and the isometry are the same properties transported.
 
 **Example (the Volterra operator).** The Volterra operator $Vf(x)=\int_0^xf(y)\,dy$ has the kernel
 $K(x,y)=\mathbf 1_{0\leq y\leq x}$, and its adjoint has the kernel
@@ -194,7 +193,7 @@ $T$ is self-adjoint exactly when $K$ is Hermitian as a distribution.
 **Proof.** The Schwartz kernel theorem of *The Schwartz Kernel Theorem*, later in this Part, provides the
 kernel; the computation of the previous sections carries over with the pairings of test functions against
 distributions, and the Hermitian condition is the distributional form of $K^*=K$, as in *Positive Definite
-Distributions*, the `* Theory` article. $\blacksquare$
+Distributions*, the `* Theory` article.
 
 **Remark (unbounded operators).** An unbounded operator has an adjoint only after its domain is fixed, and
 the adjoint may be densely defined and closed without the original being so; the distinction between a

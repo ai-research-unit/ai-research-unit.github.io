@@ -14,7 +14,7 @@ Throughout, $N$ is the indefinite norm of signature $(2,2)$ and $|\cdot|$ the Eu
 
 **Proposition (the multiplicative part preserves the form up to a factor).** For $\tilde a,\tilde b\in\mathbb{H}_{\mathrm{s}}$ and $M(\tilde q)=\tilde a\tilde q\tilde b$, one has $N(M(\tilde q))=N(\tilde a)N(\tilde b)N(\tilde q)$. Hence $M$ preserves the null cone and the two open cones $N>0$ and $N<0$, and it contracts the form when $|N(\tilde a)N(\tilde b)|<1$.
 
-*Proof.* The norm is multiplicative, $N(\tilde a\tilde q\tilde b)=N(\tilde a)N(\tilde q)N(\tilde b)$, by *Split-Quaternion Norm and Invertibility*; the sets on which $N$ is positive, negative or zero are therefore permuted among themselves according as the sign of the factor, and the factor is $N(\tilde a\tilde b)=N(\tilde a)N(\tilde b)$. $\square$
+*Proof.* The norm is multiplicative, $N(\tilde a\tilde q\tilde b)=N(\tilde a)N(\tilde q)N(\tilde b)$, by *Split-Quaternion Norm and Invertibility*; the sets on which $N$ is positive, negative or zero are therefore permuted among themselves according as the sign of the factor, and the factor is $N(\tilde a\tilde b)=N(\tilde a)N(\tilde b)$.
 
 **Definition.** A **split-quaternion iterated function system** is a finite family $\{S_1,\dots,S_k\}$ of similarities with Euclidean ratios $\lambda_i=|\tilde a_i||\tilde b_i|<1$; its **attractor** is the unique compact set $\Lambda$ with $\Lambda=\bigcup_iS_i(\Lambda)$. The system is **multiplicative** when every $\tilde c_i=0$, and **null** when its seed lies on the null cone.
 
@@ -22,7 +22,7 @@ Throughout, $N$ is the indefinite norm of signature $(2,2)$ and $|\cdot|$ the Eu
 
 **Corollary (the null attractor).** If the system is multiplicative and the seed lies on the null cone, the attractor lies on the null cone and $N$ vanishes on it.
 
-*Proof.* The multiplicative maps preserve the null cone by the proposition, and the attractor is the closure of the union of the images of the seed. $\square$
+*Proof.* The multiplicative maps preserve the null cone by the proposition, and the attractor is the closure of the union of the images of the seed.
 
 ## The Elementary Systems
 
@@ -36,7 +36,7 @@ Throughout, $N$ is the indefinite norm of signature $(2,2)$ and $|\cdot|$ the Eu
 
 **Proposition (the Schottky limit sets are the attractors of the inverse branches).** Let $\Gamma$ be a Schottky group of $\operatorname{PSL}_2(\mathbb{R})$ with generators $\gamma_1^{\pm1},\dots,\gamma_g^{\pm1}$ pairing the boundary circles of $2g$ disjoint discs, and let $S_i$ be the inverse branches, restricted to the limit set. Then the $S_i$ contract the hyperbolic metric by a factor $\theta_i<1$ on the appropriate region, the limit set $\Lambda(\Gamma)$ is their attractor, and the open set condition holds with the union of the discs as the open set.
 
-*Proof.* The inverse branch of a Möbius pairing of two disjoint discs carries the exterior disc into the interior disc and is a hyperbolic contraction there, with the derivative controlled by the discs; the invariance $\Lambda=\bigcup_iS_i(\Lambda)$ is the defining property of the limit set of a Schottky group, and the disjointness of the discs gives the open set condition. This is the standard dictionary between the Schottky groups and the conformal iterated function systems, and it belongs to *Kleinian and Fuchsian Groups*, cited with *The Limit Sets of the Hyperbolic Lattices*. $\square$
+*Proof.* The inverse branch of a Möbius pairing of two disjoint discs carries the exterior disc into the interior disc and is a hyperbolic contraction there, with the derivative controlled by the discs; the invariance $\Lambda=\bigcup_iS_i(\Lambda)$ is the defining property of the limit set of a Schottky group, and the disjointness of the discs gives the open set condition. This is the standard dictionary between the Schottky groups and the conformal iterated function systems, and it belongs to *Kleinian and Fuchsian Groups*, cited with *The Limit Sets of the Hyperbolic Lattices*.
 
 **Theorem (the dimension is the pressure exponent, quoted).** For the conformal system of the inverse branches of a Schottky group the similarity dimension is replaced by the **Bowen pressure exponent**: the Hausdorff dimension of the limit set is the unique $s$ with
 
@@ -54,7 +54,7 @@ where $S_\omega$ is the composition of the branches of the word $\omega$ and $DS
 
 ## Worked Example
 
-**Example (three systems).** The dimensions were recomputed from the ratios.
+**Example (three systems).**
 
 **(a) The Cantor set of ratio $\tfrac13$.** Two maps: $2(1/3)^s=1$ gives $s=\log2/\log3=0.6309\ldots$; the attractor lies in the plane $\mathbb{C}_{e_1}$ and the open set condition holds.
 

@@ -103,7 +103,6 @@ $$
 P_{\mathrm{singlet}} = \frac{1}{4}\left(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\right).
 $$
 
-**Verification.** We check that this is idempotent and of trace $1$ under the tensor-product trace.
 
 *Idempotency.* Using $(x\otimes y)\circ(z\otimes w) = (x\circ z)\otimes(y\circ w)$ and the quaternion multiplication rules,
 

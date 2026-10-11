@@ -49,7 +49,6 @@ $$
 \int_{\mathbb{R}^n} \psi(x)\,\delta(\varphi(x))\,dx = \int_{\mathbb{R}} \delta(t)\left(\int_{\{\varphi = t\}} \frac{\psi}{|\nabla\varphi|}\, dS_t\right) dt = \int_S \frac{\psi}{|\nabla\varphi|}\, dS,
 $$
 because the coarea measure of the level set $\{\varphi = t\}$ is $dS_t/|\nabla\varphi|$. Multiplying both sides by $|\nabla\varphi|$ gives the stated identity.
-$\square$
 
 The identity is the reason a surface is described by a distribution at all: it converts the codimension-one geometry into a one-dimensional delta composed with the defining function, and it is the form in which a surface is entered into a differential operator. Its normalisation is the thing to check: for the unit sphere in $\mathbb{R}^3$, with $\varphi(x) = |x| - 1$ and $|\nabla\varphi| = 1$, the pairing of $\delta_S$ with the constant $1$ is the area $4\pi$.
 
@@ -61,7 +60,6 @@ $$
 $$
 
 *Proof.* The chain rule for the composition of a distribution with a smooth function whose gradient does not vanish gives $\partial_j H(\varphi) = \varphi_j\,(\delta \circ \varphi)$. By the proposition above, $\delta \circ \varphi = \delta_S/|\nabla\varphi|$, so $\partial_j H(\varphi) = \varphi_j \delta_S/|\nabla\varphi| = n_j \delta_S$.
-$\square$
 
 Thus $H(\varphi)$ is the indicator of the side $\{\varphi > 0\}$, its gradient is the **normal layer** $n\,\delta_S$, and the two-sided classical derivative of $H(\varphi)$ is zero. The layer is exactly the term produced by the discontinuity of the indicator, and the formula is the building block of the jump formula below.
 
@@ -89,7 +87,6 @@ $$
 \partial_j u = H(\varphi)\,\partial_j u^{+} + (1 - H(\varphi))\,\partial_j u^{-} + (u^{+} - u^{-})\,\partial_j H(\varphi).
 $$
 The first two terms are $\{\partial_j u\}$ and the last is $(u^{+} - u^{-})n_j \delta_S = [u]n_j\delta_S$ by the chain rule above.
-$\square$
 
 The formula is the distributional content of the divergence theorem with a discontinuous integrand, and it is valid whatever the orientation of $n$: reversing $n$ reverses both the sign of $n_j$ and the sign of $[u]$, since the two traces are interchanged.
 
@@ -108,7 +105,6 @@ $$
 $$
 
 *Proof.* The first two are the component forms of the jump formula. For the rotor, write $(\mathrm{rot}\,A)_i = \epsilon_{ijk}\partial_j A_k$; the jump formula makes the singular part $\epsilon_{ijk}[A_k]n_j\delta_S = (n \times [A])_i\delta_S$, which is the stated tangential vector.
-$\square$
 
 The divergence and the rotor therefore see the **normal** and the **tangential** parts of the jump respectively. The singular part of the divergence is a simple layer with density $n\cdot[A]$, and the singular part of the rotor is a tangential simple layer $n\times[A]$. The two are exactly the surface charge and the surface current of a discontinuous field.
 
@@ -120,7 +116,6 @@ $$
 $$
 
 *Proof.* Expand $u^{+}v^{+} - u^{-}v^{-} = u^{+}(v^{+} - v^{-}) + (u^{+} - u^{-})v^{-}$.
-$\square$
 
 There is no classical Leibniz rule for $[uv]$ alone, because the product rule involves both the jump and one of the traces; the formula above is the correct replacement and it reduces to $[uv] = [u]v$ when $v$ is continuous across $S$.
 
@@ -152,7 +147,6 @@ $$
 u = \sum_{k=0}^{N} g_k(x')\,\delta^{(k)}(x_n),
 $$
 with $g_k \in \mathcal{D}'(\mathbb{R}^{n-1})$; this is the structure theorem applied in the normal variable with the tangential dependence retained. Since $\delta^{(k)}(x_n) = \partial_n^{\,k}\delta(x_n)$ in these coordinates, the display is the stated expansion. The densities are unique because the coefficients of a distribution supported on a hyperplane are determined by its pairings with the test functions $\psi(x')x_n^{k}$.
-$\square$
 
 The expansion is the surface analogue of the statement that a distribution supported at a point is a combination of $\delta$ and its derivatives. Its order-zero term is the single layer, its order-one term the double layer, and the higher terms the layers of higher order. Every layer is thus a normal derivative of a single layer, and a differential operator produces layers only up to the order of the operator: a first-order operator can produce at most a single layer, a second-order operator at most a double layer.
 
@@ -164,7 +158,6 @@ $$
 $$
 
 *Proof.* Apply $\partial_j$ to the jump formula and sum over $j$. The term $\partial_j([u]n_j\delta_S)$ is $[u]\partial_n\delta_S$ when the density $[u]$ is extended constantly along $n$, and the term $[\partial_j u]n_j\delta_S$ is $[\partial_n u]\delta_S$. The remaining contributions vanish in the flat coordinates in which $n$ is constant.
-$\square$
 
 This is the layer decomposition of a second-order operator. For $\Delta u = f$ with $f$ continuous across $S$, the double-layer and single-layer coefficients must vanish separately, giving $[u] = 0$ and $[\partial_n u] = 0$: a piecewise harmonic function with a continuous Laplacian is continuous together with its normal derivative. If $f = g\delta_S$ has a single-layer source, the double layer still vanishes and the single-layer condition reads $[\partial_n u] = g$. This is the distributional form of the transmission conditions of an interface.
 
@@ -220,7 +213,6 @@ $$
 $$
 
 *Proof.* In flat local coordinates $S = \{x_n = 0\}$, $n = e_n$ and $\delta_S = \delta(x_n)$. For the first identity, $a_n = 0$ and $\partial_n a = 0$, so $\mathrm{div}\,a = \mathrm{div}_S\,a$ and, since the tangential derivatives of $\delta(x_n)$ vanish, $\mathrm{div}(a\delta_S) = (\mathrm{div}\,a)\delta_S = (\mathrm{div}_S a)\delta_S$. For the second, the normal component $n_n = 1$ contributes $\partial_n\delta(x_n) = \partial_n\delta_S$, and the tangential variation of $n$ contributes $(\mathrm{div}_S\,n)\delta_S$, which is the mean-curvature term and vanishes in the flat coordinates.
-$\square$
 
 Both identities are of first order: a tangential layer is differentiated into a tangential layer, and a normal layer is differentiated into a double layer plus a curvature layer. There is no double layer in the divergence of a surface current, and this is why the surface charge and the surface current are ordinary simple layers.
 
@@ -250,7 +242,6 @@ $$
 Consequently, if $n$ is non-characteristic, then $[u] = 0$ and the solution is continuous across $S$; if $n$ is characteristic, then $[u]$ lies in the kernel of $\sigma_P(n)$ and the jump is admissible.
 
 *Proof.* By the jump formula the singular part of $Pu$ is $(\sum_j a_j n_j)[u]\delta_S = \sigma_P(n)[u]\delta_S$. Since $f$ is continuous, its singular part vanishes, and the coefficient of the single layer $\delta_S$ must vanish.
-$\square$
 
 The dichotomy is the whole content of the wavefront analysis of a first-order system: a non-characteristic surface cannot carry a jump, and a characteristic surface can, its admissible jumps being the kernel of the principal symbol in the normal direction. The linear transport equation $u_t + a\,u_x = 0$ has $\sigma_P(\nu) = \nu_t + a\nu_x$, which vanishes on the lines $x = at$; the jump of a piecewise constant solution $u = u^{-}$ for $x < at$ and $u^{+}$ for $x > at$ is admissible and propagates along the characteristic without change.
 
@@ -263,7 +254,6 @@ $$
 where the displayed first term is the double layer. If $n$ is non-characteristic, then $[u] = 0$, and the single-layer condition then determines $[\partial_n u]$ in terms of the lower-order coefficients and the source; if $n$ is characteristic, the double-layer coefficient vanishes and the leading condition on $[u]$ disappears.
 
 *Proof.* Apply $\partial_j\partial_k$ to the jump formula and contract with $a_{jk}$. The double layer $\partial_n\delta_S$ arises from the second derivative of the single layer, and its coefficient is $\sum_{jk}a_{jk}n_jn_k[u] = \sigma_P(n)[u]$; the single layer $\delta_S$ collects the first derivatives of $u$ and the lower-order coefficients.
-$\square$
 
 The wave operator $\Box = \partial_t^2 - c^2\Delta$ on $\mathbb{R} \times \mathbb{R}^3$ has $\sigma_\Box(\nu) = \nu_t^2 - c^2|\nu|^2$, whose zero set is the light cone $|\nu_t| = c|\nu|$. A surface of constant phase is characteristic exactly when it moves at the speed $c$. On a non-characteristic surface a piecewise solution is continuous, with its normal derivative fixed by the source; on a characteristic surface the continuity is not forced at leading order, and the jumps are the waves that travel on the cone. The elliptic Laplacian has $\sigma_\Delta(\nu) = |\nu|^2 \neq 0$ for every real $\nu \neq 0$, so every surface is non-characteristic and both $[u]$ and $[\partial_n u]$ vanish for a continuous source; the example of the previous section is the flat-coordinate form of this statement.
 
@@ -279,7 +269,6 @@ $$
 $$
 
 *Proof.* The equation is the divergence of the vector field $(u, f(u))$. By the jump formula for the divergence in $\mathbb{R}^{n+1}$, applied in the spacetime variables, the singular part of the divergence is $[u]\nu_t\delta_S + \sum_j[f_j(u)]\nu_{x_j}\delta_S$, and it must vanish.
-$\square$
 
 For a plane shock $x = st$ in one space dimension, the normal direction is $(-s,1)$ in $(x,t)$ up to scale, and the condition becomes
 $$
@@ -361,7 +350,7 @@ and the generalized Fourier transform turns convolution into the algebra's produ
 $$
 \mathcal{F}[A * B] = \hat A \circ \hat B ,
 $$
-where the product on the right is the algebra's and the transform is the coefficientwise one of *Biquaternion Continuous Harmonic Analysis*. The second rule is why the algebra-valued transform is entrywise on the sum of two fields and not on their convolution: the product that survives is the non-commutative one. Both rules were checked on random biquaternion sequences with the finite circular convolution, the discrete avatar of the continuous statement. This is the algebra-valued case of the convolution theorem the harmonic-analysis articles develop, and it is the rule the shifted-gradient solution constructions of the electromagnetism articles use when they convolve a scalar potential with a source.
+where the product on the right is the algebra's and the transform is the coefficientwise one of *Biquaternion Continuous Harmonic Analysis*. The second rule is why the algebra-valued transform is entrywise on the sum of two fields and not on their convolution: the product that survives is the non-commutative one. This is the algebra-valued case of the convolution theorem the harmonic-analysis articles develop, and it is the rule the shifted-gradient solution constructions of the electromagnetism articles use when they convolve a scalar potential with a source.
 
 ## Summary
 

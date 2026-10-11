@@ -63,7 +63,6 @@ $$
 
 which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\partial^\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
 
-<!-- CONVENTION — graviton source sign: the source term carries a minus sign, Box hbar_{mu nu} = -kappa^2 T_{mu nu} with kappa^2 = 16 pi G, and this is the same physical statement as the classical companion *Linearized Gravity in Biquaternionic Form*, which writes Box hbar_{mu nu} = -(16 pi G / c^4) T_{mu nu}. The sign is fixed rather than a matter of taste because both the d'Alembertian and the trace-reversed perturbation reverse when the metric signature is reversed: in the series ict convention Box = d_{ict}^2 + Delta = grad^2 - d_t^2 and the Newtonian limit gives bar h_{00} = -4 Phi, while in the mostly-minus convention Box = d_t^2 - grad^2 and bar h_{00} = +4 Phi, so Box hbar_{mu nu} = -kappa^2 T_{mu nu} holds in both. Do not "repair" this to a plus sign, and do not infer the sign from the mostly-minus literature without carrying the sign of Box with it. -->
 
 ### The Gauge Symmetry as Coordinate Freedom
 
@@ -107,7 +106,7 @@ P_{ij,kl}\left(k_k\xi_l+k_l\xi_k\right) = 0 ,
 P_{ij,kl}\,\delta_{kl} = 0 ,
 $$
 
-idempotent, of trace two, and annihilating both the pure-gauge modes $k_i\xi_j+k_j\xi_i$ and the trace mode $\delta_{ij}$. All four properties were verified on the six-dimensional space of symmetric $3\times3$ tensors, with the wave vector along the third axis, to machine precision. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension
+idempotent, of trace two, and annihilating both the pure-gauge modes $k_i\xi_j+k_j\xi_i$ and the trace mode $\delta_{ij}$. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension
 
 $$
 6-4 = 2 ,

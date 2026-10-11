@@ -20,13 +20,13 @@ It is the **centralizer** of $A$ in itself, $Z(A) = C_{A}(A)$, where the central
 
 **Proposition.** $Z(A)$ is an additive subgroup of $A$, and $0 \in Z(A)$; if $A$ is unital then $1 \in Z(A)$.
 
-**Proof.** For $y, z \in Z(A)$ and any $x$, $(y + z)x = yx + zx = xy + xz = x(y + z)$ by the additivity of the product in each variable, and $(-z)x = -(zx) = -(xz) = x(-z)$, so the centre is an additive subgroup. The element $0$ commutes with everything. A unit $1$ has $1x = x = x1$ for every $x$. $\square$
+**Proof.** For $y, z \in Z(A)$ and any $x$, $(y + z)x = yx + zx = xy + xz = x(y + z)$ by the additivity of the product in each variable, and $(-z)x = -(zx) = -(xz) = x(-z)$, so the centre is an additive subgroup. The element $0$ commutes with everything. A unit $1$ has $1x = x = x1$ for every $x$.
 
 ### Closure under the Scalars
 
 **Proposition.** $\lambda z \in Z(A)$ for every $z \in Z(A)$ and every $\lambda \in R$. Hence $Z(A)$ is an $R$-submodule of $A$.
 
-**Proof.** For $z \in Z(A)$ and $x \in A$, $(\lambda z)x = \lambda(zx)$ by the first scalar rule, while $x(\lambda z) = \varsigma(\lambda)(xz)$ by the second, so the difference $(\lambda z)x - x(\lambda z)$ is $(\lambda - \varsigma(\lambda))zx$. Now the centrality of $z$ tested at the element $\lambda x$ reads $z(\lambda x) = (\lambda x)z$, that is $\varsigma(\lambda)(zx) = \lambda(xz)$, using the same two rules, and $xz = zx$ because $z$ is central; so $(\lambda - \varsigma(\lambda))zx = 0$ for every $x$, the difference vanishes, and $\lambda z$ is central. $\square$
+**Proof.** For $z \in Z(A)$ and $x \in A$, $(\lambda z)x = \lambda(zx)$ by the first scalar rule, while $x(\lambda z) = \varsigma(\lambda)(xz)$ by the second, so the difference $(\lambda z)x - x(\lambda z)$ is $(\lambda - \varsigma(\lambda))zx$. Now the centrality of $z$ tested at the element $\lambda x$ reads $z(\lambda x) = (\lambda x)z$, that is $\varsigma(\lambda)(zx) = \lambda(xz)$, using the same two rules, and $xz = zx$ because $z$ is central; so $(\lambda - \varsigma(\lambda))zx = 0$ for every $x$, the difference vanishes, and $\lambda z$ is central.
 
 **Remark.** The second scalar rule does not restrict the centre, and the reason is visible in the proof: the centrality of $z$ can be tested at the element $\lambda x$, and the two rules then agree on it. This is not the behaviour of the derivations. A multiple $\lambda D$ of a derivation is a derivation only when $(\lambda - \varsigma(\lambda))A \cdot D(A) = 0$, so the derivations of *Derivations of a Sesqualgebra* form a module over the fixed ring $R^{\varsigma}$ and over all of $R$ only in the bilinear case; the fixed ring governs the derivations, and it does not govern the centre.
 
@@ -34,7 +34,7 @@ It is the **centralizer** of $A$ in itself, $Z(A) = C_{A}(A)$, where the central
 
 **Proposition.** $z^{*} \in Z(A)$ for every $z \in Z(A)$, and the involution maps the centre onto itself.
 
-**Proof.** For $z \in Z(A)$ and any $x$, $z^{*}x = (x^{*}z)^{*} = (zx^{*})^{*} = xz^{*}$: the first and the last steps are the anti-multiplicativity of the involution, and the middle step is the centrality of $z$ at the element $x^{*}$. Since $*^{2} = \mathrm{id}$ the map is onto. $\square$
+**Proof.** For $z \in Z(A)$ and any $x$, $z^{*}x = (x^{*}z)^{*} = (zx^{*})^{*} = xz^{*}$: the first and the last steps are the anti-multiplicativity of the involution, and the middle step is the centrality of $z$ at the element $x^{*}$. Since $*^{2} = \mathrm{id}$ the map is onto.
 
 ### The Hermitian and the Skew-Hermitian Parts
 
@@ -46,7 +46,7 @@ z = z_{+} + z_{-}, \qquad z_{+} = \tfrac{1}{2}(z + z^{*}), \qquad z_{-} = \tfrac
 $$
 with $z_{+} \in Z(A) \cap H(A)$ and $z_{-} \in Z(A) \cap S(A)$.
 
-**Proof.** The centre is an $R$-submodule by the proposition on the scalars, hence closed under sums and under the halving, and the involution is additive and carries the centre to itself, so the two parts lie in the centre; they are fixed and anti-fixed by the involution, and the decomposition is the one of *Hermitian and Skew-Hermitian Elements*, unique when $2$ is invertible. $\square$
+**Proof.** The centre is an $R$-submodule by the proposition on the scalars, hence closed under sums and under the halving, and the involution is additive and carries the centre to itself, so the two parts lie in the centre; they are fixed and anti-fixed by the involution, and the decomposition is the one of *Hermitian and Skew-Hermitian Elements*, unique when $2$ is invertible.
 
 **Remark.** Each of the two parts is an $R$-submodule of the centre, and the involution acts on the first as the identity and on the second as the negation. When $2$ is invertible in $R$ the centre is the direct sum of the two parts, and in the associative case, where the centre is a commutative algebra, the involution acts on it as a $\pm 1$-grading.
 
@@ -54,7 +54,7 @@ with $z_{+} \in Z(A) \cap H(A)$ and $z_{-} \in Z(A) \cap S(A)$.
 
 **Proposition.** Let $A$ be associative. Then $Z(A)$ is a commutative subalgebra of $A$, and with the involution it is a commutative $*$-subalgebra.
 
-**Proof.** For $y, z \in Z(A)$ and any $x$, associativity gives $(yz)x = y(zx) = y(xz) = (yx)z = (xy)z = x(yz)$, so $yz \in Z(A)$; and $yz = zy$ because $z$ is central, so the centre is commutative. The stability under the involution is the proposition above, and the stability under the scalars is the proposition on the scalars, so the centre is a $*$-subalgebra. $\square$
+**Proof.** For $y, z \in Z(A)$ and any $x$, associativity gives $(yz)x = y(zx) = y(xz) = (yx)z = (xy)z = x(yz)$, so $yz \in Z(A)$; and $yz = zy$ because $z$ is central, so the centre is commutative. The stability under the involution is the proposition above, and the stability under the scalars is the proposition on the scalars, so the centre is a $*$-subalgebra.
 
 **Remark.** Associativity is used at the first step, $(yz)x = y(zx)$; without it the centre of a sesqualgebra need not be closed under the product, only the additive and the scalar statements surviving. There are small examples over the two-element field in which two central elements multiply to a non-central element.
 
@@ -62,7 +62,7 @@ with $z_{+} \in Z(A) \cap H(A)$ and $z_{-} \in Z(A) \cap S(A)$.
 
 **Proposition.** For $a \in A$ let $\mathrm{ad}_{a}(x) = ax - xa$ be the inner map of $a$. Then $\mathrm{ad}_{a} = 0$ exactly when $a \in Z(A)$.
 
-**Proof.** The map $\mathrm{ad}_{a}$ vanishes exactly when $ax = xa$ for every $x$, which is the centrality of $a$. $\square$
+**Proof.** The map $\mathrm{ad}_{a}$ vanishes exactly when $ax = xa$ for every $x$, which is the centrality of $a$.
 
 **Remark.** This identifies the centre with the kernel of the map $a \mapsto \mathrm{ad}_{a}$ of *Derivations of a Sesqualgebra*, so that, when the inner maps are derivations, the inner derivations are read on the quotient $A/Z(A)$: the centre is exactly that which the inner derivations do not see.
 
@@ -83,7 +83,7 @@ $$
 
 **Proposition.** $\operatorname{Ann}_{\ell}(z)$ and $\operatorname{Ann}_{r}(z)$ are $R$-submodules of $A$, and for a nonzero $z$ the annihilator $\operatorname{Ann}_{\ell}(z)$ is nonzero exactly when $z$ is a left zero divisor while $\operatorname{Ann}_{r}(z)$ is nonzero exactly when $z$ is a right zero divisor. If $A$ is associative, $\operatorname{Ann}_{\ell}(z)$ is a right ideal and $\operatorname{Ann}_{r}(z)$ is a left ideal.
 
-**Proof.** Both sets are additive, since the product is additive in each variable. For the scalars, $z(\lambda w) = \varsigma(\lambda)(zw) = 0$ when $zw = 0$ by the second rule, and $(\lambda w)z = \lambda(wz) = 0$ when $wz = 0$ by the first rule; so the two are $R$-submodules. For the ideals, if $w \in \operatorname{Ann}_{\ell}(z)$ and $a \in A$ then $z(wa) = (zw)a = 0$ by associativity, so $wa \in \operatorname{Ann}_{\ell}(z)$ and the left annihilator is a right ideal, and dually $(aw)z = a(wz) = 0$ makes the right annihilator a left ideal. The nonvanishing statements restate the definitions. $\square$
+**Proof.** Both sets are additive, since the product is additive in each variable. For the scalars, $z(\lambda w) = \varsigma(\lambda)(zw) = 0$ when $zw = 0$ by the second rule, and $(\lambda w)z = \lambda(wz) = 0$ when $wz = 0$ by the first rule; so the two are $R$-submodules. For the ideals, if $w \in \operatorname{Ann}_{\ell}(z)$ and $a \in A$ then $z(wa) = (zw)a = 0$ by associativity, so $wa \in \operatorname{Ann}_{\ell}(z)$ and the left annihilator is a right ideal, and dually $(aw)z = a(wz) = 0$ makes the right annihilator a left ideal. The nonvanishing statements restate the definitions.
 
 **Remark.** The scalars behave here better than on the derivations: a scalar entering an annihilator is pulled out by one of the two rules as a factor of zero, so no fixed ring appears, and the annihilators are $R$-submodules with no hypothesis. The difference is that in the annihilator the product is already zero, and the scalar meets a zero product rather than a product of two arbitrary elements.
 
@@ -91,7 +91,7 @@ $$
 
 **Proposition.** For $z, w \in A$ one has $w \in \operatorname{Ann}_{\ell}(z)$ exactly when $w^{*} \in \operatorname{Ann}_{r}(z^{*})$; hence $\operatorname{Ann}_{\ell}(z)^{*} = \operatorname{Ann}_{r}(z^{*})$. In particular $z$ is a left zero divisor exactly when $z^{*}$ is a right zero divisor, so the involution maps the left zero divisors onto the right ones.
 
-**Proof.** The element $zw$ vanishes exactly when $(zw)^{*} = w^{*}z^{*}$ vanishes, by the bijectivity of the involution and the anti-multiplicativity, and this is the condition $w^{*} \in \operatorname{Ann}_{r}(z^{*})$. Applying this to $*^{2} = \mathrm{id}$ gives the equality of sets, and the statement on the zero divisors is the nonvanishing form. $\square$
+**Proof.** The element $zw$ vanishes exactly when $(zw)^{*} = w^{*}z^{*}$ vanishes, by the bijectivity of the involution and the anti-multiplicativity, and this is the condition $w^{*} \in \operatorname{Ann}_{r}(z^{*})$. Applying this to $*^{2} = \mathrm{id}$ gives the equality of sets, and the statement on the zero divisors is the nonvanishing form.
 
 **Remark.** An element is a left zero divisor exactly when its conjugate is a right one; the two one-sided classes are exchanged by the involution, and a one-sided zero divisor therefore comes in a conjugate pair, one on each side.
 
@@ -101,7 +101,7 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 **Proposition.** $\operatorname{Ann}^{\star}_{\ell}(z) = \operatorname{Ann}_{\ell}(z)^{*} = \operatorname{Ann}_{r}(z^{*})$, and $z$ is a left zero divisor for $\star$ exactly when it is a left zero divisor for the product.
 
-**Proof.** The identity $z \star w = zw^{*}$ shows that $z \star w = 0$ exactly when $w^{*} \in \operatorname{Ann}_{\ell}(z)$, that is $w \in \operatorname{Ann}_{\ell}(z)^{*}$, and the equality with $\operatorname{Ann}_{r}(z^{*})$ is the proposition above. Since the involution is bijective, the set $\{w : zw^{*} = 0\}$ is nonzero exactly when $\{u : zu = 0\}$ is, which is the statement on the zero divisors. $\square$
+**Proof.** The identity $z \star w = zw^{*}$ shows that $z \star w = 0$ exactly when $w^{*} \in \operatorname{Ann}_{\ell}(z)$, that is $w \in \operatorname{Ann}_{\ell}(z)^{*}$, and the equality with $\operatorname{Ann}_{r}(z^{*})$ is the proposition above. Since the involution is bijective, the set $\{w : zw^{*} = 0\}$ is nonzero exactly when $\{u : zu = 0\}$ is, which is the statement on the zero divisors.
 
 **Remark.** The conjugate-linear slot of the derived operation does not change which elements are one-sided zero divisors, because the involution is bijective and merely renames the partner; what it changes is the side the partner is taken on, the $\star$-annihilator being the conjugate of the annihilator of the product. The same statement holds on the right, with $\operatorname{Ann}^{\star}_{r}(z) = \operatorname{Ann}_{\ell}(z^{*})$.
 
@@ -111,7 +111,7 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 **Proposition.** Let $A$ be associative and let $z \in Z(A)$. Then $\operatorname{Ann}_{\ell}(z) = \operatorname{Ann}_{r}(z)$, and it is a two-sided ideal of $A$. Consequently $z$ is a left zero divisor exactly when it is a right one, and it is a two-sided zero divisor or none.
 
-**Proof.** For $z$ central, $zw = wz$ for every $w$, so the two annihilators are the same set. For $w$ in it and $a \in A$, $z(aw) = (za)w = (az)w = a(zw) = 0$ and $z(wa) = (zw)a = 0$, so the set is closed under both the left and the right multiplication by $A$, a two-sided ideal. The statement on the sides is the definition read with $z$ central. $\square$
+**Proof.** For $z$ central, $zw = wz$ for every $w$, so the two annihilators are the same set. For $w$ in it and $a \in A$, $z(aw) = (za)w = (az)w = a(zw) = 0$ and $z(wa) = (zw)a = 0$, so the set is closed under both the left and the right multiplication by $A$, a two-sided ideal. The statement on the sides is the definition read with $z$ central.
 
 ### The Annihilator of the Algebra
 
@@ -119,7 +119,7 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 **Proposition.** Let $A$ be associative. Then $\ell(A)$ and $r(A)$ are two-sided ideals of $A$, and $r(A) = \ell(A)^{*}$. An algebra is of **full type**, in the sense of *Sesqualgebras*, only when both annihilators vanish.
 
-**Proof.** If $wA = 0$ and $a, b \in A$ then $(aw)b = a(wb) = 0$ and $(wa)b = w(ab) = 0$ by associativity, so $\ell(A)$ is a two-sided ideal, and dually for $r(A)$. For the conjugation, $w \in \ell(A)$ means $wA = 0$, that is $(wA)^{*} = A^{*}w^{*} = Aw^{*} = 0$, so $w^{*} \in r(A)$ and $\ell(A)^{*} = r(A)$. The last statement restates the definition of the full type. $\square$
+**Proof.** If $wA = 0$ and $a, b \in A$ then $(aw)b = a(wb) = 0$ and $(wa)b = w(ab) = 0$ by associativity, so $\ell(A)$ is a two-sided ideal, and dually for $r(A)$. For the conjugation, $w \in \ell(A)$ means $wA = 0$, that is $(wA)^{*} = A^{*}w^{*} = Aw^{*} = 0$, so $w^{*} \in r(A)$ and $\ell(A)^{*} = r(A)$. The last statement restates the definition of the full type.
 
 **Remark.** The left annihilator is the joint kernel of the left multiplications $L_{a}$ of *The Left and Right Multiplication Operators of a Sesqualgebra*, and the annihilators are two-sided ideals; their vanishing is the annihilator clause in the definition of the full type of *Sesqualgebras*.
 
@@ -127,7 +127,7 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 **Theorem.** For $z \in Z(A)$ and every $\lambda \in R$ one has $(\lambda - \varsigma(\lambda))\,zA = 0$. Consequently, if some $\lambda - \varsigma(\lambda)$ acts injectively on $A$, then $zA = 0$, and by centrality $Az = 0$, so that $Z(A) \subseteq \ell(A) \cap r(A)$; under that hypothesis a unital $A$, or one with zero annihilator, has $Z(A) = 0$.
 
-**Proof.** For $x \in A$ the centrality of $z$ at the element $\lambda x$ gives $z(\lambda x) = (\lambda x)z$, that is $\varsigma(\lambda)(zx) = \lambda(xz) = \lambda(zx)$ by the two scalar rules and the centrality of $z$; hence $(\lambda - \varsigma(\lambda))zx = 0$. If $\lambda - \varsigma(\lambda)$ is injective then $zx = 0$ for every $x$, and $Az = zA = 0$ by centrality. A unit lies in $A$, so $z = z1 = 0$, and a zero annihilator gives the same. $\square$
+**Proof.** For $x \in A$ the centrality of $z$ at the element $\lambda x$ gives $z(\lambda x) = (\lambda x)z$, that is $\varsigma(\lambda)(zx) = \lambda(xz) = \lambda(zx)$ by the two scalar rules and the centrality of $z$; hence $(\lambda - \varsigma(\lambda))zx = 0$. If $\lambda - \varsigma(\lambda)$ is injective then $zx = 0$ for every $x$, and $Az = zA = 0$ by centrality. A unit lies in $A$, so $z = z1 = 0$, and a zero annihilator gives the same.
 
 **Corollary.** Over $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation, the scalar $i - \varsigma(i) = 2i$ acts injectively on every complex module, so the centre of a sesqualgebra over $(\mathbb{C},\varsigma)$ is contained in the annihilator of $A$. A unital sesqualgebra over $(\mathbb{C},\varsigma)$ has zero centre.
 
@@ -139,13 +139,13 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 **Proposition.** Let $A = M_{n}(\mathbb{R})$ over the datum $(\mathbb{R},\mathrm{id})$ with the transpose as the involution and $n \geq 2$. Then the centre is the set of the scalar matrices, the zero divisors are the nonzero singular matrices, every nonsingular matrix is a unit, and the centre has no zero divisors.
 
-**Proof.** A matrix $z$ is central exactly when $zX = Xz$ for every $X$, which forces $z$ to be diagonal with all the diagonal entries equal, that is $z = cI_{n}$; the standard computation is the one of *Centre, Units, Zero Divisors and Division Algebras*. A nonzero matrix is singular exactly when it annihilates a nonzero vector, that is, is a left zero divisor, and for the matrices the left and the right zero divisors coincide by the transpose; the nonsingular matrices are the units, and a nonzero scalar matrix is nonsingular. $\square$
+**Proof.** A matrix $z$ is central exactly when $zX = Xz$ for every $X$, which forces $z$ to be diagonal with all the diagonal entries equal, that is $z = cI_{n}$; the standard computation is the one of *Centre, Units, Zero Divisors and Division Algebras*. A nonzero matrix is singular exactly when it annihilates a nonzero vector, that is, is a left zero divisor, and for the matrices the left and the right zero divisors coincide by the transpose; the nonsingular matrices are the units, and a nonzero scalar matrix is nonsingular.
 
 ### The Twisted Matrix Algebra
 
 **Proposition.** Let $A = M_{n}(\mathbb{C})$ with the conjugate transpose $\dagger$, the product $x \star y = xy^{\dagger}$ and the datum $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation, and let $n \geq 2$. Then the centre is zero, the left $\star$-zero divisors are the nonzero singular matrices, and there is no unit for the product.
 
-**Proof.** The product is the derived operation of the involutive algebra $(M_{n}(\mathbb{C}),\dagger)$, and the annihilator of $A$ is zero, since $w \star A = 0$ gives $w = w \star 1 = w1^{\dagger} = 0$. The centre is therefore zero by the theorem, the corollary supplying the injectivity of $2i$. A matrix $z$ is a left $\star$-zero divisor exactly when $z \star w = zw^{\dagger} = 0$ for some nonzero $w$, that is $zu = 0$ for some nonzero $u = w^{\dagger}$, which is the singularity of $z$, by the proposition on the derived operation. The unit $1$ is a right unit but not a left one, since $1 \star w = w^{\dagger}$, so the product has no two-sided unit and the corollary on the unital case does not apply. $\square$
+**Proof.** The product is the derived operation of the involutive algebra $(M_{n}(\mathbb{C}),\dagger)$, and the annihilator of $A$ is zero, since $w \star A = 0$ gives $w = w \star 1 = w1^{\dagger} = 0$. The centre is therefore zero by the theorem, the corollary supplying the injectivity of $2i$. A matrix $z$ is a left $\star$-zero divisor exactly when $z \star w = zw^{\dagger} = 0$ for some nonzero $w$, that is $zu = 0$ for some nonzero $u = w^{\dagger}$, which is the singularity of $z$, by the proposition on the derived operation. The unit $1$ is a right unit but not a left one, since $1 \star w = w^{\dagger}$, so the product has no two-sided unit and the corollary on the unital case does not apply.
 
 **Remark.** This is the algebra whose derivations are nonempty in *Derivations of a Sesqualgebra*: its centre is zero, so the map $a \mapsto \mathrm{ad}_{a}$ is injective here, and the centre, being the kernel of that map, cuts nothing.
 
@@ -153,13 +153,13 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 **Proposition.** Let $A = \mathbb{H}$ over the datum $(\mathbb{R},\mathrm{id})$ with quaternion conjugation and the ordinary product. Then the centre is the set of the real quaternions, there are no zero divisors, and every nonzero quaternion is a unit.
 
-**Proof.** The centre of $\mathbb{H}$ is $\mathbb{R}$ because $\mathbb{H}$ is a central division algebra over $\mathbb{R}$; a nonzero quaternion has a two-sided inverse $q^{-1} = q^{*}/(qq^{*})$ with $qq^{*}$ a nonzero real number, so it is a unit, and $A$ is a domain. $\square$
+**Proof.** The centre of $\mathbb{H}$ is $\mathbb{R}$ because $\mathbb{H}$ is a central division algebra over $\mathbb{R}$; a nonzero quaternion has a two-sided inverse $q^{-1} = q^{*}/(qq^{*})$ with $qq^{*}$ a nonzero real number, so it is a unit, and $A$ is a domain.
 
 ### The Sesquilinear Field
 
 **Proposition.** Let $A = \mathbb{C}$ over the datum $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation and the product $x \star y = x\bar y$. Then the centre is zero, there are no zero divisors, and there is no unit.
 
-**Proof.** The centre: $z \star x = x \star z$ reads $z\bar x = x\bar z$ for every $x$; at $x = 1$ it gives $z = \bar z$, so $z$ is real, and at $x = i$ it gives $z\,\overline{i} = i\bar z$, that is $-iz = iz$, so $z = 0$. No zero divisors, since $z\bar x = 0$ forces $z = 0$ or $x = 0$. No unit: a two-sided unit $u$ satisfies $x \star u = x$ for every $x$, and at $x = 1$ this reads $\bar u = 1$, so $u = 1$, and then $1 \star x = \bar x$ differs from $x$ for a non-real $x$. $\square$
+**Proof.** The centre: $z \star x = x \star z$ reads $z\bar x = x\bar z$ for every $x$; at $x = 1$ it gives $z = \bar z$, so $z$ is real, and at $x = i$ it gives $z\,\overline{i} = i\bar z$, that is $-iz = iz$, so $z = 0$. No zero divisors, since $z\bar x = 0$ forces $z = 0$ or $x = 0$. No unit: a two-sided unit $u$ satisfies $x \star u = x$ for every $x$, and at $x = 1$ this reads $\bar u = 1$, so $u = 1$, and then $1 \star x = \bar x$ differs from $x$ for a non-real $x$.
 
 **Remark.** The field shows the twisted behaviour in its purest form: the centre is zero but the algebra is a domain, so the vanishing of the centre is not a degeneracy of the zero divisors but the effect of the injectivity of $2i$. The two notions are independent, and it is the annihilator that the theorem controls.
 
@@ -167,7 +167,7 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 **Proposition.** Let $A = \mathbb{C}^{2}$ with the product $(x_{1},x_{2}) \star (y_{1},y_{2}) = (x_{1}\bar y_{1}, 0)$, the involution $(x_{1},x_{2})^{*} = (\bar x_{1},\bar x_{2})$ and the datum $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation. Then the centre is $\{(0,q) : q \in \mathbb{C}\}$, a nonzero subspace, and it is precisely the annihilator of $A$.
 
-**Proof.** The product is additive in each variable, $(\lambda x) \star y = (\lambda x_{1}\bar y_{1}, 0) = \lambda(x \star y)$, and $x \star (\lambda y) = (x_{1}\overline{\lambda y_{1}}, 0) = \bar\lambda\,(x \star y) = \varsigma(\lambda)(x \star y)$, so the two scalar rules hold. The involution is additive, of order two, $\varsigma$-semilinear, and anti-multiplicative, since $(x \star y)^{*} = (\bar x_{1}y_{1}, 0)$ while $y^{*} \star x^{*} = (\bar y_{1}\overline{\bar x_{1}}, 0) = (\bar y_{1}x_{1}, 0)$ and $\mathbb{C}$ is commutative. For the centre, $z \star x = (z_{1}\bar x_{1}, 0)$ and $x \star z = (x_{1}\bar z_{1}, 0)$, and the equality for every $x$ forces $z_{1}\bar x_{1} = x_{1}\bar z_{1}$; at $x_{1} = 1$ this gives $z_{1} = \bar z_{1}$, and at $x_{1} = i$ it gives $-iz_{1} = iz_{1}$, so $z_{1} = 0$ and the centre is $\{(0,q)\}$. The annihilator is $\{w : wA = 0\}$, that is $w_{1}\bar x_{1} = 0$ for every $x_{1}$, which is $w_{1} = 0$, the same set. $\square$
+**Proof.** The product is additive in each variable, $(\lambda x) \star y = (\lambda x_{1}\bar y_{1}, 0) = \lambda(x \star y)$, and $x \star (\lambda y) = (x_{1}\overline{\lambda y_{1}}, 0) = \bar\lambda\,(x \star y) = \varsigma(\lambda)(x \star y)$, so the two scalar rules hold. The involution is additive, of order two, $\varsigma$-semilinear, and anti-multiplicative, since $(x \star y)^{*} = (\bar x_{1}y_{1}, 0)$ while $y^{*} \star x^{*} = (\bar y_{1}\overline{\bar x_{1}}, 0) = (\bar y_{1}x_{1}, 0)$ and $\mathbb{C}$ is commutative. For the centre, $z \star x = (z_{1}\bar x_{1}, 0)$ and $x \star z = (x_{1}\bar z_{1}, 0)$, and the equality for every $x$ forces $z_{1}\bar x_{1} = x_{1}\bar z_{1}$; at $x_{1} = 1$ this gives $z_{1} = \bar z_{1}$, and at $x_{1} = i$ it gives $-iz_{1} = iz_{1}$, so $z_{1} = 0$ and the centre is $\{(0,q)\}$. The annihilator is $\{w : wA = 0\}$, that is $w_{1}\bar x_{1} = 0$ for every $x_{1}$, which is $w_{1} = 0$, the same set.
 
 **Remark.** This is the case the theorem allows: the centre is nonzero and it is annihilating, so the algebra is not of full type. Compared with the algebra on the same module, whose product is commutative and whose centre is therefore the whole algebra, the twist cuts the centre down to $\{(0,q)\}$.
 

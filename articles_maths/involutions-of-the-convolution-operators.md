@@ -82,7 +82,7 @@ $$
 =\overline{Rk}*\overline{Rl}=k^**l^*=l^**k^* ,
 $$
 the last equality by the commutativity of the convolution, and the products exchange as the anti-automorphism
-requires. The norm identity is the substitution $x\mapsto-x$. $\blacksquare$
+requires. The norm identity is the substitution $x\mapsto-x$.
 
 ## The Adjoint of a Convolution Operator
 
@@ -105,7 +105,7 @@ $$
 and substituting $w=y+z$ in the inner integral gives
 $\int\overline{k(w-y)}g(w)\,dw=(T_{k^*}g)(y)$, so $\langle T_kf,g\rangle=\langle f,T_{k^*}g\rangle$ and
 $T_k^\dagger=T_{k^*}$ by the uniqueness of the adjoint; the kernel statement is the substitution
-$K(x,y)=k(x-y)$. $\blacksquare$
+$K(x,y)=k(x-y)$.
 
 ### The Involution on the Operators
 
@@ -124,7 +124,7 @@ representation is a $\ast$-representation.
 **Proof.** The adjoint identity is the theorem above; the multiplicative identity is the associativity of
 the convolution, $k*(l*f)=(k*l)*f$; the anti-multiplicativity follows from the anti-automorphism
 $(k*l)^*=l^**k^*$ and the multiplicative identity. The agreement of the two layers is the identity
-$T_{k^*}=T_k^\dagger$ itself. $\blacksquare$
+$T_{k^*}=T_k^\dagger$ itself.
 
 **Example (the Dirac profiles).** The profile $\delta_a$ gives the shift $T_{\delta_a}=L_a$, and
 $\delta_a^*=\delta_{-a}$, so $L_a^\dagger=L_{-a}$, as the translation invariance of the pairing requires.
@@ -153,7 +153,7 @@ $\mathcal F^{-1}M_{\hat k}\mathcal F$ is $\mathcal F^{-1}M_{\hat k}^\dagger\math
 multiplication operator is the multiplication by the conjugate function. The identity
 $\widehat{k^*}=\overline{\hat k}$ is the conjugate-symmetry theorem of *The Fourier Transform and Conjugate
 Symmetry*; the self-adjoint and skew-adjoint cases are the reality and the pure-imaginariness of $\hat k$, and
-normality is automatic for a multiplication operator. $\blacksquare$
+normality is automatic for a multiplication operator.
 
 **Example (the Hilbert and Riesz transforms).** The Hilbert transform of *The Fourier Transform and
 Conjugate Symmetry* is convolution with the kernel $1/(\pi x)$ on $\mathbb R$ and has the multiplier
@@ -176,7 +176,7 @@ under the Fourier transform it is the group of unimodular functions that arise a
 the statement is the unitarity of $M_{\hat k}$ transported by the unitary $\mathcal F$; the group property is
 composition and the invariance of unimodularity, and the conjugation identifies it with the group of
 unimodular multipliers. For the finite and discrete instances the same proof applies with the discrete
-Fourier transform, and the group is the unitary group of the finite convolution algebra. $\blacksquare$
+Fourier transform, and the group is the unitary group of the finite convolution algebra.
 
 **Example (the discrete and periodic cases).** On $\mathbb Z$ the involution is $k^*(n)=\overline{k(-n)}$
 and the multiplier is the function on the circle $\hat k(\theta)=\sum_nk(n)e^{-in\theta}$; the shift

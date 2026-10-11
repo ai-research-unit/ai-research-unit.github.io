@@ -16,7 +16,7 @@ The article assumes *Extension of Scalars* for $A\otimes_{\mathbb{R}}\mathbb{C}$
 
 **Proposition.** $\dim_{\mathbb{C}}A_{\mathbb{C}} = \dim_{\mathbb{R}}A$, the map $a\mapsto a\otimes1$ is an $\mathbb{R}$-algebra isomorphism $A\to A\otimes1$, and $A_{\mathbb{C}} = (A\otimes1)\oplus i(A\otimes1)$ as real algebras, where $i = 1\otimes i$.
 
-*Proof.* The tensor product of an $n$-dimensional real space with $\mathbb{C}$ is an $n$-dimensional complex space; the products are read on the decomposable elements; and $\lambda = \mathrm{Re}\,\lambda + i\,\mathrm{Im}\,\lambda$ gives the direct sum. $\square$
+*Proof.* The tensor product of an $n$-dimensional real space with $\mathbb{C}$ is an $n$-dimensional complex space; the products are read on the decomposable elements; and $\lambda = \mathrm{Re}\,\lambda + i\,\mathrm{Im}\,\lambda$ gives the direct sum.
 
 ### The Conjugation
 
@@ -40,7 +40,7 @@ $$
 A_{\mathbb{C}}^\sigma = A\otimes1 \cong A .
 $$
 
-*Proof.* On decomposable elements $\sigma((a\otimes\lambda)(b\otimes\mu)) = \sigma(ab\otimes\lambda\mu) = ab\otimes\bar\lambda\bar\mu = (a\otimes\bar\lambda)(b\otimes\bar\mu) = \sigma(a\otimes\lambda)\sigma(b\otimes\mu)$; additivity and the scalar rule are immediate, and $\sigma^2 = \mathrm{id}$ because $c^2 = \mathrm{id}$. An element $x = \sum a_j\otimes\lambda_j$ is fixed iff $\sum a_j\otimes(\lambda_j - \bar\lambda_j) = 0$; taking $a_j$ linearly independent forces each $\lambda_j = \bar\lambda_j$, so the fixed set is $A\otimes\mathbb{R} = A\otimes1$. $\square$
+*Proof.* On decomposable elements $\sigma((a\otimes\lambda)(b\otimes\mu)) = \sigma(ab\otimes\lambda\mu) = ab\otimes\bar\lambda\bar\mu = (a\otimes\bar\lambda)(b\otimes\bar\mu) = \sigma(a\otimes\lambda)\sigma(b\otimes\mu)$; additivity and the scalar rule are immediate, and $\sigma^2 = \mathrm{id}$ because $c^2 = \mathrm{id}$. An element $x = \sum a_j\otimes\lambda_j$ is fixed iff $\sum a_j\otimes(\lambda_j - \bar\lambda_j) = 0$; taking $a_j$ linearly independent forces each $\lambda_j = \bar\lambda_j$, so the fixed set is $A\otimes\mathbb{R} = A\otimes1$.
 
 **Corollary.** The conjugation is the semilinear involution of the complexification that has $A$ as its self-adjoint part; the map $A\mapsto(A_{\mathbb{C}},\sigma)$ is a functor from the real algebras to the complex algebras with a conjugation, and the decomposition $A_{\mathbb{C}} = A\oplus iA$ is the decomposition into the self-adjoint and the skew parts.
 
@@ -52,7 +52,7 @@ $$
 
 **Theorem.** The real forms of a complex algebra $B$ are in bijection with the conjugations of $B$, the bijection sending a conjugation $\sigma$ to its fixed algebra $B^\sigma = \{x : \sigma(x) = x\}$ and a real form $A$ to the conjugation of $A_{\mathbb{C}}\cong B$ constructed above. Under the bijection $A\otimes_{\mathbb{R}}\mathbb{C} = B$, the two constructions are inverse.
 
-*Proof.* If $\sigma$ is a conjugation, then $\sigma(\lambda x) = \bar\lambda\sigma(x)$ makes $B$ a complex space on which $\sigma$ is antilinear; the fixed set $B^\sigma$ is a real subspace with $B = B^\sigma\oplus iB^\sigma$, so the multiplication $B^\sigma\otimes_{\mathbb{R}}\mathbb{C}\to B$ is a real-linear isomorphism and a complex-algebra isomorphism. Conversely a real form gives the conjugation of its complexification as above, and the fixed set recovers the real form. The two constructions are inverse by the computation of the fixed set in the theorem above. $\square$
+*Proof.* If $\sigma$ is a conjugation, then $\sigma(\lambda x) = \bar\lambda\sigma(x)$ makes $B$ a complex space on which $\sigma$ is antilinear; the fixed set $B^\sigma$ is a real subspace with $B = B^\sigma\oplus iB^\sigma$, so the multiplication $B^\sigma\otimes_{\mathbb{R}}\mathbb{C}\to B$ is a real-linear isomorphism and a complex-algebra isomorphism. Conversely a real form gives the conjugation of its complexification as above, and the fixed set recovers the real form. The two constructions are inverse by the computation of the fixed set in the theorem above.
 
 **Proposition (uniqueness).** Two real forms $A_1, A_2$ of $B$ coincide exactly when their conjugations coincide; the set of the real forms of $B$ is thus in bijection with the set of the conjugations of $B$, and a form is **split** when its conjugation is inner.
 
@@ -66,7 +66,7 @@ $$
 
 are inverse equivalences between the category of complex $B$-modules with a semilinear involution $\tau$ compatible with $\sigma$ and the category of real $A$-modules.
 
-*Proof.* This is *Commutative Algebras with an Involution* read with the centre and the scalars specialised to $\mathbb{C}/\mathbb{R}$; the quadratic model is the one with $t = i$, $t^2 = -1 \in \mathbb{R}$, under which the descent applies because $\mathbb{C}$ is faithfully flat and free of rank two over $\mathbb{R}$. The same computation $M = H(M)\oplus iH(M)$ gives the inverse. $\square$
+*Proof.* This is *Commutative Algebras with an Involution* read with the centre and the scalars specialised to $\mathbb{C}/\mathbb{R}$; the quadratic model is the one with $t = i$, $t^2 = -1 \in \mathbb{R}$, under which the descent applies because $\mathbb{C}$ is faithfully flat and free of rank two over $\mathbb{R}$. The same computation $M = H(M)\oplus iH(M)$ gives the inverse.
 
 ## Descent of the Structure
 
@@ -74,17 +74,17 @@ are inverse equivalences between the category of complex $B$-modules with a semi
 
 **Proposition.** Let $I$ be an ideal of $B$ stable under the conjugation $\sigma$, so $\sigma(I) = I$. Then $I\cap A$ is an ideal of $A$, $\sigma$ descends to the quotient $B/I$, and the real form of $B/I$ is $A/(I\cap A)$ up to the canonical identification.
 
-*Proof.* Stability gives the induced involution on the quotient by *Involutive Algebras*; the fixed subalgebra of the quotient is the quotient of the fixed subalgebra by the fixed part of the ideal. $\square$
+*Proof.* Stability gives the induced involution on the quotient by *Involutive Algebras*; the fixed subalgebra of the quotient is the quotient of the fixed subalgebra by the fixed part of the ideal.
 
 **Proposition.** If $A_1, A_2$ are real algebras, the complexification of $A_1\times A_2$ is the product of the complexifications, with the componentwise conjugation; for a tensor product of real algebras, $(A_1\otimes_{\mathbb{R}}A_2)_{\mathbb{C}}\cong (A_1)_{\mathbb{C}}\otimes_{\mathbb{C}}(A_2)_{\mathbb{C}}$ with the conjugation $\sigma_1\otimes\sigma_2$.
 
-*Proof.* The tensor product is a quotient of the free product and the constructions commute with the scalar extension. $\square$
+*Proof.* The tensor product is a quotient of the free product and the constructions commute with the scalar extension.
 
 ### The Descent of an Automorphism and a Derivation
 
 **Proposition.** Let $\varphi$ be an automorphism of $B$ commuting with the conjugation $\sigma$, so $\varphi\sigma = \sigma\varphi$. Then $\varphi$ preserves the real form $A = B^\sigma$, its restriction $\varphi|_A$ is an automorphism of $A$, and $\varphi$ is the complexification of $\varphi|_A$. Let $D$ be a $\mathbb{C}$-linear derivation of $B$ with $D\sigma = \sigma D$; then $D$ preserves $A$, its restriction is an $\mathbb{R}$-linear derivation of $A$, and $D$ is the complexification of its restriction.
 
-*Proof.* A $\sigma$-equivariant map preserves the fixed set, hence restricts to $A$; the maps $\varphi$ and $D$ are $\mathbb{C}$-linear, so they are determined by their restrictions to the real part $A$ of $B = A\oplus iA$, and the scalar extension of a $\mathbb{C}$-linear map is the map itself. The derivation property and the multiplicativity are inherited by the restriction. $\square$
+*Proof.* A $\sigma$-equivariant map preserves the fixed set, hence restricts to $A$; the maps $\varphi$ and $D$ are $\mathbb{C}$-linear, so they are determined by their restrictions to the real part $A$ of $B = A\oplus iA$, and the scalar extension of a $\mathbb{C}$-linear map is the map itself. The derivation property and the multiplicativity are inherited by the restriction.
 
 ## Examples
 
@@ -94,7 +94,7 @@ are inverse equivalences between the category of complex $B$-modules with a semi
 
 **Example (a conjugate real form).** Let $\sigma$ be a conjugation of $B$ and let $v \in B^\times$ satisfy that $v^{-1}\sigma(v)$ is central. Then $\sigma_v(x) = v\sigma(x)v^{-1}$ is again a conjugation, and its real form is the conjugate $v\,B^\sigma\,v^{-1}$ of $B^\sigma$. The conjugations of $B$ are thus acted on by the units, and the classification of the real forms up to conjugation is the algebra reading of the first Galois cohomology of the involution, *Galois Cohomology*.
 
-*Proof.* $\sigma_v^2(x) = v\sigma(v)\,x\,\sigma(v)^{-1}v^{-1}$, which is the identity for all $x$ exactly when $v\sigma(v)$ is central; and $\sigma_v(v\,y\,v^{-1}) = v\,\sigma(v y v^{-1})\,v^{-1} = v\sigma(v)\,\sigma(y)\,\sigma(v)^{-1}v^{-1} = v\,y\,v^{-1}$ for $y \in B^\sigma$, using the centrality of $v^{-1}\sigma(v)$ to move $v$ past $\sigma(y)$. $\square$
+*Proof.* $\sigma_v^2(x) = v\sigma(v)\,x\,\sigma(v)^{-1}v^{-1}$, which is the identity for all $x$ exactly when $v\sigma(v)$ is central; and $\sigma_v(v\,y\,v^{-1}) = v\,\sigma(v y v^{-1})\,v^{-1} = v\sigma(v)\,\sigma(y)\,\sigma(v)^{-1}v^{-1} = v\,y\,v^{-1}$ for $y \in B^\sigma$, using the centrality of $v^{-1}\sigma(v)$ to move $v$ past $\sigma(y)$.
 
 ## Summary
 

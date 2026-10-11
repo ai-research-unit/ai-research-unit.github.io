@@ -116,7 +116,7 @@ $$
 
 where $\psi^0_m$ solves the homogeneous equation. Two points of the source's display need correcting, and both follow from the derivation rather than from opinion.
 
-- **The two light-cone terms carry one common factor $e^{-m\tau}$, not $e^{-mR}$.** On the retarded cone $\tau = R$ the two writings agree, which is why the source's retarded formula is right; on the advanced cone $\tau = -R$ the common factor is $e^{+mR}$, and writing $e^{-mR}$ there is wrong for $m \neq 0$. Checked directly: at $m = 0.9$, $\tau = -1.5$ the factor matches $e^{mR}$ to machine precision and differs from $e^{-mR}$ by a factor $3.6$.
+- **The two light-cone terms carry one common factor $e^{-m\tau}$, not $e^{-mR}$.** On the retarded cone $\tau = R$ the two writings agree, which is why the source's retarded formula is right; on the advanced cone $\tau = -R$ the common factor is $e^{+mR}$, and writing $e^{-mR}$ there is wrong for $m \neq 0$.
 - **The retarded member is exactly the source's Eq. (36),** the equation the corpus declined to state,
 
 $$
@@ -188,7 +188,7 @@ $$
 \Psi_\rho = \bigl(\nabla^\mp + i\rho\bigr)\psi_\rho ,
 \qquad
 \bigl(\nabla^\pm + i\rho\bigr)\Psi_\rho = 0
-\ \text{ whenever }\ 
+\ \text{ whenever }\
 \bigl(\Box_{\text{s}} - \rho^2 + 2i\rho\partial_\tau\bigr)\psi_\rho = 0 ,
 $$
 

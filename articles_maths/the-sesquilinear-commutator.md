@@ -24,7 +24,7 @@ $$
 [y,x]_{\varsigma}=-[x,y]_{\varsigma}, \qquad [x,x]_{\varsigma}=0 .
 $$
 
-**Proof.** Both statements are the antisymmetry of the subtraction, applied to the two terms of the difference. $\square$
+**Proof.** Both statements are the antisymmetry of the subtraction, applied to the two terms of the difference.
 
 **Remark.** Antisymmetry is free: it uses neither the involution nor the associativity, and it holds for an arbitrary sesquilinear product. It is the one property the bracket has without a hypothesis, and the rest of the article is the account of the properties it does not have.
 
@@ -42,7 +42,7 @@ $$
 [\lambda x,y]_{\varsigma}-\lambda[x,y]_{\varsigma}=\bigl(\lambda-\varsigma(\lambda)\bigr)(y\star x), \qquad [x,\lambda y]_{\varsigma}-\lambda[x,y]_{\varsigma}=\bigl(\varsigma(\lambda)-\lambda\bigr)(x\star y).
 $$
 
-**Proof.** In the first slot, $(\lambda x)\star y=\lambda(x\star y)$ by the first scalar rule and $y\star(\lambda x)=\varsigma(\lambda)(y\star x)$ by the second, the scalar sitting in the second slot of the transposed product; the second display is the first read with the two slots exchanged, the antisymmetry carrying the sign of the bracket; the two transposed products differ, so the two corrections carry $y\star x$ and $x\star y$ respectively. The correction terms are the differences of the two displays from $\lambda[x,y]_{\varsigma}=\lambda(x\star y)-\lambda(y\star x)$. $\square$
+**Proof.** In the first slot, $(\lambda x)\star y=\lambda(x\star y)$ by the first scalar rule and $y\star(\lambda x)=\varsigma(\lambda)(y\star x)$ by the second, the scalar sitting in the second slot of the transposed product; the second display is the first read with the two slots exchanged, the antisymmetry carrying the sign of the bracket; the two transposed products differ, so the two corrections carry $y\star x$ and $x\star y$ respectively. The correction terms are the differences of the two displays from $\lambda[x,y]_{\varsigma}=\lambda(x\star y)-\lambda(y\star x)$.
 
 **Corollary (linearity over the fixed ring).** For $\lambda$ in the fixed ring $R^{\varsigma}=\{\lambda:\varsigma(\lambda)=\lambda\}$,
 
@@ -64,7 +64,7 @@ $$
 
 where $\circ$ is the symmetrised product of *The Sesquilinear Symmetrised Product*: the bracket is the antisymmetric half of the split and the symmetrised product the symmetric half.
 
-**Proof.** Add and subtract $\tfrac12(y\star x)$. $\square$
+**Proof.** Add and subtract $\tfrac12(y\star x)$.
 
 **Proposition (the values).** For all $x,y\in A$,
 
@@ -80,7 +80,7 @@ $$
 
 and it is a skew-symmetric $R^{\varsigma}$-bilinear map $A\times A\to S(A)$.
 
-**Proof.** The conjugate of a product reverses it, $(x\star y)^{*}=y\star x$, so $[x,y]_{\varsigma}^{*}=(y\star x)-(x\star y)=-[x,y]_{\varsigma}$. $\square$
+**Proof.** The conjugate of a product reverses it, $(x\star y)^{*}=y\star x$, so $[x,y]_{\varsigma}^{*}=(y\star x)-(x\star y)=-[x,y]_{\varsigma}$.
 
 **Remark.** The values are skew-Hermitian for every pair and not merely for skew-Hermitian arguments, so the bracket is an operator $A\times A\to S(A)$ and its image never meets $H(A)$ unless it vanishes. This is the second sharp difference from the ordinary commutator, which moves between the two halves: the commutator of two Hermitian elements is skew-Hermitian, of a Hermitian and a skew-Hermitian element Hermitian, of two skew-Hermitian elements skew-Hermitian, so that $S(A)$ is its even part and $H(A)$ its odd part. The sesquilinear bracket has only the first of those three behaviours, and it has it everywhere.
 
@@ -94,11 +94,11 @@ $$
 
 So on the Hermitian part the sesquilinear bracket is the ordinary commutator of the envelope, on the skew-Hermitian part it is the negative of the ordinary commutator, and across the two halves it is the **symmetrised** product $sh+hs$.
 
-**Proof.** For Hermitian $h$ the derived operation is the algebra product in the first slot, $h\star h'=hh'^{*}=hh'$, and the transposed product is the same in the other order, so $[h,h']_{\varsigma}=hh'-h'h=[h,h']$. For skew-Hermitian $s$ the involution contributes a sign, $s^{*}=-s$, so $[s,s']_{\varsigma}=(-ss')-(-s's)=-[s,s']$, and $[s,h]_{\varsigma}=sh^{*}-hs^{*}=sh+hs$. $\square$
+**Proof.** For Hermitian $h$ the derived operation is the algebra product in the first slot, $h\star h'=hh'^{*}=hh'$, and the transposed product is the same in the other order, so $[h,h']_{\varsigma}=hh'-h'h=[h,h']$. For skew-Hermitian $s$ the involution contributes a sign, $s^{*}=-s$, so $[s,s']_{\varsigma}=(-ss')-(-s's)=-[s,s']$, and $[s,h]_{\varsigma}=sh^{*}-hs^{*}=sh+hs$.
 
 **Corollary (the Lie algebra of the skew-Hermitian half).** On $S(A)$ the sesquilinear bracket is $R$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the negation being an isomorphism of brackets, the sesquilinear bracket and the ordinary commutator make $S(A)$ one and the same Lie algebra, up to the sign of the bracket. That Lie algebra is *The Unitary Lie Algebra*, and its place in the sesqualgebra is *Lie Algebras of Sesqualgebras*, §*The Skew-Hermitian Half*.
 
-**Proof.** By the theorem, $[s,s']_{\varsigma}=-[s,s']$ on $S(A)$, and $[S,S]\subseteq S$ for the ordinary commutator; the commutator of an associative algebra is $R$-bilinear, antisymmetric and satisfies the Jacobi identity, and the sign carries through the three terms. $\square$
+**Proof.** By the theorem, $[s,s']_{\varsigma}=-[s,s']$ on $S(A)$, and $[S,S]\subseteq S$ for the ordinary commutator; the commutator of an associative algebra is $R$-bilinear, antisymmetric and satisfies the Jacobi identity, and the sign carries through the three terms.
 
 **Remark (why the Hermitian half does not work).** The Hermitian half is not stable under the bracket, since $[h,h']_{\varsigma}=[h,h']$ is skew-Hermitian and not Hermitian unless it vanishes; and it does not satisfy the Jacobi identity either. The reason is the substance of the next section: three Hermitian elements produce inner brackets in $S(A)$, and the outer brackets that meet those values obey the symmetrised rule of the theorem and not the commutator rule, so the reassociation a Jacobi identity performs is performed with a different operation. The failing triple of the next section can be taken with all three elements Hermitian, so the failure is not a defect of the mixed case alone.
 
@@ -110,7 +110,7 @@ $$
 [[x,y]_{\varsigma},z]_{\varsigma}+[[y,z]_{\varsigma},x]_{\varsigma}+[[z,x]_{\varsigma},y]_{\varsigma}=E_{21}-E_{12}\neq0 .
 $$
 
-**Proof.** By the multiplication of the matrix units, $E_{ab}E_{cd}=\delta_{bc}E_{ad}$, and the reality of the units, $[E_{11},E_{22}]_{\varsigma}=E_{11}E_{22}-E_{22}E_{11}=0$ and $[E_{12},E_{11}]_{\varsigma}=E_{12}E_{11}-E_{11}E_{21}=0$, while $[E_{22},E_{12}]_{\varsigma}=E_{22}E_{12}^{*}-E_{12}E_{22}^{*}=E_{22}E_{21}-E_{12}E_{22}=E_{21}-E_{12}$. Only the middle of the three terms survives, and $[E_{21}-E_{12},E_{11}]_{\varsigma}=(E_{21}-E_{12})E_{11}^{*}-E_{11}(E_{21}-E_{12})^{*}=(E_{21}-E_{12})E_{11}-E_{11}(E_{12}-E_{21})=E_{21}-E_{12}$. The sum is $E_{21}-E_{12}\neq0$. $\square$
+**Proof.** By the multiplication of the matrix units, $E_{ab}E_{cd}=\delta_{bc}E_{ad}$, and the reality of the units, $[E_{11},E_{22}]_{\varsigma}=E_{11}E_{22}-E_{22}E_{11}=0$ and $[E_{12},E_{11}]_{\varsigma}=E_{12}E_{11}-E_{11}E_{21}=0$, while $[E_{22},E_{12}]_{\varsigma}=E_{22}E_{12}^{*}-E_{12}E_{22}^{*}=E_{22}E_{21}-E_{12}E_{22}=E_{21}-E_{12}$. Only the middle of the three terms survives, and $[E_{21}-E_{12},E_{11}]_{\varsigma}=(E_{21}-E_{12})E_{11}^{*}-E_{11}(E_{21}-E_{12})^{*}=(E_{21}-E_{12})E_{11}-E_{11}(E_{12}-E_{21})=E_{21}-E_{12}$. The sum is $E_{21}-E_{12}\neq0$.
 
 **Remark (three Hermitian elements suffice).** The witness uses an element outside the two halves, the matrix unit $E_{12}$, but the failure does not need one. With $X=E_{12}+E_{21}$, which is Hermitian, the triple $E_{11},E_{22},X$ has the three inner brackets $0$, $E_{21}-E_{12}$ and $E_{21}-E_{12}$, and the Jacobi sum is $2(E_{21}-E_{12})$, so three Hermitian elements already fail. This is the mechanism described above: the inner brackets of a Hermitian triple are ordinary commutators and land in $S(A)$, and the outer brackets then read those values with the symmetrised rule.
 
@@ -126,7 +126,7 @@ $$
 [x,1]_{\varsigma}=x-x^{*}, \qquad [1,y]_{\varsigma}=y^{*}-y .
 $$
 
-**Proof.** $[x,1]_{\varsigma}=x\star1-1\star x=x1^{*}-1x^{*}=x-x^{*}$, and $[1,y]_{\varsigma}=1y^{*}-y1^{*}=y^{*}-y$. $\square$
+**Proof.** $[x,1]_{\varsigma}=x\star1-1\star x=x1^{*}-1x^{*}=x-x^{*}$, and $[1,y]_{\varsigma}=1y^{*}-y1^{*}=y^{*}-y$.
 
 **Corollary.** The bracket detects the involution: $[x,1]_{\varsigma}=0$ exactly for the Hermitian $x$, and $[x,y]_{\varsigma}=0$ for all $x,y$ exactly when $*=\mathrm{id}$ and $A$ is commutative. The second statement is the transposition theorem of *The Sesquilinear Product* read as a statement about the bracket, and it is the sense in which a genuine sesquilinear bracket never vanishes.
 
@@ -138,7 +138,7 @@ $$
 
 so $[x^{*},y^{*}]_{\varsigma}$ is neither $[x,y]_{\varsigma}^{*}$ nor its negative. The involution does not act on the bracket as it would have to for the bracket of an algebra with involution, and this is a third respect, after the $R^{\varsigma}$-bilinearity and the Jacobi identity, in which the bracket is not that of a Lie algebra with involution.
 
-**Proof.** $[x,y]_{\varsigma}=E_{12}E_{11}-E_{11}E_{21}=0$, and $[x^{*},y^{*}]_{\varsigma}=[E_{21},E_{11}]_{\varsigma}=E_{21}E_{11}-E_{11}E_{12}=E_{21}-E_{12}$, the two products being $E_{21}$ and $E_{12}$ by the multiplication of the matrix units. $\square$
+**Proof.** $[x,y]_{\varsigma}=E_{12}E_{11}-E_{11}E_{21}=0$, and $[x^{*},y^{*}]_{\varsigma}=[E_{21},E_{11}]_{\varsigma}=E_{21}E_{11}-E_{11}E_{12}=E_{21}-E_{12}$, the two products being $E_{21}$ and $E_{12}$ by the multiplication of the matrix units.
 
 ## Worked Cases
 

@@ -34,7 +34,7 @@ $$
 s(\lambda x,\lambda x) = \lambda\varsigma(\lambda)\,s(x,x) = \lvert\lambda\rvert^{2}s(x,x) .
 $$
 
-*Proof.* The first is the Hermitian property at the pair $(x,x)$; the second is the two slot rules applied in sequence, $s(\lambda x,\lambda y) = \lambda\varsigma(\lambda)s(x,y)$. $\square$
+*Proof.* The first is the Hermitian property at the pair $(x,x)$; the second is the two slot rules applied in sequence, $s(\lambda x,\lambda y) = \lambda\varsigma(\lambda)s(x,y)$.
 
 **Remark (the model).** The canonical example of the article is the pairing of a positive functional, $s(x,y) = f(y^{*}x)$, whose values lie in $\mathbb{C}$, and the canonical example with values in $A$ is $\Psi(x,y) = y^{*}x$ itself, the universal $A$-valued form of *Hermitian Forms on a Sesqualgebra*, §*The Reduction to the Scalars*; the two are related by the reduction of the second along $f$, and the scalar theory of the article is the common part of the two. The scalar reductions $\varphi \circ s$ of a $B$-valued map along the functionals of $B$ are the device by which the algebra-valued statements below are reduced to the scalar ones.
 
@@ -42,7 +42,7 @@ $$
 
 **Proposition (the scalar reductions of a positive map are positive).** Let $s : A \times A \to B$ be a sesquilinear map with values in a $\mathrm{C}^{*}$-algebra $B$. Then $s$ is positive iff every positive functional $\varphi$ of $B$ has $\varphi \circ s$ positive; and a positive map is Hermitian automatically, since its scalar reductions are Hermitian forms and the states separate $B$.
 
-*Proof.* If $s$ is positive then $\varphi(s(x,x)) \geq 0$ for every positive functional $\varphi$, so $\varphi \circ s$ is positive; conversely $s(x,x) \geq 0$ in $B$ iff $\varphi(s(x,x)) \geq 0$ for every state $\varphi$ of $B$, by the representation of the order of a $\mathrm{C}^{*}$-algebra through its states. For the Hermitian clause, let $s$ be positive and let $\varphi$ be a state; the scalar form $\varphi \circ s$ is positive, and a scalar-valued positive sesquilinear form is Hermitian, so $\varphi(s(x,y)) = \varsigma(\varphi(s(y,x))) = \varphi(s(y,x)^{*})$ for every state $\varphi$; the states separate the elements of $B$, whence $s(x,y) = s(y,x)^{*}$, the Hermitian property. $\square$
+*Proof.* If $s$ is positive then $\varphi(s(x,x)) \geq 0$ for every positive functional $\varphi$, so $\varphi \circ s$ is positive; conversely $s(x,x) \geq 0$ in $B$ iff $\varphi(s(x,x)) \geq 0$ for every state $\varphi$ of $B$, by the representation of the order of a $\mathrm{C}^{*}$-algebra through its states. For the Hermitian clause, let $s$ be positive and let $\varphi$ be a state; the scalar form $\varphi \circ s$ is positive, and a scalar-valued positive sesquilinear form is Hermitian, so $\varphi(s(x,y)) = \varsigma(\varphi(s(y,x))) = \varphi(s(y,x)^{*})$ for every state $\varphi$; the states separate the elements of $B$, whence $s(x,y) = s(y,x)^{*}$, the Hermitian property.
 
 ## The Inequality
 
@@ -68,13 +68,13 @@ $$
 s(x-\mu y,x-\mu y) = s(x,x) - \frac{\lvert s(x,y)\rvert^{2}}{s(y,y)} .
 $$
 
-The form is positive, so the left side is $\geq 0$, and multiplying the inequality by $s(y,y) > 0$ in the ordered field $k$ gives the claim. $\square$
+The form is positive, so the left side is $\geq 0$, and multiplying the inequality by $s(y,y) > 0$ in the ordered field $k$ gives the claim.
 
 ### The Degenerate Case
 
 **Proposition (the neutral argument).** Let $s$ be Hermitian and positive semi-definite and let $s(y,y) = 0$. Then $s(x,y) = 0$ for every $x$, and consequently $y$ lies in the radical of $s$ and the inequality holds with both sides zero.
 
-*Proof.* For $\lambda \in k$, which is fixed by $\varsigma$, the diagonal of $x - \lambda y$ is $s(x,x) - \lambda s(y,x) - \lambda s(x,y) = s(x,x) - 2\lambda\,\mathrm{Re}\,s(x,y)$, where $\mathrm{Re}\,t = \tfrac12(t + \varsigma(t))$ is the fixed part; the form is positive, so $s(x,x) \geq 2\lambda\,\mathrm{Re}\,s(x,y)$ for every $\lambda \in k$, which forces $\mathrm{Re}\,s(x,y) = 0$. In the bilinear kind $s$ is already fixed and $s(x,y) = 0$; in the sesquilinear kind apply the same argument at the pair $(ix,y)$, whose fixed part is $\mathrm{Re}\,s(ix,y) = \mathrm{Re}(i\,s(x,y)) = -\mathrm{Im}\,s(x,y)$, and get $\mathrm{Im}\,s(x,y) = 0$ as well. Hence $s(x,y) = 0$ for every $x$, so $y$ is in the radical, $\mathrm{rad}(s) = \{x : s(x,y) = 0 \text{ for all } y\}$; and the inequality reads $0 \leq s(x,x)\cdot 0$. $\square$
+*Proof.* For $\lambda \in k$, which is fixed by $\varsigma$, the diagonal of $x - \lambda y$ is $s(x,x) - \lambda s(y,x) - \lambda s(x,y) = s(x,x) - 2\lambda\,\mathrm{Re}\,s(x,y)$, where $\mathrm{Re}\,t = \tfrac12(t + \varsigma(t))$ is the fixed part; the form is positive, so $s(x,x) \geq 2\lambda\,\mathrm{Re}\,s(x,y)$ for every $\lambda \in k$, which forces $\mathrm{Re}\,s(x,y) = 0$. In the bilinear kind $s$ is already fixed and $s(x,y) = 0$; in the sesquilinear kind apply the same argument at the pair $(ix,y)$, whose fixed part is $\mathrm{Re}\,s(ix,y) = \mathrm{Re}(i\,s(x,y)) = -\mathrm{Im}\,s(x,y)$, and get $\mathrm{Im}\,s(x,y) = 0$ as well. Hence $s(x,y) = 0$ for every $x$, so $y$ is in the radical, $\mathrm{rad}(s) = \{x : s(x,y) = 0 \text{ for all } y\}$; and the inequality reads $0 \leq s(x,x)\cdot 0$.
 
 **Remark (the proof is the same as the definite one).** The definite proof of *The Norm Defined by a Form*, §*The Inequality*, is the computation above with the division available; the degenerate case is not a pathology of the inequality but the case in which the translated diagonal has the leading coefficient $s(y,y) = 0$ and the quadratic in the real parameter forces the vanishing of the value instead of bounding its square. The indefinite case lies in the other direction and is excluded: for an indefinite form $s(y,y)$ may be negative, the translation by $\mu$ is not available and the inequality fails, with the neutral pair $e_{1} + e_{2}$, $e_{1} - e_{2}$ of the hyperbolic plane as the witness of *The Indefinite Case and the Signature*, §*The Cauchy–Schwarz Inequality Fails*.
 
@@ -82,7 +82,7 @@ The form is positive, so the left side is $\geq 0$, and multiplying the inequali
 
 **Theorem (the equality case).** Let $s$ be Hermitian and positive semi-definite with values in $R$. Then the inequality is an equality exactly for the pairs that are linearly dependent modulo the radical: $\lvert s(x,y)\rvert^{2} = s(x,x)s(y,y)$ iff there is $\mu \in R$ with $x - \mu y \in \mathrm{rad}(s)$, or $y \in \mathrm{rad}(s)$.
 
-*Proof.* If $s(y,y) = 0$ then $s(y,x) = 0$ for every $x$ and $y \in \mathrm{rad}(s)$, and both sides of the inequality vanish for every $x$, so the equality holds on the whole class of $y$ modulo the radical and the statement is the case $y \in \mathrm{rad}(s)$. Let $s(y,y) > 0$ and put $\mu = s(x,y)/s(y,y)$. The proof of the inequality shows that the equality holds exactly when $s(x-\mu y,x-\mu y) = 0$; by the proposition above the null set of a positive semi-definite form is its radical, so this is $x - \mu y \in \mathrm{rad}(s)$. Conversely if $x = \mu y + z$ with $z \in \mathrm{rad}(s)$ then $s(x,x) = \lvert\mu\rvert^{2}s(y,y)$ and $s(x,y) = \mu\,s(y,y)$, so $\lvert s(x,y)\rvert^{2} = \lvert\mu\rvert^{2}s(y,y)^{2} = s(x,x)s(y,y)$. $\square$
+*Proof.* If $s(y,y) = 0$ then $s(y,x) = 0$ for every $x$ and $y \in \mathrm{rad}(s)$, and both sides of the inequality vanish for every $x$, so the equality holds on the whole class of $y$ modulo the radical and the statement is the case $y \in \mathrm{rad}(s)$. Let $s(y,y) > 0$ and put $\mu = s(x,y)/s(y,y)$. The proof of the inequality shows that the equality holds exactly when $s(x-\mu y,x-\mu y) = 0$; by the proposition above the null set of a positive semi-definite form is its radical, so this is $x - \mu y \in \mathrm{rad}(s)$. Conversely if $x = \mu y + z$ with $z \in \mathrm{rad}(s)$ then $s(x,x) = \lvert\mu\rvert^{2}s(y,y)$ and $s(x,y) = \mu\,s(y,y)$, so $\lvert s(x,y)\rvert^{2} = \lvert\mu\rvert^{2}s(y,y)^{2} = s(x,x)s(y,y)$.
 
 **Corollary (the definite case is the sharp one).** When $s$ is positive definite its radical is zero and the equality case is the proportionality of *The Norm Defined by a Form*, §*The Equality Case*: the inequality is an equality exactly for linearly dependent elements. The general statement is the same statement read modulo the radical, and the definite case is the case in which the radical has been divided out.
 
@@ -98,7 +98,7 @@ $$
 
 and $\lvert s(x,y)\rvert \leq p(x)p(y)$; the null set $\{x : p(x) = 0\} = \{x : s(x,x) = 0\}$ is the radical of $s$.
 
-*Proof.* The first two are the proposition on the diagonal and the square root in $k$. For the third, the expansion of the diagonal of a sum gives $s(x+y,x+y) = s(x,x) + s(x,y) + \varsigma(s(x,y)) + s(y,y) = p(x)^{2} + 2\,\mathrm{Re}\,s(x,y) + p(y)^{2} \leq p(x)^{2} + 2p(x)p(y) + p(y)^{2}$, using $\mathrm{Re}\,t \leq \lvert t\rvert$ and the inequality; the square roots in $k$ are ordered, so $p(x+y) \leq p(x)+p(y)$. The inequality for $\lvert s(x,y)\rvert$ is Cauchy–Schwarz. The null set is the radical by the proposition of the degenerate case, which shows both inclusions. $\square$
+*Proof.* The first two are the proposition on the diagonal and the square root in $k$. For the third, the expansion of the diagonal of a sum gives $s(x+y,x+y) = s(x,x) + s(x,y) + \varsigma(s(x,y)) + s(y,y) = p(x)^{2} + 2\,\mathrm{Re}\,s(x,y) + p(y)^{2} \leq p(x)^{2} + 2p(x)p(y) + p(y)^{2}$, using $\mathrm{Re}\,t \leq \lvert t\rvert$ and the inequality; the square roots in $k$ are ordered, so $p(x+y) \leq p(x)+p(y)$. The inequality for $\lvert s(x,y)\rvert$ is Cauchy–Schwarz. The null set is the radical by the proposition of the degenerate case, which shows both inclusions.
 
 **Remark (the null set is the radical, and the norm is the definite case).** The identity $\{s(x,x) = 0\} = \mathrm{rad}(s)$ for a positive semi-definite form is the statement that *Positivity and the Positive Cone of a Hermitian Form*, §*The Null Set and the Radical*, proves from the inequality and its equality case and that this article supplies; the seminorm is a norm exactly when the form is definite, which is the case of *The Norm Defined by a Form*.
 
@@ -112,7 +112,7 @@ $$
 
 which is well defined, and the seminorm $p$ descends to the norm $\lVert x + N\rVert = p(x)$ of the completed inner product space.
 
-*Proof.* The form vanishes on $N$ in both arguments, so the value depends only on the classes; it is Hermitian and positive because $s$ is, and it is definite because a class with $\bar{s}(\xi,\xi) = 0$ is represented by an element of the null set, that is of $N$. The completion of the resulting inner product space is a Hilbert space, *Hilbert Spaces*, §*Completeness and the Projection Theorem*, and the seminorm descends to the norm of the quotient. $\square$
+*Proof.* The form vanishes on $N$ in both arguments, so the value depends only on the classes; it is Hermitian and positive because $s$ is, and it is definite because a class with $\bar{s}(\xi,\xi) = 0$ is represented by an element of the null set, that is of $N$. The completion of the resulting inner product space is a Hilbert space, *Hilbert Spaces*, §*Completeness and the Projection Theorem*, and the seminorm descends to the norm of the quotient.
 
 **Remark (the construction is the GNS construction).** The quotient, the completion and the representation that the completed inner product carries are the construction of *States and Positive Functionals on a Topological Sesqualgebra*, §*The GNS Construction*, in the case in which the map is the pairing of a functional; the abstract form of the quotient is *Positivity and the Positive Cone of a Hermitian Form*, §*The Definite Quotient*, and the article states it here only to record that it uses no definiteness assumption beyond the positivity.
 
@@ -126,7 +126,7 @@ $$
 \lVert s\rVert = \sup\{\lvert s(x,y)\rvert : \lVert x\rVert \leq 1, \lVert y\rVert \leq 1\} = \sup\{s(x,x) : \lVert x\rVert \leq 1\} .
 $$
 
-*Proof.* If $s(x,x) \leq M\lVert x\rVert^{2}$ for every $x$, then the inequality gives $\lvert s(x,y)\rvert^{2} \leq s(x,x)s(y,y) \leq M^{2}\lVert x\rVert^{2}\lVert y\rVert^{2}$, hence $\lvert s(x,y)\rvert \leq M\lVert x\rVert\lVert y\rVert$ and $\lVert s\rVert \leq M$; conversely $\lvert s(x,x)\rvert \leq \lVert s\rVert\lVert x\rVert^{2}$ by the definition of the bound, and $s(x,x) \geq 0$. The two suprema therefore agree at $M = \sup_{\lVert x\rVert \leq 1}s(x,x)$. $\square$
+*Proof.* If $s(x,x) \leq M\lVert x\rVert^{2}$ for every $x$, then the inequality gives $\lvert s(x,y)\rvert^{2} \leq s(x,x)s(y,y) \leq M^{2}\lVert x\rVert^{2}\lVert y\rVert^{2}$, hence $\lvert s(x,y)\rvert \leq M\lVert x\rVert\lVert y\rVert$ and $\lVert s\rVert \leq M$; conversely $\lvert s(x,x)\rvert \leq \lVert s\rVert\lVert x\rVert^{2}$ by the definition of the bound, and $s(x,x) \geq 0$. The two suprema therefore agree at $M = \sup_{\lVert x\rVert \leq 1}s(x,x)$.
 
 **Corollary (the continuity of the layer's forms is one scalar condition).** On the objects of the layer the form is continuous by hypothesis, *Topological Sesqualgebras with a Form*, §*The Definition*, so the diagonal is bounded and the inequality holds with the constant $\lVert s\rVert$; in the **definite** case the bound is free of the hypothesis, since the norm of the form gives $\lvert s(x,y)\rvert \leq \lVert x\rVert\lVert y\rVert$ with constant one, *The Norm Defined by a Form*, §*The Boundedness of the Form*; and for the **canonical pairing** $s(x,y) = y^{*}x$ of a $\mathrm{C}^{*}$-sesqualgebra the diagonal has $s(x,x) = x^{*}x$ of norm $\lVert x\rVert^{2}$, so the bound is the $\mathrm{C}^{*}$-identity and is free. The passage from positivity to continuity is thus the passage from the pointwise inequality $s(x,x) \geq 0$ to the global one $s(x,x) \leq M\lVert x\rVert^{2}$.
 
@@ -152,7 +152,7 @@ $$
 \lVert s(x,y)\rVert^{2} \leq \lVert s(x,x)\rVert\,\lVert s(y,y)\rVert \qquad \text{for all } x, y .
 $$
 
-*Proof.* For a state $\omega$ of $B$ the composite $\omega \circ s$ is a Hermitian positive semi-definite form with values in $\mathbb{C}$, by the proposition on the scalar reductions, so Cauchy–Schwarz applies to it: $\lvert\omega(s(x,y))\rvert^{2} \leq \omega(s(x,x))\,\omega(s(y,y)) \leq \lVert s(x,x)\rVert\lVert s(y,y)\rVert$. A state is a positive functional of norm one, and $\lVert b\rVert = \sup\{\lvert\omega(b)\rvert : \omega \text{ a state}\}$ for a $\mathrm{C}^{*}$-algebra element $b$, so taking the supremum over the states gives the claim. $\square$
+*Proof.* For a state $\omega$ of $B$ the composite $\omega \circ s$ is a Hermitian positive semi-definite form with values in $\mathbb{C}$, by the proposition on the scalar reductions, so Cauchy–Schwarz applies to it: $\lvert\omega(s(x,y))\rvert^{2} \leq \omega(s(x,x))\,\omega(s(y,y)) \leq \lVert s(x,x)\rVert\lVert s(y,y)\rVert$. A state is a positive functional of norm one, and $\lVert b\rVert = \sup\{\lvert\omega(b)\rvert : \omega \text{ a state}\}$ for a $\mathrm{C}^{*}$-algebra element $b$, so taking the supremum over the states gives the claim.
 
 **Remark (the sharp algebraic form is the module case).** The inequality of the theorem is the norm form; the sharper algebraic form
 
@@ -172,7 +172,7 @@ $$
 
 its radical is zero, because $y^{*}x = 0$ at $y = x$ gives $x^{*}x = 0$ and hence $x = 0$, and its scalar reductions along the positive functionals are the conjugates of their pairings, $f(y^{*}x) = \overline{f(x^{*}y)} = \varsigma(h_{f}(x,y))$.
 
-*Proof.* The two slot rules are $s(\lambda x,y) = y^{*}(\lambda x) = \lambda\,s(x,y)$ and $s(x,\lambda y) = (\lambda y)^{*}x = \varsigma(\lambda)s(x,y)$, which is the layer's convention; the map is Hermitian, $s(y,x) = x^{*}y = (y^{*}x)^{*} = s(x,y)^{*}$; it is positive, $s(x,x) = x^{*}x \geq 0$ in the $\mathrm{C}^{*}$-order; its diagonal has $\lVert s(x,x)\rVert = \lVert x^{*}x\rVert = \lVert x\rVert^{2}$ by the $\mathrm{C}^{*}$-identity, so the bound of the theorem above is the constant one; and the radical vanishes because $y^{*}x = 0$ for $y = x$ is $x^{*}x = 0$, which forces $x = 0$ in a $\mathrm{C}^{*}$-algebra. The pairing $h_{f}$ of *States and Positive Functionals on a Topological Sesqualgebra*, §*The Sesquilinear Pairing*, reads the same form in the Hilbert convention, conjugate-linear in the first slot, $h_{f}(x,y) = f(x^{*}y) = \varsigma(f(y^{*}x))$. $\square$
+*Proof.* The two slot rules are $s(\lambda x,y) = y^{*}(\lambda x) = \lambda\,s(x,y)$ and $s(x,\lambda y) = (\lambda y)^{*}x = \varsigma(\lambda)s(x,y)$, which is the layer's convention; the map is Hermitian, $s(y,x) = x^{*}y = (y^{*}x)^{*} = s(x,y)^{*}$; it is positive, $s(x,x) = x^{*}x \geq 0$ in the $\mathrm{C}^{*}$-order; its diagonal has $\lVert s(x,x)\rVert = \lVert x^{*}x\rVert = \lVert x\rVert^{2}$ by the $\mathrm{C}^{*}$-identity, so the bound of the theorem above is the constant one; and the radical vanishes because $y^{*}x = 0$ for $y = x$ is $x^{*}x = 0$, which forces $x = 0$ in a $\mathrm{C}^{*}$-algebra. The pairing $h_{f}$ of *States and Positive Functionals on a Topological Sesqualgebra*, §*The Sesquilinear Pairing*, reads the same form in the Hilbert convention, conjugate-linear in the first slot, $h_{f}(x,y) = f(x^{*}y) = \varsigma(f(y^{*}x))$.
 
 **Remark (the scalar theory of the layer is the reducible part of the operator theory).** The theorem is the sense in which the scalar forms of the layer, which are the reductions $h_{\varphi}(x,y) = \varphi(y^{*}x)$ of *The Sesquilinear Form and the Conjugation*, are the scalar readings of the one $A$-valued form $\Psi(x,y) = y^{*}x$; the inequality of this article is the common inequality of the two readings, and the operator theory of the two forms is *Adjoints of Bounded Sesquilinear Operators* and *The Adjoint of the Bounded Conjugate Left Multiplication*.
 
@@ -186,7 +186,7 @@ $$
 
 for a positive semi-definite symmetric bilinear form, the modulus is the absolute value, the seminorm is the square root of the diagonal, the null set is the radical, and the equality case is proportionality modulo the radical. The article is then the classical Cauchy–Schwarz inequality of a positive semi-definite symmetric bilinear form, and its instance on a Euclidean space is the scalar theory of *Bilinear Forms* and *Quadratic Forms and Polarisation*.
 
-*Proof.* Each statement is the corresponding statement above read at $\varsigma = \mathrm{id}$: the Hermitian property is the symmetry, the modulus square is the square, and the two slots carry the same scalars. $\square$
+*Proof.* Each statement is the corresponding statement above read at $\varsigma = \mathrm{id}$: the Hermitian property is the symmetry, the modulus square is the square, and the two slots carry the same scalars.
 
 **Remark (which statements are sesquilinear).** The inequality, the seminorm, the quotient and the equality case hold in both kinds and are not sesquilinear statements; the sesquilinear content is the presence of two slots with different scalar rules, which is what makes the inequality read $\varsigma(s(x,y))s(x,y)$ rather than $s(x,y)^{2}$, the degenerate case require the vanishing of both the real and the imaginary part of $s(x,y)$, and the modulus $\lvert s(x,y)\rvert = (s(x,y)\varsigma(s(x,y)))^{1/2}$ appear in the bound.
 

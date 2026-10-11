@@ -38,7 +38,7 @@ as in *The Left and Right Multiplication Operators on a Jordan Algebra*. The two
 
 **Proposition.** The correspondence $a \mapsto L_a = \tfrac12(\ell_a+\rho_a)$ is injective when $A$ has no nonzero element annihilating $A$ on both sides, and it is additive; the map is an $R$-linear isomorphism onto its image, and it is not multiplicative in $a$ unless $A$ is commutative.
 
-*Proof.* Additivity is clear. If $\tfrac12(\ell_a+\rho_a) = 0$ then $ax+xa = 0$ for all $x$; multiplying by $x$ on the appropriate side or specialising to $x = 1$ gives $a = 0$ when $A$ is unital with $2$ invertible or when the two-sided annihilator is zero. The failure of multiplicativity is the failure of the associativity of $\circ$: $L_aL_b \ne L_{a\bullet b}$ unless $A$ is commutative, as in *The Left and Right Multiplication Operators on a Jordan Algebra*. $\square$
+*Proof.* Additivity is clear. If $\tfrac12(\ell_a+\rho_a) = 0$ then $ax+xa = 0$ for all $x$; multiplying by $x$ on the appropriate side or specialising to $x = 1$ gives $a = 0$ when $A$ is unital with $2$ invertible or when the two-sided annihilator is zero. The failure of multiplicativity is the failure of the associativity of $\circ$: $L_aL_b \ne L_{a\bullet b}$ unless $A$ is commutative, as in *The Left and Right Multiplication Operators on a Jordan Algebra*.
 
 ## The Signed One-Sided Actions
 
@@ -63,7 +63,7 @@ $$
 
 and the signed actions are obtained from the unsigned ones by precomposition with the grade involution.
 
-*Proof.* $\ell_a(\alpha(x)) = a\alpha(x) = \ell^{\alpha}_a(x)$; the right case is identical. $\square$
+*Proof.* $\ell_a(\alpha(x)) = a\alpha(x) = \ell^{\alpha}_a(x)$; the right case is identical.
 
 **Corollary.** The signed left multiplication is the unsigned left multiplication read at the twisted argument, and the two coincide exactly when $\alpha = \mathrm{id}$; in particular $\ell^{\alpha}_1 = \alpha$ is the grade involution itself, while $\ell_1 = \mathrm{id}$.
 
@@ -75,7 +75,7 @@ $$
 
 so the signed sandwich is the product of one **unsigned** and one **signed** one-sided action, in either order; the product of two signed actions is instead $\ell^{\alpha}_a\rho^{\alpha}_b(x) = a\,x\,\alpha(b) = S_{a,\alpha(b)}(x)$, an unsigned sandwich at the twisted right parameter.
 
-*Proof.* $\rho_b(\ell^{\alpha}_a(x)) = \rho_b(a\alpha(x)) = a\alpha(x)b = S^{\alpha}_{a,b}(x)$; the second expression is identical. For the last identity, $\rho^{\alpha}_b(x) = \alpha(x)b$ and $\ell^{\alpha}_a(\alpha(x)b) = a\alpha(\alpha(x)b) = ax\alpha(b) = S_{a,\alpha(b)}(x)$. $\square$
+*Proof.* $\rho_b(\ell^{\alpha}_a(x)) = \rho_b(a\alpha(x)) = a\alpha(x)b = S^{\alpha}_{a,b}(x)$; the second expression is identical. For the last identity, $\rho^{\alpha}_b(x) = \alpha(x)b$ and $\ell^{\alpha}_a(\alpha(x)b) = a\alpha(\alpha(x)b) = ax\alpha(b) = S_{a,\alpha(b)}(x)$.
 
 ### Homogeneity and the Sign Rule
 
@@ -87,7 +87,7 @@ $$
 
 so that the signed one-sided actions are **graded operators of degree $|a|$**: they preserve the degree when $a$ is even and exchange the even and odd parts when $a$ is odd.
 
-*Proof.* For $x \in A_{\bar i}$ one has $\alpha(x) = (-1)^i x$, so $\ell^{\alpha}_a(x) = (-1)^i ax$, and the parity of $ax$ is $|a|+i$ because $A$ is graded. The right case is identical. $\square$
+*Proof.* For $x \in A_{\bar i}$ one has $\alpha(x) = (-1)^i x$, so $\ell^{\alpha}_a(x) = (-1)^i ax$, and the parity of $ax$ is $|a|+i$ because $A$ is graded. The right case is identical.
 
 **Corollary.** The unsigned left multiplication preserves the degree, because it is the symmetrisation of the two degree-preserving actions $\ell_a$ and $\rho_a$; the signed left multiplication shifts the degree by the parity of $a$. The sign rule is the parity factor $(-1)^i$ that the twist inserts, and it is the reason the signed one-sided action cannot be an operator of the Jordan structure when $a$ is odd: a Jordan operator must preserve the degree, while $\ell^{\alpha}_a$ with $a$ odd exchanges the two parts.
 
@@ -103,7 +103,7 @@ $$
 
 that is, the intersection of the even part with the eigenvalue-one space of the left multiplication $\ell_a$, together with the intersection of the odd part with its eigenvalue-minus-one space.
 
-*Proof.* Write $x = x_0 + x_1$ with $x_i \in A_{\bar i}$. Then $\ell^{\alpha}_a(x) = a\alpha(x_0) + a\alpha(x_1) = ax_0 - ax_1$, and the equation $ax_0 - ax_1 = x_0 + x_1$ decouples by parity into $ax_0 = x_0$ and $-ax_1 = x_1$. $\square$
+*Proof.* Write $x = x_0 + x_1$ with $x_i \in A_{\bar i}$. Then $\ell^{\alpha}_a(x) = a\alpha(x_0) + a\alpha(x_1) = ax_0 - ax_1$, and the equation $ax_0 - ax_1 = x_0 + x_1$ decouples by parity into $ax_0 = x_0$ and $-ax_1 = x_1$.
 
 **Corollary (the case $a = 1$).** The signed left multiplication by the unit is the grade involution itself, $\ell^{\alpha}_1 = \alpha$, and its fixed space is exactly the even part $A_{\bar 0}$, which is the subalgebra of $J$; the odd part $A_{\bar 1}$ is the eigenvalue-minus-one space.
 
@@ -121,7 +121,7 @@ $$
 
 where $U_a$ is the quadratic representation of *The Left and Right Multiplication Operators on a Jordan Algebra* and $U_a\circ\alpha$ is the symmetrised signed sandwich of *The Signed Sandwich on a Jordan Algebra* with equal parameters; the product is that of one **unsigned** and one **signed** one-sided action.
 
-*Proof.* $\ell_a(\rho^{\alpha}_a(x)) = \ell_a(\alpha(x)a) = a\alpha(x)a = U_a(\alpha(x))$, and $\rho_a(\ell^{\alpha}_a(x)) = \rho_a(a\alpha(x)) = a\alpha(x)a$, the same operator. Reading $U_a(\alpha(x))$ as $(U_a\circ\alpha)(x)$ gives the statement. $\square$
+*Proof.* $\ell_a(\rho^{\alpha}_a(x)) = \ell_a(\alpha(x)a) = a\alpha(x)a = U_a(\alpha(x))$, and $\rho_a(\ell^{\alpha}_a(x)) = \rho_a(a\alpha(x)) = a\alpha(x)a$, the same operator. Reading $U_a(\alpha(x))$ as $(U_a\circ\alpha)(x)$ gives the statement.
 
 **Corollary.** The product of an unsigned and a signed one-sided action is the twist of the quadratic representation, which lies in the multiplication algebra; the signed one-sided actions themselves do not. The signed left multiplication is therefore the one-parameter operator from which the tied two-parameter operators of the group $\operatorname{Mult}(J)$ are rebuilt, and its adjoint — the object of *The Signed Adjoint of the Left Multiplication on a Jordan Algebra* — is the operator that carries the pairing through the action.
 

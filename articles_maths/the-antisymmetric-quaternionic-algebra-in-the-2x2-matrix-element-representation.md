@@ -14,7 +14,7 @@ $$
 
 and $\operatorname{adj}\mathsf{M}_2(\tilde P)=\mathsf{M}_2(\tilde P^{\natural})$ is the matrix of the quaternion conjugation.
 
-*Proof.* The isomorphism satisfies $\mathsf{M}_2(\tilde P\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)$ for the plain product and $\mathsf{M}_2(\tilde P^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde P)$, which is *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the $\natural$-product of the parent row is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, of matrix $\mathsf{M}_2(\tilde P\star\tilde Q)=\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)$, and the operation is half the difference of that product with its arguments exchanged. Verified on random pairs. $\square$
+*Proof.* The isomorphism satisfies $\mathsf{M}_2(\tilde P\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)$ for the plain product and $\mathsf{M}_2(\tilde P^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde P)$, which is *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the $\natural$-product of the parent row is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, of matrix $\mathsf{M}_2(\tilde P\star\tilde Q)=\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)$, and the operation is half the difference of that product with its arguments exchanged.
 
 **Remark (the twisted product).** In the model the operation is half the difference of the $\natural$-product with its arguments exchanged, and the matrix of the $\natural$-product is a twisted product in which the first factor is read through the matrix of ${}^{\natural}$, the adjugate.
 
@@ -22,11 +22,11 @@ and $\operatorname{adj}\mathsf{M}_2(\tilde P)=\mathsf{M}_2(\tilde P^{\natural})$
 
 **Proposition (the image).** In the $2\times2$ model the image of the operation is the space of traceless matrices, of complex dimension three, since the trace of the image matrix is twice the scalar part of the value.
 
-*Proof.* $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ and the value of the operation has zero scalar part, so $\operatorname{Tr}\mathsf{M}_2(\tilde P\diamond\tilde Q)=0$; conversely a traceless matrix is the image of a pure vector, and the pure vectors are exactly the traceless matrices, since the trace reads the scalar part. Verified on the model. $\square$
+*Proof.* $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ and the value of the operation has zero scalar part, so $\operatorname{Tr}\mathsf{M}_2(\tilde P\diamond\tilde Q)=0$; conversely a traceless matrix is the image of a pure vector, and the pure vectors are exactly the traceless matrices, since the trace reads the scalar part.
 
 **Proposition (the kernel).** The kernel of the left multiplication operator $L_{\tilde A}$ is the image under the model of the kernel in the coefficient space, which for a regular element $N(\tilde A)\neq0$ is the line $\mathbb{C}\tilde A$: the matrices that the operator annihilates are the multiples of $\mathsf{M}_2(\tilde A)$.
 
-*Proof.* The model is an isomorphism of vector spaces that intertwines the operator with its image, so kernels correspond; the kernel in the coefficient space is computed in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*. $\square$
+*Proof.* The model is an isomorphism of vector spaces that intertwines the operator with its image, so kernels correspond; the kernel in the coefficient space is computed in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*.
 
 **Remark (the traceless matrices).** The image of the block on the matrices is therefore the traceless part, and the kernel is the line of the element. The traceless matrices carry the three-dimensional Lie algebra $\mathfrak{sl}(2,\mathbb{C})$, which is the model of the vector subspace under the operation (*Remarkable Subspaces and the Four General Products*).
 
@@ -42,7 +42,7 @@ $$
 
 with the rank dropping to $2$ on the isotropic cone and to $0$ only at $\tilde A=0$.
 
-*Proof.* The trace of the model is $\operatorname{Tr}\mathsf{M}_2(\tilde A)=2A_0$, which converts the coefficient-space value $3A_0$ computed in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* into the model formula; the determinant and the rank are basis-independent properties of the operator and are carried over by the intertwining isomorphism. Verified on the model. $\square$
+*Proof.* The trace of the model is $\operatorname{Tr}\mathsf{M}_2(\tilde A)=2A_0$, which converts the coefficient-space value $3A_0$ computed in *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* into the model formula; the determinant and the rank are basis-independent properties of the operator and are carried over by the intertwining isomorphism.
 
 **Proposition (the operator on the matrices).** In the $2\times2$ model the operator acts on a matrix by
 
@@ -52,7 +52,7 @@ $$
 
 which is antisymmetric in the two matrix arguments. The operator is the sum of the two terms, the first of which is the multiplication by the fixed matrix in the twisted product and the second the reverse.
 
-*Proof.* This is the model form of $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R$ under the theorem above. Verified on the model. $\square$
+*Proof.* This is the model form of $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R$ under the theorem above.
 
 ## The Invariant Form and the Failure
 
@@ -64,7 +64,7 @@ $$
 
 its Gram matrix in the coefficient basis is $\operatorname{diag}(1,0,0,0)$, and its radical is the traceless part, that is the image of the block.
 
-*Proof.* $\operatorname{Tr}\mathsf{M}_2(\tilde P)=2P_0$ gives the coefficient; the Gram matrix and the radical are those of *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, and the radical is the traceless part by the trace formula. Verified on the model. $\square$
+*Proof.* $\operatorname{Tr}\mathsf{M}_2(\tilde P)=2P_0$ gives the coefficient; the Gram matrix and the radical are those of *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, and the radical is the traceless part by the trace formula.
 
 **Proposition (the failure on the matrices).** The failure of the Jacobi identity is the failure of the twisted matrix product to be associative, and the cyclic sum of the block corresponds to the matrix
 
@@ -76,7 +76,7 @@ $$
 
 the associator of the quaternionic product being computable on the matrices as the associator of the twisted product $\operatorname{adj}\mathsf{M}_2(\cdot)\mathsf{M}_2(\cdot)$.
 
-*Proof.* The associator criterion expresses the cyclic sum as a quarter of the signed sum of the six associators, and the model carries the associator of the quaternionic product to the associator of the twisted matrix product, being an algebra isomorphism for the plain product and carrying ${}^{\natural}$ to the adjugate. Verified on the model. $\square$
+*Proof.* The associator criterion expresses the cyclic sum as a quarter of the signed sum of the six associators, and the model carries the associator of the quaternionic product to the associator of the twisted matrix product, being an algebra isomorphism for the plain product and carrying ${}^{\natural}$ to the adjugate.
 
 **Computation (the witness in the model).** At the witness of the failure the matrices are
 
@@ -89,7 +89,7 @@ $$
 
 and the cyclic sum of the block at $(e_0,e_1,e_2)$, which is $-e_3$, has the matrix $-\mathsf{M}_2(e_3)=\operatorname{diag}(i,-i)$.
 
-*Proof.* The matrices are the standard ones of the isomorphism (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), and the cyclic sum is the one computed in *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*. $\square$
+*Proof.* The matrices are the standard ones of the isomorphism (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), and the cyclic sum is the one computed in *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*.
 
 **Remark (the failure is not an accident of the basis).** The matrix form of the failure is therefore not a numerical accident: the twisted product $\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)$ is the matrix of the parent product, and it is not associative for the same reason that the parent product is not, the adjugate insertion in the first slot being exactly what associativity cannot absorb. The block's matrix model is the antisymmetrisation of that twisted product, and it fails the Jacobi identity because the twisted product fails associativity.
 
@@ -115,9 +115,9 @@ $$
 
 which is the model form of $P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$: the two scalar multiples carry the $P_0$ and $Q_0$ terms, and the halved commutator carries the cross product, since on two vector parts the commutator of the matrices is twice the matrix of the cross product.
 
-**The witness, entry by entry.** At the pair $e_0,e_1$ the scalar terms collapse and the commutator vanishes, $\mathsf{M}_2(e_0\diamond e_1)=\tfrac12\bigl(\mathsf{M}_2(e_1)-(-\mathsf{M}_2(e_1))\bigr)=\mathsf{M}_2(e_1)$; at the pair $e_1,e_2$ the commutator carries the whole value,
+**The witness, entry by entry.** At the pair $e_0,e_1$ the scalar terms collapse and the commutator vanishes, $\mathsf{M}_2(e_0\diamond e_1)=\tfrac12\bigl(\mathsf{M}_2(e_1)-(-\mathsf{M}_2(e_1))\bigr)=\mathsf{M}_2(e_1)$; at the pair $e_1,e_2$ the halved commutator is the matrix of the cross product, that is the negative of the value of the operation,
 $$
-\tfrac12\bigl[\mathsf{M}_2(e_1),\mathsf{M}_2(e_2)\bigr]=\mathsf{M}_2(e_3)=\mathsf{M}_2(e_1\diamond e_2),
+\tfrac12\bigl[\mathsf{M}_2(e_1),\mathsf{M}_2(e_2)\bigr]=\mathsf{M}_2(e_3)=-\mathsf{M}_2(e_1\diamond e_2)=\mathsf{M}_2(e_2\diamond e_1),
 $$
 on the two pure vectors. Every value is traceless, since the operation is pure vector and the trace of the model is twice the scalar part.
 

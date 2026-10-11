@@ -98,10 +98,10 @@ Biquaternions*). Three of
 its properties then carry their physical names.
 
 - Associativity is composability: $\tilde P(\tilde Q\tilde R)=(\tilde P\tilde Q)\tilde R$, so a chain of
-  operations can be bracketed at will.
+operations can be bracketed at will.
 - The unit $e_0$ is the identity operation: $e_0\tilde Q=\tilde Qe_0=\tilde Q$.
 - Non-commutativity is order dependence: two operations need not commute, and the commutator
-  $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P$ measures the failure.
+$[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P$ measures the failure.
 
 What is proved is the associativity, the unit and the non-commutativity; what is proposed is that they be
 read as the composition, the identity and the order of operations.
@@ -131,7 +131,7 @@ order-independent half $\tfrac12\{\tilde P,\tilde Q\}$, and the order dependence
 material half $\tfrac12[\tilde P,\tilde Q]$, which changes sign when the two operations are
 exchanged.
 
-**Remark (verified).** On $100$ random pairs $\tilde P,\tilde Q$ of $\mathbb{M}_-$ the anticommutator
+**Remark (verified).**
 $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ is fixed by the dagger and the commutator
 $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ is anti-fixed, both to machine precision, and their sum is
 the composite $\tilde P\tilde Q$.
@@ -163,7 +163,7 @@ material" and to say "$B$ is negative on it" are the same statement. The sign of
 computation that stays inside one sector; on a pair the form returns a varying real number, and it is the
 sign of its diagonal that marks the sector, with no metric content at all.
 
-**Remark (verified).** On $100$ random elements of $\mathbb{M}_-$ the value $B(\tilde Q,\tilde Q)$ is
+**Remark (verified).**
 real and strictly negative, and on $100$ random elements of $\mathbb{M}_+$ it is real and strictly
 positive; the Gram matrices on the two bases are exactly $-\mathrm{I}_4$ and $+\mathrm{I}_4$.
 
@@ -181,7 +181,7 @@ real; off them it is complex, and its imaginary part is exactly the pairing of t
 $\mathrm{Im}\,B(\tilde P,\tilde Q)=\mathrm{Im}\,\mathrm{Sc}(\tilde P_-\tilde Q_++\tilde P_+\tilde Q_-)$,
 so $B$ is real exactly when the two elements lie in the same sector. Read physically, **a composition of
 like elements carries no imaginary part, and an imaginary part is the mark of a composition of a material
-operation with an informational state.** *Verified on $100$ random pairs, max deviation
+operation with an informational state.**
 $8.9\times10^{-16}$.*
 
 ## The Sector Sign on the Remarkable Subspaces
@@ -240,7 +240,7 @@ component that flips the projection into its complement. What is proved is the a
 material idempotent; the identification of the resolved and unresolved parts with the measured and
 unmeasured components is a reading. The idempotent in physics is owned by *The Biquaternion Vacuum as a
 Minimal Idempotent* and *Decoherence as Idempotent Projection*, and the decomposition that the projection
-induces is the mathematics of *Biquaternion Ideals and Peirce Decomposition*.
+induces is the mathematics of *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
 **Remark (verified).** On unit Euclidean elements of $\mathbb{M}_-$ the residual
 $\lVert\tilde\Pi^{2}-\tilde\Pi\rVert_E$ is at least $\sqrt2$, so the idempotent equation fails on the
@@ -303,15 +303,15 @@ negative on $\mathbb{M}_-$ and positive on $\mathbb{M}_+$.
 The article states one cell of the grid of four, and the boundary of the cell is what it must declare.
 
 - **$B$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
-  causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\mathbb{M}_-$.
+causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\mathbb{M}_-$.
 - **$B$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
-  level data of the general quaternionic bilinear form, owned by *Biquaternion Norm and Invertibility*; the worked
-  case shows the two forms giving different numbers on the same element.
+level data of the general quaternionic bilinear form, owned by *Biquaternion Norm and Invertibility*; the worked
+case shows the two forms giving different numbers on the same element.
 - **$B$ is not positivity.** The positive definite form of the state space and of the Born pairing is the
-  Hermitian form of the sesqualgebra block, which is $+B$ on $\mathbb{M}_+$ and $-B$ on $\mathbb{M}_-$;
-  positivity is blind to the sector.
+Hermitian form of the sesqualgebra block, which is $+B$ on $\mathbb{M}_+$ and $-B$ on $\mathbb{M}_-$;
+positivity is blind to the sector.
 - **$B$ is not the Krein form.** The indefinite metric of the fourth corner restricts to $(1,3)$ on all
-  four four-dimensional subspaces and so does not separate them.
+four four-dimensional subspaces and so does not separate them.
 
 **What the framework does not claim.** The reading does not say which physical operation an element
 represents, does not derive the Lorentz transformation or the measurement update from the ordinary
@@ -387,26 +387,26 @@ distinctions are labelled throughout: what is proved is the algebra, what is pro
 ## Further Reading
 
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the quaternion algebra, its
-  scalar part and its relation to $M_2(\mathbb{C})$.
+scalar part and its relation to $M_2(\mathbb{C})$.
 - F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the complex and real structures
-  on the biquaternion algebra and the sectors of the Hermitian conjugation.
+on the biquaternion algebra and the sectors of the Hermitian conjugation.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the spacetime
-  metric of signature $(-,+,+,+)$ and its contrast with a definite form.
+metric of signature $(-,+,+,+)$ and its contrast with a definite form.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw–Hill, 1980), for the four-vector,
-  the interval and the mass shell of the material sector.
+the interval and the mass shell of the material sector.
 - Mathematics article *The Four Pairings of the Biquaternion Algebra*
-  (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram
-  matrices and their signatures.
+(`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram
+matrices and their signatures.
 - Mathematics article *Remarkable Subspaces under the General Plain Algebra of Biquaternions*
-  (`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction of $B$ to
-  the remarkable subspaces.
-- Mathematics article *Biquaternion Ideals and Peirce Decomposition*
-  (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the decomposition a reference
-  projection induces.
+(`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction of $B$ to
+the remarkable subspaces.
+- Mathematics article *Ideals and Peirce Decomposition of the General Plain Algebra*
+(`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the decomposition a reference
+projection induces.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material
-  sector and its own physics.
+sector and its own physics.
 - Companion article *Biquaternion Norm and Invertibility*, for the interval, the light cone and the mass
-  shell.
+shell.
 - Companion article *The Four General Products and Their Physical Readings*, for the comparison of the four general products and the full restriction table.
 - Companion article *The Interval as the Square and the Charge of the Material Composition*, for the interval read as the
-  square of a product.
+square of a product.

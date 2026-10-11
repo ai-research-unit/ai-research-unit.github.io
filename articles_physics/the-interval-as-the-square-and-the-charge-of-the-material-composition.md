@@ -82,7 +82,7 @@ $$
 
 **Proof.** In the second display put $\tilde P=\tilde Q$: the vector part is
 $Q_0\mathbf Q-Q_0\mathbf Q-\mathbf Q\times\mathbf Q=0$, because the cross product of a vector with itself
-vanishes, and the scalar part is $Q_0^{2}+(\mathbf Q,\mathbf Q)=N(\tilde Q)$. 
+vanishes, and the scalar part is $Q_0^{2}+(\mathbf Q,\mathbf Q)=N(\tilde Q)$.
 
 Every square of a single element therefore lands in the **centre** of the algebra, and on the central
 line it lands on a definite value. Two consequences are used below. The symmetrisation is central,
@@ -91,7 +91,7 @@ discrepancy of the two orders is purely a vector,
 $\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q$. The
 article does not develop either; it needs only that the square is central.
 
-**Remark (verified).** The identity was recomputed on $100$ random biquaternions in exact complex
+**Remark (verified).**
 arithmetic; the maximum deviation of $\tilde Q^{\natural}\tilde Q-N(\tilde Q)e_0$ from zero is
 $8.9\times10^{-16}$, machine precision. The identity is exact algebra and the numerical check confirms the
 conventions with which it is written.
@@ -116,7 +116,7 @@ $$
 
 the diagonal value of the general plain bilinear form $B$ of *The Ordinary Product and the Material Sector*.
 
-**Proof.** Distribute the product and use $\mathbf Q^{2}=-(\mathbf Q,\mathbf Q)$ for a vector part. 
+**Proof.** Distribute the product and use $\mathbf Q^{2}=-(\mathbf Q,\mathbf Q)$ for a vector part.
 
 The two squares differ in the sign of the vector pairing, and that single sign is the whole difference
 between a Euclidean square and the interval:
@@ -155,7 +155,7 @@ $$
 
 **Proof.** $N(\tilde P\star\tilde Q)=N(\tilde P^{\natural}\tilde Q)=N(\tilde P^{\natural})N(\tilde Q)$ by
 the multiplicativity of $N$ under the ordinary product, and $N(\tilde P^{\natural})=N(\tilde P)$ because
-the natural conjugation is an anti-automorphism that preserves the norm. 
+the natural conjugation is an anti-automorphism that preserves the norm.
 
 The interval therefore turns the material composition into multiplication of numbers. That is the
 definition of a **multiplicative charge**: composing two material operations does not add their intervals,
@@ -174,7 +174,7 @@ whose kernel is the set of **interval-one** operations, $\{\tilde Q:N(\tilde Q)=
 the multiplicativity still holds as an identity of complex numbers, and that extension is what closes the
 cone.
 
-**Remark (verified).** The multiplicativity was recomputed on $100$ random pairs, with maximum deviation
+**Remark (verified).**
 $9.0\times10^{-14}$; and $100$ random pairs of interval-one elements were again of interval one, with the
 same precision. The interval-one set is closed here and not merely nearly so.
 
@@ -185,7 +185,7 @@ $N(\tilde P\star\tilde Q)=0$ and $N(\tilde Q\star\tilde P)=0$. The null set
 $\mathcal N=\{\tilde Q:N(\tilde Q)=0\}$ is closed under the quaternionic product on either side.
 
 **Proof.** The value of $N$ on the product is the product of the values, and a product of complex numbers
-vanishes when a factor does; the reversed order is the same computation. 
+vanishes when a factor does; the reversed order is the same computation.
 
 The general form of the statement is the level-set law
 $\{N=\lambda\}\star\{N=\mu\}\subseteq\{N=\lambda\mu\}$. A level set preserved by the product must satisfy
@@ -202,7 +202,7 @@ an additive conserved quantity that this interval is not.
 
 **Remark (verified).** On five explicitly null elements — $e_0+ie_1$, $e_1+ie_2$, $e_1-ie_2$, $ie_0+e_1$
 and $ie_0+e_2$ — every norm is **exactly** $0$, and in the whole $5\times5$ table of products, in both
-orders, the value of $N$ is exactly $0$ and not merely small. Over $100$ random pairs drawn from
+orders, the value of $N$ is exactly $0$ and not merely small.
 $\{N=c\}$ for $c=0$ and $c=1$ the product lies in the same level set, with deviation $4.4\times10^{-15}$
 for $c=1$, while for $c=2$, $c=\tfrac12$ and $c=-1$ the product is off the level set by $2$, $0.25$ and
 $2$ respectively. No other level set is preserved.
@@ -271,7 +271,7 @@ $Q_0=ict$ is purely imaginary, the $Q_k$ are real, and $N(\tilde Q)=Q_0^{2}+\mat
 is real. The unit $e_0$ is Hermitian, so $\mathbb{R}e_0\subseteq\mathbb{M}_+$. The square is
 $N(\tilde Q)e_0$ by the square identity.
 
-**Remark (verified).** The statement was recomputed on $100$ random material elements: the square is
+**Remark (verified).**
 central and real, and equals $N(\tilde Q)e_0$, to machine precision on all of them.
 
 **Reading.** The interval of a material operation is an **informational scalar**. Squaring is therefore a
@@ -318,44 +318,44 @@ any later block; it is recorded here for the name and for the exact reason it va
 composition**. Each clause below names a proved identity, and each is labelled as a reading.
 
 - **The interval of a material operation is its square.** On the material coordinate
-  $\tilde Q=ict\,e_0+\mathbf x$ the square is $(-c^{2}t^{2}+\mathbf x^{2})e_0$, the Minkowski interval.
-  The interval, the four-velocity, the four-momentum and the rotor inverse are worked out in *Biquaternion
-  Norm and Invertibility* and are cited, not repeated.
+$\tilde Q=ict\,e_0+\mathbf x$ the square is $(-c^{2}t^{2}+\mathbf x^{2})e_0$, the Minkowski interval.
+The interval, the four-velocity, the four-momentum and the rotor inverse are worked out in *Biquaternion
+Norm and Invertibility* and are cited, not repeated.
 - **The massless shell is the vanishing of the square, and the mass shell a level set of it.** A
-  four-momentum on shell has square $N(\tilde P)=-m^{2}c^{2}$, so the mass shell is
-  $\{N=-m^{2}c^{2}\}$, interpolating between the null cone at $m=0$ and the timelike interior.
+four-momentum on shell has square $N(\tilde P)=-m^{2}c^{2}$, so the mass shell is
+$\{N=-m^{2}c^{2}\}$, interpolating between the null cone at $m=0$ and the timelike interior.
 - **Composition multiplies intervals.** The interval is a square of the composition and not a component
-  of it, which is why it composes multiplicatively and not additively.
+of it, which is why it composes multiplicatively and not additively.
 - **Lightlike composes to lightlike.** The null cone is the absorbing set of the composition.
 - **Composition cannot generate mass.** Because the interval of a composite is the product of the
-  intervals, a lightlike factor stays lightlike under composition with anything, and mass is never
-  produced additively by the product. The massive class is not closed, and the causal type of a composite
-  is the product of the causal types.
+intervals, a lightlike factor stays lightlike under composition with anything, and mass is never
+produced additively by the product. The massive class is not closed, and the causal type of a composite
+is the product of the causal types.
 - **The square is informational.** On the material sector $N$ is real, so the square lands on the real
-  central line $\mathbb{R}e_0$, which lies in $\mathbb{M}_+$. Squaring is a map $\mathbb{M}_-\to\mathbb{M}_+$,
-  and the interval of a material operation is an informational scalar.
+central line $\mathbb{R}e_0$, which lies in $\mathbb{M}_+$. Squaring is a map $\mathbb{M}_-\to\mathbb{M}_+$,
+and the interval of a material operation is an informational scalar.
 - **The interval is complex, and its imaginary part is a sector overlap.** $N$ is real on each sector and
-  complex only on an element that mixes them; the imaginary part is the overlap of the material and
-  informational contents.
+complex only on an element that mixes them; the imaginary part is the overlap of the material and
+informational contents.
 - **The interval-one operations are the interval-preserving operations.** They form a group **under the
-  ordinary product**, the group $\{\tilde U:N(\tilde U)=1\}$, of complex dimension three, which is the
-  two-fold cover of the restricted Lorentz group. The group statement belongs to the associative product
-  and not to the material one, for the reason given below.
+ordinary product**, the group $\{\tilde U:N(\tilde U)=1\}$, of complex dimension three, which is the
+two-fold cover of the restricted Lorentz group. The group statement belongs to the associative product
+and not to the material one, for the reason given below.
 - **The multiplicative law is an additive law in the logarithm.** The proved identity
-  $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$ is a law of multiplication, and wherever $N\neq0$ a
-  logarithm turns it into a law of addition,
-  $\ln N(\tilde P\star\tilde Q)=\ln N(\tilde P)+\ln N(\tilde Q)$. The quantity $\tfrac12\ln N$ is therefore
-  offered, **as a reading**, as the **additive potential** whose exponential is the interval: it adds over
-  the composition where the interval multiplies. The logarithm is not introduced only for this reading. It
-  is already the quantity in which the framework measures information loss: the Lyapunov exponent of the
-  informational sector is
-  $\lambda=\lim_{t\to\infty}\tfrac1{2t}\log\bigl(\lvert N(\delta\tilde\rho(t))\rvert/\lvert N(\delta\tilde\rho(0))\rvert\bigr)$,
-  with the factor $\tfrac12$ forced by the quadratic form, and the multiplicativity of $N$ is
-  what makes the logarithm additive along a flow and the limit finite (*The Lyapunov Exponent and
-  Information Loss in the Biquaternion Framework*). Read on a material element $ict\,e_0+\mathbf x$ the
-  potential is half the logarithm of the magnitude of the Minkowski interval, $-c^{2}t^{2}+\mathbf x^{2}$.
-  The algebra proves the multiplicative law and nothing about the physical use of its logarithm, and the
-  additive-potential name is the framework's.
+$N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$ is a law of multiplication, and wherever $N\neq0$ a
+logarithm turns it into a law of addition,
+$\ln N(\tilde P\star\tilde Q)=\ln N(\tilde P)+\ln N(\tilde Q)$. The quantity $\tfrac12\ln N$ is therefore
+offered, **as a reading**, as the **additive potential** whose exponential is the interval: it adds over
+the composition where the interval multiplies. The logarithm is not introduced only for this reading. It
+is already the quantity in which the framework measures information loss: the Lyapunov exponent of the
+informational sector is
+$\lambda=\lim_{t\to\infty}\tfrac1{2t}\log\bigl(\lvert N(\delta\tilde\rho(t))\rvert/\lvert N(\delta\tilde\rho(0))\rvert\bigr)$,
+with the factor $\tfrac12$ forced by the quadratic form, and the multiplicativity of $N$ is
+what makes the logarithm additive along a flow and the limit finite (*The Lyapunov Exponent and
+Information Loss in the Biquaternion Framework*). Read on a material element $ict\,e_0+\mathbf x$ the
+potential is half the logarithm of the magnitude of the Minkowski interval, $-c^{2}t^{2}+\mathbf x^{2}$.
+The algebra proves the multiplicative law and nothing about the physical use of its logarithm, and the
+additive-potential name is the framework's.
 
 ## The Limits of the Reading
 
@@ -482,27 +482,27 @@ Automorphisms*; and the comparison of the four general products by *The Four Gen
 ## Further Reading
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
-  which this block sits.
+which this block sits.
 - Mathematics article *Introduction to the General Quaternionic Algebra of Biquaternions*
-  (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product, its table and its
-  square.
+(`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product, its table and its
+square.
 - Mathematics article *Idempotents of the Quaternionic Product*
-  (`articles_maths/idempotents-of-the-quaternionic-product.md`), for the square lemma.
+(`articles_maths/idempotents-of-the-quaternionic-product.md`), for the square lemma.
 - Mathematics article *The Associator and the Ternary Product of the Quaternionic Product*
-  (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
-  associator and the failure of the weaker identities.
+(`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
+associator and the failure of the weaker identities.
 - Companion article *Biquaternion Norm and Invertibility*, for the interval, the multiplicativity under the
-  ordinary product, the invertibility criterion, the four-velocity and the mass shell.
+ordinary product, the invertibility criterion, the four-velocity and the mass shell.
 - Companion article *The Ordinary Product and the Material Sector*, for the ordinary product, the form $B$
-  and the Euclidean square.
+and the Euclidean square.
 - Companion article *Why the Material Composition Is Oriented and Cannot Measure*, for the orientation of
-  the two slots, the left unit and the absence of a material projection.
+the two slots, the left unit and the absence of a material projection.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Zero Divisors as a
-  Physical Locus in Biquaternionic Form*, for the cone.
+Physical Locus in Biquaternionic Form*, for the cone.
 - Companion articles *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian
-  Subspace $\mathbb{M}_+$ as the Informational Sector*, for the two sectors whose square-coupling this
-  article reads.
+Subspace $\mathbb{M}_+$ as the Informational Sector*, for the two sectors whose square-coupling this
+article reads.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the Minkowski
-  interval read off a product of the spacetime algebra.
+interval read off a product of the spacetime algebra.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the quadratic form of the
-  quaternion algebra, its zero divisors and its group of units.
+quaternion algebra, its zero divisors and its group of units.

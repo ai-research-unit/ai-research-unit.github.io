@@ -24,7 +24,7 @@ The last condition is not an extra axiom: it is forced by the other three when $
 
 **Proposition (the degree count).** Let $*$ be a $\varsigma$-semilinear anti-automorphism of a graded algebra $A$ that shifts the degree by a constant, $\lvert x^{*}\rvert=\lvert x\rvert+\delta$ with $\delta\in\{0,1\}$. Then $\delta=0$.
 
-**Proof.** Apply the rule to a pair of homogeneous elements whose product does not vanish, for instance $x=y=1$, where $xy=1$ and neither side is $0$. The two sides have degrees $\lvert (xy)^{*}\rvert=\lvert xy\rvert+\delta=\lvert x\rvert+\lvert y\rvert+\delta$ and $\lvert y^{*}x^{*}\rvert=\lvert y^{*}\rvert+\lvert x^{*}\rvert=\lvert x\rvert+\lvert y\rvert+2\delta$; these are equal in $\mathbb{Z}/2$, so $\delta=2\delta$ and $\delta=0$. $\square$
+**Proof.** Apply the rule to a pair of homogeneous elements whose product does not vanish, for instance $x=y=1$, where $xy=1$ and neither side is $0$. The two sides have degrees $\lvert (xy)^{*}\rvert=\lvert xy\rvert+\delta=\lvert x\rvert+\lvert y\rvert+\delta$ and $\lvert y^{*}x^{*}\rvert=\lvert y^{*}\rvert+\lvert x^{*}\rvert=\lvert x\rvert+\lvert y\rvert+2\delta$; these are equal in $\mathbb{Z}/2$, so $\delta=2\delta$ and $\delta=0$.
 
 **Remark.** The count is the whole reason the graded sesquilinear structure is simpler than a general one: an anti-automorphism of a graded algebra cannot shift the degree, so the involution of a graded sesqualgebra is always **even**, and the order-two anti-map that carries the Koszul sign is not an involution of the sesquilinear kind but the superinvolution of the next section. The action by scalars is even because $k$ sits in degree $0$, so the base involution $\varsigma$ never meets the grading.
 
@@ -46,7 +46,7 @@ $$
 
 so that the product is a map of graded sets $A^{i}\times(A^{\varsigma})^{j}\to A^{i+j}$.
 
-**Proof.** The scalar rules are the scalar rules of the algebra and of the involution; the bilinearity on $A\times A^{\varsigma}$ is that of *The Sesquilinear Product*. For the degree, $\lvert x\star y\rvert=\lvert x\rvert+\lvert y^{*}\rvert=\lvert x\rvert+\lvert y\rvert$, because the involution is even by the count; the last statement is that equality read on homogeneous elements. $\square$
+**Proof.** The scalar rules are the scalar rules of the algebra and of the involution; the bilinearity on $A\times A^{\varsigma}$ is that of *The Sesquilinear Product*. For the degree, $\lvert x\star y\rvert=\lvert x\rvert+\lvert y^{*}\rvert=\lvert x\rvert+\lvert y\rvert$, because the involution is even by the count; the last statement is that equality read on homogeneous elements.
 
 **Remark.** The product is homogeneous of degree zero precisely because the involution is even, and this is the point at which the degree count of the proposition enters the calculus: a degree-shifting involution would make $\star$ shift the degree by $\delta$ and there would be no graded sesqualgebra. The graded sesquilinear product is therefore a graded product in the ordinary sense of the graded category, with the conjugate-linear slot carried on the conjugate module $A^{\varsigma}$ and its grading inherited from $A$.
 
@@ -66,7 +66,7 @@ for homogeneous $x,y$. The two classes agree on the even part, and on two odd el
 
 **Proposition (the two classes do not mix).** Let $\sigma$ be of either class. Then the composites $\alpha\sigma$ and $\sigma\alpha$ are again of the same class as $\sigma$; no composite with the grade involution passes from one class to the other.
 
-**Proof.** The grade involution is scalar on each graded piece and commutes with every parity-preserving map, so $\alpha\sigma=\sigma\alpha$; hence $(\alpha\sigma)^{2}=\alpha\sigma\alpha\sigma=\alpha^{2}\sigma^{2}=\mathrm{id}$, and the composite is again of order two. The composite of two parity-preserving maps is parity-preserving, and the Koszul sign of $\sigma$ is multiplied by $1$ under composition with $\alpha$, which is scalar on homogeneous elements. Hence the class is unchanged. $\square$
+**Proof.** The grade involution is scalar on each graded piece and commutes with every parity-preserving map, so $\alpha\sigma=\sigma\alpha$; hence $(\alpha\sigma)^{2}=\alpha\sigma\alpha\sigma=\alpha^{2}\sigma^{2}=\mathrm{id}$, and the composite is again of order two. The composite of two parity-preserving maps is parity-preserving, and the Koszul sign of $\sigma$ is multiplied by $1$ under composition with $\alpha$, which is scalar on homogeneous elements. Hence the class is unchanged.
 
 ### The Sign Rule of the Product
 
@@ -79,7 +79,7 @@ $$
 \{\{E_{11},E_{12},E_{22}\},E_{21},E_{22}\}-\{E_{22},\{E_{12},E_{11},E_{21}\},E_{22}\}+\{E_{22},E_{21},\{E_{11},E_{12},E_{22}\}\}=-2E_{22},
 $$
 
-so the identity fails and the ternary product is not that of a sesqualgebra. $\square$
+so the identity fails and the ternary product is not that of a sesqualgebra.
 
 **Remark.** The sign rule of the graded product therefore does not pass into the sesquilinear structure; what passes is the choice of the class, and the sesquilinear kind selects the graded involution. The superinvolution is the superalgebra analogue of the conjugation, and it is the wrong one for the identity: it reverses the product with a Koszul sign on two odd elements, and the ternary product built from it carries the sign into the third slot, where the ternary identity is not written to receive it. The two classes agree on the even part, so the even part of a superalgebra is a sesqualgebra for either; the odd part is where they part, and it is exactly where the ternary identity fails. The two classes coincide altogether exactly when $A^{1}A^{1}=0$, the Koszul sign then multiplying a product that vanishes; in that case a superinvolution is a graded involution and there is no choice to make, and when two odd elements have a nonvanishing product the two classes are genuinely distinct and the superinvolution is the wrong one for the sesquilinear kind.
 
@@ -107,7 +107,7 @@ $$
 
 the last identity for a nonvanishing $a\star m$, the zero element carrying no degree.
 
-**Proof.** In the module variable, $a\star(\lambda m)=a\cdot\theta(\lambda m)=a\cdot\varsigma(\lambda)\theta(m)=\varsigma(\lambda)(a\star m)$, using the $\varsigma$-semilinearity of $\theta$; in the algebra variable it is the linearity of the action; and the degree is $\lvert a\star m\rvert=\lvert a\rvert+\lvert\theta(m)\rvert=\lvert a\rvert+\lvert m\rvert$, using that $\theta$ is even and the action has degree zero. $\square$
+**Proof.** In the module variable, $a\star(\lambda m)=a\cdot\theta(\lambda m)=a\cdot\varsigma(\lambda)\theta(m)=\varsigma(\lambda)(a\star m)$, using the $\varsigma$-semilinearity of $\theta$; in the algebra variable it is the linearity of the action; and the degree is $\lvert a\star m\rvert=\lvert a\rvert+\lvert\theta(m)\rvert=\lvert a\rvert+\lvert m\rvert$, using that $\theta$ is even and the action has degree zero.
 
 **Remark.** The derived action is not an action: it is not associative in general, and it is not even $k$-bilinear, because the module variable is read through the conjugation. It is the module-level analogue of the derived product $x\star y=xy^{*}$, and the conjugation $\theta$ is the datum that the sesquilinear kind adds to the graded action: the action map $\rho$ of *The Graded Action on a Module over an Algebra* is the case $\theta=\mathrm{id}$, and it exists for every graded module, while the derived action exists only when the module carries a conjugation.
 
@@ -123,11 +123,11 @@ The condition is stated on the even part only, and it is a condition and not a c
 
 **Proposition (a compatible module).** Let $M=k^{1|1}$ carry the standard action $E_{ij}\cdot f_{k}=\delta_{jk}f_{i}$ and the conjugation $\theta(\lambda f_{1}+\mu f_{2})=\varsigma(\lambda)f_{1}+\varsigma(\mu)f_{2}$. Then the module is compatible.
 
-**Proof.** The even part is spanned by $E_{11}$ and $E_{22}$ and the identity is linear in $a$, so it is enough to check the two idempotents. For $a=E_{11}$ and $m=\lambda f_{1}+\mu f_{2}$ one has $a\cdot m=\lambda f_{1}$, whence $\theta(a\cdot m)=\varsigma(\lambda)f_{1}$, while $E_{11}^{*}=E_{11}$ and $E_{11}\cdot\theta(m)=E_{11}\cdot(\varsigma(\lambda)f_{1}+\varsigma(\mu)f_{2})=\varsigma(\lambda)f_{1}$; the case $a=E_{22}$ is the same with the second coordinate. $\square$
+**Proof.** The even part is spanned by $E_{11}$ and $E_{22}$ and the identity is linear in $a$, so it is enough to check the two idempotents. For $a=E_{11}$ and $m=\lambda f_{1}+\mu f_{2}$ one has $a\cdot m=\lambda f_{1}$, whence $\theta(a\cdot m)=\varsigma(\lambda)f_{1}$, while $E_{11}^{*}=E_{11}$ and $E_{11}\cdot\theta(m)=E_{11}\cdot(\varsigma(\lambda)f_{1}+\varsigma(\mu)f_{2})=\varsigma(\lambda)f_{1}$; the case $a=E_{22}$ is the same with the second coordinate.
 
 **Proposition (the condition is not automatic).** On the regular module $M=A$ with the conjugation $\theta=*$, the condition fails: in the matrix superalgebra below, $\theta(E_{11}E_{12})=E_{21}$ while $E_{11}^{*}\cdot\theta(E_{12})=0$.
 
-**Proof.** $E_{11}E_{12}=E_{12}$ and $E_{12}^{*}=E_{21}$; and $E_{11}^{*}=E_{11}$, $E_{12}^{*}=E_{21}$, so the right-hand side is $E_{11}E_{21}=0$, the product picking the first row of $E_{21}$. $\square$
+**Proof.** $E_{11}E_{12}=E_{12}$ and $E_{12}^{*}=E_{21}$; and $E_{11}^{*}=E_{11}$, $E_{12}^{*}=E_{21}$, so the right-hand side is $E_{11}E_{21}=0$, the product picking the first row of $E_{21}$.
 
 **Remark.** The condition is therefore satisfiable and not automatic: it holds for the module of the first proposition and it fails for the regular module with the involution as the conjugation, and it fails on the even part, before the odd part is reached. It is a genuine restriction on the pair (module, conjugation).
 
@@ -139,7 +139,7 @@ $$
 
 for the coefficientwise conjugation, and with $a=E_{12}$ and $m=f_{1}$ the left-hand side is $0$ while the right-hand side is $(E_{12})^{*}\theta(f_{1})=E_{21}\theta(f_{1})$, which is nonzero for every conjugation.
 
-**Proof.** The first display is the computation with the coefficientwise conjugation, $\theta(f_{1})=f_{1}$. For the second, $E_{12}f_{1}=0$, so the left-hand side is $\theta(0)=0$, while the right-hand side is $E_{21}\theta(f_{1})$; the conjugation preserves the grading, so $\theta(f_{1})=cf_{1}$ with $c\neq0$, since $\theta(f_{1})=0$ would give $f_{1}=\theta^{2}(f_{1})=0$; hence the right-hand side is $cf_{2}\neq0$. $\square$
+**Proof.** The first display is the computation with the coefficientwise conjugation, $\theta(f_{1})=f_{1}$. For the second, $E_{12}f_{1}=0$, so the left-hand side is $\theta(0)=0$, while the right-hand side is $E_{21}\theta(f_{1})$; the conjugation preserves the grading, so $\theta(f_{1})=cf_{1}$ with $c\neq0$, since $\theta(f_{1})=0$ would give $f_{1}=\theta^{2}(f_{1})=0$; hence the right-hand side is $cf_{2}\neq0$.
 
 **Remark.** The two statements together are the **graded $\varsigma$-compatibility**: the conjugation intertwines the action of the even part, and it cannot intertwine the action of the odd part when the odd part acts. The even part of a graded sesqualgebra therefore acts on a compatible module as a sesquilinear module, with the conjugation as the intertwiner, and the odd part obstructs. The obstruction is not a matter of degree, the two sides of the odd identity falling in the same graded piece; it is the involution, which reverses the order of a product on two odd elements and does not reverse it on the even part. The condition of the definition is stated on the even part because the odd part cannot carry it, and the even part is the largest part of the algebra on which the conjugation can be a module intertwiner for a module with a nontrivial odd action.
 
@@ -147,7 +147,7 @@ for the coefficientwise conjugation, and with $a=E_{12}$ and $m=f_{1}$ the left-
 
 **Theorem (the degeneration).** Put $\varsigma=\mathrm{id}$ and $*=\mathrm{id}$. Then the involution is the identity, the conjugation of a graded sesquilinear module is the identity, the derived action is the action, and the article reduces to *The Graded Action on a Module over an Algebra*.
 
-**Proof.** With $\varsigma=\mathrm{id}$ the involution is $k$-linear, and with $*=\mathrm{id}$ the derived product is the product and the derived action is the action; a conjugation that is $\varsigma$-linear and involutive is available as the identity, and the compatibility of the previous section becomes the trivial identity $\theta(a\cdot m)=a\cdot\theta(m)$. The degree count and the graded module structure are those of the graded action. $\square$
+**Proof.** With $\varsigma=\mathrm{id}$ the involution is $k$-linear, and with $*=\mathrm{id}$ the derived product is the product and the derived action is the action; a conjugation that is $\varsigma$-linear and involutive is available as the identity, and the compatibility of the previous section becomes the trivial identity $\theta(a\cdot m)=a\cdot\theta(m)$. The degree count and the graded module structure are those of the graded action.
 
 **Remark.** The degeneration has two independent steps, as in *Sesqualgebras*: $\varsigma=\mathrm{id}$ removes the conjugate-linearity, and $*=\mathrm{id}$ removes the involution. What is lost in the two steps is the new datum of the article, the conjugation, and the obstruction that comes with it; what remains is the graded action with its degree rule and its Koszul sign. The graded sesquilinear action is therefore not a generalisation of the graded action but a structure on top of it, with one more datum and one more obstruction.
 

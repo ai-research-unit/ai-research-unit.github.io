@@ -41,7 +41,7 @@ $$
 
 Consequently $L_{\tilde A}$ is $\mathbb{R}$-linear and lies in the space of the conjugate-linear operators, while $R_{\tilde A}$ is $\mathbb{C}$-linear.
 
-**Proof.** This is the parity theorem of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Parities*, with $\varsigma$ the complex conjugation, read on $\mathbb{B}$. In coordinates, $L_{\tilde A}(\lambda\tilde X)=\tilde A(\lambda\tilde X)^{*}=\tilde A\overline{\lambda}\tilde X^{*}=\overline{\lambda}L_{\tilde A}(\tilde X)$ by the conjugate-linearity of ${}^{*}$, and $R_{\tilde A}(\lambda\tilde X)=(\lambda\tilde X)\tilde A^{*}=\lambda R_{\tilde A}(\tilde X)$. $\square$
+**Proof.** This is the parity theorem of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Parities*, with $\varsigma$ the complex conjugation, read on $\mathbb{B}$. In coordinates, $L_{\tilde A}(\lambda\tilde X)=\tilde A(\lambda\tilde X)^{*}=\tilde A\overline{\lambda}\tilde X^{*}=\overline{\lambda}L_{\tilde A}(\tilde X)$ by the conjugate-linearity of ${}^{*}$, and $R_{\tilde A}(\lambda\tilde X)=(\lambda\tilde X)\tilde A^{*}=\lambda R_{\tilde A}(\tilde X)$.
 
 **Remark.** The two families have opposite parities, and this is the operator statement of the two scalar rules. Over $\mathbb{C}$ no single space of $\mathbb{C}$-linear endomorphisms contains both families: a conjugate-linear and a linear map can agree only when they are both zero at every point where the scalars act, which forces the vanishing of the operator. The common home of the two families is the space of the $\mathbb{R}$-linear endomorphisms of the eight-dimensional real space $\mathbb{B}$.
 
@@ -57,7 +57,7 @@ $$
 L_{e_\mu}(\tilde X)=e_\mu\tilde X^{*}, \qquad R_{e_\mu}(\tilde X)=\tilde X e_\mu^{*}, \qquad e_\mu^{*}=\varepsilon_\mu e_\mu .
 $$
 
-**Proof.** Substituting $\tilde A=e_\mu$ in the definition and using $e_\mu^{*}=\varepsilon_\mu e_\mu$ from the multiplication table of *Introduction to the General Plain Sesqualgebra of Biquaternions* gives the two displays. $\square$
+**Proof.** Substituting $\tilde A=e_\mu$ in the definition and using $e_\mu^{*}=\varepsilon_\mu e_\mu$ from the multiplication table of *Introduction to the General Plain Sesqualgebra of Biquaternions* gives the two displays.
 
 ### The Parameter Maps
 
@@ -67,7 +67,7 @@ $$
 L_{\lambda\tilde A}=\lambda L_{\tilde A}, \qquad R_{\lambda\tilde A}=\overline{\lambda}R_{\tilde A}, \qquad \lambda\in\mathbb{C} .
 $$
 
-**Proof.** $L_{\lambda\tilde A}(\tilde X)=(\lambda\tilde A)\star\tilde X=\lambda L_{\tilde A}(\tilde X)$ by the first scalar rule, and $R_{\lambda\tilde A}(\tilde X)=\tilde X\star(\lambda\tilde A)=\overline{\lambda}R_{\tilde A}(\tilde X)$ by the second; these are the two displays of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Operators*. $\square$
+**Proof.** $L_{\lambda\tilde A}(\tilde X)=(\lambda\tilde A)\star\tilde X=\lambda L_{\tilde A}(\tilde X)$ by the first scalar rule, and $R_{\lambda\tilde A}(\tilde X)=\tilde X\star(\lambda\tilde A)=\overline{\lambda}R_{\tilde A}(\tilde X)$ by the second; these are the two displays of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Operators*.
 
 **Remark.** The parities are exchanged between the family and its parameter: the left family is linear in its parameter and its values are conjugate-linear, the right family is conjugate-linear in its parameter and its values are linear. The product of the two parities is the same on the two sides, which is why the two families carry the same information through opposite routes.
 
@@ -81,7 +81,7 @@ $$
 
 the involution and the identity.
 
-**Proof.** $L_{e_0}(\tilde X)=e_0\star\tilde X=\tilde X^{*}$, and $R_{e_0}(\tilde X)=\tilde X\star e_0=\tilde X$ by the right unit of *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*The Right Unit*. $\square$
+**Proof.** $L_{e_0}(\tilde X)=e_0\star\tilde X=\tilde X^{*}$, and $R_{e_0}(\tilde X)=\tilde X\star e_0=\tilde X$ by the right unit of *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*The Right Unit*.
 
 **Remark.** The unit therefore gives the two extreme operators: the involution on the left side and the identity on the right. The identity of the composition is a right multiplication and not a left one, which is the operator form of the one-sided unit and the first hint that the two families are not symmetric.
 
@@ -97,7 +97,7 @@ $$
 
 the ordinary two-sided multiplication with the parameters $\tilde A$ and $\tilde B^{*}$. A nonzero such composite is $\mathbb{C}$-linear, so it is not a left multiplication; the left family is therefore not closed under composition, contains no identity, and forms no monoid.
 
-**Proof.** $L_{\tilde A}L_{\tilde B}(\tilde X)=L_{\tilde A}(\tilde B\tilde X^{*})=\tilde A(\tilde B\tilde X^{*})^{*}=\tilde A\tilde X\tilde B^{*}=T_{\tilde A,\tilde B^{*}}(\tilde X)$, using $(uv)^{*}=v^{*}u^{*}$. The composite is $\mathbb{C}$-linear, as the composition of two conjugate-linear maps; a nonzero left multiplication is conjugate-linear, so the two can agree only if the composite vanishes, that is only if $\tilde A=0$ or $\tilde B=0$. The identity, being $\mathbb{C}$-linear, is not a left multiplication either. $\square$
+**Proof.** $L_{\tilde A}L_{\tilde B}(\tilde X)=L_{\tilde A}(\tilde B\tilde X^{*})=\tilde A(\tilde B\tilde X^{*})^{*}=\tilde A\tilde X\tilde B^{*}=T_{\tilde A,\tilde B^{*}}(\tilde X)$, using $(uv)^{*}=v^{*}u^{*}$. The composite is $\mathbb{C}$-linear, as the composition of two conjugate-linear maps; a nonzero left multiplication is conjugate-linear, so the two can agree only if the composite vanishes, that is only if $\tilde A=0$ or $\tilde B=0$. The identity, being $\mathbb{C}$-linear, is not a left multiplication either.
 
 **Remark.** The obstruction is the general one of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Standard Example*: the composition law $L_{\tilde A}L_{\tilde B}=L_{\tilde A\star\tilde B}$ would require the product to be associative, and the collapse theorem of *Sesqualgebras* forbids that here, so the composite leaves the family. The residue is the two-sided multiplication $T_{\tilde A,\tilde B^{*}}$, which is the object of the sandwich article; the two compositions and the involution generate the whole operator theory of the multiplication.
 
@@ -109,9 +109,9 @@ $$
 R_{\tilde A}R_{\tilde B}=R_{\tilde A\tilde B} .
 $$
 
-So the right multiplications are closed under composition, they contain the identity $R_{e_0}$, and they form a monoid anti-isomorphic to the multiplicative monoid $(\mathbb{B},\cdot)$ of the algebra under $\tilde A\mapsto R_{\tilde A}$.
+So the right multiplications are closed under composition, they contain the identity $R_{e_0}$, and they form a monoid isomorphic to the multiplicative monoid $(\mathbb{B},\cdot)$ of the algebra under $\tilde A\mapsto R_{\tilde A}$, in the forward order.
 
-**Proof.** $R_{\tilde A}R_{\tilde B}(\tilde X)=R_{\tilde A}(\tilde X\tilde B^{*})=(\tilde X\tilde B^{*})\tilde A^{*}=\tilde X(\tilde A\tilde B)^{*}=R_{\tilde A\tilde B}(\tilde X)$. The identity is $R_{e_0}$, and the map $\tilde A\mapsto R_{\tilde A}$ reverses products, hence embeds the opposite monoid; its image is the whole right family. $\square$
+**Proof.** $R_{\tilde A}R_{\tilde B}(\tilde X)=R_{\tilde A}(\tilde X\tilde B^{*})=(\tilde X\tilde B^{*})\tilde A^{*}=\tilde X(\tilde A\tilde B)^{*}=R_{\tilde A\tilde B}(\tilde X)$. The identity is $R_{e_0}$, and the map $\tilde A\mapsto R_{\tilde A}$ reverses products, hence embeds the opposite monoid; its image is the whole right family.
 
 **Remark.** The asymmetry is the exact content of the two parities: a composite of two linear maps is linear, so the right family closes, while a composite of two conjugate-linear maps is linear, so the left family cannot. The general composition laws of *The Left and Right Multiplication Operators of a Sesqualgebra*, written $R_aR_b=T_{1,(ab)^{*}}$, agree with the theorem because $T_{1,c^{*}}$ is the right multiplication $R_c$.
 
@@ -127,7 +127,7 @@ $$
 
 So the composite of a left and a right multiplication, in the order left-of-right, is again a left multiplication; in the other order it is the **sandwich** of *The Sesquilinear Sandwich on the Biquaternions*, below in this group.
 
-**Proof.** $L_{\tilde A}R_{\tilde B}(\tilde X)=\tilde A(\tilde X\tilde B^{*})^{*}=\tilde A\tilde B\tilde X^{*}=L_{\tilde A\tilde B}(\tilde X)$. In the other order, $R_{\tilde A}L_{\tilde B}(\tilde X)=(\tilde B\tilde X^{*})\tilde A^{*}=\tilde B\tilde X^{*}\tilde A^{*}=S_{\tilde B,\tilde A}(\tilde X)$, and the last display is the definition of the sandwich in that article. $\square$
+**Proof.** $L_{\tilde A}R_{\tilde B}(\tilde X)=\tilde A(\tilde X\tilde B^{*})^{*}=\tilde A\tilde B\tilde X^{*}=L_{\tilde A\tilde B}(\tilde X)$. In the other order, $R_{\tilde A}L_{\tilde B}(\tilde X)=(\tilde B\tilde X^{*})\tilde A^{*}=\tilde B\tilde X^{*}\tilde A^{*}=S_{\tilde B,\tilde A}(\tilde X)$, and the last display is the definition of the sandwich in that article.
 
 **Remark.** The two mixed composites are not equal, and the difference is the failure of the left and the right multiplications to commute, $L_{\tilde A}R_{\tilde B}\neq R_{\tilde B}L_{\tilde A}$ in general: the first is the left multiplication $L_{\tilde A\tilde B}$, the second is a conjugate-linear sandwich, and the two can agree only when the sandwich happens to be a left multiplication, which the sandwich article shows it is not for general parameters. The witness is the pair $\tilde A=e_1$, $\tilde B=e_2$ at $\tilde X=e_0$: $L_{e_1}R_{e_2}(e_0)=e_1e_2=e_3$ while $R_{e_2}L_{e_1}(e_0)=e_1e_0^{*}e_2^{*}=e_1\cdot e_0\cdot(-e_2)=-e_3$.
 
@@ -141,7 +141,7 @@ $$
 
 the left multiplications, the right multiplications, the sandwiches and the ordinary two-sided multiplications, and it is a monoid with identity $R_{e_0}=T_{e_0,e_0}=\mathrm{id}$.
 
-**Proof.** The four composition laws of the two preceding theorems give $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$, $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde A\tilde B}$ and $R_{\tilde A}L_{\tilde B}=S_{\tilde B,\tilde A}$; the composition table of *The Sesquilinear Sandwich on the Biquaternions* closes the remaining cases, and every composite is in one of the four families. The identity belongs to the right family and to the two-sided family. $\square$
+**Proof.** The four composition laws of the two preceding theorems give $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$, $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde A\tilde B}$ and $R_{\tilde A}L_{\tilde B}=S_{\tilde B,\tilde A}$; the composition table of *The Sesquilinear Sandwich on the Biquaternions* closes the remaining cases, and every composite is in one of the four families. The identity belongs to the right family and to the two-sided family.
 
 **Remark.** The generated monoid is therefore not the union of the two regular representations but a four-parameter family, and the passage from the left family to the two-sided one is the residue of the failure of associativity. The table of the four composition laws is the operator form of the multiplication table of the sesqualgebra, and the two families of the bilinear products, which generate only the first two kinds, are the degenerate case.
 
@@ -159,7 +159,7 @@ They are the two halves of the regular representation of *The Left and Right Mul
 
 **Proposition (the multiplicativity).** The map $\lambda$ is $\mathbb{C}$-linear and satisfies $\lambda(\tilde A\star\tilde B)=\lambda(\tilde A)\lambda(\tilde B)$ for all $\tilde A,\tilde B$ if and only if the multiplication is associative; the map $\rho$ is conjugate-linear and satisfies $\rho(\tilde A\star\tilde B)=\rho(\tilde B)\rho(\tilde A)$ for all $\tilde A,\tilde B$ if and only if the multiplication is associative. Neither is multiplicative here.
 
-**Proof.** $\lambda(\tilde A\star\tilde B)(\tilde X)=(\tilde A\star\tilde B)\star\tilde X$ and $\lambda(\tilde A)\lambda(\tilde B)(\tilde X)=\tilde A\star(\tilde B\star\tilde X)$, which agree for every $\tilde X$ exactly when the product is associative; the computation for $\rho$ is the same with the two factors reversed. The product of $\mathbb{B}$ is not associative, by *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*Neither Associative Nor Commutative*. $\square$
+**Proof.** $\lambda(\tilde A\star\tilde B)(\tilde X)=(\tilde A\star\tilde B)\star\tilde X$ and $\lambda(\tilde A)\lambda(\tilde B)(\tilde X)=\tilde A\star(\tilde B\star\tilde X)$, which agree for every $\tilde X$ exactly when the product is associative; the computation for $\rho$ is the same with the two factors reversed. The product of $\mathbb{B}$ is not associative, by *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*Neither Associative Nor Commutative*.
 
 **Remark.** The right regular map is nevertheless close to multiplicative, by §*The Right Family Closes*: $\rho(\tilde A\tilde B)=\rho(\tilde A)\rho(\tilde B)$ with the plain product as the parameter, but the multiplication of the sesqualgebra is $\tilde A\star\tilde B=\tilde A\tilde B^{*}$ and not $\tilde A\tilde B$, so the law reads $\rho(\tilde A\star\tilde B)=\rho(\tilde B)\rho(\tilde A)$ and its failure is the conjugate in the parameter of the right family.
 
@@ -167,7 +167,7 @@ They are the two halves of the regular representation of *The Left and Right Mul
 
 **Proposition (the obstruction).** Let $\tilde A\neq0$ and suppose $L_{\tilde A}$ is $\mathbb{C}$-linear. Then $L_{\tilde A}=0$; consequently no nonzero left multiplication is an element of a $\mathbb{C}$-algebra representation of $\mathbb{B}$.
 
-**Proof.** The proposition is the obstruction of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Failure of a Single Linear Representation*, with $\varsigma$ the conjugation: $\mathbb{C}$-linearity would give $(\lambda-\overline{\lambda})(\tilde A\star\tilde X)=0$ for every $\lambda$ and $\tilde X$, and choosing a non-real $\lambda$ and an $\tilde X$ with $\tilde A\star\tilde X\neq0$ — which exists since $\tilde A\neq0$ — gives a contradiction. $\square$
+**Proof.** The proposition is the obstruction of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Failure of a Single Linear Representation*, with $\varsigma$ the conjugation: $\mathbb{C}$-linearity would give $(\lambda-\overline{\lambda})(\tilde A\star\tilde X)=0$ for every $\lambda$ and $\tilde X$, and choosing a non-real $\lambda$ and an $\tilde X$ with $\tilde A\star\tilde X\neq0$ — which exists since $\tilde A\neq0$ — gives a contradiction.
 
 **Remark.** The obstruction is why the left multiplication lives among the $\mathbb{R}$-linear operators and not the $\mathbb{C}$-linear ones, and it is the same parity mismatch that the adjoint article repairs with a twisted rule. A sesqualgebra therefore carries two regular representations and no single linear one, and the failure is a property of the multiplication and not of the algebra.
 
@@ -193,7 +193,7 @@ $$
 
 whatever the parity of the parameter $\tilde A$; and $L_{\tilde A}$ carries $\mathbb{M}_+$ into $\mathbb{M}_+$ exactly when $\tilde A$ is a real scalar, so that the only left multiplications preserving the Hermitian half are the real scalar multiples of the identity.
 
-**Proof.** For $\tilde X\in\mathbb{M}_+$ one has $\tilde X^{*}=\tilde X$, so $L_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}=\tilde A\tilde X$ and $R_{\tilde A}(\tilde X)=\tilde X\tilde A^{*}$, with no sign entering from the parity of $\tilde A$, because the involution acts on the variable and not on the parameter. For the preservation, $L_{\tilde A}$ carries $\mathbb{M}_+$ into $\mathbb{M}_+$ exactly when $\tilde A\tilde X$ is Hermitian for every Hermitian $\tilde X$, that is when $\tilde A\tilde X=\tilde X\tilde A^{*}$ for every Hermitian $\tilde X$; taking $\tilde X=e_0$ gives $\tilde A=\tilde A^{*}$, so $\tilde A$ is Hermitian, and the condition is then that $\tilde A$ commutes with every Hermitian element. The Hermitian elements span $\mathbb{B}$ over $\mathbb{R}$, so $\tilde A$ is central and Hermitian, that is a real scalar. $\square$
+**Proof.** For $\tilde X\in\mathbb{M}_+$ one has $\tilde X^{*}=\tilde X$, so $L_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}=\tilde A\tilde X$ and $R_{\tilde A}(\tilde X)=\tilde X\tilde A^{*}$, with no sign entering from the parity of $\tilde A$, because the involution acts on the variable and not on the parameter. For the preservation, $L_{\tilde A}$ carries $\mathbb{M}_+$ into $\mathbb{M}_+$ exactly when $\tilde A\tilde X$ is Hermitian for every Hermitian $\tilde X$, that is when $\tilde A\tilde X=\tilde X\tilde A^{*}$ for every Hermitian $\tilde X$; taking $\tilde X=e_0$ gives $\tilde A=\tilde A^{*}$, so $\tilde A$ is Hermitian, and the condition is then that $\tilde A$ commutes with every Hermitian element. The Hermitian elements span $\mathbb{B}$ over $\mathbb{R}$, so $\tilde A$ is central and Hermitian, that is a real scalar.
 
 **Remark.** On the Hermitian half the left multiplication coincides with the ordinary multiplication, and the derived product and the algebra product agree there; but the Hermitian half is not closed under the ordinary product — it is a Jordan algebra, by *The 12 Products of the Biquaternion Complex Space* — so the coincidence is a coincidence of the two products on the half and not the statement that the half is a subalgebra. The half is carried into itself only by the real scalars, and off the half the difference between the two products is the involution carried by the variable, which is the obstruction of §*The Left Family Does Not Close*. The right multiplication has the same reading with the parameter rather than the variable restricted.
 
@@ -203,7 +203,7 @@ whatever the parity of the parameter $\tilde A$; and $L_{\tilde A}$ carries $\ma
 
 The left and the right multiplication of the sesquilinear product are $L_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}$ and $R_{\tilde A}(\tilde X)=\tilde X\tilde A^{*}$; the left is conjugate-linear and the right is linear, and in the parameter the left family is linear and the right conjugate-linear. The unit gives the two elementary operators $L_{e_0}={}^{*}$ and $R_{e_0}=\mathrm{id}$.
 
-The left family does not close: $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$ is the ordinary two-sided multiplication, hence $\mathbb{C}$-linear, hence not a left multiplication, and the left family is neither a monoid nor a representation. The right family does close, $R_{\tilde A}R_{\tilde B}=R_{\tilde A\tilde B}$, and is a monoid anti-isomorphic to the algebra; the mixed composites are $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}L_{\tilde B}=S_{\tilde B,\tilde A}$, the sandwich. The two families together generate a monoid of four kinds of operator, the left and the right multiplications, the sandwiches and the two-sided multiplications, and the residue is the operator form of the failure of associativity. The two bilinear multiplications of the space are the case in which the left family closes and the ordinary left regular representation is available.
+The left family does not close: $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$ is the ordinary two-sided multiplication, hence $\mathbb{C}$-linear, hence not a left multiplication, and the left family is neither a monoid nor a representation. The right family does close, $R_{\tilde A}R_{\tilde B}=R_{\tilde A\tilde B}$, and is a monoid isomorphic to the algebra in the forward order; the mixed composites are $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}L_{\tilde B}=S_{\tilde B,\tilde A}$, the sandwich. The two families together generate a monoid of four kinds of operator, the left and the right multiplications, the sandwiches and the two-sided multiplications, and the residue is the operator form of the failure of associativity. The two bilinear multiplications of the space are the case in which the left family closes and the ordinary left regular representation is available.
 
 ## Summary of Notation
 

@@ -55,7 +55,6 @@ compact label is the one the null element carries, and the polar scale collapses
 calling the four readings one word: on the massless locus they are four descriptions of one element, and the
 dictionary of the corpus — massless, rank one, null, on the cone — is the agreement stated four times.
 
-Recomputed on $100$ random elements: the norm reading and the rank reading agree on the massless locus on
 $100$ of $100$, that is, $N(\tilde{Q})=0$ exactly when the rank of $\tilde{Q}\tilde{Q}^{*}$ is one.
 
 Off the cone the agreement stops, and it stops in a stated way. A rank-two element may have $N>0$ or $N<0$;
@@ -110,22 +109,21 @@ present corpus, and the article records that as a gap rather than assuming a con
 ## Physical Readings
 
 - **The word mass has four referents and one locus.** The reading is that the framework's "mass" is well
-  defined only together with its row, and that the massless locus — the cone — is the one place where all
-  four rows agree. Boundary: a statement about usage, and it adds no identity between the four.
+defined only together with its row, and that the massless locus — the cone — is the one place where all
+four rows agree. Boundary: a statement about usage, and it adds no identity between the four.
 - **Discreteness of charge is compactness.** The reading of the charge row is that charge is discrete
-  because the internal group is compact, which is the same mechanism as the quantisation of angular
-  momentum and not a separate postulate.
+because the internal group is compact, which is the same mechanism as the quantisation of angular
+momentum and not a separate postulate.
 - **The scale is the odd row.** The reading of the scale row is that it is the one reading that is not a
-  property of the element alone: $r$ is a unit and moves under a conformal rescaling, so it is the row where
-  the framework's mass meets its choice of units, which is the subject of *Action, Units, and the Constants
-  of the Biquaternion Universe*.
+property of the element alone: $r$ is a unit and moves under a conformal rescaling, so it is the row where
+the framework's mass meets its choice of units, which is the subject of *Action, Units, and the Constants
+of the Biquaternion Universe*.
 
 ## Summary
 
 The corpus uses the word mass of four objects: the norm $N$ (a value and its level set), the rank of the
 Hermitian square (a count of polarisations), the compact-slice label (a discrete internal charge) and the
 polar scale $r$ (a unit of length). The four agree on the zero-divisor cone and nowhere else; the norm and
-the rank agree exactly on the massless locus, recomputed on $100$ of $100$ random elements, while the rank
 does not fix the sign of the norm, so "massive" covers the timelike and the spacelike alike. The rank-one
 condition that reads as massless on the material sector reads as pure state on the informational sector, and
 the article keeps the two apart. A fifth reading — the operator spectrum of $L_{\tilde{Q}}$ — is named and
@@ -144,10 +142,10 @@ left out.
 ## Further Reading
 
 - *Biquaternion Norm and Invertibility*, for the norm, its multiplicativity and its reversal by the central
-  imaginary.
+imaginary.
 - *Mass, Rank and the Positivity of the Dagger*, for the rank criterion, the positive cone and the
-  no-ghost and no-tachyon statements.
+no-ghost and no-tachyon statements.
 - *Particle Types, Discrete Charge and Three-Particle Couplings*, for the compact slice and the discrete
-  charge, and for the continuous rapidity of the non-compact directions.
+charge, and for the continuous rapidity of the non-compact directions.
 - *The Polar Element Representation of Biquaternions* and *Conformal Invariance and the Massless Limit in
-  Biquaternionic Form*, for the polar scale and its dilation reading.
+Biquaternionic Form*, for the polar scale and its dilation reading.

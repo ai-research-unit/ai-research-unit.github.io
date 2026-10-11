@@ -171,7 +171,7 @@ $$
 
 so that $\partial_\mu\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and hence $\tilde{A}'(\tilde{Q}_0) = 0$. The connection therefore has no gauge-invariant value at a point; whatever invariant content it has must be built from derivatives.
 
-**The curvature is the obstruction to doing this on a neighbourhood.** A connection with $\tilde{F} = 0$ satisfies $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu = 0$, and the Poincaré lemma applied to the one-form $\tilde{A}_\mu\,dx^\mu$ then supplies a local $\Gamma$ with $\tilde{A} = \tilde{\nabla}\Gamma$. The converse direction of this last statement is the Poincaré lemma; it is *invoked* here, not recomputed. The exact direction — that a gradient connection is flat — was recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a gauge transformation.
+**The curvature is the obstruction to doing this on a neighbourhood.** A connection with $\tilde{F} = 0$ satisfies $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu = 0$, and the Poincaré lemma applied to the one-form $\tilde{A}_\mu\,dx^\mu$ then supplies a local $\Gamma$ with $\tilde{A} = \tilde{\nabla}\Gamma$. The converse direction of this last statement is the Poincaré lemma; it is *invoked* here, not recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a gauge transformation.
 
 **The connection one-form is a real quaternion.** One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives
 
@@ -204,7 +204,7 @@ $$
 \tilde{F} = \frac{\hbar}{2iq}\sum_{\mu,\nu=0}^{3}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu ,
 $$
 
-with $\bar{e}_0 = e_0$ and $\bar{e}_k = -e_k$. The first identity is purely algebraic in the derivatives and is the gauge principle article's curvature identity; the second is its restatement as a commutator of covariant derivatives. Both were recomputed on random connections.
+with $\bar{e}_0 = e_0$ and $\bar{e}_k = -e_k$. The first identity is purely algebraic in the derivatives and is the gauge principle article's curvature identity; the second is its restatement as a commutator of covariant derivatives.
 
 **The curvature is gauge invariant and is not in the material sector.** Because $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma) = 0$, $\tilde{F}$ is unchanged by a gauge transformation. It is nevertheless not an element of $\mathbb{M}_-$: it has vanishing scalar part and a vector part that is neither purely real nor purely imaginary, as the Maxwell article records. The connection is a material-sector object; its curvature is not.
 

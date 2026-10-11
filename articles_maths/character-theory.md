@@ -85,7 +85,7 @@ where $C_G(g)$ is the centraliser of $g$; equivalently the columns of the charac
 | $\varepsilon$ | 1 | $-1$ | 1 |
 | $\sigma$ | 2 | 0 | $-1$ |
 
-The verification of the relations: the inner products $\langle\chi_i,\chi_j\rangle = \frac{1}{6}\sum_{g}\chi_i(g)\chi_j(g^{-1})$ are $\frac{1}{6}(6,0,0)$, $\frac{1}{6}(0,6,0)$ and $\frac{1}{6}(0,0,6)$, so the rows are orthonormal; the sums of squares of the degrees are $1+1+4 = 6 = \lvert G\rvert$; the column sums $\sum_i\chi_i(g)\chi_i(h^{-1})$ are $6$ on the diagonal and $0$ off it, and the diagonal entries are the centraliser orders $\lvert C_G(e)\rvert = 6$, $\lvert C_G(\text{transposition})\rvert = 2$, $\lvert C_G(\text{3-cycle})\rvert = 3$; and the regular character, the character of the module $k[G]$ itself, has the values $\sum_i\chi_i(1)\chi_i(g)$, namely $6,0,0$, as the direct sum of the three simple modules predicts. All these numbers were recomputed with the exact arithmetic of the table.
+The verification of the relations: the inner products $\langle\chi_i,\chi_j\rangle = \frac{1}{6}\sum_{g}\chi_i(g)\chi_j(g^{-1})$ are $\frac{1}{6}(6,0,0)$, $\frac{1}{6}(0,6,0)$ and $\frac{1}{6}(0,0,6)$, so the rows are orthonormal; the sums of squares of the degrees are $1+1+4 = 6 = \lvert G\rvert$; the column sums $\sum_i\chi_i(g)\chi_i(h^{-1})$ are $6$ on the diagonal and $0$ off it, and the diagonal entries are the centraliser orders $\lvert C_G(e)\rvert = 6$, $\lvert C_G(\text{transposition})\rvert = 2$, $\lvert C_G(\text{3-cycle})\rvert = 3$; and the regular character, the character of the module $k[G]$ itself, has the values $\sum_i\chi_i(1)\chi_i(g)$, namely $6,0,0$, as the direct sum of the three simple modules predicts.
 
 ## The Character Table and its Consequences
 

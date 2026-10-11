@@ -7,7 +7,7 @@ The left regular representation $\mathsf{M}_4$ of *Introduction to the 4×4 Matr
 
 The regular representation has one advantage over the $2\times2$ realization in this group: the characteristic operation ${}^{\natural}$ is a transposition, and the transposition is the operation that the regular matrix already carries. The general quaternionic bilinear form therefore needs no adjugate, and the determinant of the regular matrix is the square of the norm, the two factors being the two copies of the simple module.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$; the quaternionic product $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ with norm $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. All matrix claims of this article are recomputed in the verification script of the pass.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$; the quaternionic product $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ with norm $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
 
 ## The Representation
 
@@ -139,7 +139,7 @@ The symmetric part of a product is the half-sum of its word and of the word with
 
 $$
 \tfrac14\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
-\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=B(\tilde P,\tilde Q),\qquad
+\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=N(\tilde P,\tilde Q),\qquad
 \tfrac14\operatorname{Tr}(XY^{\dagger})=H(\tilde P,\tilde Q),\qquad
 \tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=K(\tilde P,\tilde Q),
 $$

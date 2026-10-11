@@ -127,7 +127,6 @@ $$
 I_2=\mathbf E\cdot\mathbf B ,
 $$
 
-<!-- CONVENTION — abelian density normalisation: $\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\tfrac12 F\star F=\frac{2i}{c}I_2$ (Lorentzian), $=2I_2$ (Euclidean), following *Instantons and Solitons in Biquaternionic Form*, whose symbolic recomputation from the component matrix of the field-strength article fixes this normalisation. The identity $\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\tfrac12 F_{\mu\nu}\star F^{\mu\nu}$ is why the quarter-density carries *half* the coefficient of $F_{\mu\nu}\tilde F^{\mu\nu}=\frac{4i}{c}I_2$; the two coefficients are not to be "aligned". -->
 
 so the abelian index density is the framework's own invariant $I_2$ up to a constant. This is the affirmative half of the story: for the abelian sector the index and the charge are written in the invariant calculus the framework already possesses.
 

@@ -25,7 +25,7 @@ $$
 
 and the signed right multiplication satisfies $(\varrho_s)^\dagger = \varrho_{\delta(s)}$; hence the adjoint of a signed one-sided multiplication is the signed one-sided multiplication by the conjugate parameter.
 
-**Proof.** $\ell_r = L_r\alpha = \Sigma^\alpha_{r,1}$, so its adjoint is $\Sigma^\alpha_{\delta(r),\delta(1)} = \Sigma^\alpha_{\delta(r),1} = \ell_{\delta(r)}$ by *The Signed Adjoint Sandwich on a Banach Algebra*, using $\delta(1) = 1$; the right-handed computation is the mirror, $\varrho_s = R_s\alpha = \Sigma^\alpha_{1,\delta^{-1}(s)}$ with the conjugate parameter $\delta(s)$. $\square$
+**Proof.** $\ell_r = L_r\alpha = \Sigma^\alpha_{r,1}$, so its adjoint is $\Sigma^\alpha_{\delta(r),\delta(1)} = \Sigma^\alpha_{\delta(r),1} = \ell_{\delta(r)}$ by *The Signed Adjoint Sandwich on a Banach Algebra*, using $\delta(1) = 1$; the right-handed computation is the mirror, $\varrho_s = R_s\alpha = \Sigma^\alpha_{1,\delta^{-1}(s)}$ with the conjugate parameter $\delta(s)$.
 
 **Corollary (the regular graded module).** The algebra $A$ is a graded left module over itself through $\ell$, and the map $r \mapsto \ell_r$ is a homomorphism of the graded algebra into the graded operator algebra: $\ell_{rs} = \ell_r\ell_{\delta^{-1}(s)}$, and the involution and the adjoint agree on the image, $(\ell_r)^\dagger = \ell_{\delta(r)}$. The signed sandwich is the one-sided operator followed by a right multiplication,
 
@@ -35,7 +35,7 @@ $$
 
 so the adjoint of the two-sided operator is read from the one-sided and the right multiplication.
 
-**Proof.** $\ell_r\ell_{t}(x) = \ell_r(t\alpha(x)) = r\alpha(t\alpha(x)) = r\alpha(t)x = \Sigma^\alpha_{r\alpha(t),1}(x)$, giving the composition law $\ell_r\ell_t = \ell_{r\alpha(t)}$, that is $\ell_{rs} = \ell_r\ell_{\delta^{-1}(s)}$ after the substitution $s = \alpha(t)$; the sandwich identity is associativity, and the adjoint of the composite is the composite of the adjoints by anti-multiplicativity. $\square$
+**Proof.** $\ell_r\ell_{t}(x) = \ell_r(t\alpha(x)) = r\alpha(t\alpha(x)) = r\alpha(t)x = \Sigma^\alpha_{r\alpha(t),1}(x)$, giving the composition law $\ell_r\ell_t = \ell_{r\alpha(t)}$, that is $\ell_{rs} = \ell_r\ell_{\delta^{-1}(s)}$ after the substitution $s = \alpha(t)$; the sandwich identity is associativity, and the adjoint of the composite is the composite of the adjoints by anti-multiplicativity.
 
 ## The Dictionary
 
@@ -51,7 +51,7 @@ $$
 
 The self-adjoint signed left multiplications are those with $r$ fixed by $\delta$, the unitary ones are those with $\delta(r)\alpha(r) = 1$, and the involutions are the self-adjoint ones with $\ell_r^2 = \mathrm{id}$, that is $r\alpha(r) = 1$.
 
-**Proof.** $\ell_r$ is self-adjoint iff $\ell_{\delta(r)} = \ell_r$, which is the kernel condition on the parametrisation of the one-sided operators, and it is the identity $\delta(r) = r$ modulo the kernel; $\ell_r$ is unitary iff $\ell_{\delta(r)}\ell_r = \ell_{\delta(r)\alpha(r)} = \mathrm{id}$, that is $\delta(r)\alpha(r) = 1$; and $\ell_r^2 = \mathrm{id}$ is $r\alpha(r) = 1$, with self-adjointness from the previous line. $\square$
+**Proof.** $\ell_r$ is self-adjoint iff $\ell_{\delta(r)} = \ell_r$, which is the kernel condition on the parametrisation of the one-sided operators, and it is the identity $\delta(r) = r$ modulo the kernel; $\ell_r$ is unitary iff $\ell_{\delta(r)}\ell_r = \ell_{\delta(r)\alpha(r)} = \mathrm{id}$, that is $\delta(r)\alpha(r) = 1$; and $\ell_r^2 = \mathrm{id}$ is $r\alpha(r) = 1$, with self-adjointness from the previous line.
 
 **Theorem (assembly of the two-sided operator).** Every signed sandwich is the composite of a signed left multiplication and a signed right multiplication,
 
@@ -61,7 +61,7 @@ $$
 
 and its adjoint is $\Sigma^\alpha_{\delta(r),\delta(s)} = \ell_{\delta(r)}R_{\delta(s)}$, so the two-sided adjoint is recovered from the one-sided adjoints and the commutation of the left and right multiplications.
 
-**Proof.** The identities are associativity; the adjoint of the composite is the composite of the adjoints by anti-multiplicativity, $(L_r\varrho_s)^\dagger = \varrho_{\delta(s)}^\dagger L_{\delta(r)}^\dagger = R_{\delta(s)}L_{\delta(r)} = \Sigma^\alpha_{\delta(r),\delta(s)}$. $\square$
+**Proof.** The identities are associativity; the adjoint of the composite is the composite of the adjoints by anti-multiplicativity, $(L_r\varrho_s)^\dagger = \varrho_{\delta(s)}^\dagger L_{\delta(r)}^\dagger = R_{\delta(s)}L_{\delta(r)} = \Sigma^\alpha_{\delta(r),\delta(s)}$.
 
 ## Examples
 

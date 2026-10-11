@@ -57,7 +57,7 @@ $\nu=\nu^+-\nu^-$ with $\lvert\nu\rvert=\nu^++\nu^-$, and applying it to the rea
 $\mu$ gives the four-measure representation; the variation of the combination is at most the sum of the
 variations, so $M(X)$ embeds in the product of four copies of the space of finite measures, closed under the
 norm; completeness follows from the completeness of the space of finite measures in the variation norm,
-which is the countable additivity under limits. $\blacksquare$
+which is the countable additivity under limits.
 
 ### The Involution
 
@@ -71,7 +71,7 @@ $M(X)$ is a Banach space carrying an involutive conjugate-linear isometry.
 
 **Proof.** Additivity and conjugation are immediate; $\lvert\bar\mu\rvert(A)=\lvert\mu\rvert(A)$ because a
 partition has the same variation for $\bar\mu$ and $\mu$; the involution is conjugate-linear by the
-conjugation of the scalars. $\blacksquare$
+conjugation of the scalars.
 
 **Remark (the two involutions).** The involution $\bar\mu$ is the **value-conjugation**, the one induced by
 the complex conjugation of functions through the pairing $\langle\mu,f\rangle=\int f\,d\mu$ of the last
@@ -99,7 +99,7 @@ plus an anti-Hermitian measure.
 
 **Proof.** $\bar\mu=\mu$ is the statement $\overline{\mu(A)}=\mu(A)$ for all $A$, that is
 $\mu(A)\in\mathbb R$; the converse is immediate. The decomposition is the one displayed, and its uniqueness
-is the uniqueness of the real and imaginary parts. $\blacksquare$
+is the uniqueness of the real and imaginary parts.
 
 ## Polar Decomposition
 
@@ -121,7 +121,6 @@ then every measurable subset of $A$ has $\mu$-measure zero, so $\mu(A)=0$. The R
 with $d\mu=h\,d\lvert\mu\rvert$; the identity $\lvert\mu\rvert=\lvert h\rvert\,\lvert\mu\rvert$, proved by
 applying the Radon–Nikodym derivative to the definition of the variation, forces $\lvert h\rvert=1$
 $\lvert\mu\rvert$-almost everywhere. Uniqueness is the uniqueness of the Radon–Nikodym derivative.
-$\blacksquare$
 
 ### Compatibility with the Involution
 
@@ -137,7 +136,7 @@ The polar decomposition of $\bar\mu$ is obtained from that of $\mu$ by conjugati
 
 **Proof.** $\bar\mu(A)=\overline{\int_Ah\,d\lvert\mu\rvert}=\int_A\bar h\,d\lvert\mu\rvert$ by the
 conjugation of the integral, and $\lvert\bar h\rvert=1$; the Radon–Nikodym statement follows from the same
-computation with $\nu$ in place of $\lvert\mu\rvert$. $\blacksquare$
+computation with $\nu$ in place of $\lvert\mu\rvert$.
 
 **Corollary (Hermitian and anti-Hermitian densities).** A measure $\mu=h\,\lvert\mu\rvert$ is Hermitian if
 and only if its density is real $\lvert\mu\rvert$-almost everywhere, and anti-Hermitian if and only if its
@@ -145,7 +144,7 @@ density is purely imaginary; the Hermitian and anti-Hermitian parts have densiti
 $\operatorname{Re}h$ and $i\operatorname{Im}h$.
 
 **Proof.** The involution conjugates $h$, so the fixed points and the skew points of the involution are the
-real and imaginary densities. $\blacksquare$
+real and imaginary densities.
 
 ## Hermitian Measures and the Fourier–Stieltjes Transform
 
@@ -169,7 +168,7 @@ $\hat\mu(-\xi)=-\overline{\hat\mu(\xi)}$.
 **Proof.** $\widehat{\bar\mu}(\xi)=\int e^{-2\pi ix\cdot\xi}d\bar\mu(x)
 =\overline{\int e^{2\pi ix\cdot\xi}d\mu(x)}=\overline{\hat\mu(-\xi)}$ by the conjugation of the integral and
 the sign change $x\mapsto-x$. The Hermitian condition $\hat\mu=\widehat{\bar\mu}$ is then the stated
-symmetry. $\blacksquare$
+symmetry.
 
 ### Positive Definite Functions and the Cone of Positive Measures
 
@@ -185,7 +184,7 @@ gives a positive definite function is the computation
 $$
 \sum_{i,j}\overline{c_i}c_j\hat\mu(x_j-x_i)=\int\Bigl\lvert\sum_ic_ie^{-2\pi ix_i\cdot\xi}\Bigr\rvert^2d\mu(\xi)\geq0 ,
 $$
-and the converse is the theorem quoted. $\blacksquare$
+and the converse is the theorem quoted.
 
 Thus the positive definite functions are the transforms of the positive cone in the Hermitian measures, and
 the Hermitian measures are the real subspace on which the involution acts trivially; the whole of Bochner's
@@ -202,7 +201,7 @@ $$
 $$
 
 **Proof.** $\langle\bar\mu,f\rangle=\int f\,d\bar\mu=\overline{\int\bar f\,d\mu}$ by the conjugation of the
-integral, which is the first identity; the second is its conjugate. $\blacksquare$
+integral, which is the first identity; the second is its conjugate.
 
 ## Order and the Positive Cone
 
@@ -219,7 +218,7 @@ absolute-value sense.
 **Proof.** The cone properties are immediate from positivity; the generation and the density statement
 follow from the polar decomposition, since $\lvert\mu\rvert=h^{-1}\mu$ with $h$ of modulus one and, when
 $\mu$ is positive, the density of its polar decomposition is the constant $1$. The domination property is
-the definition of the total variation. $\blacksquare$
+the definition of the total variation.
 
 **Remark (the involution and the order).** The involution is order preserving on the Hermitian measures: if
 $\mu\leq\nu$ with both Hermitian, then, $\mu$ and $\nu$ being real, $\bar\mu=\mu\leq\nu=\bar\nu$. The

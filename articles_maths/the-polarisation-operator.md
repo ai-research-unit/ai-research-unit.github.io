@@ -65,7 +65,7 @@ $$
 (\Pi f)(x_1,\dots,x_n) = \frac1{n!}\,\bigl(\nabla_{x_1}\cdots\nabla_{x_n} f\bigr)(0) .
 $$
 
-*Proof.* Expanding the product of differences at $0$ gives $\sum_{S}(-1)^{n-|S|}f(\sum_{i\in S}x_i)$, with $S$ the set of the $x_i$'s that have been added, since each factor $\nabla_{x_i}$ either adds $x_i$ or does not, with the sign $+$ for not adding and $-$ after; the number of factors not added is $n-|S|$. Division by $n!$ gives the statement. $\square$
+*Proof.* Expanding the product of differences at $0$ gives $\sum_{S}(-1)^{n-|S|}f(\sum_{i\in S}x_i)$, with $S$ the set of the $x_i$'s that have been added, since each factor $\nabla_{x_i}$ either adds $x_i$ or does not, with the sign $+$ for not adding and $-$ after; the number of factors not added is $n-|S|$. Division by $n!$ gives the statement.
 
 The proposition is the reason the polarisation operator is a **finite-difference operator**: it is the normalised top difference, and it measures the failure of $f$ to be of lower degree. In particular $\Pi f = 0$ for $f$ of degree $<n$ in the polynomial sense, and for $f$ of degree $n$ it returns the leading multilinear form.
 
@@ -93,7 +93,7 @@ $$
 
 between the symmetric $n$-linear maps and the homogeneous maps of degree $n$.
 
-*Proof.* Let $F$ be symmetric $n$-linear. Substituting into the definition and expanding $F$ multilinearly gives, for a subset $S$, $F(\sum_{i\in S}x_i) = \sum_{j_1,\dots,j_n\in S}F(x_{j_1},\dots,x_{j_n})$. The coefficient of $F(x_{j_1},\dots,x_{j_n})$ with the $j$'s a permutation of $1,\dots,n$ is $\sum_{S \supseteq \{1,\dots,n\}}(-1)^{n-|S|} = 1$, taken over the one subset $S = \{1,\dots,n\}$, so the whole sum is $n!\,F(x_1,\dots,x_n)$ after using the symmetry of $F$ to collect the $n!$ orderings; hence $\Pi\Delta F = \tfrac1{n!}n!F = F$. For the second statement, if $f = \Delta F$ is homogeneous of degree $n$ then $\Pi f = \Pi\Delta F = F$ and $\Delta\Pi f = \Delta F = f$; a general homogeneous map of degree $n$ is of this form by definition. $\square$
+*Proof.* Let $F$ be symmetric $n$-linear. Substituting into the definition and expanding $F$ multilinearly gives, for a subset $S$, $F(\sum_{i\in S}x_i) = \sum_{j_1,\dots,j_n\in S}F(x_{j_1},\dots,x_{j_n})$. The coefficient of $F(x_{j_1},\dots,x_{j_n})$ with the $j$'s a permutation of $1,\dots,n$ is $\sum_{S \supseteq \{1,\dots,n\}}(-1)^{n-|S|} = 1$, taken over the one subset $S = \{1,\dots,n\}$, so the whole sum is $n!\,F(x_1,\dots,x_n)$ after using the symmetry of $F$ to collect the $n!$ orderings; hence $\Pi\Delta F = \tfrac1{n!}n!F = F$. For the second statement, if $f = \Delta F$ is homogeneous of degree $n$ then $\Pi f = \Pi\Delta F = F$ and $\Delta\Pi f = \Delta F = f$; a general homogeneous map of degree $n$ is of this form by definition.
 
 **Corollary.** The polarisation operator is the inverse of the diagonal: on a homogeneous map of degree $n$ it produces the unique symmetric $n$-linear map whose diagonal is the map. In particular the passage is canonical, and the module of homogeneous maps of degree $n$ is isomorphic to the module of symmetric $n$-linear maps.
 

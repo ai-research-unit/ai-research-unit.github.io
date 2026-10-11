@@ -349,7 +349,7 @@ q'^{\mu} = \sum_{\nu} L^{\mu}{}_{\nu}\, q^{\nu},
 L^{\mu}{}_{\nu} = \mathrm{Sc}\!\left(\mathcal{E}^{\mu}\,\tilde{L}\,\mathcal{E}_{\nu}\,\tilde{L}^{*}\right),
 $$
 
-and the matrix $L^{\mu}{}_{\nu}$ is the ordinary Lorentz transformation matrix in the basis. The identity is algebraic and was checked numerically: for a hundred random boosts, $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$ exactly and the component formula agrees with the direct computation of $\tilde{L}\tilde{Q}\tilde{L}^{*}$ to machine precision.
+and the matrix $L^{\mu}{}_{\nu}$ is the ordinary Lorentz transformation matrix in the basis.
 
 This is the sense in which the framework "raises and lowers no indices": the metric sits in the coefficients and in the dual basis, and the transformation law is a matrix multiplication without a metric tensor in sight. The reciprocal basis is the device that makes the component formula look ordinary while the geometry stays in the algebra.
 

@@ -244,7 +244,6 @@ $$
 B = \sqrt{\frac{1+\sigma}{2}}\;e_0 + \frac{i\,\mathbf{w}}{\sqrt{2(1+\sigma)}} .
 $$
 
-*Verification.* Square the right-hand side. The cross term is $2\sqrt{\frac{1+\sigma}{2}}\frac{i\mathbf{w}}{\sqrt{2(1+\sigma)}} = i\mathbf{w}$, the square of the second term is $\frac{\mathbf{w}^2}{2(1+\sigma)} = -\frac{|\mathbf{w}|^2}{2(1+\sigma)}$ because the square of a real pure quaternion is the negative of its biquaternion norm, and the scalar part is therefore
 
 $$
 \frac{1+\sigma}{2} - \frac{|\mathbf{w}|^2}{2(1+\sigma)} = \frac{(1+\sigma)^2 - |\mathbf{w}|^2}{2(1+\sigma)} = \frac{2\sigma(1+\sigma)}{2(1+\sigma)} = \sigma ,
@@ -344,7 +343,7 @@ $$
 \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0 ,
 $$
 
-that is, if and only if $\tilde{Q}$ lies outside the null cone; equivalently, by the determinant criterion of *Biquaternion Norm and Invertibility*, if and only if $\tilde{Q}$ is invertible. The excluded elements are exactly the zero divisors, and no excluded element is reached as a limit of admissible ones: along a path to the cone the modulus $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ tends to zero, while the norm-one part $\tilde{Q}/\rho$ has no limit in the algebra.
+that is, if and only if $\tilde{Q}$ lies outside the null cone; equivalently, by the determinant criterion of *Norm and Invertibility in the General Plain Algebra*, if and only if $\tilde{Q}$ is invertible. The excluded elements are exactly the zero divisors, and no excluded element is reached as a limit of admissible ones: along a path to the cone the modulus $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ tends to zero, while the norm-one part $\tilde{Q}/\rho$ has no limit in the algebra.
 
 **The cone is thin in the algebra.** The condition $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ is one complex equation, hence two real equations, $\mathrm{Re}\,N = 0$ and $\mathrm{Im}\,N = 0$, and their gradients are independent away from the origin, so the cone has real codimension two. Counting real dimensions,
 
@@ -382,7 +381,7 @@ The proof above is effective, and it is worth recording as a procedure. Given $\
 2. Take its principal square root: write $N = |N|e^{i\varphi}$ with $\varphi\in(-\pi,\pi]$, and put $\rho = \sqrt{|N|}e^{i\varphi/2}$, so that $r = \sqrt{|N|}$ and $\alpha = \varphi/2$.
 3. Put $U = \tilde{Q}/\rho$, of unit norm.
 4. Compute $S = UU^{*}$, and write it as $\sigma e_0 + i\mathbf{w}$ with $\sigma\in\mathbb{R}$, $\mathbf{w}\in\mathbb{R}^3$; then put
-   $B = \sqrt{\frac{1+\sigma}{2}}\,e_0 + \frac{i\mathbf{w}}{\sqrt{2(1+\sigma)}}$, and read the rapidity and axis off by $\cosh\psi = \sigma$, $\hat{\mathbf{n}} = \mathbf{w}/|\mathbf{w}|$.
+$B = \sqrt{\frac{1+\sigma}{2}}\,e_0 + \frac{i\mathbf{w}}{\sqrt{2(1+\sigma)}}$, and read the rapidity and axis off by $\cosh\psi = \sigma$, $\hat{\mathbf{n}} = \mathbf{w}/|\mathbf{w}|$.
 5. Put $\hat{q} = B^{\natural}U$, and verify that its coefficients are real and that $\langle\hat{q},\hat{q}\rangle_{\natural} = 1$.
 
 The factors so obtained satisfy $\tilde{Q} = r e^{i\alpha}B\hat{q}$ identically. The only step that requires a convention rather than a formula is step 2, where the branch of the square root is fixed by $\alpha \in (-\pi/2,\pi/2]$; the other four steps are forced.

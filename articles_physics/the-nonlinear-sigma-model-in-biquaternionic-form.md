@@ -143,7 +143,6 @@ $$
 
 the canonical kinetic term of three real Goldstone fields. The higher terms are the interactions, all of them derivative and all of them fixed by the geometry: the coefficient of each is the corresponding structure constant of $\mathrm{SU}(2)$ contracted with the momenta.
 
-<!-- CONVENTION — biquaternion-norm kinetic term: the contraction $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ is summed over the four coordinate derivatives with both indices down, and the overall minus sign in $\mathcal{L}_2$ is what makes the kinetic energy positive. Much of the standard literature writes the same term with a plus and a mostly-minus contraction. Do not "fix" the minus sign. -->
 
 **The metric on the target.** The same biquaternion norm defines the invariant metric on the group. A small displacement $\tilde U\to\tilde U + d\tilde U$ has invariant line element
 
@@ -153,7 +152,6 @@ $$
 
 which is positive for a tangent displacement and is invariant under $\tilde U\mapsto g_L\tilde U g_R^{-1}$ for constant unit quaternions, because $\tilde U^{-1}d\tilde U \mapsto g_R\tilde U^{-1}d\tilde U g_R^{-1}$ and the scalar part is invariant under conjugation. On $\mathbb{H}^1_{\mathbb{B}}$ this is the round metric of $\mathbb{S}^3$: an invariant metric on a compact simple group is unique up to scale, and the scale is the one fixed by $f$. The framework's contribution to the target manifold is therefore the identification of the metric with the algebra's biquaternion norm, and the statement that the two are the same object.
 
-**Verification.** The unit-norm identity was checked numerically for a generic element: for $\tilde\pi = (0.3, -0.5, 0.8)$ and $f = 1$, the norm $\tilde U\tilde U^{\natural}$ differs from $e_0$ by less than $10^{-12}$ in the representation of $\mathbb{H}$ as a four-tuple of reals. The trace identity $\mathrm{Sc}(e_ae_b) = -\delta_{ab}$ was checked from the complex $2\times2$ representation $\Phi(e_a) = -i\sigma_a$, giving $-\delta_{ab}$ exactly.
 
 ## Symmetries, Currents and the Flat Connection
 
@@ -195,7 +193,6 @@ $$
 $$
 and the two statements together are the content of the model: flatness is what distinguishes the group-valued field from a general algebra-valued gauge potential.
 
-**Verification.** The left–right invariance of the Lagrangian was checked exactly: for a hedgehog-like field with profile $F(r) = \pi e^{-r^2/2}$ and constant unit quaternions $g_L, g_R$, the values of $\mathrm{Sc}(\overline{\partial_\mu\tilde U}\partial_\mu\tilde U)$ before and after $\tilde U\mapsto g_L\tilde U g_R^{-1}$ agreed to better than $10^{-9}$ at the sampled point, and the agreement is exact in exact arithmetic. The Maurer–Cartan flatness was checked by central differences: the maximum residual over the nine index pairs of $\partial_\mu j_\nu - \partial_\nu j_\mu + [j_\mu,j_\nu]$ was $2.8\times10^{-8}$ at the step $10^{-4}$ and $2.9\times10^{-10}$ at the step $10^{-5}$, the quadratic fall-off of a truncation error and not a residual of the identity. The fields were evaluated in the real four-dimensional representation of $\mathbb{H}$.
 
 **What the framework does not supply here.** The two currents above are a left and a right adjoint current of $SU(2)$, but the framework's $SU(2)_V$ is realised on the group manifold and not on chirality. The axial current that a chiral Lagrangian pairs with the vector current — the $j^{\mu 5}$ whose conservation would tie the sigma model to the fermion sector — is not produced by the centre, which is vector-like. The principal chiral model is therefore a global-symmetry construction available to the framework; the chiral current algebra is not. This is the same distinction that the companion articles on chiral fermions and on the Standard Model agenda record for the spinor sector, seen here at the level of the target manifold.
 
@@ -220,7 +217,6 @@ $$
 
 the equality being exact for the phase field, whose biquaternion norm carries no $\pi$-dependent factor: the abelian model is free. The target is the circle $\mathbb{S}^1$ of phases, with the shift symmetry $\pi\to\pi+\text{const}$ realised nonlinearly. The compactness of the phase is the statement $\pi\sim\pi+2\pi f$, so the target is a circle of circumference proportional to $f$ and the field's values are angles. This is the abelian sigma model of the Goldstone companion, and it is also the structure that the axion's shift symmetry requires: the axion is the pseudo-Goldstone boson of a broken global $U(1)$, and its low-energy Lagrangian is the abelian nonlinear sigma model with the shift symmetry broken only by the anomaly. The companion article on the axion and the Peccei–Quinn mechanism develops that case.
 
-**Verification of the abelian current.** The Noether current of the shift symmetry is $j_\mu = f\partial_\mu\pi$ at lowest order in the normalisation $\tilde U = e^{i\pi/f}$, and its conservation is the equation of motion $\Box\pi = 0$. Both were checked on a **superposition** of two plane waves with $\omega = |k|$, $\pi(t,x) = 0.7\cos(3t-3x) + 0.4\cos(2.5t+2.5x)$, at the point $(t,x) = (0.31,-0.42)$: the on-shell condition $\Box\pi = -\partial_t^2\pi+\partial_x^2\pi$ evaluated to zero to machine precision at the step $10^{-4}$, and the divergence $\partial^\mu j_\mu = -\partial_t j_t+\partial_x j_x$ likewise. The superposition was used deliberately, since a single plane wave cannot distinguish the on-shell condition from a dispersion accident.
 
 ## Power Counting and the Effective-Field-Theory Reading
 

@@ -27,7 +27,7 @@ that is, an $R$-linear anti-automorphism of order two. The pair $(E,\theta)$ is 
 
 **(c)** The **adjoint from a pairing**, $\theta(f)=f^{*}$ on $E=\operatorname{End}_A(M)$, for $M$ with a non-degenerate reflexive $\sigma$-sesquilinear pairing, when $\sigma=\mathrm{id}$ so that the adjoint is $R$-linear (see the next section for the general case).
 
-*Proof.* Direct verification in each case; the transpose is an anti-automorphism over a commutative coefficient ring because $(XY)^{\mathsf{T}}=Y^{\mathsf{T}}X^{\mathsf{T}}$. $\square$
+*Proof.* Direct verification in each case; the transpose is an anti-automorphism over a commutative coefficient ring because $(XY)^{\mathsf{T}}=Y^{\mathsf{T}}X^{\mathsf{T}}$.
 
 For the adjoint of a $\sigma$-sesquilinear pairing the map $f \mapsto f^{*}$ is $R$-linear and anti-multiplicative, but it is an involution *of the $R$-algebra $E$* only in the sense of an involutive algebra whose base involution is $\sigma$; the kind is discussed below.
 
@@ -49,11 +49,11 @@ and the involutions in one orbit are inner-isomorphic.
 
 **Proposition.** The action of $E^{\times}$ on the set of involutions is an action of the group on a set; its orbits are the inner-conjugacy classes, and $\theta$ is isomorphic to $\theta'$ exactly when $\theta'$ is in the orbit of $\theta$ under the full automorphism group $\operatorname{Aut}_{R\text{-alg}}(E)$.
 
-*Proof.* $\operatorname{Ad}_u\operatorname{Ad}_v=\operatorname{Ad}_{uv}$ and $\operatorname{Ad}_1=\mathrm{id}$; the characterisation of isomorphism is the definition. $\square$
+*Proof.* $\operatorname{Ad}_u\operatorname{Ad}_v=\operatorname{Ad}_{uv}$ and $\operatorname{Ad}_1=\mathrm{id}$; the characterisation of isomorphism is the definition.
 
 **Proposition.** Inner conjugation preserves the fixed part up to the conjugating automorphism: $\operatorname{Fix}(\operatorname{Ad}_u\theta)=u\operatorname{Fix}(\theta)u^{-1}$.
 
-*Proof.* $f$ is fixed by $\operatorname{Ad}_u\theta$ exactly when $u\theta(f)u^{-1}=f$, that is $\theta(f)=u^{-1}fu$, which says $u^{-1}fu \in \operatorname{Fix}(\theta)$. $\square$
+*Proof.* $f$ is fixed by $\operatorname{Ad}_u\theta$ exactly when $u\theta(f)u^{-1}=f$, that is $\theta(f)=u^{-1}fu$, which says $u^{-1}fu \in \operatorname{Fix}(\theta)$.
 
 So isomorphic involutions have fixed parts of the same size, which is the first invariant that separates them.
 
@@ -63,7 +63,7 @@ So isomorphic involutions have fixed parts of the same size, which is the first 
 
 **Proposition.** Let $\langle\cdot,\cdot\rangle$ be a non-degenerate reflexive $\sigma$-sesquilinear pairing on $M$ for which the adjoint of every endomorphism exists. Then $f \mapsto f^{*}$ is an involution of $E$ in the sense of an $R$-linear anti-automorphism of order two, and $\operatorname{Fix}({}^{*})=\operatorname{Sym}(M)$ is the set of self-adjoint operators.
 
-*Proof.* This is *The Involution on the Endomorphism Ring of a Module*. $\square$
+*Proof.* This is *The Involution on the Endomorphism Ring of a Module*.
 
 **Definition.** An involution of $E$ that arises this way is a **pairing involution**, and the pairing is a **realising pairing**.
 
@@ -81,7 +81,7 @@ The identity involution of a commutative $E$ is not a pairing involution in gene
 
 **(iv)** not constant: two pairings can induce non-isomorphic involutions.
 
-*Proof.* (i) and (ii) are the canonicality statement of *The Involution on the Endomorphism Ring of a Module*. (iii) holds because scaling is a nontrivial change of pairing leaving the involution fixed. (iv) is the example below. $\square$
+*Proof.* (i) and (ii) are the canonicality statement of *The Involution on the Endomorphism Ring of a Module*. (iii) holds because scaling is a nontrivial change of pairing leaving the involution fixed. (iv) is the example below.
 
 **Example.** On $M=k^2$ the standard symmetric pairing has Gram matrix $I$ and induces the transpose, with fixed part of dimension $3$; the alternating pairing has Gram matrix $J=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ and induces $T\mapsto J^{-1}T^{\mathsf{T}}J$, whose fixed part is the scalars, of dimension $1$. The two fixed parts have different dimensions, hence the two involutions are not isomorphic and the map is not constant.
 
@@ -95,11 +95,11 @@ $$
 
 is an $R$-submodule closed under the Jordan product $f\bullet g=\frac12(fg+gf)$ and under the square, and containing the identity. It is a unital special Jordan subalgebra of $E$.
 
-*Proof.* This is *Module Operators with an Involution*. $\square$
+*Proof.* This is *Module Operators with an Involution*.
 
 **Proposition.** The fixed part satisfies $E=\operatorname{Fix}(\theta)\oplus\operatorname{Fix}(-\theta)$, where $-\theta$ is the involution $f \mapsto -\theta(f)$ and its fixed part is $\operatorname{Skew}(M)$; hence the involution is recovered from its fixed part together with the skew part. Two involutions with the same fixed part are equal when $2$ is invertible.
 
-*Proof.* For every $f$, the decomposition $f=\frac12(f+\theta f)+\frac12(f-\theta f)$ exhibits $E$ as the sum of the two fixed parts, and the intersection is zero because $2$ is invertible; if two additive maps of order two have the same fixed part then they agree, since $f+\theta f=2f$ determines $\theta f=f$ on the fixed part and $\theta f=-f$ on the other summand. $\square$
+*Proof.* For every $f$, the decomposition $f=\frac12(f+\theta f)+\frac12(f-\theta f)$ exhibits $E$ as the sum of the two fixed parts, and the intersection is zero because $2$ is invertible; if two additive maps of order two have the same fixed part then they agree, since $f+\theta f=2f$ determines $\theta f=f$ on the fixed part and $\theta f=-f$ on the other summand.
 
 Thus an involution of $E$ is exactly a direct-sum decomposition $E=P\oplus Q$ with $1 \in P$ and the property of being an anti-automorphism, encoded by the projections $\frac12(\mathrm{id}\pm\theta)$.
 
@@ -107,7 +107,7 @@ Thus an involution of $E$ is exactly a direct-sum decomposition $E=P\oplus Q$ wi
 
 **Proposition.** For a pairing involution and $f \in E$ the operators $f^{*}f$ and $ff^{*}$ are self-adjoint, and $f$ is unitary exactly when both are the identity. Hence the fixed part determines the unitary group, $U(M)=\{f : f^{*}f=ff^{*}=\mathrm{id}\}$, but different involutions can have isomorphic — even equal-dimensional — fixed parts and different unitary groups.
 
-*Proof.* The self-adjointness and the unitary characterisation are *Module Operators with an Involution*; the last clause is a warning, since the unitary group is defined by the involution and not by the isomorphism class of the fixed part alone. $\square$
+*Proof.* The self-adjointness and the unitary characterisation are *Module Operators with an Involution*; the last clause is a warning, since the unitary group is defined by the involution and not by the isomorphism class of the fixed part alone.
 
 ## The Identity and the Exchange
 
@@ -117,7 +117,7 @@ The notion of an involution is wider than the notion of an adjoint of a pairing,
 
 **Proposition.** On $E=F\times F$ with the componentwise product, the **identity** $\mathrm{id}$ and the **exchange** $\theta(x,y)=(y,x)$ are involutions. Their fixed parts are $E$ and the diagonal $\Delta=\{(x,x)\}\cong F$, of dimensions $2$ and $1$, so the two involutions are not isomorphic.
 
-*Proof.* Both maps are $F$-linear anti-automorphisms of order two, because the product is componentwise and commutative. The fixed parts are read off, and an isomorphism of involutions carries the fixed part of one onto the fixed part of the other, so it preserves its dimension. $\square$
+*Proof.* Both maps are $F$-linear anti-automorphisms of order two, because the product is componentwise and commutative. The fixed parts are read off, and an isomorphism of involutions carries the fixed part of one onto the fixed part of the other, so it preserves its dimension.
 
 ### The classification problem
 
@@ -125,7 +125,7 @@ The notion of an involution is wider than the notion of an adjoint of a pairing,
 
 **Proposition.** Adjointability is not an isomorphism invariant at first sight, and the fixed part alone does not decide it: two involutions with fixed parts of the same dimension may be realised by pairings or not, and an involution isomorphic to an adjointable one is adjointable because an algebra automorphism carries a pairing to a pairing.
 
-*Proof.* The last clause is the definition of isomorphism of involutions transported through the adjoint; the first is the warning that neither the fixed-part dimension nor the kind determines adjointability without further structure. $\square$
+*Proof.* The last clause is the definition of isomorphism of involutions transported through the adjoint; the first is the warning that neither the fixed-part dimension nor the kind determines adjointability without further structure.
 
 The general question — which involutions of an endomorphism ring are adjointable, and how many inequivalent pairings realise a given one — is the classification problem of the involutions of a ring acting on a module. Over a field it becomes the classification of bilinear and sesquilinear forms up to equivalence, which is *Hermitian Forms over an Involution Ring* and Part II, and it is not solved here; the identity and the exchange above show that the class of involutions is strictly larger than the class of pairing involutions whenever a pairing realisation does not exist.
 
@@ -135,17 +135,17 @@ The general question — which involutions of an endomorphism ring are adjointab
 
 **Proposition.** Every involution $\theta$ of $E$ restricts to an involution, in fact an automorphism of order two, of the centre $Z(E)$; the involution is of the **first kind** when this restriction is the identity and of the **second kind** otherwise.
 
-*Proof.* For $z \in Z(E)$ and $f \in E$, $\theta(z)f=\theta(z)\theta(\theta^{-1}(f))=\theta(\theta^{-1}(f)\,z)=\theta(z\,\theta^{-1}(f))=f\,\theta(z)$, where the second equality uses $\theta(a)\theta(b)=\theta(ba)$ and the third the centrality of $z$; hence $\theta(z)$ is central. So $\theta$ maps $Z(E)$ into itself, and it is an anti-automorphism of order two of the commutative ring $Z(E)$, that is an automorphism of order two. $\square$
+*Proof.* For $z \in Z(E)$ and $f \in E$, $\theta(z)f=\theta(z)\theta(\theta^{-1}(f))=\theta(\theta^{-1}(f)\,z)=\theta(z\,\theta^{-1}(f))=f\,\theta(z)$, where the second equality uses $\theta(a)\theta(b)=\theta(ba)$ and the third the centrality of $z$; hence $\theta(z)$ is central. So $\theta$ maps $Z(E)$ into itself, and it is an anti-automorphism of order two of the commutative ring $Z(E)$, that is an automorphism of order two.
 
 **Corollary.** A pairing involution induced by $\sigma$ restricts to $\sigma$ on the scalars, so it is of the first kind exactly when $\sigma$ fixes the centre of $E$, which for the regular module means $\sigma$ fixes $Z(A)$.
 
-*Proof.* Combine the proposition with the identification of the involution on the regular module. $\square$
+*Proof.* Combine the proposition with the identification of the involution on the regular module.
 
 ### The centre and the isomorphism type
 
 **Proposition.** Isomorphic involutions induce conjugate automorphisms of the centre; consequently the first-kind and second-kind classes are isomorphism invariants, and within one kind the fixed part of the centre is an invariant.
 
-*Proof.* An isomorphism $\varphi$ carries $Z(E)$ into $Z(E)$ and intertwines the two restrictions. $\square$
+*Proof.* An isomorphism $\varphi$ carries $Z(E)$ into $Z(E)$ and intertwines the two restrictions.
 
 ## Examples
 

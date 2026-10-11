@@ -23,13 +23,13 @@ $$
 
 for every $x\in\mathrm{G}$; equivalently $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$, so the adjoint representation intertwines the involution of $\mathrm{G}$ with the involution of the operator algebra.
 
-**Proof.** For $y\in\mathrm{G}$, $\Theta\operatorname{ad}_x\Theta^{-1}(y)=\theta[x,\theta^{-1}y]=[\theta x,y]=\operatorname{ad}_{\theta x}(y)$, because $\theta$ is an algebra automorphism and $\theta^{-1}=\theta$. The second form is the same statement. $\square$
+**Proof.** For $y\in\mathrm{G}$, $\Theta\operatorname{ad}_x\Theta^{-1}(y)=\theta[x,\theta^{-1}y]=[\theta x,y]=\operatorname{ad}_{\theta x}(y)$, because $\theta$ is an algebra automorphism and $\theta^{-1}=\theta$. The second form is the same statement.
 
 **Corollary.** $\Theta$ is an involution of $\mathfrak{gl}(\mathrm{G})$ (the conjugation by an involution), and $\operatorname{ad}$ carries the $\pm1$-eigenspaces of $\theta$ into the $\pm1$-eigenspaces of $\Theta$: $\operatorname{ad}(\mathrm{K})\subseteq\mathfrak{gl}(\mathrm{G})^{+}$ and $\operatorname{ad}(\mathrm{P})\subseteq\mathfrak{gl}(\mathrm{G})^{-}$, where $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ is the decomposition of $\theta$.
 
 **Proposition.** The image $\operatorname{ad}(\mathrm{G})$ is $\Theta$-stable, and the kernel of $\operatorname{ad}$ is the centre $\mathrm{Z}(\mathrm{G})$, which is $\theta$-stable; hence the isomorphism $\mathrm{G}/\mathrm{Z}(\mathrm{G})\cong\operatorname{ad}(\mathrm{G})$ is an isomorphism of algebras with involution.
 
-**Proof.** Stability of the image follows from the equivariance, and stability of the centre because $\theta$ is an automorphism; the isomorphism is the first isomorphism theorem, and it respects the involutions because $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$. $\square$
+**Proof.** Stability of the image follows from the equivariance, and stability of the centre because $\theta$ is an automorphism; the isomorphism is the first isomorphism theorem, and it respects the involutions because $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$.
 
 ## The Induced Decomposition of the Operator Algebra
 
@@ -41,13 +41,13 @@ $$
 
 with $\operatorname{ad}(\mathrm{K})$ a Lie subalgebra of $\mathfrak{gl}(\mathrm{G})$, $\operatorname{ad}(\mathrm{P})$ a module over it, and the brackets $[\operatorname{ad}(\mathrm{K}),\operatorname{ad}(\mathrm{K})]\subseteq\operatorname{ad}(\mathrm{K})$, $[\operatorname{ad}(\mathrm{K}),\operatorname{ad}(\mathrm{P})]\subseteq\operatorname{ad}(\mathrm{P})$, $[\operatorname{ad}(\mathrm{P}),\operatorname{ad}(\mathrm{P})]\subseteq\operatorname{ad}(\mathrm{K})$; the involution $\Theta$ acts by $+1$ on the first summand and by $-1$ on the second.
 
-**Proof.** The image is $\operatorname{ad}(\mathrm{G})$, and $\operatorname{ad}$ is linear with $\theta$-invariant kernel, so $\operatorname{ad}(\mathrm{G})=\operatorname{ad}(\mathrm{K})+\operatorname{ad}(\mathrm{P})$ and the sum is direct because $\operatorname{ad}$ is injective on $\mathrm{K}\cap\mathrm{P}=0$ modulo the centre; the brackets are the images of the brackets of $\mathrm{K}$ and $\mathrm{P}$, and the eigenvalue statement is the equivariance. $\square$
+**Proof.** The image is $\operatorname{ad}(\mathrm{G})$, and $\operatorname{ad}$ is linear with $\theta$-invariant kernel, so $\operatorname{ad}(\mathrm{G})=\operatorname{ad}(\mathrm{K})+\operatorname{ad}(\mathrm{P})$ and the sum is direct because $\operatorname{ad}$ is injective on $\mathrm{K}\cap\mathrm{P}=0$ modulo the centre; the brackets are the images of the brackets of $\mathrm{K}$ and $\mathrm{P}$, and the eigenvalue statement is the equivariance.
 
 **Corollary.** The pair $(\operatorname{ad}(\mathrm{G}),\operatorname{ad}(\mathrm{K}))$ is a symmetric pair, the image of $(\mathrm{G},\mathrm{K})$ under $\operatorname{ad}$, and the $\Theta$-grading of the operator algebra restricts to the grading of the adjoint image.
 
 **Proposition.** The fixed algebra of $\Theta$ on the whole of $\mathfrak{gl}(\mathrm{G})$ is the centraliser of the decomposition, consisting of the operators preserving $\mathrm{K}$ and $\mathrm{P}$ separately, and the anti-fixed part consists of the operators exchanging them; the adjoint image lies in the even part when $\mathrm{G}$ is a symmetric pair.
 
-**Proof.** An operator $T$ commutes with $\Theta$ exactly when it preserves the two eigenspaces, and anticommutes exactly when it exchanges them; for $T=\operatorname{ad}_x$ with $x\in\mathrm{K}$ the operator preserves $\mathrm{K}$ and $\mathrm{P}$ by the bracket relations, while for $x\in\mathrm{P}$ it exchanges them. $\square$
+**Proof.** An operator $T$ commutes with $\Theta$ exactly when it preserves the two eigenspaces, and anticommutes exactly when it exchanges them; for $T=\operatorname{ad}_x$ with $x\in\mathrm{K}$ the operator preserves $\mathrm{K}$ and $\mathrm{P}$ by the bracket relations, while for $x\in\mathrm{P}$ it exchanges them.
 
 ## Self-Duality through the Killing Form
 
@@ -59,25 +59,25 @@ $$
 B(\operatorname{ad}_x y,z)+B(y,\operatorname{ad}_x z)=0 .
 $$
 
-**Proof.** The invariance $B([x,y],z)+B(y,[x,z])=0$ is the associativity of the Killing form; it is exactly the displayed relation. $\square$
+**Proof.** The invariance $B([x,y],z)+B(y,[x,z])=0$ is the associativity of the Killing form; it is exactly the displayed relation.
 
 **Corollary.** The Killing form is symmetric, $B(y,z)=B(z,y)$, so the adjoint representation is of **orthogonal** type; the isomorphism $\mathrm{G}\to\mathrm{G}^{*}$, $x\mapsto B(x,\cdot)$, intertwines the adjoint action with the negative transpose action, $\operatorname{ad}_x^{*}=-\operatorname{ad}_x$ for the contragredient action on the dual, which is the self-duality expressed on the dual.
 
 **Proposition.** When $\theta$ is an involution, the twisted form $B_\theta(x,y)=-B(x,\theta y)$ is invariant under the $\theta$-twisted action, $B_\theta(\theta x,\theta y)=B_\theta(x,y)$; it pairs the two eigenspaces $\mathrm{K},\mathrm{P}$ with themselves and $\mathrm{K}$ with $\mathrm{P}$ according to the parity, and it is symmetric because $B$ and $\theta$ commute with the symmetry.
 
-**Proof.** The invariance of $B_\theta$ is the invariance of $B$ composed with the automorphism $\theta$; the parity of the pairing is read off the eigenvalues of $\theta$ on the two arguments. $\square$
+**Proof.** The invariance of $B_\theta$ is the invariance of $B$ composed with the automorphism $\theta$; the parity of the pairing is read off the eigenvalues of $\theta$ on the two arguments.
 
 ## The Two Types and the Self-Dual Representations
 
 **Theorem.** Let $V$ be an irreducible self-dual representation with invariant form $\phi$. Then either $\phi$ is symmetric or $\phi$ is antisymmetric, and the two cases are exclusive; in the first case $V$ is orthogonal, in the second symplectic. The symmetric resp. antisymmetric form on $V\oplus V$ defined by $\phi$ pairs the two summands in the respective ways, and an irreducible representation that is not self-dual occurs in pairs $V,V^{*}$ with no invariant form on $V$.
 
-**Proof.** The form $\phi$ is determined up to a scalar by irreducibility (Schur's lemma applied to the isomorphism $V\to V^{*}$); a scalar multiple of a symmetric form is symmetric and of an antisymmetric form antisymmetric, so the type is well defined; non-self-dual irreducible representations have $V\not\cong V^{*}$ and admit no invariant form. $\square$
+**Proof.** The form $\phi$ is determined up to a scalar by irreducibility (Schur's lemma applied to the isomorphism $V\to V^{*}$); a scalar multiple of a symmetric form is symmetric and of an antisymmetric form antisymmetric, so the type is well defined; non-self-dual irreducible representations have $V\not\cong V^{*}$ and admit no invariant form.
 
 **Corollary.** The adjoint representation is orthogonal, since its invariant form the Killing form is symmetric; the fundamental representation of $\mathrm{sl}(2,K)$ is symplectic, its invariant form being the determinant pairing $\det(u,v)$; the two types occur among the self-dual representations of a semisimple algebra, and the type of an irreducible is its **Frobenius–Schur type**, named and computed by the analysis of a later Part.
 
 **Proposition (the involution on the self-dual representations).** An involution $\theta$ of $\mathrm{G}$ acts on the set of isomorphism classes of self-dual representations by twisting the action through $\theta$, and it fixes the adjoint representation; a self-dual representation is **$\theta$-self-dual** when the twist is isomorphic to the original, equivalently when the invariant form can be chosen $\theta$-invariant.
 
-**Proof.** The twist $V^\theta$ is the module with action $x\cdot_\theta v=\theta(x)\cdot v$; its isomorphism class is well defined, and the adjoint representation is fixed because $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$ exhibits the isomorphism; the invariant form is $\theta$-invariant exactly when the twist is isomorphic to $V$ via that form. $\square$
+**Proof.** The twist $V^\theta$ is the module with action $x\cdot_\theta v=\theta(x)\cdot v$; its isomorphism class is well defined, and the adjoint representation is fixed because $\operatorname{ad}\circ\theta=\Theta\circ\operatorname{ad}$ exhibits the isomorphism; the invariant form is $\theta$-invariant exactly when the twist is isomorphic to $V$ via that form.
 
 **Corollary.** The self-dual representations of a symmetric pair $(\mathrm{G},\mathrm{K})$ split according to their behaviour under $\theta$; the adjoint representation splits as $\operatorname{ad}(\mathrm{K})\oplus\operatorname{ad}(\mathrm{P})$, the fixed and the twisted parts, and the two summands are the components of the adjoint representation as a $\mathrm{K}$-module.
 
@@ -87,7 +87,6 @@ Let $\mathrm{G}=\mathrm{sl}(2,K)$ with basis $e,h,f$, brackets $[h,e]=2e$, $[h,f
 
 The involution $\theta(x)=-x^{t}$ acts by $\theta(e)=-f$, $\theta(f)=-e$, $\theta(h)=-h$; the induced involution $\Theta$ on the adjoint image fixes $\operatorname{ad}_h$ up to the sign convention and exchanges $\operatorname{ad}_e$ and $\operatorname{ad}_f$ up to signs; the fixed part $\operatorname{ad}(\mathrm{K})=\langle\operatorname{ad}_{e-f}\rangle$ is one-dimensional and the anti-fixed part $\operatorname{ad}(\mathrm{P})=\langle\operatorname{ad}_h,\operatorname{ad}_{e+f}\rangle$ is two-dimensional, matching $\dim\mathrm{K}=1$, $\dim\mathrm{P}=2$. The twisted form $B_\theta$ pairs $\mathrm{K}$ with itself and $\mathrm{P}$ with itself and is nondegenerate on each, as the Cartan decomposition requires.
 
-**Verified.** For $\mathrm{sl}(2,K)$ the equivariance $\operatorname{ad}_{\theta x}=\Theta\operatorname{ad}_x\Theta^{-1}$ was checked on the three generators and their brackets; the invariance of $B$ and of $B_\theta$ was checked on the basis; the dimensions of the fixed and anti-fixed parts of the adjoint image were checked to be $1$ and $2$.
 
 ## Summary
 

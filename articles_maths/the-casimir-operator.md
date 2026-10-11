@@ -27,7 +27,7 @@ The assignment is functorial: if $f:V\to W$ is a homomorphism of $\mathrm{G}$-mo
 
 **Proposition.** The operator $\Omega_\pi$ does not depend on the basis: for any basis $(y_1,\dots,y_m)$ with dual basis $(y^1,\dots,y^m)$, $\sum_i\pi(y_i)\pi(y^i)=\sum_i\pi(x_i)\pi(x^i)$.
 
-**Proof.** This is the basis-independence of the Casimir element, transported by the algebra homomorphism $\pi$ that the universal property of $U(\mathrm{G})$ supplies; the operator statement is the image of the element statement. $\square$
+**Proof.** This is the basis-independence of the Casimir element, transported by the algebra homomorphism $\pi$ that the universal property of $U(\mathrm{G})$ supplies; the operator statement is the image of the element statement.
 
 ### Centrality as an Operator
 
@@ -39,7 +39,7 @@ $$
 
 so $\Omega_\pi\in\operatorname{End}_{\mathrm{G}}(V)$, the algebra of $\mathrm{G}$-module endomorphisms of $V$.
 
-**Proof.** The centrality of $C$ in $U(\mathrm{G})$ gives $[C,x]=0$ for the image of $x$ in $U(\mathrm{G})$, and $\pi$ is an algebra homomorphism, so $[\pi(C),\pi(x)]=0$. $\square$
+**Proof.** The centrality of $C$ in $U(\mathrm{G})$ gives $[C,x]=0$ for the image of $x$ in $U(\mathrm{G})$, and $\pi$ is an algebra homomorphism, so $[\pi(C),\pi(x)]=0$.
 
 **Corollary (preservation, restriction and descent).** The operator $\Omega_\pi$ preserves every submodule and descends to every quotient; on a direct sum of representations it acts componentwise; and if $V$ is irreducible then $\Omega_\pi$ is a scalar, by Schur's lemma, with the scalar $(\lambda,\lambda+2\rho)$ for $V=V(\lambda)$.
 
@@ -49,7 +49,7 @@ so $\Omega_\pi\in\operatorname{End}_{\mathrm{G}}(V)$, the algebra of $\mathrm{G}
 
 **Proposition.** The map $\lambda\mapsto(\lambda,\lambda+2\rho)=(\lambda+\rho,\lambda+\rho)-(\rho,\rho)$ is injective on the dominant integral weights.
 
-**Proof.** If $(\lambda+\rho,\lambda+\rho)=(\mu+\rho,\mu+\rho)$ then $\lambda+\rho$ and $\mu+\rho$ have the same length; both lie in the same open Weyl chamber, since $\lambda+\rho$ and $\mu+\rho$ are strictly dominant for dominant integral $\lambda,\mu$, and a chamber meets a sphere in at most one point, so $\lambda+\rho=\mu+\rho$ and $\lambda=\mu$. $\square$
+**Proof.** If $(\lambda+\rho,\lambda+\rho)=(\mu+\rho,\mu+\rho)$ then $\lambda+\rho$ and $\mu+\rho$ have the same length; both lie in the same open Weyl chamber, since $\lambda+\rho$ and $\mu+\rho$ are strictly dominant for dominant integral $\lambda,\mu$, and a chamber meets a sphere in at most one point, so $\lambda+\rho=\mu+\rho$ and $\lambda=\mu$.
 
 **Remark.** The injectivity fails if the whole Weyl orbit is admitted, the eigenvalue depending only on the orbit of $\lambda+\rho$; it is the choice of the dominant representative, that is of the highest weight, that makes the eigenvalue a label of the irreducible module.
 
@@ -63,7 +63,7 @@ $$
 
 the eigenspace of $\Omega_\pi$ for the eigenvalue $(\nu,\nu+2\rho)$; the eigenspaces of the Casimir operator are exactly the isotypic components.
 
-**Proof.** On every copy of $V(\nu)$ the operator acts by the scalar $(\nu,\nu+2\rho)$, so $V_{(\nu)}$ lies in the eigenspace. Conversely the eigenvalues are distinct for distinct highest weights by the proposition, so an eigenvector with eigenvalue $(\nu,\nu+2\rho)$ lies in the sum of the copies of $V(\nu)$, and the two spaces coincide. $\square$
+**Proof.** On every copy of $V(\nu)$ the operator acts by the scalar $(\nu,\nu+2\rho)$, so $V_{(\nu)}$ lies in the eigenspace. Conversely the eigenvalues are distinct for distinct highest weights by the proposition, so an eigenvector with eigenvalue $(\nu,\nu+2\rho)$ lies in the sum of the copies of $V(\nu)$, and the two spaces coincide.
 
 **Corollary.** The Casimir operator separates the isotypic components: it is a central operator whose characteristic polynomial has the distinct eigenvalues $(\nu,\nu+2\rho)$, and its eigenspace projections are the isotypic projections. In particular the multiplicity $m_\nu$ is the dimension of the corresponding eigenspace divided by $\dim V(\nu)$.
 
@@ -87,7 +87,7 @@ $$
 \theta\longmapsto \mathrm{id}_{\mathrm{G}}.
 $$
 
-**Proof.** The image of $z$ is $\sum_i\kappa(x^i,z)x_i$. Writing $z=\sum_j z_jx_j$, the dual-basis property gives $\kappa(x^i,z)=z_i$, so the image is $\sum_i z_ix_i=z$. $\square$
+**Proof.** The image of $z$ is $\sum_i\kappa(x^i,z)x_i$. Writing $z=\sum_j z_jx_j$, the dual-basis property gives $\kappa(x^i,z)=z_i$, so the image is $\sum_i z_ix_i=z$.
 
 **Remark.** The proposition is the operator-theoretic content of the Casimir element: it is the invariant tensor that represents the identity, read in $U(\mathrm{G})$ instead of in $\mathrm{G}\otimes\mathrm{G}$. The same computation with the adjoint action in place of the pairing is the statement that the Casimir operator of the adjoint module is the identity, which is the next section.
 
@@ -101,9 +101,8 @@ $$
 \Omega_{\operatorname{ad}}(x)=\sum_{i=1}^{m}[x_i,[x^i,x]]=x .
 $$
 
-**Proof.** The Casimir operator acts on the adjoint module by $\Omega_{\operatorname{ad}}(x)=\sum_i[x_i,[x^i,x]]$; by the invariance of $\kappa$ this equals the image of $x$ under the operator of the previous proposition, which is $x$. In the alternative form, the eigenvalue of the adjoint module is $(\theta,\theta+2\rho)$, with $\theta$ the highest root, and the normalisation of the Killing form makes this equal to $1$. $\square$
+**Proof.** The Casimir operator acts on the adjoint module by $\Omega_{\operatorname{ad}}(x)=\sum_i[x_i,[x^i,x]]$; by the invariance of $\kappa$ this equals the image of $x$ under the operator of the previous proposition, which is $x$. In the alternative form, the eigenvalue of the adjoint module is $(\theta,\theta+2\rho)$, with $\theta$ the highest root, and the normalisation of the Killing form makes this equal to $1$.
 
-**Verified.** For $\mathrm{SL}(2,K)$ with the basis $e,h,f$ and the dual basis $f/4,e/4,h/8$ of the Killing form, the computation $\Omega_{\operatorname{ad}}(x)=\sum_i[x_i,[x^i,x]]$ gives $\Omega_{\operatorname{ad}}(e)=e$, $\Omega_{\operatorname{ad}}(h)=h$ and $\Omega_{\operatorname{ad}}(f)=f$ over $\mathbb{Q}$.
 
 ## Tensor Products
 
@@ -113,7 +112,7 @@ $$
 \Omega_{V\otimes W}=\Omega_V\otimes\mathrm{id}_W+\mathrm{id}_V\otimes\Omega_W+2\sum_{i=1}^{m}\pi_V(x_i)\otimes\pi_W(x^i).
 $$
 
-**Proof.** This is the expansion of $\sum_i\pi_{V\otimes W}(x_i)\pi_{V\otimes W}(x^i)$ with $\pi_{V\otimes W}(x)=\pi_V(x)\otimes\mathrm{id}+\mathrm{id}\otimes\pi_W(x)$; the diagonal terms give the two Casimir operators, and the cross terms give twice the displayed mixed sum. $\square$
+**Proof.** This is the expansion of $\sum_i\pi_{V\otimes W}(x_i)\pi_{V\otimes W}(x^i)$ with $\pi_{V\otimes W}(x)=\pi_V(x)\otimes\mathrm{id}+\mathrm{id}\otimes\pi_W(x)$; the diagonal terms give the two Casimir operators, and the cross terms give twice the displayed mixed sum.
 
 **Corollary.** On a tensor product of two irreducible modules the Casimir operator acts with the eigenvalues of the summands shifted by the mixed term, whose value is computed from the highest weights by the Littlewood–Richardson rule of *Representations of Lie Algebras*; for $\mathrm{SL}(2,K)$ the mixed term vanishes on the highest weight vector and the eigenvalue is the sum of the two eigenvalues.
 
@@ -121,7 +120,7 @@ $$
 
 **Proposition.** In the regular representation, that is left multiplication on $U(\mathrm{G})$, the Casimir operator is left multiplication by $C$; it commutes with left multiplication by every element of $\mathrm{G}$, so it lies in $\operatorname{End}_{U(\mathrm{G})}(U(\mathrm{G}))$, and it acts on the centre of $U(\mathrm{G})$ by multiplication.
 
-**Proof.** The regular representation sends $x$ to left multiplication by $x$, so $\Omega$ is left multiplication by $C$; centrality of $C$ in $U(\mathrm{G})$ is the commutation with every left multiplication. $\square$
+**Proof.** The regular representation sends $x$ to left multiplication by $x$, so $\Omega$ is left multiplication by $C$; centrality of $C$ in $U(\mathrm{G})$ is the commutation with every left multiplication.
 
 **Remark.** The centre $Z(U(\mathrm{G}))$ of the enveloping algebra is a polynomial algebra over $K$ in $\operatorname{rank}\mathrm{G}$ generators, of which the Casimir element is the quadratic one; the higher Casimir operators are the higher generators, read as operators by the same construction. The theorem of Harish-Chandra and its proof belong to the representation theory of Part I and are named here only to locate the Casimir operator in the centre.
 

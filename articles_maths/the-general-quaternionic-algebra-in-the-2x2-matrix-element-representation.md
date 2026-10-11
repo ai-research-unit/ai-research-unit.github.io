@@ -7,7 +7,7 @@ The reading group *Topology on the Introduction to the General Quaternionic Alge
 
 The natural conjugation is the characteristic operation of the group, and in the model it is the **adjugate**: $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$. The quaternionic product is therefore the ordinary matrix product with the adjugate inserted in the first slot, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})$, and the general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\operatorname{adj}\mathsf{M}_2(\tilde{Q}))$. The determinant is the norm, so the whole element theory of the group is read off the determinant of the matrix.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the quaternionic product is $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ and its norm is $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. All matrix claims are recomputed in the verification script of the pass.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the quaternionic product is $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ and its norm is $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
 
 ## The Representation
 
@@ -53,7 +53,7 @@ $$
 \operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\beta(\tilde{P},\tilde{Q}),\qquad \det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$
 
-*Proof.* The determinant is multiplicative and $\det\operatorname{adj}(A)=\det A$, so $\det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\det \mathsf{M}_2(\tilde{P})\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. For the trace, $\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\mathrm{Sc}(\tilde{P}\star\tilde{Q})$ by the trace identity, and the scalar part of $\tilde{P}^{\natural}\tilde{Q}$ is $P_0Q_0+(\mathbf{P},\mathbf{Q})=\beta(\tilde{P},\tilde{Q})$. $\square$
+*Proof.* The determinant is multiplicative and $\det\operatorname{adj}(A)=\det A$, so $\det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\det \mathsf{M}_2(\tilde{P})\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. For the trace, $\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\mathrm{Sc}(\tilde{P}\star\tilde{Q})$ by the trace identity, and the scalar part of $\tilde{P}^{\natural}\tilde{Q}$ is $P_0Q_0+(\mathbf{P},\mathbf{Q})=\beta(\tilde{P},\tilde{Q})$.
 
 **The square and the idempotents.** The square of the product is the scalar matrix of the determinant,
 
@@ -73,7 +73,7 @@ $$
 (A\star'B)\star'C-A\star'(B\star'C)=\operatorname{adj}(B)AC-\operatorname{adj}(BA)C=\bigl(\operatorname{adj}(B)A-\operatorname{adj}(BA)\bigr)C ,
 $$
 
-the failure of the transpose-conjugation to be multiplicative in the same order: the adjugate sends $BA$ to $\operatorname{adj}(A)\operatorname{adj}(B)$, whereas the first term carries the transposed $B$ past $A$ without reversing. This is the matrix form of the closed form $[\tilde{P},\tilde{Q},\tilde{R}]=(\tilde{Q}^{\natural}\tilde{P}-\tilde{P}^{\natural}\tilde{Q}^{\natural})\tilde{R}$ of the group, and the non-associativity of the product is the elementary fact that a transpose does not commute with a product.
+the failure of the transpose-conjugation to be multiplicative in the same order: the adjugate sends $BA$ to $\operatorname{adj}(A)\operatorname{adj}(B)$, whereas the first term carries the transposed $N$ past $A$ without reversing. This is the matrix form of the closed form $[\tilde{P},\tilde{Q},\tilde{R}]=(\tilde{Q}^{\natural}\tilde{P}-\tilde{P}^{\natural}\tilde{Q}^{\natural})\tilde{R}$ of the group, and the non-associativity of the product is the elementary fact that a transpose does not commute with a product.
 
 ## The General Quaternionic Bilinear Form in the Model
 
@@ -156,7 +156,7 @@ $$
 
 which is $\mathsf{M}_2(e_1\star e_1)$ with $N(e_1)=1$.
 
-**The form, entry by entry.** The general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(X\operatorname{adj}Y)$, and at the pair $e_1,e_1$ the trace reads the unit, $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(e_1)\mathsf{M}_2(e_1))=\tfrac12\operatorname{Tr}I=1=B(e_1,e_1)$.
+**The form, entry by entry.** The general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(X\operatorname{adj}Y)$, and at the pair $e_1,e_1$ the trace reads the unit, $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(e_1)\mathsf{M}_2(e_1))=\tfrac12\operatorname{Tr}I=1=N(e_1,e_1)$.
 
 **The four words.** The twelve operations of the two chapters are built from four products, and each product is a word in the two matrices $X=\mathsf{M}_2(\tilde P)$ and $Y=\mathsf{M}_2(\tilde Q)$ and in the two involutions of the model, the adjugate and the conjugate transpose:
 
@@ -173,7 +173,7 @@ The symmetric part of a product is the half-sum of its word and of the word with
 
 $$
 \tfrac12\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
-\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=B(\tilde P,\tilde Q),\qquad
+\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=N(\tilde P,\tilde Q),\qquad
 \tfrac12\operatorname{Tr}(XY^{\dagger})=H(\tilde P,\tilde Q),\qquad
 \tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=K(\tilde P,\tilde Q),
 $$

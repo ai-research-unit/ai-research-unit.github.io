@@ -36,7 +36,7 @@ $$
 
 with $\varepsilon=(1,-1,-1,-1)$. **One letter, two arities.** A letter names the **form** when it carries two arguments and the **algebraic norm** when it carries one; the norm is the form of the same name with its two arguments equated, and the four equations above are the whole of the definition. Read with one argument, the value is complex for $B$ and $N$ and real for $H$ and $K$, because a sesquilinear form has a real diagonal; the same equation written for a general form, $\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$, is the definition of §*The Algebraic Norm of an Operation*. The four names are $B$ the **general plain bilinear algebraic norm**, the diagonal of $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$; $N$ the **general quaternionic bilinear algebraic norm**, the diagonal of $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$; $H$ the **general plain sesquilinear algebraic norm**, the diagonal of $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$, also called the Hermitian algebraic norm; and $K$ the **general quaternionic sesquilinear algebraic norm**, the diagonal of $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$, also called the Krein algebraic norm. The symmetrisation of a family keeps the scalar part of the general product, so it keeps the form and its diagonal; the antisymmetrisation kills the scalar part, so it has neither. That is the whole of the count, and §*From the Four Forms to the Four Algebraic Norms* proves it.
 
-The four algebraic norms are separated by three properties and no two of them share all three. The **value** lies in $\mathbb{C}$ for $B$ and $N$ and in $\mathbb{R}$ for $H$ and $K$. The **vanishing set** is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$ for $B$, the zero-divisor cone $\mathcal N$ for $N$, the origin alone for $H$, and the real cone $\mathcal K$ for $K$. **Multiplicativity** holds for $N$ alone and **definiteness** for $H$ alone; no one of the four is both, and that impossibility is the zero divisor of *Biquaternion Norm and Invertibility*.
+The four algebraic norms are separated by three properties and no two of them share all three. The **value** lies in $\mathbb{C}$ for $B$ and $N$ and in $\mathbb{R}$ for $H$ and $K$. The **vanishing set** is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$ for $B$, the zero-divisor cone $\mathcal N$ for $N$, the origin alone for $H$, and the real cone $\mathcal K$ for $K$. **Multiplicativity** holds for $N$ alone and **definiteness** for $H$ alone; no one of the four is both, and that impossibility is the zero divisor of *Norm and Invertibility in the General Plain Algebra*.
 
 The four algebraic norms of this article are the four degree-two functions of *The Four Pairings of the Biquaternion Algebra*, read on the diagonal of their pairings. Their names in the three-letter code of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* are read there; for the record, $B$ is carried by the general plain bilinear product and its symmetrisation, $N$ by the general quaternionic bilinear product and its symmetrisation, $H$ by the general plain sesquilinear product and its symmetrisation, and $K$ by the general quaternionic sesquilinear product and its symmetrisation, while the four antisymmetrisations carry no algebraic norm.
 
@@ -85,7 +85,7 @@ $$
 B=(-1,-1),\qquad N=(1,-1),\qquad H=(1,1),\qquad K=(-1,1),
 $$
 
-which are four different pairs. $\square$
+which are four different pairs.
 
 **Remark (the zero diagonal is not an algebraic norm).** The four antisymmetric operations have the zero algebraic norm because their scalar part is identically zero — $\mathbf P\times\mathbf Q$ for $\mathrm{APA}$ and $\mathrm{AQA}$, and the alternating forms of the two Hermitian forms for $\mathrm{APS}$ and $\mathrm{AQS}$. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the four operations are counted with no algebraic norm rather than with a zero one.
 
@@ -112,9 +112,9 @@ $$
 N(\tilde P\tilde Q)=N(\tilde P)\,N(\tilde Q).
 $$
 
-*Proof.* Under the matrix representation $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_k)=-i\sigma_k$, the algebraic norm is the determinant, $N(\tilde Q)=\det\mathsf{M}_2(\tilde Q)$, as the computation of the determinant of $\mathsf{M}_2(\tilde Q)=Q_0\mathrm I-i\sum_kQ_k\sigma_k$ shows. The map $\mathsf{M}_2$ is an algebra homomorphism and the determinant is multiplicative, so $N$ is. $\square$
+*Proof.* Under the matrix representation $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_k)=-i\sigma_k$, the algebraic norm is the determinant, $N(\tilde Q)=\det\mathsf{M}_2(\tilde Q)$, as the computation of the determinant of $\mathsf{M}_2(\tilde Q)=Q_0\mathrm I-i\sum_kQ_k\sigma_k$ shows. The map $\mathsf{M}_2$ is an algebra homomorphism and the determinant is multiplicative, so $N$ is.
 
-The algebraic norm is the **reduced norm** of the algebra, it is the only multiplicative one of the four, and it is the biquaternion algebraic norm of *Biquaternion Norm and Invertibility*: an element is invertible if and only if $N(\tilde Q)\neq0$, and the unit group is the norm-one group $\{N(\tilde Q)=1\}$, a non-compact real $6$-manifold homotopy equivalent to $S^{3}$.
+The algebraic norm is the **reduced norm** of the algebra, it is the only multiplicative one of the four, and it is the biquaternion algebraic norm of *Norm and Invertibility in the General Plain Algebra*: an element is invertible if and only if $N(\tilde Q)\neq0$, and the unit group is the norm-one group $\{N(\tilde Q)=1\}$, a non-compact real $6$-manifold homotopy equivalent to $S^{3}$.
 
 ### The General Plain Sesquilinear Algebraic Norm $H$
 
@@ -149,13 +149,13 @@ The table separates the four by the field of their values, by the Gram matrix an
 
 **Proposition (no algebraic norm is both definite and multiplicative).** No function on $\mathbb{B}$ is both definite and multiplicative.
 
-*Proof.* The algebra has zero divisors, $(e_0+ie_1)(e_0-ie_1)=0$ with $e_0\pm ie_1\neq0$ and $N(e_0\pm ie_1)=1+i^{2}=0$. A multiplicative function $\varphi$ would give $\varphi(e_0+ie_1)\varphi(e_0-ie_1)=\varphi(0)=0$, so one of the two values is zero, on a nonzero element; a definite function is nonzero off the origin. No function is both. $\square$
+*Proof.* The algebra has zero divisors, $(e_0+ie_1)(e_0-ie_1)=0$ with $e_0\pm ie_1\neq0$ and $N(e_0\pm ie_1)=1+i^{2}=0$. A multiplicative function $\varphi$ would give $\varphi(e_0+ie_1)\varphi(e_0-ie_1)=\varphi(0)=0$, so one of the two values is zero, on a nonzero element; a definite function is nonzero off the origin. No function is both.
 
 **Corollary.** $N$ is multiplicative and not definite; $H$ is definite and not multiplicative; and no third algebraic norm of the four repairs the split. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra — the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$ of the Hurwitz theorem are exactly the ones in which the two senses coincide.
 
 **Proposition (only $N$ is multiplicative).** Of the four algebraic norms, $N$ alone satisfies $\varphi(\tilde P\tilde Q)=\varphi(\tilde P)\varphi(\tilde Q)$.
 
-*Proof.* $N$ is multiplicative by the proposition of its section. The other three are not, each refuted by one substitution. For $B$: $B(e_1e_2)=B(e_3)=-1$ while $B(e_1)B(e_2)=(-1)(-1)=1$. For $H$: $H(e_1+ie_2)=1+1=2$ while $(e_1+ie_2)^{2}=e_1^{2}+(ie_2)^{2}=-e_0+e_0=0$ and $H(0)=0$. For $K$: $K(e_0+e_1)=1-1=0$ while $(e_0+e_1)^{2}=e_0^{2}+e_0e_1+e_1e_0+e_1^{2}=-e_0+e_1-e_1-e_0=-2e_0$ and $K(-2e_0)=4$. $\square$
+*Proof.* $N$ is multiplicative by the proposition of its section. The other three are not, each refuted by one substitution. For $B$: $B(e_1e_2)=B(e_3)=-1$ while $B(e_1)B(e_2)=(-1)(-1)=1$. For $H$: $H(e_1+ie_2)=1+1=2$ while $(e_1+ie_2)^{2}=e_1^{2}+(ie_2)^{2}=-e_0+e_0=0$ and $H(0)=0$. For $K$: $K(e_0+e_1)=1-1=0$ while $(e_0+e_1)^{2}=e_0^{2}+e_0e_1+e_1e_0+e_1^{2}=-e_0+e_1-e_1-e_0=-2e_0$ and $K(-2e_0)=4$.
 
 **Remark (the two senses of *norm*).** Two different things carry the name. The **algebraic norm** of this article is a map into the ring — $B$ and $N$ into $\mathbb{C}$, $H$ and $K$ into $\mathbb{R}$ — and it is algebra: diagonals, quadratic forms, polarisations, zero divisors. The **topological norm** is the one selection of positive real values, $\lVert\tilde Q\rVert_E=\bigl(H(\tilde Q)\bigr)^{1/2}$, and it is topology: distance, balls, convergence, completeness. Only $H$ of the four yields it, because only $H$ is real and definite; $B$ and $N$ are complex-valued, and $K$ is real but indefinite. The two senses are the two layers of *Introduction to Mathematics*, and no third function holds them together.
 
@@ -191,6 +191,6 @@ $B$ and $N$ are complex-valued and $H$ and $K$ real-valued. $N$ is the multiplic
 - *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and *Comparison Between the Four General Products*, for the four general forms whose diagonals are the four algebraic norms, with their Gram matrices, their signatures and their symmetries.
 - *The Four Pairings of the Biquaternion Algebra*, for the four pairings and the four degree-two functions, the separation of the two senses of *norm*, and the four general forms whose diagonals the four algebraic norms are.
 - *Remarkable Subspaces and the Four Algebraic Norms*, for the restriction of the four algebraic norms to the remarkable subspaces, with their signatures and the definiteness of each.
-- *Biquaternion Norm and Invertibility*, for the multiplicative algebraic norm $N$, the zero divisors, the criterion of invertibility and the norm-one group.
+- *Norm and Invertibility in the General Plain Algebra*, for the multiplicative algebraic norm $N$, the zero divisors, the criterion of invertibility and the norm-one group.
 - *Topology and Metric for Each of the Twelve Operations*, for the one topology and the one Euclidean norm of the space, and for the diagonal route that reaches a definite algebraic norm for $\mathrm{GPS}$ and $\mathrm{SPS}$ alone.
 - *The Norm Defined by a Form*, *Hermitian Forms over Algebras and Norms* and *Introduction to Mathematics*, for the distinction between the algebraic norm, whose value is an element, and the topological norm, whose value is a positive real.

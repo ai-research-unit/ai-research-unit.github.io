@@ -113,7 +113,7 @@ $$
 Z = \mathrm{Tr}\left(e^{-\beta\tilde{H}}\right) = 2\,\mathrm{Sc}\left(e^{-\beta\tilde{H}}\right) = 2e^{-\beta h_0}\cosh\left(\beta|\mathbf{h}|\right),
 $$
 
-the ordinary partition function of a **two-level system** with energies $h_0 \pm |\mathbf{h}|$. Recomputed here: the closed form equals the sum of the two Boltzmann weights to machine precision, the observable has exactly two eigenvalues, and the entropy is $S = \log 2 + \log\cosh x - x\tanh x$ with $x = \beta|\mathbf{h}|$, which takes its **maximum value $\log 2$ at $x = 0$** and decreases thereafter. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.
+the ordinary partition function of a **two-level system** with energies $h_0 \pm |\mathbf{h}|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.
 
 This is the **rank-two limitation** in its first sense. The framework's thermal invariants are invariants of a finite, two-dimensional operator algebra: a state, an observable, a partition function, an entropy, and a heat capacity, all of a single qubit. They are not the thermodynamic quantities cosmology uses.
 
@@ -147,7 +147,7 @@ $$
 \tilde{T} = \sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu \bar{\varepsilon}_\nu ,
 $$
 
-and its behaviour is the framework's most important structural limitation for cosmology. Recomputed here on a general symmetric $T_{\mu\nu}$,
+and its behaviour is the framework's most important structural limitation for cosmology.
 
 $$
 \sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\eta^{\mu\nu}T_{\mu\nu}\right) e_0 ,

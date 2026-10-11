@@ -1,0 +1,181 @@
+# __Nilpotents of the Antisymmetric Quaternionic Sesqualgebra__
+
+## Introduction
+
+A nilpotent of a product is an element some power of which vanishes, the power being read in the product, and the least such exponent is the index of nilpotency of the element; an element of index two is a square-zero element. For the conjugate cross product
+
+$$
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\mathbf{P}\times\overline{\mathbf{Q}}
+$$
+
+of *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* the powers are read with a bracketing, since the block is not associative, and the left-nested reading of the corpus is the one used below. The result is the one the definitions of the corpus single out as possible and rare: **the index of nilpotency of the block is not bounded by two.** The nilpotents of the block form two classes and no third, and the index takes exactly the two values two and four:
+
+1. **the square-zero elements**, of index two, which are the elements whose vector part is a complex multiple of a real vector; they are the nonzero elements on which the diagonal of the block vanishes, and they form a cone of real dimension six;
+2. **the elements of index four**, which are the elements whose vector part is isotropic for the complex bilinear square without being a complex multiple of a real vector; they form a set of real dimension six, and the elementary witness is $e_1+ie_2$, whose left-nested powers are
+
+$$
+e_1+ie_2,\qquad -2ie_3,\qquad 2(e_1-ie_2),\qquad 0,\qquad 0,\ \dots
+$$
+
+There is no nilpotent of index three, and the index depends on the bracketing: read on the right the powers of the same witness never vanish. The two classes are cut by one quadratic criterion, the complex bilinear square of the vector part, and the whole reading comes from a recurrence of the left-nested powers which is linear and is computed in the third section.
+
+Three readings are used throughout. The definitions of the nilpotent, of the index and of the square-zero element are *Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent*, and the bracketing of the powers is the same article, §*Powers, the Square and the Roots*. The diagonal and its cone are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the square-zero elements of the four general products are *The Square-Zero Elements of the Four General Products*; the element-theoretic neighbours are *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra* and *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*; and the law behind the recurrence is the criterion of *The Specificities of the Antisymmetric Quaternionic Sesqualgebra*.
+
+**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$ and $e_k^2=-e_0$, a generic element $\tilde X=X_0e_0+\mathbf{X}$ with $\mathbf{X}=\sum_kX_ke_k$. The **complex bilinear dot product** of two vector parts is
+
+$$
+(\mathbf{A},\mathbf{B})=\sum_{k=1}^{3}A_kB_k ,
+$$
+
+so that $(\mathbf{A},\mathbf{A})=\sum_kA_k^2$ is the complex bilinear square of the vector part; note that $(\mathbf{X},\overline{\mathbf{X}})=\sum_k\lvert X_k\rvert^{2}$ is the non-negative real one, and that $(\mathbf{A},\mathbf{B})$ is $\mathbb{C}$-linear in both entries, unlike the sesquilinear pairing $K$ of *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*. The left-nested powers of an element are $\tilde X^{\diamond1}=\tilde X$, $\tilde X^{\diamond2}=\tilde X\diamond\tilde X$ and $\tilde X^{\diamond(k+1)}=\tilde X^{\diamond k}\diamond\tilde X$; the vector parts of the powers are written $\mathbf{u}_1=\mathbf{X}$, $\mathbf{u}_2$, $\dots$, so that $\tilde X^{\diamond k}=\mathbf{u}_k$ for $k\geq2$ and $\tilde X^{\diamond1}=\tilde X$.
+
+## The Definition, Relative to a Product
+
+**Definition (nilpotent of a product).** Let $\star$ be a product on $\mathbb{B}$. An element $\tilde\Upsilon$ is a **nilpotent of $\star$** when some power of it vanishes,
+
+$$
+\tilde\Upsilon^{\star k}=0 \quad\text{for some } k\geq1 ,
+$$
+
+the power being read in $\star$. The least such $k$ is the **index of nilpotency** of $\tilde\Upsilon$, and an element of index two is a **square-zero element** of $\star$. The origin is the trivial nilpotent of index one, and the definition and its two readings are *Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent*.
+
+Throughout this article the product is the block $\diamond$, so that, unqualified, a nilpotent is a nilpotent of the block, its powers are the left-nested powers of the block, and its index is the index of the block.
+
+That section carries the warning this article instantiates: in the plain product the index is two or nothing, so that the nilpotents there are exactly the square-zero elements, but **the index is not bounded by two in every product of the twelve**. The block is one of the products in which it is not, and the two values it takes are two and four. The warning is not about the degenerate cases of the definition; it is a statement about the products of the space, and the antisymmetric part of the quaternionic sesquilinear product is one of the two halves that realise it.
+
+**Remark (the class of the equation).** For the block the powers are read with the left-nested bracketing, and the reading is not a convention only: the index depends on it. Read on the right, the powers of the witness $e_1+ie_2$ are
+
+$$
+e_1+ie_2,\qquad -2ie_3,\qquad -2(e_1+ie_2),\qquad 4ie_3,\qquad 4(e_1+ie_2),\ \dots
+$$
+
+and none of them vanishes, while the left-nested reading gives index four by the introductive display. The block is therefore not only a product in which the index exceeds two; it is a product in which the index is a property of the bracketing as well as of the element, and the whole of the article is stated in the left-nested reading of the definitions.
+
+## The Recurrence of the Left-Nested Powers
+
+**Lemma (the powers as a linear recurrence).** Let $\tilde X=X_0e_0+\mathbf{X}$ with vector part $\mathbf{X}$, let $\mathbf{u}_k$ be the vector parts of the left-nested powers, and put $c=(\mathbf{X},\mathbf{X})$ and $\lvert\mathbf{X}\rvert^{2}=(\mathbf{X},\overline{\mathbf{X}})$. Then
+
+$$
+\mathbf{u}_1=\mathbf{X},\qquad \mathbf{u}_2=\mathbf{X}\times\overline{\mathbf{X}},\qquad \mathbf{u}_3=\overline{\mathbf{X}}\,\lvert\mathbf{X}\rvert^{2}-\overline{c}\,\mathbf{X},\qquad \mathbf{u}_{k+2}=-\overline{c}\,\mathbf{u}_k\quad(k\geq2).
+$$
+
+*Proof.* The square of the block is the conjugate cross product, so $\mathbf{u}_2=\mathbf{X}\times\overline{\mathbf{X}}$. For the powers beyond the second, put $T\mathbf{u}=\mathbf{u}\times\overline{\mathbf{X}}$ for a variable vector $\mathbf{u}$: the map $T$ is $\mathbb{C}$-linear, and the left-nested powers obey $\mathbf{u}_{k+1}=T\mathbf{u}_k$. The cross product satisfies the identity
+
+$$
+(\mathbf{a}\times\mathbf{b})\times\mathbf{c}=\mathbf{b}\,(\mathbf{a},\mathbf{c})-\mathbf{a}\,(\mathbf{b},\mathbf{c})
+$$
+
+for the complex bilinear dot product, and applying it with $\mathbf{a}=\mathbf{u}$, $\mathbf{b}=\overline{\mathbf{X}}$, $\mathbf{c}=\overline{\mathbf{X}}$ gives
+
+$$
+T^{2}\mathbf{u}=(\mathbf{u}\times\overline{\mathbf{X}})\times\overline{\mathbf{X}}=\overline{\mathbf{X}}\,(\mathbf{u},\overline{\mathbf{X}})-\overline{c}\,\mathbf{u},
+$$
+
+since $(\overline{\mathbf{X}},\overline{\mathbf{X}})=\overline{c}$. For the third power this is read on $\mathbf{u}=\mathbf{X}$, which gives the displayed $\mathbf{u}_3$. For the powers from the fourth on, note that every power from the second on is a value of the block, hence of the form $\mathbf{a}\times\overline{\mathbf{X}}$, hence orthogonal to $\overline{\mathbf{X}}$ in the bilinear dot, since the cross product is orthogonal to its second entry: $(\mathbf{u}_k,\overline{\mathbf{X}})=0$ for every $k\geq2$. The displayed expression for $T^2$ then reduces to $\mathbf{u}_{k+2}=T^2\mathbf{u}_k=-\overline{c}\,\mathbf{u}_k$ for every $k\geq2$.
+
+**Remark (what the recurrence says).** The recurrence is a two-step one from the second power on, and it separates the powers into the odd ones and the even ones: $\mathbf{u}_4=-\overline{c}\,\mathbf{u}_2$, $\mathbf{u}_5=-\overline{c}\,\mathbf{u}_3$, $\mathbf{u}_6=-\overline{c}\,\mathbf{u}_4$, and so on. The third power is the exceptional seat, and it is the one that carries the number $\lvert\mathbf{X}\rvert^{2}$ as well as $c$. The whole of the nilpotent theory of the block is therefore the reading of the two numbers $c$ and $\lvert\mathbf{X}\rvert^{2}$ and of the three vectors $\mathbf{u}_1,\mathbf{u}_2,\mathbf{u}_3$: from the fourth power on the sequence vanishes exactly when the multiplier $-\overline{c}$ is zero or when one of the two seats $\mathbf{u}_2,\mathbf{u}_3$ is zero. The scalar coordinate $X_0$ does not enter at all, which is the element-theoretic form of the annihilation of the centre by the block.
+
+**Corollary (the scalar coordinate is free).** Two elements with the same vector part have the same powers from the second on, and in particular they are nilpotent together and of the same index. The centre lies in the kernel of the sequence, and an element and its translate by a central element are nilpotent with the same index.
+
+## The Index of Nilpotency
+
+**Theorem (the index takes the values two and four).** Let $\tilde X$ be nonzero with vector part $\mathbf{X}$. Then:
+
+1. $\tilde X$ is a square-zero element exactly when $\mathbf{X}$ is a complex multiple of a real vector; its index is then two;
+2. $\tilde X$ has index four exactly when $\mathbf{X}$ is isotropic for the complex bilinear square, $(\mathbf{X},\mathbf{X})=0$, without being a complex multiple of a real vector;
+3. in the remaining case, when $(\mathbf{X},\mathbf{X})\neq0$ and $\mathbf{X}$ is not a complex multiple of a real vector, no power of $\tilde X$ vanishes and $\tilde X$ is not a nilpotent.
+
+There is therefore no nilpotent of index three, and the index of nilpotency of the block takes the values two and four.
+
+*Proof.* By the recurrence, $\mathbf{u}_1=\mathbf{X}$ vanishes exactly when the vector part is zero, which is the case of a central element. For a non-central element the vanishing of the square $\mathbf{u}_2=\mathbf{X}\times\overline{\mathbf{X}}$ holds exactly when $\mathbf{X}$ and $\overline{\mathbf{X}}$ are $\mathbb{C}$-linearly dependent, that is exactly when $\mathbf{X}$ is a complex multiple of a real vector. This is case 1, with the index two since the square vanishes and the element is nonzero.
+
+Assume now that the vector part is not a complex multiple of a real vector, so that $\mathbf{u}_1\neq0$ and $\mathbf{u}_2\neq0$. If $c=(\mathbf{X},\mathbf{X})=0$, the third power is $\mathbf{u}_3=\overline{\mathbf{X}}\lvert\mathbf{X}\rvert^{2}$, which is nonzero since $\mathbf{X}\neq0$; the fourth power is $\mathbf{u}_4=-\overline{c}\,\mathbf{u}_2=0$ by the recurrence; so the first three powers are nonzero and the fourth vanishes, and the index is four: this is case 2. If $c\neq0$, the third power is nonzero as well, since $\mathbf{u}_3=0$ would give $\overline{\mathbf{X}}\lvert\mathbf{X}\rvert^{2}=\overline{c}\,\mathbf{X}$ and hence the $\mathbb{C}$-linear dependence of $\mathbf{X}$ with $\overline{\mathbf{X}}$, which is excluded; and the recurrence $\mathbf{u}_{k+2}=-\overline{c}\,\mathbf{u}_k$ with $-\overline{c}\neq0$ multiplies by a nonzero scalar at every step from the second power on, so that the two sequences $\mathbf{u}_2,\mathbf{u}_4,\mathbf{u}_6,\dots$ and $\mathbf{u}_3,\mathbf{u}_5,\dots$ never vanish. No power vanishes in this case, and $\tilde X$ is not a nilpotent: this is case 3. The three cases are exclusive and exhaustive, and the index three is excluded by the second case, in which $\mathbf{u}_3$ is nonzero while $\mathbf{u}_4$ vanishes.
+
+**Remark (the two classes are complementary in the isotropic cone).** The two classes of the theorem are cut by the same quadratic equation with different outcomes. The class of index four lies in the isotropic cone $(\mathbf{X},\mathbf{X})=0$ of the complex bilinear square, and the class of index two lies in the union of the scalar line and the complex multiples of the real directions; the two meet only at the element zero, because a nonzero vector part which is both a complex multiple of a real vector and isotropic does not exist: writing $\mathbf{X}=\lambda\mathbf{v}$ with $\mathbf{v}$ real gives $(\mathbf{X},\mathbf{X})=\lambda^{2}(\mathbf{v},\mathbf{v})$, which vanishes only for $\lambda=0$ or $\mathbf{v}=0$. The isotropic cone is therefore the class of index four together with the origin, and it meets the class of index two only there: on the complex multiples of the real directions the square vanishes, and on the rest of the cone it does not and the fourth power does. The real directions themselves lie in the isotropic cone only at the origin, since $(\mathbf{v},\mathbf{v})=\lvert\mathbf{v}\rvert^{2}$ for a real $\mathbf{v}$.
+
+**Remark (the index is an invariant of the bracketing).** The left-nested reading is the one of the definitions, and the remark of the first section shows that the index is not an invariant of the element alone: the witness $e_1+ie_2$ has index four on the left and no index at all on the right within the five powers computed, and its right-nested powers are the two halves of the left-nested ones, multiplied by alternating signs and stopped one step later. The distinction is not an accident of the witness: the right-nested reading replaces the conjugate-linear data of the left-nested one by its mirror, and the two readings differ on the isotropic cone, which is exactly where the index of the block exceeds two. The definitions of the corpus warn that a non-associative product needs a bracketing; the block is the case in which the warning has content.
+
+## The Two Classes of Nilpotents
+
+**The square-zero elements.** The elements of index two are the nonzero elements whose vector part is a complex multiple of a real vector, and they form the cone
+
+$$
+\tilde X\diamond\tilde X=0 \qquad\Longleftrightarrow\qquad \mathbf{X}=\lambda\mathbf{v},\quad \lambda\in\mathbb{C},\ \mathbf{v}\in\mathbb{R}^{3},
+$$
+
+of real dimension six, already cut by the diagonal of *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*. Two families are read inside it: the **central family**, the elements $\lambda e_0$ with $\lambda\neq0$, whose vector part is zero; and the **vector family**, the elements $\lambda\mathbf{v}$ with $\lambda\neq0$ and $\mathbf{v}$ a nonzero real vector. The parent unit $e_0$ lies in the first family, so **the unit of the four general products is a square-zero element of the block**, and the whole scalar line is nilpotent of index two.
+
+**The elements of index four.** The elements of index four are the nonzero elements whose vector part lies on the isotropic cone of the complex bilinear square and is not a complex multiple of a real vector. The scalar coordinate is free, so the set is $\mathbb{C}e_0$ over the cone, of real dimension six: two for the free scalar and four for the cone of isotropy. The elementary witness is $e_1+ie_2$, with
+
+$$
+e_1+ie_2,\qquad -2ie_3,\qquad 2(e_1-ie_2),\qquad 0 ,
+$$
+
+the first three nonzero and the fourth zero, the index being four; the scalar coordinate is free, so $e_0+e_1+ie_2$ is a nilpotent of the same index, and the star, the natural conjugation and the bar carry the class onto itself. The cone here is the isotropic cone of the complex bilinear form on the vector subspace, whose structure is the one of *The Isotropic Structure of the General Quaternionic Sesqualgebra* read on this block.
+
+**Remark (the two classes are disjoint and exhaustive).** Every nonzero nilpotent of the block lies in exactly one of the two classes, since the tree of the theorem has three branches and the third is the non-nilpotent one; and the two classes are disjoint by the complementarity of the isotropic cone. The square-zero elements and the elements of index four are therefore the whole of the nilpotent set, which is the union of a cone of dimension six and a cone over a four dimensional cone, and the two pieces meet only outside the nilpotents, at the origin.
+
+## The Conjugations and the Star
+
+**The star reverses the product up to a sign.** For all biquaternions,
+
+$$
+(\tilde X^{*})\diamond(\tilde Y^{*})=-(\tilde X\diamond\tilde Y)^{*} .
+$$
+
+The star therefore maps a nilpotent to a nilpotent and preserves the index: applying the relation to a pair of equal elements gives $(\tilde X^{*})\diamond(\tilde X^{*})=-(\tilde X\diamond\tilde X)^{*}$, and iterating gives $\tilde X^{*\diamond k}=\pm(\tilde X^{\diamond k})^{*}$ for every $k$, so the powers of the star vanish together with those of the element.
+
+**The natural conjugation reverses the product up to a sign.** For all biquaternions,
+
+$$
+(\tilde X^{\natural})\diamond(\tilde Y^{\natural})=\tilde X\diamond\tilde Y=-(\tilde X\diamond\tilde Y)^{\natural},
+$$
+
+since the natural conjugation changes the sign of the vector part and the cross product is bilinear in the two vector parts, so that the two sign changes cancel, while the value is negated, $(\tilde X\diamond\tilde Y)^{\natural}=-(\tilde X\diamond\tilde Y)$. The natural conjugation therefore preserves the classes of the block, the index included, but it is a **skew-automorphism** of the block and not an automorphism in the strict sense: an automorphism would satisfy $\tilde X^{\natural}\diamond\tilde Y^{\natural}=(\tilde X\diamond\tilde Y)^{\natural}$, which fails in general, the natural conjugation negating every nonzero value. The bar is the conjugation that commutes with the product, $(\overline{\tilde X})\diamond(\overline{\tilde Y})=\overline{\tilde X\diamond\tilde Y}$, and it too preserves the nilpotent classes. The three conjugations of the algebra thus act on the nilpotent sets of the block as symmetries, the bar with the sign $+1$ on the product and the star and the natural conjugation with the sign $-1$.
+
+## The Relation to the Zero Divisors, to the Idempotents and to the General Products
+
+**Every nilpotent is a zero divisor.** The zero divisors of the block are all its nonzero elements, so the nilpotents are a subset of the zero-divisor set, as *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra* records. The witness is uniform and does not need the nilpotency: every nonzero $\tilde A$ has $\tilde A\diamond\overline{\tilde A}=0$ and $\overline{\tilde A}\diamond\tilde A=0$, so the conjugate of the element annihilates it on both sides. The nilpotent classes are therefore read as two distinguished subsets of one and the same zero-divisor set, cut by the index instead of by the criterion of annihilation.
+
+**No nilpotent is an idempotent.** The idempotent set of the block is the origin alone, as *Idempotents of the Antisymmetric Quaternionic Sesqualgebra* proves, so the intersection of the nilpotent set with the idempotent set is the origin. The two classes are the two degenerate readings of the diagonal, and the block carries only the first: the diagonal vanishes on a cone, is never nonzero and central, and never fixes a nonzero element.
+
+**The square-zero sets of the block and of the general products meet only at the origin.** In the four general products the square-zero elements are the elements with vanishing scalar coordinate whose vector part is isotropic for the complex bilinear square,
+
+$$
+\tilde X\star\tilde X=0 \qquad\Longleftrightarrow\qquad X_0=0,\quad (\mathbf{X},\mathbf{X})=0 ,
+$$
+
+a set of real dimension four whose structure is *The Square-Zero Elements of the Four General Products*. Compared with the block the two sets are complementary rather than nested: the square-zero elements of the general products are the elements of index four of the block, and the square-zero elements of the block are the elements whose vector part is a complex multiple of a real vector, which for the general products are not square-zero except at the origin. The two quadratic criteria, the bilinear square and the complex-proportionality of the vector part to its conjugate, cut the two sets, and their comparison is one of the sharpest separations of the block from the row it splits.
+
+## The Matrix Model
+
+**The vanishing of the square is the vanishing of a matrix.** The block is realised faithfully on the two by two matrices over $\mathbb{C}$ and on the four by four ones of the left regular model, and an element is a square-zero element of the block exactly when the matrix of its square vanishes in either model; the value is traceless in both, so the square-zero condition is the vanishing of a traceless matrix rather than of its trace. The witness $e_1+ie_2$ has the value $-2ie_3$, whose matrix in the two by two model is the diagonal matrix $\mathrm{diag}(-2,2)$, and the powers of the witness are read there in the same way; the two models and the matrix of the diagonal are *The Antisymmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Antisymmetric Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*. The index of nilpotency is the index of the same sequence read on the matrices, and the recurrence of the third section is the matrix identity behind it.
+
+## Summary
+
+The nilpotents of the block form two classes and no third. The square-zero elements are the elements whose vector part is a complex multiple of a real vector: a cone of real dimension six containing the whole centre, and among them the unit of the parent products. The elements of index four are the elements whose vector part is isotropic for the complex bilinear square without being a complex multiple of a real vector: the isotropic cone of the vector subspace lifted over a free scalar coordinate, with the elementary witness $e_1+ie_2$, whose left-nested powers are $e_1+ie_2$, $-2ie_3$, $2(e_1-ie_2)$ and then zero. The remaining elements have no vanishing power and are not nilpotents. The index is therefore two or four, never three, and it depends on the bracketing of the powers, the right-nested reading of the witness never vanishing. The whole reading comes from the recurrence $\mathbf{u}_{k+2}=-\overline{c}\,\mathbf{u}_k$ of the left-nested powers, with $c$ the complex bilinear square of the vector part and $k\geq2$; the scalar coordinate is free throughout, every nilpotent is a zero divisor, no nilpotent is an idempotent, and the square-zero sets of the block and of the four general products meet only at the origin.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $(\mathbf{A},\mathbf{B})=\sum_kA_kB_k$ | the complex bilinear dot product of two vector parts |
+| $(\mathbf{X},\mathbf{X})=c$ | the complex bilinear square of the vector part |
+| $(\mathbf{X},\overline{\mathbf{X}})=\lvert\mathbf{X}\rvert^{2}$ | the non-negative real square of the vector part |
+| $\mathbf{u}_k$ | the vector part of the $k$-th left-nested power |
+| $\mathbf{u}_3=\overline{\mathbf{X}}\lvert\mathbf{X}\rvert^{2}-\overline{c}\,\mathbf{X}$ | the third power |
+| $\mathbf{u}_{k+2}=-\overline{c}\,\mathbf{u}_k$ | the recurrence of the powers, for $k\geq2$ |
+| $e_1+ie_2$ | the witness of index four; $(e_1+ie_2,\ e_1+ie_2)=0$ |
+| $e_0$ | a square-zero element of the block, the parent unit |
+| $\tilde X^{*}\diamond\tilde Y^{*}=-(\tilde X\diamond\tilde Y)^{*}$ | the star on the product |
+| $X_0=0$, $(\mathbf{X},\mathbf{X})=0$ | the square-zero criterion of the four general products |
+
+## Further Reading
+
+- *Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent* and §*Powers, the Square and the Roots*, for the nilpotent, the index, the square-zero element and the bracketing of the powers.
+- *Nilpotents of the General Plain Algebra*, for the model block, where the index is two or nothing.
+- *The Square-Zero Elements of the Four General Products*, for the square-zero elements of the four general products and their comparison.
+- *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the diagonal, its criterion and its cone.
+- *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra*, for the zero-divisor set that contains the two nilpotent classes.
+- *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*, for the idempotent set which meets the nilpotents only at the origin.
+- *The Isotropic Structure of the General Quaternionic Sesqualgebra*, for the isotropic cone of the vector subspace read on the row.

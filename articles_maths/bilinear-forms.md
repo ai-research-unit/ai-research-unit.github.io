@@ -91,7 +91,7 @@ $$
 
 Equivalently $\operatorname{Bil}_R(M) = \operatorname{Sym}_R(M) \oplus \operatorname{Alt}_R(M)$, the fixed and the anti-fixed part of the transposition.
 
-**Proof.** Each of $B_{s}$, $B_{a}$ is additive and $R$-linear in each variable. The transpose is an involution, so $B_{s}^{\intercal} = \tfrac{1}{2}(B^{\intercal} + B) = B_{s}$ and $B_{a}^{\intercal} = \tfrac{1}{2}(B^{\intercal} - B) = -B_{a}$. Moreover $B_{a}(v, v) = \tfrac{1}{2}(B(v, v) - B(v, v)) = 0$, so $B_{a}$ is alternating, and $B_{s} + B_{a} = B$. For uniqueness, transpose a decomposition $B = S + A$ with $S$ symmetric and $A$ alternating: an alternating form is skew-symmetric, so $A^{\intercal} = -A$ and $B^{\intercal} = S - A$, whence $2S = B + B^{\intercal}$ and $2A = B - B^{\intercal}$, and $2$ is invertible. Uniqueness gives $\operatorname{Sym}_R(M) \cap \operatorname{Alt}_R(M) = 0$, so the sum is direct. $\square$
+**Proof.** Each of $B_{s}$, $B_{a}$ is additive and $R$-linear in each variable. The transpose is an involution, so $B_{s}^{\intercal} = \tfrac{1}{2}(B^{\intercal} + B) = B_{s}$ and $B_{a}^{\intercal} = \tfrac{1}{2}(B^{\intercal} - B) = -B_{a}$. Moreover $B_{a}(v, v) = \tfrac{1}{2}(B(v, v) - B(v, v)) = 0$, so $B_{a}$ is alternating, and $B_{s} + B_{a} = B$. For uniqueness, transpose a decomposition $B = S + A$ with $S$ symmetric and $A$ alternating: an alternating form is skew-symmetric, so $A^{\intercal} = -A$ and $B^{\intercal} = S - A$, whence $2S = B + B^{\intercal}$ and $2A = B - B^{\intercal}$, and $2$ is invertible. Uniqueness gives $\operatorname{Sym}_R(M) \cap \operatorname{Alt}_R(M) = 0$, so the sum is direct.
 
 **Corollary (matrix form).** In a basis the Gram matrix splits as
 

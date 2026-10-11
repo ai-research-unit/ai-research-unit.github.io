@@ -35,7 +35,7 @@ $$
 \alpha^{*}=\alpha, \qquad \alpha^{*}\alpha=\alpha\alpha^{*}=\mathrm{id} .
 $$
 
-*Proof.* The invariance identities give $\langle\alpha(x),y\rangle=\langle x,\alpha(y)\rangle$, which is the defining identity of the adjoint $\alpha^{*}=\alpha$. Then $\alpha^{*}\alpha=\alpha^{2}=\mathrm{id}$ and likewise. $\square$
+*Proof.* The invariance identities give $\langle\alpha(x),y\rangle=\langle x,\alpha(y)\rangle$, which is the defining identity of the adjoint $\alpha^{*}=\alpha$. Then $\alpha^{*}\alpha=\alpha^{2}=\mathrm{id}$ and likewise.
 
 So the grading and the involution of the module are not independent: an $\alpha$-invariant pairing makes the grade involution an isometry, and the adjoint of the grade involution is the grade involution.
 
@@ -49,7 +49,7 @@ $$
 \bigl(S^{\alpha}_{a,b}\bigr)^{*}=S^{\alpha}_{\beta(a),\,\beta(b)} .
 $$
 
-*Proof.* Since $S^{\alpha}_{a,b}=S_{a,b}\circ\alpha$ and the adjoint is anti-multiplicative, $(S^{\alpha}_{a,b})^{*}=\alpha^{*}(S_{a,b})^{*}$. By the proposition above $\alpha^{*}=\alpha$, and by *The Adjoint of the Sandwich on a Bimodule over an Algebra* $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$. Hence $(S^{\alpha}_{a,b})^{*}=\alpha\,S_{\sigma(a),\sigma(b)}$. Finally, the conjugation identity $S^{\alpha}_{c,d}=\alpha S_{\alpha^{-1}(c),\alpha^{-1}(d)}$ of *The Signed Sandwich on a Bimodule over an Algebra* gives $\alpha S_{\sigma(a),\sigma(b)}=S^{\alpha}_{\alpha^{-1}\sigma(a),\,\alpha^{-1}\sigma(b)}$, and $\alpha^{-1}\sigma=(\alpha^{-1}\sigma)=\alpha\sigma$ because $\alpha^{-1}=\alpha$ commutes with $\sigma$. $\square$
+*Proof.* Since $S^{\alpha}_{a,b}=S_{a,b}\circ\alpha$ and the adjoint is anti-multiplicative, $(S^{\alpha}_{a,b})^{*}=\alpha^{*}(S_{a,b})^{*}$. By the proposition above $\alpha^{*}=\alpha$, and by *The Adjoint of the Sandwich on a Bimodule over an Algebra* $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$. Hence $(S^{\alpha}_{a,b})^{*}=\alpha\,S_{\sigma(a),\sigma(b)}$. Finally, the conjugation identity $S^{\alpha}_{c,d}=\alpha S_{\alpha^{-1}(c),\alpha^{-1}(d)}$ of *The Signed Sandwich on a Bimodule over an Algebra* gives $\alpha S_{\sigma(a),\sigma(b)}=S^{\alpha}_{\alpha^{-1}\sigma(a),\,\alpha^{-1}\sigma(b)}$, and $\alpha^{-1}\sigma=(\alpha^{-1}\sigma)=\alpha\sigma$ because $\alpha^{-1}=\alpha$ commutes with $\sigma$.
 
 The parameters are transformed by $\beta=\alpha\sigma$, the product of the two involutions, not by $\sigma$ alone: the twist in the middle of the sandwich and the twist of the algebra both act, and they compose.
 
@@ -63,7 +63,7 @@ $$
 
 Consequently the adjoint ${}^{*}$ preserves the $\mathbb{Z}/2$-grading of the monoid $\{S_{a,b}\}\cup\{S^{\alpha}_{a,b}\}$: a sandwich of parity zero is sent to a sandwich of parity zero, and a sandwich of parity one to a sandwich of parity one.
 
-*Proof.* The first display is the theorem; the second is its $\alpha=\mathrm{id}$ case; the parity statement follows because the adjoint of an unsigned sandwich is unsigned and the adjoint of a signed sandwich is signed, and it is additive. $\square$
+*Proof.* The first display is the theorem; the second is its $\alpha=\mathrm{id}$ case; the parity statement follows because the adjoint of an unsigned sandwich is unsigned and the adjoint of a signed sandwich is signed, and it is additive.
 
 ### Specialisations
 
@@ -73,7 +73,7 @@ Consequently the adjoint ${}^{*}$ preserves the $\mathbb{Z}/2$-grading of the mo
 
 **(ii)** for $\sigma=\mathrm{id}$, $(S^{\alpha}_{a,b})^{*}=S^{\alpha}_{\alpha(a),\alpha(b)}$, the grading alone.
 
-*Proof.* Immediate from $\beta=\alpha\sigma$. $\square$
+*Proof.* Immediate from $\beta=\alpha\sigma$.
 
 ## The Unitarity Condition
 
@@ -99,7 +99,7 @@ $$
 (S^{\alpha}_{a,b})^{*}S^{\alpha}_{a,b}=S^{\alpha}_{\beta(a),\beta(b)}S^{\alpha}_{a,b}=S_{\beta(a)\alpha(a),\,\alpha(b)\beta(b)}, \qquad S^{\alpha}_{a,b}(S^{\alpha}_{a,b})^{*}=S^{\alpha}_{a,b}S^{\alpha}_{\beta(a),\beta(b)}=S_{a\alpha(\beta(a)),\,\alpha(\beta(b))b}.
 $$
 
-With $\beta=\alpha\sigma$ and $\alpha^{2}=\mathrm{id}$, the parameters are $\beta(a)\alpha(a)=\alpha(\sigma(a)a)$, $\alpha(b)\beta(b)=\alpha(b\sigma(b))$ in the first product, and $a\alpha(\beta(a))=a\sigma(a)$, $\alpha(\beta(b))b=\sigma(b)b$ in the second. Both products equal $\mathrm{id}=S_{1,1}$ exactly when $\sigma(a)a=a\sigma(a)=1$ and $\sigma(b)b=b\sigma(b)=1$, by injectivity of the sandwich map. $\square$
+With $\beta=\alpha\sigma$ and $\alpha^{2}=\mathrm{id}$, the parameters are $\beta(a)\alpha(a)=\alpha(\sigma(a)a)$, $\alpha(b)\beta(b)=\alpha(b\sigma(b))$ in the first product, and $a\alpha(\beta(a))=a\sigma(a)$, $\alpha(\beta(b))b=\sigma(b)b$ in the second. Both products equal $\mathrm{id}=S_{1,1}$ exactly when $\sigma(a)a=a\sigma(a)=1$ and $\sigma(b)b=b\sigma(b)=1$, by injectivity of the sandwich map.
 
 The parameter criterion is independent of the grading: the grade involution enters the adjoint formula but cancels from the unitarity condition, so the unitary signed sandwiches are those with unitary parameters, exactly as in the unsigned case.
 
@@ -107,7 +107,7 @@ The parameter criterion is independent of the grading: the grade involution ente
 
 **Proposition.** The unitary signed sandwiches with a fixed right parameter, or with both parameters fixed as unitary elements, form a group under composition; more precisely, if $a,a'$ and $b,b'$ are unitary in $A$ then $S^{\alpha}_{a,b}S^{\alpha}_{a',b'}$ is the unsigned sandwich $S_{a\alpha(a'),\,\alpha(b')b}$ and it is unitary.
 
-*Proof.* The composition rule $S^{\alpha}_{a,b}S^{\alpha}_{a',b'}=S_{a\alpha(a'),\alpha(b')b}$ is that of *The Signed Sandwich on a Bimodule over an Algebra*; the product of unitary parameters $\alpha(a')$ and $b'$ is unitary, and $\alpha$ preserves unitarity because it is an involution of the algebra, so the parameters $a\alpha(a')$ and $\alpha(b')b$ are unitary and the product is unitary by the previous theorem. $\square$
+*Proof.* The composition rule $S^{\alpha}_{a,b}S^{\alpha}_{a',b'}=S_{a\alpha(a'),\alpha(b')b}$ is that of *The Signed Sandwich on a Bimodule over an Algebra*; the product of unitary parameters $\alpha(a')$ and $b'$ is unitary, and $\alpha$ preserves unitarity because it is an involution of the algebra, so the parameters $a\alpha(a')$ and $\alpha(b')b$ are unitary and the product is unitary by the previous theorem.
 
 Hence the unitary signed sandwiches generate a group of isometries of the pairing, and its elements are the products of a unitary parameter on the left, the grade involution, and a unitary parameter on the right.
 
@@ -121,7 +121,7 @@ $$
 
 and $r_u$ is unitary exactly when $u$ is a unitary element of $A$.
 
-*Proof.* The adjoint formula with $S^{\alpha}_{u,u^{-1}}$ and the relation $\beta(u^{-1})=\beta(u)^{-1}$ give the first display; the unitarity criterion with $(a,b)=(u,u^{-1})$ gives the second. $\square$
+*Proof.* The adjoint formula with $S^{\alpha}_{u,u^{-1}}$ and the relation $\beta(u^{-1})=\beta(u)^{-1}$ give the first display; the unitarity criterion with $(a,b)=(u,u^{-1})$ gives the second.
 
 The self-adjointness of the reflection — the case $r_{\beta(u)}=r_u$ — and its failure are the subject of *The Signed Adjoint of the Reflection on a Bimodule over an Algebra*.
 
@@ -131,7 +131,7 @@ The self-adjointness of the reflection — the case $r_{\beta(u)}=r_u$ — and i
 
 **Proposition.** The adjoint of a signed sandwich is a signed sandwich whose parameters carry the composite involution $\beta=\alpha\sigma$; the involution $\sigma$ and the grade involution $\alpha$ therefore enter asymmetrically: $\sigma$ acts on the parameters of the unsigned adjoint, and $\alpha$ acts through the conjugation identity of the signed sandwich, so only the product $\alpha\sigma$ is visible in the answer.
 
-*Proof.* The theorem gives $\beta=\alpha\sigma$; the roles of the two factors are as described in its proof. $\square$
+*Proof.* The theorem gives $\beta=\alpha\sigma$; the roles of the two factors are as described in its proof.
 
 **Corollary.** The adjoint operation and the grade involution commute on the sandwiches,
 
@@ -141,7 +141,7 @@ $$
 
 so applying the adjoint and then the grade involution is the same as applying the grade involution and then the adjoint of the corresponding unsigned sandwich.
 
-*Proof.* Both displays are the identities already established, combined. $\square$
+*Proof.* Both displays are the identities already established, combined.
 
 ## Degenerate Cases
 
@@ -149,19 +149,19 @@ so applying the adjoint and then the grade involution is the same as applying th
 
 **Proposition.** If the pairing is not $\alpha$-invariant then $\alpha$ need not be self-adjoint and the adjoint of the grade involution, $\alpha^{*}$, is an operator different from $\alpha$; the formula for the adjoint of a signed sandwich acquires the extra factor $\alpha^{*}$ and reads $(S^{\alpha}_{a,b})^{*}=\alpha^{*}S_{\sigma(a),\sigma(b)}$, which is a signed sandwich only when $\alpha^{*}$ maps signed sandwiches to signed sandwiches.
 
-*Proof.* The proof of the theorem used only $\alpha^{*}=\alpha$ from invariance; without it the factor $\alpha^{*}$ remains. $\square$
+*Proof.* The proof of the theorem used only $\alpha^{*}=\alpha$ from invariance; without it the factor $\alpha^{*}$ remains.
 
 ### The composite is not an involution
 
 **Proposition.** If $\alpha$ and $\sigma$ do not commute then $\beta=\alpha\sigma$ is not an involution and $\beta^{k}$ cycles; the adjoint of a signed sandwich is still a signed sandwich with parameters $\beta(a),\beta(b)$, but the map on parameters is no longer an involution, and applying the adjoint twice returns $S^{\alpha}_{\beta^{2}(a),\beta^{2}(b)}$, which differs from $S^{\alpha}_{a,b}$ unless $\beta^{2}=\mathrm{id}$.
 
-*Proof.* $(S^{\alpha}_{a,b})^{**}=S^{\alpha}_{\beta^{2}(a),\beta^{2}(b)}$ from the theorem; $\beta^{2}=\mathrm{id}$ exactly when $\alpha$ and $\sigma$ commute. $\square$
+*Proof.* $(S^{\alpha}_{a,b})^{**}=S^{\alpha}_{\beta^{2}(a),\beta^{2}(b)}$ from the theorem; $\beta^{2}=\mathrm{id}$ exactly when $\alpha$ and $\sigma$ commute.
 
 ### A non-injective sandwich map
 
 **Proposition.** If the sandwich map is not injective then the unitarity criterion is a criterion on the operator, and the parameters of a unitary signed sandwich are determined only up to the kernel of the sandwich map.
 
-*Proof.* The adjoint depends only on the operator and $S^{\alpha}_{a,b}$ depends only on the image of $(a,b)$ modulo the kernel. $\square$
+*Proof.* The adjoint depends only on the operator and $S^{\alpha}_{a,b}$ depends only on the image of $(a,b)$ modulo the kernel.
 
 ## Examples
 

@@ -11,9 +11,9 @@ Idempotents are the algebraic form of a projection, and in $\mathbb{B}$ they do 
 3. they are in bijection with the roots of $-1$, so the classification of the idempotents is exactly the classification of those roots;
 4. they drive the Peirce decomposition of the algebra.
 
-**Placement.** The article is the third entry of the block, after the algebra and *Biquaternion Norm and Invertibility*, and before the two root articles, the nilpotents, the zero divisors and the ideals, because all of those use the idempotents. Its own proofs use only the algebra article; the classification of the roots of $-1$ is quoted from *Biquaternion Square Roots of Minus One, Zero and Plus One*, and the relations to the zero divisors and to the ideals are forward pointers.
+**Placement.** The article is the sixth entry of the block, after the algebra, *Norm and Invertibility in the General Plain Algebra*, the zero divisors and the two root classifications — whose roots of $-1$ this article's classification quotes — and before the nilpotents and the ideals. Its own proofs use only the algebra article; the relations to the zero divisors and to the ideals are pointers.
 
-**Conventions.** The algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1 e_2 = e_3$, and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, the scalar part is $Q_0$, and $\mathbf{B} = B_1 e_1 + B_2 e_2 + B_3 e_3$ denotes a pure biquaternion, for which $\mathbf{A}\mathbf{B} = -\sum_{k} A_k B_k\, e_0 + \mathbf{A}\times\mathbf{B}$ and $\mathbf{B}^2 = -(\sum_k B_k^2) e_0$. The product throughout is the general plain bilinear product $\tilde{Q}\tilde{R}$, the multiplication of the algebra — the only one of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* that is associative and two-sidedly unital, and the one the equation $\tilde\Pi^2 = \tilde\Pi$ presupposes. The other three products carry idempotents of their own, which are not these; the four sets are tabulated in *Comparison Between the Four General Products* and read product by product in *Definitions for the Study of the 12 Algebraic Structures*. The central square $\tilde{Q}\tilde{Q}^{\natural}$, the invertibility criterion and the forms belong to *Biquaternion Norm and Invertibility*, and the remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*.
+**Conventions.** The algebra is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1 e_2 = e_3$, and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, the scalar part is $Q_0$, and $\mathbf{B} = B_1 e_1 + B_2 e_2 + B_3 e_3$ denotes a pure biquaternion, for which $\mathbf{A}\mathbf{B} = -\sum_{k} A_k B_k\, e_0 + \mathbf{A}\times\mathbf{B}$ and $\mathbf{B}^2 = -(\sum_k B_k^2) e_0$. The product throughout is the general plain bilinear product $\tilde{Q}\tilde{R}$, the multiplication of the algebra — the only one of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* that is associative and two-sidedly unital, and the one the equation $\tilde\Pi^2 = \tilde\Pi$ presupposes. The other three products carry idempotents of their own, which are not these; the four sets are tabulated in *Comparison Between the Four General Products* and read product by product in *Definitions for the Study of the 12 Algebraic Structures*. The central square $\tilde{Q}\tilde{Q}^{\natural}$, the invertibility criterion and the forms belong to *Norm and Invertibility in the General Plain Algebra*, and the remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*.
 
 ## Definition
 
@@ -49,7 +49,7 @@ $$
 e_3 \tilde\Pi_1 = -i \tilde\Pi_1, \qquad e_3 \tilde\Pi_2 = i \tilde\Pi_2, \qquad e_2 \tilde\Pi_1 = i e_1 \tilde\Pi_1,
 $$
 
-the first two because $e_3 \tilde\Pi_1 = (e_3 + i e_3^2)/2 = (e_3 - i)/2 = -i\,\tilde\Pi_1$ and similarly for $\tilde\Pi_2$. The companion relations reduce the four general products $e_\mu \tilde\Pi_1$ to $\tilde\Pi_1$ and $e_1 \tilde\Pi_1$, so that $\{\tilde\Pi_1, e_1 \tilde\Pi_1\}$ is a basis of $\mathbb{B}\tilde\Pi_1$ over $\mathbb{C}$. The two ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ that these idempotents generate, their direct-sum decomposition of $\mathbb{B}$, their bases and their module structure are the subject of *Biquaternion Ideals and Peirce Decomposition*.
+the first two because $e_3 \tilde\Pi_1 = (e_3 + i e_3^2)/2 = (e_3 - i)/2 = -i\,\tilde\Pi_1$ and similarly for $\tilde\Pi_2$. The companion relations reduce the four general products $e_\mu \tilde\Pi_1$ to $\tilde\Pi_1$ and $e_1 \tilde\Pi_1$, so that $\{\tilde\Pi_1, e_1 \tilde\Pi_1\}$ is a basis of $\mathbb{B}\tilde\Pi_1$ over $\mathbb{C}$. The two ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ that these idempotents generate, their direct-sum decomposition of $\mathbb{B}$, their bases and their module structure are the subject of *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
 ## The Classification of the Idempotents
 
@@ -91,7 +91,7 @@ The sign choice arises from replacing $\xi$ by $-\xi$, which is also a root of $
 
 The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: the two signs in $\tfrac{1}{2}(e_0 \pm \xi i)$ give $\tfrac{1}{2}(e_0 + i \cdot i) = 0$ and $\tfrac{1}{2}(e_0 - i \cdot i) = e_0$.
 
-The classification is a classification of the idempotents only because the roots of $-1$ are classified, and that classification is the subject of *Biquaternion Square Roots of Minus One, Zero and Plus One*, which follows this article. The three families it produces — the trivial roots $\pm i$, the real quaternion roots $\pm\mu$ over unit pure real quaternions, and the non-trivial roots $b\mu + d\nu i$ — give the three families of idempotents in §*The Bijection With the Roots of Minus One*.
+The classification is a classification of the idempotents only because the roots of $-1$ are classified, and that classification is the subject of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, which precedes this article. The three families it produces — the trivial roots $\pm i$, the real quaternion roots $\pm\mu$ over unit pure real quaternions, and the non-trivial roots $b\mu + d\nu i$ — give the three families of idempotents in §*The Bijection With the Roots of Minus One*.
 
 ## The Bijection With the Roots of Minus One
 
@@ -119,13 +119,15 @@ $$
 
 Thus $\tilde\Pi_1(\xi)$ and $\tilde\Pi_1(-\xi)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\xi, -\xi\}$.
 
-Substituting the classification of $\xi$ of *Biquaternion Square Roots of Minus One, Zero and Plus One* gives the three families of idempotents:
+Substituting the classification of $\xi$ of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* gives the three families of idempotents:
 
 - For the trivial root $\xi = \pm i$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} i \cdot i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} e_0$, giving $\tilde\Pi = 0$ or $\tilde\Pi = e_0$. These are the **trivial idempotents**.
 - For the real root $\xi = \pm \mu$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. Since $\mu i$ is Hermitian when $\mu$ is a unit pure real quaternion, $(\mu i)^{*} = \mu i$, these are the **Hermitian idempotents**, and they lie in the Hermitian subspace $\mathbb{M}_+$; they are the projections that occur in the biquaternion spectral theorem, treated in *Biquaternion Spectral Theory*.
 - For the non-trivial root $\xi = b\mu + d\nu i$: $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu + d\nu i) i = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu i - d\nu)$. These idempotents combine a real scalar part, a real vector part in the direction of $\nu$ and an imaginary vector part in the direction of $\mu$. Since their vector part mixes a real and an imaginary direction, they lie in none of the four four-dimensional subspaces.
 
-The idempotents inherit the size of the root set. The trivial roots $\pm i$ map to the trivial idempotents $0$ and $e_0$, so the non-trivial idempotents form a set of real dimension $4$, sitting inside the six-real-dimensional zero divisor set of $\mathbb{B}$ with the trivial idempotents outside it; the dimension statements for the roots are in *Biquaternion Square Roots of Minus One, Zero and Plus One*.
+The idempotents inherit the size of the root set. The trivial roots $\pm i$ map to the trivial idempotents $0$ and $e_0$, so the non-trivial idempotents form a set of real dimension $4$, sitting inside the six-real-dimensional zero divisor set of $\mathbb{B}$ with the trivial idempotents outside it; the dimension statements for the roots are in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*.
+
+Two sets are distinguished within this family, and they are named apart. The whole set of non-trivial idempotents is the **idempotent manifold**, a real four-dimensional smooth manifold, with no boundary and no singular point. The **Hermitian idempotent sphere** is the subfamily of the Hermitian idempotents, the two-sphere $S^2$ of the directions $\hat\mu$, and it sits inside the idempotent manifold as the real locus of the complex dimension-two family, not as its boundary. The two are the same object only in the isolated case of the two-dimensional algebras, and the distinction is the one drawn in *The Zero Divisors and the Singular Julia Sets* and *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
 ## Idempotents as Projections
 
@@ -143,7 +145,7 @@ $$
 
 and equally $\mathbb{B} = \mathbb{B}\tilde\Pi \oplus \mathbb{B}(e_0 - \tilde\Pi)$ on the other side. This is the algebraic content of the statement that idempotents correspond to projections: the idempotent is the projection, its complement is the complementary projection, and the algebra splits into the image of one and the image of the other.
 
-A **Hermitian idempotent**, $\tilde\Pi^{*} = \tilde\Pi$, is an **orthogonal** projection — orthogonality being read from the Hermitian form of *Biquaternion Norm and Invertibility*, which this article names and does not use — and it is the kind that occurs in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*} = \overline{\tilde\Pi^{\natural}}$, the Hermitian idempotents are the idempotents of the second family of §*The Bijection With the Roots of Minus One*, and they lie in $\mathbb{M}_+$.
+A **Hermitian idempotent**, $\tilde\Pi^{*} = \tilde\Pi$, is an **orthogonal** projection — orthogonality being read from the Hermitian form of *Norm and Invertibility in the General Plain Algebra*, which this article names and does not use — and it is the kind that occurs in the spectral decomposition of a Hermitian element. Since $\tilde\Pi^{*} = \overline{\tilde\Pi^{\natural}}$, the Hermitian idempotents are the idempotents of the second family of §*The Bijection With the Roots of Minus One*, and they lie in $\mathbb{M}_+$.
 
 ## Idempotents and the Non-Pure Zero Divisors
 
@@ -159,11 +161,11 @@ $$
 \tilde{Q} = 2 Q_0 \tilde\Pi, \qquad \tilde\Pi = \frac{\tilde{Q}}{2 Q_0}.
 $$
 
-The derivation, from the square relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ that the non-pure family satisfies, together with the structure of the two families and their distribution among the remarkable subspaces, is the subject of *Zero Divisors of the General Plain Algebra*, which follows this article.
+The derivation, from the square relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ that the non-pure family satisfies, together with the structure of the two families and their distribution among the remarkable subspaces, is the subject of *Zero Divisors of the General Plain Algebra*, which precedes this article.
 
 ## Summary
 
-An idempotent of $\mathbb{B}$ is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. The algebra carries the standard orthogonal idempotents $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$ and $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$, with $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, and they generate the two minimal left ideals of *Biquaternion Ideals and Peirce Decomposition*.
+An idempotent of $\mathbb{B}$ is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. The algebra carries the standard orthogonal idempotents $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$ and $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$, with $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, and they generate the two minimal left ideals of *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
 Every idempotent is either trivial or of the form $\tilde\Pi = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ with $\xi^2 = -1$, and $\xi \mapsto \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ onto the idempotents, carrying the complementary pairs to the classes $\{\xi, -\xi\}$. The three families of roots — trivial, real and non-trivial — give the trivial idempotents, the Hermitian idempotents in $\mathbb{M}_+$, and idempotents in none of the four four-dimensional subspaces; the non-trivial idempotents form a set of real dimension $4$. An idempotent and its complement split the algebra as $\mathbb{B} = \tilde\Pi\mathbb{B} \oplus (e_0 - \tilde\Pi)\mathbb{B}$, the algebraic form of a projection and its complementary projection, and every non-pure zero divisor is the complex multiple $2Q_0\tilde\Pi$ of a nontrivial idempotent, developed in *Zero Divisors of the General Plain Algebra*.
 
@@ -184,8 +186,8 @@ Every idempotent is either trivial or of the form $\tilde\Pi = \tfrac{1}{2} e_0 
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the general definition of an idempotent, the orthogonal and primitive families and the Peirce decomposition.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`) and *Nilpotents of the General Plain Algebra* (`articles_maths/nilpotents-of-the-general-plain-algebra.md`), for the two families of the zero-divisor set, of which the idempotents are the non-pure one.
-- *Biquaternion Ideals and Peirce Decomposition* (`articles_maths/biquaternion-ideals-and-peirce-decomposition.md`), for the minimal left ideals the standard idempotents generate.
-- *Biquaternion Square Roots of Minus One, Zero and Plus One* (`articles_maths/biquaternion-square-roots-of-minus-one-zero-and-plus-one.md`), for the classification of the roots of $-1$ that the idempotents are in bijection with.
+- *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the minimal left ideals the standard idempotents generate.
+- *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md`), for the classification of the roots of $-1$ that the idempotents are in bijection with.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for idempotents and minimal left ideals in Clifford algebras.
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), for the idempotents of the biquaternion algebra.

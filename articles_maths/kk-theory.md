@@ -29,7 +29,7 @@ Throughout, $A$, $B$, $C$, $D$ are separable $\mathrm{C}^*$-algebras, $\mathcal{
 
 **Proof.** Let $r$ be the rank of $T$; then $\dim\ker T = \dim H_1 - r$ and $\dim\ker T^* = \dim H_2 - r$, since $\ker T^*$ is the orthogonal complement of the image of $T$, whose dimension is $\dim H_2 - r$; the difference is $\dim H_1-\dim H_2$.
 
-**Example (numeric verification).** The identity of the proposition has been verified for $300$ random integer matrices $T : \mathbb{C}^n\to\mathbb{C}^m$ with $1 \leq n,m\leq 6$: computing the rank by exact rational Gaussian elimination, the difference $\dim\ker T-\dim\ker T^*$ equals $n-m$ in every case. The consequence recorded below is that a finite-dimensional Kasparov $\mathbb{C}$-$\mathbb{C}$-module has class equal to its graded dimension.
+The consequence recorded below is that a finite-dimensional Kasparov $\mathbb{C}$-$\mathbb{C}$-module has class equal to its graded dimension.
 
 ### Kasparov Modules
 
@@ -147,7 +147,7 @@ $$
 [(E,\phi,F)] = \dim E^0 - \dim E^1 .
 $$
 
-**Proof.** The self-adjoint odd operator has the form $F = \begin{pmatrix}0&v^*\\v&0\end{pmatrix}$ with $v : E^0\to E^1$, and the compactness conditions are automatic; the class of the module is the index of $v$, which by the rank-nullity identity of the proposition above equals $\dim E^0-\dim E^1$, independently of $v$ and hence well defined on homotopy classes. The computation has been verified for $300$ random integer matrices of all sizes $1\leq n,m\leq6$ with exact rational rank computations.
+**Proof.** The self-adjoint odd operator has the form $F = \begin{pmatrix}0&v^*\\v&0\end{pmatrix}$ with $v : E^0\to E^1$, and the compactness conditions are automatic; the class of the module is the index of $v$, which by the rank-nullity identity of the proposition above equals $\dim E^0-\dim E^1$, independently of $v$ and hence well defined on homotopy classes.
 
 **Example (the sum and the sign).** The graded dimensions add under direct sum and change sign under the reversal of the grading, matching the group structure of $KK(\mathbb{C},\mathbb{C})$. A degenerate $\mathbb{C}$-$\mathbb{C}$-module has $v$ invertible, hence $\dim E^0 = \dim E^1$ and graded dimension $0$, consistently with its being the neutral element of the group; conversely the modules with $v$ of index $n$ represent the class $n$.
 

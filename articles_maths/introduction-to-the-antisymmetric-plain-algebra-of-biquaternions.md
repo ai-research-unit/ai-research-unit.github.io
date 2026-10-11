@@ -16,9 +16,9 @@ $$
 \tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q},
 $$
 
-the cross product of the two vector parts. The operation is the twelfth and last row-entry of the table of *The 12 Products of the Biquaternion Complex Space*, and it is the row's Lie product: it alone of the twelve operations satisfies the Jacobi identity. This article establishes the class of the operation, its alternation, its image, the absence of a unit, the Jacobi identity with the cyclic sum recomputed on the units, the sixteen brackets of the basis, the reconstruction of the plain product from its two halves, and the placement of the block among the twelve.
+the cross product of the two vector parts. The operation is the antisymmetric plain bilinear entry of the table of *The 12 Products of the Biquaternion Complex Space*, and it is the table's Lie product: it alone of the twelve operations satisfies the Jacobi identity. This article establishes the class of the operation, its alternation, its image, the absence of a unit, the Jacobi identity with the cyclic sum recomputed on the units, the sixteen brackets of the basis, the reconstruction of the plain product from its two halves, and the placement of the block among the twelve.
 
-The article is the common theory of the block of six articles that follows it: the Lie algebra it makes of $\mathbb{B}$ is *The Lie Algebra of the Antisymmetric Plain Algebra*, the invariant form it carries is *The Killing Form of the Antisymmetric Plain Algebra*, its reading on the remarkable subspaces is *Remarkable Subspaces under the Antisymmetric Plain Algebra of Biquaternions*, its adjoints and derivations are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, and its two matrix models are *The Antisymmetric Plain Algebra in the $2\times2$ and $4\times4$ Matrix Element Representations*.
+The article is the common theory of the block: the Lie algebra it makes of $\mathbb{B}$ is *The Lie Algebra of the Antisymmetric Plain Algebra*, the invariant form it carries is *The Killing Form of the Antisymmetric Plain Algebra*, its reading on the remarkable subspaces is *Remarkable Subspaces under the Antisymmetric Plain Algebra of Biquaternions*, its adjoints and derivations are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, and its two matrix models are *The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*.
 
 The general construction of the two halves of a product is not repeated here: it is *The Symmetric and Antisymmetric Parts of an Algebra Product*, whose definitions of the commutator $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P$, of the outer product $\tilde P\wedge\tilde Q=\tfrac12[\tilde P,\tilde Q]$ and of the symmetrised product $\tilde P\bullet\tilde Q$ are the ones used throughout. The plain product and its pairings are *Introduction to the General Plain Algebra of Biquaternions* and *The Four Pairings of the Biquaternion Algebra*; the two halves of the other three products of the algebra are the other rows of *The 12 Products of the Biquaternion Complex Space*. Everything below is algebra: the Lie algebra of the block is a module with an alternating bracket, and no group and no analytic notion enters.
 
@@ -42,11 +42,11 @@ $$
 
 where $\mathbf{P}=(P_1,P_2,P_3)$ and $\mathbf{Q}=(Q_1,Q_2,Q_3)$ are the vector parts, and the scalar part of the product is zero, $\operatorname{Sc}(\tilde P\wedge\tilde Q)=0$.
 
-*Proof.* The scalar parts of $\tilde P\tilde Q$ and of $\tilde Q\tilde P$ are equal, both being $P_0Q_0-\mathbf{P}\cdot\mathbf{Q}$, so they cancel in the difference and the scalar part of the half-difference is zero. The vector part of $\tilde P\tilde Q$ is $P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$ and the vector part of $\tilde Q\tilde P$ is $Q_0\mathbf{P}+P_0\mathbf{Q}+\mathbf{Q}\times\mathbf{P}$, so the half-difference is $\tfrac12(\mathbf{P}\times\mathbf{Q}-\mathbf{Q}\times\mathbf{P})=\mathbf{P}\times\mathbf{Q}$. Verified on general elements of $\mathbb{Q}(i)$ coefficients and on the units. $\square$
+*Proof.* The scalar parts of $\tilde P\tilde Q$ and of $\tilde Q\tilde P$ are equal, both being $P_0Q_0-\mathbf{P}\cdot\mathbf{Q}$, so they cancel in the difference and the scalar part of the half-difference is zero. The vector part of $\tilde P\tilde Q$ is $P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$ and the vector part of $\tilde Q\tilde P$ is $Q_0\mathbf{P}+P_0\mathbf{Q}+\mathbf{Q}\times\mathbf{P}$, so the half-difference is $\tfrac12(\mathbf{P}\times\mathbf{Q}-\mathbf{Q}\times\mathbf{P})=\mathbf{P}\times\mathbf{Q}$.
 
 **Corollary (the class).** The operation is $\mathbb{C}$-bilinear, and it is alternating, $\tilde P\wedge\tilde P=0$ and $\tilde P\wedge\tilde Q=-\tilde Q\wedge\tilde P$ for all $\tilde P,\tilde Q$.
 
-*Proof.* The cross product of vector parts is $\mathbb{C}$-bilinear because the plain product is, and it is alternating because $\mathbf{P}\times\mathbf{P}=0$. $\square$
+*Proof.* The cross product of vector parts is $\mathbb{C}$-bilinear because the plain product is, and it is alternating because $\mathbf{P}\times\mathbf{P}=0$.
 
 **Remark.** The operation is therefore of the class $\mathbb{C}$-bilinear and alternating, and its values lie in the vector subspace $\mathrm{Vect}(\mathbb{B})$: **the image of the antisymmetric plain algebra is the vector subspace**, of complex dimension three and real dimension six. The scalar direction is invisible to the operation, and the three complex coordinate directions $e_1,e_2,e_3$ carry the whole of it.
 
@@ -54,7 +54,7 @@ where $\mathbf{P}=(P_1,P_2,P_3)$ and $\mathbf{Q}=(Q_1,Q_2,Q_3)$ are the vector p
 
 **Proposition.** The operation has no unit: there is no $\tilde U\in\mathbb{B}$ with $\tilde U\wedge\tilde P=\tilde P$ for all $\tilde P$, and there is no $\tilde U$ with $\tilde P\wedge\tilde U=\tilde P$ for all $\tilde P$.
 
-*Proof.* Every value of the operation has scalar part zero, whereas $\tilde P$ has scalar part $P_0$ in general; a unit would have to satisfy $\operatorname{Sc}(\tilde U\wedge\tilde P)=P_0$ for all $\tilde P$, and the left side is zero while the right side is not. $\square$
+*Proof.* Every value of the operation has scalar part zero, whereas $\tilde P$ has scalar part $P_0$ in general; a unit would have to satisfy $\operatorname{Sc}(\tilde U\wedge\tilde P)=P_0$ for all $\tilde P$, and the left side is zero while the right side is not.
 
 **Remark.** The absence of a unit is the first of the two structural differences from the symmetric half: the antisymmetric half is a multiplication without an identity and with values in a proper subspace, and it is the reason the operation generates a Lie algebra rather than an associative or a Jordan algebra. **The half is a bracket and not a product.**
 
@@ -68,7 +68,7 @@ $$
 
 and the commutator is the cross product of the vector parts with the factor two, $[\tilde P,\tilde Q]=2\,\mathbf{P}\times\mathbf{Q}$.
 
-*Proof.* The commutator is the difference of the two products, which is twice their half-difference; the value is twice the cross product of the previous proposition. $\square$
+*Proof.* The commutator is the difference of the two products, which is twice their half-difference; the value is twice the cross product of the previous proposition.
 
 **Remark.** The commutator is alternating and $\mathbb{C}$-bilinear as well, and the two operations carry the same Lie algebra up to the scalar factor $2$: the assignment $\tilde P\mapsto2\tilde P$ is an isomorphism of $(\mathbb{B},[\ ,\ ])$ onto $(\mathbb{B},\wedge)$ read with the factor. The block uses the halved form $\wedge$, which is the form in which the structure constants are the signs of the cross product; the commutator is used in *The Unitary Lie Algebra*, where the bracket of the skew-Hermitian elements is the unhalved difference.
 
@@ -79,7 +79,7 @@ and the commutator is the cross product of the vector parts with the factor two,
 **Definition.** The **cyclic sum** of the operation on a triple $\tilde P,\tilde Q,\tilde R$ is
 
 $$
-\mathfrak J(\tilde P,\tilde Q,\tilde R)=(\tilde P\wedge\tilde Q)\wedge\tilde R+(\tilde Q\wedge\tilde R)\wedge\tilde P+(\tilde R\wedge\tilde P)\wedge\tilde Q.
+J(\tilde P,\tilde Q,\tilde R)=(\tilde P\wedge\tilde Q)\wedge\tilde R+(\tilde Q\wedge\tilde R)\wedge\tilde P+(\tilde R\wedge\tilde P)\wedge\tilde Q.
 $$
 
 **Theorem (the Jacobi identity).** The operation satisfies
@@ -96,7 +96,7 @@ $$
 (\mathbf{P}\times\mathbf{Q})\times\mathbf{R}=\mathbf{Q}(\mathbf{P}\cdot\mathbf{R})-\mathbf{P}(\mathbf{Q}\cdot\mathbf{R}),
 $$
 
-with the two cyclic analogues. The six terms cancel in pairs, since $\mathbf{Q}(\mathbf{P}\cdot\mathbf{R})$ from the first term cancels $-\mathbf{Q}(\mathbf{R}\cdot\mathbf{P})$ from the third, and similarly for the other two pairs, using the symmetry of the scalar product of vectors. The identity therefore holds on arbitrary arguments; it was also verified on all sixty-four triples of the units and on general elements of $\mathbb{Q}(i)$ coefficients, where the cyclic sum vanishes identically. $\square$
+with the two cyclic analogues. The six terms cancel in pairs, since $\mathbf{Q}(\mathbf{P}\cdot\mathbf{R})$ from the first term cancels $-\mathbf{Q}(\mathbf{R}\cdot\mathbf{P})$ from the third, and similarly for the other two pairs, using the symmetry of the scalar product of vectors. The identity therefore holds on arbitrary arguments; it was also verified on all sixty-four triples of the units and on general elements of $\mathbb{Q}(i)$ coefficients, where the cyclic sum vanishes identically.
 
 **Remark.** The cyclic sum on the units is zero, and the vanishing is the whole content of the theorem: it is not a numerical accident of the basis but the Jacobi identity of the cross product, and it is inherited by the vector subspace, which is where the values lie. **The operation is a Lie bracket.**
 
@@ -104,7 +104,15 @@ with the two cyclic analogues. The six terms cancel in pairs, since $\mathbf{Q}(
 
 **Theorem (the only Lie product of the twelve).** Of the twelve operations $f_{+},f_{-}$ of the four general products of *The 12 Products of the Biquaternion Complex Space*, the antisymmetric plain algebra is the only one that satisfies the Jacobi identity.
 
-*Proof.* The verification is the table of that article, computed there on the basis. Of the four antisymmetric parts, $\mathrm{AQA}$, $\mathrm{APS}$ and $\mathrm{AQS}$ fail the identity, with the witnesses $(e_0,e_1,e_2)$, $(e_0,e_1,e_2)$ and $(e_1,e_1,ie_2)$ and the cyclic sums $-e_3$, $e_3$ and $-2ie_2$; the witnesses were recomputed here, and the first of them, $\mathrm{AQA}$, is the failure nearest to the present block. The three symmetric parts other than $\mathrm{SPA}$ fail the Jordan identity, so none of them is a Lie product. Only $\mathrm{APA}$ remains, and the cyclic sum of the previous theorem shows that it passes. $\square$
+*Proof.* The verification is the table of that article, computed there on the basis. Of the four
+antisymmetric parts, $\mathrm{AQA}$, $\mathrm{APS}$ and $\mathrm{AQS}$ fail the identity, with the
+witnesses $(e_0,e_1,e_2)$, $(e_0,e_1,e_2)$ and $(e_1,e_1,ie_2)$ and the cyclic sums $-e_3$, $e_3$
+and $-2ie_2$; the witnesses were recomputed here, and the first of them, $\mathrm{AQA}$, is the
+failure nearest to the present block. Of the four symmetric parts, $\mathrm{SPA}$ alone satisfies
+the Jordan identity, and all four fail the cyclic sum, $\mathrm{SPA}$ giving $3e_0$ at
+$(e_0,e_0,e_0)$, where its unit sits, and the other three $e_0$ at $(e_0,e_1,e_1)$, so none of them
+is a Lie product. Only $\mathrm{APA}$ remains, and the cyclic sum of the previous theorem shows
+that it passes.
 
 **Remark.** The uniqueness is the reason the present block is the Lie Theory block of the row: the antisymmetric part of the plain product is the one place in the batch where a classical non-associative algebra, a Lie algebra, appears. The other three antisymmetric parts are brackets that fail their defining identity, and their failure is the subject of the corresponding blocks of the batch.
 
@@ -127,7 +135,7 @@ with the alternating relations $e_2\wedge e_1=-e_3$, $e_3\wedge e_2=-e_1$, $e_1\
 | $e_2$ | $0$ | $-e_3$ | $0$ | $e_1$ |
 | $e_3$ | $0$ | $e_2$ | $-e_1$ | $0$ |
 
-*Proof.* Each entry is the cross product of the vector parts of the two units. The unit $e_0$ has vector part zero, so its row and its column vanish; on $e_1,e_2,e_3$ the cross product reproduces the quaternion units, $e_1\times e_2=e_3$ and its cyclic analogues, and is alternating. Computed exactly on the sixteen pairs. $\square$
+*Proof.* Each entry is the cross product of the vector parts of the two units. The unit $e_0$ has vector part zero, so its row and its column vanish; on $e_1,e_2,e_3$ the cross product reproduces the quaternion units, $e_1\times e_2=e_3$ and its cyclic analogues, and is alternating. Computed exactly on the sixteen pairs.
 
 **Remark.** The table is the structure-constant table of the block, and it is the single table of the block that cannot be shortened: the seven entries of the first row and column are zero (the corner counted once), the three cyclic entries above the diagonal are the units, the three below are their negatives, and the three further diagonal entries vanish. **The tail of the table, on $e_1,e_2,e_3$, is the cross-product table of $\mathbb{C}^3$ and hence that of $\mathfrak{sl}(2,\mathbb{C})$**; the block is thus the complexification of the cross product, read inside the biquaternions.
 
@@ -143,7 +151,7 @@ $$
 
 and the two halves determine one another's complement: the plain product is recovered from the symmetric plain algebra and the antisymmetric plain algebra together.
 
-*Proof.* Adding the two halves gives $\tilde P\tilde Q$. The two are the symmetrisation and the antisymmetrisation of the same product, and the uniqueness of the split, *The Symmetric and Antisymmetric Parts of an Algebra Product*, says that no other pair of a symmetric and an antisymmetric operation has the same sum. $\square$
+*Proof.* Adding the two halves gives $\tilde P\tilde Q$. The two are the symmetrisation and the antisymmetrisation of the same product, and the uniqueness of the split, *The Symmetric and Antisymmetric Parts of an Algebra Product*, says that no other pair of a symmetric and an antisymmetric operation has the same sum.
 
 **Remark.** The two halves are the SPA block and the APA block, and the reconstruction is the statement that the general plain algebra $\mathrm{GPA}$ is the sum $\mathrm{SPA}+\mathrm{APA}$ of its two parts, read as operations on the same space.
 
@@ -155,7 +163,7 @@ $$
 (\tilde P+\tilde Q)^2-\tilde P^2-\tilde Q^2=\tilde P\tilde Q+\tilde Q\tilde P=2\,(\tilde P\bullet\tilde Q).
 $$
 
-*Proof.* The first statement is the alternation of the previous section. The second is the polarisation identity of *The Symmetric and Antisymmetric Parts of an Algebra Product*, and it is displayed here only to record its consequence. $\square$
+*Proof.* The first statement is the alternation of the previous section. The second is the polarisation identity of *The Symmetric and Antisymmetric Parts of an Algebra Product*, and it is displayed here only to record its consequence.
 
 **Remark.** **The square map is invisible to the antisymmetric half.** The symmetrisation and the square determine one another, by the polarisation and by the identity $\tilde P\bullet\tilde P=\tilde P^2$, whereas the square of an element carries no information about the antisymmetric half; the plain product and its opposite have the same square and the same symmetric half, and differ exactly in the sign of the antisymmetric half. The antisymmetric plain algebra is therefore the half of the plain product that the power maps of the algebra cannot see, and it is recovered from the product only through the commutator.
 
@@ -171,7 +179,7 @@ $$
 
 **A cyclic sum on the units.** For $\tilde P=e_1,\tilde Q=e_2,\tilde R=e_3$ the three terms are $(e_1\wedge e_2)\wedge e_3=e_3\wedge e_3=0$, $(e_2\wedge e_3)\wedge e_1=e_1\wedge e_1=0$ and $(e_3\wedge e_1)\wedge e_2=e_2\wedge e_2=0$: the cyclic sum is zero, the basis instance of the Jacobi identity.
 
-**A witness of the neighbouring failure.** For the antisymmetric quaternionic algebra $\mathrm{AQA}$ the same triple $(e_0,e_1,e_2)$ gives the cyclic sum $-e_3$, as recomputed here from its definition $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$; the two brackets agree on $e_1,e_2,e_3$ and separate on $e_0$, which is the direction the natural conjugation reverses.
+**A witness of the neighbouring failure.** For the antisymmetric quaternionic algebra $\mathrm{AQA}$ the same triple $(e_0,e_1,e_2)$ gives the cyclic sum $-e_3$, as recomputed here from its definition $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$. On the pure units $e_1,e_2,e_3$ the two brackets are the negatives of one another, since the natural conjugation reverses each factor and contributes a sign, while on $e_0$ they separate outright: $\mathrm{APA}(e_0,e_1)=0$ and $\mathrm{AQA}(e_0,e_1)=e_1$. It is the scalar direction, invisible to the block and visible to its sibling, that carries the failure.
 
 ## The Placement of the Block among the Twelve
 
@@ -184,9 +192,11 @@ The twelve operations decompose by product and by half, and the present block is
 | plain sesquilinear $\tilde P\tilde Q^{*}$ | $\mathrm{SPS}$ | $\mathrm{APS}$, no Jacobi |
 | quaternionic sesquilinear $\tilde P^{\natural}\tilde Q^{*}$ | $\mathrm{SQS}$ | $\mathrm{AQS}$, no Jacobi |
 
-**Remark.** The block is the second of the four blocks of the batch and it sits immediately after the SPA block in the menu. Its own Lie structure is developed in the rest of the block; its relation to the symmetric half is the reconstruction above; and its relation to the other three antisymmetric parts is the table, in which it is the row that passes the identity the other three fail. **The block owns the reading of the plain product as a bracket, and nothing of the general plain product or of its operators, which remain with the $\mathrm{GPA}$ articles.**
+**Remark.** The block is the second of the twelve blocks of the batch and it sits immediately after the SPA block in the menu. Its own Lie structure is developed in the rest of the block; its relation to the symmetric half is the reconstruction above; and its relation to the other three antisymmetric parts is the table, in which it is the row that passes the identity the other three fail. **The block owns the reading of the plain product as a bracket, and nothing of the general plain product or of its operators, which remain with the $\mathrm{GPA}$ articles.**
 
-The Lie algebra that the operation makes of $\mathbb{B}$ is *The Lie Algebra of the Antisymmetric Plain Algebra*: its centre is the centre $\mathbb{C}_{\mathbb{B}}$ of the algebra, its image $\mathrm{Vect}(\mathbb{B})$ is a Lie subalgebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and on the real forms the quaternion subspace carries $\mathbb{R}e_0\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace carries $\mathfrak{u}(2)$. The invariant form of the operation is *The Killing Form of the Antisymmetric Plain Algebra*, its reading on the remarkable subspaces is *Remarkable Subspaces under the Antisymmetric Plain Algebra of Biquaternions*, its adjoints and derivations are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, and its two matrix models are *The Antisymmetric Plain Algebra in the $2\times2$ and $4\times4$ Matrix Element Representations*.
+The Lie algebra that the operation makes of $\mathbb{B}$ is *The Lie Algebra of the Antisymmetric Plain Algebra*: its centre is the centre $\mathbb{C}_{\mathbb{B}}$ of the algebra, its image $\mathrm{Vect}(\mathbb{B})$ is a Lie subalgebra isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and on the real forms the quaternion subspace carries $\mathbb{R}e_0\oplus\mathfrak{su}(2)$ and the anti-Hermitian subspace carries $\mathfrak{u}(2)$. The invariant form of the operation is *The Killing Form of the Antisymmetric Plain Algebra*, its reading on the remarkable subspaces is *Remarkable Subspaces under the Antisymmetric Plain Algebra of Biquaternions*, its adjoints and derivations are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, and its two matrix models are *The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*.
+
+The element theory of the operation is the six articles that follow it along its own product: *Norm and Invertibility in the Antisymmetric Plain Algebra*, *Zero Divisors of the Antisymmetric Plain Algebra*, *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra*, *Square Roots of a General Element in the Antisymmetric Plain Algebra*, *Idempotents of the Antisymmetric Plain Algebra* and *Nilpotents of the Antisymmetric Plain Algebra*. All six are consequences of the alternation established above: the square of every element of the block vanishes, so the block has no norm, no unit and no inverse, every nonzero element is a zero divisor and a nilpotent of index two, its roots of $0$ are the whole punctured space and its roots of $-1$ and $+1$ are empty, and its only idempotent is the origin. The law that separates the block from the other eleven structures, and the reason the Lie theory above is available on it alone, is *The Specificities of the Antisymmetric Plain Algebra*.
 
 ## Summary
 
@@ -205,7 +215,7 @@ The antisymmetric part of the plain product of the biquaternions is the operatio
 | $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1\oplus\mathbb{C}e_2\oplus\mathbb{C}e_3$ | the image of the operation, the vector subspace |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the centre of the algebra, annihilated by the operation |
 | $e_1\wedge e_2=e_3$, $e_2\wedge e_3=e_1$, $e_3\wedge e_1=e_2$ | the three non-trivial brackets of the units |
-| $\mathfrak J(\tilde P,\tilde Q,\tilde R)=0$ | the cyclic sum, the Jacobi identity of the block |
+| $J(\tilde P,\tilde Q,\tilde R)=0$ | the cyclic sum, the Jacobi identity of the block |
 
 ## Further Reading
 
@@ -215,3 +225,10 @@ The antisymmetric part of the plain product of the biquaternions is the operatio
 - *The Unitary Lie Algebra* (`articles_maths/the-unitary-lie-algebra.md`), for the bracket of the skew-Hermitian elements, the unhalved commutator and the group of linear maps preserving the form
 - *Introduction to the General Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-biquaternions.md`), for the plain product and the group it defines
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces on which the block is read
+- *Norm and Invertibility in the Antisymmetric Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-antisymmetric-plain-algebra.md`), for the absence of a unit, of an inverse and of a norm, and for the operator trace form and the scalar-part form
+- *Zero Divisors of the Antisymmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-plain-algebra.md`), for the totality of the zero-divisor set and the rank and the annihilator of the left multiplication operator
+- *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-algebra.md`), for the empty root sets of $-1$ and $+1$ and the root set of $0$
+- *Square Roots of a General Element in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-plain-algebra.md`), for the zero square map and the image and kernel of the square
+- *Idempotents of the Antisymmetric Plain Algebra* (`articles_maths/idempotents-of-the-antisymmetric-plain-algebra.md`), for the trivial idempotent alone and the absence of the Peirce calculus
+- *Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/nilpotents-of-the-antisymmetric-plain-algebra.md`), for the totality of the nilpotent class and the implication to the zero divisors
+- *The Specificities of the Antisymmetric Plain Algebra* (`articles_maths/the-specificities-of-the-antisymmetric-plain-algebra.md`), for the Leibniz identity, its equivalence with the Jacobi identity for an alternating product and the isolation of the block among the twelve

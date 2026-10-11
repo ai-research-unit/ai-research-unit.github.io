@@ -72,7 +72,7 @@ $$
 \mathbb{E}\Bigl\|\sum_{k=1}^{N}g_ke_k\Bigr\|^2=\sum_{k=1}^{N}q_k\le\operatorname{Tr}Q
 $$
 
-for every $N$, so the partial sums form a Cauchy sequence in $L^2$ and converge in $L^2(H)$ and almost surely to a random variable $X$ with values in $H$; the law of $X$ is a Borel probability on $H$ whose cylinder measure is the given one. $\square$
+for every $N$, so the partial sums form a Cauchy sequence in $L^2$ and converge in $L^2(H)$ and almost surely to a random variable $X$ with values in $H$; the law of $X$ is a Borel probability on $H$ whose cylinder measure is the given one.
 
 **Corollary (the identity covariance fails).** On an infinite-dimensional Hilbert space there is no Gaussian measure with covariance $Q=I$, because $\sum_k1$ diverges. The cylinder measure exists and is the only object available; the associated random element is **white noise**, whose realisations lie in a space of distributions and not in $H$.
 
@@ -102,7 +102,7 @@ For a Gaussian *cylinder* measure the defining formula is the same on the finite
 
 **Proposition (the Cameron–Martin space is null).** If $\dim H=\infty$ and $Q$ is injective, then $\mu(H_\mu)=0$.
 
-*Proof.* Write $H_\mu=Q^{1/2}(H)$ and let $X$ be the $H$-valued Gaussian with law $\mu$, so that $X=\sum_kg_ke_k$ with independent $g_k\sim N(0,q_k)$. Membership of $H_\mu$ is equivalent to the finiteness of $\|Q^{-1/2}X\|^2=\sum_kg_k^2/q_k$. The $g_k^2/q_k$ are independent with mean one, so the sum diverges almost surely; hence $X\notin H_\mu$ almost surely. $\square$
+*Proof.* Write $H_\mu=Q^{1/2}(H)$ and let $X$ be the $H$-valued Gaussian with law $\mu$, so that $X=\sum_kg_ke_k$ with independent $g_k\sim N(0,q_k)$. Membership of $H_\mu$ is equivalent to the finiteness of $\|Q^{-1/2}X\|^2=\sum_kg_k^2/q_k$. The $g_k^2/q_k$ are independent with mean one, so the sum diverges almost surely; hence $X\notin H_\mu$ almost surely.
 
 The Cameron–Martin space is therefore a set of measure zero, and it is nevertheless the space that governs the theory: it is the tangent space at every point, the space of admissible translations, and the natural domain on which the quadratic form of $Q$ is finite.
 
@@ -136,7 +136,7 @@ $$
 \int_0^1\min(s,t)\sin\bigl((k-\tfrac12)\pi s\bigr)\,ds=\frac{1}{(k-\frac12)^2\pi^2}\sin\bigl((k-\tfrac12)\pi t\bigr)
 $$
 
-is checked by splitting the integral at $s=t$ and using the boundary conditions $v(0)=0$, $v'(1)=0$ that the kernel imposes. For (iii), $\sum_{k\geq1}(k-\tfrac12)^{-2}=\pi^2/2$, so $\operatorname{Tr}Q=\frac12$, which is also $\int_0^1R(t,t)\,dt=\int_0^1t\,dt$. For (iv), the finite-dimensional distributions are those of Brownian motion and the moments $\mathbb{E}|x(t)-x(s)|^{2m}=C_m|t-s|^m$ satisfy Kolmogorov's continuity criterion, whose statement and proof are in *Brownian Motion and Stochastic Calculus*; the continuous version is unique up to indistinguishability. $\square$
+is checked by splitting the integral at $s=t$ and using the boundary conditions $v(0)=0$, $v'(1)=0$ that the kernel imposes. For (iii), $\sum_{k\geq1}(k-\tfrac12)^{-2}=\pi^2/2$, so $\operatorname{Tr}Q=\frac12$, which is also $\int_0^1R(t,t)\,dt=\int_0^1t\,dt$. For (iv), the finite-dimensional distributions are those of Brownian motion and the moments $\mathbb{E}|x(t)-x(s)|^{2m}=C_m|t-s|^m$ satisfy Kolmogorov's continuity criterion, whose statement and proof are in *Brownian Motion and Stochastic Calculus*; the continuous version is unique up to indistinguishability.
 
 The verification of (ii) by quadrature gives $(Qv_k)(t)/v_k(t)=0.4052847346,\,0.0450316372,\,0.0162113894$ for $k=1,2,3$, reproducing $\lambda_k$ to ten decimal places, and the partial sums of $\sum_k\lambda_k$ approach $0.49999\ldots$ as $k$ increases. The number $\tfrac12$ is the variance of $x(1)$, as it must be.
 
@@ -150,7 +150,7 @@ $$
 \mathbb{E}_{\mathbb{W}}\|x\|_{H^1}^2=\infty .
 $$
 
-*Proof.* The Hölder statement is Kolmogorov's criterion together with the law of the iterated logarithm, and it is in *Brownian Motion and Stochastic Calculus*. For the energy, discretise $[0,1]$ at the points $t_i=i/n$ with spacing $h=1/n$. The quadratic variation over the grid is $\sum_{i=0}^{n-1}\bigl(x(t_{i+1})-x(t_i)\bigr)^2$, whose expectation is $n\cdot h=1$; the discrete $H^1$ energy divides by the spacing, so it is $\frac1h\sum_{i=0}^{n-1}\bigl(x(t_{i+1})-x(t_i)\bigr)^2$ and its expectation is $\frac1h\cdot n\cdot h=n$. On a grid of $n$ points the expectation $\mathbb{E}\|x\|_{H^1}^2$ is therefore $n$, and its values $4,8,10$ for $n=4,8,10$ grow without bound; equivalently $H^1\subset C^{1/2}$ by the Sobolev embedding in dimension one, and the paths fail the exponent $\tfrac12$. $\square$
+*Proof.* The Hölder statement is Kolmogorov's criterion together with the law of the iterated logarithm, and it is in *Brownian Motion and Stochastic Calculus*. For the energy, discretise $[0,1]$ at the points $t_i=i/n$ with spacing $h=1/n$. The quadratic variation over the grid is $\sum_{i=0}^{n-1}\bigl(x(t_{i+1})-x(t_i)\bigr)^2$, whose expectation is $n\cdot h=1$; the discrete $H^1$ energy divides by the spacing, so it is $\frac1h\sum_{i=0}^{n-1}\bigl(x(t_{i+1})-x(t_i)\bigr)^2$ and its expectation is $\frac1h\cdot n\cdot h=n$. On a grid of $n$ points the expectation $\mathbb{E}\|x\|_{H^1}^2$ is therefore $n$, and its values $4,8,10$ for $n=4,8,10$ grow without bound; equivalently $H^1\subset C^{1/2}$ by the Sobolev embedding in dimension one, and the paths fail the exponent $\tfrac12$.
 
 The proposition is the exact content of the statement that Brownian paths are rough: the measure is supported on a space of functions strictly larger than the Cameron–Martin space, and the Cameron–Martin space is the smallest space on which the paths can be compared.
 
@@ -179,7 +179,7 @@ $$
 $$
 
 an identity verified by completing the square: the exponent is $-\tfrac12(y-v)^\top C^{-1}(y-v)+\tfrac12y^\top C^{-1}y$, and the density integrates to one, as the one-dimensional computation
-$\mathbb{E}\bigl[e^{vX-v^2/2}\bigr]=1$ for $X\sim N(0,1)$ confirms; the numerical quadrature of the same identity for $v=0.3$ and $v=1.5$ returns $1.000000000000$. In infinite dimensions $C$ is a compact operator, so $C^{-1}$ is unbounded and $\langle v,C^{-1}v\rangle$ is finite exactly when $v$ lies in the range of $C^{1/2}$, which for the kernel $\min(s,t)$ is $H^1_0$; the quadratic form is then the Cameron–Martin norm and the linear form is the Itô integral. The translation $x\mapsto x+h$ is the shift of Brownian motion by the deterministic path $h$, and the identity is the Girsanov formula of *Brownian Motion and Stochastic Calculus* with $\theta=h'$ up to the sign of the direction of the shift. $\square$
+$\mathbb{E}\bigl[e^{vX-v^2/2}\bigr]=1$ for $X\sim N(0,1)$ confirms; the numerical quadrature of the same identity for $v=0.3$ and $v=1.5$ returns $1.000000000000$. In infinite dimensions $C$ is a compact operator, so $C^{-1}$ is unbounded and $\langle v,C^{-1}v\rangle$ is finite exactly when $v$ lies in the range of $C^{1/2}$, which for the kernel $\min(s,t)$ is $H^1_0$; the quadratic form is then the Cameron–Martin norm and the linear form is the Itô integral. The translation $x\mapsto x+h$ is the shift of Brownian motion by the deterministic path $h$, and the identity is the Girsanov formula of *Brownian Motion and Stochastic Calculus* with $\theta=h'$ up to the sign of the direction of the shift.
 
 **Example.** For $h(t)=t$ one has $\|h\|_{H^1}^2=\int_0^1dt=1$, and the discretised Cameron–Martin quadratic form of the Brownian covariance gives exactly $1.00000000$. For the rough vector $h(t_i)=(-1)^i\sqrt{1/n}$ on the grid of $n$ points the same form is $29.00$ at $n=8$ and $37.00$ at $n=10$, growing with the resolution: the rough vector is outside the Cameron–Martin space and the quadratic form diverges.
 
@@ -187,7 +187,7 @@ $\mathbb{E}\bigl[e^{vX-v^2/2}\bigr]=1$ for $X\sim N(0,1)$ confirms; the numerica
 
 **Theorem (mutual singularity).** If $h\notin H^1_0(0,1)$, then $\mathbb{W}_h$ and $\mathbb{W}$ are mutually singular.
 
-*Proof.* The finite-dimensional reductions of the two measures along a refining sequence of grids are Gaussian with means differing by the projection of $h$ and the same covariance. When the projection lies outside the range of $C^{1/2}$ the quadratic form of the difference diverges and the Hellinger affinity of the two finite-dimensional marginals tends to zero; by the martingale convergence of the affinities, the two measures are carried by disjoint sets. $\square$
+*Proof.* The finite-dimensional reductions of the two measures along a refining sequence of grids are Gaussian with means differing by the projection of $h$ and the same covariance. When the projection lies outside the range of $C^{1/2}$ the quadratic form of the difference diverges and the Hellinger affinity of the two finite-dimensional marginals tends to zero; by the martingale convergence of the affinities, the two measures are carried by disjoint sets.
 
 The dichotomy is the sharp form of the statement that the Brownian measure does not live on a space of smooth paths: it is quasi-invariant under exactly the $H^1$ shifts, and it is carried to a singular measure by every other translation. The Cameron–Martin space is thus the largest space of directions in which the measure may be differentiated.
 
@@ -209,7 +209,6 @@ $$
 
 The proof is the Itô formula applied to the process $e^{-\int_0^sV(x_r)dr}u(t-s,x_s)$ together with the martingale property; it is given in *Brownian Motion and Stochastic Calculus*, and the result is quoted here as the identity that identifies the Euclidean path integral.
 
-**Verification of the closed forms.** For a constant potential $V$ the solution is $u(t,x)=e^{-Vt}(P_tf)(x)$, and the finite-difference residual of this expression for the backward equation is $8\cdot10^{-9}$ at $(t,x)=(0.3,0.2)$, with the grid spacing $h=10^{-4}$. For the quadratic potential $V(x)=\tfrac12x^2$ the solution with $f\equiv1$ is
 
 $$
 u(t,x)=(\cosh t)^{-1/2}\exp\Bigl(-\tfrac12x^2\tanh t\Bigr),
@@ -303,9 +302,8 @@ $$
 K(x_a,x_b;t)=\Bigl(\frac{m}{2\pi it}\Bigr)^{1/2}\exp\Bigl(\frac{im(x_b-x_a)^2}{2t}\Bigr).
 $$
 
-*Proof of the last claim.* The free action is quadratic in all the $x_j$, so the Gaussian integral is exact for every $n$, and the explicit computation by completing the square gives the same value for every $n$; alternatively the semigroup property of the free kernel gives the same recursion in $n$. $\square$
+*Proof of the last claim.* The free action is quadratic in all the $x_j$, so the Gaussian integral is exact for every $n$, and the explicit computation by completing the square gives the same value for every $n$; alternatively the semigroup property of the free kernel gives the same recursion in $n$.
 
-**Verification.** With $m=1$, $t=1$, $x_a=0$, $x_b=0.3$, the exact kernel is $0.29449920074-0.26911923724\,i$, and the sliced kernels for $n=2,4,6$ are $0.29449920074-0.26911923724\,i$ to fifteen decimal places; the determinant formula above reproduces the exact kernel and the agreement is not an approximation.
 
 ### Convergence to the Wiener Measure and to the Oscillator Kernel
 
@@ -315,7 +313,6 @@ $$
 K(x_a,x_b;t)=\Bigl(\frac{\omega}{2\pi i\sin\omega t}\Bigr)^{1/2}\exp\Bigl(\frac{i\omega}{2\sin\omega t}\bigl((x_a^2+x_b^2)\cos\omega t-2x_ax_b\bigr)\Bigr).
 $$
 
-**Verification.** With $m=1$, $\omega=t=1$, $x_a=0$, $x_b=0.3$, the Mehler value is $0.31627748765-0.29850880428\,i$ and the errors of the sliced kernels are $8.44\cdot10^{-3}$, $2.08\cdot10^{-3}$, $5.18\cdot10^{-4}$ at $n=2,4,8$, decreasing by a factor four when $n$ is doubled: the convergence is of second order in the time step.
 
 **Remark (the operator form, and the two limits).** The same computation at the level of operators is the Lie–Trotter product formula $e^{-iHt}=\lim_{n}\bigl(e^{-iH_0t/n}e^{-iVt/n}\bigr)^n$ of *Semigroups and Evolution Equations*: the resolution of the identity inserted between consecutive factors is the integral over $x_j$. In imaginary time the same product formula is a strongly convergent approximation of the semigroup $e^{t(\Delta/2-V)}$, and the sliced integrals converge to the Wiener integral of the Feynman–Kac formula, which is a measure; in real time the products converge only in a weak or distributional sense, which is the operator shadow of the absence of the measure. The two limits of this section are thus the two halves of the article: the Euclidean slicing converges to a measure, and the oscillatory slicing converges to a kernel or a distribution.
 

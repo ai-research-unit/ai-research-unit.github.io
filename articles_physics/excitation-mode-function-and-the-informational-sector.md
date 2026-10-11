@@ -114,9 +114,9 @@ of the mode, and the occupation-number observable $\tilde N$, that are elements 
 
 ## What Is Asserted to Lie in $\mathbb{M}_+$, and Its Verification
 
-The assertions to be checked are now explicit. Each is verified by recomputation from the definitions, on randomly generated elements as well as on the cases that suggested them.
+The assertions to be checked are now explicit.
 
-**A1. The occupation-number operator is in $\mathbb{M}_+$.** With $\tilde N=\tfrac12(e_0-ie_3)$, compute $\tilde N^{*}=\tfrac12(e_0^\dagger+(-ie_3)^{*})=\tfrac12(e_0-ie_3)=\tilde N$, so $\tilde N\in\mathbb{M}_+$. Its square is $\tilde N^2=\tfrac14(e_0-ie_3)^2=\tfrac14(e_0^2-2ie_3+(ie_3)^2)=\tfrac14(e_0-2ie_3+e_0)=\tfrac12(e_0-ie_3)=\tilde N$, using $(ie_3)^2=e_0$. So the number operator is a Hermitian idempotent — a projector onto the occupied state — and it lies in $\mathbb{M}_+$. The same two computations with $\mu$ any unit pure real quaternion, $\tilde N_\mu=\tfrac12(e_0-i\mu)$, give $\tilde N_\mu^{*}=\tilde N_\mu$ and $\tilde N_\mu^2=\tilde N_\mu$; this was checked on twenty random unit $\mu$, not only on $\mu=e_3$.
+**A1. The occupation-number operator is in $\mathbb{M}_+$.** With $\tilde N=\tfrac12(e_0-ie_3)$, compute $\tilde N^{*}=\tfrac12(e_0^\dagger+(-ie_3)^{*})=\tfrac12(e_0-ie_3)=\tilde N$, so $\tilde N\in\mathbb{M}_+$. Its square is $\tilde N^2=\tfrac14(e_0-ie_3)^2=\tfrac14(e_0^2-2ie_3+(ie_3)^2)=\tfrac14(e_0-2ie_3+e_0)=\tfrac12(e_0-ie_3)=\tilde N$, using $(ie_3)^2=e_0$. So the number operator is a Hermitian idempotent — a projector onto the occupied state — and it lies in $\mathbb{M}_+$.
 
 **A2. The vacuum projector is in $\mathbb{M}_+$.** The complement $e_0-\tilde N=\tfrac12(e_0+ie_3)=\tilde\Pi_1$ is Hermitian and idempotent by the same computation, so $\tilde\Pi_1\in\mathbb{M}_+$. More generally $\tfrac12(e_0+i\mu)$ is Hermitian, idempotent, and of trace one for every unit pure quaternion $\mu$. These are the pure-state projectors of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the single-mode occupation basis is exactly this pair.
 
@@ -126,7 +126,7 @@ $$
 \mathrm{Tr}(\tilde\rho)=1,\qquad
 \tilde\rho^{*}=\tilde\rho,
 $$
-and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\mathbf r|)$, so positivity is exactly $|\mathbf r|\leq1$. These identities were checked on thirty random $\mathbf r$, including the interior point $\mathbf r=(0.6,-0.2,0.3)$ and the boundary point $\mathbf r=(1,0,0)$, not only on $\mathbf r=0$. The set of such $\tilde\rho$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{M}_+$.
+and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\mathbf r|)$, so positivity is exactly $|\mathbf r|\leq1$. The set of such $\tilde\rho$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{M}_+$.
 
 **A4. The ladder operators are not in either sector.** For $\tilde a=\tfrac12(ie_1-e_2)$ one has $\tilde a^\dagger=\tfrac12(ie_1+e_2)=\tilde a^\dagger\neq\tilde a$, and $\tilde a^\dagger\neq-\tilde a$; splitting into Hermitian and anti-Hermitian parts,
 $$
@@ -135,7 +135,7 @@ $$
 $$
 with the first term of each in $\mathbb{M}_+$ and the second in $\mathbb{M}_-$. So the excitation operator is a sum of one element of each sector and is an element of neither. This is not a defect; it is the statement that raising and lowering are not observables.
 
-**A5. The canonical relation holds once, and in the fermionic form.** The matrix-unit relations give $\{\tilde a,\tilde a^\dagger\}=\tilde\Upsilon_1\tilde\Upsilon_2+\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_1+\tilde\Pi_2=e_0$, $\tilde a^2=\tilde\Upsilon_1^2=0$, $(\tilde a^\dagger)^2=y^2=0$, and $\tilde N=\tilde a^\dagger\tilde a=yx=\tilde\Pi_2$. All were recomputed in the quaternion basis. The bosonic relation $[\tilde a,\tilde a^\dagger]=e_0$ cannot hold for any pair in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.
+**A5. The canonical relation holds once, and in the fermionic form.** The matrix-unit relations give $\{\tilde a,\tilde a^\dagger\}=\tilde\Upsilon_1\tilde\Upsilon_2+\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_1+\tilde\Pi_2=e_0$, $\tilde a^2=\tilde\Upsilon_1^2=0$, $(\tilde a^\dagger)^2=y^2=0$, and $\tilde N=\tilde a^\dagger\tilde a=yx=\tilde\Pi_2$. The bosonic relation $[\tilde a,\tilde a^\dagger]=e_0$ cannot hold for any pair in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.
 
 Two points about the reach of A1–A3 belong immediately after them. First, the assertions are about **one mode**. Both $\tilde\Upsilon_1,\tilde\Upsilon_2$ and the Peirce idempotents are attached to a single pair of orthogonal idempotents and to a single mode; there is no second pair commuting with the first in the four-dimensional algebra, hence no second fermionic mode. Second, the assertions are about the **density matrix** and the **number operator**, not about the state vector. The state vector is in the module, and the module is not $\mathbb{M}_+$: the two are different subspaces of $\mathbb{B}$ that meet in a ray. The next section makes that intersection precise.
 

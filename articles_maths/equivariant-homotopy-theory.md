@@ -16,7 +16,7 @@ Nothing analytic and nothing geometric is used. The group is a topological group
 
 **Proposition.** The orbit category is small when the group is compact Lie and the subgroups are taken up to conjugacy and the homogeneous spaces are taken with the compact-open topology; it carries the isotropy information of every $G$-space, because every orbit of a $G$-space is a homogeneous space $G/H$, and a $G$-space is assembled from its orbits. The functors on $\mathcal{O}_G$ are the coefficient systems of the Bredon theory used in *Equivariant Obstruction Theory*.
 
-*Proof.* An orbit $G\cdot x$ is the image of $G/H$ for $H$ the isotropy group of $x$, and the assignment is a homeomorphism of the orbit; a coefficient system is by definition a contravariant functor on $\mathcal{O}_G$. $\square$
+*Proof.* An orbit $G\cdot x$ is the image of $G/H$ for $H$ the isotropy group of $x$, and the assignment is a homeomorphism of the orbit; a coefficient system is by definition a contravariant functor on $\mathcal{O}_G$.
 
 ### The Fixed-Point Functors
 
@@ -30,7 +30,7 @@ with the subspace topology; the assignment $X\mapsto X^H$ is the **fixed-point f
 
 **Proposition.** The fixed-point functors are homotopy functors and they detect the isotropy: the fixed set of the whole group is $X^G$, for $H \leq K$ one has $X^K \subseteq X^H$, and a $G$-homotopy $X\times I\to Y$ restricts to an ordinary homotopy $X^H\times I\to Y^H$, so each $X^H$ is an invariant of the equivariant homotopy type.
 
-*Proof.* If $h\cdot x = x$ for all $h\in K$ then for all $h \in H\le K$, so $X^K\subseteq X^H$; the restriction of a $G$-homotopy is continuous and its endpoint conditions are the restrictions of the maps. $\square$
+*Proof.* If $h\cdot x = x$ for all $h\in K$ then for all $h \in H\le K$, so $X^K\subseteq X^H$; the restriction of a $G$-homotopy is continuous and its endpoint conditions are the restrictions of the maps.
 
 The collection of the functors $X\mapsto X^H$, one for each conjugacy class of subgroups, is the totality of the invariants of the equivariant homotopy theory: an equivariant map is an equivariant homotopy equivalence exactly when all of them are homotopy equivalences, which is the theorem of the section on the Whitehead theorem below.
 
@@ -50,13 +50,13 @@ Every orbit $G/H$ is a $G$-CW complex with one cell in dimension zero, and the *
 
 **Proposition.** The quotient $X/G$ of a $G$-CW complex is a CW complex with one cell for each equivariant cell, and the fixed set $X^H$ is a CW complex; for $H\leq K$ the fixed sets are related by $X^K\subseteq X^H$. Consequently the ordinary homotopy type of every fixed set is that of a CW complex, and the invariants of the equivariant theory are computable by the ordinary cellular methods of *CW Complexes and Cellular Approximation*.
 
-*Proof.* An equivariant cell $G/H_\alpha\times D^n$ has quotient $D^n$ and $H$-fixed set $G/H_\alpha^H\times D^n$, a disjoint union of cells or empty; the quotient and the fixed sets inherit the filtrations and the weak topology, so they are CW complexes with the stated cells. $\square$
+*Proof.* An equivariant cell $G/H_\alpha\times D^n$ has quotient $D^n$ and $H$-fixed set $G/H_\alpha^H\times D^n$, a disjoint union of cells or empty; the quotient and the fixed sets inherit the filtrations and the weak topology, so they are CW complexes with the stated cells.
 
 ### The Equivariant Cellular Approximation
 
 **Theorem.** Every $G$-map between $G$-CW complexes is equivariantly homotopic to a cellular $G$-map, that is one carrying the $n$-skeleton to the $n$-skeleton for every $n$; and every equivariant homotopy between cellular $G$-maps is equivariantly homotopic rel the ends to a cellular homotopy.
 
-*Proof.* The equivariant cellular approximation is the ordinary cellular approximation of *CW Complexes and Cellular Approximation* applied to the fixed sets and the orbits; the equivariant cells correspond to the cells of the quotient and the obstruction to pushing a map off the interior of a cell of dimension greater than the source lies in the equivariant homotopy groups of the target, which vanish in the appropriate range for a $G$-CW complex. The argument is the equivariant form of the standard one, using the equivariant homotopy extension property of *Equivariant Maps and Equivariant Homotopy*. $\square$
+*Proof.* The equivariant cellular approximation is the ordinary cellular approximation of *CW Complexes and Cellular Approximation* applied to the fixed sets and the orbits; the equivariant cells correspond to the cells of the quotient and the obstruction to pushing a map off the interior of a cell of dimension greater than the source lies in the equivariant homotopy groups of the target, which vanish in the appropriate range for a $G$-CW complex. The argument is the equivariant form of the standard one, using the equivariant homotopy extension property of *Equivariant Maps and Equivariant Homotopy*.
 
 ## Equivariant Homotopy Groups and the Whitehead Theorem
 
@@ -72,17 +72,17 @@ the ordinary homotopy group of the fixed set based at $x$; a $G$-map $f$ induces
 
 **Proposition.** The equivariant homotopy groups are functors on the equivariant homotopy category; for $H \leq K$ the inclusion $X^K\subseteq X^H$ gives natural maps $\pi_n^K(X)\to\pi_n^H(X)$, and for the trivial subgroup $H=1$ the group $\pi_n^1(X)$ is the ordinary homotopy group of the underlying space. A $G$-map that induces isomorphisms on $\pi_n^H$ for all $H$ and $n$ is a **weak $G$-equivalence**, and every weak $G$-equivalence between $G$-CW complexes is a $G$-homotopy equivalence.
 
-*Proof.* The first statements are the functoriality of the ordinary homotopy groups applied to the fixed-set functors, and the naturality of the inclusions; the last is the equivariant Whitehead theorem proved next. $\square$
+*Proof.* The first statements are the functoriality of the ordinary homotopy groups applied to the fixed-set functors, and the naturality of the inclusions; the last is the equivariant Whitehead theorem proved next.
 
 ### The Equivariant Whitehead Theorem
 
 **Theorem.** A $G$-map $f : X \to Y$ between $G$-CW complexes is a $G$-homotopy equivalence if and only if it is a weak $G$-equivalence, that is, if and only if $f^H : X^H\to Y^H$ is a weak homotopy equivalence for every closed subgroup $H$.
 
-*Proof sketch.* If $f$ is a $G$-homotopy equivalence then each $f^H$ is a homotopy equivalence, hence a weak equivalence. Conversely, the equivariant cellular approximation factorises $f$ into a sequence of cell attachments, and the vanishing of the relative equivariant homotopy groups of the mapping cylinder, computed on the fixed sets, gives the existence of an equivariant homotopy inverse by the standard induction over the skeleta; the details use the equivariant homotopy extension property of *Equivariant Maps and Equivariant Homotopy* and the ordinary Whitehead theorem of *CW Complexes and Cellular Approximation* on each fixed set. $\square$
+*Proof sketch.* If $f$ is a $G$-homotopy equivalence then each $f^H$ is a homotopy equivalence, hence a weak equivalence. Conversely, the equivariant cellular approximation factorises $f$ into a sequence of cell attachments, and the vanishing of the relative equivariant homotopy groups of the mapping cylinder, computed on the fixed sets, gives the existence of an equivariant homotopy inverse by the standard induction over the skeleta; the details use the equivariant homotopy extension property of *Equivariant Maps and Equivariant Homotopy* and the ordinary Whitehead theorem of *CW Complexes and Cellular Approximation* on each fixed set.
 
 **Corollary.** The fixed-point functors jointly reflect and detect the equivariant homotopy equivalences of $G$-CW complexes: two $G$-CW complexes are $G$-homotopy equivalent exactly when the fixed sets $X^H$ and $Y^H$ are homotopy equivalent for every $H$ and the equivalences are compatible with the inclusions; and an equivariant map is a homotopy equivalence exactly when each of its fixed-set restrictions is one.
 
-*Proof.* Apply the theorem to the equivariant map; the compatibility is the naturality of the functors. $\square$
+*Proof.* Apply the theorem to the equivariant map; the compatibility is the naturality of the functors.
 
 ## Fibrations, Cofibrations and Coverings
 
@@ -98,13 +98,13 @@ $$
 
 for every $H$, with $F$ the fibre.
 
-*Proof.* Restrict the lifting property to fixed sets and to $G$-spaces of the form $G/H\times Z$; the exact sequence is that of the ordinary fibration $E^H\to B^H$ from *Homotopy Groups and Fibrations*. $\square$
+*Proof.* Restrict the lifting property to fixed sets and to $G$-spaces of the form $G/H\times Z$; the exact sequence is that of the ordinary fibration $E^H\to B^H$ from *Homotopy Groups and Fibrations*.
 
 ### Coverings and the Orbit Category
 
 **Theorem.** A $G$-map that is an ordinary covering and an equivariant fibration is an **equivariant covering**; an equivariant covering of a $G$-space $X$ by a free $G$-space is classified by the functor on the fundamental groupoid of the orbit category, and for a free $G$-action the equivariant coverings of $X$ correspond to the ordinary coverings of the orbit space $X/G$ with the deck transformations extended to the action.
 
-*Proof.* The classification is that of the ordinary covering theory of *Covering Spaces and the Fundamental Group*, applied over the orbit category and with the equivariant monodromy; the free case is the orbit-space correspondence of *Equivariant Maps and Equivariant Homotopy*. $\square$
+*Proof.* The classification is that of the ordinary covering theory of *Covering Spaces and the Fundamental Group*, applied over the orbit category and with the equivariant monodromy; the free case is the orbit-space correspondence of *Equivariant Maps and Equivariant Homotopy*.
 
 ## Orbit Types and the Slice Decomposition
 
@@ -120,7 +120,7 @@ the set of points whose isotropy is conjugate to $H$.
 
 **Theorem.** The orbit types partition $X$, the isotropy is constant along an orbit, and the orbit $G\cdot x\cong G/G_x$; the orbit-type subspaces are $G$-invariant and $X_{(H)}$ is a single orbit type, so that the $G$-space is the disjoint union of its orbit-type strata, each of which is a single homogeneous orbit type when the action is transitive. A $G$-CW complex may be chosen with the cells $G/H_\alpha\times D^n$ having orbit type $(H_\alpha)$ in the interior of the disk, and then the orbit-type strata are unions of open cells.
 
-*Proof.* If $y=g\cdot x$ then $G_y = gG_xg^{-1}$, so the isotropy is constant along the orbit up to conjugacy, and the orbit map $G/G_x\to G\cdot x$ is an equivariant homeomorphism; the partition and the invariance are immediate, and the cell statement follows by taking the isotropy groups of the cells of a $G$-CW structure. $\square$
+*Proof.* If $y=g\cdot x$ then $G_y = gG_xg^{-1}$, so the isotropy is constant along the orbit up to conjugacy, and the orbit map $G/G_x\to G\cdot x$ is an equivariant homeomorphism; the partition and the invariance are immediate, and the cell statement follows by taking the isotropy groups of the cells of a $G$-CW structure.
 
 ### The Slice Theorem
 
@@ -132,7 +132,7 @@ $$
 
 which is the identity on the orbit; consequently the space is locally modelled on the twisted product of the orbit with the slice, and the action is determined near each orbit by the representation of the isotropy group on the slice.
 
-*Proof.* The theorem of Mostow and Palais for compact Lie groups acting on a completely regular space; the construction of the slice uses a smooth or a finite-dimensional structure and a partition of unity, and is quoted rather than reproduced, the smooth tools being those of the geometry of a later Part. The consequence for the orbit-type decomposition and the local structure of an equivariant neighbourhood is what the article uses. $\square$
+*Proof.* The theorem of Mostow and Palais for compact Lie groups acting on a completely regular space; the construction of the slice uses a smooth or a finite-dimensional structure and a partition of unity, and is quoted rather than reproduced, the smooth tools being those of the geometry of a later Part. The consequence for the orbit-type decomposition and the local structure of an equivariant neighbourhood is what the article uses.
 
 ### The Equivariant Homotopy of the Orbits
 
@@ -144,7 +144,7 @@ $$
 
 whose connected components are the double cosets, so that $\pi_0^H(G/K)$ is the set of cosets $gK$ with $g^{-1}Hg\subseteq K$ with the base point $eK$ when it is fixed; for $K=1$ the orbit is free and $(G/K)^H$ is empty for $H\neq1$, while for the trivial orbit $G/G=\mathrm{pt}$ all the equivariant homotopy groups vanish. For $H\leq K$ the fixed set is a homogeneous space of the normalizer, and the higher equivariant homotopy groups of the orbit are those of that homogeneous space.
 
-*Proof.* The fixed set is the set of cosets fixed by the $H$-action, which is the stated condition; the components are the double-coset decomposition of the condition, and the homogeneous-space description is that of the normalizer $N_G(K)$ acting on $G/K$; the vanishing at the trivial orbit is immediate. $\square$
+*Proof.* The fixed set is the set of cosets fixed by the $H$-action, which is the stated condition; the components are the double-coset decomposition of the condition, and the homogeneous-space description is that of the normalizer $N_G(K)$ acting on $G/K$; the vanishing at the trivial orbit is immediate.
 
 The computation is the reason the representations of the isotropy groups control the equivariant homotopy: the cells are orbits and the attaching data of a $G$-CW complex lie in the equivariant homotopy groups of the orbits, which are the homotopy groups of the homogeneous spaces of the normalizers.
 
@@ -156,7 +156,7 @@ The computation is the reason the representations of the isotropy groups control
 
 **Theorem.** The fine weak equivalences are the weak equivalences of a closed model structure on $G\text{-}\mathbf{Top}$ in the sense of *Model Categories and Homotopy Theory*: the fibrant objects include the $G$-CW complexes, the cofibrant objects include the free $G$-spaces, the homotopy category is the equivariant homotopy category of *Equivariant Maps and Equivariant Homotopy* and *Equivariant Homotopy Theory* is the name of that category, and the orbit functors $X\mapsto X^H$ are Quillen functors.
 
-*Proof.* The model structure is the projective model structure on the diagram category of the fixed-set functors over $\mathcal{O}_G$; the fibrations and cofibrations are the maps that are fibrations and cofibrations on every fixed set, and the axioms are transported from the ordinary model structure of *Model Categories and Homotopy Theory*. The details are the equivariant model-category theorem, quoted here. $\square$
+*Proof.* The model structure is the projective model structure on the diagram category of the fixed-set functors over $\mathcal{O}_G$; the fibrations and cofibrations are the maps that are fibrations and cofibrations on every fixed set, and the axioms are transported from the ordinary model structure of *Model Categories and Homotopy Theory*. The details are the equivariant model-category theorem, quoted here.
 
 ### The Coarse Theory and the Borel Construction
 
@@ -170,7 +170,7 @@ So the choice of the class of weak equivalences is a choice of a homotopy theory
 
 **Theorem (tom Dieck splitting).** For a finite group $G$ and a based $G$-CW complex, the equivariant stable homotopy is split into the ordinary stable homotopy of the fixed sets of the subgroups: the $G$-equivariant stable homotopy groups split as a direct sum of the stable homotopy groups of the fixed sets, indexed by the conjugacy classes of subgroups with the Weyl-group quotients, and the splitting is the algebraic form of the orbit decomposition. In the unstable theory the analogous statements are the equivariant attachings along the orbits of $\mathcal{O}_G$, and the Burnside ring is the coefficient ring of the theory.
 
-*Proof sketch.* The tom Dieck splitting follows from the isotropy separation of the $G$-spheres and the fact that the orbits generate the stable category; the statement is quoted, and it is the bridge from the unstable theory of this article to the equivariant stable theory of *Stable Homotopy Theory*. $\square$
+*Proof sketch.* The tom Dieck splitting follows from the isotropy separation of the $G$-spheres and the fact that the orbits generate the stable category; the statement is quoted, and it is the bridge from the unstable theory of this article to the equivariant stable theory of *Stable Homotopy Theory*.
 
 ## Examples
 

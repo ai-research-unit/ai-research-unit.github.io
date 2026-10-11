@@ -31,16 +31,16 @@ $(\tilde P,\tilde Q,\tilde R)=(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star
 
 The two failures have the same shape and it is the shape of a **ternary residue**.
 
-- **The associativity failure.** The plain product is associative — recomputed on $100$ of $100$ random
-  triples — and the quaternionic product is not: the associator $(\tilde P,\tilde Q,\tilde R)$ is nonzero on
-  $100$ of $100$ random triples. The failure of associativity of a product is measured by a **ternary**
-  operation, and it is that ternary operation which appears as the associator defect of the antisymmetrised
-  bracket.
+- **The associativity failure.**
+triples — and the quaternionic product is not: the associator $(\tilde P,\tilde Q,\tilde R)$ is nonzero on
+$100$ of $100$ random triples. The failure of associativity of a product is measured by a **ternary**
+operation, and it is that ternary operation which appears as the associator defect of the antisymmetrised
+bracket.
 - **The Jacobi failure.** The cyclic sum
-  $\tilde P\wedge_{\natural}(\tilde Q\wedge_{\natural}\tilde R)+\tilde Q\wedge_{\natural}(\tilde R\wedge_{\natural}\tilde P)+\tilde R\wedge_{\natural}(\tilde P\wedge_{\natural}\tilde Q)$
-  does not vanish; on the owner's witness it is a pure vector, and the same ternary combination
-  $\ell_2(\ell_2(\tilde P,\tilde Q),\tilde R)+\ell_2(\ell_2(\tilde Q,\tilde R),\tilde P)+\ell_2(\ell_2(\tilde R,\tilde P),\tilde Q)$
-  of the parent product is nonzero on that witness.
+$\tilde P\wedge_{\natural}(\tilde Q\wedge_{\natural}\tilde R)+\tilde Q\wedge_{\natural}(\tilde R\wedge_{\natural}\tilde P)+\tilde R\wedge_{\natural}(\tilde P\wedge_{\natural}\tilde Q)$
+does not vanish; on the owner's witness it is a pure vector, and the same ternary combination
+$\ell_2(\ell_2(\tilde P,\tilde Q),\tilde R)+\ell_2(\ell_2(\tilde Q,\tilde R),\tilde P)+\ell_2(\ell_2(\tilde R,\tilde P),\tilde Q)$
+of the parent product is nonzero on that witness.
 
 Both failures therefore produce a nonzero **ternary** object from a binary operation, and the corpus's
 finding that the failure is not removable — the closure of the bracket is a vector space and not an algebra,
@@ -98,24 +98,24 @@ readings is the fourth-product article of the grid.
 ## What Is Not Claimed
 
 - The article does not claim that $\mathbb{B}$ **is** an $L_\infty$- or $A_\infty$-algebra. It claims that
-  the failures the corpus has measured are the first two layers of one, and that the completion is an open
-  construction.
+the failures the corpus has measured are the first two layers of one, and that the completion is an open
+construction.
 - It does not claim that the reading removes the obstruction, changes the ceiling or produces a group. A
-  higher structure is not a group, and the group the algebra reaches is still $U(2)$.
+higher structure is not a group, and the group the algebra reaches is still $U(2)$.
 - It does not claim a sign, a degree or a $\mathbb{Z}$-grading. The grading of an $L_\infty$ structure on
-  $\mathbb{B}$ is part of the open construction and is not fixed by the failure data.
+$\mathbb{B}$ is part of the open construction and is not fixed by the failure data.
 
 ## Physical Readings
 
 - **The failure is structural, not accidental.** The reading is that the two failures are the low operations
-  of one higher structure, so the corpus's negative results are the first measurements of a positive object.
-  Boundary: a labelled programme, and the higher algebra belongs to *A-Infinity and L-Infinity Algebras*.
+of one higher structure, so the corpus's negative results are the first measurements of a positive object.
+Boundary: a labelled programme, and the higher algebra belongs to *A-Infinity and L-Infinity Algebras*.
 - **A non-closing bracket is a higher symmetry.** The reading is that an obstruction that resists closure is
-  the algebraic signature of a symmetry that is higher rather than a symmetry that is absent. Boundary: the
-  strict group remains $U(2)$, and the reading does not enlarge it.
+the algebraic signature of a symmetry that is higher rather than a symmetry that is absent. Boundary: the
+strict group remains $U(2)$, and the reading does not enlarge it.
 - **The associator is the curvature.** The reading is that the ternary residue is the geometric curvature of
-  the multiplication, and that the corpus's curvature readings of the associator and of the Jacobi defect are
-  one statement at two levels. Boundary: the curvature readings are the grid article's, cited.
+the multiplication, and that the corpus's curvature readings of the associator and of the Jacobi defect are
+one statement at two levels. Boundary: the curvature readings are the grid article's, cited.
 
 ## Summary
 
@@ -141,14 +141,14 @@ bracket-first and product-first — are named and neither is chosen.
 ## Further Reading
 
 - *A-Infinity and L-Infinity Algebras*, for the higher operations, the higher Jacobi identities and the role
-  of $\ell_3$ as the deviation from strictness.
+of $\ell_3$ as the deviation from strictness.
 - *The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator*, for the failure, its
-  witness and its reading as an obstruction.
+witness and its reading as an obstruction.
 - *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for
-  the sesquilinear failure.
+the sesquilinear failure.
 - *Interference without a Lie Algebra: the Jacobi Failure in the State Space*, for the failure on the state
-  side and its reading as interference.
+side and its reading as interference.
 - *The Associator and the Ternary Product of the Quaternionic Product*, for the associator that appears as
-  the ternary operation.
+the ternary operation.
 - *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the strict group
-  that the reading does not enlarge.
+that the reading does not enlarge.

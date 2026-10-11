@@ -50,7 +50,7 @@ $\mathcal F(\bar f)=\overline{\mathcal F f}\circ(-1)$.
 
 **Proof.** $\widehat{\bar f}(\xi)=\int\overline{f(x)}e^{-2\pi ix\cdot\xi}dx
 =\overline{\int f(x)e^{2\pi ix\cdot\xi}dx}=\overline{\hat f(-\xi)}$, by the conjugation of the integral and
-the substitution $x\mapsto-x$. $\blacksquare$
+the substitution $x\mapsto-x$.
 
 The reflection commutes with the transform, $\widehat{\tilde f}=\widetilde{\hat f}$, as recorded in the
 Fourier article, where it is also proved that $\mathcal F^2$ is the reflection and $\mathcal F^4=1$; the
@@ -76,7 +76,7 @@ symmetry $\hat f(-\xi)=e^{2\pi iy\cdot\xi}\overline{\hat f(\xi)}$.
 $\hat f(\xi)=\widehat{\bar f}(\xi)=\overline{\hat f(-\xi)}$. Conversely, if $\hat f(-\xi)=\overline{\hat f(\xi)}$
 then $\widehat{\bar f}=\hat f$ by the identity, so $\bar f=f$ by the injectivity of the transform. The
 translation statement is the same computation with the translation identity
-$\widehat{(\tau_{-a}f)}(\xi)=e^{-2\pi ia\cdot\xi}\hat f(\xi)$ of the Fourier article. $\blacksquare$
+$\widehat{(\tau_{-a}f)}(\xi)=e^{-2\pi ia\cdot\xi}\hat f(\xi)$ of the Fourier article.
 
 **Corollary (the parity dictionary for a real function).** Let $f$ be real, and let
 $f_{\mathrm e}(x)=\frac12(f(x)+f(-x))$ and $f_{\mathrm o}(x)=\frac12(f(x)-f(-x))$ be its even and odd
@@ -90,7 +90,7 @@ has $i$ times the imaginary part.
 
 **Proof.** For real $f$, $\hat f(-\xi)=\overline{\hat f(\xi)}$; the even part has transform
 $\frac12(\hat f(\xi)+\hat f(-\xi))=\operatorname{Re}\hat f(\xi)$ and the odd part
-$\frac12(\hat f(\xi)-\hat f(-\xi))=i\operatorname{Im}\hat f(\xi)$. $\blacksquare$
+$\frac12(\hat f(\xi)-\hat f(-\xi))=i\operatorname{Im}\hat f(\xi)$.
 
 Thus for a real function the parity of $f$ is read from the reality of $\hat f$ and the sign of the
 reflection, and the transform of a real even function is real and even, of a real odd function purely
@@ -128,7 +128,6 @@ $-i\operatorname{sgn}(\xi)$, which is bounded; the skew-adjointness is that of a
 imaginary odd function, $H^\dagger=-H$, and $H^2$ has multiplier
 $(-i\operatorname{sgn})^2=-1$. The commutation with the translations and the dilations is the corresponding
 statement for the multiplier, from the convolution and dilation identities of the Fourier article.
-$\blacksquare$
 
 The Hilbert transform and its singular-integral theory are *Fourier Analysis on Euclidean Spaces* and
 *Real Harmonic Analysis*; the present Article records only its relation to the conjugate symmetry.
@@ -152,7 +151,7 @@ that the two halves of the spectrum of $f_{\mathrm a}$ are redundant.
 
 **Proof.** The multiplier of $iH$ is $i(-i\operatorname{sgn})=\operatorname{sgn}$, so the multiplier of the
 analytic representation is $1+\operatorname{sgn}$, which is $2$ on the positive frequencies and $0$ on the negative
-ones; the reconstruction is the definition. $\blacksquare$
+ones; the reconstruction is the definition.
 
 This is the analytic form of the conjugate symmetry: a real function is determined by the positive half of its
 spectrum, and the conjugate function is the price of discarding the negative half. The systematic use of
@@ -187,7 +186,7 @@ functions, with dense image, whose extension is the Gelfand transform of the alg
 **Proof.** $\widehat{f^{*}}(\xi)=\int\overline{f(-x)}e^{-2\pi ix\cdot\xi}dx
 =\overline{\int f(-x)e^{2\pi ix\cdot\xi}dx}=\overline{\int f(u)e^{-2\pi iu\cdot\xi}du}=\overline{\hat f(\xi)}$,
 which is the statement; the product statement is the convolution theorem of the Fourier article, and the
-isomorphism statements are the Fourier inversion and Plancherel theorems. $\blacksquare$
+isomorphism statements are the Fourier inversion and Plancherel theorems.
 
 **Corollary (the algebraic reading of the conjugate symmetry).** The value-conjugation identity
 $\widehat{\bar f}=\widetilde{\overline{\hat f}}$ and the involution identity

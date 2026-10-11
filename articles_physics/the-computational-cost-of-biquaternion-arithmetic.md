@@ -102,7 +102,6 @@ evaluates each of the eight in three real multiplications instead of four, so th
 
 For the slices the scheme already terminates at the coefficient level: a real-quaternion product has real coefficients and needs the eight Hadamard and corner products alone, that is **eight** real multiplications against the naive sixteen; the same holds with purely imaginary coefficients. The reduction is therefore a factor of two on each slice and of $64/24 \approx 2.7$ on the full algebra.
 
-**Verification.** The two forms of the scheme, the corner-Hadamard form above and the source's own, were each checked against the direct product rule on 100 random pairs of elements with coefficients of $|q_\mu| \le 5$ and $|q'_\mu| \le 5$, in exact integer arithmetic, with zero mismatches; the real-quaternion and antiquaternion slices were checked on 100 random pairs each, likewise with zero mismatches. The counts quoted in the tables were checked by counting the multiplications performed by the evaluated expressions.
 
 ## Matrix-Valued Biquaternions
 
@@ -134,13 +133,13 @@ $$
 M = \sum_{\mu=0}^{3} \Phi(e_\mu)\otimes Q_\mu, \qquad \Phi(e_0) = I_2,
 $$
 
-where $\Phi$ is the isomorphism of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and $\otimes$ is the Kronecker product, taken with $\Phi$ first: the indices of $\Phi$ are the block indices of the image and the array indices run inside the blocks. With $\Phi(e_k) = -i\sigma_k$ in the corpus convention the image is $I_2\otimes Q_0$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A, B, C, D$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Clifford Algebra Representation*.
+where $\Phi$ is the isomorphism of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and $\otimes$ is the Kronecker product, taken with $\Phi$ first: the indices of $\Phi$ are the block indices of the image and the array indices run inside the blocks. With $\Phi(e_k) = -i\sigma_k$ in the corpus convention the image is $I_2\otimes Q_0$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A, B, C, D$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Realification of the General Plain Algebra*.
 
 Three properties of this image are used constantly, and each is exact:
 
-1. **It is a homomorphism for the entrywise product.** If the array product is taken entrywise, with each entry multiplied in $\mathbb{B}$, then the image of the product is the product of the images. Verified on 100 random arrays of sizes up to $3\times3$;
-2. **Its trace is the biquaternion trace.** The ordinary trace of the $2n\times2n$ image equals $2\,\mathrm{tr}(Q_0)$, twice the trace of the scalar component matrix, which is exactly the corpus's trace $2\,\mathrm{Sc}$ summed over the diagonal. Verified on the same 100 arrays;
-3. **Its dagger is the array dagger.** Transposing the array and applying the Hermitian conjugation in the algebra to every entry carries the image to the conjugate transpose. Verified on the same 100 arrays.
+1. **It is a homomorphism for the entrywise product.** If the array product is taken entrywise, with each entry multiplied in $\mathbb{B}$, then the image of the product is the product of the images.
+2. **Its trace is the biquaternion trace.** The ordinary trace of the $2n\times2n$ image equals $2\,\mathrm{tr}(Q_0)$, twice the trace of the scalar component matrix, which is exactly the corpus's trace $2\,\mathrm{Sc}$ summed over the diagonal.
+3. **Its dagger is the array dagger.** Transposing the array and applying the Hermitian conjugation in the algebra to every entry carries the image to the conjugate transpose.
 
 The inner $2\times2$ blocks of the image carry the slice structure. For a real-quaternion array, whose coefficients are complex matrices with real entries only, the image takes the **time-reversal symmetric** block form
 
@@ -154,7 +153,7 @@ $$
 M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_0 - iQ_3,\quad H = -iQ_1 - Q_2 .
 $$
 
-Both were verified entry by entry on 100 random arrays for each slice, in the corpus's $\Phi$ convention, and both are the standard statements that a matrix commuting with, or anticommuting with, the time-reversal operation has a Hermitian and an anti-Hermitian block structure. In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{M}_\pm$ split, a point returned to below.
+In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{M}_\pm$ split, a point returned to below.
 
 ## The Eigenvalue Problem
 
@@ -180,7 +179,7 @@ $$
 
 one has $M' = U_\alpha^{\dagger}MU_\alpha$ block diagonal exactly when $\alpha^{*}B = \alpha A$, and then the blocks are $\alpha A$ and $-\alpha A$. The relevant root is fixed by the relation between the two non-zero blocks: when they are opposite, $B = -A$, the condition holds for $\alpha = \pm i$, and when they are equal, $B = A$, for $\alpha = \pm 1$. Both occur in the source's symmetry classes, for a single active vector component: $e_2$ alone gives $B = -A$ and $e_1$ alone gives $B = A$, while $e_3$ alone is already block diagonal and needs no rotation. When the two blocks are not simply related, the unitary matrix is completed by a complex matrix $G$ built from the singular value decomposition $A = U\Sigma V^{\dagger}$ of the upper block as $G = VU^{\dagger}$, which restores the condition $AG = (AG)^{*}$.
 
-The identity was verified on 100 random block-anti-diagonal matrices of the stated form, with the two blocks linked by $B = \alpha^2A$ and with the four fourth roots of unity as $\alpha$, in exact arithmetic and with zero mismatches. It is a statement of linear algebra — a rotation of a two-block matrix into its eigenbasis — and the biquaternion content is only the guarantee that the blocks carry the stated structure, so that the reduction applies.
+It is a statement of linear algebra — a rotation of a two-block matrix into its eigenbasis — and the biquaternion content is only the guarantee that the blocks carry the stated structure, so that the reduction applies.
 
 ## The Cost in the Framework's Terms
 

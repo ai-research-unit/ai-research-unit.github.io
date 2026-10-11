@@ -21,15 +21,15 @@ $$
 
 is a bijection of $\Delta$ onto the set of maximal ideals of a unital commutative Banach algebra; the kernel of a character is a closed maximal ideal of codimension one.
 
-**Proof.** Continuity and $\lVert\chi\rVert = 1$ are proved in *Operators on a Banach Algebra*: if $\lvert\chi(a)\rvert > \lVert a\rVert$ then $1 - a/\chi(a)$ is invertible while its image $0$ is not. The kernel of a nonzero multiplicative functional is a proper ideal, of codimension one because $\chi$ is nonzero and onto, hence a maximal ideal, closed as the kernel of a continuous map. Conversely a maximal ideal $M$ of a unital commutative Banach algebra is closed and $A/M$ is a field that is a Banach algebra, hence $\mathbb{K}$ by the Gelfand–Mazur theorem, and the quotient map is a character with kernel $M$. $\square$
+**Proof.** Continuity and $\lVert\chi\rVert = 1$ are proved in *Operators on a Banach Algebra*: if $\lvert\chi(a)\rvert > \lVert a\rVert$ then $1 - a/\chi(a)$ is invertible while its image $0$ is not. The kernel of a nonzero multiplicative functional is a proper ideal, of codimension one because $\chi$ is nonzero and onto, hence a maximal ideal, closed as the kernel of a continuous map. Conversely a maximal ideal $M$ of a unital commutative Banach algebra is closed and $A/M$ is a field that is a Banach algebra, hence $\mathbb{K}$ by the Gelfand–Mazur theorem, and the quotient map is a character with kernel $M$.
 
 **Theorem (the character space is a compact Hausdorff space).** Let $A$ be a unital commutative Banach algebra. Then $\Delta$ is a nonempty compact Hausdorff space in the weak-$*$ topology inherited from the dual $A'$, and the evaluation $\chi \mapsto \chi(a)$ is continuous for every $a$. If $A$ is not unital then $\Delta$ is locally compact Hausdorff but need not be compact, and it is compact exactly when $A$ has a unit.
 
-**Proof.** $\Delta \subseteq \{\chi \in A' : \lVert\chi\rVert = 1\}$, the unit sphere of the dual, which is weak-$*$ compact by the Banach–Alaoglu theorem of *Normed and Banach Spaces*; the multiplicative conditions and $\chi(1) = 1$ are closed, so $\Delta$ is a closed subset of a compact space, hence compact. Nonemptiness is the Gelfand–Mazur theorem applied to a maximal ideal, which exists by Zorn's lemma. In the non-unital case the characters extend to the unitisation and form a locally compact space; the unit may be adjoined, and compactness is recovered exactly when the unit is present. $\square$
+**Proof.** $\Delta \subseteq \{\chi \in A' : \lVert\chi\rVert = 1\}$, the unit sphere of the dual, which is weak-$*$ compact by the Banach–Alaoglu theorem of *Normed and Banach Spaces*; the multiplicative conditions and $\chi(1) = 1$ are closed, so $\Delta$ is a closed subset of a compact space, hence compact. Nonemptiness is the Gelfand–Mazur theorem applied to a maximal ideal, which exists by Zorn's lemma. In the non-unital case the characters extend to the unitisation and form a locally compact space; the unit may be adjoined, and compactness is recovered exactly when the unit is present.
 
 **Corollary (evaluation separates points and elements).** For distinct characters $\chi \neq \psi$ there is $a$ with $\chi(a) \neq \psi(a)$; for $a \neq 0$ in a semisimple algebra there is a character with $\chi(a) \neq 0$. Hence $\Delta$ separates the points of $\Delta$ through the functions $\widehat a$, and the transform separates the elements of a semisimple algebra.
 
-**Proof.** Two distinct characters have distinct kernels, and a character with the same values on a maximal ideal and at the unit is determined; the second statement is the definition of semisimplicity. $\square$
+**Proof.** Two distinct characters have distinct kernels, and a character with the same values on a maximal ideal and at the unit is determined; the second statement is the definition of semisimplicity.
 
 ## The Transform as an Operator
 
@@ -51,7 +51,7 @@ $$
 \lVert\widehat a\rVert_\infty = \sup_{\chi \in \Delta}\lvert\chi(a)\rvert \leq \lVert a\rVert .
 $$
 
-**Proof.** Multiplicativity is $\chi(ab) = \chi(a)\chi(b)$ for each $\chi$, additivity and homogeneity are the linearity of each $\chi$, and $\widehat 1(\chi) = \chi(1) = 1$. The bound is $\lvert\chi(a)\rvert \leq \lVert a\rVert$ for every character, so the sup is at most $\lVert a\rVert$; the element $\widehat a$ is continuous as a pointwise limit of the continuous evaluations, and it vanishes at infinity in the non-unital case. The norm is attained at $\widehat 1 = 1$, so $\lVert\Gamma\rVert = 1$. $\square$
+**Proof.** Multiplicativity is $\chi(ab) = \chi(a)\chi(b)$ for each $\chi$, additivity and homogeneity are the linearity of each $\chi$, and $\widehat 1(\chi) = \chi(1) = 1$. The bound is $\lvert\chi(a)\rvert \leq \lVert a\rVert$ for every character, so the sup is at most $\lVert a\rVert$; the element $\widehat a$ is continuous as a pointwise limit of the continuous evaluations, and it vanishes at infinity in the non-unital case. The norm is attained at $\widehat 1 = 1$, so $\lVert\Gamma\rVert = 1$.
 
 **Theorem (the kernel is the radical).** The kernel of the Gelfand transform is the intersection of the maximal ideals, that is the radical,
 
@@ -61,11 +61,11 @@ $$
 
 and $\Gamma$ is injective if and only if $A$ is semisimple, $\operatorname{rad}(A) = 0$. Consequently $\Gamma$ induces an injective transform on the semisimple quotient $A/\operatorname{rad}(A)$, and the image is a subalgebra of $C_0(\Delta)$ isomorphic to $A/\operatorname{rad}(A)$.
 
-**Proof.** $\widehat a = 0$ means $\chi(a) = 0$ for every character, that is $a$ lies in every maximal ideal, and the intersection of the maximal ideals is the radical by definition; the first isomorphism theorem gives the injectivity on $A/\operatorname{rad}(A)$. $\square$
+**Proof.** $\widehat a = 0$ means $\chi(a) = 0$ for every character, that is $a$ lies in every maximal ideal, and the intersection of the maximal ideals is the radical by definition; the first isomorphism theorem gives the injectivity on $A/\operatorname{rad}(A)$.
 
 **Corollary (the radical is a closed ideal and the semisimple quotient is a Banach algebra).** The radical of a commutative Banach algebra is a closed two-sided ideal, and $A/\operatorname{rad}(A)$ is a semisimple commutative Banach algebra isometrically embedded by $\Gamma$ in $C_0(\Delta)$.
 
-**Proof.** $\ker\Gamma$ is closed, being the kernel of the bounded operator $\Gamma$; the quotient of a Banach algebra by a closed ideal is a Banach algebra by *Ideals and Quotients of Algebras*, and it is semisimple by construction. $\square$
+**Proof.** $\ker\Gamma$ is closed, being the kernel of the bounded operator $\Gamma$; the quotient of a Banach algebra by a closed ideal is a Banach algebra by *Ideals and Quotients of Algebras*, and it is semisimple by construction.
 
 ## The Spectrum and the Spectral Radius
 
@@ -77,7 +77,7 @@ $$
 
 so the spectrum of $a$ is exactly the set of values of its Gelfand transform, and the transform is the spectral model of the algebra.
 
-**Proof.** $\lambda \in \sigma(a)$ means $a - \lambda$ is not invertible, so it lies in some maximal ideal $M = \ker\chi$, and then $\chi(a) = \lambda$; conversely if $\chi(a) = \lambda$ then $\chi(a - \lambda) = 0$ so $a - \lambda$ lies in the proper ideal $\ker\chi$ and is not invertible, so $\lambda \in \sigma(a)$. $\square$
+**Proof.** $\lambda \in \sigma(a)$ means $a - \lambda$ is not invertible, so it lies in some maximal ideal $M = \ker\chi$, and then $\chi(a) = \lambda$; conversely if $\chi(a) = \lambda$ then $\chi(a - \lambda) = 0$ so $a - \lambda$ lies in the proper ideal $\ker\chi$ and is not invertible, so $\lambda \in \sigma(a)$.
 
 **Theorem (the spectral radius formula).** For every $a$,
 
@@ -87,21 +87,21 @@ $$
 
 so the Gelfand transform computes the spectral radius, and $\Gamma$ is a contraction that is isometric exactly when $\lVert a\rVert = r(a)$ for all $a$.
 
-**Proof.** The spectrum is $\widehat a(\Delta)$, so its supremum modulus is $\lVert\widehat a\rVert_\infty$; the Beurling–Gelfand theorem gives $r(a) = \lim\lVert a^n\rVert^{1/n}$; combining, the transform preserves the value of the spectral radius, and it preserves the norm exactly when the norm is the spectral radius. $\square$
+**Proof.** The spectrum is $\widehat a(\Delta)$, so its supremum modulus is $\lVert\widehat a\rVert_\infty$; the Beurling–Gelfand theorem gives $r(a) = \lim\lVert a^n\rVert^{1/n}$; combining, the transform preserves the value of the spectral radius, and it preserves the norm exactly when the norm is the spectral radius.
 
 **Corollary (the transform is not isometric in general).** If $A$ is a commutative Banach algebra and $a$ is nilpotent but nonzero, then $\widehat a = 0$ and $a \neq 0$, so $\Gamma$ is not injective; if instead every $a$ satisfies $\lVert a\rVert = r(a)$ then $\Gamma$ is isometric. In general $\lVert\Gamma\rVert = 1$ and $\Gamma$ is not an isometry.
 
-**Proof.** A nilpotent $a$ has $\chi(a)^n = \chi(a^n) = 0$, so $\chi(a) = 0$ for every character; the image of a nonzero nilpotent is zero, and injectivity fails. The second case is the theorem read with $\lVert a\rVert = r(a)$. $\square$
+**Proof.** A nilpotent $a$ has $\chi(a)^n = \chi(a^n) = 0$, so $\chi(a) = 0$ for every character; the image of a nonzero nilpotent is zero, and injectivity fails. The second case is the theorem read with $\lVert a\rVert = r(a)$.
 
 ## The Image of the Transform
 
 **Proposition (the image is a separating algebra of continuous functions).** The image $\Gamma(A)$ is a unital subalgebra of $C_0(\Delta)$ that separates the points of $\Delta$, and it is closed under complex conjugation only in the involutive cases treated later. The transform is surjective onto $C_0(\Delta)$ exactly when $A/\operatorname{rad}(A) \cong C_0(\Delta)$ isometrically, which fails in general.
 
-**Proof.** The image is a subalgebra because $\Gamma$ is a homomorphism, and it separates points by the corollary above. Surjectivity is a special property: the disk algebra has character space the closed disk, but its transform lands in the disc algebra of functions continuous on the disk and analytic on its interior, a proper subalgebra of $C(\Delta)$. $\square$
+**Proof.** The image is a subalgebra because $\Gamma$ is a homomorphism, and it separates points by the corollary above. Surjectivity is a special property: the disk algebra has character space the closed disk, but its transform lands in the disc algebra of functions continuous on the disk and analytic on its interior, a proper subalgebra of $C(\Delta)$.
 
 **Corollary (the closed image and the quotient).** $\Gamma(A)$ is a subalgebra of $C_0(\Delta)$ isomorphic to $A/\operatorname{rad}(A)$, and the transform is a bijection onto its image; its closure in the supremum norm is a commutative Banach algebra isometrically isomorphic to the completion of $A/\operatorname{rad}(A)$ for the spectral norm.
 
-**Proof.** The induced map $A/\operatorname{rad}(A) \to \Gamma(A)$ is an injective homomorphism, and the completion in the supremum norm identifies with the closure of the image. $\square$
+**Proof.** The induced map $A/\operatorname{rad}(A) \to \Gamma(A)$ is an injective homomorphism, and the completion in the supremum norm identifies with the closure of the image.
 
 **Remark (the involutive refinement).** When $A$ carries an involution and satisfies the $\mathrm{C}^*$-identity, the Gelfand transform becomes isometric and surjective, and the abstract commutative $\mathrm{C}^*$-algebra is isometrically ${}^*$-isomorphic to $C_0(\Delta)$; that refinement is *Involutive Banach Algebras and the Gelfand–Naimark Theorem*, later in this category, and *The Involution and the Spectral Radius*. The present article uses no involution, and its transform is only a contraction.
 

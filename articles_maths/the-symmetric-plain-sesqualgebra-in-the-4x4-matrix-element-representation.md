@@ -6,7 +6,7 @@ The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = \tfra
 
 The result that organises the article is that the block is a **scalar matrix** in the model. The value of the product is $\mathsf{M}_4(\tilde P\star\tilde Q) = H(\tilde P,\tilde Q)\,I_4$, of trace $4H$ and rank four; its multiplication operators are the rank-one row matrices computed below; and the two-sided symmetrised operator of a pair of factors is a rank-four operator distinct from the value. The regular model carries the central image of the product to a scalar matrix just as the realization does, but with the dimension of the module in place of the dimension of the coefficient space.
 
-**Boundaries.** The model, the left regular representation, the Hilbert and Schmidt pairing and the tables of the model are *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*; they are cited here and not restated, and this article owns only the image of the block in the model. The form $H$ is *Biquaternion Norm and Invertibility* and *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*; the multiplication operators as abstract operators are *The Multiplication Operators of the Symmetric Plain Sesqualgebra*. Nothing topological and nothing metric appears; positivity is stated as the positivity of the diagonal of $H$ and no norm of positive real values is named.
+**Boundaries.** The model, the left regular representation, the Hilbert and Schmidt pairing and the tables of the model are *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*; they are cited here and not restated, and this article owns only the image of the block in the model. The form $H$ is *Norm and Invertibility in the General Plain Algebra* and *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*; the multiplication operators as abstract operators are *The Multiplication Operators of the Symmetric Plain Sesqualgebra*. Nothing topological and nothing metric appears; positivity is stated as the positivity of the diagonal of $H$ and no norm of positive real values is named.
 
 **Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$. The left regular representation is $\mathsf{M}_4(\tilde P)$, the matrix of $\tilde X\mapsto\tilde P\tilde X$ in the basis, with $\mathsf{M}_4(e_0) = I_4$ and $\mathsf{M}_4(\tilde Q^{\natural})=\mathsf{M}_4(\tilde Q)^{\mathsf T}$; the right regular matrix of an element $\tilde X$ is written $\mathsf{M}_4^{R}(\tilde X)$ (*The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*). The block is $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$.
 
@@ -20,7 +20,7 @@ $$
 
 of trace $4H(\tilde P,\tilde Q)$ and rank $4$ when $H\neq0$, and zero when $H = 0$.
 
-*Proof.* $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ and $\mathsf{M}_4$ is multiplicative with $\mathsf{M}_4(e_0) = I_4$; so the regular matrix of the value is the scalar matrix $H I_4$. Verified on the model. $\square$
+*Proof.* $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ and $\mathsf{M}_4$ is multiplicative with $\mathsf{M}_4(e_0) = I_4$; so the regular matrix of the value is the scalar matrix $H I_4$.
 
 **Proposition (the multiplication operators in the regular model).** The two multiplication operators of the block are rank-one row matrices, in the conjugate-linear convention for the left family:
 
@@ -30,7 +30,7 @@ $$
 
 where $E_{0j}$ is the matrix unit with the single non-zero entry $1$ in row $0$, column $j$; the left matrix acts on the conjugate of the coordinate vector, the map being conjugate-linear. Each operator has rank one for $\tilde R\neq0$, its image is the first coordinate line and its kernel the hyperplane $H(\tilde R,\cdot\,) = 0$.
 
-*Proof.* $L^{\star}_{\tilde R}e_j = \tilde R\star e_j = H(\tilde R,e_j)e_0 = R_je_0$, so the $j$-th column of the matrix is $R_j$ in row $0$; and $R^{\star}_{\tilde R}e_j = e_j\star\tilde R = H(e_j,\tilde R)e_0 = \overline{R_j}e_0$, so the $j$-th column is $\overline{R_j}$ in row $0$. Verified on the model. $\square$
+*Proof.* $L^{\star}_{\tilde R}e_j = \tilde R\star e_j = H(\tilde R,e_j)e_0 = R_je_0$, so the $j$-th column of the matrix is $R_j$ in row $0$; and $R^{\star}_{\tilde R}e_j = e_j\star\tilde R = H(e_j,\tilde R)e_0 = \overline{R_j}e_0$, so the $j$-th column is $\overline{R_j}$ in row $0$.
 
 **Theorem (the symmetrisation and the transpose-halving).** Write $X = \mathsf{M}_4(\tilde P)$ and $Y = \mathsf{M}_4(\tilde Q)$, so that the general plain sesquilinear product has the matrix $XY^{\dagger}$. Then the block is the symmetrisation with the transpose,
 
@@ -40,7 +40,7 @@ $$
 
 the analogue of the adjugate symmetrisation of the realization, with the transpose in place of the adjugate.
 
-*Proof.* $\mathsf{M}_4(\tilde P\tilde Q^{*}) = XY^{\dagger}$ because $\mathsf{M}_4$ is multiplicative and $\mathsf{M}_4(\tilde Q^{*}) = \mathsf{M}_4(\tilde Q)^{\dagger}$; and $\mathsf{M}_4\bigl((\tilde P\tilde Q^{*})^{\natural}\bigr) = (XY^{\dagger})^{\mathsf T}$ because the natural conjugation is carried to the transpose. On a regular matrix $M=\mathsf{M}_4(\tilde X)$ one has $\tfrac12(M+M^{\mathsf T}) = \tfrac12\mathsf{M}_4(\tilde X+\tilde X^{\natural}) = \mathsf{M}_4(X_0e_0) = X_0 I_4$, the average of an element and its natural conjugate being the scalar $X_0e_0$; at $M=XY^{\dagger}=\mathsf{M}_4(\tilde P\tilde Q^{*})$ the scalar is $H(\tilde P,\tilde Q)$, and $\tfrac14\operatorname{Tr}(M)=H(\tilde P,\tilde Q)$ because $\operatorname{Tr}\mathsf{M}_4=4\,\mathrm{Sc}$. Verified on random pairs. $\square$
+*Proof.* $\mathsf{M}_4(\tilde P\tilde Q^{*}) = XY^{\dagger}$ because $\mathsf{M}_4$ is multiplicative and $\mathsf{M}_4(\tilde Q^{*}) = \mathsf{M}_4(\tilde Q)^{\dagger}$; and $\mathsf{M}_4\bigl((\tilde P\tilde Q^{*})^{\natural}\bigr) = (XY^{\dagger})^{\mathsf T}$ because the natural conjugation is carried to the transpose. On a regular matrix $M=\mathsf{M}_4(\tilde X)$ one has $\tfrac12(M+M^{\mathsf T}) = \tfrac12\mathsf{M}_4(\tilde X+\tilde X^{\natural}) = \mathsf{M}_4(X_0e_0) = X_0 I_4$, the average of an element and its natural conjugate being the scalar $X_0e_0$; at $M=XY^{\dagger}=\mathsf{M}_4(\tilde P\tilde Q^{*})$ the scalar is $H(\tilde P,\tilde Q)$, and $\tfrac14\operatorname{Tr}(M)=H(\tilde P,\tilde Q)$ because $\operatorname{Tr}\mathsf{M}_4=4\,\mathrm{Sc}$.
 
 **Remark (the two involutions in the regular model).** The regular model carries both involutions of the product to operations on the matrix: the natural conjugation to the transpose, $\mathsf{M}_4(\tilde Q^{\natural})=\mathsf{M}_4(\tilde Q)^{\mathsf T}$, and the Hermitian conjugation to the conjugate transpose, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$. The two identities hold together because the structure constants of the basis are real, so that conjugate coefficients give conjugate matrices, $\mathsf{M}_4(\overline{\tilde X})=\overline{\mathsf{M}_4(\tilde X)}$: the conjugate transpose is the composition of the transpose and the coefficientwise conjugation, and it is the matrix of ${}^{*}$. The pairing of the two involutions is what makes the value central, the average $\tfrac12(M+M^{\mathsf T})$ being the scalar $X_0I_4$ for a regular matrix.
 
@@ -62,7 +62,7 @@ $$
 
 and the scalar matrix $\mathsf{M}_4(\tilde P\star\tilde Q) = HI_4$ is fixed by conjugation by every invertible matrix of the model; a scalar matrix has no preferred basis, and the symmetric part of the block is therefore invariant under the choice of coordinates in the model.
 
-*Proof.* $\mathsf{M}_4(\tilde P\star\tilde Q) = HI_4 = \overline{\overline{H}I_4} = \overline{\mathsf{M}_4(\tilde Q\star\tilde P)}$ because $H(\tilde Q,\tilde P) = \overline{H(\tilde P,\tilde Q)}$; and $U(HI_4)U^{-1} = HI_4$ for every invertible $U$. Verified on the model. $\square$
+*Proof.* $\mathsf{M}_4(\tilde P\star\tilde Q) = HI_4 = \overline{\overline{H}I_4} = \overline{\mathsf{M}_4(\tilde Q\star\tilde P)}$ because $H(\tilde Q,\tilde P) = \overline{H(\tilde P,\tilde Q)}$; and $U(HI_4)U^{-1} = HI_4$ for every invertible $U$.
 
 **Remark (the value is central).** The same scalar matrix is the image of the block in the regular model, so the block is a **central** element of the matrix algebra $M_4(\mathbb{C})$: its image lies in the centre, which is the scalars. The invariance of the symmetric part is the statement that the image is central, and it is the model form of the central image of the product.
 
@@ -95,7 +95,7 @@ A=\begin{pmatrix}Q_0&-Q_1\\Q_1&Q_0\end{pmatrix},\qquad
 B=\begin{pmatrix}-Q_2&-Q_3\\-Q_3&Q_2\end{pmatrix},
 $$
 
-The general element has trace $4Q_0$ and determinant $N(\tilde Q)^2$.
+The general element has trace $4Q_0$ and determinant $\bigl(\sum_\mu Q_\mu^{2}\bigr)^{2}$.
 
 **The trace-halving, entry by entry.** The two involutions are the conjugate transpose and the transposition, and the identity $M+M^{\mathsf T}=(\operatorname{Tr}M/2)I_4$ of the regular model halves the trace of the conjugate-transposed product, so the value is the scalar matrix
 

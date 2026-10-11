@@ -48,7 +48,7 @@ so the cycle is attracting for $|\lambda| < 1$, parabolic for $|\lambda| = 1$ an
 
 **Proof.** Composing the fibre map over one period multiplies the homogeneous part by $\prod_{k=0}^{p-1} 2x_k = \lambda$; the affine term is the finite sum over one period. The classification by $|\lambda|$ is the real multiplier classification, and the exponential rate is the definition of $\chi$ by the ergodic theorem.
 
-**Example.** For $\gamma = 0$ and the fixed point $x = 1$ the multiplier is $\lambda = 2$, so the fixed point is repelling and the infinitesimal coordinate grows like $2^n$; for the fixed point $x = 0$ the multiplier is $\lambda = 0$, superattracting, and the infinitesimal coordinate is constant after the first step, as in the computation of the previous article; for $\gamma = -1$ the two-cycle $\{0,-1\}$ has multiplier $0\cdot(-2) = 0$, superattracting, and $y_n$ is bounded. The values were recomputed.
+**Example.** For $\gamma = 0$ and the fixed point $x = 1$ the multiplier is $\lambda = 2$, so the fixed point is repelling and the infinitesimal coordinate grows like $2^n$; for the fixed point $x = 0$ the multiplier is $\lambda = 0$, superattracting, and the infinitesimal coordinate is constant after the first step, as in the computation of the previous article; for $\gamma = -1$ the two-cycle $\{0,-1\}$ has multiplier $0\cdot(-2) = 0$, superattracting, and $y_n$ is bounded.
 
 ## The Failure of an Infinitesimal Julia Set
 

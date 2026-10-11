@@ -56,7 +56,7 @@ $$
 \Psi(x,y) = \Phi(y^{*},x^{*}), \qquad \Phi(x,y) = \Psi(y^{*},x^{*}) .
 $$
 
-*Proof.* In the first slot, $\Psi(\lambda x,y) = y^{*}(\lambda x) = \lambda(y^{*}x)$ by the $R$-bilinearity of the product, and $\Psi(x,\lambda y) = (\lambda y)^{*}x = \varsigma(\lambda)y^{*}x$ by the semilinearity of the involution; the two computations for $\Phi$ are the same with the roles of the slots exchanged, $\Phi(\lambda x,y) = (\lambda x)y^{*} = \lambda(xy^{*})$ and $\Phi(x,\lambda y) = x(\lambda y)^{*} = \varsigma(\lambda)(xy^{*})$, so $\Phi$ is $\varsigma$-semilinear in the second slot as required. The Hermitian property is $\Psi(y,x) = x^{*}y$ against $\Psi(x,y)^{*} = (y^{*}x)^{*} = x^{*}y$, using $(uv)^{*} = v^{*}u^{*}$ and $*^{2} = \mathrm{id}$, and $\Phi(y,x) = yx^{*}$ against $\Phi(x,y)^{*} = (xy^{*})^{*} = yx^{*}$. The exchange relation is $\Phi(y^{*},x^{*}) = y^{*}(x^{*})^{*} = y^{*}x = \Psi(x,y)$ and the second identity is the first read with $x, y$ replaced by $x^{*}, y^{*}$. $\square$
+*Proof.* In the first slot, $\Psi(\lambda x,y) = y^{*}(\lambda x) = \lambda(y^{*}x)$ by the $R$-bilinearity of the product, and $\Psi(x,\lambda y) = (\lambda y)^{*}x = \varsigma(\lambda)y^{*}x$ by the semilinearity of the involution; the two computations for $\Phi$ are the same with the roles of the slots exchanged, $\Phi(\lambda x,y) = (\lambda x)y^{*} = \lambda(xy^{*})$ and $\Phi(x,\lambda y) = x(\lambda y)^{*} = \varsigma(\lambda)(xy^{*})$, so $\Phi$ is $\varsigma$-semilinear in the second slot as required. The Hermitian property is $\Psi(y,x) = x^{*}y$ against $\Psi(x,y)^{*} = (y^{*}x)^{*} = x^{*}y$, using $(uv)^{*} = v^{*}u^{*}$ and $*^{2} = \mathrm{id}$, and $\Phi(y,x) = yx^{*}$ against $\Phi(x,y)^{*} = (xy^{*})^{*} = yx^{*}$. The exchange relation is $\Phi(y^{*},x^{*}) = y^{*}(x^{*})^{*} = y^{*}x = \Psi(x,y)$ and the second identity is the first read with $x, y$ replaced by $x^{*}, y^{*}$.
 
 **Remark (the two orientations).** The two forms carry the same datum in the two conventions of the two slots: $\Psi$ is linear in the first slot and $\varsigma$-semilinear in the second, $\Phi$ likewise, and the exchange relation says that applying the involution to both arguments turns one into the other. The convention of the sesqualgebra is the one of $\Psi$ and $\Phi$, and the convention of *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, in which the form $h_c(x,y) = c(x)y$ is semilinear in the first slot, is the same convention read with the arguments exchanged: with $c = *$ that form is $x^{*}y = \Psi(y,x)$.
 
@@ -70,7 +70,7 @@ $$
 
 are Hermitian, $\Psi(x,x)^{*} = \Psi(x,x)$ and $\Phi(x,x)^{*} = \Phi(x,x)$.
 
-*Proof.* $(y^{*}x)^{*} = x^{*}y = \Psi(y,x)$ with $y = x$ gives the first, and $(xx^{*})^{*} = xx^{*} = \Phi(x,x)$ gives the second; the identification $x \star x = xx^{*}$ is the derived product with equal arguments, so the second diagonal is the Hermitian square of *Hermitian Squares and the Algebraic Positive Cone*. $\square$
+*Proof.* $(y^{*}x)^{*} = x^{*}y = \Psi(y,x)$ with $y = x$ gives the first, and $(xx^{*})^{*} = xx^{*} = \Phi(x,x)$ gives the second; the identification $x \star x = xx^{*}$ is the derived product with equal arguments, so the second diagonal is the Hermitian square of *Hermitian Squares and the Algebraic Positive Cone*.
 
 **Proposition (polarisation).** For all $x, y$,
 
@@ -80,7 +80,7 @@ $$
 
 and the same identity holds with $\Phi$ in place of $\Psi$.
 
-*Proof.* The form is additive in each variable, so the left side expands into the four terms, and the two mixed terms are the values of the form on the mixed pairs. $\square$
+*Proof.* The form is additive in each variable, so the left side expands into the four terms, and the two mixed terms are the values of the form on the mixed pairs.
 
 **Remark.** The polarisation displays the two summands $\Psi(x,y)$ and $\Psi(y,x) = \Psi(x,y)^{*}$ into which a scalar form would split, and it is the reason the symmetrised and the antisymmetrised forms of the two slots are the natural companions of the diagonal. A scalar reduction of the identity is the polarisation of the quadratic form of the next section, and the scalar form of the layer is the one of *The Sesquilinear Form and the Conjugation*.
 
@@ -94,7 +94,7 @@ $$
 
 for all $x, y, z \in A$.
 
-*Proof.* Both sides are the same element of $A$: $\Psi(xy,z) = z^{*}(xy) = z^{*}xy$ and $\Psi(y,x^{*}z) = (x^{*}z)^{*}y = z^{*}xy$, the middle equality being the associativity of the underlying product and the semilinearity of the involution. $\square$
+*Proof.* Both sides are the same element of $A$: $\Psi(xy,z) = z^{*}(xy) = z^{*}xy$ and $\Psi(y,x^{*}z) = (x^{*}z)^{*}y = z^{*}xy$, the middle equality being the associativity of the underlying product and the semilinearity of the involution.
 
 **Proposition (the forms and the products coincide).** Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution $*$. Then the derived operation is the $A$-valued form $\Phi$,
 
@@ -104,7 +104,7 @@ $$
 
 and every sesquilinear product $\circ$ on $A$ with the Hermitian property $(x \circ y)^{*} = y \circ x$ is an $A$-valued Hermitian form, and conversely every $A$-valued Hermitian form is a product with that property.
 
-*Proof.* The derived operation is $x \star y = xy^{*}$ by definition, which is $\Phi$; it is additive in each variable and satisfies the two slot rules, so it is an $A$-valued sesquilinear form, and it is Hermitian because $(x \star y)^{*} = (xy^{*})^{*} = yx^{*} = y \star x$. For the converse, a product $\circ$ additive in each variable and satisfying the two slot rules is an $A$-valued sesquilinear form by the definition, and the Hermitian property is exactly the condition displayed, so the two notions coincide. $\square$
+*Proof.* The derived operation is $x \star y = xy^{*}$ by definition, which is $\Phi$; it is additive in each variable and satisfies the two slot rules, so it is an $A$-valued sesquilinear form, and it is Hermitian because $(x \star y)^{*} = (xy^{*})^{*} = yx^{*} = y \star x$. For the converse, a product $\circ$ additive in each variable and satisfying the two slot rules is an $A$-valued sesquilinear form by the definition, and the Hermitian property is exactly the condition displayed, so the two notions coincide.
 
 **Remark.** The theorem is the sense in which a sesqualgebra carries a form and not merely a product: the product **is** the form $\Phi$, the compatibility of the entry holds for the companion $\Psi$ as an identity of the algebra and not as a hypothesis, and the two derivations of the layer, the algebraic one of *Sesqualgebras* and the form-theoretic one, are the same derivation. The sibling statement for the scalar layer is the correspondence of *The Sesquilinear Form and the Conjugation*, and the two are related by the reduction of the next section.
 
@@ -120,7 +120,7 @@ $$
 
 is a sesquilinear form on $A$, compatible with the product in the sense $h_{\varphi}(xy,z) = h_{\varphi}(y,x^{*}z)$, and every compatible form arises from exactly one functional in this way. The passage $\varphi \mapsto \varphi \circ \Psi$ is therefore a bijection from the $R$-linear functionals onto the compatible forms.
 
-*Proof.* The form $h_{\varphi}$ is the composite of the $A$-valued form $\Psi$ with the $R$-linear functional $\varphi$, so it is additive in each variable and inherits the two slot rules from the proposition, and the rest is the correspondence of *The Sesquilinear Form and the Conjugation*, §*The Correspondence*: the injectivity is $\varphi(x) = h_{\varphi}(x,1)$, and the surjectivity is the reconstruction $h(x,y) = h(y^{*}x,1)$ of §*The Reconstruction*. The statement is quoted and not reproved, the theory of the scalar forms being that article's. $\square$
+*Proof.* The form $h_{\varphi}$ is the composite of the $A$-valued form $\Psi$ with the $R$-linear functional $\varphi$, so it is additive in each variable and inherits the two slot rules from the proposition, and the rest is the correspondence of *The Sesquilinear Form and the Conjugation*, §*The Correspondence*: the injectivity is $\varphi(x) = h_{\varphi}(x,1)$, and the surjectivity is the reconstruction $h(x,y) = h(y^{*}x,1)$ of §*The Reconstruction*. The statement is quoted and not reproved, the theory of the scalar forms being that article's.
 
 **Remark.** The proposition separates the two layers of the article: the $A$-valued form $\Psi$ is the universal object, the scalar functional is the measuring device, and the compatible forms of the entry are its scalar reductions. A theory of the scalar forms is therefore a theory of the functionals, which is the reason the classification of *The Sesquilinear Form and the Conjugation* reads on $\varphi$ and not on $h$.
 
@@ -134,7 +134,7 @@ $$
 
 for all $x, y$, exactly when $\varphi$ is central on products, $\varphi(uv) = \varphi(vu)$.
 
-*Proof.* The identity for all $x, y$ is $\varphi(xy^{*}) = \varphi(y^{*}x)$, and since $y \mapsto y^{*}$ is a bijection of $A$, writing $v = y^{*}$ turns it into $\varphi(xv) = \varphi(vx)$ for all $x, v$, which is the centrality; conversely the centrality gives the identity by the same substitution. $\square$
+*Proof.* The identity for all $x, y$ is $\varphi(xy^{*}) = \varphi(y^{*}x)$, and since $y \mapsto y^{*}$ is a bijection of $A$, writing $v = y^{*}$ turns it into $\varphi(xv) = \varphi(vx)$ for all $x, v$, which is the centrality; conversely the centrality gives the identity by the same substitution.
 
 **Remark.** The two $A$-valued forms therefore agree on the scalar side exactly on the central functionals, which is the class for which the trace pairing $\varphi(x,y) = \tau(xy^{*})$ of *The Sesquilinear Adjoint Operator*, §*The Two Parities* coincides with the reduction $h_{\tau}(x,y) = \tau(y^{*}x)$, the sesqui-symmetry $\varphi(y,x) = \varsigma(\varphi(x,y))$ of that section being the Hermitian property read on the pairing; the trace of the matrix model is the model of the class.
 
@@ -150,7 +150,7 @@ $$
 
 the left and the right annihilators of the algebra. Consequently $\Psi$ is nondegenerate exactly when $A$ has no nonzero left annihilator, and $\Phi$ exactly when it has no nonzero right annihilator.
 
-*Proof.* The condition $\Psi(x,y) = y^{*}x = 0$ for every $y$ reads $zx = 0$ for every $z$, because $y \mapsto y^{*}$ is a bijection of $A$, which is $\{x : Ax = 0\}$; the condition $\Phi(x,y) = xy^{*} = 0$ for every $y$ reads $xz = 0$ for every $z$, which is $\{x : xA = 0\}$. The two sets are the annihilators of the statement. $\square$
+*Proof.* The condition $\Psi(x,y) = y^{*}x = 0$ for every $y$ reads $zx = 0$ for every $z$, because $y \mapsto y^{*}$ is a bijection of $A$, which is $\{x : Ax = 0\}$; the condition $\Phi(x,y) = xy^{*} = 0$ for every $y$ reads $xz = 0$ for every $z$, which is $\{x : xA = 0\}$. The two sets are the annihilators of the statement.
 
 **Remark.** The radical of $\Psi$ is the left annihilator, and it is a two-sided ideal: if $Ax = 0$ then $A(xa) = 0$ and $A(ax) = (Aa)x \subseteq Ax = 0$ for every $a$. The radical of $\Phi$ is the right annihilator and is two-sided on the same computation. The two are interchanged by the involution, since $\{x : xA = 0\}^{*} = \{x^{*} : xA = 0\} = \{u : u^{*}A = 0\}$, and the last condition is $\{u : Au = 0\}$ read through the anti-multiplicativity of $*$: the two radicals are the two halves of one set under $*$.
 
@@ -158,7 +158,7 @@ the left and the right annihilators of the algebra. Consequently $\Psi$ is nonde
 
 **Corollary.** An object of full type in the sense of *Sesqualgebras*, §*The Collapse at the Identity* has no nonzero annihilator, so its two forms $\Psi$ and $\Phi$ are nondegenerate; in particular the forms of a unital $R$-algebra with an involution are nondegenerate.
 
-*Proof.* Full type is faithfulness over $R$, generation of $A$ by the products and the vanishing of the annihilator, the clause quoted in the entry as "no nonzero element of $A$ annihilates $A$ on the left". That clause is the vanishing of $\{x : xA = 0\} = \operatorname{rad}(\Phi)$, and the remark above shows that the image of this set under $*$ is $\{u : Au = 0\} = \operatorname{rad}(\Psi)$; since $*$ is a bijection, the two sets vanish together and each of the two forms is nondegenerate. For a unital algebra, taking $z = 1$ in $zx = 0$ and in $xz = 0$ gives $x = 0$ in both cases, so both annihilators are zero. $\square$
+*Proof.* Full type is faithfulness over $R$, generation of $A$ by the products and the vanishing of the annihilator, the clause quoted in the entry as "no nonzero element of $A$ annihilates $A$ on the left". That clause is the vanishing of $\{x : xA = 0\} = \operatorname{rad}(\Phi)$, and the remark above shows that the image of this set under $*$ is $\{u : Au = 0\} = \operatorname{rad}(\Psi)$; since $*$ is a bijection, the two sets vanish together and each of the two forms is nondegenerate. For a unital algebra, taking $z = 1$ in $zx = 0$ and in $xz = 0$ gives $x = 0$ in both cases, so both annihilators are zero.
 
 **Remark (the naming of the two annihilators).** The two sets are named in opposite directions by two usages of the corpus, and the coincidence of their vanishing is what makes the ambiguity harmless. In the sense of *Left and Right Multiplication in a Ring*, §*The annihilators*, the left annihilator is the kernel of the left multiplication, $\{x : Ax = 0\} = \operatorname{rad}(\Psi)$, and the right annihilator is $\{x : xA = 0\} = \operatorname{rad}(\Phi)$; the phrase "no nonzero element of $A$ annihilates $A$ on the left" names the second set by the side on which the multiplication is written, and the two sets are carried onto each other by the involution. Only the vanishing is used below, and it is a property of both forms at once, so nothing depends on which of the two names is read.
 
@@ -172,7 +172,7 @@ $$
 \operatorname{rad}(\Psi_{A/J}) = \{x + J : (A/J)(x + J) = 0\} .
 $$
 
-*Proof.* The value $\Psi(x+j,y) = y^{*}(x+j) = y^{*}x + y^{*}j$ lies in $\Psi(x,y) + J$ because $J$ is a right ideal, and $\Psi(x,y+j') = (y+j')^{*}x = y^{*}x + (j')^{*}x$ lies in $\Psi(x,y) + J$ because $J^{*} = J$ and $J$ is a left ideal, so the descended map is well defined; it is sesquilinear and Hermitian because the operations of $A/J$ are. Its radical is the set of the classes $x + J$ with $(y + J)^{*}(x + J) = 0$ for every $y$, and $(y+J) \mapsto (y+J)^{*}$ is a bijection of the quotient because $J^{*} = J$, so the condition reads $zx = 0$ in $A/J$ for every $z$, which is the stated annihilator. $\square$
+*Proof.* The value $\Psi(x+j,y) = y^{*}(x+j) = y^{*}x + y^{*}j$ lies in $\Psi(x,y) + J$ because $J$ is a right ideal, and $\Psi(x,y+j') = (y+j')^{*}x = y^{*}x + (j')^{*}x$ lies in $\Psi(x,y) + J$ because $J^{*} = J$ and $J$ is a left ideal, so the descended map is well defined; it is sesquilinear and Hermitian because the operations of $A/J$ are. Its radical is the set of the classes $x + J$ with $(y + J)^{*}(x + J) = 0$ for every $y$, and $(y+J) \mapsto (y+J)^{*}$ is a bijection of the quotient because $J^{*} = J$, so the condition reads $zx = 0$ in $A/J$ for every $z$, which is the stated annihilator.
 
 **Remark.** The hypothesis $J^{*} = J$ is what makes the descent possible and is not automatic: for a general two-sided ideal the classes of $x$ and of $x + j$ have different images under $\Psi$, because $y^{*}j$ need not lie in $J$. The invariant ideals are the ones for which the quotient of the entry, §*The Radical Is an Ideal* carries the form, and the radical of the entry, a left ideal of $A$ whose image under $*$ is a right ideal, is exactly the set that must be divided out to make the scalar form nondegenerate.
 
@@ -188,7 +188,7 @@ $$
 
 and the two differ only by the order of the arguments, which is the difference between the convention of *Hermitian Algebras*, semilinear in the first slot, and the sesqualgebra convention, linear in the first.
 
-*Proof.* The sibling's definition with $c = *$ is $h_*(x,y) = x^{*}y$, and $\Psi(y,x) = x^{*}y$ is the proposition at the top of the article. $\square$
+*Proof.* The sibling's definition with $c = *$ is $h_*(x,y) = x^{*}y$, and $\Psi(y,x) = x^{*}y$ is the proposition at the top of the article.
 
 **Remark.** The comparison locates the new content of the sesqualgebra layer: the sibling's forms are attached to an arbitrary anti-involution of a ring and need no sesquilinear product, whereas the forms of this article are attached to the involution of an algebra that carries the sesquilinear product, and the exchange relation is the passage between the two. The three forms of the sibling, reversion, Clifford conjugation and the dagger, are the three anti-involutions of a Clifford algebra; the two forms of this article are the two orientations of the single involution.
 
@@ -202,7 +202,7 @@ $$
 
 both $A$-bilinear, and the reduction $\varphi \circ \Psi$ is the bilinear form $\varphi(yx)$ of *Bilinear Forms* associated with the functional $\varphi$; the two radicals are the two annihilators of the algebra.
 
-*Proof.* With $\varsigma = \mathrm{id}$ the two slot rules coincide and the forms are $A$-bilinear; with $* = \mathrm{id}$ the involution is the identity, so $\Psi(x,y) = yx$ and $\Phi(x,y) = xy$, the two orientations of the multiplication. The reduction is the composite of the product with $\varphi$, which is the form $\varphi(yx)$ of the bilinear layer, and the radicals are the theorem of the previous section with $* = \mathrm{id}$. $\square$
+*Proof.* With $\varsigma = \mathrm{id}$ the two slot rules coincide and the forms are $A$-bilinear; with $* = \mathrm{id}$ the involution is the identity, so $\Psi(x,y) = yx$ and $\Phi(x,y) = xy$, the two orientations of the multiplication. The reduction is the composite of the product with $\varphi$, which is the form $\varphi(yx)$ of the bilinear layer, and the radicals are the theorem of the previous section with $* = \mathrm{id}$.
 
 **Remark.** The collapse is total at the level of the forms: the pair $(\Phi,\Psi)$ becomes the two products of the algebra, the Hermitian property becomes the commutativity of the two orientations, which holds only when $A$ is commutative, and the scalar forms become the forms $\varphi(yx)$ of the bilinear layer. The one thing the collapse does not remove is the asymmetry of the two slots: over a noncommutative algebra the two forms $\Phi$ and $\Psi$ are the two products $xy$ and $yx$, and they agree exactly when the algebra is commutative, which is the bilinear shadow of the exchange relation.
 
@@ -244,7 +244,7 @@ vanishes for every zero divisor, $a = 0$ or $b = 0$. The verdict: an $A$-valued 
 
 ### The Biquaternion Algebra
 
-**Example (the biquaternion algebra).** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star ${}^{*}$ of *Introduction to the General Plain Sesqualgebra of Biquaternions* and let $\varsigma$ be the conjugation. Then $\Psi(P,Q) = Q^{*}P$, the diagonal is $Q^{*}Q$, of scalar part $\sum_{\mu} \lvert Q_{\mu}\rvert^{2}$, and the form is nondegenerate because the algebra is unital and its unit annihilates nothing on the left: the left annihilator vanishes. The verdict: the corpus's own algebra carries the $A$-valued form $\Psi$, whose diagonal is the Hermitian form of *Biquaternion Norm and Invertibility*, with the sum of the modulus squares for scalar part, and whose scalar reduction by the scalar part is the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
+**Example (the biquaternion algebra).** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star ${}^{*}$ of *Introduction to the General Plain Sesqualgebra of Biquaternions* and let $\varsigma$ be the conjugation. Then $\Psi(P,Q) = Q^{*}P$, the diagonal is $Q^{*}Q$, of scalar part $\sum_{\mu} \lvert Q_{\mu}\rvert^{2}$, and the form is nondegenerate because the algebra is unital and its unit annihilates nothing on the left: the left annihilator vanishes. The verdict: the corpus's own algebra carries the $A$-valued form $\Psi$, whose diagonal is the Hermitian form of *Norm and Invertibility in the General Plain Algebra*, with the sum of the modulus squares for scalar part, and whose scalar reduction by the scalar part is the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
 
 ### The Characteristic-Two Case
 

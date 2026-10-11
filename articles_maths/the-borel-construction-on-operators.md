@@ -22,13 +22,13 @@ and the **Borel construction** is the assignment $X\mapsto X_G$; the projection 
 
 **Proposition.** The homotopy quotient is well defined, it is a space over $BG$, and the Borel fibration $X\to X_G\to BG$ is a fibre bundle with fibre $X$ and structure group $G$; the construction preserves disjoint unions and quotients, and it is the total space of the homotopy-theoretic replacement of the action.
 
-*Proof.* The balanced product is the quotient of $EG\times X$ by the diagonal free action of $G$, which is free because $EG$ is free; the projection to $BG$ is the induced map of the quotient and the fibres are the copies of $X$. $\square$
+*Proof.* The balanced product is the quotient of $EG\times X$ by the diagonal free action of $G$, which is free because $EG$ is free; the projection to $BG$ is the induced map of the quotient and the fibres are the copies of $X$.
 
 ### Functoriality and Homotopy Invariance
 
 **Theorem.** The Borel construction is a functor from the $G$-spaces to the spaces over $BG$: a $G$-map $f : X\to Y$ induces a map $f_G : X_G\to Y_G$ over $BG$, and the identities and the composites are preserved; a $G$-homotopy $H : X\times I\to Y$ induces a homotopy $H_G : X_G\times I\to Y_G$ because the interval has the trivial action, so $G$-homotopic maps induce homotopic maps. The construction carries a $G$-homotopy equivalence to a homotopy equivalence, and it is natural for the maps of groups.
 
-*Proof.* The induced map is the descent of $f\times\mathrm{id} : EG\times X\to EG\times Y$, which is well defined because $f$ is equivariant; the composite of two equivariant maps descends to the composite of the induced maps, and the homotopy descends because $I$ has the trivial action and the homotopy is equivariant. $\square$
+*Proof.* The induced map is the descent of $f\times\mathrm{id} : EG\times X\to EG\times Y$, which is well defined because $f$ is equivariant; the composite of two equivariant maps descends to the composite of the induced maps, and the homotopy descends because $I$ has the trivial action and the homotopy is equivariant.
 
 ### The Free Case
 
@@ -40,7 +40,7 @@ $$
 
 and the equivariant cohomology is the cohomology of the quotient; in general the comparison map $X_G\to X/G$ exists and is induced by the projection $EG\to\mathrm{pt}$, and it is an equivalence exactly in the free case.
 
-*Proof.* The projection $EG\times X\to X$ is a map of free $G$-spaces which is an ordinary homotopy equivalence, hence a $G$-homotopy equivalence because both actions are free and the underlying spaces are $G$-CW complexes; descending to the quotient gives the equivalence $X_G\simeq X/G$, and the comparison map is the descent of the projection. $\square$
+*Proof.* The projection $EG\times X\to X$ is a map of free $G$-spaces which is an ordinary homotopy equivalence, hence a $G$-homotopy equivalence because both actions are free and the underlying spaces are $G$-CW complexes; descending to the quotient gives the equivalence $X_G\simeq X/G$, and the comparison map is the descent of the projection.
 
 ## The Borel Construction on Operators
 
@@ -62,13 +62,13 @@ $$
 
 so it is a ring homomorphism $\mathrm{End}_G(C_*(X))\to\mathrm{End}(C_*(X_G))$; on cohomology it induces a ring homomorphism $\mathrm{End}_G(H^*(X;k))\to\mathrm{End}(H_G^*(X;k))$ from the fixed part of the operator algebra of $X$ to the operator algebra of the homotopy quotient.
 
-*Proof.* The operator $T\times\mathrm{id}$ on $EG\times X$ is $G$-equivariant because $T$ is, so it descends to the balanced product; composition is preserved because the balanced product of the composites is the composite of the balanced products, and the naturality is the naturality of the balanced product. $\square$
+*Proof.* The operator $T\times\mathrm{id}$ on $EG\times X$ is $G$-equivariant because $T$ is, so it descends to the balanced product; composition is preserved because the balanced product of the composites is the composite of the balanced products, and the naturality is the naturality of the balanced product.
 
 ### The Operators of the Group
 
 **Theorem.** The image under the Borel construction contains the operators coming from the group: the norm $N=\sum_{g}\rho(g)$ maps to $N_G = \sum_g (\rho(g))_G$, the transfer of a subgroup maps to its transfer in the homotopy quotient, and the multiplications by the invariant classes map to the multiplications by their pullbacks. The image of the action operator $\rho(g)$ is the operator $(\rho(g))_G$ on $X_G$ induced by $g$ acting on the $X$-factor; for a free action the coarse homotopy quotient is $X/G$, on which $\rho(g)$ acts trivially because $g$ is in the deck group, so the image of the group action in the operator algebra of the quotient is trivial exactly on the free part.
 
-*Proof.* Each statement is the functoriality of the previous theorem; the triviality of the action of a deck transformation on the orbit space is the definition of the quotient action, and the transfer is the sum of the action operators over the cosets, whose image is the sum of the images. $\square$
+*Proof.* Each statement is the functoriality of the previous theorem; the triviality of the action of a deck transformation on the orbit space is the definition of the quotient action, and the transfer is the sum of the action operators over the cosets, whose image is the sum of the images.
 
 ### The Operators of the Base
 
@@ -80,7 +80,7 @@ $$
 
 with the base acting through the projection $X_G\to BG$ and the module structure of *Equivariant Cohomology*.
 
-*Proof.* The multiplication by a base class is the pullback along the projection to $BG$, which is not the image under $T\mapsto T_G$ of an operator on $X$ because it raises the filtration by the base degree; the module structure is that of *Equivariant Cohomology*, and the inclusion of the image is proper because the base cohomology is infinite-dimensional for $G$ of order two. $\square$
+*Proof.* The multiplication by a base class is the pullback along the projection to $BG$, which is not the image under $T\mapsto T_G$ of an operator on $X$ because it raises the filtration by the base degree; the module structure is that of *Equivariant Cohomology*, and the inclusion of the image is proper because the base cohomology is infinite-dimensional for $G$ of order two.
 
 ## The Induced Involution
 
@@ -94,13 +94,13 @@ $$
 
 a well-defined involution of $X_{\mathbb{Z}/2}$ covering the identity of $B\mathbb{Z}/2$, so that it acts fibrewise on the fibres of the Borel fibration; it is natural in the space with involution, and it is the image of the generator of the group under the ring homomorphism of the previous section. On a fibre the involution acts by $\sigma$, and the whole structure $(X_{\mathbb{Z}/2},\tau)$ is the Borel construction of the pair $(X,\sigma)$.
 
-*Proof.* The map $\sigma\times\mathrm{id}$ on $EG\times X$ is $\mathbb{Z}/2$-equivariant because the group is abelian, so it descends to the balanced product; the two expressions for $\tau[e,x]$ agree by the balanced relation with the group element $\sigma$, and $\tau^2=\mathrm{id}$ because $\sigma^2=\mathrm{id}$. $\square$
+*Proof.* The map $\sigma\times\mathrm{id}$ on $EG\times X$ is $\mathbb{Z}/2$-equivariant because the group is abelian, so it descends to the balanced product; the two expressions for $\tau[e,x]$ agree by the balanced relation with the group element $\sigma$, and $\tau^2=\mathrm{id}$ because $\sigma^2=\mathrm{id}$.
 
 ### The Free Action and the Triviality of the Involution
 
 **Theorem.** For the free action the equivalence $X_{\mathbb{Z}/2}\simeq X/\sigma$ of the free case carries the induced involution $\tau$ to the map of $X/\sigma$ induced by $\sigma$, which is the identity because $\sigma$ acts trivially on the orbit space; so the induced involution is trivial, up to homotopy, exactly on the free part, and away from it $\tau$ acts with fixed points, whose locus is the homotopy fixed set of the action. On the coarse quotient the induced involution is therefore an obstruction to the freeness of the action: it is homotopic to the identity exactly when the action is free.
 
-*Proof.* The equivalence descends the projection $EG\times X\to X$; on $X$ the automorphism $\sigma$ acts trivially modulo the equivalence relation $x\sim\sigma x$, which defines the orbit space, so the descent of $\tau$ is the identity; conversely, if $\tau$ were homotopic to the identity then the action of $\sigma$ on the fibres would be null in the homotopy of the quotient, which forces the fibres to be orbits, that is the free case. $\square$
+*Proof.* The equivalence descends the projection $EG\times X\to X$; on $X$ the automorphism $\sigma$ acts trivially modulo the equivalence relation $x\sim\sigma x$, which defines the orbit space, so the descent of $\tau$ is the identity; conversely, if $\tau$ were homotopic to the identity then the action of $\sigma$ on the fibres would be null in the homotopy of the quotient, which forces the fibres to be orbits, that is the free case.
 
 ### The Homotopy Quotient of the Induced Involution
 
@@ -112,7 +112,7 @@ $$
 
 with the first factor of the square acting trivially on $X$ and the second acting by $\sigma$; the iterated construction therefore computes the equivariant cohomology of a group of order four from the involution, and the operators of the two factors are the two commuting involutions on the homotopy quotient. The fixed points of $\tau$ and its homotopy fixed set in the sense of the homotopy limit are the invariants of this square action, and their calculation belongs to the equivariant cohomology of *Equivariant Cohomology*.
 
-*Proof.* The balanced products associate: $(E\times_{\mathbb{Z}/2}(E'\times_{\mathbb{Z}/2}X))\cong(E\times E')\times_{(\mathbb{Z}/2)^2}X$, and $E\times E'$ is a free contractible $(\mathbb{Z}/2)^2$-space; the action of the second factor on $X$ is the given involution and the first acts trivially, which is the stated group action. $\square$
+*Proof.* The balanced products associate: $(E\times_{\mathbb{Z}/2}(E'\times_{\mathbb{Z}/2}X))\cong(E\times E')\times_{(\mathbb{Z}/2)^2}X$, and $E\times E'$ is a free contractible $(\mathbb{Z}/2)^2$-space; the action of the second factor on $X$ is the given involution and the first acts trivially, which is the stated group action.
 
 ## The Simplicial Model and the Module Structure
 
@@ -126,7 +126,7 @@ $$
 
 up to the natural quasi-isomorphism; the Borel construction of an operator $T$ is the induced map $\mathrm{id}\otimes_{k[G]}T$, so the operator theory is the algebra of the balanced tensor product and the computations are the computations of the bar construction.
 
-*Proof.* The realisation of the diagonal of the bisimplicial space is the balanced product of the realisations, which is the homotopy quotient; the chains of the balanced product are the balanced tensor product of the chains by the Eilenberg–Zilber theorem, and the induced map of an equivariant operator is the balanced tensor with $T$. $\square$
+*Proof.* The realisation of the diagonal of the bisimplicial space is the balanced product of the realisations, which is the homotopy quotient; the chains of the balanced product are the balanced tensor product of the chains by the Eilenberg–Zilber theorem, and the induced map of an equivariant operator is the balanced tensor with $T$.
 
 ### The $E^2$ Page
 
@@ -138,7 +138,7 @@ $$
 
 the group cohomology with coefficients in the cohomology of the fibre, and it converges to $H_G^*(X;k)$; for the trivial action and the field of coefficients it reduces to the tensor product $H^p(BG;k)\otimes H^q(X;k)$ under the Künneth hypothesis, and the Borel construction of an operator acts on the pages as the induced map on the coefficient modules. The spectral sequence is that of *The Leray–Serre Spectral Sequence*, with the local system of the fibre cohomology along the base.
 
-*Proof.* The Serre spectral sequence of the fibration $X\to X_G\to BG$ has $E_2^{p,q}=H^p(BG;\mathcal H^q(X;k))$ with the local system $\mathcal H^q(X;k)$; the local system is the module $H^q(X;k)$ with the action of the fundamental group $G$, and its cohomology is the group cohomology, which is the stated page. $\square$
+*Proof.* The Serre spectral sequence of the fibration $X\to X_G\to BG$ has $E_2^{p,q}=H^p(BG;\mathcal H^q(X;k))$ with the local system $\mathcal H^q(X;k)$; the local system is the module $H^q(X;k)$ with the action of the fundamental group $G$, and its cohomology is the group cohomology, which is the stated page.
 
 ### The Module Structure
 
@@ -150,17 +150,17 @@ $$
 
 hence the image of the fixed part of the operator algebra of $X$ lies in the endomorphisms of $H_G^*(X;k)$ that are linear over $H^*(BG;k)$, an algebra that contains the base multiplications and acts on the equivariant cohomology.
 
-*Proof.* The module structure is the pullback along $X_G\to BG$ and the cup product; the linearity of $T_G$ follows because $T_G$ commutes with the projection to $BG$ as a map over the base, so it pulls the base classes back to themselves. $\square$
+*Proof.* The module structure is the pullback along $X_G\to BG$ and the cup product; the linearity of $T_G$ follows because $T_G$ commutes with the projection to $BG$ as a map over the base, so it pulls the base classes back to themselves.
 
 **Corollary.** For the trivial action the homotopy quotient is $X\times BG$ up to homotopy and the induced involution acts on the base factor while the Borel construction of an operator of $X$ acts on the other factor; the two families of operators commute, and the equivariant cohomology is the tensor product of the two cohomologies under the Künneth hypothesis.
 
-*Proof.* The trivial action splits the balanced product as $X\times BG$; the induced involution is the identity on the first factor and the free involution on the second, and an operator of $X$ is the identity on the second. $\square$
+*Proof.* The trivial action splits the balanced product as $X\times BG$; the induced involution is the identity on the first factor and the free involution on the second, and an operator of $X$ is the identity on the second.
 
 ## The Comparison and the Localisation
 
 **Theorem.** The comparison map $X_G\to X/G$ induces a map $H^*(X/G;k)\to H_G^*(X;k)$ which is an isomorphism for a free action when two is invertible in $k$, and whose kernel and cokernel are computed by the fixed set through the localisation of *Equivariant Cohomology*; the Borel construction is the free replacement of the action, and the failure of the comparison to be an equivalence is exactly the fixed-point contribution of the equivariant cohomology.
 
-*Proof.* The comparison map is the descent of the projection $EG\to\mathrm{pt}$, and for a free action the projection is a $G$-homotopy equivalence by the free case of the article; in general the discrepancy is the fixed set by the localisation theorem of *Equivariant Cohomology*, whose operator form is the ring homomorphism of the previous section. $\square$
+*Proof.* The comparison map is the descent of the projection $EG\to\mathrm{pt}$, and for a free action the projection is a $G$-homotopy equivalence by the free case of the article; in general the discrepancy is the fixed set by the localisation theorem of *Equivariant Cohomology*, whose operator form is the ring homomorphism of the previous section.
 
 ## Examples
 

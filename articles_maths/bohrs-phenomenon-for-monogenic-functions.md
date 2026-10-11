@@ -55,7 +55,7 @@ $$
 2\sqrt{\frac{\pi}{3}}\Big(2\sqrt{\frac{\pi}{3}} - a_0^0\Big) = \frac{4\pi}{3}\big(1 - \operatorname{Sc}f(0)\big),
 $$
 
-so the two printed forms are the same factor. Both normalisations were recomputed here.
+so the two printed forms are the same factor.
 
 **The role of the orthogonality.** The hypothesis that $f - f(0)$ be orthogonal to the hyperholomorphic constants is not a technical convenience: the constants form a subspace of dimension $2$ in every degree rather than the single function $1$ of the complex case, and the estimate of a coefficient by the value at the origin fails if the constant part is not removed. This is the same obstruction that the decomposition theorem removes, and it is the reason the general statement below is made for functions orthogonal to the constants.
 
@@ -119,7 +119,7 @@ $$
 \sum_{n\ge 1} n^2(n+1)(n+2)r^{n-1} = \frac{6(1+3r)}{(1-r)^5},
 $$
 
-since $n^2(n+1)(n+2) = n^4+3n^3+2n^2$ and the four Euler sums combine to $6(1+3r)/(1-r)^5$; the factor $\tfrac43$ then turns it into $8(3r+1)/(1-r)^5$ exactly. This closed form was recomputed here symbolically, term by term, so no numerical constant of the theorem is left undetermined.
+since $n^2(n+1)(n+2) = n^4+3n^3+2n^2$ and the four Euler sums combine to $6(1+3r)/(1-r)^5$; the factor $\tfrac43$ then turns it into $8(3r+1)/(1-r)^5$ exactly.
 
 **What the estimate says.** It bounds the hypercomplex derivative of a monogenic function by the supremum of the function on the ball and by the scalar part of the function at the origin, and it is the inequality that makes the Bohr sums converge to a value below one on a fixed ball. It differs in kind from the estimate of the companion Bloch article, which bounds the oscillation of the hypercomplex derivative, $\lvert \tfrac12\bar Df(\tilde q) - \tfrac12\bar Df(0)\rvert$, by the maximum modulus of the derivative itself; the present inequality bounds the derivative of $f$ by the modulus of $f$, and it is its growth factor $(1-r)^{-5}$ that the Bohr radius must absorb.
 

@@ -21,7 +21,7 @@ $$
 
 and for a homogeneous operator $T$ of parity $|T|$ the transpose has the same parity, $\varepsilon T^\#\varepsilon = (-1)^{|T|}T^\#$.
 
-**Proof.** For homogeneous $v,w$, $B(\varepsilon v,w) = (-1)^{|v|}B(v,w)$ and $B(v,\varepsilon w) = (-1)^{|w|}B(v,w)$; an even form pairs equal parities and an odd form opposite parities, which gives the two cases for $\varepsilon^\#$, and the parity of the transpose follows from $B(\varepsilon Tv,w) = (-1)^{|v|+|T|}B(Tv,w) = (-1)^{|T|}B(v,T^\#w)$ compared with $B(\varepsilon Tv,w) = B(Tv,\varepsilon^\#w)$. $\square$
+**Proof.** For homogeneous $v,w$, $B(\varepsilon v,w) = (-1)^{|v|}B(v,w)$ and $B(v,\varepsilon w) = (-1)^{|w|}B(v,w)$; an even form pairs equal parities and an odd form opposite parities, which gives the two cases for $\varepsilon^\#$, and the parity of the transpose follows from $B(\varepsilon Tv,w) = (-1)^{|v|+|T|}B(Tv,w) = (-1)^{|T|}B(v,T^\#w)$ compared with $B(\varepsilon Tv,w) = B(Tv,\varepsilon^\#w)$.
 
 **Theorem (the sign rule for the transpose).** For a homogeneous operator $T$ and a homogeneous graded form, the transpose is characterised by
 
@@ -31,7 +31,7 @@ $$
 
 with $q = 0$ for an even form and $q = 1$ for an odd form; the sign is the product of the parity of the operator and the parity of the form.
 
-**Proof.** The case $q = 0$ is the definition; for $q = 1$ it follows from the anti-self-adjointness of $\varepsilon$ by the computation of the proposition, and both are extended by linearity to the homogeneous decomposition. $\square$
+**Proof.** The case $q = 0$ is the definition; for $q = 1$ it follows from the anti-self-adjointness of $\varepsilon$ by the computation of the proposition, and both are extended by linearity to the homogeneous decomposition.
 
 ## The Adjoint Action on the Endomorphisms
 
@@ -49,11 +49,11 @@ $$
 
 and it preserves the parity, $|a\cdot T| = |T|$.
 
-**Proof.** The action property is the standard conjugation identity $(ab)\cdot T = a\cdot(b\cdot T)$ with $ab$ written multiplicatively in $\mathcal{A}$; the compatibility is $\varepsilon\,\pi(a)\,T\,\pi(a)^{-1}\,\varepsilon = \pi(\alpha(a))\,\varepsilon T\varepsilon\,\pi(\alpha(a))^{-1}$, using $\varepsilon\pi(a)\varepsilon = \pi(\alpha(a))$ twice; the parity is preserved because conjugation by any invertible operator and the twist $\sigma$ preserve homogeneous degree. $\square$
+**Proof.** The action property is the standard conjugation identity $(ab)\cdot T = a\cdot(b\cdot T)$ with $ab$ written multiplicatively in $\mathcal{A}$; the compatibility is $\varepsilon\,\pi(a)\,T\,\pi(a)^{-1}\,\varepsilon = \pi(\alpha(a))\,\varepsilon T\varepsilon\,\pi(\alpha(a))^{-1}$, using $\varepsilon\pi(a)\varepsilon = \pi(\alpha(a))$ twice; the parity is preserved because conjugation by any invertible operator and the twist $\sigma$ preserve homogeneous degree.
 
 **Corollary (the twisted action appears).** Reading the compatibility on the module rather than on the endomorphisms, the grading involution interchanges the given action and the twisted action, $\varepsilon\pi(a) = \pi(\alpha(a))\varepsilon$, which is the sign rule of *The Graded Action on a Module over the Group Algebra*; the adjoint action of $a$ on the endomorphisms equals the given action of $a$ composed with the inverse of the given action of $a$, and the twisted adjoint action is its $\alpha$-transport.
 
-**Proof.** The interchange identity is $\varepsilon\pi(a)\varepsilon = \pi(\alpha(a))$ composed on the right with $\varepsilon$; the description of the adjoint action is its definition, and the twisted version is obtained by replacing $a$ with $\alpha(a)$. $\square$
+**Proof.** The interchange identity is $\varepsilon\pi(a)\varepsilon = \pi(\alpha(a))$ composed on the right with $\varepsilon$; the description of the adjoint action is its definition, and the twisted version is obtained by replacing $a$ with $\alpha(a)$.
 
 ## The Hilbert Adjoint and the Involution
 
@@ -65,17 +65,17 @@ $$
 
 so the adjoint action of a unitary element preserves self-adjointness, positivity and unitarity.
 
-**Proof.** $(a\cdot T)^* = (\pi(a)T\pi(a)^{-1})^* = \pi(a)^{-1*}T^*\pi(a)^* = \pi(a)T^*\pi(a)^{-1}$ when $\pi(a)^* = \pi(a)^{-1}$; positivity is preserved because $a\cdot T = \pi(a)T\pi(a)^*$ is a `*`-congruence, and unitarity because the map is a `*`-automorphism of $\mathrm{End}(M)$. $\square$
+**Proof.** $(a\cdot T)^* = (\pi(a)T\pi(a)^{-1})^* = \pi(a)^{-1*}T^*\pi(a)^* = \pi(a)T^*\pi(a)^{-1}$ when $\pi(a)^* = \pi(a)^{-1}$; positivity is preserved because $a\cdot T = \pi(a)T\pi(a)^*$ is a `*`-congruence, and unitarity because the map is a `*`-automorphism of $\mathrm{End}(M)$.
 
 **Corollary (the grading and the Hilbert adjoint).** If the two summands $M^\pm$ are orthogonal and $\pi$ is `*`-compatible, then the grading involution is self-adjoint, $\varepsilon^* = \varepsilon$, and it commutes with the adjoint action, $\varepsilon(a\cdot T)\varepsilon = (a\cdot(\varepsilon T\varepsilon))$; the signs of the graded forms of the previous section are then the signs read off the orthogonal decomposition.
 
-**Proof.** Orthogonality of $M^\pm$ makes the projection $\varepsilon$ self-adjoint; the commutation with the adjoint action is the compatibility of the action with the grading, and the identification of the signs is the proposition on graded forms in the Hilbert-space case. $\square$
+**Proof.** Orthogonality of $M^\pm$ makes the projection $\varepsilon$ self-adjoint; the commutation with the adjoint action is the compatibility of the action with the grading, and the identification of the signs is the proposition on graded forms in the Hilbert-space case.
 
 ## The Degenerate Cases
 
 **Theorem (trivial and inner grade involutions).** If $\alpha = \mathrm{id}$ then the given and the twisted actions coincide and the adjoint action is the ordinary conjugation, $\varepsilon$ commuting with everything; if $\alpha = c_z$ is inner then the twisted action is the transport of the given action by $z$ and the compatibility reduces to the conjugation by $z$. In both cases the parity bookkeeping collapses.
 
-**Proof.** With $\alpha = \mathrm{id}$, $\varepsilon$ is central and $\pi(\alpha(a)) = \pi(a)$; with $\alpha = c_z$, $\pi(\alpha(a)) = \pi(z)\pi(a)\pi(z)^{-1}$, which gives the stated transport and compatibility. $\square$
+**Proof.** With $\alpha = \mathrm{id}$, $\varepsilon$ is central and $\pi(\alpha(a)) = \pi(a)$; with $\alpha = c_z$, $\pi(\alpha(a)) = \pi(z)\pi(a)\pi(z)^{-1}$, which gives the stated transport and compatibility.
 
 **Remark (what the article does not do).** The adjoint of a convolution operator on its own terms, its expression on $L^p$ and the involutive algebra of convolution operators are *The Adjoint of a Convolution Operator*, the last article of this group; the abstract graded adjoint action over a graded algebra and the graded module over a topological group are the Part I and Part II articles of the same name; the graded forms of this article are not the Hermitian forms of the `- * Theory` group, which are conjugate-linear and are treated in *Hermitian Forms and the Group Algebra*.
 

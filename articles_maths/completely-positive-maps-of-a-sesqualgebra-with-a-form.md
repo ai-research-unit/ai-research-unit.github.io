@@ -32,7 +32,7 @@ $$
 
 and the two sides are equal as elements of $A$.
 
-*Proof.* The linearity is the linearity of the two multiplications. The identity is the computation $a y^{*}y a^{*} = (ya^{*})^{*}(ya^{*})$, using $(ya^{*})^{*} = a y^{*}$; the right side is a Hermitian square, hence positive, so the sandwich carries the generators of the cone into the cone, and it carries their sums into sums by its additivity. $\square$
+*Proof.* The linearity is the linearity of the two multiplications. The identity is the computation $a y^{*}y a^{*} = (ya^{*})^{*}(ya^{*})$, using $(ya^{*})^{*} = a y^{*}$; the right side is a Hermitian square, hence positive, so the sandwich carries the generators of the cone into the cone, and it carries their sums into sums by its additivity.
 
 **Remark (the positivity of the map is not the positivity of the operator).** The proposition is a statement about the **order** of the algebra and not about the sign of the form: $\Theta_{a}$ is order-positive for every $a$, while it is a positive *operator*, $h(\Theta_{a}x,x) \geq 0$ for all $x$, only under further hypotheses. It is self-adjoint for the form only when $a$ is Hermitian, and even then it need not be positive: on $M_{2}(\mathbb{C})$ with the trace form take $a = \operatorname{diag}(1,-1)$ and $x = E_{12}$, so that $\Theta_{a}(x) = -E_{12}$ and $h(\Theta_{a}x,x) = -1$. The two notions of positivity — the order of the cone and the sign of the form — are distinct, and the interest of the completely positive maps is that they belong to the first.
 
@@ -54,7 +54,7 @@ $$
 h_{n}(XY,Z) = \sum_{i,j,k} h(x_{ik}y_{kj}, z_{ij}) = \sum_{i,j,k} h(y_{kj}, x_{ik}^{*}z_{ij}) = h_{n}(Y, X^{*}Z) ,
 $$
 
-which is the compatibility of $h_{n}$. For the nonsingularity, an element of the radical of $h_{n}$ tested against the matrices with a single nonzero entry has every entry in the radical of $h$, so the radical of $h_{n}$ vanishes when that of $h$ does. $\square$
+which is the compatibility of $h_{n}$. For the nonsingularity, an element of the radical of $h_{n}$ tested against the matrices with a single nonzero entry has every entry in the radical of $h$, so the radical of $h_{n}$ vanishes when that of $h$ does.
 
 ### The Definition
 
@@ -76,7 +76,7 @@ $$
 \Theta_{a} \otimes \mathrm{id}_{n} = \Theta_{\operatorname{diag}(a,\dots,a)} .
 $$
 
-*Proof.* The amplification acts entrywise, $(\Theta_{a} \otimes \mathrm{id}_{n})(x_{ij}) = (a x_{ij}a^{*})$, and the sandwich by the diagonal matrix $\tilde a = \operatorname{diag}(a,\dots,a)$ is $(\tilde a X \tilde a^{*})_{ij} = a x_{ij}a^{*}$, which is the same. The amplified sandwich is positive by the positivity of the sandwich applied to $M_{n}(A)$ with the form $h_{n}$, whose cone is the cone of that algebra. $\square$
+*Proof.* The amplification acts entrywise, $(\Theta_{a} \otimes \mathrm{id}_{n})(x_{ij}) = (a x_{ij}a^{*})$, and the sandwich by the diagonal matrix $\tilde a = \operatorname{diag}(a,\dots,a)$ is $(\tilde a X \tilde a^{*})_{ij} = a x_{ij}a^{*}$, which is the same. The amplified sandwich is positive by the positivity of the sandwich applied to $M_{n}(A)$ with the form $h_{n}$, whose cone is the cone of that algebra.
 
 **Corollary (the sandwich is a channel of Kraus rank one).** The sandwich is the composition of the left multiplication and the right multiplication of *The Adjoint under a Hermitian Form*, §*The Multiplications*, $\Theta_{a} = m_{a} \circ R_{a}$ with $m_{a}(x) = ax$ and $R_{a}(x) = xa^{*}$,
 
@@ -86,7 +86,7 @@ $$
 
 and its adjoint for the form is $\Theta_{a}^{\dagger} = \Theta_{a^{*}}$, so the sandwich is self-adjoint as an operator exactly when $a$ is Hermitian, while it is a positive map for every $a$.
 
-*Proof.* The composition is $x \mapsto a(xa^{*}) = axa^{*}$, which is the sandwich. The adjoint is $R_{a}^{\dagger}m_{a}^{\dagger} = R_{a^{*}}m_{a^{*}}$, which is $x \mapsto a^{*}xa = \Theta_{a^{*}}(x)$, using the adjoint formulas $m_{x}^{\dagger} = m_{x^{*}}$, $R_{b}^{\dagger} = R_{b^{*}}$. $\square$
+*Proof.* The composition is $x \mapsto a(xa^{*}) = axa^{*}$, which is the sandwich. The adjoint is $R_{a}^{\dagger}m_{a}^{\dagger} = R_{a^{*}}m_{a^{*}}$, which is $x \mapsto a^{*}xa = \Theta_{a^{*}}(x)$, using the adjoint formulas $m_{x}^{\dagger} = m_{x^{*}}$, $R_{b}^{\dagger} = R_{b^{*}}$.
 
 ## Choi's Theorem and the Kraus Form
 
@@ -102,7 +102,7 @@ The matrices $V_{i}$ are the **Kraus operators** and the least $r$ is the **Krau
 
 **Theorem (the Kraus form is completely positive).** Every Kraus map is positive and completely positive.
 
-*Proof.* The Kraus map is a sum of sandwiches $\Theta_{V_{i}}$, each of which is completely positive by the theorem above, and a sum of positive maps is positive. For the amplification, $(\varphi \otimes \mathrm{id}_{m})(X) = \sum_{i}(1_{m}\otimes V_{i})X(1_{m}\otimes V_{i})^{*}$ in the identification $M_{m}(M_{n}(\mathbb{C})) \cong M_{mn}(\mathbb{C})$, which is a Kraus map again, hence positive. $\square$
+*Proof.* The Kraus map is a sum of sandwiches $\Theta_{V_{i}}$, each of which is completely positive by the theorem above, and a sum of positive maps is positive. For the amplification, $(\varphi \otimes \mathrm{id}_{m})(X) = \sum_{i}(1_{m}\otimes V_{i})X(1_{m}\otimes V_{i})^{*}$ in the identification $M_{m}(M_{n}(\mathbb{C})) \cong M_{mn}(\mathbb{C})$, which is a Kraus map again, hence positive.
 
 ### Choi's Theorem in the Model
 
@@ -114,7 +114,7 @@ $$
 
 the block matrix whose positivity is the complete positivity of $\varphi$ and whose rank is the least number of Kraus operators.
 
-*Proof.* The theorem is the finite-dimensional Choi–Kraus theorem for a map of a matrix algebra. The reconstruction $\varphi(X) = \sum_{i,j}X_{ij}\varphi(E_{ij})$ shows that $\varphi$ is determined by the images of the matrix units, and the columns of the Choi matrix are those images arranged in blocks; a decomposition $C_{\varphi} = VV^{*}$ with $V$ of $r$ columns reads the columns of $V$ as the Kraus operators, and the positivity of $C_{\varphi}$ is the existence of such a decomposition by the spectral theorem. $\square$
+*Proof.* The theorem is the finite-dimensional Choi–Kraus theorem for a map of a matrix algebra. The reconstruction $\varphi(X) = \sum_{i,j}X_{ij}\varphi(E_{ij})$ shows that $\varphi$ is determined by the images of the matrix units, and the columns of the Choi matrix are those images arranged in blocks; a decomposition $C_{\varphi} = VV^{*}$ with $V$ of $r$ columns reads the columns of $V$ as the Kraus operators, and the positivity of $C_{\varphi}$ is the existence of such a decomposition by the spectral theorem.
 
 **Example (the sandwich has rank one).** The Choi matrix of the sandwich $\Theta_{a}$ on $M_{n}(\mathbb{C})$ is the rank-one matrix $\lvert a\rangle\langle a\rvert$ in the vectorised basis, $C_{\Theta_{a}} = \mathrm{vec}(a)\,\mathrm{vec}(a)^{*}$, so the Kraus rank of the sandwich is one and every completely positive map of the model is a sum of sandwiches. The example is the reason the sandwich is the elementary completely positive map of the layer.
 
@@ -122,7 +122,7 @@ the block matrix whose positivity is the complete positivity of $\varphi$ and wh
 
 **Theorem (the transpose).** The transpose $\varphi(X) = X^{T}$ of $M_{2}(\mathbb{C})$ is positive and not completely positive.
 
-*Proof.* The transpose is positive: $X \geq 0$ implies $X^{T} \geq 0$. Its Choi matrix in the basis of the matrix units is $\sum_{i,j}E_{ij} \otimes E_{ij}^{T} = \sum_{i,j}E_{ij}\otimes E_{ji}$, the flip operator, whose eigenvalues are $+1$ on the symmetric part and $-1$ on the antisymmetric part; the negative eigenvalue makes the Choi matrix not positive semi-definite, so by Choi's theorem the map is not completely positive. $\square$
+*Proof.* The transpose is positive: $X \geq 0$ implies $X^{T} \geq 0$. Its Choi matrix in the basis of the matrix units is $\sum_{i,j}E_{ij} \otimes E_{ij}^{T} = \sum_{i,j}E_{ij}\otimes E_{ji}$, the flip operator, whose eigenvalues are $+1$ on the symmetric part and $-1$ on the antisymmetric part; the negative eigenvalue makes the Choi matrix not positive semi-definite, so by Choi's theorem the map is not completely positive.
 
 ## Channels with a Form
 
@@ -136,13 +136,13 @@ $$
 
 so the sandwich is **unital**, $\Theta_{a}(1) = 1$, exactly when $a a^{*} = 1$; it is **multiplicative**, $\Theta_{a}(xy) = \Theta_{a}(x)\Theta_{a}(y)$, as soon as $a^{*}a = 1$, and in the matrix model the converse holds for $a \neq 0$; and it is an **automorphism** of the algebra exactly when $a$ is unitary, in which case $\Theta_{a} = \alpha_{a}$ is the inner automorphism by $a$.
 
-*Proof.* The two identities are the definitions. If $a^{*}a = 1$ then $\Theta_{a}(x)\Theta_{a}(y) = a x (a^{*}a) y a^{*} = axya^{*} = \Theta_{a}(xy)$, so the sandwich is multiplicative. Conversely in the matrix model a nonzero multiplicative sandwich is a nonzero endomorphism of $M_{n}(\mathbb{C})$, hence injective because the matrix algebra is simple, and injectivity of $\Theta_{a}$ forces $a$ invertible: if $av = 0$ for some $v \neq 0$, then $\Theta_{a}(vw^{*}) = avw^{*}a^{*} = 0$ for every $w$. Then $a^{*}a = 1$, and an invertible $a$ with $a^{*}a = 1$ is unitary. Multiplicativity alone does not force $a^{*}a = 1$ in a general object, the zero sandwich $\Theta_{0} = 0$ being multiplicative with $0^{*}0 = 0$; the two conditions are often conflated, and the reader is warned. The unitary case is the conjunction of $aa^{*} = 1$ and $a^{*}a = 1$, and then $\Theta_{a}(x) = axa^{*} = axa^{-1}$ is the inner automorphism of *The Adjoint under a Hermitian Form*, §*The Inner Automorphisms*; conversely an automorphism is a bijective sandwich, so $a$ is invertible with $a^{*}a = 1$, that is $a$ is unitary. $\square$
+*Proof.* The two identities are the definitions. If $a^{*}a = 1$ then $\Theta_{a}(x)\Theta_{a}(y) = a x (a^{*}a) y a^{*} = axya^{*} = \Theta_{a}(xy)$, so the sandwich is multiplicative. Conversely in the matrix model a nonzero multiplicative sandwich is a nonzero endomorphism of $M_{n}(\mathbb{C})$, hence injective because the matrix algebra is simple, and injectivity of $\Theta_{a}$ forces $a$ invertible: if $av = 0$ for some $v \neq 0$, then $\Theta_{a}(vw^{*}) = avw^{*}a^{*} = 0$ for every $w$. Then $a^{*}a = 1$, and an invertible $a$ with $a^{*}a = 1$ is unitary. Multiplicativity alone does not force $a^{*}a = 1$ in a general object, the zero sandwich $\Theta_{0} = 0$ being multiplicative with $0^{*}0 = 0$; the two conditions are often conflated, and the reader is warned. The unitary case is the conjunction of $aa^{*} = 1$ and $a^{*}a = 1$, and then $\Theta_{a}(x) = axa^{*} = axa^{-1}$ is the inner automorphism of *The Adjoint under a Hermitian Form*, §*The Inner Automorphisms*; conversely an automorphism is a bijective sandwich, so $a$ is invertible with $a^{*}a = 1$, that is $a$ is unitary.
 
 ### The Unitary Channels
 
 **Theorem (the unitary channels form a group).** The assignment $u \mapsto \Theta_{u}$ is a homomorphism from the unitary group $U(A,h)$ into the group of the $*$-automorphisms of $A$; its image is the group of the inner automorphisms by the unitary elements, and each $\Theta_{u}$ is a completely positive channel that is **unitary as an operator of the form**, hence preserves the form, $h(\Theta_{u}x,\Theta_{u}y) = h(x,y)$.
 
-*Proof.* The composition law $\Theta_{u}\Theta_{v} = \Theta_{uv}$ is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* read in the sesquilinear layer, and it is the same identity as the multiplicativity above; each $\Theta_{u}$ preserves the involution, $\Theta_{u}(x^{*}) = ux^{*}u^{*} = (uxu^{*})^{*} = \Theta_{u}(x)^{*}$, so it is a $*$-automorphism, and it is inner because $u$ is invertible. For the form, the adjoint of the sandwich is $\Theta_{u}^{\dagger} = \Theta_{u^{*}}$ by the corollary above, so $\Theta_{u}^{\dagger}\Theta_{u} = \Theta_{u^{*}}\Theta_{u} = \Theta_{u^{*}u} = \Theta_{1} = \mathrm{id}$ and symmetrically $\Theta_{u}\Theta_{u}^{\dagger} = \mathrm{id}$; the operator $\Theta_{u}$ is therefore unitary in the sense of *Unitary and Isometric Operators of the Form*, §*The Equivalences*, and a unitary operator preserves the form by its definition. $\square$
+*Proof.* The composition law $\Theta_{u}\Theta_{v} = \Theta_{uv}$ is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* read in the sesquilinear layer, and it is the same identity as the multiplicativity above; each $\Theta_{u}$ preserves the involution, $\Theta_{u}(x^{*}) = ux^{*}u^{*} = (uxu^{*})^{*} = \Theta_{u}(x)^{*}$, so it is a $*$-automorphism, and it is inner because $u$ is invertible. For the form, the adjoint of the sandwich is $\Theta_{u}^{\dagger} = \Theta_{u^{*}}$ by the corollary above, so $\Theta_{u}^{\dagger}\Theta_{u} = \Theta_{u^{*}}\Theta_{u} = \Theta_{u^{*}u} = \Theta_{1} = \mathrm{id}$ and symmetrically $\Theta_{u}\Theta_{u}^{\dagger} = \mathrm{id}$; the operator $\Theta_{u}$ is therefore unitary in the sense of *Unitary and Isometric Operators of the Form*, §*The Equivalences*, and a unitary operator preserves the form by its definition.
 
 **Remark (channels and states).** The positive maps of the layer are the order-preserving maps of the cone, the completely positive ones the maps whose amplifications are order-preserving, and the unital ones are the **channels**; the composition of two channels is a channel, the identity is a channel, and the unitary channels are the invertible ones. The order-theoretic refinement of the layer is the statement that the channels form a monoid and the unitary channels a subgroup, and it is the noncommutative measure theory of *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint* read for a compatible sesquilinear form.
 

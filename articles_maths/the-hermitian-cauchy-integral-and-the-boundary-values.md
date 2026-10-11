@@ -48,7 +48,7 @@ the second identity being the operator form of $\{X_r,X_s\}=0$.
 
 *Proof.* $F_r$ is the fundamental solution of $\partial_{X_r}$, which is elliptic with symbol the
 pure vector $\sum e_a\xi_a$; the pairing with the second operator vanishes by the anticommutation
-relation for the twisted vectors, as computed in *Clifford Analysis*. $\square$
+relation for the twisted vectors, as computed in *Clifford Analysis*.
 
 ### The Hermitian Kernels and the Circulant Matrix
 
@@ -99,7 +99,7 @@ the four rows of the Hadamard matrix. The sixteen cross terms cancel in antisymm
 cancellation resting on $\partial_{X_r}F_s+\partial_{X_s}F_r=0$ for $r\neq s$, and the diagonal
 terms contribute $\delta$ with coefficient one. The same calculus gives the matrix form of the
 Laplacian split, $16\,D^{\mathsf T}D^{\dagger}=\Delta_N\,I_4$. The full computation is in *Clifford
-Analysis*. $\square$
+Analysis*.
 
 ## The Integral Formulae
 
@@ -126,7 +126,7 @@ $$
 Hermitian conormals; the two terms on the left are the two ways the matrix operator $D^{\mathsf T}$
 can act, and the right-hand side is the boundary flux. The statement is the matrix form of the
 Clifford–Stokes theorem of the one-operator theory, and the circulant shape is required so that the
-conormal matrix multiplies in the correct order. $\square$
+conormal matrix multiplies in the correct order.
 
 ### Borel–Pompeiu and Cauchy
 
@@ -142,7 +142,6 @@ for a $C^1$ matrix function $G$.
 *Proof.* Apply the Hermitian Clifford–Stokes theorem to the field built from $E(Z-\cdot)$ and $G$ on
 the domain punctured at $Z$; the volume term collects $D^{\mathsf T}G$ and the punctured domain
 supplies the delta, exactly as in the one-operator Cauchy–Pompeiu formula of *Clifford Analysis*.
-$\square$
 
 **Corollary (Q-Hermitian Cauchy integral formula).** When the volume term vanishes because $G$ is
 $q$-Hermitian monogenic, the Borel–Pompeiu formula becomes the **Q-Hermitian Cauchy integral

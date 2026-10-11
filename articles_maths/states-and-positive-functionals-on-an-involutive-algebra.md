@@ -15,7 +15,7 @@ Throughout, $A$ is a unital involutive Banach algebra over $\mathbb{C}$ with inv
 
 **Proposition (positivity gives self-adjointness and reality on the symmetric part).** If $f$ is positive then $f$ is self-adjoint and $f(h) \in \mathbb{R}$ for every self-adjoint $h$; moreover $f(a^*) = \overline{f(a)}$ for every $a$, and $f(b^*ab) \geq 0$ when $a$ is positive.
 
-**Proof.** Write $a = h + ik$ with $h,k$ self-adjoint; positivity gives $f((h+\lambda k)^*(h+\lambda k)) = f(h^2) + \lambda f(hk + kh) + \lambda^2 f(k^2) \geq 0$ as a real quadratic in the real $\lambda$, so its discriminant is non-positive and $f(hk+kh)^2 \leq 4f(h^2)f(k^2)$, forcing the bilinear form to be real-valued on the self-adjoint part; applying this to $a$ and the shared real linearity gives $f(a^*)=\overline{f(a)}$. The last statement is positivity applied to $a b$. $\square$
+**Proof.** Write $a = h + ik$ with $h,k$ self-adjoint; positivity gives $f((h+\lambda k)^*(h+\lambda k)) = f(h^2) + \lambda f(hk + kh) + \lambda^2 f(k^2) \geq 0$ as a real quadratic in the real $\lambda$, so its discriminant is non-positive and $f(hk+kh)^2 \leq 4f(h^2)f(k^2)$, forcing the bilinear form to be real-valued on the self-adjoint part; applying this to $a$ and the shared real linearity gives $f(a^*)=\overline{f(a)}$. The last statement is positivity applied to $a b$.
 
 **Theorem (Cauchy–Schwarz).** Let $f$ be positive. Then for all $a,b \in A$,
 
@@ -25,7 +25,7 @@ $$
 
 with equality if and only if $a$ and $b$ are linearly dependent modulo the null space of the form.
 
-**Proof.** For complex $\lambda$ the quantity $\langle a - \lambda b, a - \lambda b\rangle_f = f((a-\lambda b)^*(a-\lambda b)) \geq 0$, and expanding gives $f(a^*a) - \lambda f(a^*b) - \bar\lambda f(b^*a) + \lvert\lambda\rvert^2 f(b^*b) \geq 0$; choosing $\lambda = f(b^*a)/f(b^*b)$ when $f(b^*b) \neq 0$ gives the inequality, and the equality case is the degenerate Cauchy–Schwarz statement for a positive semidefinite form. $\square$
+**Proof.** For complex $\lambda$ the quantity $\langle a - \lambda b, a - \lambda b\rangle_f = f((a-\lambda b)^*(a-\lambda b)) \geq 0$, and expanding gives $f(a^*a) - \lambda f(a^*b) - \bar\lambda f(b^*a) + \lvert\lambda\rvert^2 f(b^*b) \geq 0$; choosing $\lambda = f(b^*a)/f(b^*b)$ when $f(b^*b) \neq 0$ gives the inequality, and the equality case is the degenerate Cauchy–Schwarz statement for a positive semidefinite form.
 
 **Theorem (boundedness of a positive functional).** Let $f$ be positive on a unital involutive Banach algebra. Then $f$ is bounded, with
 
@@ -35,7 +35,7 @@ $$
 
 so a state is exactly a positive functional with $f(1) = 1$. In a $\mathrm{C}^*$-algebra every positive functional is bounded.
 
-**Proof.** For $a$ with $\lVert a\rVert \leq 1$, Cauchy–Schwarz gives $\lvert f(a)\rvert^2 = \lvert f(1^*a)\rvert^2 \leq f(1^*1) f(a^*a) = f(1) f(a^*a)$; and $f(a^*a) \leq \lVert a^*a\rVert f(1) \leq \lVert a\rVert^2 f(1)$, since $f(1) - \lVert a^*a\rVert\cdot 1$ is positive and $f$ is positive on the positive cone, giving $\lvert f(a)\rvert \leq f(1)$; the reverse inequality is $f(1) = f(1\cdot1^*) \leq \lVert f\rVert$, so $\lVert f\rVert = f(1)$. $\square$
+**Proof.** For $a$ with $\lVert a\rVert \leq 1$, Cauchy–Schwarz gives $\lvert f(a)\rvert^2 = \lvert f(1^*a)\rvert^2 \leq f(1^*1) f(a^*a) = f(1) f(a^*a)$; and $f(a^*a) \leq \lVert a^*a\rVert f(1) \leq \lVert a\rVert^2 f(1)$, since $f(1) - \lVert a^*a\rVert\cdot 1$ is positive and $f$ is positive on the positive cone, giving $\lvert f(a)\rvert \leq f(1)$; the reverse inequality is $f(1) = f(1\cdot1^*) \leq \lVert f\rVert$, so $\lVert f\rVert = f(1)$.
 
 ## The GNS Construction
 
@@ -47,23 +47,23 @@ $$
 
 so that $f$ is the vector state of the cyclic vector $\xi_f = 1 + N_f$. The representation is **cyclic**, $\pi_f(A)\xi_f$ is dense in $H_f$, and the pair $(\pi_f, H_f)$ is the **GNS representation** of $f$.
 
-**Proof.** Cauchy–Schwarz shows that $N_f$ is the radical of the positive semidefinite form $\langle a,b\rangle_f = f(b^*a)$; it is a left ideal because $f((xa)^*(xa)) = f(a^*x^*xa) \leq \lVert x\rVert^2 f(a^*a)$ for $a \in N_f$, by positivity of the functional $a \mapsto f(a^*x^*xa)$ or by the Cauchy–Schwarz applied to the modified functional. The form descends to the quotient and is positive definite there; left multiplication by $a$ passes to the quotient because $N_f$ is a left ideal, is bounded by the same estimate, and extends to the completion. The involution compatibility $\langle \pi_f(a)x, y\rangle = \langle x, \pi_f(a^*)y\rangle$ is the computation $f(y^*(ax)) = f((a^*y)^*x)$. $\square$
+**Proof.** Cauchy–Schwarz shows that $N_f$ is the radical of the positive semidefinite form $\langle a,b\rangle_f = f(b^*a)$; it is a left ideal because $f((xa)^*(xa)) = f(a^*x^*xa) \leq \lVert x\rVert^2 f(a^*a)$ for $a \in N_f$, by positivity of the functional $a \mapsto f(a^*x^*xa)$ or by the Cauchy–Schwarz applied to the modified functional. The form descends to the quotient and is positive definite there; left multiplication by $a$ passes to the quotient because $N_f$ is a left ideal, is bounded by the same estimate, and extends to the completion. The involution compatibility $\langle \pi_f(a)x, y\rangle = \langle x, \pi_f(a^*)y\rangle$ is the computation $f(y^*(ax)) = f((a^*y)^*x)$.
 
 **Theorem (positivity of an element is detected by the states).** Let $A$ be a $\mathrm{C}^*$-algebra. An element $a$ is positive, $a = b^*b$ for some $b$, if and only if it is self-adjoint and $f(a) \geq 0$ for every state $f$. The states separate the points of $A$.
 
-**Proof.** If $a$ is positive then $f(a) = f(b^*b) \geq 0$ for every positive $f$. Conversely a self-adjoint $a$ with $f(a) \geq 0$ for all states has non-negative spectrum, because for $\lambda < 0$ the element $a - \lambda$ is invertible with positive inverse and a state evaluating non-negatively on it gives a contradiction; such an element is a square. For separation, if $a \neq 0$ then $a^*a \neq 0$ and some state has $f(a^*a) = \lVert a^*a\rVert > 0$, by the Gelfand–Naimark representation of *Involutive Banach Algebras and the Gelfand–Naimark Theorem*. $\square$
+**Proof.** If $a$ is positive then $f(a) = f(b^*b) \geq 0$ for every positive $f$. Conversely a self-adjoint $a$ with $f(a) \geq 0$ for all states has non-negative spectrum, because for $\lambda < 0$ the element $a - \lambda$ is invertible with positive inverse and a state evaluating non-negatively on it gives a contradiction; such an element is a square. For separation, if $a \neq 0$ then $a^*a \neq 0$ and some state has $f(a^*a) = \lVert a^*a\rVert > 0$, by the Gelfand–Naimark representation of *Involutive Banach Algebras and the Gelfand–Naimark Theorem*.
 
 ## The State Space
 
 **Proposition (convexity and compactness).** The set $\mathcal{S}(A)$ of states is a convex subset of the unit ball of the dual, closed in the weak-$*$ topology, and weak-$*$ compact; a convex combination $\lambda f + (1-\lambda) g$ of states is a state.
 
-**Proof.** Positivity is preserved by convex combinations and by weak-$*$ limits, and the condition $f(1) = 1$ is weak-$*$ continuous, so $\mathcal{S}(A)$ is a weak-$*$ closed subset of the weak-$*$ compact unit ball of the dual; the convexity is linearity. $\square$
+**Proof.** Positivity is preserved by convex combinations and by weak-$*$ limits, and the condition $f(1) = 1$ is weak-$*$ continuous, so $\mathcal{S}(A)$ is a weak-$*$ closed subset of the weak-$*$ compact unit ball of the dual; the convexity is linearity.
 
 **Definition.** A **pure state** is an extreme point of $\mathcal{S}(A)$; a **mixed state** is one that is not pure. The **state space** is $\mathcal{S}(A)$ and its extreme boundary is the set of pure states.
 
 **Proposition (GNS and extremality).** A state $f$ is pure if and only if its GNS representation $\pi_f$ is irreducible, that is $\pi_f(A)' = \mathbb{C}\cdot 1$; for a pure state the GNS representation is the only cyclic representation up to unitary equivalence.
 
-**Proof.** The commutant $\pi_f(A)'$ acts on $H_f$ and commutes with $\pi_f(A)$; a projection $P \in \pi_f(A)'$ with $0 \neq P \neq 1$ decomposes $f$ as a sum of two positive functionals, so $f$ is not extreme; conversely if $f = \lambda f_1 + (1-\lambda) f_2$ then the GNS space of $f$ is the direct integral of those of the summands, and a nontrivial decomposition produces a projection, so purity is irreducibility. $\square$
+**Proof.** The commutant $\pi_f(A)'$ acts on $H_f$ and commutes with $\pi_f(A)$; a projection $P \in \pi_f(A)'$ with $0 \neq P \neq 1$ decomposes $f$ as a sum of two positive functionals, so $f$ is not extreme; conversely if $f = \lambda f_1 + (1-\lambda) f_2$ then the GNS space of $f$ is the direct integral of those of the summands, and a nontrivial decomposition produces a projection, so purity is irreducibility.
 
 ## Examples
 
@@ -79,7 +79,7 @@ so that $f$ is the vector state of the cyclic vector $\xi_f = 1 + N_f$. The repr
 
 **Proposition (faithfulness and the separating vector).** A positive functional $f$ is faithful if and only if its GNS representation $\pi_f$ is injective, equivalently the cyclic vector $\xi_f$ is **separating** for $\pi_f(A)$, that is $\pi_f(a)\xi_f = 0$ implies $a = 0$. A state is faithful exactly when $a \geq 0$ and $f(a) = 0$ force $a = 0$.
 
-**Proof.** $f(a^*a) = \langle\pi_f(a)\xi_f, \pi_f(a)\xi_f\rangle = \lVert\pi_f(a)\xi_f\rVert^2$, so $N_f = \{a : \pi_f(a)\xi_f = 0\}$; faithfulness is the injectivity of $\pi_f$, that is the separating property of the cyclic vector. The last statement uses the positivity of $a = b^*b$: if $f(a) = 0$ then $f(b^*b) = 0$ and $b = 0$. $\square$
+**Proof.** $f(a^*a) = \langle\pi_f(a)\xi_f, \pi_f(a)\xi_f\rangle = \lVert\pi_f(a)\xi_f\rVert^2$, so $N_f = \{a : \pi_f(a)\xi_f = 0\}$; faithfulness is the injectivity of $\pi_f$, that is the separating property of the cyclic vector. The last statement uses the positivity of $a = b^*b$: if $f(a) = 0$ then $f(b^*b) = 0$ and $b = 0$.
 
 **Remark (the normal states and the predual).** For a von Neumann algebra $M$ the normal states are the vector states, they determine the strong topology and the predual $M_*$ with $M = (M_*)^*$, and the GNS representation of a normal state is normal; the cyclic vector is both cyclic and separating exactly when the state is faithful and the algebra is in standard form. The theory is *Operator Algebras*. The connection with this article is that the faithfulness of a state is a property of its GNS representation, and it is the property that makes the representation an isomorphism onto an algebra of operators.
 

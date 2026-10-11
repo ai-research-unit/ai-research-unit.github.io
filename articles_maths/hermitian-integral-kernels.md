@@ -55,7 +55,6 @@ the sesquilinear form of the operator being Hermitian, and $\langle T_Kf,f\rangl
 so $T_K^\dagger=T_K$ is $K^*=K$ by the uniqueness of the kernel of a Hilbert–Schmidt operator; the form
 identity is the polarisation of that self-adjointness, and it holds for every square-integrable kernel
 because the finite data of the definition of positive definiteness are dense in the form's domain.
-$\blacksquare$
 
 ### Positivity
 
@@ -69,7 +68,7 @@ by Mercer's theorem below.
 Operator*, the previous group; the equivalence with the third is the spectral theorem below, since the
 eigenvalues are the values of the quadratic form on the eigenfunctions, and a self-adjoint operator is
 positive exactly when its spectrum is contained in $[0,\infty)$ by *Banach and Hilbert Spaces*, later in this
-Part. The last statement is Mercer's theorem. $\blacksquare$
+Part. The last statement is Mercer's theorem.
 
 ## The Spectral Theory of the Kernel
 
@@ -89,7 +88,6 @@ $\lVert T_K\rVert=\max_n\lvert\lambda_n\rvert$.
 limit of its finite-rank truncations in the kernel expansion; a compact self-adjoint operator has a countable
 real spectrum with an orthonormal eigenbasis and $\lVert T_K\rVert=\max\lvert\lambda_n\rvert$, by the
 spectral theory of *Compact Operators* and *Banach and Hilbert Spaces*, later in this Part.
-$\blacksquare$
 
 ### The Eigenfunction Expansion of the Kernel
 
@@ -102,7 +100,7 @@ the series converging in $L^2(X\times X)$; and $\lVert K\rVert_{L^2}^2=\sum_n\la
 **Proof.** The kernel of $T_K$ is recovered from the operator by
 $K(x,y)=\sum_n(T_K\varphi_n)(x)\overline{\varphi_n(y)}$ in the $L^2$ sense, as in the isometry of the
 `* Theory` article, and the eigenrelation gives the stated expansion; the norm identity is Parseval's
-identity applied to the expansion. $\blacksquare$
+identity applied to the expansion.
 
 **Example (the Green function of the Dirichlet problem).** On $X=[0,1]$ with the Lebesgue measure the kernel
 $$
@@ -135,7 +133,7 @@ and the pair $(T_K,T_K^{1/2})$ is the spectral square root of the positive kerne
 **Proof.** The equivalence is the positivity criterion above; the square root is the operator with the
 square-root eigenvalues, and its square is $T_K$ by the eigenrelation, so it is the unique positive square
 root once uniqueness is known, by the positivity of the eigenvalues. The functional calculus that defines
-$T_K^{1/2}$ in general is *Analysis on Linear Spaces*, later in this Part. $\blacksquare$
+$T_K^{1/2}$ in general is *Analysis on Linear Spaces*, later in this Part.
 
 ### Mercer's Theorem
 
@@ -152,7 +150,7 @@ the convergence of the diagonal is the convergence of $\sum_n\lambda_n\lvert\var
 operator with continuous eigenfunctions by the classical argument, and the nonnegative eigenvalues give the
 absolute and uniform convergence of the expansion; the positivity of the eigenvalues is the positivity of
 the kernel. The uniform convergence is quoted from *Compact Operators*, later in this Part, where the
-Riesz–Schauder theory is developed. $\blacksquare$
+Riesz–Schauder theory is developed.
 
 ## The Reproducing Space and the Trace
 
@@ -176,7 +174,7 @@ $$
 **Proof.** The functions $\sqrt{\lambda_n}\varphi_n$ for the nonzero eigenvalues form an orthonormal basis of
 $H_K$, so $H_K$ is the range of the map $g\mapsto\sum_n\sqrt{\lambda_n}\langle g,\varphi_n\rangle\varphi_n$
 on the orthogonal complement of $\ker T_K$; the reproducing property is the expansion of the kernel, by the
-eigenfunction expansion of the previous section. $\blacksquare$
+eigenfunction expansion of the previous section.
 
 ### The Trace
 
@@ -191,7 +189,7 @@ $$
 **Proof.** The first identity is the integral of the diagonal of the Mercer expansion, legitimate by the
 monotone convergence theorem applied to the nonnegative expansion of $K(x,x)$; the second is Parseval's
 identity for the eigenfunction expansion, equivalently the isometry of the Hilbert–Schmidt correspondence of
-the `* Theory` article. $\blacksquare$
+the `* Theory` article.
 
 **Example (the Green function, continued).** For $G(x,y)=\min(x,y)-xy$ the diagonal integral is
 $\int_0^1(x-x^2)dx=1/6$ and the eigenvalue sum is $\sum_{n\geq1}1/(n^2\pi^2)=\frac1{\pi^2}\cdot\frac{\pi^2}6=1/6$,

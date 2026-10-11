@@ -34,7 +34,7 @@ $$
 h(\lambda x, \lambda x) = \lambda\varsigma(\lambda)\,h(x,x) = \lvert\lambda\rvert^{2}\,h(x,x) .
 $$
 
-*Proof.* The fixed field is the proposition (the diagonal) of the entry, §*The Definition*, and the scaling is the two slot rules, $h(\lambda x, \lambda x) = \lambda\varsigma(\lambda)h(x,x)$; the second form of the value is the definition of the modulus. $\square$
+*Proof.* The fixed field is the proposition (the diagonal) of the entry, §*The Definition*, and the scaling is the two slot rules, $h(\lambda x, \lambda x) = \lambda\varsigma(\lambda)h(x,x)$; the second form of the value is the definition of the modulus.
 
 **Remark.** The scaling by $\lvert\lambda\rvert^{2}$ rather than by $\lambda^{2}$ is the place where the sesquilinear hypothesis enters the homogeneity of the norm, and at $\varsigma = \mathrm{id}$ the modulus of the layer is the absolute value of the ordered field $k$ and the two readings coincide. The fixed field is the natural field of scalars of the norm, since the norm is fixed by the base involution, and it is the field over which the norm's inequalities are read.
 
@@ -46,7 +46,7 @@ $$
 \|x\| \geq 0, \qquad \|x\| = 0 \iff x = 0, \qquad \|\lambda x\| = \lvert\lambda\rvert\,\|x\| .
 $$
 
-*Proof.* For the first two, $h(x,x) \geq 0$ with equality exactly for $x = 0$ is the definition of positive definiteness, and the square root is an order isomorphism of the nonnegative elements of $k$ onto themselves. For the third, the scaling proposition gives $\|\lambda x\|^{2} = \lvert\lambda\rvert^{2}\|x\|^{2}$, and both $\|\lambda x\|$ and $\lvert\lambda\rvert\|x\|$ are nonnegative elements of $k$ whose squares agree, so they agree. $\square$
+*Proof.* For the first two, $h(x,x) \geq 0$ with equality exactly for $x = 0$ is the definition of positive definiteness, and the square root is an order isomorphism of the nonnegative elements of $k$ onto themselves. For the third, the scaling proposition gives $\|\lambda x\|^{2} = \lvert\lambda\rvert^{2}\|x\|^{2}$, and both $\|\lambda x\|$ and $\lvert\lambda\rvert\|x\|$ are nonnegative elements of $k$ whose squares agree, so they agree.
 
 **Remark (the triangle inequality is the third axiom).** It is proved in the next section from the Cauchy–Schwarz inequality, and it is the only axiom that uses the first slot's linearity against the second slot's semilinearity and not merely the diagonal.
 
@@ -54,7 +54,7 @@ $$
 
 **Proposition.** A positive semi-definite form that is not definite defines a **seminorm** and no norm: its null set $\{x : h(x,x) = 0\}$ is nonzero, and every element of it has norm zero.
 
-*Proof.* The null set is the set where the norm vanishes, by the definition, and a positive semi-definite form is definite exactly when the null set is zero. $\square$
+*Proof.* The null set is the set where the norm vanishes, by the definition, and a positive semi-definite form is definite exactly when the null set is zero.
 
 **Example (a degenerate trace form).** On $M_{2}(\mathbb{C})$ with the conjugate transpose and the form
 
@@ -90,7 +90,7 @@ $$
 h(x - \mu y, x - \mu y) = h(x,x) - \frac{h(x,y)\,\varsigma(h(x,y))}{h(y,y)} = \|x\|^{2} - \frac{\lvert h(x,y)\rvert^{2}}{\|y\|^{2}} .
 $$
 
-The form is positive definite, so the left side is $\geq 0$, and multiplying the inequality by $\|y\|^{2} > 0$ in the ordered field $k$ gives the claim. $\square$
+The form is positive definite, so the left side is $\geq 0$, and multiplying the inequality by $\|y\|^{2} > 0$ in the ordered field $k$ gives the claim.
 
 **Remark (the shape of the proof).** The proof is the two-variable form of the discriminant argument for a quadratic form of one variable: the diagonal of the translated element is a nonnegative quadratic in $\mu$ with the leading coefficient $\|y\|^{2}$, and the inequality says that its discriminant is $\leq 0$. The discriminant argument is available because the leading coefficient is a fixed positive scalar, that is because the diagonal lies in $k$; on a general sesqualgebra over a general involutive ring the argument is replaced by the continuous version of *The Cauchy–Schwarz Inequality for Continuous Sesquilinear Maps*, and here the definite case is the sharp one.
 
@@ -98,7 +98,7 @@ The form is positive definite, so the left side is $\geq 0$, and multiplying the
 
 **Theorem.** Let $h$ be positive definite. Then the Cauchy–Schwarz inequality is an equality exactly when $x$ and $y$ are linearly dependent.
 
-*Proof.* If $y \neq 0$ the proof above shows that the equality holds exactly when $h(x - \mu y, x - \mu y) = 0$, which by definiteness is $x = \mu y$. If $y = 0$ both sides vanish and $x, y$ are dependent. Conversely, if $x = \mu y$ then $h(x,y) = \mu h(y,y)$ with $h(y,y) \in k$, so $\lvert h(x,y)\rvert = \lvert\mu\rvert h(y,y)$ and $\|x\| = \lvert\mu\rvert\|y\|$, and the product of the two is $\lvert h(x,y)\rvert$. $\square$
+*Proof.* If $y \neq 0$ the proof above shows that the equality holds exactly when $h(x - \mu y, x - \mu y) = 0$, which by definiteness is $x = \mu y$. If $y = 0$ both sides vanish and $x, y$ are dependent. Conversely, if $x = \mu y$ then $h(x,y) = \mu h(y,y)$ with $h(y,y) \in k$, so $\lvert h(x,y)\rvert = \lvert\mu\rvert h(y,y)$ and $\|x\| = \lvert\mu\rvert\|y\|$, and the product of the two is $\lvert h(x,y)\rvert$.
 
 **Corollary (the definite form is an inner product).** The inequality says that the Hermitian form is an inner product in the norm it defines: it is definite, Hermitian and bounded with constant one, so it is a definite Hermitian pairing of the normed module with itself, and the equality case of the inequality is the degenerate case of two proportional vectors, which is the classical form of the equality of an inner product. The passage from that inner product to the Hilbert space and to the representation of the algebra is *Positive Definite Forms and the Order* and *Hilbert Spaces*.
 
@@ -106,7 +106,7 @@ The form is positive definite, so the left side is $\geq 0$, and multiplying the
 
 **Corollary (the form is continuous).** Let $h$ be positive definite. Then $\lvert h(x,y)\rvert \leq \|x\|\|y\|$, so $h$ is continuous for the norm topology, with the operator norm at most one; consequently the form of the layer is automatically continuous when it is definite and the topology is that of its norm.
 
-*Proof.* The inequality is Cauchy–Schwarz, and it says that $h$ maps the product of the unit balls into the set of elements of modulus at most one, which is bounded; bilinearity then gives continuity. $\square$
+*Proof.* The inequality is Cauchy–Schwarz, and it says that $h$ maps the product of the unit balls into the set of elements of modulus at most one, which is bounded; bilinearity then gives continuity.
 
 **Remark.** The corollary is the reason the continuity that the layer imposes on its forms is not an extra hypothesis in the definite case: the norm of the form supplies it. It also shows that the form is a bounded pairing of the normed module with itself, which is the hypothesis under which the adjoint of an operator is defined in *The Adjoint under a Hermitian Form* and in *Bounded Operators on a Sesqualgebra*.
 
@@ -114,7 +114,7 @@ The form is positive definite, so the left side is $\geq 0$, and multiplying the
 
 **Lemma (the real part is at most the modulus).** For every $t \in R$ the inequality $t + \varsigma(t) \leq 2\lvert t\rvert$ holds in $k$.
 
-*Proof.* In the base $k(i)$ write $t = a + ib$ with $a, b \in k$; then $t + \varsigma(t) = 2a$ and $\lvert t\rvert = (a^{2} + b^{2})^{1/2} \geq \lvert a\rvert \geq a$, since $b^{2} \geq 0$. In the base $k$ with $\varsigma = \mathrm{id}$ the inequality is $2t \leq 2\lvert t\rvert$, which is the definition of the absolute value of the ordered field. $\square$
+*Proof.* In the base $k(i)$ write $t = a + ib$ with $a, b \in k$; then $t + \varsigma(t) = 2a$ and $\lvert t\rvert = (a^{2} + b^{2})^{1/2} \geq \lvert a\rvert \geq a$, since $b^{2} \geq 0$. In the base $k$ with $\varsigma = \mathrm{id}$ the inequality is $2t \leq 2\lvert t\rvert$, which is the definition of the absolute value of the ordered field.
 
 **Theorem (the triangle inequality).** Let $h$ be positive definite. Then
 
@@ -128,7 +128,7 @@ $$
 \|x+y\|^{2} = h(x,x) + h(x,y) + h(y,x) + h(y,y) = \|x\|^{2} + \bigl(h(x,y) + \varsigma(h(x,y))\bigr) + \|y\|^{2} ,
 $$
 
-the middle term is in $k$ because it is fixed by $\varsigma$, and the lemma bounds it by $2\lvert h(x,y)\rvert$, which Cauchy–Schwarz bounds by $2\|x\|\|y\|$. Hence $\|x+y\|^{2} \leq (\|x\| + \|y\|)^{2}$, and both sides are nonnegative elements of the ordered field $k$, so the square roots are ordered as claimed. $\square$
+the middle term is in $k$ because it is fixed by $\varsigma$, and the lemma bounds it by $2\lvert h(x,y)\rvert$, which Cauchy–Schwarz bounds by $2\|x\|\|y\|$. Hence $\|x+y\|^{2} \leq (\|x\| + \|y\|)^{2}$, and both sides are nonnegative elements of the ordered field $k$, so the square roots are ordered as claimed.
 
 **Corollary (the norm of the form).** The three axioms together say that $\|\cdot\|$ is a norm on the module $A$: it is nonnegative and definite, absolutely homogeneous with the modulus of the base as the absolute value, and subadditive. The pair $(A,\|\cdot\|)$ is therefore a normed $R$-module in the sense of *Normed and Banach Spaces*, and its norm is determined by the diagonal of the form alone.
 
@@ -154,7 +154,7 @@ $$
 h(m_{x}z, w) = h(z, m_{x^{*}}w) \qquad \text{for all } z, w \in A .
 $$
 
-*Proof.* The bound $\|m_{x}z\| = \|xz\| \leq \|x\|\|z\|$ is submultiplicativity, which gives the boundedness and the estimate on the operator norm; the adjointness is the compatibility $h(xz,w) = h(z,x^{*}w)$ of the entry, §*The Compatibility*. $\square$
+*Proof.* The bound $\|m_{x}z\| = \|xz\| \leq \|x\|\|z\|$ is submultiplicativity, which gives the boundedness and the estimate on the operator norm; the adjointness is the compatibility $h(xz,w) = h(z,x^{*}w)$ of the entry, §*The Compatibility*.
 
 **Remark (the two norms need not agree).** The operator norm of $m_{x}$ is at most $\|x\|$, and the two need not be equal: on $M_{2}(\mathbb{C})$ with the trace form the norm is the Frobenius norm of the example below, and for the identity matrix $m_{1}$ is the identity operator, of operator norm $1$, while $\|1\| = \sqrt{2}$. The agreement of the two norms is the statement that the left regular representation is isometric, and it is a further condition on the object, treated for the multiplications by *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*.
 
@@ -176,7 +176,7 @@ $$
 
 so the involution is an isometry of the normed module and is continuous.
 
-*Proof.* The $\mathrm{C}^*$-condition and submultiplicativity give $\|x\|^{2} = \|x^{*}x\| \leq \|x^{*}\|\|x\|$, hence $\|x\| \leq \|x^{*}\|$ when $x \neq 0$ and trivially otherwise; the same argument with $x^{*}$ in place of $x$ gives $\|x^{*}\| \leq \|x\|$, because $(x^{*})^{*} = x$. $\square$
+*Proof.* The $\mathrm{C}^*$-condition and submultiplicativity give $\|x\|^{2} = \|x^{*}x\| \leq \|x^{*}\|\|x\|$, hence $\|x\| \leq \|x^{*}\|$ when $x \neq 0$ and trivially otherwise; the same argument with $x^{*}$ in place of $x$ gives $\|x^{*}\| \leq \|x\|$, because $(x^{*})^{*} = x$.
 
 **Theorem (the diagonal computes the norm).** Under the same hypotheses the norm is determined by the Hermitian squares,
 
@@ -186,7 +186,7 @@ $$
 
 and the scalar reading of the same element is the diagonal of the form, $h(x,x) = \varphi(x^{*}x)$ for the functional $\varphi$ of *The Sesquilinear Form and the Conjugation*, §*The Reconstruction*, so that the form's diagonal, the Hermitian square and the norm are three readings of one datum.
 
-*Proof.* The first identity is the condition, and the second is the reconstruction of the form from its functional at the pair $(x,x)$. $\square$
+*Proof.* The first identity is the condition, and the second is the reconstruction of the form from its functional at the pair $(x,x)$.
 
 **Remark (the condition is a restriction).** The $\mathrm{C}^*$-condition is not automatic and not implied by submultiplicativity: on $M_{n}(\mathbb{C})$ with the trace form the norm is the Frobenius norm of the examples below, which is submultiplicative, and at the identity matrix
 
@@ -202,7 +202,7 @@ so the condition fails for $n \geq 2$; the equality holds at $1$ exactly when $n
 
 **Theorem (the collapse).** Let $\varsigma = \mathrm{id}$, so that $R = k$ and the form is symmetric and $k$-bilinear. Then the norm of the form is the norm of the symmetric positive definite form, $\|x\| = h(x,x)^{1/2}$, the scaling reads $\|\lambda x\| = \lvert\lambda\rvert\|x\|$ with the absolute value of the ordered field, the compatibility is the invariance $h(xy,z) = h(y,xz)$ whose left multiplications are self-adjoint, and the $\mathrm{C}^*$-condition is the classical $\mathrm{C}^*$-identity $\|x^{*}x\| = \|x\|^{2}$ of an involutive normed algebra.
 
-*Proof.* Each statement is the corresponding statement above read at $\varsigma = \mathrm{id}$: the modulus is the absolute value, the form of the layer is bilinear by the collapse of *Topological Sesqualgebras with a Form*, §*The Collapse at the Trivial Involution*, and the identity is the one of the cited article on the $\mathrm{C}^*$-identity. $\square$
+*Proof.* Each statement is the corresponding statement above read at $\varsigma = \mathrm{id}$: the modulus is the absolute value, the form of the layer is bilinear by the collapse of *Topological Sesqualgebras with a Form*, §*The Collapse at the Trivial Involution*, and the identity is the one of the cited article on the $\mathrm{C}^*$-identity.
 
 **Remark (which statements are sesquilinear).** The norm axioms and the inequality are the same in the two categories and are therefore not sesquilinear statements; the sesquilinear content of the article lies in the scaling $\|\lambda x\| = \lvert\lambda\rvert\|x\|$ with $\lvert\lambda\rvert^{2} = \lambda\varsigma(\lambda)$ rather than $\lambda^{2}$, and in the fact that the norm is read from the diagonal of a form that is Hermitian and not symmetric. At the collapse the object is a normed involutive algebra with a symmetric definite form, whose completed theory is *Involutive Banach Algebras and the Gelfand–Naimark Theorem*, and the bilinear model of the whole article is the Hilbert algebra of *Hilbert Algebras*, where the same form axiom is read with $\varsigma = \mathrm{id}$.
 

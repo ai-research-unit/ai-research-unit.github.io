@@ -193,7 +193,6 @@ square of a composition is *The Interval as the Square and the Charge of the Mat
 none of the three is redone here.
 
 **Remark (verified).** The identity $\tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)e_0$ and the square
-$\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$ were recomputed on $100$ random biquaternions in exact complex
 arithmetic; the maximum deviation from zero is $8.9\times10^{-16}$, machine precision. The commutation
 $\tilde P\bullet\tilde Q-\tilde Q\bullet\tilde P$ vanishes **exactly** on the same samples, not merely to
 machine precision, the coefficient being literally symmetric.
@@ -211,7 +210,7 @@ equivalently $N(\tilde P+\tilde Q)=N(\tilde P)+N(\tilde Q)+2N(\tilde P,\tilde Q)
 $N(\tilde P)+N(\tilde Q)+2N(\tilde P,\tilde Q)$; the coupling is $N(\tilde P,\tilde Q)e_0$ by the
 centrality proposition, and the identity follows on rearranging.
 
-**Remark (verified).** The polarisation identity was recomputed on $100$ random biquaternion pairs, with
+**Remark (verified).**
 the two sides agreeing to machine precision on all of them.
 
 **Reading (the interference term).** The coupling is the **cross term of the square of a sum**, the
@@ -321,36 +320,36 @@ signature table of *The Four General Products and Their Physical Readings*.
 sections, and the reading is what the framework does with it.
 
 - **The operation is a comparison of two operations.** The value $N(\tilde P,\tilde Q)$ is the scalar
-  overlap of the two material operations; the operation couples them to a number. It is the value a
-  comparison returns, and it is not a composite operation of the same kind as its arguments.
+overlap of the two material operations; the operation couples them to a number. It is the value a
+comparison returns, and it is not a composite operation of the same kind as its arguments.
 - **The comparison is order-free.** The operation is commutative, so the coupling of two operations does
-  not depend on their order: this is the part of the product that the order does not touch. All of the
-  order lives in the antisymmetric half of the parent, the failed bracket of the companion band.
+not depend on their order: this is the part of the product that the order does not touch. All of the
+order lives in the antisymmetric half of the parent, the failed bracket of the companion band.
 - **The diagonal of the coupling is the interval.** The coupling of an operation with itself is its
-  interval, so the symmetric half of the row is the half that carries the metric of the material row.
+interval, so the symmetric half of the row is the half that carries the metric of the material row.
 - **The coupling is the interference term of a sum.** By the polarisation identity the off-diagonal is the
-  cross term of the square of a sum, the quantity two operations contribute jointly beyond their separate
-  intervals; a vanishing coupling is a pair the metric does not correlate. The interference is symmetric
-  and bilinear and carries no positivity.
+cross term of the square of a sum, the quantity two operations contribute jointly beyond their separate
+intervals; a vanishing coupling is a pair the metric does not correlate. The interference is symmetric
+and bilinear and carries no positivity.
 - **Mass and interaction are one form.** The diagonal, on a material four-momentum on shell, is
-  $-m^{2}c^{2}$ and carries the mass; the off-diagonal carries the interaction. One coefficient, read on
-  one argument and on two, is both.
+$-m^{2}c^{2}$ and carries the mass; the off-diagonal carries the interaction. One coefficient, read on
+one argument and on two, is both.
 - **The pairing is a signed correlation.** The coefficient is indefinite, so a coupling can be positive,
-  negative or zero, and a pair with $N(\tilde P,\tilde Q)=0$ is decoupled for the metric. The name is a
-  signed correlation, not a probability.
+negative or zero, and a pair with $N(\tilde P,\tilde Q)=0$ is decoupled for the metric. The name is a
+signed correlation, not a probability.
 - **The coupling carries the metric, and the order carries the obstruction.** The geometry of the
-  material row sits in the symmetric part and the failure of the internal group in the antisymmetric
-  part; the two are the two halves of one product and neither can be read off the other.
+material row sits in the symmetric part and the failure of the internal group in the antisymmetric
+part; the two are the two halves of one product and neither can be read off the other.
 - **The zeros of the coupling are a selection rule.** The proved statement is that a pair with
-  $N(\tilde P,\tilde Q)=0$ is decoupled for the metric, together with the non-degeneracy of the form. A
-  family of operations that are **pairwise** $N$-orthogonal therefore contributes to the interval of any
-  sum only through its members' separate intervals, the cross terms vanishing. Offered **as a reading**,
-  the vanishing coupling is an **orthogonality selection rule** and a maximal $N$-orthogonal family is a
-  set the metric does not mix — the algebraic shape of a superselection sector. The reading is of the
-  form's zeros and is not a proved statement about states: the coefficient is indefinite, so an
-  $N$-orthogonal family is not a positive decomposition, and the name is the framework's and not the
-  algebra's. It is a selection rule of the coefficient $N$ and is not the mass selection rule of the
-  chiral articles, which is a statement about the gauge invariance of a mass term.
+$N(\tilde P,\tilde Q)=0$ is decoupled for the metric, together with the non-degeneracy of the form. A
+family of operations that are **pairwise** $N$-orthogonal therefore contributes to the interval of any
+sum only through its members' separate intervals, the cross terms vanishing. Offered **as a reading**,
+the vanishing coupling is an **orthogonality selection rule** and a maximal $N$-orthogonal family is a
+set the metric does not mix — the algebraic shape of a superselection sector. The reading is of the
+form's zeros and is not a proved statement about states: the coefficient is indefinite, so an
+$N$-orthogonal family is not a positive decomposition, and the name is the framework's and not the
+algebra's. It is a selection rule of the coefficient $N$ and is not the mass selection rule of the
+chiral articles, which is a statement about the gauge invariance of a mass term.
 
 **Caution.** A central value **compares and does not compose**. No associativity, no composition of a
 product and no iterated chain can be read from this operation. It is a coupling, and a coupling is a
@@ -437,32 +436,32 @@ the comparison of the four rows is *The Four General Products and Their Physical
 ## Further Reading
 
 - *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
-  which this block sits.
+which this block sits.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space*
-  (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve
-  operations, the method of the decomposition and the laws of each.
+(`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve
+operations, the method of the decomposition and the laws of each.
 - Mathematics article *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*
-  (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the
-  operation, its class, its image and the sixteen products.
+(`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the
+operation, its class, its image and the sixteen products.
 - Mathematics article *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*
-  (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the
-  coefficient read as a form, its Gram matrix, its realification and the failure of its invariance.
+(`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the
+coefficient read as a form, its Gram matrix, its realification and the failure of its invariance.
 - Mathematics article *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*
-  (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for
-  the radical, the isotropic elements and the Jordan witness.
+(`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for
+the radical, the isotropic elements and the Jordan witness.
 - Mathematics article *The Multiplication Operators of the Symmetric Quaternionic Algebra*
-  (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the
-  operators $L^{\bullet}_{\tilde A}$ and the adjoint with respect to the form.
+(`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the
+operators $L^{\bullet}_{\tilde A}$ and the adjoint with respect to the form.
 - Mathematics article *The Symmetric and Antisymmetric Parts of an Algebra Product*
-  (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the general
-  construction of the two parts and the reconstruction.
+(`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the general
+construction of the two parts and the reconstruction.
 - Companion article *The Interval as the Square and the Charge of the Material Composition*, for the
-  square identity, the interval and the multiplicativity of the norm.
+square identity, the interval and the multiplicativity of the norm.
 - Companion article *The Ordinary Product and the Material Sector*, for the form $B$ and the plain row.
 - Companion article *The Symmetrised Material Composition and the Jordan Identity*, for the symmetrised
-  plain product (SPA), the Jordan-product contrast of this operation.
+plain product (SPA), the Jordan-product contrast of this operation.
 - Companion article *The Four General Products and Their Physical Readings*, for the transversal comparison and the signature table.
 - Companion article *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*, for
-  the radical, the isotropic elements and the Jordan witness read physically.
+the radical, the isotropic elements and the Jordan witness read physically.
 - Companion article *The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator*,
-  for the antisymmetric half of the same parent.
+for the antisymmetric half of the same parent.

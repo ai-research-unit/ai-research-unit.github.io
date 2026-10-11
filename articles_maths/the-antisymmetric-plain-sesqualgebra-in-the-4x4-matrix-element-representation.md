@@ -13,7 +13,7 @@ This article is the second of the two representation articles of the block, and 
 
 The difference between the two readings is the shape of the image. In the $4\times4$ model the image is the image of the vector subspace under the regular representation, of complex dimension three, and the rank of a value is four, two or zero according to the **isotropy** of the value for the complex bilinear norm form, not according to the vanishing of the value: the two ranks are computed, and the distinction between the two forms carried by the block is the point of the article — the positive definite form $H(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)$ vanishes only on the zero value, while the determinant of the matrix of the value, which is the complex bilinear form $\sum_\mu V_\mu^2$, vanishes on the whole isotropic cone.
 
-The setting and the notation are those of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the regular model and its invariants are *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* and *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*; the form $H$, the norm $N$ and the zero divisors are *Biquaternion Norm and Invertibility*; the operator whose invariants appear here is *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra*; and the invariants of a linear map are *Linear Maps and Matrices*, §*Rank* and §*The Trace and the Determinant of a Matrix*. The purity list of the pass is respected: the matrix invariants are the rank, the trace and the determinant, and no word of distance, of limit or of continuity occurs.
+The setting and the notation are those of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the regular model and its invariants are *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* and *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*; the form $H$, the norm $N$ and the zero divisors are *Norm and Invertibility in the General Plain Algebra*; the operator whose invariants appear here is *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra*; and the invariants of a linear map are *Linear Maps and Matrices*, §*Rank* and §*The Trace and the Determinant of a Matrix*. The matrix invariants are the rank, the trace and the determinant.
 
 ## The Regular Model
 
@@ -33,7 +33,7 @@ $$
 
 the **traceless part** of the regular matrix.
 
-*Proof.* $\mathsf{M}_4(e_0)=I$ and $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4X_0$, so subtracting $\tfrac14\operatorname{Tr}\mathsf{M}_4(\tilde X)I=X_0I$ leaves $\mathsf{M}_4(\tilde X-X_0e_0)=\mathsf{M}_4(\mathrm{Vect}\tilde X)$. $\square$
+*Proof.* $\mathsf{M}_4(e_0)=I$ and $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4X_0$, so subtracting $\tfrac14\operatorname{Tr}\mathsf{M}_4(\tilde X)I=X_0I$ leaves $\mathsf{M}_4(\tilde X-X_0e_0)=\mathsf{M}_4(\mathrm{Vect}\tilde X)$.
 
 ## The Block in the Regular Model
 
@@ -46,7 +46,7 @@ $$
 
 the **traceless part** of the conjugate-transposed product of the regular matrices; in particular $\operatorname{Tr}\mathsf{M}_4(\tilde P\diamond\tilde Q)=0$.
 
-*Proof.* $\mathsf{M}_4(\tilde P\tilde Q^{*})=\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger}$ by the $*$-representation property, and the vector part is the traceless part. Verified on random pairs. $\square$
+*Proof.* $\mathsf{M}_4(\tilde P\tilde Q^{*})=\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger}$ by the $*$-representation property, and the vector part is the traceless part.
 
 **Theorem (the invariants in the regular model).** For every value $\tilde V$ of the block,
 
@@ -63,7 +63,7 @@ $$
 \end{cases}
 $$
 
-*Proof.* The trace vanishes because $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4\mathrm{Sc}(\tilde X)$ and the value is a pure vector; the determinant is $N(\tilde X)^2$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\mathsf{M}_4(\tilde V)=N(\tilde V)^2$, so the regular matrix is invertible exactly when $N(\tilde V)\neq0$; for $N(\tilde V)=0$ and $\tilde V\neq0$ the left regular representation of a central simple algebra has rank a multiple of the degree two, and the value is a zero divisor, so the rank is two. Verified on the model. $\square$
+*Proof.* The trace vanishes because $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4\mathrm{Sc}(\tilde X)$ and the value is a pure vector; the determinant is $N(\tilde X)^2$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\mathsf{M}_4(\tilde V)=N(\tilde V)^2$, so the regular matrix is invertible exactly when $N(\tilde V)\neq0$; for $N(\tilde V)=0$ and $\tilde V\neq0$ the left regular representation of a central simple algebra has rank a multiple of the degree two, and the value is a zero divisor, so the rank is two.
 
 **Remark (the image and the rank in the regular model).** The image of the block in the regular model is the image of the vector subspace under $\mathsf{M}_4$, of complex dimension three: the value $\tilde V=e_0\diamond\tilde R=\mathbf R$ has regular matrix $\mathsf{M}_4(\mathbf R)$ of rank four whenever $N(\mathbf R)\neq0$, so the image meets the invertible matrices, while a zero divisor $\mathbf R$ has rank two. The $2\times2$ model reads the same image by the traceless matrices, again of complex dimension three, and the two models have the same rank pattern on the values through the factor two, $\operatorname{rank}\mathsf{M}_4=2\operatorname{rank}\mathsf{M}_2$ on the values, which is the ratio of the sizes of the two matrix algebras.
 
@@ -83,7 +83,7 @@ $$
 H(\tilde P,\tilde Q)=\tfrac14\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger}\bigr).
 $$
 
-*Proof.* $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4X_0$; hence $\operatorname{Tr}(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger})=\operatorname{Tr}\mathsf{M}_4(\tilde P\tilde Q^{*})=4H(\tilde P,\tilde Q)$. Verified on random pairs. $\square$
+*Proof.* $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4X_0$; hence $\operatorname{Tr}(\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger})=\operatorname{Tr}\mathsf{M}_4(\tilde P\tilde Q^{*})=4H(\tilde P,\tilde Q)$.
 
 **Corollary (the pairing of the block).** For the block,
 
@@ -102,7 +102,7 @@ $$
 
 and the invariance $\beta(\tilde P\diamond\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\diamond\tilde R)}$ holds **degenerately**, both members vanishing with the trace of the value; no invariant form is non-degenerate.
 
-*Proof.* $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4X_0$, so $\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde X)\overline{\operatorname{Tr}\mathsf{M}_4(\tilde Y)}=X_0\overline{Y_0}$, which is the invariant form of *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, §*The Invariance Forms*; the degeneracy is the vanishing of the trace of a block value. $\square$
+*Proof.* $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4X_0$, so $\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde X)\overline{\operatorname{Tr}\mathsf{M}_4(\tilde Y)}=X_0\overline{Y_0}$, which is the invariant form of *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, §*The Invariance Forms*; the degeneracy is the vanishing of the trace of a block value.
 
 **Remark (the invariants of the operator in the model).** The operator $L^{\diamond}_{\tilde A}$ of *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra* acts on the model by $\mathsf{M}_4(\tilde X)\mapsto\mathsf{M}_4(\tilde A)\mathsf{M}_4(\tilde X)^{\dagger}-\tfrac14\operatorname{Tr}(\cdot)I$, a map of the traceless part of the conjugate-transposed product; its invariants are those computed there, trace zero and characteristic polynomial $\lambda^{2}(\lambda^{2}-1)^{3}$ at $\tilde A=e_0$ and $\lambda^{4}(\lambda^{2}+1)^{2}$ at $\tilde A=e_k$, and they are unchanged by the model, the regular representation being a $*$-representation through the conjugate transpose.
 
@@ -168,5 +168,5 @@ In the $4\times4$ model the block is the traceless part of the conjugate-transpo
 - *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-adjoint-operators-and-the-sandwich-of-the-antisymmetric-plain-sesqualgebra.md`), for the operator whose invariants the model carries
 - *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-plain-sesqualgebra-in-the-4x4-matrix-element-representation.md`), for the product of the row and the form in the model
 - *The Antisymmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-antisymmetric-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the reading on the realization
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the two forms, the norm, the zero divisors and the isotropic cone
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the two forms, the norm, the zero divisors and the isotropic cone
 - *Linear Maps and Matrices* (`articles_maths/linear-maps-and-matrices.md`), for the matrix of a linear map and its invariants

@@ -25,7 +25,7 @@ extended linearly to all degrees; it is the transpose of the action of $\theta$ 
 
 **Proposition.** $\Theta$ is an automorphism of the graded algebra $\Lambda^\bullet\mathrm{G}^{\ast}$ of order two, and it preserves the degree: $\Theta(\Lambda^p\mathrm{G}^{\ast})\subseteq\Lambda^p\mathrm{G}^{\ast}$.
 
-**Proof.** The map $\theta$ is a linear automorphism of $\mathrm{G}$ of order two, so its transpose on $\mathrm{G}^{\ast}$ is an involution, and its extension to the exterior algebra is multiplicative and preserves the degree; $\Theta^2=\mathrm{id}$ because $\theta^2=\mathrm{id}$. $\square$
+**Proof.** The map $\theta$ is a linear automorphism of $\mathrm{G}$ of order two, so its transpose on $\mathrm{G}^{\ast}$ is an involution, and its extension to the exterior algebra is multiplicative and preserves the degree; $\Theta^2=\mathrm{id}$ because $\theta^2=\mathrm{id}$.
 
 **Corollary.** The fixed cochains of $\Theta$ form the subalgebra $\Lambda^\bullet(\mathrm{G}^{\ast})^{\theta}$ of the $\theta$-invariant cochains, and the anti-fixed cochains are those with $\Theta\omega=-\omega$; the graded algebra of cochains decomposes into the two eigenspaces.
 
@@ -37,13 +37,13 @@ $$
 \Theta\,d=d\,\Theta .
 $$
 
-**Proof.** For a $p$-cochain $\omega$ and vectors $x_0,\dots,x_p$, the left side is $(d\omega)(\theta x_0,\dots,\theta x_p)$ and the right side is $d(\Theta\omega)(x_0,\dots,x_p)$. In the first sum the terms $x_i\cdot\omega(\dots)$ become $\theta x_i\cdot\omega(\theta\dots)$ and in the second sum the brackets become $[\theta x_i,\theta x_j]=\theta[x_i,x_j]$; the two expressions coincide term by term because $\theta$ is a Lie automorphism and the action of $\mathrm{G}$ on the cochains is the coadjoint one, transported by $\theta$. $\square$
+**Proof.** For a $p$-cochain $\omega$ and vectors $x_0,\dots,x_p$, the left side is $(d\omega)(\theta x_0,\dots,\theta x_p)$ and the right side is $d(\Theta\omega)(x_0,\dots,x_p)$. In the first sum the terms $x_i\cdot\omega(\dots)$ become $\theta x_i\cdot\omega(\theta\dots)$ and in the second sum the brackets become $[\theta x_i,\theta x_j]=\theta[x_i,x_j]$; the two expressions coincide term by term because $\theta$ is a Lie automorphism and the action of $\mathrm{G}$ on the cochains is the coadjoint one, transported by $\theta$.
 
 **Corollary.** The involution $\Theta$ acts on the cohomology $H^\bullet(\mathrm{G})=\ker d/\operatorname{im}d$, since it commutes with $d$ and carries cocycles to cocycles and coboundaries to coboundaries; the induced map on $H^\bullet(\mathrm{G})$ is an involution, and its fixed part is the **$\theta$-invariant cohomology**.
 
 **Proposition.** The equivariance is equivalent to the statement that $\theta$ is an automorphism of the differential graded algebra $(\Lambda^\bullet\mathrm{G}^{\ast},d)$; thus the pair $(\mathrm{G},\theta)$ gives a differential graded algebra with an involution, and the cohomology carries the same involution.
 
-**Proof.** The two statements assert the same commutation with the differential plus multiplicativity, which is the proposition on $\Theta$. $\square$
+**Proof.** The two statements assert the same commutation with the differential plus multiplicativity, which is the proposition on $\Theta$.
 
 ## The Invariant Pairing
 
@@ -55,7 +55,7 @@ $$
 \beta(\Theta\omega,\Theta\eta)=\beta(\omega,\eta).
 $$
 
-**Proof.** The form on $\mathrm{G}$ extends to $\Lambda^\bullet\mathrm{G}^{\ast}$ by the determinant-type rule on homogeneous elements; since $\theta$ preserves it on $\mathrm{G}$, its extension preserves the induced pairing on each degree, and multiplicativity gives the general case. $\square$
+**Proof.** The form on $\mathrm{G}$ extends to $\Lambda^\bullet\mathrm{G}^{\ast}$ by the determinant-type rule on homogeneous elements; since $\theta$ preserves it on $\mathrm{G}$, its extension preserves the induced pairing on each degree, and multiplicativity gives the general case.
 
 **Corollary.** The exterior derivative has an adjoint $\delta$ with respect to the invariant pairing, $\beta(d\omega,\eta)=\beta(\omega,\delta\eta)$; the operator $\delta$ is the **codifferential**, it lowers the degree by one, and it commutes with $\Theta$ because $d$ and $\beta$ do. The identity $\delta=\pm\star d\star$ holds in the definite case with an orientation, and the Hodge star, the definiteness and the analytic theory of the adjoint belong to Part II, where the form and the distance are available, and are named only.
 
@@ -63,7 +63,7 @@ $$
 
 **Proposition.** The induced involution on $H^\bullet(\mathrm{G})$ is an algebra automorphism of the graded-commutative cohomology algebra, and the $\theta$-invariant cohomology is its fixed subalgebra; the invariant pairings are the fixed cochains.
 
-**Proof.** The cohomology algebra is graded-commutative and $\Theta$ is a multiplicative map commuting with $d$, so it induces an algebra automorphism; the fixed part is the fixed subalgebra, and the invariant pairings are the fixed cochains by definition. $\square$
+**Proof.** The cohomology algebra is graded-commutative and $\Theta$ is a multiplicative map commuting with $d$, so it induces an algebra automorphism; the fixed part is the fixed subalgebra, and the invariant pairings are the fixed cochains by definition.
 
 **Corollary.** The pairing of cohomology classes with the invariant pairing is compatible with the involution: $\beta(\Theta[\omega],\Theta[\eta])=\beta([\omega],[\eta])$, so the involution is an isometry of the cohomology; when the form is the Killing form of a semisimple $\mathrm{G}$ the cohomology pairing is the one used in the study of the primitive cohomology.
 
@@ -71,7 +71,6 @@ $$
 
 For an abelian $\mathrm{G}$ the bracket vanishes and $d$ is the zero operator up to the action term; on the dual of the trivial module, $d=0$ and the cohomology is the whole exterior algebra; the involution $\Theta$ acts degree by degree and its fixed cochains are the invariant cochains, the equivariance being trivial. For the Heisenberg algebra $\mathrm{G}=\langle x,y,z\rangle$ with $[x,y]=z$ central, the exterior derivative on $\Lambda^1\mathrm{G}^{\ast}$ sends the dual basis elements according to the bracket, and an involution $\theta$ with $\theta(x)=-x$, $\theta(y)=y$, $\theta(z)=-z$ was checked to satisfy $\Theta d=d\Theta$ on degrees zero, one and two; the invariant pairing pairs the degree-one and degree-two cochains.
 
-**Verified.** The equivariance $\Theta d=d\Theta$ was checked on the Heisenberg algebra in degrees zero, one and two, and on $\mathrm{sl}(2,K)$ in degrees zero and one; the invariance of the extended form under $\Theta$ was checked on the basis cochains.
 
 ## Summary
 

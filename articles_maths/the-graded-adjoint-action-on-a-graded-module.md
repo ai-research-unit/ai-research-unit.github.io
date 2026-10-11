@@ -19,7 +19,7 @@ $$
 
 **Proposition (the module structure).** The graded adjoint action satisfies $\ell_{rs}^\pi = \ell_r^\pi\ell_{\delta^{-1}(s)}^\pi$ and $\ell_{r+t}^\pi = \ell_r^\pi + \ell_t^\pi$; with the grading operator $\gamma = \alpha$ on the regular module $M = A$ and $\pi$ the left regular representation, the action $\ell_r^\pi$ is the signed left multiplication $\ell_r$, so the regular case is recovered.
 
-**Proof.** $\ell_r^\pi\ell_t^\pi = \pi(r)\gamma\pi(t)\gamma = \pi(r)\pi(\alpha(t))\gamma^2 = \pi(r\alpha(t))$, which is $\ell_{r\alpha(t)}^\pi$, giving the composition law after $\alpha(t) = \delta^{-1}(s)$; additivity is the linearity of $\pi$; and on the regular module $\pi(r) = L_r$, $\gamma = \alpha$, so $\ell_r^\pi = L_r\alpha = \ell_r$. $\square$
+**Proof.** $\ell_r^\pi\ell_t^\pi = \pi(r)\gamma\pi(t)\gamma = \pi(r)\pi(\alpha(t))\gamma^2 = \pi(r\alpha(t))$, which is $\ell_{r\alpha(t)}^\pi$, giving the composition law after $\alpha(t) = \delta^{-1}(s)$; additivity is the linearity of $\pi$; and on the regular module $\pi(r) = L_r$, $\gamma = \alpha$, so $\ell_r^\pi = L_r\alpha = \ell_r$.
 
 **Theorem (the adjoint of the graded action).** For every $r$, the graded adjoint action is adjointable and
 
@@ -29,7 +29,7 @@ $$
 
 the graded adjoint action by the conjugate element $\delta(r)$; the adjoint is the action conjugated by the composite involution.
 
-**Proof.** The adjoint is anti-multiplicative, $\gamma^\dagger = \gamma$ and $\pi(\sigma(r)) = \pi(r)^\dagger$, so $\bigl(\pi(r)\gamma\bigr)^\dagger = \gamma^\dagger\pi(r)^\dagger = \gamma\pi(\sigma(r))$; by semilinearity $\gamma\pi(\sigma(r)) = \pi(\alpha(\sigma(r)))\gamma = \pi(\delta(r))\gamma$ (using $\alpha\sigma = \sigma\alpha$), which is $\ell_{\delta(r)}^\pi$. Uniqueness is the nondegeneracy of the module form. $\square$
+**Proof.** The adjoint is anti-multiplicative, $\gamma^\dagger = \gamma$ and $\pi(\sigma(r)) = \pi(r)^\dagger$, so $\bigl(\pi(r)\gamma\bigr)^\dagger = \gamma^\dagger\pi(r)^\dagger = \gamma\pi(\sigma(r))$; by semilinearity $\gamma\pi(\sigma(r)) = \pi(\alpha(\sigma(r)))\gamma = \pi(\delta(r))\gamma$ (using $\alpha\sigma = \sigma\alpha$), which is $\ell_{\delta(r)}^\pi$. Uniqueness is the nondegeneracy of the module form.
 
 ## The Graded Commutant and the `*`-Structure
 
@@ -43,7 +43,7 @@ the operators that intertwine the representation with its conjugate; the **`*`-m
 
 **Proposition (the commutant and the adjoint).** For a `*`-representation $\pi$ the graded commutant is closed under the adjoint when the module form is invariant, the adjoint of $\ell_r^\pi$ is $\ell_{\delta(r)}^\pi$, and $\ell_r^\pi$ is self-adjoint exactly when $\delta(r) = r$; it is unitary in the graded sense exactly when the defect $\delta(r)\alpha(r)$ is the unit of the module, i.e. $\pi(\delta(r)\alpha(r)) = \mathrm{id}_M$.
 
-**Proof.** The adjoint of $\ell_r^\pi$ is $\ell_{\delta(r)}^\pi$; self-adjointness is $\pi(\delta(r)) = \pi(r)$, i.e. $\delta(r) = r$ on the image of $\pi$; unitarity is $\bigl(\ell_r^\pi\bigr)^\dagger\ell_r^\pi = \pi(\delta(r)\alpha(r)) = \mathrm{id}_M$ by the composition law. The closure of the commutant under the adjoint is the standard compatibility of an intertwining relation with the adjoint for a `*`-representation. $\square$
+**Proof.** The adjoint of $\ell_r^\pi$ is $\ell_{\delta(r)}^\pi$; self-adjointness is $\pi(\delta(r)) = \pi(r)$, i.e. $\delta(r) = r$ on the image of $\pi$; unitarity is $\bigl(\ell_r^\pi\bigr)^\dagger\ell_r^\pi = \pi(\delta(r)\alpha(r)) = \mathrm{id}_M$ by the composition law. The closure of the commutant under the adjoint is the standard compatibility of an intertwining relation with the adjoint for a `*`-representation.
 
 **Remark (the reduction to the regular module).** On the regular module $M = A$ with $\pi$ the left regular representation and $\gamma = \alpha$, the graded commutant is the set of $T$ with $T L_r = L_{\delta(r)}T$, the *-module structure is the form of the category, and the whole theory of *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra* is the special case of the present article; the two-sided operators are the composites of the graded adjoint action with the right multiplications, *The Signed Adjoint Sandwich on a Banach Algebra*.
 

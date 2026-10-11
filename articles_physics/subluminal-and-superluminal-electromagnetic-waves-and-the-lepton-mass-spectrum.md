@@ -200,7 +200,7 @@ which is a formula found earlier by Barut (1980) by quite different arguments. I
 
 ### The numbers the formula gives
 
-The formula is elementary, and the corpus has recomputed it (see the companion `.context` for the script). With $\alpha=1/137.036$ and the electron mass as unit:
+With $\alpha=1/137.036$ and the electron mass as unit:
 
 | State | $\sum_{l=0}^{p}l^4$ | $M_p/m_e$ | $M_p$ (MeV) | Nearest measured lepton |
 |---|---|---|---|---|

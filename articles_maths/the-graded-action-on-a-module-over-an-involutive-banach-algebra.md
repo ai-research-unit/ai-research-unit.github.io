@@ -39,7 +39,7 @@ $$
 
 where $\lvert r\rvert$ is the parity of a homogeneous $r$. Equivalently $\pi \circ L_r = L_{\alpha(r)}\circ\pi$ and $L_r\circ\pi = \pi\circ L_{\alpha(r)}$ for the plain action $L_r(m) = r\cdot m$. Hence $\pi$ is $A^0$-linear but not $A$-linear unless $A^1 = 0$.
 
-**Proof.** The identity is the defining property of the parity operator; for homogeneous $r$ with $\alpha(r) = (-1)^{\lvert r\rvert}r$ it reads $\pi(r\cdot m) = (-1)^{\lvert r\rvert}r\cdot\pi(m)$. For even $r$ the equation reads $\pi(r\cdot m) = r\cdot\pi(m)$, which is $A^0$-linearity; for odd $r$ it reads $\pi(r\cdot m) = -r\cdot\pi(m)$, which contradicts $A$-linearity when the odd part is nonzero. $\square$
+**Proof.** The identity is the defining property of the parity operator; for homogeneous $r$ with $\alpha(r) = (-1)^{\lvert r\rvert}r$ it reads $\pi(r\cdot m) = (-1)^{\lvert r\rvert}r\cdot\pi(m)$. For even $r$ the equation reads $\pi(r\cdot m) = r\cdot\pi(m)$, which is $A^0$-linearity; for odd $r$ it reads $\pi(r\cdot m) = -r\cdot\pi(m)$, which contradicts $A$-linearity when the odd part is nonzero.
 
 **Proposition (the sign rule and the failure of associativity).** For all $r,s \in A$ and $m \in M$,
 
@@ -55,7 +55,7 @@ $$
 
 and an odd element produces an operator anticommuting with $\pi$, an even element one commuting with $\pi$.
 
-**Proof.** $r\star(s\star m) = r\star(s\cdot\pi(m)) = r\cdot\pi(s\cdot\pi(m)) = r\cdot\alpha(s)\cdot\pi^2(m) = r\alpha(s)\cdot m$; $(rs)\star m = rs\cdot\pi(m)$. The two agree for all $m$ exactly when $r\alpha(s) = rs$ as operators, that is $\alpha(s) = s$; this for every $r$ and every $s$ is $A = A^0$. For the sign rule, $\ell_r^\pi\pi(m) = r\cdot\pi^2(m) = r\cdot m$ and $\pi\ell_r^\pi(m) = \pi(r\cdot\pi(m)) = \alpha(r)\cdot\pi^2(m) = \alpha(r)\cdot m$, so $\pi\ell_r^\pi = L_{\alpha(r)} = (-1)^{\lvert r\rvert}L_r = (-1)^{\lvert r\rvert}\ell_r^\pi\pi$ for homogeneous $r$. $\square$
+**Proof.** $r\star(s\star m) = r\star(s\cdot\pi(m)) = r\cdot\pi(s\cdot\pi(m)) = r\cdot\alpha(s)\cdot\pi^2(m) = r\alpha(s)\cdot m$; $(rs)\star m = rs\cdot\pi(m)$. The two agree for all $m$ exactly when $r\alpha(s) = rs$ as operators, that is $\alpha(s) = s$; this for every $r$ and every $s$ is $A = A^0$. For the sign rule, $\ell_r^\pi\pi(m) = r\cdot\pi^2(m) = r\cdot m$ and $\pi\ell_r^\pi(m) = \pi(r\cdot\pi(m)) = \alpha(r)\cdot\pi^2(m) = \alpha(r)\cdot m$, so $\pi\ell_r^\pi = L_{\alpha(r)} = (-1)^{\lvert r\rvert}L_r = (-1)^{\lvert r\rvert}\ell_r^\pi\pi$ for homogeneous $r$.
 
 **Remark (the honest sign rule).** The graded action is the correct notion of an action twisted by the grading; the price is that it is not an action of the algebra but an action of the graded algebra in the sense of superalgebras: odd elements act as odd operators, and the sign rule $\pi\ell_r^\pi\pi = (-1)^{\lvert r\rvert}\ell_r^\pi$ is the statement that the operator is even or odd according to the parity of the element. The associative rewriting is recovered on the even part, which is the honest domain of the twisted action.
 
@@ -69,7 +69,7 @@ $$
 
 and the graded action of $A$ on itself is the signed left multiplication of *The Signed Left Multiplication on an Involutive Banach Algebra*.
 
-**Proof.** Substituting $M = A$, $r\cdot m = rm$ and $\pi = \alpha$ gives $\ell_r^\pi(m) = r\alpha(m) = \ell_r(m)$; the compatibility $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$ is the multiplicativity of $\alpha$. $\square$
+**Proof.** Substituting $M = A$, $r\cdot m = rm$ and $\pi = \alpha$ gives $\ell_r^\pi(m) = r\alpha(m) = \ell_r(m)$; the compatibility $\pi(r\cdot m) = \alpha(r)\cdot\pi(m)$ is the multiplicativity of $\alpha$.
 
 **Proposition (the even and the odd operators).** For $r \in A^0$ the operator $\ell_r^\pi$ preserves each of $M^0$ and $M^1$:
 
@@ -83,7 +83,7 @@ $$
 \lVert\ell_r^\pi\rVert \leq \lVert r\rVert\,\lVert\pi\rVert .
 $$
 
-**Proof.** On $M^0$, $\pi = \mathrm{id}$, so $\ell_r^\pi(m) = r\cdot m$; on $M^1$, $\pi = -\mathrm{id}$, so $\ell_r^\pi(m) = -r\cdot m$. For odd $r$, $\pi(\ell_r^\pi(m)) = \alpha(r)\cdot m = -r\cdot m$, so $\ell_r^\pi(m) \in M^1$ when $m \in M^0$ and in $M^0$ when $m \in M^1$. Boundedness is the composition of $L_r$ with $\pi$. $\square$
+**Proof.** On $M^0$, $\pi = \mathrm{id}$, so $\ell_r^\pi(m) = r\cdot m$; on $M^1$, $\pi = -\mathrm{id}$, so $\ell_r^\pi(m) = -r\cdot m$. For odd $r$, $\pi(\ell_r^\pi(m)) = \alpha(r)\cdot m = -r\cdot m$, so $\ell_r^\pi(m) \in M^1$ when $m \in M^0$ and in $M^0$ when $m \in M^1$. Boundedness is the composition of $L_r$ with $\pi$.
 
 ## Topology and Completion
 
@@ -95,7 +95,7 @@ $$
 
 the parity operator extending to the completion as the sign change of the two summands.
 
-**Proof.** $\pi$ is a continuous additive involution, so it is a homeomorphism with inverse itself; the graded action is the composite of the continuous action with $\pi$, hence continuous. For a graded $M$, the projections $p_0 = \tfrac12(\mathrm{id}+\pi)$ and $p_1 = \tfrac12(\mathrm{id}-\pi)$ are continuous when $2$ is invertible, so the grading is a topological direct sum and the completion of a direct sum is the direct sum of the completions. $\square$
+**Proof.** $\pi$ is a continuous additive involution, so it is a homeomorphism with inverse itself; the graded action is the composite of the continuous action with $\pi$, hence continuous. For a graded $M$, the projections $p_0 = \tfrac12(\mathrm{id}+\pi)$ and $p_1 = \tfrac12(\mathrm{id}-\pi)$ are continuous when $2$ is invertible, so the grading is a topological direct sum and the completion of a direct sum is the direct sum of the completions.
 
 **Example (a graded Banach module).** Let $A = A^0\oplus A^1$ be a graded Banach algebra and let $M = A^n$ with the componentwise action and the parity operator acting by $\alpha$ on each component. Then the graded action is componentwise the signed left multiplication, and the odd elements exchange the even and the odd parts of the module.
 

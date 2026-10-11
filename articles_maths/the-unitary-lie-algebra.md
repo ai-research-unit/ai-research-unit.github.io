@@ -28,7 +28,7 @@ $$
 [x,y]^{*} = (xy - yx)^{*} = y^{*}x^{*} - x^{*}y^{*} = (-y)(-x) - (-x)(-y) = yx - xy = -[x,y] ,
 $$
 
-using the anti-multiplicativity of $*$ and $*^{2} = \mathrm{id}$; hence $[x,y] \in S(A)$. The bracket is alternating because $[x,x] = x^{2} - x^{2} = 0$, it is additive in each variable, and the Jacobi identity is the expansion of the associativity of the product of $A$. For the scalars, let $\lambda \in R^{\varsigma}$ and $x, y \in S(A)$; then $(\lambda x)^{*} = \varsigma(\lambda)x^{*} = -\lambda x$, so $\lambda x \in S(A)$, and $[\lambda x, y] = \lambda(xy - yx) = \lambda[x,y]$, the scalar passing through both products by the first scalar rule of *Sesqualgebras*. $\square$
+using the anti-multiplicativity of $*$ and $*^{2} = \mathrm{id}$; hence $[x,y] \in S(A)$. The bracket is alternating because $[x,x] = x^{2} - x^{2} = 0$, it is additive in each variable, and the Jacobi identity is the expansion of the associativity of the product of $A$. For the scalars, let $\lambda \in R^{\varsigma}$ and $x, y \in S(A)$; then $(\lambda x)^{*} = \varsigma(\lambda)x^{*} = -\lambda x$, so $\lambda x \in S(A)$, and $[\lambda x, y] = \lambda(xy - yx) = \lambda[x,y]$, the scalar passing through both products by the first scalar rule of *Sesqualgebras*.
 
 **Remark.** The computation is the one of *Hermitian and Skew-Hermitian Elements*, §*The Skew-Hermitian Part is a Lie Algebra*, and the two steps are the only two used: the involution reverses the order of a product, and the two minus signs of the skew condition cancel in pairs. Neither the symmetrisation nor the invertibility of $2$ appears, and this is the structural reason the Lie case is the cheaper of the two.
 
@@ -38,7 +38,7 @@ using the anti-multiplicativity of $*$ and $*^{2} = \mathrm{id}$; hence $[x,y] \
 
 **Proposition.** $S(A)$ is a module over $R^{\varsigma}$ and not over $R$ in general, and $\mathfrak{u}(A)$ is a Lie algebra over $R^{\varsigma}$ and not over $R$. A scalar $\lambda$ with $\varsigma(\lambda) = -\lambda$ carries $S(A)$ into $H(A)$, so it is not a scalar of the Lie algebra.
 
-**Proof.** For $\lambda \in R^{\varsigma}$ and $s \in S(A)$, $(\lambda s)^{*} = \varsigma(\lambda)s^{*} = \lambda(-s) = -\lambda s$, so $\lambda s \in S(A)$. For $\varsigma(\lambda) = -\lambda$ the same computation gives $(\lambda s)^{*} = \varsigma(\lambda)s^{*} = (-\lambda)(-s) = \lambda s$, so $\lambda s \in H(A)$ and the scalar with $\varsigma(\lambda) = -\lambda$ carries the skew-Hermitian part to the Hermitian one. The scalars that preserve $S(A)$ are the $\lambda$ with $(\varsigma(\lambda) - \lambda)S(A) = 0$, a subring that contains $R^{\varsigma}$ and equals it when $S(A)$ has zero annihilator in $R$, over an integral domain for instance. This is *Hermitian and Skew-Hermitian Elements*, §*The Scalar Action*. $\square$
+**Proof.** For $\lambda \in R^{\varsigma}$ and $s \in S(A)$, $(\lambda s)^{*} = \varsigma(\lambda)s^{*} = \lambda(-s) = -\lambda s$, so $\lambda s \in S(A)$. For $\varsigma(\lambda) = -\lambda$ the same computation gives $(\lambda s)^{*} = \varsigma(\lambda)s^{*} = (-\lambda)(-s) = \lambda s$, so $\lambda s \in H(A)$ and the scalar with $\varsigma(\lambda) = -\lambda$ carries the skew-Hermitian part to the Hermitian one. The scalars that preserve $S(A)$ are the $\lambda$ with $(\varsigma(\lambda) - \lambda)S(A) = 0$, a subring that contains $R^{\varsigma}$ and equals it when $S(A)$ has zero annihilator in $R$, over an integral domain for instance. This is *Hermitian and Skew-Hermitian Elements*, §*The Scalar Action*.
 
 **Remark (the fixed ring is not literally the whole answer).** Over a ring with zero divisors the preserved scalars can be strictly larger than $R^{\varsigma}$. Let $R = k[x]/(x^{3})$, so that the nonzero element $x$ satisfies $x^{3} = 0$, and let $\varsigma$ be the substitution $\varsigma(x) = -x$; let $A = R$ with the involution $* = \varsigma$, and put $\lambda = 1 + x$ and $h = x^{2}$. Then $\varsigma(\lambda) = 1 - x \neq \lambda$ and $h$ is Hermitian, while $\lambda h = x^{2} + x^{3} = x^{2}$ is Hermitian, nonzero, and $\varsigma(\lambda) - \lambda = -2x$ annihilates $h$ because $x^{3} = 0$. So $\lambda$ preserves $H(A)$ without being fixed by $\varsigma$, and the annihilator condition above is not redundant. Over an integral domain the factor $(\varsigma(\lambda) - \lambda)$ cannot annihilate a nonzero element, and the two statements agree.
 
@@ -56,7 +56,7 @@ $$
 
 In particular the skew-Hermitian part is closed under the product exactly when any two of its elements anticommute, and it is carried into the Hermitian part exactly when they commute.
 
-**Proof.** $(xy)^{*} = y^{*}x^{*} = (-y)(-x) = yx$. Hence $xy$ is skew-Hermitian, that is $(xy)^{*} = -xy$, exactly when $yx = -xy$; and it is Hermitian, that is $(xy)^{*} = xy$, exactly when $yx = xy$. $\square$
+**Proof.** $(xy)^{*} = y^{*}x^{*} = (-y)(-x) = yx$. Hence $xy$ is skew-Hermitian, that is $(xy)^{*} = -xy$, exactly when $yx = -xy$; and it is Hermitian, that is $(xy)^{*} = xy$, exactly when $yx = xy$.
 
 **Remark.** The product of two skew-Hermitian elements is therefore skew-Hermitian only in the anticommuting case and Hermitian only in the commuting case, and in general it is neither. Both cases occur: in $M_2(\mathbb{C})$ the skew-Hermitian matrices $x = E_{12} - E_{21}$ and $y = i(E_{11} - E_{22})$ anticommute, and $xy = -iE_{12} - iE_{21}$ is skew-Hermitian, while $x$ and the central $z = i(E_{11} + E_{22})$ commute and $xz = iE_{12} - iE_{21}$ is Hermitian. The rule is the reason the bracket is taken rather than the product: the commutator of two skew-Hermitian elements is always skew-Hermitian, whereas the product is not, and $\mathfrak{u}(A)$ is a Lie algebra and not an algebra.
 
@@ -68,7 +68,7 @@ $$
 [x,y] = xy - yx \in S(A), \qquad xy + yx \in H(A) .
 $$
 
-**Proof.** $(xy + yx)^{*} = y^{*}x^{*} + x^{*}y^{*} = (-y)(-x) + (-x)(-y) = yx + xy$, so the sum is Hermitian; the difference is skew-Hermitian by the closure theorem above. $\square$
+**Proof.** $(xy + yx)^{*} = y^{*}x^{*} + x^{*}y^{*} = (-y)(-x) + (-x)(-y) = yx + xy$, so the sum is Hermitian; the difference is skew-Hermitian by the closure theorem above.
 
 **Remark.** The two combinations are exactly the symmetrisation and the antisymmetrisation of the two products $xy$ and $yx$, and the pair $(xy + yx, xy - yx)$ separates the Hermitian and the skew-Hermitian parts of the sesquilinear product of two skew-Hermitian elements. This is the same splitting that *The Sesquilinear Commutator* and *The Sesquilinear Symmetrised Product* perform on the product of two general elements, read on the skew-Hermitian half, and it is the reason the Hermitian and the skew-Hermitian elements are the natural arguments of the two halves of the theory.
 
@@ -96,7 +96,7 @@ $$
 [\mathrm{ad}_{s},\mathrm{ad}_{t}](x) = \mathrm{ad}_{s}\bigl(\mathrm{ad}_{t}(x)\bigr) - \mathrm{ad}_{t}\bigl(\mathrm{ad}_{s}(x)\bigr) = [s,[t,x]] - [t,[s,x]] = [[s,t],x] = \mathrm{ad}_{[s,t]}(x) .
 $$
 
-Finally $\mathrm{ad}_{s} = 0$ if and only if $sx = xs$ for every $x$, that is if and only if $s$ is central. $\square$
+Finally $\mathrm{ad}_{s} = 0$ if and only if $sx = xs$ for every $x$, that is if and only if $s$ is central.
 
 **Remark.** The inner derivations of $\mathfrak{u}(A)$ are therefore the inner $*$-derivations of $A$ generated by the skew-Hermitian elements, and the central skew-Hermitian elements have the same standing in $\mathfrak{u}(A)$ as the centre has in $A$: they are the derivations that vanish. The general theory of the derivations, their module structure and the twisted derivation that the derived operation $x \star y = xy^{*}$ forces are *Derivations of a Sesqualgebra*; the Lie algebra generated by the $\mathrm{ad}_{s}$ is the inner part of $\operatorname{Der}(A)$ and is the subject of *Derivations of a Sesqualgebra*, §*The Inner Derivations*.
 
@@ -110,7 +110,7 @@ $$
 
 The assignment $u \mapsto \alpha_{u}$ is a homomorphism of the group $U(A)$ into the automorphism group of $\mathfrak{u}(A)$, and its kernel is the group of the central unitary elements.
 
-**Proof.** For $s \in S(A)$, $\alpha_{u}(s)^{*} = (usu^{*})^{*} = u s^{*} u^{*} = -usu^{*}$, so $\alpha_{u}(s) \in S(A)$. For the bracket, $\alpha_{u}(xy - yx) = uxyu^{*} - uyxu^{*} = (uxu^{*})(uyu^{*}) - (uyu^{*})(uxu^{*}) = [\alpha_{u}(x), \alpha_{u}(y)]$, using the multiplicativity of the conjugation by $u$. The map is multiplicative in $u$, since $\alpha_{u}\alpha_{v} = \alpha_{uv}$, and it fixes $x$ for all $x$ exactly when $ux = xu$ for all $x$, that is when $u$ is central; this is the computation of *Units and the Unitary Elements*, §*Inner $*$-Automorphisms*, read on the skew-Hermitian half. $\square$
+**Proof.** For $s \in S(A)$, $\alpha_{u}(s)^{*} = (usu^{*})^{*} = u s^{*} u^{*} = -usu^{*}$, so $\alpha_{u}(s) \in S(A)$. For the bracket, $\alpha_{u}(xy - yx) = uxyu^{*} - uyxu^{*} = (uxu^{*})(uyu^{*}) - (uyu^{*})(uxu^{*}) = [\alpha_{u}(x), \alpha_{u}(y)]$, using the multiplicativity of the conjugation by $u$. The map is multiplicative in $u$, since $\alpha_{u}\alpha_{v} = \alpha_{uv}$, and it fixes $x$ for all $x$ exactly when $ux = xu$ for all $x$, that is when $u$ is central; this is the computation of *Units and the Unitary Elements*, §*Inner $*$-Automorphisms*, read on the skew-Hermitian half.
 
 **Remark.** The unitary group therefore acts on its own Lie algebra by the adjoint action, the elements of the kernel being the central unitary elements; for $A = M_n(\mathbb{C})$ that kernel is the circle of the scalar unitary matrices. The same inner $*$-automorphisms act on the Hermitian Jordan algebra of *The Hermitian Jordan Algebra* by $x \mapsto uxu^{*}$, so that the two halves of the algebra carry the action of the same group, one as a Lie algebra and one as a Jordan algebra. The relation of the group to its Lie algebra through the exponential map belongs to Part II of the series and is *The Exponential Map on a Banach Sesqualgebra*.
 
@@ -118,7 +118,7 @@ The assignment $u \mapsto \alpha_{u}$ is a homomorphism of the group $U(A)$ into
 
 **Theorem.** Put $\varsigma = \mathrm{id}$. Then the fixed ring is all of $R$, the skew-Hermitian part is an $R$-submodule of $A$, and $\mathfrak{u}(A)$ is a Lie algebra over $R$, the skew part of *The Self-Adjoint Part of an Algebra*, §*The Skew Part as a Lie Algebra*.
 
-**Proof.** With $\varsigma = \mathrm{id}$ the scalar rule of the two halves loses its twist, so $S(A)$ is stable under every scalar of $R$; the bracket is $R$-bilinear because the products are, and the closure and the Jacobi identity are the theorem above. $\square$
+**Proof.** With $\varsigma = \mathrm{id}$ the scalar rule of the two halves loses its twist, so $S(A)$ is stable under every scalar of $R$; the bracket is $R$-bilinear because the products are, and the closure and the Jacobi identity are the theorem above.
 
 **Remark.** The comparison is the one of the two twins, and of the rows below only the first changes: the bilinear case is the sesquilinear one with the twist forgotten.
 

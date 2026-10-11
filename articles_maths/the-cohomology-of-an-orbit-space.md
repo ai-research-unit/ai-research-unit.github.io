@@ -16,13 +16,13 @@ Throughout, $(X,\sigma)$ is a space with an involution, $Q = X/\sigma$ is its **
 
 **Proposition.** The projection is continuous, open and surjective, and it is a homeomorphism from the fixed set $F$ onto its image; the pair $(\pi,Q)$ is characterised by the universal property that a continuous map $f : X\to Y$ with $f\sigma = f$ factors uniquely as $f = \bar f\circ\pi$ for a continuous $\bar f : Q\to Y$. The construction is functorial: an equivariant map $X\to X'$ induces a continuous map $Q\to Q'$, and an equivariant homotopy induces a homotopy.
 
-*Proof.* The quotient map of a group action is open and continuous by the definition of the quotient topology; on the fixed set the projection is a bijection onto its image with continuous inverse because the intersection of the fixed set with a saturated open set is open; the universal property and the functoriality are the standard ones for a quotient. $\square$
+*Proof.* The quotient map of a group action is open and continuous by the definition of the quotient topology; on the fixed set the projection is a bijection onto its image with continuous inverse because the intersection of the fixed set with a saturated open set is open; the universal property and the functoriality are the standard ones for a quotient.
 
 ### The Free Part
 
 **Theorem.** The involution restricts to a free involution of the complement $X\setminus F$, on which the projection is a two-fold covering, and the quotient $Q$ is the union of the double cover $\pi : X\setminus F\to Q\setminus \pi(F)$ and the closed copy of the fixed set; the projection is a double cover over exactly the complement of $\pi(F)$, and it is a homeomorphism over $\pi(F)$. The quotient is a topological manifold when $X$ is one and the action is free, and at the fixed set the quotient is the orbit space of the linear isotropy action on the normal directions.
 
-*Proof.* A point is fixed exactly when its orbit is a single point, so on the complement every orbit has two points and the projection is a double cover there; the fixed set maps homeomorphically, and the local structure at a fixed point is the quotient of a neighbourhood by the linear involution, by the slice theorem of *Equivariant Homotopy Theory*. $\square$
+*Proof.* A point is fixed exactly when its orbit is a single point, so on the complement every orbit has two points and the projection is a double cover there; the fixed set maps homeomorphically, and the local structure at a fixed point is the quotient of a neighbourhood by the linear involution, by the slice theorem of *Equivariant Homotopy Theory*.
 
 ## The Two Comparisons
 
@@ -36,7 +36,7 @@ $$
 
 whose image is contained in the invariants, $\sigma^*\pi^* = \pi^*$; on the fixed set the pullback is the restriction, and the pullback is natural for equivariant maps.
 
-*Proof.* The pullback is the map on cohomology induced by the continuous map $\pi$, hence a ring homomorphism, and $\pi\sigma=\pi$ gives $\sigma^*\pi^*=\pi^*$; the restriction statement is that $\pi$ is a homeomorphism on the fixed set. $\square$
+*Proof.* The pullback is the map on cohomology induced by the continuous map $\pi$, hence a ring homomorphism, and $\pi\sigma=\pi$ gives $\sigma^*\pi^*=\pi^*$; the restriction statement is that $\pi$ is a homeomorphism on the fixed set.
 
 ### The Transfer and the Invariants
 
@@ -48,7 +48,7 @@ $$
 
 so that $\pi^*\tau$ is the norm of the involution on $H^*(X;k)$ and its image is the invariant submodule; over a field in which two is invertible the map $\tfrac12\pi^*\tau$ is the projection onto the invariants and $\tau$ is an isomorphism onto the invariants up to the scalar, while over $\mathbb{F}_2$ the first identity is $\tau\pi^*=0$. These are the cohomological forms of the identities of *The Transfer and the Involution*.
 
-*Proof.* The chain identities $p_\#\tau=2$ and $\tau p_\#=N$ of *The Transfer and the Involution* dualise to the stated identities, the norm has image the invariants because $N = 1+\sigma^*$ and $\sigma^*N = N$, and over a field where two is invertible the idempotent $\tfrac12N$ realises the projection. $\square$
+*Proof.* The chain identities $p_\#\tau=2$ and $\tau p_\#=N$ of *The Transfer and the Involution* dualise to the stated identities, the norm has image the invariants because $N = 1+\sigma^*$ and $\sigma^*N = N$, and over a field where two is invertible the idempotent $\tfrac12N$ realises the projection.
 
 ### The Comparison with the Homotopy Quotient
 
@@ -66,7 +66,7 @@ $$
 
 which is the identity on the quotient when the action is free: for a free involution $X_{\mathbb{Z}/2}\simeq Q$ and the comparison is an isomorphism, so the orbit-space cohomology and the equivariant cohomology coincide. For a non-free action the comparison is not an isomorphism; the difference between the two is the contribution of the fixed set, and the map factors the pullback $\pi^*$ through the restriction to the fibre of the Borel fibration.
 
-*Proof.* The Borel construction is natural in the space with action, so the map $\mathrm{pt}\to EG$ (the inclusion of a point) induces a map of homotopy quotients in the stated direction; for a free action the projection $EG\times_{\mathbb{Z}/2}X\to X/\sigma$ is a homotopy equivalence by *Two-Fold Coverings and the Borel Construction*; the non-free case is the statement of the localisation of *Equivariant Cohomology*. $\square$
+*Proof.* The Borel construction is natural in the space with action, so the map $\mathrm{pt}\to EG$ (the inclusion of a point) induces a map of homotopy quotients in the stated direction; for a free action the projection $EG\times_{\mathbb{Z}/2}X\to X/\sigma$ is a homotopy equivalence by *Two-Fold Coverings and the Borel Construction*; the non-free case is the statement of the localisation of *Equivariant Cohomology*.
 
 ## Grothendieck's Theorem in Inverted Characteristic
 
@@ -80,13 +80,13 @@ $$
 
 is an isomorphism onto the invariants, and it is injective with image the invariant subalgebra. Equivalently, the cohomology of the orbit space is the invariant cohomology of the space, and the transfer realises the inverse: $\pi^*\circ\tfrac12\tau = \mathrm{id}$ and $\tfrac12\tau\circ\pi^*=\mathrm{id}$ on the invariants.
 
-*Proof.* By the second comparison theorem the action is effectively free over $k$ modulo the fixed set, and the transfer argument of *The Transfer and the Involution* applies: $\tfrac12 N$ is the projection onto the invariants and it factors through $\pi^*$ because $\pi^*\tau=N$, while $\tau\pi^*=2$ shows that $\tfrac12\tau$ is a left inverse; the two together give the isomorphism. $\square$
+*Proof.* By the second comparison theorem the action is effectively free over $k$ modulo the fixed set, and the transfer argument of *The Transfer and the Involution* applies: $\tfrac12 N$ is the projection onto the invariants and it factors through $\pi^*$ because $\pi^*\tau=N$, while $\tau\pi^*=2$ shows that $\tfrac12\tau$ is a left inverse; the two together give the isomorphism.
 
 ### The Consequences
 
 **Corollary.** Over a field in which two is invertible, the invariant classes are exactly the classes pulled back from the quotient, the quotient map is injective on cohomology, and the cohomology of the orbit space is computed by taking invariants: $H^*(Q;k)\cong H^*(X;k)^\sigma$. In particular the Betti numbers of the quotient are the dimensions of the invariant cohomology, and the Euler characteristics are related by $\chi(Q) = \tfrac12(\chi(X)+\chi(F))$ over the rationals.
 
-*Proof.* The isomorphism is the theorem; the Euler-characteristic formula follows from the additivity on the free part and the fixed part, the free part contributing half its Euler characteristic and the fixed set contributing its own. $\square$
+*Proof.* The isomorphism is the theorem; the Euler-characteristic formula follows from the additivity on the free part and the fixed part, the free part contributing half its Euler characteristic and the fixed set contributing its own.
 
 ## The Mod 2 Case and the Cartan–Leray Sequence
 
@@ -100,13 +100,13 @@ $$
 
 with coefficients in the cohomology of $X$ regarded as a module over the group ring $\mathbb{F}_2[\mathbb{Z}/2]$ through the action $\sigma^*$; the sequence is natural for equivariant maps, and for the free action it converges to the quotient cohomology from the group cohomology of the coefficient module.
 
-*Proof.* The Cartan–Leray spectral sequence of the covering with group $\mathbb{Z}/2$, obtained from the filtration of the singular complex of $Q$ by the cover; the identification of the $E_2$ page with the group cohomology of the coefficient module is the standard one for the covering, and the convergence is to the cohomology of the total space of the cover. $\square$
+*Proof.* The Cartan–Leray spectral sequence of the covering with group $\mathbb{Z}/2$, obtained from the filtration of the singular complex of $Q$ by the cover; the identification of the $E_2$ page with the group cohomology of the coefficient module is the standard one for the covering, and the convergence is to the cohomology of the total space of the cover.
 
 ### The Kernel of the Pullback
 
 **Theorem.** Over $\mathbb{F}_2$ the pullback of the quotient is not in general injective; its kernel is the ideal of the quotient cohomology consisting of the classes whose restriction to the free part of the cover vanishes, and it is annihilated by the Euler class in the free case. When the involution acts trivially on $H^*(X;\mathbb{F}_2)$ the pullback is an isomorphism onto the invariants if and only if the action is free and the cover is trivial in cohomology; otherwise the quotient has extra classes and the pullback has a kernel, of which the antipodal covering $S^n\to\mathbb{RP}^n$ is the model, whose pullback kills every power of the generator except the zeroth and the top of the quotient ring.
 
-*Proof.* The kernel is by definition the classes restricting to zero; in the free case the Gysin sequence of *The Gysin Sequence of a Two-Fold Covering* identifies the kernel of $\pi^*$ with the image of $\smile e$, hence annihilated by $e$; the model is computed from the cohomology of the projective space. $\square$
+*Proof.* The kernel is by definition the classes restricting to zero; in the free case the Gysin sequence of *The Gysin Sequence of a Two-Fold Covering* identifies the kernel of $\pi^*$ with the image of $\smile e$, hence annihilated by $e$; the model is computed from the cohomology of the projective space.
 
 ### The Comparison with the Equivariant Cohomology
 
@@ -118,11 +118,11 @@ with coefficients in the cohomology of $X$ regarded as a module over the group r
 
 **Theorem.** The image $\pi(F)$ of the fixed set is the singular locus of the projection: over the complement of $\pi(F)$ the projection is a double cover, so the quotient there has the cohomology of the invariants, and at $\pi(F)$ the projection is a homeomorphism, so the fixed set survives to the quotient. The cohomology of $Q$ is therefore computed from the cohomology of the free part and the cohomology of $F$ by the Mayer–Vietoris sequence of the decomposition $Q = (Q\setminus\pi(F))\cup\pi(F)$, and the mixed terms are the invariant classes of the free part.
 
-*Proof.* The projection is a double cover over $Q\setminus\pi(F)$ and a homeomorphism over $\pi(F)$, so the Mayer–Vietoris sequence of *Exact Sequences* applies to the two closed pieces; the free part contributes its invariant cohomology and the fixed part its own cohomology, with the connecting map the restriction. $\square$
+*Proof.* The projection is a double cover over $Q\setminus\pi(F)$ and a homeomorphism over $\pi(F)$, so the Mayer–Vietoris sequence of *Exact Sequences* applies to the two closed pieces; the free part contributes its invariant cohomology and the fixed part its own cohomology, with the connecting map the restriction.
 
 **Corollary.** For a free involution the quotient has no singular locus, $H^*(Q;k)\cong H^*(X;k)^\sigma$ over a field in which two is invertible, and over $\mathbb{F}_2$ the quotient cohomology is computed by the Cartan–Leray sequence; for an involution with a fixed set the quotient cohomology is the invariant cohomology of the free part glued to the cohomology of the fixed set along the restriction.
 
-*Proof.* The two cases are the two extremes of the decomposition; the free case is Grothendieck's theorem and the fixed case is the Mayer–Vietoris computation. $\square$
+*Proof.* The two cases are the two extremes of the decomposition; the free case is Grothendieck's theorem and the fixed case is the Mayer–Vietoris computation.
 
 ## The Invariants and the Sign Decomposition
 
@@ -144,13 +144,13 @@ $$
 
 with $H^*(X;k)^+ = H^*(X;k)^\sigma$; the quotient cohomology is the invariant part, $H^*(Q;k)\cong H^*(X;k)^+$, and the coinvariants are canonically isomorphic to the invariants through the averaging, the quotient of $H^*(X;k)$ by the anti-invariant part being the invariant part.
 
-*Proof.* The idempotent algebra is the computation $p_\pm^2=p_\pm$ and $p_+p_-=0$ from $\sigma^{*2}=\mathrm{id}$; the fixed part is the image of $p_+$ because $p_+a=a$ exactly when $\sigma^*a=a$, and the coinvariant statement follows from the decomposition. $\square$
+*Proof.* The idempotent algebra is the computation $p_\pm^2=p_\pm$ and $p_+p_-=0$ from $\sigma^{*2}=\mathrm{id}$; the fixed part is the image of $p_+$ because $p_+a=a$ exactly when $\sigma^*a=a$, and the coinvariant statement follows from the decomposition.
 
 ### The Transfer as the Section
 
 **Theorem.** In the sign decomposition the pullback is the inclusion of the invariant part up to the identification and the transfer is twice it: $\tau\pi^*=2$ and $\pi^*\tau=1+\sigma^*=2p_+$, so $\tfrac12\tau$ is the inverse of $\pi^*$ on the invariants and the norm is $2p_+$. The transfer is therefore the section that splits the pullback, and the quotient cohomology is the image of the idempotent $p_+$ applied to the cohomology of the space.
 
-*Proof.* The identities are those of the section on the transfer and the invariance, and the idempotent form is $1+\sigma^*=2p_+$. $\square$
+*Proof.* The identities are those of the section on the transfer and the invariance, and the idempotent form is $1+\sigma^*=2p_+$.
 
 ## The Local Structure at the Fixed Set
 
@@ -164,13 +164,13 @@ $$
 
 and the quotient is a topological manifold only when $V^-=0$ or $V^+=0$, that is when the involution is trivial or free; otherwise the image of the fixed set is a singular stratum.
 
-*Proof.* An involution of a real vector space has the minimal polynomial dividing $t^2-1$, hence is diagonalisable with eigenvalues $\pm1$; the quotient of the complement by the antipodal identification is the cone on the projective space of $V^-$, which is the quotient of the unit sphere, and the product decomposition is the diagonalisation. $\square$
+*Proof.* An involution of a real vector space has the minimal polynomial dividing $t^2-1$, hence is diagonalisable with eigenvalues $\pm1$; the quotient of the complement by the antipodal identification is the cone on the projective space of $V^-$, which is the quotient of the unit sphere, and the product decomposition is the diagonalisation.
 
 ### The Local Cohomology
 
 **Theorem.** The local cohomology of the quotient at the image of a fixed point is computed by the Gysin sequence of the double cover of the punctured disk, and for the linear model it is the cohomology of the cone on $\mathbb{RP}^{\dim V^- - 1}$, which is that of a point in degree zero together with the reduced cohomology of the projective space shifted up by one, the top class contributing in degree $\dim V^-$; the singular stratum therefore contributes the mod 2 classes of the projective space of the normal directions, in accordance with the fixed-set contribution of the Smith theory.
 
-*Proof.* The punctured disk is homotopy equivalent to the sphere and the double cover there is the antipodal covering, whose cohomology is computed by the Gysin sequence of *The Gysin Sequence of a Two-Fold Covering*; the cone on a space raises the reduced cohomology by one degree, so the top class of $\mathbb{RP}^{\dim V^- - 1}$ contributes in degree $\dim V^-$, and the cone adds the point in degree zero. $\square$
+*Proof.* The punctured disk is homotopy equivalent to the sphere and the double cover there is the antipodal covering, whose cohomology is computed by the Gysin sequence of *The Gysin Sequence of a Two-Fold Covering*; the cone on a space raises the reduced cohomology by one degree, so the top class of $\mathbb{RP}^{\dim V^- - 1}$ contributes in degree $\dim V^-$, and the cone adds the point in degree zero.
 
 ## Examples
 

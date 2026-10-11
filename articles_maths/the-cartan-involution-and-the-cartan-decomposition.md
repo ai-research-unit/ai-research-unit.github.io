@@ -29,11 +29,11 @@ $$
 \kappa_\theta(\theta x,\theta y)=\kappa_\theta(x,y),\qquad \kappa_\theta(\theta x,y)=\kappa_\theta(x,\theta y).
 $$
 
-**Proof.** Symmetry follows from the symmetry of $\kappa$ and $\theta^2=\mathrm{id}$; the invariance under $\theta$ is the same computation. $\square$
+**Proof.** Symmetry follows from the symmetry of $\kappa$ and $\theta^2=\mathrm{id}$; the invariance under $\theta$ is the same computation.
 
 **Proposition.** If $\theta$ is a Cartan involution then so is every conjugate $g\theta g^{-1}$ by an automorphism $g$ that preserves the form up to the appropriate condition, and the Cartan involution is unique up to conjugacy when $\mathrm{G}_0$ is semisimple: any two differ by an inner automorphism.
 
-**Proof.** The definiteness of $\kappa_\theta$ is preserved by the conjugation when $g$ preserves $\kappa$; the uniqueness up to conjugacy is the standard theorem of the theory of real semisimple Lie algebras, recorded in *Real Forms of a Complex Lie Algebra*, and is quoted. $\square$
+**Proof.** The definiteness of $\kappa_\theta$ is preserved by the conjugation when $g$ preserves $\kappa$; the uniqueness up to conjugacy is the standard theorem of the theory of real semisimple Lie algebras, recorded in *Real Forms of a Complex Lie Algebra*, and is quoted.
 
 ## The Cartan Decomposition
 
@@ -49,19 +49,19 @@ $$
 [\mathrm{K},\mathrm{K}]\subseteq\mathrm{K},\qquad [\mathrm{K},\mathrm{P}]\subseteq\mathrm{P},\qquad [\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}.
 $$
 
-**Proof.** An involution of a vector space whose square is the identity is diagonalisable with eigenvalues $\pm1$ in characteristic not two, giving the direct sum; the bracket relations follow from applying $\theta$ to $[x,y]$, which is an automorphism, and reading the sign according to the degrees of $x$ and $y$. $\square$
+**Proof.** An involution of a vector space whose square is the identity is diagonalisable with eigenvalues $\pm1$ in characteristic not two, giving the direct sum; the bracket relations follow from applying $\theta$ to $[x,y]$, which is an automorphism, and reading the sign according to the degrees of $x$ and $y$.
 
 **Corollary.** $\mathrm{K}$ is a subalgebra of $\mathrm{G}_0$, $\mathrm{P}$ is a $\mathrm{K}$-module under the adjoint action, and the quotient $\mathrm{G}_0/\mathrm{K}$ is identified with $\mathrm{P}$ as a $\mathrm{K}$-module; the pair $(\mathrm{G}_0,\mathrm{K})$ is a **symmetric pair**, and the involution is the one of *Symmetric Pairs of a Lie Algebra*.
 
 **Proposition.** The two summands are the kernels of the projectors $\tfrac12(\mathrm{id}\pm\theta)$, which are operators of the algebra commuting with the adjoint action; the map $x\mapsto\theta x$ is the operator that multiplies $\mathrm{K}$ by $+1$ and $\mathrm{P}$ by $-1$.
 
-**Proof.** The projectors are the standard spectral projectors of a diagonalisable involution, and they commute with every automorphism commuting with $\theta$, in particular with the $\operatorname{ad}_x$ for $x$ in $\mathrm{K}$. $\square$
+**Proof.** The projectors are the standard spectral projectors of a diagonalisable involution, and they commute with every automorphism commuting with $\theta$, in particular with the $\operatorname{ad}_x$ for $x$ in $\mathrm{K}$.
 
 ### The Brackets and the Symmetric Structure
 
 **Theorem.** The bracket relations of the Cartan decomposition make $\mathrm{G}_0$ a $\mathbb{Z}/2$-graded Lie algebra with the even part $\mathrm{K}$ and the odd part $\mathrm{P}$, and the involution $\theta$ is the grade involution of that grading.
 
-**Proof.** The relations $[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}$, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$ are exactly the axioms of a $\mathbb{Z}/2$-graded Lie algebra with even part $\mathrm{K}$, and $\theta$ acts by $+1$ on the even part and $-1$ on the odd part, which is the grade involution. $\square$
+**Proof.** The relations $[\mathrm{K},\mathrm{K}]\subseteq\mathrm{K}$, $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$, $[\mathrm{P},\mathrm{P}]\subseteq\mathrm{K}$ are exactly the axioms of a $\mathbb{Z}/2$-graded Lie algebra with even part $\mathrm{K}$, and $\theta$ acts by $+1$ on the even part and $-1$ on the odd part, which is the grade involution.
 
 **Corollary.** The symmetric pair $(\mathrm{G}_0,\mathrm{K})$ is the graded Lie algebra of *Graded Lie Algebras with an Involution*, and the structure of the pair is the structure of the grading.
 
@@ -71,7 +71,7 @@ $$
 
 **Proposition.** $\mathrm{K}$ is the largest subalgebra of $\mathrm{G}_0$ on which $\theta$ acts as the identity, and it is a reductive subalgebra: its Killing form is the restriction of $\kappa$ up to the factor and its centre is contained in the centre of $\mathrm{K}$.
 
-**Proof.** The fixed set of an automorphism is a subalgebra, and it is the largest on which the automorphism is the identity; the reductive statement is the standard property of the fixed algebra of a Cartan involution, recorded in *Real Forms of a Complex Lie Algebra*. $\square$
+**Proof.** The fixed set of an automorphism is a subalgebra, and it is the largest on which the automorphism is the identity; the reductive statement is the standard property of the fixed algebra of a Cartan involution, recorded in *Real Forms of a Complex Lie Algebra*.
 
 **Remark (forward reference).** The name *compact* records that $\mathrm{K}$ is the Lie algebra of a maximal compact subgroup of the adjoint group of $\mathrm{G}_0$; the compactness of that subgroup is a group-theoretic and topological condition, treated with the Lie groups, and is named here only. The Cartan decomposition is the algebraic shadow of the decomposition of a semisimple Lie group into a compact subgroup and a subspace, and the group statement is deferred.
 
@@ -85,7 +85,6 @@ $$
 
 a one-dimensional algebra, and negates the complementary space $\mathrm{P}=\langle h,\ e+f\rangle$ of dimension two; the pair $(\mathrm{G}_0,\mathrm{K})$ is the symmetric pair of the upper half-plane, whose group theory belongs to a later Part. The form $\kappa_\theta(x,y)=-\kappa(x,\theta y)$ is positive definite on $\mathrm{G}_0$, as the theory requires; the decomposition is an eigenspace decomposition of the involution and no metric reading is taken.
 
-**Verified.** The involution $\theta(x)=-x^{t}$ was checked to be an algebra automorphism of $\mathrm{sl}(2,\mathbb{R})$ on the three brackets, and the eigenspace dimensions were checked to be $1$ and $2$; the bracket relations of the decomposition were verified on the basis.
 
 ## Summary
 

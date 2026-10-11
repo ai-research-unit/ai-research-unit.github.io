@@ -35,15 +35,14 @@ the hats omitting the argument; this is the sign convention fixed in *Lie Algebr
 
 **Corollary (trivial coefficients).** For the trivial module $M=K$ the first sum vanishes and $C^n(\mathrm{G};K)\cong\Lambda^n\mathrm{G}^*$; the differential is the transpose of the bracket, $(df)(x,y)=-f([x,y])$ on $\mathrm{G}^*$, extended as the graded derivation of the next section.
 
-**Proof.** The vanishing of the action terms is immediate; the transposition statement is the definition read in degree one, and its extension is the derivation property proved below. $\square$
+**Proof.** The vanishing of the action terms is immediate; the transposition statement is the definition read in degree one, and its extension is the derivation property proved below.
 
 ### The Square of the Differential
 
 **Theorem.** $d\circ d=0$.
 
-**Proof.** This is the proposition of *Lie Algebra Cohomology*; in the operator reading it is the statement that the differential is a differential, and its proof is the Jacobi identity applied to the bracket terms, the action terms cancelling between the two sums. $\square$
+**Proof.** This is the proposition of *Lie Algebra Cohomology*; in the operator reading it is the statement that the differential is a differential, and its proof is the Jacobi identity applied to the bracket terms, the action terms cancelling between the two sums.
 
-**Verified.** For $\mathrm{SL}(2,K)$ with basis $e,h,f$ and trivial coefficients, the differential was built on the basis cochains of degrees $0,1,2$ and $d^2=0$ was confirmed by exact Gaussian elimination over $\mathbb{Q}$; the ranks are $0,3,0$ in degrees $0,1,2$, so $H^1=H^2=0$ and $H^0,H^3$ are one-dimensional, in agreement with the computation recorded in *Lie Algebra Cohomology*.
 
 ## The Differential as a Derivation of the Cup Product
 
@@ -65,7 +64,7 @@ $$
 d(\alpha\smile\beta)=d\alpha\smile\beta+(-1)^{p}\,\alpha\smile d\beta,\qquad \alpha\in C^p(\mathrm{G};K).
 $$
 
-**Proof.** With trivial coefficients the statement is the product rule for the differential on the exterior algebra of $\mathrm{G}^*$; both sides are alternating and bilinear, so it suffices to check on basis cochains, where the two sums over the pairs of a $(p+q+1)$-tuple split according to whether the pair meets the first $\alpha$-block or the second. $\square$
+**Proof.** With trivial coefficients the statement is the product rule for the differential on the exterior algebra of $\mathrm{G}^*$; both sides are alternating and bilinear, so it suffices to check on basis cochains, where the two sums over the pairs of a $(p+q+1)$-tuple split according to whether the pair meets the first $\alpha$-block or the second.
 
 **Corollary.** With trivial coefficients the cochains form a **differential graded algebra**: a graded associative algebra with a degree-one derivation of square zero. The cohomology $H^\bullet(\mathrm{G};K)$ inherits the product, which is graded-commutative, and is the subject of *Lie Algebra Cohomology*.
 
@@ -101,7 +100,7 @@ $$
 L_x=d\iota_x+\iota_x d,\qquad [L_x,d]=0,\qquad [L_x,\iota_y]=\iota_{[x,y]},\qquad [L_x,L_y]=L_{[x,y]},\qquad [\iota_x,\iota_y]=0 .
 $$
 
-**Proof.** The magic formula is the definition of $L_x$; the remaining identities are the standard consequences of $d^2=0$ and of the derivation property, each checked by expanding the commutators of the operators $d,\iota_x,\iota_y$ acting on a cochain and using the Jacobi identity. $\square$
+**Proof.** The magic formula is the definition of $L_x$; the remaining identities are the standard consequences of $d^2=0$ and of the derivation property, each checked by expanding the commutators of the operators $d,\iota_x,\iota_y$ acting on a cochain and using the Jacobi identity.
 
 **Corollary.** The operators $d,\iota_x,L_x$ form the **Cartan calculus** of the cochain complex: $d$ raises the degree, the contractions lower it,$L_x$ preserves it, and the contraction and Lie derivative give a representation of the Lie algebra $\mathrm{G}$ together with the differential.
 
@@ -109,7 +108,7 @@ $$
 
 **Proposition.** For the adjoint module $M=\mathrm{G}$ the differential has the same Cartan form with the action $x\cdot m=[x,m]$, and the contraction and Lie derivative are formed with the same formulas; the degree-one cochains are the operators $\mathrm{G}\to\mathrm{G}$, the closed ones are the derivations of *Derivations of a Lie Algebra*, and the exact ones are the inner derivations.
 
-**Proof.** This is the identification recorded in *Lie Algebra Cohomology*: the cocycle condition $d\delta=0$ is the Leibniz rule for the bracket, and the coboundaries are the operators $\operatorname{ad}_x$; the operator reading is the one given above. $\square$
+**Proof.** This is the identification recorded in *Lie Algebra Cohomology*: the cocycle condition $d\delta=0$ is the Leibniz rule for the bracket, and the coboundaries are the operators $\operatorname{ad}_x$; the operator reading is the one given above.
 
 ## The Exterior Derivative of a Manifold, Named
 

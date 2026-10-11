@@ -22,7 +22,7 @@ It is the difference of the product and its transpose, the antisymmetric half of
 
 **Proposition (additivity and the two parities).** The bracket is additive in each variable, $\mathbb{K}$-linear in the first and $\varsigma$-semilinear in the second, so it is an $R^{\varsigma}$-bilinear map $A \times A \to A$; it is antisymmetric, $[y,x]_{\varsigma} = -[x,y]_{\varsigma}$ and $[x,x]_{\varsigma} = 0$.
 
-*Proof.* The additivity is that of the product; the parities are the two scalar rules of the layer read on the difference, and they are computed in *The Sesquilinear Commutator*, §*The Scalars and the Correction Term*; the antisymmetry is the antisymmetry of the subtraction. $\square$
+*Proof.* The additivity is that of the product; the parities are the two scalar rules of the layer read on the difference, and they are computed in *The Sesquilinear Commutator*, §*The Scalars and the Correction Term*; the antisymmetry is the antisymmetry of the subtraction.
 
 ### The Boundedness
 
@@ -34,7 +34,7 @@ $$
 
 so the bracket is a bounded sesquilinear map, and its sesquilinear norm $\lVert[\ ,\ ]_{\varsigma}\rVert = \sup\{\lVert[x,y]_{\varsigma}\rVert : \lVert x\rVert \leq 1,\ \lVert y\rVert \leq 1\}$ satisfies $\lVert[\ ,\ ]_{\varsigma}\rVert \leq 2$. It is continuous as a map $A \times A \to A$ for the product topology.
 
-*Proof.* $\lVert x \star y\rVert \leq \lVert x\rVert\lVert y\rVert$ and $\lVert y \star x\rVert \leq \lVert y\rVert\lVert x\rVert$ by the submultiplicative estimate, so the triangle inequality gives $\lVert[x,y]_{\varsigma}\rVert \leq 2\lVert x\rVert\lVert y\rVert$. A sesquilinear map bounded by a constant is continuous, and the continuity of the sesquilinear form in each variable follows from the bound and additivity. $\square$
+*Proof.* $\lVert x \star y\rVert \leq \lVert x\rVert\lVert y\rVert$ and $\lVert y \star x\rVert \leq \lVert y\rVert\lVert x\rVert$ by the submultiplicative estimate, so the triangle inequality gives $\lVert[x,y]_{\varsigma}\rVert \leq 2\lVert x\rVert\lVert y\rVert$. A sesquilinear map bounded by a constant is continuous, and the continuity of the sesquilinear form in each variable follows from the bound and additivity.
 
 **Corollary (the factorisation through the tensor product).** The bracket factors as
 
@@ -44,7 +44,7 @@ $$
 
 and the linear map $C$ is bounded for the projective norm with $\lVert C\rVert \leq 2$; its completion is a bounded operator $\widehat{C} : A \widehat{\otimes}_{\pi} A \to A$, the **commutator operator** of the sesqualgebra.
 
-*Proof.* The bracket is bilinear on the pair $A \times A^{\varsigma}$ in the sense of *The Sesquilinear Product*, §*The Product as a Bilinear Map on the Pair*, so it factors through the tensor product by the universal property; the norm bound is the theorem, and the extension to the completion is the bounded linear extension of *The Completion of a Sesqualgebra*, §*The Product on the Completion*. $\square$
+*Proof.* The bracket is bilinear on the pair $A \times A^{\varsigma}$ in the sense of *The Sesquilinear Product*, §*The Product as a Bilinear Map on the Pair*, so it factors through the tensor product by the universal property; the norm bound is the theorem, and the extension to the completion is the bounded linear extension of *The Completion of a Sesqualgebra*, §*The Product on the Completion*.
 
 ### The Failure of Bilinearity and the Corrected Identities
 
@@ -62,11 +62,11 @@ $$
 
 and the bracket is $\mathbb{K}$-bilinear exactly when $\varsigma = \mathrm{id}$ or the product vanishes identically.
 
-*Proof.* The two displays are the theorem of *The Sesquilinear Commutator*, §*The Scalars and the Correction Term*; the topological content is that the correction term is not bounded by a multiple of $\lVert x\rVert\lVert y\rVert$ with a constant independent of $\lambda$, so no estimate repairs the loss of bilinearity. The bracket is nevertheless bounded as a sesquilinear map and it is bilinear over $\mathbb{R}$, the scalar rule of a real scalar being free of the correction term. $\square$
+*Proof.* The two displays are the theorem of *The Sesquilinear Commutator*, §*The Scalars and the Correction Term*; the topological content is that the correction term is not bounded by a multiple of $\lVert x\rVert\lVert y\rVert$ with a constant independent of $\lambda$, so no estimate repairs the loss of bilinearity. The bracket is nevertheless bounded as a sesquilinear map and it is bilinear over $\mathbb{R}$, the scalar rule of a real scalar being free of the correction term.
 
 **Corollary (the real structure).** Over $\mathbb{R}$ the correction term vanishes, $(\lambda - \varsigma(\lambda)) = 0$ for real $\lambda$, so the bracket is $\mathbb{R}$-bilinear and continuous; the bounded sesquilinear form of this article restricts to a bounded real-bilinear form, and the failure of $\mathbb{K}$-bilinearity is exactly the correction term on the imaginary scalars.
 
-*Proof.* $\varsigma$ fixes $\mathbb{R}$, so $\lambda - \varsigma(\lambda) = 0$ for real $\lambda$. The rest is the theorem. $\square$
+*Proof.* $\varsigma$ fixes $\mathbb{R}$, so $\lambda - \varsigma(\lambda) = 0$ for real $\lambda$. The rest is the theorem.
 
 ## The Values in the Skew-Hermitian Part
 
@@ -80,7 +80,7 @@ $$
 
 so $[A,A]_{\varsigma} \subseteq S(A)$, where $S(A) = \{s : s^{*} = -s\}$ is the skew-Hermitian part. The set $S(A)$ is a closed real subspace of $A$, and the bracket is a bounded sesquilinear map $A \times A \to S(A)$.
 
-*Proof.* The conjugation of a product reverses it, $(x \star y)^{*} = y \star x$, so $[x,y]_{\varsigma}^{*} = y \star x - x \star y = -[x,y]_{\varsigma}$; this is *The Sesquilinear Commutator*, §*The Values in the Skew-Hermitian Part*. The skew-Hermitian part is the kernel of the continuous map $x \mapsto x^{*} + x$, hence closed, and it is a real subspace because $is$ is Hermitian when $s$ is skew-Hermitian. The bracket lands in it by the first display, and it is bounded by §*The Boundedness*. $\square$
+*Proof.* The conjugation of a product reverses it, $(x \star y)^{*} = y \star x$, so $[x,y]_{\varsigma}^{*} = y \star x - x \star y = -[x,y]_{\varsigma}$; this is *The Sesquilinear Commutator*, §*The Values in the Skew-Hermitian Part*. The skew-Hermitian part is the kernel of the continuous map $x \mapsto x^{*} + x$, hence closed, and it is a real subspace because $is$ is Hermitian when $s$ is skew-Hermitian. The bracket lands in it by the first display, and it is bounded by §*The Boundedness*.
 
 **Remark.** The bracket is therefore never a map into the Hermitian part unless it vanishes, and the topological statement is stronger than the algebraic one in one respect: it says that the bracket is a bounded map into a closed subspace, so a limit of brackets is a bracket only in the sense of the closure, and the closure is automatic because $S(A)$ is closed. The Hermitian part $H(A)$ is likewise closed, and it is the image of the idempotent $x \mapsto \tfrac12(x + x^{*})$ along with $S(A)$, which is the topological form of the decomposition of *Hermitian and Skew-Hermitian Elements*, §*The Decomposition*.
 
@@ -94,7 +94,7 @@ $$
 
 where $[h,h'] = hh' - h'h$ is the commutator of the envelope; each identity is an identity of bounded operators, and the bounds are $\lVert[h,h']_{\varsigma}\rVert \leq 2\lVert h\rVert\lVert h'\rVert$ and so on.
 
-*Proof.* The identities are the theorem of *The Sesquilinear Commutator*, §*The Two Halves*, and the bounds are those of §*The Boundedness* with the submultiplicative estimate. $\square$
+*Proof.* The identities are the theorem of *The Sesquilinear Commutator*, §*The Two Halves*, and the bounds are those of §*The Boundedness* with the submultiplicative estimate.
 
 ## The Lie Algebra of the Bounded Skew-Hermitian Elements
 
@@ -108,17 +108,17 @@ $$
 
 so $S(A)$ is a real Banach Lie algebra under either bracket, the two brackets being isomorphic by the negation. The Hermitian part $H(A)$ is not a Lie algebra under the sesquilinear bracket, since the bracket of two Hermitian elements is skew-Hermitian.
 
-*Proof.* The skew-Hermitian part is closed by §*The Values and the Closed Subspace*, hence complete because $A$ is; it is a real vector space because $is \in H(A)$ for $s \in S(A)$. If $s,s' \in S(A)$ then $(ss')^{*} = (s')^{*}s^{*} = (-s')(-s) = s's$, so $(ss' - s's)^{*} = s's - ss' = -[s,s']$, and the commutator is closed in $S(A)$; the Jacobi identity is the associativity of the envelope, by the derivation form $[s,[s',s'']] = [[s,s'],s''] + [s',[s,s'']]$; the bound is the submultiplicative estimate. The identity $[s,s']_{\varsigma} = -[s,s']$ is the middle identity of the theorem above, and negation is an isomorphism of brackets because $[s,s']_{\varsigma} = -\mathrm{id}\circ[s,s']\circ(\mathrm{id}\times\mathrm{id})$. For the last statement, $[h,h']_{\varsigma} = [h,h']$ with $h,h'$ Hermitian and $[h,h']$ skew-Hermitian, so the bracket leaves $H(A)$. $\square$
+*Proof.* The skew-Hermitian part is closed by §*The Values and the Closed Subspace*, hence complete because $A$ is; it is a real vector space because $is \in H(A)$ for $s \in S(A)$. If $s,s' \in S(A)$ then $(ss')^{*} = (s')^{*}s^{*} = (-s')(-s) = s's$, so $(ss' - s's)^{*} = s's - ss' = -[s,s']$, and the commutator is closed in $S(A)$; the Jacobi identity is the associativity of the envelope, by the derivation form $[s,[s',s'']] = [[s,s'],s''] + [s',[s,s'']]$; the bound is the submultiplicative estimate. The identity $[s,s']_{\varsigma} = -[s,s']$ is the middle identity of the theorem above, and negation is an isomorphism of brackets because $[s,s']_{\varsigma} = -\mathrm{id}\circ[s,s']\circ(\mathrm{id}\times\mathrm{id})$. For the last statement, $[h,h']_{\varsigma} = [h,h']$ with $h,h'$ Hermitian and $[h,h']$ skew-Hermitian, so the bracket leaves $H(A)$.
 
 **Corollary (the Lie structure of the layer).** The Lie algebra that a sesqualgebra carries is the real Banach Lie algebra $S(A)$; the Hermitian part carries instead the symmetrised product, under which it is a Jordan algebra, by *Hermitian and Skew-Hermitian Elements*, §*The Hermitian Part is a Jordan Algebra*, and the passage between the two is the decomposition $A = H(A) \oplus S(A)$.
 
-*Proof.* The statement about $S(A)$ is the theorem; the statement about $H(A)$ is the cited result, and the decomposition is the topological form of the algebraic decomposition into fixed and anti-fixed points of the involution. $\square$
+*Proof.* The statement about $S(A)$ is the theorem; the statement about $H(A)$ is the cited result, and the decomposition is the topological form of the algebraic decomposition into fixed and anti-fixed points of the involution.
 
 ### The Failure of the Jacobi Identity and the Operator Reading
 
 **Theorem (the bracket is not a Lie bracket on $A$).** The Jacobi identity for the sesquilinear bracket fails on $A$; in $M_{2}(\mathbb{C})$ the elements $E_{11}, E_{22}, E_{12}$ give a nonzero Jacobi sum, and three Hermitian elements already fail. It holds on $S(A)$ by the theorem above and it holds identically on the sesquilinear field, so the failure is produced by the noncommutativity of the envelope and not by the twist.
 
-*Proof.* The witness and the field computation are those of *The Sesquilinear Commutator*, §*The Failure of the Jacobi Identity*; the two positive cases are the theorem above and the cited field computation. $\square$
+*Proof.* The witness and the field computation are those of *The Sesquilinear Commutator*, §*The Failure of the Jacobi Identity*; the two positive cases are the theorem above and the cited field computation.
 
 **Proposition (the bracket as a difference of two multiplications).** For all $x,y$,
 
@@ -128,7 +128,7 @@ $$
 
 so the bracket is the difference of the left and the right multiplication, and with $x$ fixed it is the adjoint action $\operatorname{ad}_x = L_x - R_x$ of *The Bounded Left and Right Multiplication Operators of a Sesqualgebra*, §*The Adjoint Action*; it is bounded with $\lVert \operatorname{ad}_x\rVert \leq 2\lVert x\rVert$, and it is the sum of an even and an odd bounded operator.
 
-*Proof.* $x \star y = L_x(y)$ and $y \star x = R_x(y)$ by the definitions of the two multiplications; the second form is the first with the variables exchanged and the antisymmetry used. The bound and the parity statement are those of the adjoint action. $\square$
+*Proof.* $x \star y = L_x(y)$ and $y \star x = R_x(y)$ by the definitions of the two multiplications; the second form is the first with the variables exchanged and the antisymmetry used. The bound and the parity statement are those of the adjoint action.
 
 **Remark.** The proposition is the reason the bracket operator belongs to the graded operator algebra of *Bounded Operators on a Sesqualgebra*: it is not a homogeneous operator but a sum of the odd left multiplication and the even right multiplication, and its norm is bounded by the sum of the two norms. This is the operator form of the statement that the sesquilinear bracket is not $\mathbb{K}$-bilinear, and the two statements are the same fact read in the two languages.
 
@@ -136,7 +136,7 @@ so the bracket is the difference of the left and the right multiplication, and w
 
 **Proposition (the commutator at the trivial involution).** Let $A$ be the standard example with $\varsigma = \mathrm{id}$, so that the product is bilinear, and suppose in addition that the involution is trivial, $* = \mathrm{id}$. Then $A$ is commutative — the identity involution satisfies $(xy)^{*} = y^{*}x^{*}$, that is $xy = yx$ — the product is the ordinary one, and the bracket vanishes identically, $[x,y]_{\varsigma} = xy - yx = 0$; the skew-Hermitian part is $S(A) = \{0\}$ while $H(A) = A$, and the Banach Lie algebra $S(A)$ of the sesquilinear layer degenerates to the zero Lie algebra.
 
-*Proof.* A trivial involution satisfies $(xy)^{*} = y^{*}x^{*}$ with $* = \mathrm{id}$ on both sides, so $xy = yx$; then the derived operation is the ordinary product and the bracket is the ordinary commutator of a commutative algebra, which vanishes. With $* = \mathrm{id}$ the condition $s^{*} = -s$ reads $s = -s$, so $S(A) = \{0\}$ because $2$ is invertible, and every element is Hermitian. $\square$
+*Proof.* A trivial involution satisfies $(xy)^{*} = y^{*}x^{*}$ with $* = \mathrm{id}$ on both sides, so $xy = yx$; then the derived operation is the ordinary product and the bracket is the ordinary commutator of a commutative algebra, which vanishes. With $* = \mathrm{id}$ the condition $s^{*} = -s$ reads $s = -s$, so $S(A) = \{0\}$ because $2$ is invertible, and every element is Hermitian.
 
 **Remark.** The comparison with the bilinear layer is therefore not one of an operator but of an algebra: the sesquilinear bracket is bounded, antisymmetric, $\mathbb{R}$-bilinear and skew-Hermitian-valued, and it is a Lie bracket only on the skew-Hermitian part; the ordinary commutator that *The Commutator Operator* studies is the bilinear antisymmetrisation of an arbitrary algebra, and it is recovered from the sesquilinear bracket only at the trivial involution, where the identity involution forces the algebra to be commutative and the bracket to vanish, in agreement with the vanishing criterion of *The Sesquilinear Commutator*, §*The Vanishing and the Involution*. The one place where the two layers agree in full, with no degeneration of the product, is the skew-Hermitian part, which is the reason the Lie theory of the sesqualgebra is developed there, in *Lie Algebras of Sesqualgebras* and *The Unitary Lie Algebra*.
 

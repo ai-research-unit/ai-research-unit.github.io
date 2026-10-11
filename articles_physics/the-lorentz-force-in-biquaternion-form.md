@@ -529,7 +529,7 @@ $$
 = \tilde{K}'.
 $$
 
-This was checked numerically at random boosts, random fields, and random velocities, with agreement at the $10^{-15}$ level. In this sense the product formula is not merely a frame-dependent identity but a covariant statement: transforming the ingredients and transforming the result give the same answer.
+In this sense the product formula is not merely a frame-dependent identity but a covariant statement: transforming the ingredients and transforming the result give the same answer.
 
 ## The Power–Force Density Biquaternion and Its Four-Term Split
 

@@ -43,7 +43,7 @@ $$
 
 is self-adjoint, nonnegative and elliptic; the same construction with $\partial$ gives $\Delta_\partial$, and the de Rham Laplacian is $\Delta_{d}=dd^{*}+d^{*}d$.
 
-**Proof.** The adjoints are those of the operators of bidegree $(0,1)$ and $(1,0)$ with respect to the Hermitian metric on forms; the ellipticity and the self-adjointness are those of a Laplace operator of a first-order elliptic complex, as in *The Hodge Laplacian*, and the split of $d$ into $\partial+\bar\partial$ is the bidegree decomposition of the exterior derivative on a complex manifold. $\square$
+**Proof.** The adjoints are those of the operators of bidegree $(0,1)$ and $(1,0)$ with respect to the Hermitian metric on forms; the ellipticity and the self-adjointness are those of a Laplace operator of a first-order elliptic complex, as in *The Hodge Laplacian*, and the split of $d$ into $\partial+\bar\partial$ is the bidegree decomposition of the exterior derivative on a complex manifold.
 
 ## The Dolbeault Complex and Its Cohomology
 
@@ -61,7 +61,7 @@ $$
 
 and the two may be identified; the identification is the complex analogue of the de Rham theorem, with $\bar\partial$ in place of $d$ and the holomorphic structure in place of the smooth one.
 
-**Proof sketch.** The Dolbeault complex is a resolution of the sheaf $\Omega^{p}$ — locally, a $\bar\partial$-closed $(p,q)$-form is $\bar\partial$-exact for $q>0$ by the Dolbeault–Grothendieck lemma, the complex analogue of the Poincaré lemma — and the hypercohomology of the resolution computes the sheaf cohomology. The argument is that of *Sheaves and the de Rham Complex* carried over to the $\bar\partial$-operator, and the Dolbeault–Grothendieck lemma is the local statement. $\square$
+**Proof sketch.** The Dolbeault complex is a resolution of the sheaf $\Omega^{p}$ — locally, a $\bar\partial$-closed $(p,q)$-form is $\bar\partial$-exact for $q>0$ by the Dolbeault–Grothendieck lemma, the complex analogue of the Poincaré lemma — and the hypercohomology of the resolution computes the sheaf cohomology. The argument is that of *Sheaves and the de Rham Complex* carried over to the $\bar\partial$-operator, and the Dolbeault–Grothendieck lemma is the local statement.
 
 **Theorem (Hodge representation for $\bar\partial$).** On a compact complex manifold with a Hermitian metric the kernel of the Dolbeault Laplacian,
 
@@ -77,7 +77,7 @@ $$
 
 the orthogonal direct sum of the harmonic, the $\bar\partial$-exact and the $\bar\partial^{*}$-exact parts.
 
-**Proof.** The argument is the Hodge theorem of *The Hodge Laplacian* applied to the elliptic self-adjoint operator $\Delta_{\bar\partial}$; the decomposition is the spectral decomposition of the self-adjoint operator, and the harmonic forms are closed and coclosed for $\bar\partial$, hence represent the cohomology. $\square$
+**Proof.** The argument is the Hodge theorem of *The Hodge Laplacian* applied to the elliptic self-adjoint operator $\Delta_{\bar\partial}$; the decomposition is the spectral decomposition of the self-adjoint operator, and the harmonic forms are closed and coclosed for $\bar\partial$, hence represent the cohomology.
 
 **Remark.** The Hermitian metric is used here in an essential way: the adjoint $\bar\partial^{*}$, the Laplacian $\Delta_{\bar\partial}$ and the harmonic representatives all depend on it, while the Dolbeault cohomology $H^{p,q}_{\bar\partial}$ and its dimension do not. The decomposition of each Dolbeault group by the metric is the complex analogue of the Hodge theorem, and it holds for every Hermitian metric and not only for the Kähler ones.
 
@@ -101,7 +101,7 @@ $$
 
 and each is **bigraded**, $\Delta_{d}(\Omega^{p,q})\subseteq\Omega^{p,q}$.
 
-**Proof sketch.** The first identity is the computation of the Kähler form with the Hodge star and the operator $\Lambda$; the proportionality of the Laplacians follows from it and from $d=\partial+\bar\partial$, $d^{2}=0$; the identity $[\Lambda,L]=$ degree is the standard $\mathfrak{sl}_2$-relation, proved from the exterior algebra and the positivity of $\omega$. The identities are those of the Kähler geometry of *Hermitian Manifolds and the Canonical Connection*. $\square$
+**Proof sketch.** The first identity is the computation of the Kähler form with the Hodge star and the operator $\Lambda$; the proportionality of the Laplacians follows from it and from $d=\partial+\bar\partial$, $d^{2}=0$; the identity $[\Lambda,L]=$ degree is the standard $\mathfrak{sl}_2$-relation, proved from the exterior algebra and the positivity of $\omega$. The identities are those of the Kähler geometry of *Hermitian Manifolds and the Canonical Connection*.
 
 **Corollary.** On a compact Kähler manifold the de Rham Laplacian preserves the bidegree, so a harmonic form decomposes into harmonic pieces of pure bidegree, and the kernel of $\Delta_d$ in the total degree $k$ is the direct sum of the kernels of $\Delta_{\bar\partial}$ in the bidegrees $(p,q)$ with $p+q=k$.
 
@@ -123,7 +123,7 @@ $$
 
 where the third symmetry is **Serre duality**, $h^{n-p,n-q}=h^{p,q}$, or equivalently the nondegenerate pairing $H^{p,q}(X)\times H^{n-p,n-q}(X)\to\mathbb{C}$ given by the wedge product and the trace.
 
-**Proof.** The bidegree is preserved by the Kähler Laplacian by the Kähler identities, so a harmonic representative of a class of degree $k$ splits into harmonic pieces of bidegree $(p,k-p)$, and the conjugation of the coefficients exchanges $(p,q)$ with $(q,p)$; Serre duality is the nondegeneracy of the pairing $H^{p,q}\times H^{n-p,n-q}\to\mathbb{C}$ given by the wedge product and the trace, which is the complex form of Poincaré duality. $\square$
+**Proof.** The bidegree is preserved by the Kähler Laplacian by the Kähler identities, so a harmonic representative of a class of degree $k$ splits into harmonic pieces of bidegree $(p,k-p)$, and the conjugation of the coefficients exchanges $(p,q)$ with $(q,p)$; Serre duality is the nondegeneracy of the pairing $H^{p,q}\times H^{n-p,n-q}\to\mathbb{C}$ given by the wedge product and the trace, which is the complex form of Poincaré duality.
 
 **Remark.** The Hodge decomposition is what distinguishes a Kähler manifold from an arbitrary complex manifold: the Dolbeault cohomology $H^{p,q}$ exists for every complex manifold, but the sum $\bigoplus_{p+q=k}H^{p,q}$ equals the de Rham group $H^{k}$ only when the metric can be chosen Kähler, or equivalently when the manifold satisfies the $\partial\bar\partial$-lemma. The complex structure and the metric are compatible in the strongest sense in the Kähler case, and the compatibility is exactly what the bigrading of the Laplacian detects.
 
@@ -143,7 +143,7 @@ $$
 
 is an isomorphism for every $k\leq n$.
 
-**Proof sketch.** The commutation relations are those of the exterior algebra of the Kähler form; the hard Lefschetz theorem follows from the representation theory of $\mathfrak{sl}_2$ together with the positivity of the operator $[\Lambda,L]$ on the primitive part, and the argument is the one used for the nilpotent orbit of a semisimple Lie algebra. The Lefschetz package is developed with the Kähler identities of *Hermitian Manifolds and the Canonical Connection*. $\square$
+**Proof sketch.** The commutation relations are those of the exterior algebra of the Kähler form; the hard Lefschetz theorem follows from the representation theory of $\mathfrak{sl}_2$ together with the positivity of the operator $[\Lambda,L]$ on the primitive part, and the argument is the one used for the nilpotent orbit of a semisimple Lie algebra. The Lefschetz package is developed with the Kähler identities of *Hermitian Manifolds and the Canonical Connection*.
 
 **Definition.** A class in $H^{k}(X)$ is **primitive** when $\Lambda\alpha=0$; the primitive part $P^{k}(X)$ is the kernel of $\Lambda$ on $H^{k}(X)$, and the **Lefschetz decomposition** writes
 
@@ -167,7 +167,7 @@ $$
 
 so that $Q(C\alpha,\bar\alpha)>0$ for the Weil operator $C=i^{p-q}$; the form is a polarisation of the Hodge structure of the primitive cohomology in the sense of *Polarised Hodge Structures and the Hodge–Riemann Relations*.
 
-**Proof sketch.** The symmetry is the graded commutativity of the wedge product; the positivity is the Hodge–Riemann bilinear relation, proved by the Lefschetz decomposition and the $\mathfrak{sl}_2$-structure together with the positivity of the metric on the primitive forms. The relation is the precise positivity behind the Hodge index theorem and the signature of the middle intersection form of *The Signature Operator*. $\square$
+**Proof sketch.** The symmetry is the graded commutativity of the wedge product; the positivity is the Hodge–Riemann bilinear relation, proved by the Lefschetz decomposition and the $\mathfrak{sl}_2$-structure together with the positivity of the metric on the primitive forms. The relation is the precise positivity behind the Hodge index theorem and the signature of the middle intersection form of *The Signature Operator*.
 
 ## Examples
 

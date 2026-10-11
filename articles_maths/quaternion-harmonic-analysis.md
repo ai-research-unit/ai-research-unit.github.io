@@ -174,7 +174,7 @@ $$
 \overline{e^{-2\pi e_1 \omega_1 q_1}e^{-2\pi e_2 \omega_2 q_2}} = e^{2\pi e_2 \omega_2 q_2}e^{2\pi e_1 \omega_1 q_1},
 $$
 
-where the right-hand side is the kernel-left form at $(-\omega_1,-\omega_2)$. Both identities are exact and were verified on independent samples.
+where the right-hand side is the kernel-left form at $(-\omega_1,-\omega_2)$.
 
 **The Ten Reversal Identities.** Reversing one or both frequencies and adding or subtracting the two transforms isolates the individual terms. With the argument $(\omega_1,\omega_2)$ suppressed,
 

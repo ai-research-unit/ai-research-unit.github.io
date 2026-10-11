@@ -55,7 +55,7 @@ $$
 $$
 Then $\theta$ carries every class of §2 to §5 from $\star$ onto the corresponding class of $\star'$: the $\star$-units onto the $\star'$-units, the $\star$-invertible elements onto the $\star'$-invertible elements with $\theta(x^{-1})=\theta(x)^{-1}$, the $\star$-idempotents onto the $\star'$-idempotents, the $\star$-nilpotents onto the $\star'$-nilpotents, and the $\star$-zero divisors onto the $\star'$-zero divisors.
 
-**Proof.** Apply $\theta$ to the defining equation and use multiplicativity. If $x\star x=x$ then $\theta(x)\star'\theta(x)=\theta(x\star x)=\theta(x)$; if $x\star x=0$ then $\theta(x)\star'\theta(x)=\theta(0)=0$; if $x\star y=0$ with $x,y\neq0$ then $\theta(x)\star'\theta(y)=0$ with $\theta(x),\theta(y)\neq0$; and if $e$ is a unit of $\star$ then $\theta(e)\star'\theta(x)=\theta(e\star x)=\theta(x)$ and $\theta(x)\star'\theta(e)=\theta(x)$, so $\theta(e)$ is a two-sided unit of $\star'$, from which $x\star y=y\star x=e$ gives $\theta(x)\star'\theta(y)=\theta(e)$. $\square$
+**Proof.** Apply $\theta$ to the defining equation and use multiplicativity. If $x\star x=x$ then $\theta(x)\star'\theta(x)=\theta(x\star x)=\theta(x)$; if $x\star x=0$ then $\theta(x)\star'\theta(x)=\theta(0)=0$; if $x\star y=0$ with $x,y\neq0$ then $\theta(x)\star'\theta(y)=0$ with $\theta(x),\theta(y)\neq0$; and if $e$ is a unit of $\star$ then $\theta(e)\star'\theta(x)=\theta(e\star x)=\theta(x)$ and $\theta(x)\star'\theta(e)=\theta(x)$, so $\theta(e)$ is a two-sided unit of $\star'$, from which $x\star y=y\star x=e$ gives $\theta(x)\star'\theta(y)=\theta(e)$.
 
 Two products related by such a $\theta$ have the same element theory up to $\theta$, and the definitions of this article cannot separate them. Two products not so related may differ on every class, which is what §9 computes for the four general products. The relations among the four general products under the conjugations, and the question of which pairs are isomorphic in this sense, are *Relations Between the Four General Products*.
 
@@ -80,7 +80,7 @@ The inverse is defined by an equation in $\star$, so it is relative to the produ
 
 The table is verified on the identity equations and it is the unit table of *Comparison Between the Four General Products*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *The Zero Divisors and the Four General Products*, §*The One-Sided Inverse Equations*.
 
-The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde P$ invertible exactly when the central square $c(\tilde P)=\sum_\mu P_\mu^{2}$ is nonzero, is *Biquaternion Norm and Invertibility*.
+The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde P$ invertible exactly when the central square $c(\tilde P)=\sum_\mu P_\mu^{2}$ is nonzero, is *Norm and Invertibility in the General Plain Algebra*.
 
 ---
 
@@ -120,7 +120,7 @@ The origin and, when the product is unital, the unit are idempotents of every pr
 
 **Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two diagonal pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
 
-The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$, the natural product has the trivial idempotents alone, the plain sesquilinear product has the Hermitian idempotents, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\mu$. The table is in *The Zero Divisors and the Four General Products*, §*The Square, the Idempotents and the Units*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Biquaternion Ideals and Peirce Decomposition*.
+The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\xi i)$ over the roots $\xi$ of $-1$, the natural product has the trivial idempotents alone, the plain sesquilinear product has the Hermitian idempotents, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\mu$. The table is in *The Zero Divisors and the Four General Products*, §*The Square, the Idempotents and the Units*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
 ---
 
@@ -159,7 +159,7 @@ The three central values the biquaternion algebra singles out are $-1$, $+1$ and
 
 **Definition (square root of an element).** For an element $a\in\mathbb{B}$, a **square root of $a$ in $\star$** is an element with $\tilde P\star\tilde P=a$; the roots of a central value are the special case $a=\lambda e_0$.
 
-The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Biquaternion Square Roots of Minus One, Zero and Plus One* and *Biquaternion Square Roots of a General Element*. The idempotents of §4 are the roots of $+1$ halved: the map $\xi\mapsto\tfrac12(e_0+\xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
+The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of a General Element in the General Plain Algebra*. The idempotents of §4 are the roots of $+1$ halved: the map $\xi\mapsto\tfrac12(e_0+\xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
 
 ---
 

@@ -130,7 +130,7 @@ $$
 \tfrac12\left(\mathbf{u}\mathbf{v} - \mathbf{v}\mathbf{u}\right) = \mathbf{u}\times\mathbf{v} \in D^{(1)} .
 $$
 
-The symmetric traceless part of $\mathbf{u}\otimes\mathbf{v}$, the $D^{(2)}$ channel, is annihilated by the symmetrized product. In angular-momentum language this is the statement that the symmetrized product of two vectors contains only the $l = 0$ and $l = 1$ combinations, and never the $l = 2$ one. Both identities were verified on random vector pairs.
+The symmetric traceless part of $\mathbf{u}\otimes\mathbf{v}$, the $D^{(2)}$ channel, is annihilated by the symmetrized product. In angular-momentum language this is the statement that the symmetrized product of two vectors contains only the $l = 0$ and $l = 1$ combinations, and never the $l = 2$ one.
 
 ### The Gradient
 

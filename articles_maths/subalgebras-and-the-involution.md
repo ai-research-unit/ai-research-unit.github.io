@@ -30,7 +30,7 @@ and a **$*$-subalgebra** is a subalgebra with $B^{*} \subseteq B$.
 
 **Proposition.** If $B$ is a subalgebra then $B$, with the restricted product and the restricted scalar action, is a sesqualgebra over the same datum $(R,\varsigma)$, and the inclusion $B \to A$ is a morphism.
 
-**Proof.** By definition $B$ is an $R$-submodule, so the scalars of $R$ act on it. The restricted product takes its values in $B$ by $BB \subseteq B$, and it is additive in each variable, being the restriction of a map that is. The two scalar rules hold in $B$ because they hold in $A$ and both sides of each lie in $B$. The inclusion is $R$-linear and multiplicative, hence a morphism. $\square$
+**Proof.** By definition $B$ is an $R$-submodule, so the scalars of $R$ act on it. The restricted product takes its values in $B$ by $BB \subseteq B$, and it is additive in each variable, being the restriction of a map that is. The two scalar rules hold in $B$ because they hold in $A$ and both sides of each lie in $B$. The inclusion is $R$-linear and multiplicative, hence a morphism.
 
 **Remark.** The datum is not changed: a subalgebra is an object of the same category as the algebra, over the same base ring and the same involution of it, and the category is closed under its subobjects in this sense. A change of the base ring, which does change the datum, is a different construction.
 
@@ -38,7 +38,7 @@ and a **$*$-subalgebra** is a subalgebra with $B^{*} \subseteq B$.
 
 **Proposition.** If $B$ is a subalgebra then $B^{*}$ is a subalgebra, and $B \cap B^{*}$ is a $*$-subalgebra. A subalgebra $B$ is a $*$-subalgebra if and only if $B^{*} = B$.
 
-**Proof.** Let $B$ be a subalgebra. The set $B^{*}$ is closed under addition, and for $\lambda \in R$ and $b \in B$ one has $\lambda b^{*} = (\varsigma(\lambda)b)^{*}$, with $\varsigma(\lambda)b \in B$, so $\lambda b^{*} \in B^{*}$ and $B^{*}$ is an $R$-submodule. For the product, $b_{1}^{*}b_{2}^{*} = (b_{2}b_{1})^{*} \in B^{*}$. Hence $B^{*}$ is a subalgebra; the intersection $B \cap B^{*}$ is a subalgebra, and $(B \cap B^{*})^{*} = B^{*} \cap B = B \cap B^{*}$, so it is a $*$-subalgebra. Finally $B^{*} \subseteq B$ gives $B = (B^{*})^{*} \subseteq B^{*}$, hence $B^{*} = B$, and the converse is immediate. $\square$
+**Proof.** Let $B$ be a subalgebra. The set $B^{*}$ is closed under addition, and for $\lambda \in R$ and $b \in B$ one has $\lambda b^{*} = (\varsigma(\lambda)b)^{*}$, with $\varsigma(\lambda)b \in B$, so $\lambda b^{*} \in B^{*}$ and $B^{*}$ is an $R$-submodule. For the product, $b_{1}^{*}b_{2}^{*} = (b_{2}b_{1})^{*} \in B^{*}$. Hence $B^{*}$ is a subalgebra; the intersection $B \cap B^{*}$ is a subalgebra, and $(B \cap B^{*})^{*} = B^{*} \cap B = B \cap B^{*}$, so it is a $*$-subalgebra. Finally $B^{*} \subseteq B$ gives $B = (B^{*})^{*} \subseteq B^{*}$, hence $B^{*} = B$, and the converse is immediate.
 
 **Remark.** The closure of $B^{*}$ under the scalars is where the twist of the sesquilinear product is felt: the scalar is read through the involution, $\lambda b^{*} = (\varsigma(\lambda)b)^{*}$, and the inner factor $\varsigma(\lambda)b$ lies in $B$ for every $\lambda$, because $\varsigma(\lambda)$ is a scalar and $B$ is an $R$-submodule. In the bilinear case the same identity is $\lambda b^{*} = (\lambda b)^{*}$.
 
@@ -46,11 +46,11 @@ and a **$*$-subalgebra** is a subalgebra with $B^{*} \subseteq B$.
 
 **Proposition.** The intersection of a family of subalgebras is a subalgebra, and the intersection of a family of $*$-subalgebras is a $*$-subalgebra.
 
-**Proof.** An intersection of $R$-submodules is an $R$-submodule, and $\bigl(\bigcap_{\alpha} B_{\alpha}\bigr)\bigl(\bigcap_{\alpha} B_{\alpha}\bigr) \subseteq B_{\alpha}B_{\alpha} \subseteq B_{\alpha}$ for every $\alpha$, so the product lands in the intersection. The conjugate image of an intersection is the intersection of the conjugate images, so an intersection of $*$-subalgebras is carried to itself. $\square$
+**Proof.** An intersection of $R$-submodules is an $R$-submodule, and $\bigl(\bigcap_{\alpha} B_{\alpha}\bigr)\bigl(\bigcap_{\alpha} B_{\alpha}\bigr) \subseteq B_{\alpha}B_{\alpha} \subseteq B_{\alpha}$ for every $\alpha$, so the product lands in the intersection. The conjugate image of an intersection is the intersection of the conjugate images, so an intersection of $*$-subalgebras is carried to itself.
 
 **Proposition.** The sum $B + C$ of two subalgebras is an $R$-submodule, but it need not be closed under the product. In $M_{2}(\mathbb{C})$ with the conjugate transpose the spans $B = \mathbb{C}E_{12}$ and $C = \mathbb{C}E_{21}$ are subalgebras, and $E_{12}E_{21} = E_{11}$ is not in $B + C$.
 
-**Proof.** A sum of $R$-submodules is an $R$-submodule. For the counterexample, $E_{12}^{2} = 0$ and $E_{21}^{2} = 0$, so the two spans are closed under the product; the sum is the set of the matrices with zero diagonal, which contains $E_{12}$ and $E_{21}$ and not their product $E_{11}$. $\square$
+**Proof.** A sum of $R$-submodules is an $R$-submodule. For the counterexample, $E_{12}^{2} = 0$ and $E_{21}^{2} = 0$, so the two spans are closed under the product; the sum is the set of the matrices with zero diagonal, which contains $E_{12}$ and $E_{21}$ and not their product $E_{11}$.
 
 **Remark.** The involution does not repair the failure. In $M_{2}(\mathbb{C})$ with the conjugate transpose let
 
@@ -72,7 +72,7 @@ Then $J^{2} = -I$ and $K^{2} = I$, and $J^{*} = -J$ while $K^{*} = K$, so $\math
 
 **Proposition.** Suppose $A$ associative, and let $S \subseteq A$. Then $\langle S \rangle$ is the $R$-span of the finite products $s_{1}s_{2}\cdots s_{k}$ with $k \geq 1$ and $s_{i} \in S$, the **words** in $S$.
 
-**Proof.** Let $W$ be the set of the $R$-linear combinations of the words. It contains $S$, a product of one factor being the factor itself, and it is an $R$-submodule. It is closed under the product: for words $u = s_{1}\cdots s_{m}$ and $v = t_{1}\cdots t_{n}$ and scalars $\alpha, \beta \in R$, associativity gives $(\alpha u)(\beta v) = \alpha\bigl(u(\beta v)\bigr) = \alpha\varsigma(\beta)(uv)$, and $uv = s_{1}\cdots s_{m}t_{1}\cdots t_{n}$ is a word again; additivity in each variable then extends the closure to the $R$-linear combinations of words. So $W$ is a subalgebra containing $S$ and $\langle S \rangle \subseteq W$. Conversely a subalgebra containing $S$ contains every word, by induction on the number of factors, and hence contains every $R$-linear combination of words by its closure under the scalars and addition, so $W \subseteq \langle S \rangle$. $\square$
+**Proof.** Let $W$ be the set of the $R$-linear combinations of the words. It contains $S$, a product of one factor being the factor itself, and it is an $R$-submodule. It is closed under the product: for words $u = s_{1}\cdots s_{m}$ and $v = t_{1}\cdots t_{n}$ and scalars $\alpha, \beta \in R$, associativity gives $(\alpha u)(\beta v) = \alpha\bigl(u(\beta v)\bigr) = \alpha\varsigma(\beta)(uv)$, and $uv = s_{1}\cdots s_{m}t_{1}\cdots t_{n}$ is a word again; additivity in each variable then extends the closure to the $R$-linear combinations of words. So $W$ is a subalgebra containing $S$ and $\langle S \rangle \subseteq W$. Conversely a subalgebra containing $S$ contains every word, by induction on the number of factors, and hence contains every $R$-linear combination of words by its closure under the scalars and addition, so $W \subseteq \langle S \rangle$.
 
 **Remark.** Without associativity the plain words are not enough, since the bracketing of a product matters; the general description is recursive,
 
@@ -86,7 +86,7 @@ $$
 
 **Proposition.** $\langle S \rangle_{*} = \langle S \cup S^{*} \rangle$, and it is the smallest $*$-subalgebra containing $S$.
 
-**Proof.** Write $T = S \cup S^{*}$. The subalgebra $\langle T \rangle$ contains $S$ and satisfies $T^{*} = T$. The involution carries a word $t_{1}\cdots t_{k}$ in $T$ to the word $t_{k}^{*}\cdots t_{1}^{*}$ in $T^{*} = T$, and the scalars through $\varsigma$, so $\langle T \rangle^{*} \subseteq \langle T^{*} \rangle = \langle T \rangle$; applying $*$ again gives equality, and $\langle T \rangle$ is a $*$-subalgebra containing $S$. If $D$ is a $*$-subalgebra containing $S$, then $S^{*} \subseteq D^{*} \subseteq D$, so $T \subseteq D$ and hence $\langle T \rangle \subseteq D$. $\square$
+**Proof.** Write $T = S \cup S^{*}$. The subalgebra $\langle T \rangle$ contains $S$ and satisfies $T^{*} = T$. The involution carries a word $t_{1}\cdots t_{k}$ in $T$ to the word $t_{k}^{*}\cdots t_{1}^{*}$ in $T^{*} = T$, and the scalars through $\varsigma$, so $\langle T \rangle^{*} \subseteq \langle T^{*} \rangle = \langle T \rangle$; applying $*$ again gives equality, and $\langle T \rangle$ is a $*$-subalgebra containing $S$. If $D$ is a $*$-subalgebra containing $S$, then $S^{*} \subseteq D^{*} \subseteq D$, so $T \subseteq D$ and hence $\langle T \rangle \subseteq D$.
 
 **Remark.** The inclusion $\langle T \rangle^{*} \subseteq \langle T^{*} \rangle$ used in the proof holds because the involution is additive, of order two and anti-multiplicative: it sends a word in $T$ to a word in $T^{*}$ and the scalars through $\varsigma$. The reverse inclusion needs in addition that $\varsigma$ is a bijection, since a scalar $\beta$ applied to a word $u^{*}$ in $T^{*}$ is the image of $\varsigma^{-1}(\beta)u$; only the inclusion is used here.
 
@@ -94,11 +94,11 @@ $$
 
 **Proposition.** If every element of $S$ is Hermitian then $S^{*} = S$ and $\langle S \rangle_{*} = \langle S \rangle$; a subalgebra generated by Hermitian elements is therefore a $*$-subalgebra.
 
-**Proof.** The first statement is the definition of the Hermitian elements, and the proposition above then gives $\langle S \rangle_{*} = \langle S \cup S^{*} \rangle = \langle S \rangle$. That subalgebra is $*$-stable because its conjugate image is $\langle S^{*} \rangle = \langle S \rangle$. $\square$
+**Proof.** The first statement is the definition of the Hermitian elements, and the proposition above then gives $\langle S \rangle_{*} = \langle S \cup S^{*} \rangle = \langle S \rangle$. That subalgebra is $*$-stable because its conjugate image is $\langle S^{*} \rangle = \langle S \rangle$.
 
 **Proposition.** Suppose that $2$ is invertible in $R$, and let $S \subseteq A$. Then the $*$-subalgebra generated by $S$ is generated by the Hermitian and the skew-Hermitian parts of the elements of $S$: for $x \in S$ the elements $h = \tfrac{1}{2}(x + x^{*})$ and $s = \tfrac{1}{2}(x - x^{*})$ lie in $\langle S \rangle_{*}$ and satisfy $x = h + s$ and $x^{*} = h - s$.
 
-**Proof.** The elements $h$ and $s$ lie in $\langle S \rangle_{*}$, which contains $x$ and $x^{*}$ and is closed under the scalars and addition; and $h^{*} = \tfrac{1}{2}(x^{*} + x) = h$ together with $s^{*} = \tfrac{1}{2}(x^{*} - x) = -s$ says that $h$ is Hermitian and $s$ is skew-Hermitian. The relations $x = h + s$ and $x^{*} = h - s$ show that $S \cup S^{*}$ lies in the $*$-subalgebra generated by the Hermitian and the skew-Hermitian parts of the elements of $S$, while each of those parts lies in $\langle S \rangle_{*}$; the two generated $*$-subalgebras therefore coincide. $\square$
+**Proof.** The elements $h$ and $s$ lie in $\langle S \rangle_{*}$, which contains $x$ and $x^{*}$ and is closed under the scalars and addition; and $h^{*} = \tfrac{1}{2}(x^{*} + x) = h$ together with $s^{*} = \tfrac{1}{2}(x^{*} - x) = -s$ says that $h$ is Hermitian and $s$ is skew-Hermitian. The relations $x = h + s$ and $x^{*} = h - s$ show that $S \cup S^{*}$ lies in the $*$-subalgebra generated by the Hermitian and the skew-Hermitian parts of the elements of $S$, while each of those parts lies in $\langle S \rangle_{*}$; the two generated $*$-subalgebras therefore coincide.
 
 **Remark.** The Hermitian elements of $A$ do not themselves form a subalgebra, so the subalgebra generated by the Hermitian elements is larger than the set $H(A)$: in $M_{2}(\mathbb{C})$ with the conjugate transpose the matrix $E_{11}$ and the matrix $K$ of the previous section are Hermitian, and their product $E_{11}K = E_{12}$ is not. The set $H(A)$ is carried to itself by the involution and is closed under the symmetrised product, which makes it a Jordan algebra when $2$ is invertible in $R$, and that is the content of *Hermitian and Skew-Hermitian Elements*; the point here is only that it is not the subalgebra generated by its elements.
 
@@ -108,7 +108,7 @@ $$
 
 **Proposition.** Let $B$ be a $*$-subalgebra. Then $*$ restricts to a self-map of $B$, additive, of order two, anti-multiplicative and $\varsigma$-semilinear, so that $B$ is an involutive sesqualgebra over the same datum $(R,\varsigma)$; the Hermitian and the skew-Hermitian elements of $B$ are $H(B) = B \cap H(A)$ and $S(B) = B \cap S(A)$; and the inclusion is a $*$-homomorphism, in the sense of *Ideals and Quotients of a Sesqualgebra*.
 
-**Proof.** The condition $B^{*} \subseteq B$ together with $B = (B^{*})^{*} \subseteq B^{*}$ gives $B^{*} = B$, so $*$ restricts to a self-map of $B$; the restriction inherits additivity, the two multiplicative properties, the behaviour under the scalars and the order two from $*$. The two identifications are the definitions read inside $B$. The inclusion is additive, multiplicative and carries the involution to the involution, which is the definition of a $*$-homomorphism. $\square$
+**Proof.** The condition $B^{*} \subseteq B$ together with $B = (B^{*})^{*} \subseteq B^{*}$ gives $B^{*} = B$, so $*$ restricts to a self-map of $B$; the restriction inherits additivity, the two multiplicative properties, the behaviour under the scalars and the order two from $*$. The two identifications are the definitions read inside $B$. The inclusion is additive, multiplicative and carries the involution to the involution, which is the definition of a $*$-homomorphism.
 
 **Remark.** For a subalgebra that is not $*$-stable there is no restriction, and no involution of $B$ is inherited. The obstruction is exactly the failure of $B^{*} \subseteq B$, and it sits between two subalgebras of $A$, since $B^{*}$ is a subalgebra whenever $B$ is: a subalgebra is $*$-stable exactly when the conjugate image, which it always has, lies inside it.
 
@@ -116,7 +116,7 @@ $$
 
 **Proposition.** Let $B$ be a subalgebra. Then $B \cap B^{*}$ is the largest $*$-subalgebra contained in $B$, and $\langle B \cup B^{*} \rangle$ is the smallest $*$-subalgebra containing $B$.
 
-**Proof.** The set $B \cap B^{*}$ is a $*$-subalgebra contained in $B$, and a $*$-subalgebra $D \subseteq B$ satisfies $D = D^{*} \subseteq B^{*}$, so $D \subseteq B \cap B^{*}$. The subalgebra $\langle B \cup B^{*} \rangle$ is a $*$-subalgebra containing $B$ by the proposition on the generated $*$-subalgebra, and a $*$-subalgebra $D$ containing $B$ satisfies $B^{*} \subseteq D^{*} \subseteq D$, so $B \cup B^{*} \subseteq D$ and hence $\langle B \cup B^{*} \rangle \subseteq D$. $\square$
+**Proof.** The set $B \cap B^{*}$ is a $*$-subalgebra contained in $B$, and a $*$-subalgebra $D \subseteq B$ satisfies $D = D^{*} \subseteq B^{*}$, so $D \subseteq B \cap B^{*}$. The subalgebra $\langle B \cup B^{*} \rangle$ is a $*$-subalgebra containing $B$ by the proposition on the generated $*$-subalgebra, and a $*$-subalgebra $D$ containing $B$ satisfies $B^{*} \subseteq D^{*} \subseteq D$, so $B \cup B^{*} \subseteq D$ and hence $\langle B \cup B^{*} \rangle \subseteq D$.
 
 **Remark.** For the upper triangular matrices in $M_{n}(\mathbb{C})$ with the conjugate transpose, the conjugate image is the lower triangular matrices, the largest $*$-subalgebra contained in the upper triangular ones is the diagonal, and the smallest containing them is the whole algebra: for $n = 2$ one has $E_{21} = E_{12}^{*}$, and the products $E_{12}E_{21} = E_{11}$ and $E_{21}E_{12} = E_{22}$ give the four matrix units.
 
@@ -124,7 +124,7 @@ $$
 
 **Proposition.** Let $A$ be associative with a $\varsigma$-semilinear involution $*$, and let $x \star y = xy^{*}$ be the derived operation of *Sesqualgebras*. A subset $B$ is a $*$-subalgebra of the sesqualgebra $(A,\star)$ if and only if it is a $*$-subalgebra of the associative algebra $A$; explicitly, that is the case exactly when $B$ is an $R$-submodule with $B^{*} \subseteq B$ and $B \star B \subseteq B$.
 
-**Proof.** A $*$-subalgebra of $(A,\star)$ is by definition an $R$-submodule with $B \star B \subseteq B$ and $B^{*} \subseteq B$, and then for $x, y \in B$ the element $y^{*}$ lies in $B$, so $xy = x \star y^{*} \in B \star B \subseteq B$ and $B$ is a subalgebra of $A$, hence a $*$-subalgebra of $A$. Conversely a $*$-subalgebra $B$ of $A$ is an $R$-submodule with $B^{*} \subseteq B$ and satisfies $x \star y = xy^{*} \in BB \subseteq B$, so it is a $*$-subalgebra of $(A,\star)$. $\square$
+**Proof.** A $*$-subalgebra of $(A,\star)$ is by definition an $R$-submodule with $B \star B \subseteq B$ and $B^{*} \subseteq B$, and then for $x, y \in B$ the element $y^{*}$ lies in $B$, so $xy = x \star y^{*} \in B \star B \subseteq B$ and $B$ is a subalgebra of $A$, hence a $*$-subalgebra of $A$. Conversely a $*$-subalgebra $B$ of $A$ is an $R$-submodule with $B^{*} \subseteq B$ and satisfies $x \star y = xy^{*} \in BB \subseteq B$, so it is a $*$-subalgebra of $(A,\star)$.
 
 **Remark.** The two products cut the same $*$-stable parts, so the matrix examples of this article, computed with the ordinary product, are examples of $*$-subalgebras for the derived operation as well. The ternary product $\{x,y,z\} = xy^{*}z$ of *Algebraic J\*-Algebras* is inherited by a $*$-subalgebra too, all three factors lying in $B$.
 
@@ -134,7 +134,7 @@ $$
 
 **Proposition.** Let $n \geq 2$. In $M_{n}(\mathbb{C})$ over $\mathbb{R}$ with the conjugate transpose, the diagonal matrices and the scalar matrices $\mathbb{C}I$ are $*$-subalgebras, the upper triangular matrices form a subalgebra that is not $*$-stable, and the strictly upper triangular matrices form a subalgebra that has no unit.
 
-**Proof.** The conjugate transpose of a diagonal matrix is diagonal, and a product of two diagonal matrices is diagonal; the scalar matrices are the span of $I$, and $I^{*} = I$. A product of two upper triangular matrices is upper triangular, and $E_{12}$ is upper triangular while $E_{12}^{*} = E_{21}$ is not, so the subalgebra of the upper triangular matrices is not $*$-stable. A product of two strictly upper triangular matrices is strictly upper triangular, by the same computation on the indices, and that subalgebra has no unit: every element $x$ of it satisfies $xE_{12} = 0$, while a unit would satisfy $eE_{12} = E_{12} \neq 0$. $\square$
+**Proof.** The conjugate transpose of a diagonal matrix is diagonal, and a product of two diagonal matrices is diagonal; the scalar matrices are the span of $I$, and $I^{*} = I$. A product of two upper triangular matrices is upper triangular, and $E_{12}$ is upper triangular while $E_{12}^{*} = E_{21}$ is not, so the subalgebra of the upper triangular matrices is not $*$-stable. A product of two strictly upper triangular matrices is strictly upper triangular, by the same computation on the indices, and that subalgebra has no unit: every element $x$ of it satisfies $xE_{12} = 0$, while a unit would satisfy $eE_{12} = E_{12} \neq 0$.
 
 **Proposition.** Let $A$ be associative with a $\varsigma$-semilinear involution $*$, and let
 
@@ -144,7 +144,7 @@ $$
 
 be its **centre**. Then $Z(A)$ is closed under the product, $z^{*} \in Z(A)$ for every $z \in Z(A)$, so the involution carries the centre to itself, and $Z(A)$ is an $R$-submodule; in the associative case it is a $*$-subalgebra.
 
-**Proof.** For $y, z \in Z(A)$ and any $x$, associativity gives $(yz)x = y(zx) = y(xz) = (yx)z = (xy)z = x(yz)$, so $yz \in Z(A)$. For $z \in Z(A)$ and any $x$ one has $z^{*}x = (x^{*}z)^{*} = (zx^{*})^{*} = xz^{*}$, the middle step being the centrality of $z$, so $z^{*} \in Z(A)$. For the scalars, $(\lambda z)x = \lambda(zx)$ while $x(\lambda z) = \varsigma(\lambda)(xz) = \varsigma(\lambda)(zx)$, so the difference $(\lambda z)x - x(\lambda z)$ is $(\lambda - \varsigma(\lambda))zx$. Centrality of $z$ applied to the element $\lambda x$ gives $z(\lambda x) = (\lambda x)z$, that is $\varsigma(\lambda)(zx) = \lambda(xz) = \lambda(zx)$; hence $(\lambda - \varsigma(\lambda))zx = 0$ for every $x$, the difference vanishes, and $\lambda z \in Z(A)$ for every scalar. $\square$
+**Proof.** For $y, z \in Z(A)$ and any $x$, associativity gives $(yz)x = y(zx) = y(xz) = (yx)z = (xy)z = x(yz)$, so $yz \in Z(A)$. For $z \in Z(A)$ and any $x$ one has $z^{*}x = (x^{*}z)^{*} = (zx^{*})^{*} = xz^{*}$, the middle step being the centrality of $z$, so $z^{*} \in Z(A)$. For the scalars, $(\lambda z)x = \lambda(zx)$ while $x(\lambda z) = \varsigma(\lambda)(xz) = \varsigma(\lambda)(zx)$, so the difference $(\lambda z)x - x(\lambda z)$ is $(\lambda - \varsigma(\lambda))zx$. Centrality of $z$ applied to the element $\lambda x$ gives $z(\lambda x) = (\lambda x)z$, that is $\varsigma(\lambda)(zx) = \lambda(xz) = \lambda(zx)$; hence $(\lambda - \varsigma(\lambda))zx = 0$ for every $x$, the difference vanishes, and $\lambda z \in Z(A)$ for every scalar.
 
 **Remark.** The closure under the scalars is not the scalar condition of the derivations: it holds for the centre always, whereas a multiple of a derivation is a derivation only over the fixed ring. The reason is that the centrality of $z$ is available at the element $\lambda x$, while a derivation has no such element to commute with. The centre is treated in *The Centre and the Zero Divisors of a Sesqualgebra*, where its parts cut by the involution and its zero divisors are developed.
 
@@ -152,7 +152,7 @@ be its **centre**. Then $Z(A)$ is closed under the product, $z^{*} \in Z(A)$ for
 
 **Proposition.** In $\mathbb{H}$ over $\mathbb{R}$ with the quaternion conjugation, the subalgebra generated by an imaginary unit is a copy of $\mathbb{C}$ and is a $*$-subalgebra, and the subalgebra generated by two imaginary units that are linearly independent over $\mathbb{R}$ is the whole of $\mathbb{H}$.
 
-**Proof.** For the unit $i$ the span $\mathbb{R} + \mathbb{R}i$ is closed under the product because $i^{2} = -1$, so it is a subalgebra isomorphic to $\mathbb{C}$; it is $*$-stable because $i^{*} = -i$ lies in it, and $1^{*} = 1$. For two linearly independent imaginary units, take $i$ and $j$; the words include $ij = k$, which does not lie in the span of $1, i, j$, so the generated subalgebra contains $1, i, j, k$ and is $\mathbb{H}$. The independence is needed: the units $i$ and $-i$ are distinct and generate only the copy of $\mathbb{C}$ above. $\square$
+**Proof.** For the unit $i$ the span $\mathbb{R} + \mathbb{R}i$ is closed under the product because $i^{2} = -1$, so it is a subalgebra isomorphic to $\mathbb{C}$; it is $*$-stable because $i^{*} = -i$ lies in it, and $1^{*} = 1$. For two linearly independent imaginary units, take $i$ and $j$; the words include $ij = k$, which does not lie in the span of $1, i, j$, so the generated subalgebra contains $1, i, j, k$ and is $\mathbb{H}$. The independence is needed: the units $i$ and $-i$ are distinct and generate only the copy of $\mathbb{C}$ above.
 
 ## Summary
 

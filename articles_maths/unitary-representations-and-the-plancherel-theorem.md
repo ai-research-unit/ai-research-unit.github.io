@@ -25,7 +25,7 @@ $$
 
 and the assignment $\pi\mapsto(\pi(f))_{f\in L^1(G)}$ is a bijection, up to unitary equivalence, between the continuous unitary representations of $G$ and the nondegenerate `*`-representations of $L^1(G)$.
 
-**Proof.** The multiplicativity is the convolution theorem in integrated form, obtained by writing $\pi(f*g) = \int\!\!\int f(y)g(y^{-1}x)\pi(x)\,dy\,dx$ and substituting $x = yz$; the involution identity uses $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ together with unitarity, $\pi(x^{-1}) = \pi(x)^{-1} = \pi(x)^*$, so that the modular factor and the inverse conspire to give the adjoint. Nondegeneracy is the density of $\pi(L^1(G))\mathcal{H}_\pi$, and the converse recovery of $\pi(x)$ from the integrated form by an approximate identity is the correspondence of *The Convolution Algebra $L^1(G)$*. $\square$
+**Proof.** The multiplicativity is the convolution theorem in integrated form, obtained by writing $\pi(f*g) = \int\!\!\int f(y)g(y^{-1}x)\pi(x)\,dy\,dx$ and substituting $x = yz$; the involution identity uses $f^*(x) = \overline{f(x^{-1})}\Delta(x)^{-1}$ together with unitarity, $\pi(x^{-1}) = \pi(x)^{-1} = \pi(x)^*$, so that the modular factor and the inverse conspire to give the adjoint. Nondegeneracy is the density of $\pi(L^1(G))\mathcal{H}_\pi$, and the converse recovery of $\pi(x)$ from the integrated form by an approximate identity is the correspondence of *The Convolution Algebra $L^1(G)$*.
 
 **Corollary (the transform of the group algebra).** The **operator-valued Fourier transform** $f\mapsto\hat f$, $\hat f(\pi) = \pi(f)$, satisfies
 
@@ -35,7 +35,7 @@ $$
 
 so it is a `*`-homomorphism from the group algebra into the direct product of the algebras $B(\mathcal{H}_\pi)$ over the dual, with the uniform bound $\|\hat f(\pi)\|\leq\|f\|_1$.
 
-**Proof.** Immediate from the theorem, the representation being read factorwise over $\pi\in\hat G$. $\square$
+**Proof.** Immediate from the theorem, the representation being read factorwise over $\pi\in\hat G$.
 
 **Remark (why the `*`-property is the hinge).** The involution on the group algebra is chosen so that the integrated form is a `*`-representation: the modular factor in $f^*$ is exactly what makes $\pi(x^{-1})$ into the adjoint of $\pi(x)$ in the integrated formula. Without it the transform would be only a homomorphism, and no positivity, no Plancherel and no inversion would follow. The adjoint computations that make this precise are *Unitary Representations and the Adjoint*, in the `- * Operator Theory` group.
 
@@ -55,7 +55,7 @@ $$
 
 between the group $L^2$ space and the direct integral of the Hilbert–Schmidt spaces of the dual, intertwining the left regular representation with the direct integral of the representations $\pi$.
 
-**Proof.** That such a measure exists, and that the transform extends to an isometry onto the direct integral, is the Plancherel theorem of *The Plancherel Theorem*; the identification of the summand with the Hilbert–Schmidt class uses that $\hat f(\pi)$ is Hilbert–Schmidt for $f\in L^1\cap L^2$ and that the integrated form is a `*`-representation, so that $\operatorname{tr}(\hat f\hat f^*) = \|\hat f\|_{\mathrm{HS}}^2\geq0$. Uniqueness of the normalisation is the irreducibility of the action: two measures giving the same formula agree on the cylinder sets generating the Borel structure of $\hat G$. $\square$
+**Proof.** That such a measure exists, and that the transform extends to an isometry onto the direct integral, is the Plancherel theorem of *The Plancherel Theorem*; the identification of the summand with the Hilbert–Schmidt class uses that $\hat f(\pi)$ is Hilbert–Schmidt for $f\in L^1\cap L^2$ and that the integrated form is a `*`-representation, so that $\operatorname{tr}(\hat f\hat f^*) = \|\hat f\|_{\mathrm{HS}}^2\geq0$. Uniqueness of the normalisation is the irreducibility of the action: two measures giving the same formula agree on the cylinder sets generating the Borel structure of $\hat G$.
 
 **Corollary (the inversion formula).** For $f$ whose transform is of trace class for $\mu$-almost every $\pi$ and integrable against the measurable field of trace norms, one has, for almost every $x\in G$ and in the sense of distributions in general,
 
@@ -63,7 +63,7 @@ $$
 f(x) = \int_{\hat G} \operatorname{tr}\!\bigl(\hat f(\pi)\,\pi(x)^{*}\bigr)\,d\mu(\pi) , \qquad \pi(x)^* = \pi(x^{-1}) .
 $$
 
-**Proof.** The identity is Plancherel polarised, $\langle f,g\rangle_{L^2} = \int_{\hat G}\operatorname{tr}(\hat f(\pi)\hat g(\pi)^*)d\mu(\pi)$, with $g$ taken as an approximate identity concentrated at $x$; continuity of the pairings gives the pointwise statement where the integrand is integrable, and the distributional statement otherwise. $\square$
+**Proof.** The identity is Plancherel polarised, $\langle f,g\rangle_{L^2} = \int_{\hat G}\operatorname{tr}(\hat f(\pi)\hat g(\pi)^*)d\mu(\pi)$, with $g$ taken as an approximate identity concentrated at $x$; continuity of the pairings gives the pointwise statement where the integrand is integrable, and the distributional statement otherwise.
 
 **Corollary (the parity with the abelian and compact cases).** The theorem specialises as follows. If $G$ is abelian then every irreducible representation is one-dimensional, the Hilbert–Schmidt class is the complex numbers, $\hat G$ is the Pontryagin dual and $\mu$ is Haar measure on it, so the formula is the ordinary Parseval identity. If $G$ is compact then the dual is discrete, $\mu$ is the counting measure weighted by the dimensions, $\mu = \sum_{\pi\in\hat G}d_\pi\,\delta_\pi$, and the formula is the Plancherel identity of the Peter–Weyl theory,
 
@@ -71,7 +71,7 @@ $$
 \int_G|f|^2\,dx = \sum_{\pi\in\hat G} d_\pi\,\bigl\|\hat f(\pi)\bigr\|_{\mathrm{HS}}^2 .
 $$
 
-**Proof.** Both are specialisations of the general formula. An abelian group is unimodular and of type I, its irreducible representations have $\mathcal{H}_\pi = \mathbb{C}$, so $\mathrm{HS}(\mathbb{C}) = \mathbb{C}$ and $\operatorname{tr}$ is the identity, and the measure is the dual Haar measure of *Harmonic Analysis on Groups*; for a compact group the dual is discrete, the trace of the integrated form is $d_\pi\|\hat f(\pi)\|_{\mathrm{HS}}^2$ by the orthogonality relations, and the measure of the singleton $\pi$ is $d_\pi$. $\square$
+**Proof.** Both are specialisations of the general formula. An abelian group is unimodular and of type I, its irreducible representations have $\mathcal{H}_\pi = \mathbb{C}$, so $\mathrm{HS}(\mathbb{C}) = \mathbb{C}$ and $\operatorname{tr}$ is the identity, and the measure is the dual Haar measure of *Harmonic Analysis on Groups*; for a compact group the dual is discrete, the trace of the integrated form is $d_\pi\|\hat f(\pi)\|_{\mathrm{HS}}^2$ by the orthogonality relations, and the measure of the singleton $\pi$ is $d_\pi$.
 
 ## The Measure on the Dual
 
@@ -87,11 +87,11 @@ $$
 Z(G) \;\cong\; \int_{\hat G}^{\oplus} \mathbb{C}\,1_{\mathcal{H}_\pi}\; d\mu(\pi) .
 $$
 
-**Proof.** The first identity is Plancherel read on the operator $\lambda(f) = \hat f(\lambda)$, combined with the fact that $\int_{\hat G}\|\hat f(\pi)\|_{\mathrm{HS}}^2d\mu$ is finite for $f\in L^2$. For the second, a type I von Neumann algebra decomposes over its centre, and the von Neumann algebra generated by the regular representation is a direct integral of the factors $B(\mathcal{H}_\pi)$; its centre is the algebra of scalar fields, and the measure entering the direct integral is the one that makes the trace statement of the first identity hold, that is the Plancherel measure. $\square$
+**Proof.** The first identity is Plancherel read on the operator $\lambda(f) = \hat f(\lambda)$, combined with the fact that $\int_{\hat G}\|\hat f(\pi)\|_{\mathrm{HS}}^2d\mu$ is finite for $f\in L^2$. For the second, a type I von Neumann algebra decomposes over its centre, and the von Neumann algebra generated by the regular representation is a direct integral of the factors $B(\mathcal{H}_\pi)$; its centre is the algebra of scalar fields, and the measure entering the direct integral is the one that makes the trace statement of the first identity hold, that is the Plancherel measure.
 
 **Corollary (the spherical part).** If $(G,K)$ is a Gelfand pair with $G$ of type I, then the restriction of the Plancherel measure to the spherical dual $\operatorname{Irr}(G,K)$ is the spherical Plancherel measure of *Spherical Functions and the Zonal Spherical Function*, and the multiplicity-one decomposition of the invariant $L^2$ space there is the restriction of the decomposition above to the $K$-fixed part.
 
-**Proof.** The invariant $L^2$ space is the $K$-fixed part of the direct integral, and the spherical representations are the irreducible representations with $\mathcal{H}_\pi^K\neq0$; the measure restricted to them is the spectral measure of the commutative invariant algebra, which is the spherical Plancherel measure. $\square$
+**Proof.** The invariant $L^2$ space is the $K$-fixed part of the direct integral, and the spherical representations are the irreducible representations with $\mathcal{H}_\pi^K\neq0$; the measure restricted to them is the spectral measure of the commutative invariant algebra, which is the spherical Plancherel measure.
 
 **Remark (what the article does not do).** The existence of the measure and its construction are *The Plancherel Theorem*; the transform as one operator, its unitary equivalence and the intertwining with the regular representation are *The Plancherel Operator*, in the `- Operator Theory` group. The adjoint of a representation operator is *Unitary Representations and the Adjoint*, in the `- * Operator Theory` group, and the Hermitian forms on the algebra that the unitary representations define are *Hermitian Forms and the Group Algebra*, later in this group. The completeness of the dual, the type I property and the multiplicity theory are *Noncommutative Harmonic Analysis* and *Type I Groups*.
 

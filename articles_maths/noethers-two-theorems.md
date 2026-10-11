@@ -43,7 +43,7 @@ $$
 = \Bigl(\frac{\partial L}{\partial u^i} - \partial_\mu L^\mu_i\Bigr)\delta u^i + \partial_\mu\bigl(L^\mu_i\,\delta u^i\bigr),
 $$
 
-which is the stated identity. ∎
+which is the stated identity.
 
 The identity splits the change of the density into a piece that vanishes on shell — the equations of motion contracted with the variation — and a piece that is a divergence, the boundary current $\Theta^\mu$. Everything below is that identity read with a different kind of variation.
 
@@ -87,7 +87,7 @@ $$
 \alpha\,\partial_\mu F^\mu = \alpha\,E_i\xi^i + \alpha\,\partial_\mu\bigl(L^\mu_i\xi^i\bigr),
 $$
 
-and cancelling the common factor $\alpha$ gives $E_i\xi^i = \partial_\mu(F^\mu - L^\mu_i\xi^i) = -\partial_\mu j^\mu$. ∎
+and cancelling the common factor $\alpha$ gives $E_i\xi^i = \partial_\mu(F^\mu - L^\mu_i\xi^i) = -\partial_\mu j^\mu$.
 
 **The conserved charge.** If the current falls off fast enough at spatial infinity, the **Noether charge**
 
@@ -169,7 +169,7 @@ $$
 \int\Bigl(b^i_\alpha E_i - \partial_\mu\bigl(a^{i\mu}_\alpha E_i\bigr)\Bigr)\varepsilon^\alpha\,d^mx = 0 ,
 $$
 
-for every compactly supported $\varepsilon^\alpha$. The fundamental lemma then gives the stated identity for each $\alpha$. The higher-order form follows by integrating by parts $k$ times, at each step producing the factor $(-1)^k$. ∎
+for every compactly supported $\varepsilon^\alpha$. The fundamental lemma then gives the stated identity for each $\alpha$. The higher-order form follows by integrating by parts $k$ times, at each step producing the factor $(-1)^k$.
 
 Three features of the theorem are worth stating before the examples, because each is a place where the first theorem is misapplied.
 
@@ -213,7 +213,7 @@ $$
 \partial_\nu\partial_\mu F^{\mu\nu} \equiv 0 ,
 $$
 
-which is the antisymmetry of $F^{\mu\nu}$ contracted with the symmetric pair $\partial_\nu\partial_\mu$. The identity was checked on a random smooth off-shell potential by finite differences, with residual exactly $0$ against a scale of $2$.
+which is the antisymmetry of $F^{\mu\nu}$ contracted with the symmetric pair $\partial_\nu\partial_\mu$.
 
 **What the identity does.** The four equations $E^\nu=0$ are subject to one identity, so only three are independent. In the $3+1$ split the time component $\nu=0$ is Gauss's law, an equation with no time derivative, and the spatial components are the evolution equations; the identity is what ties the time derivative of the constraint to the divergence of the evolution equations, so that the constraint, once imposed, is preserved. Counting the degrees of freedom, four equations less one identity less one gauge freedom leaves two, the two polarizations of the free field, which is the count the corpus's *Canonical Quantization of the Biquaternion Maxwell Field* reproduces from the constraint algebra.
 
@@ -251,7 +251,7 @@ $$
 -\,E_B - \partial_\nu E^{A_\nu} \equiv 0 ,
 $$
 
-and substitution gives $m^2\partial_\nu(A^\nu+\partial^\nu B) - m^2\partial_\nu(A^\nu+\partial^\nu B) - \partial_\nu\partial_\mu F^{\mu\nu}$, which vanishes by the same antisymmetry as before. The identity was checked on random smooth off-shell fields, with residual $9\times10^{-14}$ against a scale of $3.7$.
+and substitution gives $m^2\partial_\nu(A^\nu+\partial^\nu B) - m^2\partial_\nu(A^\nu+\partial^\nu B) - \partial_\nu\partial_\mu F^{\mu\nu}$, which vanishes by the same antisymmetry as before.
 
 **The rigid current and the correction term.** The rigid subgroup, the shift of $B$, has the first-theorem current $j^\mu_{(B)} = L^\mu_B\,b_B = -m^2(A^\mu+\partial^\mu B)$, conserved on shell. Off shell the two theorems combine into the exact statement
 

@@ -79,7 +79,6 @@ $$
 $$
 the **Euler top**, whose integrals are the energy and the Casimir and whose level sets are the intersections of the energy ellipsoids with the momentum spheres of *Lagrangian and Hamiltonian Systems*.
 
-**Verification.** With $\mu=(0.8,-0.5,0.3)$, $I=(1,2,3)$ and the derivatives evaluated by central differences of step $10^{-6}$, the antisymmetry of the bracket was exact, the Jacobi sum over a list of eight polynomial functions was at most $6.5\times10^{-11}$, and the bracket of the Casimir $\frac12\lVert M\rVert^2$ with each of them was at most $3.6\times10^{-11}$; the residuals are the discretisation error of the derivative. The reduced equation gave $\dot M=(-0.0250000000,-0.1600000000,-0.2000000000)$, which is $I^{-1}M\times M$ to the last digit, and the same vector is $M\times I^{-1}M$ with the opposite overall sign, that is, with the opposite choice of trivialisation.
 
 ### Casimirs, Orbits and the Invariant Functions
 
@@ -126,7 +125,6 @@ $$
 $$
 which with $M=I\Omega$ is $\dot M=I^{-1}M\times M$, the Euler top of the preceding section. The two routes to it — the Lie–Poisson bracket of the reduced phase space and the Euler–Poincaré equation of the reduced Lagrangian — give the same equation, as they must: the first is the Hamiltonian form of the second, and the Legendre transform between them is the map $\Omega\mapsto M=I\Omega$. The derivation from the variational principle also shows why the equation is quadratic in $M$: the coadjoint action is bilinear, and the quadratic term is the curvature of the group, not an approximation.
 
-**Verification.** With $M=(0.8,-0.5,0.3)$ and $I=\mathrm{diag}(1,2,3)$ so that $\Omega=(0.8,-0.25,0.1)$, the right-hand side of the Euler–Poincaré equation computed as $-M\times\Omega$ was $(-0.0250000000,-0.1600000000,-0.2000000000)$, identical to the value of $\{M,H\}$ obtained from the Lie–Poisson bracket of the preceding section by numerical differentiation. The two derivations therefore agree algebraically, which is the point of the check: a sign error in the coadjoint convention changes the sign of one of them and not the other.
 
 ### The Semidirect Product and the Heavy Top
 
@@ -157,7 +155,6 @@ $$
 $$
 in the plane, with the Hamiltonian the kinetic energy $\frac12\int\lVert\nabla\psi\rVert^2$, where $\psi$ is the stream function of the flow. The equation of motion is the Euler equation in vorticity form, $\dot\omega=\{\psi,\omega\}$ up to the sign convention of the orientation of $\nabla^\perp$, and the enstrophy $\frac12\int\omega^2$ is a Casimir, hence conserved for every Hamiltonian and not only for the kinetic energy. This is the infinite-dimensional content of the theory: **the reduced phase space of a fluid is the dual of a Lie algebra, its bracket is a Lie–Poisson bracket, and the Casimirs are the invariants of the coadjoint action.** None of the three has a finite-dimensional analogue, and it was this case that made the Lie–Poisson formalism necessary rather than a reformulation of Hamiltonian mechanics.
 
-**Verification.** For the two-dimensional vorticity bracket with $\omega=\sin(x+0.3)\cos(0.7y-0.2)+\frac12\sin(0.4x+0.9)\sin(1.1y)$ and the stream function the corresponding solution of the Poisson equation on the torus, the identity that converts the vorticity equation into divergence form, $\partial_x(\omega\,\psi_y)-\partial_y(\omega\,\psi_x)=\{\omega,\psi\}$, held to $2.8\times10^{-10}$ at $(0.37,-0.21)$, the residual being the second-order error of the numerical derivatives; the bracket of the enstrophy with a test function, $\int_{\mathbb{T}^2}\{\omega^2,h\}\,dx$, evaluated by the trapezoidal rule on a $40\times40$ grid over the torus, was $8.8\times10^{-12}$, that is, zero to the accuracy of the quadrature. The two checks verify the two claims of the paragraph: the divergence form and the Casimir property. Enstrophy is a Casimir of the vorticity bracket, and the identity is the reason the vorticity equation can be written in conservation form at all.
 
 ## Summary
 

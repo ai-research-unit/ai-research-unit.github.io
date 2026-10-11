@@ -21,7 +21,7 @@ $$
 
 for some $m = m(n)$ and some constant $C_n$. In that case the involution is a homeomorphism, it is an isomorphism of the topological algebra onto its topological opposite, and it descends to each quotient $A_n$ and to the limit.
 
-**Proof.** The continuity of a linear map of a Fréchet space is the existence, for every continuous seminorm $p_n$, of a continuous seminorm $p_m$ and a constant $C_n$ with $p_n(\sigma(a)) \leq C_n p_m(a)$; the seminorms $p_m$ generate the topology, giving the criterion. An involutive homeomorphism is its own inverse, and the conjugate-linear anti-automorphism descends to the quotient because the kernel of $p_n$ is stable under $\sigma$ when $p_n$ is $\sigma$-subordinate to a $p_m$ for the reverse inequality also holds by symmetry. $\square$
+**Proof.** The continuity of a linear map of a Fréchet space is the existence, for every continuous seminorm $p_n$, of a continuous seminorm $p_m$ and a constant $C_n$ with $p_n(\sigma(a)) \leq C_n p_m(a)$; the seminorms $p_m$ generate the topology, giving the criterion. An involutive homeomorphism is its own inverse, and the conjugate-linear anti-automorphism descends to the quotient because the kernel of $p_n$ is stable under $\sigma$ when $p_n$ is $\sigma$-subordinate to a $p_m$ for the reverse inequality also holds by symmetry.
 
 **Example (a discontinuous involution).** Let $A = C^\infty(\mathbb{R})$ and let $\varphi : C^\infty(\mathbb{R}) \to C^\infty(\mathbb{R})$ be a discontinuous derivation composed with the identity; the map $f \mapsto \overline{f} + \varphi(f)$ is a linear involution that is not continuous for the Fréchet topology. The example shows that continuity is a genuine hypothesis and not a consequence of the algebra structure.
 
@@ -35,7 +35,7 @@ $$
 
 is the projective limit of the Banach $*$-algebras $A_n$ along the continuous unital $*$-homomorphisms $A_{n} \to A_{m}$ for $m \leq n$. Conversely the projective limit of a countable system of Banach $*$-algebras with continuous connecting $*$-homomorphisms is an involutive Fréchet algebra.
 
-**Proof.** The kernel $\ker p_n$ is a closed two-sided ideal stable under the involution, so the quotient is a normed $*$-algebra and its completion a Banach $*$-algebra; the quotients are linked by the natural maps and the algebra is their projective limit by the standard description of a Fréchet space as the limit of its seminorm quotients. The converse is the standard construction of a Fréchet topology from a countable projective system of Banach spaces, with the involution defined componentwise. $\square$
+**Proof.** The kernel $\ker p_n$ is a closed two-sided ideal stable under the involution, so the quotient is a normed $*$-algebra and its completion a Banach $*$-algebra; the quotients are linked by the natural maps and the algebra is their projective limit by the standard description of a Fréchet space as the limit of its seminorm quotients. The converse is the standard construction of a Fréchet topology from a countable projective system of Banach spaces, with the involution defined componentwise.
 
 **Theorem (the m-convex case and the spectrum).** If the seminorms $p_n$ are submultiplicative and the algebra is **m-convex**, then $A$ is a projective limit of Banach algebras and the spectrum of an element is the set of $\lambda$ with $a - \lambda$ non-invertible; for each $n$ the spectrum of the image $\pi_n(a)$ in $A_n$ contains $\sigma(a)$, and
 
@@ -45,7 +45,7 @@ $$
 
 a compact subset of $\mathbb{C}$. The involution moves the spectrum by conjugation, $\sigma(a^*) = \overline{\sigma(a)}$, and the Hermitian elements are those with real spectrum in the $A_n$.
 
-**Proof.** The spectrum of $a$ is the complement of the invertible set, mapped onto the sets of inverses of the $\sigma_{A_n}(\pi_n(a))$; the union description and compactness are standard for a Fréchet algebra, and the conjugation of the spectrum is the involution order two argument as in the Banach case. A Hermitian element has Hermitian image in each $A_n$, hence real spectrum in each, hence in $A$. $\square$
+**Proof.** The spectrum of $a$ is the complement of the invertible set, mapped onto the sets of inverses of the $\sigma_{A_n}(\pi_n(a))$; the union description and compactness are standard for a Fréchet algebra, and the conjugation of the spectrum is the involution order two argument as in the Banach case. A Hermitian element has Hermitian image in each $A_n$, hence real spectrum in each, hence in $A$.
 
 ## The Spectral Geometry
 
@@ -53,7 +53,7 @@ a compact subset of $\mathbb{C}$. The involution moves the spectrum by conjugati
 
 **Proposition (Hermitian involutions and real spectra).** An involution is Hermitian if and only if every self-adjoint element has real spectrum; it is then continuous when the topology is m-convex. For an A*-algebra the self-adjoint part $A^+$ is a real Fréchet space with $A = A^+ \oplus iA^+$, and the algebra is the complexification of its Hermitian part.
 
-**Proof.** Hermitian means real images in every quotient; real images for all self-adjoint elements is real spectrum for every quotient; conversely real spectrum forces the Hermitian part real. The continuity under m-convexity is the standard automatic-continuity statement for a Hermitian involution on an m-convex Fréchet algebra. The decomposition is the real-form statement extended to the Fréchet case. $\square$
+**Proof.** Hermitian means real images in every quotient; real images for all self-adjoint elements is real spectrum for every quotient; conversely real spectrum forces the Hermitian part real. The continuity under m-convexity is the standard automatic-continuity statement for a Hermitian involution on an m-convex Fréchet algebra. The decomposition is the real-form statement extended to the Fréchet case.
 
 ## Examples
 

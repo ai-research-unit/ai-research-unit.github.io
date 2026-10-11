@@ -178,7 +178,6 @@ $$
 
 is time-independent, which follows by integrating the conservation law over a spatial volume and using the vanishing of the flux at infinity.
 
-**Verification on a superposition.** The conservation law was checked numerically on a superposition of two on-shell real modes rather than on a single plane wave, for which the identity would hold mode by mode and would not test the cross terms. The representation used was
 
 $$
 \phi(\mathbf{x},t) = \cos\!\left(k_1x-\omega_1t\right) + 0.6\cos\!\left(k_2y-\omega_2t\right),
@@ -242,7 +241,7 @@ $$
 \eta_{\mu\nu}T^{\mu\nu} = -T^{00}+T^{kk} = -W - \sigma_{kk} = -W + W = 0 ,
 $$
 
-because $\sigma_{kk} = \epsilon\mathbf{E}^2+\mu\mathbf{H}^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric. **Verification.** The trace was evaluated on three hundred random field configurations and vanished to machine precision, at the level of $10^{-15}$, in each case; the component table was checked against the bilinear definition on the same sample.
+because $\sigma_{kk} = \epsilon\mathbf{E}^2+\mu\mathbf{H}^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
 
 **Conservation.** The divergence of the tensor is the Lorentz four-force density,
 
@@ -252,7 +251,7 @@ $$
 f^\nu = \left(\frac{1}{c}\mathbf{E}\cdot\mathbf{J},\ \rho\mathbf{E}+\mathbf{J}\times\mathbf{B}\right),
 $$
 
-so that for a source-free field $\partial_\mu T^{\mu\nu}=0$, and in the presence of charges the field momentum is exchanged with the matter at the rate given by the Lorentz force. The companion article *The Lorentz Force in Biquaternion Form* treats the matter side of this exchange. **Verification on a superposition.** The source-free conservation law was checked on a superposition of two plane waves in two different directions with two different polarisations,
+so that for a source-free field $\partial_\mu T^{\mu\nu}=0$, and in the presence of charges the field momentum is exchanged with the matter at the rate given by the Lorentz force. The companion article *The Lorentz Force in Biquaternion Form* treats the matter side of this exchange. The source-free conservation law was checked on a superposition of two plane waves in two different directions with two different polarisations,
 
 $$
 \mathbf{E} = \mathbf{e}_1\cos(k_1x-\omega_1t) + 0.5\,\mathbf{e}_2\cos(k_2y-\omega_2t),

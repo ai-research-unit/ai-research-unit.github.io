@@ -25,11 +25,11 @@ $$
 
 The adjoint of a reflection is the reflection at the image of the parameter under the composite $\delta = \sigma\alpha$.
 
-**Proof.** The reflection is the signed sandwich $\Sigma^\alpha_{u,u^{-1}}$, whose adjoint is $\Sigma^\alpha_{\delta(u),\delta(u^{-1})} = \Sigma^\alpha_{\delta(u),\delta(u)^{-1}}$ by *The Signed Adjoint Sandwich on a Banach Algebra*; this is exactly $\rho_{\delta(u)}$. $\square$
+**Proof.** The reflection is the signed sandwich $\Sigma^\alpha_{u,u^{-1}}$, whose adjoint is $\Sigma^\alpha_{\delta(u),\delta(u^{-1})} = \Sigma^\alpha_{\delta(u),\delta(u)^{-1}}$ by *The Signed Adjoint Sandwich on a Banach Algebra*; this is exactly $\rho_{\delta(u)}$.
 
 **Corollary (the reflection group and the adjoint).** The adjoint map $u \mapsto \delta(u)$ on the reflection group is an automorphism, $(\rho_u\rho_v)^\dagger = \rho_{\delta(u)}\rho_{\delta(v)}$ and $(\rho_u)^{-1\,\dagger} = \rho_{\delta(u)^{-1}}$; the reflection group maps under the adjoint by the automorphism $\delta$ of the unit group, and the reflection $\rho_1 = \mathrm{id}$ has adjoint $\rho_1$.
 
-**Proof.** The adjoint is anti-multiplicative on the operators and multiplicative on the parameters, and $\rho_u\rho_v = \Sigma^\alpha_{u,u^{-1}}\Sigma^\alpha_{v,v^{-1}} = \rho_{uv}$; the identity reflection is fixed. $\square$
+**Proof.** The adjoint is anti-multiplicative on the operators and multiplicative on the parameters, and $\rho_u\rho_v = \Sigma^\alpha_{u,u^{-1}}\Sigma^\alpha_{v,v^{-1}} = \rho_{uv}$; the identity reflection is fixed.
 
 ## Self-Adjointness and Unitarity
 
@@ -41,17 +41,17 @@ $$
 
 Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whenever $u$ is a fixed point of $\delta$; the self-adjointness fails for a unit whose defect is not central.
 
-**Proof.** $\rho_{\delta(u)} = \rho_u$ iff the two parametrising units differ by a central unit, because the parametrisation of the reflection group has kernel the central units: $\rho_p = \rho_q$ iff $q^{-1}p$ is central. With $p = \delta(u)$ and $q = u$ this is the centrality of $u^{-1}\delta(u)$, equivalently of $\delta(u)u^{-1}$. $\square$
+**Proof.** $\rho_{\delta(u)} = \rho_u$ iff the two parametrising units differ by a central unit, because the parametrisation of the reflection group has kernel the central units: $\rho_p = \rho_q$ iff $q^{-1}p$ is central. With $p = \delta(u)$ and $q = u$ this is the centrality of $u^{-1}\delta(u)$, equivalently of $\delta(u)u^{-1}$.
 
 **Theorem (unitarity).** The reflection $\rho_u$ is unitary, $(\rho_u)^\dagger\rho_u = \rho_u(\rho_u)^\dagger = \mathrm{id}$, if and only if the defect is central and $\delta(u) = u^{-1}$ modulo the centre; equivalently, $\rho_u$ is unitary if and only if $\rho_{\delta(u)} = \rho_{u^{-1}}$, that is the adjoint is the inverse reflection.
 
-**Proof.** $\rho_u$ is unitary iff $(\rho_u)^\dagger = (\rho_u)^{-1} = \rho_{u^{-1}}$; by the explicit form of the adjoint this is $\rho_{\delta(u)} = \rho_{u^{-1}}$, which by the kernel of the parametrisation is the centrality of $u\,\delta(u)$; modulo the centre of the parametrisation this is $\delta(u) = u^{-1}$, and the defect $\delta(u)u^{-1} = u^{-2}$ being central is the centrality condition. $\square$
+**Proof.** $\rho_u$ is unitary iff $(\rho_u)^\dagger = (\rho_u)^{-1} = \rho_{u^{-1}}$; by the explicit form of the adjoint this is $\rho_{\delta(u)} = \rho_{u^{-1}}$, which by the kernel of the parametrisation is the centrality of $u\,\delta(u)$; modulo the centre of the parametrisation this is $\delta(u) = u^{-1}$, and the defect $\delta(u)u^{-1} = u^{-2}$ being central is the centrality condition.
 
 ## The Failure and Examples
 
 **Proposition (the failure of self-adjointness).** Let $u$ be a unit with $\delta(u)u^{-1}$ not central. Then $\rho_u$ is not self-adjoint and the signed adjoint of the reflection is a genuinely different reflection; the obstruction is the commutant of the defect, and it vanishes for a commutative algebra and for a unit fixed by $\delta$.
 
-**Proof.** Immediate from the centrality criterion; a non-central defect gives $\rho_{\delta(u)} \neq \rho_u$, and the number of distinct reflections in the class of $u$ is measured by the class group of $A$ by the central units. $\square$
+**Proof.** Immediate from the centrality criterion; a non-central defect gives $\rho_{\delta(u)} \neq \rho_u$, and the number of distinct reflections in the class of $u$ is measured by the class group of $A$ by the central units.
 
 **Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the transpose-involution and the trace form, the reflections are the conjugations $x \mapsto uxu^{-1}$ in the graded sense; the defect $\delta(u)u^{-1} = u^{-1}u^{-1}\cdot$... is central exactly when the corresponding conjugation is self-adjoint, and for a graded reflection with $u^2 = 1$ and $\delta(u) = u$ the operator is self-adjoint.
 
@@ -63,7 +63,7 @@ Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whene
 
 **Proposition (Cayley and the reflections).** From a self-adjoint signed left multiplication $\ell_r$ with $\delta(r) = r$, the Cayley transform produces the unitary $u = (r-i)(r+i)^{-1}$ of the graded algebra, and the corresponding reflection $\rho_u$ is self-adjoint. The failure of self-adjointness of a reflection is therefore a failure of its unitary to be fixed by $\delta$ modulo the centre, not a failure of the correspondence between the reflections and the unitaries.
 
-**Proof.** The Cayley transform of a self-adjoint element is unitary, and since $\delta(r) = r$ and $\delta$ is a real-linear automorphism fixing $i$, one has $\delta(u) = u$, so the defect $\delta(u)u^{-1} = 1$ is central and $\rho_u$ is self-adjoint by the centrality criterion. $\square$
+**Proof.** The Cayley transform of a self-adjoint element is unitary, and since $\delta(r) = r$ and $\delta$ is a real-linear automorphism fixing $i$, one has $\delta(u) = u$, so the defect $\delta(u)u^{-1} = 1$ is central and $\rho_u$ is self-adjoint by the centrality criterion.
 
 **Example (the unitary group and the reflections).** For a $\mathrm{C}^*$-algebra the Cayley transform maps the self-adjoint operators onto the unitary operators with $1$ removed, and the corresponding reflections form the self-adjoint part of the reflection group; the complement consists of the reflections at the unitaries whose defect $\delta(u)u^{-1}$ is not central.
 

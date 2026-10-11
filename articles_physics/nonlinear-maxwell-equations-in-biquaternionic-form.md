@@ -45,7 +45,7 @@ $$
 
 which is the replacement that turns Hamilton's rule into the paper's: on vectors, the paper's product is the Pauli product $\mathbf{u}_1\cdot\mathbf{u}_2 + i\,\mathbf{u}_1\times\mathbf{u}_2$, with **both** the dot and the cross term of opposite sign to the corpus's Hamilton product. The same convention and the same caution are recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*, and the reader is referred there for the worked comparison. Two consequences matter here.
 
-**The dictionary.** An element the paper writes as $(s,\mathbf{u})$ is the corpus's element $(s, i\mathbf{u})$. So the paper's vector coefficients $E_k$ enter the corpus's vector slots as $iE_k$. The paper's $e_1, e_2, e_3$ are the corpus's $ie_1, ie_2, ie_3$ — that is, the basis $e_0, x, y, z$ with $x = ie_1$ and so on, whose vector units square to $+e_0$, which is the basis of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The identification is exact and was recomputed.
+**The dictionary.** An element the paper writes as $(s,\mathbf{u})$ is the corpus's element $(s, i\mathbf{u})$. So the paper's vector coefficients $E_k$ enter the corpus's vector slots as $iE_k$. The paper's $e_1, e_2, e_3$ are the corpus's $ie_1, ie_2, ie_3$ — that is, the basis $e_0, x, y, z$ with $x = ie_1$ and so on, whose vector units square to $+e_0$, which is the basis of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 **The norm.** The paper's square modulus, $\mathcal{B}\bar{\mathcal{B}} = s^2 - \mathbf{u}^2$, is **indefinite** in this basis: the "unitary" biquaternions, $\mathcal{B}\bar{\mathcal{B}} = 1$, are those with $s^2 - \lvert\mathbf{u}\rvert^2 = 1$, not those on a sphere. In the corpus's Hamilton basis the same expression would read $s^2 + \lvert\mathbf{u}\rvert^2$, because the vector units square to $-e_0$ there; the sign is the dictionary's, and the caution is repeated here because the paper's Lorentz group is built on the indefinite form.
 
@@ -165,7 +165,7 @@ This is the sharpest statement the corpus can make about the paper, and it is th
 
 ### Every Plane Wave, Null or Not
 
-The free directions have a visible consequence. Over $100$ random complex amplitudes $\mathbf{A}$ and random real frequency–wave-vector pairs $(\omega, \mathbf{k})$, the field
+The free directions have a visible consequence.
 
 $$
 F = \mathbf{A}\,e^{i(\omega t - \mathbf{k}\cdot\mathbf{r})}, \qquad \mathbf{A} \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \mathbf{k} \in \mathbb{R}^3,
@@ -294,8 +294,8 @@ The paper's section 11 asks when the energy flow of the field swirls. The twist 
 
 $$
 \Omega = \nabla\times\mathbf{S} = \nabla\times[\mathbf{E}\,\mathbf{H}]
-        = (\nabla\cdot\mathbf{H} + \mathbf{H}\cdot\nabla)\mathbf{E}
-        - (\nabla\cdot\mathbf{E} + \mathbf{E}\cdot\nabla)\mathbf{H},
+= (\nabla\cdot\mathbf{H} + \mathbf{H}\cdot\nabla)\mathbf{E}
+- (\nabla\cdot\mathbf{E} + \mathbf{E}\cdot\nabla)\mathbf{H},
 \tag{11.1}
 $$
 
@@ -314,7 +314,6 @@ $$
 \tag{11.4}
 $$
 
-which was verified as an identity over $100$ random configurations to $1.8 \times 10^{-15}$: the twist depends on $f$ alone and not on the phase $\varphi$ at all.
 
 ### Where the Claim Fails
 
@@ -357,7 +356,7 @@ Given the strength of that finding, the rest of the section's apparatus is recor
 
 ## What Is Verified and What Is Not
 
-Every claim below was recomputed on $100$ random configurations by exact pointwise algebra, integer-free aside from the floating-point evaluation, in the fields and derivatives of the flat normal, plane-wave, Coulomb and Maxwell constructions used throughout the article. No external source was consulted for the mathematics.
+No external source was consulted for the mathematics.
 
 | Item | Result |
 |---|---|

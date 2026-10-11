@@ -25,7 +25,7 @@ $$
 [\operatorname{ad}_h,\operatorname{ad}_{h'}]=0,\qquad \operatorname{ad}_h\text{ is diagonalisable for every }h\in\mathrm{H}.
 $$
 
-**Proof.** The commutation is $[\operatorname{ad}_h,\operatorname{ad}_{h'}]=[h,h']=0$, the bracket being the adjoint representation of the abelian algebra $\mathrm{H}$; the diagonalisability is the defining property of a Cartan subalgebra of a semisimple algebra, stated in *Root Systems and Classification*. $\square$
+**Proof.** The commutation is $[\operatorname{ad}_h,\operatorname{ad}_{h'}]=[h,h']=0$, the bracket being the adjoint representation of the abelian algebra $\mathrm{H}$; the diagonalisability is the defining property of a Cartan subalgebra of a semisimple algebra, stated in *Root Systems and Classification*.
 
 ### The Joint Eigenspace Decomposition
 
@@ -39,7 +39,7 @@ $$
 
 and the joint eigenspaces of the family $\operatorname{ad}(\mathrm{H})$ are exactly the pieces $\mathrm{G}_\alpha$ and $\mathrm{H}=\mathrm{G}_0$.
 
-**Proof.** Commuting diagonalisable operators are simultaneously diagonalisable, so $\mathrm{G}$ is the direct sum of the joint eigenspaces of the family; the definition of the root space is exactly the joint eigenspace for the eigenvalue function $\alpha$, and the zero eigenvalue function has the joint kernel $\mathrm{H}$ because a Cartan subalgebra equals its own normaliser. This is the root space decomposition of *Root Systems and Classification*. $\square$
+**Proof.** Commuting diagonalisable operators are simultaneously diagonalisable, so $\mathrm{G}$ is the direct sum of the joint eigenspaces of the family; the definition of the root space is exactly the joint eigenspace for the eigenvalue function $\alpha$, and the zero eigenvalue function has the joint kernel $\mathrm{H}$ because a Cartan subalgebra equals its own normaliser. This is the root space decomposition of *Root Systems and Classification*.
 
 **Corollary.** On each root space the Cartan operator acts by the scalar $\alpha(h)$:
 
@@ -57,7 +57,7 @@ $$
 \operatorname{ad}_x(\mathrm{G}_\beta)\subseteq\mathrm{G}_{\alpha+\beta}.
 $$
 
-**Proof.** For $h\in\mathrm{H}$ and $y\in\mathrm{G}_\beta$, the Jacobi identity gives $[h,[x,y]]=[[h,x],y]+[x,[h,y]]=\alpha(h)[x,y]+\beta(h)[x,y]$, so $[x,y]\in\mathrm{G}_{\alpha+\beta}$. $\square$
+**Proof.** For $h\in\mathrm{H}$ and $y\in\mathrm{G}_\beta$, the Jacobi identity gives $[h,[x,y]]=[[h,x],y]+[x,[h,y]]=\alpha(h)[x,y]+\beta(h)[x,y]$, so $[x,y]\in\mathrm{G}_{\alpha+\beta}$.
 
 **Corollary (the characteristic polynomial).** For $h\in\mathrm{H}$ the characteristic polynomial of the Cartan operator is
 
@@ -77,17 +77,17 @@ $$
 \kappa(\operatorname{ad}_xy,z)=-\kappa(y,\operatorname{ad}_xz),\qquad\text{that is}\qquad \operatorname{ad}_x^{*}=-\operatorname{ad}_x .
 $$
 
-**Proof.** The invariance is from *Structure of Lie Algebras*; putting $y=x$ in the middle slot gives $\kappa([x,y],z)=\kappa(x,[y,z])$, that is $\kappa(\operatorname{ad}_xy,z)=-\kappa(y,\operatorname{ad}_xz)$, which is the defining relation of the adjoint with respect to the nondegenerate pairing $\kappa$. $\square$
+**Proof.** The invariance is from *Structure of Lie Algebras*; putting $y=x$ in the middle slot gives $\kappa([x,y],z)=\kappa(x,[y,z])$, that is $\kappa(\operatorname{ad}_xy,z)=-\kappa(y,\operatorname{ad}_xz)$, which is the defining relation of the adjoint with respect to the nondegenerate pairing $\kappa$.
 
 **Corollary.** The adjoint representation is a homomorphism $\operatorname{ad}:\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$ whose image lies in the Lie subalgebra of $\kappa$-skew operators; in particular each Cartan operator is $\kappa$-skew, and its nonzero eigenvalues come in opposite pairs.
 
-**Proof.** The image of a homomorphism is a subalgebra, and the skew adjoint operators form a subalgebra because the adjoint operation reverses the commutator. For a skew operator the characteristic polynomial is even up to the kernel, so the nonzero eigenvalues occur in pairs $t,-t$. $\square$
+**Proof.** The image of a homomorphism is a subalgebra, and the skew adjoint operators form a subalgebra because the adjoint operation reverses the commutator. For a skew operator the characteristic polynomial is even up to the kernel, so the nonzero eigenvalues occur in pairs $t,-t$.
 
 ### The Restriction to the Cartan Subalgebra
 
 **Proposition.** The restriction of the Killing form to $\mathrm{H}$ is nondegenerate; the element $t_\alpha\in\mathrm{H}$ defined by $\kappa(t_\alpha,h)=\alpha(h)$ realises the root as a pairing, and the transported form $(\alpha,\beta)=\kappa(t_\alpha,t_\beta)$ on $\mathrm{H}^*$ is symmetric and nondegenerate, with the Cartan integers $2(\beta,\alpha)/(\alpha,\alpha)$ integral.
 
-**Proof.** The nondegeneracy of $\kappa|_{\mathrm{H}}$ and the identity $\kappa(\mathrm{G}_\alpha,\mathrm{G}_\beta)=0$ unless $\alpha+\beta=0$ are from *Root Systems and Classification*, together with the integrality of the Cartan integers. $\square$
+**Proof.** The nondegeneracy of $\kappa|_{\mathrm{H}}$ and the identity $\kappa(\mathrm{G}_\alpha,\mathrm{G}_\beta)=0$ unless $\alpha+\beta=0$ are from *Root Systems and Classification*, together with the integrality of the Cartan integers.
 
 **Remark.** The pairing is the operator-theoretic bridge between the Cartan operators and the root system: the eigenvalue $\alpha(h)$ is $\kappa(t_\alpha,h)$, so the operator $\operatorname{ad}_h$ has eigenvalue $\kappa(t_\alpha,h)$ on $\mathrm{G}_\alpha$, and the Cartan operator attached to $t_\alpha$ has the eigenvalue $(\alpha,\alpha)$ on $\mathrm{G}_\alpha$ and $(\alpha,\beta)$ on $\mathrm{G}_\beta$. The form $(\cdot,\cdot)$ transported to the span of the roots is symmetric and nondegenerate, and the further structure that it carries on the real span of the roots is named in Part II and is not used here.
 
@@ -95,7 +95,7 @@ $$
 
 **Proposition.** Let $(h_1,\dots,h_r)$ be a basis of $\mathrm{H}$ and $(h^1,\dots,h^r)$ its dual basis with respect to $\kappa|_{\mathrm{H}}$. Then the operator $\sum_i\operatorname{ad}_{h_i}\operatorname{ad}_{h^i}$ acts on $\mathrm{H}$ by zero and on $\mathrm{G}_\alpha$ by the scalar $\sum_i\alpha(h_i)\alpha(h^i)=(\alpha,\alpha)$.
 
-**Proof.** Each factor acts on $\mathrm{G}_\alpha$ by the scalar $\alpha(h_i)$ and $\alpha(h^i)$ respectively; the sum is $\sum_i\alpha(h_i)\alpha(h^i)$, which is the pairing of $\alpha$ with itself by the definition of the dual basis. On $\mathrm{H}$ both factors are zero. $\square$
+**Proof.** Each factor acts on $\mathrm{G}_\alpha$ by the scalar $\alpha(h_i)$ and $\alpha(h^i)$ respectively; the sum is $\sum_i\alpha(h_i)\alpha(h^i)$, which is the pairing of $\alpha$ with itself by the definition of the dual basis. On $\mathrm{H}$ both factors are zero.
 
 **Remark.** The proposition is the Cartan part of the Casimir operator of *The Casimir Operator*: the full Casimir operator is the sum of this Cartan part and the contributions of the root spaces, and the eigenvalue on the adjoint module is one by the identity $\Omega_{\operatorname{ad}}=\mathrm{id}$ proved there. The Cartan part alone has the eigenvalues $(\alpha,\alpha)$ on the root spaces and is the part that a highest weight calculation reads off first.
 
@@ -121,7 +121,6 @@ $$
 
 records the pairings $2(\alpha_i,\alpha_j)/(\alpha_j,\alpha_j)$. The root decomposition has $\dim\mathrm{G}_\alpha=1$ for each of the six roots, so the algebra is $\mathrm{H}$ together with six one-dimensional spaces.
 
-**Verified.** For $\mathrm{SL}(2,K)$ the matrix of $\operatorname{ad}_h$ in the basis $(e,h,f)$ has eigenvalues $2,0,-2$ over $\mathbb{Q}$; for $A_2$ the six roots are the six nonzero functionals, checked against the structure constants of $\mathrm{SL}(3,K)$.
 
 ## Summary
 

@@ -31,7 +31,7 @@ $$
 (L_a)^{*}=L_{\sigma(a)}, \qquad (R_b)^{*}=R_{\sigma(b)} .
 $$
 
-*Proof.* The first is the computation of *The Adjoint of a Module Homomorphism*. For the second, $\langle R_b(m),n\rangle=\langle mb,n\rangle=\langle m,n\sigma(b)\rangle=\langle m,R_{\sigma(b)}(n)\rangle$, so $R_{\sigma(b)}$ represents the functional and is the adjoint by uniqueness. $\square$
+*Proof.* The first is the computation of *The Adjoint of a Module Homomorphism*. For the second, $\langle R_b(m),n\rangle=\langle mb,n\rangle=\langle m,n\sigma(b)\rangle=\langle m,R_{\sigma(b)}(n)\rangle$, so $R_{\sigma(b)}$ represents the functional and is the adjoint by uniqueness.
 
 Both one-sided multiplications therefore have adjoints obtained by applying the involution to the parameter, and this is the key to the sandwich.
 
@@ -45,7 +45,7 @@ $$
 (S_{a,b})^{*}=S_{\sigma(a),\,\sigma(b)} .
 $$
 
-*Proof.* Since $S_{a,b}=L_aR_b$ and the adjoint is anti-multiplicative, $(S_{a,b})^{*}=(R_b)^{*}(L_a)^{*}=R_{\sigma(b)}L_{\sigma(a)}$. The two one-sided multiplications commute, so $R_{\sigma(b)}L_{\sigma(a)}=L_{\sigma(a)}R_{\sigma(b)}=S_{\sigma(a),\sigma(b)}$. $\square$
+*Proof.* Since $S_{a,b}=L_aR_b$ and the adjoint is anti-multiplicative, $(S_{a,b})^{*}=(R_b)^{*}(L_a)^{*}=R_{\sigma(b)}L_{\sigma(a)}$. The two one-sided multiplications commute, so $R_{\sigma(b)}L_{\sigma(a)}=L_{\sigma(a)}R_{\sigma(b)}=S_{\sigma(a),\sigma(b)}$.
 
 The parameters are transformed by $\sigma$ in place; equivalently, $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$ says that the diagram
 
@@ -65,7 +65,7 @@ $$
 
 Thus the self-adjoint sandwiches are exactly those with both parameters symmetric, and the skew-adjoint sandwiches those with both parameters antisymmetric.
 
-*Proof.* $S_{\sigma(a),\sigma(b)}=S_{a,b}$ is $\sigma(a)=a$ and $\sigma(b)=b$ by injectivity; the skew case is the same with a sign, and the signs of the two parameters must agree because $S_{a,b}$ is linear in each parameter. $\square$
+*Proof.* $S_{\sigma(a),\sigma(b)}=S_{a,b}$ is $\sigma(a)=a$ and $\sigma(b)=b$ by injectivity; the skew case is the same with a sign, and the signs of the two parameters must agree because $S_{a,b}$ is linear in each parameter.
 
 ### Unitary sandwiches
 
@@ -83,7 +83,7 @@ $$
 (S_{a,b})^{*}S_{a,b}=S_{\sigma(a)a,\,b\sigma(b)}, \qquad S_{a,b}(S_{a,b})^{*}=S_{a\sigma(a),\,\sigma(b)b},
 $$
 
-and these are $\mathrm{id}=S_{1,1}$ when $a,b$ are unitary. The converse is the same equalities read backwards. $\square$
+and these are $\mathrm{id}=S_{1,1}$ when $a,b$ are unitary. The converse is the same equalities read backwards.
 
 The unitary sandwiches are the two-sided operators that preserve the pairing, in agreement with the isometry characterisation of *The Involution on the Endomorphism Ring of a Module*; the condition on the parameters is that each be unitary in the algebra, and the two sides of the sandwich are independent.
 
@@ -97,7 +97,7 @@ $$
 
 and the adjoint preserves the lengths of the kernel, the image and the cokernel.
 
-*Proof.* These are the general kernel and image identities of *The Adjoint of a Module Homomorphism*, applied to $S_{a,b}$. $\square$
+*Proof.* These are the general kernel and image identities of *The Adjoint of a Module Homomorphism*, applied to $S_{a,b}$.
 
 The complement of the image of a sandwich is the set of $n$ killed by all $axb$, that is $(\operatorname{im}S_{a,b})^{\mathrm{c}}=\{n : \langle aMb,n\rangle=0\}$.
 
@@ -107,7 +107,7 @@ The complement of the image of a sandwich is the set of $n$ killed by all $axb$,
 
 **Proposition.** Let $T$ be the $R$-submodule of $E=\operatorname{End}_A(M)$ spanned by the sandwiches $S_{a,b}$. Then $T$ is stable under the involution ${}^{*}$ of $E$, and the induced map on $T$ is the map $S_{a,b}\mapsto S_{\sigma(a),\sigma(b)}$.
 
-*Proof.* The adjoint of a sum is the sum of the adjoints, and the adjoint of a sandwich is again a sandwich by the theorem; hence $T$ is stable. $\square$
+*Proof.* The adjoint of a sum is the sum of the adjoints, and the adjoint of a sandwich is again a sandwich by the theorem; hence $T$ is stable.
 
 So the sandwich span is not merely a submodule of $E$ but an **involutive subalgebra** when it is closed under products: it contains the identity and the involution. In the case of the regular bimodule it is all of $E$, and the involution it carries is $\sigma$.
 
@@ -119,7 +119,7 @@ $$
 (a\otimes b)^{*} \longmapsto (S_{a,b})^{*}=S_{\sigma(a),\sigma(b)} .
 $$
 
-*Proof.* Immediate from the theorem and the definition of the map. $\square$
+*Proof.* Immediate from the theorem and the definition of the map.
 
 Consequently the image of the algebra of two-sided operators is an involutive quotient of $A\otimes_RA^{\mathrm{op}}$ with the involution $\sigma\otimes\sigma$; the kernel of the map is an involutive ideal.
 
@@ -129,19 +129,19 @@ Consequently the image of the algebra of two-sided operators is an involutive qu
 
 **Proposition.** If the pairing is compatible with the left action but not with the right, then $(L_a)^{*}=L_{\sigma(a)}$ but $R_b$ need not have an adjoint of the form $R_{\sigma(b)}$; the formula $(S_{a,b})^{*}=S_{\sigma(a),\sigma(b)}$ may fail, and the adjoint of $S_{a,b}$, when it exists, is an operator that is not a sandwich.
 
-*Proof.* The right-adjoint computation used the balanced identity $\langle mb,n\rangle=\langle m,n\sigma(b)\rangle$; without it the functional $n\mapsto\langle mb,n\rangle$ need not be represented by a right multiplication. $\square$
+*Proof.* The right-adjoint computation used the balanced identity $\langle mb,n\rangle=\langle m,n\sigma(b)\rangle$; without it the functional $n\mapsto\langle mb,n\rangle$ need not be represented by a right multiplication.
 
 ### A non-faithful module
 
 **Proposition.** If the sandwich map is not injective — for instance when the bimodule is not faithful and $S_{a,b}=S_{a',b'}$ for distinct parameters — then the self-adjointness and unitarity criteria are criteria on the operators, not on the parameters: the parameters of a self-adjoint sandwich are determined only up to the kernel of the sandwich map.
 
-*Proof.* $S_{a,b}$ depends only on the image of $(a,b)$ in the quotient by the kernel, and the adjoint depends only on the operator, so the criteria lift to the quotient. $\square$
+*Proof.* $S_{a,b}$ depends only on the image of $(a,b)$ in the quotient by the kernel, and the adjoint depends only on the operator, so the criteria lift to the quotient.
 
 ### The degenerate pairing of the trivial module
 
 **Proposition.** If $M=0$ then every sandwich is $0$, the pairing is vacuous, and the involution on $E=0$ is the identity: the construction degenerates and every statement above is void.
 
-*Proof.* Immediate. $\square$
+*Proof.* Immediate.
 
 ## Examples
 

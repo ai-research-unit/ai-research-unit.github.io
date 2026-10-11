@@ -13,7 +13,7 @@ The following are assumed, with the notation of the parent article.
 - The group $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}$ of **unit-norm biquaternions**, and the double cover $\pi:SL(2,\mathbb{C})\to SO^{+}(1,3)$, $\pi(\tilde{\Lambda}):\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ on $\mathbb{M}_-$.
 - The **symplectic form** $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$, $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$; the mixed pairing $b(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$; and the bilinear $\tilde{Q} = uv^{\dagger}$, transforming as $\tilde{Q}\mapsto gXg^{\dagger}$.
 
-Seven problems are worked below, one per section. Each is carried to a definite answer, and the algebraic identities are checked numerically in double precision.
+Seven problems are worked below, one per section.
 
 ## Problem 1: The Chiral Projectors
 
@@ -108,7 +108,6 @@ $$
 $$
 
 and identically for $\psi_R$. Thus the mass term, and only the mass term, couples the two halves: at $m=0$ the coupling disappears, and each half separately obeys the massive Klein–Gordon equation, $(\Box - m^2c^2/\hbar^2)\psi = 0$ in physical units — the series equation. (The operator is the series one: this article writes the Weyl algebra in real time $x^0 = ct$ and the standard metric $(+,-,-,-)$, in which $\partial_{ict}^2 = -\partial_0^2$, and nothing else changes.)
-<!-- CONVENTION — notation. This article uses the series d'Alembertian, □ = ∇̃∇̃^♮ = ∂²/∂Q₀² + Δ_Q, read on the material sector as ∂²_{ict} + Δ = Δ − c⁻²∂_t², and it is the one operator of the whole series. The Weyl algebra of the problems below is written in real time x⁰ = ct with the standard metric (+,−,−,−), the level-3 Clifford metric of the series; in those variables ∂²_{ict} = −∂₀², so the same operator reads □ = −∂₀² + ∇². The massive equation is therefore the series equation (□ − m²c²/ℏ²)ψ = 0, the same as in The Klein–Gordon Equation in Biquaternionic Form and The Dirac Equation in Biquaternionic Form. There is no second d'Alembertian convention in the series. -->
 
 **Mass shell.** For a plane wave $\Psi\propto e^{-ik_0x^0+i\mathbf{k}\cdot\mathbf{x}}$, the Klein–Gordon equation gives $k_0^2 = \mathbf{k}^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_0 + \mathbf{p}\in\mathbb{M}_-$ and $k = p/\hbar$,
 
@@ -175,7 +174,7 @@ $$
 \mathsf{M}_2(\tilde{\Lambda}^{*}) = \epsilon^{-1}\,\bar{g}\,\epsilon = \epsilon\,\bar{g}\,\epsilon^{-1},
 $$
 
-where $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. (The two expressions coincide because $\epsilon^{-1} = -\epsilon$.) This is the precise form of the parent's statement that the right-handed action is "equivalent to the entrywise-conjugate action $g\mapsto\bar{g}$, the two differing by conjugation with the invariant tensor $\epsilon$". The identity was verified numerically on 100 random unit-norm biquaternions, with residual $<10^{-9}$. The conjugation on the left is the **coefficientwise (complex)** conjugation of the four coefficients, the one the parent uses for the right-handed action, so that $\mathsf{M}_2(\tilde{\Lambda}^{*}) = \epsilon^{-1}\bar{g}\epsilon = (\mathsf{M}_2(\tilde{\Lambda})^{\dagger})^{-1}$, the inverse of the conjugate transpose; the Hermitian conjugate transpose $\mathsf{M}_2(\tilde{\Lambda})^{\dagger}$ is a different object, the one the conventions above assign to the star, $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$.
+where $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. (The two expressions coincide because $\epsilon^{-1} = -\epsilon$.) This is the precise form of the parent's statement that the right-handed action is "equivalent to the entrywise-conjugate action $g\mapsto\bar{g}$, the two differing by conjugation with the invariant tensor $\epsilon$". The conjugation on the left is the **coefficientwise (complex)** conjugation of the four coefficients, the one the parent uses for the right-handed action, so that $\mathsf{M}_2(\tilde{\Lambda}^{*}) = \epsilon^{-1}\bar{g}\epsilon = (\mathsf{M}_2(\tilde{\Lambda})^{\dagger})^{-1}$, the inverse of the conjugate transpose; the Hermitian conjugate transpose $\mathsf{M}_2(\tilde{\Lambda})^{\dagger}$ is a different object, the one the conventions above assign to the star, $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$.
 
 ## Problem 4: The Invariant Symplectic Pairing
 
@@ -233,7 +232,6 @@ $$
 
 where the last inclusion uses $i\mathbb{M}_+ = \mathbb{M}_-$.
 
-**Verification of the properties.** Since $H^{\dagger} = H$, $V^{\dagger} = (iH)^{\dagger} = -iH^{\dagger} = -V$, so $V\in\mathbb{M}_-$. The equivariance carries over: $H\mapsto gHg^{\dagger} = \mathsf{M}_2(\tilde{\Lambda}H\tilde{\Lambda}^{*})$, using $g = \mathsf{M}_2(\tilde{\Lambda})$ and $\mathsf{M}_2(\tilde{\Lambda}^{*}) = g^{*}$; hence $V\mapsto \tilde{\Lambda}V\tilde{\Lambda}^{*}$, the parent's **rotor conjugation** on the material sector, recovered from the one-sided spinor action (numerical residual $<10^{-12}$).
 
 **Biquaternion norm.** Write $H = h_0e_0 + i\mathbf{h}$. Then $V = ih_0e_0 - \mathbf{h}$, and
 

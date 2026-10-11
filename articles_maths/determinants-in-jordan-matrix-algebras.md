@@ -109,7 +109,7 @@ $$
 in which $(x_1,x_2,x_3,x_4)$ are the complex coordinates of $\tilde Q$ in the basis $1,e_1,e_2,e_3$, so that $e_1,e_2,e_3$ go to $i\sigma_3,i\sigma_2,i\sigma_1$, the quaternion units are the pure imaginary Pauli matrices and the scalar $i$ is the central imaginary unit. Three properties of this chart are used repeatedly.
 
 1. It is multiplicative: the image of a product is the product of the images.
-2. The determinant of the $2\times 2$ image of $\tilde Q$ is the complex norm, $\det\iota(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$. This is the biquaternion norm of *Biquaternion Norm and Invertibility* read as a determinant.
+2. The determinant of the $2\times 2$ image of $\tilde Q$ is the complex norm, $\det\iota(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$. This is the biquaternion norm of *Norm and Invertibility in the General Plain Algebra* read as a determinant.
 3. The two involutions correspond to the two matrix operations that respect the chart: the image of $^{\natural}$ is the **adjugate**, $\iota(\tilde Q^{\natural}) = \operatorname{adj}\iota(\tilde Q)$, and the image of $^{*}$ is the **conjugate transpose**, $\iota(\tilde Q^{*}) = \iota(\tilde Q)^{\dagger}$.
 
 ### Hermitian matrices of biquaternions

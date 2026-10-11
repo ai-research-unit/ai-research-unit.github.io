@@ -91,7 +91,7 @@ $x=y=e_1$, $z=ie_2$ the cyclic sum is $-2ie_2$.
 $(e_1\diamond e_1)\diamond(ie_2)=0$. Second, $e_1\diamond(ie_2)=e_1\times\overline{ie_2}=e_1\times(-ie_2)=-ie_3$,
 and $(-ie_3)\diamond e_1=(-ie_3)\times e_1=-i(e_3\times e_1)=-ie_2$. Third, $(ie_2)\diamond e_1=ie_2\times e_1=-ie_3$,
 and $(-ie_3)\diamond e_1=-ie_2$ as before. The cyclic sum is $0+(-ie_2)+(-ie_2)=-2ie_2$, which is not
-zero. Verified on the witness. $\square$
+zero.
 
 **Remark (the value is not a numerical accident).** The witness is the smallest one; the failure holds on
 an open set around it, because the cyclic sum of a trilinear expression is continuous and is nonzero at the
@@ -225,18 +225,18 @@ Four further readings of the same invisibility are recorded here, each under a n
 ## The Limits
 
 - **The failure is a property of $\mathrm{AQS}$ and not of every antisymmetric part.** The plain
-  antisymmetric part is a Lie bracket, and the negative reading concerns the three brackets spoiled by a
-  conjugation.
+antisymmetric part is a Lie bracket, and the negative reading concerns the three brackets spoiled by a
+conjugation.
 - **The witness count is a computation on the basis and not an invariant.** The number $72$ of failing
-  triples on the eight-element basis is reported as the shape of the failure; it is not a theorem and it
-  changes with the basis.
+triples on the eight-element basis is reported as the shape of the failure; it is not a theorem and it
+changes with the basis.
 - **The failure is not a failure of the block's physics.** The block's job is the gauge pairing and the
-  direction it carries, not the generation of a gauge algebra; the negative reading closes the second job
-  and does not touch the first.
+direction it carries, not the generation of a gauge algebra; the negative reading closes the second job
+and does not touch the first.
 - **The matrix-model statement is cited, not derived.** That the failure reappears in the two matrix
-  models of the block, where the operation is the nested commutator with the adjugate, is *The
-  Antisymmetric Quaternionic Sesqualgebra in the $2\times2$ and $4\times4$ Matrix Element Representations*; no matrix computation is
-  repeated here.
+models of the block, where the operation is the nested commutator with the adjugate, is *The
+Antisymmetric Quaternionic Sesqualgebra in the $2\times2$ and $4\times4$ Matrix Element Representations*; no matrix computation is
+repeated here.
 
 ## The Ledger
 

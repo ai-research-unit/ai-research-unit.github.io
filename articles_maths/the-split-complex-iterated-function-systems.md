@@ -121,7 +121,7 @@ whose box counts at the scales $3^{-n}$ are exactly $2^n$ — the counts $16, 32
 $$
 \dim_H \Lambda = \dim_H \Lambda_+ = \frac{\log 2}{\log 3} = 0.6309297535\ldots ,
 $$
-the larger of the two factor dimensions; the box counting of a sampled orbit at the scales $3^{-n}$ gives counts growing like $2^n$, confirming it. The example shows that the anisotropy of the linear part lets the two coordinate factors have different dimensions, and that the attractor carries the larger of the two: the second dimension is not added, because the two coordinates share the coding. The values were recomputed.
+the larger of the two factor dimensions; the box counting of a sampled orbit at the scales $3^{-n}$ gives counts growing like $2^n$, confirming it. The example shows that the anisotropy of the linear part lets the two coordinate factors have different dimensions, and that the attractor carries the larger of the two: the second dimension is not added, because the two coordinates share the coding.
 
 ## The Null Cone
 

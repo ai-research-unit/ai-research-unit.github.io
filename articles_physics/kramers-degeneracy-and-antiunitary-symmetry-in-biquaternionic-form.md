@@ -10,7 +10,7 @@ It establishes four things.
 - **The sign of $\mathcal T^2$ is the $2\pi$ rotor.** On the spinor module the rotation element of the construction is real and squares to $-e_0$. Consequently
   $$\mathcal T^2=U U^*=U^2=-e_0 ,$$
   the same element that the spin–statistics companion identifies as the rotation through $2\pi$. Kramers degeneracy is the $2\pi$ sign seen on the state space.
-- **Kramers degeneracy.** For every $\mathcal T$-invariant Hamiltonian with $\mathcal T^2=-1$, the spectrum is even-degenerate, with a proof that uses only antiunitarity. The proof, the orthogonality of the partner, and the degeneracy itself were recomputed.
+- **Kramers degeneracy.** For every $\mathcal T$-invariant Hamiltonian with $\mathcal T^2=-1$, the spectrum is even-degenerate, with a proof that uses only antiunitarity.
 - **The quaternionic structure.** The algebra's imaginary units supply the antiunitary $J$ with $J^2=-e_0$ that makes the state space a vector space over the quaternions; the commutant of $\mathcal T$ was computed and is two-complex-dimensional, which is the quaternionic line. Kramers degeneracy is the statement that the state space's unit is not $\mathbb{C}$ but $\mathbb{H}$.
 
 The article closes with what breaks the symmetry, and with the framework's standing disclaimer: the algebra names the axis along which the symmetry is lost, and does not choose it.

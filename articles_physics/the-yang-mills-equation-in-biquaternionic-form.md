@@ -72,7 +72,7 @@ $$
 D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0,
 $$
 
-where each $D$ is the adjoint covariant derivative. It is the statement that the exterior derivative of the curvature is a cycle, and it is automatic for a curvature built from a connection: it follows from the Jacobi identity for the operators $D_\mu$, $[D_\lambda,[D_\mu,D_\nu]] + \text{cyclic} = 0$, together with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; equally, at the level of components, from the derivation property of the adjoint action. Both routes were recomputed.
+where each $D$ is the adjoint covariant derivative. It is the statement that the exterior derivative of the curvature is a cycle, and it is automatic for a curvature built from a connection: it follows from the Jacobi identity for the operators $D_\mu$, $[D_\lambda,[D_\mu,D_\nu]] + \text{cyclic} = 0$, together with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; equally, at the level of components, from the derivation property of the adjoint action.
 
 The biquaternion packaging of the curvature, inherited from the parents, is the definition
 

@@ -30,7 +30,7 @@ the unsigned action of $L_a$ precomposed with the grade involution of the module
 
 **Theorem (the building blocks are self-adjoint).** The grade involution of the module is an isometry of the pairing, $\alpha_M^{*} = \alpha_M$, and the multiplication operators are self-adjoint, $\rho_{L_a}^{*} = \rho_{L_a}$, when the pairing is invariant under the action in the twisted sense.
 
-*Proof.* The first is the invariance $\langle\alpha_Mm,\alpha_Mn\rangle = \langle m,n\rangle$ read as the defining relation of the adjoint; the second is the associativity of the invariant pairing with the action, $T(L_ax,y) = T(x,L_ay)$, transported to the module. $\square$
+*Proof.* The first is the invariance $\langle\alpha_Mm,\alpha_Mn\rangle = \langle m,n\rangle$ read as the defining relation of the adjoint; the second is the associativity of the invariant pairing with the action, $T(L_ax,y) = T(x,L_ay)$, transported to the module.
 
 ### The Adjoint of the Graded Action
 
@@ -40,7 +40,7 @@ $$
 \bigl(\rho^{\alpha}_a\bigr)^{*} = \rho^{\alpha}_{\alpha(a)} .
 $$
 
-*Proof.* The adjoint is anti-multiplicative, $(\Phi\circ\Psi)^{*} = \Psi^{*}\circ\Phi^{*}$, so $(\rho^{\alpha}_a)^{*} = (\rho_{L_a}\circ\alpha_M)^{*} = \alpha_M^{*}\circ\rho_{L_a}^{*} = \alpha_M\circ\rho_{L_a}$. Since the grade involution intertwines the multiplication operators by $\alpha_M\rho_{L_a}\alpha_M^{-1} = \rho_{L_{\alpha(a)}}$, one has $\alpha_M\circ\rho_{L_a} = \rho_{L_{\alpha(a)}}\circ\alpha_M = \rho^{\alpha}_{\alpha(a)}$. $\square$
+*Proof.* The adjoint is anti-multiplicative, $(\Phi\circ\Psi)^{*} = \Psi^{*}\circ\Phi^{*}$, so $(\rho^{\alpha}_a)^{*} = (\rho_{L_a}\circ\alpha_M)^{*} = \alpha_M^{*}\circ\rho_{L_a}^{*} = \alpha_M\circ\rho_{L_a}$. Since the grade involution intertwines the multiplication operators by $\alpha_M\rho_{L_a}\alpha_M^{-1} = \rho_{L_{\alpha(a)}}$, one has $\alpha_M\circ\rho_{L_a} = \rho_{L_{\alpha(a)}}\circ\alpha_M = \rho^{\alpha}_{\alpha(a)}$.
 
 **Corollary (the sign rule).** The even elements of $J$ act by self-adjoint operators and the odd elements by skew-adjoint operators:
 
@@ -58,7 +58,7 @@ $$
 \bigl(\rho^{\alpha}_a\rho^{\alpha}_b\bigr)^{*} = \rho^{\alpha}_{\alpha(b)}\rho^{\alpha}_{\alpha(a)} .
 $$
 
-*Proof.* $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_a}\alpha_M\rho_{L_b}\alpha_M = \rho_{L_a}\rho_{L_{\alpha(b)}}\alpha_M^2 = \rho_{L_aL_{\alpha(b)}}$, using the intertwining $\alpha_M\rho_{L_b} = \rho_{L_{\alpha(b)}}\alpha_M$; the adjoint is anti-multiplicative and each factor's adjoint is known. $\square$
+*Proof.* $\rho^{\alpha}_a\rho^{\alpha}_b = \rho_{L_a}\alpha_M\rho_{L_b}\alpha_M = \rho_{L_a}\rho_{L_{\alpha(b)}}\alpha_M^2 = \rho_{L_aL_{\alpha(b)}}$, using the intertwining $\alpha_M\rho_{L_b} = \rho_{L_{\alpha(b)}}\alpha_M$; the adjoint is anti-multiplicative and each factor's adjoint is known.
 
 **Corollary (compatibility with the grading).** A homogeneous action of degree $|a|$ shifts the module degree by $|a|$, and the adjoint action shifts it back by $|a|$; the representing map $J\to E$ is a graded map and the adjoint is a graded map of the opposite degree, so the adjoint operation reverses the parity of the action.
 

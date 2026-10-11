@@ -105,7 +105,7 @@ $$
 \dot p = -L_x - f_x^{\mathsf T}p = -\frac{\partial H}{\partial x},
 $$
 
-the costate equation. The integration by parts that produces it leaves the boundary term $-\langle p(T),\delta x(T)\rangle$, which together with $d\varphi(x(T))$ gives $p(T)=\varphi_x(x^*(T))$ when the final state is free. Stationarity in $u$ gives $\langle L_u+f_u^{\mathsf T}p,\delta u\rangle = 0$ on directions in which the control may vary, which is $\langle H_u,\delta u\rangle = 0$ and hence the pointwise minimisation where the control is free to move in all directions. The free-time condition is the remaining boundary term: differentiating the value in $T$ gives $\varphi_x\cdot\dot x^* + L = \langle p,\dot x^*\rangle + L = H = 0$ at $T$. ∎
+the costate equation. The integration by parts that produces it leaves the boundary term $-\langle p(T),\delta x(T)\rangle$, which together with $d\varphi(x(T))$ gives $p(T)=\varphi_x(x^*(T))$ when the final state is free. Stationarity in $u$ gives $\langle L_u+f_u^{\mathsf T}p,\delta u\rangle = 0$ on directions in which the control may vary, which is $\langle H_u,\delta u\rangle = 0$ and hence the pointwise minimisation where the control is free to move in all directions. The free-time condition is the remaining boundary term: differentiating the value in $T$ gives $\varphi_x\cdot\dot x^* + L = \langle p,\dot x^*\rangle + L = H = 0$ at $T$.
 
 The proof is a sketch in one respect, and the respect matters: the variation in $u$ is legitimate only when $\delta u$ ranges over a space containing the admissible directions at $u^*$, that is, in the interior of $U$. The full theorem replaces it by a needle variation, a perturbation of the control on a set of small measure, and the passage to the limit produces the pointwise minimisation without any differentiability in $u$. Nothing else in the statement changes, and the interior case is the one used in every computation below.
 
@@ -119,7 +119,7 @@ $$
 \frac{d}{dt}H = H_x\cdot\dot x + H_p\cdot\dot p + H_u\cdot\dot u = H_x\cdot H_p + H_p\cdot(-H_x) + \langle H_u,\dot u\rangle = \langle H_u,\dot u\rangle ,
 $$
 
-and $H_u$ vanishes in the interior case; in the general case $H(x^*,u,p,t)$ is minimised in $u$ at $u^*$ and the minimiser has derivative zero in the direction of the curve. Hence $H$ is constant. ∎
+and $H_u$ vanishes in the interior case; in the general case $H(x^*,u,p,t)$ is minimised in $u$ at $u^*$ and the minimiser has derivative zero in the direction of the curve. Hence $H$ is constant.
 
 For a free final time the constant is zero, by the transversality condition: an autonomous time-optimal problem has $H\equiv0$ along the optimal trajectory. This is the conservation law of the optimal control problem, the analogue of the conservation of energy of a mechanical system, and it is the first check to apply to a candidate solution.
 
@@ -157,7 +157,7 @@ $$
 \dot p = \dot Sx + S\dot x = \dot Sx + SAx - SBD^{-1}B^{\mathsf T}Sx ,
 $$
 
-and equating this with $-Cx-A^{\mathsf T}Sx$, whose terms all carry $x$, gives the Riccati equation. The terminal condition is $S(T)=E$, from $p(T)=Ex(T)$. ∎
+and equating this with $-Cx-A^{\mathsf T}Sx$, whose terms all carry $x$, gives the Riccati equation. The terminal condition is $S(T)=E$, from $p(T)=Ex(T)$.
 
 The Riccati equation in this sense is the matrix generalisation of the classical scalar Riccati equation treated in the integrable systems of this Part: the scalar instance below, $\dot S=S^2-1$, is exactly that equation with constant coefficients, and its constant solutions $S=\pm1$ are the two equilibria of the classical equation. What differs is where the equation comes from and what it describes. There the equation is the logarithmic derivative $y=\phi'/\phi$ of a second-order linear equation and is integrated by that substitution; here it is the flow of the optimal feedback, and the matrix equation is equivalent to the linear system of the maximum principle, so the linearisation is present in both but is exploited differently. The constant solution $S=1$ of the infinite-horizon problem with $C=D=B=1$, $A=0$ is the stabilising feedback, the equilibrium towards which the finite-horizon solution flows as the interval lengthens.
 
@@ -241,7 +241,7 @@ $$
 
 the infimum being over the controls on $[\tau,\tau']$ and $x$ the trajectory they generate.
 
-*Proof.* The right-hand side is the infimum of the cost of the controls split into their restriction to $[\tau,\tau']$ and their restriction to $[\tau',T]$, and the second part of the cost is at least $V(x(\tau'),\tau')$, with equality attained in the limit by controls that are near-optimal after $\tau'$; the infimum over the first part then reproduces the left-hand side. ∎
+*Proof.* The right-hand side is the infimum of the cost of the controls split into their restriction to $[\tau,\tau']$ and their restriction to $[\tau',T]$, and the second part of the cost is at least $V(x(\tau'),\tau')$, with equality attained in the limit by controls that are near-optimal after $\tau'$; the infimum over the first part then reproduces the left-hand side.
 
 ### The Equation and the Verification Theorem
 
@@ -251,7 +251,7 @@ $$
 \frac{\partial V}{\partial t} + \min_{u\in U}\Bigl[L(\xi,u,t) + \Bigl\langle \frac{\partial V}{\partial\xi}, f(\xi,u,t)\Bigr\rangle\Bigr] = 0 , \qquad V(\xi,T)=\varphi(\xi).
 $$
 
-*Proof.* Take $\tau'=\tau+\varepsilon$ in Bellman's principle, let the control be constant on the short interval, and expand to first order in $\varepsilon$; dividing by $\varepsilon$ and using that an optimal control achieves the minimum gives the equation. ∎
+*Proof.* Take $\tau'=\tau+\varepsilon$ in Bellman's principle, let the control be constant on the short interval, and expand to first order in $\varepsilon$; dividing by $\varepsilon$ and using that an optimal control achieves the minimum gives the equation.
 
 The minimisation in the statement is over the control at the single point $(\xi,t)$, exactly as in the maximum principle, and the two are related by the identity
 
@@ -263,7 +263,7 @@ along an optimal trajectory: substituting $p=V_\xi$ into the minimised Hamiltoni
 
 **Theorem (verification).** Suppose $W\in C^1$ satisfies the Hamilton–Jacobi–Bellman equation with $W(\xi,T)=\varphi(\xi)$, and suppose that for each $(\xi,t)$ the minimum in the equation is attained at $u=\kappa(\xi,t)$ with $\kappa$ measurable. Then $W=V$ on $X\times[t_0,T]$, the closed-loop equation $\dot x=f(x,\kappa(x,t),t)$ has trajectories that are admissible, and the corresponding control is optimal.
 
-*Proof.* For any admissible control and its trajectory, the Bellman equation gives $\frac{d}{dt}W(x(t),t) = W_t+W_x\cdot f \le -L(x,u,t)$ with equality exactly at $u=\kappa(x,t)$; integrating from $t$ to $T$ and using $W(\cdot,T)=\varphi$ gives $W(x(t),t)\le J$ for every $u$, with equality for the closed-loop control. ∎
+*Proof.* For any admissible control and its trajectory, the Bellman equation gives $\frac{d}{dt}W(x(t),t) = W_t+W_x\cdot f \le -L(x,u,t)$ with equality exactly at $u=\kappa(x,t)$; integrating from $t$ to $T$ and using $W(\cdot,T)=\varphi$ gives $W(x(t),t)\le J$ for every $u$, with equality for the closed-loop control.
 
 The verification theorem is why dynamic programming proves **sufficiency**, whereas the maximum principle gives candidates. Its restriction is regularity: the value function of a control problem need not be differentiable, and the classical equation is then replaced by the equation read in the sense of **viscosity solutions**, the device that makes the comparison argument of the verification theorem work for a merely continuous value function. This is the point of contact with the nonsmooth analysis of this Part, and the classical statement above is the differentiable case.
 

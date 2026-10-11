@@ -6,7 +6,7 @@ The biquaternion algebra is not a division algebra, and the failure is concentra
 
 The zero divisors and their classification are *Zero Divisors of the General Plain Algebra*; the idempotents are *Idempotents of the General Plain Algebra*; the matrix model, the rank-one elements and the determinant are *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the quadratic family and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the collapse of the square and the conditional radius are *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the Green's function is *The Escape Radius and the Green's Function for the Biquaternions*.
 
-The article owns the two kinds of zero divisor and the closed form of their square, the invariance of the cone under squaring, the affine dynamics it carries, the definition of the singular Julia set, and the theorem that the idempotent surface lies on the Julia set of the parameter zero. It does not re-derive the classification of the zero divisors, which is the zero-divisor article, and it does not treat the dimension of the singular set, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
+The article owns the two kinds of zero divisor and the closed form of their square, the invariance of the cone under squaring, the affine dynamics it carries, the definition of the singular Julia set, and the theorem that the idempotent manifold lies on the Julia set of the parameter zero. It does not re-derive the classification of the zero divisors, which is the zero-divisor article, and it does not treat the dimension of the singular set, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
 **Standing convention.** $\mathscr{Z}=\{\tilde Q\in\mathbb{B} : \tilde Q\neq0,\ N(\tilde Q)=0\}$ is the **zero-divisor cone**, $N$ the biquaternion norm, and $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ the quadratic family in the general plain bilinear product.
 
@@ -59,7 +59,7 @@ and its two parts are the **zero-divisor part** $J_{\tilde C}\cap\mathscr{Z}$ an
 
 The name records that on $\Sigma(\mathbb{B})$ the derivative of $F_{\tilde C}$ is singular, so the local dynamics is not locally invertible and the Julia set there is not a complex manifold; every quantitative statement about the fractal — the escape radius, the Green's function, the dimension — needs a separate argument on the singular set.
 
-**Theorem (the idempotent surface lies on the Julia set of the parameter zero).** For $\tilde C=0$, every idempotent $\tilde\Pi$ lies in $J_0$. The idempotents form the smooth complex surface $\{\tilde\Pi^2=\tilde\Pi\}$ inside the cone $\mathscr{Z}$, and hence
+**Theorem (the idempotent manifold lies on the Julia set of the parameter zero).** For $\tilde C=0$, every idempotent $\tilde\Pi$ lies in $J_0$. The idempotents form the smooth complex surface $\{\tilde\Pi^2=\tilde\Pi\}$ inside the cone $\mathscr{Z}$, and hence
 
 $$
 \{\tilde\Pi : \tilde\Pi^2=\tilde\Pi\}\subset J_0\cap\mathscr{Z}=\Sigma_0\cap\mathscr{Z} .

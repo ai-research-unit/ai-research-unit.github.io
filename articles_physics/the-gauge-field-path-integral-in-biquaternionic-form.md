@@ -184,7 +184,7 @@ P^2 = P,
 P^{\mu}{}_\nu p^\nu = 0 .
 $$
 
-These were verified at two independent off-shell momenta to machine precision. The second is the longitudinal projector $L^{\mu}{}_\nu = -p^\mu p_\nu/p^2$, the complement of $P$, which is what the gauge parameter multiplies,
+The second is the longitudinal projector $L^{\mu}{}_\nu = -p^\mu p_\nu/p^2$, the complement of $P$, which is what the gauge parameter multiplies,
 
 $$
 P+L = \delta,

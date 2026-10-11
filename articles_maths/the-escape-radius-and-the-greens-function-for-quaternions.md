@@ -26,7 +26,7 @@ $$
 
 and a point of $\mathbb{H}$ is tested for membership in $K_c$ by iterating until either $R(c)$ is exceeded or a prescribed bound on the number of steps is reached.
 
-*Proof.* The escape lemma of *The Quaternion Quadratic Map and Its Julia Sets*: from $|\tilde q_{n+1}| \geq |\tilde q_n|^2-|c|$ and the identity $R(c)^2-R(c)-|c|=|c|^2$ the moduli are strictly increasing and grow at least linearly once they exceed $R(c)$. The identification of $K_c$ with the non-escaping points is the definition, and the last sentence is the algorithm. $\square$
+*Proof.* The escape lemma of *The Quaternion Quadratic Map and Its Julia Sets*: from $|\tilde q_{n+1}| \geq |\tilde q_n|^2-|c|$ and the identity $R(c)^2-R(c)-|c|=|c|^2$ the moduli are strictly increasing and grow at least linearly once they exceed $R(c)$. The identification of $K_c$ with the non-escaping points is the definition, and the last sentence is the algorithm.
 
 **Remark (the sharpness of the radius).** The radius $R(c)=1+|c|$ is the simplest constant that works for every $c$; the classical complex radius, valid for $|c|\leq2$, is $2$, and in the slice it is the radius used in practice. The radius is not an intrinsic invariant of the family: the escape set is the complement of $K_c$, and the radius is only a certified ball containing $K_c$. The number $R(c)$ is used in *The Quaternion Mandelbrot Set* and in the algorithms of the sibling articles, and its complex counterpart is the subject of *The Escape Radius and the Green's Function*.
 
@@ -54,11 +54,11 @@ $$
 |\tilde q_{k+1}| = |\tilde q_k|^2\sqrt{T_k} , \qquad \frac{\log|\tilde q_{k+1}|}{2^{k+1}} = \frac{\log|\tilde q_k|}{2^k} + \frac{1}{2^{k+1}}\cdot\frac12\log T_k ,
 $$
 
-and summing from $k=0$ to $n-1$ telescopes to $\log|\tilde q_n|/2^n = \log|\tilde q| + \frac12\sum_{k=0}^{n-1}2^{-(k+1)}\log T_k$. For an escaping orbit $|\tilde q_k|\to\infty$ and $T_k \to 1$, and the terms decay geometrically because $|\tilde q_k|$ grows doubly exponentially along the escape; the series converges absolutely and uniformly on each compact subset of the escaping region, giving existence and continuity. The value is nonnegative because each partial sum is the logarithm of a modulus; it vanishes exactly when the orbit is bounded, by the escape lemma; and the size of the first term, $(2\tilde q^2\cdot c+N(c))/N(\tilde q)^2=O(|\tilde q|^{-2})$, with rapidly smaller successors, gives the asymptotic. $\square$
+and summing from $k=0$ to $n-1$ telescopes to $\log|\tilde q_n|/2^n = \log|\tilde q| + \frac12\sum_{k=0}^{n-1}2^{-(k+1)}\log T_k$. For an escaping orbit $|\tilde q_k|\to\infty$ and $T_k \to 1$, and the terms decay geometrically because $|\tilde q_k|$ grows doubly exponentially along the escape; the series converges absolutely and uniformly on each compact subset of the escaping region, giving existence and continuity. The value is nonnegative because each partial sum is the logarithm of a modulus; it vanishes exactly when the orbit is bounded, by the escape lemma; and the size of the first term, $(2\tilde q^2\cdot c+N(c))/N(\tilde q)^2=O(|\tilde q|^{-2})$, with rapidly smaller successors, gives the asymptotic.
 
 **Proposition (the functional equation).** For every $\tilde q$ with unbounded orbit, $G_c(f_c(\tilde q))=2G_c(\tilde q)$, and $G_c$ is the unique continuous function on the escaping set that is zero on $\partial K_c$ and satisfies this equation with $G_c(\tilde q)/\log|\tilde q| \to 1$.
 
-*Proof.* $\log|\tilde q_{n+1}|/2^n = 2\log|\tilde q_{n+1}|/2^{n+1}$, so passing to the limit along the shifted sequence gives $G_c(f_c(\tilde q))=2G_c(\tilde q)$. If $H$ is a second such function, then $H/ G_c$ is a continuous function of the escaping set that is bounded near infinity and invariant under $f_c$ with ratio $2$, hence pushes forward to a bounded function on the space of orbits; the normalisation at infinity and the connectivity of the escape set along the orbit force the ratio to be $1$, which is the standard uniqueness argument of *The Escape Radius and the Green's Function*. $\square$
+*Proof.* $\log|\tilde q_{n+1}|/2^n = 2\log|\tilde q_{n+1}|/2^{n+1}$, so passing to the limit along the shifted sequence gives $G_c(f_c(\tilde q))=2G_c(\tilde q)$. If $H$ is a second such function, then $H/ G_c$ is a continuous function of the escaping set that is bounded near infinity and invariant under $f_c$ with ratio $2$, hence pushes forward to a bounded function on the space of orbits; the normalisation at infinity and the connectivity of the escape set along the orbit force the ratio to be $1$, which is the standard uniqueness argument of *The Escape Radius and the Green's Function*.
 
 **Remark (the escape rate and the dimension).** The function $G_c$ measures the rate of escape: the level sets $G_c=\text{constant}$ are foliations of the escaping set, and the exponential decay of the gaps between them is the mechanism by which the dimension of $J_c$ is computed in the complex theory. The quaternion case inherits the function and the level sets, and the dimension of the boundary is treated in *The Dimension of the Quaternion Julia Sets* with the inputs of Part IV.
 
@@ -68,7 +68,7 @@ and summing from $k=0$ to $n-1$ telescopes to $\log|\tilde q_n|/2^n = \log|\tild
 
 **Proposition.** On the escaping set $B_c$ is continuous and positive, it satisfies $B_c(f_c(\tilde q))=B_c(\tilde q)^2$, $B_c(\tilde q)=|\tilde q|+O(|\tilde q|^{-1})$, and $B_c(\tilde q)=\lim_n|\tilde q_n|^{1/2^n}$.
 
-*Proof.* Immediate from the theorem and the functional equation. $\square$
+*Proof.* Immediate from the theorem and the functional equation.
 
 **Remark (the modulus of the coordinate, and the phase that is missing).** In the complex case the Böttcher coordinate is the analytic function $\varphi_c$ with $\varphi_c(f_c(z))=\varphi_c(z)^2$, $\varphi_c(z)/z\to1$, whose modulus is $\exp$ of the complex Green's function; the argument of $\varphi_c$ is an analytic phase. In the quaternion algebra **there is no analogue of the analytic phase**: the function $\varphi_c$ is a conformal map, conformality is a complex notion, and the quaternion quadratic map is not complex-analytic. What survives is the modulus, the function $B_c$; the phase $\tilde q_n/|\tilde q_n|$ does not converge. The Böttcher function of the quaternion family is therefore a radial object, and the classical statement that the Julia set is the unit circle of the Böttcher coordinate takes the form $K_c=\{G_c=0\}=\{B_c=1\}$ with $J_c=\partial K_c$: the level set of the Böttcher function is the filled Julia set, and the Julia set is its boundary. The full coordinate exists only on an invariant slice, where the complex theory of *The Escape Radius and the Green's Function* applies, and there it is the classical one.
 
@@ -76,7 +76,7 @@ and summing from $k=0$ to $n-1$ telescopes to $\log|\tilde q_n|/2^n = \log|\tild
 
 **Theorem (the potential on a slice is harmonic).** Let $c \in \mathbb{H}$ and let $\mathbb{C}_\nu$ be an invariant plane of $f_c$, so that $\varphi_c$ conjugates the restriction of $f_c$ to the complex map $z \mapsto z^2+\kappa(c)$. Then on the escaping part of $\mathbb{C}_\nu$ the restriction of $G_c$ is the classical complex Green's function of $\kappa(c)$, and it is harmonic in the two complex variables of the plane and harmonic in the two real coordinates.
 
-*Proof.* The restriction of the orbit to the slice is the complex orbit by *The Slices of the Quaternion Julia Sets*, and the modulus in $\mathbb{H}$ restricts to the modulus in $\mathbb{C}$, so $G_c$ restricts to the complex Green's function, which is harmonic off the slice Julia set by *The Escape Radius and the Green's Function*. $\square$
+*Proof.* The restriction of the orbit to the slice is the complex orbit by *The Slices of the Quaternion Julia Sets*, and the modulus in $\mathbb{H}$ restricts to the modulus in $\mathbb{C}$, so $G_c$ restricts to the complex Green's function, which is harmonic off the slice Julia set by *The Escape Radius and the Green's Function*.
 
 **Remark (the failure of harmonicity in four dimensions).** The menu's phrase "harmonic off the filled Julia set" is a two-dimensional statement, and it is not true in $\mathbb{H}$. The simplest counterexample is $c=0$: then $f_0(\tilde q)=\tilde q^2$ and $G_0(\tilde q)=\log|\tilde q|$ on the escaping set, whose Euclidean Laplacian is
 
@@ -96,7 +96,7 @@ The proof is the mean-value argument for the limit of the normalised logarithmic
 
 ## Worked Example
 
-**Example (the potential of a point and the functional equation).** The values below were recomputed numerically by iterating the quaternion product.
+**Example (the potential of a point and the functional equation).**
 
 **(a) The parameter $c=0$.** Here $G_0(\tilde q)=\log|\tilde q|$ for $|\tilde q|>1$, so the level sets are spheres and the filled Julia set is the unit ball. For $\tilde q=(2,1,\tfrac12,\tfrac14)$ one has $|\tilde q|^2=\tfrac{85}{16}$ and $G_0(\tilde q)=\tfrac12\log\tfrac{85}{16}=0.8350\ldots$, and the value is constant along the orbit up to the factor two: $G_0(\tilde q^2)=2G_0(\tilde q)$.
 

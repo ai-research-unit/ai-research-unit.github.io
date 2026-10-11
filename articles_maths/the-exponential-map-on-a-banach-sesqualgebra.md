@@ -32,13 +32,13 @@ $$
 
 The map $\exp : A \to A$ is continuous, and is Lipschitz on every bounded subset.
 
-*Proof.* Submultiplicativity gives $\lVert x^{n}\rVert \leq \lVert x\rVert^{n}$, so the series of norms is dominated by $\sum \lVert x\rVert^{n}/n! = e^{\lVert x\rVert}$, which is finite; a normed space is complete, so the series converges absolutely by *Normed and Banach Spaces*, §*Banach Spaces and Series*. The two estimates are the same domination, the second applied to the terms of index $n \geq 1$. For continuity let $M = \max(\lVert x\rVert,\lVert y\rVert)$; then $\lVert x^{n} - y^{n}\rVert \leq \lVert x - y\rVert \sum_{k=0}^{n-1}\lVert x\rVert^{k}\lVert y\rVert^{n-1-k} \leq nM^{n-1}\lVert x - y\rVert$, and dividing by $n!$ and summing gives $\lVert \exp x - \exp y\rVert \leq e^{M}\lVert x - y\rVert$, since $\sum_{n \geq 1}nM^{n-1}/n! = e^{M}$. $\square$
+*Proof.* Submultiplicativity gives $\lVert x^{n}\rVert \leq \lVert x\rVert^{n}$, so the series of norms is dominated by $\sum \lVert x\rVert^{n}/n! = e^{\lVert x\rVert}$, which is finite; a normed space is complete, so the series converges absolutely by *Normed and Banach Spaces*, §*Banach Spaces and Series*. The two estimates are the same domination, the second applied to the terms of index $n \geq 1$. For continuity let $M = \max(\lVert x\rVert,\lVert y\rVert)$; then $\lVert x^{n} - y^{n}\rVert \leq \lVert x - y\rVert \sum_{k=0}^{n-1}\lVert x\rVert^{k}\lVert y\rVert^{n-1-k} \leq nM^{n-1}\lVert x - y\rVert$, and dividing by $n!$ and summing gives $\lVert \exp x - \exp y\rVert \leq e^{M}\lVert x - y\rVert$, since $\sum_{n \geq 1}nM^{n-1}/n! = e^{M}$.
 
 ### The Functional Equation
 
 **Theorem (the exponential on commuting pairs).** If $xy = yx$ then $\exp(x+y) = \exp x\,\exp y$. Consequently $\exp x$ is invertible with $\exp(x)^{-1} = \exp(-x)$, the map $t \mapsto \exp(tx)$ is a continuous homomorphism $\mathbb{R} \to A^{\times}$, and $\exp : A \to A^{\times}$.
 
-*Proof.* When $xy = yx$ the binomial theorem gives $(x+y)^{n} = \sum_{k}\binom{n}{k}x^{k}y^{n-k}$, and the Cauchy product of the two absolutely convergent series is $\sum_{n}\frac{1}{n!}\sum_{k}\binom{n}{k}x^{k}y^{n-k} = \exp(x+y)$, by *Normed and Banach Spaces*, §*Banach Spaces and Series*. The element $x$ commutes with $-x$, so $\exp x\,\exp(-x) = \exp 0 = 1$ and likewise in the other order; hence $\exp x \in A^{\times}$ with the stated inverse. The one-parameter statement is the functional equation read on the commuting pair $sx$, $tx$, which gives $\exp((s+t)x) = \exp(sx)\exp(tx)$, together with the continuity of $t \mapsto tx$ and of $\exp$. $\square$
+*Proof.* When $xy = yx$ the binomial theorem gives $(x+y)^{n} = \sum_{k}\binom{n}{k}x^{k}y^{n-k}$, and the Cauchy product of the two absolutely convergent series is $\sum_{n}\frac{1}{n!}\sum_{k}\binom{n}{k}x^{k}y^{n-k} = \exp(x+y)$, by *Normed and Banach Spaces*, §*Banach Spaces and Series*. The element $x$ commutes with $-x$, so $\exp x\,\exp(-x) = \exp 0 = 1$ and likewise in the other order; hence $\exp x \in A^{\times}$ with the stated inverse. The one-parameter statement is the functional equation read on the commuting pair $sx$, $tx$, which gives $\exp((s+t)x) = \exp(sx)\exp(tx)$, together with the continuity of $t \mapsto tx$ and of $\exp$.
 
 **Remark.** The one-parameter subgroup $t \mapsto \exp(tx)$ is the exponential of the Banach algebra, and it is the curve along which the identity component of $A^{\times}$ is reached; the unitary group enters the picture only when $x$ is skew-Hermitian, in which case the curve runs inside $U(A)$ as the next section shows.
 
@@ -52,7 +52,7 @@ $$
 (\exp x)^{*} = \exp(x^{*}) .
 $$
 
-*Proof.* The involution is anti-multiplicative and of order two, so $(x^{n})^{*} = (x^{*})^{n}$ by induction; it is isometric by the standing hypothesis, hence continuous by *The Continuity of the Involution*, §*The $\mathrm{C}^{*}$-Condition*, and a continuous map commutes with the limits of convergent series. Applying it termwise to $\sum x^{n}/n!$ gives $\sum (x^{*})^{n}/n! = \exp(x^{*})$. $\square$
+*Proof.* The involution is anti-multiplicative and of order two, so $(x^{n})^{*} = (x^{*})^{n}$ by induction; it is isometric by the standing hypothesis, hence continuous by *The Continuity of the Involution*, §*The $\mathrm{C}^{*}$-Condition*, and a continuous map commutes with the limits of convergent series. Applying it termwise to $\sum x^{n}/n!$ gives $\sum (x^{*})^{n}/n! = \exp(x^{*})$.
 
 **Corollary (the parities pass to the exponential).** If $x$ is Hermitian, $x^{*} = x$, then $\exp x$ is Hermitian; if $x$ is skew-Hermitian, $x^{*} = -x$, then $\exp x$ is unitary with
 
@@ -62,7 +62,7 @@ $$
 
 More generally, if $x$ is normal, $xx^{*} = x^{*}x$, then $\exp x$ is normal.
 
-*Proof.* The Hermitian and the skew-Hermitian cases are the theorem read with $x^{*} = \pm x$, and the inverse in the second is the functional equation of §*The Functional Equation*, the element $-x$ commuting with $x$. For a normal $x$ the elements $x$ and $x^{*}$ commute, so $\exp(x^{*}) = (\exp x)^{*}$ commutes with $\exp x$. $\square$
+*Proof.* The Hermitian and the skew-Hermitian cases are the theorem read with $x^{*} = \pm x$, and the inverse in the second is the functional equation of §*The Functional Equation*, the element $-x$ commuting with $x$. For a normal $x$ the elements $x$ and $x^{*}$ commute, so $\exp(x^{*}) = (\exp x)^{*}$ commutes with $\exp x$.
 
 ### The Skew-Hermitian Elements
 
@@ -80,7 +80,7 @@ $$
 
 where $U(A)_{0}$ is the component of the identity of the unitary group of *The Unitary Group as a Topological Group*.
 
-*Proof.* The corollary gives $\exp x \in U(A)$ for $x \in S(A)$. The path $t \mapsto \exp(tx)$, $t \in [0,1]$, is continuous by §*The Functional Equation*, takes the value $\exp 0 = 1$ at $0$ and $\exp x$ at $1$, and its values are unitary because $tx$ is skew-Hermitian for every real $t$; so $\exp x$ is joined to $1$ inside $U(A)$, which is the definition of the identity component. $\square$
+*Proof.* The corollary gives $\exp x \in U(A)$ for $x \in S(A)$. The path $t \mapsto \exp(tx)$, $t \in [0,1]$, is continuous by §*The Functional Equation*, takes the value $\exp 0 = 1$ at $0$ and $\exp x$ at $1$, and its values are unitary because $tx$ is skew-Hermitian for every real $t$; so $\exp x$ is joined to $1$ inside $U(A)$, which is the definition of the identity component.
 
 **Remark.** The theorem is the reason the skew-Hermitian part is called the Lie algebra of the unitary group: the exponential is the map that carries it into the group, it is the source of the one-parameter subgroups, and the failure of its surjectivity is exactly the difference between the group and the image of its Lie algebra.
 
@@ -90,11 +90,11 @@ where $U(A)_{0}$ is the component of the identity of the unitary group of *The U
 
 **Theorem (the exponential is not surjective onto the unitary group).** Let $A = M_{n}(\mathbb{R})$ with the transpose as the involution, the operator norm and the derived product $X \star Y = XY^{\mathsf{T}}$, and let $n$ be odd. Then $-I$ is unitary, $-I \in U(A) \setminus \exp(S(A))$, and $U(A)$ is not connected.
 
-*Proof.* The matrix $-I$ satisfies $(-I)(-I)^{\mathsf{T}} = I$, so it is unitary, and it is Hermitian with $(-I)^{2} = I$. A skew-Hermitian matrix of the article is a skew-symmetric one, $X^{\mathsf{T}} = -X$; its exponential is orthogonal, $\exp(X)\exp(X)^{\mathsf{T}} = I$ by the corollary, and $\det\exp(X) = e^{\operatorname{tr}X} = e^{0} = 1$, since the diagonal of a skew-symmetric matrix vanishes. Hence $\exp(X) \in \mathrm{SO}(n)$, whereas $\det(-I) = (-1)^{n} = -1$ for odd $n$, so $-I \notin \exp(S(A))$ and in particular $-I \notin U(A)_{0}$; the unitary group therefore has at least the two components of the determinant $\pm1$. $\square$
+*Proof.* The matrix $-I$ satisfies $(-I)(-I)^{\mathsf{T}} = I$, so it is unitary, and it is Hermitian with $(-I)^{2} = I$. A skew-Hermitian matrix of the article is a skew-symmetric one, $X^{\mathsf{T}} = -X$; its exponential is orthogonal, $\exp(X)\exp(X)^{\mathsf{T}} = I$ by the corollary, and $\det\exp(X) = e^{\operatorname{tr}X} = e^{0} = 1$, since the diagonal of a skew-symmetric matrix vanishes. Hence $\exp(X) \in \mathrm{SO}(n)$, whereas $\det(-I) = (-1)^{n} = -1$ for odd $n$, so $-I \notin \exp(S(A))$ and in particular $-I \notin U(A)_{0}$; the unitary group therefore has at least the two components of the determinant $\pm1$.
 
 **Theorem (the exponential is not surjective in infinite dimension).** Let $A = C(X,\mathbb{C})$ for $X = S^{1}$, with the supremum norm, the involution $\sigma(f) = \bar f$ relative to the conjugation of the scalars, and the derived product $f \star g = f\,\bar g$. Then the unitary group is $U(A) = \{f : \lvert f\rvert = 1\} = C(S^{1},S^{1})$, the skew-Hermitian part is $S(A) = \{ig : g \ \text{real continuous}\}$, and the element $f_{0}(z) = z$ is unitary and not in $\exp(S(A))$.
 
-*Proof.* The element $f$ is unitary exactly when $f\bar f = 1$, that is $\lvert f\rvert = 1$; and it is skew-Hermitian exactly when $\bar f = -f$, that is $f = ig$ with $g$ real valued. For real continuous $g$ the map $t \mapsto e^{itg}$ is a continuous path in $U(A)$ from the constant $1$ to $e^{ig}$, so $\exp(ig) = e^{ig}$ and $e^{ig}$ lies in the identity component of $U(A)$; equivalently, its winding number around the origin is zero, because it is homotopic to a constant through the unitary elements. The element $f_{0}(z) = z$ has winding number one, so it is not in the identity component and not in the image of the exponential. $\square$
+*Proof.* The element $f$ is unitary exactly when $f\bar f = 1$, that is $\lvert f\rvert = 1$; and it is skew-Hermitian exactly when $\bar f = -f$, that is $f = ig$ with $g$ real valued. For real continuous $g$ the map $t \mapsto e^{itg}$ is a continuous path in $U(A)$ from the constant $1$ to $e^{ig}$, so $\exp(ig) = e^{ig}$ and $e^{ig}$ lies in the identity component of $U(A)$; equivalently, its winding number around the origin is zero, because it is homotopic to a constant through the unitary elements. The element $f_{0}(z) = z$ has winding number one, so it is not in the identity component and not in the image of the exponential.
 
 **Remark (the two failures are different).** On $M_{n}(\mathbb{R})$ the obstruction is the disconnectedness of the orthogonal group and it is finite-dimensional and of order two; on $C(S^{1},\mathbb{C})$ the obstruction is a degree, it is infinite-dimensional, and the components of $U(A)$ are indexed by the winding number, whose group is $\mathbb{Z}$. Both are instances of the same statement, that the exponential of a Lie algebra reaches no further than the identity component of its group.
 
@@ -108,7 +108,7 @@ $$
 
 converges absolutely with $\lVert\log(1+y)\rVert \leq -\log(1-\lVert y\rVert)$, and $\exp(\log(1+y)) = 1+y$. Conversely, if $\lVert x\rVert < \log 2$ then $\lVert\exp x - 1\rVert \leq e^{\lVert x\rVert} - 1 < 1$ and $\log(\exp x) = x$. Hence the exponential is a homeomorphism of a neighbourhood of $0$ onto a neighbourhood of $1$.
 
-*Proof.* Absolute convergence follows from $\lVert y^{n}\rVert \leq \lVert y\rVert^{n}$ and the convergence of the real logarithm series for $\lVert y\rVert < 1$, and the estimate is the real estimate read on the norms. The identity $\exp\log(1+y) = 1+y$ is the Cauchy product of the two series, which converges because it converges in the commutative subalgebra generated by $y$: the real identity $\exp\log(1+t) = 1+t$ holds for $\lvert t\rvert < 1$ and it is an identity of power series, so it holds for the element $y$ of norm less than one. The converse is the same power-series identity $\log\exp(t) = t$ at $t = x$, admissible because the series for $\log(\exp x - 1)$ converges as soon as $\lVert\exp x - 1\rVert < 1$, which is the case under $\lVert x\rVert < \log 2$. $\square$
+*Proof.* Absolute convergence follows from $\lVert y^{n}\rVert \leq \lVert y\rVert^{n}$ and the convergence of the real logarithm series for $\lVert y\rVert < 1$, and the estimate is the real estimate read on the norms. The identity $\exp\log(1+y) = 1+y$ is the Cauchy product of the two series, which converges because it converges in the commutative subalgebra generated by $y$: the real identity $\exp\log(1+t) = 1+t$ holds for $\lvert t\rvert < 1$ and it is an identity of power series, so it holds for the element $y$ of norm less than one. The converse is the same power-series identity $\log\exp(t) = t$ at $t = x$, admissible because the series for $\log(\exp x - 1)$ converges as soon as $\lVert\exp x - 1\rVert < 1$, which is the case under $\lVert x\rVert < \log 2$.
 
 **Remark.** The logarithm is the two-sided inverse of the exponential near the origin and nowhere else in general; the theorem makes of $\exp$ a chart of the Banach Lie group $A^{\times}$ at the identity, and the failures of §*The Failure of Surjectivity* are exactly the global obstructions to extending it.
 
@@ -118,7 +118,7 @@ converges absolutely with $\lVert\log(1+y)\rVert \leq -\log(1-\lVert y\rVert)$, 
 
 **Theorem (the comparison).** Let $\varsigma = \mathrm{id}$. Then $A$ is a unital Banach algebra with a continuous isometric involution, the derived operation is the algebra product read through $*$, and the exponential of the article is the exponential of the Banach algebra $A$: the series, the convergence, the functional equation and the logarithm are those of *The Lie Algebra and the Exponential Map*, §*The Exponential Map*, applied to $A$. The sesquilinear layer adds exactly the two statements that the Hermitian part is closed under the exponential and that the skew-Hermitian part is exponentiated into the unitary group.
 
-*Proof.* At $\varsigma = \mathrm{id}$ the second scalar rule is the first and the product is $\mathbb{K}$-bilinear, so $A$ is a Banach algebra with involution, by the collapse theorem of *Banach Sesqualgebras*, §*The Collapse*; the exponential series names only the associative product and the scalar field, so it is the exponential of that algebra. The two additional statements are the corollary of §*The Involution and the Exponential*, which uses the involution alone. $\square$
+*Proof.* At $\varsigma = \mathrm{id}$ the second scalar rule is the first and the product is $\mathbb{K}$-bilinear, so $A$ is a Banach algebra with involution, by the collapse theorem of *Banach Sesqualgebras*, §*The Collapse*; the exponential series names only the associative product and the scalar field, so it is the exponential of that algebra. The two additional statements are the corollary of §*The Involution and the Exponential*, which uses the involution alone.
 
 ### Why the Derived Operation Has No Exponential
 
@@ -128,7 +128,7 @@ $$
 (x \star x) \star x = E_{11} + 2E_{12} + E_{21} + 3E_{22} \neq E_{11} + E_{12} + 2E_{21} + 3E_{22} = x \star (x \star x) .
 $$
 
-*Proof.* The products are computed from $x \star y = xy^{\mathsf{T}}$: for $x = E_{11} + E_{21} + E_{22}$ one has $x^{\mathsf{T}} = E_{11} + E_{12} + E_{22}$ and $x \star x = xx^{\mathsf{T}} = E_{11} + E_{12} + E_{21} + 2E_{22}$, whence $(x \star x) \star x = (x \star x)x^{\mathsf{T}}$ and $x \star (x \star x) = x(x \star x)^{\mathsf{T}}$, which are the two displayed matrices. $\square$
+*Proof.* The products are computed from $x \star y = xy^{\mathsf{T}}$: for $x = E_{11} + E_{21} + E_{22}$ one has $x^{\mathsf{T}} = E_{11} + E_{12} + E_{22}$ and $x \star x = xx^{\mathsf{T}} = E_{11} + E_{12} + E_{21} + 2E_{22}$, whence $(x \star x) \star x = (x \star x)x^{\mathsf{T}}$ and $x \star (x \star x) = x(x \star x)^{\mathsf{T}}$, which are the two displayed matrices.
 
 **Remark.** The theorem is the reason the article is written on the envelope. A series $\sum x_{\star}^{n}/n!$ in the derived operation would depend on the choice of bracketing at every order, so no exponential of the derived operation exists; what the sesquilinear structure supplies is the involution, and through it the identification of the skew-Hermitian part with the Lie algebra of the unitary group. The exponential is thus an operation of the bilinear layer whose *meaning* in the sesquilinear layer is the passage from a Lie algebra to its group, and the article is the record of that passage.
 

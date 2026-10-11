@@ -32,7 +32,6 @@ $$
 $$
 
 with $\mathsf{M}_2(i) = i\,\mathsf{M}_2(e_0)$ on the central scalar $\mathbb{C}_{\mathbb{B}}$.
-<!-- CONVENTION — the matrix basis: the four basis images are asserted, and the images of the Hermitian units follow from them as Phi(i e_k) = i Phi(e_k) by C-linearity, needing no new choice. Both the factor i and the sign are forced (e_k^2 = -e_0 and e_1 e_2 = e_3), so a reviewer must not "correct" the assignment by making the three images real, nor by negating all three, and must not treat the choice as free. -->
 
 This is the assignment, taken as fixed for the whole series. A general biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$ therefore maps to
 
@@ -41,7 +40,7 @@ $$
 = \begin{pmatrix} Q_0 - i Q_3 & -i Q_1 - Q_2 \\ -i Q_1 + Q_2 & Q_0 + i Q_3 \end{pmatrix}.
 $$
 
-**The check.** The assignment is the right one because the four matrices multiply as the four units do. Squaring a vector image,
+**The check. The assignment is the right one because the four matrices multiply as the four units do. Squaring a vector image,
 
 $$
 \mathsf{M}_2(e_1)^2 = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -\mathsf{M}_2(e_0),
@@ -66,7 +65,7 @@ $$
 
 so every $2 \times 2$ complex matrix is the image of exactly one biquaternion. Together with multiplicativity this makes $\mathsf{M}_2$ an algebra isomorphism, and a biquaternion identity holds exactly when the corresponding matrix identity does.
 
-**Remark (the Pauli matrices).** The three matrices
+**Remark (the Pauli matrices). The three matrices
 
 $$
 \sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
@@ -88,7 +87,7 @@ The factor $i$ is thus all that separates the algebra's own matrices from the on
 
 Two features of the asserted assignment are not free: the factor $i$, and its sign. Both are settled by the check above, and that is what makes the assignment a statement about the algebra rather than a choice of convention.
 
-**The factor $i$ is required by $e_k^2 = -e_0$.** The three matrices
+**The factor $i$ is required by $e_k^2 = -e_0$. The three matrices
 
 $$
 \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
@@ -98,7 +97,7 @@ $$
 
 square to $+\mathsf{M}_2(e_0)$. Assigning them to $e_1, e_2, e_3$ would therefore give $e_k^2 = +e_0$, the wrong sign. Multiplying by the complex unit repairs this, and both $+i$ and $-i$ times these matrices satisfy $e_k^2 = -e_0$; the squaring relation alone therefore requires the factor $i$ but leaves its sign open.
 
-**The sign is then forced by the cross-relations.** The alternative assignment sends $e_k$ to $-\mathsf{M}_2(e_k)$, reversing the sign of every vector image. The product of the images of $e_1$ and $e_2$ is then
+**The sign is then forced by the cross-relations. The alternative assignment sends $e_k$ to $-\mathsf{M}_2(e_k)$, reversing the sign of every vector image. The product of the images of $e_1$ and $e_2$ is then
 
 $$
 \big(-\mathsf{M}_2(e_1)\big)\big(-\mathsf{M}_2(e_2)\big) = \mathsf{M}_2(e_1)\mathsf{M}_2(e_2) = \mathsf{M}_2(e_3),
@@ -117,7 +116,7 @@ The physical reading of the sign is the one recorded in the remark above. The He
 
 ## Trace, Determinant and the Biquaternion Norm
 
-**The trace is twice the scalar part.** The trace is taken in this representation, with $\mathrm{Tr}(e_0) = 2$ as it comes from $\mathsf{M}_2(e_0) = I_2$. From the general matrix,
+**The trace is twice the scalar part. The trace is taken in this representation, with $\mathrm{Tr}(e_0) = 2$ as it comes from $\mathsf{M}_2(e_0) = I_2$. From the general matrix,
 
 $$
 \mathrm{Tr}(\tilde{Q}) = (Q_0 - i Q_3) + (Q_0 + i Q_3) = 2 Q_0 .
@@ -133,7 +132,7 @@ $$
 
 where $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the trace of the product of the matrices, $\mathrm{Tr}(\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2))$. This follows from $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2Q_0$, the $\mathbb{C}$-linearity of $\mathsf{M}_2$ and the multiplicativity of the trace; the pairs drawn from $\mathbb{M}_+$ are the case in which the pairing is real. It is the form in which the operator articles use the identity, and in the quantum-information articles it is the Born rule, $p = \mathrm{Tr}(\tilde{P}\tilde{\rho})$.
 
-**The determinant is the biquaternion norm.** Expanding,
+**The determinant is the biquaternion norm. Expanding,
 
 $$
 \det(\tilde{Q}) = (Q_0 - iQ_3)(Q_0 + iQ_3) - (-iQ_1 - Q_2)(-iQ_1 + Q_2)
@@ -142,29 +141,29 @@ $$
 
 This is the central fact of the representation. The biquaternion norm, defined algebraically as $\tilde{Q}\tilde{Q}^{\natural}$, is the determinant of the corresponding matrix — not merely similar to it, but equal to it. Three consequences follow at once.
 
-**Invertibility.** A biquaternion is invertible exactly when its biquaternion norm is nonzero, because a matrix is invertible exactly when its determinant is. The algebraic inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ is the matrix inverse, since for a $2\times 2$ matrix the adjugate is $\det(M)\,M^{-1}$.
+**Invertibility. A biquaternion is invertible exactly when its biquaternion norm is nonzero, because a matrix is invertible exactly when its determinant is. The algebraic inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ is the matrix inverse, since for a $2\times 2$ matrix the adjugate is $\det(M)\,M^{-1}$.
 
-**Multiplicativity.** $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.
+**Multiplicativity. $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.
 
-**Zero divisors.** The zero divisors of $\mathbb{B}$ are the singular matrices. The null cone $N(\tilde{Q}) = 0$ is the determinant-zero locus. Since $\mathbb{B}$ is not a division algebra, this locus is nonempty, and its elements are exactly the matrices of rank at most one.
+**Zero divisors. The zero divisors of $\mathbb{B}$ are the singular matrices. The null cone $N(\tilde{Q}) = 0$ is the determinant-zero locus. Since $\mathbb{B}$ is not a division algebra, this locus is nonempty, and its elements are exactly the matrices of rank at most one.
 
 ## The Rank-One Elements and the Outer Product
 
 The determinant is the norm, so the zero divisors are the nonzero singular matrices; the matrix form also says what such a matrix is.
 
-**Proposition.** For $\tilde{Q}\neq0$ the following are equivalent: $N(\tilde{Q})=0$; $\mathsf{M}_2(\tilde{Q})$ is singular; $\mathsf{M}_2(\tilde{Q})$ is an outer product
+**Proposition. For $\tilde{Q}\neq0$ the following are equivalent: $N(\tilde{Q})=0$; $\mathsf{M}_2(\tilde{Q})$ is singular; $\mathsf{M}_2(\tilde{Q})$ is an outer product
 $$
 \mathsf{M}_2(\tilde{Q})=uv^{T},\qquad u=\binom{\alpha}{\beta}\neq0,\quad v=\binom{\gamma}{\delta}\neq0,
 $$
 the pair $(u,v)$ being determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$.
 
-**Proof.** The first two are equivalent by $\det \mathsf{M}_2(\tilde{Q})=N(\tilde{Q})$, and $\tilde{Q}\neq0$ makes the matrix nonzero; a nonzero singular two-by-two matrix has rank one. Let $M=\mathsf{M}_2(\tilde{Q})$ have rank one and let $M_{pq}\neq0$ be an entry. Every two-by-two minor of $M$ vanishes, so $M_{iq}M_{pj}=M_{ij}M_{pq}$ for all $i,j$; hence, with $u$ the $q$-th column and $v^{T}$ the $p$-th row divided by $M_{pq}$,
+**Proof. The first two are equivalent by $\det \mathsf{M}_2(\tilde{Q})=N(\tilde{Q})$, and $\tilde{Q}\neq0$ makes the matrix nonzero; a nonzero singular two-by-two matrix has rank one. Let $M=\mathsf{M}_2(\tilde{Q})$ have rank one and let $M_{pq}\neq0$ be an entry. Every two-by-two minor of $M$ vanishes, so $M_{iq}M_{pj}=M_{ij}M_{pq}$ for all $i,j$; hence, with $u$ the $q$-th column and $v^{T}$ the $p$-th row divided by $M_{pq}$,
 $$
 u=\binom{M_{1q}}{M_{2q}},\qquad v^{T}=\frac{1}{M_{pq}}\begin{pmatrix}M_{p1}&M_{p2}\end{pmatrix},
 $$
 one has $(uv^{T})_{ij}=M_{iq}M_{pj}/M_{pq}=M_{ij}$, so $M=uv^{T}$, and $u\neq0$ because its $p$-th entry is $M_{pq}\neq0$. A different pivot gives a pair differing by precisely the rescaling: the $j$-th columns of $uv^{T}=u'(v')^{T}$ give $u'=\lambda u$ for $\lambda=v_{j}/v'_{j}\neq0$, and the remaining entries give $v'=\lambda^{-1}v$.
 
-**Worked example.** For $\tilde{Q}=e_2+ie_3$ the image is $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$, of rank one; the pivot $M_{11}=1$ gives $u=(1,1)^{T}$, $v=(1,-1)^{T}$, and the pivot $M_{12}=-1$ gives $u=(-1,-1)^{T}$, $v=(-1,1)^{T}$, the same pair rescaled by $\lambda=-1$.
+**Worked example. For $\tilde{Q}=e_2+ie_3$ the image is $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$, of rank one; the pivot $M_{11}=1$ gives $u=(1,1)^{T}$, $v=(1,-1)^{T}$, and the pivot $M_{12}=-1$ gives $u=(-1,-1)^{T}$, $v=(-1,1)^{T}$, the same pair rescaled by $\lambda=-1$.
 
 ## Remarkable Subspaces
 
@@ -354,9 +353,9 @@ the Minkowski interval of signature $(3,1)$: the $ict$ metric of the corpus, rea
 
 The relations among the subspaces — the three splits, their intersections, and the pairs that span the algebra — are worked out in *Relations Between Subspaces*. Two consequences are used repeatedly in this article and are recorded here.
 
-**The three splits cross.** The split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ is the trace decomposition and is not four-plus-four at all: it separates the two-dimensional centre subspace from the six-dimensional traceless part. The other two splits, the real-and-imaginary split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ and the sector split $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, are both four-plus-four, and neither refines the other. Each of $\mathbb{M}_+$ and $\mathbb{M}_-$ takes its scalar from one half and its vectors from the other, which is why the prime pattern is three-and-one rather than four-and-none. Multiplication by the central $i$ exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, and exchanges the two halves.
+**The three splits cross. The split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ is the trace decomposition and is not four-plus-four at all: it separates the two-dimensional centre subspace from the six-dimensional traceless part. The other two splits, the real-and-imaginary split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ and the sector split $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, are both four-plus-four, and neither refines the other. Each of $\mathbb{M}_+$ and $\mathbb{M}_-$ takes its scalar from one half and its vectors from the other, which is why the prime pattern is three-and-one rather than four-and-none. Multiplication by the central $i$ exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, and exchanges the two halves.
 
-**Two of the remarkable subspaces are subalgebras.** $\mathbb{C}_{\mathbb{B}}$ is closed under multiplication; $\mathrm{Vect}(\mathbb{B})$ is closed under the commutator but not under the product; $\mathbb{H}_{\mathbb{B}}$ is closed under multiplication; and $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_\pm$ are neither — the product of two Hermitian matrices is Hermitian only when they commute. The centre subspace meets $\mathbb{M}_+$ and $\mathbb{M}_-$ in the two central lines, $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$, and every element splits as a Hermitian plus an anti-Hermitian part, $\tilde{Q} = \tfrac12(\tilde{Q} + \tilde{Q}^{*}) + \tfrac12(\tilde{Q} - \tilde{Q}^{*})$, the two parts differing by the factor $i$ that carries $\mathbb{M}_-$ into $\mathbb{M}_+$.
+**Two of the remarkable subspaces are subalgebras. $\mathbb{C}_{\mathbb{B}}$ is closed under multiplication; $\mathrm{Vect}(\mathbb{B})$ is closed under the commutator but not under the product; $\mathbb{H}_{\mathbb{B}}$ is closed under multiplication; and $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_\pm$ are neither — the product of two Hermitian matrices is Hermitian only when they commute. The centre subspace meets $\mathbb{M}_+$ and $\mathbb{M}_-$ in the two central lines, $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$, and every element splits as a Hermitian plus an anti-Hermitian part, $\tilde{Q} = \tfrac12(\tilde{Q} + \tilde{Q}^{*}) + \tfrac12(\tilde{Q} - \tilde{Q}^{*})$, the two parts differing by the factor $i$ that carries $\mathbb{M}_-$ into $\mathbb{M}_+$.
 
 ## The Ideals as Columns and the Spinor Module
 
@@ -377,7 +376,7 @@ with $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$; the firs
 
 Two structural facts are visible in this form, and both are used by the physics articles.
 
-**The two columns are the two chiralities.** Left multiplication preserves each column: for any $M$, the products $ME_{11}$ and $ME_{21}$ again have vanishing second column. No left multiplication can therefore relate the two columns. A mass term that couples the left- and right-handed components cannot be a left multiplication; it must be a **right** multiplication, and the element that performs it is the one carried to the off-diagonal matrix unit,
+**The two columns are the two chiralities. Left multiplication preserves each column: for any $M$, the products $ME_{11}$ and $ME_{21}$ again have vanishing second column. No left multiplication can therefore relate the two columns. A mass term that couples the left- and right-handed components cannot be a left multiplication; it must be a **right** multiplication, and the element that performs it is the one carried to the off-diagonal matrix unit,
 
 $$
 \tilde\Upsilon_1 = \tfrac12(ie_1 - e_2) \;\longmapsto\; \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = E_{12} = |0\rangle\langle 1| .
@@ -385,7 +384,7 @@ $$
 
 whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second. This is the matrix form of the structural reason the biquaternionic Dirac equation couples the chiralities by a right multiplication, and of the statement that the spinor module, not the whole algebra, is the carrier of the Dirac field. The element is the corpus's truncated lowering operator — the name matches the image $|0\rangle\langle 1|$ exactly — and the spinor-module articles write it $\tilde\Upsilon_1$, with $\tilde\Upsilon_2 = \tfrac12(ie_1 + e_2)$; the pair satisfies the matrix-unit relations $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$, $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$, $\tilde\Upsilon_1^2 = \tilde\Upsilon_2^2 = 0$.
 
-**The two-sided ideals are not among them.** Since $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, its only two-sided ideals are $0$ and $\mathbb{B}$; the columns are one-sided. That is what allows the algebra to be simple and still carry two distinct chiralities, and it is why the mass term must be off-diagonal rather than a multiplication confined to a single column.
+**The two-sided ideals are not among them. Since $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, its only two-sided ideals are $0$ and $\mathbb{B}$; the columns are one-sided. That is what allows the algebra to be simple and still carry two distinct chiralities, and it is why the mass term must be off-diagonal rather than a multiplication confined to a single column.
 
 The pair $\tilde\Pi_{1,2}$ used here is not the only one: every unit vector $\hat{\boldsymbol\mu}$ gives the idempotent pair $\tilde\Pi_{1,2}(\hat{\boldsymbol\mu}) = \tfrac12(e_0 \pm i\hat{\boldsymbol\mu})$, and $\tilde\Pi_{1,2} = \tilde\Pi_{1,2}(\hat{\mathbf{e}}_3)$ is the choice for which the two columns are the coordinate columns. The projector $\tilde\Pi_1(\hat{\mathbf{e}}_1)$ of the section *Spin, Qubits and the Bloch Vector* is a member of that family, corresponding to a different direction.
 
@@ -405,7 +404,6 @@ Two of the four are dressed by the antisymmetric form
 $$
 \epsilon = \mathsf{M}_2(-e_2) = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix},
 $$
-<!-- CONVENTION — the conjugation dictionary: quaternion conjugation is the adjugate epsilon M^T epsilon^-1 and complex conjugation is epsilon conj(M) epsilon^-1, while dagger and flat are undressed. A reviewer must not "simplify" complex conjugation to a plain entrywise conjugation of M: that operation is the image of no involution, sends e_1 and e_3 to minus themselves and leaves e_2 fixed, and so destroys the subspace dictionary. -->
 
 the invariant antisymmetric form $\varepsilon$ of the spinor module: quaternion conjugation is the transpose dressed by $\epsilon$, and complex conjugation is the entrywise conjugation dressed by $\epsilon$. The adjugate statement is worth writing out, since it is the least familiar:
 
@@ -417,19 +415,19 @@ $$
 
 Quaternion conjugation is therefore the classical adjoint, and the identity $\tilde{Q}\tilde{Q}^{\natural} = N(\tilde{Q})e_0$ is the matrix identity $M\,\mathrm{adj}(M) = \det(M)\,\mathsf{M}_2(e_0)$. The other two are the operations a physicist expects: ${}^{*}$ is the conjugate transpose, so its fixed points are the Hermitian matrices, and $\flat = -{}^{*}$ has the anti-Hermitian matrices as its fixed points. The real structure $\flat$, which the corpus uses for the $\mathbb{M}_\pm$ split and for Majorana-type pairings, is the negative conjugate transpose.
 
-**Complex conjugation is the one that does not act entrywise.** It is sometimes said that $\tilde{Q}^*$ conjugates the entries of the matrix. That is not true, and the reason is structural: the representation is built with the same $i$ that conjugates the coefficients, so the two operations compete. Conjugating the entries of $\mathsf{M}_2(\tilde{Q})$ sends $\mathsf{M}_2(e_1) \mapsto -\mathsf{M}_2(e_1)$ and $\mathsf{M}_2(e_3) \mapsto -\mathsf{M}_2(e_3)$ — the images of $e_1$ and $e_3$ to their negatives — while the image of $e_2$ is left alone; the entrywise operation is therefore not $\mathsf{M}_2(\tilde{Q}^*)$, and it is not the image of any involution of the algebra. The correct correspondence is the one in the table,
+**Complex conjugation is the one that does not act entrywise. It is sometimes said that $\tilde{Q}^*$ conjugates the entries of the matrix. That is not true, and the reason is structural: the representation is built with the same $i$ that conjugates the coefficients, so the two operations compete. Conjugating the entries of $\mathsf{M}_2(\tilde{Q})$ sends $\mathsf{M}_2(e_1) \mapsto -\mathsf{M}_2(e_1)$ and $\mathsf{M}_2(e_3) \mapsto -\mathsf{M}_2(e_3)$ — the images of $e_1$ and $e_3$ to their negatives — while the image of $e_2$ is left alone; the entrywise operation is therefore not $\mathsf{M}_2(\tilde{Q}^*)$, and it is not the image of any involution of the algebra. The correct correspondence is the one in the table,
 
 $$
 \mathsf{M}_2(\tilde{Q}^*) = \epsilon\,\overline{\mathsf{M}_2(\tilde{Q})}\,\epsilon^{-1}, \qquad \epsilon = \mathsf{M}_2(-e_2),
 $$
 
-verified on explicit matrices, and the adjugate form of quaternion conjugation is the same dressing applied to the transpose. In this representation the safe rule is: use $\bar{\phantom{Q}}$, $\bar{\cdot}$, ${}^{*}$ and $\flat$ through the four formulas above, and never conjugate the matrix entries on their own.
+In this representation the safe rule is: use $\bar{\phantom{Q}}$, $\bar{\cdot}$, ${}^{*}$ and $\flat$ through the four formulas above, and never conjugate the matrix entries on their own.
 
 ## Spin, Qubits and the Bloch Vector
 
 The matrix representation is what connects the algebra to the physics of two-state systems, and the connection runs through the single identity $ie_k \mapsto \mathsf{M}_2(ie_k)$. The images are the Hermitian basis matrices that the remark of *The Representation* names the Pauli matrices, and the whole section is written in those images.
 
-**Spin operators.** The spin operators of the biquaternion framework are $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, and under the isomorphism,
+**Spin operators. The spin operators of the biquaternion framework are $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, and under the isomorphism,
 
 $$
 \tilde{S}_k = \tfrac{\hbar}{2}ie_k \;\longmapsto\; \tfrac{\hbar}{2}\mathsf{M}_2(ie_k) = \tfrac{\hbar}{2}\,i\,\mathsf{M}_2(e_k) ,
@@ -437,7 +435,7 @@ $$
 
 which are the Hermitian spin matrices. The eigenvalue statement $\tilde{S}_k^2 = \tfrac{\hbar^2}{4}e_0$, the anticommutation $\{\tilde{S}_i, \tilde{S}_j\} = \tfrac{\hbar^2}{2}\delta_{ij}e_0$ and the commutator $[\tilde{S}_i,\tilde{S}_j] = i\hbar\varepsilon_{ijk}\tilde{S}_k$ are, matrix by matrix, the standard angular-momentum algebra of a spin-$\tfrac12$ system. In the matrix form they are checked by multiplying $2\times 2$ matrices.
 
-**States as projectors.** The rank-one idempotents of $\mathbb{M}_+$ are the pure-state projectors. The element
+**States as projectors. The rank-one idempotents of $\mathbb{M}_+$ are the pure-state projectors. The element
 
 $$
 \tilde\Pi_1(\hat{\mathbf{e}}_1) = \tfrac{1}{2}(e_0 + ie_1) \;\longmapsto\; \tfrac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
@@ -446,7 +444,7 @@ $$
 
 satisfies $\tilde{P}^2 = \tilde{P}$, has trace $1$ and determinant $0$: it is a rank-one projector, hence a pure state. Its complement $\tilde\Pi_2(\hat{\mathbf{e}}_1) = \tfrac12(e_0 - ie_1)$ is the orthogonal projector, and $\tilde\Pi_1(\hat{\mathbf{e}}_1) + \tilde\Pi_2(\hat{\mathbf{e}}_1) = e_0$ is $\mathsf{M}_2(e_0)$. Both have vanishing biquaternion norm, which is the matrix way of saying that the rank-one idempotents of $\mathbb{M}_+$ live on the null cone: a pure state is a null element of the algebra. Note that not every idempotent of $\mathbb{M}_+$ is a state: the unit $e_0$ is idempotent, and its matrix $\mathsf{M}_2(e_0)$ has trace $2$ and determinant $1$, so it is the full-rank projector and does not lie on the null cone. This is the representation-theoretic content of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
-**The density matrix.** A general mixed state is
+**The density matrix. A general mixed state is
 
 $$
 \rho = \tfrac{1}{2}\big(\mathsf{M}_2(e_0) + r_1\mathsf{M}_2(ie_1) + r_2\mathsf{M}_2(ie_2) + r_3\mathsf{M}_2(ie_3)\big),
@@ -458,7 +456,7 @@ $$
 r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big),
 $$
 
-verified for all three components. The purity condition $\mathrm{Tr}(\rho^2) = 1$ is $|\mathbf{r}| = 1$, and the boundary of the Bloch ball is the set of rank-one projectors, i.e. the pure states found above. So the three-level description — biquaternion state, density matrix, Bloch vector — is one statement in three coordinate systems, and the passage between them is matrix multiplication and the trace.
+The purity condition $\mathrm{Tr}(\rho^2) = 1$ is $|\mathbf{r}| = 1$, and the boundary of the Bloch ball is the set of rank-one projectors, i.e. the pure states found above. So the three-level description — biquaternion state, density matrix, Bloch vector — is one statement in three coordinate systems, and the passage between them is matrix multiplication and the trace.
 
 ## The Groups
 

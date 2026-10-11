@@ -29,11 +29,11 @@ $$
 (f^*)^* = f, \qquad (f*g)^* = g^*\!*f^*, \qquad (\lambda f + \mu g)^* = \bar\lambda f^* + \bar\mu g^*, \qquad \|f^*\|_1 = \|f\|_1 .
 $$
 
-**Proof.** These are the four axiom verifications of *The Convolution Algebra $L^1(G)$*, §The Involution; the modular factor is exactly what makes the norm isometric under the inversion $x\mapsto x^{-1}$, and it is absent only when $\Delta\equiv1$. $\square$
+**Proof.** These are the four axiom verifications of *The Convolution Algebra $L^1(G)$*, §The Involution; the modular factor is exactly what makes the norm isometric under the inversion $x\mapsto x^{-1}$, and it is absent only when $\Delta\equiv1$.
 
 **Corollary ($L^1(G)$ is an involutive Banach algebra).** With this operation $\mathcal{A}$ is a Banach `*`-algebra; it is commutative exactly when $G$ is abelian and unital exactly when $G$ is discrete, and its involution is the one the harmonic analysis of the category uses throughout.
 
-**Proof.** The algebra laws are those of *The Convolution Algebra $L^1(G)$*; the two structural statements are the commutative and unital criteria there. $\square$
+**Proof.** The algebra laws are those of *The Convolution Algebra $L^1(G)$*; the two structural statements are the commutative and unital criteria there.
 
 **Remark (two involutions, not one).** The map $f^*$ is an **anti**-automorphism of order two, the structure of the `- * Theory` group. The grade involution $\alpha$ of *The Signed Sandwich on the Group Algebra*, an **auto**morphism of order two, is a different operation on the same algebra; the two coincide on a commutative group algebra and on the sign character they need not. No statement about $f^*$ is a statement about $\alpha$, and the article keeps them apart.
 
@@ -47,11 +47,11 @@ $$
 (f*g)^*\!*\!(f*g) = g^*\!*f^*\!*f*\!g .
 $$
 
-**Proof.** The decomposition is $u = \mathrm{Re}\,f$, $v = \mathrm{Im}\,f$, and it is unique because $\mathcal{A}_h\cap i\mathcal{A}_h = \{0\}$; the subspace is closed as the kernel of the continuous map $f\mapsto f^*-f$. The displayed identity is the anti-automorphism law applied to the product $f*g$. $\square$
+**Proof.** The decomposition is $u = \mathrm{Re}\,f$, $v = \mathrm{Im}\,f$, and it is unique because $\mathcal{A}_h\cap i\mathcal{A}_h = \{0\}$; the subspace is closed as the kernel of the continuous map $f\mapsto f^*-f$. The displayed identity is the anti-automorphism law applied to the product $f*g$.
 
 **Proposition (unitaries exist only in the measure algebra).** The unitary group $\mathcal{U} = \{f : f^*\!*f = f*\!f^* = 1\}$ is nonempty if and only if $\mathcal{A}$ has an identity, that is if and only if $G$ is discrete; then the point masses are unitary, $\delta_x^* = \delta_{x^{-1}}$ and $\delta_x^*\!*\delta_x = \delta_e$, and every unitary $f$ satisfies $\|f\|_1\geq1$.
 
-**Proof.** A unitary element is invertible, so its existence forces a unit; for a non-discrete group $\mathcal{A}$ has no identity and no invertible elements. For discrete $G$ the identity is $\delta_e$ and $\delta_x^*\!*\delta_x = \delta_{x^{-1}}*\delta_x = \delta_e$, so the point masses are unitary; a general unitary has $\|f\|_1\|f\|_1 = \|f^*\|_1\|f\|_1\geq\|f^*\!*f\|_1 = \|\delta_e\|_1 = 1$. $\square$
+**Proof.** A unitary element is invertible, so its existence forces a unit; for a non-discrete group $\mathcal{A}$ has no identity and no invertible elements. For discrete $G$ the identity is $\delta_e$ and $\delta_x^*\!*\delta_x = \delta_{x^{-1}}*\delta_x = \delta_e$, so the point masses are unitary; a general unitary has $\|f\|_1\|f\|_1 = \|f^*\|_1\|f\|_1\geq\|f^*\!*f\|_1 = \|\delta_e\|_1 = 1$.
 
 **Theorem (the positive cone).** The set
 
@@ -61,7 +61,7 @@ $$
 
 of finite sums of squares is a convex cone under the real scalars, stable under $f\mapsto h^*\!*f*\!h$, and proper, $\mathcal{A}^+\cap(-\mathcal{A}^+)=\{0\}$; the positive functionals on $\mathcal{A}$, those $\omega$ with $\omega(f^*\!*f)\geq0$ for all $f$, are exactly the real-linear functionals that are $\geq0$ on $\mathcal{A}^+$.
 
-**Proof.** The cone is convex by construction and stable under inner multiplication because $h^*\!*(g^*\!*g)*\!h = (g*h)^*\!*(g*h)$; for properness, fix a faithful `*`-representation, for instance the direct sum of the unitary representations: an element of $\mathcal{A}^+\cap(-\mathcal{A}^+)$ has $\pi(f)$ both positive and negative in $B(\mathcal{H}_\pi)$, hence $\pi(f) = 0$, and faithfulness gives $f = 0$. The identification of the positive functionals is the definition read on the generators of the cone and extended by linearity. $\square$
+**Proof.** The cone is convex by construction and stable under inner multiplication because $h^*\!*(g^*\!*g)*\!h = (g*h)^*\!*(g*h)$; for properness, fix a faithful `*`-representation, for instance the direct sum of the unitary representations: an element of $\mathcal{A}^+\cap(-\mathcal{A}^+)$ has $\pi(f)$ both positive and negative in $B(\mathcal{H}_\pi)$, hence $\pi(f) = 0$, and faithfulness gives $f = 0$. The identification of the positive functionals is the definition read on the generators of the cone and extended by linearity.
 
 ## The $\mathrm{C}^*$-Completion
 
@@ -81,11 +81,11 @@ $$
 
 the algebra $\mathcal{A}$ is dense in $C^*(G)$ and the inclusion $\mathcal{A}\hookrightarrow C^*(G)$ is injective.
 
-**Proof.** The bound is $\|\pi(f)\|\leq\|f\|_1$ for every representation, so the supremum is finite; the $\mathrm{C}^*$-identity holds in every $B(\mathcal{H}_\pi)$ and passes to the supremum because $f\mapsto\|f\|_{C^*}$ makes the completion a $\mathrm{C}^*$-algebra by construction, and the $\mathrm{C}^*$-algebra axioms include the identity; density is by definition, and injectivity because the regular representation is faithful: $\lambda(f) = 0$ gives $\|f\|_{C^*} = 0$ and then $f = 0$. $\square$
+**Proof.** The bound is $\|\pi(f)\|\leq\|f\|_1$ for every representation, so the supremum is finite; the $\mathrm{C}^*$-identity holds in every $B(\mathcal{H}_\pi)$ and passes to the supremum because $f\mapsto\|f\|_{C^*}$ makes the completion a $\mathrm{C}^*$-algebra by construction, and the $\mathrm{C}^*$-algebra axioms include the identity; density is by definition, and injectivity because the regular representation is faithful: $\lambda(f) = 0$ gives $\|f\|_{C^*} = 0$ and then $f = 0$.
 
 **Corollary (the reduced completion and the quotient).** The **reduced** completion $C^*_r(G) = \overline{\lambda(\mathcal{A})}^{\|\cdot\|}$ is the closure in one representation, the map $C^*(G)\to C^*_r(G)$ extending $\mathrm{id}_{\mathcal{A}}$ is a surjective $\mathrm{C}^*$-homomorphism, and it is injective exactly when $G$ is amenable; the identity $\|f^*\!*f\|_{C^*_r} = \|f\|_{C^*_r}^2$ holds there as well.
 
-**Proof.** The reduced norm is $\sup$ over the single representation $\lambda$, hence dominated by the full norm, giving the quotient; amenability is the standard criterion for the two norms to agree; the identity is inherited from the $\mathrm{C}^*$-algebra $B(L^2(G))$ in which $C^*_r(G)$ is closed. $\square$
+**Proof.** The reduced norm is $\sup$ over the single representation $\lambda$, hence dominated by the full norm, giving the quotient; amenability is the standard criterion for the two norms to agree; the identity is inherited from the $\mathrm{C}^*$-algebra $B(L^2(G))$ in which $C^*_r(G)$ is closed.
 
 ## The Failure of the $\mathrm{C}^*$-Identity on $L^1(G)$
 
@@ -97,7 +97,7 @@ $$
 
 Hence $\mathcal{A}$ is a Banach `*`-algebra that is not a $\mathrm{C}^*$-algebra, and the $\mathrm{C}^*$-identity is acquired only in the completion $C^*(G)$.
 
-**Proof.** On $\mathbb{Z}$ the involution is $\delta_k^* = \delta_{-k}$ and convolution is the multiplication of the group algebra, so $f^* = \delta_0 - i\delta_{-1} + \delta_{-2}$ and the product is computed coefficient by coefficient: the coefficient of $\delta_n$ in $f^*\!*f$ is $\sum_{k}\overline{a_k}\,a_{k+n}$ for $a = (1, i, 1)$, giving $3$ at $n = 0$, $0$ at $n = \pm1$ and $1$ at $n = \pm2$. The $\ell^1$ norm is therefore $3+0+0+1+1 = 5$, while $\|f\|_1^2 = (1+1+1)^2 = 9$, and the strict inequality is the failure. $\square$
+**Proof.** On $\mathbb{Z}$ the involution is $\delta_k^* = \delta_{-k}$ and convolution is the multiplication of the group algebra, so $f^* = \delta_0 - i\delta_{-1} + \delta_{-2}$ and the product is computed coefficient by coefficient: the coefficient of $\delta_n$ in $f^*\!*f$ is $\sum_{k}\overline{a_k}\,a_{k+n}$ for $a = (1, i, 1)$, giving $3$ at $n = 0$, $0$ at $n = \pm1$ and $1$ at $n = \pm2$. The $\ell^1$ norm is therefore $3+0+0+1+1 = 5$, while $\|f\|_1^2 = (1+1+1)^2 = 9$, and the strict inequality is the failure.
 
 **Remark (what the failure measures).** The quantity $\|f^*\!*f\|_1/\|f\|_1^2$ can be read through the transform: on $\mathbb{Z}$ the Fourier transform of $f^*\!*f$ is $|\hat f|^2$, where $\hat f$ has a zero, and the ratio is the $\ell^1$-to-$\ell^\infty$ inflation of $|\hat f|^2$. The completion replaces the $\ell^1$ norm by the spectral radius $\|\hat f\|_\infty$, which is exactly the norm in which the identity holds. The example shows that the involution alone does not make the group algebra a $\mathrm{C}^*$-algebra; the completion is a genuine construction and not a formality.
 
@@ -111,11 +111,11 @@ $$
 
 so the Gelfand transform is a `*`-homomorphism of $L^1(G)$ onto a dense `*`-subalgebra of $C_0(G^\vee)$, and it extends to a `*`-isomorphism $C^*(G)\cong C_0(G^\vee)$.
 
-**Proof.** The convolution theorem is the homomorphism property; the involution identity is the substitution $x\mapsto-x$ in $\hat{f^*}(\chi) = \int\overline{f(-x)}\chi(x)\,dx = \overline{\int f(y)\chi(y)\,dy}$ using $\chi(-y) = \chi(y)^{-1}$ and $|\chi| = 1$. The completion is the $\mathrm{C}^*$-completion of a commutative `*`-algebra, isomorphic to the algebra of continuous functions vanishing at infinity on its spectrum, which is $G^\vee$. $\square$
+**Proof.** The convolution theorem is the homomorphism property; the involution identity is the substitution $x\mapsto-x$ in $\hat{f^*}(\chi) = \int\overline{f(-x)}\chi(x)\,dx = \overline{\int f(y)\chi(y)\,dy}$ using $\chi(-y) = \chi(y)^{-1}$ and $|\chi| = 1$. The completion is the $\mathrm{C}^*$-completion of a commutative `*`-algebra, isomorphic to the algebra of continuous functions vanishing at infinity on its spectrum, which is $G^\vee$.
 
 **Corollary (the Hermitian elements are the real-valued spectrum).** In the abelian case $f$ is Hermitian exactly when $\hat f$ is real-valued, and $f\geq0$ implies $\hat f\geq0$ on $G^\vee$; the converse holds in the completion, where $C^*(G)\cong C_0(G^\vee)$ is a commutative $\mathrm{C}^*$-algebra and $\hat f\geq0$ has a non-negative square root. The positive cone of $\mathcal{A}$ is thus the intersection of the cone of non-negative transforms with the image of the Gelfand transform, and $\mathcal{A}^+\cap(-\mathcal{A}^+) = \{0\}$.
 
-**Proof.** $\widehat{f^*} = \overline{\hat f}$, so $f^* = f$ iff $\hat f$ is real; $f = \sum g_i^*\!*g_i$ gives $\hat f = \sum|\hat g_i|^2\geq0$. In the completion the Gelfand transform is onto $C_0(G^\vee)$ and positive functions have square roots, giving the converse there; for $\mathcal{A}$ itself the square root of $\hat f$ need not be the transform of an integrable function, so the converse can fail and the cone is described as the stated intersection. $\square$
+**Proof.** $\widehat{f^*} = \overline{\hat f}$, so $f^* = f$ iff $\hat f$ is real; $f = \sum g_i^*\!*g_i$ gives $\hat f = \sum|\hat g_i|^2\geq0$. In the completion the Gelfand transform is onto $C_0(G^\vee)$ and positive functions have square roots, giving the converse there; for $\mathcal{A}$ itself the square root of $\hat f$ need not be the transform of an integrable function, so the converse can fail and the cone is described as the stated intersection.
 
 **Remark (what the article does not do).** The adjoint of an operator on $\mathcal{A}$, the equality $\lambda(f^*) = \lambda(f)^*$ and the unitary representations read through the adjoint are the `- * Operator Theory` group of this category; the measure-algebra involution and the adjoint of convolution by a measure are *The Involution on the Measure Algebra*, later; the spectral theory of a single Hermitian element belongs to *Operator Algebras*. The positive definite functions and the GNS construction built from a positive functional are *Positive Definite Functions and the Gelfand–Raikov Theorem*, next.
 

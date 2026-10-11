@@ -22,13 +22,13 @@ Throughout, $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$, $N(\tilde q)=\tilde q\tilde 
 
 **Proposition (they are the similarities).** Every quaternion similarity is a similarity of the Euclidean space $\mathbb{H}=\mathbb{R}^4$, of ratio $\lambda(S)$; every orientation-preserving similarity of $\mathbb{R}^4$ is a quaternion similarity; and the quaternion similarities form the group $(\mathbb{H}^{\times}\times\mathbb{H}^{\times})\ltimes\mathbb{H}$ with multiplication $(\tilde a,\tilde b,\tilde c)(\tilde a',\tilde b',\tilde c')=(\tilde a\tilde a',\tilde b'\tilde b,\tilde a\tilde c'\tilde b+\tilde c)$.
 
-*Proof.* Multiplicativity of the norm gives $|\tilde a\tilde q\tilde b|=|\tilde a||\tilde b||\tilde q|$, so $S$ is a similarity with the stated ratio; it is orientation-preserving because the left and right multiplications are real-linear with positive determinant, being compositions of rotations and the scalar dilations $|\tilde a|$ and $|\tilde b|$, and a rotation of $\mathbb{R}^4$ is real-linear with determinant $1$. Conversely, every orientation-preserving isometry of $\mathbb{R}^4$ is a composition of a translation with an element of $SO(4)$, and the map $S^3\times S^3\to SO(4)$, $(\tilde u,\tilde v)\mapsto(\tilde q\mapsto\tilde u\tilde q\tilde v)$, is the standard double cover by *Quaternion Rotations and Reflections*; adding the dilations gives the general forward similarity. The multiplication rule is the associativity of the algebra. $\square$
+*Proof.* Multiplicativity of the norm gives $|\tilde a\tilde q\tilde b|=|\tilde a||\tilde b||\tilde q|$, so $S$ is a similarity with the stated ratio; it is orientation-preserving because the left and right multiplications are real-linear with positive determinant, being compositions of rotations and the scalar dilations $|\tilde a|$ and $|\tilde b|$, and a rotation of $\mathbb{R}^4$ is real-linear with determinant $1$. Conversely, every orientation-preserving isometry of $\mathbb{R}^4$ is a composition of a translation with an element of $SO(4)$, and the map $S^3\times S^3\to SO(4)$, $(\tilde u,\tilde v)\mapsto(\tilde q\mapsto\tilde u\tilde q\tilde v)$, is the standard double cover by *Quaternion Rotations and Reflections*; adding the dilations gives the general forward similarity. The multiplication rule is the associativity of the algebra.
 
 **Remark (the three special families).** The **left similarities** $S(\tilde q)=\tilde a\tilde q+\tilde c$ are the similarities whose derivative does not involve the right factor; they fix the direction of the algebra in the sense of the left-module structure. The **inner rotations** are the compositions $\operatorname{Ad}_{\tilde u}$ of a left and a right rotation by inverse units, and they are the automorphisms of *Quaternion Automorphisms and Derivations*. The **inversions** $\tilde q\mapsto \tilde u\tilde q^{-1}$ are not similarities but anti-conformal maps; they preserve the modulus up to the factor of the point, and they generate the Kleinian groups of the last part. The three families are the reason the algebra is both a Euclidean and a conformal object, and the distinction between them is used throughout the article.
 
 **Proposition (conjugation of an IFS).** Let $\{S_i\}$ be a finite family of quaternion similarities and let $T$ be a similarity. Then $\{T S_i T^{-1}\}$ is a family of quaternion similarities of the same ratios, and if $\Lambda$ is the attractor of $\{S_i\}$ then $T\Lambda$ is the attractor of $\{T S_i T^{-1}\}$.
 
-*Proof.* A conjugate of a similarity by a similarity is a similarity, and its ratio is unchanged because the ratios multiply and cancel; the assertion about the attractor is the invariance of the defining relation $\Lambda=\bigcup_iS_i(\Lambda)$ under $T$. $\square$
+*Proof.* A conjugate of a similarity by a similarity is a similarity, and its ratio is unchanged because the ratios multiply and cancel; the assertion about the attractor is the invariance of the defining relation $\Lambda=\bigcup_iS_i(\Lambda)$ under $T$.
 
 ## Iterated Function Systems and Their Attractors
 
@@ -52,7 +52,7 @@ This is the theory of *Fractal Geometry*, and it is quoted rather than reproved.
 
 **Proposition.** The four maps $S_i$ form an iterated function system whose attractor is the **Sierpiński gasket** of the tetrahedron, the compact set obtained from the solid tetrahedron by repeatedly removing the central octahedron; the open set condition holds with the open tetrahedron as the open set; and the dimension is $2$, the solution of $4\cdot(\tfrac12)^s=1$.
 
-*Proof.* The maps are the similarities of ratio $\tfrac12$ with the vertices as fixed points; the images of the open tetrahedron are the four corner tetrahedra of half the edge, pairwise disjoint and contained in the open tetrahedron, so the open set condition holds. The similarity dimension solves $4\cdot(1/2)^s=1$, that is $s=2$; the attractor is the standard Sierpiński gasket, whose dimension is $2$, and the reference is *Fractal Geometry*. $\square$
+*Proof.* The maps are the similarities of ratio $\tfrac12$ with the vertices as fixed points; the images of the open tetrahedron are the four corner tetrahedra of half the edge, pairwise disjoint and contained in the open tetrahedron, so the open set condition holds. The similarity dimension solves $4\cdot(1/2)^s=1$, that is $s=2$; the attractor is the standard Sierpiński gasket, whose dimension is $2$, and the reference is *Fractal Geometry*.
 
 **Remark (left and right factors).** The homothety $S(\tilde q)=\tfrac12\tilde q+\tilde c$ is written in the product form with the two factors $\tfrac12e_0$ and $e_0$, and its ratio is their product; a map $\tilde q\mapsto\tfrac12\tilde q\,\tilde u$ with $|\tilde u|=1$ has the same ratio $\tfrac12$ and differs by a rotation. **The ratio is the product of the two moduli and the two factors need not be equal**; the left similarities are the cases $\tilde b=e_0$, and the general similarity of the family carries a rotation into the right factor. The convention of the article is the Euclidean ratio $|\tilde a||\tilde b|$, so that the homothety of ratio $\tfrac12$ has $\lambda=\tfrac12$.
 
@@ -76,7 +76,7 @@ This is the theory of *Fractal Geometry*, and it is quoted rather than reproved.
 
 ## Worked Example
 
-**Example (three systems).** The dimensions were recomputed from the ratios.
+**Example (three systems).**
 
 **(a) The tetrahedral Sierpiński gasket.** Four similarities of ratio $\tfrac12$: the equation $4(1/2)^s=1$ gives $s=2$, the attractor is the gasket of dimension $2$, and the open set condition holds with the open tetrahedron.
 

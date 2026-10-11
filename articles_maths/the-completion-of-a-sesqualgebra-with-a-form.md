@@ -30,7 +30,7 @@ The positivity of the form makes the diagonal non-negative and in the fixed fiel
 
 **Proposition (what the completion has to preserve).** The compatibility is equivalently $h(x, yz) = h(y^{*}x, z)$, so the two forms $h(xy,z)$ and $h(y,x^{*}z)$ are the two readings of one identity; the radical of $h$ is a left ideal; and the derived product is compatible with the form in the ternary sense $h(xy^{*}z, w) = h(z, yx^{*}w)$.
 
-*Proof.* These are the three theorems of *Topological Sesqualgebras with a Form*, §*The Identity and Its Equivalent* and §*The Radical Is an Ideal*, stated for a normed object; the proofs use only the product, the involution and the form, hence are available before the completion. $\square$
+*Proof.* These are the three theorems of *Topological Sesqualgebras with a Form*, §*The Identity and Its Equivalent* and §*The Radical Is an Ideal*, stated for a normed object; the proofs use only the product, the involution and the form, hence are available before the completion.
 
 ## The Extension of the Form
 
@@ -44,7 +44,7 @@ $$
 
 so $h$ is continuous with constant one for the product topology of the norms, and it is uniformly continuous on every bounded set.
 
-*Proof.* This is the Cauchy–Schwarz inequality of *The Norm Defined by a Form*, §*The Cauchy–Schwarz Inequality*, proved from the translated diagonal $h(x-\mu y, x-\mu y) \geq 0$ at $\mu = h(x,y)/h(y,y)$. The bound is the statement that the pairing is bounded with constant one, hence continuous; a bounded biadditive map is uniformly continuous on bounded sets because the estimate is uniform in the arguments. $\square$
+*Proof.* This is the Cauchy–Schwarz inequality of *The Norm Defined by a Form*, §*The Cauchy–Schwarz Inequality*, proved from the translated diagonal $h(x-\mu y, x-\mu y) \geq 0$ at $\mu = h(x,y)/h(y,y)$. The bound is the statement that the pairing is bounded with constant one, hence continuous; a bounded biadditive map is uniformly continuous on bounded sets because the estimate is uniform in the arguments.
 
 **Remark (the bound is sharp on the model).** The estimate is attained: on the matrices of the example below the identity matrix with itself has $\lvert h(1,1)\rvert = \lVert 1\rVert^{2}$, and more generally $y = x$ gives equality when $h(x,x) = \lVert x\rVert^{2}$ is real, which it is, the diagonal lying in $k$.
 
@@ -58,7 +58,7 @@ $$
 
 so $\widehat{h}$ is positive definite, and its radical is zero.
 
-*Proof.* By the boundedness theorem $h$ is uniformly continuous on the products of bounded sets, and every element of $\widehat{A}$ is the limit of a bounded sequence from $\iota(A)$; for sequences $x_{n}\to x$, $y_{n}\to y$ the values $h(x_{n},y_{n})$ form a Cauchy sequence in the complete field $R$, because $\lvert h(x_{n},y_{n})-h(x_{m},y_{m})\rvert \leq \lVert x_{n}-x_{m}\rVert\lVert y_{n}\rVert+\lVert x_{m}\rVert\lVert y_{n}-y_{m}\rVert$, and the limit is independent of the chosen sequences by the same estimate; that limit is the definition of $\widehat{h}(x,y)$. The extension is biadditive because addition and the scalar rules are continuous on the completion and the two sides agree on the dense set $\iota(A)\times\iota(A)$; the Hermitian property, the slot rules and the bound are identities of continuous functions verified on that set. The diagonal is $\widehat{h}(x,x) = \lim_n h(x_n,x_n) = \lim_n\lVert x_n\rVert^{2} = \lVert x\rVert^{2}$ for a sequence $x_n \to x$, which is non-negative, and vanishes exactly at $x = 0$; the bound is the Cauchy–Schwarz inequality applied in the limit. $\square$
+*Proof.* By the boundedness theorem $h$ is uniformly continuous on the products of bounded sets, and every element of $\widehat{A}$ is the limit of a bounded sequence from $\iota(A)$; for sequences $x_{n}\to x$, $y_{n}\to y$ the values $h(x_{n},y_{n})$ form a Cauchy sequence in the complete field $R$, because $\lvert h(x_{n},y_{n})-h(x_{m},y_{m})\rvert \leq \lVert x_{n}-x_{m}\rVert\lVert y_{n}\rVert+\lVert x_{m}\rVert\lVert y_{n}-y_{m}\rVert$, and the limit is independent of the chosen sequences by the same estimate; that limit is the definition of $\widehat{h}(x,y)$. The extension is biadditive because addition and the scalar rules are continuous on the completion and the two sides agree on the dense set $\iota(A)\times\iota(A)$; the Hermitian property, the slot rules and the bound are identities of continuous functions verified on that set. The diagonal is $\widehat{h}(x,x) = \lim_n h(x_n,x_n) = \lim_n\lVert x_n\rVert^{2} = \lVert x\rVert^{2}$ for a sequence $x_n \to x$, which is non-negative, and vanishes exactly at $x = 0$; the bound is the Cauchy–Schwarz inequality applied in the limit.
 
 **Remark (why definiteness survives).** The important point is that the extension is *definite*, so the completed object is again an object of the layer and not merely a form-carrying space: the radical of $\widehat{h}$ is the closure in $\widehat{A}$ of the radical of $h$, and when $h$ is definite on the dense subspace the closure is zero. Definitude is thus the property that the completion does not degrade, which is why the standing hypothesis of the layer is a positive definite form and not a semi-definite one.
 
@@ -74,7 +74,7 @@ $$
 
 associative, submultiplicative, and with the same unit when $A$ has one.
 
-*Proof.* This is the theorem of *The Completion of a Sesqualgebra*, §*The Completion*: submultiplicativity makes the product jointly continuous, so it is uniformly continuous on the products of bounded sets; the extension exists by density and completeness of $\widehat{A}$, associativity and submultiplicativity are identities on a dense set, and the unit is a fixed point of the formula. $\square$
+*Proof.* This is the theorem of *The Completion of a Sesqualgebra*, §*The Completion*: submultiplicativity makes the product jointly continuous, so it is uniformly continuous on the products of bounded sets; the extension exists by density and completeness of $\widehat{A}$, associativity and submultiplicativity are identities on a dense set, and the unit is a fixed point of the formula.
 
 **Remark (the twisted action).** The twisted scalar action $\lambda \cdot x = \varsigma(\lambda)x$ extends by the same continuity, because the multiplication by a fixed scalar is a homeomorphism of the completion; the conjugate module of the completion is the completion of the conjugate module, $\widehat{A^{\varsigma}} = \widehat{A}^{\varsigma}$, and the derived operation extends to $x \star y = xy^{*}$ once the involution does.
 
@@ -86,7 +86,7 @@ $$
 (xy)^{*} = y^{*}x^{*} \qquad \text{for all } x, y \in \widehat{A} .
 $$
 
-*Proof.* The isometry is the theorem of *The Norm Defined by a Form*, §*The $\mathrm{C}^{*}$-Condition*, and an isometry of a normed space into a complete one extends uniquely by uniform continuity. The involution of order two and the anti-multiplicativity are identities of continuous maps agreeing on the dense set $\iota(A)$, hence everywhere. $\square$
+*Proof.* The isometry is the theorem of *The Norm Defined by a Form*, §*The $\mathrm{C}^{*}$-Condition*, and an isometry of a normed space into a complete one extends uniquely by uniform continuity. The involution of order two and the anti-multiplicativity are identities of continuous maps agreeing on the dense set $\iota(A)$, hence everywhere.
 
 **Remark (what is needed and what is not).** The $\mathrm{C}^{*}$-condition is used only through the isometry of the involution; if the involution is continuous with a bound $\lVert x^{*}\rVert \leq c\lVert x\rVert$ it extends as well, and the extension is continuous but need not be isometric. Without any continuity of the involution the extension fails to be a map of the completion, exactly as in the layer without a form, so the continuity of $*$ is part of the hypothesis of the completed object.
 
@@ -100,7 +100,7 @@ $$
 
 so that $(\widehat{A}, \widehat{h})$ is a Banach sesqualgebra with a form over $(R,\varsigma)$, with the derived operation $x \star y = xy^{*}$ and the same involution.
 
-*Proof.* Both sides are continuous functions of the triple $(x,y,z)$ on $\widehat{A}^{3}$, and they agree on the dense subset $\iota(A)^{3}$ by the compatibility of $h$ on $A$. Two continuous maps that agree on a dense set are equal. $\square$
+*Proof.* Both sides are continuous functions of the triple $(x,y,z)$ on $\widehat{A}^{3}$, and they agree on the dense subset $\iota(A)^{3}$ by the compatibility of $h$ on $A$. Two continuous maps that agree on a dense set are equal.
 
 ## The Completed Object and Its Universal Property
 
@@ -108,7 +108,7 @@ so that $(\widehat{A}, \widehat{h})$ is a Banach sesqualgebra with a form over $
 
 **Theorem (the completion is an object of the layer).** Let $A$ be a normed sesqualgebra with a form. Then $\widehat{A}$, with the extended product, the extended involution and the extended form, is a Banach sesqualgebra with a form; the canonical map $\iota$ is an isometric morphism, injective, with dense image; $\iota$ preserves the product, the involution and the form; and the norm of the completion is the norm defined by its form.
 
-*Proof.* The extensions are the three theorems above; each structure is preserved by construction, and the identity $\widehat{h}(x,x) = \lVert x\rVert^{2}$ of the extension theorem says that the norm of the completion is the norm of its form. Injectivity is the definiteness of $h$; density is the definition of a completion. $\square$
+*Proof.* The extensions are the three theorems above; each structure is preserved by construction, and the identity $\widehat{h}(x,x) = \lVert x\rVert^{2}$ of the extension theorem says that the norm of the completion is the norm of its form. Injectivity is the definiteness of $h$; density is the definition of a completion.
 
 ### The Universal Property
 
@@ -122,21 +122,21 @@ and it is **isometric** when moreover $\lVert f x\rVert = \lVert x\rVert$ for ev
 
 **Theorem (the universal property).** Let $A$ be a normed sesqualgebra with a form, let $B$ be a Banach one, and let $f : A \to B$ be an isometric morphism. Then there is exactly one continuous morphism $\widehat{f} : \widehat{A} \to B$ with $\widehat{f}\circ\iota = f$, and it is isometric.
 
-*Proof.* Uniqueness and existence of the continuous linear extension are density and completeness, as in *The Completion of a Sesqualgebra*, §*The Universal Property*; the preservation of the product, the involution and the form is the equality of continuous maps agreeing on the dense set $\iota(A)$. The isometry of $\widehat{f}$ follows from the isometry of $f$ and the identity $\lVert x\rVert^{2} = \widehat{h}(x,x) = h_{B}(\widehat{f}x, \widehat{f}x)$ in the limit. $\square$
+*Proof.* Uniqueness and existence of the continuous linear extension are density and completeness, as in *The Completion of a Sesqualgebra*, §*The Universal Property*; the preservation of the product, the involution and the form is the equality of continuous maps agreeing on the dense set $\iota(A)$. The isometry of $\widehat{f}$ follows from the isometry of $f$ and the identity $\lVert x\rVert^{2} = \widehat{h}(x,x) = h_{B}(\widehat{f}x, \widehat{f}x)$ in the limit.
 
 **Corollary (the completion is a functor and is idempotent).** The assignment $A \mapsto \widehat{A}$ is a functor on the normed sesqualgebras with a form, valued in the Banach ones and left adjoint to the inclusion; the canonical map $\iota : A \to \widehat{A}$ is the unit. It is idempotent, $\widehat{\widehat{A}} \cong \widehat{A}$ through $\iota$.
 
-*Proof.* The universal property is the statement of the adjunction; for the idempotence, $\widehat{A}$ is complete, so $\iota_{\widehat{A}} : \widehat{A} \to \widehat{\widehat{A}}$ is an isometric isomorphism by the uniqueness clause. $\square$
+*Proof.* The universal property is the statement of the adjunction; for the idempotence, $\widehat{A}$ is complete, so $\iota_{\widehat{A}} : \widehat{A} \to \widehat{\widehat{A}}$ is an isometric isomorphism by the uniqueness clause.
 
 ## The Semi-Definite Case and the Radical
 
 **Proposition (a semi-definite form is a seminorm).** Let $h$ be positive semi-definite and compatible, and put $\lVert x\rVert = h(x,x)^{1/2}$. Then $\lVert\cdot\rVert$ is a seminorm, the Cauchy–Schwarz inequality $\lvert h(x,y)\rvert \leq \lVert x\rVert\lVert y\rVert$ holds, and the null set $N = \{x : \lVert x\rVert = 0\}$ is the radical of $h$, a closed left ideal equal to its own image under the involution when $h$ is also right-definite.
 
-*Proof.* Positive semi-definiteness gives the seminorm axioms by the same diagonal argument as the definite case; the Cauchy–Schwarz inequality is unchanged, with the dependency case included; its equality analysis gives $N = \{x : h(x,y) = 0 \ \forall y\}$, which is the radical, and the radical is a left ideal by *Topological Sesqualgebras with a Form*, §*The Radical Is an Ideal*. $\square$
+*Proof.* Positive semi-definiteness gives the seminorm axioms by the same diagonal argument as the definite case; the Cauchy–Schwarz inequality is unchanged, with the dependency case included; its equality analysis gives $N = \{x : h(x,y) = 0 \ \forall y\}$, which is the radical, and the radical is a left ideal by *Topological Sesqualgebras with a Form*, §*The Radical Is an Ideal*.
 
 **Theorem (the completion kills the radical).** Let $h$ be positive semi-definite and compatible, let $\overline{N}$ be the closure of its radical in the completion of the seminormed space, and let $\widehat{A}$ be the completion. Then the extended form $\widehat{h}$ is positive semi-definite with radical $\overline{N}$, and the completion of the quotient $A/N$ is canonically isometric to the quotient $\widehat{A}/\overline{N}$, on which the form is definite.
 
-*Proof.* The extension exists by boundedness; its diagonal is $\lVert x\rVert^{2}$, so its radical is the set of classes of seminorm zero, which is $\overline{N}$. The quotient of a normed space by a closed subspace is a normed space whose completion is the quotient of the completions, and on it the seminorm is a norm; the algebraic operations descend because $N$ is an ideal. $\square$
+*Proof.* The extension exists by boundedness; its diagonal is $\lVert x\rVert^{2}$, so its radical is the set of classes of seminorm zero, which is $\overline{N}$. The quotient of a normed space by a closed subspace is a normed space whose completion is the quotient of the completions, and on it the seminorm is a norm; the algebraic operations descend because $N$ is an ideal.
 
 **Remark (why the layer asks for definiteness).** The theorem is the precise sense in which the standing hypothesis of the layer is definiteness and not mere semi-definiteness: a semi-definite object completes to the definite object $A/\overline{N}$, so the form of the layer is recovered by the completion exactly when the object had no radical, and the examples of *Topological Sesqualgebras with a Form* in which the radical is a proper left ideal are precisely those that the completion quotients away.
 
@@ -166,7 +166,7 @@ The $\mathrm{C}^{*}$-condition fails as soon as $\dim H \geq 2$: at an isometry 
 
 **Theorem (the collapse of the completion).** Let $\varsigma = \mathrm{id}$. Then the form is symmetric and $R$-bilinear, the completed object is a normed and complete $R$-algebra with a symmetric definite form invariant in the sense $h(xy,z) = h(y,xz)$, and when $* = \mathrm{id}$ the object is the completion of a normed algebra with a self-adjoint left multiplication and a symmetric definite form — the object of *The Completion of a Hilbert Algebra* in the tracial case, where the involution is isometric, and the bilinear counterpart of the completion otherwise.
 
-*Proof.* At $\varsigma = \mathrm{id}$ the semilinearity of the involution and of the second slot are linearity, the compatibility of *Topological Sesqualgebras with a Form*, §*The Collapse at the Trivial Involution* gives the invariance $h(xy,z)=h(y,xz)$, and the completion statements are the ones above read at the trivial involution. The identification with the Hilbert-algebra completion is the collapse theorem of *The Norm Defined by a Form*, §*The Collapse at the Trivial Involution*. $\square$
+*Proof.* At $\varsigma = \mathrm{id}$ the semilinearity of the involution and of the second slot are linearity, the compatibility of *Topological Sesqualgebras with a Form*, §*The Collapse at the Trivial Involution* gives the invariance $h(xy,z)=h(y,xz)$, and the completion statements are the ones above read at the trivial involution. The identification with the Hilbert-algebra completion is the collapse theorem of *The Norm Defined by a Form*, §*The Collapse at the Trivial Involution*.
 
 **Remark.** The sesquilinear content of the article is exactly the extension of the twisted second slot and of the $\varsigma$-semilinear involution: at $\varsigma = \mathrm{id}$ the extension is the classical completion of a normed space with two structure maps, and the only trace of the twist is the modulus $\lvert\lambda\rvert = (\lambda\varsigma(\lambda))^{1/2}$ of the norm, which at the collapse is the absolute value of the ordered field.
 

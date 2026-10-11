@@ -439,7 +439,7 @@ $$
 N(\tilde{\Xi}) = \tilde{\Xi}\circ\tilde{\Xi}^{\natural} = W^2 - \frac{\|\mathbf{S}\|^2}{c^2} = \frac{\epsilon^2}{4}\,I_1^2 + \frac{\epsilon}{\mu}\,I_2^2 ,
 $$
 
-checked on 100 random fields to machine precision. The last equality is the point of the paragraph: the Hermitian form is not a scalar under Lorentz transformations, but its contraction **is**, and the contraction returns the two invariants. The energy density and the Poynting vector are therefore tied to the same pair $(I_1, I_2)$ that classifies the field. The programme states the same relation as $\langle\langle\tilde{\Xi}\rangle\rangle^2 = \tilde{\Xi}\circ\tilde{\Xi}^-$; on a Hermitian element the corpus's norm $N$ and the source's pseudonorm agree, so the two forms are one statement, and in vacuum ($\epsilon = \mu = 1$) it reads $N(\tilde{\Xi}) = \tfrac14 I_1^2 + I_2^2$.
+The last equality is the point of the paragraph: the Hermitian form is not a scalar under Lorentz transformations, but its contraction **is**, and the contraction returns the two invariants. The energy density and the Poynting vector are therefore tied to the same pair $(I_1, I_2)$ that classifies the field. The programme states the same relation as $\langle\langle\tilde{\Xi}\rangle\rangle^2 = \tilde{\Xi}\circ\tilde{\Xi}^-$; on a Hermitian element the corpus's norm $N$ and the source's pseudonorm agree, so the two forms are one statement, and in vacuum ($\epsilon = \mu = 1$) it reads $N(\tilde{\Xi}) = \tfrac14 I_1^2 + I_2^2$.
 
 ## Summary
 

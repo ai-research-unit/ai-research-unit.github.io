@@ -64,7 +64,6 @@ $$
 \tilde{\mathbf{L}} = \hat{I}\,\tilde{\boldsymbol{\omega}} .
 $$
 
-<!-- CONVENTION — material axial vectors in H_B: the magnetization, the intrinsic angular momentum, the mechanical angular momentum, and the angular velocity are all written as pure real quaternions in H_B, the same slot as the magnetic induction of *Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form*. The intrinsic magnetic moment's observable representative is mu_k i e_k in M_+; the two differ by the central i that exchanges the sectors, and a reviewer must not drop the i to "match" the two descriptions. -->
 
 ## The Rotor Algebra of a Spinning Body
 

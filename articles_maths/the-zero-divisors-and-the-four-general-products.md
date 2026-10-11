@@ -8,7 +8,7 @@ This article establishes that fact and separates three things that are easily co
 
 The general form of the definitions used here — the zero divisor, the annihilator, the idempotent, the nilpotent and the rest, stated once for a general product and read on the products of the space — is *Definitions for the Study of the 12 Algebraic Structures*; this article is the four-product computation and the coincidence, and it keeps the definition read on the four.
 
-The central square, its four multiplicative laws and the annihilators of a fixed element are *The Annihilating Elements of the Four General Products*. The two families of zero divisors, the pure and the non-pure, and the cone they form are *Zero Divisors of the General Plain Algebra*. The property table of the four products, the four idempotent sets and the four unit structures are *Comparison Between the Four General Products*. The isomorphism used here is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the norm and the invertibility criterion are *Biquaternion Norm and Invertibility*, and the position of the zero divisors in the remarkable subspaces is *Introduction to the Remarkable Subspaces*.
+The central square, its four multiplicative laws and the annihilators of a fixed element are *The Annihilating Elements of the Four General Products*. The two families of zero divisors, the pure and the non-pure, and the cone they form are *Zero Divisors of the General Plain Algebra*. The property table of the four products, the four idempotent sets and the four unit structures are *Comparison Between the Four General Products*. The isomorphism used here is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the norm and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*, and the position of the zero divisors in the remarkable subspaces is *Introduction to the Remarkable Subspaces*.
 
 **Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu = Q_0 e_0 + \mathbf Q$ with $Q_0\in\mathbb{C}$ and $\mathbf Q = \sum_{k=1}^{3}Q_k e_k$. The natural conjugation is $\tilde Q^{\natural} = Q_0 - \mathbf Q$, the star is $\tilde Q^{*} = \overline{Q_0} - \overline{\mathbf Q}$, so that ${}^{*} = \bar{\cdot}\circ{}^{\natural}$. The unit of the algebra is written both $1$ and $e_0$; it is fixed by ${}^{\natural}$ and by ${}^{*}$. The **central square** is
 
@@ -52,7 +52,7 @@ $$
 
 **Proposition.** For each of the four products $f$ and each $\tilde P$, the element $\tilde P$ is a left zero divisor of $f$ exactly when $\ker L_f(\tilde P)\neq0$, and a right zero divisor of $f$ exactly when $\ker R_f(\tilde P)\neq0$.
 
-**Proof.** The two statements are the definitions read through the two maps, with the nonzero solutions of the two equations as the nonzero vectors of the two kernels. Both kernels are complex subspaces: the maps are real-linear, and a map whose variable slot carries the star is conjugate-linear there, a conjugation that preserves vanishing. $\square$
+**Proof.** The two statements are the definitions read through the two maps, with the nonzero solutions of the two equations as the nonzero vectors of the two kernels. Both kernels are complex subspaces: the maps are real-linear, and a map whose variable slot carries the star is conjugate-linear there, a conjugation that preserves vanishing.
 
 The maps $L_f(\tilde P)$ and $R_f(\tilde P)$ are real-linear maps of the eight-dimensional real space $\mathbb{B}$ to itself, and a real-linear map of a finite-dimensional real space is injective exactly when it is surjective. The two kernels are therefore zero together with the failure of bijectivity, and the two-sided condition of a zero divisor is the failure of either one of the two maps to be bijective.
 
@@ -72,7 +72,7 @@ $$
 \Phi(\tilde P)\Phi(\tilde X) , \quad \Phi(\tilde P^{\natural})\Phi(\tilde X) , \quad \Phi(\tilde P)\Phi(\tilde X)^{*} , \quad \Phi(\tilde P^{\natural})\Phi(\tilde X)^{*} ,
 $$
 
-and the two right maps carry the same two factors in the other order. The maps $\tilde X\mapsto\Phi(\tilde X)$, $\tilde X\mapsto\Phi(\tilde X)^{*}$ and the two conjugations ${}^{\natural}$ and ${}^{*}$ of $\mathbb{B}$ are bijections, so the kernel of each of the eight maps is nonzero exactly when the matrix $\Phi(\tilde P)$ or the matrix $\Phi(\tilde P^{\natural})$ is singular. The two determinants are equal, $\det\Phi(\tilde P^{\natural}) = c(\tilde P^{\natural}) = c(\tilde P) = \det\Phi(\tilde P)$, and $\Phi(\tilde P)$ is singular exactly when $c(\tilde P) = 0$; this is the first equivalence and the second. A singular two-by-two matrix has rank one, its left and its right multiplication each carry a kernel of dimension two; a nonsingular matrix carries the zero kernel. $\square$
+and the two right maps carry the same two factors in the other order. The maps $\tilde X\mapsto\Phi(\tilde X)$, $\tilde X\mapsto\Phi(\tilde X)^{*}$ and the two conjugations ${}^{\natural}$ and ${}^{*}$ of $\mathbb{B}$ are bijections, so the kernel of each of the eight maps is nonzero exactly when the matrix $\Phi(\tilde P)$ or the matrix $\Phi(\tilde P^{\natural})$ is singular. The two determinants are equal, $\det\Phi(\tilde P^{\natural}) = c(\tilde P^{\natural}) = c(\tilde P) = \det\Phi(\tilde P)$, and $\Phi(\tilde P)$ is singular exactly when $c(\tilde P) = 0$; this is the first equivalence and the second. A singular two-by-two matrix has rank one, its left and its right multiplication each carry a kernel of dimension two; a nonsingular matrix carries the zero kernel.
 
 **Corollary (one set to a product).** For each of the four products the left zero divisors, the right zero divisors and the two-sided zero divisors are the same set, namely the nonzero elements of $\{c = 0\}$.
 
@@ -82,7 +82,7 @@ So no product distinguishes the left from the right. What a product may still do
 
 **Theorem (the four sets coincide).** For the biquaternion algebra the four zero-divisor sets coincide. A nonzero element $\tilde P$ is a left, a right or a two-sided zero divisor of one of the four products exactly when $c(\tilde P) = 0$, and then it is a zero divisor of all four, on both sides.
 
-**Proof.** Apply the criterion of the preceding section to the four products in turn. In each case the condition is $c(\tilde P) = 0$, read from the singularity of $\Phi(\tilde P)$ or of $\Phi(\tilde P^{\natural})$, whose determinants are the same. $\square$
+**Proof.** Apply the criterion of the preceding section to the four products in turn. In each case the condition is $c(\tilde P) = 0$, read from the singularity of $\Phi(\tilde P)$ or of $\Phi(\tilde P^{\natural})$, whose determinants are the same.
 
 The reason is structural and short, and it is a reason about the biquaternion algebra alone. Each of the four products is the plain product with a conjugation in one or both slots; each conjugation of $\mathbb{B}$ is a bijection that either fixes or conjugates the central square, $c(\tilde P^{\natural}) = c(\tilde P)$ and $c(\tilde P^{*}) = \overline{c(\tilde P)}$ (*The Annihilating Elements of the Four General Products*); and the central square is the single second-order invariant that decides the invertibility of the element. Composing a one-sided multiplication with a bijection leaves the kernel zero exactly when it was zero, so the four kernels vanish on the same elements and the four vanishing sets are one. The multiplicativity of the central square, $c(\tilde P\tilde Q) = c(\tilde P)c(\tilde Q)$ for the two bilinear products and $c(\tilde P\tilde Q) = c(\tilde P)\overline{c(\tilde Q)}$ for the two sesquilinear ones, is the same fact in the language of the products.
 
@@ -151,7 +151,7 @@ For the plain product the classical equivalence is available and true.
 
 **Theorem.** For the general plain bilinear product, and for a nonzero $\tilde P$, the following are equivalent: $\tilde P$ is a zero divisor; $c(\tilde P) = 0$; $\tilde P$ is not invertible.
 
-**Proof.** The first equivalence is the criterion of the fixed product. For the second, the invertibility criterion of *Biquaternion Norm and Invertibility* states that $\tilde P$ is invertible exactly when $c(\tilde P)\neq0$. $\square$
+**Proof.** The first equivalence is the criterion of the fixed product. For the second, the invertibility criterion of *Norm and Invertibility in the General Plain Algebra* states that $\tilde P$ is invertible exactly when $c(\tilde P)\neq0$.
 
 In the model the statement is the standard one for $M_2(\mathbb{C})$: a matrix is a zero divisor exactly when it is nonzero and singular, and the two-sided invertible elements are the nonsingular matrices.
 
@@ -167,7 +167,7 @@ $$
 
 has a solution; equivalently, both equations have a solution exactly when $c(\tilde P)\neq0$.
 
-**Proof.** If the equation $f(\tilde P,\tilde X) = e_0$ holds, then in the model the corresponding matrix equation is $\Phi(\tilde P)M = \mathrm{I}_2$ or $\Phi(\tilde P^{\natural})M = \mathrm{I}_2$ for an invertible $M$, so $\Phi(\tilde P)$ is invertible and $c(\tilde P)\neq0$. Conversely, if $c(\tilde P)\neq0$ then $\tilde P$ is invertible, and the four solutions are the ones of the table below. The two directions give the statement for the left equation, and the right equation is the same computation with the two factors in the other order. $\square$
+**Proof.** If the equation $f(\tilde P,\tilde X) = e_0$ holds, then in the model the corresponding matrix equation is $\Phi(\tilde P)M = \mathrm{I}_2$ or $\Phi(\tilde P^{\natural})M = \mathrm{I}_2$ for an invertible $M$, so $\Phi(\tilde P)$ is invertible and $c(\tilde P)\neq0$. Conversely, if $c(\tilde P)\neq0$ then $\tilde P$ is invertible, and the four solutions are the ones of the table below. The two directions give the statement for the left equation, and the right equation is the same computation with the two factors in the other order.
 
 The solutions are written with the inverse $\tilde P^{-1} = \tilde P^{\natural}/c(\tilde P)$ of the algebra, which exists for $c(\tilde P)\neq0$. The two conjugations commute, ${}^{\natural}\circ{}^{*} = {}^{*}\circ{}^{\natural} = \overline{\cdot}$, so the order of the two superscripts in the last row is immaterial.
 
@@ -201,7 +201,7 @@ $$
 \det\Phi(\tilde P) = c(\tilde P) ,
 $$
 
-and the zero divisors are the nonzero singular matrices, that is the matrices of rank one (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). Each of the eight one-sided multiplication maps is $\Phi(\tilde P)$ or its adjoint, multiplied on one side or the other by an invertible matrix, so each of the four products reads the same singularity. The rank-one matrix of a zero divisor is the outer product $\Phi(\tilde P) = uv^{T}$ determined up to $(\lambda u,\lambda^{-1}v)$, its two one-sided annihilators are the planes of the vectors orthogonal to $v$ and to $u$, and the collision of the two planes for the natural product and for the general plain sesquilinear product is the reading of the coincidences of the table of annihilators. The algebra's zero divisors are the rank-one matrices, the idempotents of the plain product are the rank-one projectors together with $0$ and $\mathrm{I}_2$, and the determinant is the invariant that decides all four products at once.
+and the zero divisors are the nonzero singular matrices, that is the matrices of rank one (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). Each of the eight one-sided multiplication maps is $\Phi(\tilde P)$ or its adjoint, multiplied on one side or the other by an invertible matrix, so each of the four products reads the same singularity. The rank-one matrix of a zero divisor is the outer product $\Phi(\tilde P) = uv^{T}$ determined up to $(\lambda u,\lambda^{-1}v)$, its two one-sided annihilators are the planes of the vectors orthogonal to $v$ and to $u$, and the collision of the two planes for the natural product and for the general plain sesquilinear product is the reading of the coincidences of the table of annihilators. The algebra's zero divisors are the rank-one matrices, the idempotents of the plain product are the rank-one Hermitian idempotents together with $0$ and $\mathrm{I}_2$, and the determinant is the invariant that decides all four products at once.
 
 ## The Zero Divisors and the Remarkable Subspaces
 
@@ -220,7 +220,7 @@ On the centre $c(\tilde P) = P_0^{2}$ vanishes only at the origin; on the two qu
 
 ## Boundary: The Other Cone
 
-The set $\{c = 0\}$ is a cone, and the chapter carries a second cone on the same space, the isotropic cone of the general plain bilinear form $\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q)$. The two are different and must not be conflated: the diagonal of the central square is $P_0^{2} + (\mathbf P,\mathbf P)$ and the diagonal of the form is $P_0^{2} - (\mathbf P,\mathbf P)$, the two exchanges of the sign of the vector part. The element theory is built on the first and the geometry of the form on the second; the form and its isotropic cone are *The Four Pairings of the Biquaternion Algebra* and *Biquaternion Norm and Invertibility*, and the boundary is recorded here only to keep the two apart.
+The set $\{c = 0\}$ is a cone, and the chapter carries a second cone on the same space, the isotropic cone of the general plain bilinear form $\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q)$. The two are different and must not be conflated: the diagonal of the central square is $P_0^{2} + (\mathbf P,\mathbf P)$ and the diagonal of the form is $P_0^{2} - (\mathbf P,\mathbf P)$, the two exchanges of the sign of the vector part. The element theory is built on the first and the geometry of the form on the second; the form and its isotropic cone are *The Four Pairings of the Biquaternion Algebra* and *Norm and Invertibility in the General Plain Algebra*, and the boundary is recorded here only to keep the two apart.
 
 ## Summary
 
@@ -250,7 +250,7 @@ The zero divisors split into the pure family, the nilpotents of real dimension f
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the two families, the cone and the classification.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table, the four idempotent sets, the four square-root problems and the four unit entries.
 - *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four definitions and their scalar–vector forms.
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm form and the invertibility criterion.
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm form and the invertibility criterion.
 - *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the isomorphism, the determinant and the rank-one elements.
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the general plain bilinear form and its isotropic cone.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the subspaces and the zero divisors they contain.

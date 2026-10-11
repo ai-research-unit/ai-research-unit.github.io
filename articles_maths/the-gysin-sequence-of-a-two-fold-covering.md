@@ -28,7 +28,7 @@ is a real line bundle over $B$, the **line bundle of the double cover**; its uni
 
 **Proposition.** The assignment from two-fold coverings of $B$ to real line bundles over $B$ is a bijection on isomorphism classes, and the composite of the double cover with the projection to the line bundle is the sphere bundle of $L$; the cover is trivial exactly when $L$ is trivial.
 
-*Proof.* A line bundle is the quotient of its sphere bundle by the antipodal action of the deck transformation, and conversely the associated line bundle of a double cover is the bundle displayed; the two constructions are inverse on isomorphism classes and preserve triviality. $\square$
+*Proof.* A line bundle is the quotient of its sphere bundle by the antipodal action of the deck transformation, and conversely the associated line bundle of a double cover is the bundle displayed; the two constructions are inverse on isomorphism classes and preserve triviality.
 
 ### The Euler Class
 
@@ -42,7 +42,7 @@ that is the class that classifies $L$, equivalently the class with $p^*e = 0$ th
 
 **Theorem.** The Euler class satisfies $p^*e = 0$, and it is the obstruction to a section of the covering: the covering has a continuous section if and only if $e = 0$, and then and only then is it the trivial covering $B\sqcup B\to B$. The class $e$ is the image of the classifying map $B\to\mathbb{RP}^{\infty}$ of the double cover under the isomorphism $H^1(B;\mathbb{F}_2)\cong[B,\mathbb{RP}^{\infty}]$.
 
-*Proof.* The pullback of the class of the line bundle to the total space of the sphere bundle vanishes because the tautological line over a point of the sphere bundle is trivialised by the point; the section statement is the splitting principle for the $\mathbb{Z}/2$-bundle, a section splitting the cover; and the classification of line bundles and of double covers by $H^1$ is the standard one. $\square$
+*Proof.* The pullback of the class of the line bundle to the total space of the sphere bundle vanishes because the tautological line over a point of the sphere bundle is trivialised by the point; the section statement is the splitting principle for the $\mathbb{Z}/2$-bundle, a section splitting the cover; and the classification of line bundles and of double covers by $H^1$ is the standard one.
 
 ### The Classification
 
@@ -54,7 +54,7 @@ $$
 
 under which the trivial covering corresponds to $0$ and the connected coverings correspond to the nonzero classes; the deck transformation of the cover with class $e$ is recovered as the action of $\mathbb{Z}/2$ on the fibre of $L$.
 
-*Proof.* The bijection between line bundles and $H^1$ with $\mathbb{F}_2$ coefficients follows from the classification of rank-one bundles by their transition functions and the identification $\mathrm{Vect}^1(B;\mathbb{F}_2)\cong H^1(B;\mathbb{F}_2)$ of *Vector Bundles and Characteristic Classes*; composing with the bijection of the first section gives the statement. $\square$
+*Proof.* The bijection between line bundles and $H^1$ with $\mathbb{F}_2$ coefficients follows from the classification of rank-one bundles by their transition functions and the identification $\mathrm{Vect}^1(B;\mathbb{F}_2)\cong H^1(B;\mathbb{F}_2)$ of *Vector Bundles and Characteristic Classes*; composing with the bijection of the first section gives the statement.
 
 ## The Gysin Sequence
 
@@ -68,7 +68,7 @@ $$
 
 the **Gysin sequence** of the covering; in it $\smile e$ is the cup product with the Euler class, $p^*$ the pullback, and $\tau$ the transfer. The composite of two successive maps is zero, $\tau\circ p^* = 0$ and $e\smile\tau = 0$, and the sequence is exact at every term.
 
-*Proof.* The sequence is the Gysin sequence of the sphere bundle $S^0\to X\to B$ with fibre $S^0$; for such a bundle the Serre spectral sequence of the fibration has only two relevant columns and the only differential is the transgression, whose identification with the cup product by the Euler class is the standard computation, and the resulting long exact sequence is the Gysin sequence of *The Leray–Serre Spectral Sequence*. The vanishing of the two composites and the exactness are the two exactness statements of the sequence. $\square$
+*Proof.* The sequence is the Gysin sequence of the sphere bundle $S^0\to X\to B$ with fibre $S^0$; for such a bundle the Serre spectral sequence of the fibration has only two relevant columns and the only differential is the transgression, whose identification with the cup product by the Euler class is the standard computation, and the resulting long exact sequence is the Gysin sequence of *The Leray–Serre Spectral Sequence*. The vanishing of the two composites and the exactness are the two exactness statements of the sequence.
 
 ### The Identities and the Transfer
 
@@ -80,7 +80,7 @@ $$
 
 for $\alpha \in H^*(X)$, $\beta \in H^*(B)$; the middle identity is the projection formula, and the last is the vanishing because the degree of the covering is $2$, which is zero in $\mathbb{F}_2$. These identities, together with the exactness, determine the transfer as the connecting homomorphism of the sequence, and they are the cohomological form of the identities of *The Transfer and the Involution*.
 
-*Proof.* The projection formula is the naturality of the transfer under the cup product, and the vanishing of $\tau p^*$ is the composition $\tau p^* = 2$ computed in $\mathbb{F}_2$; the identification with the connecting homomorphism follows because a map with exactly these two properties and the exactness is the connecting map of the long exact sequence, by the standard uniqueness of the connecting homomorphism. $\square$
+*Proof.* The projection formula is the naturality of the transfer under the cup product, and the vanishing of $\tau p^*$ is the composition $\tau p^* = 2$ computed in $\mathbb{F}_2$; the identification with the connecting homomorphism follows because a map with exactly these two properties and the exactness is the connecting map of the long exact sequence, by the standard uniqueness of the connecting homomorphism.
 
 ### The Homology Form
 
@@ -92,7 +92,7 @@ $$
 
 in which $\cap\,e$ is the cap product with the Euler class, $\tau$ is the homology transfer and $p_*$ is the pushforward; the transfer and the pushforward satisfy $\tau p_* = 1+\sigma_*$ and $p_*\tau = 0$, and the sequence is exact. In the homology sequence the transfer runs in the direction of the covering, from the base to the total space, dual to the cohomological transfer, and the cap product is the connecting map.
 
-*Proof.* Dualise the cohomology sequence term by term with $\mathbb{F}_2$ coefficients, identifying $H^n = (H_n)^*$ by the universal coefficient theorem of *Cohomology and the Universal Coefficient Theorem*; the dual of the cup product with $e$ is the cap product with $e$, the dual of the pullback is the pushforward and the dual of the transfer is the homology transfer, and exactness is preserved by duality over a field. The two composition identities are the duals of the cohomological ones and the identities of *The Transfer and the Involution*. $\square$
+*Proof.* Dualise the cohomology sequence term by term with $\mathbb{F}_2$ coefficients, identifying $H^n = (H_n)^*$ by the universal coefficient theorem of *Cohomology and the Universal Coefficient Theorem*; the dual of the cup product with $e$ is the cap product with $e$, the dual of the pullback is the pushforward and the dual of the transfer is the homology transfer, and exactness is preserved by duality over a field. The two composition identities are the duals of the cohomological ones and the identities of *The Transfer and the Involution*.
 
 ## The Splitting and the Involutive Structure
 
@@ -100,13 +100,13 @@ in which $\cap\,e$ is the cap product with the Euler class, $\tau$ is the homolo
 
 **Theorem.** The involution $\sigma$ acts on $H^*(X)$, and the Gysin sequence is a sequence of modules over the group ring $\mathbb{F}_2[\mathbb{Z}/2] = \mathbb{F}_2[\sigma]/(\sigma^2-1)$; the transfer lands in the invariants, $\sigma\tau = \tau$, and the pushforward lands in the coinvariants, $p_*\sigma = p_*$. The sequence splits as a sequence of vector spaces, but not naturally: the obstruction to a natural splitting is the Euler class, and the sequence of $\mathbb{F}_2[\sigma]$-modules is the algebraic content of the double cover.
 
-*Proof.* The action of $\sigma$ on the cohomology of the cover is a module structure, the transfer and the pushforward are equivariant in the stated sense by the identities of *The Transfer and the Involution*, and the exactness gives the module sequence; the non-naturality of the splitting is measured by the extension class, which is the Euler class. $\square$
+*Proof.* The action of $\sigma$ on the cohomology of the cover is a module structure, the transfer and the pushforward are equivariant in the stated sense by the identities of *The Transfer and the Involution*, and the exactness gives the module sequence; the non-naturality of the splitting is measured by the extension class, which is the Euler class.
 
 ### The Split Case
 
 **Theorem.** If the Euler class vanishes the covering is trivial, $X\cong B\sqcup B$, the transfer is the projection onto the first copy, and the Gysin sequence splits: $H^*(X)\cong H^*(B)\oplus H^*(B)$ with the two copies exchanged by the deck transformation. Conversely, if the sequence splits naturally with $H^*(X)\cong H^*(B)\oplus H^*(B)$ as modules, then $e=0$.
 
-*Proof.* For the trivial covering the transfer and the pullback are the two projections and the inclusion of the two copies, and the sequence is the short exact sequence $0\to H^*(B)\to H^*(B)\oplus H^*(B)\to H^*(B)\to 0$; conversely the natural splitting exhibits $p^*$ as a split injection, so the connecting map $\smile e$ is zero on the image of the transfer and the exactness forces $e=0$. $\square$
+*Proof.* For the trivial covering the transfer and the pullback are the two projections and the inclusion of the two copies, and the sequence is the short exact sequence $0\to H^*(B)\to H^*(B)\oplus H^*(B)\to H^*(B)\to 0$; conversely the natural splitting exhibits $p^*$ as a split injection, so the connecting map $\smile e$ is zero on the image of the transfer and the exactness forces $e=0$.
 
 ## Integer Coefficients and the Orientation
 
@@ -122,7 +122,7 @@ $$
 
 so that the coefficients change along the sequence according to the monodromy; the mod 2 sequence of the article is the reduction of this one, where the local system becomes constant because $\mathbb{F}_2$ has no sign, and the untwisted integer sequence holds only for the trivial cover. The discrepancy between the integer and the mod 2 forms is exactly the orientation of the covering.
 
-*Proof.* The Serre spectral sequence of the $S^0$-bundle has local coefficients $H^*(S^0)$ twisted by the monodromy, which is the stated local system; reducing modulo two makes the monodromy trivial and gives the constant sequence. $\square$
+*Proof.* The Serre spectral sequence of the $S^0$-bundle has local coefficients $H^*(S^0)$ twisted by the monodromy, which is the stated local system; reducing modulo two makes the monodromy trivial and gives the constant sequence.
 
 ## The Euler Class as an Obstruction
 
@@ -130,7 +130,7 @@ so that the coefficients change along the sequence according to the monodromy; t
 
 **Theorem.** The Euler class is the primary obstruction to a section of the covering: $e \in H^1(B;\mathbb{F}_2) = H^1(B;\pi_0(S^0))$ is the obstruction class, and the covering has a continuous section if and only if $e=0$, if and only if the covering is trivial. This is the case of the obstruction theory of *Equivariant Obstruction Theory* with the fibre $S^0$ and the trivial coefficient system over the base, the group being trivial in the base direction.
 
-*Proof.* The section problem for the $S^0$-bundle is the extension problem over the 1-skeleton with coefficients $\pi_0(S^0)=\mathbb{Z}/2$, and the primary obstruction is the Euler class by the identification of the obstruction cocycle with the classifying class of the bundle; the vanishing of the primary obstruction is the existence of a section for a bundle whose fibre is discrete. $\square$
+*Proof.* The section problem for the $S^0$-bundle is the extension problem over the 1-skeleton with coefficients $\pi_0(S^0)=\mathbb{Z}/2$, and the primary obstruction is the Euler class by the identification of the obstruction cocycle with the classifying class of the bundle; the vanishing of the primary obstruction is the existence of a section for a bundle whose fibre is discrete.
 
 ### The Kernel and the Connectivity
 
@@ -142,7 +142,7 @@ $$
 
 so the covering is connected if and only if $e \neq 0$; for a connected base the total space is connected exactly when the covering is non-trivial, and the trivial covering has two components exchanged by the deck transformation.
 
-*Proof.* The exactness of the Gysin sequence at $H^1(B)$ gives the kernel as the image of $\smile e : H^0(B)\to H^1(B)$, which is the span of $e$ because $H^0(B;\mathbb{F}_2)=\mathbb{F}_2$; a two-fold cover is connected exactly when it is non-trivial. $\square$
+*Proof.* The exactness of the Gysin sequence at $H^1(B)$ gives the kernel as the image of $\smile e : H^0(B)\to H^1(B)$, which is the span of $e$ because $H^0(B;\mathbb{F}_2)=\mathbb{F}_2$; a two-fold cover is connected exactly when it is non-trivial.
 
 ## Examples
 

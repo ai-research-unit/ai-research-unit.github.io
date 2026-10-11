@@ -32,7 +32,7 @@ $$
 
 Consequently $L_a$ is $R^{\varsigma}$-linear and lies in $\operatorname{End}_{R^{\varsigma}}(A)$, while $R_a$ lies in $\operatorname{End}_{R}(A)$.
 
-**Proof.** The two displayed identities are the two scalar rules of the sesqualgebra read at $x$, and they are the computation of *Sesqualgebras*, §*The Left and the Right Multiplication*. For the last statement, a map $f$ with $f(\lambda x) = \varsigma(\lambda)f(x)$ satisfies $f(\mu x) = \varsigma(\mu)f(x) = \mu f(x)$ for $\mu \in R^{\varsigma}$, so it is $R^{\varsigma}$-linear; the same reading gives the $R$-linearity of $R_a$. $\square$
+**Proof.** The two displayed identities are the two scalar rules of the sesqualgebra read at $x$, and they are the computation of *Sesqualgebras*, §*The Left and the Right Multiplication*. For the last statement, a map $f$ with $f(\lambda x) = \varsigma(\lambda)f(x)$ satisfies $f(\mu x) = \varsigma(\mu)f(x) = \mu f(x)$ for $\mu \in R^{\varsigma}$, so it is $R^{\varsigma}$-linear; the same reading gives the $R$-linearity of $R_a$.
 
 **Remark.** The two operators therefore have opposite parities, and this is the whole difference from the bilinear case: over a ring with $\varsigma = \mathrm{id}$ both are $R$-linear and the two families are two subfamilies of one endomorphism ring. When $\varsigma \neq \mathrm{id}$ no single ring of $R$-linear endomorphisms contains both: the common home of the two families is $\operatorname{End}_{R^{\varsigma}}(A)$, which contains $\operatorname{End}_{R}(A)$, strictly in the standard examples, where the conjugation is $R^{\varsigma}$-linear but not $R$-linear. The two families are the operator-level reason the category carries two classes of operators, and the bilinear case is the one in which the two classes meet.
 
@@ -42,7 +42,7 @@ $$
 L_{\lambda a} = \lambda L_a , \qquad R_{\lambda a} = \varsigma(\lambda)R_a .
 $$
 
-**Proof.** $L_{\lambda a}(x) = (\lambda a) \star x = \lambda(a \star x) = \lambda L_a(x)$ by the first scalar rule, and $R_{\lambda a}(x) = x \star (\lambda a) = \varsigma(\lambda)(x \star a) = \varsigma(\lambda)R_a(x)$ by the second. $\square$
+**Proof.** $L_{\lambda a}(x) = (\lambda a) \star x = \lambda(a \star x) = \lambda L_a(x)$ by the first scalar rule, and $R_{\lambda a}(x) = x \star (\lambda a) = \varsigma(\lambda)(x \star a) = \varsigma(\lambda)R_a(x)$ by the second.
 
 **Remark.** The parities are exchanged between the operator and its parameter: the left family is linear in its parameter and its values are conjugate-linear, the right family is conjugate-linear in its parameter and its values are linear. The product of the two parities is the same on the two sides, which is the sense in which the two families carry the same information through opposite routes.
 
@@ -56,11 +56,11 @@ $$
 L_aL_b = L_{a \star b} , \qquad R_aR_b = R_{b \star a} , \qquad L_aR_b = R_bL_a .
 $$
 
-**Proof.** The three identities are the associative law read in the three possible orders, and they are the ones of *Sesqualgebras*, §*The Left and the Right Multiplication*: for $x \in A$ one has $L_aL_b(x) = a \star (b \star x) = (a \star b) \star x = L_{a \star b}(x)$, and the other two are the same computation. $\square$
+**Proof.** The three identities are the associative law read in the three possible orders, and they are the ones of *Sesqualgebras*, §*The Left and the Right Multiplication*: for $x \in A$ one has $L_aL_b(x) = a \star (b \star x) = (a \star b) \star x = L_{a \star b}(x)$, and the other two are the same computation.
 
 **Corollary.** When the product is associative, $a \mapsto L_a$ is an algebra homomorphism $A \to \operatorname{End}_{R^{\varsigma}}(A)$ with $\varsigma$-semilinear values, $a \mapsto R_a$ is an algebra anti-homomorphism $A \to \operatorname{End}_{R}(A)$ with $R$-linear values, and the two images commute.
 
-**Proof.** The composition laws say that $L$ respects products, so it is a homomorphism, and that $R$ reverses them, so it is an anti-homomorphism; the last identity says that every left multiplication commutes with every right multiplication. $\square$
+**Proof.** The composition laws say that $L$ respects products, so it is a homomorphism, and that $R$ reverses them, so it is an anti-homomorphism; the last identity says that every left multiplication commutes with every right multiplication.
 
 **Remark.** Associativity is exactly the hypothesis that makes the two families compose inside themselves, and it is the same criterion as in the bilinear case: *Associative Algebras* locates it in the identity $L(ab) = L(a)L(b)$, and the sesquilinear statement differs only in the module that receives the operators, $\operatorname{End}_{R^{\varsigma}}(A)$ rather than $\operatorname{End}_{R}(A)$. For a sesqualgebra of full type associativity forces $\varsigma = \mathrm{id}$, by the theorem of *Sesqualgebras*, §*The Collapse at the Identity*, so the associative case of the present proposition is the bilinear one.
 
@@ -74,7 +74,7 @@ $$
 
 and $L_aR_b \neq R_bL_a$ in general.
 
-**Proof.** In the standard example $L_a(x) = a x^{*}$, so $L_aL_b(x) = a(b x^{*})^{*} = a x b^{*} = T_{a,b^{*}}(x)$, and $R_a(x) = x a^{*}$, so $R_aR_b(x) = (x b^{*})a^{*} = x b^{*}a^{*} = x(ab)^{*} = T_{1,(ab)^{*}}(x)$. For the last statement $L_aR_b(x) = a(x b^{*})^{*} = ab\,x^{*}$ while $R_bL_a(x) = (a x^{*})b^{*} = a x^{*} b^{*}$, and the two are equal for all $a$ and $b$ exactly when $A$ is commutative and the involution is trivial, so they differ for some pair as soon as $A$ is noncommutative or the involution is nontrivial. $\square$
+**Proof.** In the standard example $L_a(x) = a x^{*}$, so $L_aL_b(x) = a(b x^{*})^{*} = a x b^{*} = T_{a,b^{*}}(x)$, and $R_a(x) = x a^{*}$, so $R_aR_b(x) = (x b^{*})a^{*} = x b^{*}a^{*} = x(ab)^{*} = T_{1,(ab)^{*}}(x)$. For the last statement $L_aR_b(x) = a(x b^{*})^{*} = ab\,x^{*}$ while $R_bL_a(x) = (a x^{*})b^{*} = a x^{*} b^{*}$, and the two are equal for all $a$ and $b$ exactly when $A$ is commutative and the involution is trivial, so they differ for some pair as soon as $A$ is noncommutative or the involution is nontrivial.
 
 **Remark.** The composition of two left multiplications is again a two-sided multiplication but not a left multiplication, and the reason is that the derived operation is not associative: the two sides of $L_aL_b = L_{a \star b}$ would read $a x b^{*}$ and $a b\,x^{*}$, which differ. The standard example therefore shows the composition law of the associative case failing in the smallest possible way, with a two-sided operator as the residue. That operator is the subject of *The Sesquilinear Sandwich Operator*, where the family $T_{p,q}$ and the conjugate-linear family attached to it are developed together.
 
@@ -86,7 +86,7 @@ and $L_aR_b \neq R_bL_a$ in general.
 
 **Proposition.** The map $\lambda_A$ is always $R$-linear, and it satisfies $\lambda_A(a \star b) = \lambda_A(a)\lambda_A(b)$ for all $a, b$ if and only if the product of $A$ is associative; the map $\rho_A$ is always $\varsigma$-semilinear, and it satisfies $\rho_A(a \star b) = \rho_A(b)\rho_A(a)$ for all $a, b$ if and only if the product is associative.
 
-**Proof.** The linearity and the semilinearity are the proposition on the parameter. For the multiplicativity, $\lambda_A(a \star b)(x) = (a \star b) \star x$ and $\lambda_A(a)\lambda_A(b)(x) = a \star (b \star x)$, which are equal for every $x$ exactly when the product is associative; the computation for $\rho_A$ is the same with the order of the two factors reversed. $\square$
+**Proof.** The linearity and the semilinearity are the proposition on the parameter. For the multiplicativity, $\lambda_A(a \star b)(x) = (a \star b) \star x$ and $\lambda_A(a)\lambda_A(b)(x) = a \star (b \star x)$, which are equal for every $x$ exactly when the product is associative; the computation for $\rho_A$ is the same with the order of the two factors reversed.
 
 **Remark.** The two maps are the two halves of the regular representation of a sesqualgebra, and they are not the same map: one is linear and multiplicative into the conjugate-linear operators, the other is conjugate-linear and anti-multiplicative into the linear ones. In the bilinear case they are the ordinary left and right regular representations of an associative algebra, by the theorem of *Associative Algebras* that a representation of an algebra and a module over it are the same thing; in the sesquilinear case there are two such maps and no single one of them is linear in both the parameter and the argument.
 
@@ -94,11 +94,11 @@ and $L_aR_b \neq R_bL_a$ in general.
 
 **Proposition (the obstruction).** Let $A$ be a sesqualgebra with $\varsigma \neq \mathrm{id}$, let $a, x \in A$, and suppose that $L_a$ is $R$-linear. Then $(\lambda - \varsigma(\lambda))(a \star x) = 0$ for every $\lambda \in R$. Consequently $L_a$ is not $R$-linear as soon as there is an $x$ with $a \star x$ of zero annihilator.
 
-**Proof.** $L_a(\lambda x) = \varsigma(\lambda)L_a(x)$ and $R$-linearity requires $L_a(\lambda x) = \lambda L_a(x)$; subtracting the two expressions gives $(\varsigma(\lambda) - \lambda)(a \star x) = 0$. If $a \star x$ has zero annihilator this forces $\varsigma(\lambda) = \lambda$ for every $\lambda$, that is $\varsigma = \mathrm{id}$, contrary to the hypothesis. $\square$
+**Proof.** $L_a(\lambda x) = \varsigma(\lambda)L_a(x)$ and $R$-linearity requires $L_a(\lambda x) = \lambda L_a(x)$; subtracting the two expressions gives $(\varsigma(\lambda) - \lambda)(a \star x) = 0$. If $a \star x$ has zero annihilator this forces $\varsigma(\lambda) = \lambda$ for every $\lambda$, that is $\varsigma = \mathrm{id}$, contrary to the hypothesis.
 
 **Corollary.** Let $A$ be of full type with $\varsigma \neq \mathrm{id}$. Then the left multiplication is not an $R$-algebra representation: there is no $R$-algebra map $\rho : A \to \operatorname{End}_{R}(A)$ with $\rho(a) = L_a$ for every $a$.
 
-**Proof.** Such a $\rho$ would make each $\rho(a) = L_a$ an $R$-linear map. Fix $\lambda \in R$ and put $c_{\lambda} = \lambda - \varsigma(\lambda)$. The proposition applied to every $a$ and every $x$ gives $c_{\lambda}(a \star x) = 0$, that is $c_{\lambda} \cdot (A \star A) = 0$. Since the products generate $A$, the element $c_{\lambda}$ vanishes on all of $A$, and since $A$ has no nonzero left annihilator, $c_{\lambda} = 0$. So $\varsigma(\lambda) = \lambda$ for every $\lambda \in R$, that is $\varsigma = \mathrm{id}$, contrary to the hypothesis. $\square$
+**Proof.** Such a $\rho$ would make each $\rho(a) = L_a$ an $R$-linear map. Fix $\lambda \in R$ and put $c_{\lambda} = \lambda - \varsigma(\lambda)$. The proposition applied to every $a$ and every $x$ gives $c_{\lambda}(a \star x) = 0$, that is $c_{\lambda} \cdot (A \star A) = 0$. Since the products generate $A$, the element $c_{\lambda}$ vanishes on all of $A$, and since $A$ has no nonzero left annihilator, $c_{\lambda} = 0$. So $\varsigma(\lambda) = \lambda$ for every $\lambda \in R$, that is $\varsigma = \mathrm{id}$, contrary to the hypothesis.
 
 **Remark.** The corollary is the precise sense in which a single faithful linear representation cannot carry the whole product: the left multiplication of a sesqualgebra is conjugate-linear, so the regular module $A_A$ is not a module over $A$ unless the product is bilinear. The representation theory of a sesqualgebra is therefore the theory of the conjugate-linear operators on the left and of the linear ones on the right, and it is the reason the operator theory of the category carries two classes of operators rather than one. The same split is behind the two adjoints that a conjugate-linear operator requires, the subject of *The Sesquilinear Adjoint Operator*.
 

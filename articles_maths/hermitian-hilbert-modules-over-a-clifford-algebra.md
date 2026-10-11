@@ -59,7 +59,7 @@ by a vector is skew-adjoint, and the scalar unit $e_0=1$ is Hermitian.
 reads $(e_i\cdot s,t)=(s,(-e_i)\cdot t)=-(s,e_i\cdot t)$, which is skew-adjointness. The existence
 and uniqueness of a compatible definite form on a Clifford module are the results of Part II's
 *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*, and the involution is the one
-fixed there. $\square$
+fixed there.
 
 **Remark (definite and indefinite).** The definite case is the one in which the form is positive and
 the axiom holds as stated; in the indefinite case, where the form has a signature, the conjugation
@@ -94,7 +94,7 @@ $a\mapsto a^{*}$ and the action satisfies $\rho(a)^{\dagger}=\rho(a^{*})$ with r
 form. Hence $L^2(\Omega;\mathcal{S})$ is a Hilbert module over the algebra of bounded functions.
 
 *Proof.* The bound is the pointwise estimate $\|a\cdot f\|\le\sup\|a\|\,\|f\|$; the adjoint identity
-is the pointwise axiom integrated over $\Omega$, the measure being real. $\square$
+is the pointwise axiom integrated over $\Omega$, the measure being real.
 
 ### The Action of the Algebra
 
@@ -121,7 +121,7 @@ In particular the multiplication by a generator is skew-adjoint and the multipli
 scalar is unitary.
 
 *Proof.* The pointwise axiom $(x\cdot s,t)=(s,x^{*}\cdot t)$ integrates to
-$\langle c(x)s,t\rangle=\langle s,c(x^{*})t\rangle$. $\square$
+$\langle c(x)s,t\rangle=\langle s,c(x^{*})t\rangle$.
 
 ### The Adjoint of the Operator $D$
 
@@ -138,7 +138,7 @@ the boundary term being the conormal pairing of *The Cauchy Integral Operator*.
 *Proof.* The derivatives integrate by parts with a sign, the multiplications are skew or Hermitian
 as in the preceding theorem, and the boundary term is the flux of the vector field $c(e_\mu)f$
 against $g$; the computation is the one of *The Dirac Operator* for the formal adjoint
-$D^{\dagger}=-\bar D$. $\square$
+$D^{\dagger}=-\bar D$.
 
 **Corollary (self-adjointness on a closed domain, and on the Hardy space).** If the boundary term
 vanishes — for example on the boundary values of monogenic functions, or on a domain without
@@ -171,7 +171,7 @@ idempotents with respect to the module form.
 $\mathcal{A}^2$ is a closed subspace; the module action preserves $\ker D$ because the coefficients
 are constant, so the subspace is a submodule; the projections are the orthogonal projections onto
 closed subspaces and are self-adjoint idempotents. The Szegő description is the boundary form of the
-same statement. $\square$
+same statement.
 
 **Remark (reproducing kernels).** A monogenic Hilbert space with continuous point evaluations has a
 reproducing kernel, which for $\mathcal{A}^2$ and $H^2$ is a positive definite kernel in the sense

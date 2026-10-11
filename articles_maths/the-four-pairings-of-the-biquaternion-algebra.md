@@ -71,7 +71,7 @@ G=\mathrm{E},\ \mathrm{I}_4,\ \mathrm{I}_4,\ \mathrm{E},
 $$
 for the four pairings in order, with $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$.
 
-**Proof.** $\mathbb{R}$-bilinearity is immediate. In the first argument, the natural conjugation is $\mathbb{C}$-linear, so the first two pairings carry a complex scalar out without conjugating it, while the star conjugates it, so the last two are conjugate-linear there. The Gram matrices follow from $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; the entries are $\varepsilon_\mu$ for the first and the fourth pairing and $1$ for the second and the third. $\square$
+**Proof.** $\mathbb{R}$-bilinearity is immediate. In the first argument, the natural conjugation is $\mathbb{C}$-linear, so the first two pairings carry a complex scalar out without conjugating it, while the star conjugates it, so the last two are conjugate-linear there. The Gram matrices follow from $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; the entries are $\varepsilon_\mu$ for the first and the fourth pairing and $1$ for the second and the third.
 
 ## The Four Pairings
 
@@ -88,7 +88,7 @@ $$
 \langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}.
 $$
 
-**Proof.** Substituting the four general products and using $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ gives each identity; the diagonal values follow. The diagonal of the second is the biquaternion norm of *Biquaternion Norm and Invertibility*, and the diagonal of the third is the Euclidean square of the coefficient space. $\square$
+**Proof.** Substituting the four general products and using $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ gives each identity; the diagonal values follow. The diagonal of the second is the biquaternion norm of *Norm and Invertibility in the General Plain Algebra*, and the diagonal of the third is the Euclidean square of the coefficient space.
 
 **Proposition (the four Gram matrices).** In the coefficient basis the Gram matrices are
 
@@ -99,11 +99,11 @@ G_{\langle\cdot,\cdot\rangle_{*}}=\mathrm{I}_4,\qquad
 G_{\langle\cdot,\cdot\rangle_{\natural*}}=\mathrm{E}.
 $$
 
-**Proof.** The Gram entries are the diagonal values evaluated on the units, which is the theorem above. $\square$
+**Proof.** The Gram entries are the diagonal values evaluated on the units, which is the theorem above.
 
 **Corollary (non-degeneracy and mutual distinction).** The four pairings are non-degenerate, and no two of them agree.
 
-**Proof.** The Gram matrices $\mathrm{E}$ and $\mathrm{I}_4$ are invertible, so each pairing is non-degenerate. For the distinction, the four diagonal forms $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ separate on the units: $\langle e_1,e_1\rangle=-1$ while $\langle e_1,e_1\rangle_{\natural}=1=\langle e_1,e_1\rangle_{*}$ while $\langle e_1,e_1\rangle_{\natural*}=-1$, and the first two separate at $e_1+ie_2$. $\square$
+**Proof.** The Gram matrices $\mathrm{E}$ and $\mathrm{I}_4$ are invertible, so each pairing is non-degenerate. For the distinction, the four diagonal forms $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ separate on the units: $\langle e_1,e_1\rangle=-1$ while $\langle e_1,e_1\rangle_{\natural}=1=\langle e_1,e_1\rangle_{*}$ while $\langle e_1,e_1\rangle_{\natural*}=-1$, and the first two separate at $e_1+ie_2$.
 
 **Remark (the relations among the four).** Any two of the four are recovered from the others by the natural and the complex conjugations of the arguments:
 
@@ -117,7 +117,7 @@ $$
 
 each identity being a rearrangement of the conjugations entering the four general products. The natural conjugation $J={}^{\natural}$ preserves all four pairings, $\langle J\tilde P,J\tilde Q\rangle=\langle\tilde P,\tilde Q\rangle$ and likewise for the other three, so $J$ is an automorphism of each; it is the *fundamental symmetry* of *The Fundamental Symmetry of the Biquaternion Algebra*.
 
-**Proof.** Each identity is checked coefficientwise, and the invariance of $J$ is $\varepsilon_\mu^{2}=1$ in the bilinear cases and $\lvert\varepsilon_\mu\rvert^{2}=1$ in the sesquilinear cases. $\square$
+**Proof.** Each identity is checked coefficientwise, and the invariance of $J$ is $\varepsilon_\mu^{2}=1$ in the bilinear cases and $\lvert\varepsilon_\mu\rvert^{2}=1$ in the sesquilinear cases.
 
 ## The Forms in Comparison
 
@@ -149,7 +149,7 @@ $$
 
 with real dimensions $12$, $12$, $16$ and $16$. The two orthogonal groups are the complex groups of the symmetric pairing, the unitary group is the definite one, and the indefinite unitary group is the real form of $GL_4(\mathbb{C})$ attached to the sign matrix.
 
-**Proof.** A pairing with Gram matrix $G$ is preserved by a $\mathbb{C}$-linear $T$ exactly when $T^{\mathsf T}GT=G$ in the bilinear case and $T^{*}GT=G$ in the Hermitian case, where $T^{\mathsf T}$ is the transpose and $T^{*}$ the conjugate transpose. With $G=\mathrm{I}_4$ or $\mathrm{E}$ this gives the four groups. The dimensions are the classical ones: $\dim_{\mathbb{R}}O_4(\mathbb{C})=2\cdot6=12$, $\dim_{\mathbb{R}}U(4)=16$, $\dim_{\mathbb{R}}U(1,3)=16$. $\square$
+**Proof.** A pairing with Gram matrix $G$ is preserved by a $\mathbb{C}$-linear $T$ exactly when $T^{\mathsf T}GT=G$ in the bilinear case and $T^{*}GT=G$ in the Hermitian case, where $T^{\mathsf T}$ is the transpose and $T^{*}$ the conjugate transpose. With $G=\mathrm{I}_4$ or $\mathrm{E}$ this gives the four groups. The dimensions are the classical ones: $\dim_{\mathbb{R}}O_4(\mathbb{C})=2\cdot6=12$, $\dim_{\mathbb{R}}U(4)=16$, $\dim_{\mathbb{R}}U(1,3)=16$.
 
 **Remark (the adjoints of the left multiplications).** The four pairings give four adjoints to left multiplication, and the identity conjugation is the only one that changes the side:
 
@@ -163,9 +163,9 @@ $$
 (L_{\tilde Q})^{\langle\cdot,\cdot\rangle_{\natural*}}=R_{\bar{\tilde Q}}.
 $$
 
-The transpose $R_{\tilde Q}$ belongs to the general plain bilinear form, the two anti-automorphic conjugations ${}^{\natural}$ and ${}^{*}$ keep left multiplication on the left, and the automorphic conjugation $\bar{\cdot}$ moves it to the right — the dichotomy that organises *Association and the Transpose on the Biquaternion Algebra* and *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*.
+The transpose $R_{\tilde Q}$ belongs to the general plain bilinear form, the two anti-automorphic conjugations ${}^{\natural}$ and ${}^{*}$ keep left multiplication on the left, and the automorphic conjugation $\bar{\cdot}$ moves it to the right — the dichotomy that organises *Association and the Transpose on the General Plain Algebra* and *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*.
 
-**Proof.** Each identity is checked on the units and extended by $\mathbb{R}$-linearity; equivalently, each is $\mathrm{Sc}$-cyclicity applied to the product. $\square$
+**Proof.** Each identity is checked on the units and extended by $\mathbb{R}$-linearity; equivalently, each is $\mathrm{Sc}$-cyclicity applied to the product.
 
 ## Remarkable Subspaces in Comparison
 
@@ -199,7 +199,7 @@ The null sets are read from the same diagonals. On the centre all four vanish on
 
 **Proposition (the two complex cones of the vector subspace).** On the vector subspace the general plain bilinear and the general quaternionic bilinear forms share the complex cone $\sum_kP_k^{2}=0$: an element lies on both $\sum_\mu Q_\mu^{2}=0$ and $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$ only when $Q_0=0$ and $\sum_kQ_k^{2}=0$.
 
-*Proof.* Adding the two equations gives $2Q_0^{2}=0$, so $Q_0=0$, and either equation then gives $\sum_kQ_k^{2}=0$. $\square$
+*Proof.* Adding the two equations gives $2Q_0^{2}=0$, so $Q_0=0$, and either equation then gives $\sum_kQ_k^{2}=0$.
 
 The three cones are separated by explicit elements: $e_1+ie_2$ lies on both general plain bilinear cones, $e_0+ie_1$ on the $\natural$-cone alone, and $e_0+e_1$ on the general plain bilinear cone alone.
 
@@ -213,15 +213,15 @@ the last being the fundamental decomposition of the Krein space of *The Krein Gr
 
 No **isotropic subspace beyond a line** lies inside a single one of the remarkable subspaces, since each restriction is non-degenerate. A complex line is totally isotropic for a bilinear form exactly when it is spanned by a null element; the two complex subspaces are the centre, of complex dimension $1$, and the vector subspace, of complex dimension $3$, and by non-degeneracy a totally isotropic complex subspace of a non-degenerate form on a complex space of dimension $d$ has dimension at most $d/2$, so at most $0$ in the centre and at most $1$ in the vector subspace; the four four-dimensional subspaces are **totally real**, in the sense that $i\tilde Q$ lies in none of them when $\tilde Q\ne0$ is in one, so they contain no complex subspace at all. Each of the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace therefore contains isotropic lines for some of the forms and no isotropic plane, and the remaining restrictions are anisotropic. The isotropic lines of the general quaternionic bilinear form inside the remarkable subspaces are its zero-divisor lines, and the ideals it carries are *The Isotropic Structure of the General Quaternionic Algebra*, §*The Minimal Ideals and the Hyperbolic Peirce Basis*.
 
-The restrictions themselves, subspace by subspace and form by form, are the subject of the five companion articles: *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*, *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions*, *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* and *Remarkable Subspaces under the Real Biquaternion Algebra*, one for each reading group.
+The restrictions themselves, subspace by subspace and form by form, are the subject of the four companion articles: *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*, *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions* and *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions*, one for each reading group.
 
 ## The Two Readings
 
-The remarkable subspaces are one set of subspaces carrying two form readings, and the comparison of the readings is the point of this section. The **algebra reading** is the general plain sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *Biquaternion Norm and Invertibility*, positive definite on all of $\mathbb{B}$; the **form reading** is the general quaternionic sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ of *The Krein Gram Matrix and the Restrictions of the Form*, of signature $(2,6)$.
+The remarkable subspaces are one set of subspaces carrying two form readings, and the comparison of the readings is the point of this section. The **algebra reading** is the general plain sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *Norm and Invertibility in the General Plain Algebra*, positive definite on all of $\mathbb{B}$; the **form reading** is the general quaternionic sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ of *The Krein Gram Matrix and the Restrictions of the Form*, of signature $(2,6)$.
 
 **Theorem (the comparison of the readings).** The general plain sesquilinear form restricts to every one of the remarkable subspaces as a positive definite form, of signature the real dimension of the subspace, because it is positive definite on all of $\mathbb{B}$. The general quaternionic sesquilinear form restricts to the same remarkable subspaces with the patterns of the table above: it is positive definite on the centre $(2,0)$, negative definite on the vector subspace $(0,6)$, and indefinite of signature $(1,3)$ on each of the quaternion subspace, the anti-quaternion subspace and the two sectors. A subspace definite for one form need not be definite for the other, and the two readings share the remarkable subspaces while they differ on four of them.
 
-**Proof.** $\langle\tilde P,\tilde P\rangle_{*}=\sum_\mu|P_\mu|^{2}>0$ off zero, so the restriction to a real subspace is positive definite of signature its real dimension. The columns of the table above give the quaternion-sesquilinear patterns; the divergence is explicit on $\mathbb{H}_{\mathbb{B}}$, where $\langle e_1,e_1\rangle_{*}=1$ while $\langle e_1,e_1\rangle_{\natural*}=-1$. $\square$
+**Proof.** $\langle\tilde P,\tilde P\rangle_{*}=\sum_\mu|P_\mu|^{2}>0$ off zero, so the restriction to a real subspace is positive definite of signature its real dimension. The columns of the table above give the quaternion-sesquilinear patterns; the divergence is explicit on $\mathbb{H}_{\mathbb{B}}$, where $\langle e_1,e_1\rangle_{*}=1$ while $\langle e_1,e_1\rangle_{\natural*}=-1$.
 
 **Remark (the two readings do not change the orthogonal pairs).** The remarkable subspaces have the same orthogonal pairs under every pairing, namely the centre with the vector subspace, as §*Remarkable Subspaces in Comparison* records; the reading is a change of form on one common set of subspaces, not a change of the lattice.
 
@@ -268,7 +268,7 @@ $$
 \langle U,W\rangle=0,
 $$
 
-which force $U=0$ and $W=\hat\mu$ a real unit vector. The chart therefore meets the intersection in the copy $\{1\}\times iS^{2}$ of $S^{2}$: the intersection is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$. The two lines of the statement are null for both forms, $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural}=1+(i)^{2}=0$ and $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural*}=1-1=0$. The doubly null lines are also the **Peirce lines** $\mathbb{C}\tilde\Pi_{1,2}(\hat\mu)$ of the rank-one Hermitian idempotents $\tilde\Pi_{1,2}(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$, which is the description of *The Isotropic Structure of the General Quaternionic Sesqualgebra*, §*The Index in Two Ways*. $\square$
+which force $U=0$ and $W=\hat\mu$ a real unit vector. The chart therefore meets the intersection in the copy $\{1\}\times iS^{2}$ of $S^{2}$: the intersection is the union of the doubly null lines $\mathbb{C}(e_0+i\hat\mu)$. The two lines of the statement are null for both forms, $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural}=1+(i)^{2}=0$ and $\langle e_0\pm ie_1,e_0\pm ie_1\rangle_{\natural*}=1-1=0$. The doubly null lines are also the **Peirce lines** $\mathbb{C}\tilde\Pi_{1,2}(\hat\mu)$ of the rank-one Hermitian idempotents $\tilde\Pi_{1,2}(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$, which is the description of *The Isotropic Structure of the General Quaternionic Sesqualgebra*, §*The Index in Two Ways*.
 
 **Remark (the two cones agree on a real slice).** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the general quaternionic sesquilinear form is the Krein form and the norm is the definite form, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_0^{2}-\sum_kq_k^{2}$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu}q_{\mu}^{2}$; the Krein null set is the light cone of the slice, the norm cone meets the real slice only at the origin, and the two agree nowhere except at $0$.
 
@@ -290,7 +290,7 @@ Each form singles out the value-one set of its diagonal, and the three sign leve
 $$
 \mathcal{L}=\Bigl\{\tilde Q:\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu^{2}=1\Bigr\},
 $$
-the affine complex quadric of the same polynomial, of complex dimension $3$. The curve $\tilde Q(t)=\cosh t\,e_0+\sinh t\,e_1$ lies on $\mathcal{L}$ for every real $t$, since $\cosh^{2}t-\sinh^{2}t=1$. The set is not a group: $\langle\tilde Q(t),\tilde Q(t)\rangle=1$ while $\tilde Q(t)^{2}=e_0+\sinh2t\,e_1$, of diagonal value $1-\sinh^{2}2t$, which differs from $1$ for $t\neq0$, so $\mathcal{L}$ is not closed under the product. This separates it from the value-one set of the general quaternionic bilinear form, which is the norm-one group $G_1$ of *Biquaternion Norm and Invertibility*. Over $\mathbb{C}$ every non-degenerate quadratic form of rank $4$ is equivalent to every other, so $\mathcal{L}$ is the standard complex quadric.
+the affine complex quadric of the same polynomial, of complex dimension $3$. The curve $\tilde Q(t)=\cosh t\,e_0+\sinh t\,e_1$ lies on $\mathcal{L}$ for every real $t$, since $\cosh^{2}t-\sinh^{2}t=1$. The set is not a group: $\langle\tilde Q(t),\tilde Q(t)\rangle=1$ while $\tilde Q(t)^{2}=e_0+\sinh2t\,e_1$, of diagonal value $1-\sinh^{2}2t$, which differs from $1$ for $t\neq0$, so $\mathcal{L}$ is not closed under the product. This separates it from the value-one set of the general quaternionic bilinear form, which is the norm-one group $G_1$ of *Norm and Invertibility in the General Plain Algebra*. Over $\mathbb{C}$ every non-degenerate quadratic form of rank $4$ is equivalent to every other, so $\mathcal{L}$ is the standard complex quadric.
 
 ## The Two Senses of Norm
 
@@ -310,13 +310,13 @@ with $e_0\pm ie_1\neq0$ and $N(e_0\pm ie_1)=1+i^{2}=0$. Suppose $\lVert\cdot\rVe
 $$
 \lVert e_0+ie_1\rVert\lVert e_0-ie_1\rVert=\lVert (e_0+ie_1)(e_0-ie_1)\rVert=\lVert 0\rVert=0,
 $$
-which is impossible in the real numbers. $\square$
+which is impossible in the real numbers.
 
 **Corollary.** $N$ is multiplicative and not definite; the diagonal of the general plain sesquilinear form is definite and not multiplicative; and no third function repairs the split.
 
 **Remark (the coincidence that fails here).** For $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and the octonions the multiplicative form is real and positive on the nonzero elements and equal to the square of the definite norm, so the two senses of *norm* are one function; by the Hurwitz theorem these four are the only normed division algebras (*Normed Division Algebras and the Hurwitz Theorem*). The biquaternions are excluded by their zero divisors, exactly as the proposition shows. The coincidence is recovered on the parts of $\mathbb{B}$ where $N$ does not vanish: on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where $N$ is real of signature $(4,0)$ and $N(\tilde Q)=\lVert\tilde Q\rVert^{2}$; on the imaginary translate $i\mathbb{H}_{\mathbb{B}}$, where $N$ is real of signature $(0,4)$ and $N(\tilde Q)=-\lVert\tilde Q\rVert^{2}$; and on the two sectors, where $N$ is indefinite and the norm and the interval differ by a sign on one of the two halves. It is the whole algebra, taken at once, that no single function norms. The two senses carry the two readings of the framework: restricted to the material sector the algebraic norm is the interval of signature $(3,1)$, whose zero set is the light cone, and the Hermitian norm is the length of the state space on the informational sector.
 
-**Remark (the four degree-two functions).** Each of the four products carries its own quadratic diagonal, $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$, and the four rows of the table above separate them; only the second is multiplicative and only the third is definite. The algebraic norm, its polarisation, the two norms and the unit group are *Biquaternion Norm and Invertibility*, and the four products as one two-slot construction are *The Four General Products and Their Two Slots: the Two Algebras and the Two Sesqualgebras*.
+**Remark (the four degree-two functions).** Each of the four products carries its own quadratic diagonal, $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$, and the four rows of the table above separate them; only the second is multiplicative and only the third is definite. The algebraic norm, its polarisation, the two norms and the unit group are *Norm and Invertibility in the General Plain Algebra*, and the four products as one two-slot construction are *The Four General Products and Their Two Slots: the Two Algebras and the Two Sesqualgebras*.
 
 ## Worked Examples
 
@@ -362,14 +362,14 @@ Their null sets separate them as sharply as their signatures. The general plain 
 - *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the four adjoints of the notation table worked out on explicit operators, the four adjoint matrices of one two-sided operator, and the reading of the suffixes of the operator families as those adjoints
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations and their group
 - *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four general products whose scalar parts are the four pairings
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the general plain sesquilinear form and its inner product
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the general plain sesquilinear form and its inner product
 - *Normed Division Algebras and the Hurwitz Theorem* (`articles_maths/normed-division-algebras-and-the-hurwitz-theorem.md`), for the normed division algebras where the two senses of *norm* are one function, the coincidence that §*The Two Senses of Norm* shows fails here
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the general quaternionic sesquilinear form and its signature
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable real subspaces and their bases
-- *Remarkable Subspaces under the General Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.md`), *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`) and *Remarkable Subspaces under the Real Biquaternion Algebra* (`articles_maths/remarkable-subspaces-under-the-real-biquaternion-algebra.md`), for the restrictions, subspace by subspace and form by form
+- *Remarkable Subspaces under the General Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.md`), *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the restrictions, subspace by subspace and form by form
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the null set of the general quaternionic sesquilinear form and the doubly null lines
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the sign levels and the hyperbolic structure
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the sphere $S^{7}$ used here for contrast
 - *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation.md`), for the same four forms read in the two matrix representations
-- *Association and the Transpose on the Biquaternion Algebra* (`articles_maths/association-and-the-transpose-on-the-biquaternion-algebra.md`), for the transpose that belongs to the general plain bilinear pairing
+- *Association and the Transpose on the General Plain Algebra* (`articles_maths/association-and-the-transpose-on-the-general-plain-algebra.md`), for the transpose that belongs to the general plain bilinear pairing
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for bilinear and sesquilinear forms, their Gram matrices and their automorphism groups

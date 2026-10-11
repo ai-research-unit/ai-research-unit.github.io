@@ -211,7 +211,7 @@ $$
 2\,\mathrm{Sc}(\tilde\Pi_1 \tilde{H}) = 2 \cdot 0 = 0,
 $$
 
-which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle = 0$. ✓
+which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle = 0$.
 
 Take instead $\tilde{H} = ie_3$ (the spin observable along the $z$ axis):
 
@@ -225,7 +225,7 @@ $$
 2\,\mathrm{Sc}(\tilde\Pi_1 \tilde{H}) = 2 \cdot \tfrac{1}{2} = 1,
 $$
 
-which is the correct expectation $\langle \uparrow_z | S_z | \uparrow_z \rangle$ (up to the factor $\hbar/2$, which is absorbed in the normalization). ✓
+which is the correct expectation $\langle \uparrow_z | S_z | \uparrow_z \rangle$ (up to the factor $\hbar/2$, which is absorbed in the normalization).
 
 So the trace formula reproduces the standard spin-1/2 expectation values.
 

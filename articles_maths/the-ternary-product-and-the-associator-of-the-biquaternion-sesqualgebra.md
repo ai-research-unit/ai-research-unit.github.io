@@ -39,7 +39,7 @@ $$
 
 **Proposition (the parity).** The associator is additive in each variable, $\mathbb{C}$-linear in the first variable, and conjugate-linear in the second, and it vanishes identically if and only if the product is associative.
 
-**Proof.** This is the proposition of *The Sesquilinear Associator and the Ternary Product*, §*Definition and Parity*, read on $\mathbb{B}$: both groupings are additive in each variable, the first slot is linear in both, and the second slot is conjugate-linear in both, so the difference is; the product is associative exactly when the two groupings agree, which is the vanishing of the difference. $\square$
+**Proof.** This is the proposition of *The Sesquilinear Associator and the Ternary Product*, §*Definition and Parity*, read on $\mathbb{B}$: both groupings are additive in each variable, the first slot is linear in both, and the second slot is conjugate-linear in both, so the difference is; the product is associative exactly when the two groupings agree, which is the vanishing of the difference.
 
 **Remark.** The third slot is where the associator is not homogeneous, and the general theorem of *The Sesquilinear Associator and the Ternary Product*, §*The Twist in the Third Slot*, makes this precise: the grouping $(\tilde P\star\tilde Q)\star\tilde R$ is conjugate-linear in $\tilde R$, the grouping $\tilde P\star(\tilde Q\star\tilde R)$ is linear in $\tilde R$, and the associator is the difference of the two, so it is neither linear nor conjugate-linear in that slot unless it vanishes. The associator therefore lives on a difference of two modules in its third variable and on a single module in its first two.
 
@@ -53,11 +53,11 @@ $$
 
 In particular the associator is the product of $\tilde P$ with the defect $\tilde Q^{*}\tilde R^{*}-\tilde R\tilde Q^{*}$ of the multiplication in the second and third slots.
 
-**Proof.** The derived-operation formula of *Sesqualgebras*, §*The Associator of the Derived Product*, transported to $\mathbb{B}$: $(\tilde P\star\tilde Q)\star\tilde R=\tilde P\tilde Q^{*}\tilde R^{*}$ and $\tilde P\star(\tilde Q\star\tilde R)=\tilde P\tilde R\tilde Q^{*}$, whose difference is $\tilde P(\tilde Q^{*}\tilde R^{*}-\tilde R\tilde Q^{*})$. The second form uses $\tilde Q^{*}\tilde R^{*}=(\tilde R\tilde Q)^{*}$, which is the anti-multiplicativity of the involution. $\square$
+**Proof.** The derived-operation formula of *Sesqualgebras*, §*The Associator of the Derived Product*, transported to $\mathbb{B}$: $(\tilde P\star\tilde Q)\star\tilde R=\tilde P\tilde Q^{*}\tilde R^{*}$ and $\tilde P\star(\tilde Q\star\tilde R)=\tilde P\tilde R\tilde Q^{*}$, whose difference is $\tilde P(\tilde Q^{*}\tilde R^{*}-\tilde R\tilde Q^{*})$. The second form uses $\tilde Q^{*}\tilde R^{*}=(\tilde R\tilde Q)^{*}$, which is the anti-multiplicativity of the involution.
 
 **Corollary (the criterion).** The multiplication of $\mathbb{B}$ is associative if and only if $\tilde Q^{*}\tilde R^{*}=\tilde R\tilde Q^{*}$ for all $\tilde Q,\tilde R$, and neither holds: with a nontrivial involution on a unital algebra the derived operation is never associative, by the collapse theorem of *Sesqualgebras*.
 
-**Proof.** The associator vanishes identically exactly when the defect vanishes for all $\tilde P,\tilde Q,\tilde R$; taking $\tilde P=e_0$ removes the factor and gives the condition. The impossibility is the collapse at the identity: associativity of the derived operation forces the involution to be trivial on the scalars, and here the involution is conjugating. $\square$
+**Proof.** The associator vanishes identically exactly when the defect vanishes for all $\tilde P,\tilde Q,\tilde R$; taking $\tilde P=e_0$ removes the factor and gives the condition. The impossibility is the collapse at the identity: associativity of the derived operation forces the involution to be trivial on the scalars, and here the involution is conjugating.
 
 **Example (the witness).** At $(\tilde P,\tilde Q,\tilde R)=(e_0,e_1,e_1)$ the two groupings are
 
@@ -67,7 +67,7 @@ $$
 
 so the associator is $-2e_0$, and the defect $\tilde Q^{*}\tilde R^{*}-\tilde R\tilde Q^{*}=e_1^{*}e_1^{*}-e_1e_1^{*}=e_1^{2}-e_0$ evaluates to $-e_0-e_0=-2e_0$ as well, in agreement with the theorem.
 
-**Proof.** The two groupings are computed from the multiplication table of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $e_0\star e_1=-e_1$, $e_1\star e_1=e_0$, hence $(-e_1)\star e_1=e_1^{2}=-e_0$ and $e_0\star e_0=e_0$; the defect is $e_1^{*}=-e_1$, so $e_1^{*}e_1^{*}=e_1^{2}=-e_0$ and $e_1e_1^{*}=-e_1^{2}=e_0$. $\square$
+**Proof.** The two groupings are computed from the multiplication table of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $e_0\star e_1=-e_1$, $e_1\star e_1=e_0$, hence $(-e_1)\star e_1=e_1^{2}=-e_0$ and $e_0\star e_0=e_0$; the defect is $e_1^{*}=-e_1$, so $e_1^{*}e_1^{*}=e_1^{2}=-e_0$ and $e_1e_1^{*}=-e_1^{2}=e_0$.
 
 **Remark.** The witness is the one the group article records for the failure of associativity, and the value $-2e_0$ is the associator there; the criterion of the corollary is the same failure read in the second and third slots alone. The associator is a central multiple of the unit at this triple because the first factor is the unit, which is the simplest case of the formula.
 
@@ -75,7 +75,7 @@ so the associator is $-2e_0$, and the defect $\tilde Q^{*}\tilde R^{*}-\tilde R\
 
 **Proposition.** The multiplication is not commutative, not flexible and not power-associative: at $(e_1,e_2)$ one has $e_1\star e_2=-e_3$ and $e_2\star e_1=e_3$, so commutativity fails; at $(\tilde P,\tilde Q)=(ie_0,e_0)$ the flexible law $(\tilde P\star\tilde Q)\star\tilde P=\tilde P\star(\tilde Q\star\tilde P)$ fails with the two sides $e_0$ and $-e_0$; and at $\tilde P=ie_0$ the degree-three identity $\tilde P\star(\tilde P\star\tilde P)=(\tilde P\star\tilde P)\star\tilde P$ fails with the two sides $ie_0$ and $-ie_0$.
 
-**Proof.** The witnesses are those of *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*Neither Associative Nor Commutative*, read through the multiplication table; each is a direct computation from the rule $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. $\square$
+**Proof.** The witnesses are those of *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*Neither Associative Nor Commutative*, read through the multiplication table; each is a direct computation from the rule $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$.
 
 **Remark.** The associator measures associativity, and the flexible and power identities are weaker forms of it that the multiplication also fails; the corpus keeps the three apart because for a sesqualgebra the first is the one that the ternary product repairs, while the second and the third fail before the ternary product is reached. Associativity is the strongest of the three, and the collapse theorem already excludes it.
 
@@ -97,7 +97,7 @@ $$
 
 and the plain symmetry $\{\tilde P,\tilde Q,\tilde R\}=\{\tilde R,\tilde Q,\tilde P\}$ fails as soon as the algebra is noncommutative.
 
-**Proof.** This is the proposition of *The Sesquilinear Associator and the Ternary Product*, §*Definition and Parity*: the parity is read from $\tilde P\tilde Q^{*}\tilde R$, where a scalar in the outer slots is a scalar of the algebra product and a scalar in the middle slot meets the involution; the Hermitian symmetry is $(\tilde P\tilde Q^{*}\tilde R)^{*}=\tilde R^{*}\tilde Q\tilde P^{*}=\{\tilde R^{*},\tilde Q^{*},\tilde P^{*}\}$, because the involution reverses the order and is of order two. On $\mathbb{B}$ the plain symmetry fails at $(e_1,e_2,e_0)$, where the two sides are $-e_3$ and $e_3$. $\square$
+**Proof.** This is the proposition of *The Sesquilinear Associator and the Ternary Product*, §*Definition and Parity*: the parity is read from $\tilde P\tilde Q^{*}\tilde R$, where a scalar in the outer slots is a scalar of the algebra product and a scalar in the middle slot meets the involution; the Hermitian symmetry is $(\tilde P\tilde Q^{*}\tilde R)^{*}=\tilde R^{*}\tilde Q\tilde P^{*}=\{\tilde R^{*},\tilde Q^{*},\tilde P^{*}\}$, because the involution reverses the order and is of order two. On $\mathbb{B}$ the plain symmetry fails at $(e_1,e_2,e_0)$, where the two sides are $-e_3$ and $e_3$.
 
 **Remark.** The correction is the one the general article names: the ternary product's middle slot is conjugate-linear, and the symmetry it satisfies is the Hermitian one, which carries the conjugates. The ternary product is not a symmetric operation but a Hermitian-symmetric one, and this is the parity of the middle slot of the binary product promoted to the triple.
 
@@ -111,7 +111,7 @@ $$
 
 so the ternary product determines the multiplication and the involution, and it determines the algebra together with its involution.
 
-**Proof.** This is the theorem of *The Sesquilinear Associator and the Ternary Product*, §*The Passage from the Binary to the Ternary Product*: $\{\tilde P,\tilde Q,e_0\}=(\tilde P\star\tilde Q)\star e_0^{*}=(\tilde P\star\tilde Q)\star e_0=\tilde P\tilde Q^{*}=\tilde P\star\tilde Q$, using $e_0^{*}=e_0$ and the right unit; and $\{e_0,\tilde Q,e_0\}=(e_0\star\tilde Q)\star e_0=e_0\star\tilde Q=\tilde Q^{*}$. $\square$
+**Proof.** This is the theorem of *The Sesquilinear Associator and the Ternary Product*, §*The Passage from the Binary to the Ternary Product*: $\{\tilde P,\tilde Q,e_0\}=(\tilde P\star\tilde Q)\star e_0^{*}=(\tilde P\star\tilde Q)\star e_0=\tilde P\tilde Q^{*}=\tilde P\star\tilde Q$, using $e_0^{*}=e_0$ and the right unit; and $\{e_0,\tilde Q,e_0\}=(e_0\star\tilde Q)\star e_0=e_0\star\tilde Q=\tilde Q^{*}$.
 
 **Remark.** The insertion of the unit is what makes the binary product the **shadow** of the ternary one, in the terminology of *Algebraic J\*-Algebras*, §*The Binary Product as a Shadow*. On $\mathbb{B}$ the two displayed identities read the multiplication and the involution out of the ternary product, and there is no datum left over: the triple determines the pair.
 
@@ -125,7 +125,7 @@ $$
 
 and the third is the plain-symmetry failure: $\{e_2,e_1,e_0\}=e_3$. The first variable enters as the ordinary product on the left, the middle as the conjugate, and the third as the ordinary product on the right, so raising the outer variables and the middle variable by the basis reproduces the four general products of the corpus read with their three slot conventions.
 
-**Proof.** Each is $\tilde P\tilde Q^{*}\tilde R$ evaluated with the basis, using $e_k^{*}=-e_k$ and the products $e_1e_2=e_3$, $e_2e_1=-e_3$. $\square$
+**Proof.** Each is $\tilde P\tilde Q^{*}\tilde R$ evaluated with the basis, using $e_k^{*}=-e_k$ and the products $e_1e_2=e_3$, $e_2e_1=-e_3$.
 
 **Remark.** The ternary product on the basis is not a new table: it is the binary table with three slots, and the values above are there to fix the convention. The three slots are the two outer slots, which are the plain product, and the middle slot, which is the product with the conjugate, and the reading of the ternary product as a sequence of two binary multiplications is the one the operator theory of *The Ternary Product as an Operator* develops.
 
@@ -145,7 +145,7 @@ for all $x,y,u,v,w$, the identity being the defining axiom of an algebraic $J^{*
 
 **Theorem.** With the ternary product $\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$, the biquaternion algebra $\mathbb{B}$ is an algebraic $J^{*}$-algebra: the ternary product has the parity of §*The Ternary Product*, and it satisfies the Jordan triple identity.
 
-**Proof.** The model theorem of *Algebraic J\*-Algebras*, §*The Derived Model*: for an associative $\mathbb{C}$-algebra with a conjugate-linear involution the formula $xyz\mapsto xy^{*}z$ is the **middle model**, and the middle model satisfies the Jordan triple identity, the proof being a finite expansion in the associativity of the algebra and the anti-multiplicativity of the involution. The biquaternion ternary product is the middle model read on $\mathbb{B}$ with the involution ${}^{*}$, so the identity holds and the parity was checked in §*The Ternary Product*. The abstract axioms of an algebraic $J^{*}$-algebra are those of *Algebraic J\*-Algebras*, §*The Axioms*. $\square$
+**Proof.** The model theorem of *Algebraic J\*-Algebras*, §*The Derived Model*: for an associative $\mathbb{C}$-algebra with a conjugate-linear involution the formula $xyz\mapsto xy^{*}z$ is the **middle model**, and the middle model satisfies the Jordan triple identity, the proof being a finite expansion in the associativity of the algebra and the anti-multiplicativity of the involution. The biquaternion ternary product is the middle model read on $\mathbb{B}$ with the involution ${}^{*}$, so the identity holds and the parity was checked in §*The Ternary Product*. The abstract axioms of an algebraic $J^{*}$-algebra are those of *Algebraic J\*-Algebras*, §*The Axioms*.
 
 **Remark.** The theorem is the positive statement of the batch: the multiplication is not associative and carries no associativity identity, and the ternary product carries the Jordan triple identity in its place. The identity is the exact replacement, and it is why the ternary product rather than the binary one is the natural structure of the sesquilinear reading.
 
@@ -163,7 +163,7 @@ The general theory of *Algebraic J\*-Algebras* attaches the Jordan triple identi
 
 **Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde X,\tilde Y,\tilde U,\tilde V,\tilde W)=(e_0,e_1,e_0,e_2,e_0)$ the left-hand side is $e_3$ and the right-hand side is $-3e_3$.
 
-**Proof.** The statement and its proof are the theorem and the corollary of *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, §*The Ternary Product*, where the two sides are computed and the failure is read as the transposition of the two models by the insertion of the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot. $\square$
+**Proof.** The statement and its proof are the theorem and the corollary of *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, §*The Ternary Product*, where the two sides are computed and the failure is read as the transposition of the two models by the insertion of the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot.
 
 **Remark.** The comparison is sharp: the same construction applied to the two sesquilinear products of the corpus gives the middle model for the derived operation and the left model for the $\natural$-isotope, and only the first is in the class. The two products are related by the insertion of a $\mathbb{C}$-linear map in the first slot, by *Comparison Between the Four General Products*, and it is that insertion, and not the sesquilinearity, that moves the involution out of the middle slot and destroys the identity.
 

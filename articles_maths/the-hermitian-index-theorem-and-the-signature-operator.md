@@ -63,7 +63,7 @@ $$
 \operatorname{ind}(\bar\partial_E+\bar\partial_E^{*})=\sum_{q=0}^{n}(-1)^{q}\dim H^{q}(X,E)=\chi(X,E) .
 $$
 
-**Proof.** The Dolbeault theorem is the $(0,q)$-form version of the de Rham theorem, and the two operators $\bar\partial_E$ and $\bar\partial_E^{*}$ are formal adjoints with respect to the Hermitian structures, so the harmonic representatives of the cohomology are the kernel of the operator and the index is the alternating sum of the cohomology dimensions. The elliptic regularity that upgrades the formal argument to a theorem is that of Part III; the statement is the Dolbeault theorem and the Hodge decomposition for the $\bar\partial$-operator, of *Hermitian Metrics and the Hodge Theory*. $\square$
+**Proof.** The Dolbeault theorem is the $(0,q)$-form version of the de Rham theorem, and the two operators $\bar\partial_E$ and $\bar\partial_E^{*}$ are formal adjoints with respect to the Hermitian structures, so the harmonic representatives of the cohomology are the kernel of the operator and the index is the alternating sum of the cohomology dimensions. The elliptic regularity that upgrades the formal argument to a theorem is that of Part III; the statement is the Dolbeault theorem and the Hodge decomposition for the $\bar\partial$-operator, of *Hermitian Metrics and the Hodge Theory*.
 
 ## The Hermitian Index Theorem
 
@@ -79,7 +79,7 @@ $$
 \chi(X,E)=\int_{X}\Bigl(\sum_{k}\operatorname{ch}_k(E)\Bigr)\prod_{j=1}^{n}\frac{x_j}{1-e^{-x_j}} .
 $$
 
-**Proof sketch.** The symbol of the Dolbeault operator is the $(0,q)$-part of the Clifford multiplication by $\xi$; its class in $K$-theory is the difference $[\Lambda^{0,\bullet}T^{*}X]\otimes[E]$, whose Chern character is $\operatorname{ch}(E)\operatorname{td}(TX)$ by the splitting principle and the multiplicativity of $\operatorname{ch}$; the Atiyah–Singer theorem then computes the index as the integral of the Chern character against the Todd class. The general theorem is in *The Atiyah–Singer Index Theorem and K-Theory*, and the Chern–Weil forms are those of *Chern Classes of a Hermitian Bundle*. $\square$
+**Proof sketch.** The symbol of the Dolbeault operator is the $(0,q)$-part of the Clifford multiplication by $\xi$; its class in $K$-theory is the difference $[\Lambda^{0,\bullet}T^{*}X]\otimes[E]$, whose Chern character is $\operatorname{ch}(E)\operatorname{td}(TX)$ by the splitting principle and the multiplicativity of $\operatorname{ch}$; the Atiyah–Singer theorem then computes the index as the integral of the Chern character against the Todd class. The general theorem is in *The Atiyah–Singer Index Theorem and K-Theory*, and the Chern–Weil forms are those of *Chern Classes of a Hermitian Bundle*.
 
 **Corollary (the classical cases).** For a compact Riemann surface $X$ of genus $g$ and a line bundle $L$ the theorem gives
 
@@ -130,7 +130,7 @@ $$
 
 the signature of $X$; its value at $y=0$ is the Todd genus $\int\prod\frac{x_j}{1-e^{-x_j}}$ and its value at $y=-1$ is the Euler characteristic $\int\prod x_j$.
 
-**Proof sketch.** The genus $\sum_p\chi(\Omega^p)y^p$ is multiplicative for products and additive for the twisted Dolbeault complexes, so it is a genus with a power series determined by its values on the projective spaces; evaluating the resulting product at $y=1$ gives $\frac{x(1+e^{-2x})}{1-e^{-2x}}=x\coth x$, whose product is the $L$-class of *The Signature Operator*, and at $y=0$ the Todd factor; at $y=-1$ the limit is the Euler factor $\prod x_j$. Since the $\chi_y$-genus is independent of the description, the value $y=1$ is the signature by the Hodge index theorem, $\sigma=\sum_{p,q}(-1)^{p}h^{p,q}=\sum_p\chi(\Omega^p)$ of *Polarised Hodge Structures and the Hodge–Riemann Relations*. $\square$
+**Proof sketch.** The genus $\sum_p\chi(\Omega^p)y^p$ is multiplicative for products and additive for the twisted Dolbeault complexes, so it is a genus with a power series determined by its values on the projective spaces; evaluating the resulting product at $y=1$ gives $\frac{x(1+e^{-2x})}{1-e^{-2x}}=x\coth x$, whose product is the $L$-class of *The Signature Operator*, and at $y=0$ the Todd factor; at $y=-1$ the limit is the Euler factor $\prod x_j$. Since the $\chi_y$-genus is independent of the description, the value $y=1$ is the signature by the Hodge index theorem, $\sigma=\sum_{p,q}(-1)^{p}h^{p,q}=\sum_p\chi(\Omega^p)$ of *Polarised Hodge Structures and the Hodge–Riemann Relations*.
 
 **Corollary (the signature operator and the Chern character).** The complexified exterior algebra splits as $\Lambda^{k}T^{*}_{\mathbb{C}}X=\bigoplus_{p+q=k}\Lambda^{p,q}T^{*}X$, and the signature operator of the underlying real manifold, restricted to this splitting, is the operator whose index is the $y=1$ value of the $\chi_y$-genus; equivalently, the index of the signature operator is
 

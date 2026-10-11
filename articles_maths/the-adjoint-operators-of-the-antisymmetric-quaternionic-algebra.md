@@ -16,7 +16,7 @@ $$
 
 The map $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear and injective: the operators of the four basis elements $e_0,e_1,e_2,e_3$ are linearly independent, so they span a four-dimensional space of linear maps and $\tilde A$ is recovered from its operator.
 
-*Proof.* Linearity is the $\mathbb{C}$-bilinearity of the operation in its first argument. If $L_{\tilde A}=0$ then $L_{\tilde A}e_0=-\mathbf A=0$, so $\tilde A=A_0e_0$, and then $L_{\tilde A}e_1=A_0e_1$, so $A_0=0$; hence $\tilde A=0$. The four operators are linearly independent by the same argument applied to a linear combination. $\square$
+*Proof.* Linearity is the $\mathbb{C}$-bilinearity of the operation in its first argument. If $L_{\tilde A}=0$ then $L_{\tilde A}e_0=-\mathbf A=0$, so $\tilde A=A_0e_0$, and then $L_{\tilde A}e_1=A_0e_1$, so $A_0=0$; hence $\tilde A=0$. The four operators are linearly independent by the same argument applied to a linear combination.
 
 **Proposition (the matrix in the coefficient basis).** In the basis $e_0,e_1,e_2,e_3$, with the columns the images of the basis elements,
 
@@ -38,7 +38,7 @@ $$
 
 the standard block form of a $\mathbb{C}$-linear map of a complex space read over the reals.
 
-*Proof.* The entries are read off the table of the block: the first column is $L_{\tilde A}e_0=-\mathbf A$, the diagonal is $A_0$ on the three vector lines and $0$ on the scalar line, and the off-diagonal entries of the vector block are the components of $-\mathbf A\times$. The realification is the definition of a $\mathbb{C}$-linear map in a real basis adapted to a complex structure. $\square$
+*Proof.* The entries are read off the table of the block: the first column is $L_{\tilde A}e_0=-\mathbf A$, the diagonal is $A_0$ on the three vector lines and $0$ on the scalar line, and the off-diagonal entries of the vector block are the components of $-\mathbf A\times$. The realification is the definition of a $\mathbb{C}$-linear map in a real basis adapted to a complex structure.
 
 **Proposition (the structure of the matrix).** The operator splits as
 
@@ -48,7 +48,7 @@ $$
 
 where $P$ is the projection onto the vector part and the vector block of $\Lambda_{\tilde A}$ is the skew matrix of the map $\mathbf R\mapsto-\mathbf A\times\mathbf R$, whose characteristic polynomial is $\mu(\mu^2+(\mathbf A,\mathbf A))$. The scalar part of the element therefore scales the vector lines, and the vector part of the element contributes the skew block and the first column $-\mathbf A$.
 
-*Proof.* The matrix has the first row zero and its vector block equal to the sum of $A_0I_3$ and the skew matrix of $\mathbf R\mapsto-\mathbf A\times\mathbf R$; the first column is $0,-\mathbf A$, so $\Lambda_{\tilde A}e_0=-\mathbf A$ and $\Lambda_{\tilde A}$ acts on the vector lines by that skew matrix. The characteristic polynomial of a skew $3\times3$ matrix is $\mu(\mu^2+(\mathbf A,\mathbf A))$, which is the standard computation for the matrix of a cross product, the sign of $\mathbf A$ not entering. $\square$
+*Proof.* The matrix has the first row zero and its vector block equal to the sum of $A_0I_3$ and the skew matrix of $\mathbf R\mapsto-\mathbf A\times\mathbf R$; the first column is $0,-\mathbf A$, so $\Lambda_{\tilde A}e_0=-\mathbf A$ and $\Lambda_{\tilde A}$ acts on the vector lines by that skew matrix. The characteristic polynomial of a skew $3\times3$ matrix is $\mu(\mu^2+(\mathbf A,\mathbf A))$, which is the standard computation for the matrix of a cross product, the sign of $\mathbf A$ not entering.
 
 ## The Trace, the Rank and the Characteristic Polynomial
 
@@ -60,7 +60,7 @@ $$
 
 the sum of the three diagonal entries $A_0$ on the vector lines. The trace vanishes exactly on the vector subspace, and it vanishes identically on the quotient by the image, since the operator maps into $\mathrm{Vect}(\mathbb{B})$ and the induced operator on the one-dimensional quotient $\mathbb{B}/\mathrm{Vect}(\mathbb{B})$ is zero.
 
-*Proof.* The diagonal is $0,A_0,A_0,A_0$ from the matrix, and the sum is $3A_0$. The scalar-part functional is the quotient map, and the operator lowers the scalar part to zero, so the induced map on the quotient is zero and has trace zero. $\square$
+*Proof.* The diagonal is $0,A_0,A_0,A_0$ from the matrix, and the sum is $3A_0$. The scalar-part functional is the quotient map, and the operator lowers the scalar part to zero, so the induced map on the quotient is zero and has trace zero.
 
 **Proposition (the characteristic polynomial and the rank).** The characteristic polynomial is
 
@@ -79,7 +79,7 @@ $$
 
 so the rank is decided by the norm alone and drops exactly on the isotropic cone of the norm.
 
-*Proof.* The second row of the matrix has no entry in the scalar column, so the characteristic polynomial has a factor $\lambda$; the remaining three-dimensional block is $A_0I_3-[\mathbf A]_\times$, whose characteristic polynomial is $(A_0-\lambda)\bigl((A_0-\lambda)^2+\lvert\mathbf A\rvert^2\bigr)$ by the identity $\det(\mu I_3+[\mathbf u]_\times)=\mu(\mu^2+(\mathbf u,\mathbf u))$ for a skew matrix, and the product with the factor $\lambda$ is the displayed expression after expanding. The determinant is the constant term, zero. The rank is read on the image, which is spanned by the first column $-\mathbf A$ and by the image of that three-dimensional block. If $A_0\neq0$ the block has determinant $A_0N(\tilde A)$, so it is invertible and the rank is three when $N(\tilde A)\neq0$, and of rank two with $-\mathbf A$ lying in its image when $N(\tilde A)=0$. If $A_0=0$ the block is $-[\mathbf A]_\times$, of rank two for $\mathbf A\neq0$ with image $\{\mathbf A\}^{\perp}$, and the first column $-\mathbf A$ adds one dimension exactly when $\mathbf A\notin\{\mathbf A\}^{\perp}$, that is when $N(\tilde A)\neq0$. In both cases the rank is three when $N(\tilde A)\neq0$ and two when $N(\tilde A)=0$ with $\tilde A\neq0$. The eigenvalues do not decide it: at a pure non-isotropic element the root $0$ has multiplicity two in the characteristic polynomial but the kernel is only the line of the element, the operator being defective there. $\square$
+*Proof.* The second row of the matrix has no entry in the scalar column, so the characteristic polynomial has a factor $\lambda$; the remaining three-dimensional block is $A_0I_3-[\mathbf A]_\times$, whose characteristic polynomial is $(A_0-\lambda)\bigl((A_0-\lambda)^2+\lvert\mathbf A\rvert^2\bigr)$ by the identity $\det(\mu I_3+[\mathbf u]_\times)=\mu(\mu^2+(\mathbf u,\mathbf u))$ for a skew matrix, and the product with the factor $\lambda$ is the displayed expression after expanding. The determinant is the constant term, zero. The rank is read on the image, which is spanned by the first column $-\mathbf A$ and by the image of that three-dimensional block. If $A_0\neq0$ the block has determinant $A_0N(\tilde A)$, so it is invertible and the rank is three when $N(\tilde A)\neq0$, and of rank two with $-\mathbf A$ lying in its image when $N(\tilde A)=0$. If $A_0=0$ the block is $-[\mathbf A]_\times$, of rank two for $\mathbf A\neq0$ with image $\{\mathbf A\}^{\perp}$, and the first column $-\mathbf A$ adds one dimension exactly when $\mathbf A\notin\{\mathbf A\}^{\perp}$, that is when $N(\tilde A)\neq0$. In both cases the rank is three when $N(\tilde A)\neq0$ and two when $N(\tilde A)=0$ with $\tilde A\neq0$. The eigenvalues do not decide it: at a pure non-isotropic element the root $0$ has multiplicity two in the characteristic polynomial but the kernel is only the line of the element, the operator being defective there.
 
 The rank therefore drops exactly on the isotropic cone of the norm, where $N(\tilde A)=0$; it does not drop on the vector subspace, the operator of a pure non-isotropic vector having rank three. The isotropic cone is the classical degeneracy of the biquaternion algebra, and the operator of the block detects it.
 
@@ -93,7 +93,7 @@ $$
 
 of complex dimensions one and three; on the isotropic cone, for $N(\tilde A)=0$ and $\tilde A\neq0$, the kernel and the image are both of dimension two.
 
-*Proof.* The kernel contains $\tilde A$ by alternation and the image lies in the vector subspace because the values have zero scalar part. The rank is three off the isotropic cone, so the kernel is one-dimensional and, containing $\tilde A$, is exactly $\mathbb{C}\tilde A$; the image is a three-dimensional subspace of the three-dimensional vector subspace, hence the whole of it. A pure vector with $N(\mathbf A)\neq0$ is off the cone, so its kernel is the line $\mathbb{C}\mathbf A$ and its image is the whole vector subspace: the operator is $L_{\mathbf A}\tilde R=-R_0\mathbf A-\mathbf A\times\mathbf R$, whose image is spanned by $\mathbf A$ and the plane $\mathbf A\times\mathbb{R}^3=\{\mathbf A\}^{\perp}$, and the line $\mathbb{C}\mathbf A$ enlarges that plane to the whole space. On the isotropic cone the rank is two and both spaces are two-dimensional, by the rank formula. $\square$
+*Proof.* The kernel contains $\tilde A$ by alternation and the image lies in the vector subspace because the values have zero scalar part. The rank is three off the isotropic cone, so the kernel is one-dimensional and, containing $\tilde A$, is exactly $\mathbb{C}\tilde A$; the image is a three-dimensional subspace of the three-dimensional vector subspace, hence the whole of it. A pure vector with $N(\mathbf A)\neq0$ is off the cone, so its kernel is the line $\mathbb{C}\mathbf A$ and its image is the whole vector subspace: the operator is $L_{\mathbf A}\tilde R=-R_0\mathbf A-\mathbf A\times\mathbf R$, whose image is spanned by $\mathbf A$ and the plane $\mathbf A\times\mathbb{R}^3=\{\mathbf A\}^{\perp}$, and the line $\mathbb{C}\mathbf A$ enlarges that plane to the whole space. On the isotropic cone the rank is two and both spaces are two-dimensional, by the rank formula.
 
 **Remark.** The line $\mathbb{C}\tilde A$ is always in the kernel, so the operator of an element is never injective and the block has no regular element in the naive sense; the content of the rank formula is the size of the kernel above that line. The element is **regular** exactly when $N(\tilde A)\neq0$, and there the kernel is the line alone.
 
@@ -107,7 +107,7 @@ L_{\tilde A}L_{\tilde B}\tilde R
 + R_0\,\mathbf A\times\mathbf B + (\mathbf A,\mathbf R)\mathbf B - (\mathbf A,\mathbf B)\mathbf R .
 $$
 
-*Proof.* Expand $L_{\tilde A}(L_{\tilde B}\tilde R)=\tilde A\diamond(\tilde B\diamond\tilde R)$ with the explicit form and use the double cross identity $\mathbf A\times(\mathbf B\times\mathbf R)=\mathbf B(\mathbf A,\mathbf R)-\mathbf R(\mathbf A,\mathbf B)$. $\square$
+*Proof.* Expand $L_{\tilde A}(L_{\tilde B}\tilde R)=\tilde A\diamond(\tilde B\diamond\tilde R)$ with the explicit form and use the double cross identity $\mathbf A\times(\mathbf B\times\mathbf R)=\mathbf B(\mathbf A,\mathbf R)-\mathbf R(\mathbf A,\mathbf B)$.
 
 **Proposition (the operator form of the Jacobi failure).** For all $\tilde A,\tilde B$,
 
@@ -118,7 +118,7 @@ $$
 
 The deviation $D(\tilde A,\tilde B)$ is zero for all pairs exactly when the operation satisfies the Jacobi identity, so it is the operator form of the failure of the block; it is the negative of the cyclic sum, $D(\tilde A,\tilde B)\tilde R=-J(\tilde A,\tilde B,\tilde R)$, and its trace is zero for every pair.
 
-*Proof.* The deviation is $[L_{\tilde A},L_{\tilde B}]\tilde R-L_{\tilde A\diamond\tilde B}\tilde R = \tilde A\diamond(\tilde B\diamond\tilde R)-\tilde B\diamond(\tilde A\diamond\tilde R)-(\tilde A\diamond\tilde B)\diamond\tilde R$; comparing with the definition of the cyclic sum, the right side is $-J(\tilde A,\tilde B,\tilde R)$, and the closed form is the one computed in *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* with the sign reversed. The vanishing of $D$ for all pairs is the vanishing of $J$, which is the Jacobi identity. The trace is zero because the first row of $D$ is zero in the coefficient basis and the diagonal of the vector block is zero. $\square$
+*Proof.* The deviation is $[L_{\tilde A},L_{\tilde B}]\tilde R-L_{\tilde A\diamond\tilde B}\tilde R = \tilde A\diamond(\tilde B\diamond\tilde R)-\tilde B\diamond(\tilde A\diamond\tilde R)-(\tilde A\diamond\tilde B)\diamond\tilde R$; comparing with the definition of the cyclic sum, the right side is $-J(\tilde A,\tilde B,\tilde R)$, and the closed form is the one computed in *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* with the sign reversed. The vanishing of $D$ for all pairs is the vanishing of $J$, which is the Jacobi identity. The trace is zero because the first row of $D$ is zero in the coefficient basis and the diagonal of the vector block is zero.
 
 **Corollary.** The operators of the block are not a representation of the block: $[L_{\tilde A},L_{\tilde B}]\neq L_{\tilde A\diamond\tilde B}$ in general, at $(e_0,e_1)$ for instance, where the deviation is $D(e_0,e_1)\tilde R=e_1\times\tilde R$ with $\mathbf R$ arbitrary, nonzero. The commutator of two operators is the operator of the value plus the deviation, and the deviation is exactly the obstruction.
 
@@ -136,7 +136,7 @@ $$
 
 of complex dimension three, and they are all **outer**: there is no nonzero inner derivation.
 
-*Proof.* Let $D$ be the matrix of a general linear map and impose the derivation condition on the sixteen basis pairs. The system forces the first row and the first column to vanish, so $\delta(e_0)=0$, and leaves the vector block a general skew $3\times3$ matrix; its dimension is $3$. For the inner derivations, $\operatorname{ad}_{\tilde A}=2L_{\tilde A}$ by the alternation of the operation, and $L_{\tilde A}e_0=-\mathbf A$, which is zero for every derivation; so $\mathbf A=0$, and then $L_{\tilde A}(e_1)=A_0e_1$ must be zero, so $A_0=0$ as well. Hence the only inner derivation is zero. $\square$
+*Proof.* Let $D$ be the matrix of a general linear map and impose the derivation condition on the sixteen basis pairs. The system forces the first row and the first column to vanish, so $\delta(e_0)=0$, and leaves the vector block a general skew $3\times3$ matrix; its dimension is $3$. For the inner derivations, $\operatorname{ad}_{\tilde A}=2L_{\tilde A}$ by the alternation of the operation, and $L_{\tilde A}e_0=-\mathbf A$, which is zero for every derivation; so $\mathbf A=0$, and then $L_{\tilde A}(e_1)=A_0e_1$ must be zero, so $A_0=0$ as well. Hence the only inner derivation is zero.
 
 **Remark.** The derivations of the block are exactly the skew maps of the vector subspace, and their dimension three is the dimension of the group of linear maps of the vector subspace that the automorphism group below realises. The block therefore has a three-dimensional derivation algebra, all of it outer, whereas the adjacent Lie case $\mathrm{APA}$ has a three-dimensional derivation algebra all of it inner: for $\mathrm{APA}$ the adjoint map is a representation and its image is the whole derivation algebra, and for the block the adjoint map is not a representation and contributes nothing.
 
@@ -150,7 +150,7 @@ $$
 
 so the automorphism group of the bracket is the group of linear maps that fix the element $e_0$ and preserve the cross product of the vector subspace, of complex dimension three, and its Lie algebra is the derivation algebra of skew maps computed above.
 
-*Proof.* Every value of the operation is a pure vector and every pure vector is a value, so the image of the operation is the vector subspace and $T$ carries the vector subspace into itself; being invertible, it carries it onto itself. From $e_0\diamond\tilde U=\mathbf U$ and the automorphism property, $T\tilde U = T(e_0)\diamond T\tilde U$ for every pure vector $\tilde U$; as $T\tilde U$ ranges over the vector subspace, $X\diamond\mathbf W=\mathbf W$ for all pure $\mathbf W$ with $X=T(e_0)$, which forces $X=e_0$. On the vector subspace the property reads $T(\mathbf U\times\mathbf V)=T\mathbf U\times T\mathbf V$, so $T|_{\mathbb{C}^3}$ preserves the cross product; the maps that do so are exactly the maps that preserve the bilinear form of the vector part and have determinant one, and they form a group of complex dimension three. $\square$
+*Proof.* Every value of the operation is a pure vector and every pure vector is a value, so the image of the operation is the vector subspace and $T$ carries the vector subspace into itself; being invertible, it carries it onto itself. From $e_0\diamond\tilde U=\mathbf U$ and the automorphism property, $T\tilde U = T(e_0)\diamond T\tilde U$ for every pure vector $\tilde U$; as $T\tilde U$ ranges over the vector subspace, $X\diamond\mathbf W=\mathbf W$ for all pure $\mathbf W$ with $X=T(e_0)$, which forces $X=e_0$. On the vector subspace the property reads $T(\mathbf U\times\mathbf V)=T\mathbf U\times T\mathbf V$, so $T|_{\mathbb{C}^3}$ preserves the cross product; the maps that do so are exactly the maps that preserve the bilinear form of the vector part and have determinant one, and they form a group of complex dimension three.
 
 **Proposition (the structure group).** A linear isomorphism $T$ with $T(\tilde P\diamond\tilde Q)=\lambda\,(T\tilde P\diamond T\tilde Q)$ for a fixed $\lambda\in\mathbb{C}^{*}$ acts as
 
@@ -160,7 +160,7 @@ $$
 
 with $c\in\mathbb{C}^{*}$ and $R$ a linear map preserving the cross product of the vector subspace; the structure group is of complex dimension four, and its subgroup with $c=1$ is the automorphism group.
 
-*Proof.* The image argument again makes $T$ preserve the vector subspace, and the scalar line is preserved as well; the condition on the vector subspace is $M\mathbf U\times M\mathbf V=\lambda^{-1}M(\mathbf U\times\mathbf V)$, whose solutions are the matrices $M=cR$ with $c\in\mathbb{C}^{*}$ and $R$ preserving the cross product, and the comparison on the scalar line fixes $T(e_0)$ and $\lambda$ as displayed. $\square$
+*Proof.* The image argument again makes $T$ preserve the vector subspace, and the scalar line is preserved as well; the condition on the vector subspace is $M\mathbf U\times M\mathbf V=\lambda^{-1}M(\mathbf U\times\mathbf V)$, whose solutions are the matrices $M=cR$ with $c\in\mathbb{C}^{*}$ and $R$ preserving the cross product, and the comparison on the scalar line fixes $T(e_0)$ and $\lambda$ as displayed.
 
 The automorphism group of the bracket is therefore a subgroup of the structure group, obtained by fixing $c=1$; the extra dimension is the scalar freedom that changes the value of the operation by the factor $\lambda$ and is not an automorphism unless $\lambda=1$.
 
@@ -195,4 +195,4 @@ The left multiplication operator of the block is $L_{\tilde A}\tilde R=A_0\mathb
 - *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for the operators of the parent product
 - *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.md`), for the two-sided family of the parent product
 - *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra* (`articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.md`), for the Lie case, whose adjoint map is a representation and whose derivations are inner
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the norm and its isotropic cone, on which the rank of the operator drops
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm and its isotropic cone, on which the rank of the operator drops

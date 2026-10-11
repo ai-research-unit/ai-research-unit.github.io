@@ -35,7 +35,7 @@ $$
 
 is a unital homomorphism of $R$-algebras.
 
-*Proof.* Additivity of $L_a$ is the axiom $a(m+n)=am+an$, and $L_a(rm)=a(rm)=r(am)=rL_a(m)$ is the $R$-bilinearity of the action, so $L_a \in \operatorname{End}_R(M)$. The four identities are the module axioms $(a+a')m=am+a'm$, $(aa')m=a(a'm)$, $(ra)m=r(am)$ and $1m=m$, read pointwise; the last two of them say that $L$ preserves the $R$-linear structure and the unit. $\square$
+*Proof.* Additivity of $L_a$ is the axiom $a(m+n)=am+an$, and $L_a(rm)=a(rm)=r(am)=rL_a(m)$ is the $R$-bilinearity of the action, so $L_a \in \operatorname{End}_R(M)$. The four identities are the module axioms $(a+a')m=am+a'm$, $(aa')m=a(a'm)$, $(ra)m=r(am)$ and $1m=m$, read pointwise; the last two of them say that $L$ preserves the $R$-linear structure and the unit.
 
 The image of $L$ is the set of operators by which the algebra acts,
 
@@ -69,7 +69,7 @@ $$
 
 where $B^{\mathrm{op}}$ is the opposite algebra.
 
-*Proof.* The additive and scalar identities are the right-module axioms as before. For the product, $R_{bb'}(n)=n(bb')=(nb)b'=R_{b'}(nb)=R_{b'}(R_b(n))$, so $R_{bb'}=R_{b'}R_b$, which is the reversed composition; reversing the product of $B$ turns an anti-homomorphism into a homomorphism. $\square$
+*Proof.* The additive and scalar identities are the right-module axioms as before. For the product, $R_{bb'}(n)=n(bb')=(nb)b'=R_{b'}(nb)=R_{b'}(R_b(n))$, so $R_{bb'}=R_{b'}R_b$, which is the reversed composition; reversing the product of $B$ turns an anti-homomorphism into a homomorphism.
 
 Thus the two sides are not symmetric in the algebra: the left action is a homomorphism, the right action is a homomorphism of the opposite algebra. This is the module-level form of the asymmetry recorded in *Modules over an Algebra* for the regular module.
 
@@ -87,7 +87,7 @@ $$
 
 and this identity is exactly the bimodule axiom $a(mb)=(am)b$.
 
-*Proof.* Evaluating both sides at $m$ gives $a(mb)$ and $(am)b$, which the bimodule axiom declares equal. $\square$
+*Proof.* Evaluating both sides at $m$ gives $a(mb)$ and $(am)b$, which the bimodule axiom declares equal.
 
 The proposition is the reason the two-sided operators of the following articles — the sandwich and its signed twist — are well defined as single maps.
 
@@ -99,7 +99,7 @@ The commutation above was derived from the bimodule axiom; it also generates it.
 
 **Theorem.** Let an abelian group $M$ carry a left $A$-action and a right $B$-action. Then $M$ is an $(A,B)$-bimodule exactly when the two actions commute.
 
-*Proof.* If $M$ is a bimodule the axiom gives the commutation. Conversely, if $am$ and $mb$ are defined for all $a,m,b$, each turning $M$ into a module on its side, and if $L_aR_b=R_bL_a$ for all $a,b$, then $a(mb)=(am)b$, which is the only clause joining the two actions. $\square$
+*Proof.* If $M$ is a bimodule the axiom gives the commutation. Conversely, if $am$ and $mb$ are defined for all $a,m,b$, each turning $M$ into a module on its side, and if $L_aR_b=R_bL_a$ for all $a,b$, then $a(mb)=(am)b$, which is the only clause joining the two actions.
 
 ### The general failure
 
@@ -107,7 +107,7 @@ For a left module alone the map $R_b$ is not defined, so there is nothing to com
 
 **Proposition.** On ${}_A A$ the left multiplication $L_a$ is $A$-linear exactly when $a \in Z(A)$; the right multiplication $R_a$ is $A$-linear for every $a$.
 
-*Proof.* $L_a(bc)=abc$ while $bL_a(c)=bac$, and these agree for all $b,c$ exactly when $a$ is central. For the right multiplication, $R_a(bc)=(bc)a=b(ca)=bR_a(c)$. $\square$
+*Proof.* $L_a(bc)=abc$ while $bL_a(c)=bac$, and these agree for all $b,c$ exactly when $a$ is central. For the right multiplication, $R_a(bc)=(bc)a=b(ca)=bR_a(c)$.
 
 This is the asymmetry of *Automorphisms of Modules over an Algebra* seen from the operator side: the endomorphisms of the regular module are the right multiplications, not the left ones.
 
@@ -121,7 +121,7 @@ $$
 L_A' = R_A, \qquad R_A' = L_A .
 $$
 
-*Proof.* A map $f$ commutes with every $L_a$ exactly when $f(ab)=a f(b)$ for all $a,b$, that is, when $f$ is $A$-linear; by *Automorphisms of Modules over an Algebra* the $A$-linear endomorphisms of ${}_A A$ are the right multiplications, so $L_A'=R_A$. The second identity is the same statement read in $A^{\mathrm{op}}$, or directly: $f(bc)=f(b)c$ for all $b,c$ says $f=R_{f(1)}$. $\square$
+*Proof.* A map $f$ commutes with every $L_a$ exactly when $f(ab)=a f(b)$ for all $a,b$, that is, when $f$ is $A$-linear; by *Automorphisms of Modules over an Algebra* the $A$-linear endomorphisms of ${}_A A$ are the right multiplications, so $L_A'=R_A$. The second identity is the same statement read in $A^{\mathrm{op}}$, or directly: $f(bc)=f(b)c$ for all $b,c$ says $f=R_{f(1)}$.
 
 ## The Representation They Define
 
@@ -131,7 +131,7 @@ The map $L$ is not an auxiliary device; it is the module.
 
 **Proposition.** Giving $M$ the structure of a left $A$-module is the same as giving a unital $R$-algebra homomorphism $\rho : A \to \operatorname{End}_R(M)$; the operator $L_a$ is the image of $a$.
 
-*Proof.* The axioms of a left module are the axioms of a unital ring homomorphism, as *Modules over an Algebra* records. $\square$
+*Proof.* The axioms of a left module are the axioms of a unital ring homomorphism, as *Modules over an Algebra* records.
 
 The kernel of $\rho$ is the **annihilator** of the module,
 
@@ -153,7 +153,7 @@ Faithfulness is a property of the action, not of the module.
 
 **Proposition.** Let $M$ be a left $A$-module and let $a \in A$ with $L_a = 0$. Then $a \in \operatorname{Ann}_A(M)$. The algebra generated by the one-sided multiplications is $\rho(A)$, and it is a faithful $A/\operatorname{Ann}_A(M)$-module.
 
-*Proof.* $L_a=0$ says $am=0$ for all $m$, which is the definition of the annihilator; the rest is the isomorphism above. $\square$
+*Proof.* $L_a=0$ says $am=0$ for all $m$, which is the definition of the annihilator; the rest is the isomorphism above.
 
 ### Where the two-sided operators act
 
@@ -167,7 +167,7 @@ $$
 
 for the kernel $\operatorname{Ann}$ of the map $A \otimes_R B^{\mathrm{op}} \to \operatorname{End}_R(M)$ that sends $a \otimes b$ to $L_aR_b$.
 
-*Proof.* The commuting of the two sides lets every word in the generators be written as a sum of products $L_{a_1}\cdots L_{a_k}R_{b_1}\cdots R_{b_l}=L_{a_1\cdots a_k}R_{b_1\cdots b_l}=L_{a}R_{b}$ with $a=\prod a_i$, $b=\prod b_j$, so the span of these products is closed under composition and contains the identity: it is $C$. The assignment $a \otimes b \mapsto L_aR_b$ is $R$-bilinear, hence a homomorphism $A \otimes_R B^{\mathrm{op}} \to \operatorname{End}_R(M)$ by the universal property of the tensor product, and its image is the span of the $L_aR_b$. The first isomorphism theorem gives the displayed quotient. $\square$
+*Proof.* The commuting of the two sides lets every word in the generators be written as a sum of products $L_{a_1}\cdots L_{a_k}R_{b_1}\cdots R_{b_l}=L_{a_1\cdots a_k}R_{b_1\cdots b_l}=L_{a}R_{b}$ with $a=\prod a_i$, $b=\prod b_j$, so the span of these products is closed under composition and contains the identity: it is $C$. The assignment $a \otimes b \mapsto L_aR_b$ is $R$-bilinear, hence a homomorphism $A \otimes_R B^{\mathrm{op}} \to \operatorname{End}_R(M)$ by the universal property of the tensor product, and its image is the span of the $L_aR_b$. The first isomorphism theorem gives the displayed quotient.
 
 The construction is the algebra-level form of the commuting actions, and it is the reason a bimodule over $A$ is the same thing as a module over $A \otimes_R A^{\mathrm{op}}$; the tensor product of algebras is the subject of *Tensor Products of Algebras*.
 
@@ -177,7 +177,7 @@ The commutant of one side is computable from the other, and the two fit into a l
 
 **Proposition.** Let $M$ be a bimodule as above and let $C = L_A R_B$. Then the centralizer of $C$ in $\operatorname{End}_R(M)$ is the set of maps commuting with both sides. In particular, if $B = A$ and the right action is the opposite of the left, the centralizer of $L_A$ is $\operatorname{End}_A(M)$.
 
-*Proof.* $f$ commutes with all products $L_aR_b$ exactly when it commutes with each of $L_a$ and $R_b$, since these are among the products. $\square$
+*Proof.* $f$ commutes with all products $L_aR_b$ exactly when it commutes with each of $L_a$ and $R_b$, since these are among the products.
 
 The inclusion $L_A R_B \subseteq \operatorname{End}_{C'}(M)$ is the **double centralizer** or bicommutant relation; the theorem that it is an equality when $M$ is a faithful finite-dimensional module over a simple algebra is stated in the literature and is not used here. The endomorphism ring on the other side of the relation is the subject of the next article.
 

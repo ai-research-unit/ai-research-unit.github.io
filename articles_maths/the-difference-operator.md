@@ -60,7 +60,7 @@ $$
 =\sum_{i=0}^{m+1}(-1)^{m+1-i}\Bigl(\binom mi+\binom m{i-1}\Bigr)a_{n+i},
 $$
 with the conventions $\binom m{-1}=\binom m{m+1}=0$, and the bracket is $\binom{m+1}i$ by the Pascal
-relation. $\blacksquare$
+relation.
 
 **Theorem (the Leibniz rule).** For the product of two sequences,
 $$
@@ -73,7 +73,7 @@ shifted by the powers of $\tau_{-1}$.
 **Proof.** Expanding $a_{n+1}b_{n+1}-a_nb_n$ as $(a_{n+1}-a_n)b_{n+1}+a_n(b_{n+1}-b_n)$ and comparing with
 the stated form, which uses the identity
 $a_{n+1}b_{n+1}-a_nb_n=a_{n+1}(b_{n+1}-b_n)+b_n(a_{n+1}-a_n)$; the higher rule follows by induction and
-Pascal's relation. $\blacksquare$
+Pascal's relation.
 
 ### The Difference as a Discrete Derivative
 
@@ -90,7 +90,7 @@ $$
 $$
 
 **Proof.** Both are Taylor's formula with the Lagrange remainder: expanding $a(x\pm h)$ to three terms and
-collecting gives the stated identities. $\blacksquare$
+collecting gives the stated identities.
 
 The theorem is the sense in which the difference operator is the discrete generator: the preceding article
 proved that $-\partial_j$ is the generator of the one-parameter group $\tau_{te_j}$, and the difference
@@ -118,7 +118,7 @@ homogeneous equation $\Delta u=0$ are the constant sequences.
 **Proof.** $(\Sigma a)_{n+1}-(\Sigma a)_n=a_n$ by the definition of the partial sum, which is the first
 identity; the second is the telescoping of $a_{k+1}-a_k$ from $k=0$ to $n-1$. If $\Delta u=0$ then
 $u_{n+1}=u_n$ for all $n$, so $u$ is constant, and the difference of two solutions of $\Delta u=a$ is
-constant. $\blacksquare$
+constant.
 
 Thus summation is the discrete inverse of differentiation, and the constant of the indefinite integral
 becomes the constant of the indefinite sum. The difference from the continuous case is that the
@@ -136,7 +136,7 @@ $$
 **Proof.** Summing the Leibniz identity $\Delta(a_kb_k)=a_{k+1}\Delta b_k+b_k\Delta a_k$ from $k=0$ to $n$
 gives the telescoping $\sum_{k=0}^n\Delta(a_kb_k)=a_{n+1}b_{n+1}-a_0b_0$, that is,
 $\sum_{k=0}^na_{k+1}\Delta b_k=a_{n+1}b_{n+1}-a_0b_0-\sum_{k=0}^nb_k\Delta a_k$, and shifting the index in
-the first sum gives the stated formula. $\blacksquare$
+the first sum gives the stated formula.
 
 **Corollary (Abel's test and Dirichlet's test).** If the partial sums of a sequence $u$ are bounded and a
 sequence $v$ decreases to $0$, then $\sum u_nv_n$ converges; if $\sum u_n$ converges and $v$ is of bounded
@@ -159,7 +159,6 @@ $$
 $$
 
 **Proof.** $r^{n+1}-r^n=(r-1)r^n$ and $e^{2\pi i\xi(x+h)}-e^{2\pi i\xi x}=(e^{2\pi i\xi h}-1)e^{2\pi i\xi x}$.
-$\blacksquare$
 
 The theorem says that the characters of the group are the eigenfunctions of the difference operator, exactly
 as they were the eigenfunctions of the translation; the difference is that the eigenvalue is now
@@ -184,7 +183,7 @@ of the interpolation theory.
 **Proof.** For a polynomial of degree $d$ the identity follows from the binomial expansion
 $\binom{n+j}{?}$ and is confirmed by the inversion of the two triangular matrices built from the binomial
 coefficients, which are mutually inverse; the general convergence statement is the Newton interpolation
-formula with the remainder controlled by the growth of the function. $\blacksquare$
+formula with the remainder controlled by the growth of the function.
 
 ## The Spectrum and the Fourier Transform
 
@@ -205,7 +204,7 @@ that $\tau_{-1}$ is unitary. The multiplier identity is the transform of the shi
 $\widehat{\tau_{-1}a}(\theta)=e^{2\pi i\theta}\hat a(\theta)$ together with linearity. The spectrum of a
 multiplication operator by a continuous function on $L^2(\mathbb T)$ is its range, here the circle of
 centre $-1$; an eigenvalue would require $e^{2\pi i\theta}-1$ to be constant on a set of positive measure,
-which it is not. $\blacksquare$
+which it is not.
 
 The same computation gives the operator $\mathrm{id}-\lambda^{-1}\Delta$ the multiplier
 $1-\lambda^{-1}(e^{2\pi i\theta}-1)$, and a difference equation is solved exactly when this multiplier can be
@@ -230,7 +229,7 @@ by its exponential solutions.
 
 **Proof.** $P(\tau_{-1})$ is a convolution operator with symbol $P(e^{2\pi i\theta})$, and a multiplier with
 symbol bounded away from $0$ is invertible with inverse the multiplier $1/P$; the homogeneous solutions are
-computed by the eigenvalue equation $\Delta(r^n)=(r-1)r^n$ and its iterates. $\blacksquare$
+computed by the eigenvalue equation $\Delta(r^n)=(r-1)r^n$ and its iterates.
 
 **Example (the fundamental solution).** For $\Delta u=\delta$, where $\delta$ is the sequence with
 $\delta_0=1$ and $\delta_n=0$ otherwise, a solution is $E_n=\mathbf 1_{\{n\geq1\}}$: indeed

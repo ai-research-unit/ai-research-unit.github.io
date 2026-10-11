@@ -16,7 +16,7 @@ A self-adjoint operator is **positive** when $h(Tx,x) \geq 0$ for every $x$, and
 
 **Proposition (the two products).** For every operator $T$ the products $T^{\dagger}T$ and $TT^{\dagger}$ are self-adjoint, and they have the same spectrum away from zero.
 
-*Proof.* The adjoint of $T^{\dagger}T$ is $T^{\dagger}(T^{\dagger})^{\dagger} = T^{\dagger}T$, and likewise for $TT^{\dagger}$. If $T^{\dagger}Tx = \lambda x$ with $\lambda \neq 0$, then $x = \lambda^{-1}T^{\dagger}Tx$ lies in the range of $T^{\dagger}$, and $T(T^{\dagger}Tx) = \lambda Tx$ shows that $\lambda$ is an eigenvalue of $TT^{\dagger}$ with eigenvector $Tx \neq 0$; the argument is symmetric in the two products. $\square$
+*Proof.* The adjoint of $T^{\dagger}T$ is $T^{\dagger}(T^{\dagger})^{\dagger} = T^{\dagger}T$, and likewise for $TT^{\dagger}$. If $T^{\dagger}Tx = \lambda x$ with $\lambda \neq 0$, then $x = \lambda^{-1}T^{\dagger}Tx$ lies in the range of $T^{\dagger}$, and $T(T^{\dagger}Tx) = \lambda Tx$ shows that $\lambda$ is an eigenvalue of $TT^{\dagger}$ with eigenvector $Tx \neq 0$; the argument is symmetric in the two products.
 
 **Proposition (the positivity).** Let $h$ be definite. Then $T^{\dagger}T$ is positive,
 
@@ -26,13 +26,13 @@ $$
 
 and the kernel of $T^{\dagger}T$ is the kernel of $T$.
 
-*Proof.* The identity is $h(T^{\dagger}Tx,x) = h(Tx,(T^{\dagger})^{\dagger}x) = h(Tx,Tx)$, by the defining relation of the adjoint. The kernel statement follows: $T^{\dagger}Tx = 0$ implies $\lVert Tx\rVert^{2} = h(T^{\dagger}Tx,x) = 0$, so $Tx = 0$ by the definiteness of the norm, and the converse is immediate. $\square$
+*Proof.* The identity is $h(T^{\dagger}Tx,x) = h(Tx,(T^{\dagger})^{\dagger}x) = h(Tx,Tx)$, by the defining relation of the adjoint. The kernel statement follows: $T^{\dagger}Tx = 0$ implies $\lVert Tx\rVert^{2} = h(T^{\dagger}Tx,x) = 0$, so $Tx = 0$ by the definiteness of the norm, and the converse is immediate.
 
 ### The Square Root
 
 **Theorem (the positive square root).** Let $h$ be definite, $A$ finite-dimensional over $k$ or $k(\mathrm{i})$, and let $S$ be a positive self-adjoint operator. Then there is exactly one positive self-adjoint operator $S^{1/2}$ with $(S^{1/2})^{2} = S$, and it is a function of $S$ in the functional calculus of *The Spectra of Self-Adjoint Operators of the Form*, $S^{1/2} = \sum_{i}\lambda_{i}^{1/2}P_{i}$.
 
-*Proof.* The eigenvalues $\lambda_{i}$ of the positive self-adjoint $S$ are real and nonnegative by the positivity criterion of *The Spectra of Self-Adjoint Operators of the Form*, §*The Positivity Criterion*, so their square roots $\lambda_{i}^{1/2}$ are real and nonnegative and $S^{1/2} = \sum_{i}\lambda_{i}^{1/2}P_{i}$ is positive self-adjoint with square $S$ by the orthogonality of the projections. If $R$ is positive self-adjoint with $R^{2} = S$, then $R$ commutes with $S = R^{2}$ and hence with every projection $P_{i}$ and with $S^{1/2}$; on the eigenspace of $\lambda_{i}$ the operator $R$ has square $\lambda_{i}$ and is positive, so its eigenvalue there is $\lambda_{i}^{1/2}$, and $R = S^{1/2}$. $\square$
+*Proof.* The eigenvalues $\lambda_{i}$ of the positive self-adjoint $S$ are real and nonnegative by the positivity criterion of *The Spectra of Self-Adjoint Operators of the Form*, §*The Positivity Criterion*, so their square roots $\lambda_{i}^{1/2}$ are real and nonnegative and $S^{1/2} = \sum_{i}\lambda_{i}^{1/2}P_{i}$ is positive self-adjoint with square $S$ by the orthogonality of the projections. If $R$ is positive self-adjoint with $R^{2} = S$, then $R$ commutes with $S = R^{2}$ and hence with every projection $P_{i}$ and with $S^{1/2}$; on the eigenspace of $\lambda_{i}$ the operator $R$ has square $\lambda_{i}$ and is positive, so its eigenvalue there is $\lambda_{i}^{1/2}$, and $R = S^{1/2}$.
 
 ### The Modulus
 
@@ -40,7 +40,7 @@ and the kernel of $T^{\dagger}T$ is the kernel of $T$.
 
 **Proposition (the modulus is an isometry of norms).** For every $x$, $\lVert \lvert T\rvert x\rVert = \lVert Tx\rVert$; the kernel of $\lvert T\rvert$ is the kernel of $T$; and the closure of the range of $\lvert T\rvert$ is carried isometrically onto the closure of the range of $T$.
 
-*Proof.* The first identity is $\lVert \lvert T\rvert x\rVert^{2} = h(\lvert T\rvert^{2}x,x) = h(T^{\dagger}Tx,x) = \lVert Tx\rVert^{2}$; the second is the kernel statement of the positivity proposition applied to $\lvert T\rvert$; the third is the construction of the phase in the next section, which is isometric on the range of $\lvert T\rvert$ and extends to the closures. $\square$
+*Proof.* The first identity is $\lVert \lvert T\rvert x\rVert^{2} = h(\lvert T\rvert^{2}x,x) = h(T^{\dagger}Tx,x) = \lVert Tx\rVert^{2}$; the second is the kernel statement of the positivity proposition applied to $\lvert T\rvert$; the third is the construction of the phase in the next section, which is isometric on the range of $\lvert T\rvert$ and extends to the closures.
 
 ## The Polar Decomposition
 
@@ -54,7 +54,7 @@ $$
 
 defines an $R$-linear isometry from the range of $\lvert T\rvert$ onto the range of $T$, and it extends by continuity to an isometry from the closure of the range of $\lvert T\rvert$ onto the closure of the range of $T$; setting $U = 0$ on the kernel of $\lvert T\rvert$ gives an operator $U \in B(A)$.
 
-*Proof.* If $\lvert T\rvert x = \lvert T\rvert x_{1}$ then $\lvert T\rvert(x - x_{1}) = 0$, so $T(x - x_{1}) = 0$ by the kernel proposition, and $Tx = Tx_{1}$: the formula is well defined. It is $R$-linear by the linearity of $\lvert T\rvert$ and of $T$, and it is isometric because $\lVert U(\lvert T\rvert x)\rVert = \lVert Tx\rVert = \lVert \lvert T\rvert x\rVert$. A uniformly continuous map on a dense subspace of a complete object extends uniquely to the closure, and the kernel is the $h$-orthogonal complement of the closure of the range, on which $U$ is set to zero. $\square$
+*Proof.* If $\lvert T\rvert x = \lvert T\rvert x_{1}$ then $\lvert T\rvert(x - x_{1}) = 0$, so $T(x - x_{1}) = 0$ by the kernel proposition, and $Tx = Tx_{1}$: the formula is well defined. It is $R$-linear by the linearity of $\lvert T\rvert$ and of $T$, and it is isometric because $\lVert U(\lvert T\rvert x)\rVert = \lVert Tx\rVert = \lVert \lvert T\rvert x\rVert$. A uniformly continuous map on a dense subspace of a complete object extends uniquely to the closure, and the kernel is the $h$-orthogonal complement of the closure of the range, on which $U$ is set to zero.
 
 ### The Decomposition and Its Properties
 
@@ -66,17 +66,17 @@ $$
 
 where $P_{\mathrm{ran}\lvert T\rvert}$ and $P_{\mathrm{ran}T}$ are the $h$-orthogonal projections onto the closures of the corresponding ranges. The pair $(\lvert T\rvert, U)$ is the unique pair with $\lvert T\rvert$ positive self-adjoint, $U$ an isometry on the range of $\lvert T\rvert$ and $U = 0$ on its kernel.
 
-*Proof.* The identity $T = U\lvert T\rvert$ is the definition of $U$ on the range of $\lvert T\rvert$, and both sides vanish on the kernel. For the second, $U^{\dagger}U$ is the projection onto the closure of the range of $\lvert T\rvert$, so $U^{\dagger}T = U^{\dagger}U\lvert T\rvert = \lvert T\rvert$. The two projection relations are the two halves of the isometry statement, $U^{\dagger}U$ being the identity on the initial space and $UU^{\dagger}$ the identity on the final space. For the uniqueness, if $T = V S$ with $S$ positive self-adjoint and $V$ an isometry vanishing on $\ker S$, then $T^{\dagger}T = SV^{\dagger}VS = S^{2}$, so $S = (T^{\dagger}T)^{1/2} = \lvert T\rvert$ by the uniqueness of the square root, and $V = U$ on the range of $\lvert T\rvert$ and on its kernel, hence everywhere. $\square$
+*Proof.* The identity $T = U\lvert T\rvert$ is the definition of $U$ on the range of $\lvert T\rvert$, and both sides vanish on the kernel. For the second, $U^{\dagger}U$ is the projection onto the closure of the range of $\lvert T\rvert$, so $U^{\dagger}T = U^{\dagger}U\lvert T\rvert = \lvert T\rvert$. The two projection relations are the two halves of the isometry statement, $U^{\dagger}U$ being the identity on the initial space and $UU^{\dagger}$ the identity on the final space. For the uniqueness, if $T = V S$ with $S$ positive self-adjoint and $V$ an isometry vanishing on $\ker S$, then $T^{\dagger}T = SV^{\dagger}VS = S^{2}$, so $S = (T^{\dagger}T)^{1/2} = \lvert T\rvert$ by the uniqueness of the square root, and $V = U$ on the range of $\lvert T\rvert$ and on its kernel, hence everywhere.
 
 **Corollary (the isometry and the co-isometry).** The phase $U$ is an isometry, $U^{\dagger}U = 1$, exactly when $\lvert T\rvert$ is injective, that is when $T$ is injective; it is a co-isometry, $UU^{\dagger} = 1$, exactly when $T$ is surjective. In finite dimension the two conditions coincide.
 
-*Proof.* The projection $P_{\mathrm{ran}\lvert T\rvert}$ is the identity exactly when the range of $\lvert T\rvert$ is all of $A$, which is the injectivity of $\lvert T\rvert$ in finite dimension, and the kernel of $\lvert T\rvert$ is the kernel of $T$; the second clause is the same for $UU^{\dagger}$. $\square$
+*Proof.* The projection $P_{\mathrm{ran}\lvert T\rvert}$ is the identity exactly when the range of $\lvert T\rvert$ is all of $A$, which is the injectivity of $\lvert T\rvert$ in finite dimension, and the kernel of $\lvert T\rvert$ is the kernel of $T$; the second clause is the same for $UU^{\dagger}$.
 
 ### The Unitary Case
 
 **Theorem (the invertible case).** Let $T$ be invertible. Then $\lvert T\rvert$ is invertible, $U = T\lvert T\rvert^{-1}$ is **unitary**, and the decomposition is the product of the unitary polar factor by the modulus.
 
-*Proof.* The identity $\lVert \lvert T\rvert x\rVert = \lVert Tx\rVert$ makes $\lvert T\rvert$ injective exactly when $T$ is, and in finite dimension injective is invertible; then $U = T\lvert T\rvert^{-1}$ and $U^{\dagger}U = \lvert T\rvert^{-1}T^{\dagger}T\lvert T\rvert^{-1} = \lvert T\rvert^{-1}\lvert T\rvert^{2}\lvert T\rvert^{-1} = 1$, and symmetrically $UU^{\dagger} = 1$. $\square$
+*Proof.* The identity $\lVert \lvert T\rvert x\rVert = \lVert Tx\rVert$ makes $\lvert T\rvert$ injective exactly when $T$ is, and in finite dimension injective is invertible; then $U = T\lvert T\rvert^{-1}$ and $U^{\dagger}U = \lvert T\rvert^{-1}T^{\dagger}T\lvert T\rvert^{-1} = \lvert T\rvert^{-1}\lvert T\rvert^{2}\lvert T\rvert^{-1} = 1$, and symmetrically $UU^{\dagger} = 1$.
 
 **Remark (the decomposition does not see the form once the phase is unitary).** In the invertible case the modulus is the unique positive factor and the phase is unitary, so the polar decomposition is the algebraic form of the polar form of a complex number; in the non-invertible case the phase is only a partial isometry and the two projections record the loss of injectivity and of surjectivity. The article keeps the partial-isometry form because the operators of the layer are not assumed invertible, and the decomposition of an operator that is not invertible is the partial-isometry one; the finite-rank operators of *The Completion of a Sesqualgebra with a Form*, §*The Finite-Rank Operators*, are the model in which the kernel and the cokernel of an operator are visible, and the invertible case is the corollary in which both projections are the identity.
 
@@ -88,7 +88,7 @@ Let the form be indefinite with symmetry $J$ and companion form, so that $T^{\da
 
 **Proposition (the obstruction).** In the indefinite case $T^{\dagger}T$ can be negative definite, in which case it has no positive self-adjoint square root and the polar decomposition of $T$ does not exist for the form $h$.
 
-*Proof.* The square root of a negative definite self-adjoint operator is purely imaginary and not positive, and the uniqueness of the positive square root fails because there is no positive square root at all. $\square$
+*Proof.* The square root of a negative definite self-adjoint operator is purely imaginary and not positive, and the uniqueness of the positive square root fails because there is no positive square root at all.
 
 **Example (the hyperbolic obstruction).** On $\mathbb{R}^{2}$ with $h(x,y) = x_{1}y_{1} - x_{2}y_{2}$ and $J = \operatorname{diag}(1,-1)$, the operator $T = \begin{pmatrix}0&-1\\1&0\end{pmatrix}$ has $T^{\dagger} = T$ and $T^{2} = -\mathrm{id}$, so $T^{\dagger}T = -\mathrm{id}$ is negative definite and the modulus of $T$ for $h$ would have to be $\mathrm{i}$ times the identity, which is not positive self-adjoint. The operator does have a polar decomposition for the **companion** form, which is euclidean here, because $T$ is orthogonal: the companion modulus is $\mathrm{id}$ and the companion phase is $T$ itself. It has none for the form $h$. The example is the smallest witness that the polar decomposition, like the spectral theorem, is a definite-case statement.
 

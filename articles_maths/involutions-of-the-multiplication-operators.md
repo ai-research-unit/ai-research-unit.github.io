@@ -20,7 +20,7 @@ The article sets up the isomorphism $\operatorname{Mult}(A)\cong A$, transports 
 
 **Proposition.** For a unital commutative $A$ the map $a\mapsto L_a$ is an isomorphism of $R$-algebras $A\to\operatorname{Mult}(A)$; it is injective because $L_a(1) = a$, and it is surjective because the $L_a$ generate the multiplication algebra. Hence $\operatorname{Mult}(A)$ is commutative and its centre is itself.
 
-*Proof.* $L_{a+b} = L_a+L_b$, $L_{ab} = L_aL_b$ and $L_1 = \mathrm{id}$ give the homomorphism; $a = L_a(1)$ gives injectivity; the generation is the definition. $\square$
+*Proof.* $L_{a+b} = L_a+L_b$, $L_{ab} = L_aL_b$ and $L_1 = \mathrm{id}$ give the homomorphism; $a = L_a(1)$ gives injectivity; the generation is the definition.
 
 ### The Induced Involution
 
@@ -34,11 +34,11 @@ extended linearly to the combinations of the $L_a$.
 
 **Theorem.** The map ${}^{*}$ is well defined, $R$-linear, multiplicative and of order two; it is an $R$-algebra automorphism of $\operatorname{Mult}(A)$, and it is at the same time the anti-automorphism, since $\operatorname{Mult}(A)$ is commutative. Under the isomorphism $a\mapsto L_a$ it corresponds to $\sigma$.
 
-*Proof.* Well definedness is the linearity of the assignment over the span of the $L_a$. Multiplicativity: $(L_aL_b)^* = L_{ab}^* = L_{\sigma(ab)} = L_{\sigma(a)\sigma(b)} = L_{\sigma(a)}L_{\sigma(b)} = L_a^*L_b^*$. Order two: $(L_a^*)^* = L_{\sigma^2(a)} = L_a$. The identification with $\sigma$ is the definition. $\square$
+*Proof.* Well definedness is the linearity of the assignment over the span of the $L_a$. Multiplicativity: $(L_aL_b)^* = L_{ab}^* = L_{\sigma(ab)} = L_{\sigma(a)\sigma(b)} = L_{\sigma(a)}L_{\sigma(b)} = L_a^*L_b^*$. Order two: $(L_a^*)^* = L_{\sigma^2(a)} = L_a$. The identification with $\sigma$ is the definition.
 
 **Corollary.** The multiplication algebra is an **involutive commutative algebra** in the sense of *Involutive Algebras*, with the involution ${}^{*}$; its fixed subalgebra is $\operatorname{Mult}(A)^*\cong A^\sigma$ and its skew part is $L_{A^-}$.
 
-*Proof.* The involution is an automorphism of order two; the fixed elements are the $L_a$ with $\sigma(a) = a$, giving the first identification; the skew elements are the $L_a$ with $\sigma(a) = -a$. $\square$
+*Proof.* The involution is an automorphism of order two; the fixed elements are the $L_a$ with $\sigma(a) = a$, giving the first identification; the skew elements are the $L_a$ with $\sigma(a) = -a$.
 
 ## The Fixed Part and Compatibility
 
@@ -52,7 +52,7 @@ $$
 
 and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^*\oplus\operatorname{Mult}(A)^-$ when $2$ is invertible.
 
-*Proof.* The isomorphism $a\mapsto L_a$ carries the fixed elements of $A$ to the fixed elements of the operators and the skew elements to the skew elements, and preserves the direct sum. $\square$
+*Proof.* The isomorphism $a\mapsto L_a$ carries the fixed elements of $A$ to the fixed elements of the operators and the skew elements to the skew elements, and preserves the direct sum.
 
 **Corollary.** The fixed part is the multiplication algebra of the fixed subalgebra, $\operatorname{Mult}(A)^*\cong\operatorname{Mult}(A^\sigma)$; the multiplication operators invariant under the involution are exactly the multiplications by the invariant elements of the algebra.
 
@@ -60,15 +60,15 @@ and $\operatorname{Mult}(A) = \operatorname{Mult}(A)^*\oplus\operatorname{Mult}(
 
 **Proposition.** The induced involution is compatible with composition, $(FG)^* = G^*F^*$ for all $F, G\in\operatorname{Mult}(A)$; since the algebra is commutative this reads $(FG)^* = F^*G^*$ as well, and the two orders agree.
 
-*Proof.* Write $F = \sum\lambda_aL_a$, $G = \sum\mu_bL_b$; the anti-multiplicativity and the multiplicativity of ${}^{*}$ coincide because the products commute. $\square$
+*Proof.* Write $F = \sum\lambda_aL_a$, $G = \sum\mu_bL_b$; the anti-multiplicativity and the multiplicativity of ${}^{*}$ coincide because the products commute.
 
 **Proposition (action on a module).** Let $M$ be an $A$-module and let $\rho : \operatorname{Mult}(A)\to\operatorname{End}_R(M)$ be the action, $\rho(L_a)(m) = a\cdot m$. Then $\rho(L_a^*)$ acts by the twisted scalar: $\rho(L_a^*)(m) = \sigma(a)\cdot m$. If moreover $M$ carries a $\sigma$-semilinear involution $\tau$ compatible with the action, then $\rho(L_a^*)\tau = \tau\rho(L_a)$.
 
-*Proof.* $\rho(L_a^*) = \rho(L_{\sigma(a)})$ acts by $\sigma(a)$; the compatibility with $\tau$ is $\tau(a\cdot m) = \sigma(a)\cdot\tau(m)$, which is the assumed semilinearity. $\square$
+*Proof.* $\rho(L_a^*) = \rho(L_{\sigma(a)})$ acts by $\sigma(a)$; the compatibility with $\tau$ is $\tau(a\cdot m) = \sigma(a)\cdot\tau(m)$, which is the assumed semilinearity.
 
 **Proposition (naturality).** Let $\varphi : (A,\sigma)\to(B,\tau)$ be a $\sigma$-equivariant homomorphism of involutive commutative algebras. Then the induced map $\operatorname{Mult}(\varphi) : \operatorname{Mult}(A)\to\operatorname{Mult}(B)$, $L_a\mapsto L_{\varphi(a)}$, satisfies $\operatorname{Mult}(\varphi)(F^*) = \operatorname{Mult}(\varphi)(F)^*$.
 
-*Proof.* On the generators $L_a$: $\operatorname{Mult}(\varphi)(L_a^*) = \operatorname{Mult}(\varphi)(L_{\sigma(a)}) = L_{\varphi\sigma(a)} = L_{\tau\varphi(a)} = \operatorname{Mult}(\varphi)(L_a)^*$, and the maps are linear. $\square$
+*Proof.* On the generators $L_a$: $\operatorname{Mult}(\varphi)(L_a^*) = \operatorname{Mult}(\varphi)(L_{\sigma(a)}) = L_{\varphi\sigma(a)} = L_{\tau\varphi(a)} = \operatorname{Mult}(\varphi)(L_a)^*$, and the maps are linear.
 
 ## Examples
 

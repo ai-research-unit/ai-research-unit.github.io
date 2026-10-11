@@ -232,7 +232,7 @@ takes values in $\mathbb{C}$ rather than in $\mathbb{R}$. The comparison isolate
 | Classes of elements | two (zero, invertible) | three (invertible, zero divisor, zero) |
 | Group of units | $\mathbb{R}_{>0}\times Sp(1)$ | $GL_2(\mathbb{C})$, connected |
 
-In the biquaternion case the norm is a complex-valued quadratic form, its zero set is the null cone, and an element with $N = 0$ but $\tilde Q\neq 0$ is a genuine zero divisor; the three-way classification is then a genuine trichotomy. Here the quaternion norm is real and positive definite, the null cone degenerates to the origin, the middle class of the classification is empty, and the unit group is the product of a line and a compact group. The biquaternion case is treated in *Biquaternion Norm and Invertibility*.
+In the biquaternion case the norm is a complex-valued quadratic form, its zero set is the null cone, and an element with $N = 0$ but $\tilde Q\neq 0$ is a genuine zero divisor; the three-way classification is then a genuine trichotomy. Here the quaternion norm is real and positive definite, the null cone degenerates to the origin, the middle class of the classification is empty, and the unit group is the product of a line and a compact group. The biquaternion case is treated in *Norm and Invertibility in the General Plain Algebra*.
 
 ## Summary
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article treats the ideal theory of the split-complex algebra $\mathbb{D}$ and the Peirce decomposition attached to its idempotents. It is the two-dimensional counterpart of *Biquaternion Ideals and Peirce Decomposition*, and the contrast is complete: the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is **simple**, with no nontrivial two-sided ideals, while $\mathbb{D}$ is a commutative product $\mathbb{R}\oplus\mathbb{R}$ with two nontrivial two-sided ideals and a finite Boolean lattice of them.
+This article treats the ideal theory of the split-complex algebra $\mathbb{D}$ and the Peirce decomposition attached to its idempotents. It is the two-dimensional counterpart of *Ideals and Peirce Decomposition of the General Plain Algebra*, and the contrast is complete: the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is **simple**, with no nontrivial two-sided ideals, while $\mathbb{D}$ is a commutative product $\mathbb{R}\oplus\mathbb{R}$ with two nontrivial two-sided ideals and a finite Boolean lattice of them.
 
 The article records the definition of an ideal in a commutative algebra, determines the two-sided ideals, exhibits the two minimal ideals $\mathbb{R}\Pi_{1,2}$, writes the Peirce decomposition of $\mathbb{D}$ with respect to an idempotent, computes the lattice of ideals, and identifies the radical. The failure of simplicity is stated with its reason, and compared throughout with the simplicity of $\mathbb{B}$ over $\mathbb{C}$.
 

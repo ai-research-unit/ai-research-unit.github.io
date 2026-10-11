@@ -31,7 +31,7 @@ $$
 \ker\wedge=\mathsf{M}_2^{-1}(\mathbb{C}\,\mathrm{I}_2)=\mathbb{C}_{\mathbb{B}}.
 $$
 
-*Proof.* The model is an algebra isomorphism, so $\mathsf{M}_2(\tilde P\tilde Q-\tilde Q\tilde P)=[\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)]$ and half of it is the image of the bracket. An element of the vector subspace has $Q_0=0$ and image of trace zero, and conversely a trace-free matrix has the second coefficient $Q_0$ zero, so it is the image of a vector element; the kernel of the bracket is the centre by *The Lie Algebra of the Antisymmetric Plain Algebra*, and its image under $\mathsf{M}_2$ is the scalar matrices, because $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ vanishes exactly on the vector subspace. Verified on general elements. $\square$
+*Proof.* The model is an algebra isomorphism, so $\mathsf{M}_2(\tilde P\tilde Q-\tilde Q\tilde P)=[\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)]$ and half of it is the image of the bracket. An element of the vector subspace has $Q_0=0$ and image of trace zero, and conversely a trace-free matrix has the second coefficient $Q_0$ zero, so it is the image of a vector element; the kernel of the bracket is the centre by *The Lie Algebra of the Antisymmetric Plain Algebra*, and its image under $\mathsf{M}_2$ is the scalar matrices, because $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$ vanishes exactly on the vector subspace.
 
 **Remark (the block is the matrix commutator).** **The antisymmetric plain algebra is, in this model, the halved commutator of the two by two complex matrices, its image is $\mathfrak{sl}(2,\mathbb{C})$ and its kernel is the centre.** The scalar part of the biquaternion is the trace of the matrix, split in two, and the bracket annihilates it; the vector part is the trace-free part, of complex dimension three, and the bracket is the commutator there. The trace-free matrices with the commutator are the Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ of *Structure of Lie Algebras*, and the block's halved bracket is the same Lie algebra under the rescaling $\tilde P\mapsto2\tilde P$.
 
@@ -43,7 +43,7 @@ $$
 
 and the Lie algebra it makes of the trace-free matrices is $\mathfrak{sl}(2,\mathbb{C})$, of complex dimension three.
 
-*Proof.* The bracket is the commutator of the associative matrix product, which satisfies the Jacobi identity as the expansion of the associativity, *Associative Algebras*; the halving carries the identity unchanged on each side. Verified on the model. $\square$
+*Proof.* The bracket is the commutator of the associative matrix product, which satisfies the Jacobi identity as the expansion of the associativity, *Associative Algebras*; the halving carries the identity unchanged on each side.
 
 ## The Trace Form and the Killing Form
 
@@ -55,7 +55,7 @@ $$
 
 so the trace form of the two-dimensional model is the Killing form of the block.
 
-*Proof.* With $\mathsf{M}_2(\tilde P)=-i\,\mathbf{P}\cdot\sigma$ and $\mathsf{M}_2(\tilde Q)=-i\,\mathbf{Q}\cdot\sigma$ one has $\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)=-(\mathbf{P}\cdot\sigma)(\mathbf{Q}\cdot\sigma)=-(\mathbf{P}\cdot\mathbf{Q})\mathrm{I}_2-i(\mathbf{P}\times\mathbf{Q})\cdot\sigma$, whose trace is $-2\,\mathbf{P}\cdot\mathbf{Q}$ because the Pauli matrices are trace-free; this is the formula of *The Killing Form of the Antisymmetric Plain Algebra*. Verified on general elements. $\square$
+*Proof.* With $\mathsf{M}_2(\tilde P)=-i\,\mathbf{P}\cdot\sigma$ and $\mathsf{M}_2(\tilde Q)=-i\,\mathbf{Q}\cdot\sigma$ one has $\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)=-(\mathbf{P}\cdot\sigma)(\mathbf{Q}\cdot\sigma)=-(\mathbf{P}\cdot\mathbf{Q})\mathrm{I}_2-i(\mathbf{P}\times\mathbf{Q})\cdot\sigma$, whose trace is $-2\,\mathbf{P}\cdot\mathbf{Q}$ because the Pauli matrices are trace-free; this is the formula of *The Killing Form of the Antisymmetric Plain Algebra*.
 
 **Remark (the two objects of the block).** The model is the smallest faithful representation of the derived algebra, of complex dimension two, and its trace form is the invariant form itself: **the two objects of the block, the bracket and the form, are in this model the commutator and the trace. The identification is the reason the block is called the Lie block.** The scalar matrices, the kernel, are the centre; the trace-free matrices, the image, are the derived algebra; and the two are the two-dimensional model of the decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$.
 

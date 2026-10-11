@@ -169,7 +169,6 @@ B_i^a=-D_i\phi^a ,
 E_i^a=D_iA_0^a ,
 $$
 
-<!-- CONVENTION — BPS orientation: this article's first-order equation is written $B_i^a=-D_i\phi^a$, and it is the sign that saturates the completion of the square for the orientation convention $\mathcal A_i^a=\varepsilon_{aij}\hat x_j(1-K)/r$ used here. With the corpus's adjoint covariant derivative $D_i\phi^a=\partial_i\phi^a+g\varepsilon_{bca}\mathcal A_i^b\phi^c$ that convention gives the asymptotic field $B_i^a\to-\hat x_i\hat x_a/r^2$, and the hedgehog satisfies $B_i^a=-D_i\phi^a$ with the two coefficients of $D_i{}^a=g(r)\delta_{ia}+d(r)\hat x_i\hat x_a$ reversed, verified to $10^{-12}$; the profiles are $K=r/\sinh r$, $h/v=\coth r-1/r$ and the radial equations are stated in the text. Changing this sign without changing the orientation convention as well reverses the sign of the magnetic charge and destroys the bound $E\ge vg_m$. Do not flip it in isolation. -->
 
 so that the dyon is a BPS state on the same footing as the monopole. Its mass saturates the Bogomolny bound for the combined charge,
 

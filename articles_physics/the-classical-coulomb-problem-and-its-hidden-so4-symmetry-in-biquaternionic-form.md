@@ -182,7 +182,6 @@ $$
 
 and the six operators $L_k, R_k$ of left and right multiplication were confirmed antisymmetric on $\mathbb{H}$, with $[L_i,L_j] = 2\epsilon_{ijk}L_k$, $[R_i,R_j] = -2\epsilon_{ijk}R_k$, $[L_i,R_j] = 0$ and $\sum_kL_k^2 = \sum_kR_k^2 = -3\,e_0$. The last identity is the statement of equal Casimirs, and its value divided by the square of the generator normalization gives $\tfrac34$, that is $j(j+1)$ at $j = \tfrac12$.
 
-<!-- CONVENTION — what the algebra contains at dimension six: the claim that $\mathbb{B}$ carries an $\mathrm{SO}(3,1)$ but no $\mathrm{SO}(4)$ is deliberate and is not a miscount. $\mathbb{M}_-$ is closed under the commutator and is $\mathrm{U}(2)$, of real dimension four; since the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$ is $\mathrm{U}(2)$, no compact six-dimensional algebra embeds, whereas the traceless part $\mathrm{SL}(2,\mathbb{C}) \cong \mathrm{SO}(3,1)$ is six-dimensional and does embed. The $\mathrm{SO}(4)$ that appears in this article is either the phase-space symmetry of the Coulomb problem or the bimultiplication algebra of the algebra on itself, never a commutator subalgebra of the biquaternions. A reviewer must not "repair" this by putting $\mathrm{SO}(4)$ inside $\mathbb{B}$. -->
 
 ## The Classical Origin of the Degeneracy
 

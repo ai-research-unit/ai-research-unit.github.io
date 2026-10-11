@@ -78,7 +78,6 @@ $$
 
 is the Riemann–Silberstein vector. The identification of $\mathbf{V}$ with a complex three-vector is precisely the identification of a real two-form with an element of the complex vector part, and it is the identification that makes the self-dual split transparent: the complex structure that appears in $\mathbf{V}$ is the algebra's scalar imaginary, and it is the same complex structure that defines the Hodge dual, as the next section shows.
 
-<!-- CONVENTION — field-strength carrier: the real two-form space is identified with the real vector part $\mathrm{Vect}(\mathbb{B})$ through $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$, so that the algebra's complex structure and the Hodge dual are the same structure up to sign. The identification uses the algebra's $i$; it is not a further complexification. Do not "complete" the vector part to a complex two-form space before applying $\star$: the complexification is the step taken in the section on the split, not part of the carrier's definition. -->
 
 ## The Hodge Dual on the Vector Part
 
@@ -141,7 +140,6 @@ $$
 
 the scalar imaginary being central, so that left and right multiplication agree. The statement is intrinsic: no Clifford generator, no gamma matrix, and no choice of representation enters. The Hodge dual of the framework's field strength is the scalar imaginary acting on the vector part of the algebra.
 
-<!-- CONVENTION — duality sign: with the companion field-strength article's convention $\star(\mathbf{E},\mathbf{B})=(c\mathbf{B},-\mathbf{E}/c)$, $\star^2=-1$, the self-dual combination is $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$, on which $\star=-i$. The component-wise $ict$ dual with $(\star F)_{0k}=B_k$ is $-i$ times this one and has $\star^2=+1$; it is the same decomposition with real $\pm1$ eigenfields. Do not "correct" the sign of $\star\tilde{F}=-i\tilde{F}$: the other sign exchanges the names self-dual and anti-self-dual and changes nothing else. -->
 
 ## The Self-Dual and Anti-Self-Dual Split
 
@@ -198,7 +196,6 @@ the two pieces are independent and transform separately under the Lorentz group,
 
 The split is Lorentz covariant, and the reason is short. The Lorentz action on the field strength is complex-linear on the Riemann–Silberstein vector: writing a boost as a complex $3\times3$ matrix $M$ acting on $\mathbf{V}$, the same boost acts on $i\mathbf{V}$ as $iM$, so the action commutes with multiplication by $i$ and consequently $\star$ commutes with the boost and maps each half to itself. The two halves are therefore invariant subspaces of the Lorentz action, which is what it means for them to be the two three-dimensional complex representations.
 
-<!-- CONVENTION — self-dual half and the algebra's complex structure: the projectors $\tilde\Pi_{sd,asd}=\tfrac12(1\pm i\star)$ require an external complexification of the real vector part, because the vector part is already complex with the algebra's $i$. On a real field the self-dual coordinate is the field-strength biquaternion and the anti-self-dual coordinate is the combination $\mathbf{V}^*$ carried by its coefficient conjugate. Do not identify the external complexification with the algebra's scalar imaginary: they are distinct structures, and conflating them makes the real form of the six-dimensional complex space disappear. In particular do not write $\star\tilde{F}^*=+i\tilde{F}^*$: the dual anticommutes with coefficient conjugation, $\star(\tilde{F}^*)=-(\star\tilde{F})^*$, so $\tilde{F}^*$ has the same dual eigenvalue $-i$ as $\tilde{F}$, and the $+i$ belongs to the coordinate $\mathbf{V}^*$. -->
 
 ## The Spin Content of the Two Halves
 

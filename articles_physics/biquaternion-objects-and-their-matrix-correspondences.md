@@ -91,7 +91,7 @@ The two maps above are not the only realizations of the algebra. Beside them the
 
 - the **coefficient four-vector**, writing the element as a column of its four complex coordinates in the space $\mathbb{C}^4$, owned by *The Four-Vector Element Representation of Biquaternions*;
 - the **spinor module** $V=\mathbb{C}^2$, the two-dimensional complex space on which $\mathsf{M}_2(\tilde{Q})$ acts by multiplication, of complex dimension $2$ and real dimension $4$; this is the spin representation of the algebra, owned by *Biquaternion Spin Geometry*, and its module theory is *Modules over the General Plain Algebra of Biquaternions*;
-- the **even Clifford algebra** $\mathrm{Cl}_{1,3}^{+}$, isomorphic to $\mathbb{B}$ as a real algebra and hence also to $M_2(\mathbb{C})$ as a real algebra, owned by *The Clifford Algebra Representation*;
+- the **even Clifford algebra** $\mathrm{Cl}_{1,3}^{+}$, isomorphic to $\mathbb{B}$ as a real algebra and hence also to $M_2(\mathbb{C})$ as a real algebra, owned by *The Realification of the General Plain Algebra*;
 - the **realification** $\mathsf{M}_4$ over $\mathbb{R}$, writing the operator as an $8\times8$ real matrix, since the algebra is the real space $\mathbb{R}^8$;
 - the **real Clifford algebra** $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, the opposite-sign companion, in which the biquaternions sit as the even part and so are written as $4\times4$ real matrices;
 - the **quaternionic matrix algebra** $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, in which the biquaternions sit as the even part and so are written as $2\times2$ quaternionic matrices.

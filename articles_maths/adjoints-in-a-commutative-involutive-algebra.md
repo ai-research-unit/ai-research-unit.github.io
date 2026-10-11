@@ -18,7 +18,7 @@ $$
 B(Fx,y) = B(x,F^{\dagger}y) \qquad \text{for all } x, y \in A .
 $$
 
-*Proof.* The map $y\mapsto B(F\,\cdot\,,y)$ is $R$-linear, so it is an element of the dual of $A$; non-degeneracy identifies the dual with $A$ through $z\mapsto B(\,\cdot\,,z)$, so there is a unique $z$ with $B(Fx,y) = B(x,z)$ for all $x$; put $F^{\dagger}y = z$. The assignment is additive and $R$-linear in $F$ and in $y$ because $B$ is bilinear. $\square$
+*Proof.* The map $y\mapsto B(F\,\cdot\,,y)$ is $R$-linear, so it is an element of the dual of $A$; non-degeneracy identifies the dual with $A$ through $z\mapsto B(\,\cdot\,,z)$, so there is a unique $z$ with $B(Fx,y) = B(x,z)$ for all $x$; put $F^{\dagger}y = z$. The assignment is additive and $R$-linear in $F$ and in $y$ because $B$ is bilinear.
 
 ### The Adjoint Involution
 
@@ -30,7 +30,7 @@ $$
 
 Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{End}_R(A)$, in the sense of *Involutive Algebras*.
 
-*Proof.* Additivity and $R$-linearity are the bilinearity of $B$; the order two is the reflexivity: $B(Fx,y) = B(x,F^{\dagger}y) = B((F^\dagger)^\dagger x,y)$ gives $(F^\dagger)^\dagger = F$ by non-degeneracy; the anti-multiplicativity is $B(FGx,y) = B(Gx,F^{\dagger}y) = B(x,G^{\dagger}F^{\dagger}y)$. $\square$
+*Proof.* Additivity and $R$-linearity are the bilinearity of $B$; the order two is the reflexivity: $B(Fx,y) = B(x,F^{\dagger}y) = B((F^\dagger)^\dagger x,y)$ gives $(F^\dagger)^\dagger = F$ by non-degeneracy; the anti-multiplicativity is $B(FGx,y) = B(Gx,F^{\dagger}y) = B(x,G^{\dagger}F^{\dagger}y)$.
 
 ## The Adjoint Involution and the Self-Adjoint Part
 
@@ -40,7 +40,7 @@ Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{
 
 **Proposition.** The self-adjoint operators form a Jordan algebra under $F\bullet G = \tfrac12(FG+GF)$ and the skew-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.
 
-*Proof.* This is *Involutive Algebras* applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group. $\square$
+*Proof.* This is *Involutive Algebras* applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group.
 
 ### The Adjoint of a Multiplication
 
@@ -49,7 +49,7 @@ $$
 L_a^{\dagger} = L_{\sigma(a)} .
 $$
 
-*Proof.* $B(L_ax,y) = B(ax,y) = B(x,\sigma(a)y) = B(x,L_{\sigma(a)}y)$ for all $x,y$, so $L_{\sigma(a)}$ satisfies the defining relation of the adjoint, and the adjoint is unique. $\square$
+*Proof.* $B(L_ax,y) = B(ax,y) = B(x,\sigma(a)y) = B(x,L_{\sigma(a)}y)$ for all $x,y$, so $L_{\sigma(a)}$ satisfies the defining relation of the adjoint, and the adjoint is unique.
 
 **Corollary (consistency with the induced involution).** The restriction of the adjoint involution ${}^{\dagger}$ to the multiplication operators is the induced involution of *Involutions of the Multiplication Operators*: $L_a^{\dagger} = L_a^{*}$. Hence the fixed part of the multiplication algebra is the multiplication algebra of the fixed subalgebra, and the two constructions of the involution of $\operatorname{Mult}(A)$ coincide.
 
@@ -59,7 +59,7 @@ L_aL_a^{\dagger} = L_{a\sigma(a)} = L_a^{\dagger}L_a ,
 $$
 because the algebra is commutative; the multiplication operators therefore lie in the **normal** part of $\operatorname{End}_R(A)$, and $L_a$ is self-adjoint exactly when $\sigma(a) = a$ and skew-adjoint exactly when $\sigma(a) = -a$.
 
-*Proof.* $L_aL_a^{\dagger} = L_aL_{\sigma(a)} = L_{a\sigma(a)}$ and $L_a^{\dagger}L_a = L_{\sigma(a)}L_a = L_{\sigma(a)a}$, and $a\sigma(a) = \sigma(a)a$. $\square$
+*Proof.* $L_aL_a^{\dagger} = L_aL_{\sigma(a)} = L_{a\sigma(a)}$ and $L_a^{\dagger}L_a = L_{\sigma(a)}L_a = L_{\sigma(a)a}$, and $a\sigma(a) = \sigma(a)a$.
 
 ## Examples
 

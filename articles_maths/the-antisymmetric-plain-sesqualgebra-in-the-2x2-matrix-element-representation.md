@@ -15,7 +15,7 @@ half the difference of the conjugate-transposed product and its **adjoint matrix
 
 The image is the **traceless** matrices, of complex dimension three, the **traceless skew-Hermitian** matrices among them, a real three-dimensional space, being the image of the real vector triple; the rank of a value is two, one or zero according to the **isotropy** of the value for the complex bilinear norm form, not according to the vanishing of the value. The distinction between the two forms carried by the block is the point of the article: the positive definite form $H(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)$ vanishes only on the zero value, while the determinant of the matrix of the value, which is the complex bilinear form $\sum_\mu V_\mu^2$, vanishes on the whole isotropic cone.
 
-The setting and the notation are those of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the model and its invariants are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the form $H$, the norm $N$ and the zero divisors are *Biquaternion Norm and Invertibility*; the operator whose invariants appear here is *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra*; and the invariants of a linear map are *Linear Maps and Matrices*, §*Rank* and §*The Trace and the Determinant of a Matrix*. The purity list of the pass is respected: the matrix invariants are the rank, the trace and the determinant, and no word of distance, of limit or of continuity occurs.
+The setting and the notation are those of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the model and its invariants are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the form $H$, the norm $N$ and the zero divisors are *Norm and Invertibility in the General Plain Algebra*; the operator whose invariants appear here is *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra*; and the invariants of a linear map are *Linear Maps and Matrices*, §*Rank* and §*The Trace and the Determinant of a Matrix*. The matrix invariants are the rank, the trace and the determinant.
 
 ## The Model
 
@@ -33,7 +33,7 @@ $$
 
 the **traceless part** of the matrix.
 
-*Proof.* $\mathsf{M}_2(\tilde X)=X_0I-i(X_1\sigma_1+X_2\sigma_2+X_3\sigma_3)$ and $\operatorname{Tr}\mathsf{M}_2(\tilde X)=2X_0$, so subtracting $\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde X)I=X_0I$ leaves $-i\sum_kX_k\sigma_k=\mathsf{M}_2(\mathrm{Vect}\tilde X)$. $\square$
+*Proof.* $\mathsf{M}_2(\tilde X)=X_0I-i(X_1\sigma_1+X_2\sigma_2+X_3\sigma_3)$ and $\operatorname{Tr}\mathsf{M}_2(\tilde X)=2X_0$, so subtracting $\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde X)I=X_0I$ leaves $-i\sum_kX_k\sigma_k=\mathsf{M}_2(\mathrm{Vect}\tilde X)$.
 
 ## The Block in the Model
 
@@ -46,7 +46,7 @@ $$
 \qquad M=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}.
 $$
 
-*Proof.* $\mathsf{M}_2$ is multiplicative and carries ${}^{*}$ to the conjugate transpose, so $\mathsf{M}_2(\tilde P\tilde Q^{*})=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}=M$; the block is the vector part, so the vector part of the model gives the first display, and the second is the identity $\operatorname{adj}(M)=\operatorname{Tr}(M)I-M$ of the $2\times2$ matrices. Verified on random pairs. $\square$
+*Proof.* $\mathsf{M}_2$ is multiplicative and carries ${}^{*}$ to the conjugate transpose, so $\mathsf{M}_2(\tilde P\tilde Q^{*})=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}=M$; the block is the vector part, so the vector part of the model gives the first display, and the second is the identity $\operatorname{adj}(M)=\operatorname{Tr}(M)I-M$ of the $2\times2$ matrices.
 
 **Corollary (the two halves of the product).** The product and the block are the two terms of the split of the matrix product,
 
@@ -65,7 +65,7 @@ $$
 
 so the block is literally $\tfrac12\bigl(\mathsf{M}_2(\tilde P\tilde Q^{*})-\mathsf{M}_2(\overline{\tilde Q\tilde P^{*}})\bigr)$, the model of the definition. The adjoint matrix is **not** the conjugate transpose of $M$; the conjugate transpose is the model of ${}^{*}$, and the two coincide only on the special pairs.
 
-*Proof.* $\overline{\tilde Q\tilde P^{*}}=\mathrm{Nat}(\tilde P\tilde Q^{*})$, since the natural conjugation of a Hermitian element is its coefficientwise conjugate; applying $\mathsf{M}_2$ and the identity $\mathsf{M}_2(\tilde X^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde X)$ gives the display. $\square$
+*Proof.* $\overline{\tilde Q\tilde P^{*}}=\mathrm{Nat}(\tilde P\tilde Q^{*})$, since the natural conjugation of a Hermitian element is its coefficientwise conjugate; applying $\mathsf{M}_2$ and the identity $\mathsf{M}_2(\tilde X^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde X)$ gives the display.
 
 **Remark (the matrix reading of the two conjugations).** In the model the conjugations of the block are three distinct matrix operations: the coefficientwise conjugation of the algebra is $\operatorname{adj}\circ{}^{\dagger}$ in the model, since $\overline{\tilde X}=\mathrm{Nat}(\tilde X^{*})$ and $\mathsf{M}_2(\tilde X^{*})=\mathsf{M}_2(\tilde X)^{\dagger}$; the natural conjugation is $\operatorname{adj}$; and the Hermitian conjugation is the conjugate transpose ${}^{\dagger}$. The block uses the first and the second, through the identity of the corollary, and not the third alone.
 
@@ -82,7 +82,7 @@ $$
 
 the **traceless** matrices, of complex dimension three; the **traceless skew-Hermitian** matrices among them, the real three-dimensional space spanned over $\mathbb{R}$ by $-i\sigma_1,-i\sigma_2,-i\sigma_3$, are the image of the real vector triple $\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$.
 
-*Proof.* The value $\tilde P\diamond\tilde Q$ is a pure vector, so its matrix is traceless; the three matrices $-i\sigma_k$ are $\mathbb{C}$-linearly independent and have zero trace, so the image is the whole traceless space, of complex dimension three, which is the complex dimension of $\mathrm{Vect}(\mathbb{B})$. Each $-i\sigma_k$ is skew-Hermitian, $(-i\sigma_k)^{\dagger}=i\sigma_k=-(-i\sigma_k)$, so a real combination of the three is skew-Hermitian; a combination with a non-real coefficient has a Hermitian part and is not, so the traceless skew-Hermitian matrices are exactly the image of the real vector triple. Verified on the model. $\square$
+*Proof.* The value $\tilde P\diamond\tilde Q$ is a pure vector, so its matrix is traceless; the three matrices $-i\sigma_k$ are $\mathbb{C}$-linearly independent and have zero trace, so the image is the whole traceless space, of complex dimension three, which is the complex dimension of $\mathrm{Vect}(\mathbb{B})$. Each $-i\sigma_k$ is skew-Hermitian, $(-i\sigma_k)^{\dagger}=i\sigma_k=-(-i\sigma_k)$, so a real combination of the three is skew-Hermitian; a combination with a non-real coefficient has a Hermitian part and is not, so the traceless skew-Hermitian matrices are exactly the image of the real vector triple.
 
 **Theorem (the invariants).** For every value $\tilde V=\tilde P\diamond\tilde Q$ of the block,
 
@@ -103,7 +103,7 @@ $$
 \end{cases}
 $$
 
-*Proof.* The trace vanishes because the value is a pure vector, by the preceding theorem; the determinant is $\det\mathsf{M}_2(\tilde X)=N(\tilde X)$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\mathsf{M}_2(\tilde V)=N(\tilde V)$, so the rank is two exactly when the determinant is nonzero; otherwise the matrix is nonzero and traceless — hence of rank one — or it is zero. Verified on the model. $\square$
+*Proof.* The trace vanishes because the value is a pure vector, by the preceding theorem; the determinant is $\det\mathsf{M}_2(\tilde X)=N(\tilde X)$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\mathsf{M}_2(\tilde V)=N(\tilde V)$, so the rank is two exactly when the determinant is nonzero; otherwise the matrix is nonzero and traceless — hence of rank one — or it is zero.
 
 **Corollary (the two forms of the value).** The two forms attached to a value are read differently in the model: the **positive definite** form of the block is
 
@@ -114,7 +114,7 @@ $$
 
 which vanishes only at $\tilde V=0$, while the **complex bilinear** form is the determinant $\det\mathsf{M}_2(\tilde V)=\sum_\mu V_\mu^2$, which vanishes on the isotropic cone $N(\tilde V)=0$, a quadric that contains the nonzero values, for instance $\tilde V=e_1+ie_2$. The block therefore has a value of rank one, $e_1+ie_2$, whose matrix is traceless and has zero determinant; the rank of the matrix reads the bilinear form, and the positivity of the Hilbert–Schmidt pairing reads the definite one.
 
-**Remark (the isotropic value).** The value $e_1+ie_2$ has $N=1+i^2=1-1=0$, so its matrix is a nonzero traceless matrix of determinant zero, of rank one; the value $e_1+e_2$ has $N=1+1=2\neq0$, so its matrix has rank two. The determinant of the matrix of the value is therefore not a definitive test of the vanishing of the value, and the definite form $H$ is needed for that; the distinction is the same as the one of *Biquaternion Norm and Invertibility*, §*The Euclidean Norm and the Hermitian Form*.
+**Remark (the isotropic value).** The value $e_1+ie_2$ has $N=1+i^2=1-1=0$, so its matrix is a nonzero traceless matrix of determinant zero, of rank one; the value $e_1+e_2$ has $N=1+1=2\neq0$, so its matrix has rank two. The determinant of the matrix of the value is therefore not a definitive test of the vanishing of the value, and the definite form $H$ is needed for that; the distinction is the same as the one of *Norm and Invertibility in the General Plain Algebra*, §*The Euclidean Norm and the Hermitian Form*.
 
 ## The Matrix Form of the Pairing
 
@@ -124,7 +124,7 @@ $$
 H(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}\bigr).
 $$
 
-*Proof.* $\operatorname{Tr}\mathsf{M}_2(\tilde X)=2X_0$; hence $\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger})=\operatorname{Tr}\mathsf{M}_2(\tilde P\tilde Q^{*})=2H(\tilde P,\tilde Q)$. Verified on random pairs. $\square$
+*Proof.* $\operatorname{Tr}\mathsf{M}_2(\tilde X)=2X_0$; hence $\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger})=\operatorname{Tr}\mathsf{M}_2(\tilde P\tilde Q^{*})=2H(\tilde P,\tilde Q)$.
 
 **Corollary (the pairing of the block).** For the block,
 
@@ -143,7 +143,7 @@ $$
 
 and the invariance $\beta(\tilde P\diamond\tilde Q,\tilde R)=-\overline{\beta(\tilde P,\tilde Q\diamond\tilde R)}$ holds **degenerately**, both members vanishing with the trace of the value; no invariant form is non-degenerate.
 
-*Proof.* $\operatorname{Tr}\mathsf{M}_2(\tilde X)=2X_0$, so $\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde X)\overline{\operatorname{Tr}\mathsf{M}_2(\tilde Y)}=X_0\overline{Y_0}$, which is the invariant form of *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, §*The Invariance Forms*; the degeneracy is the vanishing of the trace of a block value. $\square$
+*Proof.* $\operatorname{Tr}\mathsf{M}_2(\tilde X)=2X_0$, so $\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde X)\overline{\operatorname{Tr}\mathsf{M}_2(\tilde Y)}=X_0\overline{Y_0}$, which is the invariant form of *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, §*The Invariance Forms*; the degeneracy is the vanishing of the trace of a block value.
 
 **Remark (the invariants of the operator in the model).** The operator $L^{\diamond}_{\tilde A}$ of *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra* acts on the model by $\mathsf{M}_2(\tilde X)\mapsto\mathsf{M}_2(\tilde A)\mathsf{M}_2(\tilde X)^{\dagger}-\tfrac12\operatorname{Tr}(\cdot)I$, a map of the traceless part of the conjugate-transposed product; its invariants are those computed there, trace zero and characteristic polynomial $\lambda^{2}(\lambda^{2}-1)^{3}$ at $\tilde A=e_0$ and $\lambda^{4}(\lambda^{2}+1)^{2}$ at $\tilde A=e_k$, and they are unchanged by the model, the realization being a $*$-isomorphism.
 
@@ -199,5 +199,5 @@ In the $2\times2$ model the block is the traceless part of the conjugate-transpo
 - *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-adjoint-operators-and-the-sandwich-of-the-antisymmetric-plain-sesqualgebra.md`), for the operator whose invariants the model carries
 - *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the product of the row and the form in the model
 - *The Antisymmetric Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-antisymmetric-plain-sesqualgebra-in-the-4x4-matrix-element-representation.md`), for the reading on the regular model
-- *Biquaternion Norm and Invertibility* (`articles_maths/biquaternion-norm-and-invertibility.md`), for the two forms, the norm, the zero divisors and the isotropic cone
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the two forms, the norm, the zero divisors and the isotropic cone
 - *Linear Maps and Matrices* (`articles_maths/linear-maps-and-matrices.md`), for the matrix of a linear map and its invariants

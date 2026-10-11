@@ -23,15 +23,15 @@ $$
 \lVert (c-it)x\rVert^2 = \lVert x^*(c^2+t^2)x\rVert = \lVert (cx)^*(cx) + t^2\,x^*x\rVert \geq t^2\,\lVert x^*x\rVert = t^2\lVert x\rVert^2 ,
 $$
 
-using that a sum of positive elements dominates each summand in the order of *Self-Adjoint Elements and the Positive Cone*, and $\lVert x^*x\rVert = \lVert x\rVert^2$. Hence $a - \lambda$ is injective with closed range and its inverse on the range has norm at most $\lvert t\rvert^{-1}$; the same inequality applied to $(a-\lambda)^* = a - \bar\lambda$ shows the range is dense, so $a - \lambda$ is invertible and $\lambda \notin \sigma(a)$, with the stated bound. $\square$
+using that a sum of positive elements dominates each summand in the order of *Self-Adjoint Elements and the Positive Cone*, and $\lVert x^*x\rVert = \lVert x\rVert^2$. Hence $a - \lambda$ is injective with closed range and its inverse on the range has norm at most $\lvert t\rvert^{-1}$; the same inequality applied to $(a-\lambda)^* = a - \bar\lambda$ shows the range is dense, so $a - \lambda$ is invertible and $\lambda \notin \sigma(a)$, with the stated bound.
 
 **Corollary (the norm is the spectral radius).** For a self-adjoint $a$, $\lVert a\rVert = r(a)$. For a normal $a$, likewise $\lVert a\rVert = r(a)$, and $\lVert a\rVert = r(a^*a)^{1/2}$.
 
-**Proof.** The spectral radius formula gives $r(a) \leq \lVert a\rVert$ always. For self-adjoint $a$, $\lVert a\rVert^2 = \lVert a^*a\rVert = \lVert a^2\rVert$, and iterating, $\lVert a\rVert = \lVert a^{2^n}\rVert^{2^{-n}} \to r(a)$ by the spectral radius formula. If $a$ is normal then $a^*a = aa^*$ is self-adjoint and $\lVert a\rVert^2 = \lVert a^*a\rVert = r(a^*a)$, and $r(a^*a) = r(a)^2$ for commuting $a,a^*$. $\square$
+**Proof.** The spectral radius formula gives $r(a) \leq \lVert a\rVert$ always. For self-adjoint $a$, $\lVert a\rVert^2 = \lVert a^*a\rVert = \lVert a^2\rVert$, and iterating, $\lVert a\rVert = \lVert a^{2^n}\rVert^{2^{-n}} \to r(a)$ by the spectral radius formula. If $a$ is normal then $a^*a = aa^*$ is self-adjoint and $\lVert a\rVert^2 = \lVert a^*a\rVert = r(a^*a)$, and $r(a^*a) = r(a)^2$ for commuting $a,a^*$.
 
 **Proposition (the spectrum of a positive element).** If $a = b^*b$ is positive then $\sigma(a) \subseteq [0,\infty)$ and $\lVert a\rVert = r(a)$ is the largest point of the spectrum. Conversely a self-adjoint element with $\sigma(a) \subseteq [0,\infty)$ is positive.
 
-**Proof.** $a$ is self-adjoint, so its spectrum is real; for real $\lambda < 0$ and $t = \lvert\lambda\rvert^{1/2} > 0$ the element $a - \lambda = a + t^2 = (b^*b + t^2)$ satisfies $\lVert(b^*b + t^2)x\rVert\lVert x\rVert \geq \langle(b^*b+t^2)x,x\rangle = \lVert bx\rVert^2 + t^2\lVert x\rVert^2 \geq t^2\lVert x\rVert^2$, so $a - \lambda$ is invertible and $\lambda \notin \sigma(a)$. The converse is the computation of the continuous functional calculus, *The Functional Calculus of a Self-Adjoint Element*. $\square$
+**Proof.** $a$ is self-adjoint, so its spectrum is real; for real $\lambda < 0$ and $t = \lvert\lambda\rvert^{1/2} > 0$ the element $a - \lambda = a + t^2 = (b^*b + t^2)$ satisfies $\lVert(b^*b + t^2)x\rVert\lVert x\rVert \geq \langle(b^*b+t^2)x,x\rangle = \lVert bx\rVert^2 + t^2\lVert x\rVert^2 \geq t^2\lVert x\rVert^2$, so $a - \lambda$ is invertible and $\lambda \notin \sigma(a)$. The converse is the computation of the continuous functional calculus, *The Functional Calculus of a Self-Adjoint Element*.
 
 ## The Spectral Theorem
 
@@ -51,7 +51,7 @@ $$
 
 so $C^*(a,1)$ is the algebra of continuous functions on the compact real set $\sigma(a)$, and $a$ corresponds to the identity function. In particular $\sigma(a)$ is the compact real set on which the algebra is represented, and the spectrum is recovered from the algebra.
 
-**Proof.** The algebra $C^*(a,1)$ is a commutative unital $\mathrm{C}^*$-algebra, so the Gelfand transform is an isometric $*$-isomorphism onto $C(\operatorname{Max}(C^*(a,1)))$ by the commutative Gelfand–Naimark theorem; the map $\chi \mapsto \chi(a)$ is a homeomorphism of $\operatorname{Max}(C^*(a,1))$ onto $\sigma(a)$ because the characters are the nonzero multiplicative functionals and $\chi(a)$ runs over the spectrum, which is real by the reality theorem; under this identification the identity function corresponds to $a$. $\square$
+**Proof.** The algebra $C^*(a,1)$ is a commutative unital $\mathrm{C}^*$-algebra, so the Gelfand transform is an isometric $*$-isomorphism onto $C(\operatorname{Max}(C^*(a,1)))$ by the commutative Gelfand–Naimark theorem; the map $\chi \mapsto \chi(a)$ is a homeomorphism of $\operatorname{Max}(C^*(a,1))$ onto $\sigma(a)$ because the characters are the nonzero multiplicative functionals and $\chi(a)$ runs over the spectrum, which is real by the reality theorem; under this identification the identity function corresponds to $a$.
 
 **Corollary (the spectral mapping theorem, self-adjoint case).** For a self-adjoint $a$ and a continuous $f : \sigma(a) \to \mathbb{C}$, there is an element $f(a) \in C^*(a,1)$ with
 
@@ -61,13 +61,13 @@ $$
 
 the assignment $f \mapsto f(a)$ is an isometric $*$-homomorphism from $C(\sigma(a))$ onto $C^*(a,1)$, and it is the **continuous functional calculus**. The calculus is developed in *The Functional Calculus of a Self-Adjoint Element*.
 
-**Proof.** Compose the inverse of the Gelfand transform with the pullback by $f$; the spectral mapping is $\sigma(f(a)) = \hat f(\sigma(a)) = f(\sigma(a))$ under the identification of the theorem. $\square$
+**Proof.** Compose the inverse of the Gelfand transform with the pullback by $f$; the spectral mapping is $\sigma(f(a)) = \hat f(\sigma(a)) = f(\sigma(a))$ under the identification of the theorem.
 
 ## Consequences and Examples
 
 **Corollary (the involution moves the spectrum by conjugation).** For every $a$, $\sigma(a^*) = \overline{\sigma(a)}$; for an invertible $a$, $\sigma(a^{-1}) = \sigma(a)^{-1}$; and $\sigma(a^*a) \subseteq [0,\infty)$.
 
-**Proof.** For $\lambda \notin \sigma(a)$, $a - \lambda$ is invertible iff $a^* - \bar\lambda$ is, by the involution and its order two; hence $\lambda \in \sigma(a)$ iff $\bar\lambda \in \sigma(a^*)$. The inverse statement is the spectral mapping theorem for the function $\lambda \mapsto \lambda^{-1}$ applied in the commutative algebra generated by $a$ and $1$; and $a^*a = a^* (a^*){}^*$ is positive, so has non-negative spectrum by the proposition. $\square$
+**Proof.** For $\lambda \notin \sigma(a)$, $a - \lambda$ is invertible iff $a^* - \bar\lambda$ is, by the involution and its order two; hence $\lambda \in \sigma(a)$ iff $\bar\lambda \in \sigma(a^*)$. The inverse statement is the spectral mapping theorem for the function $\lambda \mapsto \lambda^{-1}$ applied in the commutative algebra generated by $a$ and $1$; and $a^*a = a^* (a^*){}^*$ is positive, so has non-negative spectrum by the proposition.
 
 **Example (the Hermitian matrix).** For $A = M_n(\mathbb{C})$ a self-adjoint element is a Hermitian matrix, its spectrum is the set of real eigenvalues, $\lVert X\rVert = \max\lvert\lambda_i\rvert$, and the spectral theorem reads that $X$ is unitarily diagonalisable with real eigenvalues; the functional calculus sends a continuous function to the matrix with the values of the function on the eigenvalues.
 
@@ -85,7 +85,7 @@ $$
 
 Hence the spectrum of a self-adjoint element is the same in every unital $\mathrm{C}^*$-subalgebra that contains it, and the functional calculus is **permanent**: the element $f(a)$ computed in $C^*(a,1)$ is the same element computed in any larger unital $\mathrm{C}^*$-subalgebra.
 
-**Proof.** One inclusion is immediate. A unital $\mathrm{C}^*$-subalgebra of a $\mathrm{C}^*$-algebra is **inverse closed**: if $a \in B$ is invertible in $A$, then $a^{-1}$ lies in the closed unital `*`-algebra generated by $a$, which is contained in $B$. Applying this to $a - \lambda$ for $\lambda \notin \sigma_B(a)$ gives $\sigma_A(a) \subseteq \sigma_B(a)$. $\square$
+**Proof.** One inclusion is immediate. A unital $\mathrm{C}^*$-subalgebra of a $\mathrm{C}^*$-algebra is **inverse closed**: if $a \in B$ is invertible in $A$, then $a^{-1}$ lies in the closed unital `*`-algebra generated by $a$, which is contained in $B$. Applying this to $a - \lambda$ for $\lambda \notin \sigma_B(a)$ gives $\sigma_A(a) \subseteq \sigma_B(a)$.
 
 **Corollary (the calculus is intrinsic).** The continuous functional calculus takes its values in $C^*(a,1)$, so $f(a)$ depends only on $a$, $f$ and the generated algebra and not on the ambient $\mathrm{C}^*$-algebra; equivalently, the spectrum is a complete invariant of the pair $(a, C^*(a,1))$ for a self-adjoint element.
 

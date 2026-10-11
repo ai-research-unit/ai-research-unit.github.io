@@ -100,7 +100,7 @@ $$
 (D \pm i\partial_t)(u+iv) = \bigl(Du \mp \partial_t v\bigr) + i\bigl(Dv \pm \partial_t u\bigr),
 $$
 
-so the real and imaginary quaternionic parts vanish separately, $Du = \pm\partial_t v$ and $Dv = \mp\partial_t u$, and (4) is exactly their four scalar-vector components. Both (5) and the split of (4) were recomputed exactly.
+so the real and imaginary quaternionic parts vanish separately, $Du = \pm\partial_t v$ and $Dv = \mp\partial_t u$, and (4) is exactly their four scalar-vector components.
 
 ### Cauchy–Riemann-Type Coupling of the Real and Imaginary Parts
 
@@ -238,7 +238,7 @@ $$
 \tag{14}
 $$
 
-Comparison of (13) and (14) shows that the source's Proposition 12 and the corpus's single equation are the same statement; the only difference is the factor $4\pi$, which is the difference between the **Gaussian** and the **Heaviside–Lorentz-like** source normalisation of the corpus. The reformulation therefore adds nothing to the corpus's Maxwell content; what it adds is the operator theory that surrounds it. The equivalence (13) was verified exactly, component by component.
+Comparison of (13) and (14) shows that the source's Proposition 12 and the corpus's single equation are the same statement; the only difference is the factor $4\pi$, which is the difference between the **Gaussian** and the **Heaviside–Lorentz-like** source normalisation of the corpus. The reformulation therefore adds nothing to the corpus's Maxwell content; what it adds is the operator theory that surrounds it.
 
 ### The Purely Vectorial Solution
 
@@ -280,9 +280,7 @@ reduced to a single equation of the form $(D - \tfrac{i}{c}\partial_t)\Phi = -\P
 
 ## What Is Verified and What Is Not
 
-**Verified by exact recomputation.** The square rule (2); the two orderings of the factorisation (1) and the sign relation (3); the scalar-vector split (5) of $D$; the equivalence of the kernel to the div-curl system (4); the equivalence (13) of Maxwell's system to the single equation; the corpus dictionary (14), including the identification of the source's $\vec{\varphi}$ with the corpus's A-field $\mathcal{A}$ up to the $4\pi$ normalisation; the closed form (9) of the quaternionic exponential and its unit modulus; the algebra of the right-inverse factor in (11); and the two worked examples of the harmonic-conjugate construction. All of these are polynomial identities in the basis $e_0, e_1, e_2, e_3$, in the partial derivatives, and in the field components; they were evaluated symbolically and their residuals vanish.
 
-**Verified by computation.** The closed form (9) satisfies the differential equation $\partial_t G = \mp 2\pi k G$ to within $4 \times 10^{-15}$ over a random sample of $100$ frequencies and times, with the correct modulus $1$. The source's §5.1 analogue of the symbol equation, printed as $2\pi k\,\mathcal{F}(\Phi_{\lambda,\pm}) \pm i\lambda\partial_t\mathcal{F}(\Phi_{\lambda,\pm}) = 0$, is missing the factor $i$ on its first term: with it, the residual of the printed expression on $\exp(\mp 2\pi\lambda^{-1}tk)$ is of order $10^{-15}$, and without it the residual is $8.6$ on the sample. The same equation also prints the variable pair as $(x,t)$ where the transform is taken in $k$ at fixed $t$ — a harmless slip.
 
 **Not verified, and flagged.** (i) The object called a **fundamental solution**. Its defining equation in the source, $(D \pm i\partial_t)\Phi_\pm = 0$ for $x \neq 0$, $t \neq 0$, is the **homogeneous** equation in the punctured domain; a fundamental solution in the classical sense carries $\delta$ on the right. The object whose Fourier transform is (9) is the **kernel of the right inverse**, and the inverse is correctly defined directly by (10) and proved in (11); a fundamental solution with a $\delta$ on the right is not exhibited. (ii) The declaration $\Phi_\pm \in L^1(\mathbb{R}^3 \times (0,\infty))$ **cannot** be reconciled with (9): by the Riemann–Lebesgue lemma the space Fourier transform of an $L^1$ function tends to $0$ at infinity, whereas (9) has modulus $1$ for every $k$. The two statements are inconsistent, and it is (9), not the $L^1$ claim, that the proof of the right inverse uses. (iii) The exact hypotheses and normalisations of **Theorems 13 and 16** were read only through the extracted running text, whose display is garbled; the *structure* recorded in (15) — right inverse, then completion by $u_0 - U[u_0]$ — is verified, but the printed leading factors, the pairing of $\mathrm{Re}$ and $\mathrm{Im}$ with $\mathrm{Vec}$, and the definition of $u_0$ should be checked against the published version before they are quoted. (iv) The constants of the SI homogeneous-medium section: as extracted, the system (17) and the condition the source prints with it are not mutually consistent — the ampèrian equation lacks the factor $\mu$ of the standard B-form, and the printed compatibility condition does not reduce to $\mathrm{div}\,\vec{\jmath} + \partial_t\rho = 0$ under either reading — so the exact field combination and the normalisation of that section were left unverified. Only its structure (a single equation with $\lambda = \sqrt{\epsilon\mu}$) is recorded.
 

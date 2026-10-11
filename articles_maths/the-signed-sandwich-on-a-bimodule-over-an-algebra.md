@@ -27,7 +27,7 @@ $$
 S_{a,b}\circ S_{c,d} = S_{ac,\,db}, \qquad S_{a,b}(1)=ab \quad (\text{on } {}_A A_A).
 $$
 
-*Proof.* $S_{a,b}(S_{c,d}(x))=a(cxd)b=(ac)x(db)=S_{ac,db}(x)$; the value at the unit is the definition. $\square$
+*Proof.* $S_{a,b}(S_{c,d}(x))=a(cxd)b=(ac)x(db)=S_{ac,db}(x)$; the value at the unit is the definition.
 
 ### The operator monoid
 
@@ -37,7 +37,7 @@ $$
 S_{a,b}^{-1}=S_{a^{-1}\!,\,b^{-1}} .
 $$
 
-*Proof.* The composition law is closure, and $S_{1,1}=\mathrm{id}_M$. If $a,b$ are units then $S_{a,b}S_{a^{-1},b^{-1}}=S_{1,1}=S_{a^{-1},b^{-1}}S_{a,b}$ by the law. $\square$
+*Proof.* The composition law is closure, and $S_{1,1}=\mathrm{id}_M$. If $a,b$ are units then $S_{a,b}S_{a^{-1},b^{-1}}=S_{1,1}=S_{a^{-1},b^{-1}}S_{a,b}$ by the law.
 
 The converse is not claimed: an element of $A$ that is not a unit may act invertibly on a small module, and then the sandwich it defines is invertible even though its parameter is not. For the regular bimodule $M={}_A A_A$ the converse is a statement about units of $A$ and is not needed here.
 
@@ -53,7 +53,7 @@ $$
 
 and $S_{u,u^{-1}}S_{v,v^{-1}}=S_{uv,(uv)^{-1}}$, so the diagonal sandwiches reproduce the group $A^{\times}$ acting by conjugation.
 
-*Proof.* Immediate from the definitions and the composition law. $\square$
+*Proof.* Immediate from the definitions and the composition law.
 
 ## The Grade Involution
 
@@ -75,7 +75,7 @@ the **even** and the **odd** parts, and $A_i M_j \subseteq M_{i+j}$; the bimodul
 
 **Proposition.** The even part $M_{\bar0}$ is an $(A_{\bar0},A_{\bar0})$-bimodule and the odd part $M_{\bar1}$ is an $(A_{\bar0},A_{\bar0})$-bimodule with products into $M_{\bar0}$; the products satisfy $A_i M_j \subseteq M_{i+j}$.
 
-*Proof.* Read the compatibility $\alpha(amb)=\alpha(a)\alpha(m)\alpha(b)$: if $a,b$ are even and $m$ is even, $amb$ is even; if one factor is odd the sign flips accordingly. $\square$
+*Proof.* Read the compatibility $\alpha(amb)=\alpha(a)\alpha(m)\alpha(b)$: if $a,b$ are even and $m$ is even, $amb$ is even; if one factor is odd the sign flips accordingly.
 
 ### Conjugation by the grade involution
 
@@ -85,7 +85,7 @@ $$
 \alpha\,L_a\,\alpha^{-1}=L_{\alpha(a)}, \qquad \alpha\,R_b\,\alpha^{-1}=R_{\alpha(b)}, \qquad \alpha\,S_{a,b}\,\alpha^{-1}=S_{\alpha(a),\alpha(b)} .
 $$
 
-*Proof.* $\alpha(L_a(\alpha^{-1}(x)))=\alpha(a\,\alpha^{-1}(x))=\alpha(a)\,x=L_{\alpha(a)}(x)$ by the compatibility; the right case is the mirror, and the sandwich case is the two together. $\square$
+*Proof.* $\alpha(L_a(\alpha^{-1}(x)))=\alpha(a\,\alpha^{-1}(x))=\alpha(a)\,x=L_{\alpha(a)}(x)$ by the compatibility; the right case is the mirror, and the sandwich case is the two together.
 
 Thus the grade involution acts on the monoid of sandwiches by the simultaneous substitution $a\mapsto\alpha(a)$, $b\mapsto\alpha(b)$, and it fixes $S_{a,b}$ exactly when both parameters are even.
 
@@ -109,7 +109,7 @@ $$
 
 In particular the signed and the unsigned sandwiches coincide exactly when $\alpha=\mathrm{id}$, and $S^{\alpha}_{a,b}(x)=S_{a,b}(\alpha(x))$ for every $x$.
 
-*Proof.* $S_{a,b}(\alpha(x))=a\alpha(x)b=S^{\alpha}_{a,b}(x)$, which is the first identity; for the second, $\alpha(S_{\alpha^{-1}(a),\alpha^{-1}(b)}(x))=\alpha(\alpha^{-1}(a)\,x\,\alpha^{-1}(b))=a\,\alpha(x)\,b$. $\square$
+*Proof.* $S_{a,b}(\alpha(x))=a\alpha(x)b=S^{\alpha}_{a,b}(x)$, which is the first identity; for the second, $\alpha(S_{\alpha^{-1}(a),\alpha^{-1}(b)}(x))=\alpha(\alpha^{-1}(a)\,x\,\alpha^{-1}(b))=a\,\alpha(x)\,b$.
 
 The signed sandwich is linear in each parameter, $S^{\alpha}_{a+a',b}=S^{\alpha}_{a,b}+S^{\alpha}_{a',b}$, and it is the **middle** argument that carries the twist; the parameters do not.
 
@@ -129,7 +129,7 @@ $$
 
 Thus the product of two sandwiches of the same parity is unsigned and the product of two of opposite parity is signed: the family $\{S_{a,b}\}\cup\{S^{\alpha}_{a,b}\}$ is a monoid graded by $\mathbb{Z}/2$, the unsigned sandwiches even and the signed ones odd.
 
-*Proof.* The first line is the unsigned law. For the second, $S^{\alpha}_{a,b}S_{c,d}=S_{a,b}\alpha S_{c,d}=S_{a,b}S_{\alpha(c),\alpha(d)}\alpha=S^{\alpha}_{a\alpha(c),\alpha(d)b}$, using the conjugation identity and $S_{a,b}S_{c',d'}=S_{ac',d'b}$. The third is $S_{a,b}S_{c,d}\alpha=S_{ac,db}\alpha=S^{\alpha}_{ac,db}$. The fourth is $S_{a,b}\alpha S_{c,d}\alpha=S_{a,b}S_{\alpha(c),\alpha(d)}=S_{a\alpha(c),\alpha(d)b}$, the two grade involutions cancelling. $\square$
+*Proof.* The first line is the unsigned law. For the second, $S^{\alpha}_{a,b}S_{c,d}=S_{a,b}\alpha S_{c,d}=S_{a,b}S_{\alpha(c),\alpha(d)}\alpha=S^{\alpha}_{a\alpha(c),\alpha(d)b}$, using the conjugation identity and $S_{a,b}S_{c',d'}=S_{ac',d'b}$. The third is $S_{a,b}S_{c,d}\alpha=S_{ac,db}\alpha=S^{\alpha}_{ac,db}$. The fourth is $S_{a,b}\alpha S_{c,d}\alpha=S_{a,b}S_{\alpha(c),\alpha(d)}=S_{a\alpha(c),\alpha(d)b}$, the two grade involutions cancelling.
 
 **Corollary.** If the parameters are units then the signed sandwich is invertible, and
 
@@ -137,7 +137,7 @@ $$
 \bigl(S^{\alpha}_{a,b}\bigr)^{-1}=S^{\alpha}_{\alpha(a)^{-1}\!,\,\alpha(b)^{-1}} \qquad (a,b \in A^{\times}).
 $$
 
-*Proof.* $S^{\alpha}_{a,b}=S_{a,b}\alpha$ and $\alpha$ is invertible with $\alpha^{-1}=\alpha$; the inverse is $\alpha\,S_{a,b}^{-1}=\alpha\,S_{a^{-1},b^{-1}}=S^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$ by the conjugation identity. $\square$
+*Proof.* $S^{\alpha}_{a,b}=S_{a,b}\alpha$ and $\alpha$ is invertible with $\alpha^{-1}=\alpha$; the inverse is $\alpha\,S_{a,b}^{-1}=\alpha\,S_{a^{-1},b^{-1}}=S^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$ by the conjugation identity.
 
 **Proposition (the diagonal case).** For a unit $u$,
 
@@ -151,7 +151,7 @@ $$
 r_u^{2}=S_{u\alpha(u),\,(u\alpha(u))^{-1}}=\operatorname{conj}_{u\alpha(u)} .
 $$
 
-*Proof.* The first display is the definition. For the square, the fourth composition rule gives $r_u^{2}=S^{\alpha}_{u\alpha(u),\,\alpha(u^{-1})u^{-1}}$; here $\alpha(u^{-1})=\alpha(u)^{-1}$, so the second parameter is $\alpha(u)^{-1}u^{-1}=(u\alpha(u))^{-1}$, and the composite is the unsigned diagonal sandwich $S_{w,w^{-1}}$ with $w=u\alpha(u)$, that is, the inner conjugation by $w$. $\square$
+*Proof.* The first display is the definition. For the square, the fourth composition rule gives $r_u^{2}=S^{\alpha}_{u\alpha(u),\,\alpha(u^{-1})u^{-1}}$; here $\alpha(u^{-1})=\alpha(u)^{-1}$, so the second parameter is $\alpha(u)^{-1}u^{-1}=(u\alpha(u))^{-1}$, and the composite is the unsigned diagonal sandwich $S_{w,w^{-1}}$ with $w=u\alpha(u)$, that is, the inner conjugation by $w$.
 
 The square lands in the unsigned sandwiches even though the reflection is signed, which is the parity rule in its simplest instance.
 
@@ -175,11 +175,11 @@ $$
 r_u^{2}=\mathrm{id}_M \iff u\,\alpha(u) \in C_A(M).
 $$
 
-*Proof.* By the proposition above, $r_u^{2}=\operatorname{conj}_w$, and an inner conjugation is the identity exactly when the conjugating element acts centrally on the module, which is the definition of $C_A(M)$; when $w \in C_A(M)$ the map is the identity. Conversely $r_u^{2}=\mathrm{id}$ says $wx=xw$ for all $x$, so $w \in C_A(M)$. $\square$
+*Proof.* By the proposition above, $r_u^{2}=\operatorname{conj}_w$, and an inner conjugation is the identity exactly when the conjugating element acts centrally on the module, which is the definition of $C_A(M)$; when $w \in C_A(M)$ the map is the identity. Conversely $r_u^{2}=\mathrm{id}$ says $wx=xw$ for all $x$, so $w \in C_A(M)$.
 
 **Corollary.** If $u$ is fixed by $\alpha$ then $w=u^{2}$; if $u$ is negated by $\alpha$ and $2$ is invertible then $w=-u^{2}$; in either case $w$ is central as soon as $u^{2}$ is, and then $r_u$ is a reflection.
 
-*Proof.* Substitute $\alpha(u)=\pm u$. If $\alpha(u)=u$ then $u\alpha(u)=u^{2}$; if $\alpha(u)=-u$ then $u\alpha(u)=-u^{2}$. A unit and its negative are central together. $\square$
+*Proof.* Substitute $\alpha(u)=\pm u$. If $\alpha(u)=u$ then $u\alpha(u)=u^{2}$; if $\alpha(u)=-u$ then $u\alpha(u)=-u^{2}$. A unit and its negative are central together.
 
 ### Examples
 

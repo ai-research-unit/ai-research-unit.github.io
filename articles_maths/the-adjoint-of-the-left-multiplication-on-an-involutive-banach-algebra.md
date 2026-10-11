@@ -19,7 +19,7 @@ $$
 
 Hence the adjoint of a left multiplication is the left multiplication by the image of the parameter under the involution, and the adjoint of a right multiplication is the right multiplication by the image.
 
-**Proof.** For all $x,y$, $\{L_ax,y\} = \tau(ax\sigma(y)) = \tau(x\sigma(y)a)$ by the cyclicity of the trace, and $\tau(x\sigma(y)a) = \tau(x\sigma(\sigma(a)y)) = \{x,L_{\sigma(a)}y\}$ by the $\sigma$-invariance and $\sigma^2 = \mathrm{id}$; thus $L_{\sigma(a)}$ satisfies the defining identity, and it is the adjoint by the nondegeneracy of the form. The right-handed computation is the mirror image. $\square$
+**Proof.** For all $x,y$, $\{L_ax,y\} = \tau(ax\sigma(y)) = \tau(x\sigma(y)a)$ by the cyclicity of the trace, and $\tau(x\sigma(y)a) = \tau(x\sigma(\sigma(a)y)) = \{x,L_{\sigma(a)}y\}$ by the $\sigma$-invariance and $\sigma^2 = \mathrm{id}$; thus $L_{\sigma(a)}$ satisfies the defining identity, and it is the adjoint by the nondegeneracy of the form. The right-handed computation is the mirror image.
 
 **Corollary (compatibility with the involution and the `*`-representation).** The adjoint intertwines the left multiplication with the involution, and the left regular representation $a \mapsto L_a$ is a `*`-representation:
 
@@ -29,7 +29,7 @@ $$
 
 Hence the involution of the elements and the adjoint of the operators agree on the image of the regular representation, an agreement proved and not assumed.
 
-**Proof.** The formula is the theorem with $a^* = \sigma(a)$; multiplicativity is associativity, $L_aL_b = L_{ab}$; and the last identity is the theorem applied twice, $(L_{\sigma(a)})^\dagger = L_{\sigma^2(a)} = L_a$. $\square$
+**Proof.** The formula is the theorem with $a^* = \sigma(a)$; multiplicativity is associativity, $L_aL_b = L_{ab}$; and the last identity is the theorem applied twice, $(L_{\sigma(a)})^\dagger = L_{\sigma^2(a)} = L_a$.
 
 **Corollary (the unsigned sandwich).** The unsigned sandwich $\Sigma_{a,b}(x) = axb$ is adjointable with
 
@@ -39,7 +39,7 @@ $$
 
 the sandwich of the images, with the order of the parameters restored rather than reversed.
 
-**Proof.** $\Sigma_{a,b} = L_aR_b$, so $(\Sigma_{a,b})^\dagger = R_b{}^\dagger L_a{}^\dagger = R_{\sigma(b)}L_{\sigma(a)} = \Sigma_{\sigma(a),\sigma(b)}$ by the anti-multiplicativity of the adjoint. $\square$
+**Proof.** $\Sigma_{a,b} = L_aR_b$, so $(\Sigma_{a,b})^\dagger = R_b{}^\dagger L_a{}^\dagger = R_{\sigma(b)}L_{\sigma(a)} = \Sigma_{\sigma(a),\sigma(b)}$ by the anti-multiplicativity of the adjoint.
 
 ## The Dictionary
 
@@ -51,17 +51,17 @@ $$
 
 The same dictionary holds for the right multiplications, and it holds on the image of the regular representation in $\mathcal{A}(A)$.
 
-**Proof.** The left regular representation is injective, since $L_a = L_b$ forces $a = L_a(1) = L_b(1) = b$. Hence $L_a$ is self-adjoint iff $L_{\sigma(a)} = L_a$, that is $\sigma(a) = a$, and the skew case is the same with the sign; $L_a$ is unitary iff $L_{\sigma(a)}L_a = L_{\sigma(a)a} = L_{a^*a} = \mathrm{id}$ and $L_aL_{\sigma(a)} = L_{aa^*} = \mathrm{id}$, that is $a^*a = aa^* = 1$; and $L_a$ is an involution iff $L_a^2 = L_{a^2} = \mathrm{id}$, that is $a^2 = 1$, with $a = a^*$ from self-adjointness. $\square$
+**Proof.** The left regular representation is injective, since $L_a = L_b$ forces $a = L_a(1) = L_b(1) = b$. Hence $L_a$ is self-adjoint iff $L_{\sigma(a)} = L_a$, that is $\sigma(a) = a$, and the skew case is the same with the sign; $L_a$ is unitary iff $L_{\sigma(a)}L_a = L_{\sigma(a)a} = L_{a^*a} = \mathrm{id}$ and $L_aL_{\sigma(a)} = L_{aa^*} = \mathrm{id}$, that is $a^*a = aa^* = 1$; and $L_a$ is an involution iff $L_a^2 = L_{a^2} = \mathrm{id}$, that is $a^2 = 1$, with $a = a^*$ from self-adjointness.
 
 **Corollary (unitary elements and the operator norm).** If $A$ is a $\mathrm{C}^*$-algebra with the form positive definite, the unitary elements give isometric operators, $\lVert L_u\rVert = 1$, and the self-adjoint elements give self-adjoint operators with real spectrum; the map $a \mapsto L_a$ is an isometric `*`-homomorphism when the form is the Hilbert–Schmidt form and the norm is the operator norm.
 
-**Proof.** For a unitary $u$, $\lVert L_u x\rVert = \lVert ux\rVert \leq \lVert x\rVert$ and $\lVert x\rVert = \lVert u^*ux\rVert \leq \lVert u^*\rVert\lVert ux\rVert = \lVert L_ux\rVert$, giving $\lVert L_u\rVert = 1$; the self-adjoint case is the spectral theory of *Self-Adjoint Operators of a Banach Algebra*. $\square$
+**Proof.** For a unitary $u$, $\lVert L_u x\rVert = \lVert ux\rVert \leq \lVert x\rVert$ and $\lVert x\rVert = \lVert u^*ux\rVert \leq \lVert u^*\rVert\lVert ux\rVert = \lVert L_ux\rVert$, giving $\lVert L_u\rVert = 1$; the self-adjoint case is the spectral theory of *Self-Adjoint Operators of a Banach Algebra*.
 
 ## The Topology and Examples
 
 **Proposition (continuity).** The maps $a \mapsto L_a$ and $a \mapsto L_a^\dagger$ are bounded linear maps $A \to \mathcal{A}(A)$ of norm one when the involution is isometric; the adjointable operators form a closed subalgebra of $B(A)$, complete when $B(A)$ is; and the involution and the adjoint pass to the completion.
 
-**Proof.** $\lVert L_a\rVert \leq \lVert a\rVert$ with equality by evaluating at $1$; the adjoint map is the composite $L$ with $\sigma$, of the same norm; the completeness is *The Involution on the Operator Algebra*. $\square$
+**Proof.** $\lVert L_a\rVert \leq \lVert a\rVert$ with equality by evaluating at $1$; the adjoint map is the composite $L$ with $\sigma$, of the same norm; the completeness is *The Involution on the Operator Algebra*.
 
 **Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the conjugate transpose and the trace form, $(L_X)^\dagger = L_{X^*}$ and $(R_Y)^\dagger = R_{Y^*}$; the self-adjoint left multiplications are those by Hermitian matrices, the unitary ones those by unitary matrices, and the regular representation embeds $M_n$ into its own Hilbert–Schmidt operators as a `*`-representation.
 
@@ -77,7 +77,7 @@ $$
 
 so the commutant of $\{L_a\}$ is the algebra of the right multiplications, isomorphic to $A^{\mathrm{op}}$; symmetrically the commutant of the right multiplications is the algebra of the left multiplications, and the bicommutant of the regular representation is the whole adjointable algebra.
 
-**Proof.** If $T$ commutes with every $L_a$ then $T(x) = T(L_x1) = L_xT(1) = x\,T(1) = R_{T(1)}(x)$, so $T = R_b$ with $b = T(1)$; conversely every right multiplication commutes with every left multiplication by associativity. The symmetric statement is the mirror image, and the bicommutant follows by applying the first statement twice. $\square$
+**Proof.** If $T$ commutes with every $L_a$ then $T(x) = T(L_x1) = L_xT(1) = x\,T(1) = R_{T(1)}(x)$, so $T = R_b$ with $b = T(1)$; conversely every right multiplication commutes with every left multiplication by associativity. The symmetric statement is the mirror image, and the bicommutant follows by applying the first statement twice.
 
 **Corollary (the adjoint and the commutant).** The commutant is closed under the adjoint, since $(R_b)^\dagger = R_{\sigma(b)}$ is again a right multiplication, and the bicommutant theorem of *Involutive Operator Algebras and the Commutant* identifies the weak closure of the regular representation with the operators of the form $R_b$; the regular representation is irreducible exactly when the right multiplications are the only operators commuting with it, that is when $A$ is a division-like algebra.
 

@@ -27,11 +27,11 @@ $$
 
 so that $\rho_u$ is an involutive automorphism, $\rho_u^2 = \mathrm{id}$, exactly when $u$ is a reflector. Conversely every signed conjugation that is an involution has a reflector parameter.
 
-**Proof.** The signed conjugation is a composite of the automorphisms $c_u$ and $\alpha$, hence an automorphism; it is bounded because $c_u$, $\alpha$ and $c_u^{-1} = c_{u^{-1}}$ are. The square is $\rho_u^2(x) = u\alpha(u\alpha(x)u^{-1})u^{-1} = u\alpha(u)x\alpha(u)^{-1}u^{-1} = c_{u\alpha(u)}(x)$, using that $\alpha$ is an automorphism and $\alpha^2 = \mathrm{id}$. An inner automorphism is the identity exactly when its conjugating element is central, so $\rho_u^2 = \mathrm{id}$ exactly for a reflector, and the converse is the same computation read backwards. $\square$
+**Proof.** The signed conjugation is a composite of the automorphisms $c_u$ and $\alpha$, hence an automorphism; it is bounded because $c_u$, $\alpha$ and $c_u^{-1} = c_{u^{-1}}$ are. The square is $\rho_u^2(x) = u\alpha(u\alpha(x)u^{-1})u^{-1} = u\alpha(u)x\alpha(u)^{-1}u^{-1} = c_{u\alpha(u)}(x)$, using that $\alpha$ is an automorphism and $\alpha^2 = \mathrm{id}$. An inner automorphism is the identity exactly when its conjugating element is central, so $\rho_u^2 = \mathrm{id}$ exactly for a reflector, and the converse is the same computation read backwards.
 
 **Corollary (the identity and the grade involution).** The unit $1$ is a reflector with $\rho_1 = \alpha$, so the grade involution is always a reflection of the family; the family is nonempty as soon as $\alpha$ is defined, and it contains $\mathrm{id}$ only when $\alpha = \mathrm{id}$.
 
-**Proof.** $1\cdot\alpha(1) = 1$ is central and $\rho_1 = c_1\alpha = \alpha$. The reflection $\rho_u$ equals the identity exactly when $c_u\alpha = \mathrm{id}$, that is $\alpha = c_{u^{-1}}$, which forces $\alpha = \mathrm{id}$ on a unital algebra when $u = 1$; in general $\mathrm{id}$ is a reflection only for the inner realisation of the identity. $\square$
+**Proof.** $1\cdot\alpha(1) = 1$ is central and $\rho_1 = c_1\alpha = \alpha$. The reflection $\rho_u$ equals the identity exactly when $c_u\alpha = \mathrm{id}$, that is $\alpha = c_{u^{-1}}$, which forces $\alpha = \mathrm{id}$ on a unital algebra when $u = 1$; in general $\mathrm{id}$ is a reflection only for the inner realisation of the identity.
 
 ## The Eigenvalue Decomposition
 
@@ -47,11 +47,11 @@ $$
 A^+_\rho A^+_\rho \subseteq A^+_\rho , \quad A^+_\rho A^-_\rho \subseteq A^-_\rho , \quad A^-_\rho A^+_\rho \subseteq A^-_\rho , \quad A^-_\rho A^-_\rho \subseteq A^+_\rho .
 $$
 
-**Proof.** The map $\rho$ is a continuous involutive automorphism, so its eigenspaces for $\pm1$ are its fixed set and its negated part, they sum directly to $A$ by the averaging $x = \tfrac12(x + \rho(x)) + \tfrac12(x - \rho(x))$, and the multiplication table is the multiplicativity of $\rho$. Closedness is the closedness of the fixed set of a continuous map and of the equalizer of $\rho$ with $-\mathrm{id}$. $\square$
+**Proof.** The map $\rho$ is a continuous involutive automorphism, so its eigenspaces for $\pm1$ are its fixed set and its negated part, they sum directly to $A$ by the averaging $x = \tfrac12(x + \rho(x)) + \tfrac12(x - \rho(x))$, and the multiplication table is the multiplicativity of $\rho$. Closedness is the closedness of the fixed set of a continuous map and of the equalizer of $\rho$ with $-\mathrm{id}$.
 
 **Corollary (determination by the fixed subalgebra).** A reflection is determined by its fixed subalgebra and by its negated part; two reflections with the same fixed subalgebra are equal.
 
-**Proof.** An automorphism of order two is determined by its action on the $\pm1$-eigenspaces, and the eigenspaces determine each other by the direct sum. $\square$
+**Proof.** An automorphism of order two is determined by its action on the $\pm1$-eigenspaces, and the eigenspaces determine each other by the direct sum.
 
 **Remark (the topology adds closedness).** The algebraic content of the decomposition is that of the involutive automorphism; the topology adds that both parts are closed, because $\rho$ is continuous, and that the averaging maps are continuous. No norm, no form and no measure enters the algebra of the reflection beyond that.
 
@@ -69,15 +69,15 @@ $$
 \mathrm{Ref}(A,\alpha) \cong R^\times(A,\alpha)\big/ Z(A)^\times .
 $$
 
-**Proof.** If $\rho_u = \rho_v$ then $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for all $x$, so $(v^{-1}u)\alpha(x) = \alpha(x)(v^{-1}u)$ for all $x$; since $\alpha$ is onto, $v^{-1}u$ commutes with every element and lies in $Z(A)^\times$. Conversely a central unit is absorbed by the inner conjugation. The image of the central units is $\alpha$, since a central unit commutes with everything. $\square$
+**Proof.** If $\rho_u = \rho_v$ then $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for all $x$, so $(v^{-1}u)\alpha(x) = \alpha(x)(v^{-1}u)$ for all $x$; since $\alpha$ is onto, $v^{-1}u$ commutes with every element and lies in $Z(A)^\times$. Conversely a central unit is absorbed by the inner conjugation. The image of the central units is $\alpha$, since a central unit commutes with everything.
 
 **Corollary (the reflector as the correcting element).** For a reflector $u$, $\rho_u(u) = \alpha(u)$, and the reflection is the composite $\rho_u = c_u\alpha$ of the inner automorphism by $u$ with the twist; the reflector is the element whose inner automorphism corrects $\alpha$ to the desired reflection.
 
-**Proof.** $u\alpha(u)$ is central, so $u$ commutes with it and $\rho_u(u) = u\alpha(u)u^{-1} = \alpha(u)$; the composite form is the definition. $\square$
+**Proof.** $u\alpha(u)$ is central, so $u$ commutes with it and $\rho_u(u) = u\alpha(u)u^{-1} = \alpha(u)$; the composite form is the definition.
 
 **Proposition (the coset of the inner automorphisms).** The reflections relative to $\alpha$ are exactly the involutive automorphisms lying in the coset $\mathrm{Inn}(A)\alpha$ of the inner automorphism group, and the map $[u] \mapsto [c_u]$ sends the reflectors to the classes of the reflections in $\mathrm{Out}(A) = \mathrm{Aut}(A)/\mathrm{Inn}(A)$. If every automorphism of $A$ is inner then every involutive automorphism is a reflection for a suitable $\alpha$.
 
-**Proof.** The reflection is $c_u\alpha$ by the corollary, so it lies in the coset; conversely an element of the coset is $c_u\alpha$, and it is an involution exactly when $u$ is a reflector. The map $[u]\mapsto[c_u]$ is the standard isomorphism $A^\times/Z(A)^\times \to \mathrm{Inn}(A)$. $\square$
+**Proof.** The reflection is $c_u\alpha$ by the corollary, so it lies in the coset; conversely an element of the coset is $c_u\alpha$, and it is an involution exactly when $u$ is a reflector. The map $[u]\mapsto[c_u]$ is the standard isomorphism $A^\times/Z(A)^\times \to \mathrm{Inn}(A)$.
 
 ## The Degenerate Cases
 
@@ -89,11 +89,11 @@ $$
 
 and the reflections are exactly the inner automorphisms of $A$ of order two, with reflector condition $u\alpha(u) = uzuz^{-1} = u z u z^{-1}\in Z(A)$.
 
-**Proof.** $\rho_u = c_u\alpha = c_uc_z = c_{uz}$, an inner automorphism; it is an involution exactly when $(uz)x(uz)^{-1} = x$ for all $x$, that is when $uz \in Z(A)$, the reflector condition read for $\alpha = c_z$. $\square$
+**Proof.** $\rho_u = c_u\alpha = c_uc_z = c_{uz}$, an inner automorphism; it is an involution exactly when $(uz)x(uz)^{-1} = x$ for all $x$, that is when $uz \in Z(A)$, the reflector condition read for $\alpha = c_z$.
 
 **Theorem (the commutative case).** If $A$ is commutative then every unit is a reflector and $\rho_u = \alpha$ for every unit $u$; the reflection family collapses to the two-element group $\{\mathrm{id},\alpha\}$ and the correspondence $u \mapsto \rho_u$ is constant.
 
-**Proof.** In a commutative algebra every element is central, so every unit is a reflector and $\rho_u = c_u\alpha = \alpha$. The reflections are therefore only $\alpha$, together with $\mathrm{id}$ when $\alpha = \mathrm{id}$. $\square$
+**Proof.** In a commutative algebra every element is central, so every unit is a reflector and $\rho_u = c_u\alpha = \alpha$. The reflections are therefore only $\alpha$, together with $\mathrm{id}$ when $\alpha = \mathrm{id}$.
 
 **Remark (the failure of the correspondence).** The map $u \mapsto \rho_u$ is neither injective nor, when $\alpha$ is not inner, surjective onto all involutive automorphisms: only the signed conjugations are reflections, and the involutive automorphisms outside the coset $\mathrm{Inn}(A)\alpha$ are not. The parametrisation is also not a group homomorphism in general, because the product of two reflections is an unsigned sandwich rather than a reflection; each reflection is individually of order two, and the reflections are a coset of the inner automorphisms, not a subgroup.
 
@@ -101,7 +101,7 @@ and the reflections are exactly the inner automorphisms of $A$ of order two, wit
 
 **Proposition (norm and isometry).** Every reflection $\rho_u$ is a bounded invertible operator with $\lVert\rho_u\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$ and $\lVert\rho_u^{-1}\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$; when $\alpha$ is isometric and $u$ is a unitary with $\lVert u\rVert = \lVert u^{-1}\rVert = 1$, the reflection is isometric, $\lVert\rho_u\rVert = 1$. The fixed subalgebra $A^+_\rho$ is closed, and $\rho_u$ extends to the completion of $A$.
 
-**Proof.** The norm bound is submultiplicativity in the composite $c_u\alpha$; the isometry case is $\lVert u\alpha(x)u^{-1}\rVert \leq \lVert x\rVert$ with equality by applying $\rho_u^{-1}$. The fixed set is closed as the fixed set of a continuous map, and a bounded automorphism of a normed algebra extends uniquely to a bounded automorphism of its completion. $\square$
+**Proof.** The norm bound is submultiplicativity in the composite $c_u\alpha$; the isometry case is $\lVert u\alpha(x)u^{-1}\rVert \leq \lVert x\rVert$ with equality by applying $\rho_u^{-1}$. The fixed set is closed as the fixed set of a continuous map, and a bounded automorphism of a normed algebra extends uniquely to a bounded automorphism of its completion.
 
 **Example (the matrix algebra).** Let $A = M_n(\mathbb{K})$ and $\alpha(X) = DXD^{-1}$ with $D$ an invertible diagonal matrix of order two, $D^2 = I$, so that $\alpha$ is a continuous involutive automorphism. Since $\alpha$ is inner, every reflection is an inner automorphism: $\rho_u = c_{u}\alpha = c_{uD}$, and it is an involution exactly when $uDuD^{-1}$ is central, that is a scalar matrix. For $D = I$ the grade involution is trivial and the reflections are the involutions $X \mapsto UXU^{-1}$ with $U^2$ central, the classical involutive inner automorphisms of $M_n$.
 

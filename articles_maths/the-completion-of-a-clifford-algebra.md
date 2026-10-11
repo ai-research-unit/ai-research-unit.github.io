@@ -26,7 +26,7 @@ $$
 \operatorname{gr}\widehat{\mathrm{Cl}}_{\mathrm{filt}}\cong\Lambda(V).
 $$
 
-*Proof.* This is the proposition of *The Continuous Grade Decomposition and the Filtration*, §*The Completion of the Filtration*; the density is the standard property of an inverse limit over a cofinal family of onto maps, the separatedness is the theorem of the same article that $\bigcap_{k}N_{k}=0$ for a non-degenerate form, and the identification of the associated graded is the invariance of the successive quotients under completion. $\square$
+*Proof.* This is the proposition of *The Continuous Grade Decomposition and the Filtration*, §*The Completion of the Filtration*; the density is the standard property of an inverse limit over a cofinal family of onto maps, the separatedness is the theorem of the same article that $\bigcap_{k}N_{k}=0$ for a non-degenerate form, and the identification of the associated graded is the invariance of the successive quotients under completion.
 
 ### The Projective Norm and its Submultiplicativity
 
@@ -40,7 +40,7 @@ the infimum being over all finite representations of $u$ as a sum of elementary 
 
 **Proposition (the tensor algebra is a normed algebra).** The projective norm is a norm on each tensor power, the sum defining the norm of an element of the tensor algebra is finite for every element, and $\lVert uv\rVert_{\pi}\le\lVert u\rVert_{\pi}\lVert v\rVert_{\pi}$ for all $u,v\in T(V)$.
 
-*Proof.* The projective norm on a tensor product of normed spaces is a norm, by the standard theory of the projective tensor product: it is the quotient norm of the free vector space on the elementary tensors, modulo the relations. For an element $u=\sum_{n\le m}u_{n}$ the sum is finite, since an element of the direct sum has finitely many nonzero homogeneous components. For submultiplicativity, if $u=\sum_{i}x_{i1}\otimes\cdots\otimes x_{ip}$ and $v=\sum_{j}y_{j1}\otimes\cdots\otimes y_{jq}$ then $uv=\sum_{i,j}x_{i1}\otimes\cdots\otimes x_{ip}\otimes y_{j1}\otimes\cdots\otimes y_{jq}$, and the norm of each term is the product of the norms, so $\lVert uv\rVert_{\pi}\le(\sum_{i}\prod_{r}\lVert x_{ir}\rVert)(\sum_{j}\prod_{s}\lVert y_{js}\rVert)$; taking infima gives the inequality, and the passage to the direct sum over the degrees multiplies the two sums. $\square$
+*Proof.* The projective norm on a tensor product of normed spaces is a norm, by the standard theory of the projective tensor product: it is the quotient norm of the free vector space on the elementary tensors, modulo the relations. For an element $u=\sum_{n\le m}u_{n}$ the sum is finite, since an element of the direct sum has finitely many nonzero homogeneous components. For submultiplicativity, if $u=\sum_{i}x_{i1}\otimes\cdots\otimes x_{ip}$ and $v=\sum_{j}y_{j1}\otimes\cdots\otimes y_{jq}$ then $uv=\sum_{i,j}x_{i1}\otimes\cdots\otimes x_{ip}\otimes y_{j1}\otimes\cdots\otimes y_{jq}$, and the norm of each term is the product of the norms, so $\lVert uv\rVert_{\pi}\le(\sum_{i}\prod_{r}\lVert x_{ir}\rVert)(\sum_{j}\prod_{s}\lVert y_{js}\rVert)$; taking infima gives the inequality, and the passage to the direct sum over the degrees multiplies the two sums.
 
 ### The Normed Completion
 
@@ -52,7 +52,7 @@ $$
 
 is a Banach algebra containing $\mathrm{Cl}(V,q)/J$ as a dense subalgebra.
 
-*Proof.* The quotient seminorm is the infimum of the norms of the representatives, hence submultiplicative because the projective norm is; the set where a seminorm vanishes is a subspace, and it is a two-sided ideal because $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$ forces $\lVert xy\rVert=0$ whenever $\lVert x\rVert=0$. The quotient by the kernel of a seminorm is a normed space, and the submultiplicativity descends; the completion of a normed algebra is a Banach algebra, the product extending by continuity and the inequality $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$ passing to the limit. $\square$
+*Proof.* The quotient seminorm is the infimum of the norms of the representatives, hence submultiplicative because the projective norm is; the set where a seminorm vanishes is a subspace, and it is a two-sided ideal because $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$ forces $\lVert xy\rVert=0$ whenever $\lVert x\rVert=0$. The quotient by the kernel of a seminorm is a normed space, and the submultiplicativity descends; the completion of a normed algebra is a Banach algebra, the product extending by continuity and the inequality $\lVert xy\rVert\le\lVert x\rVert\lVert y\rVert$ passing to the limit.
 
 **Remark (the ideal $J$ and the radical).** The ideal $J$ is the closure of zero for the projective norm, and it is the analogue for the norm of the ideal of *Topological Clifford Algebras*, §*The Closure of Zero and the Hausdorff Quotient* for the quotient topology of the tensor algebra; the three ideals — the closure of zero for the quotient topology, the ideal $J$ of the projective norm, and the intersection $\bigcap_{k}N_{k}$ of the filtration — are in general distinct, and the reader should not expect them to agree. What is true in every case is that each is a two-sided ideal and that the quotient is Hausdorff for the corresponding topology.
 
@@ -64,7 +64,7 @@ $$
 \widehat{\mathrm{Cl}}_{\mathrm{filt}}=\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}=\mathrm{Cl}(V,q).
 $$
 
-*Proof.* The filtration topology is discrete by *The Continuous Grade Decomposition and the Filtration*, §*The Quotients and the Separation*, so the algebra is complete for it and the inverse limit stabilizes; a finite-dimensional normed space over a complete field is complete, so the norm completion is the algebra itself; and the projective seminorm is a norm in finite dimension, since the projective norm is equivalent to the unique norm of the finite-dimensional tensor powers. $\square$
+*Proof.* The filtration topology is discrete by *The Continuous Grade Decomposition and the Filtration*, §*The Quotients and the Separation*, so the algebra is complete for it and the inverse limit stabilizes; a finite-dimensional normed space over a complete field is complete, so the norm completion is the algebra itself; and the projective seminorm is a norm in finite dimension, since the projective norm is equivalent to the unique norm of the finite-dimensional tensor powers.
 
 **Remark (infinite dimension).** In infinite dimension the two completions differ in general, and neither is contained in the other as a subalgebra without a hypothesis: the filtration completion is an inverse limit and carries the elements of degree tending to infinity with bounded-degree coefficients, while the norm completion carries the elements whose projective norm is finite. They coincide when the two topologies have the same Cauchy filters on the algebra, and the article asserts nothing more; the identification of cases is a matter of the particular space and form, and the Cauchy criterion for the projective norm is the classical one of the absolute convergence of the coefficient series.
 
@@ -72,7 +72,7 @@ $$
 
 **Theorem (the universal property of the norm completion).** Let $A$ be a Banach algebra over $F$ and let $\varphi : \mathrm{Cl}(V,q)\to A$ be a continuous algebra homomorphism with $\lVert\varphi(x)\rVert\le C\lVert x\rVert_{\mathrm{q}}$ for some constant $C$ and all $x$. Then $\varphi$ factors uniquely through a continuous algebra homomorphism $\widehat{\mathrm{Cl}}_{\lVert\cdot\rVert}\to A$ of norm at most $C$.
 
-*Proof.* A homomorphism bounded by the seminorm $\lVert\cdot\rVert_{\mathrm{q}}$ kills $J$, hence descends to $\mathrm{Cl}(V,q)/J$; a uniformly continuous map into a complete Hausdorff space extends uniquely by continuity to the completion, and the inequality $\lVert\varphi(x)\rVert\le C\lVert x\rVert$ passes to the limit, bounding the extension. The extension is multiplicative on a dense subalgebra, and a continuous bilinear map is determined by its values on a dense set, so the extension is multiplicative. $\square$
+*Proof.* A homomorphism bounded by the seminorm $\lVert\cdot\rVert_{\mathrm{q}}$ kills $J$, hence descends to $\mathrm{Cl}(V,q)/J$; a uniformly continuous map into a complete Hausdorff space extends uniquely by continuity to the completion, and the inequality $\lVert\varphi(x)\rVert\le C\lVert x\rVert$ passes to the limit, bounding the extension. The extension is multiplicative on a dense subalgebra, and a continuous bilinear map is determined by its values on a dense set, so the extension is multiplicative.
 
 **Remark (the universal property of the filtration completion).** The filtration completion has the analogous property for the filtration topology: a homomorphism continuous for a filtration topology, that is one bounded on some $N_{k}$ in the sense that $\varphi(N_{k})\subseteq\{a : \lVert a\rVert<1\}$, factors through $\widehat{\mathrm{Cl}}_{\mathrm{filt}}$. The statement is the standard universal property of an inverse limit and is the reason the completion is the right object to receive the series that appear in the applications.
 
@@ -84,7 +84,7 @@ $$
 \widehat{N}_{k}/\widehat{N}_{k+1} \quad\text{is a quotient of}\quad \Lambda^{k}V .
 $$
 
-*Proof.* The inclusion is the closure of the multiplicative inclusion $N_{j}N_{l}\subseteq N_{j+l}$, the product in the completion being continuous. The projection to the quotient induces an onto map $N_{k}\to\widehat{N}_{k}/\widehat{N}_{k+1}$, and this map kills $N_{k+1}$ because $N_{k+1}\subseteq\widehat{N}_{k+1}$; hence the quotient is an image of $N_{k}/N_{k+1}\cong\Lambda^{k}V$, and the multiplicativity descends because the wedge product is the product of the associated graded of the algebra. $\square$
+*Proof.* The inclusion is the closure of the multiplicative inclusion $N_{j}N_{l}\subseteq N_{j+l}$, the product in the completion being continuous. The projection to the quotient induces an onto map $N_{k}\to\widehat{N}_{k}/\widehat{N}_{k+1}$, and this map kills $N_{k+1}$ because $N_{k+1}\subseteq\widehat{N}_{k+1}$; hence the quotient is an image of $N_{k}/N_{k+1}\cong\Lambda^{k}V$, and the multiplicativity descends because the wedge product is the product of the associated graded of the algebra.
 
 **Theorem (convergence and the exponential).** Let the base be $\mathbb{R}$ or $\mathbb{C}$ and let $\widehat{A}$ be either completion of the algebra. Then every absolutely convergent series $\sum_{n}x_{n}$ with $\sum_{n}\lVert x_{n}\rVert<\infty$ converges in $\widehat{A}$, the geometric series $\sum_{n\ge0}t^{n}$ converges for $\lVert t\rVert<1$ with sum $(1-t)^{-1}$, and for every $v\in V$ the exponential
 
@@ -94,7 +94,7 @@ $$
 
 converges in the norm completion, because $\lVert v^{n}/n!\rVert\le\lVert v\rVert^{n}/n!$ and the numerical series converges.
 
-*Proof.* In a complete normed algebra an absolutely convergent series converges, by the comparison of the partial sums with a Cauchy sequence; the geometric series is estimated by $\lVert t^{n}\rVert\le\lVert t\rVert^{n}$; and the exponential by the estimate displayed, which uses the submultiplicativity and the completeness of the scalar field. $\square$
+*Proof.* In a complete normed algebra an absolutely convergent series converges, by the comparison of the partial sums with a Cauchy sequence; the geometric series is estimated by $\lVert t^{n}\rVert\le\lVert t\rVert^{n}$; and the exponential by the estimate displayed, which uses the submultiplicativity and the completeness of the scalar field.
 
 **Remark (the exponential in the filtration completion).** The exponential also converges in the filtration completion, and no norm is needed to see it: the $n$-th term $v^{n}/n!$ lies in $N_{n}$, because each of the $n$ factors lies in $N_{1}$ and the product of $n$ elements of $N_{1}$ lies in $N_{n}$; consecutive partial sums therefore differ by an element of $N_{n}$ for some $n$, which is exactly the Cauchy condition for the filtration topology. The convergence of the power series is thus a statement of the filtration, which is why the filtration completion is the natural object for it.
 

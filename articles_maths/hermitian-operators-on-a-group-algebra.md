@@ -35,11 +35,11 @@ $$
 (T^*)^* = T, \qquad (ST)^* = T^*S^*, \qquad (\lambda T + \mu S)^* = \bar\lambda T^* + \bar\mu S^* .
 $$
 
-**Proof.** The left identity follows from the unitary representation $\lambda$ and the integrated form: $\lambda(a)^* = \bigl(\int a(x)\lambda(x)dx\bigr)^* = \int\overline{a(x)}\lambda(x)^{-1}dx$, and the substitution $x\to x^{-1}$ with the inversion identity $dx = \Delta(y)^{-1}dy$ at $x = y^{-1}$ turns this into $\int\overline{a(y^{-1})}\Delta(y)^{-1}\lambda(y)dy = \lambda(a^*) = L_{a^*}$; this is the general form of the computation of *Unitary Representations and the Adjoint*. For the right-hand identity in the unimodular case, $R_b$ is the integrated form of the right regular representation, which is unitary exactly then, and the same computation gives $(R_b)^* = R_{b^*}$; on a non-unimodular group $R_b$ is bounded but $\rho$ is unitary only for the weighted inner product. Finally $\mathrm{A}$ is multiplication by the real involution of the twist (the sign character) or the inverse-transpose of a measure-preserving automorphism, self-adjoint in either case. The operator identities are the general anti-linearity and anti-multiplicativity of the adjoint with respect to an inner product. $\square$
+**Proof.** The left identity follows from the unitary representation $\lambda$ and the integrated form: $\lambda(a)^* = \bigl(\int a(x)\lambda(x)dx\bigr)^* = \int\overline{a(x)}\lambda(x)^{-1}dx$, and the substitution $x\to x^{-1}$ with the inversion identity $dx = \Delta(y)^{-1}dy$ at $x = y^{-1}$ turns this into $\int\overline{a(y^{-1})}\Delta(y)^{-1}\lambda(y)dy = \lambda(a^*) = L_{a^*}$; this is the general form of the computation of *Unitary Representations and the Adjoint*. For the right-hand identity in the unimodular case, $R_b$ is the integrated form of the right regular representation, which is unitary exactly then, and the same computation gives $(R_b)^* = R_{b^*}$; on a non-unimodular group $R_b$ is bounded but $\rho$ is unitary only for the weighted inner product. Finally $\mathrm{A}$ is multiplication by the real involution of the twist (the sign character) or the inverse-transpose of a measure-preserving automorphism, self-adjoint in either case. The operator identities are the general anti-linearity and anti-multiplicativity of the adjoint with respect to an inner product.
 
 **Corollary (the left regular representation is a `*`-representation).** For the unitary operators of the group, $(L_{\delta_x})^* = L_{\delta_{x^{-1}}}$, so $\lambda(x)^* = \lambda(x)^{-1}$; more generally $\lambda(f)^* = \lambda(f^*)$, and the closure of $\lambda(\mathcal{A})$ is a `*`-subalgebra of $B(L^2(G))$.
 
-**Proof.** $\delta_x^* = \delta_{x^{-1}}$ for a unimodular group, and $\lambda(f) = L_f$; the theorem gives $\lambda(f)^* = \lambda(f^*)$, and closure under the adjoint is its stability under the involution. $\square$
+**Proof.** $\delta_x^* = \delta_{x^{-1}}$ for a unimodular group, and $\lambda(f) = L_f$; the theorem gives $\lambda(f)^* = \lambda(f^*)$, and closure under the adjoint is its stability under the involution.
 
 **Remark (the adjoint is not the inverse).** The adjoint of $L_a$ is left convolution by $a^*$, not left convolution by $a^{-1}$; the two agree exactly when $a^* = a^{-1}$, that is when $a$ is unitary. The distinction is the analytic content of the passage from the discrete natural form of *The Adjoint of the Left Multiplication on a Topological Group*, where $(L_a)^\dagger = L_{a^{-1}}$, to the complex Haar pairing of Part III, where the conjugation of the inner product intervenes; the two are reconciled by the involution $a\mapsto a^*$.
 
@@ -61,11 +61,11 @@ $$
 
 so the Haar-pairing adjoint is the bilinear-pairing adjoint conjugated by the complex conjugation $J$; for the elementary operators this is the passage $(L_a)^\dagger = L_{a^{-1}}$ to $(L_a)^* = L_{a^*}$, since $J L_{a^{-1}} J = L_{\overline{a^{-1}}} = L_{a^*}$ on a unimodular group.
 
-**Proof.** For the general identity, $\langle f,JT^\dagger Jh\rangle = \int f\,\overline{JT^\dagger Jh} = \int f\,T^\dagger(\overline h) = \langle\!\langle f, T^\dagger(\overline h)\rangle\!\rangle = \langle\!\langle Tf,\overline h\rangle\!\rangle = \int Tf\,\overline h = \langle Tf,h\rangle$, using $J^2 = \mathrm{id}$ and $\overline{\overline{T^\dagger(\overline h)}} = T^\dagger(\overline h)$. The elementary case follows from $(L_a)^\dagger = L_{a^{-1}}$ and $JL_{a^{-1}}J = L_{\overline{a^{-1}}}$, with $\overline{a^{-1}}(x) = \overline{a(x^{-1})} = a^*(x)$ on a unimodular group. $\square$
+**Proof.** For the general identity, $\langle f,JT^\dagger Jh\rangle = \int f\,\overline{JT^\dagger Jh} = \int f\,T^\dagger(\overline h) = \langle\!\langle f, T^\dagger(\overline h)\rangle\!\rangle = \langle\!\langle Tf,\overline h\rangle\!\rangle = \int Tf\,\overline h = \langle Tf,h\rangle$, using $J^2 = \mathrm{id}$ and $\overline{\overline{T^\dagger(\overline h)}} = T^\dagger(\overline h)$. The elementary case follows from $(L_a)^\dagger = L_{a^{-1}}$ and $JL_{a^{-1}}J = L_{\overline{a^{-1}}}$, with $\overline{a^{-1}}(x) = \overline{a(x^{-1})} = a^*(x)$ on a unimodular group.
 
 **Corollary (which adjoint the discrete articles use).** The discrete `- Operator Theory` articles of Parts I and II work with the bilinear natural and signed forms and obtain $(L_a)^\dagger = L_{a^{-1}}$; the present group works with the Haar pairing and obtains $(L_a)^* = L_{a^*}$; the two computations are reconciled in every case by the conjugation $T\mapsto JTJ$ of the proposition, the involution entering through $J = \,{}^{*}\circ\vee$.
 
-**Proof.** The discrete adjoints are computed from the bilinear forms of *The Adjoint of the Left Multiplication on a Topological Group*; the present adjoints are the proposition's conjugation of them, and the formula $J = \,{}^{*}\circ\vee$ identifies $a^{-1}$ with $a^*$ under the conjugation. $\square$
+**Proof.** The discrete adjoints are computed from the bilinear forms of *The Adjoint of the Left Multiplication on a Topological Group*; the present adjoints are the proposition's conjugation of them, and the formula $J = \,{}^{*}\circ\vee$ identifies $a^{-1}$ with $a^*$ under the conjugation.
 
 ## Hermitian and Positive Elements
 
@@ -79,11 +79,11 @@ $$
 
 and it is a `*`-homomorphism; the Hermitian elements of $\mathcal{A}$ form the real subspace $\mathcal{A}_h$, the positive cone $\mathcal{A}^+$ is convex and proper, and $\lambda$ is an order-preserving isomorphism of the ordered `*`-algebra $\mathcal{A}$ onto its image.
 
-**Proof.** By the corollary, $\lambda(f)^* = \lambda(f^*)$, so $\lambda(f)$ is Hermitian exactly when $\lambda(f) = \lambda(f^*)$, which is equivalent to $f = f^*$ because $\lambda$ is injective. If $f = g^*\!*g$ then $\lambda(f) = \lambda(g)^*\lambda(g)\geq0$. The statements about $\mathcal{A}_h$ and $\mathcal{A}^+$ are those of *The Group Algebra as an Involutive Algebra*; multiplicativity and injectivity of $\lambda$ give the isomorphism onto its image. $\square$
+**Proof.** By the corollary, $\lambda(f)^* = \lambda(f^*)$, so $\lambda(f)$ is Hermitian exactly when $\lambda(f) = \lambda(f^*)$, which is equivalent to $f = f^*$ because $\lambda$ is injective. If $f = g^*\!*g$ then $\lambda(f) = \lambda(g)^*\lambda(g)\geq0$. The statements about $\mathcal{A}_h$ and $\mathcal{A}^+$ are those of *The Group Algebra as an Involutive Algebra*; multiplicativity and injectivity of $\lambda$ give the isomorphism onto its image.
 
 **Corollary (the Hermitian decomposition of the operators).** Every operator in $\lambda(\mathcal{A})$ is uniquely $\lambda(f) = \lambda(u) + i\lambda(v)$ with $\lambda(u),\lambda(v)$ Hermitian, and the Hermitian part of $\lambda(\mathcal{A})$ is the image of the Hermitian elements; the skew-Hermitian operators are $i$ times the Hermitian ones.
 
-**Proof.** The decomposition is the image of $f = \mathrm{Re}\,f + i\,\mathrm{Im}\,f$ under the real-linear injection $\lambda$, and the skew statement is the definition. $\square$
+**Proof.** The decomposition is the image of $f = \mathrm{Re}\,f + i\,\mathrm{Im}\,f$ under the real-linear injection $\lambda$, and the skew statement is the definition.
 
 ## Positive Functionals and the Trace
 
@@ -91,11 +91,11 @@ and it is a `*`-homomorphism; the Hermitian elements of $\mathcal{A}$ form the r
 
 **Theorem (the three faces of a positive functional).** A functional $\omega$ on $\mathcal{A}$ is positive if and only if its form $B_\omega(f,g) = \omega(g^*\!*f)$ is positive semidefinite if and only if $\omega = \omega_\phi$ for a positive definite function $\phi$; the corresponding Hermitian operator is the compression $\lambda(\omega)$ acting as $\langle\lambda(f)\xi_\omega,\xi_\omega\rangle = \omega(f)$ on the GNS space, and every vector state $T\mapsto\langle T\xi,\xi\rangle$ restricts to a positive functional on $\lambda(\mathcal{A})$.
 
-**Proof.** The three characterisations are *Hermitian Forms and the Group Algebra* and *Positive Definite Functions and the Gelfand–Raikov Theorem*; the operator description is the GNS construction, in which the cyclic vector $\xi_\omega$ realises $\omega$ as a vector state, and the restriction of a vector state is positive because $\langle\lambda(f^*\!*f)\xi,\xi\rangle = \|\lambda(f)\xi\|^2\geq0$. $\square$
+**Proof.** The three characterisations are *Hermitian Forms and the Group Algebra* and *Positive Definite Functions and the Gelfand–Raikov Theorem*; the operator description is the GNS construction, in which the cyclic vector $\xi_\omega$ realises $\omega$ as a vector state, and the restriction of a vector state is positive because $\langle\lambda(f^*\!*f)\xi,\xi\rangle = \|\lambda(f)\xi\|^2\geq0$.
 
 **Corollary (positivity is preserved by the involution).** For a positive functional $\omega$ one has $\omega(f^*) = \overline{\omega(f)}$, and on a Hermitian element $\omega$ is real; the states on $\mathcal{A}$ are exactly the restrictions of the states of the `*`-algebra $C^*(G)$ in which $\mathcal{A}$ is dense, and the positive functionals of norm one are the states of the group.
 
-**Proof.** $\omega(f^*) = \omega(f^*\!*1) = \overline{\omega(1^*\!*f)} = \overline{\omega(f)}$ under the Hermitian symmetry of the positive form $B_\omega$; density and the extension of a positive functional give the state correspondence. $\square$
+**Proof.** $\omega(f^*) = \omega(f^*\!*1) = \overline{\omega(1^*\!*f)} = \overline{\omega(f)}$ under the Hermitian symmetry of the positive form $B_\omega$; density and the extension of a positive functional give the state correspondence.
 
 **Remark (Hermitian operators that are not in $\lambda(\mathcal{A})$).** The Hermitian operators of the von Neumann algebra $L(G)$ are the self-adjoint elements of the weak closure of $\lambda(\mathcal{A})$; they include operators that are not of the form $\lambda(f)$ for an integrable $f$, and they are the self-adjoint operators affiliated with the group von Neumann algebra. Their spectral theory is *Operator Algebras*; the group-algebraic part, the image of $\mathcal{A}_h$, is what this article has computed.
 

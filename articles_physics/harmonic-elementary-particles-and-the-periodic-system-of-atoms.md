@@ -67,7 +67,7 @@ $$
 \tilde{\Theta}(\mathbf{x},\omega) = \left(\omega - \nabla\right)\circ\,\tilde{\Psi}(\mathbf{x},\omega),
 $$
 
-and conversely every biamplitude is of that form for some $\tilde{\Psi}$. Both statements are pure algebra and both were verified numerically, the first by composing the operator with finite differences on a polynomial biquaternion field, the second on the closed forms below.
+and conversely every biamplitude is of that form for some $\tilde{\Psi}$.
 
 This is the cleanest part of the programme and it is worth naming. The corpus has plane-wave solutions and it has the retarded-potential and Green-function machinery, but it has no account of the **monochromatic standing** sector of the charge–current field, and that sector is what the rest of the paper is built on. Two consequences follow immediately and are used throughout.
 
@@ -177,7 +177,7 @@ $$
 W_{00}^{\,0} \to \frac{1}{2r^2},
 $$
 
-so the density falls as $r^{-1}$ and the energy as $r^{-2}$. Both limits were verified numerically. One numerical detail differs: the source states the current asymptote as $\tfrac{2}{3}\omega^2r$ where the derivation gives $\tfrac13\omega^2r$, and the closed form gives the smaller value.
+so the density falls as $r^{-1}$ and the energy as $r^{-2}$. One numerical detail differs: the source states the current asymptote as $\tfrac{2}{3}\omega^2r$ where the derivation gives $\tfrac13\omega^2r$, and the closed form gives the smaller value.
 
 Two structural facts about the radial profile are worth extracting, since they are what the "atom" section uses.
 
@@ -196,7 +196,7 @@ $$
 r_{,k} = \frac{x_k}{r},
 $$
 
-so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. This was verified numerically to the finite-difference floor. For a general orientation $\mathbf e$ the derived form is
+so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. For a general orientation $\mathbf e$ the derived form is
 
 $$
 \tilde{\Theta}_{00}^{\,\mathbf e}(\mathbf{x},\omega)
@@ -220,7 +220,7 @@ W_{00}^{\,1} = \tfrac12\,\omega^2\left(j_0^2(\omega r) + j_1^2(\omega r)\right),
 \mathbf P_{00}^{\,1} \equiv 0 ,
 $$
 
-which is exactly the pulsar's energy density, and which the paper states without displaying the identity that makes it work. Both were verified numerically, the identity to machine precision and the density against the closed form. The same asymptotics follow: the charge density vanishes at the centre as $r$, the current density tends to the finite value $\omega$, and the energy density tends to $\tfrac12\omega^2$.
+which is exactly the pulsar's energy density, and which the paper states without displaying the identity that makes it work. The same asymptotics follow: the charge density vanishes at the centre as $r$, the current density tends to the finite value $\omega$, and the energy density tends to $\tfrac12\omega^2$.
 
 So the pulsar and the spinor differ in exactly one respect, and it is a single term: at the centre the pulsar's scalar part is $\omega$ while the spinor's is zero. Their energies, their vanishing Poynting vectors and their far-field falloffs are identical.
 

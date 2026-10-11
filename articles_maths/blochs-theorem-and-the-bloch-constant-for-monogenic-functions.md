@@ -126,7 +126,6 @@ The cubic $p(\rho) = 3\rho^3-7\rho^2r+5\rho r^2+9r^3$ has two stationary points,
 
 The value at the evaluation point is elementary: with $r = 1$ and $\rho = 1/30$, the rational part is $1/60$ and the remainder is $8\sqrt3\cdot3887\cdot2/20511149 = 62192\sqrt3/20511149$, since $20511149 = 29^5$ and $(1-1/30)^5 = 29^5/30^5$.
 
-*Verified numerically.* $g'(1/30) = 0.0067028\ldots > 0$ and $g'(1/20) = -0.712166\ldots < 0$; $g''$ is negative at one hundred sample points of $(0,1)$; $p$ has a single real zero, and it lies in $(-1,0)$.
 
 ## The Local Statement
 

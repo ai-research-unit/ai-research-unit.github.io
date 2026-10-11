@@ -22,7 +22,7 @@ The article defines the positive functionals and the pairing they induce, proves
 
 **Proposition (positivity gives self-adjointness).** If $f$ is positive then $f$ is self-adjoint and $f(h) \in \mathbb{R}$ for every Hermitian $h \in A$.
 
-*Proof.* Write $x = h + ik$ with $h, k$ Hermitian; positivity gives $f((h + \lambda k)^{*}(h + \lambda k)) = f(h^{2}) + \lambda f(hk + kh) + \lambda^{2}f(k^{2}) \geq 0$ as a real quadratic in the real $\lambda$, so its discriminant is non-positive and the bilinear form is real valued on the Hermitian part; applying this to the element $x$ and using the real linearity of $f$ on the Hermitian part gives $f(x^{*}) = \overline{f(x)}$. $\square$
+*Proof.* Write $x = h + ik$ with $h, k$ Hermitian; positivity gives $f((h + \lambda k)^{*}(h + \lambda k)) = f(h^{2}) + \lambda f(hk + kh) + \lambda^{2}f(k^{2}) \geq 0$ as a real quadratic in the real $\lambda$, so its discriminant is non-positive and the bilinear form is real valued on the Hermitian part; applying this to the element $x$ and using the real linearity of $f$ on the Hermitian part gives $f(x^{*}) = \overline{f(x)}$.
 
 **Remark.** The proposition is the reason the positivity of a functional is a condition of the *sesquilinear* layer: a positive functional is Hermitian, and a Hermitian functional is exactly a real-valued functional on the Hermitian part, which is the scalar datum that a sesquilinear form of the layer reduces to.
 
@@ -36,7 +36,7 @@ $$
 
 **Proposition (the pairing of a positive functional).** Let $f$ be positive. Then $h_{f}$ is additive in each variable, conjugate-linear in the first and linear in the second, Hermitian, $h_{f}(y,x) = \overline{h_{f}(x,y)}$, and positive semi-definite, $h_{f}(x,x) = f(x^{*}x) \geq 0$. It is the reduction $h_{\varphi}$ of *The Sesquilinear Form and the Conjugation*, §*The Correspondence*, at the functional $\varphi = \varsigma\circ f$, since $h_{\varsigma\circ f}(x,y) = \varsigma(f(y^{*}x)) = f((y^{*}x)^{*}) = f(x^{*}y)$ by the self-adjointness of $f$; equivalently it is the conjugate of the reduction $h_{f}$, and it is the form $h(x,y) = x^{*}y$ of *Hermitian Forms on a Sesqualgebra*, §*The Reduction to the Scalars*, at that functional.
 
-*Proof.* Additivity is linearity of $f$; conjugate-linearity in the first slot is $h_{f}(\lambda x, y) = f(\bar\lambda x^{*}y) = \bar\lambda h_{f}(x,y)$, and linearity in the second is $h_{f}(x,\lambda y) = f(x^{*}\lambda y) = \lambda h_{f}(x,y)$, the scalar $\lambda$ being central. The Hermitian property is $h_{f}(y,x) = f(y^{*}x) = \overline{f(x^{*}y)} = \overline{h_{f}(x,y)}$, which is the self-adjointness of the proposition above; the positive semi-definiteness is the definition of positivity. The identifications are the definitions of the two cited sections read at $\varphi = \varsigma\circ f$, the conjugate functional of $f$. $\square$
+*Proof.* Additivity is linearity of $f$; conjugate-linearity in the first slot is $h_{f}(\lambda x, y) = f(\bar\lambda x^{*}y) = \bar\lambda h_{f}(x,y)$, and linearity in the second is $h_{f}(x,\lambda y) = f(x^{*}\lambda y) = \lambda h_{f}(x,y)$, the scalar $\lambda$ being central. The Hermitian property is $h_{f}(y,x) = f(y^{*}x) = \overline{f(x^{*}y)} = \overline{h_{f}(x,y)}$, which is the self-adjointness of the proposition above; the positive semi-definiteness is the definition of positivity. The identifications are the definitions of the two cited sections read at $\varphi = \varsigma\circ f$, the conjugate functional of $f$.
 
 **Remark (the convention of the corpus and the Hilbert convention).** The form $\Psi(x,y) = y^{*}x$ of *Hermitian Forms on a Sesqualgebra* is linear in the first slot and $\varsigma$-semilinear in the second, and $h_{f}(x,y) = f(x^{*}y) = \overline{f(y^{*}x)}$ is its conjugate, the same form in the Hilbert convention, semilinear in the first slot. The two are exchanged by the exchange of the two arguments, and they carry the same information because $f$ is self-adjoint; the article uses the Hilbert convention, which is the one in which $h_{f}$ is a genuine inner product on the quotient.
 
@@ -50,7 +50,7 @@ $$
 
 with equality if and only if $x$ and $y$ are linearly dependent modulo $N_{f}$.
 
-*Proof.* For complex $\lambda$ the element $x - \lambda y$ satisfies $h_{f}(x - \lambda y, x - \lambda y) = f((x - \lambda y)^{*}(x - \lambda y)) \geq 0$; expanding with the two parities gives $h_{f}(x,x) - \lambda h_{f}(x,y) - \bar\lambda h_{f}(y,x) + \lvert\lambda\rvert^{2}h_{f}(y,y) \geq 0$. When $h_{f}(y,y) \neq 0$ the choice $\lambda = h_{f}(y,x)/h_{f}(y,y)$ and the Hermitian property reduce it to $h_{f}(x,x) - \lvert h_{f}(x,y)\rvert^{2}/h_{f}(y,y) \geq 0$, which is the inequality; when $h_{f}(y,y) = 0$ the same quadratic in real $\lambda$ forces $h_{f}(x,y) = 0$. The equality case is the degenerate case of a positive semi-definite form, by *The Norm Defined by a Form*, §*The Cauchy–Schwarz Inequality*. $\square$
+*Proof.* For complex $\lambda$ the element $x - \lambda y$ satisfies $h_{f}(x - \lambda y, x - \lambda y) = f((x - \lambda y)^{*}(x - \lambda y)) \geq 0$; expanding with the two parities gives $h_{f}(x,x) - \lambda h_{f}(x,y) - \bar\lambda h_{f}(y,x) + \lvert\lambda\rvert^{2}h_{f}(y,y) \geq 0$. When $h_{f}(y,y) \neq 0$ the choice $\lambda = h_{f}(y,x)/h_{f}(y,y)$ and the Hermitian property reduce it to $h_{f}(x,x) - \lvert h_{f}(x,y)\rvert^{2}/h_{f}(y,y) \geq 0$, which is the inequality; when $h_{f}(y,y) = 0$ the same quadratic in real $\lambda$ forces $h_{f}(x,y) = 0$. The equality case is the degenerate case of a positive semi-definite form, by *The Norm Defined by a Form*, §*The Cauchy–Schwarz Inequality*.
 
 **Corollary (the radical is the null space).** For a positive $f$ the null space is the radical of the pairing,
 
@@ -66,7 +66,7 @@ $$
 h_{f}(ax, y) = f((ax)^{*}y) = f(x^{*}a^{*}y) = h_{f}(x, a^{*}y) = 0 ,
 $$
 
-so $ax \in N_{f}$, and $N_{f}$ is a left ideal. $\square$
+so $ax \in N_{f}$, and $N_{f}$ is a left ideal.
 
 ### Continuity
 
@@ -78,7 +78,7 @@ $$
 
 so a state is exactly a positive functional with $f(1) = 1$, and the pairing of a state is controlled by $h_{f}(x,y) \leq \lVert x\rVert\lVert y\rVert$ in absolute value.
 
-*Proof.* For $\lVert a\rVert \leq 1$ the Cauchy–Schwarz inequality gives $\lvert f(a)\rvert^{2} = \lvert f(1^{*}a)\rvert^{2} \leq f(1)f(a^{*}a)$, and $a^{*}a \leq \lVert a\rVert^{2}1$ in the $\mathrm{C}^{*}$-order with $f$ positive on the positive cone, so $f(a^{*}a) \leq \lVert a\rVert^{2}f(1)$; hence $\lvert f(a)\rvert \leq f(1)$ and $\lVert f\rVert \leq f(1)$, while $f(1) \leq \lVert f\rVert$ is the definition of the norm. The bound on the pairing is Cauchy–Schwarz applied to $x/\lVert x\rVert$ and $y/\lVert y\rVert$. $\square$
+*Proof.* For $\lVert a\rVert \leq 1$ the Cauchy–Schwarz inequality gives $\lvert f(a)\rvert^{2} = \lvert f(1^{*}a)\rvert^{2} \leq f(1)f(a^{*}a)$, and $a^{*}a \leq \lVert a\rVert^{2}1$ in the $\mathrm{C}^{*}$-order with $f$ positive on the positive cone, so $f(a^{*}a) \leq \lVert a\rVert^{2}f(1)$; hence $\lvert f(a)\rvert \leq f(1)$ and $\lVert f\rVert \leq f(1)$, while $f(1) \leq \lVert f\rVert$ is the definition of the norm. The bound on the pairing is Cauchy–Schwarz applied to $x/\lVert x\rVert$ and $y/\lVert y\rVert$.
 
 **Remark (the general Banach case).** On an arbitrary unital Banach sesqualgebra the boundedness of a positive functional is not automatic, and the article accordingly restricts to the continuous ones; in the $\mathrm{C}^{*}$-case the hypothesis is free. The bound $\lVert f\rVert = f(1)$ is the reason the states are the positive functionals of the unit ball, and it is the entry to the general theory of *States and Positive Functionals on an Involutive Algebra*, §*The State Space*, which is cited.
 
@@ -94,7 +94,7 @@ $$
 
 is a well-defined inner product on $A/N_{f}$, and the completion $H_{f}$ is a Hilbert space in which $A/N_{f}$ is dense.
 
-*Proof.* The form is well defined on the quotient because $N_{f}$ is the radical, by the corollary of §*The Cauchy–Schwarz Inequality and the Null Space*; it is positive semi-definite by the definition of positivity, and it is positive definite on the quotient because its radical has been divided out; it is sesquilinear by the proposition of §*The Sesquilinear Pairing*. The completion of an inner product space is a Hilbert space, by *Hilbert Spaces*, §*Completeness and the Projection Theorem*. $\square$
+*Proof.* The form is well defined on the quotient because $N_{f}$ is the radical, by the corollary of §*The Cauchy–Schwarz Inequality and the Null Space*; it is positive semi-definite by the definition of positivity, and it is positive definite on the quotient because its radical has been divided out; it is sesquilinear by the proposition of §*The Sesquilinear Pairing*. The completion of an inner product space is a Hilbert space, by *Hilbert Spaces*, §*Completeness and the Projection Theorem*.
 
 ### The Representation
 
@@ -112,7 +112,7 @@ $$
 \langle \pi_{f}(a)x, y\rangle_{f} = f(x^{*}a^{*}y) = f(x^{*}(a^{*}y)) = \langle x, \pi_{f}(a^{*})y\rangle_{f} ,
 $$
 
-which exhibits $\pi_{f}(a^{*}) = \pi_{f}(a)^{*}$ and, in particular, that $\pi_{f}$ is a $*$-representation. $\square$
+which exhibits $\pi_{f}(a^{*}) = \pi_{f}(a)^{*}$ and, in particular, that $\pi_{f}$ is a $*$-representation.
 
 ### The Cyclic Vector and the State
 
@@ -124,7 +124,7 @@ $$
 
 In particular $f$ is a state exactly when $f(1) = 1$, that is exactly when $\xi_{f}$ is a unit vector.
 
-*Proof.* The computation is $\langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle = \langle 1 + N_{f}, a + N_{f}\rangle = f(1^{*}a) = f(a)$, and $\lVert\xi_{f}\rVert^{2} = \langle 1 + N_{f}, 1 + N_{f}\rangle = f(1)$; the inner product is conjugate-linear in the first slot, so the state is $\langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle$ and the reverse order gives $\overline{f(a)}$. The cyclic property is the definition of $H_{f}$ as the completion of the image of $A/N_{f}$. $\square$
+*Proof.* The computation is $\langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle = \langle 1 + N_{f}, a + N_{f}\rangle = f(1^{*}a) = f(a)$, and $\lVert\xi_{f}\rVert^{2} = \langle 1 + N_{f}, 1 + N_{f}\rangle = f(1)$; the inner product is conjugate-linear in the first slot, so the state is $\langle\xi_{f}, \pi_{f}(a)\xi_{f}\rangle$ and the reverse order gives $\overline{f(a)}$. The cyclic property is the definition of $H_{f}$ as the completion of the image of $A/N_{f}$.
 
 ## The Representation of the Sesquilinear Structure
 
@@ -138,7 +138,7 @@ $$
 
 and the unit is represented by the identity, $\pi_{f}(1) = 1$.
 
-*Proof.* The derived product is $x \star y = xy^{*}$, and $\pi_{f}$ is multiplicative with $\pi_{f}(y^{*}) = \pi_{f}(y)^{*}$; the triple product is $(x \star y) \star z^{*} = xy^{*}z$ of *The Bounded Ternary Product*, §*The Definition and the Parity*, and $\pi_{f}$ is multiplicative. The unit is represented by the identity because $\pi_{f}(1)(x + N_{f}) = x + N_{f}$ for every $x$, on a dense subspace, whence $\pi_{f}(1) = 1$ by continuity. $\square$
+*Proof.* The derived product is $x \star y = xy^{*}$, and $\pi_{f}$ is multiplicative with $\pi_{f}(y^{*}) = \pi_{f}(y)^{*}$; the triple product is $(x \star y) \star z^{*} = xy^{*}z$ of *The Bounded Ternary Product*, §*The Definition and the Parity*, and $\pi_{f}$ is multiplicative. The unit is represented by the identity because $\pi_{f}(1)(x + N_{f}) = x + N_{f}$ for every $x$, on a dense subspace, whence $\pi_{f}(1) = 1$ by continuity.
 
 **Remark.** The theorem is the sense in which the GNS construction is the passage of the sesqualgebra to the operators: an element of the sesqualgebra acts on the GNS space by its left multiplication, the derived product acts as the product followed by the adjoint, and the two products of the layer — the binary and the ternary — become the two operations of the operator algebra. The representation is the scalar realisation of the operator theory of *Adjoints of Bounded Sesquilinear Operators*, §*The Canonical Pairing*.
 
@@ -152,7 +152,7 @@ $$
 
 so the pairing $h_{f}$ is the pullback of the inner product of $H_{f}$ by the map $x \mapsto \pi_{f}(x)\xi_{f}$, and it is positive definite exactly when $f$ is faithful.
 
-*Proof.* The multiplicativity and the adjoint property give $\langle\pi_{f}(x)\xi_{f}, \pi_{f}(y)\xi_{f}\rangle = \langle\xi_{f}, \pi_{f}(x)^{*}\pi_{f}(y)\xi_{f}\rangle = \langle\xi_{f}, \pi_{f}(x^{*}y)\xi_{f}\rangle = f(x^{*}y)$, the last step by the vector-state formula. The map $x \mapsto \pi_{f}(x)\xi_{f}$ has kernel $N_{f}$, by $\lVert\pi_{f}(x)\xi_{f}\rVert^{2} = f(x^{*}x)$; so $h_{f}$ is positive definite exactly when $N_{f} = \{0\}$, which is faithfulness. $\square$
+*Proof.* The multiplicativity and the adjoint property give $\langle\pi_{f}(x)\xi_{f}, \pi_{f}(y)\xi_{f}\rangle = \langle\xi_{f}, \pi_{f}(x)^{*}\pi_{f}(y)\xi_{f}\rangle = \langle\xi_{f}, \pi_{f}(x^{*}y)\xi_{f}\rangle = f(x^{*}y)$, the last step by the vector-state formula. The map $x \mapsto \pi_{f}(x)\xi_{f}$ has kernel $N_{f}$, by $\lVert\pi_{f}(x)\xi_{f}\rVert^{2} = f(x^{*}x)$; so $h_{f}$ is positive definite exactly when $N_{f} = \{0\}$, which is faithfulness.
 
 **Remark.** The theorem is the reason the pairing is called positive semi-definite and not positive definite in general: it is the inner product of the images, so its radical is exactly the set of the elements whose image is annihilated by the cyclic vector, and the representation $\pi_{f}$ is injective exactly when the pairing is definite.
 
@@ -170,7 +170,7 @@ so the pairing $h_{f}$ is the pullback of the inner product of $H_{f}$ by the ma
 
 **Proposition (the collapse).** Let $\varsigma = \mathrm{id}$. Then the sesqualgebra has collapsed to the algebra: the involution $*$ is $\mathbb{C}$-linear, the two scalar rules of the product coincide, the pairing $h_{f}(x,y) = f(x^{*}y)$ is $\mathbb{C}$-bilinear rather than sesquilinear, and the GNS construction is that of *States and Positive Functionals on an Involutive Algebra* applied to the $\mathbb{C}$-linear involution $*$ of $A$; the positive functionals are the positive linear functionals of the bilinear layer, and the pairing reads $h_{f}(x,y) = f(xy)$ when in addition $* = \mathrm{id}$.
 
-*Proof.* At $\varsigma = \mathrm{id}$ the scalar rule $(\lambda x)^{*} = \varsigma(\lambda)x^{*}$ becomes $(\lambda x)^{*} = \lambda x^{*}$, so $*$ is $\mathbb{C}$-linear and $h_{f}(\lambda x, y) = f(\lambda x^{*}y) = \lambda h_{f}(x,y)$: the pairing is linear, not merely conjugate-linear, in the first slot. The product is $\mathbb{K}$-bilinear, by the collapse theorem of *Topological Sesqualgebras*, §*The Collapse*, and the positivity is the classical condition on the cone $\{\sum x_{i}^{*}x_{i}\}$. The reduction $f(x^{*}y)$ equals $f(xy)$ for all $x,y$ exactly when $x^{*} = x$ for every $x$, that is when $* = \mathrm{id}$. $\square$
+*Proof.* At $\varsigma = \mathrm{id}$ the scalar rule $(\lambda x)^{*} = \varsigma(\lambda)x^{*}$ becomes $(\lambda x)^{*} = \lambda x^{*}$, so $*$ is $\mathbb{C}$-linear and $h_{f}(\lambda x, y) = f(\lambda x^{*}y) = \lambda h_{f}(x,y)$: the pairing is linear, not merely conjugate-linear, in the first slot. The product is $\mathbb{K}$-bilinear, by the collapse theorem of *Topological Sesqualgebras*, §*The Collapse*, and the positivity is the classical condition on the cone $\{\sum x_{i}^{*}x_{i}\}$. The reduction $f(x^{*}y)$ equals $f(xy)$ for all $x,y$ exactly when $x^{*} = x$ for every $x$, that is when $* = \mathrm{id}$.
 
 ## Examples
 

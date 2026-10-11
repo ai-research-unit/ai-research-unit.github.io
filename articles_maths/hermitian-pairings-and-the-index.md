@@ -29,7 +29,7 @@ H^{*}(X;\mathbb{C})=H^{+}\oplus H^{-},\qquad
 \operatorname{sign}\phi=\operatorname{sign}\phi_{+}+\operatorname{sign}\phi_{-} .
 $$
 
-**Proof.** The compatibility of the pairing with the involution and its Hermitian symmetry make the eigenspaces orthogonal and the restrictions nondegenerate; the orthogonal decomposition and the additivity of the signature are the elementary linear algebra of an isometric involution on a Hermitian space. The statement is that of *Hermitian Pairings on a Topological Space*. $\square$
+**Proof.** The compatibility of the pairing with the involution and its Hermitian symmetry make the eigenspaces orthogonal and the restrictions nondegenerate; the orthogonal decomposition and the additivity of the signature are the elementary linear algebra of an isometric involution on a Hermitian space. The statement is that of *Hermitian Pairings on a Topological Space*.
 
 **Remark.** The signature of the fixed part is the invariant that the index refines: for the signature operator the index is the signature of the intersection form on the harmonic middle forms, and for the Dirac operator it is the difference of the dimensions of the chiral zero modes, which is the trace of the chirality on the kernel. Both are Hermitian pairings with an involution, and the index is the integer attached to them.
 
@@ -71,7 +71,7 @@ $$
 
 the **Atiyah–Singer index theorem**; for the operators of this category the general pairing specialises to the signature $\int_ML(TM)$, the $\hat A$-genus $\int_M\hat A(TM)$ and the holomorphic Euler characteristic $\int_M\operatorname{ch}(E)\operatorname{td}(TM)$.
 
-**Proof sketch.** The topological index is defined by the pushforward in $K$-theory along the embedding of $M$ in a Euclidean space, and the theorem identifies it with the analytic index by the heat-kernel argument; the Chern-character formula is the evaluation of the pushforward by the Riemann–Roch theorem for the embedding. The theorem, the symbol class and the pairing are those of *The Atiyah–Singer Index Theorem and K-Theory*; the specialisations are those of *The Signature Operator*, *The Dirac Operator on a Manifold* and *The Hermitian Index Theorem and the Signature Operator*. $\square$
+**Proof sketch.** The topological index is defined by the pushforward in $K$-theory along the embedding of $M$ in a Euclidean space, and the theorem identifies it with the analytic index by the heat-kernel argument; the Chern-character formula is the evaluation of the pushforward by the Riemann–Roch theorem for the embedding. The theorem, the symbol class and the pairing are those of *The Atiyah–Singer Index Theorem and K-Theory*; the specialisations are those of *The Signature Operator*, *The Dirac Operator on a Manifold* and *The Hermitian Index Theorem and the Signature Operator*.
 
 **Remark.** The pairing is the topological expression of the index, and it is **Hermitian** in the sense that the Chern character is the pairing of the $K$-theory with the cohomology, valued in the real numbers through the fundamental class; the integrality of the index is the statement that the pairing takes integer values when the symbol comes from a genuine elliptic operator, which is the Atiyah–Singer integrality theorem.
 
@@ -85,7 +85,7 @@ $$
 
 so the index is the **Hermitian pairing** of the two kernel spaces: the difference of the dimensions is the pairing of the Hermitian forms, and the analytic index is valued in $\mathbb{Z}$ because the forms are the positive forms of the $L^{2}$ inner products restricted to the kernels.
 
-**Proof.** The Hermitian metrics on $E$ and $F$ give the $L^{2}$ inner products, and the restriction to the finite-dimensional kernels is positive definite by definition; the cokernel of $D$ is the kernel of $D^{*}$ by the Fredholm alternative, and the index is the difference of the dimensions. The positivity is what makes the index a difference of two positive quantities and hence an integer. $\square$
+**Proof.** The Hermitian metrics on $E$ and $F$ give the $L^{2}$ inner products, and the restriction to the finite-dimensional kernels is positive definite by definition; the cokernel of $D$ is the kernel of $D^{*}$ by the Fredholm alternative, and the index is the difference of the dimensions. The positivity is what makes the index a difference of two positive quantities and hence an integer.
 
 **Theorem (the index as a signature).** Let $D$ be a self-adjoint elliptic operator graded by an involution $\tau$ with $\tau D\tau^{-1}=-D$, so that $D$ is odd and splits into the mutually adjoint halves $D^{\pm}$. Then the index of the half is the **signature** of the Hermitian form on the kernel,
 
@@ -95,7 +95,7 @@ $$
 
 the difference of the dimensions of the two eigenspaces of $\tau$ on the kernel; for the signature operator this is the signature of the middle intersection form, and for the Dirac operator the difference of the dimensions of the chiral zero-mode spaces.
 
-**Proof.** The kernel of the self-adjoint operator splits into the two eigenspaces of the involution $\tau$, which are the kernels of the two halves because $\tau D=-D\tau$; the trace of $\tau$ on the kernel is the difference of the two dimensions, and it is the signature of the Hermitian form whose positive and negative parts are the two eigenspaces. The statements for the signature and the Dirac operators are those of *The Adjoint of the Signature Operator* and *The Dirac Operator and Its Adjoint*. $\square$
+**Proof.** The kernel of the self-adjoint operator splits into the two eigenspaces of the involution $\tau$, which are the kernels of the two halves because $\tau D=-D\tau$; the trace of $\tau$ on the kernel is the difference of the two dimensions, and it is the signature of the Hermitian form whose positive and negative parts are the two eigenspaces. The statements for the signature and the Dirac operators are those of *The Adjoint of the Signature Operator* and *The Dirac Operator and Its Adjoint*.
 
 **Corollary (the Hermitian structure of the index).** The index of a self-adjoint graded operator is the invariant of the pair (Hermitian form, involution) on the kernel, and it is the **Hermitian structure** that makes the index an integer of definite sign: the $L^{2}$ form is positive definite, the involution splits it into a positive and a negative part, and the index is the signature of the split. This is the analytic form of the Hermitian pairing of *Hermitian Pairings on a Topological Space*, with the cohomology replaced by the kernel and the involution by the chirality.
 
@@ -109,7 +109,7 @@ $$
 
 where $E$ is the bundle of the operator and $\rho(TM)$ is the characteristic class of the symbol — the Todd class for the Dolbeault operator, the $\hat A$-class for the spin operator, the $L$-class for the signature operator; the pairing of the $K$-theory class of $E$ with the cohomology class $\rho$ is the **Hermitian pairing** of the two, and the multiplicativity of the Chern character, $\operatorname{ch}(E\oplus F)=\operatorname{ch}(E)+\operatorname{ch}(F)$ and $\operatorname{ch}(E\otimes F)=\operatorname{ch}(E)\operatorname{ch}(F)$, is what makes the index additive and multiplicative in the natural sense.
 
-**Proof.** The Chern character of the symbol class of the operator is $\operatorname{ch}(E)\rho(TM)$ by the multiplicativity and the definition of $\rho$ as the Chern character of the symbol of the relevant Dirac-type operator; the pairing is the evaluation on the fundamental class, and the additivity and multiplicativity are those of the index and of the Chern character of *The Hermitian Index Theorem and the Signature Operator*. $\square$
+**Proof.** The Chern character of the symbol class of the operator is $\operatorname{ch}(E)\rho(TM)$ by the multiplicativity and the definition of $\rho$ as the Chern character of the symbol of the relevant Dirac-type operator; the pairing is the evaluation on the fundamental class, and the additivity and multiplicativity are those of the index and of the Chern character of *The Hermitian Index Theorem and the Signature Operator*.
 
 **Remark.** The three characteristic classes of the category are the three values of one construction: the Todd class gives the holomorphic index, the $\hat A$-class the spin index and the $L$-class the signature, and the three are the pairings of the corresponding $K$-theory classes with the fundamental class. The Chern-character pairing is the topological side of the Hermitian pairing of the kernel.
 
@@ -125,7 +125,7 @@ an invariant of the real operator and a refinement of the integer index.
 
 **Theorem.** The mod-two index is well defined for a real self-adjoint graded operator and is computed by the Stiefel–Whitney classes; for the Dirac operator of a spin four-manifold the mod-two index is the Kervaire–Milnor invariant, and the vanishing of the mod-two index of the spin operator is equivalent to Rökhlin's theorem that the signature of a closed spin four-manifold is divisible by $16$.
 
-**Proof sketch.** The real structure makes the complex kernel into the complexification of a real vector space, and the dimension modulo two is the dimension of that real space, invariant under the deformations of the operator because the real index is locally constant; the computation by the Stiefel–Whitney classes is the real index theorem in the $\mathbb{Z}/2$ setting, and the identification with Rökhlin's theorem is the mod-two refinement of the $\hat A$-index. The real index theory is in *The Atiyah–Singer Index Theorem and K-Theory* and *Spin Geometry*. $\square$
+**Proof sketch.** The real structure makes the complex kernel into the complexification of a real vector space, and the dimension modulo two is the dimension of that real space, invariant under the deformations of the operator because the real index is locally constant; the computation by the Stiefel–Whitney classes is the real index theorem in the $\mathbb{Z}/2$ setting, and the identification with Rökhlin's theorem is the mod-two refinement of the $\hat A$-index. The real index theory is in *The Atiyah–Singer Index Theorem and K-Theory* and *Spin Geometry*.
 
 **Remark.** The Hermitian structure of the index has three refinements: the integer index of the complex pairing, the signature of the self-adjoint graded operator, and the mod-two index of the real operator. Each is a pairing of the kernel with the appropriate form — complex Hermitian, Hermitian with an involution, real symmetric — and the trichotomy of real, complex and quaternionic structures is the one of *Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint* and *Real Spinors and Reality Conditions with Inner Conjugation*.
 

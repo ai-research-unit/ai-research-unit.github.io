@@ -106,7 +106,6 @@ $$
 
 A simply connected cover of a connected group is its universal cover, so the two-to-one map $\pi$ of the introduction is the universal covering map of $SO^+(1,3)$. The whole topology of the covering group is the topology of $SU(2)$: the non-compact boost directions are contractible and contribute nothing to the homotopy.
 
-**Verification.** The polar decomposition was checked numerically on random unit-norm rotors. Writing $\tilde{\Lambda} = RB$, the positive factor is the **left** factor of the pair,
 
 $$
 \tilde{\Lambda}^{*}\tilde{\Lambda} = B^\dagger R^{*} R B = B\,R^{*} R\,B = B^2,
@@ -174,7 +173,6 @@ is a closed loop in the Lorentz group, because $\pi(R(2\pi)) = \pi(-e_0) = \pi(e
 
 This is the familiar belt or plate trick: a rotation by $2\pi$ of an object attached to its surroundings by strands cannot be undone while the strands are held fixed, whereas a rotation by $4\pi$ can. Here the strands have an algebraic meaning — they are the continuous choice of which rotor represents the frame — and the belt trick is the statement that the continuous choice, followed around a $2\pi$ rotation, returns the negative of the starting rotor. The two endpoints $e_0$ and $-e_0$ are the same Lorentz transformation and different rotors.
 
-**Verification.** The rotor path was evaluated numerically: $R(2\pi) = -e_0$ and $R(4\pi) = e_0$ were confirmed exactly, and the conjugation action of $R(\theta)$ on a fixed four-vector was periodic in $\theta$ with period $2\pi$, while the rotor itself was periodic only with period $4\pi$. The action is thus single-valued on four-vectors and the rotor is double-valued, which is the covering statement in coordinates.
 
 ## The Topology of the Boost Manifold
 
@@ -282,7 +280,6 @@ $$
 
 which is the displayed formula in terms of $c = \cosh(\psi/2)$ and $s = \sinh(\psi/2)$. The verification below confirms it numerically.
 
-**Verification.** The formula was checked against a direct numerical polar decomposition of the product of two unit-norm boost rotors at five parameter pairs. For $\psi = 1.0$, $\theta = 0.7$ the computed and formula values of $\omega$ agreed as $0.2354236579$ versus $0.2354236579$; the same agreement to ten digits was found at $(\psi,\theta) = (0.5,1.2)$, $(2.0,2.0)$, $(0.2,0.3)$ and $(3.0,0.9)$. The axis was confirmed to be the normal to the boost plane in each case.
 
 **Limits.** The formula has two instructive limits. For small rapidity, $\sinh(\psi/2)\approx\psi/2$ and $\cosh(\psi/2)\approx1$, so
 

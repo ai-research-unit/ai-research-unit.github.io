@@ -15,11 +15,11 @@ Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with a continuous i
 
 **Proposition (the pre-Hilbert structure and the embedding).** The form of the category is an inner product on $A$ when positive definite; the completion $H$ is a Hilbert space and the natural inclusion $\iota : A \hookrightarrow H$ is injective with dense image. Every adjointable operator $T$ has a bounded extension to $H$ and its adjoint $T^\dagger$ agrees with the Hilbert-space adjoint; hence $\mathcal{A}(A) \subseteq B(H)$ as a `*`-subalgebra, and the self-adjoint operators of $A$ are exactly the self-adjoint operators of $B(H)$ that preserve $A$.
 
-**Proof.** The form is sesquilinear, conjugate-symmetric and, by hypothesis, positive definite, so it is an inner product; the completion is a Hilbert space and $A$ is dense in it. An adjointable $T$ satisfies $\lvert\{Tx,y\}\rvert \leq \lVert T^\dagger\rVert\lVert x\rVert\lVert y\rVert$ with $\lVert x\rVert = \{x,x\}^{1/2}$, so it is bounded for the pre-Hilbert norm and extends; the defining identity $\{Tx,y\} = \{x,T^\dagger y\}$ is the Hilbert-space adjoint identity on the dense subspace, hence on all of $H$. $\square$
+**Proof.** The form is sesquilinear, conjugate-symmetric and, by hypothesis, positive definite, so it is an inner product; the completion is a Hilbert space and $A$ is dense in it. An adjointable $T$ satisfies $\lvert\{Tx,y\}\rvert \leq \lVert T^\dagger\rVert\lVert x\rVert\lVert y\rVert$ with $\lVert x\rVert = \{x,x\}^{1/2}$, so it is bounded for the pre-Hilbert norm and extends; the defining identity $\{Tx,y\} = \{x,T^\dagger y\}$ is the Hilbert-space adjoint identity on the dense subspace, hence on all of $H$.
 
 **Theorem (reality of the spectrum and the norm).** A self-adjoint operator $T$ has real spectrum and $\lVert T\rVert = r(T)$; a positive operator has $\sigma(T) \subseteq [0,\infty)$ and $\lVert T\rVert$ is the largest point of the spectrum. The self-adjoint operators form a real Banach space closed under the functional calculus of the self-adjoint operators.
 
-**Proof.** The operator $T$ is a self-adjoint bounded operator of the Hilbert space $H$ by the proposition, and the spectral theory of a self-adjoint operator of a Hilbert space gives real spectrum, $\lVert T\rVert = r(T)$ and, for a positive operator, non-negative spectrum; the functional calculus is the operator calculus of *Operator Algebras*. $\square$
+**Proof.** The operator $T$ is a self-adjoint bounded operator of the Hilbert space $H$ by the proposition, and the spectral theory of a self-adjoint operator of a Hilbert space gives real spectrum, $\lVert T\rVert = r(T)$ and, for a positive operator, non-negative spectrum; the functional calculus is the operator calculus of *Operator Algebras*.
 
 ## The Order
 
@@ -31,11 +31,11 @@ $$
 
 and the positive operators form a convex cone containing the operators $S^\dagger S$.
 
-**Proof.** Positivity is a convex condition closed under sums and under non-negative scalar multiples, so its associated order is a partial order when the cone is proper, which positive definiteness of the form gives: if $T \geq 0$ and $-T \geq 0$ then $\pm\{Tx,x\} \geq 0$ for all $x$, so $\{Tx,x\} = 0$ and $T = 0$. For invariance, $\{U^\dagger TU\,x,x\} = \{TUx,Ux\}$; and $S^\dagger S \geq 0$ because $\{S^\dagger Sx,x\} = \{Sx,Sx\} \geq 0$. $\square$
+**Proof.** Positivity is a convex condition closed under sums and under non-negative scalar multiples, so its associated order is a partial order when the cone is proper, which positive definiteness of the form gives: if $T \geq 0$ and $-T \geq 0$ then $\pm\{Tx,x\} \geq 0$ for all $x$, so $\{Tx,x\} = 0$ and $T = 0$. For invariance, $\{U^\dagger TU\,x,x\} = \{TUx,Ux\}$; and $S^\dagger S \geq 0$ because $\{S^\dagger Sx,x\} = \{Sx,Sx\} \geq 0$.
 
 **Proposition (the Jordan structure).** The self-adjoint operators form a real **Jordan algebra** under the symmetrised product $S \bullet T = \tfrac12(ST + TS)$, and the positive operators are closed under the Jordan product and the functional calculus; the invertible positive operators form a convex cone in the unit group, and the order is the Loewner order when $A$ is a $\mathrm{C}^*$-algebra of operators.
 
-**Proof.** For self-adjoint $S,T$ the symmetrised product is self-adjoint, and the Jordan identities are the associativity of the operator product read in the symmetrisation; positivity under the symmetrised product and the calculus is the operator statement of the same facts. $\square$
+**Proof.** For self-adjoint $S,T$ the symmetrised product is self-adjoint, and the Jordan identities are the associativity of the operator product read in the symmetrisation; positivity under the symmetrised product and the calculus is the operator statement of the same facts.
 
 ## Examples
 
@@ -49,11 +49,11 @@ and the positive operators form a convex cone containing the operators $S^\dagge
 
 **Theorem (the $\mathrm{C}^*$ case).** Let $A$ be a $\mathrm{C}^*$-algebra of operators on a Hilbert space and let the form be the Hilbert–Schmidt form $\{x,y\} = \operatorname{tr}(xy^*)$. Then the completion is the Hilbert–Schmidt space, the adjointable operators are the bounded operators on it, and the self-adjoint operators of $A$ are exactly those fixed by the Hilbert–Schmidt adjoint; the order is the Loewner order and the positive operators are the $\dagger$-invariant operators with a non-negative quadratic form.
 
-**Proof.** The form is the Hilbert–Schmidt inner product, so the adjoint is the Hilbert–Schmidt adjoint and the theory of this article applies; positivity and the order are the operator statements of *Operator Algebras*. $\square$
+**Proof.** The form is the Hilbert–Schmidt inner product, so the adjoint is the Hilbert–Schmidt adjoint and the theory of this article applies; positivity and the order are the operator statements of *Operator Algebras*.
 
 **Proposition (the orders and the norms).** In the Hilbert–Schmidt case the operator norm dominates the form norm on a finite-dimensional $A$, $\lVert T\rVert_2 \leq \sqrt{n}\,\lVert T\rVert$ with $\lVert T\rVert_2 = \{Tx,x\}^{1/2}$ and $n = \dim A$, and $S \leq T$ implies $\lVert S\rVert_2 \leq \lVert T\rVert_2$; the order is invariant under the unitary operators and the positive operators contain the squares $S^\dagger S$.
 
-**Proof.** In finite dimension $\lVert T\rVert_2^2 = \operatorname{tr}(T^*T) \leq \lVert T\rVert^2\operatorname{tr}(1) = n\lVert T\rVert^2$; the monotonicity of the form norm on the positive operators and the invariance of the order are the general statements proved above. $\square$
+**Proof.** In finite dimension $\lVert T\rVert_2^2 = \operatorname{tr}(T^*T) \leq \lVert T\rVert^2\operatorname{tr}(1) = n\lVert T\rVert^2$; the monotonicity of the form norm on the positive operators and the invariance of the order are the general statements proved above.
 
 ## Summary
 

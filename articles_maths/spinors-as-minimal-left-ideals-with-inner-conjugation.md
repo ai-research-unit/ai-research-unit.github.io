@@ -143,7 +143,6 @@ $$
 
 which is the action of the Pauli matrices with $i=\omega$: $e_1$ acts as $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $e_2$ as $\begin{pmatrix}0&-i\\i&0\end{pmatrix}$ and $e_3$ as $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$. So the minimal left ideal is the two-dimensional complex spinor module of the Pauli action, as recorded in *Spin Representations and Clifford Modules with Inner Conjugation*.
 
-**Verification of the relations used.** The products $e_3\pi=\pi$ and $e_3(e_1\pi)=e_3e_1\pi=-e_1e_3\pi=-e_1\pi$ use $e_3\pi=\pi$. The element $e_2\pi=\tfrac12(e_2+e_2e_3)$ equals $\omega e_1\pi$, because $\omega e_1=e_2e_3$ and $e_2e_3\pi=\tfrac12(e_2e_3+e_2e_3e_3)=\tfrac12(e_2e_3+e_2)$; and $e_2(e_1\pi)=e_2e_1\pi=-e_1e_2\pi=-\omega \pi$, since $e_1e_2\pi=\tfrac12(e_1e_2+e_1e_2e_3)=\tfrac12(e_1e_2+\omega)=\omega \pi$. The four elements $\pi,e_1\pi,e_2\pi,\omega \pi$ are independent over $\mathbb{R}$, as their components in the basis $1,e_1,e_2,e_3,e_1e_2,e_2e_3,e_3e_1,\omega$ have distinct pivots.
 
 **The primitivity in this case.** For $x=e_1,e_2$ one computes $fxf=0$, using $e_3e_1e_3=-e_1$ and the same for $e_2$, and $\pi\omega \pi=\omega \pi^2=\omega \pi=\omega\cdot \pi$; so $\pi\mathrm{Cl}\pi$ is the span of $\pi$ and $\omega \pi$ over $\mathbb{R}$, that is the field $\mathbb{C}$ with identity $\pi$, a division algebra. Hence $\pi$ is primitive and the ideal is minimal.
 
@@ -151,7 +150,7 @@ which is the action of the Pauli matrices with $i=\omega$: $e_1$ acts as $\begin
 
 ### Minkowski Space
 
-In $\mathrm{Cl}_{1,3}=M_2(\mathbb{H})$ the even part is $\mathrm{Cl}^0_{1,3}\cong\mathrm{Cl}_{1,2}\cong M_2(\mathbb{C})$, which is the biquaternion algebra $\mathbb{B}$ of *The Clifford Algebra Representation*. An even multivector of $\mathrm{Cl}_{1,3}$ has $1+6+1=8$ real components, the scalar, the six bivectors and the pseudoscalar, and this is the real dimension of a Dirac spinor; the chiral halves are the two minimal left ideals of $M_2(\mathbb{C})$, each of complex dimension two, and they are the two Weyl spinors of the spinor module. The description of a Dirac spinor as an even multivector is thus the statement that the spinor module is the even subalgebra, which here is the biquaternion algebra acting on itself.
+In $\mathrm{Cl}_{1,3}=M_2(\mathbb{H})$ the even part is $\mathrm{Cl}^0_{1,3}\cong\mathrm{Cl}_{1,2}\cong M_2(\mathbb{C})$, which is the biquaternion algebra $\mathbb{B}$ of *The Realification of the General Plain Algebra*. An even multivector of $\mathrm{Cl}_{1,3}$ has $1+6+1=8$ real components, the scalar, the six bivectors and the pseudoscalar, and this is the real dimension of a Dirac spinor; the chiral halves are the two minimal left ideals of $M_2(\mathbb{C})$, each of complex dimension two, and they are the two Weyl spinors of the spinor module. The description of a Dirac spinor as an even multivector is thus the statement that the spinor module is the even subalgebra, which here is the biquaternion algebra acting on itself.
 
 ## The Two Actions on the Ideal
 

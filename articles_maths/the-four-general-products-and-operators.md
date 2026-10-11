@@ -9,7 +9,7 @@ This article states that division of labour precisely, with the matrices of one 
 
 The answer to the question of the title is therefore a negative one, and it agrees with the intuition that the algebra and its product come first and the operator is obtained from them by choosing the element and the insertion. The qualification is that the choice is not arbitrary: on the vector subspace the plain product cannot produce a reflection, only its negative, so that one insertion is *forced* by the algebra and not merely preferred.
 
-The four general products, their relations and their comparison are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products* and *Comparison Between the Four General Products*; the four pairings and their Gram matrices are *The Four Pairings of the Biquaternion Algebra*; the four adjoints and the reading of the family names are *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the conjugations and their group are *The Group of Involutions*; the Clifford reading of the conjugations is *The Clifford Algebra Representation*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra.
+The four general products, their relations and their comparison are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products* and *Comparison Between the Four General Products*; the four pairings and their Gram matrices are *The Four Pairings of the Biquaternion Algebra*; the four adjoints and the reading of the family names are *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; $i$ is the central scalar imaginary; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The three conjugations used are the natural conjugation $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the coefficient conjugation $\bar{\tilde Q}=\overline{Q_0}e_0+\overline{Q_1}e_1+\overline{Q_2}e_2+\overline{Q_3}e_3$, and the Hermitian conjugation $\tilde Q^{*}=\tilde Q^{\natural\bar{\bar{\cdot}}}=\overline{Q_0}e_0-\overline{Q_1}e_1-\overline{Q_2}e_2-\overline{Q_3}e_3$. The vector subspace is $V=\mathbb{C}\{e_1,e_2,e_3\}$, the norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$, an element is a unit exactly when $N(\tilde Q)\ne0$, and $\mathrm{Sc}$ is the scalar part.
 
@@ -39,7 +39,7 @@ $$
 
 of a single rule under the insertion of a conjugation into the first slot and a conjugation into the second.
 
-*Proof.* Reading the four definitions side by side, the products $e_\mu e_\nu$ of the basis and the order of the factors are the same in all four; the only difference is the source of $P_\mu$ in the first factor and of $Q_\nu$ in the second. $\square$
+*Proof.* Reading the four definitions side by side, the products $e_\mu e_\nu$ of the basis and the order of the factors are the same in all four; the only difference is the source of $P_\mu$ in the first factor and of $Q_\nu$ in the second.
 
 **Remark (why "complex products").** The word *complex* records the base field and not a second multiplication: the multiplication of the units is that of $\mathbb{H}$ extended to $\mathbb{C}$, and the four rules move over it. There is no product among the four that is not the plain one with an insertion.
 
@@ -56,7 +56,7 @@ $$
 
 with Gram matrices in the basis $e_0,e_1,e_2,e_3$ equal to $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.
 
-*Proof.* $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$, and on the basis units the two insertions act by $e_\mu^{\natural}=\varepsilon_\mu e_\mu$ and $e_\mu^{*}=\varepsilon_\mu e_\mu$, the coefficients being real and equal to $1$. The Gram matrix is therefore $\varepsilon$ exactly when the first slot carries the sign $\natural$, and $1$ when it does not, that is $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$. The four pairings are distinct as maps — two are bilinear and two sesquilinear in the second argument, and no two agree on complex coefficients — while two pairs of them share a Gram matrix, a Gram matrix seeing the basis units alone, on which the conjugations act by a sign. $\square$
+*Proof.* $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$, and on the basis units the two insertions act by $e_\mu^{\natural}=\varepsilon_\mu e_\mu$ and $e_\mu^{*}=\varepsilon_\mu e_\mu$, the coefficients being real and equal to $1$. The Gram matrix is therefore $\varepsilon$ exactly when the first slot carries the sign $\natural$, and $1$ when it does not, that is $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$. The four pairings are distinct as maps — two are bilinear and two sesquilinear in the second argument, and no two agree on complex coefficients — while two pairs of them share a Gram matrix, a Gram matrix seeing the basis units alone, on which the conjugations act by a sign.
 
 **Corollary (a product is a pairing, not an operator).** The four general products endow $\mathbb{B}$ with the four pairings and nothing else. Each of them is a bilinear or a sesquilinear *form*, and a form does not act on the algebra; it pairs two of its elements. Whatever acts is a map, and a map has to be built.
 
@@ -75,7 +75,7 @@ $$
 
 and for the two-sided operator $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$, $(L_{\tilde A}R_{\tilde B})^{N}=L_{\tilde A^{\natural}}R_{\tilde B^{\natural}}$, $(L_{\tilde A}R_{\tilde B})^{\ast}=L_{\tilde A^{\ast}}R_{\tilde B^{\ast}}$, $(L_{\tilde A}R_{\tilde B})^{\natural\ast}=L_{\bar{\tilde B}}R_{\bar{\tilde A}}$.
 
-*Proof.* *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*, where all sixteen cases are verified on the pairs of basis elements. $\square$
+*Proof.* *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*, where all sixteen cases are verified on the pairs of basis elements.
 
 So the product *does* decide something of the first importance: which adjoint exists, and therefore which of the four operator families has a coherent adjoint theory. That is the whole content of the naming rule of the corpus, and it is a statement about *forms*.
 
@@ -140,23 +140,23 @@ $$
 
 with determinant of the restriction $+1$ and $-1$. The two insertions that read the right factor through ${}^{*}$ behave differently, and the proposition below says exactly how.
 
-*Proof.* For $\tilde A\in V$ the sign reads the parameter as $\tilde A^{\natural}=-\tilde A$, so that $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$; the identity $L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A}$ is the reflection formula of the Clifford algebra in the convention $q(\tilde A)=\langle\tilde A,\tilde A\rangle<0$, equivalently $\tilde A\tilde V+\tilde V\tilde A=2\langle\tilde A,\tilde V\rangle$ and $\tilde A^{2}=q(\tilde A)e_0$. Verified on two hundred random complex vectors: both operators keep $V$ stable without exception, and their restrictions are $-\rho_{\tilde A}$ and $\rho_{\tilde A}$ with no exception. $\square$
+*Proof.* For $\tilde A\in V$ the sign reads the parameter as $\tilde A^{\natural}=-\tilde A$, so that $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$; the identity $L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A}$ is the reflection formula of the Clifford algebra in the convention $q(\tilde A)=\langle\tilde A,\tilde A\rangle<0$, equivalently $\tilde A\tilde V+\tilde V\tilde A=2\langle\tilde A,\tilde V\rangle$ and $\tilde A^{2}=q(\tilde A)e_0$.
 
 **Proposition (the star insertions leave $V$ in general).** For $\tilde A\in V$ the right factor of the starred insertions is $(\tilde A^{*})^{-1}=-(\bar{\tilde A})^{-1}$, so the two starred operators are $-L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$ and $+L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$. They keep $V$ stable exactly when $\bar{\tilde A}$ is a scalar multiple of $\tilde A$, that is when the coefficient vector of $\tilde A$ is a complex multiple of a real one. When it is, and only then, a determinant on $V$ is defined: it is $-1$ for the star insertion and $+1$ for the both insertion when the coefficient vector is real, the two are exchanged when it is purely imaginary, and for a coefficient vector that is a non-real, non-imaginary complex multiple of a real one the restriction is neither $\pm\rho_{\tilde A}$ nor form-preserving. For a generic complex parameter, $V$ is not preserved and the starred insertions are read on the algebra and not on $V$.
 
-*Proof.* Substituting $\tilde A^{*}=-\bar{\tilde A}$ and $\natural(\tilde A)=-\tilde A$ in the four definitions; the equivalences are verified on two hundred random complex vectors, where the starred operators fail to preserve $V$ in every case, and on the collinear parameters $\tilde A=\mu\,\tilde u$ with $\tilde u$ real and $\mu\in\mathbb{C}$. $\square$
+*Proof.*
 
 **Remark (the sentence of the corpus, translated).** *The Signed Sandwich on a Clifford Algebra* says that the ordinary sandwich by a vector is the **negative** of the reflection, and that inserting the grade involution *repairs the sign*. The theorem above is that sentence in the biquaternion model: the plain product gives $-\rho_{\tilde A}$, the involution of $V$ whose fixed space has codimension one, and the sign insertion gives $\rho_{\tilde A}$. This is the one place where the algebra forces a choice rather than permitting one.
 
 **Corollary (where a determinant plus one lives).** On the algebra $\mathbb{B}$ itself, of complex dimension four, all four operators have determinant $+1$; the sign shows in the determinant only on the odd-dimensional restriction $V$, or on a real form of odd dimension. A "rotation" and a "reflection" are therefore read on $V$.
 
-*Proof.* The operators are products $L_{\tilde A}R_{\tilde B}$, whose determinant on $\mathbb{B}$ is $\det(L_{\tilde A})\det(R_{\tilde B})$, and for a four-dimensional space the sign $-1$ on a parameter contributes the factor $(-1)^{4}=+1$. Verified on the four matrices of $e_1$. $\square$
+*Proof.* The operators are products $L_{\tilde A}R_{\tilde B}$, whose determinant on $\mathbb{B}$ is $\det(L_{\tilde A})\det(R_{\tilde B})$, and for a four-dimensional space the sign $-1$ on a parameter contributes the factor $(-1)^{4}=+1$.
 
 ### The Sign Is Invisible on the Centre and on Even Parameters
 
 **Proposition.** If $\tilde A$ is central, $\tilde A=a_0e_0$, then the sign insertion changes nothing, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=L_{\tilde A}R_{\tilde A^{-1}}$. If $\tilde A\in V$ is a vector, the sign insertion negates the operator, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$.
 
-*Proof.* $\natural$ fixes the centre and negates $V$; left multiplication and right multiplication commute. $\square$
+*Proof.* $\natural$ fixes the centre and negates $V$; left multiplication and right multiplication commute.
 
 **Theorem (the determinant table).** For a unit $\tilde A$ let $d$ be the determinant of the operator restricted to $V$ for the four insertions, in the order (none, sign on the left, star on the right, both). Then
 
@@ -171,13 +171,13 @@ with determinant of the restriction $+1$ and $-1$. The two insertions that read 
 
 The zero entries are the starred insertions of a mixed parameter, whose operator does not preserve $V$, so that the restricted determinant is $0$ and is not a rotation-reflection marker; the star and both columns are read on $V$ only for the rows whose parameter has a real or purely imaginary coefficient vector.
 
-*Proof.* The rows are the computed determinants; the first row is the identity on $V$; the second row shows that a central imaginary parameter, on which the sign is invisible, is still separated by the conjugate-linear insertion, $(\tilde A^{*})^{-1}=i e_0$, which gives $-e_0$ on the left factor and hence $-\mathrm{id}$ on $V$; the third and fourth rows are the theorem above; the fifth row is a purely imaginary vector, on which the star insertion coincides with the plain one and the both insertion with the sign, so that the determinants are those of the third row read with the two insertions exchanged; the last row is a mixed parameter, whose starred operators do not keep $V$ stable. $\square$
+*Proof.* The rows are the computed determinants; the first row is the identity on $V$; the second row shows that a central imaginary parameter, on which the sign is invisible, is still separated by the conjugate-linear insertion, $(\tilde A^{*})^{-1}=i e_0$, which gives $-e_0$ on the left factor and hence $-\mathrm{id}$ on $V$; the third and fourth rows are the theorem above; the fifth row is a purely imaginary vector, on which the star insertion coincides with the plain one and the both insertion with the sign, so that the determinants are those of the third row read with the two insertions exchanged; the last row is a mixed parameter, whose starred operators do not keep $V$ stable.
 
 **Remark (the two central rows).** The proposition and the table together show the two independent choices: the *sign* $\natural$ is invisible on the centre and reads only the odd part, while the *star* is invisible on the real directions and reads the coefficient imaginary. Neither is a property of the product; both are properties of the insertion into the chosen element.
 
 ## Which Involution Is "the Sign" Is Itself a Choice
 
-**Remark (the corpus fixes the sign by a formula).** The biquaternion corpus calls $\natural$ the sign and uses it throughout, but the map that plays the role of the sign is a choice among the involutions of the algebra. The identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto ie_k$, has the grades $\text{grade }0=\mathbb{R}e_0$, $\text{grade }1=\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$, $\text{grade }2=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$, $\text{grade }3=\mathbb{R}ie_0$, and in that reading (*The Clifford Algebra Representation*)
+**Remark (the corpus fixes the sign by a formula).** The biquaternion corpus calls $\natural$ the sign and uses it throughout, but the map that plays the role of the sign is a choice among the involutions of the algebra. The identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto ie_k$, has the grades $\text{grade }0=\mathbb{R}e_0$, $\text{grade }1=\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$, $\text{grade }2=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$, $\text{grade }3=\mathbb{R}ie_0$, and in that reading
 
 | map on $\mathbb{B}$ | Clifford partner | signs on grades $0,1,2,3$ | coefficient sign vector on $e_0,e_1,e_2,e_3$ |
 |---|---|---|---|
@@ -213,7 +213,6 @@ The four general products of the biquaternion algebra are one multiplication wit
 - *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram matrices and their adjoints
 - *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the four adjoints on explicit operators and the naming rule of the operator families
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations and their group
-- *The Clifford Algebra Representation* (`articles_maths/the-clifford-algebra-representation.md`), for the grades and the dictionary between the conjugations and the Clifford anti-involutions
 - *The Signed Sandwich on a Clifford Algebra* (`articles_maths/the-signed-sandwich-on-a-clifford-algebra.md`), for the ordinary sandwich, its minus sign and the repair by the grade involution
 - *Two-Sided Operators with the Signed Product* (`articles_maths/two-sided-operators-with-the-signed-product.md`), for the signed family, its twisted composition law and its coset structure
 - *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.md`), for the parameter insertion in the biquaternion model

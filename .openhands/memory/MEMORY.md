@@ -232,6 +232,16 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
 - **Very large heredoc commands in the terminal are silently dropped** (exit 0, nothing printed, no files created).
   Use the file editor to create long files, or split the heredoc into smaller commands.
 
+- **A blind replace of a spaced phrase matches INSIDE words.** 2026-09-27: a corpus-wide
+  `"a operator" -> "an operator"` and `"an projector" -> "a projector"` (grammar fix) corrupted every word
+  ending in `a`/`an` before the noun: `zeta operator`->`zetan operator`, `Tomita`->`Tomitan`,
+  `Volterra`->`Volterran`, `Pólya`->`Pólyan`, `Majorana`->`Majoranan`, `Yukawa`->`Yukawan`,
+  `algebra`->`algebran`, `Inertia`->`Inertian`, `extra`->`extran`, and `Hermitian projectors`->`Hermitia
+  projectors` — 40+ files, both corpora. Repaired by enumerating every `<word> operators?` / `<word>
+  projectors?` and checking the words ending in `a` / `an`. **Rule: never replace a phrase containing a leading
+  article across the corpus; anchor on a word boundary and enumerate the matches first** (same lesson as the
+  fraktur and the `\square` passes above).
+
 ## 2026-09-27 (physical readings in the head categories)
 - All 62 articles of *Biquaternion Universe* (10) and *Biquaternion Mathematical Physics* (52) gained a brief
   `## Physical Readings` section before `## Summary` (2-4 sentences each), the clause `physical readings` in their
@@ -244,9 +254,31 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
   rate are supplied and whose arrow is not.
 - Review of the two newest articles (same day): *The Celestial Sphere of the Null Cone* — the rank-one factorisation
   needs $\tilde H=-i\tilde P$ and "positive" (future null gives eigenvalues $(2,0)$, past $(0,-2)$). *The Monoid of
-  Acting Maps* — "the idempotents lie in $\mathbb{M}_+$" is false (idempotents need not be Hermitian; the corpus's
-  word is **projector**), and the minimal-idempotent identity needs a factor two:
+  Acting Maps* — "the idempotents lie in $\mathbb{M}_+$" is false (idempotents need not be Hermitian; a star-fixed one is a **Hermitian idempotent**, and "projector"
+  now means an idempotent *operator* — see the 2026-09-27 terminology section at the end of this file), and the minimal-idempotent identity needs a factor two:
   $\tilde\Pi\tilde Q\tilde\Pi=\mathrm{Tr}(\tilde\Pi\tilde Q)\tilde\Pi=2\,\mathrm{Sc}(\tilde\Pi\tilde Q)\tilde\Pi$.
 - Two `physics.md` comments wrote $^{\dagger}$ on an element (sandwich action; $4\times4$ regular operator) where
   the articles write $^{*}$; corrected. The dagger belongs to operators only (Conventions, "the dagger is the
   general adjoint").
+
+## Terminology: "projector" = idempotent OPERATOR (user-mandated, 2026-09-27)
+The user settled the two levels, and the first reading in this file was wrong (it said the corpus's word for a
+non-Hermitian idempotent element is "projector"): an **idempotent** is an *element* with `Pi^2 = Pi`, and a
+**projector** is an *idempotent operator*, `p^2 = p`, an idempotent of the morphism space. An idempotent
+element "corresponds to a projector" when its multiplication operator is idempotent. Hermiticity is an extra
+condition, NOT the definition.
+- `conventions-in-mathematics.md` §*The idempotent convention* was rewritten (it read "a **projector** is a
+  Hermitian idempotent, `Pi* = Pi`"), and its glossary rows no longer list "a projector" among the element roles.
+  A star-fixed idempotent is now a **Hermitian idempotent**; the rank-one ones in `M_+` remain the **pure states**.
+- The element family `1/2(e_0 + i mu-hat)` is written **Hermitian idempotent**, never "Hermitian projector"
+  (27 occurrences, in `idempotents-of-the-quaternionic-product`, `the-nilpotents-and-the-zero-divisors-of-the-
+  quaternionic-product`, `the-annihilating-elements-of-the-four-general-products`). Element-sense bare
+  "projector" in the general-plain and symmetric blocks became "idempotent". Operator-sense uses were kept
+  (involutions, Clifford/spinor operators, the matrix models, the `M_2`/`M_4` idempotent matrices, the 2x2 SPA
+  theorem "The Hermitian idempotents have **Hermitian projectors** as their matrices").
+- The three *Specificities* articles (`the-specificities-of-the-general-plain-algebra`,
+  `-general-quaternionic-algebra`, `-symmetric-quaternionic-algebra`, each with a `.context`) write "projector"
+  for the operator and "idempotent" for the element. The article *The Specificities of the Symmetric Quaternionic
+  Algebra* is new (2026-09-27) and settles its row of the GPA comparison table: the projectors are the elements of
+  scalar coordinate `X_0 = 1` (an affine hyperplane, complex dimension three) plus the origin, from the single
+  identity `L_X^2 = X_0 L_X`.

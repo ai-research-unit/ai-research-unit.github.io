@@ -19,7 +19,7 @@ The base field is $\mathbb{C}$, and the conjugation is an antilinear map relativ
 
 **Theorem.** The map $\sigma\mapsto\mathrm{G}^{\sigma}$ is a bijection from the conjugations of $\mathrm{G}$ to the real forms of $\mathrm{G}$, the inverse sending a real form to the antilinear extension of the identity on it.
 
-**Proof.** If $\sigma$ is a conjugation then $\mathrm{G}^{\sigma}$ is a real subspace, closed under the bracket, and $\mathrm{G}=\mathrm{G}^{\sigma}\oplus i\mathrm{G}^{\sigma}$ because every $x$ decomposes as $\tfrac12(x+\sigma x)+\tfrac12(x-\sigma x)$ with the second summand $i$ times an element of $\mathrm{G}^{\sigma}$; hence $\mathrm{G}^{\sigma}\otimes_{\mathbb R}\mathbb C=\mathrm G$. Conversely a real form $\mathrm{G}_0$ spans $\mathrm G$ over $\mathbb{C}$ and the antilinear extension of the identity, $\sigma(x+iy)=x-iy$ for $x,y\in\mathrm{G}_0$, is a conjugation. The two constructions are inverse. $\square$
+**Proof.** If $\sigma$ is a conjugation then $\mathrm{G}^{\sigma}$ is a real subspace, closed under the bracket, and $\mathrm{G}=\mathrm{G}^{\sigma}\oplus i\mathrm{G}^{\sigma}$ because every $x$ decomposes as $\tfrac12(x+\sigma x)+\tfrac12(x-\sigma x)$ with the second summand $i$ times an element of $\mathrm{G}^{\sigma}$; hence $\mathrm{G}^{\sigma}\otimes_{\mathbb R}\mathbb C=\mathrm G$. Conversely a real form $\mathrm{G}_0$ spans $\mathrm G$ over $\mathbb{C}$ and the antilinear extension of the identity, $\sigma(x+iy)=x-iy$ for $x,y\in\mathrm{G}_0$, is a conjugation. The two constructions are inverse.
 
 **Corollary.** The conjugations of $\mathrm{G}$ form a set on which the automorphism group acts by $g\cdot\sigma=g\sigma g^{-1}$, and the orbits are the isomorphism classes of real forms; two real forms are isomorphic exactly when their conjugations are conjugate.
 
@@ -29,11 +29,11 @@ The base field is $\mathbb{C}$, and the conjugation is an antilinear map relativ
 
 **Theorem.** Every complex semisimple $\mathrm G$ has a compact real form, and it is unique up to conjugacy.
 
-**Proof.** This is the standard existence theorem for the compact real form, obtained from a Cartan subalgebra and the root decomposition of *Root Systems and Classification*; it is quoted, and its operator content is the Cartan involution of *The Cartan Involution and the Cartan Decomposition*. $\square$
+**Proof.** This is the standard existence theorem for the compact real form, obtained from a Cartan subalgebra and the root decomposition of *Root Systems and Classification*; it is quoted, and its operator content is the Cartan involution of *The Cartan Involution and the Cartan Decomposition*.
 
 **Proposition.** If $\mathrm{G}_0$ is a real form and $\theta$ its Cartan involution, then the complexification of $\theta$ is a conjugation of $\mathrm G$ commuting with $\sigma$; the composite $\sigma\theta$ is a conjugation whose fixed algebra is the compact real form, and the pair $(\sigma,\theta)$ determines the real form up to conjugacy.
 
-**Proof.** The Cartan involution is an automorphism of $\mathrm{G}_0$, and its complex-linear extension is an automorphism of $\mathrm G$; composing with the antilinear $\sigma$ gives an antilinear involution, and its fixed algebra is compact by the definiteness of $\kappa_\theta$. The determination of the real form by the pair is the standard statement, quoted from the theory of real forms. $\square$
+**Proof.** The Cartan involution is an automorphism of $\mathrm{G}_0$, and its complex-linear extension is an automorphism of $\mathrm G$; composing with the antilinear $\sigma$ gives an antilinear involution, and its fixed algebra is compact by the definiteness of $\kappa_\theta$. The determination of the real form by the pair is the standard statement, quoted from the theory of real forms.
 
 ## The Satake Diagram
 
@@ -41,7 +41,7 @@ The base field is $\mathbb{C}$, and the conjugation is an antilinear map relativ
 
 **Theorem (classification).** The real forms of a complex semisimple Lie algebra are classified by their Satake diagrams, and two real forms are isomorphic exactly when their diagrams coincide.
 
-**Proof.** The conjugation acts on the root system and on the simple roots, and the diagram with its decorations records the action completely; the reconstruction of $\mathrm{G}_0$ from the diagram is the standard classification of real forms, due to Cartan and completed by the Satake and Vogan diagrams, and it is quoted from the theory of *Root Systems and Classification*. $\square$
+**Proof.** The conjugation acts on the root system and on the simple roots, and the diagram with its decorations records the action completely; the reconstruction of $\mathrm{G}_0$ from the diagram is the standard classification of real forms, due to Cartan and completed by the Satake and Vogan diagrams, and it is quoted from the theory of *Root Systems and Classification*.
 
 **Corollary.** A real form is compact exactly when all nodes of its Satake diagram are black, and split exactly when the conjugation acts trivially on the diagram and all nodes are white; the intermediate diagrams classify the intermediate forms.
 
@@ -51,7 +51,6 @@ For $\mathrm{G}=\mathrm{sl}(2,\mathbb{C})$ the real forms are $\mathrm{su}(2)$ a
 
 For $\mathrm{G}=\mathrm{sl}(3,\mathbb{C})$ there are three real forms, with Satake diagrams the diagram $A_2$ with all nodes black (the compact form $\mathrm{su}(3)$), with one black and one white node and no arrow ($\mathrm{sl}(3,\mathbb{R})$, the split form), and with two white nodes joined by an arrow ($\mathrm{su}(2,1)$); the three are the two extreme cases and the intermediate one, and the classification is read off the diagram.
 
-**Verified.** For $\mathrm{sl}(2,\mathbb{C})$ the two conjugations were checked to be antilinear involutive automorphisms with the stated fixed algebras, of real dimensions $3$ and $3$; for $\mathrm{sl}(3,\mathbb{C})$ the three diagrams were matched against the real forms listed in the literature.
 
 ## Summary
 

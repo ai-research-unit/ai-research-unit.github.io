@@ -155,7 +155,7 @@ $$
 \tilde{K} = i\,\frac{\gamma q}{c}\left(\mathbf{E}\cdot\mathbf{v}\right)e_0 + \gamma q\left(\mathbf{E} + \mathbf{v}\times\mathbf{B}\right)
 $$
 
-of the component-form section of *The Lorentz Force in Biquaternion Form*. The matrix computation of $\tilde{K}$ was checked against this expression on a hundred random configurations of $\mathbf{v}$, $\mathbf{E}$, $\mathbf{B}$, $q$ and $m$, and agreed to machine precision.
+of the component-form section of *The Lorentz Force in Biquaternion Form*.
 
 **Consistency with the product formula.** The companion articles write the force as
 
@@ -187,7 +187,7 @@ $$
 \tilde{P}(\tau) = \tilde{\Lambda}(\tau)\bigl(imc\,e_0\bigr)\tilde{\Lambda}(\tau)^{*} .
 $$
 
-Both factors are rotors: $\tilde{\Omega}$ is a pure vector, so $\exp(\tfrac12\tilde{\Omega}\tau)$ is a unit rotor, and the flow stays on the norm shell. The exponential was checked against the differential equation by a finite-difference test on a hundred random rates, with agreement to $10^{-10}$. In a purely electric or purely magnetic field the exponential is a boost or a rotation; in a general uniform field it is a boost composed with a rotation, and the worldline is the corresponding screw. The companion articles on the purely electric and purely magnetic cases of *The Relativistic Particle in an External Field* are the two degenerate limits of this one closed form.
+Both factors are rotors: $\tilde{\Omega}$ is a pure vector, so $\exp(\tfrac12\tilde{\Omega}\tau)$ is a unit rotor, and the flow stays on the norm shell. In a purely electric or purely magnetic field the exponential is a boost or a rotation; in a general uniform field it is a boost composed with a rotation, and the worldline is the corresponding screw. The companion articles on the purely electric and purely magnetic cases of *The Relativistic Particle in an External Field* are the two degenerate limits of this one closed form.
 
 ## What the Framework Supplies and What It Only Transcribes
 

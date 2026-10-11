@@ -149,8 +149,6 @@ R = 2.362563, \qquad \kappa = 0.910632, \qquad D = 2.151426, \qquad d = 3.0175, 
 $$
 the emission event is $2.13$ away from the present position while the field point is $3.02$ away, so the offset is about $70\%$ of $d$.
 
-**Evidence.** The closed form was checked against a Newton solution of the implicit retarded-time equation on constant-velocity worldlines with $\beta = 0.01,0.5,0.9,0.999$ and four random directions. The closed-form $R$ agreed with the iterative one to all displayed digits, the residual $|\mathbf{R}-(\mathbf{d}+\boldsymbol{\beta}R)|$ never exceeded $4.4\times10^{-16}$, and $D$ agreed with $R\kappa$ exactly. The quadratic's negative root was confirmed to be non-positive in every case, and the numerical solver never returned it.
-
 ## Problem 2: The Field in Closed Form — the Heaviside Ellipsoid
 
 **Statement.** (a) Substitute the present-position identities of Problem 1 into the parent's velocity field to obtain
@@ -285,7 +283,7 @@ $$
 = ic\left(\cosh\psi_u + i\sinh\psi_u\,\hat{\mathbf{u}}\right)
 = ic\cosh\psi_u - c\sinh\psi_u\,\hat{\mathbf{u}},
 $$
-whose velocity is $-c\tanh\psi_u\,\hat{\mathbf{u}} = -\mathbf{u}$. Verified numerically: for $\mathbf{u} = 0.6c\,\hat{\mathbf{e}}_1$, $\mathbf{u} = (0,0.5c,0.3c)$, and $\mathbf{u} = (0.3c,-0.4c,0.5c)$ the conjugated rest four-velocity had velocity exactly $-\mathbf{u}$ in each case. So the rotor built with $+\mathbf{u}$ carries the lab to the frame moving with $+\mathbf{u}$; a particle at rest in the lab appears in that frame to move with $-\mathbf{u}$.
+whose velocity is $-c\tanh\psi_u\,\hat{\mathbf{u}} = -\mathbf{u}$. So the rotor built with $+\mathbf{u}$ carries the lab to the frame moving with $+\mathbf{u}$; a particle at rest in the lab appears in that frame to move with $-\mathbf{u}$.
 
 **Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
 $$
@@ -298,7 +296,7 @@ $$
 \tilde{F} = \tilde{\Lambda}_{\mathbf{u}}\,\tilde{F}'\,\tilde{\Lambda}^{\natural}_{\mathbf{u}}
 \qquad(\text{moving frame}\to\text{laboratory}),
 $$
-because $\tilde{\Lambda}^{\natural}_{\mathbf{u}} = \tilde{\Lambda}_{\mathbf{u}}^{-1}$ for a unit-norm rotor. We used the parent's verification that the similarity reproduces the standard component relations $\mathbf{E}_\parallel' = \mathbf{E}_\parallel$, $\mathbf{E}_\perp' = \gamma(\mathbf{E}_\perp + \mathbf{u}\times\mathbf{B}_\perp)$ and their magnetic counterparts, and checked it again here: over sixty random boosts and random test fields the similarity matched the standard formulas to $6.7\times10^{-16}$, while the rotor conjugation did not.
+because $\tilde{\Lambda}^{\natural}_{\mathbf{u}} = \tilde{\Lambda}_{\mathbf{u}}^{-1}$ for a unit-norm rotor.
 
 Now let the charge move with velocity $\mathbf{v} = \mathbf{u}$ in the lab, and let $\mathbf{d}$ be the lab separation from its present position. In the rest frame $S'$, where the charge is permanently at rest at the origin, the field is the static Coulomb field. The lab separation transforms to the rest-frame separation
 $$
@@ -389,7 +387,7 @@ $$
 $$
 which is radial from the *present* position, falls as $1/d^2$ at fixed direction, and is flattened along the motion. The acceleration field vanishes identically, so the field is of electric type and not null: $I_1 = \left(\frac{q}{4\pi\epsilon}\frac{1-\beta^2}{D^2}\right)^2>0$, $I_2=0$, $N(\tilde{F})=-\epsilon I_1\neq0$, $\tilde{F}^2=\epsilon I_1\neq0$; it is never a zero divisor and never radiation.
 
-The closed form was verified by recomputation on cases that did not suggest it. The non-relativistic limit returns Coulomb with an anisotropic $O(\beta^2)$ correction — no linear term — and the retarded position converges to the present one; the ultrarelativistic limit concentrates the field into a transverse pancake of angular half-width $\approx0.766/\gamma$, with transverse enhancement $\gamma$, axial suppression $1/\gamma^2$, and a longitudinal component at fixed impact parameter that is a factor $0.385/\gamma$ below the transverse peak, so the field becomes purely transverse in that precise (pancake) sense while remaining radial from the present position. A third, algebraically independent check boosts the rest-frame Coulomb field with the rotor $\tilde{\Lambda}_{\mathbf{u}}$ and recovers the same closed form to $2.1\times10^{-17}$. The convention used throughout is that the rotor built with $+\mathbf{u}$ carries the laboratory to the frame moving with $+\mathbf{u}$, and that the field transforms by the similarity $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$, not by four-vector rotor conjugation.
+The non-relativistic limit returns Coulomb with an anisotropic $O(\beta^2)$ correction — no linear term — and the retarded position converges to the present one; the ultrarelativistic limit concentrates the field into a transverse pancake of angular half-width $\approx0.766/\gamma$, with transverse enhancement $\gamma$, axial suppression $1/\gamma^2$, and a longitudinal component at fixed impact parameter that is a factor $0.385/\gamma$ below the transverse peak, so the field becomes purely transverse in that precise (pancake) sense while remaining radial from the present position. A third, algebraically independent check boosts the rest-frame Coulomb field with the rotor $\tilde{\Lambda}_{\mathbf{u}}$ and recovers the same closed form to $2.1\times10^{-17}$. The convention used throughout is that the rotor built with $+\mathbf{u}$ carries the laboratory to the frame moving with $+\mathbf{u}$, and that the field transforms by the similarity $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\mathbf{u}}\tilde{F}\tilde{\Lambda}_{\mathbf{u}}$, not by four-vector rotor conjugation.
 
 Two things are recorded rather than closed. The first is a clarification: "purely transverse in the ultrarelativistic limit" is exact for the transverse plane and at fixed impact parameter, but false at every finite $\gamma$ if read as a statement about every fixed direction, where the longitudinal fraction is $\gamma$-independent. The second is that the exact reduction to the boosted Coulomb field assumes strictly uniform motion; a charge only instantaneously unaccelerated still carries an acceleration field at the emission event.
 

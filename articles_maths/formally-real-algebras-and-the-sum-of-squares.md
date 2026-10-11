@@ -22,7 +22,7 @@ $$
 
 In that case every sum of squares is $\ge 0$, and the ordering is exactly a choice of the signs; the field is **real closed** when it admits one ordering and no proper algebraic extension with the same property, and then every element has a square root or its negative does.
 
-*Proof.* If $F$ is formally real, the set $\Sigma^2 F$ of the sums of squares is a cone containing $1$ and not $-1$, and a maximal cone containing $\Sigma^2F$ and excluding $-1$ (existence by Zorn's lemma) defines an ordering by $x \le y \iff y - x \in P$ for the corresponding positive cone $P$; conversely an ordering has $x^2 \ge 0$ and hence $\sum x_i^2 \ge 0$, so no nontrivial sum vanishes. The real-closed characterisation is the standard maximality statement. $\square$
+*Proof.* If $F$ is formally real, the set $\Sigma^2 F$ of the sums of squares is a cone containing $1$ and not $-1$, and a maximal cone containing $\Sigma^2F$ and excluding $-1$ (existence by Zorn's lemma) defines an ordering by $x \le y \iff y - x \in P$ for the corresponding positive cone $P$; conversely an ordering has $x^2 \ge 0$ and hence $\sum x_i^2 \ge 0$, so no nontrivial sum vanishes. The real-closed characterisation is the standard maximality statement.
 
 ### The Algebra Case
 
@@ -36,11 +36,11 @@ The algebra is **formally real** when its involution is.
 
 **Proposition.** The condition depends only on $H(A)$: it says that the quadratic map $h\mapsto h^2$ has no nontrivial zero sum on $H(A)$, and it is equivalent to the condition that $-1$ is not a sum of squares in $H(A)$ when $1 \in H(A)$.
 
-*Proof.* If $\sum h_i^2 = 0$ nontrivially then $\sum h_i^2 = 0$, so $(-1)$ is not needed; conversely $-1 = \sum h_i^2$ gives the nontrivial sum $\sum h_i^2 + 1 = 0$ with $1 \in H(A)$. $\square$
+*Proof.* If $\sum h_i^2 = 0$ nontrivially then $\sum h_i^2 = 0$, so $(-1)$ is not needed; conversely $-1 = \sum h_i^2$ gives the nontrivial sum $\sum h_i^2 + 1 = 0$ with $1 \in H(A)$.
 
 **Theorem (the Jordan case).** Let $J$ be a Jordan algebra with a formally real involution $\sigma$, so that $H(J)$ is a Jordan subalgebra. Then $H(J)$ with the restricted product is a formally real Jordan algebra, and the map $h\mapsto h^2$ on $H(J)$ has no nontrivial zero sum; conversely a formally real Jordan algebra $J$ with the identity involution is formally real in this sense.
 
-*Proof.* The self-adjoint part is closed under the Jordan product and the squares $h^2 = h\bullet h$ lie in it by the involution property; the two conditions are the same written with the Jordan product. $\square$
+*Proof.* The self-adjoint part is closed under the Jordan product and the squares $h^2 = h\bullet h$ lie in it by the involution property; the two conditions are the same written with the Jordan product.
 
 ## The Sum of Squares
 
@@ -60,7 +60,7 @@ $$
 \Sigma^2 H(A) \cap \bigl(-\Sigma^2 H(A)\bigr) = \{0\} .
 $$
 
-*Proof.* Closedness is by the definition of a sum and the multiplicativity of the square; the intersection condition says that a sum of squares and its negative can both be sums of squares only if both are $0$, which is the formal reality read on differences. $\square$
+*Proof.* Closedness is by the definition of a sum and the multiplicativity of the square; the intersection condition says that a sum of squares and its negative can both be sums of squares only if both are $0$, which is the formal reality read on differences.
 
 ### The Preorder
 
@@ -74,7 +74,7 @@ It is reflexive and transitive because the sum of two sums of squares is a sum o
 
 **Theorem.** The preorder is a partial order, that is $\le$ is antisymmetric, if and only if the involution is formally real. In that case $h^2 \ge 0$ for every self-adjoint $h$, $1 \ge 0$, and the order is compatible with the addition; it is compatible with the product on the self-adjoint elements under the additional condition that the product of two positive elements is positive, which holds for the commutative formally real algebras and for the Jordan algebras of the self-adjoint part.
 
-*Proof.* Antisymmetry says $a\le b$ and $b\le a$ force $a = b$, that is $b-a\in\Sigma^2$ and $a-b\in\Sigma^2$ force $a = b$; this is the intersection condition. The positivity of the squares is the definition of the cone, and the compatibility with the product is the multiplicativity of the cone under the squares. $\square$
+*Proof.* Antisymmetry says $a\le b$ and $b\le a$ force $a = b$, that is $b-a\in\Sigma^2$ and $a-b\in\Sigma^2$ force $a = b$; this is the intersection condition. The positivity of the squares is the definition of the cone, and the compatibility with the product is the multiplicativity of the cone under the squares.
 
 ## The Real Spectrum and the Order
 
@@ -88,7 +88,7 @@ $$
 
 **Theorem.** A commutative formally real algebra has nonempty real spectrum; for a field the orderings of $F$ are in bijection with the maximal cones $P \subseteq F$ with $P\cup(-P) = F$ and $P\cap(-P) = \{0\}$, and the real-closed fields are those with a unique ordering and no proper real extension.
 
-*Proof.* The orderings correspond to the positive cones, which are exactly the maximal cones excluding $-1$; a formally real algebra has such cones by Zorn's lemma as in the field case, hence a nonempty real spectrum. The real-closed statement is the maximality of the ordering. $\square$
+*Proof.* The orderings correspond to the positive cones, which are exactly the maximal cones excluding $-1$; a formally real algebra has such cones by Zorn's lemma as in the field case, hence a nonempty real spectrum. The real-closed statement is the maximality of the ordering.
 
 **Remark.** The real spectrum carries a topology and a structure sheaf, the real algebraic geometry of Part III; here it is only the set of the orders the formally real structure admits, and no topology and no spectrum of an operator is used.
 
@@ -104,7 +104,7 @@ $$
 
 **Example (the real matrix algebra).** Let $A = M_n(\mathbb{R})$ with the transpose involution $X\mapsto X^{\mathsf{T}}$; the self-adjoint part is the symmetric matrices. A sum of squares of symmetric matrices is a sum of matrices $H_i^2$, and it vanishes only if every $H_i$ vanishes, because the trace of a sum of squares is the sum of the traces of the squares and the trace of the square of a symmetric matrix is a sum of squares of the entries; hence the transpose involution is formally real. The self-adjoint part with the order of the sums of squares is the ordered Jordan algebra of the symmetric matrices, the model of the formally real Jordan algebra that Part IV uses.
 
-*Proof of the matrix case.* For a symmetric matrix $H$ the trace of $H^2$ is $\sum_{i,j}H_{ij}H_{ji} = \sum_{i,j}H_{ij}^2 \ge 0$, and it vanishes only when $H = 0$. If $\sum_i H_i^2 = 0$ with the $H_i$ symmetric, taking the trace gives $\sum_i \mathrm{tr}(H_i^2) = 0$, a sum of non-negative terms, so each $\mathrm{tr}(H_i^2) = 0$ and hence each $H_i = 0$. $\square$
+*Proof of the matrix case.* For a symmetric matrix $H$ the trace of $H^2$ is $\sum_{i,j}H_{ij}H_{ji} = \sum_{i,j}H_{ij}^2 \ge 0$, and it vanishes only when $H = 0$. If $\sum_i H_i^2 = 0$ with the $H_i$ symmetric, taking the trace gives $\sum_i \mathrm{tr}(H_i^2) = 0$, a sum of non-negative terms, so each $\mathrm{tr}(H_i^2) = 0$ and hence each $H_i = 0$.
 
 **Example (formally real Jordan algebras).** More generally the self-adjoint part of a formally real algebra with involution is an ordered Jordan algebra, and the finite-dimensional formally real Jordan algebras are the ordered objects of the structure theory of Part IV; the spin factor built in *Jordan Algebras* is the basic instance, and the reality condition on its defining symmetric structure belongs to the forms of Part II.
 

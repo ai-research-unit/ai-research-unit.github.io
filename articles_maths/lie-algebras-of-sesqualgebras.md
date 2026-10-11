@@ -34,7 +34,7 @@ $$
 [\lambda x, y]_{\varsigma} = \lambda(x \star y) - \varsigma(\lambda)(y \star x) = \lambda[x,y]_{\varsigma} + \bigl(\lambda - \varsigma(\lambda)\bigr)(y \star x) ,
 $$
 
-and the second slot is the same computation read through the transposition of *The Sesquilinear Product*. For $\lambda \in R^{\varsigma}$ the correction term vanishes and the bracket is linear; if the correction vanishes for all $x, y$ at a fixed $\lambda$, then $\bigl(\lambda - \varsigma(\lambda)\bigr)A = 0$ because $y \star x$ runs over $A$ when $A$ has a right unit, and the general case is the degeneracy condition of *Sesqualgebras*. $\square$
+and the second slot is the same computation read through the transposition of *The Sesquilinear Product*. For $\lambda \in R^{\varsigma}$ the correction term vanishes and the bracket is linear; if the correction vanishes for all $x, y$ at a fixed $\lambda$, then $\bigl(\lambda - \varsigma(\lambda)\bigr)A = 0$ because $y \star x$ runs over $A$ when $A$ has a right unit, and the general case is the degeneracy condition of *Sesqualgebras*.
 
 **Remark.** The bracket has one of the two properties of a Lie bracket for free, and the other not at all: it is antisymmetric, and it is not $R$-bilinear. The correction term $(\lambda - \varsigma(\lambda))(y \star x)$ is the whole of the difference between the sesquilinear case and the bilinear one at this level, and it vanishes identically only when the twist is invisible. Over the fixed ring there is no correction, which is why the fixed ring is the natural ring of scalars for every structure of this article and of its Jordan companion.
 
@@ -70,7 +70,7 @@ $$
 [E_{21} - E_{12}, E_{11}]_{\varsigma} = (E_{21} - E_{12})E_{11}^{*} - E_{11}(E_{21} - E_{12})^{*} = (E_{21} - E_{12})E_{11} - E_{11}(E_{12} - E_{21}) = E_{21} - E_{12} ,
 $$
 
-again by the matrix-unit rule. The sum is $E_{21} - E_{12}$, which is not zero. $\square$
+again by the matrix-unit rule. The sum is $E_{21} - E_{12}$, which is not zero.
 
 **Remark.** The witness uses two Hermitian idempotents and one matrix unit, so the failure does not require any exotic element: $E_{11}$ and $E_{22}$ lie in $H(A)$ and $E_{12}$ is an off-diagonal unit. It also shows where the associativity that would save the identity is lost: the computation of the middle term uses $E_{21}E_{11} = E_{21}$ and $E_{11}E_{21} = 0$, two products whose asymmetry is exactly the noncommutativity of $A$, and it is that asymmetry that the reassociation of a Jacobi identity cannot absorb once the two slots of the product carry different involution rules.
 
@@ -86,7 +86,7 @@ again by the matrix-unit rule. The sum is $E_{21} - E_{12}$, which is not zero. 
 
 (ii) If $A$ is unital and faithful and $\star$ is associative, then $\varsigma = \mathrm{id}$ **and** $* = \mathrm{id}$: the derived operation is the product of an ordinary associative algebra and the antisymmetrisation is its commutator. If either involution is non-trivial, then $\star$ is not associative; the antisymmetrisation is then a bracket over the fixed ring $R^{\varsigma}$ alone, and its Jacobi identity fails in the noncommutative case, by the two witnesses above.
 
-**Proof.** (i) For any product $\star$ the antisymmetrisation satisfies the Jacobi identity as soon as $\star$ is associative, the identity being the standard rearrangement of the associativity; the scalar statement is the proposition on the scalar rules of the definition, the correction term vanishing under the stated degeneracy condition. (ii) The associativity of $\star$ of full type forces $\varsigma = \mathrm{id}$, by the collapse theorem of *Sesqualgebras*, §*The Collapse at the Identity*, and the commutativity of $\star$ does the same. That gives the first involution. For the second, $*$ being an $R$-linear involution, associativity at $\varsigma = \mathrm{id}$ reads $(xy^{*})z^{*} = x(yz^{*})^{*}$, that is $xy^{*}z^{*} = xzy^{*}$ for all $x, y, z$; putting $x = 1$ and $y = 1$ gives $z^{*} = z$ for all $z$, so $* = \mathrm{id}$. With both involutions trivial the derived operation is the product and the antisymmetrisation is the commutator. Conversely $* \neq \mathrm{id}$ leaves $\star$ non-associative, and the transpose of the remark below exhibits the failure. $\square$
+**Proof.** (i) For any product $\star$ the antisymmetrisation satisfies the Jacobi identity as soon as $\star$ is associative, the identity being the standard rearrangement of the associativity; the scalar statement is the proposition on the scalar rules of the definition, the correction term vanishing under the stated degeneracy condition. (ii) The associativity of $\star$ of full type forces $\varsigma = \mathrm{id}$, by the collapse theorem of *Sesqualgebras*, §*The Collapse at the Identity*, and the commutativity of $\star$ does the same. That gives the first involution. For the second, $*$ being an $R$-linear involution, associativity at $\varsigma = \mathrm{id}$ reads $(xy^{*})z^{*} = x(yz^{*})^{*}$, that is $xy^{*}z^{*} = xzy^{*}$ for all $x, y, z$; putting $x = 1$ and $y = 1$ gives $z^{*} = z$ for all $z$, so $* = \mathrm{id}$. With both involutions trivial the derived operation is the product and the antisymmetrisation is the commutator. Conversely $* \neq \mathrm{id}$ leaves $\star$ non-associative, and the transpose of the remark below exhibits the failure.
 
 **Remark.** The hypothesis that makes the antisymmetrisation a Lie bracket is therefore associativity, and for a unital faithful algebra associativity forces both involutions to be trivial: at the level of the product there is no Lie algebra *of* a genuinely sesqualgebra, and the antisymmetrisation is a Lie bracket only in the fully bilinear case, in which the derived operation is the product itself. The rest of the article is about where the Lie structure goes instead.
 
@@ -110,7 +110,7 @@ $$
 [[x,y],z] + [[y,z],x] + [[z,x],y] = (xy - yx)z - z(xy-yx) + (yz-zy)x - x(yz-zy) + (zx-xz)y - y(zx-xz),
 $$
 
-in which every term appears twice with opposite signs once the products are reassociated; this is the classical theorem of *Lie Algebras*, §*The Commutator Bracket*, and it needs nothing of the involution. $\square$
+in which every term appears twice with opposite signs once the products are reassociated; this is the classical theorem of *Lie Algebras*, §*The Commutator Bracket*, and it needs nothing of the involution.
 
 **Remark.** The commutator of the *associative* product has both properties that the antisymmetrisation of the sesquilinear product lacks: it is $R$-bilinear, and it satisfies Jacobi. It is therefore the ambient Lie algebra in which the Lie structures of the sesqualgebra live, and the involution is what selects them.
 
@@ -124,7 +124,7 @@ $$
 
 so that $A$, as a Lie algebra over $R$ under the commutator, is **$\mathbb{Z}/2$-graded** with even part $S(A)$ and odd part $H(A)$, the degree of an element being $1$ on $H(A)$ and $0$ on $S(A)$. Moreover $[x,y]^{*} = -[x^{*},y^{*}]$: the involution reverses the commutator, so it is not an automorphism of the Lie algebra but a graded anti-automorphism, and the negation is a central correction.
 
-**Proof.** For $s, t \in S(A)$ one has $(st - ts)^{*} = t^{*}s^{*} - s^{*}t^{*} = (-t)(-s) - (-s)(-t) = ts - st$, so $[s,t] \in S(A)$; for $s \in S(A)$ and $h \in H(A)$, $[s,h]^{*} = (sh - hs)^{*} = h^{*}s^{*} - s^{*}h^{*} = h(-s) - (-s)h = sh - hs$, so $[s,h] \in H(A)$; for $h_1, h_2 \in H(A)$, $[h_1,h_2]^{*} = h_2h_1 - h_1h_2 = -[h_1,h_2]$, so $[h_1,h_2] \in S(A)$. The last identity is the same computation read for arbitrary $x, y$. The gradings are the parity of the degrees under the rule that the degree of $[x,y]$ is the sum of the degrees: $0+0 = 0$, $0+1 = 1$ and $1+1 = 0$ in $\mathbb{Z}/2$. $\square$
+**Proof.** For $s, t \in S(A)$ one has $(st - ts)^{*} = t^{*}s^{*} - s^{*}t^{*} = (-t)(-s) - (-s)(-t) = ts - st$, so $[s,t] \in S(A)$; for $s \in S(A)$ and $h \in H(A)$, $[s,h]^{*} = (sh - hs)^{*} = h^{*}s^{*} - s^{*}h^{*} = h(-s) - (-s)h = sh - hs$, so $[s,h] \in H(A)$; for $h_1, h_2 \in H(A)$, $[h_1,h_2]^{*} = h_2h_1 - h_1h_2 = -[h_1,h_2]$, so $[h_1,h_2] \in S(A)$. The last identity is the same computation read for arbitrary $x, y$. The gradings are the parity of the degrees under the rule that the degree of $[x,y]$ is the sum of the degrees: $0+0 = 0$, $0+1 = 1$ and $1+1 = 0$ in $\mathbb{Z}/2$.
 
 **Remark.** The Hermitian elements are not a Lie subalgebra, since $[H,H] \subseteq S$ and not $H$; it is the *skew*-Hermitian half that is a subalgebra, and this is the first structural asymmetry of the two halves in the sesquilinear layer. In the bilinear language $S(A)$ is the fixed set of the map $-*$, and the grading says that the Lie algebra is the direct sum of an even part on which the bracket is internal and an odd part on which it is twisted.
 
@@ -132,7 +132,7 @@ so that $A$, as a Lie algebra over $R$ under the commutator, is **$\mathbb{Z}/2$
 
 **Theorem.** Let $A$ be an associative $R$-algebra with a $\varsigma$-semilinear involution $*$. Then $S(A)$ is a Lie subalgebra of the commutator Lie algebra, and it is a Lie algebra over the fixed ring $R^{\varsigma}$: it is an $R^{\varsigma}$-submodule of $A$, the commutator is $R^{\varsigma}$-bilinear on it, and the Jacobi identity holds. No hypothesis on $2$ is needed, since the closure of the bracket in $S(A)$ uses only that $*$ reverses the order of a product.
 
-**Proof.** The closure $[S,S] \subseteq S$ is the theorem above, and the Jacobi identity is inherited from the commutator Lie algebra of $A$. For the scalars, $S(A)$ is an $R^{\varsigma}$-submodule of $A$ by *Hermitian and Skew-Hermitian Elements*, §*The Scalar Action*, and the commutator is $R$-bilinear, hence $R^{\varsigma}$-bilinear on a submodule over $R^{\varsigma}$. $\square$
+**Proof.** The closure $[S,S] \subseteq S$ is the theorem above, and the Jacobi identity is inherited from the commutator Lie algebra of $A$. For the scalars, $S(A)$ is an $R^{\varsigma}$-submodule of $A$ by *Hermitian and Skew-Hermitian Elements*, §*The Scalar Action*, and the commutator is $R$-bilinear, hence $R^{\varsigma}$-bilinear on a submodule over $R^{\varsigma}$.
 
 **Remark.** The Lie algebra is the object that *The Unitary Lie Algebra* develops for its own sake, and it is the **unitary Lie algebra** of $A$: in the matrix model it is the Lie algebra of the unitary group, whose elements are *Units and the Unitary Elements*. It is a Lie algebra over the fixed ring and not over $R$: over $R$ the multiplication by a scalar with $\varsigma(\lambda) = -\lambda$ carries $S(A)$ into $H(A)$, so $S(A)$ is not an $R$-submodule. The pair $\bigl(H(A), S(A)\bigr)$ is therefore an algebra over one ring in two halves, and the Lie algebra lives on the half whose range is closed.
 
@@ -146,7 +146,7 @@ $$
 
 for $s, t \in S(A)$, so that $s \mapsto \mathrm{ad}_{s}$ is a homomorphism of Lie algebras over $R^{\varsigma}$ from the unitary Lie algebra onto the Lie algebra of the inner $*$-derivations, with kernel the central skew-Hermitian elements.
 
-**Proof.** The bracket identity and the description of the image and the kernel are the theorem and the corollary of *Derivations of a Sesqualgebra*, §*The Inner Derivations*; what is added here is only their reading: since $S(A)$ is closed under the commutator, the source of the homomorphism is a Lie algebra over the fixed ring, and the target is a Lie subalgebra of the Lie algebra of the derivations of that article. $\square$
+**Proof.** The bracket identity and the description of the image and the kernel are the theorem and the corollary of *Derivations of a Sesqualgebra*, §*The Inner Derivations*; what is added here is only their reading: since $S(A)$ is closed under the commutator, the source of the homomorphism is a Lie algebra over the fixed ring, and the target is a Lie subalgebra of the Lie algebra of the derivations of that article.
 
 **Remark.** The Hermitian elements act too, and by the skew derivations: $\mathrm{ad}_{h}$ for $h \in H(A)$ satisfies $\mathrm{ad}_{h}(x^{*}) = -\mathrm{ad}_{h}(x)^{*}$ and is not a $*$-derivation, so the $*$-derivations come from the skew half and the skew derivations from the Hermitian half. The parallel with the Jordan side is exact and is the subject of the comparison below: there the Hermitian elements act by the quadratic representation, here the skew-Hermitian elements act by the adjoint representation.
 
@@ -172,7 +172,7 @@ $$
 \{x,y,\{u,v,w\}_{\mathrm{L}}\}_{\mathrm{L}} = \{\{x,y,u\}_{\mathrm{L}},v,w\}_{\mathrm{L}} + \{u,\{x,y,v\}_{\mathrm{L}},w\}_{\mathrm{L}} + \{u,v,\{x,y,w\}_{\mathrm{L}}\}_{\mathrm{L}} .
 $$
 
-**Proof.** The first is the antisymmetry of the commutator: $[[x,y],z] = -[[y,x],z]$. The second is the Jacobi identity, rewritten: $[[x,y],z]$ is one of its three cyclic terms. The third is the Jacobi identity applied to the pair $[x,y]$ and the pair $[u,v]$, or equivalently the identity $[[x,y],[u,v]] = [[[x,y],u],v] - [u,[[x,y],v]]$ expanded with Jacobi. $\square$
+**Proof.** The first is the antisymmetry of the commutator: $[[x,y],z] = -[[y,x],z]$. The second is the Jacobi identity, rewritten: $[[x,y],z]$ is one of its three cyclic terms. The third is the Jacobi identity applied to the pair $[x,y]$ and the pair $[u,v]$, or equivalently the identity $[[x,y],[u,v]] = [[[x,y],u],v] - [u,[[x,y],v]]$ expanded with Jacobi.
 
 **Remark.** The triple system is where the Lie structure survives on the whole space, and it is the ternary companion of the antisymmetrisation: it needs the commutator and not the sesquilinear product, it is available whatever the involution does, and it inherits its identities from the associativity of the product. Its operator form, $z \mapsto \mathrm{ad}_{[x,y]}(z) = [[x,y],z]$, is one of the operators of *The Ternary Product as an Operator*.
 
@@ -186,7 +186,7 @@ $$
 
 **Theorem (the degeneration).** Put $\varsigma = \mathrm{id}$. Then the base involution is the identity, the fixed ring is all of $R$, the derived operation is $R$-bilinear, and the structures of this article become $R$-linear: the commutator Lie algebra of $A$ is the ordinary one, the grading by the involution stands, the skew-Hermitian part is a Lie algebra over $R$, and the antisymmetrisation is that of the $R$-bilinear product $xy^{*}$, which is the commutator of $A$ when in addition $* = \mathrm{id}$ and is still not a Lie bracket when $* \neq \mathrm{id}$.
 
-**Proof.** With $\varsigma = \mathrm{id}$ the second scalar rule is the first, so $x \star y = xy^{*}$ is $R$-bilinear and no correction term survives in the scalar rule of the bracket, so the fixed ring is all of $R$; the commutator Lie algebra, the grading and the closure of the skew-Hermitian part are the theorems above, whose hypotheses then hold with $R^{\varsigma} = R$. The antisymmetrisation is $xy^{*} - yx^{*}$, which is the commutator only when $* = \mathrm{id}$, and the transpose remark shows that $* \neq \mathrm{id}$ leaves the Jacobi identity failing. $\square$
+**Proof.** With $\varsigma = \mathrm{id}$ the second scalar rule is the first, so $x \star y = xy^{*}$ is $R$-bilinear and no correction term survives in the scalar rule of the bracket, so the fixed ring is all of $R$; the commutator Lie algebra, the grading and the closure of the skew-Hermitian part are the theorems above, whose hypotheses then hold with $R^{\varsigma} = R$. The antisymmetrisation is $xy^{*} - yx^{*}$, which is the commutator only when $* = \mathrm{id}$, and the transpose remark shows that $* \neq \mathrm{id}$ leaves the Jacobi identity failing.
 
 **Remark.** The degeneration is the one of *Sesqualgebras*, §*The Collapse at the Identity*, and it has two independent steps: $\varsigma = \mathrm{id}$ makes the product bilinear, and $* = \mathrm{id}$ makes the derived operation the product. Only in the second case is the antisymmetrisation the commutator, and it is the first case that the structures of this article need in order to be Lie algebras over $R$ rather than over $R^{\varsigma}$.
 

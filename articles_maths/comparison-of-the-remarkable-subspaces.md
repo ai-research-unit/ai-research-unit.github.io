@@ -29,7 +29,7 @@ $$
 
 the two **scalar blocks** $A_1, A_2$ of dimension $1$ and the two **vector blocks** $B_1, B_2$ of dimension $3$. They are the pieces into which the eight real coordinates of $\mathbb{B}$ group: the two scalar blocks carry the two real coordinates of the scalar coefficient $Q_0$, and the two vector blocks the six real coordinates of the vector part.
 
-Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto ie_k$, of *The Clifford Algebra Representation*, the four blocks are the four Clifford grades:
+Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto ie_k$, the four blocks are the four Clifford grades:
 
 | block | $A_1$ | $B_2$ | $B_1$ | $A_2$ |
 |---|---|---|---|---|
@@ -211,4 +211,3 @@ The remarkable subspaces of $\mathbb{B}$ are organized by the four coordinate bl
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, its basis, its conjugations and its coordinate systems
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations as an abstract group and the two spaces each defines
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for what the remarkable subspaces give when the product is brought in, which is not part of this article
-- *The Clifford Algebra Representation* (`articles_maths/the-clifford-algebra-representation.md`), for the Clifford identification, the four grades and the conjugations as the intrinsic maps of the Clifford algebra

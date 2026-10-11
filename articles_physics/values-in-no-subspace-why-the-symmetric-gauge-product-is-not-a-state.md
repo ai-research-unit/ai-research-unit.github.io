@@ -68,7 +68,7 @@ scalar part vanishes; a general pair has both nonzero. Its coefficients are not 
 $\mathbb{H}_{\mathbb{B}}$; not all purely imaginary, so not in $i\mathbb{H}_{\mathbb{B}}$; it does not have
 a real scalar coefficient with a purely imaginary vector part, so it is not in $\mathbb{M}_+$; and it does
 not have a purely imaginary scalar coefficient with a real vector part, so it is not in $\mathbb{M}_-$.
-Each obstruction is open, so a general pair fails all six. $\square$
+Each obstruction is open, so a general pair fails all six.
 
 **Worked witness.** Take $\tilde P=(1+i)e_0$ and $\tilde Q=e_0+e_1$. Here $P_0=1+i$, $\mathbf{P}=0$,
 $Q_0=1$, $Q_1=1$, so
@@ -78,8 +78,7 @@ $$
 $$
 
 The scalar part $1+i$ is neither real nor purely imaginary, and the vector part $-(1+i)e_1$ is nonzero, so
-the value is in none of the remarkable subspaces. Verified on the witness and on $100$ random pairs with distinct
-arguments, all of which gave a value outside all six.
+the value is in none of the remarkable subspaces.
 
 **What the theorem does and does not say.** It says that the image of the product is contained in no one of
 the remarkable subspaces. It does **not** say that every value is outside every subspace: at
@@ -105,14 +104,14 @@ with real scalar part and real vector part $-2\sum_k\mathrm{Re}(Q_0\overline{Q_k
 
 *Proof.* Put $\tilde P=\tilde Q$ in the value: the scalar part is $\lvert Q_0\rvert^{2}-\sum_k\lvert Q_k\rvert^{2}$,
 real, and the vector part is $-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}=-2\mathrm{Re}(Q_0\overline{\mathbf{Q}})$,
-real. $\square$
+real.
 
 **Theorem (criterion of centrality).** The diagonal lies in the centre exactly when
 $Q_0\overline{Q_k}\in i\mathbb{R}$ for every $k$, that is, when the vector $Q_0\overline{\mathbf{Q}}$ is
 purely imaginary; in particular on the whole vector subspace, where $Q_0=0$.
 
 *Proof.* The centre is $\mathbb{C}e_0$, so the diagonal is central exactly when its vector part vanishes,
-and its $k$-th component is $-2\mathrm{Re}(Q_0\overline{Q_k})$. $\square$
+and its $k$-th component is $-2\mathrm{Re}(Q_0\overline{Q_k})$.
 
 The criterion is the reason the naive reading of the witnesses fails, and the point deserves to be stated
 plainly. On the **real vector directions** the diagonal is central: at $e_1$ the form is
@@ -193,14 +192,14 @@ Three further readings of the same theorem are recorded here, each under a name 
 ## The Limits
 
 - **A value in no subspace is a datum about the algebra and not a claim that the object is unphysical.**
-  The theorem has no physical negative content: it says that the value is not confined to a remarkable subspace, and it does not say that the value is not a perfectly good element of the algebra.
+The theorem has no physical negative content: it says that the value is not confined to a remarkable subspace, and it does not say that the value is not a perfectly good element of the algebra.
 - **An indefinite scalar part is a signature and not a failure.** The Krein form is the object the gauge
-  side needs; its indefiniteness is the metric and not a defect of the product that carries it.
+side needs; its indefiniteness is the metric and not a defect of the product that carries it.
 - **The diagonal that is not central is not a pathology.** The non-centrality is the algebraic trace of the
-  two mixed terms that the split of the fourth product leaves in the symmetric half; the antisymmetric
-  half has taken the cross term, and the rest remains.
+two mixed terms that the split of the fourth product leaves in the symmetric half; the antisymmetric
+half has taken the cross term, and the rest remains.
 - **The article does not superpose the two symmetric products.** The plain one is the state row and the
-  quaternionic one is not; neither is a correction of the other, and the corpus keeps the names apart.
+quaternionic one is not; neither is a correction of the other, and the corpus keeps the names apart.
 
 ## The Ledger
 
@@ -214,7 +213,7 @@ $K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$, cen
 $Q_0\overline{Q_k}\in i\mathbb{R}$ for each $k$; at $e_1$ it is $-e_0$ and at $e_1+ie_2$ it is $-2e_0$,
 both central, and at $e_0+e_1$ it is $-2e_1$, not central. The plain symmetric sesquilinear product is
 central-valued and its diagonal is $H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf{Q}\rvert^{2}$,
-positive off the origin. Recomputed on the named witnesses and on $100$ random pairs, and reproduced from
+positive off the origin.
 *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions*, *The Non-Central
 Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix and the
 Restrictions of the Form*.

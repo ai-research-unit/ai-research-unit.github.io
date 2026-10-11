@@ -67,7 +67,6 @@ $k_y(x)=\langle k_y,k_x\rangle$ and hence $K(x,y)=\langle k_y,k_x\rangle$; the k
 $\overline{K(y,x)}=\overline{\langle k_x,k_y\rangle}=\langle k_y,k_x\rangle=K(x,y)$, and positive definite
 because $\sum_{i,j}\overline{c_i}c_jK(x_i,x_j)=\lVert\sum_ic_ik_{x_i}\rVert^2\geq0$. If $g$ is orthogonal
 to every $k_x$ then $g(x)=\langle g,k_x\rangle=0$ for every $x$, so $g=0$ and the span is dense.
-$\blacksquare$
 
 The identity $\|k_x\|^2=\langle k_x,k_x\rangle=K(x,x)$ gives the bound the continuous evaluation requires,
 $$
@@ -106,7 +105,7 @@ $k_x\mapsto K(\cdot,x)$ is well defined: if $k_x-k_y\in N$ then
 $\langle k_x-k_y,k_z\rangle=K(z,x)-K(z,y)=0$ for every $z$, and $K(\cdot,x)=K(\cdot,y)$ as functions
 because $K$ is positive definite and hence Hermitian. The reproducing property holds on $H_0$ by the
 definition of the form and extends to the completion by continuity, the map $f\mapsto f(x)=\langle f,k_x\rangle$
-being continuous in $f$. $\blacksquare$
+being continuous in $f$.
 
 **Theorem (uniqueness).** If $H$ and $H'$ are two reproducing kernel Hilbert spaces on $X$ with the same
 kernel $K$, then the map $k_x\mapsto k_x'$ extends to a unique isometric isomorphism $H\to H'$ carrying each
@@ -116,7 +115,6 @@ space with kernel $K$.
 **Proof.** The linear map defined on $H_0$ by $\sum c_ik_{x_i}\mapsto\sum c_ik_{x_i}'$ preserves the inner
 product, since both are given by the same kernel values $K(x_j,x_i)$; it therefore extends by continuity and
 density to an isometry, and the isometry is onto because the image contains the dense span of the $k_x'$.
-$\blacksquare$
 
 ### Aronszajn's Theorem
 
@@ -126,7 +124,7 @@ inverse map is $H\mapsto\langle k_y,k_x\rangle$ of the preceding section.
 
 **Proof.** Given $H$, the kernel $K(x,y)=\langle k_y,k_x\rangle$ is positive definite and $H$ reproduces it.
 Given $K$, the construction produces $H_K$, whose kernel is $K$ again: the kernel of $H_K$ is
-$\langle k_y,k_x\rangle=K(x,y)$. The uniqueness is the theorem above. $\blacksquare$
+$\langle k_y,k_x\rangle=K(x,y)$. The uniqueness is the theorem above.
 
 Thus positive definite kernels and reproducing kernel spaces are the same data, and the previous article's
 Kolmogorov decomposition is exactly this construction: the Kolmogorov vectors are the kernel vectors
@@ -185,7 +183,7 @@ convergence of a norm-bounded sequence in a dense subset to a pointwise limit is
 limit in $H$.
 
 **Proof.** The bound is the identity $f(x)=\langle f,k_x\rangle$ and Cauchy–Schwarz with
-$\lVert k_x\rVert^2=K(x,x)$; the convergence is the bound applied to $f_n-f$. $\blacksquare$
+$\lVert k_x\rVert^2=K(x,x)$; the convergence is the bound applied to $f_n-f$.
 
 **Theorem (the kernel of a subspace).** If $H_1\subseteq H_2$ are reproducing kernel Hilbert spaces on $X$
 with the same inner product, with kernels $K_1,K_2$, then $K_2-K_1$ is a positive definite kernel, and it is
@@ -196,7 +194,6 @@ evaluation.
 representer in $H_1$ of the evaluation at $x$, hence equals $k^1_x$; therefore the vector
 $k^2_x-k^1_x$ lies in the complement and
 $\langle k^2_y-k^1_y,k^2_x-k^1_x\rangle=K_2(x,y)-K_1(x,y)$, which is positive definite as a Gram kernel.
-$\blacksquare$
 
 ## The Kernel and the Integral Operator
 
@@ -212,7 +209,7 @@ operator is positive.
 **Proof.** The displayed identity is the definition of $T_K$ in the countable case; the positivity of $K$
 and of $T_K$ are the same condition. The general measure-theoretic statement — a kernel is positive definite
 exactly when its integral operator is self-adjoint and positive — is *Hermitian Kernels and the Integral
-Operator*, later in this group, where the operator and the kernel are matched. $\blacksquare$
+Operator*, later in this group, where the operator and the kernel are matched.
 
 ## Summary
 

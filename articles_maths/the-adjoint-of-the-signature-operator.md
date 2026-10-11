@@ -36,7 +36,7 @@ $$
 
 up to the degree and dimension sign, and the formal adjoints of $d$ and $d^{*}$ are mutual: $(d^{*})^{*}=d$ on the appropriate domains. On a closed manifold the formal adjoint and the $L^{2}$ adjoint coincide on the smooth forms.
 
-**Proof.** The adjointness is integration by parts: $\int d(\alpha\wedge\star\bar\beta)=\int d\alpha\wedge\star\bar\beta+(-1)^{k}\int\alpha\wedge d\star\bar\beta$, and the left-hand side vanishes on a closed manifold by Stokes' theorem, so the two boundary-free terms are equal up to sign, and the identification of the result with $d^{*}\beta$ gives the formula; the mutual adjointness follows by applying the identity twice. The equality of the formal and $L^{2}$ adjoints on smooth forms is the density of the smooth forms and the ellipticity. $\square$
+**Proof.** The adjointness is integration by parts: $\int d(\alpha\wedge\star\bar\beta)=\int d\alpha\wedge\star\bar\beta+(-1)^{k}\int\alpha\wedge d\star\bar\beta$, and the left-hand side vanishes on a closed manifold by Stokes' theorem, so the two boundary-free terms are equal up to sign, and the identification of the result with $d^{*}\beta$ gives the formula; the mutual adjointness follows by applying the identity twice. The equality of the formal and $L^{2}$ adjoints on smooth forms is the density of the smooth forms and the ellipticity.
 
 ## Self-Adjointness of the Signature Operator
 
@@ -44,7 +44,7 @@ up to the degree and dimension sign, and the formal adjoints of $d$ and $d^{*}$ 
 
 **Theorem.** The signature operator is formally self-adjoint, $D^{*}=D$, and on the closed manifold it is self-adjoint as an unbounded operator on $L^{2}\Omega^{\bullet}(M)$ with domain the Sobolev space of forms in $H^{1}$; its spectrum is real and discrete, it has a complete orthonormal basis of eigenforms, and the Fredholm alternative holds at $\lambda=0$.
 
-**Proof.** The adjoint of $d+d^{*}$ is $d^{*}+d=D$ by the mutual adjointness of $d$ and $d^{*}$; the self-adjointness as a closed operator follows from the ellipticity and the completeness, and the discreteness of the spectrum is the compactness of the resolvent of an elliptic self-adjoint operator on a closed manifold. The analytic domain theory is that of *The L2 Adjoint of a Differential Operator* and of the spectral theory of Part III. $\square$
+**Proof.** The adjoint of $d+d^{*}$ is $d^{*}+d=D$ by the mutual adjointness of $d$ and $d^{*}$; the self-adjointness as a closed operator follows from the ellipticity and the completeness, and the discreteness of the spectrum is the compactness of the resolvent of an elliptic self-adjoint operator on a closed manifold. The analytic domain theory is that of *The L2 Adjoint of a Differential Operator* and of the spectral theory of Part III.
 
 **Corollary (the chiral halves).** On an even-dimensional closed manifold the operator is odd for the chirality, so it restricts to a pair of mutually adjoint operators
 
@@ -67,7 +67,7 @@ $$
 
 the signature of the manifold, by *The Signature Operator*.
 
-**Proof.** The oddness of $D$ was established with the chirality, and the adjoint of an odd self-adjoint operator has the stated chiral form; the cokernel of $D^{+}$ is the kernel of its adjoint $D^{-}$ by the Fredholm alternative, and the index is the difference of the two kernel dimensions; the identification with the signature is the theorem of the signature article. $\square$
+**Proof.** The oddness of $D$ was established with the chirality, and the adjoint of an odd self-adjoint operator has the stated chiral form; the cokernel of $D^{+}$ is the kernel of its adjoint $D^{-}$ by the Fredholm alternative, and the index is the difference of the two kernel dimensions; the identification with the signature is the theorem of the signature article.
 
 ## The Adjoint and the Chirality
 
@@ -81,7 +81,7 @@ $$
 
 so that conjugation by the chirality sends the positive half of the operator to the negative of the adjoint of its own negative half; equivalently, the chirality exchanges the two halves of the self-adjoint operator and conjugates the index problem into its dual. The self-adjointness is therefore the statement that the index of the positive half and the index of the negative half are opposite, $\operatorname{ind}D^{+}=-\operatorname{ind}D^{-}$, so that the index of the self-adjoint operator is well defined as the signature, with no dependence on the choice of the half.
 
-**Proof.** The relation $\tau D\tau^{-1}=-D$ was proved in *The Signature Operator*; multiplying it by $\tau$ gives $D\tau=-\tau D$, and the restriction to the halves gives $D^{+}\tau=\tau D^{-}$ and $D^{-}\tau=\tau D^{+}$, so conjugation by $\tau$ identifies the two adjoint operators and their index difference is the signature. $\square$
+**Proof.** The relation $\tau D\tau^{-1}=-D$ was proved in *The Signature Operator*; multiplying it by $\tau$ gives $D\tau=-\tau D$, and the restriction to the halves gives $D^{+}\tau=\tau D^{-}$ and $D^{-}\tau=\tau D^{+}$, so conjugation by $\tau$ identifies the two adjoint operators and their index difference is the signature.
 
 **Corollary.** The index of the signature operator is the trace of the chirality on the kernel,
 
@@ -103,7 +103,7 @@ $$
 
 so the star, normalized by the degree-dependent phase, intertwines the exterior derivative with its adjoint; the phase is exactly what absorbs the degree dependence of the Hodge identity $d^{*}=\pm\star d\star$, and the normalized star is the isometry $(\tau\alpha,\tau\beta)=(\alpha,\beta)$ that conjugates the operator to its adjoint. Concretely, on the middle forms of a $4k$-manifold the phase is $1$, the chirality is the star itself, and the Poincaré dual of a harmonic anti-self-dual form is a harmonic self-dual form, with the pairing between them the intersection form.
 
-**Proof.** The square and the conjugation of $d$ are those of *The Signature Operator*; the phase in $\tau$ is chosen so that the degree-dependent sign of $\star d\star^{-1}$ is normalized to $-1$, and $\tau$ is unitary because the star is, $(\star\alpha,\star\beta)=(\alpha,\beta)$. The concrete statement on the middle forms is that $\tau=\star$ there, with $\star^2=1$, and Poincaré duality for the harmonic forms is that of *The Hodge Laplacian* and *Hermitian Pairings on a Topological Space*. $\square$
+**Proof.** The square and the conjugation of $d$ are those of *The Signature Operator*; the phase in $\tau$ is chosen so that the degree-dependent sign of $\star d\star^{-1}$ is normalized to $-1$, and $\tau$ is unitary because the star is, $(\star\alpha,\star\beta)=(\alpha,\beta)$. The concrete statement on the middle forms is that $\tau=\star$ there, with $\star^2=1$, and Poincaré duality for the harmonic forms is that of *The Hodge Laplacian* and *Hermitian Pairings on a Topological Space*.
 
 **Remark.** The star is the object that makes the index of the signature operator a **Hermitian** index: it is the isometry that computes the adjoint, and the chirality it defines splits the kernel into the positive and negative definite parts of the intersection form. Without the metric there is no star, hence no adjoint and no index; the operator, its adjoint and its index are all metric objects, and the theorem that the index is the signature is the statement that the metric cancels out of the answer.
 
@@ -122,7 +122,7 @@ the **signature** of the middle intersection form.
 
 The index of the self-adjoint operator is therefore the signature of the restriction of the Hermitian pairing to the middle part of the kernel: the positive definite metric form and the indefinite intersection form differ by the star, $Q(\alpha,\beta)=(\alpha,\star\beta)$, and the index is the difference of the dimensions of the two star eigenspaces on the middle harmonic forms, the non-middle forms contributing nothing.
 
-**Proof.** The kernel of $D$ consists of the harmonic forms, on which $d$ and $d^{*}$ vanish; the metric form is positive definite there, and the intersection form on the middle degree is nondegenerate by Poincaré duality; the star preserves the middle forms and squares to $+1$ there, so it splits them into the self-dual and anti-self-dual parts, the positive and negative definite parts of $Q$, and their dimensions differ by $\sigma(M)$. For $j\neq n-j$ the chirality exchanges $\mathcal{H}^{j}$ and $\mathcal{H}^{n-j}$, so the trace picks up no contribution from them, and its total value is the middle signature. $\square$
+**Proof.** The kernel of $D$ consists of the harmonic forms, on which $d$ and $d^{*}$ vanish; the metric form is positive definite there, and the intersection form on the middle degree is nondegenerate by Poincaré duality; the star preserves the middle forms and squares to $+1$ there, so it splits them into the self-dual and anti-self-dual parts, the positive and negative definite parts of $Q$, and their dimensions differ by $\sigma(M)$. For $j\neq n-j$ the chirality exchanges $\mathcal{H}^{j}$ and $\mathcal{H}^{n-j}$, so the trace picks up no contribution from them, and its total value is the middle signature.
 
 **Corollary (the Hermitian structure of the index).** The index of the signature operator is the Hermitian pairing of *Hermitian Pairings on a Topological Space* evaluated on the chirality, and the operation of taking the adjoint is the operator-theoretic form of the involution on the pairing: the involution $\tau$ acts on the kernel, its middle fixed and anti-fixed parts are the positive and negative definite subspaces, and its non-middle action pairs the two sides. The self-adjointness of the operator is the compatibility of the pairing with the involution in the sense that $(D\alpha,\beta)=(\alpha,D\beta)$, and the index is the invariant of the pair (operator, chirality) that the adjoint operation preserves.
 

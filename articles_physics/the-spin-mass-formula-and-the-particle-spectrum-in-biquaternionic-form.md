@@ -141,7 +141,7 @@ Third, the interlocking relation is the corpus's own tensor-product relation, an
 
 - The mass formula in dimension form, $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\dot l}$, is the identity $(l+\frac12)(\dot l+\frac12)=\frac14(2l+1)(2\dot l+1)$ applied to the programme's asymptotic formula; it is an algebraic identity, verified here.
 - The determinant factorisation and the eigenvalue relation $m_i=\mu_0\lambda_i$ (with $m_i=\mu_0\lambda_i\dot\lambda_i$ for $\tau^{l\dot l}$) are the standard Bhabha–Gel'fand–Yaglom argument, reproduced in outline.
-- The degrees along the spin-$\frac12$ line are $(j+1)(j+2)$, giving $2,6,12,20,30,\dots$; the formula's ratios for the electron, proton, $\Sigma$ and $\pi$ are $1.00$, $1770$, $2278$, and $264.5$. The arithmetic is recomputed in the companion verification script (see the `.context` of this article for the transcript).
+- The degrees along the spin-$\frac12$ line are $(j+1)(j+2)$, giving $2,6,12,20,30,\dots$; the formula's ratios for the electron, proton, $\Sigma$ and $\pi$ are $1.00$, $1770$, $2278$, and $264.5$.
 - The next interlocking representation after $\tau^{59/2,29}$ on the same chain is $\tau^{30,29/2}$, of degree $3660$ and ratio $1830$; the programme's claim that it is $\tau^{67/2,33}$ skips eight places and is inconsistent with its own chain.
 
 **Transcribed, not derived.**

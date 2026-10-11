@@ -66,7 +66,6 @@ $\partial_{X_0},\dots,\partial_{X_3}$ by the Hadamard matrix with $SS^{\mathsf T
 dimension $4$ each $X_r$ is a single sum over $l=1$, and the Euclidean vector is recovered as a
 quaternionic combination of the twisted ones. The split of the Laplacian is the theorem of
 *Hermitian Quaternionic Analysis*, of which the four-dimensional case is the instance $n=1$.
-$\square$
 
 **Remark (the two structures kept apart).** The Fueter operator carries the scalar direction
 $\partial_0$ with coefficient $1$, whose square is $+1$; the Hermitian construction uses the pure
@@ -105,7 +104,7 @@ the axial quaternionic function theory.
 *Proof.* Quoted from *Fueter Theory*: the derivation uses
 $D(A+\vec qB)=(A_0-3B-rB_r)+(B_0+A_r/r)\vec q$, which follows from $\sum_ie_i\vec q\,q_i=-r^2$ and
 the radial identities for the Laplacian in the axial coordinates. The substitution
-$A=r^2\phi,B=r\psi$ carries the system into the displayed pair. $\square$
+$A=r^2\phi,B=r\psi$ carries the system into the displayed pair.
 
 ### The Spherical Reduction of the Hermitian System
 
@@ -121,7 +120,7 @@ and $r=|\vec q|$; the chain rule gives
 $\partial_{x_a}=(\partial_{x_a}q_0)\partial_{q_0} +(\partial_{x_a}r)\partial_r$, with
 $\partial_{x_a}r=q_a/r$, and substituting the twisted patterns gives the reduction. The resulting
 system is overdetermined in four equations for the two scalar functions $(A,B)$, and its solvability
-is the sharpening that the Hermitian refinement imposes on the axial regular functions. $\square$
+is the sharpening that the Hermitian refinement imposes on the axial regular functions.
 
 **Corollary (the Hermitian axial functions).** The Hermitian monogenic axial functions form a proper
 subclass of the axial regular functions, determined by the reduction of the theorem; in the extreme
@@ -132,7 +131,6 @@ functions.
 
 *Proof.* The class is the simultaneous kernel of the four reduced operators; the two extreme
 families are those of *Fueter Theory*, and imposing the additional equations restricts them.
-$\square$
 
 ## Fueter's Theorem in the Hermitian Setting
 
@@ -143,7 +141,7 @@ annihilating the constant and the identity.
 
 *Proof.* Quoted from *Fueter Theory* (Fueter 1935; Sudbery). The verification is the computation in
 axial coordinates: the pair $(A,B)$ built from $(u,v)$ by the Laplacian satisfies the reduced system
-$A_0=3B+rB_r$, $B_0=-A_r/r$ exactly when $f$ is holomorphic. $\square$
+$A_0=3B+rB_r$, $B_0=-A_r/r$ exactly when $f$ is holomorphic.
 
 **Proposition (the Hermitian refinement of the construction).** The Hermitian Fueter construction is
 the restriction of the construction above to the axial functions whose axial pair $(A,B)$ satisfies,
@@ -157,7 +155,7 @@ them is the operator of the Hermitian theory applied to $F=\Delta\tilde f$, and 
 axial reduction because both are rotation-invariant. The statement is the Hermitian form of the
 classical construction; the explicit basis of the image is obtained by applying the Hermitian
 Fischer decomposition of *The Hermitian Dirac Operator and the Fischer Decomposition* to the Fueter
-polynomials. $\square$
+polynomials.
 
 **Remark (what the refinement shifts).** In the classical theory the point of Fueter's theorem is
 that it is *not* the naive substitution of a quaternion for the complex variable but a radial

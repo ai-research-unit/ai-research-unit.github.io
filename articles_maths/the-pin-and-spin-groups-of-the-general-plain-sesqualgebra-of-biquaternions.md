@@ -44,7 +44,7 @@ $$
 \mathrm{Sc}\bigl(\tilde Q^{*}\tilde Q\bigr)=\sum_\mu\lvert Q_\mu\rvert^{2},
 $$
 
-which is a strictly positive real number for $\tilde Q\neq0$; being a central scalar it is therefore a positive real multiple $\omega e_{0}$, $\omega>0$, of the identity, so the modulus-one condition $\omega=1$ reads $\tilde Q^{*}\tilde Q=e_{0}$. Conversely, if $\tilde Q^{*}\tilde Q=e_{0}$ then $(\Theta_{\tilde Q})^{*}\Theta_{\tilde Q}=\Theta_{\tilde Q^{*}\tilde Q}=\Theta_{e_{0}}$ is the identity, and $\Theta_{\tilde Q}$ is an isometry by the adjoint theorem of the sibling article. The criterion was verified on $300$ parameters, including $200$ forced isometries of the form $\tilde Q=U$ with $U\in U(2)$; no parameter outside the slice passed, and the failure of the scaled ones is the displayed multiplier of the next remark. $\square$
+which is a strictly positive real number for $\tilde Q\neq0$; being a central scalar it is therefore a positive real multiple $\omega e_{0}$, $\omega>0$, of the identity, so the modulus-one condition $\omega=1$ reads $\tilde Q^{*}\tilde Q=e_{0}$. Conversely, if $\tilde Q^{*}\tilde Q=e_{0}$ then $(\Theta_{\tilde Q})^{*}\Theta_{\tilde Q}=\Theta_{\tilde Q^{*}\tilde Q}=\Theta_{e_{0}}$ is the identity, and $\Theta_{\tilde Q}$ is an isometry by the adjoint theorem of the sibling article.
 
 **Remark (the failure is a positive similitude, never a sign).** The parameter rule reads $\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$ for central $A$, so for $\tilde Q=c\tilde U$ with $c\in\mathbb{C}$ and $\tilde U\in U$ the operator is $\lvert c\rvert^{2}\mathrm{Ad}_{\tilde U}$. Hence
 
@@ -52,7 +52,7 @@ $$
 \langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde P\rangle_{*}=\lvert c\rvert^{4}\,\langle\tilde S,\tilde P\rangle_{*},
 $$
 
-a similitude of the form with the **positive** multiplier $\lvert c\rvert^{4}$. The family never turns the form into its negative. Verified: the ratio is $16$ for $c=2$ and $1$ for $\lvert c\rvert=1$. This positivity is the algebraic root of the absent sign of §*The Two Groups*.
+a similitude of the form with the **positive** multiplier $\lvert c\rvert^{4}$. The family never turns the form into its negative. This positivity is the algebraic root of the absent sign of §*The Two Groups*.
 
 ## The Two Groups
 
@@ -69,7 +69,7 @@ $$
 \mathrm{Pin}/\mathrm{Spin}=U(2)/\mathrm{SU}(2)\cong U(1).
 $$
 
-*Proof.* The isometry condition is the theorem of the previous section, so $\mathrm{Pin}=U$; the slice is the unitary group in the matrix model; the determinant is a homomorphism $U\to U(1)$, surjective, with kernel the determinant-one part, which is $\mathrm{SU}(2)$; and $U(2)/\mathrm{SU}(2)\cong U(1)$. The determinant-one part is normal as the kernel of a homomorphism, and equals the derived group because $U(2)^{\mathrm{ab}}\cong U(1)$. $\square$
+*Proof.* The isometry condition is the theorem of the previous section, so $\mathrm{Pin}=U$; the slice is the unitary group in the matrix model; the determinant is a homomorphism $U\to U(1)$, surjective, with kernel the determinant-one part, which is $\mathrm{SU}(2)$; and $U(2)/\mathrm{SU}(2)\cong U(1)$. The determinant-one part is normal as the kernel of a homomorphism, and equals the derived group because $U(2)^{\mathrm{ab}}\cong U(1)$.
 
 **Remark (why the minus sign is absent here).** In the two bilinear twins the defining set is a level set of a scalar form, and its two values $+1$ and $-1$ give a pin group with two components, so that $\mathrm{Pin}$ is strictly larger than $\mathrm{Spin}$ by a discrete factor ($\{\pm e_0\}$ in the quaternionic case, no group at all in the plain case). Here the defining element $\tilde Q^{*}\tilde Q$ is **positive**, and the equation $\tilde Q^{*}\tilde Q=-e_{0}$ has no solution, because the scalar part $\sum_\mu\lvert Q_\mu\rvert^{2}$ is non-negative. There is no second component, and the quotient of the two groups is the connected circle, not a two-element group.
 
@@ -85,7 +85,7 @@ $$
 
 On the spin group the kernel is the two-element group $\{\pm e_{0}\}$, and the assignment is the classical two-to-one cover of that rotation group.
 
-*Proof.* The composition law makes the assignment a homomorphism; by the kernel theorem of the sibling article two units give the same operator exactly when they differ by a scalar of modulus one, so the kernel is $U(1)e_{0}$; the central circle is contained in the pin group, so the kernel meets $\mathrm{Pin}$ in $U(1)e_{0}$ and meets $\mathrm{Spin}$ in $\{\pm e_{0}\}$. The matrix model gives $U(2)/U(1)\cong PU(2)$ and the classical isomorphism $PU(2)\cong SO(3)$; the real dimension of the image is therefore $4-1=3$. Verified: $\Theta_{\omega\tilde Q}=\Theta_{\tilde Q}$ for $\lvert\omega\rvert=1$ while $\Theta_{2\tilde Q}\neq\Theta_{\tilde Q}$. $\square$
+*Proof.* The composition law makes the assignment a homomorphism; by the kernel theorem of the sibling article two units give the same operator exactly when they differ by a scalar of modulus one, so the kernel is $U(1)e_{0}$; the central circle is contained in the pin group, so the kernel meets $\mathrm{Pin}$ in $U(1)e_{0}$ and meets $\mathrm{Spin}$ in $\{\pm e_{0}\}$. The matrix model gives $U(2)/U(1)\cong PU(2)$ and the classical isomorphism $PU(2)\cong SO(3)$; the real dimension of the image is therefore $4-1=3$.
 
 **Proposition (the image is the inner automorphism group).** For $\tilde Q\in\mathrm{Pin}$ the parameter is unitary, so $\tilde Q^{*}=\tilde Q^{-1}$ and the two-sided operator is the inner automorphism itself,
 
@@ -103,7 +103,7 @@ The two bilinear twins read their isometry parameters on a level set of a scalar
 
 **Proposition (the condition is an equation on a Hermitian element, not on a scalar).** The isometry condition of $\Theta_{\tilde Q}$ is the matrix equation $\tilde Q^{*}\tilde Q=e_{0}$; it is one $\mathbb{C}$-bilinear equation in the pair $(\tilde Q^{*},\tilde Q)$, equivalently the four statements $\sum_\mu\lvert Q_\mu\rvert^{2}=1$ and $\tilde Q^{*}\tilde Q$ central. The set it defines is a group, because the equation is the defining equation of the unitary slice, whereas the corresponding sets $\{q=\pm1\}$ and $\{N=\pm1\}$ of the bilinear twins are not groups.
 
-*Proof.* The equation is the theorem of §*Conventions and the Isometry Condition*; that the slice is a group is the closure of the unitary group under multiplication and inversion, $\tilde Q,\tilde R\in U\Rightarrow(\tilde Q\tilde R)^{*}(\tilde Q\tilde R)=\tilde R^{*}\tilde Q^{*}\tilde Q\tilde R=e_{0}$. The failure of the bilinear shells is the theorem of the twin articles. $\square$
+*Proof.* The equation is the theorem of §*Conventions and the Isometry Condition*; that the slice is a group is the closure of the unitary group under multiplication and inversion, $\tilde Q,\tilde R\in U\Rightarrow(\tilde Q\tilde R)^{*}(\tilde Q\tilde R)=\tilde R^{*}\tilde Q^{*}\tilde Q\tilde R=e_{0}$. The failure of the bilinear shells is the theorem of the twin articles.
 
 **Remark (the phase is invisible).** Because $\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$, the pin group and the circle act on the same operators: every parameter and its unitary multiples give one isometry, and the information carried by the parameter is only its class modulo the kernel $U(1)e_{0}$. This is the reason the image of the cover has real dimension three although the pin group has real dimension four.
 
@@ -117,7 +117,7 @@ $$
 
 Then $r_{\tilde V}$ is an isometry of the general plain sesquilinear form, but it is not the two-sided operator of any parameter.
 
-*Proof.* The denominator is the positive number $\sum_\mu\lvert V_\mu\rvert^{2}$, so the map is defined, and the standard identity $\langle r_{\tilde V}\tilde X,r_{\tilde V}\tilde Y\rangle_{*}=\langle\tilde X,\tilde Y\rangle_{*}$ is a direct substitution; verified on random pairs. Suppose now that $r_{\tilde V}=\Theta_{\tilde Q}$ for some $\tilde Q$. Then $\Theta_{\tilde Q}$ is an isometry, so $\tilde Q\in U$ by the isometry theorem, and on the slice the operator is the inner automorphism $\mathrm{Ad}_{\tilde Q}$, which is multiplicative: $\Theta_{\tilde Q}(\tilde X\tilde Y)=\Theta_{\tilde Q}(\tilde X)\Theta_{\tilde Q}(\tilde Y)$ for all $\tilde X,\tilde Y$. But the reflection is not multiplicative: taking $\tilde X=\tilde Y=\tilde V$ gives $r_{\tilde V}(\tilde V^{2})=\tilde V^{2}-2\langle\tilde V^{2},\tilde V\rangle_{*}\langle\tilde V,\tilde V\rangle_{*}^{-1}\tilde V$ while $r_{\tilde V}(\tilde V)^{2}=\tilde V^{2}$, and the two differ whenever $\langle\tilde V^{2},\tilde V\rangle_{*}\neq0$; moreover $r_{\tilde V}(e_{0})=e_{0}-2\mathrm{Sc}(\tilde V^{*})\langle\tilde V,\tilde V\rangle_{*}^{-1}\tilde V$ does not fix the centre unless $\mathrm{Sc}(\tilde V^{*})=0$, whereas every inner automorphism fixes the centre. Verified: the multiplicativity failed in $30$ of $30$ random pairs, while the form was preserved in $30$ of $30$. $\square$
+*Proof.* The denominator is the positive number $\sum_\mu\lvert V_\mu\rvert^{2}$, so the map is defined, and the standard identity $\langle r_{\tilde V}\tilde X,r_{\tilde V}\tilde Y\rangle_{*}=\langle\tilde X,\tilde Y\rangle_{*}$ is a direct substitution; verified on random pairs. Suppose now that $r_{\tilde V}=\Theta_{\tilde Q}$ for some $\tilde Q$. Then $\Theta_{\tilde Q}$ is an isometry, so $\tilde Q\in U$ by the isometry theorem, and on the slice the operator is the inner automorphism $\mathrm{Ad}_{\tilde Q}$, which is multiplicative: $\Theta_{\tilde Q}(\tilde X\tilde Y)=\Theta_{\tilde Q}(\tilde X)\Theta_{\tilde Q}(\tilde Y)$ for all $\tilde X,\tilde Y$. But the reflection is not multiplicative: taking $\tilde X=\tilde Y=\tilde V$ gives $r_{\tilde V}(\tilde V^{2})=\tilde V^{2}-2\langle\tilde V^{2},\tilde V\rangle_{*}\langle\tilde V,\tilde V\rangle_{*}^{-1}\tilde V$ while $r_{\tilde V}(\tilde V)^{2}=\tilde V^{2}$, and the two differ whenever $\langle\tilde V^{2},\tilde V\rangle_{*}\neq0$; moreover $r_{\tilde V}(e_{0})=e_{0}-2\mathrm{Sc}(\tilde V^{*})\langle\tilde V,\tilde V\rangle_{*}^{-1}\tilde V$ does not fix the centre unless $\mathrm{Sc}(\tilde V^{*})=0$, whereas every inner automorphism fixes the centre.
 
 **Corollary (the family generates the automorphisms, not the isometries).** Every isometry of the form generated by reflections of the algebra lies outside the two-sided family, since no reflection is a two-sided operator; the family generates only the inner automorphisms, that is, the rotations of §*The Action and the Cover*. This is the conclusion of the plain bilinear twin as well, and the reason is different: there the family was too large only by the sign coset, here it is exactly the automorphism group.
 

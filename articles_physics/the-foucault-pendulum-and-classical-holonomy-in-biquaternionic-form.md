@@ -124,7 +124,7 @@ $$
 
 a fast oscillation of frequency $\omega$ whose **envelope rotates at the rate $-\Omega\sin\lambda$**. The plane of oscillation is the direction of the envelope, so the plane precesses at the rate $-\Omega\sin\lambda$, that is, at the rate $\Omega\sin\lambda$ in the sense opposite to the Earth's rotation, in agreement with Foucault's observation.
 
-The result was checked numerically. For the retained equations the relation below is in fact an identity: $T$ is an exact period of the fast factor, so the envelope factor is the only thing that survives one period, and the numerical integration of the coupled equations reproduces it to machine precision. Integrating with $\omega_0 = 1$ and a representative $\Omega\sin\lambda = 0.457$ — chosen so that the envelope rotation is visible within a single period, and larger relative to the pendulum frequency than the Earth's by a factor of some $3\times10^3$ for a $67$-metre pendulum — the complex amplitude satisfies
+For the retained equations the relation below is in fact an identity: $T$ is an exact period of the fast factor, so the envelope factor is the only thing that survives one period, and the numerical integration of the coupled equations reproduces it to machine precision. Integrating with $\omega_0 = 1$ and a representative $\Omega\sin\lambda = 0.457$ — chosen so that the envelope rotation is visible within a single period, and larger relative to the pendulum frequency than the Earth's by a factor of some $3\times10^3$ for a $67$-metre pendulum — the complex amplitude satisfies
 
 $$
 z(t + T) = e^{-i\Omega\sin\lambda\,T}z(t)
@@ -177,7 +177,6 @@ The correction is of second order in the small parameter $\Omega\sin\lambda/\ome
 
 Both statements were verified by computation. The closed-form frequencies above give a relative correction of $1.2394\times10^{-6}$ at $\Omega\sin\lambda/\omega_0 = 0.01$, against $1.2392\times10^{-6}$ predicted by the leading coefficient; and integrating the equations with the centrifugal term retained, then measuring the direction of the bob at successive turning points of the swing, gives a swing-plane drift whose relative deviation from $\Omega\sin\lambda$ is $5.3\times10^{-4}$ at $\Omega\sin\lambda/\omega_0 = 0.2$ and $2.3\times10^{-5}$ at $0.05$, in agreement with the coefficient above, while the same measurement applied to the retained equations reproduces the exact rate to $10^{-6}$.
 
-<!-- CONVENTION — two different fast frequencies: $\omega^2 = \omega_0^2+\Omega^2\sin^2\lambda$ belongs to the retained equations, from which the centrifugal term is dropped, while $\omega_s^2 = \omega_0^2-\tfrac12\Omega^2(1+\sin^2\lambda)$ belongs to the equations with the centrifugal term restored. They are the fast frequencies of two different truncations and are not two values of one quantity; the precession rate is $\Omega\sin\lambda$ in both, to the orders computed above. A reviewer must not reconcile them by editing one of the two equations. -->
 
 ### What the Angle Does Not Depend On
 
@@ -205,7 +204,6 @@ $$
 
 This was computed numerically by evaluating $\kappa_g = \mathbf{n}\cdot(\boldsymbol\gamma''\times\boldsymbol\gamma')/|\boldsymbol\gamma'|^3$ along the curve and integrating, with the orientation of the curve and of the normal $\mathbf{n}$ fixed by the Gauss–Bonnet statement below: for $\lambda = 0.9$ rad the integral is $4.921788$, equal to $2\pi\sin(0.9)$ to six decimal places. The sign of $\kappa_g$ is itself a convention — reversing either the normal or the sense of traversal reverses it — and only the magnitude $2\pi\sin\lambda$ is invariant. The total geodesic turning is exactly the Foucault angle.
 
-<!-- CONVENTION — geodesic-curvature sign: the sign of $\kappa_g$, and hence the sign of $\oint\kappa_g\,ds = \pm2\pi\sin\lambda$, depends on the choice of surface normal and on the sense of traversal of the latitude circle. The orientation used here is the one for which the Gauss–Bonnet statement below reads $\oint\kappa_g\,ds + \iint K\,dA = 2\pi$. Only the magnitude $2\pi\sin\lambda$ is invariant; a reviewer must not flip the sign to match an outward surface normal. -->
 
 ### Gauss–Bonnet and the Solid Angle
 

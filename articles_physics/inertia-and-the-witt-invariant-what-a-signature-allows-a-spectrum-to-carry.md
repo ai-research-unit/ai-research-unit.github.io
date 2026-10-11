@@ -172,7 +172,7 @@ bound on net state content; the signature as a conserved net index, explicitly l
 
 ## Physical Readings
 
-Inertia reads as the classification of what a signature allows a physical spectrum to carry: how many timelike, how many spacelike and how many null directions a form admits is exactly how many of each kind of physical direction the theory has, and congruence is a change of frame. Read for invariance, inertia is what a change of the local complex structure moves, the signatures $(3,1)$ and $(1,3)$ of the two sectors being one inertia with one sign flipped, while the coarser invariants of the article are what survives the change. Read on the clock, the form must be named and the level stated, because the central rotation is an **isometry** of the two forms this article classifies: $H(i\tilde P,i\tilde Q)=H(\tilde P,\tilde Q)$ and $K(i\tilde P,i\tilde Q)=K(\tilde P,\tilde Q)$, recomputed on $100$ random pairs, so the inertia of $H$ and of $K$ is unchanged *because* the exchange is an isometry and not despite it. It is the two **bilinear** forms that the exchange reverses, $B(i\tilde P,i\tilde Q)=-B(\tilde P,\tilde Q)$ and $N(i\tilde P,i\tilde Q)=-N(\tilde P,\tilde Q)$: the exchange is not an isometry of the interval $N$, and there the inertia is unchanged only at the coarsest level — read as a real quadratic form on the eight-real-dimensional algebra each of $B$ and $N$ has the balanced inertia $(4,4,0)$, and negation exchanges the two counts rather than changing them — while the restriction to a sector swaps the ordered inertia $(3,1,0)\leftrightarrow(1,3,0)$, which is the flip of signature by one tick of *The Interval as the Square and the Charge of the Material Composition*. The four identities are owned by *The Four General Products and Their Physical Readings*, and the invariance criterion they serve is owned by *The Local Complex Structure and the Speed of Light*.
+Inertia reads as the classification of what a signature allows a physical spectrum to carry: how many timelike, how many spacelike and how many null directions a form admits is exactly how many of each kind of physical direction the theory has, and congruence is a change of frame. Read for invariance, inertia is what a change of the local complex structure moves, the signatures $(3,1)$ and $(1,3)$ of the two sectors being one inertia with one sign flipped, while the coarser invariants of the article are what survives the change. It is the two **bilinear** forms that the exchange reverses, $B(i\tilde P,i\tilde Q)=-B(\tilde P,\tilde Q)$ and $N(i\tilde P,i\tilde Q)=-N(\tilde P,\tilde Q)$: the exchange is not an isometry of the interval $N$, and there the inertia is unchanged only at the coarsest level — read as a real quadratic form on the eight-real-dimensional algebra each of $B$ and $N$ has the balanced inertia $(4,4,0)$, and negation exchanges the two counts rather than changing them — while the restriction to a sector swaps the ordered inertia $(3,1,0)\leftrightarrow(1,3,0)$, which is the flip of signature by one tick of *The Interval as the Square and the Charge of the Material Composition*. The four identities are owned by *The Four General Products and Their Physical Readings*, and the invariance criterion they serve is owned by *The Local Complex Structure and the Speed of Light*.
 
 ## Summary
 
@@ -209,28 +209,28 @@ charge is **labelled speculation**, requiring a dynamical argument this article 
 ## Further Reading
 
 - Serge Lang, *Linear Algebra* (Springer, 1987), for Sylvester's law of inertia and the classification
-  of Hermitian forms.
+of Hermitian forms.
 - Winfried Scharlau, *Quadratic and Hermitian Forms* (Springer, 1985), for the Witt group and the
-  classification of forms.
+classification of forms.
 - J. Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for Krein spaces, fundamental
-  symmetries and the Krein cone.
+symmetries and the Krein cone.
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications*
-  (Birkhäuser, 2005), for the indefinite form and its invariants.
+(Birkhäuser, 2005), for the indefinite form and its invariants.
 - Mathematics article *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with
-  Hermitian Adjoint*
-  (`articles_maths/hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.md`),
-  for the classification and the Witt group.
+Hermitian Adjoint*
+(`articles_maths/hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.md`),
+for the classification and the Witt group.
 - Mathematics article *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*
-  (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the
-  Krein form and its cone.
+(`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the
+Krein form and its cone.
 - Mathematics article *The Four Pairings of the Biquaternion Algebra*
-  (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the positive and indefinite
-  pairings side by side.
+(`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the positive and indefinite
+pairings side by side.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the positive
-  definite form and its cone.
+definite form and its cone.
 - Companion article *Other Remarkable Subspaces*, for the sign patterns of the involutions on
-  the form.
+the form.
 - Companion article *The Mathematical Study of Biquaternions*, the physics entry point to the
-  mathematical study under which this block sits; its *Biquaternions as a Sesqualgebra over
-  $\mathbb{C}$* sub-menu is the menu of the mathematics articles cited here.
+mathematical study under which this block sits; its *Biquaternions as a Sesqualgebra over
+$\mathbb{C}$* sub-menu is the menu of the mathematics articles cited here.
 - Companion article *Conventions in the Biquaternion Universe*, for the conjugations and the forms.

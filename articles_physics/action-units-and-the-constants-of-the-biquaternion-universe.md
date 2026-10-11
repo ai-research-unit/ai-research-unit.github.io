@@ -244,7 +244,7 @@ $$
 S=S_0-E\,\Delta t ,
 $$
 
-equivalently $S_0=S+E\,\Delta t$. The pair $(t,E)$ is the conjugate pair, so the passage between the two actions is the same transform that takes the Lagrangian to the Hamiltonian, and it reproduces the Hamilton–Jacobi statement $\partial S/\partial t=-E$, since the derivative of $S_0$ with respect to $E$ is $\Delta t$. Checked on the free particle, where $S=E\Delta t$ and $S_0=2E\Delta t$, and on the harmonic oscillator over a half period, where $S=0$ and $S_0=E\pi/\omega=E\,\Delta t$.
+equivalently $S_0=S+E\,\Delta t$. The pair $(t,E)$ is the conjugate pair, so the passage between the two actions is the same transform that takes the Lagrangian to the Hamiltonian, and it reproduces the Hamilton–Jacobi statement $\partial S/\partial t=-E$, since the derivative of $S_0$ with respect to $E$ is $\Delta t$.
 
 Two limits are worth naming. When no force acts — a rigid body with no net force — the two actions **coincide** and both principles reduce to Fermat's principle of least time, which is where the family meets optics. And in neither form is the stationary value of the action a maximum: a variation localised in a vanishingly short interval makes the kinetic term of the second variation dominate, so the extremum is a minimum or a saddle. This is why "the principle of least action", a common name for the family, is a misnomer — an elliptical orbit traversed in its two directions gives two paths of **equal** action, so neither direction is the least of anything.
 

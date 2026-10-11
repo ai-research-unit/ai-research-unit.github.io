@@ -51,7 +51,7 @@ where $L_u$ and $L_p$ denote the partial derivatives of $L$ with respect to its 
 
 **Theorem (the fundamental lemma of the calculus of variations).** Let $g$ be continuous on the bounded domain $\Omega$ and suppose that $\int_\Omega g\,v\,dx = 0$ for every $v\in C_c^\infty(\Omega)$. Then $g\equiv0$ on $\Omega$.
 
-*Proof.* Suppose $g(x_0)\ne0$ at some point. By continuity $g$ has a fixed sign on a ball $B\subset\Omega$ about $x_0$. Choose $v\in C_c^\infty(\Omega)$ with $v\ge0$, supported in $B$ and positive at $x_0$, for instance a smooth bump; then $gv$ has a fixed sign on $B$ and is not identically zero there, so $\int_\Omega gv\,dx\ne0$, a contradiction. Hence $g=0$. ∎
+*Proof.* Suppose $g(x_0)\ne0$ at some point. By continuity $g$ has a fixed sign on a ball $B\subset\Omega$ about $x_0$. Choose $v\in C_c^\infty(\Omega)$ with $v\ge0$, supported in $B$ and positive at $x_0$, for instance a smooth bump; then $gv$ has a fixed sign on $B$ and is not identically zero there, so $\int_\Omega gv\,dx\ne0$, a contradiction. Hence $g=0$.
 
 The lemma is the step that converts the vanishing of an integral against every variation into the vanishing of its density, and the derivation of the Euler–Lagrange equation rests on it.
 
@@ -151,7 +151,7 @@ $$
 $$
 and in the scalar one-variable case it is $L_u - \frac{d}{dx}L_{u'}$.
 
-*Proof.* The first variation is $\int(L_uv + L_p\cdot\nabla v)$; integrating the second term by parts, the boundary contribution vanishing for compactly supported $v$, gives $\int(L_u-\nabla\cdot L_p)v$. The identification of the density is then unique by the fundamental lemma. ∎
+*Proof.* The first variation is $\int(L_uv + L_p\cdot\nabla v)$; integrating the second term by parts, the boundary contribution vanishing for compactly supported $v$, gives $\int(L_u-\nabla\cdot L_p)v$. The identification of the density is then unique by the fundamental lemma.
 
 The functional derivative is the object whose vanishing is the stationarity condition: a differentiable functional has an extremum only where $\delta J/\delta u=0$, and the Euler–Lagrange equation is that condition written out. It is the object that the physics articles of the corpus write when they vary an action with respect to a field.
 
@@ -172,14 +172,14 @@ $$
 \frac{\partial L}{\partial u_i}-\frac{d}{dx}\Bigl(\frac{\partial L}{\partial u_i'}\Bigr)=0 .
 $$
 
-*Proof.* Vary one component at a time. The chosen component plays the role of the scalar $u$ and the remaining components are fixed parameters, so the scalar derivation applies to each index in turn. ∎
+*Proof.* Vary one component at a time. The chosen component plays the role of the scalar $u$ and the remaining components are fixed parameters, so the scalar derivation applies to each index in turn.
 
 **Theorem (one function of several variables).** Let $\Omega\subseteq\mathbb{R}^m$ be a bounded domain, let $L(x,u,\nabla u)$ be of class $C^1$ and let $J(u)=\int_\Omega L\,dx$ be stationary with $u$ fixed on $\partial\Omega$. Then, in the weak sense on $\Omega$,
 $$
 \frac{\partial L}{\partial u}-\sum_{j=1}^m\frac{\partial}{\partial x_j}\Bigl(\frac{\partial L}{\partial u_{x_j}}\Bigr)=0 .
 $$
 
-*Proof.* The divergence theorem replaces the integration by parts of the scalar case. The boundary term carries the normal component of $L_p$ and vanishes because the variation vanishes on $\partial\Omega$; the interior variation is arbitrary and the fundamental lemma applies over $\Omega$. ∎
+*Proof.* The divergence theorem replaces the integration by parts of the scalar case. The boundary term carries the normal component of $L_p$ and vanishes because the variation vanishes on $\partial\Omega$; the interior variation is arbitrary and the fundamental lemma applies over $\Omega$.
 
 **Example (the minimal-surface equation).** For $m=2$ and $L=\sqrt{1+u_{x_1}^2+u_{x_2}^2}$, the area integrand of a graph, the equation is $\nabla\cdot(\nabla u/\sqrt{1+|\nabla u|^2})=0$, the equation of a soap film spanning a wire; the functional, its first variation and its solutions are treated in *Minimal Surfaces*. With a potential and a target metric entering $L$, the same equation defines a harmonic map, the subject of *Harmonic Maps*.
 
@@ -191,7 +191,7 @@ $$
 $$
 the sum being over the multi-indices $\alpha=(\alpha_1,\dots,\alpha_m)$ with $|\alpha|\le n$, where $\partial^\alpha=\partial^{|\alpha|}/\partial x_1^{\alpha_1}\cdots\partial x_m^{\alpha_m}$, and where each multi-index is counted once, so that a mixed derivative such as $\partial^2u/\partial x_1\partial x_2$ contributes a single term.
 
-*Proof.* Integrate by parts once for each multi-index, in the form $\int_\Omega L_{\partial^\alpha u_i}\,\delta(\partial^\alpha u_i)\,dx = (-1)^{|\alpha|}\int_\Omega\partial^\alpha\bigl(L_{\partial^\alpha u_i}\bigr)\,\delta u_i\,dx$ together with boundary terms carrying the derivatives of $u_i$ of order below $n$, which vanish by the boundary hypothesis. The remaining variation $\delta u_i$ is arbitrary and the fundamental lemma gives the equation. The sum runs over multi-indices rather than ordinary indices because the distinct partial derivatives are treated as independent variables of $L$, one per multi-index. ∎
+*Proof.* Integrate by parts once for each multi-index, in the form $\int_\Omega L_{\partial^\alpha u_i}\,\delta(\partial^\alpha u_i)\,dx = (-1)^{|\alpha|}\int_\Omega\partial^\alpha\bigl(L_{\partial^\alpha u_i}\bigr)\,\delta u_i\,dx$ together with boundary terms carrying the derivatives of $u_i$ of order below $n$, which vanish by the boundary hypothesis. The remaining variation $\delta u_i$ is arbitrary and the fundamental lemma gives the equation. The sum runs over multi-indices rather than ordinary indices because the distinct partial derivatives are treated as independent variables of $L$, one per multi-index.
 
 **Remark (the specialisations).** The cases of the theorem recover the equations already written: $m=1$, $n=1$, $p=1$ is the original Euler–Lagrange equation, $p>1$ is the system of the several-functions theorem, $m>1$ with $n=1$ is the partial-differential equation, and $m=1$ with $n>1$ is the higher-order equation of the remark above. A variational equation whose integrand carries a derivative of fractional order is a fractional boundary-value problem with boundary terms at both ends, as noted in *Fractional Differential Equations*.
 

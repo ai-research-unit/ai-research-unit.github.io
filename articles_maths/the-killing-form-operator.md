@@ -21,7 +21,7 @@ sending $x$ to the functional $y\mapsto\kappa(x,y)$. Its kernel is the **radical
 
 **Proposition.** The operator $\kappa^{\flat}$ is linear, and it is injective exactly when $\kappa$ is nondegenerate; when it is injective it is an isomorphism because $\dim\mathrm{G}=\dim\mathrm{G}^*$.
 
-**Proof.** Linearity is bilinearity; the kernel is the radical by definition, and injectivity of a linear map between spaces of equal finite dimension is bijectivity. $\square$
+**Proof.** Linearity is bilinearity; the kernel is the radical by definition, and injectivity of a linear map between spaces of equal finite dimension is bijectivity.
 
 ### Equivariance for the Adjoint and the Coadjoint Actions
 
@@ -33,7 +33,7 @@ $$
 
 where $\operatorname{ad}_x^{*}$ is the transpose of $\operatorname{ad}_x$.
 
-**Proof.** Evaluate both sides on $z$: the left is $\kappa([x,y],z)$, the right is $-\kappa(y,[x,z])$, and the invariance $\kappa([x,y],z)=\kappa(x,[y,z])$ gives their equality. $\square$
+**Proof.** Evaluate both sides on $z$: the left is $\kappa([x,y],z)$, the right is $-\kappa(y,[x,z])$, and the invariance $\kappa([x,y],z)=\kappa(x,[y,z])$ gives their equality.
 
 **Corollary.** The kernel and the image of $\kappa^{\flat}$ are stable, respectively, under the adjoint and the coadjoint actions; in particular the radical is an ideal of $\mathrm{G}$, which is the statement recorded in *Structure of Lie Algebras*.
 
@@ -51,7 +51,7 @@ $$
 \kappa^{\flat}\circ\operatorname{ad}_x=-\operatorname{ad}_x^{*}\circ\kappa^{\flat}.
 $$
 
-**Proof.** The invariance identity gives $\kappa([x,y],z)=\kappa(x,[y,z])$ and $\kappa(y,[x,z])=\kappa([y,x],z)=-\kappa([x,y],z)$; adding, the two terms cancel. The commuting-square form is the same identity read through the definition of $\kappa^{\flat}$. $\square$
+**Proof.** The invariance identity gives $\kappa([x,y],z)=\kappa(x,[y,z])$ and $\kappa(y,[x,z])=\kappa([y,x],z)=-\kappa([x,y],z)$; adding, the two terms cancel. The commuting-square form is the same identity read through the definition of $\kappa^{\flat}$.
 
 **Corollary.** The adjoint representation lands in the operators preserving the form: the image of $\operatorname{ad}:\mathrm{G}\to\operatorname{End}_K(\mathrm{G})$ lies in the Lie subalgebra of the operators $T$ with $\kappa(Ty,z)+\kappa(y,Tz)=0$. When $\kappa$ is nondegenerate and written in a basis, the matrices of the $\operatorname{ad}_x$ are antisymmetric with respect to the coefficient matrix of $\kappa$.
 
@@ -61,13 +61,13 @@ $$
 
 **Theorem.** Let $K$ have characteristic zero. Then $\mathrm{G}$ is semisimple if and only if the Killing form operator $\kappa^{\flat}$ is injective; equivalently, the radical of the form is zero.
 
-**Proof.** Cartan's criterion for semisimplicity, recorded in *Structure of Lie Algebras*, states that $\mathrm{G}$ is semisimple if and only if $\kappa$ is nondegenerate; by the first proposition nondegeneracy is the injectivity of $\kappa^{\flat}$. $\square$
+**Proof.** Cartan's criterion for semisimplicity, recorded in *Structure of Lie Algebras*, states that $\mathrm{G}$ is semisimple if and only if $\kappa$ is nondegenerate; by the first proposition nondegeneracy is the injectivity of $\kappa^{\flat}$.
 
 **Corollary.** For semisimple $\mathrm{G}$ the map $\kappa^{\flat}:\mathrm{G}\to\mathrm{G}^*$ is an isomorphism of $\mathrm{G}$-modules with the actions of the previous section, so the adjoint and the coadjoint representations are equivalent; the inverse $(\kappa^{\flat})^{-1}:\mathrm{G}^*\to\mathrm{G}$ transfers the form to the dual and is used to build the Casimir operator.
 
 **Proposition.** The radical of the form is stable under derivations: if $D$ is a derivation of $\mathrm{G}$ then $\kappa(Dx,y)+\kappa(x,Dy)=0$, so $D$ preserves $\kappa$, and $\kappa^{\flat}\circ D=-D^{*}\circ\kappa^{\flat}$; for $\mathrm{G}$ semisimple every derivation is inner, and the statement reduces to the skewness of $\operatorname{ad}_x$.
 
-**Proof.** The identity $\operatorname{tr}([D,\operatorname{ad}_x]\operatorname{ad}_y)+\operatorname{tr}(\operatorname{ad}_x[D,\operatorname{ad}_y])=0$, valid for any derivation because $[D,\operatorname{ad}_x]=\operatorname{ad}_{Dx}$, gives the invariance; the inner case is the previous theorem. $\square$
+**Proof.** The identity $\operatorname{tr}([D,\operatorname{ad}_x]\operatorname{ad}_y)+\operatorname{tr}(\operatorname{ad}_x[D,\operatorname{ad}_y])=0$, valid for any derivation because $[D,\operatorname{ad}_x]=\operatorname{ad}_{Dx}$, gives the invariance; the inner case is the previous theorem.
 
 ## The Casimir Operator and the Laplacian
 
@@ -81,7 +81,7 @@ and its image in $\operatorname{End}_K(V)$ under a representation $\rho$ is the 
 
 **Theorem.** The element $C$ is independent of the choice of basis, it lies in the centre of $U(\mathrm{G})$, and the Laplacian commutes with the image of the representation; on an irreducible finite-dimensional representation the Laplacian is a scalar.
 
-**Proof.** A change of basis changes the two bases by inverse matrices, whose contributions cancel in the sum; centrality and the commuting property, with the scalar statement, are established in *The Casimir Operator*. $\square$
+**Proof.** A change of basis changes the two bases by inverse matrices, whose contributions cancel in the sum; centrality and the commuting property, with the scalar statement, are established in *The Casimir Operator*.
 
 **Remark.** The operator $\kappa^{\flat}$ is what makes the sum basis-free: it identifies $\mathrm{G}$ with $\mathrm{G}^*$, so a sum over a basis of $\mathrm{G}$ and the dual basis is an invariant element. The Laplacian is the operator form of the Casimir element and is used in *The Casimir Operator* and in *Representations of Lie Algebras*.
 
@@ -101,7 +101,6 @@ $$
 
 which acts on the irreducible representation of highest weight $n$ by the scalar $\tfrac18 n(n+2)$, the value recorded in *The Casimir Operator*.
 
-**Verified.** The matrix of $\kappa$ was recomputed from the brackets by hand and by exact elimination over $\mathbb{Q}$; the skewness $\kappa(\operatorname{ad}_x y,z)+\kappa(y,\operatorname{ad}_x z)=0$ was checked on the three basis elements and the pairing of the Casimir eigenvalue with the dimension of the representation was checked against the data of *The Casimir Operator*.
 
 ## Summary
 

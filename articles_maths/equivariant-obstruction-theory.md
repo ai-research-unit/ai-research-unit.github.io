@@ -16,7 +16,7 @@ Throughout, $G$ is a finite group, $X$ is a $G$-CW complex with cells $G/H_\alph
 
 **Proposition.** The assignment $G/H\mapsto\pi_n(Y^H)$ is a coefficient system $\underline\pi_n(Y)$, the **homotopy coefficient system** of the $G$-space $Y$, and it is the primary example; the assignment $G/H\mapsto H^*(Y^H;M)$ is a coefficient system for every coefficient group $M$, and the constant coefficient system $\underline M(G/H)=M$ corresponds to the trivial action. The fixed-point functors of *Equivariant Homotopy Theory* are the values of these coefficient systems, so the equivariant coefficients are exactly the fixed-point data.
 
-*Proof.* A morphism $G/H\to G/K$, that is a $G$-map, restricts a $K$-fixed point to an $H$-fixed point, so it induces a map $Y^K\to Y^H$ and hence a map on homotopy groups in the reverse direction; the functoriality is the functoriality of the fixed set and of the homotopy groups, which gives the contravariance. $\square$
+*Proof.* A morphism $G/H\to G/K$, that is a $G$-map, restricts a $K$-fixed point to an $H$-fixed point, so it induces a map $Y^K\to Y^H$ and hence a map on homotopy groups in the reverse direction; the functoriality is the functoriality of the fixed set and of the homotopy groups, which gives the contravariance.
 
 ### The Bredon Cochain Complex
 
@@ -34,13 +34,13 @@ $$
 
 **Theorem.** The Bredon cohomology is a contravariant functor in the pair $(X,\underline M)$, natural for equivariant maps and for morphisms of coefficient systems, and it is a generalised cohomology theory on the $\mathcal O_G$-spaces. For a free $G$-CW complex with constant coefficients it reduces to ordinary cohomology with local coefficients; for $G=1$ it is the ordinary singular cohomology. The values on the cells compute it: for a $G$-CW complex the cochain complex above is the cellular Bredon complex, and a morphism of coefficient systems induces a map of the complexes.
 
-*Proof.* The Bredon complex is the complex of the cellular $G$-chains with coefficients the coefficient system, which is a cochain complex of abelian groups; the functoriality is termwise; for $G=1$ the orbit category is the terminal category and the coefficient system is a single group, giving the ordinary cellular complex. $\square$
+*Proof.* The Bredon complex is the complex of the cellular $G$-chains with coefficients the coefficient system, which is a cochain complex of abelian groups; the functoriality is termwise; for $G=1$ the orbit category is the terminal category and the coefficient system is a single group, giving the ordinary cellular complex.
 
 ### The Equivariant Coefficients
 
 **Proposition.** The coefficient system $\underline\pi_n(Y)$ is the one that carries the equivariant $n$-th homotopy groups: its value at $G/H$ is $\pi_n^H(Y) = \pi_n(Y^H)$, so the Bredon cohomology $H^{n+1}_G(X;\underline\pi_n(Y))$ is the target of the obstruction theory of the next section. For a group action through a quotient and a coefficient system factoring through it, the Bredon cohomology of the quotient group computes that of the group, so the theory is compatible with the quotient operations of *The Cohomology of an Orbit Space*.
 
-*Proof.* The identification is the definition of the equivariant homotopy groups of *Equivariant Homotopy Theory*, and the statement about a quotient group is the functoriality of the orbit category under the quotient map $G\to G/N$. $\square$
+*Proof.* The identification is the definition of the equivariant homotopy groups of *Equivariant Homotopy Theory*, and the statement about a quotient group is the functoriality of the orbit category under the quotient map $G\to G/N$.
 
 ## The Extension Problem
 
@@ -50,7 +50,7 @@ $$
 
 **Proposition.** A $G$-map is determined on an equivariant cell $G/H\times D^n$ by its restriction to the orbit $G/H\times\{0\}$, by equivariance; the restriction of a $G$-map $f : X\to Y$ to an equivariant cell is a $G$-map $G/H\times D^n\to Y$, equivalently an ordinary map $D^n\to Y^H$, and its restriction to the boundary is an ordinary map $S^{n-1}\to Y^H$ representing a class of $\pi_{n-1}(Y^H)$. The equivariant extension problem on a single cell is the ordinary extension problem for the fixed set of $H$.
 
-*Proof.* Equivariance determines the map on the whole cell by its values on a fundamental domain $D^n$; the adjunction $\mathrm{Map}_G(G/H\times D^n,Y)\cong\mathrm{Map}(D^n,Y^H)$ is the standard homeomorphism, and the boundary corresponds to $S^{n-1}$. $\square$
+*Proof.* Equivariance determines the map on the whole cell by its values on a fundamental domain $D^n$; the adjunction $\mathrm{Map}_G(G/H\times D^n,Y)\cong\mathrm{Map}(D^n,Y^H)$ is the standard homeomorphism, and the boundary corresponds to $S^{n-1}$.
 
 ### The Obstruction Cocycle
 
@@ -70,7 +70,7 @@ $$
 
 the **obstruction class** of $f$; the map $f$ extends to a $G$-map $X^{n+1}\to Y$ if and only if $[\mathfrak o(f)] = 0$, and then the obstruction cocycle itself vanishes for a suitable choice of the extension.
 
-*Proof.* The coboundary $\delta\mathfrak o(f)$ evaluated on an $(n+2)$-cell is the alternating sum of the classes on the boundary $(n+1)$-cells, and the sum telescopes because the boundary of the boundary vanishes in the equivariant cellular chain complex, each summand being the image of the corresponding cell class under the maps of the coefficient system; hence $\delta\mathfrak o(f)=0$. The extension exists exactly when each class $\mathfrak o(f)(\sigma)$ is zero, because on each cell the extension over $D^{n+1}$ is the null-homotopy of the boundary map, and the vanishing of the cohomology class is the existence of a cochain whose coboundary is the cocycle, which is the corrected choice of the values on the cells. $\square$
+*Proof.* The coboundary $\delta\mathfrak o(f)$ evaluated on an $(n+2)$-cell is the alternating sum of the classes on the boundary $(n+1)$-cells, and the sum telescopes because the boundary of the boundary vanishes in the equivariant cellular chain complex, each summand being the image of the corresponding cell class under the maps of the coefficient system; hence $\delta\mathfrak o(f)=0$. The extension exists exactly when each class $\mathfrak o(f)(\sigma)$ is zero, because on each cell the extension over $D^{n+1}$ is the null-homotopy of the boundary map, and the vanishing of the cohomology class is the existence of a cochain whose coboundary is the cocycle, which is the corrected choice of the values on the cells.
 
 ### The Refined Criterion
 
@@ -82,7 +82,7 @@ $$
 
 and it vanishes exactly when the two extensions are homotopic as $G$-maps relative to the $n$-skeleton. The obstructions to the successive extensions are the classes $[\mathfrak o]\in H^{n+1}_G(X;\underline\pi_n(Y))$ for $n$ increasing, and a $G$-map $X\to Y$ exists with prescribed restriction to $X^n$ exactly when all of them vanish.
 
-*Proof.* Two extensions differ by a map of the $G$-spheres to $Y$ on each cell, which is a class in the next coefficient group; the cocycle condition is the same computation as before, and the vanishing is the existence of a homotopy of $G$-maps on each cell, assembled by the equivariance. $\square$
+*Proof.* Two extensions differ by a map of the $G$-spheres to $Y$ on each cell, which is a class in the next coefficient group; the cocycle condition is the same computation as before, and the vanishing is the existence of a homotopy of $G$-maps on each cell, assembled by the equivariance.
 
 ## The Classification of Equivariant Maps
 
@@ -96,13 +96,13 @@ $$
 
 **Theorem.** A $G$-map $X\to Y$ is, up to equivariant homotopy, the same as a compatible family of $G$-maps $X\to Y_n$ for all $n$, and the lifting over $Y_{n-1}$ to $Y_n$ of a given $G$-map $X\to Y_{n-1}$ has obstruction class in $H^{n+1}_G(X;\underline\pi_n(Y))$; the set of equivariant homotopy classes $[X,Y]_G$ is therefore computed by the successive obstruction classes, and it is a tower of torsors over the Bredon groups $H^n_G(X;\underline\pi_n(Y))$.
 
-*Proof.* The Postnikov tower is the obstruction-theoretic decomposition of the target; a lift over $Y_{n-1}$ exists exactly when the obstruction class vanishes, by the extension theorem applied to the fibration, and the successive lifts produce the map to the limit; the torsor structure is the classification theorem of the previous section. $\square$
+*Proof.* The Postnikov tower is the obstruction-theoretic decomposition of the target; a lift over $Y_{n-1}$ exists exactly when the obstruction class vanishes, by the extension theorem applied to the fibration, and the successive lifts produce the map to the limit; the torsor structure is the classification theorem of the previous section.
 
 ### The Classification Theorem
 
 **Theorem.** Let $X$ be a $G$-CW complex with $\dim X \leq N$ and let $Y$ be a $G$-space. Then the set $[X,Y]_G$ of equivariant homotopy classes of $G$-maps is non-empty if and only if the successive obstruction classes vanish, and it is a tower of torsors over the groups $H^n_G(X;\underline\pi_n(Y))$, $0 \leq n \leq N$; the whole set is computed by the Bredon cohomology of $X$ with the homotopy coefficient systems of $Y$. For a free action and a constant coefficient system this is the ordinary classification with local coefficients, and for $G=1$ it is the ordinary classification of homotopy classes by obstruction theory.
 
-*Proof.* The tower statement is the classification theorem of the previous section read degree by degree, and the identification with ordinary obstruction theory in the two extreme cases is the reduction of the coefficient systems described above. $\square$
+*Proof.* The tower statement is the classification theorem of the previous section read degree by degree, and the identification with ordinary obstruction theory in the two extreme cases is the reduction of the coefficient systems described above.
 
 ## The Lifting Problem and the Representations
 
@@ -112,13 +112,13 @@ $$
 
 **Theorem.** A $G$-lift of $f$ over the $n$-skeleton extends over the $(n+1)$-skeleton exactly when the equivariant obstruction class in $H^{n+1}_G(X;\underline\pi_n(F))$ vanishes, computed with the same obstruction cocycle as in the extension problem, the value on an equivariant cell being the class of the lifting problem on its boundary in $\pi_n(F^{H})$; the successive obstructions for $n$ increasing are the only obstructions. The lifting problem is thus the extension problem with the coefficient system of the fibre, and the two are the same computation.
 
-*Proof.* The $G$-fibration is the equivariant analogue of a fibration, and the lifting over a cell reduces to the ordinary lifting over the fixed set of the isotropy, by the adjunction of *Equivariant Homotopy Theory*; the obstruction cocycle is the same as in the extension problem with the target replaced by the fibre, and the vanishing criterion is the previous theorem. $\square$
+*Proof.* The $G$-fibration is the equivariant analogue of a fibration, and the lifting over a cell reduces to the ordinary lifting over the fixed set of the isotropy, by the adjunction of *Equivariant Homotopy Theory*; the obstruction cocycle is the same as in the extension problem with the target replaced by the fibre, and the vanishing criterion is the previous theorem.
 
 ### The Comparison with the Ordinary Theory
 
 **Theorem.** The equivariant obstruction theory specialises to the ordinary one: for $G=1$ the orbit category is the terminal category, the coefficient systems are the coefficient groups and the Bredon cohomology is the ordinary cohomology, so the obstruction classes are the classical ones; for a free action with a constant coefficient system the Bredon cohomology is the ordinary cohomology of the quotient with local coefficients, and the obstruction theory is the ordinary one on $X/G$. More generally the equivariant theory over the orbit category is the ordinary theory fibrewise over $\mathcal O_G$.
 
-*Proof.* The orbit category of the trivial group has one object and the identity morphism, so the coefficient systems are the coefficient groups and the Bredon complex is the ordinary cellular complex; the free case is the identification of the equivariant cells with the cells of the quotient and of the coefficient system with the local system $\underline M(G/H)=M$ along the covering. $\square$
+*Proof.* The orbit category of the trivial group has one object and the identity morphism, so the coefficient systems are the coefficient groups and the Bredon complex is the ordinary cellular complex; the free case is the identification of the equivariant cells with the cells of the quotient and of the coefficient system with the local system $\underline M(G/H)=M$ along the covering.
 
 ### The Representing Spaces
 
@@ -136,7 +136,7 @@ $$
 
 The obstruction classes are therefore the classes of the maps into these $G$-spaces, and the extension problem is the problem of the homotopy classes of the equivariant maps.
 
-*Proof.* The equivariant Eilenberg–Mac Lane $G$-spaces are constructed cell by cell on the orbit category, with the $n$-cells indexed by the generators of the coefficient groups and the attaching maps determined by the functoriality; the representability is the analogue of the Brown representability theorem for the $\mathcal O_G$-spectra, and the identification of the cohomology classes with the homotopy classes of maps is the natural transformation that is an isomorphism on the cells. $\square$
+*Proof.* The equivariant Eilenberg–Mac Lane $G$-spaces are constructed cell by cell on the orbit category, with the $n$-cells indexed by the generators of the coefficient groups and the attaching maps determined by the functoriality; the representability is the analogue of the Brown representability theorem for the $\mathcal O_G$-spectra, and the identification of the cohomology classes with the homotopy classes of maps is the natural transformation that is an isomorphism on the cells.
 
 ## The Obstruction Groups in the Low Degrees
 
@@ -144,13 +144,13 @@ The obstruction classes are therefore the classes of the maps into these $G$-spa
 
 **Theorem.** For a $G$-map defined on the zero skeleton the first obstruction lies in $H^1_G(X;\underline\pi_0(Y))$ and it vanishes if and only if the map is equivariantly homotopic to one extending over the 1-skeleton; if all the fixed sets $Y^H$ are connected, the coefficient system $\underline\pi_0(Y)$ is the zero system, the group vanishes, and every equivariant map of the zero skeleton extends over the 1-skeleton.
 
-*Proof.* The obstruction cocycle on a 1-cell records whether the two components assigned to its endpoints agree, so the vanishing is the existence of the extension over the 1-skeleton; the coefficient system is the assignment $G/H\mapsto\pi_0(Y^H)$, which is zero exactly when the fixed sets are connected. $\square$
+*Proof.* The obstruction cocycle on a 1-cell records whether the two components assigned to its endpoints agree, so the vanishing is the existence of the extension over the 1-skeleton; the coefficient system is the assignment $G/H\mapsto\pi_0(Y^H)$, which is zero exactly when the fixed sets are connected.
 
 ### The Second Obstruction and the Fundamental Group
 
 **Theorem.** The next obstruction lies in $H^2_G(X;\underline\pi_1(Y))$ and it obstructs the extension over the 2-skeleton; for a $G$-space $Y$ whose fixed sets are connected and simply connected this group vanishes and every equivariant map of the 1-skeleton extends over the 2-skeleton. The tower therefore begins with the components, continues with the fundamental groups of the fixed sets, and proceeds with the higher homotopy groups, each in the Bredon group with the corresponding coefficient system.
 
-*Proof.* The obstruction cocycle on a 2-cell is the class of the attaching map in the fundamental group of the fixed set of the isotropy, which is the stated group; the successive groups are read from the coefficient systems $\underline\pi_n(Y)$ of the tower. $\square$
+*Proof.* The obstruction cocycle on a 2-cell is the class of the attaching map in the fundamental group of the fixed set of the isotropy, which is the stated group; the successive groups are read from the coefficient systems $\underline\pi_n(Y)$ of the tower.
 
 ## The Computation of the Obstruction Groups
 
@@ -164,13 +164,13 @@ $$
 
 so the obstruction groups are the ordinary ones of the quotient and the obstruction theory reduces to the classical theory on $X/G$; this is the case of the equivariant obstruction theory in which the group acts without fixed points and the coefficients do not see the isotropy.
 
-*Proof.* The free $G$-CW complex has all the isotropy groups trivial, so the orbit category restricts to the terminal category and the Bredon complex is the cellular complex of the quotient with the constant coefficients; the identification is that of *The Cohomology of an Orbit Space*. $\square$
+*Proof.* The free $G$-CW complex has all the isotropy groups trivial, so the orbit category restricts to the terminal category and the Bredon complex is the cellular complex of the quotient with the constant coefficients; the identification is that of *The Cohomology of an Orbit Space*.
 
 ### The Coefficients of the Tower
 
 **Theorem.** The coefficient system $\underline\pi_n(Y)$ of the obstruction tower is determined by the fixed-point homotopy groups, and the tower inherits the naturality of the target: a $G$-map $Y\to Y'$ induces a morphism of the coefficient systems and hence a map of the obstruction groups, so the obstructions are natural in the target and in the source. The tower is therefore a natural invariant of the equivariant homotopy type, and the classification of the equivariant maps is the same tower computed for each target.
 
-*Proof.* The naturality of the fixed-point functors and of the homotopy groups gives the morphism of the coefficient systems, and the functoriality of the Bredon cohomology gives the map of the groups; the classification theorem then applies to each target. $\square$
+*Proof.* The naturality of the fixed-point functors and of the homotopy groups gives the morphism of the coefficient systems, and the functoriality of the Bredon cohomology gives the map of the groups; the classification theorem then applies to each target.
 
 ## Examples and Consequences
 

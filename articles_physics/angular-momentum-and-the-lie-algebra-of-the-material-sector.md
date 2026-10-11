@@ -94,7 +94,7 @@ $ie_i\wedge ie_j=-e_i\wedge e_j=-\varepsilon_{ijk}e_k$ leaves the sector. This i
 of the Antisymmetric Plain Algebra*; the generators of $\mathfrak{su}(2)$ are
 $T_a=\tfrac12e_a$ with $[T_a,T_b]=\varepsilon_{abc}T_c$, the convention of *The Gauge Group Ceiling: Why
 the Biquaternion Algebra Reaches $\mathrm{SU}(2)$ but Not $\mathrm{SU}(3)$*, and the central generator is
-$T_0=\tfrac12ie_0$. Verified on the bases.
+$T_0=\tfrac12ie_0$.
 
 **Remark (the two roles of the material sector).** The material sector carries a Lie algebra of its own,
 and it is the compact algebra $\mathfrak{u}(2)$: the three real vector directions are the rotations and
@@ -139,7 +139,6 @@ $$
 $$
 
 *Proof.* Linearity is the bilinearity of the bracket; the homomorphism is the Jacobi identity written with
-the adjoint; the Leibniz rule is the same identity rearranged; both were recomputed on $100$ random
 triples with max deviation $0$. The kernel of the adjoint is the centre, since
 $\operatorname{ad}_{\tilde P}=0$ requires $\tilde P$ to annihilate every element. At a fixed $\tilde P$
 with vector part $\mathbf P$ the image is $\mathbf P\times\mathbb{B}$, the complex plane orthogonal to
@@ -172,8 +171,7 @@ nondegenerate on the vector subspace. This is *The Killing Form of the Antisymme
 *Proof.* The formula and the Gram matrix are computed there on general elements and on the basis; the
 radical is the set of elements whose vector part is orthogonal to every vector, which is the centre; and
 removing the radical leaves the vector subspace, on which the complexified scalar product is
-nondegenerate. The formula was recomputed here from the adjoint matrices, with max deviation $0$, and the
-Gram matrix reproduced exactly.
+nondegenerate.
 
 **Corollary (the signature).** On the vector subspace
 $\mathrm{Vect}(\mathbb{B})$ in the real basis $(e_1,e_2,e_3,ie_1,ie_2,ie_3)$ the form is
@@ -188,7 +186,7 @@ $$
 
 *Proof.* The formula $\kappa=-2\,\mathbf{P}\cdot\mathbf{Q}$ restricted to a real direction is a sum of
 squares with the sign of the direction, negative for real vector coefficients and positive for imaginary
-ones; the scalar direction contributes zero. Verified on the bases. This is the restriction table
+ones; the scalar direction contributes zero. This is the restriction table
 of *The Killing Form of the Antisymmetric Plain Algebra*.
 
 **Proposed reading, labelled as such.** The **sign of the Killing form is the compact–non-compact
@@ -238,14 +236,14 @@ elements of the bracket, and the six real directions of the complex vector subsp
 generators of the Lorentz group:
 
 - the three **real** vector units $e_1,e_2,e_3$ generate the **rotations**, the compact subalgebra
-  $\mathfrak{su}(2)$ with generators $T_a=\tfrac12e_a$;
+$\mathfrak{su}(2)$ with generators $T_a=\tfrac12e_a$;
 - the three **imaginary** vector units $ie_1,ie_2,ie_3$ generate the **boosts**, the non-compact
-  directions, on which the Killing form is positive;
+directions, on which the Killing form is positive;
 - a finite rotation is the conjugation $\tilde X\mapsto\tilde\Lambda\tilde X\tilde\Lambda^{-1}$ by the
-  rotor $\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,e_k$ of the companion article, and a finite boost is
-  the dagger-sandwich $\tilde X\mapsto\tilde\Lambda\tilde X\tilde\Lambda^{*}$ by the Hermitian element
-  $\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}}$, of unit norm, of *Biquaternion Rotations
-  and Lorentz Transformations* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
+rotor $\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,e_k$ of the companion article, and a finite boost is
+the dagger-sandwich $\tilde X\mapsto\tilde\Lambda\tilde X\tilde\Lambda^{*}$ by the Hermitian element
+$\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}}$, of unit norm, of *Biquaternion Rotations
+and Lorentz Transformations* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
 
 The complex vector subspace is exactly the sector the corpus calls the home of the Lorentz generators, and
 the assignment of the two triples to rotations and boosts is *Other Remarkable Subspaces*.
@@ -277,8 +275,7 @@ $[A_i,A_j]=-2\varepsilon_{ijk}\operatorname{ad}_{e_k}$. Therefore
 $[J_i,J_j]=\tfrac14[A_i,A_j]=-\tfrac12\varepsilon_{ijk}\operatorname{ad}_{e_k}$. Now
 $J_k=\tfrac12\operatorname{ad}_{ie_k}=\tfrac i2\operatorname{ad}_{e_k}$, so
 $\operatorname{ad}_{e_k}=-2iJ_k$, and substituting gives
-$[J_i,J_j]=-\tfrac12\varepsilon_{ijk}(-2iJ_k)=i\varepsilon_{ijk}J_k$. Verified on the four-dimensional
-adjoint matrices, max deviation $0$.
+$[J_i,J_j]=-\tfrac12\varepsilon_{ijk}(-2iJ_k)=i\varepsilon_{ijk}J_k$.
 
 **Proposed reading, labelled as such.** The factor that carries the anti-Hermitian generator to its
 Hermitian multiple is **the framework's own $i$**, the same central scalar that generates the phase:
@@ -383,17 +380,17 @@ the angular momentum of a material field.
 ## Further Reading
 
 - Mathematics article *The Lie Algebra of the Antisymmetric Plain Algebra*, for the centre, the derived
-  algebra, the real forms and the ideals.
+algebra, the real forms and the ideals.
 - Mathematics article *The Killing Form of the Antisymmetric Plain Algebra*, for the form, its
-  invariance, its radical, its signature and the Cartan criteria.
+invariance, its radical, its signature and the Cartan criteria.
 - Mathematics article *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, for
-  the adjoint map, the inner and outer derivations and the automorphisms.
+the adjoint map, the inner and outer derivations and the automorphisms.
 - Mathematics article *The Casimir Operator* and *Representations of Lie Algebras*, for the quadratic
-  invariant and its scalar actions.
+invariant and its scalar actions.
 - Mathematics article *Derivations of a Lie Algebra*, for the general theory of the derivations.
 - Companion article *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*, for the
-  bracket, the Jacobi identity and the rotation triple.
+bracket, the Jacobi identity and the rotation triple.
 - Companion article *Other Remarkable Subspaces*, for the complex space sector as the home of
-  the Lorentz generators.
+the Lorentz generators.
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the physical angular momentum,
-  the spin, the ladder operators and the representations.
+the spin, the ladder operators and the representations.

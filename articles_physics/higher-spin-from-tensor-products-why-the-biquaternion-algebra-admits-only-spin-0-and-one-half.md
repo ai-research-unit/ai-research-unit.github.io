@@ -66,7 +66,6 @@ $$
 
 Two consequences are immediate and both matter. The multiplicity space $\mathrm{Hom}_\mathbb{B}(S,M)$ is a complex vector space, so the decomposition is a Morita equivalence between the modules of $\mathbb{B}$ and complex vector spaces: a module is a complex vector space $V$ dressed as $S\otimes_\mathbb{C}V$, and nothing else. And $S$ is the only irreducible object, so it is the only source of any representation the algebra's modules can carry.
 
-<!-- CONVENTION — module content: the module category of $\mathbb{B}$ has a single simple object $S$, and every module is $S^{\oplus k}$. This is a theorem about $M_2(\mathbb{C})$, not a convention, but it is recorded because it is frequently violated in informal treatments: there is no "spin-one module" of the algebra, no "adjoint spin-one module", and no module whose defining field transforms in the vector representation. Do not look for higher-spin modules in this category; they do not exist. -->
 
 ## The Spin Content of the Modules
 
@@ -142,7 +141,6 @@ $$
 
 of dimensions $4, 8, 16$, in agreement with the multiplicities $m_1=m_0=1$ for $n=2$, $m_{3/2}=1$, $m_{1/2}=2$ for $n=3$, and $m_2=1$, $m_1=3$, $m_0=2$ for $n=4$. The pattern is that spin $j$ appears for the first time in $S^{\otimes 2j}$: spin one in the square, spin three-halves in the cube, spin two in the fourth power, and in general the $2j$-fold product. This is the generation mechanism, and it is exactly the mechanism by which the standard Lorentz classification builds integer and higher spin from spinor indices.
 
-<!-- CONVENTION — the ceiling is about MODULES, not about tensor products: $S^{\otimes2j}$ contains spin $j$, so the tensor category of the algebra is not bounded, and no statement in this article forbids the construction of a spin-two field from $S^{\otimes4}$. What is bounded is the module category, whose objects are $S^{\oplus k}$. Do not read the ceiling as a claim that the framework cannot describe higher spin; it describes it by tensor products, as the Proca and Rarita–Schwinger articles do. -->
 
 ### Symmetric powers and the pure spin carriers
 
@@ -286,9 +284,9 @@ The conventions and the explicit cases used above are those of five companion ar
 
 ## The Two Index Families of the Bimodule
 
-The algebra is not only an algebra over $\mathbb{C}$; it is a rank-two bimodule over $\mathbb{H}$ on each side, with two commuting actions (the mathematics article *Biquaternions as a Bimodule over $\mathbb{H}$*). Read on the spinor, the two commuting actions are **two spinor index families**: the left action carries one index and the right action the other, so that the four-vector module $S\otimes\bar S$ is the product of the two families, and the defining module $S$ is the carrier of one family alone.
+The algebra is not only an algebra over $\mathbb{C}$; it is a rank-two bimodule over $\mathbb{H}$ on each side, with two commuting actions (the mathematics article *The Realification of the General Plain Algebra*). Read on the spinor, the two commuting actions are **two spinor index families**: the left action carries one index and the right action the other, so that the four-vector module $S\otimes\bar S$ is the product of the two families, and the defining module $S$ is the carrier of one family alone.
 
-The reading gives the module count of this article a second form. The module category of the algebra over $\mathbb{C}$ carries only spin zero and spin one-half; over $\mathbb{H}$ the same modules carry two index families, and the **failure of full $\mathbb{H}$-bilinearity** — the module being of rank two and not of rank one — is read as the obstruction to treating the two families as independent. It is a labelled reading, and it is offered as the bimodule form of the ceiling this article establishes. The owner is the mathematics article *Biquaternions as a Bimodule over $\mathbb{H}$*.
+The reading gives the module count of this article a second form. The module category of the algebra over $\mathbb{C}$ carries only spin zero and spin one-half; over $\mathbb{H}$ the same modules carry two index families, and the **failure of full $\mathbb{H}$-bilinearity** — the module being of rank two and not of rank one — is read as the obstruction to treating the two families as independent. It is a labelled reading, and it is offered as the bimodule form of the ceiling this article establishes. The owner is the mathematics article *The Realification of the General Plain Algebra*.
 
 ## Summary
 

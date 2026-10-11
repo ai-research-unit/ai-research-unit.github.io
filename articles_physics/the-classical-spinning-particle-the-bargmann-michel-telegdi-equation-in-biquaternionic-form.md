@@ -67,7 +67,6 @@ $$
 
 and the charge contraction is $\tilde{K}=q\,\mathrm{F}(\tilde{U})$, the biquaternion form of the Lorentz force of Companion article *The Lorentz Force in Biquaternion Form*, for the four-force as an anti-Hermitian projection.
 
-<!-- CONVENTION — field-tensor components: the contraction four-vector $F^{\mu\nu}V_\nu$ and the field action $\mathrm{F}(\tilde V)$ are written here in the real time coordinate $x^0=ct$, where $F^{0k}=E_k/c$. In the corpus's $ict$ convention $x^0=ict$, the same component reads $F^{0k}=iE_k/c$, and the four-force time component is $i\gamma q\,\mathbf{E}\cdot\mathbf{v}/c$. The factor $i$ is the complex time direction; it is the same field, and a reviewer must not remove the $i$ from the $ict$ component to "match" the real-component form. -->
 
 Here $\tau$ is proper time, $t$ laboratory time, $\mathbf{v}$ the velocity, $\gamma$ the Lorentz factor, $\mathbf{E}$ and $\mathbf{B}$ the electric field and magnetic induction, and $q,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the trace pairing on $\mathbb{M}_+$ is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
@@ -207,7 +206,6 @@ $$
 
 Collecting the two results gives the BMT equation. The derivation shows the division of labour between the two inputs: **the algebra does not choose $g$**, which is a dynamical property of the particle; it chooses the *structure*, i.e. it exhibits the two-term family and the constraint $\alpha+\beta c^{2}=1$, and the rest-frame torque then selects the member labelled by $g$.
 
-<!-- CONVENTION — BMT sign and second-term coefficient: with $\eta=\mathrm{diag}(-1,+1,+1,+1)$ and the four-velocity normalized to $u_\mu u^\mu=-c^{2}$, the second term of the BMT equation carries the coefficient $-(g/2-1)/c^{2}$, i.e. $(1-g/2)/c^{2}=(1-\alpha)/c^{2}$ with $\alpha=g/2$. This is the coefficient that makes $d(S_\mu u^\mu)/d\tau=0$ and that gives the pure rest-frame torque. In the metric $\mathrm{diag}(+1,-1,-1,-1)$, with $u_\mu u^\mu=+c^{2}$, the same physical equation carries $+(g/2-1)/c^{2}$. The sign is tied to the trace pairing $\mathrm{Sc}(\tilde a\tilde b^{\natural})=-a^{0}b^{0}+\mathbf{a}\cdot\mathbf{b}$ of the material sector; a reviewer must not flip it to match a text that uses the opposite metric. -->
 
 Two comments on the content of the equation. First, the invariant $B=S_\lambda F^{\lambda\nu}u_\nu$ vanishes when the spin, the field and the velocity are suitably aligned; it is used again, in slightly different form, in the Lorentz-force article. Second, in the absence of a field the equation reduces to $dS^\mu/d\tau=0$: the spin is parallel-transported in the flat metric, so free spinning particles carry their rest-frame orientation unchanged, and the whole of the precession is field-driven.
 

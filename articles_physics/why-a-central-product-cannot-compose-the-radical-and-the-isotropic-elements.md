@@ -123,13 +123,6 @@ the corpus reads as the kinematic boundary. The cone is owned by *The Light Cone
 Zero-Divisor Cone* and *Zero Divisors as a Physical Locus in Biquaternionic Form*, and the identification
 is cited, not made here.
 
-**Remark (verified).** The radical and the isotropic set were recomputed in exact complex arithmetic. The
-Gram matrix of the coefficient is the identity on $100$ random pairs, giving the trivial radical and rank
-$4$; the four explicitly lightlike elements $e_0+ie_1$, $e_1+ie_2$, $e_1-ie_2$, $ie_0+e_1$ all have
-$N=0$ **exactly**, so their square under the coupling is exactly $0$; and their coupling with $e_0$ is
-their scalar coordinate, which is nonzero for $e_0+ie_1$ and for $ie_0+e_1$ and vanishes for $e_1\pm ie_2$,
-while those two are separated by other partners, $N(e_1+ie_2,e_1)=1$.
-
 ## No Unit, and the Failure of the Jordan Identity
 
 Two failures separate this operation from the symmetrised plain product of the band
@@ -193,12 +186,10 @@ so a value of this band's operation that is written $B$ is wrong, and the natura
 slot of the parent is what fixes the sign. The forms themselves, with their Gram matrices and their
 signatures, are *Comparison Between the Four General Products*.
 
-**A cross-chapter warning on the letters.** The letter $B$ is chapter-relative, and it is the one the
-mathematics chapter uses for the *other* form: there the quaternion form $B$ is what this chapter calls
-$N$, the scalar part of $\tilde P^{\natural}\tilde Q$. A reader who follows the citations into
-*The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* will see the coefficient of the
-coupling written $B$ there. The object is the same; only the letter changes. In this chapter the
-coefficient is $N$ and $B$ is the plain form throughout.
+**A cross-chapter note on the letters.** Both chapters use the same letters: $N$ is the quaternion
+form, the scalar part of $\tilde P^{\natural}\tilde Q$, and $B$ is the plain form, the scalar part of
+$\tilde P\tilde Q$. A reader who follows the citations into *The Quaternion Form as a Product on the
+Symmetric Quaternionic Algebra* will see the coefficient of the coupling written $N$ there, as here.
 
 **The two forms read differently on the remarkable subspaces.** Because the difference is the sign of the vector
 part, the two forms agree where the vector part vanishes and on the balanced vector subspace, and differ

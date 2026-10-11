@@ -177,7 +177,6 @@ $$
 
 which is the standard result and is the quantity that the functional integral produces as the modulus of the vacuum-to-vacuum amplitude.
 
-**Verification.** On the truncated two-mode Fock space the charge commutes with the pair generator to machine precision, and the geometric expansion above was checked against $|\beta|^2$ for $|\beta|^2=0,0.25,1,3,12$: the mean occupation and the overlap agreed with $|\beta|^2$ and $1/(1+|\beta|^2)$ to ten decimal places in every case.
 
 ## An Exactly Solvable Case: the Sudden Quench
 
@@ -225,7 +224,6 @@ $$
 
 which is symmetric in $\omega_1\leftrightarrow\omega_2$, vanishes when the frequency does not change, and grows without bound as the ratio $\omega_2/\omega_1$ becomes extreme. Physically, a sudden change of the mass produces particles in proportion to the square of the fractional frequency change.
 
-**Verification.** Direct mode matching gives $|\beta|^2=0.125$ for $(\omega_1,\omega_2)=(1,2)$, in agreement with $(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$; for $(3.7,1.1)$ it gives $0.4152334$; for $(0.5,0.9)$ it gives $0.0888889$; and for $(2,2)$ it gives zero. In every case $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places. The formula is the standard sudden-limit result for a scalar field mode, and its biquaternion content is only that $\omega_1,\omega_2$ are the two asymptotically constant level sets of the biquaternion norm.
 
 ## The Biquaternion Reading
 

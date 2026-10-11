@@ -38,7 +38,7 @@ $$
 \left\{{}^{\lambda}{}_{\mu\nu}\right\} = \tfrac12 g^{\lambda\rho}\left(\partial_\mu g_{\nu\rho} + \partial_\nu g_{\mu\rho} - \partial_\rho g_{\mu\nu}\right) .
 $$
 
-The remainder $K^\lambda{}_{\mu\nu}$ is the **contorsion** (or contortion; the two names are interchangeable and the first is used throughout). Three exact facts fix it. Each is an algebraic identity, checked here on 100 random totally antisymmetric contorsions in exact rational arithmetic, with residual exactly zero.
+The remainder $K^\lambda{}_{\mu\nu}$ is the **contorsion** (or contortion; the two names are interchangeable and the first is used throughout). Three exact facts fix it.
 
 **Antisymmetry.** $K$ is antisymmetric in its last two indices,
 
@@ -126,7 +126,6 @@ $$
 A^\mu = \bar\psi\,\gamma_5\gamma^\mu\,\psi .
 $$
 
-Two identities connect them, and both were verified here on 100 random Dirac spinors with the corpus's gamma conventions, $\gamma^0 = \sigma_z \otimes I$, $\gamma^k$ the usual spacelike generators, $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$, signature $(+,-,-,-)$.
 
 **The antisymmetric spin density is the dual of the axial current.** On the antisymmetrised triple product,
 

@@ -26,7 +26,7 @@ $$
 
 It is a $\varsigma$-sesquilinear product of the original parity exactly in the degenerate case $\bigl(\varsigma(\lambda) - \lambda\bigr)(y \star x) = 0$ for all $\lambda, x, y$.
 
-*Proof.* The two displays are the two scalar rules of *Sesqualgebras* read in the exchanged slots, and the degenerate case is read off them: semilinearity and linearity in the first slot agree exactly when $\varsigma(\lambda)(y\star x) = \lambda(y\star x)$ for all $\lambda$ and all $y, x$. $\square$
+*Proof.* The two displays are the two scalar rules of *Sesqualgebras* read in the exchanged slots, and the degenerate case is read off them: semilinearity and linearity in the first slot agree exactly when $\varsigma(\lambda)(y\star x) = \lambda(y\star x)$ for all $\lambda$ and all $y, x$.
 
 **Remark.** The reversal of the parity is the product-level form of the asymmetry of the opposite sesqualgebra, and it is already recorded in *The Sesquilinear Product*, §*The Transposed Product*. It is the whole obstruction of this article: **for a sesquilinear product the transposition of the two arguments is not an operation of the class**, and no construction built on it alone can be a symmetry of the class. The fact is due to *The Sesquilinear Product* and is recalled here because this article is built on the repair of it. For $\varsigma = \mathrm{id}$ the two parities coincide, the transposed product is a product, and the obstruction disappears; that is the bilinear case of *The Symmetric and Antisymmetric Parts of an Algebra Product*.
 
@@ -47,7 +47,7 @@ $$
 (\lambda x) \star^{\mathrm{sym}} y = \tfrac12\Bigl(\lambda\,(x \star y) + \varsigma(\lambda)\,(y \star x)\Bigr),
 $$
 
-which is $\lambda\star^{\mathrm{sym}}(x,y)$ when $\varsigma(\lambda) = \lambda$ and not otherwise; the second slot is the same computation, and the difference is the difference of the two. $\square$
+which is $\lambda\star^{\mathrm{sym}}(x,y)$ when $\varsigma(\lambda) = \lambda$ and not otherwise; the second slot is the same computation, and the difference is the difference of the two.
 
 **Remark.** The two halves are therefore operations of the wrong kind: they are bilinear over the fixed ring and nothing more. They are not new objects — the symmetric half is the **symmetrised sesquilinear product** and half the antisymmetric one is the **sesquilinear commutator**, and they are developed, with their scalar rules, their Jordan property on the Hermitian part and their failure of the Jacobi identity, in *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*. Those two articles are the theory of the plain split, and this article takes them as read. The plain split is the literal analogue of the bilinear one and it does not stay in the category; the rest of the article is the repair.
 
@@ -60,7 +60,7 @@ $$
 \tfrac12\,\varepsilon\bigl(\star^{\mathrm{dif}}(x,y)\bigr) = \tfrac12\bigl(s(x,y) - s(y,x)\bigr).
 $$
 
-*Proof.* Apply $\varepsilon$ to the two definitions and use its additivity and its linearity over $R$. $\square$
+*Proof.* Apply $\varepsilon$ to the two definitions and use its additivity and its linearity over $R$.
 
 **Proposition (the Hermitian case).** Suppose in addition that the form $s$ is $\varsigma$-**Hermitian**, that is $s(y,x) = \varsigma(s(x,y))$ for all $x, y$. Then
 
@@ -71,7 +71,7 @@ $$
 
 the $\varsigma$-even and the $\varsigma$-odd parts of the form. Over $\mathbb{C}$ with $\varsigma$ the conjugation these are $\operatorname{Re} s$ and $i\operatorname{Im} s$.
 
-*Proof.* Substitute the Hermitian condition $s(y,x) = \varsigma(s(x,y))$ in the preceding display. Over $\mathbb{C}$ the $\varsigma$-even part of a complex number is its real part and the $\varsigma$-odd part is $i$ times its imaginary part. $\square$
+*Proof.* Substitute the Hermitian condition $s(y,x) = \varsigma(s(x,y))$ in the preceding display. Over $\mathbb{C}$ the $\varsigma$-even part of a complex number is its real part and the $\varsigma$-odd part is $i$ times its imaginary part.
 
 **Remark.** The scalar form of a sesquilinear product is Hermitian as soon as the product is the standard one, and the standard example below proves it. What the plain split does to that form is therefore the classical arithmetic of a Hermitian form: its real part is a symmetric bilinear form and its imaginary part is an alternating one, and the plain split separates exactly those two. **The plain split of the scalar form is the split into its symmetric and its alternating real parts, and it is not the split into the two parts of the product.** The next section gives the exchange for which the whole form, and not only its even part, falls on one side.
 
@@ -97,7 +97,7 @@ $$
 c(\lambda \cdot x) = c\bigl(\varsigma(\lambda)x\bigr) = \varsigma\bigl(\varsigma(\lambda)\bigr)c(x) = \lambda\,c(x),
 $$
 
-because $\varsigma^2 = \mathrm{id}$, which is $R$-linearity of $c$ as a map $A^{\varsigma} \to A$. The map $\mathrm{id}$ is $\varsigma$-semilinear exactly when $\varsigma(\lambda)x = \lambda x$ for all $\lambda$ and $x$, that is when $\varsigma = \mathrm{id}$. $\square$
+because $\varsigma^2 = \mathrm{id}$, which is $R$-linearity of $c$ as a map $A^{\varsigma} \to A$. The map $\mathrm{id}$ is $\varsigma$-semilinear exactly when $\varsigma(\lambda)x = \lambda x$ for all $\lambda$ and $x$, that is when $\varsigma = \mathrm{id}$.
 
 **Remark.** The conjugation is the operation that the sesquilinear context requires and the bilinear one does not have. In the standard example of *Sesqualgebras*, where $A$ is an associative algebra with a $\varsigma$-semilinear involution $*$, the natural conjugation is the one that conjugates the coefficients of the algebra without moving them, the operation whose fixed set is the $R^{\varsigma}$-form of $A$; on the complex matrices it is the entrywise conjugation, on a matrix algebra over a field it is the entrywise action of $\varsigma$. It is an automorphism there, but the definition above asks only for an involutive semilinear map, and multiplicativity is used nowhere below.
 
@@ -129,7 +129,7 @@ $$
 \star^{c}(x, \lambda y) = c\bigl(\star(\lambda y, x)\bigr) = c\bigl(\lambda\,\star(y,x)\bigr) = \varsigma(\lambda)\,\star^{c}(x,y).
 $$
 
-The involution is $(\star^{c})^{c}(x,y) = c\bigl(\star^{c}(y,x)\bigr) = c\bigl(c(\star(x,y))\bigr) = \star(x,y)$. $\square$
+The involution is $(\star^{c})^{c}(x,y) = c\bigl(\star^{c}(y,x)\bigr) = c\bigl(c(\star(x,y))\bigr) = \star(x,y)$.
 
 **Remark.** The theorem is the exact point of the adaptation. The plain transposition of §*The Transposed Product Has the Opposite Parity* left the class; the transposition followed by the conjugation returns to it. **The conjugation repairs the parity that the transposition reverses**, and it does so for every product at once, so that the repair is a symmetry of the category and not a trick on one example.
 
@@ -166,7 +166,7 @@ $$
 
 and both halves are $\varsigma$-sesquilinear products of $A$. On the diagonal $\star_{+}(x,x) = \tfrac12\bigl(x \star x + c(x \star x)\bigr)$ and $\star_{-}(x,x) = \tfrac12\bigl(x \star x - c(x \star x)\bigr)$.
 
-*Proof.* The reconstruction is the sum of the two definitions. The symmetry of the first half is $\tfrac12(x\star y + c(y\star x))$ read at the pair $(y,x)$ and then conjugated, which is $\tfrac12(c(y\star x) + c^2(x\star y)) = \star_{+}(x,y)$, and the antisymmetry of the second is the same computation with a sign. Both are $\varsigma$-sesquilinear by the theorem of §*The Exchange*, being half the sum and half the difference of two products of the class. The diagonal is the definitions at $y = x$. $\square$
+*Proof.* The reconstruction is the sum of the two definitions. The symmetry of the first half is $\tfrac12(x\star y + c(y\star x))$ read at the pair $(y,x)$ and then conjugated, which is $\tfrac12(c(y\star x) + c^2(x\star y)) = \star_{+}(x,y)$, and the antisymmetry of the second is the same computation with a sign. Both are $\varsigma$-sesquilinear by the theorem of §*The Exchange*, being half the sum and half the difference of two products of the class. The diagonal is the definitions at $y = x$.
 
 **Remark (the naming, and the two neighbours it must not be confused with).** The corpus already uses the words *Hermitian* and *skew-Hermitian* for the two halves of the **plain** split of the product, by the **values** they take under the involution $*$: the symmetrisation is Hermitian-valued, $(x\star y + y\star x)^{*} = x\star y + y\star x$, and the difference skew-Hermitian-valued, in *The Sesquilinear Product*, §*The Hermitian and the Skew-Hermitian Parts*. It also calls a *form* conjugate-symmetric when $h(x,y) = \overline{h(y,x)}$, in *Hermitian Geometry and the Unitary Group*. The phrase of this article, **conjugate-symmetric product**, is of a third kind: it names the **operation**, not a value, and it means fixed by the exchange $E_{c}$. The three are different, and the article keeps the third for these two halves. The plain split and its Hermitian-valued halves are §*The Plain Split*; the Hermitian elements, the fixed set of $*$, are *Hermitian and Skew-Hermitian Elements*, and are a statement about the elements and not about the product.
 
@@ -184,7 +184,7 @@ $$
 \star_{-} = 0 \ \text{for all pairs} \iff x \star y = c(y \star x) \ \text{for all } x,y.
 $$
 
-*Proof.* The first half is zero exactly when $x\star y = -c(y\star x)$ for every pair, which is the first condition, and the second half is zero exactly when $x\star y = c(y\star x)$ for every pair. $\square$
+*Proof.* The first half is zero exactly when $x\star y = -c(y\star x)$ for every pair, which is the first condition, and the second half is zero exactly when $x\star y = c(y\star x)$ for every pair.
 
 **Remark.** The two extremes are the degenerate cases, as in the bilinear theory: the skew half measures nothing but the failure of exchange-symmetry, and the conjugate-symmetric half nothing but the failure of exchange-anticommutativity. Nothing else about the product enters either half. In the bilinear case the two conditions read $xy = -yx$ and $xy = yx$, which is anticommutativity and commutativity, and the proposition is that of *The Symmetric and Antisymmetric Parts of an Algebra Product*.
 
@@ -192,7 +192,7 @@ $$
 
 **Theorem (uniqueness of the split).** Suppose $x \star y = u(x,y) + v(x,y)$ for all $x, y$, with $u$ exchange-symmetric and $v$ exchange-antisymmetric. Then $u = \star_{+}$ and $v = \star_{-}$.
 
-*Proof.* Interchanging the arguments in the assumed decomposition and conjugating gives $c(y \star x) = u(x,y) - v(x,y)$, because $u$ satisfies $c(u(y,x)) = u(x,y)$ and $v$ satisfies $c(v(y,x)) = -v(x,y)$. Adding the two relations, $x\star y + c(y\star x) = 2u(x,y)$; subtracting them, $x\star y - c(y\star x) = 2v(x,y)$. The quotients by $2$ are the two halves, and the division by $2$ is the only place where the invertibility of $2$ is used. $\square$
+*Proof.* Interchanging the arguments in the assumed decomposition and conjugating gives $c(y \star x) = u(x,y) - v(x,y)$, because $u$ satisfies $c(u(y,x)) = u(x,y)$ and $v$ satisfies $c(v(y,x)) = -v(x,y)$. Adding the two relations, $x\star y + c(y\star x) = 2u(x,y)$; subtracting them, $x\star y - c(y\star x) = 2v(x,y)$. The quotients by $2$ are the two halves, and the division by $2$ is the only place where the invertibility of $2$ is used.
 
 ### The Two Projections
 
@@ -223,11 +223,11 @@ $$
 p(q(\star))(x,y) = \tfrac14\bigl(x\star y - c(y\star x) + c(y\star x) - c^2(x\star y)\bigr) = 0,
 $$
 
-and $qp = 0$ likewise. Finally $p(\star) + q(\star)$ is $\tfrac12(x\star y + c(y\star x)) + \tfrac12(x\star y - c(y\star x)) = x\star y$, which is $p + q = \mathrm{id}$. A family of idempotents that sum to the identity and annihilate one another gives a direct sum decomposition, so the space of products is the sum of the two images and the sum is direct. $\square$
+and $qp = 0$ likewise. Finally $p(\star) + q(\star)$ is $\tfrac12(x\star y + c(y\star x)) + \tfrac12(x\star y - c(y\star x)) = x\star y$, which is $p + q = \mathrm{id}$. A family of idempotents that sum to the identity and annihilate one another gives a direct sum decomposition, so the space of products is the sum of the two images and the sum is direct.
 
 **Corollary (each half can be prescribed).** A $\varsigma$-sesquilinear map on $A$ is a conjugate-symmetric part if and only if it is exchange-symmetric, and a skew-conjugate-symmetric part if and only if it is exchange-antisymmetric. Moreover for any exchange-symmetric $u$ and any exchange-antisymmetric $v$ the product $\star = u + v$ satisfies $p(\star) = u$ and $q(\star) = v$.
 
-*Proof.* An exchange-symmetric $u$ satisfies $p(u) = u$, and an exchange-antisymmetric $v$ satisfies $p(v) = 0$ and $q(v) = v$, which gives the first sentence; for the second, $p(u+v) = p(u) + p(v) = u$ and $q(u+v) = q(u) + q(v) = v$. $\square$
+*Proof.* An exchange-symmetric $u$ satisfies $p(u) = u$, and an exchange-antisymmetric $v$ satisfies $p(v) = 0$ and $q(v) = v$, which gives the first sentence; for the second, $p(u+v) = p(u) + p(v) = u$ and $q(u+v) = q(u) + q(v) = v$.
 
 **Remark.** The corollary is the precise sense in which the two halves are independent data: **the conjugate-symmetric half of a product places no constraint on its skew half and conversely**, and a condition imposed on one half can be studied with no hypothesis at all on the other. In the bilinear case the two independent halves are the Jordan part and the Lie part of the product, and the corollary is the one that separates Lie-admissibility from Jordan-admissibility in *The Symmetric and Antisymmetric Parts of an Algebra Product*.
 
@@ -260,7 +260,7 @@ $$
 \varepsilon\bigl(\star_{+}(x,y)\bigr) = \tfrac12\bigl(\varepsilon(x\star y) + \varepsilon(c(y\star x))\bigr) = \tfrac12\bigl(s(x,y) + \varsigma(s(y,x))\bigr),
 $$
 
-and the computation for $\star_{-}$ is the same with a sign. $\square$
+and the computation for $\star_{-}$ is the same with a sign.
 
 ### The Case of a Hermitian Form
 
@@ -272,13 +272,13 @@ $$
 
 for all $x, y$. The skew-conjugate-symmetric half is scalar-free, and the conjugate-symmetric half carries the whole scalar form.
 
-*Proof.* If $s(y,x) = \varsigma(s(x,y))$ then $\varsigma(s(y,x)) = \varsigma^2(s(x,y)) = s(x,y)$; substituting in the scalar theorem gives the two displays. $\square$
+*Proof.* If $s(y,x) = \varsigma(s(x,y))$ then $\varsigma(s(y,x)) = \varsigma^2(s(x,y)) = s(x,y)$; substituting in the scalar theorem gives the two displays.
 
 **Remark.** This is the sharpest difference from the plain split, and the reason for adapting the exchange at all. The plain split of §*The Scalar Form Under the Plain Split* puts only the $\varsigma$-even part of the form in its symmetric half and leaves the $\varsigma$-odd part in the difference; **the exchanged split puts the form itself, in its entirety, in the conjugate-symmetric half.** The form is then read off one half alone, and the other half carries no scalar of the product at all.
 
 **Corollary (the values of the skew half are scalar-free).** Under the hypotheses of the theorem, no value of $\star_{-}$ has a nonzero scalar part; in a free algebra on a basis of $n$ elements whose first element is fixed by $c$ and carries the scalars, the coefficient of that element vanishes in every value of the skew half.
 
-*Proof.* The scalar part of a value is $\varepsilon$ of that value, and the theorem makes it zero. $\square$
+*Proof.* The scalar part of a value is $\varepsilon$ of that value, and the theorem makes it zero.
 
 ---
 
@@ -307,7 +307,7 @@ $$
 
 and the conjugate-symmetric products are exactly those whose constants satisfy the **conjugate-symmetry** $c^{k}{}_{ij} = \varsigma\bigl(c^{k}{}_{ji}\bigr)$.
 
-*Proof.* Compute the exchanged product on basis elements, $\star^{c}(e_{i}, e_{j}) = c(\star(e_{j}, e_{i}))$, expand the inner product and use the semilinearity of $c$, $c(\lambda e_{k}) = \varsigma(\lambda)c(e_{k})$; when each basis vector is fixed this is $\sum_{k}\varsigma(c^{k}{}_{ji})e_{k}$. The condition $c^{k}{}_{ij} = \varsigma(c^{k}{}_{ji})$ is the fixed-point equation of the previous line. $\square$
+*Proof.* Compute the exchanged product on basis elements, $\star^{c}(e_{i}, e_{j}) = c(\star(e_{j}, e_{i}))$, expand the inner product and use the semilinearity of $c$, $c(\lambda e_{k}) = \varsigma(\lambda)c(e_{k})$; when each basis vector is fixed this is $\sum_{k}\varsigma(c^{k}{}_{ji})e_{k}$. The condition $c^{k}{}_{ij} = \varsigma(c^{k}{}_{ji})$ is the fixed-point equation of the previous line.
 
 **Remark.** The conjugation therefore conjugates the constants as well as transposing their two lower indices, and the two operations are the two halves of the adaptation: the transposition is the exchange of the arguments, the conjugation is the repair of the parity. In the bilinear case $\varsigma = \mathrm{id}$ the conjugation of the constants is invisible and the condition is the ordinary symmetry $c^{k}{}_{ij} = c^{k}{}_{ji}$ of the structure constants of a commutative product.
 
@@ -315,7 +315,7 @@ and the conjugate-symmetric products are exactly those whose constants satisfy t
 
 **Proposition (the count over the fixed field).** Let $R$ be a field, $\varsigma$ a nontrivial involution of $R$, so that $R$ is of rank two over $R^{\varsigma}$, and let $c(e_{i}) = e_{i}$ on a basis of $n$ elements. Then the space of $\varsigma$-sesquilinear products is an $R^{\varsigma}$-module of rank $2n^{3}$, its conjugate-symmetric products form a submodule of rank $n^{3}$, and its skew products one of rank $n^{3}$.
 
-*Proof.* A product is the same thing as an arbitrary family of $n^{3}$ constants in $R$, by *The Sesquilinear Product*, §*The Axioms of the Product*, and $R$ has rank two over $R^{\varsigma}$, so the space of products has rank $2n^{3}$. The conjugate-symmetry $c^{k}{}_{ij} = \varsigma(c^{k}{}_{ji})$ is an additive involution of that module; its free data are the $n$ diagonal values, each in the fixed field, together with the entries above the diagonal, each an arbitrary element of $R$ that determines the entry below it, of which there are $n(n-1)$; the total per upper index is $n + n(n-1) = n^{2}$, and over the $n$ values of the upper index it is $n^{3}$. The skew products have the same count, since an arbitrary product is the sum of one of each. $\square$
+*Proof.* A product is the same thing as an arbitrary family of $n^{3}$ constants in $R$, by *The Sesquilinear Product*, §*The Axioms of the Product*, and $R$ has rank two over $R^{\varsigma}$, so the space of products has rank $2n^{3}$. The conjugate-symmetry $c^{k}{}_{ij} = \varsigma(c^{k}{}_{ji})$ is an additive involution of that module; its free data are the $n$ diagonal values, each in the fixed field, together with the entries above the diagonal, each an arbitrary element of $R$ that determines the entry below it, of which there are $n(n-1)$; the total per upper index is $n + n(n-1) = n^{2}$, and over the $n$ values of the upper index it is $n^{3}$. The skew products have the same count, since an arbitrary product is the sum of one of each.
 
 | $n$ | products, $2n^{3}$ | conjugate-symmetric, $n^{3}$ | skew, $n^{3}$ |
 |---|---|---|---|
@@ -337,7 +337,7 @@ $$
 (x + y) \star (x + y) - x \star x - y \star y = x \star y + y \star x = 2\star^{\mathrm{sym}}(x,y).
 $$
 
-*Proof.* Expand the product by its additivity in each variable and cancel the two squares. $\square$
+*Proof.* Expand the product by its additivity in each variable and cancel the two squares.
 
 **Remark (the square polarises the plain symmetrisation, not the exchanged one).** The right-hand side is twice the **plain** symmetrisation of *The Sesquilinear Symmetrised Product*, and it is $2\star_{+}(x,y)$ only when $c$ is the identity, that is in the bilinear case. The identity that the algebra article proves as the polarisation of the symmetric half therefore has no analogue for the adapted half:
 
@@ -362,7 +362,7 @@ $$
 \star_{-}(x,x) = 0 \ \text{for all } x \iff c(x \star x) = x \star x \ \text{for all } x .
 $$
 
-*Proof.* The displays are the definitions at $y = x$, and the equivalence is the second display read at a single element. $\square$
+*Proof.* The displays are the definitions at $y = x$, and the equivalence is the second display read at a single element.
 
 **Remark (the analogue of $x \wedge x = 0$ is a condition, not an identity).** In the bilinear theory the antisymmetric half vanishes on the diagonal identically, $x \wedge x = \tfrac12(x^2 - x^2) = 0$, and that identity is what separates the squares that the symmetric half carries from the ones it cannot. In the sesquilinear theory the diagonal of the skew half is the antisymmetrised square, which **need not vanish**: it vanishes exactly when the square of every element is fixed by the conjugation. By the theorem of §*The Case of a Hermitian Form* its scalar part vanishes whenever the scalar form is Hermitian, so the surviving values are vector-valued, and the biquaternion products below exhibit them. The diagonal is therefore the place where the adaptation costs something, and the price is paid in the square and not in the scalar.
 
@@ -387,7 +387,7 @@ $$
 
 and if $c$ is an automorphism of the algebra product this reads $\star^{c}(x,y) = c(y)\,c(x^{*})$.
 
-*Proof.* Substitute the derived operation in the exchange: $\star^{c}(x,y) = c\bigl(\star(y,x)\bigr) = c(yx^{*})$, and for an automorphism $c$ the conjugation passes through the product, $c(yx^{*}) = c(y)c(x^{*})$. $\square$
+*Proof.* Substitute the derived operation in the exchange: $\star^{c}(x,y) = c\bigl(\star(y,x)\bigr) = c(yx^{*})$, and for an automorphism $c$ the conjugation passes through the product, $c(yx^{*}) = c(y)c(x^{*})$.
 
 **Remark (the Hermitian form).** For a $\varsigma$-semilinear involution $*$ and an additive $R$-linear $\varepsilon$ with $\varepsilon(x^{*}) = \varsigma(\varepsilon(x))$, the scalar form of the derived operation is Hermitian:
 
@@ -415,7 +415,7 @@ $$
 
 the conjugate of the second argument multiplied on the left by the transpose of the first.
 
-*Proof.* $\overline{yx^{*}} = \bar{y}\,\overline{x^{*}}$ by the multiplicativity of the entrywise conjugation, and $\overline{x^{*}} = x^{\mathsf{T}}$ because the conjugate of the conjugate transpose is the transpose. $\square$
+*Proof.* $\overline{yx^{*}} = \bar{y}\,\overline{x^{*}}$ by the multiplicativity of the entrywise conjugation, and $\overline{x^{*}} = x^{\mathsf{T}}$ because the conjugate of the conjugate transpose is the transpose.
 
 **Remark.** With the trace $\varepsilon = \operatorname{tr}$ as the scalar form the hypotheses of the scalar theorem hold, since $\operatorname{tr}(\bar{x}) = \overline{\operatorname{tr}(x)}$, and the trace of a value of the skew half vanishes:
 
@@ -427,7 +427,7 @@ the second trace being the conjugate of the first, since $\operatorname{tr}(\bar
 
 ### The Biquaternion Products
 
-**Remark (four general products, two exchanges).** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, the general plain bilinear $\tilde{P}\tilde{Q}$, the general quaternionic bilinear $\tilde{P}^{\natural}\tilde{Q}$, the general plain sesquilinear $\tilde{P}\tilde{Q}^{*}$ and the general quaternionic sesquilinear $\tilde{P}^{\natural}\tilde{Q}^{*}$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. The first two are bilinear, so their base involution is trivial and their exchange is the plain transposition; the last two are sesquilinear over $(\mathbb{C},\varsigma)$ with $\varsigma$ the complex conjugation, and their conjugation is the coefficientwise conjugation $\bar{\cdot}$ of *The Clifford Algebra Representation*, so their exchange is the transposition followed by the coefficientwise conjugation. **The exchange that applies to a product is read off the base involution of the product, and the four general products fall into two pairs by it.**
+**Remark (four general products, two exchanges).** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, the general plain bilinear $\tilde{P}\tilde{Q}$, the general quaternionic bilinear $\tilde{P}^{\natural}\tilde{Q}$, the general plain sesquilinear $\tilde{P}\tilde{Q}^{*}$ and the general quaternionic sesquilinear $\tilde{P}^{\natural}\tilde{Q}^{*}$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. The first two are bilinear, so their base involution is trivial and their exchange is the plain transposition; the last two are sesquilinear over $(\mathbb{C},\varsigma)$ with $\varsigma$ the complex conjugation, and their conjugation is the coefficientwise conjugation $\bar{\cdot}$ of *The Realification of the General Plain Algebra*, so their exchange is the transposition followed by the coefficientwise conjugation. **The exchange that applies to a product is read off the base involution of the product, and the four general products fall into two pairs by it.**
 
 **Remark (what the split gives on the four general products).** With those exchanges the two halves separate as follows. For the general plain bilinear and the general quaternionic sesquilinear products, the two for which the pair of arguments carries an even number of the conjugations ${}^{\natural}$ and ${}^{*}$, the skew half is a cross product, $\mathbf P\times\mathbf Q$ and $\mathbf P\times\overline{\mathbf Q}$ respectively; for the general quaternionic bilinear and the general plain sesquilinear products, for which that number is odd, the conjugate-symmetric half is the form alone and the skew half is therefore the whole vector part of the product. The conjugate-symmetric half carries the four forms of the biquaternion block: the general plain bilinear form $B$ on the first product, the general quaternionic bilinear form $N$ on the second, the general plain sesquilinear form $H$ on the third and the general quaternionic sesquilinear form $K$ on the fourth. In all four cases the scalar part lies entirely in the conjugate-symmetric half, which is the scalar theorem of this article; the diagonal of the skew half is scalar-free in all four cases, and it is nonzero and vector-valued exactly for the two sesquilinear products, which is the diagonal proposition. The computation of the four general products and the four forms is *The Four Pairings of the Biquaternion Algebra*, and the halves of the first product, with its Jordan property, are *The 12 Products of the Biquaternion Complex Space*.
 

@@ -220,10 +220,10 @@ One further point is worth recording because the programme itself flags it. The 
 
 **Established, and recomputed.**
 
-- The degree formula $N(p,q)=\frac12(p+1)(q+1)(p+q+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$. Recomputed (see the `.context` for the transcript).
+- The degree formula $N(p,q)=\frac12(p+1)(q+1)(p+q+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$.
 - The admissibility condition $p-q\equiv0\pmod3$ and the resulting degree list $1,8,10,27,28,35,\dots$; consistent with the table.
 - The octet reduction $\mathrm{Sym}_0^{(1,1)}=\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, dimensions $3+2+2+1=8$.
-- The Gell-Mann–Okubo relation $m_\Xi+m_N=\frac12(3m_\Lambda+m_\Sigma)$ against the PDG baryon masses: $2256.9$ versus $2270.1$ MeV, a $0.58\%$ discrepancy. Recomputed.
+- The Gell-Mann–Okubo relation $m_\Xi+m_N=\frac12(3m_\Lambda+m_\Sigma)$ against the PDG baryon masses: $2256.9$ versus $2270.1$ MeV, a $0.58\%$ discrepancy.
 
 **Transcribed, not derived.**
 

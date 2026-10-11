@@ -16,11 +16,11 @@ $$
 \tilde A\diamond\tilde Q=0,\qquad \tilde Q\diamond\tilde A=0 .
 $$
 
-*Proof.* A central element has $\mathbf{A}=0$, so the value is the cross product of a zero vector; the value is zero from either slot. Verified on the centre.
+*Proof.* A central element has $\mathbf{A}=0$, so the value is the cross product of a zero vector; the value is zero from either slot.
 
 **Proposition.** The image of the block on every subspace is contained in the vector subspace, and on the vector subspace the block is stable with image the whole vector subspace.
 
-*Proof.* Every value of the block is pure vector, so the image of any subspace lies in $\mathrm{Vect}(\mathbb{B})$. On $\mathrm{Vect}(\mathbb{B})$ the vector parts are the elements themselves, so the value $\mathbf{Q}\times\overline{\mathbf{Q}'}$ of two complex vectors is again a complex vector, and the values fill the three complex dimensions. Verified on the remarkable subspaces.
+*Proof.* Every value of the block is pure vector, so the image of any subspace lies in $\mathrm{Vect}(\mathbb{B})$. On $\mathrm{Vect}(\mathbb{B})$ the vector parts are the elements themselves, so the value $\mathbf{Q}\times\overline{\mathbf{Q}'}$ of two complex vectors is again a complex vector, and the values fill the three complex dimensions.
 
 ## Remarkable Subspaces
 
@@ -87,7 +87,7 @@ $$
 
 that is, exactly when the vector part of one is a complex multiple of the conjugate of the vector part of the other, or one of the two vector parts is zero.
 
-*Proof.* The value is the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$, and a cross product of two complex vectors vanishes exactly when the two are linearly dependent over $\mathbb{C}$ or one of them is zero. Verified on general elements and on the remarkable subspaces.
+*Proof.* The value is the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$, and a cross product of two complex vectors vanishes exactly when the two are linearly dependent over $\mathbb{C}$ or one of them is zero.
 
 **Remark (the annihilators).** For a fixed $\tilde Q$ the elements $\tilde P$ with $\tilde P\diamond\tilde Q=0$ are the central elements together with the complex line $\mathbb{C}\overline{\mathbf{Q}}$; for a fixed $\tilde P$ the elements $\tilde Q$ with $\tilde P\diamond\tilde Q=0$ are the central elements together with the complex line $\mathbb{C}\overline{\mathbf{P}}$. The left and the right annihilator of an element are therefore complex planes through the origin, the centre together with a complex line, of complex dimension two, except when the element is central, in which case the annihilator is the whole space. The annihilators are the reason the block has no unit: no element can be reproduced by a product whose values always have a line of annihilation.
 

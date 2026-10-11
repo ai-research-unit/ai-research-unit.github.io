@@ -30,11 +30,11 @@ $$
 
 **Theorem.** The trace form is $R$-bilinear, symmetric, non-degenerate and graded: $\langle \operatorname{Sym}^k(M), \operatorname{Sym}^j(M)\rangle = 0$ for $k\ne j$, and on $\operatorname{Sym}^k(M)$ it is a non-degenerate pairing.
 
-*Proof.* Bilinearity is the bilinearity of the coefficient extraction; symmetry is the commutativity of the differential operators with constant coefficients, $\partial^a\partial^b = \partial^{a+b} = \partial^b\partial^a$; the monomial formula is immediate; the pairing is diagonal in the monomial bases with the invertible coefficients $a!$, hence non-degenerate on each finite free homogeneous piece and graded. $\square$
+*Proof.* Bilinearity is the bilinearity of the coefficient extraction; symmetry is the commutativity of the differential operators with constant coefficients, $\partial^a\partial^b = \partial^{a+b} = \partial^b\partial^a$; the monomial formula is immediate; the pairing is diagonal in the monomial bases with the invertible coefficients $a!$, hence non-degenerate on each finite free homogeneous piece and graded.
 
 **Proposition (invariance under the induced involution).** Let $\sigma_M$ be an $R$-linear involution of $M$ preserving the trace form, $\langle \sigma_M(x),\sigma_M(y)\rangle = \langle x,y\rangle$, and let $\sigma$ be the induced involution of $A$. Then $\sigma$ preserves the trace form, $\langle \sigma(u),\sigma(v)\rangle = \langle u,v\rangle$, and the trace form is compatible with the multiplication of *The Symmetric Algebra of a Module with an Involution*.
 
-*Proof.* The induced involution is multiplicative and acts by $\sigma_M$ on the generators; applied to the monomials, the invariance follows from the invariance of the pairing on $M$ extended multiplicatively. $\square$
+*Proof.* The induced involution is multiplicative and acts by $\sigma_M$ on the generators; applied to the monomials, the invariance follows from the invariance of the pairing on $M$ extended multiplicatively.
 
 ## The Adjoint of a Multiplication
 
@@ -46,7 +46,7 @@ $$
 L_{x_i}^{\dagger} = \partial_i , \qquad \text{that is} \qquad \langle x_i u, v\rangle = \langle u, \partial_i v\rangle .
 $$
 
-*Proof.* On the monomials, $\langle x_i x^a, x^b\rangle = \langle x^{a+e_i}, x^b\rangle = (a+e_i)!\,\delta_{a+e_i,b}$ and $\langle x^a, \partial_i x^b\rangle = b_i\langle x^a,x^{b-e_i}\rangle = b_i\,a!\,\delta_{a,b-e_i}$; the two agree because $a+e_i = b$ gives $b_i = a_i+1$ and $(a+e_i)! = (a_i+1)a!$. Hence the two operators are adjoint. $\square$
+*Proof.* On the monomials, $\langle x_i x^a, x^b\rangle = \langle x^{a+e_i}, x^b\rangle = (a+e_i)!\,\delta_{a+e_i,b}$ and $\langle x^a, \partial_i x^b\rangle = b_i\langle x^a,x^{b-e_i}\rangle = b_i\,a!\,\delta_{a,b-e_i}$; the two agree because $a+e_i = b$ gives $b_i = a_i+1$ and $(a+e_i)! = (a_i+1)a!$. Hence the two operators are adjoint.
 
 ### The Multiplication by a General Element
 
@@ -56,25 +56,25 @@ $$
 L_u^{\dagger} = u(\partial) = P_u , \qquad \text{that is} \qquad \langle u w, v\rangle = \langle w, u(\partial)v\rangle .
 $$
 
-*Proof.* Both sides are additive in $u$, and for a monomial $u = x^a$ the operator $u(\partial) = \partial^a$ is the composite $\partial^{a} = \partial_1^{a_1}\cdots\partial_n^{a_n}$; the relation $\langle x_iw,\cdot\rangle = \langle w,\partial_i\cdot\rangle$ composes to $\langle u w,v\rangle = \langle w, u(\partial)v\rangle$. $\square$
+*Proof.* Both sides are additive in $u$, and for a monomial $u = x^a$ the operator $u(\partial) = \partial^a$ is the composite $\partial^{a} = \partial_1^{a_1}\cdots\partial_n^{a_n}$; the relation $\langle x_iw,\cdot\rangle = \langle w,\partial_i\cdot\rangle$ composes to $\langle u w,v\rangle = \langle w, u(\partial)v\rangle$.
 
 **Corollary (the self-adjoint multiplications).** A multiplication $L_u$ is self-adjoint with respect to the trace form exactly when $u$ is a scalar: $L_u^{\dagger} = L_u$ iff $u \in R$ (the constants of the symmetric algebra).
 
-*Proof.* $L_u^{\dagger} = u(\partial)$ and $L_u$ is a multiplication of degree $\deg u$, while $u(\partial)$ lowers the degree by $\deg u$; the two operators are equal only when $\deg u = 0$, and then $u(\partial) = u$ is the scalar multiplication. $\square$
+*Proof.* $L_u^{\dagger} = u(\partial)$ and $L_u$ is a multiplication of degree $\deg u$, while $u(\partial)$ lowers the degree by $\deg u$; the two operators are equal only when $\deg u = 0$, and then $u(\partial) = u$ is the scalar multiplication.
 
 **Corollary (the mutual adjointness).** The multiplication $L_u$ and the polarisation operator $P_u$ are mutual adjoints, $L_u^{\dagger} = P_u$ and $P_u^{\dagger} = L_u$; the map $u\mapsto (L_u, P_u)$ is an isomorphism of $A$ onto a pair of adjoint families of operators.
 
-*Proof.* $(L_u^{\dagger})^{\dagger} = L_u$ by the involutivity of the adjoint, and $L_u^{\dagger} = P_u$, so $P_u^{\dagger} = L_u$. $\square$
+*Proof.* $(L_u^{\dagger})^{\dagger} = L_u$ by the involutivity of the adjoint, and $L_u^{\dagger} = P_u$, so $P_u^{\dagger} = L_u$.
 
 ## The Self-Adjoint Operators and the Induced Involution
 
 **Theorem.** The assignment $F\mapsto F^{\dagger}$ is an involution of the endomorphism algebra $\operatorname{End}_R(A)$, the **transpose involution** with respect to the trace form; the self-adjoint operators form a Jordan algebra under the symmetrised product and the skew-adjoint operators a Lie algebra under the commutator, with the decomposition into the two when $2$ is invertible; the unitary operators, those with $F^{\dagger}F = FF^{\dagger} = 1$, form a group.
 
-*Proof.* This is *The Adjoint of an Endomorphism* together with *Involutive Algebras*, read on the trace form. $\square$
+*Proof.* This is *The Adjoint of an Endomorphism* together with *Involutive Algebras*, read on the trace form.
 
 **Proposition.** The polarisation operators form the image of the symmetric algebra under the adjoint of the multiplication map, $A\to\operatorname{End}_R(A)$, $u\mapsto P_u = L_u^{\dagger}$; they commute, $P_uP_v = P_{uv}$, because the differential operators with constant coefficients commute, and they are the operators of *The Polarisation Operator* written as the adjoints of the multiplications.
 
-*Proof.* $P_uP_v = u(\partial)v(\partial) = (uv)(\partial) = P_{uv}$, as differential operators with constant coefficients commute. $\square$
+*Proof.* $P_uP_v = u(\partial)v(\partial) = (uv)(\partial) = P_{uv}$, as differential operators with constant coefficients commute.
 
 ## Examples
 

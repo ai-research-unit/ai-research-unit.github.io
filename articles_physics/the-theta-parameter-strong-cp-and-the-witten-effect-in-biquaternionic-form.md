@@ -66,7 +66,6 @@ F_{\mu\nu}\tilde F^{\mu\nu}=4I_2\ \ (\text{Euclidean}),
 I_2=\mathbf E\cdot\mathbf B ,
 $$
 
-<!-- CONVENTION — theta density: in the $ict$ convention the abelian density is $F\tilde F=\frac{4i}{c}I_2$ (Lorentzian) and $F\tilde F=4I_2$ (Euclidean). The factor $i$ is the $ict$ convention of *The Field-Strength Biquaternion and Its Invariants*, not an error; the Euclidean form is real because $x_4=ict$ turns the imaginary time direction real. Do not "drop the $i$" in the Lorentzian form. -->
 
 so the theta term of the abelian theory is
 

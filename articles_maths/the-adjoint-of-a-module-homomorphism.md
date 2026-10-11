@@ -57,7 +57,7 @@ $$
 f^{*} \in \operatorname{Hom}_A(N,M).
 $$
 
-*Proof.* Uniqueness: if $g^{*}(n)$ also represents the functional, then $\langle m,f^{*}(n)-g^{*}(n)\rangle=0$ for all $m$, so $f^{*}(n)=g^{*}(n)$ by non-degeneracy in the first variable. $A$-linearity: for the left action, $\langle m,f^{*}(an)\rangle=\langle f(m),an\rangle=\langle\sigma(a)f(m),n\rangle$ by the sesquilinear identity; since $f$ is $A$-linear, $\sigma(a)f(m)=f(\sigma(a)m)$, so this is $\langle f(\sigma(a)m),n\rangle=\langle\sigma(a)m,f^{*}(n)\rangle=\langle m,a f^{*}(n)\rangle$; non-degeneracy gives $f^{*}(an)=a f^{*}(n)$. Additivity is the same argument applied to the sum. $\square$
+*Proof.* Uniqueness: if $g^{*}(n)$ also represents the functional, then $\langle m,f^{*}(n)-g^{*}(n)\rangle=0$ for all $m$, so $f^{*}(n)=g^{*}(n)$ by non-degeneracy in the first variable. $A$-linearity: for the left action, $\langle m,f^{*}(an)\rangle=\langle f(m),an\rangle=\langle\sigma(a)f(m),n\rangle$ by the sesquilinear identity; since $f$ is $A$-linear, $\sigma(a)f(m)=f(\sigma(a)m)$, so this is $\langle f(\sigma(a)m),n\rangle=\langle\sigma(a)m,f^{*}(n)\rangle=\langle m,a f^{*}(n)\rangle$; non-degeneracy gives $f^{*}(an)=a f^{*}(n)$. Additivity is the same argument applied to the sum.
 
 When $M=N$ and the pairing is non-degenerate, the representing element always exists after one adds the hypothesis used below, namely that the pairing be **perfect**: every $R$-linear functional on $M$ of the form $m \mapsto \langle m,n\rangle$ is represented. For finite free modules over a field, or more generally for modules with a non-degenerate pairing and a dual basis, this holds; the theorem is stated with the hypothesis explicit.
 
@@ -69,7 +69,7 @@ $$
 (f+g)^{*}=f^{*}+g^{*}, \qquad (fg)^{*}=g^{*}f^{*}, \qquad (f^{*})^{*}=f, \qquad (rf)^{*}=r f^{*}.
 $$
 
-*Proof.* Additivity and $R$-linearity follow from the defining identity and uniqueness. For the product, $\langle fg(m),n\rangle=\langle g(m),f^{*}(n)\rangle=\langle m,g^{*}(f^{*}(n))\rangle$, so $(fg)^{*}=g^{*}f^{*}$ by uniqueness. For order two, reflexivity gives $\langle f^{*}(n),m\rangle=\varepsilon\langle m,f^{*}(n)\rangle=\varepsilon\langle f(m),n\rangle=\langle n,f(m)\rangle$, so $f$ represents the functional defining $(f^{*})^{*}$; uniqueness gives $(f^{*})^{*}=f$. $\square$
+*Proof.* Additivity and $R$-linearity follow from the defining identity and uniqueness. For the product, $\langle fg(m),n\rangle=\langle g(m),f^{*}(n)\rangle=\langle m,g^{*}(f^{*}(n))\rangle$, so $(fg)^{*}=g^{*}f^{*}$ by uniqueness. For order two, reflexivity gives $\langle f^{*}(n),m\rangle=\varepsilon\langle m,f^{*}(n)\rangle=\varepsilon\langle f(m),n\rangle=\langle n,f(m)\rangle$, so $f$ represents the functional defining $(f^{*})^{*}$; uniqueness gives $(f^{*})^{*}=f$.
 
 The assignment $f \mapsto f^{*}$ is therefore an involution of the endomorphism ring when $M=N$, which is the subject of *The Involution on the Endomorphism Ring of a Module*; the article here treats the adjoint as an operator.
 
@@ -81,7 +81,7 @@ $$
 L_a^{*}=L_{\sigma(a)} .
 $$
 
-*Proof.* $\langle L_a(m),n\rangle=\langle am,n\rangle=\langle m,\sigma(a)n\rangle=\langle m,L_{\sigma(a)}(n)\rangle$, so $L_{\sigma(a)}$ represents the functional, and uniqueness gives the identity. $\square$
+*Proof.* $\langle L_a(m),n\rangle=\langle am,n\rangle=\langle m,\sigma(a)n\rangle=\langle m,L_{\sigma(a)}(n)\rangle$, so $L_{\sigma(a)}$ represents the functional, and uniqueness gives the identity.
 
 The formula is the reason the involution of the algebra and the adjoint of the module are one construction: applying the adjoint to the action applies $\sigma$ to the scalar.
 
@@ -99,7 +99,7 @@ Both are submodules, the first of $N$ and the second of $M$.
 
 **Proposition.** $U^{\mathrm{c}}$ and ${}^{\mathrm{c}}V$ are submodules, and for a reflexive pairing $(U^{\mathrm{c}})^{\mathrm{c}}=U$ and ${}^{\mathrm{c}}({}^{\mathrm{c}}V)=V$. When $M$ and $N$ have a finite length function and the pairing is non-degenerate, the length is complementary, $\ell(U^{\mathrm{c}})=\ell(N)-\ell(U)$, and the assignment $U \mapsto U^{\mathrm{c}}$ is an order-reversing bijection.
 
-*Proof.* The submodule statements are immediate from biadditivity; reflexivity gives the double-complement identities as in the linear-space case, because $\langle m,n\rangle=\varepsilon\langle n,m\rangle$ makes the two kernels dual; for the length formula, the map $N \to U^{\vee}$, $n \mapsto \langle\cdot,n\rangle$, has kernel $U^{\mathrm{c}}$ and image the functionals represented on $U$, which for a perfect pairing is all of $U^{\vee}$, so the length is complementary. $\square$
+*Proof.* The submodule statements are immediate from biadditivity; reflexivity gives the double-complement identities as in the linear-space case, because $\langle m,n\rangle=\varepsilon\langle n,m\rangle$ makes the two kernels dual; for the length formula, the map $N \to U^{\vee}$, $n \mapsto \langle\cdot,n\rangle$, has kernel $U^{\mathrm{c}}$ and image the functionals represented on $U$, which for a perfect pairing is all of $U^{\vee}$, so the length is complementary.
 
 ### The kernel and the image
 
@@ -109,15 +109,15 @@ $$
 \ker f^{*}=(\operatorname{im}f)^{\mathrm{c}}, \qquad \operatorname{im}f^{*}={}^{\mathrm{c}}(\ker f).
 $$
 
-*Proof.* $f^{*}(n)=0$ means $\langle m,f^{*}(n)\rangle=0$ for all $m$, that is $\langle f(m),n\rangle=0$ for all $m$, which says $n \in (\operatorname{im}f)^{\mathrm{c}}$; this is the first identity. For the second, $\langle m,f^{*}(n)\rangle=\langle f(m),n\rangle$ vanishes for all $n$ exactly when $f(m) \in {}^{\mathrm{c}}N$, that is $m \in \ker f$, so ${}^{\mathrm{c}}(\operatorname{im}f^{*})=\ker f$; taking complements gives the identity. $\square$
+*Proof.* $f^{*}(n)=0$ means $\langle m,f^{*}(n)\rangle=0$ for all $m$, that is $\langle f(m),n\rangle=0$ for all $m$, which says $n \in (\operatorname{im}f)^{\mathrm{c}}$; this is the first identity. For the second, $\langle m,f^{*}(n)\rangle=\langle f(m),n\rangle$ vanishes for all $n$ exactly when $f(m) \in {}^{\mathrm{c}}N$, that is $m \in \ker f$, so ${}^{\mathrm{c}}(\operatorname{im}f^{*})=\ker f$; taking complements gives the identity.
 
 **Corollary.** If $M$ and $N$ have equal finite length and the pairing is non-degenerate and perfect, then $\ell(\ker f^{*})=\ell(\ker f)$ and $\ell(\operatorname{im}f^{*})=\ell(\operatorname{im}f)$: the adjoint preserves the length of the kernel, the image and the cokernel.
 
-*Proof.* $\ell(\ker f^{*})=\ell((\operatorname{im}f)^{\mathrm{c}})=\ell(N)-\ell(\operatorname{im}f)=\ell(M)-\ell(\operatorname{im}f)=\ell(\ker f)$, using the length formula and $\ell(M)=\ell(N)$. The image statement follows from $\ell(\operatorname{im}f^{*})=\ell(M)-\ell(\ker f^{*})$. $\square$
+*Proof.* $\ell(\ker f^{*})=\ell((\operatorname{im}f)^{\mathrm{c}})=\ell(N)-\ell(\operatorname{im}f)=\ell(M)-\ell(\operatorname{im}f)=\ell(\ker f)$, using the length formula and $\ell(M)=\ell(N)$. The image statement follows from $\ell(\operatorname{im}f^{*})=\ell(M)-\ell(\ker f^{*})$.
 
 **Corollary (invertibility).** $f$ is invertible if and only if $f^{*}$ is, and then $(f^{-1})^{*}=(f^{*})^{-1}$; the adjoint of the identity is the identity, and the adjoint of the scalar $r \in R$ is $r$.
 
-*Proof.* Length preservation makes invertibility correspond; from $ff^{-1}=\mathrm{id}$ and anti-multiplicativity, $(f^{-1})^{*}f^{*}=\mathrm{id}$ and $f^{*}(f^{-1})^{*}=\mathrm{id}$, which is the inverse statement. The last clauses are the definitions. $\square$
+*Proof.* Length preservation makes invertibility correspond; from $ff^{-1}=\mathrm{id}$ and anti-multiplicativity, $(f^{-1})^{*}f^{*}=\mathrm{id}$ and $f^{*}(f^{-1})^{*}=\mathrm{id}$, which is the inverse statement. The last clauses are the definitions.
 
 ## The Transpose
 
@@ -131,7 +131,7 @@ $$
 f^{\mathrm{t}} : M^{\vee} \to M^{\vee}, \qquad f^{\mathrm{t}}(\varphi)=\varphi \circ f .
 $$
 
-*Proof.* $\langle f(m),\varphi\rangle=\varphi(f(m))=(f^{\mathrm{t}}\varphi)(m)=\langle m,f^{\mathrm{t}}\varphi\rangle$, so $f^{\mathrm{t}}$ represents the functional and is the adjoint by uniqueness. $\square$
+*Proof.* $\langle f(m),\varphi\rangle=\varphi(f(m))=(f^{\mathrm{t}}\varphi)(m)=\langle m,f^{\mathrm{t}}\varphi\rangle$, so $f^{\mathrm{t}}$ represents the functional and is the adjoint by uniqueness.
 
 The transpose is contravariant, $(fg)^{\mathrm{t}}=g^{\mathrm{t}}f^{\mathrm{t}}$, and involutive when $M$ is reflexive, in agreement with the general laws.
 
@@ -139,7 +139,7 @@ The transpose is contravariant, $(fg)^{\mathrm{t}}=g^{\mathrm{t}}f^{\mathrm{t}}$
 
 **Proposition.** Let $M=R^n$ with the standard pairing $\langle x,y\rangle=\sum_i x_iy_i$, and let $f$ have matrix $X$. Then $f^{*}$ has matrix $X^{\mathsf{T}}$. If instead the pairing has Gram matrix $\Phi$, then $[f^{*}]=\Phi^{-1}X^{\mathsf{T}}\Phi$.
 
-*Proof.* The identity $\langle Xx,y\rangle=\langle x,X^{\mathsf{T}}y\rangle$ is the definition of the transpose; conjugating by the Gram matrix replaces the standard pairing by a general one. $\square$
+*Proof.* The identity $\langle Xx,y\rangle=\langle x,X^{\mathsf{T}}y\rangle$ is the definition of the transpose; conjugating by the Gram matrix replaces the standard pairing by a general one.
 
 In the $\sigma$-sesquilinear case the matrix description acquires $\sigma$: the adjoint of a matrix is the conjugate transpose, and its precise form for a module over an involutive algebra is the matrix involution $\Theta(X)_{ij}=\sigma(X_{ji})$ of *Modules over an Involutive Algebra* when the pairing is the standard one on $A^n$.
 
@@ -157,7 +157,7 @@ $$
 
 **Proposition.** For a reflexive pairing the left adjoint exists, is unique, and equals the adjoint: ${}^{*}f=f^{*}$. Without reflexivity, a left adjoint may fail to exist, and when it exists it differs from the adjoint by the reflexivity defect.
 
-*Proof.* Using $\langle n,f(m)\rangle=\varepsilon\langle f(m),n\rangle=\varepsilon\langle m,f^{*}(n)\rangle=\langle f^{*}(n),m\rangle$, the map $f^{*}$ satisfies the defining identity of ${}^{*}f$, so it is a left adjoint; uniqueness is the same non-degeneracy argument as for the adjoint. Conversely, if $\langle n,f(m)\rangle$ is not proportional to $\langle f(m),n\rangle$, nothing guarantees a representing element. $\square$
+*Proof.* Using $\langle n,f(m)\rangle=\varepsilon\langle f(m),n\rangle=\varepsilon\langle m,f^{*}(n)\rangle=\langle f^{*}(n),m\rangle$, the map $f^{*}$ satisfies the defining identity of ${}^{*}f$, so it is a left adjoint; uniqueness is the same non-degeneracy argument as for the adjoint. Conversely, if $\langle n,f(m)\rangle$ is not proportional to $\langle f(m),n\rangle$, nothing guarantees a representing element.
 
 Thus for the pairings used here the words *left adjoint* and *right adjoint* name the same operator; the distinction is real only for a pairing without reflexivity, and in the sesquilinear case it is the involution $\sigma$ that relates the two conventions.
 
@@ -165,7 +165,7 @@ Thus for the pairings used here the words *left adjoint* and *right adjoint* nam
 
 **Corollary.** In the bilinear case with the evaluation pairing, the left adjoint of $f$ is its transpose on the dual. In the $\sigma$-sesquilinear case, the adjoint with respect to the pairing $\langle m,n\rangle$ and the adjoint with respect to the pairing $\langle n,m\rangle$ are related by $\sigma$ on the coefficients.
 
-*Proof.* The first clause is the transpose proposition; the second restates the sesquilinear identity $L_a^{*}=L_{\sigma(a)}$ in the two conventions. $\square$
+*Proof.* The first clause is the transpose proposition; the second restates the sesquilinear identity $L_a^{*}=L_{\sigma(a)}$ in the two conventions.
 
 ## Examples
 

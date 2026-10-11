@@ -36,7 +36,7 @@ $$
 
 and the pair map $(x,y)\mapsto\Theta_{x,y}$ is linear in $x$ and $\varsigma$-semilinear in $y$.
 
-**Proof.** The factorisation is *The Bounded Ternary Product*, $\Theta_{x,y}(z)=xy^{*}z=(x\star y)z=T_{x\star y,1}(z)$, which is the left multiplication by the derived product; the bound is the submultiplicative estimate $\lVert xy^{*}z\rVert\le\lVert x\rVert\lVert y\rVert\lVert z\rVert$ of that article, and the value at the unit is $xy^{*}=x\star y$. The parity of the pair map is the parity of the derived product, linear in the first factor and $\varsigma$-semilinear in the second. $\square$
+**Proof.** The factorisation is *The Bounded Ternary Product*, $\Theta_{x,y}(z)=xy^{*}z=(x\star y)z=T_{x\star y,1}(z)$, which is the left multiplication by the derived product; the bound is the submultiplicative estimate $\lVert xy^{*}z\rVert\le\lVert x\rVert\lVert y\rVert\lVert z\rVert$ of that article, and the value at the unit is $xy^{*}=x\star y$. The parity of the pair map is the parity of the derived product, linear in the first factor and $\varsigma$-semilinear in the second.
 
 **Remark.** The operator is $R$-linear in its variable, so its adjoint is taken by the plain rule and the parity obstruction of a conjugate-linear operator does not arise: the conjugate-linearity of the ternary product sits in the middle slot, which is a **parameter** of the operator and not its variable. A parameter may be conjugate-linear while the operator it names is linear, and the adjoint reads the operator and not the parameter.
 
@@ -48,11 +48,11 @@ $$
 \Theta_{x,y}^{\dagger}=\Theta_{y,x},\qquad\text{equivalently}\qquad h\bigl(\Theta_{x,y}z,w\bigr)=h\bigl(z,\Theta_{y,x}w\bigr)\quad\text{for all }z,w\in A .
 $$
 
-**Proof.** The pair operator is the bounded left multiplication $L_{x\star y}$, and *Adjoints of Bounded Sesquilinear Operators* gives $L_{c}^{\dagger}=L_{c^{*}}$; here $c=x\star y$ and $c^{*}=(xy^{*})^{*}=yx^{*}=y\star x$, so $\Theta_{x,y}^{\dagger}=L_{(x\star y)^{*}}=L_{y\star x}=\Theta_{y,x}$. Written out, $h(\Theta_{x,y}z,w)=(xy^{*}z)^{*}w=z^{*}yx^{*}w$ and $h(z,\Theta_{y,x}w)=z^{*}(yx^{*}w)=z^{*}yx^{*}w$, which agree; this is the direct verification and it uses only the anti-multiplicativity of $*$ and the associativity. $\square$
+**Proof.** The pair operator is the bounded left multiplication $L_{x\star y}$, and *Adjoints of Bounded Sesquilinear Operators* gives $L_{c}^{\dagger}=L_{c^{*}}$; here $c=x\star y$ and $c^{*}=(xy^{*})^{*}=yx^{*}=y\star x$, so $\Theta_{x,y}^{\dagger}=L_{(x\star y)^{*}}=L_{y\star x}=\Theta_{y,x}$. Written out, $h(\Theta_{x,y}z,w)=(xy^{*}z)^{*}w=z^{*}yx^{*}w$ and $h(z,\Theta_{y,x}w)=z^{*}(yx^{*}w)=z^{*}yx^{*}w$, which agree; this is the direct verification and it uses only the anti-multiplicativity of $*$ and the associativity.
 
 **Corollary (the order of the operation).** $\Theta_{x,y}^{\dagger\dagger}=\Theta_{x,y}$ and $\Theta_{x,x}^{\dagger}=\Theta_{x,x}$: the diagonal of the pair map is self-adjoint.
 
-**Proof.** The adjoint operation is of order two by *Adjoints of Bounded Sesquilinear Operators*, and the identity gives $\Theta_{x,x}^{\dagger}=\Theta_{x,x}$. $\square$
+**Proof.** The adjoint operation is of order two by *Adjoints of Bounded Sesquilinear Operators*, and the identity gives $\Theta_{x,x}^{\dagger}=\Theta_{x,x}$.
 
 **Remark (the parities of the adjoint).** The adjoint $\Theta_{y,x}$ is, as a function of the pair, $\varsigma$-semilinear in $x$ and linear in $y$, because it is the pair map of the swapped pair. The adjoint operation therefore exchanges the two parities of the parameters, as in the algebraic layer, and in the factorisation the exchange is the star on the derived product, $c\mapsto c^{*}=y\star x$.
 
@@ -66,7 +66,7 @@ $$
 \Theta_{x,x}=L_{x\star x},\qquad \Theta_{x,x}^{\dagger}=L_{(x\star x)^{*}}=L_{x\star x}.
 $$
 
-**Proof.** The diagonal is self-adjoint by the corollary of the adjoint theorem, and the second identity is the same factorisation read on the adjoint; it agrees with the first because the derived square is Hermitian, $(x\star x)^{*}=(xx^{*})^{*}=xx^{*}=x\star x$. $\square$
+**Proof.** The diagonal is self-adjoint by the corollary of the adjoint theorem, and the second identity is the same factorisation read on the adjoint; it agrees with the first because the derived square is Hermitian, $(x\star x)^{*}=(xx^{*})^{*}=xx^{*}=x\star x$.
 
 **Remark.** The quadratic representation of the Jordan theory is the diagonal of the pair map, and the theorem says that it is self-adjoint for the canonical pairing whatever the involution and whatever the algebra. In the bilinear commutative case the operator is $U_{x}=\Theta_{x,x}=2T_{x,1}^{2}-T_{x^{2},1}$ of *The Ternary Product as an Operator*, and its self-adjointness is the classical one; the general theorem recovers it and gives it a norm.
 
@@ -80,11 +80,11 @@ $$
 
 The pair operator is therefore self-adjoint exactly when the derived product of the pair is Hermitian.
 
-**Proof.** By the adjoint theorem $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$, and the two are equal exactly when $y\star x=x\star y$, because the factorisation $\Theta_{p,q}=L_{p\star q}$ identifies the operator with its derived product and the left multiplication $L_{c}$ does not lose the element $c$, being injective with $L_{c}(1)=c$. Finally $y\star x=(xy^{*})^{*}=(x\star y)^{*}$, so the agreement is the Hermitian condition. $\square$
+**Proof.** By the adjoint theorem $\Theta_{x,y}^{\dagger}=\Theta_{y,x}$, and the two are equal exactly when $y\star x=x\star y$, because the factorisation $\Theta_{p,q}=L_{p\star q}$ identifies the operator with its derived product and the left multiplication $L_{c}$ does not lose the element $c$, being injective with $L_{c}(1)=c$. Finally $y\star x=(xy^{*})^{*}=(x\star y)^{*}$, so the agreement is the Hermitian condition.
 
 **Corollary (the Hermitian pairs).** Every diagonal operator is self-adjoint, and more generally $\Theta_{x,y}$ is self-adjoint for the pairs whose derived product is Hermitian, for instance $y=cx$ with $c$ a central Hermitian element, where $x\star y=xx^{*}c$ and $y\star x=cxx^{*}$ agree. The condition is not automatic: in $M_{n}(\mathbb{C})$ and $x=E_{11}$, $y=E_{21}$ the derived product is $x\star y=E_{11}E_{12}=E_{12}$, whose star is $E_{21}\neq E_{12}$, so $\Theta_{E_{11},E_{21}}^{\dagger}=\Theta_{E_{21},E_{11}}\neq\Theta_{E_{11},E_{21}}$, while the diagonal $\Theta_{E_{11},E_{11}}$ is self-adjoint.
 
-**Proof.** The diagonal clause is the theorem above; for $y=cx$ with central Hermitian $c$ the two derived products are $x\star(cx)=xx^{*}c$ and $(cx)\star x=cxx^{*}=xx^{*}c$, equal. The matrix witness is the computation displayed. $\square$
+**Proof.** The diagonal clause is the theorem above; for $y=cx$ with central Hermitian $c$ the two derived products are $x\star(cx)=xx^{*}c$ and $(cx)\star x=cxx^{*}=xx^{*}c$, equal. The matrix witness is the computation displayed.
 
 ## The Readings and the Reversal
 
@@ -98,7 +98,7 @@ $$
 
 the last two being read modulo the reduction of the pairing by a central functional, where they are the sandwich adjoint and the two-sided adjoint of Part I.
 
-**Proof.** The first identity is the adjoint theorem. The second and the third are the adjoints of the sandwich and of the two-sided operator; for the canonical pairing they exist only after the reduction of *Adjoints of Bounded Sesquilinear Operators*, §*The Reduction to a Scalar Form*, and there they are $S_{b,a}$ and $T_{p^{*},q^{*}}$. With the factorisation $\Theta_{x,y}=T_{x\star y,1}$ the third reproduces the first. $\square$
+**Proof.** The first identity is the adjoint theorem. The second and the third are the adjoints of the sandwich and of the two-sided operator; for the canonical pairing they exist only after the reduction of *Adjoints of Bounded Sesquilinear Operators*, §*The Reduction to a Scalar Form*, and there they are $S_{b,a}$ and $T_{p^{*},q^{*}}$. With the factorisation $\Theta_{x,y}=T_{x\star y,1}$ the third reproduces the first.
 
 **Corollary (no new adjoint).** The adjoint of the pair operator of $(x,y)$ is a pair operator again,
 
@@ -120,7 +120,7 @@ $$
 
 The triple is reversible: the pairing of $\{x,y,z\}$ with $w$ equals the pairing of $z$ with the triple $\{y,x,w\}$, and this is the statement that the pair operator of $(x,y)$ has the pair operator of the reversed pair $(y,x)$ as its adjoint.
 
-**Proof.** The identity is the adjoint theorem written with the ternary product: $h(xy^{*}z,w)=(xy^{*}z)^{*}w=z^{*}yx^{*}w=h(z,yx^{*}w)$. $\square$
+**Proof.** The identity is the adjoint theorem written with the ternary product: $h(xy^{*}z,w)=(xy^{*}z)^{*}w=z^{*}yx^{*}w=h(z,yx^{*}w)$.
 
 **Remark.** The reversibility is the symmetry that the $J^{*}$-triples carry: the operator of a pair has the operator of the reversed pair as its adjoint, so the family of the pair operators is closed under the adjoint, and the first slot of the triple may be exchanged with the outside element against the pairing at the cost of swapping the two middle parameters. Read on the derived product, the reversal is $y\star x=(x\star y)^{*}$, and it is this identity that the self-adjointness criterion turns into a condition on the pair. The topological statement adds the bound: both sides of the reversal are bounded trilinear forms of norm at most one, so the identity is an identity of bounded operators, and the normed $J^{*}$-triple of *The Bounded Ternary Product* carries it in its axioms.
 

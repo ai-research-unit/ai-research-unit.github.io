@@ -36,7 +36,7 @@ $$
 $$
 so it is a derivation for every derivation $D$ as soon as $\lambda$ is fixed by $\varsigma$. Hence $\operatorname{Der}(A)$ is a submodule of $\operatorname{End}_{R}(A)$, the $R$-module of the additive $R$-linear maps $A \to A$, over the fixed ring $R^{\varsigma} = \{\lambda \in R : \varsigma(\lambda) = \lambda\}$; it is an $R$-submodule in the bilinear case, and with a nontrivial $\varsigma$ it is one only when $(\lambda - \varsigma(\lambda))A\cdot D(A) = 0$ for every $\lambda$ and every derivation $D$.
 
-**Proof.** Additivity and $R$-linearity are stable under addition and scalar multiplication. For the sum, $(D+E)(xy) = D(x)y + xD(y) + E(x)y + xE(y) = (D+E)(x)y + x(D+E)(y)$ by the additivity of the product in each variable. For the multiple, $(\lambda D)(xy) = \lambda\bigl(D(x)y\bigr) + \lambda\bigl(xD(y)\bigr) = (\lambda D(x))y + \lambda\bigl(xD(y)\bigr)$, while the right hand side of the rule is $(\lambda D(x))y + x(\lambda D(y)) = (\lambda D(x))y + \varsigma(\lambda)\bigl(xD(y)\bigr)$, the second scalar rule being what moves $\lambda$ across $x$; the two differ by $(\lambda - \varsigma(\lambda))xD(y)$, which vanishes for all $x$ and $y$ exactly under the stated condition, and identically when $\varsigma(\lambda) = \lambda$. $\square$
+**Proof.** Additivity and $R$-linearity are stable under addition and scalar multiplication. For the sum, $(D+E)(xy) = D(x)y + xD(y) + E(x)y + xE(y) = (D+E)(x)y + x(D+E)(y)$ by the additivity of the product in each variable. For the multiple, $(\lambda D)(xy) = \lambda\bigl(D(x)y\bigr) + \lambda\bigl(xD(y)\bigr) = (\lambda D(x))y + \lambda\bigl(xD(y)\bigr)$, while the right hand side of the rule is $(\lambda D(x))y + x(\lambda D(y)) = (\lambda D(x))y + \varsigma(\lambda)\bigl(xD(y)\bigr)$, the second scalar rule being what moves $\lambda$ across $x$; the two differ by $(\lambda - \varsigma(\lambda))xD(y)$, which vanishes for all $x$ and $y$ exactly under the stated condition, and identically when $\varsigma(\lambda) = \lambda$.
 
 **Remark.** For a nonzero derivation and a $\lambda$ with $\varsigma(\lambda) \neq \lambda$ the multiple $\lambda D$ is generally not a derivation, because the product is $\varsigma$-semilinear in its second slot; the module structure is over $R^{\varsigma}$, which is all of $R$ only in the bilinear case. The centre is not subject to this: a central element commutes with the element $\lambda x$ itself, and that one extra commutation makes $\lambda z$ central for every scalar, as *Subalgebras and the Involution* records.
 
@@ -62,7 +62,7 @@ $$
 &= [D,E](x)\,y + x\,[D,E](y),
 \end{aligned}
 $$
-the four cross terms cancelling in pairs. Each application of the rule is to a product of two factors, so no associativity is used. $\square$
+the four cross terms cancelling in pairs. Each application of the rule is to a product of two factors, so no associativity is used.
 
 **Remark.** The bracket exists for every sesqualgebra, associative or not, because $\operatorname{End}_{R}(A)$ is associative under composition and the commutator is its Lie bracket; the derivations are a subspace closed under that bracket, which is all that a Lie subalgebra needs. This is the sesquilinear reading of the theorem of *Derivations of a Ring*.
 
@@ -88,7 +88,7 @@ $$
 $$
 Then $\Phi(D)$ is a derivation, $\Phi$ is an additive map of order two on $\operatorname{Der}(A)$, and $D$ is a $*$-derivation exactly when $\Phi(D) = D$ and a skew derivation exactly when $\Phi(D) = -D$.
 
-**Proof.** Additivity and $R$-linearity are clear, using $\varsigma^{2} = \mathrm{id}$ for the scalars. For the Leibniz rule, $\Phi(D)(xy) = D(y^{*}x^{*})^{*} = \bigl(D(y^{*})x^{*} + y^{*}D(x^{*})\bigr)^{*} = x\Phi(D)(y) + \Phi(D)(x)y$, the anti-multiplicativity and additivity of $*$ giving the last step. The order two is $\Phi(\Phi(D))(x) = \Phi(D)(x^{*})^{*} = D(x)^{**}$, which is $D(x)$. The two identifications are the definitions read back. $\square$
+**Proof.** Additivity and $R$-linearity are clear, using $\varsigma^{2} = \mathrm{id}$ for the scalars. For the Leibniz rule, $\Phi(D)(xy) = D(y^{*}x^{*})^{*} = \bigl(D(y^{*})x^{*} + y^{*}D(x^{*})\bigr)^{*} = x\Phi(D)(y) + \Phi(D)(x)y$, the anti-multiplicativity and additivity of $*$ giving the last step. The order two is $\Phi(\Phi(D))(x) = \Phi(D)(x^{*})^{*} = D(x)^{**}$, which is $D(x)$. The two identifications are the definitions read back.
 
 **Remark.** The map $\Phi$ is the conjugation of a derivation by the involution, and it is an involution of the space $\operatorname{Der}(A)$ rather than of $A$; it is the analogue of the map $D \mapsto \sigma D \sigma$ of *Star-Derivations and the Skew Derivations*, and it is an automorphism of the Lie algebra, as the next proposition shows.
 
@@ -96,7 +96,7 @@ Then $\Phi(D)$ is a derivation, $\Phi$ is an additive map of order two on $\oper
 
 **Proposition.** The map $\Phi$ is an automorphism of the Lie algebra $\operatorname{Der}(A)$, that is $\Phi([D,E]) = [\Phi(D),\Phi(E)]$; the $*$-derivations are its fixed part and the skew derivations its anti-fixed part.
 
-**Proof.** For the automorphism, $[\Phi(D),\Phi(E)](x) = \Phi(D)(\Phi(E)(x)) - \Phi(E)(\Phi(D)(x)) = D(E(x^{*}))^{*} - E(D(x^{*}))^{*} = [D,E](x^{*})^{*}$, which is $\Phi([D,E])(x)$; the last two statements are the previous proposition. $\square$
+**Proof.** For the automorphism, $[\Phi(D),\Phi(E)](x) = \Phi(D)(\Phi(E)(x)) - \Phi(E)(\Phi(D)(x)) = D(E(x^{*}))^{*} - E(D(x^{*}))^{*} = [D,E](x^{*})^{*}$, which is $\Phi([D,E])(x)$; the last two statements are the previous proposition.
 
 **Theorem (the decomposition).** Suppose $2$ is invertible in $R$. Then every derivation decomposes uniquely as
 $$
@@ -104,20 +104,20 @@ D = D_{+} + D_{-}, \qquad D_{+} = \tfrac{1}{2}\bigl(D + \Phi(D)\bigr), \quad D_{
 $$
 with $D_{+}$ a $*$-derivation and $D_{-}$ a skew derivation.
 
-**Proof.** The two parts are derivations by the closure under addition and under the scalars of $R^{\varsigma}$, the scalar $\tfrac{1}{2}$ lying in $R^{\varsigma}$ because $\varsigma(1) = 1$; then $\Phi(D_{+}) = \tfrac{1}{2}(\Phi(D) + \Phi^{2}(D)) = D_{+}$ and $\Phi(D_{-}) = \tfrac{1}{2}(\Phi(D) - \Phi^{2}(D)) = -D_{-}$, so they are a $*$-derivation and a skew derivation; they sum to $D$, and the decomposition is unique because a derivation that is both is zero when $2 \neq 0$. $\square$
+**Proof.** The two parts are derivations by the closure under addition and under the scalars of $R^{\varsigma}$, the scalar $\tfrac{1}{2}$ lying in $R^{\varsigma}$ because $\varsigma(1) = 1$; then $\Phi(D_{+}) = \tfrac{1}{2}(\Phi(D) + \Phi^{2}(D)) = D_{+}$ and $\Phi(D_{-}) = \tfrac{1}{2}(\Phi(D) - \Phi^{2}(D)) = -D_{-}$, so they are a $*$-derivation and a skew derivation; they sum to $D$, and the decomposition is unique because a derivation that is both is zero when $2 \neq 0$.
 
 **Corollary (the graded structure).** The $*$-derivations form a Lie subalgebra of $\operatorname{Der}(A)$, and the bracket is graded by the two classes:
 $$
 [\operatorname{Der}_{*}, \operatorname{Der}_{*}] \subseteq \operatorname{Der}_{*}, \qquad [\operatorname{Der}_{*}, \operatorname{Der}_{\mathrm{skew}}] \subseteq \operatorname{Der}_{\mathrm{skew}}, \qquad [\operatorname{Der}_{\mathrm{skew}}, \operatorname{Der}_{\mathrm{skew}}] \subseteq \operatorname{Der}_{*} .
 $$
 
-**Proof.** For derivations with $\Phi(D) = \varepsilon D$ and $\Phi(E) = \delta E$, with $\varepsilon, \delta \in \{1,-1\}$, the automorphism property gives $\Phi([D,E]) = [\Phi(D),\Phi(E)] = \varepsilon\delta\,[D,E]$. The three inclusions are the three sign combinations, and the first is the closure of the $*$-derivations. $\square$
+**Proof.** For derivations with $\Phi(D) = \varepsilon D$ and $\Phi(E) = \delta E$, with $\varepsilon, \delta \in \{1,-1\}$, the automorphism property gives $\Phi([D,E]) = [\Phi(D),\Phi(E)] = \varepsilon\delta\,[D,E]$. The three inclusions are the three sign combinations, and the first is the closure of the $*$-derivations.
 
 ### The Scalars on the Star-Derivations
 
 **Proposition.** The conjugate map satisfies $\Phi(\lambda D) = \varsigma(\lambda)\Phi(D)$; it is $\varsigma$-semilinear and $R^{\varsigma}$-linear. Consequently $\operatorname{Der}_{*}(A)$ and $\operatorname{Der}_{\mathrm{skew}}(A)$ are stable under the scalars of $R^{\varsigma}$, and under all the scalars of $R$ in the bilinear case only.
 
-**Proof.** $\Phi(\lambda D)(x) = (\lambda D)(x^{*})^{*} = \bigl(\lambda D(x^{*})\bigr)^{*} = \varsigma(\lambda)D(x^{*})^{*} = \varsigma(\lambda)\Phi(D)(x)$, so $\Phi$ is $\varsigma$-semilinear and is linear over the scalars it fixes. The fixed part and the anti-fixed part of an $R^{\varsigma}$-linear involution are $R^{\varsigma}$-stable, and $R^{\varsigma} = R$ exactly when $\varsigma = \mathrm{id}$. $\square$
+**Proof.** $\Phi(\lambda D)(x) = (\lambda D)(x^{*})^{*} = \bigl(\lambda D(x^{*})\bigr)^{*} = \varsigma(\lambda)D(x^{*})^{*} = \varsigma(\lambda)\Phi(D)(x)$, so $\Phi$ is $\varsigma$-semilinear and is linear over the scalars it fixes. The fixed part and the anti-fixed part of an $R^{\varsigma}$-linear involution are $R^{\varsigma}$-stable, and $R^{\varsigma} = R$ exactly when $\varsigma = \mathrm{id}$.
 
 **Remark.** The fixed ring appears here and in the scalar closure of the derivations above, for the same reason, the $\varsigma$-semilinearity of the product in its second slot; it does not govern the centre, which is closed under every scalar. A scalar with $\varsigma(\lambda) \neq \lambda$ sends a $*$-derivation to $\varsigma(\lambda)D$, which is not a $*$-derivation unless it is not a derivation at all, since $\varsigma(\lambda)D = \lambda D$ would force $(\lambda - \varsigma(\lambda))A\cdot D(A) = 0$ by the previous section.
 
@@ -131,7 +131,7 @@ D(x \star y) = D(x) \star y + x \star D(y) \qquad \text{for all } x, y,
 $$
 if and only if $D$ is a $*$-derivation.
 
-**Proof.** By the ordinary rule, $D(x \star y) = D(xy^{*}) = D(x)y^{*} + xD(y^{*})$, while $D(x) \star y + x \star D(y) = D(x)y^{*} + xD(y)^{*}$. The two agree for all $x$ and $y$ exactly when $xD(y^{*}) = xD(y)^{*}$ for all $x$ and $y$, which by the unit is $D(y^{*}) = D(y)^{*}$ for all $y$. $\square$
+**Proof.** By the ordinary rule, $D(x \star y) = D(xy^{*}) = D(x)y^{*} + xD(y^{*})$, while $D(x) \star y + x \star D(y) = D(x)y^{*} + xD(y)^{*}$. The two agree for all $x$ and $y$ exactly when $xD(y^{*}) = xD(y)^{*}$ for all $x$ and $y$, which by the unit is $D(y^{*}) = D(y)^{*}$ for all $y$.
 
 **Remark.** The Leibniz rule therefore does not transfer from the algebra product to the derived operation: an ordinary derivation is a derivation of $x \star y = xy^{*}$ only when it is also a $*$-derivation, and the general derivation fails the $\star$-rule on the twist produced by the involution.
 
@@ -143,7 +143,7 @@ D(x \star y) = D(x) \star y + x \star \Phi(D)(y) \qquad \text{for all } x, y
 $$
 if and only if $D$ satisfies the ordinary Leibniz rule $D(xy) = D(x)y + xD(y)$.
 
-**Proof.** Since $x \star \Phi(D)(y) = x\,\Phi(D)(y)^{*} = xD(y^{*})$, the twisted rule reads $D(xy^{*}) = D(x)y^{*} + xD(y^{*})$. As $y^{*}$ runs over all of $A$, this is the ordinary rule read at the pair $(x, y^{*})$. $\square$
+**Proof.** Since $x \star \Phi(D)(y) = x\,\Phi(D)(y)^{*} = xD(y^{*})$, the twisted rule reads $D(xy^{*}) = D(x)y^{*} + xD(y^{*})$. As $y^{*}$ runs over all of $A$, this is the ordinary rule read at the pair $(x, y^{*})$.
 
 **Remark.** The two propositions together say that, among the derivations of the algebra, exactly the $*$-derivations satisfy the plain $\star$-rule, while every derivation satisfies the twisted one, and that the twist $\Phi$ is trivial exactly on the $*$-derivations. The failure of the plain rule and the twisted rule that restores it are the sesquilinear form of the passage, in *Star-Derivations and the Skew Derivations*, from a derivation to its conjugate.
 
@@ -170,7 +170,7 @@ where $[u,v,w] = (uv)w - u(vw)$. In particular, for an associative $A$, the map 
 $$
 a(xy) - (xy)a - (ax)y + (xa)y - x(ay) + x(ya) = -[a,x,y] + [x,a,y] - [x,y,a],
 $$
-which vanishes for all $x$ and $y$ exactly under the stated identity; every associator vanishes when the product is associative. $\square$
+which vanishes for all $x$ and $y$ exactly under the stated identity; every associator vanishes when the product is associative.
 
 **Remark.** Associativity is sufficient and not necessary: the identity of the proposition can hold with a nonzero associator, because it is a cyclic combination of three associators rather than their separate vanishing. The structural theorems below assume associativity, which is the case that carries the inner structure.
 
@@ -184,7 +184,7 @@ $$
 $$
 and the assignment $a \mapsto \mathrm{ad}_a$ is a Lie algebra homomorphism from $\mathfrak{n}$, with the commutator, onto the inner derivations, with kernel $\mathfrak{n} \cap Z(A)$. In the bilinear case $\mathfrak{n} = A$ and the kernel is the centre, so the inner derivations are isomorphic to $A/Z(A)$.
 
-**Proof.** For the bracket, $\mathrm{ad}_a \mathrm{ad}_b(x) - \mathrm{ad}_b \mathrm{ad}_a(x) = a(bx - xb) - (bx - xb)a - b(ax - xa) + (ax - xa)b = (ab - ba)x - x(ab - ba) = \mathrm{ad}_{ab-ba}(x)$, associativity being what expands the four general products; and $ab - ba$ lies in $\mathfrak{n}$ because $(\varsigma(\lambda) - \lambda)(ab - ba)A$ is contained in $(\varsigma(\lambda) - \lambda)aA + (\varsigma(\lambda) - \lambda)bA = 0$. The kernel is the set of the $a$ that commute with every element, which is $\mathfrak{n} \cap Z(A)$, and the centre is the kernel in the bilinear case because then $\mathfrak{n} = A$. $\square$
+**Proof.** For the bracket, $\mathrm{ad}_a \mathrm{ad}_b(x) - \mathrm{ad}_b \mathrm{ad}_a(x) = a(bx - xb) - (bx - xb)a - b(ax - xa) + (ax - xa)b = (ab - ba)x - x(ab - ba) = \mathrm{ad}_{ab-ba}(x)$, associativity being what expands the four general products; and $ab - ba$ lies in $\mathfrak{n}$ because $(\varsigma(\lambda) - \lambda)(ab - ba)A$ is contained in $(\varsigma(\lambda) - \lambda)aA + (\varsigma(\lambda) - \lambda)bA = 0$. The kernel is the set of the $a$ that commute with every element, which is $\mathfrak{n} \cap Z(A)$, and the centre is the kernel in the bilinear case because then $\mathfrak{n} = A$.
 
 **Remark.** The theorem is the sesquilinear form of the corresponding statement of *Derivations of a Ring*: the inner derivations are the image of the commutator bracket of the algebra, the centre is exactly what the image forgets, and the quotient $A/Z(A)$ is a Lie algebra under the commutator.
 
@@ -192,11 +192,11 @@ and the assignment $a \mapsto \mathrm{ad}_a$ is a Lie algebra homomorphism from 
 
 **Proposition.** For $a \in A$ the commutator map satisfies $\mathrm{ad}_a(x^{*}) = \mathrm{ad}_a(x)^{*}$ for all $x$ exactly when $a + a^{*}$ is central, and it satisfies $\mathrm{ad}_a(x^{*}) = -\mathrm{ad}_a(x)^{*}$ for all $x$ exactly when $a - a^{*}$ is central.
 
-**Proof.** $\mathrm{ad}_a(x^{*}) = ax^{*} - x^{*}a$, while $\mathrm{ad}_a(x)^{*} = (ax - xa)^{*} = x^{*}a^{*} - a^{*}x^{*}$. The first equality holds for all $x$ exactly when $ax^{*} + a^{*}x^{*} = x^{*}a + x^{*}a^{*}$, that is $(a + a^{*})x^{*} = x^{*}(a + a^{*})$; as $x^{*}$ runs over $A$ this is the centrality of $a + a^{*}$. The second is the same computation with the signs of the $a^{*}$ terms reversed, giving the centrality of $a - a^{*}$. $\square$
+**Proof.** $\mathrm{ad}_a(x^{*}) = ax^{*} - x^{*}a$, while $\mathrm{ad}_a(x)^{*} = (ax - xa)^{*} = x^{*}a^{*} - a^{*}x^{*}$. The first equality holds for all $x$ exactly when $ax^{*} + a^{*}x^{*} = x^{*}a + x^{*}a^{*}$, that is $(a + a^{*})x^{*} = x^{*}(a + a^{*})$; as $x^{*}$ runs over $A$ this is the centrality of $a + a^{*}$. The second is the same computation with the signs of the $a^{*}$ terms reversed, giving the centrality of $a - a^{*}$.
 
 **Corollary (the skew-Hermitian generators).** Suppose $A$ associative, the bilinear case, and $2$ invertible in $R$, so that every $\mathrm{ad}_a$ is a derivation. A Hermitian $a$ gives a skew derivation and a skew-Hermitian $a$ gives a $*$-derivation; the skew-Hermitian elements $a^{*} = -a$ are closed under the commutator, and the map $a \mapsto \mathrm{ad}_a$ carries them onto the inner $*$-derivations with kernel the central skew-Hermitian elements. By the transfer proposition these maps are derivations of the derived operation $x \star y = xy^{*}$ as well.
 
-**Proof.** A Hermitian $a$ has $a - a^{*} = 0$ central and a skew-Hermitian $a$ has $a + a^{*} = 0$ central, so the proposition gives the two classes. For $a$, $b$ skew-Hermitian, $(ab - ba)^{*} = b^{*}a^{*} - a^{*}b^{*} = ba - ab = -(ab - ba)$, so the commutator is skew-Hermitian again and the set is a Lie algebra; its image is a Lie subalgebra of $\operatorname{Der}_{*}(A)$ by the bracket theorem, and the kernel is the intersection with the centre. It is onto because an $a$ with $a + a^{*} = z$ central is carried to $\mathrm{ad}_a = \mathrm{ad}_{a - z/2}$ and $a - z/2$ is skew-Hermitian when $2$ is invertible. The last statement is the transfer proposition read on the $*$-derivations of this form. $\square$
+**Proof.** A Hermitian $a$ has $a - a^{*} = 0$ central and a skew-Hermitian $a$ has $a + a^{*} = 0$ central, so the proposition gives the two classes. For $a$, $b$ skew-Hermitian, $(ab - ba)^{*} = b^{*}a^{*} - a^{*}b^{*} = ba - ab = -(ab - ba)$, so the commutator is skew-Hermitian again and the set is a Lie algebra; its image is a Lie subalgebra of $\operatorname{Der}_{*}(A)$ by the bracket theorem, and the kernel is the intersection with the centre. It is onto because an $a$ with $a + a^{*} = z$ central is carried to $\mathrm{ad}_a = \mathrm{ad}_{a - z/2}$ and $a - z/2$ is skew-Hermitian when $2$ is invertible. The last statement is the transfer proposition read on the $*$-derivations of this form.
 
 **Remark.** The corollary is the infinitesimal form of the unitary group of *Units and the Unitary Elements*: the skew-Hermitian elements are the elements whose exponential is unitary, the map $a \mapsto \mathrm{ad}_a$ is their action on the algebra, and the bracket they carry is the subject of *The Unitary Lie Algebra*. In the matrix case the skew-Hermitian elements are the skew-adjoint matrices and their bracket is the Lie algebra of the unitary group.
 
@@ -206,7 +206,7 @@ and the assignment $a \mapsto \mathrm{ad}_a$ is a Lie algebra homomorphism from 
 
 **Proposition.** Let $A = M_{n}(\mathbb{R})$ over the datum $(\mathbb{R},\mathrm{id})$ with the transpose as the involution, and $n \geq 2$. Then every derivation of $A$ is inner (standard), the derivations are $\operatorname{ad}_a$ with $a$ an arbitrary matrix and $\operatorname{Der}(A)$ is isomorphic to the quotient of $A$ by the scalar matrices; a derivation is a $*$-derivation exactly when it is $\operatorname{ad}_a$ with $a + a^{\mathsf{T}}$ a scalar matrix, and a skew derivation exactly when $a - a^{\mathsf{T}}$ is a scalar matrix. So the symmetric matrices generate the skew derivations and the skew-symmetric matrices generate the $*$-derivations.
 
-**Proof.** That every derivation of a full matrix algebra over a field is inner is standard, and it identifies $\operatorname{Der}(A)$ with the image of $a \mapsto \mathrm{ad}_a$, whose kernel is the centre, the scalar matrices, by the kernel theorem. The two class statements are the proposition on the commutator map, and the symmetric matrices have $a - a^{\mathsf{T}} = 0$ while the skew-symmetric ones have $a + a^{\mathsf{T}} = 0$. $\square$
+**Proof.** That every derivation of a full matrix algebra over a field is inner is standard, and it identifies $\operatorname{Der}(A)$ with the image of $a \mapsto \mathrm{ad}_a$, whose kernel is the centre, the scalar matrices, by the kernel theorem. The two class statements are the proposition on the commutator map, and the symmetric matrices have $a - a^{\mathsf{T}} = 0$ while the skew-symmetric ones have $a + a^{\mathsf{T}} = 0$.
 
 **Remark.** The skew-symmetric matrices are closed under the commutator, and the map to the $*$-derivations has kernel the central skew-symmetric matrices, which are zero for $n \geq 2$; so the $*$-derivations of $M_{n}(\mathbb{R})$ with the transpose are the skew-symmetric matrices themselves, the orthogonal Lie algebra of the transpose.
 
@@ -214,7 +214,7 @@ and the assignment $a \mapsto \mathrm{ad}_a$ is a Lie algebra homomorphism from 
 
 **Proposition.** Let $A = \mathbb{H}$ over the datum $(\mathbb{R},\mathrm{id})$ with the quaternion conjugation. Then every derivation of $A$ is inner (standard), $\operatorname{Der}(A)$ is isomorphic to the quotient of $\mathbb{H}$ by the real centre, and the skew-Hermitian elements are the pure imaginary quaternions, which are closed under the commutator and map onto the $*$-derivations with kernel zero.
 
-**Proof.** Every derivation of $\mathbb{H}$ is inner because $\mathbb{H}$ is a central division algebra over $\mathbb{R}$ (standard); the kernel of $a \mapsto \mathrm{ad}_a$ is the centre $\mathbb{R}$, the real multiples of the unit. The conjugate of a pure imaginary quaternion is its negative, so the skew-Hermitian elements are exactly the pure imaginary ones, they are closed under the commutator because a commutator of two of them is again pure imaginary, and no nonzero pure imaginary quaternion is central. $\square$
+**Proof.** Every derivation of $\mathbb{H}$ is inner because $\mathbb{H}$ is a central division algebra over $\mathbb{R}$ (standard); the kernel of $a \mapsto \mathrm{ad}_a$ is the centre $\mathbb{R}$, the real multiples of the unit. The conjugate of a pure imaginary quaternion is its negative, so the skew-Hermitian elements are exactly the pure imaginary ones, they are closed under the commutator because a commutator of two of them is again pure imaginary, and no nonzero pure imaginary quaternion is central.
 
 **Remark.** The pure imaginary quaternions with the commutator are the Lie algebra of the unit quaternions, and the $*$-derivations of $\mathbb{H}$ are a copy of it; this is the compact case of the unitary picture of the previous section.
 
@@ -222,7 +222,7 @@ and the assignment $a \mapsto \mathrm{ad}_a$ is a Lie algebra homomorphism from 
 
 **Proposition.** Let $A = \mathbb{C}$ over the datum $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation and the product $x \star y = x\bar y$. Then $A$ has exactly one derivation, the zero map.
 
-**Proof.** The unit $1$ is a right unit of the product, since $x \star 1 = x\bar 1 = x$. A derivation $D$ satisfies $D(x) = D(x \star 1) = D(x) \star 1 + x \star D(1) = D(x) + x \star D(1)$, so $x \star D(1) = 0$ for every $x$, which forces $D(1) = 0$. An $R$-linear $D$ is determined by $D(1)$, so $D = 0$. $\square$
+**Proof.** The unit $1$ is a right unit of the product, since $x \star 1 = x\bar 1 = x$. A derivation $D$ satisfies $D(x) = D(x \star 1) = D(x) \star 1 + x \star D(1) = D(x) + x \star D(1)$, so $x \star D(1) = 0$ for every $x$, which forces $D(1) = 0$. An $R$-linear $D$ is determined by $D(1)$, so $D = 0$.
 
 **Remark.** The triviality is a feature of the field and not of the twisted datum: the proof uses that an $R$-linear $D$ is determined by the value $D(1)$, and that fails as soon as the algebra is larger. The next subsection exhibits the nonzero derivations of the twisted matrix algebra.
 
@@ -238,7 +238,7 @@ with the product on the right the ordinary one, is a nonzero derivation of the $
 $$
 (\lambda D)(x \star y) - \bigl((\lambda D)(x) \star y + x \star (\lambda D)(y)\bigr) = (\lambda - \varsigma(\lambda))\,x \star D(y),
 $$
-which is nonzero for a $\lambda$ with $\varsigma(\lambda) \neq \lambda$, because $D \neq 0$ and $z \star z = zz^{\dagger}$ vanishes only at $z = 0$. $\square$
+which is nonzero for a $\lambda$ with $\varsigma(\lambda) \neq \lambda$, because $D \neq 0$ and $z \star z = zz^{\dagger}$ vanishes only at $z = 0$.
 
 **Remark.** This is the nonzero twisted example that the field does not give: the derivations do not collapse, they form a module over the reals only, and the scalar defect is read on an explicit element. The maps $D$ are inner for the ordinary product but not of the inner form $x \mapsto b \star x - x \star b$ of the $\star$-product, which is $R$-linear only for $b = 0$. The centre of the twisted algebra and the annihilators that its zero divisors carry are the subject of *The Centre and the Zero Divisors of a Sesqualgebra*.
 

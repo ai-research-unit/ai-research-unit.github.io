@@ -97,7 +97,7 @@ $$
 by Fubini, and the identity extends to $L^2$ by the density of the Schwartz class and the boundedness of the
 two operators. The inverse transform is the conjugate transform by the inversion theorem,
 $\overline{\mathcal F}\mathcal F=\mathcal F\overline{\mathcal F}=\mathrm{id}$ on the Schwartz class, extended
-by continuity; hence $\mathcal F^\dagger=\overline{\mathcal F}=\mathcal F^{-1}$. $\blacksquare$
+by continuity; hence $\mathcal F^\dagger=\overline{\mathcal F}=\mathcal F^{-1}$.
 
 ### The Inversion Formula as Unitarity
 
@@ -119,7 +119,7 @@ with the left side the kernel of the adjoint and the right side the kernel of th
 **Proof.** Unitarity is Plancherel's theorem of *The Fourier Operator*, the previous group; the adjoint is
 the inverse by the theorem above; the order-four relation gives $\mathcal F^{-1}=\mathcal F^3$; the pointwise
 form of $\mathcal F^\dagger\mathcal F=\mathrm{id}$ is the inversion theorem, and the kernel computation is
-the definition of the conjugate transpose kernel of the previous articles. $\blacksquare$
+the definition of the conjugate transpose kernel of the previous articles.
 
 **Corollary (the Plancherel identity as adjointness).** For $f,g\in L^2$,
 $$
@@ -131,7 +131,7 @@ $$
 $$
 
 **Proof.** The first identity is $\mathcal F^\dagger=\mathcal F^{-1}$ written as a pairing identity; replacing
-$g$ by $\mathcal Fg$ in it and using $\mathcal F^{-1}\mathcal F=\mathrm{id}$ gives the second. $\blacksquare$
+$g$ by $\mathcal Fg$ in it and using $\mathcal F^{-1}\mathcal F=\mathrm{id}$ gives the second.
 
 ## Unitarity up to a Constant
 
@@ -159,7 +159,7 @@ unitary.
 $\xi\mapsto2\pi\xi$, so its adjoint carries the scaling factor $(2\pi)^n$; the isometry constant is computed
 from $\lVert\mathcal F_1f\rVert_2^2=\int\lvert f(x)e^{-ix\xi}\rvert^2$-type Plancherel identity for the
 angular convention, and the normalisation by $(2\pi)^{-n/2}$ cancels it. The ordinary-frequency statement is
-the previous section. $\blacksquare$
+the previous section.
 
 ### The Constant Fixed
 
@@ -169,7 +169,7 @@ $\lvert c\rvert=(2\pi)^{-n/2}$.
 
 **Proof.** $(c\mathcal F_1)^\dagger(c\mathcal F_1)=\lvert c\rvert^2\,\mathcal F_1^\dagger\mathcal F_1
 =\lvert c\rvert^2(2\pi)^n\mathrm{id}$, so unitarity is $\lvert c\rvert^2=(2\pi)^{-n}$; the phase is free. The
-ordinary-frequency convention is the case $c=(2\pi)^{-n/2}$ of the angular one. $\blacksquare$
+ordinary-frequency convention is the case $c=(2\pi)^{-n/2}$ of the angular one.
 
 **Remark (the classical normalisation).** The two classical normalisations are the one of the present corpus,
 $c=1$ with the $2\pi$-frequency, and the symmetric one
@@ -198,7 +198,7 @@ and the reflection is self-adjoint and unitary, $R^\dagger=R=R^{-1}$.
 is the conjugate symmetry in operator form, $\overline{\mathcal F}f=\overline{\mathcal F\bar f}$ computed from
 the kernel $e^{2\pi ix\xi}=e^{-2\pi ix(-\xi)}$, that is the transform of the reflection; the reflection is its
 own inverse and preserves the pairing. Combining with $\mathcal F^{-1}=\overline{\mathcal F}$ gives
-$\mathcal F^\dagger=\mathcal F R$. $\blacksquare$
+$\mathcal F^\dagger=\mathcal F R$.
 
 ### The Transpose Coincides with the Transform
 
@@ -214,7 +214,7 @@ exactly the conjugation.
 is $K(\xi,x)=K(x,\xi)$ and the transpose of $\mathcal F$ is $\mathcal F$; the relation between the adjoint and
 the transpose is that of *The Adjoint of an Integral Operator*, $K^*=\overline{K^{\mathrm t}}$, and it gives
 $\mathcal F^\dagger=\overline{\mathcal F}$. A distributional argument extends the identity beyond the
-convergent integrals. $\blacksquare$
+convergent integrals.
 
 **Example (the multiplication and convolution sides).** The transform conjugates convolution to
 multiplication, $\mathcal F(f*g)=\mathcal Ff\cdot\mathcal Fg$, and the involution $f^*(x)=\overline{f(-x)}$ to

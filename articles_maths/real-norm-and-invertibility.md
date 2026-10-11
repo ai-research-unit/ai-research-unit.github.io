@@ -11,7 +11,7 @@ $$
 N(a) = a\,a = a^2 .
 $$
 
-The norm of a biquaternion is written $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, a complex-valued form, in *Biquaternion Norm and Invertibility*; here the same symbol is used for the real norm $N(a) = a^2$, and the differences between the two are stated wherever they matter.
+The norm of a biquaternion is written $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, a complex-valued form, in *Norm and Invertibility in the General Plain Algebra*; here the same symbol is used for the real norm $N(a) = a^2$, and the differences between the two are stated wherever they matter.
 
 ## The Norm
 

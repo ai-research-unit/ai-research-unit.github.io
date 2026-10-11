@@ -22,7 +22,7 @@ The base is a field $K$ of characteristic not two; the Lie algebra is $\mathrm{G
 
 **Proposition.** A pair $(\mathrm{G},\mathrm{K})$ is symmetric if and only if there is a direct decomposition $\mathrm{G}=\mathrm{K}\oplus\mathrm{P}$ with the three bracket relations displayed above; the involution is then $+1$ on $\mathrm{K}$ and $-1$ on $\mathrm{P}$, and it is unique for the decomposition.
 
-**Proof.** An involution gives the decomposition by its eigenspaces and the bracket relations by applying $\theta$ to the bracket; conversely a decomposition with the bracket relations defines the map which is $+1$ on $\mathrm{K}$ and $-1$ on $\mathrm{P}$, and the bracket relations are exactly the statement that this map is an automorphism of order two. $\square$
+**Proof.** An involution gives the decomposition by its eigenspaces and the bracket relations by applying $\theta$ to the bracket; conversely a decomposition with the bracket relations defines the map which is $+1$ on $\mathrm{K}$ and $-1$ on $\mathrm{P}$, and the bracket relations are exactly the statement that this map is an automorphism of order two.
 
 **Corollary.** A symmetric pair is the same thing as a Lie algebra with an involution, that is a Lie algebra with a $\mathbb{Z}/2$-grading whose grade involution is an automorphism of the algebra; the pair is the graded object of *Graded Lie Algebras with an Involution* in the $\mathbb{Z}/2$ case.
 
@@ -43,29 +43,29 @@ $$
 
 the second identity being the projection to $\mathrm{P}$ of the Jacobi identity of $\mathrm{G}$.
 
-**Proof.** The antisymmetry is that of the bracket; the Jacobi identity $[[x,y],z]+[[y,z],x]+[[z,x],y]=0$ has $[x,y],[y,z],[z,x]\in\mathrm{K}$, and since $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$ the three summands lie in $\mathrm{P}$ and their sum is zero. $\square$
+**Proof.** The antisymmetry is that of the bracket; the Jacobi identity $[[x,y],z]+[[y,z],x]+[[z,x],y]=0$ has $[x,y],[y,z],[z,x]\in\mathrm{K}$, and since $[\mathrm{K},\mathrm{P}]\subseteq\mathrm{P}$ the three summands lie in $\mathrm{P}$ and their sum is zero.
 
 **Corollary.** The pair $(\mathrm{K},\mathrm{P},\mathrm{R})$ is an **infinitesimal symmetric space**: a Lie algebra $\mathrm{K}$ acting on $\mathrm{P}$ and a $\mathrm{K}$-invariant curvature satisfying the Bianchi identity, obtained from the bracket; the symmetry of the space is the involution, acting as $-1$ on the tangent space $\mathrm{P}$.
 
 **Proposition.** The $\mathrm{K}$-module $\mathrm{P}$ is the tangent module of the infinitesimal symmetric space, and the decomposition is a "symmetric" one in the sense that the involution reverses the tangent directions while preserving $\mathrm{K}$; the group analogue, where $(\mathrm{G},\mathrm{K})$ is a pair of Lie groups, gives the symmetric space $\mathrm{G}/\mathrm{K}$, whose theory belongs to Part II and is named only.
 
-**Proof.** The identification $\mathrm{G}/\mathrm{K}\cong\mathrm{P}$ is the linear isomorphism of the previous article, and the action of $\mathrm{K}$ is the adjoint one; the statement about the involution is the definitions. $\square$
+**Proof.** The identification $\mathrm{G}/\mathrm{K}\cong\mathrm{P}$ is the linear isomorphism of the previous article, and the action of $\mathrm{K}$ is the adjoint one; the statement about the involution is the definitions.
 
 ## Classification
 
 **Proposition.** The symmetric pairs of a fixed Lie algebra $\mathrm{G}$ correspond to the involutions of $\mathrm{G}$ up to conjugation by automorphisms: two pairs $(\mathrm{G},\mathrm{K})$ and $(\mathrm{G},\mathrm{K}')$ are isomorphic when the involutions are conjugate, and then $\mathrm{K}'$ is the image of $\mathrm{K}$.
 
-**Proof.** An isomorphism of the pairs carries the involution to the involution, hence conjugates them; conversely a conjugating automorphism carries the fixed subalgebra to the fixed subalgebra by uniqueness of the involution for the decomposition. $\square$
+**Proof.** An isomorphism of the pairs carries the involution to the involution, hence conjugates them; conversely a conjugating automorphism carries the fixed subalgebra to the fixed subalgebra by uniqueness of the involution for the decomposition.
 
 **Theorem (classification).** Let $\mathrm{G}$ be a complex semisimple Lie algebra. The conjugacy classes of involutions of $\mathrm{G}$ are classified by the **Satake** and **Vogan diagrams**, which record the action of the involution on a system of simple roots of a stable Cartan subalgebra, equivalently by the real forms of $\mathrm{G}$; the pair is described by the **rank** of the symmetric pair, the number of black nodes plus the number of pairs of white nodes joined by an arrow.
 
-**Proof.** This is the standard classification of involutions of a complex semisimple Lie algebra, via the restriction to a stable Cartan subalgebra, the induced action on the roots and the associated diagram; it is the same classification as that of the real forms of *Real Forms of a Complex Lie Algebra*, and it is quoted from the theory of *Root Systems and Classification*. $\square$
+**Proof.** This is the standard classification of involutions of a complex semisimple Lie algebra, via the restriction to a stable Cartan subalgebra, the induced action on the roots and the associated diagram; it is the same classification as that of the real forms of *Real Forms of a Complex Lie Algebra*, and it is quoted from the theory of *Root Systems and Classification*.
 
 **Corollary.** The symmetric pairs of the complex semisimple $\mathrm{G}$ are in bijection with the real forms of $\mathrm{G}$ and with the diagrams; the compact real form corresponds to the involution with all nodes black and the split real form to the involution with all nodes white.
 
 **Proposition (index).** The **index** of a symmetric pair, the difference $\dim\mathrm{K}-\dim\mathrm{P}$ up to the fixed part of a Cartan subalgebra, is determined by the diagram, and the pair is **irreducible** when the diagram is connected; the index and the rank are the two invariants read off the diagram.
 
-**Proof.** The dimension of $\mathrm{K}$ is the number of roots fixed by the involution plus the dimension of the fixed part of the Cartan subalgebra, and the dimension of $\mathrm{P}$ is the number of roots moved; both are read off the diagram operations. $\square$
+**Proof.** The dimension of $\mathrm{K}$ is the number of roots fixed by the involution plus the dimension of the fixed part of the Cartan subalgebra, and the dimension of $\mathrm{P}$ is the number of roots moved; both are read off the diagram operations.
 
 ## Worked Cases
 
@@ -73,7 +73,6 @@ For $\mathrm{G}=\mathrm{sl}(2,\mathbb{C})$ the involutions correspond to the two
 
 For $\mathrm{G}=\mathrm{sl}(3,\mathbb{C})$ the three involutions correspond to $\mathrm{su}(3)$, $\mathrm{sl}(3,\mathbb{R})$ and $\mathrm{su}(2,1)$; the pairs have $\dim\mathrm{K}=8,\dim\mathrm{P}=0$; $\dim\mathrm{K}=5,\dim\mathrm{P}=3$; and $\dim\mathrm{K}=4,\dim\mathrm{P}=4$ respectively, and the diagrams are those of *Real Forms of a Complex Lie Algebra*.
 
-**Verified.** The bracket relations of a symmetric pair were checked on $\mathrm{sl}(2,\mathbb{R})$ with the involution $x\mapsto-x^{t}$, the curvature identity was verified on the basis, and the dimensions were computed for the two $A_1$ pairs and the three $A_2$ pairs.
 
 ## Summary
 

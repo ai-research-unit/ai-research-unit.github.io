@@ -208,7 +208,6 @@ $$
 
 and the other $|S|-1$ idempotents $e_\chi$ are the projectors onto the syndrome subspaces. The syndrome measurement is thus the measurement of the character $\chi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\chi \mathrm{Tr}(e_\chi)$, with each $\mathrm{Tr}(e_\chi) = 2^k$.
 
-Verified for the two codes: the images of the four group-algebra idempotents of the three-qubit code's stabilizer group sum to the identity on the $8$-dimensional module, and likewise for the sixteen idempotents of the five-qubit code on the $32$-dimensional module; in each case the trivial idempotent has trace $2$ and is the code projector, and the nontrivial idempotents support the error subspaces.
 
 ## What the Framework Adds and What It Does Not
 

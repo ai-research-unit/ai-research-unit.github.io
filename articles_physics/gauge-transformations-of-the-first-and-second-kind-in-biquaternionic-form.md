@@ -26,7 +26,7 @@ $$
 e_ie_j = -\delta_{ij}e_0 + \epsilon_{ijk}e_k ,
 $$
 
-the standard Hamilton rule. The quaternion conjugate and the complex conjugate are $\bar Q = Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$ and $Q^* = Q_0^*e_0+\dots+Q_3^*e_3$, and the norm is $N(Q)=\bar QQ=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, which may vanish, so the algebra is not a division algebra. These are the corpus's objects; the algebra and its conjugations are fixed in *Conventions in the Biquaternion Universe*, and the two conjugate pairs $\bar\cdot$ and $\bar{\cdot}$ with their fixed subspaces are fixed in *The Clifford Algebra Representation*.
+the standard Hamilton rule. The quaternion conjugate and the complex conjugate are $\bar Q = Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$ and $Q^* = Q_0^*e_0+\dots+Q_3^*e_3$, and the norm is $N(Q)=\bar QQ=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, which may vanish, so the algebra is not a division algebra. These are the corpus's objects; the algebra and its conjugations are fixed in *Conventions in the Biquaternion Universe*, and the two conjugate pairs $\bar\cdot$ and $\bar{\cdot}$ with their fixed subspaces are fixed in *The Realification of the General Plain Algebra*.
 
 ### Maxwell's equations and the biquaternionic form
 
@@ -108,7 +108,7 @@ I_1 \mapsto I_1\cos2\alpha - 2c\,I_2\sin2\alpha ,
 2c\,I_2 \mapsto 2c\,I_2\cos2\alpha + I_1\sin2\alpha ,
 $$
 
-and $\mathbf{E}^2+c^2\mathbf{B}^2$ is unchanged, as it must be since it is the length of $\mathbf{V}$. The identities were checked on $100$ random field pairs over a range of angles; the largest deviation was $8.9\times10^{-16}$.
+and $\mathbf{E}^2+c^2\mathbf{B}^2$ is unchanged, as it must be since it is the length of $\mathbf{V}$.
 
 **A remark on $(1+\alpha)$.**
 The transformation is written $(1+\alpha)e_0F$, which to first order is $e^{\alpha}F$, and the paper identifies this with $e^{i\alpha}F$. The two agree only when $\alpha$ is purely imaginary. A real infinitesimal $\alpha$ produces the common scaling $\mathbf{E}\to(1+\alpha)\mathbf{E}$, $\mathbf{B}\to(1+\alpha)\mathbf{B}$, which is also a symmetry of the source-free equations — the equations are linear and homogeneous — but which is a dilation rather than a duality rotation. The corpus's duality rotation requires the parameter that multiplies $F$ to be a phase, so the imaginary reading is the one that makes the paper's own identification correct.

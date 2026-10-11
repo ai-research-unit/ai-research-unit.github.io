@@ -77,7 +77,6 @@ K(x,x)+\lvert t\rvert^2K(y,y)+\bar tK(x,y)+tK(y,x)\geq0
 $$
 for all $t$. The left side is a quadratic polynomial in $t,\bar t$ that is nonnegative for all $t$; varying
 the argument of $t$ forces the two linear terms to be conjugates in the sense $K(y,x)=\overline{K(x,y)}$.
-$\blacksquare$
 
 **Theorem (Cauchy–Schwarz for a positive definite kernel).** For a positive definite kernel $K$,
 $$
@@ -88,7 +87,7 @@ $$
 $K$ with coefficients $\lambda,1$ and points $x,y$ gives
 $\lvert\lambda\rvert^2K(x,x)+\bar\lambda K(x,y)+\lambda K(y,x)+K(y,y)\geq0$ for all $\lambda$; the
 discriminant of this quadratic in $\lambda$ is $\lvert K(x,y)\rvert^2-K(x,x)K(y,y)$, and the
-nonnegativity forces it to be at most zero. $\blacksquare$
+nonnegativity forces it to be at most zero.
 
 **Remark.** The Hermitian and positive definite conditions are the kernel form of the operator conditions of
 *Hermitian Kernels and the Integral Operator*, later in this group: a kernel is the Hermitian and positive
@@ -118,7 +117,6 @@ If $\varphi(0)=0$ then $\varphi=0$; if $\varphi$ is not identically zero then $\
 $K(x,y)=\varphi(x-y)$ established above, which gives
 $\varphi(x-y)=\overline{\varphi(y-x)}$ and hence $\varphi(-x)=\overline{\varphi(x)}$ at $y=0$; the third is
 the Cauchy–Schwarz inequality applied to $K(x,0)=\varphi(x)$, $K(x,x)=\varphi(0)$ and $K(0,0)=\varphi(0)$.
-$\blacksquare$
 
 **Theorem (the correspondence).** A Hermitian function $\varphi$ on $G$ is positive definite if and only if
 the kernel $K(x,y)=\varphi(x-y)$ is positive definite; the matching is a bijection between the positive
@@ -127,7 +125,6 @@ definite functions and the translation-invariant positive definite kernels on $G
 **Proof.** The kernel $K(x,y)=\varphi(x-y)$ is translation invariant by construction, and its positive
 definiteness is the displayed condition for $\varphi$; conversely a translation-invariant kernel is
 determined by $\varphi(z)=K(z,0)$, and the Hermitian property of $K$ is the Hermitian property of $\varphi$.
-$\blacksquare$
 
 ### Examples
 
@@ -200,7 +197,6 @@ $$
 the uniqueness of $\mu$ is the injectivity of the Fourier–Stieltjes transform on finite measures, from the
 multiplication formula. The details of the duality argument belong to *Measure Theory and Integration* and
 to *Harmonic Analysis on Groups*, where the theorem is proved for a general locally compact abelian group.
-$\blacksquare$
 
 The proof of the converse is the only place where the Riesz representation of a positive functional on
 $C_c$ is used, and it is quoted from *Measure Theory and Integration*. The reader should note that the
@@ -223,7 +219,7 @@ definite, with the reflected measure.
 **Proof.** The mass statement is the value at $0$; the bound is above; the product is
 $\varphi\psi(x)=\iint e^{2\pi ix\cdot(\xi+\eta)}d\mu(\xi)d\nu(\eta)$, which is the transform of the
 push-forward of $\mu\otimes\nu$ under addition, a positive measure; the conjugation and reflection are the
-adjoint and the inverse of the transform on measures. $\blacksquare$
+adjoint and the inverse of the transform on measures.
 
 **Corollary (Bochner on a group, forward reference).** The same equivalence holds on a locally compact
 abelian group, with the character group in place of $\mathbb R^n$ and the Haar measure in place of Lebesgue
@@ -255,7 +251,7 @@ the positive definiteness of $K$ makes this a positive semidefinite Hermitian fo
 makes the null vectors a subspace, and the quotient completed in the induced norm is a Hilbert space $H$ in
 which the classes of the $k_x$ satisfy $\langle k_y,k_x\rangle=K(x,y)$. The span is dense by construction,
 and the uniqueness is that of a dense span in its completion. The converse is the computation of the
-previous section. $\blacksquare$
+previous section.
 
 The vectors $k_x$ are the **Kolmogorov vectors** of the kernel, and the construction is the
 **Kolmogorov decomposition**; when the kernel is the reproducing kernel of a space of functions it produces
@@ -270,7 +266,7 @@ positive definite.
 **Proof.** Sums and nonnegative coefficients are immediate from the defining inequality; the product
 corresponds to the tensor product of the Kolmogorov spaces and the Hadamard product of Gram matrices, which
 is positive semidefinite by the Schur product theorem; the pointwise limit is the limit of nonnegative
-numbers. $\blacksquare$
+numbers.
 
 ## Summary
 

@@ -21,21 +21,21 @@ $$
 
 and, for $a$ invertible, $(a^{-1})^* = (a^*)^{-1}$, so the adjoint preserves invertibility and $\sigma(a^*) = \overline{\sigma(a)}$. For every integer $n$, $(a^n)^* = (a^*)^n$, and if $a$ is invertible the identity extends to all integers; the adjoint commutes with the exponential, $(e^{a})^* = e^{a^*}$, when the involution is continuous.
 
-**Proof.** The first four identities are the definition of the involution; $(a^{-1})^*(a^*) = (a a^{-1})^* = 1$ and $(a^*)(a^{-1})^* = 1$ give the inverse formula; the power formula is induction on the anti-multiplicativity; the exponential is the norm-convergent series, and a continuous conjugate-linear map commutes with its limits, giving $(e^a)^* = \sum a^{*n}/n! = e^{a^*}$. $\square$
+**Proof.** The first four identities are the definition of the involution; $(a^{-1})^*(a^*) = (a a^{-1})^* = 1$ and $(a^*)(a^{-1})^* = 1$ give the inverse formula; the power formula is induction on the anti-multiplicativity; the exponential is the norm-convergent series, and a continuous conjugate-linear map commutes with its limits, giving $(e^a)^* = \sum a^{*n}/n! = e^{a^*}$.
 
 **Theorem (the adjoint exhibits the opposite algebra).** The adjoint is an order-two anti-automorphism of $A$; it is an algebra isomorphism $A \to A^{\mathrm{op}}$ with $a \mapsto a^*$, and it is the certificate that $A$ is isomorphic to its opposite algebra. In particular the involution provides an isomorphism of $A$ with $A^{\mathrm{op}}$ exactly when it is defined, and no algebra carries two essentially different such certificates beyond the automorphisms of $A$.
 
-**Proof.** The anti-multiplicativity is the isomorphism onto the opposite algebra, and the order two is $a^{**} = a$; the converse uniqueness is the standard statement that two isomorphisms onto the opposite algebra differ by an automorphism. $\square$
+**Proof.** The anti-multiplicativity is the isomorphism onto the opposite algebra, and the order two is $a^{**} = a$; the converse uniqueness is the standard statement that two isomorphisms onto the opposite algebra differ by an automorphism.
 
 ## Self-Adjoint, Skew and Unitary Elements
 
 **Proposition (the three classes).** The self-adjoint elements satisfy $a^* = a$, the skew elements $a^* = -a$, and $A = A^+ \oplus iA^+$ with $A^- = iA^+$; an element is unitary exactly when $u^* = u^{-1}$, the unitary elements form a subgroup $U(A)$ of the unit group, and the adjoint is an isometry of $U(A)$. If $a$ is skew and the involution is continuous then $e^{a}$ is unitary in the $\mathrm{C}^*$-case, $\lVert e^{a}\rVert = 1$; in a $\mathrm{C}^*$-algebra the unitary group is the exponential image of the skew elements.
 
-**Proof.** $(e^a)^* = e^{a^*} = e^{-a} = (e^a)^{-1}$ for skew $a$, so $e^a$ is unitary, and $\lVert e^a\rVert = 1$ when the algebra is a $\mathrm{C}^*$-algebra because $e^a$ is unitary; the decomposition is *Hermitian and Self-Adjoint Elements of a Banach Algebra*, and the group law is $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$. $\square$
+**Proof.** $(e^a)^* = e^{a^*} = e^{-a} = (e^a)^{-1}$ for skew $a$, so $e^a$ is unitary, and $\lVert e^a\rVert = 1$ when the algebra is a $\mathrm{C}^*$-algebra because $e^a$ is unitary; the decomposition is *Hermitian and Self-Adjoint Elements of a Banach Algebra*, and the group law is $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$.
 
 **Corollary (normal, positive, involutive).** An element is normal when $a^*a = aa^*$, equivalently when $h = \operatorname{Re}a$ and $k = \operatorname{Im}a$ commute; the positive elements are the self-adjoint $a$ with $a \geq 0$; a self-adjoint $a$ is involutive exactly when $a^2 = 1$, equivalently when $\sigma(a) \subseteq \{-1,1\}$. The Cayley transform $a \mapsto (a-i)(a+i)^{-1}$ sends the self-adjoint elements into the unitary ones.
 
-**Proof.** Normality is the commutation of the real and imaginary parts; the spectrum statement is the spectral mapping theorem for $a \mapsto a^2$; the Cayley transform is the functional calculus applied to the unitary function $(\lambda-i)(\lambda+i)^{-1}$ of modulus one on the real line. $\square$
+**Proof.** Normality is the commutation of the real and imaginary parts; the spectrum statement is the spectral mapping theorem for $a \mapsto a^2$; the Cayley transform is the functional calculus applied to the unitary function $(\lambda-i)(\lambda+i)^{-1}$ of modulus one on the real line.
 
 ## Examples
 
@@ -49,7 +49,7 @@ and, for $a$ invertible, $(a^{-1})^* = (a^*)^{-1}$, so the adjoint preserves inv
 
 **Theorem (the unitary group).** The unitary elements $U(A)$ form a subgroup of the unit group, closed under the adjoint, and inversion is the adjoint; for the norm topology $U(A)$ is a topological group, and in a $\mathrm{C}^*$-algebra it is closed and bounded, hence compact when $A$ is finite-dimensional. The exponential sends the skew part into $U(A)$, and in a $\mathrm{C}^*$-algebra the unitary group is the image of the skew part.
 
-**Proof.** Closure under products and inverses is the calculus of the adjoint, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$; the adjoint is continuous for an isometric involution, so $U(A)$ is a topological group; in a $\mathrm{C}^*$-algebra the unitaries have norm one and form a closed subset of the unit sphere, compact in finite dimension. The exponential statement is the proposition of this article. $\square$
+**Proof.** Closure under products and inverses is the calculus of the adjoint, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$; the adjoint is continuous for an isometric involution, so $U(A)$ is a topological group; in a $\mathrm{C}^*$-algebra the unitaries have norm one and form a closed subset of the unit sphere, compact in finite dimension. The exponential statement is the proposition of this article.
 
 **Proposition (the adjoint and the Gelfand transform).** In a commutative unital $\mathrm{C}^*$-algebra the adjoint corresponds to complex conjugation of the Gelfand transform,
 
@@ -59,7 +59,7 @@ $$
 
 so the self-adjoint elements are the elements with real-valued transforms, the positive elements those with non-negative transforms and the unitary elements those with unimodular transforms; the Gelfand transform is a `*`-isomorphism onto $C(\operatorname{Max}(A))$ and carries the adjoint calculus to pointwise conjugation.
 
-**Proof.** A character satisfies $\chi(a^*) = \overline{\chi(a)}$ by the reality of the self-adjoint elements under the transform, equivalently by the commutative Gelfand–Naimark theorem of *Involutive Banach Algebras and the Gelfand–Naimark Theorem*; the identification of the three classes is then pointwise. $\square$
+**Proof.** A character satisfies $\chi(a^*) = \overline{\chi(a)}$ by the reality of the self-adjoint elements under the transform, equivalently by the commutative Gelfand–Naimark theorem of *Involutive Banach Algebras and the Gelfand–Naimark Theorem*; the identification of the three classes is then pointwise.
 
 ## Summary
 

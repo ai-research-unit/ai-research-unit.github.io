@@ -85,7 +85,7 @@ and compute formally and then justify by Fubini–Tonelli applied to the absolut
 integral, which the estimate above bounds:
 $$
 (T_KT_Lf)(x)=\int_ZK(x,z)\Bigl(\int_YL(z,y)f(y)\,d\nu(y)\Bigr)d\lambda(z)
-=\int_Y\Bigl(\int_ZK(x,z)L(z,y)\,d\lambda(z)\Bigr)f(y)\,d\nu(y)=(T_{K\star L}f)(x). \qquad\blacksquare
+=\int_Y\Bigl(\int_ZK(x,z)L(z,y)\,d\lambda(z)\Bigr)f(y)\,d\nu(y)=(T_{K\star L}f)(x).
 $$
 
 **Proposition (the kernel product is associative).** For kernels
@@ -96,7 +96,7 @@ $K_0(x,y)$ of the identity of the algebra acting as unit wherever such a kernel 
 
 **Proof.** Both sides are the triple integral $\iiint K(x,w)L(w,z)M(z,y)\,dw\,dz$ over the product, which
 is finite almost everywhere by two applications of Cauchy–Schwarz and is symmetric in the bracketing by
-Fubini–Tonelli. Bilinearity is linearity of the integral. $\blacksquare$
+Fubini–Tonelli. Bilinearity is linearity of the integral.
 
 ### Examples
 
@@ -146,7 +146,7 @@ $$
 =\lVert K\rVert_{L^2(X\times Y)}^2\lVert f\rVert_2^2 .
 $$
 The operator is linear and defined on all of $L^2(Y,\nu)$ by this estimate, so it is bounded with the
-stated bound. $\blacksquare$
+stated bound.
 
 The inequality is the reason the square-integrable kernels are the class the corpus works with: the
 operator norm is controlled by a double integral, and every kernel that satisfies $\lVert K\rVert_2<\infty$
@@ -175,7 +175,7 @@ $$
 \lVert T_Kf\rVert_p^p\leq C^{p/q}\int_X\int_XK(x,y)\lvert f(y)\rvert^p\,d\mu(y)\,d\mu(x)
 \leq C^{p/q}\,C\lVert f\rVert_p^p=C^p\lVert f\rVert_p^p ,
 $$
-since $p/q+1=p$. $\blacksquare$
+since $p/q+1=p$.
 
 **Remark.** The test also holds with two weights: if $p_0,q_0>0$ are measurable and
 $\int_XK(x,y)q_0(y)\,dy\leq Cp_0(x)$, $\int_XK(x,y)p_0(x)\,dx\leq Cq_0(y)$ almost everywhere, then $T_K$ is
@@ -193,7 +193,7 @@ $$
 
 **Proof.** For $p=1$ the inequality is Fubini, $p=\infty$ the trivial bound, and for $1<p<\infty$ it is
 Minkowski's integral inequality applied to
-$\lvert k*f\rvert(x)\leq\int\lvert k(y)\rvert\lvert f(x-y)\rvert\,dy$. $\blacksquare$
+$\lvert k*f\rvert(x)\leq\int\lvert k(y)\rvert\lvert f(x-y)\rvert\,dy$.
 
 The Young bound is the reason a kernel that decays like an integrable function gives a bounded operator
 even when it is not square-integrable: $k$ may be the Poisson kernel, which lies in $L^1$ and not in $L^2$.
@@ -232,7 +232,7 @@ $$
 =\iint K(x,y)\overline{e_i(x)}\,f_j(y)\,d\mu(x)\,d\nu(y)=\langle T_Kf_j,e_i\rangle
 $$
 holds by Fubini–Tonelli, the integrand being summable. Parseval's identity in $L^2(X\times Y)$ gives the
-statement, and the basis-independence is the basis-independence of the Parseval sum. $\blacksquare$
+statement, and the basis-independence is the basis-independence of the Parseval sum.
 
 ### The Ideal Property
 
@@ -244,7 +244,7 @@ Consequently the Hilbert–Schmidt operators are closed under composition and un
 side by an integral operator, and the composition of two Hilbert–Schmidt operators is Hilbert–Schmidt.
 
 **Proof.** The first two statements are the composition theorem of the first section together with the
-estimate $\lVert K\star L\rVert_2\leq\lVert K\rVert_2\lVert L\rVert_2$ proved there. $\blacksquare$
+estimate $\lVert K\star L\rVert_2\leq\lVert K\rVert_2\lVert L\rVert_2$ proved there.
 
 **Remark.** The Hilbert–Schmidt operators form a two-sided ideal of the algebra of bounded operators on
 $L^2$, and this is where the general theory begins; the concrete statement above is all that the corpus
@@ -285,7 +285,7 @@ $$
 \leq2\lVert S-S_n\rVert+\lVert S_nf_m-S_nf_{m'}\rVert ,
 $$
 and choosing $n$ first and then $m,m'$ large makes both terms small. Hence $Sf_m$ is Cauchy, and the
-diagonal subsequence converges; $S$ is compact. $\blacksquare$
+diagonal subsequence converges; $S$ is compact.
 
 **Corollary.** Every Hilbert–Schmidt integral operator is compact, and so is every finite-rank operator.
 The Hilbert–Schmidt norm is not the operator norm: the family $K_N$ converges to $K$ in the

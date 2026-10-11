@@ -30,11 +30,11 @@ $$
 
 then the product is jointly continuous, hence separately continuous, and $A$ is a locally convex sesqualgebra over $(\mathbb{K},\varsigma)$. Conversely, if the product is jointly continuous, then for every $\alpha$ there are $\beta, \gamma$ and $C$ with $p_\alpha(xy) \leq C\,p_\beta(x)p_\gamma(y)$; for a directed family this is equivalent to the estimate above with a single index.
 
-*Proof.* The estimate bounds the product on the product of two $\beta$-balls, so the product is continuous at the origin, and a bilinear map continuous at the origin is jointly continuous; joint continuity implies separate continuity, which is the hypothesis of the layer. Conversely, joint continuity at the origin gives a basic neighbourhood $U_\beta \times U_\gamma$ on which $p_\alpha$ is bounded, hence the displayed estimate, and a directed family absorbs the two indices into one, *Locally Convex and Fréchet Algebras*, §*The Continuity Conditions*. The estimate with $\beta = \gamma$ is the classical condition for a locally convex algebra. That a separately continuous product need not be jointly continuous is the remark of *Topological Sesqualgebras*, §*Joint Continuity*, so the estimate is sufficient but not necessary for an object of the layer; the product on the pair $(A,A^{\varsigma})$ obeys the same criterion because the two factors carry the same seminorms, and the two scalar rules are algebraic, *Sesqualgebras*, §*The Two Scalar Rules*. $\square$
+*Proof.* The estimate bounds the product on the product of two $\beta$-balls, so the product is continuous at the origin, and a bilinear map continuous at the origin is jointly continuous; joint continuity implies separate continuity, which is the hypothesis of the layer. Conversely, joint continuity at the origin gives a basic neighbourhood $U_\beta \times U_\gamma$ on which $p_\alpha$ is bounded, hence the displayed estimate, and a directed family absorbs the two indices into one, *Locally Convex and Fréchet Algebras*, §*The Continuity Conditions*. The estimate with $\beta = \gamma$ is the classical condition for a locally convex algebra. That a separately continuous product need not be jointly continuous is the remark of *Topological Sesqualgebras*, §*Joint Continuity*, so the estimate is sufficient but not necessary for an object of the layer; the product on the pair $(A,A^{\varsigma})$ obeys the same criterion because the two factors carry the same seminorms, and the two scalar rules are algebraic, *Sesqualgebras*, §*The Two Scalar Rules*.
 
 **Corollary (the submultiplicative case).** If the family is submultiplicative, $p_\alpha(xy) \leq p_\alpha(x)p_\alpha(y)$ for every $\alpha$, then the product is jointly continuous and $A$ is an object of the layer *Topological Sesqualgebras* with its locally convex topology.
 
-*Proof.* Take $\beta = \gamma = \alpha$ and $C = 1$ in the criterion, and apply the estimate $\lVert x_ny_n - x_0y_0\rVert$ of *Banach Sesqualgebras*, §*The Submultiplicative Estimate* seminorm by seminorm. $\square$
+*Proof.* Take $\beta = \gamma = \alpha$ and $C = 1$ in the criterion, and apply the estimate $\lVert x_ny_n - x_0y_0\rVert$ of *Banach Sesqualgebras*, §*The Submultiplicative Estimate* seminorm by seminorm.
 
 ### The One-Sided Multiplications
 
@@ -44,7 +44,7 @@ $$
 p_\alpha(L_a x) \leq C\,p_\beta(a)\,p_\beta(x), \qquad p_\alpha(R_a x) \leq C\,p_\beta(x)\,p_\beta(a) .
 $$
 
-*Proof.* The parities are *Topological Sesqualgebras*, §*The One-Sided Multiplications*. Continuity is separate continuity, which the locally convex hypothesis assumes, with the bound depending on the fixed $a$: for each $\alpha$ there are $\beta$ and $C_a$ with $p_\alpha(ax) \leq C_a p_\beta(x)$. The uniform estimate with the factor $p_\beta(a)$ is the joint-continuity criterion of §*The Product and the Twisted Slot* read with one variable fixed, and it is asserted under that hypothesis and not under separate continuity alone, which need not supply it. $\square$
+*Proof.* The parities are *Topological Sesqualgebras*, §*The One-Sided Multiplications*. Continuity is separate continuity, which the locally convex hypothesis assumes, with the bound depending on the fixed $a$: for each $\alpha$ there are $\beta$ and $C_a$ with $p_\alpha(ax) \leq C_a p_\beta(x)$. The uniform estimate with the factor $p_\beta(a)$ is the joint-continuity criterion of §*The Product and the Twisted Slot* read with one variable fixed, and it is asserted under that hypothesis and not under separate continuity alone, which need not supply it.
 
 ## Locally m-Convex Sesqualgebras
 
@@ -54,7 +54,7 @@ $$
 
 **Lemma (regularisation, quoted).** Let $A$ be unital with $1 \neq 0$, let $p$ be a seminorm with $p(1) = 1$ and $p(xy) \leq C\,p(x)p(y)$ for some $C \geq 1$. Then $\tilde p(x) = \sup\{p(xy) : p(y) \leq 1\}$ is a submultiplicative seminorm with $\ker\tilde p = \ker p$ and $p \leq \tilde p \leq C\,p$.
 
-*Proof.* This is the regularisation lemma of *Locally Convex and Fréchet Algebras*, §*Submultiplicative Seminorms*: the set over which the supremum is taken contains $1$, so $\tilde p(x) \leq Cp(x)$ and $\tilde p$ is finite; homogeneity and subadditivity are inherited from $p$, and $\tilde p(x) \geq p(x)$ by $y = 1$. $\square$
+*Proof.* This is the regularisation lemma of *Locally Convex and Fréchet Algebras*, §*Submultiplicative Seminorms*: the set over which the supremum is taken contains $1$, so $\tilde p(x) \leq Cp(x)$ and $\tilde p$ is finite; homogeneity and subadditivity are inherited from $p$, and $\tilde p(x) \geq p(x)$ by $y = 1$.
 
 **Remark (why the regularisation needs a single seminorm).** The lemma replaces one seminorm by an equivalent submultiplicative one, and it is the reason a normed sesqualgebra may always be assumed submultiplicative. For a generating family the constants $C_\alpha$ cannot always be absorbed simultaneously, and it is exactly this failure that separates the locally m-convex sesqualgebras from the locally convex ones: a Fréchet algebra may be generated by seminorms whose constants grow and which admit no equivalent submultiplicative family, as the boundary example of §*The Boundaries* records for the bilinear layer. The sesqualgebra inherits the phenomenon through its seminorms and not through a new obstruction.
 
@@ -68,7 +68,7 @@ $$
 
 is a Banach sesqualgebra over $(\mathbb{K},\varsigma)$.
 
-*Proof.* Submultiplicativity gives $p_\alpha(xy) \leq p_\alpha(x)p_\alpha(y)$ and $p_\alpha(yx) \leq p_\alpha(y)p_\alpha(x)$, so an element with $p_\alpha(x) = 0$ multiplies both ways into the kernel; $N_\alpha$ is closed because $p_\alpha$ is continuous, and it is a submodule by the homogeneity and subadditivity of the seminorm. The quotient is a sesqualgebra by *Ideals and Quotients of a Sesqualgebra*, §*The Product Descends*, and the quotient norm $\bar p_\alpha(x + N_\alpha) = p_\alpha(x)$ is well defined and submultiplicative, so $A/N_\alpha$ is a normed sesqualgebra; its completion is a Banach sesqualgebra by *The Completion of a Sesqualgebra*, §*The Product on the Completion*. $\square$
+*Proof.* Submultiplicativity gives $p_\alpha(xy) \leq p_\alpha(x)p_\alpha(y)$ and $p_\alpha(yx) \leq p_\alpha(y)p_\alpha(x)$, so an element with $p_\alpha(x) = 0$ multiplies both ways into the kernel; $N_\alpha$ is closed because $p_\alpha$ is continuous, and it is a submodule by the homogeneity and subadditivity of the seminorm. The quotient is a sesqualgebra by *Ideals and Quotients of a Sesqualgebra*, §*The Product Descends*, and the quotient norm $\bar p_\alpha(x + N_\alpha) = p_\alpha(x)$ is well defined and submultiplicative, so $A/N_\alpha$ is a normed sesqualgebra; its completion is a Banach sesqualgebra by *The Completion of a Sesqualgebra*, §*The Product on the Completion*.
 
 **Remark (the involution and the quotient).** The base involution $\varsigma$ is unchanged by the quotient, which is over $(\mathbb{K},\varsigma)$; an algebra involution $*$ descends only to the quotients whose kernel it preserves. When $*$ is a $\varsigma$-semilinear involution with $*N_\alpha \subseteq N_\alpha$ for every $\alpha$ — automatic when the seminorms are invariant, $p_\alpha(x^{*}) = p_\alpha(x)$ — the quotients and their completions carry the induced involution, by *Ideals and Quotients of a Sesqualgebra*, §*The Involution Descends*. In the invariant case the derived operation $x \star y = xy^{*}$ satisfies $p_\alpha(x \star y) \leq p_\alpha(x)p_\alpha(y)$ as well, so it is a sesquilinear product of the same locally m-convex type.
 
@@ -76,11 +76,11 @@ is a Banach sesqualgebra over $(\mathbb{K},\varsigma)$.
 
 **Theorem (Arens–Michael, sesquilinear form).** A topological sesqualgebra over $(\mathbb{K},\varsigma)$ is a complete locally m-convex sesqualgebra if and only if it is isomorphic, as a topological sesqualgebra, to a projective limit of Banach sesqualgebras over $(\mathbb{K},\varsigma)$.
 
-*Proof.* One direction is the theorem of §*The Banach Quotients*: the complete locally m-convex object is the projective limit $\varprojlim A_\alpha$ of the Banach sesqualgebras $A_\alpha = \widehat{A/N_\alpha}$, by the argument of *Locally Convex and Fréchet Algebras*, §*The Banach Quotients* applied to the sesquilinear product, which is bilinear on the pair and restricts and descends with the seminorms. For the other direction, a projective limit of Banach sesqualgebras carries the seminorms $q_\alpha(x) = \lVert x_\alpha\rVert_\alpha$, each submultiplicative because the factor norm is and the projection is multiplicative, and the limit topology is generated by them; the sesquilinear structure is componentwise. $\square$
+*Proof.* One direction is the theorem of §*The Banach Quotients*: the complete locally m-convex object is the projective limit $\varprojlim A_\alpha$ of the Banach sesqualgebras $A_\alpha = \widehat{A/N_\alpha}$, by the argument of *Locally Convex and Fréchet Algebras*, §*The Banach Quotients* applied to the sesquilinear product, which is bilinear on the pair and restricts and descends with the seminorms. For the other direction, a projective limit of Banach sesqualgebras carries the seminorms $q_\alpha(x) = \lVert x_\alpha\rVert_\alpha$, each submultiplicative because the factor norm is and the projection is multiplicative, and the limit topology is generated by them; the sesquilinear structure is componentwise.
 
 **Corollary (the Fréchet case).** A sesqualgebra over $(\mathbb{K},\varsigma)$ is a complete metrisable locally m-convex sesqualgebra if and only if it is the projective limit of a sequence of Banach sesqualgebras over $(\mathbb{K},\varsigma)$ with continuous connecting maps.
 
-*Proof.* A complete metrisable locally m-convex object has a countable generating family of submultiplicative seminorms, so the index set of the decomposition may be taken countable; conversely a countable projective limit of Banach sesqualgebras is metrisable, complete and locally m-convex. This is the corollary of *Locally Convex and Fréchet Algebras*, §*The Arens–Michael Theorem* with the componentwise sesquilinear structure. $\square$
+*Proof.* A complete metrisable locally m-convex object has a countable generating family of submultiplicative seminorms, so the index set of the decomposition may be taken countable; conversely a countable projective limit of Banach sesqualgebras is metrisable, complete and locally m-convex. This is the corollary of *Locally Convex and Fréchet Algebras*, §*The Arens–Michael Theorem* with the componentwise sesquilinear structure.
 
 ## Fréchet Sesqualgebras
 
@@ -96,7 +96,7 @@ $$
 
 is a translation-invariant metric on $A$ generating its topology, and $A$ is complete for it.
 
-*Proof.* This is the construction of *Fréchet Spaces*, §*The Invariant Metric*: the series converges because each term is at most $2^{-n}$, the function $d$ is a metric because the family is separating, it is invariant under translation because the seminorms are, and it generates the topology because a sequence converges for $d$ exactly when it converges for every $p_n$. Completeness is the hypothesis. $\square$
+*Proof.* This is the construction of *Fréchet Spaces*, §*The Invariant Metric*: the series converges because each term is at most $2^{-n}$, the function $d$ is a metric because the family is separating, it is invariant under translation because the seminorms are, and it generates the topology because a sequence converges for $d$ exactly when it converges for every $p_n$. Completeness is the hypothesis.
 
 ### Examples
 
@@ -112,7 +112,7 @@ is a translation-invariant metric on $A$ generating its topology, and $A$ is com
 
 **Theorem.** Let $A$ be a Fréchet sesqualgebra and let $I \subseteq A$ be a closed two-sided ideal. Then $A/I$ with the quotient topology is a Fréchet sesqualgebra over the same datum; if $A$ is locally m-convex then so is $A/I$; and if $A$ carries an algebra involution preserving $I$, the quotient carries the induced one.
 
-*Proof.* A quotient of a metrisable locally convex space by a closed subspace is metrisable and locally convex, and it is complete because $A$ is complete and $I$ is closed, the quotient map being open; this is the theorem of *Locally Convex and Fréchet Algebras*, §*Ideals and Quotients*. The product descends by *Ideals and Quotients of a Sesqualgebra*, §*The Product Descends*, and is continuous for the quotient topology because the quotient map is continuous and open; the quotient seminorms $\bar p_n(x + I) = \inf_{y\in I}p_n(x + y)$ are submultiplicative when the $p_n$ are, by approximating the two cosets and using that $I$ is two-sided. The involution descends by *Ideals and Quotients of a Sesqualgebra*, §*The Involution Descends*. $\square$
+*Proof.* A quotient of a metrisable locally convex space by a closed subspace is metrisable and locally convex, and it is complete because $A$ is complete and $I$ is closed, the quotient map being open; this is the theorem of *Locally Convex and Fréchet Algebras*, §*Ideals and Quotients*. The product descends by *Ideals and Quotients of a Sesqualgebra*, §*The Product Descends*, and is continuous for the quotient topology because the quotient map is continuous and open; the quotient seminorms $\bar p_n(x + I) = \inf_{y\in I}p_n(x + y)$ are submultiplicative when the $p_n$ are, by approximating the two cosets and using that $I$ is two-sided. The involution descends by *Ideals and Quotients of a Sesqualgebra*, §*The Involution Descends*.
 
 ### The Boundaries
 
@@ -126,7 +126,7 @@ is a translation-invariant metric on $A$ generating its topology, and $A$ is com
 
 **Theorem (the collapse).** Let $A$ be a locally convex or Fréchet sesqualgebra over $(\mathbb{K},\varsigma)$ with $\varsigma = \mathrm{id}$. Then the two scalar rules coincide, the product is bilinear, the conjugate module is the module with the same topology and the same seminorms, and $A$ is a locally convex or Fréchet algebra in the sense of *Locally Convex and Fréchet Algebras*; conversely every such algebra is a locally convex or Fréchet sesqualgebra over $(\mathbb{K},\mathrm{id})$. The locally m-convex and the Fréchet m-convex cases correspond in the same way, and the Arens–Michael decomposition reduces to the decomposition of the bilinear layer.
 
-*Proof.* With $\varsigma = \mathrm{id}$ the second rule reads $x(\lambda y) = \lambda(xy)$ and is the first; the twisted action is the ordinary action, so the seminorms of the conjugate module are the seminorms of the module with the same action, and the whole construction is the locally convex algebra of the bilinear layer. The correspondence of the m-convex cases is the submultiplicative estimate read without a twist, and the decomposition reduces termwise. $\square$
+*Proof.* With $\varsigma = \mathrm{id}$ the second rule reads $x(\lambda y) = \lambda(xy)$ and is the first; the twisted action is the ordinary action, so the seminorms of the conjugate module are the seminorms of the module with the same action, and the whole construction is the locally convex algebra of the bilinear layer. The correspondence of the m-convex cases is the submultiplicative estimate read without a twist, and the decomposition reduces termwise.
 
 ### Full Type
 

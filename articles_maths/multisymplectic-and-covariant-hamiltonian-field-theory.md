@@ -78,7 +78,7 @@ the first contracting the derivative of the unknown with the derivative of the H
 
 **Theorem (equivalence).** Let $L$ be hyperregular. Then a section $(u(x),p(x))$ solves the De Donder–Weyl equations exactly when $u$ solves the Euler–Lagrange equations and $p$ is its polymomentum.
 
-*Proof.* The first equation is the Legendre definition. By the envelope theorem the derivative of $H$ with respect to $p^\mu_i$ at the stationary point is $\hat u^i_\mu$, so the first equation is $\partial_\mu u^i=\hat u^i_\mu$, which is the statement that $p$ is the polymomentum of $u$. For the second, differentiate the definition of $H$ with respect to $u^i$: the terms in which the derivative of $\hat u$ appears carry the factor $p^\mu_j-\partial L/\partial u^j_\mu$, which vanishes by the definition of the polymomentum, and the surviving term is $-\partial L/\partial u^i$. Hence the second equation is $\partial_\mu p^\mu_i=\partial L/\partial u^i$, which with $p^\mu_i=\partial L/\partial u^i_\mu$ is exactly the Euler–Lagrange equation. ∎
+*Proof.* The first equation is the Legendre definition. By the envelope theorem the derivative of $H$ with respect to $p^\mu_i$ at the stationary point is $\hat u^i_\mu$, so the first equation is $\partial_\mu u^i=\hat u^i_\mu$, which is the statement that $p$ is the polymomentum of $u$. For the second, differentiate the definition of $H$ with respect to $u^i$: the terms in which the derivative of $\hat u$ appears carry the factor $p^\mu_j-\partial L/\partial u^j_\mu$, which vanishes by the definition of the polymomentum, and the surviving term is $-\partial L/\partial u^i$. Hence the second equation is $\partial_\mu p^\mu_i=\partial L/\partial u^i$, which with $p^\mu_i=\partial L/\partial u^i_\mu$ is exactly the Euler–Lagrange equation.
 
 The theorem is what justifies calling the formalism a Hamiltonian formalism at all: for a hyperregular density the transformation is invertible, the De Donder–Weyl equations are equivalent to the Euler–Lagrange equations, and no information is lost in passing to the momenta. Its proof is one application of the envelope theorem, and it is worth recording that the two equations have different standing: the first is the Legendre definition in disguise, and **only the second is an equation of motion**. This is a genuine difference from the one-variable case, where both Hamilton's equations are dynamical; the covariant formalism pays for its symmetry by splitting the definition from the equation.
 
@@ -100,7 +100,6 @@ $$
 
 a closed $(m+1)$-form, closed because it is exact. The sign is fixed by the one-variable case, where $\Omega_{DW}=du^i\wedge dp_i$ is the symplectic form $\omega=\sum_idq^i\wedge dp_i$ of *Lagrangian and Hamiltonian Systems* with $q=u$; a reader who prefers the opposite sign must reverse it in $\Theta_{DW}$ as well, since it is the derivative that is fixed and the form only up to a sign convention.
 
-**Verification.** In the case $m=2$ of two independent variables and one unknown, with coordinates $x^0,x^1$, the form engine computed $\Theta_{DW}=p^0\,du\wedge dx^1-p^1\,du\wedge dx^0$ and its exterior derivative exactly, in exact rational arithmetic, confirming the components $dp^\mu\wedge du\wedge\varpi_\mu$ and the closedness $d\Omega_{DW}=0$; no numerical step is involved. In the case $m=1$ the same engine returned $\varpi_0=1$, $\Theta_{DW}=p\,du$, $-d\Theta_{DW}=du\wedge dp$, which is the symplectic form of the finite-dimensional theory with the pair $(u,p)$ in place of $(q,p)$.
 
 ### The Polysymplectic Form
 
@@ -144,7 +143,6 @@ $$
 
 and it says that each of the $m$ translations has a current, so that the conserved objects of a field theory are indexed by the directions of the independent variables. For $m=1$ the current reduces to $J=p\,u'-L$, the single conserved quantity of an autonomous problem, and the conservation law to $\frac{d}{dx}(pu'-L)=0$; the multimomentum current is thus the covariant form of the Jacobi or Beltrami first integral, $m$ copies of it.
 
-**Verification.** For four independent variables and one complex unknown $u$, with $L=\eta^{\mu\nu}\partial_\mu u^*\partial_\nu u-\mu^2u^*u$ and $\eta=\mathrm{diag}(+1,-1,-1,-1)$ — the case used in the examples, in four variables — and $u$ a superposition of three on-shell modes, the four divergences $\partial_\mu J^\mu{}_\nu$ evaluated by central differences of step $10^{-4}$ at a generic point were $4.1\times10^{-9}$, $4.0\times10^{-9}$, $7.1\times10^{-9}$ and $1.2\times10^{-8}$ for $\nu=0,1,2,3$; the residuals are the discretisation error $O(h^2)$ of the step, and the check is made on a superposition rather than a single mode because a single mode conserves each term separately and would not exercise the cancellation.
 
 ## The Variants of the Formalism
 
@@ -230,7 +228,6 @@ $$
 
 for any functions $\chi^a$, so two different unknowns have the same $F$ and hence the same polymomentum; the kernel of the Legendre map is the space of these shifts. The density is therefore not hyperregular, and the equivalence theorem does not apply as stated. Second, **the De Donder–Weyl equations determine the polymomentum only up to that kernel**: the first equation fixes the antisymmetric part of the derivative of $u$, and nothing fixes the symmetric part. The kernel is exactly the obstruction, and it is the covariant image of the familiar gauge freedom of a first-order problem with an antisymmetrised derivative: the instantaneous formalism must fix the freedom before its bracket can be written, whereas the covariant formalism keeps the freedom in the kernel of the Legendre map and its equations are correspondingly weaker by that kernel. This is the sense in which the gauge problems are the natural domain of the covariant formalism and the awkward case of the instantaneous one.
 
-**Verification.** For $m=2$ ($g=\mathrm{diag}(+1,-1)$) and $\ell=1$, at a point where the two independent derivatives of the unknown are $\partial_0u_1=0.7$ and $\partial_1u_0=-0.3$, the polymomentum computed as the numerical partial derivative of $L$ with respect to $\partial_\mu u_\nu$ by central differences of step $10^{-6}$ was $1.0000005$ against $-F^{01}=1.0$ and $-0.9999995$ against $-F^{10}=-1.0$, the residuals $5.0\times10^{-7}$ being the discretisation error of the step; and $p^{\mu\nu}\partial_\mu u_\nu-2L=0$ exactly, so $H=L$. The check confirms the two signs that fix the example: the minus in the polymomentum and the equality of the De Donder–Weyl Hamiltonian with the density.
 
 ## The Relation to the Instantaneous Formalism
 

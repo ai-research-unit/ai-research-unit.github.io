@@ -13,7 +13,7 @@ The base is a commutative ring $R$ with $1$, $A=A^0\oplus A^1$ is a $\mathbb{Z}/
 
 **Proposition.** The grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is a signed reflection; the inner conjugation $\Sigma_{a,a^{-1}}(x)=axa^{-1}$, defined for a unit $a$, is an automorphism, and it is a reflection exactly when $a^{2}$ is central and $a^{-1}$ acts as $a$ in the conjugation, that is when $\Sigma_{a^{-1},a}=\Sigma_{a,a^{-1}}$.
 
-**Proof.** $\alpha^2=\mathrm{id}$ by definition. The inner conjugation is an automorphism because it is conjugation by a unit; it is an involution exactly when conjugating by $a$ and by $a^{-1}$ agree, which is the displayed condition. $\square$
+**Proof.** $\alpha^2=\mathrm{id}$ by definition. The inner conjugation is an automorphism because it is conjugation by a unit; it is an involution exactly when conjugating by $a$ and by $a^{-1}$ agree, which is the displayed condition.
 
 **Corollary.** The signed reflections and the unsigned reflections are two different families: the first carry the twist of the argument, the second do not, and they meet in the elements fixed by $\alpha$, that is in the even part when the even elements are the only ones used.
 
@@ -31,11 +31,11 @@ $$
 \Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\mathrm{id} .
 $$
 
-**Proof.** The reflection property is the theorem of *The Signed Sandwich on a Graded Algebra*; the computation is $\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}=\Sigma^{\alpha}_{1,1}$. $\square$
+**Proof.** The reflection property is the theorem of *The Signed Sandwich on a Graded Algebra*; the computation is $\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}=\Sigma^{\alpha}_{1,1}$.
 
 **Theorem (injectivity up to the centre).** Two elements $a,c\in\mathrm{R}(A)$ give the same reflection if and only if $c^{-1}a$ lies in the centre of $A$; consequently the correspondence is injective on $\mathrm{R}(A)/\mathrm{Z}(A)^{\times}$.
 
-**Proof.** $\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{c,c^{-1}}$ means $a\alpha(x)a^{-1}=c\alpha(x)c^{-1}$ for every $x$, equivalently $(c^{-1}a)\alpha(x)=\alpha(x)(c^{-1}a)$ for every $x$; since $\alpha$ is a bijection the condition is that $c^{-1}a$ commutes with every element, which is centrality. $\square$
+**Proof.** $\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{c,c^{-1}}$ means $a\alpha(x)a^{-1}=c\alpha(x)c^{-1}$ for every $x$, equivalently $(c^{-1}a)\alpha(x)=\alpha(x)(c^{-1}a)$ for every $x$; since $\alpha$ is a bijection the condition is that $c^{-1}a$ commutes with every element, which is centrality.
 
 **Corollary.** The correspondence is a bijection onto its image when the centre is trivial; the signed reflection $\Sigma^{\alpha}_{a,a^{-1}}$ depends only on the class of $a$ modulo central units, exactly as the inner conjugation depends only on $a$ modulo central units.
 
@@ -47,7 +47,7 @@ $$
 
 so the signed reflections generate the group of the operators $\Sigma^{\alpha}_{a,a^{-1}}$; the composite need not be an involution, and it is one exactly when $c\alpha(c)=1$.
 
-**Proof.** The composition law of *The Signed Sandwich on a Graded Algebra* gives $\Sigma^{\alpha}_{a\alpha(b),\,\alpha(b^{-1})a^{-1}}$, and $\alpha(b^{-1})a^{-1}=(a\alpha(b))^{-1}$ because $b\in\mathrm{R}(A)$; the composite is an involution exactly when $\Sigma^{\alpha}_{c,c^{-1}}$ is one, which by the reflection theorem of the previous section is the condition $c\alpha(c)=1$. $\square$
+**Proof.** The composition law of *The Signed Sandwich on a Graded Algebra* gives $\Sigma^{\alpha}_{a\alpha(b),\,\alpha(b^{-1})a^{-1}}$, and $\alpha(b^{-1})a^{-1}=(a\alpha(b))^{-1}$ because $b\in\mathrm{R}(A)$; the composite is an involution exactly when $\Sigma^{\alpha}_{c,c^{-1}}$ is one, which by the reflection theorem of the previous section is the condition $c\alpha(c)=1$.
 
 ## The Degenerate Cases
 
@@ -61,7 +61,7 @@ $$
 
 so the operator is nilpotent of order two and not invertible.
 
-**Proof.** The square is $\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}$ by the composition law; if the product is not the unit the square is not the identity; if $a\alpha(a)=0$ the square is the zero operator. $\square$
+**Proof.** The square is $\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}$ by the composition law; if the product is not the unit the square is not the identity; if $a\alpha(a)=0$ the square is the zero operator.
 
 **Corollary.** In the exterior algebra $\Lambda^\bullet V$ an odd element $v$ satisfies $\alpha(v)=-v$, so $v\alpha(v)=-v\wedge v=0$: the signed sandwich $\Sigma^{\alpha}_{v,v^{-1}}$ is defined only if $v$ is a unit, which never happens for a nonzero odd element because $v^2=0$; this is the totally degenerate case, and it is why the reflections of the geometric theory need a Clifford algebra, where an odd element can be a unit. The Clifford algebra and its orthogonal group are the model of the symmetric algebras, and nothing of them is used here.
 
@@ -71,7 +71,6 @@ so the operator is nilpotent of order two and not invertible.
 
 Let $A=A^0\oplus A^1$ be a graded algebra in which some odd element $u$ is a unit with $u\alpha(u)=1$; then $u^2=1$? Not necessarily: $u\alpha(u)=1$ reads $u\cdot(-u)=-u^2=1$ when $u$ is odd, so $u^{2}=-1$ in characteristic not two. Thus an odd signed reflection is an element whose square is $-1$, and the reflection it defines is $\Sigma^{\alpha}_{u,u^{-1}}(x)=u\alpha(x)u^{-1}$, which is the negative of the unsigned conjugation $uxu^{-1}$ on the odd part and equal to it on the even part. For the exterior algebra of a two-dimensional space there is no such odd unit, and every odd signed sandwich is totally degenerate; for a graded algebra in which the odd part is generated by elements of square $-1$, the odd signed reflections exist and are in bijection with the odd units modulo the centre.
 
-**Verified.** The composition law, the reflection property, the injectivity-up-to-the-centre statement and the total degeneracy $\Sigma^{\alpha}_{v,v}=0$ for an odd vector were checked on the exterior algebra of a two-dimensional space and on a graded algebra with an odd unit of square $-1$, by explicit multiplication of basis elements.
 
 ## Summary
 

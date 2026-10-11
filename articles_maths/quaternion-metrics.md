@@ -143,7 +143,6 @@ Its diagonal entries are $g_0^2-|\mathbf g|^2$ and $-g_0^2-|\mathbf g|^2+2g_k^2$
 
 *Proof.* One evaluates the polar form on the sixteen pairs of basis elements. For the diagonal, $Q_g(e_\mu) = \mathrm{Sc}((ge_\mu)^2)$, which is $\mathrm{Sc}(g^2) = g_0^2-|\mathbf g|^2$ at $\mu=0$ and $-\mathrm{Sc}(ge_kg e_k)$ at $\mu=k$; expanding $g = g_0+\mathbf g$ in the second and using that the scalar part of a product of two pure quaternions is minus their inner product gives $-g_0^2-|\mathbf g|^2+2g_k^2$. For the pair $(0,k)$ the two products $ge_0ge_k$ and $ge_kg e_0$ are $g^2e_k$ and $ge_kg$, whose scalar parts are both $-2g_0g_k$ by the same expansion, so the polar form is $-2g_0g_k$. For a pair $(j,k)$ of distinct space indices the antisymmetry $e_je_k+e_ke_j = 0$ makes the two products equal, and the scalar part of $ge_jge_k$ is $2g_jg_k$; the polar form carries the factor $\tfrac12$ and is $2g_jg_k$. The relations used are $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, and the vanishing of the scalar part of $e_je_k$ for $j\neq k$.
 
-**Verification.** The closed form has been checked against the polar form on $100$ random quaternions with integer coordinates, entry by entry, and the quadratic identity $\sum_{\mu\nu}q_\mu M(g)_{\mu\nu}q_\nu = Q_g(\tilde q)$ has been checked on $100$ random pairs $(g,\tilde q)$; both checks are exact and both hold.
 
 **Remark (the two block forms).** With $s = g_0^2-|\mathbf g|^2$ and $c = g_0^2+|\mathbf g|^2 = N(g)$, the matrix is
 
@@ -208,7 +207,6 @@ because $s^2+4g_0^2|\mathbf g|^2 = (g_0^2-|\mathbf g|^2)^2+4g_0^2|\mathbf g|^2 =
 
 The entries of $M(g)$ are polynomials in $g_0,g_1,g_2,g_3$, so $\det M(g)$ is a polynomial, and $-N(g)^4$ is a polynomial; the two agree on the nonempty open set $s\neq0$, so they agree identically. The determinant is therefore $-N(g)^4$ for every $g$, and it vanishes exactly at $g=0$.
 
-**Verification.** The determinant identity has been checked, exactly, on $100$ random quaternions with integer coordinates; it holds without exception.
 
 **Remark (the same determinant, read through the regular representation).** The identity is equivalent to $\det M(g) = -\det(L_g)^2$, and the statement $\det L_g = N(g)^2$ is the determinant statement of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*. The proof above is nevertheless self-contained: it uses only the closed form of $M(g)$, the structure of a rank-one update of the identity and the polynomial identity argument, and it does not appeal to the regular representation.
 
@@ -249,7 +247,7 @@ The quaternion norm $N(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2$ of *Quaternion Norm 
 | $\mathbb{H}_{\mathrm{s}}$ | determinant form | $\mathbb{R}$ | $(2,2)$ | no, wrong algebra and signature |
 | $\mathbb{B}$ | biquaternion norm | $\mathbb{C}$ | complex | no, complex-valued |
 
-The split-quaternion determinant form of signature $(2,2)$ is *Split-Quaternion Norm and Invertibility*, and the complex-valued biquaternion norm is *Biquaternion Norm and Invertibility*; both are cited for contrast only. The family of quaternion metrics is a four-parameter family inside the ten-dimensional space of symmetric real forms on $\mathbb{R}^4$, and it is a single isometry class inside it.
+The split-quaternion determinant form of signature $(2,2)$ is *Split-Quaternion Norm and Invertibility*, and the complex-valued biquaternion norm is *Norm and Invertibility in the General Plain Algebra*; both are cited for contrast only. The family of quaternion metrics is a four-parameter family inside the ten-dimensional space of symmetric real forms on $\mathbb{R}^4$, and it is a single isometry class inside it.
 
 ## Summary
 
