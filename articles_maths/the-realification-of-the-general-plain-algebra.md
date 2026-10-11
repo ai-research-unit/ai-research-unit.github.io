@@ -43,7 +43,7 @@ The twelve structures are the six $A$ structures (bilinear in both slots, called
 
 Every product law is a polynomial identity with integer coefficients in the structure constants, so it is visible over the prime field and does not change: the failures of associativity, of the Jacobi identity and of the Jordan identity found over $\mathbb{C}$ are exactly the failures over $\mathbb{R}$, on the same witnesses.
 
-## What Is Specific to the Real Reading
+## What Is Specific to the Real Interpretation
 
 Four structures exist over $\mathbb{R}$ and have no complex counterpart.
 

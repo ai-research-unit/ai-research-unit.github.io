@@ -52,7 +52,7 @@ $$
 \mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=i\hbar\,\epsilon_{klm}\,(ie_m),
 $$
 
-so that $\tilde J^{(\mathrm{adj})}_k=\mathrm{ad}_{\tilde S_k}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\Phi(e_0)=I_2$ and $\Phi(e_k)=-i\sigma_k$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
+so that $\tilde J^{(\mathrm{adj})}_k=\mathrm{ad}_{\tilde S_k}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_0)=I_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
 
 $$
 [F_i,F_j]=i\hbar\,\epsilon_{ijk}F_k,\qquad F_1^2+F_2^2+F_3^2=2\hbar^2 I_3 ,
@@ -78,7 +78,7 @@ $$
 
 where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $P_{\mathrm{asym}}=\tfrac14(e_0\otimes e_0+\sum_ke_k\otimes e_k)$ is the singlet projector. The last condition says that the support of $\tilde\rho$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric projector**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
 
-For the geometry it is convenient to work in the three-dimensional matrix realisation that $\Phi\otimes\Phi$ provides on the symmetric sector. There the states are the $3\times3$ Hermitian, positive, unit-trace matrices. The framework's Born rule reduces on the sector to $\mathrm{tr}(\rho P)$ for the projector $P$ of a pure state, and observables are the Hermitian $3\times3$ matrices obtained from the symmetric elements of $\mathbb{B}\otimes\mathbb{B}$.
+For the geometry it is convenient to work in the three-dimensional matrix realisation that $\mathsf{M}_2\otimes\mathsf{M}_2$ provides on the symmetric sector. There the states are the $3\times3$ Hermitian, positive, unit-trace matrices. The framework's Born rule reduces on the sector to $\mathrm{tr}(\rho P)$ for the projector $P$ of a pure state, and observables are the Hermitian $3\times3$ matrices obtained from the symmetric elements of $\mathbb{B}\otimes\mathbb{B}$.
 
 ### The spin operators as matrices
 

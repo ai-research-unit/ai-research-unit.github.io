@@ -113,7 +113,7 @@ where $c_t(x) = txt^{-1}$. Hence $\rho_u$ is an involutive automorphism, $\rho_u
 
 **Proof.** $\rho_1 = c_1\alpha = \alpha$; the parametrisation is the standard computation: $\rho_u = \rho_v$ if and only if $v^{-1}u$ commutes with every $\alpha(x)$, that is with all of $A$, so $v^{-1}u \in Z(A)^\times$.
 
-## The Banach Reading and Examples
+## The Banach Interpretation and Examples
 
 **Proposition (continuity, completeness and closure).** The signed sandwiches are bounded and their space lies in $B(A)$; the assignment $(a,b)\mapsto S_{a,b}$ is a bounded bilinear map $A \times A \to B(A)$ with norm at most $\lVert\alpha\rVert$, and it factors through the completed tensor product $\widehat{\otimes}_\pi$ as a bounded linear map of norm at most $\lVert\alpha\rVert$. The reflections are bounded invertible operators; when $\alpha$ is isometric and $u$ is a unitary with $\lVert u\rVert = \lVert u^{-1}\rVert = 1$, the reflection is isometric with $\lVert\rho_u\rVert = 1$.
 

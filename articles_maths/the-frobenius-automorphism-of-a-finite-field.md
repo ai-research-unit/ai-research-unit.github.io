@@ -73,7 +73,7 @@ satisfy $\mathrm{Tr}(x) \in \mathbb{F}_p$, $N(x) \in \mathbb{F}_p^\times$ and $\
 
 **Proof.** The trace and the norm are invariant under $\varphi$ because $\varphi$ permutes the summands and the factors cyclically, so their values lie in the fixed field $\mathbb{F}_p$. The trace is additive and $\mathbb{F}_p$-linear because each $\varphi^i$ is; it is not identically zero because the distinct field homomorphisms $\mathrm{id}, \varphi, \ldots, \varphi^{f-1}$ are linearly independent (Dedekind's independence lemma), so their sum $\mathrm{Tr}$ is not the zero map, and a nonzero $\mathbb{F}_p$-linear map to a field is surjective. The norm is multiplicative, its value is nonzero for nonzero $x$, and for a primitive element $\zeta$ the value $N(\zeta) = \zeta^{(q-1)/(p-1)}$ is a primitive $(p-1)$-th root, so the norm is surjective.
 
-## The Topological Reading
+## The Topological Interpretation
 
 **Proposition (the finite field is discrete and every operator is continuous).** A finite field carries the discrete topology, which is the only Hausdorff linear topology on it and the topology of its trivial absolute value; every self-map of $\mathbb{F}_q$ is continuous, every subset is open and closed, and $\mathbb{F}_q$ is compact.
 

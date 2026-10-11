@@ -14,7 +14,7 @@ The unifying statement is that the zero divisor locus is a **kinematic boundary*
 
 The article is organised as follows. The second section recalls the algebraic criterion and classification, as input from the mathematics articles, and locates the cone in each real subspace. The third section treats the momentum-space image and the non-relativistic dispersion. The fourth treats the configuration-space image: the turning surfaces and the caustics. The fifth treats the state-space image and the invariance of the locus under the flow. The sixth collects what stops at the locus. The closing sections are the open questions, the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; the biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a complex-linear form; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are the complex and real scalar subspaces; the material coordinate is $\tilde{Q}=ict\,e_0+\mathbf x$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The state module is $\mathbb{B}\tilde P\cong\mathbb{C}^2$, with $\Phi(e_0)=I_2$ and $\Phi(e_k)=-i\sigma_k$.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central $i$; the biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a complex-linear form; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are the complex and real scalar subspaces; the material coordinate is $\tilde{Q}=ict\,e_0+\mathbf x$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The state module is $\mathbb{B}\tilde P\cong\mathbb{C}^2$, with $\mathsf{M}_2(e_0)=I_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$.
 
 ## The Algebraic Locus
 
@@ -40,7 +40,7 @@ The pure family is the nilpotent cone; the non-pure family is the set of nonzero
 
 ### The cone across the remarkable subspaces
 
-The distribution of the zero divisors across the remarkable real subspaces is what gives the locus its physical reading. The complex scalar subspace $\mathbb{C}_{\mathbb{B}}$ and the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ contain **no** zero divisors: they are the division subalgebras of $\mathbb{B}$, and the biquaternion norm restricts to each as a nondegenerate form. The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ likewise contains none: its biquaternion norm is negative definite. Of the remaining three, the vector subspace $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, whose nonzero elements are the nilpotents $\tilde\Upsilon$ of the convention (§*The Nilpotent Convention* of *Conventions in the Biquaternion Universe*), and the two Hermitian-type subspaces contain the cone:
+The distribution of the zero divisors across the remarkable real subspaces is what gives the locus its physical interpretation. The complex scalar subspace $\mathbb{C}_{\mathbb{B}}$ and the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ contain **no** zero divisors: they are the division subalgebras of $\mathbb{B}$, and the biquaternion norm restricts to each as a nondegenerate form. The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ likewise contains none: its biquaternion norm is negative definite. Of the remaining three, the vector subspace $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, whose nonzero elements are the nilpotents $\tilde\Upsilon$ of the convention (§*The Nilpotent Convention* of *Conventions in the Biquaternion Universe*), and the two Hermitian-type subspaces contain the cone:
 
 - In $\mathbb{M}_+$ the cone is the **future light cone** of the informational sector, with the real scalar part $q_0$ as the special coordinate and the equation $q_0^2=|\mathbf q|^2$.
 - In $\mathbb{M}_-$ the cone is the **light cone** of the material sector, with the imaginary scalar part $q_0'$ as the special coordinate and the equation $(q_0')^2=|\mathbf q|^2$.
@@ -73,7 +73,7 @@ $$
 N(\tilde{\mathcal P})=P_0^2+\mathbf p^2=-\frac{E^2}{c^2}+p^2 ,
 $$
 
-whose biquaternion norm vanishes precisely on the massless shell. The zero divisor locus in momentum space is therefore the massless shell $E=|p|c$, the boundary between the spacelike and timelike regions. Whether a physical particle sits on it is a question about its dispersion relation, and that is where the non-relativistic and relativistic readings separate.
+whose biquaternion norm vanishes precisely on the massless shell. The zero divisor locus in momentum space is therefore the massless shell $E=|p|c$, the boundary between the spacelike and timelike regions. Whether a physical particle sits on it is a question about its dispersion relation, and that is where the non-relativistic and relativistic interpretations separate.
 
 ### The non-relativistic dispersion and the cone
 
@@ -133,7 +133,7 @@ $$
 \Delta_{\mathrm{vV}}=\left|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\partial x_f}\right|,
 $$
 
-whose zeros are the conjugate points and whose square root is the amplitude. The caustics of the propagator and the turning surfaces of the wave function are the same locus described in two ways: the places where the family of classical trajectories degenerates, which is where the configuration-space momentum loses rank. In the biquaternion reading the degeneracy is a rank drop of the real momentum form, and the locus is the configuration-space trace of the cone. The framework does not add a new equation here; it identifies the caustic, the turning surface, and the apex of the cone as one locus.
+whose zeros are the conjugate points and whose square root is the amplitude. The caustics of the propagator and the turning surfaces of the wave function are the same locus described in two ways: the places where the family of classical trajectories degenerates, which is where the configuration-space momentum loses rank. In the biquaternion interpretation the degeneracy is a rank drop of the real momentum form, and the locus is the configuration-space trace of the cone. The framework does not add a new equation here; it identifies the caustic, the turning surface, and the apex of the cone as one locus.
 
 ## The Locus in State Space
 
@@ -151,7 +151,7 @@ $$
 |\mathbf r|^2=1 ,
 $$
 
-which was verified numerically for four random normalised module elements, with residuals at the level of $10^{-16}$. The mixed states have $|\mathbf r|<1$ and lie strictly inside. The boundary of the ball is thus the state-space image of the zero divisor cone, and the interior is the set of states whose density operator is invertible: the algebraic division property and the physical purity of a state are the same boundary. The companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* develops the geometry of the slice; here it supplies the state-space reading of the locus.
+which was verified numerically for four random normalised module elements, with residuals at the level of $10^{-16}$. The mixed states have $|\mathbf r|<1$ and lie strictly inside. The boundary of the ball is thus the state-space image of the zero divisor cone, and the interior is the set of states whose density operator is invertible: the algebraic division property and the physical purity of a state are the same boundary. The companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* develops the geometry of the slice; here it supplies the state-space interpretation of the locus.
 
 ### Invariance of the locus under the flow
 
@@ -177,7 +177,7 @@ This is the sharpest statement the article can make. The zero divisor cone is no
 
 ### Why the cone is not a causal boundary here
 
-The material cone is the light cone of $ict$-Minkowski space, and in the relativistic categories it bounds propagation. In the non-relativistic spin-0 subcategory it does not. The Schrödinger equation is parabolic: its characteristics are the trajectories of $\dot{\mathbf x}=\mathbf p/m$ at fixed time, and the domain of dependence of a point is a single time slice, not the interior of a cone. The non-relativistic Green function is nonzero for arbitrarily small time differences at arbitrarily large separations, which is the statement that the non-relativistic signal cone is degenerate — the whole time slice, not a light cone. The zero divisor cone therefore appears here as a locus of **states and momenta**, and as the boundary of approximations, but not as a horizon. The causal reading of the same cone belongs to the relativistic categories, where the Klein–Gordon and Dirac equations are hyperbolic and the cone is the propagation boundary.
+The material cone is the light cone of $ict$-Minkowski space, and in the relativistic categories it bounds propagation. In the non-relativistic spin-0 subcategory it does not. The Schrödinger equation is parabolic: its characteristics are the trajectories of $\dot{\mathbf x}=\mathbf p/m$ at fixed time, and the domain of dependence of a point is a single time slice, not the interior of a cone. The non-relativistic Green function is nonzero for arbitrarily small time differences at arbitrarily large separations, which is the statement that the non-relativistic signal cone is degenerate — the whole time slice, not a light cone. The zero divisor cone therefore appears here as a locus of **states and momenta**, and as the boundary of approximations, but not as a horizon. The causal interpretation of the same cone belongs to the relativistic categories, where the Klein–Gordon and Dirac equations are hyperbolic and the cone is the propagation boundary.
 
 ## Null Solutions of the Free Equation
 
@@ -211,7 +211,7 @@ whose free-equation residual was $2\times10^{-9}$ at the sampled points, and for
 
 ### Two cones, and which one the states live on
 
-The null solution brings out a distinction that the framework makes explicitly and that a first reading is likely to conflate. The biquaternion norm $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is a **general plain bilinear** form, and it is not positive definite; it vanishes on the zero divisor cone. The quantity that enters probabilities is a **different** object, the Hermitian form $\sum_\mu|Q_\mu|^2$, which is real, positive definite, and $\mathbb{C}$-antilinear in its first argument. For the null solution $\psi=u(e_1+ie_2)$ the two disagree in the sharpest possible way:
+The null solution brings out a distinction that the framework makes explicitly and that a first interpretation is likely to conflate. The biquaternion norm $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is a **general plain bilinear** form, and it is not positive definite; it vanishes on the zero divisor cone. The quantity that enters probabilities is a **different** object, the Hermitian form $\sum_\mu|Q_\mu|^2$, which is real, positive definite, and $\mathbb{C}$-antilinear in its first argument. For the null solution $\psi=u(e_1+ie_2)$ the two disagree in the sharpest possible way:
 
 $$
 N(\psi)=0,
@@ -228,7 +228,7 @@ The state module and the null solutions are then two faces of one fact. The modu
 
 ## What Stops at the Locus
 
-| Reading | What the locus bounds |
+| Interpretation | What the locus bounds |
 |---|---|
 | Algebra | The division property: $N\ne0$ is exactly invertibility; $\mathcal{Z}$ is the boundary of the invertible set |
 | Momentum space | The non-relativistic dispersion: spacelike for $p<2mc$, null at $p=2mc$, timelike beyond |
@@ -244,7 +244,7 @@ The table is the article's content in one view. The locus is the meeting point o
 
 **2. Does the non-relativistic locus have an observable signature?** The momentum-space locus is reached at $p=2mc$, which is far outside the non-relativistic regime; whether any non-relativistic experiment is sensitive to the proximity of the cone — through the sign of $N(\tilde{\mathcal P})$ or the complex null momenta of scattering theory — is not established.
 
-**3. Which real form carries the physics?** The complex null cone and the real cones of the material and informational sectors are different real forms of one locus. This article uses the real form for the state space and the momentum shell and the complex form for the algebraic solution space; whether a single reading covers both, and how the real structure $\flat$ relates them, is not settled here.
+**3. Which real form carries the physics?** The complex null cone and the real cones of the material and informational sectors are different real forms of one locus. This article uses the real form for the state space and the momentum shell and the complex form for the algebraic solution space; whether a single interpretation covers both, and how the real structure $\flat$ relates them, is not settled here.
 
 **4. Empirical content.** Every statement in this article is a statement about the algebraic location of standard quantities; no prediction distinguishing the reformulation from scalar non-relativistic quantum physics is offered.
 

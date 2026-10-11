@@ -121,7 +121,7 @@ only at $\tilde A=0$; the kernel always contains the line $\mathbb{C}\tilde A$, 
 parameter it is that line alone (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*).
 
 *Read as a physical statement.* The operator of the block is **never invertible**, its kernel always
-containing the line of its own parameter, since $\tilde A\diamond\tilde A=0$. Offered as a reading, the
+containing the line of its own parameter, since $\tilde A\diamond\tilde A=0$. Offered as an interpretation, the
 non-invertibility is the operator face of the same fact that lets the block have no unit and no
 idempotent: no element acts as an identity, so no multiplication by an element can be inverted.
 
@@ -144,7 +144,7 @@ space of maps annihilating the scalar line and acting on the vector subspace by 
 **every derivation is outer** (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*).
 
 *Read as a physical statement.* The multiplication operators are the **candidate** inner derivations,
-and they are not derivations of the block at all. Offered as a reading, the operation has a
+and they are not derivations of the block at all. Offered as an interpretation, the operation has a
 four-dimensional family of adjoint maps and a three-dimensional family of genuine infinitesimal
 automorphisms, and the two are disjoint: the symmetry of the operation is **outside** the operation.
 This is the first place the obstruction is visible.
@@ -181,7 +181,7 @@ of the Antisymmetric Quaternionic Algebra*.
 *Read as a physical statement.* The commutator of two multiplications is the multiplication of the value
 **plus a defect**, and the defect is the operator form of the Jacobi failure. Where the plain
 antisymmetric row APA has $[L^{\wedge}_{\tilde A},L^{\wedge}_{\tilde B}]=L^{\wedge}_{\tilde A\wedge\tilde B}$
-exactly, this block carries an extra term. Offered as a reading, the extra term is the price the natural
+exactly, this block carries an extra term. Offered as an interpretation, the extra term is the price the natural
 conjugation in the first slot charges the operator calculus, the same defect the siblings read as the
 associator of the parent and as the boost-like mixed terms, here a linear map of the algebra.
 
@@ -216,7 +216,7 @@ Algebra*, *The Jacobi Failure and the Associator Defect of the Antisymmetric Qua
 
 *Read as a physical statement.* The multiplication operators are the inner derivations of the
 commutator in name, and the bracket of two of them is generally **not** an inner derivation: they
-generate no Lie algebra and exponentiate to no group. Offered as a reading, this is the operator
+generate no Lie algebra and exponentiate to no group. Offered as an interpretation, this is the operator
 translation of the band's negative result, and it locates the failure in the deviation $D$, the operator
 form of the boost-like mixed term. The compact part is untouched: on the pure vectors the block is the
 cross product, the deviation vanishes, and the operators close on the three rotation directions.
@@ -268,7 +268,7 @@ not conjugated, the natural conjugation enters only through the projection $\mat
 no norm appears on the one-sided operator. The contrast with the general quaternionic row GQA is sharp:
 there the adjoint for the same form keeps the side and conjugates the parameter,
 $(L_{\tilde P})^{N}=L_{\tilde P^{\natural}}$, while here it carries the parameter through the plain
-product and leaves the operator family. Offered as a reading, the adjoint of a multiplication of the
+product and leaves the operator family. Offered as an interpretation, the adjoint of a multiplication of the
 block is a **transport out of the block**, blind to the scalar direction because the multiplication has
 no scalar direction to be adjointed in.
 
@@ -302,7 +302,7 @@ diagonal rescaling of the Gram matrix, which preserves both equalities.
 
 *Read as a physical statement.* The block has **no generators**: unlike the plain antisymmetric row,
 where every multiplication is skew-adjoint for the Killing form, here no nonzero multiplication is
-skew-adjoint for any natural form. Offered as a reading, this is the type-criterion face of the
+skew-adjoint for any natural form. Offered as an interpretation, this is the type-criterion face of the
 obstruction: an operation carrying no invariant non-degenerate form carries no generator, and the only
 self-adjoint multiplications are the multiples of the projection onto the vector subspace, the direction
 the mixed terms do not touch.
@@ -329,7 +329,7 @@ $N(\mathbf A)=1$, $\mathbf A=e_1$.
 
 *Read as a physical statement.* The **compact** parameters are exactly the self-adjoint sandwiches: the
 pure, rotation-like parameters make the sandwich symmetric for $N$, and the parameters with a scalar
-part, the boost-like directions, do not. Offered as a reading, the sandwich is where the rotation and
+part, the boost-like directions, do not. Offered as an interpretation, the sandwich is where the rotation and
 the boost directions separate cleanly, and the criterion is on a single parameter and not on a pair,
 because the block's right family is the negated left family.
 
@@ -353,7 +353,7 @@ $L_{\tilde A}$ on the left. The one-sided case also reads on the matrix, where p
 $M_{\tilde A}^{T}M_{\tilde A}=I_4$, which forces the zero matrix.
 
 *Read as a physical statement.* The block has **no form-preserving multiplication**: its operators are
-all singular, and a singular map preserves no non-degenerate form. Offered as a reading, the operation
+all singular, and a singular map preserves no non-degenerate form. Offered as an interpretation, the operation
 carries no internal isometry, as it carries no generator and no inner derivation; the isometry group the
 framework uses is that of the parent associative product, and the block is a deformation of it, not a
 group of transformations of its own.
@@ -367,7 +367,7 @@ enlargement (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*).
 
 *Read as a physical statement.* The block has no **inner** automorphism: no automorphism of the block is
 a multiplication by an element, because a multiplication is never injective while an automorphism is
-invertible. Offered as a reading, the symmetries of the operation are the maps of the vector subspace
+invertible. Offered as an interpretation, the symmetries of the operation are the maps of the vector subspace
 that preserve the cross product and fix the scalar direction, and they cannot be reduced to the
 operation itself; the operation's own transformations do not exist, which is the symmetry face of the
 obstruction.
@@ -378,14 +378,14 @@ The state space is $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsil
 left ideal of *The Spinor Space as a Module and as a Hilbert Space*, with the complementary ideal
 $\mathbb{B}\tilde\Pi_2$ of *The Complementary Space of the Spinor Space and Its Physical Meaning*.
 
-**Theorem (the action through the matrix model).** In the matrix model $\Phi:\mathbb{B}\to M_2(\mathbb{C})$
-with $\Phi(e_k)=-i\sigma_k$,
+**Theorem (the action through the matrix model).** In the matrix model $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$
+with $\mathsf{M}_2(e_k)=-i\sigma_k$,
 
 $$
-\Phi\bigl(\tilde P\diamond\tilde X\bigr)
-=\tfrac12\Bigl(\operatorname{adj}\Phi(\tilde P)\,\Phi(\tilde X)-\operatorname{adj}\Phi(\tilde X)\,\Phi(\tilde P)\Bigr) ,
+\mathsf{M}_2\bigl(\tilde P\diamond\tilde X\bigr)
+=\tfrac12\Bigl(\operatorname{adj}\mathsf{M}_2(\tilde P)\,\mathsf{M}_2(\tilde X)-\operatorname{adj}\mathsf{M}_2(\tilde X)\,\mathsf{M}_2(\tilde P)\Bigr) ,
 \qquad
-\Phi\bigl(\tilde P^{\natural}\bigr)=\operatorname{adj}\Phi(\tilde P) ,
+\mathsf{M}_2\bigl(\tilde P^{\natural}\bigr)=\operatorname{adj}\mathsf{M}_2(\tilde P) ,
 $$
 
 so $L_{\tilde P}$ acts by matrix multiplication twisted by the adjugate of the matrix of the parameter.
@@ -395,7 +395,7 @@ model is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaterni
 
 *Read as a physical statement.* Every left action carries the state space into the vector subspace and
 annihilates the centre: the block acts on the state space through its vector directions only, and
-through the adjugate of the parameter's matrix. Offered as a reading, the block's calculus has no state
+through the adjugate of the parameter's matrix. Offered as an interpretation, the block's calculus has no state
 of its own: the operation is alternating and has no idempotent, so no projector of the block acts as a
 state and no multiplication preserves the ideal. The only projector in the operator family is
 $L_{e_0}=P$, the projection onto the vector subspace, which is *The Specificities of the Antisymmetric
@@ -412,7 +412,7 @@ exists: every multiplication is singular.
 *Read as a physical statement.* In the plain ordinary row the sandwich and the inner automorphism are
 conjugations by the conjugate and by the inverse of one parameter, agreeing on the compact slice. The
 block has the sandwich and **no** inner automorphism: the conjugating operator an automorphism would
-need does not exist. Offered as a reading, the block has a symmetry of the form — the self-adjoint
+need does not exist. Offered as an interpretation, the block has a symmetry of the form — the self-adjoint
 sandwich at a pure parameter — and no symmetry of the product, and the gap between them is what the
 siblings read as the missing Lie structure.
 
@@ -427,7 +427,7 @@ operators with their pairwise products span a space of dimension twelve inside t
 endomorphism algebra. So the block has no versor and no spin group of its own, and the spin group of the
 framework is a group of two-sided operators of the associative product, cited and not derived here.
 
-*Read as a physical statement.* Offered as a reading, the spin group a physical theory uses is carried
+*Read as a physical statement.* Offered as an interpretation, the spin group a physical theory uses is carried
 by the associative product and its two-sided operators, and the block's calculus is not a group of
 transformations: it generates no versor and stays inside a proper subalgebra. The block is a bracket on
 the differential side of the algebra and not a group of operators on the transformation side.
@@ -503,7 +503,7 @@ The article states one cell of the grid of the twelve operator rows, and the bou
 what it must declare.
 
 - **The operation, the failure and the forms are not re-proved here.** The operation, its class, its
-  image and the group reading are *The Brackets That Do Not Close: the Jacobi Failure of the
+  image and the group interpretation are *The Brackets That Do Not Close: the Jacobi Failure of the
   Quaternionic Commutator*; the split of the value, the invariant forms, the trace form and the missing
   Lie structure are *Boosts, Mixed Terms and the Missing Lie Structure*; the cyclic sum is *The Jacobi
   Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*; and the forms are *The
@@ -520,15 +520,15 @@ what it must declare.
   of the Spinor Space and Its Physical Meaning*; the matrix model is *The 2×2 Matrix Element
   Representation $M_2(\mathbb{C})$ of Biquaternions*; and the versors and the spin group are *The
   Two-Sided Operators and the Spin Group*, which the block reaches in no way.
-- **The physical readings are readings**, the boost-like reading of the mixed term and the missing-Lie-
-  structure reading being the two siblings' business, labelled there and here.
+- **The physical interpretations are interpretations**, the boost-like interpretation of the mixed term and the missing-Lie-
+  structure interpretation being the two siblings' business, labelled there and here.
 
 **What the framework does not claim.** The article does not derive a physical group, form or symmetry
 from the operators of the block; it states the operator facts and reads them. It does not claim that the
 block's calculus is a calculus of observables: the observables and the generators belong to the
 **Hermitian** form of the sesquilinear rows, owned by *Observables, Gauge Generators and the Chirality of
 the Internal Action*. It does not repair the composition law, and it does not claim that the operators
-carry a higher structure; that reading is an open question recorded elsewhere.
+carry a higher structure; that interpretation is an open question recorded elsewhere.
 
 ## The Ledger
 
@@ -551,7 +551,7 @@ never skew for a nonzero one; the absence of any form-preserving multiplication;
 operators as the cross-product-preserving maps fixing $e_0$, of dimension three, with no inner
 automorphism; the matrix model of the action; and the absence of a module structure for the block.
 
-**Readings.** That the multiplication operators are the **candidate inner derivations** and are not
+**Interpretations.** That the multiplication operators are the **candidate inner derivations** and are not
 derivations of the block; that the bracket of two of them is generally not an inner derivation, measured
 by the deviation $D$, equivalently by the cyclic sum and by the associator; that the adjoint of a
 multiplication is a **transport out of the family**, the plain left multiplication by the parameter
@@ -570,17 +570,17 @@ multiplications is the multiplication of the value plus the deviation, so the op
 algebra and exponentiate to no group. Read as symmetries, they fail: every multiplication is singular,
 so the block carries no form-preserving operator, no isometry and no inner automorphism, and its
 symmetries lie outside itself. Read as forms, they fail: the block has no non-degenerate invariant form,
-so the adjoint has to be imported and then leaves the family. In the three readings the failure is one,
+so the adjoint has to be imported and then leaves the family. In the three interpretations the failure is one,
 and it is the operator expression of the band's word, **Obstruction**.
 
 On the pure vectors the block is the cross product, the deviation vanishes and the operators close, and
 the self-adjoint sandwiches are exactly the pure, rotation-like parameters; on the mixed terms the
 deviation is nonzero and closure fails, and the boost-like parameters make the sandwich non-symmetric.
-Offered as a reading, the operator calculus carries the compact rotations and fails on the boosts, and
+Offered as an interpretation, the operator calculus carries the compact rotations and fails on the boosts, and
 the operator form of the failure is the deviation $D(\tilde A,\tilde B)$, which the companion *Boosts,
 Mixed Terms and the Missing Lie Structure* reads as the anomaly of the internal symmetry. The group the
 framework reaches is read off the associative one-sided action, not off these operators, and the caution
-of the siblings stands: an obstruction constrains a reading without supplying one.
+of the siblings stands: an obstruction constrains an interpretation without supplying one.
 
 ## Summary
 
@@ -601,7 +601,7 @@ which **leaves the family**, carrying no norm; the type criteria are degenerate,
 exactly at a central parameter, so the self-adjoint family is $\mathbb{C}P$, and skew-adjoint only for
 zero, so the block has **no generator**, while the sandwich $\Theta_{\tilde A}=-(L_{\tilde A})^{2}$ is
 self-adjoint exactly at the pure, rotation-like parameters. The block has no form-preserving
-multiplication, no isometry, no inner automorphism, and no versor or spin group of its own. The reading
+multiplication, no isometry, no inner automorphism, and no versor or spin group of its own. The interpretation
 is the band's word **Obstruction**: the operators of the quaternionic commutator are the differential
 side of the frame that fails to be a Lie algebra, and the failure is measured by the deviation that is
 the operator form of the Jacobi identity.

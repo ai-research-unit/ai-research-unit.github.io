@@ -57,7 +57,7 @@ so that $PGL(V)$ is the quotient of $GL(V)$ by its centre $K^\times$; the same s
 
 **Remark.** The centre is the whole kernel, and this is the reason the operator group of a projective space is a quotient and not a subgroup of $GL(V)$: the scalars are operators on the vector space and the identity on the projective space, so they are invisible to the figure and are divided out. The quotient is the first place in this Part where an operator is genuinely a class rather than a map, and every statement about the operators is a statement about the classes.
 
-## The Two-Sided Reading
+## The Two-Sided Interpretation
 
 ### The Left and Right Translations
 

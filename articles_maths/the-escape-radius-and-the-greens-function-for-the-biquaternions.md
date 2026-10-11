@@ -64,7 +64,7 @@ and $G_{\tilde C}=0$ on $\mathcal K_{\tilde C}$: on every bounded orbit the sequ
 
 ## The Conditional Green's Function
 
-**Proposition (conditional existence and normalization).** Let $\delta>0$ and let $\Omega_{\tilde C,\delta}$ be the set of the points $\tilde Q\in\Omega_{\tilde C}$ whose orbit satisfies $\sigma_2(M_n)\ge\delta\,\sigma_1(M_n)$ for every $n$, where $M_n=\Phi(F_{\tilde C}^n(\tilde Q))$. Then $G_{\tilde C}$ is defined on $\Omega_{\tilde C,\delta}$, and on it
+**Proposition (conditional existence and normalization).** Let $\delta>0$ and let $\Omega_{\tilde C,\delta}$ be the set of the points $\tilde Q\in\Omega_{\tilde C}$ whose orbit satisfies $\sigma_2(M_n)\ge\delta\,\sigma_1(M_n)$ for every $n$, where $M_n=\mathsf{M}_2(F_{\tilde C}^n(\tilde Q))$. Then $G_{\tilde C}$ is defined on $\Omega_{\tilde C,\delta}$, and on it
 
 $$
 G_{\tilde C}(\tilde Q)=\log\|\tilde Q\|_E+O(1), \qquad \tilde Q\to\infty .
@@ -78,7 +78,7 @@ $$
 
 For a central parameter the whole pluripotential picture collapses to the complex one, because the orbit is the polynomial in one element and the spectrum separates.
 
-**Theorem (the Green's function of a central parameter).** Let $\tilde C=Ce_0$, let $G_C$ be the Green's function of $\zeta\mapsto\zeta^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\Phi(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then
+**Theorem (the Green's function of a central parameter).** Let $\tilde C=Ce_0$, let $G_C$ be the Green's function of $\zeta\mapsto\zeta^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then
 
 $$
 G_{\tilde C}(\tilde Q)=\max\bigl(G_C(\lambda_1),\,G_C(\lambda_2)\bigr),
@@ -86,7 +86,7 @@ $$
 
 and in particular $\tilde Q\in\Omega_{\tilde C}$ if and only if at least one eigenvalue escapes, while $\tilde Q\in\mathcal K_{\tilde C}$ if and only if both eigenvalues lie in the filled Julia set $K_C$.
 
-**Proof.** By the eigenvalue reduction the spectrum of $\Phi(F_{\tilde C}^n(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$. A matrix norm is comparable to the maximum modulus of the eigenvalues up to a constant depending only on the matrix and its diagonaliser, so $\log\|\Phi(F^n(\tilde Q))\|_F=\max_j\log|q_n(\lambda_j)|+O(1)$; dividing by $2^n$ and letting $n\to\infty$ the $O(2^{-n})$ term vanishes and the limit is the maximum of the two complex Green's functions. The escape and boundedness statements follow from $\Omega=\{G>0\}$ and $\mathcal K=\{G=0\}$ in the complex theory.
+**Proof.** By the eigenvalue reduction the spectrum of $\mathsf{M}_2(F_{\tilde C}^n(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$. A matrix norm is comparable to the maximum modulus of the eigenvalues up to a constant depending only on the matrix and its diagonaliser, so $\log\|\mathsf{M}_2(F^n(\tilde Q))\|_F=\max_j\log|q_n(\lambda_j)|+O(1)$; dividing by $2^n$ and letting $n\to\infty$ the $O(2^{-n})$ term vanishes and the limit is the maximum of the two complex Green's functions. The escape and boundedness statements follow from $\Omega=\{G>0\}$ and $\mathcal K=\{G=0\}$ in the complex theory.
 
 **Corollary (the escape radius of the central slice).** For $\tilde C=Ce_0$ every point whose matrix has an eigenvalue of modulus exceeding $1+|C|$ escapes, and the level sets of $G_{\tilde C}$ on a slice are the level sets of the two complex Green's functions.
 
@@ -109,7 +109,7 @@ There is no single escape radius for a biquaternion parameter, because a non-zer
 | $\mathcal K_{\tilde C}$, $J_{\tilde C}$ | the filled Julia set and the Julia set |
 | $G_{\tilde C}$ | the Green's function $\lim 2^{-n}\log\|F_{\tilde C}^n\|_E$ |
 | $G_C$, $K_C$ | the classical Green's function and filled Julia set of $\zeta\mapsto\zeta^2+C$ |
-| $\delta=\sigma_2/\sigma_1$ | the reciprocal condition number of $\Phi(\tilde Q)$ |
+| $\delta=\sigma_2/\sigma_1$ | the reciprocal condition number of $\mathsf{M}_2(\tilde Q)$ |
 | $\Omega_{\tilde C,\delta}$ | the $\delta$-regular part of the escaping set |
 | $R_\delta$ | the conditional escape radius |
 | $q_n$ | the iterates of the complex quadratic map |

@@ -92,7 +92,7 @@ and the equilibrium state of the potential $-s\log|\varphi'|$ is the self-simila
 
 ## The Correspondence with the Transfer Operator of Part III
 
-### The Perron–Frobenius Reading
+### The Perron–Frobenius Interpretation
 
 **Remark (transfer and Koopman in the non-invertible case).** In *The Transfer Operator* and *Time Reversal and the Transfer Operator* of Part III the transfer operator of a measure-preserving dynamical system is the inverse of the Koopman operator, because the system is invertible; the limit dynamical system of a self-similar group is **not invertible** — the shift $\varphi$ is $d$-to-one — and the two operators are transposes, not inverses:
 $$

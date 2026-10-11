@@ -10,11 +10,11 @@ $$
 
 in which $\nabla = \gamma^\mu\partial_\mu$ is the spacetime vector derivative, $\psi$ is a **spinor** — an even-graded multivector — $I$ is the pseudoscalar, $\sigma_3$ a fixed bivector, and $\gamma_0$ a fixed timelike vector. The equation is a real equation: no complex numbers are introduced, no Dirac matrices are used, and the imaginary unit of the matrix theory is replaced by the geometric pseudoscalar. Hestenes reads $\psi$ as a Lorentz rotor times a density, so that the Dirac spinor's eight real components are the six parameters of a Lorentz transformation plus a density and an angle; the electron's spin is a geometric rotation, and the current is a geometric vector.
 
-The connection to the biquaternion framework is closer than for any other topic in this series, and it is worth stating precisely at the outset. The **even subalgebra** of the spacetime algebra is, as a real algebra, the **biquaternion algebra** $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb H$ of the companion articles. The Dirac–Hestenes spinor $\psi$ is an even multivector; it *is* a biquaternion, with the same eight real components as the framework's field. Moreover the STA pseudoscalar $I$ commutes with every even element and squares to $-1$, so it is exactly the **central imaginary unit** $i$ of $\mathbb B$. The Dirac–Hestenes equation and the framework's equation are therefore two readings of the same algebra, and this article identifies where they agree and where they do not.
+The connection to the biquaternion framework is closer than for any other topic in this series, and it is worth stating precisely at the outset. The **even subalgebra** of the spacetime algebra is, as a real algebra, the **biquaternion algebra** $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb H$ of the companion articles. The Dirac–Hestenes spinor $\psi$ is an even multivector; it *is* a biquaternion, with the same eight real components as the framework's field. Moreover the STA pseudoscalar $I$ commutes with every even element and squares to $-1$, so it is exactly the **central imaginary unit** $i$ of $\mathbb B$. The Dirac–Hestenes equation and the framework's equation are therefore two interpretations of the same algebra, and this article identifies where they agree and where they do not.
 
 What this buys the framework is a sharper statement of one of its open questions. The Dirac–Hestenes equation is not written with left multiplication alone: the terms $\psi I\sigma_3$ and $m\psi\gamma_0$ multiply the spinor on the **right**, by a fixed bivector and by the fixed Clifford-**odd** vector $\gamma_0$. The companion article on minimal coupling records, as an unresolved choice, whether the framework's matter field sits with the gradient on the left or on the right, and records that the conserved current needs a Clifford-odd $\gamma^0$. The Dirac–Hestenes equation is the standard formulation in which exactly that structure is explicit. This article does not resolve the framework's choice; it exhibits the formulation in which the choice is forced.
 
-The article is organised as follows. The next section introduces the spacetime algebra. The third states the Dirac–Hestenes equation and reduces it to the matrix Dirac equation. The fourth treats the spinor and its observables. The fifth treats the symmetries and the zitterbewegung reading. The sixth works out the relation to the biquaternion framework in detail. The closing sections are the open questions, the summary, the notation table and the literature.
+The article is organised as follows. The next section introduces the spacetime algebra. The third states the Dirac–Hestenes equation and reduces it to the matrix Dirac equation. The fourth treats the spinor and its observables. The fifth treats the symmetries and the zitterbewegung interpretation. The sixth works out the relation to the biquaternion framework in detail. The closing sections are the open questions, the summary, the notation table and the literature.
 
 ## Spacetime Algebra
 
@@ -82,7 +82,7 @@ $$
 \psi = R\left(\rho e^{i\beta}\right)^{1/2},
 $$
 
-where $R$ is a unimodular even multivector — a **rotor**, i.e. a Lorentz transformation — $\rho\ge0$ is a scalar **density**, and $\beta$ is a scalar angle (the Yvon–Takabayasi angle, zero for a pure electron state). The counting is exact: $R$ has the six parameters of a Lorentz transformation, $\rho$ and $\beta$ add two, giving eight real components, the dimension of a Dirac spinor. The physical reading is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
+where $R$ is a unimodular even multivector — a **rotor**, i.e. a Lorentz transformation — $\rho\ge0$ is a scalar **density**, and $\beta$ is a scalar angle (the Yvon–Takabayasi angle, zero for a pure electron state). The counting is exact: $R$ has the six parameters of a Lorentz transformation, $\rho$ and $\beta$ add two, giving eight real components, the dimension of a Dirac spinor. The physical interpretation is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
 
 ### The current and the bilinears
 
@@ -126,7 +126,7 @@ Charge conjugation is the simplest: a right multiplication by the fixed bivector
 
 ### Zitterbewegung
 
-Hestenes' reading of the Dirac equation interprets the spinor's rotation as a physical rotation of a local frame, and the rapid oscillatory motion of a relativistic wave packet — zitterbewegung — as the rotation of the electron's frame along its world line. The interpretation has been extended into a framework for locally varying vector- and scalar-valued observables. The framework's own companion article *Zitterbewegung in Biquaternionic Form* treats the same effect algebraically, via the structure of the velocity operator; the STA reading is the geometric counterpart, and the two share the observation that the oscillating quantity is a rotation.
+Hestenes' interpretation of the Dirac equation interprets the spinor's rotation as a physical rotation of a local frame, and the rapid oscillatory motion of a relativistic wave packet — zitterbewegung — as the rotation of the electron's frame along its world line. The interpretation has been extended into a framework for locally varying vector- and scalar-valued observables. The framework's own companion article *Zitterbewegung in Biquaternionic Form* treats the same effect algebraically, via the structure of the velocity operator; the STA interpretation is the geometric counterpart, and the two share the observation that the oscillating quantity is a rotation.
 
 ## Relation to the Biquaternion Framework
 
@@ -152,7 +152,7 @@ The Dirac–Hestenes equation is an **equivalent rewriting** of the Dirac equati
 
 ### The Algebra of Physical Space and the Spacetime Algebra, Compared
 
-The biquaternion framework is one of two readings of the same even algebra, and the other reading — the **algebra of physical space** of Baylis (*Relativity in Introductory Physics*, §VI; *Paravectors and the Geometry of Spacetime*) — is worth setting beside the spacetime algebra here, because the comparison is the reason the series prefers the smaller algebra.
+The biquaternion framework is one of two interpretations of the same even algebra, and the other interpretation — the **algebra of physical space** of Baylis (*Relativity in Introductory Physics*, §VI; *Paravectors and the Geometry of Spacetime*) — is worth setting beside the spacetime algebra here, because the comparison is the reason the series prefers the smaller algebra.
 
 Both are $\mathrm{Cl}_{3,0}$, the even subalgebra of $\mathrm{Cl}_{1,3}$, and both therefore have **eight** real independent elements against the **sixteen** of the full spacetime algebra. The generator identifications are
 

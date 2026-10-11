@@ -14,7 +14,7 @@ The question is a physical one, and it has a physical answer. The Lorentz transf
 
 Three results organise the answer. The first is a **central invariance**: multiplying the acting element by a central scalar multiplies the sandwich by the squared modulus of that scalar. Because the scalar imaginary $i$ is central, the remarkable subspaces collapse to four **operator classes**: the centre, the vector subspace, the two halves together, and the two sectors together; an antiquaternion acts exactly as its real quaternion, and an element of the material sector acts exactly as the corresponding informational element. The second is that the operator's **type** is decided by the subspace in a sharp way: the centre gives the dilations, the vector subspace gives the similarities, the rotations by $\pi$ among them, the two halves give the rotations, and the two sectors give the similarities, which on the unit-norm slice are the Lorentz transformations: the boosts, and the boosts composed with a rotation by $\pi$ on the negative-norm branch. The third is the answer to the question the series puts to the Hermitian subspace: **the Lorentz transformation of the corpus is the sandwich of a unit-norm element of $\mathbb{M}_+$**, so the informational sector is the home of the boosts, and the material sector reaches the same family through the central imaginary.
 
-The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ and $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$; $\hat{q}$ is a unit real quaternion; and the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.
+The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ and $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$; $\hat{q}$ is a unit real quaternion; and the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
 ## The Central Factor Leaves the Operator Alone
 
@@ -69,7 +69,7 @@ $$
 
 **Proof.** $\operatorname{H}_{\tilde{Q}\tilde{R}}(\tilde S) = \tilde{Q}\tilde{R}\tilde S\tilde{R}^{*}\tilde{Q}^{*} = \operatorname{H}_{\tilde{Q}}\!\left(\operatorname{H}_{\tilde{R}}(\tilde S)\right)$.
 
-The identity is the statement that the sandwich is an action of the group of units, not merely a collection of linear maps: the individual maps are not algebra automorphisms, but they compose as their elements do. The case of rotors is stated in *Biquaternion Rotations and Lorentz Transformations*, §*Composition of Operators*; the identity holds for every unit, which is what the subspace reading needs. It is the tool that decomposes an operator whose element is a product, and it is used twice below.
+The identity is the statement that the sandwich is an action of the group of units, not merely a collection of linear maps: the individual maps are not algebra automorphisms, but they compose as their elements do. The case of rotors is stated in *Biquaternion Rotations and Lorentz Transformations*, §*Composition of Operators*; the identity holds for every unit, which is what the subspace interpretation needs. It is the tool that decomposes an operator whose element is a product, and it is used twice below.
 
 ## The Centre: the Operator of a Complex Scalar
 
@@ -127,7 +127,7 @@ and the map is the rotation by $\pi$ about $\hat{\mathbf{u}}$: it fixes $e_0$ an
 |---|---|---|---|---|---|---|---|---|
 | $\operatorname{H}_{e_1}(\tilde S)$ | $e_0$ | $e_1$ | $-e_2$ | $-e_3$ | $ie_0$ | $ie_1$ | $-ie_2$ | $-ie_3$ |
 
-which is the rotation through $\pi$ about $e_1$, as the polar article's reading of the vector subspace — the rotor is a unit vector in the plane of the element — leads one to expect. The real unit vectors therefore realise the rotations by $\pi$ and nothing else, and they are the elements whose operators are the most nearly faithful of the family.
+which is the rotation through $\pi$ about $e_1$, as the polar article's interpretation of the vector subspace — the rotor is a unit vector in the plane of the element — leads one to expect. The real unit vectors therefore realise the rotations by $\pi$ and nothing else, and they are the elements whose operators are the most nearly faithful of the family.
 
 ### The Sandwich of a Vector Is a Similarity
 
@@ -276,13 +276,13 @@ $$
 \operatorname{H}_{\tilde{Q}} = \operatorname{H}_{i\tilde{Q}} , \qquad i\tilde{Q}\in\mathbb{M}_+ ,
 $$
 
-so the sandwich of a four-vector is the sandwich of the informational element $i\tilde{Q}$, and the material sector adds no operator family: the boosts, the rotations by $\pi$, and their compositions are already all present in the informational sector. The reading is the one the corpus uses everywhere: the same Lorentz transformation can be written with a Hermitian form, which is the informational reading, and with a four-vector, which is the material reading; the traceless Hermitian elements $i\hat{\mathbf{u}}$ correspond exactly to the unit spacelike four-vectors $-\hat{\mathbf{u}}$ and act as the rotations by $\pi$.
+so the sandwich of a four-vector is the sandwich of the informational element $i\tilde{Q}$, and the material sector adds no operator family: the boosts, the rotations by $\pi$, and their compositions are already all present in the informational sector. The interpretation is the one the corpus uses everywhere: the same Lorentz transformation can be written with a Hermitian form, which is the informational interpretation, and with a four-vector, which is the material interpretation; the traceless Hermitian elements $i\hat{\mathbf{u}}$ correspond exactly to the unit spacelike four-vectors $-\hat{\mathbf{u}}$ and act as the rotations by $\pi$.
 
-**Example.** The element of the previous example, $\tilde{Q} = \sqrt3\,e_0 + 2i\,e_3$, has $i\tilde{Q} = \sqrt3\,ie_0 - 2e_3$, a four-vector of biquaternion norm $N = -3+4 = 1$, that is, a unit spacelike four-vector; and $\operatorname{H}_{i\tilde{Q}}(ie_0) = 7ie_0 - 4\sqrt3e_3$ with the same right-hand side, so the two readings agree element by element, as the central rule requires.
+**Example.** The element of the previous example, $\tilde{Q} = \sqrt3\,e_0 + 2i\,e_3$, has $i\tilde{Q} = \sqrt3\,ie_0 - 2e_3$, a four-vector of biquaternion norm $N = -3+4 = 1$, that is, a unit spacelike four-vector; and $\operatorname{H}_{i\tilde{Q}}(ie_0) = 7ie_0 - 4\sqrt3e_3$ with the same right-hand side, so the two interpretations agree element by element, as the central rule requires.
 
 ## The Operator Dictionary
 
-The remarkable subspaces, the operator each produces, and the subspace's own reading, in one table. The kernel column records the kernel of the operator inside the class; on the unit-norm slice it reduces to the fibre $\{\pm e_0\}$ in every class.
+The remarkable subspaces, the operator each produces, and the subspace's own interpretation, in one table. The kernel column records the kernel of the operator inside the class; on the unit-norm slice it reduces to the fibre $\{\pm e_0\}$ in every class.
 
 | subspace | acting element | the sandwich | kernel inside the class | the subspace's role |
 |---|---|---|---|---|
@@ -297,7 +297,7 @@ The remarkable subspaces, the operator each produces, and the subspace's own rea
 
 The two articles restrict the same remarkable subspaces, and the comparison is a dictionary between the two restrictions. The polar article asks which of the four factors $r$, $e^{i\alpha}$, $B$ and $\hat{q}$ a subspace can carry; this article asks which operator an element of the subspace produces. The answers pair up: the centre is the home of the scale and the phase, and its operator is trivial; the vector subspace is the only one that carries the phase freely together with a nontrivial boost and rotor, and its conjugation operator is the involution; the two halves carry the rotor alone, and their operator is the rotation; the two sectors carry the boost, and their sandwich is the boost on the unit-norm slice and a similarity off it. In each case the factor that a subspace is able to carry is the factor that turns into the operator: the rotor into the rotation, the boost into the boost, and the scale and the phase into nothing at all, since they lie in the centre and the centre is the kernel.
 
-The comparison also explains an asymmetry of this article. The polar representation loses factors when the element is restricted, and the loss is one-sided: a subspace is unable to carry a factor. The operator reading loses **operators** when the acting element is restricted, and the loss goes the other way: the remarkable subspaces produce only four operator classes, and inside a class they produce the same operator element by element. The two directions of restriction are the two halves of the same statement about the algebra, and the central circle, which is the kernel of the operator, is what makes them differ.
+The comparison also explains an asymmetry of this article. The polar representation loses factors when the element is restricted, and the loss is one-sided: a subspace is unable to carry a factor. The operator interpretation loses **operators** when the acting element is restricted, and the loss goes the other way: the remarkable subspaces produce only four operator classes, and inside a class they produce the same operator element by element. The two directions of restriction are the two halves of the same statement about the algebra, and the central circle, which is the kernel of the operator, is what makes them differ.
 
 **The operator factorises through the boost and the rotor, and doubles their parameters.** With the polar word $\tilde{Q} = re^{i\alpha}B\hat{q}$ and $\tilde{\Lambda} = B\hat{q}$ of unit norm,
 
@@ -305,7 +305,7 @@ $$
 \operatorname{H}_{\tilde{Q}} = r^{2}\,\operatorname{H}_{\tilde{\Lambda}},
 $$
 
-because the Hermitian conjugates of the four factors are $\hat{q}^{*} = \hat{q}^{-1}$, $B^{*} = B$, $r^{*} = r$ and $(e^{i\alpha})^{*} = e^{-i\alpha}$, so the two central factors cancel against their inverses. A non-central factor occurs once on each side, so its parameter is deposited twice: the rotor of angle $\theta$ acts by the doubled angle, and the boost of rapidity $\psi$ acts by the doubled rapidity, as the diagonal case $\Phi(B) = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ shows explicitly, the operator storing the half-rapidity and producing the rapidity. The four factors and their range are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*.
+because the Hermitian conjugates of the four factors are $\hat{q}^{*} = \hat{q}^{-1}$, $B^{*} = B$, $r^{*} = r$ and $(e^{i\alpha})^{*} = e^{-i\alpha}$, so the two central factors cancel against their inverses. A non-central factor occurs once on each side, so its parameter is deposited twice: the rotor of angle $\theta$ acts by the doubled angle, and the boost of rapidity $\psi$ acts by the doubled rapidity, as the diagonal case $\mathsf{M}_2(B) = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ shows explicitly, the operator storing the half-rapidity and producing the rapidity. The four factors and their range are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*.
 
 ## Worked Examples
 
@@ -339,11 +339,11 @@ $\tilde{Q} = \sqrt3e_0+2ie_3$: $\operatorname{H}_{\tilde{Q}}(ie_0) = 7ie_0 - 4\s
 
 ### A Unit Spacelike Four-Vector
 
-$i\tilde{Q} = \sqrt3ie_0 - 2e_3$, of biquaternion norm $1$: the same operators as $\tilde{Q}$, with $\operatorname{H}_{i\tilde{Q}}(ie_0) = 7ie_0-4\sqrt3e_3$, which is the material-sector reading of the previous example.
+$i\tilde{Q} = \sqrt3ie_0 - 2e_3$, of biquaternion norm $1$: the same operators as $\tilde{Q}$, with $\operatorname{H}_{i\tilde{Q}}(ie_0) = 7ie_0-4\sqrt3e_3$, which is the material-sector interpretation of the previous example.
 
 ## Physical Readings
 
-The sandwich reads as an isometry of the form of each subspace, and the article's own reading is that one map gives one symmetry per subspace. Read on the split, the sandwich is the reason a change of frame cannot mix the material and the informational data: the acting element keeps the grading, so the relativity of the frame and the sharpness of the split are compatible (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*). Read on the clock, the unit-norm slice of the sandwich is the group that moves the ledger and does not move the phase, which is why the temporal reading of the exchange and the transformation theory of the material sector are separate.
+The sandwich reads as an isometry of the form of each subspace, and the article's own interpretation is that one map gives one symmetry per subspace. Read on the split, the sandwich is the reason a change of frame cannot mix the material and the informational data: the acting element keeps the grading, so the relativity of the frame and the sharpness of the split are compatible (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*). Read on the clock, the unit-norm slice of the sandwich is the group that moves the ledger and does not move the phase, which is why the temporal interpretation of the exchange and the transformation theory of the material sector are separate.
 
 ## Summary
 

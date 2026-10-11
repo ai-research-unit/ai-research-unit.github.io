@@ -317,7 +317,7 @@ It is worth being precise about what is *not* claimed here. The sign that a roto
 
 **Standard topology transcribed.** The polar decomposition of $GL_2(\mathbb{C})$, the diffeomorphism $SL(2,\mathbb{C})\cong SU(2)\times\mathbb{R}^3$, the deformation retraction, the fibration $SO(3)\to SO^+(1,3)\to\mathbb{H}^3$, and the homotopy groups $\pi_1(SO(3)) = \mathbb{Z}/2$, $\pi_3(S^3) = \mathbb{Z}$ are standard Lie-group topology. The Thomas–Wigner rotation and its angle are standard relativistic kinematics. The algebra reproduces and unifies them; it does not replace them.
 
-**Interpretation.** The reading of the two sheets as the algebraic home of the spin degree of freedom is the framework's hypothesis and belongs to the quantum sibling; the non-quantum reading is simply that the rotor, not the four-vector, is the element that carries the frame, and that the rotor remembers a $2\pi$ rotation while the four-vector does not.
+**Interpretation.** The interpretation of the two sheets as the algebraic home of the spin degree of freedom is the framework's hypothesis and belongs to the quantum sibling; the non-quantum interpretation is simply that the rotor, not the four-vector, is the element that carries the frame, and that the rotor remembers a $2\pi$ rotation while the four-vector does not.
 
 ## Open Questions
 

@@ -162,7 +162,7 @@ $$
 
 with the $i\epsilon$ prescription that selects the positive-frequency part for the forward propagation. Its scalar two-point function is the Green's function of the parent equation; the companion article *The Feynman Propagator in Biquaternionic Form* constructs the analogous object for the spin-$\tfrac12$ field, and the scalar case is the standard one.
 
-The biquaternion reading of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde{K}=i\omega\,e_0+\mathbf{p}$, the biquaternion norm is $N(\tilde{K})=(-\omega^2+\mathbf{p}^2)e_0$, so that $p^2=-N(\tilde{K})$ and
+The biquaternion interpretation of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde{K}=i\omega\,e_0+\mathbf{p}$, the biquaternion norm is $N(\tilde{K})=(-\omega^2+\mathbf{p}^2)e_0$, so that $p^2=-N(\tilde{K})$ and
 
 $$
 p^2-\mu^2=-\left(N(\tilde{K})+\mu^2\right),
@@ -218,7 +218,7 @@ $$
 =\exp\!\left(-\frac{1}{2}\int d^3x\,d^3y\;\phi(\mathbf{x})\,K(\mathbf{x}-\mathbf{y})\,\phi(\mathbf{y})\right),
 $$
 
-where $K$ has Fourier symbol $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the biquaternion norm's square root. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\Psi[\phi_f,t_f]=\int\mathcal{D}\phi_i\,K(\phi_f,t_f;\phi_i,t_i)\Psi[\phi_i,t_i]$ is its kernel. The framework's reading is that the wave functional is a functional of **central-valued** configurations, $\Psi[\phi]=\Psi[\phi\,e_0]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.
+where $K$ has Fourier symbol $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the biquaternion norm's square root. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\Psi[\phi_f,t_f]=\int\mathcal{D}\phi_i\,K(\phi_f,t_f;\phi_i,t_i)\Psi[\phi_i,t_i]$ is its kernel. The framework's interpretation is that the wave functional is a functional of **central-valued** configurations, $\Psi[\phi]=\Psi[\phi\,e_0]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.
 
 ## What Is Standard and What Is Open
 
@@ -246,7 +246,7 @@ $$
 
 so the field generates a CCR algebra with central brackets; at equal times the commutator vanishes, and for spacelike separation it vanishes as well, which is microcausality. The two-point function is the positive-frequency Wightman function, annihilated by the Klein–Gordon operator, and the Feynman propagator is its time-ordered continuation with $\Delta_F(\tilde{K})=-i/(N(\tilde{K})+\mu^2-i\epsilon)$; its pole is the mass-shell level set of the biquaternion norm. The field transforms as a scalar under the Poincaré group and by the central phase under the $U(1)$, and the phase is central because the field's value space is.
 
-The biquaternion content of the field operator is therefore confined to its value space and its phases: central-valuedness, the trivial rotor action, and the biquaternion-norm reading of the mass shell and the propagator pole. The ladder, the Fock space and the correlation functions are the standard bosonic construction on an imported module, and the algebra supplies no part of them; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves the exclusion by the trace of a commutator. The field is a scalar with respect to $\mathbb{B}$ and a standard bosonic operator field on the outside.
+The biquaternion content of the field operator is therefore confined to its value space and its phases: central-valuedness, the trivial rotor action, and the biquaternion-norm interpretation of the mass shell and the propagator pole. The ladder, the Fock space and the correlation functions are the standard bosonic construction on an imported module, and the algebra supplies no part of them; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves the exclusion by the trace of a commutator. The field is a scalar with respect to $\mathbb{B}$ and a standard bosonic operator field on the outside.
 
 ## Summary of Notation
 

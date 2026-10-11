@@ -8,7 +8,7 @@ The KMS condition has imaginary time built into its structure. The analytic cont
 
 The material sector $\mathbb{M}_-$ of the biquaternion algebra is such a framework. Its time coordinate is $ict$, which is imaginary by construction. The purpose of this article is to make this structural fit explicit, to state the KMS condition in the biquaternion language, and to flag what is established and what remains to be developed.
 
-The article is organized as follows. First the KMS condition is recalled as established physics, for both bosons and fermions. Then the role of imaginary time in the condition is made explicit. Then the material sector $\mathbb{M}_-$ is recalled, and the naturalness of imaginary time in this sector is discussed. Then the KMS condition is stated in the biquaternion language, and the structural fit is analyzed. The article closes with the status of the reading and with directions for future work.
+The article is organized as follows. First the KMS condition is recalled as established physics, for both bosons and fermions. Then the role of imaginary time in the condition is made explicit. Then the material sector $\mathbb{M}_-$ is recalled, and the naturalness of imaginary time in this sector is discussed. Then the KMS condition is stated in the biquaternion language, and the structural fit is analyzed. The article closes with the status of the interpretation and with directions for future work.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with its remarkable subspaces as in the basic algebra article; the three used here are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the material sector $\mathbb{M}_-$, and the informational sector $\mathbb{M}_+$. Throughout, $c$ denotes the speed of light in the medium, and $\hbar$ and $k_B$ are the reduced Planck constant and Boltzmann's constant.
 
@@ -175,7 +175,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 **Interpretation.**
 
 - That the KMS condition acquires a natural algebraic interpretation in the material sector, because the imaginary time is intrinsic to the sector and the modular Hamiltonian lies in $\mathbb{M}_+$.
-- That this provides a structural reading of the KMS condition in which the material and informational sectors are connected through the thermal structure.
+- That this provides a structural interpretation of the KMS condition in which the material and informational sectors are connected through the thermal structure.
 - That the antiperiodicity of the time-ordered fermionic correlation functions would be related to a $\mathbb{Z}/2$ grading of the algebra, if such a grading is introduced.
 
 **Open.**
@@ -208,7 +208,7 @@ The KMS condition has imaginary time built into it. The analytic continuation $t
 
 The material sector $\mathbb{M}_-$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $ict$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, acquires a natural algebraic interpretation in this sector. The shift $t \to t + i\beta$ is a shift in the coefficient $q'_0 = ct$ by an imaginary amount, and the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
 
-The modular Hamiltonian $K = -\log \rho$ of the KMS condition is a Hermitian element of the algebra, and therefore lies in the informational sector $\mathbb{M}_+$. This is an algebraic fact, not an interpretation. Its interpretive content is that the modular evolution, the temperature, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields. This provides a natural structural reading of the KMS condition, in which the material and informational sectors are connected through the thermal structure.
+The modular Hamiltonian $K = -\log \rho$ of the KMS condition is a Hermitian element of the algebra, and therefore lies in the informational sector $\mathbb{M}_+$. This is an algebraic fact, not an interpretation. Its interpretive content is that the modular evolution, the temperature, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields. This provides a natural structural interpretation of the KMS condition, in which the material and informational sectors are connected through the thermal structure.
 
 The reformulation is an interpretation, not a derivation. The KMS condition is established physics; the biquaternion framework provides a natural setting for it, but does not derive it. Whether the reformulation leads to new results is an open question.
 

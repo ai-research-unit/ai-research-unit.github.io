@@ -22,7 +22,7 @@ and the technical representation theory is the subject of *Split-Quaternion Elem
 
 The word **representation** is used in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The word **algebraic** contrasts with **polar**: the realizations here use only the algebra operations and the underlying real vector space, not the exponential or the roots of $-1$.
 
-**Objects and operators.** A realization writes the element as an array and decides nothing about how the array is used. The same $2 \times 2$ matrix $\Phi(\tilde q)$ is the split-quaternion written as an **object** — an array whose entries are its coordinates — and, once a column is placed beside it, the **operator** acting on that column. An operator appears exactly where an action on a carrier is specified; the carrier may be $\mathbb{R}^2$, a plane, or the algebra itself. This article supplies realizations and the module structures they define; the operator reading on the algebra — the adjoint action and the left and right multiplication operators — is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
+**Objects and operators.** A realization writes the element as an array and decides nothing about how the array is used. The same $2 \times 2$ matrix $\mathsf{M}_2(\tilde q)$ is the split-quaternion written as an **object** — an array whose entries are its coordinates — and, once a column is placed beside it, the **operator** acting on that column. An operator appears exactly where an action on a carrier is specified; the carrier may be $\mathbb{R}^2$, a plane, or the algebra itself. This article supplies realizations and the module structures they define; the operator reading on the algebra — the adjoint action and the left and right multiplication operators — is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
 
 **Notation.** A general split-quaternion is
 
@@ -91,10 +91,10 @@ The three pictures of the same element are:
 | model | $1$ | $e_1$ | $e_2$ | $e_3$ |
 |---|---|---|---|---|
 | Clifford $\mathrm{Cl}_{1,1}$ | $1$ | $f_2$ | $f_1$ | $f_1 f_2$ |
-| matrix $\Phi$ | $I_2$ | $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ | $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$ | $\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$ |
-| idempotent components | $\tilde\pi_1 + \tilde\pi_2$ | $\Phi(e_1)$ | $\tilde\pi_1 - \tilde\pi_2$ | $\Phi(e_3)$ |
+| matrix $\mathsf{M}_2$ | $I_2$ | $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ | $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$ | $\begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}$ |
+| idempotent components | $\tilde\pi_1 + \tilde\pi_2$ | $\mathsf{M}_2(e_1)$ | $\tilde\pi_1 - \tilde\pi_2$ | $\mathsf{M}_2(e_3)$ |
 
-The first two rows are the Clifford and matrix models of *Split-Quaternion Matrix Element Representations*, where the matrix model is the defining representation $\Phi(q_0+q_1 e_1+q_2 e_2+q_3 e_3) = \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$; the identification $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ is realised concretely by sending $f_1 \mapsto \begin{pmatrix} 0&1\\1&0\end{pmatrix}$ and $f_2 \mapsto \begin{pmatrix} 0&-1\\1&0\end{pmatrix}$, so that the matrix row above is the image of the basis. The third row records the decomposition by the idempotents $\tilde\pi_{1,2} = \tfrac12(1\pm e_2)$, under which $1$ reads as $\tilde\pi_1 + \tilde\pi_2$ and $e_2$ as $\tilde\pi_1 - \tilde\pi_2$, giving the splitting of the algebra into its two minimal left ideals as left modules; the images under the matrix model are $\Phi(\tilde\pi_1) = \tfrac12\begin{pmatrix} 1&1\\1&1\end{pmatrix}$ and $\Phi(\tilde\pi_2) = \tfrac12\begin{pmatrix} 1&-1\\-1&1\end{pmatrix}$, the two rank-one projections.
+The first two rows are the Clifford and matrix models of *Split-Quaternion Matrix Element Representations*, where the matrix model is the defining representation $\mathsf{M}_2(q_0+q_1 e_1+q_2 e_2+q_3 e_3) = \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$; the identification $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ is realised concretely by sending $f_1 \mapsto \begin{pmatrix} 0&1\\1&0\end{pmatrix}$ and $f_2 \mapsto \begin{pmatrix} 0&-1\\1&0\end{pmatrix}$, so that the matrix row above is the image of the basis. The third row records the decomposition by the idempotents $\tilde\pi_{1,2} = \tfrac12(1\pm e_2)$, under which $1$ reads as $\tilde\pi_1 + \tilde\pi_2$ and $e_2$ as $\tilde\pi_1 - \tilde\pi_2$, giving the splitting of the algebra into its two minimal left ideals as left modules; the images under the matrix model are $\mathsf{M}_2(\tilde\pi_1) = \tfrac12\begin{pmatrix} 1&1\\1&1\end{pmatrix}$ and $\mathsf{M}_2(\tilde\pi_2) = \tfrac12\begin{pmatrix} 1&-1\\-1&1\end{pmatrix}$, the two rank-one projections.
 
 ## Relation to the Representations of $\mathbb{B}$
 
@@ -126,7 +126,7 @@ As a module over itself the algebra splits as the direct sum of the two minimal 
 | $\tilde\pi_{1,2} = \tfrac12(1\pm e_2)$ | the two idempotents and the minimal left ideals | *Split-Quaternion Idempotents and Projections* |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ | the minimal left ideals | *Split-Quaternion Ideals and Peirce Decomposition* |
 | $N(\tilde q)$ | the split-quaternion norm / Clifford norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
-| $\Phi$ | the $2\times2$ real matrix model | *Split-Quaternion Matrix Element Representations* |
+| $\mathsf{M}_2$ | the $2\times2$ real matrix model | *Split-Quaternion Matrix Element Representations* |
 | $\mathbb{D}_2, \mathbb{D}_3$ | the split-complex planes | *Split-Quaternion Split-Complex Subspaces* |
 
 ## Further Reading

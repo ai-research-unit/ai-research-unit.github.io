@@ -23,7 +23,7 @@ $$
 \tilde Q\star\tilde Q = N(\tilde Q)\,e_0 , \qquad N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2} ,
 $$
 
-together with its reading: **the square of a material element is its interval**. The identity has two
+together with its interpretation: **the square of a material element is its interval**. The identity has two
 consequences that this article also owns, and both are about composition rather than about a single
 element. The value of the square is **multiplicative**, $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$;
 and because a vanishing factor forces a vanishing product, the **lightlike elements compose to lightlike
@@ -191,12 +191,12 @@ The general form of the statement is the level-set law
 $\{N=\lambda\}\star\{N=\mu\}\subseteq\{N=\lambda\mu\}$. A level set preserved by the product must satisfy
 $c^{2}=c$, so the preserved level sets are exactly $c=0$ and $c=1$.
 
-**Reading (the interval is a scale, not a conserved quantity).** The level-set law says that composition
+**Interpretation (the interval is a scale, not a conserved quantity).** The level-set law says that composition
 moves an element from the level $\lambda$ to the level $\lambda\mu$ when it meets an element of level
 $\mu$: the interval **multiplies**, so it behaves like a **scale** (a ratio, a unit-bearing number) and
 not like a conserved charge, which would be additive over a composition. A physical label that multiplies
 along a composition is a scaling label; only its vanishing set, $c=0$, and its fixed set, $c=1$, are
-preserved. The reading is a re-naming of the proved law and is offered as a reading; it is close to the
+preserved. The interpretation is a re-naming of the proved law and is offered as an interpretation; it is close to the
 "multiplicative charge" wording of the previous section, and it is recorded only because "charge" suggests
 an additive conserved quantity that this interval is not.
 
@@ -253,13 +253,13 @@ composite is the product of the types of the factors, and the null elements are 
 material sector $N$ takes both signs — in a randomised sample of $100$ material pairs the four cells were
 occupied $2$, $6$, $17$ and $75$ times — so a composition of two timelike operations is spacelike and the
 massive class is not closed. What is closed is the **lightlike** part of the causal set and nothing
-larger. The honest form of the reading is therefore "lightlike composes to lightlike", not "the causal set
+larger. The honest form of the interpretation is therefore "lightlike composes to lightlike", not "the causal set
 is closed".
 
 ## The Square Lands in the Informational Sector
 
 The square of a material element is not only central; it lands on one side of the central line, and the
-side is the informational one. This is a one-line fact with a physical reading, and it is stated here
+side is the informational one. This is a one-line fact with a physical interpretation, and it is stated here
 because it is the concrete coupling the two sectors of the framework otherwise lack.
 
 **Proposition.** For $\tilde Q\in\mathbb{M}_-$ the norm $N(\tilde Q)$ is **real**, and
@@ -274,7 +274,7 @@ $N(\tilde Q)e_0$ by the square identity.
 **Remark (verified).**
 central and real, and equals $N(\tilde Q)e_0$, to machine precision on all of them.
 
-**Reading.** The interval of a material operation is an **informational scalar**. Squaring is therefore a
+**Interpretation.** The interval of a material operation is an **informational scalar**. Squaring is therefore a
 map from the material sector to the informational sector, $\mathbb{M}_-\to\mathbb{M}_+$, written by the
 product and not added by hand; it is the algebraic form of the fact that the norm of a four-vector is a
 real number, and the real numbers are the scalar line of the informational sector. What the framework has
@@ -304,7 +304,7 @@ their overlap. On each of the two sectors one of the two families of parameters 
 term by term, so **$N$ is real on each sector separately** and complex only on a general element that mixes
 them. The imaginary part is therefore a pure **sector-mixing term**: it vanishes on $\mathbb{M}_+\cup\mathbb{M}_-$ and measures the overlap of the material and informational contents of an element. This is the
 quantity the introduction names when it says that the imaginary part of $N$ couples the two sectors through
-cross terms; the name offered here, as a labelled reading, is an **overlap** or mixing term: each term
+cross terms; the name offered here, as a labelled interpretation, is an **overlap** or mixing term: each term
 $q_\mu q'_\mu$ pairs one material parameter with one informational parameter of the same direction, $q'_0$
 with $q_0$ on the time direction and $q_k$ with $q'_k$ on each space direction.
 
@@ -314,8 +314,8 @@ any later block; it is recorded here for the name and for the exact reason it va
 
 ## The Reading: Composition Multiplies Intervals
 
-**Proposed reading, labelled as such.** The interval is a **multiplicative charge of the material
-composition**. Each clause below names a proved identity, and each is labelled as a reading.
+**Proposed interpretation, labelled as such.** The interval is a **multiplicative charge of the material
+composition**. Each clause below names a proved identity, and each is labelled as an interpretation.
 
 - **The interval of a material operation is its square.** On the material coordinate
 $\tilde Q=ict\,e_0+\mathbf x$ the square is $(-c^{2}t^{2}+\mathbf x^{2})e_0$, the Minkowski interval.
@@ -345,8 +345,8 @@ and not to the material one, for the reason given below.
 $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$ is a law of multiplication, and wherever $N\neq0$ a
 logarithm turns it into a law of addition,
 $\ln N(\tilde P\star\tilde Q)=\ln N(\tilde P)+\ln N(\tilde Q)$. The quantity $\tfrac12\ln N$ is therefore
-offered, **as a reading**, as the **additive potential** whose exponential is the interval: it adds over
-the composition where the interval multiplies. The logarithm is not introduced only for this reading. It
+offered, **as an interpretation**, as the **additive potential** whose exponential is the interval: it adds over
+the composition where the interval multiplies. The logarithm is not introduced only for this interpretation. It
 is already the quantity in which the framework measures information loss: the Lyapunov exponent of the
 informational sector is
 $\lambda=\lim_{t\to\infty}\tfrac1{2t}\log\bigl(\lvert N(\delta\tilde\rho(t))\rvert/\lvert N(\delta\tilde\rho(0))\rvert\bigr)$,
@@ -371,7 +371,7 @@ none of the weaker identities — not alternativity, not flexibility, not third-
 statement "if $N(\tilde P)=0$ then $N(\tilde P\star\tilde Q)=0$" and nothing more. A word of three
 operations has no bracketing-free value, and the rectangle of the square is defined for one element only.
 
-**The logarithm is multi-valued, and its use is confined to a sector.** The additive-potential reading
+**The logarithm is multi-valued, and its use is confined to a sector.** The additive-potential interpretation
 needs $N\neq0$, so it excludes the null cone, which is exactly the set the closure statement is about; and
 a logarithm of a complex number is defined only up to $2\pi i$, so at most its **real part**
 $\tfrac12\ln\lvert N\rvert$ is a well-defined real label, and only where $N$ is real. This is the
@@ -379,8 +379,8 @@ restriction under which the framework does use it: the Lyapunov exponent above i
 precisely because the informational sector's norm is real there. The algebra supplies neither the branch
 nor the physical meaning of the potential.
 
-**Open question.** Whether the multiplicative-charge reading is more than a naming is not settled here.
-The algebra proves the identity; the reading names $N$ a charge of the composition. What would make the
+**Open question.** Whether the multiplicative-charge interpretation is more than a naming is not settled here.
+The algebra proves the identity; the interpretation names $N$ a charge of the composition. What would make the
 naming content is a composition law of the physical operations that the multiplicative law explains, and
 the framework records the question rather than resolving it.
 
@@ -400,7 +400,7 @@ material sector, so the square lands on the real central line $\mathbb{R}e_0\sub
 the complex split $N=\sum_\mu\bigl(q_\mu^{2}-(q'_\mu)^{2}\bigr)+2i\sum_\mu q_\mu q'_\mu$, real on each
 sector and complex only on a sector-mixing element.
 
-**Readings.** That the interval of a material operation is its square and is a multiplicative charge of
+**Interpretations.** That the interval of a material operation is its square and is a multiplicative charge of
 the material composition; that composing two operations multiplies their intervals and moves them between
 the level sets, so the interval is a **scale** and not a conserved quantity; that the massless
 shell is the vanishing of the square; that lightlike propagation composes to lightlike propagation; that
@@ -427,7 +427,7 @@ sectors remains an open question of the introduction.
 
 The interval reads as the square of the composition, the mass as its charge and the sign as the sector. Two further readings belong with it. The norm is reversed by the central generator, $N(i\tilde Q) = -N(\tilde Q)$, so the exchange that ticks the clock also carries the sign of the interval, and the flip of signature between the two sectors is one application of the tick (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). And the interval is the form that a change of the local complex structure moves, so its sign at a point is data of the embedding rather than of the algebra (*Conventions in the Biquaternion Universe*).
 
-The square map is read as the **Born/measurement arrow**: the square $\tilde{Q}\mapsto\tilde{Q}^{2}$ is the only algebraic map that takes a material element to an informational one, so it is the framework's candidate for the algebraic step from a process to a probability, the map a measurement performs. The reading is labelled and its boundary is stated: the corpus's Born rule is the trace formula of *The Born Rule as a Trace Formula — Derivation and Comparison* and not the square map alone, so the reading names a shape and does not claim the derivation.
+The square map is read as the **Born/measurement arrow**: the square $\tilde{Q}\mapsto\tilde{Q}^{2}$ is the only algebraic map that takes a material element to an informational one, so it is the framework's candidate for the algebraic step from a process to a probability, the map a measurement performs. The interpretation is labelled and its boundary is stated: the corpus's Born rule is the trace formula of *The Born Rule as a Trace Formula — Derivation and Comparison* and not the square map alone, so the interpretation names a shape and does not claim the derivation.
 
 ## Summary
 
@@ -444,7 +444,7 @@ with the level-set law $\{N=\lambda\}\star\{N=\mu\}\subseteq\{N=\lambda\mu\}$; t
 set and the null set are closed, the null set exactly so, so lightlike propagation composes to lightlike
 propagation and a massless operation cannot be made massive by composition. The interval is therefore read
 as a **multiplicative charge** of the material composition, neither additive nor conserved in itself (its
-logarithm, offered as a reading and bounded by its caution, is the additive potential), whose neutral
+logarithm, offered as an interpretation and bounded by its caution, is the additive potential), whose neutral
 value is $1$ and whose absorbing value is $0$. Composition cannot generate mass: the causal type of a
 composite is the product of the causal types, so the massive class is not closed and only the lightlike
 class is. Because $N$ is real on the material sector, the square lands on the real central line

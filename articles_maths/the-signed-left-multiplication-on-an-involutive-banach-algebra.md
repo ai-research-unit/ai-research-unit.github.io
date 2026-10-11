@@ -115,7 +115,7 @@ and the signed family carries no information beyond the unsigned family and the 
 
 **Remark (the boundary between the two order-two maps).** The map $\alpha$ of this article is the grade involution, an **automorphism** of order two. The **involution** in the sense of an anti-automorphism, denoted $\sigma$ in this category, is the structure of the `- * Theory` group and is not used here. On a commutative algebra the two coincide, on a non-commutative one they do not.
 
-## The Banach Reading and Examples
+## The Banach Interpretation and Examples
 
 **Proposition (continuity and completion).** The maps $a \mapsto \ell_a$ and $b \mapsto \varrho_b$ are bounded linear maps $A \to B(A)$ of norm at most $\lVert\alpha\rVert$, and they are isometric when $\alpha$ is isometric and $A$ is unital. They extend to the completion of $A$, and they are continuous for the norm, the strong and the weak operator topologies.
 

@@ -29,7 +29,7 @@ The division that makes the question sharp is this: the conjugations of the alge
 split, while three operations of a different kind always do. The conjugations are sector-preserving
 because the two sectors are *defined* as their fixed spaces, so a map that crossed the split would have
 to be something other than a conjugation; the square, multiplication by $i$ and the state-preparation
-map are exactly such operations. The split also carries a superselection reading, whose content is that
+map are exactly such operations. The split also carries a superselection interpretation, whose content is that
 no *observable* operation crosses it — a statement about observables and not about maps, and one that
 must be held apart from the positive entries of the catalogue.
 
@@ -71,7 +71,7 @@ with $N(\tilde{Q}) = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, writte
 with real $t$ and $\mathbf{x}$, the value $N(\tilde{Q}) = -c^{2}t^{2}+\mathbf{x}^{2}$ is **real**, and the
 scalar line $\mathbb{R}e_0$ lies in $\mathbb{M}_+$.
 
-**Reading.** Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
+**Interpretation.** Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
 and it is the minimal instance of a cross-sector coupling supplied by the product itself. It is
 deliberately weak: it is a map and not an evolution, and the product of *two* material elements is not
 informational — it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
@@ -94,7 +94,7 @@ with $\mathrm{Tr}(\tilde{H}) = ct$ and $N(\tilde{H}) = -\tfrac14 N(\tilde{Q})$. 
 $ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_0+i\mathbf{r})$ with $\mathbf{r} = -\mathbf{x}$,
 a point of the Bloch ball.
 
-**Reading.** The map is a dictionary and not a dynamics: it names a **state preparation**, the
+**Interpretation.** The map is a dictionary and not a dynamics: it names a **state preparation**, the
 correspondence between a future-directed four-vector and a mixed state, and it is the mirror dictionary
 of *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, which owns it. Its boundary is that
 it carries no equation of motion, and that the trace-one slice is what makes it a state map rather than a
@@ -114,8 +114,8 @@ bijection of the algebra.
 the sign of the adjoint flips and the sector with it. The norm reverses because $N$ is quadratic in the
 coefficients and $i^{2} = -1$.
 
-**Reading.** The exchange is a **relational clock**: because the two sectors are the two time
-coordinates, the exchange reads one sector's time against the other's, which is the reading of *Each
+**Interpretation.** The exchange is a **relational clock**: because the two sectors are the two time
+coordinates, the exchange reads one sector's time against the other's, which is the interpretation of *Each
 Sector Is the Other's Clock: the Sector Exchange as Relational Time*. Its boundary is that the exchange
 is invertible and of order four, so it cannot by itself supply an arrow; the arrow needs the non-units of
 the acting monoid (see below). Multiplication by the central scalar is developed by *The Central
@@ -132,7 +132,7 @@ and the result is again material.
 **Why.** $(\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*})^{*} = \tilde{\Lambda}\tilde{T}^{*}\tilde{\Lambda}^{*} = -\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$,
 since $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ for a Hermitian rotor and $\tilde{T}^{*} = -\tilde{T}$.
 
-**Reading.** The action is a **frame change**: the informational sector, through its Hermitian rotors,
+**Interpretation.** The action is a **frame change**: the informational sector, through its Hermitian rotors,
 supplies the transformations of the material sector. It is a coupling of a third kind — not a map
 $\mathbb{M}_-\to\mathbb{M}_+$, but an action of one sector on the other, and it preserves the sector it
 acts on. Its boundary is that only the unit-norm elements are rotors, and the general action form of the
@@ -156,16 +156,16 @@ with both factors real.
 **Why.** The scalar part of the product is $P_0H_0-(\mathbf{P},\mathbf{H})$, and the two terms are
 $ict\cdot h_0$ and $\mathbf{x}\cdot i\mathbf{h}$, each carrying one factor of $i$.
 
-**Reading.** The pairing reads a material operation against an informational state and returns a phase,
-which is the off-sector reading of *The Ordinary Product and the Material Sector*. It is a pairing and
+**Interpretation.** The pairing reads a material operation against an informational state and returns a phase,
+which is the off-sector interpretation of *The Ordinary Product and the Material Sector*. It is a pairing and
 not a map, and it produces no element of either sector. The **imaginary part of the norm** is the same
 phenomenon from the other side: the cross terms of $N$ couple the material and informational parameters
-of one element, and that is the reading the introduction records for the imaginary part of $N$, owned by
+of one element, and that is the interpretation the introduction records for the imaginary part of $N$, owned by
 *Biquaternion Norm and Invertibility*.
 
 ## The Couplings of Time and of Thermodynamics
 
-Two further cross-sector readings are already owned and are recorded here because a catalogue of
+Two further cross-sector interpretations are already owned and are recorded here because a catalogue of
 couplings is incomplete without them.
 
 - **Imaginary (Matsubara) time.** The imaginary-time axis of thermal field theory is the informational
@@ -186,7 +186,7 @@ the State Is the Idempotent*).
 The catalogue has a boundary, and it is the place where the question "is there a coupling?" is answered
 *no*.
 
-The material–informational split carries a **superselection reading**: no observable operation carries
+The material–informational split carries a **superselection interpretation**: no observable operation carries
 one sector to the other, and the relative phase between the two sectors is unobservable. The statement
 is exact, and it does not conflict with the positive entries above, for the reason the superselection
 article gives. The algebra is central simple, so it has no central-projection superselection structure of
@@ -210,14 +210,14 @@ Biquaternionic Form*.
 | central multiplication $\tilde{Q}\mapsto i\tilde{Q}$ | map | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | *Conventions in the Biquaternion Universe* | invertible, order four; no arrow by itself |
 | rotor action $\tilde{T}\mapsto\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
 | off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The Ordinary Product and the Material Sector* | a pairing, produces no element |
-| imaginary part of $N$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Biquaternion Norm and Invertibility* | a reading of one element's own cross terms |
+| imaginary part of $N$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Biquaternion Norm and Invertibility* | an interpretation of one element's own cross terms |
 | Matsubara continuation | continuation | imaginary time $=$ informational time | *The KMS Condition and the Biquaternion Framework*, *The Matsubara Formalism in Biquaternionic Form* | a continuation, not a new coupling |
 | Landauer exchange | process | material $\to$ informational | *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* | thermodynamic face; arrow from the acting monoid |
 | superselection | **non-coupling** | observables preserve each sector | *The Material-Informational Split as a Superselection Structure in Biquaternionic Form* | about observables, not about maps |
 
 ## Physical Readings
 
-The article's own reading is the **two-axis picture** of the split: the sectors are separated by the
+The article's own interpretation is the **two-axis picture** of the split: the sectors are separated by the
 involution ${}^{*}$, which the conjugations respect and which a small set of non-conjugation operations
 cross. Read one way, the picture says that the split is rigid — nothing built from the conjugations, and
 no observable, moves between the sectors. Read the other way, it says that the split is crossed in
@@ -226,13 +226,13 @@ argument, $i$ takes a time to the other time, the rotor takes a frame to a frame
 scalar reads a state against an operation. The rigidity and the crossings are not in tension; they are the
 two halves of one statement.
 
-- **Bridge reading.** Each positive entry is a bridge of a different kind — a map, a bijection, an
-action, a pairing — and no two entries are the same bridge. Boundary: the reading names the shape of
+- **Bridge interpretation.** Each positive entry is a bridge of a different kind — a map, a bijection, an
+action, a pairing — and no two entries are the same bridge. Boundary: the interpretation names the shape of
 each bridge and supplies no dynamics; the grid-level comparison is *The Four General Products and Their Physical Readings*.
-- **Boundary reading.** The superselection entry is the statement that the bridges are not observables.
+- **Boundary interpretation.** The superselection entry is the statement that the bridges are not observables.
 Read with the positive entries, it says that a coupling can be algebraic and unobservable at once: the
 square exists and no measurement uses it to prepare a coherence between the sectors. Boundary: the
-reading is the superselection article's, restated here only to mark the edge of the catalogue.
+interpretation is the superselection article's, restated here only to mark the edge of the catalogue.
 
 ## Summary
 
@@ -247,7 +247,7 @@ unit-norm Hermitian rotor acts on the material sector by the sandwich and preser
 informational sector supplies the frame changes of the material one. The off-sector scalar part
 $\mathrm{Sc}(\tilde{P}\tilde{H})$ is purely imaginary and pairs an operation with a state; the imaginary
 part of the norm is the same cross-term phenomenon. The Matsubara continuation and the Landauer exchange
-are the thermal readings of the same split, and the arrow that orders them is the split of the acting
+are the thermal interpretations of the same split, and the arrow that orders them is the split of the acting
 monoid. Against all of this stands one exact negative statement: the split is a superselection structure
 of a real form, so no observable operation and no conjugation crosses it. The catalogue's conclusion is
 that the coupling the introduction asks for exists, is algebraic, is minimal, and is not observable —
@@ -277,6 +277,6 @@ informational sector, the trace pairing and the state space.
 - *The Interval as the Square and the Charge of the Material Composition*, companion article, for the
 square map and its real-scalar image.
 - *The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, companion
-article, for the negative statement and its real-form reading.
+article, for the negative statement and its real-form interpretation.
 - *The Four General Products and Their Physical Readings*,
 companion article, for the grid-level comparison of the four products.

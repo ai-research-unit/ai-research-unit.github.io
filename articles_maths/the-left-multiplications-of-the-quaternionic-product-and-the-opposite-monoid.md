@@ -107,7 +107,7 @@ $$
 
 **Remark (which pair commutes).** What commutes is $L_{\tilde P}$ with the **twisted** right multiplication $\varrho_{\tilde Q}$, not with the right multiplication of the product: $L_{\tilde P}$ and $R_{\tilde P}$ do not commute, and at $\tilde P = e_3$ the two composites send $e_0$ to $e_0$ and to $-e_0$, since $L_{e_3}R_{e_3}(e_0) = e_0$ and $R_{e_3}L_{e_3}(e_0) = -e_0$. This is the failure of flexibility of the third article read at the level of the operators, and it is why the multiplication algebra is built from $L$ and $\varrho$ and not from $L$ and $R$.
 
-## The Reading of the Monoid Row
+## The Interpretation of the Monoid Row
 
 The property table of *Comparison Between the Four General Products* carries the four general products against the property "the left multiplications form a monoid" (*Comparison Between the Four General Products* §*The Property Table*), and the row reads
 

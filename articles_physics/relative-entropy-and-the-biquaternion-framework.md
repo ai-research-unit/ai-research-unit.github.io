@@ -18,7 +18,7 @@ The answer has three parts, and they should be separated at the outset.
 
 The article proceeds as follows. Relative entropy is recalled with the properties that make it basic. The states of $\mathbb{B}$ and their logarithms are fixed. The closed form is derived. Positivity, asymmetry and monotonicity are read off in the Bloch geometry. Araki's relative modular operator is identified, because it is the object the modular companions generalize. The field-theoretic setting, in which relative entropy is the right quantity precisely where entanglement entropy is not, is recalled. The article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Hermitian conjugation is ${}^{*}$, and the trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. A state is $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$ and $\mathrm{Tr}(\tilde\rho)=1$; the GNS data are those of *The GNS Construction in the Biquaternion Framework*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Hermitian conjugation is ${}^{*}$, and the trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. A state is $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$ and $\mathrm{Tr}(\tilde\rho)=1$; the GNS data are those of *The GNS Construction in the Biquaternion Framework*.
 
 ## Relative Entropy: The Standard Quantity
 
@@ -55,7 +55,7 @@ The monotonicity property is the one that carries the most weight: applied to th
 
 ### Why Relative Entropy Rather Than Von Neumann Entropy
 
-The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\dim)$ is the special case in which the second argument is the maximally mixed state; it is not monotone and is defined only for states with $\mathrm{supp}\,\rho$ of finite-dimensional type. Relative entropy is the more basic object, and in quantum field theory it is the only one of the two that is well defined for the local algebras: the local algebras are type III factors, which carry no trace and no density matrix, while the relative entropy of two states on a von Neumann algebra is defined by the Araki formula recalled below. This is the reason the informational reading of quantum field theory is written in the language of relative entropy, and it is the reason this article opens the subcategory.
+The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\dim)$ is the special case in which the second argument is the maximally mixed state; it is not monotone and is defined only for states with $\mathrm{supp}\,\rho$ of finite-dimensional type. Relative entropy is the more basic object, and in quantum field theory it is the only one of the two that is well defined for the local algebras: the local algebras are type III factors, which carry no trace and no density matrix, while the relative entropy of two states on a von Neumann algebra is defined by the Araki formula recalled below. This is the reason the informational interpretation of quantum field theory is written in the language of relative entropy, and it is the reason this article opens the subcategory.
 
 ## The States of the Biquaternion Algebra
 
@@ -84,7 +84,7 @@ The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mat
 $$
 \exp\big(\theta\,i\hat{\mathbf r}\big)=\cosh\theta\,e_0+i\sinh\theta\,\hat{\mathbf r}.
 $$
-Second, the determinant of the state, $\det\Phi(\tilde\rho)=\lambda_+\lambda_-=\tfrac14(1-|\mathbf r|^2)=N(\tilde\rho)$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
+Second, the determinant of the state, $\det\mathsf{M}_2(\tilde\rho)=\lambda_+\lambda_-=\tfrac14(1-|\mathbf r|^2)=N(\tilde\rho)$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
 $$
 \log\tilde\rho=b_0\,e_0+i\,\mathbf b\cdot\mathbf e,
 $$
@@ -155,7 +155,7 @@ which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\hat{\mathbf r})\log\til
 
 ### Verification on Generic Superpositions
 
-The closed form was checked against the explicit $2\times2$ complex matrices in the representation $\Phi$, with the matrix logarithm computed from the spectral decomposition and the entropy from the eigenvalues. The state pair
+The closed form was checked against the explicit $2\times2$ complex matrices in the representation $\mathsf{M}_2$, with the matrix logarithm computed from the spectral decomposition and the entropy from the eigenvalues. The state pair
 $$
 \mathbf r=\big(\tfrac35,-\tfrac{3}{10},\tfrac25\big),\qquad
 \mathbf s=\big(\tfrac15,\tfrac12,-\tfrac{1}{10}\big),
@@ -169,7 +169,7 @@ the first from the boxed formula and the second by exchanging the arguments; bot
 
 ### Positivity in the Bloch Geometry
 
-Klein's inequality is not re-derived here; it is a theorem about density matrices, and the states of $\mathbb{B}$ are density matrices. What the framework adds is a geometric reading of where the inequality is tight. The boxed formula vanishes if and only if $|\mathbf r|=|\mathbf s|$ and $\cos\gamma=1$, that is, if and only if $\mathbf r=\mathbf s$, so the relative entropy separates the states of $\mathbb{B}$ as well as it separates arbitrary qubit states. Near coincidence $\mathbf s=\mathbf r+\delta\mathbf r$ the boxed formula has no linear term, as it must, and its quadratic term is the Kubo–Mori–Bogoliubov metric of the state. For a displacement that changes the purity, $\delta\mathbf r\parallel\mathbf r$, the coefficient is exact,
+Klein's inequality is not re-derived here; it is a theorem about density matrices, and the states of $\mathbb{B}$ are density matrices. What the framework adds is a geometric interpretation of where the inequality is tight. The boxed formula vanishes if and only if $|\mathbf r|=|\mathbf s|$ and $\cos\gamma=1$, that is, if and only if $\mathbf r=\mathbf s$, so the relative entropy separates the states of $\mathbb{B}$ as well as it separates arbitrary qubit states. Near coincidence $\mathbf s=\mathbf r+\delta\mathbf r$ the boxed formula has no linear term, as it must, and its quadratic term is the Kubo–Mori–Bogoliubov metric of the state. For a displacement that changes the purity, $\delta\mathbf r\parallel\mathbf r$, the coefficient is exact,
 $$
 S(\tilde\rho\|\tilde\sigma)=\frac{|\delta\mathbf r|^2}{2\,(1-|\mathbf r|^2)}+O\big(|\delta\mathbf r|^3\big),
 $$
@@ -225,7 +225,7 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 **Established (recomputed here).** The states of $\mathbb{B}$ are the Bloch ball $|\mathbf r|\le1$; the logarithm of a faithful state is $\log\tilde\rho=\tfrac12\log\frac{1-|\mathbf r|^2}{4}e_0+i\,\mathrm{artanh}(|\mathbf r|)\hat{\mathbf r}$; the entropy of a state is $-\tfrac12\log\frac{1-|\mathbf r|^2}{4}-|\mathbf r|\,\mathrm{artanh}|\mathbf r|$; and the relative entropy of two states is the boxed closed form, verified at twelve decimal places against the matrix computation on generic Bloch vectors and on states with one argument at the centre.
 
-**Interpretation.** That the closed form, the identity of the trace, and the zero-divisor boundary give a biquaternion reading of relative entropy in which the algebra's own conjugation supplies the logarithm and the relative modular operator. The algebra houses the reading; it does not force it.
+**Interpretation.** That the closed form, the identity of the trace, and the zero-divisor boundary give a biquaternion interpretation of relative entropy in which the algebra's own conjugation supplies the logarithm and the relative modular operator. The algebra houses the interpretation; it does not force it.
 
 **Gaps, left visible.** The logarithm exists only on the faithful states, so the framework's own algebra carries the relative entropy of a pair only when the second state is in the interior; on the pure boundary the quantity is an imported limit. The framework supplies no state selection and no dynamics, and the field-theoretic relative entropy lives on a module over $\mathbb{B}$ and not in $\mathbb{B}$. No empirical consequence is derived.
 
@@ -233,17 +233,17 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 **1. The relative entropy of a field state.** The biquaternion module carries the one-mode truncation of a field. Is there a preferred modular structure on the module, in the sense of a faithful state of the module algebra, whose relative entropy reproduces the finite field-theoretic answer?
 
-**2. The boundary value.** The relative entropy extends continuously to the pure boundary only when the second state is faithful. Is there a framework reading of the divergent case, in which the supports fail to nest, in terms of the zero-divisor cone? The divergent case is the one in which the second state is pure and differs from the first: a pure $\tilde\sigma$ has one-dimensional support, which contains the support of $\tilde\rho$ only when $\tilde\rho=\tilde\sigma$, and the antipodal pair $\mathbf r=-\mathbf s$ on the sphere is its extreme instance.
+**2. The boundary value.** The relative entropy extends continuously to the pure boundary only when the second state is faithful. Is there a framework interpretation of the divergent case, in which the supports fail to nest, in terms of the zero-divisor cone? The divergent case is the one in which the second state is pure and differs from the first: a pure $\tilde\sigma$ has one-dimensional support, which contains the support of $\tilde\rho$ only when $\tilde\rho=\tilde\sigma$, and the antipodal pair $\mathbf r=-\mathbf s$ on the sphere is its extreme instance.
 
 **3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde\rho_\omega^{it}\tilde\rho_\varphi^{-it}$. Whether that flow has an $\mathbb{M}_+$-valued generator in the framework, as the modular flow does, is not worked out here.
 
 **4. The relation to the first law.** The expansion of the relative entropy near coincidence, which is the quantum Fisher information, is the quadratic form whose vanishing controls the first law of entanglement. Whether the framework's closed form makes that law exact, rather than asymptotic, is the subject of the companion article on the modular Hamiltonian.
 
-**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the reading from standard quantum information theory is derived.
+**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum information theory is derived.
 
 ## Summary
 
-Relative entropy is Umegaki's $S(\rho\|\sigma)=\mathrm{Tr}(\rho\log\rho)-\mathrm{Tr}(\rho\log\sigma)$, extended to general von Neumann algebras by Araki's relative modular operator. It is the basic quantity of the information-theoretic reading of quantum theory because it is monotone under every physical process, and in quantum field theory it is the only one of the two entropic quantities that is defined, the local algebras being type III and carrying no density matrix.
+Relative entropy is Umegaki's $S(\rho\|\sigma)=\mathrm{Tr}(\rho\log\rho)-\mathrm{Tr}(\rho\log\sigma)$, extended to general von Neumann algebras by Araki's relative modular operator. It is the basic quantity of the information-theoretic interpretation of quantum theory because it is monotone under every physical process, and in quantum field theory it is the only one of the two entropic quantities that is defined, the local algebras being type III and carrying no density matrix.
 
 The states of the biquaternion algebra are the elements of $\mathbb{M}_+$ of the form $\tilde\rho=\tfrac12(e_0+i\mathbf r\cdot\mathbf e)$ with $|\mathbf r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde\rho=\tfrac12\log\frac{1-|\mathbf r|^2}{4}e_0+i\,\mathrm{artanh}(|\mathbf r|)\hat{\mathbf r}$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
 $$
@@ -264,7 +264,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
-| $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$ | Matrix isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
+| $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\tilde\rho=\tfrac12(e_0+i\mathbf r\cdot\mathbf e)$ | State of $\mathbb{B}$; Bloch vector $\mathbf r$ |
 | $\lambda_\pm=\tfrac12(1\pm|\mathbf r|)$ | Eigenvalues of the state |
 | $S(\tilde\rho)=-\tfrac12\log\frac{1-|\mathbf r|^2}{4}-|\mathbf r|\,\mathrm{artanh}|\mathbf r|$ | von Neumann entropy of a biquaternion state |

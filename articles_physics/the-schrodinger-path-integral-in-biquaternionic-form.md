@@ -155,7 +155,7 @@ $$
 A=\frac{im}{2\hbar T_2},\quad B=\frac{im}{2\hbar T_1},
 $$
 
-and which was verified numerically on a superposition of two Gaussian packets to a relative error of order $10^{-14}$ at three time pairs. The composition is the statement that the sum over paths factorises at an intermediate time, and in the biquaternion reading it is a statement about the centre: the product of two central kernels is central, and the classical action of the two flights adds.
+and which was verified numerically on a superposition of two Gaussian packets to a relative error of order $10^{-14}$ at three time pairs. The composition is the statement that the sum over paths factorises at an intermediate time, and in the biquaternion interpretation it is a statement about the centre: the product of two central kernels is central, and the classical action of the two flights adds.
 
 ## The Harmonic Oscillator
 
@@ -217,7 +217,7 @@ $$
 K_\omega^E(x,\tau;x_0,0) = \sum_n \psi_n(x)\psi_n(x_0)\,e^{-\omega\tau(n+\frac12)} ,
 $$
 
-so that the zero-point factor $e^{-\omega\tau/2}$ is present rather than removed: the trace is the partition function $1/2\sinh(\omega\tau/2)$, and for large $\tau$ the kernel reduces to $e^{-\omega\tau/2}$ times the ground-state projector. In the reading of the companion article on the path integral, the Wick rotation is the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and it is the operation that turns the central phase into a central decaying weight. The oscillator kernel is the cleanest example: the oscillatory Fresnel factor becomes a real Gaussian, and the caustic poles move to the imaginary axis.
+so that the zero-point factor $e^{-\omega\tau/2}$ is present rather than removed: the trace is the partition function $1/2\sinh(\omega\tau/2)$, and for large $\tau$ the kernel reduces to $e^{-\omega\tau/2}$ times the ground-state projector. In the interpretation of the companion article on the path integral, the Wick rotation is the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and it is the operation that turns the central phase into a central decaying weight. The oscillator kernel is the cleanest example: the oscillatory Fresnel factor becomes a real Gaussian, and the caustic poles move to the imaginary axis.
 
 ## The Path Integral Reproduces the Schrödinger Equation
 
@@ -281,7 +281,7 @@ K(\mathbf x_f,t_f;\mathbf x_i,t_i)
 \ =\ A_{\mathrm{WKB}}\,e^{\,iS_{\mathrm{cl}}/\hbar},
 $$
 
-where the determinant is the van Vleck determinant, the same amplitude that the transport equation of the semiclassical wave-function method produces. In the biquaternion reading the semiclassical kernel is central for the same reason as the exact kernel: the action is a real scalar, the determinant is real, and the prefactor is a function of the central $i$ and $\hbar$. The square root $\sqrt{i}$ in $(2\pi i\hbar)^{-3/2}$ is taken inside the centre, which is where the Maslov phases $\pm\frac{\pi}{2}$ and $\pm\frac{\pi}{4}$ come from; the companion article on the path integral develops that point, and the free kernel and the oscillator kernel above are the exact cases in which the semiclassical form is exact (the free kernel everywhere, the oscillator kernel away from caustics).
+where the determinant is the van Vleck determinant, the same amplitude that the transport equation of the semiclassical wave-function method produces. In the biquaternion interpretation the semiclassical kernel is central for the same reason as the exact kernel: the action is a real scalar, the determinant is real, and the prefactor is a function of the central $i$ and $\hbar$. The square root $\sqrt{i}$ in $(2\pi i\hbar)^{-3/2}$ is taken inside the centre, which is where the Maslov phases $\pm\frac{\pi}{2}$ and $\pm\frac{\pi}{4}$ come from; the companion article on the path integral develops that point, and the free kernel and the oscillator kernel above are the exact cases in which the semiclassical form is exact (the free kernel everywhere, the oscillator kernel away from caustics).
 
 ### Caustics and the higher orders
 

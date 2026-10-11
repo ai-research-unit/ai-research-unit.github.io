@@ -40,7 +40,7 @@ The corollary is the whole mechanism by which an element produces subspaces, and
 
 *Proof.* The plain product is associative, and associativity gives $\tilde X(\tilde X\tilde Y)=(\tilde X\tilde X)\tilde Y$ directly. Verified by recomputation for 100 random pairs with error below $10^{-15}$.
 
-## The Associative Reading
+## The Associative Interpretation
 
 The block is not only the one structure where the criterion holds; it is the one structure whose full associative theory is available. This section states that theory in the block's own terms, and each item is owned by an article of the block and cited.
 
@@ -81,9 +81,9 @@ The four elements $E_{11},E_{12},E_{21},E_{22}$ form a $\mathbb{C}$-basis of $\m
 
 The criterion of §*The Criterion* is the exact statement of why the whole preceding section is available in the block. Four consequences, each a theorem of the block and each a comparison with what a weaker law delivers.
 
-- **The projector calculus.** Every idempotent gives a projector, so every idempotent splits the space as $\mathbb{B}=\mathrm{im}\,L_{\tilde\Pi}\oplus\ker L_{\tilde\Pi}$; because the product is associative, the image is the principal left ideal $\mathbb{B}\tilde\Pi$, the kernel is the annihilator $\mathrm{ann}(\tilde\Pi)$, and the splitting is the one of §*The Associative Reading*. In a structure without the criterion an idempotent still gives a **fixed set** of $L_{\tilde\Pi}$, but not a complement.
+- **The projector calculus.** Every idempotent gives a projector, so every idempotent splits the space as $\mathbb{B}=\mathrm{im}\,L_{\tilde\Pi}\oplus\ker L_{\tilde\Pi}$; because the product is associative, the image is the principal left ideal $\mathbb{B}\tilde\Pi$, the kernel is the annihilator $\mathrm{ann}(\tilde\Pi)$, and the splitting is the one of §*The Associative Interpretation*. In a structure without the criterion an idempotent still gives a **fixed set** of $L_{\tilde\Pi}$, but not a complement.
 - **The flag of the nilpotents.** Every square-zero element gives a square-zero operator with image equal to kernel, $\mathrm{im}\,L_{\tilde\Upsilon}=\ker L_{\tilde\Upsilon}=\mathbb{B}\tilde\Upsilon=\mathrm{ann}(\tilde\Upsilon)$, a two-dimensional subspace. The operator produces the subspace and its own annihilator at once, and the ideal it generates is exactly the annihilator.
-- **The Peirce decomposition.** Because $L_{\tilde\Pi}$ is a projector and the product is associative, the projector decomposes $\mathbb{B}$ into the four Peirce spaces of §*The Associative Reading*, the corner subalgebras included. The decomposition is a theorem of the block; in a structure where the criterion fails, the spaces can be defined and do not carry the corner structure.
+- **The Peirce decomposition.** Because $L_{\tilde\Pi}$ is a projector and the product is associative, the projector decomposes $\mathbb{B}$ into the four Peirce spaces of §*The Associative Interpretation*, the corner subalgebras included. The decomposition is a theorem of the block; in a structure where the criterion fails, the spaces can be defined and do not carry the corner structure.
 - **The module theory.** Because $\mathbb{B}$ is associative and unital, the left $\mathbb{B}$-modules are the representations, the ideal theory and the module theory are one subject, and the enveloping algebra acts on the bi-module. None of this survives the loss of the criterion.
 
 ## The Isolation among the Twelve

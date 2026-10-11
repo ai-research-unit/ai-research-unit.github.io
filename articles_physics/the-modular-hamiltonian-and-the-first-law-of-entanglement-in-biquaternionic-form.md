@@ -22,7 +22,7 @@ where $\delta S=S(\tilde\rho)-S(\tilde\rho_0)$ and $\delta\langle K_0\rangle=\ma
 
 The article proceeds as follows. The modular Hamiltonian is defined and its biquaternion closed form is given. The first law is stated, and the exact identity from which it follows is derived. The identity is verified on the explicit perturbation. The linearity that makes the law exact to first order is explained in the framework's terms, and the entanglement Hamiltonian of a subsystem is discussed. The standard applications are recalled, and the article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$. States are $\tilde\rho=\tfrac12(e_0+i\mathbf r\cdot\mathbf e)\in\mathbb{M}_+$ with $|\mathbf r|\le1$; the logarithms, entropies and relative entropies are the closed forms of *Relative Entropy and the Biquaternion Framework*, and the modular operator, flow and generator are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework* and *Thermal Time and the Modular Flow in the Biquaternion Framework*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$. States are $\tilde\rho=\tfrac12(e_0+i\mathbf r\cdot\mathbf e)\in\mathbb{M}_+$ with $|\mathbf r|\le1$; the logarithms, entropies and relative entropies are the closed forms of *Relative Entropy and the Biquaternion Framework*, and the modular operator, flow and generator are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework* and *Thermal Time and the Modular Flow in the Biquaternion Framework*.
 
 ## The Modular Hamiltonian
 
@@ -226,7 +226,7 @@ The biquaternion framework's role is to make the finite-dimensional prototype of
 
 **4. The geometry of the deficit.** The deficit is the Kubo–Mori metric distance to the reference state. On the Bloch ball this is a computable Riemannian geometry; does its completion, continued to a regulated many-mode model, reproduce the geometric data of the applications (the ball's modular Hamiltonian and the stress-tensor response)?
 
-**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the reading from standard quantum information theory is derived.
+**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum information theory is derived.
 
 ## Summary
 
@@ -268,7 +268,7 @@ The mechanism is that the modular energy is linear in the state while the relati
 - T. Jacobson, "Thermodynamics of spacetime: the Einstein equation of state," *Physical Review Letters* **75** (1995) 1260–1263, for the thermodynamic derivation of the Einstein equations.
 - J. D. Bekenstein, "Black holes and entropy," *Physical Review D* **7** (1973) 2333–2346, and S. W. Hawking, "Particle creation by black holes," *Communications in Mathematical Physics* **43** (1975) 199–220, for the entropy and the first law of black-hole mechanics.
 - R. M. Wald, "Black hole entropy is the Noether charge," *Physical Review D* **48** (1993) R3427, for the first law in its geometric form.
-- M. Van Raamsdonk, "Building up spacetime with quantum entanglement," *General Relativity and Gravitation* **42** (2010) 2323–2329, for the entanglement-equals-geometry reading.
+- M. Van Raamsdonk, "Building up spacetime with quantum entanglement," *General Relativity and Gravitation* **42** (2010) 2323–2329, for the entanglement-equals-geometry interpretation.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the Kubo–Mori–Bogoliubov metric and the second-order expansion of relative entropy.
 - Companion article *Relative Entropy and the Biquaternion Framework*, for the closed-form relative entropy and its second-order term.
 - Companion article *Thermal Time and the Modular Flow in the Biquaternion Framework*, for the modular Hamiltonian as the generator of the flow.

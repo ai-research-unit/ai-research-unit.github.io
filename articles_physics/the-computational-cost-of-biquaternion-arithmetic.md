@@ -10,7 +10,7 @@ The material is drawn from a paper of Kaviraj, Komorovsky, Saue and Repisky on r
 
 The article owns the **cost accounting**: the count of real multiplications for a product, the same count for matrix-valued biquaternions, the block structure of the complex image that a machine consumes, and the reduction of a biquaternion Hermitian eigenvalue problem to smaller complex ones. The algebra itself, its representations and its spectral theory are owned by the mathematical corpus and are cited rather than repeated. The framework claims of the physics corpus are neither used nor tested here: a cheap product is a fact about arithmetic, not about the world.
 
-The article is organised as follows. The next section fixes what is being counted. The two sections after it give the naive count and the bilinear reduction. The following three treat matrix-valued biquaternions, the complex image with its blocks, and the eigenvalue problem. Then come the framework reading, the source's benchmarks, the negative claims, and the summary.
+The article is organised as follows. The next section fixes what is being counted. The two sections after it give the naive count and the bilinear reduction. The following three treat matrix-valued biquaternions, the complex image with its blocks, and the eigenvalue problem. Then come the framework interpretation, the source's benchmarks, the negative claims, and the summary.
 
 ## What Is Being Counted
 
@@ -130,10 +130,10 @@ The memory side is worth recording next to the count. A matrix-valued biquaterni
 The object a machine actually consumes is not the algebra but its matrix image. For a matrix-valued biquaternion $\tilde{Q}$ with complex component matrices $Q_0,Q_1,Q_2,Q_3$ of size $n\times m$, the image is the $2n\times2m$ complex matrix
 
 $$
-M = \sum_{\mu=0}^{3} \Phi(e_\mu)\otimes Q_\mu, \qquad \Phi(e_0) = I_2,
+M = \sum_{\mu=0}^{3} \mathsf{M}_2(e_\mu)\otimes Q_\mu, \qquad \mathsf{M}_2(e_0) = I_2,
 $$
 
-where $\Phi$ is the isomorphism of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and $\otimes$ is the Kronecker product, taken with $\Phi$ first: the indices of $\Phi$ are the block indices of the image and the array indices run inside the blocks. With $\Phi(e_k) = -i\sigma_k$ in the corpus convention the image is $I_2\otimes Q_0$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A, B, C, D$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Realification of the General Plain Algebra*.
+where $\mathsf{M}_2$ is the isomorphism of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and $\otimes$ is the Kronecker product, taken with $\mathsf{M}_2$ first: the indices of $\mathsf{M}_2$ are the block indices of the image and the array indices run inside the blocks. With $\mathsf{M}_2(e_k) = -i\sigma_k$ in the corpus convention the image is $I_2\otimes Q_0$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A, B, C, D$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Realification of the General Plain Algebra*.
 
 Three properties of this image are used constantly, and each is exact:
 
@@ -258,7 +258,7 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus
 | $24$ | the multiplication count of one general biquaternion product, corner–Hadamard with Gauss |
 | $8$ | the count on either half, $\mathbb{H}_{\mathbb{B}}$ or $i\mathbb{H}_{\mathbb{B}}$ |
 | $\tilde{Q}\in\mathbb{B}^{n\times m}$ | A matrix-valued biquaternion; four coefficient matrices of size $n\times m$ |
-| $M=I_n\otimes\Phi(Q_0)+\sum_k\Phi(e_k)\otimes Q_k$ | The complex image, size $2n\times2m$ |
+| $M=I_n\otimes\mathsf{M}_2(Q_0)+\sum_k\mathsf{M}_2(e_k)\otimes Q_k$ | The complex image, size $2n\times2m$ |
 | $M^+=\begin{pmatrix}A&B\\-B^{*}&A^{*}\end{pmatrix}$ | Image block of a real-quaternion array |
 | $M^-=\begin{pmatrix}G&H\\H^{*}&-G^{*}\end{pmatrix}$ | Image block of an antiquaternion array |
 | $\mathrm{tr}(M)=2\,\mathrm{tr}(Q_0)$ | The image trace is the biquaternion trace $2\,\mathrm{Sc}$ on the diagonal |
@@ -274,5 +274,5 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus
 - K. G. Dyall and K. Fægri Jr., *Introduction to Relativistic Quantum Chemistry* (Oxford University Press, 2007), for the relativistic electronic-structure setting, in which the time-reversal symmetric and antisymmetric matrix structures arise.
 - T. Saue, "Relativistic Hamiltonians for chemistry: A primer", *ChemPhysChem* **12** (2011) 3077–3094, for the four-component Dirac Hamiltonian, its symmetry structure, and the time-reversal classes that the cost classes follow.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford and matrix identifications of the algebra used in the complex image.
-- The mathematical companions *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, *Biquaternion Objects and Their Matrix Correspondences* and *Biquaternion Spectral Theory*, for the isomorphism $\Phi$ used in the image, the index of the algebra's objects against their matrix images, and the spectral theory that the diagonalisation here serves.
+- The mathematical companions *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, *Biquaternion Objects and Their Matrix Correspondences* and *Biquaternion Spectral Theory*, for the isomorphism $\mathsf{M}_2$ used in the image, the index of the algebra's objects against their matrix images, and the spectral theory that the diagonalisation here serves.
 - The physics companions *Conventions in the Biquaternion Universe* and *Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form*, for the parameter conventions, the crossing of the two decompositions of the eight parameters, and the time-reversal classes.

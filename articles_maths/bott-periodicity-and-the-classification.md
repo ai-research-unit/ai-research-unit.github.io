@@ -28,10 +28,10 @@ $$
 **Proof.** The form $\operatorname{diag}(+1,-1)$ on a two-dimensional space has Clifford algebra $\mathrm{Cl}_{1,1}\cong M_2(F)$, computed directly in the previous article: its generators act as the matrices $\sigma_3=\operatorname{diag}(1,-1)$ and $\tau=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, which together with the identity and their product $\sigma_3\tau=-\sigma_1$ span $M_2(F)$. The graded tensor product decomposition of an orthogonal sum gives $\mathrm{Cl}_{p+1,q+1}\cong\mathrm{Cl}_{p,q}\,\hat{\otimes}\,\mathrm{Cl}_{1,1}$, and the isomorphism with $\mathsf{M}_2(\mathrm{Cl}_{p,q})$ is displayed by the following assignment. Let $e_1,\dots,e_n$ generate $\mathrm{Cl}_{p,q}$ and let $f_1,f_2$ generate the hyperbolic plane, with $f_1^2=+1$, $f_2^2=-1$ and $f_1f_2=-f_2f_1$. In $2\times2$ matrices over $\mathrm{Cl}_{p,q}$, with $\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, put
 
 $$
-\Phi(e_i)=e_i\,\sigma_1,\qquad \Phi(f_1)=\sigma_3,\qquad \Phi(f_2)=\tau .
+\mathsf{M}_2(e_i)=e_i\,\sigma_1,\qquad \mathsf{M}_2(f_1)=\sigma_3,\qquad \mathsf{M}_2(f_2)=\tau .
 $$
 
-Each image squares to the value of its form on the corresponding generator times the identity, and any two images anticommute, by $\sigma_1^2=\sigma_3^2=1$, $\tau^2=-1$ and the anticommutations $\sigma_1\sigma_3=-\sigma_3\sigma_1$, $\sigma_1\tau=-\tau\sigma_1$, $\sigma_3\tau=-\tau\sigma_3$; hence $\Phi$ extends to an algebra homomorphism by the universal property. Its image contains $I\sigma_3$, $I\tau$, $I\sigma_1=-(I\sigma_3)(I\tau)$ and $e_iI=-\Phi(e_i)\Phi(f_1)\Phi(f_2)$, since $\sigma_3\tau=-\sigma_1$ and $\sigma_1^2=1$; these generate $\mathsf{M}_2(\mathrm{Cl}_{p,q})$, both sides have dimension $2^{n+2}$, so $\Phi$ is an isomorphism.
+Each image squares to the value of its form on the corresponding generator times the identity, and any two images anticommute, by $\sigma_1^2=\sigma_3^2=1$, $\tau^2=-1$ and the anticommutations $\sigma_1\sigma_3=-\sigma_3\sigma_1$, $\sigma_1\tau=-\tau\sigma_1$, $\sigma_3\tau=-\tau\sigma_3$; hence $\Phi$ extends to an algebra homomorphism by the universal property. Its image contains $I\sigma_3$, $I\tau$, $I\sigma_1=-(I\sigma_3)(I\tau)$ and $e_iI=-\mathsf{M}_2(e_i)\mathsf{M}_2(f_1)\mathsf{M}_2(f_2)$, since $\sigma_3\tau=-\sigma_1$ and $\sigma_1^2=1$; these generate $\mathsf{M}_2(\mathrm{Cl}_{p,q})$, both sides have dimension $2^{n+2}$, so $\Phi$ is an isomorphism.
 
 The same argument with the rank-two forms gives the following two identities, which express the "stabilisation" of a Clifford algebra by a hyperbolic plane.
 

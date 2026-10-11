@@ -151,7 +151,7 @@ $$
 
 **Remark (the boundary with the multiplier algebra).** The double centraliser theorem above is the operator-level statement. The algebra of double centralisers and its strict topology, which is the right object for a non-unital algebra, are *Multipliers of a Banach Algebra*, later in this group; the definitions of a left and right multiplier are in *Operators on a Banach Algebra*. Here the operators are those of the two families, and no multiplier algebra is constructed.
 
-## The Banach Reading and Examples
+## The Banach Interpretation and Examples
 
 **Proposition (the representations are continuous and their images are closed).** The maps $\lambda : A \to B(A)$ and $\rho : A \to B(A)$ are continuous algebra homomorphisms for the norm topology; on a unital algebra they are isometric embeddings and their images are closed subalgebras, complete and hence Banach algebras isometric to $A$ and to $A^{\mathrm{op}}$. On a non-unital algebra $\lambda$ and $\rho$ are contractions with $\lVert\lambda\rVert \leq 1$, and $\lambda(A)$ is complete, hence closed, whenever $A$ is complete and $\lambda$ preserves the norm; otherwise the closure of $\lambda(A)$ is the completion of the image.
 

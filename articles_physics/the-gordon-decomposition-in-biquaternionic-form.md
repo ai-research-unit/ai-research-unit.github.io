@@ -6,11 +6,11 @@ The **Gordon decomposition** is an identity for the conserved current of a solut
 
 The decomposition is **on shell**. It uses the Dirac equation for the field and for its adjoint, and it therefore holds for solutions and not for arbitrary spinor functions. It also requires a nonzero mass in its Lorentz-covariant form, because the mass appears in the denominator of both terms; the massless case has a separate, energy-normalised version, in which the spin term survives as the curl of the spin density.
 
-This article states the identity, proves it, gives its momentum-space form and its massless generalisation, and reports the two companion objects — the angular-momentum (Belinfante–Rosenfeld) split and the stress tensor — that come with it. It then gives the biquaternion reading. The framework's contribution here is a matter of **naming the two structures**: the split is the split of a product of two Clifford generators into its symmetric part, which is the metric and is central in the algebra, and its antisymmetric part, which is a bivector and lies in the algebra's six-dimensional bivector subspace. The convection current is the central, metric direction; the spin current is the bivector. What the framework does **not** supply is a pure biquaternion product that equals the current, for the same representation-theoretic reason recorded in the companion article on minimal coupling: the Dirac adjoint carries the Clifford-odd element $\gamma^0$, which is outside the even subalgebra $\mathbb{B}$.
+This article states the identity, proves it, gives its momentum-space form and its massless generalisation, and reports the two companion objects — the angular-momentum (Belinfante–Rosenfeld) split and the stress tensor — that come with it. It then gives the biquaternion interpretation. The framework's contribution here is a matter of **naming the two structures**: the split is the split of a product of two Clifford generators into its symmetric part, which is the metric and is central in the algebra, and its antisymmetric part, which is a bivector and lies in the algebra's six-dimensional bivector subspace. The convection current is the central, metric direction; the spin current is the bivector. What the framework does **not** supply is a pure biquaternion product that equals the current, for the same representation-theoretic reason recorded in the companion article on minimal coupling: the Dirac adjoint carries the Clifford-odd element $\gamma^0$, which is outside the even subalgebra $\mathbb{B}$.
 
-The article is organised as follows. The next section states the identity and proves it. A section gives the momentum-space form used in scattering. A section reads the two terms physically. A section gives the massless generalisation. A section records the angular-momentum and stress-tensor relatives and the electromagnetic (Pauli-moment) consequence. A section gives the biquaternion reading. The closing sections are the open questions, the summary, the notation table and the literature.
+The article is organised as follows. The next section states the identity and proves it. A section gives the momentum-space form used in scattering. A section reads the two terms physically. A section gives the massless generalisation. A section records the angular-momentum and stress-tensor relatives and the electromagnetic (Pauli-moment) consequence. A section gives the biquaternion interpretation. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The Clifford metric is $g = \mathrm{diag}(+1,-1,-1,-1)$, the generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$, the bivector is $\sigma^{\mu\nu} = \frac{i}{2}[\gamma^\mu,\gamma^\nu]$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma^0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, central scalar imaginary $i$, and the dictionary $\Phi$ of the companion articles. The mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$.
+The conventions are those of the companion articles. The Clifford metric is $g = \mathrm{diag}(+1,-1,-1,-1)$, the generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$, the bivector is $\sigma^{\mu\nu} = \frac{i}{2}[\gamma^\mu,\gamma^\nu]$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma^0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, central scalar imaginary $i$, and the dictionary $\mathsf{M}_2$ of the companion articles. The mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$.
 
 ## The Identity
 
@@ -166,7 +166,7 @@ which is the same statement for the axial current and is used in the analysis of
 
 ### Convection and spin
 
-The two terms of the momentum-space identity have a direct reading, and it is the reason the decomposition is useful.
+The two terms of the momentum-space identity have a direct interpretation, and it is the reason the decomposition is useful.
 
 The **convection term** $\bar u'\frac{(p+p')^\mu}{2m}u$ is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p')$. It is the orbital part: it depends on the average four-momentum, it reduces to $\bar u'\gamma^\mu u \to \bar u' u\,v^\mu$ in the non-relativistic limit, and it is the piece protected by gauge invariance.
 
@@ -276,9 +276,9 @@ the two pieces being respectively the **metric** (one number per pair of indices
 The dictionary assigns the six bivectors to the six directions,
 
 $$
-\Phi(e_k) = \gamma^k\gamma^l,
+\mathsf{M}_2(e_k) = \gamma^k\gamma^l,
 \qquad
-\Phi(ie_k) = \gamma^0\gamma^k,
+\mathsf{M}_2(ie_k) = \gamma^0\gamma^k,
 $$
 
 so that the **rotation-type** generators (the magnetic, spin-like ones) sit at the elements $ie_k \in \mathbb{M}_+$, the informational sector, and the **boost-type** generators at $e_k \in \mathbb{M}_-$, the material sector. The magnetic (spin) part of the Gordon split is therefore an $\mathbb{M}_+$ structure — the same sector as the spin itself — and the convection part is the central metric direction. The sector labels are not decoration: they are the algebraic form of the statement that the convection term is the orbital transport and the spin term is the intrinsic moment.
@@ -323,7 +323,7 @@ $$
 
 where the first term is the current of a charged scalar and the second is the spin term whose coefficient gives $g = 2$. The decomposition requires $m \neq 0$ because both terms carry $1/m$; the massless version replaces $m$ by the energy $E$ and writes the spin term as $(e/E)\nabla\times\mathbf S$, recovering the Dirac moment in the rest frame and the locked Weyl moment for a massless particle. The Belinfante–Rosenfeld tensor contains the same spin term with coefficient $\tfrac12$ in the momentum density, and the mismatch between that $\tfrac12$ and the current's $1$ is the angular-momentum face of $g = 2$.
 
-The biquaternion reading is a naming of the two structures: the split of the generator product is the split into the metric (central) direction and the bivector direction, so the convection current is central and the spin current is a bivector whose magnetic (rotation-type) part lies in the informational sector $\mathbb{M}_+$ and whose boost-type part lies in $\mathbb{M}_-$. The identity itself is a spinor-module statement, because the Dirac adjoint carries the Clifford-odd $\gamma^0$ outside $\mathbb{B}$; the framework transcribes it, verifies its algebra and locates its two terms, and does not derive it from a product in the algebra.
+The biquaternion interpretation is a naming of the two structures: the split of the generator product is the split into the metric (central) direction and the bivector direction, so the convection current is central and the spin current is a bivector whose magnetic (rotation-type) part lies in the informational sector $\mathbb{M}_+$ and whose boost-type part lies in $\mathbb{M}_-$. The identity itself is a spinor-module statement, because the Dirac adjoint carries the Clifford-odd $\gamma^0$ outside $\mathbb{B}$; the framework transcribes it, verifies its algebra and locates its two terms, and does not derive it from a product in the algebra.
 
 ## Summary of Notation
 

@@ -175,7 +175,7 @@ $$
 
 and the four-vector $\tilde{E}_{(0)} = i\tilde{\Lambda}\tilde{\Lambda}^{*}$ is the four-velocity direction, $c\,\tilde{E}_{(0)} = \tilde{U}$. The three spatial images $\tilde{E}_{(k)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\tilde{\Omega}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
 
-This is the reading that separates the eigenspinor from the ordinary Lorentz rotor. A fixed rotor gives one tetrad; the eigenspinor gives a tetrad at every event, tied to the orientation of the particle's rest frame, and the equation of motion is the statement that the tetrad turns at the rate $\tilde{\Omega}$.
+This is the interpretation that separates the eigenspinor from the ordinary Lorentz rotor. A fixed rotor gives one tetrad; the eigenspinor gives a tetrad at every event, tied to the orientation of the particle's rest frame, and the equation of motion is the statement that the tetrad turns at the rate $\tilde{\Omega}$.
 
 ## The Closed Form in a Uniform Field
 
@@ -201,13 +201,13 @@ Both factors are rotors: $\tilde{\Omega}$ is a pure vector, so $\exp(\tfrac12\ti
 
 1. **Intrinsic spin.** The eigenspinor used here carries only the orbital frame. A particle with intrinsic spin needs a second rotor, or a spinor variable, coupled to the same rate; the Bargmann–Michel–Telegdi equation and the spin-four-vector of the companion articles are the classical limit of that coupling. What is the joint eigenspinor of the orbit and the spin, and does it factorise?
 
-2. **The quantum eigenspinor.** In the geometric-algebra reading of the Dirac equation the Dirac spinor is a rotor times a density and an angle. Is the classical eigenspinor the $\hbar\to0$ limit of that object, and does the series' spinor module supply the density factor?
+2. **The quantum eigenspinor.** In the geometric-algebra interpretation of the Dirac equation the Dirac spinor is a rotor times a density and an angle. Is the classical eigenspinor the $\hbar\to0$ limit of that object, and does the series' spinor module supply the density factor?
 
 3. **Non-uniform fields.** The closed form holds for constant $\tilde{\Omega}$. For a varying field the equation of motion is still linear in $\tilde{\Lambda}$, but the direction of the rate turns with the position, and the rotor is a path-ordered exponential. What is the series' natural language for the path ordering, and does the gradient $\tilde{\nabla}$ of *The Biquaternion D'Alembertian* supply it?
 
 4. **The gauge of the rest frame.** The residual rotation $\tilde{\Lambda}\to\tilde{\Lambda}\tilde{R}$ is a gauge freedom in the classical problem and a physical degree of freedom once spin is included. Is there a series convention for fixing it, and does it correspond to the Thomas–Wigner rotation of the companion exercise?
 
-5. **The rate as a connection.** The rate $\tilde{\Omega}$ is an element of $\mathrm{Vect}(\mathbb{B})$, the same subspace that carries the field strength. Is the eigenspinor flow a parallel transport in a connection whose curvature is the field, and does that reading connect to the curved-spacetime articles?
+5. **The rate as a connection.** The rate $\tilde{\Omega}$ is an element of $\mathrm{Vect}(\mathbb{B})$, the same subspace that carries the field strength. Is the eigenspinor flow a parallel transport in a connection whose curvature is the field, and does that interpretation connect to the curved-spacetime articles?
 
 These questions are open.
 
@@ -261,7 +261,7 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 - W. E. Baylis, *Geometry of Paravector Space, with Applications to Relativistic Physics* (University of Windsor lecture, 2003), for the eigenspinor, the evolution equation $\dot{\Lambda} = \frac12\Omega\Lambda$, the identity $\dot p = \langle\Omega p\rangle_<$, the closed form in a uniform field and the identification $\Omega = eF/m$. This article is the series' transcription of that source into the $ict$ convention.
 - W. E. Baylis, *Electrodynamics: A Modern Geometric Approach* (Birkhäuser, 1999), for the same formalism developed at book length, with the complex-quaternion algebra, the paravector space and the Hermitian subspaces.
 - W. E. Baylis, "Relativity in introductory physics," *Canadian Journal of Physics* **82** (2004) 853, for the companion lecture.
-- David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the rotor-times-density reading of the Dirac spinor, of which the classical eigenspinor is the orbital part.
+- David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the rotor-times-density interpretation of the Dirac spinor, of which the classical eigenspinor is the orbital part.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of Lorentz transformations and its use in classical relativistic dynamics.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the spinor module and the one-sided action of the rotors.
 - William E. Baylis (ed.), *Clifford (Geometric) Algebras with Applications in Physics, Mathematics and Engineering* (Birkhäuser, 1996), for the broader context of the paravector and Pauli-algebra formulations.

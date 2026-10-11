@@ -247,7 +247,7 @@ $$
 $$
 with the witness $[ie_0,e_1]_{\natural}=2ie_1\notin\mathbb{M}_{-}$. The anti-Hermitian subspace is therefore a **Lie algebra for exactly the two products** whose brackets reproduce the commutator up to sign, and a **Jordan algebra for none**.
 
-## The Two Splits and the Two Readings
+## The Two Splits and the Two Interpretations
 
 The remarkable subspaces of this article are the homes of the parts of the four general products under the **plain** exchange of the two arguments. The two parts of a bilinear product are read there directly, the antisymmetric parts of the two bilinear products spanning the vector subspace and the symmetric part of the quaternionic one collapsing to the centre; and the two parts of the plain sesquilinear product are the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$.
 

@@ -104,7 +104,7 @@ $$
 
 each eigenvalue of multiplicity two.
 
-**Proof.** $L_{e_1}$ is $J$-normal by the theorem above. As a $\mathbb{C}$-linear operator on $\mathbb{B}\cong\mathbb{C}^{4}$ it is the left multiplication of the matrix $\Phi(e_1)$, whose eigenvalues are $i$ and $-i$; and the left regular representation of the algebra is the direct sum of two copies of the defining representation, so each eigenvalue occurs twice (*The Indefinite Spectra of the Operators on the Biquaternion Algebra*).
+**Proof.** $L_{e_1}$ is $J$-normal by the theorem above. As a $\mathbb{C}$-linear operator on $\mathbb{B}\cong\mathbb{C}^{4}$ it is the left multiplication of the matrix $\mathsf{M}_2(e_1)$, whose eigenvalues are $i$ and $-i$; and the left regular representation of the algebra is the direct sum of two copies of the defining representation, so each eigenvalue occurs twice (*The Indefinite Spectra of the Operators on the Biquaternion Algebra*).
 
 **Corollary (contrast with the definite theory).** In a positive definite space a normal operator with real eigenvalues is self-adjoint and a normal operator with non-real eigenvalues is not; here $L_{e_1}$ is $J$-normal, is not $J$-self-adjoint, and its spectrum is imaginary. Normality, self-adjointness and reality of the spectrum are three independent conditions in the indefinite case, whereas in the definite case normality and reality together imply diagonalisability by unitaries.
 

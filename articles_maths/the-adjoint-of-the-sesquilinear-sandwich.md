@@ -54,7 +54,7 @@ $$
 
 so the adjoint carries the pair $(a,b)$ to the ordinary two-sided multiplication by the conjugate parameters in the reverse order, composed with the involution. The dependence is on $a^{*}$ and $b^{*}$ together, and the transposition of the parameters is the record of the single involution that the sandwich already carries in its middle slot.
 
-### The Reading through the Factors
+### The Interpretation through the Factors
 
 **Remark (a second proof).** The sandwich is the composite $S_{a,b}=T_{a,b}\circ{}^{*}$ of the two-sided multiplication with the involution, and the adjoint of a composite is the composite of the adjoints in the reverse order, $(XY)^{\dagger}=Y^{\dagger}X^{\dagger}$. The involution is self-adjoint, $\bigl({}^{*}\bigr)^{\dagger}={}^{*}$, and the two-sided multiplication has adjoint $T_{a,b}^{\dagger}=T_{a^{*},b^{*}}$ by the linear rule, since it is $R$-linear. Hence
 

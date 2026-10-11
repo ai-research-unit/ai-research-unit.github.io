@@ -17,7 +17,7 @@ side by side in the mathematics article *Comparison Between the Four General Pro
 needs the ordinary one. The classifications themselves — of $-1$, $0$ and $+1$, and of the general element
 — are the mathematics of *Biquaternion Square Roots of Minus One, Zero and Plus One* and *Biquaternion
 Square Roots of a General Element*, found from the vector–scalar split and free of any Clifford
-structure; they are cited and read here, not re-proved. The three readings in physics are owned by *The
+structure; they are cited and read here, not re-proved. The three interpretations in physics are owned by *The
 Local Complex Structure and the Speed of Light*, *The Light Cone as the Biquaternion Zero-Divisor Cone*,
 *Zero Divisors as a Physical Locus in Biquaternionic Form* and *Antilinear Structure and the Two Kinds of
 Mass in Biquaternionic Form*; the mass shell and the interval are owned by *Biquaternion Norm and
@@ -55,7 +55,7 @@ classification for the central values.
 The physical content of the split is the separation it makes. The scalar branch is the **central** one:
 its roots commute with everything and ask nothing of the direction of space. The pure branch is the
 **directional** one: its roots are vectors, they single out a direction and a complex structure, and they
-carry the geometry of the patch. Every physical reading below is a reading of the pure branch.
+carry the geometry of the patch. Every physical interpretation below is an interpretation of the pure branch.
 
 ## The Roots of $-1$: the Local Complex Structure
 
@@ -83,14 +83,14 @@ that **commute** with every element, with $ie_0$ the distinguished one that make
 over $\mathbb{C}$ and that the corpus calls the scalar imaginary $i$; its negative $-ie_0$ carries the
 conjugate scalar structure.
 
-**The reading.** An element that squares to $-1$ is read as a choice of **what is called $i$** in a local
+**The interpretation.** An element that squares to $-1$ is read as a choice of **what is called $i$** in a local
 patch, and the central imaginary is the distinguished, global choice. The remaining roots are local: each
 defines its own complex structure, and passing from one to another is a change of what plays the role of
-$i$. The physics of the reading — the local complex structure fixing the propagation of the fields and
+$i$. The physics of the interpretation — the local complex structure fixing the propagation of the fields and
 the speed of light of the patch — is owned by *The Local Complex Structure and the Speed of Light*, where
 the sphere $S^{2}$ is the set of local frames a field can be referred to.
 
-**Proposed reading, labelled as such.** In the material sector the root set splits into the pair
+**Proposed interpretation, labelled as such.** In the material sector the root set splits into the pair
 $\pm ie_0$, which commutes with everything, and the sphere of real unit vectors, which do not. **Time is
 the central direction and space is the sphere of spatial roots**, so the split of the root set is the
 algebraic form of the inertial frame: one global time direction and a sphere of spatial orientations.
@@ -111,7 +111,7 @@ norm cone $\sum_\mu Q_\mu^{2}=0$. An element of that cone which is not pure is a
 nilpotent, so the roots of $0$ are the **pure** part of the cone, and the whole cone is the framework's
 null cone in the algebra.
 
-**The reading.** A nonzero element whose square vanishes is read as the algebraic form of a **lightlike
+**The interpretation.** A nonzero element whose square vanishes is read as the algebraic form of a **lightlike
 propagation**: the element is not zero, yet composing it with itself annihilates it, the algebraic shadow
 of a displacement of zero interval. The cone as the light cone, the nilpotents as its pure part, and the
 zero divisors as the locus of the lightlike directions are owned by *The Light Cone as the Biquaternion
@@ -140,7 +140,7 @@ the two central roots the whole root set is complex, $\mathbf P=\mathbf U+i\math
 $\mathbf U\!\cdot\!\mathbf V=0$ and $\lvert\mathbf V\rvert^{2}-\lvert\mathbf U\rvert^{2}=1$, of which the
 Hermitian members $\mathbf P=i\hat\mu$ are the reflections.
 
-**The reading.** An involution is read as the algebra-side counterpart of a possible **reality condition**,
+**The interpretation.** An involution is read as the algebra-side counterpart of a possible **reality condition**,
 a way of declaring which states are the "real" ones. The conditions themselves are **antilinear** maps,
 and it is the sign $J^{2}=\pm1$ that separates the real from the quaternionic type; the corpus's
 antilinear involutions of the algebra are the complex, Hermitian and anti-Hermitian conjugations, and the
@@ -152,7 +152,7 @@ the **linear** companion of that structure — an element $J$ with $J^{2}=e_0$ �
 the informational sector are the reflections $i\hat\mu=2\tilde\Pi-e_0$. The classification proved here
 is only that the roots of $+1$ are $\pm e_0$ together with the pure elements of complex square $-1$.
 
-**Proposed reading, speculative and labelled as such.** Offered as a speculation, **the involutions are
+**Proposed interpretation, speculative and labelled as such.** Offered as a speculation, **the involutions are
 the discrete symmetries** — parity, time reversal and charge conjugation act as involutions of the state
 space — with the sign $J^{2}=\pm1$ for the real-versus-quaternionic type. *Not claimed:* that $P$, $T$ or
 $C$ is derived here; charge conjugation and the discrete symmetries are owned by *Charge Conjugation and
@@ -162,7 +162,7 @@ the Division Ring in Biquaternionic Form*.
 
 The three answer sets are summarised in one table.
 
-| equation | central roots | pure roots | what the root is | the reading |
+| equation | central roots | pure roots | what the root is | the interpretation |
 |---|---|---|---|---|
 | $\tilde P^{2}=-e_0$ | $\pm ie_0$ | $(\mathbf P,\mathbf P)=1$ | complex structure $J$ | a choice of what is called $i$ in a local patch |
 | $\tilde P^{2}=0$ | $0$ | $(\mathbf P,\mathbf P)=0$ | nilpotent, zero divisor | lightlike propagation |
@@ -185,7 +185,7 @@ $\pm e_0$ are Hermitian and a pure root would need a real vector of square $-1$ 
 root of $0$.
 
 The equation is therefore one, and the physical name of its solution is decided by where in the algebra
-the solution lives. This is the content of the reading "three physical answers to one algebraic
+the solution lives. This is the content of the interpretation "three physical answers to one algebraic
 equation".
 
 ## Square Roots of a General Element
@@ -247,10 +247,10 @@ classification returns four, a continuum, four and two roots respectively, and e
 radicand; the rootless case is met only on the nonzero nilpotents such as $e_1+ie_2$, and never inside
 $\mathbb{M}_-$.
 
-**Proposed reading, labelled as such.** Read physically, **the material sector is the sector of the
+**Proposed interpretation, labelled as such.** Read physically, **the material sector is the sector of the
 composite**: every material four-vector is the square of some element, and the refusal is confined to the
 null elements of the vector subspace, such as $e_1+ie_2$, which lie in neither sector. *What is proved is
-the corollary; the words "composite" and "refusal" are the reading.*
+the corollary; the words "composite" and "refusal" are the interpretation.*
 
 ## The Mass Shell as a Slice of the Square Map
 
@@ -281,7 +281,7 @@ like the natural one, is scalar, and it is the reason the two squares are easily
 
 ## The Reading, Labelled as Such
 
-**Proposed reading, partly speculative and labelled as such.** A material quantity is read as an element
+**Proposed interpretation, partly speculative and labelled as such.** A material quantity is read as an element
 $\tilde Q$ of the algebra, and the quantity is said to be **realised by the algebra** when $\tilde Q$ has
 a square root, so that it is the square of some other element. The criterion is then read as an existence
 condition on the quantity.
@@ -295,7 +295,7 @@ realised.
 
 The three central cases are read the same way: a quantity that is a complex structure, a nilpotent or an
 involution is a quantity whose square is one of the three distinguished values, and the three values are
-the three distinguished squares. The **mass-shell reading** adds that a four-momentum is a material
+the three distinguished squares. The **mass-shell interpretation** adds that a four-momentum is a material
 element, that its natural square is the scalar $N(\tilde P)e_0$, and that the mass shell is the slice of
 the natural square map on which that scalar takes the value $-m^{2}c^{2}$.
 
@@ -304,10 +304,10 @@ existence condition is a **proposal and not a result**. The framework does not c
 locus is unphysical, that every material quantity is a square in the physical sense, or that the mass
 shell is derived from the square map; it does not fix a mass spectrum and does not say which roots are
 physical. The root set is not unique — a generic element has four roots and a complex scalar a continuum
-— so "the" square root of a quantity is not unique, and the reading has no preferred root until an extra
-principle selects one. That non-uniqueness is the standing weakness of the reading.
+— so "the" square root of a quantity is not unique, and the interpretation has no preferred root until an extra
+principle selects one. That non-uniqueness is the standing weakness of the interpretation.
 
-**Proposed reading, labelled as such.** Read as structure and not as a defect, the non-uniqueness is the
+**Proposed interpretation, labelled as such.** Read as structure and not as a defect, the non-uniqueness is the
 statement that **a quantity's roots are the local frames it can be referred to**, and that choosing one
 is a choice of representative — the analogue for the frame of a gauge fixing of an orbit.
 
@@ -327,7 +327,7 @@ $\tilde P\to-\tilde P$; and the scalar slice of the ordinary square is the union
 vector subspace.
 $3ie_0+e_1$, $ie_0$, $e_1$ and $ie_0+e_1$.*
 
-**Readings, partly speculative and labelled.** That a root of $-1$ is a **local complex structure** and a
+**Interpretations, partly speculative and labelled.** That a root of $-1$ is a **local complex structure** and a
 choice of what is called $i$; that a nonzero root of $0$ is the algebraic form of a **lightlike
 propagation**; that a root of $+1$ is a **reality condition**, a possible conjugation of the state space;
 that a material quantity is **realised by the algebra** exactly when it has a square root, with the
@@ -340,9 +340,9 @@ the nilpotents; and, speculatively, that the roots of $+1$ are the discrete symm
 
 ## Physical Readings
 
-The three distinguished radicands read as the three physical cases of the framework. The square root of $-e_0$ is the local complex structure $i$, that is, the quarter turn that carries the clock; the square root of $e_0$ is a null direction, that is, a point of the cone, where the two roots coincide at the lightlike element; and the square root of a general radicand is a boost, whose polar form exists only outside the cone. The equation therefore reads the mass shell and the cone in one statement, and the reading is that massive, massless and spacelike are the interior, the boundary and the exterior of one quadric.
+The three distinguished radicands read as the three physical cases of the framework. The square root of $-e_0$ is the local complex structure $i$, that is, the quarter turn that carries the clock; the square root of $e_0$ is a null direction, that is, a point of the cone, where the two roots coincide at the lightlike element; and the square root of a general radicand is a boost, whose polar form exists only outside the cone. The equation therefore reads the mass shell and the cone in one statement, and the interpretation is that massive, massless and spacelike are the interior, the boundary and the exterior of one quadric.
 
-Read with the Klein four of *Relations Between Subspaces*, the speculative discrete-symmetry reading acquires its structure: the involutions are the four **characters** of that group, $\flat=-{}^{*}$ is the fourth character, and no assignment of parity, time reversal and charge conjugation to the characters is proved here.
+Read with the Klein four of *Relations Between Subspaces*, the speculative discrete-symmetry interpretation acquires its structure: the involutions are the four **characters** of that group, $\flat=-{}^{*}$ is the fourth character, and no assignment of parity, time reversal and charge conjugation to the characters is proved here.
 
 ## Summary
 
@@ -350,14 +350,14 @@ The single equation $\tilde P^{2}=\tilde Q$ has, at its three distinguished cent
 answer sets, found from the vector–scalar split and collected in the table of §*The Three Answers in One
 Table*. The roots of $-1$ are the central $\pm ie_0$ and the pure elements of complex square one, whose
 real members are the two-sphere $S^{2}$ of unit imaginary quaternions; each is a **complex structure**, and
-the reading — a root of $-1$ is a choice of what is called $i$ in a local patch, with the central
+the interpretation — a root of $-1$ is a choice of what is called $i$ in a local patch, with the central
 imaginary as the distinguished global one — is owned by *The Local Complex Structure and the Speed of
 Light*. The roots of $0$ are $0$ and the pure null elements, the **nilpotents**, the pure part of the
-zero-divisor cone; the reading of a nonzero element whose square vanishes as the algebraic form of a
+zero-divisor cone; the interpretation of a nonzero element whose square vanishes as the algebraic form of a
 **lightlike propagation** is owned by *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Zero
 Divisors as a Physical Locus in Biquaternionic Form*. The roots of $+1$ are the central $\pm e_0$ and the
 pure elements of complex square minus one, each an **involution**; the Hermitian ones are the reflections
-$i\hat\mu=2\tilde\Pi-e_0$ of the informational sector, and the reading of an involution as a **reality
+$i\hat\mu=2\tilde\Pi-e_0$ of the informational sector, and the interpretation of an involution as a **reality
 condition** is owned by *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*.
 
 For a general element the roots number four, two, none or a four-real-parameter continuum according to the
@@ -366,10 +366,10 @@ conditions of §*Square Roots of a General Element*; an element has no square ro
 $\mathbb{M}_-$ contains no nonzero nilpotent. The mass shell is a slice of the square map: the natural
 square $\nu(\tilde P)=\tilde P\tilde P^{\natural}=N(\tilde P)e_0$ always lands in the centre, and the mass
 shell is the fibre over the scalar $-m^{2}c^{2}$, whose level set on $\mathbb{M}_-$ is the mass shell of
-*Biquaternion Norm and Invertibility*. The reading of a material quantity as **realised by the algebra**
+*Biquaternion Norm and Invertibility*. The interpretation of a material quantity as **realised by the algebra**
 exactly when it has a square root, and of the mass shell as the slice on which the square is a prescribed
 scalar, is **partly speculative and labelled as such**; the identification of the criterion with a
-physical condition is a proposal and not a result, and the standing weakness of the reading is the
+physical condition is a proposal and not a result, and the standing weakness of the interpretation is the
 non-uniqueness of the root. The relation to the two kinds of mass runs through the roots of $+1$, the
 reality conditions of *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*.
 
@@ -416,7 +416,7 @@ interval and the mass shell.
 - Companion article *Biquaternion Norm and Invertibility*, for the mass shell and the interval owned in
 physics.
 - Companion article *The Local Complex Structure and the Speed of Light*, for the root of $-1$ as a local
-complex structure and its propagation reading.
+complex structure and its propagation interpretation.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the null cone of the
 algebra.
 - Companion article *Zero Divisors as a Physical Locus in Biquaternionic Form*, for the zero divisors and
@@ -426,4 +426,4 @@ classification of the possible reality conditions on the state space.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the
 involutions as reality conditions and the two kinds of mass.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the
-separation of the ordinary square from the sesquilinear one and the rank reading of mass.
+separation of the ordinary square from the sesquilinear one and the rank interpretation of mass.

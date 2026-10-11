@@ -678,7 +678,7 @@ Collecting §30 and §31, every \(B\in Cl_{3,0}\) falls into exactly one of the 
 
 The three central values of the algebra illustrate the trichotomy: \(B=e_0\) has the two roots \(\pm e_0\) and a family; \(B=-e_0\) has the two roots \(\pm\omega\) and a family; \(B=0\) has the family alone, its nonzero members the null elements.
 
-## 33. The Reading of the Data
+## 33. The Interpretation of the Data
 
 The two data \(b_0\) and \(b_{123}\) have a direct reading in terms of the unknown root \(A=v+V\omega\) when it is a complex scalar, that is, in the complex-scalar case of §31: \(b_0 = Q(v)-Q(V)\), and \(b_{123}=2B(v,V)\) controls their mutual relation. So the scalar coefficient fixes a pair of concentric quadrics on which \(v\) and \(V\) must lie, and the pseudoscalar coefficient fixes their mutual relation; this is the geometric reading of the square-root problem given by Acus and Dargys, whose Clifford-layer algorithm is the closed form of §30–§31 written in the variables \(b_S,b_I,\Delta\).
 

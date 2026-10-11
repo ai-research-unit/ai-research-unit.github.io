@@ -186,7 +186,7 @@ $$
 = \frac{e^2}{8\pi^2}\oint dS_i\,K^i .
 $$
 
-The axial charge of the vacuum therefore changes only through a boundary term — a large gauge configuration, an instanton. This is the standard topological reading of the anomaly, and the companion article on instantons supplies the framework's form of the topological charge: the density is proportional to $I_2=\mathbf{E}\cdot\mathbf{B}$, whose integral over a configuration is the instanton number. In the biquaternion language the anomaly transports axial charge into the winding of the material-sector gauge field; both are framework objects, and neither needs an object beyond the algebra.
+The axial charge of the vacuum therefore changes only through a boundary term — a large gauge configuration, an instanton. This is the standard topological interpretation of the anomaly, and the companion article on instantons supplies the framework's form of the topological charge: the density is proportional to $I_2=\mathbf{E}\cdot\mathbf{B}$, whose integral over a configuration is the instanton number. In the biquaternion language the anomaly transports axial charge into the winding of the material-sector gauge field; both are framework objects, and neither needs an object beyond the algebra.
 
 **The index.** The integrated anomaly is twice the index of the Dirac operator,
 
@@ -196,7 +196,7 @@ $$
 
 the difference between the number of right- and left-handed zero modes of the massless Dirac operator in the background; the general index statement is the Atiyah–Singer theorem, and the zero-mode count and the index theorem belong to the corpus's general gauge apparatus rather than to the fermion sector. The two facts the fermion sector uses are immediate consequences and are all that is needed here: the anomaly coefficient is an **integer** topological invariant, which is why it cannot be renormalised (no continuous parameter can interpolate between integers), and a single unit of topological charge therefore produces a net axial-charge violation by two units per fermion flavour. The divergence identity, the density, and the integer are one statement.
 
-**The consistency of the picture.** The three readings of the anomaly — the triangle diagram with its trace, the Chern–Simons divergence with its boundary charge, and the index of the Dirac operator — are three faces of one object. The triangle gives the coefficient; the total-derivative form gives its topological character; the index gives its integrality. In the framework the coefficient is a Clifford trace ($\gamma_5=i\omega$), the density is a field invariant ($I_2$), and the integral is a winding number of the material-sector connection. The article has stated the first two and referred the third to the general apparatus.
+**The consistency of the picture.** The three interpretations of the anomaly — the triangle diagram with its trace, the Chern–Simons divergence with its boundary charge, and the index of the Dirac operator — are three faces of one object. The triangle gives the coefficient; the total-derivative form gives its topological character; the index gives its integrality. In the framework the coefficient is a Clifford trace ($\gamma_5=i\omega$), the density is a field invariant ($I_2$), and the integral is a winding number of the material-sector connection. The article has stated the first two and referred the third to the general apparatus.
 
 ## The Non-Abelian Anomaly and Its Consistency
 

@@ -29,7 +29,7 @@ $K$ of the fourth product, and the adjoint of the left multiplication is its **n
 $L^{\diamond\dagger}_{\tilde A}=-L^{\diamond}_{\tilde A}$: it **reverses the parameter** and **keeps the
 side**, a third behaviour on the one algebra beside the composition band's side-swapping transpose and the
 probability band's parameter-conjugating Hermitian adjoint. The band's sandwich is consequently self-adjoint
-for $K$ for **every** parameter, and the type criteria, the symmetries and the reading follow from that sign.
+for $K$ for **every** parameter, and the type criteria, the symmetries and the interpretation follow from that sign.
 
 The operation is *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*; the operator
 content is *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, which owns the left
@@ -84,7 +84,7 @@ $L^{\diamond}_{\lambda\tilde A}=\lambda L^{\diamond}_{\tilde A}$.
 
 **Read as a physical statement.** The two slots have opposite polarity and the attachments inherit it:
 attaching on the left conjugates the variable, attaching on the right does not, and the parameter follows its
-slot. This is a reading that names the parity of a sesquilinear product and calls it the two signs of a gauge
+slot. This is an interpretation that names the parity of a sesquilinear product and calls it the two signs of a gauge
 pairing.
 
 **Proposition (the antisymmetry links the two families).** The conjugate-alternation reads on the operators as
@@ -102,7 +102,7 @@ the identity is that equality read for a fixed $\tilde A$. Verified on fifty ran
 
 **Read as a physical statement.** The band has one operator family, not two independent ones: the right
 multiplication is the conjugate of the left, and the conjugation of the second slot is the tie, which is why
-the band never carries a full matrix algebra of one kind. This is a reading.
+the band never carries a full matrix algebra of one kind. This is an interpretation.
 
 ### The Composition Law
 
@@ -135,7 +135,7 @@ fifty random pairs.
 
 **Read as a physical statement.** Two attachments on the left compose into a **linear** operation of the
 ordinary kind, with a rank-one part and a scalar part proportional to $(\mathbf A,\overline{\mathbf A})$: the
-band composes its operations into objects that are not operations of the band. This is a reading.
+band composes its operations into objects that are not operations of the band. This is an interpretation.
 
 ### The Failure of Closure
 
@@ -217,7 +217,7 @@ the side.
 $K(L^{\diamond}_{\tilde A}\tilde R,\tilde S)=-(\mathbf A\times\overline{\mathbf R},\overline{\mathbf S})=-\det[\mathbf A,\overline{\mathbf R},\overline{\mathbf S}]$
 and the right side is
 $-\overline{K(\tilde R,L^{\diamond}_{\tilde A}\tilde S)}=\det[\overline{\mathbf R},\mathbf A,\overline{\mathbf S}]$,
-the two sign readings of one triple product; this
+the two sign interpretations of one triple product; this
 is the theorem of *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*. The second is the
 same triple product on the other slot, and the third is antimultiplicativity,
 $(L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B})^{\dagger}=(R^{\diamond}_{\tilde B})^{\dagger}(L^{\diamond}_{\tilde A})^{\dagger}$.
@@ -228,7 +228,7 @@ the side: it reverses the **parameter** and leaves the attachment. The three ses
 therefore do three different things on one algebra — the transpose swaps the sides, the Hermitian adjoint
 conjugates and keeps the side, the indefinite adjoint negates and keeps the side. The band's operands are the
 **value** of an alternating product, and the pairing of a value with a test element differs between the two
-orders by the sign and the conjugate; the adjoint reads that sign. This is a reading.
+orders by the sign and the conjugate; the adjoint reads that sign. This is an interpretation.
 
 **Corollary (the sandwich is self-adjoint for every parameter).** The diagonal two-sided operator
 
@@ -248,7 +248,7 @@ Verified on sixty random parameters.
 **Read as a physical statement.** Where the composition band's sandwich is self-adjoint exactly on the two
 sectors of its parameter, the band's sandwich is self-adjoint **unconditionally**: the negative of the left
 multiplication is already the operator the pairing produces, so no sector condition can break the symmetry. A
-sandwich of this band is a symmetric operation of the polarisation for every direction. This is a reading.
+sandwich of this band is a symmetric operation of the polarisation for every direction. This is an interpretation.
 
 ## The Types of the Operators
 
@@ -302,7 +302,7 @@ on sixty random parameters that no multiplication of the band preserves $K$.
 
 **Read as a physical statement.** The isometries of the band's metric are not supplied by the band: they are
 the indefinite unitaries of the parent, far larger than the multiplications, and the norm $N$ enters the gauge
-story through the parent's plain sandwich, not through the antisymmetric half. This is a reading.
+story through the parent's plain sandwich, not through the antisymmetric half. This is an interpretation.
 
 ## The Symmetries of the Form and of the Product
 
@@ -339,7 +339,7 @@ Verified on fifty random pairs for the product law and thirty for the form law.
 **Read as a physical statement.** The symmetries of the product are an arbitrary real-linear relabelling of
 the scalar coordinate and a rotation of the vector part, while the form $K$ is preserved by the larger group
 $U(1,3)$. The metric and the product therefore have different symmetries: the product is a direction
-structure, the form a gauge structure. This is a reading.
+structure, the form a gauge structure. This is an interpretation.
 
 ## The Sandwich of the Band and Its Adjoint
 
@@ -384,7 +384,7 @@ non-invertibility is the annihilation of the centre. Verified on thirty random p
 exactly on the unitary slice; here there is no slice, because there is no inner automorphism at all. The
 band's sandwich reads an element through the product twice, and its symmetry is the rotation-equivariance of
 an axial direction, not the conjugation of a group. The comparison with the model's sandwich is the crossing
-reader *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*. This is a reading.
+reader *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*. This is an interpretation.
 
 ## The Operators Acting on the Gauge Space
 
@@ -497,14 +497,14 @@ displayed.
 The article states one cell of the grid of the twelve operator rows, and the boundary of the cell is what it must declare.
 
 - **The composition laws are applied, not re-proved.** The left family, its rank, its kernel, its adjoint and its derivations are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*; the article verifies the formulas and reads them.
-- **The product and its laws are the band's first article.** The rule, the conjugate-alternation, the non-vanishing diagonal and the axial reading are *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, cited and not repeated.
-- **The Jacobi failure, its witness and the higher structure are the band's other two articles.** *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure* owns the failure and the invisibility on the real forms; *A Higher Structure for the Jacobi Failure* owns the positive reading; this article states only the closure failure of the **operators**, a statement about the commutator and not about the cyclic sum.
+- **The product and its laws are the band's first article.** The rule, the conjugate-alternation, the non-vanishing diagonal and the axial interpretation are *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, cited and not repeated.
+- **The Jacobi failure, its witness and the higher structure are the band's other two articles.** *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure* owns the failure and the invisibility on the real forms; *A Higher Structure for the Jacobi Failure* owns the positive interpretation; this article states only the closure failure of the **operators**, a statement about the commutator and not about the cyclic sum.
 - **The indefinite adjoint and its type criteria are applied, not derived.** The $J$-adjoint, the type criteria and the $J$-unitary group are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*; the indefinite sandwich is *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra of Biquaternions*.
 - **The form, the metric and the state side are not re-read here.** *The Fourth Product and Its Indefinite Metric*, *The States the Indefinite Metric Cannot Normalise* and *Why the Fourth Product Is a Gauge Structure and Not a State Space* own the metric, the null states and the no-go statement.
 - **The physical adjoint is not this adjoint.** The observables and the gauge generators are read with the **definite** Hermitian adjoint of the probability band, in *Observables, Gauge Generators and the Chirality of the Internal Action*; this article's adjoint is the **indefinite** one.
 - **The four adjoints are not compared here.** The comparison, block against block, is the crossing reader *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*, which is not one of the twelve; this article declares only the $\mathrm{AQS}$ column.
 
-**What the framework does not claim.** The reading does not derive the polarisation, the spin or the self-helicity from the operator calculus; it reads structures the corpus already uses. It does not identify the skew-adjoint multiplications with gauge generators, and it does not claim that the band is a Lie algebra, a monoid or a group. It does not claim that the twelve rows are one calculus; the antisymmetric quaternionic sesquilinear row is the row in which the adjoint is a negation, and that is its own.
+**What the framework does not claim.** The interpretation does not derive the polarisation, the spin or the self-helicity from the operator calculus; it reads structures the corpus already uses. It does not identify the skew-adjoint multiplications with gauge generators, and it does not claim that the band is a Lie algebra, a monoid or a group. It does not claim that the twelve rows are one calculus; the antisymmetric quaternionic sesquilinear row is the row in which the adjoint is a negation, and that is its own.
 
 ## The Ledger
 
@@ -542,7 +542,7 @@ $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}}$ and realifi
 multiplication has rank four, kernel $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\mathbf A}$, image the
 plane $(\mathbf A,\cdot)=0$ and zero trace.
 
-**Readings.** That the adjoint of the band is taken for the **indefinite** form and is a **negation of the
+**Interpretations.** That the adjoint of the band is taken for the **indefinite** form and is a **negation of the
 parameter** that keeps the side, where the composition band's transpose swaps the sides and the probability
 band's Hermitian adjoint conjugates the parameter; that the band supplies **no self-adjoint generator**, all
 its multiplications being skew-adjoint, so the antisymmetric half is a structure of directions and not of
@@ -561,16 +561,16 @@ product, which pairs a vector with the conjugate of another and returns an axial
 Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*). The first reading is that the
 operators **carry a direction and not a state**: the left multiplication sends every element into the plane
 perpendicular to its parameter, the image is a direction space, and no value of the band is an element the
-indefinite metric can normalise. The second reading is that the adjoint is a **reversal of the parameter**:
+indefinite metric can normalise. The second interpretation is that the adjoint is a **reversal of the parameter**:
 transporting a direction across the pairing reverses its sense, the operator form of the axial character of
-the cross product. The third reading is negative: the operators do not close to a Lie algebra, so the band
+the cross product. The third interpretation is negative: the operators do not close to a Lie algebra, so the band
 does not supply the internal symmetry algebra of the frame, and the closure that exists is the cross-product
 closure of the real quaternion forms, invisible to a computation with real coefficients. Read against the
 composition and probability bands, the three rows are three adjoints on one algebra: the transpose that swaps
 the sides, the Hermitian adjoint that conjugates and keeps the side, and the indefinite adjoint that negates
 the parameter and keeps the side. Read on the clock, the band's operators carry no central phase of their own,
 because the centre is annihilated, so the band belongs entirely to the vector part. The placement in the
-twelve is the final reading: the antisymmetric quaternionic sesquilinear row is the row where the bracket
+twelve is the final interpretation: the antisymmetric quaternionic sesquilinear row is the row where the bracket
 fails, the adjoint negates, and the metric remains a gauge metric and not a state space.
 
 ## Summary
@@ -587,7 +587,7 @@ commutator
 $\overline{\mathbf B}(\mathbf A,\mathbf X)-\overline{\mathbf A}(\mathbf B,\mathbf X)-2i\operatorname{Im}(\mathbf A,\overline{\mathbf B})\mathbf X$
 is a multiplication on the real forms and a non-multiplication off them, with the complex witness
 $(e_1,ie_1,e_2)$ giving $2ie_2$ against $0$. The band carries **no Lie algebra**, the failure is invisible on
-the real quaternion forms, and the positive reading of the same failure as a higher structure is the band's
+the real quaternion forms, and the positive interpretation of the same failure as a higher structure is the band's
 own article. The form of the band is the indefinite Krein form of signature $(1,3)$, and its adjoint
 **reverses the parameter and keeps the side**:
 $(L^{\diamond}_{\tilde A})^{\dagger}=-L^{\diamond}_{\tilde A}$,
@@ -602,7 +602,7 @@ structure group is $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$, the coefficient co
 of the product and an antiunitary of the form, and the metric and the product have different symmetries. The
 sandwich $\Theta^{\diamond}_{\tilde A}=L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde A}$ is self-adjoint for $K$
 for **every** parameter, non-invertible and $SO(3,\mathbb{R})$-equivariant; the inner automorphism of the
-parent is not an operator of the band, so the comparison degenerates and the degeneration is the reading. On
+parent is not an operator of the band, so the comparison degenerates and the degeneration is the interpretation. On
 the gauge space the left multiplication has rank four, kernel
 $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\mathbf A}$, image the plane $(\mathbf A,\cdot)=0$ and zero
 trace, and the trace pairing of two left multiplications is $-2(\mathbf P,\overline{\mathbf Q})$, the

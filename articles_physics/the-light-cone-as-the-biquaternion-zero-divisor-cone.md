@@ -129,7 +129,7 @@ which is the form in which it appears in the boost of a plane wave. The name, du
 
 ## The Cone in the Remarkable Subspaces
 
-Which real subspaces meet $\mathcal{Z}$ is the question that gives the cone its physical reading.
+Which real subspaces meet $\mathcal{Z}$ is the question that gives the cone its physical interpretation.
 
 **The scalar line and the real quaternions are division subalgebras.** On $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ a general element is $\tilde{Q} = (a + ib)e_0$ and $N(\tilde{Q}) = (a+ib)^2$, which vanishes only at $a = b = 0$. On $\mathbb{H}_{\mathbb{B}}$ a general element is a real quaternion $\tilde{Q} = a_0e_0 + \mathbf{a}$ with $N(\tilde{Q}) = a_0^2 + \mathbf{a}^2$, a sum of real squares, which likewise vanishes only at the origin. Neither subspace contains a zero divisor: they are the division subalgebras of $\mathbb{B}$, and on them the biquaternion norm is anisotropic. The set $\mathcal{Z}$ lives in the complement of those two subspaces.
 
@@ -149,7 +149,7 @@ $$
 
 so every future (or past) null point of the real material slice is a real multiple of an idempotent: the material cone is the non-pure family, realized over the reals. The apex $\tilde{Q} = 0$ is excluded from $\mathcal{Z}$ by the definition, since it is not a zero divisor. The real pure case would require $N(\mathbf{x}) = \mathbf{x}^2 = 0$ with $\mathbf{x}\neq 0$ and real, which is impossible; the nilpotent family on the material cone therefore needs complex spatial components, and the real cone is entirely of the idempotent type.
 
-**The informational cone.** On $\mathbb{M}_+$ the general element is $\tilde{Q} = q_0e_0 + i\mathbf{q}$ with $q_0, \mathbf{q}$ real, and $N(\tilde{Q}) = q_0^2 - \mathbf{q}^2$. Its vanishing set is a cone with the real scalar $q_0$ as the distinguished coordinate — the future and past cones of the informational sector. It is a genuine cone of the same type, but its physical reading is the informational one and belongs to the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; here it is recorded only to make the point that both Hermitian-type subspaces, and only those, carry the zero-divisor cone.
+**The informational cone.** On $\mathbb{M}_+$ the general element is $\tilde{Q} = q_0e_0 + i\mathbf{q}$ with $q_0, \mathbf{q}$ real, and $N(\tilde{Q}) = q_0^2 - \mathbf{q}^2$. Its vanishing set is a cone with the real scalar $q_0$ as the distinguished coordinate — the future and past cones of the informational sector. It is a genuine cone of the same type, but its physical interpretation is the informational one and belongs to the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; here it is recorded only to make the point that both Hermitian-type subspaces, and only those, carry the zero-divisor cone.
 
 The distribution is therefore forced by the topology of the four real slices: the two division slices $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are anisotropic, and the two slices on which $i$ appears with a relative sign — $\mathbb{M}_-$ and $\mathbb{M}_+$ — carry the cone. The physical light cone is the branch of $\mathcal{Z}$ that lies in the material sector.
 
@@ -171,7 +171,7 @@ $$
 N(\tilde{K}) = -\frac{\omega^2}{c^2} + \mathbf{k}^2 .
 $$
 
-For a plane-wave phase $\Phi = f(s)$ with $s = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the chain rule gives
+For a plane-wave phase $\mathsf{M}_2 = f(s)$ with $s = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the chain rule gives
 
 $$
 \partial_{ict}s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,
@@ -200,14 +200,14 @@ A four-wavevector supports a dispersionless wave precisely when it is null, and 
 
 
 $$
-\Phi(\tilde{Q}) = e^{is_1} + \tfrac12 e^{is_2} + \tfrac13 e^{is_3},
+\mathsf{M}_2(\tilde{Q}) = e^{is_1} + \tfrac12 e^{is_2} + \tfrac13 e^{is_3},
 \qquad
 \mathbf{k}_1 = (1,0,0),\quad \mathbf{k}_2 = (0,1,0),\quad \mathbf{k}_3 = (0.6,0.8,0),
 $$
 
-with $\omega_i = c|\mathbf{k}_i|$ and $c = 1$, so that each $N(\tilde{K}_i) = 0$. Evaluating $\Box\Phi = \partial_{ict}^2\Phi + \Delta\Phi$ numerically at a generic event gives $|\Box\Phi| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
+with $\omega_i = c|\mathbf{k}_i|$ and $c = 1$, so that each $N(\tilde{K}_i) = 0$. Evaluating $\Box\mathsf{M}_2 = \partial_{ict}^2\mathsf{M}_2 + \Delta\mathsf{M}_2$ numerically at a generic event gives $|\Box\Phi| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
 
-The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}\Phi) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
+The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}\mathsf{M}_2) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
 
 ## Invariance of the Cone
 
@@ -252,7 +252,7 @@ $$
 
 and the corresponding right inverse is the same expression. Off the cone the biquaternion norm is a nonzero complex number, the inverse exists, and the element generates a two-sided translation of the algebra. On the cone the inverse does not exist, and the failure is not a limit that can be repaired: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ makes every candidate inverse of the form $\tilde{Q}^{\natural}/N(\tilde{Q})$ undefined, and the existence of a nonzero annihilator is exactly the statement that multiplication by $\tilde{Q}$ has a nontrivial kernel.
 
-The physical reading of this algebraic boundary is the content of the preceding sections. A massive particle has $N(\tilde{P}) = -m^2c^2 \neq 0$, so its momentum is invertible and its worldline lies in the interior of the cone; a massless particle has $N(\tilde{P}) = 0$, so its momentum is a zero divisor and lies on the boundary. A timelike worldline can be continuously deformed into a lightlike one only at the cost of sending $m\to 0$, where the invertibility of the momentum is lost. The cone is therefore not merely the set of paths that light follows; it is the locus where the algebra's multiplication loses invertibility, and the two statements are the same statement in this framework.
+The physical interpretation of this algebraic boundary is the content of the preceding sections. A massive particle has $N(\tilde{P}) = -m^2c^2 \neq 0$, so its momentum is invertible and its worldline lies in the interior of the cone; a massless particle has $N(\tilde{P}) = 0$, so its momentum is a zero divisor and lies on the boundary. A timelike worldline can be continuously deformed into a lightlike one only at the cost of sending $m\to 0$, where the invertibility of the momentum is lost. The cone is therefore not merely the set of paths that light follows; it is the locus where the algebra's multiplication loses invertibility, and the two statements are the same statement in this framework.
 
 
 ## What the Algebra Supplies and What It Is Standard
@@ -261,7 +261,7 @@ The physical reading of this algebraic boundary is the content of the preceding 
 
 **Standard physics transcribed.** The light-cone structure of Minkowski space, the dispersion relation $\omega = c|\mathbf{k}|$, the classification of the electromagnetic field as null/radiative when both invariants vanish, and the characteristic-cone interpretation of a second-order hyperbolic operator are all standard. The algebra reproduces them; it does not add a new propagation law.
 
-**Interpretation.** The reading of the material cone as physical spacetime's causal structure, and of its zero-divisor character as the boundary of the invertible sector, is the framework's structural hypothesis. The mathematics is exact and standard; the physical assignment is the hypothesis.
+**Interpretation.** The interpretation of the material cone as physical spacetime's causal structure, and of its zero-divisor character as the boundary of the invertible sector, is the framework's structural hypothesis. The mathematics is exact and standard; the physical assignment is the hypothesis.
 
 ## Open Questions
 

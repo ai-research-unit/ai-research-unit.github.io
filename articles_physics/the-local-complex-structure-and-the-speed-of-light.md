@@ -6,7 +6,7 @@ The biquaternion framework reads the Lorentzian signature of spacetime as a cons
 $$
 ds^2=-c^2\,dt^2+d\mathbf x^2
 $$
-is, in this reading, the sign of $i^2$; it is not put into the metric by hand. That much is inherited. This article isolates the structure that does the work and asks what, precisely, it is a structure *on*. The answer turns on a distinction that is easy to blur: **no global complex structure compatible with the Minkowski metric is available on spacetime, but a local one is**, and the speed of light $c$ is the single scale that converts the local structure into the Minkowski metric.
+is, in this interpretation, the sign of $i^2$; it is not put into the metric by hand. That much is inherited. This article isolates the structure that does the work and asks what, precisely, it is a structure *on*. The answer turns on a distinction that is easy to blur: **no global complex structure compatible with the Minkowski metric is available on spacetime, but a local one is**, and the speed of light $c$ is the single scale that converts the local structure into the Minkowski metric.
 
 The parent of this article is *Electromagnetism in Media — The Local Complex Structure at Work*, where the local structure is used in a material medium. There the medium supplies the general case and the vacuum is its limit. Here the subject is the structure itself and its relation to the speed of light; the medium appears only as the setting in which the local structure is seen to vary from point to point. The distinction between the global and the local statement is the organising theme, and every step below says which of the two is being claimed.
 
@@ -116,7 +116,7 @@ g(\mathbf x)=\mathrm{diag}\!\left(-c(\mathbf x)^2,\,1,\,1,\,1\right),
 $$
 and at each point the null directions are those with $|d\mathbf x/dt|=c(\mathbf x)$. The metric is not postulated alongside the complex structure; it is read off from the phase and the local scale.
 
-Two cautions belong here. First, this is not a claim that a medium produces the Gordon-type effective metric of a moving dielectric. The local structure considered here is isotropic and is written in the local rest frame of the material; the constitutive relations of a moving or anisotropic medium carry more data than the local complex structure, and their geometric reading is a separate question. Second, the field $g(\mathbf x)$ is obtained pointwise. Nothing global is asserted about it: there is no claim that the pointwise forms are the coordinate components of a single smooth metric in a preferred global frame, nor that a global Lorentz invariance survives the variation of $c$. That last point is taken up again below.
+Two cautions belong here. First, this is not a claim that a medium produces the Gordon-type effective metric of a moving dielectric. The local structure considered here is isotropic and is written in the local rest frame of the material; the constitutive relations of a moving or anisotropic medium carry more data than the local complex structure, and their geometric interpretation is a separate question. Second, the field $g(\mathbf x)$ is obtained pointwise. Nothing global is asserted about it: there is no claim that the pointwise forms are the coordinate components of a single smooth metric in a preferred global frame, nor that a global Lorentz invariance survives the variation of $c$. That last point is taken up again below.
 
 ## Two Routes by Which $c$ Is Fixed
 
@@ -161,9 +161,9 @@ Four boundaries should be stated, so that the local claim is not read as a globa
 
 ## Physical Readings
 
-The two senses of complex structure read as two physical claims. Globally, the complex structure of the algebra is fixed and no physics follows from it, which is the article's negative reading. Locally, the structure is the medium's: $c$ is the scale of the embedding, a change of the local structure moves the interval and the composition and leaves the probability form and the zero-divisor cone, and the cone of the algebra is therefore the invariant against which the physical wave cone is compared (*Conventions in the Biquaternion Universe*, *Electromagnetism in Media — The Local Complex Structure at Work*).
+The two senses of complex structure read as two physical claims. Globally, the complex structure of the algebra is fixed and no physics follows from it, which is the article's negative interpretation. Locally, the structure is the medium's: $c$ is the scale of the embedding, a change of the local structure moves the interval and the composition and leaves the probability form and the zero-divisor cone, and the cone of the algebra is therefore the invariant against which the physical wave cone is compared (*Conventions in the Biquaternion Universe*, *Electromagnetism in Media — The Local Complex Structure at Work*).
 
-The medium reading extends in three directions. First, $\log\lvert N\rvert$ is read as a **conformal (Weyl) factor**: the norm is a scale and its logarithm a potential for a dilation, so the framework's scale is a conformal weight and its massless limit a conformal limit — the reading is the shape of *Conformal Invariance and the Massless Limit in Biquaternionic Form*, cited. Second, the local complex structure $c=1/\sqrt{\epsilon\mu}$ is read as an **emergent metric**, the algebraic form of the analogue-gravity programme in which the wave cone is a medium property and not a fixed background. Third, the construction is read as a **bundle of algebras**: the biquaternion algebra is the typical fibre, the local complex structure a section of the frame bundle, and a medium a connection on it — the reading the series' *Curved Spacetime and the Biquaternion Framework* poses as a question and does not claim.
+The medium interpretation extends in three directions. First, $\log\lvert N\rvert$ is read as a **conformal (Weyl) factor**: the norm is a scale and its logarithm a potential for a dilation, so the framework's scale is a conformal weight and its massless limit a conformal limit — the interpretation is the shape of *Conformal Invariance and the Massless Limit in Biquaternionic Form*, cited. Second, the local complex structure $c=1/\sqrt{\epsilon\mu}$ is read as an **emergent metric**, the algebraic form of the analogue-gravity programme in which the wave cone is a medium property and not a fixed background. Third, the construction is read as a **bundle of algebras**: the biquaternion algebra is the typical fibre, the local complex structure a section of the frame bundle, and a medium a connection on it — the interpretation the series' *Curved Spacetime and the Biquaternion Framework* poses as a question and does not claim.
 
 ## Summary
 
@@ -175,7 +175,7 @@ A **local** structure is available, and it is the following pointwise data: the 
 
 That number is fixed by the local structure on two independent routes, and they agree. The null cone of the biquaternion norm has aperture $c$. The characteristic speed of the local wave operator $\Box=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ must equal the characteristic speed $c_{em}=1/\sqrt{\epsilon\mu}$ of the medium's Maxwell equations, so $c=c_{em}$. The numerical value of $c$ remains empirical, as in the metric formalism; what is fixed is its role.
 
-The reading closes no empirical gap and claims no global structure. Its content is that the signature is algebra, the scale is local, and the one scale is the speed of light.
+The interpretation closes no empirical gap and claims no global structure. Its content is that the signature is algebra, the scale is local, and the one scale is the speed of light.
 
 ## Summary of Notation
 

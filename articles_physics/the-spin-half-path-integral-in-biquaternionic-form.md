@@ -234,7 +234,7 @@ For a spin in a magnetic field with an easy-axis anisotropy the classical ground
 
 1. **The path integral on the double cover.** The spinor integral has a gauge redundancy — the overall phase — and the coherent-state integral fixes it by projection. Is there a first-principles derivation of the Wess–Zumino term as the gauge field of this redundancy, in the algebra's language?
 
-2. **Semiclassical corrections.** The one-loop determinant around the classical spin path is standard for the spin coherent-state integral. Does its algebraic form have a natural reading in terms of the idempotent fluctuations?
+2. **Semiclassical corrections.** The one-loop determinant around the classical spin path is standard for the spin coherent-state integral. Does its algebraic form have a natural interpretation in terms of the idempotent fluctuations?
 
 3. **Many spin-1/2 particles.** The path integral of $N$ spin-1/2 particles, symmetric or not, is the many-body problem; the symmetric sector is the constellation of the Majorana representation. Whether the algebraic formulation extends to a multi-idempotent integral is open and borders on the informational subcategory.
 

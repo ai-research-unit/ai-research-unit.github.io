@@ -129,7 +129,7 @@ $$
 \det\bigl(L^{\bullet}_{\tilde P}\bigr)=P_0^2\,N(\tilde P).
 $$
 
-*Proof.* $L^{\bullet}_{\tilde P}\tilde Q=\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=\tfrac12(L_{\tilde P}+R_{\tilde P})\tilde Q$, so the two operators differ by the factor $\tfrac12$ and not by the sum alone; the trace of a plain operator is $\operatorname{Tr}(L_{\tilde P})=\operatorname{Tr}(R_{\tilde P})=4P_0$, so the trace of the half-sum is $4P_0=2T(\tilde P)$. The determinant is computed on the matrix of the operator; in the $2\times2$ model the operator is $M\mapsto\tfrac12(\Phi(\tilde P)M+M\Phi(\tilde P))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\Phi(\tilde P)$, giving $\det= P_0^2N(\tilde P)$.
+*Proof.* $L^{\bullet}_{\tilde P}\tilde Q=\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=\tfrac12(L_{\tilde P}+R_{\tilde P})\tilde Q$, so the two operators differ by the factor $\tfrac12$ and not by the sum alone; the trace of a plain operator is $\operatorname{Tr}(L_{\tilde P})=\operatorname{Tr}(R_{\tilde P})=4P_0$, so the trace of the half-sum is $4P_0=2T(\tilde P)$. The determinant is computed on the matrix of the operator; in the $2\times2$ model the operator is $M\mapsto\tfrac12(\mathsf{M}_2(\tilde P)M+M\mathsf{M}_2(\tilde P))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\mathsf{M}_2(\tilde P)$, giving $\det= P_0^2N(\tilde P)$.
 
 **Remark (the factor of the operator identity).** The operator identity is
 

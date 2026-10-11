@@ -316,7 +316,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 ## Further Reading
 
 - E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little-group classification and the Wigner rotation.
-- Eugene P. Wigner, "Relativistic invariance and quantum phenomena," *Reviews of Modern Physics* **29** (1957) 255–268, for the physical reading of the little group and superselection.
+- Eugene P. Wigner, "Relativistic invariance and quantum phenomena," *Reviews of Modern Physics* **29** (1957) 255–268, for the physical interpretation of the little group and superselection.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the Lorentz and Poincaré representations and the little-group construction of one-particle states.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the spinor–null-vector correspondence and the celestial sphere.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the relation between the spinor module, the Möbius action, and the Lorentz group.

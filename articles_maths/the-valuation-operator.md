@@ -69,7 +69,7 @@ and the completion has the same valuation ring and maximal ideal up to the canon
 
 **Proof.** The completion of a non-Archimedean field preserves the value group, which is the theorem of *Absolute Values, Valuations and Completions*; the extension is defined by continuity of $v$ and is a valuation because the defining laws pass to limits, and it is unique because $\iota(F)$ is dense. The identification of the valuation ring is the persistence of the residue field and the open unit ball.
 
-## The Tropical Reading
+## The Tropical Interpretation
 
 The valuation converts the two operations of the field into the two operations of a semiring in which addition is minimum.
 

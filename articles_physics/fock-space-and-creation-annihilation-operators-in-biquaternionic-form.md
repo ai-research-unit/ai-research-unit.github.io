@@ -14,7 +14,7 @@ Its question is exact: what does "Fock space and creation/annihilation operators
 
 The remaining obstruction is the bosonic one, and it is parallel to the fermionic result. One bosonic mode requires $[\tilde a,\tilde a^\dagger]=e_0$. No such pair exists in $\mathbb{B}$: the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$, so the only relation of the form $[\tilde a,\tilde a^\dagger]=c\,e_0$ that can hold in $\mathbb{B}$ has $c=0$. The finite-dimensional algebra carries the fermionic canonical relation exactly and the bosonic canonical relation not at all. The Maxwell Fock space is consequently a standard construction on an imported module, and the framework adds nothing to it beyond the notation.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary with $i^2=-1$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$; they satisfy $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The isomorphism with $M_2(\mathbb{C})$ is the one fixed in the companion articles, $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, hence $\Phi(ie_k)=\sigma_k$. The fermionic and bosonic mode operators are those established by the two quantization articles and are not rederived.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary with $i^2=-1$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$; they satisfy $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The isomorphism with $M_2(\mathbb{C})$ is the one fixed in the companion articles, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(ie_k)=\sigma_k$. The fermionic and bosonic mode operators are those established by the two quantization articles and are not rederived.
 
 ## Fock Space and Its Operator Algebra
 
@@ -168,7 +168,7 @@ $$
 \tilde N_{\mathrm{tr}}=\tilde\Upsilon_2\tilde\Upsilon_1=\tfrac12(e_0-ie_3),
 $$
 
-and reads them as an unfaithful truncation of a **bosonic** oscillator: the commutator is $[\tilde\Upsilon_1,\tilde\Upsilon_2]=ie_3\ne e_0$, which is a failure of the bosonic canonical relation. That reading is correct, and nothing here contradicts it. Asked the fermionic question instead, the same operators answer exactly. Direct computation gives
+and reads them as an unfaithful truncation of a **bosonic** oscillator: the commutator is $[\tilde\Upsilon_1,\tilde\Upsilon_2]=ie_3\ne e_0$, which is a failure of the bosonic canonical relation. That interpretation is correct, and nothing here contradicts it. Asked the fermionic question instead, the same operators answer exactly. Direct computation gives
 
 $$
 \tilde\Upsilon_1^2=0,\qquad (\tilde\Upsilon_2)^2=0,\qquad
@@ -176,13 +176,13 @@ $$
 \tilde N_{\mathrm{tr}}^2=\tilde N_{\mathrm{tr}},
 $$
 
-so the truncated ladder satisfies the **fermionic** canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\hbar$, $\tilde S_+=\tfrac{\hbar}{2}(ie_1-e_2)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\Phi(e_k)=-i\sigma_k$ they have the images
+so the truncated ladder satisfies the **fermionic** canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\hbar$, $\tilde S_+=\tfrac{\hbar}{2}(ie_1-e_2)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$ they have the images
 
 $$
-\Phi(\tilde\Upsilon_1)=|0\rangle\langle1|,\qquad
-\Phi(\tilde\Upsilon_2)=|1\rangle\langle0|,\qquad
-\Phi(\tilde N_{\mathrm{tr}})=|1\rangle\langle1|,\qquad
-\Phi(ie_3)=\sigma_3,
+\mathsf{M}_2(\tilde\Upsilon_1)=|0\rangle\langle1|,\qquad
+\mathsf{M}_2(\tilde\Upsilon_2)=|1\rangle\langle0|,\qquad
+\mathsf{M}_2(\tilde N_{\mathrm{tr}})=|1\rangle\langle1|,\qquad
+\mathsf{M}_2(ie_3)=\sigma_3,
 $$
 
 where $|0\rangle=(1,0)^{\mathsf T}$ and $|1\rangle=(0,1)^{\mathsf T}$ in the module.
@@ -269,7 +269,7 @@ The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mat
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
-| $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
+| $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\mathcal{H}_1$, $\mathcal{F}$ | One-particle space; Fock space |
 | $\hat a,\hat a^\dagger$ | Annihilation and creation operators (general) |
 | $\hat N=\sum_i\hat a_i^\dagger\hat a_i$ | Number operator |

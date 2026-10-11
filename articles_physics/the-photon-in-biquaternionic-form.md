@@ -4,7 +4,7 @@
 
 The photon is the quantum of the electromagnetic field: massless, chargeless, of spin one, with two transverse polarizations and helicities $\pm 1$, and its own antiparticle. In the biquaternion framework of this series the electromagnetic field is the **biquaternion Maxwell field** $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ of the companion article *Maxwell's Equations in the Biquaternionic Formulation*, and its quantization is the Gupta–Bleuler construction of *Canonical Quantization of the Biquaternion Maxwell Field*. The photon is the one-particle state of that field.
 
-A framework that reformulates known physics can be read generously or carefully. Read generously, every correct statement about light becomes a statement the framework "contains"; read carefully, most of them are properties of Maxwell's equations and of canonical quantization that the framework transcribes, and the specific facts attached to the photon must be supplied from outside. This article takes the second reading and asks the question that the quantization article leaves explicitly open: **do the two transverse polarizations, and their helicities, have a native meaning in the algebra — for instance, in the vector part of the material sector?**
+A framework that reformulates known physics can be read generously or carefully. Read generously, every correct statement about light becomes a statement the framework "contains"; read carefully, most of them are properties of Maxwell's equations and of canonical quantization that the framework transcribes, and the specific facts attached to the photon must be supplied from outside. This article takes the second interpretation and asks the question that the quantization article leaves explicitly open: **do the two transverse polarizations, and their helicities, have a native meaning in the algebra — for instance, in the vector part of the material sector?**
 
 The answer, stated at the outset, has three positive parts and four negative ones. The positive parts are these.
 
@@ -29,7 +29,7 @@ $$
 \mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{e_0, ie_1, ie_2, ie_3\},
 $$
 
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\Phi(e_k)=-i\sigma_k$, $\Phi(ie_k)=\sigma_k$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\mathbf{E}-\mathbf{H}$. The Riemann–Silberstein vector is $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$ with $\mathbf{B}=\mu\mathbf{H}$, so that $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{V}$. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$.
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(ie_k)=\sigma_k$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\mathbf{E}-\mathbf{H}$. The Riemann–Silberstein vector is $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$ with $\mathbf{B}=\mu\mathbf{H}$, so that $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{V}$. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$.
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
@@ -224,7 +224,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector, $\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ |
 | $\mathbb{M}_+$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
-| $\Phi(e_k)=-i\sigma_k$, $\Phi(ie_k)=\sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
+| $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(ie_k)=\sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ | Biquaternionic gradient |
 | $\tilde{A}=i\phi/c\,e_0+\mathbf{A}$ | Potential biquaternion, in $\mathbb{M}_-$ |
 | $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}=i\sqrt{\epsilon}\,\mathbf{V}$ | Field-strength biquaternion (vanishing scalar part) |

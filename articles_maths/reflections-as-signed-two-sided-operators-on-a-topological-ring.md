@@ -103,7 +103,7 @@ the reflections coincide with the inner automorphisms that are involutions, and 
 
 **Remark (the failure on one side).** Even when $\alpha$ is not inner and the ring is noncommutative, the correspondence can fail to be onto the involutions: a continuous automorphism of order two of $R$ that is not of the form $\rho_u$ is a reflection in the geometric sense but is not a signed conjugation, and it is not in the image. The correspondence is between the elements and the reflections that they carry, not between the elements and all the involutive automorphisms of $R$.
 
-## The Topological Reading
+## The Topological Interpretation
 
 **Proposition (the reflections are continuous and their fixed sets closed).** With $\alpha$ continuous, every reflection is a continuous automorphism of $R$, hence a homeomorphism; its fixed subring is closed; the subset $I_\alpha(R)$ of carrying units is closed in $R^\times$ when $R^\times$ is open, being the preimage of the centre under $u \mapsto u\alpha(u)$; and the map $u \mapsto \rho_u$ is continuous for the topology of pointwise convergence, so it is a homeomorphism onto its image up to the kernel.
 

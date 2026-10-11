@@ -282,7 +282,7 @@ There is one further framework-specific remark worth recording as a question rat
 - **A scale or a spectrum.** The RG scale $\mu$, the number of fields, the gauge group, the matter content, and the values of the couplings are all inputs. The algebra fixes none of them.
 - **A selection among fixed points.** A fixed point is a property of a flow, and a flow is a property of an action and a regulator. The algebra does not select the flow, so it does not select the fixed point.
 
-**What is interpretation.** Reading the RG scale as a central scalar and the cutoff as a condition on the biquaternion norm is a reading of the algebra; the algebra is consistent with it and even suggests it, but it does not force it. The claim that the framework "explains" the renormalization group is not made and is not supported: the RG as presented here is a transcription, and the only algebraic content is the centrality of the invariant on which the cutoff is imposed. If that is all it adds, the article says so.
+**What is interpretation.** Reading the RG scale as a central scalar and the cutoff as a condition on the biquaternion norm is an interpretation of the algebra; the algebra is consistent with it and even suggests it, but it does not force it. The claim that the framework "explains" the renormalization group is not made and is not supported: the RG as presented here is a transcription, and the only algebraic content is the centrality of the invariant on which the cutoff is imposed. If that is all it adds, the article says so.
 
 ## Open Questions
 
@@ -294,7 +294,7 @@ There is one further framework-specific remark worth recording as a question rat
 
 4. **The local complex structure and the RG scale.** The framework's $c = 1/\sqrt{\epsilon\mu}$ makes the complex structure local. Is there a meaningful renormalization of $c$ or of the local complex structure, and is it related to the RG scale? No read-list article addresses this.
 
-5. **The mass and the cosmological-constant problems.** The shell integration produces quadratic divergences in the mass and, in a gravitational setting, in the vacuum energy. The biquaternion reading does not address them here; whether the central biquaternion norm gives any purchase on them is unknown.
+5. **The mass and the cosmological-constant problems.** The shell integration produces quadratic divergences in the mass and, in a gravitational setting, in the vacuum energy. The biquaternion interpretation does not address them here; whether the central biquaternion norm gives any purchase on them is unknown.
 
 6. **The functional trace and the fiber trace.** The flow equation's trace is over field space and the algebra's trace is over the two-dimensional fiber. Is there an intrinsic construction that pairs them — for instance a biquaternion-valued effective action whose fiber trace reduces to the functional trace — or are they irreducibly different? The parents leave the corresponding question for their own traces.
 

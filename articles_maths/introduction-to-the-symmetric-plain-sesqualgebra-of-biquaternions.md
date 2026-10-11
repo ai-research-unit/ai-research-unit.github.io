@@ -194,7 +194,7 @@ On the real part of the space the block coincides with the symmetric quaternioni
 
 **The Jordan witness.** With $x = y = e_1$ one has $x^{2} = e_0$, $(x^{2}\star x)\star x = 0$ and $x^{2}\star(x\star x) = e_0$: the two sides differ by the idempotent.
 
-## The Reading in the Physics Band
+## The Interpretation in the Physics Band
 
 Every value of the block is central and its coefficient is the form $H$, so the block is the **probability form** written as a multiplication: its square $\tilde Q\star\tilde Q = \bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)e_0$ is a positive central number vanishing only at the origin, and its vanishing products $e_\mu\star e_\nu = 0$ for $\mu\neq\nu$ are orthogonal basis states. The polarisation recovers the real part alone, so the square carries the modulus of a value and the sesquilinear structure carries its phase.
 

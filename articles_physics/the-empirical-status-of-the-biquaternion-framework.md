@@ -20,7 +20,7 @@ Throughout, the notation is inherited from the read-list articles: the biquatern
 
 A measurement $M$ is a **signature** of the framework relative to a standard theory $S$ if the framework predicts for $M$ a value that differs from the value $S$ predicts, by an amount the framework itself fixes, and if the measurement can resolve the difference. Four conditions must hold simultaneously:
 
-**(S1) A framework-specific quantity.** There is a quantity $Q$ that the framework determines and $S$ does not. The two-sector reading, the local complex structure, and the imaginary directions are candidates for such quantities; whether any of them *determines* a number is a separate matter.
+**(S1) A framework-specific quantity.** There is a quantity $Q$ that the framework determines and $S$ does not. The two-sector interpretation, the local complex structure, and the imaginary directions are candidates for such quantities; whether any of them *determines* a number is a separate matter.
 
 **(S2) A fixed value or scale.** The framework fixes the value of $Q$, or at least a scale in terms of which the deviation is expressed. A symbol left free is not a prediction. A dimensionless algebra that imports all its dimensional constants from outside fixes no scale.
 
@@ -59,7 +59,7 @@ It is worth naming what these results are checks *of*. They are checks that the 
 
 A reformulation and its target are not two theories that happen to agree; they are one theory written twice. When the dictionary is exact, agreement is a consistency condition on the dictionary, and it cannot discriminate between the framework and the standard formalism, because on the shared structure the two are the same.
 
-The framework's distinctive content is not what the reproducing calculations use. They use the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; the identification of $\mathbb{M}_-$ with $\mathbb{R}^{3,1}$; and the standard wave operators built from the biquaternionic gradient. All three are shared with the standard formalism. The framework-specific additions — the naming of $\mathbb{M}_-$ as *material* and $\mathbb{M}_+$ as *informational*, the claim that the complex structure is local and physically determined, the proposal that the algebra is nature's rather than notation's — enter no formula that produces a number. They are therefore untested by every experiment the series cites, including the ones that agree. A reader who treats the agreement as support for the material/informational reading has read the evidence backwards.
+The framework's distinctive content is not what the reproducing calculations use. They use the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; the identification of $\mathbb{M}_-$ with $\mathbb{R}^{3,1}$; and the standard wave operators built from the biquaternionic gradient. All three are shared with the standard formalism. The framework-specific additions — the naming of $\mathbb{M}_-$ as *material* and $\mathbb{M}_+$ as *informational*, the claim that the complex structure is local and physically determined, the proposal that the algebra is nature's rather than notation's — enter no formula that produces a number. They are therefore untested by every experiment the series cites, including the ones that agree. A reader who treats the agreement as support for the material/informational interpretation has read the evidence backwards.
 
 Two examples show how narrowly the agreement should be read.
 
@@ -89,13 +89,13 @@ Each candidate below is examined under the three questions of the Introduction a
 
 ### The Local Complex Structure
 
-**The candidate.** The framework's most distinctive physical claim after the two-sector reading is that the complex structure of $\mathbb{B}$ is **local**, its scale set by the local speed of light $c=1/\sqrt{\epsilon\mu}$. One might hope that an observable depends on the complex structure as such, and not merely on the standard electromagnetic properties of the medium.
+**The candidate.** The framework's most distinctive physical claim after the two-sector interpretation is that the complex structure of $\mathbb{B}$ is **local**, its scale set by the local speed of light $c=1/\sqrt{\epsilon\mu}$. One might hope that an observable depends on the complex structure as such, and not merely on the standard electromagnetic properties of the medium.
 
 **The framework-specific quantity.** The local speed $c(\mathbf{x})=1/\sqrt{\epsilon(\mathbf{x})\mu(\mathbf{x})}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial_{ict}=-(i/c)\,\partial_t$.
 
 **Derived or posited.** The relation $c=1/\sqrt{\epsilon\mu}$ is **standard**, a consequence of the constitutive relations $\mathbf{D}=\epsilon\mathbf{E}$ and $\mathbf{B}=\mu\mathbf{H}$; the framework does not derive it. What is posited is the *identification* of this standard speed with the scale of the complex structure. Crucially, the framework adds no equation for $\epsilon$ or $\mu$: in every calculation of the series they are the standard medium parameters, supplied from outside.
 
-**The existing bound.** None specific to the framework. Bounds on $\epsilon(\omega)$ and $\mu(\omega)$ are bounds on the standard medium response, which the framework takes as input; they do not test the complex-structure reading, because that reading makes no claim about their values.
+**The existing bound.** None specific to the framework. Bounds on $\epsilon(\omega)$ and $\mu(\omega)$ are bounds on the standard medium response, which the framework takes as input; they do not test the complex-structure interpretation, because that interpretation makes no claim about their values.
 
 **Verdict.** Not a signature. The *locality* of the complex structure is inherited entirely from the standard locality of $c(\mathbf{x})$, so any observable sensitive to it is already an observable of standard medium electromagnetism.
 
@@ -183,7 +183,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The existing bound.** A field identified with gravity would be constrained by equivalence-principle and torsion-balance tests. The programme states no coupling strength or range, so nothing is yet bounded, and the later revision of the programme (the conservation law of a single open source is not Lorentz invariant under interaction, repaired by a scalar resistance field) shows that its internal consistency was provisional on the conservation side. The author's 2017 paper proves the charges–currents interaction equations invariant under the Poincaré–Lorentz group and derives the transformation formulae for charge, current, power and force. That result is about the *equations*, not about the closedness condition the 2009 paper found non-invariant, so it does not restore the earlier conservation claim; the corpus records both and states the reconciliation in *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*. The paper offers the invariance proof itself as "mathematical justifiability" of the model and its "adequacy" to existing physical ideas about matter, space and time. The corpus's criterion is the reverse — covariance and elegance are not evidence (see *Why Agreement Is Not Confirmation*) — so the argument is recorded as the author's and carries no weight here.
 
-**Verdict.** Not a signature of the framework, and not the framework's claim. It is recorded because it is the most developed physical reading of the dual field strength that the corpus knows of, and because a reader meeting the A-field should see both readings named and separated. The corpus's own verdict on the framework is untouched by it: the claims are qualitative, attributed, and testable in principle but unpredicted in practice.
+**Verdict.** Not a signature of the framework, and not the framework's claim. It is recorded because it is the most developed physical interpretation of the dual field strength that the corpus knows of, and because a reader meeting the A-field should see both interpretations named and separated. The corpus's own verdict on the framework is untouched by it: the claims are qualitative, attributed, and testable in principle but unpredicted in practice.
 
 ### An External Programme That Supplies a Scale
 
@@ -219,7 +219,7 @@ Several results are sometimes presented as if they were successes of the framewo
 - **The Unruh temperature $T=\hbar a/(2\pi c\,k_B)$.** Reproduced by a reformulation; the corpus states that it yields no discriminating prediction.
 - **The Born rule, the CPT theorem, and the Bell/CHSH bounds.** Standard statements; the Born rule and the Bell/CHSH bounds are reproduced, and the CPT theorem is transcribed rather than established.
 
-Each of these is a check that a transcription is faithful. None is evidence for the material/informational reading, because none of those computations uses it.
+Each of these is a check that a transcription is faithful. None is evidence for the material/informational interpretation, because none of those computations uses it.
 
 ## What Would Settle It
 
@@ -233,15 +233,15 @@ The question would be settled affirmatively by a single candidate meeting all fo
 
 In each route the decisive question is whether the new input is **forced** by the algebra or **inserted**. If forced, the signature tests the framework; if inserted, it tests the insertion, and the framework's contribution is the language in which the insertion is written — a real contribution, but not an empirical signature of the algebra.
 
-**Two lower-risk projects.** First, a systematic search for dimensionless consistency relations: any relation among standard parameters that the algebra implies and the standard formalism does not. This needs no new scale and would be immediately testable against constants known to many digits. Second, examine whether the local-complex-structure reading can differ from the standard reading where the standard dielectric response is itself non-local or strongly dispersive; the burden there is to exhibit a difference, not to reinterpret a standard result.
+**Two lower-risk projects.** First, a systematic search for dimensionless consistency relations: any relation among standard parameters that the algebra implies and the standard formalism does not. This needs no new scale and would be immediately testable against constants known to many digits. Second, examine whether the local-complex-structure interpretation can differ from the standard interpretation where the standard dielectric response is itself non-local or strongly dispersive; the burden there is to exhibit a difference, not to reinterpret a standard result.
 
 **A standing obligation and the honest outcome.** Because the framework is a reformulation, its equivalence should be re-examined domain by domain as new domains are developed: an article that *derives* rather than transcribes a standard result, or that finds the algebra forcing a number, would change the status of its domain. At present, however, the framework makes no prediction that distinguishes it from standard physics. Every candidate signature examined here traces to a quantity that is absent, undetermined, or posited; the agreements are agreements with the standard structures the framework shares; and the distinctive content enters no computation. The agenda is to derive a framework-specific quantity — most plausibly from a specified sector coupling or a forced dimensionless relation — or to establish that the algebra cannot produce one, a result about the framework as valuable as a signature.
 
 ## Physical Readings
 
-The reading that matters for this article is which readings are testable. The frame-independent content — the sesquilinear pair, the zero-divisor cone and the period $2\pi$ of the central phase — is where a signature would have to sit, because the interval and the composition move with the local complex structure and a change of them is not an observable (*Conventions in the Biquaternion Universe*). The clock reading of the sector exchange is on the other side of the line: it reorganises existing structures and adds no prediction, so the article's inventory of candidate signatures is unchanged by it. A further named reading can be added.
+The interpretation that matters for this article is which interpretations are testable. The frame-independent content — the sesquilinear pair, the zero-divisor cone and the period $2\pi$ of the central phase — is where a signature would have to sit, because the interval and the composition move with the local complex structure and a change of them is not an observable (*Conventions in the Biquaternion Universe*). The clock interpretation of the sector exchange is on the other side of the line: it reorganises existing structures and adds no prediction, so the article's inventory of candidate signatures is unchanged by it. A further named interpretation can be added.
 
-- **Selection-rule reading.** The invariance under a change of the local complex structure is read as a selection rule for observable content: only the content the change cannot move — the sesquilinear pair, the zero-divisor cone and the period $2\pi$ — can carry a signature, so the rule excludes a candidate before any experiment is run and is the framework's own filter on its inventory. Boundary: a selection rule is not a prediction, the inventory of candidate signatures is unchanged, and the invariance statement is owned by *The Local Complex Structure and the Speed of Light*.
+- **Selection-rule interpretation.** The invariance under a change of the local complex structure is read as a selection rule for observable content: only the content the change cannot move — the sesquilinear pair, the zero-divisor cone and the period $2\pi$ — can carry a signature, so the rule excludes a candidate before any experiment is run and is the framework's own filter on its inventory. Boundary: a selection rule is not a prediction, the inventory of candidate signatures is unchanged, and the invariance statement is owned by *The Local Complex Structure and the Speed of Light*.
 
 ## Summary
 
@@ -286,7 +286,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 - *Canonical Quantization of the Biquaternion Maxwell Field*, for what the algebra does and does not supply in quantization.
 - *Chiral Fermions in the Biquaternion Framework*, for the framework's vector-like abelian sector and its absent prediction.
 - *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*, for the external programme that reads the A-field as an electro-gravimagnetic field and claims solenoidal-electric, electromass and cogravity effects; recorded there, attributed, and not endorsed here.
-- *Electromagnetism in Media — The Local Complex Structure at Work*, for the local complex structure as a reading of the standard medium parameter $c$.
+- *Electromagnetism in Media — The Local Complex Structure at Work*, for the local complex structure as an interpretation of the standard medium parameter $c$.
 - *The Renormalization Group in Biquaternionic Form*, for the explicit statement that the scale and the couplings are inputs the algebra does not fix.
 - *The CPT Theorem in Biquaternionic Form*, for a standard theorem transcribed rather than established.
 - *Entangled Subsystems in the Biquaternion Framework*, for the reproduced correlation function and the standard Tsirelson bound.

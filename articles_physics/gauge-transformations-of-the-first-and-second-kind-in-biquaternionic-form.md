@@ -111,7 +111,7 @@ $$
 and $\mathbf{E}^2+c^2\mathbf{B}^2$ is unchanged, as it must be since it is the length of $\mathbf{V}$.
 
 **A remark on $(1+\alpha)$.**
-The transformation is written $(1+\alpha)e_0F$, which to first order is $e^{\alpha}F$, and the paper identifies this with $e^{i\alpha}F$. The two agree only when $\alpha$ is purely imaginary. A real infinitesimal $\alpha$ produces the common scaling $\mathbf{E}\to(1+\alpha)\mathbf{E}$, $\mathbf{B}\to(1+\alpha)\mathbf{B}$, which is also a symmetry of the source-free equations — the equations are linear and homogeneous — but which is a dilation rather than a duality rotation. The corpus's duality rotation requires the parameter that multiplies $F$ to be a phase, so the imaginary reading is the one that makes the paper's own identification correct.
+The transformation is written $(1+\alpha)e_0F$, which to first order is $e^{\alpha}F$, and the paper identifies this with $e^{i\alpha}F$. The two agree only when $\alpha$ is purely imaginary. A real infinitesimal $\alpha$ produces the common scaling $\mathbf{E}\to(1+\alpha)\mathbf{E}$, $\mathbf{B}\to(1+\alpha)\mathbf{B}$, which is also a symmetry of the source-free equations — the equations are linear and homogeneous — but which is a dilation rather than a duality rotation. The corpus's duality rotation requires the parameter that multiplies $F$ to be a phase, so the imaginary interpretation is the one that makes the paper's own identification correct.
 
 ## The Two Kinds
 
@@ -158,7 +158,7 @@ Put in the corpus's conventions, the construction is the following, and it is wo
 
 ## The Printed Algebra
 
-Three points of the printed algebra are internally inconsistent, and each is reproduced by recomputation against the paper's own rules. They are listed because the corpus records printed defects, not because the paper's final result depends on them; the final result is correct. The reading is from the scanned article as extracted, and isolated signs are the least reliable part of such an extraction.
+Three points of the printed algebra are internally inconsistent, and each is reproduced by recomputation against the paper's own rules. They are listed because the corpus records printed defects, not because the paper's final result depends on them; the final result is correct. The interpretation is from the scanned article as extracted, and isolated signs are the least reliable part of such an extraction.
 
 **The product rule against the basis rule.** The basis rule $e_ie_j=-\delta_{ij}e_0+\epsilon_{ijk}e_k$ gives $e_1e_2 = \epsilon_{123}e_3 = e_3$. The printed product rule is $PQ = P_0Q_0 - \mathbf{P}\cdot\mathbf{Q} + P_0Q + PQ_0 + iP\times Q$, which for $P=e_1$, $Q=e_2$ gives $i\mathbf{e}_1\times\mathbf{e}_2 = ie_3$ instead. The two rules differ by the factor $i$ on the cross term, and they cannot both hold. The recomputation gives $|e_3 - e_1e_2| = 0$ from the basis rule and $|ie_3 - e_1e_2| = \sqrt2$ from the product rule. The corpus uses the basis rule, which is the standard one.
 

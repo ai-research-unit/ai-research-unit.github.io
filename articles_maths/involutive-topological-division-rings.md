@@ -61,7 +61,7 @@ is a closed subgroup of $D^\times$.
 
 **Proof.** In the commutative case $\sigma(xy) = \sigma(y)\sigma(x) = \sigma(x)\sigma(y)$; in general $N(uv) = u\,N(v)\,\sigma(u)$, which is $N(u)N(v)$ when $N(v)$ is central, and the implication $N(u)=1\Rightarrow\sigma(u)=u^{-1}$ is the computation of the theorem.
 
-## The Topological Reading
+## The Topological Interpretation
 
 **Theorem (continuity and closedness).** A continuous involution of a topological division ring is a homeomorphism, the self-adjoint and the skew sets are closed, the averaging maps are continuous when $2$ is invertible, and the fixed division subring $D^\sigma$ is a closed topological division ring; the completion $\widehat{D}$ is an involutive topological division ring when $D$ is a valued division ring with an isometric involution, and $\widehat{D}^{\widehat\sigma} = \widehat{D^\sigma}$ then.
 

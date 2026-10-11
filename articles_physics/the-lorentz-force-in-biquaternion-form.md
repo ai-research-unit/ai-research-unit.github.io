@@ -273,7 +273,7 @@ $$
 
 This is the cleanest form of the result. It says that the Lorentz four-force is, up to the constant $q\sqrt{\mu}$, the **projection of the product $\tilde{U}\tilde{F}$ onto the material sector** $\mathbb{M}_-$. No real part is taken, and no Clifford algebra outside $\mathbb{B}$ is needed.
 
-**Reading by sector.** The projection form has a transparent physical reading. Split the field strength into its Hermitian and anti-Hermitian parts,
+**Reading by sector.** The projection form has a transparent physical interpretation. Split the field strength into its Hermitian and anti-Hermitian parts,
 
 $$
 \tilde{F}^{(+)} = \tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\mathbf{E}
@@ -597,7 +597,7 @@ The density $\tilde{\mathcal F}$ is not the per-particle $\tilde{K}$ and the two
 
 ## The Lamb-Vector Reading of the Force Law
 
-The force law of this article is a relativistic fact: $\mathbf{f} = q(\mathbf{E}+\mathbf{v}\times\mathbf{B})$ is what the field does to a charge, and the derivation above takes that law as given. A second reading of its *form* comes from fluid mechanics, and it belongs next to the first, because the corpus's magnetic-field material explains magnetism as a relativistic effect of the electric field, while the hydrodynamic correspondence offers an independent reading in which magnetism is vorticity.
+The force law of this article is a relativistic fact: $\mathbf{f} = q(\mathbf{E}+\mathbf{v}\times\mathbf{B})$ is what the field does to a charge, and the derivation above takes that law as given. A second interpretation of its *form* comes from fluid mechanics, and it belongs next to the first, because the corpus's magnetic-field material explains magnetism as a relativistic effect of the electric field, while the hydrodynamic correspondence offers an independent interpretation in which magnetism is vorticity.
 
 The bridge is the **Lamb vector** $\boldsymbol{\ell} = \boldsymbol{\omega}\times\mathbf{u}$ of a fluid of velocity $\mathbf{u}$ and vorticity $\boldsymbol{\omega} = \nabla\times\mathbf{u}$, introduced in *Maxwell's Equations in the Biquaternionic Formulation*. It is bilinear in a velocity and a curl, and it is the pairing of a flow with its own rotation. The magnetic term of the Lorentz force density, $\mathbf{j}\times\mathbf{B}$, is bilinear in a current and a curl, and the electric term $\rho_E\mathbf{E}$ pairs a charge density with the irrotational part of the field. Under the dictionary
 
@@ -687,4 +687,4 @@ At the level of densities the companion programme replaces the per-particle forc
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations.
 - L. A. Alexeyeva, "One Biquaternion Model of the Electro-Gravimagnetic Field. Field Analogues of Newton's Laws" (2007), for the density-level power–force biquaternion, the four-term force split and the electromass force; see *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* for the hypothesis and its status.
 - L. A. Alexeyeva, "Newton's Laws for a Biquaternionic Model of the Electro-Gravimagnetic Field, Charges, Currents, and Their Interactions" (2009), for the revision of the programme, in which the charge–current conservation law is not Lorentz invariant under interaction and a scalar resistance field is added.
-- G. Rousseaux and É. Guyon, "À propos d'une analogie entre la mécanique des fluides et l'électromagnétisme", *Bulletin de l'Union des Physiciens* **96** (2002), no. 841 (2), 125–134, for the Lamb-vector reading of the force law in *The Lamb-Vector Reading of the Force Law* — the hydrodynamic form of the Lorentz force density, attributed by the source to H. Marmanis. An expository article in a teachers' journal, in French; the dictionary and its limits are stated in *Maxwell's Equations in the Biquaternionic Formulation*.
+- G. Rousseaux and É. Guyon, "À propos d'une analogie entre la mécanique des fluides et l'électromagnétisme", *Bulletin de l'Union des Physiciens* **96** (2002), no. 841 (2), 125–134, for the Lamb-vector interpretation of the force law in *The Lamb-Vector Reading of the Force Law* — the hydrodynamic form of the Lorentz force density, attributed by the source to H. Marmanis. An expository article in a teachers' journal, in French; the dictionary and its limits are stated in *Maxwell's Equations in the Biquaternionic Formulation*.

@@ -60,7 +60,7 @@ The two facts together give the article's first accounting. The phase direction 
 
 ## The Flat Directions of the Potential
 
-The information-theoretic reading of the erasure is sharpened by the curvature of the potential, which separates the directions of the vacuum into those that are recorded and those that are erased.
+The information-theoretic interpretation of the erasure is sharpened by the curvature of the potential, which separates the directions of the vacuum into those that are recorded and those that are erased.
 
 ### The Hessian at the Minimum
 
@@ -90,14 +90,14 @@ The Hessian has rank one. The **massive direction** is the radial one, with $m_h
 
 ### The Count of Records and the Count of Erased Labels
 
-The rank of the Hessian and the dimension of its kernel are the two numbers the informational reading needs.
+The rank of the Hessian and the dimension of its kernel are the two numbers the informational interpretation needs.
 
 - The **rank** is the number of directions with a restoring force, hence the number of massive fields: here $1$, the radial mode. These are the directions in which the vacuum **records** a value — the mass is the record, and it is the same for every point of the vacuum family.
 - The **kernel** is the number of flat directions, hence the number of would-be Goldstone modes: here $1$, the phase. These are the directions **erased** from the observable description, because they are the coordinates along which the vacuum is degenerate.
 
 For a general breaking of a group $G$ to a subgroup $H$, the count is the standard one of the Goldstone theorem. The number of flat directions, and hence of erased labels, equals the number of broken generators, $\dim(G/H)$; for the abelian model $G = U(1)$ and $H = 1$, so $\dim(G/H) = 1$. The same number counts the gauge fields that become massive, since each broken generator supplies one, so the gauge-boson masses stand in bijection with the erased labels. The count of massive *scalar* directions is a different number: it is the number of real scalar components less the number of Goldstone modes, so $2 - 1 = 1$ for the abelian model — the single radial mode. The abelian model displays a coincidence of the two counts, not a general rule: a complex doublet in the electroweak pattern, where three generators are broken, leaves $4 - 3 = 1$ massive scalar direction against three erased labels. What a general breaking leaves as its record is therefore not one number but the gauge-field mass matrix together with the masses of the surviving scalars, and the open question of the non-abelian case is exactly whether the ranks of those matrices carry the same information here as they do in standard field theory.
 
-The important point for the erasure reading is that the flat direction is not merely unrecorded but **unrecordable**: a flat direction has no curvature, so no restoring force and no mass, and a gauge coordinate has no observable, so no measurement. The two properties coincide because the phase is both flat in the potential and a gauge direction, and it is their coincidence that makes the erasure costless.
+The important point for the erasure interpretation is that the flat direction is not merely unrecorded but **unrecordable**: a flat direction has no curvature, so no restoring force and no mass, and a gauge coordinate has no observable, so no measurement. The two properties coincide because the phase is both flat in the potential and a gauge direction, and it is their coincidence that makes the erasure costless.
 
 ## The Erasure as the Elimination of a Gauge Direction
 
@@ -139,7 +139,7 @@ This is the precise sense in which the Higgs mechanism **uses** the gauge redund
 
 ### The Degree-of-Freedom Balance
 
-The accounting is a count of real, on-shell degrees of freedom in four dimensions, and it was set out in full in the physics companion; it is recalled here in the informational reading.
+The accounting is a count of real, on-shell degrees of freedom in four dimensions, and it was set out in full in the physics companion; it is recalled here in the informational interpretation.
 
 | Phase | Scalar | Gauge field | Total |
 |---|---|---|---|
@@ -174,7 +174,7 @@ $$
 
 This was recomputed by two independent routes on an explicit non-axis-aligned connection, $A_0 = 0.37i$, $A_1 = 0.82$, $A_2 = -0.51$, $A_3 = 0.29$ — with $A_0$ imaginary and $A_1,A_2,A_3$ real, as $\tilde{A}\in\mathbb{M}_-$ requires — at the generic parameter values $\kappa = q/\hbar = 0.7$ and $v = 1.3$. Directly from $-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ at the vacuum the kinetic density was $-0.3642397850$; independently, the biquaternion prediction $-\tfrac12\kappa^2v^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ was $-0.3642397850$ as well. The two routes agree to all digits and confirm $M_A^2 = q^2v^2/\hbar^2$, with $qv/\hbar = 0.910000$. The mass is gauge invariant, because it is read from a gauge-invariant term; the phase is invisible in it, because it depends only on $v$.
 
-The informational reading is that the mass is the **record** of the breaking. The vacuum family is a circle, but every member yields the same $v$, hence the same mass. The information that survives is a single gauge-invariant number; the phase information that the erasure removed was never physical, and the physical information that the breaking produced is $v$, recorded in $M_A$ and in $m_h$. This is a compression of the description, not a loss of physics.
+The informational interpretation is that the mass is the **record** of the breaking. The vacuum family is a circle, but every member yields the same $v$, hence the same mass. The information that survives is a single gauge-invariant number; the phase information that the erasure removed was never physical, and the physical information that the breaking produced is $v$, recorded in $M_A$ and in $m_h$. This is a compression of the description, not a loss of physics.
 
 ## The Symmetry-Breaking Map as a Channel
 
@@ -229,7 +229,7 @@ One consequence is worth recording as a caution. If the phase were a *physical* 
 
 **Transcribed from standard physics.** The Higgs mechanism itself; the Goldstone theorem, the count of would-be Goldstone bosons, and the degree-of-freedom balance $2+2 = 1+3$; the unitary gauge; the Proca mass form; the identification of the longitudinal polarization; and Landauer's principle. The physics companion derives the mechanism; this article reads it.
 
-**Not supplied.** A non-abelian or electroweak Higgs mechanism: the framework's scalar is a singlet of the $\mathrm{SU}(2)$ factor and a central scalar cannot break $SU(2)$; there is no electroweak doublet, no hypercharge assignment, and no constructed Yukawa coupling to the chiral fermions. The mass of the radial mode depends on the potential's coefficient $\beta$, which the framework does not fix. And there is no empirical consequence distinguishing the reading from standard scalar electrodynamics. These gaps are the physics companion's, and they are inherited here unchanged.
+**Not supplied.** A non-abelian or electroweak Higgs mechanism: the framework's scalar is a singlet of the $\mathrm{SU}(2)$ factor and a central scalar cannot break $SU(2)$; there is no electroweak doublet, no hypercharge assignment, and no constructed Yukawa coupling to the chiral fermions. The mass of the radial mode depends on the potential's coefficient $\beta$, which the framework does not fix. And there is no empirical consequence distinguishing the interpretation from standard scalar electrodynamics. These gaps are the physics companion's, and they are inherited here unchanged.
 
 **Companion articles.** The construction rests on the following written articles of the series.
 
@@ -249,13 +249,13 @@ One consequence is worth recording as a caution. If the phase were a *physical* 
 
 2. **The count as a channel invariant.** The balance $2+2 = 1+3$ is a conservation of the count of local degrees of freedom. Is it the statement that, for a natural channel modelling the map, the input and the output carry the same information about the physical degrees of freedom, and if so, which channel? No such channel is identified here.
 
-3. **The non-abelian relocation.** For a non-abelian breaking the number of absorbed Goldstone modes equals the number of broken generators, and the record is a mass matrix rather than a mass. Does the informational reading — erasure of a gauge orbit, conservation of the total, a gauge-invariant record — extend to the mass matrix, and can the framework supply the non-singlet scalar that would make the question concrete?
+3. **The non-abelian relocation.** For a non-abelian breaking the number of absorbed Goldstone modes equals the number of broken generators, and the record is a mass matrix rather than a mass. Does the informational interpretation — erasure of a gauge orbit, conservation of the total, a gauge-invariant record — extend to the mass matrix, and can the framework supply the non-singlet scalar that would make the question concrete?
 
 4. **Landauer and the gauge coordinate.** The article argues that erasing a gauge coordinate costs nothing because the coordinate is not physical. Is there a framework-internal statement of this — an "information" of a gauge orbit that is exactly zero, in the sense that the states of any two of its members are equal, so their relative entropy vanishes — and does it extend to the non-abelian orbit?
 
 5. **The vacuum as a record and the arrow of time.** The Higgs vacuum is a stable record selected by the gauge structure rather than by an environment. Does the record structure have any dynamical content — a relaxation, a selection time — or is the vacuum selection in the framework purely kinematical, as it appears here?
 
-6. **Empirical content.** As everywhere in the framework, no prediction distinguishing the reading from standard scalar electrodynamics is derived. The mechanism is standard; the reading is the framework's.
+6. **Empirical content.** As everywhere in the framework, no prediction distinguishing the interpretation from standard scalar electrodynamics is derived. The mechanism is standard; the interpretation is the framework's.
 
 ## Summary
 
@@ -265,7 +265,7 @@ The erased object is the phase of the scalar. It is a coordinate on the circle o
 
 The relocated content is the longitudinal mode, and the record is the mass. The degree-of-freedom count balances, $2+2 = 1+3$: one scalar mode became the third gauge polarization, and nothing was created or destroyed. The mass $M_A^2 = q^2v^2/\hbar^2$ was recomputed on a generic connection and a generic parameter set, and the relative entropy was shown to be invariant under the unitary re-encoding. On the full degrees of freedom the symmetry-breaking map is unitary and information-preserving; on the gauge-invariant observables it is many-to-one, with the fibre being the gauge orbit — whose information content is zero. The erasure is the quotient map, and its kernel is a gauge orbit.
 
-This distinguishes the mechanism from the two neighbours. Unlike confinement, which removes partonic labels from the asymptotic algebra with no record surviving, the Higgs mechanism leaves a gauge-invariant record, the mass, and conserves the total count. Unlike a bare gauge orbit, which has no physical consequence, the exploitation of the orbit generates the mass. The vacuum is then a stable record in the structure of einselection — the radial variable massive and observable, the phase a gauge coordinate — and the erasure costs no heat, in contrast with Landauer's principle, precisely because the object erased is a gauge coordinate rather than a bit of record. The mechanism's own construction is standard and is imported; the informational reading is the framework's, and it rests on the framework's central scalar.
+This distinguishes the mechanism from the two neighbours. Unlike confinement, which removes partonic labels from the asymptotic algebra with no record surviving, the Higgs mechanism leaves a gauge-invariant record, the mass, and conserves the total count. Unlike a bare gauge orbit, which has no physical consequence, the exploitation of the orbit generates the mass. The vacuum is then a stable record in the structure of einselection — the radial variable massive and observable, the phase a gauge coordinate — and the erasure costs no heat, in contrast with Landauer's principle, precisely because the object erased is a gauge coordinate rather than a bit of record. The mechanism's own construction is standard and is imported; the informational interpretation is the framework's, and it rests on the framework's central scalar.
 
 ## Summary of Notation
 
@@ -311,4 +311,4 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 - Charles H. Bennett, "The Thermodynamics of Computation — A Review," *International Journal of Theoretical Physics* **21** (1982) 905–940, for reversible computation, erasure, and the distinction between re-encoding and dissipation.
 - Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics* **75** (2003) 715–775, for einselection and the emergence of a preferred, stable set of variables.
 - Huzihiro Araki, "Relative entropy of states of von Neumann algebras," *Publications of the Research Institute for Mathematical Sciences* **11** (1976) 809–833, for relative entropy and its invariance under unitary conjugation.
-- M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the entropy-theoretic background used in the channel reading.
+- M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the entropy-theoretic background used in the channel interpretation.

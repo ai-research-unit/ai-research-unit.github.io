@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A magnet and a gyroscope are two faces of one body. Change the magnetization of a freely suspended ferromagnet, and it begins to rotate; set a ferromagnet rotating, and it becomes magnetized. The first is the **Einstein–de Haas effect**, the second the **Barnett effect**, and the two are reciprocal readings of a single fact: the magnetization of matter is carried by angular momentum, so a change of one entails a change of the other. This article treats the pair in the biquaternion framework, classically and non-quantum mechanically. The magnetism is intrinsic to the body; the body's rotation is a rotor of the material sector; and the reciprocity is the statement that one bilinear coupling governs both effects.
+A magnet and a gyroscope are two faces of one body. Change the magnetization of a freely suspended ferromagnet, and it begins to rotate; set a ferromagnet rotating, and it becomes magnetized. The first is the **Einstein–de Haas effect**, the second the **Barnett effect**, and the two are reciprocal interpretations of a single fact: the magnetization of matter is carried by angular momentum, so a change of one entails a change of the other. This article treats the pair in the biquaternion framework, classically and non-quantum mechanically. The magnetism is intrinsic to the body; the body's rotation is a rotor of the material sector; and the reciprocity is the statement that one bilinear coupling governs both effects.
 
 The physical content of the effects is standard and is imported as such. An isolated body conserves its total angular momentum, and if a part of that angular momentum is magnetic — tied to the magnetic moment by $\boldsymbol{\mu} = \gamma\mathbf{S}$ — then a change of the moment changes the mechanical angular momentum by the same amount and in the opposite sense. Equivalently, in a frame rotating with the body the spin sees an effective magnetic field, and a body at rest in that frame acquires the corresponding magnetization. The measured quantity in both effects is the gyromagnetic ratio $\gamma$, or its dimensionless companion $g = 2m\gamma/q$; the effects are, historically, how $g\approx 2$ was established for the ferromagnets, and therefore how the magnetization of iron was shown to be carried by electron spins rather than by orbital currents.
 
@@ -56,7 +56,7 @@ $$
 \Delta\mathbf{L} = -\,\frac{1}{\gamma}\,\Delta\boldsymbol{\mu},
 $$
 
-which is the Einstein–de Haas effect. The reverse reading — a rotation producing a magnetization — is the reciprocal of the same coupling rather than a second conservation law; it is obtained from the spin-rotation coupling in the rotating frame, and it is treated in the section on the Barnett effect. In the algebra, the conservation reads
+which is the Einstein–de Haas effect. The reverse interpretation — a rotation producing a magnetization — is the reciprocal of the same coupling rather than a second conservation law; it is obtained from the spin-rotation coupling in the rotating frame, and it is treated in the section on the Barnett effect. In the algebra, the conservation reads
 
 $$
 \Delta\tilde{\mathbf{S}} + \Delta\tilde{\mathbf{L}} = 0,

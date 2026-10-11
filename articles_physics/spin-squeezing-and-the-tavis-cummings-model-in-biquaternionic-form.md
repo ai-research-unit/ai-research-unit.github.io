@@ -11,7 +11,7 @@ The article establishes:
 1. **The collective spin.** The operators $\tilde{J}_\alpha = \sum_{i=1}^N\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{M}_+$ on the $N$-spin space; the symmetric states are the Dicke states, and the collective coherent state is the highest-weight state of a rotor.
 2. **The Tavis–Cummings Hamiltonian and its collective coupling.** In the rotating-wave approximation the interaction is $g(a^\dagger \tilde{J}_- + a\tilde{J}_+)$, and in the single-excitation sector the collective coupling is $\hbar g\sqrt{N}$, giving the collective Rabi splitting $2\hbar g\sqrt{N}$. Both statements are verified below.
 3. **Spin squeezing.** The Wineland parameter $\xi_R^2 = N(\Delta J_\perp)^2/|\langle\mathbf{J}\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\chi}{\hbar}\tilde{J}_3^2$ drives $\xi_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\xi^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
-4. **The algebra's reading.** The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are trace pairings, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.
+4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are trace pairings, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.
 
 The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\Phi$ with $ie_k\mapsto\sigma_k$.
 
@@ -230,7 +230,7 @@ The interaction term $g(a^\dagger\tilde{J}_- + a\tilde{J}_+)$ is an $\mathbb{M}_
 
 ## Open Questions
 
-1. **The informational reading.** Spin squeezing is often described as the creation of multipartite entanglement among the spins, and the squeezing parameter bounds a metrological entanglement measure. That reading belongs to the informational subcategory; whether the collective $\mathbb{M}_+$ algebra has a natural entanglement structure is left there.
+1. **The informational interpretation.** Spin squeezing is often described as the creation of multipartite entanglement among the spins, and the squeezing parameter bounds a metrological entanglement measure. That interpretation belongs to the informational subcategory; whether the collective $\mathbb{M}_+$ algebra has a natural entanglement structure is left there.
 
 2. **The exact Tavis–Cummings dynamics at finite $N$.** The model is integrable in each excitation sector; the finite-$N$ dynamics of the collective spin, including the revivals and the collapse, is standard. Does the algebraic formulation streamline the finite-$N$ treatment?
 
@@ -301,4 +301,4 @@ In the algebra the mean spin is a linear trace pairing $\mathrm{Tr}(\tilde{\rho}
 - A. S. Sørensen and K. Mølmer, "Entanglement and Extreme Spin Squeezing," *Physical Review Letters* **86** (2001) 4431–4434, for the relation between squeezing and collective entanglement.
 - B. M. Garraway, "The Dicke Model in Quantum Optics: Dicke Model Revisited," *Philosophical Transactions of the Royal Society A* **369** (2011) 1137–1155, for the collective coupling and the normal-mode structure.
 - T. Holstein and H. Primakoff, "Field Dependence of the Intrinsic Domain Magnetization of a Ferromagnet," *Physical Review* **58** (1940) 1098–1113, for the bosonic representation of collective spins.
-- C. Gross, "Spin Squeezing, Entanglement and Quantum Metrology with Bose–Einstein Condensates," *Journal of Physics B* **45** (2012) 103001, for the experimental realisation and the algebraic reading of the squeezing Hamiltonians.
+- C. Gross, "Spin Squeezing, Entanglement and Quantum Metrology with Bose–Einstein Condensates," *Journal of Physics B* **45** (2012) 103001, for the experimental realisation and the algebraic interpretation of the squeezing Hamiltonians.

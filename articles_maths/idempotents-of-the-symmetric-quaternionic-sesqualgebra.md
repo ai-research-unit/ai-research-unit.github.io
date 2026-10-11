@@ -156,10 +156,10 @@ central square $c=\tilde Q\tilde Q^{\natural}$; the comparison with the plain pr
 idempotents are zero divisors, is the subject of §*The Idempotents and the Other Classes*.
 
 **Theorem (the fixed-point reading).** The idempotent set is the fixed set of the quadratic map
-$\Phi(\tilde Q)=\tilde Q\star\tilde Q$ on the block, and on the nontrivial family $\Phi$ is the constant
+$\mathsf{M}_2(\tilde Q)=\tilde Q\star\tilde Q$ on the block, and on the nontrivial family $\mathsf{M}_2$ is the constant
 map with value the idempotent itself.
 
-*Proof.* The idempotents are the solutions of $\Phi(\tilde\Pi)=\tilde\Pi$ by definition; the second
+*Proof.* The idempotents are the solutions of $\mathsf{M}_2(\tilde\Pi)=\tilde\Pi$ by definition; the second
 statement is the same equation read on the family.
 
 **Theorem (no orthogonal pair).** For two nontrivial idempotents

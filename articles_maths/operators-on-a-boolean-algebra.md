@@ -72,7 +72,7 @@ $$
 
 The adjunction is the exact sense in which the interior is the best open approximation from below and the closure the best closed approximation from above: the theorem says that the closure of $U$ is the smallest closed set containing $U$ and the interior of $F$ the largest open set contained in $F$, which is the content of *Operators on a Fixed Set*, read as a Galois connection between the two lattices.
 
-### The Two Readings of the Adjunction
+### The Two Interpretations of the Adjunction
 
 **Corollary.** The adjunction has the two equivalent forms
 

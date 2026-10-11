@@ -249,7 +249,7 @@ The product is the biquaternion product (for several qubits, the product in $\ma
 
 Two remarks make the product law precise.
 
-First, the order is the reverse of the circuit reading. If a diagram is read left to right, the algebraic product is written right to left, as above. This is the standard convention for operator composition and carries no biquaternion-specific content.
+First, the order is the reverse of the circuit interpretation. If a diagram is read left to right, the algebraic product is written right to left, as above. This is the standard convention for operator composition and carries no biquaternion-specific content.
 
 Second, because the map $\tilde{U}\mapsto\Phi_{\tilde{U}}$ has kernel $U(1)$, the product law holds at the level of gates but the algebraic identity of representatives may fail by a central phase. If $\tilde{V}\tilde{U} = e^{i\phi}\tilde{W}$, then $\Phi_{\tilde{V}}\circ\Phi_{\tilde{U}} = \Phi_{\tilde{W}}$ nevertheless. Circuit identities in the framework are therefore identities **up to a central phase**, and the phase is unobservable.
 
@@ -460,7 +460,7 @@ The channel set is convex, with the gates among its extreme points; the companio
 - A single algebraic home for the objects of quantum computation: states are positive trace-one elements of $\mathbb{M}_+^{\otimes n}$, gates are unitary elements of $\mathbb{B}^{\otimes n}$, and a circuit is their product.
 - The action of a gate as rotor conjugation, and reversibility as the property $\tilde{U}\tilde{U}^{*} = e_0$ that makes the acting element unitary.
 - The standard gate set in explicit biquaternion form: the Pauli and Hadamard gates as Hermitian unitaries in $\mathbb{M}_+$, and the phase and $T$ gates as rotations in $\mathbb{H}_{\mathbb{B}}$, with the global phase sitting in $\mathbb{C}_{\mathbb{B}}$ and acting trivially.
-- The controlled gate as an algebraic construction from complementary idempotents and a target gate, and the reading of the controlled gate as the coherent use of an idempotent, in contrast with the measure-and-forget channel.
+- The controlled gate as an algebraic construction from complementary idempotents and a target gate, and the interpretation of the controlled gate as the coherent use of an idempotent, in contrast with the measure-and-forget channel.
 - The Clifford group as the normaliser of the Pauli group in the gate group, and its octahedral rotation image.
 - The clean statement of the reversible/irreversible split as Kraus rank one versus higher rank, which is the algebra's own dichotomy rather than an additional postulate.
 

@@ -146,15 +146,17 @@ $$
 
 ### The Plancherel Theorem
 
-**Theorem (Plancherel).** The transform extends uniquely to a unitary operator on the space $L^2(\mathbb{R}, \mathbb{B})$ of square-integrable biquaternion-valued functions, with
+**Theorem (Plancherel).** For a root with $\rho^{*} = -\rho$ — the scalar imaginary and the real roots — the transform extends uniquely to a unitary operator on the space $L^2(\mathbb{R}, \mathbb{B})$ of square-integrable biquaternion-valued functions, with
 
 $$
 \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
 $$
 
-**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below. Since the factorization is an isometry on each complex component, the total norm is preserved.
+**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_0, \rho, \nu, \xi\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.
 
-**Corollary (Parseval).** For $f, g \in L^2(\mathbb{R}, \mathbb{B})$,
+**Remark (the genuinely complex roots).** Off the degenerate families the factorization still holds and the transform is still invertible on $L^2(\mathbb{R}, \mathbb{B})$, but it is **not** an isometry for the Euclidean norm. What it preserves is the coefficient norm of the root-adapted basis, and the two norms differ because a genuinely complex root is not a Euclidean unit vector, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$ for $\rho = b\mu + d\nu i$. The unitary statement is therefore exactly the statement $\rho^{*} = -\rho$, the same dichotomy that governs the positivity of the transform of a measure (*The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*), and the transform remains a faithful change of description for every root.
+
+**Corollary (Parseval).** For a root with $\rho^{*} = -\rho$ and for $f, g \in L^2(\mathbb{R}, \mathbb{B})$,
 
 $$
 \int_{-\infty}^{\infty} \overline{f(t)} g(t) \, dt = \int_{-\infty}^{\infty} \overline{F(\omega)} G(\omega) \, d\omega.
@@ -170,7 +172,7 @@ $$
 \rho \perp \nu, \qquad \nu \perp \xi, \qquad \xi \perp \rho, \qquad \rho \nu = \xi.
 $$
 
-The four elements $\{e_0, \rho, \nu, \xi\}$ form a **complex orthonormal basis** of $\mathbb{B}$. Any biquaternion can be written in this basis as
+The four elements $\{e_0, \rho, \nu, \xi\}$ form a **complex orthonormal basis** of $\mathbb{B}$ for the biquaternion form $\mathrm{Sc}(x^{\natural}y)$, and for the Euclidean form $\mathrm{Sc}(xy^{*})$ exactly when $\rho^{*} = -\rho$; off the degenerate families it is a basis and not a Euclidean-orthonormal one, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$. Any biquaternion can be written in this basis as
 
 $$
 \tilde{Q} = Q_0 e_0 + Q_\rho \rho + Q_\nu \nu + Q_\xi \xi,
@@ -493,7 +495,7 @@ $$
 \|Z(\tilde{Q})\|_E^2 = \sum_{\mu=0}^{3} \lvert Z_\mu(\tilde{Q}) \rvert^2 \ge 0 ,
 $$
 
-so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairing this article already uses for convergence. What the exchange costs is the algebra: the Euclidean form is not the norm of the transform, and it does not factor through the product of $\mathbb{B}$.
+so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairing this article already uses for convergence. What the exchange costs is the norm and not the algebra: the Euclidean form is not the biquaternion norm of the transform, and it is not multiplicative on the product, $\lVert ZW\rVert_E\neq\lVert Z\rVert_E\lVert W\rVert_E$ in general, the Hermitian idempotent $\tilde\Pi=\tfrac12(e_0+ie_1)$ giving $\lVert\tilde\Pi^{2}\rVert_E=\tfrac12$ against $\lVert\tilde\Pi\rVert_E^{2}=\tfrac14$. It is nonetheless the scalar part of the sesquilinear product, $\lVert Z\rVert_E^{2}=\mathrm{Sc}(ZZ^{*})=\langle Z,Z\rangle_{*}$, and with the Hermitian conjugation in the second slot it is the pairing that makes the transform of a positive measure positive definite exactly for the roots with $\rho^{*}=-\rho$; the criterion and its proof are *The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*.
 
 **Two hypotheses, and the same obstruction as before.** The identity requires central coefficients. For quaternion-valued coefficients the products $A_k \chi_{\omega_k}$ do not reassemble, and the two sides differ by terms of order one on random data: the coefficient has to commute with the kernel, which is a genuine restriction and not a technicality of the proof. It also requires a single root for the transform: with two units, one per variable, the collapse $\bar\chi_\omega \chi_\eta = \chi_{\eta - \omega}$ fails as soon as the two units differ, and the identity is false there. The Bochner-type positivity is therefore a one-root, central-coefficient statement even for $\mathbb{H}$, and for $\mathbb{B}$ it fails under those hypotheses as well.
 
@@ -539,13 +541,13 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 7. **The factorisation of the two-unit transform.** The factorisation of the one-unit transform diagonalises one root. Two roots that do not commute admit no common eigenbasis, so a two-unit kernel with such a pair has no basis in which both units act diagonally, and it is not known whether its transform still reduces to a fixed finite family of complex transforms.
 
-8. **Positivity for the transform of a measure.** The quadratic form of the transform of a measure is the integral of the norm, and the norm is indefinite, so the biquaternionic form of the Bochner-type hypothesis has no apparent source. Whether some pairing internal to the algebra supplies one is not known.
+8. **Positivity for the transform of a measure.** The quadratic form of the transform of a measure is the integral of the norm, and the norm is indefinite, so the biquaternionic form of the Bochner-type hypothesis has no apparent source. **Answered** in *The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*: the pairing is the general plain sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$, whose diagonal is the Euclidean form of the section above, and with the Hermitian conjugation in the second slot the transform of a positive measure is positive definite exactly for the roots with $\rho^{*}=-\rho$, the scalar imaginary and the real roots, and not for the genuinely complex ones. What is restored is the positivity, not the norm identity: the norm failure at $A=i$ is root-independent and survives the exchange.
 
 ## Summary
 
 The continuous biquaternion Fourier transform is defined by the kernel $W(t, \omega) = \exp(-2\pi \rho \omega t)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.
 
-The transform is invertible on functions of non-vanishing norm, and it satisfies the Riemann–Lebesgue lemma, the inversion theorem, and the Plancherel theorem. It factorizes into four complex Fourier transforms, which is the computational and structural content of the theory.
+The transform is invertible on functions of non-vanishing norm, and it satisfies the Riemann–Lebesgue lemma, the inversion theorem, and the Plancherel theorem for the roots with $\rho^{*} = -\rho$. It factorizes into four complex Fourier transforms, which is the computational and structural content of the theory.
 
 The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the light cone, and the convective derivative becomes a biquaternion-valued multiplier depending on the velocity.
 

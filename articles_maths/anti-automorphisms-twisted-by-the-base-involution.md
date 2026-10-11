@@ -112,7 +112,7 @@ so that $\operatorname{Tw}_{\varsigma}(A) = f_{0}\operatorname{Aut}_{R}(A)$ is a
 
 **Remark.** The theorem is the twisted form of the coset theorem of *Opposite Algebras and Anti-Isomorphisms*, §*The Coset of the Anti-Automorphisms*, which is the case $\varsigma = \mathrm{id}$; the twist adds the conjugation that relates the right coset to the left one, and it is what makes the set of the twisted anti-automorphisms a torsor and not only a coset. The coset is free and transitive, so two twisted anti-automorphisms differ by exactly one linear automorphism, and the parametrisation is the one used to compare them.
 
-### The Reading as the Anti-Isomorphisms to the Opposite
+### The Interpretation as the Anti-Isomorphisms to the Opposite
 
 **Proposition.** Let $A^{\mathrm{op}}$ be the opposite algebra of *Opposite Algebras and Anti-Isomorphisms*. Then $\operatorname{Tw}_{\varsigma}(A)$ is exactly the set of the $\varsigma$-semilinear isomorphisms $A \to A^{\mathrm{op}}$, and the coset theorem reads: the $\varsigma$-semilinear isomorphisms from $A$ to its opposite form a coset of the group $\operatorname{Aut}_{R}(A)$.
 

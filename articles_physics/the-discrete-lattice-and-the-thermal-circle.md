@@ -34,7 +34,7 @@ discrete data all sit on compact groups, and the discrete datum is the labelling
 compact group — equivalently, of a character of a compact dual. Four instances, one per discipline and two
 that bridge them:
 
-| compact object | its discreteness | the corpus's reading |
+| compact object | its discreteness | the corpus's interpretation |
 |---|---|---|
 | the central phase $U(1)$ | the integer phase winding | the discrete charge label (*Particle Types*) |
 | the internal group $U(2)$, compact | its irreducible labels | internal quantum numbers, the discrete charge |
@@ -59,7 +59,7 @@ direction is the central phase: the KMS condition is the statement of periodicit
 modular flow it generates is the central rotation. So the circle whose dual is the Matsubara lattice is the
 central phase compactified, and the discrete thermal spectrum and the discrete charge label are two
 characters of one compact phase. That is the unification the article's title names: **the lattice and the
-circle are dual readings of the compact central phase, one in the temperature and one in the charge.**
+circle are dual interpretations of the compact central phase, one in the temperature and one in the charge.**
 
 **Two objects.** The comparison also shows where the disciplines differ, and the difference is exact. The
 algebraic lattice is a lattice of **invertible elements** inside the **real compact group** $Sp(1)$: it is
@@ -74,28 +74,28 @@ two compactnesses of different origins, and the article states both rather than 
 
 The comparison suggests exactly one meeting point, and the article states it as a programme. The orders
 article's finite unit groups are the discrete subgroups of the compact unit sphere, and the Matsubara
-article's lattice is the dual of the compact imaginary-time circle. A finite-temperature reading of the
+article's lattice is the dual of the compact imaginary-time circle. A finite-temperature interpretation of the
 orders would require the discrete unit group to be a **spectrum** — the set of excitations the imaginary-time
 circle supports — and the corpus supplies no such statement; the identification of the order's units with a
 thermal partition function is not made anywhere, and the article records the gap rather than proposing a
-formula. What is available is the shape: both are "discreteness from compactness", so a thermal reading of
+formula. What is available is the shape: both are "discreteness from compactness", so a thermal interpretation of
 the lattice would be a partition function whose spectrum is the unit group, and whether such a function is
 the algebra's is open.
 
 ## Physical Readings
 
-- **Discreteness is a consequence of compactness, never a postulate.** The reading is that every discrete
+- **Discreteness is a consequence of compactness, never a postulate.** The interpretation is that every discrete
   label of the framework — charge, angular momentum, Matsubara frequency, unit lattice — is discrete because
   some group in its construction is compact, so the framework never has to impose a discretisation. Owner:
   the four articles of the table.
-- **The thermal circle is the central phase.** The reading is that the imaginary time of the Wick rotation and
+- **The thermal circle is the central phase.** The interpretation is that the imaginary time of the Wick rotation and
   the central phase of the algebra are one compact direction, so the Matsubara formalism is the central
   rotation at finite temperature. Owner: *The Matsubara Formalism in Biquaternionic Form* and *The Central
   Rotation*.
-- **A finite lattice and an infinite lattice, one principle.** The reading is that the finite unit groups and
+- **A finite lattice and an infinite lattice, one principle.** The interpretation is that the finite unit groups and
   the infinite Matsubara lattice are the two dual faces of the compactness principle, one a subgroup and one
   a character group, so the corpus's two disciplines of discreteness are one principle with two duals.
-  Boundary: a statement of the principle, and the thermal reading of the orders is left open.
+  Boundary: a statement of the principle, and the thermal interpretation of the orders is left open.
 
 ## Summary
 
@@ -105,7 +105,7 @@ imaginary-time circle. This article states the one principle that produces both 
 Pontryagin dual of a compactness — and tables its four instances: the compact central phase, the compact
 internal group, the thermal circle and the compact unit sphere. The two disciplines meet in the central
 phase, which is the thermal circle at finite temperature, and they differ in that the algebraic lattice is a
-finite subgroup while the thermal lattice is an infinite character group. A thermal reading of the orders is
+finite subgroup while the thermal lattice is an infinite character group. A thermal interpretation of the orders is
 named as a gap and not proposed as a formula.
 
 ## Summary of Notation

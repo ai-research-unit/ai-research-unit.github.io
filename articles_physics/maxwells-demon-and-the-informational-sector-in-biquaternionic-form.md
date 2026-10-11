@@ -150,7 +150,7 @@ which is verified numerically: $I(0) = \log 2 = 0.6931472$, $I(0.1) = 0.3680642$
 
 ### The Gas as a Coarse-Grained Description
 
-The measurement does not change the gas, and it is worth saying so, because the phrase "the demon lowers the entropy of the gas" invites the opposite reading. Before the measurement the gas's position bit is uniformly distributed and its entropy is $\log 2$; after the measurement the marginal distribution of the bit is still uniform, and so its marginal entropy is still $\log 2$. What the measurement changes is the **conditional** entropy: for a record of error $e$,
+The measurement does not change the gas, and it is worth saying so, because the phrase "the demon lowers the entropy of the gas" invites the opposite interpretation. Before the measurement the gas's position bit is uniformly distributed and its entropy is $\log 2$; after the measurement the marginal distribution of the bit is still uniform, and so its marginal entropy is still $\log 2$. What the measurement changes is the **conditional** entropy: for a record of error $e$,
 
 $$
 H(G\mid D) = H_2(e), \qquad H(G) = \log 2, \qquad

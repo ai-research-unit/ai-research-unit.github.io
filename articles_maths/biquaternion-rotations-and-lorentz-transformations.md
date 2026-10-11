@@ -139,13 +139,13 @@ of real dimension three; with the dilations admitted they form $\mathbb{R}_{>0}\
 
 ## Orbits, the Invariants and the Infinitesimal Operator
 
-The sandwich preserves the rank of the matrix image $\Phi(\tilde T)$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*) and scales the biquaternion norm by $\lvert N(\tilde{Q})\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.
+The sandwich preserves the rank of the matrix image $\mathsf{M}_2(\tilde T)$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*) and scales the biquaternion norm by $\lvert N(\tilde{Q})\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.
 
 | invariant | value | meaning |
 |---|---|---|
-| $\operatorname{rank}\Phi(\tilde T)=2$ | $N(\tilde T)\neq0$ | $\tilde T$ is a unit |
-| $\operatorname{rank}\Phi(\tilde T)=1$ | $N(\tilde T)=0$, $\tilde T\neq0$ | $\tilde T$ is a zero divisor of rank one |
-| $\operatorname{rank}\Phi(\tilde T)=0$ | $\tilde T=0$ | the origin |
+| $\operatorname{rank}\mathsf{M}_2(\tilde T)=2$ | $N(\tilde T)\neq0$ | $\tilde T$ is a unit |
+| $\operatorname{rank}\mathsf{M}_2(\tilde T)=1$ | $N(\tilde T)=0$, $\tilde T\neq0$ | $\tilde T$ is a zero divisor of rank one |
+| $\operatorname{rank}\mathsf{M}_2(\tilde T)=0$ | $\tilde T=0$ | the origin |
 
 Off the unit-norm slice every orbit is rescaled by the same positive factor, so it is enough to classify the orbits on the slice. There the two sectors carry the classification the four-vector calculus uses: on $\mathbb{M}_+$ the Hermitian forms are classified by their signature, and on $\mathbb{M}_-$ the four-vectors split into the timelike, the null and the spacelike classes, with the proper orthochronous component, so that the two time directions are not mixed. The non-zero zero divisors are the null cone, and on the slice they form a single orbit, which is the sense in which the light cone is one geometric object rather than a union of the cones of individual four-vectors.
 

@@ -19,7 +19,7 @@ The companion articles are:
 - Companion article *The Symplectic Form and the Biquaternion Norm Cone*, for the biquaternion-norm cone and its role as a level set.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector, the idempotents, and the cone.
 - Companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*, for the classical dynamical counterpart, whose holonomy is the solid angle itself.
-- Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the quantum two-level reading of the same connection.
+- Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the quantum two-level interpretation of the same connection.
 
 ## Polarization of a Plane Wave and the Stokes Parameters
 
@@ -285,7 +285,7 @@ Three cases of the rule are worth recording. For **three linear polarizers equal
 
 ## The Biquaternion-Norm Reading of the Phase
 
-The geometric phase has an algebraic reading in terms of the biquaternion norm. The circuit of polarization states is a circuit on the cone $N(\tilde\rho)=0$ of the Hermitian sector, and the connection's curvature, $-\frac12$ times the area form of the sphere, is a structure on that cone. The cone is the extremal boundary of the coherence ball, and the phase is an obstruction to flattening the boundary: it is the curvature of the natural connection on the cone. In the language of the preceding articles, the connection lives on the level set of the biquaternion norm, exactly as the Souriau form does on the coadjoint orbit and the Hannay connection does on the sphere of directions.
+The geometric phase has an algebraic interpretation in terms of the biquaternion norm. The circuit of polarization states is a circuit on the cone $N(\tilde\rho)=0$ of the Hermitian sector, and the connection's curvature, $-\frac12$ times the area form of the sphere, is a structure on that cone. The cone is the extremal boundary of the coherence ball, and the phase is an obstruction to flattening the boundary: it is the curvature of the natural connection on the cone. In the language of the preceding articles, the connection lives on the level set of the biquaternion norm, exactly as the Souriau form does on the coadjoint orbit and the Hannay connection does on the sphere of directions.
 
 The analogy with the dynamical case is exact at the level of the geometry. For the classical spin of the companion article the transported object is the vector $\tilde S$, and the holonomy of a circuit is the **full** solid angle $\Omega$. For the optical case the transported object is the **ray** $\mathbf J$ — the amplitude, not its Stokes vector — and the holonomy is half the solid angle, $-\Omega/2$. The factor of $2$ between the two is the double cover: the amplitude is the spinor whose bilinear is the Stokes vector, and the transport of the spinor is half as fast in phase as the transport of its bilinear. The two articles describe one geometry with two objects, the vector and the spinor, and the ratio of the phases is the ratio of their squares.
 

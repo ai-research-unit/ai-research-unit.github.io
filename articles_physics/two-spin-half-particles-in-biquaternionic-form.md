@@ -6,7 +6,7 @@ Two spin-$\tfrac12$ particles form the simplest composite quantum system, and in
 
 This article works out that system. It is the first application of the coupling machinery: the total spin operators, the four coupled states as idempotents of $\mathbb{B}\otimes\mathbb{B}$, the projectors onto the symmetric and antisymmetric subspaces, the exchange operator, the Heisenberg Hamiltonian as an algebra element with its spectrum, and the partial traces of the coupled states. The companion article *Exercise: Two Spins in the Singlet State* computes the singlet alone; the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* studies the four Bell idempotents; the companion article *Entangled Subsystems in the Biquaternion Framework* fixes the tensor-product arena and the partial traces. This article presents the whole two-spin structure in one place and treats the coupled basis and the Bell basis as two idempotent bases of the same algebra, related by a change of basis.
 
-The division between what is algebraic and what is imported is the same as in the addition of angular momenta. The tensor-product arena, the total operators, the coupled projectors, the exchange operator, and the coupling term are elements of the algebra and follow from the quaternion product rule. The assumption that two particles are described by the tensor product of their state spaces is an assumption, not a theorem of the framework; it is the assumption that makes the rest possible, and it is stated as such. The identifications of the algebra with the standard Pauli-string description of two qubits are consequences of the isomorphism $\Phi$.
+The division between what is algebraic and what is imported is the same as in the addition of angular momenta. The tensor-product arena, the total operators, the coupled projectors, the exchange operator, and the coupling term are elements of the algebra and follow from the quaternion product rule. The assumption that two particles are described by the tensor product of their state spaces is an assumption, not a theorem of the framework; it is the assumption that makes the rest possible, and it is stated as such. The identifications of the algebra with the standard Pauli-string description of two qubits are consequences of the isomorphism $\mathsf{M}_2$.
 
 The article is organised as follows. The next section fixes the two-qubit algebra, its trace, and its partial traces. Then the total spin operators and their Casimir are constructed, and the coupling term is evaluated in closed form. The four coupled states are exhibited as idempotents, with the projectors onto the symmetric and antisymmetric subspaces. The exchange operator is introduced, its commutation with the total spin proved, and the Heisenberg coupling solved. The partial traces of the coupled states are then computed, and the coupled basis is related to the Bell basis. A closing section states what the composition assumption costs.
 
@@ -37,7 +37,7 @@ $$
 [\tilde S_i^{(1)},\tilde S_j^{(2)}]=0 .
 $$
 
-The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\Phi(e_\mu)\otimes\Phi(e_\nu)$ with $\Phi(e_0)=I_2$ and $\Phi(e_k)=-i\sigma_k$; under it $\tilde S_k^{(a)}$ maps to $\tfrac{\hbar}{2}\sigma_k$ acting on the $a$-th factor, and the algebra $\mathbb{B}\otimes\mathbb{B}$ maps onto all of $M_4(\mathbb{C})$.
+The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\mathsf{M}_2(e_\mu)\otimes\mathsf{M}_2(e_\nu)$ with $\mathsf{M}_2(e_0)=I_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$; under it $\tilde S_k^{(a)}$ maps to $\tfrac{\hbar}{2}\sigma_k$ acting on the $a$-th factor, and the algebra $\mathbb{B}\otimes\mathbb{B}$ maps onto all of $M_4(\mathbb{C})$.
 
 A state of the pair is a Hermitian, positive, trace-one element of $\mathbb{B}\otimes\mathbb{B}$, and an observable is a Hermitian element. The pure product states are the idempotents
 
@@ -121,7 +121,7 @@ $$
 F^2=e_0\otimes e_0,\qquad F^{*}=F,\qquad \mathrm{Tr}(F)=2,\qquad F\ne \pm e_0\otimes e_0 .
 $$
 
-The first follows from $(e_k\otimes e_k)^2=e_k^2\otimes e_k^2=e_0\otimes e_0$ and the orthogonality of the contributions for distinct $k$; the second from $e_k^{*}=-e_k$; the third from $\mathrm{Tr}(e_k\otimes e_k)=0$. Under $\Phi\otimes\Phi$ the exchange operator becomes $\tfrac12\left(I\otimes I+\sum_k\sigma_k\otimes\sigma_k\right)$, the standard two-qubit swap.
+The first follows from $(e_k\otimes e_k)^2=e_k^2\otimes e_k^2=e_0\otimes e_0$ and the orthogonality of the contributions for distinct $k$; the second from $e_k^{*}=-e_k$; the third from $\mathrm{Tr}(e_k\otimes e_k)=0$. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator becomes $\tfrac12\left(I\otimes I+\sum_k\sigma_k\otimes\sigma_k\right)$, the standard two-qubit swap.
 
 ### The coupled projectors
 
@@ -238,7 +238,7 @@ $$
 F\,(P_{\hat m}\otimes P_{\hat n})F=P_{\hat n}\otimes P_{\hat m},
 $$
 
-and on the product basis vectors, under $\Phi\otimes\Phi$, it acts as the swap $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$. It therefore commutes with the total spin operators,
+and on the product basis vectors, under $\mathsf{M}_2\otimes\mathsf{M}_2$, it acts as the swap $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$. It therefore commutes with the total spin operators,
 
 $$
 [F,\tilde S_k]=0,\qquad k=1,2,3 ,
@@ -326,7 +326,7 @@ $$
 \mathrm{Tr}\!\left(\tfrac{1}{2}e_0\cdot\tfrac{1}{2}e_0\right)=\tfrac{1}{4}\mathrm{Tr}_\mathbb{B}(e_0)=\tfrac12 .
 $$
 
-The three triplet members therefore fall into two classes: $E_{1,\pm1}$ are product states with pure reduced states, while $E_{1,0}$ is a correlated state with maximally mixed reduced states, exactly like the singlet $E_{0,0}$. The middle triplet state and the singlet share the same reduced data and differ only in their correlations; this is the algebraic content of the statement that the reduced density matrix does not determine the state of a composite. The informational reading of these correlations — their entropy, their discord, their use as a resource — belongs to the informational subcategory and is not taken up here.
+The three triplet members therefore fall into two classes: $E_{1,\pm1}$ are product states with pure reduced states, while $E_{1,0}$ is a correlated state with maximally mixed reduced states, exactly like the singlet $E_{0,0}$. The middle triplet state and the singlet share the same reduced data and differ only in their correlations; this is the algebraic content of the statement that the reduced density matrix does not determine the state of a composite. The informational interpretation of these correlations — their entropy, their discord, their use as a resource — belongs to the informational subcategory and is not taken up here.
 
 ## Relation to the Bell Basis
 
@@ -394,7 +394,7 @@ All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes t
 | $E_{j,m}$ | Coupled idempotents, $j\in\{1,0\}$ |
 | $\tilde H=-J\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}$ | Heisenberg coupling |
 | $J$ | Exchange constant (ferromagnetic $J>0$) |
-| $\Phi(e_0)=I_2,\ \Phi(e_k)=-i\sigma_k$ | Matrix isomorphism |
+| $\mathsf{M}_2(e_0)=I_2,\ \mathsf{M}_2(e_k)=-i\sigma_k$ | Matrix isomorphism |
 
 ## Further Reading
 

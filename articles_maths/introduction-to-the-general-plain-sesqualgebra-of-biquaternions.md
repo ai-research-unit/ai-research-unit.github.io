@@ -318,7 +318,7 @@ $$
 
 **Remark (the scalar part is a product of the same class).** Under the exchange by the coefficientwise conjugation the scalar part is the **conjugate-symmetric part** of the multiplication, $\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+(\tilde{P}\tilde{Q}^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$, so it is a product in the same sense as the multiplication, sesquilinear over $\mathbb{C}$ and not merely $\mathbb{R}$-bilinear, with the vector part $\mathrm{Vect}(\tilde{P}\tilde{Q}^{*})$ as its antisymmetric partner; §*The Other Exchange, and the Scalar and the Vector Part*. It is not the symmetrisation of the multiplication, which is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear (*The Sesquilinear Symmetrised Product*).
 
-## The Reading in the Physics Band
+## The Interpretation in the Physics Band
 
 The block is the algebraic home of the pairing of two quantum roles. Its two slots are not interchangeable: the first reads its element plainly and the second through the Hermitian conjugation, so the multiplication pairs an element with the adjoint of another. Its scalar part, $\mathrm{Sc}(\tilde P\tilde Q^{*}) = \sum_\mu P_\mu\overline{Q_\mu}$ of §*The Scalar Part of the Multiplication*, is the Hermitian form the physics band writes $H$. The one-sided unit is that asymmetry seen on the identity, the left action by $e_0$ being the involution itself.
 

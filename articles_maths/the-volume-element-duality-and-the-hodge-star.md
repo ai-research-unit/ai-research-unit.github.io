@@ -45,7 +45,7 @@ The proof is the mechanism of the grade theorem of *The Geometric Product and th
 
 **Proof.** The volume element commutes with even elements and anticommutes with odd ones, so for $A$ homogeneous of grade $k$ the two products differ by $(-1)^k$.
 
-### The Geometric Reading
+### The Geometric Interpretation
 
 **Proposition.** Let $e_I=e_{i_1}\cdots e_{i_k}$ be a basis blade of an orthogonal basis, with index set $I$. Then $e_I\omega$ is, up to sign, the basis blade of the complementary index set,
 

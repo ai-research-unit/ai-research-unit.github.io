@@ -1,0 +1,118 @@
+# __The Two Products of the Complex Space__
+
+## Introduction
+
+The complex space, read over itself and as the centre of the biquaternion algebra $\mathbb{B}$, carries two products: the **general plain bilinear product** $AC$, which is the multiplication of the field, and the **general plain sesquilinear product** $A\bar C$, the derived operation of the algebra with its conjugate-linear involution. They are the collapse of the four general products of $\mathbb{B}$ to the two that the commutative base can carry, and they are the products on which the whole `## Complex Numbers` chapter is built.
+
+This article defines the two products, records the collapse of the four to two, writes them in coordinates, states the defining property of each, and names the two structures they define. The full relations between them and their comparison, as a table with witnesses, are *Relations and Comparison Between the Two Products*, below this article in this category; the multiplication of the field is *Complex Algebra*, below this article in this category, which owns it; and the two forms carried by the two products are *The Two Forms and the Two Algebraic Norms of the Complex Space*, also below. The four general products on the biquaternion algebra are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the twelve operations and their split are *The 12 Products of the Biquaternion Complex Space*, both in the biquaternion chapter.
+
+The elements are written $A = a + ia'$ and $C = c + ic'$. The **bar** is complex conjugation, the natural sign is the identity, there being no quaternion factor on a commutative base, and the **Hermitian star** coincides with the bar, $A^{*} = \bar A$.
+
+## The Four General Products and What Collapses
+
+On the biquaternion algebra the four general products of a pair $\tilde P, \tilde Q$ are the general plain bilinear $\tilde P\tilde Q$, the general quaternionic bilinear $\tilde P^{\natural}\tilde Q$, the general plain sesquilinear $\tilde P\tilde Q^{*}$ and the general quaternionic sesquilinear $\tilde P^{\natural}\tilde Q^{*}$. Their definitions and their axioms are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the twelve operations built from them are *The 12 Products of the Biquaternion Complex Space*; only what collapses on the commutative base is needed here.
+
+**Proposition.** On $\mathbb{C}$ the four general products collapse to two.
+
+**Proof.** The quaternionic products act through the natural sign, and the natural sign of an algebra with a commutative base is the identity, there being no vector direction to negate beyond the central one; so $\tilde P^{\natural} = \tilde P$ and the quaternionic product of each family coincides with the plain one. The two families are then the plain bilinear $AC$ and the plain sesquilinear $A\bar C$, and the pairs of marks $(\operatorname{id}, \natural)$ and $(\operatorname{id}, {}^{*})$ name the same two products.
+
+| general product on $\mathbb{B}$ | reading on $\mathbb{C}$ |
+|---|---|
+| plain bilinear, $\tilde P\tilde Q$ | $AC$ |
+| quaternionic bilinear, $\tilde P^{\natural}\tilde Q$ | $AC$ |
+| plain sesquilinear, $\tilde P\tilde Q^{*}$ | $A\bar C$ |
+| quaternionic sesquilinear, $\tilde P^{\natural}\tilde Q^{*}$ | $A\bar C$ |
+
+The four antisymmetric companions of these products give the zero product on $\mathbb{C}$, because $\mathbb{C}$ is commutative and every commutator vanishes. The twelve operations and their collapse are the subject of *The Collapse of the Twelve Structures*, below this article in this category, which carries the dictionary of the twelve against the two.
+
+## The Two Products in Coordinates
+
+With $A = a + ia'$ and $C = c + ic'$,
+
+$$
+AC = \bigl(ac - a'c'\bigr) + i\bigl(ac' + a'c\bigr), \qquad
+A\bar C = \bigl(ac + a'c'\bigr) + i\bigl(a'c - ac'\bigr) .
+$$
+
+**Proof.** The first is the multiplication of complex numbers. For the second, $\bar C = c - ic'$ and
+
+$$
+A\bar C = (a + ia')(c - ic') = ac + a'c' + i(a'c - ac') .
+$$
+
+Both are single complex numbers, neither has a remainder outside the algebra, and each is $\mathbb{R}$-bilinear in the pair. Read inside $\mathbb{B}$, where a complex number is a central element, the two are read on the scalar coordinate alone: a central element has zero vector part, $A = Q_0e_0$ with $Q_0 = a + ia'$, so for a pair of central elements each general product has vanishing vector part and its scalar part is the complex number displayed. The two products are therefore purely scalar on the centre.
+
+## The Plain Product $AC$
+
+**Proposition.** The product $AC$ has the following properties.
+
+1. It is $\mathbb{C}$-bilinear: $A(\lambda C) = (\lambda A)C = \lambda(AC)$ for every $\lambda \in \mathbb{C}$.
+2. It is associative, $(AC)D = A(CD)$, and commutative, $AC = CA$.
+3. The unit $1$ is a two-sided unit, $1 \cdot A = A \cdot 1 = A$.
+4. It has no zero divisor: $AC = 0$ implies $A = 0$ or $C = 0$, and every nonzero element is invertible.
+
+**Proof.** Items 1 to 3 are the axioms of the field and are owned by *Complex Algebra*. Item 4 holds because $\mathbb{C}$ is a field: if $A \neq 0$ then $C = A^{-1}(AC) = 0$.
+
+The product $AC$ is the multiplication of the field, the left multiplications form a monoid isomorphic to the multiplicative monoid of $\mathbb{C}$, and the product is the operation of the first of the two structures defined below.
+
+## The Plain Sesquilinear Product $A\bar C$
+
+**Proposition.** The product $A\bar C$ has the following properties.
+
+1. It is $\mathbb{C}$-linear in the first argument and conjugate-linear in the second:
+   $(\lambda A)\bar C = \lambda (A\bar C)$ and $A\overline{(\lambda C)} = \bar\lambda (A\bar C)$.
+2. It is conjugate-commutative, $A\bar C = \overline{C\bar A}$.
+3. The unit $1$ is a right unit but not a left unit, $A\bar 1 = A$ and $1\bar C = \bar C$.
+4. It is not associative.
+
+**Proof.** Item 1 follows from the multiplication being bilinear and the bar being an involution. For item 2, $\overline{C\bar A} = \bar C A = A\bar C$, the last step by commutativity. For item 3, $\bar 1 = 1$ gives $A\bar 1 = A$, while $1\bar C = \bar C$, which equals $C$ only for real $C$. For item 4 the witness is $A = 1$, $C = 1$, $D = i$:
+
+$$
+(A\bar C)\bar D = 1 \cdot \bar i = -i, \qquad A\overline{(C\bar D)} = \overline{1 \cdot \bar i} = \overline{-i} = i .
+$$
+
+The two differ, so the product is not associative; it also fails alternation and flexibility and the degree-three identity, the weaker laws of an associative product, with witnesses in *Relations and Comparison Between the Two Products*, below this article in this category, and the failure is the general one for a sesquilinear product, the second slot carrying the conjugate.
+
+The product $A\bar C$ is the derived operation of the algebra with its conjugate-linear involution: it is the sesquilinear form of the algebra read as a multiplication, it is conjugate-commutative, and it has no zero divisor, since $A\bar C = 0$ with $A \neq 0$ forces $\bar C = 0$. Its properties against those of $AC$ are tabulated in *Relations and Comparison Between the Two Products*, below this article in this category.
+
+## The Two Structures the Two Products Define
+
+Each of the four general products of $\mathbb{B}$ carries, beside the general operation, its symmetric part and its antisymmetric part, and the twelve operations so obtained are grouped into the twelve structures of the biquaternion method, named by a three-letter code whose letters read general, symmetric or antisymmetric, then plain or quaternionic, then algebra or sesqualgebra. On the commutative base the twelve collapse, and exactly two survive.
+
+**Proposition.** On $\mathbb{C}$ the twelve structures collapse to two:
+
+$$
+\mathrm{GPA} = \mathrm{SPA} = \mathrm{GQA} = \mathrm{SQA}, \qquad \mathrm{GPS} = \mathrm{SPS} = \mathrm{GQS} = \mathrm{SQS}, \qquad \mathrm{APA} = \mathrm{AQA} = \mathrm{APS} = \mathrm{AQS} = 0 .
+$$
+
+The collapse is the algebraic statement of commutativity: the symmetrisation of a commutative product is the product and the antisymmetrisation is zero, and the trivial natural sign makes the plain and quaternionic families one. The arithmetic of the collapse, code by code, and the dictionary of the twelve against the two are *The Collapse of the Twelve Structures*, below this article in this category; here only the two surviving structures are named.
+
+The two surviving structures are the **field** under the product $AC$, which is the general plain algebra $\mathrm{GPA}$ and is owned by *Complex Algebra*, and the **sesqualgebra** over the pair $(\mathbb{C}, \bar\cdot)$ under the product $A\bar C$, which is the general plain sesqualgebra $\mathrm{GPS}$. Together they are the whole structure block of the complex space: the field carries the products and the inverses, and the sesqualgebra carries the conjugate-linear form; the antisymmetric layer, with its Lie bracket and its associator defect, is empty, because there is nothing for it to measure. The dictionary of the twelve against the two, and the reason the collapse is the algebraic statement of commutativity, are *The Collapse of the Twelve Structures*, below this article in this category.
+
+## Summary
+
+The complex space carries two products: the general plain bilinear product $AC$, the multiplication of the field, and the general plain sesquilinear product $A\bar C$, the derived operation of the algebra with its conjugate-linear involution. They are the collapse to two of the four general products of the biquaternion algebra, the natural sign being the identity on the commutative base, so that the quaternionic product of each family coincides with the plain one and the pairs $(\operatorname{id}, \natural)$ and $(\operatorname{id}, {}^{*})$ name the same two products; the four antisymmetric companions give the zero product.
+
+In coordinates, $AC = (ac - a'c') + i(ac' + a'c)$ and $A\bar C = (ac + a'c') + i(a'c - ac')$, and read inside $\mathbb{B}$ both are carried by the scalar coordinate alone, the central elements having vanishing vector part. The product $AC$ is $\mathbb{C}$-bilinear, associative, commutative, unital and without zero divisors; the product $A\bar C$ is $\mathbb{C}$-linear in the first argument and conjugate-linear in the second, conjugate-commutative, right-unital but not left-unital, and not associative, with the witness $(1, 1, i)$.
+
+The twelve structures of the biquaternion method collapse to two: the four algebra codes to the field under $AC$, the four sesqualgebra codes to the sesqualgebra under $A\bar C$ over $(\mathbb{C}, \bar\cdot)$, and the four antisymmetric codes to the zero product.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $AC$ | the general plain bilinear product, the multiplication of the field |
+| $A\bar C$ | the general plain sesquilinear product, the derived operation with the bar |
+| $A = a + ia'$, $C = c + ic'$ | the elements, with real coordinates |
+| $\natural, {}^{*}, \bar\cdot$ | the natural sign, which is the identity; the star, which is the bar; the bar |
+| $\mathrm{GPA}, \mathrm{SPA}, \mathrm{GQA}, \mathrm{SQA}$ | the general, symmetric, plain and quaternionic algebra codes, coinciding on $\mathbb{C}$ |
+| $\mathrm{GPS}, \mathrm{SPS}, \mathrm{GQS}, \mathrm{SQS}$ | the corresponding sesqualgebra codes, coinciding on $\mathbb{C}$ |
+| $\mathrm{APA}, \mathrm{AQA}, \mathrm{APS}, \mathrm{AQS}$ | the antisymmetric codes, giving the zero product |
+
+## Further Reading
+
+- Serge Lang, *Algebra*, 3rd edition (Springer, 2002), for the multiplication of a field, sesquilinear forms and the derived operation of an algebra with an involution.
+- Israel Nathan Herstein, *Topics in Algebra*, 2nd edition (Wiley, 1975), for commutative rings, their symmetric and antisymmetric parts and the Jordan and Lie structures of an algebra product.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for algebras with involution and the sesquilinear forms they carry.
+- Nathan Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for the general product, its symmetric and antisymmetric parts and the structures they define.
+- S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the general and sesquilinear products of a complexified algebra.

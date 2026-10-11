@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **four-vector representation** is the coordinate form of a biquaternion, and the form that carries the physical dictionary: the element read as four complex coefficients, holding a material four-vector and an informational four-vector. Algebraically it is the reading of an element of the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as its four complex coefficients,
+The **four-vector representation** is the coordinate form of a biquaternion, and the form that carries the physical dictionary: the element read as four complex coefficients, holding a material four-vector and an informational four-vector. Algebraically it is the interpretation of an element of the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as its four complex coefficients,
 
 $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3 = \sum_{\mu = 0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C},
@@ -93,7 +93,7 @@ $$
 Q^{\mathsf{T}} = \begin{pmatrix} Q^0 & Q^1 & Q^2 & Q^3 \end{pmatrix}.
 $$
 
-The column is the transcribed form of the quadruple, and it is convenient because the product of biquaternions is bilinear. For a fixed $\tilde{Q}$ the map $\tilde{R} \mapsto \tilde{Q}\tilde{R}$ sends the coefficients of $\tilde{R}$ linearly to the coefficients of the product, so with the column convention it is written as a $4 \times 4$ matrix acting on the column of $\tilde{R}$: the product is the matrix product $\mathsf{M}_4^{L}(\tilde{Q})\,R$, whose four entries are the coefficients of $\tilde{Q}\tilde{R}$, the column of $\tilde{R}$ being written $R$. The matrix $\mathsf{M}_4^{L}(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The present article records only that the product admits this reading.
+The column is the transcribed form of the quadruple, and it is convenient because the product of biquaternions is bilinear. For a fixed $\tilde{Q}$ the map $\tilde{R} \mapsto \tilde{Q}\tilde{R}$ sends the coefficients of $\tilde{R}$ linearly to the coefficients of the product, so with the column convention it is written as a $4 \times 4$ matrix acting on the column of $\tilde{R}$: the product is the matrix product $\mathsf{M}_4^{L}(\tilde{Q})\,R$, whose four entries are the coefficients of $\tilde{Q}\tilde{R}$, the column of $\tilde{R}$ being written $R$. The matrix $\mathsf{M}_4^{L}(\tilde{Q})$ is the matrix of left multiplication; its entries are the coefficients of $\tilde{Q}$ with signs and no additions, and it is constructed and verified in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The present article records only that the product admits this interpretation.
 
 **The row is the dual, not a further representation.** The row $Q^{\mathsf{T}}$ is the element of the dual space paired with the column by the standard pairing, and the dual of a left module is a right module: it carries the *right* action, $(\varphi\cdot\tilde{Q})(\tilde{R}) = \varphi(\tilde{Q}\tilde{R})$. The transpose that relates the column picture to the row picture is dressed with quaternion conjugation, so that the transpose of the left matrix of $\tilde{Q}$ is the left matrix of the quaternion conjugate,
 
@@ -133,7 +133,7 @@ The scalar component and the symmetric part $Q^0R^i + R^0Q^i$ of each vector com
 
 ### The Multiplication Table of the Basis
 
-The product formula is the row-by-row reading of the multiplication table of the basis, displayed once for reference; the entry in row $\mu$ and column $\nu$ is $e_\mu e_\nu$.
+The product formula is the row-by-row interpretation of the multiplication table of the basis, displayed once for reference; the entry in row $\mu$ and column $\nu$ is $e_\mu e_\nu$.
 
 | $e_\mu \backslash e_\nu$ | $e_0$ | $e_1$ | $e_2$ | $e_3$ |
 |---|---|---|---|---|
@@ -223,7 +223,7 @@ $$
 | $\mathbb{M}_+$ | $Q^0 \in \mathbb{R}$, $Q^1, Q^2, Q^3 \in i\mathbb{R}$ | Hermitian | informational sector | $4$ |
 | $\mathbb{M}_-$ | $Q^0 \in i\mathbb{R}$, $Q^1, Q^2, Q^3 \in \mathbb{R}$ | anti-Hermitian | material sector | $4$ |
 
-**Proof.** The conditions are the componentwise reading of the four conjugation rules of the preceding section. For $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$, quaternion conjugation fixes the scalar component and negates each vector component. For $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, complex conjugation fixes or negates each coefficient according to whether it is real or purely imaginary. For $\mathbb{M}_+$ and $\mathbb{M}_-$, Hermitian conjugation conjugates and then negates the vector components, so the fixed quadruples have a real scalar component and purely imaginary vector components, and the anti-fixed quadruples have a purely imaginary scalar component and real vector components.
+**Proof.** The conditions are the componentwise interpretation of the four conjugation rules of the preceding section. For $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$, quaternion conjugation fixes the scalar component and negates each vector component. For $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, complex conjugation fixes or negates each coefficient according to whether it is real or purely imaginary. For $\mathbb{M}_+$ and $\mathbb{M}_-$, Hermitian conjugation conjugates and then negates the vector components, so the fixed quadruples have a real scalar component and purely imaginary vector components, and the anti-fixed quadruples have a purely imaginary scalar component and real vector components.
 
 The table shows that the three decompositions of the algebra read in coordinates as the splitting of the quadruple into its real and imaginary parts in three different ways:
 
@@ -415,11 +415,11 @@ $$
 
 the all-plus sign of the biquaternion norm being exactly what makes the spatial part of the d'Alembertian positive with the $ict$ convention. The gradient is the case in which the material four-vector is an operator, and the wave equation $\Box\tilde{\Psi} = 0$ is the statement that the biquaternion norm of the gradient annihilates the field.
 
-**No index is raised or lowered.** The quadruple is written $Q^\mu$ with an upper index, and the index stays where it is: on $\mathbb{C}^4$ no metric is fixed, so the index is never lowered, and the biquaternion norm cannot serve as one because it is general plain bilinear — symmetric and non-degenerate, of rank four, but neither Hermitian nor positive definite. Physically, the $ict$ convention is what puts the metric into the **coefficient** instead of into a contraction rule: the material four-vector is $(ict, \mathbf{x})$ rather than $(ct, \mathbf{x})$, and the interval is then the sum of squares with no explicit scalar product. The corpus's metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 reading of the same object, used when a contraction of four-vectors is written explicitly; the level-1 object is the identity Gram matrix on $\mathbb{C}^4$, and the minus sign appears only when the material real coordinates are put on the quadruple.
+**No index is raised or lowered.** The quadruple is written $Q^\mu$ with an upper index, and the index stays where it is: on $\mathbb{C}^4$ no metric is fixed, so the index is never lowered, and the biquaternion norm cannot serve as one because it is general plain bilinear — symmetric and non-degenerate, of rank four, but neither Hermitian nor positive definite. Physically, the $ict$ convention is what puts the metric into the **coefficient** instead of into a contraction rule: the material four-vector is $(ict, \mathbf{x})$ rather than $(ct, \mathbf{x})$, and the interval is then the sum of squares with no explicit scalar product. The corpus's metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 interpretation of the same object, used when a contraction of four-vectors is written explicitly; the level-1 object is the identity Gram matrix on $\mathbb{C}^4$, and the minus sign appears only when the material real coordinates are put on the quadruple.
 
 ## Physical Readings
 
-The four coefficients read as four coordinates, and the article's own reading is the four-vector. Read on the clock, the scalar coefficient is the central coordinate and the three vector coefficients are the spatial part, so the representation is the framework's temporal/spatial split at the level of coordinates. Read on the four conjugations, the real and the imaginary parts of a coefficient are the two sectors, so a coordinate and a sector are two readings of one number, which is the dictionary the physics articles use without restating it.
+The four coefficients read as four coordinates, and the article's own interpretation is the four-vector. Read on the clock, the scalar coefficient is the central coordinate and the three vector coefficients are the spatial part, so the representation is the framework's temporal/spatial split at the level of coordinates. Read on the four conjugations, the real and the imaginary parts of a coefficient are the two sectors, so a coordinate and a sector are two interpretations of one number, which is the dictionary the physics articles use without restating it.
 
 The four complex coordinates are read as a **spacetime event carrying an internal state**: the eight real parameters are the four coordinates the $ict$ convention realises together with the four internal data on which the phase and the sector act, so one element is a point of spacetime and its internal label at once.
 

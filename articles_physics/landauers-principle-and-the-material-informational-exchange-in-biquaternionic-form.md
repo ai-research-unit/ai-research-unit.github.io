@@ -307,7 +307,7 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 - C. H. Bennett, "The thermodynamics of computation — a review," *International Journal of Theoretical Physics* **21** (1982) 905–940, for the derivation and the logical-reversibility programme.
 - C. H. Bennett, "Notes on the history of reversible computation," *IBM Journal of Research and Development* **32** (1988) 16–23, for the history of the reversible/irreversible distinction.
 - D. Reeb and M. M. Wolf, "An improved Landauer principle with finite-size corrections," *New Journal of Physics* **16** (2014) 103011, for the tightness of the bound and its finite-size corrections.
-- C. H. Bennett, "Demons, engines and the second law," *Scientific American* **257** (1987) 108–116, for the erasure resolution of the paradox and the physical reading of the bound.
+- C. H. Bennett, "Demons, engines and the second law," *Scientific American* **257** (1987) 108–116, for the erasure resolution of the paradox and the physical interpretation of the bound.
 - L. Szilard, "On the decrease of entropy in a thermodynamic system by the intervention of intelligent beings," *Zeitschrift für Physik* **53** (1929) 840–856, for the single-particle model of the exchange.
 - H. B. Callen, *Thermodynamics and an Introduction to Thermostatistics* (Wiley, 1985), for the Clausius relation, the ideal-gas isothermal work, and the free-energy balance.
 - K. Maruyama, F. Nori, and V. Vedral, "Colloquium: The physics of Maxwell's demon and information," *Reviews of Modern Physics* **81** (2009) 1–23, for the modern synthesis of erasure, measurement and feedback.

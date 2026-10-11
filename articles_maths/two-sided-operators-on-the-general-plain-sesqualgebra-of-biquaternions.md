@@ -188,7 +188,7 @@ $$
 \Theta_{\tilde{Q}}(e_{0}) = e_{0} \iff \tilde{Q}\in U .
 $$
 
-In the matrix model $\Phi(\Theta_{\tilde{Q}}(e_{0})) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\Phi(\tilde{Q})$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
+In the matrix model $\mathsf{M}_2(\Theta_{\tilde{Q}}(e_{0})) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\mathsf{M}_2(\tilde{Q})$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
 
 *Proof.* The first display is the definition; $\tilde{Q}\tilde{Q}^{*}$ is Hermitian because $(\tilde{Q}\tilde{Q}^{*})^{\dagger}=\tilde{Q}\tilde{Q}^{*}$; positivity is the positivity of the Gram matrix; and $\tilde{Q}\tilde{Q}^{*}=e_{0}$ is the defining condition of the slice.
 
@@ -227,7 +227,7 @@ $$
 \tilde{Q}\,\tilde{Q}^{*} = \tilde{Q}^{2} = e_{0} + 2ie_{3} + (ie_{3})^{2} = e_{0} + 2ie_{3} + i^{2}e_{3}^{2} = e_{0} + 2ie_{3} + e_{0} = 2\,(e_{0}+ie_{3}),
 $$
 
-using $(ie_{3})^{2}=i^{2}e_{3}^{2}=(-1)(-1)=e_{0}$ for the central imaginary. So $\Theta_{\tilde{Q}}(e_{0})=2\tilde{Q}$ is a Hermitian element of rank one in the matrix model, where $\Phi(\tilde{Q})=\mathrm{diag}(2,0)$: it is positive semidefinite and singular, not a scalar. And $\tilde{Q}^{*}\tilde{Q}=2\tilde{Q}$ is not a central scalar of modulus one, so $\Theta_{\tilde{Q}}$ is neither unitary nor an automorphism. This is the case in which the image of the identity is singular: the operator collapses the algebra onto the rank-one corner that the null element defines, which is why a zero divisor contributes to the kernel phenomena of the last sections and never to a type theorem.
+using $(ie_{3})^{2}=i^{2}e_{3}^{2}=(-1)(-1)=e_{0}$ for the central imaginary. So $\Theta_{\tilde{Q}}(e_{0})=2\tilde{Q}$ is a Hermitian element of rank one in the matrix model, where $\mathsf{M}_2(\tilde{Q})=\mathrm{diag}(2,0)$: it is positive semidefinite and singular, not a scalar. And $\tilde{Q}^{*}\tilde{Q}=2\tilde{Q}$ is not a central scalar of modulus one, so $\Theta_{\tilde{Q}}$ is neither unitary nor an automorphism. This is the case in which the image of the identity is singular: the operator collapses the algebra onto the rank-one corner that the null element defines, which is why a zero divisor contributes to the kernel phenomena of the last sections and never to a type theorem.
 
 **A check of the adjoint.** For $\tilde P=e_{0}+e_{1}$ and $\tilde S=e_{2}+ie_{3}$, the identity $\langle\tilde S,\Theta_{\tilde{Q}}\tilde P\rangle_{*}=\langle\Theta_{\tilde{Q}^{*}}\tilde S,\tilde P\rangle_{*}$ was verified to machine precision for $\tilde{Q}=e_{1}+ie_{2}$ and for random $\tilde{Q}$, over the four basis elements and over random pairs.
 

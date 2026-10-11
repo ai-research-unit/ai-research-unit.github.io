@@ -96,7 +96,7 @@ is a topological direct sum of the self-dual and the anti-self-dual parts; the t
 
 **Remark (the star as an isometry).** The statement that the star preserves the scalar form of the algebra is a statement about the **Hermitian** layer, where the blade form and its positivity make the words *isometry* and *norm* meaningful; it is owned by *The Blade Form and the Hermitian Structure with Hermitian Adjoint* and by *The Euclidean Form, the Norm and the Completion on a Clifford Algebra*, and it is not read here. What is read here is what needs no positivity: the continuity, the homeomorphism property and the two order-two cases.
 
-## The Cross Product and the Exterior Reading
+## The Cross Product and the Exterior Interpretation
 
 **Definition.** The **cross product** on a three-dimensional space is $a\times b=\star(a\wedge b)=a\wedge b\,\omega^{-1}$, as in *The Volume Element, Duality and the Hodge Star*, §*The Cross Product in Three Dimensions*.
 

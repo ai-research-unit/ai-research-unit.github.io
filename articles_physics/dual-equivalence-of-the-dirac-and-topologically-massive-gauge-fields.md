@@ -65,13 +65,13 @@ where $B$ and $N$ are the two real four-vectors of the semi-spinors (the real an
 
 ### The Mass as a Non-Integrable Phase
 
-The third ingredient is the reading of the mass. In the vector representation the mass term is
+The third ingredient is the interpretation of the mass. In the vector representation the mass term is
 
 $$
 m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N^\nu - B_\nu B^\nu\bigr) = \bar\Psi\, K_\mu\gamma^\mu\Psi
 $$
 
-for a unit complex vector $K^\mu$ built from the field. The mass is a unit vector, hence a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This reading is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.
+for a unit complex vector $K^\mu$ built from the field. The mass is a unit vector, hence a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.
 
 ## What the Equivalence Is and Is Not
 
@@ -99,7 +99,7 @@ These questions are open.
 
 Liu Yu-Fen's thesis is that the massive Dirac field and a topologically massive gauge field are **dual**: a single first-order parent action in the s-vector variables reduces, on one elimination, to the Dirac Lagrangian in the vector representation — kinetic term with the $\check c$ structure constants and the chirality-off-diagonal mass $m(G^*G^* + GG)$ — and, on the other elimination, to a gauge Lagrangian with a Maxwell kinetic term and a topological (Chern–Simons-type / BF-type) mass term $\tfrac{m}{4}\varepsilon^{\mu\nu\lambda\rho}F_{\mu\nu}A_\lambda$. The two describe the same propagating modes.
 
-The mechanism is the standard first-order duality. The ingredients are three: the anti-self-duality $H^{\mu\nu} = -\tfrac{i}{2}\varepsilon^{\mu\nu\lambda\rho}H_{\lambda\rho}$ of the biquaternion's antisymmetric part, the identity that the next-to-topological density is the divergence of a Chern–Simons-type current, and the reading of the mass as a non-integrable phase carried by a unit complex vector $K^\mu$. The first is verified in the companion article; the second and third are the source's. The parent action's two eliminations were not recomputed in this pass, and the article records the equivalence as the source's claim, supported by the verified identities it uses.
+The mechanism is the standard first-order duality. The ingredients are three: the anti-self-duality $H^{\mu\nu} = -\tfrac{i}{2}\varepsilon^{\mu\nu\lambda\rho}H_{\lambda\rho}$ of the biquaternion's antisymmetric part, the identity that the next-to-topological density is the divergence of a Chern–Simons-type current, and the interpretation of the mass as a non-integrable phase carried by a unit complex vector $K^\mu$. The first is verified in the companion article; the second and third are the source's. The parent action's two eliminations were not recomputed in this pass, and the article records the equivalence as the source's claim, supported by the verified identities it uses.
 
 ## Summary of Notation
 
@@ -120,7 +120,7 @@ The mechanism is the standard first-order duality. The ingredients are three: th
 
 ## Further Reading
 
-- Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the parent action and its two eliminations, the topological (Chern–Simons-type) mass term, the self-dual field strength, the Chern–Pontryagin total derivative, and the non-integrable-phase reading of the mass. **This article's transcription of the parent action is from the source's summary; the eliminations are recorded as claims.**
+- Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the parent action and its two eliminations, the topological (Chern–Simons-type) mass term, the self-dual field strength, the Chern–Pontryagin total derivative, and the non-integrable-phase interpretation of the mass. **This article's transcription of the parent action is from the source's summary; the eliminations are recorded as claims.**
 - Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the s-vector representation, the bosonic Dirac Lagrangian, the self-dual form of the massive equation, and the bilinear dictionary on which the parent action is built.
 - S. Deser, R. Jackiw and S. Templeton, "Topologically massive gauge theories," *Annals of Physics* **140** (1982) 372–411, for the original topologically massive gauge theory in $2+1$ dimensions and its Chern–Simons mass.
 - E. Cremmer and J. Scherk, "Spontaneous dynamical breaking of gauge symmetry in dual models," *Nuclear Physics B* **72** (1974) 117–134, for the four-dimensional analogue, the $\varepsilon FF$-type mass of an antisymmetric tensor.

@@ -149,7 +149,7 @@ for all $x,y,u,v,w$, the identity being the defining axiom of an algebraic $J^{*
 
 **Remark.** The theorem is the positive statement of the batch: the multiplication is not associative and carries no associativity identity, and the ternary product carries the Jordan triple identity in its place. The identity is the exact replacement, and it is why the ternary product rather than the binary one is the natural structure of the sesquilinear reading.
 
-### The Operator Reading
+### The Operator Interpretation
 
 **Remark.** The ternary product has two operator readings that the corpus develops separately. Fixing the two outer variables gives the linear operators $\tilde Z\mapsto\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$ and $\tilde X\mapsto\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$, the ordinary left and right multiplications by $\tilde X\tilde Y^{*}$ and by $\tilde Y^{*}\tilde Z$; fixing the middle variable gives the conjugate-linear operator $\tilde Y\mapsto\{\tilde X,\tilde Y,\tilde Z\}$, which is the sandwich $S_{\tilde X,\tilde Z^{*}}$ of *The Sesquilinear Sandwich on the Biquaternions*. The **quadratic representation** is the case $\tilde X=\tilde Z$ of *The Ternary Product as an Operator*, and the conjugation of the middle variable is the adjoint of the ternary product of *The Adjoint of the Ternary Product*. On $\mathbb{B}$ the quadratic representation is $\tilde Z\mapsto\tilde Z\tilde Y^{*}\tilde Z=\tilde Z\star\tilde Y\star\tilde Z^{*}$, the sandwich of *The Sesquilinear Sandwich on the Biquaternions* with the two parameters tied to one element.
 

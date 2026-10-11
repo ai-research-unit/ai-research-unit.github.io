@@ -18,7 +18,7 @@ This article asks what strong subadditivity is in the biquaternion framework. Th
 
 The article proceeds as follows. The inequality and its equivalent forms are recalled. The tensor-product setting in the biquaternion algebra is fixed, with the partial trace written explicitly. The inequality is derived from monotonicity of relative entropy. The three examples are computed. The equality condition is stated as the quantum Markov property. The field-theoretic setting is recalled, and the article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$. The relative entropy and its monotonicity are those of *Relative Entropy and the Biquaternion Framework*. The single-mode states and the vacuum idempotent are those of *The GNS Construction in the Biquaternion Framework* and *The Biquaternion Vacuum as a Minimal Idempotent*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$. The relative entropy and its monotonicity are those of *Relative Entropy and the Biquaternion Framework*. The single-mode states and the vacuum idempotent are those of *The GNS Construction in the Biquaternion Framework* and *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 ## The Inequality
 
@@ -248,7 +248,7 @@ The equality case is completely characterized, and the characterization is worth
 > $$
 > The state is then a **quantum Markov chain**: $B$ is a "bridge" whose left part $b_k^L$ carries the correlation to $A$ and whose right part $b_k^R$ carries it to $C$, with no correlation between $A$ and $C$ conditional on $B$.
 
-The Markov state of the previous section is the special case in which the decomposition of $\mathcal H_B$ is trivial and $\rho_{ABC}=\rho_{AB}\otimes\rho_C$ with $C$ attached as a record. The information-theoretic reading is that strong subadditivity measures the failure of the chain condition: the deficit $S(\rho_{AB})+S(\rho_{BC})-S(\rho_{ABC})-S(\rho_B)$ is the "conditional mutual information" $I(A:C|B)$, which is the amount of correlation between $A$ and $C$ that survives conditioning on $B$ and is therefore the obstruction to the Markov property. That the conditional mutual information is non-negative **is** strong subadditivity, and it is the quantity the framework's entropies compute.
+The Markov state of the previous section is the special case in which the decomposition of $\mathcal H_B$ is trivial and $\rho_{ABC}=\rho_{AB}\otimes\rho_C$ with $C$ attached as a record. The information-theoretic interpretation is that strong subadditivity measures the failure of the chain condition: the deficit $S(\rho_{AB})+S(\rho_{BC})-S(\rho_{ABC})-S(\rho_B)$ is the "conditional mutual information" $I(A:C|B)$, which is the amount of correlation between $A$ and $C$ that survives conditioning on $B$ and is therefore the obstruction to the Markov property. That the conditional mutual information is non-negative **is** strong subadditivity, and it is the quantity the framework's entropies compute.
 
 ## Strong Subadditivity in Quantum Field Theory
 
@@ -268,7 +268,7 @@ The framework's contribution to this is exactly its contribution to the finite-d
 
 **Established (recomputed here).** The tensor power $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ with the product trace; the partial trace as a completely positive trace-preserving map on the framework's states; the derivation of strong subadditivity from the monotonicity of the biquaternion relative entropy, with the reference-operator identity $S(\rho_{ABC}\|\sigma_{ABC})=S(\rho_{AB})+S(\rho_{BC})-S(\rho_B)-S(\rho_{ABC})$; and the three tripartite examples, with the tabulated entropies and deficits.
 
-**Interpretation.** That the biquaternion algebra's tensor powers give an information-theoretic reading of the inequality in which the conditional mutual information $I(A:C|B)$ is the arithmetic quantity computed from the framework's entropies, and that the Markov saturation is the framework's equality case.
+**Interpretation.** That the biquaternion algebra's tensor powers give an information-theoretic interpretation of the inequality in which the conditional mutual information $I(A:C|B)$ is the arithmetic quantity computed from the framework's entropies, and that the Markov saturation is the framework's equality case.
 
 **Gaps, left visible.** The tensor power is not a subalgebra of $\mathbb{B}$; the inequality lives on the many-mode modules. The framework supplies no state selection and no dynamics, and no field-theoretic strengthening. No empirical consequence is derived.
 
@@ -276,13 +276,13 @@ The framework's contribution to this is exactly its contribution to the finite-d
 
 **1. A biquaternion witness for the deficit.** The deficit is the conditional mutual information. Is there a biquaternion observable whose expectation is this quantity, in the way that the modular Hamiltonian's expectation is the relative entropy? The trace formula gives the expectation of any Hermitian element, so the question is whether $I(A:C|B)$ can be written as $2\,\mathrm{Sc}$ of a single algebra element of $\mathbb{B}^{\otimes3}$.
 
-**2. The Markov decomposition in the algebra.** The equality condition is an algebraic decomposition of $\mathcal H_B$. Does the decomposition have a reading in terms of the idempotent structure of $\mathbb{B}^{\otimes3}$, the minimal idempotents of the GNS companion article, and the partial traces between them?
+**2. The Markov decomposition in the algebra.** The equality condition is an algebraic decomposition of $\mathcal H_B$. Does the decomposition have an interpretation in terms of the idempotent structure of $\mathbb{B}^{\otimes3}$, the minimal idempotents of the GNS companion article, and the partial traces between them?
 
 **3. The continuum limit.** The region statement is a relative-entropy statement. Does the framework's closed-form relative entropy, applied to a regulated lattice and continued to the continuum, reproduce the standard monotonicity of entanglement entropy under region inclusion?
 
 **4. The operation count.** The partial trace is one completely positive map; the data-processing inequality holds for all of them. Which completely positive maps on $\mathbb{B}^{\otimes n}$ are native to the framework's sector structure, in the sense of the reversible/irreversible dichotomy of $\mathbb{M}_+$?
 
-**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the reading from standard quantum information theory is derived.
+**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum information theory is derived.
 
 ## Summary
 
@@ -318,7 +318,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 - E. H. Lieb, "Convex trace functions and the Wigner–Yanase–Dyson conjecture," *Advances in Mathematics* **11** (1973) 267–288, for the convexity results the proof uses.
 - H. Araki and E. H. Lieb, "Entropy inequalities," *Communications in Mathematical Physics* **18** (1970) 160–170, for subadditivity, the triangle inequality, and their consequences.
 - A. Uhlmann, "Relative entropy and the Wigner–Yanase–Dyson–Lieb concavity in an interpolation theory," *Communications in Mathematical Physics* **54** (1977) 21–32, for the monotonicity of relative entropy under completely positive maps.
-- G. Lindblad, "Completely positive maps and entropy inequalities," *Communications in Mathematical Physics* **40** (1975) 147–151, for the same result and its data-processing reading.
+- G. Lindblad, "Completely positive maps and entropy inequalities," *Communications in Mathematical Physics* **40** (1975) 147–151, for the same result and its data-processing interpretation.
 - P. Hayden, R. Jozsa, D. Petz, and A. Winter, "Structure of states which satisfy strong subadditivity of quantum entropy with equality," *Communications in Mathematical Physics* **246** (2004) 359–374, for the quantum Markov equality condition.
 - M. A. Nielsen and I. L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the finite-dimensional proof and the standard examples.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the convexity and monotonicity theory.

@@ -295,7 +295,7 @@ The rule behind the table is one line: **a form has a null cone on a subspace ex
 
 **The ambient cones are cut by the subspaces.** The ambient null sets of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* are the complex cone of $B$, the zero-divisor cone $\mathcal N$ of $N$ and the real cone $\mathcal K$ of $K$, of real dimensions six, six and seven. The table above is what those cones become on the remarkable subspaces, and the two are different pictures: the ambient cones have real dimension six or seven, and the cones of the table have real dimension four on the vector subspace and real dimension three on the four real-type subspaces, because the equations $\sum_kQ_k^{2}=0$ in three complex unknowns and $h_0^{2}=\lvert\mathbf h\rvert^{2}$ in four real unknowns have those dimensions. A subspace is not a small copy of the ambient space for a cone.
 
-## The Material Reading
+## The Material Interpretation
 
 The reading is a reading and not a theorem; it is the one the corpus gives to the four forms and it is sharpened here by the remarkable subspaces.
 

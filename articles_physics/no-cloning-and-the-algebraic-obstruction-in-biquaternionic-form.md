@@ -18,9 +18,9 @@ $$
 
 which forces the pairing to be $0$ or $1$: **cloning is possible exactly for sets of mutually orthogonal states, and for no others.** The two states are then perfectly distinguishable, and copying them is a classical operation.
 
-A second, equivalent reading is that the cloning map on states is quadratic, $\tilde{\rho}\mapsto\tilde{\rho}\otimes\tilde{\rho}$, while every physical evolution is affine on the state space. This is the algebraic statement that the obstruction is the linearity of quantum dynamics, and it is the version that extends to mixed states and to channels.
+A second, equivalent interpretation is that the cloning map on states is quadratic, $\tilde{\rho}\mapsto\tilde{\rho}\otimes\tilde{\rho}$, while every physical evolution is affine on the state space. This is the algebraic statement that the obstruction is the linearity of quantum dynamics, and it is the version that extends to mixed states and to channels.
 
-The article develops both readings, then treats approximate cloning, where the obstruction is quantified: the optimal universal qubit cloner achieves a fidelity of $5/6$, and the measurement-based alternative achieves only $2/3$. The universal cloner is constructed in explicit tensor-product form and its fidelity verified on a family of superposition states. The related no-go theorems — no-deleting, no-broadcasting, and the failure of cloning for mixed states — are stated in the framework's terms. The article closes by separating what is algebraic from what is standard.
+The article develops both interpretations, then treats approximate cloning, where the obstruction is quantified: the optimal universal qubit cloner achieves a fidelity of $5/6$, and the measurement-based alternative achieves only $2/3$. The universal cloner is constructed in explicit tensor-product form and its fidelity verified on a family of superposition states. The related no-go theorems — no-deleting, no-broadcasting, and the failure of cloning for mixed states — are stated in the framework's terms. The article closes by separating what is algebraic from what is standard.
 
 ## The Cloning Requirement
 
@@ -226,7 +226,7 @@ In the framework's terms, all three are the statement that the trace pairing can
 
 **3. Correlated inputs.** The theorem forbids cloning an unknown state. What is the algebraic characterization of the correlations that a cloning machine can exploit, and does the entanglement of the blank with the input modify the bound?
 
-**4. Many copies.** The asymptotic cloning of $n$ copies to $m>n$ copies approaches perfect cloning as $n\to\infty$, with a rate given by the entropy. Does the biquaternion-norm reading of the single-qubit entropy extend to the asymptotic cloning rate?
+**4. Many copies.** The asymptotic cloning of $n$ copies to $m>n$ copies approaches perfect cloning as $n\to\infty$, with a rate given by the entropy. Does the biquaternion-norm interpretation of the single-qubit entropy extend to the asymptotic cloning rate?
 
 **5. Empirical content.** The no-cloning theorem in biquaternion form is the standard theorem transcribed; it predicts nothing new.
 

@@ -32,7 +32,7 @@ Three structures carry the effect, and their homes in the framework differ.
 
 - **Established, and recomputed below.** For Schwarzschild, the surface gravity is $\kappa=c^2 f'(r_s)/2=c^4/(4GM)$ with $f=1-r_s/r$, $r_s=2GM/c^2$; the static observer's proper acceleration is $a(r)=c^2 f'/(2\sqrt f)=GM/(r^2\sqrt f)$, which diverges at $r_s$ and equals $\kappa/\sqrt f$ only at $r=r_s$, while its redshifted product $a(r)\sqrt f=c^2f'/2=GM/r^2$ tends to $\kappa$ as $r\to r_s$. The Euclidean Schwarzschild section is regular at the horizon only if the imaginary time has period $8\pi GM/c^3=2\pi c/\kappa=2\pi/\kappa_\omega$, which is the inverse Hawking temperature. Tractable pieces of the Bogoliubov formalism are recomputed: the coefficients' consistency relations, the particle number $\sum_i|\mathcal B_{ji}|^2$, the branch-point factor $e^{-\pi\omega/\kappa}$, the two-mode squeeze identity $\sinh^2 r=1/(e^{2\pi\omega/\kappa}-1)$ with $\tanh r=e^{-\pi\omega/\kappa}$, the Bose and Fermi geometric sums, and the $M^{-1}$ scaling of $T_{\mathrm H}$.
 - **Standard, and imported.** Hawking's calculation; the metric and its surface gravity; the Kruskal extension and the in/out mode decomposition; the identification of the horizon mode's analytic continuation with the Bogoliubov coefficient ratio; the Hartle–Hawking and Unruh vacua; the KMS characterization of thermal equilibrium; the Bisognano–Wichmann theorem.
-- **Interpretation.** Reading the KMS imaginary time as the intrinsic imaginary time of $\mathbb{M}_-$; reading the local light cone as the zero-divisor cone; reading the modular Hamiltonian as the Hermitian generator in $\mathbb{M}_+$. These are structural readings of the imported construction; the algebra is consistent with them and does not force them.
+- **Interpretation.** Interpretation the KMS imaginary time as the intrinsic imaginary time of $\mathbb{M}_-$; reading the local light cone as the zero-divisor cone; reading the modular Hamiltonian as the Hermitian generator in $\mathbb{M}_+$. These are structural interpretations of the imported construction; the algebra is consistent with them and does not force them.
 - **Gaps, left visible.** The framework contains no black-hole geometry and generates no dynamics; the Schwarzschild metric is imported as a frame field that nothing selects. The framework does not derive the mode mixing, the exponential factor, or the KMS property; it houses them. Hawking radiation has never been observed, and no claim of observation is made here. The thermodynamics of the horizon — its entropy, its laws, its evaporation — is the subject of a separate planned article and is not developed here.
 
 The article is organized as follows. The next section fixes the Schwarzschild horizon, computes the proper acceleration and the surface gravity, and separates them. The section after that reduces the near-horizon geometry to Rindler and states the identification with the Unruh effect precisely. A short section records what the biquaternion framework carries and what it imports. Two sections construct the Bogoliubov transformation and derive the Planck spectrum from it. A section computes the temperature, checks it against the Euclidean period and against the mass scaling, and records the observational status. The article closes with the established/interpretation split, open questions, and the summary.
@@ -192,7 +192,7 @@ $$
 T_\infty = T_{\mathrm{loc}}(r)\sqrt{f(r)} = \frac{\hbar\kappa}{2\pi c\,k_B} = T_{\mathrm H},
 $$
 
-independent of $r$ for the Tolman reading, and the near-horizon limit of the Unruh reading. The divergence of the local acceleration and the vanishing of the redshift factor cancel; the surface gravity, not the proper acceleration, is the quantity that survives, and this is why the Hawking temperature is finite and universal while the local Unruh temperature at the horizon is not.
+independent of $r$ for the Tolman interpretation, and the near-horizon limit of the Unruh interpretation. The divergence of the local acceleration and the vanishing of the redshift factor cancel; the surface gravity, not the proper acceleration, is the quantity that survives, and this is why the Hawking temperature is finite and universal while the local Unruh temperature at the horizon is not.
 
 ### The KMS Statement in the Framework's Notation
 
@@ -457,7 +457,7 @@ T_{\mathrm H}(2M_\odot)\approx 3.09\times10^{-8}\,\mathrm{K},
 \frac{T_{\mathrm H}(M_\odot)}{T_{\mathrm H}(2M_\odot)}=2.000,
 $$
 
-and for a primordial hole of mass $10^{12}\,\mathrm{kg}$, $T_{\mathrm H}\approx 1.23\times10^{11}\,\mathrm{K}$. The $M^{-1}$ scaling is a consistency check on the surface gravity: it uses only $r_s\propto M$ and $\kappa=c^2 f'(r_s)/2\propto 1/r_s\propto 1/M$. The same scaling has a physical reading that is worth stating but is **not** used as evidence here: the lighter the hole, the hotter it is, and the temperature of an astrophysical hole is far below the cosmic microwave background temperature, which is why the effect is invisible for stellar-mass and heavier black holes.
+and for a primordial hole of mass $10^{12}\,\mathrm{kg}$, $T_{\mathrm H}\approx 1.23\times10^{11}\,\mathrm{K}$. The $M^{-1}$ scaling is a consistency check on the surface gravity: it uses only $r_s\propto M$ and $\kappa=c^2 f'(r_s)/2\propto 1/r_s\propto 1/M$. The same scaling has a physical interpretation that is worth stating but is **not** used as evidence here: the lighter the hole, the hotter it is, and the temperature of an astrophysical hole is far below the cosmic microwave background temperature, which is why the effect is invisible for stellar-mass and heavier black holes.
 
 ### Observational Status
 
@@ -465,7 +465,7 @@ and for a primordial hole of mass $10^{12}\,\mathrm{kg}$, $T_{\mathrm H}\approx 
 
 ### What the Framework Does Not Add Here
 
-The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There is no biquaternionic modification of the surface gravity, the exponential, or the spectrum; the algebra's role has been that of a consistent home for the material field, its imaginary time, and the modular generator. This is the same verdict the vacuum-state and Casimir article reaches for its own effect: where the framework supplies a cleaner structural reading rather than a modification, it also supplies no empirical discriminator. The thermodynamics of the horizon — the entropy, the first law, the area law, the lifetime — is left to the planned companion article on black-hole thermodynamics and is not developed here.
+The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There is no biquaternionic modification of the surface gravity, the exponential, or the spectrum; the algebra's role has been that of a consistent home for the material field, its imaginary time, and the modular generator. This is the same verdict the vacuum-state and Casimir article reaches for its own effect: where the framework supplies a cleaner structural interpretation rather than a modification, it also supplies no empirical discriminator. The thermodynamics of the horizon — the entropy, the first law, the area law, the lifetime — is left to the planned companion article on black-hole thermodynamics and is not developed here.
 
 ## What Is Established, What Is Interpretation, and the Gaps
 
@@ -487,7 +487,7 @@ The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There
 
 **Standard, and inherited.** The Schwarzschild metric and its surface gravity; the Kruskal extension and the in/out mode decomposition; the identification of the mode's analytic continuation with the Bogoliubov coefficient ratio; the Unruh and Hartle–Hawking vacua; the KMS characterization of thermal equilibrium and the Bisognano–Wichmann theorem; the Euclidean-section derivation.
 
-**Interpretation.** That the KMS imaginary time is the intrinsic imaginary time of $\mathbb{M}_-$; that the modular generator is an $\mathbb{M}_+$ object; that the local horizon is the zero-divisor cone. These are structural readings. The algebra is consistent with them and does not force them, and none of them changes a number in this article.
+**Interpretation.** That the KMS imaginary time is the intrinsic imaginary time of $\mathbb{M}_-$; that the modular generator is an $\mathbb{M}_+$ object; that the local horizon is the zero-divisor cone. These are structural interpretations. The algebra is consistent with them and does not force them, and none of them changes a number in this article.
 
 **Gaps, left visible.**
 

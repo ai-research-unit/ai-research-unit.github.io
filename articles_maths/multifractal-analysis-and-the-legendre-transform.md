@@ -145,7 +145,7 @@ Take the Sierpiński gasket, the attractor of three maps of ratio $r=\tfrac12$ o
 
 The spectrum is supported on $[1,2]$, its maximum $1.584963=\log3/\log2$ at $q=0$ is the dimension of the gasket, and the value at $q=1$, $1.5$, is the dimension of the measure; the dimension of the measure is strictly below the dimension of the set, and the spectrum fills the gap. The self-similar measure on the gasket is the measure whose multifractal spectrum the thermodynamic formalism of Part III produces, and it is the input of the Dirichlet form of the next article.
 
-## The Large-Deviation Reading
+## The Large-Deviation Interpretation
 
 **Remark (the transform is a rate function).** The measure $\nu_p$ on the boundary is the product measure of the weights $p_x$, and the level set $K_\alpha$ is, up to the coding, the set of sequences whose **empirical frequency** deviates from $p$ so as to produce the exponent $\alpha$. The logarithmic moment generating function of the empirical frequency is
 $$

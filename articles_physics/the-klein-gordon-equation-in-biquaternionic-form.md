@@ -243,7 +243,7 @@ $$
 \Box\tilde{\Phi}_\pm = (\Box\tilde{\Phi})_\pm ,
 $$
 
-so $\tilde{\Phi}$ solves the Klein–Gordon equation if and only if $\tilde{\Phi}_+$ and $\tilde{\Phi}_-$ each solve it separately. There is no equation coupling the two sectors, and the decomposition is not a decomposition into interacting parts. Worse for the hoped-for reading, the two sectors are not independent: because $i$ is central and commutes with $\Box$, multiplication by $i$ maps Klein–Gordon solutions in $\mathbb{M}_+$ to Klein–Gordon solutions in $\mathbb{M}_-$,
+so $\tilde{\Phi}$ solves the Klein–Gordon equation if and only if $\tilde{\Phi}_+$ and $\tilde{\Phi}_-$ each solve it separately. There is no equation coupling the two sectors, and the decomposition is not a decomposition into interacting parts. Worse for the hoped-for interpretation, the two sectors are not independent: because $i$ is central and commutes with $\Box$, multiplication by $i$ maps Klein–Gordon solutions in $\mathbb{M}_+$ to Klein–Gordon solutions in $\mathbb{M}_-$,
 
 $$
 \left(\Box-\mu^2\right)\tilde{\Phi}_+ = 0
@@ -304,7 +304,7 @@ The honest bottom line is a negative result about the framework's central struct
 
 ## Open Questions
 
-1. **Two readings of "conjugate pair."** *Open for the author.* This article reads the conjugate pair as $(\tilde{\Phi},\tilde{\Phi}^*)$ — the particle/antiparticle pair, complex conjugation. A second reading is the Hamiltonian pair $(\tilde{\Phi},\partial_{ict}\tilde{\Phi})$ — field and conjugate momentum. The two are inequivalent, and the choice changes which part of the algebra is invoked (complex conjugation versus the $i$-intertwiner). This article takes the first reading because it is the one connected to the two physical defects, but the second is defensible and is flagged rather than decided.
+1. **Two interpretations of "conjugate pair."** *Open for the author.* This article reads the conjugate pair as $(\tilde{\Phi},\tilde{\Phi}^*)$ — the particle/antiparticle pair, complex conjugation. A second reading is the Hamiltonian pair $(\tilde{\Phi},\partial_{ict}\tilde{\Phi})$ — field and conjugate momentum. The two are inequivalent, and the choice changes which part of the algebra is invoked (complex conjugation versus the $i$-intertwiner). This article takes the first reading because it is the one connected to the two physical defects, but the second is defensible and is flagged rather than decided.
 
 2. **Would the author want a sector pairing at all?** *Open for the author.* If the intended framework claim is that $\mathbb{M}_+$ hosts $\tilde{\Phi}$ and $\mathbb{M}_-$ hosts $\tilde{\Phi}^*$, then the algebras above say this requires a convention in which complex conjugation, not Hermitian conjugation, is the sector-defining involution, and in which multiplication by $i$ does not exchange the sectors. That is a different set of fixed-point subspaces than the one the read list fixes. Adopting it would change the framework's conclusions, so it is recorded and not decided.
 
@@ -314,7 +314,7 @@ The honest bottom line is a negative result about the framework's central struct
 
 5. **Second quantization in the biquaternion framework.** The resolution of both defects is to quantize the field, with $\tilde{\Phi}$ and $\tilde{\Phi}^*$ becoming operators. Whether the biquaternion structure adds anything to that procedure, or is again a relabelling of the complex scalar field's second quantization, is open.
 
-6. **A factorable massive operator.** The vector-coefficient operator $\Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla)$ factors into first-order operators and has a light-cone kernel, but its mass and its directional term cannot be separated. Is there a class of *massive* scalar operators with elementary kernels that is not obtained by this compensated construction — or, equivalently, is the price of factorisability always a compensating first-order term? The construction also raises whether the compensated operator has a physical reading of its own, rather than being a device for solving the first-order system.
+6. **A factorable massive operator.** The vector-coefficient operator $\Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla)$ factors into first-order operators and has a light-cone kernel, but its mass and its directional term cannot be separated. Is there a class of *massive* scalar operators with elementary kernels that is not obtained by this compensated construction — or, equivalently, is the price of factorisability always a compensating first-order term? The construction also raises whether the compensated operator has a physical interpretation of its own, rather than being a device for solving the first-order system.
 
 ## Summary
 

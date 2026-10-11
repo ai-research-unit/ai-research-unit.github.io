@@ -7,7 +7,8 @@ Sesquilinear Product* and *Values in No Subspace: Why the Symmetric Gauge Produc
 quaternionic sesquilinear product**
 
 $$
-\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P,
+\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)
+=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P,
 $$
 
 and the operators the band attaches to an element are its two one-sided multiplications
@@ -78,7 +79,7 @@ This is the parity theorem of *The Multiplication Operators of the Symmetric Qua
 
 **Read as a physical statement.** The two attachments of the band are not the same act, nor are they independent: attaching a gauge element
 on the left is attaching its coefficientwise conjugate on the right, and the conjugation is exactly the symmetry the symmetrisation bought.
-The band carries **one** operator family read through the conjugation and **two** parities; the reading is that the ordering of the two slots
+The band carries **one** operator family read through the conjugation and **two** parities; the interpretation is that the ordering of the two slots
 is immaterial while the conjugation between them is not.
 
 **Corollary (the operators at the unit).** $L^{\bullet}_{e_0}={}^{*}$ is the star conjugation and $R^{\bullet}_{e_0}={}^{\natural}$ the
@@ -89,7 +90,7 @@ Gauge Metric as a Product*; the diagonal matrices are the real matrices of the t
 Symmetric Quaternionic Sesqualgebra*.
 
 **Read as a physical statement.** The neutral operation of the band is not the identity on either side: the left action of the unit is the
-star, the right action is the natural conjugation. The reading is that the gauge pairing has no unit of a multiplication, and the two
+star, the right action is the natural conjugation. The interpretation is that the gauge pairing has no unit of a multiplication, and the two
 conjugations are the residues of the unit it lacks.
 
 **Caution (the word commutative).** The symmetrisation makes the product **conjugate-commutative** and it does **not** make it commutative;
@@ -113,7 +114,7 @@ Born Pairing*, and the central case follows from the corollary at $e_0$. This is
 Symmetric Quaternionic Sesqualgebra*.
 
 **Read as a physical statement.** The two slots of the gauge pairing have opposite polarity, and a conjugate-linear operator is not an
-element of the complex endomorphism algebra. The reading is that no family of the band can be a representation of an algebra, so the band
+element of the complex endomorphism algebra. The interpretation is that no family of the band can be a representation of an algebra, so the band
 carries its operators without an operator calculus.
 
 **Definition (the value).** For all biquaternions the value of the product is
@@ -124,7 +125,7 @@ $K(\tilde A,\tilde X)$ and vector part the mixed term $-A_0\overline{\mathbf X}-
 the vector part the mixed term alone.
 
 **Read as a physical statement.** The operator acts by returning the pairing as a scale and the mixed term as a direction, and the two
-projections sit side by side in one value. The reading is that the multiplication is a **deformation** of an element and not a rotation or a
+projections sit side by side in one value. The interpretation is that the multiplication is a **deformation** of an element and not a rotation or a
 translation, its scalar part a conformal factor and its vector part a shear; the name is the sibling's and the algebra is the display.
 
 **Theorem (the composition and the defect of multiplicativity).** The two families do not multiply,
@@ -139,7 +140,7 @@ conjugate-linear is zero, which forbids a complex-linear representation. This is
 Sesqualgebra*, §*The Composition and the Defect of Multiplicativity*.
 
 **Read as a physical statement.** Two gauge pairings do not compose to a gauge pairing, and the failure has two independent sources: the
-associator, which is the ordinary defect of a non-associative operation, and the parity, which the left family carries alone. The reading is
+associator, which is the ordinary defect of a non-associative operation, and the parity, which the left family carries alone. The interpretation is
 that the metric band supplies a pairing to be transported and not a multiplication to be iterated, and that the transport is the adjoint.
 
 ## The Adjoint of the Krein Form
@@ -148,28 +149,34 @@ The band's operators are adjoint for the form their product carries as its scala
 exactly which form and which adjoint.
 
 **Definition (the form and its fundamental symmetry).** The **Krein form** of the band is
-$K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}-\sum_{k=1}^{3}P_k\overline{Q_k}$
-with $\varepsilon=(1,-1,-1,-1)$. It is Hermitian, non-degenerate, of signature $(1,3)$ over the complex coefficients and $(2,6)$ over the
+$K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$, with coefficient form
+$K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}-\sum_{k=1}^{3}P_k\overline{Q_k}$ and
+$\varepsilon=(1,-1,-1,-1)$. It is Hermitian, non-degenerate, of signature $(1,3)$ over the complex coefficients and $(2,6)$ over the
 real parameters, with fundamental decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_K\mathrm{Vect}(\mathbb{B})$ and fundamental symmetry
-$J={}^{\natural}$ the natural conjugation, so that $K(\tilde P,\tilde Q)=(J\tilde P,\tilde Q)$ for the definite form
-$(\tilde P,\tilde W)=\mathrm{Sc}(\tilde P^{*}\tilde W)$.
+$J={}^{\natural}$ the natural conjugation, so that $K(\tilde P,\tilde Q)=(\tilde P^{\natural},\tilde Q)=(J\tilde P,\tilde Q)$ for the
+definite star form $(\tilde P,\tilde W)=\mathrm{Sc}(\tilde P\tilde W^{*})=\langle\tilde P,\tilde W\rangle_{*}$, which is the positive form of
+the probability row.
 
 *Proof.* In the coefficient basis the form is the standard form of signature $(1,3)$, and the natural conjugation is the diagonal operator
-$\mathrm{diag}(1,-1,-1,-1)$ turning it into the definite one; the details are *The Krein Gram Matrix and the Restrictions of the Form* and
-*The Fourth Product and Its Indefinite Metric*.
+$\mathrm{diag}(1,-1,-1,-1)$ inserted in the first slot, turning the definite form into the indefinite one; the details are *The Krein Gram
+Matrix and the Restrictions of the Form* and *The Fourth Product and Its Indefinite Metric*, and the identity
+$K(\tilde P,\tilde Q)=(\tilde P^{\natural},\tilde Q)$ is the fundamental-symmetry relation
+$\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P^{\natural},\tilde Q\rangle_{*}$ of *Conventions in the Biquaternion
+Universe*.
 
 **Read as a physical statement.** The form of the band is not the positive form of the state row but the indefinite pairing of the gauge row,
-and its modulus is a signature and not an error. The reading is that the band compares two internal frames without ranking them.
+and its modulus is a signature and not an error. The interpretation is that the band compares two internal frames without ranking them.
 
 **Definition (the adjoint).** For a complex-linear operator $T$ the **$J$-adjoint**, or **indefinite adjoint**, is the operator $T^{\dagger}$
 with $K(T\tilde P,\tilde Q)=K(\tilde P,T^{\dagger}\tilde Q)$ for all $\tilde P,\tilde Q$, that is $T^{\dagger}=JT^{*}J$ with
-$J={}^{\natural}$. The form is non-degenerate, so the adjoint exists and is unique. For a conjugate-linear operator $S$ the linear rule has
+$J={}^{\natural}$ and $T^{*}$ the adjoint of $T$ for the definite star form, $(\tilde P,T^{*}\tilde Q)=(T\tilde P,\tilde Q)$. The form is
+non-degenerate, so the adjoint exists and is unique. For a conjugate-linear operator $S$ the linear rule has
 no solution, and the **twisted $J$-adjoint** is used instead, $K(S\tilde P,\tilde Q)=\overline{K(\tilde P,S^{\dagger}\tilde Q)}$, under which
 the adjoint of a conjugate-linear operator is again conjugate-linear. Both rules are the indefinite adjoint of *The Indefinite Hermitian
 Sandwich on the General Quaternionic Sesqualgebra of Biquaternions*.
 
 **Read as a physical statement.** The adjoint of the band is taken for the **indefinite** form, so it is a $J$-adjoint and not a definite
-adjoint; the conjugation on the right of the twisted rule is the correction the conjugate-linearity of the left family forces. The reading is
+adjoint; the conjugation on the right of the twisted rule is the correction the conjugate-linearity of the left family forces. The interpretation is
 that the transport across the gauge pairing is indefinite and that its fixed points will not be the observables of the positive form.
 
 **Theorem (the adjoint of the left multiplication).** With respect to $K$, for every $\tilde A$ one has
@@ -182,7 +189,7 @@ $K(\tilde A\bullet\tilde X,\tilde Y)=\overline{K(\tilde X,\tilde A^{\natural}\bu
 the left multiplication; the conjugate on the right is the parity correction of the conjugate-linear operator.
 
 **Read as a physical statement.** Transporting a gauge operation across the pairing does not move it to the other side; it replaces the
-parameter by its natural conjugation, the fundamental symmetry of the form. The reading is that the gauge adjoint is an **involution of the
+parameter by its natural conjugation, the fundamental symmetry of the form. The interpretation is that the gauge adjoint is an **involution of the
 parameter** and not a charge reversal of the positive row: it reflects the vector directions, and the reflection is the metric's own.
 
 **Theorem (the adjoint of the right multiplication).** With respect to $K$, for every $\tilde A$ one has
@@ -198,7 +205,7 @@ parities of the factors, $(C\circ L^{\bullet}_{\tilde A})^{\dagger}=(L^{\bullet}
 $R^{\bullet}_{\tilde A}$ is complex-linear, so its adjoint is taken in the linear sense, and substituting the left adjoint gives the display.
 
 **Read as a physical statement.** The right attachment has an adjoint of a mixed kind: a left attachment composed with the coefficientwise
-conjugation. The reading is the parity of the band at the level of the adjoint: the left family stays inside itself under the adjoint, the
+conjugation. The interpretation is the parity of the band at the level of the adjoint: the left family stays inside itself under the adjoint, the
 right family does not, and the two statements are the two faces of the conjugate-commutativity.
 
 **Remark (this adjoint against the plain adjoint).** The adjoint of the band keeps the side and conjugates the parameter by the natural
@@ -209,7 +216,7 @@ exchanged, and they are the operator difference between the plain multiplication
 form.
 
 **Read as a physical statement.** The same indefinite form carries two adjoints, one for each product, and only the pair (form, product)
-determines what the adjoint does to the parameter. The reading is that the adjoint is a property of an operation and not of a form alone, and
+determines what the adjoint does to the parameter. The interpretation is that the adjoint is a property of an operation and not of a form alone, and
 the crossing reader *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket* is where the pairings are compared.
 
 ## The Types of the Operators
@@ -226,7 +233,7 @@ $\tilde A^{\natural}=\tilde A$ and skew-adjointness is $\tilde A^{\natural}=-\ti
 elements and anti-fixes exactly the pure vectors.
 
 **Read as a physical statement.** A self-adjoint gauge multiplication is a multiplication by a central element and a skew-adjoint one a
-multiplication by a pure vector. The reading is that the symmetric class of the band is the **centre**, the antisymmetric class the **vector
+multiplication by a pure vector. The interpretation is that the symmetric class of the band is the **centre**, the antisymmetric class the **vector
 directions**, and that an element mixing a scale with a direction is neither: the two classes do not carve the algebra between them, and the
 mixed elements carry both grades.
 
@@ -243,7 +250,7 @@ a complex multiple of $e_0$, real or not, and $L^{\bullet}_{ie_0}(\tilde X)=ie_0
 $(ie_0)^{\natural}=ie_0$. This was checked numerically on the central parameters.
 
 **Read as a physical statement.** The self-adjoint operators of the gauge band form a complex line of parameters, and a purely imaginary
-scalar is a self-adjoint operator of the band. The reading is that the band's symmetry class is the **projective line of central
+scalar is a self-adjoint operator of the band. The interpretation is that the band's symmetry class is the **projective line of central
 calibrations** and not the observables of the positive row; the reality that distinguishes observables belongs to the Hermitian form of the
 probability band, *Observables, Gauge Generators and the Chirality of the Internal Action*.
 
@@ -263,7 +270,7 @@ Invertibility in the General Plain Algebra* owns the norm.
 
 **Read as a physical statement.** The operator of a gauge element is invertible exactly when the element is not a zero divisor, and the norm
 $N$ is the datum that decides it: an element of nonzero scalar part and nonzero norm acts at full rank, one of zero norm collapses a real
-plane and a pure vector acts at half rank. The reading is that the gauge multiplication measures an element through its norm and its scale,
+plane and a pure vector acts at half rank. The interpretation is that the gauge multiplication measures an element through its norm and its scale,
 and that the collapse at $N=0$ is the algebraic trace of the null directions of the metric.
 
 ## The Symmetries of the Form and of the Product
@@ -283,7 +290,7 @@ $K(\tilde X^{\natural},\tilde Y^{\natural})=K(\tilde X,\tilde Y)$. The group of 
 Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*, §*The Groups*.
 
 **Read as a physical statement.** The left family of the band is never an isometry of the metric, for a reason of parity and not of
-parameter; the only isometries the band's own multiplications supply are the right multiplications by a central phase. The reading is that
+parameter; the only isometries the band's own multiplications supply are the right multiplications by a central phase. The interpretation is that
 the gauge pairing is preserved by a compact circle of central calibrations and by nothing one-sided else, and that the general isometry group
 of the metric is larger than the band's operators.
 
@@ -303,7 +310,7 @@ fails already at $\tilde X=\tilde Y=e_0$. This was checked numerically on the ce
 
 **Read as a physical statement.** The symmetries of the **product** and the symmetries of the **form** fall on different operators: the form
 is preserved by the right multiplications of the central phases and the product by the four involutions of the structure group, while the
-band's one-sided multiplications are multiplicative only at the identity and at zero. The reading is that the gauge pairing has a finite
+band's one-sided multiplications are multiplicative only at the identity and at zero. The interpretation is that the gauge pairing has a finite
 structure group and a compact circle of phase isometries, and that no genuine one-sided operation is a symmetry of either beyond those.
 
 **Proposition (the structure group and the operators).** For every $\tilde A$ one has
@@ -315,7 +322,7 @@ by conjugation of the parameter and of the space.
 $L^{\bullet}_{\varphi\tilde A}=\varphi\circ L^{\bullet}_{\tilde A}\circ\varphi^{-1}$, and the involutions are their own inverses.
 
 **Read as a physical statement.** The conjugations that generate the structure group relabel the space and the parameter at once, so the
-band's operator is attached to the **class** of the parameter under the Klein group and not to the parameter alone. The reading is that the
+band's operator is attached to the **class** of the parameter under the Klein group and not to the parameter alone. The interpretation is that the
 gauge multiplication is invariant under the simultaneous relabelling of frame and calibration, which is the operator form of a gauge
 redundancy of signs.
 
@@ -337,7 +344,7 @@ $L_{\tilde A}s=\tilde As$, of *The Spinor Space as a Module and as a Hilbert Spa
 multiplication is the module action of the plain product.
 
 **Read as a physical statement.** The band's operation cannot act on a state space, because a state space is a complex module and the band's
-attachment of an element is conjugate-linear in the element it attaches. The reading is the operator form of the sibling's conclusion that
+attachment of an element is conjugate-linear in the element it attaches. The interpretation is the operator form of the sibling's conclusion that
 the symmetric gauge product **is not a state**: an operation that cannot be a module map cannot be a state update.
 
 **Proposition (the diagonal is the metric and not a probability).** The scalar part of the product is the Krein form,
@@ -351,9 +358,9 @@ form, *The Fourth Product and Its Indefinite Metric*; $K(e_0,e_0)=+1$ and $K(e_1
 positive form of the framework is *Mass, Rank and the Positivity of the Dagger*.
 
 **Read as a physical statement.** The band's form is a metric of signature $(1,3)$, and its diagonal is the metric read on an element,
-positive on a scale and negative on a direction. The reading, and it is the band's own: a symmetric gauge product is a **metric-like datum
-and not a state**, its value lies, for a general pair, in no one of the remarkable subspaces (*Values in No Subspace: Why the Symmetric Gauge Product Is Not a
-State*), and the diagonal of the form is the metric the band is named for.
+positive on a scale and negative on a direction. The interpretation, and it is the band's own: a symmetric gauge product is a **metric-like datum
+and not a state**, its value lies, for a general pair, in no one of the remarkable subspaces, and the diagonal of the form is the metric the
+band is named for (*Values in No Subspace: Why the Symmetric Gauge Product Is Not a State*).
 
 **Proposition (the null directions).** The form has the null set $\{K=0\}$, a real cone of dimension seven, which contains $e_0+e_1$ and the
 elements the metric cannot normalise; the operators of the band are not isometries of any sign-definite form, and their collapses on this
@@ -366,7 +373,7 @@ from the rank table of *The Multiplication Operators of the Symmetric Quaternion
 $N(e_0+e_1)=2\neq0$ for the invertible null element and $N(e_0+ie_1)=0$ with $A_0=1$ for the zero divisor of rank six.
 
 **Read as a physical statement.** The band has null directions and the metric cannot normalise them, so the band's space is not a Hilbert
-space and its operators are not isometries of a norm. The reading is that the gauge frame carries its own causal cone and that the states of
+space and its operators are not isometries of a norm. The interpretation is that the gauge frame carries its own causal cone and that the states of
 the framework live on the plain row and not here.
 
 ## The Sandwich and Its Adjoint
@@ -384,15 +391,17 @@ $(B^{\bullet}_{\tilde P,\tilde Q})^{\dagger}=B^{\bullet}_{\tilde Q^{\natural},\t
 $(\Theta^{\bullet}_{\tilde P})^{\dagger}=\Theta^{\bullet}_{\tilde P}$, so a two-sided operator has as adjoint the same operator with the
 parameters exchanged and each conjugated by ${}^{\natural}$, and every diagonal sandwich is **self-adjoint for $K$**.
 
-*Proof.* The adjoint of a composite reverses the order and conjugates the parameters,
-$(L^{\bullet}_{\tilde P}R^{\bullet}_{\tilde Q})^{\dagger}=(R^{\bullet}_{\tilde Q})^{\dagger}(L^{\bullet}_{\tilde P})^{\dagger}=L^{\bullet}_{\tilde Q^{\natural}}C\,L^{\bullet}_{\tilde P^{\natural}}$;
-inserting $R^{\bullet}_{\tilde P^{\natural}}=C\circ L^{\bullet}_{\tilde P^{\natural}}$ and the involution of $C$ gives
+*Proof.* The adjoint of a composite reverses the order and conjugates the parameters; with
+$(R^{\bullet}_{\tilde Q})^{\dagger}=L^{\bullet}_{\tilde Q^{\natural}}C$ and
+$(L^{\bullet}_{\tilde P})^{\dagger}=L^{\bullet}_{\tilde P^{\natural}}$,
+$(L^{\bullet}_{\tilde P}R^{\bullet}_{\tilde Q})^{\dagger}=L^{\bullet}_{\tilde Q^{\natural}}C\,L^{\bullet}_{\tilde P^{\natural}}$.
+Inserting $R^{\bullet}_{\tilde P^{\natural}}=C\circ L^{\bullet}_{\tilde P^{\natural}}$ and the involution of $C$ gives
 $L^{\bullet}_{\tilde Q^{\natural}}R^{\bullet}_{\tilde P^{\natural}}$, which is the first display. For the diagonal the two parameters of the
 adjoint are $\tilde P^{\natural\natural}=\tilde P$ and $\tilde P^{\natural}$, which are the two parameters of the sandwich, so the operator
 is its own adjoint.
 
 **Read as a physical statement.** A two-sided gauge operation is self-adjoint for the metric whenever its two parameters are the two
-conjugates of one element, and then the transport across the pairing returns the operation itself. The reading is the band's version of the
+conjugates of one element, and then the transport across the pairing returns the operation itself. The interpretation is the band's version of the
 sandwich: the operation that pairs an element with its own natural conjugate is the symmetric two-sided datum of the gauge frame, and its
 symmetry for $K$ is automatic and independent of the parameter, against the plain row where the sandwich is symmetric only on a slice.
 
@@ -404,8 +413,8 @@ slice $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\tilde Q^{-1}}$. These are *The Ind
 Sesqualgebra of Biquaternions* and are cited, not re-proved.
 
 **Read as a physical statement.** The plain sandwich of the same metric is an inner automorphism of the operator algebra on the $J$-unitary
-slice, while the band's own diagonal sandwich is symmetric for every parameter. The reading is that the metric acts on the frame by a
-conjugation of the **projective** parameter, and that the band's sandwich and the plain sandwich are two readings of the same indefinite
+slice, while the band's own diagonal sandwich is symmetric for every parameter. The interpretation is that the metric acts on the frame by a
+conjugation of the **projective** parameter, and that the band's sandwich and the plain sandwich are two interpretations of the same indefinite
 form.
 
 ## A Worked Case
@@ -490,7 +499,7 @@ The article states one cell of the grid of the twelve operator rows, and the bou
 - **The four adjoints are not compared here.** The comparison, block against block, is the crossing reader *The Operators of the Twelve
   Structures: Multiplication, Adjoint and Bracket*, which is not one of the twelve; this article declares only the gauge column.
 
-**What the framework does not claim.** The reading does not reconstruct a state space from the gauge pairing; it states that no module action
+**What the framework does not claim.** The interpretation does not reconstruct a state space from the gauge pairing; it states that no module action
 and no positivity are available, which is the negative content of the band. It does not identify the band's self-adjoint operators with
 observables; it states that the self-adjoint class is the centre and that the observables belong to the positive form. And it does not claim
 that the operator calculus of the twelve rows is one calculus: the gauge row has two families and no operator algebra, and the collapse of
@@ -522,7 +531,7 @@ relation is *The Krein Form as a Product on the Symmetric Quaternionic Sesqualge
 *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*; the sandwich is *The Indefinite Hermitian
 Sandwich on the General Quaternionic Sesqualgebra of Biquaternions*.
 
-**Readings.** That the symmetrisation gives the product a **conjugate-commutativity** and that the two families are the two parities of one
+**Interpretations.** That the symmetrisation gives the product a **conjugate-commutativity** and that the two families are the two parities of one
 pairing and do **not** coincide, the collapse into one family being the commutativity of the symmetric plain row; that the band's adjoint is
 an **indefinite $J$-adjoint that keeps the side and conjugates the parameter by the natural conjugation**, the parameter conjugation
 replacing the plain row's crossing of the sides; that self-adjointness is a condition of **type** (centrality) and not of reality, so a
@@ -543,7 +552,7 @@ which is the operator content of the metric word: a gauge calibration is transpo
 a charge.
 
 The band's form is an **indefinite metric of signature $(1,3)$**, and its diagonal is the metric read on an element: positive on a scale
-direction and negative on a vector direction, with null directions the metric cannot normalise. The reading, and it is the band's own, is
+direction and negative on a vector direction, with null directions the metric cannot normalise. The interpretation, and it is the band's own, is
 that a symmetric gauge product is a **metric-like datum and not a state**: its value carries the scalar part $K$ and the mixed vector part
 side by side and therefore lies, for a general pair, in no one of the remarkable subspaces, the self-pairing $\tilde Q\bullet\tilde Q$ is in
 general not central, and the standard reconstruction of a state space — positivity, a unit, a Jordan structure, a module action — does not
@@ -552,7 +561,7 @@ side, whose invariants are positive numbers.
 
 Read on the type theory, the two classes of the band are the centre and the vector directions: a central calibration is a self-adjoint
 multiplication and a pure vector calibration a skew-adjoint one, and a calibration that mixes a scale with a direction is neither. The
-reading is that the symmetric class of the band is the complex line of central calibrations — not the observables of the positive row — and
+interpretation is that the symmetric class of the band is the complex line of central calibrations — not the observables of the positive row — and
 that the antisymmetric class is the vector subspace, so that the band separates a scale from a direction and labels the mixing element as the
 one that belongs to neither. Read on the rank, the band measures a calibration through its norm and its scale, and the collapse at $N=0$ is
 the algebraic trace of the null directions of the metric. Read on the frame, the operators are a deformation: their scalar part a conformal
@@ -587,16 +596,16 @@ remarkable subspaces.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ | the symmetric quaternionic sesquilinear product, $\mathrm{SQS}$ |
+| $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ | the product, $\mathrm{SQS}$ |
 | $L^{\bullet}_{\tilde A}(\tilde X)=\tilde A\bullet\tilde X$ | the left multiplication, conjugate-linear |
 | $R^{\bullet}_{\tilde A}(\tilde X)=\tilde X\bullet\tilde A$ | the right multiplication, complex-linear |
 | $L^{\bullet}_{\tilde A}=C\circ R^{\bullet}_{\tilde A}$, $C=\bar{\cdot}$ | the conjugate-commutativity of the two families |
 | $L^{\bullet}_{e_0}={}^{*}$, $R^{\bullet}_{e_0}={}^{\natural}$ | the two operators of the unit |
 | $L^{\bullet}_{\lambda e_0}=\lambda\,{}^{*}$, $R^{\bullet}_{\lambda e_0}=\overline{\lambda}\,{}^{\natural}$ | the parity in the parameter |
 | $\tilde A\bullet\tilde X=K(\tilde A,\tilde X)e_0-A_0\overline{\mathbf X}-\overline{X_0}\mathbf A$ | the value of the product |
-| $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, $\varepsilon=(1,-1,-1,-1)$ | the Krein form, signature $(1,3)$; the form of the band |
+| $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, $\varepsilon=(1,-1,-1,-1)$ | the Krein form, signature $(1,3)$ |
 | $J={}^{\natural}$, $T^{\dagger}=JT^{*}J$ | the fundamental symmetry and the $J$-adjoint |
-| $K(L^{\bullet}_{\tilde A}\tilde X,\tilde Y)=\overline{K(\tilde X,L^{\bullet}_{\tilde A^{\natural}}\tilde Y)}$ | the adjoint of the left multiplication |
+| $K(L^{\bullet}_{\tilde A}\tilde X,\tilde Y)=\overline{K(\tilde X,L^{\bullet}_{\tilde A^{\natural}}\tilde Y)}$ | the left-adjoint rule |
 | $(R^{\bullet}_{\tilde A})^{\dagger}=L^{\bullet}_{\tilde A^{\natural}}C$ | the adjoint of the right multiplication |
 | self-adjoint $\iff\tilde A\in\mathbb{C}e_0$; skew-adjoint $\iff\tilde A\in\mathrm{Vect}(\mathbb{B})$ | the type criteria |
 | $L^{\bullet}_{ie_0}=i\,{}^{*}$ self-adjoint, parameter non-real | reality is not automatic |
@@ -605,7 +614,8 @@ remarkable subspaces.
 | no left multiplication preserves $K$; $R^{\bullet}_{\lambda e_0}$ preserves $K\iff\lvert\lambda\rvert=1$ | the form-preserving operators |
 | multiplicative $L^{\bullet}_{\tilde A}\iff\tilde A\in\{0,e_0\}$ | the multiplicative one-sided operators |
 | $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ | the structure group of the product |
-| $(B^{\bullet}_{\tilde P,\tilde Q})^{\dagger}=B^{\bullet}_{\tilde Q^{\natural},\tilde P^{\natural}}$, $(\Theta^{\bullet}_{\tilde P})^{\dagger}=\Theta^{\bullet}_{\tilde P}$ | the two-sided adjoint and the self-adjoint sandwich |
+| $(B^{\bullet}_{\tilde P,\tilde Q})^{\dagger}=B^{\bullet}_{\tilde Q^{\natural},\tilde P^{\natural}}$ | the two-sided adjoint |
+| $(\Theta^{\bullet}_{\tilde P})^{\dagger}=\Theta^{\bullet}_{\tilde P}$ | the self-adjoint diagonal sandwich |
 | $\tilde D=e_0+ie_1$, $N=0$, rank $6$ | the zero divisor of zero norm |
 
 ## Further Reading

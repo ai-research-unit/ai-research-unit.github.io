@@ -236,7 +236,7 @@ and the family is the set of the rank-one Hermitian idempotents of $M_2(\mathbb{
 
 **Remark.** The matrix image is the standard rank-one projection of a two-dimensional space, and the parametrisation by the real vectors $\hat\mu$ with $(\hat\mu,\hat\mu)=1$ is the parametrisation of those projections by the traceless Hermitian involutions. The standard pair is $\mathsf{M}_2(\tilde\Pi_1)=E_{11}$ and $\mathsf{M}_2(\tilde\Pi_2)=E_{22}$.
 
-## The Operator Reading
+## The Operator Interpretation
 
 The idempotents of the block are a class of **elements**, and they must not be confused with the projectors of the block, which are a class of **operators**. The distinction is the one the specificities article states: an element idempotent for the multiplication gives a projector under its right multiplication, and the converse fails, because the right projectors are the idempotents of the **plain** product; on the left the only projector is the zero operator. The two classes are different.
 

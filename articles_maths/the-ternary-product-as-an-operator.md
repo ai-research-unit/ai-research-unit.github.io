@@ -38,7 +38,7 @@ $$
 
 **Remark.** Writing the pair map as a map $A\times A^{\varsigma}\to\operatorname{End}_R(A)$ makes it $R$-bilinear, exactly as it makes the product $A\times A^{\varsigma}\to A$ bilinear; the conjugate module of *The Sesquilinear Product* is the bookkeeping that removes the asymmetry of the parities, and the second parameter is the one that meets the involution.
 
-### The Three Readings
+### The Three Interpretations
 
 The ternary product has three slots and the variable may be put in any of them. Each reading is an operator of the earlier entries of the group.
 

@@ -197,7 +197,7 @@ $$
 
 The sign factor $\sigma = -1$ acts by the matrix $[-1]$, which is the **reflection** of the line through the origin; the sign factor $\sigma = +1$ acts by the identity $[1]$. The two matrices $\pm I$ are exactly the orthogonal group $O(1)$ of the line, and the norm is their determinant squared: the reflection $[-1]$ has $\det[-1] = -1$ and $N(-1) = 1$. The group $O(1)$ is the set of $1\times1$ matrices preserving $N$, and it is the sign group; its identity component is $\{+1\} = SO(1)$, the special orthogonal group, and the quotient $O(1)/SO(1) \cong \{\pm1\}$ is the same two-element group.
 
-### The Reading of Each Factor
+### The Interpretation of Each Factor
 
 | factor | matrix | determinant | isometry type |
 |---|---|---|---|

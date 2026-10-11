@@ -287,7 +287,7 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 
 **Transcribed from standard physics.** The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $L = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.
 
-**Interpretation.** The reading of $\mathbb{M}_-$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles *Introduction to the Biquaternion Universe* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector reading.
+**Interpretation.** The interpretation of $\mathbb{M}_-$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles *Introduction to the Biquaternion Universe* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector interpretation.
 
 ## Open Questions
 

@@ -104,7 +104,7 @@ $$
 $$
 so the diagonal of the realified Hermitian form is the square of the real norm of the element, and the form the block carries is the positive definite one of the four forms of the corpus.
 
-## What the Reading Leaves Untouched
+## What the Interpretation Leaves Untouched
 
 Since $i$ lies in $\mathbb{B}$, an additive subgroup closed under left multiplication by every element is closed under multiplication by $i$, and the ideals, the idempotents, the zero divisors, the nilpotents and the units are the same in the two readings. The statement concerns the two readings of the block and not the block against the ring: the classes are cut out of the ring's for the product $\star$. The zero-divisor set of $\star$ is the cone of the norm and the common set of the four general products, and the invertibility criterion is the non-vanishing of $N(\tilde P)=\tilde P\tilde P^{\natural}$ (*Zero Divisors of the General Plain Sesqualgebra*, *Norm and Invertibility in the General Plain Sesqualgebra*); the idempotents of the block are the Hermitian ones, and its nilpotents are those of the ring with the index moved from two to three. The right unit, the right ideals and the multiplicative monoid are the plain ones read at the conjugated index (*The Specificities of the General Plain Sesqualgebra*).
 

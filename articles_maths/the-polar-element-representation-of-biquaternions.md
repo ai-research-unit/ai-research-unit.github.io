@@ -152,7 +152,7 @@ $$
 \langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$
 
-In the matrix model it is the determinant, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \det\Phi(\tilde{Q})$, so $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ is exactly the condition that $\tilde{Q}$ be a zero divisor, and the set $\{N = 0\}$ is the algebra's null cone.
+In the matrix model it is the determinant, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, so $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ is exactly the condition that $\tilde{Q}$ be a zero divisor, and the set $\{N = 0\}$ is the algebra's null cone.
 
 ### The Square Root and the Branch
 
@@ -214,7 +214,7 @@ $$
 S = U U^{*} .
 $$
 
-It is Hermitian, since $S^{*} = (UU^{*})^{*} = UU^{*} = S$, and it is positive definite, because in the matrix model $\Phi(S) = \Phi(U)\Phi(U)^\dagger$ is a positive definite Hermitian matrix whenever $\Phi(U)$ is invertible. Its biquaternion norm is
+It is Hermitian, since $S^{*} = (UU^{*})^{*} = UU^{*} = S$, and it is positive definite, because in the matrix model $\mathsf{M}_2(S) = \mathsf{M}_2(U)\mathsf{M}_2(U)^\dagger$ is a positive definite Hermitian matrix whenever $\mathsf{M}_2(U)$ is invertible. Its biquaternion norm is
 
 $$
 \langle S,S\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U^{*},U^{*}\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U,U\rangle_{\natural}^{*} = 1 ,
@@ -238,7 +238,7 @@ $$
 S = \sigma\,e_0 + i\mathbf{w}, \qquad \sigma \in \mathbb{R}, \qquad \mathbf{w} \in \mathbb{R}^3 ,
 $$
 
-with real scalar part $\sigma$ and purely imaginary vector part $i\mathbf{w}$. Then $\sigma = \tfrac{1}{2}\operatorname{tr}\Phi(S) \ge 1$, since the two eigenvalues of a positive definite matrix of determinant one and trace $2\sigma$ are positive and multiply to one; and
+with real scalar part $\sigma$ and purely imaginary vector part $i\mathbf{w}$. Then $\sigma = \tfrac{1}{2}\operatorname{tr}\mathsf{M}_2(S) \ge 1$, since the two eigenvalues of a positive definite matrix of determinant one and trace $2\sigma$ are positive and multiply to one; and
 
 $$
 B = \sqrt{\frac{1+\sigma}{2}}\;e_0 + \frac{i\,\mathbf{w}}{\sqrt{2(1+\sigma)}} .
@@ -335,7 +335,7 @@ Suppose $\tilde{Q} = r e^{i\alpha}B\hat{q} = r'e^{i\alpha'}B'\hat{q}'$ with both
 
 ### The Domain and the Light Cone
 
-The theorem is stated on the complement of the null cone, $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\}$, and that is exactly its domain: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor, the matrix $\Phi(\tilde{Q})$ is singular, and no factorisation of the stated shape exists, since the product of the four factors has norm $r^2\cdot1\cdot1\cdot1 = r^2 > 0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The null cone is the algebra's light cone, and it is treated in the companion article on biquaternion zero divisors. Among the decompositions of this series it is the mildest possible failure: a single cone, of real codimension two in the eight-dimensional algebra, whereas the partial forms of the companion article fail on larger sets.
+The theorem is stated on the complement of the null cone, $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\}$, and that is exactly its domain: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor, the matrix $\mathsf{M}_2(\tilde{Q})$ is singular, and no factorisation of the stated shape exists, since the product of the four factors has norm $r^2\cdot1\cdot1\cdot1 = r^2 > 0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The null cone is the algebra's light cone, and it is treated in the companion article on biquaternion zero divisors. Among the decompositions of this series it is the mildest possible failure: a single cone, of real codimension two in the eight-dimensional algebra, whereas the partial forms of the companion article fail on larger sets.
 
 **The condition of existence, in one line.** The polar representation of $\tilde{Q}$ exists if and only if
 
@@ -465,7 +465,7 @@ The example is the reason the representation is a strict refinement of the physi
 
 ### The Scale
 
-The scale is a positive real number, the only factor that is both central and non-compact on the positive side. It multiplies the element rigidly: replacing $\tilde{Q}$ by $\lambda\tilde{Q}$ with $\lambda>0$ multiplies $r$ by $\lambda$ and leaves the other three factors unchanged. It is the absolute value of the determinant of the matrix image, raised to the power $\tfrac12$, since $|\det\Phi(\tilde{Q})| = |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}| = r^2$.
+The scale is a positive real number, the only factor that is both central and non-compact on the positive side. It multiplies the element rigidly: replacing $\tilde{Q}$ by $\lambda\tilde{Q}$ with $\lambda>0$ multiplies $r$ by $\lambda$ and leaves the other three factors unchanged. It is the absolute value of the determinant of the matrix image, raised to the power $\tfrac12$, since $|\det\mathsf{M}_2(\tilde{Q})| = |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}| = r^2$.
 
 ### The Central Phase
 
@@ -507,9 +507,9 @@ because the Hermitian conjugates of the factors are $\hat{q}^{*}=\hat{q}^{-1}$, 
 A non-central factor occurs once on each side, so its parameter is deposited twice; a central factor occurs on both sides and cancels. The exact diagonal case is
 
 $$
-\Phi(B)=\operatorname{diag}\bigl(e^{\psi/2},e^{-\psi/2}\bigr)
+\mathsf{M}_2(B)=\operatorname{diag}\bigl(e^{\psi/2},e^{-\psi/2}\bigr)
 \quad\Longrightarrow\quad
-\Phi(B)\,\Phi(\tilde T)\,\Phi(B)=\operatorname{diag}\bigl(e^{\psi},e^{-\psi}\bigr)\Phi(\tilde T),
+\mathsf{M}_2(B)\,\mathsf{M}_2(\tilde T)\,\mathsf{M}_2(B)=\operatorname{diag}\bigl(e^{\psi},e^{-\psi}\bigr)\mathsf{M}_2(\tilde T),
 $$
 
 in which the operator stores the half-rapidity and produces the rapidity. The same doubling holds for the rotation angle, and it is the geometric origin of the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ read in *Biquaternion Rotations and Lorentz Transformations* as the two-to-one rotor map.
@@ -542,7 +542,7 @@ If all four coefficients of $\tilde{Q}$ are real then $\langle\tilde{Q},\tilde{Q
 
 ### The Null Elements
 
-If $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor and no decomposition exists, as shown in the section on the domain. The failure is not uniform in the structure of the element: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ the matrix $\Phi(\tilde{Q})$ has rank one, its columns span a minimal left ideal, and the element is a multiple of an idempotent; the companion article on biquaternion zero divisors treats the classification. What is relevant here is only that no product of the four factors can reproduce it, because the biquaternion norm of such a product is a positive real.
+If $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor and no decomposition exists, as shown in the section on the domain. The failure is not uniform in the structure of the element: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ the matrix $\mathsf{M}_2(\tilde{Q})$ has rank one, its columns span a minimal left ideal, and the element is a multiple of an idempotent; the companion article on biquaternion zero divisors treats the classification. What is relevant here is only that no product of the four factors can reproduce it, because the biquaternion norm of such a product is a positive real.
 
 ## The Commutative Four-Dimensional Alternative
 
@@ -598,7 +598,7 @@ in which $B$ is the Hermitian positive unit-norm boost and $\hat{q}$ the unit re
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $Q_\mu\in\mathbb{C}$ |
 | $i$ | the central scalar imaginary |
-| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | the biquaternion norm, complex and central, equal to $\det\Phi(\tilde{Q})$ |
+| $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | the biquaternion norm, complex and central, equal to $\det\mathsf{M}_2(\tilde{Q})$ |
 | $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ | the complex modulus, the principal square root |
 | $r = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|}$ | the scale, a positive real |
 | $\alpha = \tfrac{1}{2}\arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ | the phase angle, in $(-\pi/2,\pi/2]$ |

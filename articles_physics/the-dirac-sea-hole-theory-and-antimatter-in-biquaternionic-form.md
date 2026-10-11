@@ -6,14 +6,14 @@ In 1928 Dirac found that his equation has solutions of negative energy as well a
 
 This article is the historical and conceptual companion to the framework's technical treatment of the negative-frequency branch, which is *Canonical Quantization of the Biquaternion Dirac Field*. That article already contains the exact statement of the modern resolution in the framework's variables: it expands the field in positive- and negative-frequency modes, notes that *if the modes commuted the energy would be unbounded below*, and finds that the **anticommutator** renders the negative-frequency modes as positive-energy antiparticles. The present article says where that statement came from, why Dirac's original version had to be abandoned, and what the framework can and cannot say about the sea.
 
-Two readings of the negative branch are therefore distinguished throughout.
+Two interpretations of the negative branch are therefore distinguished throughout.
 
-- The **hole reading**, in which the vacuum is a filled sea and a hole is the absence of a negative-energy background electron. It is the historical reading.
-- The **reinterpretation**, in which the vacuum is empty and the negative-frequency modes are the creation operators of antiparticles. It is the modern reading, and it is the one the framework's canonical quantization already uses.
+- The **hole interpretation**, in which the vacuum is a filled sea and a hole is the absence of a negative-energy background electron. It is the historical interpretation.
+- The **reinterpretation**, in which the vacuum is empty and the negative-frequency modes are the creation operators of antiparticles. It is the modern interpretation, and it is the one the framework's canonical quantization already uses.
 
 The article's conclusion is that the biquaternion framework is naturally on the reinterpretation side. Its one-particle structure has the two branches and the charge-conjugation real structure that relabels them, but it has no sea; the sea appears only in the second-quantized extension, where it is removed by normal ordering like any other vacuum constant. The framework's added question — whether its algebra gives the vacuum constant a distinguished meaning — is open and is stated as such.
 
-The article is organised as follows. The next section states the negative-energy problem and the pressure from Klein's paradox. The third gives Dirac's hole theory and the prediction of the positron. The fourth lists the objections that killed the filled sea as a fundamental picture. The fifth gives the modern reinterpretation and the second-quantized vacuum. The sixth treats vacuum polarization, where the sea's response became measurable. The seventh treats the Dirac sea in condensed matter, where a filled sea is a physical object. The eighth is the biquaternion reading. The closing sections are the open questions, the summary, the notation table and the literature.
+The article is organised as follows. The next section states the negative-energy problem and the pressure from Klein's paradox. The third gives Dirac's hole theory and the prediction of the positron. The fourth lists the objections that killed the filled sea as a fundamental picture. The fifth gives the modern reinterpretation and the second-quantized vacuum. The sixth treats vacuum polarization, where the sea's response became measurable. The seventh treats the Dirac sea in condensed matter, where a filled sea is a physical object. The eighth is the biquaternion interpretation. The closing sections are the open questions, the summary, the notation table and the literature.
 
 ## The Negative-Energy Problem
 
@@ -121,7 +121,7 @@ This is the anti-linear, involutive conjugation that the *Antilinear Structure a
 
 ### The framework-consistent reading
 
-Putting the pieces together, the framework supports the following reading and no more:
+Putting the pieces together, the framework supports the following interpretation and no more:
 
 - the two mass-shell branches are the framework's positive- and negative-frequency solutions;
 - charge conjugation is the real structure $\mathcal C$ on the doubled module, whose existence is established in the corpus;
@@ -133,7 +133,7 @@ Putting the pieces together, the framework supports the following reading and no
 
 1. **The vacuum constant.** Does the biquaternion structure single out a regularization of $E_0$, or give it a geometric meaning? The canonical-quantization article says no claim is made; this article records the same and adds that the Dirac sea does not supply an alternative.
 
-2. **The vacuum state's algebra.** The corpus treats the vacuum as a minimal idempotent in *The Biquaternion Vacuum as a Minimal Idempotent* and as the Fock vacuum in the canonical quantization. Are these two objects the same, and does the idempotent reading survive second quantization?
+2. **The vacuum state's algebra.** The corpus treats the vacuum as a minimal idempotent in *The Biquaternion Vacuum as a Minimal Idempotent* and as the Fock vacuum in the canonical quantization. Are these two objects the same, and does the idempotent interpretation survive second quantization?
 
 3. **$\mathcal C$ versus hole relabelling.** The framework's $\mathcal C$ is a real structure on the doubled module; the hole relabelling is a map of occupation numbers. Are they literally the same map on the Fock space, or two constructions that agree on one-particle states?
 

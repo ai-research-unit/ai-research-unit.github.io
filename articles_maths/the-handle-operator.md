@@ -85,7 +85,7 @@ c_k \;\geq\; b_k(W) \quad \text{and} \quad c_k - c_{k-1} + c_{k-2} - \cdots \pm 
 $$
 for every $k$, since the handle decomposition is a CW structure and its chain complex computes the homology; the inequalities are the **Morse inequalities** of the topological decomposition.
 
-## The Morse-Theoretic Reading (Forward Reference)
+## The Morse-Theoretic Interpretation (Forward Reference)
 
 The correspondence between the handle operator and the critical points of a function is what makes the handle decomposition computable, and it belongs to the differential topology of Part III.
 

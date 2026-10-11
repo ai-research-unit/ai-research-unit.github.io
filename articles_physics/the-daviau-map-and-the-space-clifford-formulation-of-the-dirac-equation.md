@@ -27,10 +27,10 @@ $$
 where $e_0$ is the unit and the name is chosen for the dictionary below. As a complex algebra $\mathrm{Cl}_{3,0}\otimes_\mathbb{R}\mathbb{C}\cong M_2(\mathbb{C})$ is the **Pauli algebra** $\mathcal P$. Daviau uses the Pauli units $\sigma_1,\sigma_2,\sigma_3$ with $\sigma_k^2 = \mathbb 1$ and the conventional multiplication table; they are the matrix images of the generators,
 
 $$
-\sigma_k = \Phi(ie_k),
+\sigma_k = \mathsf{M}_2(ie_k),
 $$
 
-with $\Phi$ the corpus's matrix representation of the biquaternion algebra (*Conventions in the Biquaternion Universe*). The corpus's images are $\Phi(e_1) = -i\sigma_1$, $\Phi(e_2) = -i\sigma_2$, $\Phi(e_3) = -i\sigma_3$, so the generator $ie_k$ of the positive-definite space algebra is the image of the **Hermitian** unit $ie_k$ of the biquaternion algebra, and the space Clifford vector squares to $+e_0$ while the quaternion unit $e_k$ squares to $-e_0$. This is the one dictionary line that matters:
+with $\mathsf{M}_2$ the corpus's matrix representation of the biquaternion algebra (*Conventions in the Biquaternion Universe*). The corpus's images are $\mathsf{M}_2(e_1) = -i\sigma_1$, $\mathsf{M}_2(e_2) = -i\sigma_2$, $\mathsf{M}_2(e_3) = -i\sigma_3$, so the generator $ie_k$ of the positive-definite space algebra is the image of the **Hermitian** unit $ie_k$ of the biquaternion algebra, and the space Clifford vector squares to $+e_0$ while the quaternion unit $e_k$ squares to $-e_0$. This is the one dictionary line that matters:
 
 | Space Clifford $\mathrm{Cl}_{3,0}$ | Biquaternion algebra $\mathbb B$ | Matrix image |
 |---|---|---|
@@ -39,7 +39,7 @@ with $\Phi$ the corpus's matrix representation of the biquaternion algebra (*Con
 | $i = \sigma_1\sigma_2\sigma_3$ | $i$, the central scalar imaginary | $iI_2$ |
 | $\mathbb 1$ | $e_0$ | $I_2$ |
 
-The pseudoscalar of the space algebra is $\sigma_1\sigma_2\sigma_3$, and it is **central** in $\mathcal P\cong M_2(\mathbb{C})$: it commutes with every element. In the biquaternion column that element is the central scalar imaginary $i$. So the two algebras carry the same centre, and the complexification of the space algebra is not extra structure — it is the biquaternion algebra itself. Because $\Phi$ is a $\mathbb C$-linear isomorphism of algebras, every statement of this article can be read in either column.
+The pseudoscalar of the space algebra is $\sigma_1\sigma_2\sigma_3$, and it is **central** in $\mathcal P\cong M_2(\mathbb{C})$: it commutes with every element. In the biquaternion column that element is the central scalar imaginary $i$. So the two algebras carry the same centre, and the complexification of the space algebra is not extra structure — it is the biquaternion algebra itself. Because $\mathsf{M}_2$ is a $\mathbb C$-linear isomorphism of algebras, every statement of this article can be read in either column.
 
 Two elementary consequences are used repeatedly. First, the conjugation classes match the sector split: the Hermitian units $ie_k$ (the space-Clifford vectors) have image $\sigma_k$, and the quaternion units $e_k$ (the bivectors) have image $-i\sigma_k$. Second, the volume element of the space algebra, $\sigma_1\sigma_2\sigma_3\mapsto i$, is the framework's central imaginary unit, exactly as the pseudoscalar of the spacetime algebra is in the companion article.
 
@@ -110,12 +110,12 @@ The sign pattern is exactly `\bar\varphi`'s pattern in disguise. The star flips 
 **Theorem (the star is the corpus's complex conjugation).** Under the identification $\mathcal P\cong\mathbb B$ of the first section,
 
 $$
-\Phi(\tilde Q^{*})=\sigma_2\,\overline{\Phi(\tilde Q)}\,\sigma_2 \qquad\text{for all } \tilde Q\in\mathbb B ,
+\mathsf{M}_2(\tilde Q^{*})=\sigma_2\,\overline{\mathsf{M}_2(\tilde Q)}\,\sigma_2 \qquad\text{for all } \tilde Q\in\mathbb B ,
 $$
 
 where $\bar{\cdot}$ on the left is the corpus's complex conjugation, the involution that fixes the real-quaternion subspace $\mathbb H_\mathbb{B}$ and negates $i\mathbb H_\mathbb{B}$ (*Conventions in the Biquaternion Universe*, *Comparison of the Remarkable Subspaces*).
 
-*Proof.* On the basis $e_0,e_1,e_2,e_3$ of $\mathbb B$ the complex conjugation fixes every $e_\mu$ and conjugates the coefficients, while the star fixes $\mathbb 1$ and $i\sigma_k=\Phi(ie_k)$ and negates $\sigma_k=\Phi(ie_k)$ and $i=\Phi(i e_0)$. Since $\Phi(i e_0)=iI_2$ and $\Phi(ie_k)=\sigma_k$, the two assignments agree on the eight real basis elements $\{e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3\}$: both act as $+1$ on $e_\mu$ and as $-1$ on $ie_\mu$. A real-linear map is determined by its values on a real basis, so the two coincide. Equivalently, in the corpus's own matrix formula $\tilde Q^{*}\mapsto\varepsilon\,\overline{\Phi(\tilde Q)}\,\varepsilon^{-1}$ with $\varepsilon=\Phi(-e_2)=i\sigma_2$, and $\varepsilon\,\overline{M}\,\varepsilon^{-1}=\sigma_2\bar M\sigma_2$. The identity was verified on general elements.
+*Proof.* On the basis $e_0,e_1,e_2,e_3$ of $\mathbb B$ the complex conjugation fixes every $e_\mu$ and conjugates the coefficients, while the star fixes $\mathbb 1$ and $i\sigma_k=\mathsf{M}_2(ie_k)$ and negates $\sigma_k=\mathsf{M}_2(ie_k)$ and $i=\mathsf{M}_2(i e_0)$. Since $\mathsf{M}_2(i e_0)=iI_2$ and $\mathsf{M}_2(ie_k)=\sigma_k$, the two assignments agree on the eight real basis elements $\{e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3\}$: both act as $+1$ on $e_\mu$ and as $-1$ on $ie_\mu$. A real-linear map is determined by its values on a real basis, so the two coincide. Equivalently, in the corpus's own matrix formula $\tilde Q^{*}\mapsto\varepsilon\,\overline{\mathsf{M}_2(\tilde Q)}\,\varepsilon^{-1}$ with $\varepsilon=\mathsf{M}_2(-e_2)=i\sigma_2$, and $\varepsilon\,\overline{M}\,\varepsilon^{-1}=\sigma_2\bar M\sigma_2$. The identity was verified on general elements.
 
 This is the article's central algebraic result. **Daviau's star conjugation is not a new operation on the biquaternion algebra; it is the corpus's complex conjugation $\bar{\cdot}$**, seen through the identification of the space Clifford algebra with $\mathbb B$. The corpus already uses $\bar{\cdot}$ as the involution that cuts the algebra into the real sector $\mathbb H_\mathbb B$ and the imaginary sector $i\mathbb H_\mathbb B$, and it already records the warning that entrywise conjugation of a matrix is not the image of any involution of the algebra (*Conventions in the Biquaternion Universe*). The star is the involution that **is** the image, and the factor $\sigma_2$ on each side is exactly the correction the warning demands.
 
@@ -149,11 +149,11 @@ $$
 
 where $\mathfrak D = \partial_0 e_0 + i e_2\partial_1 + i e_3\partial_2 + i e_1\partial_3$ and $\tilde A = A_0 e_0 + A_1 ie_2 + A_2 ie_3 + A_3 ie_1$ are the corpus's elements whose matrix images are $\nabla$ and $A$. Every term is a biquaternion equation for a general biquaternion $\varphi$, with one left multiplication, one right multiplication and one conjugate-linear term.
 
-*Proof.* The dictionary of the first section gives $\Phi(\mathfrak D)=\nabla$, $\Phi(\tilde A)=A$, $\Phi(-e_1)=i\sigma_1$ and $\Phi(\varphi^{*})=\sigma_2\bar\varphi\sigma_2$ by the star theorem. Applying $\Phi$ to the corpus form reproduces the Daviau form term by term.
+*Proof.* The dictionary of the first section gives $\mathsf{M}_2(\mathfrak D)=\nabla$, $\mathsf{M}_2(\tilde A)=A$, $\mathsf{M}_2(-e_1)=i\sigma_1$ and $\mathsf{M}_2(\varphi^{*})=\sigma_2\bar\varphi\sigma_2$ by the star theorem. Applying $\mathsf{M}_2$ to the corpus form reproduces the Daviau form term by term.
 
-**What the terms are.** The gradient $\mathfrak D$ has the corpus's Hermitian units on the space derivatives and the unit on the time derivative; under the space-Clifford reading these are the three vectors, in the cyclic order $ie_2,ie_3,ie_1$ attached to $\partial_1,\partial_2,\partial_3$. The right factor $-e_1$ is a single fixed element of the algebra multiplying every solution on the right — the structural feature the corpus meets again, in a different guise, in the spacetime-algebra formulation, where the fixed right multipliers are $I\sigma_3$ and $\gamma_0$. The mass term $m\varphi^{*}$ is **conjugate-linear**, because the star is: it is the antilinear structure of the corpus's *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, applied to the general-element spinor rather than to the chiral pair. The coupling $q\tilde A\varphi$ is the standard left multiplication by the connection, exactly the minimal coupling of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.
+**What the terms are.** The gradient $\mathfrak D$ has the corpus's Hermitian units on the space derivatives and the unit on the time derivative; under the space-Clifford interpretation these are the three vectors, in the cyclic order $ie_2,ie_3,ie_1$ attached to $\partial_1,\partial_2,\partial_3$. The right factor $-e_1$ is a single fixed element of the algebra multiplying every solution on the right — the structural feature the corpus meets again, in a different guise, in the spacetime-algebra formulation, where the fixed right multipliers are $I\sigma_3$ and $\gamma_0$. The mass term $m\varphi^{*}$ is **conjugate-linear**, because the star is: it is the antilinear structure of the corpus's *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, applied to the general-element spinor rather than to the chiral pair. The coupling $q\tilde A\varphi$ is the standard left multiplication by the connection, exactly the minimal coupling of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.
 
-**Remark (right multiplication and the Clifford grading).** The right factor $i\sigma_1=-e_1$ is, in the space Clifford algebra, the product of the pseudoscalar with a vector: it is a **Clifford-odd** element of $\mathrm{Cl}_{3,0}$. In the biquaternion reading $e_1$ is a quaternion unit, a bivector of $\mathrm{Cl}_{1,3}$, hence **even**. The two gradings available on the same algebra (the space grading of $\mathrm{Cl}_{3,0}$ and the spacetime grading of $\mathrm{Cl}_{1,3}$) disagree on $e_1$, and the corpus keeps them apart deliberately (*The Realification of the General Plain Algebra*). The article states the right factor in whichever grading is in use at the point of use and does not assert the two agree.
+**Remark (right multiplication and the Clifford grading).** The right factor $i\sigma_1=-e_1$ is, in the space Clifford algebra, the product of the pseudoscalar with a vector: it is a **Clifford-odd** element of $\mathrm{Cl}_{3,0}$. In the biquaternion interpretation $e_1$ is a quaternion unit, a bivector of $\mathrm{Cl}_{1,3}$, hence **even**. The two gradings available on the same algebra (the space grading of $\mathrm{Cl}_{3,0}$ and the spacetime grading of $\mathrm{Cl}_{1,3}$) disagree on $e_1$, and the corpus keeps them apart deliberately (*The Realification of the General Plain Algebra*). The article states the right factor in whichever grading is in use at the point of use and does not assert the two agree.
 
 ## The Equivalence with the Spacetime Algebra Formulation
 
@@ -175,13 +175,13 @@ and it preserves the star, $z(\varphi^{*})=z(\varphi)^{*}$. Applying $z^{-1}$ to
 
 *Proof sketch (transcription of Fauser's argument).* The two equations are written term by term, the $z$-images of the four basis elements are matched with the Daviau gradient and potential, and the identity $z^{-1}(\Psi)=\varphi$ is used to identify the spinors. The mass signs are opposite because the two conventions place the mass on opposite sides of the equation. The star is the same conjugation in both, by the construction of $z$ so that it commutes with the conjugation. The three operations are read off from the two displayed equations.
 
-**What the equivalence says and does not say.** It says that the space Clifford formulation is not a different theory from the spacetime-algebra formulation but the same theory written in a smaller algebra with a permuted space basis and the opposite mass sign. The dictionary between the corpus's own conventions and either formulation is the one given in the first section; the equivalence then makes the three corpus formulations — matrix, spacetime algebra, space Clifford — one formulation read three ways. It does not say which reading is physical, and it supplies no prediction, in keeping with the status of every equivalent rewriting in this series.
+**What the equivalence says and does not say.** It says that the space Clifford formulation is not a different theory from the spacetime-algebra formulation but the same theory written in a smaller algebra with a permuted space basis and the opposite mass sign. The dictionary between the corpus's own conventions and either formulation is the one given in the first section; the equivalence then makes the three corpus formulations — matrix, spacetime algebra, space Clifford — one formulation read three ways. It does not say which interpretation is physical, and it supplies no prediction, in keeping with the status of every equivalent rewriting in this series.
 
 **Remark (the significance of the star).** That the two formulations are related by the star is the point of the equivalence being nontrivial. Were the star the identity, the two equations would differ only by a basis relabelling and a mass sign, and the "equivalence" would be trivial. The star is a genuine automorphism of the algebra — the corpus's complex conjugation, in its sector-cutting role — and the equivalence asserts that this automorphism, together with a cyclic relabelling, is the whole of the difference between the two pictures. In the corpus's language, the equivalence is the statement that the complex conjugation $\bar{\cdot}$ is the operation that converts the spacetime-algebra equation into the space Clifford equation.
 
 ## The Right Action and the Bi-module Reading
 
-Daviau's equation multiplies the spinor on the left (the gradient and the coupling) and on the right (the factor $i\sigma_1$) at the same time. Fauser's reading of this is that the algebra acts on itself as a **bi-module**, with the left and right actions being of the same algebraic type. The corpus develops this reading in *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, where the two actions are exhibited as the two commuting regular representations inside the endomorphism algebra, and where it is shown that the enveloping algebra $\mathbb B\otimes_\mathbb{C}\mathbb B^{\mathrm{op}}$ is the natural home of the pair.
+Daviau's equation multiplies the spinor on the left (the gradient and the coupling) and on the right (the factor $i\sigma_1$) at the same time. Fauser's interpretation of this is that the algebra acts on itself as a **bi-module**, with the left and right actions being of the same algebraic type. The corpus develops this interpretation in *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, where the two actions are exhibited as the two commuting regular representations inside the endomorphism algebra, and where it is shown that the enveloping algebra $\mathbb B\otimes_\mathbb{C}\mathbb B^{\mathrm{op}}$ is the natural home of the pair.
 
 The physical point the corpus records is that the left-versus-right question of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* is not, at the algebraic level, a choice between two theories. Daviau's equation uses **both** actions at once, and it is a Dirac equation. What the bi-module structure says is that both actions are available and that they commute; what it does not say is which action carries which physical degree of freedom. Fauser's further caution, recorded in the paper, is that attempts to identify the right multiplication with the **iso-spin** degree of freedom are not warranted by the algebra alone. The corpus records the caution and does not pursue it here.
 
@@ -193,7 +193,7 @@ The physical point the corpus records is that the left-versus-right question of 
 
 3. **The four Parra options.** Daviau's equation is one of four inequivalent forms of the real Dirac equation recorded by Parra. Which option is it, and how do the other three read in the corpus's conventions? This is the subject of the companion article *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*.
 
-4. **The star and the corpus's real structures.** The star is the corpus's complex conjugation $\bar{\cdot}$. The corpus's other antilinear structure is $\flat=-{}^{*}$, the algebra's real structure, used for the retired antilinear mass. Are the two related by the space Clifford identification, and does the Daviau mass term $m\varphi^{*}$ have a reading as a pairing with a conjugate in the sense of *Antilinear Structure and the Two Kinds of Mass*?
+4. **The star and the corpus's real structures.** The star is the corpus's complex conjugation $\bar{\cdot}$. The corpus's other antilinear structure is $\flat=-{}^{*}$, the algebra's real structure, used for the retired antilinear mass. Are the two related by the space Clifford identification, and does the Daviau mass term $m\varphi^{*}$ have an interpretation as a pairing with a conjugate in the sense of *Antilinear Structure and the Two Kinds of Mass*?
 
 5. **Empirical contact.** None is claimed. The formulation is an equivalent rewriting, and the question, as everywhere, is whether it makes any structural fact of the framework easier to see, not whether it predicts anything new.
 
@@ -207,7 +207,7 @@ The space Clifford formulation writes the Dirac equation as a single equation fo
 |---|---|
 | $\mathrm{Cl}_{3,0}$ | Space Clifford algebra, generated by $ie_k$ with $(ie_k)^2=e_0$ |
 | $\mathcal P\cong M_2(\mathbb C)$ | Pauli algebra, the complexification of $\mathrm{Cl}_{3,0}$ |
-| $\sigma_k$ | Pauli units, $\sigma_k=\Phi(ie_k)$, $\sigma_k^2=\mathbb 1$ |
+| $\sigma_k$ | Pauli units, $\sigma_k=\mathsf{M}_2(ie_k)$, $\sigma_k^2=\mathbb 1$ |
 | $i=\sigma_1\sigma_2\sigma_3$ | Pseudoscalar; central; the corpus's central imaginary unit |
 | $\varphi$ | Daviau spinor, a general element of $\mathcal P$ |
 | $a,\dots,h$ | The eight real parameters of $\varphi$ |
@@ -217,12 +217,12 @@ The space Clifford formulation writes the Dirac equation as a single equation fo
 | $\nabla\varphi\,i\sigma_1=m\varphi^{*}+qA\varphi$ | The Daviau equation |
 | $z\colon\sigma_k\mapsto\Sigma_{k-1}$ (cyclic) | The map relating the space and spacetime bases |
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra; equals $\mathcal P$ as a complex algebra |
-| $\Phi$ | The corpus's matrix representation, $\Phi(e_k)=-i\sigma_k$ |
+| $\mathsf{M}_2$ | The corpus's matrix representation, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
 
 ## Further Reading
 
 - B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, for the map, the star, the equivalence and the four options; the source of this article.
 - C. Daviau, "Équation de Dirac et algèbre de Clifford," *Annales de la Fondation Louis de Broglie*, for the space Clifford formulation in its original form.
 - D. Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra formulation that the equivalence compares against.
-- B. Fauser, "Isospin from Spin by Compositeness," arXiv:hep-th/9908015, for the alternative to the iso-spin reading of the right action.
+- B. Fauser, "Isospin from Spin by Compositeness," arXiv:hep-th/9908015, for the alternative to the iso-spin interpretation of the right action.
 - The companion articles of this series: *The Dirac Equation in Biquaternionic Form*, *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, *The Reflection and the Rotation in Biquaternionic Form*, *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, and *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*.

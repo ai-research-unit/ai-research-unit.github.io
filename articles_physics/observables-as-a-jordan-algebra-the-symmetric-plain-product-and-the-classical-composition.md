@@ -9,7 +9,7 @@ symmetrised product of two Hermitian elements is Hermitian. The observables ther
 unital algebra with a product defined on them and not merely imported from the full algebra, and the
 product satisfies the Jordan identity. That is the algebraic content of the article.
 
-Three readings follow, and each is offered and labelled as a reading rather than proved. The first is
+Three interpretations follow, and each is offered and labelled as an interpretation rather than proved. The first is
 that the symmetrised product is the **classical composition** of two observables, the composition on
 which the order does not act; the order-bearing part of the ordinary product leaves the sector altogether
 and becomes a generator, in the companion band $\mathrm{APA}$. The second is that the observables are a
@@ -180,16 +180,16 @@ $\mathrm{Sc}(\tilde P\tilde Q^{*})$, the Born pairing of the frame.
 *Proof.* For $\tilde Q$ Hermitian, $\tilde Q^{*}=\tilde Q$, so
 $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$; the diagonal
 is the sum of the squares of the four real coordinates $h_0,\mathbf{h}$.
-The Born pairing and the Hilbert–Schmidt reading are *The Hermitian Subspace $\mathbb{M}_+$ as the
+The Born pairing and the Hilbert–Schmidt interpretation are *The Hermitian Subspace $\mathbb{M}_+$ as the
 Informational Sector*.
 
-**Proposed reading, labelled as such.** The invariance is read as the **absence of an orientation**.
+**Proposed interpretation, labelled as such.** The invariance is read as the **absence of an orientation**.
 Because the product is commutative, the left and the right multiplication of the block are the same
 operation, and the invariance is the single identity that a symmetric bilinear form can satisfy with
 respect to it. There is no "left product" and no "right product" to distinguish, hence no orientation that
 the form could detect; a non-commutative product would have two distinct invariance identities and the
 asymmetry would be visible. What the algebra proves is the invariance; the word "orientation" is the
-reading.
+interpretation.
 
 The identity of the two forms on the observables is the reason the block is compatible with the
 probability structure of the frame: the classical composition and the Born pairing share their form on
@@ -198,7 +198,7 @@ differ by sign, and the comparison is *The Four General Products and Their Physi
 
 ## The Classical Composition
 
-**Proposed reading, labelled as such.** The symmetrised plain product on the observables is the
+**Proposed interpretation, labelled as such.** The symmetrised plain product on the observables is the
 **classical composition**: the composition of two observables that does not depend on their order. The
 ordinary product of two observables splits into the order-free composition and the order-bearing part,
 
@@ -212,7 +212,7 @@ and the second term is anti-Hermitian, an element of $\mathbb{M}_-$ and not an o
 of the plain family therefore read as the two faces of one composition: the symmetric band is the face on
 which the order does not act, the antisymmetric band the face that carries it.
 
-The reason this is the reading of *classical* is the pair of frames the corpus already holds. The
+The reason this is the interpretation of *classical* is the pair of frames the corpus already holds. The
 observables are the Hermitian elements; the states are the positive ones; and the composition on which
 the order acts is measured by the commutator, which lives in the generator sector. In the ordinary
 quantum formalism the commutator is what makes two observables incompatible, and the anticommutator is
@@ -233,7 +233,7 @@ over $\mathbb{R}$ on the observables. The invariance of the form is *The Trace F
 the Symmetric Plain Algebra*, and its positivity as a form is *Positivity and the Hermitian Cone of the
 Biquaternion Algebra with Hermitian Adjoint*.
 
-**Proposed reading, speculative and labelled as such.** The symmetric half pairs an observable with
+**Proposed interpretation, speculative and labelled as such.** The symmetric half pairs an observable with
 itself and returns a positive observable; the antisymmetric half vanishes on the diagonal, so an
 observable is never incompatible with itself. Offered as a speculation, the symmetric half is the
 **Bose-like** composition — joint knowability, a symmetric pairing — and the antisymmetric half the
@@ -243,14 +243,14 @@ Form*.
 
 ## The Bound
 
-**What the section does not claim.** The classical composition is a reading. It does not say that the
+**What the section does not claim.** The classical composition is an interpretation. It does not say that the
 observables behave classically, that a measurement destroys the order, or that the frame is a classical
 system. The algebra proves that the symmetrised product closes the observables and satisfies the Jordan
 identity; the words "classical composition" are the framework's name for the order-free product, offered
 and labelled.
 
 Three further limits are worth stating. The observables of this article are the Hermitian elements of the
-algebra; their reading as operators on the spinor module, and their spectrum as a two-state system, are
+algebra; their interpretation as operators on the spinor module, and their spectrum as a two-state system, are
 *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *Quantum Physics in
 Biquaternionic Form*, and are not carried here. The square of an observable is positive, but the Jordan
 algebra carries no dynamics: the square is not an evolution and the trace form is not a Hamiltonian. And
@@ -269,7 +269,7 @@ symmetric, non-degenerate, invariant,
 $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, positive definite on
 $\mathbb{M}_+$, and equal there to the Hermitian form $\mathrm{Sc}(\tilde P\tilde Q^{*})$.
 
-**Readings.** That the symmetrised product is the **classical composition** of two observables, the
+**Interpretations.** That the symmetrised product is the **classical composition** of two observables, the
 composition on which the order does not act; that the observables are a **Jordan algebra**; and that the
 invariance of the trace form is the **absence of an orientation**; and, speculatively, that the two
 halves of the composition are the two statistics. Each is the framework's naming of a proved algebraic
@@ -281,7 +281,7 @@ $\mathbb{M}_+$; that the Jordan identity concerns measurement.
 
 ## Physical Readings
 
-The Jordan algebra reads as the algebra of what can be measured, and the article's own reading is the classical composition. Read against the probability form the reading is sharper: an observable is an element on which the Born pairing is defined and a state is an idempotent of the algebra, so the Jordan structure is what makes a state assignable while the positivity of the sesquilinear form is what makes it normalisable. The two structures are separate, and their separation is the framework's version of the difference between a classical composition and a quantum state.
+The Jordan algebra reads as the algebra of what can be measured, and the article's own interpretation is the classical composition. Read against the probability form the interpretation is sharper: an observable is an element on which the Born pairing is defined and a state is an idempotent of the algebra, so the Jordan structure is what makes a state assignable while the positivity of the sesquilinear form is what makes it normalisable. The two structures are separate, and their separation is the framework's version of the difference between a classical composition and a quantum state.
 
 ## Summary
 
@@ -297,7 +297,7 @@ symmetric, invariant, positive definite on $\mathbb{M}_+$, and equal there to th
 $\mathrm{Sc}(\tilde P\tilde Q^{*})$. The readings offered and labelled here are that the symmetrised
 product is the **classical composition** of two observables, that the observables are a **Jordan
 algebra**, and that the invariance of the form is the **absence of an orientation**; the algebraic facts
-are the closure, the positivity and the invariance, and none of the three readings is proved.
+are the closure, the positivity and the invariance, and none of the three interpretations is proved.
 
 ## Summary of Notation
 
@@ -331,8 +331,8 @@ Algebra*, for the square, the polarisation and the Jordan inverse.
 - Mathematics article *Jordan Algebras*, *Special and Exceptional Jordan Algebras* and *Jordan Algebras
 of Sesqualgebras*, for the Jordan identity, the special class and the sesquilinear counterpart.
 - Companion article *The Symmetrised Material Composition and the Jordan Identity*, for the operation and
-its reading on the material sector.
+its interpretation on the material sector.
 - Companion article *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*, for the
-antisymmetric half and its reading on the generators.
+antisymmetric half and its interpretation on the generators.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the
 observables, the states, the cone and the Born pairing.

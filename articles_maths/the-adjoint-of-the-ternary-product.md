@@ -80,7 +80,7 @@ The operator of a pair is therefore self-adjoint exactly when the derived produc
 
 **Remark.** The smallest witness is the pair $x=E_{11}$, $y=E_{21}$ of $M_2(\mathbb{C})$: the derived product is $x\star y=E_{11}E_{12}=E_{12}$, whose star is $E_{21}\neq E_{12}$, so $\Theta_{E_{11},E_{21}}^{\dagger}=\Theta_{E_{21},E_{11}}\neq\Theta_{E_{11},E_{21}}$; the operator of that pair is not self-adjoint, while the diagonal $\Theta_{E_{11},E_{11}}$ is.
 
-## The Three Readings under the Adjoint
+## The Three Interpretations under the Adjoint
 
 The three readings of the ternary product each have an adjoint of the same group, and the adjoint operation permutes them.
 

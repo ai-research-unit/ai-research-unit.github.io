@@ -18,7 +18,7 @@ R^{\wedge}_{\tilde P}(\tilde R)=\tilde R\wedge\tilde P .
 $$
 
 The left and the right multiplication of the bracket are the two one-sided operators, and the **multiplication
-operators of a bracket are its inner derivations**. The reading of the bracket as the algebra of rotations, its
+operators of a bracket are its inner derivations**. The interpretation of the bracket as the algebra of rotations, its
 alternation, the Jacobi identity and the cross-product identity belong to *The Cross Product as a Lie Bracket:
 Rotations and the Jacobi Identity*; the material-sector Lie algebra and the invariant form read on it belong to
 *Angular Momentum and the Lie Algebra of the Material Sector*; the derivations and the adjoint of the block are the
@@ -143,7 +143,7 @@ vector subspace, whose cross-product algebra is $\mathfrak{so}(3,\mathbb{C})\con
 Lie Algebra of the Antisymmetric Plain Algebra*.
 
 **Read as a physical statement.** The centre is the direction no rotation sees, and the acting maps are exactly the
-rotations of the derived subspace. The reading is that the generator space is the traceless part and the central
+rotations of the derived subspace. The interpretation is that the generator space is the traceless part and the central
 direction is a phase the bracket cannot rotate, the operator form of the centre as the radical of the invariant form.
 
 ## The Adjoint of the Invariant Form Negates the Parameter
@@ -187,7 +187,7 @@ $\operatorname{ad}_{\tilde A}=2\operatorname{ad}^{\wedge}_{\tilde A}$ gives the 
 
 **Read as a physical statement.** The adjoint of a bracket multiplication is the **negative of the operator
 itself**: it neither keeps nor conjugates the parameter nor swaps the two sides, it negates, which is the same as
-negating the parameter, $\bigl(L^{\wedge}_{\tilde A}\bigr)^{\kappa}=L^{\wedge}_{-\tilde A}$. The reading is that a
+negating the parameter, $\bigl(L^{\wedge}_{\tilde A}\bigr)^{\kappa}=L^{\wedge}_{-\tilde A}$. The interpretation is that a
 bracket multiplication is a **generator**, the infinitesimal form of an orthogonal transformation and not the
 operator of an observable; the observable is the Hermitian multiple, a dictionary read in the next section.
 
@@ -205,7 +205,7 @@ so $B(\tilde A\tilde X,\tilde Y)-B(\tilde X,\tilde Y\tilde A)=0$; antisymmetrisi
 non-degeneracy gives the display.
 
 **Read as a physical statement.** The band's own invariant form and the ordinary scalar-part form agree in **sign**
-on the family: for both, the adjoint is the negative. The reading is that the skew-adjointness of a bracket
+on the family: for both, the adjoint is the negative. The interpretation is that the skew-adjointness of a bracket
 multiplication is no artefact of the choice of form but a property of the operator, visible to every non-degenerate
 bilinear form that is cyclic on one side, and it is the algebraic statement that the bracket is antisymmetric.
 
@@ -229,9 +229,9 @@ $L^{\wedge}_{\tilde A}=-L^{\wedge}_{\tilde A}$, which is $L^{\wedge}_{\tilde A}=
 kernel is exactly $\tilde A$ central; by the previous theorem the ordinary form gives the same verdict.
 
 **Read as a physical statement.** The family of bracket multiplications contains **no observable**: it is
-entirely the family of generators. The reading is that the band supplies the infinitesimal structure of the
+entirely the family of generators. The interpretation is that the band supplies the infinitesimal structure of the
 internal symmetry and not its observables, and the observables are obtained by the multiplication by $i$ — the
-angular-momentum operators are $i$ times the generators, which is the reading of *Angular Momentum and the Lie
+angular-momentum operators are $i$ times the generators, which is the interpretation of *Angular Momentum and the Lie
 Algebra of the Material Sector* and the reason the imaginary vector units are the boost generators. The criterion is
 a criterion on the parameter's being central, that is on the parameter being invisible; apart from the centre no
 parameter is self-adjoint, and the central parameters give the zero operator.
@@ -244,7 +244,7 @@ $\{iL^{\wedge}_{\tilde A}\}$ are the observables carried by this band.
 $\overline{i}=-i$; the $\mathbb{R}$-linearity is the $\mathbb{C}$-linearity of $\tilde A\mapsto L^{\wedge}_{\tilde A}$
 together with the reality of the scalar $i$ in the adjoint relation.
 
-**Read as a physical statement.** The reading is the **observable-generator dictionary** in its operator form: a
+**Read as a physical statement.** The interpretation is the **observable-generator dictionary** in its operator form: a
 skew-adjoint operator generates a one-parameter group of form-preserving transformations, and its Hermitian
 multiple is the quantity measured. The angular momentum $J_k=iL^{\wedge}_{ie_k}$ is the Hermitian multiple of the
 generator $L^{\wedge}_{ie_k}$, and the corpus states the same relation at the level of elements; no new physical claim
@@ -269,7 +269,7 @@ the kernel of the adjoint is $\tilde A\wedge\tilde B=0$.
 
 **Read as a physical statement.** Two successive rotations compose into an operator that is symmetric exactly when
 the two rotations commute, that is when their parameters bracket to zero, that is when their vector parts are
-proportional. The reading is that the order-dependence of two rotations is the **same** quantity as the
+proportional. The interpretation is that the order-dependence of two rotations is the **same** quantity as the
 non-symmetry of their composite: the commutator is simultaneously the failure of the operators to commute and the
 failure of the composite to be self-adjoint. No such identification is available in the ordinary row, whose
 two-sided types are criteria on the product of the parameters and not on their commutator.
@@ -297,7 +297,7 @@ $PGL(2,\mathbb{C})\cong SO(3,\mathbb{C})$ the orientation-preserving orthogonal 
 and Derivations*.
 
 **Read as a physical statement.** The symmetries of the band's form are the rotations and the reflections of the
-complex vector subspace together with the scalings of the central direction. The reading is that the invariant form
+complex vector subspace together with the scalings of the central direction. The interpretation is that the invariant form
 is preserved by the rotation group and by the reflections, and that the reflections are the form-preserving
 operators the product cannot use, a reflection reversing the orientation and so the sign of a cross product.
 
@@ -318,7 +318,7 @@ the centre, on which the bracket is zero, so it is an automorphism for every $\l
 the Leibniz rule and not the multiplicativity, so it is no automorphism.
 
 **Read as a physical statement.** The operators preserving the product are the **finite** rotations, and those
-preserving the form but not the product are the reflections. The reading is the separation of the group from its Lie
+preserving the form but not the product are the reflections. The interpretation is the separation of the group from its Lie
 algebra: the finite rotations are the multiplicative operators and the infinitesimal rotations the derivations, the
 two related by the exponential, a forward reference to *Biquaternion Lie Group and Exponential Structure*. The central
 scaling is the automorphism the rotation algebra carries on its invisible direction, and its generator is the one
@@ -346,7 +346,7 @@ because $\mathbb{B}$ is central simple (*Biquaternion Automorphisms and Derivati
 
 **Read as a physical statement.** The internal infinitesimal transformations of the band are the rotations of the
 derived subspace together with the scaling of the central direction, and the scaling is the one that does not come
-from an element. The reading is that the central phase is an outer generator, whose finite form is the central
+from an element. The interpretation is that the central phase is an outer generator, whose finite form is the central
 scaling automorphism: the one internal transformation the adjoint representation cannot see.
 
 ## The Operators Acting on the State Space
@@ -354,22 +354,22 @@ scaling automorphism: the one internal transformation the adjoint representation
 Let $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$ be the spinor space of *The Spinor Space
 as a Module and as a Hilbert Space*, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, a complex two-dimensional left module of the
 algebra and the carrier of the state space; on it the algebra acts by the matrix representation
-$\Phi(e_k)=-i\sigma_k$, and on the algebra itself the derivation $L^{\wedge}_{\tilde A}$ is the matrix commutator
-$\tfrac12[\Phi(\tilde A),\ \cdot\ ]$ whose kernel is the central line and whose action on the traceless part is the
+$\mathsf{M}_2(e_k)=-i\sigma_k$, and on the algebra itself the derivation $L^{\wedge}_{\tilde A}$ is the matrix commutator
+$\tfrac12[\mathsf{M}_2(\tilde A),\ \cdot\ ]$ whose kernel is the central line and whose action on the traceless part is the
 three-dimensional **adjoint representation** of $\mathfrak{sl}(2,\mathbb{C})$.
 
 **Theorem (the generators on the state space).** The halved real units $T_a=\tfrac12 e_a$, $a=1,2,3$, read on $S$
-as the matrices $T_a=\tfrac12\Phi(e_a)=-\tfrac{i}{2}\sigma_a$, satisfy $[T_i,T_j]=\epsilon_{ijk}T_k$; the
+as the matrices $T_a=\tfrac12\mathsf{M}_2(e_a)=-\tfrac{i}{2}\sigma_a$, satisfy $[T_i,T_j]=\epsilon_{ijk}T_k$; the
 Hermitian angular-momentum operators $J_k=iT_k=\tfrac12\sigma_k$ satisfy $[J_i,J_j]=i\,\epsilon_{ijk}J_k$ and have
 Casimir $\sum_k J_k^2=\tfrac34\mathrm{id}$ on $S$. The one-parameter group generated by the derivation
 $L^{\wedge}_{\tilde A}$ is the inner automorphism $\exp(tL^{\wedge}_{\tilde A})=\mathrm{Ad}_{\exp(t\tilde A)}$ of the
 unit $\exp(t\tilde A)$, and it acts on $S$ by left multiplication.
 
 *Proof.* The commutator of the halved real units is the action of the derived algebra through
-$\tfrac12\Phi(e_k)=-\tfrac{i}{2}\sigma_k$, which is the two-dimensional defining representation of
+$\tfrac12\mathsf{M}_2(e_k)=-\tfrac{i}{2}\sigma_k$, which is the two-dimensional defining representation of
 $\mathfrak{sl}(2,\mathbb{C})$ of *The Killing Form of the Antisymmetric Plain Algebra* and *Angular Momentum and
 Spin in Biquaternionic Form*; the matrix identity
-$\Phi(\tilde A\wedge\tilde X)=\tfrac12[\Phi(\tilde A),\Phi(\tilde X)]$ is *The Antisymmetric Plain Algebra in the
+$\mathsf{M}_2(\tilde A\wedge\tilde X)=\tfrac12[\mathsf{M}_2(\tilde A),\mathsf{M}_2(\tilde X)]$ is *The Antisymmetric Plain Algebra in the
 $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the identification
 $\exp(tL^{\wedge}_{\tilde A})=\mathrm{Ad}_{\exp(t\tilde A)}$ is the standard correspondence between a derivation
 and the one-parameter group of automorphisms it generates (algebraic statement in *Derivations of a Ring*, the
@@ -378,7 +378,7 @@ Module and as a Hilbert Space*.
 
 **Read as a physical statement.** On the state space the state carries the **fundamental, spin-$\tfrac12$**
 representation of the rotation algebra, while on the operator space the traceless part carries the adjoint,
-spin-one representation; both are the same band read on two carriers. The reading is that the generators of the band
+spin-one representation; both are the same band read on two carriers. The interpretation is that the generators of the band
 are at once the angular momenta of the spinor and the infinitesimal rotations of the operators, and that the state
 carries the two-valued form of the rotation while the operator space carries its vector form. The ladder operators,
 the eigenvalues and the Clebsch–Gordan structure are the business of *Angular Momentum and Spin in Biquaternionic
@@ -423,7 +423,7 @@ $(L^{\wedge}_{\tilde A}R^{\wedge}_{\tilde B})^{\kappa}=L^{\wedge}_{\tilde B}(-L^
 the two parameters exchange places with no conjugate and no residual sign.
 
 **Read as a physical statement.** The adjoint of a two-sided bracket operator swaps the two slots, as in the ordinary
-row, and here the swap is the whole adjoint because there is no conjugation to carry. The reading is that the
+row, and here the swap is the whole adjoint because there is no conjugation to carry. The interpretation is that the
 transport across the invariant form exchanges the two attachments of the bracket, the exchange being the alternation
 of the product read on the operators.
 
@@ -437,7 +437,7 @@ $L^{\wedge}_{\tilde A}R^{\wedge}_{\tilde A}=\Theta^{\wedge}_{\tilde A}$.
 **Read as a physical statement.** This is the sharpest contrast with the ordinary row, where the sandwich is
 self-adjoint exactly on the sector parameters. On the bracket band the sandwich is symmetric for every parameter,
 because the square of a skew-adjoint operator is self-adjoint and the sandwich is minus that square; the sector
-condition has collapsed, the two slots of an alternating product being already exchanged by a sign. The reading is
+condition has collapsed, the two slots of an alternating product being already exchanged by a sign. The interpretation is
 the operator form of the statement that the antisymmetric square is symmetric, a naming of the algebraic fact and not
 a new physics claim.
 
@@ -468,7 +468,7 @@ which satisfies the Leibniz rule and not the multiplicativity.
 
 **Read as a physical statement.** The two-sided operator of the bracket and the inner automorphism are the **same
 band at two orders**: the sandwich is the square of the generator and the inner automorphism its exponential. The
-reading is that the alternating product cannot tell a conjugation from its derivative — it has one two-sided
+interpretation is that the alternating product cannot tell a conjugation from its derivative — it has one two-sided
 operator, built from one generator, and the finite rotation is what that generator exponentiates to. This is the
 sharp difference from the ordinary row, whose sandwich and inner automorphism are two genuinely different
 conjugations, by the conjugate and by the inverse of the parameter, agreeing only on the unitary slice; on the
@@ -525,7 +525,7 @@ $\operatorname{diag}(0,-2,-2,-2)$, the value $\kappa=-2\,\mathbf P\!\cdot\!\math
 diagonal sandwich, the self-adjointness criterion of a composite, the preservation of $\kappa$ and of the bracket by
 the conjugations by units, the form-preservation and the anti-preservation of the bracket by the reflection, the
 derivation property of $D_0$ and the matrix identity
-$\Phi(\tilde A\wedge\tilde X)=\tfrac12[\Phi(\tilde A),\Phi(\tilde X)]$ were all checked on random parameters, all to
+$\mathsf{M}_2(\tilde A\wedge\tilde X)=\tfrac12[\mathsf{M}_2(\tilde A),\mathsf{M}_2(\tilde X)]$ were all checked on random parameters, all to
 machine precision. The identification of the inner automorphism with the exponential of the operator,
 $\mathrm{Ad}_{\exp(\tilde A)}=\exp(\operatorname{ad}_{\tilde A})=\exp(2L^{\wedge}_{\tilde A})$, and the collapse
 $\Theta^{\wedge}_{\tilde A}=-\tfrac14(\operatorname{ad}_{\tilde A})^{2}$ were checked on random parameters to
@@ -533,7 +533,7 @@ $2\times10^{-14}$ and exactly. The non-preservation of $\kappa$ by the sandwich 
 difference $\kappa(\Theta^{\wedge}_{\tilde A}\tilde X,\Theta^{\wedge}_{\tilde A}\tilde Y)-\kappa(\tilde X,\tilde Y)$
 for random $\tilde A,\tilde X,\tilde Y$: the difference vanishes for no parameter tested, because the square of a
 generator drops the direction of the parameter and cannot be orthogonal. On $S$ the generators
-$T_a=\tfrac12\Phi(e_a)$ satisfy $[T_i,T_j]=\epsilon_{ijk}T_k$ and
+$T_a=\tfrac12\mathsf{M}_2(e_a)$ satisfy $[T_i,T_j]=\epsilon_{ijk}T_k$ and
 $\sum_aT_a^2=-\tfrac34\mathrm{id}$, whence $J_a=iT_a$ satisfies $[J_i,J_j]=i\epsilon_{ijk}J_k$ and
 $\sum_aJ_a^2=\tfrac34\mathrm{id}$, exactly.
 
@@ -543,7 +543,7 @@ The article states one cell of the grid of the twelve operator rows, and the bou
 declare.
 
 - **The bracket is not re-read here.** Its alternation, the cross-product identity, the Jacobi identity and the
-  rotation reading are *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*; the material-sector
+  rotation interpretation are *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*; the material-sector
   Lie algebra and the invariant form read on the sectors are *Angular Momentum and the Lie Algebra of the Material
   Sector*.
 - **The invariant form is not re-proved here.** The Killing form, its value, its Gram matrix, its radical, its
@@ -566,7 +566,7 @@ declare.
   only at the level of the algebraic statement that a derivation is the linear part of an automorphism
   (*Derivations of a Ring*); the exponential map is a forward reference.
 
-**What the framework does not claim.** The reading does not derive the rotation group or the Lorentz group from the
+**What the framework does not claim.** The interpretation does not derive the rotation group or the Lorentz group from the
 operator calculus; the correspondence between the derivations and the finite rotations is cited, not constructed
 here. It does not identify $\kappa$ with a physical metric; the interval and the metric are the quaternionic-level
 data of *Biquaternion Norm and Invertibility*. It does not claim that the inner and outer derivations together form
@@ -596,11 +596,11 @@ collapse onto signed squares, the adjoint of $L^{\wedge}_{\tilde A}R^{\wedge}_{\
 $L^{\wedge}_{\tilde B}R^{\wedge}_{\tilde A}$, and the sandwich $\Theta^{\wedge}_{\tilde A}$ is self-adjoint for every
 parameter and equal to $-\tfrac14(\operatorname{ad}_{\tilde A})^{2}$, while the inner automorphism is its exponential
 $\mathrm{Ad}_{\exp(\tilde A)}=\exp(\operatorname{ad}_{\tilde A})$; on the operator space the derivation is the
-commutator $\tfrac12[\Phi(\tilde A),\ \cdot\ ]$ with the adjoint representation on the traceless part, and on the
+commutator $\tfrac12[\mathsf{M}_2(\tilde A),\ \cdot\ ]$ with the adjoint representation on the traceless part, and on the
 spinor space the generators $T_a=\tfrac12e_a$ give the fundamental representation with Casimir sums
 $\sum_aT_a^2=-\tfrac34\mathrm{id}$ and $\sum_aJ_a^2=\tfrac34\mathrm{id}$ for $J_a=iT_a$.
 
-**Readings.** That the multiplication operators of the bracket are its inner derivations, so the band is the
+**Interpretations.** That the multiplication operators of the bracket are its inner derivations, so the band is the
 **adjoint representation** of its own algebra; that the composition law of the operators is the **commutator**,
 closing on the bracket of the parameters; that the adjoint **negates the parameter**, keeping the side and
 conjugating nothing, so a bracket multiplication is a generator and not an observable; that the band contains no
@@ -614,7 +614,7 @@ algebraic fact and is labelled as such.
 ## Physical Readings
 
 The operators of the antisymmetric plain product read as the infinitesimal rotations of the material sector and as
-the adjoint action of the rotation algebra on itself. Three readings organise the rest. The **composition law being
+the adjoint action of the rotation algebra on itself. Three interpretations organise the rest. The **composition law being
 the commutator** is read as the closure of the rotation algebra: the acting maps close on the bracket of their
 parameters, which is the operator form of the Jacobi identity and the reason a Lie algebra, and not an associative
 algebra, is the structure of the band. The **adjoint negating the parameter** is read as the generator-observable
@@ -626,7 +626,7 @@ already differ by a sign, and as the **square of the finite rotation**: the sand
 the same generator read at order two and at all orders. Read on the algebra, the finite rotations are the
 multiplicative operators and the reflections are the form-preserving operators that the product cannot use; read on
 the centre, the one derivation that does not come from an element is the scaling of the central direction, which is
-the operator form of the central phase as the generator the adjoint representation cannot see. Each reading is a
+the operator form of the central phase as the generator the adjoint representation cannot see. Each interpretation is a
 name for a proved algebraic fact and not a new physical claim.
 
 ## Summary
@@ -662,7 +662,7 @@ On the operator space the generators act by the commutator and carry the adjoint
 they carry the fundamental representation, with $T_a=\tfrac12e_a$ read on $S$ satisfying
 $[T_i,T_j]=\epsilon_{ijk}T_k$ and $\sum_aT_a^2=-\tfrac34\mathrm{id}$. Read under the job word **rotation**, the
 operators are the infinitesimal rotations, skew-adjoint because a generator is, and the observable angular momentum
-is their Hermitian multiple. What is proved is the algebra; what is named is the reading.
+is their Hermitian multiple. What is proved is the algebra; what is named is the interpretation.
 
 ## Summary of Notation
 
@@ -688,7 +688,7 @@ is their Hermitian multiple. What is proved is the algebra; what is named is the
 | $C_\lambda$; $O(3,\mathbb{C})$, $SO(3,\mathbb{C})$ | Central scaling; complex-orthogonal and orientation-preserving maps |
 | $\operatorname{Aut}(\mathfrak{g})\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$ | The multiplicative operators, $(2,3)$-dimensional split |
 | $D_0$; $\operatorname{Der}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$ | The outer derivation (dilation of the centre) and the derivation algebra |
-| $\Phi(e_k)=-i\sigma_k$ | The matrix representation; $\Phi(\tilde A\wedge\tilde X)=\tfrac12[\Phi(\tilde A),\Phi(\tilde X)]$ |
+| $\mathsf{M}_2(e_k)=-i\sigma_k$ | The matrix representation; $\mathsf{M}_2(\tilde A\wedge\tilde X)=\tfrac12[\mathsf{M}_2(\tilde A),\mathsf{M}_2(\tilde X)]$ |
 | $S=\mathbb{B}\tilde\Pi_1$, $T_a=\tfrac12e_a$, $J_a=iT_a=\tfrac12\sigma_a$ | The spinor space and the generators on it |
 
 ## Further Reading
@@ -720,7 +720,7 @@ is their Hermitian multiple. What is proved is the algebra; what is named is the
   of this group, for the bracket, its alternation and the Jacobi identity.
 - Physics article *Angular Momentum and the Lie Algebra of the Material Sector*
   (`articles_physics/angular-momentum-and-the-lie-algebra-of-the-material-sector.md`), for the Killing form and its
-  signature, the compact-non-compact split and the angular-momentum reading of the band.
+  signature, the compact-non-compact split and the angular-momentum interpretation of the band.
 - Physics article *Angular Momentum and Spin in Biquaternionic Form*
   (`articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md`), for the angular-momentum algebra, the
   ladder operators, the Casimir and the spin representations.

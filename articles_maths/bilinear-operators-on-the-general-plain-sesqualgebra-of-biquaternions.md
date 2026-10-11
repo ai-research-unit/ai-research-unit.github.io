@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite form $\langle\tilde W,\tilde V\rangle_{*}=\mathrm{Sc}(\tilde{V}^{*}\tilde W)$. The **spinor module** is the minimal left ideal $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde W\}$, the unique simple left $\mathbb{B}$-module, on which the algebra acts by the left multiplication $L_{\tilde B}(s)=\tilde B\,s$; in the matrix model $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $S=\mathbb{C}^2$, and the module form is $\langle t,s\rangle_{*}=\mathrm{Sc}(s^{\dagger}t)$ with Gram matrix $\frac12 I_2$ in the basis $\{\tilde\Pi_1,\tilde W\}$ and $s^{\dagger}t$ in the standard column basis (*Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*, *Ideals and Peirce Decomposition of the General Plain Algebra*, *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*).
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite form $\langle\tilde W,\tilde V\rangle_{*}=\mathrm{Sc}(\tilde{V}^{*}\tilde W)$. The **spinor module** is the minimal left ideal $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde W\}$, the unique simple left $\mathbb{B}$-module, on which the algebra acts by the left multiplication $L_{\tilde B}(s)=\tilde B\,s$; in the matrix model $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $S=\mathbb{C}^2$, and the module form is $\langle t,s\rangle_{*}=\mathrm{Sc}(s^{\dagger}t)$ with Gram matrix $\frac12 I_2$ in the basis $\{\tilde\Pi_1,\tilde W\}$ and $s^{\dagger}t$ in the standard column basis (*Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*, *Ideals and Peirce Decomposition of the General Plain Algebra*, *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*).
 
 A **bilinear operator** is the operator $s\mapsto b(s,\cdot)$ induced by a bilinear form $b$ on the spinor module. The general theory of these operators is *Bilinear Operators on a Hermitian Module with Hermitian Adjoint*: the form is **Clifford-equivariant** exactly when it satisfies the adjointness axiom of the module, the action of the algebra on the module is **complete** — the Fierz identity — so that the $2^n$ bilinear covariants $\langle\Gamma_A t,s\rangle_{*}$ span the space of forms, and the covariants are classified by the grade of the blade. This article is the biquaternion instance of that theory.
 
@@ -27,10 +27,10 @@ a form is alternating exactly when its operator is skew-adjoint, and the Hermiti
 **Proposition (the equivariant form is the module form).** A form is **Clifford-equivariant**, $b(\tilde V\cdot s,t)=b(s,\tilde{V}^{*}\cdot t)$ for all $\tilde V\in\mathbb{B}$, exactly when $M$ commutes with $\mathbb{B}$:
 
 $$
-b \text{ equivariant} \iff \Phi(M)\in \mathbb{B}'=\mathbb{C}\cdot\mathrm{id} .
+b \text{ equivariant} \iff \mathsf{M}_2(M)\in \mathbb{B}'=\mathbb{C}\cdot\mathrm{id} .
 $$
 
-*Proof.* $\Phi(M)$ commutes with $\Phi(\tilde V)$ for all $\tilde V$ exactly when $M$ is a scalar matrix, and $(\tilde V s)^{\dagger}M t=s^{\dagger}\tilde{V}^{*}Mt=b(s,\tilde{V}^{*}t)$ for all $s,t$ is exactly that. The scalar is real for $b$ Hermitian.
+*Proof.* $\mathsf{M}_2(M)$ commutes with $\mathsf{M}_2(\tilde V)$ for all $\tilde V$ exactly when $M$ is a scalar matrix, and $(\tilde V s)^{\dagger}M t=s^{\dagger}\tilde{V}^{*}Mt=b(s,\tilde{V}^{*}t)$ for all $s,t$ is exactly that. The scalar is real for $b$ Hermitian.
 
 **Remark.** So on the biquaternion spinor module the equivariant Hermitian forms are the multiples of the module form, $\mathbb{R}_{>0}$ up to a phase, which is the Schur uniqueness of the module form read as a commutant statement: the commutant of a full matrix algebra acting on its simple module is the scalars. The general theory's warning about an isotropic spinor form has no instance here, for the reason recorded in *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*.
 
@@ -39,22 +39,22 @@ $$
 **Definition.** The **blades** are the four basis elements $e_0,e_1,e_2,e_3$ of $\mathbb{B}$, and the **bilinear covariants** of the module are
 
 $$
-b_{\mu}(s,t)=\langle L_{e_{\mu}}t,s\rangle_{*}=s^{\dagger}\Phi(e_{\mu})\,t ,\qquad \mu=0,1,2,3 .
+b_{\mu}(s,t)=\langle L_{e_{\mu}}t,s\rangle_{*}=s^{\dagger}\mathsf{M}_2(e_{\mu})\,t ,\qquad \mu=0,1,2,3 .
 $$
 
 **Theorem (completeness, the Fierz identity).** The action $L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(S)$ is an isomorphism, the four blade operators $L_{e_{\mu}}$ are a basis of $\mathrm{End}_{\mathbb{C}}(S)$, and the four covariants $b_{\mu}$ are a basis of the space of forms on $S$.
 
-*Proof.* The algebra is a full matrix algebra, $\Phi(\mathbb{B})=M_2(\mathbb{C})$, acting faithfully on $S=\mathbb{C}^2$; hence $L$ is injective and $\dim L(\mathbb{B})=\dim\mathbb{B}=4=\dim\mathrm{End}_{\mathbb{C}}(S)$, so $L$ is an isomorphism and carries the basis $\{e_{\mu}\}$ to a basis. The bilinear statement is the same isomorphism read in the dual basis, by the adjunction of forms and operators. The independence was checked in the matrix model: $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$, and $\{I,\sigma_1,\sigma_2,\sigma_3\}$ is the standard basis of $M_2(\mathbb{C})$, of rank $4$.
+*Proof.* The algebra is a full matrix algebra, $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$, acting faithfully on $S=\mathbb{C}^2$; hence $L$ is injective and $\dim L(\mathbb{B})=\dim\mathbb{B}=4=\dim\mathrm{End}_{\mathbb{C}}(S)$, so $L$ is an isomorphism and carries the basis $\{e_{\mu}\}$ to a basis. The bilinear statement is the same isomorphism read in the dual basis, by the adjunction of forms and operators. The independence was checked in the matrix model: $\mathsf{M}_2(e_0)=I$, $\mathsf{M}_2(e_k)=-i\sigma_k$, and $\{I,\sigma_1,\sigma_2,\sigma_3\}$ is the standard basis of $M_2(\mathbb{C})$, of rank $4$.
 
 **Corollary (the covariant expansion).** Every form $b_M$ is a unique combination of the covariants,
 
 $$
-M=\sum_{\mu=0}^{3}c_{\mu}\,\Phi(e_{\mu}),\qquad c_{\mu}=\tfrac12\mathrm{Tr}\bigl(\Phi(e_{\mu})^{\dagger}M\bigr),
+M=\sum_{\mu=0}^{3}c_{\mu}\,\mathsf{M}_2(e_{\mu}),\qquad c_{\mu}=\tfrac12\mathrm{Tr}\bigl(\mathsf{M}_2(e_{\mu})^{\dagger}M\bigr),
 $$
 
 because the blades are **orthogonal for the trace form** of the algebra, $\mathrm{Tr}(e_{\mu}^{\dagger}e_{\nu})=2\delta_{\mu\nu}$. The coefficients $c_{\mu}$ are the **Fierz coefficients** of the form, and the expansion is the Fierz rearrangement: a change of basis between the four blades and the four matrix units.
 
-*Proof.* $\mathrm{Tr}(\Phi(e_0)^{\dagger}\Phi(e_0))=\mathrm{Tr}(I)=2$ and $\mathrm{Tr}(\Phi(e_j)^{\dagger}\Phi(e_k))=\mathrm{Tr}(\sigma_j\sigma_k)=2\delta_{jk}$, so the corrected trace pairing is the standard pairing on the orthogonal basis $\{I,\sigma_1,\sigma_2,\sigma_3\}$; the coefficients follow.
+*Proof.* $\mathrm{Tr}(\mathsf{M}_2(e_0)^{\dagger}\mathsf{M}_2(e_0))=\mathrm{Tr}(I)=2$ and $\mathrm{Tr}(\mathsf{M}_2(e_j)^{\dagger}\mathsf{M}_2(e_k))=\mathrm{Tr}(\sigma_j\sigma_k)=2\delta_{jk}$, so the corrected trace pairing is the standard pairing on the orthogonal basis $\{I,\sigma_1,\sigma_2,\sigma_3\}$; the coefficients follow.
 
 **Remark (completeness as the double centraliser).** The Fierz identity and the double centraliser theorem are two readings of one fact. On the spinor module the action is onto, $L(\mathbb{B})=\mathrm{End}_{\mathbb{C}}(S)$, which is the statement that $\mathbb{B}$ is its own bicommutant there; on the regular module $\mathbb{B}$ the left multiplications have the right multiplications as commutant, as *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* records. The endomorphisms of $\mathbb{B}$ used in the two-sided operators are the module-level operators of this article with the parameter running over the algebra.
 
@@ -84,7 +84,7 @@ $$
 
 with the covariant coefficients of a Hermitian form real in the scalar slot and **purely imaginary** in the three skew slots; under the matrix model the Hermitian forms are the Hermitian matrices, and the interval form and the cone of $\mathbb{M}_+$ are those of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*.
 
-*Proof.* A Hermitian matrix has the expansion $a_0I+a_k\sigma_k$ with $a_0\in\mathbb{R}$ and $a_k\in\mathbb{R}$; in the blade basis $\sigma_k=i\Phi(e_k)$ this reads $a_0\Phi(e_0)+i\sum_k a_k\Phi(e_k)$, so the coefficients of $b_0$ are real and those of $b_k$ purely imaginary. Conversely a form with real scalar coefficient and imaginary skew coefficients is a real combination of $b_0$ and the $ib_k$, hence Hermitian.
+*Proof.* A Hermitian matrix has the expansion $a_0I+a_k\sigma_k$ with $a_0\in\mathbb{R}$ and $a_k\in\mathbb{R}$; in the blade basis $\sigma_k=i\mathsf{M}_2(e_k)$ this reads $a_0\mathsf{M}_2(e_0)+i\sum_k a_k\mathsf{M}_2(e_k)$, so the coefficients of $b_0$ are real and those of $b_k$ purely imaginary. Conversely a form with real scalar coefficient and imaginary skew coefficients is a real combination of $b_0$ and the $ib_k$, hence Hermitian.
 
 **Remark (the $1+3$ splitting).** The splitting of the Hermitian forms into the scalar covariant and the three skew covariants is the splitting $\mathbb{M}_+=\mathbb{R}e_0\oplus i\mathbb{R}\{e_1,e_2,e_3\}$ of the Hermitian sector into its centre and its vector part. It is the covariant form of the decomposition $H_2(\mathbb{C})=\mathbb{R}\cdot\mathrm{id}\oplus\mathfrak{su}(2)$ used throughout the series for the Hermitian sector, and the positivity of the form — the cone — is the condition on the pair, not on either summand: the Hermitian form $a_0b_0+\sum_k a_k\,ib_k$ is **positive semidefinite** exactly when $a_0\ge\sqrt{\sum_k a_k^2}$.
 
@@ -98,7 +98,7 @@ $$
 
 so the slice acts on the covariants by the conjugation $\Gamma\mapsto \tilde{C}^{*}\Gamma \tilde C$ of the algebra; the scalar covariant $b_0$ is **invariant**, and the three skew covariants transform among themselves as a triplet.
 
-*Proof.* $b_{\mu}(\tilde Cs,\tilde Ct)=(\tilde Cs)^{\dagger}\Phi(e_{\mu})\tilde Ct=s^{\dagger}\tilde{C}^{*}\Phi(e_{\mu})\tilde Ct=b_{\tilde{C}^{*}e_{\mu}\tilde C}(s,t)$ by the adjointness of the action, $\tilde{C}^{*}\Phi(e_{\mu})\tilde C=\Phi(\tilde{C}^{*}e_{\mu}\tilde C)$. For $\mu=0$ the inserted element is $\tilde{C}^{*}\tilde C=e_0$. For the triplet, $\tilde{C}^{*}\Phi(e_k)\tilde C=-i\tilde{C}^{*}\sigma_k \tilde C=-iR_{kl}\sigma_l=\Phi(R_{kl}e_l)$ with $R\in SO(3)$, the adjoint representation of $U(2)$ on $\mathfrak{su}(2)$.
+*Proof.* $b_{\mu}(\tilde Cs,\tilde Ct)=(\tilde Cs)^{\dagger}\mathsf{M}_2(e_{\mu})\tilde Ct=s^{\dagger}\tilde{C}^{*}\mathsf{M}_2(e_{\mu})\tilde Ct=b_{\tilde{C}^{*}e_{\mu}\tilde C}(s,t)$ by the adjointness of the action, $\tilde{C}^{*}\mathsf{M}_2(e_{\mu})\tilde C=\mathsf{M}_2(\tilde{C}^{*}e_{\mu}\tilde C)$. For $\mu=0$ the inserted element is $\tilde{C}^{*}\tilde C=e_0$. For the triplet, $\tilde{C}^{*}\mathsf{M}_2(e_k)\tilde C=-i\tilde{C}^{*}\sigma_k \tilde C=-iR_{kl}\sigma_l=\mathsf{M}_2(R_{kl}e_l)$ with $R\in SO(3)$, the adjoint representation of $U(2)$ on $\mathfrak{su}(2)$.
 
 **Corollary (the invariants).** The invariants of the slice in the space of Hermitian forms are the multiples of the module form, so the trace pairing and the positivity of the Hermitian forms are slice invariants.
 

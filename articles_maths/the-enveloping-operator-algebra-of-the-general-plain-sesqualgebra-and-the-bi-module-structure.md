@@ -218,6 +218,8 @@ $$
 
 which is the Peirce projection onto the corner $\tilde e_i\mathbb{B}\tilde e_k$ of the block. Since the four idempotents are complete and orthogonal, the left $\mathbb{B}^{\mathrm e}$-module ${}_{\mathbb{B}^{\mathrm e}}\mathbb{B}$ splits as the direct sum of the four complex lines $\tilde e_i\mathbb{B}\tilde e_k$: the Peirce decomposition of the block is the decomposition of $\mathbb{B}$ as a module over its enveloping algebra, and the identity operator is $\sum_{ik}E_{ik}=e_0\otimes e_0^{\mathrm{op}}$. This is the module form of *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*.
 
+**Remark (where the family comes from).** The complementary pair $(\tilde\Pi,\tilde\Pi^{\perp})$ that indexes the four idempotents is a pair of **orthogonal** right $\star$-ideals of the block, and it is one pair out of the projective line of them: by *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*, §*The Complementary Pairs and the Peirce Decompositions*, every unordered pair of distinct right ideals carries a complete family $\tilde e,e_0-\tilde e$ and a Peirce decomposition, and the orthogonal pairs are exactly the ones whose idempotents are Hermitian, that is, the pairs of projections used here. The four idempotents of the envelope, the corners of the block and the $2\times2$ matrix realizations of the same section are three readings of the one right-ideal lattice.
+
 ## The Bi-module Structure
 
 ### The Definition and the Twisted Actions

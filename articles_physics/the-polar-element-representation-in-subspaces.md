@@ -21,7 +21,7 @@ The restriction is not a cosmetic exercise, because each subspace is the fixed s
 | $\mathbb{M}_+$ — informational sector | 4 | real, indefinite | $0$ or $\pi/2$ | the boost, explicit | $\pm e_0$ or a direction |
 | $\mathbb{M}_-$ — material sector | 4 | real, indefinite | $0$ or $\pi/2$ | the boost, explicit | $\pm e_0$ or a direction |
 
-The conventions are those of *Conventions in the Biquaternion Universe*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ with $\Phi(e_0) = I$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar part; $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the home of the rotations; $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, its imaginary half; $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the home of the boosts; and $\mathbb{M}_-$ is the anti-fixed space of Hermitian conjugation, with $Q_0 = iq'_0$ and $Q_k$ real, the home of the four-vectors. Every numerical value below was recomputed in double precision; the residuals of the identities quoted are below $2\times10^{-12}$.
+The conventions are those of *Conventions in the Biquaternion Universe*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2(e_0) = I$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar part; $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the home of the rotations; $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, its imaginary half; $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the home of the boosts; and $\mathbb{M}_-$ is the anti-fixed space of Hermitian conjugation, with $Q_0 = iq'_0$ and $Q_k$ real, the home of the four-vectors. Every numerical value below was recomputed in double precision; the residuals of the identities quoted are below $2\times10^{-12}$.
 
 The restrictions are taken one at a time in the sections that follow, in the order in which the framework names the subspaces — centre, vector, quaternion, antiquaternion, informational, material — and each part is built the same way: it opens with the element and its biquaternion norm, states which of the four factors survive, gives the surviving factors explicitly, and closes with worked examples. Where a subspace's defining condition needs a computation of its own — the boost axis and the orthogonality of the rotor in the vector subspace, the two branches of each sector — that computation is a subsection of the part. Three further sections close the article, each a comparison across all six: the biquaternion norm as the single object that decides the phase, the count of the dimensions each factor accounts for, and the four coordinate blocks, on which the restrictions have to agree element by element.
 
@@ -32,7 +32,7 @@ The restrictions are taken one at a time in the sections that follow, in the ord
 The representation is constructed in two steps, and each step produces two factors. First the modulus is extracted, with
 
 $$
-\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}, \qquad r = \left|\det\Phi(\tilde{Q})\right|^{1/2}, \qquad \alpha = \tfrac12\arg\det\Phi(\tilde{Q}) ,
+\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}, \qquad r = \left|\det\mathsf{M}_2(\tilde{Q})\right|^{1/2}, \qquad \alpha = \tfrac12\arg\det\mathsf{M}_2(\tilde{Q}) ,
 $$
 
 the principal branch of the square root fixing the pair $(r,\alpha)$ uniquely. The remaining element $U = \tilde{Q}/\rho$ has unit norm, and its polar decomposition is the Cartan decomposition
@@ -55,7 +55,7 @@ The last identity is the one that decides the whole of what follows, because it 
 
 *Proof.* Let $\tilde{Q}\tilde{Q}^{*} = ce_0$ with $c > 0$. Then $B^2 = (c/r^2)e_0$, a positive real multiple of the unit; the unique Hermitian positive square root of such an element is the positive real multiple $\sqrt{c/r^2}\,e_0$ of the unit, and $N(B) = 1$ forces $\sqrt{c/r^2} = 1$ and $B = e_0$. Conversely $B = e_0$ gives $\tilde{Q}\tilde{Q}^{*} = r^2e_0$.
 
-In the matrix picture the criterion reads $\Phi(\tilde{Q})\Phi(\tilde{Q})^\dagger = \lambda I$ with $\lambda > 0$: the boost factor is trivial exactly when the element is, up to a scale, a **unitary** matrix rather than a general invertible one. That is a condition on the element alone, and it is satisfied on three of the remarkable subspaces for every element — the centre and the two halves — on the vector subspace only for a parallel pair, and on the two sectors only in the two exceptional cases computed below.
+In the matrix picture the criterion reads $\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})^\dagger = \lambda I$ with $\lambda > 0$: the boost factor is trivial exactly when the element is, up to a scale, a **unitary** matrix rather than a general invertible one. That is a condition on the element alone, and it is satisfied on three of the remarkable subspaces for every element — the centre and the two halves — on the vector subspace only for a parallel pair, and on the two sectors only in the two exceptional cases computed below.
 
 ### Criterion for the Rotor
 
@@ -76,7 +76,7 @@ Each criterion is one condition, and each condition cuts a class out of the nonz
 
 The two counts are the ones the section *Where the Dimensions Go* distributes over the four factors, read the other way round: an element of $\mathcal{U}$ spends its real dimensions on a scale, a phase and a rotor, and an element of $\mathcal{H}$ on a complex modulus and a boost.
 
-The two classes are not the same kind of object. $\mathcal{U}$ is closed under multiplication and under inversion, since a product of two positive multiples of unitary elements is again one, so it is a group — $\mathbb{R}_{>0}\times U(2)$, with the central phase as its circle and the rotor group as its three-sphere. $\mathcal{H}$ is not closed: $\Phi(\tilde{Q}_1\tilde{Q}_2)$ is a product of two Hermitian positive definite matrices, and such a product is Hermitian exactly when the two factors commute, so two boosts about different axes leave the class as soon as they are composed, and only co-axial ones stay in it.
+The two classes are not the same kind of object. $\mathcal{U}$ is closed under multiplication and under inversion, since a product of two positive multiples of unitary elements is again one, so it is a group — $\mathbb{R}_{>0}\times U(2)$, with the central phase as its circle and the rotor group as its three-sphere. $\mathcal{H}$ is not closed: $\mathsf{M}_2(\tilde{Q}_1\tilde{Q}_2)$ is a product of two Hermitian positive definite matrices, and such a product is Hermitian exactly when the two factors commute, so two boosts about different axes leave the class as soon as they are composed, and only co-axial ones stay in it.
 
 Read on the remarkable subspaces, the membership follows from the same two products. The centre lies in both classes. The quaternion and antiquaternion subspaces lie inside $\mathcal{U}$ and meet $\mathcal{H}$ only in the centre, since every element of those halves has a real biquaternion norm and hence a trivial boost factor, and a nontrivial rotor. The vector subspace lies inside $\mathcal{U}$ exactly on the parallel pairs $\mathbf{v}\parallel\mathbf{w}$ and never inside $\mathcal{H}$ away from the centre. And a sector lies inside $\mathcal{H}$ exactly on its definite branch, the branch on which the rotor is the discrete sign, and inside $\mathcal{U}$ only on the centre and on the line $a = 0$, the line on which its Hermitian product degenerates to a scalar.
 
@@ -92,9 +92,9 @@ The count closes against the group of units, whose real dimension is $8$: $5+5-8
 
 ### The Matrix Image of Each Subspace
 
-The matrix representative makes the criteria computable at a glance. With $\Phi(e_k) = -i\sigma_k$,
+The matrix representative makes the criteria computable at a glance. With $\mathsf{M}_2(e_k) = -i\sigma_k$,
 
-| subspace | $\Phi(\tilde{Q})$ | class of matrix |
+| subspace | $\mathsf{M}_2(\tilde{Q})$ | class of matrix |
 |---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $zI$ | scalar |
 | $\mathrm{Vect}(\mathbb{B})$ | $\left(w_k - i v_k\right)\sigma_k$ | traceless |
@@ -135,7 +135,7 @@ $$
 
 the two lines being $\rho = z$ and $\rho = -z$. The polar representation of a biquaternion in the centre is therefore the polar form of the complex number $z$: the phase is **free**, and it is the argument of the element itself, taken modulo the branch of $\pi$. The two rotors have nothing to act on and reduce to the element $-e_0$ of the kernel of the two-to-one map, and the boundary case $\arg z = -\pi/2$ is the one on which the branch matters: for $\tilde{Q} = -2ie_0$ the phase is pulled from $-\pi/2$ to $+\pi/2$ and the sign is carried by the rotor.
 
-The matrix statement is the same one: $\Phi(\tilde{Q}) = zI$ is a scalar matrix, its positive Hermitian polar factor is $|z|I$, and the unitary polar factor is the number $z/|z|$ read as $\pm I$ after the branch of the square root has absorbed the sign.
+The matrix statement is the same one: $\mathsf{M}_2(\tilde{Q}) = zI$ is a scalar matrix, its positive Hermitian polar factor is $|z|I$, and the unitary polar factor is the number $z/|z|$ read as $\pm I$ after the branch of the square root has absorbed the sign.
 
 ### Worked Examples
 
@@ -158,7 +158,7 @@ $$
 \tilde{Q} = \mathbf{v} + i\,\mathbf{w} , \qquad \mathbf{v},\mathbf{w}\in\mathbb{R}^3 , \qquad N(\tilde{Q}) = |\mathbf{v}|^2 - |\mathbf{w}|^2 + 2i\,\mathbf{v}\cdot\mathbf{w} , \qquad \operatorname{Sc}(\tilde{Q}) = 0 .
 $$
 
-The biquaternion norm is complex and indefinite, so the phase is free here exactly as it is on the centre; it vanishes on the four-dimensional complex null cone $|\mathbf{v}| = |\mathbf{w}|$, $\mathbf{v}\cdot\mathbf{w} = 0$, and the representation is defined on the complement of that cone. In the matrix picture the subspace is the traceless class, $\Phi(\tilde{Q}) = \left(w_k - iv_k\right)\sigma_k$.
+The biquaternion norm is complex and indefinite, so the phase is free here exactly as it is on the centre; it vanishes on the four-dimensional complex null cone $|\mathbf{v}| = |\mathbf{w}|$, $\mathbf{v}\cdot\mathbf{w} = 0$, and the representation is defined on the complement of that cone. In the matrix picture the subspace is the traceless class, $\mathsf{M}_2(\tilde{Q}) = \left(w_k - iv_k\right)\sigma_k$.
 
 ### Which Factors Survive
 
@@ -225,7 +225,7 @@ $$
 N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2 > 0 \quad (\tilde{Q}\neq0), \qquad r = |\tilde{Q}| , \qquad \alpha = 0 ,
 $$
 
-positive definite, so its only zero is the origin and the representation is defined on the whole subspace except $0$. In the matrix picture it is the quaternionic class, $\Phi(\tilde{Q}) = q_0I - iq_k\sigma_k$.
+positive definite, so its only zero is the origin and the representation is defined on the whole subspace except $0$. In the matrix picture it is the quaternionic class, $\mathsf{M}_2(\tilde{Q}) = q_0I - iq_k\sigma_k$.
 
 ### Which Factors Survive
 
@@ -280,7 +280,7 @@ $$
 \tilde{Q} = re^{i\pi/2}\hat{q} = i\,r\,\hat{q} .
 $$
 
-The two halves therefore exhibit the same decomposition of the rotor, and differ by exactly the multiplication by the central phase $e^{i\pi/2} = i$, which is the map $i\mathbb{H}_{\mathbb{B}} = i\cdot\mathbb{H}_{\mathbb{B}}$. In the corpus's notation the same fact is the sector exchange $\mathbb{M}_+ = i\mathbb{M}_-$; here it appears between the two halves, and it is the cleanest instance of the phase acting as a map rather than as a coordinate. In the matrix picture the half is carried by $i$ times the quaternionic class, $\Phi(\tilde{Q}) = i\Phi(q)$, and $\Phi(\tilde{Q})\Phi(\tilde{Q})^\dagger = \Phi(q)\Phi(q)^\dagger = (|a|^2+|b|^2)I$ is the same positive scalar as on $\mathbb{H}_{\mathbb{B}}$, so the boost factor is absent there for the same reason.
+The two halves therefore exhibit the same decomposition of the rotor, and differ by exactly the multiplication by the central phase $e^{i\pi/2} = i$, which is the map $i\mathbb{H}_{\mathbb{B}} = i\cdot\mathbb{H}_{\mathbb{B}}$. In the corpus's notation the same fact is the sector exchange $\mathbb{M}_+ = i\mathbb{M}_-$; here it appears between the two halves, and it is the cleanest instance of the phase acting as a map rather than as a coordinate. In the matrix picture the half is carried by $i$ times the quaternionic class, $\mathsf{M}_2(\tilde{Q}) = i\mathsf{M}_2(q)$, and $\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})^\dagger = \mathsf{M}_2(q)\mathsf{M}_2(q)^\dagger = (|a|^2+|b|^2)I$ is the same positive scalar as on $\mathbb{H}_{\mathbb{B}}$, so the boost factor is absent there for the same reason.
 
 The two halves are the two definite subspaces — biquaternion norm of signature $(4,0)$ and $(0,4)$ — and on a definite subspace the phase cannot vary, because the biquaternion norm takes values on a ray of $\mathbb{C}$: the positive real axis on $\mathbb{H}_{\mathbb{B}}$ and the negative real axis on $i\mathbb{H}_{\mathbb{B}}$. This is the first instance of the rule proved in the section on the biquaternion norm below.
 
@@ -303,7 +303,7 @@ $$
 \tilde{Q} = a\,e_0 + i\,\mathbf{w} , \qquad a\in\mathbb{R}, \quad \mathbf{w}\in\mathbb{R}^3, \quad s = |\mathbf{w}| , \qquad N(\tilde{Q}) = a^2 - s^2 \in\mathbb{R} .
 $$
 
-The sector is the fixed space of Hermitian conjugation, of real dimension four; its biquaternion norm is the real indefinite form $a^2-s^2$, vanishing on the cone $|a| = s$, and the representation is defined off that cone. The element is Hermitian, $\tilde{Q}^{*} = \tilde{Q}$, and in the matrix picture it is the Hermitian class, $\Phi(\tilde{Q}) = aI + w_k\sigma_k$.
+The sector is the fixed space of Hermitian conjugation, of real dimension four; its biquaternion norm is the real indefinite form $a^2-s^2$, vanishing on the cone $|a| = s$, and the representation is defined off that cone. The element is Hermitian, $\tilde{Q}^{*} = \tilde{Q}$, and in the matrix picture it is the Hermitian class, $\mathsf{M}_2(\tilde{Q}) = aI + w_k\sigma_k$.
 
 ### Why There Are Exactly Two Branches
 
@@ -351,7 +351,7 @@ $$
 \tilde{Q} = i\,a\,e_0 + \mathbf{v} , \qquad a = ct\in\mathbb{R}, \quad \mathbf{v}\in\mathbb{R}^3, \quad s = |\mathbf{v}| , \qquad N(\tilde{Q}) = s^2 - a^2 \in\mathbb{R} .
 $$
 
-The sector is the fixed space of the anti-Hermitian conjugation $\flat$ and the $-1$ eigenspace of Hermitian conjugation, of real dimension four; its biquaternion norm is the real indefinite form $s^2-a^2$, vanishing on the light cone $s = |a|$, and the representation is defined off that cone. In the matrix picture it is $i$ times the Hermitian class, $\Phi(\tilde{Q}) = i\left(aI - v_k\sigma_k\right)$. The biquaternion norm is real, so the phase takes one of the two values compatible with a real biquaternion norm, and the element is anti-Hermitian, $\tilde{Q}^{*} = -\tilde{Q}$. That single condition fixes the shape of the representation.
+The sector is the fixed space of the anti-Hermitian conjugation $\flat$ and the $-1$ eigenspace of Hermitian conjugation, of real dimension four; its biquaternion norm is the real indefinite form $s^2-a^2$, vanishing on the light cone $s = |a|$, and the representation is defined off that cone. In the matrix picture it is $i$ times the Hermitian class, $\mathsf{M}_2(\tilde{Q}) = i\left(aI - v_k\sigma_k\right)$. The biquaternion norm is real, so the phase takes one of the two values compatible with a real biquaternion norm, and the element is anti-Hermitian, $\tilde{Q}^{*} = -\tilde{Q}$. That single condition fixes the shape of the representation.
 
 ### Why There Are Exactly Two Branches
 
@@ -367,7 +367,7 @@ $$
 \alpha = 0 \ \text{with}\ \hat{q}\ \text{a pure unit vector} , \qquad \text{or} \qquad \alpha = \frac{\pi}{2}\ \text{with}\ \hat{q} = \pm e_0 ,
 $$
 
-and no third possibility exists. Since $N = r^2e^{2i\alpha}$, the first branch is the **spacelike** case $s > |a|$ and the second is the **timelike** case $|a| > s$. On the material sector the phase is thus a two-valued label of the causal character of the four-vector, and it is exactly the $ict$ reading of the companion article: a timelike four-vector has interval $N < 0$, its square root is imaginary, and the phase is the angle $\pi/2$ that makes the time component imaginary.
+and no third possibility exists. Since $N = r^2e^{2i\alpha}$, the first branch is the **spacelike** case $s > |a|$ and the second is the **timelike** case $|a| > s$. On the material sector the phase is thus a two-valued label of the causal character of the four-vector, and it is exactly the $ict$ interpretation of the companion article: a timelike four-vector has interval $N < 0$, its square root is imaginary, and the phase is the angle $\pi/2$ that makes the time component imaginary.
 
 ### The Boost Factor
 
@@ -468,7 +468,7 @@ are the intersections of the remarkable subspaces, and each block lies in three 
 | $X_{\mathrm{m}}$ | $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ | $\mathbf{x}$ | $|\mathbf{x}|$ | $0$ | $e_0$ | $\hat{\mathbf{x}}$ |
 | $X_{\mathrm{i}}$ | $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | $i\mathbf{w}$ | $|\mathbf{w}|$ | $\pi/2$ | $e_0$ | $\hat{\mathbf{w}}$ |
 
-Every entry satisfies the restrictions of each subspace that contains it. On $T_{\mathrm{i}}$ the centre gives $\hat{q} = \pm e_0$, the quaternion subspace gives $\hat{q} = \tilde{Q}/|\tilde{Q}| = \pm e_0$, and the informational sector with $s = 0$ gives $m = 0$, hence $B = e_0$ and $\hat{q} = \operatorname{sign}(a)e_0$; the three readings are the same. On $X_{\mathrm{m}}$ the vector subspace reading has $\mathbf{w} = 0$, which is the degenerate case $\mathbf{v}\times\mathbf{w} = 0$, hence $B = e_0$; the quaternion reading gives the rotor $\hat{\mathbf{x}}$; and the material-sector reading with $a = 0$ gives the spacelike rotor $\hat{\mathbf{v}} = \hat{\mathbf{x}}$ with the trivial boost $B = e_0$; the three readings are the same. On $X_{\mathrm{i}}$ the vector, antiquaternion and informational readings agree the same way, with the phase $\pi/2$ and the rotor $\hat{\mathbf{w}}$ in all three. The blocks are therefore the elements on which all the applicable simplifications hold at once, and the table is a consistency check of the six sections above rather than a new computation.
+Every entry satisfies the restrictions of each subspace that contains it. On $T_{\mathrm{i}}$ the centre gives $\hat{q} = \pm e_0$, the quaternion subspace gives $\hat{q} = \tilde{Q}/|\tilde{Q}| = \pm e_0$, and the informational sector with $s = 0$ gives $m = 0$, hence $B = e_0$ and $\hat{q} = \operatorname{sign}(a)e_0$; the three interpretations are the same. On $X_{\mathrm{m}}$ the vector subspace interpretation has $\mathbf{w} = 0$, which is the degenerate case $\mathbf{v}\times\mathbf{w} = 0$, hence $B = e_0$; the quaternion interpretation gives the rotor $\hat{\mathbf{x}}$; and the material-sector interpretation with $a = 0$ gives the spacelike rotor $\hat{\mathbf{v}} = \hat{\mathbf{x}}$ with the trivial boost $B = e_0$; the three interpretations are the same. On $X_{\mathrm{i}}$ the vector, antiquaternion and informational interpretations agree the same way, with the phase $\pi/2$ and the rotor $\hat{\mathbf{w}}$ in all three. The blocks are therefore the elements on which all the applicable simplifications hold at once, and the table is a consistency check of the six sections above rather than a new computation.
 
 ## Physical Readings
 
@@ -483,7 +483,7 @@ Restricted to the remarkable subspaces, the polar representation $\tilde{Q} = re
 | symbol | meaning |
 |---|---|
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | a biquaternion, $Q_\mu\in\mathbb{C}$ |
-| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = \det\Phi(\tilde{Q})$ | the biquaternion norm and the determinant of the $2\times2$ representative |
+| $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ | the biquaternion norm and the determinant of the $2\times2$ representative |
 | $\rho = re^{i\alpha} = \sqrt{N(\tilde{Q})}$ | the complex modulus, in the principal branch $\alpha\in(-\pi/2,\pi/2]$ |
 | $B = \sqrt{\tilde{Q}\tilde{Q}^{*}}/r$ | the boost factor, Hermitian positive of biquaternion norm one |
 | $\hat{q} = B^{-1}\tilde{Q}/\rho$ | the rotor, a unit real quaternion |
@@ -508,6 +508,6 @@ Restricted to the remarkable subspaces, the polar representation $\tilde{Q} = re
 - *The Polar Element Representation of Biquaternions* (`articles_physics/the-polar-element-representation-of-biquaternions.md`), for the theorem, the four factors, the algorithm and the uniqueness, the determinant, the interval and the light cone.
 - *Relations Between Subspaces* (`articles_physics/relations-between-subspaces.md`), for the remarkable subspaces, the involutions, the four blocks, the intersections and the biquaternion norm of each subspace.
 - *Other Remarkable Subspaces* (`articles_physics/other-remarkable-subspaces.md`), for the centre, the vector subspace, the quaternion and the anti-quaternion subspace: their dimensions over the reals and over the complex numbers and the coordinates each carries.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the boosts and the information reading.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the boosts and the information interpretation.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* (`articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.md`), for the four-vectors and the light cone.
-- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the matrix classes of the remarkable subspaces and $\det\Phi(\tilde{Q}) = N(\tilde{Q})$.
+- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the matrix classes of the remarkable subspaces and $\det\mathsf{M}_2(\tilde{Q}) = N(\tilde{Q})$.

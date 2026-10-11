@@ -20,7 +20,7 @@ where $h$ is the binary entropy function. The entropy vanishes exactly on the nu
 
 Two functionals appear below and must be kept apart, because the whole subject turns on the difference. The **spectral** value $\mathcal{S}(\tilde{\rho})$ is a property of the state and is invariant under reversible rotor flow; it is the fine-grained reference. The **coarse-grained** value $\mathcal{S}(\Phi(\tilde{\rho}))$ is the entropy of the image of the state under a coarse-graining $\Phi$, and it is this second number that increases under a coarse-graining. The second law, in this language, is the statement that a coarse-graining is a contraction of the Bloch ball, so that the entropy of the image is never less than the entropy of the state. The two are reconciled by the fact that the fine-grained value is the *minimum* over all preparations of the state, and hence the least coarse description the state admits.
 
-The treatment is **classical**. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{\rho}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article *Von Neumann Entropy and the Biquaternion Norm* develops them, and they are not developed here. Where the quantum reading is used, it is used as a bound, and it is identified as such.
+The treatment is **classical**. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{\rho}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article *Von Neumann Entropy and the Biquaternion Norm* develops them, and they are not developed here. Where the quantum interpretation is used, it is used as a bound, and it is identified as such.
 
 The probabilities the functional is built from are themselves trace pairings. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\hat{\mathbf{r}})\tilde{\rho})$, and the companion article *The Born Rule as a Trace Formula — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
 
@@ -82,7 +82,7 @@ $$
 \mathrm{Tr}\!\left(\tilde{\rho}^2\right) = \tfrac{1}{2}\left(1 + |\mathbf{r}|^2\right),
 $$
 
-so that purity and idempotency are the same condition, and the biquaternion norm, the deviation from idempotency, and the purity are three readings of the single number $|\mathbf{r}|^2$.
+so that purity and idempotency are the same condition, and the biquaternion norm, the deviation from idempotency, and the purity are three interpretations of the single number $|\mathbf{r}|^2$.
 
 ## The Entropy Functional
 
@@ -210,7 +210,7 @@ $$
 \Phi : \mathbb{M}_+ \longrightarrow \mathbb{M}_+, \qquad \tilde{\rho} \longmapsto \Phi(\tilde{\rho}),
 $$
 
-subject to four conditions, each of which has an operational reading.
+subject to four conditions, each of which has an operational interpretation.
 
 - **Linearity.** $\Phi(a\tilde{\rho}_1 + b\tilde{\rho}_2) = a\Phi(\tilde{\rho}_1) + b\Phi(\tilde{\rho}_2)$ for real $a,b$. A coarse-graining of a mixture is the mixture of the coarse-grainings, because the description acts on the preparation rather than on the individual outcome.
 - **Positivity, in the strong form of complete positivity.** The map must remain positive when the sector is described jointly with any reference system, which is the condition that distinguishes a physical operation from a merely positive map, as the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy* develops.
@@ -325,7 +325,7 @@ $$
 
 using $h'(r) = -\mathrm{artanh}\,r$ and $\dot{r}(t) = -\Gamma r_\perp(t)^2/r(t)$. The rate is supported by the instantaneous transverse component, since it is $r_\perp(t)$ that carries the contraction; the initial component alone would overstate the rate at every $t > 0$.
 
-The distinction matters as soon as the state has an axial part. Take $\mathbf{r} = (0.3, 0.4, 0.5)$ with $\hat{\mathbf{n}} = e_3$ and $\Gamma = 0.7$, so that $r_\parallel = 0.5$ and $r_\perp(0) = 0.5$: at $t = 1$ the finite-difference derivative is $0.0487233141$ and $\Gamma r_\perp(t)^2\,\mathrm{artanh}\,r(t)/r(t) = 0.0487233141$, whereas the same expression with $r_\perp(0)$ in place of $r_\perp(t)$ gives $0.1975827817$. On the state of the earlier checks, $\mathbf{r} = \tfrac{1}{2}(e_1+e_2)$ with $\hat{\mathbf{n}} = e_3$, the axial part vanishes, $r_\perp(t) = r(t)$, and at $t = 0$ the rate is $\Gamma\,r\,\mathrm{artanh}\,r = 0.4362576681$; that case cannot separate the two readings, which is why the state with $r_\parallel \neq 0$ is the decisive check.
+The distinction matters as soon as the state has an axial part. Take $\mathbf{r} = (0.3, 0.4, 0.5)$ with $\hat{\mathbf{n}} = e_3$ and $\Gamma = 0.7$, so that $r_\parallel = 0.5$ and $r_\perp(0) = 0.5$: at $t = 1$ the finite-difference derivative is $0.0487233141$ and $\Gamma r_\perp(t)^2\,\mathrm{artanh}\,r(t)/r(t) = 0.0487233141$, whereas the same expression with $r_\perp(0)$ in place of $r_\perp(t)$ gives $0.1975827817$. On the state of the earlier checks, $\mathbf{r} = \tfrac{1}{2}(e_1+e_2)$ with $\hat{\mathbf{n}} = e_3$, the axial part vanishes, $r_\perp(t) = r(t)$, and at $t = 0$ the rate is $\Gamma\,r\,\mathrm{artanh}\,r = 0.4362576681$; that case cannot separate the two interpretations, which is why the state with $r_\parallel \neq 0$ is the decisive check.
 
 The rate is positive and it vanishes when the transverse component vanishes. It also vanishes at the maximally mixed state, since there $r_\perp(t) \le r(t) \to 0$ and $\mathrm{artanh}\,r(t) \to 0$ together. It **diverges on the boundary sphere off the pointer axis**, where $\mathrm{artanh}\,r$ blows up while the transverse component stays positive: a state that is nearly pure and nearly orthogonal to the pointer axis has the most information left to lose, and it loses that information fastest. The extremum of the rate over the ball is therefore at purity, not at maximal mixing: the rate is zero at the maximally mixed state and grows without bound as the pure sphere is approached away from the axis, so it is unbounded above over the ball and has no finite maximum.
 
@@ -359,7 +359,7 @@ The dephasing rate makes the statement quantitative: the fine-grained value $\ma
 
 ## Preparations, Partitions, and the Least Coarse Description
 
-There is one further relation between the fine and coarse readings, and it explains why the fine-grained value is the right reference. A **preparation** of a state is an ensemble of pure states with weights,
+There is one further relation between the fine and coarse interpretations, and it explains why the fine-grained value is the right reference. A **preparation** of a state is an ensemble of pure states with weights,
 
 $$
 \tilde{\rho} = \sum_a w_a\, \tilde\Pi(\hat{\boldsymbol{\mu}}_a), \qquad w_a \ge 0, \quad \sum_a w_a = 1 ,
@@ -411,7 +411,7 @@ $$
 \mathcal{S}(\tilde{\rho}) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho})}\right),
 $$
 
-so the entropy vanishes exactly on the null (zero-divisor) cone, is maximal at the maximally mixed state, and measures the depth of the state inside the future cone. The natural invariant of the algebra and the information content of the state are one quantity in two readings.
+so the entropy vanishes exactly on the null (zero-divisor) cone, is maximal at the maximally mixed state, and measures the depth of the state inside the future cone. The natural invariant of the algebra and the information content of the state are one quantity in two interpretations.
 
 The **coarse-grained entropy** is the functional evaluated on the image, $\mathcal{S}(\Phi(\tilde{\rho}))$; for the pointer conditional expectation it is the binary Shannon entropy $h(|\hat{\mathbf{n}}\cdot\mathbf{r}|)$. Since a unital completely positive map contracts the Bloch ball, $|\mathbf{r}_\Phi|\le|\mathbf{r}|$, the coarse-grained entropy never falls below the fine-grained one, with equality only for states already in the image. The fine-grained entropy is invariant under reversible rotor flow — the biquaternion form of Liouville's theorem — and the increase appears only when a flow and a coarse-graining are composed. That composition is the second law of the sector.
 

@@ -323,7 +323,7 @@ The general Lorentz transformation is the product of a boost and a rotation, and
 
 ## Active, Passive and Relative Transformations; the Reciprocal Basis
 
-The word "transformation" hides three different operations, and the algebra states all three with the same rotor. It is worth fixing the three readings, because the source of the paravector literature distinguishes them and the distinction is not visible in the component formulas.
+The word "transformation" hides three different operations, and the algebra states all three with the same rotor. It is worth fixing the three interpretations, because the source of the paravector literature distinguishes them and the distinction is not visible in the component formulas.
 
 **Active.** The object is transformed and the frame is held fixed: a four-vector $\tilde{Q}$ is carried to $\tilde{Q}' = \tilde{L}\tilde{Q}\tilde{L}^{*}$, with $\tilde{L}$ the rotor of the operation. **Passive.** The frame is changed and the object is fixed: the components of the same object in the new frame are those of $\tilde{L}^{-1}\tilde{Q}\tilde{L}^{-{}^{*}}$, the inverse conjugation. **Relative.** Two frames are related by a rotor that is the ratio of their eigenspinors: if two worldlines carry eigenspinors $\tilde{\Lambda}_1$ and $\tilde{\Lambda}_2$ (in the sense of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time*), then the rotor
 
@@ -331,7 +331,7 @@ $$
 \tilde{R}_{2\leftarrow1} = \tilde{\Lambda}_2\tilde{\Lambda}_1^{-1}
 $$
 
-carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three readings differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde{L}$ without committing to a reading, and says which reading is meant only where a physical frame is named.
+carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde{L}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.
 
 **The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_0, e_1, e_2, e_3\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$. The basis and its dual are
 
@@ -390,7 +390,7 @@ That sentence is the one that matters for the corpus. The two postulates of 1905
 The formal derivation above decides neither of the two things the experiments decide:
 
 1. **The angle.** Nothing in the algebra forces the boost's rotation angle to be imaginary; that is what the constancy of $c$ forces, at second order, and the first-order experiments place the same constraint on the velocity-addition law.
-2. **The parameterisation.** The rapidity $\psi$, with $\tanh\psi = u/c$ and the $\cosh(\psi/2)$ and $\sinh(\psi/2)$ of the boost biquaternion, is a reading of the experiments and not of the algebra.
+2. **The parameterisation.** The rapidity $\psi$, with $\tanh\psi = u/c$ and the $\cosh(\psi/2)$ and $\sinh(\psi/2)$ of the boost biquaternion, is an interpretation of the experiments and not of the algebra.
 
 Conversely, the experiments do not decide between the biquaternion formulation and the matrix one. They are experiments on the group, and a faithful representation cannot fail them; a reformulation must be judged by what it predicts beyond the group. That is the same point the empirical-status article makes from the other direction.
 
@@ -500,6 +500,6 @@ The transformation itself is fixed by experiment, not by the algebra: aberration
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection between Clifford algebras and the Lorentz group.
 - V. V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (2006), for a biquaternionic approach to the Lorentz group.
 - L. A. Alexeyeva, "Lorentz Transformations for One Biquaternionic Model of the Electro-Gravimagnetic Field. Conservation Laws" (2009), for the induced action of the Lorentz transformation on the A-field biquaternions — potential, strength, charge–current and power–force — worked out component by component, and for the finding that the model's charge–mass conservation law is not invariant. The English text of the same work is arXiv:1104.1483v1; arXiv:0904.3446v1 is the Russian preprint.
-- Jean Surdej, *La relativité restreinte*, chapter 3 of the lecture notes (2015–2016), for the experimental route recorded in *What Fixes the Transformation: The Experimental Route*: aberration of starlight, the Fizeau drag, the Michelson–Morley null result and the source's own reading of it, the FitzGerald–Lorentz contraction, Poincaré on the antipathy between Maxwell's equations and the Galilean transformation, the two postulates of 1905, and Einstein's 1955 retrospective on the bearing of the transformation.
-- William E. Baylis, *Relativity in Introductory Physics*, *Canadian Journal of Physics* **82** (2004) 853–873 (arXiv:physics/0406158), §V.B, for the closed-form rotor and the bisector property recorded here, and for the paravector reading of the same transformation.
+- Jean Surdej, *La relativité restreinte*, chapter 3 of the lecture notes (2015–2016), for the experimental route recorded in *What Fixes the Transformation: The Experimental Route*: aberration of starlight, the Fizeau drag, the Michelson–Morley null result and the source's own interpretation of it, the FitzGerald–Lorentz contraction, Poincaré on the antipathy between Maxwell's equations and the Galilean transformation, the two postulates of 1905, and Einstein's 1955 retrospective on the bearing of the transformation.
+- William E. Baylis, *Relativity in Introductory Physics*, *Canadian Journal of Physics* **82** (2004) 853–873 (arXiv:physics/0406158), §V.B, for the closed-form rotor and the bisector property recorded here, and for the paravector interpretation of the same transformation.
 

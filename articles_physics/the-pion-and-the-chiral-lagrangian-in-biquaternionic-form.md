@@ -20,12 +20,12 @@ and the chiral Lagrangian is the biquaternion norm of its derivative. The constr
 
 The findings are the following.
 
-- **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\tilde\pi/f_\pi)$ is a unit real quaternion. The trace identities $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and, for the standard generators $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, together with $[T_a,T_b] = i\varepsilon_{abc}T_c$, hold and were checked from the complex $2\times2$ representation $\Phi(e_a) = -i\sigma_a$. Expanding the biquaternion chiral Lagrangian,
+- **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\tilde\pi/f_\pi)$ is a unit real quaternion. The trace identities $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and, for the standard generators $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, together with $[T_a,T_b] = i\varepsilon_{abc}T_c$, hold and were checked from the complex $2\times2$ representation $\mathsf{M}_2(e_a) = -i\sigma_a$. Expanding the biquaternion chiral Lagrangian,
 $$
 \mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\,\mathrm{Tr}\!\left(\partial_\mu\tilde U\,\partial_\mu\tilde U^{*}\right),
 $$
 gives the canonical pion kinetic term $\tfrac12[(\partial_t\pi^a)^2-(\nabla\pi^a)^2]$ with coefficient exactly one; verified numerically. The mass term $\propto\mathrm{Tr}(M\tilde U + M\tilde U^{*})$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
-- **Interpretation.** Reading the pion's isospin triplet as the adjoint of the framework's material-sector $\mathrm{SU}(2)$, and the chiral field as a unit real quaternion, is the interpretive link between the framework's compact group and the pion's quantum numbers. The interpretation is exact at the level of the unbroken subgroup and is labelled where the chiral group is involved.
+- **Interpretation.** Interpretation the pion's isospin triplet as the adjoint of the framework's material-sector $\mathrm{SU}(2)$, and the chiral field as a unit real quaternion, is the interpretive link between the framework's compact group and the pion's quantum numbers. The interpretation is exact at the level of the unbroken subgroup and is labelled where the chiral group is involved.
 - **Gap, left visible.** The framework's centre is vector-like: the algebra supplies the diagonal isospin $SU(2)_V$ and its adjoint action on the pion triplet, but it does not supply the axial currents, the anomaly, or the Wess–Zumino–Witten term, which belong to the spinor and general-gauge sectors. The chiral Lagrangian is therefore realised as a geometric construction on the framework's group manifold, with the axial-current algebra and the anomaly imported from the standard treatment.
 
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the Goldstone boson, the derivative couplings, the decay constant and the effective Lagrangian.
@@ -66,7 +66,7 @@ $$
 
 and Goldstone's theorem gives three massless scalars, which are the three pions $\pi^\pm,\pi^0$. The nonzero quark masses break the symmetry explicitly, giving the pions a small mass and making them **pseudo-Goldstone** bosons; the explicit breaking is a perturbation, and the chiral Lagrangian organises its effects.
 
-**The framework's part.** The biquaternion framework does not contain colour and does not contain the quark condensate; those belong to the spinor sector. What the framework contains is the group $SU(2)$, realised as the unit real quaternions, and its adjoint action on the material sector. The unbroken isospin $SU(2)_V$ is exactly such a group, and the pion triplet transforms in its adjoint, so the framework supplies the correct transformation law of the pion under the unbroken symmetry. The axial generators that complete $G$ are not supplied by the centre, and this is the boundary of the framework's reach; it is stated precisely in the section on currents below and in the reading section at the end.
+**The framework's part.** The biquaternion framework does not contain colour and does not contain the quark condensate; those belong to the spinor sector. What the framework contains is the group $SU(2)$, realised as the unit real quaternions, and its adjoint action on the material sector. The unbroken isospin $SU(2)_V$ is exactly such a group, and the pion triplet transforms in its adjoint, so the framework supplies the correct transformation law of the pion under the unbroken symmetry. The axial generators that complete $G$ are not supplied by the centre, and this is the boundary of the framework's reach; it is stated precisely in the section on currents below and in the interpretation section at the end.
 
 ## The Pion as an Adjoint of the Material Sector
 
@@ -120,7 +120,7 @@ $$
 \mathrm{Tr}\!\left(T_a\{\!T_b,T_c\!\}\right) = 0 ,
 $$
 
-the last because the symmetric $d$-symbol vanishes for $SU(2)$. These were checked from the complex $2\times2$ representation of the framework, $\Phi(e_a) = -i\sigma_a$, $\Phi(i) = iI_2$: the diagonal entries come out $-2$ and the off-diagonal entries vanish, so $\mathrm{Tr}(T_aT_b) = \frac14\cdot(-2)\cdot i^2\delta_{ab} = \frac12\delta_{ab}$ exactly, and the commutator reproduces the $\varepsilon$-tensor. The factor $i$ in $T_a$ is the standard one that makes the generators Hermitian while the framework's $e_a$ are anti-Hermitian; it does not change the algebra.
+the last because the symmetric $d$-symbol vanishes for $SU(2)$. These were checked from the complex $2\times2$ representation of the framework, $\mathsf{M}_2(e_a) = -i\sigma_a$, $\mathsf{M}_2(i) = iI_2$: the diagonal entries come out $-2$ and the off-diagonal entries vanish, so $\mathrm{Tr}(T_aT_b) = \frac14\cdot(-2)\cdot i^2\delta_{ab} = \frac12\delta_{ab}$ exactly, and the commutator reproduces the $\varepsilon$-tensor. The factor $i$ in $T_a$ is the standard one that makes the generators Hermitian while the framework's $e_a$ are anti-Hermitian; it does not change the algebra.
 
 ## The Chiral Lagrangian
 
@@ -297,7 +297,7 @@ $$
 = \frac12\left[(\partial_t\pi^a)^2-(\nabla\pi^a)^2\right] + O(\pi^4),
 $$
 
-with the coefficient exactly one, fixed by the trace identity $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ for $T_a = \tfrac{i}{2}e_a$ (equivalently $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$). These identities were checked from the representation $\Phi(e_a) = -i\sigma_a$, and the kinetic coefficient was verified directly, the biquaternion norm divided by $(\epsilon/f_\pi)^2$ coming out exactly $1$.
+with the coefficient exactly one, fixed by the trace identity $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ for $T_a = \tfrac{i}{2}e_a$ (equivalently $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$ and $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$). These identities were checked from the representation $\mathsf{M}_2(e_a) = -i\sigma_a$, and the kinetic coefficient was verified directly, the biquaternion norm divided by $(\epsilon/f_\pi)^2$ coming out exactly $1$.
 
 The quark mass matrix adds the symmetry-breaking term $\frac{f_\pi^2B_0}{2}\mathrm{Tr}(M\tilde U + M^\dagger\tilde U^{*})$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$, whose quadratic part gives $m_{\pi^\pm}^2 = m_{\pi^0}^2 = B_0(m_u+m_d)$ in the isospin limit and hence the Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$. For the illustrative inputs $m_\pi = 139.6$ MeV, $f_\pi = 92.1$ MeV, $m_u+m_d = 7.0$ MeV, the relation gives $B_0 = 2.784$ GeV and $|\langle\bar qq\rangle|^{1/3} = 286.9$ MeV, of the standard order.
 

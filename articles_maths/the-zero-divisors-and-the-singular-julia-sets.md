@@ -27,9 +27,9 @@ and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line 
 1. **Square-zero**: $\tilde Q^2=0$, equivalently $Q_0=0$. These are the pure vectors with $(\mathbf Q,\mathbf Q)=0$.
 2. **Idempotent-like**: $\tilde Q=\tau\tilde\Pi$ with $\tau\in\mathbb{C}\setminus\{0\}$ and $\tilde\Pi$ a primitive idempotent; here $Q_0=\tau/2$, and $\tilde Q^2=\tau\tilde Q$.
 
-**Proof.** The matrix $\Phi(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\Phi(\tilde Q)=2Q_0$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_0\tilde Q=0$, so $Q_0=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\Phi(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\Phi$ gives $\tilde Q=\tau\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ of the algebra; conversely such an element has norm $\tau^2N(\tilde\Pi)=0$ and is non-zero.
+**Proof.** The matrix $\mathsf{M}_2(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_0$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_0\tilde Q=0$, so $Q_0=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\mathsf{M}_2(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\mathsf{M}_2$ gives $\tilde Q=\tau\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ of the algebra; conversely such an element has norm $\tau^2N(\tilde\Pi)=0$ and is non-zero.
 
-**Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\mathbf Q : (\mathbf Q,\mathbf Q)=0\}\subset\mathrm{Vect}(\mathbb{B})$, the isotropic cone of the general plain bilinear form $\mathbf Q\cdot\mathbf Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\Phi(\tilde Q)$ is nilpotent. The example $\tilde Q=e_1+ie_2$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
+**Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\mathbf Q : (\mathbf Q,\mathbf Q)=0\}\subset\mathrm{Vect}(\mathbb{B})$, the isotropic cone of the general plain bilinear form $\mathbf Q\cdot\mathbf Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\mathsf{M}_2(\tilde Q)$ is nilpotent. The example $\tilde Q=e_1+ie_2$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
 
 ## The Dynamics on the Cone
 
@@ -65,7 +65,7 @@ $$
 \{\tilde\Pi : \tilde\Pi^2=\tilde\Pi\}\subset J_0\cap\mathscr{Z}=\Sigma_0\cap\mathscr{Z} .
 $$
 
-**Proof.** An idempotent is a fixed point, $F_0(\tilde\Pi)=\tilde\Pi$, and its matrix has spectrum $\{0,1\}$ with distinct eigenvalues, so $\rho(\Phi(\tilde\Pi))=1$ and $\Phi(\tilde\Pi)$ is diagonalisable; hence $\tilde\Pi\in\mathcal K_0$ by the corollary on the parameter zero of *The Biquaternion Quadratic Map and Its Julia Sets*. For $\lambda>1$ the element $\lambda\tilde\Pi$ has $\rho=\lambda>1$ and lies outside $\mathcal K_0$, while $\lambda\tilde\Pi\to\tilde\Pi$ as $\lambda\to1$. So every neighbourhood of $\tilde\Pi$ meets the complement of $\mathcal K_0$, and $\tilde\Pi\in\partial\mathcal K_0=J_0$. The variety of idempotents is the orbit of a single rank-one idempotent under the group of units, hence smooth of complex dimension two, and it is contained in the cone by $N(\tilde\Pi)=0$ for an idempotent.
+**Proof.** An idempotent is a fixed point, $F_0(\tilde\Pi)=\tilde\Pi$, and its matrix has spectrum $\{0,1\}$ with distinct eigenvalues, so $\rho(\mathsf{M}_2(\tilde\Pi))=1$ and $\mathsf{M}_2(\tilde\Pi)$ is diagonalisable; hence $\tilde\Pi\in\mathcal K_0$ by the corollary on the parameter zero of *The Biquaternion Quadratic Map and Its Julia Sets*. For $\lambda>1$ the element $\lambda\tilde\Pi$ has $\rho=\lambda>1$ and lies outside $\mathcal K_0$, while $\lambda\tilde\Pi\to\tilde\Pi$ as $\lambda\to1$. So every neighbourhood of $\tilde\Pi$ meets the complement of $\mathcal K_0$, and $\tilde\Pi\in\partial\mathcal K_0=J_0$. The variety of idempotents is the orbit of a single rank-one idempotent under the group of units, hence smooth of complex dimension two, and it is contained in the cone by $N(\tilde\Pi)=0$ for an idempotent.
 
 **Corollary (the singular Julia set is not small).** $\Sigma_0$ contains a complex surface, so it is not a curve and not a countable set; in particular no statement that the singular part is negligible for the dimension can be true without qualification.
 
@@ -98,8 +98,8 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_0\tilde 
 | $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set of $F_{\tilde C}$ |
 | $\Sigma_{\tilde C}=J_{\tilde C}\cap\Sigma(\mathbb{B})$ | the singular Julia set |
 | $\tilde\Pi$ | an idempotent, $\tilde\Pi^2=\tilde\Pi$ |
-| $\tau=2Q_0$ | the non-zero eigenvalue of $\Phi(\tilde Q)$ on the cone |
-| $\rho(\Phi(\tilde Q))$ | the spectral radius |
+| $\tau=2Q_0$ | the non-zero eigenvalue of $\mathsf{M}_2(\tilde Q)$ on the cone |
+| $\rho(\mathsf{M}_2(\tilde Q))$ | the spectral radius |
 
 ## Further Reading
 

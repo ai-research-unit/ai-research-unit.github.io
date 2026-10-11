@@ -183,7 +183,7 @@ and the convergence is uniform in $x \in X$. Conversely, if the averages converg
 
 **Example (translations and horocycles).** The translation $x \mapsto x + \alpha$ of the circle is uniquely ergodic exactly when $\alpha$ is irrational; the horocycle flow of *Homogeneous Dynamics* is uniquely ergodic; and a unipotent flow on a nilmanifold is uniquely ergodic exactly when it is minimal, by the Green–Parry–Auslander theorem. In each case the ergodic theorem supplies the equidistribution, and the unique ergodicity supplies it for every point rather than almost every one.
 
-### The Topological Reading
+### The Topological Interpretation
 
 The relevance of unique ergodicity to equidistribution is that it removes the null set from the ergodic theorem. For a measure-preserving transformation the pointwise ergodic theorem holds only almost surely; for a uniquely ergodic continuous map it holds for every point. The mechanism is the continuity of the map, which makes the invariant measures a compact convex set and forces the empirical measures to converge to the only extreme point. The topological dynamics of continuous maps — minimality, recurrence, the structure of the invariant measures — is not covered here, and this article uses only the equidistribution consequence.
 

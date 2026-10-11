@@ -8,7 +8,7 @@ The algebra is that of *Octonion Algebra*, *Octonion Norm and Invertibility* and
 
 Throughout, $\hat o$ is the indeterminate of a word, $\tilde o_0\in\mathbb{O}$ is the starting point, $\tilde a,\tilde b,\dots$ are the constants (taken of norm one where a norm is computed), $[\tilde o,\tilde p,\tilde r]=(\tilde o\tilde p)\tilde r-\tilde o(\tilde p\tilde r)$ is the associator, and a **word** $W(\hat o)$ is a non-associative polynomial in $\hat o$ and the constants in which $\hat o$ occurs at least twice.
 
-## The Two Readings and the Associator
+## The Two Interpretations and the Associator
 
 **Definition.** Let $W$ be a word in which the variable occurs twice, so that $W$ contains a product of three consecutive factors at least once. A **bracketing** of $W$ is a choice of parenthesisation of all its products; the **readings** of $W$ are the maps $\hat o\mapsto V(\hat o)$ obtained from the bracketings $V$. For the word $\hat o\,\tilde a\,\tilde b$ the two extreme readings are
 

@@ -84,7 +84,7 @@ $$
 
 **Proof.** The functional calculus of the polynomial $p_n$ on a two-by-two matrix and the elementary symmetric functions of the spectrum. This is the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*, here read as a statement of the model.
 
-## The Two-Variable Reading
+## The Two-Variable Interpretation
 
 The model turns the biquaternion dynamics into the iteration of a polynomial map of $\mathbb{C}^4$ with the special form above, and the general theory of such maps is the pluripotential and the Fatou theory of several variables.
 

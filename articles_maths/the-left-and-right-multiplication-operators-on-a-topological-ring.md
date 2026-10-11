@@ -83,7 +83,7 @@ the centraliser of $\lambda(R)$ among the continuous additive operators is $\rho
 
 **Proof.** Combine the two previous statements: an operator commuting with both families is a central multiplication, and central multiplications commute with the whole algebra.
 
-## The Topological Reading
+## The Topological Interpretation
 
 **Proposition (the representation is continuous for the pointwise topology).** Give $\operatorname{End}_c(R)$ the topology of pointwise convergence. Then $\lambda : R \to \operatorname{End}_c(R)$ and $\rho : R \to \operatorname{End}_c(R)$ are continuous; on a unital ring they are homeomorphisms onto their images, and on a topological ring whose topology is determined by its neighbourhoods of zero they are continuous embeddings.
 

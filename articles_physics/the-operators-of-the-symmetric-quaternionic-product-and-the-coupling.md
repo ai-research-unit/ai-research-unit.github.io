@@ -20,7 +20,7 @@ R^{\bullet}_{\tilde P}(\tilde R)=\tilde R\bullet\tilde P .
 $$
 
 The product is commutative, so the two operators **coincide**, $L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A}$:
-the band carries **one** family and not two. The element theory of the block, the coupling reading and the
+the band carries **one** family and not two. The element theory of the block, the coupling interpretation and the
 radical are the two sibling articles' business; this article adds the operator layer only, and every fact of the
 layer is owned by a mathematics article and cited in place.
 
@@ -85,7 +85,7 @@ the job word **coupling**.
 Multiplication Operators of the Symmetric Quaternionic Algebra*.
 
 **Read as a physical statement.** The comparison of two material operations has no orientation: attaching an
-operation on the left and attaching it on the right are one act, so the operator carries no side. The reading is
+operation on the left and attaching it on the right are one act, so the operator carries no side. The interpretation is
 that the coupling is **order-free at the level of the operator as well as at the level of the value**; the order
 the parent row carries leaves no residue in the one-sided operators.
 
@@ -108,8 +108,8 @@ Specificities of the Symmetric Quaternionic Algebra*, §*The Left Multiplication
 
 **Read as a physical statement.** The operator of a coupling is as small as a non-zero operator can be: a single
 functional on the algebra, read with the fixed value $e_0$. Its kernel is the hyperplane of operations the
-coupling does not see, and its rank-one image is the reading that the coupling returns **a number and not a
-direction**; the faithfulness is the reading that the operator loses nothing of the parameter.
+coupling does not see, and its rank-one image is the interpretation that the coupling returns **a number and not a
+direction**; the faithfulness is the interpretation that the operator loses nothing of the parameter.
 
 **Theorem (the composition law).** For all $\tilde A,\tilde B$,
 
@@ -132,7 +132,7 @@ $L^{\bullet}_{\tilde B}L^{\bullet}_{\tilde A}=\mathrm{Sc}(\tilde B)L^{\bullet}_{
 
 **Read as a physical statement.** The operator layer changes both the commutativity and the unit of the
 operation: the product of two operations is commutative, but the composition of their operators is not, and while
-the algebra has no unit the operator family has a hyperplane of left identities. The reading is that the algebra
+the algebra has no unit the operator family has a hyperplane of left identities. The interpretation is that the algebra
 and its operator layer are **different objects** — what the coupling cannot compose, its operators can still
 multiply.
 
@@ -159,7 +159,7 @@ is called the exact replacement of the criterion $L^{\bullet}_{\tilde X}=L^{\bul
 which fails here.
 
 **Read as a physical statement.** The collapse of the commutator does not imply the collapse of the associator:
-forgetting the order of two operations is not making a chain of them bracketing-free. The reading of the scaling
+forgetting the order of two operations is not making a chain of them bracketing-free. The interpretation of the scaling
 law is that a chain of two couplings is **one** coupling scaled by the scalar part of the first operation, so the
 block's iteration rule is a multiplication by a number and never a genuine composition; the operator identity is
 the block's substitute for the Jordan identity it fails, and it is a law of scaling, not of order.
@@ -191,8 +191,8 @@ Symmetric Quaternionic Algebra*, §*The Gram Matrix and the Rank*, §*The Realif
 §*The Invariance, and Its Failure*; the sector signature is *Biquaternion Norm and Invertibility*.
 
 **Read as a physical statement.** The form is the pairing that defines the coupling, carried by the same symbol
-$N$ as its coefficient, and its non-invariance is the reading that the coupling cannot be transported across
-itself. Its realified signature $(4,4)$ is the reading that the coefficient is **indefinite**, a signed
+$N$ as its coefficient, and its non-invariance is the interpretation that the coupling cannot be transported across
+itself. Its realified signature $(4,4)$ is the interpretation that the coefficient is **indefinite**, a signed
 correlation and not a norm, which is why the band carries a coupling and no positivity; the boundary against the
 general plain form $B$ is the sibling article's, and the discrimination of the form is *Mass, Rank and the
 Positivity of the Dagger*.
@@ -224,7 +224,7 @@ Multiplication Operators of the Symmetric Quaternionic Algebra*, §*The Adjoint 
 
 **Read as a physical statement.** The adjoint for the form of the coupling **is not a coupling**: it returns the
 parameter as a value, times the argument's scalar coordinate, so the pairing of a comparison is a functional and
-not the transpose of the operator back into the family. The reading is that the coupling is **self-paired exactly
+not the transpose of the operator back into the family. The interpretation is that the coupling is **self-paired exactly
 on the central line**: only a purely scalar operation is a symmetric comparison, and a material parameter is
 never one. The self-pairing has no side to keep and no conjugate to apply, because the coupling has one side and
 the quaternion form carries no conjugation; the conjugation belongs to a different adjoint, the Hermitian one, and
@@ -234,7 +234,7 @@ the contrast is the crossing reader.
 
 **Read as a physical statement.** A chain of two comparisons is transported backwards, and only a chain whose
 first operation has vanishing scalar part, or whose second parameter is central, is invisible to the reversal.
-The reading is that the adjoint of the block reads the **pair** of parameters and not one of them alone.
+The interpretation is that the adjoint of the block reads the **pair** of parameters and not one of them alone.
 
 ## The Types of the Operators
 
@@ -252,7 +252,7 @@ Multiplication Operators of the Symmetric Quaternionic Algebra*, §*The Adjoint 
 
 **Read as a physical statement.** The symmetric comparisons of the band are the scalars: an operation is a
 symmetric pairing exactly when it is a multiple of the unit, and the projectors $X_0=1$ all carry a vector part
-and are therefore **not** symmetric. The reading is that the coupling has no generator of its own: the only
+and are therefore **not** symmetric. The interpretation is that the coupling has no generator of its own: the only
 skew-adjoint multiplication is zero, and what is infinitesimal in the block is outside the family.
 
 ### The Derivations of the Block
@@ -273,7 +273,7 @@ to satisfy the derivation condition. *The Multiplication Operators of the Symmet
 
 **Read as a physical statement.** The infinitesimal structure of the band is not the commutators of the
 couplings, as it is for the symmetrised plain block; it is the three-dimensional algebra of antisymmetric maps of
-the material directions. The reading is that the coupling's symmetry data is a **rotation algebra of the vector
+the material directions. The interpretation is that the coupling's symmetry data is a **rotation algebra of the vector
 directions** and not a bracket of its own operators.
 
 ## The Symmetries of the Form and of the Product
@@ -296,7 +296,7 @@ operator is singular, and an isometry of a non-degenerate form is invertible. *T
 the Symmetric Quaternionic Algebra*, §*The Two Groups of Linear Maps*.
 
 **Read as a physical statement.** The coupling never preserves the pairing that defines it: it defines a metric
-on pairs of operations without being a symmetry of that metric. The reading is that the coupling is a
+on pairs of operations without being a symmetry of that metric. The interpretation is that the coupling is a
 **measurement of the pairing and not a motion of it**; the symmetries of the pairing are two-sided operators
 outside the family.
 
@@ -322,7 +322,7 @@ Quaternionic Algebra*, §*The Two Groups of Linear Maps*.
 
 **Read as a physical statement.** The transformations the coupling admits are read on the three material
 directions and fix the informational unit: a change of frame of the coupling is a **rotation of the material
-frame**, and the eight sign maps are the reading that the coupling is invariant under the independent reflection
+frame**, and the eight sign maps are the interpretation that the coupling is invariant under the independent reflection
 of the three directions. The double cover of that rotation group is the spin group, cited next and not
 re-derived here.
 
@@ -338,7 +338,7 @@ $\tilde X,\tilde Y$, that is $\tilde A=0$. *The Specificities of the Symmetric Q
 Isolation among the Twelve*.
 
 **Read as a physical statement.** No non-zero comparison is multiplicative: a coupling of two operations
-carried through a third is not the coupling of the two images. The reading is that the coupling **does not
+carried through a third is not the coupling of the two images. The interpretation is that the coupling **does not
 compose**, the sibling article's caution in the operator language; the only multiplicative multiplication is the
 zero one, and the identity operator, which the general plain row has, is not even in the family.
 
@@ -365,7 +365,7 @@ operators are *The Two-Sided Operators and the Spin Group* and *The Sandwich on 
 not re-derived.
 
 **Read as a physical statement.** The spin group is a group of **invertible** two-sided operators, and the
-coupling's two-sided operators are the extreme opposite: every non-zero one is rank one. The reading is
+coupling's two-sided operators are the extreme opposite: every non-zero one is rank one. The interpretation is
 therefore a boundary, not a realisation: **the symmetrisation that produces the coupling destroys invertibility,
 and with it the spin group**; the double cover of the rotation group lives over the parent structure of the same
 space, not over this band's product. What the band retains of that rotation data is the derivation algebra
@@ -400,10 +400,10 @@ Algebra*.
 
 **Read as a physical statement.** The coupling does not move a state; it **measures** it. Its value is a number
 on the central line, in the informational sector, so the coupling is a map from the material sector to the
-informational scalars and carries no phase of its own because its image is central. The reading is that the
+informational scalars and carries no phase of its own because its image is central. The interpretation is that the
 operator of the band is a **functional and not a transformation**: a state is contracted with the parameter and
 returned as the number the comparison carries, and the material-to-informational shift of the image is the
-operator form of the reading that a material coupling returns a scalar and not another material operation.
+operator form of the interpretation that a material coupling returns a scalar and not another material operation.
 
 ## The Sandwich and the Inner Automorphism
 
@@ -439,7 +439,7 @@ Operators and the Spin Group*, cited and not re-derived. The absence of a unit a
 the identity are *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*.
 
 **Read as a physical statement.** The coupling's two-sided operator is a scalar times a projection: it reads a
-state's scalar coordinate and returns the parameter, and it is never a conjugation. The reading is that the band
+state's scalar coordinate and returns the parameter, and it is never a conjugation. The interpretation is that the band
 cannot **relabel** the algebra — the interpolation between a projection and a conjugation that the symmetrised
 plain block performs at a symmetry is destroyed here by the collapse $L^{\bullet}=R^{\bullet}$ — and that the
 conjugation of the band is the parent structure's, two-sided and outside the family.
@@ -526,7 +526,7 @@ The article declares the boundary of its one cell in the grid of the twelve oper
 - **The operator theory is cited, not re-derived.** The one family, the shape, the composition, the trace, the determinant, the adjoint and the derivations are *The Multiplication Operators of the Symmetric Quaternionic Algebra*; the form, its Gram matrix, its realification, its signature and its non-invariance are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* and *Biquaternion Norm and Invertibility*; the scalar coordinate and the scalar law are *The Specificities of the Symmetric Quaternionic Algebra*; and the parent row and the group of invertible two-sided operators are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* and *The Two-Sided Operators and the Spin Group*.
 - **The siblings', the adjoint's and the crossing reader's business.** That the operation is a scalar coupling and that it cannot compose are the two sibling articles and are not repeated; the physical adjoint is not the quaternion-form adjoint, the observables and generators being those of the Hermitian form in *Observables, Gauge Generators and the Chirality of the Internal Action*, with the positivity in *Mass, Rank and the Positivity of the Dagger*; and the comparison of the twelve adjoints is the crossing reader *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*, not one of the twelve.
 
-**What the framework does not claim.** The reading does not derive the coupling from the operator calculus; it
+**What the framework does not claim.** The interpretation does not derive the coupling from the operator calculus; it
 reads the object the band already uses and names the operator behind it. It does not identify the quaternion-form
 adjoint with hermiticity, the two adjoints being different and equal only on the central line, and it does not
 claim a generator algebra inside the family: the family has no non-zero skew-adjoint element, and the
@@ -559,7 +559,7 @@ scaled projection, self-adjoint exactly when $A_0=0$ or $\tilde A$ is central; a
 multiplication is the functional $N(\tilde A,\cdot)$ times $e_0$, with image the central line, and it is real on
 the material sector.
 
-**Readings.** That the coupling has **one family** and no side; that the adjoint for the quaternion form **does
+**Interpretations.** That the coupling has **one family** and no side; that the adjoint for the quaternion form **does
 not keep the family** but returns the parameter as a value times the argument's scalar coordinate, keeping the
 side and conjugating nothing; that the multiplication is self-paired exactly on the **central line**; that the
 band has **no generator** of its own, the infinitesimal structure being the outer derivation algebra
@@ -573,9 +573,9 @@ the framework's naming of a proved algebraic fact and is labelled as such.
 
 ## Physical Readings
 
-The operators of the symmetric quaternionic product read as one family, and the reading of the collapse is the
+The operators of the symmetric quaternionic product read as one family, and the interpretation of the collapse is the
 band's job word. Where the parent row has a left family that is the opposite monoid $\mathbb{B}^{\mathrm{op}}$ and
-a right family that does not close, here the commutativity of the operation makes the two one, and the reading is that the
+a right family that does not close, here the commutativity of the operation makes the two one, and the interpretation is that the
 **scalar coupling carries no side**: a comparison of two material operations attaches the same operator from
 either slot, and the operator content of the order is gone. The comparison itself is read on the operators as a
 **rank-one functional**: the multiplication is the pairing with the parameter, read with the fixed value $e_0$, so
@@ -584,16 +584,16 @@ coupling returns a number and not a direction.
 
 The adjoint is read as the **symmetry of the comparison and not as a comparison**: for the quaternion form it
 carries the multiplication to the functional $Y_0\tilde A$ that returns the parameter as a value, so association
-keeps the side, conjugates nothing, and fixes the operator exactly on the central line. The reading is that the
+keeps the side, conjugates nothing, and fixes the operator exactly on the central line. The interpretation is that the
 symmetric comparisons of the band are the purely scalar operations and that a material direction is never one;
 the conjugation of a parameter belongs to the Hermitian form, the adjoint of the physical dictionary, and not to
-the quaternion form, which has none to apply. Read on the types, the reading is the same statement in the sector
+the quaternion form, which has none to apply. Read on the types, the interpretation is the same statement in the sector
 language: the central line is the self-adjoint class, there is no non-zero skew-adjoint multiplication, and the
 infinitesimal structure is the three-dimensional rotation algebra of the material directions, outer and outside
 the family; what is infinitesimal in the band is not the commutators of the couplings but the rotations of the
 frame they are read in.
 
-Read on the symmetries and the two-sided operators, the form is preserved by the two-sided complex-orthogonal maps and the product by their subgroup fixing the unit, while every multiplication is rank one; the reading is the **separation of measurement and motion**. The two-sided operators are rank one, so the spin group is not realised in the band: the symmetrisation that makes the coupling destroys invertibility and leaves the double cover to the parent. Read on the sandwich, the diagonal two-sided operator is a scalar times a projection and never a conjugation, so the coupling cannot relabel the algebra. Read on the state space, the operator is a functional, contracting a state with the parameter and returning a central number, so a material coupling of material operations is read as a scalar of the informational sector carrying no phase of its own. The distinctions are labelled throughout: what is proved is the algebra, what is proposed is the naming.
+Read on the symmetries and the two-sided operators, the form is preserved by the two-sided complex-orthogonal maps and the product by their subgroup fixing the unit, while every multiplication is rank one; the interpretation is the **separation of measurement and motion**. The two-sided operators are rank one, so the spin group is not realised in the band: the symmetrisation that makes the coupling destroys invertibility and leaves the double cover to the parent. Read on the sandwich, the diagonal two-sided operator is a scalar times a projection and never a conjugation, so the coupling cannot relabel the algebra. Read on the state space, the operator is a functional, contracting a state with the parameter and returning a central number, so a material coupling of material operations is read as a scalar of the informational sector carrying no phase of its own. The distinctions are labelled throughout: what is proved is the algebra, what is proposed is the naming.
 
 ## Summary
 
@@ -638,7 +638,7 @@ The operators of the symmetric quaternionic product are one family, because the 
 - *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md`), for the scalar law that isolates the block among the twelve, the operator identity $L^{\bullet2}_{\tilde X}=X_0L^{\bullet}_{\tilde X}$ and the classification of the projectors and square-zero operators by the scalar coordinate.
 - *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for the parent row, the reversed composition law and the opposite monoid $\mathbb{B}^{\mathrm{op}}$ that the symmetrisation destroys.
 - *The Two-Sided Operators and the Spin Group* (`articles_maths/the-two-sided-operators-and-the-spin-group.md`), for the group of invertible two-sided operators, its kernel and the spin group as a group of invertible sandwiches, cited and not re-proved.
-- *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations* (`articles_physics/the-quaternion-form-as-a-product-the-scalar-coupling-of-two-material-operations.md`), the framing article of the band, for the operation, its centrality and the scalar-coupling reading.
+- *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations* (`articles_physics/the-quaternion-form-as-a-product-the-scalar-coupling-of-two-material-operations.md`), the framing article of the band, for the operation, its centrality and the scalar-coupling interpretation.
 - *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements* (`articles_physics/why-a-central-product-cannot-compose-the-radical-and-the-isotropic-elements.md`), for the radical, the isotropic elements, the absence of a unit and the Jordan witness, which are the band's own physics and not this article's.
 - *The Spinor Space as a Module and as a Hilbert Space* (`articles_physics/the-spinor-space-as-a-module-and-as-a-hilbert-space.md`), for the minimal left ideal, its corner basis $(\tilde\Pi_1,\tilde\Upsilon_2)$ and the nilpotent, which are the state space of the band.
 - *Observables, Gauge Generators and the Chirality of the Internal Action* (`articles_physics/observables-gauge-generators-and-the-chirality-of-the-internal-action.md`) and *Mass, Rank and the Positivity of the Dagger* (`articles_physics/mass-rank-and-the-positivity-of-the-dagger.md`), for the physical adjoint, the observables and generators, and the positivity of the Hermitian form that the quaternion form lacks.

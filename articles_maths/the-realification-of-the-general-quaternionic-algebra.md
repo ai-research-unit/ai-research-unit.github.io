@@ -90,7 +90,7 @@ $$
 $$
 
 
-## What Is Specific to the Real Reading
+## What Is Specific to the Real Interpretation
 
 Three things exist over $\mathbb{R}$ for this product and have no complex counterpart.
 
@@ -119,7 +119,7 @@ and $e_0$ acts on the left by the identity and on the right by the natural conju
 
 **The trace form.** By §*The Real Operators and the Trace Form* the trace form of the product is $8\operatorname{Re}B(\tilde P,\tilde Q)$, a real symmetric bilinear form of signature $(4,4)$ and zero radical, the realified general plain bilinear form. It is the same real form as the trace form of the general plain algebra: the two products, one associative with a two-sided unit and one not associative with a left unit alone, have the same trace form, and the conjugation that separates them is invisible to the trace.
 
-The other two real objects of the ring — the Galois-twisted automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})=\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\rtimes\mathbb{Z}/2$ and the real models $M_2(\mathbb{C})$, $M_4(\mathbb{C})_L$ and $\mathrm{Cl}^+_{1,3}(\mathbb{R})$ — are shared by the twelve products and belong to the **ring** and not to this product: the automorphisms and the models are §*What Is Specific to the Real Reading* of *The Realification of the General Plain Algebra*. They are cited here and not repeated.
+The other two real objects of the ring — the Galois-twisted automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})=\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\rtimes\mathbb{Z}/2$ and the real models $M_2(\mathbb{C})$, $M_4(\mathbb{C})_L$ and $\mathrm{Cl}^+_{1,3}(\mathbb{R})$ — are shared by the twelve products and belong to the **ring** and not to this product: the automorphisms and the models are §*What Is Specific to the Real Interpretation* of *The Realification of the General Plain Algebra*. They are cited here and not repeated.
 
 ## Summary
 

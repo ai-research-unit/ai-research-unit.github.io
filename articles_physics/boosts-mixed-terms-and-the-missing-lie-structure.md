@@ -199,7 +199,7 @@ and the alternating solution space is **zero**; the trace form $K$ was recompute
 $\operatorname{Tr}(L_{\tilde A}L_{\tilde B})$ and equals $3A_0B_0-2(\mathbf A,\mathbf B)$ to
 $4.0\times10^{-15}$; and its invariance failure at the triple $(e_0,e_1,e_1)$ is $-4$.
 
-**Reading (the only invariant reads the time direction).** The one invariant form, $\varphi(\tilde P,\tilde Q)=P_0Q_0$,
+**Interpretation (the only invariant reads the time direction).** The one invariant form, $\varphi(\tilde P,\tilde Q)=P_0Q_0$,
 reads the scalar coordinate alone, and its radical is the whole vector subspace: it is blind to every
 spatial direction and to every mixed term. On the material sector the scalar coordinate is the time
 coordinate, so the single invariant the operation carries isolates the **temporal** direction and supplies
@@ -244,7 +244,7 @@ the vector subspace, the same algebra that appears in the Lie case as the inner 
 automorphism group of the bracket is the group of linear maps preserving the cross product of the vector
 subspace and fixing $e_0$, of complex dimension three.
 
-**Reading (no self-generated gauge transformation).** Because every derivation of the operation is
+**Interpretation (no self-generated gauge transformation).** Because every derivation of the operation is
 **outer**, the bracket generates no transformation of itself. A gauge transformation attached to the
 algebra would be an inner derivation; here there is none, so the internal transformations the framework
 uses cannot be produced by the bracket and must be supplied by the **associative** one-sided action. An
@@ -252,7 +252,7 @@ operation whose derivations are all outer has its symmetry outside itself.
 
 ## The Reading: What the Missing Structure Costs
 
-**Proposed reading, labelled as such.**
+**Proposed interpretation, labelled as such.**
 
 - **The failure is a boost phenomenon.** The Jacobi identity holds on the rotations, where the bracket is
 the cross product, and fails as soon as a boost-like mixed term is present; the failure needs a scalar
@@ -264,7 +264,7 @@ material sector is not closed under the bracket either. The failure is not an ac
 the price of an operation asked to produce two sectors at once.
 - **The non-invariance is an anomaly of the internal symmetry.** The trace form $K$ is non-degenerate but
 not invariant, and its failure of invariance is exactly the Jacobiator. That is the pattern of an
-**anomaly**: a symmetry that cannot be preserved by the structure that would carry it. The reading is
+**anomaly**: a symmetry that cannot be preserved by the structure that would carry it. The interpretation is
 offered as a name for the pattern and is not claimed as a physical anomaly of a gauge theory.
 - **The one invariant reads the time direction.** The only invariant form, $\varphi=P_0Q_0$, is blind to
 the vector part, so the single invariant of the operation isolates the temporal direction and carries no
@@ -287,7 +287,7 @@ Lie structure above its derived subalgebra.
 by the **associative** one-sided action on the anti-Hermitian sector, not by this bracket; the missing
 structure of this article is not a missing group.
 
-**Caution.** An obstruction is a negative result, and a negative result constrains a reading without
+**Caution.** An obstruction is a negative result, and a negative result constrains an interpretation without
 supplying one. This article says that the quaternionic bracket has no invariant non-degenerate form, no
 Killing form, no Casimir and no inner derivation; it does not supply a group, a form or an invariant in
 their place, and it does not claim that the framework lacks gauge structure. It also does not claim that
@@ -309,7 +309,7 @@ bracket as a Lie bracket on $\mathrm{Vect}(\mathbb{B})$ isomorphic to $\mathfrak
 trace $3A_0$, rank $3$ off the isotropic cone, absence of a nonzero inner derivation and the
 three-dimensional derivation algebra of the operators.
 
-**Readings.** That the mixed term is the boost-like part of the bracket and the cross term the compact
+**Interpretations.** That the mixed term is the boost-like part of the bracket and the cross term the compact
 rotation part; that the failure is a boost phenomenon; that the bracket is a deformation of the cross
 product in which the centre is not central; that the missing structure is exactly the Killing structure;
 that the internal group is read off the associative one-sided action and not off this bracket; that the
@@ -322,12 +322,12 @@ boost. That the bracket can be repaired into a Lie algebra. That the framework l
 gauge algebra; both are reached elsewhere. That the rank-one invariant $\varphi$ is a physical pairing of
 significance — it is a trivial invariant of the operation, not a metric. That the "anomaly" naming is a
 physical anomaly of a gauge theory, or that "spanning two sectors" and "the symmetry is outside" are
-forced readings; and that a higher homotopy structure exists behind the Jacobi failure — it is an open
+forced interpretations; and that a higher homotopy structure exists behind the Jacobi failure — it is an open
 question.
 
 ## Physical Readings
 
-The mixed term reads as the boost and the missing Lie structure reads as the non-compactness of the informational generators: the commutator of two boosts is a rotation, so the material bracket closes where the informational one does not, which is the framework's reading of the Cartan decomposition. The invariant bilinear forms of the article then read as the two surviving pairings, one compact and one Lorentzian, which is the same dichotomy the four forms carry and the same pair that a change of the local complex structure separates.
+The mixed term reads as the boost and the missing Lie structure reads as the non-compactness of the informational generators: the commutator of two boosts is a rotation, so the material bracket closes where the informational one does not, which is the framework's interpretation of the Cartan decomposition. The invariant bilinear forms of the article then read as the two surviving pairings, one compact and one Lorentzian, which is the same dichotomy the four forms carry and the same pair that a change of the local complex structure separates.
 
 ## Summary
 
@@ -346,7 +346,7 @@ $K=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\mathbf A,\mathbf B)$ i
 **not** invariant, its failure being the Jacobi failure itself. Consequently the bracket has **no Killing
 form, no Casimir element and no nonzero inner derivation**, and its only Lie part is the derived bracket on
 $\mathrm{Vect}(\mathbb{B})$, isomorphic to $\mathfrak{sl}(2,\mathbb{C})$. This Lie structure is **missing
-above the derived subalgebra**, and the reading is that the missing structure is exactly the Killing
+above the derived subalgebra**, and the interpretation is that the missing structure is exactly the Killing
 structure of a gauge algebra: the quaternionic bracket is a deformation of the cross product in which the
 centre is not central, and the internal group is reached by the **associative** one-sided action of
 *Observables, Gauge Generators and the Chirality of the Internal Action* and bounded by *The Gauge Group
@@ -360,7 +360,7 @@ table are *Introduction to the
 Antisymmetric Quaternionic Algebra of Biquaternions*; the failure and the associator criterion are *The
 Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*; the invariant forms
 are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*; the operators are
-*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*; and the group reading is the companion
+*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*; and the group interpretation is the companion
 *The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator*.
 
 ## Summary of Notation
@@ -399,7 +399,7 @@ for the closed form of the cyclic sum and the derived bracket.
 (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the
 operation and its table.
 - Companion article *The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator*,
-for the failure, the witness and the group reading.
+for the failure, the witness and the group interpretation.
 - Companion article *Observables, Gauge Generators and the Chirality of the Internal Action*, for the
 compact and non-compact directions and the one-sided action.
 - Companion article *Particle Types, Discrete Charge and Three-Particle Couplings*, for the compact

@@ -9,12 +9,12 @@ Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; and the bracket 
 *Interference without a Lie Algebra: the Jacobi Failure in the State Space*. Each owner states the failure,
 locates it (the associator defect of the parent product, and the complex witness off the real forms) and
 draws the negative consequence, that the operation cannot be the Lie algebra of a group. None states the
-**positive** reading of the same data, and that is what this article adds: a bracket that fails Jacobi and a
+**positive** interpretation of the same data, and that is what this article adds: a bracket that fails Jacobi and a
 product that fails associativity are not merely operations that are not Lie algebras; they are the **first
 terms of a higher structure**, and the failure measurements the corpus already has are the low operations of
 that structure.
 
-The article owns the reading and the programme, and no theorem. The higher algebra itself is
+The article owns the interpretation and the programme, and no theorem. The higher algebra itself is
 *A-Infinity and L-Infinity Algebras* of the mathematics corpus, which owns the higher Jacobi identities, the
 operations $\ell_n$ of degree $2-n$ and the statement that $\ell_3$ and the higher operations measure the
 deviation from a strict graded Lie algebra. The failure results are the three owners named above, together
@@ -53,7 +53,7 @@ bad choice of generators.
 In the standard theory, a binary operation whose defining identity holds only up to a higher operation is the
 first layer of an **$A_\infty$- or $L_\infty$-algebra**: a graded module with a differential $\ell_1$, a
 bracket or product $\ell_2$, and operations $\ell_3,\ell_4,\dots$ of descending degree satisfying the higher
-Jacobi identities, with $\ell_3$ measuring the deviation from strictness. The reading this article states is
+Jacobi identities, with $\ell_3$ measuring the deviation from strictness. The interpretation this article states is
 that the corpus's two failures are exactly the data of the first two layers of such a structure:
 
 | corpus object | higher-structure role |
@@ -63,7 +63,7 @@ that the corpus's two failures are exactly the data of the first two layers of s
 | the Jacobi sum of $\wedge_{\natural}$ | the failure of $\ell_2$ to close, i.e. the same $\ell_3$ read on the bracket |
 | "the closure defect does not shrink" | the statement that the residue is $\ell_3$-valued and not removable by $\ell_1$ |
 
-The reading is **labelled as a programme and not as a result**, and the distinction is sharp: the corpus has
+The interpretation is **labelled as a programme and not as a result**, and the distinction is sharp: the corpus has
 the failures and the ternary objects, and it does **not** have the completion. To exhibit the algebra as an
 $A_\infty$- or $L_\infty$-algebra one must fix a grading, assign the degrees $\lvert\ell_2\rvert$,
 $\lvert\ell_3\rvert$, choose the signs of the higher Jacobi identities, and verify them; and then verify
@@ -79,51 +79,51 @@ object and the product is a composition object — and the article does not choo
 
 ## What the Reading Would Buy
 
-The reading is worth stating because it changes the status of the failures in two places.
+The interpretation is worth stating because it changes the status of the failures in two places.
 
-**The gauge reading.** The corpus's conclusion from the Jacobi failure is that the bracket cannot be the Lie
+**The gauge interpretation.** The corpus's conclusion from the Jacobi failure is that the bracket cannot be the Lie
 algebra of an internal group, which is a negative statement and one half of the gauge ceiling. On the
-higher-structure reading the conclusion is sharper: an internal symmetry whose bracket closes only up to a
+higher-structure interpretation the conclusion is sharper: an internal symmetry whose bracket closes only up to a
 ternary operation is a **higher** symmetry — the first layer of a $2$-group or a higher group — rather than
-no symmetry at all, and the failure measures which higher correction the symmetry requires. The reading is a
+no symmetry at all, and the failure measures which higher correction the symmetry requires. The interpretation is a
 programme and not a claim, and the ceiling remains a theorem about the strict group.
 
-**The curvature reading.** The corpus already reads the associator of the fourth product as a
+**The curvature interpretation.** The corpus already reads the associator of the fourth product as a
 curvature-like frame deformation, and the Jacobi failure of the conjugate cross product as a
-field-strength-like pairing. On the higher-structure reading the two readings are the same statement at
+field-strength-like pairing. On the higher-structure interpretation the two interpretations are the same statement at
 different levels: the associator is the ternary operation, the curvature is its geometric name, and a
 bracket whose defect is the curvature is the bracket of a non-flat connection. The owner of the curvature
-readings is the fourth-product article of the grid.
+interpretations is the fourth-product article of the grid.
 
 ## What Is Not Claimed
 
 - The article does not claim that $\mathbb{B}$ **is** an $L_\infty$- or $A_\infty$-algebra. It claims that
 the failures the corpus has measured are the first two layers of one, and that the completion is an open
 construction.
-- It does not claim that the reading removes the obstruction, changes the ceiling or produces a group. A
+- It does not claim that the interpretation removes the obstruction, changes the ceiling or produces a group. A
 higher structure is not a group, and the group the algebra reaches is still $U(2)$.
 - It does not claim a sign, a degree or a $\mathbb{Z}$-grading. The grading of an $L_\infty$ structure on
 $\mathbb{B}$ is part of the open construction and is not fixed by the failure data.
 
 ## Physical Readings
 
-- **The failure is structural, not accidental.** The reading is that the two failures are the low operations
+- **The failure is structural, not accidental.** The interpretation is that the two failures are the low operations
 of one higher structure, so the corpus's negative results are the first measurements of a positive object.
 Boundary: a labelled programme, and the higher algebra belongs to *A-Infinity and L-Infinity Algebras*.
-- **A non-closing bracket is a higher symmetry.** The reading is that an obstruction that resists closure is
+- **A non-closing bracket is a higher symmetry.** The interpretation is that an obstruction that resists closure is
 the algebraic signature of a symmetry that is higher rather than a symmetry that is absent. Boundary: the
-strict group remains $U(2)$, and the reading does not enlarge it.
-- **The associator is the curvature.** The reading is that the ternary residue is the geometric curvature of
-the multiplication, and that the corpus's curvature readings of the associator and of the Jacobi defect are
-one statement at two levels. Boundary: the curvature readings are the grid article's, cited.
+strict group remains $U(2)$, and the interpretation does not enlarge it.
+- **The associator is the curvature.** The interpretation is that the ternary residue is the geometric curvature of
+the multiplication, and that the corpus's curvature interpretations of the associator and of the Jacobi defect are
+one statement at two levels. Boundary: the curvature interpretations are the grid article's, cited.
 
 ## Summary
 
 Three brackets of the corpus fail Jacobi and the quaternionic product fails associativity; the failures
 produce a nonzero ternary residue, the residue is not removable under closure, and each failure is owned by
-its own article as a negative result. This article adds the positive reading: a product failing associativity
+its own article as a negative result. This article adds the positive interpretation: a product failing associativity
 and a bracket failing Jacobi are the first two layers of an $A_\infty$- or $L_\infty$-type higher structure,
-whose $\ell_2$ is the product or bracket and whose $\ell_3$ is the associator defect. The reading is a
+whose $\ell_2$ is the product or bracket and whose $\ell_3$ is the associator defect. The interpretation is a
 programme and not a result: the grading, the degrees, the signs and the higher identities are not fixed, the
 completion is not constructed, and the strict group the algebra reaches remains $U(2)$. Two completions —
 bracket-first and product-first — are named and neither is chosen.
@@ -132,7 +132,7 @@ bracket-first and product-first — are named and neither is chosen.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the quaternionic product, non-associative, the binary operation of the reading |
+| $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the quaternionic product, non-associative, the binary operation of the interpretation |
 | $(\tilde P,\tilde Q,\tilde R)$ | the associator of the parent product, the ternary residue |
 | $\wedge_{\natural}$ | the antisymmetrised quaternionic product, whose Jacobi sum does not vanish |
 | $\ell_1,\ell_2,\ell_3$ | the differential, the bracket or product, and the ternary operation of a higher structure |
@@ -143,12 +143,12 @@ bracket-first and product-first — are named and neither is chosen.
 - *A-Infinity and L-Infinity Algebras*, for the higher operations, the higher Jacobi identities and the role
 of $\ell_3$ as the deviation from strictness.
 - *The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator*, for the failure, its
-witness and its reading as an obstruction.
+witness and its interpretation as an obstruction.
 - *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for
 the sesquilinear failure.
 - *Interference without a Lie Algebra: the Jacobi Failure in the State Space*, for the failure on the state
-side and its reading as interference.
+side and its interpretation as interference.
 - *The Associator and the Ternary Product of the Quaternionic Product*, for the associator that appears as
 the ternary operation.
 - *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the strict group
-that the reading does not enlarge.
+that the interpretation does not enlarge.

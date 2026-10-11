@@ -101,7 +101,7 @@ which is self-adjoint exactly for a central multiplier. Every statement is the o
 
 **The group of linear maps preserving the form.** Over $\mathbb{C}$ the maps preserving $N$ form the complex group $G_N$ of complex dimension six. Over $\mathbb{R}$ the $\mathbb{R}$-linear maps preserving the realified form are the linear maps preserving the split form $\operatorname{diag}(\mathrm{I}_4,-\mathrm{I}_4)$ on $\mathbb{R}^8$, of real dimension twenty-eight, and this group contains the realification of $G_N$, of real dimension twelve, as the subgroup of the maps that commute with $J$. The real form-preserving group is therefore the larger one, because a real map preserving $\operatorname{Re}N$ need not commute with the complex structure (*The Multiplication Operators of the Symmetric Quaternionic Algebra*, §*The Two Groups of Linear Maps*).
 
-## What Is Specific to the Real Reading
+## What Is Specific to the Real Interpretation
 
 Four features appear in the real reading of the block and not in its complex reading.
 

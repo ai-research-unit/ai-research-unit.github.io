@@ -16,7 +16,7 @@ $$
 
 the sum being that of the underlying complex vector space. The parameter is fixed and the article writes $F$ for $F_{\tilde C}$ where no confusion results.
 
-## The Several Readings of the Square
+## The Several Interpretations of the Square
 
 The formula $\tilde Q\mapsto\tilde Q^2$ is unambiguous once a product is chosen and the square is read as the diagonal of the corresponding bilinear map. Both clauses matter.
 

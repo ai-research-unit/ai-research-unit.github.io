@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A spin-$\tfrac12$ chain and a chain of fermionic modes are described by different operators with different commutation rules, and yet in one dimension the two descriptions carry the same state space and the same algebra. The map between them is the Jordan–Wigner transformation. In the biquaternion framework it has a sharp reading: the transformation is the **extension over sites of a one-site identity that is already inside the algebra**, and the object that extends it — the Jordan–Wigner string — is the product of the one-site fermionic parities, the element $(-1)^F=ie_3$ that the parents isolate in $\mathbb{M}_+$.
+A spin-$\tfrac12$ chain and a chain of fermionic modes are described by different operators with different commutation rules, and yet in one dimension the two descriptions carry the same state space and the same algebra. The map between them is the Jordan–Wigner transformation. In the biquaternion framework it has a sharp interpretation: the transformation is the **extension over sites of a one-site identity that is already inside the algebra**, and the object that extends it — the Jordan–Wigner string — is the product of the one-site fermionic parities, the element $(-1)^F=ie_3$ that the parents isolate in $\mathbb{M}_+$.
 
 This article establishes:
 
@@ -11,9 +11,9 @@ This article establishes:
 - **The map and its failure to be a graded isomorphism.** The Jordan–Wigner map is a unital algebra isomorphism between the spin algebra and the fermionic mode algebra — both are the full matrix algebra of the $2^N$-dimensional space, and this is the Clifford identity $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$. It does **not** preserve the fermionic grading: spins are even (bilinear) in fermions, fermions are odd. The transformation is the choice of a square root of the spin algebra, and the string is its branch cut.
 - **The consequences.** The hopping identity, the parity identity, the inverse map, the free-fermion solution of the XY chain, and the boundary term that distinguishes the two fermion-parity sectors.
 
-The standard material is transcribed with explicit signs; the biquaternion content is the one-site identification and the parity reading of the string.
+The standard material is transcribed with explicit signs; the biquaternion content is the one-site identification and the parity interpretation of the string.
 
-**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, $e_0=1$, $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, central $i$ with $i^{*}=-i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the one-mode ladder $\tilde a=\tfrac12(ie_1-e_2)$, $\tilde a^\dagger=\tfrac12(ie_1+e_2)$, $(-1)^F=ie_3$; the spin generators $\tilde S_k=\tfrac{\hbar}{2}ie_k$; the dictionary identification $\Phi(ie_k)=\gamma^0\gamma^k$ of the algebra into the even Clifford subalgebra; the spin operators act on the ideals as the Pauli matrices (the parent's $\Phi(ie_k)$ restricted to the invariant subspace, $\tfrac{\hbar}{2}ie_k\mapsto\tfrac{\hbar}{2}\sigma_k$). **Jordan–Wigner convention.** For $N$ sites with Pauli operators $\sigma^x_j,\sigma^y_j,\sigma^z_j$ in the ordered product $\bigotimes_{j=1}^{N}$, set
+**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, $e_0=1$, $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, central $i$ with $i^{*}=-i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the one-mode ladder $\tilde a=\tfrac12(ie_1-e_2)$, $\tilde a^\dagger=\tfrac12(ie_1+e_2)$, $(-1)^F=ie_3$; the spin generators $\tilde S_k=\tfrac{\hbar}{2}ie_k$; the dictionary identification $\mathsf{M}_2(ie_k)=\gamma^0\gamma^k$ of the algebra into the even Clifford subalgebra; the spin operators act on the ideals as the Pauli matrices (the parent's $\mathsf{M}_2(ie_k)$ restricted to the invariant subspace, $\tfrac{\hbar}{2}ie_k\mapsto\tfrac{\hbar}{2}\sigma_k$). **Jordan–Wigner convention.** For $N$ sites with Pauli operators $\sigma^x_j,\sigma^y_j,\sigma^z_j$ in the ordered product $\bigotimes_{j=1}^{N}$, set
 
 $$
 \hat c_j=\Big(\prod_{k<j}\sigma^z_k\Big)\sigma^+_j ,
@@ -67,21 +67,21 @@ $$
 \tilde a^\dagger=\frac{\tilde S_-}{\hbar}\Big|_{\text{one mode}} .
 $$
 
-**This is the one-site Jordan–Wigner transformation**, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the *other* sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{\hat n_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two readings of the same biquaternion, the reading changing only when a *second* site is present.
+**This is the one-site Jordan–Wigner transformation**, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the *other* sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{\hat n_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two interpretations of the same biquaternion, the interpretation changing only when a *second* site is present.
 
-**A note on the identification.** The parent article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and the dictionary companion fix the module-level statement $\Phi(ie_k)=\gamma^0\gamma^k$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* gives the two-dimensional representative $\Phi(e_k)=-i\sigma_k$, hence $\Phi(ie_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:
+**A note on the identification.** The parent article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and the dictionary companion fix the module-level statement $\mathsf{M}_2(ie_k)=\gamma^0\gamma^k$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* gives the two-dimensional representative $\mathsf{M}_2(e_k)=-i\sigma_k$, hence $\mathsf{M}_2(ie_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:
 
 $$
-\Phi(\tilde a)=\sigma^+ ,
+\mathsf{M}_2(\tilde a)=\sigma^+ ,
 \qquad
-\Phi(\tilde a^\dagger)=\sigma^- ,
+\mathsf{M}_2(\tilde a^\dagger)=\sigma^- ,
 \qquad
-\Phi(\tilde a^\dagger)=\Phi(\tilde a)^\dagger ,
+\mathsf{M}_2(\tilde a^\dagger)=\mathsf{M}_2(\tilde a)^\dagger ,
 \qquad
-\Phi([\tilde a,\tilde a^\dagger])=\Phi(ie_3)=\sigma^z ,
+\Phi([\tilde a,\tilde a^\dagger])=\mathsf{M}_2(ie_3)=\sigma^z ,
 $$
 
-all four checked by exact matrix multiplication: $\Phi(e_1e_2)=\Phi(e_3)$, $\{\Phi(\tilde a),\Phi(\tilde a^\dagger)\}=I$, $[\Phi(\tilde a),\Phi(\tilde a^\dagger)]=\sigma^z$. The one-site identification above is the $N=1$ case of the chain map, and the chain map is the subject of the rest of the article.
+all four checked by exact matrix multiplication: $\mathsf{M}_2(e_1e_2)=\mathsf{M}_2(e_3)$, $\{\mathsf{M}_2(\tilde a),\mathsf{M}_2(\tilde a^\dagger)\}=I$, $[\mathsf{M}_2(\tilde a),\mathsf{M}_2(\tilde a^\dagger)]=\sigma^z$. The one-site identification above is the $N=1$ case of the chain map, and the chain map is the subject of the rest of the article.
 
 ## The Many-Site Map
 
@@ -199,7 +199,7 @@ $$
 \Big(\prod_{k<j}\sigma^z_k\Big)\Big(\prod_{k<i}\sigma^z_k\Big)^{-1}=\prod_{k=i}^{j-1}\sigma^z_k ,
 $$
 
-so that moving one operator past another costs exactly the parity of the sites passed. This is the statement that the string is a one-cocycle of the site ordering: it is a phase that must be carried whenever two sites are exchanged, and it is the reason the transformation is nonlocal. The biquaternion reading is the same as before — the phase is the product of the one-site parities $(-1)^{\hat F_k}$ along the path, and the cocycle condition is the statement that the products multiply consistently.
+so that moving one operator past another costs exactly the parity of the sites passed. This is the statement that the string is a one-cocycle of the site ordering: it is a phase that must be carried whenever two sites are exchanged, and it is the reason the transformation is nonlocal. The biquaternion interpretation is the same as before — the phase is the product of the one-site parities $(-1)^{\hat F_k}$ along the path, and the cocycle condition is the statement that the products multiply consistently.
 
 **The boundary term.** The string makes the map nonlocal, and the nonlocality has a physical place: it sits at the chain's ends. The fermion-parity operator of the whole chain,
 
@@ -207,7 +207,7 @@ $$
 (-1)^{\hat F}=\prod_j\sigma^z_j ,
 $$
 
-is the product of the on-site parities and commutes with $H_{XY}$; the two sectors it labels carry different boundary conditions for the fermions. In the ordered phase of the transverse-field Ising chain the two sectors are nearly degenerate, and the degeneracy is the standard signatures of the $\mathbb{Z}_2$ symmetry in a spin language and of the two boundary-condition sectors in a fermion language — a one-site-versus-whole-chain statement that the algebra's parity reading makes natural.
+is the product of the on-site parities and commutes with $H_{XY}$; the two sectors it labels carry different boundary conditions for the fermions. In the ordered phase of the transverse-field Ising chain the two sectors are nearly degenerate, and the degeneracy is the standard signatures of the $\mathbb{Z}_2$ symmetry in a spin language and of the two boundary-condition sectors in a fermion language — a one-site-versus-whole-chain statement that the algebra's parity interpretation makes natural.
 
 **The hidden symmetry.** The map also shows why a symmetry visible in one language may be invisible in the other: the parity $(-1)^{\hat F}$ is the on-site $\prod\sigma^z_j$ in the spin language and a constant on the fermionic vacuum, while the hopping is a simple bilinear in one and a two-site spin operator in the other. The transformation does not create or destroy symmetry; it relabels which generators are simple.
 
@@ -230,7 +230,7 @@ is the product of the on-site parities and commutes with $H_{XY}$; the two secto
 ## Companion Articles
 
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder identified here with the one-site spin, and the parity $(-1)^F=ie_3$.
-- Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the identification $\Phi(ie_k)=\gamma^0\gamma^k$ and the module action that fixes the one-site map.
+- Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the identification $\mathsf{M}_2(ie_k)=\gamma^0\gamma^k$ and the module action that fixes the one-site map.
 
 ## Summary
 
@@ -269,7 +269,7 @@ The map is a unital algebra isomorphism — both presentations generate $M_{2^N}
 | $\sigma^x_j=(\prod_{k<j}\sigma^z_k)(\hat c_j+\hat c_j^\dagger)$ | Inverse map |
 | $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Both descriptions generate the full matrix algebra |
 | $(-1)^{\hat F}=\prod_j\sigma^z_j$ | Whole-chain parity; boundary-condition sectors |
-| $\Phi(ie_k)=\gamma^0\gamma^k$ | Dictionary identification of the algebra into $\mathrm{Cl}^+_{1,3}$ |
+| $\mathsf{M}_2(ie_k)=\gamma^0\gamma^k$ | Dictionary identification of the algebra into $\mathrm{Cl}^+_{1,3}$ |
 
 ## Further Reading
 

@@ -243,6 +243,6 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 - Michael F. Atiyah, *Geometry of Yang–Mills Fields* (Accademia Nazionale dei Lincei, 1979), for the instanton data and the twistor-theoretic viewpoint.
 - David Tong, *Gauge Theory* (lecture notes, University of Cambridge, 2018), for a pedagogical derivation of the ADHM construction and the explicit reconstruction formula.
 - Nicholas Manton and Paul Sutcliffe, *Topological Solitons* (Cambridge University Press, 2004), for the instanton moduli space, its dimension and its role in the semiclassical expansion.
-- Sidney Coleman, "The uses of instantons", in *Aspects of Symmetry* (Cambridge University Press, 1985), for the physical reading of the instanton data and moduli.
+- Sidney Coleman, "The uses of instantons", in *Aspects of Symmetry* (Cambridge University Press, 1985), for the physical interpretation of the instanton data and moduli.
 - Mikio Nakahara, *Geometry, Topology and Physics* (CRC Press, 2nd ed. 2003), for the quaternionic structure of $\mathbb R^4$ and the self-duality equation.
 - E. Corrigan, D. B. Fairlie, S. Templeton and P. Goddard, "A Green's function for the general self-dual gauge field", *Nuclear Physics B* 140 (1978) 31–44, for the explicit reconstruction of the connection from the ADHM data.

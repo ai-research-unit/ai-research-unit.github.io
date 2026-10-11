@@ -16,7 +16,7 @@ $$
 \frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240\,a^{4}},
 $$
 with the force **attractive**. The factor of two between the electromagnetic result and the Dirichlet-scalar result is fixed by the two physical transverse polarisations, whose sum reproduces the biquaternion norm of $\mathbb{M}_-$.
-- **Interpretation.** Reading the vacuum energy as the trace part, or scalar part, of the field Hamiltonian, and reading the framework's local complex structure as a possible home for boundaries, are readings of algebraic facts. The first is precise and is developed below; the second is a suggestion, flagged as such.
+- **Interpretation.** Interpretation the vacuum energy as the trace part, or scalar part, of the field Hamiltonian, and reading the framework's local complex structure as a possible home for boundaries, are interpretations of algebraic facts. The first is precise and is developed below; the second is a suggestion, flagged as such.
 - **Gaps, left visible.** There is no bosonic ladder in $\mathbb{B}$, so the photon's Fock vacuum is a standard construction on an imported module rather than an object of the algebra. The perfectly conducting plates and their boundary conditions have no native description in the framework. The algebra does not select a regularisation. And the framework reproduces the standard Casimir result rather than modifying it, so it supplies no empirical discriminator here.
 
 The article is organised as follows. The next section fixes the vacuum state in the framework. The section after that treats the zero-point energy and its central-scalar character. The following section sets up the parallel-plate configuration and exhibits the divergent mode sum. Two sections then regularise it by two independent routes. A section accounts for the polarisations and the factor of two. A section states the force, its sign, and its verification. A section separates what the framework supplies from what it imports, a short section treats boundaries and the local complex structure as an open direction, and the article closes with open questions.
@@ -97,7 +97,7 @@ also quartically divergent, as that article records. The sign difference (positi
 
 **The zero-point energy is a central scalar.** In the framework the zero-point coefficient multiplies the identity $e_0$: it is a real number, hence an element of the **centre** $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde\rho\mapsto\tilde U\tilde\rho\tilde U^{*}$ with $\tilde U=e^{-i\tilde Ht/\hbar}$, contributes only a phase that cancels. This is exactly the statement of *The Harmonic Oscillator in Biquaternionic Form*: the trace part $h_0$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.
 
-This gives the framework's reading of the vacuum energy, and it is the reason the Casimir effect is the right place to look for it. A **constant** central scalar is unobservable; but if the constant depends on an external parameter — here the plate separation $a$ — its gradient is a force. The Casimir force is precisely the gradient of a central scalar, and it is observable for that reason. The algebra does not make the zero-point energy observable; it makes the *variation* of a central scalar observable, and that is all the Casimir effect requires.
+This gives the framework's interpretation of the vacuum energy, and it is the reason the Casimir effect is the right place to look for it. A **constant** central scalar is unobservable; but if the constant depends on an external parameter — here the plate separation $a$ — its gradient is a force. The Casimir force is precisely the gradient of a central scalar, and it is observable for that reason. The algebra does not make the zero-point energy observable; it makes the *variation* of a central scalar observable, and that is all the Casimir effect requires.
 
 ## The Parallel-Plate Configuration and the Divergent Sum
 
@@ -258,7 +258,7 @@ $$
 $$
 The scaling argument uses only the $a^{-3}$ dependence that the modular relation exhibits term by term; it is genuinely independent of the differentiation of the zeta result.
 
-Both routes give $-\pi^{2}\hbar c/(240a^{4})$, and both were recomputed symbolically along with the energies. The one-dimensional case gives the same structure, $E_{1\mathrm{D}}=-\pi\hbar c/(24a)$ and $F_{1\mathrm{D}}=-\pi\hbar c/(24a^{2})$, attractive, as a second case on which the sign convention was checked. The force is **attractive** in both. It is worth restating that this is the standard electromagnetic Casimir result, reproduced and not modified: the framework's contribution here is the polarisation bookkeeping and the central-scalar reading, not a new force.
+Both routes give $-\pi^{2}\hbar c/(240a^{4})$, and both were recomputed symbolically along with the energies. The one-dimensional case gives the same structure, $E_{1\mathrm{D}}=-\pi\hbar c/(24a)$ and $F_{1\mathrm{D}}=-\pi\hbar c/(24a^{2})$, attractive, as a second case on which the sign convention was checked. The force is **attractive** in both. It is worth restating that this is the standard electromagnetic Casimir result, reproduced and not modified: the framework's contribution here is the polarisation bookkeeping and the central-scalar interpretation, not a new force.
 
 ## What the Framework Supplies and What It Imports
 
@@ -267,7 +267,7 @@ Both routes give $-\pi^{2}\hbar c/(240a^{4})$, and both were recomputed symbolic
 | Vacuum state (one fermionic mode) | Native | idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$; trace formula |
 | Vacuum expectation values (one mode) | Native | $\langle\tilde H\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_1\tilde H)$ |
 | Fermion parity of the vacuum | Native | $(-1)^F=ie_3$ |
-| Zero-point energy as a central scalar | Native (reading) | trace part of $\tilde H$; commutes |
+| Zero-point energy as a central scalar | Native (interpretation) | trace part of $\tilde H$; commutes |
 | Two physical transverse polarisations | Native | $\hat{\mathbf{k}}$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$ |
 | Indefinite metric $\zeta=(-1,+1,+1,+1)$ | Native | biquaternion norm of $\mathbb{M}_-$ |
 | Factor of two (EM vs Dirichlet scalar) | Native | $\sum_r\zeta_r=2$; two transverse polarisations |
@@ -292,7 +292,7 @@ This suggests, but does not establish, a genuinely biquaternionic route to the f
 
 1. **The regularisation principle.** The algebra contains no criterion selecting a regularisation; both routes above imported the standard analytic continuation. Is there any biquaternion structure — for instance, the uniqueness of the continuation of a sector-valued zeta function — that could select one, or is the choice irreducibly extrinsic? The parents record the same openness for the zero-point energy.
 
-2. **The central-scalar reading.** The zero-point energy is a central scalar and its *variation* is observable. Is the identification of "vacuum energy" with "the scalar part of $\tilde H$" more than a reading, or does it have content — for example, a statement about which quantities can appear in a force?
+2. **The central-scalar interpretation.** The zero-point energy is a central scalar and its *variation* is observable. Is the identification of "vacuum energy" with "the scalar part of $\tilde H$" more than an interpretation, or does it have content — for example, a statement about which quantities can appear in a force?
 
 3. **Native boundaries.** Can the conducting plate be described as an interface of the local complex structure, so that the boundary condition is derived rather than imposed? This is the most concrete route by which the framework might add something to the standard Casimir calculation, and it is not taken here.
 
@@ -320,7 +320,7 @@ $$
 $$
 **attractive**; the one-dimensional scalar check gives the same sign. The result is the standard Casimir force, reproduced rather than modified.
 
-Two gaps are left visible. The algebra has no native bosonic ladder, so the photon vacuum and its mode algebra are imported; and it has no native description of a boundary or of a regularisation, so the plates, the boundary conditions, and the analytic continuation are all external. The framework's own contribution is the one-mode vacuum, the central-scalar reading of the zero-point energy, and the polarisation bookkeeping — and the suggestion, left open, that the local complex structure is the natural home for boundaries.
+Two gaps are left visible. The algebra has no native bosonic ladder, so the photon vacuum and its mode algebra are imported; and it has no native description of a boundary or of a regularisation, so the plates, the boundary conditions, and the analytic continuation are all external. The framework's own contribution is the one-mode vacuum, the central-scalar interpretation of the zero-point energy, and the polarisation bookkeeping — and the suggestion, left open, that the local complex structure is the natural home for boundaries.
 
 ## Summary of Notation
 

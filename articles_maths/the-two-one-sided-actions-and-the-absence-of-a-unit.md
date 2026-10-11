@@ -121,7 +121,7 @@ The general theory asks whether a sesquilinear product is the **derived operatio
 
 **Remark.** The failure of (ii) is the absence of a right unit, read in the second slot: with $\tilde Y = e_0$, condition (ii) says $\tilde X \star e_0 = \tilde X\sigma(e_0) = \tilde X$, that is $\tilde X^{\natural} = \tilde X$ for every $\tilde X$, which is exactly the statement that $e_0$ is a right unit of the multiplication. The two forms of the same failure are the derived-operation test and the right-unit test, and the theorem is their equivalence for this product.
 
-### The Isotope Reading
+### The Isotope Interpretation
 
 **Corollary.** The product is the **isotope** of the derived operation by the natural conjugation,
 
@@ -133,7 +133,7 @@ the insertion being in the first slot and the derived operation being $\tilde P\
 
 **Proof.** The formula is the rule. The map ${}^{\natural}$ is a $\mathbb{C}$-linear anti-automorphism and a bijection of $\mathbb{B}$, and an isotope of an operation by a bijection $\varphi$ is the operation $(x,y) \mapsto \varphi(x)\,y$; here $\varphi = {}^{\natural}$.
 
-**Remark.** The two sesquilinear products of the four are the derived operation and its ${}^{\natural}$-isotope, exactly as the two bilinear products of the four are the plain multiplication and its ${}^{\natural}$-isotope; in each pair the second is the first with the $\mathbb{C}$-linear insertion the derived-operation test rejects (*Comparison Between the Four General Products* §*Which of the Four Is a Multiplication*, *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* §*The Isotope Reading*). The absence of a unit in the second member of each pair is the price of the insertion: the derived operation keeps the right unit $e_0$, and its isotope loses it in the first slot.
+**Remark.** The two sesquilinear products of the four are the derived operation and its ${}^{\natural}$-isotope, exactly as the two bilinear products of the four are the plain multiplication and its ${}^{\natural}$-isotope; in each pair the second is the first with the $\mathbb{C}$-linear insertion the derived-operation test rejects (*Comparison Between the Four General Products* §*Which of the Four Is a Multiplication*, *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* §*The Isotope Interpretation*). The absence of a unit in the second member of each pair is the price of the insertion: the derived operation keeps the right unit $e_0$, and its isotope loses it in the first slot.
 
 ## The Actions on the Remarkable Subspaces
 

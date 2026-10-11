@@ -60,7 +60,7 @@ a similitude of the form with the **positive** multiplier $\lvert c\rvert^{4}$. 
 
 $$
 \mathrm{Pin}=\{\tilde Q : \Theta_{\tilde Q}\ \text{is an isometry}\}=U,\qquad
-\mathrm{Spin}=\{\tilde Q\in U : \det\Phi(\tilde Q)=1\}=\mathrm{SU}(2) .
+\mathrm{Spin}=\{\tilde Q\in U : \det\mathsf{M}_2(\tilde Q)=1\}=\mathrm{SU}(2) .
 $$
 
 **Theorem (the two groups).** $\mathrm{Pin}=U\cong U(2)$ is a compact group of real dimension four; $\mathrm{Spin}=\mathrm{SU}(2)$ is its determinant-one part, compact, of real dimension three, normal, equal to the derived group of the pin group; and the quotient is the circle,
@@ -147,7 +147,7 @@ $$
 \tilde Q^{*}\tilde Q=(ie_{1})(ie_{1})=i^{2}e_{1}^{2}=(-1)(-e_{0})=e_{0},
 $$
 
-so $ie_{1}$ lies in the pin group and $\Theta_{ie_{1}}$ is an isometry; its determinant is the determinant of the matrix $\Phi(ie_{1})$, so it lies in the spin group exactly when that determinant is one.
+so $ie_{1}$ lies in the pin group and $\Theta_{ie_{1}}$ is an isometry; its determinant is the determinant of the matrix $\mathsf{M}_2(ie_{1})$, so it lies in the spin group exactly when that determinant is one.
 
 **A scaled unitary fails.** Take $\tilde Q=\sqrt2\,\tilde U$ with $\tilde U\in U$. Then $\tilde Q$ is not in the slice, and the operator is the similitude of multiplier $4$: on random pairs $\langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde P\rangle_{*}=4\langle\tilde S,\tilde P\rangle_{*}$ and the operator is not an isometry of the form.
 

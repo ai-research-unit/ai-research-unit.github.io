@@ -166,7 +166,7 @@ is nonnegative at every point of $\mathbb{R}^2$: by the inequality of arithmetic
 
 ---
 
-## Real Curves and the Geometric Reading
+## Real Curves and the Geometric Interpretation
 
 **Definition.** For a real algebraic curve given by $F \in R[x,y]$ the **real locus** is $\mathcal{V}(F) \subseteq R^2$, and the semialgebraic subsets of the line are the finite unions of intervals, defined by inequalities; the theory of real algebraic curves studies the real loci through the orderings of the function field $R(x,y)$ and the valuations refining them, in the terminology of *Valuation Theory and Henselian Rings*.
 

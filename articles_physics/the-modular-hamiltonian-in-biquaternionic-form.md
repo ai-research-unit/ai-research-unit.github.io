@@ -26,7 +26,7 @@ Three features organize what follows.
 
 The article proceeds as follows. The modular Hamiltonian is defined from $\Delta$, the hypotheses are checked, and the sign convention is fixed. The finite-dimensional realization in $\mathbb{B}$ is recalled from the parents and completed with $\tilde K$'s spectral form. $\tilde K$ is then verified to generate the same flow as $\Delta^{it}$. The trace formula is used to show that the Gibbs form is a scalar extraction. A closing section separates what is established from what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\mathbf h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\mathbf h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
 
 ## The Generator of the Modular Flow
 
@@ -77,7 +77,7 @@ The opposite choice, $\Delta=e^{+\tilde K}$ with $\Delta^{it}=e^{+i\tilde Kt}$, 
 
 ### The State Is Thermal with Respect to $\tilde K$
 
-The KMS property gives $\tilde K$ its physical reading. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde\rho\in\mathbb{M}_+$ that is positive definite and of trace one,
+The KMS property gives $\tilde K$ its physical interpretation. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde\rho\in\mathbb{M}_+$ that is positive definite and of trace one,
 $$
 \omega(\tilde A)=\mathrm{Tr}(\tilde\rho\,\tilde A),
 \qquad
@@ -176,7 +176,7 @@ which is the generator identity of the definition. So the $\tilde K$ constructed
 
 ## Verification: $\tilde K$ Generates the Modular Flow
 
-The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$. The state was the parent's generic faithful state,
+The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
 $$
 \mathbf r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
 \qquad |\mathbf r|^2=\tfrac{29}{100},
@@ -239,7 +239,7 @@ $$
 Z=\mathrm{Tr}\big(e^{-\beta\tilde H}\big)=2\,\mathrm{Sc}\big(e^{-\beta\tilde H}\big)
 =2e^{-\beta h_0}\cosh(\beta|\mathbf h|),
 $$
-and the scalar and vector parts of $\tilde K$ have direct thermodynamic readings:
+and the scalar and vector parts of $\tilde K$ have direct thermodynamic interpretations:
 $$
 \mathrm{Sc}(\tilde K)=\beta h_0+\log Z,
 \qquad
@@ -409,7 +409,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 ## Further Reading
 
 - Companion article *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the construction of $S$, $\Delta$ and $J$, the modular flow, and the type classification.
-- Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS boundary relation, the imaginary-time strip, and the thermal reading of $\tilde K$.
+- Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS boundary relation, the imaginary-time strip, and the thermal interpretation of $\tilde K$.
 - Companion article *The Partition Function in Biquaternionic Form*, for the Gibbs state, the thermal operator, and $\tilde K=\beta\tilde H+(\log Z)e_0$.
 - Companion article *The Unruh Effect in Biquaternionic Form*, for the wedge, the Bisognano–Wichmann identification, and the temperature derived from the two-point function.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.

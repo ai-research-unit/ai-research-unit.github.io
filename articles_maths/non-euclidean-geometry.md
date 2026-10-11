@@ -163,7 +163,7 @@ where $\Delta$ is the area of the polygon, so that the angle sum exceeds the Euc
 
 **Remark.** The theorem is the reason the hyperbolic plane is usually presented by models — the disk, the half-plane, the Beltrami–Klein projective model — rather than as a surface in space. The spherical plane embeds in $\mathbb{R}^3$ as the sphere and the Euclidean plane embeds in itself; the hyperbolic plane embeds only in a higher-dimensional or indefinite ambient space, and the obstruction is the exponential growth of its volume.
 
-### Consistency and Categorical Reading
+### Consistency and Categorical Interpretation
 
 **Theorem (relative consistency).** The hyperbolic and spherical geometries are consistent if and only if the Euclidean geometry is: a model of the Euclidean axioms that satisfies the denial of the parallel postulate is constructed inside Euclidean space itself, by the Poincaré disk and the sphere.
 

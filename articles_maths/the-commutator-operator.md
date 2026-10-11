@@ -152,7 +152,7 @@ where $A_{a,b}(x) = (a, x, b)$ is the associator operator of *The Sandwich Opera
 
 The theorem is a compact restatement of the algebra: the left multiplications carry the product, the right multiplications carry the opposite product, and the failure of the two to commute is exactly the failure of associativity. In the associative case the two-sided picture is the one of *Left and Right Multiplication*, and the commutator of an $L$ with an $R$ vanishes, so the whole Lie algebra $L(A) + R(A)$ is the direct sum of two commuting copies.
 
-## The Derivation Reading
+## The Derivation Interpretation
 
 **Proposition.** For every $a \in A$ the operator $\mathrm{ad}_a$ is a **derivation** of $A$, the map
 $\mathrm{ad}: A^{(-)} \to \operatorname{Der}_k(A)$ is a homomorphism of Lie algebras with kernel $Z(A)$ and image the inner derivations, and the inner derivations form a Lie ideal of the Lie algebra of all derivations.

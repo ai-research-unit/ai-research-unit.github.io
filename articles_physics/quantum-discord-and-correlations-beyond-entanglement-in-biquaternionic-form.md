@@ -222,7 +222,7 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 - It does not compute the discord for general two-qubit states. The Bell-diagonal restriction is what makes the computation tractable and the trace-pairing parametrization exact.
 - It does not prove the Luo result that the optimal measurement for Bell-diagonal states is along a coordinate axis; that is cited as standard, and the computed values use it.
 - It does not resolve the interpretation of discord, nor does it claim that discord is a resource in every operational sense; the operational interpretations are cited, not derived.
-- It does not extend the biquaternion-norm reading to the two-qubit case generally: the biquaternion norm of a two-qubit state is not a single number, and only the Bell-diagonal family is controlled by three trace pairings.
+- It does not extend the biquaternion-norm interpretation to the two-qubit case generally: the biquaternion norm of a two-qubit state is not a single number, and only the Bell-diagonal family is controlled by three trace pairings.
 - It does not predict anything beyond standard quantum information theory; the discord values are the standard ones.
 
 ## Open Questions

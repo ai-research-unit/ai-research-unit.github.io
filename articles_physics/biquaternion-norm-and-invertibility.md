@@ -6,7 +6,7 @@ The biquaternion norm fixes the interval of the framework, the light cone on whi
 
 The biquaternion norm is the object the series calls the **level-1 form**, and it is the reason the framework is written the way it is. It is multiplicative, it is complex-valued in general, and it vanishes on a set of nonzero elements. Multiplicativity is what makes a unit-norm element a transformation that preserves an interval; the complex value is what lets one algebraic object carry the metric of the material sector and the opposite signature on the informational sector; and the vanishing set is the light cone. Invertibility is then the algebraic counterpart of being off the cone, and the group of units is the group of the transformations of the series.
 
-Every claim is proved or checked. The physical readings are identifications with the coordinate dictionary of *Conventions in the Biquaternion Universe*, and they are flagged as readings wherever they occur.
+Every claim is proved or checked. The physical interpretations are identifications with the coordinate dictionary of *Conventions in the Biquaternion Universe*, and they are flagged as interpretations wherever they occur.
 
 Throughout, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ and the scalar imaginary is $i$, so that it does not collide with the quaternion units. A general biquaternion is
 
@@ -34,7 +34,7 @@ where $\tilde{Q}^{\natural}$ is the quaternion conjugate.
 - $N(\tilde{Q})$ is not positive-definite: it can vanish for a nonzero biquaternion. Those are the zero divisors, studied in *Zero Divisors of the General Plain Algebra*; physically they are the null elements, and the light cone is their locus.
 - $N(\tilde{Q}^{\natural}) = N(\tilde{Q})$, $N(\tilde{Q}^*) = N(\tilde{Q})^*$ and $N(\tilde{Q}^{*}) = N(\tilde{Q})^*$.
 
-**Physical reading: this is the metric.** On the material coordinate the biquaternion norm is the Minkowski interval,
+**Physical interpretation: this is the metric.** On the material coordinate the biquaternion norm is the Minkowski interval,
 
 $$
 N\!\left(ict\,e_0 + \mathbf{x}\right) = -c^2t^2 + \mathbf{x}^2 ,
@@ -82,7 +82,7 @@ Since $N(\tilde{R})$ is a complex scalar and $e_0$ is central, the factor commut
 
 **Corollary.** If either factor has vanishing biquaternion norm, so does the product. In particular the product of a zero divisor with any biquaternion is either zero or a zero divisor: **the null cone is preserved by multiplication**.
 
-**Physical reading: why the rotors work.** An element of unit norm, $N(\tilde{R}) = 1$, is called a **rotor** in the series, and multiplicativity says exactly that a rotor preserves the biquaternion norm of everything it acts on:
+**Physical interpretation: why the rotors work.** An element of unit norm, $N(\tilde{R}) = 1$, is called a **rotor** in the series, and multiplicativity says exactly that a rotor preserves the biquaternion norm of everything it acts on:
 
 $$
 N(\tilde{R}\,\tilde{Q}\,\tilde{R}^{*}) = N(\tilde{R})\,N(\tilde{Q})\,N(\tilde{R}^{*}) = |N(\tilde{R})|^2 N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = N(\tilde{Q}) .
@@ -121,16 +121,16 @@ $$
 then $\rho$ is determined, and it is
 
 $$
-r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|} ,
+r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\mathsf{M}_2(\tilde{Q})|} ,
 $$
 
-where $\Phi$ is the $2\times2$ matrix realisation.
+where $\mathsf{M}_2$ is the $2\times2$ matrix realisation.
 
-**Proof in one paragraph.** The group of units is $\mathrm{GL}_2(\mathbb{C})$ under $\Phi$. A continuous homomorphism from $\mathrm{GL}_2(\mathbb{C})$ to $\mathbb{R}_{>0}$ is constant on the commutator subgroup; that subgroup is $\mathrm{SL}_2(\mathbb{C})$, which is perfect, so the homomorphism factors through the determinant, $\mathrm{GL}_2(\mathbb{C}) \to \mathbb{C}^\times$. A continuous homomorphism $\mathbb{C}^\times \to \mathbb{R}_{>0}$ is $z \mapsto |z|^t$: on the positive reals it is a power, and the unit circle is compact and connected, so its image is trivial. Hence $\rho(\tilde{Q}) = |\det\Phi(\tilde{Q})|^t$, and the normalisation gives $|\lambda|^{2t} = |\lambda|$, so $t = \tfrac12$, which is $r$ because $\det\Phi(\tilde{Q}) = N(\tilde{Q})$.
+**Proof in one paragraph.** The group of units is $\mathrm{GL}_2(\mathbb{C})$ under $\mathsf{M}_2$. A continuous homomorphism from $\mathrm{GL}_2(\mathbb{C})$ to $\mathbb{R}_{>0}$ is constant on the commutator subgroup; that subgroup is $\mathrm{SL}_2(\mathbb{C})$, which is perfect, so the homomorphism factors through the determinant, $\mathrm{GL}_2(\mathbb{C}) \to \mathbb{C}^\times$. A continuous homomorphism $\mathbb{C}^\times \to \mathbb{R}_{>0}$ is $z \mapsto |z|^t$: on the positive reals it is a power, and the unit circle is compact and connected, so its image is trivial. Hence $\rho(\tilde{Q}) = |\det\mathsf{M}_2(\tilde{Q})|^t$, and the normalisation gives $|\lambda|^{2t} = |\lambda|$, so $t = \tfrac12$, which is $r$ because $\det\mathsf{M}_2(\tilde{Q}) = N(\tilde{Q})$.
 
-**Physical reading: this is the scale of the polar representation.** The function $r$ is the real factor of the polar representations of the series: it is the modulus that multiplies the central phase, the boost and the rotor. It vanishes exactly on the zero divisors and is a genuine norm on the units. The physical consequence of the uniqueness is that the scale carried by the polar representation is **not a convention**: it is the only real size function compatible with multiplicativity and with $r(e_0) = 1$. Its reading for the four-position, the four-velocity and the four-momentum — the scale $c\tau$, $c$ and $mc$ — belongs to *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*. The matrix face $\sqrt{|\det\Phi|}$ is the $2\times2$ one; the regular $4\times4$ representation carries $\det = N^2$ instead, as *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* records.
+**Physical interpretation: this is the scale of the polar representation.** The function $r$ is the real factor of the polar representations of the series: it is the modulus that multiplies the central phase, the boost and the rotor. It vanishes exactly on the zero divisors and is a genuine norm on the units. The physical consequence of the uniqueness is that the scale carried by the polar representation is **not a convention**: it is the only real size function compatible with multiplicativity and with $r(e_0) = 1$. Its interpretation for the four-position, the four-velocity and the four-momentum — the scale $c\tau$, $c$ and $mc$ — belongs to *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*. The matrix face $\sqrt{|\det\mathsf{M}_2|}$ is the $2\times2$ one; the regular $4\times4$ representation carries $\det = N^2$ instead, as *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* records.
 
-The function $r$ was verified to be multiplicative on random pairs, $r(\tilde{P}\tilde{Q}) = r(\tilde{P})r(\tilde{Q})$, and to satisfy $r(\tilde{Q})^2 = |\det\Phi(\tilde{Q})|$.
+The function $r$ was verified to be multiplicative on random pairs, $r(\tilde{P}\tilde{Q}) = r(\tilde{P})r(\tilde{Q})$, and to satisfy $r(\tilde{Q})^2 = |\det\mathsf{M}_2(\tilde{Q})|$.
 
 ### The Biquaternion Norm from the Halves
 
@@ -165,7 +165,7 @@ non-negative, vanishing only for $\tilde{Q} = 0$. Its vector part does not vanis
 - The Hermitian form is **not** multiplicative, and its scalar part is not the biquaternion norm in general.
 - It is **Hermitian**: $(\tilde{Q}\tilde{Q}^{*})^{*} = \tilde{Q}\tilde{Q}^{*}$, so it lies in the informational sector $\mathbb{M}_+$.
 
-**Physical reading.** The Hermitian form is the positive-definite object of the pair. Its scalar part is the squared length in the underlying real space, and it vanishes only at the origin; the full form is an element of the informational sector, whose vector part is the part a purely scalar reading of the norm would discard. In the informational side of the series the scalar part is the probabilistic norm and the vector part is the residue that the informational reading has to keep.
+**Physical interpretation.** The Hermitian form is the positive-definite object of the pair. Its scalar part is the squared length in the underlying real space, and it vanishes only at the origin; the full form is an element of the informational sector, whose vector part is the part a purely scalar interpretation of the norm would discard. In the informational side of the series the scalar part is the probabilistic norm and the vector part is the residue that the informational interpretation has to keep.
 
 ### The Euclidean Norm
 
@@ -183,7 +183,7 @@ $$
 
 the Frobenius norm squared of the representing matrix under $\mathbb{B}\cong M_2(\mathbb{C})$.
 
-**Physical reading.** This is the norm that makes the algebra a Hilbert space, and it is the norm with which the operator side of the series is built: the sandwich operators of *Biquaternion Rotations and Lorentz Transformations* are bounded with respect to it, and the probabilistic reading of the informational sector uses it. It is **not** the norm that carries the metric: the metric is the biquaternion norm, indefinite. The two must be kept apart, and the series does keep them apart.
+**Physical interpretation.** This is the norm that makes the algebra a Hilbert space, and it is the norm with which the operator side of the series is built: the sandwich operators of *Biquaternion Rotations and Lorentz Transformations* are bounded with respect to it, and the probabilistic interpretation of the informational sector uses it. It is **not** the norm that carries the metric: the metric is the biquaternion norm, indefinite. The two must be kept apart, and the series does keep them apart.
 
 ### Relation Between the Biquaternion Norm and the Hermitian Form
 
@@ -216,7 +216,7 @@ In a general non-commutative algebra the left, right and two-sided notions diffe
 
 **Proof.** If $N(\tilde{Q}) \neq 0$, put $\tilde{R} = \tilde{Q}^{\natural}/N(\tilde{Q})$. Then $\tilde{Q}\tilde{R} = \tilde{Q}\tilde{Q}^{\natural}/N(\tilde{Q}) = e_0$, so $\tilde{R}$ is a right inverse, hence an inverse. Conversely, if $\tilde{Q}$ is invertible, applying $N$ to $\tilde{Q}\tilde{Q}^{-1} = e_0$ and using multiplicativity gives $N(\tilde{Q})N(\tilde{Q}^{-1}) = 1$, so $N(\tilde{Q}) \neq 0$.
 
-**Physical reading.** For a material element this criterion says: a four-vector is invertible exactly when it is **not null**. The timelike and spacelike four-vectors are invertible; the lightlike ones are the zero divisors. The algebra partitions the material sector by the light cone, and the physics does the same: this is the algebraic counterpart of the statement that a null vector has no rest frame.
+**Physical interpretation.** For a material element this criterion says: a four-vector is invertible exactly when it is **not null**. The timelike and spacelike four-vectors are invertible; the lightlike ones are the zero divisors. The algebra partitions the material sector by the light cone, and the physics does the same: this is the algebraic counterpart of the statement that a null vector has no rest frame.
 
 ### The Inverse Formula
 
@@ -309,7 +309,7 @@ $$
 Q_1^2+Q_2^2+Q_3^2 = 0 ,
 $$
 
-the **nilpotent cone**, whose nonzero elements are the pure zero divisors. As a complex cone in $\mathbb{C}^3$ it has real dimension 4, hence real codimension 2 in the six-dimensional sector, and its complement — the invertible elements — is therefore **connected**. The physical reading is that this sector carries the two spatial triples $(x,y,z)$ and $(ix',iy',iz')$ at once, and a complex spatial vector can be null only through a conspiracy of both: the condition is two real equations, not one, so it does not divide the sector into regions the way a light cone does.
+the **nilpotent cone**, whose nonzero elements are the pure zero divisors. As a complex cone in $\mathbb{C}^3$ it has real dimension 4, hence real codimension 2 in the six-dimensional sector, and its complement — the invertible elements — is therefore **connected**. The physical interpretation is that this sector carries the two spatial triples $(x,y,z)$ and $(ix',iy',iz')$ at once, and a complex spatial vector can be null only through a conspiracy of both: the condition is two real equations, not one, so it does not divide the sector into regions the way a light cone does.
 
 The intersection $\mathrm{Vect}(\mathbb{B})\cap\mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ consists of invertible elements away from the origin, since $N$ restricts to $q_1^2+q_2^2+q_3^2$ there: **the real spatial vectors are never null**.
 
@@ -410,13 +410,13 @@ The scalar part of the Hermitian form, by contrast, is non-negative and definite
 
 ## Physical Readings
 
-The norm reads as mass and its zero set as light, and the article's own reading is that the norm of the algebra is a semi-norm and not a norm in the analytic sense. Two further readings belong with it. The norm is reversed by the central generator, $N(i\tilde Q) = -N(\tilde Q)$, so the exchange that ticks the clock also flips the sign of the mass form (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). And invertibility fails exactly on the zero divisors, so the directions that travel at $c$ are the directions that cannot be inverted, which is the framework's algebraic reason that light is a boundary rather than a state.
+The norm reads as mass and its zero set as light, and the article's own interpretation is that the norm of the algebra is a semi-norm and not a norm in the analytic sense. Two further readings belong with it. The norm is reversed by the central generator, $N(i\tilde Q) = -N(\tilde Q)$, so the exchange that ticks the clock also flips the sign of the mass form (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). And invertibility fails exactly on the zero divisors, so the directions that travel at $c$ are the directions that cannot be inverted, which is the framework's algebraic reason that light is a boundary rather than a state.
 
-The norm is read as a **scale** and its logarithm $\log\lvert N\rvert$ as a **dilation potential**: a change of the norm is a change of the unit of length, so the norm is what a conformal (Weyl) rescaling acts on, and the polar scale $r$ of *The Polar Element Representation of Biquaternions* is the explicit factor. The reading stands next to the interval reading and does not replace it: the norm is the interval of the material sector (a metric) and the scale of any element (a dilation potential). The norm's fourth part, its **argument**, is not a reading of its own: $N$ is the determinant of the matrix realization and the polar central phase is $\alpha=\tfrac12\arg\det\Phi(\tilde{Q})$, so $\arg N=2\alpha$, twice the central phase owned by *The Polar Element Representation of Biquaternions*. The norm therefore carries three readings — the modulus the scale, the real part the interval and the imaginary part the coupling of the two real quaternions $q_r$ and $q_i$ whose norms it subtracts and whose scalar product it doubles — and its argument belongs to the central-rotation band and not here.
+The norm is read as a **scale** and its logarithm $\log\lvert N\rvert$ as a **dilation potential**: a change of the norm is a change of the unit of length, so the norm is what a conformal (Weyl) rescaling acts on, and the polar scale $r$ of *The Polar Element Representation of Biquaternions* is the explicit factor. The interpretation stands next to the interval interpretation and does not replace it: the norm is the interval of the material sector (a metric) and the scale of any element (a dilation potential). The norm's fourth part, its **argument**, is not an interpretation of its own: $N$ is the determinant of the matrix realization and the polar central phase is $\alpha=\tfrac12\arg\det\mathsf{M}_2(\tilde{Q})$, so $\arg N=2\alpha$, twice the central phase owned by *The Polar Element Representation of Biquaternions*. The norm therefore carries three interpretations — the modulus the scale, the real part the interval and the imaginary part the coupling of the two real quaternions $q_r$ and $q_i$ whose norms it subtracts and whose scalar product it doubles — and its argument belongs to the central-rotation band and not here.
 
 ## Summary
 
-The biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form, the semi-norm of the literature. It is the level-1 form and is the metric of the framework: it is the Minkowski interval on the material coordinate and the opposite signature on the informational one. It is not positive-definite and it vanishes on the zero divisors, which on the material sector is the light cone. Of the usual norm axioms only the sign axiom survives; the scaling axiom fails for complex scalars, since $\sqrt{\lambda^2}$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|}$ is the **unique** multiplicative real norm on the units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$, and it is the real scale of the polar representations.
+The biquaternion norm $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form, the semi-norm of the literature. It is the level-1 form and is the metric of the framework: it is the Minkowski interval on the material coordinate and the opposite signature on the informational one. It is not positive-definite and it vanishes on the zero divisors, which on the material sector is the light cone. Of the usual norm axioms only the sign axiom survives; the scaling axiom fails for complex scalars, since $\sqrt{\lambda^2}$ lies in the right half-plane and not at $|\lambda|$. The absolute square root $r = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\mathsf{M}_2(\tilde{Q})|}$ is the **unique** multiplicative real norm on the units normalised by $r(\lambda e_0) = |\lambda|$ for real $\lambda$, and it is the real scale of the polar representations.
 
 The Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is a Hermitian biquaternion, an element of the informational sector, whose scalar part $\sum_\mu|Q_\mu|^2$ is non-negative and definite and defines the Euclidean norm on $\mathbb{B}\cong\mathbb{R}^8$; its vector part vanishes exactly when $\tilde{Q} = (\alpha+i\beta)A$ with $\alpha,\beta\in\mathbb{R}$ and $A$ a real quaternion. It is not multiplicative and it does not detect the zero divisors.
 
@@ -439,7 +439,7 @@ The zero divisors are studied in *Zero Divisors of the General Plain Algebra*, a
 | $N(ict\,e_0+\mathbf{x}) = -c^2t^2+\mathbf{x}^2$ | The interval on the material sector |
 | $N(\tilde{U}) = -c^2$ | Four-velocity |
 | $N(\tilde{P}) = -m^2c^2$ on shell | Four-momentum, the mass shell |
-| $r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\Phi(\tilde{Q})|}$ | The unique multiplicative real norm on the units; the polar scale |
+| $r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|} = \sqrt{|\det\mathsf{M}_2(\tilde{Q})|}$ | The unique multiplicative real norm on the units; the polar scale |
 | $\tilde{Q}\tilde{Q}^{*}$ | Hermitian form (a Hermitian biquaternion) |
 | $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*}) = \sum_\mu|Q_\mu|^2$ | Scalar part of the Hermitian form |
 | $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})}$ | Euclidean norm |

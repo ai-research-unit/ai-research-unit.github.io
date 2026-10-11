@@ -262,7 +262,7 @@ The ledger's three columns are the deliverable. **Established:** the kinematical
 - Companion article *The Modular Hamiltonian in Biquaternionic Form*, for the Tomita–Takesaki construction, $\tilde K=-\log\tilde\rho\in\mathbb{M}_+$, the trace formula as the Gibbs bridge, and the wedge Hamiltonian $\tilde K_W=2\pi G_1$.
 - Companion article *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for $S$, $\Delta$, $J$, the modular flow, and the type classification of the finite-dimensional algebra.
 - Companion article *The Bisognano–Wichmann Theorem under the Biquaternion Framework*, for the wedge identification, the factor $2\pi$, the two-sided rotor action, and the type gap between the inner finite-dimensional flow and the outer wedge flow.
-- Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS boundary relation and the thermal reading of the modular Hamiltonian.
+- Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS boundary relation and the thermal interpretation of the modular Hamiltonian.
 - Companion article *The Unruh Effect in Biquaternionic Form*, for the Rindler wedge, the boost rotor, and the temperature read from the two-point function.
 - Companion article *Hawking Radiation in Biquaternionic Form*, for the mode mixing, the Planck spectrum, and the KMS identification of the horizon flow at inverse temperature $2\pi c/\kappa$.
 - Companion article *Black Hole Thermodynamics in Biquaternionic Form*, for the four laws, the entropy $S=A/4G$, and the explicit statement that the framework supplies no microstate count and no horizon Hilbert space.

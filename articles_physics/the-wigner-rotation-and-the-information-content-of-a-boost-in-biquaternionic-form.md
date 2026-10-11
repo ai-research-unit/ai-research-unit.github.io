@@ -176,7 +176,7 @@ Four distinct notions of information content can be attached to a boost, and the
 
 ### The boost as an operation
 
-Two operational statements summarise the reading. First, a boost is a unitary operation, so it cannot increase the total information of a closed system; what it does is redistribute the information between the spin and momentum factors, and the reduced spin state loses purity exactly to the extent that correlation is created. Second, a boost is a **free operation** in the relativistic description, in the sense that an observer may change frames at will and the laws are frame-independent; but the spin state is not frame-independent, so the freedom has a price, and the price is the Wigner rotation. The information content of a boost is the information an observer must know about the boost in order to undo its effect on a spin: the pair (angle, axis), which is the same data as the rotation itself.
+Two operational statements summarise the interpretation. First, a boost is a unitary operation, so it cannot increase the total information of a closed system; what it does is redistribute the information between the spin and momentum factors, and the reduced spin state loses purity exactly to the extent that correlation is created. Second, a boost is a **free operation** in the relativistic description, in the sense that an observer may change frames at will and the laws are frame-independent; but the spin state is not frame-independent, so the freedom has a price, and the price is the Wigner rotation. The information content of a boost is the information an observer must know about the boost in order to undo its effect on a spin: the pair (angle, axis), which is the same data as the rotation itself.
 
 ## The Holonomy of a Boost Path
 
@@ -213,7 +213,7 @@ $$
 $$
 a precession of the rest-frame spin at a rate proportional to the acceleration and to $\gamma-1$. The biquaternion expression of the same rate is the commutator of the infinitesimal boosts of the path, and the accumulated rotation is the product of the trip. The companion exercise treats the precession directly; here it is recorded as the infinitesimal form of the closed-loop statement above.
 
-The information reading of the holonomy is the sharpest statement available. Two observers who follow different paths between the same two frames — the same initial and final four-velocity — and who each keep a gyroscope, will disagree about the orientation of a spin by the accumulated rotation. The disagreement is not an error and not a measurement artefact; it is the curvature of the boost parameter space, and it means that the frame label does not determine the spin frame. The extra data needed to reconstruct the spin state is a path, i.e. the holonomy, and that is the information content of a sequence of boosts beyond the information in its endpoints.
+The information interpretation of the holonomy is the sharpest statement available. Two observers who follow different paths between the same two frames — the same initial and final four-velocity — and who each keep a gyroscope, will disagree about the orientation of a spin by the accumulated rotation. The disagreement is not an error and not a measurement artefact; it is the curvature of the boost parameter space, and it means that the frame label does not determine the spin frame. The extra data needed to reconstruct the spin state is a path, i.e. the holonomy, and that is the information content of a sequence of boosts beyond the information in its endpoints.
 
 ## The Boost in the Two Sectors
 

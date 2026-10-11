@@ -128,7 +128,7 @@ $$
 
 ## The Associator
 
-### Definition and the Two Readings
+### Definition and the Two Interpretations
 
 **Definition.** For $a, x, b \in A$ the **associator** of the triple is
 

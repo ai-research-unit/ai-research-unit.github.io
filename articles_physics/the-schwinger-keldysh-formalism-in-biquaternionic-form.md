@@ -6,7 +6,7 @@ The **Schwinger–Keldysh formalism** — the closed-time-path or *in-in* formal
 
 This article asks what the biquaternion algebra $\mathbb{B}$ contributes. The answer is a clarification and a set of transcriptions.
 
-- **Established (framework): the branch doubling is not the algebra's doubling.** The biquaternion algebra is a complex algebra with a two-dimensional irreducible module and an isomorphism $\Phi:\mathbb{B}\to M_2(\mathbb{C})$; the closed-time-path construction also produces a two-dimensional structure, the branch space. These two "twos" are **different**. The branch index is external to $\mathbb{B}$: the CTP field space is $\mathbb{B}\otimes\mathbb{C}^2_{\mathrm{br}}$ (for a scalar) or a spinor module tensored with $\mathbb{C}^2_{\mathrm{br}}$, and the branch factor is not the algebra's $M_2(\mathbb{C})$. Identifying them would be a genuine error, and this article states the separation explicitly.
+- **Established (framework): the branch doubling is not the algebra's doubling.** The biquaternion algebra is a complex algebra with a two-dimensional irreducible module and an isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$; the closed-time-path construction also produces a two-dimensional structure, the branch space. These two "twos" are **different**. The branch index is external to $\mathbb{B}$: the CTP field space is $\mathbb{B}\otimes\mathbb{C}^2_{\mathrm{br}}$ (for a scalar) or a spinor module tensored with $\mathbb{C}^2_{\mathrm{br}}$, and the branch factor is not the algebra's $M_2(\mathbb{C})$. Identifying them would be a genuine error, and this article states the separation explicitly.
 - **Established (algebra).** The Keldysh rotation is a real orthogonal transformation of the branch space,
 $$
 R=\frac{1}{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix},
@@ -24,11 +24,11 @@ G^K(\omega) = \coth\frac{\beta\omega}{2}\,\big(G^R(\omega)-G^A(\omega)\big)
 = \big(1+2n_{\mathrm B}(\omega)\big)\big(G^R(\omega)-G^A(\omega)\big),
 $$
 whose thermal factor is a **central scalar**, so it multiplies every entry of the module structure identically. For a scalar biquaternion field the whole CTP structure is therefore block diagonal with respect to the sector split, with the branch index external; for a spinor field the entries are matrix-valued and non-central.
-- **Established (framework).** The equivalence with Matsubara is the standard equivalence, and the framework's reading is that the KMS analyticity strip — the compactified material direction — is what makes the equilibrium Keldysh function determined by the spectral function. Away from equilibrium the strip is absent and the Keldysh function is an independent datum.
+- **Established (framework).** The equivalence with Matsubara is the standard equivalence, and the framework's interpretation is that the KMS analyticity strip — the compactified material direction — is what makes the equilibrium Keldysh function determined by the spectral function. Away from equilibrium the strip is absent and the Keldysh function is an independent datum.
 
 The article proceeds as follows. A section fixes the contour and the doubled fields. A section separates the branch doubling from the algebra's doubling. A section gives the Keldysh rotation and the matrix of Green's functions, with the verification. A section treats the equilibrium relations and the fluctuation–dissipation theorem, a section the relation to Matsubara and the thermal states of the companion articles, and a section the non-equilibrium case. A section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles, in particular *The Matsubara Formalism in Biquaternionic Form*, *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{Q}=ict\,e_0+\mathbf x$ is the material coordinate; $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(e^{\beta\omega}-1)$. The branch index is written $\alpha,\beta\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.
+**Conventions.** We use those of the companion articles, in particular *The Matsubara Formalism in Biquaternionic Form*, *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{Q}=ict\,e_0+\mathbf x$ is the material coordinate; $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(e^{\beta\omega}-1)$. The branch index is written $\alpha,\beta\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.
 
 ## The Closed-Time-Path Contour and the Doubled Fields
 
@@ -71,7 +71,7 @@ block-diagonal, with the minus sign of the reversed branch. The Keldysh rotation
 
 This is where a plausible-looking identification is wrong, and it is worth being explicit.
 
-**The algebra's module is two-dimensional too.** The biquaternion algebra has a two-dimensional complex irreducible module $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$, and the isomorphism $\Phi$ represents $\mathbb{B}$ by $2\times2$ complex matrices. Numerically, "two" appears in both structures.
+**The algebra's module is two-dimensional too.** The biquaternion algebra has a two-dimensional complex irreducible module $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$, and the isomorphism $\mathsf{M}_2$ represents $\mathbb{B}$ by $2\times2$ complex matrices. Numerically, "two" appears in both structures.
 
 **The branch factor is external.** The CTP field is a map from the contour pair to the field's own value space; the field's value space is the module (a two-dimensional complex space for a scalar, the spinor module for a spinor). Hence the doubled field space is a **tensor product**,
 $$
@@ -150,7 +150,7 @@ The two real-time formalisms are one at equilibrium, and the framework's version
 $$
 G(i\omega_n)\ \longleftrightarrow\ G^{R}(\omega)\ \longleftrightarrow\ G^K(\omega) ,
 $$
-the Matsubara function on the discrete grid, the retarded function on the real axis, and the Keldysh function through the fluctuation–dissipation relation. This equivalence is standard (Landsman–van Weert; Kadanoff–Baym) and is cited. The framework's reading is that the continuation is a movement within the complexified material time, and that the discrete grid and the real axis are the same analytic function sampled on the circle and on the cut respectively.
+the Matsubara function on the discrete grid, the retarded function on the real axis, and the Keldysh function through the fluctuation–dissipation relation. This equivalence is standard (Landsman–van Weert; Kadanoff–Baym) and is cited. The framework's interpretation is that the continuation is a movement within the complexified material time, and that the discrete grid and the real axis are the same analytic function sampled on the circle and on the cut respectively.
 
 **The thermal states of the companions.** The Unruh and Hawking states are equilibrium states at $\beta=2\pi c/a$ and $\beta=2\pi c/\kappa$; their CTP description is the equilibrium one above, with the Keldysh component carrying the thermal factor and the retarded/advanced functions carrying the causal response. The framework adds no new ingredient: the imaginary material time is intrinsic, which is why the KMS strip has a preferred direction, and the temperature is the input that the Unruh and Hawking articles state it to be.
 
@@ -209,7 +209,7 @@ one defines $W=-i\log Z$ and obtains the branch-indexed connected functions as i
 - The closed-time-path construction, the two-branch action, the $2\times2$ Green's functions and their sum rules, the Keldysh rotation, the fluctuation–dissipation relation, the equivalence with the Matsubara formalism, and the non-equilibrium use.
 
 **Interpretation.**
-- Reading the contour deformation as a movement in the complexified material direction, and the KMS strip as its manifestation, is the framework's structural reading; it is consistent with the KMS, Matsubara, Unruh, and Hawking articles.
+- Reading the contour deformation as a movement in the complexified material direction, and the KMS strip as its manifestation, is the framework's structural interpretation; it is consistent with the KMS, Matsubara, Unruh, and Hawking articles.
 
 **Open.**
 - The state is an input; the framework does not determine it, at equilibrium or away from it.

@@ -72,7 +72,7 @@ $$
 i\hbar\,\partial_t \psi = h_0 e_0 \psi = h_0 \psi,
 $$
 
-and because $e_0$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\Phi$, the Hamiltonian is $\Phi(\tilde H) = h_0 I_2$. The generator of the free evolution,
+and because $e_0$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\Phi$, the Hamiltonian is $\mathsf{M}_2(\tilde H) = h_0 I_2$. The generator of the free evolution,
 
 $$
 -i\tilde H/\hbar = \frac{i\hbar}{2m}\nabla^2 e_0 \in \mathbb{M}_-,
@@ -126,7 +126,7 @@ $$
 \tilde p\,\tilde p^{\natural}\,\psi_{\mathbf k} = \hbar^2 k^2\,\psi_{\mathbf k}.
 $$
 
-The operator $\hbar\mathbf k$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $e^{i(\mathbf k\cdot\mathbf x-\omega t)}$ is the standard Schrödinger phase; what the biquaternion reading adds is that the **imaginary unit in it is the canonical central one**, not a chosen complex structure.
+The operator $\hbar\mathbf k$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $e^{i(\mathbf k\cdot\mathbf x-\omega t)}$ is the standard Schrödinger phase; what the biquaternion interpretation adds is that the **imaginary unit in it is the canonical central one**, not a chosen complex structure.
 
 ### Dispersion and the location of the wave vector
 
@@ -142,7 +142,7 @@ $$
 \mathbf v_g = \frac{\partial\omega}{\partial\mathbf k} = \frac{\hbar\mathbf k}{m} = \frac{\mathbf p}{m}.
 $$
 
-In the framework's reading, a plane wave carries a wave **four-vector** in the material sector,
+In the framework's interpretation, a plane wave carries a wave **four-vector** in the material sector,
 
 $$
 \tilde K = \frac{i\omega}{c}\,e_0 + \mathbf k \in \mathbb{M}_-,

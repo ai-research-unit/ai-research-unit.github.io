@@ -97,7 +97,7 @@ and the reflections are exactly the inner automorphisms of $A$ of order two, wit
 
 **Remark (the failure of the correspondence).** The map $u \mapsto \rho_u$ is neither injective nor, when $\alpha$ is not inner, surjective onto all involutive automorphisms: only the signed conjugations are reflections, and the involutive automorphisms outside the coset $\mathrm{Inn}(A)\alpha$ are not. The parametrisation is also not a group homomorphism in general, because the product of two reflections is an unsigned sandwich rather than a reflection; each reflection is individually of order two, and the reflections are a coset of the inner automorphisms, not a subgroup.
 
-## The Banach Reading and Examples
+## The Banach Interpretation and Examples
 
 **Proposition (norm and isometry).** Every reflection $\rho_u$ is a bounded invertible operator with $\lVert\rho_u\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$ and $\lVert\rho_u^{-1}\rVert \leq \lVert u\rVert\lVert u^{-1}\rVert\lVert\alpha\rVert$; when $\alpha$ is isometric and $u$ is a unitary with $\lVert u\rVert = \lVert u^{-1}\rVert = 1$, the reflection is isometric, $\lVert\rho_u\rVert = 1$. The fixed subalgebra $A^+_\rho$ is closed, and $\rho_u$ extends to the completion of $A$.
 

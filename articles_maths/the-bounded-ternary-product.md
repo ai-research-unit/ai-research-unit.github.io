@@ -70,11 +70,11 @@ $$
 
 The pair map $(x,y) \mapsto \Theta_{x,y}$ is a bounded bilinear map $A \times A^{\varsigma} \to B(A)$ of norm at most one.
 
-*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Readings*: the pair operator is the ordinary left multiplication by the derived product, $\Theta_{x,y} = T_{x \star y,1}$, and it is also the sandwich $S_{x,z}$ read in the middle slot and the right multiplication $T_{1,y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$.
+*Proof.* Linearity in $z$ is the parity of the third slot; the bound is the trilinear bound read with $z$ as the variable; the three readings are the theorem of *The Ternary Product as an Operator*, §*The Three Interpretations*: the pair operator is the ordinary left multiplication by the derived product, $\Theta_{x,y} = T_{x \star y,1}$, and it is also the sandwich $S_{x,z}$ read in the middle slot and the right multiplication $T_{1,y^{*}z}$ read in the first. Bilinearity of the pair map is the parity of the two parameters, read on $A \times A^{\varsigma}$.
 
 **Corollary (the middle reading is a sandwich).** With the first and the third slots fixed, the map $y \mapsto x\,y^{*}\,z$ is the sandwich $S_{x,z}$ of *The Bounded Sesquilinear Sandwich*, so the pair operator and the sandwich are the two readings of the same trilinear object, one with the middle slot promoted and one with the outer slots promoted.
 
-*Proof.* $\{x,y,z\} = x y^{*} z = S_{x,z}(y)$, which is the corollary of *The Ternary Product as an Operator*, §*The Three Readings*.
+*Proof.* $\{x,y,z\} = x y^{*} z = S_{x,z}(y)$, which is the corollary of *The Ternary Product as an Operator*, §*The Three Interpretations*.
 
 ### The Lie Triple System
 

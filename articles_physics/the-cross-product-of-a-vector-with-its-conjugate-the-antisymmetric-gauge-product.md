@@ -15,14 +15,14 @@ the second. It is the operation named $\mathrm{AQS}$ in *The 12 Algebraic Struct
 Sesqualgebra of Biquaternions*. Its value is a **pure vector**, of scalar part zero; it is
 **conjugate-alternating**; and its diagonal, unlike the diagonal of every alternating bilinear product, does
 **not** vanish: at $\tilde Q=e_1+ie_2$ it is $-2ie_3$. The physics menu files the band under the word
-**Polarisation**, and the reading the article earns is the one the menu names: the pure vector of the value
+**Polarisation**, and the interpretation the article earns is the one the menu names: the pure vector of the value
 is an **axial vector**, and the axial vector carries a direction — a polarisation or spin direction — for
-the gauge side of the frame. The reading is a reading of the *value*, and the article is explicit about
+the gauge side of the frame. The interpretation is an interpretation of the *value*, and the article is explicit about
 where it stops.
 
 The article owns the antisymmetric half as a product: the rule, the coordinate form, the pure-vector image,
-the conjugate-alternation, the non-vanishing diagonal, the reading of the axial vector, and the boundaries
-that keep the reading honest. It defers the moment when the bracket fails to close the Jacobi identity —
+the conjugate-alternation, the non-vanishing diagonal, the interpretation of the axial vector, and the boundaries
+that keep the interpretation honest. It defers the moment when the bracket fails to close the Jacobi identity —
 the second article of the band — to *A Bracket Invisible on the Real Forms: the Complex Witness of the
 Jacobi Failure*; the physics of polarisation and of spin to
 *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*,
@@ -150,7 +150,7 @@ is what the adaptation of the exchange costs, and it is stated in the general th
 Antisymmetric Parts of a Sesqualgebra Product*.
 
 **The diagonal read as the self-helicity of one element.** The corpus reads the **off-diagonal** axial
-vector as a polarisation direction carried by a pair of elements; the diagonal extends that reading to a
+vector as a polarisation direction carried by a pair of elements; the diagonal extends that interpretation to a
 **single** element, and the extension is exact. On a complex vector $\mathbf{Q}=\mathbf{a}+i\mathbf{b}$ with
 $\mathbf{a},\mathbf{b}$ real,
 
@@ -163,11 +163,11 @@ the two real vectors an element carries — $-2ie_3$ at $\mathbf Q=e_1+ie_2$. A 
 intrinsic axial direction, perpendicular to the plane of its real and imaginary parts, and the diagonal is
 that direction: an element carries a **built-in helicity** before any second element enters, and the
 vanishing condition — the vector part a complex multiple of a real vector — is exactly the condition that
-its two real parts be collinear, so that there is no plane and no direction. The reading keeps the article's
+its two real parts be collinear, so that there is no plane and no direction. The interpretation keeps the article's
 boundary: the diagonal is a **direction attached to one element**, not a state and not a beam, and the
 physical helicity of a field remains *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic
 Form* and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*. What this
-article adds is the name **self-helicity** for the diagonal, on top of the corpus's reading of the
+article adds is the name **self-helicity** for the diagonal, on top of the corpus's interpretation of the
 off-diagonal axial vector.
 
 ## The Polarisation Reading
@@ -182,12 +182,12 @@ algebra's own rule. That is the object the band reads.
 
 ### What the Reading Says
 
-The reading the band offers is this: **the axial vector of the antisymmetric gauge product carries a
+The interpretation the band offers is this: **the axial vector of the antisymmetric gauge product carries a
 direction for the gauge side of the frame**, and the direction is read as a **polarisation or spin
 direction**. Two elements of the algebra are paired by the operation's arguments, the pairing produces the
 cross product of the first vector part with the conjugate of the second, and the result is a direction
 perpendicular to both. The direction is the invariant content: it is what remains of the pair when the
-scalar part and the mixed term have cancelled. The reading is a reading of the value, offered as such.
+scalar part and the mixed term have cancelled. The interpretation is an interpretation of the value, offered as such.
 
 ### The Bracket as a Field-Strength Pairing
 
@@ -201,10 +201,10 @@ $$
 so the antisymmetric gauge product is the **field-strength pairing** of the two vector parts: it is an
 antisymmetric two-form read through the Hodge dual, exactly the shape of a field strength $F_{\mu\nu}$ read
 as a vector, and its arguments are the two vector parts of the elements. Read this way the two halves of
-the block have two different geometric characters: the symmetric half is the **metric** reading, a
-symmetric pairing, and the antisymmetric half is the **curvature** reading, a two-form — the
+the block have two different geometric characters: the symmetric half is the **metric** interpretation, a
+symmetric pairing, and the antisymmetric half is the **curvature** interpretation, a two-form — the
 metric-and-field-strength pair that a gauge theory of the frame is built from. The diagonal survives in
-this reading as the **self-dual part** of the two-form of one element: the element paired with its own
+this interpretation as the **self-dual part** of the two-form of one element: the element paired with its own
 conjugate returns the part of its field strength that is its own Hodge dual, and the off-diagonal is the
 mixed (non-self-dual) part. The boundary is the corpus's: the physical self-dual split of the field
 strength, its two chiralities and the two helicities of the massless field are *The Self-Dual and
@@ -214,11 +214,11 @@ the same identification.
 
 ### The Bracket as an Anti-Linear Pairing
 
-The law of the operation is **conjugate-alternation**, $\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}$, and the law can be given a name with more content than the words "not alternating". A bilinear antisymmetric product pairs two elements as they stand; a **conjugate**-antisymmetric product pairs an element with the conjugate of the other, and the shape is the shape of a pairing that a **conjugation** mediates — the form of a particle–antiparticle, or charge, pairing, in which the second argument is inserted through the same involution that would send a field to its conjugate. The non-vanishing diagonal is then the **self-charge** of a single element: the value of the pairing of an element with its own conjugate, which for an alternating product would be forced to vanish and here is not. The reading is bounded, and the boundary is sharp: the algebra supplies the antilinearity of the operation and the non-vanishing of the diagonal, and it does **not** supply a particle identification, a conserved charge or a $\mathcal{C}$-operation; the corpus's charge conjugation and its real structures on the algebra and on the module are *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form* and *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. The name **anti-linear pairing** is this article's, and it is offered as a reading of the law above.
+The law of the operation is **conjugate-alternation**, $\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}$, and the law can be given a name with more content than the words "not alternating". A bilinear antisymmetric product pairs two elements as they stand; a **conjugate**-antisymmetric product pairs an element with the conjugate of the other, and the shape is the shape of a pairing that a **conjugation** mediates — the form of a particle–antiparticle, or charge, pairing, in which the second argument is inserted through the same involution that would send a field to its conjugate. The non-vanishing diagonal is then the **self-charge** of a single element: the value of the pairing of an element with its own conjugate, which for an alternating product would be forced to vanish and here is not. The interpretation is bounded, and the boundary is sharp: the algebra supplies the antilinearity of the operation and the non-vanishing of the diagonal, and it does **not** supply a particle identification, a conserved charge or a $\mathcal{C}$-operation; the corpus's charge conjugation and its real structures on the algebra and on the module are *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form* and *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. The name **anti-linear pairing** is this article's, and it is offered as an interpretation of the law above.
 
 ### The Boundaries
 
-The reading is bounded on three sides, and the boundaries are the reason it is stated carefully.
+The interpretation is bounded on three sides, and the boundaries are the reason it is stated carefully.
 
 1. **The corpus's polarisation is owned elsewhere.** The physical polarisation is the coherence biquaternion
 of a light beam and the points of the Poincaré sphere, in *Pancharatnam's Phase and the Polarization
@@ -246,21 +246,21 @@ axial vector is the *carrier* of a direction, and the generator is the *operator
 
 ### Named Readings of the Polarisation
 
-Two further readings of the same value are recorded here, each under a name of its own and each labelled a reading rather than a theorem.
+Two further readings of the same value are recorded here, each under a name of its own and each labelled an interpretation rather than a theorem.
 
-- **Oriented-area reading.** The value $\mathbf{P}\times\overline{\mathbf{Q}}$ is read as an **oriented area**: a cross product is the area of the parallelogram spanned by the two vectors together with its orientation, so the polarisation direction of the band is a plane orientation of the gauge frame rather than a vector along a line. The reading gives the direction a geometric carrier — a plane and a sign — and it is the frame-level counterpart of the polarisation sphere of *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*, which owns the physical polarisation. The boundary is the article's: the value is an element of the algebra and not a point of a sphere.
+- **Oriented-area interpretation.** The value $\mathbf{P}\times\overline{\mathbf{Q}}$ is read as an **oriented area**: a cross product is the area of the parallelogram spanned by the two vectors together with its orientation, so the polarisation direction of the band is a plane orientation of the gauge frame rather than a vector along a line. The interpretation gives the direction a geometric carrier — a plane and a sign — and it is the frame-level counterpart of the polarisation sphere of *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*, which owns the physical polarisation. The boundary is the article's: the value is an element of the algebra and not a point of a sphere.
 - **Internal handedness.** That the value is an **axial** (pseudo) vector is read as a **handedness of the internal frame**: the operation carries the orientation of the frame and not only a direction in it. The pseudo character belongs to the cross product as such — it is already present in the real antisymmetric part $\mathbf{P}\times\mathbf{Q}$ of §*The Value Is an Axial Vector* — and what the conjugation of the second slot adds is that the pairing joins a vector to the *conjugate* of another, so that the value is a direction of the frame paired with the conjugate direction of its partner. The name attaches the orientation to the frame; its boundary is that no reflection group, no spin and no parity are claimed here.
 
 ## The Limits
 
-- **A conjugate cross product is an axial vector and not a spin.** The reading of the value as a
-polarisation direction is a reading of the value; it is not a claim that the operation produces a spin
+- **A conjugate cross product is an axial vector and not a spin.** The interpretation of the value as a
+polarisation direction is an interpretation of the value; it is not a claim that the operation produces a spin
 state or a spin quantum number, and the spin of the framework is owned by the articles named above.
 - **The non-vanishing diagonal is an algebraic fact and not a pathology.** It is the anti-fixed part of the
 square, and it is what makes the antisymmetric half a genuine part of the fourth product rather than a
 foreign bracket.
-- **The reading is labelled.** That the axial vector should be read as *polarisation* is the framework's
-grouping of the four jobs of the four general products; it is offered as a reading and not as a theorem, and no
+- **The interpretation is labelled.** That the axial vector should be read as *polarisation* is the framework's
+grouping of the four jobs of the four general products; it is offered as an interpretation and not as a theorem, and no
 numerical identification with a measured polarisation is claimed.
 - **No scale is attached.** No coupling, charge or $\hbar$ enters the operation; the places of entry are
 those the corpus has already fixed, and none is invented here.
@@ -277,14 +277,14 @@ multiple of a real vector, and equal to $-2ie_3$ at $\tilde Q=e_1+ie_2$. The for
 of Biquaternions*, *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic
 Sesqualgebra* and *The 12 Products of the Biquaternion Complex Space*.
 
-**Reading.** That the axial vector of the value carries a polarisation or spin direction for the gauge side,
-and that the value is a direction and not a state. Three further names for the same facts, each a reading:
+**Interpretation.** That the axial vector of the value carries a polarisation or spin direction for the gauge side,
+and that the value is a direction and not a state. Three further names for the same facts, each an interpretation:
 the diagonal read as the **self-helicity** of one element, $\mathbf{Q}\times\overline{\mathbf{Q}}=-2i\,\mathbf{a}\times\mathbf{b}$
 for $\mathbf{Q}=\mathbf{a}+i\mathbf{b}$; the operation read as a **field-strength pairing**, the Hodge dual
-of an antisymmetric two-form, so that the symmetric half is the metric reading and the antisymmetric half
-the curvature reading of the frame; and the operation read as an **anti-linear pairing**, its
+of an antisymmetric two-form, so that the symmetric half is the metric interpretation and the antisymmetric half
+the curvature interpretation of the frame; and the operation read as an **anti-linear pairing**, its
 conjugate-alternation the shape of a conjugation-mediated pairing and its non-vanishing diagonal the
-**self-charge** of one element. Two further readings, named in §*Named Readings of the Polarisation*: the **oriented-area reading**, the cross product as a plane orientation of the gauge frame rather
+**self-charge** of one element. Two further readings, named in §*Named Readings of the Polarisation*: the **oriented-area interpretation**, the cross product as a plane orientation of the gauge frame rather
 than a vector along a line, and **internal handedness**, the pseudo character of the value attached to the
 oriented frame.
 
@@ -306,13 +306,13 @@ image is the vector subspace; it is sesquilinear over $(\mathbb{C},\bar{\cdot})$
 **conjugate-alternating**; and it has no unit. Its diagonal $\mathbf{Q}\times\overline{\mathbf{Q}}$ does
 **not** vanish in general — it is $-2ie_3$ at $\tilde Q=e_1+ie_2$ — because the antisymmetric half of a
 sesqualgebra product is the anti-fixed part of the square and the adaptation of the exchange does not force
-the diagonal to zero. The reading of the band is that the **axial vector** of the value carries a
-**polarisation or spin direction** for the gauge side of the frame. The reading is bounded: the physical
+the diagonal to zero. The interpretation of the band is that the **axial vector** of the value carries a
+**polarisation or spin direction** for the gauge side of the frame. The interpretation is bounded: the physical
 polarisation, the spin-one representation and the state sphere belong to *Pancharatnam's Phase and the
 Polarization Sphere in Biquaternionic Form*, *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the
 Biquaternion Material Sector* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; the
 value is not a state and not a generator, the generators being the left multiplications by the
-anti-Hermitian elements of $\mathbb{M}_-$; and the reading is offered as a reading of the value. The
+anti-Hermitian elements of $\mathbb{M}_-$; and the interpretation is offered as an interpretation of the value. The
 failure of the operation to close under the Jacobi identity, and the complex character of its witness, are
 the subject of the companion article of the band.
 
@@ -327,7 +327,7 @@ the subject of the companion article of the band.
 | $\tilde Q\diamond\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}}$ | the diagonal; not zero in general |
 | $(e_1+ie_2)\diamond(e_1+ie_2)=-2ie_3$ | the witness of the non-vanishing diagonal |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace; the image of the operation |
-| axial vector | the reading of the value; a direction, not a state and not a generator |
+| axial vector | the interpretation of the value; a direction, not a state and not a generator |
 | $\mathbb{M}_-$ | the anti-Hermitian sector; the home of the gauge generators |
 
 ## Further Reading

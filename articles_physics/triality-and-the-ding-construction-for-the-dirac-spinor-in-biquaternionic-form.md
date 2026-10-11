@@ -55,7 +55,7 @@ $$
 
 where $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ is the symmetric gamma trace and $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ is the totally antisymmetric symbol, both contracted with the neutral vector $k$. The first bracket is the quadratic form on the semi-spinor, the second the genuinely cubic part; both are needed for the full invariant.
 
-The geometric reading is the same as Cartan's. In the $\mathrm{Spin}(8)$ case the invariant trilinear form on $8_v \times 8_s \times 8_c$ is the Clifford action composed with the invariant spinor pairing. Here the trilinear form on $M \times S_1 \times S_2$ is the gamma-matrix action $A_\mu \bar\Psi_{(1)}\gamma^\mu\Psi_{(2)}$, symmetrised in the two semi-spinors and evaluated on the neutral elements: it is the same construction in four dimensions, and it is the only independent invariant of the triple.
+The geometric interpretation is the same as Cartan's. In the $\mathrm{Spin}(8)$ case the invariant trilinear form on $8_v \times 8_s \times 8_c$ is the Clifford action composed with the invariant spinor pairing. Here the trilinear form on $M \times S_1 \times S_2$ is the gamma-matrix action $A_\mu \bar\Psi_{(1)}\gamma^\mu\Psi_{(2)}$, symmetrised in the two semi-spinors and evaluated on the neutral elements: it is the same construction in four dimensions, and it is the only independent invariant of the triple.
 
 ### The Cubic Form and the Dictionary
 
@@ -140,7 +140,7 @@ The contrast with Cartan's case is worth naming. There the triality automorphism
 
 3. **The role of the braid group.** The braid relation $q_1q_2q_1 = q_2q_1q_2$ is the defining relation of $B_3$. The corpus's *Anyons and Braid Statistics in Biquaternionic Form* treats braid statistics as a physical phenomenon in $2+1$ dimensions. Is the braid structure used by the four-dimensional construction the same braid group, or only the same presentation?
 
-4. **The three-generation reading.** A triality relates exactly three spaces. The Standard Model has exactly three generations of fermions. Whether the ding's order-three structure is the group-theoretic shadow of the three generations — or merely a numerical coincidence of the same number — is not addressed by the source, and the corpus records the observation only as a speculation.
+4. **The three-generation interpretation.** A triality relates exactly three spaces. The Standard Model has exactly three generations of fermions. Whether the ding's order-three structure is the group-theoretic shadow of the three generations — or merely a numerical coincidence of the same number — is not addressed by the source, and the corpus records the observation only as a speculation.
 
 These questions are open.
 

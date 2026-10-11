@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Quantum thermodynamics is the thermodynamics of systems whose state is a density operator: equilibrium is the Gibbs state, and the thermodynamic quantities — internal energy, entropy, free energy, heat capacity — are functionals of that state. This article asks what the biquaternion framework adds to that account, and it keeps the answer modest: the framework supplies a **reading** of the standard objects, not a new law.
+Quantum thermodynamics is the thermodynamics of systems whose state is a density operator: equilibrium is the Gibbs state, and the thermodynamic quantities — internal energy, entropy, free energy, heat capacity — are functionals of that state. This article asks what the biquaternion framework adds to that account, and it keeps the answer modest: the framework supplies a **interpretation** of the standard objects, not a new law.
 
-The reading rests on one formula, inherited from the companion articles:
+The interpretation rests on one formula, inherited from the companion articles:
 
 $$
 \mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H).
@@ -244,15 +244,15 @@ lies in $\mathbb{M}_+$ — it is Hermitian by construction. The last equality us
 
 ## What the Framework Adds, and What It Does Not
 
-The framework adds a **reading** with three components.
+The framework adds a **interpretation** with three components.
 
-First, the computational spine is algebraic: the trace is twice the scalar part, so the partition function, every thermal average, the entropy, and the heat capacity are obtained by extracting a scalar from a product of $\mathbb{M}_+$ elements. The variance form of the heat capacity, $C=k_B\beta^2[2\,\mathrm{Sc}(\tilde\rho\tilde H^2)-(2\,\mathrm{Sc}(\tilde\rho\tilde H))^2]$, shows the reading at work.
+First, the computational spine is algebraic: the trace is twice the scalar part, so the partition function, every thermal average, the entropy, and the heat capacity are obtained by extracting a scalar from a product of $\mathbb{M}_+$ elements. The variance form of the heat capacity, $C=k_B\beta^2[2\,\mathrm{Sc}(\tilde\rho\tilde H^2)-(2\,\mathrm{Sc}(\tilde\rho\tilde H))^2]$, shows the interpretation at work.
 
 Second, the state is geometric: the Gibbs state is the point $\mathbf r=-\tanh(\beta|\mathbf h|)\hat{\mathbf h}$ in the Bloch ball, and temperature traverses the ball from its centre toward its boundary.
 
 Third, the temperature is a direction: $\beta$ measures a displacement along the imaginary-time axis of the material sector $\mathbb{M}_-$, while the modular Hamiltonian $K=\beta(\tilde H-Fe_0)$, which carries the free energy, lies in $\mathbb{M}_+$. The thermal structure is therefore a coupling of the two sectors of the kind the KMS article describes.
 
-The framework does **not** produce a new thermodynamic law. The Gibbs state, the Legendre relations, the variational principle, the KMS characterisation, the Schottky heat capacity, and both temperature limits are standard, and the framework reproduces them. What it changes is where they live: the potentials become scalar extractions from the informational sector, and the temperature becomes an imaginary-time displacement in the material sector. Whether that reading has consequences beyond the standard account is open, and no such consequence is claimed here.
+The framework does **not** produce a new thermodynamic law. The Gibbs state, the Legendre relations, the variational principle, the KMS characterisation, the Schottky heat capacity, and both temperature limits are standard, and the framework reproduces them. What it changes is where they live: the potentials become scalar extractions from the informational sector, and the temperature becomes an imaginary-time displacement in the material sector. Whether that interpretation has consequences beyond the standard account is open, and no such consequence is claimed here.
 
 ## Summary
 
@@ -264,7 +264,7 @@ The thermodynamic functionals of the state are the internal energy $U=\mathrm{Tr
 
 The Gibbs state is the minimiser of $\mathcal F[\tilde\rho]=\mathrm{Tr}(\tilde\rho\tilde H)-\beta^{-1}S[\tilde\rho]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta U$ with $\partial S/\partial U=\beta$, and $F=U-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $U=F=h_0-|\mathbf h|$, $S=C=0$; the high-temperature limits are $\tilde\rho=\tfrac12e_0$, $U=h_0$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde A\tilde B}(t+i\beta)=F_{\tilde B\tilde A}(-t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $K=-\log\tilde\rho=\beta(\tilde H-Fe_0)$ lies in $\mathbb{M}_+$.
 
-The framework reproduces standard thermodynamics and claims no new law. Its addition is the reading: the potentials are scalar parts of $\mathbb{M}_+$ elements, the state is a path in the Bloch ball, and the temperature is a displacement along the imaginary-time axis of $\mathbb{M}_-$.
+The framework reproduces standard thermodynamics and claims no new law. Its addition is the interpretation: the potentials are scalar parts of $\mathbb{M}_+$ elements, the state is a path in the Bloch ball, and the temperature is a displacement along the imaginary-time axis of $\mathbb{M}_-$.
 
 
 ## Summary of Notation

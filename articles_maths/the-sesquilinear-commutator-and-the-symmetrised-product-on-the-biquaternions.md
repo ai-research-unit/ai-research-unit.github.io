@@ -255,7 +255,7 @@ the last because $\tilde Y\tilde X\tilde X^{*}=0$; the two sides of the identity
 
 **Remark.** One of the two elements is Hermitian, $\tilde Y$, and one is not, $\tilde X$; a single element off the Hermitian half is enough to break the identity, and the perturbation is exactly the failure of $\tilde X$ to be Hermitian. The value $\tilde X\circ\tilde X=\tilde X\tilde X^{*}=\tfrac12(e_0+ie_3)$ is Hermitian, as the Hermitian-value theorem promises, but the symmetry of the derived product with one slot off the half is the wrong one to carry the identity. The failure is the reason the Jordan structure of the sesqualgebra lives on the Hermitian half alone, and it is *Jordan Algebras of Sesqualgebras*, §*The Hermitian Part*, that locates it there.
 
-## The Biquaternion Reading
+## The Biquaternion Interpretation
 
 ### The Two Operations on the Basis
 

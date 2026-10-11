@@ -21,7 +21,7 @@ $$
 
 the symmetrised quaternionic product of the band
 `#### Focus on the Symmetric Quaternionic Algebra (SQA) of Biquaternions — Coupling`. Its values lie in
-the **centre** $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, and the whole article turns on the reading that
+the **centre** $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, and the whole article turns on the interpretation that
 follows: a product whose image is the centre returns a number, a number has no slot to act in, and the
 absence of a slot is the absence of a composition. The two structures that measure the failure and the
 reach are the radical and the isotropic set.
@@ -115,7 +115,7 @@ light cone, and its closure under the parent product, are *Biquaternion Norm and
 *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 
 The isotropic elements are the one set on which the coupling **does** fail to separate an element from
-itself, although it still separates the elements pairwise by the preceding section. The reading is exact
+itself, although it still separates the elements pairwise by the preceding section. The interpretation is exact
 and narrow: the coupling is non-degenerate, so an isotropic element is not invisible to the coupling; it
 is an element whose **own** value is zero, while its coupling with a suitable other element is not. A
 lightlike element is therefore a direction the coupling registers but cannot normalise, the same object
@@ -218,7 +218,7 @@ and vector rows are read as the real part of the coefficient, the two coefficien
 
 ## The Reading: Why a Central Product Cannot Compose
 
-**Proposed reading, labelled as such.** Each clause names a proved identity of the preceding sections.
+**Proposed interpretation, labelled as such.** Each clause names a proved identity of the preceding sections.
 
 - **The radical is the set of pairs the coupling does not separate, and it is trivial.** Nothing in the
   algebra is invisible to the coupling; every direction of every element is measured by some partner. The
@@ -247,24 +247,24 @@ and vector rows are read as the real part of the coefficient, the two coefficien
   the **ordinary** product, its multiplicativity proved in *Biquaternion Norm and Invertibility* — and that
   it **cannot** be read as an eigenvalue of a material operator: an eigenvalue needs an algebra with a
   unit and a spectral theory, and the preceding
-  section proves that neither exists in this row. Offered as a reading, a mass spectrum built on this row
+  section proves that neither exists in this row. Offered as an interpretation, a mass spectrum built on this row
   would be a set of **characters**, not a set of eigenvalues; whether any physical spectrum is of that kind
   is not claimed, and the algebra asserts only the multiplicativity of $N$ and the absence of a unit.
 - **Comparison without a normalisation.** The proved facts are the trivial radical together with the
   isotropic set equal to the light cone. Read together they describe a **comparison that measures every
   direction and normalises none**: every nonzero element is separated from some partner, so no direction is
   invisible, and a lightlike element is not separated from itself, so no direction on the cone is
-  normalised. Offered as a reading, the coupling is a **comparison that normalises none** — it registers
+  normalised. Offered as an interpretation, the coupling is a **comparison that normalises none** — it registers
   directions and supplies no eigenstate on the cone. The name is the framework's and not the algebra's,
   which asserts only the radical and the cone.
 
-**Caution.** An obstruction is a negative result, and a negative result bounds a reading without
+**Caution.** An obstruction is a negative result, and a negative result bounds an interpretation without
 supplying one. This article says where the operation **cannot** be read (as a composition, as an algebra
 with a unit, as a state) and does not say where the composition the framework does use comes from. The
 unit, the associativity and the Jordan identity all live in the **plain** product and in the sesquilinear
 rows, not in the quaternionic symmetrisation.
 
-**Open question.** Whether the "separation" reading of the radical and the isotropic set is more than a
+**Open question.** Whether the "separation" interpretation of the radical and the isotropic set is more than a
 naming is recorded and not settled. The algebra proves the trivial radical and the cone; it does not
 prove that "separation" is the right physical word for the coefficient.
 
@@ -278,7 +278,7 @@ $(\tilde X,\tilde Y)=(e_1,e_1)$, the two sides $0$ and $e_0$; the coefficient $N
 signatures $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ of $N$ on the remarkable subspaces and the same list with
 $(4,0)$ and $(0,4)$ at the two sectors for $B$.
 
-**Readings.** That the radical is the set of pairs the coupling does not separate and is trivial; that
+**Interpretations.** That the radical is the set of pairs the coupling does not separate and is trivial; that
 the isotropic set is the one place the coupling fails to separate an element from itself; that a central
 product cannot compose; that the coupling, being indefinite, selects no state; that no observable algebra
 of masses can be assembled from the material coupling, the observable structure coming from the
@@ -286,7 +286,7 @@ informational row; that mass in this row is a character of the unit group and no
 spectrum here would be a set of characters; that the coupling is a comparison that measures every
 direction and normalises none.
 
-**Not claimed.** That a physical operation is a biquaternion. That "separation" is a forced reading of
+**Not claimed.** That a physical operation is a biquaternion. That "separation" is a forced interpretation of
 the radical. That the coupling carries a positivity, a state or a probability. That the failure of the
 Jordan identity has a physical process behind it. That a lightlike element is a measured zero of some
 physical comparison. That the informational row in fact supplies a mass spectrum, or that the interval
@@ -296,7 +296,7 @@ algebra: only the multiplicativity of $N$, the trivial radical and the cone are 
 
 ## Physical Readings
 
-The isotropic elements read as the null cone, so the radical of the central product is the cone read as a degeneration of a product, and the article's reading is that a central product cannot compose because composing needs a value that can be multiplied rather than only added. Read against the states, the absence of a unit and the failure of the Jordan identity say that this product cannot define an observable; read for invariance, its central values are of the class that no change of the local complex structure touches.
+The isotropic elements read as the null cone, so the radical of the central product is the cone read as a degeneration of a product, and the article's interpretation is that a central product cannot compose because composing needs a value that can be multiplied rather than only added. Read against the states, the absence of a unit and the failure of the Jordan identity say that this product cannot define an observable; read for invariance, its central values are of the class that no change of the local complex structure touches.
 
 ## Summary
 
@@ -315,7 +315,7 @@ form $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, **not** th
 form $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$, the two differing by the sign of the vector
 part alone; the two read $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ and
 $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$ on the remarkable subspaces, agreeing on the centre and the vector
-subspace and exchanging signatures on the other four. The reading is that a product whose image is
+subspace and exchanging signatures on the other four. The interpretation is that a product whose image is
 the **centre** returns a number, and a number **compares and does not compose**: the operation is the
 scalar coupling of the material row, non-degenerate, and it is not an algebra with a unit, not a Jordan
 algebra and not a state. Because no unit and no Jordan identity is available, no observable algebra of

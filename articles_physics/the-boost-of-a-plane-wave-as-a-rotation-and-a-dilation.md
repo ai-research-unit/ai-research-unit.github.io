@@ -55,7 +55,7 @@ because $\hat{\mathbf k}\hat{\mathbf k} = -e_0$. The null element is a zero divi
 
 ## The Null Flag and the Flagpole
 
-The null element $e_0+i\hat{\mathbf k}$ has a geometric reading, due to Penrose, that the pacwoman lemma makes precise. A **null flag** in Minkowski space is a lightlike direction together with a plane containing it: the direction is the **flagpole**, and the plane is the **flag**. For the wave element the flagpole is the lightlike paravector $e_0+i\hat{\mathbf k}$ itself, and the flag is the two-plane transverse to $\hat{\mathbf k}$; the electric field of a plane wave lies in the flag, and the magnetic field is the flag swept along the flagpole as the wave propagates. Transversality of the electromagnetic field is the statement that the amplitude has no component along the flagpole; the pacwoman identity $i\hat{\mathbf k}(e_0+i\hat{\mathbf k}) = e_0+i\hat{\mathbf k}$ is the statement that the flagpole absorbs its own direction without leaving the null cone.
+The null element $e_0+i\hat{\mathbf k}$ has a geometric interpretation, due to Penrose, that the pacwoman lemma makes precise. A **null flag** in Minkowski space is a lightlike direction together with a plane containing it: the direction is the **flagpole**, and the plane is the **flag**. For the wave element the flagpole is the lightlike paravector $e_0+i\hat{\mathbf k}$ itself, and the flag is the two-plane transverse to $\hat{\mathbf k}$; the electric field of a plane wave lies in the flag, and the magnetic field is the flag swept along the flagpole as the wave propagates. Transversality of the electromagnetic field is the statement that the amplitude has no component along the flagpole; the pacwoman identity $i\hat{\mathbf k}(e_0+i\hat{\mathbf k}) = e_0+i\hat{\mathbf k}$ is the statement that the flagpole absorbs its own direction without leaving the null cone.
 
 The flagpole is also a **pure state**. The element
 
@@ -181,7 +181,7 @@ Two consequences deserve recording. First, the electric and magnetic fields are 
 
 ## Physical Reading
 
-The identity turns the kinematics of a boosted wave into three readings of one formula:
+The identity turns the kinematics of a boosted wave into three interpretations of one formula:
 
 - **Frequency.** The coefficient of $i$ in $\tilde{K}'$ is $e^{d}\omega = \left(\cosh w - \cos\alpha\sinh w\right)\omega$. This is the relativistic Doppler factor of *Exercise: The Relativistic Doppler Effect*, recovered here as the scalar factor of the dilation.
 - **Direction.** The rotation $\tilde{R}$ carries $\hat{\mathbf k}$ to $\cos\theta\,\hat{\mathbf k} - \sin\theta\,\hat{\mathbf e}$ with $\hat{\mathbf e} = (\hat{\mathbf u}-\cos\alpha\,\hat{\mathbf k})/\sin\alpha$ the transverse direction of $\hat{\mathbf u}$, so that $\hat{\mathbf k}$ is dragged toward the velocity by the angle $\theta$; in the transverse case this is the elementary form $\hat{\mathbf k}\cos\theta - \hat{\mathbf u}\sin\theta$. This is aberration, recovered as the angle of the rotation.

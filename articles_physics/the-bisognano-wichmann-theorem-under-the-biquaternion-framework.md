@@ -241,7 +241,7 @@ which is proportional to the boost generator $G_1$ modulo the central term $(\lo
 
 **Interpretation.**
 
-- Reading the modular flow as the biquaternionic boost flow, and the horizon as the zero-divisor cone, are structural readings of the standard construction. The algebra houses them; it does not force them.
+- Reading the modular flow as the biquaternionic boost flow, and the horizon as the zero-divisor cone, are structural interpretations of the standard construction. The algebra houses them; it does not force them.
 
 **Gaps, left visible.**
 
@@ -250,7 +250,7 @@ which is proportional to the boost generator $G_1$ modulo the central term $(\lo
 - *No state selection.* The framework supplies $S$ and a family of faithful states, but no dynamics that chooses the boost-thermal one; the tracial state gives the trivial flow.
 - *The field-algebra setting is absent.* The wedge algebra is a type III von Neumann algebra; $\mathbb{B}$ is type I$_2$ and cannot host the outer modular flow that the theorem's setting requires. Realising it needs an infinite-dimensional algebra built on $\mathbb{B}$-modules.
 - *No general-region statement.* The framework reproduces the wedge, and only the wedge; it has nothing to say about the modular Hamiltonian of a general region, which is the case where the standard theory is nonlocal.
-- *No empirical consequence.* As everywhere in the framework, no prediction distinguishing this reading from standard quantum field theory is derived.
+- *No empirical consequence.* As everywhere in the framework, no prediction distinguishing this interpretation from standard quantum field theory is derived.
 
 ## Summary
 

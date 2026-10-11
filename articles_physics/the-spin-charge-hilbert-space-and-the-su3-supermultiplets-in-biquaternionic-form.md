@@ -148,7 +148,7 @@ The infinite-dimensional factor $\mathcal{H}_\infty$ is the third point. It is w
 
 **Transcribed, not derived.**
 
-- The whole construction of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$, the von Neumann and convergence conditions, and the superselection reading.
+- The whole construction of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$, the von Neumann and convergence conditions, and the superselection interpretation.
 - The central-extension treatment of the internal symmetries and the identification of $\mathrm{SU}(2)$ and $\mathrm{SU}(3)$ as the acting groups.
 - The particle content: which supermultiplets exist and which charge multiplets they reduce to.
 
@@ -198,5 +198,5 @@ The framework's relation to this is a relation of one factor. The spin factor is
 - N. Kemmer, "The charge-dependence of nuclear forces," *Proceedings of the Cambridge Philosophical Society* **34** (1938) 354–364, for the three-charge multiplet.
 - E. P. Wigner, G. C. Wick and A. S. Wightman, "The intrinsic parity of elementary particles," *Physical Review* **88** (1952) 101–105, for the relation between superselection rules and the unmeasurability of relative phases.
 - M. Gell-Mann and Y. Ne'eman, *The Eightfold Way* (Benjamin, 1964), for the $\mathrm{SU}(3)$ supermultiplets and their reductions.
-- V. V. Varlamov, "Spinor Structure and Internal Symmetries," *International Journal of Theoretical Physics* **54** (2015) 3533–3576 (arXiv:1409.1400), for the spin–charge Hilbert space, the superselection reading and the central-extension treatment recorded here.
+- V. V. Varlamov, "Spinor Structure and Internal Symmetries," *International Journal of Theoretical Physics* **54** (2015) 3533–3576 (arXiv:1409.1400), for the spin–charge Hilbert space, the superselection interpretation and the central-extension treatment recorded here.
 - Companion articles: *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*; *SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form*; *Charge Conjugation and the Division Ring*; *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*; *The Gluon: An Octet Outside the Biquaternion Algebra*; *The Proton in Biquaternionic Form*; *The Neutron in Biquaternionic Form*.

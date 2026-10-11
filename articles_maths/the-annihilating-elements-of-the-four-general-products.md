@@ -26,11 +26,11 @@ $$
 \tilde Q\tilde Q^{\natural} = c(\tilde Q)e_0 , \qquad c(\tilde Q) = Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2} ,
 $$
 
-and it vanishes exactly when the matrix $\Phi(\tilde Q) = Q_0 I - iQ_1\sigma_1 - iQ_2\sigma_2 - iQ_3\sigma_3$ of the element in the model $\mathbb{B}\cong M_2(\mathbb{C})$ is singular.
+and it vanishes exactly when the matrix $\mathsf{M}_2(\tilde Q) = Q_0 I - iQ_1\sigma_1 - iQ_2\sigma_2 - iQ_3\sigma_3$ of the element in the model $\mathbb{B}\cong M_2(\mathbb{C})$ is singular.
 
-**Proof.** Directly, $\tilde Q\tilde Q^{\natural} = (Q_0+\mathbf Q)(Q_0-\mathbf Q) = Q_0^{2}-\mathbf Q^{2} = \sum_\mu Q_\mu^{2}\,e_0$, since $\mathbf Q^{2} = -\sum_k Q_k^{2}\,e_0$. The vanishing of the central square is the singularity of $\Phi(\tilde Q)$ by the invertibility criterion (*Norm and Invertibility in the General Plain Algebra*), read through the isomorphism.
+**Proof.** Directly, $\tilde Q\tilde Q^{\natural} = (Q_0+\mathbf Q)(Q_0-\mathbf Q) = Q_0^{2}-\mathbf Q^{2} = \sum_\mu Q_\mu^{2}\,e_0$, since $\mathbf Q^{2} = -\sum_k Q_k^{2}\,e_0$. The vanishing of the central square is the singularity of $\mathsf{M}_2(\tilde Q)$ by the invertibility criterion (*Norm and Invertibility in the General Plain Algebra*), read through the isomorphism.
 
-The central square is the reason the second-order theory does the work of the whole element theory. Since $\Phi$ is an isomorphism of $\mathbb{C}$-algebras, an element is a unit exactly when $\Phi(\tilde Q)$ is invertible, that is exactly when $c(\tilde Q)\neq0$; and an element is a zero divisor exactly when $\Phi(\tilde Q)$ is singular. The model converts the algebra's element theory into the linear algebra of a complex two-by-two matrix, and it is the frame of the next two sections. The quadratic form the algebra carries, its signature and its norm are read in *Norm and Invertibility in the General Plain Algebra*.
+The central square is the reason the second-order theory does the work of the whole element theory. Since $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras, an element is a unit exactly when $\mathsf{M}_2(\tilde Q)$ is invertible, that is exactly when $c(\tilde Q)\neq0$; and an element is a zero divisor exactly when $\mathsf{M}_2(\tilde Q)$ is singular. The model converts the algebra's element theory into the linear algebra of a complex two-by-two matrix, and it is the frame of the next two sections. The quadratic form the algebra carries, its signature and its norm are read in *Norm and Invertibility in the General Plain Algebra*.
 
 **Proposition.** The central square is multiplicative for the plain product, $c(\tilde P\tilde Q) = c(\tilde P)c(\tilde Q)$, and the central square of a conjugation is the conjugated central square: $c(\tilde Q^{\natural}) = c(\tilde Q)$ and $c(\tilde Q^{*}) = \overline{c(\tilde Q)}$.
 
@@ -68,7 +68,7 @@ $$
 \{\tilde P : \exists\,\tilde X\neq0,\ f(\tilde P,\tilde X) = 0 \ \text{or}\ f(\tilde X,\tilde P) = 0\} = \{\tilde P : c(\tilde P) = 0\} ,
 $$
 
-**Proof.** Fix a product $f$ and an element $\tilde P$, and consider the map $\tilde X\mapsto f(\tilde P,\tilde X)$, which is $\mathbb{C}$-linear for the two bilinear products and conjugate-linear for the two sesquilinear ones, and which in the matrix model is left multiplication by $\Phi(\tilde P)$ or by $\Phi(\tilde P^{\natural})$, composed with the conjugate transpose when the second slot carries the star. The map has a nonzero kernel exactly when that matrix is singular, that is exactly when $c(\tilde P) = 0$. Conversely, if $c(\tilde P) = 0$ and $\tilde P\neq0$, then $\tilde P\tilde P^{\natural} = 0$ with $\tilde P^{\natural}\neq0$ exhibits an annihilating factor in the plain product; the natural product takes the same factor, since $\tilde P^{\natural}\tilde P = c(\tilde P)e_0 = 0$; and the two products carrying the star take the conjugate $\overline{\tilde P}$, for which $\tilde P\overline{\tilde P}^{*} = \tilde P\tilde P^{\natural} = 0$ and $\tilde P^{\natural}\overline{\tilde P}^{*} = \tilde P^{\natural}\tilde P = 0$. The same argument with the roles of the two slots exchanged gives the other side.
+**Proof.** Fix a product $f$ and an element $\tilde P$, and consider the map $\tilde X\mapsto f(\tilde P,\tilde X)$, which is $\mathbb{C}$-linear for the two bilinear products and conjugate-linear for the two sesquilinear ones, and which in the matrix model is left multiplication by $\mathsf{M}_2(\tilde P)$ or by $\mathsf{M}_2(\tilde P^{\natural})$, composed with the conjugate transpose when the second slot carries the star. The map has a nonzero kernel exactly when that matrix is singular, that is exactly when $c(\tilde P) = 0$. Conversely, if $c(\tilde P) = 0$ and $\tilde P\neq0$, then $\tilde P\tilde P^{\natural} = 0$ with $\tilde P^{\natural}\neq0$ exhibits an annihilating factor in the plain product; the natural product takes the same factor, since $\tilde P^{\natural}\tilde P = c(\tilde P)e_0 = 0$; and the two products carrying the star take the conjugate $\overline{\tilde P}$, for which $\tilde P\overline{\tilde P}^{*} = \tilde P\tilde P^{\natural} = 0$ and $\tilde P^{\natural}\overline{\tilde P}^{*} = \tilde P^{\natural}\tilde P = 0$. The same argument with the roles of the two slots exchanged gives the other side.
 
 The theorem is a statement about one set and four annihilators, and the distinction matters. The set $\{c = 0\}$ is intrinsic to the algebra; the annihilator of a point of the set is not, and the next section reads the four of them. The zero divisors of the algebra are the nonzero points of the set, classified in *Zero Divisors of the General Plain Algebra*; the proof above is the sense in which each of the four general products detects them.
 
@@ -82,9 +82,9 @@ Written on the coordinates, the annihilated set is one complex equation.
 
 In the matrix model the set is the set of singular matrices, and the nonzero members of it have rank exactly one.
 
-**Proposition (the rank-one elements).** For $\tilde P\neq0$ the following are equivalent: $c(\tilde P) = 0$; the matrix $\Phi(\tilde P)$ is singular; $\Phi(\tilde P)$ has rank one; and the left ideal $\mathbb{B}\tilde P$ is minimal, of complex dimension two.
+**Proposition (the rank-one elements).** For $\tilde P\neq0$ the following are equivalent: $c(\tilde P) = 0$; the matrix $\mathsf{M}_2(\tilde P)$ is singular; $\mathsf{M}_2(\tilde P)$ has rank one; and the left ideal $\mathbb{B}\tilde P$ is minimal, of complex dimension two.
 
-**Proof.** A nonzero two-by-two matrix is singular exactly when it has rank one, and $c(\tilde P) = 0$ is the singularity of $\Phi(\tilde P)$ by the first section. The left ideal generated by an element of rank one is the set of matrices whose image lies in the one-dimensional image of $\Phi(\tilde P)$, of complex dimension two, and no smaller nonzero left ideal exists in $M_2(\mathbb{C})$; the modules and the ideals are *Modules over the General Plain Algebra of Biquaternions* and *Ideals and Peirce Decomposition of the General Plain Algebra*.
+**Proof.** A nonzero two-by-two matrix is singular exactly when it has rank one, and $c(\tilde P) = 0$ is the singularity of $\mathsf{M}_2(\tilde P)$ by the first section. The left ideal generated by an element of rank one is the set of matrices whose image lies in the one-dimensional image of $\mathsf{M}_2(\tilde P)$, of complex dimension two, and no smaller nonzero left ideal exists in $M_2(\mathbb{C})$; the modules and the ideals are *Modules over the General Plain Algebra of Biquaternions* and *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
 The cone has two algebraic families, and the classification is the algebra's, not the article's.
 
@@ -98,7 +98,7 @@ Fix an element of the annihilated set, $\tilde P\neq0$ with $c(\tilde P) = 0$. E
 
 **Theorem (dimension of the annihilators).** Let $f$ be any of the four general products and let $\tilde P\neq0$. Then $\{\tilde X : f(\tilde P,\tilde X) = 0\}$ and $\{\tilde X : f(\tilde X,\tilde P) = 0\}$ are each of complex dimension two when $c(\tilde P) = 0$, and each $0$ when $c(\tilde P)\neq0$. For the natural product the two planes contain $\tilde P$, because $\tilde P^{\natural}\tilde P = \tilde P\tilde P^{\natural} = c(\tilde P)e_0$ vanishes there; for the other three products $\tilde P$ lies in its own annihilator exactly when it is square-zero in that product, which for $\tilde P\neq0$ happens for the plain and the fourth product and never for the general plain sesquilinear one (the square-zero table below).
 
-**Proof.** In the model the two conditions are the two kernels of the singular matrix $\Phi(\tilde P)$ or of its transpose with the conjugations, and a rank-one matrix has a two-dimensional kernel; for the natural product $\tilde P$ lies in its own annihilator on both sides because $\tilde P\tilde P^{\natural}$ and $\tilde P^{\natural}\tilde P$ are both $c(\tilde P)e_0 = 0$.
+**Proof.** In the model the two conditions are the two kernels of the singular matrix $\mathsf{M}_2(\tilde P)$ or of its transpose with the conjugations, and a rank-one matrix has a two-dimensional kernel; for the natural product $\tilde P$ lies in its own annihilator on both sides because $\tilde P\tilde P^{\natural}$ and $\tilde P^{\natural}\tilde P$ are both $c(\tilde P)e_0 = 0$.
 
 The planes are not the same for the four general products, and the way they differ is the conjugation each product carries.
 
@@ -184,7 +184,7 @@ The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form
 | symbol | meaning |
 |---|---|
 | $\tilde Q\tilde Q^{\natural} = c(\tilde Q)e_0$ | the central square; $c(\tilde Q) = \sum_\mu Q_\mu^{2}$ |
-| $\Phi(\tilde Q)$ | the matrix of the element, $\mathbb{B}\cong M_2(\mathbb{C})$ |
+| $\mathsf{M}_2(\tilde Q)$ | the matrix of the element, $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\{c = 0\}$ | the annihilated set, a complex cone of real dimension six |
 | $A_f(\tilde P)$, $B_f(\tilde P)$ | the two one-sided annihilators of $\tilde P$ for the product $f$ |
 | $(\mathbf P,\mathbf Q)$ | the general plain bilinear form of the two vector parts |

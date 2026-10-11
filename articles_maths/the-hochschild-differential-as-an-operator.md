@@ -132,7 +132,7 @@ $$
 
 The definitions are those of a cochain complex, and they are the reason the square-zero property is worth proving: without it the quotient would not be defined.
 
-### The Low-Dimensional Reading
+### The Low-Dimensional Interpretation
 
 **Proposition.** The low-dimensional modules of the Hochschild complex are
 

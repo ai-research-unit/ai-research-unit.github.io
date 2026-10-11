@@ -244,7 +244,7 @@ The rotating field exhibits the interpolation between the adiabatic Berry phase 
 
 3. **The local complex structure.** The spinor phase uses the central $i$, while the rotor uses the real units $e_k$. The series allows the complex structure to be local; the geometric phase, however, seems to require a globally defined spinor phase. Whether a local complex structure would modify the phase is unresolved, as it is in the companion articles *The Schrödinger Equation in Biquaternionic Form* and *The Path Integral in Biquaternionic Form*.
 
-4. **The classical analogue.** The Hannay angle is the classical-adiabatic analogue of the Berry phase. The biquaternion framework's relation to classical spin precession is not developed here; whether the Hannay angle has an algebraic reading is open.
+4. **The classical analogue.** The Hannay angle is the classical-adiabatic analogue of the Berry phase. The biquaternion framework's relation to classical spin precession is not developed here; whether the Hannay angle has an algebraic interpretation is open.
 
 5. **Empirical contact.** As elsewhere, the reformulation reproduces the standard predictions; whether it implies a measurable deviation is open.
 

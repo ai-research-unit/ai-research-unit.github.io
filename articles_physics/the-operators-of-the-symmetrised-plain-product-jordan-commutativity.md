@@ -15,7 +15,7 @@ $$
 Because the product is commutative the two **coincide**, $L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A}$: the
 band carries **one** family and not two, and the two-sided operator a Jordan algebra keeps from the associative
 sandwich is the **quadratic representation** $U_{\tilde A}=2(L^{\bullet}_{\tilde A})^{2} -L^{\bullet}_{\tilde A\bullet\tilde A}$, acting by $\tilde X\mapsto\tilde A\tilde X\tilde A$. The element theory
-of the block is *The Specificities of the Symmetric Plain Algebra*; the measurement reading and the classical
+of the block is *The Specificities of the Symmetric Plain Algebra*; the measurement interpretation and the classical
 composition are the two sibling articles' business; this article adds the operator layer only.
 
 The answer is one sentence. The form of the block is the **trace form**
@@ -94,7 +94,7 @@ Multiplication Operators of the Symmetric Plain Algebra*, §*The Composition and
 **Corollary (the witness).** The block is not associative: $e_1\bullet(e_1\bullet e_2)=0\neq-e_2 =(e_1\bullet e_1)\bullet e_2$, since $e_1\bullet e_2=\tfrac12(e_3-e_3)=0$ and $e_1\bullet e_1=e_1^{2}=-e_0$.
 
 **Read as a physical statement.** Two order-free compositions do not compose to an order-free composition, and
-the defect is exactly the cross term the antisymmetric band keeps; the reading is that the symmetrisation
+the defect is exactly the cross term the antisymmetric band keeps; the interpretation is that the symmetrisation
 discards order when it is applied twice, so the block is a Jordan and not an associative algebra and its left
 regular representation is not multiplicative.
 
@@ -114,7 +114,7 @@ the fundamental formula is *The Jordan Multiplication Operators*, quoted in *The
 Operators on a Jordan Algebra*.
 
 **Read as a physical statement.** The order-free composition satisfies one law in place of associativity:
-$P^{2}Q$ and $P(PQ)$ differ, but the operators of $P$ and of $P^{2}$ commute. The reading is that a Jordan
+$P^{2}Q$ and $P(PQ)$ differ, but the operators of $P$ and of $P^{2}$ commute. The interpretation is that a Jordan
 product keeps enough order-blindness to make the square a central object of the operator calculus, and fails
 just enough to keep the operator algebra from being the algebra of the elements; the element form is *The
 Symmetrised Material Composition and the Jordan Identity*.
@@ -146,7 +146,7 @@ and the Classical Composition*.
 is the associativity of the plain product read on the symmetrised one; an invariant form is one across which an
 operation can be transported, and the transport is the adjoint. Its indefiniteness is the sector sign, positive
 on the observables and negative on the material sector, and its identity with the Born pairing on the
-observables is the algebraic content of the classical-composition reading.
+observables is the algebraic content of the classical-composition interpretation.
 
 **Theorem (association keeps the parameter).** For all $\tilde A,\tilde X,\tilde Y$,
 $\tau(L^{\bullet}_{\tilde A}\tilde X,\tilde Y)=\tau(\tilde X,L^{\bullet}_{\tilde A}\tilde Y)$, that is
@@ -160,9 +160,9 @@ Trace Form*.
 **Corollary (the composite is transported backwards).** $(L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B})^{\approx} =L^{\bullet}_{\tilde B}L^{\bullet}_{\tilde A}$, so a composite is its own associate exactly when its two factors
 commute.
 
-**Read as a physical statement.** Two readings, the sharp statement of the band. The adjoint for the form
+**Read as a physical statement.** Two interpretations, the sharp statement of the band. The adjoint for the form
 **does not move the operator**: it neither swaps the sides, as the general plain adjoint does, nor conjugates
-the parameter, as the Hermitian dagger does, and the reading is that the order-free composition is
+the parameter, as the Hermitian dagger does, and the interpretation is that the order-free composition is
 **self-paired** — the form cannot tell a left attachment from a right one because there is only one, and it
 carries no conjugation to collapse onto. The pairing transports a chain of two compositions backwards, and only
 a commutative chain is invisible to the reversal. The contrast with the plain swap and with the dagger is the
@@ -205,7 +205,7 @@ derivation is skew because it is a derivation of the plain product and $\tau$ is
 
 **Read as a physical statement.** The one-parameter family is a family of symmetric operators and contains no
 generator: the band supplies no infinitesimal operation of its own family. The generators are the
-**commutators** of two multiplications, the inner derivations, of dimension three, and the reading is that what
+**commutators** of two multiplications, the inner derivations, of dimension three, and the interpretation is that what
 is infinitesimal in the block is the failure of two compositions to commute. The derivation algebra is
 $\mathfrak{sl}(2,\mathbb{C})$, read as *Angular Momentum and the Lie Algebra of the Material Sector* and, with
 the observables dictionary, in *Observables, Gauge Generators and the Chirality of the Internal Action*.
@@ -237,7 +237,7 @@ Right Multiplication Operators on a Jordan Algebra*, §*The Trace Form*.
 
 **Read as a physical statement.** The sandwich is symmetric for the trace form whatever its parameter, so the
 trace form never distinguishes one sandwich from another; the physical form does, and it is self-adjoint exactly
-on the two sectors. The reading is the framework's own: a measurement update and a conjugation are both
+on the two sectors. The interpretation is the framework's own: a measurement update and a conjugation are both
 symmetric, a sector-mixing parameter is not. The difference from the general plain block is the form for which
 the criterion holds.
 
@@ -259,9 +259,13 @@ $\pm\mathrm{Ad}_{\tilde A}$; in particular the quadratic representation $U_{\til
 preserves $\tau$ iff $\tilde A\bullet\tilde A=\tilde A^{2}=\pm e_0$.
 
 *Proof.* Preservation is $\tau(\tilde A\tilde X\tilde B,\tilde A\tilde Y\tilde B)=\tau(\tilde X,\tilde Y)$;
-invariance and cyclicity turn it into $\tilde B\tilde Y\tilde A\tilde B\tilde A=\tilde Y$ for all $\tilde Y$, and
-at $e_0$ this gives $(\tilde B\tilde A)^{2}=e_0$ with $\tilde B\tilde A$ central; setting $\tilde A=\tilde B$
-gives the quadratic criterion.
+since $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$, cyclicity shifts it to
+$\mathrm{Sc}(\tilde X\tilde B\tilde A\tilde Y\tilde B\tilde A)=\mathrm{Sc}(\tilde X\tilde Y)$, that is
+$\tau(\tilde X,(\tilde B\tilde A)\tilde Y(\tilde B\tilde A))=\tau(\tilde X,\tilde Y)$ for all $\tilde X$, and
+non-degeneracy gives $(\tilde B\tilde A)\tilde Y(\tilde B\tilde A)=\tilde Y$ for all $\tilde Y$ — the middle
+word is the product $\tilde B\tilde A$ on both sides, never $\tilde B\tilde Y\tilde A$. At $\tilde Y=e_0$ this
+gives $(\tilde B\tilde A)^{2}=e_0$, and multiplying the identity by $\tilde B\tilde A$ on the left gives
+centrality; setting $\tilde A=\tilde B$ gives the quadratic criterion.
 
 **Read as a physical statement.** Inside the one family only the two scalar signs preserve the form; the richer
 statement is that an element of square $\pm e_0$ acts as an isometry through its **sandwich**, not through its
@@ -291,7 +295,7 @@ only projectors are $L^{\bullet}_{e_0}=\mathrm{id}$ and $L^{\bullet}_{0}=0$, and
 
 **Read as a physical statement.** The symmetry of the form and the symmetry of the product fall on different
 operators: the form is preserved by the quadratic representations at the elements of square $\pm e_0$, the
-product by the two-sided inner automorphisms and the outer natural conjugation. The reading is that the band's
+product by the two-sided inner automorphisms and the outer natural conjugation. The interpretation is that the band's
 family carries **no** non-trivial automorphism — a multiplication moves an element but cannot relabel the
 algebra — and the relabelling is the two-sided conjugation of the parent, the outer one being the coset the
 inner automorphisms cannot reach.
@@ -314,9 +318,9 @@ being a projector are *The Specificities of the Symmetric Plain Algebra*, §*The
 Theory*.
 
 **Read as a physical statement.** On the observables the multiplications are the symmetric operators of a
-classical system, and the reading is that the symmetrised composition, restricted to them, is the classical
+classical system, and the interpretation is that the symmetrised composition, restricted to them, is the classical
 composition and the operator of an observable is the operator of a measurable quantity. At a sharp question the
-operator has the three Peirce values; the reading is that the answer is **graded** and that the classical
+operator has the three Peirce values; the interpretation is that the answer is **graded** and that the classical
 two-valued projection is absent, because a non-trivial idempotent gives no projector. The measurement and the
 classical composition are the siblings' business, and this article supplies only the operator behind them.
 
@@ -332,8 +336,8 @@ simple ideal into itself or its complement. *The Spinor Space as a Module and as
 Complementary Space of the Spinor Space and Its Physical Meaning*.
 
 **Read as a physical statement.** A state is acted on from the left by the observable and from the right by the
-same observable, and the reading is that the classical composition sees a state from both sides at once. A
-central parameter acts as a scalar and is the one operation the state space cannot see: the reading is the
+same observable, and the interpretation is that the classical composition sees a state from both sides at once. A
+central parameter acts as a scalar and is the one operation the state space cannot see: the interpretation is the
 invariance under a central phase and the statement that the state space carries no phase of its own.
 
 ## The Sandwich and the Inner Automorphism
@@ -361,7 +365,7 @@ symmetry makes $U_{\tilde A}=\mathrm{Ad}_{\tilde A}$; self-adjointness for $\tau
 **Read as a physical statement.** The band has one two-sided operator, the sandwich, interpolating between two
 roles: at an element of square $e_0$ it is the inner automorphism, isometry and automorphism at once, while at
 an idempotent it is the symmetric quadratic representation, a projection ($U_{\tilde\Pi}^{2}=U_{\tilde\Pi}$)
-and not a conjugation, and at a general element it is symmetric and not multiplicative. The reading is that the
+and not a conjugation, and at a general element it is symmetric and not multiplicative. The interpretation is that the
 **symmetry** of a Jordan algebra is the exact parameter for which the order-blind composition and the two-sided
 conjugation agree, and they agree nowhere else.
 
@@ -453,7 +457,7 @@ declare.
 - **The state space is cited.** The spinor module, its matrix units and its complement are *The Spinor Space as
   a Module and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*.
 
-**What the framework does not claim.** The reading does not derive the classical composition or the measurement
+**What the framework does not claim.** The interpretation does not derive the classical composition or the measurement
 update from the operator calculus; it names the operator behind two objects the band already uses. It does not
 identify the trace-form adjoint with hermiticity — the two adjoints are different and coincide only on the
 observables — and it does not claim a generator algebra inside the family: the family is symmetric and the
@@ -480,7 +484,7 @@ multiplication is a non-trivial automorphism; the observable sector is closed wi
 for the Born pairing and the cubic Peirce spectrum $\{0,\tfrac12,1\}$ at an idempotent; and the sandwich equals
 the inner automorphism exactly on the symmetries and is minus it on the anti-symmetries.
 
-**Readings.** That the adjoint **keeps the parameter** and that the swap of sides is impossible, one family
+**Interpretations.** That the adjoint **keeps the parameter** and that the swap of sides is impossible, one family
 replacing two, which is the operator content of commutativity; that the order-free composition is
 **self-paired**, the trace form being unable to distinguish a left attachment from a right one; that the
 infinitesimal structure is not in the symmetric family but in its commutators, the inner derivations; that the
@@ -494,29 +498,29 @@ labelled as such.
 
 ## Physical Readings
 
-The operators of the symmetrised plain product read as one family rather than two, and the reading of their
+The operators of the symmetrised plain product read as one family rather than two, and the interpretation of their
 collapse is the band's job word. Where the general plain block has two distinct families and an adjoint that
-exchanges them, here the commutativity of the composition makes them one, and the physical reading is that an
+exchanges them, here the commutativity of the composition makes them one, and the physical interpretation is that an
 order-free composition has no orientation: nothing distinguishes an attachment on the left from one on the
 right, and no transport can distinguish them either. The trace form is the scalar part of the product itself,
-invariant and indefinite, and its adjoint is the identity on the family; the reading of the invariance is that
+invariant and indefinite, and its adjoint is the identity on the family; the interpretation of the invariance is that
 the pairing of two order-free compositions is itself order-free, which is the operator form of the classical
 composition read in *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*.
 
 Read on the types, every multiplication is symmetric for the trace form and none is a generator, so the band
 supplies no infinitesimal operation of its own family; the generators are the order defects
-$[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde B}]$, of dimension three, and the reading is that what is
+$[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde B}]$, of dimension three, and the interpretation is that what is
 infinitesimal in the block is the failure of two compositions to commute. The conjugation of a parameter belongs
-to the Hermitian dagger, the adjoint of the physical form, and the reading is the sector dictionary: a Hermitian
+to the Hermitian dagger, the adjoint of the physical form, and the interpretation is the sector dictionary: a Hermitian
 parameter gives the observable, an anti-Hermitian one the generator, and on the observable sector the trace form
 is the Born pairing, so the two adjoints agree exactly there. Read on the symmetries, the form is preserved by a
 multiplication only at the two scalar signs, while an element of unit square acts as an isometry through its
-sandwich; the reading is that the isometry of the band is the two-sided quadratic representation and not the
+sandwich; the interpretation is that the isometry of the band is the two-sided quadratic representation and not the
 one-sided multiplication, and that the sandwich and the inner automorphism coincide exactly at the symmetries.
 Read on the state space, the operator is the mean of the module action and a complementary module map and the
-centre acts as a scalar; the reading is the invariance under a central phase and the statement that the state
+centre acts as a scalar; the interpretation is the invariance under a central phase and the statement that the state
 space carries no phase of its own. Read on a sharp question, its operator has the three Peirce values and is not
-a projector; the reading is that the answer is graded and that the classical two-valued projection is absent.
+a projector; the interpretation is that the answer is graded and that the classical two-valued projection is absent.
 The distinctions are labelled throughout: what is proved is the algebra, what is proposed is the naming.
 
 ## Summary

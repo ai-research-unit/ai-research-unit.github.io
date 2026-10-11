@@ -46,7 +46,7 @@ $$
 
 **Remark (the conjugate dual is not the conjugate module).** The conjugate module $A^{\varsigma}$ is the module with the scalars twisted and the conjugate dual $A^{\varsigma*}$ is a module of maps into $R$; the two carry different symbols, as in *Conjugate-Linear Maps and the Conjugate Dual*, §*Definition*, and the conjugate dual of $A$ is the ordinary dual of $A^{\varsigma}$.
 
-### The Two Readings
+### The Two Interpretations
 
 **Theorem (the topological two-readings).** Let $A$ be a topological sesqualgebra over $(R,\varsigma)$. Then the identity on underlying sets is an isomorphism of topological $R$-modules
 
@@ -56,7 +56,7 @@ $$
 
 the ordinary continuous dual of the conjugate module, and it maps the topology of uniform convergence on the compact subsets to itself. In the normed case the isomorphism is an isometry of Banach spaces, and likewise $(A^{\varsigma})^{\varsigma*} \cong A^{*}$.
 
-*Proof.* A semilinear $f : A \to R$ is a linear $f : A^{\varsigma} \to R$ by the two-readings theorem of *Conjugate-Linear Maps and the Conjugate Dual*, §*The Two Readings by Linear Maps*, and the reading changes nothing but the action declared on the source, so it preserves continuity; conversely a continuous linear functional of $A^{\varsigma}$ is a continuous semilinear functional of $A$. The compact subsets are the same in the two modules, by the remark of §*The Conjugate Module and Its Topology*, so the topologies of compact convergence correspond. In the normed case the two operator norms are computed over the same unit ball, because $A$ and $A^{\varsigma}$ have the same norm and the scalar rule of a semilinear functional reads $\lvert f(\lambda\cdot x)\rvert = \lvert\varsigma(\lambda)\rvert\lvert f(x)\rvert = \lvert\lambda\rvert\lvert f(x)\rvert$, so the identification is isometric; the second isomorphism applies the first to $A^{\varsigma}$ and uses $(A^{\varsigma})^{\varsigma} = A$.
+*Proof.* A semilinear $f : A \to R$ is a linear $f : A^{\varsigma} \to R$ by the two-readings theorem of *Conjugate-Linear Maps and the Conjugate Dual*, §*The Two Interpretations by Linear Maps*, and the reading changes nothing but the action declared on the source, so it preserves continuity; conversely a continuous linear functional of $A^{\varsigma}$ is a continuous semilinear functional of $A$. The compact subsets are the same in the two modules, by the remark of §*The Conjugate Module and Its Topology*, so the topologies of compact convergence correspond. In the normed case the two operator norms are computed over the same unit ball, because $A$ and $A^{\varsigma}$ have the same norm and the scalar rule of a semilinear functional reads $\lvert f(\lambda\cdot x)\rvert = \lvert\varsigma(\lambda)\rvert\lvert f(x)\rvert = \lvert\lambda\rvert\lvert f(x)\rvert$, so the identification is isometric; the second isomorphism applies the first to $A^{\varsigma}$ and uses $(A^{\varsigma})^{\varsigma} = A$.
 
 **Corollary (the normed conjugate dual is a Banach space).** Let $A$ be a normed sesqualgebra over $(\mathbb{K},\varsigma)$. Then $A^{\varsigma*}$ with the operator norm is a Banach space over $\mathbb{K}$, and it is reflexive exactly when the conjugate module $A^{\varsigma}$ is.
 

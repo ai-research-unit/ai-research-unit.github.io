@@ -118,7 +118,7 @@ $$
 
 because the integration by parts against the density produces the divergence term; hence $P$ is skew-adjoint exactly when $X$ is divergence-free, and it is not symmetric in general. The density correction is visible in the formula, and it shows that the formal adjoint depends on the density and not only on the operator's principal part.
 
-## The Dirichlet Form and the Variational Reading
+## The Dirichlet Form and the Variational Interpretation
 
 **Definition.** For a formally self-adjoint operator $P$ the **quadratic form** (or **Dirichlet form**) is
 

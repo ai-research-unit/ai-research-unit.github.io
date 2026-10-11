@@ -53,7 +53,7 @@ since $\partial_\mu\bar f = \overline{\partial_\mu f}$ and $e_\mu^{\natural} = \
 
 **Remark (the complex case that is generalised).** In the complex case the same construction reads $\partial/\partial A = \frac12(\partial_a-i\partial_{a'})$ and $\partial/\partial \bar{A} = \frac12(\partial_a+i\partial_{a'})$, the factor being $\frac12$ in a two-dimensional algebra and the sign being the sign of $\bar i = -i$; a holomorphic function is one with $\partial f/\partial \bar{A} = 0$, and the operator exists for every differentiable $f$ but agrees with the holomorphic derivative only on that class. The quaternion calculus keeps the factor $\frac14$ and the signs of the three imaginary units, so it is the same construction on the four-dimensional algebra. What it does not keep is the vanishing of $\partial\tilde q/\partial\bar{\tilde{q}}$: the four partials of $\tilde q$ are the four units $e_0,e_1,e_2,e_3$, which are linearly independent, so no non-zero constant-coefficient operator in the partials annihilates $\tilde q$. No function of $\tilde q$ alone is therefore annihilated by the conjugate derivative, and the analogy with holomorphy is not what the calculus delivers.
 
-### The Fueter Reading
+### The Fueter Interpretation
 
 **Theorem.** With $D = \sum_\mu e_\mu\partial_\mu$ the Fueter operator and $\bar D = \sum_\mu e_\mu^{\natural}\partial_\mu$ its conjugate,
 

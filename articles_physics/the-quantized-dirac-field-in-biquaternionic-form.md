@@ -240,7 +240,7 @@ $$
 \hat S^k=\int d^3x\,:\!\hat\psi^\dagger\,\frac{\hbar}{2}\Sigma^k\,\hat\psi\!: .
 $$
 
-It is Hermitian and even, and it is the operator whose classical limit is the spin three-vector of the one-particle theory. In biquaternion terms the spin generator is the informational-sector element $S_k=\tfrac{\hbar}{2}ie_k$; the bilinear realizes it on the module, and the sector reading is the one the electron companion records.
+It is Hermitian and even, and it is the operator whose classical limit is the spin three-vector of the one-particle theory. In biquaternion terms the spin generator is the informational-sector element $S_k=\tfrac{\hbar}{2}ie_k$; the bilinear realizes it on the module, and the sector interpretation is the one the electron companion records.
 
 ## The Two-Point Function
 
@@ -291,7 +291,7 @@ The denominator is the deformed mass-shell scalar, and the deformation $-i\epsil
 
 **What the biquaternion structure supplies.**
 
-- *The sector assignment of the observables.* Energy–momentum is an operator-valued element of $\mathbb{M}_-$; spin is built from the $\mathbb{M}_+$ generators $ie_k$; the charge is central. The classical sector reading survives quantization.
+- *The sector assignment of the observables.* Energy–momentum is an operator-valued element of $\mathbb{M}_-$; spin is built from the $\mathbb{M}_+$ generators $ie_k$; the charge is central. The classical sector interpretation survives quantization.
 - *The field as the odd generator, with the grading realized inside $\mathbb{B}$ for one mode.* The single-mode coincidence $\tilde a=\tilde S_+/\hbar$, $(-1)^F=ie_3$ is exact, and it is the one place where the fermionic structure and the algebra's own spin structure are the same elements.
 - *The biquaternion form of the two-point function*, inheriting the deformed mass-shell denominator.
 - *The separation of the four conjugations*, so that the particle–antiparticle exchange is Hermitian conjugation of the operator field and not the algebra's real structure.

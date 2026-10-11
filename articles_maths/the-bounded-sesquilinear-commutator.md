@@ -114,7 +114,7 @@ so $S(A)$ is a real Banach Lie algebra under either bracket, the two brackets be
 
 *Proof.* The statement about $S(A)$ is the theorem; the statement about $H(A)$ is the cited result, and the decomposition is the topological form of the algebraic decomposition into fixed and anti-fixed points of the involution.
 
-### The Failure of the Jacobi Identity and the Operator Reading
+### The Failure of the Jacobi Identity and the Operator Interpretation
 
 **Theorem (the bracket is not a Lie bracket on $A$).** The Jacobi identity for the sesquilinear bracket fails on $A$; in $M_{2}(\mathbb{C})$ the elements $E_{11}, E_{22}, E_{12}$ give a nonzero Jacobi sum, and three Hermitian elements already fail. It holds on $S(A)$ by the theorem above and it holds identically on the sesquilinear field, so the failure is produced by the noncommutativity of the envelope and not by the twist.
 

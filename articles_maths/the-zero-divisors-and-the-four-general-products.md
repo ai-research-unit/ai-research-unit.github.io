@@ -66,13 +66,13 @@ The maps $L_f(\tilde P)$ and $R_f(\tilde P)$ are real-linear maps of the eight-d
 
 Moreover $\ker L_f(\tilde P)$ is a complex plane, of complex dimension two, exactly when $c(\tilde P) = 0$, and it is zero exactly when $c(\tilde P)\neq0$; the same holds for $\ker R_f(\tilde P)$.
 
-**Proof.** Read the four products in the model $\mathbb{B}\cong M_2(\mathbb{C})$. Let $\Phi$ be the isomorphism, with $\Phi(\tilde P) = P_0\mathrm{I}_2 - iP_1\sigma_1 - iP_2\sigma_2 - iP_3\sigma_3$ on the basis, $\Phi(\tilde P\tilde Q) = \Phi(\tilde P)\Phi(\tilde Q)$ and $\det\Phi(\tilde P) = c(\tilde P)$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). The four left maps become, on the matrices,
+**Proof.** Read the four products in the model $\mathbb{B}\cong M_2(\mathbb{C})$. Let $\mathsf{M}_2$ be the isomorphism, with $\mathsf{M}_2(\tilde P) = P_0\mathrm{I}_2 - iP_1\sigma_1 - iP_2\sigma_2 - iP_3\sigma_3$ on the basis, $\mathsf{M}_2(\tilde P\tilde Q) = \mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)$ and $\det\mathsf{M}_2(\tilde P) = c(\tilde P)$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). The four left maps become, on the matrices,
 
 $$
-\Phi(\tilde P)\Phi(\tilde X) , \quad \Phi(\tilde P^{\natural})\Phi(\tilde X) , \quad \Phi(\tilde P)\Phi(\tilde X)^{*} , \quad \Phi(\tilde P^{\natural})\Phi(\tilde X)^{*} ,
+\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde X) , \quad \mathsf{M}_2(\tilde P^{\natural})\mathsf{M}_2(\tilde X) , \quad \mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde X)^{*} , \quad \mathsf{M}_2(\tilde P^{\natural})\mathsf{M}_2(\tilde X)^{*} ,
 $$
 
-and the two right maps carry the same two factors in the other order. The maps $\tilde X\mapsto\Phi(\tilde X)$, $\tilde X\mapsto\Phi(\tilde X)^{*}$ and the two conjugations ${}^{\natural}$ and ${}^{*}$ of $\mathbb{B}$ are bijections, so the kernel of each of the eight maps is nonzero exactly when the matrix $\Phi(\tilde P)$ or the matrix $\Phi(\tilde P^{\natural})$ is singular. The two determinants are equal, $\det\Phi(\tilde P^{\natural}) = c(\tilde P^{\natural}) = c(\tilde P) = \det\Phi(\tilde P)$, and $\Phi(\tilde P)$ is singular exactly when $c(\tilde P) = 0$; this is the first equivalence and the second. A singular two-by-two matrix has rank one, its left and its right multiplication each carry a kernel of dimension two; a nonsingular matrix carries the zero kernel.
+and the two right maps carry the same two factors in the other order. The maps $\tilde X\mapsto\mathsf{M}_2(\tilde X)$, $\tilde X\mapsto\mathsf{M}_2(\tilde X)^{*}$ and the two conjugations ${}^{\natural}$ and ${}^{*}$ of $\mathbb{B}$ are bijections, so the kernel of each of the eight maps is nonzero exactly when the matrix $\mathsf{M}_2(\tilde P)$ or the matrix $\mathsf{M}_2(\tilde P^{\natural})$ is singular. The two determinants are equal, $\det\mathsf{M}_2(\tilde P^{\natural}) = c(\tilde P^{\natural}) = c(\tilde P) = \det\mathsf{M}_2(\tilde P)$, and $\mathsf{M}_2(\tilde P)$ is singular exactly when $c(\tilde P) = 0$; this is the first equivalence and the second. A singular two-by-two matrix has rank one, its left and its right multiplication each carry a kernel of dimension two; a nonsingular matrix carries the zero kernel.
 
 **Corollary (one set to a product).** For each of the four products the left zero divisors, the right zero divisors and the two-sided zero divisors are the same set, namely the nonzero elements of $\{c = 0\}$.
 
@@ -82,7 +82,7 @@ So no product distinguishes the left from the right. What a product may still do
 
 **Theorem (the four sets coincide).** For the biquaternion algebra the four zero-divisor sets coincide. A nonzero element $\tilde P$ is a left, a right or a two-sided zero divisor of one of the four products exactly when $c(\tilde P) = 0$, and then it is a zero divisor of all four, on both sides.
 
-**Proof.** Apply the criterion of the preceding section to the four products in turn. In each case the condition is $c(\tilde P) = 0$, read from the singularity of $\Phi(\tilde P)$ or of $\Phi(\tilde P^{\natural})$, whose determinants are the same.
+**Proof.** Apply the criterion of the preceding section to the four products in turn. In each case the condition is $c(\tilde P) = 0$, read from the singularity of $\mathsf{M}_2(\tilde P)$ or of $\mathsf{M}_2(\tilde P^{\natural})$, whose determinants are the same.
 
 The reason is structural and short, and it is a reason about the biquaternion algebra alone. Each of the four products is the plain product with a conjugation in one or both slots; each conjugation of $\mathbb{B}$ is a bijection that either fixes or conjugates the central square, $c(\tilde P^{\natural}) = c(\tilde P)$ and $c(\tilde P^{*}) = \overline{c(\tilde P)}$ (*The Annihilating Elements of the Four General Products*); and the central square is the single second-order invariant that decides the invertibility of the element. Composing a one-sided multiplication with a bijection leaves the kernel zero exactly when it was zero, so the four kernels vanish on the same elements and the four vanishing sets are one. The multiplicativity of the central square, $c(\tilde P\tilde Q) = c(\tilde P)c(\tilde Q)$ for the two bilinear products and $c(\tilde P\tilde Q) = c(\tilde P)\overline{c(\tilde Q)}$ for the two sesquilinear ones, is the same fact in the language of the products.
 
@@ -167,7 +167,7 @@ $$
 
 has a solution; equivalently, both equations have a solution exactly when $c(\tilde P)\neq0$.
 
-**Proof.** If the equation $f(\tilde P,\tilde X) = e_0$ holds, then in the model the corresponding matrix equation is $\Phi(\tilde P)M = \mathrm{I}_2$ or $\Phi(\tilde P^{\natural})M = \mathrm{I}_2$ for an invertible $M$, so $\Phi(\tilde P)$ is invertible and $c(\tilde P)\neq0$. Conversely, if $c(\tilde P)\neq0$ then $\tilde P$ is invertible, and the four solutions are the ones of the table below. The two directions give the statement for the left equation, and the right equation is the same computation with the two factors in the other order.
+**Proof.** If the equation $f(\tilde P,\tilde X) = e_0$ holds, then in the model the corresponding matrix equation is $\mathsf{M}_2(\tilde P)M = \mathrm{I}_2$ or $\mathsf{M}_2(\tilde P^{\natural})M = \mathrm{I}_2$ for an invertible $M$, so $\mathsf{M}_2(\tilde P)$ is invertible and $c(\tilde P)\neq0$. Conversely, if $c(\tilde P)\neq0$ then $\tilde P$ is invertible, and the four solutions are the ones of the table below. The two directions give the statement for the left equation, and the right equation is the same computation with the two factors in the other order.
 
 The solutions are written with the inverse $\tilde P^{-1} = \tilde P^{\natural}/c(\tilde P)$ of the algebra, which exists for $c(\tilde P)\neq0$. The two conjugations commute, ${}^{\natural}\circ{}^{*} = {}^{*}\circ{}^{\natural} = \overline{\cdot}$, so the order of the two superscripts in the last row is immaterial.
 
@@ -198,10 +198,10 @@ The two families are disjoint and their union is the zero-divisor set $\{c = 0\}
 In the model $\mathbb{B}\cong M_2(\mathbb{C})$ the whole picture is the linear algebra of a two-by-two complex matrix. The central square is the determinant,
 
 $$
-\det\Phi(\tilde P) = c(\tilde P) ,
+\det\mathsf{M}_2(\tilde P) = c(\tilde P) ,
 $$
 
-and the zero divisors are the nonzero singular matrices, that is the matrices of rank one (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). Each of the eight one-sided multiplication maps is $\Phi(\tilde P)$ or its adjoint, multiplied on one side or the other by an invertible matrix, so each of the four products reads the same singularity. The rank-one matrix of a zero divisor is the outer product $\Phi(\tilde P) = uv^{T}$ determined up to $(\lambda u,\lambda^{-1}v)$, its two one-sided annihilators are the planes of the vectors orthogonal to $v$ and to $u$, and the collision of the two planes for the natural product and for the general plain sesquilinear product is the reading of the coincidences of the table of annihilators. The algebra's zero divisors are the rank-one matrices, the idempotents of the plain product are the rank-one Hermitian idempotents together with $0$ and $\mathrm{I}_2$, and the determinant is the invariant that decides all four products at once.
+and the zero divisors are the nonzero singular matrices, that is the matrices of rank one (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). Each of the eight one-sided multiplication maps is $\mathsf{M}_2(\tilde P)$ or its adjoint, multiplied on one side or the other by an invertible matrix, so each of the four products reads the same singularity. The rank-one matrix of a zero divisor is the outer product $\mathsf{M}_2(\tilde P) = uv^{T}$ determined up to $(\lambda u,\lambda^{-1}v)$, its two one-sided annihilators are the planes of the vectors orthogonal to $v$ and to $u$, and the collision of the two planes for the natural product and for the general plain sesquilinear product is the reading of the coincidences of the table of annihilators. The algebra's zero divisors are the rank-one matrices, the idempotents of the plain product are the rank-one Hermitian idempotents together with $0$ and $\mathrm{I}_2$, and the determinant is the invariant that decides all four products at once.
 
 ## The Zero Divisors and the Remarkable Subspaces
 
@@ -224,7 +224,7 @@ The set $\{c = 0\}$ is a cone, and the chapter carries a second cone on the same
 
 ## Summary
 
-The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* define four notions of zero divisor, one to a product, and for the biquaternion algebra the four sets coincide — a coincidence of this algebra, proved here, not a definition. For each product a nonzero element is a left zero divisor if and only if it is a right zero divisor if and only if its central square vanishes, $c(\tilde P) = 0$; the criterion is the singularity of the matrix $\Phi(\tilde P)$ in the model $\mathbb{B}\cong M_2(\mathbb{C})$, and the conjugations that separate the four products are bijections that leave the central square alone or conjugate it. The zero divisors are therefore the nonzero elements of $\{c = 0\}$, a complex cone of complex dimension three and real dimension six, for the four products at once.
+The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* define four notions of zero divisor, one to a product, and for the biquaternion algebra the four sets coincide — a coincidence of this algebra, proved here, not a definition. For each product a nonzero element is a left zero divisor if and only if it is a right zero divisor if and only if its central square vanishes, $c(\tilde P) = 0$; the criterion is the singularity of the matrix $\mathsf{M}_2(\tilde P)$ in the model $\mathbb{B}\cong M_2(\mathbb{C})$, and the conjugations that separate the four products are bijections that leave the central square alone or conjugate it. The zero divisors are therefore the nonzero elements of $\{c = 0\}$, a complex cone of complex dimension three and real dimension six, for the four products at once.
 
 What differs from one product to the next is the annihilator of a fixed zero divisor: each product has two one-sided annihilators, each a complex plane, the eight planes collapsing to a smaller number of distinct ones and related by the two conjugations. What also differs is the square of an element, the idempotent equation and the unit; the four unit structures are one two-sided unit, one left unit, one right unit and none, so that the classical equivalence of ring theory, zero divisor if and only if not a unit, holds for the plain product alone. For the other three it is replaced by the criterion that the zero divisors are exactly the elements for which neither one-sided inverse equation $f(\tilde P,\tilde X) = e_0$ and $f(\tilde X,\tilde P) = e_0$ has a solution, a criterion that reads the same in the four products and invokes no unit.
 
@@ -240,7 +240,7 @@ The zero divisors split into the pure family, the nilpotents of real dimension f
 | $A_f(\tilde P)$, $B_f(\tilde P)$ | the two one-sided annihilators of $\tilde P$ for $f$ |
 | $c(\tilde P) = \sum_\mu Q_\mu^{2}$ | the central square, $\tilde P\tilde P^{\natural} = c(\tilde P)e_0$ |
 | $\{c = 0\}$ | the vanishing set of the central square, a complex cone of real dimension six |
-| $\Phi$ | the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, with $\det\Phi(\tilde P) = c(\tilde P)$ |
+| $\mathsf{M}_2$ | the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, with $\det\mathsf{M}_2(\tilde P) = c(\tilde P)$ |
 | $\tilde P^{-1} = \tilde P^{\natural}/c(\tilde P)$ | the inverse of an element with $c(\tilde P)\neq0$ |
 | pure, non-pure | scalar part zero, scalar part nonzero |
 

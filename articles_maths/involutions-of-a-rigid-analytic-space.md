@@ -57,7 +57,7 @@ is finite of degree two and is ramified exactly at the origin $\{x_1=\dots=x_n=0
 
 **Example (a disc automorphism).** An involution of the open unit disc is either free or conjugate to a rotation-like map; when it has a fixed point the quotient is an affinoid or a disc with a coordinate $w$ of even valuation, and the fixed points of the reduction may be more numerous than those of the rigid space.
 
-## The Berkovich Reading
+## The Berkovich Interpretation
 
 **Theorem.** The involution extends to the Berkovich space $X^{\mathrm{an}}$, the quotient $X^{\mathrm{an}}/\sigma$ exists and equals $(X/\sigma)^{\mathrm{an}}$ for the good spaces, and the fixed locus $X^{\mathrm{an},\sigma}$ contains the fixed locus $X^\sigma$ strictly in general, because the non-classical points can be fixed; the additional fixed points are the points in the closure of the fixed locus of the reduction.
 

@@ -98,7 +98,7 @@ $$
 
 the matrix $XX^{*}$ Hermitian positive semi-definite, as a Hermitian square must be.
 
-### The Real and the Complex Reading
+### The Real and the Complex Interpretation
 
 Over $\mathbb{R}$ with the trivial involution every Hermitian form is symmetric and the polarisation is a bijection when $2$ is invertible. Over $\mathbb{C}$ it is not: the diagonal of a Hermitian form sees $\operatorname{Re}h$ and never $\operatorname{Im}h$, and the pair $(\operatorname{Re}h, \operatorname{Im}h)$ is the pair (symmetric, alternating) of the real reading. The transfer between the two readings is *Real Forms and the Signature*.
 

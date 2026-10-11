@@ -464,7 +464,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 ## Physical Readings
 
-The four blocks of the study read as a division of labour with the physics. Algebra owns the products, the involutions and the remarkable subspaces; topology owns the zero-divisor cone and the projective cone, which are the light cone and the directions of light; analysis owns the regular functions and the operators, which are the fields and their evolutions; geometry owns the frame, the geodesics and the surfaces, which are the Lorentz transformations and their orbits. The article's claim that nothing here is owned and everything is read is the same claim from the other end: each physical reading is a theorem of one of the four blocks.
+The four blocks of the study read as a division of labour with the physics. Algebra owns the products, the involutions and the remarkable subspaces; topology owns the zero-divisor cone and the projective cone, which are the light cone and the directions of light; analysis owns the regular functions and the operators, which are the fields and their evolutions; geometry owns the frame, the geodesics and the surfaces, which are the Lorentz transformations and their orbits. The article's claim that nothing here is owned and everything is read is the same claim from the other end: each physical interpretation is a theorem of one of the four blocks.
 
 ## Summary
 

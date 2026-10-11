@@ -58,7 +58,7 @@ The imaginary time is the mark of the sector: a material element is anti-fixed b
 conjugation, $\tilde T^{*}=-\tilde T$, so the scalar coefficient carries the $i$ and the three vector
 coefficients do not. The material sector is the home of the four-vectors, of the velocity, of the
 momentum and of the configuration data of a relativistic system, and its own physics — the two sectors,
-the coordinate dictionary and the superselection reading — is owned by *The Anti-Hermitian Subspace
+the coordinate dictionary and the superselection interpretation — is owned by *The Anti-Hermitian Subspace
 $\mathbb{M}_-$ as the Material Sector*.
 
 The form that carries the physics of the sector is the **interval**
@@ -90,7 +90,7 @@ $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis. It is the scala
 the two underlying quaternions, and those three properties are cited from the mathematics articles named
 in the introduction.
 
-**Proposed reading, labelled as such.** The ordinary product is read as the **composition of two material
+**Proposed interpretation, labelled as such.** The ordinary product is read as the **composition of two material
 operations**: $\tilde P\tilde Q$ is "the operation $\tilde P$, then the operation $\tilde Q$" — the
 written order of the factors is the order of the operations, as in the polar word $e^{i\alpha}B\hat q$ of
 *The Polar Element Representation of Biquaternions* (*The Twisted Spinor Operator Representation of
@@ -106,7 +106,7 @@ $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P$ measures the failure.
 What is proved is the associativity, the unit and the non-commutativity; what is proposed is that they be
 read as the composition, the identity and the order of operations.
 
-**Proposed reading, labelled as such.** The order dependence has a sector signature. For two material
+**Proposed interpretation, labelled as such.** The order dependence has a sector signature. For two material
 operations the anticommutator is the informational half and the commutator the material one, so **the half
 of the composite that carries the order is the half that stays material**.
 
@@ -158,7 +158,7 @@ B(\tilde Q,\tilde Q)=-b_0^{2}-\lvert\mathbf q\rvert^{2}<0,
 B(\tilde Q,\tilde Q)=a_0^{2}+\lvert\mathbf p\rvert^{2}>0 .
 $$
 
-**Proposed reading, labelled as such.** $B$ is read as the **sector sign**: to say "this element is
+**Proposed interpretation, labelled as such.** $B$ is read as the **sector sign**: to say "this element is
 material" and to say "$B$ is negative on it" are the same statement. The sign of $B(\tilde Q,\tilde Q)$ is the same for every element of a sector, so it is invisible to a
 computation that stays inside one sector; on a pair the form returns a varying real number, and it is the
 sign of its diagonal that marks the sector, with no metric content at all.
@@ -167,7 +167,7 @@ sign of its diagonal that marks the sector, with no metric content at all.
 real and strictly negative, and on $100$ random elements of $\mathbb{M}_+$ it is real and strictly
 positive; the Gram matrices on the two bases are exactly $-\mathrm{I}_4$ and $+\mathrm{I}_4$.
 
-**Proposed reading, labelled as such.** Under the composition the four material directions are
+**Proposed interpretation, labelled as such.** Under the composition the four material directions are
 **indistinguishable by sign**: $B(ie_0,ie_0)=B(e_k,e_k)=-1$, all four negative definite, so $B$ alone
 does not separate time from space. What separates them is **commutation**: $ie_0$ is central and the
 three $e_k$ are not, so **in the material sector time is the central direction and space is the vector
@@ -175,7 +175,7 @@ directions**. The Lorentzian sign of the interval is carried by the quaternion c
 fixes the central direction $e_0$ and reverses the three vector directions, so that $N(ie_0)=-1$ and
 $N(e_k)=+1$; time is the material direction that conjugation cannot see.
 
-**Proposed reading, labelled as such.** Write $\tilde P=\tilde P_-+\tilde P_+$ for the split of an
+**Proposed interpretation, labelled as such.** Write $\tilde P=\tilde P_-+\tilde P_+$ for the split of an
 element into its material and informational parts, $\tilde P_\pm\in\mathbb{M}_\pm$. On each sector $B$ is
 real; off them it is complex, and its imaginary part is exactly the pairing of the two sectors,
 $\mathrm{Im}\,B(\tilde P,\tilde Q)=\mathrm{Im}\,\mathrm{Sc}(\tilde P_-\tilde Q_++\tilde P_+\tilde Q_-)$,
@@ -232,13 +232,13 @@ the six the coordinate basis displays are $\tfrac12(e_0\pm ie_k)$. These are the
 informational sector. The classification of the idempotents is the mathematics of *Biquaternion
 Idempotents and Projections*.
 
-**Proposed reading, labelled as such.** A material field is split against a **reference state** and not
+**Proposed interpretation, labelled as such.** A material field is split against a **reference state** and not
 against a material background. The reference idempotent cannot be material — there is none — so it is an
 element of $\mathbb{M}_+$: a state, a pure state or the vacuum. The field decomposes into the part the
 reference **resolves**, the component commuting with the projection, and the part it **does not**, the
 component that flips the projection into its complement. What is proved is the absence of a nonzero
 material idempotent; the identification of the resolved and unresolved parts with the measured and
-unmeasured components is a reading. The idempotent in physics is owned by *The Biquaternion Vacuum as a
+unmeasured components is an interpretation. The idempotent in physics is owned by *The Biquaternion Vacuum as a
 Minimal Idempotent* and *Decoherence as Idempotent Projection*, and the decomposition that the projection
 induces is the mathematics of *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
@@ -266,10 +266,10 @@ $$
 the parameter entering once on each side. It is the one action form of the framework: with a parameter of unit norm,
 $\tilde\Lambda\tilde\Lambda^{\natural}=e_0$, it is a Lorentz transformation of the material sector;
 with a unitary parameter, $\tilde A\tilde A^{*}=e_0$, the unitary evolution of the informational one;
-and with a Hermitian idempotent parameter the measurement update. **Proposed reading, labelled as such.** The commutation of the two multiplications is read as the
+and with a Hermitian idempotent parameter the measurement update. **Proposed interpretation, labelled as such.** The commutation of the two multiplications is read as the
 independence of attaching an operation to the left of an argument and attaching one to its right, and the
 sandwich as the composition in which the parameter is attached on both sides, conjugate on the two. What
-is proved is the commutation and the placement of the sandwich; the reading is a naming. The adjoint of
+is proved is the commutation and the placement of the sandwich; the interpretation is a naming. The adjoint of
 the sandwich and its two kinds of operator are *Observables, Gauge Generators and the Chirality of the Internal Action*, and the Lorentz action is *Biquaternion Rotations and Lorentz Transformations*.
 
 ## A Worked Case
@@ -313,7 +313,7 @@ positivity is blind to the sector.
 - **$B$ is not the Krein form.** The indefinite metric of the fourth corner restricts to $(1,3)$ on all
 four four-dimensional subspaces and so does not separate them.
 
-**What the framework does not claim.** The reading does not say which physical operation an element
+**What the framework does not claim.** The interpretation does not say which physical operation an element
 represents, does not derive the Lorentz transformation or the measurement update from the ordinary
 product, and does not claim that every physical process is a product. The Lorentz action is the sandwich
 of the section above, and the measurement update is an idempotent projection; neither is re-derived here.
@@ -330,7 +330,7 @@ the two quaternionic subspaces; the product of two material elements splits into
 anticommutator and a material commutator and is material exactly when the two anticommute; the material sector contains no nonzero idempotent; and the
 left and right multiplications commute, so the sandwich is their composition.
 
-**Readings.** That $B$ carries the **sector sign** and the interval carries the metric; that the material
+**Interpretations.** That $B$ carries the **sector sign** and the interval carries the metric; that the material
 geometry belongs to this block and to its quaternionic companion and not to the sesqualgebra; that the
 ordinary product is the **composition of material operations** and the sandwich the composition on both
 sides; and that a material field is split against a **reference state** rather than a material
@@ -341,7 +341,7 @@ is labelled as such.
 
 ## Physical Readings
 
-The ordinary product reads as the process on the material sector, and the article's own reading is the composition of two operations. Two further readings follow from its two failings. The product is not commutative, which is the orientation of a material process and the reason the two slots are not interchangeable; and its scalar part composes operations rather than values, which is why the Born pairing is the sesquilinear product and not this one (*The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*). Read on the clock, this product acts on the four-vector and carries no role for the central phase, which is the exchange's business and not the vector part's.
+The ordinary product reads as the process on the material sector, and the article's own interpretation is the composition of two operations. Two further readings follow from its two failings. The product is not commutative, which is the orientation of a material process and the reason the two slots are not interchangeable; and its scalar part composes operations rather than values, which is why the Born pairing is the sesquilinear product and not this one (*The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*). Read on the clock, this product acts on the four-vector and carries no role for the central phase, which is the exchange's business and not the vector part's.
 
 ## Summary
 
@@ -359,7 +359,7 @@ quaternionic block, of signature $(-,+,+,+)$ on the material sector. The composi
 operations is material exactly when the two anticommute, its informational part being the anticommutator
 and its order dependence the commutator; the
 material sector contains no nonzero idempotent, so the reference projection of a field comes from
-$\mathbb{M}_+$ — a state and not a material background, which is the framework's reading of the
+$\mathbb{M}_+$ — a state and not a material background, which is the framework's interpretation of the
 decomposition; and the left and right multiplications commute, so the sandwich
 $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$ is the composition on both sides. The
 distinctions are labelled throughout: what is proved is the algebra, what is proposed is the naming.

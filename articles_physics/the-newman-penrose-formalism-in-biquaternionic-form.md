@@ -4,7 +4,7 @@
 
 The Newman–Penrose formalism rewrites the local geometry of four-dimensional spacetime in a basis adapted to the light cone. In place of an orthonormal frame it uses a **null tetrad** $(l, n, m, \bar m)$: two real null vectors $l$ and $n$, and a complex-conjugate pair $m, \bar m$ that are also null. The ten independent components of the Weyl tensor become five complex scalars $\Psi_0, \dots, \Psi_4$; the connection becomes twelve complex **spin coefficients**; and the Petrov classification of the curvature is read off from which of the five scalars vanish. The formalism is the standard language of the algebraically special solutions of general relativity.
 
-This article places that formalism in the biquaternion framework of the read-list articles, and the placement is not an analogy. The primitive object of the Newman–Penrose construction is a null vector, and the primitive algebraic object of the framework is the **zero divisor**: in the material sector $\mathbb{M}_-$ the light cone *is* the zero-divisor cone, a nonzero null vector is a zero divisor of $\mathbb{B}$, and under the matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ it is a rank-one matrix (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Topology of the Zero-Divisor Cone*). Every leg of a Newman–Penrose tetrad is therefore a zero divisor of the algebra, and the tetrad itself is the image of a normalized spinor dyad under the framework's spinor bilinear. That identification is the centre of this article, and it is verified below rather than asserted.
+This article places that formalism in the biquaternion framework of the read-list articles, and the placement is not an analogy. The primitive object of the Newman–Penrose construction is a null vector, and the primitive algebraic object of the framework is the **zero divisor**: in the material sector $\mathbb{M}_-$ the light cone *is* the zero-divisor cone, a nonzero null vector is a zero divisor of $\mathbb{B}$, and under the matrix realization $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ it is a rank-one matrix (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Topology of the Zero-Divisor Cone*). Every leg of a Newman–Penrose tetrad is therefore a zero divisor of the algebra, and the tetrad itself is the image of a normalized spinor dyad under the framework's spinor bilinear. That identification is the centre of this article, and it is verified below rather than asserted.
 
 Three claims organise the discussion.
 
@@ -26,10 +26,10 @@ of signature $(3,1)$ in the read list's counting — three positive directions a
 
 $$
 \Phi : \mathbb{B} \longrightarrow M_2(\mathbb{C}), \qquad
-\Phi(e_0) = I_2, \quad \Phi(e_k) = -i\sigma_k, \quad \Phi(i) = iI_2,
+\mathsf{M}_2(e_0) = I_2, \quad \mathsf{M}_2(e_k) = -i\sigma_k, \quad \mathsf{M}_2(i) = iI_2,
 $$
 
-so that $N(\tilde Q) = \det\Phi(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde\Lambda : \tilde\Lambda\tilde\Lambda^{\natural} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+so that $N(\tilde Q) = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde\Lambda : \tilde\Lambda\tilde\Lambda^{\natural} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## Conventions: Signature and the Tetrad Normalization
 
@@ -80,7 +80,7 @@ $$
 and no leg is zero, so **every leg of the null tetrad is a zero divisor of $\mathbb{B}$**. Under $\Phi$ the legs are the matrix units:
 
 $$
-\Phi(l)=\sqrt2\,i\,E_{11}, \quad \Phi(n)=\sqrt2\,i\,E_{22}, \quad \Phi(m)=\sqrt2\,i\,E_{12}, \quad \Phi(\bar m)=\sqrt2\,i\,E_{21},
+\mathsf{M}_2(l)=\sqrt2\,i\,E_{11}, \quad \mathsf{M}_2(n)=\sqrt2\,i\,E_{22}, \quad \mathsf{M}_2(m)=\sqrt2\,i\,E_{12}, \quad \mathsf{M}_2(\bar m)=\sqrt2\,i\,E_{21},
 \tag{3}
 $$
 
@@ -92,7 +92,7 @@ $$
 p = \tfrac12(e_0+ie_3), \quad q = \tfrac12(e_0-ie_3), \quad \tilde\Upsilon_1 = \tfrac12(ie_1-e_2), \quad \tilde\Upsilon_2 = \tfrac12(ie_1+e_2),
 $$
 
-with $\Phi(p)=E_{11}$, $\Phi(q)=E_{22}$, $\Phi(x)=E_{12}$, $\Phi(y)=E_{21}$, and with $p,q$ the primitive orthogonal idempotents: $p^2=p$, $q^2=q$, $pq=qp=0$. Therefore
+with $\mathsf{M}_2(p)=E_{11}$, $\mathsf{M}_2(q)=E_{22}$, $\mathsf{M}_2(x)=E_{12}$, $\mathsf{M}_2(y)=E_{21}$, and with $p,q$ the primitive orthogonal idempotents: $p^2=p$, $q^2=q$, $pq=qp=0$. Therefore
 
 $$
 l = \sqrt2\,i\,p, \qquad n = \sqrt2\,i\,q, \qquad m = \sqrt2\,i\,x, \qquad \bar m = \sqrt2\,i\,y .
@@ -329,10 +329,10 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\mathbb{B}$ | biquaternion algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0,e_1,e_2,e_3$, scalar imaginary $i$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | anti-Hermitian and Hermitian subspaces of $\mathbb{B}$; material and informational sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | real-quaternion subspace |
-| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $N(\tilde Q)=\det\Phi(\tilde Q)$ |
+| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $N(\tilde Q)=\det\mathsf{M}_2(\tilde Q)$ |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | scalar part and trace |
 | $\langle\tilde Q,\tilde P\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde P^{\natural})$ | the general quaternionic bilinear form on $\mathbb{M}_-$, the interval, of signature $(3,1)$ |
-| $\Phi$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\Phi(e_k)=-i\sigma_k$ |
+| $\Phi$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{Sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |
 | $o,\iota$ | normalized spinor dyad, $\varepsilon(o,\iota)=1$ |

@@ -152,7 +152,7 @@ in the case $n>0$, whose covariant constancy follows from the curvature being pr
 
 ## The Index and the Instanton Moduli: $4k$ Adjoint Modes
 
-The index of the adjoint Dirac operator has a second reading that ties this article to the instanton data. For a self-dual background of charge $k$ in the adjoint representation,
+The index of the adjoint Dirac operator has a second interpretation that ties this article to the instanton data. For a self-dual background of charge $k$ in the adjoint representation,
 
 $$
 n_+=4k ,

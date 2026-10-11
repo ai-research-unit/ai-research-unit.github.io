@@ -219,7 +219,7 @@ The two are related but not identical. The magic square is the stronger statemen
 
 ## Open Questions
 
-**1. Contexts and the two sectors.** The contexts used here are commutative subalgebras of Hermitian elements. Is there an information-theoretic reading, in the framework's division between $\mathbb{M}_+$ and $\mathbb{M}_-$, of why the maximal commutative subalgebras are the natural contexts, and of the role of the idempotent bases?
+**1. Contexts and the two sectors.** The contexts used here are commutative subalgebras of Hermitian elements. Is there an information-theoretic interpretation, in the framework's division between $\mathbb{M}_+$ and $\mathbb{M}_-$, of why the maximal commutative subalgebras are the natural contexts, and of the role of the idempotent bases?
 
 **2. The minimal obstruction in the framework.** The smallest Hilbert-space dimension for a Kochen–Specker proof is three. The framework's native module is two-dimensional and the smallest composite is four-dimensional. Is there an obstruction intrinsic to a *three*-dimensional module that the framework can express without leaving the qubit's two factors, for instance via a three-outcome measurement?
 

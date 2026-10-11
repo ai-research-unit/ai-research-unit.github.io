@@ -179,13 +179,13 @@ the kernels being $\coth$ and $\tanh$ because they have poles exactly at the bos
 $$
 \frac{1}{\beta}\sum_n\frac{1}{\omega_n^2+E^2} = \frac{1}{2E}\Big(1+2n_{\mathrm B}(E)\Big)=\frac{1}{2E}\coth\frac{\beta E}{2},
 $$
-and the fermionic one yields $\frac{1}{2E}\tanh(\beta E/2)=\frac{1}{2E}(1-2n_{\mathrm F}(E))$; both were checked numerically in the previous section. The bracket $(1+2n_{\mathrm B})$ is the sum of the vacuum zero-point piece and the thermal excitation, which is the standard reading: the $\tfrac12$ is the vacuum energy and the $n$ is the thermal population.
+and the fermionic one yields $\frac{1}{2E}\tanh(\beta E/2)=\frac{1}{2E}(1-2n_{\mathrm F}(E))$; both were checked numerically in the previous section. The bracket $(1+2n_{\mathrm B})$ is the sum of the vacuum zero-point piece and the thermal excitation, which is the standard interpretation: the $\tfrac12$ is the vacuum energy and the $n$ is the thermal population.
 
 **Biquaternion content.** The kernel is a central scalar, so it commutes with the module structure and multiplies each mode independently; the same thermal factor is therefore repeated once per complex dimension the trace runs over, a component count rather than a sum over independent sectors. Where the framework makes a difference is when the operator is not central — a spinor loop, whose Matsubara sum runs over the fermionic frequencies and whose numerator carries the matrix structure of the spinor module.
 
 ## The Matsubara Green's Function and Its Continuation
 
-The discrete sum is not the end of the calculation; the physical response functions are obtained by analytic continuation, and the framework's reading of the continuation is the material-direction one.
+The discrete sum is not the end of the calculation; the physical response functions are obtained by analytic continuation, and the framework's interpretation of the continuation is the material-direction one.
 
 **Spectral representation.** The thermal Green's function has the spectral representation
 $$
@@ -225,7 +225,7 @@ The interaction theory is the vacuum perturbation theory with the discrete sums 
 - The Wick rotation and the compactification; the Matsubara frequencies; the contour evaluation of the sums and the thermal factors; the occupation numbers; the finite-temperature Feynman rules; the zero mode and the high-temperature expansion; the Gibbs state and its modular Hamiltonian.
 
 **Interpretation.**
-- Reading the thermal circle as drawn in the material sector, and the Euclidean pole structure as a statement about the complexified material direction, are the framework's structural readings. They are consistent with the KMS and Unruh articles and do not by themselves force a thermal interpretation.
+- Reading the thermal circle as drawn in the material sector, and the Euclidean pole structure as a statement about the complexified material direction, are the framework's structural interpretations. They are consistent with the KMS and Unruh articles and do not by themselves force a thermal interpretation.
 
 **Open.**
 - The temperature is an input; the framework does not derive it. The Unruh and Hawking articles' gaps — that the modular flow is imported and that the algebra does not produce thermality — are inherited unchanged.
@@ -235,7 +235,7 @@ The interaction theory is the vacuum perturbation theory with the discrete sums 
 
 The identifying statement of the article is that the compactified direction is the material time $ict$, so that the thermal circle is a circle in the imaginary direction of the material sector. Read on the two splits of the algebra, the statement has a place in the block structure. The real sector $\mathbb{H}_{\mathbb{B}}$ is the **Euclidean slice**, on which no coordinate carries an explicit $i$ and the norm is definite, and the imaginary sector $i\mathbb{H}_{\mathbb{B}}$ is the **thermal direction**, the slice the imaginary time sweeps; and multiplication by the central imaginary $i$ exchanges the two, which is the Wick rotation of *Other Remarkable Subspaces* and *Conventions in the Biquaternion Universe*.
 
-The reading is that the Euclidean-versus-thermal split is the real-versus-imaginary split, so the two Euclidean and thermal theories of this article are the two halves of one algebra related by the central generator, and the inverse temperature $\beta$ is the circumference the compactification gives to the imaginary half. It is a labelled reading: the article's own computations use $ict$ and $\mathbb{M}_-$, and the block reading is a place to put them. The owners are *Other Remarkable Subspaces* and *Conventions in the Biquaternion Universe*.
+The interpretation is that the Euclidean-versus-thermal split is the real-versus-imaginary split, so the two Euclidean and thermal theories of this article are the two halves of one algebra related by the central generator, and the inverse temperature $\beta$ is the circumference the compactification gives to the imaginary half. It is a labelled interpretation: the article's own computations use $ict$ and $\mathbb{M}_-$, and the block interpretation is a place to put them. The owners are *Other Remarkable Subspaces* and *Conventions in the Biquaternion Universe*.
 
 ## Summary
 

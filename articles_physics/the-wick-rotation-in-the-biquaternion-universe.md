@@ -4,11 +4,11 @@
 
 The **Wick rotation** is a computational procedure used throughout quantum field theory, statistical mechanics, and condensed-matter physics. It consists of the analytic continuation $t \to -i\tau$ of the time coordinate to imaginary values, and it converts the oscillating phase of the Feynman path integral into a decaying exponential. The procedure is usually presented as a **trick**: it is justified by analytic continuation of the integrand in the complex time plane, it works for a large class of physically relevant problems, and it fails for others, without a general theorem that settles when it works and when it does not.
 
-This article proposes a structural reading of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $ict$ convention, sends the imaginary time coefficient $ict$ to the real value $c\tau$, while leaving the spatial coordinates $x, y, z$ unchanged. The result is a point of the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, whose four coefficients are all real. So the Wick rotation is an **identification** of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $ict$ as a real one.
+This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $ict$ convention, sends the imaginary time coefficient $ict$ to the real value $c\tau$, while leaving the spatial coordinates $x, y, z$ unchanged. The result is a point of the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, whose four coefficients are all real. So the Wick rotation is an **identification** of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $ict$ as a real one.
 
-This reading explains, in a single structural fact, why the trick is useful and why it sometimes fails. The subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than $\mathbb{M}_-$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic differential operator, and a compact symmetry group. When the physics of a problem depends on the Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering, the phase — the transfer to $\mathbb{H}_{\mathbb{B}}$ destroys this structure, and the trick fails. When the physics is insensitive to the Lorentzian structure — equilibrium, correlation, statistical weight — the transfer is harmless and the resulting problem on $\mathbb{H}_{\mathbb{B}}$ is easier.
+This interpretation explains, in a single structural fact, why the trick is useful and why it sometimes fails. The subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than $\mathbb{M}_-$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic differential operator, and a compact symmetry group. When the physics of a problem depends on the Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering, the phase — the transfer to $\mathbb{H}_{\mathbb{B}}$ destroys this structure, and the trick fails. When the physics is insensitive to the Lorentzian structure — equilibrium, correlation, statistical weight — the transfer is harmless and the resulting problem on $\mathbb{H}_{\mathbb{B}}$ is easier.
 
-The article is organized as follows. First the three subspaces involved in the rotation are recalled: the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$, and the material sector $\mathbb{M}_-$. Then the standard Wick rotation is recalled, and its action on the coordinates is written explicitly. Then the identification with $\mathbb{H}_{\mathbb{B}}$ is developed, with the properties of the two subspaces compared. Then the reading is applied to the standard applications of the Wick rotation, and a split is proposed between applications that transfer harmlessly and applications that resist. The article closes with the status of the reading.
+The article is organized as follows. First the three subspaces involved in the rotation are recalled: the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$, and the material sector $\mathbb{M}_-$. Then the standard Wick rotation is recalled, and its action on the coordinates is written explicitly. Then the identification with $\mathbb{H}_{\mathbb{B}}$ is developed, with the properties of the two subspaces compared. Then the interpretation is applied to the standard applications of the Wick rotation, and a split is proposed between applications that transfer harmlessly and applications that resist. The article closes with the status of the interpretation.
 
 Throughout, $c$ denotes the speed of light in the medium, and the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.
 
@@ -114,7 +114,7 @@ $$
 
 with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-\partial_t^2/c^2 + \Delta$, becomes the Euclidean Laplacian $\partial_\tau^2/c^2 + \Delta$, which is elliptic and well behaved.
 
-In the biquaternion reading, the operation is the following. The Lorentzian field $\phi$ on $\mathbb{M}_-$ is transferred to a field $\phi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
+In the biquaternion interpretation, the operation is the following. The Lorentzian field $\phi$ on $\mathbb{M}_-$ is transferred to a field $\phi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
 
 $$
 \Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2} + \Delta,
@@ -157,7 +157,7 @@ The two facts — that the transfer is useful (because $\mathbb{H}_{\mathbb{B}}$
 
 ## A Prediction: Which Applications Transfer, Which Resist
 
-The reading above suggests a classification of the applications of the Wick rotation by whether the physics of the problem depends on the Lorentzian structure or not.
+The interpretation above suggests a classification of the applications of the Wick rotation by whether the physics of the problem depends on the Lorentzian structure or not.
 
 **Applications that are essentially insensitive to the Lorentzian structure** (and therefore transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$):
 
@@ -178,11 +178,11 @@ The reading above suggests a classification of the applications of the Wick rota
 
 The split is not exact; some applications lie between the two lists. But the general pattern is as follows: whenever a problem is genuinely about **correlations and equilibrium**, the transfer to $\mathbb{H}_{\mathbb{B}}$ is harmless; whenever a problem is genuinely about **causality and dynamics**, the transfer destroys what the problem was about.
 
-The split is observed in practice. The successful uses of the Wick rotation (lattice computations of equilibrium quantities, finite-temperature partition functions, instanton calculus) are all in the first list. The persistent difficulties (sign problem, real-time dynamics, quantum gravity) are all in the second list. The reading of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ predicts this pattern.
+The split is observed in practice. The successful uses of the Wick rotation (lattice computations of equilibrium quantities, finite-temperature partition functions, instanton calculus) are all in the first list. The persistent difficulties (sign problem, real-time dynamics, quantum gravity) are all in the second list. The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ predicts this pattern.
 
 ## Status of the Reading
 
-The reading of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ is an **interpretation**, not an established result. What is established is the following.
+The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ is an **interpretation**, not an established result. What is established is the following.
 
 - The biquaternion algebra contains four natural four-dimensional real subspaces: $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, and $\mathbb{M}_-$. Three of them — $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ — are involved in the Wick rotation.
 - The three subspaces have distinct signatures: $(4, 0)$, $(1, 3)$, $(3, 1)$.
@@ -196,7 +196,7 @@ What is an **interpretation** is the following.
 - That the failure of the trick is explained by the loss of the Lorentzian structure of $\mathbb{M}_-$ under the transfer.
 - That the split of applications into "transfer harmlessly" and "resist" follows from the structural properties of the two subspaces.
 
-The interpretation is consistent with the known behavior of the Wick rotation. It is not derived from established physics, and it does not constitute a prediction of new physics. It is a structural reading that clarifies the operation and organizes the applications.
+The interpretation is consistent with the known behavior of the Wick rotation. It is not derived from established physics, and it does not constitute a prediction of new physics. It is a structural interpretation that clarifies the operation and organizes the applications.
 
 ## Summary
 
@@ -208,7 +208,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than the mat
 
 The same transfer destroys the Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering, the phase. When the physics of a problem depends on this structure, the transfer is fatal, and the Wick rotation fails. The usefulness of the trick and the possibility of its failure are the same fact.
 
-The reading predicts a split of applications into those that transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$ (equilibrium, correlation, statistical) and those that resist (real-time dynamics, causal propagation, massless particles, the sign problem, quantum gravity). The split is observed in practice.
+The interpretation predicts a split of applications into those that transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$ (equilibrium, correlation, statistical) and those that resist (real-time dynamics, causal propagation, massless particles, the sign problem, quantum gravity). The split is observed in practice.
 
 ## Summary of Notation
 

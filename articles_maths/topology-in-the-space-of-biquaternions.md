@@ -84,11 +84,11 @@ $$
 \lVert\tilde{P}\tilde{Q}\rVert\leq\sqrt{2}\,\lVert\tilde{P}\rVert\,\lVert\tilde{Q}\rVert .
 $$
 
-**Proof.** Under the $2\times2$ realization $\Phi$ of *The Matrix Element Representation and the Biquaternion Dynamics*, one has $\Phi(\tilde{P}\tilde{Q})=\Phi(\tilde{P})\Phi(\tilde{Q})$ and $\lVert\Phi(\tilde{Q})\rVert_F=\sqrt{2}\,\lVert\tilde{Q}\rVert$, with $\lVert\cdot\rVert_F$ the Frobenius norm. Frobenius norm is submultiplicative, so
+**Proof.** Under the $2\times2$ realization $\mathsf{M}_2$ of *The Matrix Element Representation and the Biquaternion Dynamics*, one has $\mathsf{M}_2(\tilde{P}\tilde{Q})=\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})$ and $\lVert\mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt{2}\,\lVert\tilde{Q}\rVert$, with $\lVert\cdot\rVert_F$ the Frobenius norm. Frobenius norm is submultiplicative, so
 
 $$
-\lVert\tilde{P}\tilde{Q}\rVert=\tfrac{1}{\sqrt2}\lVert\Phi(\tilde{P})\Phi(\tilde{Q})\rVert_F
-\leq\tfrac{1}{\sqrt2}\lVert\Phi(\tilde{P})\rVert_F\lVert\Phi(\tilde{Q})\rVert_F
+\lVert\tilde{P}\tilde{Q}\rVert=\tfrac{1}{\sqrt2}\lVert\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})\rVert_F
+\leq\tfrac{1}{\sqrt2}\lVert\mathsf{M}_2(\tilde{P})\rVert_F\lVert\mathsf{M}_2(\tilde{Q})\rVert_F
 =\sqrt2\,\lVert\tilde{P}\rVert\lVert\tilde{Q}\rVert .
 $$
 
@@ -103,4 +103,4 @@ The space of biquaternions is a real vector space of dimension eight. It carries
 - *Normed and Banach Spaces* (`articles_maths/normed-and-banach-spaces.md`), the norm, the equivalence of norms and the uniqueness of the topology in finite dimension; *Comparison of Norms and Invertibility* (`articles_maths/comparison-of-norms-and-invertibility.md`).
 - *Metric, Uniform and Complete Spaces* (`articles_maths/metric-uniform-and-complete-spaces.md`), the metric, the completeness and the compactness properties of §3; *Banach and Hilbert Spaces* (`articles_maths/banach-and-hilbert-spaces.md`).
 - *Topological Algebras and Banach Algebras* (`articles_maths/topological-algebras-and-banach-algebras.md`), the continuity of the product and the openness of the group of units.
-- *The Matrix Element Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.md`), the realization $\Phi$ and $\lVert\Phi(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert$.
+- *The Matrix Element Representation and the Biquaternion Dynamics* (`articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.md`), the realization $\mathsf{M}_2$ and $\lVert\mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert$.

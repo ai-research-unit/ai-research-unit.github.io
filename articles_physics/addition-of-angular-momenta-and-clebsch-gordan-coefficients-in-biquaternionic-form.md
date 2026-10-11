@@ -78,7 +78,7 @@ $$
 \tilde S^2=\tfrac{3\hbar^2}{4}e_0 ,
 $$
 
-the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\hat n)=\tfrac12(e_0\pm i\hat n)$, on which $\hat n_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\Phi$ of the companion articles, $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.
+the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\hat n)=\tfrac12(e_0\pm i\hat n)$, on which $\hat n_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.
 
 The material point for what follows is that the fundamental module of $\mathbb{B}$ is two-dimensional, so the operators above are the only spin operators the algebra carries internally. Composite angular momenta require more than one factor of the algebra.
 
@@ -218,7 +218,7 @@ $$
 
 The coefficients $\pm\tfrac{1}{\sqrt2}$ are the whole of the $\tfrac12\otimes\tfrac12$ table.
 
-The lowest triplet state is obtained from the highest by the ladder operator $\tilde S_-=\tilde S_-^{(1)}+\tilde S_-^{(2)}$. In the biquaternion realisation $\tilde S_-=\tfrac{\hbar}{2}(ie_1+e_2)$, and with $\Phi(\tilde S_-)=\hbar\sigma_-$ one has $\sigma_-|\!\uparrow\rangle=|\!\downarrow\rangle$ and $\sigma_-|\!\downarrow\rangle=0$. Hence
+The lowest triplet state is obtained from the highest by the ladder operator $\tilde S_-=\tilde S_-^{(1)}+\tilde S_-^{(2)}$. In the biquaternion realisation $\tilde S_-=\tfrac{\hbar}{2}(ie_1+e_2)$, and with $\mathsf{M}_2(\tilde S_-)=\hbar\sigma_-$ one has $\sigma_-|\!\uparrow\rangle=|\!\downarrow\rangle$ and $\sigma_-|\!\downarrow\rangle=0$. Hence
 
 $$
 \tilde S_-|1,1\rangle=\hbar\left(|\!\downarrow\uparrow\rangle+|\!\uparrow\downarrow\rangle\right)=\sqrt{2}\,\hbar\,|1,0\rangle,
@@ -260,7 +260,7 @@ P_{\mathrm{sym}}=\tfrac{1}{2}\left(e_0\otimes e_0+F\right),\qquad
 P_{\mathrm{asym}}=\tfrac{1}{2}\left(e_0\otimes e_0-F\right),
 $$
 
-so the coupled projectors of the fundamental coupling are the $\pm1$ spectral projectors of the exchange operator. Under $\Phi\otimes\Phi$ the exchange operator maps to the standard swap, $F\mapsto\tfrac12(I\otimes I+\sum_k\sigma_k\otimes\sigma_k)$, whose action on a product basis vector is $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$.
+so the coupled projectors of the fundamental coupling are the $\pm1$ spectral projectors of the exchange operator. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator maps to the standard swap, $F\mapsto\tfrac12(I\otimes I+\sum_k\sigma_k\otimes\sigma_k)$, whose action on a product basis vector is $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$.
 
 ### The Casimir and the coupling term
 
@@ -393,7 +393,7 @@ $$
 \langle 1,1;1,-1|0,0\rangle=+\tfrac{1}{\sqrt3},
 $$
 
-and the signs of the remaining entries follow. The convention has a biquaternion reading: the states of a multiplet are defined up to a central phase $e^{i\alpha}e_0$, and the Condon–Shortley choice is one representative of that phase freedom. The relative signs within a multiplet are then fixed by the requirement that the ladder operators, which are the elements $\tilde S_\pm$ of the algebra, act with the positive square-root coefficients above.
+and the signs of the remaining entries follow. The convention has a biquaternion interpretation: the states of a multiplet are defined up to a central phase $e^{i\alpha}e_0$, and the Condon–Shortley choice is one representative of that phase freedom. The relative signs within a multiplet are then fixed by the requirement that the ladder operators, which are the elements $\tilde S_\pm$ of the algebra, act with the positive square-root coefficients above.
 
 Two consistency checks are worth recording. First, the recursion relations reproduce the closed form of Wigner's formula for $j_1=j_2=1$ in all nine product entries. Second, the recursion is compatible with the orthogonality and completeness relations, as it must be: the recursion is the ladder action in the coupled basis, and the ladder operators are Hermitian conjugates of one another.
 

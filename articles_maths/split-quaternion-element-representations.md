@@ -5,7 +5,7 @@
 
 This article classifies the finite-dimensional real representations of the split-quaternion algebra, proves that the algebra is semisimple and has exactly one irreducible representation up to equivalence, computes its representation ring, relates the algebra's representations to the representations of the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ and to the double cover of the Lorentz group of signature $(2,1)$, and compares the result with the quaternion case.
 
-The split-quaternion algebra, its matrix model $\Phi$, its idempotents $\tilde\pi_{1,2}$, its vector subspace $V$ and its simplicity are assumed from *Split-Quaternion Algebra*. The defining module and the irreducibility of the defining representation are assumed from *Split-Quaternion Matrix Element Representations*, §*The Defining Module*. The matrix algebra $M_2(\mathbb{R})$, its matrix units and its modules are assumed from *Matrix Algebras*; the highest-weight classification of the finite-dimensional $\mathrm{SL}_2$-modules is assumed from *Representations of Lie Algebras*, and the tensor conventions of this category for the comparison come from *Quaternion Element Representations*. The double cover is stated here and proved in *Split-Quaternion Rotations and the Lorentz Group*; the homogeneous spaces are treated in *Split-Quaternions and Hyperbolic Geometry*. Nothing physical is invoked.
+The split-quaternion algebra, its matrix model $\mathsf{M}_2$, its idempotents $\tilde\pi_{1,2}$, its vector subspace $V$ and its simplicity are assumed from *Split-Quaternion Algebra*. The defining module and the irreducibility of the defining representation are assumed from *Split-Quaternion Matrix Element Representations*, §*The Defining Module*. The matrix algebra $M_2(\mathbb{R})$, its matrix units and its modules are assumed from *Matrix Algebras*; the highest-weight classification of the finite-dimensional $\mathrm{SL}_2$-modules is assumed from *Representations of Lie Algebras*, and the tensor conventions of this category for the comparison come from *Quaternion Element Representations*. The double cover is stated here and proved in *Split-Quaternion Rotations and the Lorentz Group*; the homogeneous spaces are treated in *Split-Quaternions and Hyperbolic Geometry*. Nothing physical is invoked.
 
 ## Representations of $\mathbb{H}_{\mathrm{s}}$
 
@@ -41,13 +41,13 @@ $$
 M = \tilde\pi_1 M \oplus \tilde\pi_2 M
 $$
 
-as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\Phi(e_2)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$.
+as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\mathsf{M}_2(e_2)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$.
 
-**Proof.** The identities $\tilde\pi_1 + \tilde\pi_2 = 1$ and $\tilde\pi_1\tilde\pi_2 = 0$ give $v = \tilde\pi_1v + \tilde\pi_2v$ for every $v$, so the sum is all of $M$; and if $v \in \tilde\pi_1M \cap \tilde\pi_2M$, say $v = \tilde\pi_1v'$, then $v = \tilde\pi_1v$ because $\tilde\pi_1^2 = \tilde\pi_1$, while $v = \tilde\pi_2v''$ gives $\tilde\pi_1v = \tilde\pi_1\tilde\pi_2v'' = 0$; hence $v = 0$ and the sum is direct. Both summands are invariant under $\tilde\pi_1$ and $\tilde\pi_2$, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2}$ and $\tilde\pi_1\tilde\pi_2 = 0$. For the last statement, $\Phi(\tilde\pi_1)$ and $\Phi(\tilde\pi_2)$ are the rank-one projections of (*Split-Quaternion Matrix Element Representations*, §*The Image as a Linear Subspace*), with images $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$.
+**Proof.** The identities $\tilde\pi_1 + \tilde\pi_2 = 1$ and $\tilde\pi_1\tilde\pi_2 = 0$ give $v = \tilde\pi_1v + \tilde\pi_2v$ for every $v$, so the sum is all of $M$; and if $v \in \tilde\pi_1M \cap \tilde\pi_2M$, say $v = \tilde\pi_1v'$, then $v = \tilde\pi_1v$ because $\tilde\pi_1^2 = \tilde\pi_1$, while $v = \tilde\pi_2v''$ gives $\tilde\pi_1v = \tilde\pi_1\tilde\pi_2v'' = 0$; hence $v = 0$ and the sum is direct. Both summands are invariant under $\tilde\pi_1$ and $\tilde\pi_2$, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2}$ and $\tilde\pi_1\tilde\pi_2 = 0$. For the last statement, $\mathsf{M}_2(\tilde\pi_1)$ and $\mathsf{M}_2(\tilde\pi_2)$ are the rank-one projections of (*Split-Quaternion Matrix Element Representations*, §*The Image as a Linear Subspace*), with images $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$.
 
 ## Classification
 
-**Theorem (The Classification of Representations).** Let $M$ be a finite-dimensional representation of $\mathbb{H}_{\mathrm{s}}$, and let $\mathbb{R}^2$ be the defining module with the action $\tilde q \cdot v = \Phi(\tilde q)v$. Then there is a unique integer $d \geq 0$ with
+**Theorem (The Classification of Representations).** Let $M$ be a finite-dimensional representation of $\mathbb{H}_{\mathrm{s}}$, and let $\mathbb{R}^2$ be the defining module with the action $\tilde q \cdot v = \mathsf{M}_2(\tilde q)v$. Then there is a unique integer $d \geq 0$ with
 
 $$
 M \cong (\mathbb{R}^2)^{\oplus d},
@@ -55,7 +55,7 @@ $$
 
 so $\dim_{\mathbb{R}} M = 2d$, every module has even dimension, and the isomorphism class of $M$ is determined by its dimension alone.
 
-**Proof.** Let $e = E_{11} = \Phi\big(\tfrac12(1 - e_3)\big)$ and $f = E_{22} = 1 - e$ be the two complementary rank-one idempotents. Since $e + f = 1$, every $v$ is $ev + fv$ with $ev \in eV$ and $fv \in fV$, so $M = eV + fV$; applying $e$ to a relation $v_1 + v_2 = 0$ with $v_1 \in eV$ gives $v_1 = 0$, so the sum is direct. The maps
+**Proof.** Let $e = E_{11} = \mathsf{M}_2\big(\tfrac12(1 - e_3)\big)$ and $f = E_{22} = 1 - e$ be the two complementary rank-one idempotents. Since $e + f = 1$, every $v$ is $ev + fv$ with $ev \in eV$ and $fv \in fV$, so $M = eV + fV$; applying $e$ to a relation $v_1 + v_2 = 0$ with $v_1 \in eV$ gives $v_1 = 0$, so the sum is direct. The maps
 
 $$
 eV \longrightarrow fV, \quad w \longmapsto E_{21}w, \qquad fV \longrightarrow eV, \quad u \longmapsto E_{12}u

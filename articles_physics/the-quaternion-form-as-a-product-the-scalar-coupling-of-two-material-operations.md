@@ -173,7 +173,7 @@ On the material coordinate $\tilde Q=ict\,e_0+\mathbf x$ the value is $-c^{2}t^{
 Minkowski interval.
 
 *Proof.* Put $\tilde P=\tilde Q$ in the explicit form: the coefficient is $Q_0^{2}+(\mathbf Q,\mathbf Q)$,
-which is $N(\tilde Q)$. The material reading is the substitution $Q_0=ict$ and $\mathbf Q=\mathbf x$ with
+which is $N(\tilde Q)$. The material interpretation is the substitution $Q_0=ict$ and $\mathbf Q=\mathbf x$ with
 $t$ and $\mathbf x$ real.
 
 This is the article's sharpest point, and it must be stated with its caution. **The operation whose values
@@ -182,7 +182,7 @@ the geometry of the material row sits in the **symmetric** part of the quaternio
 the two operations, by contrast, sits in the **antisymmetric** part and carries no geometry at all. The
 two halves of one product divide the two jobs between them.
 
-The diagonal has three readings that must not be conflated. Its **value** $N(\tilde Q)$ is the interval;
+The diagonal has three interpretations that must not be conflated. Its **value** $N(\tilde Q)$ is the interval;
 its **sign** separates the timelike from the spacelike element, since $N$ is indefinite on the material
 sector; and its **vanishing set** is the light cone, $\{N(\tilde Q)=0\}$, the set of the zero divisors of
 the algebra. The square of a material element being central, the interval is a number carried by the
@@ -213,7 +213,7 @@ centrality proposition, and the identity follows on rearranging.
 **Remark (verified).**
 the two sides agreeing to machine precision on all of them.
 
-**Reading (the interference term).** The coupling is the **cross term of the square of a sum**, the
+**Interpretation (the interference term).** The coupling is the **cross term of the square of a sum**, the
 quantity two operations contribute jointly beyond the sum of their separate intervals. Reading the
 diagonal $N(\tilde P)$ as the interval a single operation carries, the off-diagonal $N(\tilde P,\tilde Q)$
 is the correction to the interval of the sum: if it vanishes, the two operations contribute to the
@@ -223,18 +223,18 @@ the caution that the interference here is symmetric and bilinear and not the ses
 norm: the coefficient is indefinite, so it can be positive or negative, and it is not a probability-like
 interference.
 
-**Reading (mass and interaction are one form).** A single coefficient carries both of the readings the
+**Interpretation (mass and interaction are one form).** A single coefficient carries both of the interpretations the
 framework gives it. Evaluated on one operation the diagonal is the interval, and on a material
 four-momentum on shell it is $-m^{2}c^{2}$, so the diagonal carries the **mass**; evaluated on two
 operations the off-diagonal is their pairing, so the same coefficient carries the **interaction**. Mass
 and interaction are the diagonal and the off-diagonal of one symmetric form, and neither is a separate
 object.
 
-**Reading (a signed correlation, and its zeros decouple).** The coefficient is indefinite, so the coupling
+**Interpretation (a signed correlation, and its zeros decouple).** The coefficient is indefinite, so the coupling
 of two operations is positive, negative or zero, and a pair with $N(\tilde P,\tilde Q)=0$ contributes
 nothing to the interval of their sum. The coupling is therefore a **signed correlation** and not a
 probability: it has no positivity, and its zeros are the pairs the metric does not correlate. This is the
-same pairing the article reads as a comparison; the name offered here, labelled as a reading, is a
+same pairing the article reads as a comparison; the name offered here, labelled as an interpretation, is a
 correlation with either sign and a decoupled zero. Nothing in the corpus yet names a physical process
 behind a vanishing coupling, and the naming is the framework's and not the algebra's.
 
@@ -287,7 +287,7 @@ distinction is exactly the one the two band names record: the plain symmetrisati
 
 ## What the Coupling Cannot Do
 
-Three negative statements bound the operation and are the reason its reading is a caution.
+Three negative statements bound the operation and are the reason its interpretation is a caution.
 
 **A central value compares and does not compose.** The operation has **no unit**: there is no $\tilde E$
 with $\tilde E\bullet\tilde Q=\tilde Q$ for every $\tilde Q$. The reason is one line — the value
@@ -316,8 +316,8 @@ signature table of *The Four General Products and Their Physical Readings*.
 
 ## The Reading: a Central Value Is the Scalar of a Comparison
 
-**Proposed reading, labelled as such.** Each clause below names a proved identity of the preceding
-sections, and the reading is what the framework does with it.
+**Proposed interpretation, labelled as such.** Each clause below names a proved identity of the preceding
+sections, and the interpretation is what the framework does with it.
 
 - **The operation is a comparison of two operations.** The value $N(\tilde P,\tilde Q)$ is the scalar
 overlap of the two material operations; the operation couples them to a number. It is the value a
@@ -343,9 +343,9 @@ part; the two are the two halves of one product and neither can be read off the 
 - **The zeros of the coupling are a selection rule.** The proved statement is that a pair with
 $N(\tilde P,\tilde Q)=0$ is decoupled for the metric, together with the non-degeneracy of the form. A
 family of operations that are **pairwise** $N$-orthogonal therefore contributes to the interval of any
-sum only through its members' separate intervals, the cross terms vanishing. Offered **as a reading**,
+sum only through its members' separate intervals, the cross terms vanishing. Offered **as an interpretation**,
 the vanishing coupling is an **orthogonality selection rule** and a maximal $N$-orthogonal family is a
-set the metric does not mix — the algebraic shape of a superselection sector. The reading is of the
+set the metric does not mix — the algebraic shape of a superselection sector. The interpretation is of the
 form's zeros and is not a proved statement about states: the coefficient is indefinite, so an
 $N$-orthogonal family is not a positive decomposition, and the name is the framework's and not the
 algebra's. It is a selection rule of the coefficient $N$ and is not the mass selection rule of the
@@ -360,14 +360,14 @@ number.
 **Proved.** The explicit form
 $\tilde P\bullet\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0$ and the centrality of the value; the
 commutativity; the image equal to the centre $\mathbb{C}_{\mathbb{B}}$; the diagonal,
-$\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, with the material reading $-c^{2}t^{2}+\mathbf x^{2}$; the
+$\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, with the material interpretation $-c^{2}t^{2}+\mathbf x^{2}$; the
 reconstruction $\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$;
 the sixteen basis products, diagonal with values $\delta_{\mu\nu}e_0$; the absence of a unit, with $e_0$
 acting as the projection onto the scalar part; the coefficient $N$ and not $B$, the two differing by the
 sign of the vector part; the indefiniteness of the coefficient on the real space; the polarisation
 identity, recovering the coefficient from the diagonal as the cross term of a sum.
 
-**Readings.** That the symmetrised quaternionic product is the scalar coupling of two material
+**Interpretations.** That the symmetrised quaternionic product is the scalar coupling of two material
 operations; that its value is the number a comparison of the two operations returns; that the comparison
 is order-free; that its diagonal is the interval and the symmetric half of the row carries the metric;
 that the off-diagonal is the interference term of a sum; that mass and interaction are the diagonal and
@@ -378,7 +378,7 @@ of a superselection sector.
 **Not claimed.** That a physical material operation is a biquaternion, or that the coupling of two
 operations is a measured quantity. That a central value composes, associates or iterates. That the
 coupling carries a positivity or a state. That the symmetrised quaternionic product is a Jordan product.
-That the reading of the value as a "comparison" is forced by the algebra rather than chosen; the algebra
+That the interpretation of the value as a "comparison" is forced by the algebra rather than chosen; the algebra
 forces the centrality and the commutativity, and the naming is the framework's. That the interference,
 mass-and-interaction or signed-correlation namings are forced by the algebra; and that a vanishing
 coupling has a physical process behind it. That an $N$-orthogonal family is a set of physical
@@ -407,7 +407,7 @@ symmetrised plain product of the plain row in one sign:
 its coefficient is the quaternionic form $N$, the scalar part of $\tilde P^{\natural}\tilde Q$, and not
 the plain form $B$, the scalar part of $\tilde P\tilde Q$ — the two differ by the sign of the vector part
 alone. The operation reads as a **scalar coupling**: it compares two material operations and returns the
-number their overlap carries, and the reading is bounded by the caution that a central value **compares
+number their overlap carries, and the interpretation is bounded by the caution that a central value **compares
 and does not compose** and selects no state. The radical and the isotropic elements, the failure of the
 Jordan identity with its witness, and the boundary of the coefficient against the form $B$ are the
 companion article *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*; the

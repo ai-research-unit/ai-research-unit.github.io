@@ -54,7 +54,7 @@ $$
 
 **Corollary (the descent is signature-preserving).** Inside a fixed complex congruence class — fixed by the signature $(p,q)$, by *Congruence and the Stabiliser of a Form* — every compatible real structure descends to a real symmetric form $g_{0}$ of the same signature, so the descended real forms are mutually isometric; the definite classes are the two extreme signatures $(n,0)$ and $(0,n)$ and the indefinite classes the intermediate ones.
 
-## The Transfer Between the Two Readings
+## The Transfer Between the Two Interpretations
 
 **Proposition.** The maps
 

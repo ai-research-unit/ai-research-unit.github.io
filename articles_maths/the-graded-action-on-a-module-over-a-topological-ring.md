@@ -55,7 +55,7 @@ the module-level signed left multiplication. The **sign rule** is the requiremen
 
 **Proof.** Substitute $M = R$, $\pi = \alpha$ and $r\cdot x = rx$ in the definition of the twisted action; the result is $\ell_r$. The sign rule is then the associativity computation of the theorem.
 
-## The Topological Reading
+## The Topological Interpretation
 
 **Proposition (continuity of the action and of the parity operator).** Let $M$ be a topological $R$-module, that is a topological abelian group with a continuous action $R\times M\to M$. Then the action is continuous, the parity operator $\pi$ is continuous exactly when the decomposition $M = M^0\oplus M^1$ is a **topological direct sum**, that is when the projection onto $M^0$ along $M^1$ is continuous, and when $\pi$ is continuous the twisted action is continuous.
 

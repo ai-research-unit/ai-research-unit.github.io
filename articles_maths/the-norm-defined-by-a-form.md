@@ -198,7 +198,7 @@ so the condition fails for $n \geq 2$; the equality holds at $1$ exactly when $n
 
 ## The Collapse at the Trivial Involution
 
-### The Bilinear Reading
+### The Bilinear Interpretation
 
 **Theorem (the collapse).** Let $\varsigma = \mathrm{id}$, so that $R = k$ and the form is symmetric and $k$-bilinear. Then the norm of the form is the norm of the symmetric positive definite form, $\|x\| = h(x,x)^{1/2}$, the scaling reads $\|\lambda x\| = \lvert\lambda\rvert\|x\|$ with the absolute value of the ordered field, the compatibility is the invariance $h(xy,z) = h(y,xz)$ whose left multiplications are self-adjoint, and the $\mathrm{C}^*$-condition is the classical $\mathrm{C}^*$-identity $\|x^{*}x\| = \|x\|^{2}$ of an involutive normed algebra.
 

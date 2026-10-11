@@ -12,7 +12,7 @@ $$
 \;=\; |0\rangle\langle 0| .
 $$
 It is an element of the informational sector $\mathbb{M}_+$, it is **minimal** in the sense of the algebra, its trace is $\mathrm{Tr}(\tilde\Pi_1) = 1$, and it is the projector onto a **minimal left ideal** of $\mathbb{B}$, the two-complex-dimensional one-particle module. The complementary idempotent $\tilde N_{\mathrm{tr}} = \tfrac12(e_0 - ie_3)$ is the occupied-state projector, and the two form a resolution of the identity, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$. The one-mode vacuum is thus, literally, a minimal idempotent.
-- **Established, and worth separating from the above.** The vacuum idempotent is a **zero divisor**: its biquaternion norm vanishes, $N(\tilde\Pi_1) = \tilde\Pi_1\bar{\tilde\Pi_1} = 0$, and its matrix representative has vanishing determinant, $\det\Phi(\tilde\Pi_1) = 0$. The vacuum state lies on the zero-divisor cone — the framework's light cone. This is not a defect of the state; it is the algebra's statement that a rank-one projector is not invertible, and it ties the choice of vacuum to the choice of a null direction.
+- **Established, and worth separating from the above.** The vacuum idempotent is a **zero divisor**: its biquaternion norm vanishes, $N(\tilde\Pi_1) = \tilde\Pi_1\bar{\tilde\Pi_1} = 0$, and its matrix representative has vanishing determinant, $\det\mathsf{M}_2(\tilde\Pi_1) = 0$. The vacuum state lies on the zero-divisor cone — the framework's light cone. This is not a defect of the state; it is the algebra's statement that a rank-one projector is not invertible, and it ties the choice of vacuum to the choice of a null direction.
 - **The vacuum manifold.** The construction depends on a unit vector $\hat{\boldsymbol\mu}\in S^2$ through $\tilde\Pi(\hat{\boldsymbol\mu}) = \tfrac12(e_0 + i\hat{\boldsymbol\mu})$. Every such idempotent is a legitimate one-mode vacuum, and the family is the two-sphere — the Bloch sphere of the state space. The framework does not single one out; a global $SU(2)$ rotation moves one into another, and the orbit is the vacuum manifold.
 - **Gap, left visible.** For a **field** the vacuum is not an element of $\mathbb{B}$. The Fock space of a field is a module over the algebra, not a subalgebra of it, and the algebra contains no bosonic ladder at all: no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ can satisfy $[\tilde a,\tilde a^\dagger]=e_0$ because a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$. So "the biquaternion vacuum" is not, in general, a biquaternion. It is an idempotent for one fermionic mode and a state in a module for a field.
 
@@ -24,11 +24,11 @@ $$
 \qquad
 \mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_1, ie_2, ie_3\},
 $$
-with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre. The isomorphism is $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, the **biquaternion norm** is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde\Upsilon_1 = \tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2 = \tfrac12(ie_1+e_2)$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
+with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre. The isomorphism is $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, the **biquaternion norm** is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The single-mode ladder is $\tilde\Upsilon_1 = \tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2 = \tfrac12(ie_1+e_2)$, as established by *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
 
 ## The Vacuum as a State
 
-In the standard formulation the vacuum is characterized in two equivalent ways, and it is worth keeping both in view because the biquaternion reading uses one and not the other.
+In the standard formulation the vacuum is characterized in two equivalent ways, and it is worth keeping both in view because the biquaternion interpretation uses one and not the other.
 
 **As a vector.** The one-particle space $\mathcal{H}_1$ generates the Fock space
 $$
@@ -40,7 +40,7 @@ $$
 \qquad
 \hat a_r(\mathbf{p})|0\rangle = 0 \ \ \text{for all } r,\mathbf{p}.
 $$
-The state is normalized, $\langle 0|0\rangle = 1$, and every $n$-particle state is built from it by creation operators. In this reading the vacuum is a vector in an infinite-dimensional space.
+The state is normalized, $\langle 0|0\rangle = 1$, and every $n$-particle state is built from it by creation operators. In this interpretation the vacuum is a vector in an infinite-dimensional space.
 
 **As a functional.** A state on an algebra $\mathcal{A}$ of observables is a linear functional $\omega:\mathcal{A}\to\mathbb{C}$ that is positive, $\omega(\tilde A^{*} \tilde A)\ge 0$, and normalized, $\omega(e_0)=1$. The vacuum expectation value
 $$
@@ -48,7 +48,7 @@ $$
 $$
 is such a functional on the algebra generated by the fields, and it is **pure** — it is not a nontrivial convex combination of other states. Purity is the algebraic content of "the vacuum is a single state and not a mixture", and it is the property that links the vacuum to minimal idempotents, because in a finite-dimensional algebra the pure states are exactly the rank-one density matrices.
 
-For the biquaternion framework two facts make the second reading the operative one. First, the algebra $\mathbb{B}$ is finite-dimensional, so its states are the positive normalized elements of its dual and are realized by density matrices; a state is an element of the algebra, not a vector outside it. Second, the one-mode truncation of a fermionic field *is* an algebra inside $\mathbb{B}$, so that for one mode the abstract state becomes an explicit algebra element. That element is the subject of the next three sections.
+For the biquaternion framework two facts make the second interpretation the operative one. First, the algebra $\mathbb{B}$ is finite-dimensional, so its states are the positive normalized elements of its dual and are realized by density matrices; a state is an element of the algebra, not a vector outside it. Second, the one-mode truncation of a fermionic field *is* an algebra inside $\mathbb{B}$, so that for one mode the abstract state becomes an explicit algebra element. That element is the subject of the next three sections.
 
 ## Idempotents and Minimality
 
@@ -58,16 +58,16 @@ $$
 $$
 A **projector** is a Hermitian idempotent, $\tilde P^{*} = \tilde P$, and a projector in $\mathbb{M}_+$ is precisely a *positive* Hermitian idempotent, hence a density matrix up to normalization. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a simple classification of its idempotents, and it is the classification of the projectors that the vacuum needs.
 
-**Rank.** Under the isomorphism $\Phi$, a projector $\tilde P$ is sent to a Hermitian projection matrix $\Phi(\tilde P)$. Such a matrix has eigenvalues in $\{0,1\}$, and its **rank** is the number of unit eigenvalues. In two dimensions the possibilities are
+**Rank.** Under the isomorphism $\mathsf{M}_2$, a projector $\tilde P$ is sent to a Hermitian projection matrix $\mathsf{M}_2(\tilde P)$. Such a matrix has eigenvalues in $\{0,1\}$, and its **rank** is the number of unit eigenvalues. In two dimensions the possibilities are
 $$
-\mathrm{rank}\,\Phi(\tilde P) \in \{0,1,2\},
+\mathrm{rank}\,\mathsf{M}_2(\tilde P) \in \{0,1,2\},
 $$
 corresponding to $\tilde P = 0$, to a rank-one projector, and to $\tilde P = e_0$. A rank-one projector is the smallest nonzero one, and it is called **minimal**:
 
-> **Definition.** A projector $\tilde P\neq 0$ is **minimal** if it cannot be written as a sum of two nonzero orthogonal projectors, $\tilde P = \tilde P_1+\tilde P_2$ with $\tilde P_1\tilde P_2=0$. Equivalently, $\Phi(\tilde P)$ has rank one.
+> **Definition.** A projector $\tilde P\neq 0$ is **minimal** if it cannot be written as a sum of two nonzero orthogonal projectors, $\tilde P = \tilde P_1+\tilde P_2$ with $\tilde P_1\tilde P_2=0$. Equivalently, $\mathsf{M}_2(\tilde P)$ has rank one.
 
 Minimality has three equivalent faces that will each be used below:
-1. $\Phi(\tilde P)$ has rank one, equivalently $\det\Phi(\tilde P)=0$ and $\tilde P\neq0$;
+1. $\mathsf{M}_2(\tilde P)$ has rank one, equivalently $\det\mathsf{M}_2(\tilde P)=0$ and $\tilde P\neq0$;
 2. the left ideal $\mathbb{B}\tilde P$ is **minimal** — it contains no proper nonzero left ideal;
 3. the Peirce decomposition of $\mathbb{B}$ with respect to $\tilde P$ has components of dimensions $1,1,1,1$ over $\mathbb{C}$ — that is, $k^2$, $k(n-k)$, $k(n-k)$, $(n-k)^2$ with $n=2$, $k=1$ — so that
 $$
@@ -121,13 +121,13 @@ $$
 $$
 so its trace is one; and
 $$
-\Phi\big(\tilde\Pi_1\big) = \tfrac12\big(I_2 + i\Phi(e_3)\big) = \tfrac12\big(I_2 + \sigma_3\big) = \begin{pmatrix}1&0\\0&0\end{pmatrix},
+\mathsf{M}_2\big(\tilde\Pi_1\big) = \tfrac12\big(I_2 + i\mathsf{M}_2(e_3)\big) = \tfrac12\big(I_2 + \sigma_3\big) = \begin{pmatrix}1&0\\0&0\end{pmatrix},
 $$
 which has rank one. Hence $\tilde\Pi_1$ is a **minimal projector** with unit trace: the one-mode vacuum.
 
 The complementary idempotent and the resolution of the identity are immediate:
 $$
-\tilde\Pi_2 = \tfrac12\big(e_0 - ie_3\big) = \Phi^{-1}\begin{pmatrix}0&0\\0&1\end{pmatrix},
+\tilde\Pi_2 = \tfrac12\big(e_0 - ie_3\big) = \mathsf{M}_2^{-1}\begin{pmatrix}0&0\\0&1\end{pmatrix},
 \qquad
 \tilde\Pi_1 + \tilde\Pi_2 = e_0,
 \qquad
@@ -144,7 +144,7 @@ $$
 (-1)^F \tilde\Upsilon_2 (-1)^F = -\tilde\Upsilon_2 .
 $$
 
-**A numerical check on the whole set.** Representing $\mathbb{B}$ by $2\times2$ complex matrices through $\Phi$ and using explicit complex arithmetic on the coefficients, one finds: $\tilde\Pi_1^2-\tilde\Pi_1=0$; $\tilde\Pi_1^{*}-\tilde\Pi_1=0$; $\det\Phi(\tilde\Pi_1)=0$ with $\mathrm{Tr}\,\Phi(\tilde\Pi_1)=1$; $\tilde\Pi_1\tilde\Pi_2=0$ and $\tilde\Pi_1+\tilde\Pi_2=I_2$; $\Phi((-1)^F)=\sigma_3$; and $\Phi((-1)^F\tilde\Upsilon_1(-1)^F) = -\Phi(\tilde\Upsilon_1)$, all to machine precision ($<10^{-16}$). The vacuum expectation values reproduce the mode algebra,
+**A numerical check on the whole set.** Representing $\mathbb{B}$ by $2\times2$ complex matrices through $\mathsf{M}_2$ and using explicit complex arithmetic on the coefficients, one finds: $\tilde\Pi_1^2-\tilde\Pi_1=0$; $\tilde\Pi_1^{*}-\tilde\Pi_1=0$; $\det\mathsf{M}_2(\tilde\Pi_1)=0$ with $\mathrm{Tr}\,\mathsf{M}_2(\tilde\Pi_1)=1$; $\tilde\Pi_1\tilde\Pi_2=0$ and $\tilde\Pi_1+\tilde\Pi_2=I_2$; $\mathsf{M}_2((-1)^F)=\sigma_3$; and $\mathsf{M}_2((-1)^F\tilde\Upsilon_1(-1)^F) = -\mathsf{M}_2(\tilde\Upsilon_1)$, all to machine precision ($<10^{-16}$). The vacuum expectation values reproduce the mode algebra,
 $$
 \langle \tilde\Upsilon_2 \tilde\Upsilon_1\rangle_0 = \mathrm{Tr}\big(\tilde\Pi_1\tilde N_{\mathrm{tr}}\big) = 0,
 \qquad
@@ -164,11 +164,11 @@ So
 $$
 \boxed{\,N(\tilde\Pi(\hat{\boldsymbol\mu})) = 0 \quad\text{for every unit vector } \hat{\boldsymbol\mu}\,}
 $$
-and the same computation with $\tilde\Pi_2$ gives $N(\tilde\Pi_2)=0$. In the language of the biquaternion norm, every minimal projector of $\mathbb{B}$ is a **null element**: it lies on the cone $N(\tilde Q)=0$, which is the zero-divisor cone and the framework's light cone. Equivalently, $\det\Phi(\tilde\Pi(\hat{\boldsymbol\mu}))=0$, since $N=\det\Phi$.
+and the same computation with $\tilde\Pi_2$ gives $N(\tilde\Pi_2)=0$. In the language of the biquaternion norm, every minimal projector of $\mathbb{B}$ is a **null element**: it lies on the cone $N(\tilde Q)=0$, which is the zero-divisor cone and the framework's light cone. Equivalently, $\det\mathsf{M}_2(\tilde\Pi(\hat{\boldsymbol\mu}))=0$, since $N=\det\mathsf{M}_2$.
 
 This is not an accident of the vacuum state; it is the algebra's statement about rank. A rank-one projector is a matrix of rank one, a rank-one matrix is singular, a singular matrix is a zero divisor, and the determinant-biquaternion norm detects exactly that. The vacuum is the simplest element of the algebra that has this property.
 
-Two readings of the same fact are worth recording.
+Two interpretations of the same fact are worth recording.
 
 **The vacuum and the pair of complementary projectors are the two null directions.** Because $\tilde\Pi_1 + \tilde\Pi_2 = e_0$ with both null, the identity is written as the sum of two elements each of vanishing biquaternion norm. In signature language, $e_0$ is a positive-norm element decomposed along two null directions whose sum is timelike — the algebraic shape of a light-cone frame. The pair $\{\tilde\Pi_1, \tilde\Pi_2\}$ plays for the state space the role that the pair of null vectors plays for a Lorentz frame.
 
@@ -184,7 +184,7 @@ For the vacuum this identifies a physically named object. Acting on the algebra 
 $$
 \mathbb{B}\tilde\Pi_1 = \big\{\tilde Q \tilde\Pi_1 : \tilde Q\in\mathbb{B}\big\} \cong \mathbb{C}^2,
 $$
-a two-complex-dimensional space, because the map $\tilde Q\mapsto\tilde Q \tilde\Pi_1$ annihilates the rank-one complement and its image is the column space of $\Phi(\tilde\Pi_1)$. With $\Phi(\tilde\Pi_1) = \mathrm{diag}(1,0)$ the image is the space of column vectors with second entry zero, that is, the **fundamental module** of the algebra — the two-component spinor space on which the field's spinors live. So
+a two-complex-dimensional space, because the map $\tilde Q\mapsto\tilde Q \tilde\Pi_1$ annihilates the rank-one complement and its image is the column space of $\mathsf{M}_2(\tilde\Pi_1)$. With $\mathsf{M}_2(\tilde\Pi_1) = \mathrm{diag}(1,0)$ the image is the space of column vectors with second entry zero, that is, the **fundamental module** of the algebra — the two-component spinor space on which the field's spinors live. So
 
 > the one-mode vacuum idempotent determines the one-particle (spinor) module as the minimal left ideal it generates.
 
@@ -226,14 +226,14 @@ For a fermionic field the one-particle space is also a module, but here the alge
 
 > "The biquaternion vacuum" is not, in general, a biquaternion. It is a **minimal idempotent of $\mathbb{M}_+$** for one fermionic mode — the largest truncation the algebra supports — and a **state in a module** for a field, where it is neither an idempotent nor an element of the algebra at all.
 
-The minimal-idempotent reading is not a diminution of the field vacuum. It is the exact algebraic statement of what the vacuum is in the only case in which the algebra contains it, and it is the reason the vacuum is a natural starting point for the algebraic constructions — GNS reconstruction, the Wick theorem, and the thermal states — that the articles following this one develop.
+The minimal-idempotent interpretation is not a diminution of the field vacuum. It is the exact algebraic statement of what the vacuum is in the only case in which the algebra contains it, and it is the reason the vacuum is a natural starting point for the algebraic constructions — GNS reconstruction, the Wick theorem, and the thermal states — that the articles following this one develop.
 
 ## What Is Established and What Is Interpretation
 
 **Established (algebra).**
 - The idempotents of $\mathbb{B}$ are classified by rank; the rank-one (minimal) projectors of $\mathbb{M}_+$ are exactly $\tilde\Pi(\hat{\boldsymbol\mu}) = \tfrac12(e_0+i\hat{\boldsymbol\mu})$ with $|\hat{\boldsymbol\mu}|=1$.
 - $\tilde\Pi(\hat{\boldsymbol\mu})$ is Hermitian, idempotent, of unit trace, and minimal; $\tilde\Pi_2 = e_0-\tilde\Pi_1$ is its orthogonal complement, and the two resolve the identity.
-- $N(\tilde\Pi(\pm\hat{\boldsymbol\mu})) = 0$ and $\det\Phi(\tilde\Pi(\pm\hat{\boldsymbol\mu}))=0$: the vacuum is a zero divisor on the light cone.
+- $N(\tilde\Pi(\pm\hat{\boldsymbol\mu})) = 0$ and $\det\mathsf{M}_2(\tilde\Pi(\pm\hat{\boldsymbol\mu}))=0$: the vacuum is a zero divisor on the light cone.
 - $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})$ is a minimal left ideal, isomorphic to $\mathbb{C}^2$, the fundamental (spinor) module.
 - The vacuum manifold is $S^2$, on which the unit real quaternions act transitively.
 
@@ -242,8 +242,8 @@ The minimal-idempotent reading is not a diminution of the field vacuum. It is th
 - The photon's Fock vacuum is built from a module, and no bosonic ladder exists in $\mathbb{B}$.
 
 **Interpretation.**
-- Reading the vacuum as a minimal idempotent, and reading the vacuum manifold as the order-parameter space of a spontaneously chosen state, are readings of algebraic facts. They are precise; they are not derivations of the field-theoretic vacuum.
-- The identification of the minimal left ideal with the one-particle module is standard representation theory applied to $\mathbb{B}$; its physical reading as "the vacuum determines the one-particle space" is the interpretive step.
+- Reading the vacuum as a minimal idempotent, and reading the vacuum manifold as the order-parameter space of a spontaneously chosen state, are interpretations of algebraic facts. They are precise; they are not derivations of the field-theoretic vacuum.
+- The identification of the minimal left ideal with the one-particle module is standard representation theory applied to $\mathbb{B}$; its physical interpretation as "the vacuum determines the one-particle space" is the interpretive step.
 
 **Open.**
 - Whether a dynamics inside the framework selects a particular minimal idempotent, and by what mechanism, is not addressed by the algebra.
@@ -253,15 +253,15 @@ The minimal-idempotent reading is not a diminution of the field vacuum. It is th
 
 For a single fermionic mode the vacuum of the biquaternion framework is a concrete algebra element: the Hermitian, idempotent, unit-trace, **minimal** projector
 $$
-|0\rangle\langle 0| = \tilde\Pi_1 = \tfrac12\big(e_0+ie_3\big) = \Phi^{-1}\begin{pmatrix}1&0\\0&0\end{pmatrix},
+|0\rangle\langle 0| = \tilde\Pi_1 = \tfrac12\big(e_0+ie_3\big) = \mathsf{M}_2^{-1}\begin{pmatrix}1&0\\0&0\end{pmatrix},
 \qquad
 \tilde N_{\mathrm{tr}} = \tfrac12\big(e_0-ie_3\big) = \tilde\Pi_2,
 $$
 with $\tilde\Pi_1+\tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2=0$, and $(-1)^F = ie_3 = \tilde\Pi_1-\tilde\Pi_2$. Minimality is equivalently rank one, equivalently the one-dimensional Peirce corner $\tilde P\mathbb{B}\tilde P\cong\mathbb{C}$, equivalently the minimality of the left ideal $\mathbb{B}\tilde\Pi_1$. That ideal is the two-complex-dimensional fundamental module — the one-particle spinor space — so the vacuum idempotent determines the module on which the field lives.
 
-The vacuum idempotent is a **zero divisor**: $N(\tilde\Pi_1)=0$ and $\det\Phi(\tilde\Pi_1)=0$. It lies on the zero-divisor cone, and the identity is the sum of two null projectors. The family of vacua is the two-sphere $\tilde\Pi(\hat{\boldsymbol\mu})$, $\hat{\boldsymbol\mu}\in S^2$ — the Bloch sphere of pure states — on which the unit real quaternions act transitively, so the framework fixes the manifold of vacua but not one vacuum.
+The vacuum idempotent is a **zero divisor**: $N(\tilde\Pi_1)=0$ and $\det\mathsf{M}_2(\tilde\Pi_1)=0$. It lies on the zero-divisor cone, and the identity is the sum of two null projectors. The family of vacua is the two-sphere $\tilde\Pi(\hat{\boldsymbol\mu})$, $\hat{\boldsymbol\mu}\in S^2$ — the Bloch sphere of pure states — on which the unit real quaternions act transitively, so the framework fixes the manifold of vacua but not one vacuum.
 
-For a field the vacuum is a state in a module and not an element of the algebra: the Fock space is a module over $\mathbb{B}$, and no bosonic ladder exists inside $\mathbb{B}$ because a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$. The minimal-idempotent reading is exact for the one-mode truncation, which is the largest truncation the algebra supports, and it is the starting point for the operator-algebraic constructions that follow.
+For a field the vacuum is a state in a module and not an element of the algebra: the Fock space is a module over $\mathbb{B}$, and no bosonic ladder exists inside $\mathbb{B}$ because a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$. The minimal-idempotent interpretation is exact for the one-mode truncation, which is the largest truncation the algebra supports, and it is the starting point for the operator-algebraic constructions that follow.
 
 ## Summary of Notation
 
@@ -272,9 +272,9 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}},\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ |
-| $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\Phi(\tilde Q)$ | Biquaternion norm |
+| $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\mathsf{M}_2(\tilde Q)$ | Biquaternion norm |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, $\mathrm{Tr}(e_0)=2$ | Trace pairing |
-| $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$ | Matrix isomorphism |
+| $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism |
 | $\tilde\Pi(\pm\hat{\boldsymbol\mu})=\tfrac12(e_0\pm i\hat{\boldsymbol\mu})$, $\hat{\boldsymbol\mu}\in S^2$ | Minimal idempotents; vacuum projectors |
 | $|0\rangle\langle 0|=\tilde\Pi_1$ | One-mode vacuum projector |
 | $\tilde N_{\mathrm{tr}}=\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_2$ | Number operator (occupied projector) |
@@ -290,10 +290,10 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the projector calculus and the idempotent characterization of pure states.
 - J. von Neumann, *Mathematical Foundations of Quantum Mechanics* (Princeton, 1955), for the density-matrix classification of states and the geometry of the state space.
-- G. Birkhoff and J. von Neumann, "The logic of quantum mechanics," *Annals of Mathematics* **37** (1936) 823–843, for the lattice of projectors and the algebraic reading of the state space.
+- G. Birkhoff and J. von Neumann, "The logic of quantum mechanics," *Annals of Mathematics* **37** (1936) 823–843, for the lattice of projectors and the algebraic interpretation of the state space.
 - F. J. Murray and J. von Neumann, "On rings of operators," *Annals of Mathematics* **37** (1936) 116–229, for minimal projectors, factors, and the classification of left ideals.
 - R. V. Kadison and J. R. Ringrose, *Fundamentals of the Theory of Operator Algebras*, Vol. I (Academic Press, 1983), for idempotents, Peirce decompositions, and minimal ideals in finite-dimensional algebras.
 - F. R. Gantmacher, *The Theory of Matrices*, Vol. I (Chelsea, 1959), for the rank classification of projectors and the determinant as a rank test.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the matrix representation of biquaternions, idempotents, and the fundamental module.
-- J. C. Várilly and J. M. Gracia-Bondía, "Connes' noncommutative differential geometry and the standard model," *Journal of Geometry and Physics* **12** (1993) 223–301, for minimal left ideals as fermion modules in the algebraic reading of particle multiplets.
+- J. C. Várilly and J. M. Gracia-Bondía, "Connes' noncommutative differential geometry and the standard model," *Journal of Geometry and Physics* **12** (1993) 223–301, for minimal left ideals as fermion modules in the algebraic interpretation of particle multiplets.
 - Companion articles: *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single-mode ladder, the number operator, and the fermion-parity grading; *The GNS Construction in the Biquaternion Framework*, for the reconstruction that the pure state's minimality makes irreducible; *The Vacuum State and the Casimir Effect in Biquaternionic Form*, for the field vacuum as a module state and the absence of a bosonic ladder; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the state space, the trace pairing, and the Bloch ball.

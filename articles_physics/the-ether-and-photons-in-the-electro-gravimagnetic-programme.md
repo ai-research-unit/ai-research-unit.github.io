@@ -4,11 +4,11 @@
 
 The companion articles *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*
 and *Harmonic Elementary Particles and the Periodic System of Atoms* record an external programme,
-due to L. A. Alexeyeva: the reading of the biquaternionic A-field as an electro-gravimagnetic (EGM)
+due to L. A. Alexeyeva: the interpretation of the biquaternionic A-field as an electro-gravimagnetic (EGM)
 field, under the hypothesis that magnetic-charge density is gravitational mass density. The first
 article follows the programme's field theory and its law structure. The second follows its
 charge–current field into the **monochromatic** sector and records the particle and periodic-system
-reading built on it.
+interpretation built on it.
 
 This article records the third slice of the same programme, in which it turns from the source to the
 **field**. The programme names the EGM field the **ether**, and reads the monochromatic solutions of
@@ -60,7 +60,7 @@ corpus's history article dates that object to Silberstein in 1907 — the Rieman
 and keeps the priority there; and the programme presents its model as a generalization of Maxwell
 **and** Dirac, while only the Maxwell half appears in this paper.
 
-The paper states the reading in one sentence: **the field is primary and
+The paper states the interpretation in one sentence: **the field is primary and
 the substance is secondary; substance is the physical manifestation of the heterogeneity and motion
 of the ether.** Hence the name: the EGM field is the ether, its scalar part is the density of the
 ether, and its vector part is the tension of the electric and gravimagnetic fields.
@@ -176,7 +176,7 @@ corpus carries the bracket and not the number. The two powers of $r$ in the tens
 and the radiated field, and that structure is the standard one for a spherical
 wave — the corpus's retarded-potential and layer machinery is in *Radiation from Accelerated Charges
 in Biquaternionic Form* and *Distributions on Surfaces, Layers, and Jump Conditions*. What the
-programme adds is the packaging in one biquaternion and the reading of the scalar part as an ether
+programme adds is the packaging in one biquaternion and the interpretation of the scalar part as an ether
 density.
 
 ## Free Photons as Plane Waves
@@ -220,7 +220,7 @@ satisfy the free equation, and their content differs in a way the programme read
   part. The classically admissible photons and the ether-density-free photons are the same photons,
   and the programme's extra content sits entirely in the modes the classical restriction excludes.
   So the programme's free photons include a longitudinal polarisation, which vacuum electromagnetism
-  excludes. The EGM article has already recorded the same reading from the programme's 2016 paper,
+  excludes. The EGM article has already recorded the same interpretation from the programme's 2016 paper,
   where the longitudinal modes were built from scalar potentials; the two constructions are one
   construction, and the corpus does not count them twice.
 - **The energy density is $\omega^{2}$ and the flux is along the wave vector.** With the corpus's
@@ -294,7 +294,7 @@ a continuum of frequencies, the band is an input — the visible range — rathe
 layer remark is the corpus's own layer calculus *Distributions on Surfaces, Layers, and Jump
 Conditions* under another name. The ball-lightning sentence is a speculation: the paper offers it no
 model, no equation and no number, and the corpus records it as a remark and not as a claim. The name
-"photon" is likewise a reading of a monochromatic classical wave; the programme's photon carries no
+"photon" is likewise an interpretation of a monochromatic classical wave; the programme's photon carries no
 quantum, no spin and no statistics, exactly as its earlier "particles" carried none.
 
 One remark of the paper's is worth keeping for a different reason. It proposes the construction of
@@ -333,7 +333,7 @@ the whole programme, and it is the one the corpus cannot leave unremarked.
 The light-pressure remark is of a weaker kind. The pressure of light on a surface follows in the
 standard theory from the momentum the electromagnetic field carries, with no gravitational component
 required; attributing it to the gravitational half is a re-reading of a known effect, and a
-re-reading of an effect already explained is not evidence for the reading.
+re-reading of an effect already explained is not evidence for the interpretation.
 
 ## What the Corpus Takes and What It Does Not
 
@@ -357,7 +357,7 @@ The corpus takes four things, and they are small.
   the retarded Helmholtz representation, and it is correct; it is the corpus's own Green-function
   machinery and it needs no new verification.
 
-The corpus does not take the ether, the photon reading, the cloud, the ball lightning or the
+The corpus does not take the ether, the photon interpretation, the cloud, the ball lightning or the
 gravitational-wave claim. The ether adds a name and an ontology to an unchanged equation. The photon
 is a monochromatic classical wave under a quantum name. The cloud is a spectral integral under a
 particle name. The ball-lightning remark has nothing behind it. And the gravitational-wave claim is
@@ -393,12 +393,12 @@ standard one, the convolution is the Green-function representation, and the "clo
 integral. The reduction is also a change of type, hyperbolic to elliptic, which the paper states and
 which is precisely why a boundary condition would be needed and why its absence is the programme's
 root gap. What is genuinely the programme's is the packaging of the two fields into one biquaternion
-and the two readings that follow from it: the longitudinal photon, which vacuum electromagnetism
+and the two interpretations that follow from it: the longitudinal photon, which vacuum electromagnetism
 forbids, and the claim that no pure gravitational waves exist, which the direct detection of
 gravitational waves without electromagnetic counterparts contradicts. Beside those, the ether is a
 name, the photon is a monochromatic wave, and the light pressure is an effect already explained. The
 corpus records the formulation because the companion articles raise the question of what the
-programme does with the field, and this is its answer, and because the field-primary reading is the
+programme does with the field, and this is its answer, and because the field-primary interpretation is the
 clearest statement of what the programme assumes.
 
 ## Summary of Notation
@@ -439,7 +439,7 @@ clearest statement of what the programme assumes.
   Newton-law analogues and its empirical claims.
 - *Harmonic Elementary Particles and the Periodic System of Atoms*, for the same factorisation applied
   to the charge–current field, the Helmholtz potentials and the place of a free frequency in the
-  programme's readings.
+  programme's interpretations.
 - L. A. Alexeyeva, "Biquaternions algebra and its applications by solving of some theoretical physics
   equations", *Clifford Analysis, Clifford Algebras and Their Applications* **7**(1) (2012) 19–39
   (arXiv:1302.0523), and *Distributions on Surfaces, Layers, and Jump Conditions* in this corpus, for

@@ -14,7 +14,7 @@ $$
 
 The left and the right multiplication are the two one-sided operators, their products $L_{\tilde A}R_{\tilde B}$ are
 the two-sided ones, and the **sandwich** is the diagonal two-sided operator in which the right parameter is the
-conjugate of the left one. The composition laws of the two families, and the reading of the multiplication as a
+conjugate of the left one. The composition laws of the two families, and the interpretation of the multiplication as a
 process, belong to *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; the
 sandwich read as the operator $\mathrm{H}_{\tilde Q}=L_{\tilde Q}\circ R_{\tilde Q^{*}}$ belongs to *The 4×4 Matrix
 Operator Representation $M_4(\mathbb{C})$ of Biquaternions*, and its action on the remarkable subspaces to *The
@@ -31,9 +31,11 @@ $$
 \bigl(L_{\tilde A}R_{\tilde B}\bigr)^{\approx}=L_{\tilde B}R_{\tilde A}.
 $$
 
-Association therefore **swaps the two sides** instead of conjugating the parameter. The Hermitian dagger keeps the side,
-$(L_{\tilde A})^{*}=L_{\tilde A^{*}}$, and the quaternionic adjoint keeps the side, so the swap belongs to the plain
-form alone. Every type criterion of the block is the consequence: a one-sided operator is self-adjoint exactly when its
+Association therefore **swaps the two sides** without conjugating the parameter, and it is the only one of the four
+adjoints of the corpus that reverses a side with the parameter untouched: the Hermitian dagger keeps the side,
+$(L_{\tilde A})^{*}=L_{\tilde A^{*}}$, the quaternionic adjoint keeps the side, and the signed Hermitian adjoint
+reverses the side but conjugates the parameter, $(L_{\tilde A})^{\natural\ast}=R_{\bar{\tilde A}}$. Every type criterion
+of the block is the consequence: a one-sided operator is self-adjoint exactly when its
 parameter is central, a two-sided operator exactly when its two parameters are proportional, and no generator appears
 in either family. The criteria and their proofs are the mathematics of *One-Sided Operators on the General Plain Algebra
 of Biquaternions*, *Two-Sided Operators on the General Plain Algebra of Biquaternions* and *Association and the
@@ -138,7 +140,8 @@ swap theorem of the one-sided operators.
 on the side on which it stands. Transporting an operation across the pairing therefore moves it to the other side and
 reverses the order of a product of two; the plain form cannot tell a left attachment from a right one. This is what
 "the transpose of the left regular representation is the right one" means physically. The three companion blocks do
-**not** have this behaviour, because their adjoints carry a conjugation of the parameter and keep the side; the
+**not** have this behaviour: their adjoints either keep the side and conjugate the parameter or reverse the side only
+by conjugating it as well, so none of them reverses a side with the parameter untouched; the
 comparison of the four adjoints is the business of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in
 Examples*, and the block-by-block table is the crossing reader *The Operators of the Twelve Structures: Multiplication,
 Adjoint and Bracket*. The swap is also why no type criterion of this block is a criterion on one parameter alone, and
@@ -193,10 +196,12 @@ $$
 $\tilde Q^{*}=\lambda\tilde Q$. Applying the conjugate $^{*}$ to both sides gives
 $\tilde Q=\bar{\lambda}\,\tilde Q^{*}$, and combining the two gives $\tilde Q=|\lambda|^{2}\tilde Q$, so
 $|\lambda|=1$; splitting $\tilde Q=\tilde P+\tilde R$ with $\tilde P\in\mathbb{M}_+$ and $\tilde R\in\mathbb{M}_-$ then
-gives $(1-\lambda)\tilde P=(1+\lambda)\tilde R$, which for $\lambda\neq\pm1$ forces both halves into one sector and
-contradicts the value of $\lambda$. Hence $\lambda=\pm1$ and $\tilde Q$ is Hermitian or anti-Hermitian.
+gives $(1-\lambda)\tilde P=(1+\lambda)\tilde R$: for $\lambda=+1$ it reads $\tilde R=0$, for $\lambda=-1$ it reads
+$\tilde P=0$, and for $\lambda\neq\pm1$ both coefficients are nonzero, so $\tilde P$ and $\tilde R$ are proportional
+while lying in opposite sectors, which forces $\tilde P=\tilde R=0$ and $\tilde Q=0$, in both sectors. Hence
+$\tilde Q$ is Hermitian or anti-Hermitian.
 
-**Read as a physical statement.** Three readings follow, one for each kind of sandwich, and they separate the three
+**Read as a physical statement.** Three interpretations follow, one for each kind of sandwich, and they separate the three
 uses of the one action form.
 
 - The **measurement update** has a Hermitian idempotent parameter, $\tilde\Pi^{2}=\tilde\Pi=\tilde\Pi^{*}$, so it lies in
@@ -282,9 +287,9 @@ because there the twist absorbs a norm and here there is no twist to absorb one.
 
 The operators of the block act on the state space, and the action is the content of the two other articles of this
 group. Let $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$ be the minimal left ideal of *The
-Spinor Space as a Module and as a Hilbert Space*, with $\tilde\Pi_2=e_0-\tilde\Pi_1$ and the complement
-$\mathbb{B}\tilde\Pi_2=\mathbb{C}\{\tilde\Pi_2,\tilde\Upsilon_1\}$ of *The Complementary Space of the Spinor Space and
-Its Physical Meaning*.
+Spinor Space as a Module of the General Plain Algebra*, with $\tilde\Pi_2=e_0-\tilde\Pi_1$ and the complement
+$\mathbb{B}\tilde\Pi_2=\mathbb{C}\{\tilde\Pi_2,\tilde\Upsilon_1\}$ of *The Complementary Space of the Spinor Space in
+the General Plain Algebra*.
 
 **Proposition (the left actions are the matrices of the module).** On the basis $(\tilde\Pi_1,\tilde\Upsilon_2)$ the
 four left multiplications by the basis elements are the matrix units
@@ -299,8 +304,8 @@ $$
 so $L$ restricted to $S$ is the map $\tilde Q\mapsto\mathsf{M}_2(\tilde Q)$ of the algebra onto $M_2(\mathbb{C})$, and
 every operator on the state space is a left multiplication: $\mathbb{B}\cong\mathrm{End}_{\mathbb{C}}(S)$.
 
-*Proof.* The matrices are the ones displayed in *The Spinor Space as a Module and as a Hilbert Space*, §*The Structure
-of the Module*, and the identification $\mathbb{B}\cong\mathrm{End}_{\mathbb{C}}(S)$ is the algebra acting on its
+*Proof.* The matrices are the ones displayed in *The Spinor Space as a Module of the General Plain Algebra*, §*The Left
+Action*, and the identification $\mathbb{B}\cong\mathrm{End}_{\mathbb{C}}(S)$ is the algebra acting on its
 simple module.
 
 **Proposition (the right actions move the state space to its complement).** A right multiplication commutes with every
@@ -310,8 +315,8 @@ multiplication by $\tilde\Upsilon_2$ carries the complement onto $S$. A central 
 right actions and can move nothing.
 
 *Proof.* The commutation is the third composition law, which makes every $R_{\tilde B}$ a module map; the two nilpotent
-carriers are computed on the basis in *The Complementary Space of the Spinor Space and Its Physical Meaning*,
-§*Right Multiplication by the Nilpotents*, and the actuality of the isomorphism follows from the two ideals being
+carriers are computed on the basis in *The Complementary Space of the Spinor Space in the General Plain Algebra*,
+§*The Isomorphism Is Right Multiplication, Not a Relabelling*, and the actuality of the isomorphism follows from the two ideals being
 simple of the same dimension. For a central $\tilde C$, $L_{\tilde C}=R_{\tilde C}$, so the right action preserves each
 ideal.
 
@@ -326,11 +331,11 @@ $$
 *Proof.* The commutant of the left regular representation is the right one, computed by evaluating at $e_0$; the
 bicommutant is then the centre, by the same argument on the right.
 
-**Read as a physical statement.** Three readings. The left actions are the **observables** acting on the state space,
+**Read as a physical statement.** Three interpretations. The left actions are the **observables** acting on the state space,
 and every operator on the state space is one of them, which is the algebraic form of the statement that the algebra of
 the block is the full matrix algebra of the spinor space. The right actions are the **commuting** family, and the ones
 among them that move a state are the nilpotent ones: attaching a nilpotent on the right carries a state to the
-complement, which is the operator content of the corpus's reading of the mass term as a right multiplication. And the
+complement, which is the operator content of the corpus's interpretation of the mass term as a right multiplication. And the
 bicommutant is the scalars, so the central phase is the only operation that is invisible from the state space — the
 algebraic content of the invariance of the framework under a central phase. The three statements are proved in the two
 sibling articles and in the double-centraliser theorem, and they are the reason the module of the block is complete:
@@ -405,7 +410,7 @@ Take one material element as a parameter,
 
 $$
 \tilde Q=ie_0+2e_1\in\mathbb{M}_-,\qquad
-B(\tilde Q,\tilde Q)=-5,\qquad N(\tilde Q,\tilde Q)=+5,\qquad
+B(\tilde Q,\tilde Q)=-5,\qquad N(\tilde Q,\tilde Q)=+3,\qquad
 \tilde Q^{2}=-5e_0+4ie_1 .
 $$
 
@@ -485,7 +490,7 @@ declares only the plain column.
 - **The sector sign is not the metric.** $B$ carries the sector sign; the interval, the mass shell and the metric are
 *Biquaternion Norm and Invertibility* and the companion block, and the worked case gives the two values on one element.
 
-**What the framework does not claim.** The reading does not derive the Lorentz transformation, the unitary evolution or
+**What the framework does not claim.** The interpretation does not derive the Lorentz transformation, the unitary evolution or
 the measurement update from the operator calculus; it reads the three parametrisations that the corpus already uses. It
 does not identify a physical symmetry with the inner automorphisms; it states that the symmetries of the sector sign
 inside this family are those. And it does not claim that the operator calculus of the twelve rows is one calculus: the
@@ -507,7 +512,7 @@ $\tilde B\tilde A=\pm e_0$; the multiplicative ones are the inner automorphisms,
 the commutant of the left regular representation is the right one and the bicommutant is the scalars; and the sandwich
 and the inner automorphism agree exactly on the unitary parameters.
 
-**Readings.** That the adjoint of the block is a **transport to the other side**, and that the plain form cannot tell a
+**Interpretations.** That the adjoint of the block is a **transport to the other side**, and that the plain form cannot tell a
 left attachment from a right one; that **no generator appears** in either one-sided or two-sided family, so the
 infinitesimal structure belongs to the antisymmetric band; that the symmetries of the sector sign are the inner
 automorphisms and that a one-sided operation never is one; that the left actions are the observables on the state space
@@ -602,18 +607,18 @@ endomorphism ring and the decomposition of the left regular module.
 sector sign and the boundary of the block.
 - Physics article *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*
 (`articles_physics/the-monoid-of-acting-maps-the-process-is-the-multiplication-the-state-is-the-idempotent.md`), for
-the composition laws, the regular representation and the monoid reading of the multiplications.
+the composition laws, the regular representation and the monoid interpretation of the multiplications.
 - Physics article *The Sandwich Action in Subspaces* (`articles_physics/the-sandwich-action-in-subspaces.md`), for the
 sandwich restricted to the remarkable subspaces and the unit-norm slice.
 - Physics article *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions*
 (`articles_physics/the-4x4-matrix-operator-representation-of-biquaternions.md`), for the operator form
 $\mathrm{H}_{\tilde Q}=L_{\tilde Q}\circ R_{\tilde Q^{*}}$ and its physical arithmetic.
-- Physics article *The Spinor Space as a Module and as a Hilbert Space*
-(`articles_physics/the-spinor-space-as-a-module-and-as-a-hilbert-space.md`), for the ideal, the matrix units of the
-left action and the module picture of the state space.
-- Physics article *The Complementary Space of the Spinor Space and Its Physical Meaning*
-(`articles_physics/the-complementary-space-of-the-spinor-space-and-its-physical-meaning.md`), for the right
-multiplication by the nilpotents, the isomorphism to the complement and the mass reading.
+- Physics article *The Spinor Space as a Module of the General Plain Algebra*
+(`articles_physics/the-spinor-space-as-a-module-of-the-general-plain-algebra.md`), for the ideal, the matrix units of
+the left action and the module picture of the state space.
+- Physics article *The Complementary Space of the Spinor Space in the General Plain Algebra*
+(`articles_physics/the-complementary-space-of-the-spinor-space-in-the-general-plain-algebra.md`), for the right
+multiplication by the nilpotents, the isomorphism to the complement and the mass interpretation.
 - Physics article *Observables, Gauge Generators and the Chirality of the Internal Action*
 (`articles_physics/observables-gauge-generators-and-the-chirality-of-the-internal-action.md`), for the physical
 adjoint, the observables and the generators of the framework, which are the self-adjoint and the skew-adjoint operators

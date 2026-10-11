@@ -69,7 +69,7 @@ L^{\star}_{\tilde A}(\tilde X)=\tilde A\star\tilde X,\qquad R^{\star}_{\tilde A}
 $$
 are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*, related by $L^{\star}_{\tilde A}\tilde X=\overline{R^{\star}_{\tilde A}\tilde X}$. Their ranks are $0$ at $\tilde A=0$, $4$ for $\tilde A$ in the vector subspace, $8$ when $A_0\neq0$ and $N(\tilde A)\neq0$, and $6$ when $A_0\neq0$ and $N(\tilde A)=0$; their traces are $0$ for the left family and $-4\operatorname{Re}(A_0)$ for the right; and the image of a left multiplication by a vector element is a four-dimensional real subspace that is not one of the remarkable subspaces. These are the numbers of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*, read in the real basis.
 
-## What Is Specific to the Real Reading
+## What Is Specific to the Real Interpretation
 
 **The trace form.** The composite of two left multiplications is $\mathbb{C}_{\mathbb{B}}$-linear, so
 $$

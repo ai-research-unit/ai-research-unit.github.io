@@ -13,7 +13,7 @@ the rank as a mass label and the interval as the metric gives the framework's ac
 exists and where the mass shells sit.
 
 The article keeps to the algebra. It defers the interval, the four-momentum and the mass shell to
-*Biquaternion Norm and Invertibility*; the light cone and its causal reading to *The Light Cone as the
+*Biquaternion Norm and Invertibility*; the light cone and its causal interpretation to *The Light Cone as the
 Biquaternion Zero-Divisor Cone* and *Causality and the Light Cone as an Information Barrier in
 Biquaternionic Form*; the states and the Bloch ball to *The States the Indefinite Metric Cannot Normalise* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; the
 measurement cone to *POVMs and the Positive Cone in Biquaternionic Form*; and the comparison of the four
@@ -22,12 +22,12 @@ scalar forms to *The Four General Products and Their Physical Readings*.
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$ with $i^{2}=-1$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with
 complex coefficients. The conjugations are the Hermitian ${}^{*}$ (coefficientwise conjugate of the
-natural conjugate), so that $\Phi(\tilde Q^{*})=\Phi(\tilde Q)^{\dagger}$ in the $2\times2$ matrix model,
+natural conjugate), so that $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ in the $2\times2$ matrix model,
 and the natural ${}^{\natural}$. The sectors are $\mathbb{M}_-=\{\tilde Q^{*}=-\tilde Q\}$ (material) and
 $\mathbb{M}_+=\{\tilde Q^{*}=\tilde Q\}$ (informational). The **sesquilinear product** is
 $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; its square is the **sesquilinear square**; the **natural
 square** is $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$. The trace is $\mathrm{Tr}=2\,\mathrm{Sc}$, the
-matrix model is $\Phi$ with $\det\Phi(\tilde Q)=N(\tilde Q)$, and the Euclidean norm is
+matrix model is $\mathsf{M}_2$ with $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and the Euclidean norm is
 $\lVert\tilde Q\rVert_E^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$. A Hermitian element is written
 $\tilde H=te_0+i\mathbf u$ with $t$ real and $\mathbf u$ a real three-vector.
 
@@ -45,7 +45,7 @@ $$
 
 The square is **Hermitian**, because ${}^{*}$ is an anti-automorphism of order two, and its scalar part
 is the **Euclidean square of the coefficient vector**, strictly positive off zero. Being Hermitian and of
-the form $\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}$ in the matrix model, it is **positive semidefinite**.
+the form $\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q)^{\dagger}$ in the matrix model, it is **positive semidefinite**.
 Its positivity is therefore a theorem about the algebra, not a hypothesis about a Lagrangian.
 
 The form whose diagonal this is has a name in the general theory: $\mathrm{Sc}(\tilde R^{*}\tilde Q)$ is
@@ -100,10 +100,10 @@ The $2\times2$ matrix image of the square has two invariants, and each is one of
 **Trace.** $\mathrm{Tr}(\tilde Q\tilde Q^{*})=2\sum_\mu\lvert Q_\mu\rvert^{2}=2\lVert\tilde Q\rVert_E^{2}$, always positive, against $\mathrm{Tr}(N(\tilde Q)e_0)=2N(\tilde Q)$, twice the interval
 and of either sign on $\mathbb{M}_-$.
 
-**Determinant.** Since $\det\Phi(\tilde Q)=N(\tilde Q)$,
+**Determinant.** Since $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$,
 
 $$
-\det\Phi\bigl(\tilde Q\tilde Q^{*}\bigr)=\det\bigl(\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}\bigr)=\lvert N(\tilde Q)\rvert^{2} ,
+\det\mathsf{M}_2\bigl(\tilde Q\tilde Q^{*}\bigr)=\det\bigl(\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q)^{\dagger}\bigr)=\lvert N(\tilde Q)\rvert^{2} ,
 $$
 
 the **squared interval**.
@@ -112,8 +112,8 @@ So of the two invariants of the sesquilinear square, the trace is the Euclidean 
 determinant is the squared interval. The element is positive by one and indefinite by the other, with no
 conflict: the two numbers answer different questions.
 
-**Remark (verified).** $\det\Phi(\tilde Q)=N(\tilde Q)$ to $3.6\times10^{-15}$ and
-$\det\Phi(\tilde Q\tilde Q^{*})=\lvert N(\tilde Q)\rvert^{2}$ to $1.1\times10^{-13}$, over $100$ random
+**Remark (verified).** $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ to $3.6\times10^{-15}$ and
+$\det\mathsf{M}_2(\tilde Q\tilde Q^{*})=\lvert N(\tilde Q)\rvert^{2}$ to $1.1\times10^{-13}$, over $100$ random
 elements.
 
 ## Rank: Massive and Massless Elements
@@ -121,21 +121,21 @@ elements.
 **Criterion.** For $\tilde Q\neq0$ the sesquilinear square has rank $2$ if $N(\tilde Q)\neq0$ and rank
 $1$ if $N(\tilde Q)=0$; the rank is one exactly on the zero-divisor cone.
 
-**Proof.** $\Phi(\tilde Q\tilde Q^{*})=\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}$, and a matrix times its
-own adjoint has the rank of the factor; $\Phi(\tilde Q)$ is invertible exactly when
-$\det\Phi(\tilde Q)=N(\tilde Q)\neq0$.
+**Proof.** $\mathsf{M}_2(\tilde Q\tilde Q^{*})=\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q)^{\dagger}$, and a matrix times its
+own adjoint has the rank of the factor; $\mathsf{M}_2(\tilde Q)$ is invertible exactly when
+$\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)\neq0$.
 
-| Element | $N(\tilde Q)$ | $\Phi(\tilde Q)$ | Square | Name |
+| Element | $N(\tilde Q)$ | $\mathsf{M}_2(\tilde Q)$ | Square | Name |
 |---|---|---|---|---|
 | off the null cone | $\neq0$ | invertible | rank $2$ | massive type |
 | on the null cone | $0$ | singular, nonzero | rank $1$ | massless type |
 
 **Remark (verified).** Rank $2$ on $e_0,e_1,e_2,e_3,e_0+e_1,e_0+2ie_1,e_1+2e_2+3ie_3$; rank $1$ on the
 null elements $e_1+ie_2$, $e_0+ie_3$, $e_2+ie_3$ and $\tfrac12(e_0\mp ie_3)$; and
-$\mathrm{rank}\,\Phi(\tilde Q\tilde Q^{*})=\mathrm{rank}\,\Phi(\tilde Q)$ on $100$ of $100$ random
+$\mathrm{rank}\,\mathsf{M}_2(\tilde Q\tilde Q^{*})=\mathrm{rank}\,\mathsf{M}_2(\tilde Q)$ on $100$ of $100$ random
 elements. For the idempotent $\tilde\Pi=\tfrac12(e_0-ie_3)$ one has $N=0$,
 $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})=\tfrac12$ and rank $1$: the projector is a massless, rank-one
-element, as the state reading of the informational sector requires.
+element, as the state interpretation of the informational sector requires.
 
 The boundary case shows where the rank drops. The Hermitian element $\tilde H=te_0+i\mathbf u$ has
 $N(\tilde H)=t^{2}-\lvert\mathbf u\rvert^{2}$, so it is on the cone exactly at $t=\lvert\mathbf u\rvert$, the boundary of the positive cone; there the square drops from rank $2$ to rank $1$ and the
@@ -149,8 +149,8 @@ $P=\{\tilde Q\tilde Q^{*}\}$.
 
 Three descriptions agree.
 
-- **Image of the square.** By construction; under $\Phi$ the image is the set of matrices
-  $\Phi(\tilde Q)\Phi(\tilde Q)^{\dagger}$.
+- **Image of the square.** By construction; under $\mathsf{M}_2$ the image is the set of matrices
+  $\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q)^{\dagger}$.
 - **Positive elements.** Those matrices are exactly the positive semidefinite ones, so
   $P=\{\tilde H\in\mathbb{M}_+:\tilde H\geq0\}$.
 - **Forward cone.** A Hermitian element $\tilde H=te_0+i\mathbf u$ is positive semidefinite exactly when
@@ -167,13 +167,13 @@ $$
 
 ### The Cone as Effects and as Causal Order
 
-The same cone wears both readings. As the set of positive semidefinite Hermitian elements it is the set of
+The same cone wears both interpretations. As the set of positive semidefinite Hermitian elements it is the set of
 **effects**, and its trace-one slice is the state space (*POVMs and the Positive Cone in Biquaternionic
 Form*): a probability is a normalised effect, and the order $0\leq\tilde E\leq e_0$ is the order in which
 effects are compared. As the forward cone $t\geq\lvert\mathbf u\rvert$ of the interval form it is the
 **causal order**, with interior timelike, boundary lightlike and complement spacelike. That one cone is at
 once the order in which probabilities are measured and the order in which events are causally related is
-the cone's double reading: the positivity of the dagger and the causality of the interval are the same cone,
+the cone's double interpretation: the positivity of the dagger and the causality of the interval are the same cone,
 cut by the trace normalisation, and the framework does not carry them as two independent cones.
 
 ## No Ghosts, No Tachyons
@@ -185,7 +185,7 @@ positive definite on the **whole** algebra, not on a subspace of it. A theory bu
 $\lVert\cdot\rVert_E$ therefore inherits the positivity as a theorem and cannot lose it by choosing a
 Lagrangian of the wrong sign, because there is no sign to choose.
 
-**No tachyon in the state cone.** A tachyon, in the reading, is an element whose natural square is
+**No tachyon in the state cone.** A tachyon, in the interpretation, is an element whose natural square is
 spacelike, that is $\lvert t\rvert<\lvert\mathbf u\rvert$ on $\mathbb{M}_+$, which places it strictly
 outside the forward cone and its backward partner. The algebra's statement is that every sesquilinear
 square lies **in** the cone, so no square is spacelike, and that the spacelike elements lie outside the
@@ -195,11 +195,11 @@ places the spacelike region outside it.
 
 ## The Reading: Rank as a Mass Label
 
-**Proposed reading, labelled as such.** The rank of the sesquilinear square tracks the biquaternion norm,
+**Proposed interpretation, labelled as such.** The rank of the sesquilinear square tracks the biquaternion norm,
 and the norm carries the mass shell; the rank is therefore read as a **mass label**, rank two "massive"
 and rank one "massless". What is proved is the criterion above; what is proposed is the dictionary.
 
-The reading has one consequence that is algebraically clean. A rank-two positive semidefinite matrix is a
+The interpretation has one consequence that is algebraically clean. A rank-two positive semidefinite matrix is a
 sum of two rank-one positive semidefinite matrices, so a massive square can be written
 
 $$
@@ -209,33 +209,33 @@ $$
 
 a sum of two massless squares.
 
-**Proposed reading.** A massive state is a **bound pair of two massless constituents**, the two rank-one
+**Proposed interpretation.** A massive state is a **bound pair of two massless constituents**, the two rank-one
 terms of its own square.
 
-**What the reading does not claim.** It does not derive a mass spectrum, does not say which rank-one pairs
+**What the interpretation does not claim.** It does not derive a mass spectrum, does not say which rank-one pairs
 bind, and does not make the two terms particles of the spectrum. Above all, the decomposition is **not
 unique**: a rank-two positive semidefinite matrix has many pairs of rank-one summands and no canonical one,
-so the reading has no preferred two-constituent decomposition until a further principle selects one. That
-non-uniqueness is the reading's standing weakness.
+so the interpretation has no preferred two-constituent decomposition until a further principle selects one. That
+non-uniqueness is the interpretation's standing weakness.
 
 ### The Norm and the Rank Are One Object Read Twice
 
 The mass label and the count are not two algebraic facts. The norm $N$ enters through the **determinant** of
-the sesquilinear square, $\det\Phi(\tilde Q\tilde Q^{*})=\lvert N(\tilde Q)\rvert^{2}$, and the rank is the
+the sesquilinear square, $\det\mathsf{M}_2(\tilde Q\tilde Q^{*})=\lvert N(\tilde Q)\rvert^{2}$, and the rank is the
 **rank** of the same square; the trace and the determinant of one matrix supply both. The mass shell and the
 rank drop therefore cannot be varied independently, and reading one as a value and the other as a count is
 to read one square twice.
 
 ### Rank as a Count of Polarisations
 
-Under the mass reading the rank is not only a label but a **count**. A rank-two square is a sum of two
+Under the mass interpretation the rank is not only a label but a **count**. A rank-two square is a sum of two
 rank-one pieces, so a massive element carries two independent rank-one components and a massless element
 carries one. Read as a count of polarisation states, the massive type carries **two** and the massless type
 **one**, consistently with the two polarisations of a massive spin-one-half particle and the single
 polarisation of a massless one.
 
-**What the reading does not claim.** The count is a count of the two rank-one summands of the square, and
-those summands are not canonical, so the reading gives the number and not a pair of named states. It is the
+**What the interpretation does not claim.** The count is a count of the two rank-one summands of the square, and
+those summands are not canonical, so the interpretation gives the number and not a pair of named states. It is the
 same rank read once as a mass label and once as a count, and it adds a physical name and no new algebra; the
 spin content of the framework is owned by *Higher Spin from Tensor Products: Why the Biquaternion Algebra
 Admits Only Spin 0 and One-Half*, and the polarisation count is a reading offered here and not a derivation
@@ -257,12 +257,12 @@ from it.
 **Proved.** $\tilde Q\tilde Q^{*}$ is Hermitian and positive semidefinite, with
 $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\lVert\tilde Q\rVert_E^{2}>0$ off zero;
 $\mathrm{Tr}(\tilde Q\tilde Q^{*})=2\lVert\tilde Q\rVert_E^{2}$;
-$\det\Phi(\tilde Q\tilde Q^{*})=\lvert N(\tilde Q)\rvert^{2}$; the rank criterion
-$\mathrm{rank}\,\Phi(\tilde Q\tilde Q^{*})=\mathrm{rank}\,\Phi(\tilde Q)$, equal to $2$ off the cone and
+$\det\mathsf{M}_2(\tilde Q\tilde Q^{*})=\lvert N(\tilde Q)\rvert^{2}$; the rank criterion
+$\mathrm{rank}\,\mathsf{M}_2(\tilde Q\tilde Q^{*})=\mathrm{rank}\,\mathsf{M}_2(\tilde Q)$, equal to $2$ off the cone and
 $1$ on it; the three descriptions of the positive cone and the equivalence $t\geq\lvert\mathbf u\rvert$; the interior/boundary dictionary; the rank-two square as a sum of two rank-one squares. No
 element has negative sesquilinear norm.
 
-**Readings.** Rank as a mass label; the massive square as a bound pair of two massless constituents; the
+**Interpretations.** Rank as a mass label; the massive square as a bound pair of two massless constituents; the
 rank as a count of polarisations, two for the massive type and one for the massless; the norm and the rank
 as one object read twice; the positive cone as a causal order, with its interior timelike, its boundary
 lightlike and its complement spacelike; the same cone as the cone of effects and of causal order at once;
@@ -275,7 +275,7 @@ physical particle; that the cone-as-causal-order dictionary is forced by the alg
 
 ## Physical Readings
 
-The two squares read as the two ledgers: $\tilde Q\tilde Q^{*}$ and $\tilde Q^{*}\tilde Q$ have the same scalar part and differ in the vector part, so passing between the material and the informational ledger is a change of ledger and not of the number, which is the reading of *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*. Rank reads as mass and positivity as the state condition, so the article is where the framework's mass and its probability are shown to be two aspects of one dagger. Read on the clock, the dagger is the operation under which the central phase is conjugated, which is why a reversible evolution is unitary and a mass term is not.
+The two squares read as the two ledgers: $\tilde Q\tilde Q^{*}$ and $\tilde Q^{*}\tilde Q$ have the same scalar part and differ in the vector part, so passing between the material and the informational ledger is a change of ledger and not of the number, which is the interpretation of *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*. Rank reads as mass and positivity as the state condition, so the article is where the framework's mass and its probability are shown to be two aspects of one dagger. Read on the clock, the dagger is the operation under which the central phase is conjugated, which is why a reversible evolution is unitary and a mass term is not.
 
 ## Summary
 
@@ -288,7 +288,7 @@ the mass shells. The two invariants of the square are the two squares: its trace
 square, its determinant is the squared interval. The rank of the square is $2$ off the zero-divisor cone
 and $1$ on it, so the two kinds of nonzero element — massive and massless — are separated by an algebraic
 invariant, and the rank is read as a **mass label**, with the massive square a bound pair of two massless
-rank-one terms, a reading whose standing weakness is that the pair is not unique. Read as a **count** the
+rank-one terms, an interpretation whose standing weakness is that the pair is not unique. Read as a **count** the
 same rank gives two polarisations for the massive type and one for the massless, and the norm and the rank
 are one square read twice, its determinant and its rank; the two squares of one element are its two metrics,
 the positive probability metric of the dagger and the indefinite causal metric of the interval. The positive cone is
@@ -312,7 +312,7 @@ and *Causality and the Light Cone as an Information Barrier in Biquaternionic Fo
 | $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$ | the natural square; the interval |
 | $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ | the biquaternion norm |
 | $\lVert\tilde Q\rVert_E^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the Euclidean square; $\mathrm{Sc}$ of the sesquilinear square |
-| $\Phi$ | the $2\times2$ matrix model; $\det\Phi(\tilde Q)=N(\tilde Q)$ |
+| $\mathsf{M}_2$ | the $2\times2$ matrix model; $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ |
 | $\mathrm{Tr}=2\,\mathrm{Sc}$ | the trace convention |
 | $P=\{\tilde Q\tilde Q^{*}\}=\{\tilde H\in\mathbb{M}_+:\tilde H\geq0\}=\{te_0+i\mathbf u:t\geq\lvert\mathbf u\rvert\}$ | the positive cone |
 | $t\geq\lvert\mathbf u\rvert$ | the cone condition; interior positive definite, boundary massless |
@@ -333,7 +333,7 @@ and *Causality and the Light Cone as an Information Barrier in Biquaternionic Fo
 - Companion article *Observables, Gauge Generators and the Chirality of the Internal Action*, for the
   adjoints, the observables and the generators of this structure.
 - Mathematics article *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*
-  (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for $\det\Phi(\tilde Q)=N(\tilde Q)$.
+  (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$.
 - Mathematics article *The Four Pairings of the Biquaternion Algebra*
   (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four scalar forms.
 - Mathematics article *Indefinite Inner Product Spaces*

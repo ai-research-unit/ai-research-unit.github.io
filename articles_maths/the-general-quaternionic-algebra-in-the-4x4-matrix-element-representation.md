@@ -60,7 +60,7 @@ so the trace pairing of the regular matrices with the second factor transposed i
 **Theorem (the diagonal is the norm).** On the diagonal,
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q})\,\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}\bigr) = 2\,N(\tilde{Q}) = 2\det\Phi(\tilde{Q}) ,
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q})\,\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}\bigr) = 2\,N(\tilde{Q}) = 2\det\mathsf{M}_4(\tilde{Q}) ,
 $$
 
 so the diagonal of the pairing is twice the determinant of the element, the determinant of the regular matrix being its square.

@@ -12,7 +12,7 @@ complex scalar part and a complex vector part side by side, and it lies in **no 
 This article states it, computes the non-central diagonal that goes with it, and sets it against the plain
 symmetric sesquilinear product, which is central-valued and positive and which is the state row.
 
-The article owns the subspace reading of the symmetric half: where its values lie, where its diagonal
+The article owns the subspace interpretation of the symmetric half: where its values lie, where its diagonal
 lies, and the contrast that follows. It defers the remarkable subspaces themselves and their decompositions to
 *Relations Between Subspaces* and *Other Remarkable Subspaces*; the closure of the remarkable subspaces under the
 product to the mathematics article *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of
@@ -113,7 +113,7 @@ purely imaginary; in particular on the whole vector subspace, where $Q_0=0$.
 *Proof.* The centre is $\mathbb{C}e_0$, so the diagonal is central exactly when its vector part vanishes,
 and its $k$-th component is $-2\mathrm{Re}(Q_0\overline{Q_k})$.
 
-The criterion is the reason the naive reading of the witnesses fails, and the point deserves to be stated
+The criterion is the reason the naive interpretation of the witnesses fails, and the point deserves to be stated
 plainly. On the **real vector directions** the diagonal is central: at $e_1$ the form is
 $K(e_1,e_1)=-1$ and the mixed term vanishes, so
 
@@ -134,7 +134,7 @@ because there $K=0$ and $Q_0\overline{Q_1}=1$ is real and not purely imaginary, 
 $-2e_1$ survives. **That** is the value that leaves the centre, and it is the diagonal of the block that is
 not central.
 
-**The criterion read as a no-mixing condition.** The criterion of centrality has an immediate physical name, and the name is the point of this paragraph. The diagonal of an element is central exactly when the pairing of the element with itself returns a **pure scale** and no direction, and the criterion is therefore a **no-mixing condition**: it says that the element's own self-pairing mixes no grade. The reading is exact on the two named elements. On the vector directions — $e_1$, and $e_1+ie_2$ — the diagonal is central, $-e_0$ and $-2e_0$, so the self-pairing of those elements is a pure scale (the form there is still indefinite: $K(e_1,e_1)=-1$, $K(e_2,e_2)=-1$), which is why they witness the *indefiniteness* of the form and not its non-centrality. On $e_0+e_1$, the smallest element that is neither a pure scalar nor a pure vector, the diagonal is $-2e_1$, off the centre, and the self-pairing **mixes** the scalar grade into the vector grade: the pairing rotates its diagonal into a spatial direction. Read on a medium, a no-mixing pairing responds by a pure scale, and a non-central diagonal is the algebraic trace of a **birefringent** response, in which a direction is produced rather than merely scaled. The algebra is the criterion above; the no-mixing and birefringence names are this article's reading, and they are offered as such. The name is *not* the word isotropic: an isotropic element in the sense of a form is a null element, and the vector directions here have $K(e_k,e_k)=-1$, not $0$.
+**The criterion read as a no-mixing condition.** The criterion of centrality has an immediate physical name, and the name is the point of this paragraph. The diagonal of an element is central exactly when the pairing of the element with itself returns a **pure scale** and no direction, and the criterion is therefore a **no-mixing condition**: it says that the element's own self-pairing mixes no grade. The interpretation is exact on the two named elements. On the vector directions — $e_1$, and $e_1+ie_2$ — the diagonal is central, $-e_0$ and $-2e_0$, so the self-pairing of those elements is a pure scale (the form there is still indefinite: $K(e_1,e_1)=-1$, $K(e_2,e_2)=-1$), which is why they witness the *indefiniteness* of the form and not its non-centrality. On $e_0+e_1$, the smallest element that is neither a pure scalar nor a pure vector, the diagonal is $-2e_1$, off the centre, and the self-pairing **mixes** the scalar grade into the vector grade: the pairing rotates its diagonal into a spatial direction. Read on a medium, a no-mixing pairing responds by a pure scale, and a non-central diagonal is the algebraic trace of a **birefringent** response, in which a direction is produced rather than merely scaled. The algebra is the criterion above; the no-mixing and birefringence names are this article's interpretation, and they are offered as such. The name is *not* the word isotropic: an isotropic element in the sense of a form is a null element, and the vector directions here have $K(e_k,e_k)=-1$, not $0$.
 
 ## The Contrast with the Plain Sesquilinear Row
 
@@ -146,7 +146,7 @@ The contrast is one table, and it is the whole difference between a state row an
 | value | central, $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ | scalar part $K$, vector part the mixed term; in no subspace |
 | diagonal | $H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf{Q}\rvert^{2}$, positive off zero | $K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$, indefinite, not central in general |
 | diagonal subspace | the centre | the centre only when $Q_0\overline{Q_k}\in i\mathbb{R}$ for each $k$ |
-| reading | the probability form $H$; the state side | the indefinite pairing of the gauge side |
+| interpretation | the probability form $H$; the state side | the indefinite pairing of the gauge side |
 
 The plain symmetric part **compares two elements and returns a positive number**: its value is central
 precisely so that it can be read as a probability, and its diagonal is strictly positive off the origin.
@@ -176,18 +176,18 @@ defect of this article's product alone but of the whole fourth corner.
 
 **What the block is instead.** It is the **gauge** side of the frame: a pairing that the transformations of
 the gauge structure leave alone, carried by a product whose two halves are a symmetric pairing and a
-bracket. The reading is the framework's and is offered as such; the transformation theory is *The Gauge
+bracket. The interpretation is the framework's and is offered as such; the transformation theory is *The Gauge
 Principle in Biquaternionic Form* and the companion gauge articles, and the antisymmetric half of the
 products of the same row is *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge
 Product*.
 
 ### Named Readings of the Value
 
-Three further readings of the same theorem are recorded here, each under a name of its own and each labelled a reading rather than a theorem; the theorem they name is the body's.
+Three further readings of the same theorem are recorded here, each under a name of its own and each labelled an interpretation rather than a theorem; the theorem they name is the body's.
 
 - **Sector correlation.** That the value leaves all remarkable subspaces is read positively as a **correlation between sectors**: an element outside every remarkable subspace is one that no single sector can hold, so the symmetric gauge product couples the sectors rather than staying inside one. The name is the positive face of the theorem, and its boundary is the article's: the algebra supplies the escape, and it supplies no measure of the correlation.
-- **Mixing generator.** The element $e_0+e_1$ is the **minimal mixing element**, and its non-central diagonal $-2e_1$ witnesses the mixing; the centrality criterion $Q_0\overline{Q_k}\in i\mathbb{R}$ is the no-mixing condition. The reading is the value-side counterpart of the sector-mixing term of *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*, named here because it is the element that carries it.
-- **No state by locality.** The absence of the value from every subspace is read as an obstruction of a **local** kind to the state reading: a state is localised in a sector — the informational sector — and a value that is in no sector cannot be localised there, so it is not a state. The name keeps the negative reading attached to a locality condition on the value rather than to a defect of the product, and it is the sharpest form of the article's *not a state* conclusion.
+- **Mixing generator.** The element $e_0+e_1$ is the **minimal mixing element**, and its non-central diagonal $-2e_1$ witnesses the mixing; the centrality criterion $Q_0\overline{Q_k}\in i\mathbb{R}$ is the no-mixing condition. The interpretation is the value-side counterpart of the sector-mixing term of *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*, named here because it is the element that carries it.
+- **No state by locality.** The absence of the value from every subspace is read as an obstruction of a **local** kind to the state interpretation: a state is localised in a sector — the informational sector — and a value that is in no sector cannot be localised there, so it is not a state. The name keeps the negative interpretation attached to a locality condition on the value rather than to a defect of the product, and it is the sharpest form of the article's *not a state* conclusion.
 
 ## The Limits
 
@@ -218,7 +218,7 @@ positive off the origin.
 Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix and the
 Restrictions of the Form*.
 
-**Reading.** That the gauge pairing separates no state, and that the two symmetric sesquilinear products do
+**Interpretation.** That the gauge pairing separates no state, and that the two symmetric sesquilinear products do
 not divide the state side between them; and, on the criterion of centrality, that the criterion is a
 **no-mixing condition**, so that the self-pairing of the vector directions returns a pure scale while the
 element $e_0+e_1$ is the minimal **mixing** element, its non-central diagonal the algebraic trace of a
@@ -231,7 +231,7 @@ reconstructed from the block.
 
 ## Physical Readings
 
-The values lying in no subspace read as the framework's criterion for what can be an observable: an object whose diagonal is not central cannot be counted, so a symmetric gauge product is a structure and not a quantity. The article's examples are the reading in one line: the minimal mixing element $\tilde Q = e_0 + e_1$ has the non-central diagonal $-2e_1$, while a pure vector direction has a central one, so the slightest mixing is enough to leave the class of what can be measured. Read on the split, the criterion is the same one that separates the gauge side from the state side.
+The values lying in no subspace read as the framework's criterion for what can be an observable: an object whose diagonal is not central cannot be counted, so a symmetric gauge product is a structure and not a quantity. The article's examples are the interpretation in one line: the minimal mixing element $\tilde Q = e_0 + e_1$ has the non-central diagonal $-2e_1$, while a pure vector direction has a central one, so the slightest mixing is enough to leave the class of what can be measured. Read on the split, the criterion is the same one that separates the gauge side from the state side.
 
 ## Summary
 
@@ -245,7 +245,7 @@ witness is $e_0+e_1$, whose diagonal is $-2e_1$. The **contrast with the plain s
 product**, which is central-valued with a strictly positive diagonal $H(\tilde Q,\tilde Q)$, is what makes
 the block's product **not a state**: it has no positivity, no fixed subspace, no unit and no Jordan triple,
 and the standard reconstruction of a state space therefore does not reach it. It is instead the
-**invariant indefinite pairing of the gauge side** of the frame, and the reading is the framework's, with
+**invariant indefinite pairing of the gauge side** of the frame, and the interpretation is the framework's, with
 the plain row keeping the state cone. The caution is that a value in no subspace is a **datum about the
 algebra** and not a claim that the object is unphysical, and that an indefinite pairing is a metric and
 never a norm.

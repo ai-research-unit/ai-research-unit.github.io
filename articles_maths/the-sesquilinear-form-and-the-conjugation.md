@@ -208,7 +208,7 @@ Such a form is Hermitian exactly when $c \in K^{\varsigma}$, skew-Hermitian exac
 
 ## The Collapse at the Trivial Involution
 
-### The Bilinear Reading
+### The Bilinear Interpretation
 
 **Theorem (the collapse).** Let $\varsigma = \mathrm{id}$ and suppose $2$ invertible. Then a compatible form is Hermitian exactly when it is symmetric, $h(y,x) = h(x,y)$; it is the bilinear form $h(x,y) = \varphi(yx)$ of the functional $\varphi$; and if $* = \mathrm{id}$ then the alternating compatible forms are zero and the Hermitian compatible forms are the symmetric bilinear forms $h(x,y) = \varphi(yx)$, which are the forms $h(x,y) = \varphi(xy)$ for a functional $\varphi$ central on products. The layer is then the bilinear degree-two layer: its objects are those of *Algebras with a degree-2 form*, its algebraic theory is *Bilinear Forms*, and the equivalence is the collapse of the entry, §*The Collapse at the Trivial Involution*.
 

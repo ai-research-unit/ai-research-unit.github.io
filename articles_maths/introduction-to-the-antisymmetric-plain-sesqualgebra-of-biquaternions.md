@@ -172,7 +172,7 @@ the symmetric half being central-valued and the antisymmetric half pure-vector. 
 
 and it is the plain-sesqualgebra sibling of three other antisymmetrisations: $\mathrm{APA}=\mathbf{P}\times\mathbf{Q}$, which is the one Lie product of the twelve, $\mathrm{AQA}=P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$, which fails on the associator, and $\mathrm{AQS}=\mathbf{P}\times\overline{\mathbf{Q}}$, which fails as the block does. On the **real** part of the space the block is its own operation: it is $\tilde P\diamond\tilde Q=-P_0\mathbf{Q}+Q_0\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$, which coincides with no other of the twelve, while on the real **vectors** alone it is the cross product up to sign, $\mathbf{P}\diamond\mathbf{Q}=-\mathbf{P}\times\mathbf{Q}$. The ten operations of the real part, and the two coincidences $\mathrm{APA}=\mathrm{AQS}$ and $\mathrm{SQA}=\mathrm{SPS}$ that reduce the twelve to ten there, are tabulated in *The 12 Products of the Biquaternion Complex Space*; the block is not one of the coincidences.
 
-## The Reading in the Physics Band
+## The Interpretation in the Physics Band
 
 The block is the **phase** of the pairing. Its diagonal does not vanish: it is the vector part of the square, $\tilde Q\diamond\tilde Q = \mathrm{Vect}(\tilde Q\tilde Q^{*})$, and it is purely imaginary, so its direction is a real axis. Its law is conjugate-alternation, $\tilde P\diamond\tilde Q = -\overline{\tilde Q\diamond\tilde P}$, so an exchange of the two arguments both reverses and conjugates the value. Its Jacobi identity fails, so this phase structure is not a Lie algebra.
 

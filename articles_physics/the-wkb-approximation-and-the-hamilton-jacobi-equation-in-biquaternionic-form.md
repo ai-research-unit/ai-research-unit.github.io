@@ -12,7 +12,7 @@ $$
 
 which is the same biquaternion norm whose vanishing defines the zero divisor cone and whose value on $\mathbb{M}_+$ measures the purity of a state. The semiclassical limit is thus the regime in which the dynamics is carried by a real vector of the algebra, the phase gradient, and in which the biquaternion norm of that vector is the energy. This article derives that statement, its first correction, and its consequences.
 
-The article is organised as follows. The next section sets up the amplitude–phase decomposition and derives the two real equations into which the Schrödinger equation separates. The third section treats the Hamilton–Jacobi equation, its biquaternion-norm reading, and the trajectories and rays it defines. The fourth treats the transport equation, the WKB amplitude, and the van Vleck determinant. The fifth obtains the quantisation condition, the Maslov phase, and the tunnelling law. The sixth gives the exact rewriting with the quantum potential. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
+The article is organised as follows. The next section sets up the amplitude–phase decomposition and derives the two real equations into which the Schrödinger equation separates. The third section treats the Hamilton–Jacobi equation, its biquaternion-norm interpretation, and the trajectories and rays it defines. The fourth treats the transport equation, the WKB amplitude, and the van Vleck determinant. The fifth obtains the quantisation condition, the Maslov phase, and the tunnelling law. The sixth gives the exact rewriting with the quantum potential. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
 The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The Hamiltonian for a scalar potential is $\tilde H = [-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf x)]e_0$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $e_j^2=-e_0$.
 
@@ -121,7 +121,7 @@ $$
 \dot{\mathbf p} = -\nabla V .
 $$
 
-The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $\dot S = \mathbf p\cdot\dot{\mathbf x} = |\mathbf p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion reading the ray direction per point is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{C}_{\mathbb{B}}$.
+The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $\dot S = \mathbf p\cdot\dot{\mathbf x} = |\mathbf p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{C}_{\mathbb{B}}$.
 
 ### The free and separable cases
 
@@ -147,7 +147,7 @@ $$
 S_k(x_k) = \pm\int^{x_k}\sqrt{2m\left(E_k - V_k(x_k')\right)}\;dx_k' .
 $$
 
-The signs are the two directions of motion, and the biquaternion-norm reading applies to each term: the square of the phase derivative is the biquaternion norm of the one-dimensional momentum. The turning points $E_k = V_k$ are where the radicand vanishes and the two branches meet.
+The signs are the two directions of motion, and the biquaternion-norm interpretation applies to each term: the square of the phase derivative is the biquaternion norm of the one-dimensional momentum. The turning points $E_k = V_k$ are where the radicand vanishes and the two branches meet.
 
 ## The Amplitude and the Transport Equation
 
@@ -201,7 +201,7 @@ The module element $\chi$ is untouched, as for every central Hamiltonian. The fi
 
 ### Connection formulas and the Maslov index
 
-The WKB solutions fail at the turning points, where $p(x)\to0$ and the amplitude diverges. The repair is the standard one: near a simple turning point the equation is approximated by Airy's equation, and the Airy functions provide the connection between the oscillatory solution on the allowed side and the exponential solution on the forbidden side. In the biquaternion reading nothing changes in the analysis, because the equation being approximated is the scalar equation for the envelope; what the framework contributes is the location of the phase in the centre and the identity of the imaginary unit under the square roots that the connection formulas contain.
+The WKB solutions fail at the turning points, where $p(x)\to0$ and the amplitude diverges. The repair is the standard one: near a simple turning point the equation is approximated by Airy's equation, and the Airy functions provide the connection between the oscillatory solution on the allowed side and the exponential solution on the forbidden side. In the biquaternion interpretation nothing changes in the analysis, because the equation being approximated is the scalar equation for the envelope; what the framework contributes is the location of the phase in the centre and the identity of the imaginary unit under the square roots that the connection formulas contain.
 
 Across a soft turning point the oscillatory solution acquires a phase $-\pi/2$ relative to the naive WKB phase; across a hard wall (a Dirichlet boundary) it acquires $-\pi$, twice as much, which is the statement that the wall carries Maslov index two where a soft turning point carries one. These are the **Maslov phases**. In the framework they are operations on the central $i$: the connection formulas contain $\sqrt{2\pi i\hbar}$ and the factor $i^{-1/2}$, and the square root is taken inside the centre $\mathbb{C}_{\mathbb{B}}$, which is a copy of $\mathbb{C}$. This is the same observation that the path-integral article records for the semiclassical kernel, and it is the reason the Maslov phases are unambiguous here: the central $i$ is supplied by the algebra and does not require a chosen complex structure.
 
@@ -271,7 +271,7 @@ The reality of $A$ is not an assumption but a choice of gauge. Any state can be 
 **What remains open.**
 
 - **Uniformity of the approximation.** The WKB expansion breaks down at turning points and caustics and is repaired by connection formulas and Airy functions; the algebra does not supply a uniform approximation, and the standard methods are used unchanged.
-- **The complex action.** For tunnelling and for the classically forbidden region, $S$ becomes complex. The biquaternion reading of the phase then involves a complex scalar exponent, and whether there is an algebraic reason to prefer one branch of the complex action is not addressed here.
+- **The complex action.** For tunnelling and for the classically forbidden region, $S$ becomes complex. The biquaternion interpretation of the phase then involves a complex scalar exponent, and whether there is an algebraic reason to prefer one branch of the complex action is not addressed here.
 - **The extension to fields.** The WKB method for field theory, where the phase is a functional and the transport equation becomes a functional equation, is outside the finite-dimensional algebra for the same reason that the path-integral measure is.
 - **Empirical content.** As elsewhere, whether the semiclassical reformulation yields any prediction distinguishing it from scalar WKB is open.
 
@@ -281,7 +281,7 @@ The reality of $A$ is not an assumption but a choice of gauge. Any state can be 
 
 **2. Can the Maslov index be read from the algebra?** The $\pm\tfrac{\pi}{2}$ and $\pm\tfrac{\pi}{4}$ phases are the phases of the central square roots that appear in the Airy connection formulas. Whether their counting is an algebraic invariant of the ray congruence, or only an analytic one, is open.
 
-**3. What is the biquaternion status of the quantum potential?** It is a central real scalar and is the first correction to the Hamilton–Jacobi equation. Whether the framework gives it a sector reading, or a relation to the biquaternion norm at the next order, is not known.
+**3. What is the biquaternion status of the quantum potential?** It is a central real scalar and is the first correction to the Hamilton–Jacobi equation. Whether the framework gives it a sector interpretation, or a relation to the biquaternion norm at the next order, is not known.
 
 **4. Empirical content.** Nothing in the semiclassical reformulation distinguishes it from scalar WKB.
 
@@ -307,7 +307,7 @@ the kinetic energy is the biquaternion norm of the phase gradient. Its character
 
 The Bohr–Sommerfeld condition $\oint p\,dx = 2\pi\hbar(n+\tfrac12)$, with the Maslov offsets from the Airy connection formulas, was verified to be exact for the harmonic oscillator and the Morse potential (relative errors below $5\times10^{-9}$ and $2\times10^{-9}$ respectively) and to be approximate for the anharmonic well $\tfrac12x^2+0.1x^4$, where it underestimates the exact levels by $4.6\%$, $0.88\%$, $0.37\%$, and $0.21\%$ for $n=0,\dots,3$ (exact values from finite-difference diagonalisation). The WKB tunnelling exponent $-\frac{2}{\hbar}\int\sqrt{2m(V-E)}\,dx$ matches the closed parabolic-barrier value $\pi(V_0-E)/\hbar\omega$ to $10^{-9}$ and reproduces the leading exponential of Kemble's exact formula.
 
-The whole semiclassical expansion lives in the **centre** of the algebra: the phase is a central unitary element, the amplitude and the quantum potential are central real scalars, the Maslov phases are operations on the central $i$, and the module factor is a constant. The framework supplies the biquaternion-norm reading of the Hamilton–Jacobi equation, the sector location of the phase and the amplitude, and the identity of the transport amplitude with the path-integral fluctuation determinant; it does not supply a uniform approximation at caustics, the branch of the complex action, or any prediction distinguishing the reformulation from scalar WKB.
+The whole semiclassical expansion lives in the **centre** of the algebra: the phase is a central unitary element, the amplitude and the quantum potential are central real scalars, the Maslov phases are operations on the central $i$, and the module factor is a constant. The framework supplies the biquaternion-norm interpretation of the Hamilton–Jacobi equation, the sector location of the phase and the amplitude, and the identity of the transport amplitude with the path-integral fluctuation determinant; it does not supply a uniform approximation at caustics, the branch of the complex action, or any prediction distinguishing the reformulation from scalar WKB.
 
 ## Summary of Notation
 

@@ -149,7 +149,7 @@ $$
 
 the two parts lying in the two sectors of the Hermitian decomposition, as the general statement requires.
 
-## The Four Readings Compared
+## The Four Interpretations Compared
 
 The four distinguished subspaces are read in four ways, and the comparison is the content of this section.
 

@@ -6,15 +6,15 @@ Physically this is the arithmetic of a frame change written in the coordinates o
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and with a central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, written in the four-vector realization as the quadruple $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ of *The Four-Vector Element Representation of Biquaternions*, with the physical dictionary of that article and of *Conventions in the Biquaternion Universe*.
 
-That article answers the question *what is* $\tilde{Q}$: it is a quadruple of complex coefficients, with a product rule, four conjugations, remarkable subspaces, a biquaternion norm and a reading as a material four-vector plus an informational four-vector. This article answers the question *what does* $\tilde{Q}$ *do*: the element is used as an operator through the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations*,
+That article answers the question *what is* $\tilde{Q}$: it is a quadruple of complex coefficients, with a product rule, four conjugations, remarkable subspaces, a biquaternion norm and an interpretation as a material four-vector plus an informational four-vector. This article answers the question *what does* $\tilde{Q}$ *do*: the element is used as an operator through the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations*,
 
 $$
 \operatorname{H}_{\tilde{Q}}(\tilde U) = \tilde{Q}\,\tilde U\,\tilde{Q}^{*},
 $$
 
-and the whole article is the coefficient reading of that one formula. Everything is computed from the product rule of the four-vector realization and from the coordinate form of the dagger; the operator's matrix, its determinant and its trace belong to other coordinate systems and are not repeated here, and neither is its reading on the matrix algebra.
+and the whole article is the coefficient interpretation of that one formula. Everything is computed from the product rule of the four-vector realization and from the coordinate form of the dagger; the operator's matrix, its determinant and its trace belong to other coordinate systems and are not repeated here, and neither is its interpretation on the matrix algebra.
 
-The article owns the two-step component rule, the image of the basis elements, the reading of the operator on the scalar and the vector part, the coordinate form of the two regimes, and the worked collapse of a null operator on the basis. The purpose of that material is the one the component realization always serves in this corpus: it turns a structural statement into arithmetic that can be checked on a chosen element.
+The article owns the two-step component rule, the image of the basis elements, the interpretation of the operator on the scalar and the vector part, the coordinate form of the two regimes, and the worked collapse of a null operator on the basis. The purpose of that material is the one the component realization always serves in this corpus: it turns a structural statement into arithmetic that can be checked on a chosen element.
 
 **Conventions.** The product of two elements with four-vectors $A^\mu$ and $B^\mu$ has components
 
@@ -81,7 +81,7 @@ $$
 \bigl(\tilde{Q}\tilde{Q}^{*}\bigr)^i = \overline{Q^0}Q^i - Q^0\overline{Q^i} - (\mathbf{Q}\times\overline{\mathbf{Q}})^i .
 $$
 
-The scalar component is the sum of the squared moduli of the four coefficients, a non-negative real that vanishes only for $\tilde{Q} = 0$; it is the value at the operand of the positive Hermitian form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*}) = \langle\tilde{Q},\tilde{Q}\rangle_{*}$. That form and the biquaternion norm are the two quadratic forms of the framework: the norm $\sum_\mu (Q^\mu)^2$ is complex and indefinite, and it is the interval of the Lorentzian reading, while $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*}) = \langle\tilde{Q},\tilde{Q}\rangle_{*}$ is real and positive definite, and it is the Euclidean reading the informational sector carries. The vector components of the image are purely imaginary, as the four-vector table of the remarkable subspaces requires of a Hermitian element: the image of the identity is Hermitian for every $\tilde{Q}$, and it is central, hence a multiple of $e_0$, exactly when the vector components vanish — that is, exactly when the operand is a rotation up to a central phase.
+The scalar component is the sum of the squared moduli of the four coefficients, a non-negative real that vanishes only for $\tilde{Q} = 0$; it is the value at the operand of the positive Hermitian form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*}) = \langle\tilde{Q},\tilde{Q}\rangle_{*}$. That form and the biquaternion norm are the two quadratic forms of the framework: the norm $\sum_\mu (Q^\mu)^2$ is complex and indefinite, and it is the interval of the Lorentzian interpretation, while $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*}) = \langle\tilde{Q},\tilde{Q}\rangle_{*}$ is real and positive definite, and it is the Euclidean interpretation the informational sector carries. The vector components of the image are purely imaginary, as the four-vector table of the remarkable subspaces requires of a Hermitian element: the image of the identity is Hermitian for every $\tilde{Q}$, and it is central, hence a multiple of $e_0$, exactly when the vector components vanish — that is, exactly when the operand is a rotation up to a central phase.
 
 **Proposition (the image of the vector basis).** For $k = 1,2,3$,
 
@@ -194,7 +194,7 @@ which has a nonzero vector component: the centre is not preserved, and the opera
 
 ## Physical Readings
 
-The operator reads as a change of frame written on coefficients: the two-step rule is the sandwich in components, and its reading is a physical arithmetic rather than a state. Read on the monoid, this operator is the same map the abstract article calls the left–right composition, so the article is where a process becomes computable (*The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*). Read on the clock, the operator acts on the ledger and its unit-norm slice is what preserves the central phase.
+The operator reads as a change of frame written on coefficients: the two-step rule is the sandwich in components, and its interpretation is a physical arithmetic rather than a state. Read on the monoid, this operator is the same map the abstract article calls the left–right composition, so the article is where a process becomes computable (*The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*). Read on the clock, the operator acts on the ledger and its unit-norm slice is what preserves the central phase.
 
 ## Summary
 

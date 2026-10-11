@@ -13,7 +13,7 @@ The article develops the following.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $t_2 = (t_1+t_3)/2$, and the distance is $L = c(t_3-t_1)/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
 - **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta t = \gamma u\,\Delta x'/c^2$.
-- **A transported clock runs slow.** The reading of a clock carried along a worldline is the proper time of that worldline, $\Delta\tau = \int\sqrt{1-\mathbf{v}^2/c^2}\,dt \le t_B-t_A$, so a clock carried away and back reads less than one that stayed, and the inertial worldline between two events maximizes the proper time.
+- **A transported clock runs slow.** The interpretation of a clock carried along a worldline is the proper time of that worldline, $\Delta\tau = \int\sqrt{1-\mathbf{v}^2/c^2}\,dt \le t_B-t_A$, so a clock carried away and back reads less than one that stayed, and the inertial worldline between two events maximizes the proper time.
 - **Synchronisation is not transitive on a rotating platform.** The Sagnac effect makes the round trip directional, $\Delta t \simeq 4\boldsymbol{\Omega}\cdot\mathbf{A}/c^2$, so synchronising around a closed loop in the two directions gives two different results.
 
 The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
@@ -107,7 +107,7 @@ d\tau = \sqrt{1 - \frac{\mathbf{v}^2}{c^2}}\;dt = \frac{dt}{\gamma},
 \gamma = \left(1-\frac{\mathbf{v}^2}{c^2}\right)^{-1/2},
 $$
 
-which is the standard time-dilation relation. The reading of the clock between two events on the worldline is the integral
+which is the standard time-dilation relation. The interpretation of the clock between two events on the worldline is the integral
 
 $$
 \Delta\tau = \int_{A}^{B}\frac{\sqrt{-\,N(d\tilde{Q})}}{c}
@@ -132,7 +132,7 @@ $$
 N(\tilde{U}) = \gamma^2\left((ic)^2 + \mathbf{v}^2\right) = \gamma^2\left(-c^2+v^2\right) = -c^2 .
 $$
 
-Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{U} = ic\,e_0$; a clock moving with velocity $\mathbf{v}$ has the four-velocity above. The two are related by the boost rotor, and the relation between their readings is the content of the twins' effect below.
+Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{U} = ic\,e_0$; a clock moving with velocity $\mathbf{v}$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.
 
 ## The Radar Method and Einstein Synchronisation
 
@@ -178,7 +178,7 @@ $$
 \frac{L}{c_+} + \frac{L}{c_-} = \frac{2L\varepsilon}{c} + \frac{2L(1-\varepsilon)}{c} = \frac{2L}{c},
 $$
 
-independent of $\varepsilon$. The one-way speed of light is therefore conventional, and the convention is fixed by the synchronisation; the two-way speed is not conventional and equals $c$. The information-theoretic reading is that an exchange of signals determines only the round-trip data, and a convention is needed to convert those data into a statement about distant simultaneity.
+independent of $\varepsilon$. The one-way speed of light is therefore conventional, and the convention is fixed by the synchronisation; the two-way speed is not conventional and equals $c$. The information-theoretic interpretation is that an exchange of signals determines only the round-trip data, and a convention is needed to convert those data into a statement about distant simultaneity.
 
 ### Two Frames, Two Conventions
 
@@ -331,7 +331,7 @@ The conventions and the results taken over from the relativity series are those 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric at its three levels.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-vector, the interval and the proper-time parametrization.
-- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector and its distinct informational reading.
+- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector and its distinct informational interpretation.
 - Companion article *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*, for the causal order, the relative-velocity bound and the cone as the characteristic cone of the wave operator.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the zero-divisor criterion and the idempotent form of the null displacements.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and the transformation of the scalar component.

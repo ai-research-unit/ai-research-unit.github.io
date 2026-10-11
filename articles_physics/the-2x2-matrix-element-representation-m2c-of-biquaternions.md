@@ -112,7 +112,7 @@ $$
 
 which is exactly the image of $e_3$. So the assignment asserted above passes the check and the alternative fails it. Both statements were verified on the explicit matrices.
 
-The physical reading of the sign is the one recorded in the remark above. The Hermitian quaternion units $ie_k$ are Hermitian elements, and their images $\mathsf{M}_2(ie_k) = i\,\mathsf{M}_2(e_k)$ are the Hermitian matrices; the imaginary quaternion units themselves are not, since $\mathsf{M}_2(e_k)^\dagger = -\mathsf{M}_2(e_k)$ in the three vector cases. The assignment is thus the one under which the Hermitian elements of the algebra become the Hermitian matrices, and that is what makes it an algebra of observables. It is why the sign is a consequence of the algebra rather than a convention that could have gone either way.
+The physical interpretation of the sign is the one recorded in the remark above. The Hermitian quaternion units $ie_k$ are Hermitian elements, and their images $\mathsf{M}_2(ie_k) = i\,\mathsf{M}_2(e_k)$ are the Hermitian matrices; the imaginary quaternion units themselves are not, since $\mathsf{M}_2(e_k)^\dagger = -\mathsf{M}_2(e_k)$ in the three vector cases. The assignment is thus the one under which the Hermitian elements of the algebra become the Hermitian matrices, and that is what makes it an algebra of observables. It is why the sign is a consequence of the algebra rather than a convention that could have gone either way.
 
 ## Trace, Determinant and the Biquaternion Norm
 
@@ -204,7 +204,7 @@ $$
 = \begin{pmatrix} ct' + ict & 0 \\ 0 & ct' + ict \end{pmatrix},
 $$
 
-the scalar matrix reached from the complex coefficient through its two real parameters to the two physical times. The one subspace with no vector part: $Q_0e_0$ is Hermitian exactly when $Q_0$ is real and anti-Hermitian exactly when $Q_0$ is purely imaginary. Its two complex coefficients reduce to the two real parameters $q_0 = ct'$ and $q'_0 = ct$, so its physical reading is the two temporal directions together,
+the scalar matrix reached from the complex coefficient through its two real parameters to the two physical times. The one subspace with no vector part: $Q_0e_0$ is Hermitian exactly when $Q_0$ is real and anti-Hermitian exactly when $Q_0$ is purely imaginary. Its two complex coefficients reduce to the two real parameters $q_0 = ct'$ and $q'_0 = ct$, so its physical interpretation is the two temporal directions together,
 
 $$
 \tilde{Q} = q_0e_0 + q'_0(ie_0) = ct'\,e_0 + ict\,e_0 ,
@@ -496,7 +496,7 @@ The isomorphism reads as the dictionary of the framework: the trace is the scala
 
 The determinant is read as a **volume**: $\det \mathsf{M}_2(\tilde{Q})=N(\tilde{Q})$ is the biquaternion norm, so the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$, read as the **volume-preserving** group, and a general element is a four-volume element its determinant measures. The Lorentz group is therefore the volume-preserving group of the representation, which is the matrix form of the statement that a Lorentz transformation preserves the interval.
 
-Read as a **phase fibre**, the unit spinors of the representation are the three-sphere over the Bloch sphere, and the $U(1)$ that fixes a state's ray is the central phase, so the phase of the framework is a fibre over the state space and its holonomy is the geometric phase. Boundary: the bundle, the invariant and the phase are owned by *The Hopf Fibration and the Biquaternion Gauge Bundle* and by *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*; the reading records the smallest matrix image of the fibre and adds no topology.
+Read as a **phase fibre**, the unit spinors of the representation are the three-sphere over the Bloch sphere, and the $U(1)$ that fixes a state's ray is the central phase, so the phase of the framework is a fibre over the state space and its holonomy is the geometric phase. Boundary: the bundle, the invariant and the phase are owned by *The Hopf Fibration and the Biquaternion Gauge Bundle* and by *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*; the interpretation records the smallest matrix image of the fibre and adds no topology.
 
 ## Summary
 

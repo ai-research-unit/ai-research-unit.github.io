@@ -6,7 +6,7 @@
 The sesquilinear sandwich $S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\star\tilde X\star\tilde Q=\tilde P\tilde X^{*}\tilde Q^{*}$ of *The Sesquilinear Sandwich on the Biquaternions* is a conjugate-linear operator, and the Hermitian form
 
 $$
-\varphi(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde X\tilde Y^{*})=\sum_\mu X_\mu\overline{Y_\mu}=\tfrac12\,\mathrm{tr}\bigl(\Phi(\tilde X)\Phi(\tilde Y)^{\dagger}\bigr)
+\varphi(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde X\tilde Y^{*})=\sum_\mu X_\mu\overline{Y_\mu}=\tfrac12\,\mathrm{tr}\bigl(\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde Y)^{\dagger}\bigr)
 $$
 
 of *Norm and Invertibility in the General Plain Algebra* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde P,\tilde Q}^{\dagger}$ characterised by
@@ -43,7 +43,7 @@ with the scalar part $\mathrm{Sc}$ of *Introduction to the General Plain Sesqual
 
 **Proof.** Taking $\tilde Y=e_\mu$ gives $\varphi(\tilde X,e_\mu)=X_\mu$, so the vanishing for every $\mu$ gives the vanishing of $\tilde X$; the other argument is the sesqui-symmetry. Uniqueness of the adjoint is the standard consequence of nondegeneracy.
 
-**Remark.** The form is the pairing that the model renders as the trace pairing of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*, $\varphi(\tilde X,\tilde Y)=\tfrac12\mathrm{tr}(\Phi(\tilde X)\Phi(\tilde Y)^{\dagger})$, and it is the form with respect to which the involution is the Hermitian conjugation. Its scalar part is the real part of the symmetrised product, by *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions*.
+**Remark.** The form is the pairing that the model renders as the trace pairing of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*, $\varphi(\tilde X,\tilde Y)=\tfrac12\mathrm{tr}(\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde Y)^{\dagger})$, and it is the form with respect to which the involution is the Hermitian conjugation. Its scalar part is the real part of the symmetrised product, by *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions*.
 
 ### The Twisted Adjoint Rule
 
@@ -157,9 +157,9 @@ is self-adjoint for every $\tilde Z$.
 
 **Remark.** The self-adjointness of the quadratic representation is the operator form of the Hermitian symmetry $\{x,y,z\}^{*}=\{z^{*},y^{*},x^{*}\}$ of the ternary product: the symmetry exchanges the two outer slots, and the adjoint exchanges the two parameters, so the two exchanges are the same statement. The adjoint of the ternary product with arbitrary parameters is *The Adjoint of the Ternary Product*, where the same identity is developed for the general algebraic $J^{*}$-triple.
 
-## The Matrix Model Reading
+## The Matrix Model Interpretation
 
-**Proposition.** In the model of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model* the sandwich is $S_{P,Q}(X)=PX^{\dagger}Q^{\dagger}$ and the form is $\varphi(X,Y)=\tfrac12\mathrm{tr}(XY^{\dagger})$, with $P=\Phi(\tilde P)$ and $Q=\Phi(\tilde Q)$ the matrices of the two parameters; the adjoint of the sandwich is
+**Proposition.** In the model of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model* the sandwich is $S_{P,Q}(X)=PX^{\dagger}Q^{\dagger}$ and the form is $\varphi(X,Y)=\tfrac12\mathrm{tr}(XY^{\dagger})$, with $P=\mathsf{M}_2(\tilde P)$ and $Q=\mathsf{M}_2(\tilde Q)$ the matrices of the two parameters; the adjoint of the sandwich is
 
 $$
 S_{P,Q}^{\dagger}(X)=Q^{\dagger}X^{\dagger}P ,
@@ -167,7 +167,7 @@ $$
 
 which is the sandwich of the adjoint parameters, the two matrices exchanged and each read with the Hermitian transpose.
 
-**Proof.** In the model the involution is the Hermitian transpose, so $\Phi(S_{\tilde Q^{*},\tilde P^{*}}(\tilde X))=\Phi(\tilde Q^{*})\Phi(\tilde X)^{\dagger}\Phi(\tilde P^{*})^{\dagger}=Q^{\dagger}X^{\dagger}(P^{\dagger})^{\dagger}=Q^{\dagger}X^{\dagger}P$, which is the display; the trace form is the standard form of the matrix algebra, for which the adjoint of $X\mapsto PX^{\dagger}Q^{\dagger}$ is $X\mapsto Q^{\dagger}X^{\dagger}P$ by the theorem.
+**Proof.** In the model the involution is the Hermitian transpose, so $\Phi(S_{\tilde Q^{*},\tilde P^{*}}(\tilde X))=\mathsf{M}_2(\tilde Q^{*})\mathsf{M}_2(\tilde X)^{\dagger}\mathsf{M}_2(\tilde P^{*})^{\dagger}=Q^{\dagger}X^{\dagger}(P^{\dagger})^{\dagger}=Q^{\dagger}X^{\dagger}P$, which is the display; the trace form is the standard form of the matrix algebra, for which the adjoint of $X\mapsto PX^{\dagger}Q^{\dagger}$ is $X\mapsto Q^{\dagger}X^{\dagger}P$ by the theorem.
 
 **Remark.** The model makes the adjoint an explicit operation on the two outer factors: the adjoint of the sandwich with the matrices $P$ and $Q$ is the sandwich with the two matrices exchanged and Hermitian-transposed, that is the sandwich of the matrices of the adjoint elements $\tilde Q^{*}$ and $\tilde P^{*}$. This is the matrix form of the exchange of the two outer slots of the ternary product, and it is the same exchange that the identity of §*The Exchange Identity* performs on the parameters.
 

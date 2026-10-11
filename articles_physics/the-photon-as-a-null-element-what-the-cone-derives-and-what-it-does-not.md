@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The photon is the massless quantum of the electromagnetic field, and "massless" has a precise algebraic reading in the biquaternion framework: the four-momentum of a photon is a **null element**, an element of the material sector whose biquaternion norm vanishes. That reading is a statement about the zero-divisor cone, and the cone is the one object in this series that carries a long list of derived results. It is therefore worth asking, carefully, how much of the photon's characterization the cone actually delivers.
+The photon is the massless quantum of the electromagnetic field, and "massless" has a precise algebraic interpretation in the biquaternion framework: the four-momentum of a photon is a **null element**, an element of the material sector whose biquaternion norm vanishes. That interpretation is a statement about the zero-divisor cone, and the cone is the one object in this series that carries a long list of derived results. It is therefore worth asking, carefully, how much of the photon's characterization the cone actually delivers.
 
 The question is not idle. The companion article *The Photon in Biquaternionic Form* records, in its accounting of what is derived and what is imported, the row **masslessness $m=0$: represented, an input**. Nothing in that article connects the row to the cone results, and the cone article does not draw the verdict either. The two facts sit in different files. This article joins them and separates them: the cone **marks** the massless case, and the marking is exact and non-trivial, but the cone does not **choose** it.
 
@@ -61,7 +61,7 @@ $$
 m^2c^2 = -N(\tilde{P}).
 $$
 
-Mass is the negative of the norm of the four-momentum, up to the constant $c^2$. The norm is the framework's only invariant attached to a four-momentum, so in this reading **mass is the value of the invariant** — the invariant is the shell, and the mass is which shell. A particle is characterized, so far as the algebra's quadratic form is concerned, by one real number: the value of $N$ on its four-momentum.
+Mass is the negative of the norm of the four-momentum, up to the constant $c^2$. The norm is the framework's only invariant attached to a four-momentum, so in this interpretation **mass is the value of the invariant** — the invariant is the shell, and the mass is which shell. A particle is characterized, so far as the algebra's quadratic form is concerned, by one real number: the value of $N$ on its four-momentum.
 
 ## Four Things the Cone Derives
 
@@ -91,7 +91,7 @@ The argument is short but it is doing real work. In the metric formulation the i
 
 A rest frame is a frame in which the vector part of the four-momentum vanishes, $\mathbf{p}=0$. In such a frame $N(\tilde{P}) = -E^2/c^2$, which is strictly negative whenever $E\neq0$. But $N$ is invariant, so if $\tilde{P}$ is null in one frame it is null in every frame, and no frame can produce the negative value. Hence a null four-momentum has no rest frame: the transformation that would annihilate $\mathbf{p}$ does not exist in the group that preserves the cone. This is the algebraic form of the statement that light has no rest frame, and it is a consequence of the two facts already established, the invariance of the norm and the sign of the norm at rest.
 
-The physical reading is immediate. A rest frame for the photon would be a frame in which it is at rest, and in that frame its four-momentum would be timelike, hence not null, hence not the four-momentum of a photon. The cone forbids it. This is not an extra rule about photons; it is the statement that "null" and "at rest" are contradictory values of one invariant.
+The physical interpretation is immediate. A rest frame for the photon would be a frame in which it is at rest, and in that frame its four-momentum would be timelike, hence not null, hence not the four-momentum of a photon. The cone forbids it. This is not an extra rule about photons; it is the statement that "null" and "at rest" are contradictory values of one invariant.
 
 ### The massless particle moves at $c$, for every momentum
 
@@ -157,13 +157,13 @@ $$
 
 an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a **rank-one projector**.
 
-This is what makes the identification "the photon's four-momentum is a zero divisor" more than a restatement of $E=c|\mathbf{p}|$. The null momentum is, up to the factor $2iE/c$, a **pure state** of the informational sector: the flagpole reading of the companion article *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*, where the null direction and the projector are two faces of one object. The photon's lightlike momentum and a rank-one projector are the same element read in two sectors.
+This is what makes the identification "the photon's four-momentum is a zero divisor" more than a restatement of $E=c|\mathbf{p}|$. The null momentum is, up to the factor $2iE/c$, a **pure state** of the informational sector: the flagpole interpretation of the companion article *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*, where the null direction and the projector are two faces of one object. The photon's lightlike momentum and a rank-one projector are the same element read in two sectors.
 
 ### What this gives and what it does not
 
 What it gives is a genuine structural coincidence: the algebra's non-invertible elements in the material sector are in one-to-one correspondence with the projectors of the informational sector, up to a scale. The cone of the material sector is the scaled image of the projector sphere of the informational sector. That is a strong internal linkage between the two sectors, and it is derived.
 
-What it does not give is a dynamics. The projector is a description of the momentum, not an equation of motion, and the identification of the projector with a quantum state is the interpretive step the informational-sector article owns. Whether the photon should be thought of as "a projector with an energy" is a reading of the algebra, not a result of it; the corpus states the reading and does not derive it.
+What it does not give is a dynamics. The projector is a description of the momentum, not an equation of motion, and the identification of the projector with a quantum state is the interpretive step the informational-sector article owns. Whether the photon should be thought of as "a projector with an energy" is an interpretation of the algebra, not a result of it; the corpus states the interpretation and does not derive it.
 
 ## The Accounting
 

@@ -206,7 +206,7 @@ $$
 \tilde{Q} = H\,U , \qquad H = r\,B, \qquad U = e^{i\alpha}\,\hat{q} .
 $$
 
-The modulus is Hermitian positive and the second factor is unitary, so this is the matrix polar decomposition of the biquaternion: $\Phi(H)$ is the unique positive definite Hermitian square root of $\Phi(\tilde{Q})\Phi(\tilde{Q})^\dagger$ and $\Phi(U)$ is the unique unitary factor. Indeed
+The modulus is Hermitian positive and the second factor is unitary, so this is the matrix polar decomposition of the biquaternion: $\mathsf{M}_2(H)$ is the unique positive definite Hermitian square root of $\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})^\dagger$ and $\mathsf{M}_2(U)$ is the unique unitary factor. Indeed
 
 $$
 \tilde{Q}\tilde{Q}^{*} = r^2B\hat{q}\hat{q}^{*} B^{*} = r^2B^2 = H^2 ,
@@ -216,7 +216,7 @@ using $\hat{q}\hat{q}^{*} = e_0$, the Hermitian character of $B$ and $B^2 = S$, 
 
 ### The Statement
 
-The representation is the standard polar decomposition, and it needs no separate existence theorem: for $\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ the matrix $\Phi(\tilde{Q})$ is invertible, its polar decomposition is unique, and translating the two factors back through the algebra isomorphism gives $H$ and $U$ above. The modulus $H = rB$ combines the positive real scale with the Hermitian positive boost, and the second factor $U = e^{i\alpha}\hat{q}$ combines the central phase with the rotor.
+The representation is the standard polar decomposition, and it needs no separate existence theorem: for $\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ the matrix $\mathsf{M}_2(\tilde{Q})$ is invertible, its polar decomposition is unique, and translating the two factors back through the algebra isomorphism gives $H$ and $U$ above. The modulus $H = rB$ combines the positive real scale with the Hermitian positive boost, and the second factor $U = e^{i\alpha}\hat{q}$ combines the central phase with the rotor.
 
 ### The Modulus Is Hermitian Positive
 

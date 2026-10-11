@@ -14,7 +14,7 @@ This article asks what the Reeh–Schlieder theorem is in the biquaternion frame
 
 The article proceeds as follows. The theorem is stated with its hypotheses and its two halves, and the role of the spectrum condition is explained. Cyclicity and separating are then characterized in the GNS construction, where cyclicity is automatic and separating is faithfulness. The biquaternion vacuum is examined and its failure to be separating is exhibited with an explicit algebra element. The infinite-dimensional field algebra on the biquaternion module is described, and the theorem is located there. The article closes with the established/interpretation/open split. The Bisognano–Wichmann theorem is referred to rather than re-derived: it is the statement that the modular flow the Reeh–Schlieder property makes possible is, for a wedge, the boost.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, with $\mathrm{Tr}(e_0)=2$. The states are $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$, $\mathrm{Tr}\tilde\rho=1$; the vacuum idempotent is $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and the single-mode ladder is $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent* and *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The modular operator, modular conjugation and modular flow are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, with $\mathrm{Tr}(e_0)=2$. The states are $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$, $\mathrm{Tr}\tilde\rho=1$; the vacuum idempotent is $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and the single-mode ladder is $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent* and *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The modular operator, modular conjugation and modular flow are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*.
 
 ## The Reeh–Schlieder Theorem
 
@@ -82,7 +82,7 @@ $$
 \mathcal{N}_{\tilde\rho}=\big\{\tilde A:\tilde A\,\tilde\rho=0\big\}
 =\big\{\tilde A:\tilde A\,\mathrm{range}(\tilde\rho)=0\big\},
 $$
-of complex dimension $2(2-r)$ with $r=\mathrm{rank}\,\tilde\rho$. It is trivial exactly when $r=2$, that is, when $\tilde\rho$ is faithful, which for a biquaternion state means $\det\Phi(\tilde\rho)=\tfrac14(1-|\mathbf r|^2)>0$, the open Bloch ball. On the pure boundary $|\mathbf r|=1$ the radical is two-dimensional and the vector is not separating.
+of complex dimension $2(2-r)$ with $r=\mathrm{rank}\,\tilde\rho$. It is trivial exactly when $r=2$, that is, when $\tilde\rho$ is faithful, which for a biquaternion state means $\det\mathsf{M}_2(\tilde\rho)=\tfrac14(1-|\mathbf r|^2)>0$, the open Bloch ball. On the pure boundary $|\mathbf r|=1$ the radical is two-dimensional and the vector is not separating.
 
 The two halves therefore have sharply different finite-dimensional characters: cyclicity holds for every state, and separating holds exactly for the faithful ones.
 
@@ -118,7 +118,7 @@ This is the framework's honest statement of the difficulty: the pure vacuum of a
 
 The failure is structural, not accidental, and it can be stated as a dimension argument. A pure state on any finite-dimensional factor is a rank-one projection; its GNS radical is the set of operators that annihilate the state's support, of complex dimension $n(n-1)$ in $M_n(\mathbb{C})$ — equal to $2$ for the framework's $\mathbb{B}=M_2(\mathbb{C})$ — and nonzero for every $n>1$. A pure state can be separating only if the algebra is such that no nonzero operator annihilates the vector, and a rank-one vector in a finite dimension always has an annihilator. What the field theory has instead is an infinite-dimensional algebra in which a *cyclic* vector can be separating, because the spectrum condition makes the vector's orbit under translations rigid: the analyticity argument above has no finite-dimensional analogue.
 
-The finite algebra does have a state that is separating, namely any faithful state in the interior of the Bloch ball, and the framework's modular machinery — the modular operator, the modular conjugation, the KMS condition — is available for it. The right reading is therefore not that the framework lacks a Reeh–Schlieder vector, but that the vector is a faithful state, and the pure vacuum of a single mode is too pure to play that role. In the infinite-dimensional module algebra described below, the vacuum recovers it.
+The finite algebra does have a state that is separating, namely any faithful state in the interior of the Bloch ball, and the framework's modular machinery — the modular operator, the modular conjugation, the KMS condition — is available for it. The right interpretation is therefore not that the framework lacks a Reeh–Schlieder vector, but that the vector is a faithful state, and the pure vacuum of a single mode is too pure to play that role. In the infinite-dimensional module algebra described below, the vacuum recovers it.
 
 ## A Finite Model of the Hypothesis
 
@@ -168,7 +168,7 @@ F_{\tilde A\tilde B}(t+i)=F_{\tilde B\tilde A}(-t).
 $$
 This was checked on the faithful state with $\mathbf r=(0.3,-0.2,0.5)$ and the Hermitian pair $\tilde A=i e_1$, $\tilde B=i e_2$, both in $\mathbb{M}_+$: at $t=0.4$ both sides are $-0.4668024589-0.4724537771\,i$, the difference between them being below $10^{-14}$. The finite model thus exhibits the whole chain — a cyclic and separating vector, a modular flow, and the KMS property — for the faithful states of the biquaternion algebra.
 
-For the field vacuum the same chain holds with the inverse temperature fixed to $2\pi$ in units in which the modular flow is the boost: the state is KMS at $\beta=2\pi$ for the wedge modular flow, which is the Bisognano–Wichmann statement, and the thermal reading is the Unruh effect. Those are the companion articles' subjects and are referred to, not re-derived.
+For the field vacuum the same chain holds with the inverse temperature fixed to $2\pi$ in units in which the modular flow is the boost: the state is KMS at $\beta=2\pi$ for the wedge modular flow, which is the Bisognano–Wichmann statement, and the thermal interpretation is the Unruh effect. Those are the companion articles' subjects and are referred to, not re-derived.
 
 ## The Reeh–Schlieder Lemma
 
@@ -225,13 +225,13 @@ The proof in the free case is the standard free-field proof: the vacuum two-poin
 
 **1. A finite analogue of the spectrum condition.** Separating is a consequence of positive energy. Is there a framework-internal positivity — the Hermiticity of $\mathbb{M}_+$, the reality of the trace — that plays the same role for a regulated model, and that could be made into a finite spectral condition for a chain of mode algebras?
 
-**2. The faithful-state reading.** The modular structure of a faithful biquaternion state is available in finite dimension, and its modular flow is known. Is the whole Reeh–Schlieder/modular programme of a region reproduced by a one-parameter family of faithful states whose limit is the pure vacuum, in the spirit of an epsilon-regulator?
+**2. The faithful-state interpretation.** The modular structure of a faithful biquaternion state is available in finite dimension, and its modular flow is known. Is the whole Reeh–Schlieder/modular programme of a region reproduced by a one-parameter family of faithful states whose limit is the pure vacuum, in the spirit of an epsilon-regulator?
 
 **3. The zero-divisor witness after truncation.** The witness $\tilde\Upsilon_1$ is an element of the four-dimensional algebra. How does it behave under the inclusion $\mathbb{B}\hookrightarrow\mathbb{B}^{\otimes n}$, and is there a corresponding element of the local algebra in the infinite limit that the spectrum condition excludes?
 
 **4. Entanglement across the boundary.** The theorem's first consequence is that the vacuum is entangled across any region partition. The area law of the companion article is the quantitative statement about that entanglement; whether the framework's closed-form entropies connect the two in a regulated model is open here.
 
-**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the reading from standard quantum field theory is derived.
+**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum field theory is derived.
 
 ## Summary
 
@@ -282,4 +282,4 @@ The separating property is recovered where the theorem actually lives: on the in
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the mode algebra and its capacity.
 - Companion article *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the modular operator, conjugation, and flow.
 - Companion article *The Bisognano–Wichmann Theorem under the Biquaternion Framework*, for the wedge modular flow as the boost.
-- Companion article *The Unruh Effect in Biquaternionic Form*, for the thermal reading of the wedge modular flow.
+- Companion article *The Unruh Effect in Biquaternionic Form*, for the thermal interpretation of the wedge modular flow.

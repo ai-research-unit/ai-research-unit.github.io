@@ -415,7 +415,7 @@ v^i=\langle z|\sigma^i|z\rangle\ \ (S^2),\qquad
 v^i=\tfrac12\,\langle z|\sigma_3\varsigma^i|z\rangle\ \ (H^\pm),\qquad
 v^i=\langle z_2|\sigma_3\varsigma^i|z_1\rangle\ \ (H^{sl}),
 $$
-where $\langle z|(\,\cdot\,)|z\rangle$ abbreviates $z^{\dagger}(\,\cdot\,)z$. The first is the pure-state correspondence of the Bloch-ball article — one Weyl spinor with the definite pairing gives the sphere, with $|v|^2=1$ — and the second uses one Weyl spinor with the indefinite pairing and gives the two-sheeted time-like hyperboloid $H^\pm\subset\mathbb{R}^{1,2}$. The third uses a **pair** of spinors and gives the one-sheeted hyperboloid $H^{sl}$, and it is here that the Majorana condition enters: a real structure commuting with $SU(1,1)$ takes the place of the complex conjugation of the other two cases. The reason the one-sheeted case takes a pair, in the external reading cited below, is that a single Weyl spinor with either pairing forces one sign of the area spectrum, and only the pair carries the sign a time-like surface needs.
+where $\langle z|(\,\cdot\,)|z\rangle$ abbreviates $z^{\dagger}(\,\cdot\,)z$. The first is the pure-state correspondence of the Bloch-ball article — one Weyl spinor with the definite pairing gives the sphere, with $|v|^2=1$ — and the second uses one Weyl spinor with the indefinite pairing and gives the two-sheeted time-like hyperboloid $H^\pm\subset\mathbb{R}^{1,2}$. The third uses a **pair** of spinors and gives the one-sheeted hyperboloid $H^{sl}$, and it is here that the Majorana condition enters: a real structure commuting with $SU(1,1)$ takes the place of the complex conjugation of the other two cases. The reason the one-sheeted case takes a pair, in the external interpretation cited below, is that a single Weyl spinor with either pairing forces one sign of the area spectrum, and only the pair carries the sign a time-like surface needs.
 
 **The closure.** Under the symplectic form
 $$
@@ -485,7 +485,7 @@ $$
 $$
 with the two summands the two chiral halves.
 
-In this reading the spinor module is not an add-on to the biquaternion framework; it is the module that the framework was built to carry, and the material and informational sectors are its bilinear and operator shadows.
+In this interpretation the spinor module is not an add-on to the biquaternion framework; it is the module that the framework was built to carry, and the material and informational sectors are its bilinear and operator shadows.
 
 ## Open Questions
 
@@ -496,7 +496,7 @@ A natural candidate is the module action defined here; its compatibility with th
 3. **The biquaternion form of the symplectic pairing.** The invariant form $\varepsilon$ is presented here in matrix coordinates. Its expression as a bigeneral quaternionic bilinear on the ideal $\mathbb{B}\tilde\Pi_1$ follows from the coordinate map, but the cleanest biquaternion formula is a matter of convention.
 4. **Majorana and reality conditions.** In Lorentzian signature the Dirac module is self-conjugate but the two Weyl halves are a conjugate pair, so Majorana spinors exist while Majorana–Weyl spinors do not. How these reality conditions read as conditions on biquaternion-valued fields is a natural continuation.
 5. **Curved spacetime.** The module and its action are pointwise algebraic. Whether the spinor module globalizes to a bundle over a curved biquaternionic background is open, in parallel with the open questions of the companion articles.
-6. **The indefinite pairing and the framework's own reading.** The pairing $[u|v]=u^{\dagger}\sigma_3v$, the triple $\varsigma$ and the hyperboloid models come from the external reading cited in *Quantum Gravity under the Biquaternion Framework — A Research Agenda*. Whether the framework gives them an independent meaning — in particular whether the Majorana pair of the one-sheeted case is the module real structure of *The Neutrino and Majorana Fermions in Biquaternionic Form* — is not settled here, and the two articles are consistent but not yet joined.
+6. **The indefinite pairing and the framework's own interpretation.** The pairing $[u|v]=u^{\dagger}\sigma_3v$, the triple $\varsigma$ and the hyperboloid models come from the external interpretation cited in *Quantum Gravity under the Biquaternion Framework — A Research Agenda*. Whether the framework gives them an independent meaning — in particular whether the Majorana pair of the one-sheeted case is the module real structure of *The Neutrino and Majorana Fermions in Biquaternionic Form* — is not settled here, and the two articles are consistent but not yet joined.
 
 ## Summary
 

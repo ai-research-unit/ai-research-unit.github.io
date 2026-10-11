@@ -8,7 +8,7 @@ This article records the equations, the spin chains they live on, and the third 
 
 It is worth separating this article from the companion that shares the name Bhabha. *Bhabha Scattering in Biquaternionic Form* is about the elastic scattering of an electron and a positron; the present article is about Bhabha's *wave equations*, a different piece of work by the same author. The two are cross-referenced and not merged.
 
-The article is organised as follows. A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction. A fourth works the proton chain and its Dirac limit. A closing section states the biquaternion reading.
+The article is organised as follows. A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction. A fourth works the proton chain and its Dirac limit. A closing section states the biquaternion interpretation.
 
 **Conventions.** The Lorentz conventions are the corpus's: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\dot l}$ with $l=k/2$, $\dot l=r/2$, spin $s=|l-\dot l|$. The equations, the chains and the bivector-space material are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §2.2) and from the Bhabha and Gel'fand–Yaglom papers. One convention differs and is flagged forward: the source's Minkowski metric is $\mathrm{diag}(-1,-1,-1,+1)$, whereas the corpus uses the $ict$ metric with three positive spacelike directions; the bivector-space signs below are the source's, and a discrepancy in their printed metric is recorded as a convention issue rather than smoothed over.
 
@@ -240,7 +240,7 @@ Third, the **equations** themselves are the corpus's Dirac-Maxwell package in th
 
 3. **Does the chain of algebras carry the mass spectrum?** The companion mass article orders a spin line by degree; the present chain orders the same line by algebra. Is the chain's algebra sequence ($\mathbb{C}_2, \mathbb{C}_2\otimes\bar{\mathbb{C}}_2,\dots$) the object that fixes which chain members are physical?
 
-4. **The multi-mass sector.** The equations have several roots, only the leading one of which is used. Are the subleading masses physical — further particles on the same chain — and does the corpus have a reading for them?
+4. **The multi-mass sector.** The equations have several roots, only the leading one of which is used. Are the subleading masses physical — further particles on the same chain — and does the corpus have an interpretation for them?
 
 5. **The Maxwell–Dirac package.** The corpus's *Bispinor Fields* article derives the Maxwell–Dirac solution in the corpus's form. Does the programme's massless limit coincide with it exactly, including the conventions of the axial current?
 

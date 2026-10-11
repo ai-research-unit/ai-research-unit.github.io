@@ -14,7 +14,7 @@ $$
 
 so that the tensor product of the spinor with the material vector contains a spin-$\tfrac12$ piece and a spin-$\tfrac32$ piece, and the $\gamma$-trace constraint removes the former. The same pattern appears for the graviton, where the symmetric trace-free square of the vector decomposes as $0\oplus2$; here the antisymmetric structure of the constraint selects the highest spin. The two articles together are the framework's statement of how higher-spin fields are built: tensor a lower-spin carrier with the material vector and project onto the top component.
 
-The article is organized as follows. The field, its constraint, and the consequence that transversality follows from the constraint and the field equation are stated, and the projector onto the $\gamma$-traceless part is constructed and verified. The gauge structure of the massless case and the second-class structure of the massive case are contrasted. The canonical quantization is then carried out: momenta, Dirac brackets, anticommutators, the mode expansion, and the fermionic Fock space. The propagator and its gauge fixing are recorded, the biquaternion reading of the decomposition is developed, and the article closes with the accounting of what the algebra supplies and what is imported.
+The article is organized as follows. The field, its constraint, and the consequence that transversality follows from the constraint and the field equation are stated, and the projector onto the $\gamma$-traceless part is constructed and verified. The gauge structure of the massless case and the second-class structure of the massive case are contrasted. The canonical quantization is then carried out: momenta, Dirac brackets, anticommutators, the mode expansion, and the fermionic Fock space. The propagator and its gauge fixing are recorded, the biquaternion interpretation of the decomposition is developed, and the article closes with the accounting of what the algebra supplies and what is imported.
 
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the spinor carrier as a left ideal and the Clifford structure.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the massless gauge field whose gauge structure the massless Rarita–Schwinger case generalizes.
@@ -173,7 +173,7 @@ $$
 
 with all other anticommutators vanishing, and the Fock space is built by acting on the vacuum with $a_r^\dagger$ and $b_r^\dagger$. The four polarizations $r=1,\dots,4$ are the two helicities $\pm\tfrac32$ and the two helicities $\pm\tfrac12$.
 
-The biquaternion reading of the mode expansion is the same as the Dirac article's, one vector index richer: each polarization spinor is an element of the left ideal, labelled by the internal direction $r$ that the adjoint action supplies; the four internal labels are the four vectors of the spin-$\tfrac32$ representation, that is, the (traceless) product of the spin-$\tfrac12$ label with the material triplet.
+The biquaternion interpretation of the mode expansion is the same as the Dirac article's, one vector index richer: each polarization spinor is an element of the left ideal, labelled by the internal direction $r$ that the adjoint action supplies; the four internal labels are the four vectors of the spin-$\tfrac32$ representation, that is, the (traceless) product of the spin-$\tfrac12$ label with the material triplet.
 
 ### Fermionic Statistics
 

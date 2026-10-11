@@ -126,7 +126,7 @@ so that the coefficients change along the sequence according to the monodromy; t
 
 ## The Euler Class as an Obstruction
 
-### The Obstruction-Theoretic Reading
+### The Obstruction-Theoretic Interpretation
 
 **Theorem.** The Euler class is the primary obstruction to a section of the covering: $e \in H^1(B;\mathbb{F}_2) = H^1(B;\pi_0(S^0))$ is the obstruction class, and the covering has a continuous section if and only if $e=0$, if and only if the covering is trivial. This is the case of the obstruction theory of *Equivariant Obstruction Theory* with the fibre $S^0$ and the trivial coefficient system over the base, the group being trivial in the base direction.
 

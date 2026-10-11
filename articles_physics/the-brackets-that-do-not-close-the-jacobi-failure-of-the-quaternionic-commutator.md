@@ -219,7 +219,7 @@ of the parent product vanish, and the two that survive are at the orderings $(e_
 $(e_2,e_0,e_1)$, with values $+2e_3$ and $-2e_3$; their signed sum is $-4e_3$, and the quarter is $-e_3$,
 which is $J(e_0,e_1,e_2)$.
 
-The reading of the mechanism is exact: **the insertion of the natural conjugation in the first slot of the
+The interpretation of the mechanism is exact: **the insertion of the natural conjugation in the first slot of the
 parent product is what costs the Jacobi identity.** The plain antisymmetrisation, the cross product, keeps
 the identity because the plain product is associative; the quaternionic antisymmetrisation loses it because
 the first slot is read through a non-automorphism, and the resulting mixed terms break the criterion. The
@@ -250,17 +250,17 @@ subspace, $\mathbb{B}\wedge_{\natural}\mathbb{B}=\mathrm{Vect}(\mathbb{B})$, and
 $-\mathbf P\times\mathbf Q$, a Lie bracket isomorphic to the cross product on $\mathbb{C}^3$, hence to
 $\mathfrak{sl}(2,\mathbb{C})$. The failure is therefore not a failure of the **derived** bracket; it is the
 failure of the extension of that bracket to the whole algebra. This is the exact bound on the negative
-reading below: the operation is a Lie bracket **on the vector subspace** and not on $\mathbb{B}$. The
+interpretation below: the operation is a Lie bracket **on the vector subspace** and not on $\mathbb{B}$. The
 mathematics is *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*
 §*The Derived Bracket*.
 
 ## Why This Cannot Be the Lie Algebra of an Internal Group
 
-**Proposed reading, labelled as such.** A bracket generates a group through the exponential of its
+**Proposed interpretation, labelled as such.** A bracket generates a group through the exponential of its
 representation, and the exponential exists as a group only when the bracket satisfies the Jacobi identity:
 the identity is exactly the condition that the bracket be the commutator of an associative algebra or the
 tangent bracket of a Lie group. The quaternionic bracket fails it, so **it cannot be the Lie algebra of an
-internal group**, and no group and no gauge algebra can be read off it. The two negative readings below
+internal group**, and no group and no gauge algebra can be read off it. The two negative interpretations below
 are the content of the band's word, Obstruction.
 
 - **The failure is not removable by a change of sign or of scale.** The defect is the associator of the
@@ -275,7 +275,7 @@ cannot be discarded without leaving the quaternionic row.
 proved above is $\mathbb{C}$-trilinear and alternating, so the failure of the identity is not the failure
 of a bracket to be one but a **cochain in the third degree** — a single alternating three-form on the
 algebra, valued in the vector subspace, nonzero on $18$ of the $64$ ordered triples of basis elements.
-Offered as a reading, the Jacobi failure is an obstruction of **order three** and not a merely wrong
+Offered as an interpretation, the Jacobi failure is an obstruction of **order three** and not a merely wrong
 bracket: the operation is alternating, the derived bracket on the vector subspace is Lie, and the failure
 appears only on triples, where it is this one three-form; and $18$ of $64$ is offered as the **support**
 of the obstruction on the chosen basis. The word *anomaly* is used in the companion article *Boosts, Mixed Terms and the
@@ -287,8 +287,8 @@ framework's, and the support is a count on a basis and not an invariant.
 are that the derived bracket on $\mathrm{Vect}(\mathbb{B})$ is $\mathfrak{sl}(2,\mathbb{C})$ and that the
 failure enters through the mixed terms $P_0\mathbf Q-Q_0\mathbf P$. Read together they say that the
 bracket **closes on the compact rotations** and **fails through the boost-like mixed terms**: offered as
-a reading, the identity is carried by the rotations and the obstruction by the boosts, so the price of
-the boost-like direction is the Jacobi identity. The boost-like reading of the mixed terms is the
+an interpretation, the identity is carried by the rotations and the obstruction by the boosts, so the price of
+the boost-like direction is the Jacobi identity. The boost-like interpretation of the mixed terms is the
 companion article *Boosts, Mixed Terms and the Missing Lie Structure*; the clause added here is that the
 boost-like part is exactly the part that costs the identity. The algebra proves the derived bracket and
 the mixed terms and nothing about boosts as physical transformations.
@@ -327,7 +327,7 @@ $18$ nonzero ordered basis triples; the associator criterion and the defect as n
 the contrast with the plain bracket, which closes; the derived bracket on the vector subspace as a Lie
 bracket isomorphic to $\mathfrak{sl}(2,\mathbb{C})$.
 
-**Readings.** That the quaternionic commutator cannot be the Lie algebra of an internal group; that the
+**Interpretations.** That the quaternionic commutator cannot be the Lie algebra of an internal group; that the
 insertion of the conjugation in the first slot is what costs the Jacobi identity; that the failure enters
 through the mixed terms and is invisible on the pure vectors; that the internal group is reached by the
 associative one-sided action and not by this bracket; that the Jacobiator is a single alternating
@@ -338,7 +338,7 @@ closable part is exactly the compact rotations and the boost-like mixed terms ar
 commutator. That the failure can be repaired, or that a group was expected from this operation. That the
 framework lacks a gauge group; the group is read elsewhere. That the obstruction overthrows any physical
 result. That the Jacobiator is a physical anomaly, or that the mixed terms are physical boosts in a sense
-stronger than the companion article's reading.
+stronger than the companion article's interpretation.
 
 ## Physical Readings
 
@@ -361,13 +361,13 @@ give the quarter $-e_3$. The **plain** bracket, the cross product of the plain r
 **closes**; it is the one Lie product of the twelve. On the derived subalgebra $\mathrm{Vect}(\mathbb{B})$
 this operation is the negative of the cross product and is a Lie bracket isomorphic to
 $\mathfrak{sl}(2,\mathbb{C})$, so the failure is the failure of the extension of that bracket to the whole
-algebra. The reading is the band's word **Obstruction**: the quaternionic commutator cannot be the Lie
+algebra. The interpretation is the band's word **Obstruction**: the quaternionic commutator cannot be the Lie
 algebra of an internal group, and no group can be read off it. The internal group the algebra does reach
 is the algebra's intrinsic $U(2)$, locally $SU(2)\times U(1)$, read off the **associative** one-sided
 action by *Observables, Gauge Generators and
 the Chirality of the Internal Action* and bounded by *The Gauge Group Ceiling: Why the Biquaternion
 Algebra Reaches SU(2) but Not SU(3)*; the failure of this bracket therefore isolates where the gauge
-structure does not come from, and the caution stands that a negative result constrains a reading without
+structure does not come from, and the caution stands that a negative result constrains an interpretation without
 supplying one. The operation, its image and its table are *Introduction to the Antisymmetric Quaternionic
 Algebra of Biquaternions*; the cyclic sum and the associator criterion are *The Jacobi Failure and the
 Associator Defect of the Antisymmetric Quaternionic Algebra*; the invariant forms and the operators of the

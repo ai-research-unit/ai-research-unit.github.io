@@ -223,7 +223,7 @@ On the other side, the linear map $M \oplus N \to \operatorname{Sym}(M) \otimes_
 
 **Corollary.** $\operatorname{Sym}(R^d) \cong R[x_1, \ldots, x_d] \cong R[x_1] \otimes_R \cdots \otimes_R R[x_d]$, recovering the familiar fact that polynomials in several variables are obtained by tensoring polynomials in one variable.
 
-### The Coproduct Reading
+### The Coproduct Interpretation
 
 The category $\mathsf{CAlg}_R$ has coproducts, and the coproduct of $A$ and $B$ is $A \otimes_R B$ with the multiplication $(a \otimes b)(a' \otimes b') = aa' \otimes bb'$. The direct-sum theorem above is a special case of the compatibility of a left adjoint with coproducts: $\operatorname{Sym}$ carries the direct sum in $\mathsf{Mod}_R$ (the coproduct there) to the tensor product in $\mathsf{CAlg}_R$ (the coproduct there). The companion articledevelops this.
 

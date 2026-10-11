@@ -41,7 +41,7 @@ one sphere per nappe. Each nappe is the cone on its sphere, and the complement o
 
 Two warnings are in order: the light cone is a real cone of real dimension $3$ in $\mathbb{M}_-\cong\mathbb{R}^4$, not the full null cone $\mathcal{N}$ of *The Null Quadric and Its Projective Geometry*, §*The null cone*, which has real dimension $6$; and $\mathcal{N}$ is the complex cone over the Segre quadric, whose intersection with $\mathbb{M}_-$ recovers the light cone, so the Minkowski null biquaternions form a three-dimensional real cone while the null elements of the full algebra form a six-dimensional one.
 
-## The Lorentzian Reading of the Quadric
+## The Lorentzian Interpretation of the Quadric
 
 Take the Lorentzian real form $\mathbb{M}_+\cong\mathbb{R}^{1,3}$ of *Norm and Invertibility in the General Plain Algebra*, §*The Real Forms and Their Signatures*. Its null cone is the Minkowski null cone, whose projectivisation is the sphere
 $$

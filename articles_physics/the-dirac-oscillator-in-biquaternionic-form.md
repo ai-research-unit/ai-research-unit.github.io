@@ -36,7 +36,7 @@ $$
 \left(i\gamma^\mu\partial_\mu - \frac{mc}{\hbar}\right)\psi = i\,\frac{m\omega}{\hbar}\,\beta\,\gamma^k x_k\,\psi ,
 $$
 
-The right-hand side is a spacelike Clifford vector times the frame, linear in $x$: the non-minimal term is a position-dependent generator of the odd part. This is the form in which the biquaternion reading is made below.
+The right-hand side is a spacelike Clifford vector times the frame, linear in $x$: the non-minimal term is a position-dependent generator of the odd part. This is the form in which the biquaternion interpretation is made below.
 
 ## Reduction to Two-Component Equations
 
@@ -169,7 +169,7 @@ $$
 
 This is the Dirac-oscillator spectrum. Its structure is the two-branch pattern familiar from the literature: one branch is a tower in the radial quantum number $n_r$ alone, the other a tower shifted by the orbital quantum number; both are positive, so $E^2 \geq m^2c^4$ and the spectrum has a gap. The ground state has $n_r = 0$, $l = 0$, $j = \tfrac12$, and energy $E = \pm mc^2$; the first excited level stands at $E^2 = m^2c^4 + 4m\hbar\omega c^2$.
 
-The $j = l+\tfrac12$ branch depends on $n_r$ and **not on $l$**. This is the characteristic degeneracy of the Dirac oscillator: for every $l$ with $j = l+\tfrac12$, the state with $n_r = 0$ has the same energy $E = \pm mc^2$, so the ground level is infinitely degenerate. The degeneracy is not an artefact of the truncation or of a particular gauge: it follows from the exact operator identity above, because the spin–orbit term cancels the oscillator zero point precisely for the aligned states. It is the same zero-mode structure that appears in the supersymmetric reading of the biquaternion section below, and it is the reason the model is called a "pseudo-oscillator": the spatial oscillator and the spin–orbit term conspire to produce a degeneracy pattern different from the non-relativistic oscillator's.
+The $j = l+\tfrac12$ branch depends on $n_r$ and **not on $l$**. This is the characteristic degeneracy of the Dirac oscillator: for every $l$ with $j = l+\tfrac12$, the state with $n_r = 0$ has the same energy $E = \pm mc^2$, so the ground level is infinitely degenerate. The degeneracy is not an artefact of the truncation or of a particular gauge: it follows from the exact operator identity above, because the spin–orbit term cancels the oscillator zero point precisely for the aligned states. It is the same zero-mode structure that appears in the supersymmetric interpretation of the biquaternion section below, and it is the reason the model is called a "pseudo-oscillator": the spatial oscillator and the spin–orbit term conspire to produce a degeneracy pattern different from the non-relativistic oscillator's.
 
 The two branches can be written in the unified form
 

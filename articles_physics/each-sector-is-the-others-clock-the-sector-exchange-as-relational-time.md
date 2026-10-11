@@ -4,7 +4,7 @@
 
 The framework has no external time parameter. The material time is the imaginary coefficient $ict$ of an element of the anti-Hermitian sector $\mathbb{M}_-$, the informational time is the real coefficient $ct'$ of an element of the Hermitian sector $\mathbb{M}_+$, and multiplication by the central imaginary $i$ exchanges the two sectors. The exchange is therefore an operation of the algebra on the two times, and the question of this article is what that operation is worth as a **clock**.
 
-The answer, in one sentence: the exchange supplies the reference of a clock and its period, and it supplies neither the arrow nor the rate. The three readings that follow from that sentence are these. The two times are the real and the imaginary parts of one central coordinate, so the material time is not defined against anything outside the algebra but against the phase of the informational sector — each sector is the other's clock. The exchange is a quarter turn of the plane of that coordinate, so a tick is a quarter turn and the period of the clock is a full central rotation. And the exchange is invertible and of order four, so the algebra offers both senses of the rotation and no rule that selects one; the direction of the tick remains a choice of slice, which is the framework's problem of time.
+The answer, in one sentence: the exchange supplies the reference of a clock and its period, and it supplies neither the arrow nor the rate. The three interpretations that follow from that sentence are these. The two times are the real and the imaginary parts of one central coordinate, so the material time is not defined against anything outside the algebra but against the phase of the informational sector — each sector is the other's clock. The exchange is a quarter turn of the plane of that coordinate, so a tick is a quarter turn and the period of the clock is a full central rotation. And the exchange is invertible and of order four, so the algebra offers both senses of the rotation and no rule that selects one; the direction of the tick remains a choice of slice, which is the framework's problem of time.
 
 The article is kinematic throughout. It reads the central map that *Conventions in the Biquaternion Universe* identifies as one generator on remarkable subspaces, and it reads it on the one carrier that is a time. What it adds to that map is the clock, the reference that the clock supplies, and the exact statement of what a clock needs and does not get.
 
@@ -24,7 +24,7 @@ $$
 \tilde{Q}_- = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{M}_-, \qquad \tilde{Q}_+ = ct'\,e_0 + i\bigl(x'e_1 + y'e_2 + z'e_3\bigr) \in \mathbb{M}_+,
 $$
 
-with $t, \mathbf{x}, t', \mathbf{x}'$ real. The verification of the two inclusions is the pair of computations in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the reading of the coefficients is the $ict$ dictionary of *Conventions in the Biquaternion Universe*.
+with $t, \mathbf{x}, t', \mathbf{x}'$ real. The verification of the two inclusions is the pair of computations in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the interpretation of the coefficients is the $ict$ dictionary of *Conventions in the Biquaternion Universe*.
 
 The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$, and it is the complex time sector of *Other Remarkable Subspaces*. The two times are its two real coordinates: writing
 
@@ -66,9 +66,9 @@ The second is invertibility: the generator is a rotation, so both senses are ava
 
 ## The Clock Hand and Its Two Projections
 
-A clock assigns a coordinate to an event by a repeatable motion. The framework's clock is the central coordinate itself, and its reading is a phase.
+A clock assigns a coordinate to an event by a repeatable motion. The framework's clock is the central coordinate itself, and its interpretation is a phase.
 
-**The hand.** The hand of the clock is the complex number $z = ct' + i\,ct$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta = \arg z$ is the reading: the material time and the informational time are the two projections of the hand,
+**The hand.** The hand of the clock is the complex number $z = ct' + i\,ct$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,
 
 $$
 ct' = \lvert z\rvert\cos\theta, \qquad ct = \lvert z\rvert\sin\theta .
@@ -84,7 +84,7 @@ $$
 
 and the period is the full rotation $2\pi$, made of four quarter turns. The four-element cycle is the whole of the clock's internal structure, and it is exact: no approximation enters, because the orbit is the orbit of a central element under a group of order four.
 
-**Why each sector is the other's clock.** The two sector times are the two projections of one hand. The material time $ict$ is the component of the hand along the direction the informational time does not use, and conversely. A sector taken alone therefore has no time coordinate that is not a reading of the other sector's plane: the material time is defined by the angle between the hand and the informational axis, and the informational time by the angle between the hand and the material axis. This is the precise sense of the title. It is not a figure of speech: the two times are the same number read as a real and as an imaginary coefficient, and the exchange is the rotation that moves one reading into the other.
+**Why each sector is the other's clock.** The two sector times are the two projections of one hand. The material time $ict$ is the component of the hand along the direction the informational time does not use, and conversely. A sector taken alone therefore has no time coordinate that is not an interpretation of the other sector's plane: the material time is defined by the angle between the hand and the informational axis, and the informational time by the angle between the hand and the material axis. This is the precise sense of the title. It is not a figure of speech: the two times are the same number read as a real and as an imaginary coefficient, and the exchange is the rotation that moves one interpretation into the other.
 
 ## What a Clock Needs
 
@@ -92,7 +92,7 @@ A clock, whether mechanical or algebraic, needs four things, and the framework's
 
 | What a clock needs | What the framework supplies |
 |---|---|
-| A **reference**: a direction or a subsystem against which the reading is defined | Supplied. The other sector: the material time is read against the informational axis and the reverse |
+| A **reference**: a direction or a subsystem against which the interpretation is defined | Supplied. The other sector: the material time is read against the informational axis and the reverse |
 | A **period**: a repeatable tick | Supplied up to scale. The central rotation, $e^{i\theta}e_0$ with $\theta = 2\pi$ the identity, divided into four quarter turns; the period is an angle and carries no duration |
 | An **arrow**: an orientation of the tick | Not supplied. The generator is invertible of order four, and $e^{i\theta}$ and $e^{-i\theta}$ are both in the algebra |
 | A **rate**: a duration per tick | Not supplied. The algebra carries the phase, which is dimensionless, and no second |
@@ -103,23 +103,23 @@ A clock, whether mechanical or algebraic, needs four things, and the framework's
 
 ## The Relational Reading
 
-The two entries that are supplied are what makes the reading relational, and the reading is worth separating from the two that are not.
+The two entries that are supplied are what makes the interpretation relational, and the interpretation is worth separating from the two that are not.
 
-**The time is a relation between two sectors.** The material sector alone has no time coordinate that is not a reading of the informational plane, and the informational sector alone has none that is not a reading of the material plane. Time is therefore not an absolute coordinate attached to the framework from outside, and it is not a coordinate internal to one sector either: it is a relation between the two real forms of one algebra, carried by a hand that both sectors project. This is the framework's version of the relational reading of time, and it is exact rather than formal, because the relation is a specified map of a specified algebra and the projections are its coordinates.
+**The time is a relation between two sectors.** The material sector alone has no time coordinate that is not an interpretation of the informational plane, and the informational sector alone has none that is not an interpretation of the material plane. Time is therefore not an absolute coordinate attached to the framework from outside, and it is not a coordinate internal to one sector either: it is a relation between the two real forms of one algebra, carried by a hand that both sectors project. This is the framework's version of the relational interpretation of time, and it is exact rather than formal, because the relation is a specified map of a specified algebra and the projections are its coordinates.
 
 **The reference is global.** The generator is central, so the exchange is the same operation at every element, in every subspace and in every frame. The clock it defines is therefore a **global** clock: it supplies one reference for the whole algebra and not one reference per point. The framework is accordingly a theory with a global internal clock and no local clock of its own; local clocks, their transport, their relative rates and their synchronisation are the business of *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form*, which builds them from null displacements, the radar method and the $k$-factor. The division is clean: this article supplies the reference that a clock needs and that the synchronisation article presupposes, and that article supplies the rates that this one does not.
 
-**The other reading of the same exchange.** The exchange has a second physical reading, in the informational direction rather than the temporal one: it carries the material ledger of an element to the informational ledger, and the two ledgers are the two biquaternion norms. That reading is *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*. The clock reading and the thermodynamic reading are readings of the same map on different carriers, which is the rule of *Conventions in the Biquaternion Universe*: one map, and a physical word for each carrier.
+**The other interpretation of the same exchange.** The exchange has a second physical interpretation, in the informational direction rather than the temporal one: it carries the material ledger of an element to the informational ledger, and the two ledgers are the two biquaternion norms. That interpretation is *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*. The clock interpretation and the thermodynamic interpretation are interpretations of the same map on different carriers, which is the rule of *Conventions in the Biquaternion Universe*: one map, and a physical word for each carrier.
 
-**The boundary with the boosts.** The phase and the relativistic generators are carried by two separate parts of one element: the generator is a *scalar*, acting through the centre, and the boosts act through the quaternion directions. The clock of this article is therefore a clock of the scalar (temporal) part of an element and says nothing about spatial directions; it times the element and does not move it. This is why the exchange is not a boost and why the clock reading adds nothing to the transformation theory of the material sector.
+**The boundary with the boosts.** The phase and the relativistic generators are carried by two separate parts of one element: the generator is a *scalar*, acting through the centre, and the boosts act through the quaternion directions. The clock of this article is therefore a clock of the scalar (temporal) part of an element and says nothing about spatial directions; it times the element and does not move it. This is why the exchange is not a boost and why the clock interpretation adds nothing to the transformation theory of the material sector.
 
 ## What the Reading Does Not Claim
 
 - It is **not a dynamics**. No evolution equation is read off the exchange, and no rate of change of a state follows from it. The exchange is a relation between two descriptions of one element, and a dynamics is a separate object, which is the constraint analysis the framework names as missing.
-- It is **not an arrow**. The generator is invertible and of order four, so both orientations are present and neither is selected; the direction of the tick is a choice of slice, and the problem of time is not solved here but restated in the temporal reading.
+- It is **not an arrow**. The generator is invertible and of order four, so both orientations are present and neither is selected; the direction of the tick is a choice of slice, and the problem of time is not solved here but restated in the temporal interpretation.
 - It is **not a rate or a duration**. The period of the clock is the central rotation, an angle without a second; a physical duration requires a process to compare with it, and no such comparison is made here.
-- It does **not identify the exchange with the analytic continuation**. The Wick rotation as the continuation $t\mapsto-i\tau$ is a relabeling of one coordinate that holds the space real; the exchange is a rotation of the element that carries the space imaginary, and the two agree on the time axis and in the sign they flip and nowhere else, as *Conventions in the Biquaternion Universe* states. The clock reading uses the rotation and not the continuation.
-- It does **not claim an empirical consequence**. It reorganizes the exchange, the phase and the two times under one reading; it adds no prediction and no coupling, and it does not turn the phase into a measurable duration.
+- It does **not identify the exchange with the analytic continuation**. The Wick rotation as the continuation $t\mapsto-i\tau$ is a relabeling of one coordinate that holds the space real; the exchange is a rotation of the element that carries the space imaginary, and the two agree on the time axis and in the sign they flip and nowhere else, as *Conventions in the Biquaternion Universe* states. The clock interpretation uses the rotation and not the continuation.
+- It does **not claim an empirical consequence**. It reorganizes the exchange, the phase and the two times under one interpretation; it adds no prediction and no coupling, and it does not turn the phase into a measurable duration.
 
 ## Summary
 
@@ -151,5 +151,5 @@ The accounting of a clock is partial, and the two missing entries are the ones t
 - *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form* — signals as null displacements, the radar method, Einstein synchronisation, the $k$-factor, clock transport and the twin effect: the local clocks, their rates and their synchronisation.
 - *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* — the same exchange read on the informational direction, with the two biquaternion norms as the two ledgers.
 - *The Schrödinger Equation in Biquaternionic Form* — the kinematic sector equation that a rate of change of an informational state requires, and the place a physical duration enters the framework.
-- Carlo Rovelli, *Quantum Gravity*, Cambridge University Press, 2004 — the relational reading of time and the problem of time in the canonical theory.
+- Carlo Rovelli, *Quantum Gravity*, Cambridge University Press, 2004 — the relational interpretation of time and the problem of time in the canonical theory.
 - Don N. Page and William K. Wootters, *Evolution without evolution: dynamics described by stationary observables*, Physical Review D **27** (1983) 2885 — a clock subsystem as the reference of time in a stationary description.

@@ -17,7 +17,7 @@ $$
 \langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*}),
 $$
 
-the plain product, the product with the natural conjugation on the first argument, the product with the Hermitian conjugation on the second, and the product with both. This article sets them side by side: their conjugation, their linearity, their symmetry, their Gram matrix in the coefficient basis, their signature and the automorphism group each one defines. The comparison is the natural entry into the category, because it shows exactly what each pairing shares with the other three and where it differs. Their null sets, their value-one sets and their restrictions to the remarkable real subspaces belong to the comparison too, since those are the objects the four layers differ in most visibly; the subspace comparison is §*Remarkable Subspaces in Comparison* and §*The Two Readings*.
+the plain product, the product with the natural conjugation on the first argument, the product with the Hermitian conjugation on the second, and the product with both. This article sets them side by side: their conjugation, their linearity, their symmetry, their Gram matrix in the coefficient basis, their signature and the automorphism group each one defines. The comparison is the natural entry into the category, because it shows exactly what each pairing shares with the other three and where it differs. Their null sets, their value-one sets and their restrictions to the remarkable real subspaces belong to the comparison too, since those are the objects the four layers differ in most visibly; the subspace comparison is §*Remarkable Subspaces in Comparison* and §*The Two Interpretations*.
 
 The four conjugations of the algebra generate the Klein four-group $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$; they index the four pairings, the identity and the natural conjugation on the first argument and the identity and the Hermitian conjugation on the second. The fifth involution, the reversal $\flat=-{}^{*}$, gives the negative of the general plain sesquilinear form and is the only other pairing the four conjugations produce.
 
@@ -215,7 +215,7 @@ No **isotropic subspace beyond a line** lies inside a single one of the remarkab
 
 The restrictions themselves, subspace by subspace and form by form, are the subject of the four companion articles: *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*, *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions* and *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions*, one for each reading group.
 
-## The Two Readings
+## The Two Interpretations
 
 The remarkable subspaces are one set of subspaces carrying two form readings, and the comparison of the readings is the point of this section. The **algebra reading** is the general plain sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *Norm and Invertibility in the General Plain Algebra*, positive definite on all of $\mathbb{B}$; the **form reading** is the general quaternionic sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ of *The Krein Gram Matrix and the Restrictions of the Form*, of signature $(2,6)$.
 
@@ -235,7 +235,7 @@ which is the form $\langle\tilde{P},\tilde{Q}\rangle_{*}$ of the algebra reading
 
 The forms share one space and one basis, and the comparison is not complete with the table of §*The Forms in Comparison*: the set on which each diagonal vanishes, and the value-one set each diagonal singles out, are also objects of the comparison, and they are the objects the four layers differ in. The definite form has no null element beyond the origin; the three indefinite ones have cones, of two different kinds.
 
-**Definition.** The **null set** of a form $\Phi$ is the set $\{\tilde Q:\Phi(\tilde Q,\tilde Q)=0\}$.
+**Definition.** The **null set** of a form $\mathsf{M}_2$ is the set $\{\tilde Q:\Phi(\tilde Q,\tilde Q)=0\}$.
 
 **Theorem (the four null sets).** In the coefficient basis,
 

@@ -9,7 +9,7 @@ This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otime
 The division between what is established and what is interpretation is stated here and kept explicit.
 
 - **Established, and recomputed below.** Two route amplitudes add, $K = K_1 + K_2$, and the intensity is $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ with $\delta$ the relative phase; a common phase shift of both routes is unobservable. The which-path degree of freedom is a qubit whose state is an element $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ of $\mathbb{M}_+$. The fringe **visibility** is the length of the equatorial part of its Bloch vector, the **path predictability** is its polar part, and $V^2 + P^2 = |\mathbf{r}|^2 \le 1$, with equality if and only if $\tilde{\rho}$ is pure — that is, if and only if $\tilde{\rho}$ lies on the zero-divisor cone of $\mathbb{M}_+$. A which-path measurement, or full dephasing along the path axis, annihilates the equatorial part and with it the fringes. For spinor-valued routes, $I = I_1 + I_2 + 2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^\dagger\psi_2)$, and a spin overlap reduces the visibility.
-- **Interpretation.** Reading the fringe pattern as the projection of a rotating equatorial Bloch vector, and reading the two-slit arrangement as the place where a material-sector action is converted through the central phase into an informational-sector state, are geometric and structural readings of the algebra. The algebra is consistent with them; it does not force them.
+- **Interpretation.** Interpretation the fringe pattern as the projection of a rotating equatorial Bloch vector, and reading the two-slit arrangement as the place where a material-sector action is converted through the central phase into an informational-sector state, are geometric and structural interpretations of the algebra. The algebra is consistent with them; it does not force them.
 - **Gap, left visible.** The framework supplies the phase and the state geometry but not the **action**, the **measure**, or the space of paths; and it does not select which slit, or which screen point, a given detection realises. The first gap is inherited from the path-integral article, the second from the measurement-problem article; both are restated where they arise and collected in the open questions.
 
 One further finding is reported as a **limit on what the double slit demonstrates**. For a beam whose two routes carry the same spin state, the *spin-summed* two-path intensity is unchanged when the central root $i$ of the phase is replaced by a fixed non-central root $\hat{\mu}$; the difference between the two choices appears only under spin analysis, or when the two routes carry different spin states. The spin-summed double-slit pattern therefore does not by itself witness the centrality of the phase; the framework's grounds for the central root lie in the state-vector equation and in the complex structure of the state module, not in this pattern. The computation is in the section on the phase root below, and it is stated against the pull to claim more for the experiment than it shows.
@@ -70,7 +70,7 @@ Maxima occur where $d\sin\theta = m\lambda$ and nodes where $d\sin\theta = (m + 
 Two remarks keep this section honest.
 
 - **Finite slit width adds an envelope, which is standard.** A slit of finite width has its own diffraction pattern, and the observed intensity is the two-slit interference modulated by the single-slit envelope. Nothing about the biquaternion framework changes this; it is ordinary wave optics, and this article does not develop it.
-- **The numbers are inputs, not outputs.** The wavelength, the separation $d$, the distance $D$, and the action $S_j$ itself are not supplied by the algebra. What the biquaternion reading supplies is the *identification* of the $i$ in $e^{iS_j/\hbar}$ with the central scalar imaginary, the *location* of the exponent $iS_j/\hbar$ in $\mathbb{M}_-$, and the *statement* that only $\delta$ is observable. It does not supply the action, the measure, or the geometry; that is the path-integral article's central gap, and it is inherited here without change.
+- **The numbers are inputs, not outputs.** The wavelength, the separation $d$, the distance $D$, and the action $S_j$ itself are not supplied by the algebra. What the biquaternion interpretation supplies is the *identification* of the $i$ in $e^{iS_j/\hbar}$ with the central scalar imaginary, the *location* of the exponent $iS_j/\hbar$ in $\mathbb{M}_-$, and the *statement* that only $\delta$ is observable. It does not supply the action, the measure, or the geometry; that is the path-integral article's central gap, and it is inherited here without change.
 
 ## The Which-Path Qubit and the Bloch Ball
 
@@ -116,7 +116,7 @@ $$
 
 which was checked on random amplitudes independently of the derivation: the normalised intensity and $1 + r_1$ agreed to machine precision, and the reconstruction $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ from the Bloch components agreed with $\psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ to machine precision.
 
-**Interpretation.** Reading the fringe pattern as the projection of a rotating equatorial Bloch vector is a geometric reading. The algebra is consistent with it and makes it precise, but the algebra does not require the reading; the standard statement in terms of the two amplitudes is complete without it.
+**Interpretation.** Interpretation the fringe pattern as the projection of a rotating equatorial Bloch vector is a geometric interpretation. The algebra is consistent with it and makes it precise, but the algebra does not require the interpretation; the standard statement in terms of the two amplitudes is complete without it.
 
 ## Visibility, Predictability, and the Biquaternion-Norm Bound
 
@@ -138,7 +138,7 @@ $$
 V^2 + P^2 = |\mathbf{r}_\perp|^2 + r_\parallel^2 = |\mathbf{r}|^2 \le 1 .
 $$
 
-This was checked on random pure and mixed which-path states; the identity held to machine precision, and equality held exactly for the pure states and failed for the mixed ones. The bound has a clean biquaternion reading. The biquaternion norm of $\tilde{\rho}$ is
+This was checked on random pure and mixed which-path states; the identity held to machine precision, and equality held exactly for the pure states and failed for the mixed ones. The bound has a clean biquaternion interpretation. The biquaternion norm of $\tilde{\rho}$ is
 
 $$
 N(\tilde{\rho}) = \tilde{\rho}\,\tilde{\rho}^{\natural} = \tfrac14\bigl(1 - |\mathbf{r}|^2\bigr)e_0,
@@ -257,7 +257,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 
 **What is interpretation.**
 
-- The reading of the fringes as the projection of a rotating equatorial Bloch vector, and the reading of the arrangement as a conversion from the material to the informational sector, are structural and geometric readings. The algebra is consistent with them; it does not require them, and the standard amplitude language states the same results without them.
+- The interpretation of the fringes as the projection of a rotating equatorial Bloch vector, and the interpretation of the arrangement as a conversion from the material to the informational sector, are structural and geometric interpretations. The algebra is consistent with them; it does not require them, and the standard amplitude language states the same results without them.
 
 **What remains open.**
 
@@ -273,7 +273,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 
 3. **Spin-dependent routes from first principles.** The spin-dependent fringe formula above is standard once the route spinors differ. Does the framework produce the spin-path coupling of its own accord — for instance through a non-central phase generated by a spinor field equation — or must the route spinors be put in by hand? (Compare *The Path Integral in Biquaternionic Form*, open question 2.)
 
-4. **Does the cone reading add content?** The identity $V^2 + P^2 = 1 - 4\,\mathrm{Sc}(N(\tilde{\rho}))$ identifies the duality bound with the biquaternion-norm cone. Is that identification merely a restatement, or does the cone's Lorentzian geometry constrain interference in ways the standard inequality does not?
+4. **Does the cone interpretation add content?** The identity $V^2 + P^2 = 1 - 4\,\mathrm{Sc}(N(\tilde{\rho}))$ identifies the duality bound with the biquaternion-norm cone. Is that identification merely a restatement, or does the cone's Lorentzian geometry constrain interference in ways the standard inequality does not?
 
 5. **More than two paths.** The which-path state of a two-slit experiment is a qubit, and its state space is the Bloch ball. A three-slit experiment is a three-state system, whose framework state space would require the tensor or module extension that *Quantum Physics in Biquaternionic Form* leaves open. Does the cone picture survive, and in what dimension?
 

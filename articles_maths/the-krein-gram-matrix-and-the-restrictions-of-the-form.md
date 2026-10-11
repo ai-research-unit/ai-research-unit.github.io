@@ -4,7 +4,7 @@
 
 The general quaternionic sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ of this article is a general plain sesquilinear form of signature $(1,3)$ over $\mathbb{C}$ (respectively $(2,6)$ over $\mathbb{R}$), and its coefficients are the four signs $\varepsilon=(1,-1,-1,-1)$. This article collects the matrix side of that form: its **Gram matrix** in the coefficient basis, which is the sign matrix $E$ itself; the changes of basis that make the form canonical; the **Gram matrices and signatures of its restrictions** to the remarkable subspaces of *Introduction to the Remarkable Subspaces*; the orthogonality pattern of those restrictions; and the discriminant. The article is the matrix companion of the two articles of the same layer, *Krein Orthogonality and the Fundamental Decomposition* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*, and it fixes the conventions for all three.
 
-**Conventions.** $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $E=\mathrm{diag}(1,-1,-1,-1)$, and $\Phi$ the $2\times2$ matrix representation of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, so that $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\Phi(\tilde R)\Phi(\tilde S))$ and $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$.
+**Conventions.** $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $E=\mathrm{diag}(1,-1,-1,-1)$, and $\mathsf{M}_2$ the $2\times2$ matrix representation of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, so that $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde S))$ and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$.
 
 ## The Gram Matrix in the Coefficient Basis
 
@@ -49,33 +49,33 @@ of signature $(2,6)$.
 **Proposition (the form as a matrix trace).** For all biquaternions,
 
 $$
-\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\Phi(\tilde{Q})^{\dagger}\,\Phi(\tilde{Q}')\bigr)
-=\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde{Q}^{\natural})^{\dagger}\Phi(\tilde{Q}')\bigr),
+\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q})^{\dagger}\,\mathsf{M}_2(\tilde{Q}')\bigr)
+=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}^{\natural})^{\dagger}\mathsf{M}_2(\tilde{Q}')\bigr),
 $$
 
 where $\dagger$ is the conjugate transpose in the matrix algebra. For $\tilde{Q}=e_0+ie_1$ the model is
 
 $$
-\Phi(\tilde{Q})=\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
-\operatorname{adj}\Phi(\tilde{Q})=\begin{pmatrix}1&-1\\-1&1\end{pmatrix},\qquad
-\operatorname{adj}\Phi(\tilde{Q})^{\dagger}\Phi(\tilde{Q})=\begin{pmatrix}0&0\\0&0\end{pmatrix},
+\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
+\operatorname{adj}\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&-1\\-1&1\end{pmatrix},\qquad
+\operatorname{adj}\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}0&0\\0&0\end{pmatrix},
 $$
 
 of trace $0$, matching $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=|1|^{2}-|i|^{2}=0$: the element is isotropic and its matrix is singular, of rank one.
 
-**Proof.** $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\bar{\tilde{Q}}\tilde{Q}')=\mathrm{Sc}\bigl((\tilde{Q}^{\natural})^{*}\tilde{Q}'\bigr)$, because $(\tilde{Q}^{\natural})^{*}=\overline{\tilde{Q}}$; the trace identity $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\Phi(\tilde R)\Phi(\tilde S))$ of *The Matrix Element Representation and the Biquaternion Dynamics* then gives the result, and $\Phi(\tilde{Q}^{\natural})=\operatorname{adj}\Phi(\tilde{Q})$ with $\Phi$ a $*$-homomorphism gives the second form.
+**Proof.** $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\bar{\tilde{Q}}\tilde{Q}')=\mathrm{Sc}\bigl((\tilde{Q}^{\natural})^{*}\tilde{Q}'\bigr)$, because $(\tilde{Q}^{\natural})^{*}=\overline{\tilde{Q}}$; the trace identity $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde S))$ of *The Matrix Element Representation and the Biquaternion Dynamics* then gives the result, and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2$ a $*$-homomorphism gives the second form.
 
 **Corollary (the three trace expressions).** The bilinear form, the general plain sesquilinear form and the general quaternionic sesquilinear form are the three pairings
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)\operatorname{adj}\Phi(\tilde Q)\bigr),
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\operatorname{adj}\mathsf{M}_2(\tilde Q)\bigr),
 \qquad
-\tfrac12\operatorname{Tr}\bigl(\Phi(\tilde P)^{\dagger}\Phi(\tilde Q)\bigr),
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)^{\dagger}\mathsf{M}_2(\tilde Q)\bigr),
 \qquad
-\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\Phi(\tilde P)^{\dagger}\Phi(\tilde Q)\bigr),
+\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde P)^{\dagger}\mathsf{M}_2(\tilde Q)\bigr),
 $$
 
-so that each pairing is a Hilbert–Schmidt pairing of $\Phi(\tilde P)$ with $\Phi(\tilde Q)$, preceded by adjugation for the first and by adjugation of the conjugate transpose for the third.
+so that each pairing is a Hilbert–Schmidt pairing of $\mathsf{M}_2(\tilde P)$ with $\mathsf{M}_2(\tilde Q)$, preceded by adjugation for the first and by adjugation of the conjugate transpose for the third.
 
 ## The Canonical Basis and Sylvester's Law
 
@@ -207,7 +207,7 @@ and the four subspaces of signature $(1,3)$ are **non-degenerate**, $\mathbb{W}\
 
 ## Summary
 
-In the coefficient basis the general quaternionic sesquilinear form has the Gram matrix $G=\mathrm{diag}(1,-1,-1,-1)=E$, of determinant $-1$; in the real basis it is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$. In the $2\times2$ matrix representation the form is the Hilbert–Schmidt pairing $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde{Q})^{\dagger}\Phi(\tilde{Q}'))$, the adjugate and the conjugate transpose marking the Krein case among the three pairings. Sylvester's law gives $(p,q)=(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, the coefficient basis already being orthonormal. The restrictions to the remarkable subspaces are the positive definite centre $(2,0)$, the negative definite vector subspace $(0,6)$, and four copies of Minkowski space $(1,3)$ on the quaternion subspace, the anti-quaternion subspace and the two sectors; the centre and the vector subspace are mutual Krein-orthogonal complements, while the four $(1,3)$ subspaces are non-degenerate and not mutually orthogonal. The discriminant is the class of $-1$ over $\mathbb{R}$ for the form and for each restriction, and is trivial over $\mathbb{C}$. The same remarkable subspaces carry a second form reading, the positive definite general plain sesquilinear form, positive definite on every one of them, so that four of the remarkable subspaces are indefinite for the quaternion form and definite for the complex one; the comparison of the two readings is *Remarkable Subspaces and the Four General Products*, §*The Two Splits and the Two Readings*. The four real forms — the quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces — are the slices on which the form is real, each of signature $(1,3)$; in the real basis the mixed entries are purely imaginary, the realified Gram matrix is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$, and $(1,3)$ and $(2,6)$ are the complex and the real signature of one form.
+In the coefficient basis the general quaternionic sesquilinear form has the Gram matrix $G=\mathrm{diag}(1,-1,-1,-1)=E$, of determinant $-1$; in the real basis it is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$. In the $2\times2$ matrix representation the form is the Hilbert–Schmidt pairing $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q}'))$, the adjugate and the conjugate transpose marking the Krein case among the three pairings. Sylvester's law gives $(p,q)=(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, the coefficient basis already being orthonormal. The restrictions to the remarkable subspaces are the positive definite centre $(2,0)$, the negative definite vector subspace $(0,6)$, and four copies of Minkowski space $(1,3)$ on the quaternion subspace, the anti-quaternion subspace and the two sectors; the centre and the vector subspace are mutual Krein-orthogonal complements, while the four $(1,3)$ subspaces are non-degenerate and not mutually orthogonal. The discriminant is the class of $-1$ over $\mathbb{R}$ for the form and for each restriction, and is trivial over $\mathbb{C}$. The same remarkable subspaces carry a second form reading, the positive definite general plain sesquilinear form, positive definite on every one of them, so that four of the remarkable subspaces are indefinite for the quaternion form and definite for the complex one; the comparison of the two readings is *Remarkable Subspaces and the Four General Products*, §*The Two Splits and the Two Interpretations*. The four real forms — the quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces — are the slices on which the form is real, each of signature $(1,3)$; in the real basis the mixed entries are purely imaginary, the realified Gram matrix is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$, and $(1,3)$ and $(2,6)$ are the complex and the real signature of one form.
 
 ## Summary of Notation
 
@@ -215,7 +215,7 @@ In the coefficient basis the general quaternionic sesquilinear form has the Gram
 |---|---|
 | $G=E=\mathrm{diag}(1,-1,-1,-1)$ | The Gram matrix of the general quaternionic sesquilinear form in the coefficient basis |
 | $G_{\mathbb{R}}=\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ | The Gram matrix over $\mathbb{R}$; signature $(2,6)$ |
-| $\tfrac12\operatorname{Tr}(\operatorname{adj}\Phi(\tilde{Q})^{\dagger}\Phi(\tilde{Q}'))$ | The general quaternionic sesquilinear form in the $2\times2$ matrix representation |
+| $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q}'))$ | The general quaternionic sesquilinear form in the $2\times2$ matrix representation |
 | $(p,q)=(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | The inertia (Sylvester) |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{V}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ | The remarkable subspaces and their restrictions |
 | $\mathbb{W}^{\perp_{K}}$ | The Krein-orthogonal complement |

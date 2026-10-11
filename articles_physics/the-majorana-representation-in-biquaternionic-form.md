@@ -244,7 +244,7 @@ The Majorana representation is a representation of **pure** states; a mixed stat
 
 3. **Degenerate constellations.** When all the stars coincide the state is the coherent state along that axis, a highest-weight state of the corresponding component; for partial coincidences the polynomial has a multiple root, so the individual stars are no longer resolved by the roots on their own. How does the algebra handle the degeneration of the idempotents?
 
-4. **The geometric phase of the constellation.** For spin $j$ the geometric phase of a transported state is a sum over the stars of solid-angle terms; for spin-1/2 there is one star. Whether the multi-star formula has a natural algebraic reading is a question that belongs with the spin-$1$-and-above representation theory.
+4. **The geometric phase of the constellation.** For spin $j$ the geometric phase of a transported state is a sum over the stars of solid-angle terms; for spin-1/2 there is one star. Whether the multi-star formula has a natural algebraic interpretation is a question that belongs with the spin-$1$-and-above representation theory.
 
 5. **Empirical contact.** As elsewhere, the representation is standard and the framework reproduces it; whether it implies a measurable deviation is open.
 
@@ -292,6 +292,6 @@ For $N$ spin-1/2 particles in the symmetric subspace the constellation has $N$ s
 - R. Penrose, *The Road to Reality: A Complete Guide to the Laws of the Universe* (Knopf, 2004), for the geometry of spinors and the Bloch sphere.
 - A. R. Usha Devi, Sudha, and A. K. Rajagopal, "Majorana Representation of Symmetric Multiqubit States," *Quantum Information Processing* **11** (2012) 685–710, for the symmetric-state constellations.
 - M. Aulbach, D. Markham, and M. Murao, "The Maximally Entangled Symmetric State in Terms of the Geometric Measure," *New Journal of Physics* **12** (2010) 073025, for the entanglement geometry of symmetric states.
-- W. Ganczarek, M. Kuś, and K. Życzkowski, "Barycentric Measure of Quantum Entanglement," *Physical Review A* **85** (2012) 032328, for the barycentric reading of the constellation.
+- W. Ganczarek, M. Kuś, and K. Życzkowski, "Barycentric Measure of Quantum Entanglement," *Physical Review A* **85** (2012) 032328, for the barycentric interpretation of the constellation.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the spin-1/2 Bloch sphere and stereographic parametrisation.
 - A. Shapere and F. Wilczek, *Geometric Phases in Physics* (World Scientific, 1989), for the spinor holonomy that the Majorana map discards.

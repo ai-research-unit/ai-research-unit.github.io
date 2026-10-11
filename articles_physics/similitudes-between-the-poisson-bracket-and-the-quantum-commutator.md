@@ -8,7 +8,7 @@ $$
 \{f,g\} \;\longleftrightarrow\; \frac{1}{i\hbar}\,[\hat f,\hat g].
 $$
 
-This article is about that assignment: where it holds, and where it fails. Its thesis has to be stated at the outset, because the notation invites the opposite reading. The assignment is **not an isomorphism** of the two bracket algebras. It is a leading-order correspondence that becomes exact only in a limit, and the terms that spoil it are not technical noise: they are the content of the relation between the two theories.
+This article is about that assignment: where it holds, and where it fails. Its thesis has to be stated at the outset, because the notation invites the opposite interpretation. The assignment is **not an isomorphism** of the two bracket algebras. It is a leading-order correspondence that becomes exact only in a limit, and the terms that spoil it are not technical noise: they are the content of the relation between the two theories.
 
 Two structural facts organize everything below.
 

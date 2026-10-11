@@ -22,7 +22,7 @@ $$
 
 The first is the **left multiplication** of the product and the second is its **right multiplication**; the third is
 the **twisted right multiplication**, the closed mirror of the left family. The two-sided operators of the band are the
-products $L_{\tilde P}\varrho_{\tilde Q}$. The composition laws of the two families, and the reading of a multiplication
+products $L_{\tilde P}\varrho_{\tilde Q}$. The composition laws of the two families, and the interpretation of a multiplication
 as a process, belong to *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* and to *The
 Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*. This article states the one
 thing the composition laws do not: **which form the operators are adjoint for, and what that adjoint does**.
@@ -43,7 +43,9 @@ $$
 
 Every type criterion of the band is therefore a criterion on **one** parameter. This is the sharp contrast with the
 general plain algebra, whose form is the scalar part of its own product, whose adjoint is the transpose, and whose
-transpose **swaps the two sides** (*The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*). The
+transpose **swaps the two sides**, so that its one-sided criterion is a criterion on one parameter while its two-sided
+criteria are criteria on the **product** of two (*The Operators of the Ordinary Product: One-Sided, Two-Sided and the
+Sandwich*). The
 consequences multiply. The self-adjoint and the skew-adjoint one-sided operators are cut out by the sign character of
 the natural conjugation, so both sectors are populated — the centre and the vector subspace — where the plain row has a
 trivial skew sector. The norm enters every criterion: a multiplication scales the form by the norm of its parameter, the
@@ -144,7 +146,7 @@ sends $e_1$ to $-e_1$.
 material composition: the first slot is read through the natural conjugation and the second as it stands, so an element
 attached on the left and the same element attached on the right are different operations, and only the left attachment
 composes on the nose. The composition of two left multiplications is a left multiplication — the operations of the band
-form a monoid and compose associatively — although the product of two elements does not associate. The reading is the
+form a monoid and compose associatively — although the product of two elements does not associate. The interpretation is the
 corpus's: **the process is the map and the state is the idempotent** (*The Monoid of Acting Maps*), and here the process
 is the opposite monoid, the element being only a representative read through the conjugation.
 
@@ -173,7 +175,7 @@ frame is such a sum and not a single two-sided product.
 linear operation of the frame: the failure of associativity of the product is invisible at the level of the operators,
 which generate the full endomorphism algebra. What the product loses by its twisting of the first slot it recovers in
 its operator algebra, and the two-sided operator is again the carrier of the general linear action on the frame, as it
-is for the plain product. The reading is a naming of a proved algebraic fact and is labelled so.
+is for the plain product. The interpretation is a naming of a proved algebraic fact and is labelled so.
 
 ## The Adjoint of the Quaternionic Form Keeps the Sides
 
@@ -208,8 +210,10 @@ leaves the side alone: an operation attached before an argument is still attache
 parameter is conjugated. This is the operator content of the statement that the interval is the invariant form of a
 single attachment, so the form remembers the side on which an operation stands and forgets nothing of it. The contrast
 with the composition band is total: there the form is the scalar part of the product and cannot tell a left attachment
-from a right one, and its adjoint is the swap. That the swap belongs to the plain form alone is the reason no type
-criterion of the general plain algebra is a criterion on one parameter, while every type criterion of this band is; the
+from a right one, and its adjoint is the swap. That the swap belongs to the plain form alone is the reason the plain
+one-sided criterion is a criterion on the centrality of its single parameter and its skew sector is trivial, while its
+**two-sided** criteria are criteria on the **product** of its two parameters — proportional, central, vanishing — and
+every type criterion of this band is a criterion on one parameter; the
 comparison of the four adjoints is the crossing reader *The Operators of the Twelve Structures: Multiplication, Adjoint
 and Bracket*, which is not one of the twelve.
 
@@ -248,12 +252,12 @@ a criterion on one parameter and not on a pair.
 
 **Read as a physical statement.** The two populated sectors are the two ways a single parameter can be symmetric for the
 interval: a central parameter gives a self-adjoint multiplication, a pure parameter gives a skew-adjoint one, and a
-mixed parameter gives neither. The skew family is the vector subspace, of real dimension three, and it is the operator
+mixed parameter gives neither. The skew family is the vector subspace, of real dimension six, and it is the operator
 form of the statement that the material directions and the time direction are read by the interval with opposite signs;
-unlike the composition band, where the skew sector is trivial and no generator appears, this band carries a
-three-dimensional family of skew-adjoint multiplications. That family does not close under composition, the product of
+unlike the composition band, where the skew sector is trivial and no generator appears, this band carries a family of
+complex dimension three of skew-adjoint multiplications. That family does not close under composition, the product of
 two pure parameters being mixed in general, so the generators of the band are read through the bracket of the
-antisymmetric band and not through the multiplication. All of this is a reading of a proved algebraic criterion and is
+antisymmetric band and not through the multiplication. All of this is an interpretation of a proved algebraic criterion and is
 labelled so.
 
 | parameter $\tilde P$ | subalgebra | $L_{\tilde P}$ is $N$-self-adjoint | $N$-skew-adjoint | $N$-preserving |
@@ -280,7 +284,7 @@ and the same two identities hold for $\varrho_{\tilde P}$.
 *Proof.* The first is the multiplicativity of the norm, $N(\tilde P^{\natural}\tilde X)=N(\tilde P^{\natural})N(\tilde X)=N(\tilde P)N(\tilde X)$
 with $N(\tilde P^{\natural})=N(\tilde P)$; the determinant is *One-Sided Operators on the General Quaternionic Algebra
 of Biquaternions*, §*The Norm and the Determinant of a Multiplication*, where the multiplication is the Kronecker
-product of the matrix $\Phi(\tilde P)$ with $I_2$ and the determinant is $\det\Phi(\tilde P)^{2}=N(\tilde P)^{2}$.
+product of the matrix $\mathsf{M}_2(\tilde P)$ with $I_2$ and the determinant is $\det\mathsf{M}_2(\tilde P)^{2}=N(\tilde P)^{2}$.
 
 **Corollary (the form-preserving operators).** The one-sided operators preserving the quaternionic form are exactly the
 left and the twisted right multiplications by a parameter of **norm one**, and their group is the norm-one slice, of
@@ -328,13 +332,13 @@ twisted two-sided operator.
 
 **Read as a physical statement.** The interval scales by the norm of a multiplying parameter, so the multiplication of
 the band is a **conformal** map of the interval with conformal factor the norm, and the form-preserving ones are exactly
-the norm-one parameters, the Lorentz transformations. The determinant reading is the same statement squared, and it
-fixes the invertibility of the operator by the norm of the parameter. The multiplication law is the second reading: the
+the norm-one parameters, the Lorentz transformations. The determinant interpretation is the same statement squared, and it
+fixes the invertibility of the operator by the norm of the parameter. The multiplication law is the second interpretation: the
 composition of a two-sided operator with itself is the operator again, up to the norm of the parameter as a scalar, and
 this is unconditional in the band while the composition band carried it only when the product of the two parameters was
 central. The **norm is the scalar of the composition**: it is what the product of the two slots leaves behind, and it is
-the only obstruction to a two-sided operation being an automorphism. The readings are named **norm conformality** and
-**unconditional multiplicativity** and are labelled as readings.
+the only obstruction to a two-sided operation being an automorphism. The interpretations are named **norm conformality** and
+**unconditional multiplicativity** and are labelled as interpretations.
 
 ## The Operators Acting on the State Space
 
@@ -396,8 +400,8 @@ element only through its conjugate. The projectors are the plain ones, and the t
 space and of its complement are **exchanged** by the conjugation: the band's own left multiplication by the minimal
 idempotent projects onto the other ideal. This is a physical sharpening of the statement that the band's product
 recognises almost none of its own projectors: the element whose square vanishes defines the projector, and the element
-whose left multiplication projects is the conjugate of a plain idempotent. The readings are named **conjugated
-observables** and **exchanged ideals** and are labelled as readings.
+whose left multiplication projects is the conjugate of a plain idempotent. The interpretations are named **conjugated
+observables** and **exchanged ideals** and are labelled as interpretations.
 
 ## The Sandwich and the Inner Automorphism
 
@@ -433,7 +437,7 @@ natural conjugate, and the two coincide exactly on the norm-one slice, which is 
 the material sector is therefore the inner automorphism, and it is also the twisted two-sided operator, because the
 Lorentz parameters are precisely those of norm one; the two differ off the slice by the norm, and the norm is the mass
 parameter of the material sector. This is the operator form of the corpus's division of the parameters into the
-norm-one motions and the rest, and it is a reading and not a derivation: the Lorentz action itself and the double cover
+norm-one motions and the rest, and it is an interpretation and not a derivation: the Lorentz action itself and the double cover
 are *Biquaternion Rotations and Lorentz Transformations*.
 
 ## A Worked Case
@@ -529,10 +533,11 @@ declare.
   the material composition is *The Interval as the Square and the Charge of the Material Composition*, and the
   orientation of the composition is *Why the Material Composition Is Oriented and Cannot Measure*. This article owns
   none of them.
-- **The state space is used, not studied.** The module $S$ and its complement are the two sibling articles of the band,
-  used here only for the action of the operators.
+- **The state space is used, not studied.** The module $S$ and its complement are the subject of *The Spinor Space as a
+  Module and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*; they are
+  used here only to display the action of the operators.
 
-**What the framework does not claim.** The reading does not derive the Lorentz transformation, the light cone or the
+**What the framework does not claim.** The interpretation does not derive the Lorentz transformation, the light cone or the
 mass shell from the operator calculus; it reads the three causal classes of the parameters that the corpus already uses.
 It does not identify a physical symmetry with the inner automorphisms; it states that the symmetries of the interval
 inside this family are the norm-one multiplications and their two-sided companions. And it does not claim that the
@@ -560,7 +565,7 @@ multiplicative-up-to-a-scalar ones are exactly the scalar multiples of the twist
 actions restricted to the state space are a basis of its operators, differing from the plain basis only by the sign of
 the vector directions, with the two diagonal projectors exchanged by the natural conjugation.
 
-**Readings.** That the adjoint of the band is the **parameter conjugation on one side**, so that the interval can tell a
+**Interpretations.** That the adjoint of the band is the **parameter conjugation on one side**, so that the interval can tell a
 left attachment from a right one and a type is a property of a single parameter; that the norm is the **conformal factor**
 of a multiplication and the **scalar of the two-sided composition**, and that its sign partitions the parameters into the
 timelike, the null and the spacelike; that the **null parameters are the causal cone** and the norm-one parameters are the
@@ -584,17 +589,19 @@ lightlike propagation. The sign of the norm multiplies under the composition, so
 the timelike, the null and the spacelike is compatible with the product, and this is the **causal division** of the
 parameters: the band's own composition law carries the causal character of a product as the product of the causal
 characters, the table of the four cells being *The Interval as the Square and the Charge of the Material Composition*.
-The second reading is architectural: the composition of the band defines a monoid of operators and not an algebra, the
+The second interpretation is architectural: the composition of the band defines a monoid of operators and not an algebra, the
 product being unital on one side alone; the operations compose and the elements do not, which is the operator form of
-the orientation of the material composition and of its refusal to measure. The third reading is the
+the orientation of the material composition and of its refusal to measure. The third interpretation is the
 two-sided one. The sandwich of the band is the conjugation sandwich $\tilde X\mapsto\tilde A\tilde X\tilde A^{\natural}$,
 quadratic in its parameter and defined on every element, and it is the inner automorphism scaled by the norm; on the
 norm-one slice — the Lorentz parameters — it is the inner automorphism, so the Lorentz action is the sandwich, while off
-the slice the two differ by the norm, which is the mass. The fourth reading is the type criterion: the symmetric
-multiplications are those by a central or a pure parameter, so the two observable-like sectors of the band are the
-central direction and the three spatial directions of the vector subspace, and the skew-adjoint family is the vector
-subspace itself — the operator picture of the one positive and the three negative directions of the interval. All four
-are readings of the proved operator facts and are labelled as readings, not as derivations.
+the slice the two differ by the norm, which is the mass. The fourth interpretation is the type criterion: a one-sided operator
+is self-adjoint exactly for a central parameter and skew-adjoint exactly for a pure one, so the two populated sectors of
+the band are the centre, which carries the time direction, and the vector subspace, which carries the three spatial
+directions; the two-sided operator is self-adjoint on the union of the two, and the skew family is the vector subspace
+itself — the operator picture of the one negative time direction and the three positive spatial directions of the
+interval. All four
+are interpretations of the proved operator facts and are labelled as interpretations, not as derivations.
 
 ## Summary
 

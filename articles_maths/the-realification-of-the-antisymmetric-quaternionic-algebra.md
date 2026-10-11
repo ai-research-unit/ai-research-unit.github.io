@@ -16,7 +16,7 @@ The product is antisymmetric quaternionic bilinear over $\mathbb{C}$, hence $\ma
 
 Every ring-theoretic property of the product is the same in the two readings, by the dictionary of the same article, §*The Four Effects on a Structure*: a condition written with the addition, the product, $e_0$ and quantification over the elements is a statement about the ring, and the change of scalars leaves the additive group, the product and the identity untouched. The vanishing of the square, the alternation, the absence of a unit on either side, the vanishing of the scalar part and the failure of the Jacobi identity are of that kind, and the witness of the failure is the same in the two readings: the cyclic sum of the block is a polynomial identity with integer coefficients in the structure constants, so the triple $(e_0,e_1,e_2)$ of the complex basis has the cyclic sum $-e_3$ over $\mathbb{R}$ as well (*Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*, §*The Jacobi Identity*).
 
-What the real reading adds is the real shape of the objects the product carries. The image of the product is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three and **real dimension six**, and the centre $\mathbb{C}_{\mathbb{B}}$, of real dimension two, meets it at the origin alone: the two dimensions are the two readings of one subspace. The features that the real reading brings and the complex reading does not are gathered in §*What Is Specific to the Real Reading*.
+What the real reading adds is the real shape of the objects the product carries. The image of the product is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three and **real dimension six**, and the centre $\mathbb{C}_{\mathbb{B}}$, of real dimension two, meets it at the origin alone: the two dimensions are the two readings of one subspace. The features that the real reading brings and the complex reading does not are gathered in §*What Is Specific to the Real Interpretation*.
 
 ## The Second Slot and the Centre
 
@@ -85,7 +85,7 @@ L_{e_0}\tilde X=\mathbf X,\qquad L_{e_0}^2=L_{e_0},\qquad R_{e_0}=-L_{e_0},
 $$
 it has real rank six, its image is the realification of $\mathrm{Vect}(\mathbb{B})$ and its kernel is the realification of the centre, of real dimension two. The identity and its interpretation are *The Specificities of the Antisymmetric Quaternionic Algebra*. The block's own invariant form is too degenerate to determine the adjoint of a multiplication operator, the whole vector subspace lying in its radical (*The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, §*The Adjoint of the Operator with Respect to a Form*), so the block supplies no adjoint of its own; the adjoints the four realified forms of the space give to left multiplication are the four of *The Four Pairings of the Biquaternion Algebra*, §*The Forms in Comparison*, and they are identities of the plain product and not of this block.
 
-## What Is Specific to the Real Reading
+## What Is Specific to the Real Interpretation
 
 Four features appear in the real reading of the block and not in its complex reading.
 

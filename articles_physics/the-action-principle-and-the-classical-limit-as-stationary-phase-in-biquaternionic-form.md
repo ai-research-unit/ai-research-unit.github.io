@@ -216,7 +216,7 @@ $$
 
 is the energy of a curve in the positive-definite metric that the biquaternion norm defines on $\mathbb{H}_{\mathbb{B}}$. Its extremals are the straight lines $\ddot{\tilde q}=0$ found in the preceding article, and the geodesic equation of the biquaternion-norm metric is the same equation. The length functional $\int\sqrt{N(d\tilde q)}$ has the same extremals as the energy functional at fixed duration, by the standard argument: extremising the energy at fixed duration selects the geodesics parametrised proportionally to arc length, which are exactly the extremals of the length.
 
-The geodesic reading has a Hamiltonian form, and it is the same statement. On the cotangent bundle the biquaternion-norm metric induces the Hamiltonian
+The geodesic interpretation has a Hamiltonian form, and it is the same statement. On the cotangent bundle the biquaternion-norm metric induces the Hamiltonian
 
 $$
 H(\tilde q,\tilde p)=\frac{1}{2m}\,p_\mu p_\mu=\frac{N(\tilde p)}{2m},
@@ -339,7 +339,7 @@ $$
 
 so the Hamilton–Jacobi equation is a single scalar equation for the central-valued function $W$.
 
-The Hamilton–Jacobi equation is the **eikonal equation** for the phase of the stationary-phase construction: writing the phase as $W/\hbar$, the leading-order equation of the oscillatory integral is exactly $\partial_tW+H(\tilde q,\partial_{\tilde q}W)=0$. In the classical reading, $W$ is a generating function of a canonical transformation; the constant surfaces $W=\text{const}$ are the wavefronts of the classical phase, and the characteristic directions of the Hamilton–Jacobi equation are the classical trajectories. Where the characteristic flow has a caustic, the stationary points of the action coalesce, and the stationary-phase prefactor changes.
+The Hamilton–Jacobi equation is the **eikonal equation** for the phase of the stationary-phase construction: writing the phase as $W/\hbar$, the leading-order equation of the oscillatory integral is exactly $\partial_tW+H(\tilde q,\partial_{\tilde q}W)=0$. In the classical interpretation, $W$ is a generating function of a canonical transformation; the constant surfaces $W=\text{const}$ are the wavefronts of the classical phase, and the characteristic directions of the Hamilton–Jacobi equation are the classical trajectories. Where the characteristic flow has a caustic, the stationary points of the action coalesce, and the stationary-phase prefactor changes.
 
 The **characteristic function** $\mathcal{W}(\tilde q)$ of a time-independent problem satisfies $H(\tilde q,\partial_{\tilde q}\mathcal{W})=E$. For the free particle, $H=N(\tilde p)/2m$ and the equation is $N(\partial_{\tilde q}\mathcal{W})=2mE$, whose solution is $\mathcal{W}=\tilde{\mathbf p}\cdot\tilde{\mathbf q}$ with $N(\tilde{\mathbf p})=2mE$; the surfaces $\mathcal{W}=\text{const}$ are planes and the characteristics are straight lines, in agreement with the free-particle geodesics. For a periodic system the action variables $I_k=\oint p_k\,dq_k$ are the periods of the characteristic function, and they are the adiabatic invariants of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*.
 

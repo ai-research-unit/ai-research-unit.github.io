@@ -42,7 +42,7 @@ $S^3$ is the maximal compact subgroup of $\mathbb{B}^\times_1$, with Lie algebra
 
 ## The Unitary Subgroup and the Defining Module
 
-The algebra acts on the defining module $\mathbb{C}^2$ by the defining representation, in which a biquaternion acts as its $2\times2$ matrix $\Phi(\tilde{Q})$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). The elements that preserve the standard Hermitian form of $\mathbb{C}^2$ are exactly those with $\tilde{Q}^{*}\tilde{Q}=e_0$, and they form a compact subgroup of the group of units,
+The algebra acts on the defining module $\mathbb{C}^2$ by the defining representation, in which a biquaternion acts as its $2\times2$ matrix $\mathsf{M}_2(\tilde{Q})$ (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). The elements that preserve the standard Hermitian form of $\mathbb{C}^2$ are exactly those with $\tilde{Q}^{*}\tilde{Q}=e_0$, and they form a compact subgroup of the group of units,
 $$
 U(2)=\{\tilde{Q}\in\mathbb{B}^{\times}:\tilde{Q}^{*}\tilde{Q}=e_0\},
 $$
@@ -55,7 +55,7 @@ $$
 U(2)=S^3\cdot U(1)\cong (SU(2)\times U(1))/\{\pm(1,1)\}.
 $$
 
-**Proof.** If $\tilde{Q}\in U(2)$ then $|\det\Phi(\tilde{Q})|=1$, so $P=\tilde{Q}\,(\det\Phi(\tilde{Q}))^{-1/2}\in U(2)$ has determinant one, hence lies in $S^3$ by the identification of the determinant-one unitary elements with the unit quaternions; the scalar $(\det\Phi(\tilde{Q}))^{1/2}$ is a unit complex number. The intersection $\{\pm e_0\}$ is the set of scalars $\lambda e_0$ of determinant $\lambda^2=1$, and the kernel of $S^3\times U(1)\to U(2)$, $(\tilde q,\lambda)\mapsto\lambda\tilde q$, is $\{\pm(1,1)\}$.
+**Proof.** If $\tilde{Q}\in U(2)$ then $|\det\mathsf{M}_2(\tilde{Q})|=1$, so $P=\tilde{Q}\,(\det\mathsf{M}_2(\tilde{Q}))^{-1/2}\in U(2)$ has determinant one, hence lies in $S^3$ by the identification of the determinant-one unitary elements with the unit quaternions; the scalar $(\det\mathsf{M}_2(\tilde{Q}))^{1/2}$ is a unit complex number. The intersection $\{\pm e_0\}$ is the set of scalars $\lambda e_0$ of determinant $\lambda^2=1$, and the kernel of $S^3\times U(1)\to U(2)$, $(\tilde q,\lambda)\mapsto\lambda\tilde q$, is $\{\pm(1,1)\}$.
 
 **Remark.** The norm-one group $\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$ is strictly larger: it acts on the defining module too, but it does not preserve the Hermitian form, and unlike $U(2)$ it is non-compact.
 

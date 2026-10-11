@@ -86,9 +86,9 @@ The pair operator is therefore self-adjoint exactly when the derived product of 
 
 **Proof.** The diagonal clause is the theorem above; for $y=cx$ with central Hermitian $c$ the two derived products are $x\star(cx)=xx^{*}c$ and $(cx)\star x=cxx^{*}=xx^{*}c$, equal. The matrix witness is the computation displayed.
 
-## The Readings and the Reversal
+## The Interpretations and the Reversal
 
-### The Three Readings under the Adjoint
+### The Three Interpretations under the Adjoint
 
 **Theorem (the readings and their adjoints).** For all $x,y,z\in A$,
 

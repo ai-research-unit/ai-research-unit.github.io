@@ -147,7 +147,7 @@ $$
 \boxed{\;\lambda_k \le 0 \quad\text{for every completely positive trace-preserving semigroup.}\;}
 $$
 
-The same conclusion follows from the Kadison–Schwarz inequality for the unital case, and it is the dynamical form of the contraction used in the companion article *Coarse-Graining and the Biquaternion Entropy Functional* to prove the monotonicity of the entropy. It has a sharp reading: **the framework's physical, memoryless irreversible dynamics cannot amplify a distinction.** Information is lost, never gained, along such a flow; the exponents are the rates of loss.
+The same conclusion follows from the Kadison–Schwarz inequality for the unital case, and it is the dynamical form of the contraction used in the companion article *Coarse-Graining and the Biquaternion Entropy Functional* to prove the monotonicity of the entropy. It has a sharp interpretation: **the framework's physical, memoryless irreversible dynamics cannot amplify a distinction.** Information is lost, never gained, along such a flow; the exponents are the rates of loss.
 
 ## The Dephasing Semigroup
 

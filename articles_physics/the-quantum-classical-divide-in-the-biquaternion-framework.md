@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The dispute over whether "classical entanglement" is genuine entanglement has been argued for over two decades, and it shows no sign of settling. On one side, Eberly and collaborators have argued that entanglement is a **vector-space property** — present in any theory whose states live in a tensor-product vector space — so that there is no essential distinction between quantum and classical entanglement. On the other side, Karimi and Boyd have responded that "entanglement is a property of the quantum world; classical systems need not apply," pointing to the absence of non-locality in the classical cases. Both sides can point to experiments that support their reading, and the dispute has become partly substantive and partly terminological.
+The dispute over whether "classical entanglement" is genuine entanglement has been argued for over two decades, and it shows no sign of settling. On one side, Eberly and collaborators have argued that entanglement is a **vector-space property** — present in any theory whose states live in a tensor-product vector space — so that there is no essential distinction between quantum and classical entanglement. On the other side, Karimi and Boyd have responded that "entanglement is a property of the quantum world; classical systems need not apply," pointing to the absence of non-locality in the classical cases. Both sides can point to experiments that support their interpretation, and the dispute has become partly substantive and partly terminological.
 
 A recent paper by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024) proposes a way out of this impasse. Their claim is operational: the distinction between quantum and classical non-separability is not in the states, not in the non-locality, not in the number of particles involved, and not in the mathematical non-separability itself. It is in **the operations performed**. Quantum entanglement involves **two projective measurements** on the two partitions of the Hilbert space, producing statistical correlations between their outcomes. Classical non-separability involves **one projective measurement** plus one **unitary filtering or sorting operation**, producing deterministic correlations between the filter setting and the single measurement outcome. The paper presents this as the decisive criterion.
 
@@ -103,7 +103,7 @@ This is not a coincidence. It is a structural fact of the algebra: the two kinds
 
 ## The Four Subsets Mapped to the Framework
 
-The paper's Figure 1 partitions non-separable states into nested subsets according to four properties: two objects, non-locality, two measurements, mathematical non-separability. The framework has a natural reading of each subset, in terms of which of the two partitions supports an idempotent measurement.
+The paper's Figure 1 partitions non-separable states into nested subsets according to four properties: two objects, non-locality, two measurements, mathematical non-separability. The framework has a natural interpretation of each subset, in terms of which of the two partitions supports an idempotent measurement.
 
 ### Subset I: Two objects
 
@@ -174,11 +174,11 @@ The structural refinement is not part of the paper's criterion, and the paper do
 
 ### What the framework adds
 
-**1. A natural algebraic home for the criterion.** The operational criterion — count the idempotents applied to the two partitions — is the framework's reversible/irreversible dichotomy, applied to non-separable states. The framework already distinguishes unitary from idempotent acting elements for independent reasons, and the operational criterion emerges as the physical reading of this algebraic distinction in the specific setting of non-separability.
+**1. A natural algebraic home for the criterion.** The operational criterion — count the idempotents applied to the two partitions — is the framework's reversible/irreversible dichotomy, applied to non-separable states. The framework already distinguishes unitary from idempotent acting elements for independent reasons, and the operational criterion emerges as the physical interpretation of this algebraic distinction in the specific setting of non-separability.
 
 **2. A structural reason for the criterion.** The framework suggests that the count of idempotents reflects whether the non-separable element is fundamental (quantum) or derived (classical). This is not required by the operational criterion, and the criterion does not depend on it, but it gives the criterion a structural interpretation in terms of the material/informational split of the algebra.
 
-**3. A candidate reading of "excitation" vs. "mode function."** The paper's distinction — an excitation is measurable, a mode function is a frame — is expressed in the framework as the distinction between elements of $\mathbb{M}_+$ (excitations) and elements of the general algebra $\mathbb{B}$ (mode functions and field configurations). This is a clean home for the paper's central observation.
+**3. A candidate interpretation of "excitation" vs. "mode function."** The paper's distinction — an excitation is measurable, a mode function is a frame — is expressed in the framework as the distinction between elements of $\mathbb{M}_+$ (excitations) and elements of the general algebra $\mathbb{B}$ (mode functions and field configurations). This is a clean home for the paper's central observation.
 
 ### What remains open
 
@@ -194,7 +194,7 @@ The structural refinement is not part of the paper's criterion, and the paper do
 
 Korolkova, Sánchez-Soto, and Leuchs propose an operational criterion for the quantum–classical divide in non-separability: two idempotents is quantum, one idempotent and one unitary is classical. The biquaternion framework has a natural home for this criterion in its reversible/irreversible dichotomy — unitary elements vs. idempotent elements of the algebra — and it expresses the criterion in its native vocabulary.
 
-Beyond expressing the criterion, the framework suggests a *structural reason* for it: the count of idempotents reflects whether the non-separable element is a fundamental state of the informational sector (quantum) or a derived coherence matrix of a deeper classical field configuration in the material sector (classical). This structural reading is not required by the operational criterion, but it is the framework's way of interpreting why the criterion holds.
+Beyond expressing the criterion, the framework suggests a *structural reason* for it: the count of idempotents reflects whether the non-separable element is a fundamental state of the informational sector (quantum) or a derived coherence matrix of a deeper classical field configuration in the material sector (classical). This structural interpretation is not required by the operational criterion, but it is the framework's way of interpreting why the criterion holds.
 
 The paper and the framework are complementary. The paper tells us what to look for operationally; the framework tells us where in the algebra the criterion lives. Together they sharpen the picture of the quantum–classical divide in non-separability, in a way that neither does alone. What remains open is the same open question as before: what dynamics generates the classical field configurations, and how does the cross-sector coupling work. Neither the paper nor the framework resolves that, and neither is likely to, until the framework produces an empirical prediction the standard operational criterion does not have.
 

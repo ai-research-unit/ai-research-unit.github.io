@@ -29,8 +29,8 @@ identity — and a check performed on the real basis finds no failure at all. Th
 bracket is therefore a statement about the algebra as a **complex** space, and a real-form computation,
 however extensive, cannot see it.
 
-The article owns the failure's reading: the witness, its value, why the witness needs a complex element,
-what a real-form check would report, and the negative reading that no gauge algebra is obtained. It defers
+The article owns the failure's interpretation: the witness, its value, why the witness needs a complex element,
+what a real-form check would report, and the negative interpretation that no gauge algebra is obtained. It defers
 the computation to the mathematics article *The Conjugate Cross Product and the Jacobi Failure of the
 Antisymmetric Quaternionic Sesqualgebra*; the comparison of the failing brackets to *The 12 Products of the Biquaternion Complex Space*; the matrix models to *The Antisymmetric Quaternionic
 Sesqualgebra in the $2\times2$ and $4\times4$ Matrix Element Representations*; the subspaces to *Remarkable Subspaces under the Antisymmetric
@@ -159,7 +159,7 @@ the antisymmetric plain bilinear product with the antisymmetric quaternionic ses
 symmetric quaternionic bilinear product with the symmetric plain sesquilinear product. The count $12$
 against $10$ is therefore the **total size of what the real forms erase**, and each coincidence is one
 place where a real element cannot tell a naturally conjugated operation from a plain one. Offered **as a
-reading**, the fall is the algebraic measure of the complex structure of the space: a classical, real
+interpretation**, the fall is the algebraic measure of the complex structure of the space: a classical, real
 description carries ten operations where the complex space carries twelve, and it follows that **if one
 member of a coincident pair satisfies an identity and the other fails it, no real-form computation can
 report the difference** — which is exactly this article's caution, one pair of the two. The algebra proves
@@ -169,19 +169,19 @@ framework's, and the count is a count on a basis and not an invariant.
 ## The Negative Reading: No Gauge Algebra
 
 A bracket that fails the Jacobi identity is not a Lie bracket, and a bracket that is not a Lie bracket
-generates no Lie algebra. The negative reading is therefore direct and it is referred, not restated: the
+generates no Lie algebra. The negative interpretation is therefore direct and it is referred, not restated: the
 antisymmetric gauge product does not supply the internal Lie algebra of the framework, and no gauge group
 is read from it. The ceiling of the framework's gauge reach, and the reason the biquaternion algebra
 reaches $SU(2)$ and not $SU(3)$, are *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2)
 but Not SU(3)*; the catalogue of the algebra's obstructions is *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*;
 and the map that places the three failing brackets among the twelve operations is *The 12 Products of the Biquaternion Complex Space*.
 
-**The positive reading, stated briefly.** The failure is not a defect to be repaired; it is a
-**characteristic** of the operation, and it is one of the two facts that fix the reading of the fourth
+**The positive interpretation, stated briefly.** The failure is not a defect to be repaired; it is a
+**characteristic** of the operation, and it is one of the two facts that fix the interpretation of the fourth
 block. The block's product has no unit and no associativity on the symmetric side and no Lie bracket on the
 antisymmetric side; what it has is an indefinite pairing and a bracket that carries a direction without
 organising a Lie algebra. The corpus reads the block as gauge **because** its invariants are pairings and
-its bracket is not a gauge algebra, and the negative reading is the boundary that keeps the word from
+its bracket is not a gauge algebra, and the negative interpretation is the boundary that keeps the word from
 being over-read. The pairing's indefiniteness is the work of the natural conjugation of the first slot, and
 the bracket's failure to close is **shared by both slots**: the plain antisymmetric part $\mathrm{APA}$ is
 a Lie bracket, the first-slot conjugation $\mathrm{AQA}$ is not, and the second-slot star spoils the
@@ -192,12 +192,12 @@ unphysical metric, and the bracket's failure does not touch the gauge theory, wh
 pairing.
 
 **The defect is not repaired by a real-form check.** The caution above says that a real-form computation is
-blind to the failure. The sharper statement, and the reason the negative reading is a statement about the
+blind to the failure. The sharper statement, and the reason the negative interpretation is a statement about the
 **complex** operation, is that the blindness is not **repairable by linear combination**. The defect lives
 in the complexified algebra: it vanishes on the real span of the basis and reappears as soon as a complex
 coefficient enters, and no real-linear combination of the real-form values can conjure it back. Read on the
 algebra rather than on a computation, the operation is therefore not the bracket of a real Lie algebra of
-matrices over the real form, and the negative reading — *no gauge algebra* — is a statement about
+matrices over the real form, and the negative interpretation — *no gauge algebra* — is a statement about
 $\mathrm{AQS}$ and not about a particular choice of basis or of variables. The methodological companion of
 this paragraph is a positive rule: a bracket of the algebra must be tested on **complex** elements, because
 the real form is exactly the place where the complex structure of $\mathbb{B}$ is invisible.
@@ -211,27 +211,27 @@ triples. The closure one can form from the operation is therefore a **vector spa
 defect does not shrink under closure, it is inherited by the generated span. The name is the article's; the
 dimension count and the vanishing of the cyclic sum are recomputed. The upshot for the framework is that the
 antisymmetric half generates a **direction space** — the axial vectors it returns — and not a gauge algebra,
-which is the negative reading stated in its sharpest algebraic form.
+which is the negative interpretation stated in its sharpest algebraic form.
 
 ### Named Readings of the Invisibility
 
-Four further readings of the same invisibility are recorded here, each under a name of its own and each labelled a reading rather than a theorem; the invisibility they rest on is the body's.
+Four further readings of the same invisibility are recorded here, each under a name of its own and each labelled an interpretation rather than a theorem; the invisibility they rest on is the body's.
 
-- **Complex-structure obstruction.** The invisibility of the failure on the real form is read as a statement about the **complex structure** of the algebra: the obstruction lives in the complexification, and a computation restricted to the real span cannot see it because the real form is the locus where the complex structure is erased. The reading turns the methodological rule into a physical one — the obstruction is a complex (chiral) effect, and a purely real description is blind to it — and its boundary is that the algebra supplies the blindness and not a measured chirality.
+- **Complex-structure obstruction.** The invisibility of the failure on the real form is read as a statement about the **complex structure** of the algebra: the obstruction lives in the complexification, and a computation restricted to the real span cannot see it because the real form is the locus where the complex structure is erased. The interpretation turns the methodological rule into a physical one — the obstruction is a complex (chiral) effect, and a purely real description is blind to it — and its boundary is that the algebra supplies the blindness and not a measured chirality.
 - **Non-closure as anomaly.** The inheritance of the defect under closure — the generated span is a vector space and not an algebra — is read as an **anomaly-shaped** statement: a consistency condition that holds on the classical (real) description fails on the full (complex) one, and the failure does not cancel as the structure is closed up. The name is offered by analogy with the anomaly of a classical symmetry that fails at the quantum level; the boundary is sharp, since the algebra supplies the inherited failure and no quantisation.
-- **Classical blindness.** The fact that a real-form check reports the obstruction as absent is read as a **methodological** statement with physical content: a classical, real description of the frame cannot separate the member of a coincident pair that satisfies the Jacobi identity from the member that fails it. The name is the physical reading of the twelve-to-ten fall of *The 12 Products of the Biquaternion Complex Space*, and it is stated there as a caution about computations and here as a reading about descriptions.
-- **Complex engagement as a $\mathbf{T}$-odd seat.** The failure is carried by the central imaginary alone: the operation coincides with the closing real bracket exactly where the coefficients are real, and fails only where the complex structure is engaged. Offered as a **labelled speculation**, one may read that engagement as a $\mathbf{T}$-odd seat: the description in which the bracket fails is the one that carries the central imaginary, and the framework's map between the real description and that one is the **Wick rotation**, the analytic continuation to imaginary time $t \to -i\tau$ (*The Wick Rotation in the Biquaternion Universe*, *Other Remarkable Subspaces*); the seat is therefore the complexification of the time coordinate and not a reversal $t \to -t$. The boundary is sharp and is the reason the reading is labelled: the algebra supplies the complex engagement and no arrow of time, and it supplies no $CP$-violating phase — the framework's EDM article records that the framework has no $CP$-violating phase of its own (*The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure*) — so the name $\mathbf{T}$-odd here denotes the engagement of the complex time coordinate and not a measured asymmetry.
+- **Classical blindness.** The fact that a real-form check reports the obstruction as absent is read as a **methodological** statement with physical content: a classical, real description of the frame cannot separate the member of a coincident pair that satisfies the Jacobi identity from the member that fails it. The name is the physical interpretation of the twelve-to-ten fall of *The 12 Products of the Biquaternion Complex Space*, and it is stated there as a caution about computations and here as an interpretation about descriptions.
+- **Complex engagement as a $\mathbf{T}$-odd seat.** The failure is carried by the central imaginary alone: the operation coincides with the closing real bracket exactly where the coefficients are real, and fails only where the complex structure is engaged. Offered as a **labelled speculation**, one may read that engagement as a $\mathbf{T}$-odd seat: the description in which the bracket fails is the one that carries the central imaginary, and the framework's map between the real description and that one is the **Wick rotation**, the analytic continuation to imaginary time $t \to -i\tau$ (*The Wick Rotation in the Biquaternion Universe*, *Other Remarkable Subspaces*); the seat is therefore the complexification of the time coordinate and not a reversal $t \to -t$. The boundary is sharp and is the reason the interpretation is labelled: the algebra supplies the complex engagement and no arrow of time, and it supplies no $CP$-violating phase — the framework's EDM article records that the framework has no $CP$-violating phase of its own (*The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure*) — so the name $\mathbf{T}$-odd here denotes the engagement of the complex time coordinate and not a measured asymmetry.
 
 ## The Limits
 
 - **The failure is a property of $\mathrm{AQS}$ and not of every antisymmetric part.** The plain
-antisymmetric part is a Lie bracket, and the negative reading concerns the three brackets spoiled by a
+antisymmetric part is a Lie bracket, and the negative interpretation concerns the three brackets spoiled by a
 conjugation.
 - **The witness count is a computation on the basis and not an invariant.** The number $72$ of failing
 triples on the eight-element basis is reported as the shape of the failure; it is not a theorem and it
 changes with the basis.
 - **The failure is not a failure of the block's physics.** The block's job is the gauge pairing and the
-direction it carries, not the generation of a gauge algebra; the negative reading closes the second job
+direction it carries, not the generation of a gauge algebra; the negative interpretation closes the second job
 and does not touch the first.
 - **The matrix-model statement is cited, not derived.** That the failure reappears in the two matrix
 models of the block, where the operation is the nested commutator with the adjugate, is *The
@@ -250,9 +250,9 @@ $ie_2$; on the eight-element basis $\{e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3\}$ exa
 triples fail. The comparison of the three failing brackets is reproduced from *The 12 Products of the Biquaternion Complex Space*, and the computation from *The Conjugate Cross Product and the
 Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*.
 
-**Reading.** That the Jacobi failure is a property of the complex operation and invisible on the real
+**Interpretation.** That the Jacobi failure is a property of the complex operation and invisible on the real
 forms, and that a real-form check of the bracket is therefore blind to it; that the blindness is not
-repairable by linear combination, so the negative reading is a statement about the complex operation; that
+repairable by linear combination, so the negative interpretation is a statement about the complex operation; that
 the operation does not close to a Lie algebra even though its values span the whole vector subspace, so it
 generates a direction space and not an algebra; and that the blindness is one instance of the general fall
 of the twelve operations to ten on the real part, so that the count $12$ against $10$ is read as the
@@ -280,12 +280,12 @@ the real quaternion subspace the conjugate in the second slot is the identity, t
 *coincides* with the plain Lie bracket $\mathrm{APA}$, and every real-basis triple has cyclic sum zero. The
 failure therefore lives on the **complex** elements: the smallest witness uses $ie_2$, and a real-form
 check of the bracket — the natural first move in a quaternion setting — reports it as a Lie bracket and is
-wrong. The negative reading is that a bracket failing Jacobi generates no Lie algebra, so the
+wrong. The negative interpretation is that a bracket failing Jacobi generates no Lie algebra, so the
 antisymmetric gauge product does not supply the internal gauge algebra; the ceiling and the obstruction are
 *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *What the
 Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*. The block's product carries an
 invariant indefinite pairing and a bracket that carries a direction without organising a Lie algebra, and
-that is the reading the band closes with.
+that is the interpretation the band closes with.
 
 ## Summary of Notation
 
@@ -310,6 +310,6 @@ that is the reading the band closes with.
 - Mathematics article *The Antisymmetric Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-antisymmetric-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.md`), for the nested commutator on the regular model.
 - Mathematics article *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the behaviour of the bracket on the remarkable subspaces.
 - Companion article *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, for the product whose failure this is.
-- Companion article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the negative reading and the reach of the internal action.
+- Companion article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the negative interpretation and the reach of the internal action.
 - Companion article *What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions*, for the catalogue of the algebra's obstructions.
 - Companion article *The Four General Products and Their Physical Readings*, for the map that places the failing brackets among the twelve operations.

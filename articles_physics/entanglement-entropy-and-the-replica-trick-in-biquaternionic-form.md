@@ -18,7 +18,7 @@ This article asks what entanglement entropy and the replica trick are in the biq
 
 The article proceeds as follows. Entanglement entropy and the Rényi entropies are defined, with the entropy as their $n\to1$ limit. The replica trick is recalled in its field-theoretic form and restated in finite dimension. The replica structure of the biquaternion tensor power is set out, with the shift operator and the swap. A two-qubit biquaternion state is worked out completely, its reduced state, its Rényi entropies and the $n\to1$ limit being computed and tabulated. The article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$; on the tensor power the trace is the product trace, $\mathrm{Tr}(\tilde A_1\otimes\cdots\otimes\tilde A_n)=\prod_i\mathrm{Tr}(\tilde A_i)$. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, states and the Bloch ball those of *The GNS Construction in the Biquaternion Framework*, and the entropy closed form that of *Relative Entropy and the Biquaternion Framework*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$; on the tensor power the trace is the product trace, $\mathrm{Tr}(\tilde A_1\otimes\cdots\otimes\tilde A_n)=\prod_i\mathrm{Tr}(\tilde A_i)$. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, states and the Bloch ball those of *The GNS Construction in the Biquaternion Framework*, and the entropy closed form that of *Relative Entropy and the Biquaternion Framework*.
 
 ## Entanglement Entropy and Rényi Entropies
 
@@ -127,7 +127,7 @@ $$
 $$
 so the two reduced states have the same spectrum, $S_A=S_B$, and the same replica moments $Z_n=\sum_i\lambda_i^n$. In the biquaternion framework the bipartite algebra $\mathbb{B}\otimes\mathbb{B}$ has complex dimension sixteen and the modules on which pure states live are smaller; for a two-qubit pure state the Schmidt decomposition has at most two terms, which is why the worked example below has two eigenvalues and why the reduced state is a Bloch-ball state.
 
-The **entanglement spectrum** is the set $\{-\log\lambda_i\}$, the spectrum of the modular Hamiltonian of the reduced state, by the first-law companion article. Its spacing controls the entanglement, and its two limits are the two extreme cases: a product state has one Schmidt coefficient equal to one and the rest zero, so the entanglement spectrum is a single level at zero and $S_A=0$; a maximally entangled state has all nonzero coefficients equal, so the spectrum is degenerate and $S_A$ is maximal. The replica moments are the power sums of $e^{-\varepsilon_i}$ with $\varepsilon_i$ the entanglement energies, so the Rényi entropies are free-energy differences of the entanglement spectrum: with $\tilde\rho_A=e^{-K}$ and $Z_n=\mathrm{Tr}\,e^{-nK}$, and writing $F(T)=-T\log\mathrm{Tr}\,e^{-K/T}$ for the free energy of the spectrum at temperature $T$, one has $S_n=\frac{n}{n-1}\big[F(1/n)-F(1)\big]$ — the standard reading, available in the framework because the entanglement spectrum is the spectrum of an ordinary $\mathbb{M}_+$ element.
+The **entanglement spectrum** is the set $\{-\log\lambda_i\}$, the spectrum of the modular Hamiltonian of the reduced state, by the first-law companion article. Its spacing controls the entanglement, and its two limits are the two extreme cases: a product state has one Schmidt coefficient equal to one and the rest zero, so the entanglement spectrum is a single level at zero and $S_A=0$; a maximally entangled state has all nonzero coefficients equal, so the spectrum is degenerate and $S_A$ is maximal. The replica moments are the power sums of $e^{-\varepsilon_i}$ with $\varepsilon_i$ the entanglement energies, so the Rényi entropies are free-energy differences of the entanglement spectrum: with $\tilde\rho_A=e^{-K}$ and $Z_n=\mathrm{Tr}\,e^{-nK}$, and writing $F(T)=-T\log\mathrm{Tr}\,e^{-K/T}$ for the free energy of the spectrum at temperature $T$, one has $S_n=\frac{n}{n-1}\big[F(1/n)-F(1)\big]$ — the standard interpretation, available in the framework because the entanglement spectrum is the spectrum of an ordinary $\mathbb{M}_+$ element.
 
 ## Worked Example: a Two-Qubit Biquaternion State
 
@@ -214,7 +214,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 ## Open Questions
 
-**1. The replica shift and the sector structure.** The cyclic shift $\mathsf{C}_n$ permutes the tensor factors. Is there a reading of $\mathsf{C}_n$ in terms of the material/informational decomposition of $\mathbb{B}^{\otimes n}$, and does the shift's expectation factor across the sectors?
+**1. The replica shift and the sector structure.** The cyclic shift $\mathsf{C}_n$ permutes the tensor factors. Is there an interpretation of $\mathsf{C}_n$ in terms of the material/informational decomposition of $\mathbb{B}^{\otimes n}$, and does the shift's expectation factor across the sectors?
 
 **2. The many-mode replica moments.** For a state of $\mathbb{B}^{\otimes m}$ with a bipartition into several modes, the reduced state has $2^{m_A}$ eigenvalues and the moments are power sums. Do these reproduce, in a regulated chain, the scaling of the field-theoretic entanglement entropy that the area law describes?
 
@@ -222,7 +222,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 **4. The swap and the modular Hamiltonian.** The swap operator and the modular Hamiltonian of the first-law companion article are both built from the reduced state. Is there an operator identity relating them at $n=2$, in the spirit of the Rényi entropy's relation to the modular flow at integer $n$?
 
-**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the reading from standard quantum information theory is derived.
+**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum information theory is derived.
 
 ## Summary
 

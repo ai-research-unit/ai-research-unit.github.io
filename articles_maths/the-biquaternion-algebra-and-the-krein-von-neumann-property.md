@@ -86,7 +86,7 @@ of complex dimension $16$.
 
 **Corollary (the bicommutant theorem is not contradicted, but is not available).** The envelope contains $J$ and therefore satisfies the $J$-bicommutant theorem of *Krein–von Neumann Algebras*. The biquaternion algebra $\mathcal{M}$ itself does not contain $J$, and its bicommutant is $\mathcal{M}$, which is not $\dagger$-closed. So $\mathcal{M}^{cc}=\mathcal{M}$ holds while $\mathcal{M}$ is not a Krein–von Neumann algebra: the hypothesis $J\in\mathcal{M}$ of the bicommutant theorem cannot be dropped, and the left regular image of the biquaternion algebra is a distinguished witness of the failure.
 
-## The Definite Reading
+## The Definite Interpretation
 
 **Proposition (the definite case).** With $J=\mathrm{id}$ the general quaternionic sesquilinear form is the definite form $\langle\cdot,\cdot\rangle_{*}$, the adjoint of the representation is the Hermitian adjoint, $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$, and $\mathcal{M}$ is an ordinary von Neumann algebra of the Hilbert space $\mathbb{B}$, of complex dimension $4$. Hence, by the definite case of *Krein–von Neumann Algebras*, $\mathcal{M}$ is a Krein–von Neumann algebra.
 

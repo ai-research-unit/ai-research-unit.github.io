@@ -40,7 +40,7 @@ $$
 
 **Remark (the parity is the only new datum).** Over the trivial involution of the base the tensor involution is $R$-linear, because $\varsigma(\lambda) = \lambda$, and the whole construction is the bilinear one. It is $\varsigma$-semilinear and it is $R$-linear exactly when the tensor product is annihilated by the defect $\varsigma - \mathrm{id}$ of the base, that is, when every $\varsigma(\lambda) - \lambda$ acts as zero on it; for a tensor product faithful over $R$ that happens only at $\varsigma = \mathrm{id}$, and the twist is then visible at every nontrivial $\varsigma$, some scalar acting by $\lambda$ on one side of the identity and by $\varsigma(\lambda) \neq \lambda$ on the other. With $\varsigma \neq \mathrm{id}$ the map can be $R$-linear only in the degenerate reading in which the datum is changed on the annihilator, the collapse examples of *Examples of Sesqualgebras*, §*The Zero Product*. The distinction between $\varsigma = \mathrm{id}$ and $\varsigma \neq \mathrm{id}$ is therefore the only thing that separates the tensor involution from its bilinear counterpart, for objects over which the two scalar rules are visible at all.
 
-### The Two Readings
+### The Two Interpretations
 
 **Definition.** The **envelope** of the tensor product is the associative product
 

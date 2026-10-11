@@ -116,7 +116,7 @@ identified with the pairs $(\tilde C_+,\tilde C_-)$. Separately, the filled Juli
 
 **Remark (the larger symmetry).** The split-biquaternion family has the product symmetry $\mathrm{Aut}(\mathbb{H})\times\mathrm{Aut}(\mathbb{H})\rtimes\mathbb{Z}/2$ acting on the pairs, where the factor swap and the two independent rotation groups are available; the biquaternion family has only the diagonal symmetry of the conjugations. **The product structure enlarges the symmetry as it enlarges the simplification, and the symmetric split-biquaternion fractals are exactly the pairs of symmetric quaternion fractals.**
 
-## The Readings of the Square and the Open Questions
+## The Interpretations of the Square and the Open Questions
 
 **Remark (the reading of the square).** The formula $\tilde Q\mapsto\tilde Q^2$ is read here with the split-biquaternion algebra product, the associative product of the algebra and the only reading under which the idempotents are central and the family factors into two quaternion families. The other bilinear products carried by the underlying real space give different maps, whose reading is the subject of the biquaternion thread and is not the family of this article; **the split-biquaternion family is defined by the algebra product, and the statement is the product decomposition proved above.**
 

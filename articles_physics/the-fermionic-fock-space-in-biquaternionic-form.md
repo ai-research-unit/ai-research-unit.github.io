@@ -233,7 +233,7 @@ $$
 \langle\hat H\rangle=\mathrm{Tr}(\tilde P\hat H)=2\,\mathrm{Sc}(\tilde P\hat H) ,
 $$
 
-and the identity between the two expressions was checked on a Hermitian $\rho$: $2\,\mathrm{Sc}(\rho)=\mathrm{Tr}(\rho)$ to machine precision. Two remarks fix the reading.
+and the identity between the two expressions was checked on a Hermitian $\rho$: $2\,\mathrm{Sc}(\rho)=\mathrm{Tr}(\rho)$ to machine precision. Two remarks fix the interpretation.
 
 First, the state and the observable are both in $\mathbb{M}_+$; the material sector $\mathbb{M}_-$ carries the generators and the *field*, not the states. This is the sector assignment the framework runs on, and the Fock construction respects it.
 

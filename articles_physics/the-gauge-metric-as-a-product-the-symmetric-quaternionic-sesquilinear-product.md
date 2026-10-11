@@ -39,7 +39,7 @@ The antisymmetric half is read in *The Cross Product of a
 Vector with Its Conjugate: the Antisymmetric Gauge Product*; this article keeps to the symmetric half,
 except where the split itself must be stated.
 
-The article owns the reading of the symmetric half as a product: the rule, the value, the two symmetries,
+The article owns the interpretation of the symmetric half as a product: the rule, the value, the two symmetries,
 the absence of a unit, the failure of the Jordan identity, and the sense in which the operation is the
 invariant pairing of the gauge side of the frame. It defers the metric itself — its signature, its inertia
 $(1,3)$ over the complex coefficients and $(2,6)$ over the real parameters, its fundamental decomposition
@@ -169,7 +169,7 @@ $e_0$ and the vector part is a complex vector in
 $\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; neither annihilates the other, and the two are read in the
 same element. Neither is the whole of the value, and neither was assigned the name of a part by the split.
 
-**The strain reading of the value.** The two projections have the shapes of the two elementary deformations of a frame, and the correspondence is exact. The scalar part is a **trace**, $K=\mathrm{Sc}(\tilde P\bullet\tilde Q)$, and a trace read on a frame is a **conformal factor**: it changes the scale and leaves the directions alone. The vector part is **traceless** — it is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ and carries no $e_0$ component — and a traceless symmetric part read on a frame is a **shear**: it changes the shape and leaves the volume. The symmetric gauge product is therefore read as a **frame-deformation operator**: its value is one scale and one shape, and the statement that the value lies in no subspace of the remarkable subspaces is the statement that a genuine deformation mixes the two grades. The reading is bounded by the same caution as the theorem it dresses: one value has at most a scalar and a vector part, and it is the **image** of the operation, not one of its values, whose real span is the whole algebra.
+**The strain interpretation of the value.** The two projections have the shapes of the two elementary deformations of a frame, and the correspondence is exact. The scalar part is a **trace**, $K=\mathrm{Sc}(\tilde P\bullet\tilde Q)$, and a trace read on a frame is a **conformal factor**: it changes the scale and leaves the directions alone. The vector part is **traceless** — it is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ and carries no $e_0$ component — and a traceless symmetric part read on a frame is a **shear**: it changes the shape and leaves the volume. The symmetric gauge product is therefore read as a **frame-deformation operator**: its value is one scale and one shape, and the statement that the value lies in no subspace of the remarkable subspaces is the statement that a genuine deformation mixes the two grades. The interpretation is bounded by the same caution as the theorem it dresses: one value has at most a scalar and a vector part, and it is the **image** of the operation, not one of its values, whose real span is the whole algebra.
 
 **The mixed term as the sector-mixing term.** The vector part of the value is where the two sectors meet, and it is worth naming it. The vector part is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$, and its components run over the six real directions of the vector subspace, three of them material ($e_k$) and three informational ($ie_k$); the scalar part $K$ couples only same-grade coefficients, and the mixed term is what couples the **scalar coefficient of one argument to the vector coefficients of the other**. The symmetric gauge product is therefore the algebraic seat of the framework's **matter–information mixing**: the term the corpus reads in the imaginary part of the biquaternion norm as the coupling of the material and informational sectors is carried here by the vector part of the value, and the **centrality criterion** of the band — $Q_0\overline{Q_k}\in i\mathbb{R}$ for every $k$ — is the **no-mixing** condition under which the coupling vanishes and the value returns to the centre. The name is the article's; the algebra of the term is the theorem above.
 
@@ -256,7 +256,7 @@ state space reconstructed from the symmetric half, which is the content of *Why 
 Gauge Structure and Not a State Space* and is referred to it. The failure does not say that the operation
 is useless: it says that its job is not the job of a state structure.
 
-**The failure given a positive name.** The identity can be read forwards as well, and the reading is worth
+**The failure given a positive name.** The identity can be read forwards as well, and the interpretation is worth
 the sentence. An operation whose Jordan identity held would be an **observable-like** multiplication: the
 multiplication of a Jordan algebra, from which a cone, an order and a spectrum are read. The failure says
 that the symmetric gauge pairing is therefore **curvature-like rather than probability-like** — it belongs
@@ -279,13 +279,13 @@ positive on the centre and negative on the vector subspace, with the fundamental
 $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$, the inertia $(1,3)$ over the complex
 coefficients and $(2,6)$ over the real parameters, the isometry group $U(1,3)$, and the fundamental
 symmetry $J={}^{\natural}$, the natural conjugation, that turns the indefinite form into the definite one.
-The metric itself, its signature and its Klein–Gupta–Bleuler reading are *The Fourth Product and Its
+The metric itself, its signature and its Klein–Gupta–Bleuler interpretation are *The Fourth Product and Its
 Indefinite Metric*; the form read as the multiplication of the block, with its two Gram matrices, its
 isotropic elements, its restriction to the remarkable subspaces and its invariance under the block, is *The Krein
 Form as a Product on the Symmetric Quaternionic Sesqualgebra*; and here the point is only that the pairing
 is **a product**, and that the product's scalar part is where the metric lives.
 
-**The reading of the operation.** The corpus reads the symmetric half as the **invariant indefinite
+**The interpretation of the operation.** The corpus reads the symmetric half as the **invariant indefinite
 pairing of the gauge structure**: the pairing that belongs to the transformation side of the frame, the
 side whose invariants are the pairings left unchanged, as opposed to the state side whose invariants are
 positive numbers. That the pairing is the invariant one, and which transformations leave it alone, are
@@ -298,7 +298,7 @@ transformation theory to those articles.
 
 ### What the Word Metric Does Not Mean
 
-Four cautions bound the reading, and they are the ledger's own.
+Four cautions bound the interpretation, and they are the ledger's own.
 
 1. **An indefinite pairing is a metric in the algebraic sense and not a norm.** There is no positivity, no
 distance and no length: $K(e_1,e_1)=-1$ and $K(e_0,e_0)=+1$, and a negative squared length is a datum
@@ -313,7 +313,7 @@ form $H$, not by $K$; the positivity of $H$ and the absence of ghosts are *Mass,
 Positivity of the Dagger*, and the two forms are not interchangeable.
 
 4. **No scale is attached here.** The algebra has no scale; the coupling, the charge and $\hbar$ enter at
-the physical reading, in the places the corpus has already fixed (*Action, Units, and the Constants of
+the physical interpretation, in the places the corpus has already fixed (*Action, Units, and the Constants of
 the Biquaternion Universe*). The Krein form is a structure, not a dimensionful metric.
 
 ## One Insertion, Read Twice
@@ -325,7 +325,7 @@ $K$ — that is the metric — and inserting it into the first slot of the plain
 the bracket, since the plain antisymmetric part $\mathrm{APA}$ is a Lie bracket and its first-slot
 conjugation $\mathrm{AQA}$ is not. The **metric and the obstruction are one insertion read twice**, in the
 precise sense that the first-slot insertion produces the metric outright and spoils the closure of the
-*plain* bracket; the reading is offered as the framework's grouping and labelled as such, and it does not
+*plain* bracket; the interpretation is offered as the framework's grouping and labelled as such, and it does not
 claim that the closure failure is the first slot's alone — the paragraph below records that the second slot
 spoils it a second time, so the metric is the first slot's work and the non-closure is shared.
 
@@ -365,12 +365,12 @@ the centre, and that fact is the whole of the second article of the band.
 
 ## Named Readings of the Symmetric Half
 
-Four further readings of the symmetric gauge product are recorded here, each under a name of its own and each labelled a reading rather than a theorem; the identities they rest on are the body's.
+Four further readings of the symmetric gauge product are recorded here, each under a name of its own and each labelled an interpretation rather than a theorem; the identities they rest on are the body's.
 
 - **Swap-conjugation symmetry.** The product is conjugate-commutative rather than commutative, so its values pair an element with the conjugate of the other; read physically, the pairing defines a **frame read in the conjugate**, and the ordering of the two arguments is immaterial while the conjugation is not. The name is the symmetric-half counterpart of §*The Bracket as an Anti-Linear Pairing* of *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*: there the conjugation makes the pairing antisymmetric, here it makes the pairing symmetric. The name is not **conjugate frame**, which the corpus already uses for the anti-holomorphic frame of a complex manifold.
-- **Lightlike pairing.** The scalar part of the value is $K(\tilde P,\tilde Q)$, and a pair with vanishing scalar part, $K(\tilde P,\tilde Q)=0$, is read as a **lightlike (null) pair** of the gauge frame: the pairing-level shadow of the zero-divisor condition, since the scalar part of the value is exactly $K$ and the cone of the interval is $\{N=0\}$. The name is chosen to avoid the corpus's word **eikonal**, which is reserved for the short-wavelength equation on a phase, $(\nabla\varphi)^{2}=\alpha^{2}$, of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* and of *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*; the relation between the two is that both express the zero-divisor (light-cone) condition, there on a gradient and here on a pair. The reading is the pairing-level counterpart of the null states, and its boundary is the article's: the algebra supplies the vanishing of the scalar part and no wave, no front and no propagation.
-- **Frame strain.** The value is read as a **deformation of the frame**, its scalar part a conformal factor and its traceless vector part a shear, so that the symmetric half is the product that deforms an element rather than rotating it. The reading is stated in §*The Metric Word, Earned* in the language of the frame-deformation operator and is repeated here as a named reading so that it can be cited; the boundary is that no elastic or continuum model stands behind the name.
-- **Internal volume form.** The trace pairing of the row, $\mathrm{Tr}(\tilde P\bullet\tilde Q)=2\,\mathrm{Sc}(\tilde P\bullet\tilde Q)=2K(\tilde P,\tilde Q)$, is read as an **internal volume** of the gauge frame: an isometry of $K$ preserves the pairing, and the volume-preserving subgroup in the matrix model is $SU(1,3)\subset SL(4,\mathbb{C})$, while a general isometry of $U(1,3)$ has determinant of modulus one and need not preserve the determinant. The name separates the volume reading from the metric reading of the same form, and the boundary is that the algebra supplies the trace and the two groups and no measured volume.
+- **Lightlike pairing.** The scalar part of the value is $K(\tilde P,\tilde Q)$, and a pair with vanishing scalar part, $K(\tilde P,\tilde Q)=0$, is read as a **lightlike (null) pair** of the gauge frame: the pairing-level shadow of the zero-divisor condition, since the scalar part of the value is exactly $K$ and the cone of the interval is $\{N=0\}$. The name is chosen to avoid the corpus's word **eikonal**, which is reserved for the short-wavelength equation on a phase, $(\nabla\varphi)^{2}=\alpha^{2}$, of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* and of *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*; the relation between the two is that both express the zero-divisor (light-cone) condition, there on a gradient and here on a pair. The interpretation is the pairing-level counterpart of the null states, and its boundary is the article's: the algebra supplies the vanishing of the scalar part and no wave, no front and no propagation.
+- **Frame strain.** The value is read as a **deformation of the frame**, its scalar part a conformal factor and its traceless vector part a shear, so that the symmetric half is the product that deforms an element rather than rotating it. The interpretation is stated in §*The Metric Word, Earned* in the language of the frame-deformation operator and is repeated here as a named interpretation so that it can be cited; the boundary is that no elastic or continuum model stands behind the name.
+- **Internal volume form.** The trace pairing of the row, $\mathrm{Tr}(\tilde P\bullet\tilde Q)=2\,\mathrm{Sc}(\tilde P\bullet\tilde Q)=2K(\tilde P,\tilde Q)$, is read as an **internal volume** of the gauge frame: an isometry of $K$ preserves the pairing, and the volume-preserving subgroup in the matrix model is $SU(1,3)\subset SL(4,\mathbb{C})$, while a general isometry of $U(1,3)$ has determinant of modulus one and need not preserve the determinant. The name separates the volume interpretation from the metric interpretation of the same form, and the boundary is that the algebra supplies the trace and the two groups and no measured volume.
 
 ## The Limits
 
@@ -383,9 +383,9 @@ positivity of the framework lives on the plain sesquilinear row and not here. Th
 sesquilinear products are not two halves of one state structure.
 - **The article does not claim a gauge algebra.** The symmetric half is not a Lie structure, and the
 antisymmetric half fails the Jacobi identity, so no gauge algebra is read from either; the negative
-reading is referred to *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not
+interpretation is referred to *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not
 SU(3)* and to *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*.
-- **The invariance reading is a reading.** That the pairing is *the* invariant pairing of the gauge side is
+- **The invariance interpretation is an interpretation.** That the pairing is *the* invariant pairing of the gauge side is
 the framework's grouping, stated as such and not proved here; the transformation theory that makes it
 precise is cited and not restated.
 
@@ -404,9 +404,9 @@ value lies in no one of the remarkable subspaces for a general pair and the real
 Sesqualgebra of Biquaternions*, *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
 Sesqualgebra*, *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* and *The 12 Products of the Biquaternion Complex Space*.
 
-**Reading.** That the symmetric half is the invariant indefinite pairing of the gauge structure, that its
+**Interpretation.** That the symmetric half is the invariant indefinite pairing of the gauge structure, that its
 scalar part is the Krein form and its vector part the mixed term, and that the two projections of its
-value sit side by side in one element. Three further names for the same facts, each a reading: the value
+value sit side by side in one element. Three further names for the same facts, each an interpretation: the value
 read as a **frame-deformation operator**, the scalar part a conformal factor and the traceless vector part
 a shear; the mixed term read as the **sector-mixing term**, so that the centrality criterion of the band
 is the no-mixing condition; and the failure of the Jordan identity read forwards, so that the pairing is
@@ -421,7 +421,7 @@ particular transformation group beyond the cited articles leaves the pairing inv
 
 ## Physical Readings
 
-The gauge metric reads as the pairing of the transformations rather than of the states, and its signature is the reading of the gauge side: it is indefinite, so it selects no direction of positivity, which is why a gauge calibration can compare two internal frames and cannot rank them. Read for invariance, this is the second member of the invariant pair: the sesquilinear row of the grid is what a change of the local complex structure does not move, so the gauge metric and the probability form travel together while the interval and the composition do not.
+The gauge metric reads as the pairing of the transformations rather than of the states, and its signature is the interpretation of the gauge side: it is indefinite, so it selects no direction of positivity, which is why a gauge calibration can compare two internal frames and cannot rank them. Read for invariance, this is the second member of the invariant pair: the sesquilinear row of the grid is what a change of the local complex structure does not move, so the gauge metric and the probability form travel together while the interval and the composition do not.
 
 ## Summary
 
@@ -471,5 +471,5 @@ the reason the two symmetric sesquilinear products do not divide the state side 
 - Companion article *The Four General Products and Their Physical Readings*, for the map of the four general products and the four jobs.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the positivity of the probability form and the state cone.
 - Companion article *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, for the antisymmetric half of the same row.
-- Companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* (`articles_physics/the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.md`), named for the eikonal equation that the **lightlike pairing** reading does not claim.
+- Companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* (`articles_physics/the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.md`), named for the eikonal equation that the **lightlike pairing** interpretation does not claim.
 - Companion article *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* (`articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.md`), named for the same word.

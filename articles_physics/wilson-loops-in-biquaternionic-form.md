@@ -181,7 +181,7 @@ $$
 \langle W(\Box_{L\times T})\rangle \;\sim\; e^{-iT\,V(L)} ,
 $$
 
-so that the loop is the worldline of a pair of static sources separated by $L$ and the exponent is the potential between them. An area law $e^{-\sigma LT}$ corresponds to $V(L)=\sigma L$, a linearly rising potential, which is confinement; a perimeter law corresponds to a potential that flattens at large $L$, which is screening. In the abelian free theory the evaluation of the previous sections gives the Coulomb potential $V(L)\sim g^2/L$ with the perimeter divergence removed, and the biquaternion reading is that the loop's Gaussian average is the self-interaction of the material line current through the material propagator. The potential is therefore the quantity that the loop expectation value encodes, and the confinement question is the question of whether the exponent grows with $L$ or with the perimeter.
+so that the loop is the worldline of a pair of static sources separated by $L$ and the exponent is the potential between them. An area law $e^{-\sigma LT}$ corresponds to $V(L)=\sigma L$, a linearly rising potential, which is confinement; a perimeter law corresponds to a potential that flattens at large $L$, which is screening. In the abelian free theory the evaluation of the previous sections gives the Coulomb potential $V(L)\sim g^2/L$ with the perimeter divergence removed, and the biquaternion interpretation is that the loop's Gaussian average is the self-interaction of the material line current through the material propagator. The potential is therefore the quantity that the loop expectation value encodes, and the confinement question is the question of whether the exponent grows with $L$ or with the perimeter.
 
 ### The Biquaternion Form of the Order Parameter
 
@@ -236,7 +236,7 @@ Three consequences are worth stating separately. The untraced holonomy is an ele
 
 ## Open Questions
 
-1. **A sector-theoretic reading of the trace.** The Wilson loop is the trace of a holonomy: an $\mathbb{M}_+$ trace of an object whose logarithm is in $\mathbb{M}_-$. Is there an intrinsic pairing between the two sectors that selects the trace, in the way the bilinear form $\mathrm{Sc}(\tilde{Q}\bar{Y})$ pairs elements of $\mathbb{B}$, and does it reproduce the matrix trace? A positive answer would make the loop's gauge invariance a statement about the two sectors rather than about a chosen representation.
+1. **A sector-theoretic interpretation of the trace.** The Wilson loop is the trace of a holonomy: an $\mathbb{M}_+$ trace of an object whose logarithm is in $\mathbb{M}_-$. Is there an intrinsic pairing between the two sectors that selects the trace, in the way the bilinear form $\mathrm{Sc}(\tilde{Q}\bar{Y})$ pairs elements of $\mathbb{B}$, and does it reproduce the matrix trace? A positive answer would make the loop's gauge invariance a statement about the two sectors rather than about a chosen representation.
 
 2. **The order parameter and the sector split.** The confinement transition is a change in the long-distance behaviour of $\langle W(C)\rangle$. Is there a biquaternionic order parameter — an element whose norm measures the transition, rather than a functional of loops — and does the transition appear as a change in a property of the algebra's own objects?
 

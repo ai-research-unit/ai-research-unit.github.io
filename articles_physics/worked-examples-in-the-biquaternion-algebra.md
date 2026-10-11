@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the remarkable subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Idempotents of the General Plain Algebra*; here they are only exhibited. The physical reading is attached to each computation, so that the dictionary of *The Four-Vector Element Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
+This article works the computations of the biquaternion algebra out on explicit elements. The aim is a reference of concrete facts: the multiplication table of the basis, the remarkable subspaces exhibited on one element, the four conjugations applied to that element, and explicit zero-divisor pairs. The idempotents and the minimal left ideals are the general subject of *Idempotents of the General Plain Algebra*; here they are only exhibited. The physical interpretation is attached to each computation, so that the dictionary of *The Four-Vector Element Representation of Biquaternions* and of *Conventions in the Biquaternion Universe* can be checked arithmetically.
 
 **Notation.** A biquaternion is written in developed form
 $$
@@ -51,7 +51,7 @@ $$
 $$
 and the two pieces are distinguished by the signs: $\tilde{Q}_+$ has real scalar part and purely imaginary vector part — the **informational sector** — while $\tilde{Q}_-$ has purely imaginary scalar part and real vector part — the **material sector**.
 
-**Physical reading.** One element is read at once as four numbers: the real part of $\tilde{Q}_-$ is $3$ in the space slots together with an imaginary time slot, exactly the form $ict\,e_0+\mathbf{x}$ of a material four-position, while $\tilde{Q}_+$ is of the form $ct'\,e_0+i\mathbf{x}'$ of an informational four-position. The example therefore shows the sector exchange on a single element: it carries both a material and an informational four-vector. The norm and the inverse of the element are computed below; the time and space slots are $Q_0$ and $Q_1,Q_2,Q_3$ throughout.
+**Physical interpretation.** One element is read at once as four numbers: the real part of $\tilde{Q}_-$ is $3$ in the space slots together with an imaginary time slot, exactly the form $ict\,e_0+\mathbf{x}$ of a material four-position, while $\tilde{Q}_+$ is of the form $ct'\,e_0+i\mathbf{x}'$ of an informational four-position. The example therefore shows the sector exchange on a single element: it carries both a material and an informational four-vector. The norm and the inverse of the element are computed below; the time and space slots are $Q_0$ and $Q_1,Q_2,Q_3$ throughout.
 
 ## The Four Conjugations on the Concrete Element
 
@@ -70,13 +70,13 @@ $$
 $$
 Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\tilde{Q}^{\natural}\bar{\cdot}=\tilde{Q}^{*{}^{\natural}}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat}=-\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give the remarkable subspaces above: for instance the Hermitian part of $\tilde{Q}$ is $\tfrac12(\tilde{Q}+\tilde{Q}^{*})=2e_0-ie_1+ie_3$, which agrees with the table.
 
-**Physical reading.** The quaternion conjugation reverses the spatial part and leaves the time slot, so it is the **spatial reversal** of the four-vector; the complex conjugation conjugates the coefficients $Q_\mu=q_\mu+iq'_\mu$, so it exchanges the material and informational readings of each slot and is the **sector exchange**; the Hermitian conjugation is the composition, the adjoint of a four-vector, and it is the involution that selects the observables.
+**Physical interpretation.** The quaternion conjugation reverses the spatial part and leaves the time slot, so it is the **spatial reversal** of the four-vector; the complex conjugation conjugates the coefficients $Q_\mu=q_\mu+iq'_\mu$, so it exchanges the material and informational interpretations of each slot and is the **sector exchange**; the Hermitian conjugation is the composition, the adjoint of a four-vector, and it is the involution that selects the observables.
 
 ## Idempotents and the Two Minimal Left Ideals
 
 The standard idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_2=\tfrac12(e_0-ie_3)$ satisfy $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0$ and $\tilde\Pi_1+\tilde\Pi_2=e_0$; they are primitive, and they give the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ into two minimal left ideals of real dimension $4$.
 
-**Physical reading.** The two idempotents are the **chiral projectors** onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ is the splitting of the algebra into the two chiralities (*Modules over the General Plain Algebra of Biquaternions*).
+**Physical interpretation.** The two idempotents are the **chiral projectors** onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ is the splitting of the algebra into the two chiralities (*Modules over the General Plain Algebra of Biquaternions*).
 
 ## The Norm and the Inverse of the Concrete Element
 
@@ -93,7 +93,7 @@ $$
 
 The element is neither purely material nor purely informational: its norm is complex with both parts nonzero, so it does not lie on either real sector and is not null. The material part $\tilde{Q}_-$ of the Hermitian decomposition has norm $N(\tilde{Q}_-)=\sum_\mu(Q_-)_\mu^2=(i)^2+1+9=i^2+10=9$, a spacelike interval in the $ict$ coordinate; the informational part has norm $N(\tilde{Q}_+)=4+(-i)^2+(i)^2=4-1-1=2$.
 
-**Physical reading.** The norm $11+2i$ measures the element; its vanishing would be the light cone and its being real would be membership of a real sector. The example shows the generic case: a unit with a complex norm, whose material and informational halves have separately real intervals.
+**Physical interpretation.** The norm $11+2i$ measures the element; its vanishing would be the light cone and its being real would be membership of a real sector. The example shows the generic case: a unit with a complex norm, whose material and informational halves have separately real intervals.
 
 ## Explicit Zero Divisors
 
@@ -103,11 +103,11 @@ $$
 $$
 Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $N(\tilde A)=1+i^2=0$, so $\tilde A$ is **null** as well as a zero divisor; it is not nilpotent, since $\tilde A^2=(e_0+ie_3)^2=e_0+2ie_3-(e_3)^2=2e_0+2ie_3=2\tilde A\neq0$.
 
-**Physical reading.** The pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde A$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $e_1+ie_2$, whose square vanishes (*Zero Divisors of the General Plain Algebra*).
+**Physical interpretation.** The pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde A$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $e_1+ie_2$, whose square vanishes (*Zero Divisors of the General Plain Algebra*).
 
 ## Physical Readings
 
-The computations read as the framework's calibration set. The multiplication table is the product law of the physical objects; the remarkable subspaces exhibited on one element are the readings of one four-vector; the four conjugations applied to it are the four forms; and the idempotents are the pure states. Read as a calibration, the article is where the vocabulary of the series is checked against a single element, so it is also the place where the readings of the other articles can be tested against one another.
+The computations read as the framework's calibration set. The multiplication table is the product law of the physical objects; the remarkable subspaces exhibited on one element are the interpretations of one four-vector; the four conjugations applied to it are the four forms; and the idempotents are the pure states. Read as a calibration, the article is where the vocabulary of the series is checked against a single element, so it is also the place where the interpretations of the other articles can be tested against one another.
 
 ## Summary
 

@@ -18,7 +18,7 @@ This article asks what the area law is in the biquaternion framework. The framew
 
 The article proceeds as follows. The area law is stated in its field-theoretic form, with the gapped and gapless cases distinguished and the coefficient discussed. The locality mechanism is explained as a bond-cutting bound, with the finite-depth circuit and matrix-product-state versions. The discrete area law is then realized and verified in the biquaternion chain, with the dimer state and a table of region entropies. The field statement, its holographic and black-hole cases, are recalled. The article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$; on the tensor power the trace is the product trace. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, the entanglement entropy and replica moments those of *Entanglement Entropy and the Replica Trick in Biquaternionic Form*, and the one-particle module that of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$; on the tensor power the trace is the product trace. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, the entanglement entropy and replica moments those of *Entanglement Entropy and the Replica Trick in Biquaternionic Form*, and the one-particle module that of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
 
 ## The Area Law
 
@@ -200,7 +200,7 @@ In the finite framework the dimer state and its regions obey strong subadditivit
 
 **4. The area law and strong subadditivity.** The monotonicity of the area-law coefficient under coarse-graining follows from the entropic inequalities of the companion articles. Does the framework's discrete version give a finite proof of the coefficient's monotonicity, as a one-dimensional chain is coarse-grained?
 
-**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the reading from standard quantum theory is derived.
+**5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum theory is derived.
 
 ## Summary
 

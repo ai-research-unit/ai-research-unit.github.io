@@ -1,0 +1,124 @@
+# __The Specificities of the General Quaternionic Algebra__
+
+## Introduction
+
+The general quaternionic algebra of quaternions is the real space $\mathbb{H}$ under the product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ (*Introduction to the General Quaternionic Algebra of Quaternions*). This article collects the properties that single it out among the six algebraic structures of the space, and it is the closing article of the Common Theory of the block: the norm, the roots of the central values and the roots of a general element are settled in the three articles before it, and what is left is the list of the structural landmarks.
+
+Four of the landmarks are negative and decide the block: the unit is one-sided, the product is not associative, there are no zero divisors, and there are no nilpotents. Two are the counterparts of the plain algebra: the idempotents are $0$ and $e_0$ and no others, and the two one-sided actions do not combine into a two-sided module structure. Two concern the conjugation, which fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and is **not** one of the quaternionic product. The last two sections record the effect of complexification and the position of the algebra among the six.
+
+## The One-Sided Unit
+
+**Theorem.** The element $e_0$ is a left unit of the product and no right unit exists; the algebra is left-unital and not unital, and the two-sided inverse of a unital algebra is absent.
+
+*Proof.* $\tilde q \star e_0 = \tilde q^{\natural}$, which differs from $\tilde q$ for a non-real $\tilde q$; the direct proof of the non-existence of a right unit is in *Introduction to the General Quaternionic Algebra of Quaternions*. The consequences for inversion are *Norm and Invertibility in the General Quaternionic Algebra*: the two one-sided equations have the coincident solution $\zeta(\tilde p) = \tilde p/N(\tilde p)$, and the units do not form a group.
+
+**Remark.** This is the first of the four specifics, and the one that the biquaternion counterpart shares: over $\mathbb{C}$ the same asymmetry is present and has the same cause (*Introduction to the General Quaternionic Algebra of Biquaternions*). The plain algebra is the only one of the six with a two-sided unit; the two antisymmetric products and the two symmetrised ones have none, so unitality is rare in the list and *one-sided* unitality is this product's alone.
+
+## The Associator and its Defect
+
+**Theorem.** The product is not associative, and the associator has the closed form
+
+$$
+[\tilde p,\tilde q,\tilde r] = \bigl(\tilde q^{\natural}\tilde p - \tilde p^{\natural}\tilde q^{\natural}\bigr)\tilde r ,
+$$
+
+nonzero at $[e_1,e_0,e_0] = 2e_1$ and at $24$ of the $64$ basis triples. The product fails every rung of the ladder of weaker identities: it is not alternative, the left alternative law failing already at $(\tilde p,\tilde q) = (e_1,e_2)$ where $(\tilde p \star \tilde p) \star \tilde q = e_2$ against $\tilde p \star (\tilde p \star \tilde q) = -e_2$; it is not flexible, and it is not power-associative.
+
+*Proof.* The closed form and the count are computed in *The Associator and the Ternary Product of the Quaternionic Product*, below this article in this category, and the failure of the ladder is there as well; the two facts are repeated here only as landmarks of the block.
+
+**Remark.** The defect is not an accident of the choice of the distinguished element: it comes from the conjugation standing in the first slot, and the same closed form shows why the ladder fails with it. The comparison with the plain product, whose associator vanishes identically and whose ladder is satisfied at every rung, is *Comparison Between the Two General Products*.
+
+## The Absence of Zero Divisors and of Nilpotents
+
+**Theorem.** The product has no zero divisors: $\tilde p \star \tilde q = 0$ forces $\tilde p = 0$ or $\tilde q = 0$. It has no nonzero nilpotent: $\tilde p \star \tilde p = 0$ forces $\tilde p = 0$.
+
+*Proof.* Both follow from the norm, which is multiplicative and definite: $N(\tilde p \star \tilde q) = N(\tilde p)N(\tilde q)$ and $N(\tilde p \star \tilde p) = N(\tilde p)^2$ (*Norm and Invertibility in the General Quaternionic Algebra*), so a vanishing product or a vanishing square forces a vanishing norm and hence a vanishing element.
+
+**Remark.** The two facts are the specification of the block against the four companion operations. The symmetrised product has zero divisors, two orthogonal pure elements being one, $e_1 \bullet e_2 = 0$; the two antisymmetric products are alternating, so every element has square zero there. The plain product and the quaternionic product are the two without zero divisors, and they are exactly the two **division** structures of the list. The zero divisors of the symmetric plain and symmetric quaternionic algebras are *Zero Divisors of the Symmetric Plain Algebra* and the corresponding article of the symmetric quaternionic block, both below this article in this category.
+
+## The Idempotents
+
+**Theorem.** The idempotents of the product, the elements $\tilde\pi$ with $\tilde\pi \star \tilde\pi = \tilde\pi$, are exactly $0$ and $e_0$.
+
+*Proof.* The square is $\tilde\pi \star \tilde\pi = N(\tilde\pi)e_0$, a real scalar; equality with $\tilde\pi$ forces $\tilde\pi = p_0e_0$ with $p_0^2 = p_0$, hence $p_0 = 0$ or $p_0 = 1$.
+
+**Corollary.** The two idempotents are central, they are the idempotents of the plain product as well, and there is no minimal idempotent and no nontrivial projective decomposition in this block: the product is a division structure and its only idempotents are the two degenerate ones.
+
+*Proof.* The idempotents are central because the scalars are; they are idempotent for the plain product too by the same computation with $\tilde\pi^2$ in place of $\tilde\pi \star \tilde\pi$; a minimal idempotent would be a nonzero idempotent outside the centre, and there is none (*Idempotents of the General Plain Algebra*).
+
+## The Two One-Sided Actions
+
+**Theorem (the left action).** The left multiplications $L_{\tilde p}(\tilde x) = \tilde p \star \tilde x = \tilde p^{\natural}\tilde x$ satisfy $L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p}$, so the family $\{L_{\tilde p}\}$ is closed under composition and is a monoid isomorphic to the opposite algebra $\mathbb{H}^{\mathrm{op}}$; the assignment $\tilde p \mapsto L_{\tilde p}$ is injective.
+
+**Theorem (the right side).** The honest right multiplications $\tilde x \mapsto \tilde x \star \tilde p$ do **not** close under composition. The twisted right multiplications $\varrho_{\tilde p}(\tilde x) = \tilde x\tilde p^{\natural}$ do close, with the direct law $\varrho_{\tilde p}\varrho_{\tilde q} = \varrho_{\tilde p\tilde q}$, so that $\{\varrho_{\tilde p}\} \cong \mathbb{H}$ on the right; the two families do not commute in general.
+
+*Proof.* All three statements are computed in *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, below this article in this category, and again by the operator articles of the block (*One-Sided Operators on the General Quaternionic Algebra of Quaternions*, below this article in this category). The reason for the asymmetry is the same as the reason for the missing right unit: the conjugation sits in the first slot, so a product read from the right conjugates the wrong factor.
+
+**Corollary.** The algebra carries a left action on itself and a twisted right action, and it carries no two-sided module structure over itself; the failure is the operator form of the missing right unit, and it is the sense in which the product is left-handed.
+
+## The Involution
+
+**Theorem (the two eigenspaces).** The conjugation is an involution of the algebra, $\tilde p^{\natural\natural} = \tilde p$; it fixes the scalar line and negates the vector subspace, which are its two eigenspaces, of dimensions one and three.
+
+*Proof.* The coordinate expression $p_0 - \mathbf p$ gives both statements at once.
+
+**Theorem (what the conjugation reverses, and what it does not).** The conjugation is an anti-automorphism of the **plain** product, $(\tilde p\tilde q)^{\natural} = \tilde q^{\natural}\tilde p^{\natural}$, and it is **not** an anti-automorphism of the quaternionic product: $(\tilde p \star \tilde q)^{\natural} = \tilde q^{\natural}\tilde p$ and $\tilde q^{\natural} \star \tilde p^{\natural} = \tilde q\tilde p^{\natural}$, and the two differ for a non-central factor. What holds instead is the exchange law
+
+$$
+(\tilde p \star \tilde q)^{\natural} = \tilde q \star \tilde p ,
+$$
+
+so the conjugation carries the product to the mirror product and back, and the two products of the block are exchanged by it.
+
+*Proof.* $(\tilde p^{\natural}\tilde q)^{\natural} = \tilde q^{\natural}\tilde p^{\natural\natural} = \tilde q^{\natural}\tilde p = \tilde q \star \tilde p$, while $\tilde q^{\natural} \star \tilde p^{\natural} = \tilde q^{\natural\natural}\tilde p^{\natural} = \tilde q\tilde p^{\natural}$; the two agree only when $\tilde q^{\natural}\tilde p = \tilde q\tilde p^{\natural}$, that is only for central factors.
+
+**Remark.** The distinction is worth the separate theorem because the anti-automorphism property is what the plain algebra uses everywhere and what the quaternionic product denies. It is the second appearance of the same phenomenon: the conjugation in the first slot reverses what it touches, and the exchange law is the exact record of how.
+
+## The Effect of Complexification
+
+**Theorem (the change of scalars).** After the scalar extension $\mathbb{H}_{\mathbb{C}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} = \mathbb{B}$ the product extends to a $\mathbb{C}$-bilinear product on the eight-dimensional complex space, the left unit $e_0$ survives and no right unit appears, and the norm becomes the complex-quadratic form $\sum_\mu Q_\mu^2$, which is isotropic. The block then has zero divisors where this one has none.
+
+*Proof.* The product and the unit are defined by the same formulas over $\mathbb{C}$; the norm is the same sum of squares read in $\mathbb{C}$, and over $\mathbb{C}$ it takes the value zero on nonzero elements (*The Complexification and the Effect of the Change of Scalars on the Quaternions*). The isotropic elements and the zero divisors of the extended block are those of *Introduction to the General Quaternionic Algebra of Biquaternions*, the biquaternion reading of the same law.
+
+**Remark.** The definiteness of the norm is therefore exactly what the complexification destroys, and with it the three consequences that this article has collected: the absence of zero divisors, the absence of nilpotents and the emptiness of the roots of a negative central value. The unit asymmetry, by contrast, is untouched by the change of scalars; it is intrinsic to the law.
+
+## The Relation to the Other Five
+
+**Theorem (the position).** Among the six algebraic structures of the quaternion real space, the general quaternionic algebra is the only one that is left-unital and not right-unital; it is not associative, it has no zero divisors and it has two idempotents.
+
+*Proof.* The unit statement is the first section; the non-associativity the second; the absence of zero divisors the third; the idempotents the fourth. The companions are excluded by the shared list of facts of the chapter: the two symmetrised products have zero divisors, the two antisymmetrised products are alternating with every element square-zero, and the plain product is associative with a two-sided unit.
+
+| structure | product | character |
+|---|---|---|
+| general plain (GPA) | $\tilde p\tilde q$ | associative, two-sided unit, division |
+| symmetric plain (SPA) | $\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ | commutative, Jordan, no unit, zero divisors |
+| antisymmetric plain (APA) | $\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ | alternating, Lie, no unit |
+| general quaternionic (GQA) | $\tilde p^{\natural}\tilde q$ | not associative, left unit only, division |
+| symmetric quaternionic (SQA) | $\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ | commutative, scalar-valued, no unit, zero divisors |
+| antisymmetric quaternionic (AQA) | $\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ | alternating, Jacobi fails |
+
+**Remark.** The table is the chapter's, and the articles that own it are *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; it is reproduced here for the relation only. The symmetric and antisymmetric quaternionic blocks are below this article in this category, as is the synthesis.
+
+## Summary
+
+The general quaternionic algebra is left-unital and not unital; its product is not associative and fails every weaker rung; it has no zero divisors and no nonzero nilpotents; its only idempotents are $0$ and $e_0$; its left multiplications form a monoid isomorphic to the opposite algebra, its honest right multiplications do not close, and its twisted right multiplications close with the direct law, so the algebra is left-handed; its conjugation fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and not of its own, and satisfies instead the exchange law $(\tilde p \star \tilde q)^{\natural} = \tilde q \star \tilde p$; and complexification destroys the definiteness of the norm and with it the three consequences of definiteness, while leaving the unit asymmetry in place. Among the six structures of the space it is the one left-unital, non-associative, zero-divisor-free member.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ | the general quaternionic bilinear product |
+| $e_0$ | the left unit, and not a right one |
+| $[\tilde p,\tilde q,\tilde r]$ | the associator |
+| $L_{\tilde p}(\tilde x) = \tilde p^{\natural}\tilde x$ | the left multiplication, law $L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p}$ |
+| $\varrho_{\tilde p}(\tilde x) = \tilde x\tilde p^{\natural}$ | the twisted right multiplication, law $\varrho_{\tilde p}\varrho_{\tilde q} = \varrho_{\tilde p\tilde q}$ |
+| $\tilde\pi$ | an idempotent, here $0$ or $e_0$ |
+| $\natural$ | the conjugation, fixing the scalar line and negating the vector subspace |
+| $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the complexification, the biquaternion space |
+
+## Further Reading
+
+- Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the unit, the associator and the ladder of a nonassociative algebra.
+- Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for a product with a scalar-valued symmetrisation and the division phenomenon.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for an anti-automorphism of a product and the effect of placing it in a slot.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the division property of the quaternion algebra and its loss under complexification.

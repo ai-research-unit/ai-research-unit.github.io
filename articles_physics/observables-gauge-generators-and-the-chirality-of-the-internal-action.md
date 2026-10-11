@@ -11,7 +11,7 @@ $\tilde Q\tilde P\tilde Q^{*}$ — the **sandwich** — is a different kind of o
 and can never be skew-adjoint, which is why the sandwich serves as an action and the one-sided
 multiplication as an operator algebra. Finally the internal symmetry acts on the module through **right**
 multiplication and not through left: only the right action preserves the algebra-valued canonical form, and
-the one-sidedness of that form is the framework's reading of a **chirality** in the internal action.
+the one-sidedness of that form is the framework's interpretation of a **chirality** in the internal action.
 
 The article keeps to the operator structure. It defers the positivity of the dagger and the positive cone
 to *Mass, Rank and the Positivity of the Dagger*; the internal group and its compactness to *Particle Types, Discrete Charge and Three-Particle Couplings*; the group ceiling to *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*; the states to *The States the Indefinite Metric Cannot Normalise* and *Decoherence as Idempotent Projection*;
@@ -46,7 +46,7 @@ The classification follows from the sector of the parameter.
 
 The correspondence is linear and bijective at the level of parameters, so the two kinds of operator are in
 bijection with the two sectors, and the informal rule "observables in $\mathbb{M}_+$, generators in
-$\mathbb{M}_-$" has this exact content. Two further facts fix the physical reading. The skew-adjoint
+$\mathbb{M}_-$" has this exact content. Two further facts fix the physical interpretation. The skew-adjoint
 operators exponentiate to the unitaries of the module, $e^{L_{\tilde S}}=L_{e^{\tilde S}}$, and the
 resulting group is the internal $U(2)$; and multiplication by the central $i$ exchanges the two kinds,
 $L_{i\tilde H}=iL_{\tilde H}$, so the generator of a unitary is one sector away from the observable.
@@ -56,7 +56,7 @@ $L_{i\tilde H}=iL_{\tilde H}$, so the generator of a unitary is one sector away 
 **Definition.** The **sandwich** by $\tilde Q$ is $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$, the two-sided operator of the corpus.
 
 Its parameter enters **twice**, so the sandwich is quadratic in $\tilde Q$ and its matrix image is
-$\Phi(\tilde P)\mapsto\Phi(\tilde Q)\Phi(\tilde P)\Phi(\tilde Q)^{\dagger}$. Its adjoint is
+$\mathsf{M}_2(\tilde P)\mapsto\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$. Its adjoint is
 
 $$
 \bigl(\Theta_{\tilde Q}\bigr)^{\dagger}=\Theta_{\tilde Q^{*}} .
@@ -75,7 +75,7 @@ Every element of either sector satisfies the criterion, with $\omega=1$ on $\mat
 on $\mathbb{M}_-$, so **every observable and every generator has a self-adjoint sandwich**. The
 self-adjoint set is strictly larger than the two sectors: the phase multiple $e^{i\theta}(e_0+ie_3)$ is in
 neither sector and still has a self-adjoint sandwich. The natural guess is wrong: **normality is not the
-criterion**, and an element with $\Phi(\tilde Q)=\operatorname{diag}(1,i)$ is normal while its sandwich is
+criterion**, and an element with $\mathsf{M}_2(\tilde Q)=\operatorname{diag}(1,i)$ is normal while its sandwich is
 not self-adjoint.
 
 **Proposition (no skew-adjoint sandwich).** There is no nonzero $\tilde Q$ with
@@ -91,7 +91,7 @@ action.
 
 **Blindness.** The sandwich is insensitive to the sign and to the central phase of its parameter,
 $\Theta_{-\tilde Q}=\Theta_{\tilde Q}$ and $\Theta_{e^{i\theta}\tilde Q}=\Theta_{\tilde Q}$ for every real
-$\theta$, because the parameter appears once on each side. **Reading.** The central phase is not a
+$\theta$, because the parameter appears once on each side. **Interpretation.** The central phase is not a
 physical degree of freedom: no observable made of a sandwich can distinguish an element from its phase
 multiple. This is the algebra's statement of global-phase invariance, and it is the same fact that makes
 the unit-norm parameters $\pm\tilde\Lambda$ induce the same Lorentz transformation, the kernel of the
@@ -145,7 +145,7 @@ general Lorentz transformation is an automorphism of the interval form and not a
 the positive form. The **choice** among the three classes is the physical input; the **form** is the
 algebra's.
 
-**Reading: the sandwich is a change of frame.** A map that sends every element to $\tilde R\tilde Q\tilde R^{-1}$ is a **change of bases** of the algebra, and the sandwich is that map with $\tilde R^{*}$ in place of $\tilde R^{-1}$ — for a unitary parameter the two agree. Reading the one map as a frame rotation, a gauge transformation or a Lorentz transformation is then a reading of the **parameter class** and not a change of structure: one map, three names, according to the normalisation of $\tilde R$. The three jobs of the previous table are three readings of one change of frame.
+**Interpretation: the sandwich is a change of frame.** A map that sends every element to $\tilde R\tilde Q\tilde R^{-1}$ is a **change of bases** of the algebra, and the sandwich is that map with $\tilde R^{*}$ in place of $\tilde R^{-1}$ — for a unitary parameter the two agree. Reading the one map as a frame rotation, a gauge transformation or a Lorentz transformation is then a reading of the **parameter class** and not a change of structure: one map, three names, according to the normalisation of $\tilde R$. The three jobs of the previous table are three readings of one change of frame.
 
 ## One Product, Two Halves
 
@@ -199,7 +199,7 @@ space.
 $2.8\times10^{-14}$; the Jacobi identity on $100$ random anti-Hermitian triples with maximum deviation
 $7.1\times10^{-15}$; the two failure witnesses give $-e_0$ and $4e_3$ exactly.
 
-**Reading.** The Hermitian sector, closed under the symmetrised product, is the algebra's **observable
+**Interpretation.** The Hermitian sector, closed under the symmetrised product, is the algebra's **observable
 half**; the material sector, closed under the commutator, is its **gauge half**. The split of one product
 into a symmetric and an antisymmetric half is the exact algebraic statement of the split the framework
 uses, and the Jacobi identity holding only on $\mathbb{M}_-$ is the algebraic reason the gauge structure
@@ -209,7 +209,7 @@ lives in the material sector.
 bosons are valued; it is tempting to propose that the vector bosons of the framework are carried by that
 half. This is **speculation and not a result**: no propagation equation, polarisation count or coupling is
 computed, and the corpus's gauge fields are built on $\mathbb{M}_-$ by the companion gauge articles,
-with which the reading is consistent but which it does not derive.
+with which the interpretation is consistent but which it does not derive.
 
 ## The Internal Action Is One-Sided
 
@@ -247,25 +247,25 @@ precision; left multiplication is an isometry exactly for the central unitary el
 the scalar part is preserved by the left action to $5.1\times10^{-15}$; and the witness pair gives $-e_2$
 and $+e_2$.
 
-**Reading: chirality of the internal action.** The internal symmetry acts through the right action, because
+**Interpretation: chirality of the internal action.** The internal symmetry acts through the right action, because
 only that one preserves the canonical form. Reading $h$ as a pairing that distinguishes a left from a
 right slot, the one-sidedness says that the internal gauge action couples to one slot only — which may be
 read as the algebraic shadow of a **chirality** in the internal coupling.
 
-**Cautions.** The reading is a speculation about the structure of the form and not a claim about nature.
+**Cautions.** The interpretation is a speculation about the structure of the form and not a claim about nature.
 
 - **No parity violation of the weak interaction is claimed.** No left-handed coupling is exhibited, no
   chirality is fixed for any fermion, and the V$-$A structure of the weak interaction is not touched. A
   left-handed coupling would require a Lagrangian and a chirality projection that this article does not
   supply; the one-sidedness of the form is at best a necessary condition.
 - **The asymmetry could be a convention.** With the mirrored form $h'(\tilde P,\tilde R)=\tilde P^{*}\tilde R$ the left action would be the isometry. The theorem is that the isometry is one-sided;
-  which side is physical is the reading.
+  which side is physical is the interpretation.
 - The internal group so acting is the $U(2)$ of *Particle Types, Discrete Charge and Three-Particle Couplings* and *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not
   SU(3)*; the algebra reaches $SU(2)$ and not $SU(3)$.
 
 ### The One-Sidedness as Bra–Ket Asymmetry
 
-The right-isometry theorem has a second reading beside the chirality. A pairing that distinguishes a left
+The right-isometry theorem has a second interpretation beside the chirality. A pairing that distinguishes a left
 slot from a right slot, and that one side's action alone preserves, is the algebraic shape of the
 **bra–ket asymmetry**: the state is written in one slot and read from the other, and the internal action
 moves only one of them. What the same theorem says about the two halves of the amplitude is that the
@@ -275,7 +275,7 @@ made twice in this band, here operatorial and in *Why Probability Values Are Cen
 Sesquilinear Product and Its Cone* algebraically.
 
 **Caution.** The one-sidedness is a theorem about the algebra-valued form $h$; the bra–ket, singlet and
-covariant readings are readings of it, and no measurement rule is derived.
+covariant interpretations are interpretations of it, and no measurement rule is derived.
 
 ## The Limits
 
@@ -283,9 +283,9 @@ covariant readings are readings of it, and no measurement rule is derived.
   space.
 - The observable/generator split is by the sector of the **parameter**, and the sandwich's type is read
   from the parameter as well; the two operators must not be given one type.
-- The chirality reading is labelled speculation with the three cautions above, and nothing proved depends
+- The chirality interpretation is labelled speculation with the three cautions above, and nothing proved depends
   on it.
-- The vector-boson reading of the antisymmetric half is labelled speculation.
+- The vector-boson interpretation of the antisymmetric half is labelled speculation.
 
 ## The Ledger
 
@@ -298,7 +298,7 @@ under $[\cdot,\cdot]_\varsigma$, each with its identity failing off its sector a
 Right multiplication by a unitary is an isometry of $h$, left multiplication is one exactly for central
 unitaries, and the scalar part is preserved by both.
 
-**Readings.** Observables in the Hermitian half and gauge generators in the material half; the sandwich as
+**Interpretations.** Observables in the Hermitian half and gauge generators in the material half; the sandwich as
 the one action form with three parameter classes, read as one change of frame; the state as a ray, with the
 effective internal group $PU(2)\cong SO(3)$; the one-sidedness of the internal action as a chirality, and
 also as a bra–ket asymmetry with the probability a singlet of the internal action and the phase covariant.
@@ -306,7 +306,7 @@ also as a bra–ket asymmetry with the probability a singlet of the internal act
 **Speculations, labelled.** Vector bosons carried by the antisymmetric half; the one-sidedness of the form
 as a chirality of the internal coupling, with no parity violation claimed and with the convention caveat.
 
-**Not claimed.** That the chirality reading is a physical result; that any weak-interaction structure is
+**Not claimed.** That the chirality interpretation is a physical result; that any weak-interaction structure is
 derived; that a gauge vertex is computed.
 
 ## Physical Readings

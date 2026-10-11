@@ -111,7 +111,7 @@ and it agrees with the general formula $R_{\tilde q} = \bigl(1-2(q_2^2+q_3^2),\,
 
 ## The Matrix Images
 
-**The $2\times2$ complex image.** Under the isomorphism $\Phi$ of *Quaternion 2x2 Matrix Element Representation*, fixed by
+**The $2\times2$ complex image.** Under the isomorphism $\mathsf{M}_2$ of *Quaternion 2x2 Matrix Element Representation*, fixed by
 
 $$
 e_0\mapsto I, \qquad e_1\mapsto \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad e_2\mapsto \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad e_3\mapsto \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
@@ -120,10 +120,10 @@ $$
 the worked element has image
 
 $$
-\Phi(\tilde q) = \begin{pmatrix} 1-3i & 1-2i \\ -1-2i & 1+3i \end{pmatrix}.
+\mathsf{M}_2(\tilde q) = \begin{pmatrix} 1-3i & 1-2i \\ -1-2i & 1+3i \end{pmatrix}.
 $$
 
-Its trace is $2q_0 = 2$ and its determinant is $N(\tilde q) = 15$, in agreement with the general identities $\operatorname{tr}\Phi(\tilde Q) = 2Q_0$ and $\det\Phi(\tilde Q) = N(\tilde Q)$.
+Its trace is $2q_0 = 2$ and its determinant is $N(\tilde q) = 15$, in agreement with the general identities $\operatorname{tr}\mathsf{M}_2(\tilde Q) = 2Q_0$ and $\det\mathsf{M}_2(\tilde Q) = N(\tilde Q)$.
 
 **The $4\times4$ real image.** Under the left regular representation of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*, whose Cayley matrix has the four general products $\tilde q e_k$ for columns, the worked element has image
 
@@ -142,7 +142,7 @@ Its trace is $4q_0 = 4$, its determinant is $N(\tilde q)^2 = 225$, and $\mathsf{
 
 The three involutions of the quaternion algebra are quaternion, vector and total conjugation, given by negating the vector part, the scalar part, or both, with fixed-point subspaces the scalar line, the imaginary three-space and the origin. The roots of $-1$ are the pure imaginary quaternions of norm one, forming a two-sphere, while the roots of $+1$ are only $\pm1$; the element $(e_1+e_2+e_3)/\sqrt3$ is a worked root of the first equation.
 
-The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and $e_2$ to $e_3$, with matrix $R_u$ matching the general formula; the geometric reading of $R_u$ and the covering $Sp(1)\to SO(3)$ are in *Quaternion Rotations and Reflections*. For the worked element $\tilde q = 1+2e_1-e_2+3e_3$, whose quaternion norm is $N(\tilde q) = 15$, the $2\times2$ complex image $\Phi(\tilde q)$ has trace $2$ and determinant $15$, and the $4\times4$ real Cayley image $\mathsf{M}_4(\tilde q)$ has trace $4$, determinant $225$ and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I$.
+The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and $e_2$ to $e_3$, with matrix $R_u$ matching the general formula; the geometric reading of $R_u$ and the covering $Sp(1)\to SO(3)$ are in *Quaternion Rotations and Reflections*. For the worked element $\tilde q = 1+2e_1-e_2+3e_3$, whose quaternion norm is $N(\tilde q) = 15$, the $2\times2$ complex image $\mathsf{M}_2(\tilde q)$ has trace $2$ and determinant $15$, and the $4\times4$ real Cayley image $\mathsf{M}_4(\tilde q)$ has trace $4$, determinant $225$ and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I$.
 
 ## Summary of Notation
 
@@ -157,7 +157,7 @@ The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and 
 | $N$ | Quaternion norm, from *Quaternion Norm and Invertibility*; $N(\tilde q) = 15$ for the worked element |
 | $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{\natural}$ | Conjugation action |
 | $R_u$ | Matrix of $\operatorname{Ad}_u$ on $\operatorname{Im}\mathbb{H}$ |
-| $\Phi$ | The isomorphism $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$ |
+| $\mathsf{M}_2$ | The isomorphism $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$ |
 | $\mathsf{M}_4(\tilde q)$ | Cayley matrix of left multiplication by $\tilde q$ |
 
 ## Further Reading

@@ -109,7 +109,7 @@ $$
 
 The scalar subspace $\mathbb{C}_{\mathbb{B}}$ receives no contribution, which is again $\mathrm{Sc}(\tilde{F}) = 0$; the decomposition used is $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$. Thus the field strength uses the vector parts of $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ and the electric and magnetic halves of $\mathbb{M}_+$ and $\mathbb{M}_-$ respectively, and it touches $\mathbb{C}_{\mathbb{B}}$ not at all.
 
-**The biparavector reading: the field as a sum of two spacetime planes.** The two halves just separated are not merely subspaces; each is a **family of planes**, and the separation of the field into an electric and a magnetic part is the separation of a biparavector into a timelike and a spacelike plane. In the paravector presentation of the algebra (*Paravectors and the Geometry of Spacetime*), a **biparavector** is the product of two orthogonal paravectors and represents a plane in spacetime; with $\gamma_k = ie_k$ there are six independent planes,
+**The biparavector interpretation: the field as a sum of two spacetime planes.** The two halves just separated are not merely subspaces; each is a **family of planes**, and the separation of the field into an electric and a magnetic part is the separation of a biparavector into a timelike and a spacelike plane. In the paravector presentation of the algebra (*Paravectors and the Geometry of Spacetime*), a **biparavector** is the product of two orthogonal paravectors and represents a plane in spacetime; with $\gamma_k = ie_k$ there are six independent planes,
 
 $$
 \left\{e_0\gamma_k,\ \gamma_j\gamma_k\right\} = \left\{ie_1,\ ie_2,\ ie_3\right\} \cup \left\{e_3,\ e_1,\ e_2\right\},

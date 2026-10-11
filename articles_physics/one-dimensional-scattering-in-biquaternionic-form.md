@@ -12,7 +12,7 @@ $$
 
 a multiple of the identity, because a scalar potential couples to the scalar slot. The external field therefore does not act on the state module at all: it cannot rotate, mix, or relatively phase the two components of a state-module element. The scattering matrix factorises as $S \otimes I_2$ on the space of channels tensored with the module; every reflection and transmission amplitude is a scalar function of the energy; and there is **no spin-flip channel**, not because a spin-flip amplitude happens to be small, but because the operator that would produce it is not present. This is the scattering counterpart of the frozen module factor of the free-particle article, and it is what makes the subcategory's fields spin-0 scalars.
 
-The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the trace pairing. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion reading of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
+The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the trace pairing. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
 The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\Phi$ sending $e_0\mapsto I_2$ and $e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
 
@@ -287,7 +287,7 @@ $$
 
 so the well is transparent whenever $k_2a = n\pi$, that is, at the energies for which the well holds an integer number of half wavelengths. Away from these resonances the transmission is below one, and the reflection is the resonant remainder. The transmission peaks narrow as the well deepens, and the resonance poles in the complex energy plane are the quasibound states. For $E<0$ the same matching condition quantises a finite set of bound states.
 
-The formulas for the barrier and the well are the same expression continued in the sign of $V_0$; the barrier's evanescent region and the well's resonant region are two readings of one matching problem. Their common structure — a single pair of matching conditions at each boundary, and a flux identity — is what makes the transfer matrix of the next section useful.
+The formulas for the barrier and the well are the same expression continued in the sign of $V_0$; the barrier's evanescent region and the well's resonant region are two interpretations of one matching problem. Their common structure — a single pair of matching conditions at each boundary, and a flux identity — is what makes the transfer matrix of the next section useful.
 
 ## The Transfer Matrix and Composite Potentials
 
@@ -411,7 +411,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 ## Open Questions
 
-**1. Is there an algebraic selection rule for admissible potentials?** The framework distinguishes central from non-central operators but does not say which non-central operators have a physical reading. The central class used here is the safe one.
+**1. Is there an algebraic selection rule for admissible potentials?** The framework distinguishes central from non-central operators but does not say which non-central operators have a physical interpretation. The central class used here is the safe one.
 
 **2. What is the biquaternion image of the Jost function?** The Jost solutions, their analytic properties, and the decomposition of the $S$-matrix into a ratio of Jost functions are standard; whether the algebra singles out a representative of the Jost function is not known.
 

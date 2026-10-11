@@ -31,7 +31,7 @@ $$
 
 where each $\tilde\pi_k$ is a central Hermitian operator (a multiple of $e_0$) and the sum is over the three spatial directions. Because $A_k$ and $\phi$ are ordinary real functions of position, they multiply the central element $e_0$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_0$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.
 
-For a uniform field $\mathbf B=B\hat{\mathbf z}$ the vector potential can be chosen in many gauges, all related by $\mathbf A\to\mathbf A+\nabla\lambda$, and the spectrum is gauge invariant. In the biquaternion reading the gauge freedom is a freedom in the central part of the operator algebra: $\lambda$ is a real scalar and $\nabla\lambda$ is a real quaternion, so the gauge transformation shifts $\tilde{\boldsymbol\pi}$ by a real-vector multiple of $e_0$ and leaves the central structure untouched. The field strength, which is gauge invariant, is the object with algebraic meaning.
+For a uniform field $\mathbf B=B\hat{\mathbf z}$ the vector potential can be chosen in many gauges, all related by $\mathbf A\to\mathbf A+\nabla\lambda$, and the spectrum is gauge invariant. In the biquaternion interpretation the gauge freedom is a freedom in the central part of the operator algebra: $\lambda$ is a real scalar and $\nabla\lambda$ is a real quaternion, so the gauge transformation shifts $\tilde{\boldsymbol\pi}$ by a real-vector multiple of $e_0$ and leaves the central structure untouched. The field strength, which is gauge invariant, is the object with algebraic meaning.
 
 ### The field strength as a central commutator
 
@@ -170,7 +170,7 @@ $$
 
 whose right-hand side is a central **area**: the flux count of the fifth section is the statement that this area is the phase-space cell of one state. The two algebras are the same central oscillator algebra; the first is the energy, the second is the degeneracy.
 
-In the biquaternion reading $\hat L_z$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_z=m\hbar$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.
+In the biquaternion interpretation $\hat L_z$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_z=m\hbar$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.
 
 The lowest Landau level is especially transparent in this gauge. Writing $z=x+iy$, the states
 
@@ -249,7 +249,7 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 
 **1. Is the flux degeneracy an algebraic invariant of the centre?** The count $AB/\Phi_0$ follows from the central commutator and the boundary conditions. Whether the framework gives a gauge-invariant algebraic derivation of the count without choosing a gauge is not established here.
 
-**2. Does the guiding-centre algebra have a sector reading?** The guiding-centre operators are central and commute with the Hamiltonian; their relation to the material and informational sectors is not explored.
+**2. Does the guiding-centre algebra have a sector interpretation?** The guiding-centre operators are central and commute with the Hamiltonian; their relation to the material and informational sectors is not explored.
 
 **3. What happens at the zero divisor cone?** The mechanical momenta are central Hermitian operators, and their eigenvalues are real; the null cone of $\mathbb{M}_-$ is not reached. Whether a limiting field or a critical point brings the algebra closer to the cone is open.
 

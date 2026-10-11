@@ -25,8 +25,8 @@ Identity*.
 
 **Conventions.** As in the two companion articles of this block: $\mathbb{B}$ with basis
 $e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$; the sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; the sectors $\mathbb{M}_\pm$; the unitary slice
-$U=\{\tilde U:\tilde U\tilde U^{*}=e_0\}$; $\Phi$ the $2\times2$ matrix model with
-$\det\Phi(\tilde Q)=N(\tilde Q)$; and $\mathrm{Tr}=2\,\mathrm{Sc}$. Spinors live in $S=\mathbb{C}^{2}$
+$U=\{\tilde U:\tilde U\tilde U^{*}=e_0\}$; $\mathsf{M}_2$ the $2\times2$ matrix model with
+$\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$; and $\mathrm{Tr}=2\,\mathrm{Sc}$. Spinors live in $S=\mathbb{C}^{2}$
 with a Clifford action $C$.
 
 ## What Kind of Particle: the Reality Condition
@@ -52,7 +52,7 @@ commuted with $C$, commuting with $\sigma_1$ would force $X$ into the span of $1
 $\sigma_3$ would force it into the span of $1,\sigma_3$, hence $X=\lambda 1$; and commuting with
 $\sigma_2$ then gives $-\lambda\sigma_2=\lambda\sigma_2$, so $\lambda=0$.
 
-**Reading (labelled).** A particle of the internal module is **Dirac-like**: it has a distinct
+**Interpretation (labelled).** A particle of the internal module is **Dirac-like**: it has a distinct
 antiparticle, and its spinor and conjugate spinor are inequivalent. The conjugate module $\bar S$ — the
 same space with the conjugate complex structure — is inequivalent to $S$ as a complex module, exactly
 because no $J$ exists, while it is isomorphic to $S$ as a **real** representation, since the two differ
@@ -105,7 +105,7 @@ $J^{2}=+1$ and $J^{2}=-1$ respectively.
 ## The Compact Slice: Discrete Charge
 
 **Definition.** The **unitary slice** is $U=\{\tilde U\in\mathbb{B}:\tilde U\tilde U^{*}=e_0\}$. Under
-$\Phi$ it is $U(2)$, a group of real dimension $4$, and it lies in the Euclidean unit sphere $S^{7}$,
+$\mathsf{M}_2$ it is $U(2)$, a group of real dimension $4$, and it lies in the Euclidean unit sphere $S^{7}$,
 strictly: the sphere has dimension $7$ and is not a group, while the slice has dimension $4$ and is.
 
 Its determinant-one part is $SU(2)$, the three-dimensional double cover of the rotations and the unit
@@ -120,7 +120,7 @@ multiplications supply, $U=\{\tilde U:\lVert\tilde U\tilde Q\rVert_E=\lVert\tild
 bounded. Closed and bounded in $\mathbb{R}^{8}$ is compact. Positivity of the dagger is what supplies the
 boundedness.
 
-**Reading: discrete charge.** The finite-dimensional unitary representations of a compact group are
+**Interpretation: discrete charge.** The finite-dimensional unitary representations of a compact group are
 labelled by discrete data, so the **internal charge** — the label of a representation of the internal
 group — is **quantised**, with no continuous deformation available. The internal group of the algebra is
 exactly $U(2)$, whose irreducible labels are discrete; that is the algebraic origin of charge
@@ -160,7 +160,7 @@ every invertible element uniquely a unitary slice element times a positive defin
 slice is a group and the boosts are not: the product of two positive definite Hermitian elements is
 Hermitian exactly when they commute.
 
-**Reading (labelled).** The compact slice is the internal symmetry group and the non-compact boosts are
+**Interpretation (labelled).** The compact slice is the internal symmetry group and the non-compact boosts are
 the kinematic boosts. Compactness gives discrete labels — **charge quantisation**, no continuous charge
 deformation. Non-compactness gives the continuous **rapidity** $\varphi\in\mathbb{R}$: there is no
 smallest rapidity and no lattice of rapidities, hence **no boost quantum**, and no particle is carried by
@@ -178,10 +178,10 @@ $N(\tilde B)=1$ in every case, matching $\cosh2\varphi$.
 ## Bilinears and Their Rearrangement
 
 **The four-element basis.** For spinors $s,t\in S$ the outer product $M=st^{\dagger}$ is a $2\times2$
-matrix, hence an element of the algebra through $\Phi^{-1}$, expanded as
+matrix, hence an element of the algebra through $\mathsf{M}_2^{-1}$, expanded as
 $M=\sum_\mu c_\mu e_\mu$ with $c_\mu=\tfrac12\mathrm{Tr}(E_\mu^{\dagger}M)$, the factor being the inverse
 of $\mathrm{Tr}(E_\mu^{\dagger}E_\nu)=2\delta_{\mu\nu}$. The four $c_\mu$ are the **bilinear components**
-of the pair. In the Dirac reading the same construction with the sixteen gamma matrices gives sixteen
+of the pair. In the Dirac interpretation the same construction with the sixteen gamma matrices gives sixteen
 components; the counts, four per biquaternion pair against sixteen per Dirac pair, are the whole reason
 the rearrangement coefficients differ between the two bases.
 
@@ -224,7 +224,7 @@ $a=b$. That failure has no instance in $\mathbb{B}$. The module, its form and th
 $\mathrm{End}(S)$:
 
 $$
-\sum_{\mu=0}^{3}\tfrac12\,e_\mu\,\tilde X\,e_\mu^{*}=\mathrm{Tr}\bigl(\Phi(\tilde X)\bigr)e_0
+\sum_{\mu=0}^{3}\tfrac12\,e_\mu\,\tilde X\,e_\mu^{*}=\mathrm{Tr}\bigl(\mathsf{M}_2(\tilde X)\bigr)e_0
 \qquad\text{for all }\tilde X ,
 $$
 
@@ -275,7 +275,7 @@ Fierz aggregate $Z=\sigma+J+iS+K\gamma_5-i\omega\gamma_5$ with $Z^{2}=4\sigma Z$
 recovered — the aggregate and the inversion **quoted from the literature**, not recomputed in the corpus —
 are *The Fierz–Kofink Identities and the Classification of Spinors*.
 
-**The physical reading (labelled).** In a scattering amplitude a bilinear at one vertex and a bilinear at
+**The physical interpretation (labelled).** In a scattering amplitude a bilinear at one vertex and a bilinear at
 another can be contracted with the spinors adjacent — an $s$-channel pairing — or crossed — a
 $t$-channel pairing. The rearrangement identity says the two pairings describe the **same exchange**, the
 coefficient being fixed by the algebra rather than chosen. A biquaternion-model exchange is rearranged
@@ -283,7 +283,7 @@ with coefficient $1$ or $\tfrac12$; a Dirac-model computation must use the sixte
 $\tfrac14$.
 
 **Remark (verified).** The completeness sum with coefficient $\tfrac12$ reproduces
-$\mathrm{Tr}(\Phi(\tilde X))e_0$ exactly over $100$ random elements, while replacing $\tfrac12$ by
+$\mathrm{Tr}(\mathsf{M}_2(\tilde X))e_0$ exactly over $100$ random elements, while replacing $\tfrac12$ by
 $\tfrac14$ leaves a deviation of order unity; the bilinear-product identity holds on $100$ random
 quadruples; and $e_1\star e_2=-e_3$, $e_2\star e_1=+e_3$, $e_1\star e_1=e_0$.
 
@@ -337,7 +337,7 @@ witnesses. For the physics this is a caution: which ternary product an algebra c
 involution that defines the product, and a change of involution can turn a coherent triple into an
 incoherent one.
 
-**The reading: three-particle couplings (speculation, labelled).** A coupling of three particles is a
+**The interpretation: three-particle couplings (speculation, labelled).** A coupling of three particles is a
 three-linear object, and the algebra's natural three-linear object is its ternary product. It is then
 tempting to propose that the **associator is the obstruction to a naive three-particle coupling** — a
 naive coupling written as an iterated binary product is not well defined where the associator is nonzero —
@@ -345,7 +345,7 @@ that the **ternary product is the repair**, giving the coupling as a single thre
 the **Jordan triple identity is the coherence condition** the repair must meet, so that the identity
 selects which three-particle vertices an algebra admits. Bilinear couplings are assembled without
 ambiguity; ternary ones require the ternary product, and that shift is the content of the algebra's
-non-associativity. In this reading the **associator is the order dependence of a three-field coupling**:
+non-associativity. In this interpretation the **associator is the order dependence of a three-field coupling**:
 its value on a triple is the amount by which the outcome changes when the triple is re-bracketed, so a
 nonzero associator is exactly the statement that a three-field coupling is order-dependent and cannot be
 written as an iteration of two-field ones.
@@ -369,7 +369,7 @@ witness $(e_0,e_1,e_0,e_2,e_0)$ giving $e_3$ and $-3e_3$.
 
 ## The Limits
 
-- The particle vocabulary — Dirac-like, Majorana-like, neutrino — is the framework's reading, labelled;
+- The particle vocabulary — Dirac-like, Majorana-like, neutrino — is the framework's interpretation, labelled;
   the algebra supplies the trichotomy, not the assignment.
 - The charge quantisation is a statement about the representations of the compact internal group; it is
   not a derivation of the observed charge spectrum.
@@ -391,7 +391,7 @@ $\tfrac14$ over the four-element basis. Non-associativity with the witness $-2e_
 $\{\tilde P,\tilde Q,\tilde R\}=\tilde P\tilde Q^{*}\tilde R$ and its shadows; the Jordan triple identity
 for it, and its failure for the general quaternionic sesquilinear product on $480$ of $1024$ five-tuples of the four real quaternion units.
 
-**Readings.** Dirac-like particles with distinct antiparticles; charge quantisation from compactness and
+**Interpretations.** Dirac-like particles with distinct antiparticles; charge quantisation from compactness and
 continuous rapidity from non-compactness; the $s$-channel/$t$-channel exchange; the ternary product as a
 three-particle coupling, and as the state pairing at three entries; the associator as the order dependence
 of a three-field coupling.
@@ -422,7 +422,7 @@ compact because the dagger is positive, and compactness is read as **discrete ch
 non-compact, with $N=1$, $\lVert\tilde B\rVert_E^{2}=\cosh2\varphi$ and rapidity $\varphi\in\mathbb{R}$,
 and non-compactness is read as **continuous rapidity with no boost quantum**, the units decomposing as
 $U\cdot\exp(\mathbb{M}_+)$. Fermion bilinears over the four-element basis rearrange with coefficient $1$
-or $\tfrac12$ — the completeness relation gives $\mathrm{Tr}(\Phi(\tilde X))e_0$, and the textbook
+or $\tfrac12$ — the completeness relation gives $\mathrm{Tr}(\mathsf{M}_2(\tilde X))e_0$, and the textbook
 $\tfrac14$ belongs to the sixteen-element Dirac basis — which is read as the identity of the
 $s$-channel and $t$-channel exchanges. The four bilinears of the module sit inside the sixteen Dirac
 covariants, whose **Fierz–Kofink identities** force exactly **six classes**, three regular and three
@@ -451,7 +451,7 @@ Positivity of the Dagger* and *Observables, Gauge Generators and the Chirality o
 | $GL_2(\mathbb{C})=U\cdot\exp(\mathbb{M}_+)$ | the Cartan decomposition of the units |
 | $J(s)=X\bar s$ | the antilinear reality structure, $J^{2}=\pm1$ |
 | $\bar S$ | the conjugate module; the antiparticle space |
-| $\sum_\mu\tfrac12 e_\mu\tilde X e_\mu^{*}=\mathrm{Tr}(\Phi(\tilde X))e_0$ | the Fierz–Kofink completeness relation |
+| $\sum_\mu\tfrac12 e_\mu\tilde X e_\mu^{*}=\mathrm{Tr}(\mathsf{M}_2(\tilde X))e_0$ | the Fierz–Kofink completeness relation |
 | $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde T\}$, $G=\tfrac12 I_2$ | the spinor module and its positive definite inner product |
 | $\sigma,\omega,J,K,S$; six classes | the Dirac covariants and Lounesto's six classes |
 | $\{\tilde P,\tilde Q,\tilde R\}=\tilde P\tilde Q^{*}\tilde R$ | the ternary product |

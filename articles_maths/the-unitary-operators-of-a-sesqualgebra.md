@@ -18,7 +18,7 @@ Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma
 
 ## The Unitary Condition
 
-### The Definition and its Readings
+### The Definition and its Interpretations
 
 **Definition.** An operator $T:A\to A$ of one of the two parities, so that its adjoint is defined, is **unitary** when it is invertible and
 

@@ -239,7 +239,7 @@ and since $2k \geq k+1$, the congruence modulo $p^{k+1}$ is $f(r_k) + t p^k f'(r
 
 **Example.** The lemma is sharp: for $f = m^2 - 1$ and $p = 2$ one has $f'(r) = 2r \equiv 0 \pmod 2$ for every $r$, and indeed $m^2 \equiv 1 \pmod{2^k}$ has one solution for $k=1$, two for $k=2$ and four for $k \geq 3$, namely $\pm 1$ and $\pm(1 + 2^{k-1})$. For $f = m^2$ the only root modulo $p$ is multiple, and the number of solutions modulo $p^k$ is $p^{\lfloor k/2\rfloor}$. Thus Hensel's lemma asserts exactly that the *simple* roots, and only they, lift uniquely.
 
-### The $p$-adic Reading
+### The $p$-adic Interpretation
 
 **Theorem.** The $p$-adic integers $\mathbb{Z}_p$ are the inverse limit of the rings $\mathbb{Z}/p^k\mathbb{Z}$ along the reduction maps, and Hensel's lemma is the statement that every simple root in the residue field $\mathbb{F}_p$ is the reduction of a unique root in $\mathbb{Z}_p$.
 

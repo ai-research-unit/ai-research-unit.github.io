@@ -14,7 +14,7 @@ The article is the sibling of *The Operators of the Ordinary Product: One-Sided,
 operator article of the GPA band, and it carries a layer that article explicitly defers to this band. The composition
 band reads its own indefinite plain form and states that self-adjointness for that form is not physical hermiticity;
 the observables and the gauge generators of the framework are the self-adjoint and the skew-adjoint operators of the
-Hermitian form of this sesquilinear block, and the full reading of them is *Observables, Gauge Generators and the
+Hermitian form of this sesquilinear block, and the full interpretation of them is *Observables, Gauge Generators and the
 Chirality of the Internal Action*. The rank and the mass are *Mass, Rank and the Positivity of the Dagger*; the
 particle types are *Particle Types, Discrete Charge and Three-Particle Couplings*; the state space and its
 complement are *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra* and *The Complementary Space
@@ -33,7 +33,7 @@ complex coefficients. The Hermitian conjugation is ${}^{*}$ with $Q^{*}_{\nu}=\v
 and $\varepsilon=(1,-1,-1,-1)$; the natural conjugation is ${}^{\natural}$. The sectors are
 $\mathbb{M}_+=\{\tilde Q^{*}=\tilde Q\}$ (informational) and $\mathbb{M}_-=\{\tilde Q^{*}=-\tilde Q\}$ (material),
 and the unitary slice is $U=\{\tilde U:\tilde U\tilde U^{*}=e_0\}$. The scalar part is $\mathrm{Sc}$, the trace is
-$\mathrm{Tr}=2\,\mathrm{Sc}$, and the matrix model $\Phi$ has $\det\Phi(\tilde Q)=N(\tilde Q)$ for the biquaternion
+$\mathrm{Tr}=2\,\mathrm{Sc}$, and the matrix model $\mathsf{M}_2$ has $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ for the biquaternion
 norm $N(\tilde Q)=\sum_{\mu}Q_{\mu}^{2}$.
 
 ## The Two Multiplication Operators and Their Parity
@@ -76,7 +76,7 @@ $R^{\star}_{\lambda\tilde A}(\tilde X)=\tilde X(\lambda\tilde A)^{*} =\overline{
 **Read as a physical statement.** The two slots of the Born pairing have opposite polarity: the first slot is read
 linearly and the second through the conjugation, and the multiplication operators inherit that polarity. Attaching
 on the left conjugates the variable; attaching on the right conjugates the parameter. A bilinear product reads both
-slots the same way, so no bilinear row has this behaviour. This is a reading: it names the algebraic fact that the
+slots the same way, so no bilinear row has this behaviour. This is an interpretation: it names the algebraic fact that the
 product is $\mathbb{C}$-linear in one argument and conjugate-linear in the other, and it calls that polarity the
 bra-and-ket asymmetry of a probability amplitude.
 
@@ -88,7 +88,7 @@ $R^{\star}_{e_0}(\tilde X)=\tilde Xe_0^{*}=\tilde X$.
 
 **Read as a physical statement.** The two extreme actions of the product are the conjugation and the identity, one
 on each side, and the neutral operation is a right multiplication. The product has a one-sided unit, and the
-operator form of that one-sidedness is this display. This is a reading of the asymmetry of the product's unit.
+operator form of that one-sidedness is this display. This is an interpretation of the asymmetry of the product's unit.
 
 ## The Composition of the Operators
 
@@ -124,7 +124,7 @@ $\{L^{\star}\}$, $\{R^{\star}\}$, $\{S\}$, $\{T\}$ generate the monoid of the pr
 $R^{\star}_{e_0}=T_{e_0,e_0}=\mathrm{id}$.
 
 **Read as a physical statement.** The product composes on the right exactly as the algebra does, and it does not
-compose on the left, because the left slot carries the conjugation. This is a reading: it says that the probability
+compose on the left, because the left slot carries the conjugation. This is an interpretation: it says that the probability
 structure retains the composability of the algebra on one side only, and that the two-sided multiplication $T$ is
 the residue of the failure on the other side.
 
@@ -140,7 +140,7 @@ Left and Right Multiplications of the Biquaternion Sesqualgebra*.
 **Read as a physical statement.** The composition band recovers its algebra from the action,
 $\mathbb{B}^{\mathrm{e}}\cong\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ with two commuting families. This band does not:
 the parity mismatch forbids a single linear representation, and the action recovers the sesqualgebra only through
-two families and a two-sided residue. This is a reading, and it is the operator form of the statement that the
+two families and a two-sided residue. This is an interpretation, and it is the operator form of the statement that the
 sesquilinear product is not associative.
 
 ## The Form and the Adjoint: the Side Is Kept and the Parameter Conjugated
@@ -190,7 +190,7 @@ is the same computation with $(\tilde P\tilde A)^{*}=\tilde A^{*}\tilde P^{*}$, 
 the second and $R^{\star}_{\tilde A}=R_{\tilde A^{*}}$.
 
 **Read as a physical statement.** Transporting an operation across the Born pairing conjugates its parameter and
-does not move it to the other side; a left attachment stays a left attachment. This is a reading of a proof, and it
+does not move it to the other side; a left attachment stays a left attachment. This is an interpretation of a proof, and it
 is the physical hermiticity the composition band defers to this one: the parameter is read as a charge or a phase,
 and the adjoint reverses it. The type of the operator is decided by the type of one parameter, which is what the
 next section uses.
@@ -214,7 +214,7 @@ twisted-skew-adjointness at $\tilde X=e_0$ reads $\tilde A=-\tilde A$.
 
 **Read as a physical statement.** The two slots of the form do not receive adjoints of the same kind, because the
 two multiplication operators are not of the same kind. The right attachment has a right attachment as its adjoint;
-the left attachment has not, and its adjoint is a two-sided operation. This is a reading of the parity asymmetry of
+the left attachment has not, and its adjoint is a two-sided operation. This is an interpretation of the parity asymmetry of
 the product at the level of the adjoint.
 
 **Corollary (the contrast with the composition band).** The adjoint of this band is a **Hermitian adjoint** for a
@@ -244,7 +244,7 @@ General Plain Sesqualgebra of Biquaternions*.
 
 **Read as a physical statement.** A two-sided operation keeps its two sides under the adjoint and conjugates both
 parameters; a sandwich exchanges them, so the adjoint reads the sandwich and its mirror image as a pair. This is a
-reading of the anti-automorphism property $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$ of the twisted adjoint.
+interpretation of the anti-automorphism property $(ST)^{\dagger}=T^{\dagger}S^{\dagger}$ of the twisted adjoint.
 
 ## The Types of the Operators: Observables and Generators
 
@@ -275,7 +275,7 @@ $\tilde B\mapsto L_{\tilde B}$ commute, and the exponential of an anti-Hermitian
 
 **Read as a physical statement.** The **observables** of the framework are the self-adjoint operators of this form
 and the **gauge generators** are the skew-adjoint ones, one for each parameter of the corresponding sector: the
-Hermitian elements act by observables and the anti-Hermitian elements by generators. This is a reading, and it is
+Hermitian elements act by observables and the anti-Hermitian elements by generators. This is an interpretation, and it is
 why this article is the owner of the physical adjoint that the composition band cites: the plain bilinear form of
 that band is indefinite, and hermiticity is a property of this positive form. The gauge group, its compactness and
 the chirality of the one-sided action are *Observables, Gauge Generators and the Chirality of the Internal Action*
@@ -306,7 +306,7 @@ its parameter is Hermitian up to a phase, so the measurement update, whose param
 the material conjugation, whose parameter is anti-Hermitian, both qualify, and they give the same operator. This
 differs from the composition band, where the sandwich criterion is membership in one sector; here the parameter
 enters twice, the sign that separates the sectors is squared away, and the criterion becomes Hermitian-up-to-phase.
-This is a reading.
+This is an interpretation.
 
 ## The Symmetries of the Form and of the Product
 
@@ -333,7 +333,7 @@ $\tilde U^{*}=\tilde U^{-1}$ on the slice.
 
 **Read as a physical statement.** The isometries of the Born pairing are the unitary slice, on both sides, and the
 same slice consists of the algebra automorphisms. A one-sided operation is an isometry exactly for a unitary
-parameter and is a symmetry of the product only for a central one. This is a reading of the two criteria; it says
+parameter and is a symmetry of the product only for a central one. This is an interpretation of the two criteria; it says
 that the physical symmetry of the probability metric is one-sided and compact, and that the full algebra symmetry is
 the two-sided inner action.
 
@@ -367,7 +367,7 @@ the ideal.
 **Read as a physical statement.** The probability of the framework is a **product**: the amplitude of a state in
 another is the scalar part of the band's product, and the probability is its squared modulus over the two norms.
 The norm is positive definite, so no state of the module has negative probability, and the absence of ghosts and
-tachyons is the positivity of this form (*Mass, Rank and the Positivity of the Dagger*). This is a reading: the
+tachyons is the positivity of this form (*Mass, Rank and the Positivity of the Dagger*). This is an interpretation: the
 framework reads the scalar part of the product as a probability, it does not derive quantum probability from the
 algebra.
 
@@ -386,7 +386,7 @@ state-space siblings' (*The Spinor Space as a Hilbert Space of the General Plain
 Complementary Space of the Spinor Space in the General Plain Sesqualgebra*).
 
 **Read as a physical statement.** The probability structure takes two states to a number and moves no state; the
-motion of a state is the ordinary action, and the pairing is not an action. This is a reading of the parity
+motion of a state is the ordinary action, and the pairing is not an action. This is an interpretation of the parity
 asymmetry at the level of the carrier, and it is the operator form of the fact that the band's product is a pairing
 and not a representation.
 
@@ -395,7 +395,7 @@ conjugate-linear in its second, and no other polarity is admitted by the product
 handedness: the state is the conjugate-linear slot and the observable is the linear one.
 
 **Read as a physical statement.** The two slots of the product are the two slots of a measurement, and their
-opposite polarity is the datum that distinguishes a state from an observable. This is a reading; it is the operator
+opposite polarity is the datum that distinguishes a state from an observable. This is an interpretation; it is the operator
 form of the fact that the product is sesquilinear and not bilinear, and it is the quantisation datum of the band.
 
 **Proposition (the image of the identity and the cone).** The image of the identity under the two-sided operator is
@@ -416,7 +416,7 @@ and *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra*.
 **Read as a physical statement.** The states the algebra produces as squares are the elements of the positive cone
 and nothing outside it, so the probability structure and the causal cone of the band are one cone read twice; the
 left action is the algebra of the state space and the right action is the family that commutes with it. This is a
-reading of the positivity, and the cone, the rank and the mass are *Mass, Rank and the Positivity of the Dagger*.
+interpretation of the positivity, and the cone, the rank and the mass are *Mass, Rank and the Positivity of the Dagger*.
 
 ## The Sandwich and the Inner Automorphism
 
@@ -449,7 +449,7 @@ only on the compact part of the parameter group. The Lorentz action is the **con
 $\tilde P\mapsto\tilde\Lambda\tilde P\tilde\Lambda^{*}$, and the algebra automorphism is the **inverse** one,
 $\tilde P\mapsto\tilde\Lambda\tilde P\tilde\Lambda^{-1}$; on a boost the two differ and on a rotation they coincide,
 and the compact subgroup is exactly where "conjugation by the inverse" and "conjugation by the conjugate" are the
-same statement. This is a reading of the corpus's split between the compact slice and the boost.
+same statement. This is an interpretation of the corpus's split between the compact slice and the boost.
 
 ## A Worked Case
 
@@ -526,7 +526,7 @@ declare.
 - **The comparison of the twelve rows is not this article.** It is the crossing reader *The Operators of the Twelve
   Structures: Multiplication, Adjoint and Bracket*, which is not one of the twelve.
 
-**What the framework does not claim.** The reading does not derive the Born rule, the measurement postulate or
+**What the framework does not claim.** The interpretation does not derive the Born rule, the measurement postulate or
 quantum probability from the algebra; it reads the scalar part of the product as a probability amplitude and names
 the two slots. It does not claim that the positive form of this band is the only positivity of the corpus, the
 indefinite companion being the business of the Krein articles. And it does not claim that the operator theory of the
@@ -561,7 +561,7 @@ with them. The worked case gives $\tilde Q=ie_0+2e_1$ with $\langle\tilde Q,\til
 and $\Theta_{\tilde Q}(e_0)=5e_0-4ie_1$, and the boost $\tilde\Lambda=\cosh u\,e_0+\sinh u\,ie_1$ with
 $\Theta_{\tilde\Lambda}(e_1)=\cosh 2u\,e_1-i\sinh 2u\,e_0$ against $\mathrm{Ad}_{\tilde\Lambda}(e_1)=e_1$.
 
-**Readings.** That the two slots of the product have opposite polarity, so the left family is conjugate-linear and
+**Interpretations.** That the two slots of the product have opposite polarity, so the left family is conjugate-linear and
 the right one complex-linear; that a probability amplitude has one linear and one anti-linear slot, a bra and a ket;
 that the adjoint conjugates the charge and keeps the side, so the observables and the generators are the Hermitian
 and the anti-Hermitian parameters; that the left family has no identity and no single representation, so the
@@ -580,7 +580,7 @@ and the observable. The adjoint of the band is the Hermitian adjoint of the posi
 charge of the parameter without moving the operation to the other side; the self-adjoint operators are the
 observables and the skew-adjoint ones the generators, which is why the physical hermiticity of the framework lives
 in this band and not in the indefinite plain form of the composition band. The right family composes and the left
-does not, and the band's reading of that is that a probability structure is one-sided in its composition while it is
+does not, and the band's interpretation of that is that a probability structure is one-sided in its composition while it is
 two-sided in its action: the two-sided operations are the sandwich and its mirror, and the identity of the
 composition is a right multiplication alone. On the state space the Born pairing is the norm, the left actions are
 the matrices of the algebra, the nilpotent right actions carry a state to the complement, and the image of the
@@ -642,7 +642,7 @@ Hermitian adjoint that keeps them. What is proved is the algebra; what is propos
 | $\Theta_{\tilde Q}^{\dagger}=\Theta_{\tilde Q}\iff\tilde Q^{*}=\omega\tilde Q$, $\lvert\omega\rvert=1$ | The sandwich criterion; both sectors give the same operator |
 | $L_{\tilde A}$ preserves $\langle\cdot,\cdot\rangle_{*}\iff\tilde A\in U$ | The form-preserving operators |
 | $\Theta_{\tilde Q}=\mathrm{Ad}_{\tilde Q}\iff\tilde Q\in U$ | The sandwich and the inner automorphism agree on the slice |
-| $\mathbb{M}_\pm$, $U$, $\Phi$, $N$ | The sectors, the unitary slice, the matrix model, the biquaternion norm |
+| $\mathbb{M}_\pm$, $U$, $\mathsf{M}_2$, $N$ | The sectors, the unitary slice, the matrix model, the biquaternion norm |
 | $S=\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$ | The spinor space and its complement |
 
 ## Further Reading
@@ -677,7 +677,7 @@ Hermitian adjoint that keeps them. What is proved is the algebra; what is propos
   band.
 - *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra* and *The Complementary Space of the Spinor
   Space in the General Plain Sesqualgebra* (`articles_physics/`), the two state-space siblings of the band, for the
-  form, the norm, the Born rule and the complement of the carrier; with the fused reading *The Spinor Space as a
+  form, the norm, the Born rule and the complement of the carrier; with the fused interpretation *The Spinor Space as a
   Module and as a Hilbert Space*.
 - *Mass, Rank and the Positivity of the Dagger*, *Observables, Gauge Generators and the Chirality of the Internal
   Action* and *Particle Types, Discrete Charge and Three-Particle Couplings*

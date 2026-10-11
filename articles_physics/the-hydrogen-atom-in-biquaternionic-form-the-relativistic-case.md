@@ -18,7 +18,7 @@ The article asks what the biquaternion framework contributes to this problem, an
 
 The title covers the relativistic case as the framework's algebraic structures reach it; it is not a claim that the framework derives the Sommerfeld spectrum from its own algebra-level equation. That derivation is not carried out in the corpus, so the claim is not made.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$, its quaternion conjugate is $\tilde\nabla^{\natural} = e_0\partial_{ict} - e_k\partial_k$, and $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$. The isomorphism is $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, so that $\Phi(ie_k) = \sigma_k$. The idempotents are $\tilde\Pi(\pm\hat\mu) = \tfrac12(e_0 \pm i\hat\mu)$. The orbital operators are $\tilde L_k = \hat L_k e_0$ with $\hat L_k = -i\hbar\epsilon_{klm}x_l\partial_m$, the spin operators are $\tilde S_k = \tfrac{\hbar}{2}ie_k$, and $\tilde J_k = \tilde L_k + \tilde S_k$. The rest of the notation is inherited from the read-list articles unchanged.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$, its quaternion conjugate is $\tilde\nabla^{\natural} = e_0\partial_{ict} - e_k\partial_k$, and $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$. The isomorphism is $\mathsf{M}_2(e_0) = I_2$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, so that $\mathsf{M}_2(ie_k) = \sigma_k$. The idempotents are $\tilde\Pi(\pm\hat\mu) = \tfrac12(e_0 \pm i\hat\mu)$. The orbital operators are $\tilde L_k = \hat L_k e_0$ with $\hat L_k = -i\hbar\epsilon_{klm}x_l\partial_m$, the spin operators are $\tilde S_k = \tfrac{\hbar}{2}ie_k$, and $\tilde J_k = \tilde L_k + \tilde S_k$. The rest of the notation is inherited from the read-list articles unchanged.
 
 ## The Dirac–Coulomb Problem
 
@@ -64,7 +64,7 @@ In the non-relativistic problem the Hamiltonian is a scalar multiple of the iden
 At relative order $c^{-2}$ the elimination of the small component produces the effective large-component Hamiltonian
 
 $$
-\hat H = \frac{\boldsymbol\pi^2}{2m} + q\Phi - \frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\mathbf B
+\hat H = \frac{\boldsymbol\pi^2}{2m} + q\mathsf{M}_2 - \frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\mathbf B
 - \frac{\boldsymbol\pi^4}{8m^3c^2}
 + \frac{\hbar^2}{8m^2c^2}\nabla^2V
 - \frac{q\hbar}{4m^2c^2}\,\boldsymbol\sigma\cdot(\mathbf E\times\boldsymbol\pi),
@@ -107,7 +107,7 @@ The **total angular-momentum operator** is the sum of the orbital and spin parts
 $$
 \tilde J_k = \tilde L_k + \tilde S_k = \hat L_k\,e_0 + \frac{\hbar}{2}\,i e_k ,
 \qquad
-\Phi(\tilde J_k) = \hat L_k I_2 + \frac{\hbar}{2}\sigma_k .
+\mathsf{M}_2(\tilde J_k) = \hat L_k I_2 + \frac{\hbar}{2}\sigma_k .
 $$
 
 Because the two parts commute and each satisfies the angular-momentum algebra, so does the sum:
@@ -220,7 +220,7 @@ $$
 
 which vanishes only at $m = 0$, while the vector current is conserved for the massive field; this was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).
 
-The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\hat{\mathbf p} \to \hat{\mathbf p} - q\mathbf A$ and $i\hbar\partial_t \to i\hbar\partial_t - q\Phi$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
+The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\hat{\mathbf p} \to \hat{\mathbf p} - q\mathbf A$ and $i\hbar\partial_t \to i\hbar\partial_t - q\mathsf{M}_2$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
 
 ## What the Framework Supplies and What It Does Not
 
@@ -243,7 +243,7 @@ Two entries deserve a sentence. The first is that the algebraic content is real 
 ## Open Questions
 
 1. **The algebra-level minimal coupling.** The coupled massive equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ is set out in *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, and is proved there to be gauge covariant. The choice of matter representation — left versus right action — remains open in that article and in the parent's open question 7.
-2. **The nature of the mass term.** The parent's mass term is the linear, chirality-off-diagonal pair; the algebra's real structure $\flat$ is retained separately, and a coupling built on it — a Majorana-type mass — is a neutral-field pairing. Whether the real form of $\mathbb{B}$ forces a second, neutral massive sector alongside the charged one is open, and the two readings have different consequences for the charge sectors.
+2. **The nature of the mass term.** The parent's mass term is the linear, chirality-off-diagonal pair; the algebra's real structure $\flat$ is retained separately, and a coupling built on it — a Majorana-type mass — is a neutral-field pairing. Whether the real form of $\mathbb{B}$ forces a second, neutral massive sector alongside the charged one is open, and the two interpretations have different consequences for the charge sectors.
 
 3. **A framework derivation of the spectrum.** Can the radial Dirac–Coulomb equation be written and solved within the biquaternion algebra without passing to the spinor module, and does the Sommerfeld formula follow from the algebra's own operators?
 4. **The supercritical regime.** For $Z\alpha$ beyond $j+\tfrac12$ the exact formula loses its bound states; how does the framework describe the diving of the level into the negative continuum?
@@ -285,7 +285,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\mathbb{M}_+$ | Hermitian subspace (informational): real scalar, imaginary vector |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$ | Centre of the algebra |
-| $\Phi(e_k) = -i\sigma_k$, $\Phi(ie_k) = \sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
+| $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(ie_k) = \sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
 | $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$ | d'Alembertian |
 | $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |

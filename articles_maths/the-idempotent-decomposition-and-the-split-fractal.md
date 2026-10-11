@@ -21,16 +21,16 @@ so that $\tilde Q=\tilde Q_{11}+\tilde Q_{12}+\tilde Q_{21}+\tilde Q_{22}$. The 
 **Proposition (the components are the matrix entries).** Under the matrix realization with the standard idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_2=\tfrac12(e_0-ie_3)$,
 
 $$
-\Phi(\tilde\Pi_1)=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \Phi(\tilde\Pi_2)=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+\mathsf{M}_2(\tilde\Pi_1)=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \mathsf{M}_2(\tilde\Pi_2)=\begin{pmatrix}0&0\\0&1\end{pmatrix},
 $$
 
-and the four Peirce components of $\tilde Q$ with respect to $\tilde\Pi_1$ are the four entries of $\Phi(\tilde Q)$,
+and the four Peirce components of $\tilde Q$ with respect to $\tilde\Pi_1$ are the four entries of $\mathsf{M}_2(\tilde Q)$,
 
 $$
-\Phi(\tilde Q)=\begin{pmatrix}\Phi(\tilde Q_{11})&\Phi(\tilde Q_{12})\\ \Phi(\tilde Q_{21})&\Phi(\tilde Q_{22})\end{pmatrix} .
+\mathsf{M}_2(\tilde Q)=\begin{pmatrix}\mathsf{M}_2(\tilde Q_{11})&\mathsf{M}_2(\tilde Q_{12})\\ \mathsf{M}_2(\tilde Q_{21})&\mathsf{M}_2(\tilde Q_{22})\end{pmatrix} .
 $$
 
-**Proof.** The images of the standard idempotents are computed from $\Phi(e_3)=\left(\begin{smallmatrix}-i&0\\0&i\end{smallmatrix}\right)$: the matrix $\Phi(\tfrac12(e_0+ie_3))=\tfrac12\left(\begin{smallmatrix}1+1&0\\0&1-1\end{smallmatrix}\right)$ is the first matrix unit, and the second is its complement. Then $\Phi(\tilde\Pi\tilde Q\tilde\Pi')$ is the product of the corresponding matrix units, which is the off-diagonal entry.
+**Proof.** The images of the standard idempotents are computed from $\mathsf{M}_2(e_3)=\left(\begin{smallmatrix}-i&0\\0&i\end{smallmatrix}\right)$: the matrix $\mathsf{M}_2(\tfrac12(e_0+ie_3))=\tfrac12\left(\begin{smallmatrix}1+1&0\\0&1-1\end{smallmatrix}\right)$ is the first matrix unit, and the second is its complement. Then $\mathsf{M}_2(\tilde\Pi\tilde Q\tilde\Pi')$ is the product of the corresponding matrix units, which is the off-diagonal entry.
 
 **Corollary (the two halves and the two couplings).** The elements of the form $A\tilde\Pi+B\tilde\Pi'$ have diagonal matrices $\operatorname{diag}(A,B)$; the elements of the form $A\tilde\Pi+B\tilde\Pi'$ together with the two off-diagonal components describe the generic element. **The two halves are the two diagonal entries; the coupling is the pair of off-diagonal entries.**
 
@@ -56,10 +56,10 @@ the product of two complex filled Julia sets. The **split fractal** is this prod
 
 ## The Coupling and the Failure of the Product
 
-**Proposition (the entries of the square).** With the entry notation $\Phi(\tilde Q)=\left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)$,
+**Proposition (the entries of the square).** With the entry notation $\mathsf{M}_2(\tilde Q)=\left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)$,
 
 $$
-\Phi(\tilde Q^2)=\begin{pmatrix}a^2+bc & b(a+d)\\ c(a+d) & cb+d^2\end{pmatrix} .
+\mathsf{M}_2(\tilde Q^2)=\begin{pmatrix}a^2+bc & b(a+d)\\ c(a+d) & cb+d^2\end{pmatrix} .
 $$
 
 Hence the two diagonal entries evolve by $a\mapsto a^2+bc$ and $d\mapsto cb+d^2$, with the off-diagonal product $bc$ appearing as a parameter; the two off-diagonal entries evolve by the multiplication by the trace $a+d$; and the coupling is exactly the trace times the off-diagonal pair.
@@ -68,7 +68,7 @@ Hence the two diagonal entries evolve by $a\mapsto a^2+bc$ and $d\mapsto cb+d^2$
 
 **Theorem (the product description is exactly the plane).** The idempotent plane is invariant under $F_{\tilde C}$ if and only if $\tilde C\in W_{\tilde\Pi}$, and in that case the Julia set restricted to the plane is the boundary of $K_{C_1}\times K_{C_2}$. If $\tilde C\notin W_{\tilde\Pi}$ the plane is not invariant and no product $J_{C_1}\times J_{C_2}$ of two complex Julia sets describes $J_{\tilde C}$: the two halves are coupled through the trace and the off-diagonal product.
 
-**Proof.** $F_{\tilde C}(W_{\tilde\Pi})\subset W_{\tilde\Pi}$ requires the off-diagonal entries of $\tilde C$ to vanish, i.e. $\tilde C\in W_{\tilde\Pi}$; for such a parameter the set is the product by the theorem above. For any other parameter the plane is not invariant, and the entry formula of the previous proposition exhibits the coupling: the diagonal entries of $\Phi(\tilde Q^2)$ contain the off-diagonal product $bc$ and the off-diagonal entries contain the trace $a+d$, so the two halves are not independent and their orbits are not the orbits of a pair of one-variable maps. A set that is a product of two one-variable Julia sets would give independent halves, and no such description is available.
+**Proof.** $F_{\tilde C}(W_{\tilde\Pi})\subset W_{\tilde\Pi}$ requires the off-diagonal entries of $\tilde C$ to vanish, i.e. $\tilde C\in W_{\tilde\Pi}$; for such a parameter the set is the product by the theorem above. For any other parameter the plane is not invariant, and the entry formula of the previous proposition exhibits the coupling: the diagonal entries of $\mathsf{M}_2(\tilde Q^2)$ contain the off-diagonal product $bc$ and the off-diagonal entries contain the trace $a+d$, so the two halves are not independent and their orbits are not the orbits of a pair of one-variable maps. A set that is a product of two one-variable Julia sets would give independent halves, and no such description is available.
 
 **Remark (the reconstruction is obstructed).** The pair of halves is not enough to determine the orbit, because the coupling term $bc$ enters the diagonal dynamics; the reconstruction of the biquaternion fractal from the split fractal therefore fails, and the failure is quantitative: the coupling is bilinear in the off-diagonal entries and can be small in a slice and large in the fractal. **The split fractal is an exact slice and not a decomposition.**
 

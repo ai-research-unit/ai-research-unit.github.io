@@ -44,7 +44,7 @@ $$
 
 Moreover $J_0$ contains the idempotent manifold, a real four-dimensional smooth manifold, so $\dim_H\bigl(J_0\cap\mathscr{Z}\bigr)\ge4$.
 
-**Proof.** $\mathcal K_0$ contains the open set $\{\rho(\Phi(\tilde Q))<1\}$, because the orbit of a matrix of spectral radius below one tends to zero (*The Biquaternion Quadratic Map and Its Julia Sets*, §*The Central Parameter and the Eigenvalue Reduction*), so $\dim_H\mathcal K_0=8$. The Julia set is $J_0=\{\rho(\Phi(\tilde Q))=1\}$: the filled set $\mathcal K_0$ has closure $\{\rho\le1\}$ and interior $\{\rho<1\}$ — the matrices of spectral radius one that are not diagonalisable lie outside $\mathcal K_0$ but are limits of diagonalisable ones — so its boundary is the level set $\{\rho=1\}$. That level set is a semialgebraic set of real dimension seven: on the open dense set where exactly one eigenvalue has modulus one (or the two are distinct), $\rho$ is real-analytic with non-vanishing differential and the level set is a real hypersurface, and a semialgebraic set has Hausdorff dimension equal to its real dimension. The idempotent manifold is contained in $J_0$ and has real dimension four (*The Zero Divisors and the Singular Julia Sets*).
+**Proof.** $\mathcal K_0$ contains the open set $\{\rho(\mathsf{M}_2(\tilde Q))<1\}$, because the orbit of a matrix of spectral radius below one tends to zero (*The Biquaternion Quadratic Map and Its Julia Sets*, §*The Central Parameter and the Eigenvalue Reduction*), so $\dim_H\mathcal K_0=8$. The Julia set is $J_0=\{\rho(\mathsf{M}_2(\tilde Q))=1\}$: the filled set $\mathcal K_0$ has closure $\{\rho\le1\}$ and interior $\{\rho<1\}$ — the matrices of spectral radius one that are not diagonalisable lie outside $\mathcal K_0$ but are limits of diagonalisable ones — so its boundary is the level set $\{\rho=1\}$. That level set is a semialgebraic set of real dimension seven: on the open dense set where exactly one eigenvalue has modulus one (or the two are distinct), $\rho$ is real-analytic with non-vanishing differential and the level set is a real hypersurface, and a semialgebraic set has Hausdorff dimension equal to its real dimension. The idempotent manifold is contained in $J_0$ and has real dimension four (*The Zero Divisors and the Singular Julia Sets*).
 
 **Remark (why the dimension drops from eight to seven).** The filled Julia set is full-dimensional because it contains a neighbourhood of the origin in the model, and the Julia set is the boundary of the region it fills, of one real dimension less. **The whole-dimensional non-escaping set and the codimension-one fractal of its boundary are the two objects of the parameter zero, and the singular surface is a distinguished part of the boundary.** The same picture holds at every central parameter for which the complex filled Julia set has interior.
 
@@ -80,7 +80,7 @@ The Hausdorff dimension of a biquaternion Julia set is known in three situations
 | $\dim_H$ | Hausdorff dimension |
 | $\mathcal K_{\tilde C}$, $J_{\tilde C}$ | the filled Julia set and the Julia set |
 | $K_C$, $J_C$ | the complex filled Julia set and Julia set |
-| $\rho(\Phi(\tilde Q))$ | the spectral radius of the matrix model |
+| $\rho(\mathsf{M}_2(\tilde Q))$ | the spectral radius of the matrix model |
 | $W_{\tilde\Pi}$ | the idempotent plane $\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ |
 | $\mathscr{Z}$ | the zero-divisor cone |
 | $\alpha=\dim_HK_C$ | the dimension of the complex filled Julia set |

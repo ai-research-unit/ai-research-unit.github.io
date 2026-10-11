@@ -67,7 +67,7 @@ exactly when $R = R^{-1}$, that is, when $R$ is symmetric.
 **Proof.** The two identities are the theorem applied twice; $L_R = L_{R^{-1}}$ means $R;S = R^{-1};S$
 for all $S$, which with $S = \Delta_Y$ gives $R = R^{-1}$.
 
-## The Galois Reading
+## The Galois Interpretation
 
 **Theorem (residuation).** For a fixed relation $R \subseteq X \times Y$ the operator $L_R : S \mapsto R
 ; S$ is residuated, with right adjoint $T \mapsto R \backslash T$ where

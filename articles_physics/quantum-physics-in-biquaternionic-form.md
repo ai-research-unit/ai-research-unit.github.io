@@ -496,7 +496,7 @@ The companion article listed ten structural requirements for a comprehensive qua
 
 **9. Classical limit.** The classical limit of the qubit formalism is the classical spin, obtained when the state is in a coherent state (a pure state) and the dynamics is a classical precession. The general classical limit of quantum physics requires the machinery of decoherence and the correspondence principle, which are not developed in this article.
 
-**10. Interpretation.** The biquaternion framework admits several interpretive readings. The most natural is **algebraic**: the states and observables of a quantum system are elements of the Hermitian subspace $\mathbb{M}_+$, and the quantum structure is a consequence of the algebra. This is a structural interpretation, not a metaphysical one, and it is compatible with several of the standard interpretations (Copenhagen, relational, informational) without committing to any of them.
+**10. Interpretation.** The biquaternion framework admits several interpretive interpretations. The most natural is **algebraic**: the states and observables of a quantum system are elements of the Hermitian subspace $\mathbb{M}_+$, and the quantum structure is a consequence of the algebra. This is a structural interpretation, not a metaphysical one, and it is compatible with several of the standard interpretations (Copenhagen, relational, informational) without committing to any of them.
 
 ## Compatibility with Relativity
 
@@ -609,7 +609,7 @@ The idempotent formalism raises several questions.
 
 **4. Relativistic quantum theory.** The biquaternion algebra contains the Lorentz group and the spinor representation, and the biquaternion Dirac equation describes a relativistic spin-1/2 field classically. The quantization of this field, with a Lorentz-covariant state space and a consistent many-particle structure, is the natural next step. The relation between the single-qubit quantum formalism presented here and the relativistic spinor-field theory remains to be worked out in detail.
 
-**5. The interpretation of the informational sector.** The companion article on $\mathbb{M}_+$ proposes an informational interpretation of the Hermitian subspace. Under this reading, the idempotents are "pure information states" and the Hermitian elements are "informational observables". The Born rule is the "probability of extracting information". Whether this leads to new structure is an open question.
+**5. The interpretation of the informational sector.** The companion article on $\mathbb{M}_+$ proposes an informational interpretation of the Hermitian subspace. Under this interpretation, the idempotents are "pure information states" and the Hermitian elements are "informational observables". The Born rule is the "probability of extracting information". Whether this leads to new structure is an open question.
 
 **6. The measurement problem.** The idempotent formalism makes the Born rule and the state update algebraic, but it does not explain why one idempotent is selected in a given measurement. This is the same measurement problem as in standard quantum physics, in different notation.
 

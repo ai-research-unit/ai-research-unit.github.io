@@ -214,7 +214,7 @@ whose $D^{(2)}$ summand is again present — but $D^{(3)}$ and above are still m
 
 It is worth saying why the contrast is not a defect to be repaired but a structural necessity.
 
-The algebra is finite because it is the **local value space** of the theory. A point of spacetime carries a finite amount of algebraic data — here four complex numbers — and the whole purpose of a finite algebra of values is to be finite. Its four dimensions carry the two-dimensional spinor module, which is what makes it qubit-like, and, under rotations, the scalar-plus-vector content $D^{(0)}\oplus D^{(1)}$, which is what makes it a four-vector; those two readings are the algebra's physical role.
+The algebra is finite because it is the **local value space** of the theory. A point of spacetime carries a finite amount of algebraic data — here four complex numbers — and the whole purpose of a finite algebra of values is to be finite. Its four dimensions carry the two-dimensional spinor module, which is what makes it qubit-like, and, under rotations, the scalar-plus-vector content $D^{(0)}\oplus D^{(1)}$, which is what makes it a four-vector; those two interpretations are the algebra's physical role.
 
 The tower is infinite because the theory is a **field theory**. A classical field on three-dimensional space has infinitely many angular degrees of freedom; there is no largest multipole order, and a generic source excites all of them. The infinity is the infinity of the function space, and it is the same infinity that makes a field a field rather than a finite set of numbers.
 

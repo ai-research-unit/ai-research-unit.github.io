@@ -30,7 +30,7 @@ For the **vacuum** state $\tilde\rho = \tilde\Pi_1$ the GNS space is the minimal
 
 The article proceeds as follows. The next section recalls the GNS theorem. The section after that fixes the states of $\mathbb{B}$ as density matrices. Two sections then construct the GNS data explicitly and compute the dimension in the pure, mixed, and trace cases. A section states the modular structure. A section examines the trace state and the algebra's canonical state. A section records the second description of a state, as the Fourier transform of a measure, and locates the point at which the biquaternion algebra's norm fails to supply it. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the centre. The isomorphism is $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Tr}(e_0)=2$. The biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The minimal idempotents are $\tilde\Pi(\pm\hat{\boldsymbol\mu})=\tfrac12(e_0\pm i\hat{\boldsymbol\mu})$, the vacuum projector being $\tilde\Pi_1$, and the single-mode ladder is $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent*.
+**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the centre. The isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Tr}(e_0)=2$. The biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The minimal idempotents are $\tilde\Pi(\pm\hat{\boldsymbol\mu})=\tfrac12(e_0\pm i\hat{\boldsymbol\mu})$, the vacuum projector being $\tilde\Pi_1$, and the single-mode ladder is $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 ## The GNS Theorem
 
@@ -58,7 +58,7 @@ so an operator that has zero expectation of its square acts as zero on the recon
 
 ## The States of the Biquaternion Algebra
 
-Because $\mathbb{B}$ is finite-dimensional, every positive normalized functional is given by a density matrix. Writing $\Phi$ for the isomorphism and $\mathrm{Tr}$ for the algebra trace,
+Because $\mathbb{B}$ is finite-dimensional, every positive normalized functional is given by a density matrix. Writing $\mathsf{M}_2$ for the isomorphism and $\mathrm{Tr}$ for the algebra trace,
 
 > **Proposition.** $\omega$ is a state on $\mathbb{B}$ if and only if there is $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge 0$ and $\mathrm{Tr}(\tilde\rho)=1$ such that
 > $$
@@ -66,7 +66,7 @@ Because $\mathbb{B}$ is finite-dimensional, every positive normalized functional
 > $$
 > the value being the real number $2\,\mathrm{Sc}(\tilde\rho\,\tilde A)$ whenever $\tilde A$ is Hermitian.
 
-The positivity of $\tilde\rho$ as an element of the $C^*$-algebra means positivity of the matrix $\Phi(\tilde\rho)$. A state is thus an element of the algebra — a fact that has no analogue for the field algebras, whose states are functionals on an infinite-dimensional algebra and not elements of it.
+The positivity of $\tilde\rho$ as an element of the $C^*$-algebra means positivity of the matrix $\mathsf{M}_2(\tilde\rho)$. A state is thus an element of the algebra — a fact that has no analogue for the field algebras, whose states are functionals on an infinite-dimensional algebra and not elements of it.
 
 The state space of $\mathbb{B}$ is parametrized by the Bloch ball. Writing
 $$
@@ -113,13 +113,13 @@ and it vanishes exactly when $\tilde A \tilde\Pi_1=0$, i.e. when the image of $\
 $$
 \mathcal{H}_{\tilde\Pi_1} \;\cong\; \mathbb{B}\tilde\Pi_1 \;\cong\; \mathbb{C}^2 .
 $$
-Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure-gauge, and the physical Hilbert space is the minimal left ideal — the one-particle module of article 1. The same conclusion follows from $\Phi(\tilde\Pi_1)=\mathrm{diag}(1,0)$: the inner product $\mathrm{Tr}(\tilde\Pi_1\tilde A^{*}\tilde B)$ sees only the first column of the matrices.
+Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure-gauge, and the physical Hilbert space is the minimal left ideal — the one-particle module of article 1. The same conclusion follows from $\mathsf{M}_2(\tilde\Pi_1)=\mathrm{diag}(1,0)$: the inner product $\mathrm{Tr}(\tilde\Pi_1\tilde A^{*}\tilde B)$ sees only the first column of the matrices.
 
 **The trace state.** Take $\tilde\rho = \tfrac12 e_0$. Then
 $$
 \langle \tilde A,\tilde B\rangle_{\mathrm{tr}} = \tfrac12\mathrm{Tr}\big(\tilde A^{*}\tilde B\big),
 $$
-the Hilbert–Schmidt inner product, whose radical is trivial: $\mathrm{Tr}(\tilde A^{*}\tilde A)=\|\Phi(\tilde A)\|_{\mathrm{HS}}^2 = 0$ only for $\tilde A=0$. Hence
+the Hilbert–Schmidt inner product, whose radical is trivial: $\mathrm{Tr}(\tilde A^{*}\tilde A)=\|\mathsf{M}_2(\tilde A)\|_{\mathrm{HS}}^2 = 0$ only for $\tilde A=0$. Hence
 $$
 \mathcal{H}_{\mathrm{tr}} \;\cong\; \mathbb{B} \;\cong\; \mathbb{C}^4,
 \qquad
@@ -143,7 +143,7 @@ Three structural consequences follow, and they are the content of the constructi
 
 **The vacuum's GNS space is the one-particle space.** For the vacuum state the GNS Hilbert space is the minimal left ideal $\mathbb{B}\tilde\Pi_1$, of dimension two. This is the same module that *The Biquaternion Vacuum as a Minimal Idempotent* identified as the one-particle spinor space, now recovered from the state alone. The GNS theorem is thus the precise sense in which **the vacuum state determines the one-particle module**.
 
-**Purity is irreducibility.** The vacuum state is pure, so its GNS representation is irreducible: the only subspaces of $\mathbb{C}^2$ invariant under left multiplication by all of $\mathbb{B}$ are $0$ and $\mathbb{C}^2$. The trace state is mixed, and its representation is reducible — indeed $\pi_{\mathrm{tr}}$ is a direct sum of two equivalent two-dimensional representations. This is the operator-algebraic reading of the Bloch-sphere/Bloch-ball distinction: the boundary of the ball gives irreducible representations, the interior gives reducible ones.
+**Purity is irreducibility.** The vacuum state is pure, so its GNS representation is irreducible: the only subspaces of $\mathbb{C}^2$ invariant under left multiplication by all of $\mathbb{B}$ are $0$ and $\mathbb{C}^2$. The trace state is mixed, and its representation is reducible — indeed $\pi_{\mathrm{tr}}$ is a direct sum of two equivalent two-dimensional representations. This is the operator-algebraic interpretation of the Bloch-sphere/Bloch-ball distinction: the boundary of the ball gives irreducible representations, the interior gives reducible ones.
 
 **The annihilation operator is in the radical.** For the vacuum state,
 $$
@@ -157,7 +157,7 @@ The check that $\omega(\tilde A)=\langle\Omega|\pi(\tilde A)|\Omega\rangle$ is t
 
 ## Modular Structure
 
-The GNS construction carries a second structure that the thermal articles use: the **modular operator**. For a state $\tilde\rho$ invertible as a matrix (equivalently $\det\Phi(\tilde\rho)\ne0$, a full-rank state), define on the GNS space the operators
+The GNS construction carries a second structure that the thermal articles use: the **modular operator**. For a state $\tilde\rho$ invertible as a matrix (equivalently $\det\mathsf{M}_2(\tilde\rho)\ne0$, a full-rank state), define on the GNS space the operators
 $$
 \Delta_{\tilde\rho}(\tilde A) \;=\; \tilde\rho\,\tilde A\,\tilde\rho^{-1},
 \qquad
@@ -228,7 +228,7 @@ $$
 \omega_\varphi(f) = \int_G f(g) \, \varphi(g) \, dg
 $$
 
-is linear, positive, and normalised on the convolution algebra of $G$, and the GNS construction applied to it returns $L^2(G,\mu)$, with the regular representation and the constant function as cyclic vector. Fourier inversion *is* the reconstruction, so "a normalised positive functional is a state" and "a normalised positive-definite function is the Fourier transform of a measure" are two readings of one theorem. The positivity that this article assumes of a state and the positive definiteness that the classical theorem assumes of a characteristic function are therefore one condition, and a state of a translation-invariant theory need not be exhibited as an element of an algebra at all: the measure is the state, and the density matrix is its transform.
+is linear, positive, and normalised on the convolution algebra of $G$, and the GNS construction applied to it returns $L^2(G,\mu)$, with the regular representation and the constant function as cyclic vector. Fourier inversion *is* the reconstruction, so "a normalised positive functional is a state" and "a normalised positive-definite function is the Fourier transform of a measure" are two interpretations of one theorem. The positivity that this article assumes of a state and the positive definiteness that the classical theorem assumes of a characteristic function are therefore one condition, and a state of a translation-invariant theory need not be exhibited as an element of an algebra at all: the measure is the state, and the density matrix is its transform.
 
 **Where the framework departs from it.** A state is $\mathbb{C}$-valued, and the framework's own harmonic analysis does not deliver one directly. The transform of a measure in the biquaternion algebra is $\mathbb{B}$-valued, and the algebra's norm is not positive definite — the norm of the central imaginary unit is $N(i)=-1$ — so a biquaternion-valued transform of a measure is not a positive-definite function and the classical theorem has no source there. That object *is* positive definite under a definite Hermitian pairing, and the pairing is the one this article already uses, $\langle \tilde A,\tilde B\rangle_\omega = \mathrm{Tr}(\tilde\rho\,\tilde A^{*}\tilde B)$. The measure route and the GNS route therefore meet on the Hermitian pairing, and the biquaternion norm is used by neither. The computation is in *Biquaternion Continuous Harmonic Analysis*, in the section on the transform of a measure; the quaternion statement, where the norm is definite and the classical positivity does hold, is in *Quaternion Harmonic Analysis*.
 
@@ -249,12 +249,12 @@ is linear, positive, and normalised on the convolution algebra of $G$, and the G
 - The modular Hamiltonian $K=-\log\tilde\rho$ lies in $\mathbb{M}_+$.
 
 **Interpretation.**
-- That the GNS reconstruction gives the one-particle module its operational meaning — the module is what a vacuum state reconstructs — is a reading of the theorem in this framework; the theorem itself is standard.
-- That the modular Hamiltonian's location in $\mathbb{M}_+$ provides a structural reading of the thermal state is the interpretive step taken by the KMS and modular articles; this article only supplies the algebraic fact.
+- That the GNS reconstruction gives the one-particle module its operational meaning — the module is what a vacuum state reconstructs — is an interpretation of the theorem in this framework; the theorem itself is standard.
+- That the modular Hamiltonian's location in $\mathbb{M}_+$ provides a structural interpretation of the thermal state is the interpretive step taken by the KMS and modular articles; this article only supplies the algebraic fact.
 
 **Open.**
 - Whether the GNS construction of a *field* state, on the infinite-dimensional mode algebra, can be organized by the biquaternion algebra's fiber structure is open; the algebra hosts one mode, and the field algebra is a module over it.
-- Whether the jump in GNS dimension at the pure boundary — two on the Bloch sphere, four in its interior — has a physical reading beyond the irreducibility/reducibility split is not settled here.
+- Whether the jump in GNS dimension at the pure boundary — two on the Bloch sphere, four in its interior — has a physical interpretation beyond the irreducibility/reducibility split is not settled here.
 - Whether a Fourier route to the framework's states can be stated in the algebra's own terms is open. The transform of a measure in $\mathbb{B}$ is not positive definite, since the norm is indefinite ($N(i)=-1$, as *Biquaternion Continuous Harmonic Analysis* records), so the classical theorem has no source there; the states of this article use the Hermitian pairing instead, and whether that pairing admits a theorem of the same shape is not known.
 
 ## Summary
@@ -318,4 +318,4 @@ The GNS construction supplies the bridge from the vacuum state of *The Biquatern
 - S. Georgiev, J. Morais, K. I. Kou, and W. Sprößig, "Bochner–Minlos theorem and quaternion Fourier transform," in *Quaternion and Clifford–Fourier Transforms and Wavelets*, Trends in Mathematics (Springer, 2013), 105–120, for the quaternion form of the Fourier route to a state, and for the transform of a measure that *Biquaternion Continuous Harmonic Analysis* shows is not positive definite in the biquaternion algebra — the reason the states here are built on the Hermitian pairing.
 - R. V. Kadison and J. R. Ringrose, *Fundamentals of the Theory of Operator Algebras*, Vol. I (Academic Press, 1983), for positivity, radicals, and the classification of states by their support projectors.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the matrix structure of $\mathbb{B}$ underlying the explicit computations.
-- Companion articles: *The Biquaternion Vacuum as a Minimal Idempotent*, for the pure state whose GNS reconstruction is irreducible; *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the mode algebra and the one-mode truncation; *The KMS Condition and the Biquaternion Framework*, for the modular Hamiltonian in $\mathbb{M}_+$ and the thermal reading; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the density-matrix calculus and the Bloch ball; *The Partition Function in Biquaternionic Form*, for the explicit Gibbs-state form of the modular Hamiltonian; *Biquaternion Continuous Harmonic Analysis*, for the transform of a measure and the failure of the norm positivity that makes the Hermitian pairing the state pairing here; *Quaternion Harmonic Analysis* (`articles_maths/quaternion-harmonic-analysis.md`), for the quaternion transform whose norm is definite and whose transform of a measure is positive definite.
+- Companion articles: *The Biquaternion Vacuum as a Minimal Idempotent*, for the pure state whose GNS reconstruction is irreducible; *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the mode algebra and the one-mode truncation; *The KMS Condition and the Biquaternion Framework*, for the modular Hamiltonian in $\mathbb{M}_+$ and the thermal interpretation; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the density-matrix calculus and the Bloch ball; *The Partition Function in Biquaternionic Form*, for the explicit Gibbs-state form of the modular Hamiltonian; *Biquaternion Continuous Harmonic Analysis*, for the transform of a measure and the failure of the norm positivity that makes the Hermitian pairing the state pairing here; *Quaternion Harmonic Analysis* (`articles_maths/quaternion-harmonic-analysis.md`), for the quaternion transform whose norm is definite and whose transform of a measure is positive definite.

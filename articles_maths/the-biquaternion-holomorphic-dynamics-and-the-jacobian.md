@@ -48,16 +48,16 @@ whose determinant, in the coordinates of the model, is $4\,N(\tilde Q)\,(2Q_0)^2
 
 ## The Central Parameter and the Eigenvalue Reduction
 
-**Theorem (the central-parameter identification).** Let $\tilde C=Ce_0$ be central and let $\mathcal{F}_C$, $\mathcal{J}_C$ be the Fatou set and the Julia set of $\zeta\mapsto\zeta^2+C$ in the complex plane. Then for a diagonalisable $\Phi(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$,
+**Theorem (the central-parameter identification).** Let $\tilde C=Ce_0$ be central and let $\mathcal{F}_C$, $\mathcal{J}_C$ be the Fatou set and the Julia set of $\zeta\mapsto\zeta^2+C$ in the complex plane. Then for a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$,
 
 $$
-\tilde Q\in\mathcal{J}_{\tilde C}\iff \mathrm{spec}\,\Phi(\tilde Q)\cap\mathcal{J}_C\neq\emptyset ,
+\tilde Q\in\mathcal{J}_{\tilde C}\iff \mathrm{spec}\,\mathsf{M}_2(\tilde Q)\cap\mathcal{J}_C\neq\emptyset ,
 $$
 
 and
 
 $$
-\mathcal{J}_{\tilde C}=\partial\mathcal K_{\tilde C}=\{\tilde Q : \mathrm{spec}\,\Phi(\tilde Q)\subset K_C \text{ and } \mathrm{spec}\,\Phi(\tilde Q)\cap J_C\neq\emptyset\}.
+\mathcal{J}_{\tilde C}=\partial\mathcal K_{\tilde C}=\{\tilde Q : \mathrm{spec}\,\mathsf{M}_2(\tilde Q)\subset K_C \text{ and } \mathrm{spec}\,\mathsf{M}_2(\tilde Q)\cap J_C\neq\emptyset\}.
 $$
 
 So for a central parameter the dynamical Julia set, the boundary of the filled Julia set and the set of the matrices with an eigenvalue on the complex Julia set are one and the same set.
@@ -74,11 +74,11 @@ $$
 \{2\lambda_1,\ 2\lambda_2,\ 2Q_0,\ 2Q_0\} ,
 $$
 
-the eigenvalues of the differential $L_{\tilde Q}+R_{\tilde Q}$, and the fixed point is attracting exactly when $\rho(\Phi(\tilde Q))<1/2$.
+the eigenvalues of the differential $L_{\tilde Q}+R_{\tilde Q}$, and the fixed point is attracting exactly when $\rho(\mathsf{M}_2(\tilde Q))<1/2$.
 
-**Proof.** Insert $\tilde Q^2=2Q_0\tilde Q-N(\tilde Q)e_0$ (Cayley–Hamilton) into $\tilde Q^2+\tilde C=\tilde Q$: $(2Q_0-1)\tilde Q+(C-N)e_0=0$. If $\tilde Q$ is not central the two terms are independent and give $Q_0=\tfrac12$ and $N=C$, that is $(\mathbf Q,\mathbf Q)=C-\tfrac14$. The differential of the family is $L+R$, whose eigenvalues are the sums $\lambda_i+\lambda_j$ of the eigenvalues of the model, that is $\{2\lambda_1,\ \lambda_1+\lambda_2,\ \lambda_2+\lambda_1,\ 2\lambda_2\}=\{2\lambda_1,\ 2\lambda_2,\ 2Q_0,\ 2Q_0\}$; the attracting condition is that all four have modulus below one, and since $2Q_0=\lambda_1+\lambda_2$ is dominated by the two doubled eigenvalues, the condition is $|\lambda_i|<1/2$ for both, that is $\rho(\Phi(\tilde Q))<1/2$.
+**Proof.** Insert $\tilde Q^2=2Q_0\tilde Q-N(\tilde Q)e_0$ (Cayley–Hamilton) into $\tilde Q^2+\tilde C=\tilde Q$: $(2Q_0-1)\tilde Q+(C-N)e_0=0$. If $\tilde Q$ is not central the two terms are independent and give $Q_0=\tfrac12$ and $N=C$, that is $(\mathbf Q,\mathbf Q)=C-\tfrac14$. The differential of the family is $L+R$, whose eigenvalues are the sums $\lambda_i+\lambda_j$ of the eigenvalues of the model, that is $\{2\lambda_1,\ \lambda_1+\lambda_2,\ \lambda_2+\lambda_1,\ 2\lambda_2\}=\{2\lambda_1,\ 2\lambda_2,\ 2Q_0,\ 2Q_0\}$; the attracting condition is that all four have modulus below one, and since $2Q_0=\lambda_1+\lambda_2$ is dominated by the two doubled eigenvalues, the condition is $|\lambda_i|<1/2$ for both, that is $\rho(\mathsf{M}_2(\tilde Q))<1/2$.
 
-**Corollary (the neutral fixed points).** The non-scalar fixed points have $2Q_0=1$ among their multipliers, so they are never attracting; the ones with $\operatorname{tr}\Phi(\tilde Q)=1$ are neutral in the trace direction and repelling or neutral in the other, and they carry the parabolic local dynamics at the singular set.
+**Corollary (the neutral fixed points).** The non-scalar fixed points have $2Q_0=1$ among their multipliers, so they are never attracting; the ones with $\operatorname{tr}\mathsf{M}_2(\tilde Q)=1$ are neutral in the trace direction and repelling or neutral in the other, and they carry the parabolic local dynamics at the singular set.
 
 ## The Local Dynamics at the Singular Set
 
@@ -88,7 +88,7 @@ the eigenvalues of the differential $L_{\tilde Q}+R_{\tilde Q}$, and the fixed p
 
 ## Summary
 
-The biquaternion quadratic map is holomorphic, its derivative at a point is the sum of the left and the right multiplications by the point, and its Jacobian determinant is proportional to $N(\tilde Q)Q_0^2$, so the map is a local biholomorphism exactly off the critical set, the union of the zero-divisor cone and the vector subspace. The Fatou set is defined by the equicontinuity of the iterates and the dynamical Julia set is its complement; the set-theoretic Julia set of the escape dichotomy and the small Julia set of the equilibrium measure are two other objects, and the three coincide in one variable and are not known to coincide in general here. For a central parameter the three do coincide: the dynamical Julia set, the boundary of the filled Julia set, and the set of the matrices with an eigenvalue on the complex Julia set are one set, and the Fatou set is its complement. The fixed points are the scalar solutions of $\lambda^2-\lambda+C=0$ and the non-scalar elements $\tfrac12e_0+\mathbf Q$ with $(\mathbf Q,\mathbf Q)=C-\tfrac14$; the multiplier spectrum is $\{2\lambda_1,2\lambda_2,2Q_0,2Q_0\}$, the attracting condition is $\rho(\Phi(\tilde Q))<1/2$, and the non-scalar fixed points are neutral in the trace direction. The local dynamics at the cone, the classification of the Fatou components and the general equivalence of the definitions are open.
+The biquaternion quadratic map is holomorphic, its derivative at a point is the sum of the left and the right multiplications by the point, and its Jacobian determinant is proportional to $N(\tilde Q)Q_0^2$, so the map is a local biholomorphism exactly off the critical set, the union of the zero-divisor cone and the vector subspace. The Fatou set is defined by the equicontinuity of the iterates and the dynamical Julia set is its complement; the set-theoretic Julia set of the escape dichotomy and the small Julia set of the equilibrium measure are two other objects, and the three coincide in one variable and are not known to coincide in general here. For a central parameter the three do coincide: the dynamical Julia set, the boundary of the filled Julia set, and the set of the matrices with an eigenvalue on the complex Julia set are one set, and the Fatou set is its complement. The fixed points are the scalar solutions of $\lambda^2-\lambda+C=0$ and the non-scalar elements $\tfrac12e_0+\mathbf Q$ with $(\mathbf Q,\mathbf Q)=C-\tfrac14$; the multiplier spectrum is $\{2\lambda_1,2\lambda_2,2Q_0,2Q_0\}$, the attracting condition is $\rho(\mathsf{M}_2(\tilde Q))<1/2$, and the non-scalar fixed points are neutral in the trace direction. The local dynamics at the cone, the classification of the Fatou components and the general equivalence of the definitions are open.
 
 ## Summary of Notation
 
@@ -100,8 +100,8 @@ The biquaternion quadratic map is holomorphic, its derivative at a point is the 
 | $\mathcal{F}_{\tilde C}$, $\mathcal{J}_{\tilde C}$ | the Fatou set and the dynamical Julia set |
 | $\mathcal K_{\tilde C}$, $J_{\tilde C}=\partial\mathcal K_{\tilde C}$ | the filled Julia set and the set-theoretic Julia set |
 | $\mathcal{F}_C$, $\mathcal{J}_C$, $K_C$, $J_C$ | the one-variable Fatou, Julia, filled and boundary sets |
-| $\{\lambda_1,\lambda_2\}$ | the spectrum of $\Phi(\tilde Q)$ |
-| $\rho(\Phi(\tilde Q))$ | the spectral radius, the attracting condition $\rho<1/2$ |
+| $\{\lambda_1,\lambda_2\}$ | the spectrum of $\mathsf{M}_2(\tilde Q)$ |
+| $\rho(\mathsf{M}_2(\tilde Q))$ | the spectral radius, the attracting condition $\rho<1/2$ |
 
 ## Further Reading
 

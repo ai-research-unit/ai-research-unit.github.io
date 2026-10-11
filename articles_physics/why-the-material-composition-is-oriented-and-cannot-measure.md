@@ -22,7 +22,7 @@ the associator and the ternary product to *The Associator and the Ternary Produc
 Product*; the left multiplications and their monoid to the mathematics article *The Left Multiplications of
 the Quaternionic Product and the Opposite Monoid*; and the two-sided operators with their Hermitian
 adjoints to the mathematics article *The Two-Sided Operators on a Hermitian Algebra*, whose physics
-reading is *Observables, Gauge Generators and the Chirality of the Internal Action*.
+interpretation is *Observables, Gauge Generators and the Chirality of the Internal Action*.
 
 **Conventions.** As in the companion *The Interval as the Square and the Charge of the Material
 Composition*: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
@@ -74,7 +74,7 @@ associativity therefore lives on the elements and not on the operations.
 triples in exact complex arithmetic, with deviations at machine precision. The failure of associativity is
 not a rounding effect: the associator is nonzero on $24$ of the $64$ triples of basis elements.
 
-**Reading.** The physical evolution is the **monoid of left multiplications**, not the elements. The law
+**Interpretation.** The physical evolution is the **monoid of left multiplications**, not the elements. The law
 $L_{\tilde A}\circ L_{\tilde B}=L_{\tilde B\tilde A}$ is associative without exception, so a chain of
 operations has a well-defined composite *as a map*; the element is only a representative of its operator,
 and the product of representatives reproduces the composite through the reversed and conjugated law — the
@@ -111,7 +111,7 @@ order-independent pairing of the two and the direction the order-dependent discr
 check confirms the first half on $100$ random material pairs and confirms that the second half is a
 general vector, with a real and an imaginary part, so it is neither material nor informational in general.
 
-**Reading (an amplitude and a direction).** The split invites two physical names, and they are of
+**Interpretation (an amplitude and a direction).** The split invites two physical names, and they are of
 different strength. The central half, being a number, reads as a **magnitude or amplitude**; the vector
 half, being a direction, reads as a **direction** or a **phase-like** part. The first name is safe: a
 number attached to a composite is a magnitude. The second is **not** asserted here: a genuine phase is an
@@ -139,7 +139,7 @@ $0.494$, and the exact zeros are exactly the two trivial solutions; the scalar l
 reduction, with residuals $0$, $0$, $0.25$, $2$ and $\sqrt2$ at the scalars $0$, $1$, $\tfrac12$, $2$ and
 $i$.
 
-**Reading.** The material composition has no measurement in it. Composing material operations is not where
+**Interpretation.** The material composition has no measurement in it. Composing material operations is not where
 a quantum theory resolves a state; the algebra says so by having no projection beyond the two degenerate
 ones.
 
@@ -169,11 +169,11 @@ $N(\tilde\Pi)=\tfrac14(1-1)=0$.
 
 The objects a quantum theory counts as pure states are therefore **null for the material composition**: the
 composition sends them to zero rather than holding them fixed. That is the sharpest form of the contrast
-between the two structures, and it is the subject of *The States the Indefinite Metric Cannot Normalise*, which owns the isotropy and its reading. The Bloch sphere of states, the trace-one
+between the two structures, and it is the subject of *The States the Indefinite Metric Cannot Normalise*, which owns the isotropy and its interpretation. The Bloch sphere of states, the trace-one
 slice and the decoherence of a measurement are owned by *The Bloch Ball as the Trace-One Slice of the
 Future Light Cone* and *Decoherence as Idempotent Projection*, and are cited here, not repeated.
 
-**Reading.** **Composition and measurement are separated by the algebra.** The material multiplication
+**Interpretation.** **Composition and measurement are separated by the algebra.** The material multiplication
 carries the interval and has no projection; the informational structure supplies all the projections there
 are. The two jobs sit in different rows of the framework, and the idempotent count is the algebraic
 statement of the separation.
@@ -202,7 +202,7 @@ $\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ — the unit $e_0$ is Hermitian and 
 that part is **not** closed: $e_1\star e_1=e_0$ leaves it for the central line. So a composition of two
 purely spatial material operations is not spatial; it picks up a central, informational part. The subspace
 that is genuinely closed is the full real quaternion space, which contains the unit and is **not** contained
-in the material sector. A reading of the split as "the spatial part is self-contained" is therefore wrong
+in the material sector. An interpretation of the split as "the spatial part is self-contained" is therefore wrong
 as it stands, and the correct statement is the one above.
 
 **Cautions.** The imaginary half is not closed, since a product of two imaginary elements is real. And the
@@ -210,7 +210,7 @@ restricted product on $\mathbb{H}_{\mathbb{B}}$ is not the quaternion product: i
 product, which is non-associative, the triple of units $(e_1,e_1,e_2)$ a witness, since
 $(e_1\star e_1)\star e_2=e_2$ against $e_1\star(e_1\star e_2)=-e_2$ (*verified*).
 
-**Reading.** The real–imaginary split is an **internal superselection structure** of the material sector: a
+**Interpretation.** The real–imaginary split is an **internal superselection structure** of the material sector: a
 real-valued excitation and an imaginary-valued one are distinguished by the composition, which never mixes
 them, though it may carry a real pair to the central line. This is **not** the two-sector
 material/informational split of *The Material-Informational Split as a Superselection Structure in
@@ -220,7 +220,7 @@ cross and must not be conflated.
 
 ## The Reading: Composition Is Not Measurement
 
-**Proposed reading, labelled as such.** The material composition is **oriented and mute**.
+**Proposed interpretation, labelled as such.** The material composition is **oriented and mute**.
 
 - **The slots are not interchangeable.** The first factor is read through the conjugation, the second is
 not, and the identity acts as the identity from one side only. Composing an interval-one operation on the
@@ -256,7 +256,7 @@ not elements of the algebra; that distinction is drawn in *Decoherence as Idempo
 
 **A chain has no intrinsic value.** Because the product is not associative, a word of three material
 operations has no bracketing-free value. Whether physical composition supplies a natural bracketing is
-recorded as an open question and not resolved. The reading offered here, labelled as such, is an
+recorded as an open question and not resolved. The interpretation offered here, labelled as such, is an
 **ordering cost**: the intermediate ordering is a physical datum of a three-step process, and the
 associator is its algebraic measure. The cost is on the elements alone; the monoid of left
 multiplications has no such ambiguity, so a process whose law of composition is associative — any
@@ -274,7 +274,7 @@ $\tfrac12(e_0+i\hat{\boldsymbol\mu})$ are idempotent for the ordinary and the se
 $N=0$, and are **null** for $\star$. The four inclusions of the real–imaginary split, and the non-closure
 of the spatial part of the material sector, with the witness $e_1\star e_1=e_0$.
 
-**Readings.** That the material composition is oriented, the first slot read through the interval and the
+**Interpretations.** That the material composition is oriented, the first slot read through the interval and the
 second as it stands; that the composite is a number plus a direction; that the composition supplies no
 measurement; that measurement and composition are done by different structures of the framework; that the
 real–imaginary split is an internal superselection structure, distinct from the material/informational one;
@@ -283,7 +283,7 @@ that a three-step chain carries an ordering cost measured by the associator.
 
 **Not claimed.** That the orientation is a time or causal order; that no material projection of some other
 structure is possible; that the trivial idempotents carry physical processes; that a chain of three
-operations has a natural bracketing; that the ordering-cost reading is forced by the algebra rather than
+operations has a natural bracketing; that the ordering-cost interpretation is forced by the algebra rather than
 chosen.
 
 ## Physical Readings
@@ -298,7 +298,7 @@ from the left, $\tilde Q\star e_0=\tilde Q^{\natural}\neq\tilde Q$, so there is 
 order matters with commutator $2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q$. The operations
 themselves still compose associatively, $L_{\tilde A}\circ L_{\tilde B}=L_{\tilde B\tilde A}$, so a chain
 of material operations is a well-defined map even though a chain of the corresponding elements is not. The
-reading is that the physical evolution is the **monoid of left multiplications** and the element only its
+interpretation is that the physical evolution is the **monoid of left multiplications** and the element only its
 representative, and that a three-step chain carries an **ordering cost** measured by the associator. The
 composition **cannot measure**: its only idempotents are $0$ and $e_0$, since a projection must be central
 and satisfy $Q_0^{2}=Q_0$, so the material multiplication resolves no state against a reference. Every
@@ -309,7 +309,7 @@ $\tilde\Pi=\tfrac12(e_0+i\hat{\boldsymbol\mu})$ is idempotent for the ordinary a
 and is **null** for the material composition. The material composition therefore respects one internal
 split — the real quaternion subspace is closed, and a real value composes to a real value — but the even
 part of the material sector is not closed, since a product of two spatial elements may land on the unit.
-The reading is that the material composition carries the interval and the informational structure carries
+The interpretation is that the material composition carries the interval and the informational structure carries
 the measurement, and that the two jobs are separated by the algebra. The orientation is not proved to be a
 time order; the states and their isotropy are owned by *The States the Indefinite Metric Cannot Normalise*, the decoherence
 of a measurement by *Decoherence as Idempotent Projection*, the non-associativity and the ternary product

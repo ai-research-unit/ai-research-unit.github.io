@@ -28,7 +28,7 @@ for all $\lambda \in R$ and $x \in M$. The set of them is written $\operatorname
 
 **Example (matrices).** On $M = N = \mathbb{C}^{n}$ with $\varsigma$ the conjugation, a semilinear map is a map of the form $z \mapsto A \bar{z}$ for a matrix $A$, where $\bar{z}$ is the coordinatewise conjugate. It is additive, and $f(\lambda z) = A \overline{\lambda z} = \bar{\lambda} A \bar{z} = \bar{\lambda} f(z)$; the semilinear maps $\mathbb{C}^{n} \to \mathbb{C}^{n}$ are therefore exactly the matrices acting on the conjugate coordinates, an $n^{2}$-dimensional family over $\mathbb{C}$.
 
-### The Two Readings by Linear Maps
+### The Two Interpretations by Linear Maps
 
 **Theorem.** For all $R$-modules $M, N$ there are natural isomorphisms of abelian groups
 

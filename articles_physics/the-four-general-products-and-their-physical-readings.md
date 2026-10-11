@@ -28,14 +28,14 @@ the scalar form. Since the second slot toggles $\varepsilon$ too, the coefficien
 the two settings whose slots agree. It is the slot that turns a definite form into an indefinite one,
 and so the slot that decides which of the four carries a metric.
 
-**The framework's reading, and it is a reading and not a theorem, is that the four general products are the four
+**The framework's interpretation, and it is an interpretation and not a theorem, is that the four general products are the four
 jobs a relativistic quantum theory needs.** The plain product is **composition**, the product of
 operations and of the identity operation. The quaternionic product is **causality**, because its square
 is the interval. The sesquilinear product is **probability**, because its form is positive definite and
 is the Born pairing. The general quaternionic sesquilinear product is **gauge**, because its form is indefinite
-and its ternary product is not a state space. Each of the four readings is labelled in §*The Four
-Readings* and in §*The Ledger*, and none of them is proved here: what is proved is the grid, and the
-reading is what the framework does with it.
+and its ternary product is not a state space. Each of the four interpretations is labelled in §*The Four
+Interpretations* and in §*The Ledger*, and none of them is proved here: what is proved is the grid, and the
+interpretation is what the framework does with it.
 
 **Precision: the two algebras and the two sesqualgebras of the title are the general ones.** The
 biquaternion space carries **twelve** products, and with them twelve algebraic structures: each of the four
@@ -44,7 +44,7 @@ sesquilinear operations, that is **six algebras over $\mathbb{C}$ and six sesqua
 $(\mathbb{C},\bar{\cdot})$** (*The 12 Products of the Biquaternion Complex Space*, *The 12 Algebraic
 Structures over the Biquaternion $\mathbb{C}$ Space*). This article, and the four blocks it maps, read the
 **general** structures alone: the two **general** algebras and the two **general** sesqualgebras among the six of each kind. The other eight structures are the symmetric and antisymmetric parts of the four general
-products, and they enter here only through the reading of §*The Four Readings* that the twelve are the four
+products, and they enter here only through the interpretation of §*The Four Readings* that the twelve are the four
 general products together with the two halves of each.
 
 The mathematics of the four general products, of their scalar and vector parts, of their comparison and of their
@@ -60,7 +60,7 @@ the algebra over $\mathbb{C}$, where the restriction of $B$ to the remarkable su
 **This article is also the place where the four are compared with one another.** Each block reads one
 product and one form, compares its own product with its sibling, and does not re-tabulate the grid; the
 comparisons that cross the grid are collected here, in §*The Four Forms Compared* and in §*The Four
-Readings*. The four scalar forms turn out to be one bilinear form read through the two involutions, and
+Interpretations*. The four scalar forms turn out to be one bilinear form read through the two involutions, and
 the two sectors collapse the four to two.
 
 This article is the prose companion of *The Mathematical Study of Biquaternions*, which carries the
@@ -75,7 +75,7 @@ fixed space of ${}^{*}$ (real $Q_0$, imaginary $Q_k$), and the **material sector
 anti-Hermitian subspace, the fixed space of $\flat$ (imaginary $Q_0$, real $Q_k$); each is a real
 subspace of dimension four. A form is called **definite on a sector** when it is definite as a real form
 on $\mathbb{M}_-$ and on $\mathbb{M}_+$; this is weaker than definiteness on the whole real space, and
-the two readings are distinguished wherever they differ below.
+the two interpretations are distinguished wherever they differ below.
 
 ## The Four General Products in Coordinates
 
@@ -112,7 +112,7 @@ K(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\textstyle\su
 \end{aligned}
 $$
 
-The four scalar forms carry the short names $B$, $N$, $H$ and $K$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The four general products are the four readings of §*The Four Readings* — composition, causality, probability
+The four scalar forms carry the short names $B$, $N$, $H$ and $K$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The four general products are the four interpretations of §*The Four Readings* — composition, causality, probability
 and gauge — and the four scalar forms above are what the two slots organise in §*What the Two Slots
 Decide*; restricted to the two sectors they carry the signs recorded in §*The Two Marks in the Scalar
 Form*.
@@ -319,7 +319,7 @@ induce a bilinear form by squaring.
 **The plain product $\tilde P\tilde Q$** is the only associative one and the only one with a two-sided
 identity. Its form $B=\mathrm{Sc}(\tilde P\tilde Q)$ is $-\mathrm{I}_4$ on $\mathbb{M}_-$ and
 $+\mathrm{I}_4$ on $\mathbb{M}_+$, so it is definite on each sector and carries the **sector sign**;
-within each sector it has no null cone, so it carries no Lorentzian metric. The physical reading is that
+within each sector it has no null cone, so it carries no Lorentzian metric. The physical interpretation is that
 this is the product of **composition**: it is associative, so it can be iterated without ambiguity, and
 its identity $e_0$ is the identity operation. The algebra it defines is the algebra of material
 operations, and the first physics block reads it: the ordinary product and the sector sign of its form,
@@ -332,7 +332,7 @@ the Peirce decomposition, the minimal left ideals and the bi-module — is mathe
 no right one, and is the only product of the four whose square is scalar. Its form
 $N=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ is $(-,+,+,+)$ on $\mathbb{M}_-$ and $(+,-,-,-)$ on
 $\mathbb{M}_+$, so it is indefinite on both sectors and carries the opposite signs on them, and it is
-the material metric. The physical reading is that this is the product of **causality**: the scalar it
+the material metric. The physical interpretation is that this is the product of **causality**: the scalar it
 returns when an element is squared is the interval, so the light cone, the mass shell and the level sets
 of the norm are read off it. The companion block is its subject, and the interval identity above is its
 opening statement.
@@ -354,17 +354,17 @@ induce a Hermitian form.
 **derived operation** of the algebra $\mathbb{B}$ with its conjugate-linear involution ${}^{*}$. Its
 form $H=\mathrm{Sc}(\tilde P\tilde Q^{*})$ is positive definite on every subspace, so it is the one form
 of the four that is definite; it is the form of the state space and of the Born pairing, its Hermitian
-idempotents are the pure states, and its positive cone is the state cone. The physical reading is that
+idempotents are the pure states, and its positive cone is the state cone. The physical interpretation is that
 this is the product of **probability**: it is the pairing that returns an amplitude between two elements
 and a probability after squaring, and it is the only product of the four that carries positivity. Its
-block owns the sesquilinear square, the positivity of the dagger and the reading mass equals rank.
+block owns the sesquilinear square, the positivity of the dagger and the interpretation mass equals rank.
 
 **The general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$** has no identity on either
 side. It is not the derived operation: it is the **isotope** of the derived operation by the natural
 conjugation, $\tilde P\star\tilde Q={}^{\natural}(\tilde P)\tilde Q^{*}$, so it is obtained from the
 sesquilinear product by acting on the first slot and not by deriving anything new from the algebra. Its
 form $K=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$ is indefinite, of signature $(1,3)$ on each of the
-four four-dimensional subspaces, so it is a Krein form. The physical reading is that this is the product
+four four-dimensional subspaces, so it is a Krein form. The physical interpretation is that this is the product
 of **gauge**: it is the pairing of an indefinite-metric structure, in which positivity is replaced by a
 sign, and it is the standard form of the fourth product in the theory of sesqualgebras.
 
@@ -408,7 +408,7 @@ identities are the companion, at the level of forms, of *Relations Between the F
 
 ### Remarkable Subspaces
 
-The two-sector collapse below is the coarse reading. The fine reading places the four forms on the remarkable real subspaces at once, and it is the table from which each block takes its own row. A
+The two-sector collapse below is the coarse interpretation. The fine interpretation places the four forms on the remarkable real subspaces at once, and it is the table from which each block takes its own row. A
 restriction is read by choosing a real basis of the subspace and recording the signature of the
 restricted form. On the four four-dimensional subspaces all four forms are real-valued, because those
 subspaces contain both halves of each coefficient. On the centre and on the vector subspace, which are
@@ -523,7 +523,7 @@ in Biquaternionic Form* and *Two Spin-Half Particles in Biquaternionic Form*.
 
 ### The Reading
 
-The comparison is what makes the four readings of §*The Four Readings* precise, and it adds three
+The comparison is what makes the four interpretations of §*The Four Readings* precise, and it adds three
 statements that no single block can make.
 
 **The sector sign is $B$, and it is $H$ that does not see the sectors.** $B$ is definite with opposite
@@ -538,7 +538,7 @@ $\mathbb{M}_+$ and oppose on $\mathbb{M}_-$, and each is indefinite with one sig
 on each sector. Read physically, the bilinear row supplies the metric of spacetime, $N$ with its light
 cone and its mass shell, while the sesquilinear row supplies the metric of an indefinite-metric quantum
 theory, $K$; and on the informational sector the two metrics coincide, which is the algebraic reason the
-two readings are easy to conflate.
+two interpretations are easy to conflate.
 
 **Every structure the corpus uses is one of the four cells.** $B$ for the sector sign, $N$ for the
 interval, the light cone and the mass shell, $H$ for positivity, the Born pairing and the state space,
@@ -549,8 +549,8 @@ produces a metric: it turns $B$ into $N$ in the bilinear row and $H$ into $K$ in
 **The four forms are four measurements of one frame.** Because each cell is one pairing of one element
 with another, each form answers one question about a pair: $B$ how the two **compose**, $N$ whether one
 can **influence** the other, $H$ with what **probability** one reaches the other, $K$ how the two sit in
-the **gauge** frame. The four corners are then not four structures but the four readings a single frame
-invites, and a physical theory is a choice of which reading is the measured one. Read this way the grid
+the **gauge** frame. The four corners are then not four structures but the four interpretations a single frame
+invites, and a physical theory is a choice of which interpretation is the measured one. Read this way the grid
 is a grid of questions, and the corpus's four blocks are the four answers.
 
 **The signature is what an object is.** The signature of the form decides the kind of object it counts:
@@ -596,18 +596,18 @@ $H=-B$ on $\mathbb{M}_-$ does not make the ordinary product a pairing.
 
 ### Named Readings of the Grid
 
-Three further readings of the grid are recorded here, each under a name of its own and each labelled a reading rather than a theorem; the counts they rest on are the body's.
+Three further readings of the grid are recorded here, each under a name of its own and each labelled an interpretation rather than a theorem; the counts they rest on are the body's.
 
-- **Twelve-to-ten measure.** The fall of the twelve operations to ten on the real part is read as a **measure of the complex structure** the grid carries: two distinctions are lost when the coefficients are restricted to the reals, and the count $12$ against $10$ is the algebraic size of the complex structure of the framework. The reading is the grid-level counterpart of *classical blindness* in *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*, and its boundary is that the count is a count of operations and not a measure of a physical complexification.
+- **Twelve-to-ten measure.** The fall of the twelve operations to ten on the real part is read as a **measure of the complex structure** the grid carries: two distinctions are lost when the coefficients are restricted to the reals, and the count $12$ against $10$ is the algebraic size of the complex structure of the framework. The interpretation is the grid-level counterpart of *classical blindness* in *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*, and its boundary is that the count is a count of operations and not a measure of a physical complexification.
 - **Involution grid.** The four general products are read as the **four cells the two slots admit**: the identity or the natural conjugation ${}^{\natural}$ in the first slot and the identity or the star ${}^{*}$ in the second, and never ${}^{*}$ in the first nor ${}^{\natural}$ in the second, which is the rule of §*The Two Slots*. The name makes the grid a single object with two dials and not a list of four constructions. Its boundary is the corpus's own: the twelve unused slot pairs are not transposes or conjugates of the four used ones, so the grid of four is a genuine restriction of the algebra and not a redundancy of naming, and the four cells are therefore **not** the orbit of one product under the two involutions.
 - **Dial principle.** The rule that the first slot's natural conjugation decides between the definite form of the state side and the indefinite form of the transformation side is read as the **dial principle** of the framework: one dial separates the state side from the transformation side of the whole grid, and the two metrics of a single element are its two outcomes. The name is given here so that the principle can be cited as a single rule; the boundary is that the principle is a statement about the forms and not a derivation of the two jobs. The dial is a **reflection** — it negates the three vector coordinates and fixes the scalar direction, so it is a change of frame in the strict sense — and it is the algebraic sibling, and not the equal, of the framework's **Wick rotation**, which is multiplication by the central imaginary and a quarter-turn exchange of the two sectors (*Other Remarkable Subspaces*, *The Wick Rotation in the Biquaternion Universe*). The dial is an involution and the Wick rotation has order four; the rotation is central and therefore commutes with the multiplication, while the dial is an anti-automorphism that reverses the order of a product and acts on one argument of it. Only the dial is a slot of a product, and it is that slot — and not the rotation — that the grid's metric is made of.
 
 ## The Four Readings
 
-The table collects the four jobs. It is the framework's reading of the grid, and its last column is a
-reading and not a theorem.
+The table collects the four jobs. It is the framework's interpretation of the grid, and its last column is a
+interpretation and not a theorem.
 
-| product | slots | scalar form | the form on $\mathbb{M}_-$ | the physical job | status of the reading |
+| product | slots | scalar form | the form on $\mathbb{M}_-$ | the physical job | status of the interpretation |
 |---|---|---|---|---|---|
 | $\tilde P\tilde Q$ | $(\mathrm{id},\mathrm{id})$ | $B$ | definite, $(-,-,-,-)$ | **composition** | the algebra of material operations |
 | $\tilde P^{\natural}\tilde Q$ | $({}^{\natural},\mathrm{id})$ | $N$ | indefinite, $(-,+,+,+)$ | **causality** | the interval and the cone |
@@ -625,11 +625,11 @@ influence which, a rule for assigning probabilities, and a rule for handling the
 description, and the four forms supply exactly one candidate for each. What cannot be said is that no
 other assignment of the four is possible.
 
-**Reading (four jobs and two halves).** Each of the four general products splits into a symmetric and an
+**Interpretation (four jobs and two halves).** Each of the four general products splits into a symmetric and an
 antisymmetric half, so the twelve products of the space are the four general products together with the
 two halves of each: a **magnitude half** (the symmetric part, which carries the form, the interval and
 the pairing) and an **order half** (the antisymmetric part, which carries the bracket and the
-obstruction) attached to each job. The reading is thin, and is offered as one because the selection is
+obstruction) attached to each job. The interpretation is thin, and is offered as one because the selection is
 severe: only two of the twelve satisfy a classical identity, the antisymmetric plain bilinear product
 being a Lie bracket and the symmetric plain bilinear product a Jordan product, and every other half is a
 structure without a classical identity of its own. So the grid's twelve are not twelve equivalent structures but four jobs, each with a
@@ -640,7 +640,7 @@ are *The Unitary Lie Algebra* and *The Hermitian Jordan Algebra*.
 
 ## Further Readings of the Rows
 
-The readings below are read one row at a time. Each is labelled a reading, each rests on a carrier the body
+The interpretations below are read one row at a time. Each is labelled an interpretation, each rests on a carrier the body
 has proved, and none adds a theorem.
 
 ### The Composition Row
@@ -663,14 +663,14 @@ acting maps, not the elements.
 - **The associator is a three-way interaction.** The plain product is associative, and it is the **twisted**
 products that are not: the associator of the quaternionic products is a nonzero trilinear form. Read
 physically, a non-vanishing associator is the algebraic image of an **irreducible term in three
-operations**, a genuine three-way interaction that cannot be assembled from two-body pieces. The reading
+operations**, a genuine three-way interaction that cannot be assembled from two-body pieces. The interpretation
 pairs with the corpus's ternary-product articles (*Particle Types, Discrete Charge and Three-Particle
 Couplings*), and its boundary is that what fails to associate is the twist and not the elements.
 
 ### The Causality Row
 
 - **The scale potential $\log|N|$.** $N$ is multiplicative, so $\log|N|$ is **additive** over the
-composition — a potential on the material sector. The reading is read on the **scale** and not on the
+composition — a potential on the material sector. The interpretation is read on the **scale** and not on the
 rapidity: a boost rotor is Hermitian with $N=1$ at every rapidity, so $\log|N|$ vanishes on the boosts,
 while the rapidity is the **angle** of the polar form. Read physically, $\log|N|$ is a causal **dilation**
 potential and the rapidity is its angular companion.
@@ -678,14 +678,14 @@ potential and the rapidity is its angular companion.
 $N(\tilde P,\tilde Q)$ is the **Minkowski inner product** of the two, in the material signature: on the
 diagonal it is the squared interval, that is the mass shell, and off the diagonal the kinematic overlap of
 two momenta. The cone is the on-shell condition, and the non-degeneracy of $N$ on the off-cone material
-directions is the non-degeneracy of the kinematics. The reading must name the sector: it is the
+directions is the non-degeneracy of the kinematics. The interpretation must name the sector: it is the
 **quaternionic** pairing, on $\mathbb{M}_-$, that carries the Minkowski sign.
 - **The Jacobi failure needs one leg in each real form.** The gauge bracket fails the Jacobi identity, and
 the failure is **not** confined to the boosts: recomputed, it vanishes on triples taken wholly in the
 rotation directions and vanishes on triples taken wholly in the boost directions, and it is generic only
 when a triple carries **one leg in each of the two real forms**. Read physically, the obstruction is
 neither the compact nor the non-compact part alone but their **mixing** — a consistency condition that
-neither the rotation nor the boost subgroup can see alone. The reading is labelled: it does not by itself
+neither the rotation nor the boost subgroup can see alone. The interpretation is labelled: it does not by itself
 select the internal group, whose ceiling has its own cause (*The Gauge Group Ceiling: Why the Biquaternion
 Algebra Reaches SU(2) but Not SU(3)*).
 
@@ -706,7 +706,7 @@ directions, and its three components read as the **polarisation** or **spin** di
 object. Reading: the row carries a direction and not a state.
 - **Discrete charge is compactness.** The charge lives on the compact part of an internal generator and the
 rapidity on the non-compact part, and the split is the compact/non-compact split of that generator. The
-reading is anchored to a generator of a **bracket that closes** — the gauge product's bracket does not
+interpretation is anchored to a generator of a **bracket that closes** — the gauge product's bracket does not
 close and carries no Killing form, so the split must not be read from it — and its boundary is that the
 number of discrete charges is the rank of the compact part, here the one of a single internal $U(1)$.
 
@@ -716,13 +716,13 @@ number of discrete charges is the rank of the compact part, here the one of a si
 $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the framework's parameter time and coordinate time are two **real
 structures** of one complex time, and multiplication by the central $i$ is the quarter turn of that
 complex time, exchanging the two. Read physically, the problem of time becomes the question of **which
-real slice is physical**. The reading is a reading of the sector structure and not a resolution. **Caution
+real slice is physical**. The interpretation is an interpretation of the sector structure and not a resolution. **Caution
 on the word:** the corpus uses *Wick rotation* in two ways, and the generator is the first and not the
 second. Multiplication by $i$ is the exchange of the real and imaginary sectors and the quarter turn of
 the complex time, which *Other Remarkable Subspaces* names the Wick rotation; the analytic
 continuation $t\mapsto-i\tau$ of *The Wick Rotation in the Biquaternion Universe* is a **relabeling** of
 the time coordinate that holds the space real, is real-linear, and is not the multiplication by $i$. The
-two share the temporal sign flip and the time axis and diverge off it; the whole reading is
+two share the temporal sign flip and the time axis and diverge off it; the whole interpretation is
 *Conventions in the Biquaternion Universe*, §*The Central Map and Its Restrictions*.
 - **Phase and duality are one central $U(1)$.** The complex-time sector carries the global phase, the
 complex-space sector carries the field strength, and multiplication by the central $i$ is at once the phase
@@ -734,7 +734,7 @@ instruments, and the grid is why one biquaternion space carries both. The unique
 metrics are.
 - **The $4\times3$ table as a mnemonic.** The four products and the three involutions read as twelve
 questions — composition, commutation, rotation, causality, coupling, obstruction, decision, weight, phase,
-gauge, measurement, polarisation. The reading is offered as a **mnemonic** and not as a completeness
+gauge, measurement, polarisation. The interpretation is offered as a **mnemonic** and not as a completeness
 claim: the article's own caution is that no single product carries both halves, and the table does not
 assert that these twelve are the only questions.
 
@@ -746,29 +746,29 @@ the dial that the comparison identifies as the producer of the metric.
 
 **Insert the star in the second slot, and read the second factor through ${}^{*}$.** The composition
 becomes a pairing, the bilinear form becomes Hermitian, and a value becomes an amplitude. This is the
-step from an algebra to its sesqualgebra, and **the reading proposed for it is quantisation**: a
+step from an algebra to its sesqualgebra, and **the interpretation proposed for it is quantisation**: a
 classical composition of operations is replaced by a pairing that can be squared into a probability.
 
-**Reading (the star is the Riesz duality of the pairing).** The second slot is where the conjugation enters, and it changes the linearity of the form. Read without a conjugation, the product is $\mathbb{C}$-bilinear and its form pairs two elements linearly; read with the star, the Hermitian form
-$H$ (*The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*) is linear in the first argument and conjugate-linear in the second, so the map that sends an element to its pairing against a fixed other, $\tilde Q\mapsto H(\cdot,\tilde Q)$, is **anti-linear** and is exactly the **Riesz map** that identifies the algebra with its dual. The second slot is therefore the conjugate-linear slot, and the second factor is read as the **bra** of the first. Read this way the Born pairing is not an added structure but a **choice of slot** — the star chooses the anti-linear side — and an amplitude is a number read from the pairing of an element with a dual element. The reading is labelled: the star supplies the Hilbert structure and the identification of the dual, and no equation of motion and no measure.
+**Interpretation (the star is the Riesz duality of the pairing).** The second slot is where the conjugation enters, and it changes the linearity of the form. Read without a conjugation, the product is $\mathbb{C}$-bilinear and its form pairs two elements linearly; read with the star, the Hermitian form
+$H$ (*The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*) is linear in the first argument and conjugate-linear in the second, so the map that sends an element to its pairing against a fixed other, $\tilde Q\mapsto H(\cdot,\tilde Q)$, is **anti-linear** and is exactly the **Riesz map** that identifies the algebra with its dual. The second slot is therefore the conjugate-linear slot, and the second factor is read as the **bra** of the first. Read this way the Born pairing is not an added structure but a **choice of slot** — the star chooses the anti-linear side — and an amplitude is a number read from the pairing of an element with a dual element. The interpretation is labelled: the star supplies the Hilbert structure and the identification of the dual, and no equation of motion and no measure.
 
 **Insert the natural conjugation in the first slot, and read the first factor through the map
 ${}^{\natural}$.** The form becomes indefinite on each sector, so a metric appears, and the coefficient
 $\varepsilon$ is toggled — cancelled in the bilinear row and supplied in the sesquilinear one. This is
 the step from an algebra to a quaternionic algebra and from a sesqualgebra to a quaternionic
-sesqualgebra, and **the reading proposed for it is the appearance of a metric**. It is the same step in
+sesqualgebra, and **the interpretation proposed for it is the appearance of a metric**. It is the same step in
 both rows: in the bilinear row it turns $B$ into $N$ and produces the interval, and in the sesquilinear
 row it turns $H$ into $K$ and produces an indefinite metric.
 
-**Reading (the quaternionic product is the plain product in a conjugated frame).** The identity
+**Interpretation (the quaternionic product is the plain product in a conjugated frame).** The identity
 $N(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q)$ says that the quaternionic form is the plain form
 with its **first argument read in the naturally conjugated frame**; equivalently the quaternionic product
 $\tilde P^{\natural}\tilde Q$ is the plain product of the conjugated first factor with the second. The
 composition rule is untouched — it is the same multiplication of the same algebra — and what the frame
 change does is move the metric: the plain form of the conjugated frame is the indefinite interval, the
-plain form of the untouched frame is the definite Euclidean square. The reading is that the dial
+plain form of the untouched frame is the definite Euclidean square. The interpretation is that the dial
 ${}^{\natural}$ is a **change of frame**, and that the appearance of the metric is the appearance of the
-interval under that change; it is a re-reading of the two identities above and is labelled as a reading.
+interval under that change; it is a re-reading of the two identities above and is labelled as an interpretation.
 The same frame language covers the sesquilinear row, where the coefficient $K$ is $H$ of the conjugated
 frame.
 
@@ -777,14 +777,14 @@ result of taking both. That is the sense in which the four objects are not four 
 but one structure with two dials. The fourth corner is therefore the pairing with an indefinite metric,
 which is the standard setting of an **indefinite-metric quantum theory**: the framework of
 Gupta–Blokhintsev, of BRST quantisation, of PT-symmetric quantum mechanics, and the form of the
-Klein–Gordon charge. The reading of the fourth corner is that the framework's own quantum theory is the
+Klein–Gordon charge. The interpretation of the fourth corner is that the framework's own quantum theory is the
 *first* column of the sesquilinear row, with a positive definite form, and that the fourth product is
 what one gets by turning the metric dial while keeping the pairing.
 
 ### What Bounds the Fourth Corner
 
 Three proved negative results limit what the fourth product can be asked to do, and all three are recorded
-because they are what makes the reading in the table above a reading of *gauge* rather than of a second
+because they are what makes the interpretation in the table above an interpretation of *gauge* rather than of a second
 state space.
 
 - **No identity on either side.** Unlike the sesquilinear product, which has a right identity, the
@@ -809,10 +809,10 @@ The first is the reason the fourth product is not derived from the algebra; the 
 is not a state space; the third is the reason its multiplication carries a curvature rather than a
 composition. Together they leave it a structure with a symmetry and a pairing but without a unit, a
 composition or the positivity that counts states, and that is the precise sense in which it is the
-**gauge side** of the frame rather than the state side. This reading is a reading of what remains after
+**gauge side** of the frame rather than the state side. This interpretation is an interpretation of what remains after
 the three negative results, and it is labelled as such.
 
-**Where the failures come from.** The fourth product fails associativity *and* fails the Jacobi identity: the associator does not vanish and the cyclic sum of the antisymmetric half does not vanish. Neither failure is the work of the *first* slot alone, and the pairing must not be blamed for both. Inserting a nontrivial involution into *either* slot spoils composition and closure: the plain sesquilinear product, which conjugates the second slot only, already fails associativity on $256$ of the $512$ basis triples, and its antisymmetric part already fails the Jacobi identity on $252$. What the first-slot conjugation adds is different and sharper — the **metric** (the sign vector $\varepsilon$ and the indefinite signature), the loss of the unit, and the loss of the Jordan triple identity — the three the mathematics attributes to the first slot, and exactly the two no-go results (no unit, no Jordan triple) that the first slot contributes to the bounds of the corner. The non-associativity and the non-closure are shared with the sibling readings and are not the first slot's signature.
+**Where the failures come from.** The fourth product fails associativity *and* fails the Jacobi identity: the associator does not vanish and the cyclic sum of the antisymmetric half does not vanish. Neither failure is the work of the *first* slot alone, and the pairing must not be blamed for both. Inserting a nontrivial involution into *either* slot spoils composition and closure: the plain sesquilinear product, which conjugates the second slot only, already fails associativity on $256$ of the $512$ basis triples, and its antisymmetric part already fails the Jacobi identity on $252$. What the first-slot conjugation adds is different and sharper — the **metric** (the sign vector $\varepsilon$ and the indefinite signature), the loss of the unit, and the loss of the Jordan triple identity — the three the mathematics attributes to the first slot, and exactly the two no-go results (no unit, no Jordan triple) that the first slot contributes to the bounds of the corner. The non-associativity and the non-closure are shared with the sibling interpretations and are not the first slot's signature.
 
 **Why the frame's fourth product is gauge and not a graded structure.** A gauge structure at the product
 level carries a pairing and a bracket; a BRST or superalgebraic structure carries, in addition, a
@@ -888,7 +888,7 @@ nonzero on $256$ of the $512$ triples of the eight-element basis, at the clean w
 where it is $-2e_1$, and $(e_0,e_1,e_1)$, where it is $2e_0$, and the defect carries both a central and a
 vector part.
 
-**Readings.** That the four general products are composition, causality, probability and gauge; that inserting
+**Interpretations.** That the four general products are composition, causality, probability and gauge; that inserting
 the star reads as quantisation and inserting the natural conjugation reads as the appearance of a metric
 — the same dial that turns $B$ into $N$ and $H$ into $K$; that the fourth corner is the gauge side
 of the frame rather than a second state space; that the four forms are **four measurements of one
@@ -896,24 +896,24 @@ frame**, one question about a pair per cell; that the **signature is what an obj
 Hermitian form counting a state and an indefinite one a constraint; and that **one principle separates
 the state side from the transformation side**, the second slot's star making the form Hermitian and the
 first slot's natural conjugation deciding its definiteness. Each is the framework's naming of a proved
-structure, and each is labelled as such. The assignment of jobs to products is offered as a reading and is not forced
+structure, and each is labelled as such. The assignment of jobs to products is offered as an interpretation and is not forced
 by the algebra. Two further readings are added at the grid level: that **geometry and symmetry are
 complementary**, the metric living in the symmetric layer and the obstruction in the antisymmetric one,
 so no single product carries both; and that the two sectors are coupled algebraically once, by the square
 $\mathbb{M}_-\to\mathbb{M}_+$, the one cross-sector map the grid supplies. Two more are added as
-labelled readings: that the dial ${}^{\natural}$ is a **change of frame**, the quaternionic product being
+labelled interpretations: that the dial ${}^{\natural}$ is a **change of frame**, the quaternionic product being
 the plain product in the conjugated frame, so the metric is what the frame change moves; and that the
 twelve products are **the four general products together with the two halves of each**, a magnitude half
 and an order half per job, of which only the two classical halves close. One point is added as a **remark
-and not a reading**: the twelve unused slot pairs are *not* transposes or conjugates of the four used
+and not an interpretation**: the twelve unused slot pairs are *not* transposes or conjugates of the four used
 ones, so the grid of four is a genuine restriction of the algebra and not a redundancy of naming. Three
 further readings are added at the block level: that the associator of the fourth product reads as the **curvature** of the
 pairing, its values the local holonomies of a multiplication that does not compose; that the metric, the
 absence of a unit and the failure of the Jordan triple identity are the first slot's work, while the
-non-associativity and the non-closure are shared with the sibling readings that conjugate a single slot;
+non-associativity and the non-closure are shared with the sibling interpretations that conjugate a single slot;
 and that the fourth
 product's *gauge* is the pairing-based sense and not the graded sense, a $\mathbb{Z}_2$-graded or BRST
-structure being a separate construction on the same algebra. Three further grid-level readings are named
+structure being a separate construction on the same algebra. Three further grid-level interpretations are named
 in §*Named Readings of the Grid*: **twelve-to-ten measure**, **involution grid** and **dial
 principle**.
 
@@ -923,7 +923,7 @@ The algebra fixes the grid and the signs; it does not fix the names.
 
 ## Physical Readings
 
-Three transversal readings can be added to the map. The sector exchange sorts the four products into two classes, the two bilinear products moving with the Wick exchange and the two sesquilinear products not, and a change of the local complex structure does the same, so the sorting itself is the framework's invariant criterion (*Conventions in the Biquaternion Universe*). And the exchange read as a clock adds a reading of the temporal product: the quarter turn of the complex time sector is the tick, whose reference and period are supplied and whose arrow and rate are not (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). A third reading is the exchange-invariant tensor square: because a tensor square of a bilinear form carries no sign of the sector, the framework's correlations are **between** the rows and not inside one of them, entanglement is not a fifth job, and the partial trace of a subsystem lives on the tensor square rather than on a row.
+Three transversal interpretations can be added to the map. The sector exchange sorts the four products into two classes, the two bilinear products moving with the Wick exchange and the two sesquilinear products not, and a change of the local complex structure does the same, so the sorting itself is the framework's invariant criterion (*Conventions in the Biquaternion Universe*). And the exchange read as a clock adds an interpretation of the temporal product: the quarter turn of the complex time sector is the tick, whose reference and period are supplied and whose arrow and rate are not (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). A third interpretation is the exchange-invariant tensor square: because a tensor square of a bilinear form carries no sign of the sector, the framework's correlations are **between** the rows and not inside one of them, entanglement is not a fifth job, and the partial trace of a subsystem lives on the tensor square rather than on a row.
 
 ## Summary
 
@@ -1007,6 +1007,6 @@ decides the composition and the first the form, and the second instance on $M_2(
 sign of the square on the two sectors, $\tilde Q\star\tilde Q=\pm N(\tilde Q)e_0$.
 - Companion article *The Ordinary Product and the Material Sector*, for the form $B$ alone on the remarkable subspaces.
 - Companion articles *The Interval as the Square and the Charge of the Material Composition*, *Mass, Rank and the Positivity of the Dagger* and *The Fourth Product and Its Indefinite Metric*, for $N$, $H$ and $K$ on the remarkable subspaces, and for the interval identity and the physical
-reading of the quaternionic product.
+interpretation of the quaternionic product.
 - Companion article *The Mathematical Study of Biquaternions*, whose Algebra block this article
 accompanies and whose entries carry the mathematics menu.

@@ -21,7 +21,7 @@ $$
 \text{odd}\cdot\text{odd}=\text{even},
 $$
 
-that is, the parity of a product is the sum of the parities. The generators $\gamma^\mu$ are odd; the bivectors $\gamma^\mu\gamma^\nu$ and the volume element are even; the square $(\gamma^\mu)^2=\pm1$ is a scalar and hence even. The physical reading is the whole of the grading in one sentence: **a product of an odd number of fermionic objects is fermionic, a product of an even number is bosonic.** In particular two fermionic steps are bosonic, which is the statement of the next section but one.
+that is, the parity of a product is the sum of the parities. The generators $\gamma^\mu$ are odd; the bivectors $\gamma^\mu\gamma^\nu$ and the volume element are even; the square $(\gamma^\mu)^2=\pm1$ is a scalar and hence even. The physical interpretation is the whole of the grading in one sentence: **a product of an odd number of fermionic objects is fermionic, a product of an even number is bosonic.** In particular two fermionic steps are bosonic, which is the statement of the next section but one.
 
 **Remark.** The identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is therefore not merely "$\mathbb{B}$ is a Clifford algebra"; it says *which* slot of the ambient graded algebra the biquaternion algebra is. The whole physics series computes in the bosonic sector. The fermionic sector is the other graded component, and the rest of this article says what it contributes.
 
@@ -68,7 +68,7 @@ and if $x$ and $z$ are both odd then $xz$ is even and the composite is the **ord
 | odd | even | odd | signed, $-\mathrm{Ad}_{xz}$ |
 | odd | odd | even | ordinary, $\mathrm{Ad}_{xz}$ |
 
-**Physical reading: the parity word of an isometry.** An odd element is a product of an odd number of vectors and acts by an isometry of determinant $-1$; an even element acts by one of determinant $+1$; this is the theorem of the odd and even versors of *Biquaternion Versors and the Orthogonal Group*. The table above is therefore the algebra behind the reflection count: **two reflections compose to a rotation**, and the composite is carried by an element of the biquaternion algebra, a bosonic element. The element $xz$ of two odd vectors is a bivector, that is, an element of the even slot, and the difference between the two conjugations has disappeared in the product. The parity of the number of reflections is the $\mathbb{Z}/2$ that separates $O(1,3)$ from $SO(1,3)$, and the same $\mathbb{Z}/2$ is the quotient $\mathrm{Pin}/\mathrm{Spin}$ of the pin and spin groups of the maths corpus.
+**Physical interpretation: the parity word of an isometry.** An odd element is a product of an odd number of vectors and acts by an isometry of determinant $-1$; an even element acts by one of determinant $+1$; this is the theorem of the odd and even versors of *Biquaternion Versors and the Orthogonal Group*. The table above is therefore the algebra behind the reflection count: **two reflections compose to a rotation**, and the composite is carried by an element of the biquaternion algebra, a bosonic element. The element $xz$ of two odd vectors is a bivector, that is, an element of the even slot, and the difference between the two conjugations has disappeared in the product. The parity of the number of reflections is the $\mathbb{Z}/2$ that separates $O(1,3)$ from $SO(1,3)$, and the same $\mathbb{Z}/2$ is the quotient $\mathrm{Pin}/\mathrm{Spin}$ of the pin and spin groups of the maths corpus.
 
 **Corollary (the square of an odd step is bosonic).** For odd $x$ one has $x^2$ even and $(\mathrm{Ad}^{\alpha}_x)^2=\mathrm{Ad}_{x^2}$; for a generator this reads $(\mathrm{Ad}^{\alpha}_{\gamma^\mu})^2=\mathrm{Ad}_{(\gamma^\mu)^2}$, and $(\gamma^\mu)^2=\pm1$ is a scalar, so the square of the signed conjugation by a generator is the identity.
 
@@ -152,7 +152,7 @@ The grading is the parity of the theory, and it is one of several $\mathbb{Z}/2$
 | $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$ | Volume element, even, $\Omega^2=-1$, anticommutes with the generators |
 | $\alpha(x)=\Omega x\Omega^{-1}=(-1)^{\lvert x\rvert}x$ | The twist as a conjugation by the pseudoscalar |
 | $i=-\Omega$ | The dictionary; the central imaginary, conjugation by it is the twist |
-| $\gamma^5=i\Omega$, $(\gamma^5)^2=+1$ | The chirality operator, the involution reading of the same element |
+| $\gamma^5=i\Omega$, $(\gamma^5)^2=+1$ | The chirality operator, the involution interpretation of the same element |
 | $\mathrm{Ad}^{\alpha}_x=\alpha(x)\,(\ )\,x^{-1}$ | Signed inner conjugation, conjugation with a chirality factor on the left |
 | $\mathrm{Ad}^{\alpha}_x\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}$ | Composition; ordinary composite for two odd factors |
 | $\mathrm{Ad}^{\alpha}_{\gamma^1}\mathrm{Ad}^{\alpha}_{\gamma^2}=\mathrm{Ad}_{e_3}$ | Two reflections give a rotation by a bosonic element |

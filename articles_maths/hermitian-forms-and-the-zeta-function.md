@@ -32,7 +32,7 @@ $$
 
 **Proof.** The zeros form is a sum of squares of the values of $\widehat h$ at the zeros, by definition; the pole form is a difference of two squares; the archimedean form is a quadratic form with the kernel $\gamma_\infty'/\gamma_\infty$, whose sign changes with the archimedean parameters. The equivalence is the positivity criterion of *Positivity and the Explicit Formula*.
 
-## The Two Readings
+## The Two Interpretations
 
 ### The Hilbert–Pólya problem
 

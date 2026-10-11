@@ -29,13 +29,13 @@ What it keeps in place of associativity is a single law, the **Jordan identity**
 operations of the batch it is the only Jordan product. That is its algebraic signature, and
 it is the reason the operation is a product of the classical non-associative kind and not a bracket.
 
-The physical reading offered here, and labelled as such, is that the symmetrised plain product is the
+The physical interpretation offered here, and labelled as such, is that the symmetrised plain product is the
 **order-free composition of two material operations**: the composition of two material elements with the
 order forgotten. The part that is lost in the forgetting is exactly the cross term, and the cross term is
 what the antisymmetric band keeps. The two bands are therefore the two halves of one statement, and the
 operation of this article is the half on which the order does not act.
 
-The boundary is stated where the reading is made and again in the ledger: the Jordan identity is a law of
+The boundary is stated where the interpretation is made and again in the ledger: the Jordan identity is a law of
 the algebra and not a statement about measurement. The operation carries no positivity, selects no state
 and introduces no scale.
 
@@ -134,7 +134,7 @@ first row and column and the diagonal $e_0,-e_0,-e_0,-e_0$ are unchanged. The op
 ordinary product only where the ordinary product is skew. This is *Introduction to the Symmetric Plain
 Algebra of Biquaternions*.
 
-**Proposed reading, labelled as such.** On the three vector units, $i,j\in\{1,2,3\}$, the table of the
+**Proposed interpretation, labelled as such.** On the three vector units, $i,j\in\{1,2,3\}$, the table of the
 operation reads $\tfrac12(e_ie_j+e_je_i)=-\delta_{ij}e_0$, that is $\{e_i,e_j\}=-2\delta_{ij}e_0$; for
 two real pure vectors the symmetrised product is central,
 $\tfrac12(\mathbf P\mathbf Q+\mathbf Q\mathbf P)=-(\mathbf P\!\cdot\!\mathbf Q)\,e_0$. **The scalar part
@@ -219,14 +219,14 @@ a commutative unital Jordan algebra over $\mathbb{C}$, and it is special.
 **Bound.** The Jordan identity is a law of the algebra. It says that the symmetrisation of an associative
 product closes, and nothing more. It is **not** a statement about measurement, about a probability, or
 about a physical process, and it carries no positivity: the operation over the real ground field is not
-**formally real**, since $e_1\bullet e_1+e_0\bullet e_0=-e_0+e_0=0$ with $e_1,e_0\neq0$. The reading of a
+**formally real**, since $e_1\bullet e_1+e_0\bullet e_0=-e_0+e_0=0$ with $e_1,e_0\neq0$. The interpretation of a
 Jordan algebra as an algebra of observables is a separate proposal, made and labelled in
 *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*, and the
 algebraic law alone does not establish it.
 
 ## The Symmetrised Composition of Two Material Operations
 
-The operation is defined on the whole algebra, and its physical reading is about the material sector.
+The operation is defined on the whole algebra, and its physical interpretation is about the material sector.
 Take two material operations, $\tilde P,\tilde Q\in\mathbb{M}_-$, so
 $\tilde P^{*}=-\tilde P$ and $\tilde Q^{*}=-\tilde Q$. Because the star is an anti-automorphism,
 $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}=\tilde Q\tilde P$, and the ordinary product splits by
@@ -261,33 +261,33 @@ anti-Hermitian, as the display records; the closure failure is the case
 $ie_0\bullet ie_0=(ie_0)^{2}=-e_0$ of *Remarkable Subspaces under the Symmetric Plain Algebra of
 Biquaternions*.
 
-**Proposed reading, labelled as such.** The symmetrised plain product is read as the **order-free
+**Proposed interpretation, labelled as such.** The symmetrised plain product is read as the **order-free
 composition of two material operations**. The ordinary product of two material elements is the full
 composition; written in its two halves it separates the part that does not depend on the order,
 $\tfrac12\{\tilde P,\tilde Q\}$, from the part that does, $\tfrac12[\tilde P,\tilde Q]$. The symmetrised
 product keeps the first and drops the second. Since the second is the cross product of the two vector
 parts, and the cross product reverses when the two arguments are exchanged, **the cross term is precisely
-the part lost when the order is forgotten.** What is added by the reading, and not by the algebra, is the
+the part lost when the order is forgotten.** What is added by the interpretation, and not by the algebra, is the
 name "order-free composition" for the first half; what is proved is the split.
 
 Two consequences of the split are worth stating plainly. First, the order-free part of a material
 composition is informational: symmetrising two material operations returns an element of $\mathbb{M}_+$,
 not of $\mathbb{M}_-$. Second, the order is carried entirely by the material half, so a material
 composite is material exactly when the two operations **anticommute** and informational exactly when they
-**commute**, which is the sector rule of *The Ordinary Product and the Material Sector*. The reading of
+**commute**, which is the sector rule of *The Ordinary Product and the Material Sector*. The interpretation of
 the operation as the composition with the orientation dropped is developed in *Observables as a Jordan
 Algebra: the Symmetric Plain Product and the Classical Composition*.
 
-**Bound.** The reading says what the symmetrised product forgets; it does not say that a physical
+**Bound.** The interpretation says what the symmetrised product forgets; it does not say that a physical
 composition is order-free. The order of two operations is physically meaningful, and the operation of this
 article describes only the part of the composition on which the order does not act. Which physical
 operation an element represents is not selected by the algebra.
 
-**Proposed reading, labelled as such.** The symmetrised product of two anti-Hermitian elements is
+**Proposed interpretation, labelled as such.** The symmetrised product of two anti-Hermitian elements is
 Hermitian: symmetrising two material operations leaves the material sector and lands in the observable
 one. Read physically, **the half of a composite an apparatus can register is its symmetrised half**, and
 the antisymmetrised half is the part that falls outside it, in the generator sector. The
-reading is about the destination of the symmetrised product and not about the law it satisfies; the bound
+interpretation is about the destination of the symmetrised product and not about the law it satisfies; the bound
 above stands unchanged, and the Jordan identity remains a law of the algebra and not a statement about
 measurement.
 
@@ -304,7 +304,7 @@ ordinary product is reconstructed as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$; a
 elements the symmetric half is the Hermitian anticommutator and the antisymmetric half the anti-Hermitian
 commutator, so the material sector is not closed under the symmetrised product.
 
-**Readings.** That the symmetrised plain product is the **order-free composition of two material
+**Interpretations.** That the symmetrised plain product is the **order-free composition of two material
 operations**; that the cross term it drops is exactly the order, which the antisymmetric band keeps; and
 that the order-free part of a material composite is informational; that the symmetrised half of a
 composite is the observable half; and that the table of the operation is the anticommutation relation of a
@@ -330,7 +330,7 @@ square is the ordinary square and its product is the polarisation of that square
 the symmetric half alone. It satisfies the Jordan identity, and it is the only Jordan product among the
 twelve operations of *The 12 Products of the Biquaternion Complex Space*; this makes
 the biquaternion space a commutative unital **special Jordan algebra** over $\mathbb{C}$. The physical
-reading offered and labelled here is that the operation is the **order-free composition of two material
+interpretation offered and labelled here is that the operation is the **order-free composition of two material
 operations**: on two material elements it is the Hermitian anticommutator, so the symmetrisation of two
 material operations is informational, and the cross term it drops is the cross product that carries the
 order. The Jordan identity is a law of the algebra and not a statement about measurement.

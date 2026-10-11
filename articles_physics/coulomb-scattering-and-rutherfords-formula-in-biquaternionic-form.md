@@ -10,7 +10,7 @@ $$
 
 the differential cross section that Rutherford obtained from classical mechanics and that non-relativistic quantum physics reproduces exactly. It is the one scattering problem of the subcategory with a long-range potential, and it is the problem in which the partial-wave expansion and the Born approximation can be compared on a case in which both are available: the first Born amplitude already has the modulus that Rutherford's formula requires, and the exact amplitude differs from it only by a phase — the Coulomb phase.
 
-This article treats the continuum of the same central potential whose bound states the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* solves. It does not repeat the bound-state derivation. The biquaternion content is the by-now-familiar consequence of centrality: the potential multiplies $e_0$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, the scattering amplitude is a scalar function of the angle and the energy, and the phase shifts are central. The radial problem is the same scalar radial problem as in the bound case, continued to positive energy. The framework's contribution is the algebraic location of the amplitude and the phases, and the sector reading of the flux; it is not a new solution of the Coulomb equation.
+This article treats the continuum of the same central potential whose bound states the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* solves. It does not repeat the bound-state derivation. The biquaternion content is the by-now-familiar consequence of centrality: the potential multiplies $e_0$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, the scattering amplitude is a scalar function of the angle and the energy, and the phase shifts are central. The radial problem is the same scalar radial problem as in the bound case, continued to positive energy. The framework's contribution is the algebraic location of the amplitude and the phases, and the sector interpretation of the flux; it is not a new solution of the Coulomb equation.
 
 The article is organised as follows. The next section states the Coulomb problem in the biquaternion framework and fixes the Coulomb parameter. The third section carries out the partial-wave decomposition, writes the radial equation, and exhibits the regular Coulomb function and the Coulomb phase. The fourth obtains the scattering amplitude and Rutherford's formula. The fifth gives the Born approximation, evaluates the first Born amplitude, and explains why its modulus is already exact. The sixth treats the long-range tail and the energy dependence of the Coulomb phase. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
@@ -46,7 +46,7 @@ $$
 v=\frac{\hbar k}{m},
 $$
 
-the ratio of the Coulomb energy at the de Broglie wavelength to the kinetic energy, equivalently the ratio of the Coulomb energy scale to the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion reading $\eta$ is a central real scalar built from the central quantities $m,\alpha,\hbar,k$; it is not an algebra-valued object, and it enters every phase below as a scalar.
+the ratio of the Coulomb energy at the de Broglie wavelength to the kinetic energy, equivalently the ratio of the Coulomb energy scale to the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion interpretation $\eta$ is a central real scalar built from the central quantities $m,\alpha,\hbar,k$; it is not an algebra-valued object, and it enters every phase below as a scalar.
 
 ## Partial-Wave Decomposition
 
@@ -157,7 +157,7 @@ $$
 
 independent of the phases. The differential cross section is $d\sigma/d\Omega=|f|^2$, and the flux factors are the standard ones for a central potential.
 
-In the biquaternion reading, the amplitude $f(\theta)$ is a complex scalar, hence a central element; the partial-wave decomposition is a decomposition of the scalar envelope's asymptotics; and no module index appears in the sum. The Legendre polynomials are scalar functions of the angle, and the phase shifts are central scalars. The scattering of a spin-0 particle by a central potential is thus a scalar problem, and the framework's statement of that fact is that the amplitude and all the phases lie in $\mathbb{C}_{\mathbb{B}}$.
+In the biquaternion interpretation, the amplitude $f(\theta)$ is a complex scalar, hence a central element; the partial-wave decomposition is a decomposition of the scalar envelope's asymptotics; and no module index appears in the sum. The Legendre polynomials are scalar functions of the angle, and the phase shifts are central scalars. The scattering of a spin-0 particle by a central potential is thus a scalar problem, and the framework's statement of that fact is that the amplitude and all the phases lie in $\mathbb{C}_{\mathbb{B}}$.
 
 ### Rutherford's formula
 
@@ -233,7 +233,7 @@ f_B(\theta)=-\frac{2m}{\hbar^2}\,\frac{\alpha}{q^2}
 =-\frac{2m\alpha}{\hbar^2 q^2},
 $$
 
-and squaring with $q^2=4k^2\sin^2(\theta/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion reading the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.
+and squaring with $q^2=4k^2\sin^2(\theta/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.
 
 ### Why the first Born amplitude is already exact in modulus
 
@@ -247,7 +247,7 @@ The biquaternion framework has nothing to add to this argument except the observ
 
 The phase $e^{-i\eta\ln\sin^2(\theta/2)}$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\alpha/\hbar v$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.
 
-In the biquaternion reading these are central phases: $e^{-i\eta\ln\sin^2(\theta/2)}$ and $e^{2i\sigma_0}$ are elements of the centre's unit circle $U(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase $e^{iS/\hbar}$ and the path-integral phase $e^{iS/\hbar}$. They multiply the amplitude without touching the module. The framework's unitary-versus-rotor distinction applies: these are unitary central phases, not unit-norm rotors.
+In the biquaternion interpretation these are central phases: $e^{-i\eta\ln\sin^2(\theta/2)}$ and $e^{2i\sigma_0}$ are elements of the centre's unit circle $U(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase $e^{iS/\hbar}$ and the path-integral phase $e^{iS/\hbar}$. They multiply the amplitude without touching the module. The framework's unitary-versus-rotor distinction applies: these are unitary central phases, not unit-norm rotors.
 
 ### The scattering length and the infrared analogy
 
@@ -275,7 +275,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 
 **1. Is there an algebraic reason the Coulomb cross section is Born-exact in modulus?** The scale-free character of $1/r$ is the physical reason; whether the algebra distinguishes scale-free central potentials from others is not explored here.
 
-**2. Can the logarithmic phase be given a sector reading?** It is a central phase with a distance-dependent exponent, and the companion path-integral article's sector transfer does not apply to it directly, because it is not a Wick rotation.
+**2. Can the logarithmic phase be given a sector interpretation?** It is a central phase with a distance-dependent exponent, and the companion path-integral article's sector transfer does not apply to it directly, because it is not a Wick rotation.
 
 **3. Does the continuum problem inherit the zero divisor structure of the bound problem?** The bound-state wave functions and the continuum functions are the two branches of the same equation; whether the algebra's null cone plays a role in either is not established.
 

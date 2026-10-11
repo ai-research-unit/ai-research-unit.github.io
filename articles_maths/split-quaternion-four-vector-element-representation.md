@@ -105,7 +105,7 @@ $$
 N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
 $$
 
-of **signature $(2,2)$**, with polarisation $B(\tilde q,\tilde p) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$ in the coordinate basis. It is indefinite and non-degenerate, the scalar and $e_1$ directions being positive and the $e_2, e_3$ directions negative. Under the matrix model it is the determinant, $N(\tilde q) = \det \Phi(\tilde q)$.
+of **signature $(2,2)$**, with polarisation $B(\tilde q,\tilde p) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3$ and matrix $G = \operatorname{diag}(1,1,-1,-1)$ in the coordinate basis. It is indefinite and non-degenerate, the scalar and $e_1$ directions being positive and the $e_2, e_3$ directions negative. Under the matrix model it is the determinant, $N(\tilde q) = \det \mathsf{M}_2(\tilde q)$.
 
 The restrictions to the distinguished subspaces read off the coordinates:
 

@@ -145,7 +145,7 @@ The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\mathb
 
 In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the criterion becomes the linear algebra of a trace-free singular matrix.
 
-**Theorem.** Under the isomorphism $\Phi$ with $\Phi(\tilde P)=P_0\mathrm{I}_2-iP_1\sigma_1-iP_2\sigma_2-iP_3\sigma_3$ the following coincide: $\tilde P$ is a nilpotent; $\Phi(\tilde P)$ is a nonzero nilpotent matrix; $\Phi(\tilde P)$ is trace-free, $\mathrm{tr}\,\Phi(\tilde P)=2P_0=0$, and singular, $\det\Phi(\tilde P)=c(\tilde P)=0$.
+**Theorem.** Under the isomorphism $\mathsf{M}_2$ with $\mathsf{M}_2(\tilde P)=P_0\mathrm{I}_2-iP_1\sigma_1-iP_2\sigma_2-iP_3\sigma_3$ the following coincide: $\tilde P$ is a nilpotent; $\mathsf{M}_2(\tilde P)$ is a nonzero nilpotent matrix; $\mathsf{M}_2(\tilde P)$ is trace-free, $\mathrm{tr}\,\mathsf{M}_2(\tilde P)=2P_0=0$, and singular, $\det\mathsf{M}_2(\tilde P)=c(\tilde P)=0$.
 
 **Proof.** The trace is $2P_0$ and the determinant is $c(\tilde P)$; the criterion is $P_0=0$ and $c(\tilde P)=0$, which is the stated pair. A nonzero two-by-two complex matrix that is singular and trace-free has only the eigenvalue $0$ and is nilpotent, and conversely a nilpotent matrix is singular and trace-free.
 
@@ -195,7 +195,7 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 | $\tilde\Upsilon$ | a nilpotent, $\tilde\Upsilon^{2}=0$ (§*The nilpotent convention*) |
 | $\tilde\Upsilon_1,\tilde\Upsilon_2$ | the two off-diagonal Peirce units $\tfrac{ie_1-e_2}{2}$, $\tfrac{ie_1+e_2}{2}$ |
 | $\tilde\Pi$ | an idempotent |
-| $c(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, $\det\Phi(\tilde P)$ |
+| $c(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, $\det\mathsf{M}_2(\tilde P)$ |
 | $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ | the general plain bilinear form of the vector parts |
 | $\{\tilde\Upsilon\}$ | the nilpotent cone, $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$ |
 | $\mathbf p,\mathbf p'$ | the two real vector parts of a nilpotent, $\tilde\Upsilon=\mathbf p+i\mathbf p'$ with $P_k=p_k+ip'_k$, of equal length and orthogonal |
@@ -209,6 +209,6 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 - *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the off-diagonal units $\tilde\Upsilon_1,\tilde\Upsilon_2$, the minimal ideals they generate and the Peirce basis.
 - *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the second family, the idempotents, and the disjointness of the two classes.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.
-- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the isomorphism $\Phi$, the trace and determinant and the triangular Jordan form.
+- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the isomorphism $\mathsf{M}_2$, the trace and determinant and the triangular Jordan form.
 - *The Zero Divisors and the Four General Products* (`articles_maths/the-zero-divisors-and-the-four-general-products.md`) and *The Square-Zero Elements of the Four General Products* (`articles_maths/the-square-zero-elements-of-the-four-general-products.md`), for the same class read against the four general products, where only the plain product has this square-zero set.
 - *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), §*The nilpotent convention*, for the symbol $\tilde\Upsilon$.

@@ -48,7 +48,7 @@ The failure is not a defect of the Euclidean norm alone. The biquaternion norm $
 
 What survives is a conditional bound, phrased through the singular values of the matrix model.
 
-**Proposition (conditional escape).** Let $\tilde Q\in\mathbb{B}$, $M=\Phi(\tilde Q)$, let $\sigma_1\ge\sigma_2\ge0$ be the two singular values of $M$, and suppose $\sigma_2\ge\delta\sigma_1$ for some $\delta>0$. Then
+**Proposition (conditional escape).** Let $\tilde Q\in\mathbb{B}$, $M=\mathsf{M}_2(\tilde Q)$, let $\sigma_1\ge\sigma_2\ge0$ be the two singular values of $M$, and suppose $\sigma_2\ge\delta\sigma_1$ for some $\delta>0$. Then
 
 $$
 \|\tilde Q^2\|_E\ge\delta^2\|\tilde Q\|_E^2 .
@@ -66,7 +66,7 @@ then $\|F_{\tilde C}(\tilde Q)\|_E>\|\tilde Q\|_E$ and the orbit of $\tilde Q$ e
 $$
 \sigma_2(M^2)=\frac{|\det M|^2}{\sigma_1(M^2)}\ge\frac{|\det M|^2}{\sigma_1(M)^2}=\sigma_2(M)^2 .
 $$
-Also $\|M\|_F^2\le2\sigma_1(M)^2$ gives $\sigma_1(M)\ge\|M\|_F/\sqrt2=\|\tilde Q\|_E$, using $\|\Phi(\tilde Q)\|_F=\sqrt2\|\tilde Q\|_E$. Hence
+Also $\|M\|_F^2\le2\sigma_1(M)^2$ gives $\sigma_1(M)\ge\|M\|_F/\sqrt2=\|\tilde Q\|_E$, using $\|\mathsf{M}_2(\tilde Q)\|_F=\sqrt2\|\tilde Q\|_E$. Hence
 
 $$
 \|M^2\|_F\ge\sqrt2\,\sigma_2(M^2)\ge\sqrt2\,\sigma_2(M)^2\ge\sqrt2\,\delta^2\sigma_1(M)^2\ge\sqrt2\,\delta^2\|\tilde Q\|_E^2 ,
@@ -88,7 +88,7 @@ the complex Mandelbrot set.
 
 **Proof.** $F_{\tilde C}(0)=\tilde C=Ce_0$, and $F_{\tilde C}(Ae_0)=A^2e_0+Ce_0=(A^2+C)e_0$ because $e_0$ is the identity and the parameter is central; induction gives the claim. Boundedness in $\mathbb{B}$ is the boundedness of the complex sequence, which is the definition of the Mandelbrot set.
 
-**Remark (the whole central slice is classical).** The proposition is the orbit of the single point $0$; more is true for the filled Julia set, by the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*: for a central parameter $\tilde C=Ce_0$ and a diagonalisable $\Phi(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$, the point $\tilde Q$ lies in $\mathcal K_{\tilde C}$ exactly when both $\lambda_j$ lie in the complex filled Julia set $K_C$. **The central slice of the biquaternion theory is the complex theory, read on the two eigenvalues.**
+**Remark (the whole central slice is classical).** The proposition is the orbit of the single point $0$; more is true for the filled Julia set, by the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*: for a central parameter $\tilde C=Ce_0$ and a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$, the point $\tilde Q$ lies in $\mathcal K_{\tilde C}$ exactly when both $\lambda_j$ lie in the complex filled Julia set $K_C$. **The central slice of the biquaternion theory is the complex theory, read on the two eigenvalues.**
 
 **Corollary (the centre is a slice of $\mathcal C$).** The intersection of $\mathcal C$ with the centre $\mathbb{C}_{\mathbb{B}}$ is the embedded copy of the Mandelbrot set $\mathcal M\subset\mathbb{C}$, under $C\mapsto Ce_0$.
 
@@ -152,8 +152,8 @@ The connectedness locus $\mathcal B$ and the critical-orbit locus $\mathcal C$ a
 | $\mathcal B$ | the connectedness locus |
 | $\mathcal C$ | the critical-orbit locus, the biquaternion Mandelbrot set |
 | $\mathcal M$, $K_C$ | the complex Mandelbrot set and filled Julia set |
-| $\Phi$ | the matrix realization |
-| $\sigma_1\ge\sigma_2$ | the singular values of $\Phi(\tilde Q)$; $\delta=\sigma_2/\sigma_1$ |
+| $\mathsf{M}_2$ | the matrix realization |
+| $\sigma_1\ge\sigma_2$ | the singular values of $\mathsf{M}_2(\tilde Q)$; $\delta=\sigma_2/\sigma_1$ |
 | $R_\delta$ | the conditional escape radius at condition $\delta$ |
 | $\|\cdot\|_E$, $\|\cdot\|_F$ | the Euclidean norm on $\mathbb{B}$ and the Frobenius norm on $M_2(\mathbb{C})$ |
 | $\tilde\Pi$, $\tilde\Pi'=e_0-\tilde\Pi$ | a primitive idempotent and its complement |

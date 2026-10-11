@@ -125,7 +125,7 @@ so every signed sandwich is an unsigned sandwich, and the twisting is inoperativ
 
 **Remark (the correspondence with the elements).** The passage from the elements of a set acted on by reflections to the operators realising the reflections, the **correspondence between the elements and the reflections**, is the subject of *Reflections as Signed Two-Sided Operators on a Topological Ring*, later in this group, and of its Part I sibling. This article only records which signed sandwiches are the reflections; the correspondence and its failure in the degenerate cases are treated there. The topological gain, that the fixed sets and the carrying cosets are closed, is used there and is proved here for the fixed sets.
 
-## The Topological Reading
+## The Topological Interpretation
 
 **Proposition (the signed sandwich is continuous and the group is topological).** When $\alpha$ is continuous, every signed sandwich is a continuous additive operator; the signed sandwich group $\Sigma^\alpha(R^\times)$ is a topological group for the topology of pointwise convergence when $R^\times$ is open, and the map $(a, b) \mapsto \Sigma^\alpha_{a,b}$ is a continuous homomorphism of topological groups.
 

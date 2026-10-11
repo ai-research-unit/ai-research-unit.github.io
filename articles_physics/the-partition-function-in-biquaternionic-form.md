@@ -8,13 +8,13 @@ $$
 Z = \mathrm{Tr}\big(e^{-\beta \tilde H}\big)
 $$
 
-is the central object of equilibrium statistical mechanics. It normalizes the thermal state, generates the free energy, and encodes the spectrum of the Hamiltonian. The question this article addresses is narrow and concrete: does $Z$ have a **biquaternion reading**, and does the split of the biquaternion algebra into the material and informational sectors force any modification of it?
+is the central object of equilibrium statistical mechanics. It normalizes the thermal state, generates the free energy, and encodes the spectrum of the Hamiltonian. The question this article addresses is narrow and concrete: does $Z$ have a **biquaternion interpretation**, and does the split of the biquaternion algebra into the material and informational sectors force any modification of it?
 
 The answer has two parts, and they should be kept apart from the outset.
 
 The first part is that, for a **Hermitian** Hamiltonian — an element $\tilde H$ of the informational sector $\mathbb{M}_+$ — the partition function is exactly the ordinary one, and the algebra contributes a *reading* rather than a new object. The thermal operator $e^{-\beta\tilde H}$ is itself an element of $\mathbb{M}_+$; the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ identifies the trace with twice the scalar part; and $Z$ is therefore that scalar part, doubled. What the trace discards is the **imaginary vector part** of $e^{-\beta\tilde H}$. The material sector $\mathbb{M}_-$ does not appear in the thermal operator at all in this case; it appears in the **imaginary-time direction** along which $\beta$ is measured. So the honest finding is negative in the sense the subject demands: the algebra does not produce a second, rival partition function, and a "biquaternionic partition function" distinct from $Z$ is not needed.
 
-The second part is the only place where the sector split changes the answer. If the generator is permitted an $\mathbb{M}_-$ component — that is, if $\tilde H$ is allowed to be **non-Hermitian** — then $Z$ can cease to be real and become complex, and the free energy can acquire an imaginary part. This extension is not forced by the framework, because observables are defined to be Hermitian elements of $\mathbb{M}_+$. It is recorded here as a boundary of the reading, not as a result.
+The second part is the only place where the sector split changes the answer. If the generator is permitted an $\mathbb{M}_-$ component — that is, if $\tilde H$ is allowed to be **non-Hermitian** — then $Z$ can cease to be real and become complex, and the free energy can acquire an imaginary part. This extension is not forced by the framework, because observables are defined to be Hermitian elements of $\mathbb{M}_+$. It is recorded here as a boundary of the interpretation, not as a result.
 
 The article proceeds as follows: the standard partition function and thermal state are recalled; the trace is identified with the scalar part; the thermal operator and the partition function are computed explicitly; the part the trace discards is examined; the place where the material sector genuinely enters — imaginary time — is made precise against the companion article on the KMS condition; and the non-Hermitian extension is computed.
 
@@ -179,7 +179,7 @@ So the material sector enters the partition function not as a component of the t
 
 We can now separate the two cases cleanly.
 
-**Hermitian Hamiltonian: no modification.** For $\tilde H\in\mathbb{M}_+$, the object $Z=\mathrm{Tr}(e^{-\beta\tilde H})=2\,\mathrm{Sc}(e^{-\beta\tilde H})$ is exactly the ordinary partition function. The algebra's contribution is a reading with three components: the trace is a scalar extraction, the thermal operator is a scalar Boltzmann weight times a boost biquaternion in $\mathbb{M}_+$, and $\beta$ measures a displacement along the imaginary-time axis of $\mathbb{M}_-$. No second partition function arises, and none is required. If the framework is to have content here beyond notation, it must be content of this interpretive kind; the algebra alone does not supply a new $Z$.
+**Hermitian Hamiltonian: no modification.** For $\tilde H\in\mathbb{M}_+$, the object $Z=\mathrm{Tr}(e^{-\beta\tilde H})=2\,\mathrm{Sc}(e^{-\beta\tilde H})$ is exactly the ordinary partition function. The algebra's contribution is an interpretation with three components: the trace is a scalar extraction, the thermal operator is a scalar Boltzmann weight times a boost biquaternion in $\mathbb{M}_+$, and $\beta$ measures a displacement along the imaginary-time axis of $\mathbb{M}_-$. No second partition function arises, and none is required. If the framework is to have content here beyond notation, it must be content of this interpretive kind; the algebra alone does not supply a new $Z$.
 
 It is worth confirming that the obvious rival scalar does not work. The biquaternion norm of the thermal operator is
 
@@ -217,11 +217,11 @@ $$
 
 with $V$ a central scalar external potential, is the sum of a configurational term and an external one. Read physically, $\log\lvert N\rvert$ is a chemical potential and $\mu_{\mathrm{tot}}$ the total potential of a grand-canonical description, the norm playing the role of the density and its logarithm that of the conjugate potential.
 
-The reading is labelled. The article's own content is the trace and the thermal operator; the identification of $\log\lvert N\rvert$ with a chemical potential is a reading of the same object, and it joins the two other readings of the norm's logarithm in the corpus, the dilation potential of *Conformal Invariance and the Massless Limit in Biquaternionic Form* and the Weyl factor of *The Local Complex Structure and the Speed of Light*. The passage to the imaginary direction, where the material sector enters, is the subject of the article's *Imaginary Time* section and of *The Matsubara Formalism in Biquaternionic Form*.
+The interpretation is labelled. The article's own content is the trace and the thermal operator; the identification of $\log\lvert N\rvert$ with a chemical potential is an interpretation of the same object, and it joins the two other interpretations of the norm's logarithm in the corpus, the dilation potential of *Conformal Invariance and the Massless Limit in Biquaternionic Form* and the Weyl factor of *The Local Complex Structure and the Speed of Light*. The passage to the imaginary direction, where the material sector enters, is the subject of the article's *Imaginary Time* section and of *The Matsubara Formalism in Biquaternionic Form*.
 
 ## Summary
 
-The partition function $Z=\mathrm{Tr}(e^{-\beta\tilde H})$ has a biquaternion form, and its content is a reading of the trace rather than a new object.
+The partition function $Z=\mathrm{Tr}(e^{-\beta\tilde H})$ has a biquaternion form, and its content is an interpretation of the trace rather than a new object.
 
 For a Hermitian Hamiltonian $\tilde H=h_0e_0+i\mathbf h$ in the informational sector, the thermal operator is
 

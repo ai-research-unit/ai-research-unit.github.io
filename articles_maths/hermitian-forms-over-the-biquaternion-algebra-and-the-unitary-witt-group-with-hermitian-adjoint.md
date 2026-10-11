@@ -22,7 +22,7 @@ $$
 h_{H}(\tilde R,\tilde P) = \tilde{R}^{*}H\,\tilde P\qquad\text{with } H\in\mathbb{M}_+,
 $$
 
-and the map $H\mapsto h_{H}$ is an isomorphism of the Hermitian elements onto the Hermitian forms. In the matrix model $\Phi(H)$ is a Hermitian $2\times2$ matrix and $h_{H}(\tilde R,\tilde P)=\Phi(\tilde R)^{*}\Phi(H)\Phi(\tilde P)$.
+and the map $H\mapsto h_{H}$ is an isomorphism of the Hermitian elements onto the Hermitian forms. In the matrix model $\mathsf{M}_2(H)$ is a Hermitian $2\times2$ matrix and $h_{H}(\tilde R,\tilde P)=\mathsf{M}_2(\tilde R)^{*}\mathsf{M}_2(H)\mathsf{M}_2(\tilde P)$.
 
 *Proof.* Sesquilinearity and the Hermitian symmetry give $h(\tilde R,\tilde P)=\tilde{R}^{*}h(e_{0},\tilde P)=\tilde{R}^{*}h(e_{0},e_{0})\tilde P$, with $H=h(e_{0},e_{0})\in\mathbb{M}_+$ by the symmetry, and conversely every such $h_{H}$ is a Hermitian form.
 
@@ -56,7 +56,7 @@ the **unitary slice**, of real dimension four, with determinant-one part $\mathr
 
 ## Sylvester's Law of Inertia
 
-**Definition.** For $H\in\mathbb{M}_+$ the **inertia** is the triple $(p,q,r)$ of the numbers of positive, negative and zero eigenvalues of the matrix $\Phi(H)$, that is of the positive, negative and null dimensions of the form $h_{H}$.
+**Definition.** For $H\in\mathbb{M}_+$ the **inertia** is the triple $(p,q,r)$ of the numbers of positive, negative and zero eigenvalues of the matrix $\mathsf{M}_2(H)$, that is of the positive, negative and null dimensions of the form $h_{H}$.
 
 **Theorem (Sylvester's law of inertia).** Congruence preserves the inertia:
 

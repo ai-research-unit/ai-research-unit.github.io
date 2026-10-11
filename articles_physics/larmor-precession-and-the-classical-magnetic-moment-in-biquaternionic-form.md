@@ -267,7 +267,7 @@ The rotor $\tilde{R}_L(t)$ rotates by the angle $-\gamma B t$ about $\hat{\mathb
 
 ### The Rotating Frame
 
-The precession law has a second reading, which is the content of the **Larmor theorem**. Consider a frame rotating with angular velocity $\boldsymbol{\Omega}$ with respect to the laboratory, and let $\tilde{\boldsymbol{\mu}}_{\rm rot}$ be the moment as seen in that frame. The moment in the laboratory is obtained by the rotor of the frame, $\tilde{\boldsymbol{\mu}} = \tilde{R}_\Omega\,\tilde{\boldsymbol{\mu}}_{\rm rot}\,\tilde{R}_\Omega^{*}$ with $\tilde{R}_\Omega = \exp(\tfrac{1}{2}\Omega t\,\hat{\Omega}_k e_k)$, and the derivative separates into the frame's own rotation and the additional motion seen in the frame,
+The precession law has a second interpretation, which is the content of the **Larmor theorem**. Consider a frame rotating with angular velocity $\boldsymbol{\Omega}$ with respect to the laboratory, and let $\tilde{\boldsymbol{\mu}}_{\rm rot}$ be the moment as seen in that frame. The moment in the laboratory is obtained by the rotor of the frame, $\tilde{\boldsymbol{\mu}} = \tilde{R}_\Omega\,\tilde{\boldsymbol{\mu}}_{\rm rot}\,\tilde{R}_\Omega^{*}$ with $\tilde{R}_\Omega = \exp(\tfrac{1}{2}\Omega t\,\hat{\Omega}_k e_k)$, and the derivative separates into the frame's own rotation and the additional motion seen in the frame,
 
 $$
 \dot{\tilde{\boldsymbol{\mu}}} = \tfrac{1}{2}\left[\tilde{\boldsymbol{\Omega}},\tilde{\boldsymbol{\mu}}\right]

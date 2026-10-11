@@ -19,9 +19,9 @@ First, **the centre is exactly the set of observables invariant under every symm
 
 Second, **the centre is the classical sector in the literal sense of $c$-numbers.** Central elements are the ones that multiply every element on the same side, so they are the scalars with respect to which all algebraic operations are linear. The framework's external parameters — $\hbar$, the speed $c$, a mass $m$, a coupling constant — enter the equations as real multiples of $e_0$, hence as central elements, and the chirality-off-diagonal mass of the linear extension enters as the central coefficient $m e_0$. The centre is where the theory's classical data live.
 
-Third, and this is the honest boundary of the classical reading, **the centre is trivial as an operator algebra.** $\mathbb{B}$ is a central simple algebra over $\mathbb{C}$ — a factor — so it has no non-trivial two-sided ideals and no non-trivial central idempotents. Consequently the framework possesses no intrinsic superselection structure, no central projections to label classical branches, and no canonical decomposition into superselection sectors. Genuine classical structure in this framework arises from *state-dependent* maximal commutative subalgebras, not from the centre; the centre is the canonical but minimal classical sector. This is a limitation of the algebra, and it belongs to the algebra's catalogue of limitations as much as to its successes.
+Third, and this is the honest boundary of the classical interpretation, **the centre is trivial as an operator algebra.** $\mathbb{B}$ is a central simple algebra over $\mathbb{C}$ — a factor — so it has no non-trivial two-sided ideals and no non-trivial central idempotents. Consequently the framework possesses no intrinsic superselection structure, no central projections to label classical branches, and no canonical decomposition into superselection sectors. Genuine classical structure in this framework arises from *state-dependent* maximal commutative subalgebras, not from the centre; the centre is the canonical but minimal classical sector. This is a limitation of the algebra, and it belongs to the algebra's catalogue of limitations as much as to its successes.
 
-The article proceeds: the centre is defined and computed; five equivalent characterizations are given; its role as the classical sector is developed, including the superselection question; the state-dependent commuting slices are described and their non-canonicity is contrasted with the centre's canonicity; and the limitations are stated. The companion articles *The Quantum–Classical Divide in the Biquaternion Framework* and *Fundamental and Derived Elements in the Biquaternion Framework* are the companions for the physical and the structural readings respectively, and the present article supplies the algebraic identification on which both rest.
+The article proceeds: the centre is defined and computed; five equivalent characterizations are given; its role as the classical sector is developed, including the superselection question; the state-dependent commuting slices are described and their non-canonicity is contrasted with the centre's canonicity; and the limitations are stated. The companion articles *The Quantum–Classical Divide in the Biquaternion Framework* and *Fundamental and Derived Elements in the Biquaternion Framework* are the companions for the physical and the structural interpretations respectively, and the present article supplies the algebraic identification on which both rest.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central scalar imaginary $i$, $i^2=-1$. Conjugations: ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), $\flat=-{}^{*}$. The Hermitian and anti-Hermitian subspaces are
 $$
@@ -31,7 +31,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, under which $\Phi(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
 
 ## The Centre: Definition and Computation
 
@@ -63,9 +63,9 @@ Z(\mathbb{B})\cap\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0\}=\mathbb{R}\,ie_0 
 $$
 of real dimensions one each, and $Z(\mathbb{B})$ is their direct sum. The Hermitian part is the real line of Hermitian central observables; the anti-Hermitian part carries the complex structure. The split reflects the decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ restricted to the centre: it is the same decomposition, intersected with the scalars.
 
-**The centre of the matrix model.** Under $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$, which $\mathbb{C}$-linearity extends by $\Phi(i)=iI_2$, the algebra is represented by all complex $2\times2$ matrices, $\Phi(\mathbb{B})=M_2(\mathbb{C})$, and the centre corresponds to the scalar matrices,
+**The centre of the matrix model.** Under $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, which $\mathbb{C}$-linearity extends by $\mathsf{M}_2(i)=iI_2$, the algebra is represented by all complex $2\times2$ matrices, $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$, and the centre corresponds to the scalar matrices,
 $$
-\Phi\bigl(Z(\mathbb{B})\bigr)=\mathbb{C}\,I_2 .
+\mathsf{M}_2\bigl(Z(\mathbb{B})\bigr)=\mathbb{C}\,I_2 .
 $$
 The identification $Z(M_2(\mathbb{C}))=\mathbb{C}I_2$ is the standard statement that the matrix algebra is central over $\mathbb{C}$, and the computation above is its biquaternion transcription.
 
@@ -110,7 +110,7 @@ $$
 \mathrm{Tr}\bigl(\tilde{Q}\tilde{Y}\bigr)=\tfrac12\,\mathrm{Tr}(\tilde{Q})\,\mathrm{Tr}(\tilde{Y})
 \quad\text{for all }\tilde{Y}\in\mathbb{B}.
 $$
-The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{Q}-\tfrac12\mathrm{Tr}(\tilde{Q})e_0)\tilde{Y}\bigr)=0$ for all $\tilde{Y}$, and the trace pairing is non-degenerate, so the bracket vanishes. The physical reading is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
+The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{Q}-\tfrac12\mathrm{Tr}(\tilde{Q})e_0)\tilde{Y}\bigr)=0$ for all $\tilde{Y}$, and the trace pairing is non-degenerate, so the bracket vanishes. The physical interpretation is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
 
 **5. The matrix-model characterization.** Under the representation, $Z(\mathbb{B})$ corresponds to the scalar matrices $\mathbb{C}I_2$; equivalently, these are the elements on which the left regular representation and the right regular representation coincide. This is the form in which the statement is standard: a full matrix algebra over a field has the field itself as its centre.
 
@@ -120,7 +120,7 @@ The five characterizations — commuting, symmetry-fixed, derivation-free, corre
 
 The centre's smallness has a structural consequence that limits what classical structure the framework can carry, and it should be stated precisely.
 
-**$\mathbb{B}$ is a factor.** Since the matrix model is an isomorphism $\Phi(\mathbb{B})=M_2(\mathbb{C})$ of complex algebras, $\mathbb{B}$ is a **central simple algebra** over its centre: it has no non-trivial two-sided ideals, and its centre is exactly the scalars. Every non-zero $\tilde{Q}\in\mathbb{B}$ generates the whole algebra as a two-sided ideal,
+**$\mathbb{B}$ is a factor.** Since the matrix model is an isomorphism $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ of complex algebras, $\mathbb{B}$ is a **central simple algebra** over its centre: it has no non-trivial two-sided ideals, and its centre is exactly the scalars. Every non-zero $\tilde{Q}\in\mathbb{B}$ generates the whole algebra as a two-sided ideal,
 $$
 \mathbb{B}\tilde{Q}\mathbb{B}=\mathbb{B}\qquad(\tilde{Q}\neq0),
 $$
@@ -173,7 +173,7 @@ Z(\mathbb{B})\cong C(\{\ast\}) ,
 $$
 by the Gelfand duality that identifies a commutative unital $C^{*}$-algebra with the algebra of functions on its character space. The character space of the centre is one point, so the framework's canonical classical sector describes a classical system with no degrees of freedom: a single classical parameter, the overall complex scale (equivalently, a real scale and a global phase). This is the precise formulation of the statement that the strict classical sector is minimal: it is non-empty, it is canonical, and it is one-dimensional.
 
-**The division of labour.** Putting the four properties together, the centre plays the classical role in the following exact sense: it is the algebra of quantities that are state-independent, dispersion-free, dynamically frozen, and compatible with every observable, and it is the home of the theory's classical parameters. It is *not* the algebra of a classical phase space, and it is not a set of superselection labels; those stronger classical structures do not exist in this algebra, as the previous section showed. The positive and negative statements are complementary, and both are needed for a correct reading of the framework.
+**The division of labour.** Putting the four properties together, the centre plays the classical role in the following exact sense: it is the algebra of quantities that are state-independent, dispersion-free, dynamically frozen, and compatible with every observable, and it is the home of the theory's classical parameters. It is *not* the algebra of a classical phase space, and it is not a set of superselection labels; those stronger classical structures do not exist in this algebra, as the previous section showed. The positive and negative statements are complementary, and both are needed for a correct interpretation of the framework.
 
 ## Commuting Sectors and State-Dependent Classical Slices
 
@@ -255,7 +255,7 @@ The tensor product multiplies the centres, and this is the algebraic origin of t
 
 The article proves that the centre is trivial as an operator algebra and that the framework therefore has no intrinsic superselection structure. Read together with the block structure of *Relations Between Subspaces*, the statement sharpens. The algebra carries **two $\mathbb{Z}_2$ decompositions** — the half split $\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ and the sector split $\mathbb{M}_-\oplus\mathbb{M}_+$ — and multiplication by the central imaginary $i$ **exchanges both of them**, so the two structures cannot be aligned: no choice of one real slice makes both splits simultaneously the even and odd parts.
 
-The reading is that the framework carries "two independent superselections" in the sense of two independent $\mathbb{Z}_2$ decompositions, and the caution is exact. Neither is a superselection in the technical sense, since a superselection is a central projection and the centre has none; and the sector split is not a grading either, the obstruction $O15$ of *What the Biquaternion Algebra Cannot Do* recording that the two sectors do not form an algebra grading. The two splits are symmetries of the block decomposition, not classical labels, and the reading is offered with that boundary. The owners are *Relations Between Subspaces* for the block structure and the failure of a grading, and this article for the triviality of the centre.
+The interpretation is that the framework carries "two independent superselections" in the sense of two independent $\mathbb{Z}_2$ decompositions, and the caution is exact. Neither is a superselection in the technical sense, since a superselection is a central projection and the centre has none; and the sector split is not a grading either, the obstruction $O15$ of *What the Biquaternion Algebra Cannot Do* recording that the two sectors do not form an algebra grading. The two splits are symmetries of the block decomposition, not classical labels, and the interpretation is offered with that boundary. The owners are *Relations Between Subspaces* for the block structure and the failure of a grading, and this article for the triviality of the centre.
 
 ## Physical Readings
 
@@ -265,7 +265,7 @@ reason there is none and the weaker rule that is present.
 - **Neither $\mathbb{Z}_2$ decomposes the theory.** The half split $\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ and
   the sector split $\mathbb{M}_-\oplus\mathbb{M}_+$ both have the shape of a
   superselection rule and neither is one: a superselection sector is a central projection of the observable
-  algebra, and the only central projections here are $0$ and $e_0$. The reading is a **no-go with a shape**:
+  algebra, and the only central projections here are $0$ and $e_0$. The interpretation is a **no-go with a shape**:
   the framework's two splits are **gradings of the vector space** and are mixed by multiplication, so they
   are not partitions of the theory. Boundary: the owners are this article's *Central Simple Structure and the
   Absence of Superselection* and the obstruction $O15$ of *What the Biquaternion Algebra Cannot Do*.
@@ -278,14 +278,14 @@ reason there is none and the weaker rule that is present.
   structure $\flat$, and a Hermitian observable is a real-form-equivariant element, so **no Hermitian
   observable carries a material element into an informational one**. That is the physical superselection the
   framework has, and it is **weaker** than the algebraic one: it is a statement about the real form of the
-  observable algebra and not about a central projection, and it realises the reading "the split is a
+  observable algebra and not about a central projection, and it realises the interpretation "the split is a
   superselection structure of a real form so that no observable operation crosses it" of *Cross-Sector
   Coupling in the Biquaternion Framework: a Catalogue of the Maps Between the Sectors*.
 - **The antilinear operations are the only natural crossers.** The operations that can relate the two sectors
   without being observables are the antilinear ones — the real structure $\flat$ and the conjugate-linear
   operations of *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* and *Charge
   Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form* —
-  precisely the operations the corpus denies to be observables. The reading is that the material–informational
+  precisely the operations the corpus denies to be observables. The interpretation is that the material–informational
   relation is carried by the discrete, antilinear operations and not by the observables.
 
 ## Summary
@@ -317,7 +317,7 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $\mathrm{ad}_{\tilde{Q}}(\tilde{Y})=[\tilde{Q},\tilde{Y}]$ | Inner derivation |
 | $\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\hat{n}),e_0-\tilde\Pi(\hat{n})\}$ | Maximal commutative subalgebra (MASA) |
 | $\tilde\Pi(\hat{n})=\tfrac12(e_0+i\hat{n})$ | Pure-state projection, $|\hat{n}|=1$ |
-| $M_2(\mathbb{C})$ | Matrix model; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$ |
+| $M_2(\mathbb{C})$ | Matrix model; $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
 | $\mathrm{U}(2)=\mathbb{M}_-$ | Lie algebra of the unitary group |
 | $C(\{\ast\})$ | Gelfand character algebra of the centre |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
@@ -334,4 +334,4 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 - E. M. Alfsen and F. W. Shultz, *State Spaces of Operator Algebras* (Birkhäuser, 2001), for state spaces, faces, and the algebraic distinction between classical and quantum.
 - N. Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for central simple algebras, their centres, and their maximal commutative subalgebras.
 - R. S. Pierce, *Associative Algebras* (Springer, 1982), for the structure of full matrix algebras, their centres $\mathbb{C}I_2$, and their MASAs.
-- S. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford University Press, 1995), for the quaternionic and biquaternionic readings of the classical sector and of the scalar field.
+- S. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford University Press, 1995), for the quaternionic and biquaternionic interpretations of the classical sector and of the scalar field.
