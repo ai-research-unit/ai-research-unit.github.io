@@ -8,7 +8,7 @@ A root is a root of a product, and the equation names it. The square of the bloc
 
 A root is defined relative to a product, and the definition is stated once for a general product in *Definitions for the Study of the 12 Algebraic Structures*, §*The Root*; throughout this article the product is $\bullet$ and, unqualified, **root** means root of $\bullet$. The roots of the algebra are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; the general root problem is *Square Roots of a General Element in the Symmetric Plain Algebra*; the idempotents the roots of $+1$ index are *Idempotents of the Symmetric Plain Algebra*; and the annihilating elements among the roots are *Zero Divisors of the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$. An element is $\tilde P=P_0e_0+\mathbf{P}$ with $\mathbf{P}=\sum_kP_ke_k$ and $(\mathbf{P},\mathbf{P})=\sum_kP_k^2$. The product with the mark is $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$; the norm is $N(\tilde P)=\sum_\mu P_\mu^2=P_0^2+(\mathbf{P},\mathbf{P})$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$. An element is $\tilde P=P_0e_0+\mathbf{P}$ with $\mathbf{P}=\sum_kP_ke_k$ and $(\mathbf{P},\mathbf{P})=\sum_kP_k^2$. The product with the mark is $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$; the central square is $c(\tilde P)=\sum_\mu P_\mu^2=P_0^2+(\mathbf{P},\mathbf{P})$.
 
 ## The General Definition and the Reduction
 
@@ -59,7 +59,7 @@ whose imaginary part $\boldsymbol{p}'$ is non-zero, so that the family is disjoi
 
 *Proof.* The reduction puts the equation at $\tilde P^2=-e_0$ of the algebra, whose classification is the stated one; the block's product reads it unchanged.
 
-**Remark (the block's reading).** Every root of $-1$ has non-zero norm, $N(\tilde P)=1$ for the pure ones and $N(\pm ie_0)=-1$ for the trivial ones, so every root of $-1$ is **invertible** of the block. Among them, every pure root is a **zero divisor** of the block, whatever its norm, the block's pure family being the whole vector subspace; so the block has invertible roots of $-1$ that are not regular, which the algebra does not.
+**Remark (the block's reading).** Every root of $-1$ has non-zero central square, $c(\tilde P)=1$ for the pure ones and $c(\pm ie_0)=-1$ for the trivial ones, so every root of $-1$ is **invertible** of the block. Among them, every pure root is a **zero divisor** of the block, whatever its central square, the block's pure family being the whole vector subspace; so the block has invertible roots of $-1$ that are not regular, which the algebra does not.
 
 ## The Roots of Zero
 
@@ -91,7 +91,7 @@ whose non-zero elements are the nilpotents of the block.
 
 *Proof.* $(\tilde P i)^2=\tilde P^2i^2=(-1)(-1)=1$, and the map $\tilde P\mapsto\tilde P i$ is a bijection from the roots of $-1$ to the roots of $+1$ because $i$ is invertible in the centre.
 
-**Remark (the block's reading).** The **pure** roots of $+1$ are exactly the elements $\mathbf{u}$ of the vector subspace with $\mathbf{u}^2=e_0$, and they index the non-trivial idempotents of the block by $\mathbf{u}\mapsto\tfrac12(e_0+\mathbf{u})$; this bijection is *Idempotents of the Symmetric Plain Algebra*, and it does not exist in the algebra article, where the roots of $+1$ are used only for the exponential and the logarithm. Every root of $+1$ has non-zero norm, so every root of $+1$ is invertible, and every pure root is a zero divisor.
+**Remark (the block's reading).** The **pure** roots of $+1$ are exactly the elements $\mathbf{u}$ of the vector subspace with $\mathbf{u}^2=e_0$, and they index the non-trivial idempotents of the block by $\mathbf{u}\mapsto\tfrac12(e_0+\mathbf{u})$; this bijection is *Idempotents of the Symmetric Plain Algebra*, and it does not exist in the algebra article, where the roots of $+1$ are used only for the exponential and the logarithm. Every root of $+1$ has non-zero central square, so every root of $+1$ is invertible, and every pure root is a zero divisor.
 
 ## The Three Sets Compared
 

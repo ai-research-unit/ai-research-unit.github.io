@@ -20,7 +20,7 @@ and the product is the same multiplication table on the same elements. **Restric
 $$
 J:\tilde Y\mapsto i\tilde Y,\qquad J^2=-\mathrm{id},
 $$
-an $\mathbb{R}$-linear endomorphism of $\mathbb{R}^8$ that is not $\mathbb{C}$-linear, since $J(i\tilde Y)=-i\,i\tilde Y=i J\tilde Y$ fails by a sign. Multiplication by $i$ is left multiplication by the central element $i\in\mathbb{C}_{\mathbb{B}}$, so $J=L_i$ in the notation below.
+an $\mathbb{R}$-linear endomorphism of $\mathbb{R}^8$, and $\mathbb{C}$-linear: it commutes with itself, $J(i\tilde Y)=i\,J\tilde Y$, by the criterion $TJ=JT$, the scalar $i$ being central. Multiplication by $i$ is left multiplication by the central element $i\in\mathbb{C}_{\mathbb{B}}$, so $J=L_i$ in the notation below.
 
 Every property written with the addition, the product, the unit $e_0$ and quantification over the elements is a statement about the **ring** and does not move when the scalars are restricted to $\mathbb{R}$: associativity, the two-sided unit, the ideal lattice, the idempotents, the nilpotents, the zero divisors and the group of units are the same in the two readings. This is the content of the remark that the ideals, the idempotents and the zero divisors do not change. What does move is every notion that names the field: $\mathbb{B}$ is **central simple over $\mathbb{C}$** and **simple but not central over $\mathbb{R}$**, because the centre $\mathbb{C}_{\mathbb{B}}$ is a field strictly larger than $\mathbb{R}e_0$.
 
@@ -36,7 +36,7 @@ The four conjugations of the algebra — the natural ${}^{\natural}$, the comple
 
 ## The Effect on the Twelve Structures
 
-The twelve structures are the four $A$ structures (bilinear in both slots, called algebras over $\mathbb{C}$) and the four $B$ pairs of a general product and its (anti)symmetrisation, eight of which are sesquilinear in the second slot (sesqualgebras over $\mathbb{C}$). The passage to $\mathbb{R}$ acts on them **uniformly** and changes no product rule:
+The twelve structures are the six $A$ structures (bilinear in both slots, called algebras over $\mathbb{C}$) and the six $S$ structures (sesquilinear in the second slot, called sesqualgebras over $\mathbb{C}$). The passage to $\mathbb{R}$ acts on them **uniformly** and changes no product rule:
 
 - an $A$ structure keeps its second slot $\mathbb{C}_{\mathbb{B}}$-linear and remains an algebra, now over $\mathbb{R}$;
 - an $S$ structure had its second slot $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, and over $\mathbb{R}$ the involution disappears, since the only automorphism of $\mathbb{R}$ is the identity: a sesquilinear law with the identity involution **is** a bilinear law. The structure is therefore an $\mathbb{R}$-**algebra** as well, and the $A$/$S$ distinction migrates from the field to the centre, where it is the relation $LJ=\pm JL$ of the left multiplications by central elements.
@@ -73,7 +73,7 @@ where the reversion gives the natural conjugation and the norm gives a reversion
 
 ## Summary
 
-Read over $\mathbb{R}$ the general plain algebra is the same associative unital product on the same elements, a simple $\mathbb{R}$-algebra on $\mathbb{R}^8$ with centre $\mathbb{C}_{\mathbb{B}}$; its second slot stays $\mathbb{C}_{\mathbb{B}}$-linear, its form $B$ realifies to signature $(4,4)$, and every ring-theoretic property is unchanged. The four conjugations are all $\mathbb{R}$-linear, the eight sesquilinear structures become $\mathbb{R}$-algebras because $\mathbb{R}$ carries no involution, and the $A$/$S$ distinction is read in the centre. Four things are genuinely real: the odd-dimensional subalgebras, the Galois-twisted automorphism group, the trace form $8\operatorname{Re}B$, and the Clifford model $\mathrm{Cl}^+_{1,3}(\mathbb{R})$.
+Read over $\mathbb{R}$ the general plain algebra is the same associative unital product on the same elements, a simple $\mathbb{R}$-algebra on $\mathbb{R}^8$ with centre $\mathbb{C}_{\mathbb{B}}$; its second slot stays $\mathbb{C}_{\mathbb{B}}$-linear, its form $B$ realifies to signature $(4,4)$, and every ring-theoretic property is unchanged. The four conjugations are all $\mathbb{R}$-linear, the six sesquilinear structures become $\mathbb{R}$-algebras because $\mathbb{R}$ carries no involution, and the $A$/$S$ distinction is read in the centre. Four things are genuinely real: the odd-dimensional subalgebras, the Galois-twisted automorphism group, the trace form $8\operatorname{Re}B$, and the Clifford model $\mathrm{Cl}^+_{1,3}(\mathbb{R})$.
 
 ## Summary of Notation
 

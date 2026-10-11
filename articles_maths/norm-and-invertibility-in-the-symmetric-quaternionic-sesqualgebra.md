@@ -5,35 +5,48 @@
 This article records what the block, the symmetric quaternionic sesquilinear product
 $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ of
 *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*, carries in the place of a unit,
-an inverse and a norm. The answer is negative on the two first counts and partial on the third: the block has
+an inverse and a norm. The answer is negative on the two first counts and precise on the third: the block has
 no unit, so it has no inverse and no group of units; the replacing object is the **regularity** of
-*Zero Divisors of the Symmetric Quaternionic Sesqualgebra*, and the norm-like object is the **Krein form**
-$K$, which does not detect the zero divisors.
+*Zero Divisors of the Symmetric Quaternionic Sesqualgebra*, and the algebraic norm is the **Krein form** $K$,
+which does not detect the zero divisors.
 
-The unit and the inverse are relative to a product, and the product is part of the definition: they are
+A norm and an inverse name a product, and the product is part of the definition: the unit and the inverse are
 stated once for a general product in *Definitions for the Study of the 12 Algebraic Structures*,
-§*The Unit and the Inverse*, and read on the products of the space. The unqualified
-words mean the block. The block's absence of a unit is proved in *Introduction to the Symmetric Quaternionic
-Sesqualgebra of Biquaternions* and is recalled here because the whole of the invertibility question depends
-on it; the article then reads the two quadratic objects of the block, the square map and the form, and the
-multiplication operators, which are the only sense in which invertibility survives.
+§*The Unit and the Inverse*, and the algebraic norm of a product is the diagonal of its scalar-part form,
+the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the block the form is
+$K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ and
+its diagonal is
 
-The product, its class and its two one-sided actions are *Introduction to the Symmetric Quaternionic
-Sesqualgebra of Biquaternions* and *The Two One-Sided Actions and the Absence of a Unit*; the zero divisors
-and the regular elements are *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*; the operators are
-*The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its isotropy are
-*The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Isotropic Structure of the
-General Quaternionic Sesqualgebra*; and the plain norm is *Norm and Invertibility in the General Plain
-Algebra*.
+$$
+K(\tilde Q)=K(\tilde Q,\tilde Q)=\sum_{\mu=0}^{3}\varepsilon_\mu\lvert Q_\mu\rvert^{2}
+=\lvert Q_0\rvert^{2}-\lvert Q_1\rvert^{2}-\lvert Q_2\rvert^{2}-\lvert Q_3\rvert^{2},
+$$
+
+the symmetric quaternionic sesquilinear algebraic norm, **real and indefinite** of signature $(2,6)$, one of
+the four algebraic norms of the space and not one of the other three. The unqualified words *unit*,
+*inverse*, *norm* mean the block.
+
+The block's absence of a unit is proved in *Introduction to the Symmetric Quaternionic Sesqualgebra of
+Biquaternions* and is recalled here because the whole of the invertibility question depends on it; the article
+then reads the algebraic norm, its failure of multiplicativity, the regularity that replaces invertibility,
+and the **absence of a criterion**: $K$ does not detect the zero divisors.
+
+**Boundaries.** The product, its class and its two one-sided actions are *Introduction to the Symmetric
+Quaternionic Sesqualgebra of Biquaternions* and *The Two One-Sided Actions and the Absence of a Unit*; the
+zero divisors and the regular elements are *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*; the
+operators are *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its
+isotropy are *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Isotropic
+Structure of the General Quaternionic Sesqualgebra*; the algebraic norm of the plain product is $B$, a
+different form, and its theory is *Norm and Invertibility in the General Plain Algebra*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
 scalar imaginary $i$; $\mathbf Q=\sum_kQ_ke_k$; $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
 $e_1,e_2,e_3$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
-${}^{*}={}^{\natural}\circ\bar{\cdot}$. The **plain norm** is
-$N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, the **central square** is the same expression
-$c(\tilde Q)$, the **Krein form** is $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$
-with $\varepsilon=(1,-1,-1,-1)$, and the diagonal of the block is
+${}^{*}={}^{\natural}\circ\bar{\cdot}$. The **algebraic norm of the block** is
+$K(\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$,
+the diagonal of the **Krein form** $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with
+$\varepsilon=(1,-1,-1,-1)$; the square of an element is
 $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$.
 Throughout this article the product is the block.
 
@@ -77,41 +90,62 @@ $e_0\star\tilde X=\tilde X$ holds exactly for the Hermitian elements and $\tilde
 exactly for the real ones; on $e_0+e_1$, $e_0\star(e_0+e_1)=e_0-e_1$, so the unit candidate fails at the
 first witness. The two actions are *The Two One-Sided Actions and the Absence of a Unit*.
 
-## The Two Quadratic Objects
+## The Algebraic Norm of the Block
 
-**Theorem (the square and the form).** For every $\tilde Q$,
-$\mathrm{Sc}(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)$, real, and
-$\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$, which is a
-real quaternion with scalar part $K(\tilde Q,\tilde Q)$ and vector part $-2\mathrm{Re}(Q_0\overline{\mathbf Q})$.
+**Definition.** The **algebraic norm of the block** is the diagonal of the scalar-part form of the product,
 
-*Proof.* The scalar part is the definition of the Krein form as the product of the block
+$$
+K(\tilde Q)=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=K(\tilde Q,\tilde Q)
+=\sum_{\mu=0}^{3}\varepsilon_\mu\lvert Q_\mu\rvert^{2},
+$$
+
+equivalently $K(\tilde Q)=K(\tilde Q,\tilde Q)$ for the form
+
+$$
+K(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu\overline{Q_\mu},
+$$
+
+the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, also
+called the **Krein form** of the block. The two arities of the letter are one object: with two arguments the
+form, with one argument its diagonal.
+
+**Theorem (the square and the algebraic norm).** For every $\tilde Q$ the square is a real quaternion,
+$\mathrm{Sc}(\tilde Q\star\tilde Q)=K(\tilde Q)$, and
+
+$$
+\tilde Q\star\tilde Q=K(\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q,
+$$
+
+with vector part $-2\mathrm{Re}(Q_0\overline{\mathbf Q})$.
+
+*Proof.* The scalar part is the diagonal of the Krein form as the scalar part of the product of the block
 (*The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*); the rest is the diagonal formula
 of *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*.
 
-So the block carries two quadratic objects: the **square map** $\tilde Q\mapsto\tilde Q\star\tilde Q$, whose
-scalar part is the form $K$, and the **plain norm** $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$
-of the general plain algebra. The first is the block's own; the second is inherited and is the quadratic form
-of the product whose symmetric part would be the block's companion in the plain row. The plain norm is
-multiplicative for the plain product (*Norm and Invertibility in the General Plain Algebra*); for the block
-it is not, and neither is the form.
+**Basic properties.** Each is a direct reading of the definition.
 
-**Theorem (neither quadratic object is multiplicative).** The form and the norm fail multiplicativity for the
-block:
+- $K(\tilde Q)$ is **real**, and **indefinite**: the four entries $1,-1,-1,-1$ on the real and the imaginary
+  parts of the four coefficients give the inertia $(2,6)$ on the realification $\mathbb{B}\cong\mathbb{R}^{8}$.
+- $K$ is **homogeneous of degree two over the reals**, $K(\lambda\tilde Q)=\lvert\lambda\rvert^{2}K(\tilde Q)$
+  for $\lambda\in\mathbb{C}$.
+- Its polarisation is the sesquilinear form $K(\tilde P,\tilde Q)$, and
+  $K(\tilde Q,\tilde P)=\overline{K(\tilde P,\tilde Q)}$: the form is Hermitian.
+- Its **vanishing set** is the $K$-isotropic cone, a nonzero cone: $K(e_0+e_1)=1-1=0$, so the algebraic norm
+  vanishes on nonzero elements.
+
+## The Algebraic Norm Is Not Multiplicative
+
+**Theorem (neither the algebraic norm nor the square is multiplicative).** For the block,
 
 $$
-K(\tilde P\star\tilde Q,\tilde P\star\tilde Q)\neq K(\tilde P,\tilde P)\,K(\tilde Q,\tilde Q),
-\qquad
-N(\tilde P\star\tilde Q)\neq N(\tilde P)\,N(\tilde Q),
+K(\tilde P\star\tilde Q)\neq K(\tilde P)\,K(\tilde Q)\quad\text{in general},
 $$
 
 and the square map is not multiplicative,
 $(\tilde P\star\tilde Q)\star(\tilde P\star\tilde Q)\neq(\tilde P\star\tilde P)\star(\tilde Q\star\tilde Q)$.
 
-*Proof.* Take $\tilde P=e_3$ and $\tilde Q=e_2$. For the form,
-$K(e_3\star e_2,e_3\star e_2)=K(0,0)=0$ while
-$K(e_3,e_3)K(e_2,e_2)=(-1)(-1)=1$. For the norm,
-$N(e_3\star e_2)=N(0)=0$ while $N(e_3)N(e_2)=1\cdot1=1$ (the norm here is the plain norm, whose signs are
-absent: $N(e_k)=1$ for every $k$, in contrast with $K(e_k,e_k)=-1$). For the square map,
+*Proof.* Take $\tilde P=e_3$ and $\tilde Q=e_2$. For the algebraic norm,
+$K(e_3\star e_2)=K(0)=0$ while $K(e_3)K(e_2)=(-1)(-1)=1$. For the square map,
 $(e_3\star e_2)\star(e_3\star e_2)=0\star0=0$ while
 $(e_3\star e_3)\star(e_2\star e_2)=(-e_0)\star(-e_0)=e_0$. The values use
 $e_3\star e_2=0$ and $e_k\star e_k=-e_0$ of the table.
@@ -137,32 +171,33 @@ of the block is conjugate-linear.
 
 So the largest class on which the block's multiplication is faithful is the set of the regular elements,
 $Q_0\neq0$ and $c(\tilde Q)\neq0$. Every nonzero idempotent of the block is regular
-(*Idempotents of the Symmetric Quaternionic Sesqualgebra*), and no nonzero nilpotent is; the regular elements are the
-substitute for the invertible ones that the absence of a unit leaves, and they are the elements on which the
-operator calculus of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* is a group-like
-structure without being a group.
+(*Idempotents of the Symmetric Quaternionic Sesqualgebra*), and no nonzero nilpotent is; the regular elements
+are the substitute for the invertible ones that the absence of a unit leaves, and they are the elements on
+which the operator calculus of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* is a
+group-like structure without being a group.
 
-## The Krein Form Does Not Detect the Zero Divisors
+## The Absence of a Criterion from the Algebraic Norm
 
-**Theorem (the form and the divisor class are independent).** For the block the implications
+**Theorem (the algebraic norm does not detect the zero divisors).** The block has no invertible element, so
+no criterion can name one; and the algebraic norm does not decide the zero-divisor class either, the two
+implications
 
 $$
-K(\tilde Q,\tilde Q)=0\ \Longrightarrow\ \tilde Q\text{ is a zero divisor},
+K(\tilde Q)=0\ \Longrightarrow\ \tilde Q\text{ is a zero divisor},
 \qquad
-\tilde Q\text{ is a zero divisor}\ \Longrightarrow\ K(\tilde Q,\tilde Q)=0
+\tilde Q\text{ is a zero divisor}\ \Longrightarrow\ K(\tilde Q)=0
 $$
 
-both fail.
+both failing.
 
-*Proof.* $K(e_0+e_1,e_0+e_1)=|1|^2-|1|^2=0$ while
-$c(e_0+e_1)=1+1=2\neq0$, so $e_0+e_1$ is regular and the first implication fails. $K(e_1,e_1)=-1\neq0$
-while $e_1$ is a pure zero divisor, since $e_1\star e_2=0$, so the second fails.
+*Proof.* $K(e_0+e_1)=|1|^2-|1|^2=0$ while the central square is $c(e_0+e_1)=1+1=2\neq0$, so $e_0+e_1$ is
+regular and the first implication fails. $K(e_1)=-1\neq0$ while $e_1$ is a pure zero divisor, since
+$e_1\star e_2=0$, so the second fails.
 
-The contrast with the plain product is exact. There the norm $N$ is multiplicative and its vanishing is the
-criterion of the zero divisor, so $N$ detects the class; here the form vanishes on the regular isotropic
-elements and does not vanish on the pure zero divisors, so the class is carried by the scalar part $Q_0$ and
-the central square $c$ and not by $K$. The isotropic elements of $K$ are computed in *The Isotropic Structure
-of the General Quaternionic Sesqualgebra* and its restriction to the block in *The Krein Form as a Product on
+**Remark (what carries the class).** The algebraic norm vanishes on the regular isotropic elements and does
+not vanish on the pure zero divisors, so the zero-divisor class is carried by the scalar part $Q_0$ and the
+central square $c$, and not by $K$. The isotropic elements of $K$ are computed in *The Isotropic Structure of
+the General Quaternionic Sesqualgebra* and its restriction to the block in *The Krein Form as a Product on
 the Symmetric Quaternionic Sesqualgebra*.
 
 ## Worked Examples
@@ -175,8 +210,8 @@ has rank four and is not injective.
 $c=2\neq0$, so it is regular; $L^{\star}_{\tilde Q}$ is a conjugate-linear bijection, though $\tilde Q$ has
 no inverse.
 
-**Two multiplicativity failures at the same pair.** $\tilde P=e_3$, $\tilde Q=e_2$: the form
-gives $0\neq1$ and the norm gives $0\neq1$.
+**A multiplicativity failure.** $\tilde P=e_3$, $\tilde Q=e_2$: the algebraic norm gives
+$0\neq1$ and the square map gives $0\neq e_0$.
 
 **The unit candidate.** $\tilde Q=e_0$: $e_0\star(e_0+e_1)=e_0-e_1$, so the element $e_0$ does not fix the
 block; it is an idempotent and a root of $+1$ and not a unit.
@@ -185,15 +220,23 @@ block; it is an idempotent and a root of $+1$ and not a unit.
 
 The block has no unit, so no element has an inverse and the group of units is empty; the unit candidate $e_0$
 acts by the two conjugations instead, $e_0\star\tilde X=\tilde X^{*}$ and
-$\tilde X\star e_0=\tilde X^{\natural}$. The two quadratic objects of the block are the square map, whose
-scalar part is the Krein form $K$, and the inherited plain norm $N=\tilde Q\tilde Q^{\natural}$; neither is
-multiplicative for the block, and the square map is not multiplicative either, the three failures being read
-at the pair $e_3,e_2$. Invertibility is replaced by regularity: the left multiplication of $\tilde Q$ is
-injective exactly when $\tilde Q$ is regular, $Q_0\neq0$ and $c(\tilde Q)\neq0$, and has rank eight, six and
-four on the regular elements, the non-pure zero divisors and the pure zero divisors, and rank zero at the
-origin. The Krein form does not
-detect the zero divisors, vanishing on the regular $e_0+e_1$ and not on the pure zero divisor $e_1$; the
-class is carried by the scalar part and the central square, not by the form.
+$\tilde X\star e_0=\tilde X^{\natural}$. It carries one algebraic norm, the diagonal of its scalar-part form,
+the symmetric quaternionic sesquilinear algebraic norm
+
+$$
+K(\tilde Q)=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu\lvert Q_\mu\rvert^{2}
+=\lvert Q_0\rvert^{2}-\lvert Q_1\rvert^{2}-\lvert Q_2\rvert^{2}-\lvert Q_3\rvert^{2},
+$$
+
+real, indefinite of signature $(2,6)$, also called the Krein form, with the $K$-isotropic cone as its
+vanishing set; it is **not multiplicative**, the pair $e_3,e_2$ separating the two sides,
+$K(e_3\star e_2)=K(0)=0$ against $K(e_3)K(e_2)=1$, and the square map is not multiplicative either.
+Invertibility is replaced by regularity: the left multiplication of $\tilde Q$ is injective exactly when
+$\tilde Q$ is regular, $Q_0\neq0$ and $c(\tilde Q)\neq0$, and has rank eight, six and four on the regular
+elements, the non-pure zero divisors and the pure zero divisors, and rank zero at the origin. The article
+records the **absence of a criterion**: the algebraic norm does not detect the zero divisors, vanishing on
+the regular $e_0+e_1$ and not on the pure zero divisor $e_1$; the class is carried by the scalar part and the
+central square, not by $K$.
 
 ## Summary of Notation
 
@@ -201,16 +244,20 @@ class is carried by the scalar part and the central square, not by the form.
 |---|---|
 | $\tilde E\star\tilde X=\tilde X$ (left), $\tilde X\star\tilde E=\tilde X$ (right) | the unit equations; the block has no solution |
 | $\tilde Q\star\tilde Q^{-1}=\tilde Q^{-1}\star\tilde Q=\tilde E$ | the inverse equation; empty without a unit |
-| $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the scalar part of the square |
-| $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=c(\tilde Q)$ | the plain norm, the central square |
+| $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the scalar-part form of the product |
+| $K(\tilde Q)=K(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, one of the four algebraic norms of the space |
+| $\tilde Q\star\tilde Q=K(\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$ | the square, a real quaternion with scalar part $K(\tilde Q)$ |
+| $K(\tilde P\star\tilde Q)\neq K(\tilde P)K(\tilde Q)$ | the failure of multiplicativity |
 | $Q_0\neq0,\ c(\tilde Q)\neq0$ | the regular elements, the substitute for the invertible ones |
 | $\mathrm{rank}\,L^{\star}_{\tilde Q}\in\{8,6,4,0\}$ | the ranks: regular, non-pure divisor, pure divisor, origin |
 
 ## Further Reading
 
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the diagonal of a form and the four algebraic norms of the space.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general quaternionic sesquilinear form $K$ and the table of the four forms.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Unit and the Inverse*, for the definitions relative to a general product and for the unit tables.
 - *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the two actions of $e_0$ and the proof that no element is a unit.
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the multiplicative norm and the invertibility criterion of the plain product.
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the algebraic norm $B$ of the plain product, which is not the form $K$ of this article.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion of the zero divisors and the regular elements.
 - *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md`), for the operators whose kernels give the ranks.
 - *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md`), for the form that is the scalar part of the square.

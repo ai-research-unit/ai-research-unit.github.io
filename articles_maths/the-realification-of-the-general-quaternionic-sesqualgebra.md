@@ -30,18 +30,18 @@ The statements that do not move are those about the ring. The failure of associa
 
 ## The Product Read over $\mathbb{R}$
 
-The product is $\mathbb{R}$-bilinear, because a $\mathbb{C}$-sesquilinear law is additive in each argument and linear over the subfield $\mathbb{R}$. The block is therefore an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in the broad sense, a module with a bilinear multiplication, with no further axiom. Its defect list is the complex one, unchanged:
+The product is $\mathbb{R}$-bilinear, because a $\mathbb{C}$-sesquilinear law is additive in each argument and linear over the subfield $\mathbb{R}$. The block is therefore an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in the broad sense, a module with a bilinear multiplication, with no further axiom. Its list is the complex one, unchanged:
 
 - **no unit on either side**, the two one-sided actions of $e_0$ being the two conjugations, $e_0\star\tilde Q=\tilde Q^{*}$ on the left and $\tilde P\star e_0=\tilde P^{\natural}$ on the right;
 - neither associative nor commutative, so that no reading of the product is a commutative law;
-- the values fill the whole space, the products of the four basis elements being $\pm e_\mu$ and their complex span being $\mathbb{B}$;
+- the values fill the whole space, the products of two basis elements being $\pm e_\mu$ and their complex span being $\mathbb{B}$;
 - the left multiplications do not form a monoid.
 
 The last entry is worth a word, because the real reading states it in the language of the next section. The composition of two left multiplications is
 $$
 L_{\tilde A}\circ L_{\tilde B}(\tilde X)=\tilde A^{\natural}\tilde X\,\overline{\tilde B},
 $$
-which is $\mathbb{C}$-linear in $\tilde X$ — the two conjugate-linear maps compose to a linear one — so no composition of left multiplications is a left multiplication, and the block has the element theory of the sesquilinear structures without their operator theory. Read over $\mathbb{R}$, the composition lies in the commuting part of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$ and no left multiplication does.
+which is $\mathbb{C}$-linear in $\tilde X$ — the two conjugate-linear maps compose to a linear one — so the composite is a nonzero linear map wherever $\tilde A$ and $\tilde B$ are nonzero, and it is then no left multiplication, every left multiplication with a nonzero parameter being conjugate-linear; the family therefore contains no identity and is not closed under composition, and the block has the element theory of the sesquilinear structures without their operator theory. Read over $\mathbb{R}$, the composite lies in the commuting part of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$ and no nonzero left multiplication does.
 
 ## The Second Slot and the Two One-Sided Multiplications
 
@@ -56,7 +56,7 @@ $$
 L_{\tilde P}\,J=-J\,L_{\tilde P},\qquad R_{\tilde Q}\,J=+J\,R_{\tilde Q}.
 $$
 
-*Proof.* The product is $\mathbb{C}$-linear in its first slot and conjugate-linear in its second, so $L_{\tilde P}$ is conjugate-linear and $R_{\tilde Q}$ is linear in the variable, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*. A conjugate-linear $\mathbb{R}$-linear map anticommutes with the complex structure and a linear one commutes with it, by the two criteria of the same section. $\square$
+*Proof.* The product is $\mathbb{C}$-linear in its first slot and conjugate-linear in its second, so $L_{\tilde P}$ is conjugate-linear and $R_{\tilde Q}$ is linear in the variable, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*. A conjugate-linear $\mathbb{R}$-linear map anticommutes with the complex structure and a linear one commutes with it, by the two criteria of the same section.
 
 **Corollary (the two block shapes).** In the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ the left multiplication has the matrix
 $$
@@ -110,9 +110,9 @@ The passage adds three things that the complex reading does not state in this fo
 
 The rest of the block's body is unchanged, and the reason is the dictionary: the unit, the associativity, the idempotents, the nilpotents, the square-zero family and the zero divisors are read from the ring alone. In particular the idempotents are those of the complex reading, $0$, $e_0$ and the family
 $$
-\tilde\Pi(\mu)=-\tfrac12e_0+\mu,\qquad(\mu,\mu)=\tfrac34\ \text{in the real vector subspace},
+\tilde\Pi(\mu)=-\tfrac12e_0+\mu,\qquad(\mu,\mu)=\tfrac34\ \text{in the real vector subspace};
 $$
-the square-zero family $\lambda(\hat\mu+i)$, equivalently $\lambda(e_0+i\hat\mu)$, with $\lambda\in\mathbb{C}$ and $\hat\mu$ a real unit vector, of which $e_0+ie_1$ is the witness, and the plain invertibility criterion $c(\tilde Q)\neq0$ is the same in the two readings: the count of the ring-theoretic objects of the block does not change with the scalars.
+the square-zero family is $\lambda(\hat\mu+i)$, equivalently $\lambda(e_0+i\hat\mu)$, with $\lambda\in\mathbb{C}$ and $\hat\mu$ a real unit vector, of which $e_0+ie_1$ is the witness; and the plain invertibility criterion $c(\tilde Q)\neq0$ is the same in the two readings. The count of the ring-theoretic objects of the block does not change with the scalars.
 
 ## Summary
 

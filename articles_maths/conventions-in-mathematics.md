@@ -34,6 +34,7 @@ The conventions below are those used throughout the corpus. They are stated once
 | $\bullet$ | the symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$; the circle $\circ$ is reserved for the composition of maps |
 | $\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | the conjugations of an algebra with an involution, and the adjoint of an operator; *The conjugations and the adjoint* below fixes their meanings |
 | $\tilde\Pi$, $\tilde\pi$, $\Pi$ | an idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$ (§*The idempotent convention*) |
+| $\tilde\Xi$, $\tilde\xi$, $\Xi$ | a root of $-1$: the biquaternion layer writes $\tilde\Xi$, the quaternion layer $\tilde\xi$, and the tilde-free layers $\Xi$ (§*The root convention*) |
 | $\tilde P, \tilde q, \tilde Q$ | a generic element of the algebra: the quaternion, split-quaternion, biquaternion or split-biquaternion one |
 
 ### Groups, rings and operations
@@ -146,6 +147,30 @@ $$
 
 The dagger is the **general adjoint**: it acts on an operator and not on an element, and it is the same in every system. It is the general mark under which the several adjoints of the corpus fall — one for each form, one for each sandwich — and where the adjoint in view is obviously the one of the positive definite form the text writes the two marks together, the dagger first and the star second, so that the coincidence is apparent: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ and $(\Theta_{\tilde{Q}})^{\dagger}=(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{*}}$.
 
+### The root convention
+
+The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The idempotent convention*) and the nilpotent $\tilde\nu$ (§*The nilpotent convention*): the **xi**, in the two cases.
+
+A **root of $-1$** of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2 = -1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde\Xi^2 = \lambda e_0$; the roots of the three central values $-1, 0, +1$ are determined in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general problem is *Square Roots of a General Element in the General Plain Algebra*.
+
+**The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents: the class is relative to the product, and the roots of a value are read product by product in *The Square Roots of a Central Value in the Four General Products*. Since the value is real, the bar and the star carry a root to a root, $(\tilde\Xi^{*})^2 = (\tilde\Xi^2)^{*} = \tilde\Xi^2$, so the star permutes the roots of $-1$ and fixes none of the non-central ones.
+
+**The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Xi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\xi$; and those of the complex, split-complex and dual layers carry the plain capital, $\Xi$, no tilde being written where there is no quaternionic factor — the only tilde-free layer with a root of $-1$ being $\mathbb{C}$, whose two roots are the central $\pm i$.
+
+**The coordinates carry the letter of the root**, as for a general element: in $\mathbb{B}$ the root is $\tilde\Xi = \Xi_0e_0 + \Xi_1e_1 + \Xi_2e_2 + \Xi_3e_3$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_0$ and its vector part $\boldsymbol\Xi = \boldsymbol\xi + i\boldsymbol\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_0e_0 + \xi_1e_1 + \xi_2e_2 + \xi_3e_3$ with real $\xi_\mu$. The equation splits into a scalar equation and a vector equation, and the solutions are the classification of the article that owns the roots.
+
+**The subscript of a root is always numeric** where more than one occurs, as for the idempotents and the nilpotents, and a sign is never written as a subscript.
+
+The root glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
+
+| Symbol | Role |
+|---|---|
+| $\tilde\Xi$ | a root of $-1$ of the biquaternion or split-biquaternion layer |
+| $\tilde\xi$ | a root of $-1$ of the quaternion or split-quaternion layer |
+| $\Xi$ | a root of $-1$ of the complex, split-complex or dual layer, where no tilde is written |
+
+The convention is one of **notation, not of substance**: an element written $\tilde\Xi$ is not a different kind of object from one written $\tilde Q$, only an element known to be a root of $-1$.
+
 ### The idempotent convention
 
 The convention of *The element and its coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the corpus uses it throughout.
@@ -226,7 +251,7 @@ A generic element of a number system is written as a linear combination of the b
 the scalar sector of the system, the biquaternion element being $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$
 with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter of its own: $\alpha, \beta$ for the Booleans, $n, m$ for the naturals and the integers, $a, b, c$ for the rationals and the reals, and $A = a + ia'$, $B = b + ib'$ for the commutative two-parameter systems. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a **natural sign**. The involution of the base extends to the coefficients and is written with a **bar**. Their composite is the Hermitian anti-automorphism that makes the algebra a Hilbert algebra, written with a **star**; its negative is the **anti-Hermitian** conjugation, written **flat**; and the **dagger** is the adjoint of an operator, written on operators and never on the elements. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.
 
-On the number systems the **case** records whether the commuting scalar sector is larger than the reals and the **tilde** records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $A$ complex or split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion. The **idempotents** and the **nilpotents** carry symbols of their own, split by the same case rule: $\tilde\Pi$ is an idempotent or a pure state of the biquaternion and split-biquaternion layers, and the minimal left ideal it generates, $\tilde\pi$ the same in the quaternion and split-quaternion layers, and $\Pi$ in the complex, split-complex and dual layers where no tilde is written; $\tilde\nu$ is a nilpotent of the quaternion or split-quaternion layer and $\tilde\Upsilon$ a nilpotent of the biquaternion or split-biquaternion layer, while $\tilde P$ is the generic element of a statement that holds for every element. The upper-case tilde carries three roles — the idempotent, the nilpotent and the generic element — and the split is deliberate.
+On the number systems the **case** records whether the commuting scalar sector is larger than the reals and the **tilde** records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $A$ complex or split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion. The **idempotents**, the **nilpotents** and the **roots** carry symbols of their own, split by the same case rule: $\tilde\Pi$ is an idempotent or a pure state of the biquaternion and split-biquaternion layers, and the minimal left ideal it generates, $\tilde\pi$ the same in the quaternion and split-quaternion layers, and $\Pi$ in the complex, split-complex and dual layers where no tilde is written; $\tilde\nu$ is a nilpotent of the quaternion or split-quaternion layer and $\tilde\Upsilon$ a nilpotent of the biquaternion or split-biquaternion layer; $\tilde\Xi$ is a root of $-1$ of the biquaternion and split-biquaternion layers and $\tilde\xi$ the same in the quaternion and split-quaternion layers; while $\tilde P$ is the generic element of a statement that holds for every element. The upper-case tilde carries four roles — the idempotent, the nilpotent, the root and the generic element — and the split is deliberate.
 
 The working conventions are the corpus's own. Every article is registered in exactly one menu, with a comment that outlines it, and a leading `+` marks a planned article. The four groups of a category — Theory, Operator Theory, `*` Theory and `*` Operator Theory — each add one thing to the group before, the star naming the involutive layer on the elements and then on the operators, so that the last group holds the operators built from the involution, and the group `Applications` closes the category. A concept is introduced once, in the category that owns it, and is cited afterwards rather than restated; every deferral to a later part is stated explicitly, which is how the ordering rule of *Introduction to Mathematics* is enforced. Each article opens with its title and an Introduction and closes with Summary, Summary of Notation and Further Reading.
 
@@ -244,6 +269,9 @@ The working conventions are the corpus's own. Every article is registered in exa
 | tilde | the presence of the quaternionic factor |
 | $\alpha, \beta$; $n, m$; $a, b, c$ | the generic elements of the Booleans, the naturals and the integers, and the rationals and the reals |
 | $A = a + ia'$, $B = b + ib'$ | the generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime |
+| $\tilde\Xi$ | a root of $-1$ of the biquaternion or split-biquaternion layer |
+| $\tilde\xi$ | a root of $-1$ of the quaternion or split-quaternion layer |
+| $\Xi$ | a root of $-1$ of the complex, split-complex or dual layer |
 | $\tilde\Pi$ | an idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal it generates |
 | $\tilde\pi$ | an idempotent of the quaternion or split-quaternion layer |
 | $\Pi$ | an idempotent of the complex, split-complex or dual layer |

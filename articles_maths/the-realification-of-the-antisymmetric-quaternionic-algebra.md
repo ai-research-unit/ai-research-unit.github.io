@@ -8,7 +8,7 @@ $$
 $$
 and this article owns it read over $\mathbb{R}$: the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$.
 
-The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the two rules for forms, the table of the four effects and the dictionary of the statements about the ring and of the statements about the scalars are *The Realification and the Effect of the Change of Scalars*; This article gives what is specific to this product: its real bilinear reading and the properties that do not move, the law of its second slot over the centre, the realification of the two forms the block carries, its real operators, and the features that only the real reading shows.
+The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the two rules for forms, the table of the four effects and the dictionary of the statements about the ring and of the statements about the scalars are *The Realification and the Effect of the Change of Scalars*. This article gives what is specific to this product: its real bilinear reading and the properties that do not move, the law of its second slot over the centre, the realification of the two forms the block carries, its real operators, and the features that only the real reading shows.
 
 ## The Product Read over $\mathbb{R}$
 
@@ -83,7 +83,7 @@ At the element $e_0$ the operator is the element-level specificity of the block 
 $$
 L_{e_0}\tilde X=\mathbf X,\qquad L_{e_0}^2=L_{e_0},\qquad R_{e_0}=-L_{e_0},
 $$
-it has real rank six, its image is the realification of $\mathrm{Vect}(\mathbb{B})$ and its kernel is the realification of the centre, of real dimension two. The identity and its interpretation are *The Specificities of the Antisymmetric Quaternionic Algebra*. The block's own invariant form is too degenerate to determine the adjoint of a multiplication operator (*The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, §*The Adjoint of the Operator with Respect to a Form*), and the operators of the plain algebra over $\mathbb{R}$, with the adjoints the four realified forms give them, belong to the real reading of the ring (§*What Is Specific to the Real Reading* of *The Realification of the General Plain Algebra*).
+it has real rank six, its image is the realification of $\mathrm{Vect}(\mathbb{B})$ and its kernel is the realification of the centre, of real dimension two. The identity and its interpretation are *The Specificities of the Antisymmetric Quaternionic Algebra*. The block's own invariant form is too degenerate to determine the adjoint of a multiplication operator, the whole vector subspace lying in its radical (*The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, §*The Adjoint of the Operator with Respect to a Form*), so the block supplies no adjoint of its own; the adjoints the four realified forms of the space give to left multiplication are the four of *The Four Pairings of the Biquaternion Algebra*, §*The Forms in Comparison*, and they are identities of the plain product and not of this block.
 
 ## What Is Specific to the Real Reading
 
@@ -132,3 +132,4 @@ The Antisymmetric Quaternionic Algebra read over $\mathbb{R}$ is the same produc
 - *Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the closure of the centre, the vector subspace and the quaternion subspace, the failure of closure of the other three, and the subspace that is the image of the whole operation.
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the matrix, the trace $3X_0$, the rank and the kernel of the left multiplication, cited here in the real basis.
 - *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the four Gram matrices and the four signatures of the realified forms of the space, against which the two realified forms of this block are placed.
+- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms of the space, their Gram matrices and their signatures, and the adjoints they give to the left multiplications.

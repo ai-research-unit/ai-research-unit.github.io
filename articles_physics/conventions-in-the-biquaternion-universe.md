@@ -266,6 +266,30 @@ pairs the two sectors — in this series' usage, *the sectors*, without qualific
 
 **The choice of which subspace is "real".** The convention that has to be flagged is that $\mathbb{M}_-$ is the *anti*-Hermitian subspace, so that the framework's "real" part is the part built on $i$ times a Hermitian element. The more familiar convention takes the Hermitian part as real. The two differ only by the central factor $i$, and there is no mathematical error either way: an anti-Hermitian generator is the standard choice for the Lie algebra of a unitary group, and it is $\mathbb{M}_-$ that carries that role here. What is unusual is that the convention is applied to the **field** rather than to the generators. Once it is, $\mathbb{M}_-$ is fixed by $\flat$ and $\mathbb{M}_+$ is not, and that is what makes $\mathbb{M}_-$ the framework's material subspace. A reader who "restores" the Hermitian convention will find the whole series inverted. Do not.
 
+### The Root Convention
+
+The roots carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*) and the nilpotent $\tilde{\nu}$ (§*The Nilpotent Convention*): the **xi**, in the two cases.
+
+A **root of $-1$** of the algebra is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2 = -1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{\Xi}^2 = \lambda e_0$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *Square Roots of a General Element in the General Plain Algebra*; the roots the series uses are the roots of $-1$, which parametrise the idempotents and the complex structures of the framework.
+
+**The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents (§*The Nilpotent Convention*), and the class is relative to the product; the roots of a value in the four general products are those of *The Square Roots of a Central Value in the Four General Products*. Since the value is real, the bar and the star carry a root to a root, $(\tilde{\Xi}^{*})^2 = (\tilde{\Xi}^2)^{*} = -1$ for the roots of $-1$, so the star permutes the roots of $-1$ and fixes none of the non-central ones.
+
+**The case rule splits the glyph, as it does in the mathematical corpus.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Xi}$, the glyph the series uses; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\xi}$; and those of the complex, split-complex and dual layers carry the plain capital, $\Xi$, no tilde being written where there is no quaternionic factor — the only tilde-free layer with a root of $-1$ being $\mathbb{C}$, whose two roots are the central $\pm i$. The series works in $\mathbb{B}$ and writes $\tilde{\Xi}$ throughout; the other two glyphs are the mathematical corpus's, and the layer fixes the glyph.
+
+**The coordinates carry the letter of the root**: in $\mathbb{B}$ a root is $\tilde{\Xi} = \Xi_0e_0 + \Xi_1e_1 + \Xi_2e_2 + \Xi_3e_3$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_0$ and its vector part $\boldsymbol{\Xi} = \boldsymbol{\xi} + i\boldsymbol{\xi}'$. The equation $\tilde{\Xi}^2 = -1$ splits into a scalar equation and a vector equation, whose solutions are the classification of the mathematical corpus; a root of $-1$ is the axis of a Hamilton representation of the element it belongs to, and the idempotents of the informational sector are built from it.
+
+**The subscript of a root is always numeric** where more than one occurs, as for the idempotents and the nilpotents, and a sign is never written as a subscript.
+
+The root glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
+
+| Symbol | Role |
+|---|---|
+| $\tilde{\Xi}$ | a root of $-1$ of the biquaternion or split-biquaternion layer |
+| $\tilde{\xi}$ | a root of $-1$ of the quaternion or split-quaternion layer |
+| $\Xi$ | a root of $-1$ of the complex, split-complex or dual layer, where no tilde is written |
+
+The convention is one of **notation, not of substance**: an element written $\tilde{\Xi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be a root of $-1$.
+
 ### The Idempotent Convention
 
 The convention of *The element and its coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.
@@ -777,6 +801,8 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $\tilde{\Pi}$ | An idempotent, projector or pure state, $\tilde{\Pi}^2 = \tilde{\Pi}$, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates (see §*The Idempotent Convention*). By the case rule the quaternion layer of the mathematical corpus writes $\tilde{\pi}$ and the tilde-free layers $\Pi$ |
 | $\tilde{\nu}$ | A nilpotent of the quaternion or split-quaternion layer, $\tilde{\nu}^2 = 0$ (see §*The Nilpotent Convention*) |
 | $\tilde{\Upsilon}$ | A nilpotent of the biquaternion or split-biquaternion layer, the upper-case glyph of the same letter; not a $Y$ |
+| $\tilde{\Xi}$ | A root of $-1$ of the biquaternion or split-biquaternion layer, $\tilde{\Xi}^2 = -1$ (see §*The Root Convention*) |
+| $\tilde{\xi}$ | A root of $-1$ of the quaternion or split-quaternion layer |
 | $\tilde{Q}^{\natural}, \bar{\tilde{Q}}, \tilde{Q}^{*}, \tilde{Q}^{\flat}$ | Quaternion (the natural sign), complex, Hermitian and anti-Hermitian conjugation |
 | $\tilde{Q}^{\natural} \mapsto \epsilon M^{\mathsf T}\epsilon^{-1}$, $\bar{\tilde{Q}} \mapsto \epsilon\overline{M}\epsilon^{-1}$ | The two conjugations dressed by the antisymmetric form; $\epsilon = \Phi(-e_2)$ |
 | $\tilde{Q}^{*} \mapsto M^\dagger$, $\tilde{Q}^\flat \mapsto -M^\dagger$ | The two undressed ones. Entrywise conjugation of $M$ alone is not the image of any involution |

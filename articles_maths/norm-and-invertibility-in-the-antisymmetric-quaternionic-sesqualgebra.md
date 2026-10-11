@@ -2,134 +2,130 @@
 
 ## Introduction
 
-A unit of a product is an element that leaves every element fixed, an inverse is defined by an equation with the unit on the right side, and the group of units is the set of the invertible elements of a unital product; the algebraic norm is the quadratic form whose value at an element is the central value of its square. For the conjugate cross product
+This article studies the algebraic norm and the invertibility of the antisymmetric quaternionic sesqualgebra
 
 $$
-\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\mathbf{P}\times\overline{\mathbf{Q}}
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)
+=\mathbf{P}\times\overline{\mathbf{Q}},
 $$
 
-of *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* the three notions fail together, and they fail for one reason: **the unit of the parent algebra is a square-zero element of the block.** The block has no unit on either side, so no element is invertible and the group of units is empty; the block has no algebraic norm, so the criterion of invertibility by the non-vanishing of a norm is unavailable; and the notion of a regular element, which the corpus defines only in a unital product, has no referent.
+the conjugate cross product, the antisymmetric half of the general quaternionic sesquilinear product, the operation $\mathrm{AQS}$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*. The operation is $\mathbb{C}$-bilinear in the first slot, conjugate-linear in the second, vector valued, and it has no unit on either side.
 
-An absence article of the corpus is written with the substitutes it hands over in place of the absent objects, and the substitutes here are three and they are computed. The **annihilators** of an element form a complex plane, so the left multiplication by a non-central element has a nontrivial kernel and a nontrivial image; the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on the complex plane of the values orthogonal to the vector part of $\tilde A$ in the complex bilinear dot, and the solutions form a coset of the annihilator, so that the block has a **relative inverse** of complex dimension two on each of its elements; and the form-theoretic reading of a value is the **pairing** with the Krein form, $K(\tilde X\diamond\tilde Y,\tilde X\diamond\tilde Y)=-\lvert\tilde X\diamond\tilde Y\rvert^{2}$, which is the substitute for the norm of the value and is developed in *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*.
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
 
-The definitions are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, with the unit table of the four general products, and the element theory that uses the substitutes is *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra*; the invertibility criterion of the model block, where the norm exists, is *Norm and Invertibility in the General Plain Algebra*; the forms of the algebra are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, and the parent products are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* and its symmetric companion.
+Both notions of the title are therefore **absences**, and they fail for one reason: the unit of the parent algebra is a square-zero element of the block. The block has no unit on either side, so no element is invertible and the group of units is empty; the one-sided inverse equations to the centre have no solution. What replaces the invertibility is not a norm but an operator reading: the one-sided multiplication by an element has a kernel and an image, and the relative inverse below accounts for the loss on the quotient.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$ and $e_k^2=-e_0$, a generic element $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_kQ_ke_k$, and the product $\diamond$ for the block. The left multiplication by $\tilde A$ is written $L_{\tilde A}$; the complex bilinear dot product of two vector parts is $(\mathbf{A},\mathbf{B})=\sum_kA_kB_k$; the algebraic norm of the biquaternion algebra is
+**Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*; the general definitions of the unit and the inverse are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the element theory that uses the substitute is *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra*. The algebraic norm of the general quaternionic sesquilinear product is $K$, a different form, and its theory is *Norm and Invertibility in the General Quaternionic Sesqualgebra*; the invariant forms of the block are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*. Nothing topological and nothing metric appears.
 
-$$
-N(\tilde Q)=\sum_\mu Q_\mu^{2}=c(\tilde Q),
-$$
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$ with $e_1e_2=e_3$ and $e_k^2=-e_0$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf{Q}$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general quaternionic sesquilinear product is $\tilde P^{\natural}\tilde Q^{*}$, and the product of the block is $\diamond$. The complex bilinear dot product of two vector parts is $(\mathbf{A},\mathbf{B})=\sum_kA_kB_k$.
 
-the multiplicative form of the plain product, so that $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$ and $\tilde Q$ is invertible in the plain product exactly when $N(\tilde Q)\neq0$; the Krein form of the row is $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.
+## The Relative Definitions
 
-## The Definitions, Relative to a Product
+The word *unit* and the word *inverse* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*.
 
-**Definition (unit).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star x=x$ for every $x$; a **right unit** when $x\star e=x$ for every $x$; and a **two-sided unit**, or **identity**, when it is both. A product with a two-sided unit is **unital**, and the two-sided unit, when it exists, is unique.
+**Definition (unit).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde X=\tilde X$ for every $\tilde X$, a **right unit** when $\tilde X\star e=\tilde X$ for every $\tilde X$, and a **two-sided unit** when it is both. A product with a two-sided unit is **unital**.
 
-**Definition (inverse and group of units).** Let $\star$ be a unital product with identity $e$. An element $x$ is **left-invertible of $\star$** when there is $y$ with $y\star x=e$; **right-invertible** when there is $y$ with $x\star y=e$; and **invertible** when there is $y$ with $x\star y=y\star x=e$. In an associative unital product the invertible elements form the **group of units**, and an element that is neither a left nor a right zero divisor is **regular**.
+**Definition (inverse and group of units).** Let $\star$ be a unital product with identity $e$. An element $\tilde Q$ is **left-invertible of $\star$** when there is $\tilde R$ with $\tilde R\star\tilde Q=e$, **right-invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=e$, and **invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=\tilde R\star\tilde Q=e$. Such an $\tilde R$ is the **inverse of $\tilde Q$**, and in an associative unital product the invertible elements form the **group of units**.
 
-**Definition (algebraic norm).** A **norm** of a product $\star$ is a quadratic form $N_\star$ whose value at an element is the central value of its square, $\tilde X\star\tilde X=N_\star(\tilde X)e_0$, and which is multiplicative, $N_\star(x\star y)=N_\star(x)N_\star(y)$. For the plain product the norm exists and is the form $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ up to the sign, and it furnishes the invertibility criterion; the structure of the four norms of the algebra is *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*.
+Throughout this article the product is the block $\diamond$, and, unqualified, *unit* and *inverse* are read in $\diamond$.
 
-Throughout this article the product is the block $\diamond$, so that, unqualified, a unit, an inverse and a norm are read in the block, and the unit of the parent products is written $e_0$ as an element of the same space.
+## The Absence of a Unit
 
-## The Unit
-
-**Theorem (the block has no unit on either side).** The block has no left unit, no right unit and no two-sided unit.
+**Theorem (no unit).** The block has no left unit, no right unit and no two-sided unit.
 
 *Proof.* A left unit $e$ must satisfy $e\diamond e_0=e_0$; but $e\diamond e_0=\mathbf{e}\times\overline{\mathbf{0}}=0$, since the vector part of $e_0$ is zero, so the equation reads $0=e_0$ and is false. A right unit $e$ must satisfy $e_0\diamond e=e$; but $e_0\diamond e=\mathbf{0}\times\overline{\mathbf{e}}=0$, so the equation reads $0=e$ and is false for a nonzero $e$, while the origin satisfies it only at the element zero.
 
-**Remark (the absence is inherited from the row).** The four general products have the unit table of *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*: the plain product has the two-sided unit $e_0$, the natural product has the left unit $e_0$ alone, the plain sesquilinear product has the right unit $e_0$ alone, and the quaternionic sesquilinear product has none on either side. The row of the block is the last one, so the block inherits the absence of the unit from its parent product, and the antisymmetrisation cannot create one: an antisymmetric product of two central elements is zero, while a unit would have to reproduce the central elements. Of the twelve, only the plain product and its symmetric half are unital, and the block is not among them.
+**Remark (the unit is a square-zero element).** The failure is not a subtle one: the unit of the parent algebra satisfies $e_0\diamond e_0=0$ in the block, so it is not merely a non-unit, it is a nilpotent of index two. The whole central line shares the reading, $\lambda e_0\diamond\lambda e_0=0$, and the centre is annihilated by the block in both slots; the line of the units of the algebras is the line of the square-zero elements of the block.
 
-**Remark (the unit is a square-zero element).** The failure of the identity equations is not a subtle one: the unit of the parent algebra satisfies $e_0\diamond e_0=0$ in the block, so it is not merely a non-unit, it is a nilpotent of index two. The whole scalar line shares the reading, $\lambda e_0\diamond\lambda e_0=0$, and the centre is annihilated by the block in both slots, so that the central line, which is the line of the units of the algebras and of the largest annihilator of the general products, is the line of the square-zero elements of the block. The reading is the element-theoretic form of the split, and it is recorded in *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*.
+## The Absence of an Inverse
 
-## The Absence of the Inverse and of the Regular Element
+**Corollary (no inverse, no group of units).** No element of the block is left-invertible, right-invertible or invertible, and the group of units of the block is empty.
 
-**Corollary (no element is invertible).** No element of the block is left-invertible, right-invertible or invertible, and the group of units of the block is empty.
+*Proof.* The three definitions of the inverse are equations with the unit of the product on the right side, and the block has no unit on either side by the theorem above, so the equations cannot be written down. The statement is not a statement about the elements: it is the statement that the class of the invertible elements of the block is empty.
 
-*Proof.* The three definitions of the inverse are equations with the unit of the product on the right side, and the block has no unit on either side by the theorem above, so the equations cannot be written down. The statement is not vacuous and it is not a statement about the elements: it is the statement that the class of the invertible elements of the block is empty, and that the group of units, the object through which the algebra of the model block is read, has no referent for the block.
-
-**Corollary (no element is regular).** The notion of a regular element is defined for a unital product alone, so the block has no regular and no non-regular element; the dichotomy of the element theory of the corpus is not available to it, and the only reading is the pair of annihilators and the relative inverse below.
-
-**Remark (the zero divisors are everything).** The reader of the absence is the size of the zero-divisor set: in the model block the zero divisors are the elements of vanishing norm and the generic element is invertible, while in the block every nonzero element is a two-sided zero divisor, as *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra* proves. The two statements are the same statement read twice: the block has no unit and therefore no inverse, and every multiplication by a fixed nonzero element has a nonzero kernel, so the information of the factor is lost at every step. The quantification of the loss is the dimension of the annihilator, which is the next section.
-
-## The Substitutes
-
-**The annihilators.** For a non-central element $\tilde A$ the two annihilators coincide in the complex plane
+**Proposition (the one-sided equations have no solution).** For every $\tilde Q$ the two equations
 
 $$
-A_\diamond(\tilde A)=B_\diamond(\tilde A)=\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}},
+\tilde Q\diamond\tilde R=e_0,\qquad \tilde R\diamond\tilde Q=e_0
 $$
 
-of complex dimension two and real dimension four; for a central element they are the whole space. They are the kernels of the two one-sided multiplications, they replace the group of units as the incoming data of the element theory, and their computation is *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra*.
+have no solution $\tilde R$.
 
-**The relative inverse.** The left multiplication by a non-central element,
+*Proof.* Each left member is a value of the block, hence a pure vector of scalar part zero; the right member $e_0$ has scalar part one. A pure vector is never $e_0$, so neither equation holds.
 
-$$
-L_{\tilde A}\tilde R=\mathbf{A}\times\overline{\mathbf{R}},
-$$
+## The Algebraic Norm of the Block
 
-has the annihilator $A_\diamond(\tilde A)$ as its kernel and the complex plane of the values orthogonal to the vector part of $\tilde A$ in the complex bilinear dot as its image,
+**Definition (the algebraic norm of the operation).** Let $f$ be an operation on $\mathbb{B}$ with scalar-part form $\varphi(\tilde P,\tilde Q)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$. The **algebraic norm of $f$** is the diagonal of that form,
 
 $$
-\mathrm{im}\,L_{\tilde A}=\{\tilde W:\mathbf{W}\in\mathrm{Vect}(\mathbb{B}),\ (\mathbf{W},\mathbf{A})=0\},
+\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)=\mathrm{Sc}\,f(\tilde Q,\tilde Q),
 $$
 
-so that the equation $\tilde A\diamond\tilde R=\tilde W$ has a solution exactly when $\tilde W$ lies on that plane, and the set of its solutions is then a coset of the kernel. The two spaces have complex dimension two, and the left multiplication induces a conjugate-linear bijection of the quotient of the space by the kernel onto the image: the block has no inverse, and it has a relative inverse in which each non-central element acts invertibly between two spaces of dimension two, the loss and the gain being accounted by the kernel and the image.
+and for an operation whose scalar part vanishes identically the algebraic norm is the zero function (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*).
 
-**The pairing of the values.** The substitute for the norm of an element is the reading of the value through the form of the row: for the Krein form,
+**Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric quaternionic sesqualgebra,
 
 $$
-K(\tilde X\diamond\tilde Y,\tilde X\diamond\tilde Y)=-\lvert\tilde X\diamond\tilde Y\rvert^{2}\leq0 ,
+\mathrm{Sc}\bigl(\tilde P\diamond\tilde Q\bigr)=0\quad\text{for all }\tilde P,\tilde Q,
+\qquad\text{hence}\qquad
+\varphi_{\diamond}(\tilde Q)=0\quad\text{for all }\tilde Q .
 $$
 
-with equality exactly on the values of the cone of the diagonal. The self-pairing of a value is therefore the negative of a non-negative real number, and the pairing is the only quadratic reading the block carries: it is defined on the values and not on the elements, and it is developed, with the Gram matrix of the values and the invariant forms, in *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*.
+The algebraic norm of the operation is identically zero, and by the convention of the definition the block carries **no algebraic norm**.
 
-**Remark (the operators and their adjoints).** The left multiplication has a second reading, in which the absence of the inverse is the presence of the adjoint: for the Krein form the adjoint of the left multiplication is its negative, so that the operator is skew with respect to the form of the row, and the pairing of an element and its conjugate is conserved. The operator theory of the block is *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, and it is the operator form of the annihilation pair $(\tilde A,\overline{\tilde A})$ of the element theory.
+*Proof.* The value of the block is the conjugate cross product $\mathbf{P}\times\overline{\mathbf{Q}}$, a pure vector of scalar part zero for every pair; its diagonal is therefore the zero function. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the block is counted with no algebraic norm rather than with a zero one.
 
-## The Absence of the Norm
+**Remark (the diagonal is a pure vector).** The sesquilinear product is not alternating in the bilinear sense — its second slot is conjugate-linear — so the diagonal need not vanish as an element of the block:
 
-**Theorem (the block has no algebraic norm).** There is no quadratic form $N_\diamond$ on $\mathbb{B}$ with $\tilde X\diamond\tilde X=N_\diamond(\tilde X)e_0$ for every $\tilde X$, and there is no multiplicative form on $\mathbb{B}$ extending the norm of the algebra to the block: the square of an element is never a nonzero central value, and the norm of the algebra fails the multiplicativity at the block.
+$$
+\tilde Q\diamond\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}},
+$$
 
-*Proof.* The square of an element is the conjugate cross product $\mathbf{X}\times\overline{\mathbf{X}}$, a pure vector for every $\tilde X$, so that the equation $\tilde X\diamond\tilde X=N_\diamond(\tilde X)e_0$ holds only where the square vanishes, that is on the cone of the diagonal, and the form would be forced to vanish there and to be undefined outside: no quadratic form meets the equation. For the second statement it is enough to read one pair, $\tilde X=\tilde Y=e_1$: the square is $e_1\diamond e_1=0$, so $N(e_1\diamond e_1)=N(0)=0$, while $N(e_1)N(e_1)=1$, and the multiplicativity fails.
+a pure vector, generally nonzero. It is central exactly when it vanishes, so there is no quadratic form $N_\diamond$ with $\tilde X\diamond\tilde X=N_\diamond(\tilde X)e_0$ for every $\tilde X$: the equation would hold only on the cone of vanishing diagonal and define nothing outside. No central-valued quadratic map is built from the product.
 
-**Remark (the square has no polarisation).** The absence of the norm is the absence of the polarisation of the square. For a product in which the square is the restriction of a quadratic form, the symmetrisation $\tilde X\star\tilde Y+\tilde Y\star\tilde X$ is the polarisation and is a symmetric bilinear form; for the block the symmetrisation is the sesquilinear expression $\mathbf{X}\times\overline{\mathbf{Y}}+\mathbf{Y}\times\overline{\mathbf{X}}$, which is conjugate-linear in the second slot and therefore not the polarisation of a quadratic form. The block carries a sesquilinear product and no quadratic form, and the only quadratic object of the block is the pairing of its values through the form of the row.
+## The Relative Inverse
 
-**Remark (what the model block uses the norm for).** In the plain product the norm is used three times: it defines the scalar coordinate of the product, it gives the invertibility criterion $N(\tilde Q)\neq0$, and it defines the norm of an element as the value of the form at the element, $N(\tilde Q)=(\tilde Q,\tilde Q)$ in the bilinear reading. The block replaces the three uses by three readings: the scalar coordinate of the product is identically zero, the invertibility criterion is replaced by the relative inverse on the plane of the values, and the norm of an element is replaced by the self-pairing of the value, which is the negative of a non-negative real number and is read on the values alone. The comparison of the three replacements with the criterion of the parent products is *Comparison Between the Four General Products*, and the criterion of the model block is *Norm and Invertibility in the General Plain Algebra*.
+The block has no inverse, but the one-sided multiplication by an element is an operator with a kernel and an image, and its invertibility on a quotient is the substitute the article records.
 
-## The Comparison with the Other Products
+**Proposition (the kernel of the multiplication).** For the block, the one-sided multiplication by a non-central element $\tilde A$,
 
-| product | unit | invertibility criterion | the norm |
-|---|---|---|---|
-| $\tilde P\tilde Q$ | $e_0$, two-sided | $c(\tilde P)\neq0$ | $B$ |
-| $\tilde P^{\natural}\tilde Q$ | $e_0$, left only | one-sided only | $N=c$ |
-| $\tilde P\tilde Q^{*}$ | $e_0$, right only | one-sided only | $H$ |
-| $\tilde P^{\natural}\tilde Q^{*}$ | none on either side | none | $K$ |
-| the block $\mathbf{P}\times\overline{\mathbf{Q}}$ | none on either side | none; the relative inverse instead | none; the pairing of the values instead |
+$$
+L_{\tilde A}\tilde R=\tilde A\diamond\tilde R=\mathbf{A}\times\overline{\mathbf{R}},
+$$
 
-The table is read with the unit table of the four general products of the definitions of the corpus, with the criterion $c(\tilde P)=\sum_\mu P_\mu^{2}$ of *Norm and Invertibility in the General Plain Algebra*, and with the four algebraic norms $B$, $N$, $H$, $K$ of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, each the diagonal of the form of its product; only $N$ is multiplicative, and the block, whose product has no scalar part, carries no algebraic norm at all. The block is the only row in which all three entries fail, and its zero-divisor set is the whole punctured space, as large as a zero-divisor set can be, against the cone of the four general products, so that the table is the form-theoretic form of the extremity of the block: the antisymmetric part of the sesquilinear product has neither unit nor inverse nor norm, and it has the annihilators, the relative inverse and the pairing in their place.
+has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\mathbf{A}$ in the complex bilinear dot.
+
+*Proof.* The kernel is the annihilator computed in *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\mathbf{W}\in\operatorname{Vect}(\mathbb{B}),\ (\mathbf{W},\mathbf{A})=0\}$, and the dimension count gives the bijection.
+
+So the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
+
+## The Invertibility Criterion Is Not Transferred
+
+**Remark (the criterion of the parent is not read here).** The parent general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ has no unit on either side, and its element theory is read without a unit; its algebraic norm is $K$, the diagonal of $\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$, a different form of a different product (*Norm and Invertibility in the General Quaternionic Sesqualgebra*). That form is not the algebraic norm of the block and is not read here. The block loses the parent's structure at once: every nonzero element is a two-sided zero divisor, the multiplication by a fixed element has a nonzero kernel, and the place of the criterion is taken by the relative inverse above.
 
 ## Summary
 
-The block has no unit on either side, so no element of it is invertible and the group of units is empty; the notion of a regular element is unavailable, since it is defined only in a unital product; and the block has no algebraic norm, since the square of an element is never a nonzero central value and the norm of the algebra fails the multiplicativity at the block, the pair of the element $e_1$ with itself being the witness. The unit of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The substitutes are three: the annihilators, which are complex planes of real dimension four for every non-central element and the whole space for the central ones; the relative inverse, in which the left multiplication by a non-central element is a conjugate-linear bijection of a quotient of the space onto the plane of the values orthogonal to its vector part, so that the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on that plane and the solutions form a coset of the annihilator; and the pairing of the values with the Krein form, whose self-pairing is the negative of a non-negative real number. The comparison with the four general products is the table in which the block is the only row with no unit, no invertibility criterion and no norm.
+The antisymmetric quaternionic sesqualgebra $\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}$ has no unit on either side, so no element of it is invertible and the group of units is empty; the unit of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The diagonal of the block is the pure vector $\mathbf{Q}\times\overline{\mathbf{Q}}$, a value and not a norm. What replaces the invertibility is not a norm but the operator reading: the multiplication by a non-central element has a two-dimensional kernel and induces a conjugate-linear bijection of the quotient onto the plane of the solvable values, the relative inverse. The algebraic norm $K$ of the parent quaternionic sesquilinear product is a different form of a different product and is not read here.
 
 ## Summary of Notation
 
-| symbol | meaning |
+| Symbol | Meaning |
 |---|---|
-| $e\star x=x$, $x\star e=x$ | the two identity equations of the unit |
-| $e_0$ | the unit of the plain product, a square-zero element of the block |
-| $A_\diamond(\tilde A)=B_\diamond(\tilde A)=\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ | the common annihilator, of complex dimension two |
-| $L_{\tilde A}\tilde R=\mathbf{A}\times\overline{\mathbf{R}}$ | the left multiplication by $\tilde A$ |
-| $(\mathbf{W},\mathbf{A})=0$ | the image of $L_{\tilde A}$, the plane of the solvable values |
-| $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ | the norm of the algebra, not a norm of the block |
-| $K(\tilde X\diamond\tilde Y,\tilde X\diamond\tilde Y)=-\lvert\tilde X\diamond\tilde Y\rvert^{2}$ | the self-pairing of a value |
+| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\mathbf{P}\times\overline{\mathbf{Q}}$ | the antisymmetric quaternionic sesqualgebra, the operation $\mathrm{AQS}$ |
+| $\tilde P^{\natural}\tilde Q^{*}$ | the parent general quaternionic sesquilinear product |
+| $e_0$ | the unit of the parent algebra, a square-zero element of the block |
+| $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ | the scalar part of the block vanishes identically |
+| $\varphi_{\diamond}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
+| $\tilde Q\diamond\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}}$ | the diagonal, a pure vector |
+| $L_{\tilde A}\tilde R=\mathbf{A}\times\overline{\mathbf{R}}$ | the one-sided multiplication, kernel $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ |
+| no unit, no inverse, no group of units | the absence carried by the block |
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, for the unit, the one-sided inverse, the group of units and the unit table of the four general products.
-- *Norm and Invertibility in the General Plain Algebra*, for the model block, where the norm exists and the invertibility criterion is the non-vanishing of the central square.
-- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, for the norms of the four general products.
-- *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra*, for the annihilators, the relative inverse and the zero-divisor set of the block.
-- *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*, for the pairing of the values, which replaces the norm.
-- *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, for the left multiplications and their adjoints.
-- *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, for the row whose antisymmetric part the block is, and the absence of the unit it inherits.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
+- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Unit and the Inverse*, for the unit, the inverse and the relativity of the definitions to the product.
+- *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the operation, its class, its image and the absence of a unit.
+- *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the unit table of the four general products.
+- *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-sesqualgebra.md`), for the annihilator and the relative inverse of the block.
+- *Norm and Invertibility in the General Quaternionic Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-sesqualgebra.md`), for the algebraic norm $K$ of the parent sesquilinear product, which is not the form of this block.
+- *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the invariant forms of the block.

@@ -142,7 +142,7 @@ so the amplitude has the scalar part $\omega j_0(\omega r)$ and the vector part 
 The energy–momentum biquaternion of the programme is
 
 $$
-\tilde{\Xi} = \tfrac12\,\tilde{\Theta}\circ\tilde{\Theta}^{*},
+\tilde{\Sigma} = \tfrac12\,\tilde{\Theta}\circ\tilde{\Theta}^{*},
 \qquad
 \tilde{\Theta}^{*} = \bar{s} - \bar{\mathbf{V}} \ \ \text{for}\ \ \tilde{\Theta} = s + \mathbf{V};
 $$
@@ -372,10 +372,10 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\tilde{\Theta}_{nm}^{\,j} = (\omega-\nabla)\circ(\psi_{nm}e_j)$ | Spinor (vector potential) |
 | $e_x = \mathbf{x}/r$ | Radial unit vector |
 | $r_{,k} = x_k/r$ | Direction cosines; $\sum_k r_{,k}^2 = 1$ |
-| $\tilde{\Xi} = \tfrac12\tilde{\Theta}\circ\tilde{\Theta}^{*}$ | Energy–momentum biquaternion |
+| $\tilde{\Sigma} = \tfrac12\tilde{\Theta}\circ\tilde{\Theta}^{*}$ | Energy–momentum biquaternion |
 | $\tilde{\Theta}^{*} = \bar s - \bar{\mathbf V}$ | Vector-negating, coefficient-conjugating conjugation |
-| $W = \tfrac12(|s|^2 + \|\mathbf V\|^2)$ | Energy density (scalar part of $\tilde{\Xi}$) |
-| $\mathbf P$ | Poynting analogue (vector part of $\tilde{\Xi}$) |
+| $W = \tfrac12(|s|^2 + \|\mathbf V\|^2)$ | Energy density (scalar part of $\tilde{\Sigma}$) |
+| $\mathbf P$ | Poynting analogue (vector part of $\tilde{\Sigma}$) |
 | $\omega_0$ | Frequency of the "elementary hydrogen atom" |
 | $\gamma_k$ | Just-scale ratios $\{1,\tfrac98,\tfrac54,\tfrac43,\tfrac32,\tfrac53,\tfrac{15}{8},2\}$ |
 | $\omega_{nk} = 2^n\gamma_k\omega$ | Frequency of tone $k$ in octave $n$ |

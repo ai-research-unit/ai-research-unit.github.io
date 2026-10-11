@@ -4,11 +4,11 @@
 
 This article studies the **algebraic norm** of the biquaternion algebra read through the general quaternionic bilinear product, and it settles what invertibility means for that product.
 
-A norm is relative to a product, and the one of this article is defined by the square: the general quaternionic product has the property that the square of every element is a scalar element, and its norm is the scalar that the square produces. The norm is then the same quadratic form as the one of the plain product, and it is multiplicative for $\star$; what is new is not the form but the reading, because the square of the plain product is not central in general and the norm of the plain product is not the coefficient of the plain square.
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the general quaternionic product the square of every element is scalar, so the scalar-part form is read directly off the square and its diagonal is the scalar that the square produces. That scalar is the quadratic form $N(\tilde Q)=\sum_\mu Q_\mu^{2}$, the algebraic norm of this product and not the algebraic norm of the plain product, which is a different form on the same space; and it is multiplicative for $\star$.
 
-The inverse is where the two products separate. The definition of an inverse, stated once in *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, presupposes a product with a **two-sided unit**, and the general quaternionic product has a **left unit** alone. The consequence is stated and not filled: no element of $\mathbb{B}$ is invertible of $\star$, the product has no group of units of its own, and the word has no reading for it. What survives is the pair of one-sided inverse equations relative to the left unit $e_0$, and the article computes them: the two have the same unique solution, $(\tilde P^{-1})^{\natural}$, exactly when the norm is non-zero, and neither has a solution when the norm vanishes. The criterion is therefore the norm, exactly as for the plain product, and the difference between the two products lies in the object and not in the criterion.
+The inverse is where the two products separate. The definition of an inverse, stated once in *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, presupposes a product with a **two-sided unit**, and the general quaternionic product has a **left unit** alone. The consequence is stated and not filled: no element of $\mathbb{B}$ is invertible of $\star$, the product has no group of units of its own, and the word has no reading for it. What survives is the pair of one-sided inverse equations relative to the left unit $e_0$, and the article computes them: the two have the same unique solution, $(\tilde P^{-1})^{\natural}$, exactly when the norm is non-zero, and neither has a solution when the norm vanishes. The criterion is therefore the algebraic norm of this product, and it is not the algebraic norm of the plain product; the two products do not share their algebraic norms.
 
-**Boundaries.** The norm and the invertibility criterion of the plain product are *Norm and Invertibility in the General Plain Algebra*, and the invertibility criterion is used here only through its specialisation $\tilde P$ invertible exactly when $N(\tilde P)\neq0$. The zero divisors are *Zero Divisors of the General Quaternionic Algebra*, where the set $\{N=0\}\setminus\{0\}$ is characterised as a set; the one-sided inverse equations of the four general products side by side, and the tabulation of their solutions, are *The Zero Divisors and the Four General Products*, §*The One-Sided Inverse Equations*, whose table is quoted and not restated. The product and its element theory are *Introduction to the General Quaternionic Algebra of Biquaternions*; the left multiplications and the monoid they form are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*; and the signatures of the norm on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*.
+**Boundaries.** The algebraic norm of the plain product is $B(\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, a different form, and its theory is *Norm and Invertibility in the General Plain Algebra*; the algebraic norm $N$ is the one of this product, and the criterion $N\neq0$ is proved here. The zero divisors are *Zero Divisors of the General Quaternionic Algebra*, where the set $\{N=0\}\setminus\{0\}$ is characterised as a set; the one-sided inverse equations of the four general products side by side, and the tabulation of their solutions, are *The Zero Divisors and the Four General Products*, §*The One-Sided Inverse Equations*, whose table is quoted and not restated. The product and its element theory are *Introduction to the General Quaternionic Algebra of Biquaternions*; the left multiplications and the monoid they form are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*; and the signatures of the norm on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product $\tilde P\tilde Q$, and the product of this article is the general quaternionic bilinear product
 
@@ -18,19 +18,19 @@ $$
 
 with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$ and $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$ the vector part. An element is $\tilde Q=Q_0e_0+\mathbf Q$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts.
 
-## The Norm of the Product
+## The Algebraic Norm of the Product
 
 ### Definition
 
-For a general product, the **norm** is the scalar coefficient of the square when the square is central, and this is the definition the article uses.
+The algebraic norm of a product is the diagonal of its scalar-part form (*The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*).
 
-**Definition.** Let $\star$ be a product on $\mathbb{B}$ whose square lands in the scalar line $\mathbb{C}e_0$. The **norm of $\star$** is the function $N$ defined by
+**Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\varphi(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)$ be its scalar-part form. The **algebraic norm of $\star$** is the diagonal
 
 $$
-\tilde Q\star\tilde Q=N(\tilde Q)\,e_0 .
+\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr).
 $$
 
-Throughout this article the product is the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, whose square is central, and the norm means the norm of that product.
+Throughout this article the product is the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, whose square is central, so that the algebraic norm is the scalar coefficient of the square; it means the algebraic norm of that product.
 
 **Proposition.** For every $\tilde Q\in\mathbb{B}$,
 
@@ -63,7 +63,7 @@ The symmetric half read as an operation, with its centrality, its coefficient on
 
 ### Multiplicativity
 
-**Proposition.** The norm is multiplicative for the product,
+**Proposition.** The algebraic norm is multiplicative for the product,
 
 $$
 N(\tilde P\star\tilde Q)=N(\tilde P)\,N(\tilde Q) ,
@@ -79,7 +79,7 @@ $$
 
 using that $N(\tilde P)$ is central. For the invariance, $N(\tilde P^{\natural})=\tilde P^{\natural}(\tilde P^{\natural})^{\natural}=\tilde P^{\natural}\tilde P=N(\tilde P)$.
 
-The multiplicativity is the same statement as the multiplicativity of the plain norm, and it has the same proofs; it is recorded here because the square of this product is the norm, whereas the square of the plain product is the norm only on the vector part of the element.
+The multiplicativity is the law of the algebraic norm of this product, and it is the reason this product is the one that carries the multiplicative quadratic form of the space; the plain product carries a different algebraic norm, $B$, which is not multiplicative.
 
 **Corollary.** The vanishing set of the norm is stable under the product: if $N(\tilde Q)=0$ then $N(\tilde P\star\tilde Q)=0$ for every $\tilde P$, and the same with the factors exchanged.
 
@@ -134,14 +134,14 @@ The corollary is a statement about the left unit $e_0$ and not an inverse of the
 **Theorem (the criterion for the general quaternionic product).** For a nonzero $\tilde P\in\mathbb{B}$ the following are equivalent:
 
 1. $N(\tilde P)\neq0$;
-2. $\tilde P$ is a unit of the plain product, with $\tilde P^{-1}=\tilde P^{\natural}/N(\tilde P)$;
+2. the plain-product equation $\tilde P\tilde X=e_0$ has a solution, namely $\tilde X=\tilde P^{-1}=\tilde P^{\natural}/N(\tilde P)$;
 3. the two one-sided equations of §*The One-Sided Inverse Equations* have a solution.
 
 They are equivalent to the single negative statement that $\tilde P$ is a zero divisor of the algebra if and only if $N(\tilde P)=0$.
 
-**Proof.** The equivalence of (1) and (2) is the invertibility criterion of the plain product (*Norm and Invertibility in the General Plain Algebra*), whose central square is the same $N$. The equivalence of (1) and (3) is the theorem of the preceding section. For the last clause, $\tilde P\neq0$ with $N(\tilde P)=0$ is a zero divisor of the algebra, and conversely (*Zero Divisors of the General Quaternionic Algebra*).
+**Proof.** The equivalence of (1) and (2) is the statement that the scalar $\tilde P^{\natural}\tilde P=N(\tilde P)e_0$ is nonzero exactly when $\tilde P$ is not a zero divisor of the plain product, which is the zero-divisor criterion of *Zero Divisors of the General Quaternionic Algebra*. The equivalence of (1) and (3) is the theorem of the preceding section. For the last clause, $\tilde P\neq0$ with $N(\tilde P)=0$ is a zero divisor of the algebra, and conversely (*Zero Divisors of the General Quaternionic Algebra*).
 
-The criterion has the same form as the criterion of the plain product because the norm is the same quadratic form; what changes is that the plain product converts it into "invertible" and this product converts it into "soluble on one side".
+The criterion is expressed by the algebraic norm $N$ of this product, because the vanishing set of $N$ is the zero-divisor set; it is not expressible by the algebraic norm of the plain product, which is $B$ and does not decide invertibility (*Norm and Invertibility in the General Plain Algebra*).
 
 ## The Three-Way Classification
 
@@ -153,7 +153,7 @@ The elements of $\mathbb{B}$ fall into three classes according to the value of t
 | $N(\tilde P)=0$ | $\tilde P=0$ | the zero element | the zero element |
 | $N(\tilde P)=0$ | $\tilde P\neq0$ | a zero divisor | a zero divisor, with neither one-sided equation soluble |
 
-The classification is a classification of the elements by their behaviour in the two products, and the middle column is quoted from *Zero Divisors of the General Plain Algebra*, §*The Three-Way Classification*; the third column is this article.
+The classification is a classification of the elements by their behaviour in the two products, and the middle column is quoted from *Zero Divisors of the General Quaternionic Algebra*; the third column is this article.
 
 ## The Group of Units, and Why There Is None
 
@@ -169,9 +169,9 @@ Let $\mathbb{B}^{\times}=\{\tilde P:N(\tilde P)\neq0\}$ be the set of the elemen
 
 This is the precise sense in which the product "has a group of units" only on the operator side. The set $\mathbb{B}^{\times}$ carries the inverse of the plain product, and it is the index set of the invertible operators; the product $\star$ does not make it a group.
 
-## The Norm on the Remarkable Subspaces
+## The Algebraic Norm on the Remarkable Subspaces
 
-The norm is the quadratic form of the algebra, so its restriction to the remarkable subspaces is a form with a signature, and the sign decides which subspaces carry elements of norm zero. The signatures are computed in *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* and are quoted here.
+The algebraic norm is the quadratic form of the algebra, so its restriction to the remarkable subspaces is a form with a signature, and the sign decides which subspaces carry elements of algebraic norm zero. The signatures are computed in *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* and are quoted here.
 
 | remarkable subspace | signature of $N$ | elements of norm zero |
 |---|---|---|
@@ -188,7 +188,7 @@ The norm is the quadratic form of the algebra, so its restriction to the remarka
 
 ## Summary
 
-The general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ has a central square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ with $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, and this scalar is the **norm** of the product: the same quadratic form as the norm of the plain algebra, with polar form the scalar coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ of the symmetrised product and with the multiplicative law $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$.
+The general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ has a central square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ with $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, and this scalar is the **algebraic norm** of the product, with polar form the scalar coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ of the symmetrised product and with the multiplicative law $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$.
 
 The product has the left unit $e_0$ and no right one, hence no two-sided unit, and the definition of the inverse, which requires one, applies to no element: **there is no invertible element and no group of units of the quaternionic product**. What survives is the pair of one-sided equations relative to $e_0$: both have the same unique solution, $(\tilde P^{-1})^{\natural}=\tilde P/N(\tilde P)$, exactly when $N(\tilde P)\neq0$, and neither has a solution when $N(\tilde P)=0$. The criterion is thus the norm, as for the plain product, and the elements of non-vanishing norm form the plain group of units $\mathbb{B}^{\times}$, stable under $\star$ and carrying the invertible left multiplications, without being a group of the product. On the quaternion and the anti-quaternion subspaces the norm is definite and every nonzero element is a unit of the plain product; on the centre, the vector, the Hermitian and the anti-Hermitian subspaces it is indefinite and they carry the zero divisors.
 
@@ -200,8 +200,8 @@ The product has the left unit $e_0$ and no right one, hence no two-sided unit, a
 | $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k$ the quaternion units |
 | $\tilde Q=Q_0e_0+\mathbf Q$ | an element and its scalar–vector split |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product |
-| $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the norm, the scalar of the square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ |
-| $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the polar form of the norm |
+| $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the algebraic norm of the product, the scalar of the square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ |
+| $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the polar form of the algebraic norm |
 | $e_0$ | the left unit of $\star$; there is no right unit, hence no two-sided one |
 | $\tilde P^{-1}=\tilde P^{\natural}/N(\tilde P)$ | the inverse of the plain product |
 | $(\tilde P^{-1})^{\natural}$ | the common solution of the two one-sided equations of $\star$ |
@@ -212,7 +212,8 @@ The product has the left unit $e_0$ and no right one, hence no two-sided unit, a
 
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the norm and the one-sided inverses of a non-associative algebra.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for a quadratic form defined by a product and the polarisation of its multiplicative law.
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm of the algebra, the polarisation, the multiplicativity and the invertibility criterion.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the diagonal of a form and the separation of the four algebraic norms.
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the algebraic norm $B$ of the plain product, which is not the form $N$ of this article.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Unit and the Inverse*, for the definitions of the unit, the two-sided inverse and the one-sided inverse.
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), for the set $\{N=0\}\setminus\{0\}$, its criterion and its annihilators.
 - *The Zero Divisors and the Four General Products* (`articles_maths/the-zero-divisors-and-the-four-general-products.md`), for the one-sided inverse equations of the four general products tabulated side by side.

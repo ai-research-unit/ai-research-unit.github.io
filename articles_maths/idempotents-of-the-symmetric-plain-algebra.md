@@ -10,7 +10,7 @@ The block is not left-alternative, and this is the decisive difference from the 
 
 An idempotent is defined relative to a product, and the definition is stated once for a general product in *Definitions for the Study of the 12 Algebraic Structures*, §*The Idempotent*; throughout this article the product is $\bullet$ and, unqualified, **idempotent** means idempotent of $\bullet$. The idempotents of the algebra are *Idempotents of the General Plain Algebra*; the associated zero divisors are *Zero Divisors of the Symmetric Plain Algebra*; the operator theory is *The Multiplication Operators of the Symmetric Plain Algebra*; and the criterion that separates the block from the algebra is *The Specificities of the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$. The product with the mark is $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$; the norm is $N(\tilde Q)=\sum_\mu Q_\mu^2=\tilde Q\tilde Q^{\natural}$. The left multiplication is $L^{\bullet}_{\tilde X}:\tilde Y\mapsto\tilde X\bullet\tilde Y$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$. The product with the mark is $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$; the central square is $c(\tilde Q)=\sum_\mu Q_\mu^2=\tilde Q\tilde Q^{\natural}$. The left multiplication is $L^{\bullet}_{\tilde X}:\tilde Y\mapsto\tilde X\bullet\tilde Y$.
 
 ## The Definition and the Equation
 
@@ -64,13 +64,13 @@ The parametrisation $\mathbf{u}=\boldsymbol{\xi} i$ is the corpus's form: with $
 
 The pure roots of $+1$ are the pure elements $\mathbf{u}$ with $(\mathbf{u},\mathbf{u})=-1$ (*Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Algebra*, where the family is described in real coordinates as $\mathbf{u}=\mathbf{p}i-\mathbf{p}'$ with $\mathbf{p}^2-\mathbf{p}'^2=1$ and $\mathbf{p}\cdot\mathbf{p}'=0$). The bijection turns the complex quadric $(\mathbf{u},\mathbf{u})=-1$ of the three-dimensional vector subspace into the idempotent family, and it separates the two trivial idempotents, which are not of the form $\tfrac12(e_0+\mathbf{u})$ with $\mathbf{u}$ pure.
 
-**Proposition (the idempotents are isotropic).** Every non-trivial idempotent has vanishing norm,
+**Proposition (the idempotents are isotropic).** Every non-trivial idempotent has vanishing central square,
 
 $$
-N\bigl(\tfrac12(e_0+\mathbf{u})\bigr)=\tfrac14\bigl(1+(\mathbf{u},\mathbf{u})\bigr)=0 ,
+c\bigl(\tfrac12(e_0+\mathbf{u})\bigr)=\tfrac14\bigl(1+(\mathbf{u},\mathbf{u})\bigr)=0 ,
 $$
 
-while the unit has $N(e_0)=1\neq0$ and the origin is the trivial idempotent excluded by the definition of a zero divisor.
+while the unit has $c(e_0)=1\neq0$ and the origin is the trivial idempotent excluded by the definition of a zero divisor.
 
 The non-trivial idempotents are therefore **isotropic** and, by the criterion of *Zero Divisors of the Symmetric Plain Algebra*, they are zero divisors: the annihilator of $\tfrac12(e_0+\mathbf{u})$ is the complex line $\mathbb{C}\,(e_0-\mathbf{u})$. The trivial idempotents $0$ and $e_0$ are not zero divisors, the origin being excluded by the definition and the unit being invertible.
 
@@ -123,7 +123,7 @@ The middle space is the Jordan analogue of the two mixed Peirce spaces of an ass
 
 ## Summary
 
-The idempotents of the block are the idempotents of the plain product, the two squares being equal. They are the origin, the unit, and the four-real-parameter family $\tfrac12(e_0+\mathbf{u})$ with $\mathbf{u}$ pure and $\mathbf{u}^2=e_0$, equivalently $\tfrac12(e_0+\boldsymbol{\xi} i)$ with $\boldsymbol{\xi}$ a pure root of $-1$; the non-trivial idempotents are in bijection with the pure roots of $+1$. Every non-trivial idempotent is isotropic, $N=0$, and is a zero divisor whose annihilator is the line spanned by its natural conjugate, while the two trivial idempotents are not zero divisors. An idempotent and its complement $e_0-\tilde\Pi$ are orthogonal idempotents. The block is not left-alternative, so a non-trivial idempotent does **not** give a projector and there is no associative Peirce calculus, no corner subalgebra and no ideal lattice; only the unit gives the identity operator. What survives is the Jordan theory: the cubic Peirce identity $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ and the decomposition $\mathbb{B}=\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with a two-dimensional middle space.
+The idempotents of the block are the idempotents of the plain product, the two squares being equal. They are the origin, the unit, and the four-real-parameter family $\tfrac12(e_0+\mathbf{u})$ with $\mathbf{u}$ pure and $\mathbf{u}^2=e_0$, equivalently $\tfrac12(e_0+\boldsymbol{\xi} i)$ with $\boldsymbol{\xi}$ a pure root of $-1$; the non-trivial idempotents are in bijection with the pure roots of $+1$. Every non-trivial idempotent is isotropic, $c=0$, and is a zero divisor whose annihilator is the line spanned by its natural conjugate, while the two trivial idempotents are not zero divisors. An idempotent and its complement $e_0-\tilde\Pi$ are orthogonal idempotents. The block is not left-alternative, so a non-trivial idempotent does **not** give a projector and there is no associative Peirce calculus, no corner subalgebra and no ideal lattice; only the unit gives the identity operator. What survives is the Jordan theory: the cubic Peirce identity $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ and the decomposition $\mathbb{B}=\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with a two-dimensional middle space.
 
 ## Summary of Notation
 

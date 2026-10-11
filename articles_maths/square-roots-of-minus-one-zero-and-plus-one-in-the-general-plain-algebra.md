@@ -20,8 +20,6 @@ $$
 
 The quaternion conjugate is denoted $\tilde{P}^{\natural}$, the complex conjugate is denoted $\bar{\tilde{P}}$, and the Hermitian conjugate is denoted $\tilde{P}^{*} = \overline{\tilde{P}^{\natural}}$. Throughout, $\boldsymbol{p}$ and $\boldsymbol{p}'$ denote the real and imaginary parts of the vector part of a root, and two pure real quaternions are said to **anticommute** when $\boldsymbol{p}\boldsymbol{p}' + \boldsymbol{p}'\boldsymbol{p} = 0$.
 
-Throughout, the square $\tilde{P}^2$ is taken in the general plain bilinear product $\tilde{P}\tilde{P}$, the multiplication of the algebra. The other three products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* have different squares, and therefore different roots. In the general quaternionic bilinear product the square is always the central element $N(\tilde{P})e_0$, so that the roots of a central value $\lambda$ are the single equation $N(\tilde{P}) = \lambda$. In the general plain sesquilinear product the scalar part of the square is $\sum_\mu\lvert P_\mu\rvert^2$, which is never negative, so that product has **no** root of $-1$ at all and its only root of $0$ is $\tilde{P} = 0$. In the general quaternionic sesquilinear product the scalar part of the square is the Krein value $\lvert P_0\rvert^2 - \sum_k\lvert P_k\rvert^2$, on which roots of all three values occur, $e_k^2 = -e_0$ for instance. The classification of this article is therefore the classification of the roots for the general plain bilinear product; the four squares and the four idempotent sets are set side by side in *Comparison Between the Four General Products*.
-
 ## The Problem and Its Reduction
 
 The three problems of this article — the equations $\tilde P^2 = -1$, $\tilde P^2 = 0$ and $\tilde P^2 = +1$ — share one reduction, carried out once here and applied three times. In the components $P_k$ of the general biquaternion fixed above, the root splits as
@@ -281,7 +279,7 @@ $$
 (e_1+ie_2)^2 = e_1^2 + i^2e_2^2 + i(e_1e_2+e_2e_1) = -1 + 1 + 0 = 0 .
 $$
 
-The set is the **nilpotent** family of the zero-divisor set of $\mathbb{B}$; the whole zero-divisor set — the elements of vanishing norm, which splits into these nilpotents and the non-pure zero divisors — its two families and the criterion in terms of the scalar part, are the subject of *Zero Divisors of the General Plain Algebra*. It is named here only to complete the list of the three central values, and not developed.
+The set is the **nilpotent** family of the zero-divisor set of $\mathbb{B}$; the whole zero-divisor set — the elements on which the central square $\tilde Q\tilde Q^{\natural}$ vanishes, which splits into these nilpotents and the non-pure zero divisors — its two families and the criterion in terms of the scalar part, are the subject of *Zero Divisors of the General Plain Algebra*. It is named here only to complete the list of the three central values, and not developed.
 
 ## The Roots of Plus One
 

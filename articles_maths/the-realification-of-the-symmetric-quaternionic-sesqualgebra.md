@@ -9,7 +9,7 @@ $$
 $$
 which over $\mathbb{C}$ is the symmetric quaternionic sesquilinear structure $\mathrm{SQS}$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
 
-The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure $J$ and the table of the four effects are *The Realification and the Effect of the Change of Scalars*; This article gives what is specific to the block: its real bilinear reading, the law of its second slot over the centre, the realification of the Krein form it carries with the signature that follows, its real operators, and the three objects that exist only in the real reading.
+The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure $J$ and the table of the four effects are *The Realification and the Effect of the Change of Scalars*. This article gives what is specific to the block: its real bilinear reading, the law of its second slot over the centre, the realification of the Krein form it carries with the signature that follows, its real operators, and the three objects that exist only in the real reading.
 
 ## The Product Read over $\mathbb{R}$
 
@@ -67,7 +67,7 @@ The left and the right multiplications,
 $$
 L^{\star}_{\tilde A}(\tilde X)=\tilde A\star\tilde X,\qquad R^{\star}_{\tilde A}(\tilde X)=\tilde X\star\tilde A,
 $$
-are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*, related by $L^{\star}_{\tilde A}\tilde X=\overline{R^{\star}_{\tilde A}\tilde X}$. Their ranks are $0$ at $\tilde A=0$, $4$ for $\tilde A$ in the vector subspace, $8$ when $A_0\neq0$ and $N(\tilde A)\neq0$, and $6$ when $A_0\neq0$ and $N(\tilde A)=0$; their traces are $0$ for the left family and $-4\operatorname{Re}(A_0)$ for the right; and the image of a left multiplication by a vector element is a four-dimensional real subspace that is not one of the remarkable subspaces. These are the numbers of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*, read in the real basis;
+are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*, related by $L^{\star}_{\tilde A}\tilde X=\overline{R^{\star}_{\tilde A}\tilde X}$. Their ranks are $0$ at $\tilde A=0$, $4$ for $\tilde A$ in the vector subspace, $8$ when $A_0\neq0$ and $N(\tilde A)\neq0$, and $6$ when $A_0\neq0$ and $N(\tilde A)=0$; their traces are $0$ for the left family and $-4\operatorname{Re}(A_0)$ for the right; and the image of a left multiplication by a vector element is a four-dimensional real subspace that is not one of the remarkable subspaces. These are the numbers of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*, read in the real basis.
 
 ## What Is Specific to the Real Reading
 
@@ -83,7 +83,7 @@ on $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$. The trace of a $\mathbb{C}$-linear map
 $$
 \Theta(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{C}}\bigl(L^{\star}_{\tilde P}L^{\star}_{\tilde Q}\bigr)=4P_0\overline{Q_0}+2\sum_{k=1}^{3}P_k\overline{Q_k},
 $$
-a **positive definite** Hermitian form of complex inertia $(4,0)$. This is the trace form of the left regular representation of the block, the analogue of $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})$ for the parent; The block therefore carries two real forms over $\mathbb{R}$, of opposite kinds: the indefinite $\Phi_{\mathbb{R}}$, of signature $(2,6)$, attached to the product, and the definite $\tau$, of signature $(8,0)$, attached to its left multiplications; the definite one is no multiple of the indefinite one.
+a **positive definite** Hermitian form of complex inertia $(4,0)$. This is the trace form of the left regular representation of the block, the analogue of $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})$ for the parent. The block therefore carries two real forms over $\mathbb{R}$, of opposite kinds: the indefinite $\Phi_{\mathbb{R}}$, of signature $(2,6)$, attached to the product, and the definite $\tau$, of signature $(8,0)$, attached to its left multiplications; the definite one is no multiple of the indefinite one.
 
 **The Galois twist.** The four conjugations of the ring — the identity, the natural conjugation ${}^{\natural}$, the coefficientwise conjugation $\kappa$ and the Hermitian star ${}^{*}=\kappa\circ{}^{\natural}$ — are $\mathbb{R}$-linear and are automorphisms of the block,
 $$

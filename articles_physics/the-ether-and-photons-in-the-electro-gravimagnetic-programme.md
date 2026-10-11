@@ -255,7 +255,7 @@ contributions into what it calls light,
 $$
 \Lambda(\mathbf{x},\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{\Phi}(\mathbf{x},\omega)\,e^{-i\omega\tau}\,d\omega ,
 \qquad
-\tilde{\Xi}_{\Lambda} = \Lambda\Lambda^{*} ,
+\tilde{\Sigma}_{\Lambda} = \Lambda\Lambda^{*} ,
 $$
 
 and the free-photon cloud is the same construction with the four plane modes weighted and summed,
@@ -265,7 +265,7 @@ $$
 \left\{\Omega_{j}(\mathbf{x},\omega) * \int_{\|\mathbf{k}\|=\omega} b_{j}(\mathbf{k},\omega)\,
 \tilde{\Phi}_{\mathbf{k}j}(\mathbf{x},\omega)\,dS(\mathbf{k})\right\} d\omega ,
 \qquad
-\tilde{\Xi}_{\mathrm{O}} = \tfrac12\,\mathrm{O}\,\mathrm{O}^{*} ,
+\tilde{\Sigma}_{\mathrm{O}} = \tfrac12\,\mathrm{O}\,\mathrm{O}^{*} ,
 $$
 
 with $b_{j}$ and $\Omega_{j}$ arbitrary regular functions and biquaternions that admit the
@@ -424,8 +424,8 @@ clearest statement of what the programme assumes.
 | $\varphi = e^{\,i(\mathbf{k},\mathbf{x})}$ | Plane Helmholtz potential |
 | $\alpha = -k_{j}\varphi$ | Ether-density amplitude of the $j$-th mode; zero iff $e_{j}\perp\mathbf{k}$ |
 | $\mathbf{e}_{x} = \mathbf{x}/r$ | Radial unit vector |
-| $\Lambda$, $\tilde{\Xi}_{\Lambda}$ | Light and its energy–momentum, a spectral integral over the band |
-| $\mathrm{O}$, $\tilde{\Xi}_{\mathrm{O}}$ | Free-photon cloud and its energy–momentum (the paper writes omicron) |
+| $\Lambda$, $\tilde{\Sigma}_{\Lambda}$ | Light and its energy–momentum, a spectral integral over the band |
+| $\mathrm{O}$, $\tilde{\Sigma}_{\mathrm{O}}$ | Free-photon cloud and its energy–momentum (the paper writes omicron) |
 | $b_{j}$, $\Omega_{j}$ | Arbitrary angular weight and structural biquaternion of the $j$-th free-photon type |
 | $\tilde{\Phi}^{*} = \bar{s} - \bar{\mathbf V}$ | Vector-negating, coefficient-conjugating conjugation |
 

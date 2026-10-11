@@ -235,15 +235,15 @@ S_{\mathrm{rot}}[\tilde R]=\frac{\lambda}{2}\int \mathrm{Sc}\!\left(\dot{\tilde 
 =\frac{\lambda}{2}\int N(\dot{\tilde R})\,dt ,
 $$
 
-the rotational kinetic energy of a body with a single principal moment $\lambda$. Varying $\tilde R$ subject to the constraint $N(\tilde R)=e_0$ means varying within the group; writing $\delta\tilde R=\tilde R\,\delta\tilde\Xi$ with $\delta\tilde\Xi$ a pure real quaternion vanishing at the endpoints (the constraint $\mathrm{Sc}(\tilde R^{\natural}\delta\tilde R)=0$ forces $\delta\tilde\Xi$ to have zero scalar part), the first variation of the action becomes
+the rotational kinetic energy of a body with a single principal moment $\lambda$. Varying $\tilde R$ subject to the constraint $N(\tilde R)=e_0$ means varying within the group; writing $\delta\tilde R=\tilde R\,\delta\tilde\theta$ with $\delta\tilde\theta$ a pure real quaternion vanishing at the endpoints (the constraint $\mathrm{Sc}(\tilde R^{\natural}\delta\tilde R)=0$ forces $\delta\tilde\theta$ to have zero scalar part), the first variation of the action becomes
 
 $$
 \delta S_{\mathrm{rot}}=\lambda\int\mathrm{Sc}\!\left(\dot{\tilde R}\,\overline{\delta\dot{\tilde R}}\right)dt
 =-\lambda\int\mathrm{Sc}\!\left(\ddot{\tilde R}\,\overline{\delta\tilde R}\right)dt
-=\lambda\int\mathrm{Sc}\!\left(\tilde R^{\natural}\,\ddot{\tilde R}\;\delta\tilde\Xi\right)dt ,
+=\lambda\int\mathrm{Sc}\!\left(\tilde R^{\natural}\,\ddot{\tilde R}\;\delta\tilde\theta\right)dt ,
 $$
 
-using $\delta\tilde R=\tilde R\,\delta\tilde\Xi$, $\overline{\delta\tilde R}=-\delta\tilde\Xi\,\tilde R^{\natural}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\tilde\Xi$ gives
+using $\delta\tilde R=\tilde R\,\delta\tilde\theta$, $\overline{\delta\tilde R}=-\delta\tilde\theta\,\tilde R^{\natural}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\tilde\theta$ gives
 
 $$
 \mathrm{Ve}\!\left(\tilde R^{\natural}\,\ddot{\tilde R}\right)=0 ,

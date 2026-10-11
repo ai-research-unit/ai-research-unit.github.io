@@ -49,7 +49,7 @@ $$
 L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde P^{\bullet2}}=L^{\bullet}_{\tilde P^{\bullet2}}L^{\bullet}_{\tilde P}.
 $$
 
-*Proof.*
+*Proof.* The product $\bullet$ is the symmetrisation, $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, of the plain product, which is associative, so the algebra is Jordan-admissible by the theorem *Every associative algebra is Jordan-admissible* of *The Symmetric and Antisymmetric Parts of an Algebra Product*: the symmetrisation is a Jordan product, commutative and satisfying the Jordan identity, and the display is the nested form of the identity. The plain unit $e_0$ is a two-sided unit of the symmetrisation, $e_0\bullet\tilde P=\tfrac12(e_0\tilde P+\tilde Pe_0)=\tilde P$, so the Jordan algebra is unital.
 
 ## The Operator Identity of the Idempotents
 
@@ -119,7 +119,6 @@ $$
 $$
 (\tilde X^{\circ2}\circ\tilde X)\circ\tilde X=0,\qquad
 \tilde X^{\circ2}\circ(\tilde X\circ\tilde X)=e_0\quad(\mathrm{SPS}),
-$$
 (\tilde X^{\circ2}\circ\tilde X)\circ\tilde X=-e_0,\qquad
 \tilde X^{\circ2}\circ(\tilde X\circ\tilde X)=e_0\quad(\mathrm{SQS}),
 $$
@@ -193,3 +192,4 @@ The symmetric plain product is the only one of the twelve structures of the comp
 - *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), the model, for the left alternativity the block fails.
 - *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md`), for the border case, whose product is commutative and whose operators fail the identity.
 - *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve operations and the row table.
+- *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the Jordan-admissibility of an associative algebra and the nested form of the Jordan identity.
