@@ -46,7 +46,7 @@ and the identity $WW^{-1}=(\cos^{2}+\sin^{2})e_0=e_0$ uses only $\rho^{2}=-e_0$:
 
 The roots of $-1$ fall into three families — the central imaginary $\rho=\pm i$, the unit pure real quaternions $\rho=\pm\mu_{\mathbb{R}}$, and the non-trivial roots $\rho=b\mu+d\nu i$ with $\mu\perp\nu$ and $b^{2}-d^{2}=1$ — and two of the algebraic properties of the kernel depend on the family.
 
-**For a pure root** the kernel is unitary, its quaternion conjugate being its inverse,
+**For a pure root** — one whose scalar part vanishes, that is, the real family and the non-trivial family together — the kernel is unitary, its quaternion conjugate being its inverse,
 
 $$
 W(t,\omega)^{\natural}=\cos(2\pi\omega t)\,e_0+\sin(2\pi\omega t)\,\rho=W(t,\omega)^{-1},

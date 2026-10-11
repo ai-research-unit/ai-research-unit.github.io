@@ -28,7 +28,7 @@ $$
 A(\mathbf x) > 0, \quad S(\mathbf x) \in \mathbb{R}, \quad \chi \in \mathbb{B}\tilde\Pi,
 $$
 
-with a real positive amplitude $A$ and a real phase $S$. The exponential is central, so it commutes with the module element $\chi$ and with everything else; the amplitude is real and therefore also central. Under the isomorphism $\Phi$, the state is $A e^{iS/\hbar}\chi$ with a scalar phase multiplying both components equally. This is the WKB form that the framework's conventions make natural: the phase is central, and the module factor is a constant spectator, exactly as in the free and scattering problems.
+with a real positive amplitude $A$ and a real phase $S$. The exponential is central, so it commutes with the module element $\chi$ and with everything else; the amplitude is real and therefore also central. Under the isomorphism $\mathsf{M}_2$, the state is $A e^{iS/\hbar}\chi$ with a scalar phase multiplying both components equally. This is the WKB form that the framework's conventions make natural: the phase is central, and the module factor is a constant spectator, exactly as in the free and scattering problems.
 
 The momentum acts on the phase in a fixed way. Since $\partial_k e^{iS/\hbar} = (i/\hbar)(\partial_k S)e^{iS/\hbar}$,
 

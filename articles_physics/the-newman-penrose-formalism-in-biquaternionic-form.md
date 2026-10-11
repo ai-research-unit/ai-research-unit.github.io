@@ -25,7 +25,7 @@ $$
 of signature $(3,1)$ in the read list's counting — three positive directions and one negative. The matrix realization is the $\mathbb{C}$-algebra isomorphism
 
 $$
-\Phi : \mathbb{B} \longrightarrow M_2(\mathbb{C}), \qquad
+\mathsf{M}_2 : \mathbb{B} \longrightarrow M_2(\mathbb{C}), \qquad
 \mathsf{M}_2(e_0) = I_2, \quad \mathsf{M}_2(e_k) = -i\sigma_k, \quad \mathsf{M}_2(i) = iI_2,
 $$
 
@@ -50,7 +50,7 @@ The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar
 
 ## The Null Tetrad as a Frame of Zero Divisors
 
-The framework's criterion for a zero divisor is a statement about the biquaternion norm. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $N(\tilde Q)=0$, and under the isomorphism $\Phi$ the nonzero zero divisors are exactly the rank-one matrices (*Zero Divisors of the General Plain Algebra*). Restricted to the material sector, $N(\tilde Q) = -q_0^2+q_1^2+q_2^2+q_3^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.
+The framework's criterion for a zero divisor is a statement about the biquaternion norm. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $N(\tilde Q)=0$, and under the isomorphism $\mathsf{M}_2$ the nonzero zero divisors are exactly the rank-one matrices (*Zero Divisors of the General Plain Algebra*). Restricted to the material sector, $N(\tilde Q) = -q_0^2+q_1^2+q_2^2+q_3^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.
 
 Take the tetrad
 

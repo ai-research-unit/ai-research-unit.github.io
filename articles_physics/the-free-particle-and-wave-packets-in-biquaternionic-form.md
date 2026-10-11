@@ -72,7 +72,7 @@ $$
 i\hbar\,\partial_t \psi = h_0 e_0 \psi = h_0 \psi,
 $$
 
-and because $e_0$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\Phi$, the Hamiltonian is $\mathsf{M}_2(\tilde H) = h_0 I_2$. The generator of the free evolution,
+and because $e_0$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(\tilde H) = h_0 I_2$. The generator of the free evolution,
 
 $$
 -i\tilde H/\hbar = \frac{i\hbar}{2m}\nabla^2 e_0 \in \mathbb{M}_-,

@@ -100,6 +100,66 @@ which is exactly the Green function of $-u''+k^2u=f$ with the Dirichlet conditio
 
 **Example (the analytic continuation).** The closed form is an expression in $k=\sqrt{-\lambda}$; as $\lambda$ travels in the plane avoiding $(0,\infty)$, the square root is single-valued, and the formula continues the resolvent analytically. The poles at $\lambda=n^2$ appear as the zeros of $\sinh(k\pi)$ at $k=in$; the resolvent therefore has poles exactly at the eigenvalues, and between them it is analytic, which is the meromorphic structure of the general theorem.
 
+## The Resolvent of a Two-Block Operator
+
+**Definition.** Let $\mathcal H=\mathcal H_1\oplus\mathcal H_2$ be a direct sum and let $L$ be the operator on $\mathcal H$ written in the corresponding blocks,
+
+$$
+L = \begin{pmatrix} A & B \\ C & D \end{pmatrix},
+$$
+
+with $A$ and $D$ acting on the summands and $B$ and $C$ the connecting parts. The **Schur complement** of the pair is the operator on $\mathcal H_1$
+
+$$
+S(\lambda) = (A-\lambda) - B\,(D-\lambda)^{-1}C ,
+$$
+
+defined for $\lambda$ in the resolvent set $\rho(D)$ of the complement; the second term is the **energy-dependent addition** and is written $\Sigma(\lambda)=B(D-\lambda)^{-1}C$ below.
+
+**Theorem (the block resolvent).** Let $\lambda\in\rho(D)$. Then $\lambda\in\rho(L)$ if and only if $S(\lambda)$ is invertible, and in that case the blocks of $R(\lambda)=(L-\lambda)^{-1}$ are
+
+$$
+R_{11}(\lambda) = S(\lambda)^{-1}, \qquad
+R_{12}(\lambda) = -S(\lambda)^{-1}B\,(D-\lambda)^{-1}, \qquad
+R_{21}(\lambda) = -(D-\lambda)^{-1}C\,S(\lambda)^{-1},
+$$
+
+with $R_{22}(\lambda)=(D-\lambda)^{-1}+(D-\lambda)^{-1}C\,S(\lambda)^{-1}B\,(D-\lambda)^{-1}$; the compression of the resolvent to the first summand is therefore
+
+$$
+R_{11}(\lambda) = \Bigl((A-\lambda)-B\,(D-\lambda)^{-1}C\Bigr)^{-1}.
+$$
+
+*Proof.* Solve $(L-\lambda)u=v$ by blocks. The second block equation gives $u_2=(D-\lambda)^{-1}(v_2-Cu_1)$; substituting it into the first, $(A-\lambda)u_1+Bu_2=v_1$, gives
+
+$$
+\Bigl((A-\lambda)-B(D-\lambda)^{-1}C\Bigr)u_1 = v_1-B(D-\lambda)^{-1}v_2 ,
+$$
+
+so the first component of the solution is determined by the inverse of $S(\lambda)$ applied to the right-hand side, and the displayed blocks for $u_1$ and $u_2$ follow by back-substitution. Every entry is bounded on the domain on which $S(\lambda)^{-1}$ and $(D-\lambda)^{-1}$ are defined, and the two are defined together, which gives the equivalence with $\lambda\in\rho(L)$.
+
+**Corollary (the reduced equation and the eigenvalues).** Let $\lambda\in\rho(D)$. Then the eigenvalues of $L$ at which $\lambda\notin\sigma(D)$ are exactly the zeros of the **reduced equation**
+
+$$
+\det\bigl((A-\lambda)-B(D-\lambda)^{-1}C\bigr) = 0 ,
+$$
+
+and they are the eigenvalues of $A$ displaced by the energy-dependent addition $\Sigma(\lambda)=B(D-\lambda)^{-1}C$. When the complement has discrete spectrum the zeros are these ordinary eigenvalues; when the complement has continuous spectrum the addition has a branch cut on it, and the reduced equation is analytic only off the cut.
+
+*Proof.* By the theorem, $R(\lambda)$ fails to exist at a point of $\rho(D)$ exactly where $S(\lambda)$ is not invertible, that is where the reduced determinant vanishes; the eigenvector equation $(L-\lambda)u=0$ at such a point is solved by $u_1$ in the kernel of $S(\lambda)$ and $u_2=-(D-\lambda)^{-1}Cu_1$. The displacement statement is the reading of $S(\lambda)=(A-\lambda)-\Sigma(\lambda)$.
+
+**Corollary (self-adjoint $L$: the cut and the resonance).** Let $L$ be self-adjoint, so that $C=B^{*}$ and the addition is $\Sigma(\lambda)=B(D-\lambda)^{-1}B^{*}$. Then for $\lambda$ off the real axis $S(\lambda)$ is invertible, since $L-\lambda$ is; the addition nevertheless carries the cut of $(D-\lambda)^{-1}$ on the continuous spectrum of $D$, and across an interior point $E$ of that spectrum its boundary values differ by
+
+$$
+\Sigma(E+i0^{+})-\Sigma(E-i0^{+}) = 2\pi i\,B\,\delta(D-E)\,B^{*} .
+$$
+
+The continuation of the reduced equation across the cut therefore acquires a zero off the real axis, a **resonance**, whose imaginary part is $-\tfrac12\Gamma$ with the Golden Rule width $\Gamma=2\pi B\delta(D-E)B^{*}$, and whose real part is the level shift produced by the same addition. The operator form of this statement is the Golden Rule; the pole, its second sheet and its physical reading are developed in *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, cited below.
+
+*Proof.* For self-adjoint $D$ the Sokhotski–Plemelj formula gives $(D-E-i0^{+})^{-1}=P(D-E)^{-1}+i\pi\delta(D-E)$, and the difference of the two boundary values is the displayed jump; the invertibility off the axis is that of $L-\lambda$, and the zero of the continued equation and its identification as the resonance pole follow from the corollary above applied on the second sheet.
+
+**Remark (why the reduction is used).** The block identity is the algebraic content of the projection methods of scattering theory: it is how a degree of freedom that is coupled to a subspace and then removed reappears in that subspace as an energy-dependent addition, real where the removed spectrum is discrete and complex where it is continuous. It is the general form of the elimination used for a non-central block in the physics article cited above, and of the Feshbach and Schur complements in the reading below.
+
 ## The Self-Adjoint Case
 
 **Theorem (reality and discreteness).** Let $L$ be self-adjoint. Then the spectrum is real, and for $\lambda = \mu+i\nu$ with $\nu\neq0$,
@@ -156,7 +216,7 @@ the integral converging in the operator norm and defining the semigroup from the
 
 The resolvent of a closed operator $L$ is $R(\lambda)=(L-\lambda)^{-1}$, defined on the open resolvent set and analytic there, with the identity $R(\lambda)-R(\mu)=(\lambda-\mu)R(\lambda)R(\mu)$, the derivative $R'(\lambda)=R(\lambda)^2$ and the Neumann series about each point of the resolvent set; the complement of the resolvent set is the closed spectrum, and the resolvent is of size $O(|\lambda|^{-1})$ at infinity. For a differential operator with a boundary condition the resolvent is the Green operator of the shifted problem, it is given by $R(\lambda)=G(I-\lambda G)^{-1}=G+\lambda GR(\lambda)$, and its kernel, the resolvent kernel, satisfies the Fredholm resolvent equation.
 
-For a self-adjoint operator the spectrum is real and the resolvent obeys $\|R(\mu+i\nu)\|\le|\nu|^{-1}$; if the resolvent is compact the spectrum is discrete, the eigenvalues are real of finite multiplicity and the resolvent is meromorphic with poles at them, the residue at a simple eigenvalue being the negative of the spectral projection. The eigenvector expansion $R(\lambda)=\sum(\lambda_n-\lambda)^{-1}\langle\cdot,\varphi_n\rangle\varphi_n$ diagonalises the resolvent, the eigenvalues are recovered from the poles, and the estimate on the imaginary axis is the analytic form of self-adjointness that carries the group and semigroup theorems. The interval problem displays the two faces of the resolvent at once: the spectral series with its poles at the eigenvalues, and the closed form in $k=\sqrt{-\lambda}$, whose singularities are the zeros of $\sinh(k\pi)$. The pairing $\langle R(\lambda)\varphi,\varphi\rangle$ is the Stieltjes transform of the spectral measure, and the Sokhotski–Plemelj jump across the real axis recovers the measure; the Dunford integral $e^{tL}=\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}e^{t\lambda}R(\lambda)d\lambda$ recovers the semigroup from the resolvent.
+For a self-adjoint operator the spectrum is real and the resolvent obeys $\|R(\mu+i\nu)\|\le|\nu|^{-1}$; if the resolvent is compact the spectrum is discrete, the eigenvalues are real of finite multiplicity and the resolvent is meromorphic with poles at them, the residue at a simple eigenvalue being the negative of the spectral projection. The eigenvector expansion $R(\lambda)=\sum(\lambda_n-\lambda)^{-1}\langle\cdot,\varphi_n\rangle\varphi_n$ diagonalises the resolvent, the eigenvalues are recovered from the poles, and the estimate on the imaginary axis is the analytic form of self-adjointness that carries the group and semigroup theorems. The interval problem displays the two faces of the resolvent at once: the spectral series with its poles at the eigenvalues, and the closed form in $k=\sqrt{-\lambda}$, whose singularities are the zeros of $\sinh(k\pi)$. The pairing $\langle R(\lambda)\varphi,\varphi\rangle$ is the Stieltjes transform of the spectral measure, and the Sokhotski–Plemelj jump across the real axis recovers the measure; the Dunford integral $e^{tL}=\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}e^{t\lambda}R(\lambda)d\lambda$ recovers the semigroup from the resolvent. For an operator written in two blocks relative to a direct sum, the resolvent is recovered from the Schur complement: the compression to the first summand is $R_{11}(\lambda)=((A-\lambda)-B(D-\lambda)^{-1}C)^{-1}$, so the eliminated block enters the first through the energy-dependent addition $B(D-\lambda)^{-1}C$, real where the eliminated spectrum is discrete and complex where it is continuous; for a self-adjoint operator the addition jumps by $2\pi iB\delta(D-E)B^{*}$ across the continuous spectrum, and the continuation of the reduced equation through the cut carries the resonance pole below the axis, with $-\tfrac12\Gamma$ for its imaginary part and the Golden Rule width $\Gamma=2\pi B\delta(D-E)B^{*}$.
 
 ## Summary of Notation
 
@@ -170,10 +230,15 @@ For a self-adjoint operator the spectrum is real and the resolvent obeys $\|R(\m
 | $\lambda_n$, $\varphi_n$ | Eigenvalues and orthonormal eigenfunctions |
 | $P_0 = \langle\cdot,\varphi_0\rangle\varphi_0$ | Projection onto a simple eigenspace |
 | $\|R(\mu+i\nu)\|\le|\nu|^{-1}$ | Resolvent estimate for self-adjoint $L$ |
+| $A,B,C,D$ | Blocks of $L$ relative to a direct sum $\mathcal H_1\oplus\mathcal H_2$ |
+| $S(\lambda)=(A-\lambda)-B(D-\lambda)^{-1}C$ | Schur complement; $R_{11}(\lambda)=S(\lambda)^{-1}$ |
+| $\Sigma(\lambda)=B(D-\lambda)^{-1}C$ | Energy-dependent addition from the eliminated block |
 
 ## Further Reading
 
 - Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 2nd ed. 1976), for the resolvent identity, the analyticity and the perturbation theory of the spectrum.
+- Issai Schur, "Über Potenzreihen, die im Innern des Einheitskreises beschränkt sind," *Journal für die reine und angewandte Mathematik* **147** (1917) 205–232, for the complement of a block of a matrix and its use in the inversion of a partitioned operator.
+- Herman Feshbach, "Unified theory of nuclear reactions," *Annals of Physics* **5** (1958) 357–390, for the projection of a resolvent onto a subspace and the effective energy-dependent addition it carries.
 - Frigyes Riesz and Béla Sz.-Nagy, *Functional Analysis* (Dover, 1990), for the resolvent of a closed operator and the Fredholm alternative.
 - Nelson Dunford and Jacob T. Schwartz, *Linear Operators I* (Interscience, 1958), for the analytic vector-valued theory and the spectral mapping theorem.
 - Michael S. Birman and Michael Z. Solomyak, *Spectral Theory of Self-Adjoint Operators in Hilbert Space* (Reidel, 1987), for the resolvent of a self-adjoint operator with compact resolvent.

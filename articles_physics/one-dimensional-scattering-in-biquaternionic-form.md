@@ -14,7 +14,7 @@ a multiple of the identity, because a scalar potential couples to the scalar slo
 
 The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the trace pairing. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\Phi$ sending $e_0\mapsto I_2$ and $e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_0\mapsto I_2$ and $e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
 
 ## The One-Dimensional Biquaternion Schrödinger Equation
 
@@ -285,7 +285,7 @@ $$
 T = \left[1 + \frac{V_0^2\sin^2(k_2a)}{4E(E+V_0)}\right]^{-1},
 $$
 
-so the well is transparent whenever $k_2a = n\pi$, that is, at the energies for which the well holds an integer number of half wavelengths. Away from these resonances the transmission is below one, and the reflection is the resonant remainder. The transmission peaks narrow as the well deepens, and the resonance poles in the complex energy plane are the quasibound states. For $E<0$ the same matching condition quantises a finite set of bound states.
+so the well is transparent whenever $k_2a = n\pi$, that is, at the energies for which the well holds an integer number of half wavelengths. Away from these resonances the transmission is below one, and the reflection is the resonant remainder. The transmission peaks narrow as the well deepens, and the resonance poles in the complex energy plane are the quasibound states. The pole itself — its displacement off the real axis by the coupling to the continuum, and the lifetime it fixes — is treated in *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, where this sentence is developed. For $E<0$ the same matching condition quantises a finite set of bound states.
 
 The formulas for the barrier and the well are the same expression continued in the sign of $V_0$; the barrier's evanescent region and the well's resonant region are two interpretations of one matching problem. Their common structure — a single pair of matching conditions at each boundary, and a flux identity — is what makes the transfer matrix of the next section useful.
 
@@ -404,7 +404,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 **What remains open.**
 
-- **The measure and the decay.** Tunnelling is computed here for a stationary state; the time-dependent problem of a packet incident on a barrier involves the analytic continuation of the matching coefficients and the spreading of the packet, and the framework adds nothing to the standard treatment of that problem.
+- **The measure and the decay.** Tunnelling is computed here for a stationary state; the time-dependent problem of a packet incident on a barrier involves the analytic continuation of the matching coefficients and the spreading of the packet, and the framework adds nothing to the standard treatment of that problem. The decay of an unstable state is a different time-dependent problem, and it is treated in *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, not here.
 - **A non-central potential.** A spin-dependent scattering problem would need a coupling outside the central class; the framework contains such couplings (through the vector slots) but the spin subcategories treat them, and no first-principles selection rule for which non-central couplings are admissible is offered here.
 - **Higher-dimensional scattering.** The partial-wave machinery of the Coulomb article is the natural generalisation; the one-dimensional transfer matrix does not generalise to it straightforwardly, and the algebra plays no role in the change.
 - **Empirical content.** As elsewhere, whether the reformulation yields any prediction distinguishing it from scalar Schrödinger scattering is open.

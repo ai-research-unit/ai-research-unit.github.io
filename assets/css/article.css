@@ -151,9 +151,18 @@
   margin-top: 0.15rem;
   margin-bottom: 0.35rem;
 }
+/* A `__Title__` heading renders as `<h1><strong>Title</strong></h1>`. Without
+   the weight reset below the base rule `strong { font-weight: 600 }` wins and
+   the title is lighter than a plain heading at 700 — the same heading class
+   rendering two weights. `inherit` makes the bold wrapper invisible inside a
+   heading, so every heading renders at its own level's weight. */
 .article-body h1 strong,
 .article-body h2 strong,
-.article-body h3 strong {
+.article-body h3 strong,
+.article-body h4 strong,
+.article-body h5 strong,
+.article-body h6 strong {
+  font-weight: inherit;
   font-size: inherit;
   color: inherit;
   font-family: inherit;

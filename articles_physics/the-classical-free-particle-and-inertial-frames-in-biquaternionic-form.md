@@ -246,7 +246,7 @@ It is worth recording what the framework does **not** add here. The free particl
 
 ## Correspondence with the Standard Formulation
 
-The transcription is transparent under the isomorphism $\Phi$ of the algebra with $M_2(\mathbb{C})$, and the following table collects it.
+The transcription is transparent under the isomorphism $\mathsf{M}_2$ of the algebra with $M_2(\mathbb{C})$, and the following table collects it.
 
 | Standard object | Biquaternion object | Location |
 |---|---|---|

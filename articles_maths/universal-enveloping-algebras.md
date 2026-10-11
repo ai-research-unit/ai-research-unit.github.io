@@ -233,4 +233,4 @@ Let $\mathrm{G}$ be a Lie algebra over a commutative ring $R$. The **universal e
 - George M. Bergman, "The diamond lemma for ring theory", *Advances in Mathematics* **29** (1978), 178–218, for the confluent rewriting proof of the Poincaré–Birkhoff–Witt theorem.
 - John Milnor and John C. Moore, "On the structure of Hopf algebras", *Annals of Mathematics* **81** (1965), 211–264, for the theorem that a cocommutative Hopf algebra of characteristic zero is an enveloping algebra, and the characteristic-$p$ version.
 - Jens C. Jantzen, *Representations of Algebraic Groups* (American Mathematical Society, 2nd ed. 2003), for the restricted enveloping algebra, the restricted Poincaré–Birkhoff–Witt theorem and the Steinberg module.
-- Victor G. Kac and Bruce L. Feigin, "On the structure of the Grothendieck ring of the category $\\mathcal{O}$", for the Verma module and its Jordan–Hölder filtration in the semisimple case.
+- Victor G. Kac and Bruce L. Feigin, "On the structure of the Grothendieck ring of the category $\mathcal{O}$", for the Verma module and its Jordan–Hölder filtration in the semisimple case.

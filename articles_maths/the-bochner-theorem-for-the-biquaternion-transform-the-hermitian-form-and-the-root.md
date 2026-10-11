@@ -84,16 +84,16 @@ $$
 
 *Proof.* From $\chi_\omega=\cos\theta\,e_0-\sin\theta\,\tilde\Xi$ and $\chi_\omega^{-1}=\cos\theta\,e_0+\sin\theta\,\tilde\Xi$, with $\theta=2\pi\langle\omega,x\rangle$, one reads $\chi_\omega^{*}=\cos\theta\,e_0-\sin\theta\,\tilde\Xi^{*}$, so the two agree for all $\omega$ and $x$ exactly when $\tilde\Xi^{*}=-\tilde\Xi$. Write $\tilde\Xi=a_0e_0+v$ with $a_0\in\mathbb{C}$ and $v=\sum_{k\geq1}a_ke_k$; the condition $\tilde\Xi^{*}=-\tilde\Xi$ is $\overline{a_0}=-a_0$ and $\overline{a_k}=a_k$, that is $a_0=i\theta$ with $\theta$ real and $v$ a real quaternion. Imposing $\tilde\Xi^{2}=-e_0$ on $\tilde\Xi=i\theta e_0+v$ gives $-\theta^{2}+\lvert v\rvert^{2}=-1$ and $2i\theta v=0$, hence either $\theta=0$, which is the real roots $v$ of unit length, or $v=0$, which is the scalar imaginary $\theta=\pm1$. These are the degenerate roots and no others.
 
-The proposition is the exact biquaternion form of the classical unitarity of the character, and it is **root-dependent**, which the corpus's own statement of unitarity is not: *Biquaternion Continuous Harmonic Analysis*, §*The Fourier Kernel*, records $\chi_\omega^{\natural}=\chi_\omega^{-1}$ for a pure root, which uses the **natural** conjugation, and this holds for the real roots while the scalar imaginary is read there as the exception. **The corpus is not wrong.** $\chi_\omega^{\natural}=\chi_\omega^{-1}$ is the correct statement about the norm's conjugation, and it answers a different question from the one asked here: whether the *norm* of the character is the identity, rather than whether the character is unitary for the conjugation a positive-definite function uses. Read with the Hermitian conjugation, which is that conjugation, the scalar imaginary is not an exception at all — it is one of the two degenerate families for which the character is unitary.
+The proposition is the exact biquaternion form of the classical unitarity of the character, and it is **root-dependent**, which the corpus's own statement of unitarity is not: *Biquaternion Continuous Harmonic Analysis*, §*The Fourier Kernel*, records $\chi_\omega^{\natural}=\chi_\omega^{-1}$ for a pure root, which uses the **natural** conjugation, and this holds for the pure roots — the real and the genuinely complex — while the scalar imaginary is read there as the exception. **The corpus is not wrong.** $\chi_\omega^{\natural}=\chi_\omega^{-1}$ is the correct statement about the norm's conjugation, and it answers a different question from the one asked here: whether the *norm* of the character is the identity, rather than whether the character is unitary for the conjugation a positive-definite function uses. Read with the Hermitian conjugation, which is that conjugation, the scalar imaginary is not an exception at all — it is one of the two degenerate families for which the character is unitary.
 
 ### The Natural Conjugation Is a Different Statement
 
-The biquaternion norm of the kernel is the natural square, $N(\chi_\omega)=\chi_\omega\chi_\omega^{\natural}=(\cos^{2}\theta+\sin^{2}\theta)e_0=e_0$ for a real root, and it is not the identity for the scalar imaginary or for the genuinely complex roots. The two unitarity statements must therefore be kept apart:
+The biquaternion norm of the kernel is the natural square, $N(\chi_\omega)=\chi_\omega\chi_\omega^{\natural}=(\cos^{2}\theta+\sin^{2}\theta)e_0=e_0$ for every pure root — the real and the genuinely complex — and it is not the identity only for the scalar imaginary. The two unitarity statements must therefore be kept apart:
 
 | Reading | Condition | Holds for |
 |---|---|---|
 | Hermitian, $\chi_\omega^{*}=\chi_\omega^{-1}$ | $\tilde\Xi^{*}=-\tilde\Xi$ | scalar imaginary and real (the degenerate roots) |
-| natural, $\chi_\omega^{\natural}=\chi_\omega^{-1}$ | $\tilde\Xi^{\natural}=-\tilde\Xi$ | real only (the scalar imaginary excluded) |
+| natural, $\chi_\omega^{\natural}=\chi_\omega^{-1}$ | $\tilde\Xi^{\natural}=-\tilde\Xi$ | pure roots: real and genuinely complex (the scalar imaginary excluded) |
 
 The Hermitian row is the one a positive-definite function uses, because a positive-definite function is sesquilinear; the natural row is the one the norm identity of the continuous article uses, and it belongs to the metric.
 
@@ -183,7 +183,7 @@ Bochner's theorem for the biquaternion transform is a theorem about the general 
 | $\chi_\omega=\cos\theta\,e_0-\sin\theta\,\tilde\Xi$, $\theta=2\pi\langle\omega,x\rangle$ | the biquaternion kernel of a root |
 | $G(\omega)=\int\chi_\omega\,d\mu$ | the transform of the measure; $G(0)=\mu(\mathbb{R}^n)e_0$ |
 | $\chi_\omega^{*}=\chi_\omega^{-1}\Leftrightarrow\tilde\Xi^{*}=-\tilde\Xi$ | Hermitian unitarity; the degenerate roots |
-| $\chi_\omega^{\natural}=\chi_\omega^{-1}\Leftrightarrow\tilde\Xi^{\natural}=-\tilde\Xi$ | natural unitarity; the real roots only |
+| $\chi_\omega^{\natural}=\chi_\omega^{-1}\Leftrightarrow\tilde\Xi^{\natural}=-\tilde\Xi$ | natural unitarity; the pure roots (real and genuinely complex) |
 | $Q=\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$ | the sesquilinear quadratic form, conjugation in the second slot |
 | $Q=\int ZZ^{*}d\mu$, $Z=\sum_kA_k\chi_{\omega_k}$ | the factorisation; positive definite for the degenerate roots |
 | $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$, signature $(8,0)$ | the pairing the theorem needs; the diagonal of the Euclidean form |
