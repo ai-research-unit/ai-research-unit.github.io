@@ -77,7 +77,7 @@ $$</p>
 <p><strong>Proof.</strong> A pure vector $\mathbf Q=\sum_{k=1}^3Q_ke_k$ has $\mathbf Q^2=-(\sum_kQ_k^2)e_0$, so $\mathbf Q^2=0$ exactly when $\sum_kQ_k^2=0$; the element $\tilde Q=e_1+ie_2$ satisfies this, and $\lambda\tilde Q$ does too for every $\lambda\in\mathbb{C}$. The norm of $\lambda\tilde Q$ is $|\lambda|\sqrt2$, unbounded, while its square is zero.</p>
 <p>The failure is not a defect of the Euclidean norm alone. The biquaternion norm $N$ is multiplicative but complex-valued and vanishes on the zero divisors, and its modulus $r=\sqrt{|N|}$ vanishes on the same set; neither can serve as a size. The unique real multiplicative semi-norm of the algebra is $r$ itself, and a semi-norm that vanishes off the origin cannot decide escape (<em>Norm and Invertibility in the General Plain Algebra</em>). <strong>The escape-time algorithm exists in $\mathbb{B}$ only off the zero-divisor cone.</strong></p>
 <p>What survives is a conditional bound, phrased through the singular values of the matrix model.</p>
-<p><strong>Proposition (conditional escape).</strong> Let $\tilde Q\in\mathbb{B}$, $M=\Phi(\tilde Q)$, let $\sigma_1\ge\sigma_2\ge0$ be the two singular values of $M$, and suppose $\sigma_2\ge\delta\sigma_1$ for some $\delta>0$. Then</p>
+<p><strong>Proposition (conditional escape).</strong> Let $\tilde Q\in\mathbb{B}$, $M=\mathsf{M}_2(\tilde Q)$, let $\sigma_1\ge\sigma_2\ge0$ be the two singular values of $M$, and suppose $\sigma_2\ge\delta\sigma_1$ for some $\delta>0$. Then</p>
 <p>$$
 \|\tilde Q^2\|_E\ge\delta^2\|\tilde Q\|_E^2 .
 $$</p>
@@ -90,7 +90,7 @@ $$</p>
 $$
 \sigma_2(M^2)=\frac{|\det M|^2}{\sigma_1(M^2)}\ge\frac{|\det M|^2}{\sigma_1(M)^2}=\sigma_2(M)^2 .
 $$
-Also $\|M\|_F^2\le2\sigma_1(M)^2$ gives $\sigma_1(M)\ge\|M\|_F/\sqrt2=\|\tilde Q\|_E$, using $\|\Phi(\tilde Q)\|_F=\sqrt2\|\tilde Q\|_E$. Hence</p>
+Also $\|M\|_F^2\le2\sigma_1(M)^2$ gives $\sigma_1(M)\ge\|M\|_F/\sqrt2=\|\tilde Q\|_E$, using $\|\mathsf{M}_2(\tilde Q)\|_F=\sqrt2\|\tilde Q\|_E$. Hence</p>
 <p>$$
 \|M^2\|_F\ge\sqrt2\,\sigma_2(M^2)\ge\sqrt2\,\sigma_2(M)^2\ge\sqrt2\,\delta^2\sigma_1(M)^2\ge\sqrt2\,\delta^2\|\tilde Q\|_E^2 ,
 $$</p>
@@ -103,7 +103,7 @@ $$</p>
 $$</p>
 <p>the complex Mandelbrot set.</p>
 <p><strong>Proof.</strong> $F_{\tilde C}(0)=\tilde C=Ce_0$, and $F_{\tilde C}(Ae_0)=A^2e_0+Ce_0=(A^2+C)e_0$ because $e_0$ is the identity and the parameter is central; induction gives the claim. Boundedness in $\mathbb{B}$ is the boundedness of the complex sequence, which is the definition of the Mandelbrot set.</p>
-<p><strong>Remark (the whole central slice is classical).</strong> The proposition is the orbit of the single point $0$; more is true for the filled Julia set, by the eigenvalue reduction of <em>The Biquaternion Quadratic Map and Its Julia Sets</em>: for a central parameter $\tilde C=Ce_0$ and a diagonalisable $\Phi(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$, the point $\tilde Q$ lies in $\mathcal K_{\tilde C}$ exactly when both $\lambda_j$ lie in the complex filled Julia set $K_C$. <strong>The central slice of the biquaternion theory is the complex theory, read on the two eigenvalues.</strong></p>
+<p><strong>Remark (the whole central slice is classical).</strong> The proposition is the orbit of the single point $0$; more is true for the filled Julia set, by the eigenvalue reduction of <em>The Biquaternion Quadratic Map and Its Julia Sets</em>: for a central parameter $\tilde C=Ce_0$ and a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$, the point $\tilde Q$ lies in $\mathcal K_{\tilde C}$ exactly when both $\lambda_j$ lie in the complex filled Julia set $K_C$. <strong>The central slice of the biquaternion theory is the complex theory, read on the two eigenvalues.</strong></p>
 <p><strong>Corollary (the centre is a slice of $\mathcal C$).</strong> The intersection of $\mathcal C$ with the centre $\mathbb{C}_{\mathbb{B}}$ is the embedded copy of the Mandelbrot set $\mathcal M\subset\mathbb{C}$, under $C\mapsto Ce_0$.</p>
 <h2 id="the-commutative-plane-and-the-product-locus">The Commutative Plane and the Product Locus</h2>
 <p>The reduction is not special to the centre: every two-dimensional commutative subalgebra cut out by an idempotent gives the same phenomenon, with two independent complex parameters.</p>
@@ -167,12 +167,12 @@ $$</p>
 <td>the complex Mandelbrot set and filled Julia set</td>
 </tr>
 <tr>
-<td>$\Phi$</td>
+<td>$\mathsf{M}_2$</td>
 <td>the matrix realization</td>
 </tr>
 <tr>
 <td>$\sigma_1\ge\sigma_2$</td>
-<td>the singular values of $\Phi(\tilde Q)$; $\delta=\sigma_2/\sigma_1$</td>
+<td>the singular values of $\mathsf{M}_2(\tilde Q)$; $\delta=\sigma_2/\sigma_1$</td>
 </tr>
 <tr>
 <td>$R_\delta$</td>

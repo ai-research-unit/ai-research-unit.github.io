@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="the-jordanwigner-transformation-in-biquaternionic-form"><strong>The Jordan–Wigner Transformation in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A spin-$\tfrac12$ chain and a chain of fermionic modes are described by different operators with different commutation rules, and yet in one dimension the two descriptions carry the same state space and the same algebra. The map between them is the Jordan–Wigner transformation. In the biquaternion framework it has a sharp reading: the transformation is the <strong>extension over sites of a one-site identity that is already inside the algebra</strong>, and the object that extends it — the Jordan–Wigner string — is the product of the one-site fermionic parities, the element $(-1)^F=ie_3$ that the parents isolate in $\mathbb{M}_+$.</p>
+<p>A spin-$\tfrac12$ chain and a chain of fermionic modes are described by different operators with different commutation rules, and yet in one dimension the two descriptions carry the same state space and the same algebra. The map between them is the Jordan–Wigner transformation. In the biquaternion framework it has a sharp interpretation: the transformation is the <strong>extension over sites of a one-site identity that is already inside the algebra</strong>, and the object that extends it — the Jordan–Wigner string — is the product of the one-site fermionic parities, the element $(-1)^F=ie_3$ that the parents isolate in $\mathbb{M}_+$.</p>
 <p>This article establishes:</p>
 <ul>
 <li><strong>The one-site case is the algebra's own identity.</strong> For one mode the parents' ladder $\tilde a=\tfrac12(ie_1-e_2)$, $\tilde a^\dagger=\tfrac12(ie_1+e_2)$ satisfies $\tilde a^2=0$ and $\{\tilde a,\tilde a^\dagger\}=e_0$ inside $\mathbb{B}$, so a one-site spin ladder <em>is</em> a fermionic mode with no string attached. The spin generators are the bilinears $\tilde S_k=\tfrac{\hbar}{2}ie_k$; the fermionic mode is the square of those bilinears' structure. There is nothing to transform at one site.</li>
@@ -60,8 +60,8 @@
 <li><strong>The map and its failure to be a graded isomorphism.</strong> The Jordan–Wigner map is a unital algebra isomorphism between the spin algebra and the fermionic mode algebra — both are the full matrix algebra of the $2^N$-dimensional space, and this is the Clifford identity $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$. It does <strong>not</strong> preserve the fermionic grading: spins are even (bilinear) in fermions, fermions are odd. The transformation is the choice of a square root of the spin algebra, and the string is its branch cut.</li>
 <li><strong>The consequences.</strong> The hopping identity, the parity identity, the inverse map, the free-fermion solution of the XY chain, and the boundary term that distinguishes the two fermion-parity sectors.</li>
 </ul>
-<p>The standard material is transcribed with explicit signs; the biquaternion content is the one-site identification and the parity reading of the string.</p>
-<p><strong>Conventions.</strong> From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, $e_0=1$, $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, central $i$ with $i^{*}=-i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the one-mode ladder $\tilde a=\tfrac12(ie_1-e_2)$, $\tilde a^\dagger=\tfrac12(ie_1+e_2)$, $(-1)^F=ie_3$; the spin generators $\tilde S_k=\tfrac{\hbar}{2}ie_k$; the dictionary identification $\Phi(ie_k)=\gamma^0\gamma^k$ of the algebra into the even Clifford subalgebra; the spin operators act on the ideals as the Pauli matrices (the parent's $\Phi(ie_k)$ restricted to the invariant subspace, $\tfrac{\hbar}{2}ie_k\mapsto\tfrac{\hbar}{2}\sigma_k$). <strong>Jordan–Wigner convention.</strong> For $N$ sites with Pauli operators $\sigma^x_j,\sigma^y_j,\sigma^z_j$ in the ordered product $\bigotimes_{j=1}^{N}$, set</p>
+<p>The standard material is transcribed with explicit signs; the biquaternion content is the one-site identification and the parity interpretation of the string.</p>
+<p><strong>Conventions.</strong> From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, $e_0=1$, $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, central $i$ with $i^{*}=-i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the one-mode ladder $\tilde a=\tfrac12(ie_1-e_2)$, $\tilde a^\dagger=\tfrac12(ie_1+e_2)$, $(-1)^F=ie_3$; the spin generators $\tilde S_k=\tfrac{\hbar}{2}ie_k$; the dictionary identification $\mathsf{M}_2(ie_k)=\gamma^0\gamma^k$ of the algebra into the even Clifford subalgebra; the spin operators act on the ideals as the Pauli matrices (the parent's $\mathsf{M}_2(ie_k)$ restricted to the invariant subspace, $\tfrac{\hbar}{2}ie_k\mapsto\tfrac{\hbar}{2}\sigma_k$). <strong>Jordan–Wigner convention.</strong> For $N$ sites with Pauli operators $\sigma^x_j,\sigma^y_j,\sigma^z_j$ in the ordered product $\bigotimes_{j=1}^{N}$, set</p>
 <p>$$
 \hat c_j=\Big(\prod_{k<j}\sigma^z_k\Big)\sigma^+_j ,
 \qquad
@@ -102,18 +102,18 @@ $$</p>
 \qquad
 \tilde a^\dagger=\frac{\tilde S_-}{\hbar}\Big|_{\text{one mode}} .
 $$</p>
-<p><strong>This is the one-site Jordan–Wigner transformation</strong>, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the <em>other</em> sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{\hat n_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two readings of the same biquaternion, the reading changing only when a <em>second</em> site is present.</p>
-<p><strong>A note on the identification.</strong> The parent article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> and the dictionary companion fix the module-level statement $\Phi(ie_k)=\gamma^0\gamma^k$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> gives the two-dimensional representative $\Phi(e_k)=-i\sigma_k$, hence $\Phi(ie_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:</p>
+<p><strong>This is the one-site Jordan–Wigner transformation</strong>, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the <em>other</em> sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{\hat n_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two interpretations of the same biquaternion, the interpretation changing only when a <em>second</em> site is present.</p>
+<p><strong>A note on the identification.</strong> The parent article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> and the dictionary companion fix the module-level statement $\mathsf{M}_2(ie_k)=\gamma^0\gamma^k$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> gives the two-dimensional representative $\mathsf{M}_2(e_k)=-i\sigma_k$, hence $\mathsf{M}_2(ie_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:</p>
 <p>$$
-\Phi(\tilde a)=\sigma^+ ,
+\mathsf{M}_2(\tilde a)=\sigma^+ ,
 \qquad
-\Phi(\tilde a^\dagger)=\sigma^- ,
+\mathsf{M}_2(\tilde a^\dagger)=\sigma^- ,
 \qquad
-\Phi(\tilde a^\dagger)=\Phi(\tilde a)^\dagger ,
+\mathsf{M}_2(\tilde a^\dagger)=\mathsf{M}_2(\tilde a)^\dagger ,
 \qquad
-\Phi([\tilde a,\tilde a^\dagger])=\Phi(ie_3)=\sigma^z ,
+\Phi([\tilde a,\tilde a^\dagger])=\mathsf{M}_2(ie_3)=\sigma^z ,
 $$</p>
-<p>all four checked by exact matrix multiplication: $\Phi(e_1e_2)=\Phi(e_3)$, $\{\Phi(\tilde a),\Phi(\tilde a^\dagger)\}=I$, $[\Phi(\tilde a),\Phi(\tilde a^\dagger)]=\sigma^z$. The one-site identification above is the $N=1$ case of the chain map, and the chain map is the subject of the rest of the article.</p>
+<p>all four checked by exact matrix multiplication: $\mathsf{M}_2(e_1e_2)=\mathsf{M}_2(e_3)$, $\{\mathsf{M}_2(\tilde a),\mathsf{M}_2(\tilde a^\dagger)\}=I$, $[\mathsf{M}_2(\tilde a),\mathsf{M}_2(\tilde a^\dagger)]=\sigma^z$. The one-site identification above is the $N=1$ case of the chain map, and the chain map is the subject of the rest of the article.</p>
 <h2 id="the-many-site-map">The Many-Site Map</h2>
 <p>Let the chain carry $N$ spins, with Hilbert space $\mathcal{H}=\bigotimes_{j=1}^N\mathbb{C}^2$ and Pauli operators $\sigma^\alpha_j$ acting on site $j$. Define the fermionic modes by the Jordan–Wigner prescription in the convention above,</p>
 <p>$$
@@ -193,12 +193,12 @@ $$</p>
 \qquad
 \Big(\prod_{k<j}\sigma^z_k\Big)\Big(\prod_{k<i}\sigma^z_k\Big)^{-1}=\prod_{k=i}^{j-1}\sigma^z_k ,
 $$</p>
-<p>so that moving one operator past another costs exactly the parity of the sites passed. This is the statement that the string is a one-cocycle of the site ordering: it is a phase that must be carried whenever two sites are exchanged, and it is the reason the transformation is nonlocal. The biquaternion reading is the same as before — the phase is the product of the one-site parities $(-1)^{\hat F_k}$ along the path, and the cocycle condition is the statement that the products multiply consistently.</p>
+<p>so that moving one operator past another costs exactly the parity of the sites passed. This is the statement that the string is a one-cocycle of the site ordering: it is a phase that must be carried whenever two sites are exchanged, and it is the reason the transformation is nonlocal. The biquaternion interpretation is the same as before — the phase is the product of the one-site parities $(-1)^{\hat F_k}$ along the path, and the cocycle condition is the statement that the products multiply consistently.</p>
 <p><strong>The boundary term.</strong> The string makes the map nonlocal, and the nonlocality has a physical place: it sits at the chain's ends. The fermion-parity operator of the whole chain,</p>
 <p>$$
 (-1)^{\hat F}=\prod_j\sigma^z_j ,
 $$</p>
-<p>is the product of the on-site parities and commutes with $H_{XY}$; the two sectors it labels carry different boundary conditions for the fermions. In the ordered phase of the transverse-field Ising chain the two sectors are nearly degenerate, and the degeneracy is the standard signatures of the $\mathbb{Z}_2$ symmetry in a spin language and of the two boundary-condition sectors in a fermion language — a one-site-versus-whole-chain statement that the algebra's parity reading makes natural.</p>
+<p>is the product of the on-site parities and commutes with $H_{XY}$; the two sectors it labels carry different boundary conditions for the fermions. In the ordered phase of the transverse-field Ising chain the two sectors are nearly degenerate, and the degeneracy is the standard signatures of the $\mathbb{Z}_2$ symmetry in a spin language and of the two boundary-condition sectors in a fermion language — a one-site-versus-whole-chain statement that the algebra's parity interpretation makes natural.</p>
 <p><strong>The hidden symmetry.</strong> The map also shows why a symmetry visible in one language may be invisible in the other: the parity $(-1)^{\hat F}$ is the on-site $\prod\sigma^z_j$ in the spin language and a constant on the fermionic vacuum, while the hopping is a simple bilinear in one and a two-site spin operator in the other. The transformation does not create or destroy symmetry; it relabels which generators are simple.</p>
 <h2 id="what-is-standard-and-what-the-algebras">What Is Standard and What the Algebra's</h2>
 <p><strong>Standard, transcribed.</strong> The Jordan–Wigner transformation itself, the string, the anticommutators, the number and parity identities, the hopping identity, the inverse map, the free-fermion solution of the XY and transverse-field Ising chains, and the boundary-condition sectors. This is textbook material in the stated convention, and every sign was recomputed on chains up to $N=4$.</p>
@@ -217,7 +217,7 @@ $$</p>
 <h2 id="companion-articles">Companion Articles</h2>
 <ul>
 <li>Companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, for the one-mode ladder identified here with the one-site spin, and the parity $(-1)^F=ie_3$.</li>
-<li>Companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the identification $\Phi(ie_k)=\gamma^0\gamma^k$ and the module action that fixes the one-site map.</li>
+<li>Companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the identification $\mathsf{M}_2(ie_k)=\gamma^0\gamma^k$ and the module action that fixes the one-site map.</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The Jordan–Wigner transformation in biquaternion form is the statement that the transformation has a one-site fixed point inside the algebra and is extended over sites by the product of the algebra's parities. At one site the parents' ladder $\tilde a=\tfrac12(ie_1-e_2)$ satisfies $\tilde a^2=0$, $\{\tilde a,\tilde a^\dagger\}=e_0$, $[\tilde a,\tilde a^\dagger]=ie_3$, so a one-site spin ladder <em>is</em> a fermionic mode and the string is the empty product.</p>
@@ -295,7 +295,7 @@ $$</p>
 <td>Whole-chain parity; boundary-condition sectors</td>
 </tr>
 <tr>
-<td>$\Phi(ie_k)=\gamma^0\gamma^k$</td>
+<td>$\mathsf{M}_2(ie_k)=\gamma^0\gamma^k$</td>
 <td>Dictionary identification of the algebra into $\mathrm{Cl}^+_{1,3}$</td>
 </tr>
 </tbody>

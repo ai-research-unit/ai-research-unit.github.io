@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-minus-one-zero-and-plus-one-in-the-general-quaternionic-algebra"><strong>Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The square in the general quaternionic algebra of <em>Introduction to the General Quaternionic Algebra of Quaternions</em> is not the plain square: it is the square read in the product of the block,</p>
+<p>$$
+\tilde\xi \star \tilde\xi = \tilde\xi^{\natural}\tilde\xi = N(\tilde\xi)e_0 ,
+$$</p>
+<p>where $N$ is the quaternionic bilinear algebraic norm (<em>Norm and Invertibility in the General Quaternionic Algebra</em>). This article solves the equation</p>
+<p>$$
+\tilde\xi \star \tilde\xi = \lambda e_0 , \qquad \lambda \in \{-1, 0, +1\} ,
+$$</p>
+<p>for the three distinguished central values, and compares the three root sets with those of the plain product on the same space. The general problem, with an arbitrary element on the right, is <em>Square Roots of a General Element in the General Quaternionic Algebra</em>, below this article in this category; the three values here are the specialisation of it, and they are read first because they are the ones the chapter compares elsewhere.</p>
+<p>The whole article rests on one observation, and it is the observation that makes the block differ from the plain one: for the quaternionic product the square of an element is always the central element $N(\tilde\xi)e_0$. The square map is therefore not a map of $\mathbb{H}$ into itself but a map of $\mathbb{H}$ onto the scalar line, and the equation above is nothing but the norm equation $N(\tilde\xi) = \lambda$.</p>
+<h2 id="the-reduction-of-the-equation">The Reduction of the Equation</h2>
+<p><strong>Definition.</strong> A <strong>root of the central value</strong> $\lambda$ for the quaternionic product is an element $\tilde\xi$ with $\tilde\xi \star \tilde\xi = \lambda e_0$. The root glyph is the lower-case xi $\tilde\xi$, the one of the quaternion layer.</p>
+<p><strong>Theorem (the reduction).</strong> For $\tilde\xi \in \mathbb{H}$ the square in the quaternionic product is the central element</p>
+<p>$$
+\tilde\xi \star \tilde\xi = N(\tilde\xi)e_0 = \bigl(\xi_0^2 + \xi_1^2 + \xi_2^2 + \xi_3^2\bigr)e_0 .
+$$</p>
+<p>Consequently $\tilde\xi$ is a root of $\lambda$ exactly when $N(\tilde\xi) = \lambda$, and the three root sets are the three level sets of the norm:</p>
+<p>$$
+\{\tilde\xi : \tilde\xi \star \tilde\xi = \lambda e_0\} = \{\tilde\xi : N(\tilde\xi) = \lambda\} .
+$$</p>
+<p><em>Proof.</em> The square is $\tilde\xi^{\natural}\tilde\xi$ and the conjugate commutes with the element inside this product, so the value is the norm, a real scalar; the scalar equation $N(\tilde\xi)e_0 = \lambda e_0$ is the coordinate equation $N(\tilde\xi) = \lambda$.</p>
+<p><strong>Remark.</strong> The equation is <em>not</em> equivalent to a pair of a scalar and a vector equation here, because its left-hand side has no vector part at all. This is the first place where the block separates from the plain algebra, where the same equation splits into the scalar equation $\xi_0^2 - N(\boldsymbol\xi) = \lambda$ and the vector equation $2\xi_0\boldsymbol\xi = 0$ (<em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>).</p>
+<h2 id="the-three-root-sets">The Three Root Sets</h2>
+<p><strong>Theorem (the three values).</strong> For the quaternionic product on $\mathbb{H}$:</p>
+<ol>
+<li>the roots of $-1$ are <strong>absent</strong>: no $\tilde\xi$ satisfies $N(\tilde\xi) = -1$;</li>
+<li>the root of $0$ is <strong>unique</strong>: $\tilde\xi \star \tilde\xi = 0$ exactly for $\tilde\xi = 0$;</li>
+<li>the roots of $+1$ are the elements of the norm-one level set, $\{\tilde\xi : N(\tilde\xi) = 1\}$, a set of real dimension three in $\mathbb{H} \cong \mathbb{R}^4$.</li>
+</ol>
+<p><em>Proof.</em> Over $\mathbb{R}$ the norm is positive definite (<em>Norm and Invertibility in the General Quaternionic Algebra</em>): it takes its values in the non-negative reals, it vanishes only at $0$, and it takes the value $1$ on a level set of a non-degenerate quadratic form in four variables, which has real dimension three.</p>
+<p><strong>Corollary (the criterion and the count).</strong> The equation $\tilde\xi \star \tilde\xi = \lambda e_0$ has a root exactly when $\lambda \geq 0$. For $\lambda > 0$ the root set is the level set $N = \lambda$, of real dimension three; for $\lambda = 0$ it is the single element $0$; for $\lambda < 0$ it is empty.</p>
+<p><em>Proof.</em> The norm is non-negative and its sublevel sets are the values it takes; the level set of a definite quadratic form at a positive value is three-dimensional, and at zero it is the origin alone.</p>
+<p><strong>Remark.</strong> The count is the extreme case of the general theory: for the quaternionic product on a real division algebra the square map collapses a four-dimensional space onto the half-line, so a positive value has a three-dimensional root set, the value zero has one root, and a negative value has none. Nothing is left of the two-element root set that the commutative degree-two case would suggest.</p>
+<h2 id="comparison-with-the-plain-product">Comparison with the Plain Product</h2>
+<p>The same three values, solved in the plain product $\tilde\xi^2$ of the same space, give the classical answers (<em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>value $\lambda$</th>
+<th>quaternionic $\tilde\xi \star \tilde\xi$</th>
+<th>plain $\tilde\xi^2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$-1$</td>
+<td>no root</td>
+<td>the pure elements with $N = 1$, of real dimension two</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$\{0\}$ alone</td>
+<td>$\{0\}$ alone</td>
+</tr>
+<tr>
+<td>$+1$</td>
+<td>the level set $N = 1$, of real dimension three</td>
+<td>$\{\pm e_0\}$ alone</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> The two root sets of $-1$ are as different as they can be: the plain equation has a two-dimensional family of roots, the pure elements of norm one, and the quaternionic equation has none. The two root sets of $+1$ are exchanged in the same way: the plain equation has two roots, $\pm e_0$, and the quaternionic equation has the whole three-dimensional norm-one level set.</p>
+<p><em>Proof.</em> The plain square forces $2\xi_0\boldsymbol\xi = 0$, hence a pure root, and then $N(\boldsymbol\xi) = 1$ for the value $+1$ and $N(\boldsymbol\xi) = 1$ for the value $-1$; the quaternionic square is the norm by the reduction above, so its root sets are the level sets computed in the preceding section.</p>
+<p><strong>Remark (the root of $+1$ and the units).</strong> The quaternionic root set of $+1$ is exactly the norm-one shell $N = 1$, which is the unit group of the <em>plain</em> algebra; so the roots of $+1$ in this block are the units of the other block, and the two readings meet at the norm. The roots of $-1$ in this block are empty for the same reason that the norm is definite, and the emptiness is the algebraic statement that $\mathbb{H}$ has no element whose quaternionic square is $-e_0$, in sharp contrast with the plain square, which has a two-parameter family of such elements.</p>
+<h2 id="summary">Summary</h2>
+<p>For the quaternionic product the square of an element is always central, $\tilde\xi \star \tilde\xi = N(\tilde\xi)e_0$, so the equation $\tilde\xi \star \tilde\xi = \lambda e_0$ is the norm equation $N(\tilde\xi) = \lambda$. Over $\mathbb{R}$ the norm is definite, so the roots of $-1$ are absent, the root of $0$ is the single element $0$, and the roots of $+1$ are the norm-one level set, a set of real dimension three. The criterion is that a root exists exactly for $\lambda \geq 0$, with a three-dimensional root set for $\lambda > 0$ and the single root $0$ for $\lambda = 0$. The plain product on the same space gives the mirror-image answers: for the plain square the roots of $-1$ fill the pure elements of norm one, a two-dimensional set, and the roots of $+1$ are the two central elements $\pm e_0$; the two equations exchange their behaviour, and the exchange is the difference between the plain and the quaternionic product.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\xi \star \tilde\xi = \tilde\xi^{\natural}\tilde\xi = N(\tilde\xi)e_0$</td>
+<td>the square in the quaternionic product</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the quaternionic bilinear algebraic norm</td>
+</tr>
+<tr>
+<td>$\{\tilde\xi : N(\tilde\xi) = \lambda\}$</td>
+<td>the root set of the central value $\lambda$</td>
+</tr>
+<tr>
+<td>$\lambda \in \{-1,0,+1\}$</td>
+<td>the three distinguished central values</td>
+</tr>
+<tr>
+<td>$\tilde\xi^2$</td>
+<td>the plain square, for contrast</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the families of roots of $\pm1$ in the quaternion and octonion algebras.</li>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the origin of the sphere of square roots of $-1$.</li>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the equation of a square root of a central value in a nonassociative algebra.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the collapse of the square map of a product whose symmetrisation is scalar-valued.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

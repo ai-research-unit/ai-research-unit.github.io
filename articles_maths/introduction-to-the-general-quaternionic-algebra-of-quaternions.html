@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the General Quaternionic Algebra of Quaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-general-quaternionic-algebra-of-quaternions"><strong>Introduction to the General Quaternionic Algebra of Quaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, the multiplication rules $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$ and the conjugation $\tilde q^{\natural} = q_0 - \mathbf q$; the basis, the table, the scalar–vector splitting and the conjugation are those of <em>Quaternion Algebra</em>, and they are used here without restatement. A quaternion is written $\tilde q = q_0e_0 + \mathbf q$ with $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$, the glyph of the quaternion layer. The real space $\mathbb{H}$ carries six operations, set out in <em>The 6 Products of the Quaternion Real Space</em> and structured in <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>. This article introduces the algebra carried by the second of its two bilinear operations, the <strong>general quaternionic bilinear product</strong></p>
+<p>$$
+\tilde p \star \tilde q = \tilde p^{\natural}\tilde q .
+$$</p>
+<p>The algebra $(\mathbb{H}, +, \star)$ is the <strong>general quaternionic algebra of quaternions</strong>, and it is the object of this block. Its element theory — the norm, the square roots of the distinguished central values, the square roots of a general element, the zero divisors and the idempotents — is separated from the law itself exactly as in the biquaternion chapter, where the corresponding law is $\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q$ on the eight-dimensional complex space (<em>Introduction to the General Quaternionic Algebra of Biquaternions</em>). The quaternion case is the four-dimensional real member of the family: the coefficients are real, so the complex conjugation of the biquaternion chapter is the identity, and the four general products of that chapter collapse onto the two bilinear laws of this one (<em>The Two General Products and the Reason There Are Only Two</em>, below this article in this category).</p>
+<p>This article does three things. It fixes the product and its coordinate rule. It records the two defects that decide the whole block: the product is <strong>not associative</strong>, and it has $e_0$ as a <strong>left unit and no right unit</strong>, so the algebra is left-unital and not unital. It then places the algebra among the six operations of the space. The element theory is read in the four Common Theory articles that follow (<em>Norm and Invertibility in the General Quaternionic Algebra</em>, <em>Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra</em>, <em>Square Roots of a General Element in the General Quaternionic Algebra</em> and <em>The Specificities of the General Quaternionic Algebra</em>, all below this article in this category), the defect theory in <em>The Associator and the Ternary Product of the Quaternionic Product</em>, below this article in this category, the form in <em>The Isotropic Structure of the General Quaternionic Algebra</em>, below this article in this category, and the operator and matrix readings in <em>Two-Sided Operators on the General Quaternionic Algebra of Quaternions</em> and <em>One-Sided Operators on the General Quaternionic Algebra of Quaternions</em>, both below this article in this category.</p>
+<h2 id="the-general-quaternionic-bilinear-product">The General Quaternionic Bilinear Product</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> For $\tilde p = p_0e_0 + p_1e_1 + p_2e_2 + p_3e_3$ and $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ in $\mathbb{H}$, the <strong>general quaternionic bilinear product</strong> is</p>
+<p>$$
+\tilde p \star \tilde q = \tilde p^{\natural}\tilde q , \qquad \tilde p^{\natural} = p_0 - \mathbf p = p_0 - p_1e_1 - p_2e_2 - p_3e_3 .
+$$</p>
+<p>The product carries the star throughout the corpus; the bare juxtaposition is reserved for the associative multiplication $\tilde p\tilde q$ of $(\mathbb{H}, +, \cdot)$, the plain product of the general plain algebra of the same space, and the two are never interchanged.</p>
+<h3 id="the-coordinate-rule">The Coordinate Rule</h3>
+<p><strong>Proposition (the coordinate rule).</strong> With $\mathbf p, \mathbf q$ the vector parts and $\mathbf p \times \mathbf q$ the cross product,</p>
+<p>$$
+\tilde p \star \tilde q = \bigl(p_0q_0 + \mathbf p \cdot \mathbf q\bigr)e_0 + p_0\mathbf q - q_0\mathbf p - \mathbf p \times \mathbf q .
+$$</p>
+<p><em>Proof.</em> Expand $\tilde p^{\natural}\tilde q = (p_0 - \mathbf p)(q_0 + \mathbf q) = p_0q_0 - \mathbf p\mathbf q + p_0\mathbf q - q_0\mathbf p$ and substitute the product of two pure quaternions, $\mathbf p\mathbf q = -\,\mathbf p \cdot \mathbf q + \mathbf p \times \mathbf q$ (<em>Quaternion Algebra</em>).</p>
+<p><strong>Proposition (bilinearity and the exchange law).</strong> The product is $\mathbb{R}$-bilinear. It is neither commutative nor anticommutative. The two orderings are exchanged by the conjugation,</p>
+<p>$$
+\tilde q \star \tilde p = (\tilde p \star \tilde q)^{\natural} .
+$$</p>
+<p><em>Proof.</em> Bilinearity is that of the plain product and of the conjugation. For the exchange law, $(\tilde p^{\natural}\tilde q)^{\natural} = \tilde q^{\natural}\tilde p^{\natural\natural} = \tilde q^{\natural}\tilde p$, because the conjugation is an anti-automorphism of order two.</p>
+<p><strong>Remark (the product against the plain one).</strong> The coordinate rule separates the product into the plain product and a correction. For pure $\tilde p$ and pure $\tilde q$ one has $\tilde p \star \tilde q = -\,\tilde p\tilde q$, while a general element obeys</p>
+<p>$$
+\tilde p \star \tilde q = 2p_0\,\tilde q - \tilde p\tilde q ,
+$$</p>
+<p>so the quaternionic product is the plain product altered by the term $2p_0\tilde q$, which depends on the first factor through its scalar coordinate alone. The two laws agree on the scalar line and separate as soon as the first factor is not central.</p>
+<h2 id="the-failure-of-associativity">The Failure of Associativity</h2>
+<p><strong>Definition.</strong> The <strong>associator</strong> of the product is the trilinear map</p>
+<p>$$
+[\tilde p,\tilde q,\tilde r] = (\tilde p \star \tilde q) \star \tilde r - \tilde p \star (\tilde q \star \tilde r) .
+$$</p>
+<p><strong>Theorem (the associator).</strong> For all $\tilde p,\tilde q,\tilde r \in \mathbb{H}$,</p>
+<p>$$
+[\tilde p,\tilde q,\tilde r] = \bigl(\tilde q^{\natural}\tilde p - \tilde p^{\natural}\tilde q^{\natural}\bigr)\tilde r .
+$$</p>
+<p>In particular the product is <strong>not associative</strong>: $[e_1,e_0,e_0] = 2e_1$, and $24$ of the $64$ triples of basis elements give a nonzero associator.</p>
+<p><em>Proof.</em> By the exchange law $(\tilde p \star \tilde q)^{\natural} = \tilde q^{\natural}\tilde p$, so $(\tilde p \star \tilde q) \star \tilde r = (\tilde p^{\natural}\tilde q)^{\natural}\tilde r = \tilde q^{\natural}\tilde p\tilde r$, while $\tilde p \star (\tilde q \star \tilde r) = \tilde p^{\natural}(\tilde q^{\natural}\tilde r) = \tilde p^{\natural}\tilde q^{\natural}\tilde r$; the difference is the displayed product. At $(e_1,e_0,e_0)$ the coefficient is $e_0^{\natural}e_1 - e_1^{\natural}e_0^{\natural} = e_1 + e_1 = 2e_1$, since $e_1^{\natural} = -e_1$. The count is the enumeration of the $64$ triples against the closed form.</p>
+<p><strong>Remark.</strong> The mechanism is visible in the closed form. The associator would vanish if the conjugation could be moved across the factor $\tilde p$ at no cost, but the conjugation is an anti-automorphism and reverses the order of the factors, so it cannot. Associativity for the quaternionic product is therefore not a mild extra property that happens to fail; it is the property that the conjugation in the first slot forbids. The defect is studied in full, with the weaker laws and the ternary product it generates, in <em>The Associator and the Ternary Product of the Quaternionic Product</em>, below this article in this category.</p>
+<h2 id="the-left-unit">The Left Unit</h2>
+<p><strong>Theorem (the one-sided unit).</strong> The element $e_0$ is a left unit of the product and not a right one:</p>
+<p>$$
+e_0 \star \tilde q = \tilde q , \qquad \tilde q \star e_0 = \tilde q^{\natural} .
+$$</p>
+<p>There is no right unit: no $\tilde u \in \mathbb{H}$ satisfies $\tilde q \star \tilde u = \tilde q$ for every $\tilde q$.</p>
+<p><em>Proof.</em> $e_0 \star \tilde q = e_0^{\natural}\tilde q = e_0\tilde q = \tilde q$ and $\tilde q \star e_0 = \tilde q^{\natural}e_0 = \tilde q^{\natural}$. For the non-existence, the condition at $\tilde q = e_0$ reads $\tilde u = e_0$, and at $\tilde q = e_1$ it reads $e_1^{\natural}\tilde u = e_1$, that is $\tilde u = -e_1$; the two requirements are incompatible.</p>
+<p><strong>Corollary.</strong> The algebra is <strong>left-unital and not unital</strong>, and the asymmetry is total: there is no right unit, hence no two-sided unit, hence no unit in the algebraists' sense. The two-sided inverse of the unital theory is absent with it, and inversion in this block is the theory of the two one-sided equations, which is the subject of <em>Norm and Invertibility in the General Quaternionic Algebra</em>, below this article in this category; the outcome is that the two one-sided inverses exist and coincide, while the group of units of the plain algebra does not survive.</p>
+<p><strong>Remark.</strong> The asymmetry is not an accident of the conjugation. The mirror law $\tilde p \star' \tilde q = \tilde p\tilde q^{\natural}$ has $e_0$ as a right unit and no left one, and the two laws are exchanged by the conjugation; the quaternion space therefore carries one law of each handedness, and this article's law is the left-handed one. The manufacturing of a right unit out of the twisted right multiplications is <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em>, below this article in this category.</p>
+<h2 id="the-other-five-operations">The Other Five Operations</h2>
+<p>The real space $\mathbb{H}$ carries six operations (<em>The 6 Products of the Quaternion Real Space</em>) and they organise into six algebraic structures (<em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>). This article's product is one of the two bilinear ones. The other is the plain product $\tilde p\tilde q$, the multiplication of the general plain algebra of the same space, and it is the only associative and the only unital one of the six.</p>
+<p>Because the coefficients are real, the complex conjugation of the biquaternion chapter is the identity, so the four general products of that chapter — the two bilinear and the two sesquilinear — collapse onto the two bilinear laws $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$, each of them occurring twice (<em>The Two General Products and the Reason There Are Only Two</em>, below this article in this category). The remaining operations of the six are the companions of the two bilinear laws: the mirror of this article's law, $\tilde q^{\natural}\tilde p$, and the symmetrised and antisymmetrised products $\tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p)$ and $\tfrac12(\tilde p \star \tilde q - \tilde q \star \tilde p)$, which carry the Symmetric and the Antisymmetric quaternionic algebras of the chapter. The full comparison is <em>Comparison Between the Two General Products</em>, the reading on the distinguished subspaces is <em>The Remarkable Subspaces under the Six Operations</em>, below this article in this category, and the pairing theory is <em>The Two Pairings of the Quaternion Algebra</em>, below this article in this category; this article records only the orientation.</p>
+<h2 id="the-place-of-the-algebra-among-the-two-bilinear-laws">The Place of the Algebra among the Two Bilinear Laws</h2>
+<p>The quaternionic product and the plain product are the two bilinear laws on one and the same space, and they share the norm and little else. The table collects the separating features; the fuller comparison is the owner's, and it is cited rather than reproduced.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>feature</th>
+<th>plain $\tilde p\tilde q$</th>
+<th>quaternionic $\tilde p^{\natural}\tilde q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>commutative</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>two-sided unit</td>
+<td>$e_0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>left unit</td>
+<td>$e_0$</td>
+<td>$e_0$</td>
+</tr>
+<tr>
+<td>right unit</td>
+<td>$e_0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>associative</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>zero divisors</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>quadratic form</td>
+<td>$N$, multiplicative</td>
+<td>$N$, multiplicative</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition (the isolated features).</strong> The quaternionic product is characterised among the operations of the space by the conjunction of three properties: it is left-unital and not right-unital; it is not associative; and it has no zero divisors. The plain product has the two-sided unit and is associative; the companion operations are either not unital or not zero-divisor-free.</p>
+<p><em>Proof.</em> The unitality and the non-associativity are the two theorems above; the absence of zero divisors is the multiplicativity and the definiteness of the norm (<em>Norm and Invertibility in the General Quaternionic Algebra</em>, below this article in this category). For the companions: the symmetrised product is central-valued, $\tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p) = \beta(\tilde p,\tilde q)e_0$, so it has zero divisors, $e_1 \bullet e_2 = 0$; the antisymmetrised product vanishes as soon as the two arguments are equal, so neither companion is zero-divisor-free.</p>
+<h2 id="summary">Summary</h2>
+<p>The general quaternionic algebra of quaternions is the real space $\mathbb{H}$ under the product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$, with the coordinate rule $(p_0q_0 + \mathbf p \cdot \mathbf q)e_0 + p_0\mathbf q - q_0\mathbf p - \mathbf p \times \mathbf q$ and the exchange law $\tilde q \star \tilde p = (\tilde p \star \tilde q)^{\natural}$. The product is not associative, its associator being $(\tilde q^{\natural}\tilde p - \tilde p^{\natural}\tilde q^{\natural})\tilde r$, nonzero at $(e_1,e_0,e_0)$ and at $24$ of the $64$ basis triples. The element $e_0$ is a left unit and not a right unit, and no right unit exists, so the algebra is left-unital and not unital and the inversion theory of the block is the theory of the two one-sided equations. The quaternion space carries two bilinear laws, $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$, with four companion operations beside them; the quaternionic product is the left-unital, non-associative, zero-divisor-free member.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the quaternion algebra, the real space of the block</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>the basis, $e_0$ the identity, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$\tilde p = \sum_\mu p_\mu e_\mu$</td>
+<td>a general element and its four real coordinates</td>
+</tr>
+<tr>
+<td>$\mathbf p = \sum_k p_ke_k$</td>
+<td>the vector part, an element of $\mathbb{R}^3$</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural} = p_0 - \mathbf p$</td>
+<td>the conjugation</td>
+</tr>
+<tr>
+<td>$\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$</td>
+<td>the general quaternionic bilinear product</td>
+</tr>
+<tr>
+<td>$[\tilde p,\tilde q,\tilde r]$</td>
+<td>the associator of the product</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the quaternionic bilinear algebraic norm, <em>Norm and Invertibility in the General Quaternionic Algebra</em>, below this article in this category</td>
+</tr>
+<tr>
+<td>$\beta(\tilde p,\tilde q) = p_0q_0 + \mathbf p \cdot \mathbf q$</td>
+<td>the polar form of $N$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the associator and the ladder of weaker identities.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for the symmetrisation of a bilinear product and the ternary product it carries.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for a product with an anti-automorphism inserted in a slot.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the arithmetic of the quaternion units and the multiplicative norm.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

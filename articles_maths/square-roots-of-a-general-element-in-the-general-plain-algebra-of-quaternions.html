@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of a General Element in the General Plain Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-a-general-element-in-the-general-plain-algebra"><strong>Square Roots of a General Element in the General Plain Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article solves the equation $\tilde p^2=\tilde q$ in $\mathbb{H}$ for an arbitrary $\tilde q$. It is the general case of which <em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>, above this article in this category, treats the three central values; the method is the split of a quaternion into its scalar and its vector part and the resulting pair of a quadratic and a linear equation, and it uses neither Clifford algebras nor forms. The result is a classification by the vanishing of the vector part of $\tilde q$: away from the scalar line there are exactly two roots, and on the scalar line the count is two roots, one root or a sphere of roots according as the scalar is positive, zero or negative. The quaternion norm and the invertibility criterion are <em>Norm and Invertibility in the General Plain Algebra</em>, above this article in this category, and they are neither used nor needed.</p>
+<h2 id="the-reduction">The Reduction</h2>
+<p>Throughout, $\tilde q=q_0+\mathbf Q$ and $\tilde p=p_0+\mathbf P$ with $q_0,p_0\in\mathbb{R}$ and $\mathbf Q,\mathbf P$ in the vector subspace $V=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$, and $|\mathbf P|^2=p_1^2+p_2^2+p_3^2$ is the sum of the squares of the three coordinates, a non-negative real number.</p>
+<p><strong>Proposition (the square).</strong> For $\tilde p=p_0+\mathbf P$,</p>
+<p>$$
+\tilde p^2=(p_0^2-|\mathbf P|^2)+2p_0\mathbf P .
+$$</p>
+<p><em>Proof.</em> Expand: $p_0^2+2p_0\mathbf P+\mathbf P^2$. The square of a vector is the scalar $\mathbf P^2=-|\mathbf P|^2$, because the vector coordinates anticommute in pairs and $e_k^2=-e_0$; the cross terms cancel in pairs.</p>
+<p><strong>Corollary.</strong> The equation $\tilde p^2=\tilde q$ is the pair</p>
+<p>$$
+2p_0\mathbf P=\mathbf Q,\qquad p_0^2-|\mathbf P|^2=q_0 .
+$$</p>
+<p>The second is the <strong>reduced quadratic</strong> in the unknown $t=p_0^2$; when $\mathbf Q\neq0$ the first determines $\mathbf P=\mathbf Q/(2p_0)$ and the second becomes the quadratic</p>
+<p>$$
+t^2-q_0t-\tfrac14|\mathbf Q|^2=0,\qquad \Delta=q_0^2+|\mathbf Q|^2,
+$$</p>
+<p>with discriminant $\Delta\geq0$ and $\sqrt\Delta=|\tilde q|$.</p>
+<h2 id="the-two-cases">The Two Cases</h2>
+<p><strong>Theorem (non-scalar case).</strong> Let $\mathbf Q\neq0$. Then $\tilde q$ has exactly two square roots, and they are</p>
+<p>$$
+\tilde p_\pm=\pm\Bigl(\sqrt{\tfrac12\bigl(q_0+|\tilde q|\bigr)}\;e_0+\frac{\mathbf Q}{2\sqrt{\tfrac12(q_0+|\tilde q|)}}\Bigr).
+$$</p>
+<p><em>Proof.</em> The vector equation $2p_0\mathbf P=\mathbf Q$ forces $p_0\neq0$ and $\mathbf P=\mathbf Q/(2p_0)$. Substituting in the reduced quadratic gives $4p_0^4-4q_0p_0^2-|\mathbf Q|^2=0$, that is $t^2-q_0t-\tfrac14|\mathbf Q|^2=0$ with roots $\tfrac12(q_0\pm\sqrt\Delta)$. The minus root is $\tfrac12(q_0-|\tilde q|)$, negative because $\mathbf Q\neq0$ gives $|\tilde q|>|q_0|$; it yields no real $p_0$. The plus root is $\tfrac12(q_0+|\tilde q|)>0$, and it yields the two values $p_0=\pm\sqrt{\tfrac12(q_0+|\tilde q|)}$ and the two displayed roots. Since $p_0\neq0$ and $\mathbf P$ is determined by $p_0$, there are no others.</p>
+<p><strong>Theorem (scalar case).</strong> Let $\tilde q=q_0e_0$, so $\mathbf Q=0$. Then</p>
+<p>$$
+\tilde p^2=q_0e_0\iff
+\begin{cases}
+\tilde p=\pm\sqrt{q_0}\,e_0, & q_0>0,\\
+\tilde p=0, & q_0=0,\\
+\tilde p=\mathbf P\in V,\quad |\mathbf P|^2=-q_0, & q_0<0 .
+\end{cases}
+$$</p>
+<p><em>Proof.</em> With $\mathbf Q=0$ the vector equation reads $p_0\mathbf P=0$, so $p_0=0$ or $\mathbf P=0$. If $\mathbf P=0$ the scalar equation is $p_0^2=q_0$, solvable only for $q_0\geq0$, giving $\pm\sqrt{q_0}e_0$ for $q_0>0$ and $0$ for $q_0=0$. If $p_0=0$ the scalar equation is $-|\mathbf P|^2=q_0$, solvable only for $q_0\leq0$, giving $|\mathbf P|^2=-q_0$; for $q_0=0$ this is again $\tilde p=0$, and for $q_0<0$ it is the level set of a positive-definite quadratic form on the three-dimensional space $V$, a sphere of roots.</p>
+<p><strong>Theorem (classification).</strong> Every $\tilde q\in\mathbb{H}$ has at least one square root, and the root set is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Root set</th>
+<th>Cardinality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbf Q\neq0$</td>
+<td>$\{\tilde p_+,\tilde p_-\}$</td>
+<td>two</td>
+</tr>
+<tr>
+<td>$\mathbf Q=0$, $q_0>0$</td>
+<td>$\{\pm\sqrt{q_0}e_0\}$</td>
+<td>two</td>
+</tr>
+<tr>
+<td>$\mathbf Q=0$, $q_0=0$</td>
+<td>$\{0\}$</td>
+<td>one</td>
+</tr>
+<tr>
+<td>$\mathbf Q=0$, $q_0<0$</td>
+<td>$\{\mathbf P\in V : |\mathbf P|^2=-q_0\}$</td>
+<td>a sphere</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The two preceding theorems.</p>
+<p><strong>Remark.</strong> The reduced quadratic always has the discriminant $\Delta=q_0^2+|\mathbf Q|^2$, a non-negative real, so a real square root is never excluded; the "no root" slot that a general real quadratic equation can occupy is empty over $\mathbb{R}$, and it is the complex coefficient field of the biquaternion chapter that makes it non-empty there. The minus root of the reduced quadratic is what the positive-definiteness of the sum of squares discards.</p>
+<h2 id="the-specialisation-to-the-central-values">The Specialisation to the Central Values</h2>
+<p>The three central equations of <em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>, above this article in this category, are the cases $\mathbf Q=0$, $q_0=-1,0,1$ of the classification:</p>
+<ul>
+<li>$q_0=-1$: the sphere $\{\mathbf P\in V : |\mathbf P|^2=1\}$, the unit sphere of the vector subspace, matching the roots of $-1$;</li>
+<li>$q_0=0$: the single root $0$, matching the root set of $0$;</li>
+<li>$q_0=1$: the pair $\{\pm e_0\}$, matching the roots of $+1$.</li>
+</ul>
+<p>The count of the roots of $-1$ is a two-dimensional sphere, that of $+1$ is two points, and that of $0$ is one point; these are the three values of the classification table, and the agreement is a consistency check on the two articles rather than a new computation.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p>Each root below is checked by squaring.</p>
+<ul>
+<li>$\tilde q=4e_0$: the roots are $\pm2e_0$, and $(-2e_0)^2=4e_0$.</li>
+<li>$\tilde q=0$: the only root is $0$.</li>
+<li>$\tilde q=-4e_0$: the roots are the pure quaternions $\mathbf P$ with $p_1^2+p_2^2+p_3^2=4$, for instance $\tilde p=2e_2$, and $(2e_2)^2=-4e_0$.</li>
+<li>$\tilde q=e_1$, a pure unit quaternion: $|\tilde q|=1$ and $\tfrac12(q_0+|\tilde q|)=\tfrac12$, so $\tilde p_\pm=\pm\bigl(\tfrac{1}{\sqrt2}e_0+\tfrac{1}{\sqrt2}e_1\bigr)$; squaring gives $\tfrac12-\tfrac12+2\cdot\tfrac12 e_1=e_1$.</li>
+<li>$\tilde q=3+2e_1+2e_2$: $|\tilde q|=\sqrt{9+4+4}=\sqrt{17}$, so $p_0^2=\tfrac12(3+\sqrt{17})\approx3.56$, so $\tilde p\approx1.89\,e_0+0.53\,e_1+0.53\,e_2$; squaring returns $\tilde q$ to the precision of the arithmetic.</li>
+<li>$\tilde q=-3+4e_3$: $|\tilde q|=5$, $p_0^2=\tfrac12(-3+5)=1$, and the roots are $\pm(e_0+2e_3)$, since $(e_0+2e_3)^2=e_0+4e_3-4e_0=-3+4e_3$.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>Writing $\tilde q=q_0+\mathbf Q$ and $\tilde p=p_0+\mathbf P$, the square is $\tilde p^2=(p_0^2-|\mathbf P|^2)+2p_0\mathbf P$, so the equation $\tilde p^2=\tilde q$ is the vector equation $2p_0\mathbf P=\mathbf Q$ and the reduced quadratic $t^2-q_0t-\tfrac14|\mathbf Q|^2=0$ in $t=p_0^2$, whose discriminant is $\Delta=q_0^2+|\mathbf Q|^2\geq0$. If the vector part of $\tilde q$ does not vanish there are exactly two roots, $\pm\tilde p$ with $p_0=\sqrt{\tfrac12(q_0+|\tilde q|)}$ and $\mathbf P=\mathbf Q/(2p_0)$; if it vanishes the roots are $\pm\sqrt{q_0}e_0$ for $q_0>0$, the single root $0$ for $q_0=0$, and the sphere $\{|\mathbf P|^2=-q_0\}$ for $q_0<0$. Every quaternion therefore has at least one square root over $\mathbb{R}$, and the three central equations $q_0=-1,0,1$ reproduce the roots of $-1$, of $0$ and of $+1$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde q=q_0+\mathbf Q$</td>
+<td>Quaternion split into scalar part $q_0$ and vector part $\mathbf Q$</td>
+</tr>
+<tr>
+<td>$\tilde p=p_0+\mathbf P$</td>
+<td>The unknown root, similarly split</td>
+</tr>
+<tr>
+<td>$V=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$</td>
+<td>The vector subspace</td>
+</tr>
+<tr>
+<td>$|\mathbf P|^2=p_1^2+p_2^2+p_3^2$</td>
+<td>Sum of the squares of the vector coordinates</td>
+</tr>
+<tr>
+<td>$t=p_0^2$</td>
+<td>The unknown of the reduced quadratic</td>
+</tr>
+<tr>
+<td>$\Delta=q_0^2+|\mathbf Q|^2$</td>
+<td>Discriminant of the reduced quadratic, $=|\tilde q|^2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the square of a quaternion and the vector-part computation.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the square and the square-root problem on the quaternion sphere.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the square roots of quaternions and the role of the vector part.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

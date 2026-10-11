@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quaternion Orders and Finite Groups of Units — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quaternion-orders-and-finite-groups-of-units"><strong>Quaternion Orders and Finite Groups of Units</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion algebra carries a norm with integer values on certain lattices, and the lattices that are also rings are the <strong>orders</strong>. The two classical orders, the Lipschitz and the Hurwitz orders, have finitely many units, and the unit groups that occur are exactly the finite subgroups of the unit sphere. This article states the orders, their unit groups, the classification of the finite subgroups of the sphere, and the McKay correspondence; the topological group of units of the whole algebra is the article before it, and the finite groups are read here once.</p>
+<p><strong>Boundaries.</strong> The norm and the invertibility criterion are <em>Norm and Invertibility in the General Plain Algebra</em>, above this article in this category; the group of units of the whole algebra and its topology are <em>The Quaternion Unit Group as a Topological Group</em>, above this article in this category; the unit sphere as a topological group is the same article. The biquaternion parallel is <em>Biquaternion Orders and Finite Groups of Units</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$. The <strong>quaternion form</strong> is $N(\tilde q)=q_0^{2}+q_1^{2}+q_2^{2}+q_3^{2}$; the <strong>quaternion conjugation</strong> is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the bar is the identity. The <strong>unit sphere</strong> is $S^3=\{\tilde q:N(\tilde q)=1\}$, the unit group of the algebra is $\mathbb{H}^\times$, and the norm and the group of units are as in the articles named above.</p>
+<h2 id="the-quaternion-orders">The Quaternion Orders</h2>
+<p><strong>Definition (order).</strong> An <strong>order</strong> of $\mathbb{H}$ is a subring $\mathcal O$ that is a lattice, that is a finitely generated abelian group spanning $\mathbb{H}$ over $\mathbb{R}$, and on which the norm is integral.</p>
+<p><strong>Proposition (the Lipschitz order).</strong> The <strong>Lipschitz order</strong></p>
+<p>$$
+\mathcal L=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}k
+$$</p>
+<p>is a subring of $\mathbb{H}$, a lattice of rank $4$, and the norm of its elements is a nonnegative integer.</p>
+<p><em>Proof.</em> The product of two integral quaternions has integral coefficients, so $\mathcal L$ is a subring; the four elements are a $\mathbb{Z}$-basis, so the lattice has rank $4$; the norm of an element with integer coordinates is a sum of four squares, an integer.</p>
+<p><strong>Proposition (the Hurwitz order).</strong> Put $\omega=\tfrac12(1+i+j+k)$. Then $\omega^{2}=\omega-1$, so $\omega$ is an element of order six, and the <strong>Hurwitz order</strong></p>
+<p>$$
+\mathcal H=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}\omega
+$$</p>
+<p>is a subring of $\mathbb{H}$, a lattice of rank $4$, with $\mathcal L\subseteq\mathcal H$ of index $2$; its norm is again integral, and it is a maximal order.</p>
+<p><em>Proof.</em> $\omega^{2}=\tfrac14((1+i+j+k)^{2})=\tfrac12(-1+i+j+k)=\omega-1$ by the multiplication table, so $\omega^{2}-\omega+1=0$ and $\omega^{6}=1$; the subring generated by $i,j$ and $\omega$ is $\mathcal H$, and $\tfrac12(1+i+j+k)$ is not in $\mathcal L$, so the index is two; the norm of $\omega$ is $1$ and the integrality of the norm on $\mathcal H$ follows from that on $\mathcal L$: an element of $\mathcal H$ is either in $\mathcal L$, where the norm is a sum of four squares of integers, or is $\tfrac12(a+bi+cj+dk)$ with all four coefficients odd, where $a^{2}+b^{2}+c^{2}+d^{2}$ is a sum of four odd squares, each $\equiv1\pmod 8$, so the sum is $\equiv4\pmod 8$ and one quarter of it is an odd integer; the maximality is <em>Biquaternion Orders and Finite Groups of Units</em> read over $\mathbb{Z}$ for the Hurwitz order.</p>
+<h2 id="the-groups-of-units">The Groups of Units</h2>
+<p><strong>Theorem (the two unit groups).</strong> The units of the Lipschitz order are the eight elements</p>
+<p>$$
+\mathcal L^\times=\{\pm1,\pm i,\pm j,\pm k\}=Q_8,
+$$</p>
+<p>the quaternion group of order eight; the units of the Hurwitz order are the twenty-four elements</p>
+<p>$$
+\mathcal H^\times=\{\pm1,\pm i,\pm j,\pm k\}\cup\bigl\{\tfrac12(\pm1\pm i\pm j\pm k)\bigr\}=2T,
+$$</p>
+<p>the binary tetrahedral group of order twenty-four.</p>
+<p><em>Proof.</em> An element of an order is a unit exactly when its norm is $1$, the inverse $\tilde q^{\natural}/N(\tilde q)$ then lying in the order; the elements of norm one in $\mathcal L$ are the eight signed units, forming $Q_8$; the elements of norm one in $\mathcal H$ are those eight together with the sixteen half-integer elements $\tfrac12(\pm1\pm i\pm j\pm k)$, whose norm is $\tfrac14(1+1+1+1)=1$; the set of twenty-four is closed under the product, so it is a group.</p>
+<p><strong>Remark (the unit groups are finite, against the group of units of the algebra).</strong> The group of units of the whole algebra, $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$, is infinite and is <em>The Quaternion Unit Group as a Topological Group</em>, above this article in this category; the orders cut it down to the finite groups of the theorem. The two are different objects, and the group of units of the algebra is stated once, there.</p>
+<h2 id="the-finite-subgroups-of-the-unit-sphere">The Finite Subgroups of the Unit Sphere</h2>
+<p><strong>Theorem (the classification).</strong> Every finite subgroup of the unit sphere $S^3=Sp(1)$ is one of</p>
+<ul>
+<li>the cyclic group $C_n$ of order $n$, the rotations about one axis;</li>
+<li>the binary dihedral group $2D_n$ of order $4n$, the preimage of the dihedral group of the plane;</li>
+<li>the binary tetrahedral group $2T$ of order $24$;</li>
+<li>the binary octahedral group $2O$ of order $48$;</li>
+<li>the binary icosahedral group $2I$ of order $120$.</li>
+</ul>
+<p>Each is the preimage of a finite rotation group of three-dimensional space; the covering is two-to-one exactly when the group contains the centre $\{\pm e_0\}$, which holds in every family except the cyclic groups of odd order.</p>
+<p><em>Proof.</em> The statement is Klein's classification of the finite subgroups of $S^3$, and it is <em>Biquaternion Orders and Finite Groups of Units</em> read over $\mathbb{R}$: the finite subgroups of $S^3$ are the cyclic, the binary dihedral and the three binary polyhedral groups, of the orders displayed. The centre of $S^3$ is $\{\pm e_0\}$ by <em>The Quaternion Unit Group as a Topological Group</em>, and the cover of the rotation group is two-to-one exactly when $\pm e_0$ lies in the group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>order</th>
+<th>generators</th>
+<th>rotation group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C_n$</td>
+<td>$n$</td>
+<td>one element of order $n$</td>
+<td>cyclic $C_n$</td>
+</tr>
+<tr>
+<td>$2D_n$</td>
+<td>$4n$</td>
+<td>two elements</td>
+<td>dihedral $D_n$</td>
+</tr>
+<tr>
+<td>$2T$</td>
+<td>$24$</td>
+<td>$\mathcal H^\times$</td>
+<td>tetrahedral $A_4$</td>
+</tr>
+<tr>
+<td>$2O$</td>
+<td>$48$</td>
+<td>$2T$ and one more</td>
+<td>octahedral $S_4$</td>
+</tr>
+<tr>
+<td>$2I$</td>
+<td>$120$</td>
+<td>the binary icosahedral</td>
+<td>icosahedral $A_5$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the orders give the first two families).</strong> The Lipschitz units $Q_8$ are the binary dihedral group $2D_2$ of order eight, and the Hurwitz units $2T$ are the binary tetrahedral group; the binary octahedral and binary icosahedral groups are finite subgroups of $S^3$ that are not the unit group of an order of the simple form above, and they are the remaining two Platonic cases.</p>
+<h2 id="the-mckay-correspondence">The McKay Correspondence</h2>
+<p><strong>Theorem (the correspondence).</strong> The five families of the classification correspond to the five simply laced Dynkin diagrams:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>$C_n$</th>
+<th>$2D_n$</th>
+<th>$2T$</th>
+<th>$2O$</th>
+<th>$2I$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>diagram</td>
+<td>$\widetilde A_{n-1}$</td>
+<td>$\widetilde D_{n+2}$</td>
+<td>$\widetilde E_6$</td>
+<td>$\widetilde E_7$</td>
+<td>$\widetilde E_8$</td>
+</tr>
+</tbody>
+</table></div>
+<p>the correspondence assigning to a finite subgroup the affine Dynkin diagram of the components of the representation of its double by the fundamental representation.</p>
+<p><em>Proof.</em> The statement is the McKay correspondence and is <em>Biquaternion Orders and Finite Groups of Units</em>; the table is quoted for the quaternion rung.</p>
+<h2 id="the-comparison-with-the-biquaternion-case">The Comparison with the Biquaternion Case</h2>
+<p><strong>Proposition (finite against infinite over the two algebras).</strong> Over $\mathbb{R}$ the integral orders have finite unit groups, $Q_8$ and $2T$; over $\mathbb{C}$ the integral biquaternions over the Gaussian integers have an infinite unit group, because the norm is indefinite and admits infinitely many integral solutions. The finite subgroups of the unit sphere $S^3$ are the five families of the classification, and $S^3$, the unit sphere of the quaternion algebra, sits inside the biquaternion algebra as its compact quaternionic part; over $\mathbb{C}$ that sphere lies inside an algebra with a null cone, and the orders of the biquaternion chapter carry the cone next to the sphere in their arithmetic.</p>
+<p><em>Proof.</em> Over $\mathbb{R}$ the norm is definite, so the elements of norm one in a lattice are finitely many; over $\mathbb{C}$ the norm $N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ is indefinite and the units of the Gaussian integral biquaternions are infinite; the finite subgroup classification depends only on the sphere $S^3$, which sits in both algebras. The details are <em>Biquaternion Orders and Finite Groups of Units</em>.</p>
+<p><strong>Remark (the arithmetic heart of the chapter).</strong> This is the one article of the chapter with an arithmetic flavour, and it is placed in the topological half because its object is the discrete side of the unit sphere; the continuous side is the article before it, and the metric readings are the articles below.</p>
+<h2 id="summary">Summary</h2>
+<p>The Lipschitz order $\mathcal L=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}k$ is a lattice subring with integral norm and unit group the quaternion group $Q_8$ of order eight; the Hurwitz order $\mathcal H=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}\omega$ with $\omega=\tfrac12(1+i+j+k)$, $\omega^{2}=\omega-1$, contains $\mathcal L$ with index two, is maximal, and has unit group the binary tetrahedral group $2T$ of order twenty-four. The finite subgroups of the unit sphere $S^3$ are the cyclic groups, the binary dihedral groups, and the binary tetrahedral, octahedral and icosahedral groups of orders $24$, $48$ and $120$; under the McKay correspondence they are the simply laced Dynkin diagrams. Over $\mathbb{C}$ the integral biquaternions have an infinite unit group, while the finite subgroups of the compact sphere $S^3$ remain the five families; over $\mathbb{R}$ the orders are finite and the arithmetic is the discrete side of the unit sphere.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal L=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}k$</td>
+<td>the Lipschitz order</td>
+</tr>
+<tr>
+<td>$\mathcal H=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}\omega$</td>
+<td>the Hurwitz order, maximal, $[\mathcal H:\mathcal L]=2$</td>
+</tr>
+<tr>
+<td>$\omega=\tfrac12(1+i+j+k)$, $\omega^{2}=\omega-1$</td>
+<td>the order-six element of $\mathcal H$</td>
+</tr>
+<tr>
+<td>$Q_8$, $2T$</td>
+<td>the unit groups, of orders $8$ and $24$</td>
+</tr>
+<tr>
+<td>$C_n$, $2D_n$, $2T$, $2O$, $2I$</td>
+<td>the finite subgroups of $S^3$</td>
+</tr>
+<tr>
+<td>$\widetilde A_{n-1}$, $\widetilde D_{n+2}$, $\widetilde E_6$, $\widetilde E_7$, $\widetilde E_8$</td>
+<td>the McKay diagrams</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Norm and Invertibility in the General Plain Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md</code>), for the norm and the inverse</li>
+<li><em>The Quaternion Unit Group as a Topological Group</em> (<code>articles_maths/the-quaternion-unit-group-as-a-topological-group.md</code>), for the group of units of the algebra and the sphere</li>
+<li><em>Quaternion Rotations and Reflections</em> (<code>articles_maths/quaternion-rotations-and-reflections.md</code>), for the rotation groups of the quotients</li>
+<li><em>Biquaternion Orders and Finite Groups of Units</em> (<code>articles_maths/biquaternion-orders-and-finite-groups-of-units.md</code>), for the biquaternion parallel</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

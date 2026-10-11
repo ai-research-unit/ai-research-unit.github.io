@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Pairings of the Quaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-pairings-of-the-quaternion-algebra"><strong>The Two Pairings of the Quaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A pairing is the scalar part of a product, read as a function of two elements. The two general products therefore define two pairings, the plain form of signature $(1,3)$ and the quaternion form of signature $(4,0)$, and this article presents them side by side: their definitions, their Gram matrices, their polarisation, their relation to the two algebraic norms, and the comparison with the four pairings of the biquaternion algebra. The pairings themselves are <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>, the norms are <em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em>, and the collapse from four to two is <em>The Two General Products and the Reason There Are Only Two</em>, all above this article in this category.</p>
+<h2 id="the-two-pairings">The Two Pairings</h2>
+<p><strong>Definition.</strong> For a product $\star$ on $\mathbb{H}$, the <strong>pairing</strong> it defines is
+$$
+\langle\tilde p,\tilde q\rangle_{\star}=\operatorname{Sc}(\tilde p\star\tilde q) , \qquad\text{equivalently}\qquad \operatorname{Sc}(\tilde p\star\tilde q)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde p\star\tilde q)\bigr)
+$$
+in the matrix model of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions</em>, above this article in this category. The two general products give the <strong>plain pairing</strong>
+$$
+B(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p\tilde q)=p_0q_0-p_1q_1-p_2q_2-p_3q_3
+$$
+and the <strong>quaternion pairing</strong>
+$$
+N(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+p_1q_1+p_2q_2+p_3q_3 .
+$$
+Both are symmetric and $\mathbb{R}$-bilinear, and the two agree on the scalar line and differ on the vector subspace, where their signs are opposite.</p>
+<h2 id="gram-matrices-and-signatures">Gram Matrices and Signatures</h2>
+<p>In the basis $(e_0,e_1,e_2,e_3)$ the Gram matrices are diagonal:
+$$
+[\,B\,]=\operatorname{diag}(1,-1,-1,-1) , \qquad [\,N\,]=\operatorname{diag}(1,1,1,1) .
+$$
+The plain pairing is the <strong>Minkowski pairing</strong> of signature $(1,3)$, with one positive and three negative directions; the quaternion pairing is the <strong>Euclidean pairing</strong> of signature $(4,0)$, positive definite. Both are <strong>non-degenerate</strong>, of radical $\{0\}$, since their matrices are invertible; the plain pairing has a non-trivial null cone and the quaternion pairing has none. The signs are what the two products transmit to their forms: the plain product carries $e_k^2=-e_0$ and the quaternion product, through the conjugation on its first slot, turns the three minuses into pluses.</p>
+<p>The pairings restricted to the two remarkable subspaces, with their inertia, are tabulated in <em>The Remarkable Subspaces under the Six Operations</em>, above this article in this category.</p>
+<h2 id="polarisation">Polarisation</h2>
+<p>Each pairing is recovered from its quadratic form, its diagonal, by the polarisation identity
+$$
+B(\tilde p,\tilde q)=\tfrac12\bigl(Q_B(\tilde p+\tilde q)-Q_B(\tilde p)-Q_B(\tilde q)\bigr) , \qquad
+N(\tilde p,\tilde q)=\tfrac12\bigl(Q_N(\tilde p+\tilde q)-Q_N(\tilde p)-Q_N(\tilde q)\bigr) ,
+$$
+with the diagonals
+$$
+Q_B(\tilde p)=B(\tilde p,\tilde p)=p_0^2-p_1^2-p_2^2-p_3^2 , \qquad
+Q_N(\tilde p)=N(\tilde p,\tilde p)=p_0^2+p_1^2+p_2^2+p_3^2 .
+$$
+The polarisation is the general fact that a symmetric bilinear form over a field of characteristic not two is its diagonal's polarisation; over $\mathbb{R}$ this applies to both pairings, and the two quadratic forms are recovered from the two pairings in the same way.</p>
+<h2 id="relation-to-the-two-algebraic-norms">Relation to the Two Algebraic Norms</h2>
+<p>The <strong>algebraic norms</strong> of <em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em> are read off the diagonals of the two pairings:
+$$
+N_P(\tilde p)=\tilde p^2 ,\quad \operatorname{Sc}\bigl(N_P(\tilde p)\bigr)=Q_B(\tilde p) \quad\text{(the plain norm, indefinite)} , \qquad
+N_Q(\tilde p)=\tilde p^{\natural}\tilde p=N(\tilde p)e_0 \quad\text{(the quaternion norm, positive definite)} .
+$$
+The first is the square, read in the plain product, whose scalar coefficient is $Q_B$ and whose vector coefficient $2p_0\mathbf p$ is nonzero off the axes, and it is indefinite; the second is central and is exactly the diagonal of $N$, multiplicative, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$, and positive definite. The two norms are therefore not two more objects beside the pairings: the diagonals $Q_B$ and $Q_N$ are their scalar readings, and the one property that singles out the quaternion norm, multiplicativity, is the one that makes it the norm of the division algebra. The details are <em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em>.</p>
+<h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
+<p>The biquaternion algebra carries <strong>four</strong> pairings, because its base ring $\mathbb{C}$ has a non-trivial involution: the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear (the Hermitian form) and the general quaternionic sesquilinear (the Krein form). Their Gram matrices carry the four sign patterns of the complex basis, and two of them, the sesquilinear pairings, have conjugate symmetry rather than symmetry. Over $\mathbb{R}$ the second slot of the general construction carries no involution, so the two sesquilinear pairings coincide with the two bilinear ones and only $B$ and $N$ survive. This is the collapse of <em>The Two General Products and the Reason There Are Only Two</em> read on the pairings; the four pairings of the complex rung and their Gram matrices are <em>The Four Pairings of the Biquaternion Algebra</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The two general products define two pairings: the plain pairing $B(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p\tilde q)$ of signature $(1,3)$ and the quaternion pairing $N(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p^{\natural}\tilde q)$ of signature $(4,0)$, non-degenerate and recovered from their diagonals by polarisation. Their diagonals are the two algebraic norms, the indefinite square and the multiplicative positive definite quaternion norm. The biquaternion chapter carries four pairings, the two sesquilinear ones being lost over $\mathbb{R}$ together with the second slot of the general construction; the four-to-two collapse of the pairings is the same collapse as that of the products.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B$, $N$</td>
+<td>the plain and quaternion pairings</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>the Gram matrix of $B$, signature $(1,3)$</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(1,1,1,1)$</td>
+<td>the Gram matrix of $N$, signature $(4,0)$</td>
+</tr>
+<tr>
+<td>$Q_B$, $Q_N$</td>
+<td>the diagonals, the two algebraic norms</td>
+</tr>
+<tr>
+<td>Hermitian, Krein</td>
+<td>the two sesquilinear pairings of the biquaternion rung</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em> (<code>articles_maths/the-2-forms-over-the-quaternion-r-space.md</code>), above this article in this category.</li>
+<li><em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em> (<code>articles_maths/the-2-algebraic-norms-over-the-quaternion-r-space.md</code>), above this article in this category.</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the complex rung.</li>
+<li><em>The Two Adjoints of the Two Algebras in Examples</em> (<code>articles_maths/the-two-adjoints-of-the-two-algebras-in-examples.md</code>), below this article in this category, for the adjoints these pairings define.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

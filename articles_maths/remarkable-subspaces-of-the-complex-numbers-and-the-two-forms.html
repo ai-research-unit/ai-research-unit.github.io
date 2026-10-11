@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remarkable Subspaces of the Complex Numbers and the Two Forms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="remarkable-subspaces-of-the-complex-numbers-and-the-two-forms"><strong>Remarkable Subspaces of the Complex Numbers and the Two Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The two forms of the complex space, the plain bilinear form $B(A,C)=AC$ and the Hermitian form $H(A,C)=A\bar C$, are read here on the two remarkable subspaces of the complex numbers, the real subspace $\mathbb{R}_{\mathbb{C}}$ and the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$. This article gives the restriction rule, the value of the two forms on a general pair of each subspace, their diagonals, their signatures and their null sets, and reports the sense in which the real subspace carries the definite form and the imaginary one its negative.</p>
+<p>The article is the complex counterpart of <em>Remarkable Subspaces and the Four Forms</em>, which reads the four forms of the biquaternion algebra on its six remarkable subspaces. The restriction here is the restriction there, read on a base of dimension one over $\mathbb{R}$; the forms and their diagonals are those of <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>, above this article in this category, and the subspaces are those of <em>Complex Subspaces</em>. The topological norm $|\cdot|=\sqrt{H}$ and the invertibility criterion are <em>Complex Norm and Invertibility</em>, below this article in this category.</p>
+<p><strong>Conventions.</strong> <strong>Bar</strong> is complex conjugation, the <strong>natural sign</strong> is the identity on the commutative base, and the <strong>Hermitian</strong> mark is the bar, ${}^{*}=\bar{\cdot}$. Elements of the two subspaces are written $A=a$ and $C=c$ on the real subspace and $A=ia'$ and $C=ic'$ on the imaginary one; the letters $B$ and $H$ are the two forms and are never elements. The form $N$ of the biquaternion algebra coincides with $B$ here, and the Krein form $K$ with $H$; the letter $N$ with one argument is the positive definite norm of <em>Complex Norm and Invertibility</em>, below this article in this category.</p>
+<h2 id="the-restriction-rule">The Restriction Rule</h2>
+<p>The <strong>restriction</strong> of a form $\varphi$ to a subspace $U$ is the form read on the elements of $U$,</p>
+<p>$$
+\varphi|_{U}(A,C)=\varphi(A,C)\qquad(A,C\in U),
+$$</p>
+<p>and the only thing that happens is that the two arguments are confined to the subspace. The symmetry is inherited, since the identity $B(A,C)=B(C,A)$ and the conjugate symmetry $H(A,C)=\overline{H(C,A)}$ hold in the ambient space and involve nothing outside $U$; the restriction is read off the coordinates of the two elements. Both subspaces are real lines, so every restriction is a form on a one-dimensional real space, and its rank is at most one.</p>
+<h2 id="the-two-forms-on-the-real-subspace">The Two Forms on the Real Subspace</h2>
+<p>On the real subspace the bar is the identity, so the two forms coincide, and both are the multiplication of the coordinates,</p>
+<p>$$
+B(a,c)=H(a,c)=ac.
+$$</p>
+<p>Both values are real, so the imaginary parts of the two forms vanish identically on the subspace; the diagonals are $B(a)=a^{2}$ and $H(a)=a^{2}$, the same square; both forms are positive definite, since $a^{2}>0$ for $a\neq0$; each has rank $1$ and is non-degenerate; and each has the null set $\{0\}$ alone, because $a^{2}=0$ forces $a=0$. The subspace carries one form, not two, and it is the definite one.</p>
+<h2 id="the-two-forms-on-the-imaginary-subspace">The Two Forms on the Imaginary Subspace</h2>
+<p>On the imaginary subspace the bar is the negation, so the two forms differ by a sign, and both are real again,</p>
+<p>$$
+B(ia',ic')=(ia')(ic')=-a'c',\qquad H(ia',ic')=(ia')\overline{(ic')}=+a'c'.
+$$</p>
+<p>The two forms are therefore the negative of each other on the subspace, $B=-H$, and their common value is real, so the imaginary parts vanish there as well. The diagonals are opposite,</p>
+<p>$$
+B(ia')=(ia')^{2}=-a'^{2},\qquad H(ia')=(ia')\overline{(ia')}=+a'^{2}=-B(ia'),
+$$</p>
+<p>so the diagonal of $B$ is the negative square and the diagonal of $H$ the positive one. The form $B$ is <strong>negative definite</strong> on the subspace, its value $-a'^{2}$ vanishing only at the origin; the form $H$ is <strong>positive definite</strong>, its value $+a'^{2}$ vanishing only at the origin; each has rank $1$, is non-degenerate, and has the null set $\{0\}$ alone.</p>
+<p>The subspace contains no nonzero isotropic element of either form. This is the anisotropy of the two forms met in <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>, above this article in this category, where $B(A)=A^{2}$ and $H(A)=|A|^{2}$ vanish only together with $A$.</p>
+<h2 id="the-table-of-the-two">The Table of the Two</h2>
+<p>The two forms on the two subspaces, with the coordinates $a$ on the real subspace and $a'$ on the imaginary one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>$B$</th>
+<th>$H$</th>
+<th>diagonal of $B$</th>
+<th>diagonal of $H$</th>
+<th>imaginary part</th>
+<th>signature of the restriction</th>
+<th>null set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>$ac$</td>
+<td>$ac$</td>
+<td>$a^{2}$</td>
+<td>$a^{2}$</td>
+<td>zero</td>
+<td>$(1,0)$ for both</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>$-a'c'$</td>
+<td>$+a'c'$</td>
+<td>$-a'^{2}$</td>
+<td>$+a'^{2}$</td>
+<td>zero</td>
+<td>$(0,1)$ for $B$, $(1,0)$ for $H$</td>
+<td>$\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three readings of the table. The <strong>two forms coincide on the real subspace</strong> and are <strong>opposite on the imaginary one</strong>, $B=H$ and $B=-H$. The <strong>real subspace carries the definite form and the imaginary one its negative</strong>, in the sense that $B$ is positive definite on $\mathbb{R}_{\mathbb{C}}$ and negative definite on $i\mathbb{R}_{\mathbb{C}}$, while $H$ is positive definite on both. And the <strong>imaginary part of each form vanishes</strong> on each subspace, so each restriction is a real symmetric bilinear form recovered from its own diagonal.</p>
+<h2 id="comparison-with-the-biquaternion-restriction">Comparison with the Biquaternion Restriction</h2>
+<p>On the biquaternion algebra each of the four forms splits into a real part and an imaginary part, and the imaginary part is non-zero and non-degenerate on the two complex subspaces — the centre, of rank $2$, and the vector subspace, of rank $6$ — while it vanishes identically on the four real-type subspaces, where all four forms are real-valued (<em>Remarkable Subspaces and the Four Forms</em>). The complex reading differs in two ways, and both are the collapse of the biquaternion table.</p>
+<p>The two spaces here are <strong>real lines</strong>, not a complex line: they are the two summands of the decomposition of $\mathbb{C}$ into real and imaginary parts, and a form on a real line has no imaginary part, so the phase structure that the biquaternion complex subspaces carry is absent. And because the natural sign is the identity, the four forms of the biquaternion algebra are two here, $B=N$ and $H=K$, so the restriction table has two rows for the forms and not four. The two features that survive are the ones the table records: the two forms may coincide on a subspace, as they do on $\mathbb{R}_{\mathbb{C}}$, or be opposite, as they are on $i\mathbb{R}_{\mathbb{C}}$, and no subspace carries a nonzero isotropic element of either, since $\mathbb{C}$ has no zero divisor.</p>
+<h2 id="summary">Summary</h2>
+<p>On the real subspace the two forms of the complex space coincide, $B=H=ac$, both real-valued and positive definite, with the same diagonal $a^{2}$, rank $1$ and null set $\{0\}$. On the imaginary subspace the two forms are opposite, $B=-H$, with $B=-a'c'$ negative definite and $H=+a'c'$ positive definite, the diagonals $-a'^{2}$ and $+a'^{2}$, rank $1$ and null set $\{0\}$ each. The two forms are therefore told apart by their restriction to the imaginary subspace and not by their restriction to the real one, where they agree; the real subspace carries the definite form and the imaginary one its negative, and the imaginary parts of both forms vanish on both subspaces. The reading is the biquaternion restriction table collapsed: two forms in place of four, the two real lines in place of the six remarkable subspaces, and no nonzero isotropic element anywhere.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>the real subspace, elements $A=a$, real dimension $1$</td>
+</tr>
+<tr>
+<td>$i\mathbb{R}_{\mathbb{C}}$</td>
+<td>the imaginary subspace, elements $A=ia'$, real dimension $1$</td>
+</tr>
+<tr>
+<td>$B(A,C)=AC$</td>
+<td>the general plain bilinear form, equal to $N$</td>
+</tr>
+<tr>
+<td>$H(A,C)=A\bar C$</td>
+<td>the Hermitian form, equal to $K$</td>
+</tr>
+<tr>
+<td>$\varphi|_U$</td>
+<td>the restriction of a form to a subspace</td>
+</tr>
+<tr>
+<td>$(1,0)$, $(0,1)$</td>
+<td>the signatures of the definite and the negative definite restriction</td>
+</tr>
+<tr>
+<td>$\{0\}$</td>
+<td>the null set of each of the four restrictions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>, above this article in this category, for the two forms, their diagonals and their definiteness.</li>
+<li><em>Complex Subspaces</em> (<code>articles_maths/complex-subspaces.md</code>), for the two subspaces, their bases and their dimensions.</li>
+<li><em>Remarkable Subspaces and the Four Forms</em> (<code>articles_maths/remarkable-subspaces-and-the-four-forms.md</code>), for the biquaternion restriction table, of which this article is the collapse.</li>
+<li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the general theory of the pairings and their restrictions.</li>
+<li><em>Complex Norm and Invertibility</em> (<code>articles_maths/complex-norm-and-invertibility.md</code>), below this article in this category, for the definite norm that the two restrictions carry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

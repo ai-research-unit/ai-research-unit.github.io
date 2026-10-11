@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Antisymmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-antisymmetric-quaternionic-algebra-in-the-math0-matrix-element-representation-math1"><strong>The Antisymmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antisymmetric quaternionic algebra of $\mathbb{H}$ is the operation
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ of <em>Introduction to the Antisymmetric Quaternionic
+Algebra of Quaternions</em>. This article reads it on the embedding $\mathbb{H}\hookrightarrow M_2(\mathbb{C})$
+of <em>Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions</em>, where
+the parent product becomes the <strong>conjugated product</strong> $\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$
+and the antisymmetrization becomes the <strong>conjugated commutator</strong>. It gives the matrix form, the image,
+the invariants, the invariant forms and the comparison with the other blocks on the same model.</p>
+<p>The reading is the conjugated twin of the plain one: the plain antisymmetrization is the commutator of
+the matrix images, and the antisymmetrisation of the parent is the halved conjugated commutator, whose
+values are the <strong>anti-Hermitian</strong> matrices.</p>
+<p><strong>This is not the algebra $\mathbb{H}$.</strong> The model is an algebra embedding of the plain product; the
+antisymmetric quaternionic block is read on it through the conjugation of the first factor and is not
+the matrix product. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar
+is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the
+natural sign and gives nothing new. The symbol $\diamond$ is reserved for this block.</p>
+<p>The model and its multiplicativity are <em>Introduction to the $2\times2$ Matrix Element Representation
+$M_2(\mathbb{C})$ of Quaternions</em>; the block and its failure are <em>Introduction to the Antisymmetric
+Quaternionic Algebra of Quaternions</em> and <em>The Jacobi Failure and the Associator Defect of the
+Antisymmetric Quaternionic Algebra</em>, below this article in this category; the form is <em>The Invariant
+Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>, below this article in this category. The
+companion articles are <em>The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation
+$M_2(\mathbb{C})$</em>, above this article in this category, and <em>The Antisymmetric Quaternionic Algebra in
+the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>, below this article in this category.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
+$e_1^2=e_2^2=e_3^2=-e_0$; the model is</p>
+<p>$$
+\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_0-iq_3 & -iq_1-q_2\\ -iq_1+q_2 & q_0+iq_3\end{pmatrix},
+$$</p>
+<p>with $\mathsf{M}_2(e_0)=\mathrm{I}_2$, $\mathsf{M}_2(e_1)=-i\sigma_1$, $\mathsf{M}_2(e_2)=-i\sigma_2$,
+$\mathsf{M}_2(e_3)=-i\sigma_3$, the Pauli matrices. The plain product is the matrix product,
+$\mathsf{M}_2(\tilde p\tilde q)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$, the parent product is
+$\mathsf{M}_2(\tilde p^{\natural}\tilde q)=\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$, and
+the conjugation is the Hermitian adjoint, $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$.
+The <strong>quaternion form</strong> is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and the <strong>plain form</strong>
+$B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$.</p>
+<h2 id="the-model-and-the-conjugated-commutator">The Model and the Conjugated Commutator</h2>
+<p><strong>Theorem (the bracket is the halved conjugated commutator).</strong></p>
+<p>$$
+\mathsf{M}_2(\tilde p\diamond\tilde q)=\tfrac12\bigl(\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)-\mathsf{M}_2(\tilde q)^{\dagger}\mathsf{M}_2(\tilde p)\bigr)
+=\tfrac12\bigl[\mathsf{M}_2(\tilde p)^{\dagger},\mathsf{M}_2(\tilde q)\bigr] .
+$$</p>
+<p><em>Proof.</em> The model is multiplicative and the conjugation is the Hermitian adjoint, so
+$\mathsf{M}_2(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)-\mathsf{M}_2(\tilde q)^{\dagger}\mathsf{M}_2(\tilde p)$,
+and half of it is the image of the block.</p>
+<p><strong>Remark (the contrast with the plain block on the same model).</strong> The plain antisymmetrization is the
+halved plain commutator $\tfrac12[\mathsf{M}_2(\tilde p),\mathsf{M}_2(\tilde q)]$, of values the
+traceless matrices of the image; the antisymmetrization of the parent is the halved <strong>conjugated</strong>
+commutator, of values the anti-Hermitian matrices. The two agree on the pure elements up to sign, since
+$\mathsf{M}_2(\mathbf u)^{\dagger}=-\mathsf{M}_2(\mathbf u)$ for a pure $\mathbf u$.</p>
+<h2 id="the-image-the-anti-hermitian-matrices">The Image: the Anti-Hermitian Matrices</h2>
+<p><strong>Theorem (the image).</strong> Every value of the block is an <strong>anti-Hermitian</strong> matrix,</p>
+<p>$$
+\mathsf{M}_2(\tilde p\diamond\tilde q)^{\dagger}=-\,\mathsf{M}_2(\tilde p\diamond\tilde q),
+$$</p>
+<p>of trace zero, and the image of the block is the three-dimensional real space of anti-Hermitian
+traceless matrices, which is the Lie algebra $\mathfrak{su}(2)$.</p>
+<p><em>Proof.</em> The conjugated commutator of two matrices $X^{\dagger}Y-Y^{\dagger}X$ is anti-Hermitian, since
+its adjoint is $Y^{\dagger}X-X^{\dagger}Y$, its negative; the trace vanishes because the trace of a
+commutator vanishes. The space of anti-Hermitian traceless $2\times2$ matrices is
+$i\,\mathfrak{sl}(2,\mathbb{C})_{\text{Hermitian}}=\mathfrak{su}(2)$, of real dimension three, and the
+image is the whole of it, the pure values generating it.</p>
+<p><strong>Remark (the failure is the commutator of the failure).</strong> The image is the Lie algebra
+$\mathfrak{su}(2)$, but the operation is not the Lie bracket of the model: the model bracket would be
+the plain commutator, while the block is the conjugated commutator, and it is the conjugation that
+breaks the Jacobi identity (<em>The Jacobi Failure and the Associator Defect of the Antisymmetric
+Quaternionic Algebra</em>, below this article in this category). The block is a Lie bracket on the image
+only in the sense that its restriction to the pure elements is the cross product up to sign.</p>
+<h2 id="the-invariants">The Invariants</h2>
+<p><strong>Theorem.</strong> The image matrix $\mathsf{M}_2(\tilde p\diamond\tilde q)$ has</p>
+<p>$$
+\operatorname{Tr}\mathsf{M}_2(\tilde p\diamond\tilde q)=0,\qquad
+\det\mathsf{M}_2(\tilde p\diamond\tilde q)=N(\tilde p\diamond\tilde q)=|\tilde p\diamond\tilde q|^2,
+\qquad
+\mathsf{M}_2(\tilde p\diamond\tilde q)^2=-N(\tilde p\diamond\tilde q)\,\mathrm{I}_2 ,
+$$</p>
+<p>the determinant being the squared norm of the value, and the matrix is anti-Hermitian.</p>
+<p><em>Proof.</em> The value is pure, so its matrix is traceless; an anti-Hermitian traceless $2\times2$ matrix
+$X$ satisfies $X^2=-\det(X)\,\mathrm{I}_2$ and $\det X=N(X)$, the norm of the pure element, by the
+model's determinant formula in <em>Introduction to the $2\times2$ Matrix Element Representation
+$M_2(\mathbb{C})$ of Quaternions</em>.</p>
+<h2 id="the-invariant-forms">The Invariant Forms</h2>
+<p><strong>Theorem (the forms on the model).</strong> The trace forms of the model read the two forms of the space,</p>
+<p>$$
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger}\bigr)=N(\tilde p,\tilde q),\qquad
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)\bigr)=B(\tilde p,\tilde q),
+$$</p>
+<p>the unique invariant form of the block is the scalar-part form</p>
+<p>$$
+\varphi(\tilde p,\tilde q)=p_0q_0=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\cdot\operatorname{Tr}\mathsf{M}_2(\tilde q),
+$$</p>
+<p>and the operator trace form is the combination
+$K(\tilde p,\tilde q)=\tfrac12\bigl(N(\tilde p,\tilde q)+5B(\tilde p,\tilde q)\bigr)=3p_0q_0-2\,\mathbf p\cdot\mathbf q$.</p>
+<p><em>Proof.</em> The model is multiplicative, so
+$\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q^{\natural})=2N(\tilde p,\tilde q)$
+and $\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=2B(\tilde p,\tilde q)$, by the trace
+formula of the model; the trace of the model is $2q_0$, whence $\varphi$; the combination is the
+operator trace form of <em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>, below
+this article in this category, solved in the two forms.</p>
+<p><strong>Remark (the block removes the trace).</strong> The coefficient form of the block vanishes,
+$\operatorname{Tr}\mathsf{M}_2(\tilde p\diamond\tilde q)=0$, because the values are traceless; the trace
+form of the block is the zero form, and the only invariant form of the block remains the degenerate
+$\varphi$ of the scalar-part slot.</p>
+<h2 id="the-comparison-with-the-other-blocks-on-the-model">The Comparison with the Other Blocks on the Model</h2>
+<p>The six products of the space read on the same model:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>the matrix form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$</td>
+<td>$\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>$\tfrac12\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)+\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p)\bigr)$</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>$\tfrac12\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)-\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p)\bigr)$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>$\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>$N(\tilde p,\tilde q)\,\mathrm{I}_2$</td>
+</tr>
+<tr>
+<td>$\mathrm{AQA}$</td>
+<td>$\tfrac12\bigl(\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)-\mathsf{M}_2(\tilde q)^{\dagger}\mathsf{M}_2(\tilde p)\bigr)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the reading of the table).</strong> The upper three rows are the products of the plain row, the lower
+three the products of the conjugated row; the general products are the matrix product and the conjugated
+matrix product, and within each row the symmetric and the antisymmetric halves are the corresponding
+halved sums and differences. The antisymmetric quaternionic block is the lower antisymmetric entry: the
+halved conjugated commutator, of anti-Hermitian values, while the plain antisymmetric block is the upper
+antisymmetric entry, of traceless values. The plain reading on the same model is <em>The Antisymmetric
+Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, above this article in
+this category.</p>
+<h2 id="summary">Summary</h2>
+<p>In the two by two complex model the antisymmetric quaternionic block is the halved conjugated
+commutator, $\mathsf{M}_2(\tilde p\diamond\tilde q)=\tfrac12[\mathsf{M}_2(\tilde p)^{\dagger},\mathsf{M}_2(\tilde q)]$,
+whose values are the <strong>anti-Hermitian</strong> traceless matrices, that is the Lie algebra $\mathfrak{su}(2)$;
+the block is not the commutator of the model, and it is the conjugation that breaks the Jacobi
+identity. The invariants are $\operatorname{Tr}\mathsf{M}_2(\tilde p\diamond\tilde q)=0$,
+$\det\mathsf{M}_2(\tilde p\diamond\tilde q)=N(\tilde p\diamond\tilde q)=|\tilde p\diamond\tilde q|^2$ and
+$\mathsf{M}_2(\tilde p\diamond\tilde q)^2=-N(\tilde p\diamond\tilde q)\mathrm{I}_2$. The trace of the
+model with the conjugate reads the quaternion form, $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=N(\tilde p,\tilde q)$,
+the plain trace reads the plain form, the unique invariant form of the block is
+$\varphi=p_0q_0=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\operatorname{Tr}\mathsf{M}_2(\tilde q)$,
+and the operator trace form is $\tfrac12(N+5B)=3p_0q_0-2\,\mathbf p\cdot\mathbf q$. The six products are
+the matrix product and its symmetric and antisymmetric halves, and the conjugated matrix product and its
+halves.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2(\tilde q)$</td>
+<td>the two by two complex model</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde p\diamond\tilde q)=\tfrac12[\mathsf{M}_2(\tilde p)^{\dagger},\mathsf{M}_2(\tilde q)]$</td>
+<td>the block as the halved conjugated commutator</td>
+</tr>
+<tr>
+<td>anti-Hermitian traceless</td>
+<td>the image, the Lie algebra $\mathfrak{su}(2)$</td>
+</tr>
+<tr>
+<td>$\det=N(\tilde p\diamond\tilde q)$, $X^2=-N(X)\mathrm{I}_2$</td>
+<td>the invariants</td>
+</tr>
+<tr>
+<td>$\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=N(\tilde p,\tilde q)$</td>
+<td>the quaternion form</td>
+</tr>
+<tr>
+<td>$\varphi=p_0q_0=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\operatorname{Tr}\mathsf{M}_2(\tilde q)$</td>
+<td>the unique invariant form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions</em>, for the model, the basis images and the multiplicativity.</li>
+<li><em>Introduction to the Antisymmetric Quaternionic Algebra of Quaternions</em> and <em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</em>, below this article in this category, for the block and its failure.</li>
+<li><em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>, below this article in this category, for the unique invariant form and the operator trace form.</li>
+<li><em>The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, above this article in this category, for the companion block on the same model.</li>
+<li><em>The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>, below this article in this category, for the companion model.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

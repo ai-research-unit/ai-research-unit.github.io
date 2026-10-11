@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Form and the Cone of the Split-Complex Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-form-and-the-cone-of-the-split-complex-algebra"><strong>The Hermitian Form and the Cone of the Split-Complex Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The sesquilinear product of the split-complex space is the form $H(A,C) = A\bar C$ on its regular module. The present article reads that form as a <strong>form</strong>: its two slots, its conjugate symmetry, its Gram matrix and its signature; its <strong>positivity</strong>, which is indefinite, and the <strong>cone</strong> that replaces the positive-definite cone of the complex case; the <strong>modules</strong> over the ring, which decompose as pairs of real spaces through the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$, with the classification of the Hermitian forms over them.</p>
+<p>The results are the two-dimensional end of the family and they are sharper than in the four-dimensional case. The form $H$ is conjugate-symmetric, $\mathbb{D}$-linear in the first slot and $\bar\cdot$-semilinear in the second, and its realified scalar part is the indefinite form $g(A,C) = ac-a'c'$ of signature $(1,1)$. The form is <strong>indefinite</strong>: $H(1,1) = 1$ and $H(j,j) = -1$. It therefore defines no positive cone through its Hermitian square, since $A\bar A = N(A) = a^2-a'^2$ already takes every real value; the cone that survives is the <strong>cone of squares</strong> of the plain product, $\mathcal{C} = \{A_+\ge0, A_-\ge0\} = \{a\ge\lvert a'\rvert\}$, the order cone, closed, convex, pointed, generating and self-dual for $g$, whose boundary meets the null cone in the two positive rays. On $\mathcal{C}$ the reversed Cauchy–Schwarz inequality holds. The Hermitian forms on the modules are classified by a real matrix, hence up to isometry by its rank; every nondegenerate form is isometric to the standard one and is <strong>hyperbolic</strong>, the two idempotent halves supplying a Lagrangian, so the Witt group of the ring is trivial.</p>
+<p><strong>Placement.</strong> The article is the second entry of the split-complex general-plain-sesqualgebra block, after <em>The Sesquilinear Product of the Split-Complex Space</em> and before the synthesis <em>The Two Products of the Split-Complex Space and Their Two Slots</em>, below this article in this category; it closes the sesquilinear side. The product itself, its associator, its one-sided multiplications, its sandwich, its adjoints and its commutator are the first article of the block. The scalar form $g$ and the norm are <em>The Two Forms and the Two Algebraic Norms of the Split-Complex Space</em> and <em>Split-Complex Norm and Invertibility</em>; the cone of squares, its order and the classes of element are <em>The Classes of Element of the Split-Complex Algebra</em>; the null cone and the zero divisors are <em>Split-Complex Zero Divisors</em>; and the subspaces with their forms are <em>Remarkable Subspaces of the Split-Complex Numbers and the Two Forms</em>. The biquaternion counterparts are <em>The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</em>, <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em> and <em>Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint</em>, below this chapter.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$, general element $A = a+ja'$, conjugate $\bar A = a-ja'$, idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$, idempotent coordinates $A_\pm = a\pm a'$, real part $\operatorname{Sc}A = a$. The form is written $H$ and is the general plain sesquilinear form of the space; the associated symmetric bilinear form is $g$; the two involutions $\overline{\cdot}$ and ${}^{\natural}$ of <em>Conventions in Mathematics</em> coincide on $\mathbb{D}$, the natural sign being the identity, so the conjugation of the coefficient ring is trivial and only the bar has a sense. A <strong>module</strong> is a left $\mathbb{D}$-module, and the regular module is $\mathbb{D}$ itself.</p>
+<h2 id="the-canonical-hermitian-form">The Canonical Hermitian Form</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The <strong>canonical Hermitian form</strong> of the regular module is</p>
+<p>$$
+H : \mathbb{D} \times \mathbb{D} \longrightarrow \mathbb{D}, \qquad
+H(A,C) = A \star C = A\bar C = (ac-a'c') + (a'c-ac')j .
+$$</p>
+<p>It is the general plain sesquilinear form of the split-complex space, the sesquilinear product of <em>The Sesquilinear Product of the Split-Complex Space</em> read as a form.</p>
+<h3 id="conjugate-symmetry-and-the-two-slots">Conjugate Symmetry and the Two Slots</h3>
+<p><strong>Proposition.</strong> The form is additive in each slot; it is $\mathbb{D}$-linear in the first and $\bar\cdot$-semilinear in the second,</p>
+<p>$$
+H(\lambda A, C) = \lambda\,H(A,C), \qquad H(A,\lambda C) = \bar\lambda\,H(A,C), \qquad \lambda \in \mathbb{D},
+$$</p>
+<p>and it is <strong>conjugate-symmetric</strong>,</p>
+<p>$$
+H(C,A) = \overline{H(A,C)} .
+$$</p>
+<p><strong>Proof.</strong> The two scalar rules are those of the product, already proved in <em>The Sesquilinear Product of the Split-Complex Space</em>. For the symmetry, $H(C,A) = C\bar A$ and $\overline{H(A,C)} = \overline{A\bar C} = \bar A C$, which is equal to $C\bar A$ by commutativity.</p>
+<p>The form is thus Hermitian with respect to the conjugation, in the sense of the ring with involution $(\mathbb{D},\bar\cdot)$. It is not symmetric and not bilinear, and it is not $\mathbb{D}$-bilinear: the second slot is twisted. The scalar product $A\bar A = N(A)$ of an element with itself is real, as conjugate symmetry forces, and it is the norm.</p>
+<h3 id="the-gram-matrix-and-the-signature">The Gram Matrix and the Signature</h3>
+<p><strong>Proposition.</strong> In the basis $\{1,j\}$ the Gram matrix of $H$ is</p>
+<p>$$
+G = \begin{pmatrix} H(1,1) & H(1,j) \\ H(j,1) & H(j,j) \end{pmatrix}
+= \begin{pmatrix} 1 & -j \\ j & -1 \end{pmatrix},
+$$</p>
+<p>conjugate-symmetric, with $G_{ij} = \overline{G_{ji}}$. The realified scalar part has the diagonal Gram matrix</p>
+<p>$$
+\operatorname{Sc} H = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
+$$</p>
+<p>of signature $(1,1)$, and the associated symmetric bilinear form is</p>
+<p>$$
+g(A,C) = \operatorname{Sc} H(A,C) = ac-a'c' .
+$$</p>
+<p><strong>Proof.</strong> $H(1,1) = 1$, $H(1,j) = \bar j = -j$, $H(j,1) = j$ and $H(j,j) = j\bar j = -j^2 = -1$; the conjugate symmetry of the matrix is the proposition above read coefficientwise. The scalar part of $A\bar C = (ac-a'c')+(a'c-ac')j$ is $ac-a'c'$, whose matrix in the basis $\{1,j\}$ is diagonal with entries $1$ and $-1$.</p>
+<p>So the form has <strong>signature $(1,1)$</strong>: one positive and one negative direction over the reals, the positive direction being the real line and the negative one the split imaginary line. The two directions are orthogonal, since $g(1,j) = 0$. The $\mathbb{D}$-valued Gram matrix $G$ is not the right carrier of the nondegeneracy, since its determinant vanishes, $\det G = -1-j^2 = 0$; the nondegeneracy is read on the real matrix of the next section. The form $g$ is the polarisation of the norm, $N(A) = g(A,A) = A\bar A$, and this article's form theory is the case $n = 1$ of the modules of the section below. The full description of the two forms and the two norms, their signatures and their collapse from the four of the biquaternion algebra, is <em>The Two Forms and the Two Algebraic Norms of the Split-Complex Space</em>. The sign of the square is what decides the definiteness: the complex structure has $J^2=-\mathrm{id}$ and its canonical Hermitian form is definite, while the split structure has $J^2=+\mathrm{id}$ and its canonical Hermitian form is indefinite, of signature $(1,1)$.</p>
+<h2 id="positivity-and-the-cone">Positivity and the Cone</h2>
+<h3 id="indefiniteness">Indefiniteness</h3>
+<p><strong>Theorem.</strong> The form $H$ is <strong>indefinite</strong>: it is neither positive semidefinite nor negative semidefinite, and it has isotropic vectors other than $0$.</p>
+<p><strong>Proof.</strong> $H(1,1) = 1 > 0$ and $H(j,j) = -1 < 0$, so the scalar part takes both signs; that already excludes both semidefiniteness. The isotropic set is non-zero since $H(1+j,1+j) = N(1+j) = 0$.</p>
+<p>The indefinite form is the two-dimensional member of the family in which no definite form exists. For the complex field the canonical form $A\bar C$ is already positive definite, and every nonzero element has positive square length; on $\mathbb{D}$ the two sign directions are present in every basis pair $\{1,j\}$, and the isotropic set is a pair of lines rather than the origin alone.</p>
+<h3 id="the-hermitian-square-gives-no-cone">The Hermitian Square Gives No Cone</h3>
+<p><strong>Proposition.</strong> The Hermitian square of the form, the map $A \mapsto A\bar A = N(A)$, has image all of $\mathbb{R}_{\mathbb{D}}$:</p>
+<p>$$
+\{A\bar A : A \in \mathbb{D}\} = \mathbb{R}.
+$$</p>
+<p><strong>Proof.</strong> $A\bar A = a^2-a'^2$ is real for every $A$, and it is an arbitrary real number: for a given $t\in\mathbb{R}$ the element</p>
+<p>$$
+A = \frac{t+1}{2} + j\,\frac{1-t}{2}
+$$</p>
+<p>satisfies $A\bar A = \frac{(t+1)^2-(1-t)^2}{4} = t$. So the image is all of $\mathbb{R}$.</p>
+<p>So the sesquilinear side of the ring produces <strong>no positive cone</strong>. The positive cone of a Hermitian form is the image of the form on the diagonal, and here that image is the whole real line rather than a half-line or a cone; the reason is indefiniteness, and it is the sharpest contrast with the complex case, where the image of $A\bar A$ is the ray $\mathbb{R}_{\ge0}$. The biquaternion case is again the resolved one: there the form is the definite scalar product of the resolved reading, positive definite on the Hermitian sector and its image a proper cone. On $\mathbb{D}$ the indefinite form has no positive cone at all, and the cone of the ring is carried by the <em>plain</em> product instead.</p>
+<h3 id="the-cone-of-squares">The Cone of Squares</h3>
+<p><strong>Definition.</strong> The <strong>cone of squares</strong> of $\mathbb{D}$ is the image of the squaring map of the plain product,</p>
+<p>$$
+\mathcal{C} = \{A^2 : A \in \mathbb{D}\} = \{A : A_+ \ge 0,\; A_- \ge 0\} = \{A = a+ja' : a \ge \lvert a'\rvert\},
+$$</p>
+<p>the set on which both idempotent coordinates are non-negative.</p>
+<p><strong>Theorem.</strong> The cone $\mathcal{C}$ is a <strong>symmetric cone</strong>: it is closed, convex, salient (pointed), generating, and self-dual with respect to the scalar form $g$,</p>
+<p>$$
+\mathcal{C}^{*} = \{C : g(A,C) \ge 0 \ \text{for all } A \in \mathcal{C}\} = \mathcal{C}.
+$$</p>
+<p><strong>Proof.</strong> The identification of the image with the coordinate description is the criterion of square roots of <em>The Classes of Element of the Split-Complex Algebra</em>. Closure and convexity: the idempotent coordinates of a non-negative combination of elements of $\mathcal{C}$ are non-negative. Salience: if $A$ and $-A$ both lie in $\mathcal{C}$ then $A_\pm \ge 0$ and $-A_\pm \ge 0$, so $A = 0$. Generating: $A = A_+\Pi_1 + A_-\Pi_2$ is the difference of the two elements $\max(A_+,0)\Pi_1 + \max(A_-,0)\Pi_2$ and $\max(-A_+,0)\Pi_1+\max(-A_-,0)\Pi_2$ of $\mathcal{C}$, so $\mathcal{C}-\mathcal{C} = \mathbb{D}$. Self-duality: in idempotent coordinates $g(A,C) = \tfrac12(A_+C_- + A_-C_+)$, so $g(\Pi_1,C) = \tfrac12 C_-$ and $g(\Pi_2,C) = \tfrac12 C_+$; if $C \notin \mathcal{C}$ then one of $C_+, C_-$ is negative, and taking $A = \Pi_2$ (if $C_+ < 0$) or $A = \Pi_1$ (if $C_- < 0$) gives $g(A,C) < 0$ with $A \in \mathcal{C}$, so $C \notin \mathcal{C}^{*}$; conversely $A_\pm \ge 0$ and $C_\pm \ge 0$ give $g(A,C)\ge0$, so $\mathcal{C}\subset\mathcal{C}^{*}$. Hence $\mathcal{C}^{*} = \mathcal{C}$.</p>
+<p>The coordinates $A_\pm$ diagonalise the cone and the form together, which is why the computations are one-dimensional. The cone of squares of the plain product is the order cone on $\mathbb{D}$: it defines the partial order $A \preceq C \iff C-A \in \mathcal{C}$, and the squares are its non-negative elements, $A^2 \in \mathcal{C}$ for every $A$. No element acts as the order unit or the identity of the order beyond $1$, which is interior to the cone since $1_\pm = 1 > 0$.</p>
+<h3 id="the-relation-to-the-null-cone-and-the-zero-divisors">The Relation to the Null Cone and the Zero Divisors</h3>
+<p><strong>Theorem.</strong> The isotropic cone of $H$ is the null cone, and it is the union of the two boundaries of the double cone of non-negativity:</p>
+<p>$$
+\{A : H(A,A) = 0\} = \mathcal{N} = \partial\mathcal{C} \cup \partial(-\mathcal{C}) = \mathbb{R}\Pi_1 \cup \mathbb{R}\Pi_2,
+$$</p>
+<p>where $\partial\mathcal{C} = \mathbb{R}_{\ge0}\Pi_1\cup\mathbb{R}_{\ge0}\Pi_2$. The zero divisors are $\mathcal{N}\setminus\{0\}$.</p>
+<p><strong>Proof.</strong> $H(A,A) = A\bar A = N(A) = a^2-a'^2$, which vanishes iff $(a-a')(a+a') = 0$, i.e. $A \in \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$; the identification of the null cone with the zero divisors is <em>Split-Complex Zero Divisors</em>. The half-line description is read from the signs of $A_\pm$.</p>
+<p>So the isotropic set of $H$ is the null cone, a cross of two lines of real dimension $1$, and the zero divisors are its nonzero points. The cone $\mathcal{C}$ meets it in the two non-negative rays, which are the boundary of the order cone, and the points of the null cone are exactly the elements across which the sign of $N$ changes. The form $H$ is indefinite, the real line being its positive direction and the split imaginary line its negative one; the norm $N$, its sign and the distribution of the invertible elements are <em>Split-Complex Norm and Invertibility</em>.</p>
+<h3 id="the-reversed-cauchyschwarz-inequality">The Reversed Cauchy–Schwarz Inequality</h3>
+<p><strong>Theorem (reversed Cauchy–Schwarz).</strong> For $A, C$ in the closed cone $\mathcal{C}$, with $g$ the scalar form,</p>
+<p>$$
+g(A,C)^2 \;\ge\; g(A,A)\,g(C,C),
+$$</p>
+<p>with equality if and only if $A$ and $C$ are proportional. On the interior of the cone all three quantities are positive, and the inequality is the reverse of the definite one.</p>
+<p><strong>Proof.</strong> In idempotent coordinates $g(A,C) = \tfrac12(A_+C_- + A_-C_+)$ and $g(A,A) = A_+A_- = N(A)$ and $g(C,C) = C_+C_-$, so</p>
+<p>$$
+g(A,C)^2 - g(A,A)\,g(C,C)
+= \tfrac14\big((A_+C_- + A_-C_+)^2 - 4\,A_+A_-\,C_+C_-\big)
+= \tfrac14\,(A_+C_- - A_-C_+)^2 \;\ge\; 0 .
+$$</p>
+<p>The middle expression is the arithmetic–geometric mean difference of the two non-negative numbers $\alpha = A_+C_-$ and $\beta = A_-C_+$. Equality holds exactly when $\alpha = \beta$, that is when $A_+C_- = A_-C_+$, which says that the pairs $(A_+,A_-)$ and $(C_+,C_-)$ are proportional and hence that $A$ and $C$ are proportional.</p>
+<p><strong>Remark.</strong> The inequality is the reverse of the Cauchy–Schwarz inequality of a definite form, and it holds on the cone because both idempotent coordinates are non-negative there, so the two products $\alpha$ and $\beta$ have the same sign. The reversed direction is the form-level statement of the indefiniteness: on a definite form the inequality points the other way, and its reversal is exactly the arrival of the isotropic cone, here the pair of lines $\mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$.</p>
+<h2 id="the-modules-over-the-ring">The Modules over the Ring</h2>
+<h3 id="the-decomposition-of-a-module">The Decomposition of a Module</h3>
+<p><strong>Theorem.</strong> Every left $\mathbb{D}$-module $M$ decomposes as a pair of real vector spaces,</p>
+<p>$$
+M = M_+ \oplus M_-, \qquad M_\pm = \Pi_\pm M,
+$$</p>
+<p>on which $\mathbb{D}$ acts through the two characters $A \mapsto A_\pm$; and the free module of rank $n$ is $\mathbb{D}^n = \mathbb{R}^n \oplus \mathbb{R}^n$.</p>
+<p><strong>Proof.</strong> The idempotents $\Pi_1,\Pi_2$ are central, orthogonal and complete, so $M = \Pi_1 M\oplus\Pi_2 M$; on $\Pi_1 M$ the element $A = A_+\Pi_1+A_-\Pi_2$ acts as the real scalar $A_+$ and on $\Pi_2 M$ as $A_-$; the assignment is the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ read on the module, and it is additive because the two idempotents commute with every scalar.</p>
+<p>So the module category of $\mathbb{D}$ is the product of two copies of the category of real vector spaces: every module is the pair $(M_+,M_-)$ of the two eigenspaces of the idempotents, every module is projective, and a finitely generated module is free of rank $n$ exactly when $\dim M_+ = \dim M_- = n$.</p>
+<h3 id="the-classification-of-the-hermitian-forms">The Classification of the Hermitian Forms</h3>
+<p><strong>Theorem.</strong> A Hermitian form $H$ on the free module $\mathbb{D}^n$ is determined by one real $n\times n$ matrix $P$: on the vectors $X = X_+\Pi_1 + X_-\Pi_2$ and $Y = Y_+\Pi_1+Y_-\Pi_2$, with $X_\pm, Y_\pm \in \mathbb{R}^n$,</p>
+<p>$$
+H(X,Y)_+ = X_+^{\mathrm T} P\,Y_-, \qquad H(X,Y)_- = X_-^{\mathrm T} P^{\mathrm T} Y_+ .
+$$</p>
+<p>Two such forms are isometric if and only if their matrices have the same rank; the invertible change of basis $(X_+,X_-)\mapsto(U_+X_+,U_-X_-)$ acts by $P \mapsto U_+^{\mathrm T} P U_-$, and the normal form is $\operatorname{diag}(I_r,0)$. In particular, a nondegenerate Hermitian form on $\mathbb{D}^n$ is one with $P$ invertible, and all of them are isometric to the standard form with $P = I$;</p>
+<p>$$
+H(X,Y)_+ = X_+^{\mathrm T}Y_-, \qquad H(X,Y)_- = X_-^{\mathrm T}Y_+ .
+$$</p>
+<p><strong>Proof.</strong> Write the Gram coefficients $G_{ij} = P_{ij}\Pi_1 + P_{ji}\Pi_2$ with real $P_{ij}$; then the conjugate symmetry $G_{ij} = \overline{G_{ji}}$ holds automatically, and the display is the coefficientwise computation of $H(X,Y) = \sum_{ij}G_{ij}X_i\bar Y_j$ using $X_i\bar Y_j = X_{i,+}Y_{j,-}\Pi_1 + X_{i,-}Y_{j,+}\Pi_2$. A $\mathbb{D}$-linear automorphism is a pair $(U_+,U_-)$ of invertible real matrices, and it preserves $H$ exactly when $U_+^{\mathrm T}PU_- = P$. Since left and right multiplication by invertible matrices reduces any $P$ to $\operatorname{diag}(I_r,0)$ with $r = \operatorname{rank}P$, the isometry class is the rank. Nondegeneracy is $P$ invertible, by the same display.</p>
+<p>So the classification is by a single integer, the rank, and the three-dimensional phenomenon of the biquaternion algebra — the interplay of the two involutions ${}^{\natural}$ and ${}^{*}$ and the coefficient conjugation, and the finer invariants of a central simple algebra — is replaced here by the classification of one real matrix. The $\mathbb{D}$-valued Gram matrix of the regular module is the case $n = 1$, $P = 1$; the canonical form of the first section is the standard nondegenerate form of rank one.</p>
+<h3 id="the-hyperbolic-witt-group">The Hyperbolic Witt Group</h3>
+<p><strong>Theorem.</strong> Every nondegenerate Hermitian form over $(\mathbb{D},\bar\cdot)$ is <strong>hyperbolic</strong>: it has a Lagrangian, a submodule of half the $\mathbb{R}$-dimension equal to its own orthogonal complement. Consequently the Witt group of the Hermitian forms over $(\mathbb{D},\bar\cdot)$, the <strong>hyperbolic Witt group</strong> of the ring, is trivial.</p>
+<p><strong>Proof.</strong> It suffices to show the standard form of the second theorem hyperbolic, since every nondegenerate form is isometric to it. On $\mathbb{D}^n$ with $H(X,Y)_\pm$ as displayed, take</p>
+<p>$$
+L = \mathbb{R}^n\Pi_1 = \{(X_+,0)\} ;
+$$</p>
+<p>then $H$ vanishes identically on $L$, since $H(X,Y)_+ = X_+^{\mathrm T}\cdot 0 = 0$ and $H(X,Y)_- = 0^{\mathrm T}\cdot Y_+ = 0$ for $X,Y\in L$, and the orthogonal complement is $L$ itself, since $H(X,Y) = 0$ for all $X\in L$ forces $Y_- = 0$. The submodule $L$ has real dimension $n$, half the real dimension $2n$ of $\mathbb{D}^n$, so it is a Lagrangian. A form with a Lagrangian is metabolic, hence represents the zero class in the Witt group, and every nondegenerate form does so.</p>
+<p>So the Witt group of the sesquilinear forms over the split-complex ring is the <strong>trivial group</strong> $\{0\}$. This is the algebraic expression of the indefiniteness: a definite form is never metabolic, so a Witt group generated by a definite form is infinite cyclic as over the reals, while the split-complex ring has no definite form and its only nondegenerate class is the hyperbolic one, which is zero. The same two idempotent halves that make every form hyperbolic make every module self-dual and cancel the Witt group.</p>
+<h2 id="comparison-with-the-complex-and-biquaternion-cases">Comparison with the Complex and Biquaternion Cases</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathbb{C}$</th>
+<th>$\mathbb{D}$</th>
+<th>$\mathbb{B}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>canonical form $H(A,C)$</td>
+<td>$A\bar C$</td>
+<td>$A\bar C$</td>
+<td>$\tilde P\tilde R^{*}$</td>
+</tr>
+<tr>
+<td>definiteness</td>
+<td>positive definite</td>
+<td>indefinite, signature $(1,1)$</td>
+<td>indefinite Krein form</td>
+</tr>
+<tr>
+<td>isotropic cone</td>
+<td>$\{0\}$</td>
+<td>null cone, $\mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$</td>
+<td>null cone, $\dim_\mathbb{C} 3$</td>
+</tr>
+<tr>
+<td>image of $A\bar A$</td>
+<td>$\mathbb{R}_{\ge0}$, a ray</td>
+<td>all of $\mathbb{R}$, no cone</td>
+<td>the Hermitian cone</td>
+</tr>
+<tr>
+<td>positive cone</td>
+<td>the ray</td>
+<td>none from $H$; the order cone $\mathcal{C}$ from the plain product</td>
+<td>the Hermitian cone $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>reversed Cauchy–Schwarz</td>
+<td>no (definite)</td>
+<td>yes on $\mathcal{C}$</td>
+<td>on the Hermitian cone</td>
+</tr>
+<tr>
+<td>Hermitian forms classified by</td>
+<td>signature $(p,q)$</td>
+<td>rank of a real matrix</td>
+<td>finer invariants of a central simple algebra</td>
+</tr>
+<tr>
+<td>Witt group</td>
+<td>$\mathbb{Z}$, by signature</td>
+<td>$\{0\}$, hyperbolic</td>
+<td>nontrivial hyperbolic Witt group</td>
+</tr>
+</tbody>
+</table></div>
+<p>The line that separates the three cases is <strong>definiteness</strong>. Over the complex field the canonical form is positive definite, its diagonal image is a ray, the isotropic cone is the origin, the Cauchy–Schwarz inequality holds in the usual direction, and every nondegenerate Hermitian form is classified by its signature, so the Witt group is the infinite cyclic group generated by the definite form. Over the split-complex ring the canonical form is indefinite, its diagonal image is all of the real line, the isotropic cone is a pair of lines, the reversed Cauchy–Schwarz inequality holds on the order cone, and every nondegenerate form is hyperbolic, so the Witt group collapses. Over the biquaternion algebra the form is the indefinite Krein form of the resolved reading, definite on the Hermitian sector, and the module theory keeps the finer invariants of a central simple algebra together with a nontrivial hyperbolic Witt group. The split-complex case is the minimal one in which the indefinite signature is present and the positive cone has to be sought in another product.</p>
+<h2 id="summary">Summary</h2>
+<p>The canonical Hermitian form of the split-complex regular module is $H(A,C) = A\bar C$, $\mathbb{D}$-linear in the first slot and $\bar\cdot$-semilinear in the second, conjugate-symmetric. Its Gram matrix in the basis $\{1,j\}$ is $\left(\begin{smallmatrix}1&-j\\j&-1\end{smallmatrix}\right)$, whose scalar part is diagonal of signature $(1,1)$; the associated symmetric bilinear form is $g(A,C) = ac-a'c'$, the polarisation of the norm.</p>
+<p>The form is <strong>indefinite</strong>, and its diagonal image $A\bar A = N(A) = a^2-a'^2$ is all of $\mathbb{R}$, so the sesquilinear side supplies no positive cone: this is the sharp contrast with the complex ray and with the Hermitian cone of the biquaternion algebra. The cone of the ring is the <strong>cone of squares</strong> of the plain product, $\mathcal{C} = \{A_+\ge0, A_-\ge0\} = \{a\ge\lvert a'\rvert\}$, a symmetric cone — closed, convex, salient, generating and self-dual for $g$ — carrying the order of $\mathbb{D}$; its boundary is the two positive rays of the null cone, and the isotropic cone of $H$ is that null cone, the zero divisors with the origin. On $\mathcal{C}$ the reversed Cauchy–Schwarz inequality $g(A,C)^2 \ge g(A,A)g(C,C)$ holds, with equality exactly for proportional pairs.</p>
+<p>The modules over the ring decompose as pairs of real vector spaces through $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$; the Hermitian forms on $\mathbb{D}^n$ are determined by a real matrix $P$, classified up to isometry by its rank, with a unique nondegenerate form in each rank, isometric to the standard one. Every nondegenerate form is hyperbolic — the two idempotent halves supply the Lagrangian $\mathbb{R}^n\Pi_1$ — so the hyperbolic Witt group of the ring is trivial, against the nontrivial groups of the complex and biquaternion cases.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D} = \mathbb{R}[x]/(x^2-1)$</td>
+<td>Split-complex algebra</td>
+</tr>
+<tr>
+<td>$H(A,C) = A\bar C$</td>
+<td>Canonical Hermitian form on the regular module</td>
+</tr>
+<tr>
+<td>$H(C,A) = \overline{H(A,C)}$</td>
+<td>Conjugate symmetry</td>
+</tr>
+<tr>
+<td>$g(A,C) = \operatorname{Sc}H(A,C) = ac-a'c'$</td>
+<td>Scalar form, polarisation of the norm</td>
+</tr>
+<tr>
+<td>$\left(\begin{smallmatrix}1&-j\\j&-1\end{smallmatrix}\right)$</td>
+<td>Gram matrix of $H$; scalar part of signature $(1,1)$</td>
+</tr>
+<tr>
+<td>$\mathcal{N} = \{N = 0\}$</td>
+<td>Isotropic cone of $H$, the null cone</td>
+</tr>
+<tr>
+<td>$N(A) = A\bar A = a^2-a'^2$</td>
+<td>Hermitian square; its image is all of $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\mathcal{C} = \{A_+\ge0, A_-\ge0\} = \{a\ge\lvert a'\rvert\}$</td>
+<td>Cone of squares, the order cone, a symmetric cone</td>
+</tr>
+<tr>
+<td>$\mathcal{C}^{*} = \mathcal{C}$</td>
+<td>Self-duality with respect to $g$</td>
+</tr>
+<tr>
+<td>$g(A,C)^2 \ge g(A,A)g(C,C)$ on $\mathcal{C}$</td>
+<td>Reversed Cauchy–Schwarz inequality</td>
+</tr>
+<tr>
+<td>$\mathbb{D}^n = \mathbb{R}^n\oplus\mathbb{R}^n$</td>
+<td>Decomposition of a free module</td>
+</tr>
+<tr>
+<td>$H(X,Y)_\pm = X_\pm^{\mathrm T}P\,Y_\mp$</td>
+<td>Hermitian form of matrix $P$; isometry by rank $P$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^n\Pi_1$</td>
+<td>Lagrangian of the standard form; hyperbolic forms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, Grundlehren der mathematischen Wissenschaften 294, 1991), for Hermitian forms over a ring with involution, their classification and their Witt group.</li>
+<li>Winfried Scharlau, <em>Quadratic and Hermitian Forms</em> (Springer, Grundlehren der mathematischen Wissenschaften 270, 1985), for signatures, isotropic cones and the Witt group of a form.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for the Cauchy–Schwarz and reversed Cauchy–Schwarz inequalities and the geometry of indefinite forms.</li>
+<li>John B. Conway, <em>A Course in Functional Analysis</em> (Springer, Graduate Texts in Mathematics 96, 2nd ed. 1990), for indefinite inner product spaces, their isotropic cones and their cones of positivity.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for modules over a product of fields, their decompositions and their endomorphism rings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

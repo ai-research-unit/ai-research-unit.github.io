@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Topology on the Quaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-topology-on-the-quaternions"><strong>Introduction to Topology on the Quaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article opens the topological half of the chapter. The quaternion algebra is a real vector space of dimension four, so it carries the Euclidean topology of that space; its multiplicative structure cuts out three objects, the whole space, the unit sphere, and the complement of the origin, and the article names them and maps the articles that study them. It states the topology and does not develop it: the algebra of the block is the article before it, and the metric statements are the concern of the articles below.</p>
+<p><strong>Boundaries.</strong> This is the entry of the topological half. The algebra is <em>Introduction to the Symmetric Quaternionic Algebra of Quaternions</em> and its block, above this article in this category; the topology of the algebra is <em>Quaternion Topology</em>, below this article in this category; the group of units is <em>The Quaternion Unit Group as a Topological Group</em> and the arithmetic of its finite subgroups is <em>Quaternion Orders and Finite Groups of Units</em>, both below this article in this category; the metrics are <em>Quaternion Metrics</em> and <em>Topology and Metric for Each of the Six Operations</em>, below this article in this category. The biquaternion parallel is <em>Topology in the Space of Biquaternions</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The <strong>quaternion form</strong> is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$, the <strong>quadratic form</strong> is $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$, and the <strong>quaternion conjugation</strong> is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity. Metric words are used in this half of the chapter only, and the <em>norm</em> here is the function $\lvert\tilde q\rvert=\sqrt{N(\tilde q)}$.</p>
+<h2 id="the-space-and-its-norm">The Space and Its Norm</h2>
+<p><strong>Proposition (the space).</strong> The identification $\tilde q\mapsto(q_0,q_1,q_2,q_3)$ is a vector-space isomorphism $\mathbb{H}\cong\mathbb{R}^4$, and $\mathbb{H}$ carries the Euclidean topology of $\mathbb{R}^4$: the product and the addition and the scalar multiplication are continuous, and the topology is induced by the norm $\lvert\tilde q\rvert=\sqrt{q_0^{2}+q_1^{2}+q_2^{2}+q_3^{2}}$.</p>
+<p><em>Proof.</em> The coordinates are linear, so the two vector spaces are the same space with a chosen basis; the norm is the square root of the positive definite quadratic form $N$, and the product is given by polynomial formulas in the coordinates, hence continuous.</p>
+<p><strong>Proposition (the norm is multiplicative and the inverse is continuous).</strong> $\lvert\tilde p\tilde q\rvert=\lvert\tilde p\rvert\lvert\tilde q\rvert$, and the inversion map $\tilde q\mapsto\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$ is continuous on the complement of the origin.</p>
+<p><em>Proof.</em> Multiplicativity of $N$ is the multiplicativity of the plain product, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$; the inverse formula is <em>Norm and Invertibility in the General Plain Algebra</em>, and its coordinates are rational with denominator $N(\tilde q)\neq0$.</p>
+<h2 id="the-three-objects">The Three Objects</h2>
+<p><strong>Definition (the three objects).</strong> On the quaternion space this topology distinguishes</p>
+<p>$$
+\mathbb{H}\quad(\text{the whole space}),\qquad
+S^3=\{\tilde q:N(\tilde q)=1\}\quad(\text{the unit sphere}),\qquad
+\mathbb{H}^\times=\{\tilde q\neq0\}\quad(\text{the punctured space}).
+$$</p>
+<p><strong>Theorem (the algebra is contractible).</strong> The space $\mathbb{H}$ is contractible; it is connected, simply connected, and locally compact, and no homotopy group of it detects the multiplication.</p>
+<p><em>Proof.</em> $\mathbb{H}$ is a real vector space; the straight-line homotopy $\tilde q\mapsto t\tilde q$ retracts it to the origin, so it is contractible, and a contractible space is connected and has trivial homotopy groups. The vector space is locally compact.</p>
+<p><strong>Theorem (the unit sphere).</strong> The unit sphere $S^3$ is a compact connected subspace of $\mathbb{H}$, homeomorphic to the Euclidean three-sphere, and it is the group of unit quaternions $Sp(1)$ under the plain product; the group operations are continuous, so $S^3$ is a compact topological group.</p>
+<p><em>Proof.</em> $S^3=\{N=1\}$ is the zero set of a continuous function on the closed unit ball, hence compact, and it is the sphere of the norm; the plain product of two unit quaternions is a unit quaternion by multiplicativity of $N$, and the operations are restrictions of the continuous product and inverse.</p>
+<p><strong>Remark (the punctured space is a product).</strong> The map</p>
+<p>$$
+\mathbb{H}^\times\longrightarrow\mathbb{R}_{>0}\times S^3,\qquad
+\tilde q\longmapsto\bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr),
+$$</p>
+<p>is a homeomorphism, and an isomorphism of topological groups when the first factor is given its multiplicative structure; the display is the decomposition of the group of units, and its proof, together with the topology of the group, is <em>The Quaternion Unit Group as a Topological Group</em>, below this article in this category. The homeomorphism is named here because it is the bridge between the punctured space and the sphere, and it is not reproved here.</p>
+<h2 id="the-map-of-the-topological-articles">The Map of the Topological Articles</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the topology of the algebra, connectedness, compactness, the structure of the space</td>
+<td><em>Quaternion Topology</em></td>
+</tr>
+<tr>
+<td>the group of units, its decomposition, its exponential</td>
+<td><em>The Quaternion Unit Group as a Topological Group</em></td>
+</tr>
+<tr>
+<td>the orders and the finite subgroups of the unit sphere</td>
+<td><em>Quaternion Orders and Finite Groups of Units</em></td>
+</tr>
+<tr>
+<td>the metric of the quaternion space and its subspaces</td>
+<td><em>Quaternion Metrics</em></td>
+</tr>
+<tr>
+<td>the metric read for each of the six products</td>
+<td><em>Topology and Metric for Each of the Six Operations</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-contrast-with-the-biquaternion-chapter">The Contrast with the Biquaternion Chapter</h2>
+<p><strong>Proposition (the four objects that shrink, and the one that stays).</strong> The biquaternion space is a complex vector space of complex dimension four, hence a real space of dimension eight, and its topology carries one object with no quaternion counterpart: the <strong>null cone</strong></p>
+<p>$$
+\mathcal N=\{\tilde Q:N(\tilde Q,\tilde Q)=0\},
+$$</p>
+<p>a cone of real dimension six, cut out by the vanishing of the indefinite complex form; the quaternion form is definite, so the null cone of $\mathbb{H}$ is the single point $0$ and there is nothing to carry. The unit sphere of $\mathbb{B}$ is $S^7$ in $\mathbb{R}^8$, against $S^3$ in $\mathbb{R}^4$; the group of units is $\mathbb{B}^\times$ of real dimension eight, against $\mathbb{H}^\times\cong\mathbb{R}_{>0}\times S^3$ of real dimension four; and the group of units $\mathbb{B}^\times$, the complement of the null cone, is not simply connected, against the simply connected $\mathbb{H}^\times\cong\mathbb{R}_{>0}\times S^3$. The two algebras are both vector spaces and are both contractible, so the contrast lies in the units and not in the space.</p>
+<p><em>Proof.</em> The dimension counts are those of the underlying real spaces; the isotropic set of the biquaternion form is <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em> (biquaternion), and it is the complex cone of the singular elements, of complex dimension three and real dimension six; over $\mathbb{R}$ the form is definite, so the isotropic set is $\{0\}$, which is the statement of <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>, above this article in this category.</p>
+<p><strong>Remark (why the ladder differs).</strong> Over $\mathbb{R}$ the algebra is a division algebra and its topology is the topology of a vector space with a sphere removed from the origin; over $\mathbb{C}$ the zero divisors cut a cone out of the algebra and the topology has a singular stratum. The four articles below read, in order, the space, the units, the discrete subgroups of the sphere, and the metrics of the six products; the null cone has no place in the list.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion algebra is $\mathbb{R}^4$ with its Euclidean topology, the norm $\lvert\tilde q\rvert=\sqrt{N(\tilde q)}$ multiplicative and the inverse continuous off the origin. Three objects carry the topology: the whole space $\mathbb{H}$, which is contractible and simply connected; the unit sphere $S^3=\{N=1\}$, which is the compact connected topological group $Sp(1)$ of the unit quaternions; and the punctured space $\mathbb{H}^\times$, which is homeomorphic and group-isomorphic to $\mathbb{R}_{>0}\times S^3$. The topological articles of the chapter read the space, the unit group, the finite subgroups of the sphere through the orders, and the metrics of the quaternion space and of the six products. In the biquaternion chapter the corresponding objects are the null cone of real dimension six, the sphere $S^7$, and the group of units of real dimension eight; the definite form of the quaternion case replaces the cone by a point, and the whole ladder is one rung shorter.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lvert\tilde q\rvert=\sqrt{N(\tilde q)}$</td>
+<td>the norm, multiplicative on the algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$</td>
+<td>the punctured space, the group of units</td>
+</tr>
+<tr>
+<td>$S^3=\{N=1\}=Sp(1)$</td>
+<td>the unit sphere, the compact group of unit quaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^\times\cong\mathbb{R}_{>0}\times S^3$</td>
+<td>the product decomposition of the units</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{N=0\}$</td>
+<td>the null cone; a point $\{0\}$ over $\mathbb{R}$, a cone of real dimension $6$ over $\mathbb{C}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Symmetric Quaternionic Algebra of Quaternions</em> (<code>articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-quaternions.md</code>), for the algebra and its norm</li>
+<li><em>Quaternion Topology</em> (<code>articles_maths/quaternion-topology.md</code>), for the space and its structure</li>
+<li><em>The Quaternion Unit Group as a Topological Group</em> (<code>articles_maths/the-quaternion-unit-group-as-a-topological-group.md</code>) and <em>Quaternion Orders and Finite Groups of Units</em> (<code>articles_maths/quaternion-orders-and-finite-groups-of-units.md</code>), for the units</li>
+<li><em>Topology and Metric for Each of the Six Operations</em> (<code>articles_maths/topology-and-metric-for-each-of-the-six-operations.md</code>), for the metric reading of the six products</li>
+<li><em>Topology in the Space of Biquaternions</em> (<code>articles_maths/topology-in-the-space-of-biquaternions.md</code>), for the biquaternion parallel</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The General Plain Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-general-plain-algebra-in-the-22-matrix-element-representation-math0"><strong>The General Plain Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_0$ to the identity and $e_1,e_2,e_3$ to the negative imaginary multiples of the Pauli matrices. On that image the plain product is the matrix product, the plain form is half the trace pairing, and the invariants of the quaternion are the trace and the determinant of its image. This article reads the block's objects — the product, the form, the units, the inner automorphisms and the transpose — in the matrix model, and compares the embedding with the exact isomorphism of the biquaternion chapter. The norm and the invertibility criterion are <em>Norm and Invertibility in the General Plain Algebra</em>, above this article in this category; the form and the transpose are <em>Association and the Transpose on the General Plain Algebra</em>, above this article in this category; the operators are <em>Two-Sided Operators on the General Plain Algebra of Quaternions</em>, above this article in this category; the left regular model is <em>The General Plain Algebra in the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$</em>, below this article in this category.</p>
+<h2 id="the-embedding">The Embedding</h2>
+<p><strong>Definition.</strong> The <strong>matrix element representation</strong> is the map</p>
+<p>$$
+\mathsf{M}_2:\mathbb{H}\to M_2(\mathbb{C}),\qquad \mathsf{M}_2(e_0)=\mathbb{1},\quad \mathsf{M}_2(e_k)=-i\sigma_k\ (k=1,2,3),
+$$</p>
+<p>with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. In coordinates,</p>
+<p>$$
+\mathsf{M}_2(\tilde q)=\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix},\qquad \alpha=q_0-iq_3,\quad \beta=-iq_1-q_2 .
+$$</p>
+<p><strong>Theorem.</strong> $\mathsf{M}_2$ is an injective $\mathbb{R}$-algebra homomorphism, $\mathsf{M}_2(\tilde p\tilde q)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$; its image is the real four-dimensional subspace</p>
+<p>$$
+\mathsf{M}_2(\mathbb{H})=\Bigl\{\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}:\alpha,\beta\in\mathbb{C}\Bigr\}.
+$$</p>
+<p><em>Proof.</em> The Pauli matrices satisfy $\sigma_k^2=\mathbb{1}$ and $\sigma_1\sigma_2=i\sigma_3$ with the cyclic companions, so $\mathsf{M}_2(e_k)^2=-\mathbb{1}$ and $\mathsf{M}_2(e_1)\mathsf{M}_2(e_2)=\mathsf{M}_2(e_3)=-\mathsf{M}_2(e_2)\mathsf{M}_2(e_1)$; the defining relations of $\mathbb{H}$ are respected, and a bilinear map respecting them is a homomorphism. The image is as displayed by expanding, and $\alpha,\beta$ are free complex parameters, so the real dimension is $4$; injectivity is read from the coordinates: $q_0=\mathrm{Re}\,\alpha$, $q_3=-\mathrm{Im}\,\alpha$, $q_1=-\mathrm{Im}\,\beta$, $q_2=-\mathrm{Re}\,\beta$, so $\mathsf{M}_2(\tilde q)=0$ forces $\tilde q=0$.</p>
+<p><strong>Corollary (the dimensions).</strong> The image has real dimension $4$; it is a real form inside the complex four-dimensional algebra $M_2(\mathbb{C})$, so its complex span is all of $M_2(\mathbb{C})$, and the entries $\alpha,\beta$ are two complex coordinates while the quaternion has four real ones.</p>
+<p><em>Proof.</em> The image is closed under no multiplication by $i$ in general: $i\,\mathsf{M}_2(e_1)$ is not of the displayed shape; hence the complex span is larger, and it contains $\mathbb{1}$, $\sigma_k$, so it is $M_2(\mathbb{C})$.</p>
+<h2 id="the-product">The Product</h2>
+<p><strong>Theorem.</strong> The plain product corresponds to the matrix product: $\mathsf{M}_2(\tilde p\tilde q)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$. In particular $\mathsf{M}_2$ is multiplicative, carries the unit $e_0$ to the identity matrix, and the conjugate corresponds to the conjugate transpose, $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$.</p>
+<p><em>Proof.</em> The multiplicativity is the theorem above; for the conjugate, $\mathsf{M}_2(\tilde q^{\natural})$ has entries $\overline{\alpha},-\beta$ and their companions, which is $\mathsf{M}_2(\tilde q)^{\dagger}$.</p>
+<h2 id="the-form">The Form</h2>
+<p><strong>Theorem.</strong> The plain form is half the trace pairing:</p>
+<p>$$
+\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)\bigr).
+$$</p>
+<p><em>Proof.</em> $\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=\operatorname{tr}(\mathsf{M}_2(\tilde p\tilde q))=2(\tilde p\tilde q)_0=2\,\mathrm{Sc}(\tilde p\tilde q)$, because the trace of a quaternion image is twice its scalar part, as the diagonal entries $\alpha,\overline{\alpha}$ show.</p>
+<p><strong>Theorem (the coefficient Gram matrix).</strong> In the basis $e_0,e_1,e_2,e_3$ the Gram matrix of $\mathrm B$ is</p>
+<p>$$
+G_{\mu\nu}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(e_\mu)\mathsf{M}_2(e_\nu)\bigr)=\operatorname{diag}(1,-1,-1,-1)=D,
+$$</p>
+<p>of signature $(1,3)$.</p>
+<p><em>Proof.</em> $\mathsf{M}_2(e_0)=\mathbb{1}$ has trace $2$; $\mathsf{M}_2(e_k)=-i\sigma_k$ is traceless with square $-\mathbb{1}$, so $\operatorname{tr}(\mathsf{M}_2(e_k)^2)=-2$ and $\operatorname{tr}(\mathsf{M}_2(e_k)\mathsf{M}_2(e_l))=0$ for $k\neq l$ because distinct Pauli matrices have vanishing trace of their product.</p>
+<p><strong>Corollary.</strong> The form is indefinite; the trace pairing is the complex-linear extension of the same form, and its restriction to the image is $\mathrm B$ up to the factor two.</p>
+<h2 id="the-units-and-the-invariants">The Units and the Invariants</h2>
+<p><strong>Theorem (trace and determinant).</strong> For every $\tilde q$,</p>
+<p>$$
+\operatorname{tr}\mathsf{M}_2(\tilde q)=2q_0,\qquad \det\mathsf{M}_2(\tilde q)=N(\tilde q)=q_0^2+q_1^2+q_2^2+q_3^2 .
+$$</p>
+<p><em>Proof.</em> The trace is $\alpha+\overline{\alpha}=2\mathrm{Re}\,\alpha=2q_0$. The determinant is $\alpha\overline{\alpha}+\beta\overline{\beta}=|\alpha|^2+|\beta|^2=(q_0^2+q_3^2)+(q_1^2+q_2^2)=N(\tilde q)$, the second term because $-\overline{\beta}$ is the companion of $\beta$.</p>
+<p><strong>Corollary.</strong> $\tilde q$ is a unit exactly when $\det\mathsf{M}_2(\tilde q)\neq0$, that is exactly when $\mathsf{M}_2(\tilde q)\in GL_2(\mathbb{C})$; the determinant is positive, so the image of the group of units is the subgroup of $GL_2(\mathbb{C})$ of matrices of the displayed shape with positive determinant, isomorphic to $\mathbb{H}^{\times}$.</p>
+<p><em>Proof.</em> $\det\mathsf{M}_2(\tilde q)=N(\tilde q)>0$ for $\tilde q\neq0$; the determinant is multiplicative and the image is closed under products and inverses.</p>
+<h2 id="the-inner-automorphisms-and-the-transpose-as-form-preserving-maps">The Inner Automorphisms and the Transpose as Form-Preserving Maps</h2>
+<p><strong>Theorem (conjugation).</strong> For a unit $\tilde q$ the inner automorphism $\operatorname{Ad}_{\tilde q}$ corresponds to conjugation by the matrix $\mathsf{M}_2(\tilde q)$:</p>
+<p>$$
+\mathsf{M}_2(\operatorname{Ad}_{\tilde q}\tilde p)=\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{-1}.
+$$</p>
+<p><em>Proof.</em> Multiplicativity and $\mathsf{M}_2(\tilde q^{-1})=\mathsf{M}_2(\tilde q)^{-1}$.</p>
+<p><strong>Theorem.</strong> Conjugation by $\mathsf{M}_2(\tilde q)$ and the transpose preserve the trace pairing on $M_2(\mathbb{C})$; the conjugate transpose corresponds to the natural sign.</p>
+<p><em>Proof.</em> $\operatorname{tr}(\mathsf{M}_2(\tilde q)X\mathsf{M}_2(\tilde q)^{-1}\,\mathsf{M}_2(\tilde q)Y\mathsf{M}_2(\tilde q)^{-1})=\operatorname{tr}(\mathsf{M}_2(\tilde q)XY\mathsf{M}_2(\tilde q)^{-1})=\operatorname{tr}(XY)$; and $\operatorname{tr}(X^{\mathsf T}Y^{\mathsf T})=\operatorname{tr}((YX)^{\mathsf T})=\operatorname{tr}(YX)=\operatorname{tr}(XY)$. The last statement is the correspondence $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$ above.</p>
+<p><strong>Corollary.</strong> The inner automorphisms of $\mathbb{H}$ are the inner automorphisms of $M_2(\mathbb{C})$ that leave the real form $\mathsf{M}_2(\mathbb{H})$ stable, and they preserve the form $\mathrm B$; the transpose and the conjugate transpose likewise preserve the trace pairing, the first a complex-linear map and the second conjugate-linear.</p>
+<h2 id="comparison-with-the-exact-isomorphism-of-the-biquaternion-chapter">Comparison with the Exact Isomorphism of the Biquaternion Chapter</h2>
+<p>Over the complex coefficient field the corresponding statement is an isomorphism, not an embedding. The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra, with no dimension gap; the quaternion algebra embeds as a real form of the same matrix algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>$\mathbb{H}\hookrightarrow M_2(\mathbb{C})$</th>
+<th>$\mathbb{B}\cong M_2(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nature of the map</td>
+<td>injective $\mathbb{R}$-algebra homomorphism</td>
+<td>$\mathbb{C}$-algebra isomorphism</td>
+</tr>
+<tr>
+<td>real dimension of the image</td>
+<td>$4$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>complex dimension of the ambient</td>
+<td>$4$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>product</td>
+<td>matrix product</td>
+<td>matrix product</td>
+</tr>
+<tr>
+<td>form</td>
+<td>$\tfrac12\operatorname{tr}(XY)$, signature $(1,3)$</td>
+<td>$\tfrac12\operatorname{tr}(XY)$, a complex bilinear form</td>
+</tr>
+<tr>
+<td>conjugate</td>
+<td>conjugate transpose $X^{\dagger}$</td>
+<td>two conjugations, the bar and the star</td>
+</tr>
+<tr>
+<td>units</td>
+<td>$\det>0$, image of $\mathbb{H}^{\times}$</td>
+<td>$GL_2(\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The embedding reads the block as the real form of the matrix algebra: the product becomes matrix multiplication, the form becomes half the trace pairing with Gram matrix $D$ of signature $(1,3)$, the invariants become the trace $2q_0$ and the determinant $N(\tilde q)$, the units become the matrices of the image with positive determinant, and the inner automorphisms and the transpose preserve the trace pairing. The biquaternion case is the same matrix algebra read over $\mathbb{C}$ and is owned by the biquaternion chapter.</p>
+<h2 id="summary">Summary</h2>
+<p>The embedding $\mathsf{M}_2$ with $\mathsf{M}_2(e_0)=\mathbb{1}$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_2(\mathbb{C})$, with image the matrices $\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}$ of real dimension four whose complex span is the whole matrix algebra. On the image the plain product is the matrix product, the plain form is $\mathrm B(\tilde p,\tilde q)=\tfrac12\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))$ with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$, and the invariants are $\operatorname{tr}\mathsf{M}_2(\tilde q)=2q_0$ and $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$. The unit group maps onto the matrices of the image with positive determinant; the inner automorphisms become conjugations by those matrices; and conjugation and the transpose preserve the trace pairing, with the conjugate transpose corresponding to the natural sign. Over $\mathbb{C}$ the same matrix algebra is the biquaternion algebra by an exact isomorphism of complex algebras.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2$</td>
+<td>The matrix element representation $\mathbb{H}\to M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\sigma_k$</td>
+<td>Pauli matrices, $\mathsf{M}_2(e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\dagger$</td>
+<td>Conjugate transpose of a matrix</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>Gram matrix of the plain form</td>
+</tr>
+<tr>
+<td>$\operatorname{tr},\det$</td>
+<td>Trace and determinant of the matrix image</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the Pauli-matrix representation of the quaternions.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the embedding of the quaternions in $M_2(\mathbb{C})$ and its real form.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for representations of a division algebra and the trace pairing.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

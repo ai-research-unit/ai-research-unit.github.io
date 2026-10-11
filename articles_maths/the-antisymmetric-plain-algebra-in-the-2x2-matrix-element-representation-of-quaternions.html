@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-antisymmetric-plain-algebra-in-the-math0-matrix-element-representation-math1"><strong>The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
+$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ of
+<em>Introduction to the Antisymmetric Plain Algebra of Quaternions</em>. This article reads the operation on
+the embedding $\mathbb{H}\hookrightarrow M_2(\mathbb{C})$ of <em>Introduction to the $2\times2$ Matrix
+Element Representation $M_2(\mathbb{C})$ of Quaternions</em>, where the plain product becomes the matrix
+product and the antisymmetrization becomes the <strong>halved commutator</strong>. It gives the matrix of the cross
+product, the structure constants in matrix form, the invariants, the trace form and the comparison with
+the plain algebra on the same model.</p>
+<p>The reading is the standard one: the commutator of two matrix images is the image of the bracket, its
+image is the trace-free part, and the trace form on that part is the Killing form of the block.</p>
+<p><strong>This is not the algebra $\mathbb{H}$.</strong> The model is an algebra embedding of the plain product; the
+antisymmetric block is read on it as the commutator and is not the matrix product. Throughout, the
+natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because
+$\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives
+nothing new.</p>
+<p>The model itself, its basis images and the multiplicativity are <em>Introduction to the $2\times2$ Matrix
+Element Representation $M_2(\mathbb{C})$ of Quaternions</em> and <em>The General Plain Algebra in the
+$2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>; the bracket and its structure are
+<em>Introduction to the Antisymmetric Plain Algebra of Quaternions</em>, <em>The Lie Algebra of the
+Antisymmetric Plain Algebra</em> and <em>The Killing Form of the Antisymmetric Plain Algebra</em>, below this
+article in this category. The companion article is <em>The Antisymmetric Plain Algebra in the
+$4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>, below this article in this category.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
+$e_1^2=e_2^2=e_3^2=-e_0$; the model is</p>
+<p>$$
+\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_0-iq_3 & -iq_1-q_2\\ -iq_1+q_2 & q_0+iq_3\end{pmatrix},
+$$</p>
+<p>with $\mathsf{M}_2(e_0)=\mathrm{I}_2$, $\mathsf{M}_2(e_1)=-i\sigma_1$, $\mathsf{M}_2(e_2)=-i\sigma_2$,
+$\mathsf{M}_2(e_3)=-i\sigma_3$, the Pauli matrices; the plain product is the matrix product,
+$\mathsf{M}_2(\tilde p\tilde q)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$, and the conjugation is
+the Hermitian adjoint, $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$. The
+<strong>quaternion form</strong> is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and the <strong>plain form</strong>
+$B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$.</p>
+<h2 id="the-model">The Model</h2>
+<p><strong>Proposition.</strong> The map $\mathsf{M}_2$ is an injective $\mathbb{R}$-algebra homomorphism into
+$M_2(\mathbb{C})$, with $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$ and determinant
+$\det\mathsf{M}_2(\tilde q)=q_0^2+|\mathbf q|^2=N(\tilde q)$, the quaternion norm. The
+pure elements have trace-free images, and the image of the vector subspace is a three-dimensional real
+subspace of the trace-free matrices.</p>
+<p><em>Proof.</em> The multiplicativity and the trace are <em>Introduction to the $2\times2$ Matrix Element
+Representation $M_2(\mathbb{C})$ of Quaternions</em>; the determinant of the displayed matrix is
+$(q_0-iq_3)(q_0+iq_3)-(-iq_1-q_2)(-iq_1+q_2)=q_0^2+q_1^2+q_2^2+q_3^2$. The trace of the displayed
+matrix is $2q_0$, which vanishes exactly on the pure elements.</p>
+<h2 id="the-commutator-identity">The Commutator Identity</h2>
+<p><strong>Theorem (the bracket is the halved commutator).</strong></p>
+<p>$$
+\mathsf{M}_2(\tilde p\times\tilde q)=\tfrac12\bigl[\mathsf{M}_2(\tilde p),\mathsf{M}_2(\tilde q)\bigr]
+=\tfrac12\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)-\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p)\bigr).
+$$</p>
+<p><em>Proof.</em> The model is multiplicative, so
+$\mathsf{M}_2(\tilde p\tilde q-\tilde q\tilde p)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)-\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p)$,
+and half of it is the image of the bracket, the model being real-linear.</p>
+<p><strong>Remark (the block is the commutator of the model).</strong> The antisymmetric plain algebra is, in this
+model, the halved commutator of the two by two complex matrices; the plain product is the product, the
+symmetric half is the halved anticommutator, and the three are the two products and the bracket of the
+matrix algebra. The model exhibits the split $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ as the identity
+$XY=\tfrac12(XY+YX)+\tfrac12(XY-YX)$.</p>
+<h2 id="the-image-and-the-kernel">The Image and the Kernel</h2>
+<p><strong>Theorem (the image and the kernel).</strong> The image of the block is the trace-free part of the image of
+the model,</p>
+<p>$$
+\mathsf{M}_2\bigl(\mathrm{Vect}(\mathbb{H})\bigr)
+=\{\mathsf{M}_2(\mathbf q):\ \operatorname{Tr}\mathsf{M}_2(\mathbf q)=0\},
+$$</p>
+<p>a three-dimensional real subspace, and the kernel of the model map is $\{0\}$: the model is faithful.</p>
+<p><em>Proof.</em> The value $\tilde p\times\tilde q$ is pure, so its matrix is trace-free by the trace formula;
+conversely a trace-free matrix of the image has $q_0=0$ by $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$,
+so it is the image of a pure element, and pure elements are values of the block. The model is
+injective because $\mathsf{M}_2(\tilde q)=0$ forces $q_0=\dots=q_3=0$ by reading the entries.</p>
+<p><strong>Remark (the two-dimensional module and the identification).</strong> The trace-free matrices of the image
+are the three-dimensional real Lie algebra $\mathfrak{su}(2)$ under the commutator, the defining
+two-dimensional representation of the derived algebra; the identification of the block with
+$\mathfrak{su}(2)$ is <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>, below this article in this
+category.</p>
+<h2 id="the-structure-constants-in-matrix-form">The Structure Constants in Matrix Form</h2>
+<p>The three matrix images satisfy the commutator relations of the cross product,</p>
+<p>$$
+\tfrac12[\mathsf{M}_2(e_1),\mathsf{M}_2(e_2)]=\mathsf{M}_2(e_3),\qquad
+\tfrac12[\mathsf{M}_2(e_2),\mathsf{M}_2(e_3)]=\mathsf{M}_2(e_1),\qquad
+\tfrac12[\mathsf{M}_2(e_3),\mathsf{M}_2(e_1)]=\mathsf{M}_2(e_2),
+$$</p>
+<p>and the reversed pairs are the negatives. In the display,</p>
+<p>$$
+\mathsf{M}_2(e_1\times e_2)=\tfrac12\begin{pmatrix}0&-i\\-i&0\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix}
+-\tfrac12\begin{pmatrix}0&-1\\1&0\end{pmatrix}\begin{pmatrix}0&-i\\-i&0\end{pmatrix}
+=\begin{pmatrix}-i&0\\0&i\end{pmatrix}=\mathsf{M}_2(e_3).
+$$</p>
+<p>The first row and the first column are zero as in the coefficient space, the scalar matrix
+$\mathsf{M}_2(e_0)=\mathrm{I}_2$ entering no value.</p>
+<h2 id="the-invariants">The Invariants</h2>
+<p><strong>Proposition.</strong> The invariants of the images are</p>
+<p>$$
+\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0,\qquad
+\det\mathsf{M}_2(\tilde q)=N(\tilde q)=q_0^2+|\mathbf q|^2,
+$$</p>
+<p>$$
+\operatorname{Tr}\mathsf{M}_2(\tilde p\times\tilde q)=0,\qquad
+\det\mathsf{M}_2(\tilde p\times\tilde q)=|\mathbf p\times\mathbf q|^2,
+$$</p>
+<p>and the images satisfy the normality relation</p>
+<p>$$
+\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q)^{\dagger}=N(\tilde q)\,\mathrm{I}_2 .
+$$</p>
+<p><em>Proof.</em> The trace and the determinant are those of the model; the value of the block is pure, so the
+trace vanishes and the determinant is the norm of the pure vector part $|\mathbf p\times\mathbf q|^2$.
+The normality is $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q\tilde q^{\natural})=N(\tilde q)\mathrm{I}_2$.</p>
+<h2 id="the-trace-form-and-the-killing-form">The Trace Form and the Killing Form</h2>
+<p><strong>Theorem (the trace form is the Killing form).</strong> On the derived algebra,</p>
+<p>$$
+\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)\bigr)=\kappa(\tilde p,\tilde q)=-2\,\mathbf p\cdot\mathbf q
+\qquad(\tilde p,\tilde q\in\mathrm{Vect}(\mathbb{H})),
+$$</p>
+<p>is the Killing form of the block, and on general elements
+$\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=2B(\tilde p,\tilde q)$ and
+$\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=N(\tilde p,\tilde q)$.</p>
+<p><em>Proof.</em> The model is multiplicative, so
+$\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q)=2\mathrm{Sc}(\tilde p\tilde q)=2B(\tilde p,\tilde q)$;
+on pure elements $B=-\mathbf p\cdot\mathbf q$ and the trace is $-2\,\mathbf p\cdot\mathbf q$, the
+Killing form. For the quaternion form, $\mathsf{M}_2(\tilde q)^{\dagger}=\mathsf{M}_2(\tilde q^{\natural})$
+and $\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q^{\natural})=2\mathrm{Sc}(\tilde p\tilde q^{\natural})=2N(\tilde p,\tilde q)$.</p>
+<p><strong>Remark (the two objects of the block in one model).</strong> The model shows the two objects of the block at
+once: the bracket is the commutator and the invariant form is the trace. This is the reason the block
+is called the Lie block of the space, and it is the exact analogue of the biquaternion reading
+(<em>The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> of
+the biquaternion chapter).</p>
+<h2 id="the-comparison-with-the-plain-algebra-on-the-model">The Comparison with the Plain Algebra on the Model</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the plain algebra</th>
+<th>the antisymmetric plain block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the operation in the model</td>
+<td>the matrix product $XY$</td>
+<td>the halved commutator $\tfrac12(XY-YX)$</td>
+</tr>
+<tr>
+<td>the image</td>
+<td>the four-dimensional real subspace $\mathsf{M}_2(\mathbb{H})$</td>
+<td>the trace-free part of the image</td>
+</tr>
+<tr>
+<td>the kernel of the model</td>
+<td>$\{0\}$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>the trace of a value</td>
+<td>$2\,\mathrm{Sc}(\tilde p\tilde q)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the invariant form</td>
+<td>$N$, the determinant</td>
+<td>$\kappa$, the trace form</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the plain algebra on the same model).</strong> The plain algebra is the matrix product on the image
+of the model, of invariant form $N$ read as the determinant, and its multiplicativity is the
+multiplicativity of the model. The antisymmetric block is the commutator, of invariant form the trace
+form, and its values are the trace-free matrices. The plain reading is <em>The General Plain Algebra in
+the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>In the two by two complex model the antisymmetric plain algebra is the halved commutator,
+$\mathsf{M}_2(\tilde p\times\tilde q)=\tfrac12[\mathsf{M}_2(\tilde p),\mathsf{M}_2(\tilde q)]$, with
+the three matrix images $-i\sigma_1,-i\sigma_2,-i\sigma_3$ satisfying the cross-product commutators. The
+image of the block is the three-dimensional real subspace of trace-free matrices of the image,
+identified with $\mathfrak{su}(2)$; the model is faithful, of kernel $\{0\}$. The invariants are
+$\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$, $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$,
+$\operatorname{Tr}\mathsf{M}_2(\tilde p\times\tilde q)=0$ and
+$\det\mathsf{M}_2(\tilde p\times\tilde q)=|\mathbf p\times\mathbf q|^2$, with the normality
+$\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q)^{\dagger}=N(\tilde q)\mathrm{I}_2$. The trace form of the
+model is the Killing form of the block on the derived algebra, and the general trace and the conjugate
+trace read the plain form and the quaternion form. The plain algebra on the same model is the matrix
+product, of the whole matrix algebra as image.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2(\tilde q)$</td>
+<td>the two by two complex model of a quaternion</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde p\times\tilde q)=\tfrac12[\mathsf{M}_2(\tilde p),\mathsf{M}_2(\tilde q)]$</td>
+<td>the block as the halved commutator</td>
+</tr>
+<tr>
+<td>$\{\operatorname{Tr}=0\}$</td>
+<td>the image of the block, the trace-free part</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$</td>
+<td>the trace of the model</td>
+</tr>
+<tr>
+<td>$\det\mathsf{M}_2(\tilde q)=N(\tilde q)$</td>
+<td>the determinant, the quaternion norm</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=-2\,\mathbf p\cdot\mathbf q$</td>
+<td>the trace form as the Killing form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions</em>, for the model, the basis images and the multiplicativity.</li>
+<li><em>The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, for the plain product on the same model.</li>
+<li><em>The Lie Algebra of the Antisymmetric Plain Algebra</em>, below this article in this category, for the identification with $\mathfrak{su}(2)$.</li>
+<li><em>The Killing Form of the Antisymmetric Plain Algebra</em>, below this article in this category, for the invariant form read here as the trace form.</li>
+<li><em>The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>, below this article in this category, for the companion model.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

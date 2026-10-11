@@ -74,7 +74,7 @@ $$</p>
 <h3 id="the-minimal-left-ideal">The Minimal Left Ideal</h3>
 <p>The algebra $\mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$ as a complex algebra, and the isomorphism sends the quaternion units to</p>
 <p>$$
-\Phi(e_0)=I_2,\qquad \Phi(e_k)=-i\sigma_k,\qquad \Phi(i)=iI_2,
+\mathsf{M}_2(e_0)=I_2,\qquad \mathsf{M}_2(e_k)=-i\sigma_k,\qquad \mathsf{M}_2(i)=iI_2,
 $$</p>
 <p>with $\sigma_k$ the Pauli matrices. A <strong>primitive idempotent</strong> is an element $\tilde{P}$ with $\tilde{P}^2=\tilde{P}$ that cannot be written as a sum of two nonzero orthogonal idempotents. The idempotents of the form</p>
 <p>$$
@@ -82,7 +82,7 @@ $$</p>
 \qquad
 \hat{\mu}=\mu_1e_1+\mu_2e_2+\mu_3e_3,\quad \mu_1^2+\mu_2^2+\mu_3^2=1,\quad \mu_k\in\mathbb{R},
 $$</p>
-<p>are primitive, Hermitian, and of trace one. They lie in $\mathbb{M}_+$, and they are the pure states of the informational sector in the reading of the companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>. The <strong>minimal left ideal</strong></p>
+<p>are primitive, Hermitian, and of trace one. They lie in $\mathbb{M}_+$, and they are the pure states of the informational sector in the interpretation of the companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>. The <strong>minimal left ideal</strong></p>
 <p>$$
 \mathbb{B}\tilde\Pi(\hat{\mu})=\{\tilde{Q}\tilde\Pi(\hat{\mu}) : \tilde{Q}\in\mathbb{B}\}\cong\mathbb{C}^2
 $$</p>
@@ -104,7 +104,7 @@ $$</p>
 <p>$$
 J_k=\tfrac{i}{2}e_k,
 $$</p>
-<p>which satisfy $[J_j,J_k]=i\varepsilon_{jkl}J_l$. On the state module these act as left multiplication, and one verifies directly from the quaternion relations that the left-multiplication operators satisfy the quaternion product rule; in the matrix representation they become $L_k=\Phi(e_k)=-i\sigma_k$, so that</p>
+<p>which satisfy $[J_j,J_k]=i\varepsilon_{jkl}J_l$. On the state module these act as left multiplication, and one verifies directly from the quaternion relations that the left-multiplication operators satisfy the quaternion product rule; in the matrix representation they become $L_k=\mathsf{M}_2(e_k)=-i\sigma_k$, so that</p>
 <p>$$
 J_k\;\longmapsto\;\tfrac{1}{2}\sigma_k .
 $$</p>
@@ -266,7 +266,7 @@ b(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi},
 \qquad
 \tilde{\psi}\mapsto\tilde{\Lambda}\tilde{\psi},
 \qquad
-\tilde{\chi}\mapsto\Phi(\tilde{\Lambda}^{*})\tilde{\chi},
+\tilde{\chi}\mapsto\mathsf{M}_2(\tilde{\Lambda}^{*})\tilde{\chi},
 $$</p>
 <p>is invariant because $\tilde{\Lambda}^{*}\tilde{\Lambda}^{*}=e_0$. These are the two scalar channels of the module: $\varepsilon$ is the antisymmetric contraction of two same-chirality spinors, and $b$ is the Dirac scalar, which pairs the two chiral halves. Both take their values in the centre; the Hermitian pairing, by contrast, gives the four-vector channel just described. This is the algebraic form of the standard statements that $\bar{\psi}\psi$ is a Lorentz scalar while $\psi^\dagger\psi$ is not, that a fermion condensate can break a symmetry, and that the Higgs field, being a scalar, couples to fermions through precisely such bilinears. The scalar does not live in the module; it is a <em>pairing of two module elements</em>, and the pairing takes its values in the centre.</p>
 <p>The distinction between the two routes is the distinction the title names. A field that is <em>in</em> the state module is a spinor, and it carries spin $\tfrac{1}{2}$ whether or not it is a solution of any particular equation. A field that is <em>built from</em> the state module can be a scalar, and it lives in the centre. The Klein–Gordon field is of the second kind: it is the trivial sector of the module's tensor square promoted to an independent field, which is why its equation is second order, why it decouples from the module's first-order structure, and why the material/informational split applies to it only as the real/imaginary split of one complex number.</p>
@@ -276,13 +276,13 @@ $$</p>
 <p><strong>The uniqueness of the trivial carrier.</strong> <em>Open for the author.</em> The centralizer computation shows that the rotationally invariant elements of $\mathbb{B}$ form the centre, and that the state module contains no rotationally invariant submodule. Whether the framework should regard the centre as <em>the</em> scalar field's value space, or merely as the natural one among several subspaces on which the rotation group acts trivially, is a convention the present article fixes in the first sense. The alternative would require a value space outside $\mathbb{B}$, which the series has not considered.</p>
 </li>
 <li>
-<p><strong>The boost transformation of a scalar.</strong> A scalar field transforms trivially under the whole Lorentz group, but the framework's conjugation action is the four-vector action and has no nonzero invariant under boosts. Whether the scalar's transformation law should be regarded as an independent assignment — the argument transformation with no algebraic factor — or as the restriction of some algebraic action, is not resolved here. The present article takes the first reading, which is the standard one and is consistent with the centre being invariant under rotations.</p>
+<p><strong>The boost transformation of a scalar.</strong> A scalar field transforms trivially under the whole Lorentz group, but the framework's conjugation action is the four-vector action and has no nonzero invariant under boosts. Whether the scalar's transformation law should be regarded as an independent assignment — the argument transformation with no algebraic factor — or as the restriction of some algebraic action, is not resolved here. The present article takes the first interpretation, which is the standard one and is consistent with the centre being invariant under rotations.</p>
 </li>
 <li>
 <p><strong>The general idempotent and the state axis.</strong> The idempotents $\tilde\Pi(\hat{\mu})=\tfrac{1}{2}(e_0+i\hat{\mu})$ with $\hat{\mu}$ a real unit pure quaternion are the Hermitian idempotents, and their axes fill the two-sphere. The non-Hermitian idempotents built from the non-central roots of $-1$ define other minimal left ideals. Whether those ideals carry a different representation content, or the same defining representation under a different complex structure, bears on the sense in which "spin $\tfrac{1}{2}$" is unique; the companion article on the spinor module addresses the ideal model but not this classification.</p>
 </li>
 <li>
-<p><strong>The relation to the informational reading.</strong> The centre is the intersection of the scalar field's value space with neither sector as a whole, but with one real direction in each. This suggests that the material/informational dichotomy, at least for the scalar, is a real/complex pair rather than a state/operator pair. Whether the informational reading of $\mathbb{M}_+$ survives the scalar case intact, or must be restricted to the non-scalar sectors, is a question for the informational articles.</p>
+<p><strong>The relation to the informational interpretation.</strong> The centre is the intersection of the scalar field's value space with neither sector as a whole, but with one real direction in each. This suggests that the material/informational dichotomy, at least for the scalar, is a real/complex pair rather than a state/operator pair. Whether the informational interpretation of $\mathbb{M}_+$ survives the scalar case intact, or must be restricted to the non-scalar sectors, is a question for the informational articles.</p>
 </li>
 <li>
 <p><strong>Composite scalars and the trace formula.</strong> The bilinear route uses the trace pairing $\mathrm{Tr}(\tilde{\psi}\tilde{\chi}^{*})=2\,\mathrm{Sc}(\tilde{\psi}\tilde{\chi}^{*})$. The symplectic pairing $\varepsilon$ and the mixed pairing $b$ supply the Lorentz-scalar channels, while the Hermitian pairing $\tilde{\psi}\tilde{\chi}^{*}$ supplies the four-vector channel; whether every scalar-valued functional of the module reduces to these two is not settled here.</p>
@@ -407,7 +407,7 @@ $$</p>
 <li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the real structures and the representation theory of the Clifford algebra.</li>
 <li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric-algebra treatment of spinors, bilinears and the scalar and vector channels.</li>
 <li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, Vol. 1 (Cambridge, 1984), for the spinor calculus and the construction of scalars from spinor bilinears.</li>
-<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the operator-algebra reading of the two-state module.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the operator-algebra interpretation of the two-state module.</li>
 </ul>
       </div>
     </main>

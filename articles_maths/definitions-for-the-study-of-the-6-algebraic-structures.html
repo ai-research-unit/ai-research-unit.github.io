@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Definitions for the Study of the 6 Algebraic Structures — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="definitions-for-the-study-of-the-6-algebraic-structures"><strong>Definitions for the Study of the 6 Algebraic Structures</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The six structures of <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em> are read through a vocabulary of elements and of identities which the six blocks that follow use without restating it. This article fixes that vocabulary once: the <strong>element vocabulary</strong> — the square, the powers, the unit and the units, the inverse, the radical, the zero divisor, the idempotent, the nilpotent and the square root of a central value — is stated for an arbitrary real-bilinear product and then read on the six; the <strong>identity vocabulary</strong> — alternating, flexible, Jordan, Jacobi, power-associative and the degree-three identities — is stated with its mutual implications; and the <strong>criterion for an empty class</strong> is given, the rule by which a class defined by an equation is recognized as empty from the laws of the product alone.</p>
+<p>Nothing here is a theorem about the quaternion space; the article is the common grammar of the six blocks, and every statement in it is a definition or an implication among definitions. The six products and the six structures are those of <em>The 6 Products of the Quaternion Real Space</em> and <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, the two articles preceding this one.</p>
+<p><strong>Conventions.</strong> Throughout, $f$ is a real-bilinear binary rule on the space $\mathbb{H}$, written multiplicatively $f(x,y)=xy$ in the statements about a general product, and $x,y,z$ name elements. When the product of a statement is one of the six, it is named by its abbreviation of <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>. The element $0$ is the zero vector and $e$ names a unit.</p>
+<h2 id="the-element-vocabulary">The Element Vocabulary</h2>
+<p>Let $f$ be a real-bilinear rule on $\mathbb{H}$.</p>
+<p><strong>Square and powers.</strong> The <strong>square</strong> of $x$ is $x^2=f(x,x)$ and the <strong>powers</strong> are $x^1=x$, $x^{k+1}=f(x,x^k)$. The square is the only power used in the six blocks; the powers $x^k$ for $k\geq3$ are well defined for every rule, being left-nested products of $k$ copies of $x$.</p>
+<p><strong>Unit.</strong> An element $e$ is a <strong>left unit</strong> when $f(e,x)=x$ for every $x$, a <strong>right unit</strong> when $f(x,e)=x$ for every $x$, and a <strong>two-sided unit</strong> or <strong>unit</strong> when both. A rule has at most one two-sided unit.</p>
+<p><strong>Inverse and units.</strong> When the rule has a two-sided unit $e$, the <strong>inverse</strong> of $x$ is the element $y$ with $f(x,y)=e=f(y,x)$, and $x$ is <strong>invertible</strong> or a <strong>unit</strong> when it has an inverse. Without a two-sided unit the word inverse is not used; the six blocks say instead that an element is <strong>regular</strong> for a one-sided unit.</p>
+<p><strong>Radical.</strong> The <strong>radical</strong> of the rule is</p>
+<p>$$
+\operatorname{rad}(f)=\{x:f(x,y)=0=f(y,x)\ \text{for every}\ y\} ,
+$$</p>
+<p>the two-sided annihilator of the whole space; it is a subspace, and the rule is <strong>nondegenerate</strong> when the radical is $\{0\}$.</p>
+<p><strong>Zero divisor.</strong> A nonzero element $x$ is a <strong>left zero divisor</strong> when $f(x,y)=0$ for some nonzero $y$, a <strong>right zero divisor</strong> when $f(y,x)=0$ for some nonzero $y$, and a <strong>zero divisor</strong> when either. A rule with no zero divisor and a two-sided unit is a <strong>division rule</strong>, and an algebra whose rule is a division rule is a <strong>division algebra</strong>.</p>
+<p><strong>Idempotent.</strong> An <strong>idempotent</strong> is an element with $x^2=x$; the idempotents form a set containing $0$ and every unit.</p>
+<p><strong>Nilpotent.</strong> A <strong>nilpotent</strong> is a nonzero element with $x^k=0$ for some $k$; the case $k=2$, $x^2=0$, is a <strong>square-zero</strong> element and the case $k=3$, $f(x,f(x,x))=0$, a <strong>cube-zero</strong> element. Nilpotents are the nonzero elements of the class the six blocks call the <strong>nilpotent class</strong>.</p>
+<p><strong>Square root of a central value.</strong> The <strong>centre</strong> of the rule is $\{z:f(z,x)=f(x,z)\ \text{for every}\ x\}$; a <strong>square root of a central value</strong> $c$ is an element $x$ with $x^2=c$ and $c$ in the centre. A central value may have no square root, one, or a class of them, and the class is the set $\{x:x^2=c\}$.</p>
+<h2 id="the-identity-vocabulary">The Identity Vocabulary</h2>
+<p><strong>Alternating.</strong> The rule is <strong>alternating</strong> when $f(x,x)=0$ for every $x$.</p>
+<p><strong>Flexible.</strong> The rule is <strong>flexible</strong> when $f(f(x,y),x)=f(x,f(y,x))$ for all $x,y$.</p>
+<p><strong>Jordan.</strong> The rule satisfies the <strong>Jordan identity</strong> when $f(f(f(x,x),y),x)=f(f(x,x),f(y,x))$ for all $x,y$, that is $(x^2y)x=x^2(yx)$.</p>
+<p><strong>Jacobi.</strong> The rule satisfies the <strong>Jacobi identity</strong> when</p>
+<p>$$
+f(x,f(y,z))+f(y,f(z,x))+f(z,f(x,y))=0
+$$</p>
+<p>for all $x,y,z$.</p>
+<p><strong>Power-associative.</strong> The rule is <strong>power-associative</strong> when $f(f(x,x),x)=f(x,f(x,x))$ for every $x$, so that the two nestings of the cube agree and all powers are unambiguous.</p>
+<p><strong>Degree-three identities.</strong> The identities of <strong>degree three</strong> are the identities in which one factor of a product is itself a product: <strong>associativity</strong>, $f(f(x,y),z)=f(x,f(y,z))$; the <strong>left alternative</strong> identity, $f(f(x,x),y)=f(x,f(x,y))$; the <strong>right alternative</strong> identity, $f(f(y,x),x)=f(y,f(x,x))$; and <strong>flexibility</strong>, which is obtained from associativity by replacing $z$ with $x$ in both sides. A rule is <strong>alternative</strong> when both alternative identities hold, and <strong>associative</strong> when so does associativity.</p>
+<p><strong>Implications.</strong> The following implications among the identities are the ones the six blocks use; each is immediate from the definitions and the bilinearity.
+- <strong>Associative $\Rightarrow$ flexible, power-associative, Jordan.</strong> An associative rule inserts and removes parentheses freely, so the two nestings of the cube agree, the flexibility is two writings of the same triple product, and the Jordan identity is the reading of $x^2yx$ on both sides.
+- <strong>Alternating and bilinear $\Rightarrow$ flexible, power-associative, cube-zero.</strong> A bilinear alternating rule is antisymmetric, $f(y,x)=-f(x,y)$, since $f(x+y,x+y)=0$; flexibility is then $f(f(x,y),x)=-f(x,f(x,y))=f(x,f(y,x))$, the power identity is read on the square $f(x,x)=0$, and the cube $f(x,f(x,x))=f(x,0)=0$.
+- <strong>Symmetric and bilinear $\Rightarrow$ flexible, power-associative.</strong> A symmetric rule interchanges the two slots everywhere, and the flexibility and the power identity each compare two readings of the same arguments, so the interchange makes them equal.
+- <strong>Alternating and Jacobi $\Rightarrow$ Lie.</strong> An alternating bilinear rule satisfying the Jacobi identity is a Lie bracket; that is the definition of the Lie structure.</p>
+<h2 id="the-reading-on-the-six">The Reading on the Six</h2>
+<p>The table records, for each identity, the structures of the six that satisfy it, on the basis pairs and triples of <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>identity</th>
+<th>$\mathrm{GPA}$</th>
+<th>$\mathrm{SPA}$</th>
+<th>$\mathrm{APA}$</th>
+<th>$\mathrm{GQA}$</th>
+<th>$\mathrm{SQA}$</th>
+<th>$\mathrm{AQA}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alternating</td>
+<td>no</td>
+<td>no</td>
+<td><strong>yes</strong></td>
+<td>no</td>
+<td>no</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>flexible</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>power-associative</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Jordan identity</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>associative</td>
+<td><strong>yes</strong></td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>alternative</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Jacobi identity</td>
+<td>no</td>
+<td>no</td>
+<td><strong>yes</strong></td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The reading is the law table of <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em> reordered by identity rather than by structure, and it obeys the implications above: the two antisymmetric structures are the only alternating ones, they are flexible and power-associative and cube-zero by the second implication; the two symmetric structures are flexible and power-associative by the third; the general plain structure is the only associative one and hence flexible, power-associative and Jordan; and the general quaternionic structure is the only one whose half-products carry no law that the product itself inherits, its first factor being conjugated.</p>
+<p>The Jordan identity holds for five of the six, the antisymmetric structures included, and it fails only for the symmetric quaternionic structure: the Jordan identity is weak, and the structure called the Jordan layer is $\mathrm{SPA}$ because its product is symmetric and the identity is the strongest law it has, not because it is the only one satisfying the identity.</p>
+<h2 id="the-criterion-for-an-empty-class">The Criterion for an Empty Class</h2>
+<p>A class defined by an equation is recognized as empty from the laws of the product alone, and the criterion is one line.</p>
+<p><strong>Criterion.</strong> Let a class be defined by an equation $P(x)=0$ for a polynomial $P$ built from the product. The class is empty when the equation contradicts a law of the product, that is when every element satisfying the law and the equation would violate an identity the product satisfies; otherwise the class is tested on the basis.</p>
+<p>The applications the six blocks use are these. The class of <strong>nonzero idempotents</strong> is empty for the two antisymmetric structures, since $x^2=x$ reads $0=x$ there; and it is $\{e_0\}$ for the general plain structure, a nonzero idempotent $x$ being a unit and $x^2=x$ giving $x=e_0$. The class of <strong>nonzero nilpotents</strong> is empty for the general plain and the general quaternionic structures, since $x^2=0$ with $x\neq0$ makes $x$ a zero divisor, and there is none; it is the whole space apart from the origin for the two antisymmetric structures, every nonzero element being square-zero; and it is read on the basis for the two symmetric structures. The class of <strong>units</strong> is empty for the four structures without a two-sided unit, the general quaternionic structure having only a left unit, the antisymmetric ones none, and the symmetric quaternionic one none; and the class of <strong>square roots of the central value $-e_0$</strong> is empty for the four structures whose square is a real-valued expression of one sign, $\mathrm{GQA}$ and $\mathrm{SQA}$ having $x^2=N(x)e_0$ with $N(x)\geq0$ and the two antisymmetric structures having $x^2=0$, while it is nonempty for $\mathrm{GPA}$ and $\mathrm{SPA}$, the unit vector $e_1$ having the square $-e_0$ in both. The diagonal functions behind these classes are the two algebraic norms of <em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category, whose level sets are read there.</p>
+<h2 id="summary">Summary</h2>
+<p>The element vocabulary of the six structures is the square and the powers, the unit and the units, the inverse, the radical, the zero divisor, the idempotent, the nilpotent and the square root of a central value, each defined for a general real-bilinear product and read on the six. The identity vocabulary is alternation, flexibility, the Jordan identity, the Jacobi identity, power-associativity and the degree-three identities, with the implications: associative implies flexible, power-associative and Jordan; alternating with bilinearity implies antisymmetry, flexibility, power-associativity and cube-zero; symmetric with bilinearity implies flexibility and power-associativity; and alternating with Jacobi is the Lie structure.</p>
+<p>The reading on the six gives the antisymmetric structures as the alternating ones, both flexible and power-associative; the symmetric ones as flexible and power-associative; $\mathrm{GPA}$ as the only associative one; the Jordan identity as holding for five of the six and failing for $\mathrm{SQA}$; and the Jacobi identity as holding for $\mathrm{APA}$ alone. A class is empty exactly when its defining equation contradicts a law of the product, and the criterion is applied to the classes of idempotents, nilpotents, units and square roots of a central value.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$x^2=f(x,x)$, $x^{k+1}=f(x,x^k)$</td>
+<td>square and powers</td>
+</tr>
+<tr>
+<td>left, right, two-sided unit $e$</td>
+<td>$f(e,x)=x$, $f(x,e)=x$, both</td>
+</tr>
+<tr>
+<td>inverse of $x$</td>
+<td>$y$ with $f(x,y)=e=f(y,x)$</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}(f)=\{x:f(x,y)=0=f(y,x)\ \forall y\}$</td>
+<td>the radical</td>
+</tr>
+<tr>
+<td>zero divisor</td>
+<td>nonzero $x$ with $f(x,y)=0$ or $f(y,x)=0$, $y\neq0$</td>
+</tr>
+<tr>
+<td>idempotent</td>
+<td>$x^2=x$</td>
+</tr>
+<tr>
+<td>nilpotent, square-zero, cube-zero</td>
+<td>$x^k=0$; $x^2=0$; $f(x,f(x,x))=0$</td>
+</tr>
+<tr>
+<td>square root of a central value</td>
+<td>$x$ with $x^2=c$, $c$ central</td>
+</tr>
+<tr>
+<td>alternating, flexible</td>
+<td>$f(x,x)=0$; $f(f(x,y),x)=f(x,f(y,x))$</td>
+</tr>
+<tr>
+<td>Jordan, Jacobi</td>
+<td>$(x^2y)x=x^2(yx)$; $f(x,f(y,z))+f(y,f(z,x))+f(z,f(x,y))=0$</td>
+</tr>
+<tr>
+<td>power-associative, degree three</td>
+<td>$f(f(x,x),x)=f(x,f(x,x))$; identities with a nested factor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for idempotents, nilpotents, the radical and the units of an algebra.</li>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, Colloquium Publications 39, 1968), for the Jordan identity, power-associativity and the flexible law.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the alternating bilinear rule, the Jacobi identity and the Lie structure.</li>
+<li>Israel Nathan Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975), for the centre, the unit and the inverses in a non-commutative ring.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, Universitext, 2004), for the flexibility and power-associativity of a symmetric product.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

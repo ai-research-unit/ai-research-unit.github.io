@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Trace Form and the Invariance of the Symmetric Plain Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra"><strong>The Trace Form and the Invariance of the Symmetric Plain Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of <em>Introduction to the Symmetric Plain Algebra of Quaternions</em>, and with it a bilinear form read off the scalar part. This article studies the <strong>trace form</strong></p>
+<p>$$
+\tau(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p\bullet\tilde q\bigr),
+$$</p>
+<p>its polarisation, its Gram matrix and signature, its radical, its <strong>invariance</strong> under the operators of the Jordan product, and its comparison with the trace form of the biquaternion symmetric plain algebra.</p>
+<p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $\mathrm{Sc}$, the vector subspace is $\mathrm{Vect}(\mathbb{H})$, the norm is $N(\tilde q)=q_0^2+|\mathbf q|^2$, and the multiplication operator is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$ of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category. The plain bilinear form $(\tilde p,\tilde q)\mapsto\mathrm{Sc}(\tilde p\tilde q)$ is <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>.</p>
+<h2 id="the-trace-form">The Trace Form</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> The <strong>trace form</strong> of the block is</p>
+<p>$$
+\tau(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p\bullet\tilde q\bigr).
+$$</p>
+<p><strong>Proposition.</strong> The trace form is symmetric and bilinear, and coincides with the plain bilinear form of the same space:</p>
+<p>$$
+\tau(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q=\mathrm{Sc}\bigl(\tilde p\tilde q\bigr).
+$$</p>
+<p><em>Proof.</em> $\tilde p\bullet\tilde q$ is symmetric and bilinear, so $\tau$ is; and $\mathrm{Sc}(\tilde p\bullet\tilde q)=\mathrm{Sc}\bigl(\tfrac12(\tilde p\tilde q+\tilde q\tilde p)\bigr)=\mathrm{Sc}(\tilde p\tilde q)$ because the scalar part is invariant under reversal, $\mathrm{Sc}(\tilde p\tilde q)=\mathrm{Sc}(\tilde q\tilde p)$. Expanding the plain scalar part gives $p_0q_0-\mathbf p\cdot\mathbf q$.</p>
+<p><strong>Corollary (the polarisation).</strong> The trace form is the <strong>polarisation of the quadratic trace</strong> $\tilde p\mapsto\mathrm{Sc}(\tilde p\bullet\tilde p)=\mathrm{Sc}(\tilde p^2)=p_0^2-|\mathbf p|^2$:</p>
+<p>$$
+\tau(\tilde p,\tilde q)=\tfrac12\Bigl(\mathrm{Sc}(\tilde p+\tilde q)^{\bullet2}-\mathrm{Sc}\,\tilde p^{\bullet2}-\mathrm{Sc}\,\tilde q^{\bullet2}\Bigr).
+$$</p>
+<h3 id="the-gram-matrix-and-the-signature">The Gram Matrix and the Signature</h3>
+<p><strong>Proposition.</strong> In the basis $(e_0,e_1,e_2,e_3)$ the Gram matrix is $\operatorname{diag}(1,-1,-1,-1)$, and the signature is $(1,3)$: the trace form is <strong>indefinite</strong> and <strong>Lorentzian</strong>.</p>
+<p><em>Proof.</em> $\tau(e_0,e_0)=\mathrm{Sc}(e_0)=1$ and $\tau(e_j,e_j)=\mathrm{Sc}(e_j\bullet e_j)=\mathrm{Sc}(-e_0)=-1$ for $j=1,2,3$; the mixed terms vanish because $e_j\bullet e_k$ is pure for $j\neq k$.</p>
+<p><strong>Remark (the trace form is not the norm).</strong> The trace form is indefinite and has the isotropic cone $p_0^2=|\mathbf p|^2$; the norm $N(\tilde p)=p_0^2+|\mathbf p|^2$ is positive definite and vanishes only at the origin. <strong>The two forms of the block must not be confused</strong>: the norm polarises to the quaternion form (signature $(4,0)$) and the quadratic trace polarises to the trace form (signature $(1,3)$), as <em>Norm and Invertibility in the Symmetric Plain Algebra</em> records. In particular the isotropic cone of the trace form is <strong>not</strong> the zero-divisor set, which is the pure set $p_0=0$ of <em>Zero Divisors of the Symmetric Plain Algebra</em>.</p>
+<h3 id="the-radical">The Radical</h3>
+<p><strong>Proposition.</strong> The trace form is non-degenerate and its radical is trivial:</p>
+<p>$$
+\operatorname{rad}\tau=\{\tilde p : \tau(\tilde p,\tilde q)=0\ \text{for all}\ \tilde q\}=0 .
+$$</p>
+<p><em>Proof.</em> The Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ is invertible, so the form is non-degenerate.</p>
+<p><strong>Corollary.</strong> The trace form identifies the algebra with its dual and provides the pairings used by the operators of the block; <strong>it is not a semidefinite form, so it is not the wall form of the block.</strong> The form that is definite is the norm, of the degree-two structure.</p>
+<h2 id="the-invariance">The Invariance</h2>
+<h3 id="the-associativity-of-the-form">The Associativity of the Form</h3>
+<p><strong>Theorem (associativity).</strong> The trace form is <strong>associative</strong> and <strong>invariant</strong> for the product:</p>
+<p>$$
+\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)=\tau(\tilde q,\tilde p\bullet\tilde r).
+$$</p>
+<p><em>Proof.</em> $\tau(\tilde p\bullet\tilde q,\tilde r)=\mathrm{Sc}((\tilde p\bullet\tilde q)\tilde r)$. Writing $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ and using the associativity of the plain product and the invariance of the scalar part under reversal, $\mathrm{Sc}(\tilde p\tilde q\tilde r)=\mathrm{Sc}(\tilde r\tilde p\tilde q)=\mathrm{Sc}(\tilde q\tilde r\tilde p)$, gives the equalities.</p>
+<p><strong>Corollary.</strong> The trace form is a <strong>non-degenerate associative form</strong> on the block, the property that a Jordan algebra of degree two carries; equivalently, every multiplication operator is self-adjoint for $\tau$:</p>
+<p>$$
+\tau(L^{\bullet}_{\tilde p}\tilde q,\tilde r)=\tau(\tilde q,L^{\bullet}_{\tilde p}\tilde r).
+$$</p>
+<h3 id="the-invariance-under-the-operators">The Invariance under the Operators</h3>
+<p><strong>Theorem.</strong> Every <strong>derivation</strong> of the block is skew for the trace form:</p>
+<p>$$
+\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0 .
+$$</p>
+<p><em>Proof.</em> The trace form is associative, so for a derivation $D$, $0=D\,\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(D(\tilde p\bullet\tilde q),\tilde r)+\tau(\tilde p\bullet\tilde q,D\tilde r)$; expanding the derivation rule and using the associativity of $\tau$ twice gives $\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$. The derivations are <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category, and the statement is the general invariance of the trace form of a Jordan algebra quoted in <em>Jordan Algebras</em>.</p>
+<p><strong>Remark (the invariance is the content of the menu).</strong> The menu comment of the block asks for "the trace form and its invariance under the operators of the Jordan product": the <strong>operators</strong> are the left multiplications $L^{\bullet}_{\tilde p}$ and the inner derivations they generate, and the invariance is the pair of identities $\tau(L^{\bullet}_{\tilde p}\tilde q,\tilde r)=\tau(\tilde q,L^{\bullet}_{\tilde p}\tilde r)$ and $\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$. <strong>The self-adjointness is what makes the form the trace form, and the skewness of the derivations is what makes it the invariant form of the block.</strong></p>
+<h2 id="the-comparison-with-the-biquaternion-case">The Comparison with the Biquaternion Case</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the symmetric plain algebra of $\mathbb{H}$</th>
+<th>the biquaternion symmetric plain algebra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the form</td>
+<td>$\tau(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$</td>
+<td>$\tau(\tilde P,\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$, complex-valued</td>
+</tr>
+<tr>
+<td>Gram matrix</td>
+<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>$\operatorname{diag}(1,-1,-1,-1)$ over $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>signature</td>
+<td>$(1,3)$ real</td>
+<td>the complex analogue</td>
+</tr>
+<tr>
+<td>radical</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>associativity</td>
+<td>$\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$</td>
+<td>the same identity</td>
+</tr>
+<tr>
+<td>invariances</td>
+<td>operators self-adjoint, derivations skew</td>
+<td>the same identities</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (what the field changes).</strong> The trace form of the block is the restriction of the plain bilinear form to the Jordan product, and it has the same shape over $\mathbb{R}$ and over $\mathbb{C}$: the Gram matrix, the radical and the two invariances are unchanged, and they are the form part of the degree-two Common Theory of <em>The Two General Products of an Algebra with Involution</em>. What the field changes is the interpretation of the isotropy: over $\mathbb{R}$ the form is Lorentzian and the isotropic cone is the light cone of signature $(1,3)$; over $\mathbb{C}$ the corresponding complex form is degenerate-on-the-real-structure in the way that the biquaternion form is. The biquaternion trace form is <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em> of the biquaternion chapter.</p>
+<h2 id="summary">Summary</h2>
+<p>The trace form of the block is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$, symmetric and bilinear, equal to the plain form $p_0q_0-\mathbf p\cdot\mathbf q$ and polarising the quadratic trace $\mathrm{Sc}(\tilde p^2)=p_0^2-|\mathbf p|^2$. Its Gram matrix in the standard basis is $\operatorname{diag}(1,-1,-1,-1)$, so its signature is $(1,3)$ and it is indefinite and Lorentzian; it is non-degenerate with radical $0$, and it is the indefinite companion of the positive definite norm. It is associative, $\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$, so every multiplication operator is self-adjoint for it, and every derivation is skew for it; these two invariances are the form content of the block. Over $\mathbb{C}$ the trace form has the same matrix shape and the same invariances, the form part of the degree-two Common Theory; the field changes only the reading of the isotropy.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$</td>
+<td>the trace form</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>the Gram matrix, signature $(1,3)$</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}\tau=0$</td>
+<td>the radical</td>
+</tr>
+<tr>
+<td>$\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$</td>
+<td>associativity</td>
+</tr>
+<tr>
+<td>$\tau(L^{\bullet}_{\tilde p}\tilde q,\tilde r)=\tau(\tilde q,L^{\bullet}_{\tilde p}\tilde r)$</td>
+<td>self-adjointness of the operators</td>
+</tr>
+<tr>
+<td>$\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$</td>
+<td>skewness of the derivations</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Symmetric Plain Algebra of Quaternions</em>, for the product.</li>
+<li><em>Norm and Invertibility in the Symmetric Plain Algebra</em>, for the norm, the quaternion form and the contrast with the trace form.</li>
+<li><em>Zero Divisors of the Symmetric Plain Algebra</em>, for the isotropic cone of the trace form against the zero-divisor set.</li>
+<li><em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category, for the operators and the derivations that are self-adjoint and skew.</li>
+<li><em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>, for the plain and quaternionic forms.</li>
+<li><em>Jordan Algebras</em>, for the trace form of a Jordan algebra and its invariance.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

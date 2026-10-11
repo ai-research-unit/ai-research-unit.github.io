@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-antisymmetric-quaternionic-algebra-in-the-math0-matrix-element-representation-math1"><strong>The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antisymmetric quaternionic algebra of $\mathbb{H}$ is the operation
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ of <em>Introduction to the Antisymmetric Quaternionic
+Algebra of Quaternions</em>. This article reads it on the <strong>left regular representation</strong>
+$M_4(\mathbb{R})_L$ of <em>Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$
+of Quaternions</em>, where the parent product becomes the product with the transposed first factor and the
+antisymmetrization becomes the <strong>halved conjugated commutator</strong> of the regular matrices. It is the second
+of the two representation articles of the block, and its companion <em>The Antisymmetric Quaternionic
+Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> repeats the reading on the
+model $\mathbb{H}\cong$ a real subalgebra of $M_2(\mathbb{C})$. The article treats the operation in the
+model, the image and the kernel on the matrices, the operator and its invariants, the two commuting
+copies, the trace form and the comparison with the quaternionic algebra on the model.</p>
+<p><strong>This is not the algebra $\mathbb{H}$.</strong> The model is a faithful algebra morphism of the plain product;
+the antisymmetric quaternionic block is read on it through the transpose, which is the conjugation, and
+is not the matrix product. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation,
+the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with
+the natural sign and gives nothing new. The symbol $\diamond$ is reserved for this block.</p>
+<p>The model and its multiplicativity are <em>Introduction to the $4\times4$ Matrix Element Representation
+$M_4(\mathbb{R})_L$ of Quaternions</em> and <em>The General Quaternionic Algebra in the $4\times4$ Matrix
+Element Representation $M_4(\mathbb{R})_L$</em>; the block and its failure are <em>Introduction to the
+Antisymmetric Quaternionic Algebra of Quaternions</em> and <em>The Jacobi Failure and the Associator Defect of
+the Antisymmetric Quaternionic Algebra</em>, below this article in this category; the operator is <em>The
+Adjoint Operators of the Antisymmetric Quaternionic Algebra</em> and the form is <em>The Invariant Bilinear
+Forms of the Antisymmetric Quaternionic Algebra</em>, both below this article in this category. The
+companions are <em>The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation
+$M_4(\mathbb{R})_L$</em>, above this article in this category, and <em>The Antisymmetric Quaternionic Algebra in
+the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, above this article in this category.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
+$e_1^2=e_2^2=e_3^2=-e_0$; the left regular representation is the map $\mathsf{M}_4$ sending $\tilde q$ to
+the matrix of the left multiplication $r\mapsto\tilde q r$ in the basis $(e_0,e_1,e_2,e_3)$, and
+$\mathsf{R}_4$ is the right regular representation. The model is multiplicative,
+$\mathsf{M}_4(\tilde p\tilde q)=\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)$, the conjugation is the
+transpose, $\mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T}$, and
+$\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_0$, $\det\mathsf{M}_4(\tilde q)=N(\tilde q)^2$. The
+<strong>quaternion form</strong> is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and the <strong>plain form</strong>
+$B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$.</p>
+<h2 id="the-operation-in-the-model">The Operation in the Model</h2>
+<p><strong>Theorem (the halved conjugated commutator).</strong></p>
+<p>$$
+\mathsf{M}_4(\tilde p\diamond\tilde q)
+=\tfrac12\bigl(\mathsf{M}_4(\tilde p)^{\mathsf T}\mathsf{M}_4(\tilde q)-\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde p)\bigr)
+=\tfrac12\bigl[\mathsf{M}_4(\tilde p)^{\mathsf T},\mathsf{M}_4(\tilde q)\bigr].
+$$</p>
+<p><em>Proof.</em> The model is multiplicative and carries the conjugation to the transpose, so
+$\mathsf{M}_4(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=\mathsf{M}_4(\tilde p)^{\mathsf T}\mathsf{M}_4(\tilde q)-\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde p)$,
+and half of it is the image of the block. The plain antisymmetric block on the same model is the halved
+<strong>plain</strong> commutator, the difference being the transpose on the first factor.</p>
+<h2 id="the-image-and-the-kernel-on-the-matrices">The Image and the Kernel on the Matrices</h2>
+<p><strong>Theorem (the image).</strong> The image of the block is the <strong>traceless</strong> part of the image of the model,</p>
+<p>$$
+\mathsf{M}_4\bigl(\mathbb{H}\diamond\mathbb{H}\bigr)=\{\mathsf{M}_4(\mathbf q):\operatorname{Tr}\mathsf{M}_4(\mathbf q)=0\},
+$$</p>
+<p>a three-dimensional real subspace, and the model is injective, so the kernel of the model map is $\{0\}$.</p>
+<p><em>Proof.</em> The values of the block are pure, so their matrices are traceless by
+$\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_0$; conversely a traceless matrix of the image has $q_0=0$
+by the same formula, so it is the image of a pure element, and the pure elements are values of the
+block.</p>
+<p><strong>Proposition (the kernel of the operator).</strong> The kernel of the left multiplication operator of the
+block, read in the model, is the image of the kernel in the coefficient space, which for $\tilde p\neq0$
+is the line $\mathbb{R}\tilde p$: the matrices annihilated by the operator are the multiples of
+$\mathsf{M}_4(\tilde p)$.</p>
+<p><em>Proof.</em> The model is an isomorphism of vector spaces intertwining the operator with its image, so
+kernels correspond; the kernel in the coefficient space is the line of the element (<em>The Adjoint
+Operators of the Antisymmetric Quaternionic Algebra</em>, below this article in this category).</p>
+<h2 id="the-operator-of-the-block-on-the-matrices">The Operator of the Block on the Matrices</h2>
+<p><strong>Proposition (the operator on the matrices).</strong> In the model the operator acts by</p>
+<p>$$
+L^{\diamond}_{\tilde p}\mathsf{M}_4(\tilde r)
+=\tfrac12\bigl(\mathsf{M}_4(\tilde p)^{\mathsf T}\mathsf{M}_4(\tilde r)-\mathsf{M}_4(\tilde r)^{\mathsf T}\mathsf{M}_4(\tilde p)\bigr),
+$$</p>
+<p>antisymmetric in the two matrix arguments; it is the difference of the multiplication by the fixed matrix
+in the twisted product and its reverse.</p>
+<p><strong>Theorem (the invariants of the operator).</strong> The model invariants are</p>
+<p>$$
+\operatorname{Tr}L^{\diamond}_{\tilde p}=3p_0=\tfrac34\operatorname{Tr}\mathsf{M}_4(\tilde p),\qquad
+\det L^{\diamond}_{\tilde p}=0,\qquad
+\operatorname{rank}L^{\diamond}_{\tilde p}=3\ \text{for}\ \tilde p\neq0,
+$$</p>
+<p>with the kernel the line $\mathbb{R}\tilde p$ and the image the whole vector subspace.</p>
+<p><em>Proof.</em> The coefficient-space values are those of <em>The Adjoint Operators of the Antisymmetric
+Quaternionic Algebra</em>, below this article in this category; the trace converts by
+$\operatorname{Tr}\mathsf{M}_4(\tilde p)=4p_0$, and the determinant, the rank and the kernel are
+basis-independent properties carried over by the intertwining isomorphism.</p>
+<h2 id="the-two-commuting-copies">The Two Commuting Copies</h2>
+<p><strong>Proposition (the two regular copies).</strong> The left and the right regular representations commute,
+$\mathsf{M}_4(\tilde p)\mathsf{R}_4(\tilde q)=\mathsf{R}_4(\tilde q)\mathsf{M}_4(\tilde p)$, with the
+product the two-sided operator $r\mapsto\tilde p r\tilde q$. The left copy carries the block, the right
+copy carries the conjugate block.</p>
+<p><em>Proof.</em> The associativity of the plain product gives $(\tilde p r)\tilde q=\tilde p(r\tilde q)$ for
+every $r$, which is the equality of the two operators; the block is built from the left copy alone, and
+the right copy commutes with it because it commutes with $\mathsf{M}_4(\tilde p)$ and the transpose of
+that matrix.</p>
+<p><strong>Remark (what the four by four model adds).</strong> The two by two model carries the left representation
+alone, the right one being its conjugate; the regular model carries both copies at once, and the
+commuting pair is the whole operator algebra of the two-sided multiplications. For the block the
+enrichment is idle: the operation uses the transposed left factor only, and the right copy is a
+spectator.</p>
+<h2 id="the-trace-form-and-the-invariant-form-on-the-matrices">The Trace Form and the Invariant Form on the Matrices</h2>
+<p><strong>Theorem (the forms on the model).</strong></p>
+<p>$$
+\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)\bigr)=4B(\tilde p,\tilde q),\qquad
+\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T}\bigr)=4N(\tilde p,\tilde q),
+$$</p>
+<p>the unique invariant form of the block reads the scalar parts,
+$\varphi(\tilde p,\tilde q)=p_0q_0=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde p)\operatorname{Tr}\mathsf{M}_4(\tilde q)$,
+and the operator trace form is
+$K(\tilde p,\tilde q)=3p_0q_0-2\,\mathbf p\cdot\mathbf q=\tfrac18\bigl(5\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))+\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T})\bigr)$.</p>
+<p><em>Proof.</em> The model is multiplicative, so
+$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=\operatorname{Tr}\mathsf{M}_4(\tilde p\tilde q)=4\mathrm{Sc}(\tilde p\tilde q)=4B(\tilde p,\tilde q)$
+and $\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T})=\operatorname{Tr}\mathsf{M}_4(\tilde p\tilde q^{\natural})=4N(\tilde p,\tilde q)$;
+the trace of the model is $4q_0$, whence $\varphi$; the combination is the operator trace form of <em>The
+Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>, below this article in this
+category, and equals $3p_0q_0-2\,\mathbf p\cdot\mathbf q$ because
+$\tfrac18(5\cdot4B+4N)=\tfrac12(N+5B)$.</p>
+<p><strong>Remark (the coefficient form vanishes).</strong> The values of the block are traceless, so
+$\operatorname{Tr}\mathsf{M}_4(\tilde p\diamond\tilde q)=0$ and the trace form of the block is the zero
+form; the only invariant form of the block remains the degenerate scalar-part form $\varphi$.</p>
+<h2 id="the-comparison-with-the-quaternionic-algebra-on-the-model">The Comparison with the Quaternionic Algebra on the Model</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the quaternionic algebra</th>
+<th>the antisymmetric quaternionic block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the operation in the model</td>
+<td>$\mathsf{M}_4(\tilde p)^{\mathsf T}\mathsf{M}_4(\tilde q)$</td>
+<td>the halved conjugated commutator</td>
+</tr>
+<tr>
+<td>the image</td>
+<td>the four-dimensional algebra of the regular matrices</td>
+<td>the traceless part, of dimension three</td>
+</tr>
+<tr>
+<td>the trace of a value</td>
+<td>$4\,\mathrm{Sc}(\tilde p^{\natural}\tilde q)=4N(\tilde p,\tilde q)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the conjugation</td>
+<td>the transpose on the first factor</td>
+<td>the same, antisymmetrised</td>
+</tr>
+<tr>
+<td>the two copies</td>
+<td>the left copy carries the product</td>
+<td>the left copy carries the block</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the reading of the table).</strong> The quaternionic product on the regular model is the matrix
+product with the transposed first factor, and the block is its halved antisymmetrisation; the plain
+products on the same model are the matrix product and the halved plain commutator. The block shares with
+the plain antisymmetric block the traceless image, and differs in that its commutator is conjugated, so
+its values are the differences of a twisted product rather than of the plain one; over $\mathbb{C}$ the
+values carry the Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ on the traceless regular matrices, and over
+$\mathbb{R}$ the three-dimensional traceless part of $M_4(\mathbb{R})$, whose operation is the cross
+product up to sign. The comparison with the companion blocks is <em>The Antisymmetric Plain Algebra in the
+$4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>, above this article in this category, and
+the biquaternion reading is <em>The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element
+Representation $M_4(\mathbb{C})_L$</em> of the biquaternion chapter.</p>
+<h2 id="summary">Summary</h2>
+<p>In the four by four left regular model the antisymmetric quaternionic block is the halved conjugated
+commutator,
+$\mathsf{M}_4(\tilde p\diamond\tilde q)=\tfrac12[\mathsf{M}_4(\tilde p)^{\mathsf T},\mathsf{M}_4(\tilde q)]$,
+with the transpose the conjugation. Its image is the traceless part of the image of the model, a
+three-dimensional real subspace, the pure elements being exactly the traceless regular matrices, and its
+operator $L^{\diamond}_{\tilde p}$ acts on a matrix as the difference of the twisted product and its
+reverse, of trace $3p_0=\tfrac34\operatorname{Tr}\mathsf{M}_4(\tilde p)$, determinant zero, rank three
+off the origin and kernel the line of the element. The left and the right regular copies commute, and
+the block uses the left one alone. The trace of the model reads the plain form,
+$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=4B(\tilde p,\tilde q)$, the trace with
+the transpose reads the quaternion form, the unique invariant form is
+$\varphi=p_0q_0=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde p)\operatorname{Tr}\mathsf{M}_4(\tilde q)$,
+and the operator trace form is
+$\tfrac18(5\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))+\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T}))=3p_0q_0-2\,\mathbf p\cdot\mathbf q$.
+The quaternionic product on the same model is the matrix product with the transposed first factor.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_4(\tilde q)$</td>
+<td>the left regular matrix of $\tilde q$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4(\tilde p)^{\mathsf T}=\mathsf{M}_4(\tilde p^{\natural})$</td>
+<td>the transpose, the conjugation</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4(\tilde p\diamond\tilde q)=\tfrac12[\mathsf{M}_4(\tilde p)^{\mathsf T},\mathsf{M}_4(\tilde q)]$</td>
+<td>the block as the halved conjugated commutator</td>
+</tr>
+<tr>
+<td>traceless part of the image</td>
+<td>the image of the block, dimension three</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}L^{\diamond}_{\tilde p}=3p_0$, rank $3$</td>
+<td>the invariants of the operator</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=4B$</td>
+<td>the plain form</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T})=4N$</td>
+<td>the quaternion form</td>
+</tr>
+<tr>
+<td>$\varphi=p_0q_0=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde p)\operatorname{Tr}\mathsf{M}_4(\tilde q)$</td>
+<td>the unique invariant form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions</em>, for the model, its basis matrices, the trace and the multiplicativity.</li>
+<li><em>The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em>, for the parent product on the model.</li>
+<li><em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em> and <em>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</em>, both below this article in this category, for the operator and the forms.</li>
+<li><em>The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$</em> and <em>The Antisymmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, both above this article in this category, for the companion readings.</li>
+<li><em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</em>, below this article in this category, for the failure behind the conjugated commutator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

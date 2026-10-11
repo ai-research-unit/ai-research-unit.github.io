@@ -88,7 +88,7 @@ $$</p>
 <p><strong>Proof.</strong> The first identity is the shift $2^{-n}\log^+\|F^{n+1}(\tilde Q)\|=2\cdot 2^{-(n+1)}\log^+\|F^{n+1}(\tilde Q)\|$; the second is that a bounded orbit has $\log^+\|F^n\|_E\le\log^+(1+\sup\|\cdot\|_E)$ uniformly.</p>
 <p><strong>Remark (the missing normalization at infinity).</strong> In the complex plane the Green's function of a polynomial satisfies $G_C(\zeta)=\log|\zeta|+O(1)$ as $\zeta\to\infty$, and this normalization is what makes the function usable: it identifies the escape rate and turns $G_C$ into a potential. In $\mathbb{B}$ the normalization fails on the zero-divisor cone, because $\|\tilde Q^2\|_E$ has no lower bound in terms of $\|\tilde Q\|_E$ and a point of large norm can be sent to the origin in one step. <strong>On the regular part of the escaping set the normalization holds; on the cone it cannot.</strong> The precise statement is the next proposition.</p>
 <h2 id="the-conditional-greens-function">The Conditional Green's Function</h2>
-<p><strong>Proposition (conditional existence and normalization).</strong> Let $\delta>0$ and let $\Omega_{\tilde C,\delta}$ be the set of the points $\tilde Q\in\Omega_{\tilde C}$ whose orbit satisfies $\sigma_2(M_n)\ge\delta\,\sigma_1(M_n)$ for every $n$, where $M_n=\Phi(F_{\tilde C}^n(\tilde Q))$. Then $G_{\tilde C}$ is defined on $\Omega_{\tilde C,\delta}$, and on it</p>
+<p><strong>Proposition (conditional existence and normalization).</strong> Let $\delta>0$ and let $\Omega_{\tilde C,\delta}$ be the set of the points $\tilde Q\in\Omega_{\tilde C}$ whose orbit satisfies $\sigma_2(M_n)\ge\delta\,\sigma_1(M_n)$ for every $n$, where $M_n=\mathsf{M}_2(F_{\tilde C}^n(\tilde Q))$. Then $G_{\tilde C}$ is defined on $\Omega_{\tilde C,\delta}$, and on it</p>
 <p>$$
 G_{\tilde C}(\tilde Q)=\log\|\tilde Q\|_E+O(1), \qquad \tilde Q\to\infty .
 $$</p>
@@ -96,12 +96,12 @@ $$</p>
 <p><strong>Remark (why $\delta$ is unavoidable).</strong> The condition is a lower bound on the reciprocal condition number of the iterate and is exactly what the collapse of the square forbids on the zero divisors. <strong>The Green's function of a biquaternion parameter is a function on the $\delta$-regular part of the escaping set for every $\delta>0$, and it is on the union over $\delta$ of these sets; it fails to have a meaning on the orbits that meet the cone infinitely often, and there it is open.</strong> The conditional radius $R_\delta$ of the previous article is the level set of $G_{\tilde C}$ implied by the same estimate.</p>
 <h2 id="the-central-parameter">The Central Parameter</h2>
 <p>For a central parameter the whole pluripotential picture collapses to the complex one, because the orbit is the polynomial in one element and the spectrum separates.</p>
-<p><strong>Theorem (the Green's function of a central parameter).</strong> Let $\tilde C=Ce_0$, let $G_C$ be the Green's function of $\zeta\mapsto\zeta^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\Phi(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then</p>
+<p><strong>Theorem (the Green's function of a central parameter).</strong> Let $\tilde C=Ce_0$, let $G_C$ be the Green's function of $\zeta\mapsto\zeta^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then</p>
 <p>$$
 G_{\tilde C}(\tilde Q)=\max\bigl(G_C(\lambda_1),\,G_C(\lambda_2)\bigr),
 $$</p>
 <p>and in particular $\tilde Q\in\Omega_{\tilde C}$ if and only if at least one eigenvalue escapes, while $\tilde Q\in\mathcal K_{\tilde C}$ if and only if both eigenvalues lie in the filled Julia set $K_C$.</p>
-<p><strong>Proof.</strong> By the eigenvalue reduction the spectrum of $\Phi(F_{\tilde C}^n(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$. A matrix norm is comparable to the maximum modulus of the eigenvalues up to a constant depending only on the matrix and its diagonaliser, so $\log\|\Phi(F^n(\tilde Q))\|_F=\max_j\log|q_n(\lambda_j)|+O(1)$; dividing by $2^n$ and letting $n\to\infty$ the $O(2^{-n})$ term vanishes and the limit is the maximum of the two complex Green's functions. The escape and boundedness statements follow from $\Omega=\{G>0\}$ and $\mathcal K=\{G=0\}$ in the complex theory.</p>
+<p><strong>Proof.</strong> By the eigenvalue reduction the spectrum of $\mathsf{M}_2(F_{\tilde C}^n(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$. A matrix norm is comparable to the maximum modulus of the eigenvalues up to a constant depending only on the matrix and its diagonaliser, so $\log\|\mathsf{M}_2(F^n(\tilde Q))\|_F=\max_j\log|q_n(\lambda_j)|+O(1)$; dividing by $2^n$ and letting $n\to\infty$ the $O(2^{-n})$ term vanishes and the limit is the maximum of the two complex Green's functions. The escape and boundedness statements follow from $\Omega=\{G>0\}$ and $\mathcal K=\{G=0\}$ in the complex theory.</p>
 <p><strong>Corollary (the escape radius of the central slice).</strong> For $\tilde C=Ce_0$ every point whose matrix has an eigenvalue of modulus exceeding $1+|C|$ escapes, and the level sets of $G_{\tilde C}$ on a slice are the level sets of the two complex Green's functions.</p>
 <h2 id="the-general-parameter">The General Parameter</h2>
 <p>For a non-central parameter the orbit is no longer a polynomial in one element, the spectrum does not separate, and there is no formula. What remains is the general pluripotential theory of polynomial maps of a complex space, and it must be quoted carefully, because the map here is degenerate.</p>
@@ -139,7 +139,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\delta=\sigma_2/\sigma_1$</td>
-<td>the reciprocal condition number of $\Phi(\tilde Q)$</td>
+<td>the reciprocal condition number of $\mathsf{M}_2(\tilde Q)$</td>
 </tr>
 <tr>
 <td>$\Omega_{\tilde C,\delta}$</td>

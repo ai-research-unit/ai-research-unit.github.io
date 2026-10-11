@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra"><strong>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antisymmetric plain algebra of $\mathbb{H}$ is the real Lie algebra
+$\mathfrak{g}=(\mathbb{H},\times)$ with the cross product
+$\tilde p\times\tilde q=\mathbf p\times\mathbf q$ of <em>The Lie Algebra of the Antisymmetric Plain
+Algebra</em>, below this article in this category. This article reads its adjoint operators, proves that
+they are derivations, computes the whole derivation algebra and the automorphism group, and compares
+the two with the biquaternion case.</p>
+<p>The two structural facts of the block give the answer at once. Alternation makes the adjoint the cross
+product by the vector part; the Jacobi identity is exactly the statement that the adjoint operators
+are derivations. The derivations are the adjoints, an algebra isomorphic to the vector subspace with
+the cross product, together with one outer derivation scaling the centre; the automorphism group is the
+product of the nonzero scalings of the centre and the group of linear maps of the vector subspace
+preserving the cross product.</p>
+<p><strong>This is not the algebra $\mathbb{H}$.</strong> The operators are read on the Lie bracket, not on the
+associative product. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the
+bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the
+natural sign and gives nothing new.</p>
+<p>The operation and the Jacobi identity are <em>The Specificities of the Antisymmetric Plain Algebra</em>; the
+Lie structure is <em>The Lie Algebra of the Antisymmetric Plain Algebra</em> and the form is <em>The Killing Form
+of the Antisymmetric Plain Algebra</em>, both below this article in this category. The biquaternion
+counterpart is <em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em> of the
+biquaternion chapter.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
+$e_1^2=e_2^2=e_3^2=-e_0$; the centre is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, the vector subspace is
+$\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}=\mathbb{R}^3$, and $C_{\mathbf p}$ is the cross-product matrix
+$C_{\mathbf p}\mathbf q=\mathbf p\times\mathbf q$. The bracket of two endomorphisms is
+$[A,B]=AB-BA$; a <strong>derivation</strong> of the block is an endomorphism $D$ with
+$D(\tilde p\times\tilde q)=D\tilde p\times\tilde q+\tilde p\times D\tilde q$.</p>
+<h2 id="the-adjoint-operators">The Adjoint Operators</h2>
+<p><strong>Definition.</strong> The <strong>adjoint operator</strong> of $\tilde p$ is the left multiplication</p>
+<p>$$
+\operatorname{ad}_{\tilde p}\tilde q=\tilde p\times\tilde q .
+$$</p>
+<h3 id="the-matrix-and-the-invariants">The Matrix and the Invariants</h3>
+<p><strong>Proposition.</strong> In the basis $(e_0,e_1,e_2,e_3)$ the adjoint is the block matrix</p>
+<p>$$
+\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\mathbf p})
+\quad\text{on}\quad \mathbb{H}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H}),
+$$</p>
+<p>with the invariants</p>
+<p>$$
+\operatorname{Tr}\operatorname{ad}_{\tilde p}=0,\qquad
+\det\operatorname{ad}_{\tilde p}=0,\qquad
+\operatorname{rank}\operatorname{ad}_{\tilde p}=\begin{cases}2,&\mathbf p\neq0,\\0,&\mathbf p=0,\end{cases}
+$$</p>
+<p>and the characteristic polynomial $\chi(t)=t^2(t^2+|\mathbf p|^2)$.</p>
+<p><em>Proof.</em> The bracket vanishes on the scalar direction and the pure part is the cross product by
+$\mathbf p$, so the matrix is $\operatorname{diag}(0,C_{\mathbf p})$; the invariants descend from
+$C_{\mathbf p}^2=\mathbf p\mathbf p^{\mathsf T}-|\mathbf p|^2\mathrm{I}_3$, of characteristic
+polynomial $t(t^2+|\mathbf p|^2)$, and from the vanishing scalar block.</p>
+<h3 id="the-kernel-and-the-image">The Kernel and the Image</h3>
+<p><strong>Proposition.</strong> For a noncentral element the kernel and the image of the adjoint are</p>
+<p>$$
+\ker\operatorname{ad}_{\tilde p}=\mathbb{R}e_0\oplus\mathbb{R}\mathbf p,\qquad
+\operatorname{im}\operatorname{ad}_{\tilde p}=\mathbf p^{\perp}\cap\mathrm{Vect}(\mathbb{H}),
+$$</p>
+<p>the kernel being the two-dimensional plane spanned by the centre and the element, and the image the
+two-dimensional plane of the vector subspace orthogonal to $\mathbf p$. For a central element the
+adjoint is zero.</p>
+<p><em>Proof.</em> The kernel is the annihilator of the element for the block, computed in <em>Zero Divisors of the
+Antisymmetric Plain Algebra</em>, below this article in this category, as the plane
+$\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$; the image is $\{\mathbf p\times\mathbf q\}$, which is the
+plane orthogonal to $\mathbf p$ when $\mathbf p\neq0$.</p>
+<h2 id="the-adjoints-are-derivations">The Adjoints Are Derivations</h2>
+<p><strong>Theorem (the Jacobi identity is the derivation property).</strong> For every $\tilde p$ the adjoint
+$\operatorname{ad}_{\tilde p}$ is a derivation of the block,</p>
+<p>$$
+\operatorname{ad}_{\tilde p}(\tilde q\times\tilde r)
+=\operatorname{ad}_{\tilde p}\tilde q\times\tilde r+\tilde q\times\operatorname{ad}_{\tilde p}\tilde r ,
+$$</p>
+<p>and the identity is exactly the Jacobi identity of the block; equivalently the adjoint representation is
+a Lie homomorphism,</p>
+<p>$$
+\operatorname{ad}_{\tilde p\times\tilde q}=[\operatorname{ad}_{\tilde p},\operatorname{ad}_{\tilde q}],
+\qquad\text{that is}\qquad
+\operatorname{ad}_{[\tilde p,\tilde q]}=[\operatorname{ad}_{\tilde p},\operatorname{ad}_{\tilde q}].
+$$</p>
+<p><em>Proof.</em> Expanded, the derivation identity is
+$\tilde p\times(\tilde q\times\tilde r)=(\tilde p\times\tilde q)\times\tilde r+\tilde q\times(\tilde p\times\tilde r)$,
+which is the Jacobi identity rearranged with the antisymmetry of the block. The homomorphism form is
+the same identity read on the commutator of the endomorphisms.</p>
+<p><strong>Remark (the block is the privileged one).</strong> The equivalence of the two properties is the content of
+the Jacobi identity, and it holds for the block alone among the two antisymmetric products of the
+space: for the antisymmetric quaternionic operation the adjoint is not a derivation, and the failure is
+the same defect as the failure of Jacobi (<em>The Adjoint Operators of the Antisymmetric Quaternionic
+Algebra</em>, below this article in this category).</p>
+<h2 id="the-derivation-algebra">The Derivation Algebra</h2>
+<p><strong>Theorem (the derivations).</strong> The derivation algebra of the block is</p>
+<p>$$
+\operatorname{Der}(\mathfrak{g})=\operatorname{ad}(\mathfrak{g})\oplus\mathbb{R}D_0,
+$$</p>
+<p>of real dimension four, where $\operatorname{ad}(\mathfrak{g})$ is the three-dimensional algebra of
+inner derivations, isomorphic to the derived algebra $\mathrm{Vect}(\mathbb{H})$ and to
+$\mathfrak{so}(3)$, and $D_0$ is the derivation</p>
+<p>$$
+D_0(e_0)=e_0,\qquad D_0(\mathbf q)=0 ,
+$$</p>
+<p>which scales the centre and is outer. The kernel of the adjoint representation is the centre, so
+$\operatorname{ad}(\mathfrak{g})\cong\mathfrak{g}/\mathbb{R}e_0\cong\mathfrak{so}(3)$.</p>
+<p><em>Proof.</em> Every adjoint is a derivation by the Jacobi identity, and the map
+$\tilde p\mapsto\operatorname{ad}_{\tilde p}$ has kernel the centre; its image is therefore
+$\mathfrak{g}/\mathbb{R}e_0$, the derived algebra, of dimension three. The map $D_0$ is a derivation:
+$D_0(\tilde p\times\tilde q)=0$ and
+$D_0\tilde p\times\tilde q+\tilde p\times D_0\tilde q=(p_0e_0)\times\tilde q+\tilde p\times(q_0e_0)=0$.
+It is not inner, because every inner derivation annihilates the centre and $D_0$ does not. The
+dimension count $\dim\operatorname{Der}(\mathfrak{g})=4$ is obtained by solving the derivation system on
+the basis.</p>
+<p><strong>Remark (the outer derivation and the centre).</strong> The algebra $\mathfrak{g}$ is the direct sum of its
+centre and its derived algebra, so its derivations split into the derivations of the simple derived
+algebra, which are inner, and the derivations of the abelian centre, which are the scalings; the
+inner ones are the adjoints and the scaling of the centre is the one outer direction.</p>
+<h2 id="the-automorphism-group">The Automorphism Group</h2>
+<p><strong>Theorem (the automorphisms).</strong> The automorphism group of the block is</p>
+<p>$$
+\operatorname{Aut}(\mathfrak{g})=\mathbb{R}^{\times}\times\operatorname{SO}(3),
+$$</p>
+<p>of real dimension four: an automorphism fixes the centre setwise, acts on it by a nonzero scalar, and
+acts on the vector subspace by a linear map preserving the cross product.</p>
+<p><em>Proof.</em> Let $T$ be a linear automorphism with $T(\tilde p\times\tilde q)=T\tilde p\times T\tilde q$.
+The centre is characteristic, being the set of elements that annihilate every element on the left, so
+$T$ preserves $\mathbb{R}e_0$ and $Te_0=c e_0$ with $c\neq0$. Then $T$ preserves the vector subspace,
+which is the image of the block, and on it $A=T|_{\mathrm{Vect}(\mathbb{H})}$ satisfies
+$A(\mathbf u\times\mathbf v)=A\mathbf u\times A\mathbf v$, because the two sides are the images of
+$\mathbf u\times\mathbf v$ and of $\mathbf u,\mathbf v$. Every such $A$ is a linear map of
+$\mathbb{R}^3$ preserving the cross product, which is the special orthogonal group
+$\operatorname{SO}(3)$; its dimension is three, the scalar $c$ contributes one, and the two choices are
+independent and commute. The group is therefore $\mathbb{R}^{\times}\times\operatorname{SO}(3)$ of
+dimension four.</p>
+<p><strong>Remark (the relation to the rotations).</strong> The group of the vector subspace preserving the cross
+product is the group the menu calls the rotations of the vector subspace; it is the realisation of
+$\operatorname{SO}(3)$, named algebraically here and read as linear maps of $\mathbb{R}^3$ without a
+metric statement. The Lie algebra of $\operatorname{Aut}(\mathfrak{g})$ is $\operatorname{Der}(\mathfrak{g})$,
+generated by the inner derivations and by $D_0$.</p>
+<h2 id="the-comparison-with-the-biquaternion-case">The Comparison with the Biquaternion Case</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the biquaternion antisymmetric plain algebra</th>
+<th>the antisymmetric plain algebra of $\mathbb{H}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the adjoint</td>
+<td>$\operatorname{ad}_{\tilde P}=\operatorname{diag}(0,C_{\mathbf P})$</td>
+<td>$\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\mathbf p})$</td>
+</tr>
+<tr>
+<td>the inner derivations</td>
+<td>$\mathfrak{sl}(2,\mathbb{C})$, complex dimension three</td>
+<td>$\mathfrak{so}(3)$, real dimension three</td>
+</tr>
+<tr>
+<td>the derivations</td>
+<td>the inner ones and the scaling of the centre, complex dimension four</td>
+<td>the inner ones and $D_0$, real dimension four</td>
+</tr>
+<tr>
+<td>the automorphisms</td>
+<td>$\mathbb{C}^{\times}\times\operatorname{PGL}(2,\mathbb{C})$</td>
+<td>$\mathbb{R}^{\times}\times\operatorname{SO}(3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the compact real form).</strong> The two derivations algebras have the same shape, the adjoints of
+the derived algebra together with the outer scaling of the centre; the derived algebra is
+$\mathfrak{sl}(2,\mathbb{C})$ over $\mathbb{C}$ and its compact real form $\mathfrak{so}(3)$ over
+$\mathbb{R}$, and the automorphism group is the product of the scalings and the corresponding classical
+group. The biquaternion derivations are <em>The Adjoint Operators and the Derivations of the Antisymmetric
+Plain Algebra</em> of the biquaternion chapter; the comparison is recorded here and not re-derived.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint operators of the antisymmetric plain algebra are the left multiplications by the cross
+product, of matrix $\operatorname{diag}(0,C_{\mathbf p})$, trace zero, determinant zero, rank two off
+the centre, with the characteristic polynomial $t^2(t^2+|\mathbf p|^2)$ and the kernel plane
+$\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$. They are derivations, and the Jacobi identity is exactly that
+statement, equivalently the homomorphism property of the adjoint representation. The derivation
+algebra is the inner algebra $\mathfrak{so}(3)$ together with the outer scaling of the centre, of real
+dimension four; the inner derivations are the image of the adjoint representation, whose kernel is the
+centre. The automorphism group is $\mathbb{R}^{\times}\times\operatorname{SO}(3)$: the scalings of the
+centre and the linear maps of the vector subspace preserving the cross product. Over $\mathbb{C}$ the
+same structure has $\mathfrak{sl}(2,\mathbb{C})$ and $\mathbb{C}^{\times}\times\operatorname{PGL}(2,\mathbb{C})$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{ad}_{\tilde p}\tilde q=\tilde p\times\tilde q$</td>
+<td>the adjoint operator</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\mathbf p})$</td>
+<td>its matrix</td>
+</tr>
+<tr>
+<td>$\ker\operatorname{ad}_{\tilde p}=\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$</td>
+<td>the kernel, the annihilator plane</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_{\tilde p\times\tilde q}=[\operatorname{ad}_{\tilde p},\operatorname{ad}_{\tilde q}]$</td>
+<td>the derivation property as the Jacobi identity</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(\mathfrak{g})=\operatorname{ad}(\mathfrak{g})\oplus\mathbb{R}D_0$</td>
+<td>the derivation algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathfrak{g})=\mathbb{R}^{\times}\times\operatorname{SO}(3)$</td>
+<td>the automorphism group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the Antisymmetric Plain Algebra of Quaternions</em>, for the bracket, its table and the Jacobi identity.</li>
+<li><em>The Lie Algebra of the Antisymmetric Plain Algebra</em>, below this article in this category, for the centre, the derived algebra and the structure constants.</li>
+<li><em>The Killing Form of the Antisymmetric Plain Algebra</em>, below this article in this category, for the form and the Casimir element.</li>
+<li><em>Zero Divisors of the Antisymmetric Plain Algebra</em>, below this article in this category, for the annihilator that is the kernel of the adjoint.</li>
+<li><em>The Adjoint Operators of the Antisymmetric Quaternionic Algebra</em>, below this article in this category, for the block whose adjoint is not a derivation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

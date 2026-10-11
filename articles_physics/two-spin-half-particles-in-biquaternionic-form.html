@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Two spin-$\tfrac12$ particles form the simplest composite quantum system, and in the biquaternion framework it is also the only composite system that is built without leaving the algebra. Each particle is a fundamental module of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the pair lives in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$; and the spin operators of the pair are the sums of the one-particle operators, which are elements of $\mathbb{B}\otimes\mathbb{B}$. Everything the two-particle system does — the triplet and the singlet, the exchange splitting, the Heisenberg coupling, the reduced states — is a statement about elements of that algebra.</p>
 <p>This article works out that system. It is the first application of the coupling machinery: the total spin operators, the four coupled states as idempotents of $\mathbb{B}\otimes\mathbb{B}$, the projectors onto the symmetric and antisymmetric subspaces, the exchange operator, the Heisenberg Hamiltonian as an algebra element with its spectrum, and the partial traces of the coupled states. The companion article <em>Exercise: Two Spins in the Singlet State</em> computes the singlet alone; the companion article <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em> studies the four Bell idempotents; the companion article <em>Entangled Subsystems in the Biquaternion Framework</em> fixes the tensor-product arena and the partial traces. This article presents the whole two-spin structure in one place and treats the coupled basis and the Bell basis as two idempotent bases of the same algebra, related by a change of basis.</p>
-<p>The division between what is algebraic and what is imported is the same as in the addition of angular momenta. The tensor-product arena, the total operators, the coupled projectors, the exchange operator, and the coupling term are elements of the algebra and follow from the quaternion product rule. The assumption that two particles are described by the tensor product of their state spaces is an assumption, not a theorem of the framework; it is the assumption that makes the rest possible, and it is stated as such. The identifications of the algebra with the standard Pauli-string description of two qubits are consequences of the isomorphism $\Phi$.</p>
+<p>The division between what is algebraic and what is imported is the same as in the addition of angular momenta. The tensor-product arena, the total operators, the coupled projectors, the exchange operator, and the coupling term are elements of the algebra and follow from the quaternion product rule. The assumption that two particles are described by the tensor product of their state spaces is an assumption, not a theorem of the framework; it is the assumption that makes the rest possible, and it is stated as such. The identifications of the algebra with the standard Pauli-string description of two qubits are consequences of the isomorphism $\mathsf{M}_2$.</p>
 <p>The article is organised as follows. The next section fixes the two-qubit algebra, its trace, and its partial traces. Then the total spin operators and their Casimir are constructed, and the coupling term is evaluated in closed form. The four coupled states are exhibited as idempotents, with the projectors onto the symmetric and antisymmetric subspaces. The exchange operator is introduced, its commutation with the total spin proved, and the Heisenberg coupling solved. The partial traces of the coupled states are then computed, and the coupled basis is related to the Bell basis. A closing section states what the composition assumption costs.</p>
 <h2 id="the-two-qubit-algebra">The Two-Qubit Algebra</h2>
 <p>The arena is the tensor product taken over the complex scalars,</p>
@@ -74,7 +74,7 @@ $$</p>
 <p>$$
 [\tilde S_i^{(1)},\tilde S_j^{(2)}]=0 .
 $$</p>
-<p>The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\Phi(e_\mu)\otimes\Phi(e_\nu)$ with $\Phi(e_0)=I_2$ and $\Phi(e_k)=-i\sigma_k$; under it $\tilde S_k^{(a)}$ maps to $\tfrac{\hbar}{2}\sigma_k$ acting on the $a$-th factor, and the algebra $\mathbb{B}\otimes\mathbb{B}$ maps onto all of $M_4(\mathbb{C})$.</p>
+<p>The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\mathsf{M}_2(e_\mu)\otimes\mathsf{M}_2(e_\nu)$ with $\mathsf{M}_2(e_0)=I_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$; under it $\tilde S_k^{(a)}$ maps to $\tfrac{\hbar}{2}\sigma_k$ acting on the $a$-th factor, and the algebra $\mathbb{B}\otimes\mathbb{B}$ maps onto all of $M_4(\mathbb{C})$.</p>
 <p>A state of the pair is a Hermitian, positive, trace-one element of $\mathbb{B}\otimes\mathbb{B}$, and an observable is a Hermitian element. The pure product states are the idempotents</p>
 <p>$$
 P_{\hat m}\otimes P_{\hat n}=\tfrac{1}{4}\left(e_0\otimes e_0+i\hat m_ke_k\otimes e_0+i e_0\otimes\hat n_le_l-\hat m_k\hat n_l\,e_k\otimes e_l\right),
@@ -129,7 +129,7 @@ $$</p>
 <p>$$
 F^2=e_0\otimes e_0,\qquad F^{*}=F,\qquad \mathrm{Tr}(F)=2,\qquad F\ne \pm e_0\otimes e_0 .
 $$</p>
-<p>The first follows from $(e_k\otimes e_k)^2=e_k^2\otimes e_k^2=e_0\otimes e_0$ and the orthogonality of the contributions for distinct $k$; the second from $e_k^{*}=-e_k$; the third from $\mathrm{Tr}(e_k\otimes e_k)=0$. Under $\Phi\otimes\Phi$ the exchange operator becomes $\tfrac12\left(I\otimes I+\sum_k\sigma_k\otimes\sigma_k\right)$, the standard two-qubit swap.</p>
+<p>The first follows from $(e_k\otimes e_k)^2=e_k^2\otimes e_k^2=e_0\otimes e_0$ and the orthogonality of the contributions for distinct $k$; the second from $e_k^{*}=-e_k$; the third from $\mathrm{Tr}(e_k\otimes e_k)=0$. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator becomes $\tfrac12\left(I\otimes I+\sum_k\sigma_k\otimes\sigma_k\right)$, the standard two-qubit swap.</p>
 <h3 id="the-coupled-projectors">The coupled projectors</h3>
 <p>Because $F$ is a Hermitian involution, its spectral projectors are</p>
 <p>$$
@@ -209,7 +209,7 @@ $$</p>
 <p>$$
 F\,(P_{\hat m}\otimes P_{\hat n})F=P_{\hat n}\otimes P_{\hat m},
 $$</p>
-<p>and on the product basis vectors, under $\Phi\otimes\Phi$, it acts as the swap $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$. It therefore commutes with the total spin operators,</p>
+<p>and on the product basis vectors, under $\mathsf{M}_2\otimes\mathsf{M}_2$, it acts as the swap $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$. It therefore commutes with the total spin operators,</p>
 <p>$$
 [F,\tilde S_k]=0,\qquad k=1,2,3 ,
 $$</p>
@@ -267,7 +267,7 @@ $$</p>
 <p>$$
 \mathrm{Tr}\!\left(\tfrac{1}{2}e_0\cdot\tfrac{1}{2}e_0\right)=\tfrac{1}{4}\mathrm{Tr}_\mathbb{B}(e_0)=\tfrac12 .
 $$</p>
-<p>The three triplet members therefore fall into two classes: $E_{1,\pm1}$ are product states with pure reduced states, while $E_{1,0}$ is a correlated state with maximally mixed reduced states, exactly like the singlet $E_{0,0}$. The middle triplet state and the singlet share the same reduced data and differ only in their correlations; this is the algebraic content of the statement that the reduced density matrix does not determine the state of a composite. The informational reading of these correlations — their entropy, their discord, their use as a resource — belongs to the informational subcategory and is not taken up here.</p>
+<p>The three triplet members therefore fall into two classes: $E_{1,\pm1}$ are product states with pure reduced states, while $E_{1,0}$ is a correlated state with maximally mixed reduced states, exactly like the singlet $E_{0,0}$. The middle triplet state and the singlet share the same reduced data and differ only in their correlations; this is the algebraic content of the statement that the reduced density matrix does not determine the state of a composite. The informational interpretation of these correlations — their entropy, their discord, their use as a resource — belongs to the informational subcategory and is not taken up here.</p>
 <h2 id="relation-to-the-bell-basis">Relation to the Bell Basis</h2>
 <p>The coupled idempotents and the four Bell idempotents are two orthogonal families of minimal idempotents resolving the identity of $\mathbb{B}\otimes\mathbb{B}$; they are two idempotent bases in the sense of the companion article <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em>, related by a unitary change of basis.</p>
 <p>The singlet belongs to both bases: $E_{0,0}=P_{\epsilon}$ with $\epsilon=(+1,+1,+1)$, which is the singlet idempotent $P_{\mathrm{singlet}}$ of the companion articles. The middle triplet member $E_{1,0}$ is the Bell idempotent with $\epsilon=(-1,-1,+1)$, the state $|\Psi^+\rangle$. The two remaining Bell idempotents are the projectors onto the states $\tfrac{1}{\sqrt2}\left(|\!\uparrow\uparrow\rangle\pm|\!\downarrow\downarrow\rangle\right)$, they involve off-diagonal matrix units linking the extreme product states, and are not members of the coupled multiplet.</p>
@@ -363,7 +363,7 @@ $$</p>
 <td>Exchange constant (ferromagnetic $J>0$)</td>
 </tr>
 <tr>
-<td>$\Phi(e_0)=I_2,\ \Phi(e_k)=-i\sigma_k$</td>
+<td>$\mathsf{M}_2(e_0)=I_2,\ \mathsf{M}_2(e_k)=-i\sigma_k$</td>
 <td>Matrix isomorphism</td>
 </tr>
 </tbody>

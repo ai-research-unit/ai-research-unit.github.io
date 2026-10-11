@@ -72,7 +72,7 @@ and the KMS state of <em>The KMS Condition and the Biquaternion Framework</em> i
 <li><strong>Locality of $\tilde K$ is a question with a known exceptional answer.</strong> In a quantum field theory the modular Hamiltonian of a region is generically a nonlocal operator; it is local (a geometric generator) in the cases covered by Bisognano–Wichmann and its conformal extension. The biquaternion framework houses the wedge case, because the boost generator is a Hermitian element $G_1=ie_1\in\mathbb{M}_+$; it does not house the ball case, because the special conformal generators are not elements of $\mathbb{B}$.</li>
 </ul>
 <p>The article proceeds as follows. The modular Hamiltonian is defined from $\Delta$, the hypotheses are checked, and the sign convention is fixed. The finite-dimensional realization in $\mathbb{B}$ is recalled from the parents and completed with $\tilde K$'s spectral form. $\tilde K$ is then verified to generate the same flow as $\Delta^{it}$. The trace formula is used to show that the Gibbs form is a scalar extraction. A closing section separates what is established from what is a gap.</p>
-<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\mathbf h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.</p>
+<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\mathbf h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.</p>
 <h2 id="the-generator-of-the-modular-flow">The Generator of the Modular Flow</h2>
 <h3 id="definition-from-the-modular-operator">Definition from the Modular Operator</h3>
 <p>Let $M$ be a von Neumann algebra with a cyclic and separating vector $\Omega$, and let $S=J\Delta^{1/2}$ be the polar decomposition of the Tomita operator, so that $\Delta=S^*S$ is self-adjoint and $\Delta\ge 0$. The <strong>modular Hamiltonian</strong> is
@@ -111,7 +111,7 @@ $$
 $$
 The opposite choice, $\Delta=e^{+\tilde K}$ with $\Delta^{it}=e^{+i\tilde Kt}$, is the same equation with $\tilde K\mapsto-\tilde K$. It is not a relabelling: the Takesaki–Winnink theorem says that a faithful normal state satisfies the KMS condition with respect to $\sigma_{-t}$, not $\sigma_t$, and reversing the sign of $\tilde K$ reverses the flow and exchanges the two. In the finite-dimensional model the convention is pinned by $\tilde\rho=e^{-\tilde K}$ and $\sigma_t(\tilde A)=\tilde\rho^{it}\tilde A\tilde\rho^{-it}$, which is the parent's convention; the generator identity $\frac{d}{dt}\sigma_t(\tilde A)|_{t=0}=-i[\tilde K,\tilde A]$ follows from it and is the form used throughout. A displayed formula that writes $\Delta^{it}=e^{+i\tilde Kt}$ together with $\tilde K=-\log\Delta$ is internally inconsistent — it would give $\Delta^{it}=\Delta^{-it}$ — and the sign is fixed here once, in the direction above, and held.</p>
 <h3 id="the-state-is-thermal-with-respect-to-math133">The State Is Thermal with Respect to $\tilde K$</h3>
-<p>The KMS property gives $\tilde K$ its physical reading. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde\rho\in\mathbb{M}_+$ that is positive definite and of trace one,
+<p>The KMS property gives $\tilde K$ its physical interpretation. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde\rho\in\mathbb{M}_+$ that is positive definite and of trace one,
 $$
 \omega(\tilde A)=\mathrm{Tr}(\tilde\rho\,\tilde A),
 \qquad
@@ -200,7 +200,7 @@ $$
 $$
 which is the generator identity of the definition. So the $\tilde K$ constructed from the state is the same operator that generates the flow constructed from the Tomita operator, and the check is a recomputation rather than a quotation.</p>
 <h2 id="verification-math196-generates-the-modular-flow">Verification: $\tilde K$ Generates the Modular Flow</h2>
-<p>The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$. The state was the parent's generic faithful state,
+<p>The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
 $$
 \mathbf r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
 \qquad |\mathbf r|^2=\tfrac{29}{100},
@@ -281,7 +281,7 @@ $$
 Z=\mathrm{Tr}\big(e^{-\beta\tilde H}\big)=2\,\mathrm{Sc}\big(e^{-\beta\tilde H}\big)
 =2e^{-\beta h_0}\cosh(\beta|\mathbf h|),
 $$
-and the scalar and vector parts of $\tilde K$ have direct thermodynamic readings:
+and the scalar and vector parts of $\tilde K$ have direct thermodynamic interpretations:
 $$
 \mathrm{Sc}(\tilde K)=\beta h_0+\log Z,
 \qquad
@@ -507,7 +507,7 @@ so the modular Hamiltonian is a Hermitian element of the informational sector, w
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Companion article <em>The Modular Theory of Tomita–Takesaki under the Biquaternion Framework</em>, for the construction of $S$, $\Delta$ and $J$, the modular flow, and the type classification.</li>
-<li>Companion article <em>The KMS Condition and the Biquaternion Framework</em>, for the KMS boundary relation, the imaginary-time strip, and the thermal reading of $\tilde K$.</li>
+<li>Companion article <em>The KMS Condition and the Biquaternion Framework</em>, for the KMS boundary relation, the imaginary-time strip, and the thermal interpretation of $\tilde K$.</li>
 <li>Companion article <em>The Partition Function in Biquaternionic Form</em>, for the Gibbs state, the thermal operator, and $\tilde K=\beta\tilde H+(\log Z)e_0$.</li>
 <li>Companion article <em>The Unruh Effect in Biquaternionic Form</em>, for the wedge, the Bisognano–Wichmann identification, and the temperature derived from the two-point function.</li>
 <li>Companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.</li>

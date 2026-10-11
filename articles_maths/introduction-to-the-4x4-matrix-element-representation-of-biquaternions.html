@@ -111,7 +111,7 @@ $$</p>
 \det\mathsf{M}_4(\tilde Q)=\Delta(\tilde Q)^2,\qquad \operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0,\qquad \Delta(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2 .
 $$</p>
 <p>The determinant of the regular matrix is the <strong>square</strong> of the determinant of the $2\times2$ model, and it is not that determinant itself.</p>
-<p><strong>Proof.</strong> Write $A=\Phi(\tilde Q)$, so that $A$ is the matrix of $\tilde Q$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, of trace $2Q_0$ and determinant $\Delta(\tilde Q)$. The map $\mathsf{M}_4(\tilde Q)$ is left multiplication by $A$ on $M_2(\mathbb{C})$, and in the basis of $M_2(\mathbb{C})$ grouped by columns that operator is block diagonal with two copies of $A$, because $A(Xe_j)=(AX)e_j$ for each column $Xe_j$. The trace and the determinant of a block diagonal matrix are the sum and the product of those of the blocks, so $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=2\operatorname{Tr}A=4Q_0$ and $\det\mathsf{M}_4(\tilde Q)=\det(A)^2=\Delta(\tilde Q)^2$.</p>
+<p><strong>Proof.</strong> Write $A=\mathsf{M}_4(\tilde Q)$, so that $A$ is the matrix of $\tilde Q$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, of trace $2Q_0$ and determinant $\Delta(\tilde Q)$. The map $\mathsf{M}_4(\tilde Q)$ is left multiplication by $A$ on $M_2(\mathbb{C})$, and in the basis of $M_2(\mathbb{C})$ grouped by columns that operator is block diagonal with two copies of $A$, because $A(Xe_j)=(AX)e_j$ for each column $Xe_j$. The trace and the determinant of a block diagonal matrix are the sum and the product of those of the blocks, so $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=2\operatorname{Tr}A=4Q_0$ and $\det\mathsf{M}_4(\tilde Q)=\det(A)^2=\Delta(\tilde Q)^2$.</p>
 <p><strong>Example.</strong> For $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the $2\times2$ determinant is $\Delta(\tilde Q)=11+2i$, hence $\det\mathsf{M}_4(\tilde Q)=(11+2i)^2=117+44i$ and $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4(2+i)=8+4i$.</p>
 <p><strong>Remark (the determinant is not the $2\times2$ determinant).</strong> The difference from the $2\times2$ model is a genuine feature of the regular representation: its carrier has twice the dimension of the simple module, so the two-copy structure doubles the trace and squares the determinant. Each block carries $\Delta(\tilde Q)$ as its determinant and $2Q_0$ as its trace.</p>
 <h2 id="remarkable-subspaces-in-the-regular-model">Remarkable Subspaces in the Regular Model</h2>
@@ -188,28 +188,28 @@ $$</p>
 $$</p>
 <p>The trace is the scalar part times four in every case, so it separates the centre from the vector subspace and sees nothing else. The determinant is the square of the $2\times2$ determinant of the same element in every case; on the quaternion subspace that $2\times2$ determinant is a sum of four real squares, strictly positive, so no element there is singular, and on the anti-quaternion subspace it is the negative of that sum, strictly negative, so it is the $2\times2$ model and not the regular one that sees the sign the subspace carries, the regular square being positive in both cases. The two models are set side by side in the next section.</p>
 <h2 id="the-two-models-compared">The Two Models Compared</h2>
-<p>The $2\times2$ realization $\Phi$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and the regular realization $\mathsf{M}_4$ above are the two basic matrix models of $\mathbb{B}$. Both are injective and multiplicative, so both see the remarkable subspaces, and the same six matrix conditions describe them in both; the invariant columns give, first, the value in the $2\times2$ model and, second, the value in the regular model. Here $\Delta=\Delta(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2$ is the determinant of the $2\times2$ matrix, a sum of four real squares on the quaternion subspace, the negative of that sum on the anti-quaternion subspace, and real on the two Hermitian subspaces.</p>
+<p>The $2\times2$ realization $\mathsf{M}_4$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and the regular realization $\mathsf{M}_4$ above are the two basic matrix models of $\mathbb{B}$. Both are injective and multiplicative, so both see the remarkable subspaces, and the same six matrix conditions describe them in both; the invariant columns give, first, the value in the $2\times2$ model and, second, the value in the regular model. Here $\Delta=\Delta(\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2$ is the determinant of the $2\times2$ matrix, a sum of four real squares on the quaternion subspace, the negative of that sum on the anti-quaternion subspace, and real on the two Hermitian subspaces.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Subspace</th>
 <th>Condition in the $2\times2$ model</th>
 <th>Condition in the $4\times4$ model</th>
-<th>$\operatorname{Tr}\Phi$ / $\operatorname{Tr}\mathsf{M}_4$</th>
-<th>$\det\Phi$ / $\det\mathsf{M}_4$</th>
+<th>$\operatorname{Tr}\mathsf{M}_4$ / $\operatorname{Tr}\mathsf{M}_4$</th>
+<th>$\det\mathsf{M}_4$ / $\det\mathsf{M}_4$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$</td>
-<td>$\Phi(\tilde Q)=AI_2$</td>
+<td>$\mathsf{M}_4(\tilde Q)=AI_2$</td>
 <td>$\mathsf{M}_4(\tilde Q)=AI_4$</td>
 <td>$2A$ / $4A$</td>
 <td>$A^2$ / $A^4$</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
-<td>$\operatorname{Tr}\Phi(\tilde Q)=0$</td>
+<td>$\operatorname{Tr}\mathsf{M}_4(\tilde Q)=0$</td>
 <td>$\operatorname{Tr}\mathsf{M}_4(\tilde Q)=0$</td>
 <td>$0$ / $0$</td>
 <td>$\Delta$ / $\Delta^2$</td>
@@ -230,14 +230,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
-<td>$\Phi(\tilde Q)^\dagger=\Phi(\tilde Q)$</td>
+<td>$\mathsf{M}_4(\tilde Q)^\dagger=\mathsf{M}_4(\tilde Q)$</td>
 <td>$\mathsf{M}_4(\tilde Q)^\dagger=\mathsf{M}_4(\tilde Q)$</td>
 <td>$2a_0$ / $4a_0$</td>
 <td>$\Delta$ real / $\Delta^2$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
-<td>$\Phi(\tilde Q)^\dagger=-\Phi(\tilde Q)$</td>
+<td>$\mathsf{M}_4(\tilde Q)^\dagger=-\mathsf{M}_4(\tilde Q)$</td>
 <td>$\mathsf{M}_4(\tilde Q)^\dagger=-\mathsf{M}_4(\tilde Q)$</td>
 <td>$2ib_0$ / $4ib_0$</td>
 <td>$\Delta$ real / $\Delta^2$</td>
@@ -247,12 +247,12 @@ $$</p>
 <p>Here $\epsilon=i\sigma_2$, and the two middle rows are the only ones that look different: the four entries of the $2\times2$ matrix are four $\mathbb{C}$-linear combinations of the four coefficients, so realness of the coefficients is not realness of the entries, whereas the entries of the regular matrix are the coefficients up to sign.</p>
 <p><strong>Theorem (the regular matrix is two copies of the $2\times2$ matrix).</strong> Let $\tilde\Pi=\tfrac12(e_0+ie_1)$ and $f=e_0-\tilde\Pi$, so that $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}f$ splits into two minimal left ideals, and let $\tilde R=e_3+ie_2$, $\tilde T=e_3-ie_2$. In the basis $\tilde\Pi,\tilde R,f,\tilde T$ the regular matrix is block diagonal,</p>
 <p>$$
-\mathsf{M}_4(\tilde Q)=\begin{pmatrix}A_+&0\\0&A_-\end{pmatrix},\qquad A_+\text{ and }A_-\text{ conjugate to }\Phi(\tilde Q),
+\mathsf{M}_4(\tilde Q)=\begin{pmatrix}A_+&0\\0&A_-\end{pmatrix},\qquad A_+\text{ and }A_-\text{ conjugate to }\mathsf{M}_4(\tilde Q),
 $$</p>
 <p>and each block has trace $2Q_0$ and determinant $\Delta(\tilde Q)$.</p>
-<p><strong>Proof.</strong> Left multiplication preserves each left ideal, so the matrix is block diagonal in a basis adapted to the splitting. Each block is left multiplication by $\tilde Q$ on a minimal left ideal, every minimal left ideal is isomorphic to the simple module $V=\mathbb{C}^2$, and on $V$ left multiplication is $\Phi(\tilde Q)$; a change of basis inside the block replaces it by a conjugate matrix, which has the same trace and determinant.</p>
-<p><strong>Corollary.</strong> $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=2\operatorname{Tr}\Phi(\tilde Q)=4Q_0$ and $\det\mathsf{M}_4(\tilde Q)=\det\Phi(\tilde Q)^2$: the factor two in the trace and the square in the determinant are one block decomposition and not two coincidences. In both models the trace is the scalar part times the size of the matrix, so it separates the centre from the vector subspace and sees nothing else.</p>
-<p><strong>Remark (the one place the two models see different signs).</strong> The $2\times2$ determinant is $\Delta$ and the regular determinant is $\Delta^2$. On the anti-quaternion subspace the first is $-(h_0^2+h_1^2+h_2^2+h_3^2)<0$ and the second is positive, so the $2\times2$ model sees that $i\mathbb{H}_{\mathbb{B}}$ is the negative-definite half of the coefficient space, while the regular model, whose determinant is blind to the sign, does not; this is the only place where the two models disagree. On the quaternion subspace both determinants are strictly positive, nothing there is singular, which is the matrix statement that the quaternion subspace carries no zero divisor and is the largest of the remarkable subspaces with that property. The centre is the only one of the remarkable subspaces whose image is scalar matrices in both models, and a scalar matrix $AI$ is singular only at $A=0$, so the centre contains no singular matrix but the zero one. The vector units explain the two Hermitian rows: $\Phi(e_k)$ is $-i$ times a Hermitian (Pauli) matrix, whereas $\mathsf{M}_4(e_k)$ is real and skew-symmetric, so $i\mathsf{M}_4(e_k)$ is Hermitian, and in both models a Hermitian element has a Hermitian image.</p>
+<p><strong>Proof.</strong> Left multiplication preserves each left ideal, so the matrix is block diagonal in a basis adapted to the splitting. Each block is left multiplication by $\tilde Q$ on a minimal left ideal, every minimal left ideal is isomorphic to the simple module $V=\mathbb{C}^2$, and on $V$ left multiplication is $\mathsf{M}_4(\tilde Q)$; a change of basis inside the block replaces it by a conjugate matrix, which has the same trace and determinant.</p>
+<p><strong>Corollary.</strong> $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=2\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0$ and $\det\mathsf{M}_4(\tilde Q)=\det\mathsf{M}_4(\tilde Q)^2$: the factor two in the trace and the square in the determinant are one block decomposition and not two coincidences. In both models the trace is the scalar part times the size of the matrix, so it separates the centre from the vector subspace and sees nothing else.</p>
+<p><strong>Remark (the one place the two models see different signs).</strong> The $2\times2$ determinant is $\Delta$ and the regular determinant is $\Delta^2$. On the anti-quaternion subspace the first is $-(h_0^2+h_1^2+h_2^2+h_3^2)<0$ and the second is positive, so the $2\times2$ model sees that $i\mathbb{H}_{\mathbb{B}}$ is the negative-definite half of the coefficient space, while the regular model, whose determinant is blind to the sign, does not; this is the only place where the two models disagree. On the quaternion subspace both determinants are strictly positive, nothing there is singular, which is the matrix statement that the quaternion subspace carries no zero divisor and is the largest of the remarkable subspaces with that property. The centre is the only one of the remarkable subspaces whose image is scalar matrices in both models, and a scalar matrix $AI$ is singular only at $A=0$, so the centre contains no singular matrix but the zero one. The vector units explain the two Hermitian rows: $\mathsf{M}_4(e_k)$ is $-i$ times a Hermitian (Pauli) matrix, whereas $\mathsf{M}_4(e_k)$ is real and skew-symmetric, so $i\mathsf{M}_4(e_k)$ is Hermitian, and in both models a Hermitian element has a Hermitian image.</p>
 <h2 id="summary">Summary</h2>
 <p>The left regular representation $\mathsf{M}_4$ sends $\tilde Q$ to the matrix of left multiplication by $\tilde Q$ in the coefficient basis, a matrix whose entries are the four coefficients up to sign and whose first column is the four-vector of $\tilde Q$. It is an injective algebra homomorphism, so $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde R)=\mathsf{M}_4(\tilde Q\tilde R)$. The trace of the matrix is $4Q_0$ and the determinant is the square of the $2\times2$ determinant of the same element, the doubled trace and the squared determinant of the $2\times2$ model. The remarkable subspaces become six matrix conditions: scalar, traceless, real, purely imaginary, Hermitian and anti-Hermitian matrices, the same six that hold in the $2\times2$ model, the two differing only in that the $2\times2$ determinant sees the sign on the anti-quaternion subspace while the regular one sees only its square. The right multiplication, the transposition relation, the module decomposition, the double centralizer, the $8\times8$ real form and the second realization are the further development and belong to <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -306,7 +306,7 @@ $$</p>
 </tr>
 <tr>
 <td>$A_+,A_-$</td>
-<td>the two diagonal blocks of $\mathsf{M}_4$, each conjugate to $\Phi(\tilde Q)$</td>
+<td>the two diagonal blocks of $\mathsf{M}_4$, each conjugate to $\mathsf{M}_4(\tilde Q)$</td>
 </tr>
 </tbody>
 </table></div>

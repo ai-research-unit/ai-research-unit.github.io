@@ -61,7 +61,7 @@
 <li><strong>Einstein synchronisation is the round trip.</strong> The reflection event is assigned the mid-time, $t_2 = (t_1+t_3)/2$, and the distance is $L = c(t_3-t_1)/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.</li>
 <li><strong>The exchange of frequency is the k-factor.</strong> The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article <em>Exercise: The Relativistic Doppler Effect</em>, and $k$-factors multiply under composition.</li>
 <li><strong>Simultaneity is frame-dependent.</strong> Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta t = \gamma u\,\Delta x'/c^2$.</li>
-<li><strong>A transported clock runs slow.</strong> The reading of a clock carried along a worldline is the proper time of that worldline, $\Delta\tau = \int\sqrt{1-\mathbf{v}^2/c^2}\,dt \le t_B-t_A$, so a clock carried away and back reads less than one that stayed, and the inertial worldline between two events maximizes the proper time.</li>
+<li><strong>A transported clock runs slow.</strong> The interpretation of a clock carried along a worldline is the proper time of that worldline, $\Delta\tau = \int\sqrt{1-\mathbf{v}^2/c^2}\,dt \le t_B-t_A$, so a clock carried away and back reads less than one that stayed, and the inertial worldline between two events maximizes the proper time.</li>
 <li><strong>Synchronisation is not transitive on a rotating platform.</strong> The Sagnac effect makes the round trip directional, $\Delta t \simeq 4\boldsymbol{\Omega}\cdot\mathbf{A}/c^2$, so synchronising around a closed loop in the two directions gives two different results.</li>
 </ul>
 <p>The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.</p>
@@ -124,7 +124,7 @@ d\tau = \sqrt{1 - \frac{\mathbf{v}^2}{c^2}}\;dt = \frac{dt}{\gamma},
 \qquad
 \gamma = \left(1-\frac{\mathbf{v}^2}{c^2}\right)^{-1/2},
 $$</p>
-<p>which is the standard time-dilation relation. The reading of the clock between two events on the worldline is the integral</p>
+<p>which is the standard time-dilation relation. The interpretation of the clock between two events on the worldline is the integral</p>
 <p>$$
 \Delta\tau = \int_{A}^{B}\frac{\sqrt{-\,N(d\tilde{Q})}}{c}
 = \int_{t_A}^{t_B}\sqrt{1-\frac{\mathbf{v}(t)^2}{c^2}}\;dt .
@@ -141,7 +141,7 @@ $$</p>
 <p>$$
 N(\tilde{U}) = \gamma^2\left((ic)^2 + \mathbf{v}^2\right) = \gamma^2\left(-c^2+v^2\right) = -c^2 .
 $$</p>
-<p>Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{U} = ic\,e_0$; a clock moving with velocity $\mathbf{v}$ has the four-velocity above. The two are related by the boost rotor, and the relation between their readings is the content of the twins' effect below.</p>
+<p>Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{U} = ic\,e_0$; a clock moving with velocity $\mathbf{v}$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.</p>
 <h2 id="the-radar-method-and-einstein-synchronisation">The Radar Method and Einstein Synchronisation</h2>
 <h3 id="the-round-trip">The Round Trip</h3>
 <p>Two clocks at different places cannot be compared directly; they must be compared through signals. The <strong>radar method</strong> is the standard procedure. A signal leaves a clock at $A$ at the time $t_1$, is reflected by a mirror at $B$, and returns to $A$ at the time $t_3$. The reflection event at $B$ is at time $t_2$, and the two legs are null displacements:</p>
@@ -172,7 +172,7 @@ $$</p>
 <p>$$
 \frac{L}{c_+} + \frac{L}{c_-} = \frac{2L\varepsilon}{c} + \frac{2L(1-\varepsilon)}{c} = \frac{2L}{c},
 $$</p>
-<p>independent of $\varepsilon$. The one-way speed of light is therefore conventional, and the convention is fixed by the synchronisation; the two-way speed is not conventional and equals $c$. The information-theoretic reading is that an exchange of signals determines only the round-trip data, and a convention is needed to convert those data into a statement about distant simultaneity.</p>
+<p>independent of $\varepsilon$. The one-way speed of light is therefore conventional, and the convention is fixed by the synchronisation; the two-way speed is not conventional and equals $c$. The information-theoretic interpretation is that an exchange of signals determines only the round-trip data, and a convention is needed to convert those data into a statement about distant simultaneity.</p>
 <h3 id="two-frames-two-conventions">Two Frames, Two Conventions</h3>
 <p>A second consequence of defining simultaneity by exchange is that two inertial frames generally adopt incompatible conventions. If frame $S'$ moves with velocity $\mathbf{u}$ along $e_1$ relative to $S$, and each frame synchronises its own clocks by the radar rule with $\varepsilon = \tfrac12$, then the hypersurface $t' = \mathrm{const}$ is not a hypersurface $t = \mathrm{const}$. The discrepancy is computed in the next section from the boost, and it is the relativity of simultaneity. It is not an imperfection of the radar method; it is the statement that the method is frame-relative, and it is why the exchange of information between frames must be described by a Lorentz transformation rather than by a Galilean one.</p>
 <h2 id="the-k-factor-and-the-exchange-of-frequency">The k-Factor and the Exchange of Frequency</h2>
@@ -270,7 +270,7 @@ $$</p>
 <li>Companion article <em>Introduction to the Biquaternion Universe</em>, for the notation, the biquaternion norm and the causal trichotomy.</li>
 <li>Companion article <em>Conventions in the Biquaternion Universe</em>, for the algebra and basis, the four conjugations, the real subspaces and the metric at its three levels.</li>
 <li>Companion article <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the material four-vector, the interval and the proper-time parametrization.</li>
-<li>Companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, for the Hermitian sector and its distinct informational reading.</li>
+<li>Companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, for the Hermitian sector and its distinct informational interpretation.</li>
 <li>Companion article <em>Causality and the Light Cone as an Information Barrier in Biquaternionic Form</em>, for the causal order, the relative-velocity bound and the cone as the characteristic cone of the wave operator.</li>
 <li>Companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>, for the zero-divisor criterion and the idempotent form of the null displacements.</li>
 <li>Companion article <em>The Lorentz Transformation as a Biquaternionic Rotation</em>, for the boost rotor and the transformation of the scalar component.</li>

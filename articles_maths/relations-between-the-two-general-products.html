@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations Between the Two General Products — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relations-between-the-two-general-products"><strong>Relations Between the Two General Products</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The two general products of the quaternion space are defined independently in <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>, each on the coordinates of the two elements of a pair:</p>
+<p>$$
+\tilde p\tilde q , \qquad \tilde p^{\natural}\tilde q .
+$$</p>
+<p>This article collects the identities that link the two. The two rules are not unrelated: they are read on one and the same pair, the second differing from the first only by the conjugation of the first factor, and every link below is a consequence of that single distinction. The <strong>exchange relation</strong> moves the conjugation from one factor to the other and reads the quaternionic product of one order as the conjugate of the plain product of the other; the plain product is recovered from the quaternionic one and conversely by the separation of the scalar part of the first factor; the <strong>agreement</strong> of the two products is the annihilation of the second factor by the vector part of the first, so that they agree on the real axis and disagree everywhere else; and the scalar parts of the two are symmetric and differ by twice the dot product of the vector parts.</p>
+<p>The article assumes the two products and their coordinate rules from <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>, the article preceding this one, and the conjugation from <em>The Group of Involutions of the Quaternions</em>. It uses the separation identities of that article for the reading of one product through the other. The property table is <em>Comparison Between the Two General Products</em>, below this article in this category; the symmetric and antisymmetric halves are <em>The 6 Products of the Quaternion Real Space</em>, below this article in this category. The four-product relations which collapse here are <em>Relations Between the Four General Products</em>.</p>
+<p><strong>Conventions.</strong> Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, $(\mathbf p,\mathbf q)=\sum_kp_kq_k$ is the dot product of the vector parts and $\tilde q^{\natural}=q_0e_0-\mathbf q$ is the quaternion conjugation. The scalar part is $\mathrm{Sc}$. The two products are read as in <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>.</p>
+<h2 id="the-exchange-relation">The Exchange Relation</h2>
+<p>The two products are read on the same pair with the conjugation in the first slot for the second product and in no slot for the first, and the conjugation is an anti-automorphism: it reverses the order of a product and conjugates the two factors.</p>
+<p><strong>Proposition (the conjugate of a product).</strong> For all $\tilde p,\tilde q$,</p>
+<p>$$
+(\tilde p\tilde q)^{\natural}=\tilde q^{\natural}\tilde p^{\natural} , \qquad (\tilde p^{\natural}\tilde q)^{\natural}=\tilde q^{\natural}\tilde p .
+$$</p>
+<p>The first identity conjugates both the factors of the plain product and transposes them; the second conjugates the first factor alone, and transposes the two factors.</p>
+<p><em>Proof.</em> The quaternion conjugation is an anti-automorphism, $(\tilde x\tilde y)^{\natural}=\tilde y^{\natural}\tilde x^{\natural}$, and an involution, $(\tilde x^{\natural})^{\natural}=\tilde x$. Applying it to $\tilde p\tilde q$ gives the first identity, and applying it to $\tilde p^{\natural}\tilde q$ gives $(\tilde p^{\natural}\tilde q)^{\natural}=\tilde q^{\natural}(\tilde p^{\natural})^{\natural}=\tilde q^{\natural}\tilde p$.</p>
+<p><strong>Theorem (the exchange relation).</strong> For all $\tilde p,\tilde q$,</p>
+<p>$$
+\tilde q^{\natural}\tilde p=(\tilde p^{\natural}\tilde q)^{\natural} , \qquad \tilde p^{\natural}\tilde q=(\tilde q^{\natural}\tilde p)^{\natural} .
+$$</p>
+<p>The two are the same identity read from its two sides, and they read the quaternionic product of the pair $(\tilde q,\tilde p)$ as the conjugate of the plain product of the pair $(\tilde p,\tilde q)$, with the two orders exchanged.</p>
+<p><em>Proof.</em> The second identity of the proposition applied to the pair $(\tilde q,\tilde p)$ gives $(\tilde q^{\natural}\tilde p)^{\natural}=\tilde p^{\natural}(\tilde q^{\natural})^{\natural}=\tilde p^{\natural}\tilde q$; conjugating both sides gives $\tilde q^{\natural}\tilde p=(\tilde p^{\natural}\tilde q)^{\natural}$.</p>
+<p>The exchange relation is the exact counterpart of the one identity kept in the biquaternion relations, $(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$: there the two conjugations ${}^{\natural}$ and ${}^{*}$ are available and the relation is stated once; here only ${}^{\natural}$ exists, so the relation is stated between the two products of the pair and is the whole of the exchange. It also shows that the two products carry the same information: one of them at the pair $(\tilde p,\tilde q)$ determines the other at the reversed pair, and conversely.</p>
+<h2 id="reading-one-product-through-the-other">Reading One Product Through the Other</h2>
+<p>The conjugation of the first factor changes only its vector part, so each product is recovered from the other by the separation of the scalar and the vector part of the first factor.</p>
+<p><strong>Proposition (the two readings).</strong> For all $\tilde p,\tilde q$,</p>
+<p>$$
+\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\,\tilde q , \qquad \tilde p\tilde q-\tilde p^{\natural}\tilde q=2\,\mathbf p\,\tilde q ,
+$$</p>
+<p>and therefore</p>
+<p>$$
+\tilde p\tilde q=2p_0\,\tilde q-\tilde p^{\natural}\tilde q , \qquad \tilde p^{\natural}\tilde q=2p_0\,\tilde q-\tilde p\tilde q .
+$$</p>
+<p><em>Proof.</em> The separation identities are those of <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>, the article preceding this one; solving the two linear relations for $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ gives the two readings.</p>
+<p>The reading is the algebraic form of the relation $\tilde p^{\natural}=2p_0e_0-\tilde p$: the conjugate of the first factor is the reflection of the first factor in the scalar axis, and the two products differ by twice the reflection of $\tilde p$ across that axis, applied to $\tilde q$. A computation in the quaternionic product is turned into a computation in the plain one by replacing $\tilde p$ with $\tilde p^{\natural}$ and keeping the second factor, and conversely.</p>
+<p><strong>Corollary (the scalar parts).</strong> The scalar parts of the two products on the same pair are</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde p\tilde q\bigr)=p_0q_0-(\mathbf p,\mathbf q) , \qquad \mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr)=p_0q_0+(\mathbf p,\mathbf q) ,
+$$</p>
+<p>whence</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde p\tilde q\bigr)+\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr)=2p_0q_0 , \qquad \mathrm{Sc}\bigl(\tilde p\tilde q\bigr)-\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr)=-2(\mathbf p,\mathbf q) .
+$$</p>
+<p>The sum separates the scalar parts of the two factors and the difference the vector part of the first factor against the second, exactly as in the biquaternion relations, where the sum separates $P_0Q_0$ and the difference the vector part. Both scalar parts are symmetric in the two slots, and the difference of the two is twice the dot product of the vector parts; the two are the two bilinear forms $B$ and $N$ of <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category, read on the pair.</p>
+<h2 id="the-annihilation-identity">The Annihilation Identity</h2>
+<p>The difference of the two products is the term $2\mathbf p\tilde q$, and its vanishing is the agreement of the two products.</p>
+<p><strong>Theorem (the annihilation identity).</strong> For all $\tilde p,\tilde q$,</p>
+<p>$$
+\tilde p^{\natural}\tilde q=\tilde p\tilde q \quad\Longleftrightarrow\quad \mathbf p\tilde q=0 ,
+$$</p>
+<p>and for a fixed $\tilde q\neq0$ this holds exactly when $\tilde p$ is real, $\tilde p=p_0e_0$. If $\tilde p$ is real then the two products agree on every second factor, $\tilde p\tilde q=\tilde p^{\natural}\tilde q=p_0\tilde q$.</p>
+<p><em>Proof.</em> The difference is $2\mathbf p\tilde q$ by the reading proposition, so the two agree exactly when $\mathbf p\tilde q=0$. For $\tilde q\neq0$ the element $\tilde q$ is invertible in $\mathbb{H}$, and multiplying $\mathbf p\tilde q=0$ on the right by $\tilde q^{-1}$ gives $\mathbf p=0$, that is $\tilde p=p_0e_0$; conversely $\mathbf p=0$ makes $\tilde p^{\natural}=\tilde p$ and the two products equal. For a real $\tilde p$, $\tilde p^{\natural}=\tilde p$ and the two products are the same rule.</p>
+<p>So the two products <strong>agree on the real axis</strong> — on every pair whose first factor is scalar — and <strong>disagree everywhere else</strong>: on a pair with $\tilde q\neq0$ and $\tilde p$ not real the difference $2\mathbf p\tilde q$ is nonzero. The disagreement is witnessed on the pair $(e_1,e_2)$, where $\tilde p\tilde q=e_3$ and $\tilde p^{\natural}\tilde q=-e_3$, and on the pair $(e_1,e_0)$, where $\tilde p\tilde q=e_1$ and $\tilde p^{\natural}\tilde q=-e_1$; the second pair shows that the two products already differ on the units when the second factor is the unit itself. The identity is called the <strong>annihilation identity</strong> because it states the agreement by the annihilation of the second factor by the vector part of the first; it is the collapse, to the pair of polynomials available over $\mathbb{R}$, of the biquaternion criterion $\tilde P^{\natural}\tilde Q=\tilde P\tilde Q\iff\mathbf P\tilde Q=0$.</p>
+<p><strong>Corollary (the products on the units).</strong> On the pairs of units the two products agree exactly when the first factor is $e_0$: for every unit $\tilde q$ one has $e_0\tilde q=e_0^{\natural}\tilde q=\tilde q$, while for a first factor $e_k$ with $k\neq0$ the two values are $e_k\tilde q$ and $e_k^{\natural}\tilde q=-e_k\tilde q$, which are opposite and therefore distinct, the second factor being a unit and $e_k$ nonzero.</p>
+<p><em>Proof.</em> The annihilation identity requires $\mathbf p\tilde q=0$; on the pairs of units both factors are nonzero and invertible, so it is equivalent to $\mathbf p=0$, that is to $\tilde p$ real, which among the units leaves only $\tilde p=e_0$. The two values on a pair with first factor $e_k$, $k\neq0$, are read from the two multiplication tables of <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>, that of the plain product and that of the quaternionic product.</p>
+<h2 id="comparison-with-the-four-product-relations">Comparison with the Four-Product Relations</h2>
+<p>The four general products of the biquaternion space carry three families of relations, and the two above are what survives over $\mathbb{R}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>biquaternion relation</th>
+<th>quaternion reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the two conjugations ${}^{\natural}$, ${}^{*}$ commute</td>
+<td>${}^{*}$ degenerates, only ${}^{\natural}$ remains</td>
+</tr>
+<tr>
+<td>$(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$ and $(\tilde P\tilde Q^{*})^{*}=\tilde Q\tilde P^{*}$</td>
+<td>the exchange relation $\tilde q^{\natural}\tilde p=(\tilde p^{\natural}\tilde q)^{\natural}$</td>
+</tr>
+<tr>
+<td>the four scalar parts, split by $P_0Q_0$ and by the vector part</td>
+<td>the two scalar parts $p_0q_0\mp(\mathbf p,\mathbf q)$</td>
+</tr>
+<tr>
+<td>the two pairs of the separation identities</td>
+<td>the single pair $pq\pm p^{\natural}q=2p_0q,\,2\mathbf p q$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two sesquilinear products are absent over $\mathbb{R}$, and with them the conjugate-linear slot, the star and the complex conjugation of the coefficients; what remains is the exchange relation, the two scalar parts and the two separation identities. The relations of this article are the $\mathbb{R}$-reading of <em>Relations Between the Four General Products</em> and they are read again, with the four-product tables collapsed to two, in <em>Comparison Between the Two General Products</em>, below this article in this category.</p>
+<h2 id="summary">Summary</h2>
+<p>The two products of the quaternion space are linked by the exchange relation $\tilde q^{\natural}\tilde p=(\tilde p^{\natural}\tilde q)^{\natural}$, the conjugate of a product being $(\tilde p\tilde q)^{\natural}=\tilde q^{\natural}\tilde p^{\natural}$ for the plain product and $(\tilde p^{\natural}\tilde q)^{\natural}=\tilde q^{\natural}\tilde p$ for the quaternionic one. Each product is read from the other by the separation of the scalar part of the first factor, $\tilde p\tilde q=2p_0\tilde q-\tilde p^{\natural}\tilde q$ and $\tilde p^{\natural}\tilde q=2p_0\tilde q-\tilde p\tilde q$, and their scalar parts are $\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\mathbf p,\mathbf q)$ and $\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\mathbf p,\mathbf q)$, symmetric in the two slots and differing by twice the dot product of the vector parts.</p>
+<p>The annihilation identity $\tilde p^{\natural}\tilde q=\tilde p\tilde q\iff\mathbf p\tilde q=0$ states the agreement of the two products: they agree on the real axis and disagree everywhere else, and for a nonzero second factor their agreement forces the first factor to be real. On the units they agree exactly on the pairs whose first factor is $e_0$. The whole is the $\mathbb{R}$-reading of the four-product relations of the biquaternion chapter, with the sesquilinear family and the star removed.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\tilde p\tilde q)^{\natural}=\tilde q^{\natural}\tilde p^{\natural}$</td>
+<td>the conjugate of the plain product</td>
+</tr>
+<tr>
+<td>$(\tilde p^{\natural}\tilde q)^{\natural}=\tilde q^{\natural}\tilde p$</td>
+<td>the conjugate of the quaternionic product</td>
+</tr>
+<tr>
+<td>$\tilde q^{\natural}\tilde p=(\tilde p^{\natural}\tilde q)^{\natural}$</td>
+<td>the exchange relation</td>
+</tr>
+<tr>
+<td>$\tilde p\tilde q=2p_0\tilde q-\tilde p^{\natural}\tilde q$</td>
+<td>the plain product read from the quaternionic one</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural}\tilde q=2p_0\tilde q-\tilde p\tilde q$</td>
+<td>the quaternionic product read from the plain one</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\mathbf p,\mathbf q)$</td>
+<td>the scalar part of the plain product</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\mathbf p,\mathbf q)$</td>
+<td>the scalar part of the quaternionic product</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural}\tilde q=\tilde p\tilde q\iff\mathbf p\tilde q=0$</td>
+<td>the annihilation identity, the agreement condition</td>
+</tr>
+<tr>
+<td>$\tilde p$ real $\iff$ the two products agree for every $\tilde q$</td>
+<td>agreement on the real axis</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the conjugation of the quaternion product and the vector reading of the two rules.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the conjugation as an anti-automorphism and the place of the two products among the Clifford products.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for the trace of a product, its symmetry and the separation of the scalar part.</li>
+<li>Israel Nathan Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975), for anti-automorphisms, involutions and the elementary identities of a non-commutative ring.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

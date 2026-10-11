@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remarkable Subspaces and the Two General Products — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="remarkable-subspaces-and-the-two-general-products"><strong>Remarkable Subspaces and the Two General Products</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion algebra $\mathbb{H}$ carries two <strong>remarkable subspaces</strong>, the <strong>scalar line</strong> $\mathbb{R}_{\mathbb{H}}$ and the <strong>vector subspace</strong> $\operatorname{Vect}(\mathbb{H})$, the fixed and the anti-fixed space of the quaternion conjugation ${}^{\natural}$. Each of the two general products of <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em> is read on the two subspaces in this article, and the two questions asked of each are the same: <strong>is the subspace closed under the product</strong>, and <strong>what are the products of two vectors</strong>.</p>
+<p>The products themselves, their laws and their coordinate rules are <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>; the two subspaces, their bases and their dimensions are <em>Introduction to the Remarkable Subspaces of the Quaternions</em>, in the Linear Spaces group above. None of that is restated here: what the article adds is the reading of the two products on the two subspaces and the table of the restrictions. The symmetric and antisymmetric halves of the products, which are what makes the vector product the cross product and its twin, are <em>The 6 Products of the Quaternion Real Space</em>, below this article in this category; the restriction of the two forms to the same subspaces is <em>Remarkable Subspaces and the Two Forms</em>, below this article in this category.</p>
+<p><strong>Conventions.</strong> Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, with $\mathbf p,\mathbf q$ the vector parts; the scalar line is $\mathbb{R}_{\mathbb{H}}=\{p_0e_0:p_0\in\mathbb{R}\}$, identified with $\mathbb{R}$, and the vector subspace is $\operatorname{Vect}(\mathbb{H})=\{\mathbf p\}$, of basis $e_1,e_2,e_3$. The plain product is $\tilde p\tilde q$, the quaternionic product is $\tilde p^{\natural}\tilde q$, the dot product is $(\mathbf p,\mathbf q)=\sum_kp_kq_k$ and the cross product is $\mathbf p\times\mathbf q$. The quaternion norm is $N(\tilde p)=\lvert\tilde p\rvert^2=\tilde p^{\natural}\tilde p$.</p>
+<h2 id="the-product-of-two-vector-elements">The Product of Two Vector Elements</h2>
+<p>The product of two vector elements is the sharpest single computation of the article, and it is where the cross product enters the products of the algebra.</p>
+<p><strong>Proposition (the vector products).</strong> For purely vector elements $\tilde p=\mathbf p$ and $\tilde q=\mathbf q$,</p>
+<p>$$
+\mathbf p\mathbf q=-(\mathbf p,\mathbf q)+\mathbf p\times\mathbf q , \qquad \mathbf p^{\natural}\mathbf q=+(\mathbf p,\mathbf q)-\mathbf p\times\mathbf q .
+$$</p>
+<p>The plain product of two vectors is the scalar $-(\mathbf p,\mathbf q)$ together with the vector $\mathbf p\times\mathbf q$; the quaternionic product of the same two vectors is the same rule with the two signs reversed, being $-\mathbf p\mathbf q$ because the conjugation of a vector is its negative.</p>
+<p><em>Proof.</em> The plain rule of <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em> has scalar part $p_0q_0-(\mathbf p,\mathbf q)$ and vector part $p_0\mathbf q+q_0\mathbf p+\mathbf p\times\mathbf q$; setting $p_0=q_0=0$ leaves the scalar part $-(\mathbf p,\mathbf q)$ and the vector part $\mathbf p\times\mathbf q$. The quaternionic product is obtained from the plain one by conjugating the first factor, $\mathbf p^{\natural}=-\mathbf p$, so $\mathbf p^{\natural}\mathbf q=-\mathbf p\mathbf q=(\mathbf p,\mathbf q)-\mathbf p\times\mathbf q$.</p>
+<p>So the product of two vectors is a scalar together with a vector, and the vector part is the cross product for the plain rule and its negative for the quaternionic one. The two products of two vectors are <strong>opposite</strong>, $\mathbf p^{\natural}\mathbf q=-\mathbf p\mathbf q$, and the two have the same scalar part up to sign.</p>
+<h2 id="the-closure-of-the-two-subspaces">The Closure of the Two Subspaces</h2>
+<p>A subspace is <strong>closed</strong> under a product when the product of two of its elements lies in it again, and the two remarkable subspaces answer differently.</p>
+<p><strong>Proposition (the closure table).</strong> The scalar line is closed under both products; the vector subspace is closed under neither, and the product of two of its elements lies in the whole algebra, its scalar part being $\mp(\mathbf p,\mathbf q)$ and its vector part $\pm\mathbf p\times\mathbf q$.</p>
+<p><em>Proof.</em> On the scalar line, write $\tilde p=p_0e_0$ and $\tilde q=q_0e_0$ with $\mathbf p=\mathbf q=0$; then both rules give $p_0q_0e_0$, which is in the line, so the line is closed under both. On the vector subspace the preceding proposition gives the products $\mathbf p\mathbf q=-(\mathbf p,\mathbf q)+\mathbf p\times\mathbf q$ and $\mathbf p^{\natural}\mathbf q=(\mathbf p,\mathbf q)-\mathbf p\times\mathbf q$; each has a scalar part and a vector part in general, so the product of two vectors is not a vector and the subspace is closed under neither.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subspace</th>
+<th>basis</th>
+<th>closed under $\tilde p\tilde q$?</th>
+<th>closed under $\tilde p^{\natural}\tilde q$?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{H}}$</td>
+<td>$e_0$</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\operatorname{Vect}(\mathbb{H})$</td>
+<td>$e_1,e_2,e_3$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The scalar line is the centre of the algebra and the fixed space of the conjugation, and a product of two of its elements stays in it because the centre is a subalgebra for both rules: a real scalar commutes with everything and is fixed by ${}^{\natural}$, so $\tilde p^{\natural}\tilde q=\tilde p\tilde q=p_0\tilde q$ for real $\tilde p$. The vector subspace is the anti-fixed space, and its failure of closure is the statement that the anti-fixed space of an involution is not a subalgebra unless the involution is the identity on it.</p>
+<h2 id="the-product-of-two-orthogonal-vectors">The Product of Two Orthogonal Vectors</h2>
+<p>The scalar part of the product of two vectors is $\mp(\mathbf p,\mathbf q)$, so the product of two vectors is again a vector exactly when the two are <strong>perpendicular</strong>, and then it is the cross product.</p>
+<p><strong>Corollary (the perpendicular case).</strong> For perpendicular vector elements $\mathbf p\perp\mathbf q$, that is $(\mathbf p,\mathbf q)=0$,</p>
+<p>$$
+\mathbf p\mathbf q=\mathbf p\times\mathbf q\in\operatorname{Vect}(\mathbb{H}) , \qquad \mathbf p^{\natural}\mathbf q=-\mathbf p\times\mathbf q\in\operatorname{Vect}(\mathbb{H}) .
+$$</p>
+<p>The subspace of the algebra spanned by two perpendicular vectors is closed under neither product as a plane, the product of its two generators being orthogonal to both.</p>
+<p><em>Proof.</em> Set $(\mathbf p,\mathbf q)=0$ in the vector-product proposition; the scalar parts $-(\mathbf p,\mathbf q)$ and $+(\mathbf p,\mathbf q)$ vanish and only the cross-product terms remain. The product $\mathbf p\times\mathbf q$ is perpendicular to $\mathbf p$ and to $\mathbf q$ by the defining property of the cross product, so the plane spanned by $\mathbf p$ and $\mathbf q$ is not closed.</p>
+<p>So the vector subspace is not closed, but its products fill the whole algebra: two vectors give a scalar and a vector, the scalar being the dot product and the vector the cross product, and the same two ingredients with the signs reversed for the quaternionic rule. The two products of the vector subspace generate the whole algebra from the vector subspace alone: the scalar direction comes from the dot product, which is the whole of the square, $\mathbf p\mathbf p=-\lvert\mathbf p\rvert^2e_0$, and the vector direction comes from the cross product, which is the whole of the product when the two vectors are perpendicular; on such a pair the plain product is a vector and not a scalar, and no power of the pair reaches the identity.</p>
+<h2 id="the-restriction-table">The Restriction Table</h2>
+<p>Collecting the sections gives the table of the two products restricted to the two subspaces.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>restriction</th>
+<th>value of $\tilde p\tilde q$</th>
+<th>value of $\tilde p^{\natural}\tilde q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{H}}\times\mathbb{R}_{\mathbb{H}}\to\mathbb{R}_{\mathbb{H}}$</td>
+<td>$p_0q_0e_0$</td>
+<td>$p_0q_0e_0$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{H}}\times\operatorname{Vect}(\mathbb{H})\to\operatorname{Vect}(\mathbb{H})$</td>
+<td>$p_0\mathbf q$</td>
+<td>$p_0\mathbf q$</td>
+</tr>
+<tr>
+<td>$\operatorname{Vect}(\mathbb{H})\times\mathbb{R}_{\mathbb{H}}\to\operatorname{Vect}(\mathbb{H})$</td>
+<td>$q_0\mathbf p$</td>
+<td>$-q_0\mathbf p$</td>
+</tr>
+<tr>
+<td>$\operatorname{Vect}(\mathbb{H})\times\operatorname{Vect}(\mathbb{H})\to\mathbb{H}$</td>
+<td>$-(\mathbf p,\mathbf q)+\mathbf p\times\mathbf q$</td>
+<td>$(\mathbf p,\mathbf q)-\mathbf p\times\mathbf q$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first three rows are the closure of the scalar line and its two-sided action on the vector subspace: a real scalar multiplies a vector by its scalar on the left for both products, while on the right the quaternionic product multiplies by the scalar through the conjugation of the first factor and so changes the sign. The last row is the product of two vectors, the only entry of the table whose value leaves its two factors' subspaces. The table is the whole of the behaviour of the two products on the two subspaces: the square of a scalar is a scalar, the square of a vector is the scalar $-\lvert\mathbf p\rvert^2$ for the plain product and $+\lvert\mathbf p\rvert^2$ for the quaternionic one, and the vector part of the product of two vectors is the cross product, carried with its own sign by the plain product and with the sign reversed by the quaternionic one.</p>
+<h2 id="comparison-with-the-four-products-on-the-six-subspaces-of-the-biquaternion-algebra">Comparison with the Four Products on the Six Subspaces of the Biquaternion Algebra</h2>
+<p>The biquaternion algebra carries six remarkable subspaces — the fixed and anti-fixed spaces of its three commuting involutions — and the four general products are read on the six in <em>Remarkable Subspaces and the Four General Products</em>. Over $\mathbb{R}$ the involution group of $\mathbb{H}$ has two elements, the identity and ${}^{\natural}$ (<em>The Group of Involutions of the Quaternions</em>), and it contributes the two subspaces of this article; the three commuting involutions of $\mathbb{B}$ contribute six.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>biquaternion object</th>
+<th>quaternion counterpart</th>
+<th>behaviour under the products</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the centre, the scalar line</td>
+<td>$\mathbb{R}_{\mathbb{H}}$</td>
+<td>closed under both, subalgebra</td>
+</tr>
+<tr>
+<td>the vector subspace</td>
+<td>$\operatorname{Vect}(\mathbb{H})$</td>
+<td>closed under neither, products fill $\mathbb{H}$</td>
+</tr>
+<tr>
+<td>the four remaining subspaces, coming from the other two involutions</td>
+<td>none: $\mathbb{H}$ has one non-trivial involution</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>The collapse is the disappearance of the other two involutions: with them go the four subspaces they contribute, and the two products read on the scalar line and the vector subspace are the whole of the reading over $\mathbb{R}$. The four products of the biquaternion reading collapse to two here, the sesquilinear family being absent, and the two remaining products on the two remaining subspaces give the four-row table above.</p>
+<h2 id="summary">Summary</h2>
+<p>The two general products of the quaternion space are read on the scalar line $\mathbb{R}_{\mathbb{H}}$ and the vector subspace $\operatorname{Vect}(\mathbb{H})$. The scalar line is closed under both products and is the centre of the algebra, a product of two reals being the real product $p_0q_0e_0$. The vector subspace is closed under neither, the product of two vectors being $\mathbf p\mathbf q=-(\mathbf p,\mathbf q)+\mathbf p\times\mathbf q$ for the plain product and $\mathbf p^{\natural}\mathbf q=(\mathbf p,\mathbf q)-\mathbf p\times\mathbf q$ for the quaternionic one: the scalar part is the dot product with the sign of the conjugation of the first factor, and the vector part is the cross product or its negative. Two vectors multiply to a vector again exactly when they are perpendicular, and then to the cross product, which is perpendicular to both, so no plane of vectors is closed.</p>
+<p>The restriction table has four rows, giving the two closures of the scalar line, its two-sided action on the vector subspace — two-sided for the plain product and one-sided up to sign for the quaternionic one — and the single entry that leaves the two subspaces, the product of two vectors. The six remarkable subspaces of the biquaternion algebra collapse to the two subspaces here because the involution group of $\mathbb{H}$ has one non-trivial element instead of three.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}_{\mathbb{H}}=\{p_0e_0\}$</td>
+<td>the scalar line, the centre, the fixed space of ${}^{\natural}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Vect}(\mathbb{H})=\{\mathbf p\}$</td>
+<td>the vector subspace, the anti-fixed space of ${}^{\natural}$</td>
+</tr>
+<tr>
+<td>$\mathbf p\mathbf q=-(\mathbf p,\mathbf q)+\mathbf p\times\mathbf q$</td>
+<td>the plain product of two vectors</td>
+</tr>
+<tr>
+<td>$\mathbf p^{\natural}\mathbf q=(\mathbf p,\mathbf q)-\mathbf p\times\mathbf q$</td>
+<td>the quaternionic product of two vectors</td>
+</tr>
+<tr>
+<td>$\mathbf p\perp\mathbf q\Rightarrow\mathbf p\mathbf q=\mathbf p\times\mathbf q$</td>
+<td>the perpendicular case</td>
+</tr>
+<tr>
+<td>$\mathbf p\mathbf p=-\lvert\mathbf p\rvert^2e_0$</td>
+<td>the square of a vector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the vector product, the cross product and the scalar and vector subspaces of the quaternion algebra.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the fixed and anti-fixed spaces of the quaternion conjugation and the products of the Clifford algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for the centre of an algebra and the subalgebras carried by the fixed spaces of an involution.</li>
+<li>Israel Nathan Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975), for the involution, its fixed and anti-fixed spaces and the closure of a subspace under a product.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

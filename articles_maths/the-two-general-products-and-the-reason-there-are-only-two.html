@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two General Products and the Reason There Are Only Two — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-general-products-and-the-reason-there-are-only-two"><strong>The Two General Products and the Reason There Are Only Two</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion algebra carries two general products, the general plain $\tilde p\tilde q$ and the general quaternionic $\tilde p^{\natural}\tilde q$, where the four-product family of the biquaternion chapter has four. This article states the general construction, isolates the second slot as the only place where a sesquilinear family can be born, and proves that over $\mathbb{R}$ that slot carries nothing new, so that exactly two products survive. It is the synthesis article of the block and the only place the four-to-two collapse is stated.</p>
+<p>The two products themselves are <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>, and the six products their symmetric and antisymmetric parts generate are <em>The 6 Products of the Quaternion Real Space</em>; this article re-derives neither. What it owns is the construction, the theorem on the second slot, the comparison table of the two against the four, and the ladder reading. The forms the products carry are <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>; the norms are <em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em>; both are above this article in this category.</p>
+<h2 id="the-general-construction">The General Construction</h2>
+<p>A <strong>general product</strong> on an algebra $A$ over a base ring $R$ is a bilinear or a sesquilinear map obtained by choosing, independently, how each of its two slots reads its argument: through the identity or through the anti-involution of the algebra on the first side, and through the identity or an involution of $R$ on the second. Writing ${}^{\natural}$ for the anti-involution of the algebra and $\varsigma$ for an involution of $R$, the identity allowed, the products are the four <strong>slot pairings</strong>
+$$
+(\mathrm{id},\mathrm{id}) ,\quad ({}^{\natural},\mathrm{id}) ,\quad (\mathrm{id},\varsigma) ,\quad ({}^{\natural},\varsigma) ,
+$$
+the first two <strong>bilinear</strong> and the last two <strong>sesquilinear</strong>, since a slot read through $\varsigma$ is conjugate-linear. The construction is the one of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>, applied to the pair (algebra, base ring).</p>
+<h2 id="the-second-slot-is-what-makes-a-sesqualgebra">The Second Slot Is What Makes a Sesqualgebra</h2>
+<p><strong>Theorem.</strong> The family $(\mathrm{id},\varsigma)$ and $({}^{\natural},\varsigma)$ is non-empty exactly when the base ring $R$ has a nontrivial involution. That slot is the whole difference between an algebra product and a sesquilinear one.</p>
+<p><strong>Proof.</strong> A product whose second slot is read through $\varsigma$ is conjugate-linear in that slot, so its value is not $R$-bilinear unless $\varsigma=\mathrm{id}$; and a product whose second slot is the identity is $R$-bilinear in both slots. The two families are therefore distinguished exactly by whether $\varsigma$ is the identity, and there are four pairings for every nontrivial $\varsigma$ and only two when $\varsigma=\mathrm{id}$.</p>
+<h2 id="only-the-algebra-family-survives-over-math25">Only the Algebra Family Survives over $\mathbb{R}$</h2>
+<p>The base ring $\mathbb{R}$ has a single involution, the identity, because an order-two automorphism of a totally ordered field is trivial. Hence $\varsigma=\mathrm{id}$ and the second slot carries no conjugation, the two sesquilinear pairings coincide with the two bilinear ones, and the four pairings reduce to two:
+$$
+\tilde p\tilde q\quad(\text{general plain, the pair }(\mathrm{id},\mathrm{id})) , \qquad \tilde p^{\natural}\tilde q\quad(\text{general quaternionic, the pair }({}^{\natural},\mathrm{id})) .
+$$
+There is no third product, and in particular no quaternion analogue of the Hermitian or the Krein product of the biquaternion chapter: those need a complex base.</p>
+<p><strong>Table (two against four).</strong> Writing $\varsigma$ for the base-ring involution and ${}^{\natural}$ for the algebra anti-involution,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>over $\mathbb{R}$ ($\varsigma=\mathrm{id}$)</th>
+<th>over $\mathbb{C}$ (the second slot carries the conjugate-linear involution)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\mathrm{id},\mathrm{id})$</td>
+<td>$\tilde p\tilde q$</td>
+<td>$\tilde P\tilde Q$</td>
+</tr>
+<tr>
+<td>$({}^{\natural},\mathrm{id})$</td>
+<td>$\tilde p^{\natural}\tilde q$</td>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+</tr>
+<tr>
+<td>$(\mathrm{id},\varsigma)$</td>
+<td>coincides with $(\mathrm{id},\mathrm{id})$</td>
+<td>$\tilde P\tilde Q^{*}$</td>
+</tr>
+<tr>
+<td>$({}^{\natural},\varsigma)$</td>
+<td>coincides with $({}^{\natural},\mathrm{id})$</td>
+<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The second slot is an involution of the base ring; it is the identity over $\mathbb{R}$, so the two lower rows of the left column collapse onto the two upper rows, and it is nontrivial over $\mathbb{C}$, where the biquaternion chapter reads that slot through the star, the conjugate-linear involution of $\mathbb{B}$ restricting to the coefficientwise conjugation on the coefficients, as the right column records.</p>
+<p>The left column is the collapse, its four rows standing for the two products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$; the right column is the four of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<h2 id="the-ladder-reading">The Ladder Reading</h2>
+<p>The number of general products is read on the ladder
+$$
+\mathbb{R}\subset\mathbb{C}\subset\mathbb{H}\subset\mathbb{B} ,
+$$
+the base ring being $\mathbb{R}$ for the first three rungs and $\mathbb{C}$ for the last. On each rung the products are the slot pairings, the algebra's anti-involution contributing the first slot:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>algebra, base</th>
+<th>products</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}$ over $\mathbb{R}$</td>
+<td>$\tilde p\tilde q$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{C}$ over $\mathbb{R}$</td>
+<td>$zw$, $\bar z w$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{H}$ over $\mathbb{R}$</td>
+<td>$\tilde p\tilde q$, $\tilde p^{\natural}\tilde q$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$ over $\mathbb{C}$</td>
+<td>the four pairings</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The count doubles at the last rung because only there does the base ring carry an involution; $\mathbb{H}$ sits on the real rung beside $\mathbb{C}$ and carries two products like it, and the real $\mathbb{R}$ carries one because its only anti-involution is the identity. This is the whole reason there are two products on $\mathbb{H}$ and four on $\mathbb{B}$.</p>
+<h2 id="summary">Summary</h2>
+<p>A general product is a slot pairing of an anti-involution of the algebra with an involution of the base ring. The second slot is what separates a sesquilinear product from a bilinear one, and it is empty over $\mathbb{R}$ because the real field has only the trivial involution. The four pairings therefore collapse to two, the general plain $\tilde p\tilde q$ and the general quaternionic $\tilde p^{\natural}\tilde q$, and the comparison with the biquaternion four is the second-slot collapse read column by column. On the ladder $\mathbb{R}\subset\mathbb{C}\subset\mathbb{H}\subset\mathbb{B}$ the counts are $1,2,2,4$, the doubling occurring at the two complexification steps $\mathbb{R}\to\mathbb{C}$ and $\mathbb{H}\to\mathbb{B}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${}^{\natural}$</td>
+<td>the quaternion conjugation, the anti-involution of the algebra</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>the involution of the base ring; over $\mathbb{R}$, $\varsigma=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},\varsigma)$, $({}^{\natural},\varsigma)$</td>
+<td>the four slot pairings, the last two sesquilinear</td>
+</tr>
+<tr>
+<td>$\tilde p\tilde q$, $\tilde p^{\natural}\tilde q$</td>
+<td>the two general products over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\subset\mathbb{C}\subset\mathbb{H}\subset\mathbb{B}$</td>
+<td>the ladder, with product counts $1,2,2,4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em> (<code>articles_maths/the-two-general-products-of-the-quaternion-r-space.md</code>), for the two products in coordinates.</li>
+<li><em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-four-general-products-of-the-biquaternion-c-space.md</code>), for the construction on the biquaternion rung.</li>
+<li><em>The 6 Products of the Quaternion Real Space</em> (<code>articles_maths/the-6-products-of-the-quaternion-real-space.md</code>), for the six products the two generate.</li>
+<li><em>The Complexification and the Effect of the Change of Scalars on the Quaternions</em> (<code>articles_maths/the-complexification-and-the-effect-of-the-change-of-scalars-on-the-quaternions.md</code>), for the passage $\mathbb{H}\to\mathbb{B}$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
