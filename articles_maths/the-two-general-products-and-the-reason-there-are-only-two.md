@@ -21,11 +21,11 @@ The choice is the insertion of the conjugation in one slot, in the other, in bot
 **Proof.** The conjugation in the second slot and the conjugation in the first slot are the same map ${}^{\natural}$, because the base field $\mathbb{R}$ has a single involution, the identity, so the coefficientwise bar is the identity and the only conjugation available is ${}^{\natural}$. Hence
 
 $$
-(\mathrm{id},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) , \qquad
-({}^{\natural},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) ,
+(\mathrm{id},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) , \qquad
+({}^{\natural},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) ,
 $$
 
-that is, the plain product and the quaternionic product with both arguments conjugated. The four pairings therefore carry the two products
+that is, the quaternionic product and the plain product with both arguments conjugated. The four pairings therefore carry the two products
 
 $$
 \tilde p\tilde q\quad(\text{general plain}) , \qquad \tilde p^{\natural}\tilde q\quad(\text{general quaternionic}) .
@@ -37,12 +37,12 @@ $$
 |---|---|
 | $(\mathrm{id},\mathrm{id})$ | $\tilde p\tilde q$ |
 | $({}^{\natural},\mathrm{id})$ | $\tilde p^{\natural}\tilde q$ |
-| $(\mathrm{id},{}^{\natural})$ | $\tilde p\tilde q^{\natural}$, the plain product read at $(\tilde p^{\natural},\tilde q^{\natural})$ |
-| $({}^{\natural},{}^{\natural})$ | $\tilde p^{\natural}\tilde q^{\natural}$, the quaternionic product read at $(\tilde p^{\natural},\tilde q^{\natural})$ |
+| $(\mathrm{id},{}^{\natural})$ | $\tilde p\tilde q^{\natural}$, the quaternionic product read at $(\tilde p^{\natural},\tilde q^{\natural})$ |
+| $({}^{\natural},{}^{\natural})$ | $\tilde p^{\natural}\tilde q^{\natural}$, the plain product read at $(\tilde p^{\natural},\tilde q^{\natural})$ |
 
 ## The Reason There Are Only Two
 
-The count is two because the algebra has a single non-trivial conjugation and the base field none. A general product inserts a conjugation into a slot; the conjugations available are the identity and ${}^{\natural}$; inserting ${}^{\natural}$ in the second slot gives the first-slot products conjugated, not a new product. A third product would require a second independent conjugation on the elements, which the quaternion algebra over $\mathbb{R}$ does not have. The two products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ are thus the whole list of general products, and the whole operational vocabulary of the chapter is built from them.
+The count is two because the algebra has a single non-trivial conjugation and the base field none. A general product inserts a conjugation into a slot; the conjugations available are the identity and ${}^{\natural}$; inserting ${}^{\natural}$ in the second slot gives the first-slot products read at conjugated arguments, not a new product. A third product would require a second independent conjugation on the elements, which the quaternion algebra over $\mathbb{R}$ does not have. The two products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ are thus the whole list of general products, and the whole operational vocabulary of the chapter is built from them.
 
 ## The Six Structures the Two Products Generate
 
@@ -74,7 +74,7 @@ The two general products and the four halves are the six products of the chapter
 
 **Theorem (the two general products generate the six structures, and no more).** The split of the two general products under the interchange of their slots produces exactly four halves, the two general products together with the four halves are six distinct products, and every structure of the chapter is one of the six.
 
-*Proof.* The reconstruction above writes each general product as the sum of its symmetric and antisymmetric part, so the four halves are determined by the two general products, and any four of the six determine the other two. The four halves are distinct from the two general products and from one another. The Jordan product differs from the plain product by the cross term, $\tilde p\bullet\tilde q=\tilde p\tilde q-\mathbf p\times\mathbf q$, which is nonzero on $(e_1,e_2)$; the cross product is pure vector while the plain product is not; the symmetric quaternionic product is scalar, valued in $\mathbb{R}e_0$, while the general quaternionic product is not, its value on $(e_0,e_1)$ being $e_1$; and the quaternionic cross product is pure vector, its value on $(e_0,e_1)$ being $e_1$ while its scalar part vanishes. The same four witnesses separate the four halves from one another, and no bilinear rule has more than its symmetric and its antisymmetric part. Hence the split produces no seventh product, and the six structures are exactly the two general products and their halves.
+*Proof.* The reconstruction above writes each general product as the sum of its symmetric and antisymmetric part, so the four halves are determined by the two general products, and any four of the six determine the other two. The four halves are distinct from the two general products and from one another. The Jordan product differs from the plain product by the cross term, $\tilde p\bullet\tilde q=\tilde p\tilde q-\mathbf p\times\mathbf q$, which is nonzero on $(e_1,e_2)$; the cross product is pure vector while the plain product is not; the symmetric quaternionic product is scalar, valued in $\mathbb{R}e_0$, while the general quaternionic product is not, its value on $(e_0,e_1)$ being $e_1$; and the quaternionic cross product is pure vector, its value on $(e_0,e_1)$ being $e_1$ while its scalar part vanishes. Together these witnesses separate the four halves from the two general products and from one another, and no bilinear rule has more than its symmetric and its antisymmetric part. Hence the split produces no seventh product, and the six structures are exactly the two general products and their halves.
 
 **Remark (the plain triple and the quaternionic triple).** The plain triple is the multiplication of $\mathbb{H}$, its Jordan symmetrisation and its commutator; the quaternionic triple is the same three-fold split of the product whose first factor carries the conjugation, and the conjugation changes the sign of the antisymmetric term and turns the dot product of the symmetric term into its negative, which is why the symmetric half of the quaternionic product is the scalar $N(\tilde p,\tilde q)e_0$ and not the Jordan product. The two triples share the two antisymmetric products' character, both being alternating, and separate on the symmetric side: the plain symmetric half $\mathrm{SPA}$ is a Jordan algebra, the quaternionic symmetric half $\mathrm{SQA}$ is not.
 

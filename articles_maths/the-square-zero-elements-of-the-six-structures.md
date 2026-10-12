@@ -33,7 +33,7 @@ The diagonal is the plain square for the plain product, the norm times $e_0$ for
 
 *Proof.* For the general plain structure, if $\tilde\nu^2=0$ and $\tilde\nu\neq0$ then $\tilde\nu$ is invertible and multiplication on the left by $\tilde\nu^{-1}$ gives $\tilde\nu=0$, a contradiction; hence the only solution is the origin. For the general quaternionic structure, $\tilde\nu^{\natural}\tilde\nu=N(\tilde\nu)e_0$ and the norm is a sum of four real squares, so $N(\tilde\nu)=0$ forces $\tilde\nu=0$. The symmetric structures have the same square on the diagonal, the Jordan square being the plain square and the symmetrised quaternionic square being the norm times $e_0$, so they keep the same one-point set.
 
-The proof is the division property, quoted from *The Specificities of the General Plain Algebra* and *Norm and Invertibility in the General Plain Algebra*, above this article in this category. The four structures are the ones whose square is a definite quadratic form on the space: $x_0^2-|\mathbf x|^2$ is definite on $\mathbb{R}^4$ when read with the two equations together, and $N(\tilde x)$ is a sum of squares; the origin is the only real zero of each.
+The proof is the division property, quoted from *The Specificities of the General Plain Algebra* and *Norm and Invertibility in the General Plain Algebra*, above this article in this category. The four structures are the ones whose square is zero only at the origin: the plain square is indefinite, of isotropic cone real only after complexification, yet the two equations $x_0^2-|\mathbf x|^2=0$ and $2x_0\mathbf x=0$ together force $\tilde x=0$; and $N(\tilde x)$ is a sum of four squares, positive off the origin. The origin is the only real zero of each.
 
 ## The Two Alternating Structures
 
