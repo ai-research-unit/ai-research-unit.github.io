@@ -188,7 +188,7 @@ The same argument shows that over any field in which the quaternion norm is anis
 
 ## The Three-Way Classification
 
-The elements of the biquaternion algebra fall into three classes: the invertible elements, the non-zero zero divisors, and zero. The three are mutually exclusive and, over the complex field, exhaust the algebra. Here the classification has the same three slots but one of them is empty.
+The three are mutually exclusive and, over the complex field, exhaust the algebra. Here the classification has the same three slots but one of them is empty.
 
 **Theorem (classification).** Over $\mathbb{R}$ every quaternion is exactly one of the following:
 
@@ -206,34 +206,11 @@ The elements of the biquaternion algebra fall into three classes: the invertible
 
 The division property is the reason the quaternion algebra stands at the head of its family: it is a four-dimensional real division algebra, and it is the largest-dimensional associative one.
 
-## Comparison with the Biquaternion Case
-
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the same multiplication table with the coefficients extended from $\mathbb{R}$ to $\mathbb{C}$, and its norm
-
-$$
-N(\tilde Q) = \tilde Q\,\tilde{Q}^{\natural}
-$$
-
-takes values in $\mathbb{C}$ rather than in $\mathbb{R}$. The comparison isolates what the real coefficient field buys.
-
-| Feature | $\mathbb{H}$ over $\mathbb{R}$ | $\mathbb{B}$ over $\mathbb{C}$ |
-|---|---|---|
-| Values of $N$ | non-negative reals | complex numbers |
-| Positive definite | yes | no |
-| Zero divisors | none | the null cone $N = 0$ |
-| Invertibility criterion | $\tilde q\neq 0$ | $N(\tilde Q)\neq 0$ |
-| Classes of elements | two (zero, invertible) | three (invertible, zero divisor, zero) |
-| Group of units | $\mathbb{R}_{>0}\times \mathbb{H}^1$ | $GL_2(\mathbb{C})$ |
-
-In the biquaternion case the norm is a complex-valued quadratic form, its zero set is the null cone, and an element with $N = 0$ but $\tilde Q\neq 0$ is a genuine zero divisor; the three-way classification is then a genuine trichotomy. Here the quaternion norm is real and positive definite, the null cone degenerates to the origin, the middle class of the classification is empty, and the unit group is the product of a line and the norm-one shell. The biquaternion case is treated in *Norm and Invertibility in the General Plain Algebra*.
-
 ## Summary
 
 The quaternion algebra carries the multiplicative quadratic form $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $N(p\tilde q) = N(p)N(\tilde q)$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$, a real symmetric bilinear form whose diagonal is $N(\tilde q)$ and whose polarisation recovers it; the Hermitian form $\tilde q\tilde{q}^{\natural}$ coincides with $N(\tilde q)$.
 
-Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly when $N(\tilde q)\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. Over $\mathbb{R}$ every non-zero quaternion is invertible, the algebra has no zero divisors, and it is a division algebra, so the three-way classification of the biquaternion case collapses to the dichotomy zero or invertible. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times \mathbb{H}^1$ of a positive scale and the unit sphere.
-
-The contrast with the biquaternion case is the contrast between a real and a complex norm: the complex norm has a null cone, the null cone supplies non-zero zero divisors, and the trichotomy invertible–zero-divisor–zero is genuine there, whereas here it degenerates.
+Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly when $N(\tilde q)\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times \mathbb{H}^1$ of a positive scale and the unit sphere.
 
 ## Summary of Notation
 
@@ -252,8 +229,6 @@ The contrast with the biquaternion case is the contrast between a real and a com
 | $\mathbb{H}^{\times} = \{\tilde q : N(\tilde q)\neq 0\}$ | Group of units |
 | $\mathbb{H}^1 = \{\tilde q : N(\tilde q) = 1\}$ | Unit quaternions, the norm-one shell |
 | $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times \mathbb{H}^1$ | Polar split of the units |
-| $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, for contrast |
-| $N(\tilde Q) = \tilde Q\tilde{Q}^{\natural}$ | Complex-valued norm of $\mathbb{B}$ |
 
 ## Further Reading
 

@@ -15,7 +15,6 @@ $$
 
 This article reads its structure: the centre, the derived algebra, the structure constants, the
 ideals and the two identifications of the derived algebra with the classical compact Lie algebras
-$\mathfrak{su}(2)$ and $\mathfrak{so}(3)$, and the comparison with the biquaternion algebra of the
 same name.
 
 **This is not the algebra $\mathbb{H}$.** The Lie bracket is the cross product of the vector parts and
@@ -27,8 +26,7 @@ nothing new.
 The operation and its table are *Introduction to the Antisymmetric Plain Algebra of Quaternions*; the
 elements of the structure are *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint
 Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this
-category, and the general theory of Lie algebras is *Structure of Lie Algebras*. The biquaternion
-counterpart is *The Lie Algebra of the Antisymmetric Plain Algebra* of the biquaternion chapter.
+category, and the general theory of Lie algebras is *Structure of Lie Algebras*.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$; the cross product of the vector parts is $\mathbf p\times\mathbf q$, with
@@ -175,25 +173,6 @@ $\mathrm{U}(\mathfrak{g})\cong\mathbb{R}[z]\otimes\mathrm{U}(\mathfrak{su}(2))$:
 contributes the polynomial ring in one variable and the derived algebra the enveloping algebra of
 $\mathfrak{su}(2)$, whose centre is the Casimir of *The Killing Form of the Antisymmetric Plain
 Algebra*, below this article in this category.
-
-## The Comparison with the Biquaternion Chapter
-
-| | the biquaternion antisymmetric plain algebra | the antisymmetric plain algebra of $\mathbb{H}$ |
-|---|---|---|
-| the space | $\mathbb{B}$ over $\mathbb{C}$, complex dimension four | $\mathbb{H}$ over $\mathbb{R}$, real dimension four |
-| the algebra | $\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}_{\mathbb{B}}$ | $\mathfrak{su}(2)\oplus\mathbb{R}e_0$ |
-| the centre | $\mathbb{C}_{\mathbb{B}}$, complex dimension one | $\mathbb{R}e_0$, real dimension one |
-| the derived algebra | $\mathfrak{sl}(2,\mathbb{C})$, complex dimension three | $\mathfrak{su}(2)\cong\mathfrak{so}(3)$, real dimension three |
-| the form | complex, indefinite | real, negative definite |
-
-**Remark (the real form).** The biquaternion algebra and the quaternion algebra have the same
-structure over their fields, the direct sum of the centre and $\mathfrak{sl}(2)$; the two differ in the
-field of scalars and in the nature of the simple factor: over $\mathbb{C}$ it is
-$\mathfrak{sl}(2,\mathbb{C})$, whose Killing form is indefinite, over $\mathbb{R}$ it is the compact
-real form $\mathfrak{su}(2)\cong\mathfrak{so}(3)$, whose Killing form is negative definite. The
-biquaternion structure is *The Lie Algebra of the Antisymmetric Plain Algebra* and its form is *The
-Killing Form of the Antisymmetric Plain Algebra* of the biquaternion chapter; the comparison is
-recorded here and not re-derived.
 
 ## Summary
 

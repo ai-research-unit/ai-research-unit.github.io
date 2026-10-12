@@ -28,8 +28,6 @@ The operation and the failure are *Introduction to the Antisymmetric Quaternioni
 Quaternions* and *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
 Algebra*, below this article in this category; the operators are *The Adjoint Operators of the
 Antisymmetric Quaternionic Algebra*, below this article in this category. The comparator is *The Killing
-Form of the Antisymmetric Plain Algebra* and the biquaternion counterpart is *The Invariant Bilinear
-Forms of the Antisymmetric Quaternionic Algebra* of the biquaternion chapter.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\mathbf q$, the **centre** is

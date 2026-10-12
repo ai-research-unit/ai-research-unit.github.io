@@ -199,6 +199,5 @@ The eigencomponents of conjugation are $A_+ = 3 \in \mathbb{R}_{\mathbb{C}}$ and
 ## Further Reading
 
 - Carl Friedrich Gauss, *Theoria residuorum biquadraticorum, Commentatio secunda* (Göttingen, 1831), for the geometry of the plane and worked computational examples.
-- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the worked multiplication rules.
 - Israel Nathan Herstein, *Topics in Algebra*, 2nd edition (Wiley, 1975), for elementary computational practice with complex numbers and field automorphisms.
 - Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the norm and its multiplicativity.

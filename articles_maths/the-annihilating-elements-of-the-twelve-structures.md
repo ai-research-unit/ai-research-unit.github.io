@@ -1,4 +1,4 @@
-# __The Annihilating Elements of the Four General Products__
+# __The Annihilating Elements of the Twelve Structures__
 
 ## Introduction
 
@@ -12,7 +12,7 @@ $$
 
 It is the second-order invariant the algebra carries, and its vanishing is the criterion of invertibility. Three facts organise the article. First, the central square is multiplicative for each of the four general products, by two laws, one for the bilinear pair and one for the sesquilinear pair; the four laws are one law read through the conjugation each product carries. Second, the elements that admit a nonzero annihilating factor are the same elements for the four general products, exactly the vanishing set of the central square; the article proves this and reads it in the matrix model, where the set is the rank-one elements, and in coordinates, where it is a complex cone of complex dimension three. Third, that one set of elements does **not** determine the theory: the annihilators of one fixed annihilated element, the square-zero sets, the idempotent sets and the unit structures differ from one product to the next, and the article tabulates the four readings with the owner of each entry named.
 
-The article owns the central square and its four multiplicative laws, the identity of the annihilated set with the vanishing set of the central square, the rank-one reading of that set in the matrix model, its cone structure, and the comparison of the four annihilators of one fixed annihilated element. It repeats the four square-zero sets, the four idempotent sets and the four unit structures as a synthesis of the four groups, and it closes on the boundary the annihilated set carries: the set $\{c = 0\}$ is **not** the isotropic cone of the general plain bilinear form $\mathrm{Sc}(\tilde P\tilde Q)$, which belongs to *The Isotropic Structure of the General Plain Bilinear Form*. The restriction of the whole picture to the remarkable subspaces is *Remarkable Subspaces and the Four General Products*.
+The article owns the central square and its four multiplicative laws, the identity of the annihilated set with the vanishing set of the central square, the rank-one reading of that set in the matrix model, its cone structure, and the comparison of the four annihilators of one fixed annihilated element. It repeats the four square-zero sets, the four idempotent sets and the four unit structures as a synthesis of the four groups, and it closes on the boundary the annihilated set carries: the set $\{c = 0\}$ is **not** the isotropic cone of the general plain bilinear form $\mathrm{Sc}(\tilde P\tilde Q)$, which belongs to *The Isotropic Structure of the General Plain Bilinear Form*. The restriction of the whole picture to the remarkable subspaces is *Remarkable Subspaces and the Four General Products*, and the reading of the invariant across the twelve structures of the space is §*The Central Square across the Twelve Structures*.
 
 **Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu = Q_0e_0+\mathbf Q$ with $Q_0\in\mathbb{C}$ and $\mathbf Q = \sum_{k=1}^{3}Q_ke_k$. The four general products and their notation are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*: $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, with the natural conjugation $\tilde Q^{\natural} = Q_0-\mathbf Q$ and the star $\tilde Q^{*} = \overline{Q_0}-\overline{\mathbf Q}$, so that ${}^{*} = \bar{\cdot}\circ{}^{\natural}$. The **central square** is $\tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = c(\tilde Q)e_0$ with $c(\tilde Q) = \sum_\mu Q_\mu^{2}$, a central element, and $(\mathbf P,\mathbf Q) = \sum_k P_kQ_k$ is the general plain bilinear form of the two vector parts.
 
@@ -71,6 +71,25 @@ $$
 **Proof.** Fix a product $f$ and an element $\tilde P$, and consider the map $\tilde X\mapsto f(\tilde P,\tilde X)$, which is $\mathbb{C}$-linear for the two bilinear products and conjugate-linear for the two sesquilinear ones, and which in the matrix model is left multiplication by $\mathsf{M}_2(\tilde P)$ or by $\mathsf{M}_2(\tilde P^{\natural})$, composed with the conjugate transpose when the second slot carries the star. The map has a nonzero kernel exactly when that matrix is singular, that is exactly when $c(\tilde P) = 0$. Conversely, if $c(\tilde P) = 0$ and $\tilde P\neq0$, then $\tilde P\tilde P^{\natural} = 0$ with $\tilde P^{\natural}\neq0$ exhibits an annihilating factor in the plain product; the natural product takes the same factor, since $\tilde P^{\natural}\tilde P = c(\tilde P)e_0 = 0$; and the two products carrying the star take the conjugate $\overline{\tilde P}$, for which $\tilde P\overline{\tilde P}^{*} = \tilde P\tilde P^{\natural} = 0$ and $\tilde P^{\natural}\overline{\tilde P}^{*} = \tilde P^{\natural}\tilde P = 0$. The same argument with the roles of the two slots exchanged gives the other side.
 
 The theorem is a statement about one set and four annihilators, and the distinction matters. The set $\{c = 0\}$ is intrinsic to the algebra; the annihilator of a point of the set is not, and the next section reads the four of them. The zero divisors of the algebra are the nonzero points of the set, classified in *Zero Divisors of the General Plain Algebra*; the proof above is the sense in which each of the four general products detects them.
+
+## The Central Square across the Twelve Structures
+
+The central square is written with the plain multiplication and the natural conjugation alone, $\tilde Q^{\natural}\tilde Q = c(\tilde Q)e_0$, so it is one object for the twelve structures of the space and no derived product can deform it. What the derived products change is not the invariant but what its vanishing detects: the four general products read it as the annihilating factor, and the other eight do not, their annihilating sets being strictly larger (*The Zero Divisors and the Twelve Structures*).
+
+| structure | the elements that admit an annihilating factor | equals $\{c=0\}\setminus\{0\}$? |
+|---|---|---|
+| $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ | $\{c=0\}\setminus\{0\}$ | yes |
+| $\mathrm{SPA}$, $\mathrm{SQS}$ | $(\{Q_0=0\}\cup\{c=0\})\setminus\{0\}$ | no |
+| $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$, $\mathrm{SQA}$, $\mathrm{SPS}$ | $\mathbb{B}\setminus\{0\}$ | no |
+
+**Theorem (the invariant is common, the detection is not).** In all twelve structures an element of vanishing central square admits an annihilating factor. The converse holds for the four general structures alone: there the annihilating set is exactly $\{c=0\}\setminus\{0\}$, whereas for the eight derived structures it is strictly larger, up to the whole punctured space.
+
+*Proof.* The annihilating set of each of the twelve structures is recorded in *The Zero Divisors and the Twelve Structures*, and every one of the twelve displayed there contains $\{c=0\}\setminus\{0\}$: it equals it for the four general structures, adds the pure elements for $\mathrm{SPA}$ and $\mathrm{SQS}$, and is the whole punctured space for the remaining six. The four general rows are the theorem of §*The Elements with an Annihilating Factor*, and the strictness of the other eight is the same table. The sufficient direction has the direct witness $\tilde Q^{\natural}$ in the plain product, $\tilde Q\tilde Q^{\natural} = 0$.
+
+**Remark (two structures whose square is the invariant).** The central square is the square operator of exactly two of the twelve, $\mathrm{GQA}$ and $\mathrm{SQA}$, where $\tilde Q\star\tilde Q = c(\tilde Q)e_0$. These are the two structures whose square-zero set is the whole cone $\{c=0\}$ (*The Square-Zero Elements of the Twelve Structures*), and they are the two for which the second-order invariant is read by the multiplication itself. For the other ten the central square is a form on the space and not the square of the structure, and the multiplicative laws of the four previous theorems have no derived analogue: a derived product is not associative, and $c(\tilde P\star\tilde Q)$ obeys no law in $c(\tilde P)$ and $c(\tilde Q)$.
+
+The central square is therefore the sharpest of the twelve-structure invariants and the one the whole chapter is built on, but its authority is that of the four general products alone. The further an element sits from the four general structures, the less the vanishing of $c$ says about its annihilation; on the eight derived structures the condition $c = 0$ is sufficient for a zero divisor and necessary for none of them.
+
 
 ## The Cone and the Rank-One Elements
 
@@ -179,6 +198,8 @@ The four square-zero sets, the four idempotent sets and the four unit structures
 
 The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form $\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q)$; the two cones cross, and the algebra's norm cone is the other one. The restriction of the whole picture to the remarkable subspaces is *Remarkable Subspaces and the Four General Products*, and the detailed readings of the four element theories are the four group articles of the chapter.
 
+Read among the twelve structures the central square is the one object the derived products cannot deform, and its authority stops at the four general structures. In all twelve an element of vanishing central square admits an annihilating factor, but the annihilating set is exactly $\{c=0\}\setminus\{0\}$ for $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ alone; for $\mathrm{SPA}$ and $\mathrm{SQS}$ it is $\bigl(\{Q_0=0\}\cup\{c=0\}\bigr)\setminus\{0\}$, and for the other six it is the whole punctured space. The two structures whose square operator is the central square itself, $\mathrm{GQA}$ and $\mathrm{SQA}$, are the two whose square-zero set is the whole cone, and the multiplicative laws of the central square have no analogue on the eight derived structures, which are not associative.
+
 ## Summary of Notation
 
 | symbol | meaning |
@@ -189,6 +210,7 @@ The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form
 | $A_f(\tilde P)$, $B_f(\tilde P)$ | the two one-sided annihilators of $\tilde P$ for the product $f$ |
 | $(\mathbf P,\mathbf Q)$ | the general plain bilinear form of the two vector parts |
 | $\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q)$ | the general plain bilinear form, whose isotropic cone is not $\{c = 0\}$ |
+| $\mathrm{GPA},\dots,\mathrm{AQS}$ | the twelve structures of the space, the four general ones and the eight derived ones |
 
 ## Further Reading
 
@@ -204,3 +226,5 @@ The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the elements of the remarkable subspaces, the pure cone and the non-pure families.
 - *Remarkable Subspaces under the General Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction of the forms to the remarkable subspaces.
 - *The Isotropic Structure of the General Quaternionic Algebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-algebra.md`), for the isotropic cones of the two bilinear forms, which are not the vanishing set of the central square.
+- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the annihilating set of each of the twelve structures.
+- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve names and the class of each.

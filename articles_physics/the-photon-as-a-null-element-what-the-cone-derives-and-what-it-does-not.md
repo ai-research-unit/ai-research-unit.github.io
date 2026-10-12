@@ -91,7 +91,7 @@ The argument is short but it is doing real work. In the metric formulation the i
 
 A rest frame is a frame in which the vector part of the four-momentum vanishes, $\mathbf{p}=0$. In such a frame $N(\tilde{P}) = -E^2/c^2$, which is strictly negative whenever $E\neq0$. But $N$ is invariant, so if $\tilde{P}$ is null in one frame it is null in every frame, and no frame can produce the negative value. Hence a null four-momentum has no rest frame: the transformation that would annihilate $\mathbf{p}$ does not exist in the group that preserves the cone. This is the algebraic form of the statement that light has no rest frame, and it is a consequence of the two facts already established, the invariance of the norm and the sign of the norm at rest.
 
-The physical interpretation is immediate. A rest frame for the photon would be a frame in which it is at rest, and in that frame its four-momentum would be timelike, hence not null, hence not the four-momentum of a photon. The cone forbids it. This is not an extra rule about photons; it is the statement that "null" and "at rest" are contradictory values of one invariant.
+The **physical interpretation** is immediate. A rest frame for the photon would be a frame in which it is at rest, and in that frame its four-momentum would be timelike, hence not null, hence not the four-momentum of a photon. The cone forbids it. This is not an extra rule about photons; it is the statement that "null" and "at rest" are contradictory values of one invariant.
 
 ### The massless particle moves at $c$, for every momentum
 

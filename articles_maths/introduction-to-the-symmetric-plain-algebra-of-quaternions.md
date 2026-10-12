@@ -69,7 +69,7 @@ for every $a\in\mathbb{R}$.
 
 *Proof.* The plain product is $\mathbb{R}$-bilinear, and the sum of two $\mathbb{R}$-bilinear maps and the halving keep the class; equivalently, the displayed coordinate rule is additive and homogeneous in the coordinates of each argument separately.
 
-**Remark (why the class survives the split).** The plain product has two $\mathbb{R}$-linear slots, so its two slots have the same type and the bare interchange of the arguments is an exchange that keeps the class; the two halves are $\mathbb{R}$-bilinear again. This is the **algebra case** of the general split, and it is contrasted in *The Symmetric and Antisymmetric Parts of an Algebra Product* with the case of a product one of whose slots is conjugate-linear, where the bare interchange returns a product of the opposite class. **The symmetric plain product is $\mathbb{R}$-bilinear, and the obstruction of the class does not arise in this block.**
+**Remark (why the class survives the split).** The plain product has two $\mathbb{R}$-linear slots, so its two slots have the same type and the bare interchange of the arguments is an exchange that keeps the class; the two halves are $\mathbb{R}$-bilinear again. This is the **algebra case** of the general split. **The symmetric plain product is $\mathbb{R}$-bilinear, and the obstruction of the class does not arise in this block.**
 
 ## The Algebra the Symmetrisation Defines
 

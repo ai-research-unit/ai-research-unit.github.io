@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_0$ to the identity and $e_1,e_2,e_3$ to the negative imaginary multiples of the Pauli matrices (*The General Plain Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, the companion reading of the plain algebra of quaternions). On that image the **quaternionic product** of the block is the matrix product with the conjugate transpose in the first slot, the **quaternionic form** is half the trace pairing with the conjugate transpose in the second slot, and the invariants of the element are the trace and the determinant of its image. This article reads the objects of the block — the product, the form, the units, the shell and the inner automorphisms — in the matrix model, and compares with the plain block and with the exact isomorphism of the biquaternion chapter.
+The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_0$ to the identity and $e_1,e_2,e_3$ to the negative imaginary multiples of the Pauli matrices (*The General Plain Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, the companion reading of the plain algebra of quaternions). On that image the **quaternionic product** of the block is the matrix product with the conjugate transpose in the first slot, the **quaternionic form** is half the trace pairing with the conjugate transpose in the second slot, and the invariants of the element are the trace and the determinant of its image.
 
 **Conventions.** The embedding is $\mathsf{M}_2(e_0) = \mathbb{1}$ and $\mathsf{M}_2(e_k) = -i\sigma_k$; the conjugate transpose of a matrix is written ${}^{\dagger}$; the quaternionic product is $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ and the quaternionic form is $N(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q^{\natural}) = \sum_\mu p_\mu q_\mu$, of signature $(4,0)$.
 
@@ -104,25 +104,9 @@ $$
 
 **Corollary.** The inner automorphisms of the block are the conjugations of $M_2(\mathbb{C})$ that leave the real form $\mathsf{M}_2(\mathbb{H})$ stable; they use the plain product of the model, and their effect on the quaternionic form is the identity, since conjugation preserves the determinant and hence $N$.
 
-## Comparison with the Plain Block and with the Biquaternion Chapter
-
-**Proposition (the two blocks in the model).** The plain block and the quaternionic block act on the same image of the same matrix algebra and differ in the slot that carries the dagger.
-
-| feature | plain block | quaternionic block |
-|---|---|---|
-| product | $\mathsf{M}_2(\tilde p\tilde q) = \mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$ | $\mathsf{M}_2(\tilde p \star \tilde q) = \mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$ |
-| form | $\tfrac12\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))$, Gram $D$, signature $(1,3)$ | $\tfrac12\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})$, Gram $\mathbb{1}_4$, signature $(4,0)$ |
-| square | $\mathsf{M}_2(\tilde q^2)$ with $\det = N(\tilde q)^2$ | $\mathsf{M}_2(\tilde q \star \tilde q) = N(\tilde q)\mathbb{1}$ |
-| shell | the unit sphere, the group of norm one | the same shell, read as $SU(2)$ |
-| inner automorphisms | conjugation by $\mathsf{M}_2(\tilde q)$ | the same |
-
-**Proposition (the biquaternion comparison).** Over the complex coefficient field the same matrix algebra is the biquaternion algebra, $\mathbb{B} \cong M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra, with no dimension gap; the quaternionic form becomes a complex bilinear form with an isotropic cone, the dagger becomes one of the two conjugations, and the shell $N = 1$ becomes a non-compact complex quadric.
-
-*Proof.* The isomorphism is the one of the biquaternion chapter; over $\mathbb{C}$ the quadratic form of four variables is isotropic and its level sets are quadrics rather than spheres.
-
 ## Summary
 
-Under the embedding $\mathsf{M}_2(e_0) = \mathbb{1}$, $\mathsf{M}_2(e_k) = -i\sigma_k$, the quaternionic product of the block is the transposed product $\mathsf{M}_2(\tilde p \star \tilde q) = \mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$, the quaternionic form is half the trace pairing with the dagger in the second slot, $\tfrac12\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})$, with Gram matrix the identity of signature $(4,0)$, and the invariants are $\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_0$ and $\det\mathsf{M}_2(\tilde q) = N(\tilde q)$. The quaternionic square of an element is the positive scalar matrix $N(\tilde q)\mathbb{1}$; the units are the matrices of the image with positive determinant; the shell $N = 1$ is $SU(2)$, which is the pin and spin group of the form; the inner automorphisms are the conjugations by the image. The plain block uses the same embedding with the dagger removed, its form being half the trace pairing with the indefinite Gram matrix $D$; over $\mathbb{C}$ the same matrix algebra is the biquaternion algebra by an exact isomorphism.
+Under the embedding $\mathsf{M}_2(e_0) = \mathbb{1}$, $\mathsf{M}_2(e_k) = -i\sigma_k$, the quaternionic product of the block is the transposed product $\mathsf{M}_2(\tilde p \star \tilde q) = \mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$, the quaternionic form is half the trace pairing with the dagger in the second slot, $\tfrac12\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})$, with Gram matrix the identity of signature $(4,0)$, and the invariants are $\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_0$ and $\det\mathsf{M}_2(\tilde q) = N(\tilde q)$. The quaternionic square of an element is the positive scalar matrix $N(\tilde q)\mathbb{1}$; the units are the matrices of the image with positive determinant; the shell $N = 1$ is $SU(2)$, which is the pin and spin group of the form; the inner automorphisms are the conjugations by the image.
 
 ## Summary of Notation
 

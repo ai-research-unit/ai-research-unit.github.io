@@ -6,7 +6,7 @@ The dimension of a quaternion Julia set is the dimension of a subset of $\mathbb
 
 The article proves the bounds, proves the exact formula for a real parameter, exhibits the exceptional real parameters for which the formula changes (those with the slice lying on the real axis, that is $c\le-2$ or $c>\tfrac14$), compares the results with the complex dimension and with the dimension of the limit sets of the Kleinian groups, and states plainly what is not known. The dimension itself, the Hausdorff dimension $\dim_H$ and the box dimension $\dim_B$, are those of *Fractal Geometry*, which owns the definitions and the product theorems used below.
 
-The quadratic map and its symmetries are from *The Quaternion Quadratic Map and Its Julia Sets*; the hull theorem and the slice reduction are from *The Slices of the Quaternion Julia Sets*; the reduction of a parameter is from *The Quaternion Mandelbrot Set*; the escape radius and the potential are from *The Escape Radius and the Green's Function for Quaternions*; the complex dimension theory is from *The Hausdorff Dimension of the Julia Sets*; the limit sets of the discrete hyperbolic groups are from *Hyperbolic Geometry* and *The Dimension of the Boundary of a Hyperbolic Group*; and the pluricomplex analogue is *The Hausdorff Dimension of the Biquaternion Julia Sets*. No physics is invoked.
+No physics is invoked.
 
 Throughout, $\dim_H$ is the Hausdorff dimension and $\dim_B$ the upper box dimension, $\kappa(c)=c_0+i|\mathbf c|$, and $J^{\mathbb{C}}_{\kappa}$ is the complex Julia set of $z \mapsto z^2+\kappa$.
 
@@ -76,7 +76,7 @@ The complex Julia set of the reduced parameter has dimension $d\in[0,2]$, and it
 
 ### The Kleinian Limit Sets
 
-The limit sets of the discrete groups of hyperbolic isometries are the fractal sets of Parts IV and VI, and their dimensions are those of the limit set on the sphere at infinity and of the boundary of a hyperbolic group, treated in *Hyperbolic Geometry*, *The Dimension of the Boundary of a Hyperbolic Group* and *Kleinian and Fuchsian Groups*. The comparison with the quaternion Julia sets is a comparison of two different mechanisms: the limit set is the accumulation set of a discrete group and is computed by the Patterson–Sullivan theory, while the quaternion Julia set is the non-escaping set of a polynomial and is computed by the potential of *The Escape Radius and the Green's Function for Quaternions*. The dimensions agree in no automatic way; the connection between the two is the Kleinian limit set, whose group theory is *Kleinian and Fuchsian Groups*'s and whose hyperbolic example is *The Dimension of the Boundary of a Hyperbolic Group*'s, cited rather than developed. The biquaternion analogue is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
+The limit sets of the discrete groups of hyperbolic isometries are the fractal sets of Parts IV and VI, and their dimensions are those of the limit set on the sphere at infinity and of the boundary of a hyperbolic group, treated in *Hyperbolic Geometry*, *The Dimension of the Boundary of a Hyperbolic Group* and *Kleinian and Fuchsian Groups*. The comparison with the quaternion Julia sets is a comparison of two different mechanisms: the limit set is the accumulation set of a discrete group and is computed by the Patterson–Sullivan theory, while the quaternion Julia set is the non-escaping set of a polynomial and is computed by the potential of *The Escape Radius and the Green's Function for Quaternions*. The dimensions agree in no automatic way; the connection between the two is the Kleinian limit set, whose group theory is *Kleinian and Fuchsian Groups*'s and whose hyperbolic example is *The Dimension of the Boundary of a Hyperbolic Group*'s, cited rather than developed.
 
 ## Worked Example
 
@@ -98,7 +98,7 @@ $$
 \dim_H J_c = \dim_H\bigl(J^{\mathbb{C}}_c\cap\{y\neq0\}\bigr)+2 ,
 $$
 
-which is $d+2$ when the off-axis part carries the top dimension; the exceptions are the parameters with the slice on the real axis ($c\leq-2$ or $c>\tfrac14$), for which the dimension is that of the slice. The increase is two and not one, because the symmetry orbit is a two-sphere and not a circle; the case $c=0$ shows it, the unit circle becoming the unit sphere $S^3$. For a non-real parameter the set is not the hull of its slice — the reduction fails at $c=\tfrac12e_2$ — and only the general bounds survive; the exact general value is stated as an open point. The complex dimension is *The Hausdorff Dimension of the Julia Sets*'s, the limit-set dimensions are those of *The Dimension of the Boundary of a Hyperbolic Group* and *Kleinian and Fuchsian Groups*, and the biquaternion analogue is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
+which is $d+2$ when the off-axis part carries the top dimension; the exceptions are the parameters with the slice on the real axis ($c\leq-2$ or $c>\tfrac14$), for which the dimension is that of the slice. The increase is two and not one, because the symmetry orbit is a two-sphere and not a circle; the case $c=0$ shows it, the unit circle becoming the unit sphere $S^3$. For a non-real parameter the set is not the hull of its slice — the reduction fails at $c=\tfrac12e_2$ — and only the general bounds survive; the exact general value is stated as an open point.
 
 ## Summary of Notation
 

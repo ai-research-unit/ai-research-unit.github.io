@@ -96,7 +96,7 @@ and indeed $2 + 3\varepsilon = A$.
 
 **Proof.** An element of the intersection satisfies $a' = 0$ and $a = 0$, so it is zero. The sum decomposition is the worked projection identity above.
 
-So the algebra has exactly **one** nontrivial involution, and the two submodules are the eigenspaces. The biquaternion algebra, by contrast, carries four conjugations and six eigenspace-type subspaces; here the lattice degenerates to two submodules and the single relation $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = 0$.
+So the algebra has exactly **one** nontrivial involution, and the two submodules are the eigenspaces; the lattice degenerates to two submodules and the single relation $R_{\mathbb{D}'} \cap \varepsilon R_{\mathbb{D}'} = 0$.
 
 ## The Nilpotents and the Maximal Ideal
 
@@ -294,5 +294,4 @@ The worked computations in the dual-number algebra are these. The two involution
 
 - Eduard Study, *Geometrie der Dynamen* (Teubner, Leipzig, 1903), for the classical coordinate computations in the dual numbers and their geometry.
 - I. M. Yaglom, *Complex Numbers in Geometry* (Academic Press, New York, 1968), for worked computations in the dual, complex and split-complex algebras side by side.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for worked examples in the two-dimensional real algebras.
 - Andreas Griewank and Andrea Walther, *Evaluating Derivatives: Principles and Techniques of Algorithmic Differentiation* (SIAM, Philadelphia, 2008), for the computed algebra of nilpotent extensions.

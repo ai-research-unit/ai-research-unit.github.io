@@ -457,7 +457,7 @@ T_{\mathrm H}(2M_\odot)\approx 3.09\times10^{-8}\,\mathrm{K},
 \frac{T_{\mathrm H}(M_\odot)}{T_{\mathrm H}(2M_\odot)}=2.000,
 $$
 
-and for a primordial hole of mass $10^{12}\,\mathrm{kg}$, $T_{\mathrm H}\approx 1.23\times10^{11}\,\mathrm{K}$. The $M^{-1}$ scaling is a consistency check on the surface gravity: it uses only $r_s\propto M$ and $\kappa=c^2 f'(r_s)/2\propto 1/r_s\propto 1/M$. The same scaling has a physical interpretation that is worth stating but is **not** used as evidence here: the lighter the hole, the hotter it is, and the temperature of an astrophysical hole is far below the cosmic microwave background temperature, which is why the effect is invisible for stellar-mass and heavier black holes.
+and for a primordial hole of mass $10^{12}\,\mathrm{kg}$, $T_{\mathrm H}\approx 1.23\times10^{11}\,\mathrm{K}$. The $M^{-1}$ scaling is a consistency check on the surface gravity: it uses only $r_s\propto M$ and $\kappa=c^2 f'(r_s)/2\propto 1/r_s\propto 1/M$. The same scaling has a **physical interpretation** that is worth stating but is **not** used as evidence here: the lighter the hole, the hotter it is, and the temperature of an astrophysical hole is far below the cosmic microwave background temperature, which is why the effect is invisible for stellar-mass and heavier black holes.
 
 ### Observational Status
 

@@ -8,7 +8,7 @@ $$
 N(\tilde q) = q_0^2 + q_1^2 + q_2^2 + q_3^2 ,
 $$
 
-positive definite of signature $(4,0)$ (*The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category). The whole construction is short here because the form is definite and multiplicative: its shell $N = 1$ is a group, and the pin and spin groups of the block are that shell itself. This article gives the shells of the form, the identification of the pin and spin groups with them, the action of the unit group by inner automorphisms with its kernel and its normalised section, the reflections the pure units realise, and the comparison with the plain algebra of the same space and with the biquaternion case.
+positive definite of signature $(4,0)$ (*The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category). The whole construction is short here because the form is definite and multiplicative: its shell $N = 1$ is a group, and the pin and spin groups of the block are that shell itself.
 
 The contrast that organises the article is with the plain algebra. There the block carries **two** degree-two structures: the plain form $\mathrm B$, indefinite of signature $(1,3)$, whose shells are not groups and whose pin group therefore lives in a Clifford algebra rather than in $\mathbb{H}$; and the norm $N$, definite and multiplicative, whose shell is the unit sphere. Over the quaternion real space the quaternionic block takes $N$ itself for its form, so the definite case is the case of the block; the indefinite form keeps its own theory in the plain block, which is *The Pin and Spin Groups of the General Plain Algebra of Quaternions* in the companion reading of the plain algebra of quaternions, cited here and not repeated.
 
@@ -85,14 +85,6 @@ where $N(\tilde u,\tilde x)$ is the polar form restricted to $V$. The first map 
 | inner automorphisms | $\mathbb{H}^1/\{\pm e_0\} \cong SO(V,N)$ | the same |
 
 **Corollary.** The two blocks share the inner automorphisms and the unit sphere and differ in the form: the quaternionic form is the definite one, so its pin and spin groups are the shell; the plain form is the indefinite one, so its pin group leaves the algebra. The definiteness of the quaternionic form is therefore the reason the chapter has a pin and spin group inside the algebra.
-
-## The Comparison with the Biquaternion Case
-
-**Proposition.** Over the biquaternion space $\mathbb{B}$ the quaternionic form is the complex bilinear form of the same expression, and it is isotropic: the shell $N = 1$ is a complex quadric, of complex dimension three and real dimension six, and it is not compact; the shell $N = \pm1$ does not exhaust the units, since the units are the elements with $N \neq 0$.
-
-*Proof.* The expression is the same over $\mathbb{C}$ and a complex quadratic form in four variables is isotropic, with the nonzero isotropic element $e_1 + ie_2$; a level set of a non-degenerate complex form is a quadric hypersurface, not a compact sphere, and the units are the complement of the isotropic cone.
-
-**Corollary.** The group of the biquaternion block corresponding to the unit sphere is the norm-one slice of the units, and it is a complex group and not a compact sphere; the pin and spin groups of the complex form are the ones of the complex orthogonal group, the double cover being read in the complex matrix model rather than in the shell. The definiteness and the compactness of the shell are properties of the real member alone.
 
 ## Summary
 

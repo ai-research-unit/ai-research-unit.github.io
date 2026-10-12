@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A **zero divisor** in a commutative ring is a nonzero element $A$ for which there is a nonzero element $B$ with $AB = 0$. The split-complex algebra has a zero-divisor set of real dimension $1$, the pair of null lines, and this article determines it, describes its two families, relates it to the idempotents, and gives the criterion in the idempotent coordinates; the metrical reading of the set is in *Split-Complex Norm and Invertibility*. It is the two-dimensional counterpart of *Zero Divisors of the General Plain Algebra*, where the null cone is a six-real-dimensional variety inside the eight-real-dimensional algebra.
+A **zero divisor** in a commutative ring is a nonzero element $A$ for which there is a nonzero element $B$ with $AB = 0$. The split-complex algebra has a zero-divisor set of real dimension $1$, the pair of null lines, and this article determines it, describes its two families, relates it to the idempotents, and gives the criterion in the idempotent coordinates; the metrical reading of the set is in *Split-Complex Norm and Invertibility*.
 
 **Placement.** The article is fourth in the Algebra group, after *Split-Complex Algebra*, *Split-Complex Idempotents and Projections* and *Split-Complex Ideals and Peirce Decomposition*, and before *Worked Examples in the Split-Complex Algebra*. It owns the classification of the null cone, in the algebraic form $a^2 = a'^2$; the metrical reading of that cone — the norm, its isotropy and the criterion by its vanishing — belongs to *Split-Complex Norm and Invertibility* in the Topology group. The idempotents $\Pi_{1,2}$ and the decomposition $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ belong to *Split-Complex Idempotents and Projections*, and the minimal ideals to *Split-Complex Ideals and Peirce Decomposition*. This article is the boundary case: it classifies the null cone itself.
 
@@ -45,7 +45,7 @@ $$
 \mathbb{R}(1+j) = \mathbb{R}\Pi_1, \qquad \mathbb{R}(1-j) = \mathbb{R}\Pi_2,
 $$
 
-and $\mathcal{Z} = \mathcal{N}\setminus\{0\}$ is the same union with the origin deleted. Each line is one-dimensional, so the null cone has real dimension $1$; it is a cross of two lines through the origin, in contrast with the biquaternion null cone, which has real dimension $6$ inside dimension $8$.
+and $\mathcal{Z} = \mathcal{N}\setminus\{0\}$ is the same union with the origin deleted. Each line is one-dimensional, so the null cone has real dimension $1$; it is a cross of two lines through the origin.
 
 **Proposition.** The null cone is **exactly** the zero-divisor set and is a union of two one-dimensional subspaces of the underlying real vector space.
 
@@ -111,22 +111,11 @@ $$
 
 and the two families are the two coordinate lines $\mathbb{R}\Pi_{1,2}$, with the origin removed. The primitive zero divisors $\Pi_{1,2}$ are the idempotents themselves; every other zero divisor is a real multiple of one of them. Because the idempotents are central, there is no distinction between a left and a right annihilator and no phenomenon of one-sided invertibility: an element is a zero divisor iff it is a non-unit, iff it annihilates a whole line, namely the opposite one.
 
-## Comparison with the Complex, Biquaternion and Split-Biquaternion Cases
-
-| algebra | zero-divisor set | real dimension | reason |
-|---|---|---|---|
-| $\mathbb{C}$ | empty | $0$ | $\mathbb{C}$ is a field |
-| $\mathbb{D}$ | $\mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$ | $1$ | $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ is not a field |
-| $\mathbb{B}$ | null cone $\{N=0\}$ | $6$ | $\mathbb{B}\cong M_2(\mathbb{C})$ is not a division algebra |
-| $\mathbb{H}_{\mathbb{D}}$ | $(\mathbb{H}\times\{0\})\cup(\{0\}\times\mathbb{H})$ | $4$ | $\mathbb{H}$ is a division algebra |
-
-The complex field has no zero divisors at all. The split-complex algebra has a one-dimensional zero-divisor set, the simplest nontrivial one. The biquaternion algebra has a six-real-dimensional null cone, the subject of *Zero Divisors of the General Plain Algebra*. The split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ has a four-real-dimensional set, the union of a plane and its complementary plane in the product of two quaternion algebras, since the quaternions themselves have no zero divisors. The split-complex case is thus the minimal instance of the phenomenon: the smallest algebra in the family that is not a division algebra, with the zero-divisor set a pair of lines.
-
 ## Summary
 
 A non-zero split-complex number $A$ is a zero divisor exactly when $a^2 = a'^2$, equivalently when one of its idempotent coordinates vanishes. The zero-divisor set is the null cone with the origin removed, the union of the two null lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, a one-dimensional cross through the origin, with each line the annihilator of the other.
 
-The null cone is the zero set of the quadratic form of *Split-Complex Norm and Invertibility*, its isotropic cone; the form theory that reads it as a form — its polarisation, its signature, its hyperbolic pair of lines and the spacelike and timelike regions — is developed there and is named only here. The two families of zero divisors are the two coordinate lines of the idempotent decomposition, and up to scale they consist of the two primitive zero divisors $\Pi_1$ and $\Pi_2$; the sign of the product $A_+A_-$ separates the complement of the null cone into four sign classes, and the zero divisors are the elements across which that sign changes. Compared with the complex field, which has no zero divisors, with the biquaternion algebra, whose null cone has real dimension $6$, and with the split-biquaternion algebra, whose zero divisors form two copies of $\mathbb{H}$, the split-complex case is the minimal example in the family that is not a division algebra: a pair of lines.
+The null cone is the zero set of the quadratic form of *Split-Complex Norm and Invertibility*, its isotropic cone; the form theory that reads it as a form — its polarisation, its signature, its hyperbolic pair of lines and the spacelike and timelike regions — is developed there and is named only here. The two families of zero divisors are the two coordinate lines of the idempotent decomposition, and up to scale they consist of the two primitive zero divisors $\Pi_1$ and $\Pi_2$; the sign of the product $A_+A_-$ separates the complement of the null cone into four sign classes, and the zero divisors are the elements across which that sign changes. Compared with the complex field, which has no zero divisors, and with the four-dimensional algebras, whose null cone has real dimension $6$, the split-complex case is the minimal example in the family that is not a division algebra: a pair of lines.
 
 ## Summary of Notation
 
@@ -147,7 +136,6 @@ The null cone is the zero set of the quadratic form of *Split-Complex Norm and I
 ## Further Reading
 
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, Graduate Texts in Mathematics 131, 2nd ed. 2001), for zero divisors, annihilators and the theory of non-units.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for zero divisors across the real division and non-division algebras.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for isotropic cones and the split complex algebra in the Clifford setting.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for isotropic vectors and the isotropic cone of an indefinite quadratic form.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the geometric reading of the split complex plane and its null directions.

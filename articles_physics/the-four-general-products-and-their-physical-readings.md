@@ -50,7 +50,7 @@ general products together with the two halves of each.
 The mathematics of the four general products, of their scalar and vector parts, of their comparison and of their
 scalar forms is *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products*, *Comparison Between the Four General Products* and *The Four Pairings of the
 Biquaternion Algebra*, and the slot construction itself, with the two theorems that the second slot
-decides the composition and the first the form, is *The Four General Products and Their Two Slots: the Two
+decides the composition and the first the form, is *The Twelve Structures and Their Two Slots: the Two
 Algebras and the Two Sesqualgebras*. The signature table of the four scalar forms on the remarkable subspaces,
 which is where the effect of the first slot on the form is quantified, compares the four blocks with one
 another and so belongs to this article rather than to any of them; it is in §*Remarkable Subspaces*. The
@@ -319,7 +319,7 @@ induce a bilinear form by squaring.
 **The plain product $\tilde P\tilde Q$** is the only associative one and the only one with a two-sided
 identity. Its form $B=\mathrm{Sc}(\tilde P\tilde Q)$ is $-\mathrm{I}_4$ on $\mathbb{M}_-$ and
 $+\mathrm{I}_4$ on $\mathbb{M}_+$, so it is definite on each sector and carries the **sector sign**;
-within each sector it has no null cone, so it carries no Lorentzian metric. The physical interpretation is that
+within each sector it has no null cone, so it carries no Lorentzian metric. The **physical interpretation** is that
 this is the product of **composition**: it is associative, so it can be iterated without ambiguity, and
 its identity $e_0$ is the identity operation. The algebra it defines is the algebra of material
 operations, and the first physics block reads it: the ordinary product and the sector sign of its form,
@@ -332,7 +332,7 @@ the Peirce decomposition, the minimal left ideals and the bi-module — is mathe
 no right one, and is the only product of the four whose square is scalar. Its form
 $N=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ is $(-,+,+,+)$ on $\mathbb{M}_-$ and $(+,-,-,-)$ on
 $\mathbb{M}_+$, so it is indefinite on both sectors and carries the opposite signs on them, and it is
-the material metric. The physical interpretation is that this is the product of **causality**: the scalar it
+the material metric. The **physical interpretation** is that this is the product of **causality**: the scalar it
 returns when an element is squared is the interval, so the light cone, the mass shell and the level sets
 of the norm are read off it. The companion block is its subject, and the interval identity above is its
 opening statement.
@@ -354,7 +354,7 @@ induce a Hermitian form.
 **derived operation** of the algebra $\mathbb{B}$ with its conjugate-linear involution ${}^{*}$. Its
 form $H=\mathrm{Sc}(\tilde P\tilde Q^{*})$ is positive definite on every subspace, so it is the one form
 of the four that is definite; it is the form of the state space and of the Born pairing, its Hermitian
-idempotents are the pure states, and its positive cone is the state cone. The physical interpretation is that
+idempotents are the pure states, and its positive cone is the state cone. The **physical interpretation** is that
 this is the product of **probability**: it is the pairing that returns an amplitude between two elements
 and a probability after squaring, and it is the only product of the four that carries positivity. Its
 block owns the sesquilinear square, the positivity of the dagger and the interpretation mass equals rank.
@@ -364,7 +364,7 @@ side. It is not the derived operation: it is the **isotope** of the derived oper
 conjugation, $\tilde P\star\tilde Q={}^{\natural}(\tilde P)\tilde Q^{*}$, so it is obtained from the
 sesquilinear product by acting on the first slot and not by deriving anything new from the algebra. Its
 form $K=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$ is indefinite, of signature $(1,3)$ on each of the
-four four-dimensional subspaces, so it is a Krein form. The physical interpretation is that this is the product
+four four-dimensional subspaces, so it is a Krein form. The **physical interpretation** is that this is the product
 of **gauge**: it is the pairing of an indefinite-metric structure, in which positivity is replaced by a
 sign, and it is the standard form of the fourth product in the theory of sesqualgebras.
 
@@ -997,9 +997,9 @@ units, the monoids and the derived operation.
 - Mathematics article *The Four Pairings of the Biquaternion Algebra*
 (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram
 matrices and their signatures.
-- Mathematics article *The Four General Products and Their Two Slots: the Two Algebras and the Two
+- Mathematics article *The Twelve Structures and Their Two Slots: the Two Algebras and the Two
 Sesqualgebras*
-(`articles_maths/the-four-general-products-and-their-two-slots-the-two-algebras-and-the-two-sesqualgebras.md`),
+(`articles_maths/the-twelve-structures-and-their-two-slots-the-two-algebras-and-the-two-sesqualgebras.md`),
 for the slot construction stated and proved in general, with the two theorems that the second slot
 decides the composition and the first the form, and the second instance on $M_2(\mathbb{C})$.
 - Mathematics article *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*

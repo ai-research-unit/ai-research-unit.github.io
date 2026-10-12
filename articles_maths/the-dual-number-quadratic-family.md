@@ -116,6 +116,5 @@ The dual-number quadratic family $f_c(z) = z^2+c$ is triangular: with $z = x+\va
 ## Further Reading
 
 - I. M. Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the dual numbers and their infinitesimal interpretation.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of the two-dimensional real algebras.
 - Robert L. Devaney, *An Introduction to Chaotic Dynamical Systems*, 2nd edition (Addison-Wesley, 1989), for the real quadratic family and its interval of bounded orbits.
 - Benoit B. Mandelbrot, "On the quadratic mapping $z \mapsto z^2-\mu$", *Physica D* 7 (1983), 224–239, for the quadratic family in the complex case.

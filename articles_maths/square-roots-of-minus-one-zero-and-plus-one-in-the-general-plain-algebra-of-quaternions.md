@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The equation $\tilde\xi^2 = -1$ has, in the quaternion algebra, not two solutions but a whole two-dimensional family: the pure unit quaternions. This article determines that family, describes it as a single conjugacy class and as a homogeneous space of the unit group, relates it to the complex structures that the algebra places on its underlying real vector space, solves the companion equation $\tilde\xi^2 = +1$, and compares the answer with the biquaternion and split-quaternion cases. It is the article of the quaternion family that owns the square roots of $-1$; the unit group itself is from *Norm and Invertibility in the General Plain Algebra*, and the adjoint action that realises the conjugacy class is from *Quaternion Rotations and Reflections*, below this article in this category.
+The equation $\tilde\xi^2 = -1$ has, in the quaternion algebra, not two solutions but a whole two-dimensional family: the pure unit quaternions. It is the article of the quaternion family that owns the square roots of $-1$; the unit group itself is from *Norm and Invertibility in the General Plain Algebra*, and the adjoint action that realises the conjugacy class is from *Quaternion Rotations and Reflections*, below this article in this category.
 
 The single fact on which everything rests is the absence of zero divisors: since a product in $\mathbb{H}$ vanishes only when a factor vanishes, the equation $(\tilde q-1)(\tilde q+1) = 0$ forces $\tilde q = \pm 1$, and a companion argument forces the roots of $-1$ to be pure. Both the smallness of the root set of $+1$ and the roundness of the root set of $-1$ are consequences of the same property, and both fail as soon as the coefficient field is enlarged.
 
@@ -110,35 +110,13 @@ The family $\{I_1,I_2,I_3\}$ is a **quaternionic structure** on $\mathbb{H}$: a 
 
 **Remark.** The contrast between the two equations is complete. The root set of $+1$ is discrete and realizes the centre; the root set of $-1$ has real dimension two and realizes a single conjugacy class, the class of $e_1$, and it is as far from central as a conjugacy class can be: only the trivial class is smaller in the quotient. The equation $\eta^2 = 1$ has as many solutions as an algebra with no zero divisors permits — exactly the two central ones — and it has no solution outside $\mathbb{R}$.
 
-## Comparison with the Biquaternion and Split-Quaternion Cases
-
-The root set of $-1$ grows as soon as the coefficient field is enlarged, and the enlargement is the measure of how far the algebra has moved from the division case.
-
-**Proposition.** In the split quaternion algebra $\mathbb{H}_{\mathrm{s}}$, with basis $1,e_1,e_2,e_3$, $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1e_2$, the solutions of $\tilde\xi^2 = -1$ are the points of the level set $N = 1$
-
-$$
-q_1^2 - q_2^2 - q_3^2 = 1, \qquad \tilde\xi = q_1e_1+q_2e_2+q_3e_3 ,
-$$
-
-a set of dimension two rather than a surface of higher dimension.
-
-The derivation is in *Split-Quaternion Roots of Minus One*, where the split quaternion algebra is treated; only the comparison is recorded here.
-
-| Algebra | Roots of $-1$ | Roots of $+1$ |
-|---|---|---|
-| $\mathbb{H}$ | the pure elements with $N = 1$ | $\{\pm1\}$ |
-| $\mathbb{H}_{\mathrm{s}}$ | the level set $q_1^2-q_2^2-q_3^2 = 1$ (in $q_0 = 0$) | the level set $q_2^2+q_3^2-q_1^2 = 1$ (in $q_0 = 0$), together with $\pm1$ |
-| $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | a two-dimensional family together with further complex sheets | the roots $\tilde\Xi i$ obtained from those of $-1$, including $\pm\mu i$ for a pure unit $\mu$ |
-
-The biquaternion root set is computed in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; it contains the pure roots but also roots with complex coordinates, from which the non-trivial idempotents $\tfrac{1}{2}(1+\tilde\Xi i)$ are built. The presence of those extra roots is the failure of division: in a division algebra the factorisation argument of the roots-of-$+1$ theorem is available and the root set is small, while in $\mathbb{H}_{\mathrm{s}}$ and in $\mathbb{B}$ the same factorisation fails.
-
 ## Summary
 
 A quaternion satisfies $\tilde\xi^2 = -1$ exactly when it is a pure imaginary quaternion with $N = 1$, so the root set is $\Sigma = \operatorname{Im}\mathbb{H}\cap \mathbb{H}^1$, the level set $\{N = 1\}$, a two-dimensional family in place of the two roots $\pm i$ of the complex case. The square of a general quaternion splits into the scalar equation $q_0^2-N(\mathbf{q}) = -1$ and the vector equation $2q_0\mathbf{q} = 0$, and the pair forces $q_0 = 0$ and $N(\mathbf{q}) = 1$.
 
 The root set is a single conjugacy class of the unit group under the adjoint action, and the orbit–stabiliser theorem identifies it with the homogeneous space $\mathbb{H}^1/U(1)$, the stabiliser of $e_1$ being the circle of units commuting with $e_1$. Each root gives a complex structure $L_{\tilde\xi}$ on the underlying real space $\mathbb{H}\cong\mathbb{R}^4$, and the three roots $e_1,e_2,e_3$ give the anticommuting triple $I_1,I_2,I_3$ of a quaternionic structure whose unit elements are the whole two-dimensional set of roots.
 
-The companion equation $\eta^2 = 1$ has only the two solutions $\pm1$, because the factorisation $(\eta-1)(\eta+1) = 0$ together with the absence of zero divisors forces $\eta$ to be central; the root set of $+1$ is the centre of $\mathbb{H}^1$. In the split quaternion algebra the roots of $-1$ fill a set with two components rather than one, and in the biquaternion algebra they include further complex sheets, from which the non-trivial idempotents are built; in both cases the extra roots are bought with the loss of the division property.
+The companion equation $\eta^2 = 1$ has only the two solutions $\pm1$, because the factorisation $(\eta-1)(\eta+1) = 0$ together with the absence of zero divisors forces $\eta$ to be central; the root set of $+1$ is the centre of $\mathbb{H}^1$.
 
 ## Summary of Notation
 
@@ -157,7 +135,6 @@ The companion equation $\eta^2 = 1$ has only the two solutions $\pm1$, because t
 | $L_{\tilde\xi}(\tilde q) = \tilde\xi\tilde q$ | Complex structure of left multiplication by a root |
 | $I_1,I_2,I_3$ | Complex structures $L_{e_1},L_{e_2},L_{e_3}$, a quaternionic structure |
 | $\mathbb{H}_{\mathrm{s}}$ | Split quaternion algebra, for contrast |
-| $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, for contrast |
 
 ## Further Reading
 

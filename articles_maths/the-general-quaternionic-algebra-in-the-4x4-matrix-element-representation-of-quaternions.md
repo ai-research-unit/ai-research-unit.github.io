@@ -94,7 +94,7 @@ $$
 \operatorname{tr}\mathsf M_4(\tilde q) = 4q_0 , \qquad \det\mathsf M_4(\tilde q) = N(\tilde q)^2 .
 $$
 
-*Proof.* The trace is above. For the determinant, complexify: over $\mathbb{C}$ the operator $L_{\tilde q}$ has eigenvalues $\alpha$ and $\overline{\alpha}$ with multiplicity two, where $\alpha = q_0 + |\mathbf q|i$ is a root of $\alpha^2 - 2q_0\alpha + N(\tilde q) = 0$, so $\det L_{\tilde q} = \alpha^2\overline{\alpha}^2 = N(\tilde q)^2$.
+*Proof.* The trace is above. For the determinant, the operator $L_{\tilde q}$ has the complex eigenvalues $\alpha$ and $\overline{\alpha}$ with multiplicity two, where $\alpha = q_0 + |\mathbf q|i$ is a root of $\alpha^2 - 2q_0\alpha + N(\tilde q) = 0$, so $\det L_{\tilde q} = \alpha^2\overline{\alpha}^2 = N(\tilde q)^2$.
 
 **Corollary (the units).** $\mathsf M_4(\tilde q)$ is invertible exactly when $\tilde q \neq 0$, with positive determinant; the image of the unit group is the group of invertible matrices in the image, isomorphic to $\mathbb{H}^{\times}$.
 
@@ -120,13 +120,9 @@ so that the image of $\mathbb{H}^1$ is the intersection of the image with the sp
 | shell | the unit sphere, read in $SO(4)$ | the same sphere, read in $SO(4)$ |
 | centraliser | the right regular copy $\cong \mathbb{H}^{\mathrm{op}}$ | the same |
 
-**Proposition (the complex case).** Over $\mathbb{C}$ the left regular representation of $\mathbb{B} \cong M_2(\mathbb{C})$ is the embedding of $M_2(\mathbb{C})$ in $M_4(\mathbb{C})$ by the left action of a matrix on its column space; the quaternionic form becomes a complex bilinear form with an isotropic cone, the transpose corresponds to the conjugation as over $\mathbb{R}$, and the shell $N = 1$ becomes a non-compact complex quadric rather than the compact group $SU(2)$ of the real member.
-
-*Proof.* The complex isomorphism and the quadric are the ones of the biquaternion chapter; the compactness of the shell is a property of the real member alone.
-
 ## Summary
 
-The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde r) = \tilde q\tilde r$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image. On it the quaternionic product is the transposed product $\mathsf M_4(\tilde p \star \tilde q) = \mathsf M_4(\tilde p)^{\mathsf T}\mathsf M_4(\tilde q)$, so the quaternionic square of an element is the positive scalar matrix $N(\tilde q)\mathrm I_4$; the quaternionic form is $\tfrac14\operatorname{tr}(\mathsf M_4(\tilde p)\mathsf M_4(\tilde q)^{\mathsf T})$ with Gram matrix the identity of signature $(4,0)$; the invariants are $\operatorname{tr}\mathsf M_4(\tilde q) = 4q_0$ and $\det\mathsf M_4(\tilde q) = N(\tilde q)^2$; the shell is the intersection of the image with $SO(4)$, the orthogonal matrix model of the unit sphere. The right regular representation is a second, commuting four-dimensional algebra, the centraliser of the first, and the two generate $M_4(\mathbb{R})$; the plain block is the same model without the transpose, with the indefinite Gram matrix $D$; over $\mathbb{C}$ the same construction reads the biquaternion algebra and its isotropic form.
+The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde r) = \tilde q\tilde r$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image. On it the quaternionic product is the transposed product $\mathsf M_4(\tilde p \star \tilde q) = \mathsf M_4(\tilde p)^{\mathsf T}\mathsf M_4(\tilde q)$, so the quaternionic square of an element is the positive scalar matrix $N(\tilde q)\mathrm I_4$; the quaternionic form is $\tfrac14\operatorname{tr}(\mathsf M_4(\tilde p)\mathsf M_4(\tilde q)^{\mathsf T})$ with Gram matrix the identity of signature $(4,0)$; the invariants are $\operatorname{tr}\mathsf M_4(\tilde q) = 4q_0$ and $\det\mathsf M_4(\tilde q) = N(\tilde q)^2$; the shell is the intersection of the image with $SO(4)$, the orthogonal matrix model of the unit sphere.
 
 ## Summary of Notation
 

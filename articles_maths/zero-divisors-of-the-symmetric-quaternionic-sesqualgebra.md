@@ -15,7 +15,7 @@ A divisor is relative to a product. The definition is stated once for a general 
 read on the products of the space; the unqualified word means the zero divisor of the block, and every
 other product is named. The four general products of the space share one zero-divisor set,
 $\{\tilde Q\neq0: c(\tilde Q)=0\}$ with $c(\tilde Q)=\sum_\mu Q_\mu^2$, a coincidence of the algebra proved
-in *The Zero Divisors and the Four General Products*; the block is a symmetric part of one of them and its
+in *The Zero Divisors and the Twelve Structures*; the block is a symmetric part of one of them and its
 set is **larger**, and the enlargement is the point of §*Comparison with the Four General Products*.
 
 The product itself, its two slot involutions and its two one-sided actions are
@@ -161,8 +161,7 @@ origin; the ranks are $8$ minus those dimensions. The computation of the operato
 ## Comparison with the Four General Products
 
 The four general products of $\mathbb{B}$ have one zero-divisor set,
-$\{\tilde Q\neq0:c(\tilde Q)=0\}$, where $c$ is the central square (*The Zero Divisors and the Four General
-Products*). The block's set contains it, and it contains more.
+$\{\tilde Q\neq0:c(\tilde Q)=0\}$, where $c$ is the central square (*The Zero Divisors and the Twelve Structures*). The block's set contains it, and it contains more.
 
 **Theorem (the block's set contains the general one).** Every zero divisor of a general product is a zero
 divisor of the block, and the inclusion is strict: the union of the block's two families is
@@ -276,7 +275,7 @@ $e_1$; the block has no unit, so the regular elements are the substitute for the
 ## Further Reading
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Zero Divisor and the Annihilator*, for the definition relative to a general product and for the dictionary of the classes against the four general products.
-- *The Zero Divisors and the Four General Products* (`articles_maths/the-zero-divisors-and-the-four-general-products.md`), for the single zero-divisor set of the four general products and the proof that the four definitions coincide.
+- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the single zero-divisor set of the four general products and the proof that the four definitions coincide.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the same class in the plain product, with the criterion, the two families and the annihilators.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, its class and its conjugate-commutativity.
 - *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md`), for the operators whose kernels are the annihilators.

@@ -5,7 +5,7 @@
 
 This article develops integration for functions of one dual variable. It follows *Dual-Numbers Analysis*, which fixed the dual plane, its Euclidean topology, dual differentiability and the dual Cauchy–Riemann equations, and it follows *Dual-Numbers Algebra* for the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$, the dual conjugation and the norm $N(A) = a^2$. The contour integral was introduced there as a definition; here it is developed as a subject in its own right, and the question addressed is exactly how much of the Cauchy theory survives when the coefficient ring has nilpotents and is not a field.
 
-The algebraic statements below hold over any commutative ring $R$, but the integral itself is an analytic object and requires a complete ordered field of coefficients. Throughout, therefore, the base is $\mathbb{R}$ and the algebra is $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$; the algebraic ingredients — the local structure, the group of units and the derivations — specialise to any such ring unchanged. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$ and $\mathbb{B}$, is the subject of *Hypercomplex Integration*, and the closest neighbouring case, where the coefficient ring has zero divisors but no nilpotents, is *Split-Complex Integration*.
+The algebraic statements below hold over any commutative ring $R$, but the integral itself is an analytic object and requires a complete ordered field of coefficients. Throughout, therefore, the base is $\mathbb{R}$ and the algebra is $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$; the algebraic ingredients — the local structure, the group of units and the derivations — specialise to any such ring unchanged. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and $\mathbb{D}$, is the subject of *Hypercomplex Integration*, and the closest neighbouring case, where the coefficient ring has zero divisors but no nilpotents, is *Split-Complex Integration*.
 
 Two algebraic facts govern everything that follows. First, $\mathbb{D}'$ is a **local ring**: it has the unique maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$, which is nilpotent of index two, $\mathrm{M}^2 = 0$, and the augmentation
 
@@ -561,10 +561,8 @@ What replaces the reconstruction half is the **derived** statement. A dual diffe
 ## Further Reading
 
 - Eduard Studa', *Geometrie der Dynamen* (Teubner, 1903), for the geometry of the dual numbers and their infinitesimal transformations.
-- William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the origin of the dual numbers in the biquaternion program.
 - Lars V. Ahlfors, *Complex Analysis* (McGraw–Hill, 3rd ed. 1979), for the classical Cauchy theory, residues and winding numbers with which the dual theory is compared.
 - Walter Rudin, *Real and Complex Analysis* (McGraw–Hill, 3rd ed. 1987), for the measure-theoretic foundation of the line and surface integrals used here.
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Cauchy–Goursat theorem, the Cauchy kernel and the residue theory of elliptic hypercomplex systems.
 - Lars Hörmander, *The Analysis of Linear Partial Differential Operators I* (Springer, 2nd ed. 1990), for the distinction between elliptic and non-elliptic operators and for fundamental solutions supported on characteristics.
 - Andreas Griewank and Andrea Walther, *Evaluating Derivatives* (SIAM, 2008), for the dual numbers as the coefficient algebra of forward-mode differentiation.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of the two-dimensional real algebras.

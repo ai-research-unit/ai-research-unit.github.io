@@ -110,7 +110,7 @@ $$
 \mathrm{Tr}\bigl(\tilde{Q}\tilde{Y}\bigr)=\tfrac12\,\mathrm{Tr}(\tilde{Q})\,\mathrm{Tr}(\tilde{Y})
 \quad\text{for all }\tilde{Y}\in\mathbb{B}.
 $$
-The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{Q}-\tfrac12\mathrm{Tr}(\tilde{Q})e_0)\tilde{Y}\bigr)=0$ for all $\tilde{Y}$, and the trace pairing is non-degenerate, so the bracket vanishes. The physical interpretation is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
+The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{Q}-\tfrac12\mathrm{Tr}(\tilde{Q})e_0)\tilde{Y}\bigr)=0$ for all $\tilde{Y}$, and the trace pairing is non-degenerate, so the bracket vanishes. The **physical interpretation** is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
 
 **5. The matrix-model characterization.** Under the representation, $Z(\mathbb{B})$ corresponds to the scalar matrices $\mathbb{C}I_2$; equivalently, these are the elements on which the left regular representation and the right regular representation coincide. This is the form in which the statement is standard: a full matrix algebra over a field has the field itself as its centre.
 

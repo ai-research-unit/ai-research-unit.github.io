@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The quaternion algebra is at once an associative algebra, a Lie algebra under the commutator bracket, and the tangent space at the identity of its group of units; the unit sphere is a compact Lie group, and the exponential map connects the three descriptions. This article develops that structure: the Lie algebra of $\mathbb{H}$ and its decomposition into a centre and an orthogonal part, the exponential map and its closed form, the surjectivity of the exponential onto the group of units, the polar split of the units into a positive scale and the unit sphere, the compact subgroup $Sp(1)$ and its parametrisation, and the relation to the rotations and reflections of the geometry slot. It is the quaternion member of the family's exponential-and-Lie-group pair; its counterpart is the biquaternion case, where the unit group is $GL_2(\mathbb{C})$ and the exponential is complex.
+The quaternion algebra is at once an associative algebra, a Lie algebra under the commutator bracket, and the tangent space at the identity of its group of units; the unit sphere is a compact Lie group, and the exponential map connects the three descriptions. This article develops that structure: the Lie algebra of $\mathbb{H}$ and its decomposition into a centre and an orthogonal part, the exponential map and its closed form, the surjectivity of the exponential onto the group of units, the polar split of the units into a positive scale and the unit sphere, the compact subgroup $Sp(1)$ and its parametrisation, and the relation to the rotations and reflections of the geometry slot.
 
 The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* for the algebra and the units, *The Scalar and Vector Subspaces of $\mathbb{H}$* for the decomposition, *Quaternion Rotations and Reflections* for the orthogonal actions, and *Quaternion Automorphisms and Derivations* for the derivation algebra, which is the Lie algebra computed here independently. The special functions are in *Quaternion Special Functions*.
 
@@ -159,28 +159,13 @@ for every $\tilde q\in\mathbb{H}$ and every $\mu\in\operatorname{Im}\mathbb{H}$;
 
 The identification of the adjoint action with the rotations of $\operatorname{Im}\mathbb{H}$, the half-angle rule, and the completion of the rotation group to the full orthogonal group by the orientation-reversing maps are the subject of *Quaternion Rotations and Reflections*; this article supplies the exponential and the adjoint identity that the geometry slot uses.
 
-## Comparison with the Biquaternion Case
-
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the same underlying multiplication but complex coefficients, so its Lie algebra is the complexification $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$, and its group of units is $GL_2(\mathbb{C})$.
-
-| Feature | $\mathbb{H}$ | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-|---|---|---|
-| Lie algebra | $\mathbb{R}\oplus\mathrm{SO}(3)$, real dimension $4$ | $\mathrm{GL}_2(\mathbb{C})$, complex dimension $4$ |
-| Exponential | surjective onto $\mathbb{H}^{\times}$ | surjective onto $GL_2(\mathbb{C})$ |
-| Closed form | $e^{q_0}(\cos\lvert\mathbf{q}\rvert+\mu\sin\lvert\mathbf{q}\rvert)$ | the same with complex $q_0,\mathbf{q}$ |
-| Group of units | $\mathbb{R}_{>0}\times S^3$, compact factor $S^3$ | $GL_2(\mathbb{C})$, non-compact, connected |
-| Maximal compact subgroup | $Sp(1)\cong SU(2)$ | $U(2)$ |
-| Rotation group from the adjoint action | $SO(3)$ | $PSL(2,\mathbb{C})$, the projective Lorentz group |
-
-The quaternion exponential is real and its unit group is the product of a line and a compact three-sphere; the biquaternion exponential is complex, its unit group is the non-compact $GL_2(\mathbb{C})$, and the adjoint action generates the projective Lorentz group rather than the rotation group. The reason is the same throughout: the quaternion norm is definite, so the unit sphere is compact and the one-parameter groups are circles, while the complex norm is indefinite, so the unit group is non-compact and the one-parameter groups include hyperbolic rotations. The biquaternion account is in *Biquaternion Lie Group and Exponential Structure*.
-
 ## Summary
 
 The quaternion algebra is a Lie algebra under the commutator bracket, with derived subalgebra the imaginary subspace and centre the real line, splitting as $\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3)$; it is reductive and not semisimple. The exponential has the closed form $\exp(q_0+\mathbf{q}) = e^{q_0}(\cos|\mathbf{q}|+\frac{\mathbf{q}}{|\mathbf{q}|}\sin|\mathbf{q}|)$, it satisfies $N(\exp \tilde q) = e^{2q_0}$, and it is surjective onto the group of units but not injective, with kernel the spheres of pure quaternions of radius $2\pi k$.
 
 The group of units splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$, and the unit sphere is the compact connected three-dimensional Lie group $Sp(1)\cong S^3\cong SU(2)$, the maximal compact subgroup; the polar and exponential forms of an element are the same decomposition, $\tilde q = e^{\alpha}\exp(\mu\theta)$ with $\mu$ a pure unit and $\theta\in[0,\pi]$, and the logarithm $\log \tilde q = \ln|\tilde q|+\mu\theta$ inverts the exponential off the negative real axis. The adjoint action of the exponential is the conjugation by its value, $\exp(t\operatorname{ad}_\mu) = \operatorname{Ad}_{e^{t\mu}}$, and the reading of this adjoint action as the rotations of the imaginary subspace is in *Quaternion Rotations and Reflections*.
 
-The biquaternion case replaces the definite norm by the indefinite complex one: the unit group becomes $GL_2(\mathbb{C})$, the maximal compact subgroup becomes $U(2)$, and the adjoint action generates the projective Lorentz group. The compactness of $Sp(1)$ and the circularity of its one-parameter subgroups are exactly what the definite quaternion norm buys.
+The compactness of $Sp(1)$ and the circularity of its one-parameter subgroups are exactly what the definite quaternion norm buys.
 
 ## Summary of Notation
 
@@ -199,7 +184,6 @@ The biquaternion case replaces the definite norm by the indefinite complex one: 
 | $\log \tilde q = \ln\lvert \tilde q\rvert+\mu\theta$ | Logarithm, inverse off the negative axis |
 | $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{-1}$ | Adjoint action; $\exp(\operatorname{ad}_a) = \operatorname{Ad}_{\exp a}$ |
 | $O(3)$ | Orthogonal group of $\operatorname{Im}\mathbb{H}$, from *Quaternion Rotations and Reflections*, where $O(3) = \{\pm\operatorname{Ad}_u : u\in Sp(1)\}$ |
-| $GL_2(\mathbb{C}), U(2), PSL(2,\mathbb{C})$ | Biquaternion unit group, maximal compact, adjoint group |
 
 ## Further Reading
 

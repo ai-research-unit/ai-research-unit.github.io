@@ -364,7 +364,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 4. **Dynamics beyond the Dirac equation.** The framework contains the free Dirac equation and its coupling to electromagnetism. It does not contain the weak or strong interactions.
 
-5. **The measurement problem.** The framework contains the idempotent projection as a formal operation, but the physical interpretation of measurement is not specified.
+5. **The measurement problem.** The framework contains the idempotent projection as a formal operation, but the **physical interpretation** of measurement is not specified.
 
 So the correct statement is:
 

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-This article collects the **relations** between the two products $AC$ and $A\overline{C}$ and the **comparison** of their laws: each of the two products determines the other through the conjugation, the conjugation and the exchange of the two slots act differently on the two, the sum and the difference of the two values are the two coordinates of one of the factors, and a short list of identities holds for the one product and fails for the other. The comparison closes with the property table of the two products and with the collapse of the four tables of the four general products onto the two tables of these two. It is the two-dimensional companion of the property table of *Comparison Between the Four General Products*, and it is where the operational difference of the two products is stated in full.
+This article collects the **relations** between the two products $AC$ and $A\overline{C}$ and the **comparison** of their laws: each of the two products determines the other through the conjugation, the conjugation and the exchange of the two slots act differently on the two, the sum and the difference of the two values are the two coordinates of one of the factors, and a short list of identities holds for the one product and fails for the other. The comparison closes with the property table of the two products and with the collapse of the four tables of the four general products onto the two tables of these two. It is where the operational difference of the two products is stated in full.
 
-The two products and their structures are *The Two Products of the Split-Complex Space*, the article preceding this one; the collapse of the twelve codes and the dictionary of the four general products are *The Collapse of the Twelve Structures on the Split-Complex Numbers*; the associator, the ternary product, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complex Space*, both below this article in this category. The degree-two reading of the two products, that is the two forms and the two algebraic norms, is *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, and the products on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complex Space*. The four tables that collapse here are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the comparison of their laws is *Comparison Between the Four General Products*, with *Relations Between the Four General Products* for the identities that link the four.
+The two products and their structures are *The Two Products of the Split-Complex Space*, the article preceding this one; the collapse of the twelve structures and the dictionary of the four general products are *The Collapse of the Twelve Structures on the Split-Complex Numbers*; the associator, the ternary product, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complex Space*, both below this article in this category. The degree-two reading of the two products, that is the two forms and the two algebraic norms, is *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, and the products on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complex Space*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $A=a+ja'$; the conjugate is $\bar A=a-ja'$; the idempotents are $\Pi_{1,2}=\tfrac12(1\pm j)$, with $A=A_+\Pi_1+A_-\Pi_2$ and $A_\pm=a\pm a'$. The natural sign is the identity and the Hermitian conjugation coincides with the bar. In this article the ring product is written $A\cdot C$ where it must be told from the sesquilinear one.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $A=a+ja'$; the conjugate is $\bar A=a-ja'$; the idempotents are $\Pi_{1,2}=\tfrac12(1\pm j)$, with $A=A_+\Pi_1+A_-\Pi_2$ and $A_\pm=a\pm a'$. The Hermitian conjugation coincides with the bar. In this article the ring product is written $A\cdot C$ where it must be told from the sesquilinear one.
 
 ## The Products Determine Each Other
 
@@ -119,20 +119,20 @@ The row of the forms is the degree-two reading of the two products: the forms an
 
 ## The Collapse of the Four Tables
 
-The four general products of the biquaternion space each carry a property table, and their comparison is the table of *Comparison Between the Four General Products*. On the split-complex space the same collapse happens at the level of the tables: the four general products are $\mathrm{GPA}=\mathrm{GQA}=AC$ and $\mathrm{GPS}=\mathrm{GQS}=A\overline{C}$, so the four tables become two.
+The four general products each carry a property table, and on the split-complex space the collapse happens at the level of the tables: the settings with the conjugated first slot coincide with the plain ones, so the four tables become two.
 
 | family of the four general products | the table it carries on $\mathbb{D}$ |
 |---|---|
-| plain algebra $\mathrm{GPA},\mathrm{SPA},\mathrm{GQA},\mathrm{SQA}$ | the table of $AC$ |
-| plain sesqualgebra $\mathrm{GPS},\mathrm{SPS},\mathrm{GQS},\mathrm{SQS}$ | the table of $A\overline C$ |
+| the bilinear family | the table of $AC$ |
+| the sesquilinear family | the table of $A\overline C$ |
 
-The collapse of the tables is the collapse of the products themselves: the quaternionic table coincides with the plain one because the natural conjugation is the identity, and the symmetrised and antisymmetrised codes add no row because the algebra is commutative, the antisymmetrised ones vanishing and the symmetrised ones coinciding with the general. The count of the properties that hold is therefore two tables and not four, and the two that remain are the two columns of the table above. This is the two-dimensional companion of the property table of *Comparison Between the Four General Products*, and the whole of the collapse of the twelve codes is *The Collapse of the Twelve Structures on the Split-Complex Numbers*, below this article in this category.
+The collapse of the tables is the collapse of the products themselves: the table with the conjugated first slot coincides with the plain one because the first slot carries the identity, and the symmetrised and antisymmetrised products add no row because the algebra is commutative, the antisymmetrised ones vanishing and the symmetrised ones coinciding with the general. The count of the properties that hold is therefore two tables and not four, and the two that remain are the two columns of the table above. The whole of the collapse is *The Collapse of the Twelve Structures on the Split-Complex Numbers*, below this article in this category.
 
 ## Summary
 
 The two products of the split-complex space determine each other through the bar: $A\overline{C}=\overline{\bar AC}$ and $AC=\overline{\bar A\overline C}$. The bar conjugates the ring product term by term, $\overline{AC}=\bar A\bar C$, and conjugates the sesquilinear product with the second slot undone, $\overline{A\bar C}=\bar AC$. The plain exchange of the two slots leaves the ring product unchanged and conjugates the sesquilinear one; the conjugate exchange leaves both unchanged, which is the conjugate-symmetry of the sesquilinear product. The sum and the difference of the two values are $AC+A\bar C=2(\operatorname{Re}C)A$ and $AC-A\bar C=2(\operatorname{Im}C)\,jA$, so the two products agree exactly when the second factor is real or the first is zero.
 
-The comparison table lists the two columns: the ring product is bilinear, symmetric, associative, with a two-sided unit and a definite position in the forms; the sesquilinear product is conjugate-linear in the second slot, conjugate-symmetric, non-associative, with a right unit alone, and it is the second algebraic norm $N(A)=A\bar A$. The identities that hold for the one and fail for the other are read on the witnesses $A=C=1$, $D=j$ and $A=C=j$, and the only identity common to the two is the multiplicativity of the matrix model. The four tables of the four general products collapse to the two tables of these two, the two-dimensional companion of the property table of *Comparison Between the Four General Products*.
+The comparison table lists the two columns: the ring product is bilinear, symmetric, associative, with a two-sided unit and a definite position in the forms; the sesquilinear product is conjugate-linear in the second slot, conjugate-symmetric, non-associative, with a right unit alone, and it is the second algebraic norm $N(A)=A\bar A$. The identities that hold for the one and fail for the other are read on the witnesses $A=C=1$, $D=j$ and $A=C=j$, and the only identity common to the two is the multiplicativity of the matrix model. The four tables of the four general products collapse to the two tables of these two.
 
 ## Summary of Notation
 
@@ -145,7 +145,6 @@ The comparison table lists the two columns: the ring product is bilinear, symmet
 | $AC+A\bar C=2cA$, $AC-A\bar C=2c'jA$ | the sum and the difference, $c=\operatorname{Re}C$, $c'=\operatorname{Im}C$ |
 | $AC=A\bar C \iff C\in\mathbb{R}$ or $A=0$ | the agreement condition |
 | $\mathsf M_2(AC)=\mathsf M_2(A)\mathsf M_2(C)$, $\mathsf M_2(A\bar C)=\mathsf M_2(A)\mathsf M_2(\bar C)$ | $\mathsf M_2$ carries both products |
-| $\mathrm{GPA}=\mathrm{GQA}=AC$, $\mathrm{GPS}=\mathrm{GQS}=A\bar C$ | the four tables collapse to two |
 
 ## Further Reading
 

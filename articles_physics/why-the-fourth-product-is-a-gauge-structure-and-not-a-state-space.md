@@ -58,7 +58,7 @@ the **left** model of the ternary products of the algebra. The sibling sesquilin
 
 ### Why the Parity Is a Gateway
 
-The parity matters because of the standard reconstruction, and it is worth stating, since the physical interpretation turns on it. An **algebraic $J^{*}$-algebra** — a ternary product of one of the two models satisfying the Jordan triple identity — is the algebraic form of a **JB\*-triple**, and a JB\*-triple carries a state space: its predual carries the normal states, whose extreme points are the pure states, and the ternary product supplies the Jordan structure from which the cone, the transition probabilities and the dynamics are built. When the identity holds for a model, a ternary product of that model is a state space in the making. The fourth product has the parity, and its ternary product is the left model; the hypothesis that suggests itself is that it too carries a state space. The next section shows that it does not.
+The parity matters because of the standard reconstruction, and it is worth stating, since the **physical interpretation** turns on it. An **algebraic $J^{*}$-algebra** — a ternary product of one of the two models satisfying the Jordan triple identity — is the algebraic form of a **JB\*-triple**, and a JB\*-triple carries a state space: its predual carries the normal states, whose extreme points are the pure states, and the ternary product supplies the Jordan structure from which the cone, the transition probabilities and the dynamics are built. When the identity holds for a model, a ternary product of that model is a state space in the making. The fourth product has the parity, and its ternary product is the left model; the hypothesis that suggests itself is that it too carries a state space. The next section shows that it does not.
 
 ## The Identity Fails
 
@@ -135,7 +135,7 @@ Four further readings of the no-go are recorded here, each under a name of its o
 ## The Limits
 
 - The article does not claim that the fourth product is a gauge theory; it claims that the fourth product is a structure of transformations with an indefinite invariant metric and no positivity, and it names that structure a gauge structure by analogy with the standard division between transformations and states.
-- The failure of the Jordan triple identity is a negative result: it removes a candidate, and it does not by itself supply a physical interpretation. The gauge interpretation is an interpretation of what remains.
+- The failure of the Jordan triple identity is a negative result: it removes a candidate, and it does not by itself supply a **physical interpretation**. The gauge interpretation is an interpretation of what remains.
 - The ternary product, the parity theorem and the witness are the mathematics' (*The Ternary Product and the Failure of the Jordan Triple Identity*, *The Sesquilinear Associator and the Ternary Product*), cited here and not re-proved.
 - No claim is made about the state space beyond the assignment of the states to the sesquilinear product, and none about a bracket of an internal gauge algebra being the physical one.
 

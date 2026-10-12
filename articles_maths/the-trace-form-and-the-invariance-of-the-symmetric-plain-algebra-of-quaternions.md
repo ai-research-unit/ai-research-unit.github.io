@@ -8,8 +8,6 @@ $$
 \tau(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p\bullet\tilde q\bigr),
 $$
 
-its polarisation, its Gram matrix and signature, its radical, its **invariance** under the operators of the Jordan product, and its comparison with the trace form of the biquaternion symmetric plain algebra.
-
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $\mathrm{Sc}$, the vector subspace is $\mathrm{Vect}(\mathbb{H})$, the norm is $N(\tilde q)=q_0^2+|\mathbf q|^2$, and the multiplication operator is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$ of *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category. The plain bilinear form $(\tilde p,\tilde q)\mapsto\mathrm{Sc}(\tilde p\tilde q)$ is *The 2 Forms over the Quaternion $\mathbb{R}$ Space*.
@@ -87,19 +85,6 @@ $$
 *Proof.* The trace form is associative, so for a derivation $D$, $0=D\,\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(D(\tilde p\bullet\tilde q),\tilde r)+\tau(\tilde p\bullet\tilde q,D\tilde r)$; expanding the derivation rule and using the associativity of $\tau$ twice gives $\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$. The derivations are *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category, and the statement is the general invariance of the trace form of a Jordan algebra quoted in *Jordan Algebras*.
 
 **Remark (the invariance is the content of the menu).** The menu comment of the block asks for "the trace form and its invariance under the operators of the Jordan product": the **operators** are the left multiplications $L^{\bullet}_{\tilde p}$ and the inner derivations they generate, and the invariance is the pair of identities $\tau(L^{\bullet}_{\tilde p}\tilde q,\tilde r)=\tau(\tilde q,L^{\bullet}_{\tilde p}\tilde r)$ and $\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$. **The self-adjointness is what makes the form the trace form, and the skewness of the derivations is what makes it the invariant form of the block.**
-
-## The Comparison with the Biquaternion Case
-
-| | the symmetric plain algebra of $\mathbb{H}$ | the biquaternion symmetric plain algebra |
-|---|---|---|
-| the form | $\tau(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$ | $\tau(\tilde P,\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$, complex-valued |
-| Gram matrix | $\operatorname{diag}(1,-1,-1,-1)$ | $\operatorname{diag}(1,-1,-1,-1)$ over $\mathbb{C}$ |
-| signature | $(1,3)$ real | the complex analogue |
-| radical | $0$ | $0$ |
-| associativity | $\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$ | the same identity |
-| invariances | operators self-adjoint, derivations skew | the same identities |
-
-**Remark (what the field changes).** The trace form of the block is the restriction of the plain bilinear form to the Jordan product, and it has the same shape over $\mathbb{R}$ and over $\mathbb{C}$: the Gram matrix, the radical and the two invariances are unchanged, and they are the form part of the degree-two Common Theory of *The Two General Products of an Algebra with Involution*. What the field changes is the interpretation of the isotropy: over $\mathbb{R}$ the form is Lorentzian and the isotropic cone is the light cone of signature $(1,3)$; over $\mathbb{C}$ the corresponding complex form is degenerate-on-the-real-structure in the way that the biquaternion form is. The biquaternion trace form is *The Trace Form and the Invariance of the Symmetric Plain Algebra* of the biquaternion chapter.
 
 ## Summary
 

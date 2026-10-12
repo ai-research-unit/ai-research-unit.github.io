@@ -159,7 +159,6 @@ The connectedness locus is the square $\varphi^{-1}([-2,\frac14]\times[-2,\frac1
 ## Further Reading
 
 - I. M. Yaglom, *Complex Numbers in Geometry* (Academic Press, New York, 1968), for the split-complex (hyperbolic) numbers and their idempotent decomposition.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the classification of the two-dimensional real algebras.
 - Benoit B. Mandelbrot, "On the quadratic mapping $z \mapsto z^2-\mu$", *Physica D* 7 (1983), 224–239, for the quadratic family in the complex case.
 - Robert L. Devaney, *An Introduction to Chaotic Dynamical Systems*, 2nd edition (Addison-Wesley, 1989), for the real quadratic family and its interval of bounded orbits.
 - Paul Blanchard, Robert L. Devaney and Linda Keen, *Complex Dynamics and Related Topics* (Prentice Hall, 2004), for the quadratic family and its parameter space.

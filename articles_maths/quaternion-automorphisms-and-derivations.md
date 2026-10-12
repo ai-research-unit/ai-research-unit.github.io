@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Two invariants of an algebra are its group of automorphisms and its Lie algebra of derivations, and for the quaternion algebra both can be computed completely: the automorphism group is the rotation group of the imaginary subspace, and the derivation algebra is the imaginary subspace itself under the commutator bracket. This article establishes those identifications, computes the dimensions, and links the two by the exponential. It is the quaternion member of the family's automorphism-and-derivation pair; its counterpart is the biquaternion case, where the same questions are answered by the projective Lorentz group and by $\mathrm{SO}(1,3)$, and where the distinction between the complex and the real ground field is decisive. Here the ground field is $\mathbb{R}$ throughout, the algebra is central simple over it, and there is no conjugate-linear coset to add.
+Two invariants of an algebra are its group of automorphisms and its Lie algebra of derivations, and for the quaternion algebra both can be computed completely: the automorphism group is the rotation group of the imaginary subspace, and the derivation algebra is the imaginary subspace itself under the commutator bracket. Here the ground field is $\mathbb{R}$ throughout, and the algebra is central simple over it.
 
 The article uses *Quaternion Algebra* for the algebra and its centre, *Quaternion Ideals and Simplicity* for the central-simplicity of $\mathbb{H}$ over $\mathbb{R}$, *Quaternion Norm and Invertibility* for the unit group, and *Quaternion Rotations and Reflections* for the identification of the unit sphere with the rotation group.
 
@@ -101,31 +101,13 @@ and it is the Lie algebra of the automorphism group: $\operatorname{Lie}\operato
 
 *Proof.* The dependence only on the class modulo the centre is the kernel of $\operatorname{ad}$; the exponential statement is the identity quoted in the theorem.
 
-## Contrast with the Biquaternion Case
-
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is central simple over $\mathbb{C}$ but only simple, not central, over $\mathbb{R}$, and the difference changes both invariants.
-
-**Over $\mathbb{C}$.** Every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, and $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong GL_2(\mathbb{C})/\mathbb{C}^{*} = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$, a complex group of dimension $3$, the projective Lorentz group; its derivation algebra is $\mathrm{SL}(2,\mathbb{C})$, of complex dimension $3$.
-
-**Over $\mathbb{R}$.** The centre is $\mathbb{C}_{\mathbb{B}}\cong\mathbb{C}$, which has a non-trivial real automorphism, complex conjugation; consequently $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})\cong PGL(2,\mathbb{C})\rtimes\mathbb{Z}/2$, with two connected components and real dimension $6$, the second coset consisting of the conjugate-linear automorphisms.
-
-| Feature | $\mathbb{H}$ over $\mathbb{R}$ | $\mathbb{B}$ over $\mathbb{C}$ | $\mathbb{B}$ over $\mathbb{R}$ |
-|---|---|---|---|
-| Centre | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{C}$ |
-| Central simple? | yes | yes | no |
-| Automorphism group | $SO(3)$, dimension $3$ | $PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$, dimension $3$ over $\mathbb{C}$ | $PGL(2,\mathbb{C})\rtimes\mathbb{Z}/2$, dimension $6$ |
-| Derivation algebra | $\mathrm{SO}(3)\cong\mathrm{SU}(2)$, dimension $3$ | $\mathrm{SL}(2,\mathbb{C})$, dimension $3$ over $\mathbb{C}$ | $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\cong\mathrm{SO}(1,3)$ |
-| Conjugate-linear coset | none | none | present |
-
-The compact group $SO(3)$ here is replaced there by the non-compact projective Lorentz group; the reason is the change of the norm from definite to indefinite under complexification, which turns the rotation group into the Lorentz group while leaving both groups of dimension three over their respective fields. The conjugate-linear coset appears only over $\mathbb{R}$, where the centre $\mathbb{C}$ is larger than the base field. No such coset exists here, because the centre of $\mathbb{H}$ is $\mathbb{R}$ itself. The biquaternion account is in *Biquaternion Automorphisms and Derivations*.
-
 ## Summary
 
-Every $\mathbb{R}$-algebra automorphism of the quaternion algebra is inner, by Skolem–Noether applied to the central simple algebra $\mathbb{H}$, and the inner automorphisms form the group $Sp(1)/\{\pm1\}\cong SO(3)$ of rotations of the imaginary subspace; the group is connected and compact, diffeomorphic to $\mathbb{RP}^3$, of dimension three, and the anti-automorphism of quaternion conjugation is not among its elements. There is no conjugate-linear coset, because the centre $\mathbb{R}$ has no non-trivial automorphism.
+Every $\mathbb{R}$-algebra automorphism of the quaternion algebra is inner, by Skolem–Noether applied to the central simple algebra $\mathbb{H}$, and the inner automorphisms form the group $Sp(1)/\{\pm1\}\cong SO(3)$ of rotations of the imaginary subspace; the group is connected and compact, diffeomorphic to $\mathbb{RP}^3$, of dimension three, and the anti-automorphism of quaternion conjugation is not among its elements. There is no further coset of automorphisms, because the centre $\mathbb{R}$ has no non-trivial automorphism.
 
 Every derivation of $\mathbb{H}$ is inner, so $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\mathbb{H}/\mathbb{R}e_0\cong\operatorname{Im}\mathbb{H}$, a three-dimensional real Lie algebra with basis $D_k = \tfrac12\operatorname{ad}_{e_k}$ and brackets $[D_1,D_2] = D_3$ and cyclic; under the bracket $[\mathbf q,\mathbf p] = 2(\mathbf q\times\mathbf p)$ it is $\mathrm{SO}(3)\cong\mathrm{SU}(2)$, and $\exp(t\operatorname{ad}_a) = \iota_{e^{ta}}$ identifies it as the Lie algebra of the automorphism group.
 
-The biquaternion algebra, being central simple only over $\mathbb{C}$ and having centre $\mathbb{C}$ over $\mathbb{R}$, has the projective Lorentz group $PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$ as its complex automorphism group, with a conjugate-linear second coset over $\mathbb{R}$ and the derivation algebra $\mathrm{SL}(2,\mathbb{C})$, realified to $\mathrm{SO}(1,3)$. The definite norm of $\mathbb{H}$ is what keeps its two groups compact, and the absence of a conjugate-linear coset is the smallness of its centre.
+The definite norm of $\mathbb{H}$ is what keeps its two groups compact, and the smallness of its centre leaves no further coset of automorphisms.
 
 ## Summary of Notation
 
@@ -143,8 +125,6 @@ The biquaternion algebra, being central simple only over $\mathbb{C}$ and having
 | $D_k = \tfrac12\operatorname{ad}_{e_k}$ | Basis with $[D_1,D_2] = D_3$ and cyclic |
 | $[\mathbf q,\mathbf p] = 2(\mathbf q\times\mathbf p)$ | Bracket on $\operatorname{Im}\mathbb{H}$ |
 | $\mathrm{SO}(3)\cong\mathrm{SU}(2)$ | Orthogonal and special unitary Lie algebras |
-| $PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$ | Biquaternion automorphism group over $\mathbb{C}$ |
-| $\mathrm{SL}(2,\mathbb{C})$, $\mathrm{SO}(1,3)$ | Biquaternion derivation algebras |
 
 ## Further Reading
 

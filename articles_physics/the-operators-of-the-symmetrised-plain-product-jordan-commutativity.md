@@ -500,7 +500,7 @@ labelled as such.
 
 The operators of the symmetrised plain product read as one family rather than two, and the interpretation of their
 collapse is the band's job word. Where the general plain block has two distinct families and an adjoint that
-exchanges them, here the commutativity of the composition makes them one, and the physical interpretation is that an
+exchanges them, here the commutativity of the composition makes them one, and the **physical interpretation** is that an
 order-free composition has no orientation: nothing distinguishes an attachment on the left from one on the
 right, and no transport can distinguish them either. The trace form is the scalar part of the product itself,
 invariant and indefinite, and its adjoint is the identity on the family; the interpretation of the invariance is that

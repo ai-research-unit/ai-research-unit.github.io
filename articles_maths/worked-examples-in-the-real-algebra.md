@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article is the computed companion to the algebraic articles of the real algebra. Where *Real Algebra* states the definitions and proves the general properties, the present article exhibits them on explicit elements, so that the general statements can be read against a concrete computation: the field operations, the sole involution and its fixed-point subspace, the associated direct-sum decompositions, and the order with its Archimedean and completeness consequences. It is the first rung of the ladder that the worked-example articles of the complex, quaternion and biquaternion algebras continue.
+This article is the computed companion to the algebraic articles of the real algebra. Where *Real Algebra* states the definitions and proves the general properties, the present article exhibits them on explicit elements, so that the general statements can be read against a concrete computation: the field operations, the sole involution and its fixed-point subspace, the associated direct-sum decompositions, and the order with its Archimedean and completeness consequences. It is the first rung of the ladder that the worked-example articles of the higher algebras continue.
 
 The elements used throughout are
 
@@ -47,7 +47,7 @@ and $c^2 = (-c)^2$ although $c \neq -c$: the square forgets the sign while the e
 
 The real algebra carries one involution, the identity.
 
-**The identity.** $\operatorname{id}(c) = c = -\tfrac{3}{4}$ and $\operatorname{id}(d) = d = \tfrac{7}{2}$. The identity fixes every element, and it is the only involution of $\mathbb{R}$: an $\mathbb{R}$-algebra involution is a field automorphism of $\mathbb{R}$, and there is no nontrivial one, so there is no analogue here of the conjugation of $\mathbb{C}$ or of the quaternion conjugation of $\mathbb{H}$ and $\mathbb{B}$. The absence is the mathematical content of the unitary case.
+**The identity.** $\operatorname{id}(c) = c = -\tfrac{3}{4}$ and $\operatorname{id}(d) = d = \tfrac{7}{2}$. The identity fixes every element, and it is the only involution of $\mathbb{R}$: an $\mathbb{R}$-algebra involution is a field automorphism of $\mathbb{R}$, and there is no nontrivial one, so there is no analogue here of the conjugation of $\mathbb{C}$. The absence is the mathematical content of the unitary case.
 
 It is an involution, $\operatorname{id}(\operatorname{id}(a)) = a$ for every $a$, and the relation is immediate because $\operatorname{id}$ is the identity map.
 
@@ -137,16 +137,16 @@ and the non-negative root of the first is the absolute value of $c$ although $c$
 
 ## The Place in the Ladder
 
-The real algebra is the first rung of the tensor ladder $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$ of the corpus, and every structure computed above is the one-dimensional case of a structure that the higher rungs enrich.
+The real algebra is the first rung of the tensor ladder $\mathbb{R}, \mathbb{C}$ of the corpus, and every structure computed above is the one-dimensional case of a structure that the higher rungs enrich.
 
-| structure | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{H}$ | $\mathbb{B}$ |
-|---|---|---|---|---|
-| involution | identity only | complex conjugation | quaternion conjugation | quaternion and complex |
-| fixed subspace | the whole algebra | the real line | the real line | Hermitian subspace |
-| anti-fixed subspace | $\{0\}$ | the imaginary line | the pure quaternions | anti-Hermitian subspace |
-| nonzero elements invertible | yes, a field | yes, a field | yes, a division algebra | no, there are zero divisors |
+| structure | $\mathbb{R}$ | $\mathbb{C}$ |
+|---|---|---|
+| involution | identity only | complex conjugation |
+| fixed subspace | the whole algebra | the real line |
+| anti-fixed subspace | $\{0\}$ | the imaginary line |
+| nonzero elements invertible | yes, a field | yes, a field |
 
-The real column is the base case that the other worked-example articles continue: *Worked Examples in the Complex Algebra* adds the nontrivial conjugation and the circle, *Worked Examples in the Split-Quaternion Algebra* adds the indefinite form and its two regimes. Each of them reuses the algebraic identities computed here — commutativity, the triviality of the involution decomposition, and the invertibility of every nonzero element — in the case where the involution is no longer trivial and the algebra is no longer a field.
+The real column is the base case that the other worked-example articles continue: *Worked Examples in the Complex Algebra* adds the nontrivial conjugation and the circle. It reuses the algebraic identities computed here — commutativity, the triviality of the involution decomposition, and the invertibility of every nonzero element — in the case where the involution is no longer trivial and the algebra is no longer a field.
 
 ## Summary
 
@@ -154,7 +154,7 @@ On the worked pair $c = -\tfrac{3}{4}$ and $d = \tfrac{7}{2}$ the real algebra i
 
 The only involution is the identity, so its fixed-point subspace is the whole algebra and its anti-fixed subspace is $\{0\}$; the involution decomposition is the trivial $\mathbb{R} = \mathbb{R}_{\mathbb{R}} \oplus \{0\}$. Both worked elements are units — their inverses are the field inverses $c^{-1} = -\tfrac{4}{3}$ and $d^{-1} = \tfrac{2}{7}$ — and $0$ is the only non-unit, the concrete form of the field property.
 
-On the order, the worked pair straddles the origin, the Archimedean witness for $\lvert c\rvert$ against $\lvert d\rvert$ is $n = 5$, and the completeness axiom is checked on the bounded sets $\{c,0,d\}$ and $\{\tfrac{n}{n+1}\}$, whose suprema are $\tfrac{7}{2}$ and $1$. The article is the first rung of the ladder continued by the complex, quaternion and biquaternion worked-example articles.
+On the order, the worked pair straddles the origin, the Archimedean witness for $\lvert c\rvert$ against $\lvert d\rvert$ is $n = 5$, and the completeness axiom is checked on the bounded sets $\{c,0,d\}$ and $\{\tfrac{n}{n+1}\}$, whose suprema are $\tfrac{7}{2}$ and $1$. The article is the first rung of the ladder continued by the worked-example article of the complex algebra.
 
 ## Summary of Notation
 
@@ -175,4 +175,3 @@ On the order, the worked pair straddles the origin, the Archimedean witness for 
 - Walter Rudin, *Principles of Mathematical Analysis*, 3rd edition (McGraw-Hill, 1976), for worked computations with suprema, roots and the density of the rationals.
 - Israel Nathan Herstein, *Topics in Algebra*, 2nd edition (Wiley, 1975), for field computations and the invertibility of the nonzero elements.
 - John B. Fraleigh, *A First Course in Abstract Algebra*, 7th edition (Addison–Wesley, 2003), for concrete field computations and the order of a field.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the place of the real algebra in the ladder of the division algebras.

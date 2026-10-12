@@ -174,7 +174,7 @@ The structural refinement is not part of the paper's criterion, and the paper do
 
 ### What the framework adds
 
-**1. A natural algebraic home for the criterion.** The operational criterion — count the idempotents applied to the two partitions — is the framework's reversible/irreversible dichotomy, applied to non-separable states. The framework already distinguishes unitary from idempotent acting elements for independent reasons, and the operational criterion emerges as the physical interpretation of this algebraic distinction in the specific setting of non-separability.
+**1. A natural algebraic home for the criterion.** The operational criterion — count the idempotents applied to the two partitions — is the framework's reversible/irreversible dichotomy, applied to non-separable states. The framework already distinguishes unitary from idempotent acting elements for independent reasons, and the operational criterion emerges as the **physical interpretation** of this algebraic distinction in the specific setting of non-separability.
 
 **2. A structural reason for the criterion.** The framework suggests that the count of idempotents reflects whether the non-separable element is fundamental (quantum) or derived (classical). This is not required by the operational criterion, and the criterion does not depend on it, but it gives the criterion a structural interpretation in terms of the material/informational split of the algebra.
 

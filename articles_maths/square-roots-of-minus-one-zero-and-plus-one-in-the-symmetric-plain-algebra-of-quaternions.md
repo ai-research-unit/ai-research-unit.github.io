@@ -10,8 +10,6 @@ $$
 \Sigma_{+}=\{\tilde\xi : \tilde\xi\bullet\tilde\xi=+e_0\},
 $$
 
-relates them to the idempotents, and compares them with the plain algebra and with the biquaternion case.
-
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\mathbf q|^2$, the vector subspace is $\mathrm{Vect}(\mathbb{H})$, the unit sphere is $Sp(1)=S^3=\{N=1\}$, and the unit group is $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$. These are those of *Norm and Invertibility in the General Plain Algebra* and *Introduction to the Remarkable Subspaces of the Quaternions*.
@@ -84,26 +82,11 @@ $$
 
 *Proof.* Expand with the quadratic identity or directly in the plain product: $\tilde\pi^2=\tilde\pi$ is equivalent to $4\tilde\pi^2-4\tilde\pi+e_0=e_0$, that is to $(2\tilde\pi-e_0)^2=e_0$.
 
-**Corollary.** Since $\Sigma_{+}=\{\pm e_0\}$, the idempotents are $\tilde\pi=\tfrac12(e_0+e_0)=e_0$ and $\tilde\pi=\tfrac12(e_0-e_0)=0$: the two trivial idempotents. The correspondence is the reason **the idempotent count on a degree-two block equals the root count of $+e_0$**, and it is why the biquaternion block, whose root set of $+e_0$ is a large family, has many idempotents, while the real block has none but the trivial two. The idempotents and their degeneracy are *The Specificities of the Symmetric Plain Algebra*, below this article in this category and *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, below this article in this category.
-
-## The Comparison with the Plain Algebra and with the Biquaternion Case
-
-**Proposition.** The three root sets of the block are the three root sets of the plain algebra of the same space.
-
-*Proof.* The square of the block is the plain square, so the equation $\tilde\xi\bullet\tilde\xi=\lambda e_0$ is the equation $\tilde\xi^2=\lambda e_0$ and the solutions are the same. The plain root sets are computed in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, where the sphere of roots of $-1$, the single root of $0$ and the two roots of $+1$ are established by the factorisation argument.
-
-**Remark (the comparison with the biquaternion case).** The root sets cease to agree with those of the block as soon as the coefficient field is enlarged. Over $\mathbb{C}$ the factorisation argument of the roots of $+1$ fails for lack of division, the root set of $-1$ acquires further sheets with complex coordinates, and from those extra roots the nontrivial idempotents $\tfrac12(1+\tilde\Xi i)$ are built. The biquaternion root sets are computed in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* of the biquaternion chapter; the table is reproduced here for the contrast.
-
-| algebra | roots of $-e_0$ | roots of $0$ | roots of $+e_0$ |
-|---|---|---|---|
-| $\mathbb{H}$ (plain and symmetric plain) | the pure unit elements, $S^2$ | $\{0\}$ | $\{\pm e_0\}$ |
-| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | a two-dimensional family together with further complex sheets | the isotropic cone of the norm, together with $0$ | the roots $\tilde\Xi i$ built from the pure roots, including $\pm\mu i$ for a pure unit $\mu$ |
-
-**Remark (why the real root sets are the small ones).** Each extra root over $\mathbb{C}$ is bought with the loss of division: the sphere of roots of $-1$ over $\mathbb{R}$ is compact and the set of roots of $+1$ is finite, while over $\mathbb{C}$ the roots of $-1$ spread over complex sheets and the roots of $+e_0$ acquire a continuum from which the idempotents are made. **The passage from $\mathbb{R}$ to $\mathbb{C}$ is the passage from the definite norm to the isotropic one, and it is the isotropic norm that makes the biquaternion idempotents exist.**
+**Corollary.** Since $\Sigma_{+}=\{\pm e_0\}$, the idempotents are $\tilde\pi=\tfrac12(e_0+e_0)=e_0$ and $\tilde\pi=\tfrac12(e_0-e_0)=0$: the two trivial idempotents. The idempotents and their degeneracy are *The Specificities of the Symmetric Plain Algebra*, below this article in this category and *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, below this article in this category.
 
 ## Summary
 
-The square of the block is the plain square, so the equation $\tilde\xi\bullet\tilde\xi=\lambda e_0$ reduces to the pair $2\xi_0\boldsymbol{\xi}=0$, $\xi_0^2-|\boldsymbol{\xi}|^2=\lambda$, and the three central root sets are: $\Sigma_{-}=\{\tilde\xi\in\mathrm{Vect}(\mathbb{H}):N(\tilde\xi)=1\}$, the unit sphere of the vector subspace, of real dimension two and a single conjugacy class of the unit group; $\Sigma_{0}=\{0\}$, so the block has no nonzero nilpotent although it has zero divisors; and $\Sigma_{+}=\{\pm e_0\}$, the two-point class that realises the centre of the unit sphere. The idempotents correspond to the roots of $+e_0$ under $\tilde\pi\mapsto2\tilde\pi-e_0$, so they are only $0$ and $e_0$. The three sets are identical with those of the plain algebra of the same space, because the square is identical; over $\mathbb{C}$ the roots of $-1$ acquire complex sheets, the roots of $0$ become the isotropic cone, and the roots of $+e_0$ become a family from which the nontrivial biquaternion idempotents are built.
+The square of the block is the plain square, so the equation $\tilde\xi\bullet\tilde\xi=\lambda e_0$ reduces to the pair $2\xi_0\boldsymbol{\xi}=0$, $\xi_0^2-|\boldsymbol{\xi}|^2=\lambda$, and the three central root sets are: $\Sigma_{-}=\{\tilde\xi\in\mathrm{Vect}(\mathbb{H}):N(\tilde\xi)=1\}$, the unit sphere of the vector subspace, of real dimension two and a single conjugacy class of the unit group; $\Sigma_{0}=\{0\}$, so the block has no nonzero nilpotent although it has zero divisors; and $\Sigma_{+}=\{\pm e_0\}$, the two-point class that realises the centre of the unit sphere. The idempotents correspond to the roots of $+e_0$ under $\tilde\pi\mapsto2\tilde\pi-e_0$, so they are only $0$ and $e_0$.
 
 ## Summary of Notation
 

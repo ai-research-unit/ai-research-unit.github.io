@@ -153,7 +153,6 @@ The split plane carries the Lorentzian form $N(z) = a^2-a'^2$ of signature $(1,1
 ## Further Reading
 
 - I. M. Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the split-complex (hyperbolic) plane and its Lorentzian structure.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the two-dimensional real algebras and their forms.
 - Kenneth Falconer, *Fractal Geometry: Mathematical Foundations and Applications*, 3rd edition (Wiley, 2014), for the product rule for the Hausdorff dimension.
 - John Milnor, *Dynamics in One Complex Variable*, 3rd edition (Princeton University Press, 2006), for the multiplier map and the hyperbolic components of the Mandelbrot set.
 - Michael F. Barnsley, *Fractals Everywhere*, 2nd edition (Academic Press, 1993), for the product self-similarity and the dimension of a product.

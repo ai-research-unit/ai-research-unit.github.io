@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article studies the norm of the complex algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its unique nontrivial involution and its two distinguished subspaces. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units and its polar split. The complex algebra is the definite two-dimensional member of the tensor family and the base case of the polar series, and the article collects the facts that the other members of the family generalise.
+This article studies the norm of the complex algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its unique nontrivial involution and its two distinguished subspaces. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units and its polar split. The complex algebra is the definite two-dimensional member of the family of algebras and the base case of the polar series, and the article collects the facts that the other members of the family generalise.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$ with $a, a' \in \mathbb{R}$, and the involution is complex conjugation $\bar{A} = a - i a'$. The norm of a biquaternion $\tilde{Q}$ is written $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ in that article; here the same symbol is used for the complex norm $N(A) = A\bar{A}$, and the differences between the two are stated wherever they matter.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $1$, $i$ with $i^2 = -1$, a general element is $A = a + i a'$ with $a, a' \in \mathbb{R}$, and the involution is complex conjugation $\bar{A} = a - i a'$. The norm is $N(A) = A\bar{A}$.
 
 ## The Norm
 
@@ -24,7 +24,7 @@ $$
 - $N(A)$ is invariant under multiplication by the imaginary unit: $N(iZ) = (iZ)(\overline{iZ}) = (iZ)(-i\bar{A}) = A\bar{A} = N(A)$. There is no sign reversal, because the imaginary unit of $\mathbb{C}$ is not a coefficient scalar separate from the algebra.
 - $N(A) = 0$ if and only if $A = 0$. There are no nonzero complex numbers of vanishing norm; equivalently, the algebra has no zero divisors.
 
-The last point is the sharp difference from the biquaternion algebra, where the norm $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is complex-valued and can vanish on a nonzero element. The complex norm is a genuine positive-definite quadratic form.
+The complex norm is a genuine positive-definite quadratic form.
 
 ### Multiplicativity
 
@@ -44,11 +44,11 @@ Since $N(B)$ is a real number and the algebra is commutative, it commutes with $
 
 **Corollary.** If $N(A) \neq 0$ and $N(B) \neq 0$, then $N(AB) \neq 0$. Equivalently, the product of two units is a unit.
 
-The multiplicativity is used below to prove the invertibility criterion in one line, exactly as in the biquaternion case, and it is the source of the polar decomposition: the norm is the squared scale.
+The multiplicativity is used below to prove the invertibility criterion in one line, and it is the source of the polar decomposition: the norm is the squared scale.
 
 ### The Norm Is a Genuine Norm
 
-The name "norm" is not a misnomer here, in contrast with the biquaternion case. Define the **modulus**
+The name "norm" is not a misnomer here. Define the **modulus**
 
 $$
 |A| = \sqrt{N(A)} = \sqrt{a^2 + a'^2} \geq 0.
@@ -61,7 +61,7 @@ Then $|\cdot|$ satisfies the axioms of a norm on the real vector space $\mathbb{
 - **Triangle inequality:** $|A + B| \leq |A| + |B|$, which is the Cauchy–Schwarz inequality for the Euclidean inner product $(A,B) \mapsto \operatorname{Re}(\bar{A}B)$.
 - **Multiplicativity:** $|AB| = |A|\,|B|$, from the multiplicativity of the norm.
 
-The audit of the biquaternion semi-norm has no content here: the value is real, the vanishing locus is the origin alone, and the scaling axiom holds with a complex scalar. The complex norm is the base case against which the complex-valued and indefinite norms of the other members of the family are measured.
+The value is real, the vanishing locus is the origin alone, and the scaling axiom holds with a complex scalar. The complex norm is the definite base case of the norm series.
 
 ### The Norm from the Real Coordinates
 
@@ -71,7 +71,7 @@ $$
 N(A) = a^2 + a'^2,
 $$
 
-a positive-definite quadratic form on the coordinate space $\mathbb{R}^2$ of signature $(2,0)$. The two coordinates contribute with the same sign. In the biquaternion algebra the corresponding expression on the coefficient space is the complex quadratic form $\sum_\mu Q_\mu^2$, whose restriction to the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real-coefficient subalgebra of $\mathbb{B}$) is a sum of four squares and whose restrictions to the two sectors have opposite signatures. The complex algebra has no sector on which the sign reverses, because it has no independent coefficient field over which to reverse it: the norm is real throughout.
+a positive-definite quadratic form on the coordinate space $\mathbb{R}^2$ of signature $(2,0)$. The two coordinates contribute with the same sign, and the norm is real throughout.
 
 ## The Hermitian Form
 
@@ -83,7 +83,7 @@ $$
 A \bar{A} = a^2 + a'^2 .
 $$
 
-It is a real number, non-negative, and vanishes if and only if $A = 0$. Because $\mathbb{C}$ is commutative and ${}^{\natural}$ is its only nontrivial involution, the Hermitian form coincides with the norm. There are not two distinct objects here, as there are in the biquaternion algebra, where the Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is a biquaternion whose vector part need not vanish.
+It is a real number, non-negative, and vanishes if and only if $A = 0$. Because $\mathbb{C}$ is commutative and the bar is its only nontrivial involution, the Hermitian form coincides with the norm. There are not two distinct objects here.
 
 ### The Euclidean Norm
 
@@ -93,7 +93,7 @@ $$
 \|A\|_E = \sqrt{A\bar{A}} = \sqrt{a^2 + a'^2} = |A| .
 $$
 
-It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the complex product, because $|AB| = |A||B|$. This too is a difference from the biquaternion case, where the Euclidean norm $\|\tilde{Q}\|_E$ is a genuine norm on the underlying real space but is not multiplicative.
+It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the complex product, because $|AB| = |A||B|$.
 
 ### Relation Between the Norm and the Hermitian Form
 
@@ -102,7 +102,7 @@ The two forms are related as follows.
 - The **norm** $N(A) = A\bar{A} = a^2+a'^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the polar scale.
 - The **Hermitian form** $A\bar{A} = a^2+a'^2$ is the same expression. It controls the topological structure: the Euclidean norm, the topology of $\mathbb{C}$ as $\mathbb{R}^2$, and completeness.
 
-That the two coincide is a degeneracy of the commutative two-dimensional case. In the biquaternion algebra the norm is complex and indefinite while the Hermitian form has a non-negative scalar part, and the two carry genuinely different information; here the information collapses into one real positive-definite form. This is the same degeneracy that makes $\mathbb{C}$ the trivial example in the theory of composition algebras, and it is recorded here because the rest of the family separates the two.
+That the two coincide is a degeneracy of the commutative two-dimensional case. The information collapses into one real positive-definite form. This is the same degeneracy that makes $\mathbb{C}$ the trivial example in the theory of composition algebras.
 
 The **inner product** on $\mathbb{C}$ as a complex vector space is
 
@@ -146,7 +146,7 @@ $$
 
 so $A$ has an inverse. Conversely, if $A$ is invertible then applying the norm to $AB = 1$ and using multiplicativity gives $N(A)N(B) = N(1) = 1$, so $N(A) \neq 0$ and hence $A \neq 0$.
 
-The criterion $N(A) \neq 0$ is the general form; in $\mathbb{C}$ it is equivalent to the elementary statement $A \neq 0$ because the norm is definite. In the biquaternion algebra the two conditions differ, and $N(\tilde{Q}) = 0$ with $\tilde{Q} \neq 0$ is exactly the definition of a zero divisor.
+The criterion $N(A) \neq 0$ is equivalent to the elementary statement $A \neq 0$ because the norm is definite.
 
 ### The Inverse Formula
 
@@ -190,7 +190,6 @@ It is a group under multiplication with identity $1$.
 
 ### Basic Properties
 
-- **Abelian.** Every two elements commute, because the algebra is commutative. The centre of $\mathbb{C}^\times$ is therefore the whole group, in contrast with $\mathbb{B}^\times \cong GL(2,\mathbb{C})$, whose centre is the scalars $\mathbb{C}^\times$.
 - **Open and dense.** $\mathbb{C}^\times$ is the complement of the single point $0$, hence open and dense in $\mathbb{C}$; its complement is the point $\{0\}$, of real dimension $0$.
 - **Connected and non-compact.** $\mathbb{C}^\times$ is path-connected, and it is not compact since it is unbounded; it has one component, where $\mathbb{D}^\times$ has four.
 - **Infinite.** $\mathbb{C}^\times$ is uncountable and contains the infinite cyclic group of powers of any non-root-of-unity element.
@@ -224,7 +223,7 @@ because for a unit $u$ one has $u^{-1} = \bar{u}$. Inversion therefore inverts t
 
 ## The Three-Way Classification
 
-An element of a finite-dimensional real algebra of the tensor family is of one of three kinds: a unit, a zero divisor, or zero. The classes are read off from the norm.
+An element of a finite-dimensional real algebra is of one of three kinds: a unit, a zero divisor, or zero. The classes are read off from the norm.
 
 **Definition.** Let $A \in \mathbb{C}$. Then exactly one of the following holds:
 
@@ -238,7 +237,7 @@ An element of a finite-dimensional real algebra of the tensor family is of one o
 
 ### The Algebra Is a Division Algebra
 
-The emptiness of the zero-divisor class is the statement that $\mathbb{C}$ is a **division algebra**: every nonzero element is invertible, and there are no $A, B \neq 0$ with $AB = 0$. By the Frobenius theorem, $\mathbb{C}$ is one of exactly three finite-dimensional associative real division algebras, the others being $\mathbb{R}$ and the quaternions $\mathbb{H}$, and it is the only one that is commutative but not ordered. The three-way classification of the family is thus present here with its middle class empty; the biquaternion algebra has all three classes non-empty, its zero divisors being the nonzero points of the null cone $N(\tilde{Q}) = 0$.
+The emptiness of the zero-divisor class is the statement that $\mathbb{C}$ is a **division algebra**: every nonzero element is invertible, and there are no $A, B \neq 0$ with $AB = 0$. By the Frobenius theorem, $\mathbb{C}$ is one of exactly three finite-dimensional associative real division algebras, and it is the only one that is commutative but not ordered. The zero-divisor class is here empty.
 
 ## Distribution of the Invertible Elements
 
@@ -256,7 +255,7 @@ $$
 (i a')^{-1} = \frac{-i a'}{a'^2} = -\frac{1}{a'} i = -\frac{1}{a'} i \in i\mathbb{R}_{\mathbb{C}},
 $$
 
-so the inverse is again a real multiple of $i$. Hence $i\mathbb{R}_{\mathbb{C}} \setminus \{0\} \subset \mathbb{C}^\times$, and the imaginary subspace is also inversion-stable. This is a difference from the biquaternion algebra, where the anti-quaternion and anti-Hermitian subspaces contain zero divisors as well as units.
+so the inverse is again a real multiple of $i$. Hence $i\mathbb{R}_{\mathbb{C}} \setminus \{0\} \subset \mathbb{C}^\times$, and the imaginary subspace is also inversion-stable.
 
 ### Summary of the Distribution
 
@@ -281,7 +280,7 @@ $$
 N(i A) = N(A).
 $$
 
-This is the degeneracy of the Hermitian decomposition of the definite field. In the biquaternion algebra the two sectors carry opposite signatures, $(1,3)$ and $(3,1)$, because the central scalar imaginary there satisfies $N(i\tilde{Q}) = -N(\tilde{Q})$ and exchanges the sectors; here there is no central scalar imaginary separate from the algebra, so no sign reversal and no indefinite form occur. The distinction between the norm and the Hermitian form collapses together with the distinction between the two sectors: both are the single expression $A\bar{A}$.
+This is the degeneracy of the Hermitian decomposition of the definite field. No sign reversal and no indefinite form occur. The distinction between the norm and the Hermitian form collapses: both are the single expression $A\bar{A}$.
 
 ## The Base Case of the Norm Series
 
@@ -292,23 +291,9 @@ The norm series of the corpus records, for each algebra of the family, whether i
 | $\mathbb{R}$ | $a^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
 | $\mathbb{C}$ | $a^2+a'^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
 | $\mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$ | $\mathbb{R}$ | yes | $\{0\}$ |
-| $\mathbb{B}$ | $\sum_\mu Q_\mu^2$ | $\mathbb{C}$ | no | the null cone |
 | $\mathbb{H}_{\mathbb{D}}$ | $\sum_\mu Q_\mu^2$ | $\mathbb{D}$ | no | the elements whose norm is a zero divisor of $\mathbb{D}$ |
 
-The complex case is the second rung of the definite column: it adds the second square to the square of $\mathbb{R}$, the quaternion case adds the third and fourth, and the biquaternion case replaces the definite real form by an indefinite complex one. In every member the norm is multiplicative; the complex case is the instance $N(AB) = N(A)N(B)$ of that multiplicativity, and because the form is definite the vanishing locus stays a single point.
-
-## Comparison with the Quaternion and Biquaternion Cases
-
-The definite and indefinite cases of the family are:
-
-| algebra | norm | definite? | zero divisors | group of units |
-|---|---|---|---|---|
-| $\mathbb{C}$ | $a^2+a'^2$, real | yes | none | $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ |
-| $\mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$, real | yes | none | $\mathbb{H}^\times \cong \mathbb{R}_{>0} \times S^3$ |
-| $\mathbb{B}$ | $\sum_\mu Q_\mu^2$, complex-valued | no | the null cone | $\mathbb{B}^\times \cong GL(2,\mathbb{C})$ |
-| $\mathbb{H}_{\mathbb{D}}$ | $\sum_\mu Q_\mu^2$, split-complex-valued | no | $N(\tilde{Q})$ a nonzero zero divisor of $\mathbb{D}$ | $\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times \times \mathbb{H}^\times \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$ |
-
-The norm is real and definite in $\mathbb{C}$ and $\mathbb{H}$, and both are division algebras; the norm is complex-valued and indefinite in $\mathbb{B}$ and split-complex-valued and indefinite in $\mathbb{H}_{\mathbb{D}}$, and both have zero divisors; the zero divisors of $\mathbb{B}$ are the nonzero points of the null cone $N(\tilde{Q}) = 0$, while in $\mathbb{H}_{\mathbb{D}}$ the norm is anisotropic and the zero divisors are the elements whose norm is a nonzero zero divisor of $\mathbb{D}$. The unit group is compact modulo the non-compact scale in $\mathbb{C}$ and $\mathbb{H}$, and genuinely non-compact in the split cases. The complex algebra sits at the bottom of the definite column: the quaternion case adds the three-dimensional unit sphere $S^3$ in place of the circle $U(1)$, the biquaternion case replaces the definite norm by a complex one and the group of units by $GL(2,\mathbb{C})$, and the biquaternion norm restricts on the centre to the square $A^2$ rather than to $|A|^2$, which is the reason the complex norm corresponds to the Hermitian form of the larger algebra and not to its norm.
+The complex case is the second rung of the definite column: it adds the second square to the square of $\mathbb{R}$. The norm is multiplicative, $N(AB) = N(A)N(B)$, and because the form is definite the vanishing locus stays a single point.
 
 ## Summary
 
@@ -316,7 +301,7 @@ The norm of a complex number is $N(A) = A\bar{A} = a^2+a'^2$, real, positive-def
 
 A complex number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $A^{-1} = \bar{A}/N(A)$. On the worked pair $A = 3+4i$, $B = 1-2i$ the criterion gives $N(A) = 25$, $N(B) = 5$ and $N(AB) = 125$, with inverses $A^{-1} = (3-4i)/25$ and $B^{-1} = (1+2i)/5$. The zero-divisor class is empty, so $\mathbb{C}$ is a division algebra by the Frobenius theorem, and every nonzero element of each of the two distinguished subspaces is invertible.
 
-The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, open, dense, connected and non-compact, and it splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ into a positive scale and a phase, the product form of that splitting being $A = ru$. The norm is definite on both the real and the imaginary subspace with the same sign, so the opposite signatures of the biquaternion sectors do not occur; the only element of vanishing norm is the origin, which is why the complex norm is the definite base case of the norm series and the complex algebra the definite base case of the family.
+The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, open, dense, connected and non-compact, and it splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1)$ into a positive scale and a phase, the product form of that splitting being $A = ru$. The norm is definite on both the real and the imaginary subspace with the same sign, and the only element of vanishing norm is the origin, which is why the complex norm is the definite base case of the norm series and the complex algebra the definite base case of the family.
 
 ## Summary of Notation
 
@@ -338,8 +323,6 @@ The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, o
 ## Further Reading
 
 - Carl Friedrich Gauss, *Theoria residuorum biquadraticorum, Commentatio secunda* (Göttingen, 1831), for the norm and the modulus of a complex number.
-- William Kingdon Clifford, "Preliminary Sketch of Biquaternions", *Proceedings of the London Mathematical Society* **4** (1873) 381–395, for the norm of the complexified quaternions and the contrast with the definite case.
 - Israel Nathan Herstein, *Topics in Algebra*, 2nd edition (Wiley, 1975), for division algebras, inverses and the Frobenius theorem.
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for norms, invertibility in finite-dimensional algebras and the group of units.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of the real division algebras and the place of $\mathbb{C}$ among them.
 - Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the modulus, the Euclidean norm and the polar decomposition of a complex number.

@@ -18,9 +18,9 @@ $$
 
 which vanishes exactly when the third factor is real; the ternary product $\{A,C,D\} = A\bar C D$ restores the Jordan triple identity and makes $\mathbb{D}$ an algebraic $J^{*}$-algebra. The right multiplications $R_A$ generate the opposite monoid of the multiplicative monoid of $\mathbb{D}$, while the left ones $L_A$ do not close; the sandwich $A \mapsto BA\bar C$ decomposes into one ordinary and one sesquilinear multiplication and is adjoint to the sandwich with the parameters exchanged; and the commutator $A\bar C - C\bar A = 2(a'c - ac')j$ lies on the split imaginary line, its halved antisymmetrisation is the area form and its symmetrisation is the scalar form $ac - a'c'$ that the norm polarises. The bracket defined by the commutator satisfies the Jacobi identity.
 
-**Placement.** The article opens the split-complex general-plain-sesqualgebra block, after the general-plain-algebra block; the two products as a family and the collapse to two are *The Two Products of the Split-Complex Space*, and the synthesis of the two slots is *The Two Products of the Split-Complex Space and Their Two Slots*, below this article in this category. The form theory of the second slot — $H$ as a form on the regular module, the positivity cone, the modules and the Witt group — is *The Hermitian Form and the Cone of the Split-Complex Algebra*, below this article in this category. The multiply-unrelated material is *Split-Complex Algebra*, which owns the plain product, and *Split-Complex Norm and Invertibility*. The biquaternion counterparts are *Introduction to the General Plain Sesqualgebra of Biquaternions*, *The Left and Right Multiplications of the Biquaternion Sesqualgebra* and *The Sesquilinear Sandwich on the Biquaternions*, below this chapter.
+**Placement.** The article opens the split-complex general-plain-sesqualgebra block, after the general-plain-algebra block; the two products as a family and the collapse to two are *The Two Products of the Split-Complex Space*, and the synthesis of the two slots is *The Two Products of the Split-Complex Space and Their Two Slots*, below this article in this category. The form theory of the second slot — $H$ as a form on the regular module, the positivity cone, the modules and the Witt group — is *The Hermitian Form and the Cone of the Split-Complex Algebra*, below this article in this category. The multiply-unrelated material is *Split-Complex Algebra*, which owns the plain product, and *Split-Complex Norm and Invertibility*.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$, general element $A = a+ja'$, conjugate $\bar A = a-ja'$, idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$, idempotent coordinates $A_\pm = a\pm a'$. The product is written with a star, $A \star C = A\bar C$, and never with a bare juxtaposition, which is reserved for the plain product; the conjugation is never written as an operator symbol. The two involutions $\overline{\cdot}$ and ${}^{\natural}$ of *Conventions in Mathematics* coincide on $\mathbb{D}$, the natural sign being the identity because the coefficients are real, so the symbol $*$ of the general theory is realised here by the bar alone; the words **linear** and **conjugate-linear** are read over the ring $(\mathbb{D},\bar\cdot)$, in the sense of the two scalar rules below.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$, general element $A = a+ja'$, conjugate $\bar A = a-ja'$, idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$, idempotent coordinates $A_\pm = a\pm a'$. The product is written with a star, $A \star C = A\bar C$, and never with a bare juxtaposition, which is reserved for the plain product; the conjugation is never written as an operator symbol. The involution of the algebra is the bar, the coefficients being real and the idempotent swap coinciding with it, so the symbol $*$ of the general theory is realised here by the bar alone; the words **linear** and **conjugate-linear** are read over the ring $(\mathbb{D},\bar\cdot)$, in the sense of the two scalar rules below.
 
 ## The Product and Its Two Slots
 
@@ -126,9 +126,9 @@ $$
 
 so $\mathbb{D}$ with this ternary product is an **algebraic $J^{*}$-algebra**.
 
-**Proof.** The first clause is the two scalar rules read in the three slots. For the identity, expand both sides with $\{X,Y,Z\} = X\bar Y Z$: the left side is $A\bar C D\bar E F$, and the right side is $A\bar C D\bar E F - D\bar C A\bar E F + D\bar E A\bar C F$; the three terms are products of the six elements with the conjugation on the second factor of each triple, and the identity is the associativity of the plain product together with the commutativity of $\mathbb{D}$, which allow the terms $-D\bar C A\bar E F$ and $+D\bar E A\bar C F$ to cancel against the first. The verification is the model computation $xy^{*}z$ of an associative algebra with a sesquilinear involution, which is the standard example of an algebraic $J^{*}$-algebra; the general theorem is the one the biquaternion article quotes.
+**Proof.** The first clause is the two scalar rules read in the three slots. For the identity, expand both sides with $\{X,Y,Z\} = X\bar Y Z$: the left side is $A\bar C D\bar E F$, and the right side is $A\bar C D\bar E F - D\bar C A\bar E F + D\bar E A\bar C F$; the three terms are products of the six elements with the conjugation on the second factor of each triple, and the identity is the associativity of the plain product together with the commutativity of $\mathbb{D}$, which allow the terms $-D\bar C A\bar E F$ and $+D\bar E A\bar C F$ to cancel against the first. The verification is the model computation $xy^{*}z$ of an associative algebra with a sesquilinear involution, which is the standard example of an algebraic $J^{*}$-algebra; the general theorem is the one the general theory quotes.
 
-So the ternary product is the binary multiplication's surviving form: it is associative-like in the only sense available, since the binary product is not associative, and its identities hold where the binary ones fail. The biquaternion counterpart proves the same identity for the same model $PQ^{*}R$; the split case carries it in the same way, with the middle slot conjugated. The failure is the *associativity* of the binary product, recorded above; the ternary product repairs it.
+So the ternary product is the binary multiplication's surviving form: it is associative-like in the only sense available, since the binary product is not associative, and its identities hold where the binary ones fail. The same identity holds for the same model $PQ^{*}R$ here, with the middle slot conjugated. The failure is the *associativity* of the binary product, recorded above; the ternary product repairs it.
 
 ## The Left and Right Multiplications
 
@@ -171,7 +171,7 @@ where $M_B(X) = BX$ is the ordinary left multiplication. In particular $L_A \cir
 
 **Proof.** $L_A(L_C X) = A\overline{(C\bar X)} = A\bar C X = M_{A\bar C}(X)$.
 
-So the two one-sided families behave differently, and the asymmetry is the one of the general theory: the right family is a monoid, isomorphic to the opposite of the multiplicative monoid of the ring, while the left family is not closed and its products fall back into the ordinary multiplications. This is the split-complex form of the statement that the left and right multiplications fail to coincide and generate an opposite monoid. The biquaternion article *The Left and Right Multiplications of the Biquaternion Sesqualgebra*, below this chapter, has the same two families with the same asymmetry, one family closing and the other not.
+So the two one-sided families behave differently, and the asymmetry is the one of the general theory: the right family is a monoid, isomorphic to the opposite of the multiplicative monoid of the ring, while the left family is not closed and its products fall back into the ordinary multiplications. This is the split-complex form of the statement that the left and right multiplications fail to coincide and generate an opposite monoid.
 
 ### The Sandwich
 
@@ -187,7 +187,7 @@ $$
 S_{B,C} = M_B \circ R_C = R_C \circ M_B ,
 $$
 
-the two orders agreeing because $\mathbb{D}$ is commutative, and it is therefore the split-complex form of the sandwich $A \mapsto BA\bar C$ whose biquaternion calculus is *The Sesquilinear Sandwich on the Biquaternions*, below this chapter. The parameters specialise as
+the two orders agreeing because $\mathbb{D}$ is commutative, and it is therefore the split-complex form of the sandwich $A \mapsto BA\bar C$. The parameters specialise as
 
 $$
 S_{1,1} = \mathrm{id}, \qquad S_{B,1} = M_B, \qquad S_{1,C} = R_C, \qquad S_{B,C}(1) = B\bar C = B \star C ;
@@ -291,7 +291,7 @@ $$
 **Proof.** Antisymmetry is $[C,A] = C\bar A - A\bar C = -[A,C]$. Bilinearity over $\mathbb{R}$ is additivity together with $[A,\lambda C] = A\overline{\lambda C} - (\lambda C)\bar A = \lambda(A\bar C - C\bar A) = \lambda[A,C]$ for real $\lambda$, since $\bar\lambda = \lambda$. Write $[A,C] = -2\omega(A,C)\,j$ with the area form $\omega(A,C) = ac'-a'c$; since $j$ is central and $[j,D] = j\bar D - D\bar j = 2j\,\operatorname{Sc}(D)$, the cyclic sum is
 
 $$
--2j\big(\omega(A,C)\operatorname{Sc}(D) + \omega(C,D)\operatorname{Sc}(A) + \omega(D,A)\operatorname{Sc}(C)\big),
+-4j\big(\omega(A,C)\operatorname{Sc}(D) + \omega(C,D)\operatorname{Sc}(A) + \omega(D,A)\operatorname{Sc}(C)\big),
 $$
 
 and the parenthesis is $ac'd - a'cd + cd'a - c'da + da'c - d'ac = 0$, the six terms cancelling in pairs. So the identity holds. The centre is the kernel of the area form, which is $\{0\}$ because $\omega$ is non-degenerate.
@@ -305,16 +305,16 @@ The same construction over the complex field reads:
 | | $\mathbb{C}$ | $\mathbb{D}$ |
 |---|---|---|
 | product | $A\bar C$, definite Hermitian | $A\bar C$, indefinite Hermitian |
-| symmetrisation | $ac+bd$, the Euclidean form | $ac-a'c' = g$, signature $(1,1)$ |
-| commutator | $2i(bc-ad)$, on the imaginary axis $i\mathbb{R}$ | $2(a'c-ac')j$, on the split imaginary line $j\mathbb{R}$ |
+| symmetrisation | $ac+a'c'$, the Euclidean form | $ac-a'c' = g$, signature $(1,1)$ |
+| commutator | $2i(a'c-ac')$, on the imaginary axis $i\mathbb{R}$ | $2(a'c-ac')j$, on the split imaginary line $j\mathbb{R}$ |
 | square of the unit direction | $i^2 = -1$ (rotation) | $j^2 = +1$ (hyperbolic) |
 | associator | $A\bar C(\bar D-D)$ | $A\bar C(\bar D-D)$ |
 | right unit | $1$, no left unit | $1$, no left unit |
 | ternary product | $A\bar C D$, Jordan triple | $A\bar C D$, Jordan triple |
 
-The associator, the right unit and the ternary product are the same formulas in the two cases, because they use only the associativity of the base and the multiplicativity of the conjugation. The difference is entirely in the **form** and in the **direction of the commutator**. In $\mathbb{C}$ the symmetrisation recovers the positive-definite Euclidean form $ac+bd$, and the commutator lies on the imaginary axis, the direction of the rotation $i$ with $i^2 = -1$; in $\mathbb{D}$ the symmetrisation recovers the indefinite form $ac-a'c'$ of signature $(1,1)$, and the commutator lies on the split imaginary line, the direction of the hyperbolic unit $j$ with $j^2 = +1$. The two signs are the same sign: the flip of the square of the unit is the flip of the definiteness of the form, because the norm and the form are built from the same product by the same conjugation.
+The associator, the right unit and the ternary product are the same formulas in the two cases, because they use only the associativity of the base and the multiplicativity of the conjugation. The difference is entirely in the **form** and in the **direction of the commutator**. In $\mathbb{C}$ the symmetrisation recovers the positive-definite Euclidean form $ac+a'c'$, and the commutator lies on the imaginary axis, the direction of the rotation $i$ with $i^2 = -1$; in $\mathbb{D}$ the symmetrisation recovers the indefinite form $ac-a'c'$ of signature $(1,1)$, and the commutator lies on the split imaginary line, the direction of the hyperbolic unit $j$ with $j^2 = +1$. The two signs are the same sign: the flip of the square of the unit is the flip of the definiteness of the form, because the norm and the form are built from the same product by the same conjugation.
 
-Against the biquaternion sesqualgebra the split case is the commutative collapse. There the derived operation $\tilde P\tilde Q^{*}$ has a right unit and no left one, an associator confined to the sesquilinear shape, a ternary product $PQ^{*}R$ that satisfies the Jordan triple identity, and the same two one-sided families with the left one failing to close — all of it with the non-commutativity of $\mathbb{B}$ and the non-trivial base involution $\varsigma$ of $\mathbb{C}$ in the background. On $\mathbb{D}$ the base involution of the coefficient ring is trivial and the ring is commutative, so the formulas simplify: the two halves of the product are a scalar and a split-imaginary element rather than a central scalar and a vector part, and the sandwich monoid is commutative.
+On $\mathbb{D}$ the base involution of the coefficient ring is trivial and the ring is commutative, so the formulas simplify: the two halves of the product are a scalar and a split-imaginary element rather than a central scalar and a vector part, and the sandwich monoid is commutative.
 
 ## Summary
 
@@ -322,7 +322,7 @@ The split-complex space carries the sesquilinear product $A \star C = A\bar C$, 
 
 The right multiplications satisfy $R_A \circ R_C = R_{CA}$ and form the opposite monoid of $(\mathbb{D},\cdot)$; the left multiplications satisfy $L_A \circ L_C = M_{A\bar C}$ and do not close, and $L_1$ is the conjugation while $R_1$ is the identity. The sandwich $S_{B,C}(X) = BX\bar C$ is the composite of an ordinary and a sesquilinear multiplication, and the sandwiches form a monoid with $S_{B,C} \circ S_{D,E} = S_{BD,CE}$. With respect to the Hermitian form $H(A,C) = A\bar C$, the adjoints are $M_B^{*} = M_{\bar B}$, $R_C^{*} = M_C$, $L_A^{*} = L_A$ and $S_{B,C}^{*} = S_{C,B}$; the two projections onto the idempotent lines are mutually adjoint.
 
-The commutator is $A\bar C - C\bar A = 2(a'c-ac')j$, an element of the split imaginary line, and its halves are the scalar form $g(A,C) = ac-a'c'$ and the element $(a'c-ac')j$. The bracket is the two-dimensional non-abelian Lie algebra and its Jacobi identity holds, automatically in two dimensions; the obstruction of the binary product is its associator, and the ternary product removes it. Against the complex case the formulas of the associator, unit and ternary product coincide, while the form is definite there and indefinite here and the commutator lies on the rotation axis there and on the hyperbolic line here; the biquaternion case is the non-commutative version, of which this is the commutative collapse.
+The commutator is $A\bar C - C\bar A = 2(a'c-ac')j$, an element of the split imaginary line, and its halves are the scalar form $g(A,C) = ac-a'c'$ and the element $(a'c-ac')j$. The bracket is the two-dimensional non-abelian Lie algebra and its Jacobi identity holds, automatically in two dimensions; the obstruction of the binary product is its associator, and the ternary product removes it. Against the complex case the formulas of the associator, unit and ternary product coincide, while the form is definite there and indefinite here and the commutator lies on the rotation axis there and on the hyperbolic line here.
 
 ## Summary of Notation
 

@@ -60,7 +60,7 @@ the quaternion norm of a product being exactly the product of the quaternion nor
 
 *Proof.* The first identity is the multiplicativity theorem. For the second, the plain norm of the product is $(\tilde p\tilde q)^2$ and the product of the plain norms is $\tilde p^2\tilde q^2$, the two differing by $\tilde p[\tilde q,\tilde p]\tilde q$; at $\tilde p=e_1,\tilde q=e_2$ the two values are $-e_0$ and $+e_0$. For the third, $|\tilde p\tilde q|^2=|\tilde p|^2|\tilde q|^2=|\tilde q|^2|\tilde p|^2=|\tilde q\tilde p|^2$, the coefficient being a real number.
 
-So the quaternion norm is insensitive to the order of the factors and to the nesting of a product, while the plain norm is sensitive to both; the quaternion norm is the one that behaves as a **norm of an algebra**, and it is the one used in the invertibility criterion. The statement is the $\mathbb{R}$-reading of the biquaternion table, where the quaternionic norm alone is multiplicative and the plain one is not.
+So the quaternion norm is insensitive to the order of the factors and to the nesting of a product, while the plain norm is sensitive to both; the quaternion norm is the one that behaves as a **norm of an algebra**, and it is the one used in the invertibility criterion.
 
 ## The Level Sets
 
@@ -82,7 +82,7 @@ So the level sets of the two norms are of different shapes: the quaternion norm 
 
 *Proof.* The identity $\tilde p^{\natural}\tilde p=|\tilde p|^2e_0$ shows that a nonzero $\tilde p$ has the inverse $\tilde p^{\natural}/|\tilde p|^2$, and a zero divisor would give $|\tilde p|^2|\tilde q|^2=0$ with both factors nonzero, impossible; so $\tilde p$ is invertible exactly when $|\tilde p|^2\neq0$, that is exactly when $\tilde p\neq0$, and the criterion is the quaternion norm's. For the plain norm, a value of $N_P$ is an element of $\mathbb{H}$ and $N_P$ is not multiplicative, so the nonzero-ness of $N_P(\tilde p)$ is not decided by any law of the norm, unlike the quaternion norm; the criterion is therefore the quaternion norm's alone.
 
-So the **quaternion norm is the norm of the algebra**: it is real-valued, definite and multiplicative, and its vanishing gives the invertibility criterion and the division property; the plain norm is the diagonal of the plain product and is a norm only in the weak sense of the corpus's vocabulary. The group of units is the nonzero elements, the unit sphere and the positive scalars giving the three-way classification of the invertible elements, of *Norm and Invertibility in the General Plain Algebra*, in the GPA block below; the biquaternion reading, where the two norms are complex-valued and the definiteness of the quaternionic norm fails, is *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*.
+So the **quaternion norm is the norm of the algebra**: it is real-valued, definite and multiplicative, and its vanishing gives the invertibility criterion and the division property; the plain norm is the diagonal of the plain product and is a norm only in the weak sense of the corpus's vocabulary.
 
 ## Summary
 

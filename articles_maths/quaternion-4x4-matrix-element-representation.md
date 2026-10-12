@@ -3,9 +3,9 @@
 
 ## Introduction
 
-Every associative algebra acts on itself by left multiplication, and the resulting matrices form the **left regular representation**. For the quaternion algebra this gives an injective algebra homomorphism $\mathbb{H}\to M_4(\mathbb{R})$, the four-dimensional real matrix representation; the matrix of left multiplication by $\tilde q$ is the **Cayley matrix** of $\tilde q$. This article develops that representation: the explicit matrix, its multiplicativity, its determinant and trace, its behaviour under transposition and under the three involutions, the parallel right regular representation, and the double centraliser theorem which identifies the two representations as each other's commutants. It is the quaternion member of the family's regular-representation pair; the counterpart is the $8\times8$ real regular representation of the biquaternion algebra, into which the present one embeds after complexification.
+Every associative algebra acts on itself by left multiplication, and the resulting matrices form the **left regular representation**. For the quaternion algebra this gives an injective algebra homomorphism $\mathbb{H}\to M_4(\mathbb{R})$, the four-dimensional real matrix representation; the matrix of left multiplication by $\tilde q$ is the **Cayley matrix** of $\tilde q$. This article develops that representation: the explicit matrix, its multiplicativity, its determinant and trace, its behaviour under transposition and under the three involutions, the parallel right regular representation, and the double centraliser theorem which identifies the two representations as each other's commutants.
 
-The article depends on *Quaternion Algebra* for the multiplication table and on *Quaternion Norm and Invertibility* for the quaternion norm; the $2\times2$ complex representation, which is obtained by complexification and carries the same information in half the size, is treated in *Quaternion 2x2 Matrix Element Representation*, and the coordinate form of the multiplication is in *Quaternion Four-Vector Element Representation*.
+The article depends on *Quaternion Algebra* for the multiplication table and on *Quaternion Norm and Invertibility* for the quaternion norm; the $2\times2$ complex representation, which carries the same information in half the size, is treated in *Quaternion 2x2 Matrix Element Representation*, and the coordinate form of the multiplication is in *Quaternion Four-Vector Element Representation*.
 
 The corpus's default base is a commutative ring with identity, and the regular representation is defined over such a base whenever the algebra is faithful over itself; the determinant and norm statements are stated over a field $F$, and the positivity of the quaternion norm is the statement over $\mathbb{R}$.
 
@@ -78,8 +78,6 @@ The decomposition separates the two subspaces: for a scalar $s$ the Cayley matri
 $$
 \tilde q = 1+2e_1-e_2+3e_3
 $$
-
-the four general products $\tilde qe_k$ are
 
 $$
 \tilde q e_0 = \tilde q, \quad \tilde q e_1 = -2+e_1+3e_2+e_3, \quad \tilde q e_2 = 1-3e_1+e_2+2e_3, \quad \tilde q e_3 = -3-e_1-2e_2+e_3,
@@ -218,28 +216,13 @@ $$
 
 *Proof.* The double centraliser theorem for a faithful finite-dimensional simple module gives that the image equals its double commutant; the dimension count $4\cdot4 = 16 = \dim M_4(\mathbb{R})$ shows that the two images together span $M_4(\mathbb{R})$.
 
-## Relation to the Biquaternion $8\times8$ Form
-
-Over the complex field the quaternion algebra becomes the matrix algebra $M_2(\mathbb{C})$, and its regular representation becomes a representation in $\mathsf{M}_2(M_2(\mathbb{C}))\cong M_4(\mathbb{C})$, which is the complex form of the matrix above; regarded as a real representation, it is a four-dimensional complex representation and hence an **eight-dimensional real** one. The biquaternion algebra, which is the complex quaternion algebra, therefore has an $8\times8$ real regular representation into $M_8(\mathbb{R})$, and the $4\times4$ real representation of this article is the restriction of that to the real form $\mathbb{H}$.
-
-| Feature | $\mathbb{H}$ | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-|---|---|---|
-| Regular representation | $L:\mathbb{H}\to M_4(\mathbb{R})$ | $L:\mathbb{B}\to M_8(\mathbb{R})$, equivalently $M_4(\mathbb{C})$ |
-| Matrix size over the base | $4\times4$ real | $8\times8$ real, $4\times4$ complex |
-| Determinant | $N(\tilde q)^2$, a real square | $N(\tilde Q)^2$, a complex square |
-| Trace | $4q_0$ | $4\tilde Q_{\text{scal}}$, complex |
-| Transpose | $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$ | $\mathsf{M}_4(\tilde Q)^{T} = \mathsf{M}_4(\tilde{Q}^{\natural})$ |
-| Commutant | $\mathsf{M}_4^{R}(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ | $\mathsf{M}_4^{R}(\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ |
-
-The pattern is the same in both columns, with the complex field replacing the real one and the matrix size doubling in the real counting; the determinant acquires the complex values of the biquaternion norm, and its vanishing locus is the null cone rather than the origin. The biquaternion account is in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
-
 ## Summary
 
 The left regular matrix is an injective algebra homomorphism $\mathbb{H}\to M_4(F)$, whose matrix in the basis $(e_0,e_1,e_2,e_3)$ is the Cayley matrix displayed above; it is the sum $q_0I+\Omega_q$ of a scalar and a skew-symmetric part, it multiplies as the quaternions do, $\mathsf{M}_4(p)\mathsf{M}_4(\tilde q) = \mathsf{M}_4(p\tilde q)$, and it carries units to invertible matrices with $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/N(\tilde q)$.
 
 The determinant and trace of the Cayley matrix are $\det \mathsf{M}_4(\tilde q) = N(\tilde q)^2$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0$, computed from the identity $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = N(\tilde q)I$ that also shows $\mathsf{M}_4(\tilde q)$ to be a positive multiple of an orthogonal matrix. Transposition is quaternion conjugation, $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, and the three involutions of the algebra act by the four sign combinations $\pm \mathsf{M}_4(\tilde q),\pm \mathsf{M}_4(\tilde q)^{T}$ of the Cayley matrix.
 
-The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is an injective anti-homomorphism with the same determinant and trace, related to the left one by the identity $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$ with $D$ the conjugation matrix, and the two representations are each other's commutants; the double centraliser theorem makes the left image its own double commutant and shows the two images together to span $M_4(F)$. After complexification the representation becomes the $8\times8$ real or $4\times4$ complex regular representation of the biquaternion algebra, with the same formal identities and a complex-valued determinant.
+The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is an injective anti-homomorphism with the same determinant and trace, related to the left one by the identity $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$ with $D$ the conjugation matrix, and the two representations are each other's commutants; the double centraliser theorem makes the left image its own double commutant and shows the two images together to span $M_4(F)$.
 
 ## Summary of Notation
 
@@ -258,8 +241,6 @@ The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is 
 | $\det \mathsf{M}_4(\tilde q) = N(\tilde q)^2$, $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0$ | Determinant and trace |
 | $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = N(\tilde q)I$ | Orthogonality up to the quaternion norm scale |
 | $\mathbb{H}^{\mathrm{op}}$ | Opposite algebra, the commutant of the left image |
-| $M_4(F)$, $M_8(\mathbb{R})$ | Matrix algebras of the real and biquaternion regular representations |
-| $\mathbb{B}$ | Biquaternion algebra, the $8\times8$ real case |
 
 ## Further Reading
 

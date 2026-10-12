@@ -64,7 +64,7 @@ $$
 
 *Proof.* The two preceding theorems.
 
-**Remark.** The reduced quadratic always has the discriminant $\Delta=q_0^2+|\mathbf Q|^2$, a non-negative real, so a real square root is never excluded; the "no root" slot that a general real quadratic equation can occupy is empty over $\mathbb{R}$, and it is the complex coefficient field of the biquaternion chapter that makes it non-empty there. The minus root of the reduced quadratic is what the positive-definiteness of the sum of squares discards.
+The minus root of the reduced quadratic is what the positive-definiteness of the sum of squares discards.
 
 ## The Specialisation to the Central Values
 

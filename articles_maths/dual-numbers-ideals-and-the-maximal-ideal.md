@@ -5,7 +5,7 @@
 
 This article studies the ideal structure of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ and the decomposition of the algebra relative to its distinguished submodules. The base article *Dual-Numbers Algebra* fixed the algebra, its two conjugations, the maximal ideal $\mathrm{M} = (\varepsilon)$ and the two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$; the article *Dual-Numbers Norm and Invertibility* fixed the norm and the group of units. The goal here is to determine the ideals, to explain why the algebra is local and not semisimple, and to describe the decomposition that stands in for the Peirce decomposition of a semisimple algebra.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, and the algebra is $\mathbb{D}'_R$. The classification of the ideals into the chain $0 \subset \mathrm{M} \subset \mathbb{D}'$ is proved for a field $k$ and then extended to a general commutative ring by the pair description $I \oplus J\varepsilon$ with $I \subseteq J$; the geometric specialisation is $R = \mathbb{R}$. A general dual number is $A = a + \varepsilon a'$ with $a = \operatorname{Re} A$ and $a' = \operatorname{Inf} A$, dual conjugation is $\bar A = a - \varepsilon a'$, the norm $N$ of *Dual-Numbers Norm and Invertibility* reads $N(A) = a^2$, and $\mathrm{M} = (\varepsilon)$ is the maximal ideal. The Biquaternions category is the structural model; its corresponding article is *Ideals and Peirce Decomposition of the General Plain Algebra*, and the comparison at the end records where the two structures diverge.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, and the algebra is $\mathbb{D}'_R$. The classification of the ideals into the chain $0 \subset \mathrm{M} \subset \mathbb{D}'$ is proved for a field $k$ and then extended to a general commutative ring by the pair description $I \oplus J\varepsilon$ with $I \subseteq J$; the geometric specialisation is $R = \mathbb{R}$. A general dual number is $A = a + \varepsilon a'$ with $a = \operatorname{Re} A$ and $a' = \operatorname{Inf} A$, dual conjugation is $\bar A = a - \varepsilon a'$, the norm $N$ of *Dual-Numbers Norm and Invertibility* reads $N(A) = a^2$, and $\mathrm{M} = (\varepsilon)$ is the maximal ideal. The comparison at the end records where the dual algebra diverges from a field, its closest base case.
 
 The scope boundaries are these. This article owns the ideals and the Peirce-type decomposition. The norm and the unit criterion belong to *Dual-Numbers Norm and Invertibility*. The classification of the zero divisors and their distribution belong to *Dual-Numbers Zero Divisors*; the maximal ideal appears in both articles, but here it is treated as an ideal and there as the zero-divisor set.
 
@@ -15,7 +15,7 @@ The scope boundaries are these. This article owns the ideals and the Peirce-type
 
 **Definition.** Let $A$ be an associative ring. An additive subgroup $I \subseteq A$ is a **left ideal** if $AI \subseteq I$, a **right ideal** if $IA \subseteq I$, and a **two-sided ideal** if it is both. The ideals $0$ and $A$ are called **trivial**.
 
-In a commutative ring the three notions coincide, and every ideal is two-sided. Since $\mathbb{D}'_R$ is commutative, its left, right and two-sided ideals are the same family, and the word *ideal* is unambiguous here. This is the first structural contrast with the biquaternion algebra $\mathbb{B}$, where the three families genuinely differ.
+In a commutative ring the three notions coincide, and every ideal is two-sided. Since $\mathbb{D}'_R$ is commutative, its left, right and two-sided ideals are the same family, and the word *ideal* is unambiguous here.
 
 ### The Quotient
 
@@ -87,7 +87,7 @@ is a composition series. Its two successive quotients are $\mathrm{M}/\mathrm{M}
 
 **Proof.** The quotient $\mathrm{M}/0 = \mathrm{M}$ is a one-dimensional $k$-space because $\mathrm{M} = k\varepsilon$, and its submodules are $0$ and $\mathrm{M}$; likewise $\mathbb{D}'_k/\mathrm{M} \cong k$.
 
-So the two simple composition factors are isomorphic, both equal to the residue field $k$. This is the algebra's version of the biquaternion fact that the simple left module $S = \mathbb{C}^2$ occurs twice in the regular module; here the simple module is one-dimensional and again occurs twice.
+So the two simple composition factors are isomorphic, both equal to the residue field $k$; the simple module is one-dimensional and occurs twice in the regular module.
 
 ### Artinianity
 
@@ -103,7 +103,7 @@ So the two simple composition factors are isomorphic, both equal to the residue 
 
 **Proof.** The Jacobson radical of $\mathbb{D}'_k$ contains $\mathrm{M}$, which is nonzero because $\varepsilon \neq 0$; hence the radical is nonzero and the Wedderburn–Artin criterion fails. Equivalently, a finite product of fields is reduced (has no nonzero nilpotent), while $\varepsilon$ is a nonzero nilpotent.
 
-**Remark (the reason).** The obstruction is exactly the nilpotence of the maximal ideal. Semisimplicity would require the regular module to split as $\mathrm{M} \oplus k$, that is, a decomposition into two ideals; but $\mathrm{M}$ is the unique minimal ideal, so there is no complementary ideal, and the chain $0 \subset \mathrm{M} \subset \mathbb{D}'_k$ cannot split. The extension $0 \to \mathrm{M} \to \mathbb{D}'_k \to k \to 0$ is non-split, and, up to isomorphism, $\mathbb{D}'_k$ is the unique non-split extension of $k$ by $k$ in this category. The corresponding statement for $\mathbb{B}$ is the opposite: $\mathbb{B} \cong M_2(\mathbb{C})$ is simple and semisimple, and its ideal theory is a theory of one-sided ideals.
+**Remark (the reason).** The obstruction is exactly the nilpotence of the maximal ideal. Semisimplicity would require the regular module to split as $\mathrm{M} \oplus k$, that is, a decomposition into two ideals; but $\mathrm{M}$ is the unique minimal ideal, so there is no complementary ideal, and the chain $0 \subset \mathrm{M} \subset \mathbb{D}'_k$ cannot split. The extension $0 \to \mathrm{M} \to \mathbb{D}'_k \to k \to 0$ is non-split, and, up to isomorphism, $\mathbb{D}'_k$ is the unique non-split extension of $k$ by $k$ in this category.
 
 ## The Peirce-Type Decomposition
 
@@ -135,7 +135,7 @@ $$
 
 The two summands are the real submodule $R_{\mathbb{D}'} = \{A : \bar A = A\}$ and the infinitesimal submodule $\varepsilon R_{\mathbb{D}'} = \{A : \bar A = -A\}$, and both are rank-one $R$-modules whose direct sum is all of $\mathbb{D}'_R$. The two projections $A \mapsto (A \pm \bar A)/2$ are the analogues of the Peirce projections, but they are associated to the involution and not to an idempotent.
 
-**Remark (the two minimal submodules).** The two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$ are the minimal nonzero $R$-submodules of $\mathbb{D}'_R$, of rank one each. Only the second is an ideal: $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is closed under multiplication by the whole algebra, whereas $R_{\mathbb{D}'} = R \cdot 1$ is not, because $\varepsilon \cdot 1 = \varepsilon \notin R_{\mathbb{D}'}$. So the two minimal submodules of the decomposition are distinct objects: one is the unique minimal ideal, the other is a subalgebra that is not an ideal. In the biquaternion algebra the corresponding two minimal one-sided ideals are the two columns, which are genuinely distinct ideals; the dual algebra, being idempotent-free, has only one minimal ideal and cannot split it.
+**Remark (the two minimal submodules).** The two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$ are the minimal nonzero $R$-submodules of $\mathbb{D}'_R$, of rank one each. Only the second is an ideal: $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is closed under multiplication by the whole algebra, whereas $R_{\mathbb{D}'} = R \cdot 1$ is not, because $\varepsilon \cdot 1 = \varepsilon \notin R_{\mathbb{D}'}$. So the two minimal submodules of the decomposition are distinct objects: one is the unique minimal ideal, the other is a subalgebra that is not an ideal. The dual algebra, being idempotent-free, has only one minimal ideal and cannot split it.
 
 ### The Action of the Nilpotent on the Two Submodules
 
@@ -160,23 +160,23 @@ a single chain: $\mathrm{M}$ covers $0$ and is covered by $\mathbb{D}'_k$, and t
 - The unique prime ideal is $\mathrm{M}$: the quotient by any other ideal is $0$ or $\mathbb{D}'_k$, and $\mathbb{D}'_k/\mathrm{M} \cong k$ is a field.
 - The algebra is a principal ideal ring with socle $\mathrm{M}$ and Jacobson radical $\mathrm{M}$: the socle and the radical coincide, which is characteristic of local artinian rings with $\mathrm{M}^2 = 0$.
 
-## Comparison with the Ideals of $\mathbb{B}$
+## Comparison with the Ideals of a Field
 
-The contrast with the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is total.
+The contrast with a field $k$ is the base contrast of the series.
 
-| | $\mathbb{D}'_k$ | $\mathbb{B}$ |
+| | $\mathbb{D}'_k$ | $k$ |
 |---|---|---|
-| Two-sided ideals | $0, \mathrm{M}, \mathbb{D}'_k$ | $0, \mathbb{B}$ only (simple) |
-| Maximal ideal | unique, $\mathrm{M} = (\varepsilon)$ | none (the algebra is semisimple) |
+| Two-sided ideals | $0, \mathrm{M}, \mathbb{D}'_k$ | $0, k$ only (simple) |
+| Maximal ideal | unique, $\mathrm{M} = (\varepsilon)$ | $0$, the zero ideal |
 | Radical | $\mathrm{M} \neq 0$ | $0$ |
-| Semisimple | no | yes, $\mathbb{B} \cong M_2(\mathbb{C})$ |
-| Length | $2$ | $2$ |
-| Simple factors | $k$ twice | $S = \mathbb{C}^2$ twice |
-| Idempotents | only $0, 1$ | a four-dimensional family, bijective with the roots of $-1$ |
-| One-sided ideals | coincide with ideals | a rich lattice, indexed by $\mathbb{P}^1(\mathbb{C})$ |
-| Peirce decomposition | trivial; replaced by the involution eigenspaces | four one-dimensional corners |
+| Semisimple | no | yes |
+| Length | $2$ | $1$ |
+| Simple factors | $k$ twice | $k$ once |
+| Idempotents | only $0, 1$ | only $0, 1$ |
+| One-sided ideals | coincide with ideals | coincide with ideals |
+| Peirce decomposition | trivial; replaced by the involution eigenspaces | trivial |
 
-Three structural points stand out. First, simplicity of $\mathbb{B}$ and locality of $\mathbb{D}'_k$ are the two extreme ways of having a small number of two-sided ideals: in $\mathbb{B}$ the only ideals are the trivial ones because the algebra is simple, while in $\mathbb{D}'_k$ there is exactly one proper ideal because the algebra is local; in neither case is the algebra a product of smaller algebras. Second, the length is two in both cases, but for opposite reasons: the biquaternion algebra has two isomorphic simple factors because it is a matrix algebra of size two, while the dual algebra has two isomorphic simple factors because its maximal ideal is a square-zero copy of the residue field. Third, the Peirce decomposition, which in $\mathbb{B}$ produces the four matrix-unit corners $\tilde\Pi_1\mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1\mathbb{B}\tilde\Pi_2$, $\tilde\Pi_2\mathbb{B}\tilde\Pi_1$, $\tilde\Pi_2\mathbb{B}\tilde\Pi_2$, has no analogue in $\mathbb{D}'_k$: with no nontrivial idempotent there are no corners, and the two submodules that replace them are not complementary ideals but the eigencomponents of the involution.
+Two structural points stand out. First, locality of $\mathbb{D}'_k$ and simplicity of $k$ are the two extreme ways of having a small number of two-sided ideals: in $k$ the only ideals are the trivial ones because the algebra is a field, while in $\mathbb{D}'_k$ there is exactly one proper ideal because the algebra is local. Second, the length is two in $\mathbb{D}'_k$ and one in $k$: the dual algebra has two isomorphic simple factors because its maximal ideal is a square-zero copy of the residue field. The Peirce decomposition is trivial in both cases: with no nontrivial idempotent there are no corners, and what replaces it in $\mathbb{D}'_k$ are the eigencomponents of the involution.
 
 ## Summary
 
@@ -186,7 +186,7 @@ $$
 0 \;\subset\; \mathrm{M} = (\varepsilon) \;\subset\; \mathbb{D}'_k,
 $$
 
-so $\mathrm{M}$ is simultaneously the unique maximal ideal and the unique minimal nonzero ideal, and the residue field is $\mathbb{D}'_k/\mathrm{M} \cong k$. Over a general commutative ring $R$ the lattice is larger: the ideals are the pairs $I \subseteq J$ of ideals of $R$, realized as $I \oplus J\varepsilon$, and the three-element chain occurs exactly when $R$ is a field. The maximal ideal is nilpotent of index two, $\mathrm{M}^2 = 0$, and every element of $\mathrm{M}$ squares to zero. Over a field the algebra is artinian of length two, with two isomorphic simple composition factors both equal to $k$, and it is **not** semisimple: the Jacobson radical is $\mathrm{M} \neq 0$, or equivalently the non-split chain $0 \subset \mathrm{M} \subset \mathbb{D}'_k$ cannot be refined into a direct sum. Over a field (or, more generally, a connected base) the algebra is idempotent-free — its only idempotents are $0$ and $1$ — so the Peirce decomposition is trivial; what replaces it is the eigenspace decomposition $R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}$ of dual conjugation, whose two rank-one submodules are the minimal submodule and the subalgebra, of which only the first is an ideal. The biquaternion algebra $\mathbb{B}$ is the opposite case in every respect: simple and semisimple, with trivial two-sided ideal theory and a rich theory of one-sided ideals, a nonzero minimal idempotent set, and a nontrivial Peirce decomposition.
+so $\mathrm{M}$ is simultaneously the unique maximal ideal and the unique minimal nonzero ideal, and the residue field is $\mathbb{D}'_k/\mathrm{M} \cong k$. Over a general commutative ring $R$ the lattice is larger: the ideals are the pairs $I \subseteq J$ of ideals of $R$, realized as $I \oplus J\varepsilon$, and the three-element chain occurs exactly when $R$ is a field. The maximal ideal is nilpotent of index two, $\mathrm{M}^2 = 0$, and every element of $\mathrm{M}$ squares to zero. Over a field the algebra is artinian of length two, with two isomorphic simple composition factors both equal to $k$, and it is **not** semisimple: the Jacobson radical is $\mathrm{M} \neq 0$, or equivalently the non-split chain $0 \subset \mathrm{M} \subset \mathbb{D}'_k$ cannot be refined into a direct sum. Over a field (or, more generally, a connected base) the algebra is idempotent-free — its only idempotents are $0$ and $1$ — so the Peirce decomposition is trivial; what replaces it is the eigenspace decomposition $R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}$ of dual conjugation, whose two rank-one submodules are the minimal submodule and the subalgebra, of which only the first is an ideal.
 
 ## Summary of Notation
 
@@ -205,7 +205,6 @@ so $\mathrm{M}$ is simultaneously the unique maximal ideal and the unique minima
 | $\operatorname{Jac}(\mathbb{D}'_k) = \mathrm{M}$ | Jacobson radical, over a field $k$ |
 | $1 + \mathrm{M}$ | Shear group, units of real part one |
 | $k$ | Base field in the specialisations |
-| $\mathbb{B}$ | Biquaternion algebra, the comparison model |
 
 ## Further Reading
 
@@ -213,5 +212,4 @@ so $\mathrm{M}$ is simultaneously the unique maximal ideal and the unique minima
 - Serge Lang, *Algebra* (Springer, New York, 2002), for the structure theory of commutative rings and the Wedderburn–Artin theorem.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, New York, 2001), for semisimple rings, the Jacobson radical, and Peirce decompositions.
 - Joseph J. Rotman, *An Introduction to Homological Algebra* (Springer, New York, 2009), for composition series, module length, and non-split extensions.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the classification of the two-dimensional real algebras and their idempotents.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, Berlin, 1991), for the ideal theory of rings carrying a quadratic form.

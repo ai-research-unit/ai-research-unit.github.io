@@ -4,7 +4,7 @@
 
 The general quaternionic algebra of quaternions is the real space $\mathbb{H}$ under the product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ (*Introduction to the General Quaternionic Algebra of Quaternions*). This article collects the properties that single it out among the six algebraic structures of the space, and it is the closing article of the Common Theory of the block: the norm, the roots of the central values and the roots of a general element are settled in the three articles before it, and what is left is the list of the structural landmarks.
 
-Four of the landmarks are negative and decide the block: the unit is one-sided, the product is not associative, there are no zero divisors, and there are no nilpotents. Two are the counterparts of the plain algebra: the idempotents are $0$ and $e_0$ and no others, and the two one-sided actions do not combine into a two-sided module structure. Two concern the conjugation, which fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and is **not** one of the quaternionic product. The last two sections record the effect of complexification and the position of the algebra among the six.
+Four of the landmarks are negative and decide the block: the unit is one-sided, the product is not associative, there are no zero divisors, and there are no nilpotents. Two are the counterparts of the plain algebra: the idempotents are $0$ and $e_0$ and no others, and the two one-sided actions do not combine into a two-sided module structure. Two concern the conjugation, which fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and is **not** one of the quaternionic product. The last section records the position of the algebra among the six.
 
 ## The One-Sided Unit
 
@@ -12,7 +12,7 @@ Four of the landmarks are negative and decide the block: the unit is one-sided, 
 
 *Proof.* $\tilde q \star e_0 = \tilde q^{\natural}$, which differs from $\tilde q$ for a non-real $\tilde q$; the direct proof of the non-existence of a right unit is in *Introduction to the General Quaternionic Algebra of Quaternions*. The consequences for inversion are *Norm and Invertibility in the General Quaternionic Algebra*: the two one-sided equations have the coincident solution $\zeta(\tilde p) = \tilde p/N(\tilde p)$, and the units do not form a group.
 
-**Remark.** This is the first of the four specifics, and the one that the biquaternion counterpart shares: over $\mathbb{C}$ the same asymmetry is present and has the same cause (*Introduction to the General Quaternionic Algebra of Biquaternions*). The plain algebra is the only one of the six with a two-sided unit; the two antisymmetric products and the two symmetrised ones have none, so unitality is rare in the list and *one-sided* unitality is this product's alone.
+The plain algebra is the only one of the six with a two-sided unit; the two antisymmetric products and the two symmetrised ones have none, so unitality is rare in the list and *one-sided* unitality is this product's alone.
 
 ## The Associator and its Defect
 
@@ -74,14 +74,6 @@ so the conjugation carries the product to the mirror product and back, and the t
 
 **Remark.** The distinction is worth the separate theorem because the anti-automorphism property is what the plain algebra uses everywhere and what the quaternionic product denies. It is the second appearance of the same phenomenon: the conjugation in the first slot reverses what it touches, and the exchange law is the exact record of how.
 
-## The Effect of Complexification
-
-**Theorem (the change of scalars).** After the scalar extension $\mathbb{H}_{\mathbb{C}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} = \mathbb{B}$ the product extends to a $\mathbb{C}$-bilinear product on the eight-dimensional complex space, the left unit $e_0$ survives and no right unit appears, and the norm becomes the complex-quadratic form $\sum_\mu Q_\mu^2$, which is isotropic. The block then has zero divisors where this one has none.
-
-*Proof.* The product and the unit are defined by the same formulas over $\mathbb{C}$; the norm is the same sum of squares read in $\mathbb{C}$, and over $\mathbb{C}$ it takes the value zero on nonzero elements (*The Complexification and the Effect of the Change of Scalars on the Quaternions*). The isotropic elements and the zero divisors of the extended block are those of *Introduction to the General Quaternionic Algebra of Biquaternions*, the biquaternion reading of the same law.
-
-**Remark.** The definiteness of the norm is therefore exactly what the complexification destroys, and with it the three consequences that this article has collected: the absence of zero divisors, the absence of nilpotents and the emptiness of the roots of a negative central value. The unit asymmetry, by contrast, is untouched by the change of scalars; it is intrinsic to the law.
-
 ## The Relation to the Other Five
 
 **Theorem (the position).** Among the six algebraic structures of the quaternion real space, the general quaternionic algebra is the only one that is left-unital and not right-unital; it is not associative, it has no zero divisors and it has two idempotents.
@@ -101,7 +93,7 @@ so the conjugation carries the product to the mirror product and back, and the t
 
 ## Summary
 
-The general quaternionic algebra is left-unital and not unital; its product is not associative and fails every weaker rung; it has no zero divisors and no nonzero nilpotents; its only idempotents are $0$ and $e_0$; its left multiplications form a monoid isomorphic to the opposite algebra, its honest right multiplications do not close, and its twisted right multiplications close with the direct law, so the algebra is left-handed; its conjugation fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and not of its own, and satisfies instead the exchange law $(\tilde p \star \tilde q)^{\natural} = \tilde q \star \tilde p$; and complexification destroys the definiteness of the norm and with it the three consequences of definiteness, while leaving the unit asymmetry in place. Among the six structures of the space it is the one left-unital, non-associative, zero-divisor-free member.
+The general quaternionic algebra is left-unital and not unital; its product is not associative and fails every weaker rung; it has no zero divisors and no nonzero nilpotents; its only idempotents are $0$ and $e_0$; its left multiplications form a monoid isomorphic to the opposite algebra, its honest right multiplications do not close, and its twisted right multiplications close with the direct law, so the algebra is left-handed; its conjugation fixes the scalar line, negates the vector subspace, is an anti-automorphism of the plain product and not of its own, and satisfies instead the exchange law $(\tilde p \star \tilde q)^{\natural} = \tilde q \star \tilde p$. Among the six structures of the space it is the one left-unital, non-associative, zero-divisor-free member.
 
 ## Summary of Notation
 
@@ -114,11 +106,10 @@ The general quaternionic algebra is left-unital and not unital; its product is n
 | $\varrho_{\tilde p}(\tilde x) = \tilde x\tilde p^{\natural}$ | the twisted right multiplication, law $\varrho_{\tilde p}\varrho_{\tilde q} = \varrho_{\tilde p\tilde q}$ |
 | $\tilde\pi$ | an idempotent, here $0$ or $e_0$ |
 | $\natural$ | the conjugation, fixing the scalar line and negating the vector subspace |
-| $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the complexification, the biquaternion space |
 
 ## Further Reading
 
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the unit, the associator and the ladder of a nonassociative algebra.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for a product with a scalar-valued symmetrisation and the division phenomenon.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for an anti-automorphism of a product and the effect of placing it in a slot.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the division property of the quaternion algebra and its loss under complexification.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the division property of the quaternion algebra.

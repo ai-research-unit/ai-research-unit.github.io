@@ -224,6 +224,5 @@ The similarities $c \mapsto ac+b$ form the affine group $\mathbb{R} \rtimes \mat
 - Marcel Berger, *Geometry I* (Springer, 1987), for the geometry of the line, the affine group and the cross-ratio.
 - Heinrich W. Guggenheimer, *Differential Geometry* (Dover, 1977), for the one-dimensional case of the classification of isometries.
 - David Hilbert and Stephan Cohn-Vossen, *Geometry and the Imagination* (Chelsea, 1952), for symmetry groups and the crystallographic viewpoint.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the Cayley–Klein ladder and the place of the one-dimensional case within it.
 - H. S. M. Coxeter, *Introduction to Geometry* (Wiley, 2nd ed. 1969), for reflections, translations, similarities and the cross-ratio.
 - Manfredo P. do Carmo, *Riemannian Geometry* (Birkhäuser, 1992), for the standard metric, its geodesics and curvature, and the classification of the one-dimensional Riemannian manifolds.

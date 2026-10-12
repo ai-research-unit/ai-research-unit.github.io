@@ -8,7 +8,7 @@ $$
 N(\tilde p,\tilde q) = \beta(\tilde p,\tilde q) = \tfrac12\bigl(N(\tilde p+\tilde q) - N(\tilde p) - N(\tilde q)\bigr) = p_0q_0 + \mathbf p \cdot \mathbf q , \qquad \tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)e_0 .
 $$
 
-This article reads the form: its class, its definiteness, its isotropic elements, its radical, and the comparison with the plain form of the same space and with the biquaternion case. The form is one of the two degree-two forms of the quaternion real space (*The 2 Forms over the Quaternion $\mathbb{R}$ Space*), and its diagonal is the second of the two algebraic norms (*The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*); it is quoted from those articles and not re-derived.
+The form is one of the two degree-two forms of the quaternion real space (*The 2 Forms over the Quaternion $\mathbb{R}$ Space*), and its diagonal is the second of the two algebraic norms (*The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*); it is quoted from those articles and not re-derived.
 
 The structure is trivial in one sense and not in another. Over $\mathbb{R}$ the quaternionic form is **positive definite**, so its isotropic elements reduce to the origin and its radical is trivial: the isotropic structure of this block is empty. But the plain form of the *same* space is indefinite of signature $(1,3)$, with an isotropic cone of real dimension three; the two forms are different degree-two structures on one and the same vector space, and the article is written for that disagreement. The definiteness of the quaternionic form is also the algebraic content of the division property of $\mathbb{H}$, and it is what the change of scalars to $\mathbb{C}$, which makes the form isotropic, undoes.
 
@@ -70,14 +70,6 @@ The plain product of the same space carries the other degree-two form, the **pla
 **Corollary (the shells).** The level sets $N = \lambda$ of the form are the shells of the norm, and they are the root sets of the central values of the square, the shell $N = 1$ being the root set of $+1$ (*Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra*). The shells of the form are the sets that the pin and spin construction of the block uses, and they are nonempty only for $\lambda \geq 0$; the construction is *The Pin and Spin Groups of the General Quaternionic Algebra of Quaternions*, below this article in this category.
 
 **Remark.** The form is definite, so its shells are the level sets of a proper quadratic form and carry no null direction; a generator of a shell is an element with $N \neq 0$, hence with an inverse in the sense of the two one-sided equations, and the group of linear maps preserving the form carries one shell to another. The metric language of the shells, with its limits and its topology, is not used here and belongs to the topology of the quaternions.
-
-## The Comparison with the Biquaternion Case
-
-**Proposition.** Over the biquaternion space $\mathbb{B}$ the quaternionic bilinear form is the complex bilinear form $N(\tilde P,\tilde Q) = P_0Q_0 + (\mathbf P,\mathbf Q)$ with the complex dot product, and it is **isotropic**: its isotropic set is a cone of complex dimension three, a hypersurface of the eight-dimensional real space, and it contains nonzero elements. The radical is still trivial, and the form is non-degenerate.
-
-*Proof.* The form is the same coordinate expression over $\mathbb{C}$, and a complex quadratic form of four variables is isotropic: the element $e_0 + ie_1$ has $N = 1 + i^2 = 0$.
-
-**Corollary.** The definiteness of the form is exactly what the change of scalars destroys, and with it the division property: the biquaternion quaternionic algebra has zero divisors where this one has none, its isotropic elements are the elements $N = 0$, and its isotropic cone is a hypersurface rather than a point (*Introduction to the General Quaternionic Algebra of Biquaternions*, *The Isotropic Cone of the Biquaternion Space*). The quaternion block is the member of the family in which the isotropic structure is empty, and this emptiness is the reason the block's element theory is finite where the biquaternion one is not.
 
 ## Summary
 

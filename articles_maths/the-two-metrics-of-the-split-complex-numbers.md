@@ -10,7 +10,7 @@ The article does not define the two forms, which are *The Two Forms and the Two 
 
 **The split sign, stated once, because it decides the article.** On $\mathbb{C}$ the structure $J$ satisfies $J^{2}=-\mathrm{id}$, and there the Hermitian form is the definite one and gives the Euclidean metric, while the bilinear form is indefinite and gives the split metric. On $\mathbb{D}$ the structure satisfies $J^{2}=+\mathrm{id}$, and the roles are exchanged: the **bilinear** form $B=AC$ realifies to the definite Euclidean metric, and the **Hermitian** form $H=A\bar C$ realifies to the indefinite metric, whose diagonal is the split norm $N$ with its zero-divisor cone. The exchange is the two-dimensional instance of the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complex Numbers*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)$ over $\mathbb{R}$, with basis $1$, $j$ and $j^{2}=+1$; elements are $A=a+ja'$ and $C=c+jc'$ with real $a,a',c,c'$, and conjugation is $\bar A=a-ja'$. The global reading is bar $=$ the involution $j\mapsto-j$, natural sign $=$ identity and Hermitian star $=$ bar (*Conventions in Mathematics*). The letters $B$, $N$, $H$ and $K$ are reserved for the forms: $B(A,C)=AC$ is the general plain bilinear form and $H(A,C)=A\bar C$ the general plain sesquilinear or Hermitian form (*The Two Forms and the Two Algebraic Norms of the Split-Complex Space*). Elements are therefore written $A$ and $C$ and never $B$; the second element of the worked pair, $1-2j$, is written $C$ here.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^{2}-1)$ over $\mathbb{R}$, with basis $1$, $j$ and $j^{2}=+1$; elements are $A=a+ja'$ and $C=c+jc'$ with real $a,a',c,c'$, and conjugation is $\bar A=a-ja'$. The global reading is bar $=$ the involution $j\mapsto-j$ and Hermitian star $=$ bar (*Conventions in Mathematics*). The letters $B$, $N$, $H$ and $K$ are reserved for the forms: $B(A,C)=AC$ is the general plain bilinear form and $H(A,C)=A\bar C$ the general plain sesquilinear or Hermitian form (*The Two Forms and the Two Algebraic Norms of the Split-Complex Space*). Elements are therefore written $A$ and $C$ and never $B$; the second element of the worked pair, $1-2j$, is written $C$ here.
 
 ## The Two Forms and Their Realifications
 
@@ -148,7 +148,7 @@ So the definite group and the indefinite group of $\mathbb{D}$-linear maps share
 
 **Remark (why the count is two and not three).** Accounts of the plane that count a third distance take the plain form $B$ to be the indefinite one, by analogy with the complex case, where the bilinear form is indeed indefinite; the analogy fails here. On $\mathbb{D}$ the plain form realifies to $\operatorname{Re}B(A,C)=ac+a'c'$ of signature $(2,0)$, which is the Euclidean metric itself, so the supposed third distance and the Euclidean metric coincide and the plane carries two. The split sign that moves the indefinite slot from the bilinear form to the Hermitian one is the reason, and it is the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complex Numbers*.
 
-**Remark (the contrast with the biquaternion realification).** The same realification applied to the biquaternion algebra $\mathbb{B}$ gives the general plain bilinear form the split signature $(4,4)$ and the Hermitian form the definite signature $(8,0)$ (*The Realification of the Four Forms*). The pair $(1,1)$, $(2,0)$ of the split-complex space is the two-dimensional shadow of that pair, with the definite slot occupied by the bilinear form instead of the Hermitian one; **the split-complex space carries a definite and an indefinite real form at once, and the split sign decides which form supplies which**.
+**Remark (the realified signatures).** **The split-complex space carries a definite and an indefinite real form at once, and the split sign decides which form supplies which**: the definite slot is occupied by the bilinear form.
 
 ## Worked Example
 
@@ -172,7 +172,7 @@ for every real $t$; the same holds on the line of direction $1-j$. On those diff
 
 The one split-complex plane carries two real quadratic functions, one from each of the two forms, and the split sign decides which. The general plain bilinear form $B(A,C)=AC$ realifies to the Euclidean metric $d_{B}^{2}(A,C)=(a-c)^{2}+(a'-c')^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the Euclidean norm of the difference. The general plain Hermitian form $H(A,C)=A\bar C$ realifies to the indefinite metric $d_{H}^{2}(A,C)=(a-c)^{2}-(a'-c')^{2}=N(A-C)$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $a-c=\pm(a'-c')$, the zero-divisor directions of the ring, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps has the hyperbolic rotations as identity component and four components in all.
 
-The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{H}^{2}=2(a'-c')^{2}$ and $d_{B}^{2}+d_{H}^{2}=2(a-c)^{2}$; the forms are exchanged by conjugation of the second slot, $\operatorname{Re}B(A,\bar C)=\operatorname{Re}H(A,C)$, and multiplication by $j$ preserves the Euclidean metric and reverses the indefinite one. The pair $(1,1)$, $(2,0)$ is the two-dimensional shadow of the biquaternion pair $(4,4)$, $(8,0)$, with the definite slot on the bilinear form rather than the Hermitian one, and this exchange of the slots is the split sign $J^{2}=+\mathrm{id}$.
+The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{H}^{2}=2(a'-c')^{2}$ and $d_{B}^{2}+d_{H}^{2}=2(a-c)^{2}$; the forms are exchanged by conjugation of the second slot, $\operatorname{Re}B(A,\bar C)=\operatorname{Re}H(A,C)$, and multiplication by $j$ preserves the Euclidean metric and reverses the indefinite one. The definite slot is on the bilinear form rather than the Hermitian one, and this exchange of the slots is the split sign $J^{2}=+\mathrm{id}$.
 
 ## Summary of Notation
 
@@ -191,7 +191,6 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 | $M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1)$ | the condition for preserving $\operatorname{Re}H$ |
 | $J(A)=jA$ | the split complex structure, $J^{2}=+\mathrm{id}$; preserves $d_{B}^{2}$, reverses $d_{H}^{2}$ |
 | $\{\pm1,\pm j\}$, $\{N=1\}$ | the $\mathbb{D}$-linear preservers of $d_{B}^{2}$ and of $d_{H}^{2}$ |
-| $(2,0),(1,1)$ | the two realified signatures, against $(8,0),(4,4)$ for $\mathbb{B}$ |
 
 ## Further Reading
 
@@ -204,6 +203,5 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 - *Split-Complex Null Quadric and Projective Geometry* (`articles_maths/split-complex-null-quadric-and-projective-geometry.md`), for the null cone of the indefinite metric read projectively.
 - *Split-Complex Subspaces* (`articles_maths/split-complex-subspaces.md`), for the real and split imaginary subspaces on which the indefinite metric is definite of opposite signs.
 - *The Two Metrics of the Complex Numbers* (`articles_maths/the-two-metrics-of-the-complex-numbers.md`), for the mirror image of the present pair, where the definite slot is on the Hermitian form.
-- *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the biquaternion signatures $(4,4)$ and $(8,0)$ of which the present pair is the two-dimensional shadow.
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for Gram matrices, inertia and the groups preserving a symmetric or Hermitian form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the definite and indefinite forms of the plane and their groups.

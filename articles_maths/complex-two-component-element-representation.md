@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article presents the **two-component realization** of the complex algebra: a complex number read off as its pair of real coordinates. It is the smallest realization in the tensor family, and it is the two-dimensional analogue of the four-vector realization of the biquaternion algebra $\mathbb{B}$. The word *representation* is used here in the sense of a concrete realization of the algebra by computable objects and not in the technical sense of an algebra acting on a vector space: the two-component reading supplies the coordinate space, the column and the row, the component form of the product with its rotation matrix on the unit circle, the conjugation in coordinates, the two distinguished subspaces and the norm; the operator so obtained is developed in *Complex Regular Element Representation*.
+This article presents the **two-component realization** of the complex algebra: a complex number read off as its pair of real coordinates. It is the smallest realization in the family. The word *representation* is used here in the sense of a concrete realization of the algebra by computable objects and not in the technical sense of an algebra acting on a vector space: the two-component reading supplies the coordinate space, the column and the row, the component form of the product with its rotation matrix on the unit circle, the conjugation in coordinates, the two distinguished subspaces and the norm; the operator so obtained is developed in *Complex Regular Element Representation*.
 
-The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $A = a + i a'$ with $a,a' \in \mathbb{R}$, involution $\bar A = a - i a'$, norm $N(A) = a^2+a'^2$. Where the biquaternion article has four complex coordinates $Q^\mu$ and eight real coordinates, this article has two real coordinates and no complex coefficient field; the economy is the whole content of the two-dimensional case.
+The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $A = a + i a'$ with $a,a' \in \mathbb{R}$, involution $\bar A = a - i a'$, norm $N(A) = a^2+a'^2$. This article has two real coordinates and no complex coefficient field; the economy is the whole content of the two-dimensional case.
 
 ## The Coefficient Space
 
@@ -21,7 +21,7 @@ with $A^0 = a$ the **real component** and $A^1 = a'$ the **imaginary component**
 
 **Proof.** The map sends the basis $1, i$ to the standard basis $(1,0)$, $(0,1)$ of $\mathbb{R}^2$ and is extended by linearity; it is bijective on bases.
 
-The coefficient space $\mathbb{R}^2$ is **not** a complex vector space in a canonical way until the complex structure $J$ is imposed, and it is not the module $V$ of the representation theory, which is one-dimensional over $\mathbb{C}$; the two-component space is the algebra itself, read in real coordinates. This is the first difference from the biquaternion four-vector, whose coefficient space is $\mathbb{C}^4$: there each of the four components is itself a complex number, while here the single complex coordinate has been split into its two real parts.
+The coefficient space $\mathbb{R}^2$ is **not** a complex vector space in a canonical way until the complex structure $J$ is imposed, and it is not the module $V$ of the representation theory, which is one-dimensional over $\mathbb{C}$; the two-component space is the algebra itself, read in real coordinates. Here the single complex coordinate has been split into its two real parts.
 
 ### The Two Components and Their Real Parts
 
@@ -30,7 +30,7 @@ The two components are $A^0 = a$ and $A^1 = a'$, both real; there is no further 
 - the real subspace $\mathbb{R}_{\mathbb{C}}$ is the set of pairs with $A^1 = 0$;
 - the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$ is the set of pairs with $A^0 = 0$.
 
-The norm does not decompose further: it is the positive-definite expression $(A^0)^2 + (A^1)^2$ in the two real coordinates, in contrast with the biquaternion form, whose real and imaginary parts are $\sum_\mu ((a^\mu)^2 - (b^\mu)^2)$ and $2\sum_\mu a^\mu b^\mu$ in eight real coordinates.
+The norm does not decompose further: it is the positive-definite expression $(A^0)^2 + (A^1)^2$ in the two real coordinates.
 
 ## The Column and the Row
 
@@ -54,7 +54,7 @@ $$
 
 where $\mathsf{M}_2(A) = \begin{pmatrix} a & -a' \\ a' & a \end{pmatrix}$ is the Cayley matrix of *Complex Regular Element Representation*, each entry of which is a single component of $A$ carrying a sign. The present article records only that the product rule admits this reading; the operator is developed there.
 
-**Remark (the row is the dual).** The row $A^{\mathsf{T}}$ is the element of the dual space associated with $A$ under the standard pairing, and it is not a further realization of the algebra. Because the algebra is commutative and the ground field is $\mathbb{R}$, the left and right actions coincide and the distinction between the column picture and the row picture carries no information: the row is the transpose and nothing more. This is the placement, in two dimensions, of the biquaternion remark that the row carries the right action and is related to the column by transposition dressed with quaternion conjugation; the dressing is absent here because the involution acts on the two real components without a coefficient field to conjugate.
+**Remark (the row is the dual).** The row $A^{\mathsf{T}}$ is the element of the dual space associated with $A$ under the standard pairing, and it is not a further realization of the algebra. Because the algebra is commutative and the ground field is $\mathbb{R}$, the left and right actions coincide and the distinction between the column picture and the row picture carries no information: the row is the transpose and nothing more. The involution acts on the two real components without a coefficient field to conjugate.
 
 ## Multiplication in Two-Component Form
 
@@ -72,7 +72,7 @@ $$
 AB = BA, \qquad (a b-a' b', a b'+a' b) = (b a-b' a', b a'+b' a),
 $$
 
-so there is no antisymmetric term and no commutator. In the four-vector form of the biquaternions the scalar component is $Q^0R^0 - \sum_k Q^kR^k$ and each vector component carries a Levi-Civita term $2\sum_{j,k}\epsilon^{ijk}Q^jR^k$, which is the only trace of non-commutativity; here the two-component product has no such term, and its absence is the commutativity of the field.
+so there is no antisymmetric term and no commutator. The two-component product has no such term, and its absence is the commutativity of the field.
 
 **Example.** For $A = (3,4)$ and $B = (1,-2)$ the product is $(3\cdot 1 - 4\cdot(-2),\, 3\cdot(-2)+4\cdot 1) = (11,-2)$, the element $11-2i$; the reversed order gives the same pair.
 
@@ -85,7 +85,7 @@ The product formula is the row-by-row reading of the multiplication table of the
 | $1$ | $1$ | $i$ |
 | $i$ | $i$ | $-1$ |
 
-The first row and the first column reproduce the basis, since $1$ is the identity. The corner $\mu = \nu = 1$ carries $-1$, which is why the scalar component of a product is $a b-a' b'$, and the off-diagonal entries carry $i$, which is why the imaginary component is $a b'+a' b$. The table is symmetric about the diagonal, $e_\mu e_\nu = e_\nu e_\mu$, whereas the quaternion table of the four-vector article is skew off the diagonal. The same table read as a map on the column space is the regular matrix of *Complex Regular Element Representation*.
+The first row and the first column reproduce the basis, since $1$ is the identity. The corner $\mu = \nu = 1$ carries $-1$, which is why the scalar component of a product is $a b-a' b'$, and the off-diagonal entries carry $i$, which is why the imaginary component is $a b'+a' b$. The table is symmetric about the diagonal, $e_\mu e_\nu = e_\nu e_\mu$. The same table read as a map on the column space is the regular matrix of *Complex Regular Element Representation*.
 
 ### The Rotation Matrix
 
@@ -152,7 +152,7 @@ In two-component form the norm has **both signs positive**.
 
 **Proof.** $(a+i a')(a-i a') = a^2 - (i a')^2 = a^2 + a'^2$.
 
-The norm is a positive-definite quadratic form on the coefficient space $\mathbb{R}^2$, of signature $(2,0)$. This is a genuine difference from the biquaternion norm, which is a complex quadratic form on $\mathbb{C}^4$ with all four signs positive but which restricts to real forms of opposite signatures on the two sectors. There is no indefinite form on the coefficient space here, and no restriction can produce one, because there is no central scalar imaginary separate from the algebra.
+The norm is a positive-definite quadratic form on the coefficient space $\mathbb{R}^2$, of signature $(2,0)$. There is no indefinite form on the coefficient space here, and no restriction can produce one, because there is no central scalar imaginary separate from the algebra.
 
 ### The Two Signs
 
@@ -168,7 +168,7 @@ $$
 N(A) = a'^2.
 $$
 
-Both restrictions are **positive definite**, of signature $(1,0)$, and the form is $(+,+)$ on the coordinate space. In the biquaternion algebra the two corresponding restrictions have opposite signatures, $(1,3)$ and $(3,1)$, because the sectors there are exchanged by multiplication by the central imaginary, which reverses the sign of the norm. Here the two signs coincide and the two signatures agree: the opposite-sign pattern of the indefinite algebra does not occur, and the definiteness of the form is why the complex algebra has no zero divisors and no null cone.
+Both restrictions are **positive definite**, of signature $(1,0)$, and the form is $(+,+)$ on the coordinate space. The two signs coincide and the two signatures agree: the opposite-sign pattern of an indefinite algebra does not occur, and the definiteness of the form is why the complex algebra has no zero divisors and no null cone.
 
 ### The Unit Criterion in Coordinates
 
@@ -184,11 +184,11 @@ $$
 
 ## Summary
 
-The two-component realization reads a complex number $A = a+i a'$ as its pair of real coordinates $(A^0,A^1) = (a,a')$, an $\mathbb{R}$-linear isomorphism onto $\mathbb{R}^2$; it is the two-dimensional analogue of the four-vector realization of the biquaternion algebra. The column is the pair written vertically, the row is its dual by transposition, and because the algebra is commutative the left and right actions coincide and the row carries no separate right action.
+The two-component realization reads a complex number $A = a+i a'$ as its pair of real coordinates $(A^0,A^1) = (a,a')$, an $\mathbb{R}$-linear isomorphism onto $\mathbb{R}^2$. The column is the pair written vertically, the row is its dual by transposition, and because the algebra is commutative the left and right actions coincide and the row carries no separate right action.
 
-The product in components is $(a b-a' b', a b'+a' b)$, the multiplication table of the basis being symmetric about the diagonal, and there is no Levi-Civita term: the antisymmetric part of the biquaternion product has no analogue, and its absence is the commutativity of the field. On the unit circle the component product is the rotation matrix $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, and a general element has $\mathsf{M}_2(A) = rR_\theta$, the scale times the rotation. The conjugation acts by $(a,a') \mapsto (a,-a')$, a reflection of the plane; its fixed subspace is the real axis $A^1 = 0$ and its anti-fixed subspace the imaginary axis $A^0 = 0$, each of real dimension one.
+The product in components is $(a b-a' b', a b'+a' b)$, the multiplication table of the basis being symmetric about the diagonal, and there is no antisymmetric term: its absence is the commutativity of the field. On the unit circle the component product is the rotation matrix $R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}$, and a general element has $\mathsf{M}_2(A) = rR_\theta$, the scale times the rotation. The conjugation acts by $(a,a') \mapsto (a,-a')$, a reflection of the plane; its fixed subspace is the real axis $A^1 = 0$ and its anti-fixed subspace the imaginary axis $A^0 = 0$, each of real dimension one.
 
-The norm is $N(A) = (A^0)^2 + (A^1)^2$, with both signs positive. Its restrictions to the two subspaces are $a^2$ and $a'^2$, both positive definite, so the opposite signatures of the biquaternion sectors do not occur and the form is definite. The invertibility criterion is $(a,a') \neq (0,0)$, and the inverse in coordinates is $(a,-a')/(a^2+a'^2)$.
+The norm is $N(A) = (A^0)^2 + (A^1)^2$, with both signs positive. Its restrictions to the two subspaces are $a^2$ and $a'^2$, both positive definite, so the form is definite. The invertibility criterion is $(a,a') \neq (0,0)$, and the inverse in coordinates is $(a,-a')/(a^2+a'^2)$.
 
 ## Summary of Notation
 
@@ -210,7 +210,5 @@ The norm is $N(A) = (A^0)^2 + (A^1)^2$, with both signs positive. Its restrictio
 ## Further Reading
 
 - Carl Friedrich Gauss, *Theoria residuorum biquadraticorum, Commentatio secunda* (Göttingen, 1831), for the representation of a complex number by two real coordinates.
-- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the coordinate treatment of multiplication.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the coordinate form of multiplication and its conjugations in the hypercomplex case.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the quadratic forms and signatures attached to a real algebra in coordinates.
 - Tristan Needham, *Visual Complex Analysis* (Oxford University Press, 1997), for the rotation-and-scaling reading of the component product.

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The quaternion four-vector representation is the identification of a quaternion with the ordered quadruple of its four real coordinates. It is the simplest of the representations of the algebra and the one on which the others are read: the column vector of coordinates, its dual row vector, the component form of the product, the coordinate forms of the three involutions and of the scalar and vector subspaces, and the quaternion norm as a sum of four positive squares. This article develops those identifications. It is the quaternion member of the family's coordinate-representation pair; its counterpart is the four-vector representation of the biquaternion algebra, where the four coordinates are complex and the quaternion norm has an indefinite complex signature rather than four positive signs.
+The quaternion four-vector representation is the identification of a quaternion with the ordered quadruple of its four real coordinates. It is the simplest of the representations of the algebra and the one on which the others are read: the column vector of coordinates, its dual row vector, the component form of the product, the coordinate forms of the three involutions and of the scalar and vector subspaces, and the quaternion norm as a sum of four positive squares. This article develops those identifications.
 
 The article is coordinate bookkeeping on the algebra fixed in *Quaternion Algebra*: the basis $(e_0,e_1,e_2,e_3)$, the multiplication rules, the conjugate and the scalar–vector decomposition are used as given. The matrix forms built from the coordinates are the subject of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* and *Quaternion 2x2 Matrix Element Representation*, and the subspaces in coordinates are from *The Scalar and Vector Subspaces of $\mathbb{H}$*.
 
@@ -116,28 +116,13 @@ and the associated bilinear form is the standard Euclidean inner product $\mathr
 
 *Proof.* The sum of four squares of real numbers is non-negative and vanishes only at the origin; the remaining statements are the definitions.
 
-## Relation to the The Four-Vector Element Representation of Biquaternions
-
-In the biquaternion algebra the four coordinates are complex numbers and the coordinate map is an isomorphism $\mathbb{B}\to\mathbb{C}^4$; the four-vector representation there carries the complex conjugate on each coordinate and an indefinite norm, because the complex norm is not positive. The two representations share their bookkeeping — the coordinate vector, the dual row, the component product and the two subspaces — and differ in the field of the coordinates and in the sign pattern of the quaternion norm.
-
-| Feature | $\mathbb{H}$ | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-|---|---|---|
-| Coordinate field | $\mathbb{R}$ | $\mathbb{C}$ |
-| Coordinates of $\tilde q$ | four reals $q_0,q_1,q_2,q_3$ | four complex numbers |
-| Additional conjugation | none | complex conjugation of each coordinate |
-| Norm | $\sum_\mu q_\mu^2$ | $\sum_\mu q_\mu^2$ with complex $q_\mu$ |
-| Sign pattern of $N$ | four positive signs | indefinite, values in $\mathbb{C}$ |
-| Inner product | Euclidean, positive definite | Hermitian, indefinite |
-
-The table makes the point of the comparison: the quaternion coordinate description is the real one, with four positive signs, and it becomes the biquaternion description by extending the coordinate field. The extra structure of the biquaternion case — the further conjugation and the indefinite form — is exactly what the complexification supplies, and it is not available over $\mathbb{R}$. The biquaternion account is in *The Four-Vector Element Representation of Biquaternions*.
-
 ## Summary
 
 The four-vector representation identifies a quaternion with the quadruple of its coordinates in the basis $(e_0,e_1,e_2,e_3)$; the column vector $[\tilde q]$ and the dual row $[\tilde q]^T$ carry the algebra, the row acting on the column by the Euclidean inner product $\mathrm{Sc}(\tilde q\bar p)$. The product is computed in components by $(p\tilde q)_0 = p_0q_0-\langle\mathbf{p},\mathbf{q}\rangle$ and $(p\tilde q)_k$ the three components of $p_0\mathbf{q}+q_0\mathbf{p}+\mathbf{p}\times\mathbf{q}$, so that the coordinate rule is the three-dimensional scalar and vector product extended by the scalar coordinates.
 
 The three involutions are the diagonal sign matrices $\operatorname{diag}(1,-1,-1,-1)$, $\operatorname{diag}(-1,1,1,1)$ and $-I$, whose fixed coordinate sets are the first axis, the hyperplane $q_0 = 0$ and the origin. The scalar and vector subspaces are the first axis and that hyperplane, an orthogonal decomposition of the coordinate space, and the quaternion norm is the sum of the four positive squares $[\tilde q]^T[\tilde q]$.
 
-The biquaternion four-vector representation has the same shape over the complex field, with four complex coordinates, an additional coordinatewise conjugation and an indefinite norm. The quaternion case is the real case, and its four positive signs are the whole of the difference.
+The quaternion case is the real case, and its four positive signs are the whole of the difference.
 
 ## Summary of Notation
 
@@ -156,7 +141,6 @@ The biquaternion four-vector representation has the same shape over the complex 
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Scalar axis and vector hyperplane in coordinates |
 | $N(\tilde q) = \sum_{\mu=0}^{3}q_\mu^2 = [\tilde q]^{T}[\tilde q]$ | Quaternion norm, four positive signs |
 | $\mathbf{p}\times\mathbf{q}$ | Cross product in the vector coordinates |
-| $\mathbb{B}$ | Biquaternion algebra, four complex coordinates, indefinite form |
 
 ## Further Reading
 

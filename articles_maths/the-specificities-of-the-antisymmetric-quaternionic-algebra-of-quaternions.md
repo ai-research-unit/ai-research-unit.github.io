@@ -12,7 +12,6 @@ The block is **alternating** like its plain companion, and unlike it, it **fails
 the two facts together isolate it, since it is the only alternating product of the six that is not a
 Lie bracket. It has no unit, hence no inverse and no group of units, and no algebraic norm in the sense
 of the block. Its idempotents reduce to $0$, and its nilpotents are the whole space. The idempotent and
-the nilpotent theory, which the biquaternion chapter gave separate articles, are folded here.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real scalars,
 but $\diamond$ is a different multiplication, alternating, without a unit and without the Jacobi
@@ -112,8 +111,6 @@ $$
 $$
 
 *Proof.* The square is zero for every element, so the equation is $\tilde\pi=0$. The idempotent theory
-of the biquaternion block, where nontrivial idempotents exist, is *Idempotents of the Antisymmetric
-Quaternionic Algebra* of the biquaternion chapter; here the class reduces to the origin and is folded
 into this article.
 
 ### The Nilpotents

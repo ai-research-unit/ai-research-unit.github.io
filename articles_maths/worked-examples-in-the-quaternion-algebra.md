@@ -123,9 +123,7 @@ $$
 \mathsf{M}_2(\tilde q) = \begin{pmatrix} 1-3i & 1-2i \\ -1-2i & 1+3i \end{pmatrix}.
 $$
 
-Its trace is $2q_0 = 2$ and its determinant is $N(\tilde q) = 15$, in agreement with the general identities $\operatorname{tr}\mathsf{M}_2(\tilde Q) = 2Q_0$ and $\det\mathsf{M}_2(\tilde Q) = N(\tilde Q)$.
-
-**The $4\times4$ real image.** Under the left regular representation of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*, whose Cayley matrix has the four general products $\tilde q e_k$ for columns, the worked element has image
+Its trace is $2q_0 = 2$ and its determinant is $N(\tilde q) = 15$, in agreement with the general identities $\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_0$ and $\det\mathsf{M}_2(\tilde q) = N(\tilde q)$.
 
 $$
 \mathsf{M}_4(\tilde q) = \begin{pmatrix}

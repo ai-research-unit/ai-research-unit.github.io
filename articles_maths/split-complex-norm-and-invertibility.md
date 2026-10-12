@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article treats the multiplicative size of a split-complex number: the **norm** $N(A) = A\bar{A} = a^2-a'^2$, its multiplicativity, the region on which it vanishes, and the invertibility criterion it supplies. It is the two-dimensional member of the family of articles on the norm, and its counterpart is *Norm and Invertibility in the General Plain Algebra*; the four-dimensional case has a complex-valued norm that can vanish on a large cone, while here the form is real and indefinite of signature $(1,1)$, and its vanishing set is a pair of lines.
+This article treats the multiplicative size of a split-complex number: the **norm** $N(A) = A\bar{A} = a^2-a'^2$, its multiplicativity, the region on which it vanishes, and the invertibility criterion it supplies. It is the two-dimensional member of the family of articles on the norm; the higher-dimensional case has a complex-valued norm that can vanish on a large cone, while here the form is real and indefinite of signature $(1,1)$, and its vanishing set is a pair of lines.
 
-The organisation follows the biquaternion article. The norm is defined and shown multiplicative; it is shown **not** to be definite, and its square root $|N|^{1/2}$ is shown to be a modulus only up to a sign, which produces the two regimes that recur throughout the category. The Euclidean form is then separated from the norm, as in the four-dimensional case, and the invertibility of an element is reduced to the non-vanishing of the norm. The group of units, its four components and its non-compactness are established, the elements are classified in three ways, and the distribution of the invertible elements among the distinguished subspaces is tabulated.
+The organisation is as follows. The norm is defined and shown multiplicative; it is shown **not** to be definite, and its square root $|N|^{1/2}$ is shown to be a modulus only up to a sign, which produces the two regimes that recur throughout the category. The Euclidean form is then separated from the norm, as in the four-dimensional case, and the invertibility of an element is reduced to the non-vanishing of the norm. The group of units, its four components and its non-compactness are established, the elements are classified in three ways, and the distribution of the invertible elements among the distinguished subspaces is tabulated.
 
 The conventions are those of *Split-Complex Algebra*: the basis is $1$, $j$, with $j^2 = +1$, a general element is $A = a + j a'$ with $a = \operatorname{Re}A$ and $a' = \operatorname{Im}A$, the conjugate is $\bar{A} = a-j a'$, and the idempotent basis is $\Pi_{1,2} = \tfrac12(1\pm j)$ with $A = A_+\Pi_1 + A_-\Pi_2$, $A_\pm = a\pm a'$. The modulus $\rho = \sqrt{|N(A)|}$ is defined in this article as the positive scale carried by the polar factorisation.
 
@@ -167,17 +167,17 @@ $$
 A_+^2 + A_-^2 = (a+a')^2 + (a-a')^2 = 2(a^2+a'^2) = 2\|A\|_E^2.
 $$
 
-So the Euclidean form is the sum of the norm and twice the square of the imaginary part, and the idempotent form is exactly twice the Euclidean norm squared. The biquaternion article separates its norm from its Hermitian form in the same spirit: there the Hermitian form is a biquaternion whose scalar part is the Euclidean norm squared; here there is no Hermitian form, only the Euclidean one, and the two are related by the diagonal display above.
+So the Euclidean form is the sum of the norm and twice the square of the imaginary part, and the idempotent form is exactly twice the Euclidean norm squared. There is no Hermitian form here, only the Euclidean one, and the two are related by the diagonal display above.
 
 ### The Absence of a Positive-Definite Hermitian Form
 
-There is no positive-definite **Hermitian form** on $\mathbb{D}$ analogous to the one on $\mathbb{C}$, because the conjugation group is too small. The single non-trivial involution ${}^{\natural}$ produces the sesquilinear expression
+There is no positive-definite **Hermitian form** on $\mathbb{D}$ analogous to the one on $\mathbb{C}$, because the conjugation group is too small. The non-trivial involution $\bar{\cdot}$ produces the sesquilinear expression
 
 $$
 A\bar B = (a b - a' b') + (a' b - a b')j, \qquad A = a+j a', \; B = b+j b',
 $$
 
-whose real part is $g(A,B) = a b - a' b'$, the polarisation of $N$, and is therefore indefinite of signature $(1,1)$; neither this form nor its negative is definite. The biquaternion article has a genuine Hermitian form $\tilde Q\tilde{Q}^{*}$, because its conjugation group is the Klein four-group and supplies a positive-definite combination; here that slot is empty, and the positive-definite substitute is the Euclidean form $\langle A,B\rangle = a b + a' b'$ of the preceding section, which does not depend on the algebra structure.
+whose real part is $g(A,B) = a b - a' b'$, the polarisation of $N$, and is therefore indefinite of signature $(1,1)$; neither this form nor its negative is definite. Here that slot is empty, and the positive-definite substitute is the Euclidean form $\langle A,B\rangle = a b + a' b'$ of the preceding section, which does not depend on the algebra structure.
 
 ## Invertibility
 
@@ -307,7 +307,7 @@ on each of which $N$ vanishes identically. These lines are not fixed by the conj
 | $\mathbb{R}\Pi_1$ | $1$ | $0$ | none but $0$ | all nonzero |
 | $\mathbb{R}\Pi_2$ | $1$ | $0$ | none but $0$ | all nonzero |
 
-So the two eigenspaces of the conjugation are totally invertible, while the two null lines are totally singular; the null cone meets the two eigenspaces only at the origin, exactly as in the biquaternion case where the null cone meets the pure reality slices only at the apex.
+So the two eigenspaces of the conjugation are totally invertible, while the two null lines are totally singular; the null cone meets the two eigenspaces only at the origin, as it also does on the pure reality slices.
 
 ## The Relation to the Idempotent Decomposition
 
@@ -317,23 +317,13 @@ $$
 A \longmapsto (A_+, A_-), \qquad \mathbb{D}^\times \longmapsto \mathbb{R}^\times\times\mathbb{R}^\times,
 $$
 
-and an element is a unit exactly when both idempotent coordinates are nonzero. The inverse is the componentwise inverse, and the norm is the product of the two coordinates. The group of units is thus the direct product of the two copies of $\mathbb{R}^\times$, and its four components are the four sign combinations of the two coordinates. This is the two-dimensional analogue of the biquaternion relation between the norm and the Hermitian decomposition: there the units form $GL(2,\mathbb{C})$; here they form $\mathbb{R}^\times\times\mathbb{R}^\times$, the maximal torus of the four-dimensional case in the real picture.
-
-## Comparison with the Complex and Biquaternion Cases
-
-| algebra | norm | definite? | units | components |
-|---|---|---|---|---|
-| $\mathbb{C}$ | $a^2+b^2$, real | yes, positive | all nonzero | $1$ (connected) |
-| $\mathbb{D}$ | $a^2-a'^2$, real | no, signature $(1,1)$ | $N \neq 0$ | $4$ |
-| $\mathbb{B}$ | $\sum_\mu Q_\mu^2$, complex | no | $N \neq 0$, $\mathbb{B}^\times \cong GL(2,\mathbb{C})$ | $1$ (connected) |
-
-The complex case is the definite one: its norm is positive-definite, every nonzero element is a unit, and the unit group is connected. The split-complex case is the indefinite two-dimensional one: the norm is real of signature $(1,1)$, its zero set is the pair of null lines, and the unit group has four components and is non-compact. The biquaternion case is the indefinite four-dimensional complexification: its norm is complex-valued, its zero set is a six-real-dimensional cone, and its unit group is the connected $GL(2,\mathbb{C})$, with compact retract $U(2)$; the details are in *Norm and Invertibility in the General Plain Algebra*. The split-complex algebra is the smallest member of the family in which the norm is indefinite and the unit group disconnected, and it exhibits both phenomena without the non-commutativity of the four-dimensional algebra.
+and an element is a unit exactly when both idempotent coordinates are nonzero. The inverse is the componentwise inverse, and the norm is the product of the two coordinates. The group of units is thus the direct product of the two copies of $\mathbb{R}^\times$, and its four components are the four sign combinations of the two coordinates. The units form $\mathbb{R}^\times\times\mathbb{R}^\times$.
 
 ## Summary
 
 The norm of a split-complex number is $N(A) = A\bar{A} = a^2-a'^2$, a non-degenerate quadratic form of signature $(1,1)$, multiplicative under multiplication of the algebra. It is not definite: it vanishes on the isotropic cone $\mathcal{N} = \mathbb{R}\Pi_1\cup\mathbb{R}\Pi_2$, the union of the two null lines. Its absolute-value square root $\rho = \sqrt{|N(A)|} = \sqrt{|A_+A_-|}$ is multiplicative and absolutely homogeneous, positive exactly on the units, and it splits the algebra into the two regimes $N>0$ (spacelike) and $N<0$ (timelike).
 
-An element is a unit exactly when its norm does not vanish, and then $A^{-1} = \bar A/N(A) = A_+^{-1}\Pi_1 + A_-^{-1}\Pi_2$. The group of units is $\mathbb{D}^\times = \{N \neq 0\} \cong \mathbb{R}^\times\times\mathbb{R}^\times$, an abelian group with four connected components and non-compact, in contrast with the compact connected unit circle of $\mathbb{C}$ and with the connected $GL(2,\mathbb{C})$ of $\mathbb{B}$. The elements are classified as spacelike, null or timelike by the sign of the norm, the classification being multiplicative; the null class consists of the zero divisors together with the origin. On the two eigenspaces of the conjugation the restricted norm is definite, so the null cone meets each of them only at the origin; all zero divisors lie on the two null lines.
+An element is a unit exactly when its norm does not vanish, and then $A^{-1} = \bar A/N(A) = A_+^{-1}\Pi_1 + A_-^{-1}\Pi_2$. The group of units is $\mathbb{D}^\times = \{N \neq 0\} \cong \mathbb{R}^\times\times\mathbb{R}^\times$, an abelian group with four connected components and non-compact, in contrast with the compact connected unit circle of $\mathbb{C}$. The elements are classified as spacelike, null or timelike by the sign of the norm, the classification being multiplicative; the null class consists of the zero divisors together with the origin. On the two eigenspaces of the conjugation the restricted norm is definite, so the null cone meets each of them only at the origin; all zero divisors lie on the two null lines.
 
 ## Summary of Notation
 
@@ -358,7 +348,6 @@ An element is a unit exactly when its norm does not vanish, and then $A^{-1} = \
 ## Further Reading
 
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex numbers as a Clifford algebra and their norm.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real composition and division algebras.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the signature, the isotropic cone and the theory of indefinite quadratic forms.
 - Benson Farb and R. Keith Dennis, *Noncommutative Algebra* (Springer, 1993), for invertibility, zero divisors and the group of units in a finite-dimensional algebra.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the geometric reading of the norm and the null lines.

@@ -6,7 +6,7 @@ The biquaternion norm fixes the interval of the framework, the light cone on whi
 
 The biquaternion norm is the object the series calls the **level-1 form**, and it is the reason the framework is written the way it is. It is multiplicative, it is complex-valued in general, and it vanishes on a set of nonzero elements. Multiplicativity is what makes a unit-norm element a transformation that preserves an interval; the complex value is what lets one algebraic object carry the metric of the material sector and the opposite signature on the informational sector; and the vanishing set is the light cone. Invertibility is then the algebraic counterpart of being off the cone, and the group of units is the group of the transformations of the series.
 
-Every claim is proved or checked. The physical interpretations are identifications with the coordinate dictionary of *Conventions in the Biquaternion Universe*, and they are flagged as interpretations wherever they occur.
+Every claim is proved or checked. The **physical interpretations** are identifications with the coordinate dictionary of *Conventions in the Biquaternion Universe*, and they are flagged as interpretations wherever they occur.
 
 Throughout, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ and the scalar imaginary is $i$, so that it does not collide with the quaternion units. A general biquaternion is
 
@@ -309,7 +309,7 @@ $$
 Q_1^2+Q_2^2+Q_3^2 = 0 ,
 $$
 
-the **nilpotent cone**, whose nonzero elements are the pure zero divisors. As a complex cone in $\mathbb{C}^3$ it has real dimension 4, hence real codimension 2 in the six-dimensional sector, and its complement — the invertible elements — is therefore **connected**. The physical interpretation is that this sector carries the two spatial triples $(x,y,z)$ and $(ix',iy',iz')$ at once, and a complex spatial vector can be null only through a conspiracy of both: the condition is two real equations, not one, so it does not divide the sector into regions the way a light cone does.
+the **nilpotent cone**, whose nonzero elements are the pure zero divisors. As a complex cone in $\mathbb{C}^3$ it has real dimension 4, hence real codimension 2 in the six-dimensional sector, and its complement — the invertible elements — is therefore **connected**. The **physical interpretation** is that this sector carries the two spatial triples $(x,y,z)$ and $(ix',iy',iz')$ at once, and a complex spatial vector can be null only through a conspiracy of both: the condition is two real equations, not one, so it does not divide the sector into regions the way a light cone does.
 
 The intersection $\mathrm{Vect}(\mathbb{B})\cap\mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ consists of invertible elements away from the origin, since $N$ restricts to $q_1^2+q_2^2+q_3^2$ there: **the real spatial vectors are never null**.
 

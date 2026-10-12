@@ -4,9 +4,7 @@
 
 This article treats the ideal structure of the quaternion algebra. Its subject is the statement that $\mathbb{H}$ has no proper one-sided or two-sided ideals, and the consequences of that statement: that $\mathbb{H}$ is simple as a ring, that it is a central simple algebra over its centre, and that its modules over itself are all free. The article is the ideal-theoretic counterpart of *Norm and Invertibility in the General Plain Algebra*, which supplies the division property used here as the single input; the two share the statement of division, and the boundary between them is that the quaternion norm article owns the quaternion norm and the unit group, while this article owns the absence of ideals and the central-simplicity statement.
 
-The biquaternion counterpart of this article, *Ideals and Peirce Decomposition of the General Plain Algebra*, develops the same questions in an algebra that is not a division algebra: there the algebra is simple as a ring but carries minimal left ideals and a Peirce decomposition, and it is the direct sum of two such ideals. The contrast is the theme of the last sections of this article, and it is sharp: the properties that the biquaternion algebra has and the quaternion algebra does not are precisely the properties that depend on the presence of idempotents, and $\mathbb{H}$ has no idempotent other than $0$ and $1$.
-
-The corpus's default base is a commutative ring with identity. The quaternion algebra is defined over such a base by its presentation, and the ideal-theoretic statements below hold for an algebra over a commutative ring in which it is a division algebra; the statements that involve the centre and the Brauer group are stated over a field $F$ of characteristic not $2$, and the classical case is $F = \mathbb{R}$. The corpus's convention on the two sibling symbols is respected throughout: $\mathbb{H}_{\mathrm{s}}$ is the split quaternion algebra and $\mathbb{H}_{\mathbb{D}}$ the split biquaternion algebra, and neither is used here except in the comparisons.
+The corpus's default base is a commutative ring with identity. The quaternion algebra is defined over such a base by its presentation, and the ideal-theoretic statements below hold for an algebra over a commutative ring in which it is a division algebra; the statements that involve the centre and the Brauer group are stated over a field $F$ of characteristic not $2$, and the classical case is $F = \mathbb{R}$.
 
 Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$, over a field $F$ of characteristic not $2$ unless stated otherwise; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The quaternion norm $N$, the division property and the unit group $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ over $\mathbb{R}$ are from *Norm and Invertibility in the General Plain Algebra*, named here and not defined again.
 
@@ -72,8 +70,6 @@ $$
 
 *Proof.* If $e^2 = e$ then $e(e-1) = 0$, and since $\mathbb{H}$ has no zero divisors either $e = 0$ or $e = 1$. Two non-trivial orthogonal idempotents would themselves be zero divisors, since $ef = 0$ with both factors non-zero, so no such pair exists; a matrix-unit family with $n\geq2$ would furnish the non-trivial idempotents $e_{kk}$, and none exists.
 
-This is the point at which the quaternion and biquaternion cases separate. The biquaternion algebra contains the orthogonal idempotents $\tilde\Pi_1 = \tfrac{1}{2}(e_0+ie_3)$ and $\tilde\Pi_2 = \tfrac{1}{2}(e_0-ie_3)$, together with the four matrix units of its decomposition as the sum of the two minimal left ideals $\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$; the quaternion algebra contains no such element, because it has no zero divisors, and the absence of the idempotents is the absence of the whole Peirce decomposition.
-
 ## Minimal Left and Right Ideals
 
 **Definition.** A non-zero left ideal is **minimal** if it contains no proper non-zero left ideal.
@@ -94,7 +90,7 @@ This is the point at which the quaternion and biquaternion cases separate. The b
 
 *Proof.* There are no proper non-zero left ideals, so the only elements of the lattice are the bounds.
 
-In the biquaternion algebra the corresponding lattice has the minimal left ideals as its middle layer, and those are parametrised by the projective line of the two-dimensional complex vector space on which the algebra acts as matrices, a direct-sum decomposition of the algebra containing two of them. Here the lattice collapses to its two endpoints, and the collapse is the ideal-theoretic expression of the division property.
+Here the lattice collapses to its two endpoints, and the collapse is the ideal-theoretic expression of the division property.
 
 ## The Radical
 
@@ -104,45 +100,15 @@ In the biquaternion algebra the corresponding lattice has the minimal left ideal
 
 *Proof.* The algebra $\mathbb{H}$ is simple as a left module over itself, since it has no proper non-zero left ideal; it is the only simple left module, and its annihilator is $\{a : a\mathbb{H} = 0\} = 0$ because $1$ acts as the identity. The Jacobson radical, the intersection of the annihilators of the simple left modules, is therefore $0$, and the algebra is semisimple. It is Artinian because it is finite-dimensional over a field, and the chain $0\subsetneq\mathbb{H}$ is a composition series of length one.
 
-The biquaternion algebra is likewise semisimple, and its radical is likewise zero, but its length as a module over itself is two, since it is the direct sum of two minimal left ideals. The length is the numerical expression of the difference between the two cases.
-
-## Comparison with the Biquaternion and Split-Biquaternion Cases
-
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and the split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ carry the same basis as $\mathbb{H}$ with coefficients extended, and their ideal theory differs from that of $\mathbb{H}$ in the two ways in which a semisimple algebra can differ from a division algebra.
-
-| Algebra | Centre | Simple | Minimal left ideals | Radically different feature |
-|---|---|---|---|---|
-| $\mathbb{H}$ | $\mathbb{R}$ | yes | one, the algebra itself | division algebra |
-| $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | $\mathbb{C}$ | yes | a projective line of them, two in each direct decomposition | complex coefficients |
-| $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | $\mathbb{D}$ | no | two, one in each summand | $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ |
-
-The biquaternion algebra is simple over $\mathbb{C}$ but not a division algebra, and it is matrix-like: it has minimal left ideals and a Peirce decomposition, as in *Ideals and Peirce Decomposition of the General Plain Algebra*. The split biquaternion algebra is not simple at all: the idempotents $e_\pm = \tfrac{1}{2}(1\pm j)$ of the split-complex part give a ring decomposition $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$, and the two summands are non-trivial two-sided ideals. The quaternion algebra is the case where the idempotents are absent and the two summands degenerate.
-
-## The Relation to the Matrix Algebra by Complexification
-
-**Theorem.** Over the complex field the quaternion algebra becomes a full matrix algebra:
-
-$$
-\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C}),
-$$
-
-an isomorphism of $\mathbb{C}$-algebras.
-
-*Proof.* The complexification of the quaternion algebra is the quaternion algebra over $\mathbb{C}$, and the complex quaternion algebra is isomorphic to $M_2(\mathbb{C})$ by the standard Pauli-matrix isomorphism, quoted here as standard.
-
-**Theorem.** The matrix algebra $M_2(\mathbb{C})$ is simple as a ring, and its left ideals are $0$, the whole algebra, and the minimal left ideals, which are the two-dimensional spaces $\{A : \ker A\supseteq U\}$ for $U$ a line of $\mathbb{C}^2$; the minimal left ideals are therefore parametrised by the projective line $\mathbb{P}^1(\mathbb{C})$, and a pair of them with complementary kernels, for instance the two coordinate columns, sums directly to the whole algebra.
-
-*Proof.* Simplicity is the absence of proper two-sided ideals in a full matrix ring. A left ideal is a subspace $I$ with $M_2I\subseteq I$, and the maps $I\mapsto U_I=\bigcap_{A\in I}\ker A$ and $U\mapsto I_U=\{A : A|_U=0\}$ are mutually inverse and order-reversing bijections with the subspaces $U$ of $\mathbb{C}^2$: the set $I_U$ is a left ideal because $(BA)|_U=B(A|_U)=0$, its dimension is $2(2-\dim U)$ because the coordinates of $A$ that survive are the entries outside the first $\dim U$ columns in a basis adapted to $U$, and a computation on that basis recovers $U$ from $I_U$. The maximal $U$, the lines, therefore give the minimal non-zero left ideals, of dimension two. Two lines $U,U'$ that are complementary give $I_U\cap I_{U'}=\{A : \ker A\supseteq U+U'=\mathbb{C}^2\}=\{0\}$ and $\dim I_U+\dim I_{U'}=4$, so they span; the coordinate columns are the cases $U=\mathbb{C}e_2$ and $U=\mathbb{C}e_1$.
-
-The two theorems together explain the role of the coefficient field. The quaternion algebra is a division algebra over $\mathbb{R}$, with the whole algebra as its only minimal left ideal; after complexification the same algebra becomes the full matrix algebra $M_2(\mathbb{C})$, whose minimal left ideals, absent over $\mathbb{R}$, appear as soon as the coefficient field is enlarged. The minimal left ideals of the complexification are not the complexification of left ideals of $\mathbb{H}$ — there are none — but they are the complexification of the whole algebra, split by the idempotents of the complexified algebra.
+The length is the numerical expression of the difference between the two cases.
 
 ## Summary
 
-A left ideal of an algebra that contains an invertible element is the whole algebra. Since every non-zero quaternion is invertible over $\mathbb{R}$ by *Norm and Invertibility in the General Plain Algebra*, the quaternion algebra has no proper left, right or two-sided ideal; it is simple as a ring and, being of dimension four with centre $\mathbb{R}$, it is a central simple $\mathbb{R}$-algebra of degree two, with a non-trivial class in the Brauer group and a split complexification.
+A left ideal of an algebra that contains an invertible element is the whole algebra. Since every non-zero quaternion is invertible over $\mathbb{R}$ by *Norm and Invertibility in the General Plain Algebra*, the quaternion algebra has no proper left, right or two-sided ideal; it is simple as a ring and, being of dimension four with centre $\mathbb{R}$, it is a central simple $\mathbb{R}$-algebra of degree two, with a non-trivial class in the Brauer group.
 
 The absence of proper ideals is the same statement as the absence of idempotents other than $0$ and $1$, and the latter is the absence of zero divisors in another form. Consequently $\mathbb{H}$ has exactly one minimal left ideal, the whole algebra, it is simple as a left module over itself, every finitely generated module over it is free, and its lattice of left ideals collapses to the two endpoints; its Jacobson radical is zero, it is semisimple and Artinian, and its length as a module over itself is one.
 
-The biquaternion algebra shows what is lost in passing away from the division case: it is still simple, but it has a projective line of minimal left ideals, a lattice of left ideals whose middle layer is that projective line, and a length-two decomposition as a module over itself. The split biquaternion algebra loses simplicity as well, decomposing as $\mathbb{H}\oplus\mathbb{H}$. All of these differences are consequences of the presence or absence of idempotents, and hence, ultimately, of the presence or absence of zero divisors.
+All of these differences are consequences of the presence or absence of idempotents, and hence, ultimately, of the presence or absence of zero divisors.
 
 ## Summary of Notation
 
@@ -156,11 +122,7 @@ The biquaternion algebra shows what is lost in passing away from the division ca
 | $A\tilde q = \{a\tilde q : a\in A\}$ | Principal left ideal generated by $\tilde q$ |
 | $Z(A)$ | Centre of the algebra $A$ |
 | $\operatorname{Br}(F)$ | Brauer group of the field $F$, $[\mathbb{H}]$ the quaternion class |
-| $M_2(\mathbb{C})$ | The full matrix algebra, the complexification of $\mathbb{H}$ |
 | $e_\pm = \tfrac{1}{2}(1\pm j)$ | Idempotents of $\mathbb{D}$, absent here but present in $\mathbb{H}_{\mathbb{D}}$ |
-| $\tilde\Pi_1 = \tfrac{1}{2}(e_0+ie_3)$, $\tilde\Pi_2 = \tfrac{1}{2}(e_0-ie_3)$ | Orthogonal idempotents of $\mathbb{B}$, giving a direct sum of two of its minimal left ideals |
-| $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, simple but with minimal left ideals |
-| $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | Split biquaternion algebra, $\cong\mathbb{H}\oplus\mathbb{H}$, not simple |
 | $\mathbb{H}_{\mathrm{s}}$ | Split quaternion algebra, $\cong M_2(\mathbb{R})$, a different system |
 
 ## Further Reading

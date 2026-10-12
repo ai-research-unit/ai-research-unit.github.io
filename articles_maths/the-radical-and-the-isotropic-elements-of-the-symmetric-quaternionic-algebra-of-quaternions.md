@@ -2,11 +2,9 @@
 
 ## Introduction
 
-The symmetric quaternionic product is the pairing $N$ placed on the scalar line. This article reads the block through the two notions that read a pairing on its kernel: the **radical**, the set of elements annihilated by every element, and the **isotropic elements**, those annihilated by themselves. For a definite form both sets are as small as possible, and this article records the triviality, the positivity of the block, and the square root of a positive central element; the large biquaternion case, where the isotropy is a cone, is the comparison.
+The symmetric quaternionic product is the pairing $N$ placed on the scalar line. This article reads the block through the two notions that read a pairing on its kernel: the **radical**, the set of elements annihilated by every element, and the **isotropic elements**, those annihilated by themselves.
 
 **Placement.** This is the Specific Theory entry of the block. Its companion is *The Specificities of the Symmetric Quaternionic Algebra*, above this article in this category; the Common Theory slots it cites rather than restates are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, *Zero Divisors of the Symmetric Quaternionic Algebra* and *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra*, all above this article in this category; its Operators companion is *The Multiplication Operators of the Symmetric Quaternionic Algebra*, below this article in this category.
-
-**Boundaries.** The product is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the definitions of the radical and of the isotropic element are *Definitions for the Study of the 6 Algebraic Structures*; the form and its Gram data are *The 2 Forms over the Quaternion $\mathbb{R}$ Space* and *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, below this article in this category; the zero divisors are *Zero Divisors of the Symmetric Quaternionic Algebra*, above this article in this category; the biquaternion counterpart is *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.
 
@@ -74,27 +72,9 @@ and the set of values $\tilde x\star\tilde x$ as $\tilde x$ ranges over the bloc
 
 **Remark (the square root of an element and the square root of a value).** Every element $\tilde x$ is a square root of the *positive central element* $\tilde x\star\tilde x=N(\tilde x)e_0$. The square roots of a noncentral argument are not posed in this block: the block's root theory is the theory of the central values, and a noncentral right-hand side is not a value of the product except when it is scalar, by the scalar law.
 
-## The Comparison with the Biquaternion Case
-
-The biquaternion block has the same governing formula with a complex coefficient and complex scalars; the comparison isolates the effect of the ground field.
-
-| object | $\mathbb{H}$, this block | $\mathbb{B}$, the biquaternion block |
-|---|---|---|
-| coefficient $N$ | real, positive definite, Gram matrix $I_4$ | complex bilinear, indefinite |
-| radical $\operatorname{Rad}(\star)$ | $\{0\}$ | $\{0\}$ (Gram matrix $I_4$ over $\mathbb{C}$) |
-| isotropic elements $\{N=0\}$ | $\{0\}$ | a cone of complex dimension $3$ |
-| cone of squares | the half-line $\mathbb{R}_{\geq0}e_0$ | the image of $N$, all of $\mathbb{C}e_0$ |
-| square root of a nonpositive central value | exists only for $\lambda\geq0$ | every complex $\lambda$ is a square |
-
-**Proposition (what grows over $\mathbb{C}$ is the isotropic set).** The radical is $\{0\}$ in both blocks, the coefficient being non-degenerate over either field. What changes is the isotropic set: $\{0\}$ over $\mathbb{R}$ by definiteness, a complex cone of dimension $3$ over $\mathbb{C}$ by indefiniteness; and the cone of squares, a half-line over $\mathbb{R}$ and all of the central complex line over $\mathbb{C}$.
-
-*Proof.* The Gram matrix is the identity in both blocks, so the radical is $\{0\}$ in both. The isotropic set is the zero set of $N$, which is a definite quadratic form over $\mathbb{R}$ and an indefinite one over $\mathbb{C}$; the cone of squares is the image of $N$, the nonnegative half-line over $\mathbb{R}$ and the whole of $\mathbb{C}e_0$ over $\mathbb{C}$, because every complex number has a complex square root and every negative real fails over $\mathbb{R}$.
-
-**Remark (the menu's "large radical", reconciled).** The menu comment of this entry opposes the trivial quaternion radical to a "large" biquaternion one. The biquaternion block's own entry, *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*, computes the same identity Gram matrix and the same radical $\{0\}$; the large object there is the isotropic cone, not the radical. This article states the isotropic growth, which is what distinguishes the two blocks, and reports the wording.
-
 ## Summary
 
-The symmetric quaternionic block is non-degenerate and anisotropic: its coefficient is the positive definite quaternion form, of Gram matrix $I_4$, rank $4$ and nullity $0$, so the radical is $\{0\}$ and the isotropic set is the single point $\{0\}$. The cone of squares is the closed half-line $\mathbb{R}_{\geq0}e_0$, so the negative central element $-e_0$ has no square root, while every positive central element $\lambda e_0$ is a square with the level set $\{N=\lambda\}$ as its roots. The block is therefore anisotropic and yet has no regular element but $0$: the isotropic set and the zero-divisor set are pulled apart, the first being trivial by definiteness and the second maximal. In the biquaternion block the radical is $\{0\}$ as well, and the contrast is carried by the isotropic cone and by the complex cone of squares.
+The symmetric quaternionic block is non-degenerate and anisotropic: its coefficient is the positive definite quaternion form, of Gram matrix $I_4$, rank $4$ and nullity $0$, so the radical is $\{0\}$ and the isotropic set is the single point $\{0\}$. The cone of squares is the closed half-line $\mathbb{R}_{\geq0}e_0$, so the negative central element $-e_0$ has no square root, while every positive central element $\lambda e_0$ is a square with the level set $\{N=\lambda\}$ as its roots.
 
 ## Summary of Notation
 
@@ -113,4 +93,3 @@ The symmetric quaternionic block is non-degenerate and anisotropic: its coeffici
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), for the Gram data, the signature and the isotropy of the two forms
 - *Zero Divisors of the Symmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the maximal zero-divisor set that contrasts with the trivial isotropic set
 - *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the root sets of the central values
-- *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the biquaternion counterpart

@@ -9,7 +9,7 @@ The word **metric** is used in the sense of the menu, for the quadratic function
 
 The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complex Space*, nor the two algebraic norms $A^{2}$ and $\lvert A\rvert^{2}$ that are their diagonals. The modulus $\lvert A\rvert=\sqrt{H(A)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The topology is *Complex Topology*; the reflections and the group of maps preserving the definite form are *Rotations and Reflections in the Complex Plane*, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of *The Realification and the Effect of the Change of Scalars*.
 
-**Conventions.** The algebra is $\mathbb{C}$ over $\mathbb{R}$, with basis $1$, $i$ and $i^{2}=-1$; elements are $A=a+ia'$ and $C=c+ic'$ with real $a,a',c,c'$, and conjugation is $\bar A=a-ia'$. The global reading is bar $=$ complex conjugation, natural sign $=$ identity and Hermitian star $=$ bar, the complex block reading $\mathbb{C}$ over $\mathbb{R}$ and calling complex conjugation its one nontrivial involution, beside the identity (*Complex Algebra*, *Complex Subspaces*, *Conventions in Mathematics*). The letters $B$, $N$, $H$ and $K$ are the four general forms of the biquaternion method; on $\mathbb{C}$, which is the centre, the two bilinear forms coincide and the two sesquilinear forms coincide, and the two forms read here are the plain bilinear form $B(A,C)=AC$ and the Hermitian form $H(A,C)=A\bar C$ (*The Two Forms and the Two Algebraic Norms of the Complex Space*). Elements are therefore written $A$ and $C$ and never $B$; the worked second element of the category, $1-2i$, is written $C$ here.
+**Conventions.** The algebra is $\mathbb{C}$ over $\mathbb{R}$, with basis $1$, $i$ and $i^{2}=-1$; elements are $A=a+ia'$ and $C=c+ic'$ with real $a,a',c,c'$, and conjugation is $\bar A=a-ia'$. The global reading is bar $=$ complex conjugation and Hermitian star $=$ bar, the complex block reading $\mathbb{C}$ over $\mathbb{R}$ and calling complex conjugation its one nontrivial involution, beside the identity (*Complex Algebra*, *Complex Subspaces*, *Conventions in Mathematics*). The letters $B$, $N$, $H$ and $K$ are the four general forms; on $\mathbb{C}$ the two bilinear forms coincide and the two sesquilinear forms coincide, and the two forms read here are the plain bilinear form $B(A,C)=AC$ and the Hermitian form $H(A,C)=A\bar C$ (*The Two Forms and the Two Algebraic Norms of the Complex Space*). Elements are therefore written $A$ and $C$ and never $B$; the worked second element of the category, $1-2i$, is written $C$ here.
 
 ## The Two Forms and Their Realifications
 
@@ -25,7 +25,7 @@ $$
 B(A,A)=A^{2}, \qquad H(A,A)=A\bar A=\lvert A\rvert^{2},
 $$
 
-the first complex and anisotropic and the second real, positive definite and multiplicative. The form $B$ is the two-dimensional case of the general plain bilinear form of the biquaternion method and $H$ the case of the general plain sesquilinear form; on the centre of $\mathbb{B}$ the plain and the quaternionic forms coincide, so $B=N$ and $H=K$ there, which is the reason the two diagonal norms are written $A^{2}$ and $\lvert A\rvert^{2}$.
+the first complex and anisotropic and the second real, positive definite and multiplicative. The form $B$ is the two-dimensional case of the general plain bilinear form and $H$ the case of the general plain sesquilinear form; the two bilinear forms coincide and the two sesquilinear forms coincide, so $B=N$ and $H=K$, which is the reason the two diagonal norms are written $A^{2}$ and $\lvert A\rvert^{2}$.
 
 Both forms are complex-valued, and a real function is obtained from each by realification. In the real basis $1$, $i$, with $A=a+ia'$ and $C=c+ic'$,
 
@@ -139,7 +139,7 @@ $$
 d_{H}^{2}(JA,JC)=d_{H}^{2}(A,C), \qquad d_{B}^{2}(JA,JC)=-d_{B}^{2}(A,C).
 $$
 
-*Proof.* In coordinates $J(a,a')=(-a',a)$; substituting gives $(a-c)^{2}+(a'-c')^{2}$ unchanged and $(a-c)^{2}-(a'-c')^{2}$ negated. Equivalently, the realified Hermitian form is preserved by $J$ and the realified bilinear form is reversed, as recorded in *The Realification of the Four Forms* for the general case.
+*Proof.* In coordinates $J(a,a')=(-a',a)$; substituting gives $(a-c)^{2}+(a'-c')^{2}$ unchanged and $(a-c)^{2}-(a'-c')^{2}$ negated. Equivalently, the realified Hermitian form is preserved by $J$ and the realified bilinear form is reversed, as the realification rules record.
 
 So multiplication by $i$ preserves the Euclidean metric and reverses the split one. The complex structure is thus the operator that distinguishes the two metrics on the one space.
 
@@ -149,7 +149,7 @@ So multiplication by $i$ preserves the Euclidean metric and reverses the split o
 
 So the complex-linear coincidences are only the central pair, while the two real groups $O(2)$ and $O(1,1)$ share a Klein four group; neither group contains the other, and each enlarges the common pair in its own direction.
 
-**Remark (the contrast with the biquaternion realification).** The same realification applied to the biquaternion algebra $\mathbb{B}$ gives the general plain bilinear form the split signature $(4,4)$ and the Hermitian form the definite signature $(8,0)$ (*The Realification of the Four Forms*). The pair $(1,1)$, $(2,0)$ of the complex space is the two-dimensional shadow of that pair, and the complex space carries a definite and an indefinite real form at once.
+**Remark (the realified signatures).** The complex space carries a definite and an indefinite real form at once, and the pair $(1,1)$, $(2,0)$ is its realified signature pair.
 
 ## Worked Example
 
@@ -173,7 +173,7 @@ for every real $t$; the same holds on the line of direction $1-i$. On those diff
 
 The one complex plane carries two real quadratic functions, one from each of the two forms. The definite Hermitian form $H(A,C)=A\bar C$ gives the Euclidean metric $d_{H}^{2}(A,C)=(a-c)^{2}+(a'-c')^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the modulus of the difference. The realified plain bilinear form $B(A,C)=AC$ gives the split metric $d_{B}^{2}(A,C)=(a-c)^{2}-(a'-c')^{2}$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $a-c=\pm(a'-c')$, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps is $O(1,1)$, whose subgroup fixing the two null lines rescales them.
 
-The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{B}^{2}=2(a'-c')^{2}$ and $d_{H}^{2}+d_{B}^{2}=2(a-c)^{2}$; the forms are exchanged by conjugation of the second slot, $H(A,C)=B(A,\bar C)$, and multiplication by $i$ preserves the Euclidean metric and reverses the split one. The pair $(1,1)$, $(2,0)$ is the two-dimensional shadow of the biquaternion pair $(4,4)$, $(8,0)$.
+The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{B}^{2}=2(a'-c')^{2}$ and $d_{H}^{2}+d_{B}^{2}=2(a-c)^{2}$; the forms are exchanged by conjugation of the second slot, $H(A,C)=B(A,\bar C)$, and multiplication by $i$ preserves the Euclidean metric and reverses the split one.
 
 ## Summary of Notation
 
@@ -191,7 +191,6 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 | $M^{\mathsf T}M=\mathrm{I}_{2}$ | the condition for preserving $\operatorname{Re}H$; the group $O(2)$ |
 | $M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1)$ | the condition for preserving $\operatorname{Re}B$; the group $O(1,1)$ |
 | $J(A)=iA$ | the complex structure; preserves $d_{H}^{2}$, reverses $d_{B}^{2}$ |
-| $(1,1),(2,0)$ | the two realified signatures, against $(4,4),(8,0)$ for $\mathbb{B}$ |
 
 ## Further Reading
 
@@ -199,7 +198,6 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 - *The Two Products of the Complex Space* (`articles_maths/the-two-products-of-the-complex-space.md`), for the two products $AC$ and $A\bar C$ whose forms are realified here.
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars-on-the-complex-numbers.md`), the complex article of that name, for the realification rules that give the signatures $(1,1)$ and $(2,0)$.
 - *Complex Algebra* (`articles_maths/complex-algebra.md`), for the algebra, its basis and its one nontrivial involution.
-- *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the biquaternion signatures $(4,4)$ and $(8,0)$ of which the present pair is the two-dimensional shadow.
 - *Complex Norm and Invertibility* (`articles_maths/complex-norm-and-invertibility.md`), for the modulus, its multiplicativity, its triangle inequality and the group of units.
 - *Rotations and Reflections in the Complex Plane* (`articles_maths/rotations-and-reflections-in-the-complex-plane.md`), for the identification of the form-preserving multiplications with $\mathrm{SO}(2)$, the reflections and the group $O(2)$.
 - *Complex Subspaces* (`articles_maths/complex-subspaces.md`), for the real and imaginary subspaces on which the split metric is definite of opposite signs.

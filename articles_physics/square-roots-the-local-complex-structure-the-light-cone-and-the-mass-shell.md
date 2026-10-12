@@ -55,7 +55,7 @@ classification for the central values.
 The physical content of the split is the separation it makes. The scalar branch is the **central** one:
 its roots commute with everything and ask nothing of the direction of space. The pure branch is the
 **directional** one: its roots are vectors, they single out a direction and a complex structure, and they
-carry the geometry of the patch. Every physical interpretation below is an interpretation of the pure branch.
+carry the geometry of the patch. Every **physical interpretation** below is an interpretation of the pure branch.
 
 ## The Roots of $-1$: the Local Complex Structure
 

@@ -4,7 +4,7 @@
 
 The symmetric plain algebra $\mathbb{B}^{\bullet}$ is the complex space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ under the Jordan product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra of Biquaternions*. This article determines the elements that annihilate a non-zero element, gives the criterion, describes the two families, and compares the set with the sets of the four general products.
 
-The comparison is where the block separates from the algebra. For the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* the zero-divisor set is the isotropic cone of the central square, and the four sets **coincide** (*The Zero Divisors and the Four General Products*). For the symmetric plain product the set is **strictly larger**: every element of the vector subspace, isotropic or not, is a zero divisor, because the symmetrisation drops the cross product that the plain product uses to keep a non-isotropic pure element regular. The block therefore does not inherit the zero-divisor theory of the algebra, and the difference is a theorem of this article and not a defect.
+The comparison is where the block separates from the algebra. For the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* the zero-divisor set is the isotropic cone of the central square, and the four sets **coincide** (*The Zero Divisors and the Twelve Structures*). For the symmetric plain product the set is **strictly larger**: every element of the vector subspace, isotropic or not, is a zero divisor, because the symmetrisation drops the cross product that the plain product uses to keep a non-isotropic pure element regular. The block therefore does not inherit the zero-divisor theory of the algebra, and the difference is a theorem of this article and not a defect.
 
 The zero divisors are the elements that fail to be regular, and they are not the same as the elements that fail to be invertible: the element $e_1$ is invertible, with $c(e_1)=1$, and it annihilates $e_2$. The careful separation of the two notions is *Norm and Invertibility in the Symmetric Plain Algebra*; this article owns the annihilating elements.
 
@@ -22,7 +22,7 @@ $$
 \tilde{Q}\ \text{zero divisor}\iff\ker L^{\bullet}_{\tilde{Q}}\neq\{0\}\iff \tilde{Q}\neq0\ \text{and}\ \det L^{\bullet}_{\tilde{Q}}=0 .
 $$
 
-The zero divisors of the four general products and the theorem of the four coinciding sets are *The Zero Divisors and the Four General Products*.
+The zero divisors of the four general products and the theorem of the four coinciding sets are *The Zero Divisors and the Twelve Structures*.
 
 ## The Criterion
 
@@ -97,7 +97,7 @@ $$
 
 **Theorem.** The zero-divisor sets of the four general products coincide with each other and with the isotropic cone of the central square, and the zero-divisor set of the block is strictly larger than all four.
 
-*Proof.* The coincidence for the four general products is *The Zero Divisors and the Four General Products*. The strict inclusion is the theorem above: the block's set contains the isotropic cone and the whole vector subspace.
+*Proof.* The coincidence for the four general products is *The Zero Divisors and the Twelve Structures*. The strict inclusion is the theorem above: the block's set contains the isotropic cone and the whole vector subspace.
 
 So no transfer of the zero-divisor classification from the four general products to the block is valid, and this is the point of the article. The reason is visible in the product: the plain product of two pure elements is $\mathbf{P}\mathbf{Q}=-(\mathbf{P},\mathbf{Q})+\mathbf{P}\times\mathbf{Q}$, whose antisymmetric cross term keeps a non-isotropic pure element regular, while the symmetrisation removes the cross term and leaves only the scalar $-(\mathbf{P},\mathbf{Q})e_0$, which vanishes on the orthogonal complement whatever the central square. **The block's zero-divisor set is the union of the vector subspace and the isotropic cone, not the isotropic cone alone.**
 
@@ -128,7 +128,7 @@ A zero divisor of the block is a non-zero element annihilated by a non-zero elem
 
 - *Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor*, for the product-relative definition and the dictionary of the classes.
 - *Zero Divisors of the General Plain Algebra*, for the zero divisors of the algebra, their criterion and their set.
-- *The Zero Divisors and the Four General Products*, for the four coinciding sets, against which the block's set is compared.
+- *The Zero Divisors and the Twelve Structures*, for the four coinciding sets, against which the block's set is compared.
 - *Norm and Invertibility in the Symmetric Plain Algebra*, for the invertible elements and the distinction with the regular ones.
 - *Idempotents of the Symmetric Plain Algebra* and *Nilpotents of the Symmetric Plain Algebra*, for the two families named by the block.
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the determinant $\det L^{\bullet}_{\tilde Q}=Q_0^2c(\tilde Q)$.

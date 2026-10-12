@@ -8,7 +8,6 @@ and it fails the Jacobi identity (*Introduction to the Antisymmetric Quaternioni
 Quaternions*). This article does the failure in full: the cyclic sum and its closed form, the basis
 computation and the witnesses, the criterion that relates the defect to the associator of the parent
 quaternionic product, the derived bracket that remains a Lie bracket, and the comparison with the cross
-product and with the biquaternion block.
 
 The failure is one linear condition on the scalar parts of the triple: with the cross products as
 coefficients, the cyclic sum vanishes exactly on a hyperplane of the scalar triple, and its witness is
@@ -24,9 +23,7 @@ The operation and its table are *Introduction to the Antisymmetric Quaternionic 
 Quaternions*; the criterion is *The Symmetric and Antisymmetric Parts of an Algebra Product*, and the
 associator of the parent is *The Associator and the Ternary Product of the Quaternionic Product*. The
 comparator, whose cyclic sum vanishes, is *The Lie Algebra of the Antisymmetric Plain Algebra*, above
-this article in this category; the biquaternion counterpart is
 *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* of the
-biquaternion chapter.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\mathbf q$, the **vector subspace** is
@@ -196,28 +193,6 @@ closed and Lie, and what the block adds to it is the two mixed terms $p_0\mathbf
 carry the scalar part into the vector subspace and break the identity. The failure is thus the failure
 of the extension, not of the derived bracket.
 
-## The Comparison with the Cross Product and with the Biquaternion Case
-
-**Remark (the cross product).** The antisymmetric plain block of the same space has the cyclic sum zero
-identically, its three coefficients vanishing term by term, and it is the Lie algebra
-$\mathfrak{su}(2)\cong\mathfrak{so}(3)$; the antisymmetric quaternionic block differs in the three
-scalar coefficients $-p_0,q_0,-r_0$, and the whole difference is the scalar–vector coupling.
-
-| | the biquaternion block | the block of $\mathbb{H}$ |
-|---|---|---|
-| the cyclic sum on $(e_0,e_1,e_2)$ | $-e_3$ | $-e_3$ |
-| the closed form | $-P_0(\mathbf Q\times\mathbf R)+Q_0(\mathbf P\times\mathbf R)-R_0(\mathbf P\times\mathbf Q)$ | the same |
-| the nonzero basis triples of $J$ | $18$ of $64$ | $18$ of $64$ |
-| the nonzero basis triples of the associator | $24$ of $64$ | $24$ of $64$ |
-| the derived bracket | $-\times$ on $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$ | $-\times$ on $\mathrm{Vect}(\mathbb{H})\cong\mathfrak{so}(3)$ |
-
-**Remark (the same failure, the different derived algebra).** The failure and its measure are identical
-over the two fields, the arithmetic of the table being the same; what differs is the derived algebra,
-which is the complex one $\mathfrak{sl}(2,\mathbb{C})$ over $\mathbb{B}$ and its compact real form
-$\mathfrak{so}(3)$ over $\mathbb{H}$. The biquaternion reading is *The Jacobi Failure and the Associator
-Defect of the Antisymmetric Quaternionic Algebra* of the biquaternion chapter; the comparison is
-recorded here and not re-derived.
-
 ## Summary
 
 The antisymmetric quaternionic block fails the Jacobi identity. Its cyclic sum is the pure vector
@@ -231,7 +206,7 @@ the associator having the closed form $(\tilde q^{\natural}\tilde p-\tilde p^{\n
 and nonzero on $24$ of the $64$ basis triples, with the witness $(e_1,e_0,e_0)=2e_1$. The derived
 bracket remains a Lie bracket: on the vector subspace the block is the negative of the cross product,
 of structure $\mathfrak{so}(3)$, and the failure is exactly the scalar–vector interaction the block adds
-to it. The comparator, the cross product, satisfies the identity; the biquaternion block fails it in the
+to it.
 same way and has $\mathfrak{sl}(2,\mathbb{C})$ as derived algebra.
 
 ## Summary of Notation

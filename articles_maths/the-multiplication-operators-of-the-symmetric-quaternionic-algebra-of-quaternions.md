@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The multiplication operators of a product are the maps $\tilde q\mapsto\tilde p\circ\tilde q$ obtained by fixing one slot. For the symmetric quaternionic product the maps are as degenerate as a nonzero multiplication can be: each of them sends the whole algebra onto the scalar line, and each is a scalar multiple of the identity when restricted to that line. This article computes the operators, their matrices, their ranks and their kernels, their composition and the enveloping algebra they generate, their adjoints with respect to the block's form, the bimodule structure they give, and the derivations of the block; the biquaternion block is the comparison.
+The multiplication operators of a product are the maps $\tilde q\mapsto\tilde p\circ\tilde q$ obtained by fixing one slot. For the symmetric quaternionic product the maps are as degenerate as a nonzero multiplication can be: each of them sends the whole algebra onto the scalar line, and each is a scalar multiple of the identity when restricted to that line.
 
-**Boundaries.** The product is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the form is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, above this article in this category; the definitions of the operator, the adjoint and the derivation are *Definitions for the Study of the 6 Algebraic Structures* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*. The parallel over the plain product is *The Multiplication Operators of the Symmetric Plain Algebra*; the biquaternion counterpart is *The Multiplication Operators of the Symmetric Quaternionic Algebra*.
+**Boundaries.** The product is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the form is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, above this article in this category; the definitions of the operator, the adjoint and the derivation are *Definitions for the Study of the 6 Algebraic Structures* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The block is commutative, so the left and right multiplication operators coincide, and there is one family $L_{\tilde p}$, with
 
@@ -118,27 +118,9 @@ that is $D$ vanishes on the scalar line and is skew-adjoint for the form. Writin
 
 **Remark (the correction to the brief).** The brief states that the operators "commute" and are "self-adjoint for the form". Neither holds: the composition is $L_{\tilde p}L_{\tilde q}=L_{p_0\tilde q}$ and $L_{\tilde q}L_{\tilde p}=L_{q_0\tilde p}$, which differ at $(e_0,e_1)$, and self-adjointness holds exactly at a central multiplier. What is true is that the operators are the coordinate projections of the block onto its scalar line and that they generate the four-dimensional enveloping algebra $(\mathbb{H},\circ)$.
 
-## The Comparison with the Biquaternion Case
-
-| object | $\mathbb{H}$, this block | $\mathbb{B}$, the biquaternion block |
-|---|---|---|
-| operator matrix | row $0$ is the coordinates, all other rows zero | the same shape, one nonzero row |
-| rank of $L_{\tilde p}$, $\tilde p\neq0$ | $1$ (real) | $1$ (complex) |
-| composition | $L_{\tilde p}L_{\tilde q}=L_{p_0\tilde q}$ | $L_AL_B=A_0L_B$ |
-| adjoint | $\tilde y\mapsto y_0\tilde p$ | $\tilde Y\mapsto\sum_\mu A_\mu Y_0e_\mu$ |
-| self-adjoint | exactly at central $\tilde p$ | exactly at central $\tilde A$ |
-| derivation algebra | $\{De_0=0,\ D^{\mathsf T}+D=0\}\cong\mathfrak{so}(3)$, real dimension $3$ | the same conditions, complex dimension $3$ |
-| form-preserving group | $G_N=\{T:T^{\mathsf T}T=I_4\}$, real dimension $6$ | complex dimension $6$ |
-
-**Proposition (the same structure over the two fields).** The operator calculus of the quaternion block is the operator calculus of the biquaternion block with the complex coordinates replaced by real ones and the complex dimension replaced by real dimension; the formulas, the rank, the kernel, the adjoint and the derivation algebra have the same shape.
-
-*Proof.* The governing formula is the same, $L_{\tilde p}\tilde q=N(\tilde p,\tilde q)e_0$, with the coefficient defined over the ground field; each displayed identity is proved in the same way in the two blocks. The form-preserving group is *The Multiplication Operators of the Symmetric Quaternionic Algebra* (biquaternion) and is quoted for the comparison only.
-
-**Remark (the block's operators are the most degenerate nonzero operators of the six).** Every operator of every one of the six structures has rank at least one off the zero element, but the block's operators have rank exactly one and a kernel of dimension three; the plain block's operators are invertible off the zero divisors and the general block's are injective. The collapse of the block is the collapse of its operators, and it is the same collapse read twice.
-
 ## Summary
 
-The multiplication operators of the block are $L_{\tilde p}(\tilde q)=\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$, with the coordinates of $\tilde p$ in the zeroth row of the matrix and zero elsewhere; off zero they have rank $1$, image the scalar line, kernel the hyperplane $\tilde p^{\perp}$ of dimension $3$, trace $p_0$ and determinant $0$, and on the scalar line they act as the scalar $p_0$. Their composition is $L_{\tilde p}L_{\tilde q}=L_{p_0\tilde q}$, so they do not commute and are not multiplicative; they span the four-dimensional enveloping algebra $\mathcal E\cong(\mathbb{H},\circ)$ with $\tilde p\circ\tilde q=p_0\tilde q$, associative with left unit $e_0$ alone, and $\mathbb{H}$ is a faithful symmetric $\mathcal E$-bimodule. The adjoint is $L_{\tilde p}^{\dagger}(\tilde y)=y_0\tilde p$, and $L_{\tilde p}$ is self-adjoint exactly at a central multiplier. The inner derivations vanish, the derivation algebra is $\{De_0=0,\ D^{\mathsf T}+D=0\}\cong\mathfrak{so}(3)$ of real dimension $3$, no derivation has nonzero weight, and the operator bracket is not a derivation in general. The whole calculus is the biquaternion calculus with real coordinates.
+The multiplication operators of the block are $L_{\tilde p}(\tilde q)=\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$, with the coordinates of $\tilde p$ in the zeroth row of the matrix and zero elsewhere; off zero they have rank $1$, image the scalar line, kernel the hyperplane $\tilde p^{\perp}$ of dimension $3$, trace $p_0$ and determinant $0$, and on the scalar line they act as the scalar $p_0$. Their composition is $L_{\tilde p}L_{\tilde q}=L_{p_0\tilde q}$, so they do not commute and are not multiplicative; they span the four-dimensional enveloping algebra $\mathcal E\cong(\mathbb{H},\circ)$ with $\tilde p\circ\tilde q=p_0\tilde q$, associative with left unit $e_0$ alone, and $\mathbb{H}$ is a faithful symmetric $\mathcal E$-bimodule. The adjoint is $L_{\tilde p}^{\dagger}(\tilde y)=y_0\tilde p$, and $L_{\tilde p}$ is self-adjoint exactly at a central multiplier.
 
 ## Summary of Notation
 
@@ -157,4 +139,3 @@ The multiplication operators of the block are $L_{\tilde p}(\tilde q)=\tilde p\s
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the form used in the adjoint
 - *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the operator, the adjoint and the derivation
 - *The Multiplication Operators of the Symmetric Plain Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra-of-quaternions.md`), for the parallel over the plain product
-- *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the biquaternion counterpart

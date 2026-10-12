@@ -4,13 +4,13 @@
 
 The two products of *The Two Products of the Split-Complex Space* carry two **forms**, and the forms carry two **algebraic norms**. The **general plain bilinear form** is $B(A,C)=AC$, the product itself read as a form; the **general plain sesquilinear form**, also called the **Hermitian form**, is $H(A,C)=A\overline{C}$. Their **diagonals** are the two algebraic norms, $B(A)=A^2$ and $H(A)=A\overline{A}=a^2-a'^2=N(A)$. This article reads the two forms and the two norms on the coordinates, gives their Gram matrices and their realified signatures, and isolates the one point that separates the split-complex reading from the complex one: which of the two forms is definite.
 
-The four forms of the biquaternion space are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and their diagonals, the four algebraic norms, are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the collapse of the four to the two of this article is carried here. The norm $N$, its multiplicativity, the criterion of invertibility, the group of units and the order cone are *Split-Complex Norm and Invertibility*, below this article in this category, and the isotropic cone and the zero divisors are *Split-Complex Zero Divisors*, below this article in this category. The forms read on the distinguished subspaces are *Remarkable Subspaces of the Split-Complex Numbers and the Two Forms*, below this article in this category.
+The collapse of the four forms and their diagonals to the two of this article is carried here. The norm $N$, its multiplicativity, the criterion of invertibility, the group of units and the order cone are *Split-Complex Norm and Invertibility*, below this article in this category, and the isotropic cone and the zero divisors are *Split-Complex Zero Divisors*, below this article in this category. The forms read on the distinguished subspaces are *Remarkable Subspaces of the Split-Complex Numbers and the Two Forms*, below this article in this category.
 
-**The reading fixed here.** The natural sign is the identity on $\mathbb{D}$, the bar is the conjugation $j\mapsto-j$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $A=a+ja'$ and $C=c+jc'$ are elements, so the letters $B$, $H$ and $N$ name forms and norms only.
+**The reading fixed here.** The bar is the conjugation $j\mapsto-j$ and the Hermitian conjugation is ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $A=a+ja'$ and $C=c+jc'$ are elements, so the letters $B$, $H$ and $N$ name forms and norms only.
 
 ## The Two Forms
 
-The four forms of the biquaternion space are the general plain bilinear $\mathrm{Sc}(PQ)$, the general quaternionic bilinear $\mathrm{Sc}(P^{\natural}Q)$, the general plain sesquilinear $\mathrm{Sc}(PQ^{*})$ and the general quaternionic sesquilinear $\mathrm{Sc}(P^{\natural}Q^{*})$, written $B$, $N$, $H$ and $K$ in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. On $\mathbb{D}$ the scalar part is the identity, the algebra being read over itself, and the natural sign is the identity, so that ${}^{*}=\bar{\cdot}$; the first and the second coincide with the product and the third and the fourth with the product with the second slot conjugated. The four collapse pairwise to two:
+This space carries four general forms, the bilinear and sesquilinear pairings in their two-slot variants, written $B$, $N$, $H$ and $K$. On $\mathbb{D}$ the conjugation of the coefficient ring is the identity, the algebra being read over itself, and ${}^{*}=\bar{\cdot}$; the first and the second coincide with the product and the third and the fourth with the product with the second slot conjugated. The four collapse pairwise to two:
 
 $$
 B(A,C)=AC,
@@ -18,7 +18,7 @@ B(A,C)=AC,
 H(A,C)=A\overline{C},
 $$
 
-with $B=\mathrm{GPA}=\mathrm{SPA}=\mathrm{GQA}=\mathrm{SQA}$ the form of the ring and $H=\mathrm{GPS}=\mathrm{SPS}=\mathrm{GQS}=\mathrm{SQS}$ the form of the sesqualgebra, in the codes of *The Collapse of the Twelve Structures on the Split-Complex Numbers*, the article preceding this one.
+with $B$ the form of the ring and $H$ the form of the sesqualgebra, the collapse being carried by *The Collapse of the Twelve Structures on the Split-Complex Numbers*, the article preceding this one.
 
 **Proposition (the two forms are separated by symmetry alone).** $B$ is symmetric and $\mathbb{D}$-bilinear, $B(A,C)=B(C,A)$; $H$ is conjugate-symmetric and sesquilinear over $(\mathbb{D},\bar{\cdot})$, $H(A,C)=\overline{H(C,A)}$, linear in the first slot and conjugate-linear in the second. Both have Gram matrix $[1]$ over the one-dimensional $\mathbb{D}$-module $\mathbb{D}$.
 
@@ -75,7 +75,7 @@ B(A)=A^2=(a^2+a'^2)+2aa'j,
 H(A)=A\overline{A}=a^2-a'^2=N(A).
 $$
 
-The diagonals of the four biquaternion forms collapse to the two algebraic norms of this article: the diagonals of the first two forms give $A^2$, and the diagonals of the last two give $A\overline{A}=N(A)$. The count of four becomes the count of two, exactly as the count of four forms becomes the count of two.
+The diagonals of the four forms collapse to the two algebraic norms of this article: the diagonals of the first two forms give $A^2$, and the diagonals of the last two give $A\overline{A}=N(A)$. The count of four becomes the count of two, exactly as the count of four forms becomes the count of two.
 
 Both norms are multiplicative: $B(AC)=(AC)^2=A^2C^2=B(A)B(C)$ and $N(AC)=N(A)N(C)$ (*Split-Complex Norm and Invertibility*, below this article in this category, owns the second). The two norms differ in their value and in their vanishing set, and neither is a definite real form on $\mathbb{D}$.
 
@@ -99,7 +99,7 @@ So the impossibility is exactly the phenomenon of the zero divisors, and it is w
 
 ## Summary
 
-The two products of the split-complex space carry two forms, the symmetric bilinear form $B(A,C)=AC$ and the conjugate-symmetric Hermitian form $H(A,C)=A\overline{C}$, both of Gram matrix $[1]$ over the rank-one $\mathbb{D}$-module and separated by symmetry alone. Their realified signatures are $(2,0)$ for $B$ and $(1,1)$ for $H$; the split sign exchanges them with respect to the complex case, where they are $(1,1)$ and $(2,0)$, because the bilinear form is $J$-invariant here and the Hermitian form is $J$-anti-invariant. The four forms and the four algebraic norms of the biquaternion space collapse to these two forms and their diagonals.
+The two products of the split-complex space carry two forms, the symmetric bilinear form $B(A,C)=AC$ and the conjugate-symmetric Hermitian form $H(A,C)=A\overline{C}$, both of Gram matrix $[1]$ over the rank-one $\mathbb{D}$-module and separated by symmetry alone. Their realified signatures are $(2,0)$ for $B$ and $(1,1)$ for $H$; the split sign exchanges them with respect to the complex case, where they are $(1,1)$ and $(2,0)$, because the bilinear form is $J$-invariant here and the Hermitian form is $J$-anti-invariant. The four forms and the four algebraic norms collapse to these two forms and their diagonals.
 
 The two algebraic norms are $B(A)=A^2$, $\mathbb{D}$-valued and anisotropic, and $H(A)=A\overline{A}=a^2-a'^2=N(A)$, real and indefinite, with isotropic set the two null lines on which the zero divisors lie. Both are multiplicative; neither is a definite real norm. There is no definite multiplicative norm on $\mathbb{D}$: a norm that is definite, absolutely homogeneous and multiplicative would force the zero product $\Pi_1\Pi_2$ of two non-zero elements to have value $\nu(\Pi_1)\nu(\Pi_2)=0$; the impossibility is the zero divisor seen from the side of the form, and it is the point that separates the split-complex algebra from the complex field.
 
@@ -121,4 +121,3 @@ The two algebraic norms are $B(A)=A^2$, $\mathbb{D}$-valued and anisotropic, and
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for symmetric bilinear and Hermitian forms, signature and inertia in dimension two.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, Colloquium Publications 44, 1998), for forms over an algebra with involution and the realification rules.
 - Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for the diagonal of the trace form and algebraic norms in associative rings.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for composition algebras, their norms and their zero divisors.

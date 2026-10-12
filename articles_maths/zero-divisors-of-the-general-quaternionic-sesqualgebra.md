@@ -30,7 +30,7 @@ and its vanishing is the zero-divisor criterion of the general plain algebra (*Z
 
 **Definition (zero divisor of a product).** Let $\star$ be a product on $\mathbb{B}$. A nonzero element $\tilde Q$ is a **left zero divisor of $\star$** when there is a nonzero $\tilde R$ with $\tilde Q\star\tilde R = 0$; a **right zero divisor of $\star$** when there is a nonzero $\tilde R$ with $\tilde R\star\tilde Q = 0$; and a **zero divisor of $\star$** when it is a left zero divisor or a right zero divisor. The equation and the pair both name the product, so the notion is relative to it; the general definition, with the two-sided reading, is *Definitions for the Study of the 12 Algebraic Structures*.
 
-Throughout this article the product is the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, and, unqualified, **zero divisor** means **zero divisor of $\star$**. The zero-divisor sets of the other three general products, and the theorem that the four coincide, are *The Zero Divisors and the Four General Products*.
+Throughout this article the product is the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, and, unqualified, **zero divisor** means **zero divisor of $\star$**. The zero-divisor sets of the other three general products, and the theorem that the four coincide, are *The Zero Divisors and the Twelve Structures*.
 
 ## The Criterion
 
@@ -102,7 +102,7 @@ The dimension is the same as for the plain product, because the criterion is the
 
 ## The Coincidence with the Other Three Products
 
-**Theorem (the four products have one zero-divisor set, quoted).** The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* have the same zero-divisor set, namely $\{\tilde Q \neq 0 : c(\tilde Q) = 0\}$. The theorem is *The Zero Divisors and the Four General Products*, and it holds for the left and the right reading separately.
+**Theorem (the four products have one zero-divisor set, quoted).** The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* have the same zero-divisor set, namely $\{\tilde Q \neq 0 : c(\tilde Q) = 0\}$. The theorem is *The Zero Divisors and the Twelve Structures*, and it holds for the left and the right reading separately.
 
 **Proof.** The four products are $\theta(\tilde Q)\phi(\tilde R)$ with $\theta \in \{\mathrm{id}, {}^{\natural}\}$ and $\phi \in \{\mathrm{id}, {}^{*}\}$, and both $\theta$ and $\phi$ are bijections preserving the vanishing of the central square, so the plain criterion transfers to each of the four. The general-argument form is in the cited article.
 
@@ -124,7 +124,7 @@ So the two products agree on **which** elements are zero divisors and disagree o
 
 ## Summary
 
-The zero divisors of the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ are defined relative to the product, and they are the nonzero elements with $c(\tilde Q) = \sum_\mu Q_\mu^2 = 0$, equivalently $\tilde Q\tilde Q^{\natural} = 0$; the left and the right reading give the same condition. The set is the complex cone $c = 0$ of complex dimension three and real dimension six, the same subset of the space that the plain product, the natural product and the general plain sesquilinear product cut out, a coincidence that is a theorem of *The Zero Divisors and the Four General Products* because the criterion is the vanishing of the central square and the four products differ only by the two slot involutions.
+The zero divisors of the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ are defined relative to the product, and they are the nonzero elements with $c(\tilde Q) = \sum_\mu Q_\mu^2 = 0$, equivalently $\tilde Q\tilde Q^{\natural} = 0$; the left and the right reading give the same condition. The set is the complex cone $c = 0$ of complex dimension three and real dimension six, the same subset of the space that the plain product, the natural product and the general plain sesquilinear product cut out, a coincidence that is a theorem of *The Zero Divisors and the Twelve Structures* because the criterion is the vanishing of the central square and the four products differ only by the two slot involutions.
 
 The set splits by the scalar part into the pure family $Q_0 = 0$, with $\sum_k Q_k^2 = 0$, and the non-pure family $Q_0 \neq 0$, with $\sum_k Q_k^2 = -Q_0^2$; the square-zero elements, which are a real four-dimensional proper subfamily, lie in the **non-pure** family, so the split by the square and the split by the scalar part cut across each other and the analogy with the plain product stops at the criterion. The element $e_1 + ie_2$ is a pure zero divisor whose square is $-2e_0 - 2ie_3$, and the element $e_0 + ie_1$ is a non-pure zero divisor whose square vanishes.
 
@@ -145,8 +145,8 @@ The set splits by the scalar part into the pure family $Q_0 = 0$, with $\sum_k Q
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the definition of the zero divisor relative to a product and the two-sided reading.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion of the plain product, the two families and the element theory of the cone.
-- *The Zero Divisors and the Four General Products* (`articles_maths/the-zero-divisors-and-the-four-general-products.md`), for the theorem that the four general products have one zero-divisor set, which this article quotes.
-- *The Annihilating Elements of the Four General Products* (`articles_maths/the-annihilating-elements-of-the-four-general-products.md`), for the annihilation laws and the central-square criterion read across the four products.
+- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the theorem that the four general products have one zero-divisor set, which this article quotes.
+- *The Annihilating Elements of the Twelve Structures* (`articles_maths/the-annihilating-elements-of-the-twelve-structures.md`), for the annihilation laws and the central-square criterion read across the four products.
 - *Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the square-zero family $c(\hat\mu+i)$, its real dimension and its non-purity.
 - *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, its table and its axioms.
 - *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$ used in the examples.

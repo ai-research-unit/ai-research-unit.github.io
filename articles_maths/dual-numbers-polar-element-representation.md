@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article develops the polar representation of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm and the real size function on the units, *Shears and Parabolic Rotations* for the group of units and the shear, and *Dual-Numbers Exponential and Lie Group Structure* for the exponential. Its structural model is *The Polar Element Representation of Biquaternions*.
+This article develops the polar representation of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm and the real size function on the units, *Shears and Parabolic Rotations* for the group of units and the shear, and *Dual-Numbers Exponential and Lie Group Structure* for the exponential. The comparison throughout is with the complex polar representation, whose phase factor is the unit circle.
 
-The polar representation of the dual numbers is the **third and last row of the exponential trichotomy** and the **missing link of the polar series**. The trichotomy is the classification of a generator $\nu$ of a one-parameter group by the sign of $\nu^2$: for $\nu^2 = -1$ the exponential winds, giving the elliptic case; for $\nu^2 = +1$ it boosts, giving the hyperbolic case; for $\nu^2 = 0$ it shears, giving the parabolic case. The dual-number generator $\varepsilon$ has $\varepsilon^2 = 0$, and its row of the trichotomy is the parabolic one. The polar series of the family of number systems — complex, split complex, dual, quaternion, split quaternion, biquaternion, split biquaternion — is completed by this row; the dual case is the only one whose polar form has a nilpotent factor and no compact phase, and it is the link between the two-dimensional and higher-dimensional forms.
+The polar representation of the dual numbers is the **third and last row of the exponential trichotomy** and the **missing link of the polar series**. The trichotomy is the classification of a generator $\nu$ of a one-parameter group by the sign of $\nu^2$: for $\nu^2 = -1$ the exponential winds, giving the elliptic case; for $\nu^2 = +1$ it boosts, giving the hyperbolic case; for $\nu^2 = 0$ it shears, giving the parabolic case. The dual-number generator $\varepsilon$ has $\varepsilon^2 = 0$, and its row of the trichotomy is the parabolic one. The polar series of the family of number systems — complex, split complex, dual — is completed by this row; the dual case is the only one whose polar form has a nilpotent factor and no compact phase.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the field specialisation $R = k$ is flagged, and the ordered and geometric specialisation is $R = \mathbb{R}$, in which case the algebra is written $\mathbb{D}'$. A general dual number is
 
@@ -41,7 +41,7 @@ In the complex case the unit group contains the circle $U(1)$, whose parameter i
 
 ### The Centrality of the Nilpotent
 
-Because $\mathbb{D}'_R$ is commutative, every element is central, and in particular the nilpotent $\varepsilon$ is central and the shear factor $\exp(s\varepsilon) = 1 + s\varepsilon$ is central. In the biquaternion algebra the corresponding polar phase is the central imaginary unit $i$, a central *unit*; in the dual algebra the phase-like factor is central but *nilpotent*, so it cannot be extracted by a logarithm taking values in a torus. The centrality is what makes the order of the factors in the polar form immaterial here.
+Because $\mathbb{D}'_R$ is commutative, every element is central, and in particular the nilpotent $\varepsilon$ is central and the shear factor $\exp(s\varepsilon) = 1 + s\varepsilon$ is central. The phase-like factor is central but *nilpotent*, so it cannot be extracted by a logarithm taking values in a torus. The centrality is what makes the order of the factors in the polar form immaterial here.
 
 ## The Trichotomy of the Exponential
 
@@ -186,7 +186,7 @@ The scale $r = |a|$ is the continuous multiplicative real size on the units norm
 
 ### The Central Factor
 
-The factor $e^{s\varepsilon}$ is central because the algebra is commutative, and it is nilpotent-off-the-identity because $\varepsilon$ is nilpotent. It plays the role that the complex phase $e^{i\theta}$ plays in the complex polar form and that the central imaginary unit $i$ plays in the biquaternion form; the difference is that here the phase generator is nilpotent, so the "phase" is a shear and not a rotation.
+The factor $e^{s\varepsilon}$ is central because the algebra is commutative, and it is nilpotent-off-the-identity because $\varepsilon$ is nilpotent. It plays the role that the complex phase $e^{i\theta}$ plays in the complex polar form; the difference is that here the phase generator is nilpotent, so the "phase" is a shear and not a rotation.
 
 ## Degenerate Cases
 
@@ -225,12 +225,8 @@ The polar representations of the number systems of the corpus form a series, of 
 | $\mathbb{C}$ | $a^2 + a'^2$ | $\sqrt{a^2+a'^2}$ | $e^{i\theta}$ | elliptic |
 | $\mathbb{D} = \mathbb{R}[j]$ | $a^2 - a'^2$ | $\sqrt{|a^2-a'^2|}$ | $e^{\psi j}$ | hyperbolic |
 | $\mathbb{D}'$ | $a^2$ | $|a|$ | $1 + s\varepsilon$ | parabolic |
-| $\mathbb{H}$ | $a^2 + \|\vec v\|^2$ | $\|Q\|$ | unit sphere | spherical |
-| $\mathbb{H}_{\mathrm{s}}$ | $a^2 + b^2 - c^2 - d^2$ | $\sqrt{|\cdot|}$ | one-sheeted hyperboloid | hyperbolic |
-| $\mathbb{B}$ | $Q_0^2 + \|\vec Q\|^2$ (complex) | $\sqrt{|N|}$ | $U(1)\times SU(2)$ | elliptic–spherical |
-| $\mathbb{H}_{\mathbb{D}}$ | split signature | $\sqrt{|\cdot|}$ | $SL(2,\mathbb{R})$-type | mixed |
 
-The dual row is the missing link between the two-dimensional cases and the quaternionic cases: it is the two-dimensional case whose norm is degenerate, and it is the only member of the series whose polar phase factor is nilpotent. Reading down the column of phase factors, one passes from a compact circle, to a hyperbola, to a line, then to a three-sphere and its indefinite analogues; the dual line is the unique entry with no compact part and no period, and the whole series is exhaustive for the algebras of the corpus in the same way that the trichotomy is exhaustive for a generator of a one-parameter group.
+The dual row is the missing link between the two two-dimensional cases: it is the case whose norm is degenerate, and it is the only member of the series whose polar phase factor is nilpotent. Reading down the column of phase factors, one passes from a compact circle, to a hyperbola, to a line; the dual line is the unique entry with no compact part and no period, and the series is exhaustive for the two-dimensional algebras in the same way that the trichotomy is exhaustive for a generator of a one-parameter group.
 
 ## Summary
 
@@ -240,7 +236,7 @@ $$
 A = r\,u\,\exp(s\varepsilon), \qquad r = |a| > 0, \quad u = \operatorname{sgn}(a) \in \{\pm 1\}, \quad s = \frac{a'}{a},
 $$
 
-for every dual number $A = a + \varepsilon a'$ with $a \neq 0$. It has a single positive scale $r = |a|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $e^{s\varepsilon} = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = a'/a$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of units and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last row of the exponential trichotomy — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series that continues with the quaternion, split-quaternion, biquaternion and split-biquaternion forms.
+for every dual number $A = a + \varepsilon a'$ with $a \neq 0$. It has a single positive scale $r = |a|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $e^{s\varepsilon} = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = a'/a$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of units and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last row of the exponential trichotomy — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series.
 
 ## Summary of Notation
 
@@ -259,8 +255,6 @@ for every dual number $A = a + \varepsilon a'$ with $a \neq 0$. It has a single 
 | $1 + \mathrm{M}$ | Shear group, image of $s \mapsto e^{s\varepsilon}$ |
 | $e^{s\varepsilon} = 1 + s\varepsilon$ | Nilpotent central factor |
 | $s = a^{-1}a'$ | Parabolic angle |
-| $\mathbb{B}$ | Biquaternion algebra, the model of the polar series |
-| $\mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$ | Split quaternions and split biquaternions |
 
 ## Further Reading
 
@@ -268,5 +262,3 @@ for every dual number $A = a + \varepsilon a'$ with $a \neq 0$. It has a single 
 - Vladimir V. Kisil, *Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$* (Imperial College Press, London, 2012), for the elliptic–parabolic–hyperbolic trichotomy of one-parameter subgroups.
 - Erdal Inönü and Eugene P. Wigner, "On the contraction of groups and their representations", *Proceedings of the National Academy of Sciences of the USA* **39** (1953) 510–524, for the contraction that produces the parabolic case as a limit of the elliptic and hyperbolic cases.
 - Eduard Study, *Geometrie der Dynamen* (Teubner, Leipzig, 1903), for the classical parametrisation of the dual numbers.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the parallel analysis of the norms and unit groups across the number systems.
-- S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the four-factor polar representation of the biquaternion case.

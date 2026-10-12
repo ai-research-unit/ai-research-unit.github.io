@@ -88,7 +88,7 @@ a **central** element whose coefficient is a sum of squares of moduli; it is rea
 
 ### The Reality on the State Side
 
-The positivity acquires its physical interpretation on a subspace. On the Hermitian side $\mathbb{M}_{+}$ the Hermitian conjugation acts as the identity, $\tilde Q^{*}=\tilde Q$, so the second slot no longer conjugates anything new and the operation collapses onto the scalar part of the plain product,
+The positivity acquires its **physical interpretation** on a subspace. On the Hermitian side $\mathbb{M}_{+}$ the Hermitian conjugation acts as the identity, $\tilde Q^{*}=\tilde Q$, so the second slot no longer conjugates anything new and the operation collapses onto the scalar part of the plain product,
 
 $$
 \tilde P\circledast\tilde Q=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)e_0=\mathrm{Re}\,H(\tilde P,\tilde Q)\,e_0,\qquad \tilde P,\tilde Q\in\mathbb{M}_{+},
@@ -140,7 +140,7 @@ That identity is the interpretation the band's title records: **the operation is
 
 **Remark (the caution, and it is the spine of the band).** A positive central value is a **pairing** and not a state. The operation compares two elements and returns a number; it selects none. The Born *probability* is that number once a state and an effect have been supplied from outside the operation, and the operation neither supplies them nor chooses among them. The state side is established in *Quantum Physics in Biquaternionic Form* and read ontologically in *The Ontology of the Quantum State under the Biquaternion Framework*; the operation contributes the pairing and not the state.
 
-**Remark (where a scale enters).** The algebra carries no scale, and $\hbar$ enters with the physical interpretation of the phase amplitude and not here; the places of entry are those of the corpus, and none is invented in this article (*Action, Units, and the Constants of the Biquaternion Universe*).
+**Remark (where a scale enters).** The algebra carries no scale, and $\hbar$ enters with the **physical interpretation** of the phase amplitude and not here; the places of entry are those of the corpus, and none is invented in this article (*Action, Units, and the Constants of the Biquaternion Universe*).
 
 ## The Failure of the Jordan Identity
 

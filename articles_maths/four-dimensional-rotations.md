@@ -8,7 +8,7 @@ Everything in the article is a consequence of one formula. A rotation is $\tilde
 
 The isoclinic rotations form two three-dimensional spheres inside $SO(4)$. The two spheres commute elementwise, each is a normal subgroup, and no rotation conjugates one of them into the other; the reflection $\tilde r\mapsto\tilde{r}^{\natural}$ does exchange them. This is the exceptional position of dimension four among the rotation groups, and it is the reason $SO(4)$ is not simple. The last section reads the two angles in the Hopf coordinates of the unit sphere, where the rotation becomes a translation on a family of tori with the Clifford torus in the middle.
 
-The parametrisation is not derived here. The two-sided action $\Phi_{(q_1,q_2)}(\tilde r) = q_1\tilde rq_2^{-1}$, its kernel $\{\pm(1,1)\}$ and the covering $Sp(1)\times Sp(1)\to SO(4)$ are *Quaternion Rotations and Reflections*, §*The Two-Sided Action and SO(4)*, and the group-theoretic statement $SO(4)\cong(SU(2)\times SU(2))/\{\pm1\}$ is *Matrix Groups and Classical Groups*. The normal form of an orthogonal map of a definite space is *The Rotation Group and Orientation*, §*The Normal Form of a Rotation*; only its reading in four dimensions is used here. The Hopf fibration of the unit sphere is *Quaternion Geometry*, the topology of the unit sphere and of the rotation group is *Quaternion Topology*, and the indefinite analogue of the classification, in which the circular blocks are replaced by hyperbolic ones, is *Biquaternion Rotations and Lorentz Transformations*.
+The parametrisation is not derived here. The two-sided action $\Phi_{(q_1,q_2)}(\tilde r) = q_1\tilde rq_2^{-1}$, its kernel $\{\pm(1,1)\}$ and the covering $Sp(1)\times Sp(1)\to SO(4)$ are *Quaternion Rotations and Reflections*, §*The Two-Sided Action and SO(4)*, and the group-theoretic statement $SO(4)\cong(SU(2)\times SU(2))/\{\pm1\}$ is *Matrix Groups and Classical Groups*. The normal form of an orthogonal map of a definite space is *The Rotation Group and Orientation*, §*The Normal Form of a Rotation*; only its reading in four dimensions is used here.
 
 The treatment is mathematical throughout: a rotation is an element of $SO(4)$ and no physical object is introduced. The three names are the classical ones of the geometry of four dimensions; what is added here is their quaternion content.
 
@@ -56,7 +56,7 @@ The three types are tabulated with their fixed spaces and their planes.
 
 **Proposition.** Let $T$ be a double rotation with angles $0<\beta<\alpha<\pi$. Then the two planes of its normal form are the only invariant planes of $T$.
 
-*Proof.* Let $P$ be an invariant plane and extend scalars to $\mathbb{C}$. Since the four eigenvalues $e^{\pm i\alpha}, e^{\pm i\beta}$ are distinct, $T$ is diagonalisable with four eigenspaces of complex dimension one, and the invariant complex plane $P\otimes\mathbb{C}$ is the sum of two of them. A complex subspace is the complexification of a real one exactly when it is stable under complex conjugation, so the two eigenvalues involved are conjugate, and the two possibilities are $e^{i\alpha}, e^{-i\alpha}$ and $e^{i\beta}, e^{-i\beta}$. The first gives the plane of the angle $\alpha$ and the second the plane of the angle $\beta$.
+*Proof.* Let $P$ be an invariant plane and extend scalars to $\mathbb{C}$. Since the four eigenvalues $e^{\pm i\alpha}, e^{\pm i\beta}$ are distinct, $T$ is diagonalisable with four eigenspaces of complex dimension one, and the invariant complex plane $P\otimes\mathbb{C}$ is the sum of two of them. A complex subspace comes from a real one exactly when it is stable under complex conjugation, so the two eigenvalues involved are conjugate, and the two possibilities are $e^{i\alpha}, e^{-i\alpha}$ and $e^{i\beta}, e^{-i\beta}$. The first gives the plane of the angle $\alpha$ and the second the plane of the angle $\beta$.
 
 ## The Quaternion Parametrisation and the Two Angles
 
@@ -113,7 +113,6 @@ $$
 In particular the angles depend only on the real parts of the two factors and not on their axes.
 
 *Proof.* By the theorem the four eigenvalues are $e^{\pm i(\theta+\phi)}, e^{\pm i(\theta-\phi)}$, so the characteristic polynomial is the product of the quadratics $\lambda^2-2\cos(\theta+\phi)\lambda+1$ and $\lambda^2-2\cos(\theta-\phi)\lambda+1$. Expanding and using $\operatorname{Re}\tilde q = \cos\theta$, $\operatorname{Re}\tilde p = \cos\phi$ together with $\cos(\theta+\phi)\cos(\theta-\phi) = \cos^2\theta+\cos^2\phi-1$ gives the display.
-
 
 ## The Three Types in Quaternion Terms
 
@@ -252,9 +251,8 @@ The orbit of a point of the unit sphere under the one-parameter group of the rot
 | $SO(4)\cong(SU(2)\times SU(2))/\{\pm1\}$ and the failure of simplicity | *Matrix Groups and Classical Groups* |
 | The Hopf fibration and the quaternionic projective geometry | *Quaternion Geometry* |
 | The unit sphere, the rotation group and their homotopy groups | *Quaternion Topology* |
-| The Lorentz group and its hyperbolic blocks | *Biquaternion Rotations and Lorentz Transformations* |
 
-**Remark (the indefinite contrast).** The classification of this article belongs to the definite form of $\mathbb{H}$. Over the indefinite form the same parametrisation produces the Lorentz group, the normal form of an element has hyperbolic blocks in place of the circular ones, and the analogue of the isoclinic pair is the pair of the rotations and the hyperbolic rotations; the compactness of $S^3$ is replaced by the non-compactness of the hyperboloid, and the flow on a torus by a flow on a cylinder. That theory is *Biquaternion Rotations and Lorentz Transformations* and *Split-Biquaternion Rotations and the Lorentz Group*.
+**Remark (the indefinite contrast).** The classification of this article belongs to the definite form of $\mathbb{H}$. Over the indefinite form the same parametrisation produces the Lorentz group, the normal form of an element has hyperbolic blocks in place of the circular ones, and the analogue of the isoclinic pair is the pair of the rotations and the hyperbolic rotations; the compactness of $S^3$ is replaced by the non-compactness of the hyperboloid, and the flow on a torus by a flow on a cylinder.
 
 ## Summary
 

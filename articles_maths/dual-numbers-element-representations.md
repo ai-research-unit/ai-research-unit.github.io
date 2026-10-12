@@ -353,7 +353,6 @@ The article also records the representation ring $R(\mathbb{D}')$, the dual or c
 - Charles C. Pinter, *A Book of Abstract Algebra* (Dover, 2010), for the representation theory of algebras.
 - Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for the general theory of modules over rings.
 - Serge Lang, *Algebra* (Springer, 2002), for the structure theory of local rings.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, 1991), for the theory of algebras over commutative rings.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the general theory of quadratic forms.
 

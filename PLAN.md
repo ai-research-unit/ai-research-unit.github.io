@@ -82,6 +82,8 @@ Then the agent writes the article .md file. Here are editorial preferences :
 
   - LaTeX: never write q'_0^2 (prime is the superscript); never let $...$ span a line break; indent display math four spaces in a list; errors are silent (red #c00, not reported); \dddot and \slashed are template macros; |{}<> inside $...$ need no escaping.
 
+  - prefer "physical interpretation" to "physical reading"
+
 
 
 He appends his ideas, suggestions, interesting observations, decisions and reasons, speculations, verified facts, ownership/boundary rules, standing weaknesses to the companion file .context, created next to the article .md file.

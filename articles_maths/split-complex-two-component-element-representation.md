@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The split-complex algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of **two real coefficients**, $A = a + j a' \leftrightarrow (a, a')$. This article presents that **two-component realization** in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the two-dimensional counterpart of *The Four-Vector Element Representation of Biquaternions*, and it is the last of the three Representation articles, after *Split-Complex Element Representations* and *Split-Complex Regular Element Representation*.
+The split-complex algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of **two real coefficients**, $A = a + j a' \leftrightarrow (a, a')$. This article presents that **two-component realization** in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the last of the three Representation articles, after *Split-Complex Element Representations* and *Split-Complex Regular Element Representation*.
 
 The word *representation* is used here in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of *Split-Complex Element Representations*, and the matrix of the action on this coefficient space is the subject of *Split-Complex Regular Element Representation*; this article supplies the coordinate space on which that operator is written.
 
@@ -21,11 +21,11 @@ $$
 
 The coefficient of the unit is written $A^0$ and the coefficient of $j$ is written $A^1$; the component $A^0$ is the **real component** and $A^1$ the **imaginary component**. These are the honest names, because they are the coefficients of the real and imaginary parts of $A$ and nothing else.
 
-**Proposition.** The map $A \mapsto A^\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{D}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: unlike a biquaternion, whose components are complex, a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.
+**Proposition.** The map $A \mapsto A^\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{D}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.
 
 **Proof.** The map sends the basis $1, j$ to the standard basis of $\mathbb{R}^2$ and is extended by linearity; it is bijective on bases. The algebra is a real vector space of dimension $2$, matched by the dimension of $\mathbb{R}^2$.
 
-The coefficient space $\mathbb{R}^2$ **is** the algebra itself, seen as a coordinate space, and it is also the simple module of $\mathbb{D}$: the algebra is two-dimensional, its two idempotent components are one-dimensional, and the regular module is the direct sum of the two one-dimensional simple modules. So the numbers $2$, $2$, $2$ appearing as the dimension of the algebra, the size of the regular matrix of *Split-Complex Regular Element Representation*, and the dimension of the coefficient space are the same number for the same reason, in contrast with the biquaternion case where the algebra dimension $4$ and the simple-module dimension $2$ are different objects.
+The coefficient space $\mathbb{R}^2$ **is** the algebra itself, seen as a coordinate space, and it is also the simple module of $\mathbb{D}$: the algebra is two-dimensional, its two idempotent components are one-dimensional, and the regular module is the direct sum of the two one-dimensional simple modules. So the numbers $2$, $2$, $2$ appearing as the dimension of the algebra, the size of the regular matrix of *Split-Complex Regular Element Representation*, and the dimension of the coefficient space are the same number for the same reason.
 
 ### Coordinates in the Idempotent Basis
 
@@ -65,7 +65,7 @@ $$
 
 so the two components of the product are the two entries of the matrix product $\mathsf{M}_2(A)B$.
 
-**Remark (the row is the dual).** The row $A^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{D}, \mathbb{R})$ associated with $A$ by the standard pairing $\langle A^{\mathsf{T}}, B\rangle = a b + a' b'$, and it is **not** a further realization of the algebra. The dual of a left module is a right module, carrying the *right* action $(\varphi\cdot A)(B) = \varphi(AB)$. Because $\mathbb{D}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(A)$ is $\mathsf{M}_2(A)$ itself, since the regular matrix is symmetric. This is the degeneration of the biquaternion transposition identity, where the transpose of the left matrix is the left matrix of the conjugate.
+**Remark (the row is the dual).** The row $A^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{D}, \mathbb{R})$ associated with $A$ by the standard pairing $\langle A^{\mathsf{T}}, B\rangle = a b + a' b'$, and it is **not** a further realization of the algebra. The dual of a left module is a right module, carrying the *right* action $(\varphi\cdot A)(B) = \varphi(AB)$. Because $\mathbb{D}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(A)$ is $\mathsf{M}_2(A)$ itself, since the regular matrix is symmetric.
 
 ## Multiplication in Two-Component Form
 
@@ -249,7 +249,6 @@ The conjugation is the reflection $(a,a') \mapsto (a,-a')$, with fixed subspace 
 ## Further Reading
 
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the two-component and matrix readings of the split complex plane.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the parallel treatment of the two-dimensional real algebras.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex numbers as $\mathrm{Cl}_{1,0}$ and their coordinate realization.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for signatures, isotropic vectors and the Lorentzian plane.
 - Harvey Cohn, *A Classical Invitation to Algebraic Numbers and Class Fields* (Springer, Universitext, 1978), for the comparison of the two quadratic real algebras of dimension two.

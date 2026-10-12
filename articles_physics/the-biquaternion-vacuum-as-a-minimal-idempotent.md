@@ -243,7 +243,7 @@ The minimal-idempotent interpretation is not a diminution of the field vacuum. I
 
 **Interpretation.**
 - Reading the vacuum as a minimal idempotent, and reading the vacuum manifold as the order-parameter space of a spontaneously chosen state, are interpretations of algebraic facts. They are precise; they are not derivations of the field-theoretic vacuum.
-- The identification of the minimal left ideal with the one-particle module is standard representation theory applied to $\mathbb{B}$; its physical interpretation as "the vacuum determines the one-particle space" is the interpretive step.
+- The identification of the minimal left ideal with the one-particle module is standard representation theory applied to $\mathbb{B}$; its **physical interpretation** as "the vacuum determines the one-particle space" is the interpretive step.
 
 **Open.**
 - Whether a dynamics inside the framework selects a particular minimal idempotent, and by what mechanism, is not addressed by the algebra.

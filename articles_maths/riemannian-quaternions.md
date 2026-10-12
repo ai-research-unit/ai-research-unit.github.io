@@ -6,7 +6,7 @@ Hamilton's quaternions are the four-dimensional real algebra with a fixed basis 
 
 The article develops three things. The first is the frame and the interval: the frame is a quadruple of basis elements whose squares are prescribed, the interval of a displacement is diagonal in the frame with the squares of the frame as its coefficients, and the metric is therefore dynamic exactly when the frame is. The second is the differential calculus of the construction: the derivative of a coefficient times a frame element splits, by the Leibniz rule, into a part from the coefficient and a part from the frame, and the source names the resulting freedom of attribution the *general equivalence principle*. The third is the **rope**, the vector part of the square of a displacement, which is the companion of the metric in the construction and is nonzero exactly when the displacement has both a temporal and a spatial part.
 
-The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used. The algebra is *Quaternion Algebra*; the norm and the scalar product are *Quaternion Norm and Invertibility*; the quadratic-form vocabulary, the polarisation and the diagonal form are *Quadratic Forms and Polarisation*; the fixed-basis form $\mathrm{Sc}(g\tilde qg\tilde q)$ of a single quaternion, which is the sibling of the present construction, is *Quaternion Metrics*; the moving frame of the classical local differential geometry of three dimensions, in the biquaternion calculus, is *Curves and Surfaces in the Biquaternion Moving Frame*, and the Riemannian theory of curvature and the Levi-Civita connection is *Curvature and Geodesics* and *Riemannian Geometry*; nothing of those is re-derived here.
+The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used.
 
 Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde q = q_0e_0+\mathbf q$, with scalar part $\mathrm{Sc}\,\tilde q = q_0$ and vector part $\mathbf q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\mathbf q$, and the norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\mathbf q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.
 
@@ -87,7 +87,6 @@ $$
 a form of signature $(1,3)$ wherever $f>0$, whose single free function is the square of the temporal frame element.
 
 *Proof.* Substitute $\hat\imath_0^2 = f$ and $\imath_k^2 = 1/f$ in the theorem. The signature is the diagonal one: the temporal coefficient $f$ is positive and the three spatial coefficients $-1/(9f)$ are negative when $f>0$.
-
 
 ### The Metric Is Dynamic
 
@@ -181,10 +180,6 @@ and the rope is $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\ima
 
 *Quaternion Metrics* treats the form $Q_g(\tilde q) = \mathrm{Sc}(g\tilde qg\tilde q)$ of a single quaternion $g$ in the fixed basis, which is isometric to the Minkowski form of the algebra by the isometry $L_g$. The two constructions are the two ways of making the interval dynamic while keeping the algebra fixed: the sibling varies the quaternion $g$ against a fixed basis, and the present article varies the frame against a fixed product. The sibling produces a four-parameter family of forms all isometric to one another, whereas the frame produces one diagonal form per frame, and the two families meet in the single form $\mathrm{Sc}(\tilde q^2)$ of the constant frame with unit weights.
 
-### The Moving Frame of the Biquaternion Calculus
-
-*Curves and Surfaces in the Biquaternion Moving Frame* attaches an orthonormal frame of the three-dimensional Euclidean space to each point of a curve or a surface, and the frame is a rotor $r$ of the biquaternion algebra with $v_k = r\gamma_kr^{\dagger}$. That frame is a rotation of a fixed basis and its metric is the fixed Euclidean one; the present frame is a rescaling of the basis of $\mathbb{H}$, it is not a rotor, and its metric is the four squared frame elements. The two constructions therefore use the word *frame* in the two senses that the word carries in the corpus: the orthonormal frame of the differential geometry of a submanifold, and the basis, possibly scaled, of the ambient algebra. Neither subsumes the other.
-
 ## Summary
 
 A Riemannian quaternion is a quaternion read in a frame, that is in a basis $\hat\imath_\mu = \imath_\mu e_\mu$ each of whose elements is a real multiple of a basis element of $\mathbb{H}$, with the source's parity weights $1,\tfrac13,\tfrac13,\tfrac13$ on the four components. The frame is a scaled basis rather than a rotated one, and the four squared frame elements are the data the construction reads.
@@ -193,7 +188,7 @@ The interval of a displacement is the scalar part of its square, $\mathrm{Sc}(\m
 
 The differential of a Riemannian quaternion splits, by the Leibniz rule, into a part from the coefficients and a part from the frame; the attribution of a change between the two parts is the choice of the frame and not the value of the quaternion, and the source calls this freedom the general equivalence principle. The vector part of the square of a displacement is the rope, $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$ in the source's weights; it vanishes exactly when the displacement is purely temporal or purely spatial, and together with the interval it is the whole square, $\mathrm dA^2 = \mathrm{Sc}(\mathrm dA^2)+\mathrm{Vect}(\mathrm dA^2)$. The frame $f = 1-\kappa/r$ is carried through as the example, where the source reads the redshift of a central mass; the reading is the source's and no physical interpretation is drawn in this article.
 
-The construction is the second of the two ways presented in the corpus of making the interval of the algebra depend on the frame: the first, *Quaternion Metrics*, varies a quaternion against a fixed basis, and the present one varies the basis of a frame whose four squared elements are the metric. The moving frame of the biquaternion calculus is a different object, an orthonormal frame of the three-dimensional space attached to a curve or a surface.
+The construction is the second of the two ways presented in the corpus of making the interval of the algebra depend on the frame: the first, *Quaternion Metrics*, varies a quaternion against a fixed basis, and the present one varies the basis of a frame whose four squared elements are the metric.
 
 ## Summary of Notation
 

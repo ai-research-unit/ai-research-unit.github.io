@@ -5,7 +5,7 @@
 
 This article develops the topology of the real algebra $\mathbb{R}$: the order topology, the metric topology and their coincidence, the completeness and local compactness of the line, its connectedness and interval structure, its contractibility, its one-point and two-point compactifications, and its two ends. It is the base case of the topology series of the corpus.
 
-The subject is elementary, and its place in this blog is that of the base case. The topology is developed here for the one-dimensional algebra $\mathbb{R}$, in the companion articles *Complex Topology* for the two-dimensional definite algebra $\mathbb{C}$ and *Topology in the Space of Biquaternions* for the eight-dimensional algebra $\mathbb{B}$, and in the companion articles on the topology of the other members of the family. The whole structure is one connected line with two ends: every homotopy group vanishes, the unit set is the finite sign group, and the compactification that appears is the circle. The properties that the higher members acquire — a compact unit sphere, a null cone with a link, a nontrivial fundamental group — are all absent here, and their absence is the mathematical content of the one-dimensionality.
+The subject is elementary, and its place in this blog is that of the base case. The topology is developed here for the one-dimensional algebra $\mathbb{R}$, in the companion article *Complex Topology* for the two-dimensional definite algebra $\mathbb{C}$, and in the companion articles on the topology of the other members of the family. The whole structure is one connected line with two ends: every homotopy group vanishes, the unit set is the finite sign group, and the compactification that appears is the circle. The properties that the higher members acquire — a compact unit sphere, a nontrivial fundamental group — are all absent here, and their absence is the mathematical content of the one-dimensionality.
 
 **Conventions.** The basis is $e_0 = 1$; a real number is $a = a e_0$ with its single real coordinate $a$; the norm is $N(a) = a^2$ and the modulus and metric are $|a| = \sqrt{N(a)} = \sqrt{a^2}$; the group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$. No physics is invoked.
 
@@ -119,7 +119,7 @@ $$
 \mathbb{R}^\times \simeq \{\pm1\}, \qquad \pi_1(\mathbb{R}^\times) = 0, \qquad \pi_n(\mathbb{R}^\times) = 0 \ \ (n \geq 1).
 $$
 
-The real unit group is thus homotopy equivalent to a two-point space, and every homotopy group vanishes. This is the base case of the topology of the unit groups of the family: $\mathbb{C}^\times \simeq S^1$ has $\pi_1 \cong \mathbb{Z}$ from the winding of the phase, and $\mathbb{B}^\times \simeq U(2) \simeq S^1\times S^3$ has $\pi_1 \cong \mathbb{Z}$ and $\pi_3 \cong \mathbb{Z}$. The real case has no compact connected factor and therefore no homotopy to wind.
+The real unit group is thus homotopy equivalent to a two-point space, and every homotopy group vanishes. This is the base case of the topology of the unit groups of the family: $\mathbb{C}^\times \simeq S^1$ has $\pi_1 \cong \mathbb{Z}$ from the winding of the phase. The real case has no compact connected factor and therefore no homotopy to wind.
 
 ## The One-Point and Two-Point Compactifications, and the Ends
 
@@ -139,31 +139,31 @@ $$
 
 a compact ordered space in which every subset has a supremum and an infimum. The extra points are the two ends: the one-point compactification identifies them, the two-point compactification keeps them apart. In the complex case the one-point compactification is the Riemann sphere $S^2$; here it is the circle, and the circle appears because the two ends of the line, once joined, form a loop.
 
-**The ends.** The line has exactly **two ends**, the directions $a \to +\infty$ and $a \to -\infty$; both are ends of the contractible line, and the end compactification is $\overline{\mathbb{R}}$, which adds one point for each. The group of units $\mathbb{R}^\times$ has the same two ends, since removing the origin does not merge or split the unbounded directions. The number of ends is the topological invariant that distinguishes the line from the plane (which has one end) and from the biquaternion algebra (also one end, since dimension eight is greater than one); the two ends of $\mathbb{R}$ are the topological form of the two signs.
+**The ends.** The line has exactly **two ends**, the directions $a \to +\infty$ and $a \to -\infty$; both are ends of the contractible line, and the end compactification is $\overline{\mathbb{R}}$, which adds one point for each. The group of units $\mathbb{R}^\times$ has the same two ends, since removing the origin does not merge or split the unbounded directions. The number of ends is the topological invariant that distinguishes the line from the plane (which has one end); the two ends of $\mathbb{R}$ are the topological form of the two signs.
 
-## Comparison with the Complex and Biquaternion Topology
+## Comparison with the Complex Topology
 
-| Structure | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{B}$ |
-|---|---|---|---|
-| Algebra as a space | $\mathbb{R}$, contractible, two ends | $\mathbb{R}^2$, contractible, one end | $\mathbb{R}^8$, contractible, one end |
-| Unit sphere | $\{\pm1\} = S^0$, not connected | $S^1$, a connected group | $S^7$, not a group |
-| Norm-one level set | $\{\pm1\} = O(1)$, finite | $S^1 = U(1)$, compact | $SL(2,\mathbb{C})$, non-compact |
-| Null cone $\{N = 0\}$ | $\{0\}$, a point | $\{0\}$, a point | real dimension $6$ |
-| Link of the null cone | none | none | $S^1$-bundle over $S^2\times S^2$ |
-| Group of units | two contractible components | $\mathbb{C}^\times \simeq S^1$, connected | $\mathbb{B}^\times \simeq U(2)$ |
-| Homotopy of the units | all $\pi_n = 0$ | $\pi_1 \cong \mathbb{Z}$ | $\pi_1 \cong \mathbb{Z}$, $\pi_3 \cong \mathbb{Z}$ |
-| One-point compactification | $S^1$ | $S^2$ | (dimension $8$, not a group) |
-| Ends | two | one | one |
+| Structure | $\mathbb{R}$ | $\mathbb{C}$ |
+|---|---|---|
+| Algebra as a space | $\mathbb{R}$, contractible, two ends | $\mathbb{R}^2$, contractible, one end |
+| Unit sphere | $\{\pm1\} = S^0$, not connected | $S^1$, a connected group |
+| Norm-one level set | $\{\pm1\} = O(1)$, finite | $S^1 = U(1)$, compact |
+| Null cone $\{N = 0\}$ | $\{0\}$, a point | $\{0\}$, a point |
+| Link of the null cone | none | none |
+| Group of units | two contractible components | $\mathbb{C}^\times \simeq S^1$, connected |
+| Homotopy of the units | all $\pi_n = 0$ | $\pi_1 \cong \mathbb{Z}$ |
+| One-point compactification | $S^1$ | $S^2$ |
+| Ends | two | one |
 
-The three algebras share the contractibility of the ambient space. They differ in the unit sphere, which is the finite sign group for $\mathbb{R}$, a connected circle for $\mathbb{C}$, and a non-group seven-sphere for $\mathbb{B}$; in the unit group, which has two contractible components for $\mathbb{R}$ and a compact connected core for the other two; and in the ends, which are two for the line and one for the higher-dimensional spaces. Each difference traces to a single cause: the dimension of the real algebra, which makes the unit set finite, a circle or a sphere, and the definiteness of the norm, which makes the zero set of $N$ a single point rather than a cone.
+The two algebras share the contractibility of the ambient space. They differ in the unit sphere, which is the finite sign group for $\mathbb{R}$ and a connected circle for $\mathbb{C}$; in the unit group, which has two contractible components for $\mathbb{R}$ and a compact connected core for $\mathbb{C}$; and in the ends, which are two for the line and one for the plane. Each difference traces to a single cause: the dimension of the real algebra, which makes the unit set finite or a circle, and the definiteness of the norm, which makes the zero set of $N$ a single point.
 
 ## Summary
 
 The real algebra $\mathbb{R}$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{R}) = 0$ for all $n \ge 1$; its order topology and its metric topology coincide, it is complete and locally compact, and its connected subsets are exactly the intervals. The unit set $\{\pm1\} = O(1)$ is a compact, disconnected, abelian topological group of dimension $0$, the base case $S^0$ of the unit spheres of the normed division algebras; it is the maximal compact subgroup of the unit group.
 
-The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, an open, dense, disconnected, non-compact topological group with the two contractible components $\mathbb{R}_{>0}$ and $\mathbb{R}_{<0}$, homeomorphic to $\mathbb{R}_{>0}\times\{\pm1\}$. It is homotopy equivalent to a two-point space, so all of its homotopy groups vanish, in contrast with the winding of the complex and biquaternion unit groups. The unit group is the disjoint union of its two contractible rays; there is no null cone and no link, because the norm is definite and the zero-divisor class is empty.
+The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, an open, dense, disconnected, non-compact topological group with the two contractible components $\mathbb{R}_{>0}$ and $\mathbb{R}_{<0}$, homeomorphic to $\mathbb{R}_{>0}\times\{\pm1\}$. It is homotopy equivalent to a two-point space, so all of its homotopy groups vanish, in contrast with the winding of the complex unit group. The unit group is the disjoint union of its two contractible rays; there is no null cone and no link, because the norm is definite and the zero-divisor class is empty.
 
-The line has two ends, and the two compactifications are the two-point compactification $\overline{\mathbb{R}} = [-\infty,+\infty] \cong [0,1]$, which keeps the ends apart, and the one-point compactification $\mathbb{R}\cup\{\infty\} \cong S^1$, which joins them into the circle. Compared with the complex and biquaternion algebras, the real case loses the connected unit circle, the seven-sphere, the null cone and its link, and the non-vanishing homotopy groups, and keeps a contractible line whose compactification is the simplest closed curve.
+The line has two ends, and the two compactifications are the two-point compactification $\overline{\mathbb{R}} = [-\infty,+\infty] \cong [0,1]$, which keeps the ends apart, and the one-point compactification $\mathbb{R}\cup\{\infty\} \cong S^1$, which joins them into the circle. Compared with the complex algebra, the real case loses the connected unit circle and the non-vanishing homotopy groups, and keeps a contractible line whose compactification is the simplest closed curve.
 
 ## Summary of Notation
 
@@ -188,4 +188,3 @@ The line has two ends, and the two compactifications are the two-point compactif
 - Stephen Willard, *General Topology* (Addison–Wesley, 1970), for the Alexandrov one-point compactification and local compactness.
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002), for contractibility, homotopy groups and the ends of a space.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the unit sphere of a normed algebra and the finite base case $S^0$.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the unit-sphere topology of the higher-dimensional relatives.

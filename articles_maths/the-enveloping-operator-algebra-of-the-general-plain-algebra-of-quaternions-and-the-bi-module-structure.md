@@ -90,18 +90,7 @@ Thus $\mathbb{H}^{\mathrm{e}}$ contains the two commuting copies $L(\mathbb{H})$
 
 ## Comparison with the Complex Case
 
-Over the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the same construction gives $\mathbb{B}^{\mathrm{e}}=\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{op}}\cong M_4(\mathbb{C})$, and the standard module is $\mathbb{B}$ itself, of complex dimension four and simple over $\mathbb{B}^{\mathrm{e}}$, exactly as $\mathbb{H}$ is of real dimension four and simple over $\mathbb{H}^{\mathrm{e}}$; the module that splits is the one-sided one, the left regular module of $M_2(\mathbb{C})$, which is two copies of its column module $S$.
-
-| Feature | $\mathbb{H}$ | $\mathbb{B}$ |
-|---|---|---|
-| enveloping algebra | $\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}\cong M_4(\mathbb{R})$ | $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{op}}\cong M_4(\mathbb{C})$ |
-| scalar field of the tensor product | $\mathbb{R}$ | $\mathbb{C}$ |
-| standard module | $\mathbb{H}$, simple | $\mathbb{B}\cong\mathbb{C}^4$, simple |
-| left regular module over the algebra | $\mathbb{H}$, simple | $S\oplus S$, two copies of the column module $S$ |
-| centre of the enveloping algebra | one-dimensional | one-dimensional |
-| operator basis | $e_n[\,]e_m$ | $\tilde\Pi_n[\,]\tilde\Pi_m$ |
-
-The two constructions differ only in the coefficient field: over $\mathbb{R}$ the operator algebra is a real matrix algebra and over $\mathbb{C}$ a complex one, and the standard module over the enveloping algebra is simple in both cases; the splitting into the two columns appears in the one-sided regular module of the matrix model, not in the standard module. The complex case is owned by the biquaternion chapter and is cited for the contrast alone.
+The two constructions differ only in the coefficient field: over $\mathbb{R}$ the operator algebra is a real matrix algebra and over $\mathbb{C}$ a complex one, and the standard module over the enveloping algebra is simple in both cases; the splitting into the two columns appears in the one-sided regular module of the matrix model, not in the standard module.
 
 ## Summary
 

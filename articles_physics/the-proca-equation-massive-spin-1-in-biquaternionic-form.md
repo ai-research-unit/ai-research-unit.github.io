@@ -312,7 +312,7 @@ The separation is worth stating explicitly, because the Proca equation is standa
 
 **The algebra's part.** The framework gives three compact statements that the index notation only implies. First, the field strength is the vector part of the conjugate gradient of the potential, and the Lorenz condition is the statement that the scalar part of that product vanishes; the constraint is thus the vanishing of the scalar part of a single biquaternion. Second, the divergence argument that derives the constraint is the observation that the d'Alembertian is central and scalar and that the field strength is a pure vector, so the scalar part of $\Box\tilde{F}$ vanishes identically. Third, the Hodge dual is minus left multiplication by the scalar imaginary, so the self-dual split of the field strength is a statement about the algebra's complex structure and survives the addition of a mass.
 
-**What is imported.** The identification of the field with a particle of spin one, the value of the mass, and the physical interpretation of the three polarizations are inputs. The framework represents them; it does not derive them. The canonical quantisation of the Proca field, its propagator, and its constraint algebra belong to the field-theoretic companion subcategory and are not treated here.
+**What is imported.** The identification of the field with a particle of spin one, the value of the mass, and the **physical interpretation** of the three polarizations are inputs. The framework represents them; it does not derive them. The canonical quantisation of the Proca field, its propagator, and its constraint algebra belong to the field-theoretic companion subcategory and are not treated here.
 
 The conventions are those of three companion articles:
 

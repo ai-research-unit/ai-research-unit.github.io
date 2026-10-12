@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The plain product pairs with the scalar functional into one bilinear form, the **plain form** $\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$, and that form has a transpose calculus: every real-linear operator $T$ of $\mathbb{H}$ has a transpose $T^{\sim}$ defined by $\mathrm B(T\tilde p,\tilde q)=\mathrm B(\tilde p,T^{\sim}\tilde q)$, and the transposes of the one- and two-sided multiplications are computable in closed form. The article gives the association functional $\mathrm{Sc}(\tilde p\tilde q\tilde r)$ and its cyclic invariance, the transposes $L_{\tilde a}^{\sim}=R_{\tilde a}$ and $R_{\tilde b}^{\sim}=L_{\tilde b}$, the transpose of a sandwich and the matrix formula, the identity of the form with the coordinate pairing after the natural sign, and the contrast with the dagger calculus of the biquaternion chapter. The two products and the two forms are owned by *The 6 Products of the Quaternion Real Space* and *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, above this article in this category; the operators themselves are *Two-Sided Operators on the General Plain Algebra of Quaternions*, below this article in this category, and *One-Sided Operators on the General Plain Algebra of Quaternions*, below this article in this category; the enveloping algebra is *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, below this article in this category.
+The plain product pairs with the scalar functional into one bilinear form, the **plain form** $\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$, and that form has a transpose calculus: every real-linear operator $T$ of $\mathbb{H}$ has a transpose $T^{\sim}$ defined by $\mathrm B(T\tilde p,\tilde q)=\mathrm B(\tilde p,T^{\sim}\tilde q)$, and the transposes of the one- and two-sided multiplications are computable in closed form. The two products and the two forms are owned by *The 6 Products of the Quaternion Real Space* and *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, above this article in this category; the operators themselves are *Two-Sided Operators on the General Plain Algebra of Quaternions*, below this article in this category, and *One-Sided Operators on the General Plain Algebra of Quaternions*, below this article in this category; the enveloping algebra is *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, below this article in this category.
 
 The form is symmetric and indefinite of signature $(1,3)$. It is not the positive definite coordinate pairing, and the whole of the calculus below is the bookkeeping of that gap: the Gram matrix is the diagonal matrix of the signature, and the transpose of an operator is the operator's matrix conjugated by it.
 
@@ -101,22 +101,9 @@ $$
 
 **Corollary.** The natural sign is the adjoint of the identity of the plain form: it carries the indefinite form to the positive definite coordinate one, and its self-transposeness is the statement that the two pairings agree.
 
-## Contrast with the Dagger of the Biquaternion Chapter
-
-In the biquaternion chapter the corresponding structure is the Hermitian form $\mathrm{Sc}(\tilde P\tilde Q^{*})$, sesquilinear rather than bilinear, with the dagger in the second slot and the conjugate-transpose adjoint. Over $\mathbb{R}$ the bar is the identity and the star coincides with the natural sign, so of the two slot operations only the natural one is available, and the dagger calculus degenerates to the transpose calculus above:
-
-| Feature | $\mathbb{H}$ | $\mathbb{B}$ |
-|---|---|---|
-| form | $\mathrm{Sc}(\tilde p\tilde q)$ bilinear | $\mathrm{Sc}(\tilde P\tilde Q^{*})$ sesquilinear |
-| form's Gram matrix | $D=\operatorname{diag}(1,-1,-1,-1)$ | the same $D$, with the conjugation carried by the slot |
-| adjoint of an element | the natural sign ${}^{\natural}$, self-transpose | the natural sign and the star, conjugate-linear in one slot |
-| matrix of the transpose | $D\,G^{\mathsf T}D$ | $D\,Q^{\dagger}D$ with the conjugate transpose |
-
-The transpose calculus of this article is the real form of the dagger calculus of the biquaternion chapter, and the second row is the only place where the two differ: over $\mathbb{C}$ the scalar functional of the sesquilinear form is not symmetric but Hermitian, and the transpose is replaced by the conjugate transpose. The biquaternion facts are owned by the biquaternion chapter and are cited for the contrast alone.
-
 ## Summary
 
-The plain form $\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ is symmetric, non-degenerate and indefinite of signature $(1,3)$, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ and polar quadratic form $\mathrm{Sc}(\tilde q^2)=q_0^2-q_1^2-q_2^2-q_3^2$. The association functional $\mathrm{Sc}(\tilde p\tilde q\tilde r)$ is cyclically invariant, and the association of the two multiplications does not change it. The transpose of a real-linear operator is $G^{\sim}=D\,G^{\mathsf T}D$ in matrix form, and on the elementary operators it is $L_{\tilde a}^{\sim}=R_{\tilde a}$, $R_{\tilde b}^{\sim}=L_{\tilde b}$, $(L_{\tilde a}R_{\tilde b})^{\sim}=L_{\tilde b}R_{\tilde a}$ and $\natural^{\sim}=\natural$. Read through the natural sign the form is the positive definite coordinate pairing, $\mathrm B(\tilde p^{\natural},\tilde q)=\mathrm B(\tilde p,\tilde q^{\natural})=\sum_\mu p_\mu q_\mu$, and the Hermitian dagger of the biquaternion chapter degenerates to this transpose calculus when the coefficient field is $\mathbb{R}$.
+The plain form $\mathrm B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ is symmetric, non-degenerate and indefinite of signature $(1,3)$, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ and polar quadratic form $\mathrm{Sc}(\tilde q^2)=q_0^2-q_1^2-q_2^2-q_3^2$. The association functional $\mathrm{Sc}(\tilde p\tilde q\tilde r)$ is cyclically invariant, and the association of the two multiplications does not change it. The transpose of a real-linear operator is $G^{\sim}=D\,G^{\mathsf T}D$ in matrix form, and on the elementary operators it is $L_{\tilde a}^{\sim}=R_{\tilde a}$, $R_{\tilde b}^{\sim}=L_{\tilde b}$, $(L_{\tilde a}R_{\tilde b})^{\sim}=L_{\tilde b}R_{\tilde a}$ and $\natural^{\sim}=\natural$.
 
 ## Summary of Notation
 

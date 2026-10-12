@@ -112,7 +112,7 @@ $$
 
 which is exactly the image of $e_3$. So the assignment asserted above passes the check and the alternative fails it. Both statements were verified on the explicit matrices.
 
-The physical interpretation of the sign is the one recorded in the remark above. The Hermitian quaternion units $ie_k$ are Hermitian elements, and their images $\mathsf{M}_2(ie_k) = i\,\mathsf{M}_2(e_k)$ are the Hermitian matrices; the imaginary quaternion units themselves are not, since $\mathsf{M}_2(e_k)^\dagger = -\mathsf{M}_2(e_k)$ in the three vector cases. The assignment is thus the one under which the Hermitian elements of the algebra become the Hermitian matrices, and that is what makes it an algebra of observables. It is why the sign is a consequence of the algebra rather than a convention that could have gone either way.
+The **physical interpretation** of the sign is the one recorded in the remark above. The Hermitian quaternion units $ie_k$ are Hermitian elements, and their images $\mathsf{M}_2(ie_k) = i\,\mathsf{M}_2(e_k)$ are the Hermitian matrices; the imaginary quaternion units themselves are not, since $\mathsf{M}_2(e_k)^\dagger = -\mathsf{M}_2(e_k)$ in the three vector cases. The assignment is thus the one under which the Hermitian elements of the algebra become the Hermitian matrices, and that is what makes it an algebra of observables. It is why the sign is a consequence of the algebra rather than a convention that could have gone either way.
 
 ## Trace, Determinant and the Biquaternion Norm
 
@@ -204,7 +204,7 @@ $$
 = \begin{pmatrix} ct' + ict & 0 \\ 0 & ct' + ict \end{pmatrix},
 $$
 
-the scalar matrix reached from the complex coefficient through its two real parameters to the two physical times. The one subspace with no vector part: $Q_0e_0$ is Hermitian exactly when $Q_0$ is real and anti-Hermitian exactly when $Q_0$ is purely imaginary. Its two complex coefficients reduce to the two real parameters $q_0 = ct'$ and $q'_0 = ct$, so its physical interpretation is the two temporal directions together,
+the scalar matrix reached from the complex coefficient through its two real parameters to the two physical times. The one subspace with no vector part: $Q_0e_0$ is Hermitian exactly when $Q_0$ is real and anti-Hermitian exactly when $Q_0$ is purely imaginary. Its two complex coefficients reduce to the two real parameters $q_0 = ct'$ and $q'_0 = ct$, so its **physical interpretation** is the two temporal directions together,
 
 $$
 \tilde{Q} = q_0e_0 + q'_0(ie_0) = ct'\,e_0 + ict\,e_0 ,

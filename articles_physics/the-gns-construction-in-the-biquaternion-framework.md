@@ -254,7 +254,7 @@ is linear, positive, and normalised on the convolution algebra of $G$, and the G
 
 **Open.**
 - Whether the GNS construction of a *field* state, on the infinite-dimensional mode algebra, can be organized by the biquaternion algebra's fiber structure is open; the algebra hosts one mode, and the field algebra is a module over it.
-- Whether the jump in GNS dimension at the pure boundary — two on the Bloch sphere, four in its interior — has a physical interpretation beyond the irreducibility/reducibility split is not settled here.
+- Whether the jump in GNS dimension at the pure boundary — two on the Bloch sphere, four in its interior — has a **physical interpretation** beyond the irreducibility/reducibility split is not settled here.
 - Whether a Fourier route to the framework's states can be stated in the algebra's own terms is open. The transform of a measure in $\mathbb{B}$ is not positive definite, since the norm is indefinite ($N(i)=-1$, as *Biquaternion Continuous Harmonic Analysis* records), so the classical theorem has no source there; the states of this article use the Hermitian pairing instead, and whether that pairing admits a theorem of the same shape is not known.
 
 ## Summary

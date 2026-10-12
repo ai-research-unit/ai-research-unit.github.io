@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Because the quaternion algebra is a division algebra, every non-zero element is invertible and the spectrum of a single quaternion is easy to describe; but because it is non-commutative, the left and right eigenvalue problems for quaternionic matrices differ, and the word "spectrum" splits into several inequivalent sets. This article fixes the definitions, describes the spectrum of a quaternion and of a quaternionic matrix, proves the Cayley–Hamilton identity and describes the trace and determinant functionals, classifies the similarity classes and states the eigenvalue dichotomy, computes the eigenspaces, treats the resolvent and the spectral radius, and presents the S-spectrum and the quaternionic spectral theorem. It is the quaternion member of the family's spectral pair; its counterpart is the biquaternion case, where the scalars are central and the spectrum is an ordinary complex two-point set, and the relation between the two is that the biquaternion spectrum is the slice of the quaternion S-sphere.
+Because the quaternion algebra is a division algebra, every non-zero element is invertible and the spectrum of a single quaternion is easy to describe; but because it is non-commutative, the left and right eigenvalue problems for quaternionic matrices differ, and the word "spectrum" splits into several inequivalent sets. This article fixes the definitions, describes the spectrum of a quaternion and of a quaternionic matrix, proves the Cayley–Hamilton identity and describes the trace and determinant functionals, classifies the similarity classes and states the eigenvalue dichotomy, computes the eigenspaces, treats the resolvent and the spectral radius, and presents the S-spectrum and the quaternionic spectral theorem.
 
 The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* for the algebra, the quaternion norm and invertibility, *Quaternion Roots of Minus One* for the sphere of imaginary units, *Quaternion Automorphisms and Derivations* for conjugation and similarity, and *Quaternion Exponential and Lie Group Structure* for the exponential. The standard results on quaternionic matrices that are not computed here are quoted from the literature and named as standard.
 
@@ -219,27 +219,6 @@ so the S-spectrum is the union of the classes, $\sigma_S(M) = \bigcup_{i=1}^{n}[
 
 **Corollary.** For a normal matrix the S-spectrum determines the operator up to unitary equivalence, the spectral radius equals the operator norm, and a Hermitian matrix has real S-spectrum, a unitary one has S-spectrum contained in the unit sphere $S^3$.
 
-## Relation to the Biquaternion Spectral Theory
-
-Viewing a quaternion as a biquaternion with real coefficients, the complex spectrum of the biquaternion theory and the S-spectrum of this article are related by slicing: for any pure unit $\mu$ the complex line $q_0+\mathbb{R}[\mu] = q_0+(\mathbb{R}+\mu\mathbb{R})$ through the real point $q_0$ meets the S-sphere $[\tilde q]$ in exactly the two points $q_0\pm\mu|\mathrm{Vect}\tilde q|$, so the biquaternion spectrum is the two-point slice of the quaternion sphere, obtained by identifying the slice unit $\mu$ with the central imaginary unit $i$ of $\mathbb{B}$,
-
-$$
-[\tilde q]\cap\bigl(q_0+\mathbb{R}[\mu]\bigr) = \{q_0\pm\mu|\mathrm{Vect}\tilde q|\}, \qquad
-\sigma_{\mathbb{B}}(\tilde q) = \{q_0\pm i|\mathrm{Vect}\tilde q|\} .
-$$
-
-| Feature | Quaternion case $\mathbb{H}$ | Biquaternion case $\mathbb{B}$ |
-|---|---|---|
-| Scalars central? | no | yes |
-| Spectrum of a single element | $\sigma_S([\tilde q]) = [\tilde q]$, a $2$-sphere (or a point) | $\sigma(\tilde Q) = \{Q_0\pm iB\}$, two complex points |
-| Left and right spectra | differ; $\sigma_L([\tilde q]) = \{\tilde q\}$, $\sigma_R([\tilde q]) = [\tilde q]$ | agree as sets when eigenvalues are complex |
-| Trace and determinant functionals | reduced trace $2q_0$, reduced norm $N(\tilde q)$, real | trace $2Q_0$, determinant $N(\tilde Q)$, complex |
-| Matrix determinant | Dieudonné determinant, valued in $\mathbb{R}_{>0}$ | ordinary determinant, valued in $\mathbb{C}$ |
-| Spectral theorem | $M = U\operatorname{diag}(\lambda_i)U^{*}$, $\sigma_S(M) = \bigcup[\lambda_i]$ | $\tilde Q = \lambda_1P_1+\lambda_2P_2$, complex eigenvalues |
-| Reason for the difference | non-commuting scalars | central complex scalars |
-
-The essential difference is the non-commutativity of the scalars. Because the centre of $\mathbb{B}$ is $\mathbb{C}$, the left and right problems for a biquaternion coincide when eigenvalues are taken complex, and the spectral theorem can use complex eigenvalues directly; because the centre of $\mathbb{H}$ is $\mathbb{R}$, the eigenvalues of a quaternion fill a sphere, the left and right spectra are genuinely different, and the correct substitute for the complex spectrum is the S-spectrum, which equals the right spectrum and is a finite union of similarity classes. For a real quaternion viewed as a biquaternion, the two points of the biquaternion spectrum are the slice of the single quaternion sphere, so the two theories agree exactly on the complex line. The biquaternion account is in *Biquaternion Spectral Theory*.
-
 ## Summary
 
 The spectrum of a single quaternion in the algebra is the single point $\{\tilde q\}$, but the eigenvector problems of the operator $[\tilde q]$ give two different sets: the left spectrum $\sigma_L([\tilde q]) = \{\tilde q\}$ and the right spectrum $\sigma_R([\tilde q]) = $ the similarity class $[\tilde q]$, which is a point for real $\tilde q$ and a two-sphere of fixed modulus for non-real $\tilde q$. For a quaternionic matrix the right spectrum is a finite union of at most $n$ similarity classes, described by the standard form with complex representatives of non-negative imaginary part; the left spectrum is not invariant under similarity and need not be a finite union of classes, and the two spectra are in general incomparable, agreeing when the eigenvalue is complex.
@@ -248,7 +227,7 @@ The Cayley–Hamilton identity $\tilde q^2-T(\tilde q)\tilde q+D(\tilde q) = 0$ 
 
 The right eigenspace attached to a class is a right $\mathbb{H}$-subspace, of dimension one over $\mathbb{H}$ for a single quaternion, whereas the eigenspace of a fixed non-real representative is only a complex line; the left eigenspace for a single quaternion is all of $\mathbb{H}$. The S-resolvent and the left resolvent have explicit closed forms, and the spectral radius of a single quaternion is its modulus; in general the spectral radius obeys the Gelfand-type limit formula and, for normal matrices, equals the operator norm.
 
-The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ singular}\}$ equals the right spectrum, and the quaternionic spectral theorem diagonalises a normal matrix as $M = U\operatorname{diag}(\lambda_i)U^{*}$ with $\sigma_S(M) = \bigcup_i[\lambda_i]$; Hermitian matrices have real S-spectrum and unitary ones S-spectrum on $S^3$. The biquaternion spectrum is the slice of the quaternion sphere on the complex line, and the difference between the two theories is exactly the centrality of the scalars.
+The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ singular}\}$ equals the right spectrum, and the quaternionic spectral theorem diagonalises a normal matrix as $M = U\operatorname{diag}(\lambda_i)U^{*}$ with $\sigma_S(M) = \bigcup_i[\lambda_i]$; Hermitian matrices have real S-spectrum and unitary ones S-spectrum on $S^3$.
 
 ## Summary of Notation
 
@@ -271,7 +250,6 @@ The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ sin
 | $\rho(M)$ | Spectral radius; $\rho(\tilde q) = \lvert \tilde q\rvert$ |
 | $\sigma_S(M) = \sigma_R(M)$ | S-spectrum |
 | $M = U\operatorname{diag}(\lambda_i)U^{*}$ | Quaternionic spectral theorem for normal $M$ |
-| $\sigma_{\mathbb{B}}(\tilde q) = \{q_0\pm i\lvert\mathbf{q}\rvert\}$ | Biquaternion spectrum, the two-point slice of the quaternion sphere $[\tilde q]$ |
 
 ## Further Reading
 

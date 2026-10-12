@@ -6,7 +6,7 @@ The complex algebra is one additive group carrying two scalar readings. Read ove
 
 The article is purely linear. No form, no norm and no topology appear in it; the reading of the complex numbers as the realification of a form, with its signatures and its count of operations, is *The Realification and the Effect of the Change of Scalars*, below this article in this category. The multiplication itself is owned by *Complex Algebra* and the two distinguished subspaces by *Complex Subspaces*, both below this article in this category; both are cited here and neither is restated.
 
-The reading of the marks is the corpus convention, stated once because the older complex articles use the words differently. The **bar** is complex conjugation, the one nontrivial involution of the algebra; the **natural sign** is the identity, the quaternion factor being absent on a commutative base; and the **Hermitian star** coincides with the bar. The articles *Complex Algebra* and *Complex Subspaces*, below this article in this category, call these the "two natural conjugations" and the "two natural involutions" of the algebra, the identity and complex conjugation; those are the identity and the bar in the present vocabulary, and the two are the same two maps.
+The reading of the marks is the corpus convention, stated once because the older complex articles use the words differently. The **bar** is complex conjugation, the one nontrivial involution of the algebra, and the **Hermitian star** coincides with the bar. The articles *Complex Algebra* and *Complex Subspaces*, below this article in this category, call these the "two conjugations" and the "two involutions" of the algebra, the identity and complex conjugation; those are the identity and the bar in the present vocabulary, and the two are the same two maps.
 
 ## The Two Interpretations of the One Space
 
@@ -130,13 +130,13 @@ Read over itself, the space is one-dimensional, and a one-dimensional space over
 
 The real reading retains the two real lines $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$, of real dimension one each. Neither is a complex subspace: each is closed under real scalars but not under multiplication by $i$, which exchanges the two. Against those two real subspaces, the complex reading has no proper nonzero subspace at all; the two real lines are the structure of the underlying real space, and the complex reading forgets them.
 
-The complex space is also the reading of the **centre** of the biquaternion algebra $\mathbb{B}$, the subspace of the elements commuting with every element, of real dimension two and spanned by $e_0$ and $ie_0$; the identification is
+The complex space is its own **centre**, the subspace of the elements commuting with every element, of real dimension two; the identification is
 
 $$
 a + ia' \longmapsto a\,e_0 + a'\,(ie_0) .
 $$
 
-On that centre the four general products of the biquaternion algebra collapse to two, the products $AC$ and $A\bar C$; the collapse is the subject of *The Two Products of the Complex Space*, below this article in this category.
+On it the two products $AC$ and $A\bar C$ act; the product theory is the subject of *The Two Products of the Complex Space*, below this article in this category.
 
 ## Summary
 
@@ -144,7 +144,7 @@ The complex algebra is one additive group read over two scalar fields. Over $\ma
 
 A real-linear map of the plane is complex-linear exactly when it commutes with $J$ and conjugate-linear exactly when it anticommutes, and the two classes have the matrix shapes $pI + qJ$ and its antisymmetric companion. The complex-linear maps are multiplication by a complex number and form $\operatorname{End}_{\mathbb{C}}(\mathbb{C}) \cong \mathbb{C}$; the conjugate-linear maps form the complementary plane, and the two fill $\operatorname{End}_{\mathbb{R}}(\mathbb{C}) \cong M_2(\mathbb{R})$ in the $\pm 1$ eigenspace splitting of conjugation by $J$.
 
-The complexification $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$ is the sum of the space and its conjugate and is not the complex reading; the two complex-dimension-two and complex-dimension-one spaces must be told apart, and what returns the complex reading is $J$, not a scalar extension. Every real line is a real form, $V \cap JV = 0$ and $\mathbb{C} = V \oplus JV$, the two distinguished lines being $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$. Read over itself the space is self-dual and has no proper nonzero subspace, and it is the reading of the centre of the biquaternion algebra, on which the four general products collapse to two.
+The complexification $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$ is the sum of the space and its conjugate and is not the complex reading; the two complex-dimension-two and complex-dimension-one spaces must be told apart, and what returns the complex reading is $J$, not a scalar extension. Every real line is a real form, $V \cap JV = 0$ and $\mathbb{C} = V \oplus JV$, the two distinguished lines being $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$. Read over itself the space is self-dual and has no proper nonzero subspace, and it is its own centre, on which the two products $AC$ and $A\bar C$ act.
 
 ## Summary of Notation
 
@@ -163,8 +163,6 @@ The complexification $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C
 
 ## Further Reading
 
-- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the real and imaginary units as a real basis.
 - Serge Lang, *Algebra*, 3rd edition (Springer, 2002), for restriction and extension of scalars, tensor products of fields, and the classification of linear maps commuting with a complex structure.
 - Nathan Jacobson, *Lectures in Abstract Algebra*, Volume II (Van Nostrand, 1953), for the real vector space underlying a field extension and its linear endomorphisms.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the complex structure of a two-dimensional real algebra and its higher-dimensional analogues.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the place of $\mathbb{C}$ among the real division algebras and the real forms of their complexifications.

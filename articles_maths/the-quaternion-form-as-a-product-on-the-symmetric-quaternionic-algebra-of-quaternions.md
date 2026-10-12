@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The symmetric quaternionic block is the place where a form and a product are the same object: the product is $N$ read on the scalar line, and the coefficient $N$ is recovered from the product by taking its scalar part. This article reads the form in that role. It records the form as the coefficient of the product, its Gram matrix, its polarisation and its quadratic form, its positive definiteness, the reconstruction of the form from the product, and the comparison with the four forms of the biquaternion chapter.
+The symmetric quaternionic block is the place where a form and a product are the same object: the product is $N$ read on the scalar line, and the coefficient $N$ is recovered from the product by taking its scalar part. This article reads the form in that role.
 
-**Boundaries.** The product and its scalar law are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the two forms of the space, with their signatures and their reciprocal relation under the conjugation, are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm and the invertibility criterion of the plain product are *Norm and Invertibility in the General Plain Algebra*; the zero divisors and the isotropic elements are *Zero Divisors of the Symmetric Quaternionic Algebra* and *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*, above this article in this category. The biquaternion counterpart is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, and the four forms of the biquaternion space are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+**Boundaries.** The product and its scalar law are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the two forms of the space, with their signatures and their reciprocal relation under the conjugation, are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm and the invertibility criterion of the plain product are *Norm and Invertibility in the General Plain Algebra*; the zero divisors and the isotropic elements are *Zero Divisors of the Symmetric Quaternionic Algebra* and *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*, above this article in this category.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is
 
@@ -46,7 +46,7 @@ $$
 
 *Proof.* An identity Gram matrix is invertible, so the form is non-degenerate and its rank is $4$; the radical of a non-degenerate form is $\{0\}$, which is the computation of *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*.
 
-**Remark (the same Gram matrix as the biquaternion block).** The biquaternion coefficient has the identity Gram matrix over $\mathbb{C}$ as well (*The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, biquaternion); the two forms have the same Gram data and differ only in the field and in the definiteness that follows from it. This is why the radical is $\{0\}$ in both blocks and why the isotropic sets differ so sharply.
+This is why the radical is $\{0\}$ in both blocks and why the isotropic sets differ so sharply.
 
 ## The Polarisation and the Quadratic Form
 
@@ -106,26 +106,9 @@ and the product is recovered from the form by $\tilde p\star\tilde q=N(\tilde p,
 
 *Proof.* The two clauses are the two readings of the theorem.
 
-## The Comparison with the Four Forms of the Biquaternion Chapter
-
-The biquaternion space carries four forms, the plain and the quaternion bilinear forms and their two sesquilinear counterparts; over $\mathbb{R}$ the bar is the identity, and the four readings collapse pairwise to two.
-
-| form | biquaternion chapter | quaternion chapter |
-|---|---|---|
-| plain bilinear $\mathrm{Sc}(\tilde P\tilde Q)$ or $\mathrm{Sc}(\tilde p\tilde q)$ | $B$, complex bilinear, indefinite | $B$, real bilinear, indefinite of signature $(1,3)$ |
-| quaternion bilinear $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ or $\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ | $N$, complex bilinear, indefinite | $N$, real bilinear, definite of signature $(4,0)$ |
-| plain sesquilinear | a distinct form over $\mathbb{C}$ | coincides with $B$, the bar being the identity |
-| quaternion sesquilinear | a distinct form over $\mathbb{C}$ | coincides with $N$, the star coinciding with ${}^{\natural}$ |
-
-**Proposition (the collapse of the four into two).** Over $\mathbb{R}$ the bar is the identity and the star coincides with the natural sign, so the two sesquilinear readings of the biquaternion chapter coincide with their bilinear counterparts; the four forms reduce to the two forms $B$ and $N$ of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, and the block's coefficient is the second of them.
-
-*Proof.* In the biquaternion definitions the sesquilinear forms insert the bar on one slot; the bar being the identity on the real scalars, no conjugation survives, and the star being the natural sign, the quaternion sesquilinear form is the quaternion bilinear one. The definitions are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
-
-**Remark (what the block adds to the form).** The form $N$ alone is a quadratic form of $\mathbb{R}^4$; the block makes it a multiplication, and the difference is that the product has a unit-theoretic class (no unit), a zero-divisor class (maximal) and a root theory (the level sets), while the form alone has Gram data. The pairing $N$ is one of the six coefficients of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, and this article is its reading as a product.
-
 ## Summary
 
-The symmetric quaternionic block is the form $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ read on the scalar line, $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$, and the form is the scalar part of the product. Its Gram matrix in the basis is the identity $I_4$, so it is non-degenerate of rank $4$ with radical $\{0\}$; its quadratic form is $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$, positive definite of signature $(4,0)$ and inertia $(4,0,0)$, anisotropic, with the inequality $N(\tilde p,\tilde q)^{2}\leq N(\tilde p)N(\tilde q)$. The form determines the product and the product determines the form, through the scalar part and the polarisation. Over $\mathbb{R}$ the four forms of the biquaternion chapter collapse to the two forms $B$ and $N$, and the block is the second one made into a multiplication.
+The symmetric quaternionic block is the form $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ read on the scalar line, $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$, and the form is the scalar part of the product. Its Gram matrix in the basis is the identity $I_4$, so it is non-degenerate of rank $4$ with radical $\{0\}$; its quadratic form is $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$, positive definite of signature $(4,0)$ and inertia $(4,0,0)$, anisotropic, with the inequality $N(\tilde p,\tilde q)^{2}\leq N(\tilde p)N(\tilde q)$. The form determines the product and the product determines the form, through the scalar part and the polarisation.
 
 ## Summary of Notation
 
@@ -144,5 +127,3 @@ The symmetric quaternionic block is the form $N(\tilde p,\tilde q)=p_0q_0+\mathb
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), for the two forms, their signatures and their relation under the conjugation
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the radical and the isotropy of the coefficient
 - *Zero Divisors of the Symmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the bridge $N(\tilde p,\tilde q)=B(\tilde p,\tilde q^{\natural})$ and the zero-divisor criterion
-- *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the biquaternion counterpart
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms that collapse over $\mathbb{R}$

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The complex numbers carry two readings of one algebra: over $\mathbb{C}$, where the space has dimension one, and over $\mathbb{R}$, where the same space has dimension two. This article is the passage from the first reading to the second, the **realification**, and the effect of the change of scalars on the products and on the two forms. It is the **prototype** of the general construction of *The Realification and the Effect of the Change of Scalars*, of which the biquaternion article is the second rung.
+The complex numbers carry two readings of one algebra: over $\mathbb{C}$, where the space has dimension one, and over $\mathbb{R}$, where the same space has dimension two. This article is the passage from the first reading to the second, the **realification**, and the effect of the change of scalars on the products and on the two forms. It is the **prototype** of the general construction of *The Realification and the Effect of the Change of Scalars*.
 
 The space itself, its two scalar readings, the complex structure $J$ of multiplication by $i$, the criteria $TJ=JT$ and $SJ=-JS$ for the two kinds of real-linear map and their block shapes are those of *The Complex Numbers as a Vector Space over $\mathbb{R}$*, above this article in this category, and are recalled here only where the realification of the forms needs them. The two products are *The Two Products of the Complex Space*; the two forms and their diagonals are *The Two Forms and the Two Algebraic Norms of the Complex Space*, above this article in this category, and the realified signatures stated there, $(1,1)$ and $(2,0)$, are derived here from the two rules of the construction.
 
-**Conventions.** **Bar** is complex conjugation, the **natural sign** is the identity on the commutative base, and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $A=a+ia'$ and $C=c+ic'$, with $a$, $a'$, $c$, $c'$ real; the letters $B$, $N$, $H$, $K$ are the four forms, of which $B$ and $H$ survive, and $B$ is never an element. The topological norm $|\cdot|=\sqrt{H}$ remains the pointer of *Complex Norm and Invertibility*, below this article in this category.
+**Conventions.** **Bar** is complex conjugation and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $A=a+ia'$ and $C=c+ic'$, with $a$, $a'$, $c$, $c'$ real; the letters $B$, $N$, $H$, $K$ are the four forms, of which $B$ and $H$ survive, and $B$ is never an element. The topological norm $|\cdot|=\sqrt{H}$ remains the pointer of *Complex Norm and Invertibility*, below this article in this category.
 
 ## The Two Scalar Interpretations and the Doubling of the Dimension
 
@@ -140,5 +140,4 @@ The realification reads the one-dimensional complex space as the two-dimensional
 - *The Matrix Element Representations of the Complex Numbers*, above this article in this category, for the two matrices at $n=1$ read as element representations and for the identification of their determinant and trace with the algebraic norms.
 - *Remarkable Subspaces of the Complex Numbers and the Two Forms*, above this article in this category, for the coincidence of the two products on the real subspace.
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md`), for the general construction, of which this article is the prototype.
-- *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the two rules applied to the four forms of the biquaternion algebra.
 - *Complex Subspaces* (`articles_maths/complex-subspaces.md`) and *Complex Algebra* (`articles_maths/complex-algebra.md`), for the two subspaces and the field of the algebra.

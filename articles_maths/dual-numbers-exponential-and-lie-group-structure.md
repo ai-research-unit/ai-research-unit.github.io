@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{D}'$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows *Dual-Numbers Algebra* for the algebra and its abelian Lie bracket, *Dual-Numbers Norm and Invertibility* for the unit group, *Dual-Numbers Automorphisms and Derivations* for the derivation algebra, and *Shears and Parabolic Rotations* for the shear. The structural model is *Biquaternion Lie Group and Exponential Structure*, where the unit group is $GL_2(\mathbb{C})$; here it is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.
+This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{D}'$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows *Dual-Numbers Algebra* for the algebra and its abelian Lie bracket, *Dual-Numbers Norm and Invertibility* for the unit group, *Dual-Numbers Automorphisms and Derivations* for the derivation algebra, and *Shears and Parabolic Rotations* for the shear. The comparison throughout is with the split complex algebra, whose unit group is the two-component quotient $\mathbb{R}^\times$; here the unit group is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the exponential is a formal series when $R$ is a commutative $\mathbb{Q}$-algebra and an analytic series over the geometric specialisation $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is
 
@@ -183,7 +183,7 @@ the isomorphism being the class of $a + \varepsilon a'$ mapped to $1 + (a'/a)\va
 
 **Corollary.** The quotient is connected, contractible and one-dimensional; it is the space of shears, and it is the same object as the parabolic one-parameter subgroup $G$.
 
-## Comparison with the Split Complex and Biquaternion Cases
+## Comparison with the Split Complex Case
 
 ### The Split Complex Case
 
@@ -195,31 +195,21 @@ $$
 
 obtained by the ratio of the two idempotent components, and it has two components—unlike the connected quotient $(\mathbb{D}')^\times/\mathbb{R}^\times \cong \mathbb{R}$. The difference is the degeneracy of the norm: the split complex form has two independent directions, so the quotient retains a hyperbola-like two-component structure, while the dual form has one, so the quotient collapses to a line.
 
-### The Biquaternion Case
-
-For the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ the unit group is $GL_2(\mathbb{C})$, of real dimension eight, connected. The exponential of $\mathrm{GL}(2,\mathbb{C})$ is surjective onto $GL_2(\mathbb{C})$ but not injective, with kernel the matrices whose eigenvalue differences lie in $2\pi i\mathbb{Z}$; the exponential is not a diffeomorphism, and there is no global logarithm. The quotient by the scalars is
-
-$$
-GL_2(\mathbb{C})/\mathbb{C}^\times = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C}),
-$$
-
-the automorphism group of *Biquaternion Automorphisms and Derivations*, connected of real dimension six.
-
 ### The Table
 
-| | $\mathbb{D}'$ | $\mathbb{D}$ | $\mathbb{B}$ |
-|---|---|---|---|
-| Lie algebra | $\mathbb{R}^2$, abelian | $\mathbb{R}^2$, abelian | $\mathrm{GL}(2,\mathbb{C})$ |
-| Unit group | $\mathbb{R}^\times\times\mathbb{R}$, two components | $\mathbb{R}^\times\times\mathbb{R}^\times$, four components | $GL_2(\mathbb{C})$, connected |
-| Exponential | bijection onto identity component | bijection onto identity component | surjective, not injective |
-| Kernel of $\exp$ | $0$ | $0$ | eigenvalue gaps in $2\pi i\mathbb{Z}$ |
-| Unit group $/$ scalars | $\mathbb{R}$, connected | $\mathbb{R}^\times$, two components | $PGL(2,\mathbb{C})$, connected |
+| | $\mathbb{D}'$ | $\mathbb{D}$ |
+|---|---|---|
+| Lie algebra | $\mathbb{R}^2$, abelian | $\mathbb{R}^2$, abelian |
+| Unit group | $\mathbb{R}^\times\times\mathbb{R}$, two components | $\mathbb{R}^\times\times\mathbb{R}^\times$, four components |
+| Exponential | bijection onto identity component | bijection onto identity component |
+| Kernel of $\exp$ | $0$ | $0$ |
+| Unit group $/$ scalars | $\mathbb{R}$, connected | $\mathbb{R}^\times$, two components |
 
 The dual row is the two-dimensional row with the collapse of the quotient: the parabolic case replaces the hyperbolic two-component quotient of the split complex numbers by a single contractible line, while sharing with it the property that the exponential is a global diffeomorphism.
 
 ## Summary
 
-The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(a + \varepsilon a') = e^{a}(1 + \varepsilon a')$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{a > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$; the comparison with the biquaternion case shows a connected unit group $GL_2(\mathbb{C})$ on which the exponential is surjective but not injective.
+The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(a + \varepsilon a') = e^{a}(1 + \varepsilon a')$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{a > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.
 
 ## Summary of Notation
 
@@ -238,13 +228,11 @@ The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie alg
 | $G = 1 + \mathrm{M}$ | Parabolic one-parameter subgroup $\cong (\mathbb{R},+)$ |
 | $(\mathbb{D}')^\times/\mathbb{R}^\times \cong \mathbb{R}$ | Unit group modulo scaling |
 | $\partial_\varepsilon$ | Derivation generator, $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$ |
-| $\mathbb{B} \cong M_2(\mathbb{C})$ | Biquaternion algebra, the comparison model |
 
 ## Further Reading
 
 - Sophus Lie and Friedrich Engel, *Theorie der Transformationsgruppen* (Teubner, Leipzig, 1888–1893), for one-parameter groups, their infinitesimal generators, and the exponential map.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, New York, 1978), for the exponential map of a Lie group and the structure of abelian and nilpotent Lie groups.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Graduate Texts in Mathematics 222, Springer, New York, 2nd ed. 2015), for the matrix exponential, its kernel, and its surjectivity on matrix groups.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the groups of units of the low-dimensional real algebras.
 - Erdal Inönü and Eugene P. Wigner, "On the contraction of groups and their representations", *Proceedings of the National Academy of Sciences of the USA* **39** (1953) 510–524, for the contraction of the elliptic and hyperbolic groups to the parabolic one-parameter group.
 - Vladimir V. Kisil, *Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$* (Imperial College Press, London, 2012), for the parabolic one-parameter subgroup and its unipotent structure.

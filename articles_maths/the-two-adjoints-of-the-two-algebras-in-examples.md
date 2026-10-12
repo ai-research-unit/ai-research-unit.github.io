@@ -41,13 +41,9 @@ $$
 $$
 and the transposition relations of the two-sided operators follow by composing them, the adjoint of the sandwich $\tilde y\mapsto\tilde x\tilde y\tilde z$ swapping the two parameters and conjugating both in the quaternion case. The conjugation preserves the quaternion pairing, $N(\tilde y^{\natural},\tilde z^{\natural})=\overline{N(\tilde y,\tilde z)}=N(\tilde y,\tilde z)$, the pairing being real valued.
 
-## Comparison with the Biquaternion Case
-
-The biquaternion chapter has **four** adjoints, one for each of its four pairings: the transpose for the plain bilinear pairing, the quaternionic transpose for the quaternionic bilinear pairing, and the two conjugate transposes for the Hermitian and the Krein pairings, all of them instances of the general mark $\dagger$. Over $\mathbb{R}$ the second slot of the general construction carries no involution, and the four adjoints collapse to the two worked here, the transpose for the plain pairing and the conjugate transpose for the quaternion pairing. The collapse of the four products to two, of the four pairings to two and of the four adjoints to two is one collapse, read on three objects; the four adjoints of the complex rung are *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
-
 ## Summary
 
-The plain product has the adjoint rule $L_{\tilde x}^{\dagger}=R_{\tilde x}$ and $R_{\tilde x}^{\dagger}=L_{\tilde x}$ for the plain pairing, the transpose in the matrix model; the quaternionic product has $L_{\tilde x}^{\dagger}=L_{\tilde x^{\natural}}$ and $R_{\tilde x}^{\dagger}=R_{\tilde x^{\natural}}$ for the quaternion pairing, the conjugate transpose in the matrix model. Both rules say that passing to the adjoint conjugates the parameter and keeps it on its own side, the plain pairing conjugating nothing and the quaternion pairing conjugating on its first slot. The biquaternion chapter has four adjoints, one for each pairing, and the four-to-two collapse here is the same second-slot collapse as for the products and the pairings.
+The plain product has the adjoint rule $L_{\tilde x}^{\dagger}=R_{\tilde x}$ and $R_{\tilde x}^{\dagger}=L_{\tilde x}$ for the plain pairing, the transpose in the matrix model; the quaternionic product has $L_{\tilde x}^{\dagger}=L_{\tilde x^{\natural}}$ and $R_{\tilde x}^{\dagger}=R_{\tilde x^{\natural}}$ for the quaternion pairing, the conjugate transpose in the matrix model. Both rules say that passing to the adjoint conjugates the parameter and keeps it on its own side, the plain pairing conjugating nothing and the quaternion pairing conjugating on its first slot.
 
 ## Summary of Notation
 

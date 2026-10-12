@@ -7,7 +7,7 @@ The real algebra $\mathbb{R}$ is a one-dimensional real vector space with a comm
 
 The real case is the degenerate abelian base. The bracket vanishes identically, so $\mathbb{R}$ is the abelian Lie algebra $\mathrm{GL}_1(\mathbb{R})$ of dimension one, and the Baker–Campbell–Hausdorff series terminates at its leading term, making the exponential an exact group homomorphism. The group of units is disconnected, and the exponential covers only its identity component; the sign group is left over as the torsion of the unit group.
 
-The conventions are those of *Real Algebra*: basis $e_0 = 1$, a general element $a = a e_0$, the sole involution the identity, norm $N(a) = a\,a = a^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a surjective homomorphism with kernel $2\pi i\,\mathbb{Z}$, with the quaternions $\mathbb{H}$, and with the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, for which the exponential is neither injective nor a homomorphism. Every numerical value displayed below is exact.
+The conventions are those of *Real Algebra*: basis $e_0 = 1$, a general element $a = a e_0$, the sole involution the identity, norm $N(a) = a\,a = a^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a surjective homomorphism with kernel $2\pi i\,\mathbb{Z}$. Every numerical value displayed below is exact.
 
 ## The Algebra as the Abelian Lie Algebra
 
@@ -51,7 +51,7 @@ $$
 \mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\},
 $$
 
-the product of the identity component and the component group. In the complex and quaternion cases the unit group has one component, the second factor being the connected circle $U(1)$ or sphere $S^3$; here the second factor is the discrete sign group, and the disconnectedness is the distinctive feature of the real base.
+the product of the identity component and the component group. In the complex case the unit group has one component, the second factor being the connected circle $U(1)$; here the second factor is the discrete sign group, and the disconnectedness is the distinctive feature of the real base.
 
 ## The Exponential: Series and Closed Form
 
@@ -93,7 +93,7 @@ $$
 
 **Proof.** The real numbers commute, so $a$ and $b$ generate a commutative subalgebra, and the binomial theorem reorders the product of the two absolutely convergent series term by term into the series of $\exp(a+b)$; explicitly, the coefficient of the $n$-th power of the combined series is $\sum_{k} \frac{1}{k!(n-k)!} a^k b^{n-k} = \frac{(a+b)^n}{n!}$.
 
-This is the sharp difference from the biquaternion algebra, where the exponential is not a homomorphism and the failure is measured by the Baker–Campbell–Hausdorff series $\exp(a)\exp(b) = \exp(a+b+\tfrac12[a,b]+\cdots)$. Here every bracket in that series vanishes, so the series terminates at the leading term and the identity is exact without any smallness hypothesis. The general form reduces to the commuting case, which for $\mathbb{B}$ is the special case $[a,b] = 0$; for $\mathbb{R}$ the commuting case is the only case. The complex case is the same, one dimension up.
+The Baker–Campbell–Hausdorff series $\exp(a)\exp(b) = \exp(a+b+\tfrac12[a,b]+\cdots)$ terminates at the leading term because every bracket vanishes, so the identity is exact without any smallness hypothesis. The general form reduces to the commuting case, which for $\mathbb{R}$ is the only case. The complex case is the same, one dimension up.
 
 ## Surjectivity, Kernel and the Logarithm
 
@@ -111,7 +111,7 @@ $$
 \ln : \mathbb{R}_{>0} \longrightarrow \mathbb{R}, \qquad \exp(\ln r) = r, \qquad \ln(\exp a) = a,
 $$
 
-which exists because the exponential is a bijection; the reconstruction $\exp(\ln r) = r$ is exact for every $r > 0$, and the analytic development of the logarithm belongs to *Real Special Functions* and *Real Analysis*. The exponential is therefore **not surjective onto $\mathbb{R}^\times$**: the negative reals are not in its image, because $e^a > 0$ always, so the image is exactly the identity component of the unit group. This is the base case of the restriction of the image to the identity component; the complex, quaternion and biquaternion exponentials all reach their whole unit group, so a two-component unit group with a one-component exponential image is the distinctive feature of the real base, and its obstruction is exactly the sign.
+which exists because the exponential is a bijection; the reconstruction $\exp(\ln r) = r$ is exact for every $r > 0$, and the analytic development of the logarithm belongs to *Real Special Functions* and *Real Analysis*. The exponential is therefore **not surjective onto $\mathbb{R}^\times$**: the negative reals are not in its image, because $e^a > 0$ always, so the image is exactly the identity component of the unit group. This is the base case of the restriction of the image to the identity component; the complex exponential reaches its whole unit group, so a two-component unit group with a one-component exponential image is the distinctive feature of the real base, and its obstruction is exactly the sign.
 
 **Theorem (the kernel).** For $a \in \mathbb{R}$ one has $\exp(a) = 1$ if and only if $a = 0$; hence
 
@@ -121,7 +121,7 @@ $$
 
 **Proof.** $e^a = 1$ with $a \neq 0$ is impossible, since $e^a > 1$ for $a > 0$ and $0 < e^a < 1$ for $a < 0$.
 
-The kernel is trivial, so the exponential is injective and the real logarithm has no ambiguity. The biquaternion kernel is very much larger: it is not discrete, it is not a subgroup, and in its coordinates the conditions $Q_0 \in \pi i\mathbb{Z}$, $B \in \pi\mathbb{Z}$ with $Q_0$ and $B$ congruent modulo one another appear; the complex kernel is the discrete lattice $2\pi i\,\mathbb{Z}$. The real kernel is the smallest possible, the trivial subgroup, and every positive real has exactly one real logarithm.
+The kernel is trivial, so the exponential is injective and the real logarithm has no ambiguity. The complex kernel is the discrete lattice $2\pi i\,\mathbb{Z}$. The real kernel is the smallest possible, the trivial subgroup, and every positive real has exactly one real logarithm.
 
 ## One-Parameter Subgroups and the Sign Group
 
@@ -171,23 +171,23 @@ $$
 \pi_1(\mathbb{R}^\times) = 0, \qquad \pi_n(\mathbb{R}^\times) = 0 \ \ (n \geq 1).
 $$
 
-The complex unit group has $\pi_1 \cong \mathbb{Z}$ generated by the loop around the origin, the quaternion unit group has $\pi_1 = 0$ and $\pi_3 \cong \mathbb{Z}$, and the biquaternion unit group has $\pi_1 \cong \mathbb{Z}$ and $\pi_3 \cong \mathbb{Z}$; the real unit group is the case in which every homotopy group vanishes, because there is no compact connected factor to wind around.
+The complex unit group has $\pi_1 \cong \mathbb{Z}$ generated by the loop around the origin; the real unit group is the case in which every homotopy group vanishes, because there is no compact connected factor to wind around.
 
-## Comparison with the Complex, Quaternion and Biquaternion Lie Theory
+## Comparison with the Complex Lie Theory
 
 The cases are tabulated; the field is named in the entries that depend on it.
 
-| Structure | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{B}$ |
-|---|---|---|---|
-| Algebra as Lie algebra | abelian, real dimension $1$; bracket $0$ | abelian, real dimension $2$; bracket $0$ | $\mathrm{GL}(2,\mathbb{C})$, real dimension $8$; bracket $\neq 0$ |
-| Group of units | $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, two components, abelian | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, connected, abelian | $\mathbb{B}^\times \cong GL(2,\mathbb{C})$, connected, non-abelian |
-| Exponential | entire, homomorphism, injective | entire, homomorphism, not injective | entire, not a homomorphism |
-| Image of $\exp$ | $\mathbb{R}_{>0}$, the identity component | $\mathbb{C}^\times$, the whole group | $GL(2,\mathbb{C})$, the whole group |
-| Kernel of $\exp$ | $\{0\}$ | $2\pi i\,\mathbb{Z} \cong \mathbb{Z}$ | non-discrete subset of $\mathrm{GL}(2,\mathbb{C})$, not a subgroup |
-| Torsion of the unit group | $\{\pm1\}$, the sign group | the roots of unity $\mu_\infty \cong \mathbb{Q}/\mathbb{Z}$ | the finite-order elements of $GL(2,\mathbb{C})$ |
-| Norm-one group | $\{\pm1\} = O(1)$, finite | $U(1) \cong SO(2)$, compact, dimension $1$ | $SL(2,\mathbb{C})$, non-compact |
-| Maximal compact subgroup | $\{\pm 1\}$, dimension $0$ | $U(1) \cong S^1$ | $U(2) \cong S^1 \times S^3$ |
-| Homotopy | all $\pi_n = 0$ | $\pi_1 \cong \mathbb{Z}$, $\pi_n = 0$ ($n \ge 2$) | $\pi_1 \cong \mathbb{Z}$, $\pi_3 \cong \mathbb{Z}$ |
+| Structure | $\mathbb{R}$ | $\mathbb{C}$ |
+|---|---|---|
+| Algebra as Lie algebra | abelian, real dimension $1$; bracket $0$ | abelian, real dimension $2$; bracket $0$ |
+| Group of units | $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, two components, abelian | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, connected, abelian |
+| Exponential | entire, homomorphism, injective | entire, homomorphism, not injective |
+| Image of $\exp$ | $\mathbb{R}_{>0}$, the identity component | $\mathbb{C}^\times$, the whole group |
+| Kernel of $\exp$ | $\{0\}$ | $2\pi i\,\mathbb{Z} \cong \mathbb{Z}$ |
+| Torsion of the unit group | $\{\pm1\}$, the sign group | the roots of unity $\mu_\infty \cong \mathbb{Q}/\mathbb{Z}$ |
+| Norm-one group | $\{\pm1\} = O(1)$, finite | $U(1) \cong SO(2)$, compact, dimension $1$ |
+| Maximal compact subgroup | $\{\pm 1\}$, dimension $0$ | $U(1) \cong S^1$ |
+| Homotopy | all $\pi_n = 0$ | $\pi_1 \cong \mathbb{Z}$, $\pi_n = 0$ ($n \ge 2$) |
 
 Every exponential is entire and satisfies a group law; the differences are that the real exponential is injective with trivial kernel, that its image is only the identity component of the unit group rather than the whole group, and that its maximal compact subgroup is finite rather than a positive-dimensional torus. The real case is the completely reducible abelian base of the family, and its exponential is the base case of the isomorphism between an additive Lie algebra and a multiplicative Lie group.
 
@@ -222,5 +222,3 @@ The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential as an isomorphism $\mathbb{R} \cong \mathbb{R}_{>0}$ and the one-parameter subgroups of the line.
 - Walter Rudin, *Principles of Mathematical Analysis*, 3rd edition (McGraw-Hill, 1976), for the exponential and the logarithm as inverse functions.
 - Jean-Pierre Serre, *Lie Algebras and Lie Groups* (Springer, Lecture Notes in Mathematics 1500, 1992), for the Baker–Campbell–Hausdorff series and the abelian case in which it terminates.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the exponentials of the normed division algebras and the failure of surjectivity.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the exponential of the higher-dimensional algebras.

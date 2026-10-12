@@ -1,4 +1,4 @@
-# __The Idempotents of the Four General Products__
+# __The Idempotents of the Twelve Structures__
 
 ## Introduction
 
@@ -20,6 +20,31 @@ The four sets are of four different kinds, and the difference is not in the size
 | $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_0$, and $-\tfrac12e_0+\mu$ for a real vector $\mu$ with $(\mu,\mu) = \tfrac34$ | *Idempotents of the General Quaternionic Sesqualgebra* |
 
 Everything the four columns share is the trivial pair; everything else separates them. The comparison below reads the four sets through the central square, the unit structure and the remarkable subspaces, and it begins with the plain family, because the other three are described in its terms.
+
+## The Twelve Idempotent Sets
+
+The four products are four of the twelve structures of the space, the other eight being the symmetric and the antisymmetric parts of the four (*The 12 Products of the Biquaternion Complex Space*, *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The idempotent equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ is written in the operation of the structure, so each of the twelve carries an idempotent set of its own, and it is the square operator that decides them all.
+
+| structure | the square $\tilde\Pi\star\tilde\Pi$ | the idempotents |
+|---|---|---|
+| $\mathrm{GPA}$ | $\tilde\Pi^{2}$ | $0$, $e_0$, $\tfrac12(e_0+\tilde\Xi i)$ |
+| $\mathrm{SPA}$ | $\tilde\Pi^{2}$, the plain square | the same set as $\mathrm{GPA}$ |
+| $\mathrm{APA}$ | $0$ | $0$ alone |
+| $\mathrm{GQA}$ | $c(\tilde\Pi)e_0$ | $0$, $e_0$ |
+| $\mathrm{SQA}$ | $c(\tilde\Pi)e_0$ | $0$, $e_0$ |
+| $\mathrm{AQA}$ | $0$ | $0$ alone |
+| $\mathrm{GPS}$ | $\tilde\Pi\tilde\Pi^{*}$ | $0$, $e_0$, $\tfrac12(e_0+i\hat\mu)$ |
+| $\mathrm{SPS}$ | $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$, real and $\geq 0$ | $0$, $e_0$ |
+| $\mathrm{APS}$ | $\tfrac12(\tilde\Pi\tilde\Pi^{*}-\overline{\tilde\Pi\tilde\Pi^{*}})$ | $0$ alone |
+| $\mathrm{GQS}$ | $\tilde\Pi^{\natural}\tilde\Pi^{*}$ | $0$, $e_0$, $-\tfrac12e_0+\mu$ |
+| $\mathrm{SQS}$ | $\tfrac12(\tilde\Pi^{\natural}\tilde\Pi^{*}+\overline{\tilde\Pi^{\natural}\tilde\Pi^{*}})$ | $0$, $e_0$, $-\tfrac12e_0+\mu$ |
+| $\mathrm{AQS}$ | $\tfrac12(\tilde\Pi^{\natural}\tilde\Pi^{*}-\overline{\tilde\Pi^{\natural}\tilde\Pi^{*}})$ | $0$ alone |
+
+**Theorem (only five structures carry a nontrivial idempotent).** Among the twelve structures of the biquaternion complex space, an idempotent other than $0$ and $e_0$ exists exactly for $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and $\mathrm{SQS}$. The four antisymmetric structures have $0$ alone, and $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$ have the trivial pair. The idempotent sets of $\mathrm{GQS}$ and $\mathrm{SQS}$ coincide.
+
+*Proof.* On an antisymmetric structure the square vanishes on the diagonal, $\tilde\Pi\star\tilde\Pi = 0$, so the equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ forces $\tilde\Pi = 0$; this closes the four rows $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$ and $\mathrm{AQS}$. On $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$ the square is the central element $c(\tilde\Pi)e_0$ or $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$, so an idempotent is central, hence $\tilde\Pi = qe_0$ with $q\in\mathbb{C}$, and $q = q^{2}$ leaves $q\in\{0,1\}$. The five remaining rows are the theorem of §*The Four Sets*, together with the identity $\tilde\Pi\bullet\tilde\Pi = \tilde\Pi^{2}$ for the symmetric plain structure, whose square is therefore the plain square and whose idempotents are the algebra's own. For the symmetric quaternionic sesquilinear structure the square is the coefficientwise real part of $\tilde\Pi^{\natural}\tilde\Pi^{*}$, which is a real element, so the idempotent equation forces $\tilde\Pi$ real and reduces to $(\tilde\Pi^{\natural})^{2} = \tilde\Pi$; the resulting set is the family $-\tfrac12e_0+\mu$ with $(\mu,\mu) = \tfrac34$, the same set as the general quaternionic sesquilinear structure (*Idempotents of the Symmetric Quaternionic Sesqualgebra*).
+
+The classification is sharp, and it reads the ways a square operator can fail to be the plain square. The **antisymmetric** square is zero on the diagonal and destroys the equation. The **scalar-valued** square, the one of $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$, returns a central element, so an idempotent must be central and only the trivial pair survives. The **symmetric plain** square is the plain square itself, so $\mathrm{SPA}$ carries exactly the plain family, four parameters and all, although it is neither associative nor unital. The three derived structures that keep a two-parameter family of nontrivial idempotents — $\mathrm{GPS}$ with the Hermitian family, and $\mathrm{GQS}$ and $\mathrm{SQS}$ with the family $-\tfrac12e_0+\mu$ — are the derived structures whose square operator is neither identically zero nor central-valued; the family of $\mathrm{SQS}$ is the family of $\mathrm{GQS}$ because the coefficientwise real part of $\tilde\Pi^{\natural}\tilde\Pi^{*}$ equals $\tilde\Pi^{\natural}\tilde\Pi^{*}$ itself whenever $\tilde\Pi$ is real.
 
 ## The Plain Family and the Roots of Minus One
 
@@ -110,6 +135,8 @@ The central square separates the sets: it is $e_0$ on $e_0$, $0$ on every nontri
 
 The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no remarkable subspace, and the complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$ pairs the members of the plain family and is available for the plain product alone. The Peirce decomposition is the plain product's, because it needs associativity, and the comparison in one sentence is this: the plain product is the only one of the four whose idempotents build the algebra, the fourth product is the only one whose nontrivial idempotents are units, and the natural product is the only one with no nontrivial idempotent at all. The four sets themselves are tabulated in *Comparison Between the Four General Products*.
 
+Read among the twelve structures the idempotent equation loses most of its solutions. The four antisymmetric structures have $0$ alone, since their square vanishes on the diagonal; the three structures with a scalar-valued square, $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$, have the trivial pair; and five of the twelve, $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and $\mathrm{SQS}$, carry a nontrivial idempotent, the last two sharing the family $-\tfrac12e_0+\mu$. The symmetric plain structure is the surprise of the list: its square is the plain square, so it carries the whole plain family although it is neither associative nor unital.
+
 ## Summary of Notation
 
 | symbol | meaning |
@@ -119,6 +146,7 @@ The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no
 | $\hat\mu$ | a real unit vector, $\hat\mu^{2} = -e_0$ |
 | $\tilde\Pi_1(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ | the Hermitian idempotents of the general plain sesquilinear product |
 | $-\tfrac12e_0+\mu$ | the idempotents of the general quaternionic sesquilinear product, $(\mu,\mu) = \tfrac34$ |
+| $\mathrm{GPA},\dots,\mathrm{AQS}$ | the twelve structures of the space, the four general ones and their eight symmetric and antisymmetric parts |
 
 ## Further Reading
 
@@ -132,3 +160,8 @@ The families occupy the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no
 - *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.md`), for the positive cone on whose boundary the Hermitian idempotents lie.
 - *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the criterion that the central square not vanish, which the table applies.
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the remarkable subspaces and the products on them.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the four general products and their symmetric and antisymmetric parts.
+- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve names and the class of each.
+- *Idempotents of the Symmetric Plain Algebra* (`articles_maths/idempotents-of-the-symmetric-plain-algebra.md`), for the block whose idempotents are the idempotents of the algebra, the whole plain family and the Jordan Peirce decomposition.
+- *Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the family $-\tfrac12e_0+\mu$ as a two-sphere in the real quaternion subspace.
+- *Idempotents of the Symmetric Plain Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-plain-sesqualgebra.md`), for the trivial pair of the scalar-valued square.

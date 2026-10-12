@@ -175,7 +175,7 @@ The temporal direction therefore carries a real coordinate while the three spati
 
 ### The Honest Position
 
-The physical hypothesis is a **research program**, not a theory. It proposes a structural interpretation of the biquaternion algebra in which the Hermitian subspace is given a physical meaning as the arena of operations and information. The mathematics is established; the physical interpretation is a hypothesis.
+The physical hypothesis is a **research program**, not a theory. It proposes a structural interpretation of the biquaternion algebra in which the Hermitian subspace is given a physical meaning as the arena of operations and information. The mathematics is established; the **physical interpretation** is a hypothesis.
 
 The hypothesis is **not** in conflict with established physics, because it does not claim to replace any of it. The material sector $\mathbb{M}_-$ reproduces the four-vectors of relativistic physics, and the informational sector $\mathbb{M}_+$ carries the full operator algebra of a qubit. Whether $\mathbb{M}_+$ is a distinct physical sector, or only a mathematical structure that happens to describe the kinematics of a qubit, is an open question.
 
@@ -197,7 +197,7 @@ The hypothesis raises several concrete questions. We list them here as a researc
 
 **7. Empirical contact.** The most important question: what quantitative prediction distinguishes the informational hypothesis from standard physics? Without an empirical signature, the hypothesis remains a mathematical interpretation. Candidates for empirical contact include: modifications of the Lorentz transformation at very high energies, a new long-range force associated with the informational sector, or a modification of the light cone structure. None of these has been worked out.
 
-**8. The interpretation of the "imaginary directions".** The imaginary vector part of $\mathbb{M}_+$ carries the $i$. What is the precise sense in which these imaginary directions are "informational" rather than "spatial"? The formal structure is clear; the physical interpretation is not yet formal. One partial formalisation is in *The Biquaternion Fourier Transform and the Imaginary Directions*: there the imaginary directions are the **conjugate** directions, the axis that the root of $-1$ in the Fourier kernel selects and along which the conjugate variable — the frequency, the wavevector — is paired, so that an imaginary direction is a direction the pairing uses and not a direction in which anything propagates.
+**8. The interpretation of the "imaginary directions".** The imaginary vector part of $\mathbb{M}_+$ carries the $i$. What is the precise sense in which these imaginary directions are "informational" rather than "spatial"? The formal structure is clear; the **physical interpretation** is not yet formal. One partial formalisation is in *The Biquaternion Fourier Transform and the Imaginary Directions*: there the imaginary directions are the **conjugate** directions, the axis that the root of $-1$ in the Fourier kernel selects and along which the conjugate variable — the frequency, the wavevector — is paired, so that an imaginary direction is a direction the pairing uses and not a direction in which anything propagates.
 
 These questions are open, and they constitute the research program associated with the informational hypothesis.
 

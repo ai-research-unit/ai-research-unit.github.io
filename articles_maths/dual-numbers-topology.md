@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article collects the topology of the dual-number algebra $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ as a space: its contractibility, the Euclidean unit sphere, the norm-one set, the group of units and its homotopy, the maximal ideal as a closed nilpotent direction, and the boundary of the group of units. It uses the algebra and its submodules of *Dual-Numbers Algebra* and *Dual-Number Subspaces*, the norm and unit criterion of *Dual-Numbers Norm and Invertibility*, the maximal ideal of *Dual-Numbers Ideals and the Maximal Ideal*, the zero-divisor set of *Dual-Numbers Zero Divisors*, and the boundary of the unit group. The structural model is *The Topology of the Zero-Divisor Cone*, which studies the Euclidean sphere and the null cone of $\mathbb{B}$.
+This article collects the topology of the dual-number algebra $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ as a space: its contractibility, the Euclidean unit sphere, the norm-one set, the group of units and its homotopy, the maximal ideal as a closed nilpotent direction, and the boundary of the group of units. It uses the algebra and its submodules of *Dual-Numbers Algebra* and *Dual-Number Subspaces*, the norm and unit criterion of *Dual-Numbers Norm and Invertibility*, the maximal ideal of *Dual-Numbers Ideals and the Maximal Ideal*, the zero-divisor set of *Dual-Numbers Zero Divisors*, and the boundary of the unit group. The structural model is *The Topology of the Zero-Divisor Cone*, which studies the Euclidean sphere and the null cone.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{D}'$ over $\mathbb{R}$, a general dual number is
 
@@ -117,7 +117,7 @@ $$
 
 **Proof.** The maximal ideal is the line $\{a = 0\}$, closed with empty interior in the plane and homeomorphic to $\mathbb{R}$ through $a' \mapsto \varepsilon a'$; its points with $a' \neq 0$ are exactly the zero divisors. The components $\{a > 0\}$ and $\{a < 0\}$ are open half-planes, and every path between them meets the line $\{a = 0\}$.
 
-**Remark (the biquaternion boundary).** In the biquaternion case the boundary of the unit group is the zero-divisor cone, of real codimension two. In the dual case the boundary is a line, of real codimension one, so it is a topological wall rather than a cone, and it separates the two components of the unit group.
+**Remark (the boundary).** The boundary of the unit group is a line, of real codimension one, so it is a topological wall that separates the two components of the unit group.
 
 ## The Maximal Ideal as a Closed Nilpotent Direction
 
@@ -158,14 +158,12 @@ The topology of the dual numbers sits at the degenerate end of the family.
 | $\mathbb{C}$ | $\mathbb{R}^2$, contractible | $\mathbb{C}^\times \simeq S^1$ | circle $S^1$ | $\varnothing$ (no null directions) |
 | $\mathbb{D} = \mathbb{R}[j]$ | $\mathbb{R}^2$, contractible | $4$ contractible components, $\simeq S^0 \times S^0$ | hyperbola, two branches, $\simeq S^0$ | four points (two null lines) |
 | $\mathbb{D}'$ | $\mathbb{R}^2$, contractible | $2$ contractible components, $\simeq S^0$ | two parallel lines, $\simeq S^0$ | two points (a doubled pair) |
-| $\mathbb{H}$ | $\mathbb{R}^4$, contractible | $\simeq S^3$ | $S^3$ | $\varnothing$ |
-| $\mathbb{B} \cong M_2(\mathbb{C})$ | $\mathbb{R}^8$, contractible | $GL_2(\mathbb{C})$ | $SL(2,\mathbb{C})$ | $(S^3\times S^3)/U(1)$, $\pi_2 = \mathbb{Z}$ |
 
-Three features distinguish the dual row. First, the unit group has exactly two components, one fewer than the split complex case, because the norm has rank one rather than two; in both cases the components are contractible, so all higher homotopy is trivial. Second, the norm-one set is a pair of parallel lines, the degenerate limit of the hyperbola, with the same homotopy type $S^0$. Third, the isotropic set is a line whose link is two points rather than a sphere; the projective isotropic set is a single point of multiplicity two, so the link counts it twice, which is the reason the dual case has no analogue of the connected link $L \cong (S^3\times S^3)/U(1)$ of the biquaternion null cone.
+Three features distinguish the dual row. First, the unit group has exactly two components, one fewer than the split complex case, because the norm has rank one rather than two; in both cases the components are contractible, so all higher homotopy is trivial. Second, the norm-one set is a pair of parallel lines, the degenerate limit of the hyperbola, with the same homotopy type $S^0$. Third, the isotropic set is a line whose link is two points rather than a sphere; the projective isotropic set is a single point of multiplicity two, so the link counts it twice.
 
 ## Summary
 
-The dual-number algebra $\mathbb{D}'$, with its Euclidean topology, is a contractible topological algebra homeomorphic to $\mathbb{R}^2$, with all homotopy groups trivial. The Euclidean unit sphere is the circle $S^1 \cong S^1_E$, on which the zero divisor $\varepsilon$ lies, so the sphere is not contained in the group of units, and the Euclidean form is not multiplicative. The norm-one set is the pair of parallel lines $a = \pm 1$, with identity component the shear line $1 + \mathrm{M}$; it has the homotopy type of $S^0$. The group of units is the complement of the maximal ideal, two contractible open half-planes, with homotopy type $S^0$, fundamental group trivial, and maximal compact subgroup $\{\pm 1\}$. The maximal ideal is a closed nilpotent direction, homeomorphic to $\mathbb{R}$, contractible, of empty interior, and it is the null line of the norm; its link in the Euclidean sphere is the two-point space $\{\pm\varepsilon\}$, the double count of the degenerate isotropic line. The maximal ideal is exactly the boundary of the group of units. In the family of the corpus's number systems the dual row is the degenerate member: two contractible unit-group components against the split complex's four, and a doubled point link against the biquaternion cone's connected five-manifold.
+The dual-number algebra $\mathbb{D}'$, with its Euclidean topology, is a contractible topological algebra homeomorphic to $\mathbb{R}^2$, with all homotopy groups trivial. The Euclidean unit sphere is the circle $S^1 \cong S^1_E$, on which the zero divisor $\varepsilon$ lies, so the sphere is not contained in the group of units, and the Euclidean form is not multiplicative. The norm-one set is the pair of parallel lines $a = \pm 1$, with identity component the shear line $1 + \mathrm{M}$; it has the homotopy type of $S^0$. The group of units is the complement of the maximal ideal, two contractible open half-planes, with homotopy type $S^0$, fundamental group trivial, and maximal compact subgroup $\{\pm 1\}$. The maximal ideal is a closed nilpotent direction, homeomorphic to $\mathbb{R}$, contractible, of empty interior, and it is the null line of the norm; its link in the Euclidean sphere is the two-point space $\{\pm\varepsilon\}$, the double count of the degenerate isotropic line. The maximal ideal is exactly the boundary of the group of units. In the family of the corpus's number systems the dual row is the degenerate member: two contractible unit-group components against the split complex's four, and a doubled point link.
 
 ## Summary of Notation
 
@@ -184,7 +182,7 @@ The dual-number algebra $\mathbb{D}'$, with its Euclidean topology, is a contrac
 | $1 + \mathrm{M} = \{a = 1\}$ | Shear line, identity component of $H$ |
 | $L = \mathrm{M} \cap S^1_E = \{\pm\varepsilon\}$ | Link of the null line, $\cong S^0$ |
 | $\pi_0((\mathbb{D}')^\times) = \mathbb{Z}/2$ | Component count of the unit group |
-| $\mathbb{D}, \mathbb{H}, \mathbb{B}$ | Split complex, quaternion and biquaternion systems, the comparisons |
+| $\mathbb{D}$ | The split complex system, the closest comparison |
 
 ## Further Reading
 
@@ -192,5 +190,4 @@ The dual-number algebra $\mathbb{D}'$, with its Euclidean topology, is a contrac
 - Glen E. Bredon, *Topology and Geometry* (Graduate Texts in Mathematics 139, Springer, New York, 1993), for the topology of algebraic varieties and the link of a cone.
 - John Milnor and James D. Stasheff, *Characteristic Classes* (Annals of Mathematics Studies 76, Princeton University Press, 1974), for the topology of $\mathbb{R}^n \setminus \{0\}$ and sphere bundles, as the comparison objects.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Grundlehren der mathematischen Wissenschaften 294, Springer, Berlin, 1991), for the radical of a degenerate quadratic form and its isotropic part.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the unit groups and spheres of the number systems of the family.
 - Vladimir V. Kisil, *Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$* (Imperial College Press, London, 2012), for the parabolic case in the elliptic–parabolic–hyperbolic trichotomy of the unit groups.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article describes the left, right and two-sided modules over the quaternion algebra $\mathbb{H}$ and the category they form. The substance is one theorem and its consequences: over a division algebra a module is free, the rank of a free module is well defined, and the category is semisimple. The free-module argument is proved here rather than cited, because it is the place where the division property of $\mathbb{H}$ does its module-theoretic work; the result fails over the biquaternion algebra, whose regular module is a sum of two minimal ideals and whose naive torsion does not vanish. The division property is *Norm and Invertibility in the General Plain Algebra*, above this article in this category; the ideals, which are the submodules of the regular module, are *Ideals and Simplicity of the General Plain Algebra*, above this article in this category; the enveloping algebra and the operators by which the bimodule is read are *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, below this article in this category.
+This article describes the left, right and two-sided modules over the quaternion algebra $\mathbb{H}$ and the category they form. The substance is one theorem and its consequences: over a division algebra a module is free, the rank of a free module is well defined, and the category is semisimple. The division property is *Norm and Invertibility in the General Plain Algebra*, above this article in this category; the ideals, which are the submodules of the regular module, are *Ideals and Simplicity of the General Plain Algebra*, above this article in this category; the enveloping algebra and the operators by which the bimodule is read are *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, below this article in this category.
 
 ## The Regular Bimodule
 
@@ -66,23 +66,9 @@ This article describes the left, right and two-sided modules over the quaternion
 
 *Proof.* The theorem; a module all of whose submodules are summands is projective and injective, and every short exact sequence splits.
 
-## Comparison with the Module Category of $\mathbb{B}$
-
-The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$. Its module category has one simple module, the column space $\mathbb{C}^2$ on which $M_2(\mathbb{C})$ acts, and every module is a direct sum of copies of that simple module; the category is again semisimple, and the rank — the number of copies — is again well defined. What changes is the shape of the regular module and the torsion.
-
-| Feature | $\mathbb{H}$ | $\mathbb{B}\cong M_2(\mathbb{C})$ |
-|---|---|---|
-| regular module | simple, ${}_\mathbb{H}\mathbb{H}$ | $S\oplus S$, two copies of the column module $S$ |
-| simple modules | one, the regular module | one, the column module |
-| every module free | yes | as a module over $\mathbb{B}$: $S$ is projective, not free |
-| naive torsion $T(M)$ | $0$ | non-zero: $E_{11}E_{21}=0$ exhibits a non-zero element killed by a non-zero element |
-| rank | number of copies of ${}_\mathbb{H}\mathbb{H}$ | number of copies of $S$ |
-
-The table records the two differences that matter. First, the regular module of $\mathbb{H}$ is simple, while that of $\mathbb{B}$ is the sum of two minimal left ideals, so a free $\mathbb{B}$-module is never simple. Second, the naive torsion vanishes over $\mathbb{H}$ because every non-zero element is invertible, and fails over $\mathbb{B}$ because $\mathbb{B}$ has zero divisors: $E_{11}E_{21}=0$ with both factors non-zero. The module theory of the biquaternion algebra is owned by the biquaternion chapter and is cited for the contrast alone.
-
 ## Summary
 
-The regular bimodule ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries the two commuting actions of $\mathbb{H}$ and $\mathbb{H}^{\mathrm{op}}$ and is the standard bimodule; every left or right $\mathbb{H}$-module is free, by the transfinite construction that discards each generator already in the span of the earlier ones, and the rank of a free module is well defined because $\mathbb{H}^n$ has composition length $n$ with all factors the simple module ${}_\mathbb{H}\mathbb{H}$. The submodules of the regular module are the ideals, hence $0$ and $\mathbb{H}$ alone; the endomorphism rings are $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$. The category is semisimple, the naive torsion vanishes, every module is a direct sum of copies of the unique simple module, and every submodule is a summand. Over $\mathbb{B}\cong M_2(\mathbb{C})$ the category is still semisimple but the regular module is $S\oplus S$, the simple module is not free, and the naive torsion is non-zero.
+The regular bimodule ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries the two commuting actions of $\mathbb{H}$ and $\mathbb{H}^{\mathrm{op}}$ and is the standard bimodule; every left or right $\mathbb{H}$-module is free, by the transfinite construction that discards each generator already in the span of the earlier ones, and the rank of a free module is well defined because $\mathbb{H}^n$ has composition length $n$ with all factors the simple module ${}_\mathbb{H}\mathbb{H}$. The submodules of the regular module are the ideals, hence $0$ and $\mathbb{H}$ alone; the endomorphism rings are $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$. The category is semisimple, the naive torsion vanishes, every module is a direct sum of copies of the unique simple module, and every submodule is a summand.
 
 ## Summary of Notation
 
@@ -93,7 +79,6 @@ The regular bimodule ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries the two commut
 | $\mathbb{H}^{\mathrm{op}}$ | Opposite algebra |
 | $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}$ | Enveloping algebra |
 | $T(M)$ | Naive torsion submodule |
-| $S$ | The simple $\mathbb{B}$-module, the column space $\mathbb{C}^2$ |
 | $E_{ij}$ | Matrix units of $M_2(\mathbb{C})$ |
 
 ## Further Reading

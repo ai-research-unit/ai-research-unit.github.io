@@ -411,7 +411,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 ## Open Questions
 
-**1. Is there an algebraic selection rule for admissible potentials?** The framework distinguishes central from non-central operators but does not say which non-central operators have a physical interpretation. The central class used here is the safe one.
+**1. Is there an algebraic selection rule for admissible potentials?** The framework distinguishes central from non-central operators but does not say which non-central operators have a **physical interpretation**. The central class used here is the safe one.
 
 **2. What is the biquaternion image of the Jost function?** The Jost solutions, their analytic properties, and the decomposition of the $S$-matrix into a ratio of Jost functions are standard; whether the algebra singles out a representative of the Jost function is not known.
 

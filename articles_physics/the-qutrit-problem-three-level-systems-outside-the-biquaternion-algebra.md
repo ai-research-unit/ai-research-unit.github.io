@@ -212,7 +212,7 @@ The ledger between the algebra and the tensor square can be drawn item by item. 
 
 Two entries deserve comment. The projectors and the shifts are genuinely available, and they are elements of the two-qubit algebra, so the framework does contain the qutrit's standard formalism — in the tensor square. The Gell-Mann basis and the dynamical group are available too, but only as polynomials; they are not *elementary*, in the sense that no single algebra element of $\mathbb{B}$ represents a Gell-Mann generator. That distinction — elementary versus generated — is what the level count really controls.
 
-The physical interpretation of the spectator statement is worth stating once. If one insists on a three-level system inside $\mathbb{B}$, the only possibility is a qubit plus a decoupled level, and the decoupled level is a superselection sector: no observable of the theory connects it to the other two. Such a system is a qubit with a label, not a qutrit; and the label carries no information, because nothing acts on it. The framework's own three-level structures are therefore always composite, in the sense of the tensor square.
+The **physical interpretation** of the spectator statement is worth stating once. If one insists on a three-level system inside $\mathbb{B}$, the only possibility is a qubit plus a decoupled level, and the decoupled level is a superselection sector: no observable of the theory connects it to the other two. Such a system is a qubit with a label, not a qutrit; and the label carries no information, because nothing acts on it. The framework's own three-level structures are therefore always composite, in the sense of the tensor square.
 
 ## Higher Spin: The General Counting
 

@@ -77,7 +77,7 @@ The opposite choice, $\Delta=e^{+\tilde K}$ with $\Delta^{it}=e^{+i\tilde Kt}$, 
 
 ### The State Is Thermal with Respect to $\tilde K$
 
-The KMS property gives $\tilde K$ its physical interpretation. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde\rho\in\mathbb{M}_+$ that is positive definite and of trace one,
+The KMS property gives $\tilde K$ its **physical interpretation**. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde\rho\in\mathbb{M}_+$ that is positive definite and of trace one,
 $$
 \omega(\tilde A)=\mathrm{Tr}(\tilde\rho\,\tilde A),
 \qquad

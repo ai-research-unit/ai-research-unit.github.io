@@ -7,7 +7,6 @@ $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\ti
 *Introduction to the Antisymmetric Plain Algebra of Quaternions*. The plain algebra is a division
 algebra, with no zero divisor; the antisymmetric block is at the opposite extreme. This article
 determines its zero divisors: the criterion, the annihilator of an element, the pairs that multiply
-to zero, the families and the dimension count, and the comparison with the biquaternion block.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real scalars,
 but $\times$ is a different multiplication, alternating and without a unit. Throughout, the natural
@@ -17,8 +16,7 @@ no nontrivial involution, and the star coincides with the natural sign and gives
 The product, its alternation and its table are *Introduction to the Antisymmetric Plain Algebra of
 Quaternions*; the multiplication operators of the block are read in *The Adjoint Operators and the
 Derivations of the Antisymmetric Plain Algebra* and its two matrix models, all below this article in
-this category. The biquaternion counterpart is *Zero Divisors of the Antisymmetric Plain Algebra* of
-the biquaternion chapter.
+this category.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\mathbf q$ with
@@ -157,25 +155,6 @@ first element: if it is noncentral, four parameters, then the partner ranges ove
 $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$, of dimension two, giving a family of dimension six, which
 dominates the central stratum $\{\lambda e_0\}\times(\mathbb{H}\setminus\{0\})$, of dimension five. So
 the pairs have dimension six.
-
-## The Comparison with the Biquaternion Block
-
-| | the biquaternion antisymmetric plain algebra | the antisymmetric plain algebra of $\mathbb{H}$ |
-|---|---|---|
-| the operation | $\tilde P\wedge\tilde Q=\mathbf P\times\mathbf Q$ over $\mathbb{C}$ | $\tilde p\times\tilde q=\mathbf p\times\mathbf q$ over $\mathbb{R}$ |
-| the criterion | $\mathbf P,\mathbf Q$ proportional | $\mathbf p,\mathbf q$ proportional |
-| the zero-divisor set | the punctured space $\mathbb{B}\setminus\{0\}$ | the punctured space $\mathbb{H}\setminus\{0\}$ |
-| the annihilator | the plane $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\mathbf P$ | the plane $\mathbb{R}_{\mathbb{H}}\oplus\mathbb{R}\mathbf p$ |
-| the operator spectrum | $t^2(t^2+(\mathbf P,\mathbf P))$, with $(\mathbf P,\mathbf P)$ possibly zero | $t^2(t^2+\lvert\mathbf p\rvert^2)$, with $\lvert\mathbf p\rvert^2>0$ |
-
-**Remark (the criterion does not collapse).** Unlike the symmetric plain block, whose criterion
-collapses from a disjunction over $\mathbb{C}$ to a single condition over $\mathbb{R}$, the
-antisymmetric criterion is the same over both fields: the operation reads only the vector parts, and
-the vector product is field-free. The only difference is the spectrum of the operator: over
-$\mathbb{C}$ the quadratic factor can degenerate on the isotropic cone $(\mathbf P,\mathbf P)=0$,
-which does not exist over $\mathbb{R}$. The biquaternion block is *Zero Divisors of the
-Antisymmetric Plain Algebra* of the biquaternion chapter; the comparison is recorded here and not
-re-derived.
 
 ## Summary
 

@@ -461,7 +461,7 @@ The dictionary for the quaternion case is:
 | Cauchy–Goursat | $\int_{\partial\Omega}\nu f\,dS = 0$ for left regular $f$ |
 | Cauchy integral formula | $f(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\frac{(w-\tilde q)^{\natural}}{\lvert w-\tilde q\rvert^4}\nu(w)f(w)\,dS$ |
 
-In the general theory the boundary of a domain is a hypersurface and the Cauchy–Goursat theorem is a hypersurface statement; the quaternion case is the case of dimension four. The two properties that the general theory isolates and that are special to the quaternion algebra are the multiplicativity of the quaternion norm, which makes $\mathbb{H}$ a division algebra and makes the symbol invertible, and the centrality of $A\bar A$, which makes the kernel–normal product scalar. Both are needed for the statements above in their sharp form; the biquaternion algebra of category 30, which is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and is not a division algebra, is treated separately.
+In the general theory the boundary of a domain is a hypersurface and the Cauchy–Goursat theorem is a hypersurface statement; the quaternion case is the case of dimension four. The two properties that the general theory isolates and that are special to the quaternion algebra are the multiplicativity of the quaternion norm, which makes $\mathbb{H}$ a division algebra and makes the symbol invertible, and the centrality of $A\bar A$, which makes the kernel–normal product scalar.
 
 ## Summary
 

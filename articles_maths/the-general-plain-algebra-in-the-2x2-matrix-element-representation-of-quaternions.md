@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_0$ to the identity and $e_1,e_2,e_3$ to the negative imaginary multiples of the Pauli matrices. On that image the plain product is the matrix product, the plain form is half the trace pairing, and the invariants of the quaternion are the trace and the determinant of its image. This article reads the block's objects — the product, the form, the units, the inner automorphisms and the transpose — in the matrix model, and compares the embedding with the exact isomorphism of the biquaternion chapter. The norm and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*, above this article in this category; the form and the transpose are *Association and the Transpose on the General Plain Algebra*, above this article in this category; the operators are *Two-Sided Operators on the General Plain Algebra of Quaternions*, above this article in this category; the left regular model is *The General Plain Algebra in the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$*, below this article in this category.
+The quaternion algebra is embedded in the $2\times2$ complex matrices by the assignment that sends $e_0$ to the identity and $e_1,e_2,e_3$ to the negative imaginary multiples of the Pauli matrices. On that image the plain product is the matrix product, the plain form is half the trace pairing, and the invariants of the quaternion are the trace and the determinant of its image. The norm and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*, above this article in this category; the form and the transpose are *Association and the Transpose on the General Plain Algebra*, above this article in this category; the operators are *Two-Sided Operators on the General Plain Algebra of Quaternions*, above this article in this category; the left regular model is *The General Plain Algebra in the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$*, below this article in this category.
 
 ## The Embedding
 
@@ -86,27 +86,11 @@ $$
 
 *Proof.* $\operatorname{tr}(\mathsf{M}_2(\tilde q)X\mathsf{M}_2(\tilde q)^{-1}\,\mathsf{M}_2(\tilde q)Y\mathsf{M}_2(\tilde q)^{-1})=\operatorname{tr}(\mathsf{M}_2(\tilde q)XY\mathsf{M}_2(\tilde q)^{-1})=\operatorname{tr}(XY)$; and $\operatorname{tr}(X^{\mathsf T}Y^{\mathsf T})=\operatorname{tr}((YX)^{\mathsf T})=\operatorname{tr}(YX)=\operatorname{tr}(XY)$. The last statement is the correspondence $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$ above.
 
-**Corollary.** The inner automorphisms of $\mathbb{H}$ are the inner automorphisms of $M_2(\mathbb{C})$ that leave the real form $\mathsf{M}_2(\mathbb{H})$ stable, and they preserve the form $\mathrm B$; the transpose and the conjugate transpose likewise preserve the trace pairing, the first a complex-linear map and the second conjugate-linear.
-
-## Comparison with the Exact Isomorphism of the Biquaternion Chapter
-
-Over the complex coefficient field the corresponding statement is an isomorphism, not an embedding. The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra, with no dimension gap; the quaternion algebra embeds as a real form of the same matrix algebra.
-
-| Feature | $\mathbb{H}\hookrightarrow M_2(\mathbb{C})$ | $\mathbb{B}\cong M_2(\mathbb{C})$ |
-|---|---|---|
-| nature of the map | injective $\mathbb{R}$-algebra homomorphism | $\mathbb{C}$-algebra isomorphism |
-| real dimension of the image | $4$ | $8$ |
-| complex dimension of the ambient | $4$ | $4$ |
-| product | matrix product | matrix product |
-| form | $\tfrac12\operatorname{tr}(XY)$, signature $(1,3)$ | $\tfrac12\operatorname{tr}(XY)$, a complex bilinear form |
-| conjugate | conjugate transpose $X^{\dagger}$ | two conjugations, the bar and the star |
-| units | $\det>0$, image of $\mathbb{H}^{\times}$ | $GL_2(\mathbb{C})$ |
-
-The embedding reads the block as the real form of the matrix algebra: the product becomes matrix multiplication, the form becomes half the trace pairing with Gram matrix $D$ of signature $(1,3)$, the invariants become the trace $2q_0$ and the determinant $N(\tilde q)$, the units become the matrices of the image with positive determinant, and the inner automorphisms and the transpose preserve the trace pairing. The biquaternion case is the same matrix algebra read over $\mathbb{C}$ and is owned by the biquaternion chapter.
+**Corollary.** The inner automorphisms of $\mathbb{H}$ are the inner automorphisms of $M_2(\mathbb{C})$ that leave the real form $\mathsf{M}_2(\mathbb{H})$ stable, and they preserve the form $\mathrm B$; the transpose and the conjugate transpose likewise preserve the trace pairing.
 
 ## Summary
 
-The embedding $\mathsf{M}_2$ with $\mathsf{M}_2(e_0)=\mathbb{1}$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_2(\mathbb{C})$, with image the matrices $\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}$ of real dimension four whose complex span is the whole matrix algebra. On the image the plain product is the matrix product, the plain form is $\mathrm B(\tilde p,\tilde q)=\tfrac12\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))$ with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$, and the invariants are $\operatorname{tr}\mathsf{M}_2(\tilde q)=2q_0$ and $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$. The unit group maps onto the matrices of the image with positive determinant; the inner automorphisms become conjugations by those matrices; and conjugation and the transpose preserve the trace pairing, with the conjugate transpose corresponding to the natural sign. Over $\mathbb{C}$ the same matrix algebra is the biquaternion algebra by an exact isomorphism of complex algebras.
+The embedding $\mathsf{M}_2$ with $\mathsf{M}_2(e_0)=\mathbb{1}$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_2(\mathbb{C})$, with image the matrices $\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}$ of real dimension four whose complex span is the whole matrix algebra. On the image the plain product is the matrix product, the plain form is $\mathrm B(\tilde p,\tilde q)=\tfrac12\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))$ with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$, and the invariants are $\operatorname{tr}\mathsf{M}_2(\tilde q)=2q_0$ and $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$. The unit group maps onto the matrices of the image with positive determinant; the inner automorphisms become conjugations by those matrices; and conjugation and the transpose preserve the trace pairing, with the conjugate transpose corresponding to the natural sign.
 
 ## Summary of Notation
 

@@ -8,7 +8,7 @@ $$
 \tilde p \bullet \tilde q = \tfrac12\bigl(\tilde p \star \tilde q + \tilde q \star \tilde p\bigr) .
 $$
 
-It is the multiplication of the symmetric quaternionic algebra of the chapter, and this article does **not** develop that block: the commutative scalar-valued algebra, its zero divisors, its specificities and its matrix models are the articles of *Quaternions as a Symmetric Quaternionic Algebra (SQA) over $\mathbb{R}$*, all below this article in this category, and the introduction of the block is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, below this article in this category. What this article owns is the reading that the symmetrisation needs inside the general quaternionic block: the values of the product in the scalar line, the **Hermitian subspace** it singles out, the positivity of the product on that subspace, and the comparison with the biquaternion case.
+It is the multiplication of the symmetric quaternionic algebra of the chapter, and this article does **not** develop that block: the commutative scalar-valued algebra, its zero divisors, its specificities and its matrix models are the articles of *Quaternions as a Symmetric Quaternionic Algebra (SQA) over $\mathbb{R}$*, all below this article in this category, and the introduction of the block is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, below this article in this category.
 
 The reading is short because of one property: the symmetrisation of the quaternionic product is not only commutative but **central-valued**, its value being a real multiple of $e_0$. The symmetrised product is therefore the quaternion form of the space, the Euclidean inner product of $\mathbb{R}^4$, read as a product. It has no unit, it is not associative, and it fails the Jordan identity; and the two subspaces that the conjugation singles out — the scalar line and the vector subspace — are its two natural blocks, because over $\mathbb{R}$ there is **one** nontrivial involution and not two, so there are two eigenspaces and not four.
 
@@ -56,7 +56,7 @@ the scalar part being Hermitian and the vector part anti-Hermitian.
 
 *Proof.* The conjugation acts by $p_0e_0 + \mathbf p \mapsto p_0e_0 - \mathbf p$, so its fixed subspace is the scalar line and its negated one the vector subspace; an involution of a real vector space splits the space into its two eigenspaces.
 
-**Corollary (why two and not four).** The corpus counts two subspaces here where the biquaternion chapter counts four. Over the biquaternions the conjugation ${}^{\natural}$ and the complex conjugation $\bar{\cdot}$ are **two commuting involutions**, and their four sign combinations give four eigenspaces, the centre, the vector subspace, the real quaternion subspace and its imaginary multiple. Over $\mathbb{R}$ the scalar sector has **no** nontrivial involution — the bar is the identity by the conventions of the corpus — so ${}^{\natural}$ is the only involution at hand, it has two eigenspaces, and the four-subspace lattice collapses to two. The subspace and its companion are therefore the scalar line and the vector subspace, and no other.
+Over $\mathbb{R}$ the scalar sector has **no** nontrivial involution — the bar is the identity by the conventions of the corpus — so ${}^{\natural}$ is the only involution at hand, it has two eigenspaces, and the four-subspace lattice collapses to two. The subspace and its companion are therefore the scalar line and the vector subspace, and no other.
 
 ## Positivity on the Hermitian Subspace
 
@@ -64,27 +64,11 @@ the scalar part being Hermitian and the vector part anti-Hermitian.
 
 *Proof.* On the scalar line $\mathbf p = \mathbf q = 0$, so $\beta = p_0q_0$; on the vector subspace $p_0 = q_0 = 0$, so $\beta = \mathbf p \cdot \mathbf q$; the mixed value has $p_0 = 0$ or $q_0 = 0$ together with the corresponding vector part zero, so it vanishes.
 
-**Corollary (one form, not two).** The biquaternion chapter carries a Hermitian form and a Krein form, one positive on one pair of subspaces and one indefinite; the quaternion block carries **one** form, the quaternion form, and it is definite on the whole space and on each of the two subspaces. Definiteness removes the indefinite companion, but it does not remove the zero divisors of the symmetrisation, which lie in the orthogonal pairs: $\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)e_0$ vanishes exactly on the pairs with $\beta(\tilde p,\tilde q) = 0$, and those pairs are abundant, $e_1 \bullet e_2 = 0$ for two orthogonal pure elements and $e_0 \bullet e_1 = 0$ for a scalar and a vector. What definiteness removes is the zero divisor **against itself**: $\tilde p \bullet \tilde p = N(\tilde p)e_0$ never vanishes for $\tilde p \neq 0$, so the symmetrisation is anisotropic even though it has zero divisors. The contrast with the quaternionic product is exact: $\star$ has no zero divisor at all, while its symmetrisation has all the orthogonal pairs (*The Specificities of the General Quaternionic Algebra*, above this article in this category).
-
-## The Comparison with the Biquaternion Case
-
-The counterpart article of the biquaternion chapter reads the same symmetrisation on an eight-dimensional complex space, and the contrast is the one the two-subspace count already announces.
-
-| | quaternion block | biquaternion chapter |
-|---|---|---|
-| field | $\mathbb{R}$ | $\mathbb{C}$ |
-| symmetrised product | $\beta(\tilde p,\tilde q)e_0$ | $N(\tilde P,\tilde Q)e_0$ |
-| subspaces | two: scalar line and vector subspace | four: centre, vector subspace, quaternion and anti-quaternion subspaces |
-| form | one, definite | a Hermitian and a Krein form |
-| Jordan identity | fails | fails |
-
-**Proposition.** The symmetrisation is central-valued in both cases, and the differences are all consequences of the base field: the complex scalars supply a second involution and with it the second pair of subspaces, and the complex bilinear form supplies an isotropic cone and with it the indefinite Krein companion.
-
-*Proof.* The formulas of the product are the same; the eigenvalues of a real quadratic form are replaced by the isotropic directions of the complex one, and the involution $\bar{\cdot}$ is available only over $\mathbb{C}$.
+Definiteness removes the indefinite companion, but it does not remove the zero divisors of the symmetrisation, which lie in the orthogonal pairs: $\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)e_0$ vanishes exactly on the pairs with $\beta(\tilde p,\tilde q) = 0$, and those pairs are abundant, $e_1 \bullet e_2 = 0$ for two orthogonal pure elements and $e_0 \bullet e_1 = 0$ for a scalar and a vector. What definiteness removes is the zero divisor **against itself**: $\tilde p \bullet \tilde p = N(\tilde p)e_0$ never vanishes for $\tilde p \neq 0$, so the symmetrisation is anisotropic even though it has zero divisors. The contrast with the quaternionic product is exact: $\star$ has no zero divisor at all, while its symmetrisation has all the orthogonal pairs (*The Specificities of the General Quaternionic Algebra*, above this article in this category).
 
 ## Summary
 
-The symmetrised quaternionic product $\tilde p \bullet \tilde q = \tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p)$ is central-valued, $\beta(\tilde p,\tilde q)e_0$, $\mathbb{R}$-bilinear and commutative; it is the quaternion form of the space read as a product, it has no unit, it is not associative, and it fails the Jordan identity at $x = y = e_1$. The conjugation singles out two subspaces, the Hermitian one, which is the scalar line, and the anti-Hermitian one, which is the vector subspace; there are two and not four because $\mathbb{R}$ has a single nontrivial involution, the complex conjugation that the biquaternion chapter also carries being the identity here. The product is positive definite on the whole space, in particular on each of the two subspaces, and the two are orthogonal; the Hermitian form of the biquaternion chapter therefore has no indefinite companion in this block, though the symmetrisation does have zero divisors, exactly the orthogonal pairs, and is anisotropic in the weaker sense that no nonzero element is a zero divisor against itself.
+The symmetrised quaternionic product $\tilde p \bullet \tilde q = \tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p)$ is central-valued, $\beta(\tilde p,\tilde q)e_0$, $\mathbb{R}$-bilinear and commutative; it is the quaternion form of the space read as a product, it has no unit, it is not associative, and it fails the Jordan identity at $x = y = e_1$.
 
 ## Summary of Notation
 

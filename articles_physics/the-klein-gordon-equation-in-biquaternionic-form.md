@@ -314,7 +314,7 @@ The honest bottom line is a negative result about the framework's central struct
 
 5. **Second quantization in the biquaternion framework.** The resolution of both defects is to quantize the field, with $\tilde{\Phi}$ and $\tilde{\Phi}^*$ becoming operators. Whether the biquaternion structure adds anything to that procedure, or is again a relabelling of the complex scalar field's second quantization, is open.
 
-6. **A factorable massive operator.** The vector-coefficient operator $\Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla)$ factors into first-order operators and has a light-cone kernel, but its mass and its directional term cannot be separated. Is there a class of *massive* scalar operators with elementary kernels that is not obtained by this compensated construction — or, equivalently, is the price of factorisability always a compensating first-order term? The construction also raises whether the compensated operator has a physical interpretation of its own, rather than being a device for solving the first-order system.
+6. **A factorable massive operator.** The vector-coefficient operator $\Box_A + (\mathbf{F},\mathbf{F}) + 2i(\mathbf{F},\nabla)$ factors into first-order operators and has a light-cone kernel, but its mass and its directional term cannot be separated. Is there a class of *massive* scalar operators with elementary kernels that is not obtained by this compensated construction — or, equivalently, is the price of factorisability always a compensating first-order term? The construction also raises whether the compensated operator has a **physical interpretation** of its own, rather than being a device for solving the first-order system.
 
 ## Summary
 

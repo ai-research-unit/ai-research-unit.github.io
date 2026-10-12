@@ -201,7 +201,7 @@ which is the "sub-case $r=1$" of the double-dilatation statement. Physically it 
 
 ## Further Particular Cases
 
-The general operator has four parameters, and every interesting case is obtained by switching one of them off. The table gives the sandwich and the module in each case, with the physical interpretation.
+The general operator has four parameters, and every interesting case is obtained by switching one of them off. The table gives the sandwich and the module in each case, with the **physical interpretation**.
 
 | case | condition | sandwich $H_{\tilde{Q}}$ | module twist $\chi$ |
 |---|---|---|---|

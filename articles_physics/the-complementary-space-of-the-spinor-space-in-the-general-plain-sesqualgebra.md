@@ -109,7 +109,7 @@ $$
 \mathbb{B}=S\perp\mathbb{B}\tilde\Pi_2,
 $$
 
-so the regular module is the **orthogonal direct sum of two isometric copies of the state space**. The complement's physical interpretation in the GPS band follows directly: the framework's state space is doubled, the two copies are orthogonal for the probability metric, and a state of one copy has no component in the other as measured by the form. The metric therefore does not mix the two copies; the interaction between them, where it exists, is not a metric effect.
+so the regular module is the **orthogonal direct sum of two isometric copies of the state space**. The complement's **physical interpretation** in the GPS band follows directly: the framework's state space is doubled, the two copies are orthogonal for the probability metric, and a state of one copy has no component in the other as measured by the form. The metric therefore does not mix the two copies; the interaction between them, where it exists, is not a metric effect.
 
 ### The Mixing Is Right Multiplication, Not the Form
 

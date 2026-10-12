@@ -8,7 +8,6 @@ Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, be
 this category). This article reads its adjoint operators: the left multiplications by an element, their
 matrix and invariants, the failure of the derivation property and its identity with the Jacobi failure,
 the algebra the operators generate, the derivations of the block, and the comparison with the cross
-product and with the biquaternion block.
 
 The block's operators are a deformation of the cross-product operators: the trace is $3p_0$ instead of
 $0$, the rank is three instead of two, the kernel is the **line** of the element instead of a plane, the
@@ -24,8 +23,6 @@ sign and gives nothing new. The symbol $\diamond$ is reserved for this block.
 The operation and its failure are *Introduction to the Antisymmetric Quaternionic Algebra of
 Quaternions* and *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
 Algebra*, below this article in this category. The comparator is *The Adjoint Operators and the
-Derivations of the Antisymmetric Plain Algebra*, above this article in this category; the biquaternion
-counterpart is *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* of the biquaternion
 chapter.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
@@ -171,8 +168,7 @@ under commutation and has dimension seven.
 
 **Remark (the closure as the echo of the defect).** The quotient of the sixteen-dimensional algebra by
 the twelve-dimensional one has dimension four, and it is the operator echo of the associativity defect
-of the parent product; over $\mathbb{C}$ the same closure has complex dimension twelve, the structure
-constants of the block being the same over the two fields.
+of the parent product.
 
 ## The Relation to the Adjoint Operators of the Cross Product
 
@@ -191,24 +187,6 @@ operator of a pure element is the operator of $\mathrm{APA}$ with the sign rever
 the vector subspace; for a general element the two mixed terms $p_0\mathbf q-q_0\mathbf p$ are added,
 the trace $3p_0$ appears where it was zero, the kernel shrinks from a plane to the line of the element,
 and the commutator acquires the deviation $J$, the operator form of the Jacobi failure.
-
-## The Comparison with the Biquaternion Case
-
-| | the biquaternion block | the block of $\mathbb{H}$ |
-|---|---|---|
-| the matrix | first column $-\mathbf P$, vector block $P_0\mathrm{I}_3-[\mathbf P]_\times$ | the same |
-| the trace | $3P_0$ | $3p_0$ |
-| the rank | three, two on the isotropic cone | three |
-| the kernel | the line, the plane on the cone | always the line |
-| the derivations | three-dimensional, all outer | three-dimensional, all outer |
-| the associative closure | complex dimension twelve | real dimension twelve |
-
-**Remark (the same operators, the different field).** The structure constants of the block are the same
-over the two fields — the table of $\diamond$ does not involve the sign of $e_k^2$ — so the operators,
-their invariants and their closure agree; what differs is the field and the presence of the isotropic
-cone, on which the biquaternion rank drops to two and the kernel widens to a plane, the phenomenon
-absent over $\mathbb{R}$. The biquaternion reading is *The Adjoint Operators of the Antisymmetric
-Quaternionic Algebra* of the biquaternion chapter; the comparison is recorded here and not re-derived.
 
 ## Summary
 

@@ -372,4 +372,3 @@ The **Lie algebra** of the shear group is the line $\mathrm{G} = \mathbb{R}E = \
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Grundlehren der mathematischen Wissenschaften 294, Springer, 1991), for degenerate and non-degenerate quadratic forms and their isometry groups.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the classification of forms by their radicals.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Graduate Texts in Mathematics 222, Springer, 2nd ed. 2015), for unipotent groups, the exponential map and the Lie algebra of a matrix group.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of the two-dimensional real algebras and their groups of units.

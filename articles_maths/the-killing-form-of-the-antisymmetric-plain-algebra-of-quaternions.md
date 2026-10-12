@@ -7,7 +7,6 @@ $\mathfrak{g}=(\mathbb{H},\times)$ with the cross product
 $\tilde p\times\tilde q=\mathbf p\times\mathbf q$ of *The Lie Algebra of the Antisymmetric Plain
 Algebra*, below this article in this category. This article computes its Killing form, identifies the
 space of invariant bilinear forms, exhibits the Casimir element and compares the form with the
-biquaternion blocks.
 
 The result is simple and rigid: the form is the Euclidean form of the vector subspace up to the factor
 $-2$, with the scalar direction in its radical, so it is negative semidefinite, negative definite on
@@ -22,9 +21,8 @@ coincides with the natural sign and gives nothing new.
 
 The Lie algebra, its centre and its derived algebra are *The Lie Algebra of the Antisymmetric Plain
 Algebra*; the adjoint operators and the derivations are *The Adjoint Operators and the Derivations of
-the Antisymmetric Plain Algebra*, both below this article in this category. The biquaternion
+the Antisymmetric Plain Algebra*, both below this article in this category.
 counterparts are *The Killing Form of the Antisymmetric Plain Algebra* and *Norm and Invertibility in
-the Antisymmetric Plain Algebra* of the biquaternion chapter.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$; $\mathbf p\cdot\mathbf q$ is the Euclidean dot product, $\mathbf p\times\mathbf q$
@@ -144,7 +142,6 @@ and $C$ acts as $-\tfrac12\sum_k(-\tfrac{i}{2}\sigma_k)^2=\tfrac18\sum_k\sigma_k
 the Pauli matrices satisfy $\sigma_k^2=\mathrm{I}_2$. The centre is annihilated.
 
 **Remark (the Casimir and the two norms).** The eigenvalue $\tfrac38$ on the two-dimensional module is
-the value the biquaternion analogue carries, and the identity on the adjoint is the value the trace
 form realizes; the two readings are the two available values of the Casimir, and they do not conflict,
 being read on different representations.
 
@@ -157,24 +154,6 @@ derived algebra, has the negative definite form, as a compact real form must.
 
 *Proof.* The radical is the centre, of dimension one; the form is nondegenerate exactly on the derived
 algebra, where it is the negative definite form of $\mathfrak{su}(2)$.
-
-## The Comparison with the Biquaternion Blocks
-
-| | the biquaternion antisymmetric plain algebra | the antisymmetric plain algebra of $\mathbb{H}$ |
-|---|---|---|
-| the form | $\kappa(\tilde P,\tilde Q)=-2\,\mathbf P\cdot\mathbf Q$, complex | $\kappa(\tilde p,\tilde q)=-2\,\mathbf p\cdot\mathbf q$, real |
-| the Gram matrix | $\operatorname{diag}(0,-2,-2,-2)$ over $\mathbb{C}$ | $\operatorname{diag}(0,-2,-2,-2)$ over $\mathbb{R}$ |
-| the definiteness | indefinite, six real dimensions | negative semidefinite, three negative directions |
-| the radical | $\mathbb{C}_{\mathbb{B}}$, the centre | $\mathbb{R}_{\mathbb{H}}$, the centre |
-| the family of invariant forms | the Killing form and the scalar-part form | the same two |
-
-**Remark (the collapse of the indefiniteness).** Over $\mathbb{C}$ the form is complex-valued and its
-realification is indefinite; over $\mathbb{R}$ it is real and negative semidefinite on three
-directions, the compact form of the complex one. The biquaternion antisymmetric quaternionic block has
-no Killing form at all, the Jacobi identity failing; its substitute, the invariant bilinear form, is
-*The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* of the quaternion chapter, below
-this article in this category, and it is **not** a Killing form. The comparison is recorded here and not
-re-derived.
 
 ## Summary
 

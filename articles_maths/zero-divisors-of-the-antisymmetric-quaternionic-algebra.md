@@ -184,8 +184,7 @@ space the four definitions select one and the same set,
 $$
 \{\tilde Q\neq0:\ c(\tilde Q)=0\},
 $$
-a theorem about the algebra and not a property of the definitions (*The Zero Divisors and the
-Four General Products*, §*The Four Zero-Divisor Sets Coincide*; *Definitions for the Study of
+a theorem about the algebra and not a property of the definitions (*The Zero Divisors and the Twelve Structures*, §*The Four Zero-Divisor Sets Coincide*; *Definitions for the Study of
 the 12 Algebraic Structures*, §9). The set of the block differs from it, and the difference is
 the content of the comparison.
 
@@ -283,7 +282,7 @@ is the isotropic one.
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the zero divisor and the annihilator of a general product and for the relativity of the definition
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its alternation and its table
-- *The Zero Divisors and the Four General Products* (`articles_maths/the-zero-divisors-and-the-four-general-products.md`), for the coincidence of the four zero-divisor sets and the product-dependent annihilators
+- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the coincidence of the four zero-divisor sets and the product-dependent annihilators
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion, the two families and the structure of the zero divisors of the plain product
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), for the parent product's zero-divisor cone, on which the rank of the block's operator drops
 - *Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the elements whose bracket vanishes and for the reading on the subspaces

@@ -313,7 +313,7 @@ form $H$, not by $K$; the positivity of $H$ and the absence of ghosts are *Mass,
 Positivity of the Dagger*, and the two forms are not interchangeable.
 
 4. **No scale is attached here.** The algebra has no scale; the coupling, the charge and $\hbar$ enter at
-the physical interpretation, in the places the corpus has already fixed (*Action, Units, and the Constants of
+the **physical interpretation**, in the places the corpus has already fixed (*Action, Units, and the Constants of
 the Biquaternion Universe*). The Krein form is a structure, not a dimensionful metric.
 
 ## One Insertion, Read Twice

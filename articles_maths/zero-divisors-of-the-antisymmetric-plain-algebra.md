@@ -198,8 +198,7 @@ space the four definitions select one and the same set,
 $$
 \{\tilde Q\neq0:\ c(\tilde Q)=0\},\qquad c(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2},
 $$
-a theorem about the algebra and not a property of the definitions (*The Zero Divisors and the Four
-General Products*, §*The Four Zero-Divisor Sets Coincide*). The set of the block differs from it,
+a theorem about the algebra and not a property of the definitions (*The Zero Divisors and the Twelve Structures*, §*The Four Zero-Divisor Sets Coincide*). The set of the block differs from it,
 and the difference is the content of the comparison.
 
 **Proposition (the comparison).** The zero-divisor set of the block is the punctured space
@@ -295,7 +294,7 @@ and it is read from the vector part where the parent's is read from the scalar p
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the zero divisor and the annihilator of a general product and for the relativity of the definition
 - *Introduction to the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md`), for the operation, its alternation and its table
-- *The Zero Divisors and the Four General Products* (`articles_maths/the-zero-divisors-and-the-four-general-products.md`), for the coincidence of the four zero-divisor sets and the product-dependent annihilators
+- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the coincidence of the four zero-divisor sets and the product-dependent annihilators
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion, the two families and the structure of the zero divisors of the plain product
 - *Remarkable Subspaces under the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-plain-algebra-of-biquaternions.md`), for the elements whose bracket vanishes and for the reading on the subspaces
 - *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md`), the sibling of this article, whose operator has the central-square cone of its parent as the locus of its rank drop

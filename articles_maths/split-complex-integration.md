@@ -7,7 +7,7 @@ This article develops integration for functions of one split complex variable. I
 
 The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - A)$ of the formula is defined only where $\zeta - A$ is a unit, and the set where it is not is not the point $A$ but the two lines through $A$; no contour that surrounds $A$ avoids them.
 
-No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split Complex Analysis*, and the operator notation $\partial_A, \partial_{\bar A}$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$, $\mathbb{D}'$, $\mathbb{H}$ and $\mathbb{B}$, is the subject of *Hypercomplex Integration*.
+No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split Complex Analysis*, and the operator notation $\partial_A, \partial_{\bar A}$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
 
 Notation: $A = a + ja'$ with $a, a' \in \mathbb{R}$, $\bar A = a - ja'$, and $\|A\|_E = \sqrt{a^2 + a'^2}$. The idempotent coordinates are
 
@@ -471,8 +471,6 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zet
 | $E = H(A_-)\delta(A_+)\Pi_1 + H(A_+)\delta(A_-)\Pi_2$ | Fundamental solution of $D$, supported on the two null rays |
 | $\operatorname{Res}_L f$ | Residue at a null line $L$, an idempotent coefficient |
 | $\delta$, $\delta_0$ | One-dimensional delta distribution, and the two-dimensional one at the origin |
-
-
 
 ## Further Reading
 

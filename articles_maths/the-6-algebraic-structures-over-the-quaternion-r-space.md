@@ -10,7 +10,7 @@ $$
 
 The **general plain algebra** $\mathrm{GPA}$ is the space with the general plain bilinear product $\tilde p\tilde q$; the **symmetric plain algebra** $\mathrm{SPA}$ with the Jordan product $\tilde p\bullet\tilde q$; the **antisymmetric plain algebra** $\mathrm{APA}$ with the cross product $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$; the **general quaternionic algebra** $\mathrm{GQA}$ with the general quaternionic product $\tilde p^{\natural}\tilde q$; the **symmetric quaternionic algebra** $\mathrm{SQA}$ with the product $N(\tilde p,\tilde q)e_0$; and the **antisymmetric quaternionic algebra** $\mathrm{AQA}$ with the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q$. The same space carries the six, and the six are told apart by the laws their products satisfy; this article gives the names, the structure of each, the law table and the two laws that single out two of the six.
 
-The article assumes the six products and their coordinate rules from *The 6 Products of the Quaternion Real Space*, the article preceding this one, and the definitions of the vocabulary it uses from *Definitions for the Study of the 6 Algebraic Structures*, below this article in this category. The twelve structures of the biquaternion chapter, of which these six are the reading over $\mathbb{R}$, are *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The article assumes the six products and their coordinate rules from *The 6 Products of the Quaternion Real Space*, the article preceding this one, and the definitions of the vocabulary it uses from *Definitions for the Study of the 6 Algebraic Structures*, below this article in this category.
 
 **Conventions.** Throughout, $\mathbb{H}$ is the real quaternion algebra with units $e_0,e_1,e_2,e_3$, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, and the six products are written $\tilde p\tilde q$, $\tilde p\bullet\tilde q$, $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$, $\tilde p^{\natural}\tilde q$, $N(\tilde p,\tilde q)e_0$ and $\tilde p\wedge^{\natural}\tilde q$. The **support** of a structure is the underlying real vector space, which is $\mathbb{H}$ for all six.
 
@@ -56,23 +56,11 @@ The blocks that follow read each of the six structures in turn. The general plai
 
 **Remark (the same space six times).** The six structures are not six algebras in the sense of six different vector spaces: they are one space with six products, and the vocabulary of the chapter is indexed by the product and not by the space. An element may be a unit for $\mathrm{GPA}$ and not for $\mathrm{SPA}$, a zero divisor for $\mathrm{SPA}$ and not for $\mathrm{GPA}$, and every element is a square-zero element for the two antisymmetric structures and for them alone.
 
-## Comparison with the Twelve Structures of the Biquaternion Chapter
-
-The biquaternion chapter carries **twelve** structures, the four general products split into their symmetric and antisymmetric halves, each of the four in a plain and a quaternionic family. Over $\mathbb{R}$ the sesquilinear family is absent and the conjugate exchange coincides with the plain one, so the twelve collapse to the six here.
-
-| biquaternion structure | quaternion reading |
-|---|---|
-| $\mathrm{GPA},\mathrm{GQA},\mathrm{GPS},\mathrm{GQS}$ | $\mathrm{GPA}$, $\mathrm{GQA}$ |
-| $\mathrm{SPA},\mathrm{SQA},\mathrm{SPS},\mathrm{SQS}$ | $\mathrm{SPA}$, $\mathrm{SQA}$ |
-| $\mathrm{APA},\mathrm{AQA},\mathrm{APS},\mathrm{AQS}$ | $\mathrm{APA}$, $\mathrm{AQA}$ |
-
-The four structures of each row over $\mathbb{C}$ collapse to the two over $\mathbb{R}$ by the disappearance of the sesquilinear family; the two laws of the table above are the reading over $\mathbb{R}$ of the two laws of the biquaternion table, where the plain product is the only associative one and the plain cross product the only one satisfying Jacobi. The arithmetic of the collapse is owned by *The Complexification and the Effect of the Change of Scalars on the Quaternions*, below this article in this category.
-
 ## Summary
 
 The quaternion space carries six algebraic structures on the same four-dimensional real support, named once here: the general plain algebra $\mathrm{GPA}$ with $\tilde p\tilde q$, the symmetric plain algebra $\mathrm{SPA}$ with the Jordan product, the antisymmetric plain algebra $\mathrm{APA}$ with the cross product, the general quaternionic algebra $\mathrm{GQA}$ with $\tilde p^{\natural}\tilde q$, the symmetric quaternionic algebra $\mathrm{SQA}$ with $N(\tilde p,\tilde q)e_0$ and the antisymmetric quaternionic algebra $\mathrm{AQA}$ with the quaternionic cross product. The structures are an associative unital division algebra, a commutative Jordan algebra, a Lie algebra, a non-associative left-unital algebra, a commutative scalar-valued rule and an alternating non-Lie rule.
 
-The law table separates them: the symmetric products are commutative, flexible and power-associative; the antisymmetric products are alternating, flexible and power-associative, with cubes zero; the general plain product is associative, flexible and Jordan but not commutative; the general quaternionic product has a left unit alone and fails associativity, commutativity, flexibility and power-associativity; and the symmetric quaternionic product is commutative and power-associative but neither associative nor Jordan. The two laws of the table are that the general plain algebra is the only associative one and the antisymmetric plain algebra the only one satisfying Jacobi. The twelve structures of the biquaternion chapter collapse to these six by the disappearance of the sesquilinear family.
+The law table separates them: the symmetric products are commutative, flexible and power-associative; the antisymmetric products are alternating, flexible and power-associative, with cubes zero; the general plain product is associative, flexible and Jordan but not commutative; the general quaternionic product has a left unit alone and fails associativity, commutativity, flexibility and power-associativity; and the symmetric quaternionic product is commutative and power-associative but neither associative nor Jordan. The two laws of the table are that the general plain algebra is the only associative one and the antisymmetric plain algebra the only one satisfying Jacobi.
 
 ## Summary of Notation
 

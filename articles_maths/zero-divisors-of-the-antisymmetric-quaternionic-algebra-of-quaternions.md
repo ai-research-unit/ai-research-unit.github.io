@@ -7,7 +7,6 @@ $\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natura
 Quaternionic Algebra of Quaternions*. The parent quaternionic product has no zero divisor, the ambient
 algebra $\mathbb{H}$ being a division algebra; the antisymmetric block is at the opposite extreme.
 This article determines its zero divisors: the criterion, the annihilator, the rank of the multiplication,
-the families and the dimension count, and the comparison with the biquaternion block.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real scalars,
 but $\diamond$ is a different multiplication, alternating and without a unit. Throughout, the natural
@@ -18,8 +17,6 @@ $\diamond$ is reserved for this block.
 The product and its table are *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*;
 the left multiplication operator is read in *The Adjoint Operators of the Antisymmetric Quaternionic
 Algebra*, below this article in this category; the comparison with the parent's divisor theory is
-*Zero Divisors of the General Quaternionic Algebra*, and the biquaternion counterpart is *Zero Divisors
-of the Antisymmetric Quaternionic Algebra* of the biquaternion chapter.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\mathbf q$ with
@@ -115,7 +112,7 @@ origin because the kernel is one-dimensional.
 annihilator of a noncentral element is the two-dimensional **plane**
 $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$, because the cross product ignores the scalar coordinate; here
 the coupling of the scalar and the vector parts cuts the annihilator down to the **line**
-$\mathbb{R}\tilde p$. The pair `(line, plane)` is the exact analogue of the biquaternion pair `(line
+$\mathbb{R}\tilde p$.
 off the cone, plane on the cone)` with the cone absent.
 
 ## The Families and the Dimension Count
@@ -142,23 +139,6 @@ dimension one.
 *Proof.* The zero-divisor set is $\mathbb{H}\setminus\{0\}$, of dimension four. A pair is an element
 $\tilde p\neq0$, four parameters, together with its partner $\lambda\tilde p$, one parameter, giving a
 five-dimensional family; the second argument is not free, the annihilator being a line.
-
-## The Comparison with the Biquaternion Case
-
-| | the biquaternion antisymmetric quaternionic algebra | the antisymmetric quaternionic algebra of $\mathbb{H}$ |
-|---|---|---|
-| the operation | $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ over $\mathbb{C}$ | $\tilde p\diamond\tilde q=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ over $\mathbb{R}$ |
-| the criterion | $P_0\mathbf Q=Q_0\mathbf P+\mathbf P\times\mathbf Q$, the partner a multiple | the same |
-| the zero-divisor set | the punctured space $\mathbb{B}\setminus\{0\}$ | the punctured space $\mathbb{H}\setminus\{0\}$ |
-| the annihilator | the line $\mathbb{C}\tilde P$ off the cone, the plane $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\mathbf P$ on it | always the line $\mathbb{R}\tilde p$ |
-| the rank | three off the cone, two on it, zero at the origin | three off the origin, zero at the origin |
-
-**Remark (the cone is empty).** The biquaternion rank drops on the **isotropic cone** of the central
-square $c(\tilde P)=\sum_\mu P_\mu^2$, on which the annihilator widens from a line to a plane; over
-$\mathbb{R}$ the central square is $c(\tilde p)=|\tilde p|^2$, positive off the origin, so the cone is
-$\{0\}$ and the annihilator never widens. The comparison collapses the biquaternion table to its first
-two rows' common value. The biquaternion block is *Zero Divisors of the Antisymmetric Quaternionic
-Algebra* of the biquaternion chapter; the comparison is recorded here and not re-derived.
 
 ## Summary
 

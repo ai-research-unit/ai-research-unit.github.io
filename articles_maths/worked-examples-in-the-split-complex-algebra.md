@@ -3,13 +3,13 @@
 
 ## Introduction
 
-This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of *Split-Complex Algebra* and its counterpart is *Biquaternions as a Vector Space over $\mathbb{C}$*: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors and the hyperbolic and parabolic elements in full. The norm, the unit criterion and the polar decomposition are a form and a distance and belong to *Split-Complex Norm and Invertibility* and to *Split-Complex Polar Element Representation*; the examples below use only the algebra.
+This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of *Split-Complex Algebra*: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors and the hyperbolic and parabolic elements in full. The norm, the unit criterion and the polar decomposition are a form and a distance and belong to *Split-Complex Norm and Invertibility* and to *Split-Complex Polar Element Representation*; the examples below use only the algebra.
 
 Every computation below uses the conventions of the category: $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$ with $a = \operatorname{Re}A$, $a' = \operatorname{Im}A$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$.
 
 ## The Two Involutions and Their Fixed Spaces
 
-The algebra carries two natural involutions: the split-complex conjugation $\bar{A}$, and the idempotent conjugation (the swap) $\tilde{A} = (a-a')\Pi_1 + (a+a')\Pi_2$. The first computation is that on $\mathbb{D}$ they coincide.
+The algebra carries two involutions: the split-complex conjugation $\bar{A}$, and the idempotent conjugation (the swap) $\tilde{A} = (a-a')\Pi_1 + (a+a')\Pi_2$. The first computation is that on $\mathbb{D}$ they coincide.
 
 **Example.** Take $A = 3+2j$. Then
 
@@ -130,7 +130,7 @@ which is the same computation in the idempotent basis, $A^n = 2^n\Pi_1 = 2^{n-1}
 
 ## Summary
 
-This article worked the algebra in explicit numbers. The two natural involutions of $\mathbb{D}$, the split-complex conjugation and the idempotent swap, were shown to coincide on $A = 3+2j$ and hence throughout, with fixed space the real line $\mathbb{R}_{\mathbb{D}}$ and anti-fixed space the split imaginary line $j\mathbb{R}_{\mathbb{D}}$. The idempotents $\Pi_{1,2}$ were exhibited, the decomposition $3+2j = 5\Pi_1 + 1\Pi_2$ computed, and the minimal ideals $\mathbb{R}\Pi_{1,2}$ identified.
+This article worked the algebra in explicit numbers. The two involutions of $\mathbb{D}$, the split-complex conjugation and the idempotent swap, were shown to coincide on $A = 3+2j$ and hence throughout, with fixed space the real line $\mathbb{R}_{\mathbb{D}}$ and anti-fixed space the split imaginary line $j\mathbb{R}_{\mathbb{D}}$. The idempotents $\Pi_{1,2}$ were exhibited, the decomposition $3+2j = 5\Pi_1 + 1\Pi_2$ computed, and the minimal ideals $\mathbb{R}\Pi_{1,2}$ identified.
 
 Explicit zero-divisor pairs were given, $a = 1+j = 2\Pi_1$ and $b = 2-2j = 4\Pi_2$ with $a b = 0$, and the general pair $(\lambda \Pi_1)(\mu \Pi_2) = 0$. Finally, the hyperbolic element $A = \tfrac54 + \tfrac34 j$, of coordinates $(2, \tfrac12)$ and powers $A^n = 2^n\Pi_1 + 2^{-n}\Pi_2$, was compared with the parabolic element $1+j$, of coordinates $(2,0)$, with $A^n = 2^{n-1}A$ and no inverse.
 

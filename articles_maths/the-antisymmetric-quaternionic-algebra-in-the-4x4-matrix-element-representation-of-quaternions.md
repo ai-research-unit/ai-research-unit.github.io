@@ -170,8 +170,6 @@ values carry the Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ on the traceless regu
 $\mathbb{R}$ the three-dimensional traceless part of $M_4(\mathbb{R})$, whose operation is the cross
 product up to sign. The comparison with the companion blocks is *The Antisymmetric Plain Algebra in the
 $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*, above this article in this category, and
-the biquaternion reading is *The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element
-Representation $M_4(\mathbb{C})_L$* of the biquaternion chapter.
 
 ## Summary
 

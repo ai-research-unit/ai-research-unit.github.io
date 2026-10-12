@@ -5,7 +5,7 @@
 
 The real algebra $\mathbb{R}$ carries two standard invariants of its algebra structure: the group of algebra **automorphisms** and the Lie space of **derivations**. Both depend on the ground field, so the two views are kept separate and the field is named at each step. The real case is the degenerate base of the family: the automorphism group is trivial over every natural field of definition, and the derivation space vanishes. These are the smallest possible values, and their smallness is a mathematical statement about the complete ordered field rather than an omission.
 
-The conventions are those of *Real Algebra*: basis $e_0 = 1$, a general element $a = a e_0$, the sole involution the identity, norm $N(a) = a\,a = a^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\operatorname{id}, \bar{\cdot}\} \cong \mathbb{Z}/2$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$, and with the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, for which $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C})$ and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}(2,\mathbb{C})$; the present article is the one-dimensional account of the same two invariants.
+The conventions are those of *Real Algebra*: basis $e_0 = 1$, a general element $a = a e_0$, the sole involution the identity, norm $N(a) = a\,a = a^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \{\operatorname{id}, \bar{\cdot}\} \cong \mathbb{Z}/2$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$; the present article is the one-dimensional account of the same two invariants.
 
 No physics is invoked and no new results are claimed. Everything below is standard structure theory of the field $\mathbb{R}$, together with two standard facts of its model theory: that the order is definable from the field operations, and that $\mathbb{R}$ is o-minimal.
 
@@ -21,7 +21,7 @@ $$
 Z(\mathbb{R}) = \{a \in \mathbb{R} : ab = ba \ \text{for all} \ b\} = \mathbb{R}.
 $$
 
-Hence, over the ground field $\mathbb{R}$, the algebra is **central simple** — simple, finite-dimensional, with centre exactly the ground field. This is exactly the distinction that holds for $\mathbb{B}$ over $\mathbb{C}$: $\mathbb{B}$ is central simple over $\mathbb{C}$ and merely simple over $\mathbb{R}$. The two algebras differ not in that distinction but in what the invariant groups turn out to be.
+Hence, over the ground field $\mathbb{R}$, the algebra is **central simple** — simple, finite-dimensional, with centre exactly the ground field. The central simplicity is the standing fact; what distinguishes the one-dimensional case is the triviality of the two invariant groups constructed below.
 
 **The prime field.** The image of $\mathbb{Q}$ in $\mathbb{R}$ under $q \mapsto q e_0$ is the **prime field**, the smallest subfield, and it is the fixed field of every automorphism and the zero set of every derivation. It is the field-theoretic analogue of the real subspace $\mathbb{R}_{\mathbb{R}}$ of *Real Algebra*, which is the whole of $\mathbb{R}$ here; the relevant substructure of $\mathbb{R}$ is not a proper subspace but the prime field, and it is the suspension of the Galois theory of the one-dimensional case.
 
@@ -37,7 +37,7 @@ Throughout this section the ground field is $\mathbb{R}$.
 
 **Proof.** By the display above, $\sigma(a e_0) = a\sigma(e_0) = a e_0$ for every $a$, so $\sigma$ is the identity.
 
-The result is the exact analogue of Skolem–Noether for a one-dimensional central simple algebra. In the biquaternion case, by contrast, the central simple algebra is $M_2(\mathbb{C})$, whose automorphisms are the inner ones and form $PGL(2,\mathbb{C})$ of dimension $3$; in the complex case the $\mathbb{R}$-automorphism group is $\mathbb{Z}/2$. Here the algebra is the ground field itself, the group of units modulo scalars is $GL_1(\mathbb{R})/\mathbb{R}^\times = 1$, and the automorphism group is trivial.
+The result is the exact analogue of Skolem–Noether for a one-dimensional central simple algebra. In the complex case the $\mathbb{R}$-automorphism group is $\mathbb{Z}/2$. Here the algebra is the ground field itself, the group of units modulo scalars is $GL_1(\mathbb{R})/\mathbb{R}^\times = 1$, and the automorphism group is trivial.
 
 ## Automorphisms of the Field and of the Ordered Field
 
@@ -89,7 +89,7 @@ $$
 \operatorname{ad}_a(b) = ab - ba = 0 \qquad (a, b \in \mathbb{R}),
 $$
 
-so the kernel of $\operatorname{ad} : \mathbb{R} \to \operatorname{Der}_{\mathbb{R}}(\mathbb{R})$ is all of $\mathbb{R}$, and the map itself is the zero map. In the biquaternion case $\operatorname{ad} : \mathbb{B} \to \operatorname{Der}_{\mathbb{C}}(\mathbb{B})$ has kernel the centre and induces $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}} \cong \mathrm{SL}(2,\mathbb{C})$; here the source and the target both collapse to the commutativity of the field. The complex case is the same one dimension up: its derivation space vanishes over both ground fields, and its inner derivations vanish identically.
+so the kernel of $\operatorname{ad} : \mathbb{R} \to \operatorname{Der}_{\mathbb{R}}(\mathbb{R})$ is all of $\mathbb{R}$, and the map itself is the zero map. Here the source and the target both collapse to the commutativity of the field. The complex case is the same one dimension up: its derivation space vanishes over both ground fields, and its inner derivations vanish identically.
 
 **Dimension.** $\dim_{\mathbb{R}} \operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$.
 
@@ -103,7 +103,7 @@ $$
 \operatorname{Lie} \operatorname{Aut}(\mathbb{R}) = \operatorname{Der}(\mathbb{R}) = 0
 $$
 
-holds, in the degenerate sense that both sides are the zero space and the group has trivial identity component. In the biquaternion case the corresponding identity is $\operatorname{Lie}\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) = \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) = \mathrm{SL}(2,\mathbb{C})$, of dimension $3$; in the complex case it is $\operatorname{Lie}\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$, with the group $\mathbb{Z}/2$ finite. The real case is the same identity with the group reduced to the trivial group.
+holds, in the degenerate sense that both sides are the zero space and the group has trivial identity component. In the complex case it is $\operatorname{Lie}\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$, with the group $\mathbb{Z}/2$ finite. The real case is the same identity with the group reduced to the trivial group.
 
 ## The Relation to the Galois Theory and the Model Theory
 
@@ -145,15 +145,15 @@ the two terms being equal by commutativity.
 
 The two invariants are the following; the field is stated explicitly in every entry.
 
-| Structure | Value over $\mathbb{R}$ | Value over the other fields |
+| Structure | Value over $\mathbb{R}$ | Value over $\mathbb{C}$ |
 |---|---|---|
-| Algebra | $\mathbb{R}$, real dimension $1$ | $\mathbb{C}$ real dimension $2$; $\mathbb{B}$ complex dimension $4$ |
-| Ideals | $\{0\}$ and $\mathbb{R}$ only | the same for $\mathbb{C}$; $\{0\}$ and $\mathbb{B}$ for $\mathbb{B}$ |
-| Centre | $\mathbb{R}$, dimension $1$ | $\mathbb{C}$ for $\mathbb{C}$; $\mathbb{C}_{\mathbb{B}}$ for $\mathbb{B}$ |
-| Automorphism group | $\{\operatorname{id}\}$, trivial | $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) \cong \mathbb{Z}/2$; $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C})$ |
-| Derivation space | $\operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$ | $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$; $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}(2,\mathbb{C})$ |
+| Algebra | $\mathbb{R}$, real dimension $1$ | $\mathbb{C}$, real dimension $2$ |
+| Ideals | $\{0\}$ and $\mathbb{R}$ only | the same for $\mathbb{C}$ |
+| Centre | $\mathbb{R}$, dimension $1$ | $\mathbb{C}$ |
+| Automorphism group | $\{\operatorname{id}\}$, trivial | $\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) \cong \mathbb{Z}/2$ |
+| Derivation space | $\operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$ | $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$ |
 
-In summary: the automorphism group of $\mathbb{R}$ is trivial as an $\mathbb{R}$-algebra, as a field and as an ordered field, and the order adds no restriction because it is definable from the field operations, $a \leq b \iff \exists c\,(c^2 = b-a)$. The derivation space vanishes over $\mathbb{R}$, since the single basis element $e_0$ is fixed and the derivation rule forces $D(e_0) = 0$, and every inner derivation vanishes because the algebra is commutative. In the complex algebra the automorphism group is $\mathbb{Z}/2$ and the derivation space is zero; in the biquaternion algebra the two invariants are $PGL(2,\mathbb{C})$ and $\mathrm{SL}(2,\mathbb{C})$, of dimension $3$. The real field is the case in which both invariants collapse to the trivial group and the zero space, and the surviving structure is the prime field $\mathbb{Q}$ together with the order that is definable from the field.
+In summary: the automorphism group of $\mathbb{R}$ is trivial as an $\mathbb{R}$-algebra, as a field and as an ordered field, and the order adds no restriction because it is definable from the field operations, $a \leq b \iff \exists c\,(c^2 = b-a)$. The derivation space vanishes over $\mathbb{R}$, since the single basis element $e_0$ is fixed and the derivation rule forces $D(e_0) = 0$, and every inner derivation vanishes because the algebra is commutative. In the complex algebra the automorphism group is $\mathbb{Z}/2$ and the derivation space is zero. The real field is the case in which both invariants collapse to the trivial group and the zero space, and the surviving structure is the prime field $\mathbb{Q}$ together with the order that is definable from the field.
 
 ## Summary of Notation
 

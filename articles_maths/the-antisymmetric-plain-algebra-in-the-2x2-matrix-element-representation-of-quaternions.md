@@ -163,9 +163,7 @@ and $\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q^{\natural})=2\mathrm{Sc}(\ti
 
 **Remark (the two objects of the block in one model).** The model shows the two objects of the block at
 once: the bracket is the commutator and the invariant form is the trace. This is the reason the block
-is called the Lie block of the space, and it is the exact analogue of the biquaternion reading
 (*The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* of
-the biquaternion chapter).
 
 ## The Comparison with the Plain Algebra on the Model
 

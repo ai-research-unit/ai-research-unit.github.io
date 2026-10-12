@@ -46,7 +46,7 @@ The classification follows from the sector of the parameter.
 
 The correspondence is linear and bijective at the level of parameters, so the two kinds of operator are in
 bijection with the two sectors, and the informal rule "observables in $\mathbb{M}_+$, generators in
-$\mathbb{M}_-$" has this exact content. Two further facts fix the physical interpretation. The skew-adjoint
+$\mathbb{M}_-$" has this exact content. Two further facts fix the **physical interpretation**. The skew-adjoint
 operators exponentiate to the unitaries of the module, $e^{L_{\tilde S}}=L_{e^{\tilde S}}$, and the
 resulting group is the internal $U(2)$; and multiplication by the central $i$ exchanges the two kinds,
 $L_{i\tilde H}=iL_{\tilde H}$, so the generator of a unitary is one sector away from the observable.

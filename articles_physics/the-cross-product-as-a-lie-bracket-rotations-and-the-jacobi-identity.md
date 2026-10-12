@@ -18,7 +18,7 @@ complex space. It is $\mathbb{C}$-bilinear and alternating, it satisfies the **J
 the twelve operations it is the only Lie product. That is its algebraic signature, and it is the reason
 the operation is a **Lie bracket**.
 
-The physical interpretation offered here, and labelled as such, is that the antisymmetric plain product is the
+The **physical interpretation** offered here, and labelled as such, is that the antisymmetric plain product is the
 bracket of **infinitesimal rotations**. A rotation of the frame about the direction $e_k$ is the
 conjugation $\tilde X\mapsto\tilde\Lambda_k(\theta)\tilde X\tilde\Lambda_k(\theta)^{-1}$ by the real unit
 rotor $\tilde\Lambda_k(\theta)=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}e_k$, and the derivative of

@@ -56,7 +56,7 @@ $$
 O(\omega) = \{T \in GL_4(\mathbb{R}) : \omega(T\tilde q) = \omega(\tilde q)\ \text{for every }\tilde q\} = O(1,3),
 $$
 
-the orthogonal group of a form of signature $(1,3)$. Its identity component is the proper orthochronous Lorentz group $SO^+(1,3)$, treated in the biquaternion family in *Biquaternion Rotations and Lorentz Transformations*; nothing of its theory is used here beyond the name.
+the orthogonal group of a form of signature $(1,3)$.
 
 ### The Left and Right Multiplication Operators
 
@@ -143,7 +143,6 @@ Its diagonal entries are $g_0^2-|\mathbf g|^2$ and $-g_0^2-|\mathbf g|^2+2g_k^2$
 
 *Proof.* One evaluates the polar form on the sixteen pairs of basis elements. For the diagonal, $Q_g(e_\mu) = \mathrm{Sc}((ge_\mu)^2)$, which is $\mathrm{Sc}(g^2) = g_0^2-|\mathbf g|^2$ at $\mu=0$ and $-\mathrm{Sc}(ge_kg e_k)$ at $\mu=k$; expanding $g = g_0+\mathbf g$ in the second and using that the scalar part of a product of two pure quaternions is minus their inner product gives $-g_0^2-|\mathbf g|^2+2g_k^2$. For the pair $(0,k)$ the two products $ge_0ge_k$ and $ge_kg e_0$ are $g^2e_k$ and $ge_kg$, whose scalar parts are both $-2g_0g_k$ by the same expansion, so the polar form is $-2g_0g_k$. For a pair $(j,k)$ of distinct space indices the antisymmetry $e_je_k+e_ke_j = 0$ makes the two products equal, and the scalar part of $ge_jge_k$ is $2g_jg_k$; the polar form carries the factor $\tfrac12$ and is $2g_jg_k$. The relations used are $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, and the vanishing of the scalar part of $e_je_k$ for $j\neq k$.
 
-
 **Remark (the two block forms).** With $s = g_0^2-|\mathbf g|^2$ and $c = g_0^2+|\mathbf g|^2 = N(g)$, the matrix is
 
 $$
@@ -207,7 +206,6 @@ because $s^2+4g_0^2|\mathbf g|^2 = (g_0^2-|\mathbf g|^2)^2+4g_0^2|\mathbf g|^2 =
 
 The entries of $M(g)$ are polynomials in $g_0,g_1,g_2,g_3$, so $\det M(g)$ is a polynomial, and $-N(g)^4$ is a polynomial; the two agree on the nonempty open set $s\neq0$, so they agree identically. The determinant is therefore $-N(g)^4$ for every $g$, and it vanishes exactly at $g=0$.
 
-
 **Remark (the same determinant, read through the regular representation).** The identity is equivalent to $\det M(g) = -\det(L_g)^2$, and the statement $\det L_g = N(g)^2$ is the determinant statement of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*. The proof above is nevertheless self-contained: it uses only the closed form of $M(g)$, the structure of a rank-one update of the identity and the polynomial identity argument, and it does not appeal to the regular representation.
 
 ## The Null Cone
@@ -245,9 +243,8 @@ The quaternion norm $N(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2$ of *Quaternion Norm 
 | $\mathbb{H}$ | quaternion norm $N(\tilde q)=\tilde q\tilde{q}^{\natural}$ | $\mathbb{R}$ | $(4,0)$ | no, definite |
 | $\mathbb{H}$ | quaternion metric $Q_g$, $g\neq0$ | $\mathbb{R}$ | $(1,3)$ | yes, the family itself |
 | $\mathbb{H}_{\mathrm{s}}$ | determinant form | $\mathbb{R}$ | $(2,2)$ | no, wrong algebra and signature |
-| $\mathbb{B}$ | biquaternion norm | $\mathbb{C}$ | complex | no, complex-valued |
 
-The split-quaternion determinant form of signature $(2,2)$ is *Split-Quaternion Norm and Invertibility*, and the complex-valued biquaternion norm is *Norm and Invertibility in the General Plain Algebra*; both are cited for contrast only. The family of quaternion metrics is a four-parameter family inside the ten-dimensional space of symmetric real forms on $\mathbb{R}^4$, and it is a single isometry class inside it.
+The family of quaternion metrics is a four-parameter family inside the ten-dimensional space of symmetric real forms on $\mathbb{R}^4$, and it is a single isometry class inside it.
 
 ## Summary
 
@@ -256,8 +253,6 @@ A quaternion metric is the real quadratic form $Q_g(\tilde q) = \mathrm{Sc}(g\ti
 It follows that every quaternion metric is non-degenerate of signature $(1,3)$; that any two of them are isometric, so that the family is a single isometry class; and that the isometry group of $Q_g$ is the conjugate $L_g^{-1}O(1,3)L_g$ of the Lorentz group. The form depends on $g$ only through the line $\mathbb{R}g$ up to the sign of $g$ and only up to a positive scale, so that the family is a cone over the forms of the unit sphere modulo sign, that is over $\mathbb{R}P^3$.
 
 The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g_0^2-|\mathbf g|^2$ and $-g_0^2-|\mathbf g|^2+2g_k^2$, its off-diagonal entries are $-2g_0g_k$ against the time direction and $2g_jg_k$ against two space directions, and its determinant is $-N(g)^4$, nowhere zero off the origin. The null cone of $Q_g$ is the inverse image of the standard cone under $L_g$; it is a non-degenerate quadratic cone through the origin and it is not the zero-divisor set of the algebra, which consists of the origin alone.
-
-The form is neither the quaternion norm of the algebra, which is positive definite and multiplicative, nor one of the algebra-valued forms, and the family contains only the forms isometric to the Minkowski form; the split-quaternion form of signature $(2,2)$ and the complex-valued biquaternion norm are the sibling four-dimensional forms of the other algebras, and they are not of this type.
 
 ## Summary of Notation
 
@@ -288,5 +283,5 @@ The form is neither the quaternion norm of the algebra, which is positive defini
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd edition, 2001), for the Minkowski form, its orthogonal group and the Clifford reading of the Lorentz transformations.
 - Serge Lang, *Algebra* (Springer, revised third edition, 2002), for the theory of quadratic forms, polarisation, non-degeneracy and the Witt decomposition used implicitly in the comparison of the signatures.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the classification of forms by their signature over the real numbers.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the identification of the Lorentz group of a form of signature $(1,3)$ with the unit quaternions of the complexified algebra.
+- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the identification of the Lorentz group of a form of signature $(1,3)$ with the unit quaternions.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the four-dimensional algebras, their norms and the comparison of their forms.

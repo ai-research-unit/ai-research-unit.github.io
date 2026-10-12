@@ -5,9 +5,9 @@
 
 This article is about the **polar representation** of a complex number: the statement that every nonzero complex number is the product of a positive real scale and a unit complex number, and the description of the unit factor as an exponential.
 
-The subject is elementary, and its place in this blog is that of the base case. The polar representation is developed here for the two-dimensional definite algebra $\mathbb{C}$, in the companion article *Split-Complex Polar Element Representation* for the two-dimensional indefinite algebra $\mathbb{D}$, and in the four companion articles on the polar representations of the quaternion, split-quaternion, biquaternion and split-biquaternion algebras. The family decomposes every element of every one of these algebras into the same four **slots** — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{C}$ exactly two slots are occupied, and one of them does double duty, so the algebra is the smallest case in which the pattern is already visible without any of the difficulties that come later: no branch choice, no boost, no zero divisors, no boundary.
+The subject is elementary, and its place in this blog is that of the base case. The polar representation is developed here for the two-dimensional definite algebra $\mathbb{C}$ and in the companion article *Split-Complex Polar Element Representation* for the two-dimensional indefinite algebra $\mathbb{D}$. The family decomposes every element of every algebra of the family into the same four **slots** — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{C}$ exactly two slots are occupied, and one of them does double duty, so the algebra is the smallest case in which the pattern is already visible without any of the difficulties that come later: no branch choice, no boost, no zero divisors, no boundary.
 
-The plan is as follows. The modulus and the unit factor are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{C}$, in $\mathbb{D}$ and in the biquaternion algebra. The two factors are then identified with the two halves of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of *Complex Algebra*: the basis is $1$, $i$, the multiplication is $i^2 = -1$, the conjugate is $\bar{A} = a - i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. Every numerical value displayed below was recomputed in double precision.
+The plan is as follows. The modulus and the unit factor are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{C}$ and in $\mathbb{D}$. The two factors are then identified with the two halves of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of *Complex Algebra*: the basis is $1$, $i$, the multiplication is $i^2 = -1$, the conjugate is $\bar{A} = a - i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. Every numerical value displayed below was recomputed in double precision.
 
 ## The Modulus and the Unit Factor
 
@@ -65,7 +65,7 @@ which is a group under multiplication, since $N(uv) = N(u)N(v) = 1$ and $N(u^{-1
 
 **Uniqueness.** Suppose $A = ru = r'u'$ with $r, r' > 0$ and $N(u) = N(u') = 1$. Taking norms gives $r^2 = N(A) = r'^2$, so $r = r'$ because both are positive, and then $u = A/r = u'$.
 
-The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is *not* unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r e^{i\theta}$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is the first of the two differences from the quaternion case, where the axis-angle coordinate of the rotor is unique, and it is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.
+The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is *not* unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r e^{i\theta}$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.
 
 ## The Exponential Form
 
@@ -79,7 +79,7 @@ $$
 
 and the exponential of $\nu\theta$ is trigonometric, parabolic or hyperbolic accordingly. This is one computation with three cases, and it is the rule that the whole family follows.
 
-**The $\nu$ of this section is a direction, not the nilpotent glyph.** It is written bare because it ranges over the two-dimensional algebras as well as the quaternionic ones. A nilpotent of the quaternion layer is written $\tilde\nu$, and one of the biquaternion layer $\tilde\Upsilon$ (§*The nilpotent convention* of *Conventions in Mathematics*), so the tilde is what distinguishes the square-zero element of the algebra from the bare direction classified here.
+**The $\nu$ of this section is a direction, not a nilpotent glyph.** It is written bare because it ranges over the two-dimensional algebras.
 
 **Proposition.** Let $\nu$ be an element of a real algebra of the family and let $\theta \in \mathbb{R}$. Then the exponential of $\nu\theta$ is given by the case
 
@@ -101,7 +101,7 @@ The trichotomy is a statement about the *sign of the square of the exponent*, no
 | $\nu^2 = 0$ | $\nu = 0$ only | $1$ | parabolic: degenerate, $\exp = 1$ |
 | $\nu^2 = +1$ | $\nu = \pm 1$ | $2$ | hyperbolic: the real exponential |
 
-The table is the complete classification of the exponentials of $\mathbb{C}$. The two roots of $-1$ are the two points of the circle that lie on the imaginary axis, and in $\mathbb{C}$ they are the *only* roots of $-1$ of modulus one: the quaternion algebra, whose roots of $-1$ form a two-sphere, is the first case in the family where this set is larger than two points, and the biquaternion algebra is the first where it is a complex surface.
+The table is the complete classification of the exponentials of $\mathbb{C}$. The two roots of $-1$ are the two points of the circle that lie on the imaginary axis, and in $\mathbb{C}$ they are the *only* roots of $-1$ of modulus one.
 
 ### The Unit Factor as an Exponential
 
@@ -144,7 +144,7 @@ The four slots of the family are the scale, the central phase, the boost and the
 
 **No boost.** A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +1$ off the centre, and in $\mathbb{C}$ the only elements with $\nu^2 = +1$ are $\nu = \pm 1$, which are central: their exponentials are the real numbers $e^{\pm\phi}$, already counted as the scale. There is no non-central hyperbolic direction, so no boost, and the group of units contains no non-compact one-parameter subgroup other than the scale.
 
-**The central phase is the rotation.** In the biquaternion algebra the central phase $e^{i\alpha}$ and the rotor are different factors, the phase being central and the rotor not. In $\mathbb{C}$ the algebra is commutative, so *every* element is central, and the two slots collapse into one: the circle is at the same time the rotation factor and the central phase. This is why the two-dimensional definite case cannot display the phase and the rotor separately, and it is a consequence of commutativity alone.
+**The central phase is the rotation.** In $\mathbb{C}$ the algebra is commutative, so *every* element is central, and the two slots collapse into one: the circle is at the same time the rotation factor and the central phase. This is why the two-dimensional definite case cannot display the phase and the rotor separately, and it is a consequence of commutativity alone.
 
 ### No Boundary
 
@@ -166,7 +166,7 @@ $$
 U(1) \cong \mathbb{R}/2\pi\mathbb{Z},
 $$
 
-as a group, and also as a one-dimensional compact Lie group, of real dimension one. Multiplication by a unit is a rotation of the plane, $A \mapsto uA$ preserving the Euclidean norm, so $U(1)$ is identified with $SO(2)$; the identification is an isomorphism of groups and a covering map of degree one, in contrast with the double covers that appear from the quaternion algebra onwards. The exponential of the real axis is the positive scale, $\exp(\mathbb{R}) = \mathbb{R}_{>0}$, which is a one-dimensional non-compact group, and the two exponentials together exhaust the group of units:
+as a group, and also as a one-dimensional compact Lie group, of real dimension one. Multiplication by a unit is a rotation of the plane, $A \mapsto uA$ preserving the Euclidean norm, so $U(1)$ is identified with $SO(2)$; the identification is an isomorphism of groups and a covering map of degree one. The exponential of the real axis is the positive scale, $\exp(\mathbb{R}) = \mathbb{R}_{>0}$, which is a one-dimensional non-compact group, and the two exponentials together exhaust the group of units:
 
 $$
 \mathbb{C}^\times = \exp(\mathbb{R})\cdot\exp(i\mathbb{R}).
@@ -194,7 +194,7 @@ $$
 M_A = r\,M_u, \qquad M_u = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \in SO(2),
 $$
 
-with $r = \sqrt{\det M_A}$: the polar decomposition of a matrix of the shape $M_A$, in the special case where the positive Hermitian factor is a scalar multiple of the identity. In the matrix polar decomposition of a general invertible matrix the positive factor is an arbitrary positive definite symmetric matrix; here the element has only the two-dimensional family $a I + a'J$ available, and inside that family the positive definite part is necessarily the scalar $rI$. The general statement is the biquaternion theorem of the companion article, where the positive factor is a genuine boost and not a scalar.
+with $r = \sqrt{\det M_A}$: the polar decomposition of a matrix of the shape $M_A$, in the special case where the positive Hermitian factor is a scalar multiple of the identity. In the matrix polar decomposition of a general invertible matrix the positive factor is an arbitrary positive definite symmetric matrix; here the element has only the two-dimensional family $a I + a'J$ available, and inside that family the positive definite part is necessarily the scalar $rI$.
 
 ### The Interpretation of Each Factor
 
@@ -244,12 +244,11 @@ so the reconstruction from an angle is stable to machine precision and the angle
 | algebra | norm | modulus | unit factor | occupied slots | unit group |
 |---|---|---|---|---|---|
 | $\mathbb{C}$ | $a^2+a'^2$, definite | $\sqrt{N}$, positive real | $e^{i\theta}$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | compact, $\mathbb{R}/2\pi\mathbb{Z}$ |
-| $\mathbb{D}$ | $a^2-b^2$, indefinite | $\sqrt{|N|}$, positive real | $e^{\phi j}$ or $je^{\phi j}$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
+| $\mathbb{D}$ | $a^2-a'^2$, indefinite | $\sqrt{|N|}$, positive real | $e^{\phi j}$ or $je^{\phi j}$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
 | $\mathbb{H}$ | sum of four squares | $\sqrt{N}$, positive real | $S^3$ rotor | scale, rotor | compact |
 | $\mathbb{H}_{\mathrm{s}}$ | indefinite, signature $(2,2)$ | $\sqrt{|N|}$ with two regimes | two-component unit group | scale, rotor, boost | non-compact |
-| $\mathbb{B}$ | complex, $N = q\bar{q}$ | $\sqrt{N}$, branch of the square root | boost and rotor, phase central | scale, central phase, boost, rotor | non-compact |
 
-The progression is the progression of the trichotomy. In $\mathbb{C}$ only the trigonometric row is occupied by the unit factor, and it is compact. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. From $\mathbb{H}$ onward the roots of $-1$ form a positive-dimensional set and the unit factor acquires an axis; from $\mathbb{B}$ onward both a trigonometric and a hyperbolic factor occur at once, and the word in which they are written becomes part of the statement. The two-dimensional algebra $\mathbb{C}$ is the case in which none of that can happen, which is why it is treated first.
+The progression is the progression of the trichotomy. In $\mathbb{C}$ only the trigonometric row is occupied by the unit factor, and it is compact. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The two-dimensional algebra $\mathbb{C}$ is the case in which neither of the difficulties of the higher-dimensional members can happen, which is why it is treated first.
 
 ## Summary
 
@@ -278,4 +277,3 @@ Every nonzero complex number has exactly one polar representation $A = ru$, with
 - Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the exponential homomorphism $\mathbb{R} \to U(1)$, its kernel and the polar decomposition.
 - Tristan Needham, *Visual Complex Analysis* (Oxford University Press, 1997), for multiplication by a unit as a plane rotation and the identification $U(1) = SO(2)$.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 1985), for the polar decomposition of an invertible matrix, of which the matrix statement here is the case whose positive factor is a scalar.
-- S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", *Advances in Applied Clifford Algebras* 30 (2020), for the two-exponential factorisation of the elements of the family and the trichotomy of the exponential of a hypercomplex root of $-1$, $0$ or $+1$.

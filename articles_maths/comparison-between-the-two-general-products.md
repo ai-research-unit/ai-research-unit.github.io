@@ -4,7 +4,7 @@
 
 The two general products of the quaternion space are defined independently in *The Two General Products of the Quaternion $\mathbb{R}$ Space*, and it is natural to ask which of them deserves the name of multiplication and how the two are told apart. In the strict sense, of an associative multiplication with a two-sided unit over the field of scalars, only the general plain product does: the quaternionic product is $\mathbb{R}$-bilinear but neither associative nor two-sidedly unital.
 
-This article tabulates the properties that separate the two products — bilinearity, associativity, the unit, commutativity, the square, the values and the radical — and gives the short computation that decides each entry where it is not immediate. The table records the two products alone; the reading of their two halves gives six products and six structures, tabulated in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and the two-product table here is the collapse to two of the four-column table of *Comparison Between the Four General Products*.
+This article tabulates the properties that separate the two products — bilinearity, associativity, the unit, commutativity, the square, the values and the radical — and gives the short computation that decides each entry where it is not immediate.
 
 The article assumes the two products and their coordinate rules from *The Two General Products of the Quaternion $\mathbb{R}$ Space*, the article preceding this one, and it uses the linking identities of *Relations Between the Two General Products*, the article preceding this one, for the unit and the square rows. The left and right multiplications and the associator are *The Two General Products and Operators*, below this article in this category.
 
@@ -28,7 +28,7 @@ The last row is the **radical** of the product, the set of elements annihilating
 
 ## Bilinearity
 
-The first four rows are read off the definitions. Each product is $\mathbb{R}$-linear in each argument: the rule is built from the scalar and vector parts of the two factors, the dot product and the cross product, and each of these is bilinear over $\mathbb{R}$; the conjugation ${}^{\natural}$ acts on the first factor alone and is itself $\mathbb{R}$-linear, and it changes the sign of the vector part and of nothing else. The second slot of each product is the identity, the base ring $\mathbb{R}$ having no nontrivial involution, so no product is conjugate-linear in a slot and both belong to the $\mathbb{R}$-bilinear family; this is the point at which the two-column table here is thinner than the four-column table of the biquaternion chapter, where the two sesquilinear products are conjugate-linear in their second argument.
+The first four rows are read off the definitions. Each product is $\mathbb{R}$-linear in each argument: the rule is built from the scalar and vector parts of the two factors, the dot product and the cross product, and each of these is bilinear over $\mathbb{R}$; the conjugation ${}^{\natural}$ acts on the first factor alone and is itself $\mathbb{R}$-linear, and it changes the sign of the vector part and of nothing else.
 
 ## Associativity and the Two-Sided Unit
 
@@ -82,26 +82,11 @@ and in general $e_i^{\natural}e_j=-e_ie_j$ for every pair with $i\neq0$, the sig
 
 So neither product has a nonzero annihilator, and both are **nondegenerate** in the sense of the radical. This is the same statement as the absence of zero divisors of the two products, and it separates the two from the antisymmetric plain product of *The 6 Products of the Quaternion Real Space*, below this article in this category, which alone among the six has a nonzero radical: the cross product $\tilde p\wedge\tilde q$ annihilates the whole scalar line on both sides, so its radical is the line of the scalars, while the other five products, the two general ones and the four halves other than the cross product, have radical $\{0\}$.
 
-## Comparison with the Four General Products
-
-The biquaternion chapter compares four general products, and its table separates them into the two bilinear and the two sesquilinear families. Over $\mathbb{R}$ the sesquilinear family is absent and its two columns collapse onto the two bilinear ones, so the four-column table becomes the two-column table above.
-
-| biquaternion row | quaternion reading |
-|---|---|
-| $\mathbb{C}$-linear in the first argument for all four | $\mathbb{R}$-linear in the first argument for both |
-| $\mathbb{C}$-linear in the second argument for the two bilinear, conjugate-linear for the two sesquilinear | $\mathbb{R}$-linear in the second argument for both |
-| associative for the plain product alone | associative for the general plain product alone |
-| $e_0$ a right identity for the plain and the plain sesquilinear products | $e_0$ a right identity for the general plain product alone |
-| neither product commutative | neither product commutative |
-| multiplication of an algebra over $\mathbb{C}$, two rows | multiplication of an algebra over $\mathbb{R}$, the general plain product alone |
-
-The last row is the classification the chapter uses: of the two general products of $\mathbb{H}$, exactly one is the multiplication of an associative unital algebra over $\mathbb{R}$, namely the general plain product. The other is the multiplication of the quaternionic algebra, in the weaker sense of a binary $\mathbb{R}$-bilinear rule with a left unit, and its laws are those of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
-
 ## Summary
 
 The comparison of the two general products of $\mathbb{H}$ is the table with the rows bilinearity, associativity, the unit, commutativity, the square, the values and the radical. The general plain product is $\mathbb{R}$-bilinear in each slot, associative, non-commutative, with the two-sided unit $e_0$, with the square $\tilde p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$, and the radical $\{0\}$. The general quaternionic product is $\mathbb{R}$-bilinear in each slot, non-associative, non-commutative, with the left unit $e_0$ and no right one, with the scalar square $\tilde p^{\natural}\tilde p=\lvert\tilde p\rvert^2e_0$, and the radical $\{0\}$.
 
-The classification isolates the general plain product as the only associative and two-sidedly unital one of the two, and hence as the only multiplication of an associative unital algebra over $\mathbb{R}$. The two products agree on the pairs with a real first factor and disagree elsewhere, and on the units they differ by a sign on every pair except those. The four-column table of the biquaternion comparison collapses to the two-column table here by the disappearance of the sesquilinear family.
+The classification isolates the general plain product as the only associative and two-sidedly unital one of the two, and hence as the only multiplication of an associative unital algebra over $\mathbb{R}$. The two products agree on the pairs with a real first factor and disagree elsewhere, and on the units they differ by a sign on every pair except those.
 
 ## Summary of Notation
 

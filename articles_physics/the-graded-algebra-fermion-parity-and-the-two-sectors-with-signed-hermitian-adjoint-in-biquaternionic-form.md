@@ -31,7 +31,7 @@ $$
 \text{odd}\cdot\text{odd}=\text{even},
 $$
 
-that is, the parity of a product is the sum of the parities. The generators $\gamma^\mu$ are odd; the bivectors $\gamma^\mu\gamma^\nu$ and the volume element are even; the square $(\gamma^\mu)^2=\pm1$ is a scalar and hence even. The physical interpretation is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic, a product of an even number is bosonic.
+that is, the parity of a product is the sum of the parities. The generators $\gamma^\mu$ are odd; the bivectors $\gamma^\mu\gamma^\nu$ and the volume element are even; the square $(\gamma^\mu)^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic, a product of an even number is bosonic.
 
 **Remark.** The identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is therefore not merely "$\mathbb{B}$ is a Clifford algebra"; it says *which* slot of the ambient graded algebra the biquaternion algebra is. The whole physics series computes in the bosonic sector, and this is why the parity sign of the next but one section is invisible in it.
 

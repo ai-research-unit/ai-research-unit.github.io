@@ -12,7 +12,7 @@ Structures*.
 The block is the **only** product of the six that is at once alternating and Jacobi; the two
 properties together make it the Lie product of the space. It has no unit, hence no inverse and no
 group of units, and no algebraic norm in the sense of the block. Its idempotents reduce to $0$, and
-its nilpotents are the whole space. The idempotent and the nilpotent theory, which the biquaternion
+its nilpotents are the whole space.
 chapter gave separate articles, are folded here.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real scalars,
@@ -117,8 +117,6 @@ $$
 $$
 
 *Proof.* The square is zero for every element, so the equation is $\tilde\pi=0$. The idempotent
-theory of the biquaternion block, where nontrivial idempotents exist, is *Idempotents of the
-Antisymmetric Plain Algebra* of the biquaternion chapter; here the class reduces to the origin and is
 folded into this article.
 
 ### The Nilpotents

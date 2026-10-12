@@ -41,8 +41,7 @@ Throughout this article the product is the **antisymmetric plain multiplication*
 unqualified, *idempotent* means an idempotent of $\wedge$. The idempotent is the root of $+1$ in
 the scaled sense of the definitions article, and the block's roots of $+1$ are treated in *Square
 Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra*; the idempotent sets of
-the four general products, and the table that compares them, are *The Zero Divisors and the Four
-General Products*, §*The Square, the Idempotents and the Units*.
+the four general products, and the table that compares them, are *The Zero Divisors and the Twelve Structures*, §*The Square, the Idempotents and the Units*.
 
 ## The Criterion
 
@@ -110,7 +109,7 @@ keeps the trivial idempotent and loses every other, and it loses with them the e
 calculus. The two sets are read against each other in the dictionary of the four general products,
 where the idempotent is one of the rows on which the four products separate
 (*Definitions for the Study of the 12 Algebraic Structures*, §9), and the four idempotent sets
-themselves are *The Zero Divisors and the Four General Products*,
+themselves are *The Zero Divisors and the Twelve Structures*,
 §*The Square, the Idempotents and the Units*.
 
 ## Summary

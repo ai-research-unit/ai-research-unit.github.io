@@ -173,7 +173,7 @@ $$
 \operatorname{id}(a) = a.
 $$
 
-There is no quaternion conjugation, no complex conjugation, no Hermitian conjugation, and no anti-Hermitian conjugation. The real numbers are totally ordered and totally real; there is no room for a nontrivial involution that preserves the field structure.
+There is no complex conjugation, no Hermitian conjugation, and no anti-Hermitian conjugation. The real numbers are totally ordered and totally real; there is no room for a nontrivial involution that preserves the field structure.
 
 The identity is an involution: applying it twice returns the original real number. Its fixed-point set is all of $\mathbb{R}$, which is a real vector subspace of $\mathbb{R}$ of dimension $1$.
 

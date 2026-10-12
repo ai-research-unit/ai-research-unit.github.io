@@ -4,9 +4,9 @@
 
 The two forms of the split-complex space, the symmetric bilinear form $B(A,C)=AC$ and the conjugate-symmetric Hermitian form $H(A,C)=A\overline{C}$, are read here on the four distinguished lines of the algebra — the real line $\mathbb{R}_{\mathbb{D}}$, the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, and the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$ — one line to a section, with the table of the restrictions below and the value on a general pair displayed for each.
 
-The forms and their norms are *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*; the four lines, their bases and dimensions are *Split-Complex Subspaces*; the restriction of a form to a subspace is stated once in *Remarkable Subspaces and the Four Forms*, the biquaternion prototype, and is not re-derived. The products read on the same lines are *Remarkable Subspaces and the Two Products of the Split-Complex Space*, above this article in this category. This article owns the **value of the two forms on each line, their ranks and their null sets, and the picture of the level sets of the Hermitian norm**.
+The forms and their norms are *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*; the four lines, their bases and dimensions are *Split-Complex Subspaces*; the restriction of a form to a subspace is stated once and is not re-derived. The products read on the same lines are *Remarkable Subspaces and the Two Products of the Split-Complex Space*, above this article in this category. This article owns the **value of the two forms on each line, their ranks and their null sets, and the picture of the level sets of the Hermitian norm**.
 
-**The reading fixed here.** The natural sign is the identity, the bar is the conjugation $j\mapsto-j$, and ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $A=a+ja'$ and $C=c+jc'$ are elements, so $B$, $H$ and $N$ name forms and norms only, and $\Pi_{1,2}=\tfrac12(1\pm j)$.
+**The reading fixed here.** The bar is the conjugation $j\mapsto-j$ and ${}^{*}=\bar{\cdot}$; the algebra is commutative. In this article $A=a+ja'$ and $C=c+jc'$ are elements, so $B$, $H$ and $N$ name forms and norms only, and $\Pi_{1,2}=\tfrac12(1\pm j)$.
 
 ## The Restriction Rule
 
@@ -16,7 +16,7 @@ $$
 \varphi|_U(A,C)=\varphi(A,C)\big|_{A,C\in U},
 $$
 
-and restricting changes only the two arguments. Symmetry is inherited by the bilinear form and conjugate-symmetry by the Hermitian form; the value on a general pair is read off the coordinates of the two elements. This is the rule of *Remarkable Subspaces and the Four Forms*, quoted here and not re-proved. The only thing that is new on $\mathbb{D}$ is that the two forms, which agree on the real line, differ elsewhere, and that the two idempotent lines annihilate the Hermitian form.
+and restricting changes only the two arguments. Symmetry is inherited by the bilinear form and conjugate-symmetry by the Hermitian form; the value on a general pair is read off the coordinates of the two elements. This is the restriction rule of the two forms, quoted here and not re-proved. The only thing that is new on $\mathbb{D}$ is that the two forms, which agree on the real line, differ elsewhere, and that the two idempotent lines annihilate the Hermitian form.
 
 ## The Real Subspace
 
@@ -120,4 +120,3 @@ The level sets of the Hermitian norm $N=a^2-a'^2$ are two families of hyperbolas
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the split-complex plane, its null lines and the hyperbolas of its norm.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for isotropic vectors, totally isotropic subspaces and signature in dimension two.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the isotropic lines of the split-complex algebra and its Clifford reading.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the comparison of the split and the complex two-dimensional norms and their level sets.

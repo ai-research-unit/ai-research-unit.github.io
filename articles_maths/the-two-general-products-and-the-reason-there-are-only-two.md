@@ -2,79 +2,104 @@
 
 ## Introduction
 
-The quaternion algebra carries two general products, the general plain $\tilde p\tilde q$ and the general quaternionic $\tilde p^{\natural}\tilde q$, where the four-product family of the biquaternion chapter has four. This article states the general construction, isolates the second slot as the only place where a sesquilinear family can be born, and proves that over $\mathbb{R}$ that slot carries nothing new, so that exactly two products survive. It is the synthesis article of the block and the only place the four-to-two collapse is stated.
-
-The two products themselves are *The Two General Products of the Quaternion $\mathbb{R}$ Space*, and the six products their symmetric and antisymmetric parts generate are *The 6 Products of the Quaternion Real Space*; this article re-derives neither. What it owns is the construction, the theorem on the second slot, the comparison table of the two against the four, and the ladder reading. The forms the products carry are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norms are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*; both are above this article in this category.
+The quaternion algebra $\mathbb{H}$ carries six algebraic structures, and all six descend from two multiplications. This article states the general construction that produces those multiplications, proves that exactly two general products arise over $\mathbb{R}$, and reads the six structures the two generate. It is the synthesis article of the block. The two general products, with their laws and their tables, are *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the six products their halves produce are *The 6 Products of the Quaternion Real Space*; the six structures and their names are *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; this article re-derives none of them. What it owns is the construction, the count, and the passage from the two general products to the six structures. The forms the products carry are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norms are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*; both are above this article in this category.
 
 ## The General Construction
 
-A **general product** on an algebra $A$ over a base ring $R$ is a bilinear or a sesquilinear map obtained by choosing, independently, how each of its two slots reads its argument: through the identity or through the anti-involution of the algebra on the first side, and through the identity or an involution of $R$ on the second. Writing ${}^{\natural}$ for the anti-involution of the algebra and $\varsigma$ for an involution of $R$, the identity allowed, the products are the four **slot pairings**
+A **general product** on the quaternion algebra $\mathbb{H}$ is a bilinear or sesquilinear map obtained by choosing, independently, how each of its two slots reads its argument: through the identity or through the natural conjugation ${}^{\natural}$. The two choices are the two **slot pairings** of each side, and the products are the four pairings
+
 $$
-(\mathrm{id},\mathrm{id}) ,\quad ({}^{\natural},\mathrm{id}) ,\quad (\mathrm{id},\varsigma) ,\quad ({}^{\natural},\varsigma) ,
+(\mathrm{id},\mathrm{id}) ,\quad (\mathrm{id},{}^{\natural}) ,\quad ({}^{\natural},\mathrm{id}) ,\quad ({}^{\natural},{}^{\natural}) .
 $$
-the first two **bilinear** and the last two **sesquilinear**, since a slot read through $\varsigma$ is conjugate-linear. The construction is the one of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, applied to the pair (algebra, base ring).
 
-## The Second Slot Is What Makes a Sesqualgebra
+The choice is the insertion of the conjugation in one slot, in the other, in both, or in none. The algebra $\mathbb{H}$ and its conjugation are the only data; there is no further involution of the coefficients to insert, because the base field $\mathbb{R}$ carries a single involution, the identity.
 
-**Theorem.** The family $(\mathrm{id},\varsigma)$ and $({}^{\natural},\varsigma)$ is non-empty exactly when the base ring $R$ has a nontrivial involution. That slot is the whole difference between an algebra product and a sesquilinear one.
+## The Coincidence of the Two Slots over $\mathbb{R}$
 
-**Proof.** A product whose second slot is read through $\varsigma$ is conjugate-linear in that slot, so its value is not $R$-bilinear unless $\varsigma=\mathrm{id}$; and a product whose second slot is the identity is $R$-bilinear in both slots. The two families are therefore distinguished exactly by whether $\varsigma$ is the identity, and there are four pairings for every nontrivial $\varsigma$ and only two when $\varsigma=\mathrm{id}$.
+**Theorem.** The two slot pairings with the conjugation in the second slot are the two pairings with the conjugation in the first slot, read with both arguments conjugated. Exactly two distinct products therefore arise from the four pairings.
 
-## Only the Algebra Family Survives over $\mathbb{R}$
+**Proof.** The conjugation in the second slot and the conjugation in the first slot are the same map ${}^{\natural}$, because the base field $\mathbb{R}$ has a single involution, the identity, so the coefficientwise bar is the identity and the only conjugation available is ${}^{\natural}$. Hence
 
-The base ring $\mathbb{R}$ has a single involution, the identity, because an order-two automorphism of a totally ordered field is trivial. Hence $\varsigma=\mathrm{id}$ and the second slot carries no conjugation, the two sesquilinear pairings coincide with the two bilinear ones, and the four pairings reduce to two:
 $$
-\tilde p\tilde q\quad(\text{general plain, the pair }(\mathrm{id},\mathrm{id})) , \qquad \tilde p^{\natural}\tilde q\quad(\text{general quaternionic, the pair }({}^{\natural},\mathrm{id})) .
+(\mathrm{id},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) , \qquad
+({}^{\natural},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) ,
 $$
-There is no third product, and in particular no quaternion analogue of the Hermitian or the Krein product of the biquaternion chapter: those need a complex base.
 
-**Table (two against four).** Writing $\varsigma$ for the base-ring involution and ${}^{\natural}$ for the algebra anti-involution,
+that is, the plain product and the quaternionic product with both arguments conjugated. The four pairings therefore carry the two products
 
-| pair | over $\mathbb{R}$ ($\varsigma=\mathrm{id}$) | over $\mathbb{C}$ (the second slot carries the conjugate-linear involution) |
-|---|---|---|
-| $(\mathrm{id},\mathrm{id})$ | $\tilde p\tilde q$ | $\tilde P\tilde Q$ |
-| $({}^{\natural},\mathrm{id})$ | $\tilde p^{\natural}\tilde q$ | $\tilde P^{\natural}\tilde Q$ |
-| $(\mathrm{id},\varsigma)$ | coincides with $(\mathrm{id},\mathrm{id})$ | $\tilde P\tilde Q^{*}$ |
-| $({}^{\natural},\varsigma)$ | coincides with $({}^{\natural},\mathrm{id})$ | $\tilde P^{\natural}\tilde Q^{*}$ |
-
-The second slot is an involution of the base ring; it is the identity over $\mathbb{R}$, so the two lower rows of the left column collapse onto the two upper rows, and it is nontrivial over $\mathbb{C}$, where the biquaternion chapter reads that slot through the star, the conjugate-linear involution of $\mathbb{B}$ restricting to the coefficientwise conjugation on the coefficients, as the right column records.
-
-The left column is the collapse, its four rows standing for the two products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$; the right column is the four of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
-
-## The Ladder Reading
-
-The number of general products is read on the ladder
 $$
-\mathbb{R}\subset\mathbb{C}\subset\mathbb{H}\subset\mathbb{B} ,
+\tilde p\tilde q\quad(\text{general plain}) , \qquad \tilde p^{\natural}\tilde q\quad(\text{general quaternionic}) .
 $$
-the base ring being $\mathbb{R}$ for the first three rungs and $\mathbb{C}$ for the last. On each rung the products are the slot pairings, the algebra's anti-involution contributing the first slot:
 
-| rung | algebra, base | products | count |
+**Table (the four pairings, the two products).**
+
+| pairing | product |
+|---|---|
+| $(\mathrm{id},\mathrm{id})$ | $\tilde p\tilde q$ |
+| $({}^{\natural},\mathrm{id})$ | $\tilde p^{\natural}\tilde q$ |
+| $(\mathrm{id},{}^{\natural})$ | $\tilde p\tilde q^{\natural}$, the plain product read at $(\tilde p^{\natural},\tilde q^{\natural})$ |
+| $({}^{\natural},{}^{\natural})$ | $\tilde p^{\natural}\tilde q^{\natural}$, the quaternionic product read at $(\tilde p^{\natural},\tilde q^{\natural})$ |
+
+## The Reason There Are Only Two
+
+The count is two because the algebra has a single non-trivial conjugation and the base field none. A general product inserts a conjugation into a slot; the conjugations available are the identity and ${}^{\natural}$; inserting ${}^{\natural}$ in the second slot gives the first-slot products conjugated, not a new product. A third product would require a second independent conjugation on the elements, which the quaternion algebra over $\mathbb{R}$ does not have. The two products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ are thus the whole list of general products, and the whole operational vocabulary of the chapter is built from them.
+
+## The Six Structures the Two Products Generate
+
+Each general product splits into a **symmetric part** and an **antisymmetric part** under the exchange of its two slots. Over $\mathbb{R}$ the base ring has no nontrivial involution, the two slots are both linear, and the exchange is the bare interchange of the two arguments, so the split is
+
+$$
+\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q ,\qquad
+\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q ,
+$$
+
+with the four halves
+
+$$
+\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p) ,\qquad
+\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q ,
+$$
+
+$$
+N(\tilde p,\tilde q)e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p) ,\qquad
+\tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p) .
+$$
+
+The two general products and the four halves are the six products of the chapter, and the six products carry the six structures. The two indices that name them are the **family**, plain or quaternionic, and the **half**, general, symmetric or antisymmetric:
+
+| family | general | symmetric | antisymmetric |
 |---|---|---|---|
-| $\mathbb{R}$ | $\mathbb{R}$ over $\mathbb{R}$ | $\tilde p\tilde q$ | $1$ |
-| $\mathbb{C}$ | $\mathbb{C}$ over $\mathbb{R}$ | $zw$, $\bar z w$ | $2$ |
-| $\mathbb{H}$ | $\mathbb{H}$ over $\mathbb{R}$ | $\tilde p\tilde q$, $\tilde p^{\natural}\tilde q$ | $2$ |
-| $\mathbb{B}$ | $\mathbb{B}$ over $\mathbb{C}$ | the four pairings | $4$ |
+| plain | $\mathrm{GPA}$, $\tilde p\tilde q$ | $\mathrm{SPA}$, $\tilde p\bullet\tilde q$ | $\mathrm{APA}$, $\tilde p\wedge\tilde q$ |
+| quaternionic | $\mathrm{GQA}$, $\tilde p^{\natural}\tilde q$ | $\mathrm{SQA}$, $N(\tilde p,\tilde q)e_0$ | $\mathrm{AQA}$, $\tilde p\wedge^{\natural}\tilde q$ |
 
-The count doubles at the last rung because only there does the base ring carry an involution; $\mathbb{H}$ sits on the real rung beside $\mathbb{C}$ and carries two products like it, and the real $\mathbb{R}$ carries one because its only anti-involution is the identity. This is the whole reason there are two products on $\mathbb{H}$ and four on $\mathbb{B}$.
+**Theorem (the two general products generate the six structures, and no more).** The split of the two general products under the interchange of their slots produces exactly four halves, the two general products together with the four halves are six distinct products, and every structure of the chapter is one of the six.
+
+*Proof.* The reconstruction above writes each general product as the sum of its symmetric and antisymmetric part, so the four halves are determined by the two general products, and any four of the six determine the other two. The four halves are distinct from the two general products and from one another. The Jordan product differs from the plain product by the cross term, $\tilde p\bullet\tilde q=\tilde p\tilde q-\mathbf p\times\mathbf q$, which is nonzero on $(e_1,e_2)$; the cross product is pure vector while the plain product is not; the symmetric quaternionic product is scalar, valued in $\mathbb{R}e_0$, while the general quaternionic product is not, its value on $(e_0,e_1)$ being $e_1$; and the quaternionic cross product is pure vector, its value on $(e_0,e_1)$ being $e_1$ while its scalar part vanishes. The same four witnesses separate the four halves from one another, and no bilinear rule has more than its symmetric and its antisymmetric part. Hence the split produces no seventh product, and the six structures are exactly the two general products and their halves.
+
+**Remark (the plain triple and the quaternionic triple).** The plain triple is the multiplication of $\mathbb{H}$, its Jordan symmetrisation and its commutator; the quaternionic triple is the same three-fold split of the product whose first factor carries the conjugation, and the conjugation changes the sign of the antisymmetric term and turns the dot product of the symmetric term into its negative, which is why the symmetric half of the quaternionic product is the scalar $N(\tilde p,\tilde q)e_0$ and not the Jordan product. The two triples share the two antisymmetric products' character, both being alternating, and separate on the symmetric side: the plain symmetric half $\mathrm{SPA}$ is a Jordan algebra, the quaternionic symmetric half $\mathrm{SQA}$ is not.
+
+**Remark (the count of the chapter).** The reason there are two general products is the reason there are six structures. The algebra has one nontrivial conjugation and the base field none, so the slot construction yields two general products; each general product yields exactly two halves; two general products therefore yield four halves and six structures in all. A third general product would need a second independent conjugation on the elements, and a seventh structure would need a bilinear rule with more than a symmetric and an antisymmetric part; neither exists over $\mathbb{R}$.
 
 ## Summary
 
-A general product is a slot pairing of an anti-involution of the algebra with an involution of the base ring. The second slot is what separates a sesquilinear product from a bilinear one, and it is empty over $\mathbb{R}$ because the real field has only the trivial involution. The four pairings therefore collapse to two, the general plain $\tilde p\tilde q$ and the general quaternionic $\tilde p^{\natural}\tilde q$, and the comparison with the biquaternion four is the second-slot collapse read column by column. On the ladder $\mathbb{R}\subset\mathbb{C}\subset\mathbb{H}\subset\mathbb{B}$ the counts are $1,2,2,4$, the doubling occurring at the two complexification steps $\mathbb{R}\to\mathbb{C}$ and $\mathbb{H}\to\mathbb{B}$.
+A general product on $\mathbb{H}$ is a slot pairing of the identity and the natural conjugation. Since the two slots read the same conjugation, the pairings with the conjugation in the second slot repeat those with it in the first, read with both arguments conjugated, and exactly two general products arise: the general plain product $\tilde p\tilde q$ and the general quaternionic product $\tilde p^{\natural}\tilde q$.
+
+Each general product splits under the interchange of its slots into a symmetric and an antisymmetric part, and the split produces the four halves: the Jordan product $\tilde p\bullet\tilde q$, the cross product $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$, the quaternion form read as a product $N(\tilde p,\tilde q)e_0$, and the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q$. The two general products and the four halves are six distinct products, carrying the six structures $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, indexed by the family and the half; the reconstruction $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$ recovers the two general products, and no seventh product exists. The count is two because the algebra carries one nontrivial conjugation and the base field none.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| ${}^{\natural}$ | the quaternion conjugation, the anti-involution of the algebra |
-| $\varsigma$ | the involution of the base ring; over $\mathbb{R}$, $\varsigma=\mathrm{id}$ |
-| $(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},\varsigma)$, $({}^{\natural},\varsigma)$ | the four slot pairings, the last two sesquilinear |
-| $\tilde p\tilde q$, $\tilde p^{\natural}\tilde q$ | the two general products over $\mathbb{R}$ |
-| $\mathbb{R}\subset\mathbb{C}\subset\mathbb{H}\subset\mathbb{B}$ | the ladder, with product counts $1,2,2,4$ |
+| ${}^{\natural}$ | the natural conjugation, the anti-involution of the algebra |
+| $(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},{}^{\natural})$, $({}^{\natural},{}^{\natural})$ | the four slot pairings |
+| $\tilde p\tilde q$, $\tilde p^{\natural}\tilde q$ | the two general products |
+| $\tilde p\bullet\tilde q$, $\tilde p\wedge\tilde q$ | the symmetric and the antisymmetric half of the plain product |
+| $N(\tilde p,\tilde q)e_0$, $\tilde p\wedge^{\natural}\tilde q$ | the symmetric and the antisymmetric half of the quaternionic product |
+| $\mathrm{GPA},\mathrm{SPA},\mathrm{APA},\mathrm{GQA},\mathrm{SQA},\mathrm{AQA}$ | the six structures, one to a cell of the family-and-half grid |
 
 ## Further Reading
 
 - *The Two General Products of the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-two-general-products-of-the-quaternion-r-space.md`), for the two products in coordinates.
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the construction on the biquaternion rung.
-- *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`), for the six products the two generate.
-- *The Complexification and the Effect of the Change of Scalars on the Quaternions* (`articles_maths/the-complexification-and-the-effect-of-the-change-of-scalars-on-the-quaternions.md`), for the passage $\mathbb{H}\to\mathbb{B}$.
+- *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`), for the split and the four halves on the coordinates.
+- *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six names and the law table.
+- *The Annihilating Elements of the Six Structures* (`articles_maths/the-annihilating-elements-of-the-six-structures.md`), below this article in this category, for the first of the element theories read across the six.

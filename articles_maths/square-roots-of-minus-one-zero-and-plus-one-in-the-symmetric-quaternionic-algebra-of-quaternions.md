@@ -10,7 +10,7 @@ $$
 
 The equation $\tilde x\star\tilde x=\lambda e_0$ is therefore one scalar equation in the four coordinates, and its solution set is a level set of the form. This article reads the three level sets that the theory distinguishes, together with the general central value: the roots of $-e_0$, of $0$ and of $+e_0$, and then the roots of $\lambda e_0$ for an arbitrary real $\lambda$. The definition of a **root of a central value** is the general one of *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*, and the square of the block is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*.
 
-**Boundaries.** The block's square and its governing formula are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the form is *The 2 Forms over the Quaternion $\mathbb{R}$ Space* and *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, below this article in this category; the general-radicand case belongs to a later article of the block, and the square-zero elements are *The Specificities of the Symmetric Quaternionic Algebra*, below this article in this category. The parallel over the plain product is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; the biquaternion counterpart is *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra*.
+**Boundaries.** The block's square and its governing formula are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the form is *The 2 Forms over the Quaternion $\mathbb{R}$ Space* and *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, below this article in this category; the general-radicand case belongs to a later article of the block, and the square-zero elements are *The Specificities of the Symmetric Quaternionic Algebra*, below this article in this category.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\mathbf x$ with $\mathbf x=\sum_kx_ke_k$. The **quaternion conjugation** is $\tilde x^{\natural}=x_0e_0-\mathbf x$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and $N(\tilde x)=N(\tilde x,\tilde x)=x_0^{2}+|\mathbf x|^{2}$. The **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. A **root of the central value** $\lambda e_0$ is an element $\tilde x$ with $\tilde x\star\tilde x=\lambda e_0$.
 
@@ -82,25 +82,9 @@ The map $\tilde\Pi$ is idempotent exactly when $\tilde x=\pm e_0$, and then $\ti
 
 **Remark (no idempotent off the centre).** A noncentral root of $+e_0$, for instance $\tilde x=e_1$, gives $\tilde\Pi=\tfrac12(e_0+e_1)$ with $\tilde\Pi\star\tilde\Pi=\tfrac12e_0\neq\tilde\Pi$, and the difference is the vector part $\tfrac12e_1$; so the affine map carries the roots of $+e_0$ onto elements that are not idempotent as soon as the root is not central. The idempotents of the block are only $0$ and $e_0$, as *The Specificities of the Symmetric Quaternionic Algebra* records.
 
-## The Comparison with the Plain Algebra and with the Biquaternion Case
-
-The plain algebra has a full root theory, and the comparison fixes the originality of the block.
-
-| equation | plain product $\tilde p\tilde q$ | symmetric quaternionic block | biquaternion block |
-|---|---|---|---|
-| $\tilde x^{2}$ or $\tilde x\star\tilde x=-e_0$ | the pure unit quaternions, real dimension $2$ | empty | a complex quadric, complex dimension $3$ |
-| $\tilde x^{2}$ or $\tilde x\star\tilde x=0$ | $\{0\}$ | $\{0\}$ | the isotropic cone, complex dimension $3$ |
-| $\tilde x^{2}$ or $\tilde x\star\tilde x=+e_0$ | $\{\pm e_0\}$ | $Sp(1)$, real dimension $3$ | a complex quadric, complex dimension $3$ |
-
-**Proposition (the plain roots).** In the general plain algebra the roots of $-e_0$ are the pure quaternions of unit form, a set of real dimension $2$; the roots of $0$ are only $0$; and the roots of $+e_0$ are $\pm e_0$.
-
-*Proof.* For the plain product $\tilde x^{2}=(x_0^{2}-|\mathbf x|^{2})e_0+2x_0\mathbf x$; the vector part vanishes for $x_0=0$ or $\mathbf x=0$. At $x_0=0$ the square is $-|\mathbf x|^{2}e_0$, giving the roots of $-e_0$ as the pure elements with $|\mathbf x|^{2}=1$, of dimension $2$, and only $0$ as a root of $0$; at $\mathbf x=0$ the equation $x_0^{2}=1$ gives $\pm e_0$, and $x_0^{2}=0$ gives $0$ again. This is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*.
-
-**Remark (the block turns a two-dimensional family of complex structures into nothing).** The plain algebra has a whole family of square roots of $-e_0$, the pure unit quaternions, and each of them makes the vector subspace a complex vector space; the block has none, because its square is the definite form and a definite form is never negative. Of the three levels of the biquaternion block, which are congruent complex quadrics, the middle one $\{N=0\}$ being the isotropic cone, the real block keeps the level $\{N=1\}$, which is the group $Sp(1)$ of unit quaternions, and collapses the other two, one to the origin and one to the empty set.
-
 ## Summary
 
-The square of the block is the definite form, $\tilde x\star\tilde x=(x_0^{2}+|\mathbf x|^{2})e_0$, nonnegative at every element. The root sets of the three central values are the empty set for $-e_0$, the origin for $0$, and the level set $\{N=1\}$ for $+e_0$, the group $Sp(1)$ of unit quaternions of real dimension $3$. For a general central value $\lambda e_0$ the root set is empty for $\lambda<0$, the origin for $\lambda=0$, and the orbit of $\sqrt{\lambda}e_0$ under $Sp(1)$ for $\lambda>0$, with three free parameters. The affine map $\tilde\Pi=\tfrac12(e_0+\tilde x)$ carries the roots of $+e_0$ to idempotents only at the two central roots $\pm e_0$, so the idempotents stay $0$ and $e_0$; and the comparison with the plain algebra, whose roots of $-e_0$ fill a two-dimensional family, and with the biquaternion block, whose three levels are congruent complex quadrics, isolates the definiteness of the coefficient as the single cause.
+The square of the block is the definite form, $\tilde x\star\tilde x=(x_0^{2}+|\mathbf x|^{2})e_0$, nonnegative at every element. The root sets of the three central values are the empty set for $-e_0$, the origin for $0$, and the level set $\{N=1\}$ for $+e_0$, the group $Sp(1)$ of unit quaternions of real dimension $3$. For a general central value $\lambda e_0$ the root set is empty for $\lambda<0$, the origin for $\lambda=0$, and the orbit of $\sqrt{\lambda}e_0$ under $Sp(1)$ for $\lambda>0$, with three free parameters.
 
 ## Summary of Notation
 
@@ -117,6 +101,5 @@ The square of the block is the definite form, $\tilde x\star\tilde x=(x_0^{2}+|\
 - *Introduction to the Symmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the square and the governing formula
 - *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the root of a central value
 - *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra-of-quaternions.md`), for the plain-algebra roots
-- *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-quaternionic-algebra.md`), for the biquaternion counterpart
 - *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the idempotents and the nilpotents of the block
 - *Quaternion Topology* (`articles_maths/quaternion-topology.md`), for the level set $\{N=1\}$ and its reading in the topological half

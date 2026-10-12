@@ -68,23 +68,11 @@ Collecting the sections gives the table of the two products restricted to the tw
 
 The first three rows are the closure of the scalar line and its two-sided action on the vector subspace: a real scalar multiplies a vector by its scalar on the left for both products, while on the right the quaternionic product multiplies by the scalar through the conjugation of the first factor and so changes the sign. The last row is the product of two vectors, the only entry of the table whose value leaves its two factors' subspaces. The table is the whole of the behaviour of the two products on the two subspaces: the square of a scalar is a scalar, the square of a vector is the scalar $-\lvert\mathbf p\rvert^2$ for the plain product and $+\lvert\mathbf p\rvert^2$ for the quaternionic one, and the vector part of the product of two vectors is the cross product, carried with its own sign by the plain product and with the sign reversed by the quaternionic one.
 
-## Comparison with the Four Products on the Six Subspaces of the Biquaternion Algebra
-
-The biquaternion algebra carries six remarkable subspaces — the fixed and anti-fixed spaces of its three commuting involutions — and the four general products are read on the six in *Remarkable Subspaces and the Four General Products*. Over $\mathbb{R}$ the involution group of $\mathbb{H}$ has two elements, the identity and ${}^{\natural}$ (*The Group of Involutions of the Quaternions*), and it contributes the two subspaces of this article; the three commuting involutions of $\mathbb{B}$ contribute six.
-
-| biquaternion object | quaternion counterpart | behaviour under the products |
-|---|---|---|
-| the centre, the scalar line | $\mathbb{R}_{\mathbb{H}}$ | closed under both, subalgebra |
-| the vector subspace | $\operatorname{Vect}(\mathbb{H})$ | closed under neither, products fill $\mathbb{H}$ |
-| the four remaining subspaces, coming from the other two involutions | none: $\mathbb{H}$ has one non-trivial involution | — |
-
-The collapse is the disappearance of the other two involutions: with them go the four subspaces they contribute, and the two products read on the scalar line and the vector subspace are the whole of the reading over $\mathbb{R}$. The four products of the biquaternion reading collapse to two here, the sesquilinear family being absent, and the two remaining products on the two remaining subspaces give the four-row table above.
-
 ## Summary
 
 The two general products of the quaternion space are read on the scalar line $\mathbb{R}_{\mathbb{H}}$ and the vector subspace $\operatorname{Vect}(\mathbb{H})$. The scalar line is closed under both products and is the centre of the algebra, a product of two reals being the real product $p_0q_0e_0$. The vector subspace is closed under neither, the product of two vectors being $\mathbf p\mathbf q=-(\mathbf p,\mathbf q)+\mathbf p\times\mathbf q$ for the plain product and $\mathbf p^{\natural}\mathbf q=(\mathbf p,\mathbf q)-\mathbf p\times\mathbf q$ for the quaternionic one: the scalar part is the dot product with the sign of the conjugation of the first factor, and the vector part is the cross product or its negative. Two vectors multiply to a vector again exactly when they are perpendicular, and then to the cross product, which is perpendicular to both, so no plane of vectors is closed.
 
-The restriction table has four rows, giving the two closures of the scalar line, its two-sided action on the vector subspace — two-sided for the plain product and one-sided up to sign for the quaternionic one — and the single entry that leaves the two subspaces, the product of two vectors. The six remarkable subspaces of the biquaternion algebra collapse to the two subspaces here because the involution group of $\mathbb{H}$ has one non-trivial element instead of three.
+The restriction table has four rows, giving the two closures of the scalar line, its two-sided action on the vector subspace — two-sided for the plain product and one-sided up to sign for the quaternionic one — and the single entry that leaves the two subspaces, the product of two vectors.
 
 ## Summary of Notation
 

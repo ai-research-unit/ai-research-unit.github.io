@@ -151,9 +151,8 @@ their root pattern, and the two **antisymmetric** halves share theirs: the split
 antisymmetric parts is what decides the root theory, not the choice of the parent. The block is one of
 the two members of the degenerate antisymmetric family, the other being
 *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*, below this article in this
-category. The biquaternion block has the same degenerate pattern, with the punctured space of the
+category.
 eight-dimensional complex analogue; the comparison is *Square Roots of Minus One, Zero and Plus One in
-the Antisymmetric Plain Algebra* of the biquaternion chapter.
 
 ## Summary
 

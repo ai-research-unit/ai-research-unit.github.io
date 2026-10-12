@@ -29,7 +29,7 @@ What it keeps in place of associativity is a single law, the **Jordan identity**
 operations of the batch it is the only Jordan product. That is its algebraic signature, and
 it is the reason the operation is a product of the classical non-associative kind and not a bracket.
 
-The physical interpretation offered here, and labelled as such, is that the symmetrised plain product is the
+The **physical interpretation** offered here, and labelled as such, is that the symmetrised plain product is the
 **order-free composition of two material operations**: the composition of two material elements with the
 order forgotten. The part that is lost in the forgetting is exactly the cross term, and the cross term is
 what the antisymmetric band keeps. The two bands are therefore the two halves of one statement, and the
@@ -226,7 +226,7 @@ algebraic law alone does not establish it.
 
 ## The Symmetrised Composition of Two Material Operations
 
-The operation is defined on the whole algebra, and its physical interpretation is about the material sector.
+The operation is defined on the whole algebra, and its **physical interpretation** is about the material sector.
 Take two material operations, $\tilde P,\tilde Q\in\mathbb{M}_-$, so
 $\tilde P^{*}=-\tilde P$ and $\tilde Q^{*}=-\tilde Q$. Because the star is an anti-automorphism,
 $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}=\tilde Q\tilde P$, and the ordinary product splits by

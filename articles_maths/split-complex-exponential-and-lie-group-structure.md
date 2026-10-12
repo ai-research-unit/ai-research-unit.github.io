@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article develops the Lie theory of the split-complex algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$. The algebra article defined $\mathbb{D}$ with basis $1$, $j$, $j^2 = +1$; the norm article identified the units $\mathbb{D}^\times$ with the elements of nonzero norm $N(A) = a^2-a'^2$; and the idempotent article supplied the decomposition $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$. Here these are assembled into the standard theory of $\mathbb{D}^\times$ as a Lie group, of $\mathbb{D}$ as its abelian Lie algebra, and of the exponential map. It is the two-dimensional counterpart of the biquaternion Lie-algebra and Lie-group theory of *The 12 Products of the Biquaternion Complex Space* and *Biquaternion Lie Group and Exponential Structure*, and every statement is a special case of the elementary Lie theory of $\mathbb{R}^\times$ and its square.
+This article develops the Lie theory of the split-complex algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$. The algebra article defined $\mathbb{D}$ with basis $1$, $j$, $j^2 = +1$; the norm article identified the units $\mathbb{D}^\times$ with the elements of nonzero norm $N(A) = a^2-a'^2$; and the idempotent article supplied the decomposition $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$. Here these are assembled into the standard theory of $\mathbb{D}^\times$ as a Lie group, of $\mathbb{D}$ as its abelian Lie algebra, and of the exponential map. It is the two-dimensional counterpart of the Lie theory of the higher members of the family, and every statement is a special case of the elementary Lie theory of $\mathbb{R}^\times$ and its square.
 
 The one point that governs everything below is that $\mathbb{D}$ is **commutative**. Its commutator bracket vanishes, so it is an abelian Lie algebra; the exponential of a sum is the product of the exponentials; and the exponential map is a local diffeomorphism everywhere but is injective, unlike the matrix case. The price is a small unit group: $\mathbb{D}^\times$ has **four components** rather than being connected, and the exponential reaches only the identity component. The article states this geometry exactly.
 
-The article owns the abelian Lie algebra structure of $\mathbb{D}$, the exponential and its closed forms in the two bases, the group of units and its exponential parametrisation, the four components, the non-compact hyperbolic subgroup, the one-parameter subgroups of the geometry slot, and the comparison with $\mathbb{C}$ and $\mathbb{B}$. It assumes the norm and invertibility theory of *Split-Complex Norm and Invertibility*, the idempotents of *Split-Complex Idempotents and Projections*, and the exponential parametrisation of the units; the hyperbolic one-parameter group is the subject of *Hyperbolic Rotations*, and the automorphisms and derivations are treated in *Split-Complex Automorphisms and Derivations*.
+The article owns the abelian Lie algebra structure of $\mathbb{D}$, the exponential and its closed forms in the two bases, the group of units and its exponential parametrisation, the four components, the non-compact hyperbolic subgroup, the one-parameter subgroups of the geometry slot, and the comparison with $\mathbb{C}$. It assumes the norm and invertibility theory of *Split-Complex Norm and Invertibility*, the idempotents of *Split-Complex Idempotents and Projections*, and the exponential parametrisation of the units; the hyperbolic one-parameter group is the subject of *Hyperbolic Rotations*, and the automorphisms and derivations are treated in *Split-Complex Automorphisms and Derivations*.
 
 **Conventions.** $A = a+ja'$, $a,a'\in\mathbb{R}$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$, with $A = A_+\Pi_1 + A_-\Pi_2$; norm $N(A) = A\bar A = a^2-a'^2$; group of units $\mathbb{D}^\times = \{A : N(A)\neq 0\}$; unit-norm set $\mathbb{D}^{(1)} = \{A : N(A) = 1\}$. The identity component of a group $G$ is written $G_0$.
 
@@ -23,7 +23,7 @@ $$
 
 **Proof.** $\mathbb{D}$ is commutative, so $AB = BA$ for all $A,B$ and every bracket vanishes. A Lie algebra with zero bracket is abelian, and the underlying real vector space is two-dimensional.
 
-**Remark.** The bracket rules out every phenomenon of the biquaternion case that depends on noncommutativity: there are no nontrivial inner derivations, no Baker–Campbell–Hausdorff correction, no Ad-action distinct from the identity, and no $\mathrm{SL}$-summand. In the idempotent basis the Lie algebra is the direct sum of two one-dimensional abelian Lie algebras, $\mathbb{D} = \mathrm{I}_+ \oplus \mathrm{I}_-$ with $\mathrm{I}_\pm = \mathbb{R}\Pi_{1,2}$, and every subspace is an abelian ideal.
+**Remark.** The bracket rules out every phenomenon that depends on noncommutativity: there are no nontrivial inner derivations, no Baker–Campbell–Hausdorff correction, no Ad-action distinct from the identity, and no $\mathrm{SL}$-summand. In the idempotent basis the Lie algebra is the direct sum of two one-dimensional abelian Lie algebras, $\mathbb{D} = \mathrm{I}_+ \oplus \mathrm{I}_-$ with $\mathrm{I}_\pm = \mathbb{R}\Pi_{1,2}$, and every subspace is an abelian ideal.
 
 ## The Exponential: Series and Closed Form
 
@@ -109,7 +109,7 @@ $$
 
 **Corollary (the exponential is injective, and not surjective).** If $\exp(A) = 1$ then $e^{A_+} = e^{A_-} = 1$, and since the real exponential is injective this gives $A_+ = A_- = 0$, so $A = 0$: the kernel of $\exp$ is trivial. The image is the identity component only, so $\exp$ is not surjective onto $\mathbb{D}^\times$ and misses the three components of negative $A_+$ or negative $A_-$.
 
-**Remark (the group law).** Because the algebra is abelian, the exponential satisfies $\exp(A)\exp(B) = \exp(A+B)$ for all $A, B$, with no correction term; equivalently $\exp$ is a group isomorphism $(\mathbb{D}, +) \to ((\mathbb{D}^\times)_0, \cdot)$. The identity component is therefore an exponential group, and the whole unit group is its product with the finite group $(\mathbb{Z}/2)^2$ of components, $\mathbb{D}^\times \cong (\mathbb{D}^\times)_0 \times (\mathbb{Z}/2)^2$. This is the sharpest contrast with the biquaternion algebra, where the exponential is surjective onto $GL(2,\mathbb{C})$ but has a large kernel and $\exp(A)\exp(B)\neq\exp(A+B)$ in general.
+**Remark (the group law).** Because the algebra is abelian, the exponential satisfies $\exp(A)\exp(B) = \exp(A+B)$ for all $A, B$, with no correction term; equivalently $\exp$ is a group isomorphism $(\mathbb{D}, +) \to ((\mathbb{D}^\times)_0, \cdot)$. The identity component is therefore an exponential group, and the whole unit group is its product with the finite group $(\mathbb{Z}/2)^2$ of components, $\mathbb{D}^\times \cong (\mathbb{D}^\times)_0 \times (\mathbb{Z}/2)^2$.
 
 **Remark (the Lie correspondence).** Since $\exp : \mathbb{D}\to(\mathbb{D}^\times)_0$ is a diffeomorphism and a group isomorphism, the Lie functor recovers the algebra. The Lie algebra of the unit group is $\operatorname{Lie}(\mathbb{D}^\times) = \mathbb{D}$ with the zero bracket, and $\exp$ is the exponential map of the Lie group. This is the two-dimensional quantity that the algebra contributes to the Lie picture, in place of the vanishing derivation space of *Split-Complex Automorphisms and Derivations*.
 
@@ -195,28 +195,11 @@ $$
 
 the group of **hyperbolic rotations** of the split-complex plane, which preserves the norm: $N(e^{jt}A) = N(A)$. This is the one-parameter group of the geometry; its action is the linear map $\begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$ on coordinates, the group $SO^+(1,1)$, and it is non-compact because the hyperbolic angle is unbounded. The parameters $A = 1$ and $A = j$ are independent, and $\{e^{t}\}$ is the scaling subgroup $A\mapsto e^t A$, so every one-parameter subgroup is a combination of a hyperbolic rotation and a scaling. The hyperbolic rotations are developed as the geometry of the algebra in *Hyperbolic Rotations*.
 
-## Comparison with the Complex and Biquaternion Cases
-
-The three algebras have the same dimension statement over $\mathbb{R}$ only in the first two, and the Lie theory separates them by the shape of their unit groups. The complex field $\mathbb{C}$ is the definite analogue: $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ is connected, its unit-norm group is the compact circle $U(1) = S^1$ with $\pi_1 = \mathbb{Z}$, and $\exp : \mathbb{C}\to\mathbb{C}^\times$ is surjective with kernel $2\pi i\mathbb{Z}$. The biquaternion algebra $\mathbb{B}$ is the noncommutative, four-complex-dimensional analogue: $\mathbb{B}^\times\cong GL(2,\mathbb{C})$, connected, with $\exp$ surjective and kernel the $2\pi i$-lattice, and the norm-one group $SL(2,\mathbb{C})$ is non-compact and non-abelian. The split-complex algebra sits at the commutative and definite-sign-changed corner.
-
-| feature | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{B}$ |
-|---|---|---|---|
-| Lie algebra | $(\mathbb{C}, 0)$, dim $2$ real | $(\mathbb{D}, 0)$, dim $2$ real | $\mathrm{GL}(2,\mathbb{C})$, dim $4$ complex |
-| unit group | $\mathbb{C}^\times$, connected | $\mathbb{D}^\times\cong(\mathbb{R}^\times)^2$, four components | $GL(2,\mathbb{C})$, connected |
-| norm-one subgroup | $U(1) = S^1$, compact | $\mathbb{D}^{(1)}\cong\mathbb{Z}/2\times\mathbb{R}$, non-compact | $SL(2,\mathbb{C})$, non-compact |
-| identity component of the units | $\mathbb{C}$ | $\{a>\lvert a'\rvert\}$ | $GL(2,\mathbb{C})$ |
-| $\exp$ surjective? | yes | no (image = identity component) | yes |
-| $\exp$ injective? | no (kernel $2\pi i\mathbb{Z}$) | yes | no |
-| component count of units | $1$ | $4$ | $1$ |
-| abelian? | yes | yes | no |
-
-The two systematic differences from $\mathbb{C}$ are that the norm is indefinite, which cuts the unit group into four components, and that the exponential is injective on a commutative algebra, so that it reaches only one of them. The systematic difference from $\mathbb{B}$ is commutativity: it makes the bracket zero, the exponential a group isomorphism onto the identity component, and the whole Lie theory elementary.
-
 ## Summary
 
 The split-complex algebra is the abelian real Lie algebra of dimension $2$: its commutator bracket vanishes, and in the idempotent basis it is the direct sum of the two one-dimensional abelian Lie algebras $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$. The exponential has the closed forms $\exp(A_+\Pi_1 + A_-\Pi_2) = e^{A_+}\Pi_1 + e^{A_-}\Pi_2$ and $\exp(a+ja') = e^a(\cosh a' + j\sinh a')$, has positive norm $N(\exp A) = e^{2a} > 0$, is injective, and is a diffeomorphism of $\mathbb{D}$ onto the identity component $(\mathbb{D}^\times)_0 = \{a > \lvert a'\rvert\}$ of the unit group, with an explicit inverse. It is a group isomorphism $(\mathbb{D}, +)\to((\mathbb{D}^\times)_0,\cdot)$.
 
-The group of units is $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$, a non-compact abelian Lie group of dimension $2$ with four components, given by the four sign choices of the idempotent coordinates; each component is contractible, so $\pi_0(\mathbb{D}^\times) = (\mathbb{Z}/2)^2$ and $\pi_1(\mathbb{D}^\times) = 0$. The polar parametrisation writes every unit as $A = \rho u$ with modulus $\rho = \sqrt{\lvert N(A)\rvert}$ and direction $u$ of unit modulus, in two regimes according to the sign of the norm. The unit-norm group is $\mathbb{D}^{(1)}\cong\mathbb{Z}/2\times\mathbb{R}$, with non-compact hyperbolic subgroup $\{e^{jt}\}\cong(\mathbb{R},+)$, the group of hyperbolic rotations of the geometry slot and the group $SO^+(1,1)$; every one-parameter subgroup is an exponential $\exp(tw)$ of a line in the Lie algebra. The comparison with $\mathbb{C}$ isolates the indefinite sign and the four components, and the comparison with $\mathbb{B}$ isolates commutativity, which makes the exponential injective onto a single component.
+The group of units is $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$, a non-compact abelian Lie group of dimension $2$ with four components, given by the four sign choices of the idempotent coordinates; each component is contractible, so $\pi_0(\mathbb{D}^\times) = (\mathbb{Z}/2)^2$ and $\pi_1(\mathbb{D}^\times) = 0$. The polar parametrisation writes every unit as $A = \rho u$ with modulus $\rho = \sqrt{\lvert N(A)\rvert}$ and direction $u$ of unit modulus, in two regimes according to the sign of the norm. The unit-norm group is $\mathbb{D}^{(1)}\cong\mathbb{Z}/2\times\mathbb{R}$, with non-compact hyperbolic subgroup $\{e^{jt}\}\cong(\mathbb{R},+)$, the group of hyperbolic rotations of the geometry slot and the group $SO^+(1,1)$; every one-parameter subgroup is an exponential $\exp(tw)$ of a line in the Lie algebra. The comparison with $\mathbb{C}$ isolates the indefinite sign and the four components.
 
 ## Summary of Notation
 
@@ -237,7 +220,6 @@ The group of units is $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\
 | $u = A/\rho(A)$ | Direction, of unit modulus |
 | $e^{jt} = \cosh t + j\sinh t$ | Hyperbolic rotation |
 | $\pi_0, \pi_1$ | Components and fundamental group |
-| $\mathrm{GL}(2,\mathbb{C})$, $SO^+(1,1)$ | Lie algebra of $\mathbb{B}^\times$ in the comparison table; rotation group of the geometry slot |
 
 ## Further Reading
 

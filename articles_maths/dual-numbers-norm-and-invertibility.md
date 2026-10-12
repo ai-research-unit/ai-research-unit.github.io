@@ -91,7 +91,7 @@ is a continuous multiplicative real size function on the units, normalised on th
 
 **Proof.** Multiplicativity is $N(AB) = N(A)N(B)$ together with $r = \sqrt{|N|}$, and continuity is the continuity of $a \mapsto |a|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $A(1 + t\varepsilon) = a + (a' + ta)\varepsilon$ has the same real part $a$, so $r(A(1 + t\varepsilon)) = |a| = r(A)$. For uniqueness, by *Shears and Parabolic Rotations* every unit is $a(1 + s\varepsilon)$ with $a \in \mathbb{R}^\times$ and $s = a^{-1}a'$; the shear invariance gives $r(a + \varepsilon a') = r(a)$, so $r$ is determined on the whole unit group by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$.
 
-So the multiplicative scale on the units reduces to the absolute value of the real part: on the units the norm supplies a genuine positive scale via $r = \sqrt{|N|}$, and it is the only scale fixed by the shear. The biquaternion article *Norm and Invertibility in the General Plain Algebra* proves the analogous statement with $r(\tilde{Q}) = \sqrt{|N(\tilde{Q})|}$; the dual case is the rank-one degeneration of it, in which the square root is the square root of a square.
+So the multiplicative scale on the units reduces to the absolute value of the real part: on the units the norm supplies a genuine positive scale via $r = \sqrt{|N|}$, and it is the only scale fixed by the shear, the square root being the square root of a square.
 
 **Remark (the shear condition is needed).** Invariance under the shear is not automatic, and without it the scale is not unique. For each real $c$, the function
 
@@ -284,7 +284,7 @@ The third class is exactly $\mathrm{M} \setminus \{0\}$; its elements are studie
 
 By definition, a **division algebra** is an algebra in which every nonzero element is invertible; for a finite-dimensional algebra this is equivalent to the absence of zero divisors. The dual algebra contains the nonzero nilpotent $\varepsilon$, which is a zero divisor; hence $\mathbb{D}'_R$ is **not** a division algebra whenever $\mathrm{M} \neq 0$ (that is, whenever $\varepsilon \neq 0$ in the algebra).
 
-This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$. The dual algebra is a two-dimensional commutative associative real algebra, and it is not among them because it is not a field.
+This is in contrast to $\mathbb{R}$ and $\mathbb{C}$, which are fields; the dual algebra is a two-dimensional commutative associative real algebra, and it is not a field.
 
 ## Distribution of the Invertible Elements
 
@@ -317,9 +317,9 @@ $$
 \mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad A = a + \varepsilon a',
 $$
 
-the norm reads $N(A) = (\operatorname{Re} A)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. The biquaternion analogue, in which the four conjugations and their remarkable subspaces control the distribution, is in *Norm and Invertibility in the General Plain Algebra*; in the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.
+the norm reads $N(A) = (\operatorname{Re} A)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. In the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.
 
-## Comparison with the Split Complex and Biquaternion Cases
+## Comparison with the Split Complex Case
 
 The three norms of the family are
 
@@ -333,13 +333,13 @@ for $\mathbb{C}$, the split complex numbers $\mathbb{D} = \mathbb{R}[j]$ and the
 - In the split complex $\mathbb{D}$ the norm is indefinite, its null set is the pair of linear null directions on which the zero divisors live, and the norm-one group is a hyperbola, with two branches.
 - In $\mathbb{D}'$ the norm is degenerate, its null set is the maximal ideal, a whole line, and the norm-one group is a pair of parallel lines.
 
-In the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ the norm is complex-valued and multiplicative, and its vanishing locus is the zero-divisor cone, of real codimension two; the invertibility criterion is $N(\tilde{Q}) \neq 0$ and the group of units is $GL(2, \mathbb{C})$. The dual case is the rank-one member of this family: complex, split complex, dual, quaternion, split quaternion, biquaternion, split biquaternion. In every case the criterion for invertibility is the non-vanishing of a single multiplicative form, and the differences among the members lie in the rank, the signature and the value ring of that form.
+The three cases form the family of the two-dimensional real algebras: complex, split complex, dual. In every case the criterion for invertibility is the non-vanishing of a single multiplicative form, and the differences among the members lie in the rank, the signature and the value ring of that form.
 
 ## Summary
 
 The norm $N(A) = A\bar A = a^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $a^2 + a'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(A) = |a| = \sqrt{|N(A)|}$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |a|\exp(c\,a'/a)$.
 
-A dual number $A = a + \varepsilon a'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $a \neq 0$, equivalently if and only if $N(A) \neq 0$. The inverse is $A^{-1} = a^{-1} - a^{-2}\varepsilon a'$. Over a field the group of units is $\mathbb{D}'_k \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{D}'_k)^\times \to k^\times \to 1$, and since $\mathbb{D}'_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{D}'_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.
+A dual number $A = a + \varepsilon a'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $a \neq 0$, equivalently if and only if $N(A) \neq 0$. The inverse is $A^{-1} = a^{-1} - a^{-2}\varepsilon a'$. Over a field the group of units is $\mathbb{D}'_k \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{D}'_k)^\times \to k^\times \to 1$, and since $\mathbb{D}'_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{D}'_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.
 
 ## Summary of Notation
 
@@ -367,10 +367,7 @@ A dual number $A = a + \varepsilon a'$ is invertible if and only if its real par
 
 ## Further Reading
 
-- William Kingdon Clifford, "Preliminary Sketch of Biquaternions", *Proceedings of the London Mathematical Society* **4** (1873) 381–395, for the origin of the dual numbers as a degenerate extension.
 - Eduard Study, *Geometrie der Dynamen* (Teubner, Leipzig, 1903), for the degeneracy of the dual-number form and its geometry.
 - I. M. Yaglom, *Complex Numbers in Geometry* (Academic Press, New York, 1968), for the dual numbers and their degenerate quadratic form alongside the complex and split-complex cases.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, Natick, 2003), for the classification of the two-dimensional real algebras by the sign of the square of the generator.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, Berlin, 1991), for the theory of degenerate quadratic forms, their radical, and their isometry groups.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, Providence, 2005), for the classification of quadratic forms by their radical.
-- S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the complex-valued semi-norm and the unique real norm in the biquaternion case.

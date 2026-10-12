@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The norm $N(A)=a^2-a'^2$ of the split-complex algebra decides invertibility (*Split-Complex Norm and Invertibility*) and vanishes exactly on the zero divisors together with the origin (*Split-Complex Zero Divisors*). Both treatments are algebraic; this article treats the form geometrically. It polarises $N$ and reads $\mathbb{D}$ as a real quadratic space of signature $(1,1)$; describes the null cone as the pair of null lines; identifies the projective null quadric as two points of the real projective line; reads the two isotropic points as the **points at infinity** of the hyperbolic geometry of the plane; exhibits the hyperbolic one-parameter group $\{e^{jt}\}$ as the projectivity fixing them; and relates the picture to the projective quadric of the biquaternion algebra and to the hyperbolic geometry developed in *Hyperbolic Rotations*. It is the two-dimensional counterpart of *The Null Quadric and Its Projective Geometry*, and the degeneration is complete: the smooth quadric surface of the biquaternion theory drops to two projective points.
+The norm $N(A)=a^2-a'^2$ of the split-complex algebra decides invertibility (*Split-Complex Norm and Invertibility*) and vanishes exactly on the zero divisors together with the origin (*Split-Complex Zero Divisors*). Both treatments are algebraic; this article treats the form geometrically. It polarises $N$ and reads $\mathbb{D}$ as a real quadratic space of signature $(1,1)$; describes the null cone as the pair of null lines; identifies the projective null quadric as two points of the real projective line; reads the two isotropic points as the **points at infinity** of the hyperbolic geometry of the plane; exhibits the hyperbolic one-parameter group $\{e^{jt}\}$ as the projectivity fixing them; and relates the picture to the hyperbolic geometry developed in *Hyperbolic Rotations*. The smooth quadric surface drops to two projective points.
 
 The article owns the quadratic space $(\mathbb{D},N)$ read geometrically, the projective null quadric and the two points at infinity, the action of the hyperbolic group as a projectivity, and the cross-ratio description of the hyperbolic distance; the norm and its polarisation are defined and owned by *Split-Complex Norm and Invertibility*, and are used here as the geometric input. No physics is invoked and no new result is claimed.
 
@@ -121,26 +121,11 @@ and taking half the logarithm gives $\tfrac12\lvert\ln\rvert=\lvert\sigma_1-\sig
 
 So the geometry attached to the split-complex plane is the one-dimensional **hyperbolic geometry**: the projective line with the two isotropic points as absolute, the interval between them as the hyperbolic line, and the hyperbolic group as its translations. This is the projective form of the rotations of *Hyperbolic Rotations*, and the same interval is the parameter domain of the spacelike branch of the unit hyperbola.
 
-## Relation to the Biquaternion Quadric
-
-The biquaternion null quadric in $\mathbb{P}^3(\mathbb{C})$ is the smooth Segre quadric $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1$, a surface with two rulings; its projectivised null cone has real dimension $4$ and carries the two chiral spinor families as its two rulings. The split-complex quadric is the same construction in the lowest dimension, and the degeneration is a drop in rank and dimension.
-
-| feature | $\mathbb{B}$ | $\mathbb{D}$ |
-|---|---|---|
-| quadratic space | $(\mathbb{C}^4, \sum_\mu Q_\mu^2)$, non-degenerate | $(\mathbb{R}^2, a^2-a'^2)$, signature $(1,1)$ |
-| null cone | nonsingular complex hypersurface, real dim $6$ | two real lines, real dim $1$ |
-| projective null quadric | $Q^2\cong\mathbb{P}^1\times\mathbb{P}^1\subset\mathbb{P}^3$ | $Q^0$, two points of $\mathbb{RP}^1$ |
-| rulings | two $\mathbb{P}^1$-families (the spinor lines) | two lines, each a single $1$-dimensional family |
-| isometry group of the form | $O(1,3)$ on the real form | $O(1,1)$, real dim $1$, four components |
-| identity component acting as projectivities | $PSO(1,3)^+$ | $\{e^{js}\}\cong(\mathbb{R},+)$ |
-
-The pattern is that the null cone of $\mathbb{B}$ is a nonsingular quadric whose projectivisation is a surface with two rulings, while the null cone of $\mathbb{D}$ is a degenerate quadric whose projectivisation is two points; the two rulings survive only as the two null directions, and the spinor families of the biquaternion theory have no room to appear. The projective automorphism group descends from $PSO(1,3)^+$ to the hyperbolic translation group of the line.
-
 ## Summary
 
 The split-complex norm $N(a,a')=a^2-a'^2$ polarises to the Lorentzian inner product $B(A,B)=a b-a' b'$ with Gram matrix $\operatorname{diag}(1,-1)$, making $(\mathbb{D},N)$ a non-degenerate real quadratic space of signature $(1,1)$. Its isotropic cone is the pair of null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$, each maximal totally isotropic and each spanned by an idempotent; the two lines are interchanged by the conjugation. The projective null quadric is the two-point set $Q^0=\{[1:1],[1:-1]\}\subset\mathbb{RP}^1$, whose points are the two points at infinity of the hyperbolic geometry: they are the absolute of the form, and they divide the projective line into the arc of positive directions and the arc of negative directions.
 
-The hyperbolic one-parameter group $\{e^{js}\}$ acts on the projective line by the Möbius projectivity $t\mapsto(t+\tanh s)/(1+t\tanh s)$, fixing the two points at infinity; the full stabiliser of the pair is the one-dimensional group $\mathbb{R}^\times$, of which $\{e^{js}\}$ is the identity component. On the interval between the points at infinity the group acts as translations of the hyperbolic line, and the hyperbolic distance is the logarithm of the cross-ratio to the two points at infinity, $\tfrac12\lvert\ln(t_1,t_2\,;-1,1)\rvert$. The relation to the biquaternion quadric is a degeneration: the smooth Segre quadric surface $\mathbb{P}^1\times\mathbb{P}^1$ of $\mathbb{B}$ drops to two projective points, its two rulings to the two null directions, and its isometry group to the one-dimensional $O(1,1)$ whose identity component is the hyperbolic group.
+The hyperbolic one-parameter group $\{e^{js}\}$ acts on the projective line by the Möbius projectivity $t\mapsto(t+\tanh s)/(1+t\tanh s)$, fixing the two points at infinity; the full stabiliser of the pair is the one-dimensional group $\mathbb{R}^\times$, of which $\{e^{js}\}$ is the identity component. On the interval between the points at infinity the group acts as translations of the hyperbolic line, and the hyperbolic distance is the logarithm of the cross-ratio to the two points at infinity, $\tfrac12\lvert\ln(t_1,t_2\,;-1,1)\rvert$. The degeneration is complete: the smooth Segre quadric surface $\mathbb{P}^1\times\mathbb{P}^1$ drops to two projective points, its two rulings to the two null directions, and its isometry group to the one-dimensional $O(1,1)$ whose identity component is the hyperbolic group.
 
 ## Summary of Notation
 

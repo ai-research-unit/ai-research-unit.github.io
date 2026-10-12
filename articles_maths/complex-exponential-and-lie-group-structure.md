@@ -27,9 +27,9 @@ so $\mathbb{C}$ is an **abelian Lie algebra**.
 
 **Dimension.** As a real Lie algebra, $\mathbb{C} \cong \mathbb{R}^2$ has dimension $2$; as a complex Lie algebra it has dimension $1$. The two views are the realification and the $\mathbb{C}$-form of one object.
 
-**The centre and the bracket decomposition.** Every element is central, so the centre is all of $\mathbb{C}$, and there is no nontrivial bracket decomposition. In the biquaternion algebra the corresponding space is $\mathrm{GL}(2,\mathbb{C})$ with the decomposition $\mathrm{GL}(2,\mathbb{C}) = \mathrm{SL}(2,\mathbb{C}) \oplus \mathbb{C} 1$, a three-dimensional simple part and a one-dimensional centre over $\mathbb{C}$ (six- and two-dimensional over $\mathbb{R}$); here the simple part is empty and the centre is everything, and the real Lie algebra has dimension $2$.
+**The centre and the bracket decomposition.** Every element is central, so the centre is all of $\mathbb{C}$, and there is no nontrivial bracket decomposition. The simple part is empty, the centre is everything, and the real Lie algebra has dimension $2$.
 
-**The universal enveloping algebra.** Since the bracket vanishes, the universal enveloping algebra of $\mathbb{C}$ as a real Lie algebra is the symmetric algebra on the two-dimensional space $\mathbb{C}$, i.e. the polynomial algebra $\mathbb{R}[x,y]$ on two commuting variables. There is no non-commutativity to encode. In the biquaternion case the corresponding object is the universal enveloping algebra of $\mathrm{GL}(2,\mathbb{C})$, which does carry the bracket.
+**The universal enveloping algebra.** Since the bracket vanishes, the universal enveloping algebra of $\mathbb{C}$ as a real Lie algebra is the symmetric algebra on the two-dimensional space $\mathbb{C}$, i.e. the polynomial algebra $\mathbb{R}[x,y]$ on two commuting variables. There is no non-commutativity to encode.
 
 ## The Group of Units
 
@@ -43,7 +43,7 @@ a group under multiplication with identity $1$, abelian, and at the same time a 
 
 **Dimension, openness and density.** As a real manifold $\mathbb{C}^\times$ has dimension $2$; it is open in $\mathbb{C}$ (the preimage $N^{-1}((0,\infty))$ of an open set) and dense, its complement being the single point $\{0\}$, of real dimension $0$. It is connected and non-compact, and its centre is itself, since the group is abelian.
 
-**Lie algebra.** The Lie algebra of $\mathbb{C}^\times$ is $\mathbb{C}$ itself with the zero bracket, because the units are an open subset of $\mathbb{C}$ so that the tangent space at the identity is the whole algebra. The inverse map $\iota(A) = A^{-1}$ has differential $-\operatorname{id}$ at the identity, the infinitesimal reason an abelian bracket is antisymmetric; and the bracket is zero because the group is abelian. In the biquaternion case the Lie algebra is $\mathrm{GL}(2,\mathbb{C})$ and the tangent space is the whole of $\mathbb{B}$ as well, but the bracket there does not vanish.
+**Lie algebra.** The Lie algebra of $\mathbb{C}^\times$ is $\mathbb{C}$ itself with the zero bracket, because the units are an open subset of $\mathbb{C}$ so that the tangent space at the identity is the whole algebra. The inverse map $\iota(A) = A^{-1}$ has differential $-\operatorname{id}$ at the identity, the infinitesimal reason an abelian bracket is antisymmetric; and the bracket is zero because the group is abelian.
 
 **The norm-one group.** Because $N$ is multiplicative and $N(1) = 1$, the level set
 
@@ -51,7 +51,7 @@ $$
 \mathbb{C}^\times_1 = \{A \in \mathbb{C} : N(A) = 1\} = U(1) = \{A : |A| = 1\}
 $$
 
-is a subgroup of $\mathbb{C}^\times$: the **unit circle group** $U(1)$. It is compact, connected, of real dimension $1$, and it is the maximal compact subgroup of $\mathbb{C}^\times$. Unlike the biquaternion norm-one group $\mathbb{B}^\times_1 \cong SL(2,\mathbb{C})$, which is non-compact, the complex norm-one group is compact; the reason is the definiteness of the norm.
+is a subgroup of $\mathbb{C}^\times$: the **unit circle group** $U(1)$. It is compact, connected, of real dimension $1$, and it is the maximal compact subgroup of $\mathbb{C}^\times$. The complex norm-one group is compact; the reason is the definiteness of the norm.
 
 ## The Exponential: Series and Closed Form
 
@@ -69,7 +69,7 @@ $$
 \exp(a+i a') = \exp(a)\exp(i a') = e^{a}\bigl(\cos a' + i \sin a'\bigr) = e^{a}e^{i a'},
 $$
 
-the **Euler formula** $e^{a'i} = \cos a' + i \sin a'$ being the closed form of the series with purely imaginary argument. There is only one regime: the algebra has no nilpotent directions of the kind that truncate the biquaternion series, because the form $N$ is definite and the only nilpotent element is $0$.
+the **Euler formula** $e^{a'i} = \cos a' + i \sin a'$ being the closed form of the series with purely imaginary argument. There is only one regime: the algebra has no nilpotent directions, because the form $N$ is definite and the only nilpotent element is $0$.
 
 **Basic properties.** The exponential never vanishes, so it takes values in $\mathbb{C}^\times$:
 
@@ -97,7 +97,7 @@ $$
 
 **Proof.** The complex numbers commute, so $A$ and $B$ generate a commutative subalgebra, and the binomial theorem reorders the product of the two absolutely convergent series term by term into the series of $\exp(A+B)$; explicitly, the coefficient of the $n$-th power of the combined series is $\sum_{k} \frac{1}{k!(n-k)!} A^k B^{n-k} = \frac{(A+B)^n}{n!}$.
 
-This is the sharp difference from the biquaternion algebra, where the exponential is not a homomorphism and the failure is measured by the Baker–Campbell–Hausdorff series $\exp(a)\exp(b) = \exp(a+b+\tfrac12[a,b]+\cdots)$. Here every bracket in that series vanishes, so the series terminates at the leading term and the identity is exact without any smallness hypothesis. The general form reduces to the commuting case, which for $\mathbb{B}$ is the special case $[a,b] = 0$; for $\mathbb{C}$ the commuting case is the only case.
+Every bracket in the Baker–Campbell–Hausdorff series $\exp(a)\exp(b) = \exp(a+b+\tfrac12[a,b]+\cdots)$ vanishes, so the series terminates at the leading term and the identity $\exp(a)\exp(b) = \exp(a+b)$ is exact without any smallness hypothesis. The commuting case is the only case.
 
 ## Surjectivity, Kernel and the Logarithm
 
@@ -121,7 +121,7 @@ $$
 \ker\exp = 2\pi i\,\mathbb{Z} \cong \mathbb{Z},
 $$
 
-of real dimension $0$. The biquaternion kernel is very much larger: it is not discrete, it is not an additive subgroup, and in its coordinates the conditions $Q_0 = \pi i k$, $B = \pi j$ with $k \equiv j \pmod 2$ appear. Here the kernel is a lattice of points on the imaginary axis, and the ambiguity of the logarithm is the addition of $2\pi i k$. The **principal logarithm**, $\operatorname{Log} A = \ln|A| + i \operatorname{Arg} A$ with $\operatorname{Arg} A \in (-\pi,\pi]$, selects one representative and is holomorphic on the cut plane, as developed in *Complex Analysis*.
+of real dimension $0$. The kernel is a lattice of points on the imaginary axis, and the ambiguity of the logarithm is the addition of $2\pi i k$. The **principal logarithm**, $\operatorname{Log} A = \ln|A| + i \operatorname{Arg} A$ with $\operatorname{Arg} A \in (-\pi,\pi]$, selects one representative and is holomorphic on the cut plane, as developed in *Complex Analysis*.
 
 ## Polar and Exponential Parametrisation
 
@@ -177,7 +177,7 @@ $$
 U(1) \cong SO(2).
 $$
 
-**The identification with $SO(2)$.** The rotation of the plane through the angle $\theta$ is the multiplication map $A \mapsto e^{i\theta}A$, so the map $U(1) \to SO(2)$ sending $e^{i\theta}$ to the rotation through $\theta$ is an isomorphism of Lie groups; it is an isomorphism and not a covering, because the rotation group of the plane is itself a circle. This is the elementary base case of the double covers of the higher-dimensional rotation groups: the unit quaternions double-cover $SO(3)$ and the unit-norm biquaternions double-cover the proper orthochronous Lorentz group $SO^+(1,3)$, but the circle covers $SO(2)$ once.
+**The identification with $SO(2)$.** The rotation of the plane through the angle $\theta$ is the multiplication map $A \mapsto e^{i\theta}A$, so the map $U(1) \to SO(2)$ sending $e^{i\theta}$ to the rotation through $\theta$ is an isomorphism of Lie groups; it is an isomorphism and not a covering, because the rotation group of the plane is itself a circle. This is the elementary base case of the double covers of the higher-dimensional rotation groups, the circle covering $SO(2)$ once.
 
 **The scale subgroup.** The subgroup generated by $X = 1$ is $\gamma_1(t) = e^{t} \in \mathbb{R}_{>0}$, and $t \mapsto e^{t}$ is an isomorphism $\mathbb{R} \cong \mathbb{R}_{>0}$ of Lie groups. Together,
 
@@ -193,25 +193,7 @@ the product of the scale line and the phase circle, and the exponential $\exp : 
 
 **Proof.** The product $\mathbb{R}_{>0} \times U(1)$ of the connected groups $\mathbb{R}_{>0}$ and $U(1)$ is connected, and the two factors are connected, so $\mathbb{C}^\times$ is connected. The map $(r, u) \mapsto u$ is a continuous retraction onto the compact subgroup $U(1)$, and the homotopy $((r,u),t) \mapsto ((1-t)r + t, u)$ deforms the identity to it, so $\mathbb{C}^\times$ deformation retracts onto $U(1)$. The circle is not simply connected, so neither is $\mathbb{C}^\times$.
 
-The fundamental group is computed in *Complex Topology*: $\pi_1(\mathbb{C}^\times) \cong \pi_1(U(1)) \cong \mathbb{Z}$, generated by the loop $t \mapsto e^{it}$, and $\pi_n(\mathbb{C}^\times) = 0$ for $n \ge 2$. In the biquaternion case the corresponding maximal compact subgroup is $U(2) \cong S^1 \times S^3$, of real dimension $4$, with $\pi_1 \cong \mathbb{Z}$ and $\pi_3 \cong \mathbb{Z}$; here the compact factor is the single circle, and only the first homotopy group survives.
-
-## Comparison with the Biquaternion Lie Theory
-
-The two cases are tabulated; the field is named in the entries that depend on it.
-
-| Structure | $\mathbb{C}$ | $\mathbb{B}$ |
-|---|---|---|
-| Algebra as Lie algebra | abelian, real dimension $2$; bracket $0$ | $\mathrm{GL}(2,\mathbb{C})$, real dimension $8$; bracket $\neq 0$ |
-| Group of units | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, real dimension $2$, abelian | $\mathbb{B}^\times \cong GL(2,\mathbb{C})$, real dimension $8$, non-abelian |
-| Exponential | entire, homomorphism $\mathbb{C} \to \mathbb{C}^\times$ | entire, not a homomorphism |
-| Group law | $\exp(A+B) = \exp A \exp B$ exactly | BCH series with $[a,b] \neq 0$ |
-| Kernel of $\exp$ | $2\pi i\,\mathbb{Z}$, discrete, $\cong \mathbb{Z}$ | non-discrete subset of $\mathrm{GL}(2,\mathbb{C})$, not a subgroup |
-| Surjectivity | onto $\mathbb{C}^\times$ | onto $GL(2,\mathbb{C})$ |
-| Norm-one group | $U(1) \cong SO(2)$, compact, dimension $1$ | $SL(2,\mathbb{C})$, non-compact, real dimension $6$ |
-| Maximal compact subgroup | $U(1) \cong S^1$ | $U(2) \cong S^1 \times S^3$ |
-| Homotopy | $\pi_1 \cong \mathbb{Z}$, $\pi_n = 0$ ($n \ge 2$) | $\pi_1 \cong \mathbb{Z}$, $\pi_3 \cong \mathbb{Z}$ |
-
-Both exponentials are surjective onto the units and both have a locally bijective character; the differences are that the complex exponential is a global homomorphism, that its kernel is a discrete lattice rather than a non-discrete subset, and that its norm-one group and maximal compact subgroup are one-dimensional rather than three- and four-dimensional. The complex case is the completely reducible abelian base of the family.
+The fundamental group is computed in *Complex Topology*: $\pi_1(\mathbb{C}^\times) \cong \pi_1(U(1)) \cong \mathbb{Z}$, generated by the loop $t \mapsto e^{it}$, and $\pi_n(\mathbb{C}^\times) = 0$ for $n \ge 2$. The compact factor is the single circle, and only the first homotopy group survives.
 
 ## Summary
 
@@ -245,5 +227,3 @@ Every nonzero complex number has the polar parametrisation $A = re^{i\theta} = \
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for an elementary treatment of $U(1)$, $SO(2)$ and the circle group as the base case of the rotation groups.
 - Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the exponential, the logarithm and the polar form.
 - Tristan Needham, *Visual Complex Analysis* (Oxford University Press, 1997), for the exponential as a map of the plane and the circle as a one-parameter group.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the exponential and polar forms in the higher-dimensional cases.
-- S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the biquaternion exponential and polar forms.

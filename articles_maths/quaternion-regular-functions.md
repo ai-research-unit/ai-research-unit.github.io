@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Quaternion analysis, in the sense of one complex variable generalised to four real variables, is built on a first-order operator and the class of functions it annihilates. This article defines that operator and its conjugate, states the system of equations that regularity imposes, proves the harmonicity of regular functions through the factorization of the Laplacian, records the examples that generated the classical theory, and gives the Cauchy integral formula that holds on the quaternion algebra. It is the quaternion member of the family's regularity pair; its counterpart is the biquaternion case, where the algebra is no longer a division algebra and the null cone obstructs the complex analogy. Here the algebra is a division algebra, there is no null cone, and the analogy holds without restriction.
+Quaternion analysis, in the sense of one complex variable generalised to four real variables, is built on a first-order operator and the class of functions it annihilates. This article defines that operator and its conjugate, states the system of equations that regularity imposes, proves the harmonicity of regular functions through the factorization of the Laplacian, records the examples that generated the classical theory, and gives the Cauchy integral formula that holds on the quaternion algebra. Here the algebra is a division algebra, there is no null cone, and the analogy holds without restriction.
 
 The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* for the algebra, the quaternion norm and the inverse, *The Scalar and Vector Subspaces of $\mathbb{H}$* for the vector-calculus decomposition of the operator, *Quaternion Integration* for the Cauchy integral formula and its consequences, and *Quaternion Special Functions* for the exponential that generates the examples. It is adjacent to *Fueter Theory for Quaternions*, which owns the Fueter construction and the axial and slice approach; this article owns the operator and the system it defines. The classical one-variable model is compared throughout; no physical vocabulary is used, and the first-order operator is the **Cauchy–Riemann operator** of the menu (some older literature calls it the Dirac operator, a name not used in this corpus).
 
@@ -75,8 +75,6 @@ $$
 **Corollary.** The system is a first-order elliptic system of four equations for the four coefficients. Its principal symbol is $s(\xi) = \sum_\mu\xi_\mu e_\mu$, which satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2e_0$ for every real covector $\xi\neq0$, so the system is elliptic and its solutions are real-analytic.
 
 *Proof.* The principal symbol is invertible with inverse $s^{\natural}(\xi)/|\xi|^2$, which is the ellipticity condition; elliptic systems with smooth coefficients have real-analytic solutions.
-
-**Remark.** The ellipticity is exact, and it is the point at which the quaternion algebra differs from the biquaternion algebra: for the quaternion algebra the quaternion norm is definite, so $|\xi|^2$ never vanishes, and the operator has no characteristic set. There is therefore no analogue of the null cone of $\mathbb{B}$.
 
 ## Examples and Closure Properties
 
@@ -246,7 +244,7 @@ $$
 P^\pm_k\,(D_3+M_{\nu}) = \bigl(D_3 \pm M_{i\nu e_k}\bigr)P^\pm_k .
 $$
 
-So an equation whose coefficient is a scalar multiple of one basis vector splits into two equations whose coefficients differ in sign, and a coefficient that is a sum of two independent shifts splits into four. The device is algebraic, not analytic: it is the idempotent pair $\tfrac12(1\pm ie_k)$ that the mass-shell section of *The Dirac Equation in Biquaternionic Form* uses with a biquaternionic parameter, and the same pair, written without normalisation, that the stratified case of *Maxwell's Equations in Chiral Media* uses. The identity above is the statement that the projection commutes with the shifted operator up to the reversal of the shift, and it was checked symbolically for both signs and all three $k$.
+So an equation whose coefficient is a scalar multiple of one basis vector splits into two equations whose coefficients differ in sign, and a coefficient that is a sum of two independent shifts splits into four. The identity above is the statement that the projection commutes with the shifted operator up to the reversal of the shift, and it was checked symbolically for both signs and all three $k$.
 
 ## The Reduced-Quaternion Module and the Riesz System
 
@@ -389,22 +387,6 @@ $$
 
 *Proof.* The kernel is defined and smooth off the origin throughout $\mathbb{H}$; the absence of zero divisors makes the inverse $\tilde q^{-1}$ defined for every $\tilde q\neq0$ and the singular set a single point. The consequences are standard in Clifford analysis.
 
-## Comparison with the Biquaternion Case
-
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the same operator with complex coefficients, so the Cauchy–Riemann operator on $\mathbb{H}$ is exactly the operator on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of $\mathbb{B}$, where all coefficients are real.
-
-| Feature | $\mathbb{H}$ | $\mathbb{B}$ |
-|---|---|---|
-| Coefficients of the variable | real | complex |
-| Norm | definite | indefinite |
-| Zero divisors | none | the null cone $\mathcal{N} = \{N = 0\}$ |
-| Ellipticity of $D$ | everywhere, $s(\xi)s^{\natural}(\xi) = \lvert\xi\rvert^2$ | on indefinite subspaces $s(\xi)s^{\natural}(\xi)$ degenerates on $\mathcal{N}$ |
-| Cauchy kernel | $G = \tilde q^{\natural}/\lvert \tilde q\rvert^4$, regular off the origin | regular only where $N\neq0$; not a fundamental solution on indefinite subspaces |
-| Cauchy integral formula | global on every domain | asserted only on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ |
-| Maximum principle, Liouville, residue theory | available | available on $\mathbb{H}_{\mathbb{B}}$, fail on $\mathbb{M}_\pm$ |
-
-The obstruction in the biquaternion case is entirely the null cone: because $N$ is indefinite, the principal symbol $s(\xi)$ is singular on the characteristic set, the Cauchy kernel ceases to be a fundamental solution off the quaternion subspace, and the identity $\tilde q^{\natural} \tilde q = |\tilde q|^2$ used to compute $DG = 0$ fails once the coefficients are complex and null. On the quaternion algebra the quaternion norm is definite, so all of these properties hold globally and the four-variable Cauchy theory is complete. The biquaternion account is in *Biquaternion Regular Functions*.
-
 ## Summary
 
 The Cauchy–Riemann operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar D = \sum_\mu e_\mu^{\natural}\partial_\mu$ factor the Euclidean Laplacian, $D\bar D = \bar DD = \Delta$, through the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_0$. A function is left-regular if $Df = 0$; regularity is equivalent to the Cauchy–Riemann–Fueter system $\partial_0f_0 = \mathrm{div}\,\mathbf{f}$, $\partial_0\mathbf{f}+\mathrm{grad}\,f_0+\mathrm{rot}\,\mathbf{f} = 0$, a first-order elliptic system of four equations whose principal symbol is invertible everywhere because the quaternion norm is definite.
@@ -415,7 +397,7 @@ The spatial part $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ is the **Mois
 
 A second three-dimensional theory uses the **reduced quaternions** $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$, a three-dimensional real subspace that is closed under conjugation and inversion but is not a subalgebra, since $e_1e_2 = e_3$ leaves it. The reduced Cauchy–Riemann operator $D = \partial_0+e_1\partial_1+e_2\partial_2$ and its conjugate factor the three-dimensional Laplacian, $D\bar D = \bar DD = \Delta_3$, and they are the rotation images of $D_3$ under the exchange of $q_0$ with $q_3$; unlike $D_3$ they act on one real and two imaginary coordinates. In components, $Df = 0$ is the four-equation system $\partial_0f_0 = \partial_1f_1+\partial_2f_2$, $\partial_0f_1 = -\partial_1f_0$, $\partial_0f_2 = -\partial_2f_0$, $\partial_1f_2 = \partial_2f_1$, and it is equivalent both to the right equation $fD = 0$ and to the **Riesz system** $\operatorname{div}F = \operatorname{curl}F = 0$ for $F = (f_0,-f_1,-f_2)$: every monogenic function of this theory is two-sided, a coincidence that fails in four variables. The hypercomplex derivative is $\tfrac12\bar Df$, its vanishing defines the hyperholomorphic constants, and the monogenic primitive is the inverse of that derivative modulo the constants. The solid spherical monogenics form a complete orthogonal system indexed by polynomials $X_n^{l,\dagger}$ and $Y_n^{m,\dagger}$ built from the Legendre functions, with ladder relations under differentiation and primitivation, and the homogeneous monogenic polynomials of degree $n$ form a space of dimension $2n+3$. Every monogenic function decomposes orthogonally into a main part and a hyperholomorphic constant, the analogue of the classical fact that $f(A)-f'(0)A$ is orthogonal to the constants; that decomposition is the basis of the Bloch theorem for monogenic functions.
 
-The comparison with the biquaternions isolates the role of the quaternion norm: on $\mathbb{H}$ the definiteness of $N$ makes the operator elliptic everywhere and the Cauchy theory global, while on $\mathbb{B}$ the indefinite form produces the null cone, on which the symbol degenerates and the Cauchy kernel ceases to be fundamental, so the analogy is available only on the quaternion subspace. The Fueter construction and the slice description of regular functions are in *Fueter Theory for Quaternions*.
+The Fueter construction and the slice description of regular functions are in *Fueter Theory for Quaternions*.
 
 ## Summary of Notation
 
@@ -434,7 +416,6 @@ The comparison with the biquaternions isolates the role of the quaternion norm: 
 | $s(\xi) = \sum_\mu\xi_\mu e_\mu$ | Principal symbol, $s s^{\natural} = \lvert\xi\rvert^2$ |
 | $A = q_0+e_1q_1$ | Single-plane complex variable, $\partial_{\bar A} = \tfrac12(\partial_0+e_1\partial_1)$ |
 | $G(\tilde q) = \tilde q^{\natural}/\lvert \tilde q\rvert^4$ | Cauchy kernel; $DG = 2\pi^2\delta_0e_0$ |
-| $\mathbb{B}, \mathbb{H}_{\mathbb{B}}$ | Biquaternion algebra and its quaternion subspace |
 | $D_3 = e_1\partial_1+e_2\partial_2+e_3\partial_3$ | Moisil–Theodoresco operator; $D_3^2 = -\Delta_3$ |
 | $\check\partial\phi = \phi^{-1}D_3\phi$ | Logarithmic derivative; $\mathbf{f} = \check\partial\phi$ solves the Riccati PDE |
 | $M_{\vec\alpha}$ | Operator of right multiplication by $\vec\alpha$, $M_{\vec\alpha}u = u\vec\alpha$ |

@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The complex algebra $\mathbb{C}$ is two-dimensional over $\mathbb{R}$ and one-dimensional over itself. This article presents its **regular representation**, the algebra acting on itself on the left, and the $2 \times 2$ real matrix of that action in the basis $1$, $i$. The matrix is the Cayley matrix of complex multiplication, and its image is the algebra of conformal $2 \times 2$ real matrices, the matrices of the shape $aI + a'J$. The article is the base case of the representation group of the tensor family: it sits below the $2 \times 2$ representation of the quaternions $\mathbb{H}$ and the $4 \times 4$ regular representation of the biquaternions $\mathbb{B}$, which is assembled from it by a tensor product.
+The complex algebra $\mathbb{C}$ is two-dimensional over $\mathbb{R}$ and one-dimensional over itself. This article presents its **regular representation**, the algebra acting on itself on the left, and the $2 \times 2$ real matrix of that action in the basis $1$, $i$. The matrix is the Cayley matrix of complex multiplication, and its image is the algebra of conformal $2 \times 2$ real matrices, the matrices of the shape $aI + a'J$. The article is the base case of the regular-representation articles of the corpus.
 
-The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $A = a + i a'$, norm $N(A) = A\bar A = a^2+a'^2$, and complex conjugation $\bar A$. The word *representation* is used in both senses, as in the biquaternion companion: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the conformal matrices, the determinant and the trace, and the relation to the quaternion and biquaternion regular representations; the complex-linear one-dimensional representation and the classification of the modules over a field are the subject of *Complex Element Representations* and are cited once.
+The conventions are those of *Complex Algebra*: basis $1$, $i$ with $i^2 = -1$, a general element $A = a + i a'$, norm $N(A) = A\bar A = a^2+a'^2$, and complex conjugation $\bar A$. The word *representation* is used in both senses: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the conformal matrices, the determinant and the trace; the complex-linear one-dimensional representation and the classification of the modules over a field are the subject of *Complex Element Representations* and are cited once.
 
 ## The Left Regular Representation
 
@@ -92,7 +92,7 @@ $$
 
 **Proof.** The algebra is commutative, so $BA = AB$ for all $B$, hence the two endomorphisms agree on every element.
 
-The right regular representation therefore carries no information beyond the left one, and it is not a second realization. This is the first place where the commutative base case differs structurally from the biquaternion algebra: there the left and right regular representations are distinct, the right one is an anti-homomorphism, the naive identity $\mathsf{M}_2^{R}(\tilde{Q}) = \mathsf{M}_2(\tilde{Q})^{\mathsf{T}}$ is false, and the difference vanishes exactly on the centre. None of that apparatus exists here. The slot is empty because the algebra is commutative, and the emptiness is the statement.
+The right regular representation therefore carries no information beyond the left one, and it is not a second realization. The left and right regular representations coincide, and there is no anti-homomorphism to compare with the transpose. The slot is empty because the algebra is commutative, and the emptiness is the statement.
 
 ## Transposition and Conjugation
 
@@ -106,7 +106,7 @@ where the transpose is taken in the basis $1, i$.
 
 **Proof.** Transposing $\mathsf{M}_2(A) = \begin{pmatrix} a & -a' \\ a' & a \end{pmatrix}$ gives $\begin{pmatrix} a & a' \\ -a' & a \end{pmatrix}$, which is $\mathsf{M}_2(a - i a') = \mathsf{M}_2(\bar A)$.
 
-Transposition is therefore complex conjugation in the matrix picture: it is the matrix form of the involution, and the antisymmetric matrix $\mathsf{M}_2(A) - \mathsf{M}_2(\bar A)$ changes sign under it. This is the placement, in the two-dimensional case, of the biquaternion identity $\mathsf{M}_2(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_2(\tilde{Q}^{\natural})$, where the transpose corresponds to quaternion conjugation; the same theorem holds here with the single involution of the field.
+Transposition is therefore complex conjugation in the matrix picture: it is the matrix form of the involution, and the antisymmetric matrix $\mathsf{M}_2(A) - \mathsf{M}_2(\bar A)$ changes sign under it. The same theorem holds here with the single involution of the field.
 
 ## The Module Structure: Irreducibility
 
@@ -116,7 +116,7 @@ The regular representation is the algebra acting on itself, and over $\mathbb{C}
 
 **Proof.** A submodule is a left ideal of the field $\mathbb{C}$, and a field has no proper nonzero ideals. Equivalently, $\mathsf{M}_2(B)$ spans the whole module for every nonzero $B$.
 
-This is the largest structural difference from the biquaternion algebra. There the regular module is $\mathbb{B} = I_1 \oplus I_2$, the direct sum of two minimal left ideals, and the regular representation is reducible, $\mathsf{M}_2 \cong V \oplus V$ with $V = \mathbb{C}^2$ the simple module. Here the algebra is a field, its regular module is simple, and there is no Peirce decomposition, no idempotent splitting and no centralizer larger than the image itself. The endomorphism algebra of the regular module is $\operatorname{End}_{\mathbb{C}}(\mathbb{C}) = \mathbb{C}$, the image of $\mathsf{M}_2$, which is the commutative shadow of the double-centralizer statement $\operatorname{End}_{\mathbb{B}}(\mathbb{B}) = \mathsf{M}_2^{R}(\mathbb{B})$ of the biquaternion article.
+The algebra is a field, its regular module is simple, and there is no Peirce decomposition, no idempotent splitting and no centralizer larger than the image itself. The endomorphism algebra of the regular module is $\operatorname{End}_{\mathbb{C}}(\mathbb{C}) = \mathbb{C}$, the image of $\mathsf{M}_2$.
 
 ## The Determinant and the Trace
 
@@ -128,7 +128,7 @@ $$
 
 **Proof.** $\det \mathsf{M}_2(A) = a\cdot a - (-a')\cdot a' = a^2 + a'^2$, and $\operatorname{tr}\mathsf{M}_2(A) = a + a = 2a$.
 
-The determinant is the norm, and the trace is twice the real part, which is also the algebra trace $\operatorname{Tr}(A)$ of $\mathbb{C}$ over $\mathbb{R}$. This is a genuine difference from the biquaternion regular representation, where the determinant is the **square** of the norm, $\det \mathsf{M}_2(\tilde{Q}) = N(\tilde{Q})^2$. The square appears there because the biquaternion regular module is the direct sum of two copies of the simple module, so its determinant is the product of two norms; here the regular module is one-dimensional over $\mathbb{C}$ and the determinant is the norm itself. The determinant also shows that $\mathsf{M}_2(A)$ is invertible exactly when $A \neq 0$, matching the invertibility criterion of *Complex Norm and Invertibility*.
+The determinant is the norm, and the trace is twice the real part, which is also the algebra trace $\operatorname{Tr}(A)$ of $\mathbb{C}$ over $\mathbb{R}$. The regular module is one-dimensional over $\mathbb{C}$ and the determinant is the norm itself. The determinant also shows that $\mathsf{M}_2(A)$ is invertible exactly when $A \neq 0$, matching the invertibility criterion of *Complex Norm and Invertibility*.
 
 **Corollary.** $\mathsf{M}_2(A)$ is orientation-preserving for $A \neq 0$, since $\det \mathsf{M}_2(A) = N(A) > 0$.
 
@@ -193,38 +193,6 @@ $$
 
 of determinant $-1$, trace $0$ and eigenvalues $+1$ and $-1$, on the fixed line and the perpendicular line of the reflection. The reflection matrices therefore exhaust the nontrivial coset $\mathsf{M}_2(U(1))E$ of $SO(2)$ in $O(2) = \mathsf{M}_2(U(1)) \cup \mathsf{M}_2(U(1))E$.
 
-## The Relation to the Quaternion and Biquaternion Representations
-
-The regular representation of $\mathbb{C}$ is the base factor of a tensor product. For real algebras $A$ and $B$, left multiplication by $c \otimes d$ on $A \otimes_{\mathbb{R}} B$ is the tensor product of the left multiplications,
-
-$$
-\rho_{A \otimes B}(c \otimes d) = \rho_A(c) \otimes \rho_B(d),
-$$
-
-because $(c \otimes d)(a \otimes b) = ca \otimes db$. Taking $A = \mathbb{C}$ and $B = \mathbb{H}$, so that $A \otimes B = \mathbb{B}$, the regular representation of the biquaternions is the tensor product of the two-dimensional real regular representation of $\mathbb{C}$ and the four-dimensional real regular representation of $\mathbb{H}$:
-
-$$
-\mathsf{M}_4^{\mathbb{B}} = \mathsf{M}_2^{\mathbb{C}} \otimes_{\mathbb{R}} \mathsf{M}_4^{\mathbb{H}}, \qquad \dim_{\mathbb{R}} = 2 \times 4 = 8,
-$$
-
-which is the $4 \times 4$ complex regular representation of $\mathbb{B}$ read over $\mathbb{R}$. Equivalently, writing an element of $\mathbb{B}$ as $\sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, the complex Cayley factor $\mathsf{M}_2^{\mathbb{C}}$ acts on each coefficient and the quaternion Cayley factor $\mathsf{M}_4^{\mathbb{H}}$ acts on the index $\mu$; the two combine into the Cayley matrix of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
-
-The lower end of the same hierarchy is the $2 \times 2$ complex representation of the quaternions. Since $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong M_2(\mathbb{C})$, the quaternion regular representation, of real dimension $4$, complexifies to the $2 \times 2$ complex representation
-
-$$
-\rho^{\mathbb{H}} : \mathbb{H} \longrightarrow M_2(\mathbb{C}), \qquad q = q_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 \longmapsto \begin{pmatrix} q_0 + i q_1 & q_2 + i q_3 \\ -q_2 + i q_3 & q_0 - i q_1 \end{pmatrix},
-$$
-
-with determinant $N_{\mathbb{H}}(q) = q_0^2+q_1^2+q_2^2+q_3^2$. The three cases form the chain
-
-| algebra | dimension over $\mathbb{R}$ | regular matrix | determinant |
-|---|---|---|---|
-| $\mathbb{C}$ | $2$ | $2 \times 2$ real, Cayley | $N_{\mathbb{C}}(A) = a^2+a'^2$ |
-| $\mathbb{H}$ | $4$ | $4 \times 4$ real, or $2 \times 2$ complex | $N_{\mathbb{H}}(q)^2$ over $\mathbb{R}$, $N_{\mathbb{H}}(q)$ over $\mathbb{C}$ |
-| $\mathbb{B}$ | $8$ | $4 \times 4$ complex, Cayley, reducible | $N_{\mathbb{B}}(\tilde{Q})^2$ |
-
-The complex case is the bottom of the chain in two senses: its regular representation is the smallest Cayley matrix, and its module is simple, whereas the quaternion and biquaternion regular modules are sums of copies of a smaller simple module once the algebra is complexified.
-
 ## Summary
 
 The left regular representation of $\mathbb{C}$, defined by $L_{A}(B) = AB$, is the algebra acting on itself on the left, and in the basis $1, i$ its matrix is the Cayley matrix
@@ -235,7 +203,7 @@ $$
 
 It is a faithful $\mathbb{R}$-algebra homomorphism, $\mathsf{M}_2(A)\mathsf{M}_2(B) = \mathsf{M}_2(AB)$; its transpose is the matrix of the conjugate, $\mathsf{M}_2(A)^{\mathsf{T}} = \mathsf{M}_2(\bar A)$; its determinant is the norm and its trace is twice the real part. The image is the field of conformal $2 \times 2$ real matrices, the nonzero elements of which are the orientation-preserving similarities of the plane, and the polar decomposition of $A$ is the decomposition of its matrix into a scalar and a rotation. On the distinguished subspaces the image is the line of scalar matrices for $\mathbb{R}_{\mathbb{C}}$ and the line of skew-symmetric matrices for $i\mathbb{R}_{\mathbb{C}}$, and on the unit circle it is the rotation group: $\mathsf{M}_2$ carries $U(1)$ isomorphically onto $SO(2)$, $u = e^{i\theta}$ to the rotation matrix $R_\theta$, and the reflections $S_u(A) = u\bar A$ to the coset $\mathsf{M}_2(U(1))E$ of $SO(2)$ in $O(2)$.
 
-Because the algebra is commutative, the right regular representation coincides with the left and the left-right apparatus of the biquaternion case is empty. Because the algebra is a field, the regular module is simple: the biquaternion reduction $\mathsf{M}_2 \cong V \oplus V$ into two minimal left ideals, the determinant $N^2$, and the nontrivial centralizer all have no analogue here, and their absence is the commutativity and the divisibility of $\mathbb{C}$. The complex regular representation is the tensor factor of the biquaternion one, $\mathsf{M}_4^{\mathbb{B}} = \mathsf{M}_2^{\mathbb{C}} \otimes_{\mathbb{R}} \mathsf{M}_4^{\mathbb{H}}$, and the base of the chain whose other members are the $2 \times 2$ complex representation of $\mathbb{H}$ and the reducible $4 \times 4$ complex representation of $\mathbb{B}$.
+Because the algebra is commutative, the right regular representation coincides with the left and the left-right distinction is empty. Because the algebra is a field, the regular module is simple: there is no reduction into two minimal left ideals, no squared determinant and no nontrivial centralizer, and their absence is the commutativity and the divisibility of $\mathbb{C}$.
 
 ## Summary of Notation
 
@@ -258,13 +226,10 @@ Because the algebra is commutative, the right regular representation coincides w
 | $S_u(A) = u\bar A$, $u \in U(1)$ | a reflection of the plane, matrix $\mathsf{M}_2(u)E$ |
 | $O(2) = \mathsf{M}_2(U(1)) \cup \mathsf{M}_2(U(1))E$ | the orthogonal group, rotations and reflections |
 | $\mathrm{SO}(2) \cong \mathbb{R}$ | the skew-symmetric matrices $\theta J$, the Lie algebra of $SO(2)$ |
-| $\mathsf{M}_2^{\mathbb{C}} \otimes_{\mathbb{R}} \mathsf{M}_4^{\mathbb{H}}$ | the biquaternion regular representation as a tensor product |
 
 ## Further Reading
 
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the regular representation of an algebra and its endomorphism algebra.
 - Charles B. Curtis and Irving Reiner, *Representation Theory of Finite Groups and Associative Algebras* (Interscience, 1962), for the regular module and its decomposition into minimal left ideals.
 - Frank B. Anderson and Kent R. Fuller, *Rings and Categories of Modules*, 2nd edition (Springer, 1992), for the regular module over a field and the simplicity of the regular representation of a division ring.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the Cayley matrix of multiplication and its transpose.
-- John Voight, *Quaternion Algebras*, Graduate Texts in Mathematics 288 (Springer, 2021), for the regular representation of a quaternion algebra and its complexification.
 - Tristan Needham, *Visual Complex Analysis* (Oxford University Press, 1997), for the conformal-matrix reading of multiplication by a complex number.

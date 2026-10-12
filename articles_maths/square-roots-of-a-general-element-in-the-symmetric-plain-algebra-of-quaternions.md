@@ -80,7 +80,7 @@ and there are no others.
 
 *Proof.* This is the union of the two cases above. The discriminant $4N(\tilde q)$ of the reduced quadratic is never negative, since the norm is positive definite, so the equation always has a root.
 
-**Remark (the "no root" class is empty here).** The outline of the block lists a class of "no root". **That class does not occur in this block**: the discriminant of the reduced quadratic is $16\,N(\tilde q)$, the norm is positive definite, and every element of $\mathbb{H}$ therefore has a square root. The no-root row is a feature of a radicand with an isotropic norm — the biquaternion block, where $N(\tilde q)=0$ is possible — and it is absent over $\mathbb{R}$; the class that appears in its place is the single-root class of the origin. In the central negative case the root set is a two-sphere, and in the central non-negative and non-central cases it is a two-element set.
+**Remark (the "no root" class is empty here).** The outline of the block lists a class of "no root". **That class does not occur in this block**: the discriminant of the reduced quadratic is $16\,N(\tilde q)$, the norm is positive definite, and every element of $\mathbb{H}$ therefore has a square root. In the central negative case the root set is a two-sphere, and in the central non-negative and non-central cases it is a two-element set.
 
 ## Worked Examples
 

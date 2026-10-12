@@ -12,7 +12,7 @@ The limit exists off the filled Julia set, it is positive there and zero on $K_c
 
 The article also records an honest limitation. The menu asks for a potential "harmonic off the filled Julia set" with "subharmonicity in the four-dimensional sense". In four dimensions the potential is **not** harmonic: the case $c=0$ already gives $G_0(\tilde q)=\log|\tilde q|$ and the Euclidean Laplacian $\Delta\log|\tilde q|=2/|\tilde q|^2 \neq 0$. What is true is that the potential is harmonic off the slice Julia set *on each invariant complex plane*, and that in the four-dimensional space it is subharmonic, the mean-value property being the potential theory of *Potential Theory*. Both statements are proved or quoted below, and the difference between them is stated.
 
-The escape lemma, the filled Julia set and the quadratic map are from *The Quaternion Quadratic Map and Its Julia Sets*; the complex Green's function, the Böttcher coordinate and the conjugacy to the squaring map are from *The Escape Radius and the Green's Function* and *The Julia Sets of a Complex Polynomial*; the quaternion norm and its multiplicativity are from *Quaternion Norm and Invertibility*; the potential theory is Part III's, in *Potential Theory*; and the dimension is *The Dimension of the Quaternion Julia Sets*'s. The pluripotential analogue for the biquaternion algebra is *The Pluripotential Theory of the Biquaternion Dynamics*. No physics is invoked.
+The escape lemma, the filled Julia set and the quadratic map are from *The Quaternion Quadratic Map and Its Julia Sets*; the complex Green's function, the Böttcher coordinate and the conjugacy to the squaring map are from *The Escape Radius and the Green's Function* and *The Julia Sets of a Complex Polynomial*; the quaternion norm and its multiplicativity are from *Quaternion Norm and Invertibility*; the potential theory is Part III's, in *Potential Theory*; and the dimension is *The Dimension of the Quaternion Julia Sets*'s. No physics is invoked.
 
 Throughout, $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$, $N(\tilde q)=\tilde q\tilde q^{\natural}$, $|\tilde q|=\sqrt{N(\tilde q)}$, and $R(c)=1+|c|$.
 
@@ -91,8 +91,6 @@ since the fundamental solution of the Laplacian in $\mathbb{R}^4$ is $|\tilde q|
 $$
 G_c(\tilde q) \leq \frac{1}{\operatorname{vol}\,B(\tilde q,r)}\int_{B(\tilde q,r)}G_c .
 $$
-
-The proof is the mean-value argument for the limit of the normalised logarithmic potentials of a polynomial of degree two, and it belongs to Part III, in *Potential Theory*; the pluricomplex analogue belongs to *The Pluripotential Theory of the Biquaternion Dynamics*.
 
 ## Worked Example
 

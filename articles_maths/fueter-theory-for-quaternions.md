@@ -3,9 +3,9 @@
 
 ## Introduction
 
-Fueter theory is the four-variable function theory attached to the quaternion algebra: a first-order operator, the class of functions it annihilates, and a construction that produces those functions from holomorphic functions of one complex variable. This article develops that theory for $\mathbb{H}$, whose definite norm makes it the classical and unobstructed case. It is the quaternion member of the family's Fueter-theory pair; its counterpart is the biquaternion case, where the indefinite form introduces the null cone and the imaginary units are no longer a sphere. Here the imaginary units form the sphere $S^2$, the only singularity of the theory is the origin, and the Fueter construction holds in the form Fueter gave it.
+Fueter theory is the four-variable function theory attached to the quaternion algebra: a first-order operator, the class of functions it annihilates, and a construction that produces those functions from holomorphic functions of one complex variable. This article develops that theory for $\mathbb{H}$, whose definite norm makes it the classical and unobstructed case. Here the imaginary units form the sphere $S^2$, the only singularity of the theory is the origin, and the Fueter construction holds in the form Fueter gave it.
 
-The article uses *Quaternion Regular Functions* for the Cauchy–Riemann operator and its conjugate, the regularity system, harmonicity and the Cauchy integral formula; *Quaternion Roots of Minus One* for the sphere of imaginary units; *Quaternion Special Functions* for the exponential; *Quaternion Integration* for the fundamental solution and the mean value property; and *Clifford Algebras in Finite Dimensions* for the Clifford identifications. It does not re-derive the Cauchy formula, which belongs to *Quaternion Regular Functions*. The Clifford analysis referred to below is the function theory of the Cauchy–Riemann operator on the even Clifford algebra; the biquaternion comparison is *Fueter Theory for Biquaternions*.
+The article uses *Quaternion Regular Functions* for the Cauchy–Riemann operator and its conjugate, the regularity system, harmonicity and the Cauchy integral formula; *Quaternion Roots of Minus One* for the sphere of imaginary units; *Quaternion Special Functions* for the exponential; *Quaternion Integration* for the fundamental solution and the mean value property; and *Clifford Algebras in Finite Dimensions* for the Clifford identifications. It does not re-derive the Cauchy formula, which belongs to *Quaternion Regular Functions*.
 
 The corpus's default base is a commutative ring with identity; the analysis requires the real numbers, so domains are taken in $\mathbb{R}^4$ and functions are quaternion-valued.
 
@@ -235,28 +235,13 @@ $$
 
 gives every Fueter-regular function on $B(0,R)$ a normally convergent expansion $F = \sum_{k\geq0}F_k$ with $F_k\in\mathcal{M}_k$, the four-variable analogue of the Taylor series of one complex variable.
 
-## Relation to the Biquaternion Theory and Clifford Analysis
-
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries Fueter theory on its quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and when the values are taken in $\mathbb{H}$ rather than in $\mathbb{B}$ that theory is exactly the theory of this article: same operator, same regularity, same Fueter construction. The quaternion case is therefore the real-coefficient case of the biquaternion theory, and it is the case in which no obstruction appears.
-
-| Feature | Quaternion case $\mathbb{H}$ | Biquaternion case $\mathbb{B}$ |
-|---|---|---|
-| Norm | definite | indefinite |
-| Imaginary units | the sphere $S^2$ of pure unit quaternions | the larger family of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, not a sphere |
-| Slice structure | a single sphere of slices | one slice selected at a time from a non-spherical root set |
-| Singularity of the Cauchy theory | the origin only | the null quadric, real dimension $6$ |
-| Ellipticity of the Fueter operator | everywhere for real covectors | fails over $\mathbb{C}$ |
-| Fueter construction | Fueter's theorem, exponent one | same on $\mathbb{H}_{\mathbb{B}}$; open on the full algebra |
-
-The relation to Clifford analysis is the identification $\mathbb{H}\cong\mathrm{Cl}^0_{0,3}$ of *Clifford Algebras in Finite Dimensions*: Fueter-regular functions are the monogenic functions of the even Clifford algebra in three dimensions, and the biquaternion theory is the monogenic theory of the complexified even Clifford algebra $\mathrm{Cl}^0_{1,3}$. The Fueter–Sce theorem is the general statement of that correspondence for odd $n$, of which the quaternion case $n = 3$ is the first non-trivial instance. Because the quaternion norm is definite, the Clifford analysis here is elliptic throughout, and the only singularity of the Cauchy theory is the origin.
-
 ## Summary
 
 The Fueter operator $D = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar D = \partial_0-\mathbf{D}$ factor the four-dimensional Laplacian, $D\bar D = \bar DD = \Delta_4$, and on a slice $\mathbb{C}_I$ reduce to the classical operator $\partial_{q_0}+I\partial_\rho$. Fueter-regular functions, the solutions of $DF = 0$, satisfy the quaternionic Cauchy–Riemann system $\partial_0F_0 = \mathrm{div}\,\mathbf{F}$, $\partial_0\mathbf{F} = -\mathrm{grad}\,F_0-\mathrm{rot}\,\mathbf{F}$; left- and right-regularity differ only in the sign of the curl and coincide for axially symmetric functions. The system is elliptic, and every regular function is harmonic, hence real-analytic and subject to the mean value property, the maximum principle, Liouville's theorem and the Cauchy estimates, with no exceptional set. The system also admits a **Debye-type reformulation**, in which each component is expressed through its own radial derivative, the $q_0$-derivative of the radius contracted with the others, and the components of $\mathbf{q}\times\nabla$ of the others; the four relations are the radius contractions of the four component equations, so they hold identically for a regular function, and in one complex variable the same pair of identities is equivalent to the Cauchy–Riemann relations.
 
 The Fueter construction sends a holomorphic $f_0$ to $F = \Delta_4\tilde f_0 = 2u_\rho/\rho+\hat{\mathbf{q}}(2v_\rho/\rho-2v/\rho^2)$, which is both left- and right-regular; it is injective exactly on holomorphic functions whose Taylor coefficients vanish to order two, with the affine functions as kernel. The imaginary units of $\mathbb{H}$ form the two-sphere $S^2$, so that every non-real quaternion has a unique slice representation $\tilde q = q_0+I\rho$, and the axial representation $F = A(q_0,\rho)+\hat{\mathbf{q}}B(q_0,\rho)$ reduces regularity to $\partial_0A = \partial_\rho B+2B/\rho$, $\partial_0B = -\partial_\rho A$, with $\Delta_4A = 0$ and $\Delta_4B = 2B/\rho^2$. The Fueter–Sce theorem extends the construction to odd $n$ with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension.
 
-Regular functions have the induced series and the monogenic Taylor expansion of the Fischer decomposition, while slice-regular series form the distinct class the construction converts into regular functions. The quaternion case is the real-coefficient case of the biquaternion Fueter theory; the biquaternion case differs through the indefiniteness of the norm, the non-spherical root set, the null quadric obstruction, and the failure of ellipticity over $\mathbb{C}$. In Clifford terms, $\mathbb{H}\cong\mathrm{Cl}^0_{0,3}$, and this article treats the elliptic classical instance of the Fueter–Sce correspondence.
+Regular functions have the induced series and the monogenic Taylor expansion of the Fischer decomposition, while slice-regular series form the distinct class the construction converts into regular functions. In Clifford terms, $\mathbb{H}\cong\mathrm{Cl}^0_{0,3}$, and this article treats the elliptic classical instance of the Fueter–Sce correspondence.
 
 ## Summary of Notation
 
@@ -279,7 +264,6 @@ Regular functions have the induced series and the monogenic Taylor expansion of 
 | $\tilde f_0$, $\tau(f_0) = \Delta_4\tilde f_0$ | Axial extension of a holomorphic $f_0$ and its Fueter-induced regular function |
 | $\mathcal{P}_k$, $\mathcal{M}_k$ | Homogeneous polynomials of degree $k$; monogenic ones; Fischer decomposition |
 | $\mathrm{Cl}^0_{0,3}\cong\mathrm{Cl}_{0,2}\cong\mathbb{H}$ | Clifford identifications of the quaternion algebra |
-| $\mathbb{B}$, $\mathbb{H}_{\mathbb{B}}$ | Biquaternion algebra and its quaternion subspace, the complexified case |
 
 ## Further Reading
 

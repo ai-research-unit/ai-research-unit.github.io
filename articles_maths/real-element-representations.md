@@ -267,6 +267,5 @@ The article also records the standard constructions on representations: the dual
 - Charles C. Pinter, *A Book of Abstract Algebra* (Dover, 2010), for the representation theory of fields.
 - Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for the general theory of modules over rings.
 - Serge Lang, *Algebra* (Springer, 2002), for the structure theory of semisimple algebras.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - Walter Rudin, *Real and Complex Analysis* (McGraw-Hill, 1987), for the analytic background.
 

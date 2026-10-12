@@ -105,7 +105,7 @@ $$
 v \mapsto q v q^{-1}.
 $$
 
-In the quaternion algebra the unit group acts on the pure imaginary subspace this way, and this is how $SO(3)$ arises from $\mathbb{H}$. In $\mathbb{C}$ the sandwich is vacuous.
+In $\mathbb{C}$ the sandwich is vacuous.
 
 **Proposition.** Let $u \in U(1)$ and $A \in \mathbb{C}$. Then $u A u^{-1} = A$. Consequently the conjugation action of $U(1)$ on $\mathbb{C}$ is trivial, and the algebra has no nontrivial inner automorphism.
 

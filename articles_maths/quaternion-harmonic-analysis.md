@@ -5,11 +5,11 @@
 
 This article introduces harmonic analysis on the quaternion space as the study of the Fourier transform, convolution, and the function spaces on which they act, with the non-commutative structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape. Two quaternion Fourier transforms are treated: the transform on $\mathbb{H} \cong \mathbb{R}^4$ with a single unit in the kernel, and the two-dimensional transform of signal and image processing, which assigns one unit to each variable.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers, and the complexification is mentioned only where it clarifies the structure.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers.
 
 Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
-**Remark.** In the biquaternion case the Fourier kernel is obstructed on the null cone, where the norm vanishes and the symbol of the transform is not invertible. Here the quaternion norm is positive definite, every non-zero $\xi$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.
+Here the quaternion norm is positive definite, every non-zero $\xi$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.
 
 ## The Additive Group and Its Characters
 
@@ -621,4 +621,3 @@ The section on the structure principle states what organises the subject: whenev
 - Todd A. Ell, "Quaternion-Fourier transforms for analysis of two-dimensional linear time-invariant partial differential systems", in *Proceedings of the 32nd IEEE Conference on Decision and Control* (1993), 1830–1841, for the two-dimensional transform with one unit per variable.
 - S. Georgiev, J. Morais, K. I. Kou, and W. Sprößig, "Bochner–Minlos theorem and quaternion Fourier transform", in *Quaternion and Clifford–Fourier Transforms and Wavelets*, Trends in Mathematics (Springer, 2013), 105–120, for the closed form and the reversal identities of that transform, for its decay estimate, and for the measure-theoretic direction recorded above.
 - Salomon Bochner, "Monotone Funktionen, Stieltjessche Integrale und harmonische Analyse", *Mathematische Annalen* **108** (1933), 378–410, and R. A. Minlos, *Trudy Moskovskogo Matematicheskogo Obshchestva* **8** (1959), 497–518, for the classical Bochner–Minlos theorem.
-

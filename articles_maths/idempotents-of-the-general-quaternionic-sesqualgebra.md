@@ -171,7 +171,7 @@ because its square is the central scalar $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ (*I
 
 **Proof.** The four rows are the propositions above and the statement of the classification theorem; the last column is the central-square computation for each family, $c = 0$ for the nontrivial idempotents of the plain and of the sibling sesquilinear product and $c = 1$ for the family. The table is the idempotent row of *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*, read with the central square attached to each entry.
 
-**Remark.** The table is the reason the idempotent problem is the sharpest of the four element problems. The zero divisors are one set for all four general products (*The Annihilating Elements of the Four General Products*, being written in parallel), and the square-zero elements are already two different problems for the four; but the idempotents are four sets, no two of which agree beyond $0$ and $e_0$, and the fourth alone is a family of units of the plain algebra.
+**Remark.** The table is the reason the idempotent problem is the sharpest of the four element problems. The zero divisors are one set for all four general products (*The Annihilating Elements of the Twelve Structures*, being written in parallel), and the square-zero elements are already two different problems for the four; but the idempotents are four sets, no two of which agree beyond $0$ and $e_0$, and the fourth alone is a family of units of the plain algebra.
 
 ## The Family of Idempotents
 

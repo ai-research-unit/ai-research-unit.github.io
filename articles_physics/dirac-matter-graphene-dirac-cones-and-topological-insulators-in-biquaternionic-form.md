@@ -107,7 +107,7 @@ In three dimensions the surface carries a two-dimensional gapless **Dirac cone**
 
 ## Klein Tunnelling in Graphene
 
-Graphene's massless Dirac electrons show the Klein effect of the companion article. A **$p$–$n$ junction** — a region where the Fermi level is shifted from one side of the Dirac point to the other — is an electrostatic step for the Dirac cone, and the massless limit of the Klein calculation gives unit transmission for normal incidence regardless of the step height. The physical interpretation is that the electron crosses by briefly becoming a hole inside the barrier, so it never occupies a classically forbidden state; the framework's interpretation, from the companion article, is that the step shifts the mass shell and exchanges the two frequency branches. Normal-incidence transmission in graphene $p$–$n$ junctions is the clean experimental instance of the effect.
+Graphene's massless Dirac electrons show the Klein effect of the companion article. A **$p$–$n$ junction** — a region where the Fermi level is shifted from one side of the Dirac point to the other — is an electrostatic step for the Dirac cone, and the massless limit of the Klein calculation gives unit transmission for normal incidence regardless of the step height. The **physical interpretation** is that the electron crosses by briefly becoming a hole inside the barrier, so it never occupies a classically forbidden state; the framework's interpretation, from the companion article, is that the step shifts the mass shell and exchanges the two frequency branches. Normal-incidence transmission in graphene $p$–$n$ junctions is the clean experimental instance of the effect.
 
 ## The Biquaternion Reading
 

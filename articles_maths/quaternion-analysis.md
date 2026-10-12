@@ -5,7 +5,7 @@
 
 This article introduces quaternion analysis as the study of differentiable functions of a quaternion variable. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers, and the complexification is mentioned only where it clarifies the structure.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers.
 
 Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
@@ -523,7 +523,7 @@ The differences between quaternion analysis and complex analysis are consequence
 | Conformality | yes | no |
 | Factor $2\pi i$ | $2\pi i$ | $2\pi^2$ |
 
-The complex case is the case $n = 2$ of the general theory, and the quaternion case is the case $n = 4$. The general theory is Clifford analysis, and the pattern is the same: the biquaternionic Cauchy–Riemann operator replaces the classical Cauchy–Riemann operator, the monogenic functions replace the holomorphic functions, and the Cauchy integral formula holds with the appropriate kernel.
+The complex case is the case $n = 2$ of the general theory, and the quaternion case is the case $n = 4$.
 
 ## Summary
 
@@ -560,4 +560,3 @@ The article develops what that notion supports: contour integrals along paths, p
 - John Ryan, *Clifford Algebras in Analysis and Related Topics* (CRC Press, 1996), for the analytic theory.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton, 1989), for the Clifford-algebra and spinor background of the operator.
-

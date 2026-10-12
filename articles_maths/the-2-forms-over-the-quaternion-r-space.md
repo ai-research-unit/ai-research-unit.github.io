@@ -10,10 +10,6 @@ $$
 
 The **plain form** $B$ and the **quaternion form** $N$ are the scalar parts of the plain product and of the quaternionic product, and on the coordinates they are $B(\tilde p,\tilde q)=p_0q_0-(\mathbf p,\mathbf q)$ and $N(\tilde p,\tilde q)=p_0q_0+(\mathbf p,\mathbf q)$. The two forms are symmetric and $\mathbb{R}$-bilinear, both are nondegenerate, and they differ in **signature**: $B$ has signature $(1,3)$, the form of the quaternion coordinates, and $N$ is positive definite with the identity Gram matrix.
 
-This article defines the two forms, writes their Gram matrices in the unit basis, gives their polarisation and their associated quadratic forms, computes their radicals and their isotropic elements, and records the **refusal of the sesquilinear forms**: a form with a conjugate-linear slot needs a nontrivial involution of the base, and $\mathbb{R}$ has none, so the Hermitian family of the biquaternion chapter has no member over $\mathbb{R}$.
-
-The article assumes the two products from *The Two General Products of the Quaternion $\mathbb{R}$ Space*, the article preceding this one; the two algebraic norms read off the forms are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category; the restriction of the two forms to the two remarkable subspaces is *Remarkable Subspaces and the Two Forms*, below this article in this category; and the four forms of the biquaternion chapter, of which these two are the reading over $\mathbb{R}$, are *The Four Pairings of the Biquaternion Algebra*.
-
 **Conventions.** Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, $(\mathbf p,\mathbf q)=\sum_kp_kq_k$ is the dot product of the vector parts, $\mathrm{Sc}$ is the scalar part, $\tilde q^{\natural}=q_0e_0-\mathbf q$ is the quaternion conjugation, and $N(\tilde p)=\lvert\tilde p\rvert^2=\tilde p^{\natural}\tilde p$ is the quaternion norm of the element. The unit basis is $e_0,e_1,e_2,e_3$.
 
 ## The Two Forms
@@ -90,19 +86,13 @@ So neither form has a nonzero annihilator, and the two are nondegenerate in the 
 
 *Proof.* $Q_N$ is the sum of four squares, so it vanishes only at the origin. $Q_B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ vanishes exactly when $p_0^2=\lvert\mathbf p\rvert^2$, a single homogeneous quadratic equation in the four coordinates, hence a cone of real dimension three; it contains the elements $e_0\pm e_1$, whose scalar coefficient has the same square as the vector part, and it is not a subspace, a sum of two isotropic elements being isotropic only when they are proportional.
 
-So the plain form is indefinite and its null set is the light cone of the quaternion coordinates, of real dimension three; the quaternion form is definite and its null set is the origin alone. An isotropic element $\tilde p$ has $B(\tilde p,\tilde p)=0$, so its square $\tilde p^2=B(\tilde p)e_0+2p_0\mathbf p=2p_0\mathbf p$ is pure; the isotropic elements are the elements whose square is pure, and they are **not** square-zero and **not** zero divisors, since $\mathbb{H}$ is a division algebra in which $\tilde p^2=0$ forces $\tilde p=0$. The isotropic cone is thus a genuine cone of units, in contrast with the biquaternion case, where the null cone of the quaternion form is the zero-divisor set; the restriction of the two forms to the two remarkable subspaces, where neither carries a nonzero isotropic element, is *Remarkable Subspaces and the Two Forms*, below this article in this category.
-
-## The Refusal of the Sesquilinear Forms
-
-A **sesquilinear** form has one slot linear and the other conjugate-linear, conjugate-linearity being measured against an involution of the base ring. Over $\mathbb{R}$ the only involution is the identity, so no slot of a form can be conjugate-linear and there is no sesquilinear form on a real vector space other than the bilinear ones.
-
-The Hermitian form of the biquaternion chapter, $H(\tilde P,\tilde Q)=\tilde P\tilde Q^{*}$ with the star conjugation, is therefore refused over $\mathbb{R}$: its second slot is conjugate-linear in the complex coefficients, and there are no complex coefficients. Together with it go the whole sesquilinear family, the conjugate exchange and the complex conjugation of the coefficients; what remains of the four forms of the biquaternion chapter is the two bilinear ones, $B$ and $N$, named here. The four forms of that chapter, with their Gram matrices, their pairings and their operator theory, are *The Four Pairings of the Biquaternion Algebra*; the reading over $\mathbb{R}$ of the pair of bilinear ones gives the two forms of this article, and the comparison is recorded in *The Complexification and the Effect of the Change of Scalars on the Quaternions*, below this article in this category.
+So the plain form is indefinite and its null set is the light cone of the quaternion coordinates, of real dimension three; the quaternion form is definite and its null set is the origin alone. An isotropic element $\tilde p$ has $B(\tilde p,\tilde p)=0$, so its square $\tilde p^2=B(\tilde p)e_0+2p_0\mathbf p=2p_0\mathbf p$ is pure; the isotropic elements are the elements whose square is pure, and they are **not** square-zero and **not** zero divisors, since $\mathbb{H}$ is a division algebra in which $\tilde p^2=0$ forces $\tilde p=0$.
 
 ## Summary
 
 The quaternion space carries two bilinear forms, the plain form $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\mathbf p,\mathbf q)$ and the quaternion form $N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\mathbf p,\mathbf q)$, both symmetric and nondegenerate, differing by twice the dot product of the vector parts. Their Gram matrices in the unit basis are $\operatorname{diag}(1,-1,-1,-1)$, of signature $(1,3)$, and $I_4$, of signature $(4,0)$; their associated quadratic forms are $Q_B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$, indefinite, and $Q_N(\tilde p)=\lvert\tilde p\rvert^2$, positive definite; and each form is recovered from its quadratic form by polarisation.
 
-The plain form has the isotropic cone $p_0^2=\lvert\mathbf p\rvert^2$, of real dimension three, and the quaternion form has no isotropic element. Both radicals are $\{0\}$. The sesquilinear forms are refused, the base $\mathbb{R}$ having no nontrivial involution, so the two forms here are the reading over $\mathbb{R}$ of the two bilinear forms of the biquaternion chapter.
+The plain form has the isotropic cone $p_0^2=\lvert\mathbf p\rvert^2$, of real dimension three, and the quaternion form has no isotropic element. Both radicals are $\{0\}$.
 
 ## Summary of Notation
 
@@ -116,7 +106,6 @@ The plain form has the isotropic cone $p_0^2=\lvert\mathbf p\rvert^2$, of real d
 | $f(\tilde p,\tilde q)=\tfrac12(Q_f(\tilde p+\tilde q)-Q_f(\tilde p)-Q_f(\tilde q))$ | the polarisation identity |
 | $Q_B(\tilde p)=0$: $p_0^2=\lvert\mathbf p\rvert^2$ | the isotropic cone of the plain form |
 | $Q_N(\tilde p)>0$ for $\tilde p\neq0$ | the anisotropy of the quaternion form |
-| $H(\tilde P,\tilde Q)=\tilde P\tilde Q^{*}$ refused | the sesquilinear family belongs to the biquaternion chapter |
 
 ## Further Reading
 
@@ -124,4 +113,4 @@ The plain form has the isotropic cone $p_0^2=\lvert\mathbf p\rvert^2$, of real d
 - Theodore Shifrin, *Abstract Algebra: A Geometric Approach* (Prentice Hall, 1996), for bilinear forms, their Gram matrices, their signatures and their polarisation.
 - Serge Lang, *Algebra* (Springer, Graduate Texts in Mathematics 211, 3rd ed. 2002), for symmetric bilinear forms, nondegeneracy, the radical and the isotropic cone.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the trace form and the norm form of the quaternion algebra.
-- Israel Nathan Herstein, *Topics in Algebra* (Wiley, 2nd ed. 1975), for the trace of an element, its polarisation and the sesquilinear forms of a ring with involution.
+- Israel Nathan Herstein, *Topics in Algebra* (Wiley, 2nd ed. 1975), for the trace of an element and its polarisation.

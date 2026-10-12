@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The split-complex algebra $\mathbb{D}$ acting on itself by left multiplication is the **left regular representation**, and writing that action in the basis $\{1, j\}$ gives the **regular matrix** of a split-complex number. This article develops that matrix in full: the Cayley matrix of multiplication by $A = a+j a'$, its identification with the algebra of $2\times 2$ real matrices of hyperbolic type, its multiplicativity, its determinant as the norm, its diagonalisation by the idempotent basis, its relation to the regular representation of the biquaternion algebra, and its relation to the hyperbolic rotations of the geometry slot. It is the two-dimensional counterpart of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, and it is the second of the three Representation articles, after *Split-Complex Element Representations* and before *Split-Complex Two-Component Element Representation*.
+The split-complex algebra $\mathbb{D}$ acting on itself by left multiplication is the **left regular representation**, and writing that action in the basis $\{1, j\}$ gives the **regular matrix** of a split-complex number. This article develops that matrix in full: the Cayley matrix of multiplication by $A = a+j a'$, its identification with the algebra of $2\times 2$ real matrices of hyperbolic type, its multiplicativity, its determinant as the norm, its diagonalisation by the idempotent basis, and its relation to the hyperbolic rotations of the geometry slot. It is the second of the three Representation articles, after *Split-Complex Element Representations* and before *Split-Complex Two-Component Element Representation*.
 
 The general representation theory is owned by *Split-Complex Element Representations*; here the regular representation alone is studied, in its matrix form, with the multiplication operator as the object. The word *representation* is used in both senses at once, the concrete realization and the technical action of an algebra on a vector space, because the action is the object of study. The article owns the $2\times2$ regular matrix, the left and right multiplication operators and the fact that they coincide, the identification $\mathbb{D}\cong\{aI+a'J\}$, the determinant identity $\det \mathsf{M}_2(A) = N(A)$, the diagonalisation in the idempotent basis, the centralizer statement, and the identification of the unit-norm subgroup with the hyperbolic rotations. It does not treat the classification of all representations, which belongs to *Split-Complex Element Representations*; it does not treat the polar parametrisation of the unit-norm group in its own right, which belongs to *Split-Complex Polar Element Representation*; and it uses, but does not reprove, the idempotent decomposition of *Split-Complex Idempotents and Projections*.
 
@@ -104,7 +104,7 @@ $$
 
 **Proof.** This is the commutativity of $\mathbb{D}$: $AB = BA$ for all $B$, so the two endomorphisms agree.
 
-This is a systematic difference from the biquaternion case, where the left and right regular matrices are distinct and are obtained from one another by transposition and the reversal of the coefficients; here there is no distinction to make, and the transposition identity of the four-dimensional article degenerates to the statement that the single regular matrix is symmetric. The vanishing of the commutator of the two actions is exactly the commutativity of the algebra.
+Here there is no distinction to make between the left and right regular matrices, and the transposition identity degenerates to the statement that the single regular matrix is symmetric. The vanishing of the commutator of the two actions is exactly the commutativity of the algebra.
 
 ## The Image: $2\times2$ Real Matrices of Hyperbolic Type
 
@@ -216,7 +216,7 @@ $$
 \mathsf{M}_2(\Pi_1) = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} = E_{11}, \qquad \mathsf{M}_2(\Pi_2) = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = E_{22}.
 $$
 
-The corresponding abstract statement — that $\Pi_{1,2}$ are the diagonal matrix units of $\mathbb{D}$, with the multiplication rule $\Pi_1^2=\Pi_1$, $\Pi_2^2=\Pi_2$, $\Pi_1\Pi_2=0$, $\Pi_1+\Pi_2=1$, and that no off-diagonal matrix units exist because the algebra is commutative — is the content of *Split-Complex Ideals and Peirce Decomposition*. In the matrix model it reads as the diagonalisation just recorded: the image is a direct sum of two diagonal blocks, and in the biquaternion algebra the same decomposition splits $\mathbb{B}$ into four blocks of complex dimensions $1+1+1+1$ with all matrix units present, whereas here only two blocks survive, of real dimension $1$ each.
+The corresponding abstract statement — that $\Pi_{1,2}$ are the diagonal matrix units of $\mathbb{D}$, with the multiplication rule $\Pi_1^2=\Pi_1$, $\Pi_2^2=\Pi_2$, $\Pi_1\Pi_2=0$, $\Pi_1+\Pi_2=1$, and that no off-diagonal matrix units exist because the algebra is commutative — is the content of *Split-Complex Ideals and Peirce Decomposition*. In the matrix model it reads as the diagonalisation just recorded: the image is a direct sum of two diagonal blocks, whereas here only two blocks survive, of real dimension $1$ each.
 
 ## The Unit-Norm Subgroup and the Hyperbolic Rotations
 
@@ -260,35 +260,13 @@ $$
 
 and equality gives $q = r$ and $p = s$. So $C = \begin{pmatrix} p & q \\ q & p \end{pmatrix} \in M_2(\mathbb{D})$. Conversely every matrix in $M_2(\mathbb{D})$ commutes with $J$, because $M_2(\mathbb{D})$ is commutative.
 
-So $M_2(\mathbb{D})$ is its own centralizer and its own bicommutant, a **maximal commutative subalgebra** of $M_2(\mathbb{R})$ of dimension two. This is the degeneration of the biquaternion double centralizer statement, where the centralizer of $M_2(\mathbb{B})$ is the image of the right regular representation $\mathsf{M}_2^{R}(\mathbb{B})$, a distinct copy of complex dimension four that commutes with $M_2(\mathbb{B})$; here the two copies coincide, $\mathsf{M}_2^{R}(\mathbb{D}) = M_2(\mathbb{D})$, and the algebra is its own centralizer because it is already commutative.
-
-## The Real Form and the Relation to the Biquaternion Case
-
-The image $M_2(\mathbb{D})$ is defined over $\mathbb{R}$ and consists of the real symmetric matrices of the special form $aI+a'J$. Under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ the regular representation of $\mathbb{B}$ is the left action of $M_2(\mathbb{C})$ on the four-real-dimensional space $\mathbb{B}$, and its matrix is $4\times4$ over $\mathbb{C}$. The split-complex case is the two-dimensional real shadow of that construction:
-
-| feature | $\mathbb{B}$ | $\mathbb{D}$ |
-|---|---|---|
-| dimension over the base field | $4$ over $\mathbb{C}$ | $2$ over $\mathbb{R}$ |
-| regular matrix | $4\times4$, complex, one sign per entry | $2\times2$, real, symmetric |
-| left vs right | $\mathsf{M}_2^{R}(\tilde{Q})$ distinct from $\mathsf{M}_2(\tilde{Q})$, the two copies commuting | $\mathsf{M}_2 = \mathsf{M}_2^{R}$ (commutativity) |
-| determinant of the regular matrix | $N(\tilde{Q})^2$ | $N(A) = a^2-a'^2$ |
-| eigenvalues | the roots of a complex quartic | the two real numbers $A_\pm$ |
-| diagonalisation | block diagonalisation into two minimal ideals | diagonalisation by $P$ into $\mathbb{R}\oplus\mathbb{R}$ |
-| centralizer | $\mathsf{M}_2^{R}(\mathbb{B})$, a distinct copy | the algebra itself |
-
-The regular representation of $\mathbb{B}$ is reducible, splitting into the two minimal left ideals; the regular representation of $\mathbb{D}$ is likewise reducible, splitting into the two idempotent lines $I_1 = \mathbb{R}\Pi_1$ and $I_2 = \mathbb{R}\Pi_2$:
-
-$$
-\mathbb{D} = I_1 \oplus I_2, \qquad I_1 = \mathbb{R}\Pi_1, \quad I_2 = \mathbb{R}\Pi_2,
-$$
-
-on each of which $\mathsf{M}_2(A)$ acts by the scalar $A_+$ or $A_-$. So the two-dimensional regular representation is the direct sum of the two one-dimensional representations $A \mapsto A_+$ and $A \mapsto A_-$, and it is completely reducible, as a representation of a semisimple algebra must be.
+So $M_2(\mathbb{D})$ is its own centralizer and its own bicommutant, a **maximal commutative subalgebra** of $M_2(\mathbb{R})$ of dimension two. Here the two copies coincide, $\mathsf{M}_2^{R}(\mathbb{D}) = M_2(\mathbb{D})$, and the algebra is its own centralizer because it is already commutative.
 
 ## Summary
 
 The left regular representation $\mathsf{M}_2$ of $\mathbb{D}$ sends $A$ to the endomorphism $B \mapsto AB$ of the coefficient space $\mathbb{D}$, with matrix $\begin{pmatrix} a & a' \\ a' & a \end{pmatrix}$ in the basis $\{1, j\}$. The map is an algebra homomorphism and a faithful embedding, so $\mathbb{D}$ is isomorphic to the algebra $\{aI+a'J\}$ of real $2\times2$ matrices with $J^2 = I$, the hyperbolic analogue of the matrix model of $\mathbb{C}$. Because $\mathbb{D}$ is commutative the right regular representation coincides with the left, and the regular matrix is symmetric.
 
-The determinant of the regular matrix is the norm, $\det \mathsf{M}_2(A) = a^2-a'^2 = N(A)$, and the trace is $2a$; multiplicativity of the determinant gives multiplicativity of the norm, and invertibility of the matrix is the unit criterion. The characteristic polynomial is $(\lambda - A_+)(\lambda - A_-)$, so the eigenvalues are the idempotent coordinates; the idempotent basis diagonalises the whole algebra simultaneously, $\mathsf{M}_2(A) = \operatorname{diag}(a+a', a-a')$ up to the change of basis $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$, and the regular representation splits as the direct sum of the two one-dimensional representations $A \mapsto A_\pm$; the idempotents become the diagonal matrix units $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, and no off-diagonal matrix unit exists. The unit-norm elements form the determinant-one subgroup, the hyperbolic rotations $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$, and the centralizer of the image is the image itself. The regular matrix is the two-dimensional real shadow of the $4\times4$ complex regular matrix of the biquaternion algebra.
+The determinant of the regular matrix is the norm, $\det \mathsf{M}_2(A) = a^2-a'^2 = N(A)$, and the trace is $2a$; multiplicativity of the determinant gives multiplicativity of the norm, and invertibility of the matrix is the unit criterion. The characteristic polynomial is $(\lambda - A_+)(\lambda - A_-)$, so the eigenvalues are the idempotent coordinates; the idempotent basis diagonalises the whole algebra simultaneously, $\mathsf{M}_2(A) = \operatorname{diag}(a+a', a-a')$ up to the change of basis $P = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$, and the regular representation splits as the direct sum of the two one-dimensional representations $A \mapsto A_\pm$; the idempotents become the diagonal matrix units $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$, and no off-diagonal matrix unit exists. The unit-norm elements form the determinant-one subgroup, the hyperbolic rotations $R_j(t) = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}$, and the centralizer of the image is the image itself.
 
 ## Summary of Notation
 

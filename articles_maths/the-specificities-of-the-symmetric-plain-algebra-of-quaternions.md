@@ -74,7 +74,7 @@ $$
 
 *Proof.* The square of the block is the plain square, so the equation is $\tilde\pi^2=\tilde\pi$. The vector part gives $(2\pi_0-1)\boldsymbol{\pi}=0$, so either $\boldsymbol{\pi}=0$, and then $\pi_0^2=\pi_0$, giving $\tilde\pi\in\{0,e_0\}$, or $\pi_0=\tfrac12$, and then the scalar part gives $|\boldsymbol{\pi}|^2=-\tfrac14$, which has no real solution.
 
-**Corollary (the class is two-point).** The idempotent class is a two-point class, the two trivial idempotents; the block has **no nontrivial idempotent**, and therefore no projector calculus. In the biquaternion block the idempotents are the many elements $\tfrac12(e_0+\mathbf u)$ built from the pure roots of $+e_0$; over $\mathbb{R}$ a pure square is $-|\mathbf u|^2e_0$, the negative of what the construction needs, and the construction never closes.
+**Corollary (the class is two-point).** The idempotent class is a two-point class, the two trivial idempotents; the block has **no nontrivial idempotent**, and therefore no projector calculus.
 
 ### The Nilpotents and the Square-Zero Elements
 

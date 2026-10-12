@@ -259,7 +259,7 @@ is closed".
 ## The Square Lands in the Informational Sector
 
 The square of a material element is not only central; it lands on one side of the central line, and the
-side is the informational one. This is a one-line fact with a physical interpretation, and it is stated here
+side is the informational one. This is a one-line fact with a **physical interpretation**, and it is stated here
 because it is the concrete coupling the two sectors of the framework otherwise lack.
 
 **Proposition.** For $\tilde Q\in\mathbb{M}_-$ the norm $N(\tilde Q)$ is **real**, and

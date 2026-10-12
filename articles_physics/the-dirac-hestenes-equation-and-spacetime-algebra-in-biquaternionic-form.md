@@ -82,7 +82,7 @@ $$
 \psi = R\left(\rho e^{i\beta}\right)^{1/2},
 $$
 
-where $R$ is a unimodular even multivector — a **rotor**, i.e. a Lorentz transformation — $\rho\ge0$ is a scalar **density**, and $\beta$ is a scalar angle (the Yvon–Takabayasi angle, zero for a pure electron state). The counting is exact: $R$ has the six parameters of a Lorentz transformation, $\rho$ and $\beta$ add two, giving eight real components, the dimension of a Dirac spinor. The physical interpretation is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
+where $R$ is a unimodular even multivector — a **rotor**, i.e. a Lorentz transformation — $\rho\ge0$ is a scalar **density**, and $\beta$ is a scalar angle (the Yvon–Takabayasi angle, zero for a pure electron state). The counting is exact: $R$ has the six parameters of a Lorentz transformation, $\rho$ and $\beta$ add two, giving eight real components, the dimension of a Dirac spinor. The **physical interpretation** is that the electron's spin and its kinematic frame are rotations in spacetime, and the density is a probability density.
 
 ### The current and the bilinears
 

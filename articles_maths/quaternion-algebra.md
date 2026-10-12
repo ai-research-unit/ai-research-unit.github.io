@@ -59,7 +59,6 @@ $$
 
 The notation $e_1, e_2, e_3$ is chosen deliberately, and it replaces the classical notation $i, j, k$ used in the older literature. The reason is that the symbols $i, j, k$ collide with other standard notations:
 
-- The symbol $i$ is universally used for the scalar imaginary unit of the complex numbers, with $i^2 = -1$. In the quaternion algebra, the unit $e_1$ also satisfies $e_1^2 = -e_0$, so writing it as $i$ makes it visually indistinguishable from the scalar imaginary. This collision becomes acute when the quaternion algebra is complexified: the biquaternion algebra $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ contains both the scalar imaginary $i$ and the quaternion unit $e_1$, and they are different elements. Writing both as $i$ makes the algebra unreadable.
 - The symbol $j$ is universally used as an index, as in $a_j$, $e_j$, $q_j$, and so on. Writing the quaternion unit as $j$ makes every expression with an index ambiguous.
 - The symbol $k$ is also used as an index, particularly in sums over three variables.
 
@@ -258,7 +257,7 @@ $$
 
 This is the same decomposition as above, written in terms of the eigenspaces of the conjugation.
 
-**Remark.** The biquaternion algebra carries three decompositions — the quaternion, the Hermitian and the centre–vector decomposition — because it has a central imaginary unit and a complex conjugation beside the quaternion conjugation. Here the centre of $\mathbb{H}$ is the real line and the only involution is quaternion conjugation, so the conjugate decomposition above is the only one, and the scalar–vector decomposition within it is the single decomposition from which the quaternion norm is read. The quaternion norm, its polarisation, the Hermitian form and the inner product are a form and a distance: they are developed in *Quaternion Norm and Invertibility*, in the topology group, and are only named here.
+Here the centre of $\mathbb{H}$ is the real line and the only involution is quaternion conjugation, so the conjugate decomposition above is the only one, and the scalar–vector decomposition within it is the single decomposition from which the quaternion norm is read. The quaternion norm, its polarisation, the Hermitian form and the inner product are a form and a distance: they are developed in *Quaternion Norm and Invertibility*, in the topology group, and are only named here.
 
 ## The Lie Algebra Structure
 
@@ -319,12 +318,9 @@ The commutator $[p,\tilde q] = p\tilde q - \tilde q p$ gives $\mathbb{H}$ a Lie 
 | $\operatorname{Im}\mathbb{H}$ | Vector subspace, fixed-point set of $\tilde{\cdot}$ |
 | $\mathrm{SO}(3)$ | Lie algebra of rotations |
 
-
-
 ## Further Reading
 
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton, 1989), for the role of quaternions in geometry.
-

@@ -273,7 +273,7 @@ $$
 
 This is the cleanest form of the result. It says that the Lorentz four-force is, up to the constant $q\sqrt{\mu}$, the **projection of the product $\tilde{U}\tilde{F}$ onto the material sector** $\mathbb{M}_-$. No real part is taken, and no Clifford algebra outside $\mathbb{B}$ is needed.
 
-**Reading by sector.** The projection form has a transparent physical interpretation. Split the field strength into its Hermitian and anti-Hermitian parts,
+**Reading by sector.** The projection form has a transparent **physical interpretation**. Split the field strength into its Hermitian and anti-Hermitian parts,
 
 $$
 \tilde{F}^{(+)} = \tfrac{1}{2}\left(\tilde{F} + \tilde{F}^{*}\right) = i\sqrt{\epsilon}\,\mathbf{E}

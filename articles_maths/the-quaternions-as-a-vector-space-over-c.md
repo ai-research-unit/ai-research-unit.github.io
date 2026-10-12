@@ -2,32 +2,9 @@
 
 ## Introduction
 
-The quaternion algebra $\mathbb{H}$ is a four-dimensional real vector space. It can be read over $\mathbb{C}$ in two ways, and the two readings are different objects:
+The quaternion algebra $\mathbb{H}$ is a four-dimensional real vector space. It can be read over $\mathbb{C}$ by a chosen complex structure: a unit imaginary quaternion $\nu$ whose left multiplication makes $\mathbb{H}$ a two-dimensional complex vector space, a module over $\mathbb{C}_\nu=\mathbb{R}\oplus\mathbb{R}\nu$.
 
-1. **by extension of scalars**, forming the complexification $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}=\mathbb{B}$, the biquaternion algebra, of complex dimension four and real dimension eight;
-2. **by a chosen complex structure**, a unit imaginary quaternion $\nu$ whose left multiplication makes $\mathbb{H}$ a two-dimensional complex vector space, a module over $\mathbb{C}_\nu=\mathbb{R}\oplus\mathbb{R}\nu$.
-
-This article fixes the two readings, states what each gives, and refuses to develop here what belongs to the biquaternion chapter. The element, the basis and the product are those of *Quaternion Algebra*; the real reading is *The Quaternions as a Vector Space over $\mathbb{R}$*; the complexification is the subject of *The Complexification and the Effect of the Change of Scalars on the Quaternions*, below this article in this category, and of *Biquaternions as a Vector Space over $\mathbb{C}$* in the biquaternion chapter.
-
-The single caution of the article: the field $\mathbb{C}_\nu$ of the second reading is *not* the centre of $\mathbb{H}$. The centre of $\mathbb{H}$ is the scalar line $\mathbb{R}_{\mathbb{H}}$; the field $\mathbb{C}_\nu$ is a two-dimensional subalgebra, and different choices of $\nu$ give different subalgebras.
-
-## The Reading by Complexification
-
-Extending the scalars of $\mathbb{H}$ from $\mathbb{R}$ to $\mathbb{C}$ produces the **complexification**
-$$
-\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H},
-$$
-with the same four units $e_0,e_1,e_2,e_3$ and a central scalar imaginary $i$ satisfying $i^2=-1$. A general element is
-$$
-\tilde Q=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3 , \qquad Q_\mu\in\mathbb{C},
-$$
-the four coordinates now complex. The two dimensions are
-$$
-\dim_{\mathbb{C}}\mathbb{B}=4 , \qquad \dim_{\mathbb{R}}\mathbb{B}=8 ,
-$$
-the complex dimension four being the number of complex coordinates and the real dimension eight the double of it. The algebra $\mathbb{B}$ is the four-dimensional complex algebra of the biquaternion chapter, and the phrase **the complex dimension four against the real dimension four** compares it with the base space: $\mathbb{B}$ has complex dimension four, and the real dimension of the original $\mathbb{H}$ is also four. The two fours are different invariants of different spaces; a complex dimension of $\mathbb{H}$ itself is obtained only in the second reading below, and it is two.
-
-The element of $\mathbb{H}$ sits inside $\mathbb{B}$ as the element with real coordinates, and $\mathbb{H}$ is the real form of $\mathbb{B}$ fixed by the coefficientwise conjugation, as in *The Quaternions as a Vector Space over $\mathbb{R}$*. The algebra, its remarkable subspaces, its four general products and its conjugations are the material of the biquaternion chapter and are not redeveloped here; *The Complexification and the Effect of the Change of Scalars on the Quaternions*, below this article in this category, owns the functor and its effect.
+The single caution of the article: the field $\mathbb{C}_\nu$ is *not* the centre of $\mathbb{H}$. The centre of $\mathbb{H}$ is the scalar line $\mathbb{R}_{\mathbb{H}}$; the field $\mathbb{C}_\nu$ is a two-dimensional subalgebra, and different choices of $\nu$ give different subalgebras.
 
 ## The Reading by a Chosen Complex Structure
 
@@ -69,19 +46,18 @@ For the reading of the previous section, the $\mathbb{C}_\nu$-linear endomorphis
 $$
 \operatorname{End}_{\mathbb{C}_\nu}(\mathbb{H})=\{T\in\operatorname{End}_{\mathbb{R}}(\mathbb{H}):TJ=JT\}.
 $$
-In a complex basis $(e_0,\mu)$ this is the matrix ring $M_2(\mathbb{C}_\nu)$, of complex dimension four and real dimension eight. Inside it the left multiplications $L_\tilde p$ of *The Quaternions as a Vector Space over $\mathbb{R}$* occupy a distinguished part: $L_\tilde p$ is $\mathbb{C}_\nu$-linear exactly when $\tilde p$ commutes with $\nu$, that is, exactly when $\tilde p\in\mathbb{C}_\nu$, and then $L_\tilde p$ is the scalar multiplication by $\tilde p$. For $\tilde p$ outside $\mathbb{C}_\nu$ the left multiplication $L_\tilde p$ is real-linear alone. The right multiplications all commute with $J$ as well, since $R_{\tilde q}J(\tilde p)=R_{\tilde q}(\nu \tilde p)=(\nu \tilde p)\tilde q=\nu(\tilde p\tilde q)=JR_{\tilde q}(\tilde p)$ by associativity, so $R_{\tilde q}J=JR_{\tilde q}$ for every $\tilde q$; the two families sit in $\operatorname{End}_{\mathbb{C}_\nu}(\mathbb{H})$ on different footings, which is the asymmetry visible in the two slots of the product.
+In a complex basis $(e_0,\mu)$ this is the matrix ring $M_2(\mathbb{C}_\nu)$, of complex dimension four and real dimension eight. Inside it the left multiplications $L_{\tilde p}$ of *The Quaternions as a Vector Space over $\mathbb{R}$* occupy a distinguished part: $L_{\tilde p}$ is $\mathbb{C}_\nu$-linear exactly when $\tilde p$ commutes with $\nu$, that is, exactly when $\tilde p\in\mathbb{C}_\nu$, and then $L_{\tilde p}$ is the scalar multiplication by $\tilde p$. For $\tilde p$ outside $\mathbb{C}_\nu$ the left multiplication $L_{\tilde p}$ is real-linear alone. The right multiplications all commute with $J$ as well, since $R_{\tilde q}J(\tilde p)=R_{\tilde q}(\nu \tilde p)=(\nu \tilde p)\tilde q=\nu(\tilde p\tilde q)=JR_{\tilde q}(\tilde p)$ by associativity, so $R_{\tilde q}J=JR_{\tilde q}$ for every $\tilde q$; the two families sit in $\operatorname{End}_{\mathbb{C}_\nu}(\mathbb{H})$ on different footings, which is the asymmetry visible in the two slots of the product.
 
 Worked witness: with $\nu=e_1$, $\mu=e_2$, the matrix of $J=L_{e_1}$ in the real basis $(e_0,e_1,e_2,e_3)$ is block diagonal with two copies of $\left(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\right)$; the centralizer of that matrix is $M_2(\mathbb{C})$ in the two complex coordinates, of real dimension eight.
 
 ## Summary
 
-The quaternion algebra read over $\mathbb{C}$ splits into two readings. The extension of scalars gives the biquaternion algebra $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$, of complex dimension four and real dimension eight, whose content belongs to the biquaternion chapter. A chosen unit imaginary quaternion $\nu$ gives a complex structure $J=L_\nu$ and makes $\mathbb{H}$ a two-dimensional complex module over $\mathbb{C}_\nu$, with basis $(e_0,\mu)$; the product is not $\mathbb{C}_\nu$-bilinear, so $\mathbb{H}$ is a module and not a complex algebra, and $\mathbb{C}_\nu$ is a commutative subalgebra, not the centre. The choices $\nu$ are all conjugate by the inner automorphisms. The $\mathbb{C}_\nu$-linear maps are the centralizer of $J$, isomorphic to $M_2(\mathbb{C}_\nu)$; among the left multiplications only the scalars by $\mathbb{C}_\nu$ are complex-linear, while every right multiplication is.
+The quaternion algebra read over $\mathbb{C}$ through a chosen complex structure is a two-dimensional complex module. A chosen unit imaginary quaternion $\nu$ gives a complex structure $J=L_\nu$ and makes $\mathbb{H}$ a two-dimensional complex module over $\mathbb{C}_\nu$, with basis $(e_0,\mu)$; the product is not $\mathbb{C}_\nu$-bilinear, so $\mathbb{H}$ is a module and not a complex algebra, and $\mathbb{C}_\nu$ is a commutative subalgebra, not the centre. The choices $\nu$ are all conjugate by the inner automorphisms. The $\mathbb{C}_\nu$-linear maps are the centralizer of $J$, isomorphic to $M_2(\mathbb{C}_\nu)$; among the left multiplications only the scalars by $\mathbb{C}_\nu$ are complex-linear, while every right multiplication is.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ | the complexification, the biquaternion algebra, complex dimension four |
 | $\mathbb{C}_\nu=\mathbb{R}\oplus\mathbb{R}\nu$ | the commutative subalgebra generated by a unit imaginary $\nu$ |
 | $J=L_\nu$ | the complex structure $\tilde q\mapsto \nu\tilde q$, with $J^2=-\operatorname{id}$ |
 | $(e_0,\mu)$ | a complex basis over $\mathbb{C}_\nu$, for $\mu\perp\nu$ unit imaginary |
@@ -90,6 +66,5 @@ The quaternion algebra read over $\mathbb{C}$ splits into two readings. The exte
 ## Further Reading
 
 - *The Quaternions as a Vector Space over $\mathbb{R}$* (`articles_maths/the-quaternions-as-a-vector-space-over-r.md`), for the real reading this article extends.
-- *The Complexification and the Effect of the Change of Scalars on the Quaternions* (`articles_maths/the-complexification-and-the-effect-of-the-change-of-scalars-on-the-quaternions.md`), below this article in this category, for the extension functor and its effect.
 - *The Two General Products and the Reason There Are Only Two* (`articles_maths/the-two-general-products-and-the-reason-there-are-only-two.md`), below this article in this category, for the count of the products that the base changes produce.
 - *The Group of Involutions of the Quaternions* (`articles_maths/the-group-of-involutions-of-the-quaternions.md`), below this article in this category, for the subalgebras $\mathbb{C}_\nu$ and the axis lines that carry them.

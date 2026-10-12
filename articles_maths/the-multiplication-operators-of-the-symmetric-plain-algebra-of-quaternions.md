@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra of Quaternions*. This article studies its **multiplication operators** $L^{\bullet}_{\tilde p}$, their **composition** and the operator form of the Jordan identity, the **coincidence of the left and right operators**, the **enveloping structure** they generate, and the **derivations** they exhibit, with the comparison with the biquaternion case.
+The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra of Quaternions*.
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
@@ -124,22 +124,9 @@ $$
 
 *Proof.* The trace form is associative, $\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$, and differentiating this identity along a derivation gives the skewness; the full argument is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, where the invariance is owned.
 
-## The Comparison with the Biquaternion Case
-
-| | the symmetric plain algebra of $\mathbb{H}$ | the biquaternion symmetric plain algebra |
-|---|---|---|
-| $L^{\bullet}_{\tilde p}$ | $\tfrac12(L_{\tilde p}+R_{\tilde p})$ | $\tfrac12(L_{\tilde P}+R_{\tilde P})$ |
-| left $=$ right | yes | yes |
-| commutator $[L^{\bullet},L^{\bullet}]$ | a derivation | a derivation |
-| derivation algebra | $\mathfrak{so}(3)$, of dimension $3$, all inner | the complex analogue, all inner |
-| enveloping algebra | full $M_4(\mathbb{R})$ | the complex analogue |
-| skewness for the trace form | yes | yes |
-
-**Remark (what the field changes).** The half-sum, the coincidence of the sides, the derivation property of the bracket, the skewness for the trace form and the fullness of the enveloping algebra have the same shape over $\mathbb{R}$ and over $\mathbb{C}$; they are the operator part of the degree-two Common Theory of *The Two General Products of an Algebra with Involution*. What the field changes is the **dimension** read on $\mathbb{R}$: over $\mathbb{R}$ the derivation algebra is the compact $\mathfrak{so}(3)$ of the three-dimensional vector subspace, and over $\mathbb{C}$ the corresponding algebra is its complexification. The biquaternion operators are *The Multiplication Operators of the Symmetric Plain Algebra* of the biquaternion chapter.
-
 ## Summary
 
-The multiplication operators of the block are $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$, the half-sum $L^{\bullet}_{\tilde p}=\tfrac12(L_{\tilde p}+R_{\tilde p})$ of the plain left and right multiplications, and because the product is commutative the left and the right operators coincide, $L^{\bullet}_{\tilde p}=R^{\bullet}_{\tilde p}$; the map $\tilde p\mapsto L^{\bullet}_{\tilde p}$ is injective, with kernel $\{0\}$ at a non-pure element and a two-dimensional plane at a pure one. The composition is $L^{\bullet}_{\tilde p}L^{\bullet}_{\tilde q}=\tfrac14(L_{\tilde p\tilde q}+R_{\tilde q\tilde p}+M_{\tilde p,\tilde q}+M_{\tilde q,\tilde p})$, the operator form of the Jordan identity is $[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde p^{\,\bullet2}}]=0$, and every bracket $[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]$ is a derivation. The operators generate the full endomorphism algebra $M_4(\mathbb{R})$, of dimension $16$, with commutant the scalars; the derivations are all inner and form the three-dimensional Lie algebra $\mathfrak{so}(3)$, and every derivation is skew for the trace form. Over $\mathbb{C}$ the same shapes hold, the field changing only the complexification of the derivation algebra.
+The multiplication operators of the block are $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$, the half-sum $L^{\bullet}_{\tilde p}=\tfrac12(L_{\tilde p}+R_{\tilde p})$ of the plain left and right multiplications, and because the product is commutative the left and the right operators coincide, $L^{\bullet}_{\tilde p}=R^{\bullet}_{\tilde p}$; the map $\tilde p\mapsto L^{\bullet}_{\tilde p}$ is injective, with kernel $\{0\}$ at a non-pure element and a two-dimensional plane at a pure one. The composition is $L^{\bullet}_{\tilde p}L^{\bullet}_{\tilde q}=\tfrac14(L_{\tilde p\tilde q}+R_{\tilde q\tilde p}+M_{\tilde p,\tilde q}+M_{\tilde q,\tilde p})$, the operator form of the Jordan identity is $[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde p^{\,\bullet2}}]=0$, and every bracket $[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]$ is a derivation. The operators generate the full endomorphism algebra $M_4(\mathbb{R})$, of dimension $16$, with commutant the scalars; the derivations are all inner and form the three-dimensional Lie algebra $\mathfrak{so}(3)$, and every derivation is skew for the trace form.
 
 ## Summary of Notation
 

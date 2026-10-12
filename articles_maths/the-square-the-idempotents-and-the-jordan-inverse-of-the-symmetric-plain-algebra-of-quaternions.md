@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra of Quaternions*. This article is the Specific Theory of the block: it reads the **square map** $\tilde p\mapsto\tilde p\bullet\tilde p$ and its relation to the norm, the **idempotents** and their degeneracy in a division algebra, the **Peirce decomposition**, the **Jordan inverse** and the **quadratic representation**, and compares the idempotents with those of the biquaternion block. It is the specialisation of the degree-two Common Theory of *The Two General Products of an Algebra with Involution* to the real quaternions.
+The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra of Quaternions*. It is the specialisation of the degree-two Common Theory of *The Two General Products of an Algebra with Involution* to the real quaternions.
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
@@ -110,18 +110,6 @@ $$
 *Proof.* Expanding $U_{\tilde p}(\tilde q)$ in the symmetrised plain product, $U_{\tilde p}(\tilde q)=\tfrac12\bigl(\tilde p(\tilde p\tilde q+\tilde q\tilde p)+(\tilde p\tilde q+\tilde q\tilde p)\tilde p\bigr)-\tfrac12(\tilde p^2\tilde q+\tilde q\tilde p^2)=\tilde p\tilde q\tilde p$ by the associativity of the plain product. The norm identity is the multiplicativity of $N$ applied twice, $N(\tilde p\tilde q\tilde p)=N(\tilde p)^2N(\tilde q)$.
 
 **Remark (the effect on the norm).** For a nonzero $\tilde p$ the operator $U_{\tilde p}$ is invertible with inverse $U_{\tilde p^{-1}}$, and $U_{\tilde p^{-1}}=U_{\tilde p}^{-1}$; the norm identity is the degree-two form of the composite, and it is the quadratic representation statement of the degree-two Common Theory of *The Two General Products of an Algebra with Involution* read on the block.
-
-## The Comparison with the Biquaternion Case
-
-| | the biquaternion symmetric plain algebra | the symmetric plain algebra of $\mathbb{H}$ |
-|---|---|---|
-| square | the plain square | the plain square |
-| idempotents | many: $\tfrac12(\tilde E_0+\mathbf u)$ from the pure roots of $+e_0$ | $0$, $e_0$ only |
-| Peirce decomposition | nontrivial, of dimensions $1,2,1$ at a rank-one idempotent | trivial |
-| Jordan inverse | $\tilde P^{\natural}/N(\tilde P)$ for $N(\tilde P)\neq0$ | $\tilde p^{\natural}/N(\tilde p)$, always for $\tilde p\neq0$ |
-| quadratic representation | $N(U_{\tilde P}\tilde Q)=N(\tilde P)^2N(\tilde Q)$ | $U_{\tilde p}\tilde q=\tilde p\tilde q\tilde p$ |
-
-**Remark (what the field changes).** The square, the inverse and the quadratic representation have the same shape over $\mathbb{R}$ and over $\mathbb{C}$; **only the idempotents and the Peirce decomposition differ.** Over $\mathbb{C}$ the pure part is isotropic, so pure roots of $+e_0$ exist, the projection $\tfrac12(\tilde E_0+\mathbf u)$ closes, and the Peirce calculus opens; over $\mathbb{R}$ the pure square is negative, no such root exists, and both collapse. The biquaternion block is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* of the biquaternion chapter.
 
 ## Summary
 

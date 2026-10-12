@@ -19,8 +19,6 @@ This article collects what singles out the general plain product among the six p
 
 *Proof.* Every non-zero element is invertible by *Norm and Invertibility in the General Plain Algebra*, above this article in this category, with $\tilde q^{-1}=\tilde q^{\natural}/\tilde q\tilde q^{\natural}$; a vanishing product with a non-zero factor therefore forces the other factor to vanish, so there is no zero divisor, and a non-zero nilpotent would be a zero divisor with itself. For the idempotents, $\tilde a(\tilde a-e_0)=0$ forces $\tilde a=0$ or $\tilde a=e_0$. The three root sets are the cases $q_0=-1,0,1$ of the classification of *Square Roots of a General Element in the General Plain Algebra*, above this article in this category.
 
-**Remark (the contrast with the biquaternion case).** The same three classes are non-empty over the complex coefficient field: the biquaternion plain product has the null cone as its zero-divisor set, non-zero nilpotents in the isotropic cone of the vector part, and the idempotent pair $\tfrac12(e_0\pm e_3i)$ of its Peirce decomposition. The three empty rows above are exactly the three classes whose article slots the quaternion chapter has pruned, and the pruned slots are the difference between the quaternion and the biquaternion chapter. The biquaternion facts are owned by the biquaternion chapter and are cited for the contrast alone.
-
 ## Associativity, the Unit and the Division Property
 
 The three properties that isolate the block are:
@@ -43,17 +41,17 @@ The three properties that isolate the block are:
 
 The centrality of the scalar line is what makes $N(\tilde q)$ a scalar and what makes the polar split of the units a direct product; both readings are in *Norm and Invertibility in the General Plain Algebra*, above this article in this category.
 
-## Tensor Products and the Complexification
+## The Tensor Product with the Opposite Algebra
 
-**Theorem.** For the tensor products of $\mathbb{H}$ with the complex field and with its own opposite algebra,
+**Theorem.** For the tensor product of $\mathbb{H}$ with its own opposite algebra,
 
 $$
-\mathbb{H}\otimes_\mathbb{R}\mathbb{C}\cong M_2(\mathbb{C}),\qquad \mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}\cong \operatorname{End}_\mathbb{R}(\mathbb{H})\cong M_4(\mathbb{R}).
+\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}\cong \operatorname{End}_\mathbb{R}(\mathbb{H})\cong M_4(\mathbb{R}).
 $$
 
-*Proof.* The first is the complexification of the algebra, treated in *The Complexification and the Effect of the Change of Scalars on the Quaternions*, above this article in this category. For the second, the sandwich map $\tilde p\otimes\tilde q^{\mathrm{op}}\mapsto(\tilde r\mapsto\tilde p\tilde r\tilde q)$ is an $\mathbb{R}$-algebra homomorphism of a $16$-dimensional algebra onto $\operatorname{End}_\mathbb{R}(\mathbb{H})$, of dimension $16$; it is injective because $\mathbb{H}$ is central simple over $\mathbb{R}$, and the enveloping algebra and the operator basis are *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, below this article in this category.
+*Proof.* The sandwich map $\tilde p\otimes\tilde q^{\mathrm{op}}\mapsto(\tilde r\mapsto\tilde p\tilde r\tilde q)$ is an $\mathbb{R}$-algebra homomorphism of a $16$-dimensional algebra onto $\operatorname{End}_\mathbb{R}(\mathbb{H})$, of dimension $16$; it is injective because $\mathbb{H}$ is central simple over $\mathbb{R}$, and the enveloping algebra and the operator basis are *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, below this article in this category.
 
-Thus the algebra is a division algebra over $\mathbb{R}$ and becomes a full matrix algebra as soon as the scalars are extended to $\mathbb{C}$: the two tensor products display the split case as the complexification of the division case.
+Thus the algebra is a division algebra over $\mathbb{R}$ and its enveloping tensor product is the full endomorphism algebra.
 
 ## The Frobenius Theorem and the Real Division Algebras
 
@@ -78,11 +76,11 @@ The six products are generated from two seeds, the plain product $\tilde p\tilde
 | symmetric quaternionic | $\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ | commutative, scalar valued, no unit |
 | antisymmetric quaternionic | $\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ | alternating, Jacobi fails, no unit |
 
-Only the first row carries the associative-unital theory, and it carries all of it: the division property, the two-sided unit, the simplicity, the free module category and the enveloping algebra. Over $\mathbb{R}$ the bar is the identity and the star coincides with the natural sign, so of the two slot operations only the natural one is available, and the six products above are all the products the block has. The conjugation in the first slot is the operation that the complex coefficient field splits into a conjugation and an involution; over $\mathbb{R}$ no such split exists, and this is the sense in which the block is one rung below the biquaternion one.
+Only the first row carries the associative-unital theory, and it carries all of it: the division property, the two-sided unit, the simplicity, the free module category and the enveloping algebra. Over $\mathbb{R}$ the bar is the identity and the star coincides with the natural sign, so of the two slot operations only the natural one is available, and the six products above are all the products the block has.
 
 ## Summary
 
-The plain product is the only one of the six products of the quaternion space that is associative with a two-sided unit and has the division property; every non-zero quaternion is invertible. Consequently the zero divisors, the non-zero nilpotents and the nontrivial idempotents are all absent, and the classes of element reduce to the table: no zero divisor, no non-zero nilpotent, idempotents $0$ and $e_0$, roots of $-1$ the unit sphere of the vector subspace, roots of $+1$ the pair $\pm e_0$, roots of $0$ the origin. The centre is the scalar line $\mathbb{R}e_0$; the complexification is $M_2(\mathbb{C})$ and the enveloping algebra is $M_4(\mathbb{R})$; by Frobenius the algebra is one of the three real associative division algebras, and by Hurwitz one of the four real composition algebras.
+The plain product is the only one of the six products of the quaternion space that is associative with a two-sided unit and has the division property; every non-zero quaternion is invertible. Consequently the zero divisors, the non-zero nilpotents and the nontrivial idempotents are all absent, and the classes of element reduce to the table: no zero divisor, no non-zero nilpotent, idempotents $0$ and $e_0$, roots of $-1$ the unit sphere of the vector subspace, roots of $+1$ the pair $\pm e_0$, roots of $0$ the origin. The centre is the scalar line $\mathbb{R}e_0$; the enveloping algebra is $M_4(\mathbb{R})$; by Frobenius the algebra is one of the three real associative division algebras, and by Hurwitz one of the four real composition algebras.
 
 ## Summary of Notation
 
@@ -93,7 +91,6 @@ The plain product is the only one of the six products of the quaternion space th
 | $V=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ | Vector subspace |
 | $\mathbb{H}^{\mathrm{op}}$ | Opposite algebra |
 | $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}$ | Enveloping algebra, $\cong M_4(\mathbb{R})$ |
-| $M_2(\mathbb{C})$ | Complexification $\mathbb{H}\otimes_\mathbb{R}\mathbb{C}$ |
 
 ## Further Reading
 

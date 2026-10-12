@@ -51,7 +51,7 @@ The notation $\varepsilon$ is chosen deliberately. In some of the older literatu
 
 **Not semisimple.** The ideal $(\varepsilon)$ is nilpotent of index two, $\varepsilon^2 = 0$ with $\varepsilon \neq 0$. Over a field the algebra is local with unique maximal ideal $(\varepsilon)$, and the presence of this non-zero nilpotent ideal makes the algebra not semisimple; the ideal theory is developed in *Dual-Numbers Ideals and the Maximal Ideal*.
 
-**Frobenius theorem.** The dual algebra is not one of the three finite-dimensional associative real division algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$: it is a commutative associative two-dimensional real algebra, and it is not a division algebra.
+**Frobenius theorem.** The dual algebra is not a finite-dimensional associative real division algebra: it is a commutative associative two-dimensional real algebra, and it is not a division algebra.
 
 ### Conjugations
 
@@ -205,7 +205,7 @@ $$
 [A, B] = AB - BA.
 $$
 
-Since $\mathbb{D}'_R$ is commutative, the commutator is identically zero. So the Lie algebra structure of $\mathbb{D}'_R$ is trivial. This is the fundamental difference from the quaternion case, where the commutator is non-trivial (the split complex algebra, like the dual algebra, is commutative).
+Since $\mathbb{D}'_R$ is commutative, the commutator is identically zero. So the Lie algebra structure of $\mathbb{D}'_R$ is trivial. This is the fundamental difference from a non-commutative algebra, where the commutator is non-trivial (the split complex algebra, like the dual algebra, is commutative).
 
 The **Lie algebra of derivations** of $\mathbb{D}'_R$ is more interesting. A **derivation** is an $R$-linear map $D : \mathbb{D}'_R \to \mathbb{D}'_R$ satisfying the Leibniz rule
 
@@ -262,9 +262,7 @@ The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathrm{M}
 
 ## Further Reading
 
-- William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the origin of the dual numbers in the biquaternion program.
 - Eduard Study, *Geometrie der Dynamen* (1903), for the geometry of dual numbers.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - Michael F. Atiyah and Ian G. Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, Reading, 1969), for local rings, nilpotent ideals and the maximal ideal.
 - Serge Lang, *Algebra*, 3rd ed. (Springer, New York, 2002), for the structure of algebras over a commutative ring and their ideals.
 
