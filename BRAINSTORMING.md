@@ -6592,7 +6592,14 @@ So yes: the vector parts have meaning and use. They are not redundant with the s
 
 
 
+the M− imaginary direction is used as the primary direction, no rotation performed (5):
 
+the-partition-function-in-biquaternionic-form.md — Imaginary Time: Where the Material Sector Enters (152); the continuation is read as the direction already there (162).
+thermal-time-and-the-modular-flow-in-the-biquaternion-framework.md — the material time imaginary by construction; the KMS continuation runs along it (181).
+black-hole-thermodynamics-in-biquaternionic-form.md — the intrinsic imaginary time 
+ict of M− , its compactification period the inverse temperature (406).
+hawking-radiation-in-biquaternionic-form.md — "the framework's intrinsic imaginary time does real work" (446).
+the-schwinger-keldysh-formalism-in-biquaternionic-form.md — the contour deformation into the imaginary direction, available because the material direction is already there (165).
 
 
 

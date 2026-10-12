@@ -45,7 +45,7 @@ The two general products split into the six structures through the symmetrisatio
 
 **Theorem (the empty set is the mark of the two general products).** Among the six structures the zero-divisor set is empty exactly for the two general structures $\mathrm{GPA}$ and $\mathrm{GQA}$, and for no other. The four derived sets are strictly larger: the symmetric plain structure $\mathrm{SPA}$ has the punctured vector subspace $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ of real dimension three, and the three remaining structures $\mathrm{APA}$, $\mathrm{SQA}$ and $\mathrm{AQA}$ have the whole punctured space $\mathbb{H}\setminus\{0\}$.
 
-The six structures are read one by one below; each names the product, its zero-divisor set and the reason. The two general rows are §*Results*.
+The six structures are read one by one below; each names the product, its zero-divisor set and the reason. The two general rows are read together in §*Results*.
 
 **Corollary (the empty set is contained in every set).** The empty set is contained in the zero-divisor set of each of the six structures, and it is equal to the set of exactly two of them, the two general products.
 
