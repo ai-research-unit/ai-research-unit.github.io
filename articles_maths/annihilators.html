@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annihilators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="annihilators"><strong>Annihilators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The annihilator of an element in a product is the set of partners that the element kills.</strong> It is defined by an equation that names a product, so the twelve products of the biquaternion space define twelve sets, and each of the twelve is computed below, solved in coordinates and written out with the vectors that generate it. <strong>The two one-sided annihilators are equal in ten of the twelve structures, and they differ in exactly two, the plain product and the general quaternionic sesquilinear product, and there only for an element of vanishing norm.</strong></p>
+<p><strong>Scope and owners.</strong> The cone and the zero-divisor sets are <em>Zero Divisors</em>. The general vocabulary is <em>Definitions for the Study of the 12 Algebraic Structures</em>. Each computation is owned by its own article, named at the end of its subsection and listed in §<em>Further Reading</em>.</p>
+<h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
+<p><strong>Definition.</strong> Let $\star$ be a product on $\mathbb{B}$ and let $\tilde P\in\mathbb{B}$. The <strong>left annihilator</strong> and the <strong>right annihilator</strong> of $\tilde P$ in $\star$ are</p>
+<p>$$
+A_\star(\tilde P)=\{\tilde X:\tilde P\star\tilde X=0\},\qquad B_\star(\tilde P)=\{\tilde X:\tilde X\star\tilde P=0\},
+$$</p>
+<p>and the <strong>two-sided annihilator</strong> is their intersection. Each is the kernel of one of the two multiplications $L_{\tilde P}$ and $R_{\tilde P}$, so each is a complex subspace. Its dimension is the number of free complex parameters left by the equation $\tilde P\star\tilde X=0$, and that is how each set below is solved and stated.</p>
+<p><strong>The mark of the block.</strong> Following the owner articles, the annihilator of a block is written with the mark of that block in place of the star: $A_\bullet$ for a commutative block ($\mathrm{SPA}$), $A_\wedge$ for an alternating plain block ($\mathrm{APA}$) and $A_\diamond$ for an alternating or conjugate-alternating block ($\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$). The mark names the same left annihilator as $A_\star$; it is kept here because it is the symbol the owner article uses.</p>
+<p><strong>Three words, each with its equation.</strong>
+- The <strong>cone</strong> is the single complex equation $\mathrm{Norm}(\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}=0$, the vanishing of the norm $N$ of the element, which the owner articles write $\mathrm{Norm}(\tilde P)$ or $C(\tilde P)$. An element off the cone is invertible, $\tilde P^{-1}=\tilde P^{\natural}/\mathrm{Norm}(\tilde P)$; a nonzero element on the cone is a zero divisor of the plain product.
+- A <strong>complex plane</strong> is a two-dimensional complex subspace, written $\mathbb{C}\{u,v\}$ with its two generators displayed; a <strong>complex line</strong> is written $\mathbb{C}u$. A plane is checked by multiplying its two generators into the product and finding zero.
+- The <strong>centre</strong> is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and the <strong>vector subspace</strong> is $\mathrm{Vect}(\mathbb{B})=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$.</p>
+<p><strong>Four algebraic norms, and the one that decides.</strong> The twelve products carry four <strong>algebraic norms</strong> and no more (<em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>): the algebraic norm of a product is its scalar form read at the two equal arguments, each of the four is carried by two products, and the four antisymmetrisations carry none. They are
+$$
+B(\tilde Q)=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2},\qquad N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2},\qquad H(\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf Q\rvert^{2},\qquad K(\tilde Q)=\lvert Q_0\rvert^{2}-\lvert\mathbf Q\rvert^{2},
+$$
+carried by the pairs $(\mathrm{GPA},\mathrm{SPA})$, $(\mathrm{GQA},\mathrm{SQA})$, $(\mathrm{GPS},\mathrm{SPS})$ and $(\mathrm{GQS},\mathrm{SQS})$ in that order. <strong>The norm that decides every annihilator below is the second of the four, $N$</strong>, the general quaternionic bilinear algebraic norm, $N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$, also called the <strong>reduced norm</strong> $\mathrm{Norm}(\tilde Q)$ in the owner articles and equal to the determinant of the $2\times2$ model. After <em>Conventions in Mathematics</em> §<em>The form convention and the norm convention</em>, $\mathrm{Norm}$ is the <strong>generic norm of a statement</strong>: it is instantiated, for the statement at hand, by the norm that statement uses, and in this article every statement uses the norm $N$ of the element it names. The four carried norms do not all decide, and the plain one does not decide at all: at $\tilde P=e_0+e_1$ the plain algebraic norm is $B=0$ while the norm of the statement is $N=2$ and the element is invertible, $\tilde P^{-1}=\tfrac12(e_0-e_1)$. The two sesquilinear norms $H$ and $K$ cut the hyperplanes of $\mathrm{SPS}$ and $\mathrm{SQS}$ and never decide an inverse, since $H$ is definite and $K$ is indefinite. <strong>Every statement below names its norm</strong>: the deciding norm is written $N$, and the generic $\mathrm{Norm}$ of the owner articles is instantiated here by $N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$. The four antisymmetrisations carry no algebraic norm, and their annihilators are read from the vector part alone.</p>
+<p>In the units $e_0,e_1,e_2,e_3$ of the space $\mathbb{B}$, with $i$ the unit of the complex coefficients, write $\tilde P=P_0e_0+\mathbf P$, and likewise $\tilde Q=Q_0e_0+\mathbf Q$ and $\tilde X=X_0e_0+\mathbf X$, where $\mathbf P=P_1e_1+P_2e_2+P_3e_3$; then $\tilde P^{\natural}=P_0e_0-\mathbf P$ and $\tilde P^{*}=\overline{P_0}e_0-\overline{\mathbf P}$. The <strong>dot product</strong> is $(\mathbf P,\mathbf X)=\sum_kP_kX_k$, the <strong>cross product</strong> is $\mathbf P\times\mathbf X$, and $(\mathbf P,\mathbf P)$ is read the same way.</p>
+<p>The two-sided annihilator lies in the zero-divisor set together with $0$, because a partner that kills every element kills one; the two sets differ wherever a zero divisor is not a killer, and that gap is <em>Zero Divisors</em>.</p>
+<p><strong>The annihilator and the zero divisors.</strong> <strong>Whatever nonzero biquaternion $\tilde P$ is taken, every nonzero element of its annihilator is a zero divisor of the same product, and for the four general products the whole annihilator lies inside the cone.</strong> The two notions are one condition read twice: $\tilde P$ is a <strong>left zero divisor</strong> of $\star$ exactly when its left annihilator is not $\{0\}$, and a <strong>right zero divisor</strong> exactly when its right annihilator is not $\{0\}$ (<em>Definitions for the Study of the 12 Algebraic Structures</em>). The annihilator is therefore the zero-divisor condition with its witnesses displayed: when $\tilde P\neq0$ kills $\tilde X\neq0$, the element $\tilde X$ is a right zero divisor of $\star$ with witness $\tilde P$, so every nonzero element of the left annihilator is a right zero divisor, $A_\star(\tilde P)\setminus\{0\}\subseteq Z_\star$, and likewise $B_\star(\tilde P)\setminus\{0\}$ consists of left zero divisors. <strong>On the four general products the annihilator lies on the cone.</strong> There the zero-divisor set is the punctured cone, $Z_\star=\mathcal{C}\setminus\{0\}$ (<em>Zero Divisors</em>), and with the apex added the whole annihilator is inside the cone, $A_\star(\tilde P)\subseteq\mathcal{C}$ and $B_\star(\tilde P)\subseteq\mathcal{C}$ at every $\tilde P\neq0$; the two planes of a zero divisor, the line of the plain algebra and the plane of the natural product, are totally isotropic subspaces of the quadratic form $N$. <strong>The order of the two sentences matters.</strong> The containment $A_\star(\tilde P)\subseteq\mathcal{C}$ presupposes a cone, and the cone is the zero-divisor set of the four general products alone. In the eight derived structures the zero-divisor set is strictly larger than the cone, the whole punctured space $\mathbb{B}\setminus\{0\}$ in $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{APS}$ and $\mathrm{AQS}$ and the enlarged set $(\{P_0=0\}\cup\mathcal{C})\setminus\{0\}$ in $\mathrm{SPA}$ and $\mathrm{SQS}$ (<em>Zero Divisors</em>); the annihilator is still inside the zero-divisor set of its structure, but it leaves the cone: in $\mathrm{SPA}$ at the pure element $e_3$ the annihilator is the plane $\{X_0=0,\ X_3=0\}$, which contains the unit $e_1$ of norm $N=1$. <strong>The origin is the one element to read with care.</strong> The annihilator of $\tilde P=0$ is $\{0\}$ or all of $\mathbb{B}$, the zero of $\mathbb{B}$ is never a zero divisor, and the sentence "the annihilator of $\tilde P$ consists of zero divisors" therefore holds for the four general products at $\tilde P\neq0$; at $\tilde P=0$ the whole space is its own annihilator and the origin within it is the one exemption.</p>
+<h2 id="the-twelve-structures-and-their-annihilators">The Twelve Structures and their Annihilators</h2>
+<p>The four general products split into the twelve structures through the class-preserving exchange (<em>The 12 Products of the Biquaternion Complex Space</em>). Each structure is read below with its product written out, the criterion in coordinates, and the annihilator with its generators displayed. The twelve are in the order of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<h3 id="math106-the-general-plain-algebra">$\mathrm{GPA}$, the general plain algebra</h3>
+<p>The product is
+$$
+\tilde P\tilde Q=\bigl(P_0Q_0-(\mathbf P,\mathbf Q)\bigr)e_0+P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q .
+$$</p>
+<p><strong>The plain product carries the algebraic norm $B(\tilde P)=P_0^{2}-P_1^{2}-P_2^{2}-P_3^{2}$, and its inverse and its annihilators are decided by the norm $N(\tilde P)$, not by $B$.</strong></p>
+<p><strong>When the norm $N(\tilde P)$ is not zero, the two annihilators are $\{0\}$.</strong> Then $\tilde P^{-1}=\tilde P^{\natural}/\mathrm{Norm}(\tilde P)$ and $\tilde P\tilde X=0$ gives $\tilde X=0$, and the same on the right.</p>
+<p><strong>When the norm $N(\tilde P)$ is zero at a nonzero element, the two annihilators are distinct complex planes that share the line $\mathbb{C}\tilde P^{\natural}$.</strong> At the non-pure element $e_0+ie_1$ the left annihilator is the plane of $e_0-ie_1$ and $e_3+ie_2$, and the right annihilator is the plane of $e_0-ie_1$ and $e_3-ie_2$:
+$$
+A_\star(e_0+ie_1)=\mathbb{C}\{e_0-ie_1,\ e_3+ie_2\},\qquad B_\star(e_0+ie_1)=\mathbb{C}\{e_0-ie_1,\ e_3-ie_2\}.
+$$
+At the pure element $e_1+ie_2$ the left annihilator is the plane of $e_1+ie_2$ and $e_0+ie_3$, and the right annihilator is the plane of $e_1+ie_2$ and $e_0-ie_3$:
+$$
+A_\star(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_0+ie_3\},\qquad B_\star(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_0-ie_3\}.
+$$
+In each line the first generator is $\tilde P^{\natural}$, so the two planes share it, and the two second generators differ in one sign, which is what makes the planes distinct. The pure element $e_1+ie_2$ lies in its own annihilators and the non-pure element $e_0+ie_1$ does not. The dimension is two, the kernel of a rank-two multiplication.</p>
+<p>The rank of the two multiplications, the planes and their traces on the remarkable subspaces are <em>Annihilators of the General Plain Algebra</em>; the cone is <em>Zero Divisors of the General Plain Algebra</em>.</p>
+<h3 id="math133-the-symmetric-plain-algebra">$\mathrm{SPA}$, the symmetric plain algebra</h3>
+<p>The product is the Jordan product
+$$
+\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=\bigl(P_0Q_0-(\mathbf P,\mathbf Q)\bigr)e_0+P_0\mathbf Q+Q_0\mathbf P .
+$$
+It is commutative, so $A_\bullet(\tilde P)=B_\bullet(\tilde P)$ at every element and there is one equation, $P_0\mathbf Q+Q_0\mathbf P=0$ with $P_0Q_0=(\mathbf P,\mathbf Q)$.</p>
+<p><strong>The symmetrisation carries the same algebraic norm $B$, and the criterion is again the norm $N(\tilde P)$, not $B$.</strong></p>
+<p><strong>The criterion of the three cases is the norm $N$ together with the scalar part $P_0$.</strong>
+- <strong>At an element with $P_0$ not zero and with nonzero norm $N(\tilde P)$, the annihilator is $\{0\}$</strong>, the element being invertible in the plain product.
+- <strong>At an element with $P_0$ not zero and with vanishing norm $N(\tilde P)$, the annihilator is the line $\mathbb{C}\tilde P^{\natural}$</strong>, since the vector equation forces $\mathbf Q=-(Q_0/P_0)\mathbf P$ and the scalar equation then forces the vanishing of the norm $N(\tilde P)$.
+- <strong>At a nonzero element with $P_0=0$, the annihilator is the plane $\{X_0=0,\ (\mathbf P,\mathbf X)=0\}$</strong>, because a pure element times $\tilde X$ is $-(\mathbf P,\mathbf X)e_0+X_0\mathbf P$; at $\tilde P=0$ it is all of $\mathbb{B}$.</p>
+<p>Two worked elements show the two families. At the pure element $e_1$ the annihilator is the plane of the pure elements orthogonal to $e_1$, and at the non-pure element $e_0+ie_1$ it is the line of the natural conjugate:
+$$
+A_\bullet(e_1)=\mathbb{C}\{e_2,e_3\},\qquad A_\bullet(e_0+ie_1)=\mathbb{C}\{e_0-ie_1\}.
+$$
+The pure plane $P_0=0$ is a second family beside the cone, and it is why the block has more zero divisors than the plain algebra.</p>
+<p><em>Annihilators of the Symmetric Plain Algebra</em> owns the operator, its rank and the two families.</p>
+<h3 id="math162-the-antisymmetric-plain-algebra">$\mathrm{APA}$, the antisymmetric plain algebra</h3>
+<p>The product is the commutator
+$$
+\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q ,
+$$
+the cross product of the two vector parts, an alternating product.</p>
+<p><strong>The commutator carries no algebraic norm, because it vanishes at the two equal arguments, and the vector part alone decides the annihilator.</strong></p>
+<p><strong>At an element whose vector part is zero, the annihilator is all of $\mathbb{B}$</strong>, because a scalar element has no vector part and kills every partner. <strong>At an element whose vector part is not zero, the annihilator is the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$.</strong> Writing $\tilde X=X_0e_0+\mathbf X$, the product is $\mathbf P\times\mathbf X$, which vanishes exactly on the line $\mathbb{C}\mathbf P$, and the scalar slot $X_0$ is free. For example, at the two elements $e_1$ and $e_0+2e_1$ the annihilator is the same plane, spanned by the centre and the vector part:
+$$
+A_\wedge(e_1)=A_\wedge(e_0+2e_1)=\mathbb{C}\{e_0,e_1\}.
+$$
+The block is alternating, so every element lies in its own annihilator and every nonzero element is a zero divisor; a central element kills everything and every other element kills only a plane. It is the one structure of the twelve whose annihilator is the whole space at a nonzero element.</p>
+<p><em>Annihilators of the Antisymmetric Plain Algebra</em> owns the rank and the plane.</p>
+<h3 id="math173-the-general-quaternionic-algebra">$\mathrm{GQA}$, the general quaternionic algebra</h3>
+<p>The product is $\tilde P^{\natural}\tilde Q$, the plain product with the natural conjugation in the first slot. It is the plain product of $\tilde P^{\natural}$ and $\tilde X$.</p>
+<p><strong>The natural product carries the algebraic norm $N$, and here the carried norm is the deciding one, $N(\tilde P)=\mathrm{Norm}(\tilde P)$.</strong></p>
+<p><strong>The two annihilators are always equal, and in every case they equal the plain annihilator of $\tilde P^{\natural}$.</strong> <strong>When the norm $N(\tilde P)$ is not zero, they are $\{0\}$.</strong> <strong>When the norm $N(\tilde P)$ is zero at a nonzero element, they are the complex plane of dimension two that contains the line $\mathbb{C}\tilde P$.</strong> At $\tilde P=0$ they are all of $\mathbb{B}$. The equality is the natural conjugation applied to $\tilde P^{\natural}\tilde X=0$, which gives $\tilde X^{\natural}\tilde P=0$. At the pure element $e_1+ie_2$ and at the non-pure element $e_0+ie_1$, both of norm zero, the plane contains the element itself:
+$$
+A_\star(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_3-ie_0\},\qquad A_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2+ie_3\}.
+$$
+In both lines the element is its own first generator, so it lies in its own annihilator; the first element is pure and the second is not.</p>
+<p><em>Annihilators of the General Quaternionic Algebra</em> owns the equality of the two sides and the plane.</p>
+<h3 id="math191-the-symmetric-quaternionic-algebra">$\mathrm{SQA}$, the symmetric quaternionic algebra</h3>
+<p>The product is the symmetrisation, the scalar-valued product
+$$
+\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0,\qquad N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q) .
+$$
+It is commutative, so $A_\star(\tilde P)=B_\star(\tilde P)$ at every element, and the equation $\tilde P\star\tilde X=0$ is the single complex equation
+$$
+P_0X_0+(\mathbf P,\mathbf X)=0 .
+$$</p>
+<p><strong>At every nonzero $\tilde P$ the annihilator is the hyperplane of complex dimension three cut out by this equation.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$. <strong>The symmetrisation carries the same algebraic norm $N$, which is the deciding norm, and the hyperplane is its polar form at $\tilde X$, $N(\tilde P,\tilde X)=0$.</strong></p>
+<p>At the unit $e_0$ the hyperplane is the vector subspace, and at the isotropic element $e_1+ie_2$ the element lies in its own annihilator:
+$$
+A_\star(e_0)=\mathbb{C}\{e_1,e_2,e_3\},\qquad e_1+ie_2\in A_\star(e_1+ie_2).
+$$
+The element $e_1+ie_2$ is isotropic, $(\mathbf P,\mathbf P)=1-1=0$, and an isotropic element lies in its own annihilator; an element that is not isotropic does not. This product gives the largest annihilator a nonzero element can have without killing the whole space.</p>
+<p><em>Annihilators of the Symmetric Quaternionic Algebra</em> owns the hyperplane and the isotropic locus.</p>
+<h3 id="math207-the-antisymmetric-quaternionic-algebra">$\mathrm{AQA}$, the antisymmetric quaternionic algebra</h3>
+<p>The product is the antisymmetrisation, the quaternionic cross product, whose value has the vector part
+$$
+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q .
+$$
+It is alternating, so $A_\diamond(\tilde P)=B_\diamond(\tilde P)$ and every element lies in its own annihilator.</p>
+<p><strong>The antisymmetrisation carries no algebraic norm, and the vector part together with the norm $N$ decides.</strong></p>
+<p><strong>When the norm $N(\tilde P)$ is not zero, the annihilator is the line $\mathbb{C}\tilde P$.</strong> <strong>When the norm $N(\tilde P)$ is zero at a nonzero element, the annihilator is a complex plane containing that line.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$. At the element $e_0$, of norm one, the annihilator is the line of the element itself, and at the element $e_1+ie_2$, of norm zero, it is the larger plane that contains that line:
+$$
+A_\diamond(e_0)=\mathbb{C}\{e_0\},\qquad A_\diamond(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_0+ie_3\}.
+$$
+The element $e_0$ has norm $N=1$ and its annihilator is the centre, of dimension one; the element $e_1+ie_2$ has norm $N=0$ and its annihilator is a plane, of dimension two.</p>
+<p><em>Annihilators of the Antisymmetric Quaternionic Algebra</em> owns the rank table and the plane.</p>
+<h3 id="math223-the-general-plain-sesqualgebra">$\mathrm{GPS}$, the general plain sesqualgebra</h3>
+<p>The product is $\tilde P\tilde Q^{*}$, the plain product with the Hermitian conjugation in the second slot. It is conjugate-commutative, so $A_\star(\tilde P)=B_\star(\tilde P)$ at every element.</p>
+<p><strong>The product carries the algebraic norm $H$, definite, and the criterion of the cone is the norm $N(\tilde P)$.</strong></p>
+<p><strong>When the norm $N(\tilde P)$ is not zero, the annihilator is $\{0\}$.</strong> <strong>When the norm $N(\tilde P)$ is zero at a nonzero element, the annihilator is the plane of the Hermitian conjugates of the $\tilde Z$ with $\tilde P\tilde Z=0$.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$:
+$$
+A_\star(\tilde P)=K(\tilde P)^{*},\qquad K(\tilde P)=\{\tilde Z:\tilde P\tilde Z=0\},
+$$
+where $K(\tilde P)$ is the kernel of the plain left multiplication, the object solved in §<em>$\mathrm{GPA}$, the general plain algebra</em>. The equation $\tilde P\tilde X^{*}=0$ is solved by $\tilde X=\tilde Z^{*}$ with $\tilde Z\in K(\tilde P)$, and the Hermitian conjugation is a bijection. At the element $e_0+ie_1$, of norm zero, the plane is
+$$
+A_\star(e_0+ie_1)=\mathbb{C}\{e_1+ie_0,\ e_2+ie_3\}.
+$$</p>
+<p><em>Annihilators of the General Plain Sesqualgebra</em> owns the rank and the plane.</p>
+<h3 id="math243-the-symmetric-plain-sesqualgebra">$\mathrm{SPS}$, the symmetric plain sesqualgebra</h3>
+<p>The product is the symmetrisation of the preceding one, the scalar-valued product
+$$
+\tilde P\star\tilde Q=H(\tilde P,\tilde Q)e_0,\qquad H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}) .
+$$
+It is conjugate-commutative, so $A_\star(\tilde P)=B_\star(\tilde P)$, and the equation is the single complex equation
+$$
+P_0\overline{X_0}+(\mathbf P,\overline{\mathbf X})=0 .
+$$</p>
+<p><strong>The symmetrisation carries the same algebraic norm $H$, definite, and the annihilator is the polar hyperplane of that norm, $H(\tilde P,\tilde X)=0$, which is the displayed equation. The norm $H$ vanishes at the origin alone and decides no inverse, the cone being decided by $N$.</strong></p>
+<p><strong>At every nonzero $\tilde P$ the annihilator is the hyperplane of complex dimension three cut out by this equation.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$. At the unit $e_0$ the hyperplane is the vector subspace:
+$$
+A_\star(e_0)=\{\tilde X:X_0=0\}=\mathbb{C}\{e_1,e_2,e_3\}.
+$$
+The form $H$ is definite, so no nonzero element is isotropic and the annihilator is never larger than a hyperplane. This is the Hermitian twin of the symmetric quaternionic algebra: the same hyperplane of the same dimension, cut by the other form.</p>
+<p><em>Annihilators of the Symmetric Plain Sesqualgebra</em> owns the hyperplane.</p>
+<h3 id="math257-the-antisymmetric-plain-sesqualgebra">$\mathrm{APS}$, the antisymmetric plain sesqualgebra</h3>
+<p>The product is the antisymmetrisation of the plain sesquilinear product, the vector part of $\tilde P\tilde Q^{*}$. It is conjugate-alternating, so $A_\diamond(\tilde P)=B_\diamond(\tilde P)$.</p>
+<p><strong>The antisymmetrisation carries no algebraic norm, and the norm $N(\tilde P)$ decides.</strong></p>
+<p><strong>The common annihilator is the set of the Hermitian conjugates of the $\tilde Z$ with $\tilde P\tilde Z$ central.</strong> <strong>When the norm $N(\tilde P)$ is not zero, it is the line $\mathbb{C}\overline{\tilde P}$.</strong> <strong>When the norm $N(\tilde P)$ is zero at a nonzero element, it is the plane $A_{\text{plain}}(\tilde P)^{*}$.</strong> At $\tilde P=0$ it is all of $\mathbb{B}$:
+$$
+A_\diamond(\tilde P)=\{\tilde Z^{*}:\tilde P\tilde Z\in\mathbb{C}_{\mathbb{B}}\}.
+$$
+At an element of nonzero norm $N$ the single solution line is $\mathbb{C}\overline{\tilde P}$, the conjugate of the element, which at the real element $e_0+2e_1+3e_2+4e_3$ is the line of the element itself; at the element $e_1+ie_2$, of norm zero, the annihilator is the plane
+$$
+A_\diamond(e_0+2e_1+3e_2+4e_3)=\mathbb{C}\{e_0+2e_1+3e_2+4e_3\},\qquad A_\diamond(e_1+ie_2)=\mathbb{C}\{e_1-ie_2,\ e_0+ie_3\}.
+$$
+At an element of nonzero norm $N$ the equations $\tilde P\tilde Z=\lambda e_0$ have the single solution line $\mathbb{C}\tilde P^{-1}$, whose star is the line $\mathbb{C}\overline{\tilde P}$ of the conjugate element; at an element of the cone they have the plane displayed, and that plane is the star-image of the plain annihilator, $A_\diamond(\tilde P)=\{\tilde Z^{*}:\tilde P\tilde Z=0\}=A_{\text{plain}}(\tilde P)^{*}$. The block reads the invertibility of the plain product and not its own zero divisors, because it has none. Its product is conjugate-alternating, $\tilde P\diamond\tilde P+\overline{\tilde P\diamond\tilde P}=0$, so the element lies in its own annihilator exactly when $\tilde P\diamond\tilde P$ vanishes, which happens at every element with real coefficients and fails at some elements with complex coefficients, for instance at $\tilde P=e_1+ie_2$.</p>
+<p><em>Annihilators of the Antisymmetric Plain Sesqualgebra</em> owns the theorem and the two cases.</p>
+<h3 id="math283-the-general-quaternionic-sesqualgebra">$\mathrm{GQS}$, the general quaternionic sesqualgebra</h3>
+<p>The product is $\tilde P^{\natural}\tilde Q^{*}$, the plain product with one conjugation in each slot.</p>
+<p><strong>The product carries the algebraic norm $K$, indefinite, and the criterion is the norm $N(\tilde P)$.</strong></p>
+<p><strong>When the norm $N(\tilde P)$ is not zero, both annihilators are $\{0\}$.</strong> <strong>When the norm $N(\tilde P)$ is zero at a nonzero element, each annihilator is a complex plane, and the two planes are distinct, meeting exactly in the line $\mathbb{C}\tilde P^{*}$.</strong> At $\tilde P=0$ both are all of $\mathbb{B}$. At the element $e_0+ie_1$, of norm zero, the two planes meet in the line of the element:
+$$
+A_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2-ie_3\},\qquad B_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2+ie_3\}.
+$$
+The two planes differ in the second generator and meet exactly in the line $\mathbb{C}\tilde P^{*}$; at $e_0+ie_1$ this line is the line of the element itself. This block is one of the two of the twelve whose two sides are distinct. The left annihilator is the Hermitian-conjugate image of the kernel of the plain left multiplication by $\tilde P^{\natural}$, and the right one is the same computation in the other order.</p>
+<p><em>Annihilators of the General Quaternionic Sesqualgebra</em> owns the two planes.</p>
+<h3 id="math298-the-symmetric-quaternionic-sesqualgebra">$\mathrm{SQS}$, the symmetric quaternionic sesqualgebra</h3>
+<p>The product is the symmetrisation of the preceding one; it is conjugate-commutative, so $A_\star(\tilde P)=B_\star(\tilde P)$, and its equation is
+$$
+\tilde P^{\natural}\tilde X^{*}+\overline{\tilde X^{\natural}\tilde P^{*}}=0 .
+$$</p>
+<p><strong>The symmetrisation carries the algebraic norm $K$, $K(\tilde P)=|P_0|^{2}-|\mathbf P|^{2}$, indefinite.</strong> <strong>The annihilator lies in the polar hyperplane $K(\tilde P,\tilde X)=0$, and the norm $N$ together with the scalar part $P_0$ decides its dimension.</strong></p>
+<p><strong>At an element whose scalar part is zero, the annihilator is the plane $\{X_0=0,\ (\mathbf P,\overline{\mathbf X})=0\}$.</strong> <strong>At a non-pure element of the cone, the annihilator is the line $\mathbb{C}\tilde P^{*}$.</strong> <strong>At a non-pure element off the cone, the annihilator is $\{0\}$.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$. At the pure element $e_1+ie_2$ the annihilator is that plane, and at the non-pure element $e_0+ie_1$ it is the line of the element:
+$$
+A_\star(e_1+ie_2)=\mathbb{C}\{e_1-ie_2,\ e_3\},\qquad A_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1\}.
+$$
+At a pure element the scalar part of $\tilde X$ vanishes and its vector part runs over the line conjugate-orthogonal to $\mathbf P$, so the annihilator is always a plane of dimension two, whether or not the pure element is a zero divisor; at a non-pure element of the cone the whole of $\tilde X$ is pinned to the line of $\tilde P^{*}$, and off the cone only $\tilde X=0$ is killed. The block separates the two families of its zero-divisor set by the size of the annihilator, a plane at a pure element against a line at a non-pure one.</p>
+<p><em>Annihilators of the Symmetric Quaternionic Sesqualgebra</em> owns the two families.</p>
+<h3 id="math319-the-antisymmetric-quaternionic-sesqualgebra">$\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra</h3>
+<p>The product is the antisymmetrisation of the general quaternionic sesquilinear product; it is the conjugate cross product $\mathbf P\times\overline{\mathbf X}$, conjugate-alternating, so $A_\diamond(\tilde P)=B_\diamond(\tilde P)$.</p>
+<p><strong>The antisymmetrisation carries no algebraic norm, and the conjugate of the vector part decides.</strong></p>
+<p><strong>At an element whose vector part is not zero, the annihilator is the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf P}$.</strong> <strong>At an element whose vector part is zero, the annihilator is all of $\mathbb{B}$.</strong> At the non-central element $e_1+ie_2$ the annihilator is the plane of the centre together with the conjugate line, and at the central element $e_0$ it is all of $\mathbb{B}$:
+$$
+A_\diamond(e_1+ie_2)=\mathbb{C}\{e_0,\ e_1-ie_2\},\qquad A_\diamond(e_0)=\mathbb{B}.
+$$
+The operator depends on the vector part alone and only through its conjugate, so an element of the centre has the zero operator and kills everything, and a non-central element has rank two and kills exactly the centre together with the conjugate line of its vector part.</p>
+<p><em>Annihilators of the Antisymmetric Quaternionic Sesqualgebra</em> owns the plane and the rank.</p>
+<h2 id="results">Results</h2>
+<p>The twelve are tabulated with the annihilator of a general element, the case split written out in each cell, and the two theorems that hold across them are stated below.</p>
+<h3 id="the-twelve-annihilators">The Twelve Annihilators</h3>
+<p><strong>Read the cells.</strong> The deciding norm is $N$, $N(\tilde P)=\mathrm{Sc}(\tilde P^{\natural}\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}$, the general quaternionic bilinear algebraic norm and the second of the four; it vanishes exactly at the zero divisors of the four general products. Every cell names $N$ where the cone decides, and the two symmetrisations of sesquilinear products name their own norm as well, $H(\tilde P,\tilde X)=0$ for $\mathrm{SPS}$ and $K(\tilde P,\tilde X)=0$ for $\mathrm{SQS}$. The four algebraic norms $B$, $N$, $H$, $K$ and the two products that carry each are stated at the head of the article. The vector part of $\tilde P$ is $\mathbf P$, and the parts of the partner $\tilde X$ are $X_0$ and $\mathbf X$. The form $N$ of the symmetric quaternionic algebra is $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, and the form $H$ of the symmetric plain sesqualgebra is $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$. The span notation $\mathbb{C}\{u,v\}$ is the complex span of $u$ and $v$. Each cell gives the annihilator of a general element, case by case, and every set it names can be checked by multiplying a generator into the product.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>structure</th>
+<th>the product</th>
+<th>the annihilator of a general element $\tilde P$</th>
+<th>the two sides</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain algebra</td>
+<td>$\mathrm{GPA}$</td>
+<td>$\tilde P\tilde Q$</td>
+<td>When the norm $N(\tilde P)$ is not zero, each of the two annihilators is $\{0\}$. When the norm $N(\tilde P)$ is zero at a nonzero element, each annihilator is a complex plane of dimension two. The two planes are distinct, both contain the line $\mathbb{C}\tilde P^{\natural}$, and they meet in exactly that line. At $\tilde P=0$, each annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides differ</td>
+</tr>
+<tr>
+<td></td>
+<td>$\mathrm{SPA}$</td>
+<td>$\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</td>
+<td>At a nonzero element whose scalar part $P_0$ is zero, the annihilator is the plane $\{X_0=0,\ (\mathbf P,\mathbf X)=0\}$. At an element with $P_0$ not zero and with vanishing norm $N(\tilde P)$, the annihilator is the line $\mathbb{C}\tilde P^{\natural}$. At an element with $P_0$ not zero and with nonzero norm $N(\tilde P)$, the annihilator is $\{0\}$. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+<tr>
+<td></td>
+<td>$\mathrm{APA}$</td>
+<td>$\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$</td>
+<td>At an element whose vector part is not zero, the annihilator is the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$. At an element whose vector part is zero, the annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+<tr>
+<td>the quaternionic algebra</td>
+<td>$\mathrm{GQA}$</td>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>When the norm $N(\tilde P)$ is not zero, both annihilators are $\{0\}$. When the norm $N(\tilde P)$ is zero at a nonzero element, both are one and the same plane of dimension two, and that plane contains the line $\mathbb{C}\tilde P$. At $\tilde P=0$, both are all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+<tr>
+<td></td>
+<td>$\mathrm{SQA}$</td>
+<td>$N(\tilde P,\tilde Q)e_0$</td>
+<td>At a nonzero element, the annihilator is the hyperplane $N(\tilde P,\tilde X)=0$, that is $P_0X_0+(\mathbf P,\mathbf X)=0$, of dimension three. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+<tr>
+<td></td>
+<td>$\mathrm{AQA}$</td>
+<td>the antisymmetrisation</td>
+<td>At an element whose vector part is not zero and whose norm $N(\tilde P)$ is not zero, the annihilator is the line $\mathbb{C}\tilde P$. At an element whose vector part is not zero and whose norm $N(\tilde P)$ is zero, the annihilator is the plane of the solutions of $P_0\mathbf X-X_0\mathbf P-\mathbf P\times\mathbf X=0$, and that plane contains the line $\mathbb{C}\tilde P$. At an element whose vector part is zero and which is not zero, the annihilator is the line $\mathbb{C}e_0$. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+<tr>
+<td>the plain sesqualgebra</td>
+<td>$\mathrm{GPS}$</td>
+<td>$\tilde P\tilde Q^{*}$</td>
+<td>When the norm $N(\tilde P)$ is not zero, the annihilator is $\{0\}$. When the norm $N(\tilde P)$ is zero at a nonzero element, the annihilator is the plane of dimension two formed by the conjugates $\tilde Z^{*}$ of the solutions $\tilde Z$ of $\tilde P\tilde Z=0$ in the plain product. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+<tr>
+<td></td>
+<td>$\mathrm{SPS}$</td>
+<td>$H(\tilde P,\tilde Q)e_0$</td>
+<td>At a nonzero element, the annihilator is the hyperplane $H(\tilde P,\tilde X)=0$, that is $P_0\overline{X_0}+(\mathbf P,\overline{\mathbf X})=0$, of dimension three. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+<tr>
+<td></td>
+<td>$\mathrm{APS}$</td>
+<td>the antisymmetrisation</td>
+<td>When the norm $N(\tilde P)$ is not zero, the annihilator is the line $\mathbb{C}\overline{\tilde P}$. When the norm $N(\tilde P)$ is zero at a nonzero element, the annihilator is the plane of the conjugates of the solutions of $\tilde P\tilde Z=0$ in the plain product, which is the same plane as in the general plain sesqualgebra. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+<tr>
+<td>the quaternionic sesqualgebra</td>
+<td>$\mathrm{GQS}$</td>
+<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>When the norm $N(\tilde P)$ is not zero, both annihilators are $\{0\}$. When the norm $N(\tilde P)$ is zero at a nonzero element, the left annihilator is the conjugate of the plain left annihilator of $\tilde P^{\natural}$, and the right annihilator is the natural conjugate of the plain right annihilator of $\tilde P^{*}$. The two are distinct planes of dimension two, and they meet in exactly the line $\mathbb{C}\tilde P^{*}$. At $\tilde P=0$, both are all of $\mathbb{B}$.</td>
+<td>the two sides differ</td>
+</tr>
+<tr>
+<td></td>
+<td>$\mathrm{SQS}$</td>
+<td>the symmetrisation</td>
+<td>At a nonzero element whose scalar part $P_0$ is zero, the annihilator is the plane cut by the two equations $X_0=0$ and $K(\tilde P,\tilde X)=0$. At an element with $P_0$ not zero and with vanishing norm $N(\tilde P)$, the annihilator is the line $\mathbb{C}\tilde P^{*}$. At an element with $P_0$ not zero and with nonzero norm $N(\tilde P)$, the annihilator is $\{0\}$. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+<tr>
+<td></td>
+<td>$\mathrm{AQS}$</td>
+<td>the antisymmetrisation</td>
+<td>At an element whose vector part is not zero, the annihilator is the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf P}$. At an element whose vector part is zero, the annihilator is all of $\mathbb{B}$.</td>
+<td>the two sides are equal</td>
+</tr>
+</tbody>
+</table></div>
+<p>Four facts follow from the table. The two one-sided annihilators differ in exactly two rows, the plain product and the general quaternionic sesquilinear product, and they differ there only at an element of norm zero. In two rows some nonzero element has the whole space as its annihilator, and those rows are the two antisymmetrisations, whose value is a cross product. In two rows every nonzero element has a hyperplane of dimension three as its annihilator, and those rows are the two symmetrisations that collapse the product to a form. In the remaining six rows the annihilator is $\{0\}$ at an element of nonzero norm, and a line or a plane at an element of norm zero.</p>
+<h3 id="the-two-one-sided-annihilators">The Two One-Sided Annihilators</h3>
+<p><strong>Theorem (the two sides are equal in ten structures and differ in two).</strong> The two annihilators of an element are equal at every element for $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{SQS}$ and $\mathrm{AQS}$, and, for $\mathrm{GPA}$ and $\mathrm{GQS}$, they are equal at every element with $P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}\neq0$. For those two, when $P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}=0$, they are distinct complex planes of dimension two: the two of the plain product meet in the line $\mathbb{C}\tilde P^{\natural}$, and the two of the general quaternionic sesquilinear product meet in the line $\mathbb{C}\tilde P^{*}$.</p>
+<p><em>Proof.</em> The products $\mathrm{SPA}$ and $\mathrm{SQA}$ are commutative and the products $\mathrm{SPS}$ and $\mathrm{SQS}$ are conjugate-commutative, so the two products vanish together and the two annihilators are one set. The products $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$ and $\mathrm{AQS}$ are alternating or conjugate-alternating, so the sign that exchanges the two factors does not change whether a product vanishes. The products $\mathrm{GQA}$ and $\mathrm{GPS}$ carry their involution in one slot, and the natural or the Hermitian conjugation, an anti-automorphism of order two, exchanges the two sides: $A_\star(\tilde P)=B_\star(\tilde P^{\natural})$ and $A_\star(\tilde P)=B_\star(\tilde P)^{*}$. The plain product and the general quaternionic sesquilinear product have no such exchange, and their two planes are computed distinct in their subsections.</p>
+<h3 id="the-four-general-products-one-plane-through-two-conjugations">The Four General Products: One Plane Through Two Conjugations</h3>
+<p>Fix a nonzero element of the cone, $\mathrm{Norm}(\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}=0$. Each of the four general products gives two planes for it, and the eight planes are related as follows.</p>
+<p><strong>Theorem (the planes are read through the two conjugations).</strong> Write $A_{\text{plain}},A_{\natural},A_{*},A_{\natural*}$ for the left annihilators of $\tilde P$ in the plain, the natural, the general plain sesquilinear and the general quaternionic sesquilinear product. Then
+$$
+A_{\natural}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural}),\qquad A_{*}(\tilde P)=A_{\text{plain}}(\tilde P)^{*},\qquad A_{\natural*}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural})^{*},
+$$
+and the two sides coincide for the natural product and for the general plain sesquilinear product, while for the plain product and for the general quaternionic sesquilinear product they differ.</p>
+<p><em>Proof.</em> The first identity is $\tilde P^{\natural}\tilde X=0$ read as the plain product of $\tilde P^{\natural}$ and $\tilde X$. For the second, the substitution $\tilde X=\tilde Z^{*}$ turns $\tilde P\tilde X^{*}=0$ into $\tilde P\tilde Z=0$, and the Hermitian conjugation is a bijection, so the plane is the star-image of the plain plane; the third is the first and the second composed. The coincidences are the theorem of §<em>The Two One-Sided Annihilators</em>.</p>
+<p><strong>Example.</strong> Take $\tilde P=e_0+ie_1$, whose norm $N$ is $1-1=0$. The plain plane is
+$$
+A_{\text{plain}}(e_0+ie_1)=\mathbb{C}\{e_0-ie_1,\ e_3+ie_2\},
+$$
+the natural plane is $A_{\natural}(e_0+ie_1)=A_{\text{plain}}(e_0-ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2+ie_3\}$, which is the plane of §<em>$\mathrm{GQA}$, the general quaternionic algebra</em>; the general plain sesquilinear plane is the star-image of the first, $A_{*}(e_0+ie_1)=\mathbb{C}\{e_1+ie_0,\ e_2+ie_3\}$, which is the plane of §<em>$\mathrm{GPS}$, the general plain sesqualgebra</em>; and the general quaternionic sesquilinear plane is $A_{\natural*}(e_0+ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2-ie_3\}$, the plane of §<em>$\mathrm{GQS}$, the general quaternionic sesqualgebra</em>. The four planes are the plain plane and its two conjugate images, and each one-sided plane of the four general products is read off the plain one.</p>
+<h2 id="summary">Summary</h2>
+<p>The annihilator of an element in a product is the set of partners that it kills on one side or the other; it is the solution set of the equation $\tilde P\star\tilde X=0$, and its dimension is the number of free complex parameters in that equation. The twelve products of the biquaternion space give twelve solutions, each written above with its case split and the generators of each set.</p>
+<p>Five facts summarize the twelve structures.</p>
+<ul>
+<li>The two one-sided annihilators are equal in ten of the twelve structures. They differ in exactly two, the plain product and the general quaternionic sesquilinear product, and only at an element of norm zero. There they are two distinct planes that share the line $\mathbb{C}\tilde P^{\natural}$ in the plain product and the line $\mathbb{C}\tilde P^{*}$ in the general quaternionic sesquilinear product. In the plain product at $e_1+ie_2$, for example, the left annihilator is $\mathbb{C}\{e_1+ie_2,\ e_0+ie_3\}$ and the right annihilator is $\mathbb{C}\{e_1+ie_2,\ e_0-ie_3\}$.</li>
+<li>In two structures some element kills every partner. The two are the antisymmetric plain algebra and the antisymmetric quaternionic sesqualgebra, and the elements that kill every partner are exactly the scalar ones, the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$.</li>
+<li>In two structures the annihilator of every nonzero element is a hyperplane of dimension three. In the symmetric quaternionic algebra it is the hyperplane $P_0X_0+(\mathbf P,\mathbf X)=0$, and in the symmetric plain sesqualgebra it is the hyperplane $P_0\overline{X_0}+(\mathbf P,\overline{\mathbf X})=0$.</li>
+<li>In the two alternating structures every element lies in its own annihilator, because $\tilde P\diamond\tilde P=0$, and the two are the antisymmetric plain algebra and the antisymmetric quaternionic algebra. In the two conjugate-alternating structures, the antisymmetric plain sesqualgebra and the antisymmetric quaternionic sesqualgebra, the element lies in its own annihilator exactly when $\tilde P\diamond\tilde P$ vanishes, which is so at every element with real coefficients and can fail at an element with complex coefficients. In the other eight structures only some elements do.</li>
+<li>In the four general products an element of nonzero norm $N$ is invertible and its annihilator is $\{0\}$. At an element of norm $N$ zero the four planes are one plane read through the two conjugations, $A_{\natural}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural})$, $A_{*}(\tilde P)=A_{\text{plain}}(\tilde P)^{*}$ and $A_{\natural*}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural})^{*}$.</li>
+</ul>
+<p>The single example that ties them together is $\tilde P=e_0+ie_1$, whose norm $N$ is $1-1=0$. Its plain plane is $\mathbb{C}\{e_0-ie_1,\ e_3+ie_2\}$, its natural plane is $\mathbb{C}\{e_0+ie_1,\ e_2+ie_3\}$, its general plain sesquilinear plane is $\mathbb{C}\{e_1+ie_0,\ e_2+ie_3\}$, and its general quaternionic sesquilinear plane is $\mathbb{C}\{e_0+ie_1,\ e_2-ie_3\}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\star$</td>
+<td>one of the twelve products of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>the four general products</td>
+</tr>
+<tr>
+<td>$A_\star(\tilde P)$, $B_\star(\tilde P)$</td>
+<td>the left and the right annihilator of $\tilde P$ in the product $\star$, the kernels of $L_{\tilde P}$ and $R_{\tilde P}$</td>
+</tr>
+<tr>
+<td>$A_{\text{plain}},A_{\natural},A_{*},A_{\natural*}$</td>
+<td>the left annihilators in the plain, the natural, the general plain sesquilinear and the general quaternionic sesquilinear product</td>
+</tr>
+<tr>
+<td>$K(\tilde P)=\{\tilde Z:\tilde P\tilde Z=0\}$</td>
+<td>the kernel of the left multiplication in the plain product, $A_{\text{plain}}(\tilde P)$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\{u,v\}$, $\mathbb{C}u$</td>
+<td>a complex plane and a complex line, given by their generators</td>
+</tr>
+<tr>
+<td>$N(\tilde P)=\mathrm{Sc}(\tilde P^{\natural}\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}$</td>
+<td>the general quaternionic bilinear algebraic norm, also called the reduced norm $\mathrm{Norm}(\tilde P)$; zero exactly on the cone, and <strong>the deciding norm of every annihilator in this article</strong></td>
+</tr>
+<tr>
+<td>$B$, $N$, $H$, $K$</td>
+<td>the four algebraic norms of the twelve products, carried in the pairs $(\mathrm{GPA},\mathrm{SPA})$, $(\mathrm{GQA},\mathrm{SQA})$, $(\mathrm{GPS},\mathrm{SPS})$, $(\mathrm{GQS},\mathrm{SQS})$; the four antisymmetrisations carry none</td>
+</tr>
+<tr>
+<td>$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>the general quaternionic bilinear form, the product of $\mathrm{SQA}$ up to $e_0$</td>
+</tr>
+<tr>
+<td>$H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$</td>
+<td>the Hermitian form, the product of $\mathrm{SPS}$ up to $e_0$</td>
+</tr>
+<tr>
+<td>$\tilde P^{\perp}$</td>
+<td>the hyperplane $\{N(\tilde P,\tilde X)=0\}$ or $\{H(\tilde P,\tilde X)=0\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, $\mathrm{Vect}(\mathbb{B})$</td>
+<td>the centre and the vector subspace</td>
+</tr>
+<tr>
+<td>$\mathrm{GPA},\dots,\mathrm{AQS}$</td>
+<td>the twelve structures, read in the table of §<em>The Twelve Annihilators</em></td>
+</tr>
+<tr>
+<td>${}^{*}$, ${}^{\natural}$</td>
+<td>the Hermitian conjugation, $\overline{X_0}e_0-\sum_k\overline{X_k}e_k$, and the natural conjugation, $X_0e_0-\mathbf X$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2$</td>
+<td>the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Zero Divisors</em> (<code>articles_maths/zero-divisors.md</code>), for the cone, the twelve zero-divisor sets and the one-sided inverse equations.</li>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the annihilator stated once for a general product.</li>
+<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve names and their three-letter codes.</li>
+<li><em>The 12 Products of the Biquaternion Complex Space</em> (<code>articles_maths/the-12-products-of-the-biquaternion-complex-space.md</code>), for the twelve products and their class-preserving exchange.</li>
+<li><em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md</code>), for the four algebraic norms $B$, $N$, $H$, $K$, the two products that carry each, and the norm $N$ that decides the annihilators.</li>
+<li><em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> (<code>articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md</code>), for the kernels of the multiplications read in the matrix model.</li>
+<li><em>Annihilators</em> (<code>articles_maths/quaternion-annihilators.md</code>), for the companion reading of the six structures of the quaternion space, where the elements that annihilate every partner are tabulated.</li>
+</ul>
+<p>The twelve owners of the subsections, in the order of the table, are:</p>
+<ul>
+<li><em>Annihilators of the General Plain Algebra</em> (<code>articles_maths/annihilators-of-the-general-plain-algebra.md</code>), for $\mathrm{GPA}$.</li>
+<li><em>Annihilators of the Symmetric Plain Algebra</em> (<code>articles_maths/annihilators-of-the-symmetric-plain-algebra.md</code>), for $\mathrm{SPA}$.</li>
+<li><em>Annihilators of the Antisymmetric Plain Algebra</em> (<code>articles_maths/annihilators-of-the-antisymmetric-plain-algebra.md</code>), for $\mathrm{APA}$.</li>
+<li><em>Annihilators of the General Quaternionic Algebra</em> (<code>articles_maths/annihilators-of-the-general-quaternionic-algebra.md</code>), for $\mathrm{GQA}$.</li>
+<li><em>Annihilators of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/annihilators-of-the-symmetric-quaternionic-algebra.md</code>), for $\mathrm{SQA}$.</li>
+<li><em>Annihilators of the Antisymmetric Quaternionic Algebra</em> (<code>articles_maths/annihilators-of-the-antisymmetric-quaternionic-algebra.md</code>), for $\mathrm{AQA}$.</li>
+<li><em>Annihilators of the General Plain Sesqualgebra</em> (<code>articles_maths/annihilators-of-the-general-plain-sesqualgebra.md</code>), for $\mathrm{GPS}$.</li>
+<li><em>Annihilators of the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/annihilators-of-the-symmetric-plain-sesqualgebra.md</code>), for $\mathrm{SPS}$.</li>
+<li><em>Annihilators of the Antisymmetric Plain Sesqualgebra</em> (<code>articles_maths/annihilators-of-the-antisymmetric-plain-sesqualgebra.md</code>), for $\mathrm{APS}$.</li>
+<li><em>Annihilators of the General Quaternionic Sesqualgebra</em> (<code>articles_maths/annihilators-of-the-general-quaternionic-sesqualgebra.md</code>), for $\mathrm{GQS}$.</li>
+<li><em>Annihilators of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/annihilators-of-the-symmetric-quaternionic-sesqualgebra.md</code>), for $\mathrm{SQS}$.</li>
+<li><em>Annihilators of the Antisymmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/annihilators-of-the-antisymmetric-quaternionic-sesqualgebra.md</code>), for $\mathrm{AQS}$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

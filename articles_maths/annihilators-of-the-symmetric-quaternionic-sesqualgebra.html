@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annihilators of the Symmetric Quaternionic Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="annihilators-of-the-symmetric-quaternionic-sesqualgebra"><strong>Annihilators of the Symmetric Quaternionic Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The zero divisor of a product is a property of one element alone: it says that <em>some</em> nonzero
+partner exists that the element kills. The annihilator says <em>which</em> partners those are, and it is
+the finer object. It is the set of elements killed by a fixed element,
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
+$$
+the left and the right annihilator (<em>Definitions for the Study of the 12 Algebraic Structures</em>,
+§<em>The Zero Divisor and the Annihilator</em>). When the product is carried by a multiplication operator
+the annihilator is the kernel of that operator, so it is a linear subspace.</p>
+<p>The block of this article is the <strong>symmetric quaternionic sesquimultiplication</strong>
+$$
+\tilde P\star\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}}\bigr)
+=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P,
+$$
+the Hermitian symmetrisation of the sesquilinear product (<em>Introduction to the Symmetric
+Quaternionic Sesqualgebra of Biquaternions</em>). It is conjugate-commutative, so the two annihilators
+of an element are one set, and its zero divisors are the elements of the cone $C(\tilde P)=0$
+(<em>Zero Divisors of the Symmetric Quaternionic Sesqualgebra</em>, above this article in this category).
+The annihilator is a complex plane in the pure case and a complex line in the non-pure case, so it
+separates the two families where the criterion only joins them. The article owns that reading, the
+operator with its rank, and the shape of the annihilator on the remarkable subspaces; the
+zero-divisor set and the comparison with the four general products are the cited article's.</p>
+<h2 id="the-annihilator-of-a-product">The Annihilator of a Product</h2>
+<p><strong>Definition (annihilator).</strong> Let $\star$ be a product on $\mathbb{B}$ and let
+$\tilde Q\in\mathbb{B}$. The <strong>left annihilator</strong> and the <strong>right annihilator</strong> of $\tilde Q$ in
+$\star$ are
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
+$$
+They are the kernels of the left and the right multiplication, and they are nonzero exactly when
+$\tilde Q$ is a zero divisor of the corresponding side.</p>
+<p>Throughout this article the product is the <strong>symmetric quaternionic sesquimultiplication</strong> $\star$,
+and unqualified, <em>annihilator</em> means the annihilator of $\star$. The one-sided multiplications are
+the operators
+$$
+L_{\tilde P}\tilde X=\tilde P\star\tilde X,\qquad R_{\tilde P}=L_{\tilde P},
+$$
+read in coordinates in <em>The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra</em>.
+The block is the sesquilinear sibling of the symmetric quaternionic algebra and the quaternionic
+sibling of the symmetric plain sesqualgebra, whose annihilators are <em>Annihilators of the Symmetric
+Quaternionic Algebra</em> and <em>Annihilators of the Symmetric Plain Sesqualgebra</em>.</p>
+<h2 id="the-two-annihilators-coincide">The Two Annihilators Coincide</h2>
+<p><strong>Theorem (the two sides coincide).</strong> $\tilde Q$ is a left zero divisor of the block if and only if
+it is a right zero divisor, and $A_\star(\tilde Q)=B_\star(\tilde Q)$ for every $\tilde Q$.</p>
+<p><em>Proof.</em> The block is conjugate-commutative,
+$\tilde P\star\tilde Q=\overline{\tilde Q\star\tilde P}$. Applying it,
+$\tilde R\star\tilde Q=\overline{\tilde Q\star\tilde R}$, so $\tilde R\star\tilde Q=0$ holds
+exactly when $\tilde Q\star\tilde R=0$; the defining sets are equal.</p>
+<h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
+<p><strong>Theorem (the annihilators).</strong> The annihilator of a zero divisor $\tilde Q$ of the block is
+$$
+A_\star(\tilde Q)=
+\begin{cases}
+\{\tilde R:R_0=0,\ \sum_{k}Q_k\overline{R_k}=0\}, & Q_0=0,\\[2mm]
+\{\tilde R:R_0=\mu,\ R_k=-\dfrac{\mu}{\overline{Q_0}}\,\overline{Q_k},\ \mu\in\mathbb{C}\}, & Q_0\neq0,
+\end{cases}
+$$
+of complex dimension two in the pure case and complex dimension one in the non-pure case. For an
+element off the cone the annihilator is $\{0\}$.</p>
+<p><em>Proof.</em> In the pure case the computations of the criterion leave $R_0=0$ and the single complex
+condition $\sum_kQ_k\overline{R_k}=0$ on the three unknowns $R_1,R_2,R_3$, whose solutions form a
+complex plane. In the non-pure case the same computations express $\tilde R$ through the free
+parameter $R_0$, and the assignment $\mu\mapsto\tilde R(\mu)$ is complex-linear and injective.</p>
+<p><strong>Corollary (the rank of the left multiplication).</strong> The left multiplication
+$L_{\tilde Q}:\tilde R\mapsto\tilde Q\star\tilde R$ has kernel $A_\star(\tilde Q)$, so it is
+injective exactly when $\tilde Q$ is regular; as an endomorphism of $\mathbb{B}$ it has complex
+rank four on the regular elements, three on the non-pure family, two on the pure family and rank
+zero at the origin.</p>
+<p><em>Proof.</em> The kernel is the annihilator by definition, of dimension zero, one and two according to
+whether $\tilde Q$ is regular, a non-pure zero divisor or a pure zero divisor, and of dimension
+four at the origin; the ranks are four minus those dimensions.</p>
+<p><strong>Example.</strong> For the pure zero divisor $\tilde Q=e_1+ie_2$, of central square $1-1=0$, the
+annihilator is the complex plane
+$$
+A_\star(e_1+ie_2)=\mathbb{C}\{e_1-ie_2,\ e_3\}=\mathbb{C}\{\tilde Q^{\natural},\ e_3\},
+$$
+and for the non-pure zero divisor $\tilde Q=e_0+ie_1$, of central square $1-1=0$, the annihilator
+is the complex line
+$$
+A_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1\}=\mathbb{C}\tilde Q.
+$$</p>
+<h2 id="the-dichotomy">The Dichotomy</h2>
+<p>The zero-divisor set of the block is the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, one
+equation, and the annihilator reads its two families apart: the pure family annihilates a complex
+plane and the non-pure family a complex line, and the operator has rank two on the first and three
+on the second. The block is the conjugation-free twin of the antisymmetric plain sesqualgebra,
+whose annihilator is likewise a plane in one case and a line in the other; the difference is that
+the antisymmetric block reads the second case as a plane in the non-degenerate direction, while
+here the second case is the line $\mathbb{C}\tilde Q^{\natural}$ of the isotropic element, exactly
+as in the symmetric plain algebra. The three blocks carry the same pair of annihilator shapes.</p>
+<h2 id="the-annihilator-on-the-remarkable-subspaces">The Annihilator on the Remarkable Subspaces</h2>
+<p><strong>The centre.</strong> A nonzero central element $\tilde P=\lambda e_0$ has central square
+$\lambda^{2}\neq0$, so it is regular and its annihilator is $\{0\}$: the centre annihilates
+nothing.</p>
+<p><strong>The vector subspace.</strong> A nonzero pure element $\tilde P=\mathbf P$ has the plane annihilator
+above; inside the vector subspace the annihilator falls to the line through the element, because
+the single equation $\sum_kP_k\overline{X_k}=0$ restricted to the vector subspace leaves that line.</p>
+<p><strong>The conjugate-changed subspaces.</strong> The star in the second slot exchanges an element and its
+conjugate, so on the Hermitian subspace, where the star fixes the vector part, the annihilator of a
+nonzero pure Hermitian element is again a complex plane, and on the anti-Hermitian subspace it is
+the conjugate plane read off the same equation.</p>
+<h2 id="summary">Summary</h2>
+<p>The annihilator of an element in a product is the set of partners the element kills, the left and
+the right annihilator being the kernels of the left and the right multiplication. The symmetric
+quaternionic sesquimultiplication is conjugate-commutative, so the two annihilators of an element
+coincide. The zero divisors of the block are the elements of the cone $C(\tilde Q)=0$: a pure zero
+divisor annihilates the complex plane $\{\tilde R:R_0=0,\ \sum_kQ_k\overline{R_k}=0\}$ and a
+non-pure zero divisor annihilates the complex line $\mathbb{C}\tilde Q^{\natural}$, and an element
+off the cone is regular. The annihilator separates the two families that the criterion joins, and
+the operator has rank two on the pure family and three on the non-pure family.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}})$</td>
+<td>the symmetric quaternionic sesquimultiplication, the operation $\mathrm{SQS}$</td>
+</tr>
+<tr>
+<td>$A_\star(\tilde P),B_\star(\tilde P)$</td>
+<td>the left and the right annihilator, equal because the block is conjugate-commutative</td>
+</tr>
+<tr>
+<td>$L_{\tilde P}$</td>
+<td>the left multiplication operator, whose kernel is the annihilator</td>
+</tr>
+<tr>
+<td>$\{\tilde R:R_0=0,\ \sum_kP_k\overline{R_k}=0\}$</td>
+<td>the annihilator of a nonzero pure element, a complex plane</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\tilde Q^{\natural}$</td>
+<td>the annihilator of a non-pure zero divisor, a complex line</td>
+</tr>
+<tr>
+<td>$C(\tilde P)=\sum_\mu P_\mu^{2}$</td>
+<td>the central square, the criterion of the cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), §<em>The Zero Divisor and the Annihilator</em>, for the zero divisor and the annihilator of a general product.</li>
+<li><em>Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md</code>), for the operation and its conjugate-commutativity.</li>
+<li><em>Zero Divisors of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md</code>), above this article in this category, for the criterion and the two families.</li>
+<li><em>The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md</code>), for the operator calculus on which the rank is read.</li>
+<li><em>Annihilators of the Symmetric Plain Algebra</em> (<code>articles_maths/annihilators-of-the-symmetric-plain-algebra.md</code>), the bilinear twin, with the same pair of annihilator shapes.</li>
+<li><em>Annihilators of the Antisymmetric Plain Sesqualgebra</em> (<code>articles_maths/annihilators-of-the-antisymmetric-plain-sesqualgebra.md</code>), the conjugation-free sibling, whose annihilator is a line or a plane.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

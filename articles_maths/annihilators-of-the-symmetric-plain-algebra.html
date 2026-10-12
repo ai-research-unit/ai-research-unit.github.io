@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annihilators of the Symmetric Plain Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="annihilators-of-the-symmetric-plain-algebra"><strong>Annihilators of the Symmetric Plain Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The zero divisor of a product is a property of one element alone: it says that <em>some</em> nonzero
+partner exists that the element kills. The annihilator says <em>which</em> partners those are, and it is
+the finer object. It is the set of elements killed by a fixed element,
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
+$$
+the left and the right annihilator (<em>Definitions for the Study of the 12 Algebraic Structures</em>,
+§<em>The Zero Divisor and the Annihilator</em>). When the product is carried by a multiplication operator
+the annihilator is the kernel of that operator, so it is a linear subspace.</p>
+<p>The block of this article is the <strong>symmetric plain multiplication</strong>
+$$
+\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
+=\bigl[P_0Q_0-(\mathbf P,\mathbf Q)\bigr]+P_0\mathbf Q+Q_0\mathbf P,
+$$
+the Jordan product (<em>Introduction to the Symmetric Plain Algebra of Biquaternions</em>). It is
+commutative, so the left and the right multiplication by an element are one operator and the two
+annihilators of the element are one set. The zero-divisor set of the block is the union of the
+vector subspace and the central-square cone, the two clauses of one criterion (<em>Zero Divisors of
+the Symmetric Plain Algebra</em>, above this article in this category). The annihilator keeps the two
+families apart: a pure element annihilates a plane and an element of the cone with nonzero scalar
+part annihilates a line. The article owns that reading, the operator with its rank, and the shape
+of the annihilator on the remarkable subspaces; the zero-divisor set and its criterion are the
+cited article's.</p>
+<h2 id="the-annihilator-of-a-product">The Annihilator of a Product</h2>
+<p><strong>Definition (annihilator).</strong> Let $\star$ be a product on $\mathbb{B}$ and let
+$\tilde Q\in\mathbb{B}$. The <strong>left annihilator</strong> and the <strong>right annihilator</strong> of $\tilde Q$ in
+$\star$ are
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
+$$
+They are the kernels of the left and the right multiplication, and they are nonzero exactly when
+$\tilde Q$ is a zero divisor of the corresponding side.</p>
+<p>Throughout this article the product is the <strong>symmetric plain multiplication</strong> $\bullet$, and
+unqualified, <em>annihilator</em> means the annihilator of $\bullet$. The left and the right
+multiplication of the block are the operator
+$$
+L_{\tilde P}\tilde X=\tilde P\bullet\tilde X,\qquad
+R_{\tilde P}\tilde X=\tilde X\bullet\tilde P,
+$$
+and the block is its own twin, the <strong>general plain bilinear product</strong>, whose annihilators are
+<em>Annihilators of the General Plain Algebra</em>.</p>
+<h2 id="the-two-annihilators-coincide">The Two Annihilators Coincide</h2>
+<p><strong>Proposition (the two annihilators coincide).</strong> For every $\tilde P$,
+$$
+B_\bullet(\tilde P)=A_\bullet(\tilde P)=\ker L_{\tilde P}.
+$$</p>
+<p><em>Proof.</em> The block is commutative, $\tilde X\bullet\tilde P=\tilde P\bullet\tilde X$, so
+$\tilde X\bullet\tilde P=0$ exactly when $\tilde P\bullet\tilde X=0$; the two annihilators are
+therefore one set, and it is the kernel of the one operator of the block,
+$L_{\tilde P}=R_{\tilde P}$.</p>
+<h2 id="the-multiplication-operator-and-the-rank">The Multiplication Operator and the Rank</h2>
+<p><strong>Proposition (the operator and its characteristic polynomial).</strong> In the basis $e_0,e_1,e_2,e_3$
+the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has matrix
+$$
+\begin{pmatrix}
+P_0 & -P_1 & -P_2 & -P_3 \\
+P_1 & P_0 & 0 & 0 \\
+P_2 & 0 & P_0 & 0 \\
+P_3 & 0 & 0 & P_0
+\end{pmatrix},
+$$
+its trace is $4P_0$ and its determinant is
+$$
+\det L_{\tilde P}=P_0^{2}\,C(\tilde P),\qquad C(\tilde P)=\sum_{\mu=0}^{3}P_\mu^{2}.
+$$</p>
+<p><em>Proof.</em> The columns are the values $\tilde P\bullet e_j$. The trace is the sum of the diagonal
+entries, $4P_0$; the determinant is the product of the three eigenvalues $P_0$ of the vector part
+with the Schur complement $P_0-(\mathbf P,\mathbf P)/P_0$, namely
+$P_0^{3}\bigl(P_0-(\mathbf P,\mathbf P)/P_0\bigr)=P_0^{2}\bigl(P_0^{2}-(\mathbf P,\mathbf P)\bigr)=P_0^{2}C(\tilde P)$
+when $P_0\neq0$, and by continuity in general.</p>
+<p><strong>Corollary (the rank and the annihilator).</strong> The rank of $L_{\tilde P}$ and the annihilator of
+$\tilde P$ are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde P$</th>
+<th>$C(\tilde P)$</th>
+<th>$\operatorname{rank}L_{\tilde P}$</th>
+<th>$\dim\ker L_{\tilde P}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\tilde P\neq0$, $P_0=0$, $\mathbf P\neq0$</td>
+<td>$(\mathbf P,\mathbf P)\neq0$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\tilde P\neq0$, $P_0\neq0$, $C(\tilde P)=0$</td>
+<td>$0$</td>
+<td>$3$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\tilde P\neq0$, $P_0\neq0$, $C(\tilde P)\neq0$</td>
+<td>$\neq0$</td>
+<td>$4$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> A pure element has $P_0=0$, so the matrix is the direct sum of the zero scalar block and
+the nonzero vector $\mathbf P$, of rank two, and the kernel is the plane of the pure elements
+orthogonal to $\mathbf P$, of dimension two. A non-pure element has $P_0\neq0$: the three vector
+columns are independent and span a three-dimensional space, and the fourth column raises the rank
+to four exactly when $P_0^{2}\neq(\mathbf P,\mathbf P)$, that is exactly when $C(\tilde P)\neq0$.
+At $C(\tilde P)=0$ the fourth column lies in the span of the three, and the rank is three. The last
+case is the origin.</p>
+<h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
+<p>The criterion of the block is the pair of clauses $P_0=0$ or $C(\tilde P)=0$ (<em>Zero Divisors of the
+Symmetric Plain Algebra</em>, §<em>The Two Families</em>). Each clause has its own annihilator.</p>
+<p><strong>Theorem (the annihilator of a pure element).</strong> For a nonzero pure element $\tilde Q=\mathbf Q$,
+$$
+A_\bullet(\tilde Q)=B_\bullet(\tilde Q)
+=\{\tilde X=X_0e_0+\mathbf X:\ X_0=0,\ (\mathbf Q,\mathbf X)=0\},
+$$
+the pure plane orthogonal to the vector part, of complex dimension two. The element belongs to its
+own annihilator and is a nilpotent of index two.</p>
+<p><em>Proof.</em> The product of two pure elements is $\tilde Q\bullet\tilde X=-(\mathbf Q,\mathbf X)e_0$;
+the kernel is the set above, and in the three-dimensional complex vector subspace the single
+equation $(\mathbf Q,\mathbf X)=0$ has a two-dimensional solution space.</p>
+<p><strong>Theorem (the annihilator of an element of the cone with nonzero scalar part).</strong> For a nonzero
+element $\tilde Q$ with $Q_0\neq0$ and $C(\tilde Q)=0$,
+$$
+A_\bullet(\tilde Q)=B_\bullet(\tilde Q)=\mathbb{C}\,\tilde Q^{\natural},
+$$
+the complex line spanned by the natural conjugate.</p>
+<p><em>Proof.</em> The natural conjugate gives $\tilde Q\bullet\tilde Q^{\natural}=C(\tilde Q)e_0=0$, so the
+line $\mathbb{C}\tilde Q^{\natural}$ lies in the annihilator. Every element of the kernel has
+$X_0=0$ and on $\mathbf X$ the single conjugacy-free equation $Q_0\mathbf X=X_0\mathbf Q$ forced by
+the vector part of the product, whose determinant vanishes through the factor $C(\tilde Q)$; the
+kernel is therefore exactly one-dimensional and equal to that line.</p>
+<p><strong>Corollary (the annihilator vanishes off the zero-divisor set).</strong> For an element that is neither
+pure nor of the vanishing central square the annihilator is $\{0\}$: the element is regular.</p>
+<h2 id="the-dichotomy">The Dichotomy</h2>
+<p>The zero-divisor set of the block is the union of the two families, and the criterion is a single
+union that does not separate them. The annihilator does: a pure element annihilates a plane and an
+element of the cone annihilates a line, so the dimension of the annihilator reads the family where
+the criterion does not. The two families are also the two ends of the operator: the plane is the
+kernel of a rank-two operator and the line is the kernel of a rank-three operator, and the jump
+from $2$ to $3$ in the rank is the jump from the rank-two family to the rank-three family. The line
+is the sharpest case: it is $\mathbb{C}\tilde Q^{\natural}$, and up to the scalar it is the set of
+the idempotents of the block (<em>Idempotents of the Symmetric Plain Algebra</em>).</p>
+<h2 id="the-annihilator-on-the-remarkable-subspaces">The Annihilator on the Remarkable Subspaces</h2>
+<p><strong>The centre.</strong> A nonzero central element $\tilde P=\lambda e_0$ has $C(\lambda e_0)=\lambda^{2}$
+and $\mathbf P=0$, so it is regular and its annihilator is $\{0\}$: the centre annihilates nothing.</p>
+<p><strong>The vector subspace.</strong> A nonzero pure element $\tilde P=\mathbf P$ has the plane annihilator
+above. Inside the vector subspace the annihilator falls to the line $\mathbb{C}\mathbf P$: the
+single equation $(\mathbf P,\mathbf X)=0$ is the orthogonal plane of the ambient space, and its
+intersection with the vector subspace is the line through $\mathbf P$.</p>
+<p><strong>The Hermitian and anti-Hermitian subspaces.</strong> On the Hermitian subspace the coefficients satisfy
+$\overline{Q_k}=Q_k$ and the bilinear form $(\mathbf Q,\mathbf X)$ is Hermitian; the annihilator of
+a nonzero pure Hermitian element is again a pure plane, and it contains the real line of the
+element.</p>
+<h2 id="summary">Summary</h2>
+<p>The annihilator of an element in a product is the set of partners the element kills, the left and
+the right annihilator being the kernels of the left and the right multiplication. The symmetric
+plain multiplication is commutative, so the two annihilators of an element coincide and are the
+kernel of the one operator
+$\tilde P\bullet\tilde X=[P_0X_0-(\mathbf P,\mathbf X)]+P_0\mathbf X+X_0\mathbf P$, whose
+determinant is $P_0^{2}C(\tilde P)$. The annihilator keeps apart the two families that the
+zero-divisor criterion joins: a pure element annihilates the complex plane
+$\{\tilde X:X_0=0,\ (\mathbf P,\mathbf X)=0\}$ and an element with $Q_0\neq0$ and $C(\tilde Q)=0$
+annihilates the complex line $\mathbb{C}\tilde Q^{\natural}$, and every other element is regular.
+On the remarkable subspaces the annihilator of a pure element collapses from the ambient plane to
+the line through the element inside the vector subspace, and the centre annihilates nothing.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</td>
+<td>the symmetric plain multiplication, the operation $\mathrm{SPA}$</td>
+</tr>
+<tr>
+<td>$A_\bullet(\tilde P),B_\bullet(\tilde P)$</td>
+<td>the left and the right annihilator of $\tilde P$ in the block, equal because the block is commutative</td>
+</tr>
+<tr>
+<td>$L_{\tilde P}$</td>
+<td>the left multiplication operator, $L_{\tilde P}\tilde X=\tilde P\bullet\tilde X$, whose kernel is the annihilator</td>
+</tr>
+<tr>
+<td>$\det L_{\tilde P}=P_0^{2}C(\tilde P)$, $\operatorname{tr}L_{\tilde P}=4P_0$</td>
+<td>the determinant and the trace of the operator</td>
+</tr>
+<tr>
+<td>$\{\tilde X:X_0=0,\ (\mathbf P,\mathbf X)=0\}$</td>
+<td>the annihilator of a nonzero pure element, a complex plane</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\tilde Q^{\natural}$</td>
+<td>the annihilator of an element with $Q_0\neq0$ and $C(\tilde Q)=0$, a complex line</td>
+</tr>
+<tr>
+<td>$C(\tilde P)=\sum_\mu P_\mu^{2}$</td>
+<td>the central square, the criterion of the second family</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), §<em>The Zero Divisor and the Annihilator</em>, for the zero divisor and the annihilator of a general product.</li>
+<li><em>Introduction to the Symmetric Plain Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-symmetric-plain-algebra-of-biquaternions.md</code>), for the Jordan product, its commutativity and its table.</li>
+<li><em>Zero Divisors of the Symmetric Plain Algebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-plain-algebra.md</code>), above this article in this category, for the criterion and the two families of the zero-divisor set.</li>
+<li><em>Zero Divisors of the General Plain Algebra</em> (<code>articles_maths/zero-divisors-of-the-general-plain-algebra.md</code>), the parent product, whose annihilator is a plane of the cone and vanishes off the cone.</li>
+<li><em>Idempotents of the Symmetric Plain Algebra</em> (<code>articles_maths/idempotents-of-the-symmetric-plain-algebra.md</code>), for the identification of the line $\mathbb{C}\tilde Q^{\natural}$ with the idempotents of the block.</li>
+<li><em>Nilpotents of the Symmetric Plain Algebra</em> (<code>articles_maths/nilpotents-of-the-symmetric-plain-algebra.md</code>), for the square-zero elements, the pure isotropic cone of the block.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

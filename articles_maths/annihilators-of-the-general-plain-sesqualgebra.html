@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annihilators of the General Plain Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="annihilators-of-the-general-plain-sesqualgebra"><strong>Annihilators of the General Plain Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The zero divisor of a product is a property of one element alone: it says that <em>some</em> nonzero
+partner exists that the element kills. The annihilator says <em>which</em> partners those are, and it is
+the finer object. It is the set of elements killed by a fixed element,
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
+$$
+the left and the right annihilator (<em>Definitions for the Study of the 12 Algebraic Structures</em>,
+§<em>The Zero Divisor and the Annihilator</em>). When the product is carried by a multiplication operator
+the annihilator is the kernel of that operator, so it is a linear subspace.</p>
+<p>The block of this article is the <strong>general plain sesquimultiplication</strong>
+$$
+\tilde P\star\tilde Q=\tilde P\tilde Q^{*}
+=\bigl[P_0Q_0-(\mathbf P,\overline{\mathbf Q})\bigr]+P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q},
+$$
+the plain product with the conjugate linear star in the second slot (<em>Introduction to the General
+Plain Sesqualgebra of Biquaternions</em>). Its zero divisors are again the elements of the cone
+$C(\tilde P)=0$ (<em>Zero Divisors of the General Plain Sesqualgebra</em>, above this article in this
+category), and it is the sibling of the general plain algebra, from which it inherits the cone: the
+star in the slot turns the plain annihilator into its conjugate and identifies the two sides. The
+article owns that reading, the operator with its rank, and the shape of the annihilator on the
+remarkable subspaces; the zero-divisor set and its comparison with the parent and the four general
+products are the cited article's.</p>
+<h2 id="the-annihilator-of-a-product">The Annihilator of a Product</h2>
+<p><strong>Definition (annihilator).</strong> Let $\star$ be a product on $\mathbb{B}$ and let
+$\tilde Q\in\mathbb{B}$. The <strong>left annihilator</strong> and the <strong>right annihilator</strong> of $\tilde Q$ in
+$\star$ are
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
+$$
+They are the kernels of the left and the right multiplication, and they are nonzero exactly when
+$\tilde Q$ is a zero divisor of the corresponding side.</p>
+<p>Throughout this article the product is the <strong>general plain sesquimultiplication</strong> $\star$, and
+unqualified, <em>annihilator</em> means the annihilator of $\star$. The one-sided multiplications are the
+operators
+$$
+L_{\tilde P}\tilde X=\tilde P\tilde X^{*},\qquad
+R_{\tilde P}\tilde X=\tilde X\tilde P^{*},
+$$
+both conjugate-linear in $\tilde X$ because the star is, with kernel a complex subspace. The block
+is the sibling of the general plain algebra, whose annihilators are <em>Annihilators of the General
+Plain Algebra</em>.</p>
+<h2 id="the-two-annihilators-coincide">The Two Annihilators Coincide</h2>
+<p><strong>Theorem (the two annihilators are equal, and they are the conjugate of the plain annihilator).</strong>
+For every $\tilde Q$,
+$$
+B_\star(\tilde Q)=A_\star(\tilde Q)=\bigl\{\tilde Z^{*}:\tilde Z\in K(\tilde Q)\bigr\}=K(\tilde Q)^{*},
+\qquad K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\},
+$$
+where $K(\tilde Q)$ is the plain left annihilator of $\tilde Q$ and $K(\tilde Q)^{*}$ is its image
+under the involution. For a nonzero zero divisor the two annihilators are equal and of complex
+dimension two; for a unit of the plain product both are $\{0\}$.</p>
+<p><em>Proof.</em> The right annihilator is
+$B_\star(\tilde Q)=\{\tilde X:\tilde Q\tilde X^{*}=0\}=\{\tilde X:\tilde X^{*}\in K(\tilde Q)\}=K(\tilde Q)^{*}$,
+the star being a bijection. For the left annihilator, $\tilde X\star\tilde Q=0$ reads
+$\tilde X\tilde Q^{*}=0$, and applying the anti-automorphism ${}^{*}$ gives
+$\tilde Q\tilde X^{*}=0$, with the converse by the same argument because ${}^{*}$ is a bijection;
+the two sets are therefore equal. The dimension is that of the plain annihilator, two on the cone
+and zero off it.</p>
+<p><strong>Example.</strong> For the zero divisor $\tilde Q=e_0+ie_1$, of central square $1-1=0$, the common
+annihilator is
+$$
+A_\star(e_0+ie_1)=\mathbb{C}\{e_1+ie_0,\ e_2+ie_3\}.
+$$</p>
+<h2 id="the-multiplication-operator-and-the-rank">The Multiplication Operator and the Rank</h2>
+<p>The two one-sided multiplications are conjugate-linear, so they have no determinant in the complex
+sense; what is read is the rank, the complex dimension of the image, which is half the real rank of
+the underlying real-linear map.</p>
+<p><strong>Corollary (the rank and the annihilator).</strong> The rank of $L_{\tilde P}$ and the annihilator of
+$\tilde P$ are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde P$</th>
+<th>$C(\tilde P)$</th>
+<th>$\operatorname{rank}L_{\tilde P}$</th>
+<th>$\dim\ker L_{\tilde P}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\tilde P\neq0$, $C(\tilde P)\neq0$</td>
+<td>$\neq0$</td>
+<td>$4$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\tilde P\neq0$, $C(\tilde P)=0$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The star is a bijection, so $L_{\tilde P}$ has the same rank and kernel as the plain
+multiplication $\tilde Z\mapsto\tilde P\tilde Z$, whose rank is four for a unit and two for a
+nonzero zero divisor; the kernel dimension is $4$ minus the rank.</p>
+<h2 id="the-dichotomy-by-the-cone">The Dichotomy by the Cone</h2>
+<p>The zero-divisor set of the block is the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, the same
+cone as the parent. The annihilator reads the cone twice, as in the parent: off the cone both
+annihilators are $\{0\}$ and the element is a unit of the plain product, and on the cone each is a
+complex plane. What the star changes is the coincidence: the two annihilators are equal, and they
+are the conjugate of the plain annihilator, whereas in the parent they are distinct. The block is
+the sibling of the general quaternionic algebra, whose $\mathbb{C}$-linear involution does the same
+work, and it is the sibling of the antipodal <em>Annihilators of the General Quaternionic
+Sesqualgebra</em>, whose two sides are again distinct.</p>
+<h2 id="the-annihilator-on-the-remarkable-subspaces">The Annihilator on the Remarkable Subspaces</h2>
+<p><strong>The centre.</strong> A nonzero central element $\tilde P=\lambda e_0$ has
+$L_{\lambda e_0}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with
+$\tilde X^{*}=0$, that is $\{0\}$: the central elements are units of the plain product and their
+annihilator is $\{0\}$.</p>
+<p><strong>The vector subspace.</strong> A nonzero pure element $\tilde P=\mathbf P$ has
+$C(\tilde P)=(\mathbf P,\mathbf P)$; it is a zero divisor of the cone exactly when the vector part
+is isotropic, and then the annihilators are the conjugate of the plain annihilator of $\mathbf P$,
+a complex plane.</p>
+<p><strong>The conjugate-changed subspaces.</strong> The star in the second slot exchanges the element and its
+conjugate, so on the Hermitian subspace, where the star fixes the vector part, the annihilator of a
+nonzero Hermitian zero divisor is the conjugate of its plain annihilator in the same subspace.</p>
+<h2 id="summary">Summary</h2>
+<p>The annihilator of an element in a product is the set of partners the element kills, the left and
+the right annihilator being the kernels of the left and the right multiplication. The general plain
+sesquimultiplication $\tilde P\star\tilde X=\tilde P\tilde X^{*}$ carries the conjugate linear star
+in the slot, and the conjugate-alternation identifies the two sides: the two annihilators of an
+element are equal and are the conjugate of the plain annihilator
+$K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$. Off the cone both annihilators vanish and the
+element is a unit of the plain product; on the cone each is a complex plane. The block is the plain
+parent with the star added, and the star is exactly what turns the two distinct planes of the
+parent into one plane.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$</td>
+<td>the general plain sesquimultiplication, the operation $\mathrm{GPS}$, the plain product with the star in the second slot</td>
+</tr>
+<tr>
+<td>$A_\star(\tilde P),B_\star(\tilde P)$</td>
+<td>the left and the right annihilator, equal by the conjugate-alternation</td>
+</tr>
+<tr>
+<td>$K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$</td>
+<td>the plain left annihilator, the parent's object</td>
+</tr>
+<tr>
+<td>$K(\tilde Q)^{*}$</td>
+<td>the common annihilator of the block, the conjugate of the plain annihilator</td>
+</tr>
+<tr>
+<td>$C(\tilde P)=\sum_\mu P_\mu^{2}$</td>
+<td>the central square, the criterion of the cone</td>
+</tr>
+<tr>
+<td>the complex plane on the cone</td>
+<td>the annihilator of a nonzero zero divisor, of dimension two</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), §<em>The Zero Divisor and the Annihilator</em>, for the zero divisor and the annihilator of a general product.</li>
+<li><em>Introduction to the General Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md</code>), for the operation and its table.</li>
+<li><em>Zero Divisors of the General Plain Sesqualgebra</em> (<code>articles_maths/zero-divisors-of-the-general-plain-sesqualgebra.md</code>), above this article in this category, for the criterion and the two families.</li>
+<li><em>Zero Divisors of the General Plain Algebra</em> (<code>articles_maths/zero-divisors-of-the-general-plain-algebra.md</code>), the parent, whose two annihilators are distinct.</li>
+<li><em>Annihilators of the General Plain Algebra</em> (<code>articles_maths/annihilators-of-the-general-plain-algebra.md</code>), the parent's annihilators, the two distinct planes.</li>
+<li><em>Annihilators of the General Quaternionic Sesqualgebra</em> (<code>articles_maths/annihilators-of-the-general-quaternionic-sesqualgebra.md</code>), the sibling whose two sides are distinct again.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Divisors of the General Plain Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="zero-divisors-of-the-general-plain-algebra"><strong>Zero Divisors of the General Plain Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article studies the zero divisors of the quaternion algebra $\mathbb{H}$. It follows <em>Norm and
+Invertibility in the General Plain Algebra</em>, above this article in this category, which established
+the criterion for invertibility and the three-way classification of the elements of $\mathbb{H}$, and
+it opens the element theory of the block: the two families into which the zero divisors of the
+complexified block separate have their real counterparts in <em>Idempotents of the General Plain
+Algebra</em> and <em>Nilpotents of the General Plain Algebra</em>, both below this article in this category, and
+the vocabulary of pure and non-pure is used throughout. The goal here is to characterise the zero
+divisors <strong>of the general plain bilinear product</strong>, to name the two families the complexified theory
+separates, and to prove that over $\mathbb{R}$ both are empty.</p>
+<p>A divisor is relative to a product. The definition is stated once for a general product in
+<em>Definitions for the Study of the 6 Algebraic Structures</em>, §<em>The Element Vocabulary</em>; the unqualified
+"zero divisor" means "zero divisor of the general plain bilinear product", the multiplication of the
+general plain algebra, and every other product is named.</p>
+<p>Every claim is proved or stated as a definition, no physics is invoked and no examples are given.
+The algebra $\mathbb{H}$, its natural conjugation and its remarkable subspaces are assumed from
+<em>Introduction to the General Plain Algebra of Quaternions</em>, <em>The Two General Products of the
+Quaternion $\mathbb{R}$ Space</em> and <em>Introduction to the Remarkable Subspaces of the Quaternions</em>,
+and the invertibility criterion and the quaternion norm from <em>Norm and Invertibility in the General
+Plain Algebra</em>. The annihilator of an element, the two multiplication operators and their rank are
+<em>Annihilators of the General Plain Algebra</em>, below this article in this category.</p>
+<h2 id="conventions">Conventions</h2>
+<p>Throughout this article the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, with
+$e_k^2 = -e_0$ and $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$. A general quaternion is</p>
+<p>$$
+\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0 e_0 + \mathbf q,
+\qquad \mathbf q = q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R},
+$$</p>
+<p>with <strong>scalar part</strong> $q_0 = \mathrm{Sc}(\tilde q)$ and <strong>vector part</strong> $\mathbf q$. The natural
+conjugation is $\tilde q^{\natural} = q_0 e_0 - \mathbf q$. Over $\mathbb{R}$ the bar is the identity
+and the star coincides with the natural conjugation, so the chapter has exactly two general products,
+the plain one $\tilde p\tilde q$ and the quaternionic one $\tilde p^{\natural}\tilde q$; the plain
+product is the one of this article. A product of the space is written $\star$ when the statement is
+one about an arbitrary product and only the fact that it is a product is used, as in §<em>Definition</em>.</p>
+<p>The plain form is $B(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q) = p_0q_0 - (\mathbf p,\mathbf q)$,
+indefinite of signature $(1,3)$; the quaternion form is
+$N(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p^{\natural}\tilde q) = p_0q_0 + (\mathbf p,\mathbf q)$,
+positive definite. The <strong>quaternion norm</strong> is
+$N(\tilde q) = \tilde q\tilde q^{\natural} = \tilde q^{\natural}\tilde q = q_0^2 + |\mathbf q|^2$,
+a positive real vanishing only at $\tilde q = 0$, and it is multiplicative,
+$N(\tilde p\tilde q) = N(\tilde p)N(\tilde q)$, by <em>Norm and Invertibility in the General Plain
+Algebra</em>, above this article in this category. The centre is the scalar line $\mathbb{R}e_0$; the
+vector subspace is $\mathrm{Vect}(\mathbb{H}) = \{\mathbf q\}$, of dimension three. The two forms are
+<em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>.</p>
+<h2 id="definition">Definition</h2>
+<p><strong>Definition.</strong> Let $\star$ be a product on $\mathbb{H}$ and let $\tilde q\in\mathbb{H}$. The element
+$\tilde q$ is a <strong>left zero divisor of $\star$</strong> when $\tilde q\neq0$ and there is a nonzero
+$\tilde r$ with $\tilde q\star\tilde r = 0$; it is a <strong>right zero divisor of $\star$</strong> when
+$\tilde q\neq0$ and there is a nonzero $\tilde r$ with $\tilde r\star\tilde q = 0$; and it is a
+<strong>zero divisor of $\star$</strong> when it is one or the other. An element that is both a left and a right
+zero divisor of $\star$ is a <strong>two-sided zero divisor of $\star$</strong>.</p>
+<p>The requirement that both $\tilde q$ and $\tilde r$ be nonzero is essential. In particular, the
+element $\tilde q = 0$ is <strong>not</strong> a zero divisor of any product, even though
+$0\star\tilde r = 0$ for any $\tilde r$.</p>
+<p><strong>On the products of the space.</strong> Substituting the product for $\star$ gives one definition to a
+product. On the general plain bilinear product the two equations are $\tilde q\tilde r = 0$ and
+$\tilde r\tilde q = 0$; on $\tilde p^{\natural}\tilde q$ they are $\tilde q^{\natural}\tilde r = 0$
+and $\tilde r^{\natural}\tilde q = 0$; and the cross product has every nonzero element as a zero
+divisor, since $\tilde q\wedge\tilde q = 0$. Throughout the rest of this article, unqualified, the
+product is the general plain bilinear product. A product that has a two-sided unit and no zero
+divisor is a <strong>division rule</strong>, and an algebra whose product is a division rule is a <strong>division
+algebra</strong>; the theorem of §<em>The Criterion Is Never Satisfied Off the Origin</em> shows that the plain
+product is one, so every nonzero element of the plain product is a unit.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p>The complexified block decides its zero divisors by the vanishing of $\tilde Q\tilde Q^{\natural}$,
+and the same criterion holds here, but its conclusion is reversed by the positivity of the norm.</p>
+<p><strong>Theorem (the criterion for the general plain bilinear product).</strong> For the plain product, a nonzero
+quaternion $\tilde q$ is a zero divisor if and only if the product $\tilde q\tilde q^{\natural}$
+vanishes:</p>
+<p>$$
+\tilde q\tilde q^{\natural} = 0.
+$$</p>
+<p><strong>Proof.</strong> Suppose $\tilde q \neq 0$ and $\tilde q\tilde q^{\natural} = 0$. Since $\tilde q \neq 0$
+we also have $\tilde q^{\natural} \neq 0$. So $\tilde r = \tilde q^{\natural}$ is a nonzero
+quaternion with $\tilde q\tilde r = 0$, and $\tilde q$ is a zero divisor.</p>
+<p>Conversely, suppose $\tilde q$ is a zero divisor: there is a nonzero $\tilde r$ with
+$\tilde q\tilde r = 0$ or with $\tilde r\tilde q = 0$. If $\tilde q\tilde q^{\natural} \neq 0$ then
+$\tilde q$ is invertible by the invertibility criterion. In the first case multiplying
+$\tilde q\tilde r = 0$ on the left by $\tilde q^{-1}$ gives $\tilde r = 0$; in the second case
+multiplying $\tilde r\tilde q = 0$ on the right by $\tilde q^{-1}$ gives $\tilde r = 0$. Either way a
+contradiction, so $\tilde q\tilde q^{\natural} = 0$.</p>
+<p>The proof uses the plain product twice: the zero-divisor equation is the plain one, and the inverse
+is the inverse of the plain product, the only one of the two general products that has a two-sided
+unit. Neither ingredient is available for the quaternionic product, and that is why the criterion is
+a plain-product criterion.</p>
+<h2 id="the-criterion-is-never-satisfied-off-the-origin">The Criterion Is Never Satisfied Off the Origin</h2>
+<p>Over $\mathbb{R}$ the criterion has no solution away from the origin, because the product
+$\tilde q\tilde q^{\natural}$ is the quaternion norm.</p>
+<p><strong>Theorem (the zero-divisor set is empty).</strong> For the general plain bilinear product, the only
+quaternion with $\tilde q\tilde q^{\natural} = 0$ is $\tilde q = 0$. Consequently $\mathbb{H}$ has no
+zero divisor: $\tilde p\tilde q = 0$ forces $\tilde p = 0$ or $\tilde q = 0$.</p>
+<p><strong>Proof.</strong> By the quaternion norm, $\tilde q\tilde q^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2$, a
+sum of squares of real numbers. It vanishes only when every $q_\mu$ vanishes, that is at
+$\tilde q = 0$. Since a zero divisor is required to be nonzero, and every nonzero $\tilde q$ has
+$\tilde q\tilde q^{\natural} > 0$, the criterion admits no element. For the annihilating equation, if
+$\tilde p\tilde q = 0$ with $\tilde q \neq 0$, multiplying on the right by $\tilde q^{-1}$ gives
+$\tilde p = 0$; the case $\tilde p \neq 0$ is the same with the inverse on the left.</p>
+<h2 id="the-three-way-classification">The Three-Way Classification</h2>
+<p>Combining the criterion for invertibility from the preceding article with the criterion for zero
+divisors, the elements of $\mathbb{H}$ are partitioned into three classes, and over $\mathbb{R}$ the
+middle class collapses.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Condition on $\tilde q\tilde q^{\natural}$</th>
+<th>Condition on $\tilde q$</th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde q\tilde q^{\natural} \neq 0$</td>
+<td>(automatically $\tilde q \neq 0$)</td>
+<td>$\tilde q$ is invertible</td>
+</tr>
+<tr>
+<td>$\tilde q\tilde q^{\natural} = 0$</td>
+<td>$\tilde q = 0$</td>
+<td>$\tilde q$ is the zero element</td>
+</tr>
+<tr>
+<td>$\tilde q\tilde q^{\natural} = 0$</td>
+<td>$\tilde q \neq 0$</td>
+<td>$\tilde q$ is a zero divisor</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third row is empty: the second row exhausts the vanishing of $\tilde q\tilde q^{\natural}$. The
+classification therefore has the same three slots as the complexified block but one of them is empty,
+and every nonzero quaternion lies in the first row. This is the classification table of <em>Norm and
+Invertibility in the General Plain Algebra</em>, above this article in this category, read against the
+criterion.</p>
+<h2 id="the-algebra-is-a-division-algebra">The Algebra Is a Division Algebra</h2>
+<p>By the vocabulary of <em>Definitions for the Study of the 6 Algebraic Structures</em>, a product with no
+zero divisor and a two-sided unit is a <strong>division rule</strong>, and an algebra whose product is a division
+rule is a <strong>division algebra</strong>. For the finite-dimensional algebra $\mathbb{H}$, the two clauses of
+the criterion agree: if every nonzero element is invertible then no nonzero element can annihilate
+another, and conversely if there are no zero divisors then every nonzero element has an inverse by
+the criterion above.</p>
+<p>The quaternion algebra $\mathbb{H}$ contains no zero divisors, so it is a <strong>division algebra</strong>. This
+is the point at which the real block separates from the complexified one: the biquaternion algebra
+$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a genuine hypersurface of zero
+divisors, while $\mathbb{H}$ carries none. The reason is exactly the signature of the two norms. The
+biquaternion norm is the same sum of squares $\sum_\mu Q_\mu^2$, but computed in the complex
+coefficients, so it vanishes on a complex cone of real dimension six; over $\mathbb{R}$ the same
+expression is a sum of squares of real numbers and is positive definite, so the cone shrinks to the
+origin.</p>
+<p><strong>Theorem (Frobenius).</strong> Every finite-dimensional associative division algebra over $\mathbb{R}$ is
+isomorphic to $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$.</p>
+<p><em>Proof.</em> Quoted as standard. The dimension count is $1,2,4$, and $\mathbb{H}$ is the
+largest-dimensional associative one; the statement and its companions are <em>The Specificities of the
+General Plain Algebra</em>, below this article in this category.</p>
+<h2 id="the-two-families-of-the-complexified-block">The Two Families of the Complexified Block</h2>
+<p>The complexified block splits its zero divisors into two families according to the value of the
+scalar part $Q_0$. A biquaternion is <strong>pure</strong> when $Q_0 = 0$ and <strong>non-pure</strong> when $Q_0 \neq 0$, and
+the criterion reads differently in the two cases. Writing $\tilde Q = Q_0 e_0 + \mathbf Q$ with
+$\mathbf Q$ a complex vector part,</p>
+<p>$$
+\tilde Q\tilde Q^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + (\mathbf Q,\mathbf Q),
+$$</p>
+<p>so in the pure case the scalar contribution drops out and the condition is the isotropy of the
+complex vector part, while in the non-pure case the scalar contribution can cancel the vector one.
+The pure zero divisors are the nonzero nilpotents and the non-pure ones are the nonzero complex
+multiples of the idempotents.</p>
+<p>Over $\mathbb{R}$ the two families inherit the split but lose their elements, and for the same reason
+in both cases: the criterion becomes the vanishing of a sum of squares of real coefficients.</p>
+<p><strong>Proposition (the pure family is empty).</strong> A pure quaternion $\mathbf p$ has
+$\mathbf p\mathbf p^{\natural} = |\mathbf p|^2 e_0$ and $\mathbf p^2 = -|\mathbf p|^2 e_0$, so</p>
+<p>$$
+\mathbf p^2 = 0 \quad\Longleftrightarrow\quad |\mathbf p|^2 = p_1^2 + p_2^2 + p_3^2 = 0
+\quad\Longleftrightarrow\quad \mathbf p = 0 .
+$$</p>
+<p>So there is no nonzero pure zero divisor, and the pure family of the complexified block has no real
+member.</p>
+<p><strong>Proof.</strong> For a pure quaternion the product with its conjugate is
+$\mathbf p\mathbf p^{\natural} = |\mathbf p|^2 e_0$ and the square is
+$\mathbf p^2 = -(\mathbf p,\mathbf p)e_0 = -|\mathbf p|^2 e_0$, as the coordinate rule gives directly.
+A sum of three squares of real numbers vanishes only at $\mathbf p = 0$.</p>
+<p><strong>Proposition (the non-pure family is empty).</strong> A quaternion with $q_0 \neq 0$ has</p>
+<p>$$
+\tilde q\tilde q^{\natural} = q_0^2 + |\mathbf q|^2 \geq q_0^2 > 0 ,
+$$</p>
+<p>so it satisfies the criterion at no point. There is no non-pure zero divisor.</p>
+<p><strong>Proof.</strong> The scalar contribution $q_0^2$ is strictly positive and the vector contribution
+$|\mathbf q|^2$ is nonnegative; their sum cannot vanish when $q_0 \neq 0$.</p>
+<p><strong>Corollary.</strong> Both families of the complexified block are empty over $\mathbb{R}$, and the
+zero-divisor set of the plain product is empty. The two families, read on the real algebra, are the
+classes of <em>Idempotents of the General Plain Algebra</em> and <em>Nilpotents of the General Plain Algebra</em>,
+below this article in this category: the idempotent class is the pair $\{0, e_0\}$, and the nilpotent
+class is empty, with square-zero set the single point $0$.</p>
+<h2 id="the-zero-divisor-set">The Zero Divisor Set</h2>
+<p>The zero divisor set $\mathcal{Z} \subset \mathbb{H}$ is</p>
+<p>$$
+\mathcal{Z} = \{\tilde q \in \mathbb{H} : \tilde q \neq 0, \; \tilde q\tilde q^{\natural} = 0\} = \varnothing .
+$$</p>
+<p>It is the complement of the invertible elements in the complement of the zero element,
+$\mathcal{Z} = \mathbb{H} \setminus (\{0\} \cup \mathbb{H}^\times)$, and here that complement is empty
+because $\mathbb{H}^\times = \mathbb{H}\setminus\{0\}$.</p>
+<p>The complexified block reads the same formula as a complex hypersurface: the single complex equation
+$\tilde Q\tilde Q^{\natural} = 0$ in the four complex coefficients has complex dimension $3$ and real
+dimension $6$. Over $\mathbb{R}$ the equation is the quadratic form
+$q_0^2 + q_1^2 + q_2^2 + q_3^2 = 0$, whose real vanishing locus is the single point $0$; the origin is
+excluded from the zero-divisor set by the requirement that the element be nonzero, and what is left is
+nothing. The cone of the complexified block meets the real space only at the origin.</p>
+<p><strong>Remark (the cone is a point, and the point is excluded).</strong> The comparison is worth stating in one
+line. In $\mathbb{C}^4$ the equation cuts a three-complex-dimensional cone with the origin removed;
+in $\mathbb{R}^4$ the same equation cuts the origin alone, and the definition of the zero divisor
+removes it. The dimension drop is not a loss of rigour but the whole content of positive
+definiteness: the biquaternion norm can vanish on a nonzero element, the quaternion norm cannot.</p>
+<h2 id="the-zero-divisors-and-the-remarkable-subspaces">The Zero Divisors and the Remarkable Subspaces</h2>
+<p>A zero divisor is an element on which $\tilde q\tilde q^{\natural}$ vanishes, so which subspaces
+contain zero divisors is the question of where the norm vanishes. Of the remarkable subspaces, the
+centre $\mathbb{R}e_0$ contains none: on the centre $N(s e_0) = s^2$ vanishes only at $s = 0$. The
+vector subspace $\mathrm{Vect}(\mathbb{H})$ contains none: on it $N(\mathbf q) = |\mathbf q|^2$
+vanishes only at $\mathbf q = 0$. No other subspace is any different, the norm being positive
+definite on the whole space. So every remarkable subspace is free of zero divisors, and the only
+element of the space on which the criterion is satisfied is the origin, which is not a zero divisor by
+the definition of §<em>Definition</em>. The reading on the two subspaces is <em>Introduction to the Remarkable
+Subspaces of the Quaternions</em>, and the two restrictions of the norm are <em>The 2 Algebraic Norms over
+the Quaternion $\mathbb{R}$ Space</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The zero divisors of the quaternion algebra are the nonzero elements on which
+$\tilde q\tilde q^{\natural}$ vanishes. Over $\mathbb{R}$ that product is the quaternion norm
+$q_0^2 + q_1^2 + q_2^2 + q_3^2$, a sum of squares of real numbers, so it vanishes only at the origin;
+the criterion admits no element, the zero divisor set is the <strong>empty set</strong>, and the algebra is a
+<strong>division algebra</strong>. The three-way classification of the elements keeps its invertible and zero
+slots and loses its zero-divisor slot, and every nonzero quaternion is a unit,
+$\tilde q^{-1} = \tilde q^{\natural}/N(\tilde q)$.</p>
+<p>This is the opposite of the complexified block, whose zero divisors form the punctured complex cone
+$\{N = 0\}$ of complex dimension three and real dimension six, split into the pure nilpotent family
+and the non-pure idempotent family. The complexified cone is empty over $\mathbb{R}$ because the
+quaternion norm is positive definite, and the two families read on the real algebra are the classes of
+<em>Idempotents of the General Plain Algebra</em> and <em>Nilpotents of the General Plain Algebra</em>, below this
+article in this category: the idempotents are $0$ and $e_0$, and the nilpotent class is empty, its
+square-zero set being the single point $0$. Of the
+remarkable subspaces, the centre and the vector subspace contain none, and no nonzero element of
+either is a zero divisor.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Quaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde q = \sum_\mu q_\mu e_\mu$</td>
+<td>General quaternion</td>
+</tr>
+<tr>
+<td>$\tilde q^{\natural} = q_0 e_0 - \mathbf q$</td>
+<td>Natural conjugation</td>
+</tr>
+<tr>
+<td>$N(\tilde q) = \tilde q\tilde q^{\natural} = \sum_\mu q_\mu^2$</td>
+<td>Quaternion norm, positive definite over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\tilde q\tilde q^{\natural} = 0$</td>
+<td>Algebraic criterion for a zero divisor</td>
+</tr>
+<tr>
+<td>$\mathcal{Z} = \varnothing$</td>
+<td>Zero divisor set</td>
+</tr>
+<tr>
+<td>$\tilde\Pi^2 = \tilde\Pi$</td>
+<td>Idempotent equation</td>
+</tr>
+<tr>
+<td>$\tilde q^2 = 0$</td>
+<td>Square-zero equation</td>
+</tr>
+<tr>
+<td>$\mathbb{R}e_0$</td>
+<td>The centre, the scalar line</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{H})$</td>
+<td>The vector subspace</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 6 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md</code>), §<em>The Element Vocabulary</em>, for the product-relative definition of the zero divisor and of the division rule.</li>
+<li><em>Norm and Invertibility in the General Plain Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md</code>), for the quaternion norm, its multiplicativity, the invertibility criterion and the division property.</li>
+<li><em>Idempotents of the General Plain Algebra</em> (<code>articles_maths/idempotents-of-the-general-plain-algebra-of-quaternions.md</code>) and <em>Nilpotents of the General Plain Algebra</em> (<code>articles_maths/nilpotents-of-the-general-plain-algebra-of-quaternions.md</code>), below this article in this category, for the two classes that the complexified zero-divisor families become over $\mathbb{R}$.</li>
+<li><em>Annihilators of the General Plain Algebra</em> (<code>articles_maths/annihilators-of-the-general-plain-algebra-of-quaternions.md</code>), below this article in this category, for the annihilator of an element, the two multiplication operators and their rank.</li>
+<li><em>Zero Divisors of the General Plain Algebra</em> (<code>articles_maths/zero-divisors-of-the-general-plain-algebra.md</code>), the complexified counterpart, for the punctured cone, its two families and the criterion in the complex coefficients.</li>
+<li><em>The Specificities of the General Plain Algebra</em> (<code>articles_maths/the-specificities-of-the-general-plain-algebra-of-quaternions.md</code>), below this article in this category, for the folding of the empty classes and the isolation of the plain product among the six.</li>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the origin of the quaternion product and its norm.</li>
+<li>Leonard Dickson, <em>Algebras and Their Arithmetics</em> (University of Chicago Press, 1923), for the division property and the structure of the quaternion algebra.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for zero divisors, regular elements and the structure theory of finite-dimensional algebras.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for division rings, their units and their absence of zero divisors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

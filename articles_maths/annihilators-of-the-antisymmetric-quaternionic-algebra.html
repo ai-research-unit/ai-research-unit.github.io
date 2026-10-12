@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annihilators of the Antisymmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="annihilators-of-the-antisymmetric-quaternionic-algebra"><strong>Annihilators of the Antisymmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The zero divisor of a product is a property of one element alone: it says that <em>some</em> nonzero
+partner exists that the element kills. The annihilator says <em>which</em> partners those are, and it is
+the finer object. It is the set of elements killed by a fixed element,
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
+$$
+the left and the right annihilator (<em>Definitions for the Study of the 12 Algebraic Structures</em>,
+§<em>The Zero Divisor and the Annihilator</em>). When the product is carried by a multiplication operator
+the annihilator is the kernel of that operator, so it is a linear subspace.</p>
+<p>The block of this article is the <strong>antisymmetric quaternionic multiplication</strong>
+$$
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde
+P\bigr)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q,
+$$
+scalar part zero and vector part the mixed term with the cross term subtracted (<em>Introduction to
+the Antisymmetric Quaternionic Algebra of Biquaternions</em>). It is alternating, so every nonzero
+element is a two-sided zero divisor with itself as partner and the zero-divisor set is the whole
+punctured space (<em>Zero Divisors of the Antisymmetric Quaternionic Algebra</em>, above this article in
+this category). The annihilator is where the block is not degenerate: it is the line
+$\mathbb{C}\tilde P$ for almost every element and the larger plane only on the zero-divisor cone
+$C(\tilde P)=0$ of the parent product. The article owns that reading, the operator with its
+characteristic polynomial, and the shape of the annihilator on the remarkable subspaces; the
+zero-divisor set and the comparison with the other eleven structures are the cited article's.</p>
+<h2 id="the-annihilator-of-a-product">The Annihilator of a Product</h2>
+<p><strong>Definition (annihilator).</strong> Let $\star$ be a product on $\mathbb{B}$ and let
+$\tilde Q\in\mathbb{B}$. The <strong>left annihilator</strong> and the <strong>right annihilator</strong> of $\tilde Q$ in
+$\star$ are
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
+$$
+They are the kernels of the left and the right multiplication, both nonzero exactly when $\tilde Q$
+is a zero divisor of the corresponding side.</p>
+<p>Throughout this article the product is the <strong>antisymmetric quaternionic multiplication</strong>
+$\diamond$, and unqualified, <em>annihilator</em> means the annihilator of $\diamond$. The left
+multiplication is the operator
+$$
+L_{\tilde P}\tilde X=\tilde P\diamond\tilde X,
+$$
+so that $A_\diamond(\tilde P)=\ker L_{\tilde P}$. The block is the twin of the <strong>antisymmetric
+plain algebra</strong>, whose annihilators are <em>Annihilators of the Antisymmetric Plain Algebra</em>; the two
+twins are the two Lie and near-Lie brackets of the twelve.</p>
+<h2 id="the-two-annihilators-coincide">The Two Annihilators Coincide</h2>
+<p><strong>Proposition (the two annihilators coincide).</strong> For every $\tilde P$,
+$$
+B_\diamond(\tilde P)=A_\diamond(\tilde P)=\ker L_{\tilde P}.
+$$</p>
+<p><em>Proof.</em> The block is alternating, $\tilde X\diamond\tilde P=-\tilde P\diamond\tilde X$, so
+$\tilde X\diamond\tilde P=0$ exactly when $\tilde P\diamond\tilde X=0$; the two annihilators are
+therefore one set, the kernel of $L_{\tilde P}$.</p>
+<h2 id="the-multiplication-operator-and-the-characteristic-polynomial">The Multiplication Operator and the Characteristic Polynomial</h2>
+<p><strong>Proposition (the operator and its characteristic polynomial).</strong> In the basis $e_0,e_1,e_2,e_3$
+the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has matrix
+$$
+\begin{pmatrix}
+0 & 0 & 0 & 0 \\
+-P_1 & P_0 & P_3 & -P_2 \\
+-P_2 & -P_3 & P_0 & P_1 \\
+-P_3 & P_2 & -P_1 & P_0
+\end{pmatrix},
+$$
+its trace is $3P_0$, its determinant is $0$, and its characteristic polynomial is
+$$
+\chi_{L_{\tilde P}}(t)=t\,(t-P_0)\bigl(t^{2}-2P_0t+C(\tilde P)\bigr),\qquad
+C(\tilde P)=\sum_{\mu=0}^{3}P_\mu^{2}.
+$$</p>
+<p><em>Proof.</em> The first column is $-\mathbf P$, because $e_0$ has zero scalar part and the mixed term
+$-X_0\mathbf P$ survives; the remaining three columns are $P_0e_k-\mathbf P\times e_k$. The lower
+three-by-three block is $P_0\mathrm{I}_3-[\mathbf P]_\times$, whose eigenvalues are $P_0$ and
+$P_0\pm is$ with $s^{2}=(\mathbf P,\mathbf P)$, of characteristic polynomial
+$t^{2}-2P_0t+C(\tilde P)$; the extra eigenvalue $0$ is the first column, and the trace $3P_0$ is
+the sum of the four eigenvalues. The determinant is the constant term, which is zero.</p>
+<h2 id="the-rank-and-the-annihilator">The Rank and the Annihilator</h2>
+<p><strong>Corollary (the rank and the annihilator).</strong> The rank of $L_{\tilde P}$ and the annihilator of
+$\tilde P$ are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde P$</th>
+<th>$C(\tilde P)$</th>
+<th>$\operatorname{rank}L_{\tilde P}$</th>
+<th>$\dim\ker L_{\tilde P}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\tilde P\neq0$, $C(\tilde P)\neq0$</td>
+<td>$\neq0$</td>
+<td>$3$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\tilde P\neq0$, $C(\tilde P)=0$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Write $N=P_0\mathrm{I}_3-[\mathbf P]_\times$ for the lower block, so that
+$N\mathbf P=P_0\mathbf P$. If $C(\tilde P)\neq0$ the eigenvalues of $N$ have no zero among them
+when $P_0\neq0$, and when $P_0=0$ the two nonzero eigenvalues $\pm is$ with $s^{2}=C(\tilde P)$
+give rank two, whose image is the plane orthogonal to $\mathbf P$; the first column $-\mathbf P$ is
+not in it because $(\mathbf P,\mathbf P)=C(\tilde P)\neq0$, so the rank is three in both cases. If
+$C(\tilde P)=0$ and $\tilde P\neq0$ the block $N$ has rank two and the first column adds nothing,
+either because $N\mathbf P=P_0\mathbf P$ or, when $P_0=0$, because the isotropic $\mathbf P$ lies
+in the image of $[\mathbf P]_\times$; the rank is two. The annihilator has dimension
+$4-\operatorname{rank}L_{\tilde P}$.</p>
+<p><strong>Corollary (the line $\mathbb{C}\tilde P$ is always in the annihilator).</strong> For every $\tilde P$
+the element $\tilde P$ annihilates itself, $\tilde P\diamond\tilde P=0$, so
+$\mathbb{C}\tilde P\subseteq A_\diamond(\tilde P)$; the annihilator is the line
+$\mathbb{C}\tilde P$ exactly off the cone, and on the cone it is the larger plane that contains it.</p>
+<p><em>Proof.</em> The alternation gives $\tilde P\diamond\tilde P=0$. Off the cone the annihilator is
+one-dimensional by the rank table, so it is the line; on the cone it is two-dimensional and
+contains the line.</p>
+<p><strong>Example.</strong> At the element $e_0$, $L_{e_0}\tilde X=\mathbf X$ vanishes exactly on the pure
+scalars, so the annihilator is the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, of dimension
+one, and $C(e_0)=1\neq0$. At the element $e_1+ie_2$, of vector part $\mathbf P=e_1+ie_2$ with
+$(\mathbf P,\mathbf P)=1+i^{2}=0$, the annihilator is the plane
+$$
+A_\diamond(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_3+ie_0\}.
+$$</p>
+<h2 id="the-dichotomy-by-the-cone">The Dichotomy by the Cone</h2>
+<p>The zero-divisor set of the block is the whole punctured space, so it separates nothing. The
+annihilator separates the elements by the <strong>zero-divisor cone of the parent product</strong>, the locus
+$C(\tilde P)=0$: off the cone the annihilator is the line $\mathbb{C}\tilde P$, on the cone it is
+the larger plane. The cone is also the criterion of the zero divisor of the sibling general algebra
+(<em>Zero Divisors of the General Quaternionic Algebra</em>), and the block reads it through the
+annihilator alone: the zero-divisor set is blind to it, and the operator is where it appears. The
+reading is the twin of the antisymmetric plain algebra, with one difference: there the generic
+annihilator is a plane, of complex dimension two, and the jump is to the whole space on the centre,
+whereas here the generic annihilator is the line $\mathbb{C}\tilde P$ and the jump is to the plane
+on the cone.</p>
+<h2 id="the-annihilator-on-the-remarkable-subspaces">The Annihilator on the Remarkable Subspaces</h2>
+<p><strong>The centre.</strong> A nonzero central element $\tilde P=\lambda e_0$ has
+$L_{\lambda e_0}\tilde X=\lambda\mathbf X$, the scalar multiple of the projection onto the vector
+subspace, so its annihilator is the centre $\mathbb{C}e_0$: the central elements annihilate the
+centre alone.</p>
+<p><strong>The vector subspace.</strong> On the vector subspace, where $P_0=0$ and $\tilde X$ is pure, the
+operation is the negative cross product $\tilde P\diamond\tilde X=-\mathbf P\times\mathbf X$. The
+annihilator of a nonzero pure element meets the vector subspace in the line $\mathbb{C}\mathbf P$
+and is the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$ of the ambient space when $\mathbf P$ is
+isotropic, the line $\mathbb{C}\mathbf P$ alone when it is not.</p>
+<p><strong>The Hermitian and anti-Hermitian subspaces.</strong> The restriction of the block to a subspace
+annihilates the same elements as the ambient block intersected with the subspace, so every nonzero
+element of every remarkable subspace has a nonzero annihilating partner, the one it has in the
+ambient block.</p>
+<h2 id="summary">Summary</h2>
+<p>The annihilator of an element in a product is the set of partners the element kills, the left and
+the right annihilator being the kernels of the left and the right multiplication. The antisymmetric
+quaternionic multiplication is alternating, so the two annihilators of an element coincide and
+contain the element itself. The operator $L_{\tilde P}$ has trace $3P_0$, determinant $0$ and
+characteristic polynomial $t(t-P_0)(t^{2}-2P_0t+C(\tilde P))$: its rank is three and its kernel the
+line $\mathbb{C}\tilde P$ off the cone $C(\tilde P)=0$, and on the cone the rank drops to two and
+the annihilator grows to the plane that contains the line. At $e_0$ the annihilator is the centre;
+the zero-divisor set of the block is the whole punctured space and gives none of this, and the
+annihilator is the only invariant of the block that reads the cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$</td>
+<td>the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$</td>
+</tr>
+<tr>
+<td>$A_\diamond(\tilde P),B_\diamond(\tilde P)$</td>
+<td>the left and the right annihilator of $\tilde P$ in the block, equal because the block is alternating</td>
+</tr>
+<tr>
+<td>$L_{\tilde P}$</td>
+<td>the left multiplication operator, $L_{\tilde P}\tilde X=\tilde P\diamond\tilde X$, whose kernel is the annihilator</td>
+</tr>
+<tr>
+<td>$\chi_{L_{\tilde P}}(t)=t(t-P_0)(t^{2}-2P_0t+C(\tilde P))$</td>
+<td>the characteristic polynomial of the operator</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\tilde P$</td>
+<td>the annihilator of an element off the cone, a complex line</td>
+</tr>
+<tr>
+<td>$C(\tilde P)=\sum_\mu P_\mu^{2}$</td>
+<td>the central square, the criterion of the cone on which the annihilator grows</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$</td>
+<td>the centre, the annihilator of the nonzero central elements</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), §<em>The Zero Divisor and the Annihilator</em>, for the zero divisor and the annihilator of a general product.</li>
+<li><em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md</code>), for the operation and its table.</li>
+<li><em>Zero Divisors of the Antisymmetric Quaternionic Algebra</em> (<code>articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md</code>), above this article in this category, for the punctured space and the comparison with the other eleven structures.</li>
+<li><em>Zero Divisors of the General Quaternionic Algebra</em> (<code>articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md</code>), for the cone $C(\tilde P)=0$, which is the criterion of the parent and the locus of the rank drop.</li>
+<li><em>Annihilators of the Antisymmetric Plain Algebra</em> (<code>articles_maths/annihilators-of-the-antisymmetric-plain-algebra.md</code>), the twin block, whose generic annihilator is a plane rather than a line.</li>
+<li><em>Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-algebra-of-biquaternions.md</code>), for the elements whose bracket vanishes and for the reading on the subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

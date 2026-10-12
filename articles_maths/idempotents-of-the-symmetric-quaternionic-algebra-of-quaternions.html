@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idempotents of the Symmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="idempotents-of-the-symmetric-quaternionic-algebra"><strong>Idempotents of the Symmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An idempotent is an element equal to its own square, and in the block the square is the diagonal of the form, $\tilde x\star\tilde x=N(\tilde x)e_0$. The two conditions together force the element onto the scalar line, and there the only solutions are $0$ and $e_0$. The idempotent set of the block is therefore the pair $\{0,e_0\}$: there is no non-trivial idempotent. The collapse that over $\mathbb{R}$ removes the roots of the central value $-e_0$ and reduces the root sets of a central value removes here the continuum of idempotents that the complexified parent plain algebra carries; the block has no idempotent in the vector subspace, none off the centre, no Peirce decomposition and no classification of the zero divisors by idempotents. This article proves the classification, compares it with the parent plain algebra, reads the two idempotents as operators, and records the absences.</p>
+<p><strong>Boundaries.</strong> The definition of an idempotent and of the orthogonality of idempotents is <em>Definitions for the Study of the 6 Algebraic Structures</em>; the product and its scalar law are <em>Introduction to the Symmetric Quaternionic Algebra of Quaternions</em>; the radical and the isotropic elements are <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>; the roots of $\pm e_0$ and of $0$ are <em>Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra</em>; the multiplication operators and the classification of the idempotent operators are <em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em>, and the collected element classes are <em>The Specificities of the Symmetric Quaternionic Algebra</em>; the zero divisors are <em>Zero Divisors of the Symmetric Quaternionic Algebra</em>; the parent's idempotents, the complexified continuum, are <em>Idempotents of the General Plain Algebra</em>, and the biquaternion twin is <em>Idempotents of the Symmetric Quaternionic Algebra</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\mathbf x$. The <strong>quaternion conjugation</strong> is $\tilde x^{\natural}=x_0e_0-\mathbf x$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The <strong>quaternion form</strong> is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$, its diagonal is $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$, and the <strong>symmetric quaternionic product</strong> is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The centre is $\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$.</p>
+<h2 id="the-general-definition">The General Definition</h2>
+<p><strong>Definition (idempotent).</strong> An <strong>idempotent</strong> of a real-bilinear rule is an element $\tilde\Pi$ with $\tilde\Pi^{2}=\tilde\Pi$, that is $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ in the block. The set of the idempotents contains $0$, since $0\star0=0$, and it contains the two-sided unit when the rule has one; an idempotent different from $0$ is <strong>non-trivial</strong>. Two idempotents $\tilde\Pi,\tilde\Pi'$ are <strong>orthogonal</strong> when $\tilde\Pi\star\tilde\Pi'=\tilde\Pi'\star\tilde\Pi=0$, and the <strong>complement</strong> of an idempotent is defined only when the rule has a two-sided unit $e$, the complement of $\tilde\Pi$ being $e-\tilde\Pi$.</p>
+<p>The definition is quoted, and the article now reads it on the block.</p>
+<h2 id="the-classification">The Classification</h2>
+<p><strong>Theorem (the idempotents).</strong> An element $\tilde x$ satisfies $\tilde x\star\tilde x=\tilde x$ if and only if $\tilde x\in\{0,e_0\}$.</p>
+<p><em>Proof.</em> The square of the block is $\tilde x\star\tilde x=N(\tilde x)e_0=(x_0^{2}+|\mathbf x|^{2})e_0$, while $\tilde x=x_0e_0+\mathbf x$; the equality of the two elements forces the vector part of the right-hand side to vanish, hence $\mathbf x=0$, and then the scalar equation $x_0^{2}=x_0$, whose solutions are $x_0=0$ and $x_0=1$. Both are idempotents: $0\star0=0$ and $e_0\star e_0=N(e_0)e_0=e_0$.</p>
+<p><strong>Corollary (no non-trivial idempotent).</strong> The block has exactly two idempotents, and both are central. There is no idempotent in the vector subspace and none outside the centre; every idempotent of the block lies on the scalar line.</p>
+<p><em>Proof.</em> The classification gives the pair; the scalar line is the centre.</p>
+<p><strong>Remark (the same pair, reached differently in the companion block).</strong> The symmetric plain algebra has the same two idempotents, $0$ and $e_0$, but reaches them by the square of the plain product and not by the diagonal of the form; the block's proof is short, because the square of the block is scalar and the vector part is annihilated at the first step (<em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>).</p>
+<h2 id="the-relation-to-the-roots-of-plus-and-minus-one">The Relation to the Roots of Plus and Minus One</h2>
+<p>The complexified parent plain algebra reaches its idempotents through the affine map $\tilde\Pi=\tfrac12(e_0+\tilde\Xi i)$, the parameter $\tilde\Xi$ running over the roots of $-e_0$: the idempotents form the continuum $\tfrac12(e_0+\tilde\Xi i)$, of real dimension four, a two-sphere when $\tilde\Xi$ ranges over the unit pure quaternions, and the two trivial idempotents are the images of the two degenerate roots $\tilde\Xi=\pm i$, since $\tfrac12(e_0+i\cdot i)=0$ and $\tfrac12(e_0-i\cdot i)=e_0$ (<em>Idempotents of the General Plain Algebra</em>). Over $\mathbb{R}$ the coordinate $i$ is gone and the map collapses: the block has no root of $-e_0$ at all, and among the roots of $+e_0$ only the two central ones reach an idempotent. The biquaternion twin <em>Idempotents of the Symmetric Quaternionic Algebra</em> records the same pair $\{0,e_0\}$ for the block over $\mathbb{C}$, the continuum being the plain parent's and not the block's.</p>
+<p><strong>Proposition (the affine map and the roots of $+e_0$).</strong> Let $\tilde\Pi=\tfrac12(e_0+\tilde x)$. Then $\tilde\Pi\star\tilde\Pi=\tfrac14\bigl(1+2x_0+N(\tilde x)\bigr)e_0$, and $\tilde\Pi$ is idempotent if and only if $\tilde x=\pm e_0$. The two roots of $+e_0$ that are central, $\tilde x=e_0$ and $\tilde x=-e_0$, give the two idempotents $\tilde\Pi=e_0$ and $\tilde\Pi=0$; every noncentral root of $+e_0$ gives a non-idempotent, and the roots of $-e_0$ do not exist.</p>
+<p><em>Proof.</em> The square of a half-sum is read on the form, $\tilde\Pi\star\tilde\Pi=\tfrac14N(e_0+\tilde x)e_0$, and $N(e_0+\tilde x)=N(e_0)+2N(e_0,\tilde x)+N(\tilde x)=1+2x_0+N(\tilde x)$. The equality $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ reads $\tfrac14(1+2x_0+N(\tilde x))e_0=\tfrac12(e_0+\tilde x)$; comparing the vector parts gives $\mathbf x=0$, so $\tilde x=x_0e_0$, and the scalar equation $(1+x_0)^{2}=2(1+x_0)$, whose solutions are $x_0=-1$ and $x_0=1$. Thus $\tilde x=\pm e_0$, both being roots of $+e_0$; the value $\tilde x=e_0$ gives $\tilde\Pi=e_0$ and the value $\tilde x=-e_0$ gives $\tilde\Pi=0$. The roots of $-e_0$ are empty in the block, so no idempotent arises from them. The noncentral roots of $+e_0$ are the remaining points of the sphere $Sp(1)$; for such a root $\mathbf x\neq0$ and the vector part of $\tilde\Pi$ does not vanish, so $\tilde\Pi\star\tilde\Pi=\tfrac14(1+2x_0+N(\tilde x))e_0$ is scalar and cannot equal the noncentral $\tilde\Pi$.</p>
+<p><strong>Example (an explicit noncentral root).</strong> For $\tilde x=e_1$ the element $\tilde\Pi=\tfrac12(e_0+e_1)$ has the square $\tfrac14N(e_0+e_1)e_0=\tfrac14\cdot2\,e_0=\tfrac12e_0$, which is not $\tilde\Pi$; the failure of the bridge is the failure of the centrality of $\tilde\Pi$.</p>
+<p><strong>Remark (the roots of $-e_0$ are not available).</strong> Over $\mathbb{R}$ the branch of the affine map that the complex chapter feeds from the roots of $-e_0$ is empty, because $-e_0$ has no square root (<em>Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra</em>). The block therefore has no idempotent built from a root of $-e_0$, and the only roots that reach an idempotent are the two central roots of $+e_0$.</p>
+<h2 id="the-idempotents-as-projections">The Idempotents as Projections</h2>
+<p><strong>Definition (left multiplication).</strong> For an element $\tilde x$ the <strong>left multiplication</strong> $L_{\tilde x}$ is the endomorphism of $\mathbb{H}$ given by $L_{\tilde x}(\tilde y)=\tilde x\star\tilde y=N(\tilde x,\tilde y)e_0$.</p>
+<p><strong>Theorem (the operator of an idempotent).</strong> For every $\tilde x$ the operator $L_{\tilde x}$ has the square $L_{\tilde x}^{2}=x_0L_{\tilde x}$, so it is idempotent exactly when $\tilde x=0$ or $x_0=1$; among the nonzero elements, exactly the elements of scalar coordinate $1$. The idempotent element $e_0$ gives the operator</p>
+<p>$$
+L_{e_0}=E:\tilde y\mapsto y_0e_0,
+$$</p>
+<p>the projection onto the centre along the vector subspace: $E^{2}=E$, the image of $E$ is $\mathbb{R}e_0$, its kernel is $\mathrm{Vect}(\mathbb{H})$, and it is not the identity.</p>
+<p><em>Proof.</em> The composition is $L_{\tilde x}(L_{\tilde x}\tilde y)=N(\tilde x,y_0e_0)e_0=x_0y_0e_0=x_0L_{\tilde x}\tilde y$, using $N(\tilde x,e_0)=x_0$; hence $L_{\tilde x}^{2}=x_0L_{\tilde x}$, which equals $L_{\tilde x}$ exactly when $x_0=1$ or when $L_{\tilde x}=0$, the latter only at $\tilde x=0$. For $\tilde x=e_0$ the operator is $E(\tilde y)=N(e_0,\tilde y)e_0=y_0e_0$, whose image and kernel are as displayed; it is not the identity because $E(e_1)=0\neq e_1$, the block having no unit.</p>
+<p><strong>Remark (idempotent elements against idempotent operators).</strong> The idempotent elements are only $0$ and $e_0$, and their operators are the zero operator and $E$. The idempotent <strong>operators</strong> are the larger family made of the zero operator $L_0$ together with the $L_{\tilde x}$ of scalar coordinate $1$: the latter form a hyperplane, parallel to the vector subspace, of pairwise distinct rank-one projections onto the centre. The two families are different, and the operator family is classified in <em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em>, where the operators form an algebra whose idempotents are $0$ and the elements of scalar coordinate $1$.</p>
+<h2 id="the-relation-to-the-zero-divisors">The Relation to the Zero Divisors</h2>
+<p><strong>Proposition (no classification by idempotents).</strong> In the complex parent the non-trivial idempotents classify the zero divisors and read a Peirce decomposition; over $\mathbb{R}$ neither survives. The real parent is a division algebra, with no zero divisor and only the two trivial idempotents, and the block has only those same two idempotents while its own zero-divisor set is the whole punctured space $\mathbb{H}\setminus\{0\}$ (<em>Zero Divisors of the Symmetric Quaternionic Algebra</em>): no idempotent can distinguish one zero divisor from another, the classification by idempotents being empty because the idempotents are trivial, and the zero-divisor set maximal at the same time.</p>
+<p><em>Proof.</em> The idempotents are $0$ and $e_0$; a classification by non-trivial idempotents therefore has no entry; the zero-divisor set is the punctured space, which contains every nonzero element.</p>
+<p><strong>Remark (the absent complementation).</strong> The complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$ and the orthogonality of idempotents are not defined for the block: the complement of an idempotent requires a two-sided unit, and the block has none. The two idempotents do satisfy $0\star e_0=0$, but there is no complete orthogonal system of idempotents and no Peirce decomposition, the available splitting</p>
+<p>$$
+\mathbb{H}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H})
+$$</p>
+<p>being the image–kernel splitting of $E$ and not a decomposition into corner algebras. This is the idempotent reading of the absence of a unit, and it is the reason the block has no idempotent calculus beyond the two elements.</p>
+<h2 id="summary">Summary</h2>
+<p>The idempotents of the symmetric quaternionic block are exactly $0$ and $e_0$: the equation $\tilde x\star\tilde x=N(\tilde x)e_0=\tilde x$ forces the vector part of $\tilde x$ to vanish and the scalar part to satisfy $x_0^{2}=x_0$, so both idempotents are central and there is no non-trivial one. The continuum of idempotents of the complexified parent plain algebra, the family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-e_0$, has no counterpart in the block: the affine map $\tilde\Pi=\tfrac12(e_0+\tilde x)$ carries no root of $-e_0$, because the block has none, and of the roots of $+e_0$ only the two central ones, $\pm e_0$, to the pair $e_0$ and $0$; a noncentral root gives only a scalar square and not an idempotent, the biquaternion twin records the same pair for the block, and the real parent's own two idempotents are the same pair. The idempotent $e_0$ acts by the projection $E$ onto the centre along the vector subspace, which is not the identity, and the idempotent operators are a larger family than the idempotent elements. The block has no Peirce decomposition, no complementation and no classification of the zero divisors by idempotents; the complementation and the orthogonality that the complex parent's theory uses require the unit that the block does not have.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Pi\star\tilde\Pi=\tilde\Pi$</td>
+<td>the idempotent equation</td>
+</tr>
+<tr>
+<td>$\{0,e_0\}$</td>
+<td>the idempotents of the block</td>
+</tr>
+<tr>
+<td>$\tilde\Pi=\tfrac12(e_0+\tilde x)$</td>
+<td>the affine map of the parent, idempotent only at $\tilde x=\pm e_0$</td>
+</tr>
+<tr>
+<td>$Sp(1)=\{\tilde u:N(\tilde u)=1\}$</td>
+<td>the roots of $+e_0$; only $\pm e_0$ give idempotents</td>
+</tr>
+<tr>
+<td>$L_{\tilde x}^{2}=x_0L_{\tilde x}$</td>
+<td>the square of a left multiplication</td>
+</tr>
+<tr>
+<td>$E=L_{e_0}:\tilde y\mapsto y_0e_0$</td>
+<td>the projection onto the centre, not the identity</td>
+</tr>
+<tr>
+<td>$\mathbb{H}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H})$</td>
+<td>the image–kernel splitting of $E$, not a Peirce decomposition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the 6 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md</code>), for the idempotent, the orthogonal idempotents and the complementation</li>
+<li><em>Idempotents of the General Plain Algebra</em> (<code>articles_maths/idempotents-of-the-general-plain-algebra-of-quaternions.md</code>), for the same two-point class over the division algebra $\mathbb{H}$, reached by the plain equation</li>
+<li><em>Idempotents of the General Plain Algebra</em> (<code>articles_maths/idempotents-of-the-general-plain-algebra.md</code>), the complexified parent, for the continuum $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-e_0$, of real dimension four</li>
+<li><em>Idempotents of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/idempotents-of-the-symmetric-quaternionic-algebra.md</code>), the biquaternion twin, which records the same pair $\{0,e_0\}$ for the block over $\mathbb{C}$ and locates the continuum in the plain parent</li>
+<li><em>The Specificities of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra-of-quaternions.md</code>), where the idempotents and the nilpotents are collected</li>
+<li><em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra-of-quaternions.md</code>), for the operators $L_{\tilde x}$, the projection $E$ and the classification of the idempotent operators</li>
+<li><em>Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra</em> (<code>articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-quaternionic-algebra-of-quaternions.md</code>), for the roots of $+e_0$ and the emptiness of the roots of $-e_0$</li>
+<li><em>Zero Divisors of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra-of-quaternions.md</code>), for the maximal zero-divisor set that makes the classification by idempotents vacuous</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for idempotents, orthogonality and the Peirce decomposition.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, Universitext, 2004), for the flexibility and power-associativity of a symmetric product.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Maths Review — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="ai-maths-review"><strong>AI Maths Review</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is a digest of the mathematical corpus. It states what the corpus is, how it is organised, and what it contains that is new; it cites no source in support of its claims, and it does not prove them — the proofs of the statements it reports stand in the corpus itself. In practice the text can be copied whole into an AI chat bot, which will produce a first assessment of the corpus from it.</p>
+<p><strong>The project is a corpus of pure mathematics</strong> of about 2,100 articles, organised in six parts, beside a separate physics corpus of about 440 articles that this article does not touch. The biquaternion chapter alone holds about 340 articles. The corpus contains no physics: no time, no measurement, no observable, no interpretation, and no article about an application of mathematics. Most of it is established mathematics, restated in one notation and ordered so that no structure is used before it is introduced; the part that is the corpus's own is collected in the section <em>New Results</em> below.</p>
+<p><strong>What the corpus is.</strong> The corpus is a single account of pure mathematics, organised so that the same object ladder is traversed in every part. Six parts divide the work: Algebra builds the objects and nothing else, Topology places a distance on each of them, Analysis uses the derivative and the measure that the distance makes available, Geometry reads the distance as an object rather than as a tool, Catalogues gather the objects of the first four parts into transversal lists, and Synthetic Studies re-traverse the whole ladder one number system at a time. The first three parts share one five-slot spine, so that they read in parallel, category for category, and each part adds its own further subjects after the spine. The order of the parts is an order of dependency, not an order of study: the corpus is learnt by successive paths, a cycle through the six parts at one depth and then again one rung deeper.</p>
+<p><strong>What the corpus is not.</strong> It is pure mathematics. No article is about an application of mathematics, and none is about a physical theory. A concept is kept only where its mathematical content is autonomous, whatever its origin, and it is then stripped of every reference to an application, to physics, to time and to measurement. The corpus is a separate body of articles from the physics corpus, with its own menu, and the two are not mixed.</p>
+<p><strong>The corpus's own mathematics.</strong> The corpus is mostly an account of established mathematics, and the part that is its own is collected in the section <em>New Results</em> below. It lies in one synthetic chapter, that of the biquaternion algebra, and in the systematic treatment of the number systems: the reading of one algebra under all its natural products, the study of the class of structures those products define, and one theorem about a transform the algebra carries. The rest of the corpus supplies the general theory those constructions use.</p>
+<h2 id="how-the-corpus-is-organised">How the Corpus Is Organised</h2>
+<h3 id="the-six-parts">The Six Parts</h3>
+<p>The parts are ordered by dependency, and each says what it may and may not use.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I : Algebra</td>
+<td>the objects themselves, built with no distance: sets, functions and relations, logic and proof, cardinality; then groups, rings and fields, linear spaces, algebras, and the further subjects. Carries the <strong>form</strong> and the <strong>algebraic norm</strong>, whose values lie in the ring or the algebra</td>
+</tr>
+<tr>
+<td>II : Topology</td>
+<td>a <strong>distance</strong> placed on each object of Part I: metric and topological spaces, separation and metrisation; then the distance on groups, on rings and fields, on linear spaces, on algebras; then algebraic topology, sheaves and cohomology, algebraic geometry, geometric topology</td>
+</tr>
+<tr>
+<td>III : Analysis</td>
+<td>the two limits that need more than a topology: the <strong>derivative</strong>, which needs a norm, and the <strong>integral</strong>, which needs a measure; then the calculus, the smooth manifolds and the differential topology, the Lie groups, the integration, the analytic functions, the spectral theory, the differential equations, probability and ergodic theory, and the dynamical systems</td>
+</tr>
+<tr>
+<td>IV : Geometry</td>
+<td>the distance as an <strong>object</strong>: its shape, its motions, its figures and its settings, the form-defined classical groups, and the synthesis with analysis</td>
+</tr>
+<tr>
+<td>V : Catalogues</td>
+<td>transversal lists, one kind of object per article, naming each object and pointing to the articles that introduce it</td>
+</tr>
+<tr>
+<td>VI : Synthetic Studies</td>
+<td>one number system at a time, taken through the whole ladder</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-spine-and-the-object-ladder">The Spine and the Object Ladder</h3>
+<p>Each of Parts I, II and III is organised by the <strong>same five-slot spine</strong>, in the same order: Foundations, Groups, Rings and Fields, Linear Spaces, Algebras. The slots are the rungs of the <strong>object ladder</strong>, in which each layer adds exactly one structure to the layer above. The ladder does not stop at Algebras: each part appends its own <strong>further subjects</strong>, and it is there, at the open end of the ladder, that a subject needing a structure introduced later finds its place.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Part I : Algebra</th>
+<th>Part II : Topology</th>
+<th>Part III : Analysis</th>
+<th>Part IV : Geometry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Foundations</td>
+<td>Foundations of Algebra</td>
+<td>Foundations of Topology</td>
+<td>Foundations of Analysis</td>
+<td>Foundations of Geometry</td>
+</tr>
+<tr>
+<td>Groups</td>
+<td>Groups</td>
+<td>Topology on Groups</td>
+<td>Analysis on Groups</td>
+<td>Geometry on Groups</td>
+</tr>
+<tr>
+<td>Rings and Fields</td>
+<td>Rings and Fields</td>
+<td>Topology on Rings and Fields</td>
+<td>Analysis on Rings and Fields</td>
+<td>Geometry on Rings and Fields</td>
+</tr>
+<tr>
+<td>Linear Spaces</td>
+<td>Linear Spaces</td>
+<td>Topology on Linear Spaces</td>
+<td>Analysis on Linear Spaces</td>
+<td>Geometry on Linear Spaces</td>
+</tr>
+<tr>
+<td>Algebras</td>
+<td>Algebras</td>
+<td>Topology on Algebras</td>
+<td>Analysis on Algebras</td>
+<td>Geometry on Algebras</td>
+</tr>
+<tr>
+<td>Further subjects</td>
+<td>Symmetric and anti-symmetric algebras, linear spaces over algebras, sesqualgebras, algebras with a degree-2 form</td>
+<td>Topology on algebras with a degree-2 form, algebraic topology, sheaves and cohomology, algebraic geometry, geometric topology</td>
+<td>Convexity and order, manifolds and differential topology, differential equations, Lie groups, probability and ergodic theory, dynamical systems</td>
+<td>Synthesis of geometry and analysis</td>
+</tr>
+</tbody>
+</table></div>
+<p>Part IV is not a layer. Geometry adds no structure of its own, but a distance can be placed on the object of every rung, so geometry is <strong>read</strong> at every rung, and its categories follow the same slots in the same order, one category per slot, with the synthesis standing as its further subject. The naming is mechanical in both directions: a Part II category is named <em>Topology on X</em> and a Part III category <em>Analysis on X</em>, where X is the name of the slot in Part I.</p>
+<h3 id="the-three-rules-of-placement">The Three Rules of Placement</h3>
+<p>Three rules fix the place of every article.</p>
+<ol>
+<li><strong>The ordering rule.</strong> No category may use a structure it has not yet introduced, and no article may use a concept — an example included, since an example is a use — that a later article introduces.</li>
+<li><strong>The dependency rule.</strong> The parts are strictly ordered, and algebra, which needs no distance, is the most fundamental.</li>
+<li><strong>The revisit rule.</strong> An object re-read through a new structure belongs to the new category, not the old one. The Lie groups need the smooth structure, which Analysis introduces, so they are further subjects of Analysis; the isometries and the form-defined groups are geometry articles once a form is read as a motion.</li>
+</ol>
+<h3 id="the-boundary-tests">The Boundary Tests</h3>
+<p>Each boundary between two parts gives a local test of what a part may not use. They govern what a part may <strong>reason</strong> with, not what it may name.</p>
+<ul>
+<li><strong>Distance</strong> is the boundary between algebra and topology. A <strong>form</strong> and its <strong>algebraic norm</strong>, whose value is an element of the ring or the algebra, belong to Algebra; the object turns topological the moment the norm is <strong>selected</strong> to take positive real values and a length or a distance is asked of it. This is the meaning of the statement that <strong>algebra is clean</strong>: Part I has no length, no distance, no positive definiteness, and every concept that would require one is deferred.</li>
+<li><strong>The derivative and the measure</strong> are the boundary between topology and analysis.</li>
+<li><strong>A change of intent</strong> is the boundary between analysis and geometry: topology and analysis study the distance as a tool, geometry studies a chosen distance as an object.</li>
+</ul>
+<h3 id="the-groups-inside-a-category">The Groups Inside a Category</h3>
+<p>A category of Parts I to IV lists its articles in four groups, each of which adds one thing to the group before it, and a fifth that closes it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>What it holds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Theory</td>
+<td>the structure itself, read with the product of its elements</td>
+</tr>
+<tr>
+<td>Operator Theory</td>
+<td>the operators on the structure: the left and right multiplications, the derivations, the automorphisms, the sandwich</td>
+</tr>
+<tr>
+<td>* Theory</td>
+<td>the same structure read with an involution on its <strong>elements</strong></td>
+</tr>
+<tr>
+<td>* Operator Theory</td>
+<td>the operators built from the <strong>involution</strong>, of which the adjoint is the archetype</td>
+</tr>
+<tr>
+<td>Applications</td>
+<td>the concrete instances of the structure, closing the category</td>
+</tr>
+</tbody>
+</table></div>
+<p>The star names the involutive layer in both cases, and the layer of the elements and the layer of the operators are two structures and not one: an involution on the elements does not by itself produce an adjoint on the operators.</p>
+<h3 id="the-catalogues">The Catalogues</h3>
+<p>Part V is organised by object rather than by structure. Each catalogue is a transversal list of the objects of one kind that the corpus meets — a catalogue of fields collects every field, a catalogue of forms every form with its signature. Its rule is stated once:</p>
+<blockquote>
+<p>A catalogue names an object and points to the article or articles that introduce it. It introduces nothing and it proves nothing.</p>
+</blockquote>
+<p>The one condition on what a catalogue may list is that the object has been introduced somewhere in Parts I to IV. A catalogue lists examples and non-examples side by side, and the non-examples are what show that each class is a proper subclass of the one above it.</p>
+<h3 id="the-synthetic-studies">The Synthetic Studies</h3>
+<p>Parts I to IV develop the general theory layer by layer, one structure at a time. Part VI reverses the direction and studies one <strong>system</strong> at a time, taking it through the whole ladder. Its systems are the number systems and their relatives, in the order the corpus reaches them, from the Booleans to the octonions. A synthetic study is where a system is shown to support an algebra and a topology but no analysis, or the reverse, and the stopping point is a fact about that system.</p>
+<h3 id="the-successive-paths">The Successive Paths</h3>
+<p>The corpus is learnt by <strong>successive paths</strong>. A cycle runs through the six parts at one depth — basic Algebra, basic Topology, basic Analysis, basic Geometry, a first catalogue and a first synthetic study — and then the reader returns to the beginning and runs the same path one rung deeper. The depth is carried by the ladder, not by the cycle count, and a cycle is complete when all six parts have been entered, not when any one of them is finished.</p>
+<h3 id="the-two-exclusions">The Two Exclusions</h3>
+<p>The corpus excludes applications and physics, and both exclusions have the same reason: a use is not a property of the structure. Numerical analysis, control theory, cryptography as an engineering subject and mathematical finance are not articles. A mathematical concept named after a physical object is admitted on the same terms as any other, and then only for its mathematical content. The clearest case is the <strong>Lorentz group</strong>: it is the group of linear transformations preserving a quadratic form of signature $(3,1)$, and that is a complete definition in pure algebra. What the corpus does not write is <em>spacetime</em>, <em>the speed of light</em>, <em>an observer</em> or <em>a measurement</em>. Where a mathematical synonym exists it is preferred: a <strong>hyperbolic rotation</strong> rather than a boost, the <strong>null cone of a quadratic form</strong> rather than a light cone, and <strong>signature</strong> rather than any metrical vocabulary.</p>
+<h2 id="new-results">New Results</h2>
+<p><strong>Everything in this section is the corpus's own</strong>, and this is where what is new is collected. The corpus is mostly an account of established mathematics, and the algebra below is standard: the corpus does not claim otherwise. Its most developed single system is the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the complexification of the quaternions, a four-dimensional associative algebra over $\mathbb{C}$ with zero divisors. The work begins with the <strong>sesqualgebras</strong>, the corpus's most general new object; it continues with the structures the corpus's construction produces, over the number systems and then in full over the biquaternion algebra; and it closes with one analytic result, a Bochner theorem for the transform the algebra carries. Every statement is proved from the corpus's own definitions, so it needs no experiment; what is new is the organisation of one algebra and its class of products, not the algebra.</p>
+<h3 id="the-sesqualgebras">The Sesqualgebras</h3>
+<p>A <strong>sesqualgebra</strong> is an algebra whose product is linear in the first variable and conjugate-linear in the second, the conjugating map being an involution $\varsigma$ of the base ring:</p>
+<p>$$
+(\lambda x)y=\lambda(xy),\qquad x(\lambda y)=\varsigma(\lambda)(xy).
+$$</p>
+<p>The object is the algebra companion of the sesquilinear form, and the two are different: a sesquilinear form takes its values in the scalars, a sesqualgebra in the algebra itself. The datum is the pair $(R,\varsigma)$, and the object is relative to it; for the trivial involution the two scalar rules coincide and the category collapses exactly to the ordinary algebras. The corpus's reformulation is what makes the category tractable: a sesqualgebra over $(R,\varsigma)$ is an $R$-bilinear map $A\times A^{\varsigma}\to A$, where $A^{\varsigma}$ is the <strong>conjugate module</strong> ($\lambda\cdot x=\varsigma(\lambda)x$). The standard example is the derived operation $x\star y=xy^{*}$ of an associative algebra with a conjugate-linear involution, and it is associative exactly when the involution is the identity — which is why the sesquilinear world is not the bilinear one in another notation. The corpus develops the category as its bilinear sibling is developed: the conjugate module, the left and right multiplications with their opposite linearity, the ideals and quotients, the centre, the units and the zero divisors, the derivations, and the algebras with a degree-2 form on top of it.</p>
+<h3 id="the-structures-of-the-number-systems">The Structures of the Number Systems</h3>
+<p>The corpus does not study the biquaternion algebra in isolation. On each number system it meets it applies <strong>one construction</strong>, and the construction returns a finite list of algebraic structures. The list is the object of study, and its length is a property of the number system and not a convention. The construction has three steps.</p>
+<ol>
+<li><strong>Take a number system that is also an algebra.</strong> The four the corpus needs here are the complex numbers, the split-complex numbers, the quaternions and the biquaternions. Each carries at least one <strong>conjugation</strong>, an involution that reverses the order of a product. On the complex numbers it is the passage to the conjugate coefficient. On the quaternions it is the reversal of the vector part. On the biquaternions there are two, the conjugation of the coefficients and the natural conjugation of the algebra, and the two differ.</li>
+<li><strong>Form the general products.</strong> A product of two elements is turned into a new product by conjugating either argument, or both, or neither, the choice being taken independently in the first position and in the second. There are at most four such products, called the <strong>general products</strong>.</li>
+<li><strong>Split each general product.</strong> Exchanging the two arguments and taking the half-sum and the half-difference splits a product into a <strong>symmetric part</strong> and an <strong>antisymmetric part</strong>. The exchange is taken to preserve the conjugation the product carries, so that each part stays of the same kind as the product; a sesquilinear product, conjugate-linear in the second argument, has sesquilinear parts, and a bilinear product has bilinear parts. Each general product therefore yields three operations: the product itself, its symmetric part and its antisymmetric part.</li>
+</ol>
+<p>Two coincidences then cut the count down, and they are the reason different number systems carry different numbers of structures.</p>
+<ul>
+<li><strong>Commutativity.</strong> Over a commutative system the exchange of the two arguments leaves the product unchanged, so the symmetric part repeats the product and the antisymmetric part is the zero product. A commutative system contributes one structure per general product, the multiplication itself, and not three.</li>
+<li><strong>The two slot insertions coincide over the real numbers.</strong> When the coefficients are real, the conjugation of the coefficients is the identity map, so the Hermitian conjugation — the composite of the two — is the natural conjugation of the algebra, the map that negates the vector part, which is not the identity. The two arguments of a general product are then conjugated by one and the same map, so the products that conjugate the second argument repeat the products that conjugate the first, and the four general products collapse to two: the plain product, and the product whose first argument is conjugated. What collapses is the pair of insertions, not the conjugate. This is why the sesquilinear family is not a second family over the real numbers, and why it becomes one over the complex numbers.</li>
+</ul>
+<p>Taken through the four systems, the construction gives the list the corpus is built on.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Number system</th>
+<th>Over</th>
+<th>Structures</th>
+<th>The structures, in full</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the complex numbers</td>
+<td>$\mathbb{C}$</td>
+<td><strong>2</strong></td>
+<td>the field product, and the sesquilinear product</td>
+</tr>
+<tr>
+<td>the split-complex numbers</td>
+<td>$\mathbb{D}$</td>
+<td><strong>2</strong></td>
+<td>the ring product, and the sesquilinear product</td>
+</tr>
+<tr>
+<td>the quaternions</td>
+<td>$\mathbb{R}$</td>
+<td><strong>6</strong></td>
+<td>the general, the symmetric and the antisymmetric plain algebra, and the general, the symmetric and the antisymmetric quaternionic algebra</td>
+</tr>
+<tr>
+<td>the biquaternions</td>
+<td>$\mathbb{C}$</td>
+<td><strong>12</strong></td>
+<td>the general, the symmetric and the antisymmetric plain algebra and sesqualgebra over $\mathbb{C}$, and the general, the symmetric and the antisymmetric quaternionic algebra and sesqualgebra over $\mathbb{C}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three readings of the list.</p>
+<ul>
+<li><strong>The first two rungs are equal.</strong> The complex field and the split-complex ring differ in everything else — one is a field, the other has zero divisors — but each carries the same two structures: the multiplication and the sesquilinear product. The antisymmetrised products are the zero product, because both systems are commutative.</li>
+<li><strong>The step from two to six is the step from a commutative system to a non-commutative one.</strong> On the quaternions the symmetric part separates from the general product and the antisymmetric part is no longer zero, so each of the two general products yields three structures; among the halves, the symmetric plain part is the Jordan algebra and the antisymmetric plain part the Lie algebra, and the quaternionic pair carries neither identity.</li>
+<li><strong>The step from six to twelve is the step from real coefficients to complex ones.</strong> Over the real numbers the conjugation of the coefficients is the identity, so the Hermitian conjugation is the natural conjugation, the two slot insertions coincide, and the sesquilinear products are not a new family. Over the complex numbers the conjugation of the coefficients is not the identity, the two insertions differ, the sesquilinear family becomes a family of its own, and the count doubles.</li>
+</ul>
+<p>The top rung is the biquaternion algebra, and its twelve structures are the corpus's most complete instance of the construction. The name of a structure is read in three parts. The <strong>first part</strong> says which operation is meant: the general product, its symmetric part, or its antisymmetric part. The <strong>second part</strong> says how the first argument is read: <em>plain</em>, the argument as it stands; or <em>quaternionic</em>, the argument replaced by its natural conjugate. The <strong>third part</strong> says the family: <em>algebra</em>, the second argument as it stands; or <em>sesqualgebra</em>, the second argument replaced by its star-conjugate, the composite of the two conjugations.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>General product</th>
+<th>Symmetric part</th>
+<th>Antisymmetric part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain algebra over $\mathbb{C}$</td>
+<td>general plain algebra</td>
+<td>symmetric plain algebra</td>
+<td>antisymmetric plain algebra</td>
+</tr>
+<tr>
+<td>the quaternionic algebra over $\mathbb{C}$</td>
+<td>general quaternionic algebra</td>
+<td>symmetric quaternionic algebra</td>
+<td>antisymmetric quaternionic algebra</td>
+</tr>
+<tr>
+<td>the plain sesqualgebra over $\mathbb{C}$</td>
+<td>general plain sesqualgebra</td>
+<td>symmetric plain sesqualgebra</td>
+<td>antisymmetric plain sesqualgebra</td>
+</tr>
+<tr>
+<td>the quaternionic sesqualgebra over $\mathbb{C}$</td>
+<td>general quaternionic sesqualgebra</td>
+<td>symmetric quaternionic sesqualgebra</td>
+<td>antisymmetric quaternionic sesqualgebra</td>
+</tr>
+</tbody>
+</table></div>
+<p>The twelve products are distinct operations: no two agree on every pair. The corpus reads them by a classification. <strong>Two of them satisfy the identity of their kind</strong> — the symmetric plain product a Jordan identity, the antisymmetric plain product a Jacobi identity — and <strong>the other six of the symmetric and antisymmetric structures fail it</strong>, each with a witness on the eight-element basis of the space. Of the four general products, one is associative, the plain bilinear product, and the other three are not.</p>
+<p>Over the complex numbers the twelve are distinct. <strong>Over the real elements they collapse to ten</strong>, because two pairs among them coincide there. A check restricted to real elements would therefore see ten operations, and could report an obstruction absent when it is present.</p>
+<h3 id="the-bochner-theorem-for-the-biquaternion-transform">The Bochner Theorem for the Biquaternion Transform</h3>
+<p>The corpus's own analytic result is a theorem about the transform that the biquaternion algebra carries. Bochner's theorem says that a continuous normalised positive-definite function on a group is the Fourier transform of a positive measure; read the other way it says the transform of a positive measure is positive definite. Its proof consumes two properties of the character — that it is multiplicative and that it is unitary — together with one property of the pairing, that the quadratic form carries the conjugation in its <strong>second</strong> slot. In the biquaternion algebra the ingredients are no longer settled in advance: multiplicativity survives every root; the unitarity of the character becomes a condition on the <strong>root of $-1$</strong> carried by the kernel's exponential, and the roots fall into families; and the pairing is chosen among the four the algebra carries.</p>
+<p>The corpus's answer is a single condition. The positivity the theorem needs is the positivity of the general plain sesquilinear form, and with that form <strong>the theorem holds exactly for the roots that are skew-adjoint for the Hermitian conjugation</strong> — the scalar imaginary and the real roots — and fails for the genuinely complex roots. The reason is exactly the unitarity of the character: the kernel is the exponential of the root, and it is unitary precisely when the root is skew-adjoint for the Hermitian conjugation. The corpus separates this from a different failure, which tests the multiplicative form and is independent of the root; the two are true statements and they are not the same statement. What is proved is the direction from the measure to the positive-definite function, with the criterion on the root; the converse of Bochner's theorem, that every positive-definite function is the transform of a positive measure, is not claimed.</p>
+<h2 id="what-the-corpus-does-not-do">What the Corpus Does Not Do</h2>
+<p>The limits are as clear as the results.</p>
+<ul>
+<li><strong>The novelty is confined to one chapter.</strong> The corpus is an account of established mathematics, and the part that is its own is one synthetic algebra together with the study of the class of structures its products define. Every other article restates mathematics that was already there.</li>
+<li><strong>No physics and no application.</strong> The corpus is pure mathematics by rule: no time, no measurement, no observable, no interpretation, and no article about a use of mathematics.</li>
+<li><strong>The corpus is not an encyclopaedia.</strong> A concept is introduced once, in the category that owns it, and cited afterwards rather than restated. A reader wanting an exhaustive list of its results will not find one in this digest; the digest gives the organisation and the corpus's own contributions, and the menu is the authority on what exists.</li>
+<li><strong>The corpus is a work in progress.</strong> Articles are written continuously, and this digest deliberately rounds the counts of them, since a census accurate today is stale tomorrow; what is stable is the structure.</li>
+</ul>
+<h2 id="common-misreadings">Common Misreadings</h2>
+<ol>
+<li><strong>It is not a physical theory.</strong> A reader coming from physics will recognise objects in it — the Lorentz group, the null cone, the hyperbolic rotation — but the corpus describes them as algebra and geometry, and no statement in it is about the world.</li>
+<li><strong>The biquaternion algebra is not the corpus's discovery.</strong> It is standard. What is new is the systematic reading of one algebra under all its natural products, and the study of the structures those products define.</li>
+<li><strong>The four general products are distinct operations.</strong> None agrees with another on every pair, and the twelve products built from them are distinct too; a check restricted to real elements sees only ten, because two pairs coincide there.</li>
+<li><strong>An algebraic norm is not a length.</strong> It takes its value in the ring or the algebra — the algebraic norm of a biquaternion is a biquaternion — and it belongs to Algebra. The <strong>topological norm</strong>, selected to take positive real values, is what gives a distance, and it belongs to Topology.</li>
+<li><strong>A form that multiplies and a form that is definite are two different tools.</strong> The multiplicative form vanishes on nonzero elements; the definite form does not multiply. No function on the algebra is both, and the zero divisors are the reason.</li>
+<li><strong>The definitions of the element classes are relative to the product.</strong> A zero divisor, an idempotent and a root are read <em>of</em> a product; the same element may satisfy the equation of one product and not of another.</li>
+<li><strong>"Interval" has two senses, and the corpus keeps them apart.</strong> An interval is an order-theoretic or lattice object: a convex subset of a linearly ordered set, defined by the order and not by a form. The value of a quadratic form is a different object, defined by the form and not by an order; where the two senses could meet, the corpus writes <em>the form value</em>, or <em>the quadratic form</em>. A statement about the sign of the form value is therefore never a statement about a lattice interval.</li>
+<li><strong>The two involutions are two structures, not one.</strong> The involution on the elements and the adjoint on the operators are different objects, and they need not coincide: an involution on the elements does not by itself produce an adjoint on the operators, and two adjoints of one structure may differ. When the two do agree the representation is a star-representation, and the agreement is proved in the article, never assumed.</li>
+<li><strong>Geometry is not a fifth layer.</strong> It adds no structure; it reads the distance of Part II as an object, and its categories follow the same slots as the other parts.</li>
+<li><strong>A catalogue proves nothing.</strong> It names objects that have been introduced elsewhere and points to where; it is not an article that introduces a concept of its own.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The mathematical corpus is a single account of pure mathematics of about 2,100 articles in six parts. Algebra builds the objects and carries the form and its algebraic norm, whose values lie in the ring or the algebra; Topology places a distance on each object; Analysis uses the derivative and the measure; Geometry reads the distance as an object; Catalogues gather the objects of the first four parts into transversal lists; and Synthetic Studies take one number system at a time through the whole ladder. Parts I to III share one five-slot spine — Foundations, Groups, Rings and Fields, Linear Spaces, Algebras — each adding its further subjects after it. Three rules fix the placement of every article: no category may use a structure it has not introduced, the parts are strictly ordered, and an object re-read through a new structure belongs to the new category. The boundaries give local tests: distance between algebra and topology, the derivative and the measure between topology and analysis, and a change of intent between analysis and geometry. The corpus is pure mathematics, with no application and no physics.</p>
+<p>The corpus's most developed single system is the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, associative with zero divisors and isomorphic to the $2\times2$ complex matrices. Its four general products carry four forms, two of which do the two jobs the corpus keeps apart: the multiplicative form multiplies, the Hermitian form is definite, and no function is both. The four products split into twelve distinct products, the twelve algebraic structures of the space, of which two satisfy the identity of their kind and six fail it. The same construction is run over the smaller number systems, and the count it returns there is the corpus's systematic introduction of the structures of each system: two for the complex field, two for the split-complex ring, six for the quaternion algebra and twelve for the biquaternion algebra. The element classes are relative to the product, and the corpus studies them product by product, with the idempotents, the nilpotents, the zero divisors, the roots and the Peirce decomposition. The corpus also develops the <strong>sesqualgebras</strong>, the algebras whose product is conjugate-linear in the second slot, as the algebra companion of the sesquilinear form, with the conjugate module $A^{\varsigma}$ turning every statement into one about a bilinear map $A\times A^{\varsigma}\to A$; and it proves a <strong>Bochner theorem</strong> for the biquaternion transform, in the general plain sesquilinear form, for the roots that are skew-adjoint for the Hermitian conjugation, and in the measure-to-function direction, the representability half being left open. Its statement is also continuous: on a finite abelian group the criterion is group-dependent, since a group whose characters are all central makes every root positive definite.</p>
+<p>Most of the corpus restates established mathematics, ordered by dependency. What it adds is the organisation of one algebra and the study of the class of structures its products define, proved from the definitions, so that it needs no experiment and is where the corpus's contribution lies.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>general, symmetric, antisymmetric; plain, quaternionic; algebra, sesqualgebra</td>
+<td>the three parts in the name of each of the twelve structures of the biquaternion space, in that order; the twelve names are given in full in <em>The Structures of the Number Systems</em></td>
+</tr>
+<tr>
+<td>$2,\,2,\,6,\,12$</td>
+<td>the number of structures carried by the complex numbers, the split-complex numbers, the quaternions and the biquaternions</td>
+</tr>
+<tr>
+<td>$\varsigma$, $A^{\varsigma}$</td>
+<td>involution of the base ring of a sesqualgebra, and its conjugate module</td>
+</tr>
+<tr>
+<td>Part I to VI</td>
+<td>Algebra, Topology, Analysis, Geometry, Catalogues, Synthetic Studies</td>
+</tr>
+<tr>
+<td>Foundations, Groups, Rings and Fields, Linear Spaces, Algebras</td>
+<td>the five-slot spine shared by Parts I to III</td>
+</tr>
+<tr>
+<td>Theory, Operator Theory, * Theory, * Operator Theory, Applications</td>
+<td>the five groups of a category</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
