@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra"><strong>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of <em>Introduction to the Symmetric Plain Algebra of Quaternions</em>. This article is the Specific Theory of the block: it reads the <strong>square map</strong> $\tilde p\mapsto\tilde p\bullet\tilde p$ and its relation to the norm, the <strong>idempotents</strong> and their degeneracy in a division algebra, the <strong>Peirce decomposition</strong>, the <strong>Jordan inverse</strong> and the <strong>quadratic representation</strong>, and compares the idempotents with those of the biquaternion block. It is the specialisation of the degree-two Common Theory of <em>The Two General Products of an Algebra with Involution</em> to the real quaternions.</p>
+<p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of <em>Introduction to the Symmetric Plain Algebra of Quaternions</em>. It is the specialisation of the degree-two Common Theory of <em>The Two General Products of an Algebra with Involution</em> to the real quaternions.</p>
 <p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\mathbf q|^2$, the generic trace is $T(\tilde q)=2q_0$, and the multiplication operator is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$ of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category.</p>
 <h2 id="the-square-map">The Square Map</h2>
@@ -118,44 +118,6 @@ N\bigl(U_{\tilde p}\tilde q\bigr)=N(\tilde p)^2N(\tilde q).
 $$</p>
 <p><em>Proof.</em> Expanding $U_{\tilde p}(\tilde q)$ in the symmetrised plain product, $U_{\tilde p}(\tilde q)=\tfrac12\bigl(\tilde p(\tilde p\tilde q+\tilde q\tilde p)+(\tilde p\tilde q+\tilde q\tilde p)\tilde p\bigr)-\tfrac12(\tilde p^2\tilde q+\tilde q\tilde p^2)=\tilde p\tilde q\tilde p$ by the associativity of the plain product. The norm identity is the multiplicativity of $N$ applied twice, $N(\tilde p\tilde q\tilde p)=N(\tilde p)^2N(\tilde q)$.</p>
 <p><strong>Remark (the effect on the norm).</strong> For a nonzero $\tilde p$ the operator $U_{\tilde p}$ is invertible with inverse $U_{\tilde p^{-1}}$, and $U_{\tilde p^{-1}}=U_{\tilde p}^{-1}$; the norm identity is the degree-two form of the composite, and it is the quadratic representation statement of the degree-two Common Theory of <em>The Two General Products of an Algebra with Involution</em> read on the block.</p>
-<h2 id="the-comparison-with-the-biquaternion-case">The Comparison with the Biquaternion Case</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th></th>
-<th>the biquaternion symmetric plain algebra</th>
-<th>the symmetric plain algebra of $\mathbb{H}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>square</td>
-<td>the plain square</td>
-<td>the plain square</td>
-</tr>
-<tr>
-<td>idempotents</td>
-<td>many: $\tfrac12(\tilde E_0+\mathbf u)$ from the pure roots of $+e_0$</td>
-<td>$0$, $e_0$ only</td>
-</tr>
-<tr>
-<td>Peirce decomposition</td>
-<td>nontrivial, of dimensions $1,2,1$ at a rank-one idempotent</td>
-<td>trivial</td>
-</tr>
-<tr>
-<td>Jordan inverse</td>
-<td>$\tilde P^{\natural}/N(\tilde P)$ for $N(\tilde P)\neq0$</td>
-<td>$\tilde p^{\natural}/N(\tilde p)$, always for $\tilde p\neq0$</td>
-</tr>
-<tr>
-<td>quadratic representation</td>
-<td>$N(U_{\tilde P}\tilde Q)=N(\tilde P)^2N(\tilde Q)$</td>
-<td>$U_{\tilde p}\tilde q=\tilde p\tilde q\tilde p$</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Remark (what the field changes).</strong> The square, the inverse and the quadratic representation have the same shape over $\mathbb{R}$ and over $\mathbb{C}$; <strong>only the idempotents and the Peirce decomposition differ.</strong> Over $\mathbb{C}$ the pure part is isotropic, so pure roots of $+e_0$ exist, the projection $\tfrac12(\tilde E_0+\mathbf u)$ closes, and the Peirce calculus opens; over $\mathbb{R}$ the pure square is negative, no such root exists, and both collapse. The biquaternion block is <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em> of the biquaternion chapter.</p>
 <h2 id="summary">Summary</h2>
 <p>The square map of the block is the plain square, $Q(\tilde p)=(p_0^2-|\mathbf p|^2)e_0+2p_0\mathbf p$, polarising to the product, with the scalar part $2p_0^2-N(\tilde p)$ and the quadratic identity $\tilde p^2-T(\tilde p)\tilde p+N(\tilde p)e_0=0$. The idempotents are exactly $0$ and $e_0$, because a nontrivial idempotent would need a pure root of $+e_0$ and the pure square is $-|\mathbf u|^2e_0$; the Peirce decomposition is trivial, $J_1(e_0)=\mathbb{H}$ and $J_0(0)=\mathbb{H}$ with the other spaces vanishing. The Jordan inverse is $\tilde p^{-1}=(T(\tilde p)e_0-\tilde p)/N(\tilde p)=\tilde p^{\natural}/N(\tilde p)$ for $\tilde p\neq0$, two-sided and involutive but not multiplicative, and the invertible elements do not form a group. The quadratic representation is $U_{\tilde p}=2(L^{\bullet}_{\tilde p})^2-L^{\bullet}_{\tilde p^{\,\bullet2}}$, equal to the sandwich $\tilde p\tilde q\tilde p$, and $N(U_{\tilde p}\tilde q)=N(\tilde p)^2N(\tilde q)$. Everything but the idempotents and the Peirce decomposition has the same shape over $\mathbb{C}$; there the idempotents are many and the Peirce calculus opens.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

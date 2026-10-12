@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="split-complex-idempotents-and-projections"><strong>Split-Complex Idempotents and Projections</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The algebra article defined the split-complex algebra $\mathbb{D}$, its conjugation and its two idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$. This article treats the <strong>idempotents</strong> of $\mathbb{D}$ — the elements satisfying $A^2 = A$ — and the projections and direct-sum decompositions they carry. It is the two-dimensional counterpart of <em>Idempotents of the General Plain Algebra</em>, and the contrast is sharp: the biquaternion algebra has a two-parameter family of idempotents in bijection with the roots of $-1$, while $\mathbb{D}$ has no root of $-1$ at all and exactly four idempotents.</p>
+<p>The algebra article defined the split-complex algebra $\mathbb{D}$, its conjugation and its two idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$. This article treats the <strong>idempotents</strong> of $\mathbb{D}$ — the elements satisfying $A^2 = A$ — and the projections and direct-sum decompositions they carry. The algebra $\mathbb{D}$ has no root of $-1$ at all and exactly four idempotents.</p>
 <p>Idempotents are the algebraic form of a projection, and in $\mathbb{D}$ they do three jobs at once:</p>
 <ol>
 <li>they give the direct-sum decomposition of the algebra into its two minimal ideals;</li>
@@ -77,7 +77,7 @@ $$</p>
 e \text{ primitive} \iff Ae \text{ is a minimal left ideal} \iff eAe \text{ is a division ring}.
 $$</p>
 <p>The algebra $\mathbb{D} \cong \mathbb{R}\oplus\mathbb{R}$ is semisimple, being a product of two fields, so the criterion applies; it is the reason the idempotent theory and the ideal theory of this category are two views of one subject.</p>
-<h2 id="the-standard-idempotents-of-math39">The Standard Idempotents of $\mathbb{D}$</h2>
+<h2 id="the-standard-idempotents-of-math38">The Standard Idempotents of $\mathbb{D}$</h2>
 <p>Put</p>
 <p>$$
 \Pi_1 = \frac{1+j}{2}, \qquad \Pi_2 = \frac{1-j}{2}.
@@ -90,7 +90,7 @@ $$</p>
 <p>$$
 \Pi_1 \Pi_2 = \frac{(1+j)(1-j)}{4} = \frac{1-j^2}{4} = 0, \qquad \Pi_1 + \Pi_2 = 1.
 $$</p>
-<p>So $\Pi_1$ and $\Pi_2$ are orthogonal idempotents summing to the unit of the algebra. They are <strong>central</strong>: $\mathbb{D}$ is commutative, so every element commutes with both. This is a systematic difference from the biquaternion algebra, where the standard idempotents $\tilde\Pi_1 = \tfrac12(1 + ie_3)$ and $\tilde\Pi_2 = \tfrac12(1 - ie_3)$ are not central, and it removes at once all the off-diagonal structure that the non-central case supports.</p>
+<p>So $\Pi_1$ and $\Pi_2$ are orthogonal idempotents summing to the unit of the algebra. They are <strong>central</strong>: $\mathbb{D}$ is commutative, so every element commutes with both.</p>
 <p>Both $\Pi_1$ and $\Pi_2$ are primitive. Indeed</p>
 <p>$$
 \Pi_1 \mathbb{D} \Pi_1 = \mathbb{R} \Pi_1 \cong \mathbb{R},
@@ -114,7 +114,7 @@ $$</p>
 <li>If $a' = 0$, the first becomes $a^2 = a$, so $a = 0$ or $a = 1$: the idempotents $0$ and $1$.</li>
 <li>If $a' \neq 0$, then $a = 1/2$, and the first becomes $\tfrac14 + a'^2 = \tfrac12$, so $a'^2 = \tfrac14$ and $a' = \pm\tfrac12$: the idempotents $\Pi_1$ and $\Pi_2$.</li>
 </ul>
-<p>There are no others. The set of idempotents is finite, of four elements, and in particular there is no positive-dimensional family. This is the exact opposite of the biquaternion situation, and its cause is visible in the proof: there the idempotent equation forces the scalar part to be $1/2$ and reduces to the equation $\tilde\Xi^2 = -1$ on the vector part, which has a two-sphere of real solutions and a four-real-dimensional family of complex ones; here the same reduction produces $a'^2 = +1/4$, whose solution set is the two points $a' = \pm 1/2$, because $\mathbb{D}$ has no root of $-1$ and no vector part to vary independently.</p>
+<p>There are no others. The set of idempotents is finite, of four elements, and in particular there is no positive-dimensional family. The cause is visible in the proof: the idempotent equation produces $a'^2 = +1/4$, whose solution set is the two points $a' = \pm 1/2$, because $\mathbb{D}$ has no root of $-1$ and no vector part to vary independently.</p>
 <h2 id="the-idempotents-as-indicator-functions">The Idempotents as Indicator Functions</h2>
 <p>The classification has a transparent form under the algebra isomorphism</p>
 <p>$$
@@ -129,7 +129,7 @@ $$</p>
 \{\text{idempotents of } \mathbb{D}\} \;\longleftrightarrow\; \{\text{subsets of } \{+,-\}\}, \qquad e \longleftrightarrow \{\sigma : e_\sigma \neq 0\},
 $$</p>
 <p>with $2^2 = 4$ elements. The idempotent $e$ is the projection onto the coordinates selected by its subset, and $1-e$ is the projection onto the complementary subset; the two complementary pairs are $\{0,1\}$ and $\{\Pi_1,\Pi_2\}$.</p>
-<p>In the biquaternion algebra the corresponding bijection is with the roots of $-1$; here there is no root of $-1$ to parametrise, and the parametrising set is instead the two-point set itself, whose power set has four elements.</p>
+<p>There is no root of $-1$ to parametrise, and the parametrising set is the two-point set itself, whose power set has four elements.</p>
 <h2 id="idempotents-as-projections">Idempotents as Projections</h2>
 <p>An idempotent $e$ satisfies $e^2 = e$, so it acts as the identity on its image and annihilates its kernel; it is a <strong>projection</strong>. Its complement $1-e$ is also an idempotent, and</p>
 <p>$$
@@ -175,58 +175,10 @@ $$</p>
 <p>$$
 0 = (0,0), \quad 1 = (1,0), \quad \Pi_1 = \tfrac12(1,1), \quad \Pi_2 = \tfrac12(1,-1).
 $$</p>
-<p>It is a finite set, and its parametrisation by the subsets of $\{+,-\}$ makes the finiteness structural rather than accidental. This is again the opposite of the biquaternion case, where the idempotents form a positive-dimensional family in bijection with the roots of $-1$; here the parametrising set is the two-point set, so the whole set is finite. Of the four idempotents only $1$ is a unit: each of $0, \Pi_1, \Pi_2$ has a vanishing idempotent coordinate, so each is a non-unit, and the two nontrivial ones are the zero divisors.</p>
-<h2 id="the-two-dimensional-analogue-of-the-idempotent-theory-of-math163">The Two-Dimensional Analogue of the Idempotent Theory of $\mathbb{B}$</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>feature</th>
-<th>$\mathbb{B}$</th>
-<th>$\mathbb{D}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>standard idempotents</td>
-<td>$\tilde\Pi_1 = \tfrac12(1+ie_3)$, $\tilde\Pi_2 = \tfrac12(1-ie_3)$</td>
-<td>$\Pi_1 = \tfrac12(1+j)$, $\Pi_2 = \tfrac12(1-j)$</td>
-</tr>
-<tr>
-<td>central?</td>
-<td>no</td>
-<td>yes (the algebra is commutative)</td>
-</tr>
-<tr>
-<td>parametrising set of idempotents</td>
-<td>roots of $-1$ (a large stratified set)</td>
-<td>subsets of $\{+,-\}$ (four points)</td>
-</tr>
-<tr>
-<td>number of idempotents</td>
-<td>a continuum of nontrivial ones</td>
-<td>$4$ in all</td>
-</tr>
-<tr>
-<td>minimal left ideals</td>
-<td>$\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$, of dimension $2$ over $\mathbb{C}$, $4$ over $\mathbb{R}$</td>
-<td>$\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$, of dimension $1$</td>
-</tr>
-<tr>
-<td>decomposition</td>
-<td>$\mathbb{B} = \mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$</td>
-<td>$\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2$</td>
-</tr>
-<tr>
-<td>zero divisors via idempotents</td>
-<td>every non-pure zero divisor is a complex multiple of one</td>
-<td>every zero divisor is a real multiple of $\Pi_1$ or $\Pi_2$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The table is the summary of the systematic degeneration: the two-dimensional algebra retains the direct-sum decomposition, the complementary pair and the classification of the zero divisors by idempotents, and loses the non-central off-diagonal elements, the bijection with the roots of $-1$ and the positive-dimensional family of idempotents, simply because its two idempotents are central and its vector part has no room to vary.</p>
+<p>It is a finite set, and its parametrisation by the subsets of $\{+,-\}$ makes the finiteness structural rather than accidental. The parametrising set is the two-point set, so the whole set is finite. Of the four idempotents only $1$ is a unit: each of $0, \Pi_1, \Pi_2$ has a vanishing idempotent coordinate, so each is a non-unit, and the two nontrivial ones are the zero divisors.</p>
 <h2 id="summary">Summary</h2>
 <p>An idempotent of $\mathbb{D}$ is an element $A$ with $A^2 = A$. The algebra has exactly four: $0$, $1$, and the standard pair $\Pi_{1,2} = \tfrac12(1\pm j)$. The standard pair is orthogonal, complete and primitive, and it is central because $\mathbb{D}$ is commutative. Under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ the four idempotents are the four indicator functions of the two-point set $\{+,-\}$, so the set of idempotents is finite and corresponds to the power set of $\{+,-\}$ rather than to a family of roots of $-1$.</p>
-<p>The idempotents are projections: $A = A_+\Pi_1 + A_-\Pi_2$, with $A_\pm = A\Pi_{1,2}$ the two components, and $\Pi_1 + \Pi_2 = 1$, $\Pi_1\Pi_2 = 0$ give the direct-sum decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2 \cong \mathbb{R}\oplus\mathbb{R}$, whose summands are the two minimal ideals. The nontrivial idempotents are zero divisors, and conversely every zero divisor is a real multiple of $\Pi_1$ or of $\Pi_2$: in the idempotent basis the zero divisors are exactly the elements supported on a single idempotent, that is, the elements with one vanishing coordinate. This is the two-dimensional analogue of the idempotent theory of $\mathbb{B}$, with the vector part missing and the non-commutativity gone.</p>
+<p>The idempotents are projections: $A = A_+\Pi_1 + A_-\Pi_2$, with $A_\pm = A\Pi_{1,2}$ the two components, and $\Pi_1 + \Pi_2 = 1$, $\Pi_1\Pi_2 = 0$ give the direct-sum decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2 \cong \mathbb{R}\oplus\mathbb{R}$, whose summands are the two minimal ideals. The nontrivial idempotents are zero divisors, and conversely every zero divisor is a real multiple of $\Pi_1$ or of $\Pi_2$: in the idempotent basis the zero divisors are exactly the elements supported on a single idempotent, that is, the elements with one vanishing coordinate. This is the idempotent theory in the lowest dimension, with no vector part and no non-commutativity.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -286,7 +238,6 @@ $$</p>
 <ul>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for idempotents, Peirce decompositions and the structure of finite-dimensional algebras.</li>
 <li>I. N. Herstein, <em>Noncommutative Rings</em> (Carus Mathematical Monographs 15, Mathematical Association of America, 1968), for idempotents, orthogonal families and the theory of the radical.</li>
-<li>John Voight, <em>Quaternion Algebras</em> (Springer, Graduate Texts in Mathematics 288, 2021), for idempotents and zero divisors in real algebras of small dimension.</li>
 <li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, Graduate Texts in Mathematics 131, 2nd ed. 2001), for primitive idempotents and minimal ideals.</li>
 <li>Israel Nathan Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975), for the elementary classification of the idempotents of a product of fields.</li>
 </ul>

@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="worked-examples-in-the-real-algebra"><strong>Worked Examples in the Real Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article is the computed companion to the algebraic articles of the real algebra. Where <em>Real Algebra</em> states the definitions and proves the general properties, the present article exhibits them on explicit elements, so that the general statements can be read against a concrete computation: the field operations, the sole involution and its fixed-point subspace, the associated direct-sum decompositions, and the order with its Archimedean and completeness consequences. It is the first rung of the ladder that the worked-example articles of the complex, quaternion and biquaternion algebras continue.</p>
+<p>This article is the computed companion to the algebraic articles of the real algebra. Where <em>Real Algebra</em> states the definitions and proves the general properties, the present article exhibits them on explicit elements, so that the general statements can be read against a concrete computation: the field operations, the sole involution and its fixed-point subspace, the associated direct-sum decompositions, and the order with its Archimedean and completeness consequences. It is the first rung of the ladder that the worked-example articles of the higher algebras continue.</p>
 <p>The elements used throughout are</p>
 <p>$$
 c = -\tfrac{3}{4}, \qquad d = \tfrac{7}{2},
@@ -78,7 +78,7 @@ $$</p>
 <p><strong>Associativity and distributivity</strong> are illustrated by the two products above agreeing and by $(c+d)^2 = c^2 + 2cd + d^2$, a computation of the same rules which needs no separate display.</p>
 <h2 id="the-involution-on-concrete-elements">The Involution on Concrete Elements</h2>
 <p>The real algebra carries one involution, the identity.</p>
-<p><strong>The identity.</strong> $\operatorname{id}(c) = c = -\tfrac{3}{4}$ and $\operatorname{id}(d) = d = \tfrac{7}{2}$. The identity fixes every element, and it is the only involution of $\mathbb{R}$: an $\mathbb{R}$-algebra involution is a field automorphism of $\mathbb{R}$, and there is no nontrivial one, so there is no analogue here of the conjugation of $\mathbb{C}$ or of the quaternion conjugation of $\mathbb{H}$ and $\mathbb{B}$. The absence is the mathematical content of the unitary case.</p>
+<p><strong>The identity.</strong> $\operatorname{id}(c) = c = -\tfrac{3}{4}$ and $\operatorname{id}(d) = d = \tfrac{7}{2}$. The identity fixes every element, and it is the only involution of $\mathbb{R}$: an $\mathbb{R}$-algebra involution is a field automorphism of $\mathbb{R}$, and there is no nontrivial one, so there is no analogue here of the conjugation of $\mathbb{C}$. The absence is the mathematical content of the unitary case.</p>
 <p>It is an involution, $\operatorname{id}(\operatorname{id}(a)) = a$ for every $a$, and the relation is immediate because $\operatorname{id}$ is the identity map.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -155,15 +155,13 @@ $$</p>
 <p>and the non-negative root of the first is the absolute value of $c$ although $c$ is negative; the existence and uniqueness of the non-negative root is a consequence of completeness.</p>
 <p><strong>Density and the irrational.</strong> Between $c$ and $d$ there lies the rational $\tfrac{1}{2}$, and also the irrational $\sqrt{2}$; the set $\{a \in \mathbb{Q} : a^2 < 2\}$ is bounded above in $\mathbb{R}$ with supremum $\sqrt{2} \notin \mathbb{Q}$, which is the completeness of $\mathbb{R}$ used to manufacture an irrational from a rational set.</p>
 <h2 id="the-place-in-the-ladder">The Place in the Ladder</h2>
-<p>The real algebra is the first rung of the tensor ladder $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$ of the corpus, and every structure computed above is the one-dimensional case of a structure that the higher rungs enrich.</p>
+<p>The real algebra is the first rung of the tensor ladder $\mathbb{R}, \mathbb{C}$ of the corpus, and every structure computed above is the one-dimensional case of a structure that the higher rungs enrich.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>structure</th>
 <th>$\mathbb{R}$</th>
 <th>$\mathbb{C}$</th>
-<th>$\mathbb{H}$</th>
-<th>$\mathbb{B}$</th>
 </tr>
 </thead>
 <tbody>
@@ -171,37 +169,29 @@ $$</p>
 <td>involution</td>
 <td>identity only</td>
 <td>complex conjugation</td>
-<td>quaternion conjugation</td>
-<td>quaternion and complex</td>
 </tr>
 <tr>
 <td>fixed subspace</td>
 <td>the whole algebra</td>
 <td>the real line</td>
-<td>the real line</td>
-<td>Hermitian subspace</td>
 </tr>
 <tr>
 <td>anti-fixed subspace</td>
 <td>$\{0\}$</td>
 <td>the imaginary line</td>
-<td>the pure quaternions</td>
-<td>anti-Hermitian subspace</td>
 </tr>
 <tr>
 <td>nonzero elements invertible</td>
 <td>yes, a field</td>
 <td>yes, a field</td>
-<td>yes, a division algebra</td>
-<td>no, there are zero divisors</td>
 </tr>
 </tbody>
 </table></div>
-<p>The real column is the base case that the other worked-example articles continue: <em>Worked Examples in the Complex Algebra</em> adds the nontrivial conjugation and the circle, <em>Worked Examples in the Split-Quaternion Algebra</em> adds the indefinite form and its two regimes. Each of them reuses the algebraic identities computed here — commutativity, the triviality of the involution decomposition, and the invertibility of every nonzero element — in the case where the involution is no longer trivial and the algebra is no longer a field.</p>
+<p>The real column is the base case that the other worked-example articles continue: <em>Worked Examples in the Complex Algebra</em> adds the nontrivial conjugation and the circle. It reuses the algebraic identities computed here — commutativity, the triviality of the involution decomposition, and the invertibility of every nonzero element — in the case where the involution is no longer trivial and the algebra is no longer a field.</p>
 <h2 id="summary">Summary</h2>
 <p>On the worked pair $c = -\tfrac{3}{4}$ and $d = \tfrac{7}{2}$ the real algebra is exhibited concretely: the sum $\tfrac{11}{4}$, the difference $\tfrac{17}{4}$, and the product $cd = -\tfrac{21}{8}$ with $dc = cd$, the concrete form of commutativity.</p>
 <p>The only involution is the identity, so its fixed-point subspace is the whole algebra and its anti-fixed subspace is $\{0\}$; the involution decomposition is the trivial $\mathbb{R} = \mathbb{R}_{\mathbb{R}} \oplus \{0\}$. Both worked elements are units — their inverses are the field inverses $c^{-1} = -\tfrac{4}{3}$ and $d^{-1} = \tfrac{2}{7}$ — and $0$ is the only non-unit, the concrete form of the field property.</p>
-<p>On the order, the worked pair straddles the origin, the Archimedean witness for $\lvert c\rvert$ against $\lvert d\rvert$ is $n = 5$, and the completeness axiom is checked on the bounded sets $\{c,0,d\}$ and $\{\tfrac{n}{n+1}\}$, whose suprema are $\tfrac{7}{2}$ and $1$. The article is the first rung of the ladder continued by the complex, quaternion and biquaternion worked-example articles.</p>
+<p>On the order, the worked pair straddles the origin, the Archimedean witness for $\lvert c\rvert$ against $\lvert d\rvert$ is $n = 5$, and the completeness axiom is checked on the bounded sets $\{c,0,d\}$ and $\{\tfrac{n}{n+1}\}$, whose suprema are $\tfrac{7}{2}$ and $1$. The article is the first rung of the ladder continued by the worked-example article of the complex algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -251,7 +241,6 @@ $$</p>
 <li>Walter Rudin, <em>Principles of Mathematical Analysis</em>, 3rd edition (McGraw-Hill, 1976), for worked computations with suprema, roots and the density of the rationals.</li>
 <li>Israel Nathan Herstein, <em>Topics in Algebra</em>, 2nd edition (Wiley, 1975), for field computations and the invertibility of the nonzero elements.</li>
 <li>John B. Fraleigh, <em>A First Course in Abstract Algebra</em>, 7th edition (Addison–Wesley, 2003), for concrete field computations and the order of a field.</li>
-<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the place of the real algebra in the ladder of the division algebras.</li>
 </ul>
       </div>
     </main>

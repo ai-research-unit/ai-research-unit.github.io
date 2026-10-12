@@ -155,7 +155,7 @@ $$</p>
 <p><em>Proof.</em> Take norms: $N(p\tilde q) = N(p)N(\tilde q)$ and $N(p\tilde q) = 0$, so $N(p)N(\tilde q) = 0$ in the field $\mathbb{R}$, hence $N(p) = 0$ or $N(\tilde q) = 0$, and by positive definiteness $p = 0$ or $\tilde q = 0$.</p>
 <p>The same argument shows that over any field in which the quaternion norm is anisotropic — that is, vanishes only at the origin — there are no zero divisors. The failure of anisotropy is exactly the failure of the algebra to be a division algebra: if $N(\tilde q) = 0$ for some $\tilde q\neq 0$, then $\tilde{q}^{\natural}$ is a non-zero element annihilating $\tilde q$.</p>
 <h2 id="the-three-way-classification">The Three-Way Classification</h2>
-<p>The elements of the biquaternion algebra fall into three classes: the invertible elements, the non-zero zero divisors, and zero. The three are mutually exclusive and, over the complex field, exhaust the algebra. Here the classification has the same three slots but one of them is empty.</p>
+<p>The three are mutually exclusive and, over the complex field, exhaust the algebra. Here the classification has the same three slots but one of them is empty.</p>
 <p><strong>Theorem (classification).</strong> Over $\mathbb{R}$ every quaternion is exactly one of the following:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -187,58 +187,9 @@ $$</p>
 <p><strong>Corollary.</strong> Over $\mathbb{R}$ the algebra $\mathbb{H}$ is a division algebra: for $a\neq 0$ the equations $a\tilde q = b$ and $\tilde q a = b$ have the unique solutions $\tilde q = a^{-1}b$ and $\tilde q = ba^{-1}$ respectively.</p>
 <p><em>Proof.</em> The classification makes every non-zero element invertible; multiplying the equation $a\tilde q = b$ on the left by $a^{-1}$ gives $\tilde q = a^{-1}b$, and uniqueness is the same computation, the right case being symmetric.</p>
 <p>The division property is the reason the quaternion algebra stands at the head of its family: it is a four-dimensional real division algebra, and it is the largest-dimensional associative one.</p>
-<h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
-<p>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the same multiplication table with the coefficients extended from $\mathbb{R}$ to $\mathbb{C}$, and its norm</p>
-<p>$$
-N(\tilde Q) = \tilde Q\,\tilde{Q}^{\natural}
-$$</p>
-<p>takes values in $\mathbb{C}$ rather than in $\mathbb{R}$. The comparison isolates what the real coefficient field buys.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>$\mathbb{H}$ over $\mathbb{R}$</th>
-<th>$\mathbb{B}$ over $\mathbb{C}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Values of $N$</td>
-<td>non-negative reals</td>
-<td>complex numbers</td>
-</tr>
-<tr>
-<td>Positive definite</td>
-<td>yes</td>
-<td>no</td>
-</tr>
-<tr>
-<td>Zero divisors</td>
-<td>none</td>
-<td>the null cone $N = 0$</td>
-</tr>
-<tr>
-<td>Invertibility criterion</td>
-<td>$\tilde q\neq 0$</td>
-<td>$N(\tilde Q)\neq 0$</td>
-</tr>
-<tr>
-<td>Classes of elements</td>
-<td>two (zero, invertible)</td>
-<td>three (invertible, zero divisor, zero)</td>
-</tr>
-<tr>
-<td>Group of units</td>
-<td>$\mathbb{R}_{>0}\times \mathbb{H}^1$</td>
-<td>$GL_2(\mathbb{C})$</td>
-</tr>
-</tbody>
-</table></div>
-<p>In the biquaternion case the norm is a complex-valued quadratic form, its zero set is the null cone, and an element with $N = 0$ but $\tilde Q\neq 0$ is a genuine zero divisor; the three-way classification is then a genuine trichotomy. Here the quaternion norm is real and positive definite, the null cone degenerates to the origin, the middle class of the classification is empty, and the unit group is the product of a line and the norm-one shell. The biquaternion case is treated in <em>Norm and Invertibility in the General Plain Algebra</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The quaternion algebra carries the multiplicative quadratic form $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $N(p\tilde q) = N(p)N(\tilde q)$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$, a real symmetric bilinear form whose diagonal is $N(\tilde q)$ and whose polarisation recovers it; the Hermitian form $\tilde q\tilde{q}^{\natural}$ coincides with $N(\tilde q)$.</p>
-<p>Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly when $N(\tilde q)\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. Over $\mathbb{R}$ every non-zero quaternion is invertible, the algebra has no zero divisors, and it is a division algebra, so the three-way classification of the biquaternion case collapses to the dichotomy zero or invertible. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times \mathbb{H}^1$ of a positive scale and the unit sphere.</p>
-<p>The contrast with the biquaternion case is the contrast between a real and a complex norm: the complex norm has a null cone, the null cone supplies non-zero zero divisors, and the trichotomy invertible–zero-divisor–zero is genuine there, whereas here it degenerates.</p>
+<p>Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly when $N(\tilde q)\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/N(\tilde q)$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times \mathbb{H}^1$ of a positive scale and the unit sphere.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -299,14 +250,6 @@ $$</p>
 <tr>
 <td>$\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times \mathbb{H}^1$</td>
 <td>Polar split of the units</td>
-</tr>
-<tr>
-<td>$\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
-<td>Biquaternion algebra, for contrast</td>
-</tr>
-<tr>
-<td>$N(\tilde Q) = \tilde Q\tilde{Q}^{\natural}$</td>
-<td>Complex-valued norm of $\mathbb{B}$</td>
 </tr>
 </tbody>
 </table></div>

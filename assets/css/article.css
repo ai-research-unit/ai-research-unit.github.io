@@ -84,12 +84,23 @@
 
 /* ── Menu subdivision levels ───────────────────────────────────────────────
    The menus use more levels than an article does, and each level has one job.
-   Prominence decreases with depth, so the top band is always the most visible:
-     h2               chapter        ## Biquaternions      dark, 2px rule
-     h3 (no link)     category band  ### Theory            filled band
-     h4               topic band     #### The Forms        bar, 3px
-     h5               sub-topic tag  ##### Form            bar, 2px
+   Prominence decreases with depth: the four bands are one ladder, and every
+   signal a level carries — the fill, the accent bar and the text tone — is one
+   notch softer than the level above, so the hierarchy is read without counting.
+     h2               chapter        ## Biquaternions      fill 22%, bar 8px
+     h3 (no link)     category band  ### Theory            fill 16%, bar 4px
+     h4               topic band     #### The Forms        fill grey #e8e8e8
+     h5               sub-topic tag  ##### Form            fill grey #f0f0f0
      p > a (only)     article entry  <a …>Title</a>        blue link
+   The chapter and the category band take a tint of the accent #2a4a7f mixed
+   with white (22 and 16%); the topic and sub-topic bands take a neutral grey
+   instead, so the two label families are told apart by hue as well as by depth
+   — a grey fill is visible at a lightness where a blue tint of the same
+   lightness reads as almost nothing.
+   Against the page background #f7f6f2 the fill contrast falls 1.34, 1.20, 1.13,
+   1.05 down the ladder. A chapter also gets the widest margin (4.5rem above,
+   against 2.2rem for a category), so its band never sits as close to the text
+   above it as the next level down.
    A heading is a label and nothing else: every `##`, `###`, `####` and `#####`
    of a menu is a title. An article entry is not a heading, it is a paragraph
    whose only element child is the link, so the level is carried by the markup
@@ -101,42 +112,60 @@
    are the only pages carrying an `h4`.
    The bands carry no `text-transform`: the level is told by size, by the
    accent bar and by the fill, so case in the source is shown as written. */
-/* Level 3 — the category band. The strongest label signal in the menu: a
-   filled band with a thick accent bar, larger and darker than anything under
-   it, so it always outranks the topic and sub-topic bands it contains. */
+/* Level 2 — the chapter band, top of the ladder: the deepest fill, the thickest
+   bar, the widest margin and the darkest text. When collapsed by the browser's
+   outline an h2 and the h3 under it can otherwise read alike, so the chapter
+   also takes the largest gap of the four. The menu-only fill replaces the
+   bottom rule the generic h2 carries, which would add a second edge below it. */
+.article-body:has(> h4) > h2 {
+  font-family: var(--font-ui);
+  font-size: var(--size-h2);
+  font-weight: 700;
+  color: #1a1a1a;
+  background: #d0d7e3;
+  border-bottom: none;
+  border-left: 8px solid #2a4a7f;
+  padding: 0.9rem 1.1rem;
+  margin-top: 4.5rem;
+  margin-bottom: 1.6rem;
+}
+/* Level 3 — the category band, one notch softer than the chapter: a lighter
+   fill, half the bar and a text tone below full black. */
 .article-body:has(> h4) > h3:not(:has(a)) {
   font-family: var(--font-ui);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-text);
-  background: var(--color-accent-soft);
-  border-left: 5px solid var(--color-accent);
+  color: #373737;
+  background: #dde2eb;
+  border-left: 4px solid #5f779f;
   padding: 0.5rem 0.9rem;
-  margin-top: 2.6rem;
-  margin-bottom: 0.9rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
 }
 /* Level 4 — the topic band. Same size as the article titles (--size-h3), so it
-   is never smaller than the entries it holds; it sits one notch down by the
-   thinner bar and the missing fill. */
+   is never smaller than the entries it holds. Its fill is a neutral grey, kept
+   one notch above the sub-topic tag and below the category band. */
 .article-body:has(> h4) > h4 {
   font-family: var(--font-ui);
   font-size: var(--size-h3);
   font-weight: 700;
-  color: var(--color-text);
-  padding-left: 0.7rem;
-  border-left: 3px solid var(--color-accent);
+  color: #464646;
+  background: #e8e8e8;
+  border-left: 3px solid #94a4bf;
+  padding: 0.35rem 0.7rem;
   margin-top: 1.8rem;
   margin-bottom: 0.4rem;
 }
-/* Level 5 — the sub-topic tag. Same size as the article titles, told apart by
-   the thinnest bar and the grey tone. Bar thickness separates the three bands. */
+/* Level 5 — the sub-topic tag, the softest band: a grey one shade lighter than
+   the topic band, the thinnest bar and the greyest tone. */
 .article-body:has(> h4) > h5 {
   font-family: var(--font-ui);
   font-size: var(--size-h3);
   font-weight: 700;
-  color: #444;
-  padding-left: 0.7rem;
-  border-left: 2px solid var(--color-accent);
+  color: #535353;
+  background: #f0f0f0;
+  border-left: 2px solid #cad2df;
+  padding: 0.25rem 0.7rem;
   margin-top: 1.2rem;
   margin-bottom: 0.3rem;
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Zero Divisors and the Four General Products — Biquaternion Universe</title>
+  <title>The Zero Divisors and the Twelve Structures — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -50,12 +50,12 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-zero-divisors-and-the-four-general-products"><strong>The Zero Divisors and the Four General Products</strong></h1>
+        <h1 id="the-zero-divisors-and-the-twelve-structures"><strong>The Zero Divisors and the Twelve Structures</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products (<em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>), $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$. A zero divisor is defined by an equation that names one of them: an element is a zero divisor of a product when that product lets a nonzero element be annihilated by it. Nothing in the definition is shared between the four products, and four different sets are what one expects. In the biquaternion algebra they coincide, and the whole of the difference between the four zero-divisor theories lies in the annihilators. The coincidence is a computed fact about this algebra, proved below; it is not a definition and not a property of a product with a conjugation in general.</p>
+<p>The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products (<em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>), $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$. A zero divisor is defined by an equation that names one of them: an element is a zero divisor of a product when that product lets a nonzero element be annihilated by it. Nothing in the definition is shared between the four products, and four different sets are what one expects. In the biquaternion algebra they coincide, and the whole of the difference between the four zero-divisor theories lies in the annihilators. The coincidence is a computed fact about this algebra, proved below; it is not a definition and not a property of a product with a conjugation in general. The four products are four of the twelve structures of the space, and the coincidence is a property of the four alone: on the eight structures obtained by symmetrising or antisymmetrising a general product the zero-divisor set is strictly larger, so that the cone is the mark of the four general products among the twelve.</p>
 <p>This article establishes that fact and separates three things that are easily conflated. The <strong>set</strong> of zero divisors is the one point on which the four products agree: the four sets coincide, and each is the nonzero part of the vanishing set of the central square, $\{c = 0\}$. The <strong>annihilator</strong> of a fixed zero divisor is not common, and the four products attach eight planes to one element. The <strong>inverse</strong> of an element is not common either, because a unit in the two-sided sense exists in one product alone. The classical equivalence of ring theory, zero divisor if and only if not a unit, therefore holds for the plain product alone; for the other three it is replaced by the criterion that the two one-sided inverse equations have no solution, a criterion that reads the same in all four products.</p>
-<p>The general form of the definitions used here — the zero divisor, the annihilator, the idempotent, the nilpotent and the rest, stated once for a general product and read on the products of the space — is <em>Definitions for the Study of the 12 Algebraic Structures</em>; this article is the four-product computation and the coincidence, and it keeps the definition read on the four.</p>
-<p>The central square, its four multiplicative laws and the annihilators of a fixed element are <em>The Annihilating Elements of the Four General Products</em>. The two families of zero divisors, the pure and the non-pure, and the cone they form are <em>Zero Divisors of the General Plain Algebra</em>. The property table of the four products, the four idempotent sets and the four unit structures are <em>Comparison Between the Four General Products</em>. The isomorphism used here is <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, the norm and the invertibility criterion are <em>Norm and Invertibility in the General Plain Algebra</em>, and the position of the zero divisors in the remarkable subspaces is <em>Introduction to the Remarkable Subspaces</em>.</p>
+<p>The general form of the definitions used here — the zero divisor, the annihilator, the idempotent, the nilpotent and the rest, stated once for a general product and read on the products of the space — is <em>Definitions for the Study of the 12 Algebraic Structures</em>; this article is the four-product computation and the coincidence, together with the twelve-structure reading of the set in §<em>The Twelve Structures and the Cone</em>, which shows the coincidence to be four-fold and no more.</p>
+<p>The central square, its four multiplicative laws and the annihilators of a fixed element are <em>The Annihilating Elements of the Twelve Structures</em>. The two families of zero divisors, the pure and the non-pure, and the cone they form are <em>Zero Divisors of the General Plain Algebra</em>. The property table of the four products, the four idempotent sets and the four unit structures are <em>Comparison Between the Four General Products</em>. The isomorphism used here is <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, the norm and the invertibility criterion are <em>Norm and Invertibility in the General Plain Algebra</em>, and the position of the zero divisors in the remarkable subspaces is <em>Introduction to the Remarkable Subspaces</em>.</p>
 <p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu = Q_0 e_0 + \mathbf Q$ with $Q_0\in\mathbb{C}$ and $\mathbf Q = \sum_{k=1}^{3}Q_k e_k$. The natural conjugation is $\tilde Q^{\natural} = Q_0 - \mathbf Q$, the star is $\tilde Q^{*} = \overline{Q_0} - \overline{\mathbf Q}$, so that ${}^{*} = \bar{\cdot}\circ{}^{\natural}$. The unit of the algebra is written both $1$ and $e_0$; it is fixed by ${}^{\natural}$ and by ${}^{*}$. The <strong>central square</strong> is</p>
 <p>$$
 \tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q = c(\tilde Q)e_0 , \qquad c(\tilde Q) = \sum_{\mu=0}^{3}Q_\mu^{2} ,
@@ -101,7 +101,7 @@ $$</p>
 <h2 id="the-four-zero-divisor-sets-coincide">The Four Zero-Divisor Sets Coincide</h2>
 <p><strong>Theorem (the four sets coincide).</strong> For the biquaternion algebra the four zero-divisor sets coincide. A nonzero element $\tilde P$ is a left, a right or a two-sided zero divisor of one of the four products exactly when $c(\tilde P) = 0$, and then it is a zero divisor of all four, on both sides.</p>
 <p><strong>Proof.</strong> Apply the criterion of the preceding section to the four products in turn. In each case the condition is $c(\tilde P) = 0$, read from the singularity of $\mathsf{M}_2(\tilde P)$ or of $\mathsf{M}_2(\tilde P^{\natural})$, whose determinants are the same.</p>
-<p>The reason is structural and short, and it is a reason about the biquaternion algebra alone. Each of the four products is the plain product with a conjugation in one or both slots; each conjugation of $\mathbb{B}$ is a bijection that either fixes or conjugates the central square, $c(\tilde P^{\natural}) = c(\tilde P)$ and $c(\tilde P^{*}) = \overline{c(\tilde P)}$ (<em>The Annihilating Elements of the Four General Products</em>); and the central square is the single second-order invariant that decides the invertibility of the element. Composing a one-sided multiplication with a bijection leaves the kernel zero exactly when it was zero, so the four kernels vanish on the same elements and the four vanishing sets are one. The multiplicativity of the central square, $c(\tilde P\tilde Q) = c(\tilde P)c(\tilde Q)$ for the two bilinear products and $c(\tilde P\tilde Q) = c(\tilde P)\overline{c(\tilde Q)}$ for the two sesquilinear ones, is the same fact in the language of the products.</p>
+<p>The reason is structural and short, and it is a reason about the biquaternion algebra alone. Each of the four products is the plain product with a conjugation in one or both slots; each conjugation of $\mathbb{B}$ is a bijection that either fixes or conjugates the central square, $c(\tilde P^{\natural}) = c(\tilde P)$ and $c(\tilde P^{*}) = \overline{c(\tilde P)}$ (<em>The Annihilating Elements of the Twelve Structures</em>); and the central square is the single second-order invariant that decides the invertibility of the element. Composing a one-sided multiplication with a bijection leaves the kernel zero exactly when it was zero, so the four kernels vanish on the same elements and the four vanishing sets are one. The multiplicativity of the central square, $c(\tilde P\tilde Q) = c(\tilde P)c(\tilde Q)$ for the two bilinear products and $c(\tilde P\tilde Q) = c(\tilde P)\overline{c(\tilde Q)}$ for the two sesquilinear ones, is the same fact in the language of the products.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -140,6 +140,83 @@ $$</p>
 </table></div>
 <p>The four rows are identical, and that is the theorem. <strong>The word is <em>coincide</em>, not <em>independent</em>.</strong> The zero divisor is defined by an equation that names a product, so the notion belongs to the product, and the four products are four definitions, not one. What the theorem says is that for the biquaternion algebra the four definitions happen to select one and the same subset of $\mathbb{B}$; it does not say that the algebra carries a zero-divisor set of its own, apart from a product, and it does not carry to a general product with a conjugation. The two ingredients of the proof — that both conjugations are bijections of $\mathbb{B}$ and that one invariant, the central square, decides the singularity in all four — are facts about this algebra.</p>
 <p>The table is also the reason the question is worth asking: the four rows of the comparison table of <em>Comparison Between the Four General Products</em> separate the four products on almost every other property, and they do not separate them here.</p>
+<h2 id="the-twelve-structures-and-the-cone">The Twelve Structures and the Cone</h2>
+<p>The four general products are four of the twelve structures of the space. Each of the four splits into a <strong>symmetric part</strong> and an <strong>antisymmetric part</strong> — the split reads the exchange of the two arguments in the two $\mathbb{C}$-bilinear families and the conjugate transpose in the two sesquilinear ones — and the twelve structures are the four general ones together with the eight derived ones (<em>The 12 Products of the Biquaternion Complex Space</em>). They carry the names $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$ and $\mathrm{AQS}$, the first letter naming the operation, the second the family of the first slot and the third the family of the second slot (<em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>).</p>
+<p>A zero divisor names its product, so each of the twelve structures carries a zero-divisor set of its own, and the theorem of the four coinciding sets is a statement about four of the twelve. The next table records the twelve sets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>the product</th>
+<th>the zero-divisor set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$</td>
+<td>$\tilde P\tilde Q$</td>
+<td>$\{c=0\}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>$\{c=0\}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}$</td>
+<td>$\tilde P\tilde Q^{*}$</td>
+<td>$\{c=0\}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>$\{c=0\}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>$\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</td>
+<td>$(\{Q_0=0\}\cup\{c=0\})\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>$\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$</td>
+<td>$\mathbb{B}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>$\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$</td>
+<td>$\mathbb{B}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{AQA}$</td>
+<td>$\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$</td>
+<td>$\mathbb{B}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPS}$</td>
+<td>$\tfrac12(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}})$</td>
+<td>$\mathbb{B}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{APS}$</td>
+<td>$\tfrac12(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}})$</td>
+<td>$\mathbb{B}\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>$\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}})$</td>
+<td>$(\{Q_0=0\}\cup\{c=0\})\setminus\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>$\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde P^{*}})$</td>
+<td>$\mathbb{B}\setminus\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the cone is the mark of the four general products).</strong> Among the twelve structures of the biquaternion complex space the zero-divisor set is the punctured cone $\{c = 0\}\setminus\{0\}$ exactly for the four general structures $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$, and for no other. On the four antisymmetric structures and on $\mathrm{SQA}$ and $\mathrm{SPS}$ the set is the whole punctured space $\mathbb{B}\setminus\{0\}$; on $\mathrm{SPA}$ and $\mathrm{SQS}$ it is $(\{Q_0 = 0\}\cup\{c = 0\})\setminus\{0\}$, strictly larger than the cone.</p>
+<p><em>Proof.</em> The four general rows are the theorem of §<em>The Four Zero-Divisor Sets Coincide</em>. On the antisymmetric structures the product of an element with itself vanishes, $\tilde P\wedge\tilde P = 0$ for the antisymmetric plain multiplication $\wedge$ and $\tilde P\diamond\overline{\tilde P} = 0$ for the antisymmetric quaternionic sesquilinear block $\diamond$, so every nonzero element is a zero divisor; and on the two structures whose product is a scalar form, $\mathrm{SQA}$ and $\mathrm{SPS}$, every nonzero element likewise annihilates the nonzero elements of a hyperplane. On $\mathrm{SPA}$ the determinant of the left multiplication is $Q_0^{2}c(\tilde Q)$ (<em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>), so the pure nonzero elements join the cone, and on $\mathrm{SQS}$ the criterion is the same two-clause equation, $Q_0 = 0$ or $c(\tilde Q) = 0$. Each of the eight criteria is the subject of the element article of its structure, one to a structure, of the twelve.</p>
+<p><strong>Remark (a zero divisor that is invertible).</strong> The coincidence of the zero-divisor set with the vanishing cone is a property of the four general products alone, and on the eight derived structures the ring-theoretic picture breaks. A zero divisor there need not be singular: the unit $e_1$ has $c(e_1) = 1$ and is invertible in the algebra, and it annihilates $e_2$ in the symmetric plain product, $e_1\bullet e_2 = \tfrac12(e_1e_2 + e_2e_1) = 0$. The equivalence of §<em>Invertibility and the Zero Divisors</em>, true for the plain product, has therefore no twelve-structure analogue, and on the eight derived structures the zero-divisor set alone separates almost nothing: the twelve sets fall into three values, the cone, the enlarged set and the whole punctured space.</p>
 <h2 id="what-does-depend-on-the-product">What Does Depend on the Product</h2>
 <h3 id="the-annihilators-of-one-zero-divisor">The Annihilators of One Zero Divisor</h3>
 <p>Fix a zero divisor and ask which elements annihilate it. For a product $f$ write, for $\tilde P$ with $c(\tilde P) = 0$,</p>
@@ -178,9 +255,9 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Four of the eight planes are distinct, the other four coinciding in pairs. The first generator is $\tilde P$ itself when the first slot carries the conjugation and $\tilde P^{\natural}$ when it does not; the second lies in the plane of $e_2$ and $e_3$, where it is $e_3 \pm ie_2$, the sign being fixed by the product and by the side. The two one-sided planes coincide for the natural product and for the general plain sesquilinear product, and they differ for the plain product and for the general quaternionic sesquilinear product, which is the reading of the theorem of <em>The Annihilating Elements of the Four General Products</em>. One set of elements, eight annihilators: the set is common to the four products, the annihilator is the product's own.</p>
+<p>Four of the eight planes are distinct, the other four coinciding in pairs. The first generator is $\tilde P$ itself when the first slot carries the conjugation and $\tilde P^{\natural}$ when it does not; the second lies in the plane of $e_2$ and $e_3$, where it is $e_3 \pm ie_2$, the sign being fixed by the product and by the side. The two one-sided planes coincide for the natural product and for the general plain sesquilinear product, and they differ for the plain product and for the general quaternionic sesquilinear product, which is the reading of the theorem of <em>The Annihilating Elements of the Twelve Structures</em>. One set of elements, eight annihilators: the set is common to the four products, the annihilator is the product's own.</p>
 <h3 id="the-square-the-idempotents-and-the-units">The Square, the Idempotents and the Units</h3>
-<p>The annihilator is the first of four product-dependent readings that the common set does not determine, and the other three are recorded in <em>The Annihilating Elements of the Four General Products</em>. They are summarised here for completeness.</p>
+<p>The annihilator is the first of four product-dependent readings that the common set does not determine, and the other three are recorded in <em>The Annihilating Elements of the Twelve Structures</em>. They are summarised here for completeness.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -384,7 +461,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The four general products of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> define four notions of zero divisor, one to a product, and for the biquaternion algebra the four sets coincide — a coincidence of this algebra, proved here, not a definition. For each product a nonzero element is a left zero divisor if and only if it is a right zero divisor if and only if its central square vanishes, $c(\tilde P) = 0$; the criterion is the singularity of the matrix $\mathsf{M}_2(\tilde P)$ in the model $\mathbb{B}\cong M_2(\mathbb{C})$, and the conjugations that separate the four products are bijections that leave the central square alone or conjugate it. The zero divisors are therefore the nonzero elements of $\{c = 0\}$, a complex cone of complex dimension three and real dimension six, for the four products at once.</p>
 <p>What differs from one product to the next is the annihilator of a fixed zero divisor: each product has two one-sided annihilators, each a complex plane, the eight planes collapsing to a smaller number of distinct ones and related by the two conjugations. What also differs is the square of an element, the idempotent equation and the unit; the four unit structures are one two-sided unit, one left unit, one right unit and none, so that the classical equivalence of ring theory, zero divisor if and only if not a unit, holds for the plain product alone. For the other three it is replaced by the criterion that the zero divisors are exactly the elements for which neither one-sided inverse equation $f(\tilde P,\tilde X) = e_0$ and $f(\tilde X,\tilde P) = e_0$ has a solution, a criterion that reads the same in the four products and invokes no unit.</p>
-<p>The zero divisors split into the pure family, the nilpotents of real dimension four, and the non-pure family, the complex multiples of the nontrivial idempotents, of real dimension six. The split is a distinction of the element and is common to the four products; the reading of the square of a member of either family is not. Of the remarkable subspaces, the centre and the two quaternion subspaces contain no zero divisor, the vector subspace contains the nilpotent cone and the two Hermitian subspaces contain a double cone. The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form, which is the other cone of the chapter. The annihilators themselves, with the central square and its four multiplicative laws, are the subject of <em>The Annihilating Elements of the Four General Products</em>.</p>
+<p>The zero divisors split into the pure family, the nilpotents of real dimension four, and the non-pure family, the complex multiples of the nontrivial idempotents, of real dimension six. The split is a distinction of the element and is common to the four products; the reading of the square of a member of either family is not. Of the remarkable subspaces, the centre and the two quaternion subspaces contain no zero divisor, the vector subspace contains the nilpotent cone and the two Hermitian subspaces contain a double cone. The set $\{c = 0\}$ is not the isotropic cone of the general plain bilinear form, which is the other cone of the chapter. Among the twelve structures the set $\{c=0\}\setminus\{0\}$ is the zero-divisor set of the four general products and of no other: the four antisymmetric structures and $\mathrm{SQA}$ and $\mathrm{SPS}$ have the whole punctured space, $\mathrm{SPA}$ and $\mathrm{SQS}$ have $(\{Q_0=0\}\cup\{c=0\})\setminus\{0\}$, and on the eight derived structures a zero divisor need not be singular, the unit $e_1$ annihilating $e_2$ in the symmetric plain product. The annihilators themselves, with the central square and its four multiplicative laws, are the subject of <em>The Annihilating Elements of the Twelve Structures</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -430,11 +507,15 @@ $$</p>
 <td>pure, non-pure</td>
 <td>scalar part zero, scalar part nonzero</td>
 </tr>
+<tr>
+<td>$\mathrm{GPA},\dots,\mathrm{AQS}$</td>
+<td>the twelve structures of the space: the four general products and their eight symmetric and antisymmetric parts</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><em>The Annihilating Elements of the Four General Products</em> (<code>articles_maths/the-annihilating-elements-of-the-four-general-products.md</code>), for the central square, its four multiplicative laws and the eight annihilators of a fixed zero divisor.</li>
+<li><em>The Annihilating Elements of the Twelve Structures</em> (<code>articles_maths/the-annihilating-elements-of-the-twelve-structures.md</code>), for the central square, its four multiplicative laws and the eight annihilators of a fixed zero divisor.</li>
 <li><em>Zero Divisors of the General Plain Algebra</em> (<code>articles_maths/zero-divisors-of-the-general-plain-algebra.md</code>), for the two families, the cone and the classification.</li>
 <li><em>Comparison Between the Four General Products</em> (<code>articles_maths/comparison-between-the-four-general-products.md</code>), for the property table, the four idempotent sets, the four square-root problems and the four unit entries.</li>
 <li><em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-four-general-products-of-the-biquaternion-c-space.md</code>), for the four definitions and their scalar–vector forms.</li>
@@ -442,6 +523,12 @@ $$</p>
 <li><em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> (<code>articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md</code>), for the isomorphism, the determinant and the rank-one elements.</li>
 <li><em>The Four Pairings of the Biquaternion Algebra</em> (<code>articles_maths/the-four-pairings-of-the-biquaternion-algebra.md</code>), for the general plain bilinear form and its isotropic cone.</li>
 <li><em>Introduction to the Remarkable Subspaces</em> (<code>articles_maths/introduction-to-the-remarkable-subspaces.md</code>), for the subspaces and the zero divisors they contain.</li>
+<li><em>The 12 Products of the Biquaternion Complex Space</em> (<code>articles_maths/the-12-products-of-the-biquaternion-complex-space.md</code>), for the four general products and their symmetric and antisymmetric parts.</li>
+<li><em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the twelve names, the three letters of each and the class of each.</li>
+<li><em>Zero Divisors of the Symmetric Plain Algebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-plain-algebra.md</code>), for the first derived structure, whose set is the enlarged set and not the cone.</li>
+<li><em>Zero Divisors of the Symmetric Plain Sesqualgebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-plain-sesqualgebra.md</code>), for the scalar-form structure whose set is the whole punctured space.</li>
+<li><em>Zero Divisors of the Symmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md</code>), for the second derived structure with the enlarged set.</li>
+<li><em>Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra</em> (<code>articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-sesqualgebra.md</code>), for the self-annihilating structure and its mirror relation.</li>
 </ul>
       </div>
     </main>

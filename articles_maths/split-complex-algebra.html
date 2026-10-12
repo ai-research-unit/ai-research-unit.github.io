@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="split-complex-algebra"><strong>Split-Complex Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article introduces the split complex algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real subspaces that arise from the natural conjugations: the real and split imaginary lines, and the two idempotent lines.</p>
+<p>This article introduces the split complex algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real subspaces that arise from the conjugations: the real and split imaginary lines, and the two idempotent lines.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The idempotent decomposition is defined algebraically.</p>
 <p>The split complex algebra is the two-dimensional real algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, written in a generator $j$ with $j^2 = +1$. It is the indefinite member of the two-dimensional pair whose definite member is the field $\mathbb{C}$ of complex numbers; the two share their basis, their conjugation and their dimension and differ in the sign of the square of the imaginary unit. The complex numbers are assumed from <em>Complex Algebra</em>, together with their basis, their multiplication and their conjugation, and no facts about them are restated here except where the comparison is the point.</p>
 <h2 id="the-split-complex-algebra">The Split Complex Algebra</h2>
@@ -75,7 +75,7 @@ a = \operatorname{Re} A, \qquad a' = \operatorname{Im} A.
 $$</p>
 <p>The notation $j$ is chosen deliberately. In the complex algebra the imaginary unit satisfies $i^2 = -1$. In the split complex algebra the unit satisfies $j^2 = +1$. Writing $j$ rather than $i$ makes the sign explicit and avoids confusion with the complex case; this is the notation used throughout the category.</p>
 <h3 id="the-real-algebra-view">The Real Algebra View</h3>
-<p>Unlike the biquaternion algebra, which is a complex algebra and a real algebra at once, the split complex algebra has a single ground field. It is a <strong>two-dimensional algebra over $\mathbb{R}$</strong>: its basis is $\{1, j\}$, every element is a real linear combination of the two basis elements, and the multiplication is $\mathbb{R}$-bilinear. The centre is all of $\mathbb{D}$, because the algebra is commutative.</p>
+<p>The split complex algebra has a single ground field. It is a <strong>two-dimensional algebra over $\mathbb{R}$</strong>: its basis is $\{1, j\}$, every element is a real linear combination of the two basis elements, and the multiplication is $\mathbb{R}$-bilinear. The centre is all of $\mathbb{D}$, because the algebra is commutative.</p>
 <p>There is no second ground field to pass to, and no scalar imaginary inside the algebra. This is the first of the systematic differences from the four-dimensional members of the family, and it is the reason the subspace lattice below collapses.</p>
 <h3 id="developed-form">Developed Form</h3>
 <p>Equivalently, $\mathbb{D}$ is the quotient ring</p>
@@ -101,7 +101,7 @@ A B = \sum_{\mu=0}^{1} \sum_{\nu=0}^{1} A_\mu B_\nu \, e_\mu e_\nu,
 $$</p>
 <p>where the products $e_\mu e_\nu$ are those of the split complex algebra. The multiplication is commutative and associative, and $1$ is the two-sided unit.</p>
 <h3 id="conjugations">Conjugations</h3>
-<p>There are <strong>two</strong> natural conjugations on $\mathbb{D}$, and they turn out to coincide.</p>
+<p>There are <strong>two</strong> conjugations on $\mathbb{D}$, and they turn out to coincide.</p>
 <p><strong>Split complex conjugation</strong> $\bar{A}$:</p>
 <p>$$
 \bar{A} = a - j a'.
@@ -122,7 +122,7 @@ $$</p>
 <p>$$
 \{\mathrm{id}, \bar{\cdot}\} \cong \mathbb{Z}/2.
 $$</p>
-<p>There is no second independent involution, hence no Klein four-group and no Hermitian or anti-Hermitian conjugation. This is the systematic degeneration of the two-dimensional case: the biquaternion algebra carries the Klein four-group $\{\mathrm{id}, \bar{\cdot}, {}^{*}, {}^{\dagger}\}$ of three commuting involutions, and each of those involutions contributes two subspaces; here there is one non-trivial involution, and it contributes the pair of lines below. The idempotent conjugation does not enlarge the group, since it is the same map.</p>
+<p>There is no second independent involution, hence no Klein four-group and no Hermitian or anti-Hermitian conjugation. There is one non-trivial involution, and it contributes the pair of lines below. The idempotent conjugation does not enlarge the group, since it is the same map.</p>
 <h2 id="the-distinguished-subspaces">The Distinguished Subspaces</h2>
 <p>The single non-trivial involution $\bar{\cdot}$ splits $\mathbb{D}$ into its fixed space and its anti-fixed space, two real vector subspaces of dimension $1$. The idempotent basis, developed below, cuts the algebra into its two primitive lines; it is the finest decomposition of $\mathbb{D}$, and it names the two null directions in place of the two coordinate axes.</p>
 <h3 id="the-real-subspace">The Real Subspace</h3>
@@ -146,7 +146,7 @@ $$</p>
 A = j a', \qquad a' \in \mathbb{R}.
 $$</p>
 <p>This is the <strong>split imaginary subspace</strong> $j\mathbb{R}_{\mathbb{D}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j a')^2 = a'^2 \in \mathbb{R}_{\mathbb{D}}$, which is not in $j\mathbb{R}_{\mathbb{D}}$ unless $a' = 0$. The form it carries is treated in <em>Split-Complex Norm and Invertibility</em>.</p>
-<p>There is only one non-trivial fixed-point set and one non-trivial anti-fixed-point set, because there is only one non-trivial involution. The remarkable-subspace lattice of the biquaternion algebra therefore has no analogue here: the involution lattice of $\mathbb{D}$ is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines.</p>
+<p>There is only one non-trivial fixed-point set and one non-trivial anti-fixed-point set, because there is only one non-trivial involution. The involution lattice of $\mathbb{D}$ is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines.</p>
 <h3 id="the-idempotent-basis">The Idempotent Basis</h3>
 <p>Define the <strong>idempotents</strong></p>
 <p>$$
@@ -161,7 +161,7 @@ $$</p>
 A = a + j a' = (a + a') \Pi_1 + (a - a') \Pi_2.
 $$</p>
 <p>This is the <strong>idempotent decomposition</strong> of $A$. It is the single most important structural fact about the split complex algebra, and the two lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$ are the finest direct summands of the algebra.</p>
-<h3 id="the-isomorphism-with-math95">The Isomorphism with $\mathbb{R} \oplus \mathbb{R}$</h3>
+<h3 id="the-isomorphism-with-math94">The Isomorphism with $\mathbb{R} \oplus \mathbb{R}$</h3>
 <p>The map</p>
 <p>$$
 \varphi : \mathbb{D} \to \mathbb{R} \oplus \mathbb{R}, \qquad \varphi(a + j a') = (a + a', a - a'),
@@ -190,7 +190,7 @@ $$</p>
 \mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j \mathbb{R}_{\mathbb{D}},
 $$</p>
 <p>where $j \mathbb{R}_{\mathbb{D}}$ is the set of split complex numbers of the form $j a'$ with $a' \in \mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{D}$ of real dimension $2$.</p>
-<p>This is the <strong>split complex decomposition</strong> of a split complex number. It expresses $A$ as a real number plus $j$ times another real number. In the biquaternion algebra the analogous decomposition is the quaternion decomposition $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$; here the two summands are the two eigenspaces of the unique non-trivial involution.</p>
+<p>This is the <strong>split complex decomposition</strong> of a split complex number. It expresses $A$ as a real number plus $j$ times another real number. The two summands are the two eigenspaces of the unique non-trivial involution.</p>
 <h2 id="the-idempotent-decomposition">The Idempotent Decomposition</h2>
 <p>The idempotent decomposition is the second natural decomposition of $\mathbb{D}$, and it is not the eigenspace decomposition of an involution:</p>
 <p>$$
@@ -304,10 +304,8 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>William Kingdon Clifford, <em>Preliminary Sketch of Biquaternions</em> (1873), for the origin of the split complex algebra in the biquaternion program.</li>
 <li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the geometric interpretation of split complex numbers.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
-<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
 <li>Vladimir V. Kisil, <em>Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$</em> (Imperial College Press, 2012), for the analytic applications.</li>
 </ul>
       </div>

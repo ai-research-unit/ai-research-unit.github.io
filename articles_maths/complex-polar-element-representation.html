@@ -53,8 +53,8 @@
         <h1 id="complex-polar-element-representation"><strong>Complex Polar Element Representation</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article is about the <strong>polar representation</strong> of a complex number: the statement that every nonzero complex number is the product of a positive real scale and a unit complex number, and the description of the unit factor as an exponential.</p>
-<p>The subject is elementary, and its place in this blog is that of the base case. The polar representation is developed here for the two-dimensional definite algebra $\mathbb{C}$, in the companion article <em>Split-Complex Polar Element Representation</em> for the two-dimensional indefinite algebra $\mathbb{D}$, and in the four companion articles on the polar representations of the quaternion, split-quaternion, biquaternion and split-biquaternion algebras. The family decomposes every element of every one of these algebras into the same four <strong>slots</strong> — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{C}$ exactly two slots are occupied, and one of them does double duty, so the algebra is the smallest case in which the pattern is already visible without any of the difficulties that come later: no branch choice, no boost, no zero divisors, no boundary.</p>
-<p>The plan is as follows. The modulus and the unit factor are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{C}$, in $\mathbb{D}$ and in the biquaternion algebra. The two factors are then identified with the two halves of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of <em>Complex Algebra</em>: the basis is $1$, $i$, the multiplication is $i^2 = -1$, the conjugate is $\bar{A} = a - i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. Every numerical value displayed below was recomputed in double precision.</p>
+<p>The subject is elementary, and its place in this blog is that of the base case. The polar representation is developed here for the two-dimensional definite algebra $\mathbb{C}$ and in the companion article <em>Split-Complex Polar Element Representation</em> for the two-dimensional indefinite algebra $\mathbb{D}$. The family decomposes every element of every algebra of the family into the same four <strong>slots</strong> — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{C}$ exactly two slots are occupied, and one of them does double duty, so the algebra is the smallest case in which the pattern is already visible without any of the difficulties that come later: no branch choice, no boost, no zero divisors, no boundary.</p>
+<p>The plan is as follows. The modulus and the unit factor are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{C}$ and in $\mathbb{D}$. The two factors are then identified with the two halves of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of <em>Complex Algebra</em>: the basis is $1$, $i$, the multiplication is $i^2 = -1$, the conjugate is $\bar{A} = a - i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. Every numerical value displayed below was recomputed in double precision.</p>
 <h2 id="the-modulus-and-the-unit-factor">The Modulus and the Unit Factor</h2>
 <h3 id="the-two-factors">The Two Factors</h3>
 <p><strong>Definition.</strong> Let $A \in \mathbb{C}$, $A \neq 0$. The <strong>polar representation</strong> of $A$ is the writing</p>
@@ -88,7 +88,7 @@ $$</p>
 <p><strong>Theorem.</strong> Every nonzero complex number $A$ has exactly one polar representation.</p>
 <p><strong>Existence.</strong> Put $r = \sqrt{N(A)}$ and $u = A/r$. Since $N(A) > 0$, the number $r$ is a positive real, and $N(u) = N(A)/r^2 = 1$ because $N(\lambda A) = \lambda^2N(A)$ for real $\lambda$. Hence $A = ru$ with $r > 0$ and $N(u) = 1$.</p>
 <p><strong>Uniqueness.</strong> Suppose $A = ru = r'u'$ with $r, r' > 0$ and $N(u) = N(u') = 1$. Taking norms gives $r^2 = N(A) = r'^2$, so $r = r'$ because both are positive, and then $u = A/r = u'$.</p>
-<p>The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is <em>not</em> unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r e^{i\theta}$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is the first of the two differences from the quaternion case, where the axis-angle coordinate of the rotor is unique, and it is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.</p>
+<p>The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is <em>not</em> unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r e^{i\theta}$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.</p>
 <h2 id="the-exponential-form">The Exponential Form</h2>
 <h3 id="the-trichotomy-of-the-exponential">The Trichotomy of the Exponential</h3>
 <p>Every algebra of the family contains elements $\nu$ of three kinds, classified by the square:</p>
@@ -96,7 +96,7 @@ $$</p>
 \nu^2 = -1 \qquad\text{(roots of }-1\text{)}, \qquad \nu^2 = 0 \qquad\text{(nilpotent)}, \qquad \nu^2 = +1 \qquad\text{(roots of }+1\text{)},
 $$</p>
 <p>and the exponential of $\nu\theta$ is trigonometric, parabolic or hyperbolic accordingly. This is one computation with three cases, and it is the rule that the whole family follows.</p>
-<p><strong>The $\nu$ of this section is a direction, not the nilpotent glyph.</strong> It is written bare because it ranges over the two-dimensional algebras as well as the quaternionic ones. A nilpotent of the quaternion layer is written $\tilde\nu$, and one of the biquaternion layer $\tilde\Upsilon$ (§<em>The nilpotent convention</em> of <em>Conventions in Mathematics</em>), so the tilde is what distinguishes the square-zero element of the algebra from the bare direction classified here.</p>
+<p><strong>The $\nu$ of this section is a direction, not a nilpotent glyph.</strong> It is written bare because it ranges over the two-dimensional algebras.</p>
 <p><strong>Proposition.</strong> Let $\nu$ be an element of a real algebra of the family and let $\theta \in \mathbb{R}$. Then the exponential of $\nu\theta$ is given by the case</p>
 <div class="table-scroll"><table>
 <thead>
@@ -130,7 +130,7 @@ $$</p>
 </table></div>
 <p><strong>Proof.</strong> The exponential is the series $\exp(\nu\theta) = \sum_{n\ge0}\nu^n\theta^n/n!$, and the hypothesis on $\nu^2$ makes the powers periodic, truncated or monotone. For $\nu^2 = -1$ the even powers alternate as $(-1)^k$ and the odd powers as $(-1)^k\nu$, and the two partial series are the cosine and the sine. For $\nu^2 = 0$ every power from the second onward vanishes and the series is its first two terms. For $\nu^2 = +1$ the even powers are $1$ and the odd powers are $\nu$ without alternation, and the two series are the hyperbolic cosine and the hyperbolic sine.</p>
 <p>The trichotomy is a statement about the <em>sign of the square of the exponent</em>, not about the algebra. Which of the three rows are non-empty is a statement about the algebra, and the answer is what distinguishes the members of the family from one another.</p>
-<h3 id="the-roots-of-math89-in-math90">The Roots of $\pm 1$ in $\mathbb{C}$</h3>
+<h3 id="the-roots-of-math87-in-math88">The Roots of $\pm 1$ in $\mathbb{C}$</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -161,7 +161,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the complete classification of the exponentials of $\mathbb{C}$. The two roots of $-1$ are the two points of the circle that lie on the imaginary axis, and in $\mathbb{C}$ they are the <em>only</em> roots of $-1$ of modulus one: the quaternion algebra, whose roots of $-1$ form a two-sphere, is the first case in the family where this set is larger than two points, and the biquaternion algebra is the first where it is a complex surface.</p>
+<p>The table is the complete classification of the exponentials of $\mathbb{C}$. The two roots of $-1$ are the two points of the circle that lie on the imaginary axis, and in $\mathbb{C}$ they are the <em>only</em> roots of $-1$ of modulus one.</p>
 <h3 id="the-unit-factor-as-an-exponential">The Unit Factor as an Exponential</h3>
 <p>Since $N(u) = 1$, the unit factor cannot be a nontrivial real scalar, so it is not in the hyperbolic row. It is therefore</p>
 <p>$$
@@ -213,7 +213,7 @@ $$</p>
 <h3 id="the-two-slots-and-the-two-absent-ones">The Two Slots and the Two Absent Ones</h3>
 <p>The four slots of the family are the scale, the central phase, the boost and the rotor. In $\mathbb{C}$ the scale is the Hermitian slot, and the second occupied slot is the anti-Hermitian one, which carries the unit factor. The remaining two slots are absent, for the following reasons.</p>
 <p><strong>No boost.</strong> A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +1$ off the centre, and in $\mathbb{C}$ the only elements with $\nu^2 = +1$ are $\nu = \pm 1$, which are central: their exponentials are the real numbers $e^{\pm\phi}$, already counted as the scale. There is no non-central hyperbolic direction, so no boost, and the group of units contains no non-compact one-parameter subgroup other than the scale.</p>
-<p><strong>The central phase is the rotation.</strong> In the biquaternion algebra the central phase $e^{i\alpha}$ and the rotor are different factors, the phase being central and the rotor not. In $\mathbb{C}$ the algebra is commutative, so <em>every</em> element is central, and the two slots collapse into one: the circle is at the same time the rotation factor and the central phase. This is why the two-dimensional definite case cannot display the phase and the rotor separately, and it is a consequence of commutativity alone.</p>
+<p><strong>The central phase is the rotation.</strong> In $\mathbb{C}$ the algebra is commutative, so <em>every</em> element is central, and the two slots collapse into one: the circle is at the same time the rotation factor and the central phase. This is why the two-dimensional definite case cannot display the phase and the rotor separately, and it is a consequence of commutativity alone.</p>
 <h3 id="no-boundary">No Boundary</h3>
 <p>The polar representation of $\mathbb{C}$ has no boundary: it holds on $\mathbb{C}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $A \neq 0$ then $N(A) > 0$, so $r > 0$ and $u = A/r$ is defined; there is no element with $N(A) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The companion article on the split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.</p>
 <h2 id="the-group-of-units-and-the-circle">The Group of Units and the Circle</h2>
@@ -226,12 +226,12 @@ $$</p>
 <p>$$
 U(1) \cong \mathbb{R}/2\pi\mathbb{Z},
 $$</p>
-<p>as a group, and also as a one-dimensional compact Lie group, of real dimension one. Multiplication by a unit is a rotation of the plane, $A \mapsto uA$ preserving the Euclidean norm, so $U(1)$ is identified with $SO(2)$; the identification is an isomorphism of groups and a covering map of degree one, in contrast with the double covers that appear from the quaternion algebra onwards. The exponential of the real axis is the positive scale, $\exp(\mathbb{R}) = \mathbb{R}_{>0}$, which is a one-dimensional non-compact group, and the two exponentials together exhaust the group of units:</p>
+<p>as a group, and also as a one-dimensional compact Lie group, of real dimension one. Multiplication by a unit is a rotation of the plane, $A \mapsto uA$ preserving the Euclidean norm, so $U(1)$ is identified with $SO(2)$; the identification is an isomorphism of groups and a covering map of degree one. The exponential of the real axis is the positive scale, $\exp(\mathbb{R}) = \mathbb{R}_{>0}$, which is a one-dimensional non-compact group, and the two exponentials together exhaust the group of units:</p>
 <p>$$
 \mathbb{C}^\times = \exp(\mathbb{R})\cdot\exp(i\mathbb{R}).
 $$</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
-<h3 id="multiplication-by-math162-as-a-complex-structure">Multiplication by $i$ as a Complex Structure</h3>
+<h3 id="multiplication-by-math158-as-a-complex-structure">Multiplication by $i$ as a Complex Structure</h3>
 <p>In the real basis $\{1,i\}$ a complex number is the pair $(a, a')$, and multiplication by $A = a+i a'$ is the linear map</p>
 <p>$$
 M_A = \begin{pmatrix} a & -a' \\ a' & a \end{pmatrix} = a\,I + a'\,J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I .
@@ -244,7 +244,7 @@ $$</p>
 <p>$$
 M_A = r\,M_u, \qquad M_u = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \in SO(2),
 $$</p>
-<p>with $r = \sqrt{\det M_A}$: the polar decomposition of a matrix of the shape $M_A$, in the special case where the positive Hermitian factor is a scalar multiple of the identity. In the matrix polar decomposition of a general invertible matrix the positive factor is an arbitrary positive definite symmetric matrix; here the element has only the two-dimensional family $a I + a'J$ available, and inside that family the positive definite part is necessarily the scalar $rI$. The general statement is the biquaternion theorem of the companion article, where the positive factor is a genuine boost and not a scalar.</p>
+<p>with $r = \sqrt{\det M_A}$: the polar decomposition of a matrix of the shape $M_A$, in the special case where the positive Hermitian factor is a scalar multiple of the identity. In the matrix polar decomposition of a general invertible matrix the positive factor is an arbitrary positive definite symmetric matrix; here the element has only the two-dimensional family $a I + a'J$ available, and inside that family the positive definite part is necessarily the scalar $rI$.</p>
 <h3 id="the-interpretation-of-each-factor">The Interpretation of Each Factor</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -356,7 +356,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{D}$</td>
-<td>$a^2-b^2$, indefinite</td>
+<td>$a^2-a'^2$, indefinite</td>
 <td>$\sqrt{|N|}$, positive real</td>
 <td>$e^{\phi j}$ or $je^{\phi j}$</td>
 <td>scale, hyperbola (rotation and boost together)</td>
@@ -378,17 +378,9 @@ $$</p>
 <td>scale, rotor, boost</td>
 <td>non-compact</td>
 </tr>
-<tr>
-<td>$\mathbb{B}$</td>
-<td>complex, $N = q\bar{q}$</td>
-<td>$\sqrt{N}$, branch of the square root</td>
-<td>boost and rotor, phase central</td>
-<td>scale, central phase, boost, rotor</td>
-<td>non-compact</td>
-</tr>
 </tbody>
 </table></div>
-<p>The progression is the progression of the trichotomy. In $\mathbb{C}$ only the trigonometric row is occupied by the unit factor, and it is compact. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. From $\mathbb{H}$ onward the roots of $-1$ form a positive-dimensional set and the unit factor acquires an axis; from $\mathbb{B}$ onward both a trigonometric and a hyperbolic factor occur at once, and the word in which they are written becomes part of the statement. The two-dimensional algebra $\mathbb{C}$ is the case in which none of that can happen, which is why it is treated first.</p>
+<p>The progression is the progression of the trichotomy. In $\mathbb{C}$ only the trigonometric row is occupied by the unit factor, and it is compact. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The two-dimensional algebra $\mathbb{C}$ is the case in which neither of the difficulties of the higher-dimensional members can happen, which is why it is treated first.</p>
 <h2 id="summary">Summary</h2>
 <p>Every nonzero complex number has exactly one polar representation $A = ru$, with modulus $r = \sqrt{N(A)} > 0$ and unit factor $u = A/r$ on the circle. The modulus is central and Hermitian of signature $+1$ and carries one parameter; the unit factor is central and anti-Hermitian of signature $-1$ and carries one parameter; the counts add to the real dimension two. The unit factor is the exponential $u = \exp(i\theta)$ of an anti-Hermitian element of signature $-1$, which is the trigonometric row of the trichotomy $\nu^2 = -1, 0, +1$, and its coordinate $\theta$ is a class modulo $2\pi$, the kernel of the exponential. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, and because $\mathbb{C}$ is commutative the circle serves as both the rotation factor and the central phase. The hyperbolic row of the trichotomy contains only the central elements $\pm1$ and so produces the scale rather than a boost, and the parabolic row contains only $\nu = 0$ and so produces nothing. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the polar decomposition of a conformal matrix into a scalar and a rotation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -453,7 +445,6 @@ $$</p>
 <li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd edition (McGraw-Hill, 1987), for the exponential homomorphism $\mathbb{R} \to U(1)$, its kernel and the polar decomposition.</li>
 <li>Tristan Needham, <em>Visual Complex Analysis</em> (Oxford University Press, 1997), for multiplication by a unit as a plane rotation and the identification $U(1) = SO(2)$.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 1985), for the polar decomposition of an invertible matrix, of which the matrix statement here is the case whose positive factor is a scalar.</li>
-<li>S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", <em>Advances in Applied Clifford Algebras</em> 30 (2020), for the two-exponential factorisation of the elements of the family and the trichotomy of the exponential of a hypercomplex root of $-1$, $0$ or $+1$.</li>
 </ul>
       </div>
     </main>

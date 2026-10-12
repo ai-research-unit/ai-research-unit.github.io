@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="split-complex-topology"><strong>Split-Complex Topology</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article collects the topology of the split-complex algebra $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$ as a space: its contractibility as $\mathbb{R}^2$, its Euclidean unit circle, its null cone as a pair of lines, the link of the null cone, the topology of the group of units and its four components, the deformation retract of the complement of the null cone, and the null cone as the frontier of the four sign classes of $\mathbb{D}^\times$. It is the two-dimensional counterpart of <em>The Topology of the Zero-Divisor Cone</em>, and the degeneration is complete: the null cone drops from a six-dimensional real hypersurface to two lines, its link from a connected $5$-manifold to four points, and the group of units from the connected $GL(2,\mathbb{C})$ to a four-component group.</p>
+<p>This article collects the topology of the split-complex algebra $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$ as a space: its contractibility as $\mathbb{R}^2$, its Euclidean unit circle, its null cone as a pair of lines, the link of the null cone, the topology of the group of units and its four components, the deformation retract of the complement of the null cone, and the null cone as the frontier of the four sign classes of $\mathbb{D}^\times$. It is the two-dimensional counterpart of the higher-dimensional zero-divisor cones, and the degeneration is complete: the null cone drops from a real hypersurface to two lines, its link from a connected manifold to four points, and the group of units from connected to four components.</p>
 <p>The article uses the algebra of <em>Split-Complex Algebra</em>, the norm $N(A)=a^2-a'^2$ and the invertibility criterion of <em>Split-Complex Norm and Invertibility</em>, the zero-divisor set of <em>Split-Complex Zero Divisors</em>, the idempotents of <em>Split-Complex Idempotents and Projections</em>, and the group structure of <em>Split-Complex Exponential and Lie Group Structure</em>. No physics is invoked and no new result is claimed.</p>
 <p><strong>Scope.</strong> The topology of the <strong>group of units</strong> beyond its component count — the exponential, the Lie correspondence and the homotopy of the components — is treated in <em>Split-Complex Exponential and Lie Group Structure</em>; the component count of $\mathbb{D}^\times$ is in <em>Split-Complex Norm and Invertibility</em>; this article owns the ambient space and its distinguished subsets, and takes the component structure of $\mathbb{D}^\times$ from those articles for the comparison. The null quadric of the norm as a projective object is the subject of <em>Split-Complex Null Quadric and Projective Geometry</em>.</p>
 <p><strong>Conventions.</strong> The basis is $1$, $j$ with $j^2=+1$; $A=a+ja'$ with $a,a'\in\mathbb{R}$; conjugate $\bar A=a-ja'$; idempotents $\Pi_{1,2}=\tfrac12(1\pm j)$; idempotent coordinates $A_\pm=a\pm a'$. The norm is $N(A)=a^2-a'^2$, the units are $\mathbb{D}^\times=\{N\neq 0\}$, and the Euclidean norm is $\lVert A\rVert_E=(a^2+a'^2)^{1/2}$.</p>
@@ -75,7 +75,7 @@ $$</p>
 S^1_E=\{A\in\mathbb{D}:\lVert A\rVert_E=1\}=\{(a,a'):a^2+a'^2=1\}\cong S^1,
 $$</p>
 <p>a closed, compact, connected $1$-manifold.</p>
-<p>The circle is the wrong object here, exactly as the sphere is for the biquaternion algebra. Multiplication does not preserve $\lVert\cdot\rVert_E$, and $S^1_E$ is not contained in the units. Indeed the null cone meets the circle where $a^2=a'^2$ and $a^2+a'^2=1$, that is at the four points</p>
+<p>The circle is the wrong object here. Multiplication does not preserve $\lVert\cdot\rVert_E$, and $S^1_E$ is not contained in the units. Indeed the null cone meets the circle where $a^2=a'^2$ and $a^2+a'^2=1$, that is at the four points</p>
 <p>$$
 S^1_E\cap\mathcal{N}=\Bigl\{\pm\tfrac{1}{\sqrt2}(1+j),\ \pm\tfrac{1}{\sqrt2}(1-j)\Bigr\}=\bigl\{\pm\sqrt2\,\Pi_1,\ \pm\sqrt2\,\Pi_2\bigr\},
 $$</p>
@@ -83,7 +83,7 @@ $$</p>
 <p>$$
 S^1_E\not\subseteq\mathbb{D}^\times,
 $$</p>
-<p>as for $\mathbb{B}$; the field $\mathbb{C}$ is the definite exception, where $S^1\subseteq\mathbb{C}^\times$. The level set that <em>is</em> a subgroup of $\mathbb{D}^\times$ is $N=1$, not $\lVert\cdot\rVert_E=1$: the norm-one group $\mathbb{D}^{(1)}$ of <em>Split-Complex Exponential and Lie Group Structure</em>.</p>
+<p>the field $\mathbb{C}$ is the definite exception, where $S^1\subseteq\mathbb{C}^\times$. The level set that <em>is</em> a subgroup of $\mathbb{D}^\times$ is $N=1$, not $\lVert\cdot\rVert_E=1$: the norm-one group $\mathbb{D}^{(1)}$ of <em>Split-Complex Exponential and Lie Group Structure</em>.</p>
 <h2 id="the-null-cone">The Null Cone</h2>
 <p><strong>Definition.</strong> The <strong>null cone</strong>, or singular set, is</p>
 <p>$$
@@ -107,7 +107,7 @@ $$</p>
 $$</p>
 <p>the two null directions.</p>
 <p><strong>Proof.</strong> A point of $\mathcal{N}$ with $\lVert\cdot\rVert_E=1$ satisfies $a^2=a'^2$ and $a^2+a'^2=1$, so $2a^2=1$, $a=\pm 1/\sqrt2$ and $a'=\pm a$ with the two signs matched by $a=\pm a'$; this gives the four listed points. Since the null cone is the union of two lines, its projectivisation, the set of its lines, has two elements.</p>
-<p><strong>Remark (the contrast with the biquaternion link).</strong> The link of the biquaternion null cone is a connected $5$-manifold with $\pi_2\cong\mathbb{Z}$; here the link is four points. The reduction of dimension from $6$ to $1$ and the loss of connectedness both reflect that the null cone of $\mathbb{D}$ is a union of linear subspaces rather than a nonsingular real hypersurface.</p>
+<p><strong>Remark (the link).</strong> Here the link of the null cone is four points, and the null cone of $\mathbb{D}$ is a union of linear subspaces rather than a nonsingular real hypersurface.</p>
 <h2 id="the-group-of-units-and-its-components">The Group of Units and Its Components</h2>
 <p><strong>Definition.</strong> The <strong>group of units</strong> is $\mathbb{D}^\times=\{A:N(A)\neq 0\}=\mathbb{D}\setminus\mathcal{N}$, with the multiplication of the algebra.</p>
 <p><strong>Theorem.</strong> The complement of the null cone in the plane is the disjoint union of the four open sectors</p>
@@ -144,62 +144,9 @@ $$</p>
 <h2 id="the-null-cone-as-a-frontier">The Null Cone as a Frontier</h2>
 <p>The null cone is the frontier of each of the four sign classes of $\mathbb{D}^\times$: every neighbourhood of a point of $\mathcal{N}$ meets exactly two of the four components, and $\mathcal{N}$ contains no point of any component, so the cone is a closed set of empty interior that separates them. In the idempotent coordinates a point approaches the cone exactly when one of its two coordinates tends to zero, and the two coordinates are the two independent real parameters of <em>Split-Complex Algebra</em>.</p>
 <p>The polar parametrisation of a unit, $A=\rho u$ with modulus $\rho=\lvert N(A)\rvert^{1/2}>0$ and direction $u=A/\rho$ of unit modulus, is defined on $\mathbb{D}^\times$ and degenerates on $\mathcal{N}$: the modulus vanishes there and the direction is undefined. That parametrisation, its two regimes and the behaviour of its angle as the cone is approached are the subject of <em>Split-Complex Polar Element Representation</em>; the cone read geometrically, as a pair of asymptotic directions, is in <em>Hyperbolic Rotations</em>.</p>
-<h2 id="comparison-with-the-topology-of-the-biquaternion-algebra">Comparison with the Topology of the Biquaternion Algebra</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>object</th>
-<th>$\mathbb{B}$</th>
-<th>$\mathbb{D}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ambient space</td>
-<td>$\mathbb{R}^8$, contractible</td>
-<td>$\mathbb{R}^2$, contractible</td>
-</tr>
-<tr>
-<td>Euclidean unit sphere</td>
-<td>$S^7$, a compact $7$-manifold, not a group</td>
-<td>$S^1$, a compact $1$-manifold, not a group</td>
-</tr>
-<tr>
-<td>sphere inside the units?</td>
-<td>no</td>
-<td>no (four points of $S^1$ are null)</td>
-</tr>
-<tr>
-<td>null cone</td>
-<td>real dimension $6$ hypersurface</td>
-<td>real dimension $1$, a pair of lines</td>
-</tr>
-<tr>
-<td>projectivised null cone</td>
-<td>$\mathbb{P}^1\times\mathbb{P}^1$</td>
-<td>two points</td>
-</tr>
-<tr>
-<td>link of the null cone</td>
-<td>connected $5$-manifold, $\pi_1=0$, $\pi_2\cong\mathbb{Z}$</td>
-<td>four points</td>
-</tr>
-<tr>
-<td>group of units</td>
-<td>$GL(2,\mathbb{C})$, connected, $\pi_1\cong\mathbb{Z}$</td>
-<td>$(\mathbb{R}^\times)^2$, four components, $\pi_{\geq1}=0$</td>
-</tr>
-<tr>
-<td>deformation retract of the units</td>
-<td>$U(2)$</td>
-<td>the unit-modulus set, four lines</td>
-</tr>
-</tbody>
-</table></div>
-<p>The reduction in dimension is systematic: each object of the four-real-dimensional complex algebra drops by the real codimension of the null cone, from $6$ to $1$, and the connected manifold objects of the biquaternion theory become finite sets or finite unions of lines. The one feature that survives verbatim is the failure of the Euclidean unit sphere to lie in the units; the one that reverses is the group of units, connected and infinite-$\pi_1$ for $\mathbb{B}$ against four contractible components for $\mathbb{D}$.</p>
 <h2 id="summary">Summary</h2>
 <p>The split-complex algebra is $\mathbb{R}^2$, hence contractible, path-connected and simply connected; its product and inversion are continuous, so it is a topological algebra and $\mathbb{D}^\times$ is a topological group. The Euclidean unit circle $S^1_E$ is a compact $1$-manifold but is not contained in the units: it meets the null cone in four points, so $S^1_E\not\subseteq\mathbb{D}^\times$. The null cone $\mathcal{N}=\{N=0\}$ is the union of the two null lines $a=\pm a'$, a closed real algebraic cone of real dimension $1$, a real $1$-manifold off the apex and singular at the apex, contractible, and with empty interior. Its link is the four-point set $\{\pm\sqrt2\,\Pi_1,\pm\sqrt2\,\Pi_2\}$, and its projectivisation is the two null directions.</p>
-<p>The group of units $\mathbb{D}^\times=\mathbb{D}\setminus\mathcal{N}\cong(\mathbb{R}^\times)^2$ has four contractible components, the four open sectors cut out by the null lines, so $\pi_0\cong(\mathbb{Z}/2)^2$ and $\pi_n=0$ for $n\geq1$; the complement of the null cone deformation retracts onto the unit-modulus set $\mathbb{D}^{(\pm1)}$, four hyperbola branches each homeomorphic to $\mathbb{R}$, so $\mathbb{D}^\times$ has the homotopy type of four points. The null cone is the frontier of the four components of $\mathbb{D}^\times$: every neighbourhood of a point of $\mathcal{N}$ meets exactly two of them. Compared with the biquaternion algebra, the null cone drops from a six-dimensional hypersurface to a pair of lines, its link from a connected $5$-manifold to four points, and the group of units from the connected $GL(2,\mathbb{C})$ with $\pi_1\cong\mathbb{Z}$ to four contractible components.</p>
+<p>The group of units $\mathbb{D}^\times=\mathbb{D}\setminus\mathcal{N}\cong(\mathbb{R}^\times)^2$ has four contractible components, the four open sectors cut out by the null lines, so $\pi_0\cong(\mathbb{Z}/2)^2$ and $\pi_n=0$ for $n\geq1$; the complement of the null cone deformation retracts onto the unit-modulus set $\mathbb{D}^{(\pm1)}$, four hyperbola branches each homeomorphic to $\mathbb{R}$, so $\mathbb{D}^\times$ has the homotopy type of four points. The null cone is the frontier of the four components of $\mathbb{D}^\times$: every neighbourhood of a point of $\mathcal{N}$ meets exactly two of them. The null cone is a pair of lines, its link is four points, and the group of units has four contractible components.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

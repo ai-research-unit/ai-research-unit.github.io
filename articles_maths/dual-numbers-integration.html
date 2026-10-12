@@ -53,7 +53,7 @@
         <h1 id="dual-numbers-integration"><strong>Dual-Numbers Integration</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article develops integration for functions of one dual variable. It follows <em>Dual-Numbers Analysis</em>, which fixed the dual plane, its Euclidean topology, dual differentiability and the dual Cauchy–Riemann equations, and it follows <em>Dual-Numbers Algebra</em> for the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$, the dual conjugation and the norm $N(A) = a^2$. The contour integral was introduced there as a definition; here it is developed as a subject in its own right, and the question addressed is exactly how much of the Cauchy theory survives when the coefficient ring has nilpotents and is not a field.</p>
-<p>The algebraic statements below hold over any commutative ring $R$, but the integral itself is an analytic object and requires a complete ordered field of coefficients. Throughout, therefore, the base is $\mathbb{R}$ and the algebra is $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$; the algebraic ingredients — the local structure, the group of units and the derivations — specialise to any such ring unchanged. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$ and $\mathbb{B}$, is the subject of <em>Hypercomplex Integration</em>, and the closest neighbouring case, where the coefficient ring has zero divisors but no nilpotents, is <em>Split-Complex Integration</em>.</p>
+<p>The algebraic statements below hold over any commutative ring $R$, but the integral itself is an analytic object and requires a complete ordered field of coefficients. Throughout, therefore, the base is $\mathbb{R}$ and the algebra is $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$; the algebraic ingredients — the local structure, the group of units and the derivations — specialise to any such ring unchanged. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and $\mathbb{D}$, is the subject of <em>Hypercomplex Integration</em>, and the closest neighbouring case, where the coefficient ring has zero divisors but no nilpotents, is <em>Split-Complex Integration</em>.</p>
 <p>Two algebraic facts govern everything that follows. First, $\mathbb{D}'$ is a <strong>local ring</strong>: it has the unique maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$, which is nilpotent of index two, $\mathrm{M}^2 = 0$, and the augmentation</p>
 <p>$$
 \pi : \mathbb{D}' \to \mathbb{R}, \qquad \pi(a + \varepsilon a') = a,
@@ -154,7 +154,7 @@ $$</p>
 $$</p>
 <p>Equivalently, iterating the fibre integration multiplies two infinitesimal increments and therefore annihilates them; the segment $\sigma_1$ has finite Euclidean length, but its second-order contribution vanishes. This is the precise sense in which the nilpotent direction is a direction the integral cannot iterate.</p>
 <h2 id="closedness-and-the-dual-cauchygoursat-theorem">Closedness and the Dual Cauchy–Goursat Theorem</h2>
-<h3 id="the-exterior-derivative-of-math188">The Exterior Derivative of $f\,dA$</h3>
+<h3 id="the-exterior-derivative-of-math186">The Exterior Derivative of $f\,dA$</h3>
 <p>A $\mathbb{D}'$-valued $1$-form on $U$ is an expression $P\,da + Q\,da'$ with $P, Q : U \to \mathbb{D}'$; it is <strong>closed</strong> if $d\omega = 0$, that is if $\partial_{a'} P = \partial_a Q$ on $U$, and <strong>exact</strong> if $\omega = dF$ for some dual-valued function $F$. A closed form is exact on a simply connected domain, and for the forms $f\,dA$ considered here exactness holds on every domain, by the primitive constructed below. A direct computation gives the closedness criterion.</p>
 <p><strong>Theorem.</strong> Let $f = u + v\varepsilon$ be $C^1$ on a domain $U$. Then the form $f\,dA = P\,da + Q\,da'$ with $P = u + v\varepsilon$ and $Q = u\varepsilon$ is closed if and only if</p>
 <p>$$
@@ -537,13 +537,11 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Eduard Studa', <em>Geometrie der Dynamen</em> (Teubner, 1903), for the geometry of the dual numbers and their infinitesimal transformations.</li>
-<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the origin of the dual numbers in the biquaternion program.</li>
 <li>Lars V. Ahlfors, <em>Complex Analysis</em> (McGraw–Hill, 3rd ed. 1979), for the classical Cauchy theory, residues and winding numbers with which the dual theory is compared.</li>
 <li>Walter Rudin, <em>Real and Complex Analysis</em> (McGraw–Hill, 3rd ed. 1987), for the measure-theoretic foundation of the line and surface integrals used here.</li>
 <li>F. Brackx, R. Delanghe and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Cauchy–Goursat theorem, the Cauchy kernel and the residue theory of elliptic hypercomplex systems.</li>
 <li>Lars Hörmander, <em>The Analysis of Linear Partial Differential Operators I</em> (Springer, 2nd ed. 1990), for the distinction between elliptic and non-elliptic operators and for fundamental solutions supported on characteristics.</li>
 <li>Andreas Griewank and Andrea Walther, <em>Evaluating Derivatives</em> (SIAM, 2008), for the dual numbers as the coefficient algebra of forward-mode differentiation.</li>
-<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of the two-dimensional real algebras.</li>
 </ul>
       </div>
     </main>

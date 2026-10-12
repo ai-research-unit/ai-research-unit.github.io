@@ -53,7 +53,7 @@
         <h1 id="comparison-between-the-two-general-products"><strong>Comparison Between the Two General Products</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The two general products of the quaternion space are defined independently in <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>, and it is natural to ask which of them deserves the name of multiplication and how the two are told apart. In the strict sense, of an associative multiplication with a two-sided unit over the field of scalars, only the general plain product does: the quaternionic product is $\mathbb{R}$-bilinear but neither associative nor two-sidedly unital.</p>
-<p>This article tabulates the properties that separate the two products — bilinearity, associativity, the unit, commutativity, the square, the values and the radical — and gives the short computation that decides each entry where it is not immediate. The table records the two products alone; the reading of their two halves gives six products and six structures, tabulated in <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category, and the two-product table here is the collapse to two of the four-column table of <em>Comparison Between the Four General Products</em>.</p>
+<p>This article tabulates the properties that separate the two products — bilinearity, associativity, the unit, commutativity, the square, the values and the radical — and gives the short computation that decides each entry where it is not immediate.</p>
 <p>The article assumes the two products and their coordinate rules from <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>, the article preceding this one, and it uses the linking identities of <em>Relations Between the Two General Products</em>, the article preceding this one, for the unit and the square rows. The left and right multiplications and the associator are <em>The Two General Products and Operators</em>, below this article in this category.</p>
 <p><strong>Conventions.</strong> Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, $e_0=1$ is the unit of the algebra, $\mathbf p$ is the vector part of $\tilde p$, and $\tilde q^{\natural}=q_0e_0-\mathbf q$ is the quaternion conjugation. The two products are written $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$.</p>
 <h2 id="the-property-table">The Property Table</h2>
@@ -115,7 +115,7 @@
 </table></div>
 <p>The last row is the <strong>radical</strong> of the product, the set of elements annihilating the whole space on both sides, $\{x:f(x,y)=0=f(y,x)\ \text{for every}\ y\}$; it is the same for the two products and it is the zero subspace, the algebra being a division algebra and the quaternionic product having no zero divisor. The rows for the square read $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ and $N(\tilde p)=\lvert p\rvert^2$; the two algebraic norms are <em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category.</p>
 <h2 id="bilinearity">Bilinearity</h2>
-<p>The first four rows are read off the definitions. Each product is $\mathbb{R}$-linear in each argument: the rule is built from the scalar and vector parts of the two factors, the dot product and the cross product, and each of these is bilinear over $\mathbb{R}$; the conjugation ${}^{\natural}$ acts on the first factor alone and is itself $\mathbb{R}$-linear, and it changes the sign of the vector part and of nothing else. The second slot of each product is the identity, the base ring $\mathbb{R}$ having no nontrivial involution, so no product is conjugate-linear in a slot and both belong to the $\mathbb{R}$-bilinear family; this is the point at which the two-column table here is thinner than the four-column table of the biquaternion chapter, where the two sesquilinear products are conjugate-linear in their second argument.</p>
+<p>The first four rows are read off the definitions. Each product is $\mathbb{R}$-linear in each argument: the rule is built from the scalar and vector parts of the two factors, the dot product and the cross product, and each of these is bilinear over $\mathbb{R}$; the conjugation ${}^{\natural}$ acts on the first factor alone and is itself $\mathbb{R}$-linear, and it changes the sign of the vector part and of nothing else.</p>
 <h2 id="associativity-and-the-two-sided-unit">Associativity and the Two-Sided Unit</h2>
 <p><strong>Theorem (the classification).</strong> Among the two general products, the general plain bilinear product is the only associative one and the only one with a two-sided unit; the general quaternionic bilinear product is neither.</p>
 <p><em>Proof.</em> The plain product is the multiplication of $\mathbb{H}$, an associative algebra with two-sided unit $e_0$. For the quaternionic product, $e_0^{\natural}\tilde q=e_0\tilde q=\tilde q$ shows that $e_0$ is a left identity, while $\tilde q^{\natural}e_0=\tilde q^{\natural}$, which equals $\tilde q$ only for a real $\tilde q$, shows that $e_0$ is not a right identity; and a right identity $E$ would give $\tilde q^{\natural}E=\tilde q$ for every $\tilde q$, hence $E=e_0$ on taking $\tilde q=e_0$ and then $\tilde q^{\natural}=\tilde q$ for every $\tilde q$, which is false. Associativity fails on the triple $\tilde p=\tilde q=\tilde r=e_1$, where</p>
@@ -145,46 +145,9 @@ $$</p>
 <p><strong>Proposition (the radical of each product is zero).</strong> For each of the two products the set of elements annihilating the whole space on the left and on the right is $\{0\}$.</p>
 <p><em>Proof.</em> For the plain product, $\tilde x\tilde q=0$ for every $\tilde q$ forces $\tilde x=0$ on taking $\tilde q=e_0$ and using that $\mathbb{H}$ is a division algebra; the same for $\tilde q\tilde x=0$. For the quaternionic product, $\tilde x^{\natural}\tilde q=0$ for every $\tilde q$ forces $\tilde x^{\natural}=0$ on taking $\tilde q=e_0$, hence $\tilde x=0$, and $\tilde q^{\natural}\tilde x=0$ for every $\tilde q$ forces $\tilde x=0$ on taking $\tilde q=e_0$.</p>
 <p>So neither product has a nonzero annihilator, and both are <strong>nondegenerate</strong> in the sense of the radical. This is the same statement as the absence of zero divisors of the two products, and it separates the two from the antisymmetric plain product of <em>The 6 Products of the Quaternion Real Space</em>, below this article in this category, which alone among the six has a nonzero radical: the cross product $\tilde p\wedge\tilde q$ annihilates the whole scalar line on both sides, so its radical is the line of the scalars, while the other five products, the two general ones and the four halves other than the cross product, have radical $\{0\}$.</p>
-<h2 id="comparison-with-the-four-general-products">Comparison with the Four General Products</h2>
-<p>The biquaternion chapter compares four general products, and its table separates them into the two bilinear and the two sesquilinear families. Over $\mathbb{R}$ the sesquilinear family is absent and its two columns collapse onto the two bilinear ones, so the four-column table becomes the two-column table above.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>biquaternion row</th>
-<th>quaternion reading</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathbb{C}$-linear in the first argument for all four</td>
-<td>$\mathbb{R}$-linear in the first argument for both</td>
-</tr>
-<tr>
-<td>$\mathbb{C}$-linear in the second argument for the two bilinear, conjugate-linear for the two sesquilinear</td>
-<td>$\mathbb{R}$-linear in the second argument for both</td>
-</tr>
-<tr>
-<td>associative for the plain product alone</td>
-<td>associative for the general plain product alone</td>
-</tr>
-<tr>
-<td>$e_0$ a right identity for the plain and the plain sesquilinear products</td>
-<td>$e_0$ a right identity for the general plain product alone</td>
-</tr>
-<tr>
-<td>neither product commutative</td>
-<td>neither product commutative</td>
-</tr>
-<tr>
-<td>multiplication of an algebra over $\mathbb{C}$, two rows</td>
-<td>multiplication of an algebra over $\mathbb{R}$, the general plain product alone</td>
-</tr>
-</tbody>
-</table></div>
-<p>The last row is the classification the chapter uses: of the two general products of $\mathbb{H}$, exactly one is the multiplication of an associative unital algebra over $\mathbb{R}$, namely the general plain product. The other is the multiplication of the quaternionic algebra, in the weaker sense of a binary $\mathbb{R}$-bilinear rule with a left unit, and its laws are those of <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category.</p>
 <h2 id="summary">Summary</h2>
 <p>The comparison of the two general products of $\mathbb{H}$ is the table with the rows bilinearity, associativity, the unit, commutativity, the square, the values and the radical. The general plain product is $\mathbb{R}$-bilinear in each slot, associative, non-commutative, with the two-sided unit $e_0$, with the square $\tilde p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$, and the radical $\{0\}$. The general quaternionic product is $\mathbb{R}$-bilinear in each slot, non-associative, non-commutative, with the left unit $e_0$ and no right one, with the scalar square $\tilde p^{\natural}\tilde p=\lvert\tilde p\rvert^2e_0$, and the radical $\{0\}$.</p>
-<p>The classification isolates the general plain product as the only associative and two-sidedly unital one of the two, and hence as the only multiplication of an associative unital algebra over $\mathbb{R}$. The two products agree on the pairs with a real first factor and disagree elsewhere, and on the units they differ by a sign on every pair except those. The four-column table of the biquaternion comparison collapses to the two-column table here by the disappearance of the sesquilinear family.</p>
+<p>The classification isolates the general plain product as the only associative and two-sidedly unital one of the two, and hence as the only multiplication of an associative unital algebra over $\mathbb{R}$. The two products agree on the pairs with a real first factor and disagree elsewhere, and on the units they differ by a sign on every pair except those.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

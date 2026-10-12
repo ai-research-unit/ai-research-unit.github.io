@@ -56,7 +56,6 @@
 <p>$$
 \tau(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p\bullet\tilde q\bigr),
 $$</p>
-<p>its polarisation, its Gram matrix and signature, its radical, its <strong>invariance</strong> under the operators of the Jordan product, and its comparison with the trace form of the biquaternion symmetric plain algebra.</p>
 <p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $\mathrm{Sc}$, the vector subspace is $\mathrm{Vect}(\mathbb{H})$, the norm is $N(\tilde q)=q_0^2+|\mathbf q|^2$, and the multiplication operator is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$ of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category. The plain bilinear form $(\tilde p,\tilde q)\mapsto\mathrm{Sc}(\tilde p\tilde q)$ is <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>.</p>
 <h2 id="the-trace-form">The Trace Form</h2>
@@ -103,49 +102,6 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> The trace form is associative, so for a derivation $D$, $0=D\,\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(D(\tilde p\bullet\tilde q),\tilde r)+\tau(\tilde p\bullet\tilde q,D\tilde r)$; expanding the derivation rule and using the associativity of $\tau$ twice gives $\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$. The derivations are <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category, and the statement is the general invariance of the trace form of a Jordan algebra quoted in <em>Jordan Algebras</em>.</p>
 <p><strong>Remark (the invariance is the content of the menu).</strong> The menu comment of the block asks for "the trace form and its invariance under the operators of the Jordan product": the <strong>operators</strong> are the left multiplications $L^{\bullet}_{\tilde p}$ and the inner derivations they generate, and the invariance is the pair of identities $\tau(L^{\bullet}_{\tilde p}\tilde q,\tilde r)=\tau(\tilde q,L^{\bullet}_{\tilde p}\tilde r)$ and $\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$. <strong>The self-adjointness is what makes the form the trace form, and the skewness of the derivations is what makes it the invariant form of the block.</strong></p>
-<h2 id="the-comparison-with-the-biquaternion-case">The Comparison with the Biquaternion Case</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th></th>
-<th>the symmetric plain algebra of $\mathbb{H}$</th>
-<th>the biquaternion symmetric plain algebra</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>the form</td>
-<td>$\tau(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$</td>
-<td>$\tau(\tilde P,\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$, complex-valued</td>
-</tr>
-<tr>
-<td>Gram matrix</td>
-<td>$\operatorname{diag}(1,-1,-1,-1)$</td>
-<td>$\operatorname{diag}(1,-1,-1,-1)$ over $\mathbb{C}$</td>
-</tr>
-<tr>
-<td>signature</td>
-<td>$(1,3)$ real</td>
-<td>the complex analogue</td>
-</tr>
-<tr>
-<td>radical</td>
-<td>$0$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>associativity</td>
-<td>$\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$</td>
-<td>the same identity</td>
-</tr>
-<tr>
-<td>invariances</td>
-<td>operators self-adjoint, derivations skew</td>
-<td>the same identities</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Remark (what the field changes).</strong> The trace form of the block is the restriction of the plain bilinear form to the Jordan product, and it has the same shape over $\mathbb{R}$ and over $\mathbb{C}$: the Gram matrix, the radical and the two invariances are unchanged, and they are the form part of the degree-two Common Theory of <em>The Two General Products of an Algebra with Involution</em>. What the field changes is the interpretation of the isotropy: over $\mathbb{R}$ the form is Lorentzian and the isotropic cone is the light cone of signature $(1,3)$; over $\mathbb{C}$ the corresponding complex form is degenerate-on-the-real-structure in the way that the biquaternion form is. The biquaternion trace form is <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em> of the biquaternion chapter.</p>
 <h2 id="summary">Summary</h2>
 <p>The trace form of the block is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$, symmetric and bilinear, equal to the plain form $p_0q_0-\mathbf p\cdot\mathbf q$ and polarising the quadratic trace $\mathrm{Sc}(\tilde p^2)=p_0^2-|\mathbf p|^2$. Its Gram matrix in the standard basis is $\operatorname{diag}(1,-1,-1,-1)$, so its signature is $(1,3)$ and it is indefinite and Lorentzian; it is non-degenerate with radical $0$, and it is the indefinite companion of the positive definite norm. It is associative, $\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$, so every multiplication operator is self-adjoint for it, and every derivation is skew for it; these two invariances are the form content of the block. Over $\mathbb{C}$ the trace form has the same matrix shape and the same invariances, the form part of the degree-two Common Theory; the field changes only the reading of the isotropy.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

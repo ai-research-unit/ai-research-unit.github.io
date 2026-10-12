@@ -80,11 +80,11 @@ $$</p>
 <p><strong>Unit and rank.</strong> The identity is $1$, and $\mathbb{D}'_R$ is a free $R$-module of rank $2$.</p>
 <p><strong>Not a division algebra.</strong> The element $\varepsilon$ is non-zero and satisfies $\varepsilon^2 = 0$, so $\varepsilon$ is a zero divisor. A division algebra is precisely an algebra in which every non-zero element is invertible, so the non-zero nilpotent $\varepsilon$ shows that $\mathbb{D}'_R$ is neither a field nor a division algebra. This is the source of everything that distinguishes it from $\mathbb{C}$.</p>
 <p><strong>Not semisimple.</strong> The ideal $(\varepsilon)$ is nilpotent of index two, $\varepsilon^2 = 0$ with $\varepsilon \neq 0$. Over a field the algebra is local with unique maximal ideal $(\varepsilon)$, and the presence of this non-zero nilpotent ideal makes the algebra not semisimple; the ideal theory is developed in <em>Dual-Numbers Ideals and the Maximal Ideal</em>.</p>
-<p><strong>Frobenius theorem.</strong> The dual algebra is not one of the three finite-dimensional associative real division algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$: it is a commutative associative two-dimensional real algebra, and it is not a division algebra.</p>
+<p><strong>Frobenius theorem.</strong> The dual algebra is not a finite-dimensional associative real division algebra: it is a commutative associative two-dimensional real algebra, and it is not a division algebra.</p>
 <h3 id="conjugations">Conjugations</h3>
 <p>There are <strong>two</strong> natural conjugations on $\mathbb{D}'_R$:</p>
 <p><strong>Dual conjugation</strong> $\bar A = a - \varepsilon a'$ and <strong>identity conjugation</strong> $\operatorname{id}(A) = A$. Each is an involution, and each has a fixed-point set, an $R$-submodule of $\mathbb{D}'_R$, described in the next section.</p>
-<h3 id="the-isomorphism-with-math52">The Isomorphism with $R[\varepsilon]/(\varepsilon^2)$</h3>
+<h3 id="the-isomorphism-with-math49">The Isomorphism with $R[\varepsilon]/(\varepsilon^2)$</h3>
 <p>The definition presents the algebra as the quotient ring $\mathbb{D}'_R \cong R[\varepsilon]/(\varepsilon^2)$, the ring of polynomials in $\varepsilon$ modulo $\varepsilon^2$. The ideal $(\varepsilon)$ is nilpotent of index two and the quotient by it is $R$. Over a field $k$ this is the simplest example of a local ring that is not a field: $\mathbb{D}'_k$ has the unique maximal ideal $(\varepsilon)$. Over a general commutative ring the maximal ideals of $\mathbb{D}'_R$ correspond to those of $R$, as recorded in <em>Dual-Numbers Ideals and the Maximal Ideal</em>.</p>
 <p><strong>Remark.</strong> For $n \geq 1$ the ring $R[\varepsilon]/(\varepsilon^{n+1})$ is the <strong>truncated polynomial algebra</strong> of order $n$, the ring of polynomials in $\varepsilon$ modulo $\varepsilon^{n+1}$; the case $n = 1$ recovers the dual numbers and the case $n = 0$ gives $R$ itself. The higher cases are used in <em>Dual-Numbers Integration</em>.</p>
 <h2 id="the-two-fixed-point-submodules">The Two Fixed-Point Submodules</h2>
@@ -178,7 +178,7 @@ $$</p>
 <p>$$
 [A, B] = AB - BA.
 $$</p>
-<p>Since $\mathbb{D}'_R$ is commutative, the commutator is identically zero. So the Lie algebra structure of $\mathbb{D}'_R$ is trivial. This is the fundamental difference from the quaternion case, where the commutator is non-trivial (the split complex algebra, like the dual algebra, is commutative).</p>
+<p>Since $\mathbb{D}'_R$ is commutative, the commutator is identically zero. So the Lie algebra structure of $\mathbb{D}'_R$ is trivial. This is the fundamental difference from a non-commutative algebra, where the commutator is non-trivial (the split complex algebra, like the dual algebra, is commutative).</p>
 <p>The <strong>Lie algebra of derivations</strong> of $\mathbb{D}'_R$ is more interesting. A <strong>derivation</strong> is an $R$-linear map $D : \mathbb{D}'_R \to \mathbb{D}'_R$ satisfying the Leibniz rule</p>
 <p>$$
 D(AB) = D(A) B + A D(B).
@@ -275,9 +275,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the origin of the dual numbers in the biquaternion program.</li>
 <li>Eduard Study, <em>Geometrie der Dynamen</em> (1903), for the geometry of dual numbers.</li>
-<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
 <li>Michael F. Atiyah and Ian G. Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, Reading, 1969), for local rings, nilpotent ideals and the maximal ideal.</li>
 <li>Serge Lang, <em>Algebra</em>, 3rd ed. (Springer, New York, 2002), for the structure of algebras over a commutative ring and their ideals.</li>
 </ul>

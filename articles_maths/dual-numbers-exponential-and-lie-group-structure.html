@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="dual-numbers-exponential-and-lie-group-structure"><strong>Dual-Numbers Exponential and Lie Group Structure</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{D}'$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows <em>Dual-Numbers Algebra</em> for the algebra and its abelian Lie bracket, <em>Dual-Numbers Norm and Invertibility</em> for the unit group, <em>Dual-Numbers Automorphisms and Derivations</em> for the derivation algebra, and <em>Shears and Parabolic Rotations</em> for the shear. The structural model is <em>Biquaternion Lie Group and Exponential Structure</em>, where the unit group is $GL_2(\mathbb{C})$; here it is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.</p>
+<p>This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{D}'$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows <em>Dual-Numbers Algebra</em> for the algebra and its abelian Lie bracket, <em>Dual-Numbers Norm and Invertibility</em> for the unit group, <em>Dual-Numbers Automorphisms and Derivations</em> for the derivation algebra, and <em>Shears and Parabolic Rotations</em> for the shear. The comparison throughout is with the split complex algebra, whose unit group is the two-component quotient $\mathbb{R}^\times$; here the unit group is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the exponential is a formal series when $R$ is a commutative $\mathbb{Q}$-algebra and an analytic series over the geometric specialisation $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is</p>
 <p>$$
 A = a + \varepsilon a', \qquad a, a' \in R,
@@ -156,19 +156,13 @@ $$</p>
 <p>the isomorphism being the class of $a + \varepsilon a'$ mapped to $1 + (a'/a)\varepsilon$, equivalently to the parabolic angle $s = a'/a$.</p>
 <p><strong>Proof.</strong> Every unit is $a(1 + \varepsilon a'/a)$, and multiplying by the scalar $a$ is exactly the quotient by the subgroup $\mathbb{R}^\times$; two units have the same class exactly when their shear parameters agree.</p>
 <p><strong>Corollary.</strong> The quotient is connected, contractible and one-dimensional; it is the space of shears, and it is the same object as the parabolic one-parameter subgroup $G$.</p>
-<h2 id="comparison-with-the-split-complex-and-biquaternion-cases">Comparison with the Split Complex and Biquaternion Cases</h2>
+<h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
 <h3 id="the-split-complex-case">The Split Complex Case</h3>
 <p>For the split complex algebra $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the unit group is $\mathbb{D}^\times \cong \mathbb{R}^\times \times \mathbb{R}^\times$, of real dimension two and with four contractible components; the exponential from the abelian Lie algebra $\mathbb{R}^2$ is a bijection onto the identity component, exactly as in the dual case. The quotient is</p>
 <p>$$
 \mathbb{D}^\times/\mathbb{R}^\times \cong \mathbb{R}^\times,
 $$</p>
 <p>obtained by the ratio of the two idempotent components, and it has two components—unlike the connected quotient $(\mathbb{D}')^\times/\mathbb{R}^\times \cong \mathbb{R}$. The difference is the degeneracy of the norm: the split complex form has two independent directions, so the quotient retains a hyperbola-like two-component structure, while the dual form has one, so the quotient collapses to a line.</p>
-<h3 id="the-biquaternion-case">The Biquaternion Case</h3>
-<p>For the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ the unit group is $GL_2(\mathbb{C})$, of real dimension eight, connected. The exponential of $\mathrm{GL}(2,\mathbb{C})$ is surjective onto $GL_2(\mathbb{C})$ but not injective, with kernel the matrices whose eigenvalue differences lie in $2\pi i\mathbb{Z}$; the exponential is not a diffeomorphism, and there is no global logarithm. The quotient by the scalars is</p>
-<p>$$
-GL_2(\mathbb{C})/\mathbb{C}^\times = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C}),
-$$</p>
-<p>the automorphism group of <em>Biquaternion Automorphisms and Derivations</em>, connected of real dimension six.</p>
 <h3 id="the-table">The Table</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -176,7 +170,6 @@ $$</p>
 <th></th>
 <th>$\mathbb{D}'$</th>
 <th>$\mathbb{D}$</th>
-<th>$\mathbb{B}$</th>
 </tr>
 </thead>
 <tbody>
@@ -184,37 +177,32 @@ $$</p>
 <td>Lie algebra</td>
 <td>$\mathbb{R}^2$, abelian</td>
 <td>$\mathbb{R}^2$, abelian</td>
-<td>$\mathrm{GL}(2,\mathbb{C})$</td>
 </tr>
 <tr>
 <td>Unit group</td>
 <td>$\mathbb{R}^\times\times\mathbb{R}$, two components</td>
 <td>$\mathbb{R}^\times\times\mathbb{R}^\times$, four components</td>
-<td>$GL_2(\mathbb{C})$, connected</td>
 </tr>
 <tr>
 <td>Exponential</td>
 <td>bijection onto identity component</td>
 <td>bijection onto identity component</td>
-<td>surjective, not injective</td>
 </tr>
 <tr>
 <td>Kernel of $\exp$</td>
 <td>$0$</td>
 <td>$0$</td>
-<td>eigenvalue gaps in $2\pi i\mathbb{Z}$</td>
 </tr>
 <tr>
 <td>Unit group $/$ scalars</td>
 <td>$\mathbb{R}$, connected</td>
 <td>$\mathbb{R}^\times$, two components</td>
-<td>$PGL(2,\mathbb{C})$, connected</td>
 </tr>
 </tbody>
 </table></div>
 <p>The dual row is the two-dimensional row with the collapse of the quotient: the parabolic case replaces the hyperbolic two-component quotient of the split complex numbers by a single contractible line, while sharing with it the property that the exponential is a global diffeomorphism.</p>
 <h2 id="summary">Summary</h2>
-<p>The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(a + \varepsilon a') = e^{a}(1 + \varepsilon a')$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{a > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$; the comparison with the biquaternion case shows a connected unit group $GL_2(\mathbb{C})$ on which the exponential is surjective but not injective.</p>
+<p>The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(a + \varepsilon a') = e^{a}(1 + \varepsilon a')$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{a > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -276,10 +264,6 @@ $$</p>
 <td>$\partial_\varepsilon$</td>
 <td>Derivation generator, $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$</td>
 </tr>
-<tr>
-<td>$\mathbb{B} \cong M_2(\mathbb{C})$</td>
-<td>Biquaternion algebra, the comparison model</td>
-</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
@@ -287,7 +271,6 @@ $$</p>
 <li>Sophus Lie and Friedrich Engel, <em>Theorie der Transformationsgruppen</em> (Teubner, Leipzig, 1888–1893), for one-parameter groups, their infinitesimal generators, and the exponential map.</li>
 <li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (Academic Press, New York, 1978), for the exponential map of a Lie group and the structure of abelian and nilpotent Lie groups.</li>
 <li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Graduate Texts in Mathematics 222, Springer, New York, 2nd ed. 2015), for the matrix exponential, its kernel, and its surjectivity on matrix groups.</li>
-<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, Natick, 2003), for the groups of units of the low-dimensional real algebras.</li>
 <li>Erdal Inönü and Eugene P. Wigner, "On the contraction of groups and their representations", <em>Proceedings of the National Academy of Sciences of the USA</em> <strong>39</strong> (1953) 510–524, for the contraction of the elliptic and hyperbolic groups to the parabolic one-parameter group.</li>
 <li>Vladimir V. Kisil, <em>Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of $SL(2,\mathbb{R})$</em> (Imperial College Press, London, 2012), for the parabolic one-parameter subgroup and its unipotent structure.</li>
 </ul>

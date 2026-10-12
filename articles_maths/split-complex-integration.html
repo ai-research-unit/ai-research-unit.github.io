@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article develops integration for functions of one split complex variable. It follows <em>Split Complex Analysis</em>, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows <em>Split-Complex Algebra</em> for the ring $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_{1,2} = \tfrac12(1 \pm j)$, the conjugation $\bar A$, and the norm $N(A) = A\bar A = a^2 - a'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.</p>
 <p>The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The <strong>vanishing</strong> statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The <strong>representation</strong> statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - A)$ of the formula is defined only where $\zeta - A$ is a unit, and the set where it is not is not the point $A$ but the two lines through $A$; no contour that surrounds $A$ avoids them.</p>
-<p>No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in <em>Split Complex Analysis</em>, and the operator notation $\partial_A, \partial_{\bar A}$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$, $\mathbb{D}'$, $\mathbb{H}$ and $\mathbb{B}$, is the subject of <em>Hypercomplex Integration</em>.</p>
+<p>No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in <em>Split Complex Analysis</em>, and the operator notation $\partial_A, \partial_{\bar A}$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of <em>Hypercomplex Integration</em>.</p>
 <p>Notation: $A = a + ja'$ with $a, a' \in \mathbb{R}$, $\bar A = a - ja'$, and $\|A\|_E = \sqrt{a^2 + a'^2}$. The idempotent coordinates are</p>
 <p>$$
 A_+ = a + a', \qquad A_- = a - a', \qquad A = A_+ \Pi_1 + A_- \Pi_2,
@@ -165,7 +165,7 @@ $$</p>
 $$</p>
 <p>and then $u$ and $v$ each satisfy the wave equation $\Box u = \Box v = 0$.</p>
 <h2 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h2>
-<h3 id="closedness-of-math177">Closedness of $f\,dA$</h3>
+<h3 id="closedness-of-math174">Closedness of $f\,dA$</h3>
 <p><strong>Theorem.</strong> Let $f$ be $C^1$ on a domain $U$. Then the differential form $f\,dA$ is closed if and only if $f$ is split complex differentiable on $U$.</p>
 <p><strong>Proof.</strong> In the idempotent coordinates, $f\,dA = f_+ \Pi_1 dA_+ + f_- \Pi_2 dA_-$, and since $\Pi_1$ and $\Pi_2$ are constant,</p>
 <p>$$

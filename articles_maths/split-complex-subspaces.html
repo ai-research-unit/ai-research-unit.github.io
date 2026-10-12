@@ -52,15 +52,15 @@
       <div class="article-body">
         <h1 id="split-complex-subspaces"><strong>Split-Complex Subspaces</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The distinguished subspaces of $\mathbb{D}$ are the fixed and anti-fixed spaces of the unique non-trivial involution, the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, together with the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, which are the finest one-dimensional pieces of the algebra. This article collects their relations in one place: their bases, their dimensions, their intersections, their sums, the action of the involution on each, the restricted norm, and the failure of the remarkable-subspace lattice that the biquaternion category supports. It is the two-dimensional counterpart of <em>Comparison of the Remarkable Subspaces</em>, and the systematic difference is that the involution lattice degenerates to a single edge, so the number of distinguished one-dimensional subspaces is two rather than six.</p>
+<p>The distinguished subspaces of $\mathbb{D}$ are the fixed and anti-fixed spaces of the unique non-trivial involution, the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, together with the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, which are the finest one-dimensional pieces of the algebra. This article collects their relations in one place: their bases, their dimensions, their intersections, their sums, the action of the involution on each, the restricted norm, and the failure of the remarkable-subspace lattice. The involution lattice degenerates to a single edge, so the number of distinguished one-dimensional subspaces is two rather than six.</p>
 <p>The single non-trivial involution is the conjugation $\bar{\cdot}$: it is the only involution distinct from the identity, and the idempotent conjugation coincides with it. Each involution splits the algebra into a fixed space and an anti-fixed space, so there is one decomposition into two lines, namely the scalar–split-vector decomposition, and there is a second, finer decomposition, the idempotent one, not induced by an involution. Every number below is recomputed from the definitions by comparison of coefficients.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no quaternion conjugation and no Hermitian decomposition; those slots of the four-dimensional case are empty here.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $N(A) = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no Hermitian decomposition; that slot of the four-dimensional case is empty here.</p>
 <h2 id="the-two-involutions">The Two Involutions</h2>
-<p>The algebra carries two natural involutions: the split-complex conjugation $\bar{A} = a-ja'$ and the idempotent conjugation (the swap) $\tilde{A} = (a-a')\Pi_1 + (a+a')\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{D}$ they coincide:</p>
+<p>The algebra carries two involutions: the split-complex conjugation $\bar{A} = a-ja'$ and the idempotent conjugation (the swap) $\tilde{A} = (a-a')\Pi_1 + (a+a')\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{D}$ they coincide:</p>
 <p>$$
 A = (a-a')\Pi_1 + (a+a')\Pi_2 = (a-a')\tfrac{1+j}{2} + (a+a')\tfrac{1-j}{2} = a - j a' = \bar A.
 $$</p>
-<p>So there is one involution worth naming, the conjugation $\bar{\cdot}$, and the map sending an element to its "conjugate with respect to the idempotent basis" produces no second structure. In the four-dimensional algebra the corresponding statements are different: $\mathbb{B}$ carries the four involutions $\bar{\cdot}, {}^{*}, {}^{\dagger}, \flat$, they are pairwise distinct, and they generate remarkable subspaces. Here the whole involution content is a single non-trivial map.</p>
+<p>So there is one involution worth naming, the conjugation $\bar{\cdot}$, and the map sending an element to its "conjugate with respect to the idempotent basis" produces no second structure. Here the whole involution content is a single non-trivial map.</p>
 <h2 id="the-distinguished-subspaces-at-a-glance">The Distinguished Subspaces at a Glance</h2>
 <p>The involution $\bar{\cdot}$ splits $\mathbb{D}$ into its fixed line and its anti-fixed line, and the idempotent basis adds the two finer lines.</p>
 <div class="table-scroll"><table>
@@ -127,7 +127,7 @@ $$</p>
 <p>$$
 \begin{pmatrix} A_+ \\ A_- \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} A_r \\ A_i \end{pmatrix}.
 $$</p>
-<p>In the four-dimensional algebra there are three such decompositions, the scalar–vector, the quaternion and the Hermitian; here there are two, and only the first is induced by an involution.</p>
+<p>Here there are two such decompositions, and only the first is induced by an involution.</p>
 <h2 id="the-four-coordinate-lines">The Four Coordinate Lines</h2>
 <p>The two real coordinates of $\mathbb{D}$ are $(a,a')$, in the basis $\{1,j\}$. They group into the two lines</p>
 <p>$$
@@ -272,12 +272,12 @@ $$</p>
 $$</p>
 <p>In the four-dimensional case only the three decomposition pairs span the algebra; here all six pairs of distinct lines do, simply because there are only two dimensions to fill.</p>
 <h2 id="the-failure-of-a-remarkable-subspace-lattice">The Failure of a Remarkable-Subspace Lattice</h2>
-<p>The biquaternion category has remarkable subspaces because it has three commuting involutions, each contributing a fixed and an anti-fixed space, and the four involutions $\{\mathrm{id}, \bar{\cdot}, {}^{*}, {}^{\dagger}\}$ form the Klein four-group. In $\mathbb{D}$ the conjugation group is</p>
+<p>In $\mathbb{D}$ the conjugation group is</p>
 <p>$$
 \{\mathrm{id}, \bar{\cdot}\} \cong \mathbb{Z}/2,
 $$</p>
-<p>with a single non-trivial element, so the involution lattice is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines $\mathbb{R}_{\mathbb{D}}$ and $j\mathbb{R}_{\mathbb{D}}$. A remarkable-subspace lattice of the biquaternion kind would require three independent involutions and their products; there is only one, and the idempotent conjugation does not add a second, since it equals the first.</p>
-<p>There is, of course, a finer decomposition of the plane into the two idempotent lines, and in that sense one may say the plane carries four distinguished lines rather than two. But the four do not form a lattice under intersection and sum in the way the remarkable biquaternion subspaces do: they form the two bases of the two decompositions, with all cross-intersections zero and all cross-sums equal to the whole plane. The honest statement is that the involution lattice of $\mathbb{D}$ is the two-element chain of the single involution, and the idempotent lines are a second, non-involution decomposition.</p>
+<p>with a single non-trivial element, so the involution lattice is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines $\mathbb{R}_{\mathbb{D}}$ and $j\mathbb{R}_{\mathbb{D}}$. A remarkable-subspace lattice would require three independent involutions and their products; there is only one, and the idempotent conjugation does not add a second, since it equals the first.</p>
+<p>There is, of course, a finer decomposition of the plane into the two idempotent lines, and in that sense one may say the plane carries four distinguished lines rather than two. But the four do not form a lattice under intersection and sum: they form the two bases of the two decompositions, with all cross-intersections zero and all cross-sums equal to the whole plane. The honest statement is that the involution lattice of $\mathbb{D}$ is the two-element chain of the single involution, and the idempotent lines are a second, non-involution decomposition.</p>
 <h2 id="the-action-of-the-involution">The Action of the Involution</h2>
 <p>The conjugation $\bar{\cdot}$ preserves each of the four lines, acting on each by a scalar sign:</p>
 <div class="table-scroll"><table>
@@ -355,7 +355,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The two eigenlines are the definite lines of the form; the two idempotent lines are the isotropic lines. This is the plane-level version of the statement, made in <em>Split-Complex Zero Divisors</em>, that the null cone is exactly the union of the two idempotent lines, and of the statement, made in <em>Split-Complex Norm and Invertibility</em>, that the null cone meets each eigenspace only at the origin.</p>
-<h2 id="comparison-with-the-two-subspaces-of-math166">Comparison with the Two Subspaces of $\mathbb{C}$</h2>
+<h2 id="comparison-with-the-two-subspaces-of-math163">Comparison with the Two Subspaces of $\mathbb{C}$</h2>
 <p>The complex field $\mathbb{C}$ is the definite two-dimensional algebra, and its subspace theory is the simplest of all: conjugation $A \mapsto \bar A$ is the unique non-trivial involution, with fixed space the real line and anti-fixed space the pure imaginary line, and there are</p>
 <p>$$
 \mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}},
@@ -424,8 +424,8 @@ $$</p>
 <h3 id="the-involution-on-both-bases">The Involution on Both Bases</h3>
 <p>For $A = 4+3j$ the involution gives $\bar A = 4-3j$; in the eigenbasis this flips the sign of the second coordinate, and in the idempotent basis it swaps the coordinates $7 \leftrightarrow 1$, since $A = 7\Pi_1 + 1\Pi_2$ and $\bar A = 1\Pi_1 + 7\Pi_2$. Both readings agree, and the arithmetic is the statement $\bar A = 7\Pi_2 + 1\Pi_1$.</p>
 <h2 id="summary">Summary</h2>
-<p>The split-complex algebra has one non-trivial involution, the conjugation $\bar A = a-ja'$, which coincides with the idempotent conjugation, against the four involutions of the biquaternion algebra. It defines the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, its fixed and anti-fixed spaces, and the plane splits as their direct sum; the idempotent basis defines the two finer lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and the plane splits as their direct sum as well. The four lines are pairwise independent, every pair of distinct lines spans the whole plane, and the restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines, which are exactly the isotropic lines.</p>
-<p>There is no remarkable-subspace lattice of the biquaternion kind, because there is only one non-trivial involution; the involution lattice is the single edge $\{0\}\subset\mathbb{Z}/2$ on the two eigenlines, and the idempotent lines form a second, non-involution decomposition. Compared with $\mathbb{C}$, the split-complex algebra has the same two involutive lines but with the imaginary line's norm reversed in sign, and it has in addition the two idempotent lines, which the field lacks because it has no nontrivial idempotents.</p>
+<p>The split-complex algebra has one non-trivial involution, the conjugation $\bar A = a-ja'$, which coincides with the idempotent conjugation. It defines the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, its fixed and anti-fixed spaces, and the plane splits as their direct sum; the idempotent basis defines the two finer lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and the plane splits as their direct sum as well. The four lines are pairwise independent, every pair of distinct lines spans the whole plane, and the restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines, which are exactly the isotropic lines.</p>
+<p>There is no remarkable-subspace lattice, because there is only one non-trivial involution; the involution lattice is the single edge $\{0\}\subset\mathbb{Z}/2$ on the two eigenlines, and the idempotent lines form a second, non-involution decomposition. Compared with $\mathbb{C}$, the split-complex algebra has the same two involutive lines but with the imaginary line's norm reversed in sign, and it has in addition the two idempotent lines, which the field lacks because it has no nontrivial idempotents.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

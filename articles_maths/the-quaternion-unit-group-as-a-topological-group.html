@@ -52,8 +52,8 @@
       <div class="article-body">
         <h1 id="the-quaternion-unit-group-as-a-topological-group"><strong>The Quaternion Unit Group as a Topological Group</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The quaternions form a division algebra, so the units of the plain product are exactly the nonzero elements and the punctured space is the group of units. This article reads that group as a topological group: its decomposition into a positive real factor and the unit sphere, the compact subgroup of the unit quaternions, the connectedness, the exponential map, and the comparison with the biquaternion group of units. The space is the article before it; the discrete subgroups of the sphere are the article after it.</p>
-<p><strong>Boundaries.</strong> The space and its topology are <em>Introduction to Topology on the Quaternions</em>, above this article in this category; the norm and the inverse formula are <em>Norm and Invertibility in the General Plain Algebra</em>, above this article in this category; the finite subgroups of the unit sphere are <em>Quaternion Orders and Finite Groups of Units</em>, below this article in this category; the exponential and the Lie structure are <em>Quaternion Exponential and Lie Group Structure</em>, below this article in this category; the rotations are <em>Quaternion Rotations and Reflections</em>, in <code>### Geometry</code>. The biquaternion parallel is <em>The Biquaternion Unit Group as a Topological Group</em>.</p>
+<p>The quaternions form a division algebra, so the units of the plain product are exactly the nonzero elements and the punctured space is the group of units. The space is the article before it; the discrete subgroups of the sphere are the article after it.</p>
+<p><strong>Boundaries.</strong> The space and its topology are <em>Introduction to Topology on the Quaternions</em>, above this article in this category; the norm and the inverse formula are <em>Norm and Invertibility in the General Plain Algebra</em>, above this article in this category; the finite subgroups of the unit sphere are <em>Quaternion Orders and Finite Groups of Units</em>, below this article in this category; the exponential and the Lie structure are <em>Quaternion Exponential and Lie Group Structure</em>, below this article in this category; the rotations are <em>Quaternion Rotations and Reflections</em>, in <code>### Geometry</code>.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The <strong>quaternion form</strong> is $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$ and the <strong>norm</strong> is $\lvert\tilde q\rvert=\sqrt{N(\tilde q)}$; the <strong>quaternion conjugation</strong> is $\tilde q^{\natural}=q_0e_0-\mathbf q$, the bar is the identity. The <strong>unit sphere</strong> is $S^3=\{\tilde q:N(\tilde q)=1\}$, the <strong>group of units</strong> is $\mathbb{H}^\times=\{\tilde q\neq0\}$.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Proposition (the units are the nonzero elements).</strong> The group of units of the plain product is</p>
@@ -91,52 +91,8 @@ $$</p>
 <p><em>Proof.</em> The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=e^{q_0}\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_0e_0+\mathbf v$, $\exp(\tilde q)=e^{q_0}\exp(\mathbf v)$, and $\exp(\mathbf v)=\cos\lvert\mathbf v\rvert+\widehat{\mathbf v}\sin\lvert\mathbf v\rvert$ with $\widehat{\mathbf v}=\mathbf v/\lvert\mathbf v\rvert$; every unit quaternion is uniquely $(\cos\theta,\widehat{\mathbf v}\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_0$, so the unit part of the image misses exactly $-e_0$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_0$.</p>
 <p><strong>Corollary (the exponential generates the unit group).</strong> Every unit is $\exp(\tilde q)$ for some $\tilde q$, and every unit quaternion is $\exp(\mathbf v)$ for a pure $\mathbf v$ with $\lvert\mathbf v\rvert\in[0,\pi]$; the exponential is a local homeomorphism at the origin, with local inverse the quaternion logarithm of <em>Quaternion Exponential and Lie Group Structure</em>.</p>
 <p><em>Proof.</em> The surjectivity onto $\mathbb{H}^\times$ is the theorem; the unit statement is the restriction to the pure part, allowing the value $\lvert\mathbf v\rvert=\pi$ for $-e_0$; the local statement is the inverse function theorem applied on the band, where the differential at the origin is the identity.</p>
-<h2 id="the-comparison-with-the-biquaternion-group-of-units">The Comparison with the Biquaternion Group of Units</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>object</th>
-<th>$\mathbb{H}^\times$</th>
-<th>$\mathbb{B}^\times$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>description</td>
-<td>all nonzero elements (division algebra)</td>
-<td>the non-zero-divisors, complement of the singular cone</td>
-</tr>
-<tr>
-<td>real dimension</td>
-<td>$4$</td>
-<td>$8$</td>
-</tr>
-<tr>
-<td>decomposition</td>
-<td>$\mathbb{R}_{>0}\times S^3$</td>
-<td>$\bigl(\mathbb{C}^\times\times SL_2(\mathbb{C})\bigr)/\{\pm I\}\cong GL_2(\mathbb{C})$</td>
-</tr>
-<tr>
-<td>compact part</td>
-<td>$Sp(1)=S^3$</td>
-<td>$U(\mathbb{B})\cong(S^1\times S^3)/\{\pm e_0\}$</td>
-</tr>
-<tr>
-<td>connected</td>
-<td>yes, simply connected</td>
-<td>yes, $\pi_1\cong\mathbb{Z}$</td>
-</tr>
-<tr>
-<td>exponential</td>
-<td>onto, a homeomorphism on the band $\lvert\mathbf q\rvert<\pi$ minus the negative ray</td>
-<td>onto, a local homeomorphism, with the singular cone absent</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Proposition (the definite case is one dimension shorter and simply connected).</strong> Over $\mathbb{R}$ the group of units is the product of a line and a three-sphere, hence simply connected; over $\mathbb{C}$ the singular cone cuts the units down to the complement of a cone and the group retracts onto $U(\mathbb{B})$, whose centre contributes a circle and a fundamental group $\mathbb{Z}$.</p>
-<p><em>Proof.</em> The decomposition over $\mathbb{R}$ is the theorem; over $\mathbb{C}$ the units are the complement of the singular cone and the retraction onto the maximal compact subgroup is <em>The Biquaternion Unit Group as a Topological Group</em>, whose fundamental group is $\mathbb{Z}$.</p>
 <h2 id="summary">Summary</h2>
-<p>The group of units of the quaternion algebra is the punctured space $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$, open, dense, of real dimension four, with centre $\mathbb{R}^\times e_0$. It is a topological group, and the map $\tilde q\mapsto(\lvert\tilde q\rvert,\tilde q/\lvert\tilde q\rvert)$ is an isomorphism onto $\mathbb{R}_{>0}\times S^3$; consequently it is connected, simply connected, homotopy equivalent to $S^3$ and not compact. The unit quaternions $Sp(1)=S^3$ form the compact maximal subgroup, of dimension three, with centre $\{\pm e_0\}$ and quotient the rotation group. The exponential is surjective onto the units, is a unit quaternion on the pure part, and is a homeomorphism from the band of pure norm less than $\pi$ onto the units with the negative scalar ray removed. The biquaternion group of units is the complement of a cone of real dimension eight and retracts onto a circle times a three-sphere with fundamental group $\mathbb{Z}$; the quaternion case is one rung shorter and simply connected.</p>
+<p>The group of units of the quaternion algebra is the punctured space $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$, open, dense, of real dimension four, with centre $\mathbb{R}^\times e_0$. It is a topological group, and the map $\tilde q\mapsto(\lvert\tilde q\rvert,\tilde q/\lvert\tilde q\rvert)$ is an isomorphism onto $\mathbb{R}_{>0}\times S^3$; consequently it is connected, simply connected, homotopy equivalent to $S^3$ and not compact. The unit quaternions $Sp(1)=S^3$ form the compact maximal subgroup, of dimension three, with centre $\{\pm e_0\}$ and quotient the rotation group. The exponential is surjective onto the units, is a unit quaternion on the pure part, and is a homeomorphism from the band of pure norm less than $\pi$ onto the units with the negative scalar ray removed.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -178,7 +134,6 @@ $$</p>
 <li><em>Norm and Invertibility in the General Plain Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md</code>), for the inverse formula</li>
 <li><em>Quaternion Orders and Finite Groups of Units</em> (<code>articles_maths/quaternion-orders-and-finite-groups-of-units.md</code>), for the discrete subgroups of $S^3$</li>
 <li><em>Quaternion Exponential and Lie Group Structure</em> (<code>articles_maths/quaternion-exponential-and-lie-group-structure.md</code>), for the logarithm and the Lie structure</li>
-<li><em>The Biquaternion Unit Group as a Topological Group</em> (<code>articles_maths/the-biquaternion-unit-group-as-a-topological-group.md</code>), for the biquaternion parallel</li>
 </ul>
       </div>
     </main>

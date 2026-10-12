@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="quaternion-spectral-theory"><strong>Quaternion Spectral Theory</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Because the quaternion algebra is a division algebra, every non-zero element is invertible and the spectrum of a single quaternion is easy to describe; but because it is non-commutative, the left and right eigenvalue problems for quaternionic matrices differ, and the word "spectrum" splits into several inequivalent sets. This article fixes the definitions, describes the spectrum of a quaternion and of a quaternionic matrix, proves the Cayley–Hamilton identity and describes the trace and determinant functionals, classifies the similarity classes and states the eigenvalue dichotomy, computes the eigenspaces, treats the resolvent and the spectral radius, and presents the S-spectrum and the quaternionic spectral theorem. It is the quaternion member of the family's spectral pair; its counterpart is the biquaternion case, where the scalars are central and the spectrum is an ordinary complex two-point set, and the relation between the two is that the biquaternion spectrum is the slice of the quaternion S-sphere.</p>
+<p>Because the quaternion algebra is a division algebra, every non-zero element is invertible and the spectrum of a single quaternion is easy to describe; but because it is non-commutative, the left and right eigenvalue problems for quaternionic matrices differ, and the word "spectrum" splits into several inequivalent sets. This article fixes the definitions, describes the spectrum of a quaternion and of a quaternionic matrix, proves the Cayley–Hamilton identity and describes the trace and determinant functionals, classifies the similarity classes and states the eigenvalue dichotomy, computes the eigenspaces, treats the resolvent and the spectral radius, and presents the S-spectrum and the quaternionic spectral theorem.</p>
 <p>The article uses <em>Quaternion Algebra</em> and <em>Quaternion Norm and Invertibility</em> for the algebra, the quaternion norm and invertibility, <em>Quaternion Roots of Minus One</em> for the sphere of imaginary units, <em>Quaternion Automorphisms and Derivations</em> for conjugation and similarity, and <em>Quaternion Exponential and Lie Group Structure</em> for the exponential. The standard results on quaternionic matrices that are not computed here are quoted from the literature and named as standard.</p>
 <p>The corpus's default base is a commutative ring with identity; the spectrum requires a division ring and a topology, so scalars lie in $\mathbb{H}$ or $\mathbb{C}$ and everything below is over $\mathbb{R}$.</p>
 <p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\tilde{q}^{\natural}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \mathbf{q}$, norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.</p>
@@ -175,64 +175,11 @@ $$</p>
 <p>so the S-spectrum is the union of the classes, $\sigma_S(M) = \bigcup_{i=1}^{n}[\lambda_i]$; for Hermitian $M$ the $\lambda_i$ are real, and for unitary $M$ they have modulus one, in which case every $s\in\sigma_S(M)$ has modulus one.</p>
 <p><em>Proof.</em> The diagonalisation is the spectral theorem for normal quaternionic matrices; it is stated and proved in the references (Rodman 2014; Colombo, Sabadini and Struppa 2011).</p>
 <p><strong>Corollary.</strong> For a normal matrix the S-spectrum determines the operator up to unitary equivalence, the spectral radius equals the operator norm, and a Hermitian matrix has real S-spectrum, a unitary one has S-spectrum contained in the unit sphere $S^3$.</p>
-<h2 id="relation-to-the-biquaternion-spectral-theory">Relation to the Biquaternion Spectral Theory</h2>
-<p>Viewing a quaternion as a biquaternion with real coefficients, the complex spectrum of the biquaternion theory and the S-spectrum of this article are related by slicing: for any pure unit $\mu$ the complex line $q_0+\mathbb{R}[\mu] = q_0+(\mathbb{R}+\mu\mathbb{R})$ through the real point $q_0$ meets the S-sphere $[\tilde q]$ in exactly the two points $q_0\pm\mu|\mathrm{Vect}\tilde q|$, so the biquaternion spectrum is the two-point slice of the quaternion sphere, obtained by identifying the slice unit $\mu$ with the central imaginary unit $i$ of $\mathbb{B}$,</p>
-<p>$$
-[\tilde q]\cap\bigl(q_0+\mathbb{R}[\mu]\bigr) = \{q_0\pm\mu|\mathrm{Vect}\tilde q|\}, \qquad
-\sigma_{\mathbb{B}}(\tilde q) = \{q_0\pm i|\mathrm{Vect}\tilde q|\} .
-$$</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Quaternion case $\mathbb{H}$</th>
-<th>Biquaternion case $\mathbb{B}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Scalars central?</td>
-<td>no</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>Spectrum of a single element</td>
-<td>$\sigma_S([\tilde q]) = [\tilde q]$, a $2$-sphere (or a point)</td>
-<td>$\sigma(\tilde Q) = \{Q_0\pm iB\}$, two complex points</td>
-</tr>
-<tr>
-<td>Left and right spectra</td>
-<td>differ; $\sigma_L([\tilde q]) = \{\tilde q\}$, $\sigma_R([\tilde q]) = [\tilde q]$</td>
-<td>agree as sets when eigenvalues are complex</td>
-</tr>
-<tr>
-<td>Trace and determinant functionals</td>
-<td>reduced trace $2q_0$, reduced norm $N(\tilde q)$, real</td>
-<td>trace $2Q_0$, determinant $N(\tilde Q)$, complex</td>
-</tr>
-<tr>
-<td>Matrix determinant</td>
-<td>Dieudonné determinant, valued in $\mathbb{R}_{>0}$</td>
-<td>ordinary determinant, valued in $\mathbb{C}$</td>
-</tr>
-<tr>
-<td>Spectral theorem</td>
-<td>$M = U\operatorname{diag}(\lambda_i)U^{*}$, $\sigma_S(M) = \bigcup[\lambda_i]$</td>
-<td>$\tilde Q = \lambda_1P_1+\lambda_2P_2$, complex eigenvalues</td>
-</tr>
-<tr>
-<td>Reason for the difference</td>
-<td>non-commuting scalars</td>
-<td>central complex scalars</td>
-</tr>
-</tbody>
-</table></div>
-<p>The essential difference is the non-commutativity of the scalars. Because the centre of $\mathbb{B}$ is $\mathbb{C}$, the left and right problems for a biquaternion coincide when eigenvalues are taken complex, and the spectral theorem can use complex eigenvalues directly; because the centre of $\mathbb{H}$ is $\mathbb{R}$, the eigenvalues of a quaternion fill a sphere, the left and right spectra are genuinely different, and the correct substitute for the complex spectrum is the S-spectrum, which equals the right spectrum and is a finite union of similarity classes. For a real quaternion viewed as a biquaternion, the two points of the biquaternion spectrum are the slice of the single quaternion sphere, so the two theories agree exactly on the complex line. The biquaternion account is in <em>Biquaternion Spectral Theory</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The spectrum of a single quaternion in the algebra is the single point $\{\tilde q\}$, but the eigenvector problems of the operator $[\tilde q]$ give two different sets: the left spectrum $\sigma_L([\tilde q]) = \{\tilde q\}$ and the right spectrum $\sigma_R([\tilde q]) = $ the similarity class $[\tilde q]$, which is a point for real $\tilde q$ and a two-sphere of fixed modulus for non-real $\tilde q$. For a quaternionic matrix the right spectrum is a finite union of at most $n$ similarity classes, described by the standard form with complex representatives of non-negative imaginary part; the left spectrum is not invariant under similarity and need not be a finite union of classes, and the two spectra are in general incomparable, agreeing when the eigenvalue is complex.</p>
 <p>The Cayley–Hamilton identity $\tilde q^2-T(\tilde q)\tilde q+D(\tilde q) = 0$ holds with the reduced trace $T(\tilde q) = 2q_0$ and reduced norm $D(\tilde q) = N(\tilde q)$, both similarity-invariant, the former real-linear and the latter multiplicative; for matrices the trace is replaced by its real part and the determinant by the Dieudonné determinant, with $|\det M| = \prod_i|\lambda_i|$. Similarity of quaternions is classified by $(T,D)$, so the classes are points or spheres, and the eigenvalue dichotomy separates each class as a real point or a non-degenerate two-sphere.</p>
 <p>The right eigenspace attached to a class is a right $\mathbb{H}$-subspace, of dimension one over $\mathbb{H}$ for a single quaternion, whereas the eigenspace of a fixed non-real representative is only a complex line; the left eigenspace for a single quaternion is all of $\mathbb{H}$. The S-resolvent and the left resolvent have explicit closed forms, and the spectral radius of a single quaternion is its modulus; in general the spectral radius obeys the Gelfand-type limit formula and, for normal matrices, equals the operator norm.</p>
-<p>The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ singular}\}$ equals the right spectrum, and the quaternionic spectral theorem diagonalises a normal matrix as $M = U\operatorname{diag}(\lambda_i)U^{*}$ with $\sigma_S(M) = \bigcup_i[\lambda_i]$; Hermitian matrices have real S-spectrum and unitary ones S-spectrum on $S^3$. The biquaternion spectrum is the slice of the quaternion sphere on the complex line, and the difference between the two theories is exactly the centrality of the scalars.</p>
+<p>The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ singular}\}$ equals the right spectrum, and the quaternionic spectral theorem diagonalises a normal matrix as $M = U\operatorname{diag}(\lambda_i)U^{*}$ with $\sigma_S(M) = \bigcup_i[\lambda_i]$; Hermitian matrices have real S-spectrum and unitary ones S-spectrum on $S^3$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -309,10 +256,6 @@ $$</p>
 <tr>
 <td>$M = U\operatorname{diag}(\lambda_i)U^{*}$</td>
 <td>Quaternionic spectral theorem for normal $M$</td>
-</tr>
-<tr>
-<td>$\sigma_{\mathbb{B}}(\tilde q) = \{q_0\pm i\lvert\mathbf{q}\rvert\}$</td>
-<td>Biquaternion spectrum, the two-point slice of the quaternion sphere $[\tilde q]$</td>
 </tr>
 </tbody>
 </table></div>

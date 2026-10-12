@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of <em>Introduction to the Symmetric Plain Algebra of Quaternions</em>. Unlike the plain algebra, which is a division algebra, the block has zero divisors: the product of two nonzero elements can vanish. This article determines them.</p>
 <p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
-<p>The article states the definition of a zero divisor for the product and then reads it: the criterion, the left annihilator of an element, the pairs that multiply to zero, the squares of a pure and of a non-pure element, the associated idempotents, and the comparison with the biquaternion Jordan product. The invertibility criterion is <em>Norm and Invertibility in the Symmetric Plain Algebra</em>, where the contrast between invertibility and division is stated; the multiplication operators, of which the zero divisors are exactly the singular ones with nonzero parameter, are <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category.</p>
+<p>The invertibility criterion is <em>Norm and Invertibility in the Symmetric Plain Algebra</em>, where the contrast between invertibility and division is stated; the multiplication operators, of which the zero divisors are exactly the singular ones with nonzero parameter, are <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\mathbf p\cdot\mathbf q$ is the Euclidean dot product and $\mathbf p\times\mathbf q$ the vector product of the vector parts; the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\mathbf q|^2$ and the scalar line and the vector subspace $\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}$ are those of <em>Introduction to the Remarkable Subspaces of the Quaternions</em>.</p>
 <h2 id="the-zero-divisors-of-the-block">The Zero Divisors of the Block</h2>
 <h3 id="the-definition">The Definition</h3>
@@ -118,42 +118,9 @@ $$</p>
 \tilde\pi\bullet\tilde\pi=\tilde\pi\iff \tilde\pi\in\{0,e_0\}.
 $$</p>
 <p><em>Proof.</em> The equation is the plain equation $\tilde\pi^2=\tilde\pi$, since the square of the block is the plain square. From the vector part, $(2\pi_0-1)\boldsymbol{\pi}=0$: either $\boldsymbol{\pi}=0$, giving $\pi_0^2=\pi_0$ and $\tilde\pi\in\{0,e_0\}$, or $\pi_0=\tfrac12$, and then the scalar part reads $\tfrac14-|\boldsymbol{\pi}|^2=\tfrac12$, that is $|\boldsymbol{\pi}|^2=-\tfrac14$, which has no real solution.</p>
-<p><strong>Remark (why no idempotent is built from a zero divisor).</strong> In an algebra with a pure root of $+e_0$ the element $\tfrac12(e_0+\mathbf u)$ is a nontrivial idempotent; here the square of a pure element is $-|\mathbf u|^2e_0$, the negative of what is needed, so the construction never closes and <strong>the zero divisors of the block carry no idempotent with them</strong>. This is the point at which the real block departs from the biquaternion one, where the square of a pure element can be $+e_0$.</p>
-<h2 id="the-comparison-with-the-biquaternion-jordan-product">The Comparison with the Biquaternion Jordan Product</h2>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th></th>
-<th>the biquaternion symmetric plain algebra</th>
-<th>the symmetric plain algebra of $\mathbb{H}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>norm on the space</td>
-<td>the complex form $N$, isotropic</td>
-<td>$N=q_0^2+\lvert\mathbf q\rvert^2$, positive definite</td>
-</tr>
-<tr>
-<td>criterion for a zero divisor</td>
-<td>$Q_0=0$ <strong>or</strong> $N(\tilde Q)=0$</td>
-<td>$q_0=0$</td>
-</tr>
-<tr>
-<td>the zero-divisor set</td>
-<td>the pure family together with the isotropic cone</td>
-<td>the nonzero pure elements</td>
-</tr>
-<tr>
-<td>idempotents attached</td>
-<td>the many nontrivial ones built from roots of $+e_0$</td>
-<td>none but $0$ and $e_0$</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Remark (the collapse of the criterion).</strong> Over $\mathbb{C}$ the norm is isotropic, so a non-pure element can be a zero divisor, and the zero-divisor set is the union of the pure family and the isotropic cone of the norm; over $\mathbb{R}$ the norm is positive definite, so the non-pure elements fall out of the criterion and only the pure condition survives. The biquaternion zero-divisor theory is <em>Zero Divisors of the Symmetric Plain Algebra</em> of the biquaternion chapter; the comparison is recorded here and not re-derived. The same collapse turns the nontrivial idempotents of the biquaternion block, which are the elements built from pure roots of $+e_0$, into nothing, because over $\mathbb{R}$ a pure square is negative.</p>
+<p><strong>Remark (why no idempotent is built from a zero divisor).</strong> In an algebra with a pure root of $+e_0$ the element $\tfrac12(e_0+\mathbf u)$ is a nontrivial idempotent; here the square of a pure element is $-|\mathbf u|^2e_0$, the negative of what is needed, so the construction never closes and <strong>the zero divisors of the block carry no idempotent with them</strong>.</p>
 <h2 id="summary">Summary</h2>
-<p>A nonzero element of the block is a zero divisor, that is, has a nonzero partner $\tilde q$ with $\tilde p\bullet\tilde q=0$, if and only if it is pure: the criterion is $p_0=0$, equivalently the vanishing of the left multiplication operator, whose determinant is $p_0^2N(\tilde p)$. The partners of a nonzero pure $\mathbf u$ are the elements of the two-dimensional plane $\mathbf u^{\perp}$ inside the vector subspace, and the zero-divisor pairs are exactly the pairs of orthogonal nonzero pure elements, an ordered family of real dimension five whose unordered version is the Grassmannian $\mathrm{Gr}(2,3)\cong\mathbb{RP}^2$. A pure element has the negative scalar square $-|\mathbf u|^2e_0$; a non-pure element has the square $(q_0^2-|\mathbf q|^2)e_0+2q_0\mathbf q$ with nonzero vector part; and the idempotents are only $0$ and $e_0$, so no nontrivial idempotent is attached to a zero divisor. Over $\mathbb{C}$ the criterion is the disjunction $Q_0=0$ or $N(\tilde Q)=0$ and the idempotents are many; over $\mathbb{R}$ the definiteness of the norm collapses the criterion to $q_0=0$ and the idempotents to $\{0,e_0\}$.</p>
+<p>A nonzero element of the block is a zero divisor, that is, has a nonzero partner $\tilde q$ with $\tilde p\bullet\tilde q=0$, if and only if it is pure: the criterion is $p_0=0$, equivalently the vanishing of the left multiplication operator, whose determinant is $p_0^2N(\tilde p)$. The partners of a nonzero pure $\mathbf u$ are the elements of the two-dimensional plane $\mathbf u^{\perp}$ inside the vector subspace, and the zero-divisor pairs are exactly the pairs of orthogonal nonzero pure elements, an ordered family of real dimension five whose unordered version is the Grassmannian $\mathrm{Gr}(2,3)\cong\mathbb{RP}^2$. A pure element has the negative scalar square $-|\mathbf u|^2e_0$; a non-pure element has the square $(q_0^2-|\mathbf q|^2)e_0+2q_0\mathbf q$ with nonzero vector part; and the idempotents are only $0$ and $e_0$, so no nontrivial idempotent is attached to a zero divisor. The definiteness of the norm collapses the criterion to $q_0=0$ and the idempotents to $\{0,e_0\}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

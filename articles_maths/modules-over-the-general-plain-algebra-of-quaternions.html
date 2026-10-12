@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="modules-over-the-general-plain-algebra-of-quaternions"><strong>Modules over the General Plain Algebra of Quaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article describes the left, right and two-sided modules over the quaternion algebra $\mathbb{H}$ and the category they form. The substance is one theorem and its consequences: over a division algebra a module is free, the rank of a free module is well defined, and the category is semisimple. The free-module argument is proved here rather than cited, because it is the place where the division property of $\mathbb{H}$ does its module-theoretic work; the result fails over the biquaternion algebra, whose regular module is a sum of two minimal ideals and whose naive torsion does not vanish. The division property is <em>Norm and Invertibility in the General Plain Algebra</em>, above this article in this category; the ideals, which are the submodules of the regular module, are <em>Ideals and Simplicity of the General Plain Algebra</em>, above this article in this category; the enveloping algebra and the operators by which the bimodule is read are <em>The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure</em>, below this article in this category.</p>
+<p>This article describes the left, right and two-sided modules over the quaternion algebra $\mathbb{H}$ and the category they form. The substance is one theorem and its consequences: over a division algebra a module is free, the rank of a free module is well defined, and the category is semisimple. The division property is <em>Norm and Invertibility in the General Plain Algebra</em>, above this article in this category; the ideals, which are the submodules of the regular module, are <em>Ideals and Simplicity of the General Plain Algebra</em>, above this article in this category; the enveloping algebra and the operators by which the bimodule is read are <em>The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure</em>, below this article in this category.</p>
 <h2 id="the-regular-bimodule">The Regular Bimodule</h2>
 <p><strong>Definition.</strong> The <strong>regular left module</strong> ${}_\mathbb{H}\mathbb{H}$ is the group $(\mathbb{H},+)$ with the action of $\mathbb{H}$ by left multiplication; the <strong>regular right module</strong> $\mathbb{H}_\mathbb{H}$ uses right multiplication by the opposite algebra $\mathbb{H}^{\mathrm{op}}$; the <strong>regular bimodule</strong> ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries both actions.</p>
 <p><strong>Proposition.</strong> The two actions commute, so ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ is a bimodule, equivalently a left module over the enveloping algebra $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}$ under $(\tilde p\otimes\tilde q^{\mathrm{op}})\cdot\tilde r=\tilde p\tilde r\tilde q$.</p>
@@ -84,47 +84,8 @@
 <p><em>Proof.</em> A non-zero element of $\mathbb{H}$ is invertible, so $\tilde a m=0$ with $\tilde a\neq0$ gives $m=\tilde a^{-1}\tilde a m=0$; this is the vanishing of the naive torsion. Every module is free, hence a direct sum of copies of ${}_\mathbb{H}\mathbb{H}$, which is simple; a direct sum of simple modules is semisimple, every short exact sequence of such modules splits, and every submodule is a summand.</p>
 <p><strong>Corollary.</strong> The algebra $\mathbb{H}$ is left and right semisimple, its global dimension is $0$, every module is projective and injective, and the free module of rank $n$ is the direct sum of $n$ copies of ${}_\mathbb{H}\mathbb{H}$.</p>
 <p><em>Proof.</em> The theorem; a module all of whose submodules are summands is projective and injective, and every short exact sequence splits.</p>
-<h2 id="comparison-with-the-module-category-of-math108">Comparison with the Module Category of $\mathbb{B}$</h2>
-<p>The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$. Its module category has one simple module, the column space $\mathbb{C}^2$ on which $M_2(\mathbb{C})$ acts, and every module is a direct sum of copies of that simple module; the category is again semisimple, and the rank — the number of copies — is again well defined. What changes is the shape of the regular module and the torsion.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>$\mathbb{H}$</th>
-<th>$\mathbb{B}\cong M_2(\mathbb{C})$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>regular module</td>
-<td>simple, ${}_\mathbb{H}\mathbb{H}$</td>
-<td>$S\oplus S$, two copies of the column module $S$</td>
-</tr>
-<tr>
-<td>simple modules</td>
-<td>one, the regular module</td>
-<td>one, the column module</td>
-</tr>
-<tr>
-<td>every module free</td>
-<td>yes</td>
-<td>as a module over $\mathbb{B}$: $S$ is projective, not free</td>
-</tr>
-<tr>
-<td>naive torsion $T(M)$</td>
-<td>$0$</td>
-<td>non-zero: $E_{11}E_{21}=0$ exhibits a non-zero element killed by a non-zero element</td>
-</tr>
-<tr>
-<td>rank</td>
-<td>number of copies of ${}_\mathbb{H}\mathbb{H}$</td>
-<td>number of copies of $S$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The table records the two differences that matter. First, the regular module of $\mathbb{H}$ is simple, while that of $\mathbb{B}$ is the sum of two minimal left ideals, so a free $\mathbb{B}$-module is never simple. Second, the naive torsion vanishes over $\mathbb{H}$ because every non-zero element is invertible, and fails over $\mathbb{B}$ because $\mathbb{B}$ has zero divisors: $E_{11}E_{21}=0$ with both factors non-zero. The module theory of the biquaternion algebra is owned by the biquaternion chapter and is cited for the contrast alone.</p>
 <h2 id="summary">Summary</h2>
-<p>The regular bimodule ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries the two commuting actions of $\mathbb{H}$ and $\mathbb{H}^{\mathrm{op}}$ and is the standard bimodule; every left or right $\mathbb{H}$-module is free, by the transfinite construction that discards each generator already in the span of the earlier ones, and the rank of a free module is well defined because $\mathbb{H}^n$ has composition length $n$ with all factors the simple module ${}_\mathbb{H}\mathbb{H}$. The submodules of the regular module are the ideals, hence $0$ and $\mathbb{H}$ alone; the endomorphism rings are $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$. The category is semisimple, the naive torsion vanishes, every module is a direct sum of copies of the unique simple module, and every submodule is a summand. Over $\mathbb{B}\cong M_2(\mathbb{C})$ the category is still semisimple but the regular module is $S\oplus S$, the simple module is not free, and the naive torsion is non-zero.</p>
+<p>The regular bimodule ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries the two commuting actions of $\mathbb{H}$ and $\mathbb{H}^{\mathrm{op}}$ and is the standard bimodule; every left or right $\mathbb{H}$-module is free, by the transfinite construction that discards each generator already in the span of the earlier ones, and the rank of a free module is well defined because $\mathbb{H}^n$ has composition length $n$ with all factors the simple module ${}_\mathbb{H}\mathbb{H}$. The submodules of the regular module are the ideals, hence $0$ and $\mathbb{H}$ alone; the endomorphism rings are $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$. The category is semisimple, the naive torsion vanishes, every module is a direct sum of copies of the unique simple module, and every submodule is a summand.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -153,10 +114,6 @@
 <tr>
 <td>$T(M)$</td>
 <td>Naive torsion submodule</td>
-</tr>
-<tr>
-<td>$S$</td>
-<td>The simple $\mathbb{B}$-module, the column space $\mathbb{C}^2$</td>
 </tr>
 <tr>
 <td>$E_{ij}$</td>
