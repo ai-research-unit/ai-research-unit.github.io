@@ -59,7 +59,7 @@ $$
 \tilde\nu\star\tilde\nu=0 ,
 $$
 and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a nonzero member, written $\tilde\nu$ after the convention of <em>Conventions in Mathematics</em>. A nonzero square-zero element is at once a zero divisor of the structure, its own annihilating partner, and a root of the central value $0$: the square-zero set with the origin removed lies in the zero-divisor set and in the root set of $0$. The reverse inclusions fail in general, and where they hold is the last section.</p>
-<h2 id="the-two-diagonals">The Two Diagonals</h2>
+<h2 id="the-six-diagonals">The Six Diagonals</h2>
 <p>The square-zero equation is the diagonal equation, so the square-zero set is read from the six squares of <em>The Idempotents of the Six Structures</em>:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -81,6 +81,11 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 <td>$x_0^2-\lvert\mathbf x\rvert^2=0$ and $2x_0\mathbf x=0$</td>
 </tr>
 <tr>
+<td>$\mathrm{APA}$</td>
+<td>$0$</td>
+<td>satisfied identically</td>
+</tr>
+<tr>
 <td>$\mathrm{GQA}$</td>
 <td>$N(\tilde x)e_0$</td>
 <td>$N(\tilde x)=0$</td>
@@ -91,11 +96,6 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 <td>$N(\tilde x)=0$</td>
 </tr>
 <tr>
-<td>$\mathrm{APA}$</td>
-<td>$0$</td>
-<td>satisfied identically</td>
-</tr>
-<tr>
 <td>$\mathrm{AQA}$</td>
 <td>$0$</td>
 <td>satisfied identically</td>
@@ -103,7 +103,7 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 </tbody>
 </table></div>
 <p>The diagonal is the plain square for the plain product, the norm times $e_0$ for the quaternionic product, and zero for the two cross products; this is the same three-fold splitting that governs the roots of a central value, read at the value $0$.</p>
-<h2 id="the-four-definite-structures">The Four Definite Structures</h2>
+<h2 id="the-four-structures-with-the-origin-alone">The Four Structures with the Origin Alone</h2>
 <p><strong>Theorem (the plain and quaternionic structures).</strong> The square-zero set of the general plain structure and of the symmetric plain structure is $\{0\}$; the square-zero set of the general quaternionic structure and of the symmetric quaternionic structure is $\{0\}$. None of the four has a nilpotent.</p>
 <p><em>Proof.</em> For the general plain structure, if $\tilde\nu^2=0$ and $\tilde\nu\neq0$ then $\tilde\nu$ is invertible and multiplication on the left by $\tilde\nu^{-1}$ gives $\tilde\nu=0$, a contradiction; hence the only solution is the origin. For the general quaternionic structure, $\tilde\nu^{\natural}\tilde\nu=N(\tilde\nu)e_0$ and the norm is a sum of four real squares, so $N(\tilde\nu)=0$ forces $\tilde\nu=0$. The symmetric structures have the same square on the diagonal, the Jordan square being the plain square and the symmetrised quaternionic square being the norm times $e_0$, so they keep the same one-point set.</p>
 <p>The proof is the division property, quoted from <em>The Specificities of the General Plain Algebra</em> and <em>Norm and Invertibility in the General Plain Algebra</em>, above this article in this category. The four structures are the ones whose square is zero only at the origin: the plain square is indefinite, of isotropic cone real only after complexification, yet the two equations $x_0^2-|\mathbf x|^2=0$ and $2x_0\mathbf x=0$ together force $\tilde x=0$; and $N(\tilde x)$ is a sum of four squares, positive off the origin. The origin is the only real zero of each.</p>
@@ -131,13 +131,6 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 <td>division</td>
 </tr>
 <tr>
-<td>$\mathrm{GQA}$</td>
-<td>$\tilde p^{\natural}\tilde q$</td>
-<td>$N(\tilde x)e_0$</td>
-<td>$\{0\}$</td>
-<td>definiteness of the norm</td>
-</tr>
-<tr>
 <td>$\mathrm{SPA}$</td>
 <td>$\tilde p\bullet\tilde q$</td>
 <td>$(x_0^2-\lvert\mathbf x\rvert^2)e_0+2x_0\mathbf x$</td>
@@ -145,18 +138,25 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 <td>the plain square</td>
 </tr>
 <tr>
-<td>$\mathrm{SQA}$</td>
-<td>$N(\tilde p,\tilde q)e_0$</td>
-<td>$N(\tilde x)e_0$</td>
-<td>$\{0\}$</td>
-<td>definiteness of the norm</td>
-</tr>
-<tr>
 <td>$\mathrm{APA}$</td>
 <td>$\tilde p\wedge\tilde q$</td>
 <td>$0$</td>
 <td>$\mathbb{H}$</td>
 <td>alternation</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>$\tilde p^{\natural}\tilde q$</td>
+<td>$N(\tilde x)e_0$</td>
+<td>$\{0\}$</td>
+<td>definiteness of the norm</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>$N(\tilde p,\tilde q)e_0$</td>
+<td>$N(\tilde x)e_0$</td>
+<td>$\{0\}$</td>
+<td>definiteness of the norm</td>
 </tr>
 <tr>
 <td>$\mathrm{AQA}$</td>
@@ -167,8 +167,8 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 </tr>
 </tbody>
 </table></div>
-<p><strong>Theorem (the six square-zero sets).</strong> Among the six structures the square-zero set is $\{0\}$ for $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{SPA}$ and $\mathrm{SQA}$, and it is all of $\mathbb{H}$ for $\mathrm{APA}$ and $\mathrm{AQA}$. Only two square-zero sets occur, and no structure of the six has a square-zero set that is neither a point nor the whole space.</p>
-<p><em>Proof.</em> The four first rows are the theorem of the plain and quaternionic structures, and the two last rows are the theorem of the cross products. The assertion that no third set occurs is the classification of the squares: the square of a structure of the six is the plain square, the norm times $e_0$, or zero, and the first two are definite with the origin as their only zero.</p>
+<p><strong>Theorem (the six square-zero sets).</strong> Among the six structures the square-zero set is $\{0\}$ for $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$ and $\mathrm{SQA}$, and it is all of $\mathbb{H}$ for $\mathrm{APA}$ and $\mathrm{AQA}$. Only two square-zero sets occur, and no structure of the six has a square-zero set that is neither a point nor the whole space.</p>
+<p><em>Proof.</em> The rows of $\mathrm{SPA}$ and $\mathrm{SQA}$ repeat those of $\mathrm{GPA}$ and $\mathrm{GQA}$, the symmetric structures sharing the square of their general counterparts, and the rows of $\mathrm{APA}$ and $\mathrm{AQA}$ are the theorem of the cross products. The assertion that no third set occurs is the classification of the squares: the square of a structure of the six is the plain square, the norm times $e_0$, or zero; the norm is definite and the plain square is anisotropic over $\mathbb{R}$, of isotropic cone the origin, so the first two have the origin as their only zero.</p>
 <h2 id="the-three-classes">The Three Classes</h2>
 <p>The square-zero elements, the zero divisors and the roots of $0$ are three classes attached to a structure, and the comparison of the six structures reads them together:</p>
 <div class="table-scroll"><table>
@@ -190,23 +190,9 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 <td>trivial</td>
 </tr>
 <tr>
-<td>$\mathrm{GQA}$</td>
-<td>$\{0\}$</td>
-<td>$\varnothing$</td>
-<td>$\{0\}$</td>
-<td>trivial</td>
-</tr>
-<tr>
 <td>$\mathrm{SPA}$</td>
 <td>$\{0\}$</td>
 <td>$\mathrm{Vect}(\mathbb{H})\setminus\{0\}$</td>
-<td>$\{0\}$</td>
-<td>no</td>
-</tr>
-<tr>
-<td>$\mathrm{SQA}$</td>
-<td>$\{0\}$</td>
-<td>$\mathbb{H}\setminus\{0\}$</td>
 <td>$\{0\}$</td>
 <td>no</td>
 </tr>
@@ -218,6 +204,20 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 <td>yes, off the origin</td>
 </tr>
 <tr>
+<td>$\mathrm{GQA}$</td>
+<td>$\{0\}$</td>
+<td>$\varnothing$</td>
+<td>$\{0\}$</td>
+<td>trivial</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>$\{0\}$</td>
+<td>$\mathbb{H}\setminus\{0\}$</td>
+<td>$\{0\}$</td>
+<td>no</td>
+</tr>
+<tr>
 <td>$\mathrm{AQA}$</td>
 <td>$\mathbb{H}$</td>
 <td>$\mathbb{H}\setminus\{0\}$</td>
@@ -227,10 +227,10 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 </tbody>
 </table></div>
 <p><strong>Theorem (the comparison of the three classes).</strong> For the two antisymmetric structures the three classes coincide away from the origin: a nonzero element is square zero exactly when it is a zero divisor, and the square-zero set is also the root set of $0$. For the four other structures the three classes do not coincide: the square-zero set is the origin alone, while the zero-divisor set is empty for the two general structures, the pure cone for the symmetric plain structure, and the punctured space for the symmetric quaternionic structure.</p>
-<p><em>Proof.</em> A nonzero square-zero element is a zero divisor, its own partner, and a root of $0$; the converse fails in the four definite structures, where the square-zero set is the origin alone while the zero-divisor set is one of the three other values computed in <em>The Zero Divisors and the Six Structures</em>, above this article in this category. For the antisymmetric structures the square vanishes identically, so the square-zero set and the root set of $0$ are both $\mathbb{H}$, and the zero-divisor set is $\mathbb{H}$ minus the origin, which is the same set with the origin removed.</p>
-<p>The comparison is the visible content of the classification. The three classes collapse onto one another exactly on the alternating structures, where the diagonal of the product is identically zero; they separate as soon as the product has a definite diagonal, and the gap between them measures the difference between the vanishing of a square and the vanishing of a product. This is the same gap the symmetric quaternionic structure exhibits most sharply, its square nonzero on every nonzero element while every nonzero element is a zero divisor: the vanishing of a <em>product</em> does not require the vanishing of a <em>square</em>.</p>
+<p><em>Proof.</em> A nonzero square-zero element is a zero divisor, its own partner, and a root of $0$; the converse fails in the four structures whose square-zero set is the origin alone, where that set is a point while the zero-divisor set is one of the three other values computed in <em>The Zero Divisors and the Six Structures</em>, above this article in this category. For the antisymmetric structures the square vanishes identically, so the square-zero set and the root set of $0$ are both $\mathbb{H}$, and the zero-divisor set is $\mathbb{H}$ minus the origin, which is the same set with the origin removed.</p>
+<p>The comparison is the visible content of the classification. The three classes collapse onto one another exactly on the alternating structures, where the diagonal of the product is identically zero; they separate as soon as the diagonal does not vanish identically, and the gap between them measures the difference between the vanishing of a square and the vanishing of a product. This is the same gap the symmetric quaternionic structure exhibits most sharply, its square nonzero on every nonzero element while every nonzero element is a zero divisor: the vanishing of a <em>product</em> does not require the vanishing of a <em>square</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The square-zero set of a structure is the set of elements whose square vanishes, and the nilpotents are its nonzero members. The general plain and general quaternionic structures have the origin alone as square-zero set, by the division property of the plain product and the definiteness of the norm; the two symmetric structures keep the same one-point set, their squares being the same as those of their general counterparts on the diagonal. The two cross products, being alternating, have the whole space as square-zero set, the origin included. So only two square-zero sets occur among the six, the origin and the whole space, and no structure has an intermediate set. The three classes of the square-zero elements, the zero divisors and the roots of $0$ coincide away from the origin exactly for the two antisymmetric structures; for the four other structures the square-zero set is the origin alone while the zero-divisor set is empty, the pure cone, or the punctured space.</p>
+<p>The square-zero set of a structure is the set of elements whose square vanishes, and the nilpotents are its nonzero members. The general plain structure has the origin alone as square-zero set, by the division property of the plain product; the symmetric plain structure keeps the same one-point set, the Jordan square being the plain square, whose only real zero is the origin; the antisymmetric plain structure, being alternating, has the whole space for square-zero set; the general quaternionic structure has the origin alone, by the definiteness of the norm; the symmetric quaternionic structure keeps the same one-point set, its square being the definite norm $N(\tilde x)e_0$; and the antisymmetric quaternionic structure has the whole space, being alternating. So only two square-zero sets occur among the six, the origin and the whole space, and no structure has an intermediate set. The three classes of the square-zero elements, the zero divisors and the roots of $0$ coincide away from the origin exactly for the two antisymmetric structures; for the four other structures the square-zero set is the origin alone while the zero-divisor set is empty, the pure cone, or the punctured space.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -246,7 +246,7 @@ and a <strong>square-zero element</strong>, or <strong>nilpotent</strong>, is a 
 </tr>
 <tr>
 <td>$\{0\}$</td>
-<td>the square-zero set of GPA, GQA, SPA and SQA</td>
+<td>the square-zero set of GPA, SPA, GQA and SQA</td>
 </tr>
 <tr>
 <td>$\mathbb{H}$</td>

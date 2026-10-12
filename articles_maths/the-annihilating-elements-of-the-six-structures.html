@@ -62,7 +62,7 @@ the <strong>right annihilating set</strong> is $r(\star)=\{\tilde x:\tilde y\sta
 <p>The left annihilating set is the common kernel of the left multiplication operators $L_{\tilde y}$, and $\tilde x\in\ell(\star)$ exactly when the operator $L_{\tilde x}$ is zero. It is a subspace, and for each of the six structures it is a two-sided ideal: it is carried into itself by multiplication on either side, trivially when it is $\{0\}$ and by the vanishing of the product when it is not. When $\star$ is commutative the two one-sided sets coincide.</p>
 <p>The <strong>radical of the product</strong> is the two-sided set read through the product; the radical of the form $\operatorname{Sc}(\tilde x\star\tilde y)$ contains it, being generally larger, and it is treated with the pairings in <em>The Two Pairings of the Quaternion Algebra</em>, below this article in this category. The two notions agree for the four structures whose form does not vanish identically, as the last section records.</p>
 <h2 id="the-criterion">The Criterion</h2>
-<p><strong>Proposition (the diagonal test).</strong> For a product $\star$ that is $\mathbb{R}$-linear in its first slot, an element lies in the left annihilating set if and only if it annihilates each of the four units,
+<p><strong>Proposition (the diagonal test).</strong> For a product $\star$ that is $\mathbb{R}$-linear in its second slot, an element lies in the left annihilating set if and only if it annihilates each of the four units,
 $$
 \tilde x\in\ell(\star)\iff \tilde x\star e_\mu=0\ \text{for}\ \mu=0,1,2,3 .
 $$</p>
@@ -102,28 +102,28 @@ the centre of the algebra; the centre of the Lie algebra on the vector subspace 
 <td>division</td>
 </tr>
 <tr>
-<td>$\mathrm{GQA}$</td>
-<td>$\tilde p^{\natural}\tilde q$</td>
-<td>$\{0\}$</td>
-<td>test $\tilde y=e_0$</td>
-</tr>
-<tr>
 <td>$\mathrm{SPA}$</td>
 <td>$\tilde p\bullet\tilde q$</td>
 <td>$\{0\}$</td>
 <td>test $\tilde y=e_0$, the unit of the Jordan product</td>
 </tr>
 <tr>
-<td>$\mathrm{SQA}$</td>
-<td>$N(\tilde p,\tilde q)e_0$</td>
-<td>$\{0\}$</td>
-<td>the diagonal test reads $x_\mu$</td>
-</tr>
-<tr>
 <td>$\mathrm{APA}$</td>
 <td>$\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$</td>
 <td>$\mathbb{R}_{\mathbb{H}}$</td>
 <td>the scalars have no vector part</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>$\tilde p^{\natural}\tilde q$</td>
+<td>$\{0\}$</td>
+<td>test $\tilde y=e_0$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>$N(\tilde p,\tilde q)e_0$</td>
+<td>$\{0\}$</td>
+<td>the diagonal test reads $x_\mu$</td>
 </tr>
 <tr>
 <td>$\mathrm{AQA}$</td>
@@ -133,9 +133,9 @@ the centre of the algebra; the centre of the Lie algebra on the vector subspace 
 </tr>
 </tbody>
 </table></div>
-<p><strong>Theorem (the six annihilating sets).</strong> Among the six structures the annihilating set is $\{0\}$ for $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{SPA}$, $\mathrm{SQA}$ and $\mathrm{AQA}$, and it is the scalar line $\mathbb{R}_{\mathbb{H}}$ for $\mathrm{APA}$ alone. In all six the left, the right and the two-sided sets coincide.</p>
+<p><strong>Theorem (the six annihilating sets).</strong> Among the six structures the annihilating set is $\{0\}$ for all but one, and it is the scalar line $\mathbb{R}_{\mathbb{H}}$ for the cross product $\mathrm{APA}$ alone. In all six the left, the right and the two-sided sets coincide.</p>
 <p><em>Proof.</em> The five rows with $\{0\}$ are the three theorems above; the row of $\mathrm{APA}$ is the same. The coincidence of the one-sided sets: the two symmetric products are commutative; the plain product is the algebra and its left and right sets were computed separately; the quaternionic product is the plain product with the first factor conjugated on the left and read through the same anti-involution on the right; and the quaternionic cross product was tested on both sides.</p>
-<p>Five of the six structures are faithful in the sense that no nonzero element kills the whole space, and the sixth fails: the cross product forgets the scalar slot. The failure is also the only place a nontrivial ideal appears, and it is one-dimensional. The count is worth stating plainly: the annihilating set separates the six into a block of five and a single exception, and the exception is the only structure whose product does not read its first argument in a slot that survives the diagonal test.</p>
+<p>Five of the six structures are faithful in the sense that no nonzero element kills the whole space, and the sixth fails: the cross product forgets the scalar slot. The failure is also the only place a nontrivial ideal appears, and it is one-dimensional. The count is worth stating plainly: the annihilating set separates the six into a block of five and a single exception, and the exception is the only structure whose product ignores the scalar part of its first argument.</p>
 <h2 id="the-annihilating-set-and-the-zero-divisors">The Annihilating Set and the Zero Divisors</h2>
 <p>The annihilating set is the thinnest of the element theories: an element that kills the product on the whole space certainly kills it on a partner, so the annihilating set lies in the zero-divisor set together with the origin,
 $$
@@ -148,7 +148,7 @@ $$
 $$
 The inclusion is strict for the two cross products: the scalar forms $\operatorname{Sc}(\tilde p\wedge\tilde q)$ and $\operatorname{Sc}(\tilde p\wedge^{\natural}\tilde q)$ vanish identically, of radical all of $\mathbb{H}$, while the annihilating sets are the scalar line and the origin. For the four other structures the two notions agree and are as small as possible: the plain form $\operatorname{Sc}(\tilde p\tilde q)$ has radical $\{0\}$, since $\tilde y=e_0$ gives $\operatorname{Sc}(\tilde x)=x_0$ and $\tilde y=e_k$ gives $\operatorname{Sc}(\tilde x e_k)=-x_k$, and the quaternion form $\operatorname{Sc}(\tilde p^{\natural}\tilde q)=N(\tilde p,\tilde q)$ is definite, of radical $\{0\}$, by <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The left, the right and the two-sided annihilating sets of the general plain and general quaternionic products are $\{0\}$, by the division property of the plain product and by the anti-involution of the quaternionic one. The same sets are $\{0\}$ for the two symmetrised structures, the Jordan product carrying the unit $e_0$ and the scalar-valued product reading all four coordinates. The only exception among the six is the cross product, whose annihilating set is the scalar line, the centre of the algebra; the quaternionic cross product returns $\{0\}$, because the conjugation in its first slot destroys the central direction. In all six the left and the right sets coincide, so the annihilating set is a two-sided ideal, $\{0\}$ in five cases and the centre in the sixth. The radical of the two general forms is $\{0\}$ as well, so for the four structures with a nonvanishing form the product and the form agree, while for the two cross products the zero form has radical all of $\mathbb{H}$ and the agreement fails.</p>
+<p>The left, the right and the two-sided annihilating sets of the general plain product are $\{0\}$, by the division property of the plain algebra; those of the symmetric plain product are $\{0\}$, because the Jordan product carries the unit $e_0$; those of the antisymmetric plain product are the scalar line, the centre of the algebra, because the cross product forgets the scalar slot; those of the general quaternionic product are $\{0\}$, by the anti-involution of its first slot; those of the symmetric quaternionic product are $\{0\}$, because the scalar-valued product reads all four coordinates; and those of the antisymmetric quaternionic product are $\{0\}$, because the conjugation in its first slot destroys the central direction. In all six the left and the right sets coincide, so the annihilating set is a two-sided ideal, $\{0\}$ in five cases and the centre in the sixth. The radical of the two general forms is $\{0\}$ as well, so for the four structures with a nonvanishing form the product and the form agree, while for the two cross products the zero form has radical all of $\mathbb{H}$ and the agreement fails.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -168,7 +168,7 @@ The inclusion is strict for the two cross products: the scalar forms $\operatorn
 </tr>
 <tr>
 <td>$\{0\}$</td>
-<td>the value for GPA, GQA, SPA, SQA and AQA</td>
+<td>the value for GPA, SPA, GQA, SQA and AQA</td>
 </tr>
 <tr>
 <td>$\mathbb{R}_{\mathbb{H}}$</td>
@@ -179,7 +179,7 @@ The inclusion is strict for the two cross products: the scalar forms $\operatorn
 <td>the four units, the diagonal test of the criterion</td>
 </tr>
 <tr>
-<td>GPA, GQA, SPA, SQA, APA, AQA</td>
+<td>GPA, SPA, APA, GQA, SQA, AQA</td>
 <td>the six structures of <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em></td>
 </tr>
 </tbody>

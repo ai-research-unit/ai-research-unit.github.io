@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="the-square-roots-of-a-central-value-in-the-six-structures"><strong>The Square Roots of a Central Value in the Six Structures</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A root of a central value in a structure is an element whose square in that structure is the value times $e_0$. The quaternion space carries six structures, and the root set is read here for all six and for every real value of the central element. The two general products exchange a sphere for the empty set, the four structures with a definite square reduce the roots of $0$ to the origin, and the two cross products alone admit the whole space as roots of $0$. The products are <em>The 6 Products of the Quaternion Real Space</em> and <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>, the six structures are <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, and the definitions are <em>Definitions for the Study of the 6 Algebraic Structures</em>, all above this article in this category.</p>
+<p>A root of a central value in a structure is an element whose square in that structure is the value times $e_0$. The quaternion space carries six structures, and the root set is read here for all six and for every real value of the central element. The two general products exchange a sphere for the empty set, the four structures whose square vanishes only at the origin reduce the roots of $0$ to the origin, and the two cross products alone admit the whole space as roots of $0$. The products are <em>The 6 Products of the Quaternion Real Space</em> and <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em>, the six structures are <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, and the definitions are <em>Definitions for the Study of the 6 Algebraic Structures</em>, all above this article in this category.</p>
 <h2 id="roots-of-a-central-value">Roots of a Central Value</h2>
 <p><strong>Definition.</strong> Let $\star$ be a product on $\mathbb{H}$ and let $\lambda\in\mathbb{R}$. A <strong>root of $\lambda$</strong> in $\star$ is an element $\tilde\xi$ with
 $$
@@ -81,6 +81,11 @@ The root set is read relative to the product, as the name <em>root of $-1$ in th
 <td>$B(\tilde x)=x_0^2-\lvert\mathbf x\rvert^2=\lambda$ and $2x_0\mathbf x=0$</td>
 </tr>
 <tr>
+<td>$\mathrm{APA}$</td>
+<td>$0$</td>
+<td>$0=\lambda$</td>
+</tr>
+<tr>
 <td>$\mathrm{GQA}$</td>
 <td>$N(\tilde x)e_0$</td>
 <td>$N(\tilde x)=\lambda$</td>
@@ -89,11 +94,6 @@ The root set is read relative to the product, as the name <em>root of $-1$ in th
 <td>$\mathrm{SQA}$</td>
 <td>$N(\tilde x)e_0$</td>
 <td>$N(\tilde x)=\lambda$</td>
-</tr>
-<tr>
-<td>$\mathrm{APA}$</td>
-<td>$0$</td>
-<td>$0=\lambda$</td>
 </tr>
 <tr>
 <td>$\mathrm{AQA}$</td>
@@ -147,13 +147,6 @@ the last being the sphere of radius $\sqrt\lambda$ in the four-dimensional space
 <td>$\{\pm e_0\}$</td>
 </tr>
 <tr>
-<td>$\mathrm{GQA}$</td>
-<td>$\tilde p^{\natural}\tilde q$</td>
-<td>$\varnothing$</td>
-<td>$\{0\}$</td>
-<td>$S^3$, the unit sphere</td>
-</tr>
-<tr>
 <td>$\mathrm{SPA}$</td>
 <td>$\tilde p\bullet\tilde q$</td>
 <td>$S^2$</td>
@@ -161,18 +154,25 @@ the last being the sphere of radius $\sqrt\lambda$ in the four-dimensional space
 <td>$\{\pm e_0\}$</td>
 </tr>
 <tr>
-<td>$\mathrm{SQA}$</td>
-<td>$N(\tilde p,\tilde q)e_0$</td>
-<td>$\varnothing$</td>
-<td>$\{0\}$</td>
-<td>$S^3$</td>
-</tr>
-<tr>
 <td>$\mathrm{APA}$</td>
 <td>$\tilde p\wedge\tilde q$</td>
 <td>$\varnothing$</td>
 <td>$\mathbb{H}$</td>
 <td>$\varnothing$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>$\tilde p^{\natural}\tilde q$</td>
+<td>$\varnothing$</td>
+<td>$\{0\}$</td>
+<td>$S^3$, the unit sphere</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>$N(\tilde p,\tilde q)e_0$</td>
+<td>$\varnothing$</td>
+<td>$\{0\}$</td>
+<td>$S^3$</td>
 </tr>
 <tr>
 <td>$\mathrm{AQA}$</td>
@@ -187,36 +187,54 @@ the last being the sphere of radius $\sqrt\lambda$ in the four-dimensional space
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>value</th>
-<th>plain family, GPA and SPA</th>
-<th>quaternionic family, GQA and SQA</th>
-<th>antisymmetric, APA and AQA</th>
+<th>structure</th>
+<th>$\lambda<0$</th>
+<th>$\lambda=0$</th>
+<th>$\lambda>0$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\lambda<0$</td>
-<td>the sphere of radius $\sqrt{-\lambda}$, dimension two</td>
-<td>$\varnothing$</td>
-<td>$\varnothing$</td>
-</tr>
-<tr>
-<td>$\lambda=0$</td>
+<td>$\mathrm{GPA}$</td>
+<td>the sphere of radius $\sqrt{-\lambda}$ in $\mathrm{Vect}(\mathbb{H})$, dimension two</td>
 <td>$\{0\}$</td>
-<td>$\{0\}$</td>
-<td>$\mathbb{H}$</td>
-</tr>
-<tr>
-<td>$\lambda>0$</td>
 <td>$\{\pm\sqrt\lambda\,e_0\}$</td>
-<td>the sphere of radius $\sqrt\lambda$, dimension three</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>the same sphere</td>
+<td>$\{0\}$</td>
+<td>$\{\pm\sqrt\lambda\,e_0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>$\varnothing$</td>
+<td>$\mathbb{H}$</td>
+<td>$\varnothing$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>$\varnothing$</td>
+<td>$\{0\}$</td>
+<td>the sphere of radius $\sqrt\lambda$ in $\mathbb{H}$, dimension three</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>$\varnothing$</td>
+<td>$\{0\}$</td>
+<td>the same sphere</td>
+</tr>
+<tr>
+<td>$\mathrm{AQA}$</td>
+<td>$\varnothing$</td>
+<td>$\mathbb{H}$</td>
 <td>$\varnothing$</td>
 </tr>
 </tbody>
 </table></div>
 <p><strong>Theorem (the six root sets).</strong> The symmetrised structures inherit the root sets of the general products from which they are made, the Jordan square being the plain square and the symmetrised quaternionic square being the norm times $e_0$. The plain family has a two-dimensional sphere of roots at the negative values and two points at the positive values; the quaternionic family has nothing at the negative values and a three-dimensional sphere at the positive values; the two antisymmetric structures have all of $\mathbb{H}$ at the value $0$ and nothing elsewhere.</p>
-<p><em>Proof.</em> The four rows of the first group are the two theorems of the plain and the quaternionic family, the symmetric structures having the same square as their general counterparts; the two rows of the second group are the theorem of the cross products. The dimensions are those of the spheres $S^2\subset\mathrm{Vect}(\mathbb{H})$ and $S^3\subset\mathbb{H}$.</p>
-<p><strong>Remark (the reduction of the roots of $0$).</strong> Four of the six structures reduce the roots of $0$ to the origin, and the failure of the reduction is confined to the two antisymmetric structures, whose square vanishes identically. The reduction holds for the plain family although the plain form is indefinite on the whole space, because the isotropic cone of the plain form meets the space only at the origin: $x_0^2-|\mathbf x|^2=0$ and $2x_0\mathbf x=0$ together force $\tilde x=0$. So the isotropic cone of the plain form is real only after complexification, and over $\mathbb{R}$ the roots of $0$ are the origin; this is the same definiteness that collapses the idempotents to the two-point set in <em>The Idempotents of the Six Structures</em>, above this article in this category.</p>
+<p><em>Proof.</em> The rows of $\mathrm{SPA}$ and $\mathrm{SQA}$ repeat those of $\mathrm{GPA}$ and $\mathrm{GQA}$, the symmetric structures having the same square as their general counterparts, and the rows of $\mathrm{APA}$ and $\mathrm{AQA}$ are the theorem of the cross products. The dimensions are those of the spheres $S^2\subset\mathrm{Vect}(\mathbb{H})$ and $S^3\subset\mathbb{H}$.</p>
+<p><strong>Remark (the reduction of the roots of $0$).</strong> Four of the six structures reduce the roots of $0$ to the origin, and the failure of the reduction is confined to the two antisymmetric structures, whose square vanishes identically. The reduction holds for the plain family although the plain form is indefinite on the whole space, because the isotropic cone of the plain form meets the space only at the origin: $x_0^2-|\mathbf x|^2=0$ and $2x_0\mathbf x=0$ together force $\tilde x=0$. So the isotropic cone of the plain form is real only after complexification, and over $\mathbb{R}$ the roots of $0$ are the origin; this is the same absence of an isotropic direction that collapses the idempotents to the two-point set in <em>The Idempotents of the Six Structures</em>, above this article in this category.</p>
 <h2 id="summary">Summary</h2>
 <p>The root of a central value is an element whose square is the value times $e_0$, and the six squares group the six structures into a plain family, a quaternionic family and the two antisymmetric structures. The plain family, the general plain and the symmetric plain structures, has the sphere of radius $\sqrt{-\lambda}$ of pure elements as roots of a negative value, the origin as roots of $0$, and the two points $\pm\sqrt\lambda\,e_0$ as roots of a positive value; for the three values this is the sphere $S^2$ of roots of $-1$, the origin, and the two units. The quaternionic family, the general quaternionic and the symmetric quaternionic structures, has nothing for a negative value, the origin for $0$, and the sphere of radius $\sqrt\lambda$ for a positive value; for the three values this is the empty set, the origin, and the unit sphere $S^3$. The two antisymmetric structures have all of $\mathbb{H}$ as roots of $0$ and nothing else. So the two general products exchange the two spheres, and the reduction of the roots of $0$ to the origin fails only in the two cross products.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
