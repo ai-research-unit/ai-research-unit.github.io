@@ -50,7 +50,7 @@ Neither product is commutative. For the plain product the failure is the failure
 
 ## The Square
 
-The square of the plain product is a general quaternion and the square of the quaternionic product is always a scalar, and this is the sharpest single difference between the two products on the diagonal.
+The square of the plain product is a general quaternion and the square of the quaternionic product is always a scalar, and this is the sharpest single difference between the two products at the two equal arguments.
 
 **Proposition (the two squares).** For every $\tilde p=p_0e_0+\mathbf p$,
 
@@ -62,7 +62,7 @@ with $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\m
 
 *Proof.* Expanding the plain product on a single element, $(\mathbf p)^2=-\lvert\mathbf p\rvert^2e_0$ and $\mathbf p\times\mathbf p=0$, so $\tilde p^2=p_0^2e_0+2p_0\mathbf p+\mathbf p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$. The quaternionic square is $\tilde p^{\natural}\tilde p$, which is the product of the conjugate with the element, equal to $\lvert\tilde p\rvert^2e_0$ by the multiplicativity of the norm; and the vector part $2p_0\mathbf p$ of the plain square vanishes exactly when $p_0=0$ or $\mathbf p=0$.
 
-The two squares are the two algebraic norms of the chapter read on the diagonal, and the fact that one is scalar and the other is not is the reason the plain product has no invertibility criterion in the norm while the quaternionic product does; the norms, their multiplicativity and their invertibility criteria are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
+The two squares are the two algebraic norms of the chapter read at the two equal arguments, and the fact that one is scalar and the other is not is the reason the plain product has no invertibility criterion in the norm while the quaternionic product does; the norms, their multiplicativity and their invertibility criteria are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
 
 ## The Values
 

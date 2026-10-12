@@ -15,7 +15,7 @@ $$
 the antisymmetric part of the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ for
 the exchange of its two arguments, and half the quaternionic bracket
 $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$. Its value has
-zero scalar part, so it is a **pure vector**; it is **alternating**, so its diagonal vanishes; and its
+zero scalar part, so it is a **pure vector**; it is **alternating**, so its algebraic norm vanishes; and its
 **Jacobi sum** does not vanish. The witness on which the corpus reads the failure is
 $(\tilde P,\tilde Q,\tilde R)=(e_0,e_1,e_2)$, where the cyclic sum is $-e_3$. The cause is exact and is
 not an accident of the witness: the failure is the **associator defect** of the parent quaternionic
@@ -73,7 +73,7 @@ $$
 
 The value has zero scalar part and lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$; the operation
 is $\mathbb{C}$-bilinear and alternating, $\tilde Q\wedge_{\natural}\tilde P=-\tilde P\wedge_{\natural}\tilde Q$,
-and its diagonal vanishes. It is half the quaternionic bracket,
+and its algebraic norm vanishes. It is half the quaternionic bracket,
 $\tilde P\wedge_{\natural}\tilde Q=\tfrac12[\tilde P,\tilde Q]_{\natural}$.
 
 *Proof.* The parent value is
@@ -81,7 +81,7 @@ $\tilde P^{\natural}\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0+P_0\mathbf Q-Q_0\
 (*The 12 Products of the Biquaternion Complex Space*). Exchanging the arguments reverses
 the two mixed terms and the cross product and leaves the scalar part fixed, which cancels in the
 difference; half the difference is the displayed value. The scalar part zero puts the value in
-$\mathrm{Vect}(\mathbb{B})$; alternation is the antisymmetry of the definition and its diagonal is the
+$\mathrm{Vect}(\mathbb{B})$; alternation is the antisymmetry of the definition and its algebraic norm is the
 cancellation at $\tilde P=\tilde Q$.
 
 **Remark (what the antisymmetrisation removes).** The scalar part of the parent product is exactly the
@@ -318,7 +318,7 @@ internal group off the associative one-sided action, not off this bracket).
 
 **Proved.** The explicit form
 $\tilde P\wedge_{\natural}\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$, its zero scalar
-part, its pure-vector value, its alternation and its vanishing diagonal; its identity with half the
+part, its pure-vector value, its alternation and its vanishing algebraic norm; its identity with half the
 quaternionic bracket; its image $\mathrm{Vect}(\mathbb{B})$; the absence of a unit on either side; the
 sixteen brackets of the basis; the failure of the Jacobi identity at the witness $(e_0,e_1,e_2)$ with
 cyclic sum $-e_3$; the closed form

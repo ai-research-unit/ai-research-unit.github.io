@@ -114,7 +114,7 @@ $$
 \mathrm{Sc}(\tilde Q\tilde Q)=Q_0^{2}-(\mathbf Q,\mathbf Q)=B(\tilde Q,\tilde Q) ,
 $$
 
-the diagonal value of the general plain bilinear form $B$ of *The Ordinary Product and the Material Sector*.
+the algebraic norm value of the general plain bilinear form $B$ of *The Ordinary Product and the Material Sector*.
 
 **Proof.** Distribute the product and use $\mathbf Q^{2}=-(\mathbf Q,\mathbf Q)$ for a vector part.
 

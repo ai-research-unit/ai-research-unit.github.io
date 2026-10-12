@@ -22,7 +22,7 @@ $$
 q : A \longrightarrow R^{\varsigma}, \qquad q(x) = h(x,x) .
 $$
 
-It is valued in the fixed ring because $q(x) = \varsigma(q(x))$ is the Hermitian property read on the diagonal. The association $h \mapsto q$ is $R^{\varsigma}$-linear and it is the only part of the form that a single variable can see.
+It is valued in the fixed ring because $q(x) = \varsigma(q(x))$ is the Hermitian property read at the two equal arguments. The association $h \mapsto q$ is $R^{\varsigma}$-linear and it is the only part of the form that a single variable can see.
 
 **Definition.** The **trace form** of $h$ is
 

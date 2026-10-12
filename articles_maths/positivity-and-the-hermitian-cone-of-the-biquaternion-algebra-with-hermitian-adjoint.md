@@ -235,7 +235,7 @@ Every element has a **polar decomposition** $\tilde{Q}=U\lvert\tilde{Q}\rvert$ w
 ## Further Reading
 
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra and the four conjugations
-- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the general quaternionic bilinear form
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general quaternionic bilinear form
 - *Association and the Transpose on the General Plain Algebra* (`articles_maths/association-and-the-transpose-on-the-general-plain-algebra.md`), for the scalar form
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four involutions, and *Introduction to the Remarkable Subspaces* for their fixed spaces.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for $\mathbb{M}_+$, its norm and its isotropic cone, and *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for its Jordan structure.

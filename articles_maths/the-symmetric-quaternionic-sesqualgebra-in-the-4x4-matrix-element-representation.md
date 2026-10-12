@@ -10,7 +10,7 @@ $$
 
 This article is the second of the two representation articles of the block, and its companion *The Symmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* reads the same symmetrisation on the realization. The article computes the trace, the determinant and the rank of the regular matrix form, and the matrix form of the Krein form $K$, whose Gram matrix and indefinite cone live in the $2\times2$ companion.
 
-The model is *The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*; the form $K$ is *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*; the diagonal and its centrality are *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; and the product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*.
+The model is *The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*; the form $K$ is *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*; the diagonal and its centrality are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; and the product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*.
 
 **Conventions.** $M^{\mathsf T}$ is the transpose and $M^{\dagger}$ the conjugate transpose; $N(\tilde Q)=\tilde Q^{\natural}\tilde Q=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ is the norm and $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^{2}$; the coefficient basis is $e_0,e_1,e_2,e_3$.
 
@@ -40,7 +40,7 @@ and the rank of $\mathsf{M}_4(\tilde P\star\tilde Q)$ is four exactly when $N(\t
 
 *Proof.* The two displays of the trace theorems, here and in the companion article.
 
-**Remark (the diagonal in the regular model).** The diagonal is read in the regular model by applying $\mathsf{M}_4$ to the diagonal form $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ of *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*: $\mathsf{M}_4(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)I_4-\mathsf{M}_4(Q_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{Q})$, the scalar matrix of the form value minus the matrix of the mixed term. On the vector witnesses $e_1$ and $e_1+ie_2$ the mixed term vanishes and the value is the scalar matrix $-I_4$ or $-2I_4$; the deformation away from the scalar matrices appears at $e_0+e_1$, as in the companion article.
+**Remark (the diagonal in the regular model).** The diagonal is read in the regular model by applying $\mathsf{M}_4$ to the diagonal form $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*: $\mathsf{M}_4(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)I_4-\mathsf{M}_4(Q_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{Q})$, the scalar matrix of the form value minus the matrix of the mixed term. On the vector witnesses $e_1$ and $e_1+ie_2$ the mixed term vanishes and the value is the scalar matrix $-I_4$ or $-2I_4$; the deformation away from the scalar matrices appears at $e_0+e_1$, as in the companion article.
 
 ## The Matrix Form of $K$ and Its Cone
 
@@ -104,7 +104,7 @@ $$
 
 since $e_1\star e_1=-e_0$; and at the pair $e_1+ie_2,\,e_1+ie_2$ the symmetrised value is the scalar matrix $-2I_4=K(e_1+ie_2,e_1+ie_2)I_4$, the same scalar $-2$ as in the realization, the two models differing only in the size of the matrix.
 
-**The two models.** At the vector witnesses, where the mixed term $Q_0\overline{\mathbf Q}+\overline{Q_0}\mathbf Q$ vanishes, the symmetrised value is the scalar matrix of the Krein form in both models, with the adjugate in the first slot of the realization and the transpose in the first slot of the regular model; away from those witnesses the value is the scalar matrix of the form minus the matrix of the mixed term, the deformation of *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*. The entrywise value $-I_4$ at the vector unit $e_1$ is the same statement in the regular model as the value $-I$ in the realization.
+**The two models.** At the vector witnesses, where the mixed term $Q_0\overline{\mathbf Q}+\overline{Q_0}\mathbf Q$ vanishes, the symmetrised value is the scalar matrix of the Krein form in both models, with the adjugate in the first slot of the realization and the transpose in the first slot of the regular model; away from those witnesses the value is the scalar matrix of the form minus the matrix of the mixed term, the deformation of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*. The entrywise value $-I_4$ at the vector unit $e_1$ is the same statement in the regular model as the value $-I$ in the realization.
 
 ## Summary
 
@@ -124,7 +124,7 @@ In the four-by-four regular model the block is the symmetrisation of the twisted
 - *The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.md`), for the regular model.
 - *The Symmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-symmetric-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the reading on the realization, the diagonal and the Gram matrix.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product written in the models.
-- *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal, its centrality and the witnesses.
+- *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal, its centrality and the witnesses.
 - *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md`), for the form $K$, its Gram matrix and its cone.
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the Gram matrix of the form.
 - *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md`), for the operators of the block and their traces.

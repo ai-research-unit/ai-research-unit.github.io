@@ -19,7 +19,7 @@ quaternion subspace, and there every value is attained. The article states the i
 existence theorem with an explicit root, and the fibre over a general value.
 
 The product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*; the diagonal is
-*The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the roots of the
+*The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the roots of the
 three central values are *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic
 Sesqualgebra*; the zero divisors are *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*; the real
 quaternion subspace and its structure are *Introduction to the Remarkable Subspaces*; and the same equation
@@ -58,7 +58,7 @@ Quaternionic Sesqualgebra* and of the §*The Roots of a Complex Scalar* below.
 real quaternion: its scalar part is the real number $K(\tilde\Xi,\tilde\Xi)$ and its vector part is the real
 vector $-2\,\mathrm{Re}(\Xi_0\overline{\mathbf\Xi})$.
 
-*Proof.* The diagonal formula of *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
+*Proof.* The diagonal formula of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic
 Sesqualgebra* gives $\tilde\Xi\star\tilde\Xi=K(\tilde\Xi,\tilde\Xi)e_0-\Xi_0\overline{\mathbf\Xi}-\overline{\Xi_0}\mathbf\Xi$;
 the scalar part is $K=|\Xi_0|^2-\lVert\mathbf\Xi\rVert^2$, real, and the vector part is
 $-\Xi_0\overline{\mathbf\Xi}-\overline{\Xi_0}\mathbf\Xi=-2\mathrm{Re}(\Xi_0\overline{\mathbf\Xi})$, real in each
@@ -210,6 +210,6 @@ manifold of dimension four. A value with a non-real coefficient has no root.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*Powers, the Square and the Roots*, for the definitions of the square and of a root relative to a general product.
 - *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-quaternionic-sesqualgebra.md`), for the three central values and the families $\mathcal R_\lambda$.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the same equation in the plain product, where the image is the whole space.
-- *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal formula that gives the image.
+- *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal formula that gives the image.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the real quaternion subspace among the remarkable subspaces.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product and its table.

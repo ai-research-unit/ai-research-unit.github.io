@@ -46,7 +46,7 @@ $$
 - $B$ is **homogeneous of degree two**, $B(\lambda\tilde Q)=\lambda^{2}B(\tilde Q)$ for $\lambda\in\mathbb{C}$, and its polarisation is the form of the same letter, $B(\tilde P+\tilde Q)-B(\tilde P)-B(\tilde Q)=2B(\tilde P,\tilde Q)$.
 - $B$ is **not positive definite** and **not definite**: it takes complex values and it vanishes on nonzero elements.
 - Its Gram matrix on the basis $e_0,e_1,e_2,e_3$ is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and the realification of $B$ on $\mathbb{B}\cong\mathbb{R}^{8}$ is non-degenerate of signature $(4,4)$, a split signature.
-- Its **vanishing set** is the complex cone $\{B(\tilde Q)=0\}$, the complex quadric of *The Four Pairings of the Biquaternion Algebra*; it is the vanishing set of the algebraic norm of the plain product and not the zero-divisor cone of the algebra.
+- Its **vanishing set** is the complex cone $\{B(\tilde Q)=0\}$, the complex quadric of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; it is the vanishing set of the algebraic norm of the plain product and not the zero-divisor cone of the algebra.
 
 ## The Algebraic Norm Is Not Multiplicative
 
@@ -112,11 +112,10 @@ The plain product is associative and unital, with the two-sided unit $e_0$ and a
 
 ## Further Reading
 
-- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the diagonal of a form, the four algebraic norms and their separation.
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general plain bilinear form $B$ and the table of the four forms.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments, the four algebraic norms and their separation.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general plain bilinear form $B$, the table of the four forms and the complex quadric that is the vanishing set of $B$.
 - *Introduction to the General Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-biquaternions.md`), for the product, its associativity, its unit and its element theory.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Unit and the Inverse*, for the relative definitions of the unit, the inverse and the group of units.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the unit table of the four products and the fact that they do not share their units.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the zero divisors, which the algebraic norm of the plain product does not detect.
-- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the complex quadric that is the vanishing set of $B$.
 - *Remarkable Subspaces and the Four Algebraic Norms* (`articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.md`), for the restriction of $B$ to the remarkable subspaces with its signature.

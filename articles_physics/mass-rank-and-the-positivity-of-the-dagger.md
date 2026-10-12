@@ -48,7 +48,7 @@ is the **Euclidean square of the coefficient vector**, strictly positive off zer
 the form $\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q)^{\dagger}$ in the matrix model, it is **positive semidefinite**.
 Its positivity is therefore a theorem about the algebra, not a hypothesis about a Lagrangian.
 
-The form whose diagonal this is has a name in the general theory: $\mathrm{Sc}(\tilde R^{*}\tilde Q)$ is
+The form whose algebraic norm this is has a name in the general theory: $\mathrm{Sc}(\tilde R^{*}\tilde Q)$ is
 the **canonical Hermitian form of the regular module**, the form the algebra carries on itself once the
 involution is read on the regular bimodule, where it produces three structures at once — the twist that
 turns the left module into the right one, the symmetry of the bimodule, and the general plain sesquilinear form. Its
@@ -68,7 +68,7 @@ a complex scalar times $e_0$. It is **indefinite**: on the material coordinate $
 the light cone and whose level set $N=-m^{2}c^{2}$ is the mass shell. A scalar multiple of $e_0$ carries
 no rank of its own; its information is the **value** $N$.
 
-| Square | Definition | Type | Diagonal value | What it carries |
+| Square | Definition | Type | Algebraic norm | What it carries |
 |---|---|---|---|---|
 | sesquilinear | $\tilde Q\tilde Q^{*}$ | Hermitian, positive semidefinite | $\sum_\mu\lvert Q_\mu\rvert^{2}$, positive | rank and positivity |
 | natural | $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$ | complex scalar times $e_0$ | $\sum_\mu Q_\mu^{2}$, indefinite | value; interval and mass shell |
@@ -334,8 +334,8 @@ and *Causality and the Light Cone as an Information Barrier in Biquaternionic Fo
   adjoints, the observables and the generators of this structure.
 - Mathematics article *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*
   (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$.
-- Mathematics article *The Four Pairings of the Biquaternion Algebra*
-  (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four scalar forms.
+- Mathematics article *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*
+  (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four scalar forms.
 - Mathematics article *Indefinite Inner Product Spaces*
   (`articles_maths/indefinite-inner-product-spaces.md`), *Krein Spaces* (`articles_maths/krein-spaces.md`)
   and *Definitizable Operators and the Krein–Naĭmark Theorem*

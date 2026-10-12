@@ -17,11 +17,11 @@ element of the block has a vanishing cube without having a vanishing square. So 
 index two only, and the nilpotent of the block is the **square-zero element**.
 
 The product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*; the diagonal
-$\tilde Q\star\tilde Q$ is *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
+$\tilde Q\star\tilde Q$ is *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic
 Sesqualgebra*; the zero divisors are *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*; the roots
 of the central value $0$ are read in *Square Roots of Minus One, Zero and Plus One in the Symmetric
 Quaternionic Sesqualgebra*; the nilpotents of the plain product are *Nilpotents of the General Plain
-Algebra*; and the square-zero sets of the four general products are *The Zero Divisors and the Twelve Structures*.
+Algebra*; and the square-zero sets of the four general products are *Zero Divisors*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
@@ -253,7 +253,7 @@ conjugations permute the cone, the star conjugating the coefficient and fixing t
 ## Further Reading
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Nilpotent* and §*Powers, the Square and the Roots*, for the definition, the index and the left-nested power of a non-associative product.
-- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the square-zero set of the product whose symmetric part is the block.
+- *Zero Divisors* (`articles_maths/zero-divisors.md`), for the square-zero set of the product whose symmetric part is the block.
 - *Nilpotents of the General Plain Algebra* (`articles_maths/nilpotents-of-the-general-plain-algebra.md`), for the pure nilpotent cone of the plain product.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion and the two families that the nilpotents sit inside.
 - *Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the class disjoint from the nilpotents.

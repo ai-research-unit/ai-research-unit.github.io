@@ -1,4 +1,4 @@
-# __The Idempotents of the Twelve Structures__
+# __Idempotents__
 
 ## Introduction
 

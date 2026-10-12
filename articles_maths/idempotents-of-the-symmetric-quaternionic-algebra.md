@@ -83,7 +83,7 @@ The idempotents of the symmetric quaternionic product are exactly $0$ and $e_0$:
 | symbol | meaning |
 |---|---|
 | $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
-| $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the diagonal of the form |
+| $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the form at the two equal arguments |
 | $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ | the idempotent equation of the block |
 | $0$, $e_0$ | the two idempotents of the block |
 | $E(\tilde Y)=Y_0e_0$ | the projection onto the centre, the operator of $e_0$ |

@@ -56,7 +56,7 @@ The plain family is indefinite, with the scalar line positive and the vector sub
 
 An element is **isotropic** for a form when the form vanishes at that element with itself. For the plain form the scalar line and the vector subspace are each anisotropic, but the sum is not: $e_0+e_1$ gives $B(e_0+e_1,e_0+e_1)=1-1=0$, so the plain form has a null cone, of real dimension three, cut out by the single real equation $p_0^2=p_1^2+p_2^2+p_3^2$. For the quaternion form no nonzero element is isotropic, its positivity being total, $N(\tilde p,\tilde p)=\sum_\mu p_\mu^2$; the Jordan trace form is the plain form, so it has the same null cone, of dimension three; and for the Killing form the only isotropic elements are those of its radical, the scalar line. For $\varphi$ the isotropic elements are those with $x_0=0$, the vector subspace, which is at the same time its radical; a form of rank one carries no definite or indefinite sign pattern.
 
-The **radical** is the anisotropic case's companion: $0$ for $B$, for $N$ and for $\tau$; the scalar line for $K$; and the vector subspace for $\varphi$. The radicals of the two forms of the two general products are computed in *The Two Pairings of the Quaternion Algebra*, below this article in this category.
+The **radical** is the anisotropic case's companion: $0$ for $B$, for $N$ and for $\tau$; the scalar line for $K$; and the vector subspace for $\varphi$. The radicals of the two forms of the two general products are computed in *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, above this article in this category.
 
 ## Why Two Subspaces Suffice
 
@@ -84,4 +84,3 @@ The six products carry five named forms, of which four are distinct: the plain f
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra* (`articles_maths/the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-quaternions.md`), above this article in this category.
 - *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternions.md`), above this article in this category.
 - *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), above this article in this category.
-- *The Two Pairings of the Quaternion Algebra* (`articles_maths/the-two-pairings-of-the-quaternion-algebra.md`), below this article in this category.

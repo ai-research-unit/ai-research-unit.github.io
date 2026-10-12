@@ -2,21 +2,21 @@
 
 ## Introduction
 
-The two forms of *The 2 Forms over the Quaternion $\mathbb{R}$ Space* are the scalar parts of the two general products, and their **diagonals** are the **two algebraic norms** of the chapter:
+The two forms of *The 2 Forms over the Quaternion $\mathbb{R}$ Space* are the scalar parts of the two general products, and their **algebraic norms** are the **two algebraic norms** of the chapter:
 
 $$
 N_P(\tilde p)=\tilde p^2 , \qquad N_Q(\tilde p)=\tilde p^{\natural}\tilde p=|\tilde p|^2e_0 .
 $$
 
-The **plain algebraic norm** $N_P$ is the square of the plain product, $N_P(\tilde p)=B(\tilde p)e_0+2p_0\mathbf p$ with $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$; the **quaternion algebraic norm** $N_Q$ is the diagonal of the quaternionic product, $N_Q(\tilde p)=N(\tilde p)e_0$ with $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$. The first is a general element of $\mathbb{H}$ and is **indefinite**: it takes the value $e_0$ at $e_0$ and $-e_0$ at $e_1$, so its scalar coefficient is of both signs. The second is the central positive element $|\tilde p|^2e_0$, **positive definite**. The two norms are read off the two forms, the first from the plain form and the second from the quaternion form.
+The **plain algebraic norm** $N_P$ is the square of the plain product, $N_P(\tilde p)=B(\tilde p)e_0+2p_0\mathbf p$ with $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$; the **quaternion algebraic norm** $N_Q$ is the algebraic norm of the quaternionic product, $N_Q(\tilde p)=N(\tilde p)e_0$ with $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$. The first is a general element of $\mathbb{H}$ and is **indefinite**: it takes the value $e_0$ at $e_0$ and $-e_0$ at $e_1$, so its scalar coefficient is of both signs. The second is the central positive element $|\tilde p|^2e_0$, **positive definite**. The two norms are read off the two forms, the first from the plain form and the second from the quaternion form.
 
 This article gives the two norms, the **multiplicativity** of the second and the failure of the first, the **norm of a product against the product of the norms**, the **level sets** read algebraically, and the **invertibility criteria** the two give. It assumes the two forms from *The 2 Forms over the Quaternion $\mathbb{R}$ Space* and the two squares from *Comparison Between the Two General Products*, both preceding this one; the norms read on the two remarkable subspaces are *Remarkable Subspaces and the Two Algebraic Norms*, below this article in this category; and the theory of the norm and the invertibility of the plain product is owned by *Norm and Invertibility in the General Plain Algebra*, in the GPA block below.
 
-**Conventions.** Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, $(\mathbf p,\mathbf q)$ is the dot product of the vector parts, $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$ are the two forms read on the diagonal, and $\tilde p^{\natural}=p_0e_0-\mathbf p$. The two algebraic norms are $N_P(\tilde p)=\tilde p^2$ and $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=|\tilde p|^2e_0$; the number $|\tilde p|^2\geq0$ is written $N(\tilde p)$ when the coefficient is meant and $N_Q(\tilde p)$ when the central element is meant.
+**Conventions.** Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, $(\mathbf p,\mathbf q)$ is the dot product of the vector parts, $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$ are the two forms read at the two equal arguments, and $\tilde p^{\natural}=p_0e_0-\mathbf p$. The two algebraic norms are $N_P(\tilde p)=\tilde p^2$ and $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=|\tilde p|^2e_0$; the number $|\tilde p|^2\geq0$ is written $N(\tilde p)$ when the coefficient is meant and $N_Q(\tilde p)$ when the central element is meant.
 
 ## The Two Norms
 
-**Definition.** The two algebraic norms are the diagonals of the two products,
+**Definition.** The two algebraic norms are the two products read at their two equal arguments,
 
 $$
 N_P(\tilde p)=\tilde p\tilde p=\tilde p^2 , \qquad N_Q(\tilde p)=\tilde p^{\natural}\tilde p=|\tilde p|^2e_0 ,
@@ -46,7 +46,7 @@ $$
 
 *Proof.* The quaternion norm is the square of the quaternion conjugation applied to the element, $N_Q(\tilde p)=\tilde p^{\natural}\tilde p$, and the conjugation is an anti-automorphism, so $N_Q(\tilde p\tilde q)=(\tilde p\tilde q)^{\natural}\tilde p\tilde q=\tilde q^{\natural}\tilde p^{\natural}\tilde p\tilde q=\tilde q^{\natural}|\tilde p|^2\tilde q=|\tilde p|^2|\tilde q|^2e_0$, the scalar $|\tilde p|^2$ commuting with every element. For the plain norm, the value of $\tilde p\tilde q\tilde p\tilde q$ is the square of the product and the two factors' squares do not determine it: at $\tilde p=e_1,\tilde q=e_2$ the product is $e_3$, of square $-e_0$, while the product of the squares is $(-e_0)(-e_0)=e_0$.
 
-So the quaternion norm is **multiplicative**: the norm of a product is the product of the norms, and the quaternion norm is the reduced norm of the algebra, the square root of the determinant of the regular representation. The plain norm is not multiplicative, and this is the reason it is called a norm rather than the norm of the algebra: the plain product fails associativity in no way, but its *diagonal* is not a multiplicative function. The multiplicativity of the quaternion norm is the algebra's composition law for the four-square identity.
+So the quaternion norm is **multiplicative**: the norm of a product is the product of the norms, and the quaternion norm is the reduced norm of the algebra, the square root of the determinant of the regular representation. The plain norm is not multiplicative, and this is the reason it is called a norm rather than the norm of the algebra: the plain product fails associativity in no way, but its *algebraic norm* is not a multiplicative function. The multiplicativity of the quaternion norm is the algebra's composition law for the four-square identity.
 
 ## The Norm of a Product Against the Product of the Norms
 
@@ -82,11 +82,11 @@ So the level sets of the two norms are of different shapes: the quaternion norm 
 
 *Proof.* The identity $\tilde p^{\natural}\tilde p=|\tilde p|^2e_0$ shows that a nonzero $\tilde p$ has the inverse $\tilde p^{\natural}/|\tilde p|^2$, and a zero divisor would give $|\tilde p|^2|\tilde q|^2=0$ with both factors nonzero, impossible; so $\tilde p$ is invertible exactly when $|\tilde p|^2\neq0$, that is exactly when $\tilde p\neq0$, and the criterion is the quaternion norm's. For the plain norm, a value of $N_P$ is an element of $\mathbb{H}$ and $N_P$ is not multiplicative, so the nonzero-ness of $N_P(\tilde p)$ is not decided by any law of the norm, unlike the quaternion norm; the criterion is therefore the quaternion norm's alone.
 
-So the **quaternion norm is the norm of the algebra**: it is real-valued, definite and multiplicative, and its vanishing gives the invertibility criterion and the division property; the plain norm is the diagonal of the plain product and is a norm only in the weak sense of the corpus's vocabulary.
+So the **quaternion norm is the norm of the algebra**: it is real-valued, definite and multiplicative, and its vanishing gives the invertibility criterion and the division property; the plain norm is the algebraic norm of the plain product and is a norm only in the weak sense of the corpus's vocabulary.
 
 ## Summary
 
-The quaternion space carries two algebraic norms, the diagonal of the plain product $N_P(\tilde p)=\tilde p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$ and the diagonal of the quaternionic product $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=(p_0^2+\lvert\mathbf p\rvert^2)e_0$, read off the plain form and the quaternion form. The first is indefinite, taking $e_0$ and $-e_0$ at $e_0$ and $e_1$; the second is positive definite, zero only at the origin. The second is multiplicative, $N_Q(\tilde p\tilde q)=N_Q(\tilde p)N_Q(\tilde q)$, and the first is not, $N_P(e_1e_2)=-e_0$ against $N_P(e_1)N_P(e_2)=e_0$; the quaternion norm of a product equals the product of the quaternion norms and does not depend on the order, while the plain norm of a product is not the product of the plain norms.
+The quaternion space carries two algebraic norms, the algebraic norm of the plain product $N_P(\tilde p)=\tilde p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$ and the algebraic norm of the quaternionic product $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=(p_0^2+\lvert\mathbf p\rvert^2)e_0$, read off the plain form and the quaternion form. The first is indefinite, taking $e_0$ and $-e_0$ at $e_0$ and $e_1$; the second is positive definite, zero only at the origin. The second is multiplicative, $N_Q(\tilde p\tilde q)=N_Q(\tilde p)N_Q(\tilde q)$, and the first is not, $N_P(e_1e_2)=-e_0$ against $N_P(e_1)N_P(e_2)=e_0$; the quaternion norm of a product equals the product of the quaternion norms and does not depend on the order, while the plain norm of a product is not the product of the plain norms.
 
 The level sets of the quaternion norm at a central value are the three-spheres, cut by the origin and empty for negative values; those of the plain norm are two points on the real axis for a positive value and a two-sphere of the vector subspace for a negative one. The invertibility criterion is the quaternion norm's: $\tilde p$ is invertible exactly when $N_Q(\tilde p)\neq0$, with inverse $\tilde p^{\natural}/|\tilde p|^2$; the plain norm gives no criterion, being neither real-valued nor multiplicative.
 

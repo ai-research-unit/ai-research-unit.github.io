@@ -135,7 +135,7 @@ product it is not.** Here the antisymmetric part is one **piece** of the vector 
 $\mathbf{P}\times\overline{\mathbf{Q}}$, and the symmetric part keeps the rest — the scalar part and the
 two mixed vector terms. The naive move, to call the scalar part of $\tilde P^{\natural}\tilde Q^{*}$ the
 symmetric part and its vector part the antisymmetric part, is therefore wrong, and it is wrong by exactly
-the two mixed terms. That error is the reason the symmetric half has a **non-central diagonal**, the
+the two mixed terms. That error is the reason the symmetric half has a **non-central algebraic norm**, the
 subject of *Values in No Subspace: Why the Symmetric Gauge Product Is Not a State*.
 
 ### The Twelve, and the Split's Place
@@ -184,7 +184,7 @@ The two rows of sesqualgebra products are read against each other, and the contr
 | plain sesquilinear $\mathrm{GPS}$ | $\mathrm{SPS}=\mathrm{Sc}(\tilde P\tilde Q^{*})=H(\tilde P,\tilde Q)$ | $\mathrm{APS}=\mathrm{Vect}(\tilde P\tilde Q^{*})$ | central, in $\mathbb{C}_{\mathbb{B}}$ |
 | quaternionic sesquilinear $\mathrm{GQS}$ | $\mathrm{SQS}=\tilde P\bullet\tilde Q$ | $\mathrm{AQS}=\mathbf{P}\times\overline{\mathbf{Q}}$ | scalar part $K$, vector part the mixed term, in no subspace of the remarkable subspaces |
 
-The plain symmetric part is **central-valued** and its diagonal is the positive Hermitian form
+The plain symmetric part is **central-valued** and its algebraic norm is the positive Hermitian form
 $H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf{Q}\rvert^{2}$; the quaternionic symmetric part is
 **not central-valued**, its scalar part is the **indefinite** form $K$, and its value lies in no one of the
 remarkable subspaces. This is the first appearance of the tension the band carries: the two symmetric
@@ -269,7 +269,7 @@ identity and its failure are the proposition above.
 ### The Krein Form as the Scalar Part
 
 The scalar part of the value is the Krein form, and the physics of the row is the indefiniteness of that
-form. On the diagonal,
+form. On the algebraic norm,
 
 $$
 K(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}-\sum_{k=1}^{3}\lvert Q_k\rvert^{2},
@@ -348,11 +348,10 @@ fourth product are respectively coincident and opposite.
 
 At the first pair the two orders coincide, the antisymmetric half vanishes, and the symmetric half is the
 order alone. At the second the two orders are opposite, the symmetric half vanishes, and the value of the
-fourth product is the antisymmetric half alone. The same two pairs are read in *The Non-Central Diagonal
-and the Two Halves of the Symmetric Quaternionic Sesqualgebra*, and they show that neither half is a
+fourth product is the antisymmetric half alone. The same two pairs are read in *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*, and they show that neither half is a
 function of the other.
 
-A third value stays in the reader's eye for the band that follows. On the element $e_0+e_1$ the diagonal
+A third value stays in the reader's eye for the band that follows. On the element $e_0+e_1$ the algebraic norm
 of the symmetric half is
 
 $$
@@ -360,7 +359,7 @@ $$
 $$
 
 because $K(e_0+e_1,e_0+e_1)=0$ and the mixed term is $-2e_1$. The value is a vector, it is not a complex
-multiple of $e_0$, and it is therefore **not central**: the diagonal of the symmetric gauge product leaves
+multiple of $e_0$, and it is therefore **not central**: the algebraic norm of the symmetric gauge product leaves
 the centre, and that fact is the whole of the second article of the band.
 
 ## Named Readings of the Symmetric Half
@@ -399,9 +398,9 @@ and the half-difference is $\mathbf{P}\times\overline{\mathbf{Q}}$; the two part
 product. The symmetric half is conjugate-commutative, sesquilinear over $(\mathbb{C},\bar{\cdot})$ and
 neither commutative nor associative; $e_0\bullet\tilde Q=\tilde Q^{*}$ and
 $\tilde Q\bullet e_0=\tilde Q^{\natural}$, so there is no unit on either side; it fails the Jordan identity
-at $x=y=e_1$, with the two sides $-e_0$ and $e_0$; its diagonal at $e_0+e_1$ is $-2e_1$, not central; its
+at $x=y=e_1$, with the two sides $-e_0$ and $e_0$; its algebraic norm at $e_0+e_1$ is $-2e_1$, not central; its
 value lies in no one of the remarkable subspaces for a general pair and the real span of its values is the whole algebra. The form is reproduced from *Introduction to the Symmetric Quaternionic
-Sesqualgebra of Biquaternions*, *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
+Sesqualgebra of Biquaternions*, *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic
 Sesqualgebra*, *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* and *The 12 Products of the Biquaternion Complex Space*.
 
 **Interpretation.** That the symmetric half is the invariant indefinite pairing of the gauge structure, that its
@@ -433,14 +432,14 @@ of scalar part the Krein form $K$ and vector part the mixed term; the two projec
 neither annihilates the other. The operation is **conjugate-commutative** and sesquilinear over
 $(\mathbb{C},\bar{\cdot})$, it is neither commutative nor associative, it has **no unit** — the two
 one-sided actions of $e_0$ are the two conjugations — and it **fails the Jordan identity** at
-$x=y=e_1$, where the two sides are $-e_0$ and $e_0$. Its diagonal at $e_0+e_1$ is $-2e_1$, off the centre,
+$x=y=e_1$, where the two sides are $-e_0$ and $e_0$. Its algebraic norm at $e_0+e_1$ is $-2e_1$, off the centre,
 and its values lie in no one of the remarkable subspaces for a general pair. The **metric word is earned** as the indefiniteness of
 the scalar part: $K$ has the signature $(1,3)$ over the complex coefficients, positive on the centre and
 negative on the vector subspace, with fundamental symmetry ${}^{\natural}$ and isometry group $U(1,3)$. It
 is **not** earned as a norm: the pairing has no positivity, no distance and no length, and the metric is
 not the state-space inner product. The corpus reads the operation as the **invariant indefinite pairing
 of the gauge structure**, on the transformation side of a frame whose state side is the plain sesquilinear
-row; the contrast with the plain symmetric part, which is central-valued and positive on its diagonal, is
+row; the contrast with the plain symmetric part, which is central-valued and positive on its algebraic norm, is
 the reason the two symmetric sesquilinear products do not divide the state side between them.
 
 ## Summary of Notation
@@ -454,7 +453,7 @@ the reason the two symmetric sesquilinear products do not divide the state side 
 | $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ | the Krein form; $\varepsilon=(1,-1,-1,-1)$ |
 | $e_0\bullet\tilde Q=\tilde Q^{*}$, $\tilde Q\bullet e_0=\tilde Q^{\natural}$ | the two one-sided actions; no unit |
 | $x=y=e_1$; the sides $-e_0$, $e_0$ | the witness of the Jordan failure |
-| $(e_0+e_1)\bullet(e_0+e_1)=-2e_1$ | the non-central diagonal |
+| $(e_0+e_1)\bullet(e_0+e_1)=-2e_1$ | the non-central algebraic norm |
 | $(-ie_3,-ie_0)$; $(e_2,e_1)$ | the coincident and the opposite orders |
 | $H$ and $K$ | the definite probability form and the indefinite gauge pairing |
 
@@ -463,7 +462,7 @@ the reason the two symmetric sesquilinear products do not divide the state side 
 - Mathematics article *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, its class and its scalar–vector form.
 - Mathematics article *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.md`), for the adapted exchange, the two parts and the reconstruction.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the names SQS and AQS, their laws and the witnesses.
-- Mathematics article *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal, the two orders and the absence of a unit.
+- Mathematics article *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the algebraic norm, the two orders and the absence of a unit.
 - Mathematics article *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form $K$ and its restrictions.
 - Mathematics article *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md`), for the form read as the multiplication of the block, its two Gram matrices, its isotropic elements and its invariance under the block.
 - Companion article *The Fourth Product and Its Indefinite Metric*, for the metric whose scalar part this product carries.

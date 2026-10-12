@@ -77,7 +77,7 @@ $$
 ({}^{\natural},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) .
 $$
 
-The count is developed in *The Two General Products and the Reason There Are Only Two*, in the general plain algebra block of this chapter.
+The count is developed in *The Two General Products and the Reason There Are Only Two*, below this article in this category.
 
 ## The Structures the Two Products Define
 

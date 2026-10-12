@@ -78,7 +78,7 @@ In the symmetric quaternionic block the square of every element is central, $\ti
 | symbol | meaning |
 |---|---|
 | $\tilde\Xi\star\tilde Q=N(\tilde\Xi,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
-| $N(\tilde\Xi)=\sum_\mu \Xi_\mu^2$ | the diagonal of the form |
+| $N(\tilde\Xi)=\sum_\mu \Xi_\mu^2$ | the form at the two equal arguments |
 | $\tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0$ | the square of the block, always central |
 | $\mathcal{R}(\lambda)=\{\tilde\Xi:N(\tilde\Xi)=\lambda\}$ | the root set of the central value $\lambda$ |
 | $\lambda=0$ | the punctured isotropic cone, the square-zero elements |

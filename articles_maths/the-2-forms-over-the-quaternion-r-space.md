@@ -50,13 +50,13 @@ So the two forms are the two standard forms on the coordinates: $B$ is the form 
 
 ## The Polarisation and the Quadratic Forms
 
-**Definition.** The **associated quadratic forms** of the two forms are the diagonal values
+**Definition.** The **associated quadratic forms** of the two forms are the values at the two equal arguments
 
 $$
 Q_B(\tilde p)=B(\tilde p,\tilde p)=\mathrm{Sc}\bigl(\tilde p^2\bigr)=p_0^2-\lvert\mathbf p\rvert^2 , \qquad Q_N(\tilde p)=N(\tilde p,\tilde p)=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde p\bigr)=\lvert\tilde p\rvert^2 .
 $$
 
-The two quadratic forms are the diagonal of the plain form and the quaternion norm of the element, written $B(\tilde p)$ and $N(\tilde p)$ for short; $Q_B$ is indefinite and $Q_N$ is the square of the quaternion norm.
+The two quadratic forms are the algebraic norm of the plain form and the quaternion norm of the element, written $B(\tilde p)$ and $N(\tilde p)$ for short; $Q_B$ is indefinite and $Q_N$ is the square of the quaternion norm.
 
 **Proposition (the polarisation).** The two forms are recovered from their quadratic forms by the polarisation identity
 
@@ -68,7 +68,7 @@ and the values of the quadratic forms on the units are $Q_B(e_0)=1$, $Q_B(e_k)=-
 
 *Proof.* The polarisation identity holds for any symmetric bilinear form over a field of characteristic not two; expanding $Q_B(\tilde p+\tilde q)$ with the bilinearity gives $2B(\tilde p,\tilde q)$. The values on the units are those of the diagonal of the Gram matrices.
 
-So each form is the polarised quadratic of its diagonal, and the quadratic forms are read on the units as the diagonal of the Gram matrices: $Q_B$ takes the value $1$ on the unit and $-1$ on each of the three imaginary units, while $Q_N$ takes the value $1$ on all four. The two quadratic forms are the *two algebraic norms* of the chapter, their level sets, their multiplicativity and the invertibility criteria they give being *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
+So each form is the polarised quadratic of its algebraic norm, and the quadratic forms are read on the units as the diagonal of the Gram matrices: $Q_B$ takes the value $1$ on the unit and $-1$ on each of the three imaginary units, while $Q_N$ takes the value $1$ on all four. The two quadratic forms are the *two algebraic norms* of the chapter, their level sets, their multiplicativity and the invertibility criteria they give being *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
 
 ## The Radical
 

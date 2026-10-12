@@ -40,7 +40,7 @@ which is the general plain bilinear form of *The 4 Forms over the Biquaternion $
 - $B$ is **homogeneous of degree two**, $B(\lambda\tilde Q)=\lambda^{2}B(\tilde Q)$ for $\lambda\in\mathbb{C}$, and its polarisation is the form of the same letter, $B(\tilde P+\tilde Q)-B(\tilde P)-B(\tilde Q)=2B(\tilde P,\tilde Q)$.
 - $B$ is **not positive definite** and **not definite**.
 - Its Gram matrix on the basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and the realification of $B$ is non-degenerate of signature $(4,4)$ on $\mathbb{B}\cong\mathbb{R}^{8}$.
-- Its **vanishing set** is the complex cone $\{B(\tilde Q)=0\}$, the complex quadric of *The Four Pairings of the Biquaternion Algebra*, and not the zero-divisor set of the block.
+- Its **vanishing set** is the complex cone $\{B(\tilde Q)=0\}$, the complex quadric of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and not the zero-divisor set of the block.
 
 ## The Algebraic Norm Is Not Multiplicative
 
@@ -103,7 +103,7 @@ The block is commutative and unital, with the unit $e_0$, and it is not associat
 
 ## Further Reading
 
-- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the diagonal of a form and the four algebraic norms of the space.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general plain bilinear form $B$ and the table of the four forms.
 - *Introduction to the Symmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-algebra-of-biquaternions.md`), for the product, its unit, its commutativity and its non-associativity.
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra* (`articles_maths/the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra.md`), for the form the algebraic norm polarises.

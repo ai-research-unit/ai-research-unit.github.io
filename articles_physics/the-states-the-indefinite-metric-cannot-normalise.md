@@ -14,7 +14,7 @@ The article defers the positivity of the probability form and the absence of gho
 
 **The probability form must be positive.** The Born pairing of the framework is the general plain sesquilinear form $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$, and it is genuinely positive definite: $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ is strictly positive for $\tilde Q\neq0$, with signature $(8,0)$ on the algebra. That positivity is not decorative — it is the reason the framework has no negative-norm states, and it is proved as such in *Mass, Rank and the Positivity of the Dagger*. A state is a positive trace-one element for $H$; a pure state is a rank-one such element; and the set of pure states is the boundary of the state cone, the **Bloch sphere**.
 
-**An indefinite metric cannot do that job.** The fourth product's form is the opposite kind of object: $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$, Hermitian, non-degenerate and **indefinite**, of signature $(1,3)$ over the complex coefficients. Its diagonal is positive on the centre and negative on the six vector directions, and it has a large **null set**, the elements of zero $K$-length. An element of the null set has no normalised representative for $K$: multiplying it by a scalar cannot change zero into one. Normalisation is a property of the pair (form, state), and the states of this framework are normalisable for $H$ and, as the next section shows, exactly null for $K$.
+**An indefinite metric cannot do that job.** The fourth product's form is the opposite kind of object: $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$, Hermitian, non-degenerate and **indefinite**, of signature $(1,3)$ over the complex coefficients. Its algebraic norm is positive on the centre and negative on the six vector directions, and it has a large **null set**, the elements of zero $K$-length. An element of the null set has no normalised representative for $K$: multiplying it by a scalar cannot change zero into one. Normalisation is a property of the pair (form, state), and the states of this framework are normalisable for $H$ and, as the next section shows, exactly null for $K$.
 
 **The physical precedent.** In an indefinite-metric gauge theory the physical states are typically recovered as a quotient by the null states, and the null sector is part of the physical description rather than a defect. The interpretation of this article is that the framework exhibits the same structure internally: two forms, one definite and one indefinite, and a distinguished family of states that is normalisable for the first and null for the second.
 
@@ -72,13 +72,13 @@ using $\tilde\Pi^{*}=\tilde\Pi$, $\tilde\Pi^{\natural}=\tfrac12(e_0-i\hat\mu)$ a
 
 The two nullities above hold for the pure states; on the state cone the two forms are in fact the **same meter**, and this is worth separating from the double vanishing, which is a different statement.
 
-On the informational sector the two forms coincide as forms, not only on the diagonal. The corollary of the Lagrange identity of *The Fourth Product and Its Indefinite Metric*,
+On the informational sector the two forms coincide as forms, not only at the two equal arguments. The corollary of the Lagrange identity of *The Fourth Product and Its Indefinite Metric*,
 
 $$
 K(\tilde\varrho,\tilde H)=N(\tilde\varrho,\tilde H)\quad\text{for }\tilde\varrho,\tilde H\in\mathbb{M}_+,
 $$
 
-is a statement off the diagonal as well, since both forms are Hermitian there; verifying it on the density matrices confirms it. A **density matrix** $\tilde\varrho=\tfrac12(e_0+i\mathbf r)$ with $\lvert\mathbf r\rvert\le1$ is **self-conjugate**, $\tilde\varrho^{*}=\tilde\varrho$, and for a self-conjugate element the gauge invariant is the squared norm,
+is a statement away from the two equal arguments as well, since both forms are Hermitian there; verifying it on the density matrices confirms it. A **density matrix** $\tilde\varrho=\tfrac12(e_0+i\mathbf r)$ with $\lvert\mathbf r\rvert\le1$ is **self-conjugate**, $\tilde\varrho^{*}=\tilde\varrho$, and for a self-conjugate element the gauge invariant is the squared norm,
 
 $$
 K(\tilde\varrho,\tilde\varrho)=\mathrm{Sc}\bigl(\tilde\varrho^{\natural}\tilde\varrho^{*}\bigr)=\mathrm{Sc}\bigl(\tilde\varrho^{\natural}\tilde\varrho\bigr)=N(\tilde\varrho)=\tfrac14\bigl(1-\lvert\mathbf r\rvert^{2}\bigr),

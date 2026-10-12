@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Each of the two general products carries an adjoint calculus, one adjoint for each pairing, and this article gathers the two rules and works them on examples. The plain product gives the transpose of the regular operators with respect to the plain pairing; the quaternionic product gives the conjugate transpose with respect to the quaternion pairing. The article is a synthesis: the operator calculus is *Association and the Transpose on the General Plain Algebra* and the two operator articles of the general quaternionic block, above this article in this category, and the pairings are *The Two Pairings of the Quaternion Algebra*, above this article in this category.
+Each of the two general products carries an adjoint calculus, one adjoint for each pairing, and this article gathers the two rules and works them on examples. The plain product gives the transpose of the regular operators with respect to the plain pairing; the quaternionic product gives the conjugate transpose with respect to the quaternion pairing. The article is a synthesis: the operator calculus is *Association and the Transpose on the General Plain Algebra* and the two operator articles of the general quaternionic block, above this article in this category, and the two forms that define them are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, above this article in this category.
 
 ## The Two Adjoint Rules
 
@@ -59,5 +59,5 @@ The plain product has the adjoint rule $L_{\tilde x}^{\dagger}=R_{\tilde x}$ and
 
 - *Association and the Transpose on the General Plain Algebra* (`articles_maths/association-and-the-transpose-on-the-general-plain-algebra-of-quaternions.md`), above this article in this category.
 - *Two-Sided Operators on the General Quaternionic Algebra of Quaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-quaternions.md`), above this article in this category.
-- *The Two Pairings of the Quaternion Algebra* (`articles_maths/the-two-pairings-of-the-quaternion-algebra.md`), above this article in this category.
+- *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), above this article in this category.
 - *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the complex rung.

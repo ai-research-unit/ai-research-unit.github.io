@@ -10,7 +10,7 @@ $$
 
 the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, the operator traces built from it, and its restriction to the remarkable subspaces.
 
-The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ of *The Four Pairings of the Biquaternion Algebra*, which the associativity of the plain product makes invariant, and its operator theory is *Association and the Transpose on the General Plain Algebra* and *Two-Sided Operators on the General Plain Algebra of Biquaternions*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*; the form is used here with the product and not re-derived.
+The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which the associativity of the plain product makes invariant, and its operator theory is *Association and the Transpose on the General Plain Algebra* and *Two-Sided Operators on the General Plain Algebra of Biquaternions*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*; the form is used here with the product and not re-derived.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$. The scalar part is $\mathrm{Sc}(\tilde Q)=Q_0$; the general plain bilinear form is $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$, and $\tau$ denotes it read as the trace form of the block. The multiplication operator of the block is $L^{\bullet}_{\tilde P}\tilde Q=\tilde P\bullet\tilde Q$, and $L_{\tilde P},R_{\tilde P}$ are the left and right operators of the plain product, still with the halved product and the unhalved ones distinguished as in *The Multiplication Operators of the Symmetric Plain Algebra*.
 
@@ -39,7 +39,7 @@ $$
 \operatorname{diag}(1,-1,-1,-1),
 $$
 
-the coefficient matrix $D$ of *The Four Pairings of the Biquaternion Algebra*, of complex rank four.
+the coefficient matrix $D$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, of complex rank four.
 
 *Proof.* $\tau(e_\mu,e_\nu)=\mathrm{Sc}(e_\mu\bullet e_\nu)$; on the basis table of *Introduction to the Symmetric Plain Algebra of Biquaternions* the values are $\varepsilon_\mu\delta_{\mu\nu}=(1,-1,-1,-1)$ on the diagonal and $0$ off it. The matrix is invertible, so the form is non-degenerate.
 
@@ -209,7 +209,7 @@ The trace form of the symmetric plain algebra is $\tau(\tilde P,\tilde Q)=\mathr
 
 ## Further Reading
 
-- *The Four Pairings of the Biquaternion Algebra*, for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, for the general plain bilinear form, its coefficient matrix $D$ and its comparison with the other three forms.
 - *Association and the Transpose on the General Plain Algebra*, for the associativity of the plain form and its operator theory.
 - *Two-Sided Operators on the General Plain Algebra of Biquaternions*, for the left and right operators whose half-sum is the multiplication operator of the block.
 - *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, for the restrictions of the form to the remarkable subspaces.

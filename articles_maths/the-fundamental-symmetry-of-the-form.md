@@ -172,7 +172,7 @@ Each $J_{t}$ has $J_{t}^{2} = \mathrm{id}$, fixes $u_{t}$ and negates $v_{t}$, a
 
 ### The Biquaternion Algebra
 
-**Example (the indefinite biquaternion form).** On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the coefficient vector $\tilde Q = \sum_{\mu}Q_{\mu}e_{\mu}$ and the sign vector $\varepsilon = (1,-1,-1,-1)$, the **general quaternionic sesquilinear form** of *The Four Pairings of the Biquaternion Algebra*, §*The Four Pairings*,
+**Example (the indefinite biquaternion form).** On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the coefficient vector $\tilde Q = \sum_{\mu}Q_{\mu}e_{\mu}$ and the sign vector $\varepsilon = (1,-1,-1,-1)$, the **general quaternionic sesquilinear form** of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, §*The Four Forms*,
 
 $$
 h_{\natural*}(P,Q) = \operatorname{Sc}(P^{\natural}Q^{*}) = \sum_{\mu}\varepsilon_{\mu}P_{\mu}\overline{Q_{\mu}} ,

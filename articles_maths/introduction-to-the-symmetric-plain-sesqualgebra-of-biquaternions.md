@@ -87,7 +87,7 @@ so the table of the block is the identity table:
 
 ## The Square and Its Polarisation
 
-**Proposition (the square is the diagonal of the form).** For every $\tilde Q$,
+**Proposition (the square is the form at the two equal arguments).** For every $\tilde Q$,
 
 $$
 \tilde Q \star \tilde Q = H(\tilde Q,\tilde Q)\, e_0 = \Bigl(\lvert Q_0\rvert^{2} + \sum_{k=1}^{3} \lvert Q_k\rvert^{2}\Bigr) e_0 = \Bigl(\sum_{\mu=0}^{3} \lvert Q_\mu\rvert^{2}\Bigr) e_0 ,

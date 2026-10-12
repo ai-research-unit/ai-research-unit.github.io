@@ -64,7 +64,7 @@ coefficientwise $\bar{\cdot}$, the natural ${\natural}$ fixing $i$ and negating 
 ${}^{*}=\bar{\cdot}\circ{\natural}$; the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$. The product
 of the band is written $\star$, and it is read through the natural conjugation alone. The form is the one displayed
 above, of Gram matrix $I_4$; it is cited, never re-proved, and on the material sector $\mathbb{M}_-$ it is the interval
-$-c^{2}t^{2}+\mathbf x^{2}$, of signature $(3,1)$ (*Biquaternion Norm and Invertibility*). Its diagonal is the
+$-c^{2}t^{2}+\mathbf x^{2}$, of signature $(3,1)$ (*Biquaternion Norm and Invertibility*). Its algebraic norm is the
 **biquaternion norm**
 
 $$
@@ -396,7 +396,7 @@ Its Physical Meaning*.
 
 **Read as a physical statement.** The left actions of the band are the observables on the state space, and every
 operator of the state space is one of them, with the parameter read through the conjugation — the state space sees the
-element only through its conjugate. The projectors are the plain ones, and the two diagonal projectors of the state
+element only through its conjugate. The projectors are the plain ones, and the two algebraic norm projectors of the state
 space and of its complement are **exchanged** by the conjugation: the band's own left multiplication by the minimal
 idempotent projects onto the other ideal. This is a physical sharpening of the statement that the band's product
 recognises almost none of its own projectors: the element whose square vanishes defines the projector, and the element
@@ -563,7 +563,7 @@ $N(\tilde A)=\pm1$, and it equals $N(\tilde A)\mathrm{Ad}_{\tilde A}$ on the uni
 exactly on the norm-one slice; the strictly multiplicative two-sided operators are the inner automorphisms, and the
 multiplicative-up-to-a-scalar ones are exactly the scalar multiples of the twisted two-sided operators; and the left
 actions restricted to the state space are a basis of its operators, differing from the plain basis only by the sign of
-the vector directions, with the two diagonal projectors exchanged by the natural conjugation.
+the vector directions, with the two algebraic norm projectors exchanged by the natural conjugation.
 
 **Interpretations.** That the adjoint of the band is the **parameter conjugation on one side**, so that the interval can tell a
 left attachment from a right one and a type is a property of a single parameter; that the norm is the **conformal factor**
@@ -628,7 +628,7 @@ central; its adjoint is $\Theta_{\tilde A^{\natural}}$, it is self-adjoint exact
 vector subspace and never skew-adjoint, it preserves the form exactly for $N(\tilde A)=\pm1$, and it equals
 $N(\tilde A)\mathrm{Ad}_{\tilde A}$ on the units, agreeing with the inner automorphism exactly on the norm-one slice. On
 the state space the left actions exhaust the operators of the module up to the sign of the vector directions, the
-twisted right actions are the commutant, and the two diagonal projectors are exchanged by the conjugation. Read on the
+twisted right actions are the commutant, and the two algebraic norm projectors are exchanged by the conjugation. Read on the
 interval, the band is the causality band: the
 invariant form is the interval of signature $(3,1)$, its null set the causal cone, the norm-one parameters are the
 Lorentz transformations, and the division of the parameters by the sign of the norm is the causal division.
@@ -660,7 +660,7 @@ Lorentz transformations, and the division of the parameters by the sign of the n
 - *One-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.md`), for the adjoints for the quaternionic form, the types, the norm and the determinant of a multiplication.
 - *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.md`), for the twisted two-sided operator, its quadraticity, its multiplication law and its adjoint.
 - *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the isotope identity and the projectors, and *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product and its elementary laws.
-- *The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions*, for the groups cut out by the norm, and *The Four Pairings of the Biquaternion Algebra*, for the form and its adjoint.
+- *The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions*, for the groups cut out by the norm, and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, for the form, and *The Four General Products and Operators*, §*The Products Decide the Four Adjoints*, for its adjoint.
 - The band articles: *The Interval as the Square and the Charge of the Material Composition*, for the interval, the mass shell and the closed causal cone, and *Why the Material Composition Is Oriented and Cannot Measure*, for the orientation, the one-sided unit and the opposite monoid read physically.
 - *The Spinor Space as a Module and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*, for the state space the operators act on.
 - *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*, the sibling operator article of the composition band, and *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*, the crossing reader of the twelve.

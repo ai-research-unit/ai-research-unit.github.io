@@ -10,7 +10,7 @@ $$
 \tilde P\circledast\tilde Q=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)e_0=H(\tilde P,\tilde Q)e_0,\qquad H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}).
 $$
 
-Three facts organise the band. The value is **central**, so the operation is a form and not a genuine multiplication; its diagonal is **real and strictly positive off the origin**, so this is the row the corpus reads as probability; and it is the row whose second slot conjugates, so its law is conjugate-commutative and its operation has no unit on either side. The companion article of the band, *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*, owns the centrality, the idempotents of the operation and the cone of its values; this article owns the operation itself, its positivity, the failure of the Jordan identity, and the interpretation of its value as the real part of the Born pairing.
+Three facts organise the band. The value is **central**, so the operation is a form and not a genuine multiplication; its algebraic norm is **real and strictly positive off the origin**, so this is the row the corpus reads as probability; and it is the row whose second slot conjugates, so its law is conjugate-commutative and its operation has no unit on either side. The companion article of the band, *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*, owns the centrality, the idempotents of the operation and the cone of its values; this article owns the operation itself, its positivity, the failure of the Jordan identity, and the interpretation of its value as the real part of the Born pairing.
 
 **Boundaries.** The product that is split is *Introduction to the General Plain Sesqualgebra of Biquaternions*; the split itself and the general construction of the two parts are *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, and both are cited and not restated. The positivity of $H$, its cone and its signature are *Mass, Rank and the Positivity of the Dagger* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, and the algebra of the operation is *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions* and *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*. The Born rule as a trace formula and the state side are *The Born Rule as a Trace Formula — Derivation and Comparison*, *Quantum Physics in Biquaternionic Form* and *The Ontology of the Quantum State under the Biquaternion Framework*; the comparison of the four general products is *The Four General Products and Their Physical Readings*. The operation is a pairing; it is not a state and it is not a measurement, and neither is read from it.
 
@@ -34,7 +34,7 @@ $$
 
 which is the statement of the introduction: **the Hermitian form of the corpus is the operation**. The form $H$ and the product $\circledast$ carry the same information, and the image of the operation is the centre $\mathbb{C}_{\mathbb{B}}=\{\lambda e_0\}$; the block is the form read as a multiplication and nothing more (*The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*).
 
-**Remark (one of the two central operations).** Because every value lies in the centre, the block is **one of the two central operations of the twelve**, the other being the symmetric quaternionic algebra $\mathrm{SQA}$; it is **not** a Jordan product — the symmetric plain algebra $\mathrm{SPA}$ alone among the twelve is one — and the failure of the Jordan identity in the section below is the statement of that (*Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*, *The 12 Products of the Biquaternion Complex Space*). The centrality is what makes the operation a form; the form's positivity is what makes its diagonal a probability; and the two are the same sentence.
+**Remark (one of the two central operations).** Because every value lies in the centre, the block is **one of the two central operations of the twelve**, the other being the symmetric quaternionic algebra $\mathrm{SQA}$; it is **not** a Jordan product — the symmetric plain algebra $\mathrm{SPA}$ alone among the twelve is one — and the failure of the Jordan identity in the section below is the statement of that (*Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*, *The 12 Products of the Biquaternion Complex Space*). The centrality is what makes the operation a form; the form's positivity is what makes its algebraic norm a probability; and the two are the same sentence.
 
 **Remark (verified).** $\mathrm{Sc}(\tilde P\tilde Q^{*})=H(\tilde P,\tilde Q)$ and the half-sum is central, to $<10^{-13}$ over $100$ random pairs.
 
@@ -65,11 +65,11 @@ $$
 
 The table is the Gram matrix of $H$ in the algebra basis times $e_0$: the operation records the form and nothing else. It is **rank one** over $\mathbb{C}$, its single value direction being $e_0$, and its kernel is the single scalar equation $H(\tilde P,\tilde Q)=0$ (*The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*).
 
-**Remark (vanishing products of nonzero elements).** Off the diagonal the product vanishes, $e_\mu\circledast e_\nu=0$ for $\mu\neq\nu$, so the block **does** have vanishing products of nonzero elements; the vanishing pairs are exactly the $H$-orthogonal ones. The block has no isotropic vector and no nonzero element of square zero, and yet it has zero products: the two statements are one, and the second is the reason the first must be read as a statement about the *diagonal* of the form.
+**Remark (vanishing products of nonzero elements).** Away from the two equal arguments the product vanishes, $e_\mu\circledast e_\nu=0$ for $\mu\neq\nu$, so the block **does** have vanishing products of nonzero elements; the vanishing pairs are exactly the $H$-orthogonal ones. The block has no isotropic vector and no nonzero element of square zero, and yet it has zero products: the two statements are one, and the second is the reason the first must be read as a statement about the *algebraic norm* of the form.
 
-## The Diagonal and the Positivity
+## The Algebraic Norm and the Positivity
 
-### The Diagonal Is Real and Strictly Positive
+### The Algebraic Norm Is Real and Strictly Positive
 
 For every $\tilde Q$,
 
@@ -77,14 +77,14 @@ $$
 \tilde Q\circledast\tilde Q=H(\tilde Q,\tilde Q)e_0=\Bigl(\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}\Bigr)e_0,
 $$
 
-a **central** element whose coefficient is a sum of squares of moduli; it is real, non-negative, and **strictly positive for $\tilde Q\neq0$**. The diagonal is the squared Euclidean length of the coefficient vector of the element, and it vanishes only at the origin.
+a **central** element whose coefficient is a sum of squares of moduli; it is real, non-negative, and **strictly positive for $\tilde Q\neq0$**. The algebraic norm is the squared Euclidean length of the coefficient vector of the element, and it vanishes only at the origin.
 
 **Consequences, and where they are owned.**
 - **No isotropic vector, no square-zero element.** $H(\tilde Q,\tilde Q)=0$ forces $\tilde Q=0$, and $\tilde Q\circledast\tilde Q=0$ forces $\tilde Q=0$; the isotropic cone of the operation is $\{0\}$.
 - **The absence of nulls is unitarity.** A form with no nonzero null vector is a form on which every nonzero state has strictly positive weight. The absence of an isotropic vector and the absence of a zero-weight state are one statement, and it is the statement that the form defines a genuine inner product: **unitarity written as an absence of nulls** rather than as a sign convention. On this form, and only on this form, a nonzero state is never annihilated.
-- **The positivity is inherited, not built.** The diagonal is positive because $H$ is the definite form of the algebra, of signature $(8,0)$ on $\mathbb{B}\cong\mathbb{R}^{8}$; that positivity, its cone, its signature and its restriction to the remarkable subspaces are *Mass, Rank and the Positivity of the Dagger*, *Biquaternion Norm and Invertibility* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, and this article cites them and does not re-prove them.
+- **The positivity is inherited, not built.** The algebraic norm is positive because $H$ is the definite form of the algebra, of signature $(8,0)$ on $\mathbb{B}\cong\mathbb{R}^{8}$; that positivity, its cone, its signature and its restriction to the remarkable subspaces are *Mass, Rank and the Positivity of the Dagger*, *Biquaternion Norm and Invertibility* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, and this article cites them and does not re-prove them.
 
-**Remark (what the positivity is not).** The positivity is the positivity of the **diagonal of the form**, and the operation is conjugate-commutative and not commutative: it is not the positivity of a real-valued symmetric form, and it is not the positivity of the biquaternion norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$, which is indefinite and carries the interval. The statement $H\succ0$ is a statement about $H$ alone.
+**Remark (what the positivity is not).** The positivity is the positivity of the **algebraic norm of the form**, and the operation is conjugate-commutative and not commutative: it is not the positivity of a real-valued symmetric form, and it is not the positivity of the biquaternion norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$, which is indefinite and carries the interval. The statement $H\succ0$ is a statement about $H$ alone.
 
 ### The Reality on the State Side
 
@@ -113,7 +113,7 @@ a central part and a vector part. The central part is the operation of this arti
 ### The Amplitude as Modulus and Argument
 
 The same split reads as a split into a **modulus** and an **argument**. The central half is the modulus: on
-the diagonal it is the positive number the operation measures, the squared length of the element. The
+the algebraic norm it is the positive number the operation measures, the squared length of the element. The
 vector half is the argument: it is the direction the value carries, and it is the direction the central
 operation discards, so an operation that keeps only the modulus cannot recover the argument and a
 probability cannot be inverted to a phase. This is the modulus and the argument of an **amplitude**, and
@@ -199,13 +199,13 @@ The values of the block are central, so the product of two elements of any of th
 | $\mathbb{M}_{+}$ | $4$ | positive definite, real-valued | yes | yes |
 | $\mathbb{M}_{-}$ | $4$ | positive definite, real-valued | no | no |
 
-**Remark (the state side is the closed informational side).** The Hermitian subspace is closed because the positive real multiples of $e_0$ lie in it, and on it the restricted form is real-valued and positive definite of rank $4$: this is the frame of a two-state system, whose states and observables share the subspace, and on it the diagonal is the Born pairing. The block's home is therefore the **state side** $\mathbb{M}_{+}$, and not the material side of the two algebra rows. The contrast with the quaternionic sesquilinear row, whose form $K$ is indefinite and whose values lie in no subspace of the remarkable subspaces, is the companion article's subject and is stated there and not here.
+**Remark (the state side is the closed informational side).** The Hermitian subspace is closed because the positive real multiples of $e_0$ lie in it, and on it the restricted form is real-valued and positive definite of rank $4$: this is the frame of a two-state system, whose states and observables share the subspace, and on it the algebraic norm is the Born pairing. The block's home is therefore the **state side** $\mathbb{M}_{+}$, and not the material side of the two algebra rows. The contrast with the quaternionic sesquilinear row, whose form $K$ is indefinite and whose values lie in no subspace of the remarkable subspaces, is the companion article's subject and is stated there and not here.
 
 ## Ledger
 
 **What the operation does.**
 - Reads the central part of the plain sesquilinear amplitude as a multiplication: $\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$.
-- Carries and exposes the **positivity** of the Hermitian form on its diagonal, $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ off the origin.
+- Carries and exposes the **positivity** of the Hermitian form on its algebraic norm, $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ off the origin.
 - Supplies, on the state side, one half of the Born trace pairing, $\tilde P\circledast\tilde H=\tfrac12\mathrm{Tr}(\tilde P\tilde H)e_0$.
 - Supplies the **modulus** of an amplitude — the positive central half, the argument being the companion band's — and by the absence of nulls fixes a genuine inner product, the definiteness on which a unitary evolution rests.
 - Records the Gram matrix of $H$ and the $H$-orthogonal (vanishing) pairs.
@@ -224,7 +224,7 @@ Read on the two slots, the form is the framework's **measurement pairing**: one 
 
 ## Summary
 
-The symmetric plain sesqualgebra is the **Hermitian form of the corpus read as a multiplication**, $\tilde P\circledast\tilde Q=\mathrm{Sc}(\tilde P\tilde Q^{*})e_0=H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$. Its value is **central**, its class is sesquilinear with the conjugation in the second slot, and its basis table is the identity times $e_0$: the operation is the Gram matrix of $H$ and nothing else. Its **diagonal is real and strictly positive off the origin**, $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$, so the operation has no isotropic vector and no nonzero element of square zero — the absence of a null vector is read as the definiteness of a genuine inner product, that is **unitarity written as an absence of nulls** — the positivity is that of the definite form of the algebra and is owned by the mass-and-positivity article. The parent value splits into the two halves of the block, $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$, and the two halves are the **modulus and the argument** of one amplitude: the central half is the **real part of the Born pairing** and on the state side it is one half of the trace pairing, $\tilde P\circledast\tilde H=\tfrac12\mathrm{Tr}(\tilde P\tilde H)e_0$ with $\tilde P,\tilde H\in\mathbb{M}_{+}$, while the argument is the companion band's. The operation **fails the Jordan identity**, with the witness $x=y=e_1$, where the two sides are $0$ and $e_0$; it has **no unit** on either side and its only idempotents are $0$ and $e_0$; it is **conjugate-commutative**. Among the remarkable subspaces only the closure separates the block, and it is closed on the centre, the real-quaternion subspace and the Hermitian subspace, which is the state side of the corpus. The reading is bounded twice: a positive central value is a pairing and not a state, and the operation belongs to the state row without being a state.
+The symmetric plain sesqualgebra is the **Hermitian form of the corpus read as a multiplication**, $\tilde P\circledast\tilde Q=\mathrm{Sc}(\tilde P\tilde Q^{*})e_0=H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$. Its value is **central**, its class is sesquilinear with the conjugation in the second slot, and its basis table is the identity times $e_0$: the operation is the Gram matrix of $H$ and nothing else. Its **algebraic norm is real and strictly positive off the origin**, $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$, so the operation has no isotropic vector and no nonzero element of square zero — the absence of a null vector is read as the definiteness of a genuine inner product, that is **unitarity written as an absence of nulls** — the positivity is that of the definite form of the algebra and is owned by the mass-and-positivity article. The parent value splits into the two halves of the block, $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$, and the two halves are the **modulus and the argument** of one amplitude: the central half is the **real part of the Born pairing** and on the state side it is one half of the trace pairing, $\tilde P\circledast\tilde H=\tfrac12\mathrm{Tr}(\tilde P\tilde H)e_0$ with $\tilde P,\tilde H\in\mathbb{M}_{+}$, while the argument is the companion band's. The operation **fails the Jordan identity**, with the witness $x=y=e_1$, where the two sides are $0$ and $e_0$; it has **no unit** on either side and its only idempotents are $0$ and $e_0$; it is **conjugate-commutative**. Among the remarkable subspaces only the closure separates the block, and it is closed on the centre, the real-quaternion subspace and the Hermitian subspace, which is the state side of the corpus. The reading is bounded twice: a positive central value is a pairing and not a state, and the operation belongs to the state row without being a state.
 
 ## Summary of Notation
 
@@ -234,7 +234,7 @@ The symmetric plain sesqualgebra is the **Hermitian form of the corpus read as a
 | $\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$ | the symmetric part (SPS); the operation of the block |
 | $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ | the Hermitian form; $H=\langle\cdot,\cdot\rangle_{*}$ |
 | $H(e_\mu,e_\nu)=\delta_{\mu\nu}$, $e_\mu\circledast e_\nu=\delta_{\mu\nu}e_0$ | the identity table and the Gram matrix |
-| $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ | the positive diagonal; no isotropic vector |
+| $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ | the positive algebraic norm; no isotropic vector |
 | $\tilde P\circledast\tilde Q=\overline{\tilde Q\circledast\tilde P}$ | conjugate-commutativity |
 | $\tilde Q\circledast e_0=Q_0e_0$, $e_0\circledast\tilde Q=\overline{Q_0}e_0$ | no unit on either side |
 | $(x^{2}\circledast y)\circledast x\neq x^{2}\circledast(y\circledast x)$ at $x=y=e_1$ | the Jordan failure; the sides $0$ and $e_0$ |

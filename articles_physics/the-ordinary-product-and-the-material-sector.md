@@ -31,8 +31,7 @@ its physical content.
 
 The algebra carries three other products, each read in its own block and compared in *The Four General Products and Their Physical Readings*; this article needs the
 ordinary one alone. The properties of $B$ — its symmetry, its non-degeneracy, its Gram matrix and its
-restriction to the remarkable subspaces — are the mathematics of *The Four Pairings of the
-Biquaternion Algebra* and *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, and are cited rather than
+restriction to the remarkable subspaces — are the mathematics of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, and are cited rather than
 proved.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$,
@@ -138,8 +137,7 @@ the composite $\tilde P\tilde Q$.
 
 ## The Scalar Part Is the Sector Sign
 
-The form $B$ is negative on a material **element** and positive on an informational one, that is on the
-diagonal, and that is the fact this article is built on. On the material basis $\{ie_0,e_1,e_2,e_3\}$ the diagonal entries are
+The form $B$ is negative on a material **element** and positive on an informational one, that is at the two equal arguments, and that is the fact this article is built on. On the material basis $\{ie_0,e_1,e_2,e_3\}$ the diagonal entries are
 $B(ie_0,ie_0)=-1$ and $B(e_k,e_k)=-1$ with all cross terms zero, so
 
 $$
@@ -161,7 +159,7 @@ $$
 **Proposed interpretation, labelled as such.** $B$ is read as the **sector sign**: to say "this element is
 material" and to say "$B$ is negative on it" are the same statement. The sign of $B(\tilde Q,\tilde Q)$ is the same for every element of a sector, so it is invisible to a
 computation that stays inside one sector; on a pair the form returns a varying real number, and it is the
-sign of its diagonal that marks the sector, with no metric content at all.
+sign of its algebraic norm that marks the sector, with no metric content at all.
 
 **Remark (verified).**
 real and strictly negative, and on $100$ random elements of $\mathbb{M}_+$ it is real and strictly
@@ -394,8 +392,8 @@ on the biquaternion algebra and the sectors of the Hermitian conjugation.
 metric of signature $(-,+,+,+)$ and its contrast with a definite form.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw–Hill, 1980), for the four-vector,
 the interval and the mass shell of the material sector.
-- Mathematics article *The Four Pairings of the Biquaternion Algebra*
-(`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram
+- Mathematics article *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*
+(`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms, their Gram
 matrices and their signatures.
 - Mathematics article *Remarkable Subspaces under the General Plain Algebra of Biquaternions*
 (`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction of $B$ to

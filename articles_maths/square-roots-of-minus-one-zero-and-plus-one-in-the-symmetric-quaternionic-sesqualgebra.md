@@ -19,7 +19,7 @@ of the block, computed in *Nilpotents of the Symmetric Quaternionic Sesqualgebra
 the sake of the comparison, while the roots of $-1$ and $+1$ are new.
 
 The product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*; the diagonal is
-*The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the zero divisors
+*The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the zero divisors
 are *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*; the idempotents are *Idempotents of the
 Symmetric Quaternionic Sesqualgebra*; the roots of the three central values in the plain product are
 *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; and the isotropic elements of
@@ -61,7 +61,7 @@ $$
 
 whose scalar part is real and whose vector part is a real vector; the diagonal is a real quaternion.
 
-*Proof.* This is the diagonal theorem of *The Non-Central Diagonal and the Two Halves of the Symmetric
+*Proof.* This is the diagonal theorem of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric
 Quaternionic Sesqualgebra*.
 
 **Corollary (the two conditions for a root of a central value).** $\tilde\Xi\star\tilde\Xi=\lambda e_0$ holds
@@ -237,5 +237,5 @@ $-\tfrac12e_0+\boldsymbol\mu$ lie on none of them.
 - *Nilpotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/nilpotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the root of $0$, its cone and its index-two property.
 - *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md`), for the same three values in the plain product, with the idempotent parametrisation.
 - *Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the class that lies on none of the three root sets.
-- *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal formula that carries the reduction.
+- *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal formula that carries the reduction.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product and its table.

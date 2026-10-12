@@ -90,7 +90,8 @@
      h2               chapter        ## Biquaternions      fill 22%, bar 8px
      h3 (no link)     category band  ### Theory            fill 16%, bar 4px
      h4               topic band     #### The Forms        fill grey #e8e8e8
-     h5               sub-topic tag  ##### Form            fill grey #f0f0f0
+     h5               sub-topic tag  ##### Form            fill grey #f0f0f0, leading square
+     h6               field tag      ###### Common Theory  no fill, bar 1px, leading dash
      p > a (only)     article entry  <a …>Title</a>        blue link
    The chapter and the category band take a tint of the accent #2a4a7f mixed
    with white (22 and 16%); the topic and sub-topic bands take a neutral grey
@@ -98,18 +99,29 @@
    — a grey fill is visible at a lightness where a blue tint of the same
    lightness reads as almost nothing.
    Against the page background #f7f6f2 the fill contrast falls 1.34, 1.20, 1.13,
-   1.05 down the ladder. A chapter also gets the widest margin (4.5rem above,
+   1.05 down the ladder, and the fifth step has nowhere left to go: one notch
+   softer than #f0f0f0 is the page itself. The deepest level, the field tag that
+   subdivides a structure into *Common Theory*, *Specific Theory*, *Form*,
+   *Operators*, *Realification* and *Representations*, therefore drops the fill
+   and keeps the bar and the tone. Its size does not drop with it: it stays at
+   the article-title size, so a label is never smaller than the entries it
+   holds, and it is told from an entry by tone — grey against accent blue — and
+   by weight, 700 against 600.
+   A chapter also gets the widest margin (4.5rem above,
    against 2.2rem for a category), so its band never sits as close to the text
    above it as the next level down.
-   A heading is a label and nothing else: every `##`, `###`, `####` and `#####`
-   of a menu is a title. An article entry is not a heading, it is a paragraph
-   whose only element child is the link, so the level is carried by the markup
-   itself and the menu needs no `-`, `--` or `---` in the source either.
+   A heading is a label and nothing else: every `##`, `###`, `####`, `#####` and
+   `######` of a menu is a title. An article entry is not a heading, it is a
+   paragraph whose only element child is the link, so the level is carried by the
+   markup itself and the menu needs no `-`, `--` or `---` in the source either.
    Every band rule is scoped to a menu page by `:has(> h4)`. That test is exact:
    the menus are the only pages that use the topic-band level — no article and no
    other root page contains an `h4` — so an article page never matches and its own
    headings keep their plain style. The invariant to preserve is that the menus
-   are the only pages carrying an `h4`.
+   are the only pages carrying an `h4`. The deepest a menu reaches is `######`
+   (the Biquaternions → Algebra block of `maths.md`, where a section, the twelve
+   structures and their field tags take the last three levels), and no page
+   carries a `#######`, which markdown would not render as a heading anyway.
    The bands carry no `text-transform`: the level is told by size, by the
    accent bar and by the fill, so case in the source is shown as written. */
 /* Level 2 — the chapter band, top of the ladder: the deepest fill, the thickest
@@ -157,7 +169,13 @@
   margin-bottom: 0.4rem;
 }
 /* Level 5 — the sub-topic tag, the softest band: a grey one shade lighter than
-   the topic band, the thinnest bar and the greyest tone. */
+   the topic band, the thinnest bar and the greyest tone. It also carries a
+   leading square, the marker of the titles that name a structure or a block
+   (`##### Biquaternions as a Symmetric Plain Sesqualgebra (SPS) over …`), so
+   that a level-5 label is told from a level-4 one before the fill is read.
+   The square is drawn, not typed: a glyph would be one font away from an emoji
+   square, while an empty box of 0.5em takes the exact hue of the topic band's
+   bar and needs no fallback. The source keeps the bare title. */
 .article-body:has(> h4) > h5 {
   font-family: var(--font-ui);
   font-size: var(--size-h3);
@@ -168,6 +186,41 @@
   padding: 0.25rem 0.7rem;
   margin-top: 1.2rem;
   margin-bottom: 0.3rem;
+}
+.article-body:has(> h4) > h5::before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  background: #94a4bf;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+/* Level 6 — the field tag, the deepest label of a menu (`###### Common Theory`,
+   `###### Specific Theory`, …). The grey fill has run out: one notch softer than
+   #f0f0f0 is the page background itself, so this level carries no fill and no
+   rounded band, only the thinnest bar, the greyest tone and a leading dash.
+   The dash is the marker of a sub-item: the source keeps the bare title
+   (`###### Common Theory`) and the hyphen comes from `content`, so the heading
+   text stays clean for the outline, the anchors and any other consumer, and the
+   tag reads as `- Common Theory` on the page.
+   The size does not follow the fill down: it stays at the article-title size
+   (--size-h3), the same invariant the two levels above obey, so a label is
+   never smaller than the entries it holds. It is a title, not an entry: the
+   tone is grey where an entry is accent blue. */
+.article-body:has(> h4) > h6 {
+  font-family: var(--font-ui);
+  font-size: var(--size-h3);
+  font-weight: 700;
+  color: #666;
+  background: none;
+  border-left: 1px solid #dfe4ec;
+  padding: 0.2rem 0.7rem;
+  margin-top: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+.article-body:has(> h4) > h6::before {
+  content: "- ";
 }
 /* The article entry. A paragraph whose only element child is the link, so a
    prose paragraph that happens to contain a link is not caught. Size and weight

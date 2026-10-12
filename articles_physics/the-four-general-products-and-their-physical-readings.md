@@ -48,10 +48,9 @@ products, and they enter here only through the interpretation of §*The Four Rea
 general products together with the two halves of each.
 
 The mathematics of the four general products, of their scalar and vector parts, of their comparison and of their
-scalar forms is *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products*, *Comparison Between the Four General Products* and *The Four Pairings of the
-Biquaternion Algebra*, and the slot construction itself, with the two theorems that the second slot
-decides the composition and the first the form, is *The Twelve Structures and Their Two Slots: the Two
-Algebras and the Two Sesqualgebras*. The signature table of the four scalar forms on the remarkable subspaces,
+scalar forms is *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products*, *Comparison Between the Four General Products* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and the slot construction itself, with the two theorems that the second slot
+decides the composition and the first the form, is the Table of the Slots of *Comparison Between the Four
+General Products*. The signature table of the four scalar forms on the remarkable subspaces,
 which is where the effect of the first slot on the form is quantified, compares the four blocks with one
 another and so belongs to this article rather than to any of them; it is in §*Remarkable Subspaces*. The
 field of $B$ alone is *The Ordinary Product and the Material Sector*, the entry article of the block of
@@ -220,7 +219,7 @@ $\mathbb{M}_+$ they read $B=(+,+,+,+)$, $N=(+,-,-,-)$, $H=(+,+,+,+)$ and $K=(+,-
 are definite on each sector — $H$ positively on both, $B$ negatively on $\mathbb{M}_-$ and positively on
 $\mathbb{M}_+$ — while $N$ and $K$ are indefinite on each sector; and only $N$ carries the signature of
 spacetime, on $\mathbb{M}_-$ and with the opposite signs on $\mathbb{M}_+$. Read instead on the whole
-real space, where the four are the forms of *The Four Pairings of the Biquaternion Algebra*, only $H$ is
+real space, where the four are the forms of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, only $H$ is
 definite, and $B$, $N$ and $K$ are indefinite, of signatures $(4,4)$, $(4,4)$ and $(2,6)$. The full
 table on the remarkable subspaces, with the Gram matrices and the isotropic structures, is in §*Remarkable Subspaces*; the two sectors read above are its material and informational columns, and nothing else is
 claimed here.
@@ -252,8 +251,7 @@ properties the corpus tabulates, and the rule in the last column is the reason.
 
 The table gathers the rows of the property table of *Comparison Between the Four General Products*
 — bilinearity, the two identities, the monoid of the left multiplications and associativity — read by
-slot rather than by column, together with the two form rows of *The Four Pairings of the Biquaternion
-Algebra* and the restriction table of §*Remarkable Subspaces*, and the row of the scalar square, which is
+slot rather than by column, together with the two form rows of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and the restriction table of §*Remarkable Subspaces*, and the row of the scalar square, which is
 the property selected in *Introduction to the General Quaternionic Algebra of Biquaternions*. The table is the
 article's central claim in tabular form, and it says that the two slots carry two independent
 structures:
@@ -427,12 +425,12 @@ carries the signature.
 
 **Remark (verified).** The table is checked on the six real Gram matrices in the natural bases, and the
 computed inertias agree with it on all six rows. The two rows the physics uses directly are the two
-sectors, and their diagonals show the pattern in numbers. On the material basis $\{ie_0,e_1,e_2,e_3\}$
-the diagonals of $B,N,H,K$ are $\mathrm{diag}(-1,-1,-1,-1)$, $\mathrm{diag}(-1,1,1,1)$,
+sectors, and their algebraic norms show the pattern in numbers. On the material basis $\{ie_0,e_1,e_2,e_3\}$
+the algebraic norms of $B,N,H,K$ are $\mathrm{diag}(-1,-1,-1,-1)$, $\mathrm{diag}(-1,1,1,1)$,
 $\mathrm{diag}(1,1,1,1)$ and $\mathrm{diag}(1,-1,-1,-1)$, reproducing $(0,4)$, $(3,1)$, $(4,0)$ and
-$(1,3)$; on the informational basis $\{e_0,ie_1,ie_2,ie_3\}$ the two **bilinear** diagonals change sign,
-to $\mathrm{diag}(1,1,1,1)$ and $\mathrm{diag}(1,-1,-1,-1)$, while the two **Hermitian** diagonals are
-unchanged, reproducing $(4,0)$, $(1,3)$, $(4,0)$ and $(1,3)$. The Hermitian diagonal of $K$ is
+$(1,3)$; on the informational basis $\{e_0,ie_1,ie_2,ie_3\}$ the two **bilinear** algebraic norms change sign,
+to $\mathrm{diag}(1,1,1,1)$ and $\mathrm{diag}(1,-1,-1,-1)$, while the two **Hermitian** algebraic norms are
+unchanged, reproducing $(4,0)$, $(1,3)$, $(4,0)$ and $(1,3)$. The Hermitian algebraic norm of $K$ is
 $Q_0\overline{Q_0}-Q_1\overline{Q_1}-Q_2\overline{Q_2}-Q_3\overline{Q_3}$ in every basis, which is the
 $\varepsilon$-sign the first slot supplies and the reason its signature is the same on all four
 four-dimensional subspaces.
@@ -471,8 +469,8 @@ restrictions are
 | $K$ | indefinite, $(1,3)$ | indefinite, $(1,3)$ | $K=\pm N$ |
 
 **Remark (verified).**
-with the diagonal signs of the table. The identities hold to machine precision, and the realified
-diagonals of $B,N,H,K$ are $(-1,-1,-1,-1)$, $(-1,1,1,1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_-$
+with the algebraic norm signs of the table. The identities hold to machine precision, and the realified
+algebraic norms of $B,N,H,K$ are $(-1,-1,-1,-1)$, $(-1,1,1,1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_-$
 and $(1,1,1,1)$, $(1,-1,-1,-1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_+$, reproducing the inertias
 $(0,4)$, $(3,1)$, $(4,0)$, $(1,3)$ on $\mathbb{M}_-$ and $(4,0)$, $(1,3)$, $(4,0)$, $(1,3)$ on
 $\mathbb{M}_+$. These are the two sector rows of the table of §*Remarkable Subspaces*; what is added here
@@ -571,7 +569,7 @@ element (*Mass, Rank and the Positivity of the Dagger*) are the two outcomes of 
 
 **Geometry and symmetry are complementary, and no single product carries both.** The comparison makes a
 division visible that no block states: the **metric** lives in the symmetric, order-free layer and the
-**symmetry obstruction** lives in the antisymmetric, order-carrying layer. The interval is the diagonal of
+**symmetry obstruction** lives in the antisymmetric, order-carrying layer. The interval is the algebraic norm of
 the symmetric part of the quaternionic product, and the Jacobi failure is the obstruction of its
 antisymmetric part; the symmetric half is where the form is, the antisymmetric half is where the failure
 is. So the grid does not place the metric and the group in one product: it separates them into the two
@@ -676,7 +674,7 @@ while the rapidity is the **angle** of the polar form. Read physically, $\log|N|
 potential and the rapidity is its angular companion.
 - **The scalar coupling is the kinematic overlap.** On two material four-vectors the quaternionic pairing
 $N(\tilde P,\tilde Q)$ is the **Minkowski inner product** of the two, in the material signature: on the
-diagonal it is the squared interval, that is the mass shell, and off the diagonal the kinematic overlap of
+algebraic norm it is the squared interval, that is the mass shell, and away from the two equal arguments the kinematic overlap of
 two momenta. The cone is the on-shell condition, and the non-degeneracy of $N$ on the off-cone material
 directions is the non-degeneracy of the kinematics. The interpretation must name the sector: it is the
 **quaternionic** pairing, on $\mathbb{M}_-$, that carries the Minkowski sign.
@@ -994,14 +992,9 @@ parts the four induce.
 - Mathematics article *Comparison Between the Four General Products*
 (`articles_maths/comparison-between-the-four-general-products.md`), for the property table, the
 units, the monoids and the derived operation.
-- Mathematics article *The Four Pairings of the Biquaternion Algebra*
-(`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four forms, their Gram
+- Mathematics article *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*
+(`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms, their Gram
 matrices and their signatures.
-- Mathematics article *The Twelve Structures and Their Two Slots: the Two Algebras and the Two
-Sesqualgebras*
-(`articles_maths/the-twelve-structures-and-their-two-slots-the-two-algebras-and-the-two-sesqualgebras.md`),
-for the slot construction stated and proved in general, with the two theorems that the second slot
-decides the composition and the first the form, and the second instance on $M_2(\mathbb{C})$.
 - Mathematics article *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*
 (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the
 sign of the square on the two sectors, $\tilde Q\star\tilde Q=\pm N(\tilde Q)e_0$.

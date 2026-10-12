@@ -35,7 +35,7 @@ The operation is *Introduction to the Antisymmetric Quaternionic Sesqualgebra of
 content is *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, which owns the left
 multiplication, its invariants, its adjoint and its structure group; the form is *The Krein Gram Matrix and
 the Restrictions of the Form*; the indefinite adjoint and its type criteria are *J-Self-Adjoint and J-Unitary
-Operators on the General Quaternionic Sesqualgebra of Biquaternions*; and the diagonal, the Jacobi failure
+Operators on the General Quaternionic Sesqualgebra of Biquaternions*; and the algebraic norm, the Jacobi failure
 and the higher structure are *The Cross Product of a Vector with Its Conjugate*, *A Bracket Invisible on the
 Real Forms* and *A Higher Structure for the Jacobi Failure*, cited and not repeated.
 
@@ -230,7 +230,7 @@ conjugates and keeps the side, the indefinite adjoint negates and keeps the side
 **value** of an alternating product, and the pairing of a value with a test element differs between the two
 orders by the sign and the conjugate; the adjoint reads that sign. This is an interpretation.
 
-**Corollary (the sandwich is self-adjoint for every parameter).** The diagonal two-sided operator
+**Corollary (the sandwich is self-adjoint for every parameter).** The algebraic norm two-sided operator
 
 $$
 \Theta^{\diamond}_{\tilde A}=L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde A}
@@ -345,7 +345,7 @@ structure, the form a gauge structure. This is an interpretation.
 
 The band has no unit and no associativity, so its sandwich is not built from an inverse, and its comparison with the parent's inner automorphism compares two different objects.
 
-**Theorem (the sandwich, its value and its adjoint).** The diagonal two-sided operator of the band is
+**Theorem (the sandwich, its value and its adjoint).** The algebraic norm two-sided operator of the band is
 
 $$
 \Theta^{\diamond}_{\tilde A}=L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde A},\qquad
@@ -442,7 +442,7 @@ $$
 (\mathbf A,\mathbf A)=0,\qquad (\mathbf A,\overline{\mathbf A})=2,\qquad K(\tilde A,\tilde A)=-2 .
 $$
 
-The vector part is isotropic for the bilinear dot, the case the diagonal of the product reads:
+The vector part is isotropic for the bilinear dot, the case the algebraic norm of the product reads:
 $\tilde A\diamond\tilde A=\mathbf A\times\overline{\mathbf A}=-2i\,e_3$. The left multiplication is
 
 $$
@@ -497,7 +497,7 @@ displayed.
 The article states one cell of the grid of the twelve operator rows, and the boundary of the cell is what it must declare.
 
 - **The composition laws are applied, not re-proved.** The left family, its rank, its kernel, its adjoint and its derivations are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*; the article verifies the formulas and reads them.
-- **The product and its laws are the band's first article.** The rule, the conjugate-alternation, the non-vanishing diagonal and the axial interpretation are *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, cited and not repeated.
+- **The product and its laws are the band's first article.** The rule, the conjugate-alternation, the non-vanishing algebraic norm and the axial interpretation are *The Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product*, cited and not repeated.
 - **The Jacobi failure, its witness and the higher structure are the band's other two articles.** *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure* owns the failure and the invisibility on the real forms; *A Higher Structure for the Jacobi Failure* owns the positive interpretation; this article states only the closure failure of the **operators**, a statement about the commutator and not about the cyclic sum.
 - **The indefinite adjoint and its type criteria are applied, not derived.** The $J$-adjoint, the type criteria and the $J$-unitary group are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*; the indefinite sandwich is *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra of Biquaternions*.
 - **The form, the metric and the state side are not re-read here.** *The Fourth Product and Its Indefinite Metric*, *The States the Indefinite Metric Cannot Normalise* and *Why the Fourth Product Is a Gauge Structure and Not a State Space* own the metric, the null states and the no-go statement.
@@ -640,7 +640,7 @@ to the parameter, and the band does not close to an algebra.
 
 - *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-sesqualgebra.md`), for the left multiplication, its matrix, rank, kernel and image, the adjoint, the derivations, the structure group and the composition.
 - *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, the slot parities and the conjugate-alternation.
-- *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.md`), for the diagonal, the Jacobi failure and the failure off the real forms.
+- *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.md`), for the algebraic norm, the Jacobi failure and the failure off the real forms.
 - *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-quaternionic-sesqualgebra.md`), for the pairing of a value with a third element and the trace form.
 - *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the indefinite adjoint, the dictionary with the definite case, the type criteria, the group $U(1,3)$ and the norm criterion.
 - *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/the-indefinite-hermitian-sandwich-on-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the sandwich by the indefinite adjoint, its laws, the form-preservation and the transport.

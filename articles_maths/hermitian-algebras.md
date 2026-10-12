@@ -27,7 +27,7 @@ $$
 A **Hermitian form** on $A$ is a map $\langle \cdot, \cdot \rangle : A \times A \to F$ that is
 
 - additive in each argument, with $\langle ax, y \rangle = a\langle x, y\rangle$ and $\langle x, ay \rangle = \sigma(a)\langle x, y\rangle$ for $a \in F$;
-- Hermitian: $\langle x, y \rangle = \sigma(\langle y, x \rangle)$, so that the diagonal $q(x) = \langle x, x\rangle$ lies in the fixed ring $F^\sigma$;
+- Hermitian: $\langle x, y \rangle = \sigma(\langle y, x \rangle)$, so that $q(x) = \langle x, x\rangle$, the value at the two equal arguments, lies in the fixed ring $F^\sigma$;
 - non-degenerate: $\langle x, y \rangle = 0$ for every $y$ forces $x = 0$.
 
 A **Hermitian algebra** is the triple $(A, \bar{\cdot}, \langle \cdot, \cdot \rangle)$ with the form tied to the involution by the **adjoint axiom**
@@ -99,7 +99,7 @@ $$
 
 into a self-adjoint part and a skew-adjoint part. The decomposition is the algebraic substitute for the splitting of a complex number into a real part and an imaginary part, and it carries no order.
 
-For every $x$ the products $x^{\dagger}x$ and $xx^{\dagger}$ are self-adjoint, $(x^{\dagger}x)^{\dagger} = x^{\dagger}x$, and the diagonal of the form reads $q(x) = \langle x^{\dagger}x, 1\rangle$ by the correspondence. These elements are the **Hermitian squares** of the algebra, and the set of their finite sums is the algebraic positive cone of *Hermitian Squares and the Algebraic Positive Cone*. Whether that cone meets its negative only at $0$ is the question of the positivity of the involution, and it is the question that decides whether the algebra is a *Hilbert Algebra*; it is Part II's.
+For every $x$ the products $x^{\dagger}x$ and $xx^{\dagger}$ are self-adjoint, $(x^{\dagger}x)^{\dagger} = x^{\dagger}x$, and the form at the two equal arguments reads $q(x) = \langle x^{\dagger}x, 1\rangle$ by the correspondence. These elements are the **Hermitian squares** of the algebra, and the set of their finite sums is the algebraic positive cone of *Hermitian Squares and the Algebraic Positive Cone*. Whether that cone meets its negative only at $0$ is the question of the positivity of the involution, and it is the question that decides whether the algebra is a *Hilbert Algebra*; it is Part II's.
 
 ## The Radical and Non-Degeneracy
 
@@ -171,7 +171,7 @@ It is a subgroup of the group of units: it is closed under the product because $
 | $x^{r,\sigma}$ | the conjugate reversion $\sigma(x^{r})$ |
 | $\alpha$ | the grade involution of the $\mathbb{Z}/2$-grading |
 | $\langle \cdot, \cdot \rangle$ | the Hermitian form of the algebra |
-| $q(x)$ | the diagonal $\langle x, x\rangle$, valued in $F^\sigma$ |
+| $q(x)$ | the value at the two equal arguments $\langle x, x\rangle$, valued in $F^\sigma$ |
 | $\varphi$ | the functional $\langle \cdot, 1\rangle$ of the correspondence |
 | $L_x$, $R_x$ | the left and the right multiplication by $x$ |
 | $T^{*}$ | the adjoint of $T$ for the form |

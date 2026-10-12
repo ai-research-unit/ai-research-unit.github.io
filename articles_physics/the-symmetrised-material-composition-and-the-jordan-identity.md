@@ -130,7 +130,7 @@ bracketings of the witness are how much weaker.
 
 **Remark (the table of the operation).** The sixteen products of the basis are the quaternion table of
 the plain product with the off-diagonal vector entries $e_3,-e_3,e_2,-e_2,e_1,-e_1$ replaced by $0$; the
-first row and column and the diagonal $e_0,-e_0,-e_0,-e_0$ are unchanged. The operation differs from the
+first row and column and the algebraic norm $e_0,-e_0,-e_0,-e_0$ are unchanged. The operation differs from the
 ordinary product only where the ordinary product is skew. This is *Introduction to the Symmetric Plain
 Algebra of Biquaternions*.
 
@@ -152,8 +152,8 @@ $$
 *Proof.* $\tilde Q\bullet\tilde Q=\tfrac12(\tilde Q^{2}+\tilde Q^{2})=\tilde Q^{2}$, and the displayed
 form is the scalar-vector rule with $\tilde P=\tilde Q$.
 
-The square is the diagonal of the operation, and it is the ordinary square because the antisymmetric part
-vanishes on the diagonal: an alternating operation has zero diagonal, so the square carries the symmetric
+The square is the algebraic norm of the operation, and it is the ordinary square because the antisymmetric part
+vanishes at the two equal arguments: an alternating operation has zero diagonal, so the square carries the symmetric
 half alone. The polarisation of the square recovers the whole operation,
 
 $$

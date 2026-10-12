@@ -355,7 +355,7 @@ $$
 \tilde Q\star\tilde Q=\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural}=\tilde Q^{\natural}\tilde Q^{*} ,
 $$
 
-its scalar part is read on the diagonal of the four coordinates,
+its scalar part is the sum of the four coordinates read at the two equal arguments,
 
 $$
 \mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu\overline{Q_\mu}=|Q_0|^2-|Q_1|^2-|Q_2|^2-|Q_3|^2 ,

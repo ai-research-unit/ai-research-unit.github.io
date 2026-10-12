@@ -63,7 +63,7 @@ $$
 \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q})\,\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}\bigr) = 2\,N(\tilde{Q}) = 2\det\mathsf{M}_4(\tilde{Q}) ,
 $$
 
-so the diagonal of the pairing is twice the determinant of the element, the determinant of the regular matrix being its square.
+so the pairing at the two equal arguments is twice the determinant of the element, the determinant of the regular matrix being its square.
 
 **The Gram matrix and the signature.** In the coefficient basis the Gram matrix of the pairing is the identity $I_4$; over $\mathbb{R}$ the form is the split form of signature $(4,4)$ on the eight real coordinates, indefinite and non-degenerate.
 
@@ -77,7 +77,7 @@ so the diagonal of the pairing is twice the determinant of the element, the dete
 
 **A basis element.** Let $\tilde{Q}=e_1$. Then $\mathsf{M}_4(e_1)^{\mathsf{T}}=\mathsf{M}_4(e_1^{\natural})=-\mathsf{M}_4(e_1)$, so $\mathsf{M}_4(e_1)^{\mathsf{T}}\mathsf{M}_4(e_1)=-\mathsf{M}_4(e_1)^2=-\mathsf{M}_4(e_1^2)=\mathsf{M}_4(e_0)=I_4$, which is the product theorem at $\tilde{P}=\tilde{Q}=e_1$ and matches $e_1\star e_1=e_1^{\natural}e_1=-e_1^2=e_0$ with $N(e_1)=1$.
 
-**A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $N(\tilde{Q})=0$, so $\det\mathsf{M}_4(\tilde{Q})=0$ and the regular matrix is singular of rank two; the diagonal of the pairing is $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(\tilde{Q})^{\mathsf{T}})=2N(\tilde{Q})=0$, so the element is isotropic for the general quaternionic bilinear form, unlike its behaviour for the general plain bilinear form.
+**A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $N(\tilde{Q})=0$, so $\det\mathsf{M}_4(\tilde{Q})=0$ and the regular matrix is singular of rank two; the pairing at the two equal arguments is $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(\tilde{Q})^{\mathsf{T}})=2N(\tilde{Q})=0$, so the element is isotropic for the general quaternionic bilinear form, unlike its behaviour for the general plain bilinear form.
 
 ## The Matrices
 
@@ -166,6 +166,6 @@ The left regular representation reads the natural conjugation as the transpositi
 - *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the representation and its first properties
 - *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/the-4x4-matrix-element-representation-of-biquaternions.md`), for the further reading of the regular representation
 - *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the quaternionic product on the algebra
-- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the form on the algebra
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form on the algebra
 - *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-quaternionic-algebra-in-the-2x2-matrix-element-representation.md`), for the companion reading of the group
 - *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restriction theory of the form

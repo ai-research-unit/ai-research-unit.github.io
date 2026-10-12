@@ -20,7 +20,7 @@ Two questions organise the article, and they are the two the comparison asks of 
   one exactly on the cone. The nilpotent index of the cone rises from two in the first band to three in
   the second, and that index shift is the sharpest single contrast of the comparison.
 - **Is the cone a property of either product?** It is not. The cone is the null set of the interval form
-  $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, whose diagonal is the biquaternion norm,
+  $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, whose algebraic norm is the biquaternion norm,
   and of the four forms the corpus uses it is the null set of that one alone. The interval is what puts the
   cone into the algebra; the two products are what give it its two jobs.
 
@@ -289,7 +289,7 @@ The comparison uses four forms, and the cone is the null set of one of them. Wri
 shows that the cone is a property of the interval rather than of either product.
 
 The **interval** is the form $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, whose value is
-the sum $\sum_\mu P_\mu Q_\mu$, and whose diagonal is the biquaternion norm,
+the sum $\sum_\mu P_\mu Q_\mu$, and whose algebraic norm is the biquaternion norm,
 $N(\tilde Q,\tilde Q)=N(\tilde Q)$. The light cone is its null set by construction.
 
 The four forms are the forms of the four families of the grid, one to a family (*The Twelve Structures
@@ -300,7 +300,7 @@ it is the null set of the form of the **quaternionic bilinear** family and not o
 the natural conjugation is what produces the interval, while the plain product carries the sector sign.
 
 The **sector sign** is $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$, of signature $(4,4)$ on the
-complex space. Its diagonal is
+complex space. Its algebraic norm is
 
 $$
 B(\tilde Q,\tilde Q)=\mathrm{Sc}(\tilde Q^{2})=Q_0^{2}-\sum_k Q_k^{2},
@@ -314,7 +314,7 @@ from the other side, that the sector sign is definite on each sector and has no 
 causal structure belongs to the interval.
 
 The **probability weight** is the form $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$, whose value
-is the sum $\sum_\mu P_\mu\overline{Q_\mu}$, of signature $(8,0)$. Its diagonal is
+is the sum $\sum_\mu P_\mu\overline{Q_\mu}$, of signature $(8,0)$. Its algebraic norm is
 
 $$
 H(\tilde Q,\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2},
@@ -325,7 +325,7 @@ cone is invisible to the probability weight: no element of the cone is null for 
 outside it is null either.
 
 The **fourth form** is $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$, the gauge
-metric of the quaternionic sesquilinear product, whose diagonal is
+metric of the quaternionic sesquilinear product, whose algebraic norm is
 $\lvert Q_0\rvert^{2}-\sum_k\lvert Q_k\rvert^{2}$; it is indefinite, of realified signature $(2,6)$,
 positive on the centre and negative on the vector subspace.
 
@@ -359,7 +359,7 @@ $N=2$, so it lies in both of them and off the cone. The interval is therefore th
 whose null set is the cone, and the only one that meets the cone in all of it. The statement matters for
 the comparison, because it locates the cause of the cone. The cone is not "where the plain product
 vanishes" and it is not "where the sesquilinear product vanishes"; neither product is a quadratic form.
-The cone is where the interval vanishes, and the interval is the form whose diagonal is the norm. The two
+The cone is where the interval vanishes, and the interval is the form whose algebraic norm is the norm. The two
 products then take that one set and give it two different jobs, which is what the next two sections read.
 
 ## The Cone in the Composition Band: Propagation at the Speed of Light
@@ -428,7 +428,7 @@ a character and not an eigenvalue, an eigenvalue needing a unit and a spectral t
 the form-side counterpart. *The Quaternion Form as a Product: the Scalar Coupling of Two Material
 Operations* reads the interval $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ — the form
 the cone belongs to — as a comparison that "measures every direction and normalises none": its radical is
-trivial, so it separates every nonzero element from some partner, and its diagonal vanishes on the cone, so
+trivial, so it separates every nonzero element from some partner, and its algebraic norm vanishes on the cone, so
 it separates no lightlike element from itself. That is the exact counterpart in the composition row of the
 probability row's statement that the probability weight has no null vector.
 

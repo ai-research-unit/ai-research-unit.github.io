@@ -42,7 +42,7 @@ So the two products differ by the conjugate-linearity in the second argument, an
 
 **Proof.** Commutativity is the symmetry of the coordinate formulas, $ac+a'c'=ca+c'a$ and $ac'+a'c=ca'+c'a$; associativity is the associativity of the polynomial algebra $\mathbb{R}[x]/(x^2-1)$, or equally the identity $A(CD)=(AC)D$ checked on the three coordinates; and $1\cdot A=A\cdot 1=A$. The ring is the algebra, by definition of the multiplication of $\mathbb{D}$.
 
-The product $AC$ is the bilinear, commutative, associative operation with unit, the multiplication of the split-complex algebra. As a form it is the general plain bilinear form $B(A,C)=AC$ of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, whose diagonal is the first algebraic norm $B(A)=A^2$.
+The product $AC$ is the bilinear, commutative, associative operation with unit, the multiplication of the split-complex algebra. As a form it is the general plain bilinear form $B(A,C)=AC$ of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, whose algebraic norm is the first algebraic norm $B(A)=A^2$.
 
 **Proposition (the properties of $AC$).**
 
@@ -91,7 +91,7 @@ The structure is therefore not the ring but a **sesqualgebra**: a module over an
 | right unit | yes | $A\overline{1}=A$ |
 | alternative, flexible, power-associative | no | the same associator |
 
-The associator, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complex Space*, below this article in this category; as a form the product is the general plain sesquilinear form $H(A,C)=A\overline{C}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, whose diagonal is the second algebraic norm $H(A)=A\overline{A}=N(A)=a^2-a'^2$.
+The associator, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complex Space*, below this article in this category; as a form the product is the general plain sesquilinear form $H(A,C)=A\overline{C}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, whose algebraic norm is the second algebraic norm $H(A)=A\overline{A}=N(A)=a^2-a'^2$.
 
 ## The Two Products on the Idempotent Coordinates
 
@@ -147,7 +147,7 @@ The product $AC$ makes $\mathbb{D}$ a commutative, associative ring with two-sid
 | $AC\leftrightarrow(A_+C_+,A_-C_-)$ | the ring product in idempotent coordinates |
 | $A\overline{C}\leftrightarrow(A_+C_-,A_-C_+)$ | the sesquilinear product in idempotent coordinates |
 | $B(A,C)=AC$, $H(A,C)=A\overline{C}$ | the two products as the two forms |
-| $B(A)=A^2$, $H(A)=N(A)=A\overline{A}$ | their diagonals, the two algebraic norms |
+| $B(A)=A^2$, $H(A)=N(A)=A\overline{A}$ | their algebraic norms, the two algebraic norms |
 
 ## Further Reading
 

@@ -98,14 +98,14 @@ carries the roots of $+1$ that are **central** â€” that is $\tilde\Xi=\pm e_0$ â
 
 ## Summary
 
-In the symmetric quaternionic product the square is the diagonal of the form, $\tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0$ with $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$, so the roots of $-1$, of $0$ and of $+1$ are the three level sets $N=-1$, $N=0$ and $N=1$ of one quadratic form: a pair of affine hyperquadrics of complex dimension three and the cone between them, pairwise disjoint, invariant under the three conjugations, and related by the scaling $\tilde\Xi\mapsto\mu\tilde\Xi$ with $N(\mu\tilde\Xi)=\mu^2N(\tilde\Xi)$. The roots of $-1$ are parametrised by $\Xi_0^2=-1-(\mathbf\Xi,\mathbf\Xi)$ and contain the two central roots $\pm ie_0$; the roots of $0$ are exactly the square-zero elements and the isotropic cone, hence exactly the zero divisors of the parent algebra; the roots of $+1$ contain the four basis elements and the level set $N=1$ on the Hermitian subspaces. The affine map $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ of the parent carries only the two central roots of $+1$ to the idempotents $e_0$ and $0$ and no other, so the bijection between the roots and the idempotents fails in the block; and the identification of the roots of $0$ with the zero divisors holds only for the parent and not for the block, whose zero-divisor set is the whole punctured space.
+In the symmetric quaternionic product the square is the form at the two equal arguments, $\tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0$ with $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$, so the roots of $-1$, of $0$ and of $+1$ are the three level sets $N=-1$, $N=0$ and $N=1$ of one quadratic form: a pair of affine hyperquadrics of complex dimension three and the cone between them, pairwise disjoint, invariant under the three conjugations, and related by the scaling $\tilde\Xi\mapsto\mu\tilde\Xi$ with $N(\mu\tilde\Xi)=\mu^2N(\tilde\Xi)$. The roots of $-1$ are parametrised by $\Xi_0^2=-1-(\mathbf\Xi,\mathbf\Xi)$ and contain the two central roots $\pm ie_0$; the roots of $0$ are exactly the square-zero elements and the isotropic cone, hence exactly the zero divisors of the parent algebra; the roots of $+1$ contain the four basis elements and the level set $N=1$ on the Hermitian subspaces. The affine map $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ of the parent carries only the two central roots of $+1$ to the idempotents $e_0$ and $0$ and no other, so the bijection between the roots and the idempotents fails in the block; and the identification of the roots of $0$ with the zero divisors holds only for the parent and not for the block, whose zero-divisor set is the whole punctured space.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\tilde\Xi\star\tilde Q=N(\tilde\Xi,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
-| $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)=\sum_\mu \Xi_\mu^2$ | the diagonal of the form, the algebraic norm of the block |
+| $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)=\sum_\mu \Xi_\mu^2$ | the form at the two equal arguments, the algebraic norm of the block |
 | $N=-1$, $N=0$, $N=1$ | the roots of $-1$, of $0$, of $+1$ |
 | $(\mathbf\Xi,\mathbf\Xi)=0$ | the cone condition of the vector part for the level $0$ |
 | $e_0,e_1,e_2,e_3$ | the four roots of $+1$ of the basis |

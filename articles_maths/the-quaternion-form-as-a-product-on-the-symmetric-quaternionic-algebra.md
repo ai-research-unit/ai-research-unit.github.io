@@ -10,8 +10,7 @@ as the **form that the block carries**: it identifies it, computes its Gram matr
 realification and its signature, its invariance under the product and the failure of that invariance, its
 restriction to the remarkable subspaces, and its relation to the Hermitian form $H$ of the algebra.
 
-The form $N$ is the quaternion form named in the catalogue *The 12 Products of the Biquaternion Complex Space*, and it is the general quaternionic bilinear one of the four pairings of *The Four
-Pairings of the Biquaternion Algebra*; its diagonal is the norm of *Biquaternion
+The form $N$ is the quaternion form named in the catalogue *The 12 Products of the Biquaternion Complex Space*, and it is the general quaternionic bilinear one of the four pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; its diagonal is the norm of *Biquaternion
 Norm and Invertibility*, and on the remarkable subspaces its restrictions and their signatures are
 *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*, whose table is quoted here and
 not recomputed. The article therefore owns the reading of the form **as the form of the product** — the Gram
@@ -250,7 +249,7 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 
 ## Further Reading
 
-- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the quaternion form among the four pairings
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the quaternion form among the four pairings
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the quaternion form beside the other three coefficients
 - *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm, the polarisation and the Hermitian form
 - *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restriction Gram matrices and the signatures

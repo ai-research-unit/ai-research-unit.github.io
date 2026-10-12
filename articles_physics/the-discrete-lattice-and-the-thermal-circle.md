@@ -21,7 +21,9 @@ Charge and Three-Particle Couplings*.
 
 **Conventions.** $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$ is the unitary slice,
 $Sp(1)\cong SU(2)$ its real-quaternion part; the thermal circle is the compact imaginary-time direction of
-circumference $\beta\hbar$, and the Matsubara frequencies are $\omega_n=2\pi n/\beta\hbar$.
+circumference $\beta$ in the coordinate $t$, with $\beta=\hbar/(k_BT)$ the inverse temperature as throughout
+the corpus (its length in the material sector's units is $c\beta$), and the Matsubara frequencies are
+$\omega_n=2\pi n/\beta$.
 
 ## One Principle
 
@@ -38,7 +40,7 @@ that bridge them:
 |---|---|---|
 | the central phase $U(1)$ | the integer phase winding | the discrete charge label (*Particle Types*) |
 | the internal group $U(2)$, compact | its irreducible labels | internal quantum numbers, the discrete charge |
-| the thermal circle, circumference $\beta\hbar$ | the Matsubara frequencies $\omega_n=2\pi n/\beta\hbar$ | the thermal spectrum (*The Matsubara Formalism*) |
+| the thermal circle, circumference $\beta$ | the Matsubara frequencies $\omega_n=2\pi n/\beta$ | the thermal spectrum (*The Matsubara Formalism*) |
 | the unit sphere $Sp(1)\cong SU(2)$, compact | its finite subgroups and the orders above them | the finite unit groups and the discrete lattice (*Biquaternion Orders*) |
 
 The first two rows are the same mechanism read at two sizes: the compactness of the phase is why angular
@@ -53,10 +55,12 @@ integral lattices inside the compact group.
 The principle sharpens when the two disciplines are set side by side, because they are duals of **one**
 compact object and **two different** ones at once.
 
-**One object.** The thermal circle is the central phase at finite temperature. The Matsubara analytic
-continuation $t\mapsto-i\tau$ turns the time direction into the imaginary direction, and the imaginary
-direction is the central phase: the KMS condition is the statement of periodicity in that phase, and the
-modular flow it generates is the central rotation. So the circle whose dual is the Matsubara lattice is the
+**One object.** The thermal circle is the central phase at finite temperature. The imaginary
+direction is the material sector's own $ict$, not one produced by a rotation, and it is the central phase:
+the KMS condition is the statement of periodicity in that phase, and the modular flow it generates is the
+central rotation. The thermal theory is usually reached by the Wick rotation $t\mapsto-i\tau$, which reads
+that same direction as real; the direction itself is the material sector's, and the temperature
+compactifies it rather than rotating it. So the circle whose dual is the Matsubara lattice is the
 central phase compactified, and the discrete thermal spectrum and the discrete charge label are two
 characters of one compact phase. That is the unification the article's title names: **the lattice and the
 circle are dual interpretations of the compact central phase, one in the temperature and one in the charge.**
@@ -114,9 +118,9 @@ named as a gap and not proposed as a formula.
 |---|---|
 | $U(1)=e^{i\theta}e_0$ | the compact central phase, dual to the integer charge lattice |
 | $U\cong U(2)$ | the compact unitary slice, whose irreducible labels are the internal quantum numbers |
-| $\omega_n=2\pi n/\beta\hbar$ | the Matsubara frequencies, the dual lattice of the thermal circle |
+| $\omega_n=2\pi n/\beta$ | the Matsubara frequencies, the dual lattice of the thermal circle |
 | $Sp(1)\cong SU(2)$ | the compact real unit sphere, in which the orders and their finite unit groups sit |
-| $\beta\hbar$ | the circumference of the thermal circle |
+| $\beta=\hbar/(k_BT)$ | the circumference of the thermal circle, in the coordinate $t$ |
 
 ## Further Reading
 

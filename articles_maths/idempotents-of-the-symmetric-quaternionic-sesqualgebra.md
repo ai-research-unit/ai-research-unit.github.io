@@ -16,7 +16,7 @@ family indexed by the roots of $-1$ and are all zero divisors; the nontrivial id
 real sphere and are all regular, and the difference is the point of §*The Idempotents and the Other Classes*.
 
 The product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*; the diagonal
-$\tilde Q\star\tilde Q$ is *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
+$\tilde Q\star\tilde Q$ is *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic
 Sesqualgebra*; the zero divisors and the regular elements are *Zero Divisors of the Symmetric Quaternionic
 Sesqualgebra*; the roots of the central values are *Square Roots of Minus One, Zero and Plus One in the
 Symmetric Quaternionic Sesqualgebra*; and the idempotents of the plain product are *Idempotents of the
@@ -261,4 +261,4 @@ an orthogonal idempotent family nor a Peirce decomposition.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion that makes every nonzero idempotent regular.
 - *Nilpotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/nilpotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the class disjoint from the idempotents.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product and its diagonal.
-- *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal and the two halves out of which the equation is read.
+- *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal and the two halves out of which the equation is read.

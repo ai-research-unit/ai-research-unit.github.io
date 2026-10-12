@@ -17,7 +17,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html)
 - [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html)
 
-### Multiplications and Degree-2 Forms
+### Products, Forms and Algebraic Norms
 
 - [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html)
 - [Relations Between the Four General Products](../articles_maths/relations-between-the-four-general-products.html)
@@ -323,7 +323,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 #### Specific Theory
 
-- [The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-non-central-diagonal-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html)
+- [The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html)
 
 #### Form
 
@@ -373,23 +373,27 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 ### Synthesis of the Four General Products
 
-- [The Twelve Structures and Their Two Slots: the Two Algebras and the Two Sesqualgebras](../articles_maths/the-twelve-structures-and-their-two-slots-the-two-algebras-and-the-two-sesqualgebras.html)
-- [The Zero Divisors and the Twelve Structures](../articles_maths/the-zero-divisors-and-the-twelve-structures.html)
-- [The Zero Divisors and the Twelve Structures](../articles_maths/the-zero-divisors-and-the-twelve-structures.html)
-- [The Idempotents of the Twelve Structures](../articles_maths/the-idempotents-of-the-twelve-structures.html)
-- [The Square Roots of a Central Value in the Twelve Structures](../articles_maths/the-square-roots-of-a-central-value-in-the-twelve-structures.html)
-- [The Zero Divisors and the Twelve Structures](../articles_maths/the-zero-divisors-and-the-twelve-structures.html)
-- [The Four Pairings of the Biquaternion Algebra](../articles_maths/the-four-pairings-of-the-biquaternion-algebra.html)
-- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](../articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html)
+- [Zero Divisors](../articles_maths/zero-divisors.html)
+- [Annihilators](../articles_maths/annihilators.html)
+- [Idempotents](../articles_maths/idempotents.html)
+- [Nilpotents](../articles_maths/nilpotents.html)
+- [Square Roots of Minus One, Zero and Plus One](../articles_maths/square-roots-of-minus-one-zero-and-plus-one.html)
+- [Square Roots of a General Element](../articles_maths/square-roots-of-a-general-element.html)
 - [The General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared](../articles_maths/the-general-plain-algebra-and-the-general-plain-sesqualgebra-of-biquaternions-compared.html)
 
-### Basic Representations
+### Element Representations
 
 - [The Four-Vector Element Representation of Biquaternions](../articles_maths/the-four-vector-element-representation-of-biquaternions.html)
 - [The Polar Element Representation of Biquaternions](../articles_maths/the-polar-element-representation-of-biquaternions.html)
 - [Biquaternion Partial Polar Element Representations](../articles_maths/biquaternion-partial-polar-element-representations.html)
 - [The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.html)
 - [The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/the-4x4-matrix-element-representation-of-biquaternions.html)
+
+### Operators
+
+- [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](../articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html)
+
+### Operators Representations
 
 ## Topology
 

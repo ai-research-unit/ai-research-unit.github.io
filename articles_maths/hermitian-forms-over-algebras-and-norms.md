@@ -109,7 +109,7 @@ On $\mathbb{B} = M_2(\mathbb{C})$ the reduced norm is the determinant and the no
 
 ## Summary
 
-- The **norm map** of the algebra is $N(x) = xx^{*}$ and its polarisation is the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$; the diagonal of the form is $q(x) = \varphi(x^{*}x)$, which is the functional of the norm, $q(x) = \varphi(N(x))$, for a cyclic functional such as the trace.
+- The **norm map** of the algebra is $N(x) = xx^{*}$ and its polarisation is the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$; the form at the two equal arguments is $q(x) = \varphi(x^{*}x)$, which is the functional of the norm, $q(x) = \varphi(N(x))$, for a cyclic functional such as the trace.
 - The quaternion norm $N(x) = a^{2}-\alpha b^{2}-\beta c^{2}+\alpha\beta d^{2}$ is multiplicative, so the quaternion algebra is a composition algebra; its polarisation is the trace form, and the norm-one group is the compact group of the definite case.
 - The reduced norm of a central simple algebra is multiplicative and its polarisation is the reduced trace against the adjugate; it is in general **not** the Hermitian form of the dagger, as $\mathsf{M}_2$ shows.
 - For an involution of the first kind the reduced norm is invariant, for one of the second kind it is twisted by $\varsigma$.
@@ -122,7 +122,7 @@ On $\mathbb{B} = M_2(\mathbb{C})$ the reduced norm is the determinant and the no
 |---|---|
 | $N(x) = xx^{*}$ | the norm map of the algebra |
 | $\langle x,y\rangle$ | the trace form $\tfrac{1}{2}(xy^{*}+yx^{*})$ |
-| $q(x) = \varphi(N(x))$ | the diagonal of the form as the functional of the norm |
+| $q(x) = \varphi(N(x))$ | the form at the two equal arguments as the functional of the norm |
 | $\operatorname{Nrd}$, $\operatorname{Trd}$ | the reduced norm and the reduced trace |
 | $\operatorname{adj}$ | the adjugate of a matrix |
 | $\mathrm{Cl}(V,q)$ | the Clifford algebra with the dagger of *Hermitian Algebras* |

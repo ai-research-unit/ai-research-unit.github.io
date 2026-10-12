@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The two products of the complex space carry two **forms**, and their diagonals are the two **algebraic norms**. This article defines the two forms, separates them, reads the two norms, and states its one distinctive feature: a single function is both definite and multiplicative.
+The two products of the complex space carry two **forms**, and their algebraic norms are the two **algebraic norms**. This article defines the two forms, separates them, reads the two norms, and states its one distinctive feature: a single function is both definite and multiplicative.
 
 The two forms are the scalar parts of the two general products, and the two products and their collapse are *The Two Products of the Complex Space*. The topological norm $|\cdot|=\sqrt{H}$, its multiplicativity, the invertibility criterion and the group of units are owned by *Complex Norm and Invertibility*, below this article in this category, and are named here and not developed.
 
-**Conventions.** **Bar** is complex conjugation and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $A$ and $C$, and $B$ is not used for an element: $B$, $N$, $H$, $K$ are the four forms, of which $B$ and $H$ survive here. The letter $N$ is read with care: *Complex Norm and Invertibility*, below this article in this category, writes the positive definite norm as $N(A)=A\bar A$, which is the diagonal of $H$. The two readings are told apart by their argument count and by their chapter.
+**Conventions.** **Bar** is complex conjugation and the **Hermitian** mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $A$ and $C$, and $B$ is not used for an element: $B$, $N$, $H$, $K$ are the four forms, of which $B$ and $H$ survive here. The letter $N$ is read with care: *Complex Norm and Invertibility*, below this article in this category, writes the positive definite norm as $N(A)=A\bar A$, which is the algebraic norm of $H$. The two readings are told apart by their argument count and by their chapter.
 
 ## The Two Forms
 
@@ -38,7 +38,7 @@ and it is symmetric exactly on the real subspace, when the bar fixes both argume
 
 ## The Two Algebraic Norms
 
-The **algebraic norm** of a form is its diagonal, the form read at equal arguments. The two forms therefore give two algebraic norms,
+The **algebraic norm** of a form is its algebraic norm, the form read at equal arguments. The two forms therefore give two algebraic norms,
 
 $$
 B(A)=B(A,A)=A^{2},\qquad H(A)=H(A,A)=A\bar A=|A|^{2},
@@ -46,9 +46,9 @@ $$
 
 the square and the squared modulus of the element. So the complex space carries two norms and no more.
 
-Both norms are **multiplicative**: $B(AC)=(AC)^{2}=A^{2}C^{2}=B(A)B(C)$, and $H(AC)=|AC|^{2}=|A|^{2}|C|^{2}=H(A)H(C)$. The two differ in value and in definiteness. The value of $H$ is real and positive definite, $H(A)=|A|^{2}>0$ for $A\neq0$; the value of $B$ is complex and **anisotropic**, $B(A)=A^{2}=0$ only for $A=0$, so the diagonal of $B$ never vanishes off the origin, and its real part, $a^{2}-a'^{2}$, is indefinite. The anisotropy of $B$ over $\mathbb{C}$ and the indefiniteness of its realification are not in contradiction: the first is read on the complex values, which vanish only together with $A$, and the second on the real part alone, which changes sign.
+Both norms are **multiplicative**: $B(AC)=(AC)^{2}=A^{2}C^{2}=B(A)B(C)$, and $H(AC)=|AC|^{2}=|A|^{2}|C|^{2}=H(A)H(C)$. The two differ in value and in definiteness. The value of $H$ is real and positive definite, $H(A)=|A|^{2}>0$ for $A\neq0$; the value of $B$ is complex and **anisotropic**, $B(A)=A^{2}=0$ only for $A=0$, so the algebraic norm of $B$ never vanishes off the origin, and its real part, $a^{2}-a'^{2}$, is indefinite. The anisotropy of $B$ over $\mathbb{C}$ and the indefiniteness of its realification are not in contradiction: the first is read on the complex values, which vanish only together with $A$, and the second on the real part alone, which changes sign.
 
-| form | the diagonal | value | symmetric | conjugate-symmetric | Gram matrix | realified signature |
+| form | the algebraic norm | value | symmetric | conjugate-symmetric | Gram matrix | realified signature |
 |---|---|---|---|---|---|---|
 | $B$ | $B(A)=A^{2}$ | complex, anisotropic | yes | no | $[1]$ | $(1,1)$ |
 | $H$ | $H(A)=|A|^{2}$ | real, positive definite | no | yes | $[1]$ | $(2,0)$ |
@@ -63,7 +63,7 @@ The two properties are therefore joined here. A definite function is nonzero off
 
 ## Summary
 
-The two products of the complex space carry two forms, $B(A,C)=AC$ and $H(A,C)=A\bar C$, the collapse of the four forms $B$, $N$, $H$, $K$ to the two settings of the second slot; the four products and forms become two, $B=N$ and $H=K$. The two forms have the same Gram matrix $[1]$ over $\mathbb{C}$ and are separated by their symmetry alone, $B$ symmetric and $H$ conjugate-symmetric. Their diagonals are the two algebraic norms $B(A)=A^{2}$, complex and anisotropic, and $H(A)=|A|^{2}$, real and positive definite; both are multiplicative. One and the same function $H$ is both definite and multiplicative.
+The two products of the complex space carry two forms, $B(A,C)=AC$ and $H(A,C)=A\bar C$, the collapse of the four forms $B$, $N$, $H$, $K$ to the two settings of the second slot; the four products and forms become two, $B=N$ and $H=K$. The two forms have the same Gram matrix $[1]$ over $\mathbb{C}$ and are separated by their symmetry alone, $B$ symmetric and $H$ conjugate-symmetric. Their algebraic norms are $B(A)=A^{2}$, complex and anisotropic, and $H(A)=|A|^{2}$, real and positive definite; both are multiplicative. One and the same function $H$ is both definite and multiplicative.
 
 ## Summary of Notation
 

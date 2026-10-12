@@ -25,7 +25,7 @@ $$
 
 A Hermitian form that is neither positive semi-definite nor negative semi-definite is **indefinite**.
 
-**Remark.** The four definitions are the two signs read on the diagonal alone, and they are related by the involution of the sign: $h$ is negative semi-definite exactly when $-h$ is positive semi-definite, and negative definite exactly when $-h$ is positive definite. A definite form, positive or negative, has no nonzero isotropic vector, $h(x,x) = 0$ forcing $x = 0$; the converse fails in general, because an indefinite form can have no nonzero isotropic vector, as $x_{1}^{2} - 2x_{2}^{2}$ over $\mathbb{Q}$ shows, and the set of the isotropic vectors is the object of the next section. The indefinite forms are the complement of the two semi-definite classes, and their classification by inertia and signature is *The Indefinite Case and the Signature*.
+**Remark.** The four definitions are the two signs read at the two equal arguments alone, and they are related by the involution of the sign: $h$ is negative semi-definite exactly when $-h$ is positive semi-definite, and negative definite exactly when $-h$ is positive definite. A definite form, positive or negative, has no nonzero isotropic vector, $h(x,x) = 0$ forcing $x = 0$; the converse fails in general, because an indefinite form can have no nonzero isotropic vector, as $x_{1}^{2} - 2x_{2}^{2}$ over $\mathbb{Q}$ shows, and the set of the isotropic vectors is the object of the next section. The indefinite forms are the complement of the two semi-definite classes, and their classification by inertia and signature is *The Indefinite Case and the Signature*.
 
 ### The Diagonal
 
@@ -133,7 +133,7 @@ $$
 
 with $\Psi$ the $A$-valued form of *Hermitian Forms on a Sesqualgebra*, and consequently $h_{\varphi}$ is positive semi-definite if and only if $\varphi$ is nonnegative on the algebraic cone $C(A)$ of the Hermitian squares, and positive definite if and only if $\varphi$ is strictly positive on the nonzero elements of $C(A)$.
 
-*Proof.* The diagonal is $h_{\varphi}(x,x) = \varphi(x^{*}x)$ by the definition, and $x^{*}x = \Psi(x,x)$ is the diagonal of the $A$-valued form. A finite sum $\sum_{i}x_{i}^{*}x_{i}$ of Hermitian squares has $\varphi$-value $\sum_{i}\varphi(x_{i}^{*}x_{i})$ by the additivity of $\varphi$, so $\varphi \geq 0$ on all the squares is equivalent to $\varphi \geq 0$ on the cone they generate, which is the positive semi-definite case read on the diagonal. For the definite case, $h_{\varphi}(x,x) > 0$ for every $x \neq 0$ says $\varphi(x^{*}x) > 0$ for every $x \neq 0$; a nonzero element $c = \sum_i x_i^{*}x_i$ of the cone has at least one $x_i \neq 0$, so $\varphi(c) \geq \varphi(x_i^{*}x_i) > 0$, and conversely the strict positivity on the cone restricts to the nonzero squares.
+*Proof.* The diagonal is $h_{\varphi}(x,x) = \varphi(x^{*}x)$ by the definition, and $x^{*}x = \Psi(x,x)$ is the diagonal of the $A$-valued form. A finite sum $\sum_{i}x_{i}^{*}x_{i}$ of Hermitian squares has $\varphi$-value $\sum_{i}\varphi(x_{i}^{*}x_{i})$ by the additivity of $\varphi$, so $\varphi \geq 0$ on all the squares is equivalent to $\varphi \geq 0$ on the cone they generate, which is the positive semi-definite case read at the two equal arguments. For the definite case, $h_{\varphi}(x,x) > 0$ for every $x \neq 0$ says $\varphi(x^{*}x) > 0$ for every $x \neq 0$; a nonzero element $c = \sum_i x_i^{*}x_i$ of the cone has at least one $x_i \neq 0$, so $\varphi(c) \geq \varphi(x_i^{*}x_i) > 0$, and conversely the strict positivity on the cone restricts to the nonzero squares.
 
 ### The Properness Certificate
 
@@ -187,7 +187,7 @@ $$
 h(Q,Q) = \mathrm{Sc}(Q^{*}Q) = \sum_{\mu=0}^{3} \lvert Q_{\mu}\rvert^{2} ,
 $$
 
-the sum of the modulus squares of the coordinates, positive definite by *Norm and Invertibility in the General Plain Algebra*; the verdict is the positive definiteness of the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*, and its companion $\mathrm{Sc}(\bar QQ') = \sum_{\mu}\varepsilon_{\mu}\bar{Q_{\mu}}Q'_{\mu}$ is indefinite, of signature $(2,6)$ over $\mathbb{R}$, the general quaternionic sesquilinear form of *The Four Pairings of the Biquaternion Algebra*; here $\varepsilon=(1,-1,-1,-1)$ is the sign vector of the coefficient basis, so that the sum is the four terms $\bar Q_0Q'_0-\bar Q_1Q'_1-\bar Q_2Q'_2-\bar Q_3Q'_3$.
+the sum of the modulus squares of the coordinates, positive definite by *Norm and Invertibility in the General Plain Algebra*; the verdict is the positive definiteness of the form $\mathrm{Sc}(Q^{*}Q')$ of *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*, and its companion $\mathrm{Sc}(\bar QQ') = \sum_{\mu}\varepsilon_{\mu}\bar{Q_{\mu}}Q'_{\mu}$ is indefinite, of signature $(2,6)$ over $\mathbb{R}$, the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; here $\varepsilon=(1,-1,-1,-1)$ is the sign vector of the coefficient basis, so that the sum is the four terms $\bar Q_0Q'_0-\bar Q_1Q'_1-\bar Q_2Q'_2-\bar Q_3Q'_3$.
 
 ### The Split Algebra
 

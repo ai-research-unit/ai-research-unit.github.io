@@ -361,7 +361,7 @@ $$
 On a state $s\in S$ the same form is the module norm, $\langle s,s\rangle_{*}=\mathrm{Sc}(s^{\dagger}s)>0$.
 
 *Proof.* The first display is the definition of the Born pairing as the scalar part of the product; the second is
-its diagonal, the Euclidean square of the coefficient vector; the module statement is the restriction of the form to
+its algebraic norm, the Euclidean square of the coefficient vector; the module statement is the restriction of the form to
 the ideal.
 
 **Read as a physical statement.** The probability of the framework is a **product**: the amplitude of a state in

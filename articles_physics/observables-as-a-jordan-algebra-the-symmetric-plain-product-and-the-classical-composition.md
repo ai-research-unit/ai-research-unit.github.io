@@ -90,7 +90,7 @@ the asymmetry that makes the sector "the states" under one product and "the gene
 ## The Square of an Observable and Its Positivity
 
 **Proposition.** The square in the block is the ordinary square, $\tilde Q\bullet\tilde Q=\tilde Q^{2}$,
-so the square of an observable is an observable; and the square is the **diagonal** of the operation, in
+so the square of an observable is an observable; and the square is the **algebraic norm** of the operation, in
 the sense that the polarisation
 
 $$
@@ -99,7 +99,7 @@ $$
 
 recovers the product from the square alone.
 
-*Proof.* The antisymmetric part vanishes on the diagonal because it is alternating, so the block's square
+*Proof.* The antisymmetric part vanishes at the two equal arguments because it is alternating, so the block's square
 is the ordinary square, as in the companion article; the polarisation is the polarisation identity of a
 commutative bilinear operation and was recomputed on random pairs. The square and the polarisation are
 *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
@@ -178,7 +178,7 @@ $\tilde Q=h_0e_0+i\mathbf{h}\neq0$, and it **coincides with the Hermitian form**
 $\mathrm{Sc}(\tilde P\tilde Q^{*})$, the Born pairing of the frame.
 
 *Proof.* For $\tilde Q$ Hermitian, $\tilde Q^{*}=\tilde Q$, so
-$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$; the diagonal
+$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$; the algebraic norm
 is the sum of the squares of the four real coordinates $h_0,\mathbf{h}$.
 The Born pairing and the Hilbert–Schmidt interpretation are *The Hermitian Subspace $\mathbb{M}_+$ as the
 Informational Sector*.
@@ -234,7 +234,7 @@ the Symmetric Plain Algebra*, and its positivity as a form is *Positivity and th
 Biquaternion Algebra with Hermitian Adjoint*.
 
 **Proposed interpretation, speculative and labelled as such.** The symmetric half pairs an observable with
-itself and returns a positive observable; the antisymmetric half vanishes on the diagonal, so an
+itself and returns a positive observable; the antisymmetric half vanishes at the two equal arguments, so an
 observable is never incompatible with itself. Offered as a speculation, the symmetric half is the
 **Bose-like** composition — joint knowability, a symmetric pairing — and the antisymmetric half the
 **Fermi-like** one — no self-pairing, alternation. *Not claimed:* that the framework derives the
@@ -290,7 +290,7 @@ $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ closes the
 product of two observables is an observable, whereas the ordinary product splits into an observable part
 and a generator part. The observables form a commutative unital **special Jordan algebra** over
 $\mathbb{R}$ of real dimension four, with the unit $e_0$, the Jordan identity in place of associativity,
-and the square as the diagonal of the operation. The square of an observable is a positive observable,
+and the square as the algebraic norm of the operation. The square of an observable is a positive observable,
 and the algebra is formally real. Its trace form
 $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$ is
 symmetric, invariant, positive definite on $\mathbb{M}_+$, and equal there to the Hermitian Born pairing
@@ -307,7 +307,7 @@ are the closure, the positivity and the invariance, and none of the three interp
 | $\mathbb{M}_+$ | Hermitian (informational) subspace; the observables |
 | $\mathbb{M}_-$ | Anti-Hermitian (material) subspace; the generators |
 | $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$ | Observables split into observable part and generator part |
-| $\tilde Q^{2}$ | Square, equal to the ordinary square; the diagonal of the operation |
+| $\tilde Q^{2}$ | Square, equal to the ordinary square; the algebraic norm of the operation |
 | $(\tilde P+\tilde Q)^{2}-\tilde P^{2}-\tilde Q^{2}=2\tilde P\bullet\tilde Q$ | Polarisation of the square |
 | $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$ | Trace form of the block |
 | $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$ | Invariance, the trace identity |

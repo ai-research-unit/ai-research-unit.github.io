@@ -1,4 +1,4 @@
-# __The Annihilating Elements of the Six Structures__
+# __Annihilators__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ the **right annihilating set** is $r(\star)=\{\tilde x:\tilde y\star\tilde x=0\ 
 
 The left annihilating set is the common kernel of the left multiplication operators $L_{\tilde y}$, and $\tilde x\in\ell(\star)$ exactly when the operator $L_{\tilde x}$ is zero. It is a subspace, and for each of the six structures it is a two-sided ideal: it is carried into itself by multiplication on either side, trivially when it is $\{0\}$ and by the vanishing of the product when it is not. When $\star$ is commutative the two one-sided sets coincide.
 
-The **radical of the product** is the two-sided set read through the product; the radical of the form $\operatorname{Sc}(\tilde x\star\tilde y)$ contains it, being generally larger, and it is treated with the pairings in *The Two Pairings of the Quaternion Algebra*, below this article in this category. The two notions agree for the four structures whose form does not vanish identically, as the last section records.
+The **radical of the product** is the two-sided set read through the product; the radical of the form $\operatorname{Sc}(\tilde x\star\tilde y)$ contains it, being generally larger, and it is treated with the two forms of the two general products in *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, above this article in this category. The two notions agree for the four structures whose form does not vanish identically, as the last section records.
 
 ## The Criterion
 
@@ -78,7 +78,7 @@ The annihilating set is the thinnest of the element theories: an element that ki
 $$
 \ell(\star)\subseteq\{0\}\cup\{\text{zero divisors of }\star\} ,
 $$
-with equality only when every zero divisor annihilates the whole space. The inclusion is strict for every structure of the six that has a zero divisor, and the gap is the subject of *The Zero Divisors and the Six Structures*, below this article in this category. The two extremes are the general plain product, where both sets are $\{0\}$, and the cross products, where the zero-divisor set is the whole punctured space while the annihilating set is a line or a point.
+with equality only when every zero divisor annihilates the whole space. The inclusion is strict for every structure of the six that has a zero divisor, and the gap is the subject of *Zero Divisors*, below this article in this category. The two extremes are the general plain product, where both sets are $\{0\}$, and the cross products, where the zero-divisor set is the whole punctured space while the annihilating set is a line or a point.
 
 **Consequence for the forms.** A product that vanishes for every second argument has zero scalar part, so the annihilating set of the product is contained in the radical of the associated form,
 $$
@@ -106,5 +106,5 @@ The left, the right and the two-sided annihilating sets of the general plain pro
 - *The Two General Products of the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-two-general-products-of-the-quaternion-r-space.md`), for the products.
 - *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`), for the six products and their laws.
 - *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six structures and their names.
-- *The Two Pairings of the Quaternion Algebra* (`articles_maths/the-two-pairings-of-the-quaternion-algebra.md`), below this article in this category, for the radicals of the forms.
-- *The Zero Divisors and the Six Structures* (`articles_maths/the-zero-divisors-and-the-six-structures.md`), below this article in this category, for the companion question of the zero divisors.
+- *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), above this article in this category, for the radicals of the two forms.
+- *Zero Divisors* (`articles_maths/quaternion-zero-divisors.md`), above this article in this category, for the companion question of the zero divisors.

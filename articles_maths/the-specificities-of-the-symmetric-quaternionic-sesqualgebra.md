@@ -25,7 +25,7 @@ product satisfies the second and not the first. The law is therefore sharp, and 
 border it are named and used as the witnesses of the sharpness.
 
 The product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*; its diagonal is
-*The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; its element theory
+*The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; its element theory
 is *Norm and Invertibility in the Symmetric Quaternionic Sesqualgebra*, *Zero Divisors of the Symmetric
 Quaternionic Sesqualgebra*, *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic
 Sesqualgebra*, *Square Roots of a General Element in the Symmetric Quaternionic Sesqualgebra*,
@@ -121,7 +121,7 @@ The isolation is sharp, and each clause alone is satisfied by another structure:
 Krein form, so the diagonal of the block is
 $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$; the
 non-centrality of the diagonal, the shape of the idempotents and the square-zero cone all follow from that
-one formula, as in *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic
+one formula, as in *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic
 Sesqualgebra*, *Idempotents of the Symmetric Quaternionic Sesqualgebra* and *Nilpotents of the Symmetric
 Quaternionic Sesqualgebra*.
 

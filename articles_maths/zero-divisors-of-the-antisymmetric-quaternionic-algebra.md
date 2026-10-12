@@ -3,30 +3,29 @@
 ## Introduction
 
 The zero divisor is defined by an equation in which the product occurs, so it is a class of the
-product and not of the space (*Definitions for the Study of the 12 Algebraic Structures*,
-§*The Zero Divisor and the Annihilator*). The block of this article is the antisymmetric
-quaternionic multiplication
+product and not of the space (*Definitions for the Study of the 12 Algebraic Structures*, §*The
+Zero Divisor and the Annihilator*). The block of this article is the antisymmetric quaternionic
+multiplication
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
 =P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
 $$
-which is alternating and without a unit (*Introduction to the Antisymmetric Quaternionic Algebra
-of Biquaternions*). The article determines its zero-divisor set in full and compares the set
-with the sets of the neighbouring products.
+which is alternating and without a unit (*Introduction to the Antisymmetric Quaternionic Algebra of
+Biquaternions*). The article determines its zero-divisor set in full and compares the set with the
+sets of the neighbouring products.
 
 The answer is total and it is not the answer of the general products. Since the block is
-**alternating**, $\tilde X\diamond\tilde X=0$ for every $\tilde X$, and an element may therefore
-be annihilated by itself: **every nonzero element of $\mathbb{B}$ is a two-sided zero divisor of
-the block**, with itself as the annihilating partner. The zero-divisor set of the block is the
-whole punctured space $\mathbb{B}\setminus\{0\}$, strictly larger than the set of the four
-general products, which is the zero set of the central square; it is the largest a zero-divisor
-set can be, and six of the twelve structures attain it, the block among them. The
-classification into a pure and a non-pure family, which the general products carry, degenerates
-here: the criterion is met by every element and the two families merge. What does not degenerate
-is the annihilator, whose dimension drops on the isotropic cone of the parent form, and that
-drop is the second subject of the article. The vanishing of the product on pairs is owned by the
-remarkable-subspaces article of the block, and the alternating centre is owned by the Jacobi
-article; both are cited.
+**alternating**, $\tilde X\diamond\tilde X=0$ for every $\tilde X$, and an element may therefore be
+annihilated by itself: **every nonzero element of $\mathbb{B}$ is a two-sided zero divisor of the
+block**, with itself as the annihilating partner. The zero-divisor set of the block is the whole
+punctured space $\mathbb{B}\setminus\{0\}$, strictly larger than the set of the four general
+products, which is the zero set of the central square; it is the largest a zero-divisor set can be,
+and six of the twelve structures attain it, the block among them. The classification into a pure
+and a non-pure family, which the general products carry, degenerates here: the criterion is met by
+every element and the two families merge. What does not degenerate is the annihilator, whose
+dimension drops on the isotropic cone of the parent form, and that drop is the second subject of
+the article. The vanishing of the product on pairs is owned by the remarkable-subspaces article of
+the block, and the alternating centre is owned by the Jacobi article; both are cited.
 
 ## The Notion and Its Product
 
@@ -37,8 +36,8 @@ divisor of $\star$** when $\tilde Q\neq0$ and there is a nonzero $\tilde R$ with
 $\tilde R\star\tilde Q=0$; a **zero divisor of $\star$** when it is one or the other; and a
 **two-sided zero divisor of $\star$** when it is both.
 
-**Definition (annihilator).** The **left annihilator** and the **right annihilator** of
-$\tilde Q$ in $\star$ are
+**Definition (annihilator).** The **left annihilator** and the **right annihilator** of $\tilde Q$
+in $\star$ are
 $$
 A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
 B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
@@ -54,8 +53,8 @@ Quaternionic Product*; the two sets are compared at §*The Set and the Compariso
 ## The Criterion
 
 **Theorem (the criterion for the block).** Every nonzero element of $\mathbb{B}$ is a two-sided
-zero divisor of the antisymmetric quaternionic multiplication; equivalently, the zero-divisor
-set of the block is the punctured space
+zero divisor of the antisymmetric quaternionic multiplication; equivalently, the zero-divisor set
+of the block is the punctured space
 $$
 \{\tilde Q\in\mathbb{B}:\tilde Q\text{ a zero divisor of }\diamond\}=\mathbb{B}\setminus\{0\}.
 $$
@@ -63,130 +62,59 @@ $$
 *Proof.* The block is alternating, $\tilde X\diamond\tilde X=0$ for every $\tilde X$, by
 *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*. Given a nonzero
 $\tilde Q$, the element $\tilde R=\tilde Q$ is nonzero and satisfies
-$\tilde Q\diamond\tilde R=\tilde Q\diamond\tilde Q=0$, so $\tilde Q$ is a left zero divisor of
-the block; and it satisfies $\tilde R\diamond\tilde Q=\tilde Q\diamond\tilde Q=0$, so it is a
-right zero divisor as well. The origin is excluded by the definition, its partner being required
-to be nonzero.
+$\tilde Q\diamond\tilde R=\tilde Q\diamond\tilde Q=0$, so $\tilde Q$ is a left zero divisor of the
+block; and it satisfies $\tilde R\diamond\tilde Q=\tilde Q\diamond\tilde Q=0$, so it is a right
+zero divisor as well. The origin is excluded by the definition, its partner being required to be
+nonzero.
 
-The criterion is therefore the alternation of the product read as an element statement, and it
-is met by **every** nonzero element. The element $\tilde Q$ is its own annihilating partner, and
-the line $\mathbb{C}\tilde Q$ always lies in the annihilator of $\tilde Q$ on both sides.
+The criterion is therefore the alternation of the product read as an element statement, and it is
+met by **every** nonzero element. The element $\tilde Q$ is its own annihilating partner, and the
+line $\mathbb{C}\tilde Q$ always lies in the annihilator of $\tilde Q$ on both sides.
 
 ## The Annihilator and the Rank
 
-The annihilator of $\tilde Q$ is the kernel of a left or a right multiplication, and for an
-alternating product the two multiplications are the negatives of one another, so the two
-annihilators coincide.
-
-**Proposition (the two annihilators coincide).** For every $\tilde P$,
-$$
-B_\diamond(\tilde P)=A_\diamond(\tilde P)=\ker L_{\tilde P},\qquad
-L_{\tilde P}\tilde X=\tilde P\diamond\tilde X .
-$$
-
-*Proof.* Alternation gives $\tilde X\diamond\tilde P=-\tilde P\diamond\tilde X$, so
-$\tilde X\diamond\tilde P=0$ exactly when $\tilde P\diamond\tilde X=0$; the two annihilators
-are therefore one set, the kernel of $L_{\tilde P}$.
-
-**Proposition (the operator and its characteristic polynomial).** In the basis
-$e_0,e_1,e_2,e_3$ the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has
-matrix
-$$
-\begin{pmatrix}
-0 & 0 & 0 & 0 \\
--P_1 & P_0 & P_3 & -P_2 \\
--P_2 & -P_3 & P_0 & P_1 \\
--P_3 & P_2 & -P_1 & P_0
-\end{pmatrix},
-$$
-its trace is $3P_0$, its determinant is $0$, and its characteristic polynomial is
-$$
-\chi_{L_{\tilde P}}(t)=t\,(t-P_0)\bigl(t^{2}-2P_0t+C(\tilde P)\bigr),\qquad
-C(\tilde P)=\sum_{\mu=0}^{3}P_\mu^{2} .
-$$
-The operator is never invertible, and it vanishes exactly at $\tilde P=0$.
-
-*Proof.* The columns are the values of the block on the basis, read from the explicit form or
-from the table of *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*: the
-first column is $-\mathbf P$ because $e_0$ has zero scalar part and the mixed term
-$-X_0\mathbf P$ survives, and the remaining three columns are $P_0e_k-\mathbf P\times e_k$. The
-lower three-by-three block is $P_0\mathrm{I}_3-[\mathbf P]_\times$, whose eigenvalues are
-$P_0$, $P_0+i s$ and $P_0-i s$ with $s^{2}=(\mathbf P,\mathbf P)$, so its characteristic
-polynomial is $t^{2}-2P_0t+P_0^{2}+(\mathbf P,\mathbf P)=t^{2}-2P_0t+C(\tilde P)$; the extra
-eigenvalue $0$ is the first column, and the trace $3P_0$ is the sum
-$0+P_0+(P_0+is)+(P_0-is)$. The determinant is the constant term of the polynomial, which is
-zero, and $L_{\tilde P}=0$ forces $\mathbf P=0$ from the first column and then $P_0=0$ from the
-remaining three.
-
-**Corollary (the rank and the annihilator).** The rank of $L_{\tilde P}$ and the dimension of
-the annihilator of $\tilde P$ are
-
-| $\tilde P$ | $C(\tilde P)$ | $\operatorname{rank}L_{\tilde P}$ | $\dim\ker L_{\tilde P}$ |
-|---|---|---|---|
-| $0$ | $0$ | $0$ | $4$ |
-| $\tilde P\neq0$ with $C(\tilde P)\neq0$ | $\neq0$ | $3$ | $1$ |
-| $\tilde P\neq0$ with $C(\tilde P)=0$ | $0$ | $2$ | $2$ |
-
-*Proof.* Write $N=P_0\mathrm{I}_3-[\mathbf P]_\times$ for the lower block, so that
-$N\mathbf P=P_0\mathbf P$. If $C(\tilde P)\neq0$, then $N$ has the three eigenvalues
-$P_0,P_0\pm is$ with $s^{2}=(\mathbf P,\mathbf P)$ and no zero among them when $P_0\neq0$, so
-$N$ has rank three and the operator has rank three; when $P_0=0$ and $C(\tilde P)\neq0$ the
-eigenvalues are $0,\pm is$ with $s^{2}=C(\tilde P)\neq0$, so $N$ has rank two, its image is the
-plane orthogonal to $\mathbf P$, and the first column $-\mathbf P$ is not in that plane because
-$(\mathbf P,\mathbf P)=C(\tilde P)\neq0$; the first column adds one to the rank, which is again
-three. If $C(\tilde P)=0$ and $\tilde P\neq0$, then $N$ has rank two — its eigenvalues are
-$P_0,0,2P_0$ when $P_0\neq0$, and $0$ with multiplicity three when $P_0=0$ — and the first
-column adds nothing: when $P_0\neq0$ one has $N\mathbf P=P_0\mathbf P$, so $\mathbf P$ is a
-column of $N$, and when $P_0=0$ one has $(\mathbf P,\mathbf P)=C(\tilde P)=0$, so the isotropic
-vector $\mathbf P$ lies in the image $\{\mathbf P\times\mathbf v\}$ of $[\mathbf P]_\times$. The
-rank is two in both cases. Finally $\tilde P=0$ gives the zero operator. The annihilator has
-dimension $4-\operatorname{rank}L_{\tilde P}$.
-
-The drop of the rank is read off the **central square** $C(\tilde P)=\sum_\mu P_\mu^{2}$, which
-is also the criterion of the zero divisor of the parent quaternionic product: the operator of
-the block is of rank two, and the annihilator of the element two-dimensional, exactly on the
-zero-divisor cone of the parent. For every element the line $\mathbb{C}\tilde P$ lies in the
-annihilator; on the cone the annihilator is the larger two-dimensional plane that contains it.
-At the element $e_0$ the annihilator is the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, of
-dimension one, since $L_{e_0}=\mathbf X$ vanishes exactly on the pure scalars.
+The annihilator of an element is the kernel of the left multiplication, the two sides coinciding
+because the block is alternating; it contains the line $\mathbb{C}\tilde P$, and the operator has
+the rank table of the block. The annihilator, the operator with its characteristic polynomial, the
+rank table and the reading on the remarkable subspaces are the companion article *Annihilators of
+the Antisymmetric Quaternionic Algebra*, below this article in this category.
 
 ## The Two Families Degenerate
 
 The general products come with a classification of the zero divisors into two families, the pure
-and the non-pure, and the classification is made by the vanishing of the central square
-(*Zero Divisors of the General Plain Algebra*, §*The Two Families of Zero Divisors*). For the
-block the classification collapses.
+and the non-pure, and the classification is made by the vanishing of the central square (*Zero
+Divisors of the General Plain Algebra*, §*The Two Families of Zero Divisors*). For the block the
+classification collapses.
 
-**Proposition (the classification collapses).** For the block the criterion of the zero divisor
-is met on the whole punctured space and not on the central-square cone alone; both the pure
-elements and the non-pure elements are zero divisors, and the division into two families is not
-available. The only subclass the rank computation separates is the subclass of the isotropic
-elements, the cone $C(\tilde P)=0$, and it separates the shape of the annihilator and not the
-zero-divisor class.
+**Proposition (the classification collapses).** For the block the criterion of the zero divisor is
+met on the whole punctured space and not on the central-square cone alone; both the pure elements
+and the non-pure elements are zero divisors, and the division into two families is not available.
+The only subclass the rank computation separates is the subclass of the isotropic elements, the
+cone $C(\tilde P)=0$, and it separates the shape of the annihilator and not the zero-divisor class.
 
-*Proof.* The criterion is the theorem of §*The Criterion*, which holds for every nonzero
-element and mentions no scalar part; the pure elements $\tilde P=\mathbf P$ and the non-pure
-elements $\tilde P=P_0e_0+\mathbf P$ with $P_0\neq0$ satisfy it in the same way. The
-central-square cone $C(\tilde P)=0$ is the locus of the rank drop of
-§*The Annihilator and the Rank*, and it is neither empty nor the whole space, so it separates
-the annihilators without separating the zero-divisor class.
+*Proof.* The criterion is the theorem of §*The Criterion*, which holds for every nonzero element
+and mentions no scalar part; the pure elements $\tilde P=\mathbf P$ and the non-pure elements
+$\tilde P=P_0e_0+\mathbf P$ with $P_0\neq0$ satisfy it in the same way. The central-square cone
+$C(\tilde P)=0$ is the locus of the rank drop of §*The Annihilator and the Rank*, and it is neither
+empty nor the whole space, so it separates the annihilators without separating the zero-divisor
+class.
 
 The collapse is the removal of the scalar part in the sharpest form. In the parent quaternionic
-product the square of an element is central and the equation of the zero divisor is the
-vanishing of that central square; in the block the square is a pure vector and vanishes for
-every element, so the equation of the zero divisor is satisfied identically and the
-classification it used to carry is gone.
+product the square of an element is central and the equation of the zero divisor is the vanishing
+of that central square; in the block the square is a pure vector and vanishes for every element, so
+the equation of the zero divisor is satisfied identically and the classification it used to carry
+is gone.
 
 ## The Set and the Comparison
 
-The four general products give four definitions of the zero divisor, and for the biquaternion
-space the four definitions select one and the same set,
+The four general products give four definitions of the zero divisor, and for the biquaternion space
+the four definitions select one and the same set,
 $$
 \{\tilde Q\neq0:\ C(\tilde Q)=0\},
 $$
-a theorem about the algebra and not a property of the definitions (*The Zero Divisors and the Twelve Structures*, §*The Four Zero-Divisor Sets Coincide*; *Definitions for the Study of
-the 12 Algebraic Structures*, §9). The set of the block differs from it, and the difference is
-the content of the comparison.
+a theorem about the algebra and not a property of the definitions (**Zero Divisors**, §*The Four General Products Coincide*; *Definitions for the Study of the 12 Algebraic
+Structures*, §9). The set of the block differs from it, and the difference is the content of the
+comparison.
 
 **Proposition (the comparison).** The zero-divisor set of the block is the punctured space
 $\mathbb{B}\setminus\{0\}$, and the zero-divisor set of each of the four general products is the
@@ -194,29 +122,28 @@ proper subset $\{\tilde Q\neq0:C(\tilde Q)=0\}$. The block's set strictly contai
 them, the witness being $e_0$, and it is as large as a zero-divisor set can be. Among the twelve
 the punctured space occurs exactly for the six structures in which every nonzero element has a
 nonzero annihilating partner: the block, the antisymmetric plain algebra, the two antisymmetric
-sesquilinear halves, whose partner is the Hermitian conjugate of the element, and the two
-symmetric halves whose value is the central reading of a non-degenerate form.
+sesquilinear halves, whose partner is the Hermitian conjugate of the element, and the two symmetric
+halves whose value is the central reading of a non-degenerate form.
 
-*Proof.* The block's set is the theorem of §*The Criterion*. The set of the four general
-products is the cited theorem, and $C$ vanishes at $0$ and on a cone that is not the whole
-space, so the inclusion is strict: the element $e_0$ has $c(e_0)=1$ and is a zero divisor of the
-block, with partner itself, while it is not a zero divisor of the general products. For the six,
-the partners are displayed. An element of the block or of $\mathrm{APA}$ is annihilated by
-itself, the two products being alternating. An element of $\mathrm{AQS}$ or of $\mathrm{APS}$ is
-annihilated by its Hermitian conjugate $\overline{\tilde X}$, since
-$\tilde X\star\overline{\tilde X}=0$ in the two. In $\mathrm{SQA}$ and $\mathrm{SPS}$ the value
-is $N(\tilde X,\tilde Y)e_0$ and $H(\tilde X,\tilde Y)e_0$ with $N$ and $H$ non-degenerate, so
-at a nonzero $\tilde X$ the annihilating equation is a single nontrivial condition on
-$\tilde Y$, linear for $N$ and conjugate-linear for $H$, and it has a nonzero solution. For the
-other six, $e_0$ has an injective left
-multiplication: $e_0\star\tilde Y$ is $\tilde Y$ in $\mathrm{GPA}$, $\mathrm{GQA}$ and
-$\mathrm{SPA}$ and the star of $\tilde Y$ in $\mathrm{GPS}$, $\mathrm{GQS}$ and $\mathrm{SQS}$,
-and it vanishes only at $\tilde Y=0$; the element $e_0$ is therefore not a zero divisor of those
-six, and their sets are strictly smaller than the punctured space.
+*Proof.* The block's set is the theorem of §*The Criterion*. The set of the four general products
+is the cited theorem, and $C$ vanishes at $0$ and on a cone that is not the whole space, so the
+inclusion is strict: the element $e_0$ has $c(e_0)=1$ and is a zero divisor of the block, with
+partner itself, while it is not a zero divisor of the general products. For the six, the partners
+are displayed. An element of the block or of $\mathrm{APA}$ is annihilated by itself, the two
+products being alternating. An element of $\mathrm{AQS}$ or of $\mathrm{APS}$ is annihilated by its
+Hermitian conjugate $\overline{\tilde X}$, since $\tilde X\star\overline{\tilde X}=0$ in the two.
+In $\mathrm{SQA}$ and $\mathrm{SPS}$ the value is $N(\tilde X,\tilde Y)e_0$ and
+$H(\tilde X,\tilde Y)e_0$ with $N$ and $H$ non-degenerate, so at a nonzero $\tilde X$ the
+annihilating equation is a single nontrivial condition on $\tilde Y$, linear for $N$ and
+conjugate-linear for $H$, and it has a nonzero solution. For the other six, $e_0$ has an injective
+left multiplication: $e_0\star\tilde Y$ is $\tilde Y$ in $\mathrm{GPA}$, $\mathrm{GQA}$ and
+$\mathrm{SPA}$ and the star of $\tilde Y$ in $\mathrm{GPS}$, $\mathrm{GQS}$ and $\mathrm{SQS}$, and
+it vanishes only at $\tilde Y=0$; the element $e_0$ is therefore not a zero divisor of those six,
+and their sets are strictly smaller than the punctured space.
 
 The punctured space is therefore not the block's alone. It is the largest a zero-divisor class can
-be, and the six structures above attain it, each by the pairing its own product carries: the element
-itself for the two alternating products, the Hermitian conjugate for the two antisymmetric
+be, and the six structures above attain it, each by the pairing its own product carries: the
+element itself for the two alternating products, the Hermitian conjugate for the two antisymmetric
 sesquilinear halves, and the solution of one linear equation for the two symmetric halves. The
 difference from the four general products, on the other hand, is the whole content of the question
 of the block: the block is not a product whose square is central, and the zero-divisor criterion of
@@ -225,46 +152,46 @@ the algebra is not its criterion.
 ## The Relation to the Remarkable Subspaces
 
 **Proposition (the restriction).** On each of the remarkable subspaces the block restricts to an
-operation whose zero-divisor class is the same relative class: the nonzero elements of the
-centre are zero divisors with themselves as partners, and likewise on the vector subspace, the
-quaternion subspace, the anti-quaternion subspace and the two Hermitian subspaces.
+operation whose zero-divisor class is the same relative class: the nonzero elements of the centre
+are zero divisors with themselves as partners, and likewise on the vector subspace, the quaternion
+subspace, the anti-quaternion subspace and the two Hermitian subspaces.
 
-*Proof.* On each subspace the restriction of the block is again alternating, the square of each
-of its elements vanishing as the square of an element of the ambient algebra vanishes; the
-criterion of §*The Criterion* is therefore met by every nonzero element of the subspace, and the
-partner is the element itself.
+*Proof.* On each subspace the restriction of the block is again alternating, the square of each of
+its elements vanishing as the square of an element of the ambient algebra vanishes; the criterion
+of §*The Criterion* is therefore met by every nonzero element of the subspace, and the partner is
+the element itself.
 
 The subspaces differ in the annihilator, and the difference is the rank drop. On the centre the
 operation vanishes identically, so the annihilator of a nonzero central element is the centre
-itself, the line $\mathbb{C}e_0$, and the restricted operation is the zero operation. On the
-vector subspace, where the operation is the negative of the cross product, the annihilator of a
-nonzero pure element in the ambient space is the line through it when the element is not
-isotropic, and, when it is, the plane spanned by the element and by
-$e_0+i\,(\mathbf u\times\mathbf v)/(\mathbf u,\mathbf u)$, where $\mathbf u+i\,\mathbf v$ is
-the element with $\mathbf u$ and $\mathbf v$ real, $(\mathbf u,\mathbf u)=(\mathbf v,\mathbf v)\neq0$
+itself, the line $\mathbb{C}e_0$, and the restricted operation is the zero operation. On the vector
+subspace, where the operation is the negative of the cross product, the annihilator of a nonzero
+pure element in the ambient space is the line through it when the element is not isotropic, and,
+when it is, the plane spanned by the element and by
+$e_0+i\,(\mathbf u\times\mathbf v)/(\mathbf u,\mathbf u)$, where $\mathbf u+i\,\mathbf v$ is the
+element with $\mathbf u$ and $\mathbf v$ real, $(\mathbf u,\mathbf u)=(\mathbf v,\mathbf v)\neq0$
 and $(\mathbf u,\mathbf v)=0$; inside the vector subspace the annihilator is the line through the
-element in both cases, since the cross product of a nonzero pure element with another pure
-element vanishes exactly on the line of the first. The table of the operations on the subspaces
-and the elements whose bracket vanishes are *Remarkable Subspaces under the Antisymmetric
-Quaternionic Algebra of Biquaternions*.
+element in both cases, since the cross product of a nonzero pure element with another pure element
+vanishes exactly on the line of the first. The table of the operations on the subspaces and the
+elements whose bracket vanishes are *Remarkable Subspaces under the Antisymmetric Quaternionic
+Algebra of Biquaternions*.
 
 ## Summary
 
-For the antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ the zero-divisor class is total: every nonzero element
-is a two-sided zero divisor, with itself as the annihilating partner, because the block is
-alternating and the square of each element vanishes. The zero-divisor set is the punctured space
-$\mathbb{B}\setminus\{0\}$, and it strictly contains the common zero-divisor set
-$\{C(\tilde Q)=0\}\setminus\{0\}$ of the four general products; it is the largest a zero-divisor
-set can be, and among the twelve it occurs for the six structures whose product pairs every
-nonzero element with a nonzero annihilating partner. The
-annihilators of the two sides coincide and are the kernel of the left multiplication operator,
-whose matrix is displayed, whose trace is $3P_0$ and whose characteristic polynomial is
-$t(t-P_0)(t^{2}-2P_0t+C)$; its rank drops from three to two exactly on the central-square cone
-$C(\tilde Q)=0$, the zero-divisor cone of the parent product, and the annihilator correspondingly
-grows from the line $\mathbb{C}\tilde Q$ to a plane. The classification of the zero divisors into
-two families, which the general products carry, does not exist for the block, the criterion being
-met by the pure and the non-pure elements alike, and the only subclass the annihilator separates
-is the isotropic one.
+For the antisymmetric quaternionic multiplication
+$\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ the zero-divisor
+class is total: every nonzero element is a two-sided zero divisor, with itself as the annihilating
+partner, because the block is alternating and the square of each element vanishes. The zero-divisor
+set is the punctured space $\mathbb{B}\setminus\{0\}$, and it strictly contains the common
+zero-divisor set $\{C(\tilde Q)=0\}\setminus\{0\}$ of the four general products; it is the largest
+a zero-divisor set can be, and among the twelve it occurs for the six structures whose product
+pairs every nonzero element with a nonzero annihilating partner. The annihilators of the two sides
+coincide and are the kernel of the left multiplication operator, whose matrix is displayed, whose
+trace is $3P_0$ and whose characteristic polynomial is $t(t-P_0)(t^{2}-2P_0t+C)$; its rank drops
+from three to two exactly on the central-square cone $C(\tilde Q)=0$, the zero-divisor cone of the
+parent product, and the annihilator correspondingly grows from the line $\mathbb{C}\tilde Q$ to a
+plane. The classification of the zero divisors into two families, which the general products carry,
+does not exist for the block, the criterion being met by the pure and the non-pure elements alike,
+and the only subclass the annihilator separates is the isotropic one.
 
 ## Summary of Notation
 
@@ -282,7 +209,8 @@ is the isotropic one.
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the zero divisor and the annihilator of a general product and for the relativity of the definition
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its alternation and its table
-- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the coincidence of the four zero-divisor sets and the product-dependent annihilators
+- *Zero Divisors* (`articles_maths/zero-divisors.md`), for the coincidence of the four zero-divisor sets and the product-dependent annihilators
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion, the two families and the structure of the zero divisors of the plain product
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), for the parent product's zero-divisor cone, on which the rank of the block's operator drops
 - *Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the elements whose bracket vanishes and for the reading on the subspaces
+- *Annihilators of the Antisymmetric Quaternionic Algebra* (`articles_maths/annihilators-of-the-antisymmetric-quaternionic-algebra.md`), below this article in this category, the companion article, for the annihilator of an element, the operator and its characteristic polynomial, and the rank table

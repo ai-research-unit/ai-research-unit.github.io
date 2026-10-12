@@ -22,7 +22,7 @@ $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\vare
 adjoint the operators carry is the **$J$-adjoint** for $K$ with the fundamental symmetry $J={}^{\natural}$ the natural conjugation; and that
 adjoint **keeps the side and conjugates the parameter**: the adjoint of the left multiplication by $\tilde A$ is the left multiplication by
 $\tilde A^{\natural}$. This is the operator face of the band's job word **metric**: the form the operators are adjoint for is the indefinite
-pairing itself, its diagonal $K(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}-\sum_k\lvert Q_k\rvert^{2}$ is the metric, and the product that
+pairing itself, its algebraic norm $K(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}-\sum_k\lvert Q_k\rvert^{2}$ is the metric, and the product that
 carries it is a pairing of the gauge side and not a state.
 
 Two facts organise the article, and the first corrects a phrase that belongs to another band. The symmetrisation gives the product its
@@ -157,7 +157,7 @@ $J={}^{\natural}$ the natural conjugation, so that $K(\tilde P,\tilde Q)=(\tilde
 definite star form $(\tilde P,\tilde W)=\mathrm{Sc}(\tilde P\tilde W^{*})=\langle\tilde P,\tilde W\rangle_{*}$, which is the positive form of
 the probability row.
 
-*Proof.* In the coefficient basis the form is the standard form of signature $(1,3)$, and the natural conjugation is the diagonal operator
+*Proof.* In the coefficient basis the form is the standard form of signature $(1,3)$, and the natural conjugation is the algebraic norm operator
 $\mathrm{diag}(1,-1,-1,-1)$ inserted in the first slot, turning the definite form into the indefinite one; the details are *The Krein Gram
 Matrix and the Restrictions of the Form* and *The Fourth Product and Its Indefinite Metric*, and the identity
 $K(\tilde P,\tilde Q)=(\tilde P^{\natural},\tilde Q)$ is the fundamental-symmetry relation
@@ -347,19 +347,19 @@ multiplication is the module action of the plain product.
 attachment of an element is conjugate-linear in the element it attaches. The interpretation is the operator form of the sibling's conclusion that
 the symmetric gauge product **is not a state**: an operation that cannot be a module map cannot be a state update.
 
-**Proposition (the diagonal is the metric and not a probability).** The scalar part of the product is the Krein form,
-$\mathrm{Sc}(\tilde P\bullet\tilde Q)=K(\tilde P,\tilde Q)$, and on the diagonal
+**Proposition (the algebraic norm is the metric and not a probability).** The scalar part of the product is the Krein form,
+$\mathrm{Sc}(\tilde P\bullet\tilde Q)=K(\tilde P,\tilde Q)$, and at the two equal arguments
 $\mathrm{Sc}(\tilde Q\bullet\tilde Q)=K(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}-\sum_{k=1}^{3}\lvert Q_k\rvert^{2}$, which is positive on the
 centre, negative on the vector subspace and **not** positive definite. The form the band's operators are adjoint for is therefore the metric
 itself, and it is not the positive definite form $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$ of the probability row.
 
-*Proof.* The scalar part of the product is $K$ by the value theorem; the diagonal is the standard form of signature $(1,3)$ of the Krein
+*Proof.* The scalar part of the product is $K$ by the value theorem; the algebraic norm is the standard form of signature $(1,3)$ of the Krein
 form, *The Fourth Product and Its Indefinite Metric*; $K(e_0,e_0)=+1$ and $K(e_1,e_1)=-1$ show that it is not positive definite, and the
 positive form of the framework is *Mass, Rank and the Positivity of the Dagger*.
 
-**Read as a physical statement.** The band's form is a metric of signature $(1,3)$, and its diagonal is the metric read on an element,
+**Read as a physical statement.** The band's form is a metric of signature $(1,3)$, and its algebraic norm is the metric read on an element,
 positive on a scale and negative on a direction. The interpretation, and it is the band's own: a symmetric gauge product is a **metric-like datum
-and not a state**, its value lies, for a general pair, in no one of the remarkable subspaces, and the diagonal of the form is the metric the
+and not a state**, its value lies, for a general pair, in no one of the remarkable subspaces, and the algebraic norm of the form is the metric the
 band is named for (*Values in No Subspace: Why the Symmetric Gauge Product Is Not a State*).
 
 **Proposition (the null directions).** The form has the null set $\{K=0\}$, a real cone of dimension seven, which contains $e_0+e_1$ and the
@@ -379,7 +379,7 @@ the framework live on the plain row and not here.
 ## The Sandwich and Its Adjoint
 
 **Definition (the two-sided operator and the sandwich).** For a pair $\tilde P,\tilde Q$ the **two-sided operator** of the band is
-$B^{\bullet}_{\tilde P,\tilde Q}(\tilde X)=\tilde P\bullet(\tilde X\bullet\tilde Q)$, and its **dielectric sandwich**, or diagonal, is the
+$B^{\bullet}_{\tilde P,\tilde Q}(\tilde X)=\tilde P\bullet(\tilde X\bullet\tilde Q)$, and its **dielectric sandwich**, or algebraic norm, is the
 case $\tilde Q=\tilde P^{\natural}$, that is
 $\Theta^{\bullet}_{\tilde P}=B^{\bullet}_{\tilde P,\tilde P^{\natural}}=L^{\bullet}_{\tilde P}R^{\bullet}_{\tilde P^{\natural}}$, acting by
 $\Theta^{\bullet}_{\tilde P}(\tilde X)=\tilde P\bullet(\tilde X\bullet\tilde P^{\natural})$. The sandwich is the biquaternion instance, for
@@ -389,14 +389,14 @@ the symmetric sesquilinear product, of the two-sided operator of the block; the 
 **Theorem (the adjoint of the two-sided operator).** For all $\tilde P,\tilde Q$ one has
 $(B^{\bullet}_{\tilde P,\tilde Q})^{\dagger}=B^{\bullet}_{\tilde Q^{\natural},\tilde P^{\natural}}$ and
 $(\Theta^{\bullet}_{\tilde P})^{\dagger}=\Theta^{\bullet}_{\tilde P}$, so a two-sided operator has as adjoint the same operator with the
-parameters exchanged and each conjugated by ${}^{\natural}$, and every diagonal sandwich is **self-adjoint for $K$**.
+parameters exchanged and each conjugated by ${}^{\natural}$, and every algebraic norm sandwich is **self-adjoint for $K$**.
 
 *Proof.* The adjoint of a composite reverses the order and conjugates the parameters; with
 $(R^{\bullet}_{\tilde Q})^{\dagger}=L^{\bullet}_{\tilde Q^{\natural}}C$ and
 $(L^{\bullet}_{\tilde P})^{\dagger}=L^{\bullet}_{\tilde P^{\natural}}$,
 $(L^{\bullet}_{\tilde P}R^{\bullet}_{\tilde Q})^{\dagger}=L^{\bullet}_{\tilde Q^{\natural}}C\,L^{\bullet}_{\tilde P^{\natural}}$.
 Inserting $R^{\bullet}_{\tilde P^{\natural}}=C\circ L^{\bullet}_{\tilde P^{\natural}}$ and the involution of $C$ gives
-$L^{\bullet}_{\tilde Q^{\natural}}R^{\bullet}_{\tilde P^{\natural}}$, which is the first display. For the diagonal the two parameters of the
+$L^{\bullet}_{\tilde Q^{\natural}}R^{\bullet}_{\tilde P^{\natural}}$, which is the first display. For the algebraic norm, the two parameters of the
 adjoint are $\tilde P^{\natural\natural}=\tilde P$ and $\tilde P^{\natural}$, which are the two parameters of the sandwich, so the operator
 is its own adjoint.
 
@@ -413,7 +413,7 @@ slice $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\tilde Q^{-1}}$. These are *The Ind
 Sesqualgebra of Biquaternions* and are cited, not re-proved.
 
 **Read as a physical statement.** The plain sandwich of the same metric is an inner automorphism of the operator algebra on the $J$-unitary
-slice, while the band's own diagonal sandwich is symmetric for every parameter. The interpretation is that the metric acts on the frame by a
+slice, while the band's own algebraic norm sandwich is symmetric for every parameter. The interpretation is that the metric acts on the frame by a
 conjugation of the **projective** parameter, and that the band's sandwich and the plain sandwich are two interpretations of the same indefinite
 form.
 
@@ -432,7 +432,7 @@ $$
 ie_0\mapsto -ie_0+ie_1,\quad ie_1\mapsto ie_0+ie_1,\quad ie_2\mapsto ie_2,\quad ie_3\mapsto ie_3,
 $$
 
-whose real matrix has $\det L^{\bullet}_{e_0+e_1}=\lvert N(\tilde A)\rvert^{2}\lvert A_0\rvert^{4}=4$, and the diagonal of the product leaves
+whose real matrix has $\det L^{\bullet}_{e_0+e_1}=\lvert N(\tilde A)\rvert^{2}\lvert A_0\rvert^{4}=4$, and the algebraic norm of the product leaves
 the centre,
 
 $$
@@ -440,17 +440,17 @@ $$
 $$
 
 because $K(\tilde A,\tilde A)=0$ and the mixed term $-A_0\overline{\mathbf A}-\overline{A_0}\mathbf A=-2e_1$ survives. The element is the
-witness that the diagonal is not central, and its value is a vector and not a complex multiple of $e_0$.
+witness that the algebraic norm is not central, and its value is a vector and not a complex multiple of $e_0$.
 
 Take next the **central parameter** $\tilde C=ie_0$ with $\tilde C^{\natural}=ie_0=\tilde C$ and $N(\tilde C)=-1$, which gives the
 self-adjoint operator $L^{\bullet}_{ie_0}=i\,{}^{*}$ acting by $L^{\bullet}_{ie_0}(e_0)=ie_0$, $L^{\bullet}_{ie_0}(e_1)=-ie_1$ and
 $L^{\bullet}_{ie_0}(ie_1)=-e_1$. The element is the witness that self-adjointness of the band is a condition of centrality and not of
-reality, and its diagonal is central, $ie_0\bullet ie_0=e_0$.
+reality, and its algebraic norm is central, $ie_0\bullet ie_0=e_0$.
 
 Take next the **pure vector parameter** $\tilde S=e_1$ with $\tilde S^{\natural}=-e_1=-\tilde S$, $N(\tilde S)=1$ and
 $K(\tilde S,\tilde S)=-1$, which gives the skew-adjoint operator $L^{\bullet}_{e_1}$ of real rank four, acting by
 $L^{\bullet}_{e_1}(e_0)=-e_1$, $L^{\bullet}_{e_1}(e_1)=-e_0$, $L^{\bullet}_{e_1}(ie_0)=ie_1$ and $L^{\bullet}_{e_1}(ie_1)=ie_0$, with kernel
-$\mathrm{span}_{\mathbb{R}}\{e_2,e_3,ie_2,ie_3\}$ and central diagonal $e_1\bullet e_1=-e_0$. The element is the witness of the skew class
+$\mathrm{span}_{\mathbb{R}}\{e_2,e_3,ie_2,ie_3\}$ and central algebraic norm $e_1\bullet e_1=-e_0$. The element is the witness of the skew class
 and of the negative signature of the form.
 
 Take finally the **zero divisor**, $\tilde D=e_0+ie_1$ with $A_0=1\neq0$ and $N(\tilde D)=1+i^{2}=0$, for which the rank drops to six and the
@@ -493,7 +493,7 @@ The article states one cell of the grid of the twelve operator rows, and the bou
   central multiplications, and they are not the observables.
 
 - **The sandwich is not re-read here.** The general indefinite sandwich, its composition, its multiplicativity and its kernel and image are
-  *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra of Biquaternions*; this article states the band's diagonal case
+  *The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra of Biquaternions*; this article states the band's algebraic norm case
   and cites the rest.
 
 - **The four adjoints are not compared here.** The comparison, block against block, is the crossing reader *The Operators of the Twelve
@@ -523,7 +523,7 @@ real, since $ie_0$ is a self-adjoint parameter. The rank is one of $0,4,8,6$ acc
 traces are $0$ and $-4\,\mathrm{Re}(A_0)$, and the determinant is $\lvert N(\tilde A)\rvert^{2}\lvert A_0\rvert^{4}$; no left multiplication
 preserves $K$ and the right multiplication preserves it exactly for the central phases of modulus one; the multiplicative one-sided operators
 are only $0$ and $e_0$; the structure group of the product is the Klein group $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$; and the
-two-sided adjoint is $(B^{\bullet}_{\tilde P,\tilde Q})^{\dagger}=B^{\bullet}_{\tilde Q^{\natural},\tilde P^{\natural}}$ with every diagonal
+two-sided adjoint is $(B^{\bullet}_{\tilde P,\tilde Q})^{\dagger}=B^{\bullet}_{\tilde Q^{\natural},\tilde P^{\natural}}$ with every algebraic norm
 sandwich $\Theta^{\bullet}_{\tilde P}=L^{\bullet}_{\tilde P}R^{\bullet}_{\tilde P^{\natural}}$ self-adjoint for $K$. The product and its
 value are *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* and *The Gauge Metric as a Product*; the operators, the
 parity, the rank, the traces and the groups are *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*; the adjoint
@@ -537,9 +537,9 @@ an **indefinite $J$-adjoint that keeps the side and conjugates the parameter by 
 replacing the plain row's crossing of the sides; that self-adjointness is a condition of **type** (centrality) and not of reality, so a
 purely imaginary central parameter gives a self-adjoint multiplication; that the band's symmetry class is the **centre** and its
 antisymmetric class the **vector directions**; that the band supplies **no module action** and **no positivity**, so a symmetric gauge
-product is a **metric-like datum and not a state**; that the diagonal of the form is the **metric** and that the value lies, for a general
+product is a **metric-like datum and not a state**; that the algebraic norm of the form is the **metric** and that the value lies, for a general
 pair, in no subspace; that the form-preserving operators of the band are a compact circle of central phases on the right and none on the
-left, and that the product-preserving ones are the finite structure group; and that the diagonal sandwich is self-adjoint for $K$ for every
+left, and that the product-preserving ones are the finite structure group; and that the algebraic norm sandwich is self-adjoint for $K$ for every
 parameter. Each is the framework's naming of a proved algebraic fact and is labelled as such.
 
 ## Physical Readings
@@ -551,7 +551,7 @@ $J$-adjoint, the pairing is read as an operation that **does not distinguish lef
 which is the operator content of the metric word: a gauge calibration is transported by reflecting the vector directions and not by reversing
 a charge.
 
-The band's form is an **indefinite metric of signature $(1,3)$**, and its diagonal is the metric read on an element: positive on a scale
+The band's form is an **indefinite metric of signature $(1,3)$**, and its algebraic norm is the metric read on an element: positive on a scale
 direction and negative on a vector direction, with null directions the metric cannot normalise. The interpretation, and it is the band's own, is
 that a symmetric gauge product is a **metric-like datum and not a state**: its value carries the scalar part $K$ and the mixed vector part
 side by side and therefore lies, for a general pair, in no one of the remarkable subspaces, the self-pairing $\tilde Q\bullet\tilde Q$ is in
@@ -586,9 +586,9 @@ skew-adjoint exactly on the vector subspace, and a self-adjoint operator is **no
 parameter of the band. The rank is one of $0,4,8,6$ according to the scale and the norm $N(\tilde A)$, the determinant is
 $\lvert N(\tilde A)\rvert^{2}\lvert A_0\rvert^{4}$ and the traces are $0$ and $-4\,\mathrm{Re}(A_0)$; no left multiplication preserves $K$
 and the right multiplication preserves it exactly for the central phases of modulus one; the multiplicative one-sided operators are only $0$
-and $e_0$; the structure group is the Klein group $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$; and the diagonal sandwich
+and $e_0$; the structure group is the Klein group $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$; and the algebraic norm sandwich
 $\Theta^{\bullet}_{\tilde P}=L^{\bullet}_{\tilde P}R^{\bullet}_{\tilde P^{\natural}}$ is self-adjoint for $K$ for every parameter. The band
-supplies **no module action** and **no positivity**: the scalar part of the product is the metric itself, the diagonal of the form is the
+supplies **no module action** and **no positivity**: the scalar part of the product is the metric itself, the algebraic norm of the form is the
 metric, and a symmetric gauge product is a **metric-like datum and not a state**, its value lying, for a general pair, in no one of the
 remarkable subspaces.
 
@@ -615,7 +615,7 @@ remarkable subspaces.
 | multiplicative $L^{\bullet}_{\tilde A}\iff\tilde A\in\{0,e_0\}$ | the multiplicative one-sided operators |
 | $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ | the structure group of the product |
 | $(B^{\bullet}_{\tilde P,\tilde Q})^{\dagger}=B^{\bullet}_{\tilde Q^{\natural},\tilde P^{\natural}}$ | the two-sided adjoint |
-| $(\Theta^{\bullet}_{\tilde P})^{\dagger}=\Theta^{\bullet}_{\tilde P}$ | the self-adjoint diagonal sandwich |
+| $(\Theta^{\bullet}_{\tilde P})^{\dagger}=\Theta^{\bullet}_{\tilde P}$ | the self-adjoint algebraic norm sandwich |
 | $\tilde D=e_0+ie_1$, $N=0$, rank $6$ | the zero divisor of zero norm |
 
 ## Further Reading
@@ -646,7 +646,7 @@ remarkable subspaces.
   the value, the conjugate-commutativity, the absence of a unit, the failure of the Jordan identity and the metric word.
 - Physics article *Values in No Subspace: Why the Symmetric Gauge Product Is Not a State*
   (`articles_physics/values-in-no-subspace-why-the-symmetric-gauge-product-is-not-a-state.md`), for the value in no subspace, the non-central
-  diagonal and the conclusion that the product is not a state.
+  algebraic norm and the conclusion that the product is not a state.
 - Physics article *The Fourth Product and Its Indefinite Metric* (`articles_physics/the-fourth-product-and-its-indefinite-metric.md`), for
   the signature, the inertia, the fundamental symmetry and the isometry group of the metric.
 - Physics article *The States the Indefinite Metric Cannot Normalise*

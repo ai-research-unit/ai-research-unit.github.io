@@ -107,13 +107,13 @@ so the form is the polarisation of the norm, and it is the determinant read as a
 $$
 J^{\mathsf T}\,D\,J=\mathrm{I}_4,\qquad D=\operatorname{diag}(1,-1,-1,-1),
 $$
-and the two forms share the automorphism group $O_4(\mathbb{C})$; the transport of the four pairings is the dictionary of *The Four Pairings of the Biquaternion Algebra*.
+and the two forms share the automorphism group $O_4(\mathbb{C})$; the transport of the four pairings is the dictionary of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
 ## Worked Examples
 
 **A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $N(\tilde{Q})=1+i^2=0$, so $\tilde{Q}$ is a zero divisor and $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ is singular; the quaternionic square is $\tilde{Q}\star\tilde{Q}=N(\tilde{Q})e_0=0$.
 
-**A basis element.** Let $\tilde{P}=e_1$. Then $\operatorname{adj}\mathsf{M}_2(e_1)=\mathsf{M}_2(e_1^{\natural})=-\mathsf{M}_2(e_1)$, and $\mathsf{M}_2(e_1\star\tilde{Q})=-\mathsf{M}_2(e_1)\mathsf{M}_2(\tilde{Q})$; the diagonal of the form is $\langle e_1,e_1\rangle_{\natural}=1$.
+**A basis element.** Let $\tilde{P}=e_1$. Then $\operatorname{adj}\mathsf{M}_2(e_1)=\mathsf{M}_2(e_1^{\natural})=-\mathsf{M}_2(e_1)$, and $\mathsf{M}_2(e_1\star\tilde{Q})=-\mathsf{M}_2(e_1)\mathsf{M}_2(\tilde{Q})$; the form at the two equal arguments is $\langle e_1,e_1\rangle_{\natural}=1$.
 
 **A product read off the determinant.** Let $\tilde{P}=e_0+e_2$ and $\tilde{Q}=e_0-e_2$. Then $N(\tilde{P})=N(\tilde{Q})=2$ and $\langle\tilde{P},\tilde{Q}\rangle_{\natural}=1-1=0$, so the two are isotropic to each other although both are units; the corresponding matrices have determinants $2$ and are isotropic for the adjugated trace pairing.
 
@@ -208,6 +208,6 @@ The $2\times2$ realization turns the natural conjugation into the adjugate and t
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the realization and its first properties
 - *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the further reading of the isomorphism
 - *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the quaternionic product on the algebra
-- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the form on the algebra
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form on the algebra
 - *The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-quaternionic-algebra-in-the-4x4-matrix-element-representation.md`), for the companion reading of the group
 - *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restriction theory of the form

@@ -28,7 +28,7 @@ B(a,c)=ac,
 H(a,c)=a\overline{c}=ac .
 $$
 
-Both are real-valued, symmetric, non-degenerate and of **rank $1$**; the diagonal is the square $a^2$, positive definite; the null set is the origin alone. So the real line is the definite line of both forms, and the two forms are indistinguishable on it. This is the line where the two products agree, and the form reading agrees with the product reading.
+Both are real-valued, symmetric, non-degenerate and of **rank $1$**; the algebraic norm is the square $a^2$, positive definite; the null set is the origin alone. So the real line is the definite line of both forms, and the two forms are indistinguishable on it. This is the line where the two products agree, and the form reading agrees with the product reading.
 
 ## The Split Imaginary Subspace
 
@@ -40,7 +40,7 @@ B(ja',jc')=(ja')(jc')=a'c',
 H(ja',jc')=ja'\overline{jc'}=ja'(-jc')=-a'c' .
 $$
 
-The two forms no longer coincide: the bilinear form is $+a'c'$ and the Hermitian form is $-a'c'$. Both are real-valued and of rank $1$, with null set the origin, but the bilinear form is **positive definite** on the line and the Hermitian form is **negative definite**. The diagonals are $a'^2$ and $-a'^2$.
+The two forms no longer coincide: the bilinear form is $+a'c'$ and the Hermitian form is $-a'c'$. Both are real-valued and of rank $1$, with null set the origin, but the bilinear form is **positive definite** on the line and the Hermitian form is **negative definite**. The algebraic norms are $a'^2$ and $-a'^2$.
 
 This is the first place where the split sign separates the two forms. On the complex field both forms take the value $-a'^2$ on the anti-fixed line, because $(ia')(ic')=-a'c'$ and $ia'\overline{ic'}=ia'(-ic')=-a'c'$ agree; here the bilinear product loses the sign through $j^2=+1$ while the conjugation keeps it, and the two forms part. So the Hermitian form is positive on the real line and negative on the split imaginary line, the signature of its realification being $(1,1)$; the bilinear form is positive on both, the signature of its realification being $(2,0)$.
 
@@ -81,7 +81,7 @@ a non-zero element of the line for $\lambda,\mu\neq0$, so the restriction of $B$
 
 ## The Level Sets of the Hermitian Norm
 
-The diagonal of $H$ is the norm $N(A)=a^2-a'^2$, and its level sets are the object that replaces the circles of the complex case. With $A=a+ja'$,
+The algebraic norm of $H$ is the norm $N(A)=a^2-a'^2$, and its level sets are the object that replaces the circles of the complex case. With $A=a+ja'$,
 
 $$
 N(A)=c\iff a^2-a'^2=c .
@@ -111,7 +111,7 @@ The level sets of the Hermitian norm $N=a^2-a'^2$ are two families of hyperbolas
 | $H(A,C)=A\overline{C}$ | the Hermitian form |
 | $\mathbb{R}_{\mathbb{D}}$, $j\mathbb{R}_{\mathbb{D}}$ | the real and split imaginary lines |
 | $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ | the idempotent lines, totally isotropic for $H$ |
-| $N(A)=a^2-a'^2$ | the Hermitian norm, the diagonal of $H$ |
+| $N(A)=a^2-a'^2$ | the Hermitian norm, the algebraic norm of $H$ |
 | $a=\pm a'$ | the null cone, the two idempotent lines |
 | $a^2-a'^2=c$ | the level hyperbolas of $N$ |
 

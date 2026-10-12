@@ -32,7 +32,7 @@ the same forms have $p+q+r=2$ and the unit form reads $(2,0,0)$. Congruence is t
 $\mathsf{M}_2(H)\mapsto S^{\dagger}\mathsf{M}_2(H)S$ by an invertible $S$, the **dagger congruence**. Conventions are
 those of *Conventions in the Biquaternion Universe*. The classification and the Witt group are proved in
 the mathematics articles *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with
-Hermitian Adjoint* and *The Four Pairings of the Biquaternion Algebra*; the indefinite structure and the
+Hermitian Adjoint* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the indefinite structure and the
 cone are proved in *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*.
 
 ## Hermitian Forms and Congruence
@@ -223,8 +223,8 @@ for the classification and the Witt group.
 - Mathematics article *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*
 (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the
 Krein form and its cone.
-- Mathematics article *The Four Pairings of the Biquaternion Algebra*
-(`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the positive and indefinite
+- Mathematics article *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*
+(`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the positive and indefinite
 pairings side by side.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the positive
 definite form and its cone.

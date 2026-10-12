@@ -10,7 +10,7 @@ $$
 
 The middle two of each triple are the symmetric and the antisymmetric halves: $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ is the **Jordan product**, the symmetric half of the plain product; $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ is the **cross product**, its antisymmetric half; $N(\tilde p,\tilde q)e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ is the **quaternion form read as a product**, the symmetric half of the quaternionic product; and $\tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ is the **quaternionic cross product**, its antisymmetric half. The six are the products of the six algebraic structures of the chapter, and the reconstruction $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$ recovers the general products from their halves.
 
-This article defines the six, writes each on the coordinates, states the reconstruction and reads the **diagonal behaviour** of each. It assumes the two products from *The Two General Products of the Quaternion $\mathbb{R}$ Space* and the annihilation identity of *Relations Between the Two General Products*, both preceding this one; the structures the six define are *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and the definitions of their vocabulary are *Definitions for the Study of the 6 Algebraic Structures*, below this article in this category.
+This article defines the six, writes each on the coordinates, states the reconstruction and reads the **behaviour at the two equal arguments** of each. It assumes the two products from *The Two General Products of the Quaternion $\mathbb{R}$ Space* and the annihilation identity of *Relations Between the Two General Products*, both preceding this one; the structures the six define are *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and the definitions of their vocabulary are *Definitions for the Study of the 6 Algebraic Structures*, below this article in this category.
 
 **Conventions.** Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, $(\mathbf p,\mathbf q)=\sum_kp_kq_k$ is the dot product and $\mathbf p\times\mathbf q$ is the cross product of the vector parts, and $\tilde q^{\natural}=q_0e_0-\mathbf q$ is the quaternion conjugation. The plain form is $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ and the quaternion form is $N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$, read here as the coefficient of the product $N(\tilde p,\tilde q)e_0$.
 
@@ -59,11 +59,11 @@ $$
 
 So the six products are read from the two general products by one and the same split, and the six are not independent: the two general products alone generate the four halves, and any four of the six determine the other two by the reconstruction. The quaternionic triple is the plain triple with the first factor conjugated, and the conjugation changes the sign of the antisymmetric terms; it leaves the symmetric term with the dot product changed to its negative, which is why the symmetric half of the quaternionic product is the scalar $N(\tilde p,\tilde q)e_0$ with the plus sign and not the Jordan product.
 
-## The Diagonal Behaviour
+## The Behaviour at the Two Equal Arguments
 
-The antisymmetric parts vanish on the diagonal, so the square of each general product is the diagonal of its symmetric half.
+The antisymmetric parts vanish at the two equal arguments, so the square of each general product is the algebraic norm of its symmetric half.
 
-**Proposition (the diagonals).** For every $\tilde p=p_0e_0+\mathbf p$,
+**Proposition (the algebraic norms).** For every $\tilde p=p_0e_0+\mathbf p$,
 
 $$
 \tilde p^2=B(\tilde p)e_0+2p_0\mathbf p , \qquad \tilde p\bullet\tilde p=\tilde p^2 , \qquad \tilde p\wedge\tilde p=0 ,
@@ -73,11 +73,11 @@ $$
 \tilde p^{\natural}\tilde p=N(\tilde p)e_0=|\tilde p|^2e_0 , \qquad N(\tilde p,\tilde p)e_0=N(\tilde p)e_0 , \qquad \tilde p\wedge^{\natural}\tilde p=0 ,
 $$
 
-with $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$. The square of the plain product is read off the **plain form** $B$ and the square of the quaternionic product off the **quaternion form** $N$; the two antisymmetric products vanish on the diagonal, the cross products of a vector with itself being zero.
+with $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$. The square of the plain product is read off the **plain form** $B$ and the square of the quaternionic product off the **quaternion form** $N$; the two antisymmetric products vanish at the two equal arguments, the cross products of a vector with itself being zero.
 
-*Proof.* An antisymmetric rule has $f(\tilde p,\tilde p)=-f(\tilde p,\tilde p)=0$, so $\tilde p\wedge\tilde p=0$ and $\tilde p\wedge^{\natural}\tilde p=0$, and the diagonal of a rule is the diagonal of its symmetric half, $\tilde p\bullet\tilde p=\tilde p^2$ and $N(\tilde p,\tilde p)e_0=\tilde p^{\natural}\tilde p$. The two diagonals are the two squares of *Comparison Between the Two General Products*, the article preceding this one, namely $\tilde p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$ and $\tilde p^{\natural}\tilde p=\lvert\tilde p\rvert^2e_0$.
+*Proof.* An antisymmetric rule has $f(\tilde p,\tilde p)=-f(\tilde p,\tilde p)=0$, so $\tilde p\wedge\tilde p=0$ and $\tilde p\wedge^{\natural}\tilde p=0$, and the algebraic norm of a rule is the algebraic norm of its symmetric half, $\tilde p\bullet\tilde p=\tilde p^2$ and $N(\tilde p,\tilde p)e_0=\tilde p^{\natural}\tilde p$. The two algebraic norms are the two squares of *Comparison Between the Two General Products*, the article preceding this one, namely $\tilde p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$ and $\tilde p^{\natural}\tilde p=\lvert\tilde p\rvert^2e_0$.
 
-So the diagonal of the six products carries the two algebraic norms of the chapter: the square of the plain product and the square of the quaternionic product are read off the same two forms $B$ and $N$, the first giving a general quaternion and the second a scalar, and the two antisymmetric products vanish identically on the diagonal, giving no square and no norm. The two algebraic norms are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
+So the algebraic norm of the six products carries the two algebraic norms of the chapter: the square of the plain product and the square of the quaternionic product are read off the same two forms $B$ and $N$, the first giving a general quaternion and the second a scalar, and the two antisymmetric products vanish identically at the two equal arguments, giving no square and no norm. The two algebraic norms are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
 
 ## The Two Exchanges
 
@@ -87,7 +87,7 @@ The six products here are the six products of the six algebraic structures of *T
 
 The two general products of $\mathbb{H}$ split under the interchange of their two slots, which is the bare exchange of the two arguments. The six products are the two general products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ and their four halves: the Jordan product $\tilde p\bullet\tilde q=(p_0q_0-(\mathbf p,\mathbf q))+p_0\mathbf q+q_0\mathbf p$, the cross product $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$, the quaternion form as a product $N(\tilde p,\tilde q)e_0=(p_0q_0+(\mathbf p,\mathbf q))e_0$ and the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$. The reconstruction is $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$.
 
-On the diagonal the antisymmetric products vanish and each general product equals its symmetric half: $\tilde p\bullet\tilde p=\tilde p^2=B(\tilde p)e_0+2p_0\mathbf p$ and $N(\tilde p,\tilde p)e_0=\tilde p^{\natural}\tilde p=N(\tilde p)e_0$, so the two squares are read off the two forms $B$ and $N$; the two antisymmetric products contribute no square.
+At the two equal arguments the antisymmetric products vanish and each general product equals its symmetric half: $\tilde p\bullet\tilde p=\tilde p^2=B(\tilde p)e_0+2p_0\mathbf p$ and $N(\tilde p,\tilde p)e_0=\tilde p^{\natural}\tilde p=N(\tilde p)e_0$, so the two squares are read off the two forms $B$ and $N$; the two antisymmetric products contribute no square.
 
 ## Summary of Notation
 
@@ -101,7 +101,7 @@ On the diagonal the antisymmetric products vanish and each general product equal
 | $\tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ | the quaternionic cross product |
 | $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ | the reconstruction of the plain product |
 | $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$ | the reconstruction of the quaternionic product |
-| $\tilde p^2=B(\tilde p)e_0+2p_0\mathbf p$, $\tilde p^{\natural}\tilde p=N(\tilde p)e_0$ | the two diagonals |
+| $\tilde p^2=B(\tilde p)e_0+2p_0\mathbf p$, $\tilde p^{\natural}\tilde p=N(\tilde p)e_0$ | the two algebraic norms |
 
 ## Further Reading
 

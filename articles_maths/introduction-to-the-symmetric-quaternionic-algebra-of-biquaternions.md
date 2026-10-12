@@ -44,7 +44,7 @@ $$
 
 *Proof.* Write $\tilde P^{\natural}\tilde Q$ in scalar and vector parts (*Introduction to the General Quaternionic Algebra of Biquaternions*): scalar part $P_0Q_0+(\mathbf P,\mathbf Q)$, vector part $P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$. The exchange $\tilde Q^{\natural}\tilde P$ has the same scalar part and the vector part $Q_0\mathbf P-P_0\mathbf Q-\mathbf Q\times\mathbf P$. In the half-sum the two mixed terms cancel and the two cross products cancel by $\mathbf P\times\mathbf Q=-\mathbf Q\times\mathbf P$.
 
-The coefficient $N$ is the **quaternion form**, the one of the four forms of the space that the catalogue article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* attaches to $\mathrm{SQA}$; its comparison with the other three forms is *Comparison Between the Four General Products* and *The Four Pairings of the Biquaternion Algebra*.
+The coefficient $N$ is the **quaternion form**, the one of the four forms of the space that the catalogue article *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* attaches to $\mathrm{SQA}$; its comparison with the other three forms is *Comparison Between the Four General Products* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
 **Corollary (the class and the commutativity).** The operation is $\mathbb{C}$-bilinear and commutative, its value is always central, and its commutator vanishes identically,
 

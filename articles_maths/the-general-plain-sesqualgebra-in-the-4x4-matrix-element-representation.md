@@ -80,7 +80,7 @@ The action defines the surjective homomorphism $SL_2(\mathbb{C})\to SO^{+}(1,3)$
 
 **The identity.** Let $\tilde{Q}=e_0$. Then $\mathsf{M}_4(e_0)=I_4$, $\lVert\mathsf{M}_4(e_0)\rVert_F^2=4=4\lVert e_0\rVert_E^2$, and $\tfrac12\operatorname{Tr}(I_4^{\dagger}I_4)=2=2\langle e_0,e_0\rangle_{*}$.
 
-**A Hermitian element.** Let $\tilde{Q}=e_0+ie_3$. Then $\tilde{Q}^{*}=\tilde{Q}$ and $\mathsf{M}_4(\tilde{Q})^{\dagger}=\mathsf{M}_4(\tilde{Q})$, so the regular matrix is Hermitian; the square is $\tilde{Q}\star\tilde{Q}=\tilde{Q}^2=e_0+2ie_3+(ie_3)^2=2e_0+2ie_3=2\tilde{Q}$, a positive semidefinite element, and the diagonal of the pairing is $4\lVert\tilde{Q}\rVert_E^2=8$.
+**A Hermitian element.** Let $\tilde{Q}=e_0+ie_3$. Then $\tilde{Q}^{*}=\tilde{Q}$ and $\mathsf{M}_4(\tilde{Q})^{\dagger}=\mathsf{M}_4(\tilde{Q})$, so the regular matrix is Hermitian; the square is $\tilde{Q}\star\tilde{Q}=\tilde{Q}^2=e_0+2ie_3+(ie_3)^2=2e_0+2ie_3=2\tilde{Q}$, a positive semidefinite element, and the pairing at the two equal arguments is $4\lVert\tilde{Q}\rVert_E^2=8$.
 
 **A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $\det\mathsf{M}_4(\tilde{Q})=N(\tilde{Q})^2=0$ and the regular matrix is singular of rank two, while $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F^2=4\lVert\tilde{Q}\rVert_E^2=8$: the element is a zero divisor and yet a definite one for the general plain sesquilinear form.
 

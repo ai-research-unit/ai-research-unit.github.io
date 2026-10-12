@@ -30,7 +30,7 @@ So the two norms are **equal on the scalar line** and **opposite on the vector s
 
 ## The Signature Table of the Forms the Norms Define
 
-The form of a norm is the polarisation of its diagonal, and the two norms define the two forms $B$ and $N$ of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*: the polarisation of the plain norm is the plain form, and the polarisation of the quaternion norm is the quaternion form. The signature table is therefore the table of the two forms on the two subspaces.
+The form of a norm is the polarisation of its algebraic norm, and the two norms define the two forms $B$ and $N$ of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*: the polarisation of the plain norm is the plain form, and the polarisation of the quaternion norm is the quaternion form. The signature table is therefore the table of the two forms on the two subspaces.
 
 | subspace | $N_P$ on an element | $N_Q$ on an element | $B$-signature | $N$-signature |
 |---|---|---|---|---|
@@ -38,7 +38,7 @@ The form of a norm is the polarisation of its diagonal, and the two norms define
 | $\operatorname{Vect}(\mathbb{H})$ | $-\lvert\mathbf p\rvert^2e_0$, nonpositive | $\lvert\mathbf p\rvert^2e_0$, nonnegative | $(0,3)$ | $(3,0)$ |
 | whole space | indefinite | positive definite | $(1,3)$ | $(4,0)$ |
 
-The plain norm is **indefinite**, of the signature $(1,3)$ of its form: one positive direction, the scalar line, and three negative directions, the vector subspace. The quaternion norm is **positive definite**, of the signature $(4,0)$: four positive directions, the scalar line and the vector subspace together. The two norms give the two ends of the scale of the diagonal of a real symmetric bilinear form on the four coordinates, and the signature table here is the reading on the two subspaces of the signature rule of *Remarkable Subspaces and the Two Forms*, the article preceding this one.
+The plain norm is **indefinite**, of the signature $(1,3)$ of its form: one positive direction, the scalar line, and three negative directions, the vector subspace. The quaternion norm is **positive definite**, of the signature $(4,0)$: four positive directions, the scalar line and the vector subspace together. The two norms give the two ends of the scale of the algebraic norm of a real symmetric bilinear form on the four coordinates, and the signature table here is the reading on the two subspaces of the signature rule of *Remarkable Subspaces and the Two Forms*, the article preceding this one.
 
 ## The Splitting of the Space
 

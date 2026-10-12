@@ -148,6 +148,20 @@ The complexified time direction of $\mathbb{M}_-$ — the direction in which the
 
 **Third, the modular Hamiltonian lives in $\mathbb{M}_+$.** In the algebraic formulation of the KMS condition, the modular Hamiltonian $K = -\log \Delta$ (where $\Delta$ is the modular operator) generates the modular evolution. In a finite-dimensional setting, $\Delta$ is the density matrix $\rho$, and $K = -\log \rho$. The density matrix is a positive Hermitian element of the algebra, so $K = -\log \rho$ is a **Hermitian element** of the algebra, and therefore lies in the Hermitian subspace $\mathbb{M}_+$. This is an algebraic fact, not an interpretation. The interpretive content is that the modular Hamiltonian, being a Hermitian element, is naturally an object of the informational sector: temperature, modular evolution, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields.
 
+### The Thermal Route and the Rotation
+
+The thermal formalism downstream of the KMS condition is usually reached by a Wick rotation, and it is reached without one. This is where the condition's intrinsic imaginary time has a precise consequence.
+
+**The standard route, quoted.** The usual treatment continues the real time, $\tau = it$ with $t = -i\tau$: the material-time coefficient $ict$ becomes the real $c\tau$, the $ict$ metric becomes the Euclidean metric, and the wave biquaternion is read on the real scalar axis, where its biquaternion norm is definite. This is correct, and it is what the literature does (*The Wick Rotation in the Biquaternion Universe*).
+
+**The alternative route, which needs no rotation.** The imaginary direction is already in the material sector, so the thermal construction can stay there. The wave biquaternion is kept as the material element
+$$
+\tilde{k}_E = i\omega_n e_0 + \mathbf{p} \in \mathbb{M}_- ,
+$$
+and its positivity is carried by the **Hermitian form**, $\langle\tilde{k}_E,\tilde{k}_E\rangle_{*} = \omega_n^2 + \mathbf{p}^2 = k_E^2 \ge 0$, a real scalar by construction; the biquaternion norm of the same element, $N(\tilde{k}_E) = -\omega_n^2+\mathbf{p}^2$, is indefinite and cannot serve. The two routes agree by the identity $\langle i\omega_n e_0+\mathbf{p},\,i\omega_n e_0+\mathbf{p}\rangle_{*} = N(-\omega_n e_0+\mathbf{p})$, so they give the same propagator and the same frequencies; the alternative is developed in *The Matsubara Formalism in Biquaternionic Form*.
+
+**Where the positivity comes from.** The thermal correlator's positivity is not an extra assumption of the thermal theory: it is the central-root case of the Bochner theorem for the biquaternion transform. The kernel $e^{i\omega_n\tau}$ is the exponential of the central root $\rho = i$, which is skew-adjoint, $\rho^{*}=-\rho$, and degenerate, and skew-adjointness is exactly the criterion under which the theorem holds — the central imaginary and the real roots being the roots for which the transform of a positive measure is positive definite (*The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*).
+
 ### The Fermionic Case and the Structure of the Algebra
 
 The fermionic case deserves a separate note. In the standard formulation, the antiperiodicity of the **time-ordered** fermionic correlation functions in imaginary time is a consequence of the spin–statistics theorem, and it is tied to the spin structure of the fermionic field.
@@ -171,6 +185,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 - The material sector $\mathbb{M}_-$ of the biquaternion algebra and its intrinsic imaginary time coordinate $ict$.
 - The complexification of $\mathbb{M}_-$ as the full algebra $\mathbb{B}$.
 - The modular Hamiltonian $K = -\log \rho$ is a Hermitian element of the algebra, hence lies in $\mathbb{M}_+$.
+- The identity $\langle i\omega_n e_0+\mathbf{p},\,i\omega_n e_0+\mathbf{p}\rangle_{*} = N(-\omega_n e_0+\mathbf{p})$ between the Hermitian form at a material element and the biquaternion norm at the rotated one; the material-sector thermal route and the rotated route therefore agree.
 
 **Interpretation.**
 
@@ -196,7 +211,7 @@ The following directions seem promising.
 
 **4. The relation to the Unruh and Hawking effects.** The KMS condition is the fundamental structure behind the Unruh effect (an accelerated observer sees a thermal bath) and the Hawking temperature of black holes. Does the biquaternion framework provide a cleaner or more unified treatment of these phenomena?
 
-**5. The relation to the Wick rotation.** The Wick rotation is the transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$, as developed in the companion article. The KMS condition is what makes this transfer work in thermal field theory. So the KMS condition and the Wick rotation are aspects of the same structure: the imaginary time is intrinsic to $\mathbb{M}_-$, and the Euclidean formulation is the transfer to the quaternion subspace. What is the precise relation?
+**5. The reach of the material-sector route.** The relation between the KMS condition and the Wick rotation is now fixed: the thermal formalism downstream of the condition is reached either by the rotation — the standard route — or, without one, in the material sector with the Hermitian form (*The Thermal Route and the Rotation* above, and *The Matsubara Formalism in Biquaternionic Form*). What remains open is not the relation but its reach: whether the material route survives where the rotation does not, namely the real-time and transport cases, where the Euclidean weight that makes the rotated integral converge is unavailable.
 
 **6. Numerical methods.** The imaginary-time formalism is the basis of lattice gauge theory and Monte Carlo computations. If the biquaternion framework provides a cleaner formulation of the KMS condition, might it suggest new numerical methods for finite-temperature QFT?
 
@@ -209,6 +224,8 @@ The KMS condition has imaginary time built into it. The analytic continuation $t
 The material sector $\mathbb{M}_-$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $ict$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, acquires a natural algebraic interpretation in this sector. The shift $t \to t + i\beta$ is a shift in the coefficient $q'_0 = ct$ by an imaginary amount, and the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
 
 The modular Hamiltonian $K = -\log \rho$ of the KMS condition is a Hermitian element of the algebra, and therefore lies in the informational sector $\mathbb{M}_+$. This is an algebraic fact, not an interpretation. Its interpretive content is that the modular evolution, the temperature, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields. This provides a natural structural interpretation of the KMS condition, in which the material and informational sectors are connected through the thermal structure.
+
+The thermal formalism downstream of the condition is usually reached by the Wick rotation, and it is reached without one: the wave biquaternion can stay in $\mathbb{M}_-$ as $i\omega_n e_0+\mathbf{p}$, where its positivity is the Hermitian form's, and the thermal correlator's positivity is the central-root case of the Bochner theorem. The rotation is the standard route; the material-sector route is the alternative, and the two agree by an identity.
 
 The reformulation is an interpretation, not a derivation. The KMS condition is established physics; the biquaternion framework provides a natural setting for it, but does not derive it. Whether the reformulation leads to new results is an open question.
 
@@ -227,6 +244,8 @@ The reformulation is an interpretation, not a derivation. The KMS condition is e
 | $\alpha_t$ | Heisenberg evolution |
 | $F_{AB}(t)$ | Thermal correlation function (complex-valued) |
 | $F_{AB}(t + i\beta) = F_{BA}(-t)$ | KMS condition |
+| $\tilde{k}_E = i\omega_n e_0+\mathbf{p} \in \mathbb{M}_-$ | Euclidean wave biquaternion of the material (no-rotation) route |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_\mu P_\mu\overline{Q_\mu}$ | Hermitian form; carries the thermal positivity without a rotation |
 | $K = -\log \rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
 | $\omega_n = 2\pi n/\beta$ | Bosonic Matsubara frequencies |
 | $\omega_n = (2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |

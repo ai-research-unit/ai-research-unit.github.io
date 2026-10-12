@@ -120,7 +120,7 @@ with vector part $-2\mathrm{Re}(Q_0\overline{\mathbf Q})$.
 
 *Proof.* The scalar part is the diagonal of the Krein form as the scalar part of the product of the block
 (*The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*); the rest is the diagonal formula
-of *The Non-Central Diagonal and the Two Halves of the Symmetric Quaternionic Sesqualgebra*.
+of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*.
 
 **Basic properties.** Each is a direct reading of the definition.
 
@@ -253,7 +253,7 @@ central square, not by $K$.
 
 ## Further Reading
 
-- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the diagonal of a form and the four algebraic norms of the space.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general quaternionic sesquilinear form $K$ and the table of the four forms.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Unit and the Inverse*, for the definitions relative to a general product and for the unit tables.
 - *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the two actions of $e_0$ and the proof that no element is a unit.

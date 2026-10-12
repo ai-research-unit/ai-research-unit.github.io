@@ -13,7 +13,7 @@ R_{\tilde P}(\tilde R)=\tilde R\tilde P,\qquad
 $$
 
 The left and the right multiplication are the two one-sided operators, their products $L_{\tilde A}R_{\tilde B}$ are
-the two-sided ones, and the **sandwich** is the diagonal two-sided operator in which the right parameter is the
+the two-sided ones, and the **sandwich** is the algebraic norm two-sided operator in which the right parameter is the
 conjugate of the left one. The composition laws of the two families, and the interpretation of the multiplication as a
 process, belong to *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; the
 sandwich read as the operator $\mathrm{H}_{\tilde Q}=L_{\tilde Q}\circ R_{\tilde Q^{*}}$ belongs to *The 4×4 Matrix
@@ -103,7 +103,7 @@ $$
 \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=\mathrm{H}_{\tilde Q},
 $$
 
-the diagonal pair $(\tilde A,\tilde B)=(\tilde Q,\tilde Q^{*})$ of the two-sided family, with the two boundary cases
+the algebraic norm pair $(\tilde A,\tilde B)=(\tilde Q,\tilde Q^{*})$ of the two-sided family, with the two boundary cases
 $\Theta_{e_0}=\mathrm{id}$ and $R_{\tilde Q}=L_{e_0}R_{\tilde Q}$, $L_{\tilde Q}=L_{\tilde Q}R_{e_0}$.
 
 The sandwich is one of the four objects the corpus calls an action, and it is the only one of them whose two slots are

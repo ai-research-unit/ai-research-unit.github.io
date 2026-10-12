@@ -42,7 +42,7 @@ of signature $(2,6)$.
 
 **Proof.** $\langle e_{\nu},e_{\mu}\rangle_{\natural*}=\sum_{\lambda}\varepsilon_{\lambda}\overline{(e_{\mu})_{\lambda}}(e_{\nu})_{\lambda}=\varepsilon_{\mu}\delta_{\mu\nu}$: the units are orthogonal and each has its own sign. The determinant is $\varepsilon_0\varepsilon_1\varepsilon_2\varepsilon_3=-1$. In the real basis the coefficient $i$ contributes $|i|^{2}=1$ to every entry, so the Gram matrix repeats the block $E$ on the two coefficient blocks, whence the signature $(2+0,\,6)$ by counting the signs.
 
-**Remark (the three Gram matrices).** The three pairings of *The Four Pairings of the Biquaternion Algebra* have Gram matrices $\mathrm{I}_4$ (bilinear), $\mathrm{I}_4$ (Hermitian) and $E$ (Krein): the general quaternionic sesquilinear form is the only one of the three whose coefficient basis is already orthogonal with signs. The matrix $E$ is also the Gram matrix of the product form $\mathrm{Sc}(\tilde{P}\tilde{Q})$, and it is the fundamental symmetry of the next article written in the coefficient basis.
+**Remark (the three Gram matrices).** The three pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* have Gram matrices $\mathrm{I}_4$ (bilinear), $\mathrm{I}_4$ (Hermitian) and $E$ (Krein): the general quaternionic sesquilinear form is the only one of the three whose coefficient basis is already orthogonal with signs. The matrix $E$ is also the Gram matrix of the product form $\mathrm{Sc}(\tilde{P}\tilde{Q})$, and it is the fundamental symmetry of the next article written in the coefficient basis.
 
 ## The Krein Form in the Matrix Representation
 
@@ -225,7 +225,7 @@ In the coefficient basis the general quaternionic sesquilinear form has the Gram
 
 ## Further Reading
 
-- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the three Gram matrices compared, and for the four pairings on the remarkable subspaces
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the three Gram matrices compared, and for the four pairings on the remarkable subspaces
 - *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the adjugated trace identities used here
 - *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restriction of the norm to the same remarkable subspaces
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the definitions and dimensions of the remarkable subspaces

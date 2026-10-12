@@ -110,7 +110,7 @@ the definition requiring nonzero elements.
 
 The implication is one of the rows of the dictionary of the four general products, where it holds
 for the plain product and the natural product and fails for the plain sesquilinear product
-(*Definitions for the Study of the 12 Algebraic Structures*, §9; *The Zero Divisors and the Twelve Structures*). For the block it holds without exception on the punctured space, and the
+(*Definitions for the Study of the 12 Algebraic Structures*, §9; *Zero Divisors*). For the block it holds without exception on the punctured space, and the
 exception is the origin alone.
 
 ## The Conjugations and the Remarkable Subspaces
@@ -185,4 +185,4 @@ cone, and the enlargement is the removal of the scalar part from the square.
 - *Zero Divisors of the Antisymmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-plain-algebra.md`), for the coincidence of the nonzero nilpotents with the zero divisors
 - *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-algebra.md`), for the roots of $0$, which are the nonzero nilpotents
 - *Nilpotents of the General Plain Algebra* (`articles_maths/nilpotents-of-the-general-plain-algebra.md`), for the pure isotropic cone of the parent product, against which the whole space is read
-- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the square-zero sets of the four general products and the failure of the implication for the plain sesquilinear one
+- *Zero Divisors* (`articles_maths/zero-divisors.md`), for the square-zero sets of the four general products and the failure of the implication for the plain sesquilinear one

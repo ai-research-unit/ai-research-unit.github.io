@@ -14,6 +14,13 @@ The algebra case has no antisymmetric diagonal, the sesqualgebra case has one an
 
 
 
+CONSEQUENCES BOCHNER 
+
+
+Replace Wick
+
+
+
 The Pin and Spin Groups of the General Plain Algebra of Biquaternions
 
 
@@ -6827,11 +6834,6 @@ S4	the Krein form K + vector	the indefinite gauge metric (Gupta–Bleuler), the 
 A4	cross with conjugate	internal (gauge) rotation; a copy of A1, so internal rotations have the same shape as spacetime ones
 
 How far to trust the count. All 12 are distinct operations, so "12 products" is fair. But they are not 12 independent structures: P = S + A within each row, and rows 3–4 are rows 1–2 with one slot conjugated. Up to conjugation there are about 5 genuinely different laws. Structures, not numbers: 2 named (S1 Jordan, A1 Lie), 6 unnamed.
-
-
-
-
-
 
 
 

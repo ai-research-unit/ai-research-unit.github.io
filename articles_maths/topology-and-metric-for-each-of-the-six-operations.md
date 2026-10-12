@@ -6,7 +6,7 @@ The chapter closes where the six products of *The 6 Algebraic Structures over th
 
 **Boundaries.** The six products and their laws are *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the two forms of the space are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm is *Norm and Invertibility in the General Plain Algebra*; the metric of the quaternion space is *Quaternion Metrics*, above this article in this category; the space and its topology are *Introduction to Topology on the Quaternions* and *Quaternion Topology*, above this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$ and the **plain form** is $B(\tilde q)=q_0^{2}-|\mathbf q|^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$, the bar is the identity. The six products are those of the table of *The 6 Products of the Quaternion Real Space*, and for a product $\star$ the **metric form** is the polarisation of the diagonal scalar part,
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$ and the **plain form** is $B(\tilde q)=q_0^{2}-|\mathbf q|^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$, the bar is the identity. The six products are those of the table of *The 6 Products of the Quaternion Real Space*, and for a product $\star$ the **metric form** is the polarisation of the scalar part at the two equal arguments,
 
 $$
 \Phi_\star(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p\star\tilde q\bigr)\ \text{symmetrised},\qquad
@@ -16,7 +16,7 @@ $$
 
 ## The Scalar Part and the Two Facts
 
-**Proposition (the diagonal of each product).** For the six products the diagonal scalar part is
+**Proposition (the value at the two equal arguments).** For the six products the scalar part at the two equal arguments is
 
 | $\star$ | $\mathrm{GPA}$ | $\mathrm{SPA}$ | $\mathrm{APA}$ | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
 |---|---|---|---|---|---|---|
@@ -67,7 +67,7 @@ For each of the six products the scalar part of the square is a quadratic form, 
 
 | symbol | meaning |
 |---|---|
-| $Q_\star(\tilde q)=\mathrm{Sc}(\tilde q\star\tilde q)$ | the diagonal scalar part of a product |
+| $Q_\star(\tilde q)=\mathrm{Sc}(\tilde q\star\tilde q)$ | the scalar part at the two equal arguments of a product |
 | $\Phi_\star$ | the metric form, the polarisation of $Q_\star$ |
 | $B(\tilde q)=q_0^{2}-|\mathbf q|^{2}$ | the plain form, signature $(1,3)$ |
 | $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$ | the quaternion form, signature $(4,0)$ |

@@ -130,7 +130,7 @@ $$
 
 the middle term is in $k$ because it is fixed by $\varsigma$, and the lemma bounds it by $2\lvert h(x,y)\rvert$, which Cauchy–Schwarz bounds by $2\|x\|\|y\|$. Hence $\|x+y\|^{2} \leq (\|x\| + \|y\|)^{2}$, and both sides are nonnegative elements of the ordered field $k$, so the square roots are ordered as claimed.
 
-**Corollary (the norm of the form).** The three axioms together say that $\|\cdot\|$ is a norm on the module $A$: it is nonnegative and definite, absolutely homogeneous with the modulus of the base as the absolute value, and subadditive. The pair $(A,\|\cdot\|)$ is therefore a normed $R$-module in the sense of *Normed and Banach Spaces*, and its norm is determined by the diagonal of the form alone.
+**Corollary (the norm of the form).** The three axioms together say that $\|\cdot\|$ is a norm on the module $A$: it is nonnegative and definite, absolutely homogeneous with the modulus of the base as the absolute value, and subadditive. The pair $(A,\|\cdot\|)$ is therefore a normed $R$-module in the sense of *Normed and Banach Spaces*, and its norm is determined by the form at the two equal arguments alone.
 
 ## The Normed and the Banach Sesqualgebra
 
@@ -184,7 +184,7 @@ $$
 \|x\|^{2} = \|x^{*}x\| ,
 $$
 
-and the scalar reading of the same element is the diagonal of the form, $h(x,x) = \varphi(x^{*}x)$ for the functional $\varphi$ of *The Sesquilinear Form and the Conjugation*, §*The Reconstruction*, so that the form's diagonal, the Hermitian square and the norm are three readings of one datum.
+and the scalar reading of the same element is the form at the two equal arguments, $h(x,x) = \varphi(x^{*}x)$ for the functional $\varphi$ of *The Sesquilinear Form and the Conjugation*, §*The Reconstruction*, so that the form's diagonal, the Hermitian square and the norm are three readings of one datum.
 
 *Proof.* The first identity is the condition, and the second is the reconstruction of the form from its functional at the pair $(x,x)$.
 
@@ -204,7 +204,7 @@ so the condition fails for $n \geq 2$; the equality holds at $1$ exactly when $n
 
 *Proof.* Each statement is the corresponding statement above read at $\varsigma = \mathrm{id}$: the modulus is the absolute value, the form of the layer is bilinear by the collapse of *Topological Sesqualgebras with a Form*, §*The Collapse at the Trivial Involution*, and the identity is the one of the cited article on the $\mathrm{C}^*$-identity.
 
-**Remark (which statements are sesquilinear).** The norm axioms and the inequality are the same in the two categories and are therefore not sesquilinear statements; the sesquilinear content of the article lies in the scaling $\|\lambda x\| = \lvert\lambda\rvert\|x\|$ with $\lvert\lambda\rvert^{2} = \lambda\varsigma(\lambda)$ rather than $\lambda^{2}$, and in the fact that the norm is read from the diagonal of a form that is Hermitian and not symmetric. At the collapse the object is a normed involutive algebra with a symmetric definite form, whose completed theory is *Involutive Banach Algebras and the Gelfand–Naimark Theorem*, and the bilinear model of the whole article is the Hilbert algebra of *Hilbert Algebras*, where the same form axiom is read with $\varsigma = \mathrm{id}$.
+**Remark (which statements are sesquilinear).** The norm axioms and the inequality are the same in the two categories and are therefore not sesquilinear statements; the sesquilinear content of the article lies in the scaling $\|\lambda x\| = \lvert\lambda\rvert\|x\|$ with $\lvert\lambda\rvert^{2} = \lambda\varsigma(\lambda)$ rather than $\lambda^{2}$, and in the fact that the norm is read at the two equal arguments of a form that is Hermitian and not symmetric. At the collapse the object is a normed involutive algebra with a symmetric definite form, whose completed theory is *Involutive Banach Algebras and the Gelfand–Naimark Theorem*, and the bilinear model of the whole article is the Hilbert algebra of *Hilbert Algebras*, where the same form axiom is read with $\varsigma = \mathrm{id}$.
 
 ## Examples
 
@@ -224,13 +224,13 @@ the **Frobenius norm**, which is the Euclidean norm of the $n^{2}$ entries: it i
 
 ### The Biquaternion Trace Form
 
-**Example (the biquaternion algebra).** On the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the Hermitian conjugation $* = {}^{\natural} \circ \bar{\cdot}$ the **general plain sesquilinear** form of *The Four Pairings of the Biquaternion Algebra*, §*The Four Pairings*,
+**Example (the biquaternion algebra).** On the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the Hermitian conjugation $* = {}^{\natural} \circ \bar{\cdot}$ the **general plain sesquilinear** form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, §*The Four Forms*,
 
 $$
 h(P,Q) = \operatorname{Sc}(PQ^{*}) = \sum_{\mu} P_{\mu}\,\varsigma(Q_{\mu}),
 $$
 
-is Hermitian, compatible, nondegenerate and positive definite, of signature $(8,0)$ over $\mathbb{R}$, and the norm it defines is the Euclidean norm of the eight real coordinates, the one of *The Euclidean Topology of the Biquaternion Algebra*: $\|Q\| = \operatorname{Sc}(QQ^{*})^{1/2} = (\sum_\mu \lvert Q_\mu\rvert^{2})^{1/2}$. The diagonal is the sum of the four squared moduli of the coefficients, and the compatibility is the adjoint rule $(L_{Q})^{\langle\cdot,\cdot\rangle_{*}} = L_{Q^{*}}$ of *The Four Pairings of the Biquaternion Algebra*, §*The Forms in Comparison*; the other three pairings of that article — the two bilinear ones, of signature $(4,4)$, and the general quaternionic sesquilinear one, of signature $(2,6)$ — are not positive definite and define no norm of this article, and the last of them is not even compatible with the product. The example is the finite-dimensional instance in which the four pairings of the biquaternion algebra are compared, and the definite one among them is the norm.
+is Hermitian, compatible, nondegenerate and positive definite, of signature $(8,0)$ over $\mathbb{R}$, and the norm it defines is the Euclidean norm of the eight real coordinates, the one of *The Euclidean Topology of the Biquaternion Algebra*: $\|Q\| = \operatorname{Sc}(QQ^{*})^{1/2} = (\sum_\mu \lvert Q_\mu\rvert^{2})^{1/2}$. The diagonal is the sum of the four squared moduli of the coefficients, and the compatibility is the adjoint rule $(L_{Q})^{\langle\cdot,\cdot\rangle_{*}} = L_{Q^{*}}$ of *The Four General Products and Operators*, §*The Products Decide the Four Adjoints*; the other three pairings of that article — the two bilinear ones, of signature $(4,4)$, and the general quaternionic sesquilinear one, of signature $(2,6)$ — are not positive definite and define no norm of this article, and the last of them is not even compatible with the product. The example is the finite-dimensional instance in which the four pairings of the biquaternion algebra are compared, and the definite one among them is the norm.
 
 ### The Collapsed Field
 

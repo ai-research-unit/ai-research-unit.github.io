@@ -27,7 +27,7 @@ The cone is the zero set of the polynomial $f=\sum_\mu Q_\mu^2$, homogeneous of 
 
 **Proposition (the cone is the zero-divisor set).** The cone is exactly the zero-divisor set: an element is a unit precisely when its norm is nonzero, so a nonzero null element is a zero divisor, and the algebra is a division algebra off the cone.
 
-*Proof.* The criterion for invertibility is $N(\tilde Q)\neq0$, which is the statement that the diagonal of the form does not vanish. Hence the nonzero null elements are exactly the nonzero non-units, and the classification of the two families of zero divisors is by their purity.
+*Proof.* The criterion for invertibility is $N(\tilde Q)\neq0$, which is the statement that the form does not vanish at the two equal arguments. Hence the nonzero null elements are exactly the nonzero non-units, and the classification of the two families of zero divisors is by their purity.
 
 The projective geometry of the cone is *The Null Quadric and Its Projective Geometry*.
 
@@ -105,7 +105,7 @@ The null cone of the general quaternionic bilinear form is $\sum_\mu Q_\mu^2=0$,
 
 ## Further Reading
 
-- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the form
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the classification of the isotropic elements
 - *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restrictions of the form to the remarkable subspaces, the indexes and the maximal totally isotropic dimensions of the restrictions
 - *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the realified null cones of the four forms and the comparison of the cones

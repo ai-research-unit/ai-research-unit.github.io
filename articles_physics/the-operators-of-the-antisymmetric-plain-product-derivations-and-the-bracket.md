@@ -41,7 +41,7 @@ alternating, the right multiplication is the negative of the left,
 $R^{\wedge}_{\tilde A}=-L^{\wedge}_{\tilde A}$, so the two-sided family collapses onto signed products of the
 one-sided one and the swapping of the side and the change of sign are the same statement. Every type criterion is a
 consequence: **every** operator of the one-sided family is skew-adjoint, with the self-adjoint ones exactly the
-central parameters, on which the operator vanishes; the diagonal two-sided operator is self-adjoint for every
+central parameters, on which the operator vanishes; the algebraic norm two-sided operator is self-adjoint for every
 parameter; and a product of two one-sided operators is self-adjoint exactly when their parameters bracket to zero.
 The inner derivations are the multiplication operators, of complex dimension three and isomorphic to
 $\mathfrak{sl}(2,\mathbb{C})$, and the whole derivation algebra is $\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$,
@@ -389,7 +389,7 @@ Form* and are not derived here.
 ### The Two-Sided Family
 
 **Definition.** A **two-sided operator** of the band is a composite $L^{\wedge}_{\tilde A}R^{\wedge}_{\tilde B}$ of
-one left and one right multiplication; the **sandwich** is its diagonal case
+one left and one right multiplication; the **sandwich** is its algebraic norm case
 $\Theta^{\wedge}_{\tilde A}=L^{\wedge}_{\tilde A}R^{\wedge}_{\tilde A}$.
 
 **Theorem (the collapse of the two-sided family).** For all $\tilde A,\tilde B$,
@@ -522,7 +522,7 @@ checked to machine precision (deviation below $10^{-14}$) on $80$ random triples
 $L^{\wedge}_{\tilde A}$ on the bracket. The skew-adjointness of $L^{\wedge}_{\tilde A}$ for $\kappa$ and for $B$, the
 negating adjoint $(L^{\wedge}_{\tilde A})^{\kappa}=L^{\wedge}_{-\tilde A}$, the Gram matrix
 $\operatorname{diag}(0,-2,-2,-2)$, the value $\kappa=-2\,\mathbf P\!\cdot\!\mathbf Q$, the self-adjointness of the
-diagonal sandwich, the self-adjointness criterion of a composite, the preservation of $\kappa$ and of the bracket by
+algebraic norm sandwich, the self-adjointness criterion of a composite, the preservation of $\kappa$ and of the bracket by
 the conjugations by units, the form-preservation and the anti-preservation of the bracket by the reflection, the
 derivation property of $D_0$ and the matrix identity
 $\mathsf{M}_2(\tilde A\wedge\tilde X)=\tfrac12[\mathsf{M}_2(\tilde A),\mathsf{M}_2(\tilde X)]$ were all checked on random parameters, all to

@@ -98,7 +98,7 @@ $$
 
 and the second and third cancel after the plain product is put in a common order, $-U\bar B A\bar V W+U\bar V A\bar B W=U\bar B\bar V W(-A+A)=0$; what remains is the left-hand side. The identity is the defining axiom of a Jordan triple system, and its satisfaction is what makes the sesquilinear structure a $J^{*}$-algebra in the sense of *Algebraic J\*-Algebras*.
 
-**Remark.** The ternary product is the diagonal reading of the sandwich of §*The Sesquilinear Sandwich*; the two are the same object read with two arguments fixed. The plain outer symmetry fails whenever the plain product is non-commutative.
+**Remark.** The ternary product is the sandwich of §*The Sesquilinear Sandwich* read with two arguments fixed; the two are the same object. The plain outer symmetry fails whenever the plain product is non-commutative.
 
 ## The Left and Right Multiplications
 

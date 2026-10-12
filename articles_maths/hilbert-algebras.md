@@ -224,7 +224,7 @@ The two forms are the two halves of the same structure: $T_{\operatorname{red}}$
 
 ## Summary
 
-A **Hilbert algebra** is an associative algebra with an involution $\bar{\cdot}$ carrying a positive definite sesquilinear form $\langle \cdot, \cdot\rangle$ subject to the **adjoint axiom** $\langle xy, z\rangle = \langle y, x^{\dagger}z\rangle$. Equivalently $\langle xy, z\rangle = \langle x, zy^{\dagger}\rangle$ and $\langle x^{\dagger}y, z\rangle = \langle y, xz\rangle$, and the left regular representation $\lambda(x) = m_x$ is a $\ast$-representation, $\lambda(x^{\dagger}) = \lambda(x)^{\ast}$. The diagonal of the form is Hermitian and takes values in the fixed field.
+A **Hilbert algebra** is an associative algebra with an involution $\bar{\cdot}$ carrying a positive definite sesquilinear form $\langle \cdot, \cdot\rangle$ subject to the **adjoint axiom** $\langle xy, z\rangle = \langle y, x^{\dagger}z\rangle$. Equivalently $\langle xy, z\rangle = \langle x, zy^{\dagger}\rangle$ and $\langle x^{\dagger}y, z\rangle = \langle y, xz\rangle$, and the left regular representation $\lambda(x) = m_x$ is a $\ast$-representation, $\lambda(x^{\dagger}) = \lambda(x)^{\ast}$. The form at the two equal arguments is Hermitian and takes values in the fixed field.
 
 For each $x$ the element $x^{\dagger}x$ is self-adjoint and $\langle x^{\dagger}x, 1\rangle = \langle x, x\rangle \geq 0$, and the finite sums $\sum_i x_i^{\dagger}x_i$ form the **positive cone**, which meets its negative only in $0$ and defines an order on the algebra. An involution whose $x^{\dagger}x$ lie in the cone is **positive**, and in finite dimension over $\mathbb{R}$ a positive involution makes the algebra a $C^*$-algebra. Positive definiteness gives Cauchy–Schwarz and hence the completion, on which the left regular representation acts by bounded operators.
 
@@ -241,7 +241,7 @@ The form is the **trace form** $\langle x, y\rangle = \tau(x^{\dagger}y)$, with 
 | $\bar{\cdot}$ | The involution of the Hilbert algebra; $x^{\dagger} = \sigma(\alpha(x^{r}))$ |
 | $\sigma$ | Involution of the base; the identity for a bilinear form |
 | $\langle x, y\rangle = \tau(x^{\dagger}y)$ | The trace form, positive definite |
-| $q(x) = \langle x, x\rangle$ | Diagonal of the form, valued in the fixed field |
+| $q(x) = \langle x, x\rangle$ | The value at the two equal arguments, valued in the fixed field |
 | $H$, $H^{\dagger} = \sigma(H)^T$ | Gram matrix of the form; Hermitian transpose |
 | $\operatorname{rad}\langle\cdot,\cdot\rangle$ | Radical, the kernel of $H$ |
 | $P = \{\sum_i x_i^{\dagger}x_i\}$ | Positive cone |

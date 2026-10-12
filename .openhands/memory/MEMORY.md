@@ -242,6 +242,74 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
   article across the corpus; anchor on a word boundary and enumerate the matches first** (same lesson as the
   fraktur and the `\square` passes above).
 
+- **The two element-theory comparison groups mirror each other and share their titles.** 12-space:
+  `zero-divisors`, `annihilators`, `square-roots-of-minus-one-zero-and-plus-one`,
+  `square-roots-of-a-general-element`, `idempotents`, `nilpotents`, then
+  `the-general-plain-algebra-and-the-general-plain-sesqualgebra-of-biquaternions-compared`. 6-space: the
+  same six slugs with the `quaternion-` file prefix. Per-structure twins of the biquaternion chapter carry
+  the `-of-quaternions` suffix. Titles are identical across the two chapters, so a bare *Title* in prose is
+  ambiguous outside its chapter; every link must keep its `(articles_maths/...md)` path.
+- **`build2.py` renders every `.md` whether or not the menu lists it.** A page with no menu entry is built,
+  counted, and unreachable. "build exit 0" and a `.md`/`.html` count match prove nothing. Run href
+  reachability over the menu files; it is the only check that finds an article no page links to. It found 6.
+- **Chapter conventions for the Definitions article.** Quaternion-chapter articles cite *Definitions for the
+  Study of the 6 Algebraic Structures*, §*The Element Vocabulary*; biquaternion ones cite the 12-space
+  Definitions, §*The Zero Divisor and the Annihilator* — a section that exists ONLY in the 12-space file.
+  Cross-chapter references to the other block are fine when the sentence says so ("the complex sibling",
+  "the biquaternion twin", "the complexified counterpart").
+- **The Definitions articles number their sections** (`## 3. The Zero Divisor and the Annihilator`) while
+  citations drop the number, so a literal heading check reports ~190 false dangling citations. Strip leading
+  `N.` before comparing. Corpus-wide there are 2148 `§*...*` citations; 47 genuinely unresolved, all
+  pre-existing in unrelated articles (associative-algebras, biquaternion-elementary-functions, ...).
+- **Never audit the menu against `git HEAD`.** HEAD was stale: three element-theory articles deleted in the
+  worktree were still listed in HEAD's two comparison groups, which fakes a "the rewrite dropped menu
+  entries" alarm. Compare against the worktree and against files that exist.
+- **The twelve biquaternion codes, in corpus order**: GPA SPA APA / GQA SQA AQA / GPS SPS APS / GQS SQS AQS
+  (parents: plain, quaternionic; columns: general, then the symmetrisation and the antisymmetrisation of each
+  parent, and the sesqualgebra row repeats it). Use this order in any twelve-row reading.
+- **An element-theory group article must collect the twelve.** `zero-divisors.md` and `annihilators.md` each
+  carry one row or subsection per structure, and each row is owned by its own `annihilators-of-the-...` /
+  `zero-divisors-of-the-...` article of the algebra groups, which holds the rank table and the remarkable
+  subspaces. A group article that reads only the four general products reads as "very short and very bad" to
+  the author, however correct it is. `quaternion-annihilators.md` is the six-entry mirror of the same idea.
+- **The menu `<!-- ... -->` comment is the article's spec.** When an article's scope changes, the comment
+  right after its menu entry must change with it, or the next session reads the old spec and rebuilds to it.
+  (Spec = PLAN.md plus these comments.)
+- **A Python heredoc mangles LaTeX.** `\t` and `\n` inside an ordinary triple-quoted string become a tab and
+  a newline, so `$\tilde P$` lands as `$<TAB>ilde P$` and `\neq` splits the line. Write corpus notes with a
+  raw string `r"""..."""`, or use the file editor.
+- **A single shell command longer than about 8 kB is truncated before the shell sees it.** A python heredoc
+  that writes a whole long file then runs as an empty program: exit 0, no output, file unchanged. Write long
+  files in chunks of a few kB (open the first in `"w"`, the rest in `"a"`), or with the file editor.
+- **The shape of a 12-space element-theory group article is one subsection per structure.** `zero-divisors.md`
+  and `annihilators.md` both have Introduction, the definition, one `### $\mathrm{XXX}$, the <name>` per
+  structure in the corpus order, each with the product, the result of a nonzero element in bold, the reason
+  and the owner article, then `## Results` with the twelve-row table and the cross-cutting theorems, then
+  Summary, notation and Further Reading. A table alone reads as "no affirmation, no explanation".
+- **A label is not a result. Name nothing you have not computed.** The author rejects "off the cone",
+  "a complex plane" (2026-09-27, `annihilators.md`) as verbiage. Give the product written out in coordinates,
+  the criterion as an equation ($C=P_0^{2}+\dots+P_3^{2}=0$, $P_0=0$, $\mathbf P=0$), and the generators of
+  the set, e.g. $A_\star(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_0+ie_3\}$. Define each word once, with its
+  equation, before using it. The author's calibration is that example.
+- **Corpus conjugation convention.** The star is $\bar{\cdot}\circ{}^{\natural}$: $\tilde X^{*}=
+  \overline{X_0}e_0-\overline{\mathbf X}$ (`conventions-in-mathematics.md`). The owners' worked examples obey
+  it; the displayed coordinate expansion of $\tilde P\tilde Q^{*}$ in
+  `annihilators-of-the-general-plain-sesqualgebra.md` does not (probable typo, untouched).
+- **Define every symbol at or before its first use; give every table its own legend.** The author rejected
+  a table cell reading "$\{0\}$ if $C\neq0$" because $C$ was never defined (2026-09-27, `annihilators.md`);
+  the norm was then written $\mathrm{Norm}(\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}$ everywhere and a legend
+  placed immediately above the table, defining every symbol a cell uses. An alias the owner articles use but
+  the article never spells out is a defect. The same sweep must cover the block marks ($A_\bullet$,
+  $A_\wedge$, $A_\diamond$), the basis $e_0..e_3$, the coefficient unit $i$, and the parts of every element
+  mentioned ($\tilde Q=Q_0e_0+\mathbf Q$, $\tilde X=X_0e_0+\mathbf X$).
+- **Lint the markdown before building.** Per line: the number of `$` must be even; no stray `$$.` or `$$,`;
+  no single lowercase letter dropped at a heredoc chunk boundary; no symbol used whose definition is absent.
+- **The corpus is read as prose: no colon chains, no semicolon chains, no stub style.** The author rejected a
+  table cell reading "Norm=0: {0}; Norm=0, ...: A=... and B=..." (2026-09-27, `annihilators.md`). Each case
+  gets its own sentence, and a display is introduced by a sentence saying what it shows. No "e.g." and no
+  `\quad` as a separator in prose or in a table cell. Write $A_\star(\tilde P)$ at a specific element, never
+  a bare $A_\star=B_\star$.
+
 ## 2026-09-27 (physical readings in the head categories)
 - All 62 articles of *Biquaternion Universe* (10) and *Biquaternion Mathematical Physics* (52) gained a brief
   `## Physical Readings` section before `## Summary` (2-4 sentences each), the clause `physical readings` in their
@@ -282,3 +350,25 @@ condition, NOT the definition.
   Algebra* is new (2026-09-27) and settles its row of the GPA comparison table: the projectors are the elements of
   scalar coordinate `X_0 = 1` (an affine hyperplane, complex dimension three) plus the origin, from the single
   identity `L_X^2 = X_0 L_X`.
+
+## Annihilators: compute an owner example before copying it (2026-09-27)
+- `_reserve/annihilator_check.py` (sympy) verifies the twelve products of $\mathbb{B}=C\otimes H$; `examples`
+  re-checks every worked generator, `law` re-checks the dimension law on the 624 grid elements. Run it before
+  publishing any annihilator or zero-divisor example.
+- An owner article's example is a claim, not a fact. Three claims were wrong: AQA's second generator at
+  $e_1+ie_2$ (true: $e_0+ie_3$, not $e_3+ie_0$); "APS and AQS place every element in its own annihilator"
+  (only true for real coefficients, since those two products are merely conjugate-alternating); "SQS has a
+  plane only for a pure zero divisor" (a pure element off the cone has a plane too).
+- In an antilinear slot, $v\mapsto\overline{L(v)}$ is linear with the same kernel: build the matrix from
+  $\overline{L(e_k)}$ and take the nullspace. Do not conjugate the nullspace vectors again.
+- Every norm in prose gets its subject: "the norm of $\tilde P$", never bare "the norm".
+
+## Name the norm: four algebraic norms, one decides (2026-09-27)
+- The biquaternion corpus carries FOUR algebraic norms, each on two of the twelve products: `B=Q_0^2-Q_1^2-Q_2^2-Q_3^2` (GPA,SPA), `N=Q_0^2+Q_1^2+Q_2^2+Q_3^2` (GQA,SQA), `H=|Q_0|^2+|Q|^2` (GPS,SPS), `K=|Q_0|^2-|Q|^2` (GQS,SQS); the four antisymmetrisations carry none. Owner: `the-4-algebraic-norms-over-the-biquaternion-c-space.md`.
+- The norm that DECIDES an annihilator is the reduced norm `Norm=Sc(P^nat P)=N`, the determinant of the 2x2 model. It is NOT the algebraic norm the plain product carries: `B` at `e_0+e_1` is 0 while `Norm` is 2 and the element is invertible. Never write bare "the norm" — name it, and say whether it carries or decides.
+
+- Write the norm by letter. `annihilators.md` names `N(P)=Sc(P^nat P)=P0^2+P1^2+P2^2+P3^2` in every cell and subsection; SPS names `H(P,X)=0` and SQS names `{X0=0}∩{K(P,X)=0}`. `Norm` alone is the corpus's generic norm of a statement, instantiated by the norm the statement uses. The author rejects any bare "the norm" or "the reduced norm".
+
+- Table cells in the corpus are read as prose: set the conditional clause off with a comma ("When the norm $N(\tilde P)$ is not zero, the two annihilators are $\{0\}$"), give every sentence a subject, and never use a one-word cell ("equal") where a sentence fits ("the two sides are equal"). A chain of bare conditionals with no comma is the defect the author calls "not proper sentences".
+
+- Annihilator vs zero divisors: `P` is a left zero divisor of a product iff its left annihilator is not `{0}`; if `P neq 0` kills `X neq 0` then `X` is a right zero divisor with witness `P`, so `A(P)\{0}` lies in the zero-divisor set `Z` of that product. The containment in the CONE holds only for the four general products (there `Z` = punctured cone). The eight derived structures have `Z` strictly larger (whole punctured space in APA, AQA, SQA, SPS, APS, AQS; `{P_0=0} union cone` in SPA, SQS), and their annihilators leave the cone. `P=0` is excluded: `A(0)=B` and `e_0` of norm 1 is in it.

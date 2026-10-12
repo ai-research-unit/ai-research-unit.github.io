@@ -375,7 +375,7 @@ turn of the local complex structure lives in the composition and is absent from 
 phase of the framework is the phase of an amplitude and the state carries no clock of its own (*Each
 Sector Is the Other's Clock: the Sector Exchange as Relational Time*, *Square Roots: the Local Complex
 Structure, the Light Cone and the Mass Shell*). Third, the dial is where **positivity** enters, and it
-enters once: the probability form is the same form whose diagonal is the squared modulus, whose trace is
+enters once: the probability form is the same form whose algebraic norm is the squared modulus, whose trace is
 the Born rule and whose cone is the state cone, so the Bochner positivity of the transform and the
 Hilbert structure of the state space are one fact (*The Bochner Theorem for the Biquaternion Transform:
 the Hermitian Form and the Root*, *Mass, Rank and the Positivity of the Dagger*). The comparison adds no

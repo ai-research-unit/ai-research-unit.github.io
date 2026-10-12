@@ -1,4 +1,4 @@
-# __The Idempotents of the Six Structures__
+# __Idempotents__
 
 ## Introduction
 
@@ -54,7 +54,7 @@ The two cross products are the only structures of the six with a one-point idemp
 
 *Proof.* The four structures of the first group are the theorem of the plain and quaternionic structures, and the two of the second group are the theorem of the cross products; the origin is an idempotent of every structure, so the two sets contain it and the second set is a subset of the first.
 
-**Remark (the contrast with the biquaternion case).** The idempotent theory is coarser over $\mathbb{R}$ than over $\mathbb{C}$ because the real field has no scalar imaginary and the plain form is anisotropic. In the biquaternion chapter the plain product has infinitely many idempotents, of the form $\tfrac12(e_0+\Xi i)$ with $\Xi$ a root of $-e_0$ and $i$ the central imaginary of the coefficients, and the plain square therefore acquires a nontrivial idempotent for every isotropic direction; over $\mathbb{R}$ the central imaginary is absent and no isotropic direction exists, so the equation $\tilde x^2=\tilde x$ has only its central solutions, $0$ and $e_0$, and the four-parameter family of the biquaternion plain structure collapses to the two-point set. The collapse is the same one the chapter records for the roots of a central value, in *The Square Roots of a Central Value in the Six Structures*, below this article in this category.
+**Remark (the contrast with the biquaternion case).** The idempotent theory is coarser over $\mathbb{R}$ than over $\mathbb{C}$ because the real field has no scalar imaginary and the plain form is anisotropic. In the biquaternion chapter the plain product has infinitely many idempotents, of the form $\tfrac12(e_0+\Xi i)$ with $\Xi$ a root of $-e_0$ and $i$ the central imaginary of the coefficients, and the plain square therefore acquires a nontrivial idempotent for every isotropic direction; over $\mathbb{R}$ the central imaginary is absent and no isotropic direction exists, so the equation $\tilde x^2=\tilde x$ has only its central solutions, $0$ and $e_0$, and the four-parameter family of the biquaternion plain structure collapses to the two-point set. The collapse is the same one the chapter records for the roots of a central value, in *Square Roots of a General Element*, above this article in this category.
 
 ## Summary
 
@@ -77,5 +77,5 @@ The idempotent of a structure is an element equal to its square, read from the s
 - *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra-of-quaternions.md`), for the idempotents of the plain product, folded into the block of the general plain algebra.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* (`articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra-of-quaternions.md`), for the idempotents of the Jordan structure.
 - *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six structures and their laws.
-- *The Square-Zero Elements of the Six Structures* (`articles_maths/the-square-zero-elements-of-the-six-structures.md`), below this article in this category, for the elements whose square vanishes.
-- *The Square Roots of a Central Value in the Six Structures* (`articles_maths/the-square-roots-of-a-central-value-in-the-six-structures.md`), below this article in this category, for the roots of the central values.
+- *Nilpotents* (`articles_maths/quaternion-nilpotents.md`), below this article in this category, for the elements whose square vanishes.
+- *Square Roots of a General Element* (`articles_maths/quaternion-square-roots-of-a-general-element.md`), above this article in this category, for the root equation at a general central value, and *Square Roots of Minus One, Zero and Plus One* (`articles_maths/quaternion-square-roots-of-minus-one-zero-and-plus-one.md`), above this article in this category, for the three named values.

@@ -158,7 +158,7 @@ the Krein invariant of the element; it is positive on the centre, negative on th
 
 **A positive and a negative element.** Let $\tilde{P}=2e_0+e_1$ and $\tilde{Q}=e_0+2e_1$. Then $\langle\tilde{P},\tilde{P}\rangle_{\natural*}=4-1=3>0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-4=-3<0$, so the form is indefinite and the two types occur on the axis elements alone.
 
-**A basis element.** Let $\tilde{P}=e_1$ and $\tilde{Q}=e_0$. Then $\tilde{P}\star\tilde{Q}=e_1^{\natural}e_0^{*}=-e_1$, and in the model $\operatorname{adj}\mathsf{M}_2(e_1)\mathsf{M}_2(e_0)^{\dagger}=-\mathsf{M}_2(e_1)$, as the product theorem requires; the diagonal of the form is $\langle e_1,e_1\rangle_{\natural*}=-1$.
+**A basis element.** Let $\tilde{P}=e_1$ and $\tilde{Q}=e_0$. Then $\tilde{P}\star\tilde{Q}=e_1^{\natural}e_0^{*}=-e_1$, and in the model $\operatorname{adj}\mathsf{M}_2(e_1)\mathsf{M}_2(e_0)^{\dagger}=-\mathsf{M}_2(e_1)$, as the product theorem requires; the form at the two equal arguments is $\langle e_1,e_1\rangle_{\natural*}=-1$.
 
 ## The Matrices
 

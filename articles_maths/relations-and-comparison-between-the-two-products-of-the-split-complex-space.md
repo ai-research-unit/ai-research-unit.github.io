@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This article collects the **relations** between the two products $AC$ and $A\overline{C}$ and the **comparison** of their laws: each of the two products determines the other through the conjugation, the conjugation and the exchange of the two slots act differently on the two, the sum and the difference of the two values are the two coordinates of one of the factors, and a short list of identities holds for the one product and fails for the other. The comparison closes with the property table of the two products and with the collapse of the four tables of the four general products onto the two tables of these two. It is where the operational difference of the two products is stated in full.
+This article collects the **relations** between the two products $AC$ and $A\overline{C}$ and the **comparison** of their laws: each of the two products determines the other through the conjugation, the conjugation and the exchange of the two slots act differently on the two, the sum and the difference of the two values are the two coordinates of one of the factors, and a short list of identities holds for the one product and fails for the other. The comparison closes with the property table of the two products and with the collapse of the four tables of the four general products onto the two tables of these two. It is where the operational difference of the two products is stated in full. It closes with the two slots the construction has on $\mathbb{D}$, whose first slot is empty, and with the two pairings and the two adjoints the two products carry.
 
-The two products and their structures are *The Two Products of the Split-Complex Space*, the article preceding this one; the collapse of the twelve structures and the dictionary of the four general products are *The Collapse of the Twelve Structures on the Split-Complex Numbers*; the associator, the ternary product, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complex Space*, both below this article in this category. The degree-two reading of the two products, that is the two forms and the two algebraic norms, is *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, and the products on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complex Space*.
+The two products and their structures are *The Two Products of the Split-Complex Space*, the article preceding this one; the collapse of the twelve structures and the dictionary of the four general products are *The Collapse of the Twelve Structures on the Split-Complex Numbers*; the associator, the ternary product, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complex Space*, both below this article in this category. The degree-two reading of the two products, that is the two forms and the two algebraic norms, is *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, and the products on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complex Space*. The only computations the article adds are the two adjoints of §*The Two Pairings and the Two Adjoints*.
 
 **Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, basis $1,j$, $j^2=+1$; a general element is $A=a+ja'$; the conjugate is $\bar A=a-ja'$; the idempotents are $\Pi_{1,2}=\tfrac12(1\pm j)$, with $A=A_+\Pi_1+A_-\Pi_2$ and $A_\pm=a\pm a'$. The Hermitian conjugation coincides with the bar. In this article the ring product is written $A\cdot C$ where it must be told from the sesquilinear one.
 
@@ -117,6 +117,30 @@ Collecting the sections gives the **property table** of the two products.
 
 The row of the forms is the degree-two reading of the two products: the forms and the norms are *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, and the failure of closure of the sesquilinear left multiplications under composition is owned by *The Sesquilinear Product of the Split-Complex Space*.
 
+## The Two Slots of the Construction
+
+**Definition (the general product of two slots).** On an algebra with an involution, the **general product of two slots** is
+
+$$
+x\star_{K}y=x\,K(y),
+$$
+
+where $K$ is the identity or the conjugation and the first slot carries the conjugation of the coefficient ring.
+
+**Theorem (the two settings on $\mathbb{D}$).** The coefficients of $\mathbb{D}$ are real, so the first slot is the identity and only the second switches, giving the two products of this article:
+
+$$
+\star_{\mathrm{id}}=AC, \qquad \star_{\bar{\cdot}}=A\bar C .
+$$
+
+The construction with both slots alive has four settings; on $\mathbb{D}$ the first slot is empty and the four collapse two-and-two onto the ring product and the sesquilinear product.
+
+**Theorem (the second slot rules the composition and the form).** With $K=\mathrm{id}$ the product is associative, commutative and two-sidedly unital, and the form it carries is symmetric; with $K=\bar{\cdot}$ it is non-associative, conjugate-commutative and right-unital alone, and the form it carries is conjugate-symmetric.
+
+**Proof.** The two settings are $AC$ and $A\bar C$, and their laws are the two columns of the property table above: the first column is the ring, whose laws are *The Specificities of the Split-Complex Algebra*, and the second is the sesquilinear product of *The Sesquilinear Product of the Split-Complex Space*.
+
+**Remark (the empty first slot and the centre).** The first slot carries the conjugation of the coefficient ring; the coefficients of $\mathbb{D}$ are real, so that conjugation is the identity and the first slot contributes nothing. What survives of it is the centre: the real scalars are the centre of the algebra, the two products are the construction read on the centre, and the collapse of the first slot is the statement that the centre is fixed by the conjugation.
+
 ## The Collapse of the Four Tables
 
 The four general products each carry a property table, and on the split-complex space the collapse happens at the level of the tables: the settings with the conjugated first slot coincide with the plain ones, so the four tables become two.
@@ -128,11 +152,47 @@ The four general products each carry a property table, and on the split-complex 
 
 The collapse of the tables is the collapse of the products themselves: the table with the conjugated first slot coincides with the plain one because the first slot carries the identity, and the symmetrised and antisymmetrised products add no row because the algebra is commutative, the antisymmetrised ones vanishing and the symmetrised ones coinciding with the general. The count of the properties that hold is therefore two tables and not four, and the two that remain are the two columns of the table above. The whole of the collapse is *The Collapse of the Twelve Structures on the Split-Complex Numbers*, below this article in this category.
 
+## The Two Pairings and the Two Adjoints
+
+**Theorem (the two pairings).** The two slots carry the two pairings of the space,
+
+$$
+B(A,C)=\operatorname{Sc}(AC), \qquad H(A,C)=\operatorname{Sc}(A\bar C)=g(A,C),
+$$
+
+the first bilinear and symmetric, $\mathbb{D}$-valued with Gram matrix $[1]$ in the basis $1$, the second sesquilinear and conjugate-symmetric. Their real scalar parts are
+
+$$
+\operatorname{Sc}B(A,C)=ac+a'c', \qquad \operatorname{Sc}H(A,C)=ac-a'c'=g(A,C),
+$$
+
+and the second, the form of the Hermitian side, is of signature $(1,1)$ in the basis $\{1,j\}$. They are the forms of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*.
+
+**Proof.** The pairings are the two products followed by the scalar part, $\operatorname{Sc}(AC)=ac+a'c'$ and $\operatorname{Sc}(A\bar C)=ac-a'c'$, the first symmetric and the second conjugate-symmetric, since the $j$-part of $A\bar C$ changes sign under the exchange of the two arguments. The Gram values are $B(1,1)=B(j,j)=1$ and $B(1,j)=0$, giving $\mathrm{diag}(1,1)$ for the scalar part of $B$, and $H(1,1)=1$, $H(j,j)=-1$ and $H(1,j)=0$, giving $\mathrm{diag}(1,-1)$, of signature $(1,1)$. The form theory, including the realification of the two forms, is *The Two Forms and the Two Algebraic Norms of the Split-Complex Space* and *The Hermitian Form and the Cone of the Split-Complex Algebra*.
+
+**Definition.** For a real-linear map $F$ the **transpose** $F^{\mathrm T}$ is defined by $B(FX,Y)=B(X,F^{\mathrm T}Y)$, and the **adjoint** $F^{\dagger}$ by $H(FX,Y)=H(X,F^{\dagger}Y)$ for a $\mathbb{D}$-linear $F$ and by $H(FX,Y)=\overline{H(X,F^{\dagger}Y)}$ for a $\bar\cdot$-semilinear $F$.
+
+**Theorem (the two adjoints of the ordinary and of the sesquilinear right multiplication).** For the ordinary left multiplication $L^{\mathrm{alg}}_{A}(X)=AX$ and the sesquilinear right multiplication $R_{A}(X)=X\bar A$,
+
+$$
+\bigl(L^{\mathrm{alg}}_{A}\bigr)^{\mathrm T}=L^{\mathrm{alg}}_{A}, \qquad \bigl(L^{\mathrm{alg}}_{A}\bigr)^{\dagger}=L^{\mathrm{alg}}_{\bar A},
+$$
+
+$$
+\bigl(R_{A}\bigr)^{\mathrm T}=L^{\mathrm{alg}}_{\bar A}, \qquad \bigl(R_{A}\bigr)^{\dagger}=L^{\mathrm{alg}}_{A}.
+$$
+
+The transpose keeps the parameter and the adjoint conjugates it, so the transpose and the adjoint of one and the same map agree exactly when $A$ is real.
+
+**Proof.** For the first pair, $B(AX,Y)=AXY$ and $B(X,AY)=XAY$ are equal because the ring is commutative, so $L^{\mathrm{alg}}_{A}$ is its own transpose; and $H(AX,Y)=AX\bar Y$ while $H(X,\bar AY)=X\overline{\bar AY}=XA\bar Y$, so the adjoint of $L^{\mathrm{alg}}_{A}$ is $L^{\mathrm{alg}}_{\bar A}$. For the second pair, $B(X\bar A,Y)=X\bar AY$ and $B(X,\bar AY)=X\bar AY$, so the transpose of $R_{A}$ is $L^{\mathrm{alg}}_{\bar A}$; and $H(X\bar A,Y)=X\bar A\bar Y$ while $H(X,AY)=X\bar A\bar Y$, so the adjoint of $R_{A}$ is $L^{\mathrm{alg}}_{A}$. The two agree exactly at $A=\bar A$, that is at the real $A$.
+
+**Remark (the conjugate-linear family).** The sesqualgebra left multiplication $L_{A}(X)=A\bar X$ is $\bar\cdot$-semilinear and self-adjoint for $H$, and the two projections onto the idempotent lines are mutually adjoint, $S_{\Pi_1,\Pi_2}^{\dagger}=S_{\Pi_2,\Pi_1}$; the adjoints of the one-sided multiplications and of the sandwich are computed in *The Sesquilinear Product of the Split-Complex Space*.
+
 ## Summary
 
 The two products of the split-complex space determine each other through the bar: $A\overline{C}=\overline{\bar AC}$ and $AC=\overline{\bar A\overline C}$. The bar conjugates the ring product term by term, $\overline{AC}=\bar A\bar C$, and conjugates the sesquilinear product with the second slot undone, $\overline{A\bar C}=\bar AC$. The plain exchange of the two slots leaves the ring product unchanged and conjugates the sesquilinear one; the conjugate exchange leaves both unchanged, which is the conjugate-symmetry of the sesquilinear product. The sum and the difference of the two values are $AC+A\bar C=2(\operatorname{Re}C)A$ and $AC-A\bar C=2(\operatorname{Im}C)\,jA$, so the two products agree exactly when the second factor is real or the first is zero.
 
-The comparison table lists the two columns: the ring product is bilinear, symmetric, associative, with a two-sided unit and a definite position in the forms; the sesquilinear product is conjugate-linear in the second slot, conjugate-symmetric, non-associative, with a right unit alone, and it is the second algebraic norm $N(A)=A\bar A$. The identities that hold for the one and fail for the other are read on the witnesses $A=C=1$, $D=j$ and $A=C=j$, and the only identity common to the two is the multiplicativity of the matrix model. The four tables of the four general products collapse to the two tables of these two.
+The comparison table lists the two columns: the ring product is bilinear, symmetric, associative, with a two-sided unit and a definite position in the forms; the sesquilinear product is conjugate-linear in the second slot, conjugate-symmetric, non-associative, with a right unit alone, and it is the second algebraic norm $N(A)=A\bar A$. The identities that hold for the one and fail for the other are read on the witnesses $A=C=1$, $D=j$ and $A=C=j$, and the only identity common to the two is the multiplicativity of the matrix model. The four tables of the four general products collapse to the two tables of these two. The two products are the two settings of the two-slot construction on a real base: the first slot is empty, the second decides the composition and the symmetry of the form, and what remains of the first slot is the centre. The two pairings carry two adjoints of a linear map, computed here: the transpose keeps the parameter and the adjoint conjugates it, so the ordinary multiplication by $A$ has transpose itself and adjoint the multiplication by $\bar A$, and the two agree exactly for real $A$.
 
 ## Summary of Notation
 
@@ -145,9 +205,15 @@ The comparison table lists the two columns: the ring product is bilinear, symmet
 | $AC+A\bar C=2cA$, $AC-A\bar C=2c'jA$ | the sum and the difference, $c=\operatorname{Re}C$, $c'=\operatorname{Im}C$ |
 | $AC=A\bar C \iff C\in\mathbb{R}$ or $A=0$ | the agreement condition |
 | $\mathsf M_2(AC)=\mathsf M_2(A)\mathsf M_2(C)$, $\mathsf M_2(A\bar C)=\mathsf M_2(A)\mathsf M_2(\bar C)$ | $\mathsf M_2$ carries both products |
+| $x\star_{K}y=xK(y)$ | the general product of two slots |
+| $K\in\{\mathrm{id},\bar\cdot\}$ | the switch of the second slot, the first slot being the identity |
+| $B(A,C)=AC$, $\operatorname{Sc}B=ac+a'c'$ | the bilinear pairing, $\mathbb{D}$-valued, Gram matrix $[1]$ |
+| $H(A,C)=A\bar C$, $\operatorname{Sc}H=ac-a'c'=g$ | the Hermitian pairing, realified signature $(1,1)$ |
+| ${}^{\mathrm T}$, ${}^{\dagger}$ | the transpose for $B$ and the adjoint for $H$ |
 
 ## Further Reading
 
+- Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for the derived operation of an algebra with a conjugate-linear involution and the slot construction.
 - Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for algebras with involution and the distinction between an automorphism and a conjugate-linear map.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, Graduate Texts in Mathematics 131, 2nd ed. 2001), for the laws of a commutative ring and the failure of associativity in a non-associative structure.
 - Israel Nathan Herstein, *Topics in Algebra* (Wiley, 2nd ed. 1975), for associativity, alternativity, flexibility and the power-associativity they imply.

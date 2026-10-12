@@ -17,7 +17,7 @@ $\mathrm{GQA}$ whose square is the interval (*The Interval as the Square and the
 Composition*). Its value is **central**: whatever the two operations are, the operation returns a multiple
 of the unit, the scalar their overlap carries, and nothing else. The article's claim is that this is what
 the symmetrised half of the quaternionic product **is** — a **scalar coupling**, a comparison that
-returns a number — and that its diagonal is the **interval** of the material row.
+returns a number — and that its algebraic norm is the **interval** of the material row.
 
 The word of the band is **Coupling**, and the article earns it from the value the operation returns. The
 companion half, the antisymmetrised quaternionic product of the band
@@ -148,7 +148,7 @@ right one, the operation reads
 | $e_2$ | $0$ | $0$ | $e_0$ | $0$ |
 | $e_3$ | $0$ | $0$ | $0$ | $e_0$ |
 
-**Proposition (the table).** The table is diagonal,
+**Proposition (the table).** The table is algebraic norm,
 $e_\mu\bullet e_\nu=\delta_{\mu\nu}e_0$; every entry is central; the four diagonal entries are the unit
 and the twelve off-diagonal entries are zero; and the operation is not the zero operation, since
 $e_0\bullet e_0=e_0$.
@@ -161,7 +161,7 @@ Four of the sixteen products are nonzero and equal to $e_0$, twelve vanish: the 
 table of the coefficient form and nothing more. In particular two **distinct** basis operations do not
 couple at all — their value is zero — and a basis operation couples only with itself, to the unit.
 
-## The Diagonal Is the Interval
+## The Algebraic norm Is the Interval
 
 **Theorem (the square is the interval).** For every $\tilde Q$,
 
@@ -177,12 +177,12 @@ which is $N(\tilde Q)$. The material interpretation is the substitution $Q_0=ict
 $t$ and $\mathbf x$ real.
 
 This is the article's sharpest point, and it must be stated with its caution. **The operation whose values
-are central is the one that carries the metric.** The diagonal of the scalar coupling is the interval, so
+are central is the one that carries the metric.** The algebraic norm of the scalar coupling is the interval, so
 the geometry of the material row sits in the **symmetric** part of the quaternionic product; the order of
 the two operations, by contrast, sits in the **antisymmetric** part and carries no geometry at all. The
 two halves of one product divide the two jobs between them.
 
-The diagonal has three interpretations that must not be conflated. Its **value** $N(\tilde Q)$ is the interval;
+The algebraic norm has three interpretations that must not be conflated. Its **value** $N(\tilde Q)$ is the interval;
 its **sign** separates the timelike from the spacelike element, since $N$ is indefinite on the material
 sector; and its **vanishing set** is the light cone, $\{N(\tilde Q)=0\}$, the set of the zero divisors of
 the algebra. The square of a material element being central, the interval is a number carried by the
@@ -197,7 +197,7 @@ arithmetic; the maximum deviation from zero is $8.9\times10^{-16}$, machine prec
 $\tilde P\bullet\tilde Q-\tilde Q\bullet\tilde P$ vanishes **exactly** on the same samples, not merely to
 machine precision, the coefficient being literally symmetric.
 
-**Proposition (polarisation identity).** The coefficient is recovered from the diagonal by the
+**Proposition (polarisation identity).** The coefficient is recovered from the algebraic norm by the
 polarisation identity of a symmetric bilinear form,
 
 $$
@@ -215,7 +215,7 @@ the two sides agreeing to machine precision on all of them.
 
 **Interpretation (the interference term).** The coupling is the **cross term of the square of a sum**, the
 quantity two operations contribute jointly beyond the sum of their separate intervals. Reading the
-diagonal $N(\tilde P)$ as the interval a single operation carries, the off-diagonal $N(\tilde P,\tilde Q)$
+algebraic norm $N(\tilde P)$ as the interval a single operation carries, the off-diagonal $N(\tilde P,\tilde Q)$
 is the correction to the interval of the sum: if it vanishes, the two operations contribute to the
 interval of their sum only through their separate intervals, and they are uncorrelated for the metric. In
 the language of a superposition this is an **interference term** — the joint term of a squared sum — with
@@ -224,10 +224,10 @@ norm: the coefficient is indefinite, so it can be positive or negative, and it i
 interference.
 
 **Interpretation (mass and interaction are one form).** A single coefficient carries both of the interpretations the
-framework gives it. Evaluated on one operation the diagonal is the interval, and on a material
-four-momentum on shell it is $-m^{2}c^{2}$, so the diagonal carries the **mass**; evaluated on two
+framework gives it. Evaluated on one operatiat the two equal arguments is the interval, and on a material
+four-momentum on shell it is $-m^{2}c^{2}$, so the algebraic norm carries the **mass**; evaluated on two
 operations the off-diagonal is their pairing, so the same coefficient carries the **interaction**. Mass
-and interaction are the diagonal and the off-diagonal of one symmetric form, and neither is a separate
+and interaction are the algebraic norm and the off-diagonal of one symmetric form, and neither is a separate
 object.
 
 **Interpretation (a signed correlation, and its zeros decouple).** The coefficient is indefinite, so the coupling
@@ -268,8 +268,7 @@ scalar part of this article's operation is $N$ and **not** $B$: on the vector pa
 forms carry opposite signs, and the natural conjugation in the first slot is exactly what flips the sign.
 A sentence that names $B$ for the coefficient of the symmetrised quaternionic product is wrong, and the
 error is the most tempting of this row. The forms themselves, with their Gram matrices and their
-signatures, are *Comparison Between the Four General Products* and *The Four Pairings of the
-Biquaternion Algebra*.
+signatures, are *Comparison Between the Four General Products* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
 **A cross-chapter warning on the letters.** The letters of the two forms are chapter-relative. The
 mathematics chapter writes *this* chapter's $N$ — the scalar part of $\tilde P^{\natural}\tilde Q$ — as
@@ -325,13 +324,13 @@ comparison returns, and it is not a composite operation of the same kind as its 
 - **The comparison is order-free.** The operation is commutative, so the coupling of two operations does
 not depend on their order: this is the part of the product that the order does not touch. All of the
 order lives in the antisymmetric half of the parent, the failed bracket of the companion band.
-- **The diagonal of the coupling is the interval.** The coupling of an operation with itself is its
+- **The algebraic norm of the coupling is the interval.** The coupling of an operation with itself is its
 interval, so the symmetric half of the row is the half that carries the metric of the material row.
 - **The coupling is the interference term of a sum.** By the polarisation identity the off-diagonal is the
 cross term of the square of a sum, the quantity two operations contribute jointly beyond their separate
 intervals; a vanishing coupling is a pair the metric does not correlate. The interference is symmetric
 and bilinear and carries no positivity.
-- **Mass and interaction are one form.** The diagonal, on a material four-momentum on shell, is
+- **Mass and interaction are one form.** The algebraic norm, on a material four-momentum on shell, is
 $-m^{2}c^{2}$ and carries the mass; the off-diagonal carries the interaction. One coefficient, read on
 one argument and on two, is both.
 - **The pairing is a signed correlation.** The coefficient is indefinite, so a coupling can be positive,
@@ -359,18 +358,18 @@ number.
 
 **Proved.** The explicit form
 $\tilde P\bullet\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0$ and the centrality of the value; the
-commutativity; the image equal to the centre $\mathbb{C}_{\mathbb{B}}$; the diagonal,
+commutativity; the image equal to the centre $\mathbb{C}_{\mathbb{B}}$; the algebraic norm,
 $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, with the material interpretation $-c^{2}t^{2}+\mathbf x^{2}$; the
 reconstruction $\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$;
-the sixteen basis products, diagonal with values $\delta_{\mu\nu}e_0$; the absence of a unit, with $e_0$
+the sixteen basis products, algebraic norm with values $\delta_{\mu\nu}e_0$; the absence of a unit, with $e_0$
 acting as the projection onto the scalar part; the coefficient $N$ and not $B$, the two differing by the
 sign of the vector part; the indefiniteness of the coefficient on the real space; the polarisation
-identity, recovering the coefficient from the diagonal as the cross term of a sum.
+identity, recovering the coefficient from the algebraic norm as the cross term of a sum.
 
 **Interpretations.** That the symmetrised quaternionic product is the scalar coupling of two material
 operations; that its value is the number a comparison of the two operations returns; that the comparison
-is order-free; that its diagonal is the interval and the symmetric half of the row carries the metric;
-that the off-diagonal is the interference term of a sum; that mass and interaction are the diagonal and
+is order-free; that its algebraic norm is the interval and the symmetric half of the row carries the metric;
+that the off-diagonal is the interference term of a sum; that mass and interaction are the algebraic norm and
 the off-diagonal of one form; that the pairing is a signed correlation whose zeros decouple; that the zeros
 of the coupling are an orthogonality selection rule and a maximal $N$-orthogonal family the algebraic shape
 of a superselection sector.
@@ -397,11 +396,11 @@ symmetric part of the quaternionic product for the exchange of its two arguments
 central, $\tilde P\bullet\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0=N(\tilde P,\tilde Q)e_0$: it is the
 **general quaternionic bilinear form read as a product**. The operation is commutative, its image is the
 centre, it has **no unit** ($e_0\bullet\tilde Q=Q_0e_0$ projects onto the scalar part), and it is **not a
-Jordan product**, unlike the symmetrised plain product of the band SPA. Its diagonal is the **interval**,
+Jordan product**, unlike the symmetrised plain product of the band SPA. Its algebraic norm is the **interval**,
 $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, so the operation whose values are central is the one that
 carries the metric of the material row, while the order of the two operations sits in the antisymmetric
 half of the parent. By the polarisation identity the off-diagonal coefficient is the interference term of
-a sum, so one form carries both the **mass** (its diagonal) and the **interaction** (its off-diagonal),
+a sum, so one form carries both the **mass** (its algebraic norm) and the **interaction** (its off-diagonal),
 and the pairing is a **signed correlation** rather than a probability. The coupling differs from the
 symmetrised plain product of the plain row in one sign:
 its coefficient is the quaternionic form $N$, the scalar part of $\tilde P^{\natural}\tilde Q$, and not
@@ -429,7 +428,7 @@ the comparison of the four rows is *The Four General Products and Their Physical
 | $\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$ | the reconstruction of the parent |
 | $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the general quaternionic bilinear form, the coefficient of the coupling |
 | $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$ | the general plain bilinear form, the coefficient of the plain row |
-| $N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ | the biquaternion norm, the diagonal of the coupling |
+| $N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ | the biquaternion norm, the algebraic norm of the coupling |
 | $ict\,e_0+\mathbf x$ | the material coordinate; $\tilde Q\bullet\tilde Q=-c^{2}t^{2}+\mathbf x^{2}$ |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
 

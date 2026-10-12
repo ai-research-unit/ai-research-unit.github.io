@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The four **algebraic norms** of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, $B$, $N$, $H$ and $K$, are the diagonals of the four general forms, and each of them is read on each of the remarkable subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$. This article carries out that reading, one subspace to a section, and states for each subspace what each of the four algebraic norms becomes there and what its signature over $\mathbb{R}$ is.
+The four **algebraic norms** of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, $B$, $N$, $H$ and $K$, are the four general algebraic norms, and each of them is read on each of the remarkable subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$. This article carries out that reading, one subspace to a section, and states for each subspace what each of the four algebraic norms becomes there and what its signature over $\mathbb{R}$ is.
 
-The rule is the same on every subspace and needs no proof beyond the definition. The **algebraic norm** of a form is its diagonal, and the diagonal of a restriction is the restriction of the diagonal: for a subspace $U$ and a form $\varphi$,
+The rule is the same on every subspace and needs no proof beyond the definition. The **algebraic norm** of a form is that form read at its two equal arguments, and the algebraic norm of a restriction is the restriction of the algebraic norm: for a subspace $U$ and a form $\varphi$,
 
 $$
 \varphi|_{U}(\tilde Q)=\varphi(\tilde Q,\tilde Q)=\varphi(\tilde Q)\big|_{\tilde Q\in U},
@@ -51,7 +51,7 @@ H(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\ti
 K(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
 $$
 
-and the four **algebraic norms** are their diagonals,
+and the four **algebraic norms** are their algebraic norms,
 
 $$
 B(\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2},\qquad
@@ -60,7 +60,7 @@ H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2},\qquad
 K(\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}.
 $$
 
-$B$ is the general plain bilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle$, $N$ the general quaternionic bilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$, $H$ the general plain sesquilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{*}$ and $K$ the general quaternionic sesquilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural*}$; the names, the bracket and the pair of each are the convention of *Conventions in the Biquaternion Universe*, and the four are defined in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which also counts them, and separated, as the diagonals of those forms, in *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. $H$ is also the Hermitian algebraic norm and $K$ the Krein algebraic norm. The Euclidean norm is $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$, the square root of $H$ and the unique topological norm of the space.
+$B$ is the general plain bilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle$, $N$ the general quaternionic bilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$, $H$ the general plain sesquilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{*}$ and $K$ the general quaternionic sesquilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural*}$; the names, the bracket and the pair of each are the convention of *Conventions in the Biquaternion Universe*, and the four are defined in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which also counts them, and separated, as the algebraic norms of those forms, in *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. $H$ is also the Hermitian algebraic norm and $K$ the Krein algebraic norm. The Euclidean norm is $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$, the square root of $H$ and the unique topological norm of the space.
 
 The remarkable subspaces and their real bases are those of *Introduction to the Remarkable Subspaces*, and are used here in the coordinate form that article gives: the centre $\mathbb{C}_{\mathbb{B}}=\{Ae_0:A\in\mathbb{C}\}$, of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})=\{\sum_kP_ke_k:P_k\in\mathbb{C}\}$, of real dimension six; the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\{\sum_\mu h_\mu e_\mu:h_\mu\in\mathbb{R}\}$ and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}=\{ih:h\in\mathbb{H}_{\mathbb{B}}\}$, of real dimension four; and the Hermitian subspace $\mathbb{M}_+=\{a_0e_0+i\mathbf p:a_0\in\mathbb{R},\ \mathbf p\ \text{real}\}$ and the anti-Hermitian subspace $\mathbb{M}_-=\{ib_0e_0+\mathbf q:b_0\in\mathbb{R},\ \mathbf q\ \text{real}\}$, of real dimension four. A signature $(p,q)$ over $\mathbb{R}$ counts $p$ positive and $q$ negative squares of the real quadratic form; it is definite when one of the two numbers is zero and indefinite otherwise.
 
@@ -136,11 +136,11 @@ so that $N=-K$ and $B=-H$ there: the interval $N$ of signature $(3,1)$ and its n
 
 ## What the Remarkable Subspaces Separate
 
-The remarkable subspaces separate the four algebraic norms in a way that no single one of them does on the whole algebra. On $\mathbb{B}$ no algebraic norm is both definite and multiplicative, and $N$ and $H$ are two different functions; on the quaternion subspace the two functions become one, $N=H$, and on the anti-quaternion subspace they become opposite, $N=-H$, the one subspace being the imaginary translate of the other. The coincidence of the quaternion subspace, and its failure on the other four subspaces, is the content of the real-form caution of *The 12 Products of the Biquaternion Complex Space* read on the diagonal and on the remarkable subspaces.
+The remarkable subspaces separate the four algebraic norms in a way that no single one of them does on the whole algebra. On $\mathbb{B}$ no algebraic norm is both definite and multiplicative, and $N$ and $H$ are two different functions; on the quaternion subspace the two functions become one, $N=H$, and on the anti-quaternion subspace they become opposite, $N=-H$, the one subspace being the imaginary translate of the other. The coincidence of the quaternion subspace, and its failure on the other four subspaces, is the content of the real-form caution of *The 12 Products of the Biquaternion Complex Space* read at the two equal arguments and on the remarkable subspaces.
 
 Three facts summarise the separation. Only $H$ is definite on every one of the remarkable subspaces; $N$ is definite on exactly two of them, positive on the quaternion subspace and negative on its imaginary translate; $B$ is definite on exactly two, the two sectors, with exchanged signs; and $K$ is definite on exactly two, the centre and the vector subspace, where it is the positive definite form and its negative. The four algebraic norms are thus definite on the whole algebra only for $H$; each of the other three is definite on a proper pair of subspaces, and the remarkable subspaces are the places where the pair is read.
 
-The same facts are read in the four algebraic norms of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* and in the four pairings of *The Four Pairings of the Biquaternion Algebra*; the restrictions to the remarkable subspaces are the same object read on the remarkable subspaces, and the tables above and the four pairings' own restriction tables agree cell by cell.
+The same facts are read in the four algebraic norms of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* and in the four pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the restrictions to the remarkable subspaces are the same object read on the remarkable subspaces, and the tables above and the four pairings' own restriction tables agree cell by cell.
 
 ## Summary
 
@@ -153,7 +153,7 @@ The same facts are read in the four algebraic norms of *The 4 Algebraic Norms ov
 | Symbol | Meaning |
 |---|---|
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the four pairings: the bilinear, the general quaternionic bilinear, the sesquilinear and the general quaternionic sesquilinear form |
-| $B,N,H,K$ | the four algebraic norms, the diagonals of the four pairings, of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* |
+| $B,N,H,K$ | the four algebraic norms of the four pairings, of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ | the centre and the vector subspace |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces, the two real forms |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces; the informational and the material sector |
@@ -169,7 +169,7 @@ The same facts are read in the four algebraic norms of *The 4 Algebraic Norms ov
 - *Conventions in the Biquaternion Universe* (`articles_physics/conventions-in-the-biquaternion-universe.md`), for the convention of the four pairings — the one bracket, the four names, the pairs and the trace form — and for the readings of the four on the algebra and on the material sector
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces themselves, one to a section, with their defining conditions, bases and dimensions
 - *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the coordinate blocks, the intersections and the sums of the remarkable subspaces
-- *Remarkable Subspaces and the Four Forms* (`articles_maths/remarkable-subspaces-and-the-four-forms.md`), for the same remarkable subspaces read at the level of the forms, with the value of each form on a general pair, its real and imaginary parts and the alternating companion of the two sesquilinear forms, of which the tables here are the diagonals
+- *Remarkable Subspaces and the Four Forms* (`articles_maths/remarkable-subspaces-and-the-four-forms.md`), for the same remarkable subspaces read at the level of the forms, with the value of each form on a general pair, its real and imaginary parts and the alternating companion of the two sesquilinear forms, of which the tables here are the algebraic norms
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the four general products read on the remarkable subspaces, one subspace to a section
-- *The Four Pairings of the Biquaternion Algebra* (`articles_maths/the-four-pairings-of-the-biquaternion-algebra.md`), for the four pairings and the four degree-two functions whose diagonals are the four algebraic norms, and their own restrictions to the remarkable subspaces
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms, the four degree-two functions and the four algebraic norms they carry, and their own restrictions to the remarkable subspaces
 - *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four general forms and their Gram matrices

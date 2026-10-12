@@ -27,7 +27,7 @@ absence of a slot is the absence of a composition. The two structures that measu
 reach are the radical and the isotropic set.
 
 The article keeps to the operation and to the coefficient it returns. The operation, its centrality, its
-commutativity, the absence of a unit and the diagonal as the interval are the companion article
+commutativity, the absence of a unit and the algebraic norm as the interval are the companion article
 *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*; the class, the image
 and the sixteen products are *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*; the
 radical, the isotropic elements and the Jordan failure, in their algebraic form, are
@@ -60,7 +60,7 @@ $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$ lies in the centre.
 case $\tilde P=\tilde Q$. Both are in the companion article.
 
 A value in the centre is a **number**, and the whole service and the whole failure of the operation come
-from that. The service is the diagonal: the square of an element is its interval, and a number can be
+from that. The service is the algebraic norm: the square of an element is its interval, and a number can be
 compared, multiplied and read as a physical invariant. The failure is the rest: a number carries no
 vector direction and no first or second slot, so it invites no further product and admits no iteration.
 The operation is the identity table of the coefficient $N$, and its image is one-dimensional while its
@@ -237,8 +237,8 @@ and vector rows are read as the real part of the coefficient, the two coefficien
   positivity are different too.
 - **No algebra of masses in this row.** A unit and a Jordan identity are what make a symmetrised product
   an algebra one can iterate, with powers, spectra and observables. Neither exists here, so no observable
-  algebra of masses — no spectral bookkeeping built on the diagonal — can be assembled from the material
-  coupling, and the observable structure must come from the informational, sesquilinear row. The diagonal
+  algebra of masses — no spectral bookkeeping built at the two equal arguments — can be assembled from the material
+  coupling, and the observable structure must come from the informational, sesquilinear row. The algebraic norm
   gives the interval, but an interval is not a mass operator without the algebra that would make it one.
 - **Mass is a character and not an eigenvalue.** The proved facts are the trivial radical, the centrality
   of the values, the absence of a unit and the failure of the Jordan identity. Read together they say that
@@ -319,7 +319,7 @@ subspace and exchanging signatures on the other four. The interpretation is that
 the **centre** returns a number, and a number **compares and does not compose**: the operation is the
 scalar coupling of the material row, non-degenerate, and it is not an algebra with a unit, not a Jordan
 algebra and not a state. Because no unit and no Jordan identity is available, no observable algebra of
-masses can be assembled from this row — the diagonal gives the interval, but not an interval *operator* —
+masses can be assembled from this row — the algebraic norm gives the interval, but not an interval *operator* —
 and the observable structure must come from the informational, sesquilinear row. The algebraic radical,
 isotropic elements and Jordan witness are
 *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the remarkable-subspace
@@ -335,7 +335,7 @@ Operations*; and the two forms are *Comparison Between the Four General Products
 | $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ | the symmetrised quaternionic product (SQA) |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the centre, the image of the coupling |
 | $\mathrm{Rad}(\bullet)=\{\tilde Z:\tilde Z\bullet\tilde X=0\ \forall\tilde X\}$ | the radical; equal to $\{0\}$ |
-| $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$ | the square; the diagonal of the coupling |
+| $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$ | the square; the algebraic norm of the coupling |
 | $\{N(\tilde Q)=0\}$ | the isotropic elements; the zero divisors and the light cone |
 | $\bigl(\tilde X^{\bullet2}\bullet\tilde Y\bigr)\bullet\tilde X=\tilde X^{\bullet2}\bullet(\tilde Y\bullet\tilde X)$ | the Jordan identity; false, witness $(e_1,e_1)$ |
 | $e_0\bullet\tilde Q=Q_0e_0$ | the projection onto the scalar part; there is no unit |

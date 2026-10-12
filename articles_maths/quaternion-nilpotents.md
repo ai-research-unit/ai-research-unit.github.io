@@ -1,4 +1,4 @@
-# __The Square-Zero Elements of the Six Structures__
+# __Nilpotents__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ and a **square-zero element**, or **nilpotent**, is a nonzero member, written $\
 
 ## The Six Diagonals
 
-The square-zero equation is the diagonal equation, so the square-zero set is read from the six squares of *The Idempotents of the Six Structures*:
+The square-zero equation is the diagonal equation, so the square-zero set is read from the six squares of *Idempotents*:
 
 | structure | square of $\tilde x$ | square-zero equation |
 |---|---|---|
@@ -73,7 +73,7 @@ The square-zero elements, the zero divisors and the roots of $0$ are three class
 
 **Theorem (the comparison of the three classes).** For the two antisymmetric structures the three classes coincide away from the origin: a nonzero element is square zero exactly when it is a zero divisor, and the square-zero set is also the root set of $0$. For the four other structures the three classes do not coincide: the square-zero set is the origin alone, while the zero-divisor set is empty for the two general structures, the pure cone for the symmetric plain structure, and the punctured space for the symmetric quaternionic structure.
 
-*Proof.* A nonzero square-zero element is a zero divisor, its own partner, and a root of $0$; the converse fails in the four structures whose square-zero set is the origin alone, where that set is a point while the zero-divisor set is one of the three other values computed in *The Zero Divisors and the Six Structures*, above this article in this category. For the antisymmetric structures the square vanishes identically, so the square-zero set and the root set of $0$ are both $\mathbb{H}$, and the zero-divisor set is $\mathbb{H}$ minus the origin, which is the same set with the origin removed.
+*Proof.* A nonzero square-zero element is a zero divisor, its own partner, and a root of $0$; the converse fails in the four structures whose square-zero set is the origin alone, where that set is a point while the zero-divisor set is one of the three other values computed in *Zero Divisors*, above this article in this category. For the antisymmetric structures the square vanishes identically, so the square-zero set and the root set of $0$ are both $\mathbb{H}$, and the zero-divisor set is $\mathbb{H}$ minus the origin, which is the same set with the origin removed.
 
 The comparison is the visible content of the classification. The three classes collapse onto one another exactly on the alternating structures, where the diagonal of the product is identically zero; they separate as soon as the diagonal does not vanish identically, and the gap between them measures the difference between the vanishing of a square and the vanishing of a product. This is the same gap the symmetric quaternionic structure exhibits most sharply, its square nonzero on every nonzero element while every nonzero element is a zero divisor: the vanishing of a *product* does not require the vanishing of a *square*.
 
@@ -97,5 +97,5 @@ The square-zero set of a structure is the set of elements whose square vanishes,
 - *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md`), above this article in this category, for the division property.
 - *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra-of-quaternions.md`), above this article in this category, for the nilpotents of the plain product.
 - *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six structures.
-- *The Square Roots of a Central Value in the Six Structures* (`articles_maths/the-square-roots-of-a-central-value-in-the-six-structures.md`), above this article in this category, for the roots of $0$.
-- *The Zero Divisors and the Six Structures* (`articles_maths/the-zero-divisors-and-the-six-structures.md`), above this article in this category, for the zero divisors.
+- *Square Roots of Minus One, Zero and Plus One* (`articles_maths/quaternion-square-roots-of-minus-one-zero-and-plus-one.md`), above this article in this category, for the roots of $0$ read at the three values, and *Square Roots of a General Element* (`articles_maths/quaternion-square-roots-of-a-general-element.md`), above this article in this category, for the root equation at a general central value.
+- *Zero Divisors* (`articles_maths/quaternion-zero-divisors.md`), above this article in this category, for the zero divisors.

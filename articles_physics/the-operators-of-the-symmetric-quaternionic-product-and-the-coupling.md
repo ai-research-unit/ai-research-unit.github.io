@@ -53,7 +53,7 @@ chapter: the plain row writes it for $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P
 $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, a different operation; the mathematics
 articles of the block write this same product $\star$ and its operator $L^{\star}$, the two notations being the
 same object. The generic trace is
-$T(\tilde Q)=2Q_0$ and the diagonal of the form is $N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^{2}$. The operator theory
+$T(\tilde Q)=2Q_0$ and the algebraic norm of the form is $N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^{2}$. The operator theory
 is owned by four mathematics articles and is cited in place: *The Multiplication Operators of the Symmetric
 Quaternionic Algebra* for the one family, its rank, its composition, its adjoint and its derivations; *The
 Quaternion Form as a Product on the Symmetric Quaternionic Algebra* for the form, its Gram matrix, its
@@ -345,17 +345,17 @@ zero one, and the identity operator, which the general plain row has, is not eve
 ## The Two-Sided Operators and the Spin Group
 
 **Definition.** The **two-sided operator** of a pair $(\tilde A,\tilde B)$ is the composite
-$L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}$, and the **sandwich** or diagonal two-sided operator of an element
+$L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}$, and the **sandwich** or algebraic norm two-sided operator of an element
 is $\Theta^{\bullet}_{\tilde A}=L^{\bullet}_{\tilde A}R^{\bullet}_{\tilde A}=L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde A}$.
 One-sided and two-sided operators are the same family here, because $L^{\bullet}=R^{\bullet}$.
 
 **Theorem (the two-sided operators are rank one, and no spin group is realised).** Every two-sided operator of
 the block is the composite $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}=\mathrm{Sc}(\tilde A)L^{\bullet}_{\tilde B}$,
-of rank one whenever $\mathrm{Sc}(\tilde A)\tilde B\neq0$, and the diagonal one is
+of rank one whenever $\mathrm{Sc}(\tilde A)\tilde B\neq0$, and the algebraic norm one is
 $\Theta^{\bullet}_{\tilde A}=A_0L^{\bullet}_{\tilde A}$; none is invertible, so the **group of invertible
 two-sided operators of the block is trivial**. In the Clifford structure of the same space, by contrast, the
 invertible two-sided operators form the group of sandwiches $T_{a,b}$ with unit parameters, whose kernel is the
-diagonal of the central units, and inside it the even versors of unit norm form the **spin group**, whose
+algebraic norm of the central units, and inside it the even versors of unit norm form the **spin group**, whose
 sandwich action on the vector space is the double cover of the rotations.
 
 *Proof.* The composite is $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}=\mathrm{Sc}(\tilde A)L^{\bullet}_{\tilde B}$
@@ -407,7 +407,7 @@ operator form of the interpretation that a material coupling returns a scalar an
 
 ## The Sandwich and the Inner Automorphism
 
-**Proposition (the sandwich collapses to a scaled projection).** The diagonal two-sided operator of the block is
+**Proposition (the sandwich collapses to a scaled projection).** The algebraic norm two-sided operator of the block is
 
 $$
 \Theta^{\bullet}_{\tilde A}(\tilde X)=A_0\,L^{\bullet}_{\tilde A}\tilde X=A_0X_0\tilde A ,
@@ -494,7 +494,7 @@ $$
 
 so the operators of two operations the product cannot distinguish in order differ by the order of composition.
 
-Take finally the **central** parameter $\tilde C=ie_0$, whose operator $L^{\bullet}_{ie_0}=iE$ has the diagonal
+Take finally the **central** parameter $\tilde C=ie_0$, whose operator $L^{\bullet}_{ie_0}=iE$ has the algebraic norm
 matrix $i\,\mathrm{diag}(1,0,0,0)$ and is self-adjoint for $N$: the scalar multiples of $E$ are exactly the
 symmetric couplings, and $\tilde C\bullet\tilde X=iX_0e_0$ returns the scalar coordinate scaled by $i$. On the
 state basis the first parameter acts by $L^{\bullet}_{\tilde A}\tilde\Pi_1=\tfrac12 e_0$ and
@@ -593,7 +593,7 @@ infinitesimal structure is the three-dimensional rotation algebra of the materia
 the family; what is infinitesimal in the band is not the commutators of the couplings but the rotations of the
 frame they are read in.
 
-Read on the symmetries and the two-sided operators, the form is preserved by the two-sided complex-orthogonal maps and the product by their subgroup fixing the unit, while every multiplication is rank one; the interpretation is the **separation of measurement and motion**. The two-sided operators are rank one, so the spin group is not realised in the band: the symmetrisation that makes the coupling destroys invertibility and leaves the double cover to the parent. Read on the sandwich, the diagonal two-sided operator is a scalar times a projection and never a conjugation, so the coupling cannot relabel the algebra. Read on the state space, the operator is a functional, contracting a state with the parameter and returning a central number, so a material coupling of material operations is read as a scalar of the informational sector carrying no phase of its own. The distinctions are labelled throughout: what is proved is the algebra, what is proposed is the naming.
+Read on the symmetries and the two-sided operators, the form is preserved by the two-sided complex-orthogonal maps and the product by their subgroup fixing the unit, while every multiplication is rank one; the interpretation is the **separation of measurement and motion**. The two-sided operators are rank one, so the spin group is not realised in the band: the symmetrisation that makes the coupling destroys invertibility and leaves the double cover to the parent. Read on the sandwich, the algebraic norm two-sided operator is a scalar times a projection and never a conjugation, so the coupling cannot relabel the algebra. Read on the state space, the operator is a functional, contracting a state with the parameter and returning a central number, so a material coupling of material operations is read as a scalar of the informational sector carrying no phase of its own. The distinctions are labelled throughout: what is proved is the algebra, what is proposed is the naming.
 
 ## Summary
 

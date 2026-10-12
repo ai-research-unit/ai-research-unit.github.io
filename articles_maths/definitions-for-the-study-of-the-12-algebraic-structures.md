@@ -78,7 +78,7 @@ The inverse is defined by an equation in $\star$, so it is relative to the produ
 | $\tilde P\tilde Q^{*}$ | none | $e_0$ | none |
 | $\tilde P^{\natural}\tilde Q^{*}$ | none | none | none |
 
-The table is verified on the identity equations and it is the unit table of *Comparison Between the Four General Products*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *The Zero Divisors and the Twelve Structures*, §*The One-Sided Inverse Equations*.
+The table is verified on the identity equations and it is the unit table of *Comparison Between the Four General Products*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *Zero Divisors*, §*The One-Sided Inverse Equations*.
 
 The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde P$ invertible exactly when the central square $C(\tilde P)=\sum_\mu P_\mu^{2}$ is nonzero, is *Norm and Invertibility in the General Plain Algebra*.
 
@@ -102,7 +102,7 @@ Written on the four general products, the definition of a left zero divisor is o
 $$
 \{\tilde Q\neq0:\ C(\tilde Q)=0\},
 $$
-a fact about the algebra and not a property of the definitions, proved in *The Zero Divisors and the Twelve Structures*, §*The Four Zero-Divisor Sets Coincide*. **The word is *coincide*, not *independent*:** the four products are four definitions, and their agreement is a theorem. The criterion $C(\tilde Q)=0$ for the plain product, the two families and their structure are *Zero Divisors of the General Plain Algebra*; the annihilators of one zero divisor, which do depend on the product, are in the same article of the four products and in *The Zero Divisors and the Twelve Structures*.
+a fact about the algebra and not a property of the definitions, proved in *Zero Divisors*, §*The Four General Products Coincide*. **The word is *coincide*, not *independent*:** the four products are four definitions, and their agreement is a theorem. The criterion $C(\tilde Q)=0$ for the plain product, the two families and their structure are *Zero Divisors of the General Plain Algebra*; the annihilators of one zero divisor, which do depend on the product, are in the same article of the four products and in *Zero Divisors*.
 
 ---
 
@@ -118,9 +118,9 @@ The origin and, when the product is unital, the unit are idempotents of every pr
 
 **Definition (projection).** When the product is the multiplication of a $*$-algebra, an idempotent $\tilde\Pi$ with $\tilde\Pi^{*}=\tilde\Pi$ is a **projection**; with the plain product and the star, the projections are the **orthogonal projections**, and the associated decomposition of §*The Peirce Decomposition* is an orthogonal direct sum.
 
-**Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two diagonal pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
+**Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two algebraic norm pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
 
-The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the natural product has the trivial idempotents alone, the plain sesquilinear product has the Hermitian idempotents, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\mu$. The table is in *The Zero Divisors and the Twelve Structures*, §*The Square, the Idempotents and the Units*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals and Peirce Decomposition of the General Plain Algebra*.
+The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the natural product has the trivial idempotents alone, the plain sesquilinear product has the Hermitian idempotents, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\mu$. The table is in *Idempotents*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
 ---
 
@@ -143,7 +143,7 @@ The square-zero sets of the four general products differ, and the difference is 
 | $\tilde P\tilde Q^{*}$ | the origin alone |
 | $\tilde P^{\natural}\tilde Q^{*}$ | the solutions of $\overline{\tilde P}\tilde P=0$ |
 
-The table is verified on the squares and is the table of *The Zero Divisors and the Twelve Structures*, where the four sets, their chain $Z_1\subseteq Z_2$, $Z_4\subseteq Z_2$, $Z_3=\{0\}$ and their incomparable pair are proved. **The implication "nilpotent implies zero divisor" is not uniform**: it holds for the plain product and the natural product, and it fails for the plain sesquilinear product, whose only square-zero element is the origin. It is a statement of a product and not of the twelve.
+The table is verified on the squares and is the table of *Zero Divisors*, where the four sets, their chain $Z_1\subseteq Z_2$, $Z_4\subseteq Z_2$, $Z_3=\{0\}$ and their incomparable pair are proved. **The implication "nilpotent implies zero divisor" is not uniform**: it holds for the plain product and the natural product, and it fails for the plain sesquilinear product, whose only square-zero element is the origin. It is a statement of a product and not of the twelve.
 
 ---
 
@@ -214,7 +214,7 @@ The four general products are four definitions to a class, and the table says wh
 | annihilator of a fixed zero divisor | one plane | another | another | another | differ |
 | invertibility | $C\neq0$ | no two-sided notion | no two-sided notion | no two-sided notion | — |
 
-The one row on which the four products agree is the zero-divisor set. It is the reason the zero divisor is the subject of a synthesis article of its own, *The Zero Divisors and the Twelve Structures*, and it is the exception that proves the rule of §*The Relativity of the Definitions*: the definitions are four, and their agreement in this one row is a theorem about the biquaternion algebra, not a feature of the definitions. Every other row shows the four products separating, and each is computed in *The Zero Divisors and the Twelve Structures* and *Comparison Between the Four General Products*.
+The one row on which the four products agree is the zero-divisor set. It is the reason the zero divisor is the subject of a synthesis article of its own, *Zero Divisors*, and it is the exception that proves the rule of §*The Relativity of the Definitions*: the definitions are four, and their agreement in this one row is a theorem about the biquaternion algebra, not a feature of the definitions. Every other row shows the four products separating, and each is computed in *Zero Divisors* and *Comparison Between the Four General Products*.
 
 ---
 
@@ -243,7 +243,7 @@ A definition of the element theory names a product. This article states, once an
 ## Further Reading
 
 - *The 12 Products of the Biquaternion Complex Space* and *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the products and the structures the definitions here serve, and for the tables of the laws, the units and the images.
-- *The Zero Divisors and the Twelve Structures*, for the product-relative definition read on the four products, the coincidence of the four zero-divisor sets, and the product-dependent readings of the annihilators, the square, the idempotents and the units.
+- *Zero Divisors*, for the product-relative definition read on the four products, the coincidence of the four zero-divisor sets, and the product-dependent readings of the annihilators, the square, the idempotents and the units.
 - *Zero Divisors of the General Plain Algebra*, *Idempotents of the General Plain Algebra* and *Nilpotents of the General Plain Algebra*, for the three element classes of the plain product.
-- *The Zero Divisors and the Twelve Structures* and *The Zero Divisors and the Twelve Structures*, for the two readings of §5 and §9 that the four products decide.
+- *Zero Divisors* and *Zero Divisors*, for the two readings of §5 and §9 that the four products decide.
 - *Unital Algebras* and *Conventions in Mathematics*, for the general algebra vocabulary and the corpus-wide readings of the words, and *Biquaternions as a Vector Space over $\mathbb{C}$* for the elements and the conjugations.
