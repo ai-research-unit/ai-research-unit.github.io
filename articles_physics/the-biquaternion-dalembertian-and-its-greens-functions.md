@@ -28,7 +28,7 @@ The article is organised as follows. The gradient and the d'Alembertian are esta
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the first-order equation built from the gradient and the spinor on which it acts.
 - Companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation*, for the solution theory of the shifted operator: its fundamental solution on the light cone, the general solution of the inhomogeneous equation, the harmonic bispinors, and the class in which the homogeneous equation has only the trivial solution.
 - Companion article *The Dirac Algebra and Biquaternions — A Dictionary*, for the reversal and the trace formula used in the kernel identities.
-- Companion article *The Wick Rotation in the Biquaternion Universe*, for the rotation relating the causal and invariant kernels.
+- Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the rotation relating the causal and invariant kernels.
 
 ## The Biquaternionic Gradient
 
@@ -230,7 +230,7 @@ $$
 G_{F}(\tilde{Q}) = \frac{1}{4\pi^2}\,\frac{1}{\rho^2 - i\epsilon} ,
 \qquad \epsilon \to 0^+ ,
 $$
-whose Fourier transform is $1/(k_4^2 + \mathbf{k}^2 - i\epsilon)$. Two facts make this the natural object of the quantum theory: its Wick rotation to imaginary time is exactly $G_{\mathrm{inv}}$, and its $i\epsilon$ prescription is the statement of which vacuum the propagator is referred to. The companion *The Wick Rotation in the Biquaternion Universe* develops the rotation in full; here it is enough to record that the four kernels — invariant, retarded, advanced, causal — are four boundary conditions on one operator, related by the cone identities above and by the time boundary conditions.
+whose Fourier transform is $1/(k_4^2 + \mathbf{k}^2 - i\epsilon)$. Two facts make this the natural object of the quantum theory: its Wick rotation to imaginary time is exactly $G_{\mathrm{inv}}$, and its $i\epsilon$ prescription is the statement of which vacuum the propagator is referred to. The companion *Interpretation of the Wick Rotation in the Biquaternion Universe* develops the rotation in full; here it is enough to record that the four kernels — invariant, retarded, advanced, causal — are four boundary conditions on one operator, related by the cone identities above and by the time boundary conditions.
 
 ## The Massive Operator
 

@@ -2,26 +2,104 @@
 
 ## Introduction
 
-An **idempotent** of one of the four general products of the biquaternion algebra is an element $\tilde\Pi$ with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$, the equation read in that product. The equation is the algebraic form of a projection, and each of the four groups of the chapter solves it for its own multiplication: the general plain bilinear product in *Idempotents of the General Plain Algebra*, the general quaternionic bilinear product in *Idempotents of the General Quaternionic Algebra*, the general plain sesquilinear product in *Idempotents of the General Plain Sesqualgebra*, and the general quaternionic sesquilinear product in *Idempotents of the General Quaternionic Sesqualgebra*. This article sets the four solution sets side by side and reads their invariants together, the four sets themselves having been tabulated in *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*.
+An **idempotent** of a product $\star$ on the biquaternion space $\mathbb{B}$ is an element $\tilde\Pi$ with
 
-The four sets are of four different kinds, and the difference is not in the size of the sets alone but in the place they occupy in the algebra. The plain product's idempotents are the idempotents of the algebra: the trivial pair, the family of the Hermitian idempotents that the sesquilinear product singles out, and a four-parameter family of non-trivial idempotents lying in no remarkable subspace, every member of the family outside the trivial pair being a zero divisor. The natural product keeps only the trivial pair. The general plain sesquilinear product keeps the Hermitian family, and the general quaternionic sesquilinear product replaces it by the family $-\tfrac12e_0+\mu$, whose members are the only nontrivial idempotents of the four multiplications that are **units**. The article owns the comparison of the four sets, the effect of the central square on each, the reading of each in the remarkable subspaces and the complementation that pairs the members of the plain family.
+$$
+\tilde\Pi\star\tilde\Pi=\tilde\Pi ,
+$$
 
-**Conventions.** The notation is that of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and of the introduction to this group, with the natural conjugation $\tilde Q^{\natural} = Q_0-\mathbf Q$, the star $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ and the **central square** $\tilde Q^{\natural}\tilde Q = \tilde Q\tilde Q^{\natural}$, a central element. The four general products are written $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$.
+the equation read in that product, and the **idempotent set** of the structure is the set of its solutions. The equation is the algebraic form of a projection, and it names a product, so the twelve structures of the space answer it twelve times. The four general products give four sets of different kinds, and the difference is not the size of the sets alone: the plain product's idempotents are the idempotents of the algebra, the natural product keeps the trivial pair, the general plain sesquilinear product keeps the Hermitian family, and the general quaternionic sesquilinear product replaces it by the family $-\tfrac12e_0+\mu$, whose members are the only nontrivial idempotents of the twelve that are **units**. This article owns the comparison of the twelve sets: the effect of the central square on each, the reading of each in the remarkable subspaces, and the complementation that pairs the members of the plain family.
 
-## The Four Sets
+**The twelve names.** The space carries twelve products, the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and their eight symmetric and antisymmetric parts (*The 12 Products of the Biquaternion Complex Space*). Each product has a three-letter code: the first letter is the operation, $\mathrm G$ the general product and $\mathrm S$, $\mathrm A$ its symmetric and antisymmetric parts; the second is the product of the family, $\mathrm P$ the plain one and $\mathrm Q$ the quaternionic one, whose first slot is read through the natural conjugation; the third is the family, $\mathrm A$ the algebra over $\mathbb{C}$ and $\mathrm S$ the sesqualgebra. The twelve are read in the four families of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 
-**Theorem (the four idempotent sets, quoted).** The idempotents of the four general products are:
+| the family | general | symmetric | antisymmetric |
+|---|---|---|---|
+| the plain algebra | $\mathrm{GPA}$ | $\mathrm{SPA}$ | $\mathrm{APA}$ |
+| the quaternionic algebra | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
+| the plain sesqualgebra | $\mathrm{GPS}$ | $\mathrm{SPS}$ | $\mathrm{APS}$ |
+| the quaternionic sesqualgebra | $\mathrm{GQS}$ | $\mathrm{SQS}$ | $\mathrm{AQS}$ |
 
-| product | idempotents | owner |
+and every table of the article follows this order, family by family and, inside a family, general then symmetric then antisymmetric.
+
+**Scope and owners.** This article owns the comparison of the twelve idempotent sets, their reading in the remarkable subspaces, the effect of the central square and the complementation. The sets themselves stay owned by the twelve articles *Idempotents of the …*, cited one by one in §*The Twelve Structures and the Idempotents*; the four-set table is *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*. The products are *The 12 Products of the Biquaternion Complex Space* and the structures *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, whose codes are used throughout; the vocabulary, the idempotent stated once for a general product, is *Definitions for the Study of the 12 Algebraic Structures*; the roots of $-e_0$ that parametrise the plain family are *Square Roots of Minus One, Zero and Plus One*; the two algebraic norms behind the central square are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the unit, the inverse and the zero divisor are *Norm and Invertibility in the General Plain Algebra* and *Zero Divisors*; and the Peirce decomposition is *Ideals and Peirce Decomposition of the General Plain Algebra*.
+
+**Conventions.** $\mathbb{B}$ has basis $e_0,e_1,e_2,e_3$ over $\mathbb{C}$ with $e_1e_2=e_3$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$ with $Q_k\in\mathbb{C}$ and $\mathbf Q=\sum_kQ_ke_k$; the natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$; the star is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$; and the **central square** is $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}=C(\tilde Q)e_0$, a central element, written $C$ and equal to the reduced norm $\mathrm{Norm}(\tilde Q)=\sum_\mu Q_\mu^{2}$. The four general products are written $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$. The **remarkable subspaces** are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$.
+
+## The Twelve Structures and the Idempotents
+
+The idempotent equation is an equation on the **square operator** $\tilde Q\mapsto\tilde Q\star\tilde Q$, so the twelve idempotent sets are read from the twelve squares, and the twelve squares are five:
+
+| the square | the structures | at the two equal arguments |
 |---|---|---|
-| $\tilde P\tilde Q$ | $0$, $e_0$, and $\tfrac12(e_0+\tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$ | *Idempotents of the General Plain Algebra* |
-| $\tilde P^{\natural}\tilde Q$ | $0$ and $e_0$ alone | *Idempotents of the General Quaternionic Algebra* |
-| $\tilde P\tilde Q^{*}$ | $0$, $e_0$, and $\tfrac12(e_0+i\hat\mu)$ for a real unit vector $\hat\mu$ | *Idempotents of the General Plain Sesqualgebra* |
-| $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_0$, and $-\tfrac12e_0+\mu$ for a real vector $\mu$ with $(\mu,\mu) = \tfrac34$ | *Idempotents of the General Quaternionic Sesqualgebra* |
+| the plain square | $\mathrm{GPA}$, $\mathrm{SPA}$ | $\tilde Q^{2}=(Q_0^{2}-\lvert\mathbf Q\rvert^{2})e_0+2Q_0\mathbf Q$ |
+| the central square | $\mathrm{GQA}$, $\mathrm{SQA}$ | $C(\tilde Q)e_0$ |
+| the Hermitian square | $\mathrm{GPS}$, $\mathrm{SPS}$ | $\tilde Q\tilde Q^{*}$, with scalar part $\geq0$; the scalar part alone for $\mathrm{SPS}$ |
+| the sesquilinear square | $\mathrm{GQS}$, $\mathrm{SQS}$ | $\tilde Q^{\natural}\tilde Q^{*}$; the coefficientwise real part alone for $\mathrm{SQS}$ |
+| the vanishing square | $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$ | $0$ |
 
-Everything the four columns share is the trivial pair; everything else separates them. The comparison below reads the four sets through the central square, the unit structure and the remarkable subspaces, and it begins with the plain family, because the other three are described in its terms.
+The origin is an idempotent of every structure, the product being linear; the unit $e_0$ is an idempotent of the eight structures that are not antisymmetric, and it fails for the four whose square vanishes at the two equal arguments.
 
-## The Twelve Idempotent Sets
+**Theorem (only five structures carry a nontrivial idempotent).** Among the twelve structures of the biquaternion complex space, an idempotent other than $0$ and $e_0$ exists exactly for $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and $\mathrm{SQS}$. The four antisymmetric structures have $0$ alone, and $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$ have the trivial pair. The idempotent sets of $\mathrm{GQS}$ and $\mathrm{SQS}$ coincide.
+
+*Proof.* On the two bilinear antisymmetric structures the square vanishes identically, $\tilde\Pi\star\tilde\Pi = 0$, so the equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ forces $\tilde\Pi = 0$; this closes the rows $\mathrm{APA}$ and $\mathrm{AQA}$. On the two antisymmetric sesquilinear structures the square is a pure vector, so an idempotent has vanishing scalar part; writing it $\tilde\Pi = \mathbf p$, its square is the conjugate cross product $-\mathbf p\times\overline{\mathbf p}$ for $\mathrm{APS}$ and $\mathbf p\times\overline{\mathbf p}$ for $\mathrm{AQS}$, a purely imaginary vector, and a purely imaginary $\mathbf p$ makes the cross product vanish, so the equation again reads $\mathbf p = 0$; this closes the rows $\mathrm{APS}$ and $\mathrm{AQS}$. On $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$ the square is the central element $C(\tilde\Pi)e_0$ or $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$, so an idempotent is central, hence $\tilde\Pi = qe_0$ with $q\in\mathbb{C}$, and the equation on the centre, $q = q^{2}$ for the two bilinear structures and $q = \lvert q\rvert^{2}$ for the sesquilinear one, leaves $q\in\{0,1\}$. The five remaining rows are the theorem of §*The Four Sets*, together with the identity $\tilde\Pi\bullet\tilde\Pi = \tilde\Pi^{2}$ for the symmetric plain structure, whose square is therefore the plain square and whose idempotents are the algebra's own. For the symmetric quaternionic sesquilinear structure the square is the coefficientwise real part of $\tilde\Pi^{\natural}\tilde\Pi^{*}$, which is a real element, so the idempotent equation forces $\tilde\Pi$ real and reduces to $(\tilde\Pi^{\natural})^{2} = \tilde\Pi$; the resulting set is the family $-\tfrac12e_0+\mu$ with $(\mu,\mu) = \tfrac34$, the same set as the general quaternionic sesquilinear structure (*Idempotents of the Symmetric Quaternionic Sesqualgebra*).
+
+The classification is sharp, and it reads the ways a square operator can fail to be the plain square. The **antisymmetric** square destroys the equation, being identically zero on the two bilinear structures and a purely imaginary pure vector on the two sesquilinear ones. The **scalar-valued** square, the one of $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$, returns a central element, so an idempotent must be central and only the trivial pair survives. The **symmetric plain** square is the plain square itself, so $\mathrm{SPA}$ carries exactly the plain family, four parameters and all, although it is not associative (it does carry the unit $e_0$). The three structures that keep a two-parameter family of nontrivial idempotents — $\mathrm{GPS}$ with the Hermitian family, and $\mathrm{GQS}$ and $\mathrm{SQS}$ with the family $-\tfrac12e_0+\mu$ — are the structures whose square operator is neither identically zero nor central-valued; the family of $\mathrm{SQS}$ is the family of $\mathrm{GQS}$ because the coefficientwise real part of $\tilde\Pi^{\natural}\tilde\Pi^{*}$ equals $\tilde\Pi^{\natural}\tilde\Pi^{*}$ itself whenever $\tilde\Pi$ is real.
+
+The twelve are read one by one below; each names the product, its square and its idempotent set, and cites the article that owns them.
+
+### $\mathrm{GPA}$, the general plain algebra
+
+The product is $\tilde P\tilde Q$, and its square is the plain square, of scalar part $B(\tilde\Pi)=Q_0^{2}-\lvert\mathbf Q\rvert^{2}$ and vector part $2Q_0\mathbf Q$. The idempotents are $0$, $e_0$ and the elements $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-e_0$; the map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi i)$ is a bijection from the roots of $-e_0$ onto the set, and the three parts of the family are read in §*The Plain Family and the Roots of Minus One*. The article is *Idempotents of the General Plain Algebra*.
+
+### $\mathrm{SPA}$, the symmetric plain algebra
+
+The product is the Jordan product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, and its square is the plain square, $\tilde\Pi\bullet\tilde\Pi=\tilde\Pi^{2}$, so the idempotent set is that of $\mathrm{GPA}$ element for element. The article is *Idempotents of the Symmetric Plain Algebra*.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra
+
+The product is the commutator $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$, alternating, so its square vanishes identically. The idempotent set is the origin alone. The article is *Idempotents of the Antisymmetric Plain Algebra*.
+
+### $\mathrm{GQA}$, the general quaternionic algebra
+
+The product is $\tilde P^{\natural}\tilde Q$, and its square is the central element $C(\tilde\Pi)e_0$; an idempotent is therefore central, $\tilde\Pi=qe_0$, and the equation on the centre leaves $q\in\{0,1\}$. The idempotent set is the trivial pair. The article is *Idempotents of the General Quaternionic Algebra*.
+
+### $\mathrm{SQA}$, the symmetric quaternionic algebra
+
+The product is the symmetrisation $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, whose value is central, and its square is $C(\tilde\Pi)e_0$; the idempotent set is the trivial pair, as for $\mathrm{GQA}$. The article is *Idempotents of the Symmetric Quaternionic Algebra*.
+
+### $\mathrm{AQA}$, the antisymmetric quaternionic algebra
+
+The product is the commutator $\tilde P\wedge^{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$, alternating, so its square vanishes identically. The idempotent set is the origin alone. The article is *Idempotents of the Antisymmetric Quaternionic Algebra*.
+
+### $\mathrm{GPS}$, the general plain sesqualgebra
+
+The product is $\tilde P\tilde Q^{*}$, and its square is the Hermitian square. The idempotents are $0$, $e_0$ and the Hermitian family $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$; the family lies in $\mathbb{M}_+$. The article is *Idempotents of the General Plain Sesqualgebra*.
+
+### $\mathrm{SPS}$, the symmetric plain sesqualgebra
+
+The product is the symmetric part of $\tilde P\tilde Q^{*}$, scalar-valued and non-negative, and its square is $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$; an idempotent is central and the equation on the centre, $q=\lvert q\rvert^{2}$, leaves the trivial pair. The article is *Idempotents of the Symmetric Plain Sesqualgebra*.
+
+### $\mathrm{APS}$, the antisymmetric plain sesqualgebra
+
+The product is the antisymmetric part of $\tilde P\tilde Q^{*}$, and its square is a purely imaginary pure vector, so an idempotent has vanishing scalar part and the cross-product term then forces the origin. The idempotent set is the origin alone. The article is *Idempotents of the Antisymmetric Plain Sesqualgebra*.
+
+### $\mathrm{GQS}$, the general quaternionic sesqualgebra
+
+The product is $\tilde P^{\natural}\tilde Q^{*}$. The idempotents are $0$, $e_0$ and the family $-\tfrac12e_0+\mu$ over the real vectors $\mu$ with $(\mu,\mu)=\tfrac34$, a family of units lying in $\mathbb{H}_{\mathbb{B}}$. The article is *Idempotents of the General Quaternionic Sesqualgebra*.
+
+### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra
+
+The product is the symmetric part of $\tilde P^{\natural}\tilde Q^{*}$, and its square is the coefficientwise real part of $\tilde\Pi^{\natural}\tilde\Pi^{*}$, a real element; the idempotent equation therefore forces $\tilde\Pi$ real and reduces to $(\tilde\Pi^{\natural})^{2}=\tilde\Pi$, whose set is the family $-\tfrac12e_0+\mu$, the same as for $\mathrm{GQS}$. The article is *Idempotents of the Symmetric Quaternionic Sesqualgebra*.
+
+### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra
+
+The product is the antisymmetric part of $\tilde P^{\natural}\tilde Q^{*}$, and its square is a purely imaginary pure vector, so the idempotent set is the origin alone. The article is *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*.
+
+## Results
+
+The twelve idempotent sets are collected below, the four general products separated out, the central square read as the invariant that decides them, the families placed in the remarkable subspaces, and the complementation read on the plain family.
+
+### The Twelve Idempotent Sets
 
 The four products are four of the twelve structures of the space, the other eight being the symmetric and the antisymmetric parts of the four (*The 12 Products of the Biquaternion Complex Space*, *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The idempotent equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ is written in the operation of the structure, so each of the twelve carries an idempotent set of its own, and it is the square operator that decides them all.
 
@@ -40,13 +118,22 @@ The four products are four of the twelve structures of the space, the other eigh
 | $\mathrm{SQS}$ | $\tfrac12(\tilde\Pi^{\natural}\tilde\Pi^{*}+\overline{\tilde\Pi^{\natural}\tilde\Pi^{*}})$ | $0$, $e_0$, $-\tfrac12e_0+\mu$ |
 | $\mathrm{AQS}$ | $\tfrac12(\tilde\Pi^{\natural}\tilde\Pi^{*}-\overline{\tilde\Pi^{\natural}\tilde\Pi^{*}})$ | $0$ alone |
 
-**Theorem (only five structures carry a nontrivial idempotent).** Among the twelve structures of the biquaternion complex space, an idempotent other than $0$ and $e_0$ exists exactly for $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and $\mathrm{SQS}$. The four antisymmetric structures have $0$ alone, and $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$ have the trivial pair. The idempotent sets of $\mathrm{GQS}$ and $\mathrm{SQS}$ coincide.
+Read by column, the table has three kinds of entry: the origin, which is present in all twelve rows; the unit, present in the eight rows that are not antisymmetric; and the families of nontrivial idempotents, present in the five rows classified in §*The Twelve Structures and the Idempotents*. The two rows that carry the same family, $\mathrm{GQS}$ and $\mathrm{SQS}$, are the general quaternionic sesquilinear structure and its symmetrisation, and the two rows that carry the four-parameter plain family, $\mathrm{GPA}$ and $\mathrm{SPA}$, are the general plain structure and its symmetrisation.
 
-*Proof.* On the two bilinear antisymmetric structures the square vanishes identically, $\tilde\Pi\star\tilde\Pi = 0$, so the equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ forces $\tilde\Pi = 0$; this closes the rows $\mathrm{APA}$ and $\mathrm{AQA}$. On the two antisymmetric sesquilinear structures the square is a pure vector, so an idempotent has vanishing scalar part; writing it $\tilde\Pi = \mathbf p$, its square is the conjugate cross product $-\mathbf p\times\overline{\mathbf p}$ for $\mathrm{APS}$ and $\mathbf p\times\overline{\mathbf p}$ for $\mathrm{AQS}$, a purely imaginary vector, and a purely imaginary $\mathbf p$ makes the cross product vanish, so the equation again reads $\mathbf p = 0$; this closes the rows $\mathrm{APS}$ and $\mathrm{AQS}$. On $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$ the square is the central element $C(\tilde\Pi)e_0$ or $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$, so an idempotent is central, hence $\tilde\Pi = qe_0$ with $q\in\mathbb{C}$, and the equation on the centre, $q = q^{2}$ for the two bilinear structures and $q = \lvert q\rvert^{2}$ for the sesquilinear one, leaves $q\in\{0,1\}$. The five remaining rows are the theorem of §*The Four Sets*, together with the identity $\tilde\Pi\bullet\tilde\Pi = \tilde\Pi^{2}$ for the symmetric plain structure, whose square is therefore the plain square and whose idempotents are the algebra's own. For the symmetric quaternionic sesquilinear structure the square is the coefficientwise real part of $\tilde\Pi^{\natural}\tilde\Pi^{*}$, which is a real element, so the idempotent equation forces $\tilde\Pi$ real and reduces to $(\tilde\Pi^{\natural})^{2} = \tilde\Pi$; the resulting set is the family $-\tfrac12e_0+\mu$ with $(\mu,\mu) = \tfrac34$, the same set as the general quaternionic sesquilinear structure (*Idempotents of the Symmetric Quaternionic Sesqualgebra*).
+### The Four Sets
 
-The classification is sharp, and it reads the ways a square operator can fail to be the plain square. The **antisymmetric** square destroys the equation, being identically zero on the two bilinear structures and a purely imaginary pure vector on the two sesquilinear ones. The **scalar-valued** square, the one of $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$, returns a central element, so an idempotent must be central and only the trivial pair survives. The **symmetric plain** square is the plain square itself, so $\mathrm{SPA}$ carries exactly the plain family, four parameters and all, although it is not associative (it does carry the unit $e_0$). The three structures that keep a two-parameter family of nontrivial idempotents — $\mathrm{GPS}$ with the Hermitian family, and $\mathrm{GQS}$ and $\mathrm{SQS}$ with the family $-\tfrac12e_0+\mu$ — are the structures whose square operator is neither identically zero nor central-valued; the family of $\mathrm{SQS}$ is the family of $\mathrm{GQS}$ because the coefficientwise real part of $\tilde\Pi^{\natural}\tilde\Pi^{*}$ equals $\tilde\Pi^{\natural}\tilde\Pi^{*}$ itself whenever $\tilde\Pi$ is real.
+**Theorem (the four idempotent sets, quoted).** The idempotents of the four general products are:
 
-## The Plain Family and the Roots of Minus One
+| product | idempotents | owner |
+|---|---|---|
+| $\tilde P\tilde Q$ | $0$, $e_0$, and $\tfrac12(e_0+\tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$ | *Idempotents of the General Plain Algebra* |
+| $\tilde P^{\natural}\tilde Q$ | $0$ and $e_0$ alone | *Idempotents of the General Quaternionic Algebra* |
+| $\tilde P\tilde Q^{*}$ | $0$, $e_0$, and $\tfrac12(e_0+i\hat\mu)$ for a real unit vector $\hat\mu$ | *Idempotents of the General Plain Sesqualgebra* |
+| $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_0$, and $-\tfrac12e_0+\mu$ for a real vector $\mu$ with $(\mu,\mu) = \tfrac34$ | *Idempotents of the General Quaternionic Sesqualgebra* |
+
+Everything the four columns share is the trivial pair; everything else separates them. The comparison below reads the four sets through the central square, the unit structure and the remarkable subspaces, and it begins with the plain family, because the other three are described in its terms.
+
+### The Plain Family and the Roots of Minus One
 
 The plain product is the one associative multiplication with a unit, and its idempotents are the idempotents of the algebra.
 
@@ -64,7 +151,7 @@ $$
 
 whose vector part $\tfrac12(-\mathbf p'+i\mathbf p)$ carries both a real and an imaginary term, so that the element is neither Hermitian nor anti-Hermitian and has no other remarkable subspace to lie in. The four-parameter family is the largest part of the plain idempotent set, and it is the one the other three products discard.
 
-## The Two Families
+### The Two Families
 
 Two of the other three sets are two-parameter families, and only the second of them is a family of units of the algebra.
 
@@ -74,7 +161,7 @@ Two of the other three sets are two-parameter families, and only the second of t
 
 The two families are both two-parameter families of the algebra, read off the real directions, and the two products place them differently. A real vector $\mu$ with $\sum_k\mu_k^{2} = \tfrac34$ is $\tfrac{\sqrt3}{2}\hat\mu$ for a real $\hat\mu$ with $\sum_k\hat\mu_k^{2} = 1$, so the fourth family is the set $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$, while the Hermitian family is the set $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$: two families of different radius and different centre. On the Hermitian family the antipode $\hat\mu\mapsto-\hat\mu$ is the complementation $\tilde\Pi_1\mapsto e_0-\tilde\Pi_1$; on the fourth family it is the map $\mu\mapsto-\mu$, which sends $-\tfrac12e_0+\mu$ to $\tfrac12e_0-\mu$, an element that is **not** a member of the family. The passage from the one family to the other is the visible difference between the two sesquilinear products.
 
-## The Central Square of an Idempotent
+### The Central Square of an Idempotent
 
 The central square of an idempotent is the invariant that separates the four sets, because it is the second-order invariant of the plain product and every idempotent satisfies a quadratic equation there.
 
@@ -91,7 +178,7 @@ The central square of an idempotent is the invariant that separates the four set
 
 Zero for the two families of zero divisors, $e_0$ for the two units: the central square is the invariant that decides which idempotents are units of the algebra and which are not, and it decides it in opposite directions for the plain family and for the fourth family. The Hermitian idempotents are therefore **null** for the algebra's central square although they are the pure states of the sesqualgebra (*Idempotents of the General Plain Sesqualgebra*), a coincidence of language worth noticing: the algebraic positivity of the sesqualgebra and the central square of the algebra are different objects, and the idempotents lie in its zero set.
 
-## Units, Zero Divisors and the Antipode
+### Units, Zero Divisors and the Antipode
 
 **Theorem (units and zero divisors among the idempotents).** Among the idempotents of the four general products, the units of the algebra are $e_0$ and the family $-\tfrac12e_0+\mu$ of the fourth product; the zero divisors of the algebra are the members of the plain family $\tfrac12(e_0+\tilde\Xi i)$ with $\tilde\Xi$ non-trivial or real, and no other idempotent; and $0$ is neither.
 
@@ -107,7 +194,7 @@ The complementation pairs the members of the two families of the algebra's own p
 
 The complementation is available wherever the family is closed under $\tilde\Pi\mapsto e_0-\tilde\Pi$: for the plain product it pairs the whole family, the four-parameter part included, and for the general plain sesquilinear product it pairs the Hermitian family. It fails for the general quaternionic sesquilinear product, whose family is not closed — the map $\mu\mapsto-\mu$ sends $-\tfrac12e_0+\mu$ outside it — and for the natural product, which has no family beyond the trivial pair, on which the complementation is the exchange of the two.
 
-## The Position in the Remarkable Subspaces
+### The Position in the Remarkable Subspaces
 
 Each family lives in a specific place, and the places are read off the coefficient conditions of the remarkable subspaces.
 
@@ -117,7 +204,7 @@ Each family lives in a specific place, and the places are read off the coefficie
 
 The four sets therefore occupy four different regions: the centre for the trivial pair, $\mathbb{M}_+$ for the Hermitian family, $\mathbb{H}_{\mathbb{B}}$ for the fourth family, and no distinguished region at all for the non-trivial family, which is the whole point of its name. The restrictions of the products themselves to these subspaces are *Remarkable Subspaces and the Four General Products*.
 
-## The Peirce Data
+### The Peirce Data
 
 Of the four general products, only the plain one supports the Peirce theory, and the reason is associativity.
 
@@ -142,6 +229,7 @@ Read among the twelve structures the idempotent equation loses most of its solut
 | symbol | meaning |
 |---|---|
 | $\tilde\Pi$ | an idempotent, $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ in the product at hand |
+| $C(\tilde\Pi)e_0 = \tilde\Pi^{\natural}\tilde\Pi$ | the central square of an element, the reduced norm |
 | $\tilde\Xi$ | a root of $-e_0$, $\tilde\Xi^{2} = -e_0$; trivial $\pm i$, real $\hat\mu$, or non-trivial $\mathbf p+i\mathbf p'$ |
 | $\hat\mu$ | a real unit vector, $\hat\mu^{2} = -e_0$ |
 | $\tilde\Pi_1(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ | the Hermitian idempotents of the general plain sesquilinear product |
@@ -151,17 +239,11 @@ Read among the twelve structures the idempotent equation loses most of its solut
 ## Further Reading
 
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the tabulation of the four idempotent sets and the four square-root problems.
-- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents of the algebra, their bijection with the roots of $-e_0$ and their role in the Peirce decomposition.
-- *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md`), for the three families of roots of $-e_0$.
-- *Idempotents of the General Quaternionic Algebra* (`articles_maths/idempotents-of-the-general-quaternionic-algebra.md`), for the trivial pair of the natural product.
-- *Idempotents of the General Plain Sesqualgebra* (`articles_maths/idempotents-of-the-general-plain-sesqualgebra.md`), for the Hermitian family and its projections.
-- *Idempotents of the General Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-general-quaternionic-sesqualgebra.md`), for the family of units.
-- *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the decomposition the plain idempotents carry.
+- The four families of owners, for the idempotent set of each structure: *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), *Idempotents of the Symmetric Plain Algebra* (`articles_maths/idempotents-of-the-symmetric-plain-algebra.md`) and *Idempotents of the Antisymmetric Plain Algebra* (`articles_maths/idempotents-of-the-antisymmetric-plain-algebra.md`); *Idempotents of the General Quaternionic Algebra* (`articles_maths/idempotents-of-the-general-quaternionic-algebra.md`), *Idempotents of the Symmetric Quaternionic Algebra* (`articles_maths/idempotents-of-the-symmetric-quaternionic-algebra.md`) and *Idempotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/idempotents-of-the-antisymmetric-quaternionic-algebra.md`); *Idempotents of the General Plain Sesqualgebra* (`articles_maths/idempotents-of-the-general-plain-sesqualgebra.md`), *Idempotents of the Symmetric Plain Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-plain-sesqualgebra.md`) and *Idempotents of the Antisymmetric Plain Sesqualgebra* (`articles_maths/idempotents-of-the-antisymmetric-plain-sesqualgebra.md`); and *Idempotents of the General Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-general-quaternionic-sesqualgebra.md`), *Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`) and *Idempotents of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-antisymmetric-quaternionic-sesqualgebra.md`).
+- *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md`), for the three families of roots of $-e_0$ that the plain idempotents correspond to.
+- *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the decomposition the plain idempotents carry and the associativity it needs.
 - *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.md`), for the positive cone on whose boundary the Hermitian idempotents lie.
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the criterion that the central square not vanish, which the table applies.
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the criterion that the central square not vanish, which the unit table applies.
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the remarkable subspaces and the products on them.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the four general products and their symmetric and antisymmetric parts.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve names and the class of each.
-- *Idempotents of the Symmetric Plain Algebra* (`articles_maths/idempotents-of-the-symmetric-plain-algebra.md`), for the block whose idempotents are the idempotents of the algebra, the whole plain family and the Jordan Peirce decomposition.
-- *Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the family $-\tfrac12e_0+\mu$ as a two-sphere in the real quaternion subspace.
-- *Idempotents of the Symmetric Plain Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-plain-sesqualgebra.md`), for the trivial pair of the scalar-valued square.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`) and *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the four general products, their eight parts, the twelve names and the class of each.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the reduced norm that the central square reads at the two equal arguments.

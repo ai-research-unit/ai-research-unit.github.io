@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Path Integral in Biquaternionic Form* settles what the biquaternion algebra can and cannot contribute to a path integral: the phase factor $e^{iS/\hbar}$ is a *central* unitary element, because the central scalar imaginary is the algebra's unique complex structure up to sign; the exponent lies along the $ict$ direction of the material sector $\mathbb{M}_-$; and the measure, the action and the space of paths are not supplied by the algebra, because $\mathbb{B}$ is finite-dimensional and the space of histories is not. The companion article *The Feynman Propagator in Biquaternionic Form* adds where the $i\epsilon$ lives and that the algebra names its axis without choosing its orientation. The companion article *The Wick Rotation in the Biquaternion Universe* adds that $t\to-i\tau$ is the relabeling of the imaginary-time coefficient as a real one, turning the material sector into the quaternion subspace.
+The companion article *The Path Integral in Biquaternionic Form* settles what the biquaternion algebra can and cannot contribute to a path integral: the phase factor $e^{iS/\hbar}$ is a *central* unitary element, because the central scalar imaginary is the algebra's unique complex structure up to sign; the exponent lies along the $ict$ direction of the material sector $\mathbb{M}_-$; and the measure, the action and the space of paths are not supplied by the algebra, because $\mathbb{B}$ is finite-dimensional and the space of histories is not. The companion article *The Feynman Propagator in Biquaternionic Form* adds where the $i\epsilon$ lives and that the algebra names its axis without choosing its orientation. The companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* adds that $t\to-i\tau$ is the relabeling of the imaginary-time coefficient as a real one, turning the material sector into the quaternion subspace.
 
 This article applies those findings to the spin-$\tfrac12$ field, where the histories are **anticommuting**. The fermionic path integral differs from the bosonic one in exactly one structural place — the integration variables are odd, so the integral is Berezin's rather than Lebesgue's — and that one difference propagates into every formula. The article establishes:
 
@@ -241,7 +241,7 @@ The phase of the determinant is where the fermionic integral's analytic content 
 
 - Companion article *The Feynman Propagator in Biquaternionic Form*, for the contour prescription and the propagator conventions used in the kernel.
 - Companion article *The Path Integral in Biquaternionic Form*, for the bosonic generating functional whose Grassmann counterpart is constructed here.
-- Companion article *The Wick Rotation in the Biquaternion Universe*, for the imaginary-time direction and the Euclidean formulation.
+- Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the imaginary-time direction and the Euclidean formulation.
 - Companion article *The KMS Condition and the Biquaternion Framework*, for the antiperiodic boundary condition and the Matsubara structure that the fermionic measure carries.
 
 ## Summary

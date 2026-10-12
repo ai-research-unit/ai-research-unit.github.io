@@ -45,7 +45,7 @@ $$
 \Box_E=\partial_{x_4}^2+\partial_{x_1}^2+\partial_{x_2}^2+\partial_{x_3}^2,
 $$
 
-with $x_4=c\tau$ and the four real coordinates $(x_4,x_1,x_2,x_3)$. The operator $\Box_E$ is elliptic. This is the setting for **instantons**. The identification of $\mathbb{M}_-$ with $\mathbb{H}_{\mathbb{B}}$ under the rotation is the subject of the companion article *The Wick Rotation in the Biquaternion Universe*; here it matters only that the rotation converts the hyperbolic operator into an elliptic one and the Lorentzian complex structure into a positive-definite real one.
+with $x_4=c\tau$ and the four real coordinates $(x_4,x_1,x_2,x_3)$. The operator $\Box_E$ is elliptic. This is the setting for **instantons**. The identification of $\mathbb{M}_-$ with $\mathbb{H}_{\mathbb{B}}$ under the rotation is the subject of the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*; here it matters only that the rotation converts the hyperbolic operator into an elliptic one and the Lorentzian complex structure into a positive-definite real one.
 
 The signature enters the solution theory through the **Hodge star on two-forms**. On the six-dimensional space of two-forms $\star$ is an involution up to a sign,
 
@@ -398,7 +398,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 - *The Field-Strength Biquaternion and Its Invariants* — the abelian field strength, the invariants $I_1,I_2$ and the biquaternion norm $N(\tilde{F})$.
 - *The Magnetic Monopole in Biquaternionic Form* — the topological magnetic charge $Q_m$ and the singular point monopole.
 - *The Skyrme Model and the Topological Baryon in Biquaternionic Form* — the same $\pi_3$ read as the baryon winding on the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$.
-- *The Wick Rotation in the Biquaternion Universe* — the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$ and the Euclidean slice.
+- *Interpretation of the Wick Rotation in the Biquaternion Universe* — the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$ and the Euclidean slice.
 - *The Euclidean Topology of the Biquaternion Algebra*, *The Biquaternion Unit Group as a Topological Group* and *The Null Quadric and Its Projective Geometry* — the contractibility of $\mathbb{B}$, the unit group and the null cone.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the field equation and the Riemann–Silberstein structure of the abelian sector.
 - *The Gauge Principle in Biquaternionic Form* — the central $U(1)$ and the local gauge structure.

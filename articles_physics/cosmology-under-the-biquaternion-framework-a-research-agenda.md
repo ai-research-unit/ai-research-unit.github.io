@@ -268,7 +268,7 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 - *The Partition Function in Biquaternionic Form* — the framework's thermodynamics, the qubit partition function, and the boundary this agenda finds the cosmological case against.
 - *Quantum Thermodynamics in Biquaternionic Form* and *The KMS Condition and the Biquaternion Framework* — the thermal functionals and the imaginary-time structure behind the rank-two limitation.
 - *Black Hole Thermodynamics in Biquaternionic Form* — the horizon and extended ($\Lambda$/$P$–$V$) thermodynamics, the scaling argument, and the $\Lambda$ correction to the Smarr relation.
-- *The Wick Rotation in the Biquaternion Universe* — the transfer between $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ that underlies the imaginary-time interpretation.
+- *Interpretation of the Wick Rotation in the Biquaternion Universe* — the transfer between $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ that underlies the imaginary-time interpretation.
 - *The Local Complex Structure and the Speed of Light* and *Electromagnetism in Media — The Local Complex Structure at Work* — the local $c$ whose cosmological interpretations are examined here.
 - *Exercise: The Electromagnetic Energy–Momentum Tensor* and *The Field-Strength Biquaternion and Its Invariants* — the framework's rank-two constructions, relevant to the source-carrier item.
 - *Noether's Theorem in Biquaternionic Form* — the conservation-law machinery any cosmological source would need.

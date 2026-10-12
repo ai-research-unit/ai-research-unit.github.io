@@ -171,7 +171,7 @@ couplings is incomplete without them.
 - **Imaginary (Matsubara) time.** The imaginary-time axis of thermal field theory is the informational
 temporal direction, so the continuation that the KMS condition and the Matsubara formalism use is the
 material–informational exchange read as a temperature. The owners are *The KMS Condition and the
-Biquaternion Framework* and *The Matsubara Formalism in Biquaternionic Form*; the reading is a
+Biquaternion Framework* and *The Matsubara Thermal Formalism in Biquaternionic Form*; the reading is a
 continuation and not a new coupling.
 - **The thermodynamic exchange.** A material operation that loses information passes it to the
 informational sector: the Landauer exchange is the thermodynamic face of the same split, and the
@@ -211,7 +211,7 @@ Biquaternionic Form*.
 | rotor action $\tilde{T}\mapsto\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
 | off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The Ordinary Product and the Material Sector* | a pairing, produces no element |
 | imaginary part of $N$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Biquaternion Norm and Invertibility* | an interpretation of one element's own cross terms |
-| Matsubara continuation | continuation | imaginary time $=$ informational time | *The KMS Condition and the Biquaternion Framework*, *The Matsubara Formalism in Biquaternionic Form* | a continuation, not a new coupling |
+| Matsubara continuation | continuation | imaginary time $=$ informational time | *The KMS Condition and the Biquaternion Framework*, *The Matsubara Thermal Formalism in Biquaternionic Form* | a continuation, not a new coupling |
 | Landauer exchange | process | material $\to$ informational | *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* | thermodynamic face; arrow from the acting monoid |
 | superselection | **non-coupling** | observables preserve each sector | *The Material-Informational Split as a Superselection Structure in Biquaternionic Form* | about observables, not about maps |
 

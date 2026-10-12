@@ -217,7 +217,7 @@ $$
 
 with $V$ a central scalar external potential, is the sum of a configurational term and an external one. Read physically, $\log\lvert N\rvert$ is a chemical potential and $\mu_{\mathrm{tot}}$ the total potential of a grand-canonical description, the norm playing the role of the density and its logarithm that of the conjugate potential.
 
-The interpretation is labelled. The article's own content is the trace and the thermal operator; the identification of $\log\lvert N\rvert$ with a chemical potential is an interpretation of the same object, and it joins the two other interpretations of the norm's logarithm in the corpus, the dilation potential of *Conformal Invariance and the Massless Limit in Biquaternionic Form* and the Weyl factor of *The Local Complex Structure and the Speed of Light*. The passage to the imaginary direction, where the material sector enters, is the subject of the article's *Imaginary Time* section and of *The Matsubara Formalism in Biquaternionic Form*.
+The interpretation is labelled. The article's own content is the trace and the thermal operator; the identification of $\log\lvert N\rvert$ with a chemical potential is an interpretation of the same object, and it joins the two other interpretations of the norm's logarithm in the corpus, the dilation potential of *Conformal Invariance and the Massless Limit in Biquaternionic Form* and the Weyl factor of *The Local Complex Structure and the Speed of Light*. The passage to the imaginary direction, where the material sector enters, is the subject of the article's *Imaginary Time* section and of *The Matsubara Thermal Formalism in Biquaternionic Form*.
 
 ## Summary
 

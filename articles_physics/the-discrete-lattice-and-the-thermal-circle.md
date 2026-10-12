@@ -7,7 +7,7 @@ discipline is the discrete lattice: the integral structures of the algebra, the 
 and the finite groups of units attached to them — the quaternion group of order eight, the binary tetrahedral
 group of order twenty-four and the binary polyhedral groups — all owned by *Biquaternion Orders and Finite
 Groups of Units*. The **analytic** discipline is the thermal circle: the imaginary-time compactification and
-the discrete Matsubara frequencies, owned by *The Matsubara Formalism in Biquaternionic Form*. The lattice is
+the discrete Matsubara frequencies, owned by *The Matsubara Thermal Formalism in Biquaternionic Form*. The lattice is
 static and algebraic, the circle is thermal and analytic, and this article states the one principle that
 produces both.
 
@@ -94,7 +94,7 @@ the algebra's is open.
   the four articles of the table.
 - **The thermal circle is the central phase.** The interpretation is that the imaginary time of the Wick rotation and
   the central phase of the algebra are one compact direction, so the Matsubara formalism is the central
-  rotation at finite temperature. Owner: *The Matsubara Formalism in Biquaternionic Form* and *The Central
+  rotation at finite temperature. Owner: *The Matsubara Thermal Formalism in Biquaternionic Form* and *The Central
   Rotation*.
 - **A finite lattice and an infinite lattice, one principle.** The interpretation is that the finite unit groups and
   the infinite Matsubara lattice are the two dual faces of the compactness principle, one a subgroup and one
@@ -126,7 +126,7 @@ named as a gap and not proposed as a formula.
 
 - *Biquaternion Orders and Finite Groups of Units*, for the orders, the finite unit groups and the infinite
   unit group of the complex order.
-- *The Matsubara Formalism in Biquaternionic Form*, for the thermal circle, the Matsubara frequencies and the
+- *The Matsubara Thermal Formalism in Biquaternionic Form*, for the thermal circle, the Matsubara frequencies and the
   partition function.
 - *The KMS Condition and the Biquaternion Framework* and *Thermal Time and the Modular Flow in the
   Biquaternion Framework*, for the KMS periodicity and the modular flow.

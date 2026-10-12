@@ -16,7 +16,7 @@ Throughout, the conventions are those of the companion articles: $\mathbb{B}=\ma
 - Companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.
 - Companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, for the field's central value space and the exclusion of the state module.
 - Companion article *The Path Integral in Biquaternionic Form*, for the centrality of the phase, the material sector, and the algebra's complex structure.
-- Companion article *The Wick Rotation in the Biquaternion Universe*, for the identification of the material sector with the quaternion subspace.
+- Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the identification of the material sector with the quaternion subspace.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the four-wavevector, and the biquaternion norm.
 
 ## The Configuration Space and the Action
@@ -217,7 +217,7 @@ so that the propagator is the inverse of the biquaternion norm shifted by the ma
 
 ### The transfer to the quaternion subspace
 
-The oscillatory functional integral is converted into a decaying one by the Wick rotation, which the companion article *The Wick Rotation in the Biquaternion Universe* identifies with the passage from the material sector to the quaternion subspace: the imaginary time coefficient $ict$ is relabelled as the real coefficient $c\tau$, and a point of $\mathbb{M}_-$ becomes a point of $\mathbb{H}_{\mathbb{B}}$,
+The oscillatory functional integral is converted into a decaying one by the Wick rotation, which the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* identifies with the passage from the material sector to the quaternion subspace: the imaginary time coefficient $ict$ is relabelled as the real coefficient $c\tau$, and a point of $\mathbb{M}_-$ becomes a point of $\mathbb{H}_{\mathbb{B}}$,
 
 $$
 \tilde{Q}=ict\,e_0+\mathbf{x}\;\in\;\mathbb{M}_-

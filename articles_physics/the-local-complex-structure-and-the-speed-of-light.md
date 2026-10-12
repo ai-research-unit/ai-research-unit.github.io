@@ -209,5 +209,5 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 - *Electromagnetism in Media — The Local Complex Structure at Work*, the parent article, for the medium conventions, the local and spectral scale $c(\omega)$, and the boundaries of the structure near absorption.
 - *Maxwell's Equations in the Biquaternionic Formulation*, for the biquaternionic gradient, the d'Alembertian, and the medium form of Maxwell's equations.
 - *The Field-Strength Biquaternion and Its Invariants*, for the field-strength normalisation that uses the same scale $c$ and the two medium parameters.
-- *The Wick Rotation in the Biquaternion Universe*, for the Euclidean continuation and the sense in which the imaginary time direction carries thermodynamic content.
+- *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the Euclidean continuation and the sense in which the imaginary time direction carries thermodynamic content.
 - *Curved Spacetime and the Biquaternion Framework*, for the tetrad and spin-connection extension that the local structure requires beyond a single tangent space.

@@ -349,4 +349,4 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 - *The Born Rule as a Trace Formula — Derivation and Comparison* — the trace formula and its comparison with the standard postulate.
 - *Angular Momentum and Spin in Biquaternionic Form* — the spin degree of freedom used in the spinor-valued routes.
 - *The Feynman Propagator in Biquaternionic Form* — the $i\epsilon$ direction shared with the phase exponent.
-- *The Wick Rotation in the Biquaternion Universe* — the transfer $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ that turns the phase into a decaying weight.
+- *Interpretation of the Wick Rotation in the Biquaternion Universe* — the transfer $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ that turns the phase into a decaying weight.

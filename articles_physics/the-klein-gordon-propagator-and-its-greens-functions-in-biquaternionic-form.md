@@ -26,7 +26,7 @@ The mass parameter is $\mu=mc/\hbar$, so that $\mu^2=m^2c^2/\hbar^2$ is the quan
 - Companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, for the field's central value space and the exclusion of the state module.
 - Companion article *Exercise: The Retarded Potentials and the Green's Function*, for the massless Green's-function convention, the light-cone Jacobian, and the boundary condition.
 - Companion article *The Feynman Propagator in Biquaternionic Form*, for the $i\epsilon$ prescription, the momentum-space propagator, and the contour conventions.
-- Companion article *The Wick Rotation in the Biquaternion Universe*, for the identification of the material sector with the quaternion subspace and the Euclidean kernel.
+- Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the identification of the material sector with the quaternion subspace and the Euclidean kernel.
 - Companion article *The Klein–Gordon Path Integral in Biquaternionic Form*, for the Gaussian two-point function that reproduces the free kernel.
 
 ## The Operator and the Defining Equation
@@ -352,7 +352,7 @@ a complex scalar times the identity; the module factor is absent, as it must be 
 
 ### Euclidean form and the Yukawa tail
 
-For spacelike separations the Feynman propagator is the Wick-rotated Euclidean kernel, and the Wick rotation is the identification of the material sector with the quaternion subspace recalled in the companion article *The Wick Rotation in the Biquaternion Universe*. The Euclidean kernel
+For spacelike separations the Feynman propagator is the Wick-rotated Euclidean kernel, and the Wick rotation is the identification of the material sector with the quaternion subspace recalled in the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*. The rotation is quoted as the standard route; the denominator it produces is positive without it, because $\mathbf{p}_E^2$ is the **Hermitian form** of a material element, $\langle\tilde{k}_E,\tilde{k}_E\rangle_{*}=(k_E^0)^2+\mathbf{p}^2=\mathbf{p}_E^2$ for $\tilde{k}_E=ik_E^0e_0+\mathbf{p}\in\mathbb{M}_-$, positive because the form is definite and not because a metric was rotated, the two routes agreeing by the identity $\langle ik_E^0e_0+\mathbf{p},\,ik_E^0e_0+\mathbf{p}\rangle_{*}=N(-k_E^0e_0+\mathbf{p})$ — the same identity that carries the thermal and renormalization-group routes of the companions. The Euclidean kernel
 
 $$
 G_E(\tilde{Q}_E)=\int\frac{d^4p_E}{(2\pi)^4}\,\frac{e^{\,i\,p_E\cdot x_E}}{\mathbf{p}_E^2+\mu^2}
@@ -367,7 +367,7 @@ K_1\!\left(\mu\sqrt{\rho_E^2}\right),
 \rho_E^2=x_E^2,
 $$
 
-with $K_1$ the modified Bessel function of the second kind. It decays exponentially at large spacelike separation, with range $\mu^{-1}=\hbar/(mc)$, the Compton wavelength; this is the analytic form of the statement that the causal kernel vanishes outside the cone but that the Feynman kernel retains an exponentially small tail inside it. Both behaviors follow from the same biquaternion-norm geometry: the Lorentzian cone for the commutator, the Euclidean sphere for the Wick-rotated kernel.
+with $K_1$ the modified Bessel function of the second kind. It decays exponentially at large spacelike separation, with range $\mu^{-1}=\hbar/(mc)$, the Compton wavelength; this is the analytic form of the statement that the causal kernel vanishes outside the cone but that the Feynman kernel retains an exponentially small tail inside it. Both behaviors follow from the same biquaternion-norm geometry: the Lorentzian cone for the commutator, the Euclidean sphere for the Wick-rotated kernel. The scope of the form statement is the positivity of the denominator and no more: the form does not supply the analytic continuation, and the $i\epsilon$ remains the analytic input that names the vacuum, as the companion propagator article states.
 
 ### Composition and the free generating functional
 
@@ -437,6 +437,8 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Material coordinate, $\in\mathbb{M}_-$ |
 | $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$ | Material four-wavevector, $\in\mathbb{M}_-$ |
 | $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
+| $\langle\tilde{P},\tilde{Q}\rangle_{*}=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ | Hermitian form; real, positive definite |
+| $\tilde{k}_E=ik_E^0e_0+\mathbf{p}\in\mathbb{M}_-$ | Euclidean material element; $\langle\tilde{k}_E,\tilde{k}_E\rangle_{*}=\mathbf{p}_E^2$ |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
 | $\mu=mc/\hbar$ | Inverse Compton wavenumber; the mass scale, $\mu=m$ in natural units |

@@ -220,9 +220,9 @@ quaternionic algebra and the symmetric quaternionic algebra, and it is the whole
 $\mathbb{H}$ for the two antisymmetric structures. Only two square-zero sets occur, and the general
 quaternionic structure is one of the four with the origin alone.
 
-**Proof.** The four rows are the theorem of *Nilpotents*, §*The Four Structures with the Origin
-Alone*, where the plain square is anisotropic and the quaternionic square is the definite norm; the
-two alternating rows are its §*The Two Alternating Structures*, the products being alternating. The
+**Proof.** The four rows are the theorem of *Nilpotents*, §*The Six Structures and the Square-Zero
+Sets*, where the plain square is anisotropic and the quaternionic square is the definite norm; the
+two alternating rows are the same theorem, the products being alternating. The
 four structures with the origin alone are exactly those whose square is the plain square or the
 central element $N(\tilde x)e_0$, neither of which vanishes off the origin over $\mathbb{R}$.
 

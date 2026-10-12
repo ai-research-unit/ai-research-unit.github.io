@@ -20,7 +20,7 @@ We use the conventions of the companion articles. The biquaternion algebra is $\
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the connection, the adjoint transformation law and the Yang–Mills density.
 - Companion article *Wilson Loops in Biquaternionic Form*, for the loop operator, its gauge invariance and its abelian area law.
 - Companion article *The Partition Function in Biquaternionic Form*, for the Euclidean partition function and its evaluation.
-- Companion article *The Wick Rotation in the Biquaternion Universe*, for the rotation between the $ict$ and Euclidean descriptions.
+- Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the rotation between the $ict$ and Euclidean descriptions.
 - Companion article *The Renormalization Group in Biquaternionic Form*, for the running coupling and the lattice spacing as a cutoff.
 - Companion article *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, for the spin-one character of the adjoint-valued connection.
 
