@@ -8,11 +8,11 @@ $$
 \tilde\Xi\tilde\Xi = \lambda e_0 , \qquad \tilde\Xi^{\natural}\tilde\Xi = \lambda e_0 , \qquad \tilde\Xi\tilde\Xi^{*} = \lambda e_0 , \qquad \tilde\Xi^{\natural}\tilde\Xi^{*} = \lambda e_0 .
 $$
 
-Each solution is a **square root of the central value** $\lambda$, and the four problems are of four different kinds. The first is the general square-root problem of the algebra, solved by the vector–scalar reduction (*Square Roots of a General Element in the General Plain Algebra*), whose three special values $-1$, $0$ and $+1$ are the subject of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*. The second is the single complex equation $c(\tilde\Xi) = \lambda$, because the square of that product is already central. The third and the fourth have square with real scalar part, non-negative for the third and indefinite for the fourth, so that the third has no root of a negative value at all while the fourth has roots of every real value. This article sets the four problems side by side, states for each $\lambda$ whether a root exists, and reads the roots through the central square, which decides which of them are units. The same question is then read on the twelve structures of the space, in §*The Twelve Root Problems*, where the existence of a root separates the twelve into four classes.
+Each solution is a **square root of the central value** $\lambda$, and the four problems are of four different kinds. The first is the general square-root problem of the algebra, solved by the vector–scalar reduction (*Square Roots of a General Element in the General Plain Algebra*), whose three special values $-1$, $0$ and $+1$ are the subject of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*. The second is the single complex equation $C(\tilde\Xi) = \lambda$, because the square of that product is already central. The third and the fourth have square with real scalar part, non-negative for the third and indefinite for the fourth, so that the third has no root of a negative value at all while the fourth has roots of every real value. This article sets the four problems side by side, states for each $\lambda$ whether a root exists, and reads the roots through the central square, which decides which of them are units. The same question is then read on the twelve structures of the space, in §*The Twelve Root Problems*, where the existence of a root separates the twelve into four classes.
 
-The article owns the comparison of the four root problems and the criterion $c(\tilde\Xi\star\tilde\Xi) = c(\tilde\Xi)^{2}$ or $\lvert c(\tilde\Xi)\rvert^{2}$ that it yields. The classification of the roots of $-1$, $0$ and $+1$ for the plain product is quoted from its owner, and the four squares from which the reductions start are *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots* and the four group articles.
+The article owns the comparison of the four root problems and the criterion $C(\tilde\Xi\star\tilde\Xi) = C(\tilde\Xi)^{2}$ or $\lvert C(\tilde\Xi)\rvert^{2}$ that it yields. The classification of the roots of $-1$, $0$ and $+1$ for the plain product is quoted from its owner, and the four squares from which the reductions start are *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots* and the four group articles.
 
-**Conventions.** $\mathbb{B}$ has basis $e_0,e_1,e_2,e_3$, central scalar imaginary $i$ with $i^2 = -1$, and a general element is $\tilde\Xi = \Xi_0e_0+\mathbf\Xi$ with $\Xi_0\in\mathbb{C}$ and $\mathbf\Xi = \sum_{k=1}^{3}\Xi_ke_k$. The natural conjugation is $\tilde\Xi^{\natural} = \Xi_0-\mathbf\Xi$, the star is $\tilde\Xi^{*} = \overline{\tilde\Xi^{\natural}}$, and the **central square** is $c(\tilde\Xi)e_0 = \tilde\Xi^{\natural}\tilde\Xi = \tilde\Xi\tilde\Xi^{\natural}$ with $c(\tilde\Xi) = \sum_\mu \Xi_\mu^{2}$. A **central value** is an element $\lambda e_0$ with $\lambda\in\mathbb{C}$; the value is called non-zero when $\lambda\neq0$.
+**Conventions.** $\mathbb{B}$ has basis $e_0,e_1,e_2,e_3$, central scalar imaginary $i$ with $i^2 = -1$, and a general element is $\tilde\Xi = \Xi_0e_0+\mathbf\Xi$ with $\Xi_0\in\mathbb{C}$ and $\mathbf\Xi = \sum_{k=1}^{3}\Xi_ke_k$. The natural conjugation is $\tilde\Xi^{\natural} = \Xi_0-\mathbf\Xi$, the star is $\tilde\Xi^{*} = \overline{\tilde\Xi^{\natural}}$, and the **central square** is $C(\tilde\Xi)e_0 = \tilde\Xi^{\natural}\tilde\Xi = \tilde\Xi\tilde\Xi^{\natural}$ with $C(\tilde\Xi) = \sum_\mu \Xi_\mu^{2}$. A **central value** is an element $\lambda e_0$ with $\lambda\in\mathbb{C}$; the value is called non-zero when $\lambda\neq0$.
 
 ## The Plain Product: The Vector-Scalar Reduction
 
@@ -39,16 +39,16 @@ The reduction is a general statement about every $\lambda$: writing $\lambda = \
 The square of the natural product is already central,
 
 $$
-\tilde\Xi^{\natural}\tilde\Xi = c(\tilde\Xi)e_0 ,
+\tilde\Xi^{\natural}\tilde\Xi = C(\tilde\Xi)e_0 ,
 $$
 
-so the equation $\tilde\Xi^{\natural}\tilde\Xi = \lambda e_0$ is the single complex equation $c(\tilde\Xi) = \lambda$.
+so the equation $\tilde\Xi^{\natural}\tilde\Xi = \lambda e_0$ is the single complex equation $C(\tilde\Xi) = \lambda$.
 
-**Theorem (the roots of the natural product, quoted).** The roots of the central value $\lambda$ in the general quaternionic bilinear product are exactly the solutions of $c(\tilde\Xi) = \lambda$: the zero-divisor set when $\lambda = 0$, and the nondegenerate complex quadric $c(\tilde\Xi) = \lambda$ when $\lambda\neq0$. Each set is of real dimension six in $\mathbb{B}\cong\mathbb{R}^{8}$.
+**Theorem (the roots of the natural product, quoted).** The roots of the central value $\lambda$ in the general quaternionic bilinear product are exactly the solutions of $C(\tilde\Xi) = \lambda$: the zero-divisor set when $\lambda = 0$, and the nondegenerate complex quadric $C(\tilde\Xi) = \lambda$ when $\lambda\neq0$. Each set is of real dimension six in $\mathbb{B}\cong\mathbb{R}^{8}$.
 
-**Proof.** The square is central by *Introduction to the General Quaternionic Algebra of Biquaternions* §*The Square Lies in the Scalar Line*, and the vanishing of the central square is the zero-divisor criterion (*Zero Divisors of the General Plain Algebra*). The set $\{c = \lambda\}$ is a nondegenerate quadric in the four complex coordinates, of complex dimension three when $\lambda\neq0$ and a cone of the same dimension when $\lambda = 0$, hence of real dimension six in both cases.
+**Proof.** The square is central by *Introduction to the General Quaternionic Algebra of Biquaternions* §*The Square Lies in the Scalar Line*, and the vanishing of the central square is the zero-divisor criterion (*Zero Divisors of the General Plain Algebra*). The set $\{C = \lambda\}$ is a nondegenerate quadric in the four complex coordinates, of complex dimension three when $\lambda\neq0$ and a cone of the same dimension when $\lambda = 0$, hence of real dimension six in both cases.
 
-The natural product is the only one of the four whose root sets are solutions of a single scalar equation, and the reason is the one the comparison table records: the square of the natural product is the central element $c(\tilde\Xi)e_0$, the central square itself. Its roots of $0$ are the whole zero-divisor cone, the largest square-zero set of the four, and its roots of a non-zero value are quadrics, so that this product has a root of every central value without exception.
+The natural product is the only one of the four whose root sets are solutions of a single scalar equation, and the reason is the one the comparison table records: the square of the natural product is the central element $C(\tilde\Xi)e_0$, the central square itself. Its roots of $0$ are the whole zero-divisor cone, the largest square-zero set of the four, and its roots of a non-zero value are quadrics, so that this product has a root of every central value without exception.
 
 ## The General Plain Sesquilinear Product: No Root of a Negative
 
@@ -74,15 +74,15 @@ The fourth product is the one whose root sets are indefinite, and the comparison
 
 The central square decides the nature of every root, and it decides it the same way for all four general products.
 
-**Theorem (a root of a non-zero central value is a unit).** Let $\tilde\Xi$ be a root of the central value $\lambda$ in any one of the four general products. Then $c(\tilde\Xi\star\tilde\Xi) = c(\tilde\Xi)^{2}$ when the product is one of the two bilinear ones and $c(\tilde\Xi\star\tilde\Xi) = c(\tilde\Xi)\overline{c(\tilde\Xi)} = \lvert c(\tilde\Xi)\rvert^{2}$ when it is one of the two sesquilinear ones. Consequently
+**Theorem (a root of a non-zero central value is a unit).** Let $\tilde\Xi$ be a root of the central value $\lambda$ in any one of the four general products. Then $C(\tilde\Xi\star\tilde\Xi) = C(\tilde\Xi)^{2}$ when the product is one of the two bilinear ones and $C(\tilde\Xi\star\tilde\Xi) = C(\tilde\Xi)\overline{C(\tilde\Xi)} = \lvert C(\tilde\Xi)\rvert^{2}$ when it is one of the two sesquilinear ones. Consequently
 
 $$
-c(\tilde\Xi)^{2} = \lambda^{2} \quad\text{or}\quad \lvert c(\tilde\Xi)\rvert^{2} = \lambda^{2} , \qquad c(\tilde\Xi)\neq0 \iff \lambda\neq0 ,
+C(\tilde\Xi)^{2} = \lambda^{2} \quad\text{or}\quad \lvert C(\tilde\Xi)\rvert^{2} = \lambda^{2} , \qquad C(\tilde\Xi)\neq0 \iff \lambda\neq0 ,
 $$
 
 and every root of a non-zero central value is a unit, while every non-zero root of $0$ is a zero divisor.
 
-**Proof.** The four multiplicative laws are those of *The Annihilating Elements of the Twelve Structures*: $c$ is multiplicative for the two bilinear products and satisfies $c(f(\tilde\Xi,\tilde Q)) = c(\tilde\Xi)\overline{c(\tilde Q)}$ for the two sesquilinear ones, so the central square of the square is $c(\tilde\Xi)^{2}$ or $c(\tilde\Xi)\overline{c(\tilde\Xi)} = \lvert c(\tilde\Xi)\rvert^{2}$ according to the pair. The value of the square is $\lambda e_0$, whose central square is $\lambda^{2}e_0$, and the criterion of invertibility is $c\neq0$ (*Norm and Invertibility in the General Plain Algebra*).
+**Proof.** The four multiplicative laws are those of *The Zero Divisors and the Twelve Structures*: $C$ is multiplicative for the two bilinear products and satisfies $c(f(\tilde\Xi,\tilde Q)) = C(\tilde\Xi)\overline{C(\tilde Q)}$ for the two sesquilinear ones, so the central square of the square is $C(\tilde\Xi)^{2}$ or $C(\tilde\Xi)\overline{C(\tilde\Xi)} = \lvert C(\tilde\Xi)\rvert^{2}$ according to the pair. The value of the square is $\lambda e_0$, whose central square is $\lambda^{2}e_0$, and the criterion of invertibility is $C\neq0$ (*Norm and Invertibility in the General Plain Algebra*).
 
 The theorem is the reason the three central values $-1$, $0$, $+1$ are the interesting ones. The roots of $-1$ and of $+1$ lie in the group of units for the four general products wherever they exist; the roots of $0$ are the zero divisors wherever they exist, except in the general plain sesquilinear product, where they collapse to the origin, and except for the element $0$ itself, which is neither. The roots of $-1$ of the plain product are the parameter set of the idempotents (*Idempotents of the General Plain Algebra*), so the classification of the previous article in this group is the classification of these roots read through the idempotent map; and the roots of $0$ of the natural product are the whole cone of the previous article. The four root problems are therefore the four ways the same two questions — where is the square zero, and where is it minus the unit — are answered.
 
@@ -93,7 +93,7 @@ The four products are four of the twelve structures of the space, and the square
 | structure | the square $\tilde\Xi\star\tilde\Xi$ | a root exists exactly for |
 |---|---|---|
 | $\mathrm{GPA}$, $\mathrm{SPA}$ | $\tilde\Xi^{2}$ | every $\lambda$ |
-| $\mathrm{GQA}$, $\mathrm{SQA}$ | $c(\tilde\Xi)e_0$ | every $\lambda$ |
+| $\mathrm{GQA}$, $\mathrm{SQA}$ | $C(\tilde\Xi)e_0$ | every $\lambda$ |
 | $\mathrm{GQS}$, $\mathrm{SQS}$ | $\tilde\Xi^{\natural}\tilde\Xi^{*}$ and its coefficientwise real part | every real $\lambda$ |
 | $\mathrm{GPS}$, $\mathrm{SPS}$ | $\tilde\Xi\tilde\Xi^{*}$ and its scalar part | every real $\lambda\geq0$ |
 | $\mathrm{APA}$, $\mathrm{AQA}$ | $0$ | $\lambda = 0$ alone |
@@ -109,11 +109,11 @@ The classification separates the twelve as nothing else in the group does. The *
 
 ## Summary
 
-The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* give four square-root problems for a central value $\lambda e_0$, and they differ in whether a root exists and in what the roots are. The plain product reduces to the pair $\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi) = \lambda$, $2\Xi_0\mathbf\Xi = 0$; the natural product reduces to the single complex equation $c(\tilde\Xi) = \lambda$; the general plain sesquilinear product has square with scalar part $\sum_\mu\lvert \Xi_\mu\rvert^{2}$; and the general quaternionic sesquilinear product has square with scalar part the Krein value $\lvert \Xi_0\rvert^{2}-\sum_k\lvert \Xi_k\rvert^{2}$.
+The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* give four square-root problems for a central value $\lambda e_0$, and they differ in whether a root exists and in what the roots are. The plain product reduces to the pair $\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi) = \lambda$, $2\Xi_0\mathbf\Xi = 0$; the natural product reduces to the single complex equation $C(\tilde\Xi) = \lambda$; the general plain sesquilinear product has square with scalar part $\sum_\mu\lvert \Xi_\mu\rvert^{2}$; and the general quaternionic sesquilinear product has square with scalar part the Krein value $\lvert \Xi_0\rvert^{2}-\sum_k\lvert \Xi_k\rvert^{2}$.
 
 The plain product has roots of every value, its roots of $-1$ splitting into the trivial pair $\pm i$, the family of pure real unit vectors and a four-parameter family, its roots of $0$ being the nilpotent cone, and its roots of $+1$ the products of the roots of $-1$ with $i$. The natural product has roots of every value, the roots of a non-zero value being a quadric of real dimension six and the roots of $0$ the whole zero-divisor cone. The general plain sesquilinear product has no root of a non-real or negative value, its only root of $0$ is $\tilde\Xi = 0$, and its roots of $1$ are the unitary group $\cong U(2)$; and the general quaternionic sesquilinear product has roots of every real value and none of a non-real one, the roots of $\pm1$ being units and the roots of $0$ a proper subfamily of the cone.
 
-For all four general products the central square of a square is $c(\tilde\Xi)^{2}$ or $\lvert c(\tilde\Xi)\rvert^{2}$, so a root of a non-zero central value is a unit and a non-zero root of $0$ is a zero divisor. The four idempotent sets, which are the roots of the central value $-1$ read through the map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi i)$ for the algebra, are *The Idempotents of the Twelve Structures*; the squares and the four scalar parts from which the reductions start are *Relations Between the Four General Products* §*The Four Scalar Parts*; and the four root sets themselves are tabulated in *Comparison Between the Four General Products*.
+For all four general products the central square of a square is $C(\tilde\Xi)^{2}$ or $\lvert C(\tilde\Xi)\rvert^{2}$, so a root of a non-zero central value is a unit and a non-zero root of $0$ is a zero divisor. The four idempotent sets, which are the roots of the central value $-1$ read through the map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi i)$ for the algebra, are *The Idempotents of the Twelve Structures*; the squares and the four scalar parts from which the reductions start are *Relations Between the Four General Products* §*The Four Scalar Parts*; and the four root sets themselves are tabulated in *Comparison Between the Four General Products*.
 
 Read among the twelve structures the existence question has four answers and no more: a root of every central value for the four bilateral structures $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$, $\mathrm{SQA}$; a root of every real value for the two indefinite sesquilinear structures $\mathrm{GQS}$, $\mathrm{SQS}$; a root of every non-negative real value, and of no negative one, for the two definite sesquilinear structures $\mathrm{GPS}$, $\mathrm{SPS}$; and a root of $0$ alone for the four antisymmetric structures. The symmetric sibling of a sesquilinear structure keeps the existence class of its general partner and loses the rigidity of the root set, the root of a positive value growing from the unitary group to the sphere of $\mathbb{C}^{4}$.
 
@@ -123,7 +123,7 @@ Read among the twelve structures the existence question has four answers and no 
 |---|---|
 | $\lambda e_0$ | a central value, $\lambda\in\mathbb{C}$ |
 | $\tilde\Xi\star\tilde\Xi$ | the square in the product at hand |
-| $c(\tilde\Xi)e_0 = \tilde\Xi^{\natural}\tilde\Xi$ | the central square; $c(\tilde\Xi) = \sum_\mu \Xi_\mu^{2}$ |
+| $C(\tilde\Xi)e_0 = \tilde\Xi^{\natural}\tilde\Xi$ | the central square; $C(\tilde\Xi) = \sum_\mu \Xi_\mu^{2}$ |
 | $\lvert \Xi_0\rvert^{2}-\sum_k\lvert \Xi_k\rvert^{2}$ | the Krein form, the scalar part of the fourth product's square |
 | $\pm\hat\mu$ | the pure real unit vectors, the real roots of $-1$ |
 | $\mathrm{GPA},\dots,\mathrm{AQS}$ | the twelve structures of the space, the four general ones and the eight derived ones |
@@ -139,6 +139,6 @@ Read among the twelve structures the existence question has four answers and no 
 - *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.md`), for the non-negative scalar part of the general plain sesquilinear square.
 - *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the central square of the natural product.
 - *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the unitary group and its dimension.
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the criterion $c\neq0$ with which the roots are classified as units or zero divisors.
+- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the criterion $C\neq0$ with which the roots are classified as units or zero divisors.
 - *The Idempotents of the Twelve Structures* (`articles_maths/the-idempotents-of-the-twelve-structures.md`), for the idempotent reading of the roots of $1$.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the tabulation of the four root problems.

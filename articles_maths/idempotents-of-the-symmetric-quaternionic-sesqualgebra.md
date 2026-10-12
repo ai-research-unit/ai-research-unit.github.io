@@ -142,17 +142,17 @@ $\mathbb{H}_{\mathbb{B}}$ with the sphere $\lVert\mathbf x\rVert^2=\tfrac34$.
 ## Properties of the Idempotent Set
 
 **Theorem (the idempotents lie in the real quaternion subspace; the nonzero ones are regular).** Every
-idempotent of the block is a real quaternion; every nonzero idempotent has central square $c(\tilde\Pi)=1$
+idempotent of the block is a real quaternion; every nonzero idempotent has central square $C(\tilde\Pi)=1$
 and is regular.
 
 *Proof.* Real quaternion: $0$, $e_0$ and $-\tfrac12e_0+\boldsymbol\mu$ are real by the classification. The
 central square of $-\tfrac12e_0+\boldsymbol\mu$ is
-$c=\tfrac14+\lVert\boldsymbol\mu\rVert^2=\tfrac14+\tfrac34=1$, and $c(e_0)=1$. Since a nonzero idempotent
-has $Q_0\neq0$ (its scalar part is $1$ or $-\tfrac12$) and $c=1\neq0$, it is regular by the criterion of
+$C=\tfrac14+\lVert\boldsymbol\mu\rVert^2=\tfrac14+\tfrac34=1$, and $c(e_0)=1$. Since a nonzero idempotent
+has $Q_0\neq0$ (its scalar part is $1$ or $-\tfrac12$) and $C=1\neq0$, it is regular by the criterion of
 *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
-So no nonzero idempotent of the block is a zero divisor, and every one lies on the slice $c=1$ of the
-central square $c=\tilde Q\tilde Q^{\natural}$; the comparison with the plain product, where the nontrivial
+So no nonzero idempotent of the block is a zero divisor, and every one lies on the slice $C=1$ of the
+central square $C=\tilde Q\tilde Q^{\natural}$; the comparison with the plain product, where the nontrivial
 idempotents are zero divisors, is the subject of §*The Idempotents and the Other Classes*.
 
 **Theorem (the fixed-point reading).** The idempotent set is the fixed set of the quadratic map
@@ -196,8 +196,8 @@ The three named classes of the block meet in a way opposite to the plain product
 | class of the block | idempotents it contains |
 |---|---|
 | zero divisors, pure family $\{Q_0=0\}$ | none, every nonzero idempotent having $Q_0\neq0$ |
-| zero divisors, non-pure family $\{c=0\}$ | none, every nonzero idempotent having $c=1$ |
-| regular elements $\{Q_0\neq0,\ c\neq0\}$ | $e_0$ and the sphere $-\tfrac12e_0+\boldsymbol\mu$ |
+| zero divisors, non-pure family $\mathcal{C}$ | none, every nonzero idempotent having $C=1$ |
+| regular elements $\{Q_0\neq0,\ C\neq0\}$ | $e_0$ and the sphere $-\tfrac12e_0+\boldsymbol\mu$ |
 | nilpotents $\{\alpha(e_0+i\boldsymbol\mu)\}$ | none, the two classes meeting only at $0$ |
 
 The last row is proved in *Nilpotents of the Symmetric Quaternionic Sesqualgebra*: an element cannot have
@@ -236,7 +236,7 @@ $$
 
 the origin and the unit candidate isolated and the rest a two-sphere of radius $\tfrac{\sqrt3}{2}$ in the
 real quaternion subspace. Every nonzero idempotent has central square $1$, so every one is regular and none
-is a zero divisor; every nonzero idempotent lies on the slice $c=1$ of the central square. The idempotents of
+is a zero divisor; every nonzero idempotent lies on the slice $C=1$ of the central square. The idempotents of
 the block differ from those of the plain product: the plain nontrivial idempotents have vanishing central
 square and are zero divisors, while the block's have central square $1$ and are regular, the difference
 being the shape of the diagonal, whose scalar part is the Krein form. The two named classes of the block,
@@ -250,7 +250,7 @@ an orthogonal idempotent family nor a Peirce decomposition.
 | $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ | the idempotent equation of the block |
 | $\{0\},\{e_0\}$ | the trivial idempotents, $e_0$ the unit candidate |
 | $-\tfrac12e_0+\boldsymbol\mu,\ \lVert\boldsymbol\mu\rVert^2=\tfrac34$ | the nontrivial idempotents, a two-sphere |
-| $c(\tilde\Pi)=\sum_\mu\Pi_\mu^2$ | the central square, equal to $1$ on the nonzero idempotents |
+| $C(\tilde\Pi)=\sum_\mu\Pi_\mu^2$ | the central square, equal to $1$ on the nonzero idempotents |
 | $K(\tilde Q,\tilde Q)=|Q_0|^2-\lVert\mathbf Q\rVert^2$ | the scalar part of the diagonal, forcing $Q_0=-\tfrac12$ |
 | $\mathbb{H}_{\mathbb{B}}$ | the real quaternion subspace, carrying the whole idempotent set |
 

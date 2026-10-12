@@ -25,11 +25,11 @@ the first line because the Jordan product agrees with the plain product on the d
 
 ## The Four Structures with the Two-Point Set
 
-**Theorem (the plain and quaternionic structures).** The idempotents of the general plain structure are $\{0,e_0\}$; those of the general quaternionic structure are $\{0,e_0\}$; those of the symmetric plain structure are $\{0,e_0\}$; and those of the symmetric quaternionic structure are $\{0,e_0\}$. No structure of the four has a nontrivial idempotent besides the unit.
+**Theorem (the plain and quaternionic structures).** The idempotents of the general plain structure are $\{0,e_0\}$; those of the symmetric plain structure are $\{0,e_0\}$; those of the general quaternionic structure are $\{0,e_0\}$; and those of the symmetric quaternionic structure are $\{0,e_0\}$. No structure of the four has a nontrivial idempotent besides the unit element $e_0$ of $\mathbb{H}$.
 
 *Proof.* For the general plain structure, $\tilde x^2=\tilde x$ reads $\tilde x(\tilde x-e_0)=0$; the plain algebra is a division algebra, so $\tilde x=0$ or $\tilde x=e_0$. For the general quaternionic structure, $\tilde x^{\natural}\tilde x=N(\tilde x)e_0=\tilde x$ puts $\tilde x$ in the scalar line, and the scalar equation $s^2=s$ gives $s\in\{0,1\}$. The symmetric plain structure has the plain square on the diagonal, $\tilde x\bullet\tilde x=\tilde x^2$, so its equation is the same as the general plain one and its set is the same. The symmetric quaternionic structure has the square $N(\tilde x)e_0$, so its equation is the same as the general quaternionic one.
 
-**Remark (the sign of the square).** The two-point set is the set of idempotents of the scalar field $\mathbb{R}$, embedded as the scalar line; the four structures inherit it because their square operator either is the plain square, whose only central solutions are $0$ and $e_0$, or is the definite scalar $N(\tilde x)e_0$, whose only solutions are the same two. The pure elements, which are the zero divisors of the Jordan structure, have the square $-\mathbf u\cdot\mathbf u\,e_0=-|\mathbf u|^2e_0$, the negative of what a nontrivial idempotent would need: the construction $\tfrac12(e_0+\mathbf u)$ closes only if $\mathbf u$ is a root of $+e_0$, and no nonzero pure element is. So the zero divisors of the block carry no idempotent with them.
+**Remark (the sign of the square).** The two-point set is the set of idempotents of the scalar field $\mathbb{R}$, embedded as the scalar line; the four structures inherit it because their square operator either is the plain square, whose only solutions are $0$ and $e_0$, or is the definite scalar $N(\tilde x)e_0$, whose only solutions are the same two. The pure elements, which are the zero divisors of the Jordan structure, have the square $-\mathbf u\cdot\mathbf u\,e_0=-|\mathbf u|^2e_0$, the negative of what a nontrivial idempotent would need: the construction $\tfrac12(e_0+\mathbf u)$ closes only if $\mathbf u$ is a root of $+e_0$, and no nonzero pure element is. So the zero divisors of the block carry no idempotent with them.
 
 ## The Two Alternating Structures
 
@@ -37,20 +37,20 @@ the first line because the Jordan product agrees with the plain product on the d
 
 *Proof.* Both products are alternating, so $\tilde x\wedge\tilde x=0$ and $\tilde x\wedge^{\natural}\tilde x=0$ for every element; the idempotent equation therefore reads $\tilde x=0$. The origin is an idempotent of every structure, and it is the only one here.
 
-The two cross products are the only structures of the six with a one-point idempotent set, and they are also the only ones whose product is alternating, so the square vanishes identically and nothing survives the equation. The presence of a unit in the other four is what gives them the extra point $e_0$, and the two cross products, which have no unit, do not even have that point: $e_0$ is not idempotent for them, since $e_0\wedge e_0=0\neq e_0$.
+The two cross products are the only structures of the six with a one-point idempotent set, and they are also the only ones whose product is alternating, so the square vanishes identically and nothing survives the equation. The four others carry the extra point because their square operator returns $e_0$ on the unit, $\tilde e_0^2=e_0$ for the plain square and $N(e_0)e_0=e_0$ for the scalar one; the two cross products, whose square vanishes, do not even have that point: $e_0\wedge e_0=0\neq e_0$.
 
 ## The Six Idempotent Sets Side by Side
 
 | structure | product | square of $\tilde x$ | idempotents |
 |---|---|---|---|
 | $\mathrm{GPA}$ | $\tilde x\tilde x$ | $(x_0^2-\lvert\mathbf x\rvert^2)e_0+2x_0\mathbf x$ | $\{0,e_0\}$ |
-| $\mathrm{GQA}$ | $\tilde x^{\natural}\tilde x$ | $N(\tilde x)e_0$ | $\{0,e_0\}$ |
 | $\mathrm{SPA}$ | $\tilde x\bullet\tilde x$ | $(x_0^2-\lvert\mathbf x\rvert^2)e_0+2x_0\mathbf x$ | $\{0,e_0\}$ |
-| $\mathrm{SQA}$ | $N(\tilde x,\tilde x)e_0$ | $N(\tilde x)e_0$ | $\{0,e_0\}$ |
 | $\mathrm{APA}$ | $\tilde x\wedge\tilde x$ | $0$ | $\{0\}$ |
+| $\mathrm{GQA}$ | $\tilde x^{\natural}\tilde x$ | $N(\tilde x)e_0$ | $\{0,e_0\}$ |
+| $\mathrm{SQA}$ | $N(\tilde x,\tilde x)e_0$ | $N(\tilde x)e_0$ | $\{0,e_0\}$ |
 | $\mathrm{AQA}$ | $\tilde x\wedge^{\natural}\tilde x$ | $0$ | $\{0\}$ |
 
-**Theorem (the six idempotent sets).** Among the six structures the idempotents are $\{0,e_0\}$ for $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{SPA}$ and $\mathrm{SQA}$, and $\{0\}$ for $\mathrm{APA}$ and $\mathrm{AQA}$. Only two idempotent sets occur, and the origin belongs to both.
+**Theorem (the six idempotent sets).** Among the six structures the idempotents are $\{0,e_0\}$ for $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$ and $\mathrm{SQA}$, and $\{0\}$ for $\mathrm{APA}$ and $\mathrm{AQA}$. Only two idempotent sets occur, and the origin belongs to both.
 
 *Proof.* The four structures of the first group are the theorem of the plain and quaternionic structures, and the two of the second group are the theorem of the cross products; the origin is an idempotent of every structure, so the two sets contain it and the second set is a subset of the first.
 
@@ -58,14 +58,14 @@ The two cross products are the only structures of the six with a one-point idemp
 
 ## Summary
 
-The idempotent of a structure is an element equal to its square, read from the square operator. The four structures whose square is the plain square or the definite scalar $N(\tilde x)e_0$ — the general plain, the general quaternionic, the symmetric plain and the symmetric quaternionic — have the two-point idempotent set $\{0,e_0\}$, exactly the idempotents of the scalar field; the two cross products, whose square vanishes identically, have the one-point set $\{0\}$, and the unit $e_0$ is not idempotent for them. So only two idempotent sets occur among the six, the origin belongs to both, and no nontrivial idempotent is attached to a zero divisor of the Jordan structure, whose pure elements have the negative scalar square $-|\mathbf u|^2e_0$. Over $\mathbb{C}$ the plain square would acquire a nontrivial idempotent along every isotropic direction; over $\mathbb{R}$ there is no isotropic direction and no central imaginary, and the theory collapses to the two-point set.
+The idempotent of a structure is an element equal to its square, read from the square operator. The four structures whose square is the plain square or the definite scalar $N(\tilde x)e_0$ — the general plain, the symmetric plain, the general quaternionic and the symmetric quaternionic — have the two-point idempotent set $\{0,e_0\}$, exactly the idempotents of the scalar field; the two cross products, whose square vanishes identically, have the one-point set $\{0\}$, and the unit element $e_0$ is not idempotent for them. So only two idempotent sets occur among the six, the origin belongs to both, and no nontrivial idempotent is attached to a zero divisor of the Jordan structure, whose pure elements have the negative scalar square $-|\mathbf u|^2e_0$. Over $\mathbb{C}$ the plain square would acquire a nontrivial idempotent along every isotropic direction; over $\mathbb{R}$ there is no isotropic direction and no central imaginary, and the theory collapses to the two-point set.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\tilde\pi\star\tilde\pi=\tilde\pi$ | the idempotent equation of the structure $\star$ |
-| $\{0,e_0\}$ | the idempotents of GPA, GQA, SPA and SQA |
+| $\{0,e_0\}$ | the idempotents of GPA, SPA, GQA and SQA |
 | $\{0\}$ | the idempotents of APA and AQA |
 | $(x_0^2-\lvert\mathbf x\rvert^2)e_0+2x_0\mathbf x$ | the plain square, the square of GPA and SPA |
 | $N(\tilde x)e_0$ | the quaternionic square, the square of GQA and SQA |

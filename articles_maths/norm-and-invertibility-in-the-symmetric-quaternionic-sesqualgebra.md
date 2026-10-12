@@ -158,7 +158,7 @@ of the element by the injectivity of its multiplication operator.
 **Theorem (the element and its operator).** For $\tilde Q\in\mathbb{B}$ the left multiplication
 $L^{\star}_{\tilde Q}:\tilde X\mapsto\tilde Q\star\tilde X$ is injective if and only if $\tilde Q$ is
 regular, and then it is a conjugate-linear bijection of $\mathbb{B}$; when $\tilde Q$ is a zero divisor the
-rank is six in the non-pure family $\{Q_0\neq0,\ c(\tilde Q)=0\}$ and four in the pure family $\{Q_0=0\}$,
+rank is six in the non-pure family $\{Q_0\neq0,\ C(\tilde Q)=0\}$ and four in the pure family $\{Q_0=0\}$,
 and the rank is zero at the origin.
 
 *Proof.* The kernel of $L^{\star}_{\tilde Q}$ is the annihilator
@@ -170,7 +170,7 @@ one kernel outside the two families, and $L^{\star}_{\tilde Q}$ is conjugate-lin
 of the block is conjugate-linear.
 
 So the largest class on which the block's multiplication is faithful is the set of the regular elements,
-$Q_0\neq0$ and $c(\tilde Q)\neq0$. Every nonzero idempotent of the block is regular
+$Q_0\neq0$ and $C(\tilde Q)\neq0$. Every nonzero idempotent of the block is regular
 (*Idempotents of the Symmetric Quaternionic Sesqualgebra*), and no nonzero nilpotent is; the regular elements
 are the substitute for the invertible ones that the absence of a unit leaves, and they are the elements on
 which the operator calculus of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* is a
@@ -196,7 +196,7 @@ $e_1\star e_2=0$, so the second fails.
 
 **Remark (what carries the class).** The algebraic norm vanishes on the regular isotropic elements and does
 not vanish on the pure zero divisors, so the zero-divisor class is carried by the scalar part $Q_0$ and the
-central square $c$, and not by $K$. The isotropic elements of $K$ are computed in *The Isotropic Structure of
+central square $C$, and not by $K$. The isotropic elements of $K$ are computed in *The Isotropic Structure of
 the General Quaternionic Sesqualgebra* and its restriction to the block in *The Krein Form as a Product on
 the Symmetric Quaternionic Sesqualgebra*.
 
@@ -207,7 +207,7 @@ unit $\tilde E$, since there is no unit; and $\tilde Q$ is a pure zero divisor, 
 has rank four and is not injective.
 
 **A regular element whose left multiplication is a bijection.** $\tilde Q=e_0+e_1$: $Q_0=1$ and
-$c=2\neq0$, so it is regular; $L^{\star}_{\tilde Q}$ is a conjugate-linear bijection, though $\tilde Q$ has
+$C=2\neq0$, so it is regular; $L^{\star}_{\tilde Q}$ is a conjugate-linear bijection, though $\tilde Q$ has
 no inverse.
 
 **A multiplicativity failure.** $\tilde P=e_3$, $\tilde Q=e_2$: the algebraic norm gives
@@ -232,7 +232,7 @@ real, indefinite of signature $(2,6)$, also called the Krein form, with the $K$-
 vanishing set; it is **not multiplicative**, the pair $e_3,e_2$ separating the two sides,
 $K(e_3\star e_2)=K(0)=0$ against $K(e_3)K(e_2)=1$, and the square map is not multiplicative either.
 Invertibility is replaced by regularity: the left multiplication of $\tilde Q$ is injective exactly when
-$\tilde Q$ is regular, $Q_0\neq0$ and $c(\tilde Q)\neq0$, and has rank eight, six and four on the regular
+$\tilde Q$ is regular, $Q_0\neq0$ and $C(\tilde Q)\neq0$, and has rank eight, six and four on the regular
 elements, the non-pure zero divisors and the pure zero divisors, and rank zero at the origin. The article
 records the **absence of a criterion**: the algebraic norm does not detect the zero divisors, vanishing on
 the regular $e_0+e_1$ and not on the pure zero divisor $e_1$; the class is carried by the scalar part and the
@@ -248,7 +248,7 @@ central square, not by $K$.
 | $K(\tilde Q)=K(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, one of the four algebraic norms of the space |
 | $\tilde Q\star\tilde Q=K(\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$ | the square, a real quaternion with scalar part $K(\tilde Q)$ |
 | $K(\tilde P\star\tilde Q)\neq K(\tilde P)K(\tilde Q)$ | the failure of multiplicativity |
-| $Q_0\neq0,\ c(\tilde Q)\neq0$ | the regular elements, the substitute for the invertible ones |
+| $Q_0\neq0,\ C(\tilde Q)\neq0$ | the regular elements, the substitute for the invertible ones |
 | $\mathrm{rank}\,L^{\star}_{\tilde Q}\in\{8,6,4,0\}$ | the ranks: regular, non-pure divisor, pure divisor, origin |
 
 ## Further Reading

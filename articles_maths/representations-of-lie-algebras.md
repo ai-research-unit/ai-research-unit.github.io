@@ -264,7 +264,7 @@ with multiplicities $c_{\lambda\mu}^{\nu}$ that are computable from the characte
 **Definition.** Let $(x_1, \ldots, x_m)$ be a basis of $\mathrm{G}$ and let $(x^1, \ldots, x^m)$ be the dual basis with respect to the Killing form, $\kappa(x_i, x^j) = \delta_i^j$. The **Casimir element** is
 
 $$
-C = \sum_{i=1}^{m} x_i x^j \in U(\mathrm{G}).
+\Omega = \sum_{i=1}^{m} x_i x^j \in U(\mathrm{G}).
 $$
 
 **Proposition.** The Casimir element is independent of the choice of basis, and it lies in the centre of $U(\mathrm{G})$: it commutes with every element of $U(\mathrm{G})$. On the irreducible module $V(\lambda)$ it acts by the scalar
@@ -279,15 +279,15 @@ $$
 \Bigl[ y, \sum_i x_i x^i \Bigr] = \sum_i \Bigl( [y, x_i] x^i + x_i [y, x^i] \Bigr) = 0,
 $$
 
-because the two sums are the two sides of the invariance identity and cancel in the basis expansion. The eigenvalue is computed by applying $C$ to a highest weight vector $v_\lambda$: the component of $C$ lying in $\mathrm{N}_- U(\mathrm{G})$ annihilates the highest weight vector, and what remains is the scalar $(\lambda, \lambda + 2\rho)$.
+because the two sums are the two sides of the invariance identity and cancel in the basis expansion. The eigenvalue is computed by applying $\Omega$ to a highest weight vector $v_\lambda$: the component of $\Omega$ lying in $\mathrm{N}_- U(\mathrm{G})$ annihilates the highest weight vector, and what remains is the scalar $(\lambda, \lambda + 2\rho)$.
 
 **Example.** For $\mathrm{SL}(2)$ with the Killing form, the dual basis of $(e, f, h)$ is $(f/4, e/4, h/8)$, so
 
 $$
-C = \tfrac{1}{4}(ef + fe) + \tfrac{1}{8} h^2.
+\Omega = \tfrac{1}{4}(ef + fe) + \tfrac{1}{8} h^2.
 $$
 
-On the highest weight vector of $V_n$ one has $ef \cdot v_n = h \cdot v_n = n v_n$, $fe \cdot v_n = 0$ and $h^2 \cdot v_n = n^2 v_n$, so $C$ acts on $V_n$ by
+On the highest weight vector of $V_n$ one has $ef \cdot v_n = h \cdot v_n = n v_n$, $fe \cdot v_n = 0$ and $h^2 \cdot v_n = n^2 v_n$, so $\Omega$ acts on $V_n$ by
 
 $$
 \tfrac{1}{4} n + \tfrac{1}{8} n^2 = \tfrac{1}{8} n(n+2) = (\lambda, \lambda + 2\rho)
@@ -325,7 +325,7 @@ The irreducible finite-dimensional modules are exactly the modules $V(\lambda)$ 
 | $\operatorname{ch}V(\lambda) = \dfrac{\sum_w(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\sum_w(-1)^{\ell(w)}e^{w(\rho)}}$ | Weyl character formula |
 | $\dim V(\lambda) = \prod_{\alpha>0}\frac{(\lambda+\rho,\alpha)}{(\rho,\alpha)}$ | Weyl dimension formula |
 | $\mathcal{P}$, $m_{V(\lambda)}(\mu) = \sum_w(-1)^{\ell(w)}\mathcal{P}(w(\lambda+\rho)-(\mu+\rho))$ | Kostant partition function and multiplicity formula |
-| $C = \sum_i x_i x^i$ | Casimir element; central in $U(\mathrm{G})$ |
+| $\Omega = \sum_i x_i x^i$ | Casimir element; central in $U(\mathrm{G})$ |
 | $(\lambda, \lambda+2\rho)$ | Casimir eigenvalue on $V(\lambda)$ |
 
 ## Further Reading

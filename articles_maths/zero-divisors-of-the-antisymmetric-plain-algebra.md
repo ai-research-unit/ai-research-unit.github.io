@@ -196,14 +196,14 @@ dichotomy, and it is read from the vector part instead.
 The four general products give four definitions of the zero divisor, and for the biquaternion
 space the four definitions select one and the same set,
 $$
-\{\tilde Q\neq0:\ c(\tilde Q)=0\},\qquad c(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2},
+\{\tilde Q\neq0:\ C(\tilde Q)=0\},\qquad C(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2},
 $$
 a theorem about the algebra and not a property of the definitions (*The Zero Divisors and the Twelve Structures*, §*The Four Zero-Divisor Sets Coincide*). The set of the block differs from it,
 and the difference is the content of the comparison.
 
 **Proposition (the comparison).** The zero-divisor set of the block is the punctured space
 $\mathbb{B}\setminus\{0\}$, and the zero-divisor set of each of the four general products is the
-proper subset $\{\tilde Q\neq0:c(\tilde Q)=0\}$. The block's set strictly contains every one of
+proper subset $\{\tilde Q\neq0:C(\tilde Q)=0\}$. The block's set strictly contains every one of
 them, the witness being $e_0$, and it is as large as a zero-divisor set can be. Among the twelve
 the punctured space occurs exactly for the six structures in which every nonzero element has a
 nonzero annihilating partner: the two alternating products, the block and $\mathrm{AQA}$; the two
@@ -212,7 +212,7 @@ annihilated by their conjugates $\overline{\tilde X}$; and the two symmetric hal
 the central reading of a non-degenerate form, $\mathrm{SQA}$ and $\mathrm{SPS}$.
 
 *Proof.* The block's set is the theorem of §*The Criterion*. The set of the four general products
-is the cited theorem, and $c$ vanishes at $0$ and on a cone that is not the whole space, so the
+is the cited theorem, and $C$ vanishes at $0$ and on a cone that is not the whole space, so the
 inclusion is strict: the element $e_0$ has $c(e_0)=1$ and is a zero divisor of the block, with
 partner itself, while it is not a zero divisor of the general products. For the six, the partners
 are displayed. An element of the block or of $\mathrm{AQA}$ is annihilated by itself, the two
@@ -261,7 +261,7 @@ For the antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\mathbf{P}\ti
 the zero-divisor class is total: every nonzero element is a two-sided zero divisor, with itself as
 the annihilating partner, because the block is alternating and the square of each element
 vanishes. The zero-divisor set is the punctured space $\mathbb{B}\setminus\{0\}$, and it strictly
-contains the common zero-divisor set $\{c(\tilde Q)=0\}\setminus\{0\}$ of the four general
+contains the common zero-divisor set $\{C(\tilde Q)=0\}\setminus\{0\}$ of the four general
 products; among the twelve the same punctured space is attained by exactly six structures, the
 block, its alternating sibling $\mathrm{AQA}$, the two antisymmetric sesquilinear halves and the
 two symmetric halves whose value is the central reading of a non-degenerate form. The annihilators
@@ -286,7 +286,7 @@ and it is read from the vector part where the parent's is read from the scalar p
 | $\chi_{L_{\tilde P}}(t)=t^{2}(t^{2}+(\mathbf P,\mathbf P))$ | the characteristic polynomial of the operator |
 | $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\mathbf P$ | the annihilator of a non-central element $\tilde P$ |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the central line, on which the operator vanishes and the annihilator is the whole space |
-| $c(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the zero-divisor criterion of the four general products |
+| $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the zero-divisor criterion of the four general products |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, on which the block is the cross product |
 | $e_0$ | a zero divisor of the block, with partner itself, and not a zero divisor of the four general products |
 

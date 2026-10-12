@@ -10,7 +10,7 @@ The zero divisors are the elements that fail to be regular, and they are not the
 
 A zero divisor is defined relative to a product, and the definition is stated once for a general product in *Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor*; throughout this article the product is $\bullet$ and, unqualified, **zero divisor** means zero divisor of $\bullet$. The zero divisors of the algebra, their criterion and their set are *Zero Divisors of the General Plain Algebra*; the annihilators and the determinant of the left multiplication are *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the two families are named by *Idempotents of the Symmetric Plain Algebra* and *Nilpotents of the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The product with the mark is $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$; the central square is $c(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2=\tilde Q\tilde Q^{\natural}$, and the left multiplication is $L^{\bullet}_{\tilde Q}:\tilde R\mapsto\tilde Q\bullet\tilde R$. The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the set of pure elements, $Q_0=0$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The product with the mark is $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$; the central square is $C(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2=\tilde Q\tilde Q^{\natural}$, and the left multiplication is $L^{\bullet}_{\tilde Q}:\tilde R\mapsto\tilde Q\bullet\tilde R$. The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the set of pure elements, $Q_0=0$.
 
 ## The Definition
 
@@ -26,25 +26,25 @@ The zero divisors of the four general products and the theorem of the four coinc
 
 ## The Criterion
 
-The determinant of the left multiplication is known from the form: $\det(L^{\bullet}_{\tilde Q})=Q_0^2c(\tilde Q)$ (*The Trace Form and the Invariance of the Symmetric Plain Algebra*). The criterion follows at once, and it is simpler to prove it on the kernel, which also gives the two annihilators.
+The determinant of the left multiplication is known from the form: $\det(L^{\bullet}_{\tilde Q})=Q_0^2C(\tilde Q)$ (*The Trace Form and the Invariance of the Symmetric Plain Algebra*). The criterion follows at once, and it is simpler to prove it on the kernel, which also gives the two annihilators.
 
 **Theorem (the criterion).** An element $\tilde Q$ of the block is a zero divisor if and only if it is non-zero and
 
 $$
-Q_0=0\qquad\text{or}\qquad c(\tilde Q)=0 .
+Q_0=0\qquad\text{or}\qquad C(\tilde Q)=0 .
 $$
 
-*Proof.* Suppose $Q_0=0$, so $\tilde Q=\mathbf Q$ is pure and non-zero. For a general $\tilde R=R_0e_0+\mathbf{R}$ the product is $\tilde Q\bullet\tilde R=R_0\mathbf{Q}-(\mathbf{Q},\mathbf{R})e_0$, which vanishes exactly when $R_0=0$ and $(\mathbf{Q},\mathbf{R})=0$; the second condition is one complex equation on $\mathbf{R}$, so there is a non-zero solution and $\tilde Q$ is a zero divisor. Suppose $Q_0\neq0$ and $c(\tilde Q)=0$. Then $\tilde Q\bullet\tilde Q^{\natural}=c(\tilde Q)e_0=0$ by the quadratic identity, and $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a zero divisor. Conversely, suppose $Q_0\neq0$ and $c(\tilde Q)\neq0$ and let $\tilde R$ satisfy $\tilde Q\bullet\tilde R=0$. In coordinates the equation is the pair
+*Proof.* Suppose $Q_0=0$, so $\tilde Q=\mathbf Q$ is pure and non-zero. For a general $\tilde R=R_0e_0+\mathbf{R}$ the product is $\tilde Q\bullet\tilde R=R_0\mathbf{Q}-(\mathbf{Q},\mathbf{R})e_0$, which vanishes exactly when $R_0=0$ and $(\mathbf{Q},\mathbf{R})=0$; the second condition is one complex equation on $\mathbf{R}$, so there is a non-zero solution and $\tilde Q$ is a zero divisor. Suppose $Q_0\neq0$ and $C(\tilde Q)=0$. Then $\tilde Q\bullet\tilde Q^{\natural}=C(\tilde Q)e_0=0$ by the quadratic identity, and $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a zero divisor. Conversely, suppose $Q_0\neq0$ and $C(\tilde Q)\neq0$ and let $\tilde R$ satisfy $\tilde Q\bullet\tilde R=0$. In coordinates the equation is the pair
 
 $$
 Q_0\mathbf{R}+R_0\mathbf{Q}=0,\qquad Q_0R_0-(\mathbf{Q},\mathbf{R})=0 .
 $$
 
-Taking the dot product of the first with $\mathbf{Q}$ gives $Q_0(\mathbf{Q},\mathbf{R})+R_0(\mathbf{Q},\mathbf{Q})=0$, and substituting $(\mathbf{Q},\mathbf{R})=Q_0R_0$ from the second gives $R_0\bigl(Q_0^2+(\mathbf{Q},\mathbf{Q})\bigr)=R_0c(\tilde Q)=0$, so $R_0=0$; then the second gives $(\mathbf{Q},\mathbf{R})=0$ and the first gives $Q_0\mathbf{R}=0$, so $\mathbf{R}=0$. Hence $\tilde R=0$.
+Taking the dot product of the first with $\mathbf{Q}$ gives $Q_0(\mathbf{Q},\mathbf{R})+R_0(\mathbf{Q},\mathbf{Q})=0$, and substituting $(\mathbf{Q},\mathbf{R})=Q_0R_0$ from the second gives $R_0\bigl(Q_0^2+(\mathbf{Q},\mathbf{Q})\bigr)=R_0C(\tilde Q)=0$, so $R_0=0$; then the second gives $(\mathbf{Q},\mathbf{R})=0$ and the first gives $Q_0\mathbf{R}=0$, so $\mathbf{R}=0$. Hence $\tilde R=0$.
 
 **Corollary.** The block is not a domain, and it is not a domain in the strongest possible way: the whole vector subspace is contained in the zero-divisor set.
 
-The criterion and the criterion of the algebra have the same second clause, $c(\tilde Q)=0$, and the block adds the first, $Q_0=0$. It is exactly this addition that makes the block's set different.
+The criterion and the criterion of the algebra have the same second clause, $C(\tilde Q)=0$, and the block adds the first, $Q_0=0$. It is exactly this addition that makes the block's set different.
 
 ## The Two Families
 
@@ -62,36 +62,36 @@ a complex subspace of dimension two.
 
 *Proof.* The product of two pure elements is $\tilde Q\bullet\tilde R=-(\mathbf{Q},\mathbf{R})e_0$, so the kernel is the set above; in the three-dimensional complex vector subspace the single equation $(\mathbf{Q},\mathbf{R})=0$ has a two-dimensional solution space.
 
-The family is parametrised by the vector subspace without the origin, a set of complex dimension three, and each member annihilates a complex plane. **No pure element of the block is regular**, whatever the value of its central square: $e_1$ is a zero divisor and $c(e_1)=1$, and the whole pure isotropic cone, whose members have $c=0$, sits inside the same family.
+The family is parametrised by the vector subspace without the origin, a set of complex dimension three, and each member annihilates a complex plane. **No pure element of the block is regular**, whatever the value of its central square: $e_1$ is a zero divisor and $c(e_1)=1$, and the whole pure isotropic cone, whose members have $C=0$, sits inside the same family.
 
 ### The Scalar Family
 
-**Proposition.** A zero divisor with non-zero scalar part satisfies $c(\tilde Q)=0$, and its annihilator is the complex line spanned by the natural conjugate,
+**Proposition.** A zero divisor with non-zero scalar part satisfies $C(\tilde Q)=0$, and its annihilator is the complex line spanned by the natural conjugate,
 
 $$
-\mathrm{ann}(\tilde Q)=\mathbb{C}\,\tilde Q^{\natural},\qquad c(\tilde Q)=0,\ Q_0\neq0 .
+\mathrm{ann}(\tilde Q)=\mathbb{C}\,\tilde Q^{\natural},\qquad C(\tilde Q)=0,\ Q_0\neq0 .
 $$
 
-*Proof.* The natural conjugate gives $\tilde Q\bullet\tilde Q^{\natural}=c(\tilde Q)e_0=0$, so the line $\mathbb{C}\tilde Q^{\natural}$ is in the annihilator; and the criterion's converse computation shows that any $\tilde R$ in the kernel has $R_0=0$ replaced by no restriction, the determinant $Q_0^2c(\tilde Q)$ vanishing through the factor $c(\tilde Q)$, so the kernel is exactly one-dimensional and equal to that line.
+*Proof.* The natural conjugate gives $\tilde Q\bullet\tilde Q^{\natural}=C(\tilde Q)e_0=0$, so the line $\mathbb{C}\tilde Q^{\natural}$ is in the annihilator; and the criterion's converse computation shows that any $\tilde R$ in the kernel has $R_0=0$ replaced by no restriction, the determinant $Q_0^2C(\tilde Q)$ vanishing through the factor $C(\tilde Q)$, so the kernel is exactly one-dimensional and equal to that line.
 
-The family is the set $\{\tilde Q:Q_0\neq0,\ c(\tilde Q)=0\}$, of complex dimension three, and up to the scalar it is the set of the **idempotents** of the block: the non-zero non-trivial idempotents are $\tfrac12(e_0+\mathbf{u})$ with $\mathbf{u}^2=e_0$ pure, and $c(\tfrac12(e_0+\mathbf{u}))=0$. The exact correspondence is *Idempotents of the Symmetric Plain Algebra*.
+The family is the set $\{\tilde Q:Q_0\neq0,\ C(\tilde Q)=0\}$, of complex dimension three, and up to the scalar it is the set of the **idempotents** of the block: the non-zero non-trivial idempotents are $\tfrac12(e_0+\mathbf{u})$ with $\mathbf{u}^2=e_0$ pure, and $c(\tfrac12(e_0+\mathbf{u}))=0$. The exact correspondence is *Idempotents of the Symmetric Plain Algebra*.
 
 ### The Set
 
-The two families are the entire zero-divisor set, and it is the union of the vector subspace and the isotropic cone:
+The two families are the entire zero-divisor set, and it is the union of the vector subspace and the zero-divisor cone $\mathcal{C}$:
 
 $$
-\mathcal{Z}(\bullet)=\bigl\{\tilde Q\neq0:\ Q_0=0\ \text{or}\ c(\tilde Q)=0\bigr\}
-=\bigl(\mathrm{Vect}(\mathbb{B})\setminus\{0\}\bigr)\cup\bigl(\{c=0\}\setminus\{0\}\bigr).
+\mathcal{Z}(\bullet)=\bigl\{\tilde Q\neq0:\ Q_0=0\ \text{or}\ C(\tilde Q)=0\bigr\}
+=\bigl(\mathrm{Vect}(\mathbb{B})\setminus\{0\}\bigr)\cup\bigl(\mathcal{C}\setminus\{0\}\bigr).
 $$
 
 **Theorem.** The zero-divisor set of the block contains the zero-divisor set of the algebra and is strictly larger:
 
 $$
-\{c=0\}\setminus\{0\}=\mathcal Z(\text{algebra})\subsetneq\mathcal Z(\bullet).
+\mathcal{C}\setminus\{0\}=\mathcal Z(\text{algebra})\subsetneq\mathcal Z(\bullet).
 $$
 
-*Proof.* The algebra's set is $\{c=0\}\setminus\{0\}$ (*Zero Divisors of the General Plain Algebra*), and every one of its elements satisfies $c=0$ and is in $\mathcal Z(\bullet)$. The inclusion is strict: $e_1$ has $c(e_1)=1\neq0$ and $Q_0=0$, hence is in $\mathcal Z(\bullet)$ and not in the algebra's set.
+*Proof.* The algebra's set is $\mathcal{C}\setminus\{0\}$ (*Zero Divisors of the General Plain Algebra*), and every one of its elements satisfies $C=0$ and is in $\mathcal Z(\bullet)$. The inclusion is strict: $e_1$ has $c(e_1)=1\neq0$ and $Q_0=0$, hence is in $\mathcal Z(\bullet)$ and not in the algebra's set.
 
 ## The Comparison with the Four General Products
 
@@ -111,7 +111,7 @@ So no transfer of the zero-divisor classification from the four general products
 
 ## Summary
 
-A zero divisor of the block is a non-zero element annihilated by a non-zero element, the notion coincides on the left, the right and the two-sided because the product is commutative, and the criterion is $Q_0=0$ or $c(\tilde Q)=0$. The set splits into the pure family, all of the vector subspace without the origin, whose members have a two-dimensional annihilator equal to the orthogonal complement of the vector part in the pure subspace, and the scalar family, the non-pure isotropic elements, whose members have the one-dimensional annihilator $\mathbb{C}\tilde Q^{\natural}$ and which are the non-zero scalar multiples of the non-trivial idempotents. The zero-divisor set is the union of the vector subspace and the isotropic cone, and it strictly contains the zero-divisor set of the algebra and the common set of the four general products, which is the isotropic cone alone; the witness of the difference is $e_1$, a zero divisor of the block with $c(e_1)=1$. An element of the block can be invertible and a zero divisor, and the invertible elements are exactly the complement of the isotropic cone.
+A zero divisor of the block is a non-zero element annihilated by a non-zero element, the notion coincides on the left, the right and the two-sided because the product is commutative, and the criterion is $Q_0=0$ or $C(\tilde Q)=0$. The set splits into the pure family, all of the vector subspace without the origin, whose members have a two-dimensional annihilator equal to the orthogonal complement of the vector part in the pure subspace, and the scalar family, the non-pure isotropic elements, whose members have the one-dimensional annihilator $\mathbb{C}\tilde Q^{\natural}$ and which are the non-zero scalar multiples of the non-trivial idempotents. The zero-divisor set is the union of the vector subspace and the isotropic cone, and it strictly contains the zero-divisor set of the algebra and the common set of the four general products, which is the isotropic cone alone; the witness of the difference is $e_1$, a zero divisor of the block with $c(e_1)=1$. An element of the block can be invertible and a zero divisor, and the invertible elements are exactly the complement of the isotropic cone.
 
 ## Summary of Notation
 
@@ -119,10 +119,10 @@ A zero divisor of the block is a non-zero element annihilated by a non-zero elem
 |---|---|
 | $\tilde P\bullet\tilde Q$ | the symmetric plain product, the multiplication of the block |
 | $\mathrm{ann}(\tilde Q)=\ker L^{\bullet}_{\tilde Q}$ | the annihilator of $\tilde Q$, its left and right annihilator being equal |
-| $\mathcal Z(\bullet)=(\mathrm{Vect}\setminus\{0\})\cup(\{c=0\}\setminus\{0\})$ | the zero-divisor set of the block |
-| $Q_0=0$ or $c(\tilde Q)=0$ | the criterion for a non-zero element |
+| $\mathcal Z(\bullet)=(\mathrm{Vect}\setminus\{0\})\cup(\mathcal{C}\setminus\{0\})$ | the zero-divisor set of the block |
+| $Q_0=0$ or $C(\tilde Q)=0$ | the criterion for a non-zero element |
 | $\tilde Q^{\natural}$ | the natural conjugate, spanning the annihilator in the scalar family |
-| $\det L^{\bullet}_{\tilde Q}=Q_0^2c(\tilde Q)$ | the determinant that detects the zero divisors |
+| $\det L^{\bullet}_{\tilde Q}=Q_0^2C(\tilde Q)$ | the determinant that detects the zero divisors |
 
 ## Further Reading
 
@@ -131,4 +131,4 @@ A zero divisor of the block is a non-zero element annihilated by a non-zero elem
 - *The Zero Divisors and the Twelve Structures*, for the four coinciding sets, against which the block's set is compared.
 - *Norm and Invertibility in the Symmetric Plain Algebra*, for the invertible elements and the distinction with the regular ones.
 - *Idempotents of the Symmetric Plain Algebra* and *Nilpotents of the Symmetric Plain Algebra*, for the two families named by the block.
-- *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the determinant $\det L^{\bullet}_{\tilde Q}=Q_0^2c(\tilde Q)$.
+- *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the determinant $\det L^{\bullet}_{\tilde Q}=Q_0^2C(\tilde Q)$.

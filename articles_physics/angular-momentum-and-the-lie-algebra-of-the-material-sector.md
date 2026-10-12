@@ -207,7 +207,7 @@ The invariant bilinear form is the quadratic invariant of the algebra, and it de
 element**
 
 $$
-\mathcal{C}=\sum_{i,j=1}^{3}h^{ij}E_iE_j=-\tfrac12\bigl(e_1^{2}+e_2^{2}+e_3^{2}\bigr),
+\Omega=\sum_{i,j=1}^{3}h^{ij}E_iE_j=-\tfrac12\bigl(e_1^{2}+e_2^{2}+e_3^{2}\bigr),
 \qquad
 h^{ij}=-\tfrac12\delta^{ij},
 $$
@@ -319,7 +319,7 @@ $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operat
 with Gram matrix $\operatorname{diag}(0,-2,-2,-2)$, radical the centre,
 and vector restriction of real signature $(3,3)$, negative on the real directions and positive on the
 imaginary ones; the Casimir
-$\mathcal{C}=-\tfrac12(e_1^{2}+e_2^{2}+e_3^{2})$ acts as $\tfrac38$ on the two-dimensional module and as
+$\Omega=-\tfrac12(e_1^{2}+e_2^{2}+e_3^{2})$ acts as $\tfrac38$ on the two-dimensional module and as
 the identity on the adjoint; and the angular-momentum operators
 $J_k=\operatorname{ad}^{\wedge}_{ie_k}$ satisfy $[J_i,J_j]=i\varepsilon_{ijk}J_k$ on the algebra.
 
@@ -353,7 +353,7 @@ with radical the centre and vector restriction of real signature
 $(3,3)$: negative on the three real vector directions and positive on the three imaginary ones. **The
 sign of the form is the compact–non-compact dichotomy**: the real vector triple is the compact
 $\mathfrak{su}(2)$ of the rotations and the imaginary triple the non-compact directions of the boosts. The
-Casimir $\mathcal{C}=-\tfrac12(e_1^{2}+e_2^{2}+e_3^{2})$ is the quadratic invariant and acts as
+Casimir $\Omega=-\tfrac12(e_1^{2}+e_2^{2}+e_3^{2})$ is the quadratic invariant and acts as
 $\tfrac38$ on the two-dimensional module and as the identity on the adjoint. The generators of the
 transformations are the elements of the bracket, the six real directions of the complex vector subspace
 being the six Lorentz generators; the angular-momentum operators
@@ -372,7 +372,7 @@ the angular momentum of a material field.
 | $\operatorname{ad}_{\tilde P\wedge\tilde Q}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q}]$ | The adjoint is a Lie homomorphism |
 | $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=-2\,\mathbf{P}\cdot\mathbf{Q}$ | The Killing form; Gram $\operatorname{diag}(0,-2,-2,-2)$ |
 | $(3,3)$ on $\mathrm{Vect}(\mathbb{B})$ | Negative on real vector directions, positive on imaginary |
-| $\mathcal{C}=-\tfrac12(e_1^{2}+e_2^{2}+e_3^{2})$ | Casimir element; acts $\tfrac38$ on the $2$-dim module, $1$ on the adjoint |
+| $\Omega=-\tfrac12(e_1^{2}+e_2^{2}+e_3^{2})$ | Casimir element; acts $\tfrac38$ on the $2$-dim module, $1$ on the adjoint |
 | $T_a=\tfrac12e_a$, $T_0=\tfrac12ie_0$ | Generators of $\mathfrak{su}(2)$ and $\mathfrak{u}(1)$ in $\mathbb{M}_-\cong\mathfrak{u}(2)$ |
 | $J_k=\operatorname{ad}^{\wedge}_{ie_k}$, $[J_i,J_j]=i\varepsilon_{ijk}J_k$ | Angular-momentum operators of the frame |
 | $(p,q)$ | Signature written as (number of $+$, number of $-$) |

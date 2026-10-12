@@ -19,7 +19,7 @@ $$
 
 There is no nilpotent of index three, and the index depends on the bracketing: read on the right the powers of the same witness never vanish. The two classes are cut by one quadratic criterion, the complex bilinear square of the vector part, and the whole reading comes from a recurrence of the left-nested powers which is linear and is computed in the third section.
 
-Three readings are used throughout. The definitions of the nilpotent, of the index and of the square-zero element are *Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent*, and the bracketing of the powers is the same article, §*Powers, the Square and the Roots*. The diagonal and its cone are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the square-zero elements of the four general products are *The Square-Zero Elements of the Twelve Structures*; the element-theoretic neighbours are *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra* and *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*; and the law behind the recurrence is the criterion of *The Specificities of the Antisymmetric Quaternionic Sesqualgebra*.
+Three readings are used throughout. The definitions of the nilpotent, of the index and of the square-zero element are *Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent*, and the bracketing of the powers is the same article, §*Powers, the Square and the Roots*. The diagonal and its cone are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the square-zero elements of the four general products are *The Zero Divisors and the Twelve Structures*; the element-theoretic neighbours are *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra* and *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*; and the law behind the recurrence is the criterion of *The Specificities of the Antisymmetric Quaternionic Sesqualgebra*.
 
 **Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$ and $e_k^2=-e_0$, a generic element $\tilde X=X_0e_0+\mathbf{X}$ with $\mathbf{X}=\sum_kX_ke_k$. The **complex bilinear dot product** of two vector parts is
 
@@ -145,7 +145,7 @@ $$
 \tilde X\star\tilde X=0 \qquad\Longleftrightarrow\qquad X_0=0,\quad (\mathbf{X},\mathbf{X})=0 ,
 $$
 
-a set of real dimension four whose structure is *The Square-Zero Elements of the Twelve Structures*. Compared with the block the two sets are complementary rather than nested: the square-zero elements of the general products are the elements of index four of the block, and the square-zero elements of the block are the elements whose vector part is a complex multiple of a real vector, which for the general products are not square-zero except at the origin. The two quadratic criteria, the bilinear square and the complex-proportionality of the vector part to its conjugate, cut the two sets, and their comparison is one of the sharpest separations of the block from the row it splits.
+a set of real dimension four whose structure is *The Zero Divisors and the Twelve Structures*. Compared with the block the two sets are complementary rather than nested: the square-zero elements of the general products are the elements of index four of the block, and the square-zero elements of the block are the elements whose vector part is a complex multiple of a real vector, which for the general products are not square-zero except at the origin. The two quadratic criteria, the bilinear square and the complex-proportionality of the vector part to its conjugate, cut the two sets, and their comparison is one of the sharpest separations of the block from the row it splits.
 
 ## The Matrix Model
 
@@ -174,7 +174,7 @@ The nilpotents of the block form two classes and no third. The square-zero eleme
 
 - *Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent* and §*Powers, the Square and the Roots*, for the nilpotent, the index, the square-zero element and the bracketing of the powers.
 - *Nilpotents of the General Plain Algebra*, for the model block, where the index is two or nothing.
-- *The Square-Zero Elements of the Twelve Structures*, for the square-zero elements of the four general products and their comparison.
+- *The Zero Divisors and the Twelve Structures*, for the square-zero elements of the four general products and their comparison.
 - *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the diagonal, its criterion and its cone.
 - *Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra*, for the zero-divisor set that contains the two nilpotent classes.
 - *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*, for the idempotent set which meets the nilpotents only at the origin.

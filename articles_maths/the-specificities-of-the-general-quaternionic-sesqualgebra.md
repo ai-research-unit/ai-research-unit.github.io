@@ -26,7 +26,7 @@ equivalently the factorization $\tilde P\star\tilde Q = (\overline{\tilde Q}\til
 
 **Placement.** The article is the fifth entry, and the synthesis, of the *Specific Theory* section of the general quaternionic sesqualgebra, after *The Two One-Sided Actions and the Absence of a Unit*, *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*, *The Associator of the General Quaternionic Sesquilinear Product* and *The Ternary Product and the Failure of the Jordan Triple Identity*. Its twins are *The Specificities of the General Plain Algebra*, which states the left-alternativity criterion of the plain product, and *The Specificities of the General Quaternionic Algebra*, which states the isotope criterion of the natural product; the three criteria are the three ways in which one of the four general products can be singled out.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. Juxtaposition is the **plain** product, $\star$ is the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, the natural conjugation ${}^{\natural}$ lying in the first slot and the star ${}^{*}$ in the second, and the subscript of an operator is the element it is indexed by. The natural conjugation is ${}^{\natural}$, $\tilde Q^{\natural} = Q_0-\mathbf Q$; the star is ${}^{*}$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$; and $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$ is the Hermitian conjugation; all three fix $e_0$. The **central square** is $c(\tilde Q) = \sum_\mu Q_\mu^2$ with $c(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$; the **sandwich** of the pair $(A,B)$ is the map $\tilde X\mapsto A\tilde X B$ of the plain product.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. Juxtaposition is the **plain** product, $\star$ is the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, the natural conjugation ${}^{\natural}$ lying in the first slot and the star ${}^{*}$ in the second, and the subscript of an operator is the element it is indexed by. The natural conjugation is ${}^{\natural}$, $\tilde Q^{\natural} = Q_0-\mathbf Q$; the star is ${}^{*}$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$; and $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$ is the Hermitian conjugation; all three fix $e_0$. The **central square** is $C(\tilde Q) = \sum_\mu Q_\mu^2$ with $C(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$; the **sandwich** of the pair $(A,B)$ is the map $\tilde X\mapsto A\tilde X B$ of the plain product.
 
 ## The Law
 
@@ -115,7 +115,7 @@ $$
 \tilde\Pi = -\tfrac12 e_0 + \mu , \qquad \mu = \mu_1e_1+\mu_2e_2+\mu_3e_3 , \qquad \sum_{k=1}^{3}\mu_k^2 = \tfrac34 ,
 $$
 
-and every one of them has central square $c(\tilde\Pi) = 1$; so the nontrivial idempotents of the block are **units of the plain algebra**, and the block has no unit in which they could be units of the block.
+and every one of them has central square $C(\tilde\Pi) = 1$; so the nontrivial idempotents of the block are **units of the plain algebra**, and the block has no unit in which they could be units of the block.
 
 **Proof.** The parametrization is *Idempotents of the General Quaternionic Sesqualgebra*, where the idempotent equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ is reduced to the equation on $\mu$; the central square of $-\tfrac12e_0+\mu$ is $\tfrac14+\sum_k\mu_k^2 = \tfrac14+\tfrac34 = 1$. The block has no unit by *The Two One-Sided Actions and the Absence of a Unit*, so the invertibility of the idempotents is the invertibility of the plain algebra.
 
@@ -166,7 +166,7 @@ The consequences are the specificities of the block. The product is linear in th
 | $L_{\tilde P}(\tilde X) = \tilde P^{\natural}\tilde X^{*}$ | the conjugate-linear left multiplication |
 | $R_{\tilde P}(\tilde X) = \tilde X^{\natural}\tilde P^{*}$ | the linear right multiplication |
 | $L_{\tilde P}L_{\tilde R}(\tilde X) = \tilde P^{\natural}\tilde X\overline{\tilde R}$ | the linear sandwich of the composite |
-| $c(\tilde Q) = \sum_\mu Q_\mu^2$ | the central square, the norm of the plain algebra |
+| $C(\tilde Q) = \sum_\mu Q_\mu^2$ | the central square, the norm of the plain algebra |
 | $\tilde\Pi = -\tfrac12e_0+\mu$, $\sum_k\mu_k^2 = \tfrac34$ | the nontrivial idempotents, units of the plain algebra |
 | $\{P,Q,R\} = \overline{Q}PR$ | the ternary product |
 

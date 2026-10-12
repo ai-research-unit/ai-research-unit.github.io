@@ -147,6 +147,16 @@ $$
 
 The dagger is the **general adjoint**: it acts on an operator and not on an element, and it is the same in every system. It is the general mark under which the several adjoints of the corpus fall — one for each form, one for each sandwich — and where the adjoint in view is obviously the one of the positive definite form the text writes the two marks together, the dagger first and the star second, so that the coincidence is apparent: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ and $(\Theta_{\tilde{Q}})^{\dagger}=(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{*}}$.
 
+### The form convention and the norm convention
+
+The corpus writes a **generic form** and a **generic norm**, the norm being the form read at the two equal arguments:
+
+$$
+\mathrm{Form}(\tilde P,\tilde Q) , \qquad \mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q) .
+$$
+
+The convention is one of **notation, not of substance**: the generic form and the generic norm are the form and the norm of the statement at hand, and the four forms and the four norms of the algebra are the instances of the pair.
+
 ### The root convention
 
 The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The idempotent convention*) and the nilpotent $\tilde\nu$ (§*The nilpotent convention*): the **xi**, in the two cases.
@@ -205,7 +215,7 @@ $$
 \tilde\nu^2 = 0 .
 $$
 
-**The square is read in a named product**, the algebra product unless the statement names another: the corpus writes nilpotents in the four general products of *The Square-Zero Elements of the Twelve Structures* as well, and the class is relative to the product — an element square-zero in the plain product need not be square-zero in the general plain sesquilinear one, and in the plain antisymmetric block every central element is square-zero, the unit among them. The star preserves the class, $(\tilde\nu^{*})^2 = (\tilde\nu^2)^{*} = 0$, so the star pairs the nilpotents two by two and fixes none of them. **No nilpotent is a Hermitian idempotent**, a Hermitian nilpotent being zero, so no nilpotent is a pure state; it is nevertheless the partner of the idempotent in a minimal left ideal — for the standard pair $\mathbb{B}\tilde\Upsilon_2 = \mathbb{B}\tilde\Pi_1$ — and its products with its star are Hermitian idempotents of that ideal.
+**The square is read in a named product**, the algebra product unless the statement names another: the corpus writes nilpotents in the four general products of *The Zero Divisors and the Twelve Structures* as well, and the class is relative to the product — an element square-zero in the plain product need not be square-zero in the general plain sesquilinear one, and in the plain antisymmetric block every central element is square-zero, the unit among them. The star preserves the class, $(\tilde\nu^{*})^2 = (\tilde\nu^2)^{*} = 0$, so the star pairs the nilpotents two by two and fixes none of them. **No nilpotent is a Hermitian idempotent**, a Hermitian nilpotent being zero, so no nilpotent is a pure state; it is nevertheless the partner of the idempotent in a minimal left ideal — for the standard pair $\mathbb{B}\tilde\Upsilon_2 = \mathbb{B}\tilde\Pi_1$ — and its products with its star are Hermitian idempotents of that ideal.
 
 **The subscript of a nilpotent is always numeric**, as for the idempotents: a pair is $\tilde\nu_1, \tilde\nu_2$, a second pair in the same statement takes the next numbers, and a sign is never written as a subscript.
 
@@ -278,6 +288,7 @@ The working conventions are the corpus's own. Every article is registered in exa
 | $\tilde\nu$ | a nilpotent of the quaternion or split-quaternion layer |
 | $\tilde\Upsilon$ | a nilpotent of the biquaternion or split-biquaternion layer |
 | $\tilde P$ | the generic element of the algebra, in a statement that holds for every element |
+| $\mathrm{Form}(\tilde P,\tilde Q)$, $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$ | the generic form and the generic norm (§*The form convention and the norm convention*) |
 | `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | the four groups of a category, in that order |
 | `- Applications` | the group that closes a category with the concrete instances of its structure |
 | `+` | a planned article, registered in the menu and not yet written |

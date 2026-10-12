@@ -101,8 +101,8 @@ $$
 $$
 its trace is $3P_0$, its determinant is $0$, and its characteristic polynomial is
 $$
-\chi_{L_{\tilde P}}(t)=t\,(t-P_0)\bigl(t^{2}-2P_0t+c(\tilde P)\bigr),\qquad
-c(\tilde P)=\sum_{\mu=0}^{3}P_\mu^{2} .
+\chi_{L_{\tilde P}}(t)=t\,(t-P_0)\bigl(t^{2}-2P_0t+C(\tilde P)\bigr),\qquad
+C(\tilde P)=\sum_{\mu=0}^{3}P_\mu^{2} .
 $$
 The operator is never invertible, and it vanishes exactly at $\tilde P=0$.
 
@@ -112,7 +112,7 @@ first column is $-\mathbf P$ because $e_0$ has zero scalar part and the mixed te
 $-X_0\mathbf P$ survives, and the remaining three columns are $P_0e_k-\mathbf P\times e_k$. The
 lower three-by-three block is $P_0\mathrm{I}_3-[\mathbf P]_\times$, whose eigenvalues are
 $P_0$, $P_0+i s$ and $P_0-i s$ with $s^{2}=(\mathbf P,\mathbf P)$, so its characteristic
-polynomial is $t^{2}-2P_0t+P_0^{2}+(\mathbf P,\mathbf P)=t^{2}-2P_0t+c(\tilde P)$; the extra
+polynomial is $t^{2}-2P_0t+P_0^{2}+(\mathbf P,\mathbf P)=t^{2}-2P_0t+C(\tilde P)$; the extra
 eigenvalue $0$ is the first column, and the trace $3P_0$ is the sum
 $0+P_0+(P_0+is)+(P_0-is)$. The determinant is the constant term of the polynomial, which is
 zero, and $L_{\tilde P}=0$ forces $\mathbf P=0$ from the first column and then $P_0=0$ from the
@@ -121,28 +121,28 @@ remaining three.
 **Corollary (the rank and the annihilator).** The rank of $L_{\tilde P}$ and the dimension of
 the annihilator of $\tilde P$ are
 
-| $\tilde P$ | $c(\tilde P)$ | $\operatorname{rank}L_{\tilde P}$ | $\dim\ker L_{\tilde P}$ |
+| $\tilde P$ | $C(\tilde P)$ | $\operatorname{rank}L_{\tilde P}$ | $\dim\ker L_{\tilde P}$ |
 |---|---|---|---|
 | $0$ | $0$ | $0$ | $4$ |
-| $\tilde P\neq0$ with $c(\tilde P)\neq0$ | $\neq0$ | $3$ | $1$ |
-| $\tilde P\neq0$ with $c(\tilde P)=0$ | $0$ | $2$ | $2$ |
+| $\tilde P\neq0$ with $C(\tilde P)\neq0$ | $\neq0$ | $3$ | $1$ |
+| $\tilde P\neq0$ with $C(\tilde P)=0$ | $0$ | $2$ | $2$ |
 
 *Proof.* Write $N=P_0\mathrm{I}_3-[\mathbf P]_\times$ for the lower block, so that
-$N\mathbf P=P_0\mathbf P$. If $c(\tilde P)\neq0$, then $N$ has the three eigenvalues
+$N\mathbf P=P_0\mathbf P$. If $C(\tilde P)\neq0$, then $N$ has the three eigenvalues
 $P_0,P_0\pm is$ with $s^{2}=(\mathbf P,\mathbf P)$ and no zero among them when $P_0\neq0$, so
-$N$ has rank three and the operator has rank three; when $P_0=0$ and $c(\tilde P)\neq0$ the
-eigenvalues are $0,\pm is$ with $s^{2}=c(\tilde P)\neq0$, so $N$ has rank two, its image is the
+$N$ has rank three and the operator has rank three; when $P_0=0$ and $C(\tilde P)\neq0$ the
+eigenvalues are $0,\pm is$ with $s^{2}=C(\tilde P)\neq0$, so $N$ has rank two, its image is the
 plane orthogonal to $\mathbf P$, and the first column $-\mathbf P$ is not in that plane because
-$(\mathbf P,\mathbf P)=c(\tilde P)\neq0$; the first column adds one to the rank, which is again
-three. If $c(\tilde P)=0$ and $\tilde P\neq0$, then $N$ has rank two — its eigenvalues are
+$(\mathbf P,\mathbf P)=C(\tilde P)\neq0$; the first column adds one to the rank, which is again
+three. If $C(\tilde P)=0$ and $\tilde P\neq0$, then $N$ has rank two — its eigenvalues are
 $P_0,0,2P_0$ when $P_0\neq0$, and $0$ with multiplicity three when $P_0=0$ — and the first
 column adds nothing: when $P_0\neq0$ one has $N\mathbf P=P_0\mathbf P$, so $\mathbf P$ is a
-column of $N$, and when $P_0=0$ one has $(\mathbf P,\mathbf P)=c(\tilde P)=0$, so the isotropic
+column of $N$, and when $P_0=0$ one has $(\mathbf P,\mathbf P)=C(\tilde P)=0$, so the isotropic
 vector $\mathbf P$ lies in the image $\{\mathbf P\times\mathbf v\}$ of $[\mathbf P]_\times$. The
 rank is two in both cases. Finally $\tilde P=0$ gives the zero operator. The annihilator has
 dimension $4-\operatorname{rank}L_{\tilde P}$.
 
-The drop of the rank is read off the **central square** $c(\tilde P)=\sum_\mu P_\mu^{2}$, which
+The drop of the rank is read off the **central square** $C(\tilde P)=\sum_\mu P_\mu^{2}$, which
 is also the criterion of the zero divisor of the parent quaternionic product: the operator of
 the block is of rank two, and the annihilator of the element two-dimensional, exactly on the
 zero-divisor cone of the parent. For every element the line $\mathbb{C}\tilde P$ lies in the
@@ -161,13 +161,13 @@ block the classification collapses.
 is met on the whole punctured space and not on the central-square cone alone; both the pure
 elements and the non-pure elements are zero divisors, and the division into two families is not
 available. The only subclass the rank computation separates is the subclass of the isotropic
-elements, the cone $c(\tilde P)=0$, and it separates the shape of the annihilator and not the
+elements, the cone $C(\tilde P)=0$, and it separates the shape of the annihilator and not the
 zero-divisor class.
 
 *Proof.* The criterion is the theorem of §*The Criterion*, which holds for every nonzero
 element and mentions no scalar part; the pure elements $\tilde P=\mathbf P$ and the non-pure
 elements $\tilde P=P_0e_0+\mathbf P$ with $P_0\neq0$ satisfy it in the same way. The
-central-square cone $c(\tilde P)=0$ is the locus of the rank drop of
+central-square cone $C(\tilde P)=0$ is the locus of the rank drop of
 §*The Annihilator and the Rank*, and it is neither empty nor the whole space, so it separates
 the annihilators without separating the zero-divisor class.
 
@@ -182,7 +182,7 @@ classification it used to carry is gone.
 The four general products give four definitions of the zero divisor, and for the biquaternion
 space the four definitions select one and the same set,
 $$
-\{\tilde Q\neq0:\ c(\tilde Q)=0\},
+\{\tilde Q\neq0:\ C(\tilde Q)=0\},
 $$
 a theorem about the algebra and not a property of the definitions (*The Zero Divisors and the Twelve Structures*, §*The Four Zero-Divisor Sets Coincide*; *Definitions for the Study of
 the 12 Algebraic Structures*, §9). The set of the block differs from it, and the difference is
@@ -190,7 +190,7 @@ the content of the comparison.
 
 **Proposition (the comparison).** The zero-divisor set of the block is the punctured space
 $\mathbb{B}\setminus\{0\}$, and the zero-divisor set of each of the four general products is the
-proper subset $\{\tilde Q\neq0:c(\tilde Q)=0\}$. The block's set strictly contains every one of
+proper subset $\{\tilde Q\neq0:C(\tilde Q)=0\}$. The block's set strictly contains every one of
 them, the witness being $e_0$, and it is as large as a zero-divisor set can be. Among the twelve
 the punctured space occurs exactly for the six structures in which every nonzero element has a
 nonzero annihilating partner: the block, the antisymmetric plain algebra, the two antisymmetric
@@ -198,7 +198,7 @@ sesquilinear halves, whose partner is the Hermitian conjugate of the element, an
 symmetric halves whose value is the central reading of a non-degenerate form.
 
 *Proof.* The block's set is the theorem of §*The Criterion*. The set of the four general
-products is the cited theorem, and $c$ vanishes at $0$ and on a cone that is not the whole
+products is the cited theorem, and $C$ vanishes at $0$ and on a cone that is not the whole
 space, so the inclusion is strict: the element $e_0$ has $c(e_0)=1$ and is a zero divisor of the
 block, with partner itself, while it is not a zero divisor of the general products. For the six,
 the partners are displayed. An element of the block or of $\mathrm{APA}$ is annihilated by
@@ -254,13 +254,13 @@ For the antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\
 is a two-sided zero divisor, with itself as the annihilating partner, because the block is
 alternating and the square of each element vanishes. The zero-divisor set is the punctured space
 $\mathbb{B}\setminus\{0\}$, and it strictly contains the common zero-divisor set
-$\{c(\tilde Q)=0\}\setminus\{0\}$ of the four general products; it is the largest a zero-divisor
+$\{C(\tilde Q)=0\}\setminus\{0\}$ of the four general products; it is the largest a zero-divisor
 set can be, and among the twelve it occurs for the six structures whose product pairs every
 nonzero element with a nonzero annihilating partner. The
 annihilators of the two sides coincide and are the kernel of the left multiplication operator,
 whose matrix is displayed, whose trace is $3P_0$ and whose characteristic polynomial is
-$t(t-P_0)(t^{2}-2P_0t+c)$; its rank drops from three to two exactly on the central-square cone
-$c(\tilde Q)=0$, the zero-divisor cone of the parent product, and the annihilator correspondingly
+$t(t-P_0)(t^{2}-2P_0t+C)$; its rank drops from three to two exactly on the central-square cone
+$C(\tilde Q)=0$, the zero-divisor cone of the parent product, and the annihilator correspondingly
 grows from the line $\mathbb{C}\tilde Q$ to a plane. The classification of the zero divisors into
 two families, which the general products carry, does not exist for the block, the criterion being
 met by the pure and the non-pure elements alike, and the only subclass the annihilator separates
@@ -273,8 +273,8 @@ is the isotropic one.
 | $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $A_\diamond(\tilde P),B_\diamond(\tilde P)$ | the left and the right annihilator of $\tilde P$ in the block, equal because the block is alternating |
 | $L_{\tilde P}$ | the left multiplication operator, $L_{\tilde P}\tilde X=\tilde P\diamond\tilde X$ |
-| $c(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the zero-divisor criterion of the parent product and the locus of the rank drop |
-| $\chi_{L_{\tilde P}}(t)=t(t-P_0)(t^{2}-2P_0t+c)$ | the characteristic polynomial of the operator |
+| $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the zero-divisor criterion of the parent product and the locus of the rank drop |
+| $\chi_{L_{\tilde P}}(t)=t(t-P_0)(t^{2}-2P_0t+C)$ | the characteristic polynomial of the operator |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, on which the block is the negative of the cross product |
 | $e_0$ | a zero divisor of the block, with partner itself, and not a zero divisor of the four general products |
 

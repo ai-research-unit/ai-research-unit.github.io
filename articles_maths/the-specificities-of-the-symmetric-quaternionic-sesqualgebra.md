@@ -139,7 +139,7 @@ Quaternionic Sesqualgebra*, and it is the operator form of the law.
 
 **The element theory is governed by the law.** The two clauses fix the scalar part and the exchange; the
 class of an element of the block — regular, pure zero divisor, non-pure zero divisor — is then decided by
-the scalar coordinate $Q_0$ and the central square $c(\tilde Q)$, and not by the form $K$, as in *Zero
+the scalar coordinate $Q_0$ and the central square $C(\tilde Q)$, and not by the form $K$, as in *Zero
 Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
 **The boundary.** A product with the scalar part $K$ but without the symmetry, such as $\mathrm{GQS}$, has a

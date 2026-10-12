@@ -374,11 +374,11 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 ### Synthesis of the Four General Products
 
 - [The Twelve Structures and Their Two Slots: the Two Algebras and the Two Sesqualgebras](../articles_maths/the-twelve-structures-and-their-two-slots-the-two-algebras-and-the-two-sesqualgebras.html)
-- [The Annihilating Elements of the Twelve Structures](../articles_maths/the-annihilating-elements-of-the-twelve-structures.html)
+- [The Zero Divisors and the Twelve Structures](../articles_maths/the-zero-divisors-and-the-twelve-structures.html)
 - [The Zero Divisors and the Twelve Structures](../articles_maths/the-zero-divisors-and-the-twelve-structures.html)
 - [The Idempotents of the Twelve Structures](../articles_maths/the-idempotents-of-the-twelve-structures.html)
 - [The Square Roots of a Central Value in the Twelve Structures](../articles_maths/the-square-roots-of-a-central-value-in-the-twelve-structures.html)
-- [The Square-Zero Elements of the Twelve Structures](../articles_maths/the-square-zero-elements-of-the-twelve-structures.html)
+- [The Zero Divisors and the Twelve Structures](../articles_maths/the-zero-divisors-and-the-twelve-structures.html)
 - [The Four Pairings of the Biquaternion Algebra](../articles_maths/the-four-pairings-of-the-biquaternion-algebra.html)
 - [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](../articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html)
 - [The General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared](../articles_maths/the-general-plain-algebra-and-the-general-plain-sesqualgebra-of-biquaternions-compared.html)

@@ -12,7 +12,7 @@ of *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The
 
 The point of the article is that the three classes are **disjoint readings of one family**. The root set of $\lambda$ is empty unless $\lambda$ is real, and for real $\lambda$ it is the family $\tilde\Xi = c(\hat\mu+it)$, one complex scalar, one real direction and one real slope $t$, tied by the single equation $(t^2-1)\lvert c\rvert^2 = \lambda$, together with the central circle of the pure scalar roots when $\lambda>0$. The value $-1$ selects the slopes with $t^2<1$, the value $+1$ the slopes with $t^2>1$ and the central circle, and the value $0$ the two slopes $t = \pm1$. The comparison with the plain algebra, where the roots of $+1$ are the idempotent parameters $\tfrac12(e_0+\xi)$, is drawn at §*The Three Values and the Plain Product*.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. An element is $\tilde Q = Q_0e_0+\mathbf Q$. The natural conjugation is $\tilde Q^{\natural} = Q_0-\mathbf Q$, the star is $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, and $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The **central square** is $c(\tilde Q) = \sum_\mu Q_\mu^2$, with $c(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$. The **scalar part** and the **vector part** of $\tilde Q$ are $Q_0$ and $\mathbf Q$. The product is $\tilde\Xi\star\tilde Q = \tilde\Xi^{\natural}\tilde Q^{*}$, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second; juxtaposition is the general plain bilinear product. A **root of $\lambda$** is a nonzero $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \lambda e_0$.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. An element is $\tilde Q = Q_0e_0+\mathbf Q$. The natural conjugation is $\tilde Q^{\natural} = Q_0-\mathbf Q$, the star is $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, and $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The **central square** is $C(\tilde Q) = \sum_\mu Q_\mu^2$, with $C(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$. The **scalar part** and the **vector part** of $\tilde Q$ are $Q_0$ and $\mathbf Q$. The product is $\tilde\Xi\star\tilde Q = \tilde\Xi^{\natural}\tilde Q^{*}$, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second; juxtaposition is the general plain bilinear product. A **root of $\lambda$** is a nonzero $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \lambda e_0$.
 
 ## The Reduction of the Root Equation
 
@@ -81,14 +81,14 @@ a real four-dimensional family beside the circle; the elements $e_0$ and $i$ are
 **Theorem (the interleaving).** Let $\tilde\Xi$ be a root of the real value $\lambda$. Then
 
 $$
-c(\tilde\Xi) = c^2\,(1-t^2)
+C(\tilde\Xi) = c^2\,(1-t^2)
 $$
 
-in the parametrization $\tilde\Xi = c(\hat\mu+it)$, and for the scalar roots $c(ae_0) = a^2$. Consequently a root of $-1$ or of $+1$ is a **unit of the plain algebra**, $c(\tilde\Xi)\neq0$, while a root of $0$ is a zero divisor, $c(\tilde\Xi) = 0$.
+in the parametrization $\tilde\Xi = c(\hat\mu+it)$, and for the scalar roots $c(ae_0) = a^2$. Consequently a root of $-1$ or of $+1$ is a **unit of the plain algebra**, $C(\tilde\Xi)\neq0$, while a root of $0$ is a zero divisor, $C(\tilde\Xi) = 0$.
 
-**Proof.** The central square of $c(\hat\mu+it)$ is $c^2$ times the sum of the squares of the four coordinates of $\hat\mu+it$, which is $\sum_k\hat\mu_k^2 + (it)^2 = 1-t^2$; for the scalar root it is $a^2$. The criterion of invertibility of the plain algebra is $c\neq0$ (*Norm and Invertibility in the General Quaternionic Sesqualgebra*), so a root of $-1$ or of $+1$ is a unit of the plain algebra and a root of $0$ is a zero divisor. On the family the value $\lambda = (t^2-1)\lvert c\rvert^2$ has the sign of the real factor $t^2-1$, negative on $\lvert t\rvert<1$ and positive on $\lvert t\rvert>1$, and it vanishes at $t = \pm1$; the scalar circle carries the positive values.
+**Proof.** The central square of $c(\hat\mu+it)$ is $c^2$ times the sum of the squares of the four coordinates of $\hat\mu+it$, which is $\sum_k\hat\mu_k^2 + (it)^2 = 1-t^2$; for the scalar root it is $a^2$. The criterion of invertibility of the plain algebra is $C\neq0$ (*Norm and Invertibility in the General Quaternionic Sesqualgebra*), so a root of $-1$ or of $+1$ is a unit of the plain algebra and a root of $0$ is a zero divisor. On the family the value $\lambda = (t^2-1)\lvert c\rvert^2$ has the sign of the real factor $t^2-1$, negative on $\lvert t\rvert<1$ and positive on $\lvert t\rvert>1$, and it vanishes at $t = \pm1$; the scalar circle carries the positive values.
 
-So the three classes are read from one scalar: the roots of $-1$ and of $+1$ are units of the plain algebra, and the roots of $0$ are the zero divisors, in the sharp form of the interleaving of *The Square-Zero Elements of the Twelve Structures*.
+So the three classes are read from one scalar: the roots of $-1$ and of $+1$ are units of the plain algebra, and the roots of $0$ are the zero divisors, in the sharp form of the interleaving of *The Zero Divisors and the Twelve Structures*.
 
 ## The Three Values and the Plain Product
 
@@ -98,7 +98,7 @@ The plain algebra reads the three values as the imaginary units, the involutions
 
 A root of the central value $\lambda$ in the general quaternionic sesquilinear product $\tilde\Xi\star\tilde Q = \tilde\Xi^{\natural}\tilde Q^{*}$ is a nonzero element with $\tilde\Xi\star\tilde\Xi = \lambda e_0$, and the square reduces to $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$. The scalar part of the square is the Krein form $\sum_\mu\varepsilon_\mu\lvert \Xi_\mu\rvert^2$ with $\varepsilon = (1,-1,-1,-1)$, so no root exists unless $\lambda$ is real.
 
-For real $\lambda$ the roots are the family $\tilde\Xi = c(\hat\mu+it)$ with $(t^2-1)\lvert c\rvert^2 = \lambda$, of real dimension four, together with the central circle $\lvert a\rvert^2 = \lambda$ when $\lambda>0$. The value $-1$ takes the slopes $\lvert t\rvert<1$, with $\lvert c\rvert^2 = 1/(1-t^2)$, and contains $e_1,e_2,e_3$; the value $0$ takes the slopes $t = \pm1$ and is the square-zero family $c(\hat\mu\pm i)$; the value $+1$ takes the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^2 = 1/(t^2-1)$, beside the central circle, and contains $e_0$ and $i$. The central square of a root is $c(\tilde\Xi) = c^2(1-t^2)$, so the roots of $-1$ and of $+1$ are units of the plain algebra and the roots of $0$ are zero divisors, and the three classes are not the plain classes of the same name.
+For real $\lambda$ the roots are the family $\tilde\Xi = c(\hat\mu+it)$ with $(t^2-1)\lvert c\rvert^2 = \lambda$, of real dimension four, together with the central circle $\lvert a\rvert^2 = \lambda$ when $\lambda>0$. The value $-1$ takes the slopes $\lvert t\rvert<1$, with $\lvert c\rvert^2 = 1/(1-t^2)$, and contains $e_1,e_2,e_3$; the value $0$ takes the slopes $t = \pm1$ and is the square-zero family $c(\hat\mu\pm i)$; the value $+1$ takes the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^2 = 1/(t^2-1)$, beside the central circle, and contains $e_0$ and $i$. The central square of a root is $C(\tilde\Xi) = c^2(1-t^2)$, so the roots of $-1$ and of $+1$ are units of the plain algebra and the roots of $0$ are zero divisors, and the three classes are not the plain classes of the same name.
 
 ## Summary of Notation
 
@@ -110,7 +110,7 @@ For real $\lambda$ the roots are the family $\tilde\Xi = c(\hat\mu+it)$ with $(t
 | $\sum_\mu\varepsilon_\mu\lvert \Xi_\mu\rvert^2$, $\varepsilon = (1,-1,-1,-1)$ | the Krein form, the scalar part of $\overline{\tilde\Xi}\tilde\Xi$ |
 | $c(\hat\mu+it)$, $(t^2-1)\lvert c\rvert^2 = \lambda$ | the root family, $\lvert\hat\mu\rvert = 1$ |
 | central circle, $\lvert a\rvert^2 = \lambda$ | the scalar roots, present only for $\lambda>0$ |
-| $c(\tilde\Xi) = c^2(1-t^2)$ | the central square of a root |
+| $C(\tilde\Xi) = c^2(1-t^2)$ | the central square of a root |
 
 ## Further Reading
 

@@ -125,7 +125,7 @@ only for $\mathbf p=0$.
 $h^{ij}=-\tfrac12\delta^{ij}$. The **Casimir element** of the block is
 
 $$
-C=\sum_{i,j}h^{ij}e_ie_j=-\tfrac12\bigl(e_1^2+e_2^2+e_3^2\bigr),
+\Omega=\sum_{i,j}h^{ij}e_ie_j=-\tfrac12\bigl(e_1^2+e_2^2+e_3^2\bigr),
 $$
 
 an element of the universal enveloping algebra $\mathrm{U}(\mathfrak{g})$.
@@ -137,8 +137,8 @@ module of $\mathfrak{su}(2)$, and as $0$ on the centre.
 *Proof.* On the derived algebra the adjoint is $\mathbf p\mapsto C_{\mathbf p}$, and
 $C_{\mathbf p}^2=\mathbf p\mathbf p^{\mathsf T}-|\mathbf p|^2\mathrm{I}_3$ gives
 $\sum_k C_{e_k}^2=-2\mathrm{I}_3$; hence
-$C$ acts as $-\tfrac12\sum_k C_{e_k}^2=\mathrm{I}_3$. The two-dimensional module sends $e_k$ to $-\tfrac{i}{2}\sigma_k$,
-and $C$ acts as $-\tfrac12\sum_k(-\tfrac{i}{2}\sigma_k)^2=\tfrac18\sum_k\sigma_k^2=\tfrac38\mathrm{I}_2$ because
+$\Omega$ acts as $-\tfrac12\sum_k C_{e_k}^2=\mathrm{I}_3$. The two-dimensional module sends $e_k$ to $-\tfrac{i}{2}\sigma_k$,
+and $\Omega$ acts as $-\tfrac12\sum_k(-\tfrac{i}{2}\sigma_k)^2=\tfrac18\sum_k\sigma_k^2=\tfrac38\mathrm{I}_2$ because
 the Pauli matrices satisfy $\sigma_k^2=\mathrm{I}_2$. The centre is annihilated.
 
 **Remark (the Casimir and the two norms).** The eigenvalue $\tfrac38$ on the two-dimensional module is
@@ -164,7 +164,7 @@ semidefinite, and negative definite on the derived algebra, whose compact form i
 invariant bilinear forms is two-dimensional, spanned by the Killing form and the scalar-part form
 $p_0q_0$, and the plain form is their combination $B=\varphi+\tfrac12\kappa$, nondegenerate of
 signature $(1,3)$; there is no nonzero alternating invariant form. The Casimir element
-$C=-\tfrac12(e_1^2+e_2^2+e_3^2)$ acts as the identity on the adjoint and as $\tfrac38$ on the
+$\Omega=-\tfrac12(e_1^2+e_2^2+e_3^2)$ acts as the identity on the adjoint and as $\tfrac38$ on the
 two-dimensional module. By Cartan's criterion the algebra is not semisimple, the radical being the
 centre. Over $\mathbb{C}$ the same computation gives an indefinite form; the antisymmetric
 quaternionic block has no Killing form.
@@ -178,7 +178,7 @@ quaternionic block has no Killing form.
 | $\mathbb{R}e_0$ | the radical, the centre |
 | $\varphi(\tilde p,\tilde q)=p_0q_0$ | the scalar-part form, the second invariant form |
 | $B=\varphi+\tfrac12\kappa$ | the plain form, nondegenerate of signature $(1,3)$ |
-| $C=-\tfrac12(e_1^2+e_2^2+e_3^2)$ | the Casimir element |
+| $\Omega=-\tfrac12(e_1^2+e_2^2+e_3^2)$ | the Casimir element |
 
 ## Further Reading
 

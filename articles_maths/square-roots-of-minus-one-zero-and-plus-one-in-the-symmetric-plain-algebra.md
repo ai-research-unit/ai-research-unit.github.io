@@ -8,7 +8,7 @@ A root is a root of a product, and the equation names it. The square of the bloc
 
 A root is defined relative to a product, and the definition is stated once for a general product in *Definitions for the Study of the 12 Algebraic Structures*, §*The Root*; throughout this article the product is $\bullet$ and, unqualified, **root** means root of $\bullet$. The roots of the algebra are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; the general root problem is *Square Roots of a General Element in the Symmetric Plain Algebra*; the idempotents the roots of $+1$ index are *Idempotents of the Symmetric Plain Algebra*; and the annihilating elements among the roots are *Zero Divisors of the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$. An element is $\tilde\Xi=\Xi_0e_0+\mathbf\Xi$ with $\mathbf\Xi=\sum_k\Xi_ke_k$ and $(\mathbf\Xi,\mathbf\Xi)=\sum_k\Xi_k^2$. The product with the mark is $\tilde\Xi\bullet\tilde Q=\tfrac12(\tilde\Xi\tilde Q+\tilde Q\tilde\Xi)$; the central square is $c(\tilde\Xi)=\sum_\mu \Xi_\mu^2=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$. An element is $\tilde\Xi=\Xi_0e_0+\mathbf\Xi$ with $\mathbf\Xi=\sum_k\Xi_ke_k$ and $(\mathbf\Xi,\mathbf\Xi)=\sum_k\Xi_k^2$. The product with the mark is $\tilde\Xi\bullet\tilde Q=\tfrac12(\tilde\Xi\tilde Q+\tilde Q\tilde\Xi)$; the central square is $C(\tilde\Xi)=\sum_\mu \Xi_\mu^2=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$.
 
 ## The General Definition and the Reduction
 
@@ -59,7 +59,7 @@ whose imaginary part $\boldsymbol{\xi}'$ is non-zero, so that the family is disj
 
 *Proof.* The reduction puts the equation at $\tilde\Xi^2=-e_0$ of the algebra, whose classification is the stated one; the block's product reads it unchanged.
 
-**Remark (the block's reading).** Every root of $-1$ has non-zero central square, $c(\tilde\Xi)=1$ for the pure ones and $c(\pm ie_0)=-1$ for the trivial ones, so every root of $-1$ is **invertible** of the block. Among them, every pure root is a **zero divisor** of the block, whatever its central square, the block's pure family being the whole vector subspace; so the block has invertible roots of $-1$ that are not regular, which the algebra does not.
+**Remark (the block's reading).** Every root of $-1$ has non-zero central square, $C(\tilde\Xi)=1$ for the pure ones and $c(\pm ie_0)=-1$ for the trivial ones, so every root of $-1$ is **invertible** of the block. Among them, every pure root is a **zero divisor** of the block, whatever its central square, the block's pure family being the whole vector subspace; so the block has invertible roots of $-1$ that are not regular, which the algebra does not.
 
 ## The Roots of Zero
 

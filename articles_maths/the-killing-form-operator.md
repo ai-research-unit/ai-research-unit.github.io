@@ -5,7 +5,7 @@
 
 The Killing form $\kappa(x,y)=\operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$ is a symmetric bilinear form on a finite-dimensional Lie algebra $\mathrm{G}$, and through its nondegeneracy it decides whether $\mathrm{G}$ is semisimple. The form also **defines operators**, and this article is the operator layer of that theory: the linear map $\kappa^{\flat}:\mathrm{G}\to\mathrm{G}^*$, $x\mapsto\kappa(x,-)$, called the **Killing form operator**, the invariance identity read as the statement that the operators $\operatorname{ad}_x$ are skew with respect to the form, the semisimplicity criterion read as the invertibility of $\kappa^{\flat}$, the Casimir operator and the Laplacian that the form produces, and the embedding of $\operatorname{ad}(\mathrm{G})$ into the operators preserving $\kappa$. The form itself, its symmetry, its radical, Cartan's criteria and the Levi decomposition are the subject of *Structure of Lie Algebras* and are cited, not restated; the Casimir operator is *The Casimir Operator*, and the derivations are *Derivations of a Lie Algebra*.
 
-The base is a field $K$ of characteristic zero, as in the structure theory, and $\mathrm{G}$ is finite-dimensional over $K$. The Killing form is written $\kappa$, the operator it defines by $\kappa^{\flat}$, the adjoint operators by $\operatorname{ad}_x$, the dual by $\mathrm{G}^*$, the Casimir operator by $C$ and the Laplacian by $\Omega$. The article reasons with linear algebra over $K$ only: no length, no sign and no metric decomposition is formed from the form, whose kernel and nondegeneracy are the objects used.
+The base is a field $K$ of characteristic zero, as in the structure theory, and $\mathrm{G}$ is finite-dimensional over $K$. The Killing form is written $\kappa$, the operator it defines by $\kappa^{\flat}$, the adjoint operators by $\operatorname{ad}_x$, the dual by $\mathrm{G}^*$, the Casimir operator by $\Omega$ and the Laplacian by $\Omega$. The article reasons with linear algebra over $K$ only: no length, no sign and no metric decomposition is formed from the form, whose kernel and nondegeneracy are the objects used.
 
 ## The Operator Defined by the Killing Form
 
@@ -74,12 +74,12 @@ $$
 **Definition.** Let $\mathrm{G}$ be semisimple, let $x_1,\dots,x_m$ be a basis and let $x^1,\dots,x^m$ be the basis determined by $\kappa(x_i,x^j)=\delta_i^j$. The **Casimir operator** is
 
 $$
-C=\sum_{i=1}^{m}x_ix^i\in U(\mathrm{G}),
+\Omega=\sum_{i=1}^{m}x_ix^i\in U(\mathrm{G}),
 $$
 
 and its image in $\operatorname{End}_K(V)$ under a representation $\rho$ is the **Laplacian of the representation**, $\Omega=\sum_i\rho(x_i)\rho(x^i)$.
 
-**Theorem.** The element $C$ is independent of the choice of basis, it lies in the centre of $U(\mathrm{G})$, and the Laplacian commutes with the image of the representation; on an irreducible finite-dimensional representation the Laplacian is a scalar.
+**Theorem.** The element $\Omega$ is independent of the choice of basis, it lies in the centre of $U(\mathrm{G})$, and the Laplacian commutes with the image of the representation; on an irreducible finite-dimensional representation the Laplacian is a scalar.
 
 **Proof.** A change of basis changes the two bases by inverse matrices, whose contributions cancel in the sum; centrality and the commuting property, with the scalar statement, are established in *The Casimir Operator*.
 
@@ -96,7 +96,7 @@ $$
 in the basis $(e,h,f)$, nondegenerate; the operator $\kappa^{\flat}$ is therefore invertible, and the dual basis is $(f/4,\ h/8,\ e/4)$. The Casimir operator is
 
 $$
-C=\tfrac14 ef+\tfrac18 h^2+\tfrac14 fe=\tfrac14\left(ef+fe+\tfrac12h^2\right),
+\Omega=\tfrac14 ef+\tfrac18 h^2+\tfrac14 fe=\tfrac14\left(ef+fe+\tfrac12h^2\right),
 $$
 
 which acts on the irreducible representation of highest weight $n$ by the scalar $\tfrac18 n(n+2)$, the value recorded in *The Casimir Operator*.
@@ -104,7 +104,7 @@ which acts on the irreducible representation of highest weight $n$ by the scalar
 
 ## Summary
 
-The Killing form defines the **Killing form operator** $\kappa^{\flat}:\mathrm{G}\to\mathrm{G}^*$, $x\mapsto\kappa(x,-)$, whose kernel is the radical of the form. It is a morphism of $\mathrm{G}$-modules with a sign, $\kappa^{\flat}(\operatorname{ad}_x y)=-\operatorname{ad}_x^{*}\kappa^{\flat}(y)$, and this is the invariance of $\kappa$; equivalently every $\operatorname{ad}_x$ is skew for $\kappa$, $\kappa(\operatorname{ad}_x y,z)+\kappa(y,\operatorname{ad}_x z)=0$, so the adjoint representation lands in the operators preserving the form, and the derivations preserve $\kappa$ as well. By Cartan's criterion, recorded in *Structure of Lie Algebras*, the algebra is semisimple exactly when $\kappa^{\flat}$ is injective, and then $\kappa^{\flat}$ is an isomorphism of $\mathrm{G}$-modules between the adjoint and the coadjoint representations. The isomorphism makes the Casimir operator $C=\sum x_ix^i$ and the Laplacian $\Omega=\sum\rho(x_i)\rho(x^i)$ basis-free invariant operators, central in $U(\mathrm{G})$ and scalar on irreducibles, as in *The Casimir Operator*. For $\mathrm{sl}(2,K)$ the form is nondegenerate with matrix displayed above, and the Laplacian acts on the representation of highest weight $n$ by $\tfrac12 n(n+2)$.
+The Killing form defines the **Killing form operator** $\kappa^{\flat}:\mathrm{G}\to\mathrm{G}^*$, $x\mapsto\kappa(x,-)$, whose kernel is the radical of the form. It is a morphism of $\mathrm{G}$-modules with a sign, $\kappa^{\flat}(\operatorname{ad}_x y)=-\operatorname{ad}_x^{*}\kappa^{\flat}(y)$, and this is the invariance of $\kappa$; equivalently every $\operatorname{ad}_x$ is skew for $\kappa$, $\kappa(\operatorname{ad}_x y,z)+\kappa(y,\operatorname{ad}_x z)=0$, so the adjoint representation lands in the operators preserving the form, and the derivations preserve $\kappa$ as well. By Cartan's criterion, recorded in *Structure of Lie Algebras*, the algebra is semisimple exactly when $\kappa^{\flat}$ is injective, and then $\kappa^{\flat}$ is an isomorphism of $\mathrm{G}$-modules between the adjoint and the coadjoint representations. The isomorphism makes the Casimir operator $\Omega=\sum x_ix^i$ and the Laplacian $\Omega=\sum\rho(x_i)\rho(x^i)$ basis-free invariant operators, central in $U(\mathrm{G})$ and scalar on irreducibles, as in *The Casimir Operator*. For $\mathrm{sl}(2,K)$ the form is nondegenerate with matrix displayed above, and the Laplacian acts on the representation of highest weight $n$ by $\tfrac12 n(n+2)$.
 
 ## Summary of Notation
 
@@ -117,7 +117,7 @@ The Killing form defines the **Killing form operator** $\kappa^{\flat}:\mathrm{G
 | $\operatorname{ad}_x$, $\operatorname{ad}_x^{*}$ | the adjoint operator and its transpose |
 | $\mathrm{G}^{\perp}=\ker\kappa^{\flat}$ | the radical of the form |
 | $x_i$, $x^i$ | a basis and the $\kappa$-dual basis |
-| $C=\sum_i x_ix^i$ | the Casimir operator (owned by *The Casimir Operator*) |
+| $\Omega=\sum_i x_ix^i$ | the Casimir operator (owned by *The Casimir Operator*) |
 | $\Omega=\sum_i\rho(x_i)\rho(x^i)$ | the Laplacian of a representation |
 
 ## Further Reading

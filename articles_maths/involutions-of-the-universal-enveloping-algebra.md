@@ -53,17 +53,17 @@ and the **unitary elements** are those with $u^{*}u=uu^{*}=1$.
 
 **Proof.** The maps send the $n$-th filtered piece to itself, so they induce maps on the associated graded algebra; the action of $\sigma$ is the displayed one; the centre is preserved because an automorphism and an anti-automorphism of an algebra map central elements to central elements.
 
-**Corollary.** The Casimir element $C=\sum x_ix^i$ of *The Casimir Operator* satisfies $\sigma(C)=C$ when the dual bases are adapted, and $\Theta(C)=C$ for the extension of an involution preserving the Killing form; the star structure fixes the Casimir element, which is the algebraic reason it is symmetric as an operator.
+**Corollary.** The Casimir element $\Omega=\sum x_ix^i$ of *The Casimir Operator* satisfies $\sigma(\Omega)=\Omega$ when the dual bases are adapted, and $\Theta(\Omega)=\Omega$ for the extension of an involution preserving the Killing form; the star structure fixes the Casimir element, which is the algebraic reason it is symmetric as an operator.
 
 ## The Principal Anti-Automorphism on $\mathrm{sl}(2,K)$
 
 Let $\mathrm{G}=\mathrm{sl}(2,K)$ with basis $e,h,f$ and $[h,e]=2e$, $[h,f]=-2f$, $[e,f]=h$. The principal anti-automorphism is $\sigma(e)=-e$, $\sigma(h)=-h$, $\sigma(f)=-f$, with the product reversed, so $\sigma(eh)=(-h)(-e)=he=eh-h$ in $U(\mathrm{G})$; the Casimir element
 
 $$
-C=\tfrac14 ef+\tfrac18 h^2+\tfrac14 fe
+\Omega=\tfrac14 ef+\tfrac18 h^2+\tfrac14 fe
 $$
 
-satisfies $\sigma(C)=\tfrac14\sigma(f)\sigma(e)+\tfrac18 h^2+\tfrac14 e\,f=\tfrac14 fe+\tfrac18h^2+\tfrac14ef=C$, using the reversal of monomials and $\sigma(x)=-x$. For the Cartan involution $\theta(x)=-x^{t}$ of $\mathrm{sl}(2,\mathbb{R})$ one has $\theta(e)=-f$, $\theta(f)=-e$, $\theta(h)=-h$, so the extension and the principal map give the star with $e^{*}=f$, $f^{*}=e$, $h^{*}=h$ on the generators; the star is the one used by the unitary representations of the later group theory.
+satisfies $\sigma(\Omega)=\tfrac14\sigma(f)\sigma(e)+\tfrac18 h^2+\tfrac14 e\,f=\tfrac14 fe+\tfrac18h^2+\tfrac14ef=\Omega$, using the reversal of monomials and $\sigma(x)=-x$. For the Cartan involution $\theta(x)=-x^{t}$ of $\mathrm{sl}(2,\mathbb{R})$ one has $\theta(e)=-f$, $\theta(f)=-e$, $\theta(h)=-h$, so the extension and the principal map give the star with $e^{*}=f$, $f^{*}=e$, $h^{*}=h$ on the generators; the star is the one used by the unitary representations of the later group theory.
 
 
 ## Summary

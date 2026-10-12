@@ -5,6 +5,8 @@ memory, very real
 
 
 
+The zero divisor of a structure is a nonzero element that kills a nonzero partner, and the operator criterion reads it as the singularity of the multiplication operator.
+
 
 
 The algebra case has no antisymmetric diagonal, the sesqualgebra case has one and it is not zero in general.

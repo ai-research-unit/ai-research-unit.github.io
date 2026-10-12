@@ -46,7 +46,7 @@ The partner set of a nonzero pure $\mathbf u$ is the plane
 $$
 \operatorname{Ann}(\mathbf u)=\{\tilde q:q_0=0,\ \mathbf u\cdot\mathbf q=0\}=\mathbf u^{\perp}\cap\mathrm{Vect}(\mathbb{H}) ,
 $$
-of dimension two, and the ordered pairs of the structure form a family of real dimension five whose unordered version is the Grassmannian $\mathrm{Gr}(2,3)\cong\mathbb{RP}^2$.
+of dimension two, and the ordered zero-divisor pairs form a family of real dimension five. As the element runs over the pure cone, its annihilator runs over the two-planes of the vector subspace, that is, over the Grassmannian $\mathrm{Gr}(2,3)\cong\mathbb{RP}^2$.
 
 ### The Symmetric Quaternionic Structure
 
@@ -54,7 +54,7 @@ of dimension two, and the ordered pairs of the structure form a family of real d
 
 *Proof.* The product is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$, so the criterion is $N(\tilde p,\tilde q)=0$; for a fixed nonzero $\tilde p$ the linear form $N(\tilde p,\cdot)$ is nonzero and its kernel is a hyperplane, of dimension $4-1=3$, hence contains a nonzero partner. The element $0$ alone is regular, the defining clause requiring a nonzero element.
 
-The structure is the opposite of the symmetric plain one: the Jordan product has the smallest nonzero zero-divisor set of the block, the pure cone, while the scalar-valued product has the largest, the whole punctured space. The contrast shows that a definite form does not prevent zero divisors: the plain form is definite and the pure cone is empty of isotropic vectors, yet the Jordan product has zero divisors because its product vanishes on a *pair* of orthogonal vectors, and the quaternion form is definite and every element is a zero divisor because a nonzero linear form on a space of dimension four always has a kernel of dimension three. The pair $(\tilde p,\tilde q)=(e_0,e_1)$ witnesses it, $e_0\star e_1=N(e_0,e_1)e_0=0$, while in the symmetric plain structure the same element $e_0$ is the unit and not a zero divisor.
+The structure is the exact opposite of the symmetric plain one in its divisor theory: the Jordan product has the smallest nonzero zero-divisor set of the block, the pure cone, while the scalar-valued product has the largest, the whole punctured space. The contrast shows that the absence of isotropic vectors does not prevent zero divisors: the plain form is indefinite but anisotropic, its isotropic cone over $\mathbb{R}$ being the origin alone, yet the Jordan product has zero divisors because its product vanishes on a *pair* of orthogonal vectors; and the quaternion form is definite, yet every element is a zero divisor, because a nonzero linear form on a space of dimension four has a kernel of dimension three. The pair $(\tilde p,\tilde q)=(e_0,e_1)$ witnesses it, $e_0\star e_1=N(e_0,e_1)e_0=0$, while in the symmetric plain structure the same element $e_0$ is the unit and not a zero divisor.
 
 ## The Two Antisymmetric Structures
 
@@ -85,13 +85,13 @@ The two antisymmetric structures agree on the total zero-divisor set and separat
 | structure | product | zero-divisor set | criterion | dimension |
 |---|---|---|---|---|
 | $\mathrm{GPA}$ | $\tilde p\tilde q$ | $\varnothing$ | division | — |
-| $\mathrm{GQA}$ | $\tilde p^{\natural}\tilde q$ | $\varnothing$ | division after conjugation | — |
 | $\mathrm{SPA}$ | $\tilde p\bullet\tilde q$ | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | $p_0=0$ | $3$ |
-| $\mathrm{SQA}$ | $N(\tilde p,\tilde q)e_0$ | $\mathbb{H}\setminus\{0\}$ | $N(\tilde p,\tilde q)=0$ | $4$ |
 | $\mathrm{APA}$ | $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$ | $\mathbb{H}\setminus\{0\}$ | $\mathbf p\times\mathbf q=0$ | $4$ |
+| $\mathrm{GQA}$ | $\tilde p^{\natural}\tilde q$ | $\varnothing$ | division after conjugation | — |
+| $\mathrm{SQA}$ | $N(\tilde p,\tilde q)e_0$ | $\mathbb{H}\setminus\{0\}$ | $N(\tilde p,\tilde q)=0$ | $4$ |
 | $\mathrm{AQA}$ | $\tilde p\wedge^{\natural}\tilde q$ | $\mathbb{H}\setminus\{0\}$ | $\tilde q=\lambda\tilde p$ | $4$ |
 
-**Theorem (the six zero-divisor sets).** Two of the six structures have no zero divisor, $\mathrm{GPA}$ and $\mathrm{GQA}$; one has the cone of the pure elements, $\mathrm{SPA}$; and three have the whole punctured space, $\mathrm{SQA}$, $\mathrm{APA}$ and $\mathrm{AQA}$. The zero-divisor sets are nested,
+**Theorem (the six zero-divisor sets).** Read structure by structure: $\mathrm{GPA}$ has no zero divisor; $\mathrm{SPA}$ has the cone of the pure elements, $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$; $\mathrm{APA}$ has the whole punctured space $\mathbb{H}\setminus\{0\}$; $\mathrm{GQA}$ has no zero divisor; and $\mathrm{SQA}$ and $\mathrm{AQA}$ have the whole punctured space. The zero-divisor sets are nested,
 $$
 \varnothing\ \subsetneq\ \mathrm{Vect}(\mathbb{H})\setminus\{0\}\ \subsetneq\ \mathbb{H}\setminus\{0\} ,
 $$
@@ -99,15 +99,15 @@ with the empty set taken by the two general structures, the cone by the symmetri
 
 *Proof.* The theorems of the three preceding sections give the three values; the two general structures take the empty value and the three remaining structures the punctured space. The inclusions are immediate, the vector subspace being a proper subset of the space and the origin being removed in both cases.
 
-**Theorem (the regular elements).** The regular elements of the six structures are: all of $\mathbb{H}$ for $\mathrm{GPA}$ and $\mathrm{GQA}$; the elements with nonzero scalar part, together with the origin, for $\mathrm{SPA}$; and the origin alone for $\mathrm{SQA}$, $\mathrm{APA}$ and $\mathrm{AQA}$.
+**Theorem (the regular elements).** The regular elements of the six structures are: all of $\mathbb{H}$ for $\mathrm{GPA}$; the elements with nonzero scalar part, together with the origin, for $\mathrm{SPA}$; the origin alone for $\mathrm{APA}$; all of $\mathbb{H}$ for $\mathrm{GQA}$; and the origin alone for $\mathrm{SQA}$ and $\mathrm{AQA}$.
 
 *Proof.* An element is regular when it is not a zero divisor, and the origin is always regular. The zero-divisor sets being those of the table, the regular elements are their complements in the space, together with the origin, which gives the three cases.
 
-The table and the two theorems are the comparison. The block of three totals, $\mathrm{SQA}$, $\mathrm{APA}$ and $\mathrm{AQA}$, contains one symmetric structure and both antisymmetric ones; the symmetric plain structure is alone in the middle; and the two general structures, which are opposite in their law tables, agree in having no zero divisor at all. The zero-divisor set is therefore not governed by the general, symmetric or antisymmetric character of the law but by the way the product reads its arguments: a product that multiplies by the whole element is a candidate for division, a product that reads only the vector part, or only a pairing, is not.
+The table and the two theorems are the comparison. The block of three totals, $\mathrm{APA}$, $\mathrm{SQA}$ and $\mathrm{AQA}$, contains one symmetric structure and both antisymmetric ones; the symmetric plain structure is alone in the middle; and the two general structures, which are opposite in their law tables, agree in having no zero divisor at all. The zero-divisor set is therefore not governed by the general, symmetric or antisymmetric character of the law but by the way the product reads its arguments: a product that multiplies by the whole element is a candidate for division, a product that reads only the vector part, or only a pairing, is not.
 
 ## Summary
 
-The zero divisor of a structure is a nonzero element that kills a nonzero partner, and the operator criterion reads it as the singularity of the multiplication operator. The general plain and general quaternionic structures have no zero divisor, every nonzero element being regular. The symmetric plain structure has for zero-divisor set the cone of the pure elements, $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$, of real dimension three, its operator determinant being $p_0^2N(\tilde p)$, and its pairs being the orthogonal nonzero pure pairs. The symmetric quaternionic structure and the two cross products have the whole punctured space for zero-divisor set, because a definite linear form on a space of dimension four always has a kernel, and because an alternating product vanishes on the diagonal; their annihilators are the hyperplane $\tilde p^{\perp}$, the plane $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$ and the line $\mathbb{R}\tilde p$. The regular elements are all of $\mathbb{H}$, the nonpure elements with the origin, and the origin alone, in the three cases. The sets are nested, $\varnothing\subsetneq\mathrm{Vect}(\mathbb{H})\setminus\{0\}\subsetneq\mathbb{H}\setminus\{0\}$, and the two general structures, opposite in their laws, are equal in having no zero divisor.
+The zero divisor of a structure is a nonzero element that kills a nonzero partner, and the operator criterion reads it as the singularity of the multiplication operator. The general plain structure has no zero divisor, every nonzero element being regular; the symmetric plain structure has for zero-divisor set the cone of the pure elements, $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$, of real dimension three, its operator determinant being $p_0^2N(\tilde p)$, and its pairs being the orthogonal nonzero pure pairs; the antisymmetric plain structure has the whole punctured space, the annihilator of a noncentral element being the plane $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$; the general quaternionic structure has no zero divisor either; and the symmetric quaternionic and antisymmetric quaternionic structures have the whole punctured space, the annihilator of a nonzero element being the hyperplane $\tilde p^{\perp}$ in the first and the line $\mathbb{R}\tilde p$ in the second, the three total sets arising because a nonzero linear form on a space of dimension four has a kernel and because an alternating product vanishes on the diagonal. The regular elements are all of $\mathbb{H}$, the nonpure elements with the origin, and the origin alone, in the three cases. The sets are nested, $\varnothing\subsetneq\mathrm{Vect}(\mathbb{H})\setminus\{0\}\subsetneq\mathbb{H}\setminus\{0\}$, and the two general structures, opposite in their laws, are equal in having no zero divisor.
 
 ## Summary of Notation
 
@@ -117,8 +117,8 @@ The zero divisor of a structure is a nonzero element that kills a nonzero partne
 | $L_{\tilde p}$ | the left multiplication operator; its singularity is the criterion |
 | $\varnothing$ | the zero-divisor set of GPA and GQA |
 | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | the zero-divisor set of SPA, the pure cone |
-| $\mathbb{H}\setminus\{0\}$ | the zero-divisor set of SQA, APA and AQA |
-| $\tilde p^{\perp}$, $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$, $\mathbb{R}\tilde p$ | the annihilators of SQA, APA and AQA |
+| $\mathbb{H}\setminus\{0\}$ | the zero-divisor set of APA, SQA and AQA |
+| $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$, $\tilde p^{\perp}$, $\mathbb{R}\tilde p$ | the annihilators of APA, SQA and AQA |
 | $p_0^2N(\tilde p)$ | the determinant of the operator of SPA |
 
 ## Further Reading

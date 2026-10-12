@@ -3,22 +3,22 @@
 
 ## Introduction
 
-The **Casimir element** of a semisimple Lie algebra $\mathrm{G}$ is the central element $C=\sum_i x_i x^i$ of the universal enveloping algebra $U(\mathrm{G})$, formed from a basis and its dual basis with respect to the Killing form. It is defined, and it is proved to be central and to act on an irreducible module by the scalar $(\lambda,\lambda+2\rho)$, in *Representations of Lie Algebras*; the element, its centrality and its eigenvalue are owned by that article and are cited here. This article treats the **operator** that the element induces. In each representation $\pi$ the element gives the operator $\Omega_\pi=\pi(C)=\sum_i\pi(x_i)\pi(x^i)$, and in the regular representation it gives left multiplication by $C$ on $U(\mathrm{G})$; the operator is a $\mathrm{G}$-module endomorphism, its eigenspaces are the isotypic components of a completely reducible module, it is the identity on the adjoint module up to the normalisation fixed by the Killing form, and its behaviour on tensor products is governed by a mixed term.
+The **Casimir element** of a semisimple Lie algebra $\mathrm{G}$ is the central element $\Omega=\sum_i x_i x^i$ of the universal enveloping algebra $U(\mathrm{G})$, formed from a basis and its dual basis with respect to the Killing form. It is defined, and it is proved to be central and to act on an irreducible module by the scalar $(\lambda,\lambda+2\rho)$, in *Representations of Lie Algebras*; the element, its centrality and its eigenvalue are owned by that article and are cited here. This article treats the **operator** that the element induces. In each representation $\pi$ the element gives the operator $\Omega_\pi=\pi(\Omega)=\sum_i\pi(x_i)\pi(x^i)$, and in the regular representation it gives left multiplication by $\Omega$ on $U(\mathrm{G})$; the operator is a $\mathrm{G}$-module endomorphism, its eigenspaces are the isotypic components of a completely reducible module, it is the identity on the adjoint module up to the normalisation fixed by the Killing form, and its behaviour on tensor products is governed by a mixed term.
 
 The universal enveloping algebra, its filtration and the Poincaré–Birkhoff–Witt theorem are *Universal Enveloping Algebras*; the modules, the weights, the highest weight classification and the Casimir element are *Representations of Lie Algebras*; the Cartan subalgebra, the roots and the Killing form are *Root Systems and Classification* and *The Killing Form Operator*. Nothing owned by those entries is re-derived.
 
-The article stays inside Part I: the operator is algebraic, and its analytic reading as a Laplace operator on a manifold, its spectrum and its heat kernel belong to Part II and Part III and are not used. The base is an algebraically closed field $K$ of characteristic zero, and $\mathrm{G}$ is a finite-dimensional semisimple Lie algebra over $K$; the notation of the root system is that of *Root Systems and Classification*, and the Casimir element is written $C$ while its operator on a representation is written $\Omega_\pi$.
+The article stays inside Part I: the operator is algebraic, and its analytic reading as a Laplace operator on a manifold, its spectrum and its heat kernel belong to Part II and Part III and are not used. The base is an algebraically closed field $K$ of characteristic zero, and $\mathrm{G}$ is a finite-dimensional semisimple Lie algebra over $K$; the notation of the root system is that of *Root Systems and Classification*, and the Casimir element is written $\Omega$ while its operator on a representation is written $\Omega_\pi$.
 
 ## The Casimir Operator of a Representation
 
 ### The Definition, Recalled
 
-**Definition.** Let $(x_1,\dots,x_m)$ be a basis of $\mathrm{G}$ and let $(x^1,\dots,x^m)$ be the dual basis with respect to the Killing form, $\kappa(x_i,x^j)=\delta_i^j$. The **Casimir element** is $C=\sum_i x_ix^i\in U(\mathrm{G})$; it is independent of the choice of basis and central. These statements, with the centrality of $C$ and the eigenvalue $(\lambda,\lambda+2\rho)$ on the irreducible module $V(\lambda)$, are from *Representations of Lie Algebras*.
+**Definition.** Let $(x_1,\dots,x_m)$ be a basis of $\mathrm{G}$ and let $(x^1,\dots,x^m)$ be the dual basis with respect to the Killing form, $\kappa(x_i,x^j)=\delta_i^j$. The **Casimir element** is $\Omega=\sum_i x_ix^i\in U(\mathrm{G})$; it is independent of the choice of basis and central. These statements, with the centrality of $\Omega$ and the eigenvalue $(\lambda,\lambda+2\rho)$ on the irreducible module $V(\lambda)$, are from *Representations of Lie Algebras*.
 
 **Definition.** For a representation $\pi:\mathrm{G}\to\operatorname{End}_K(V)$ the **Casimir operator** is
 
 $$
-\Omega_\pi=\pi(C)=\sum_{i=1}^{m}\pi(x_i)\,\pi(x^i)\in\operatorname{End}_K(V).
+\Omega_\pi=\pi(\Omega)=\sum_{i=1}^{m}\pi(x_i)\,\pi(x^i)\in\operatorname{End}_K(V).
 $$
 
 The assignment is functorial: if $f:V\to W$ is a homomorphism of $\mathrm{G}$-modules then $f\circ\Omega_\pi=\Omega_{\pi}\circ f$, because $f$ intertwines the operators $\pi(x)$.
@@ -39,7 +39,7 @@ $$
 
 so $\Omega_\pi\in\operatorname{End}_{\mathrm{G}}(V)$, the algebra of $\mathrm{G}$-module endomorphisms of $V$.
 
-**Proof.** The centrality of $C$ in $U(\mathrm{G})$ gives $[C,x]=0$ for the image of $x$ in $U(\mathrm{G})$, and $\pi$ is an algebra homomorphism, so $[\pi(C),\pi(x)]=0$.
+**Proof.** The centrality of $\Omega$ in $U(\mathrm{G})$ gives $[\Omega,x]=0$ for the image of $x$ in $U(\mathrm{G})$, and $\pi$ is an algebra homomorphism, so $[\pi(\Omega),\pi(x)]=0$.
 
 **Corollary (preservation, restriction and descent).** The operator $\Omega_\pi$ preserves every submodule and descends to every quotient; on a direct sum of representations it acts componentwise; and if $V$ is irreducible then $\Omega_\pi$ is a scalar, by Schur's lemma, with the scalar $(\lambda,\lambda+2\rho)$ for $V=V(\lambda)$.
 
@@ -118,9 +118,9 @@ $$
 
 ## The Regular Representation
 
-**Proposition.** In the regular representation, that is left multiplication on $U(\mathrm{G})$, the Casimir operator is left multiplication by $C$; it commutes with left multiplication by every element of $\mathrm{G}$, so it lies in $\operatorname{End}_{U(\mathrm{G})}(U(\mathrm{G}))$, and it acts on the centre of $U(\mathrm{G})$ by multiplication.
+**Proposition.** In the regular representation, that is left multiplication on $U(\mathrm{G})$, the Casimir operator is left multiplication by $\Omega$; it commutes with left multiplication by every element of $\mathrm{G}$, so it lies in $\operatorname{End}_{U(\mathrm{G})}(U(\mathrm{G}))$, and it acts on the centre of $U(\mathrm{G})$ by multiplication.
 
-**Proof.** The regular representation sends $x$ to left multiplication by $x$, so $\Omega$ is left multiplication by $C$; centrality of $C$ in $U(\mathrm{G})$ is the commutation with every left multiplication.
+**Proof.** The regular representation sends $x$ to left multiplication by $x$, so $\Omega$ is left multiplication by $\Omega$; centrality of $\Omega$ in $U(\mathrm{G})$ is the commutation with every left multiplication.
 
 **Remark.** The centre $Z(U(\mathrm{G}))$ of the enveloping algebra is a polynomial algebra over $K$ in $\operatorname{rank}\mathrm{G}$ generators, of which the Casimir element is the quadratic one; the higher Casimir operators are the higher generators, read as operators by the same construction. The theorem of Harish-Chandra and its proof belong to the representation theory of Part I and are named here only to locate the Casimir operator in the centre.
 
@@ -129,7 +129,7 @@ $$
 Let $\mathrm{SL}(2,K)$ have basis $e,h,f$ with $[e,f]=h$, $[h,e]=2e$, $[h,f]=-2f$, and Killing form $\kappa(e,f)=4$, $\kappa(h,h)=8$. The dual basis of $(e,h,f)$ is $(f/4,e/4,h/8)$, so
 
 $$
-C=\tfrac14(ef+fe)+\tfrac18h^2 .
+\Omega=\tfrac14(ef+fe)+\tfrac18h^2 .
 $$
 
 **The standard two-dimensional module.** With
@@ -148,9 +148,9 @@ one has $ef+fe=\mathrm{id}$ and $h^2=\mathrm{id}$, so $\Omega=\tfrac14\mathrm{id
 
 ## Summary
 
-The **Casimir operator** of a representation $\pi$ of a semisimple Lie algebra is the operator $\Omega_\pi=\pi(C)=\sum_i\pi(x_i)\pi(x^i)$ attached to the Casimir element $C$ of $U(\mathrm{G})$; it is independent of the choice of basis, and it commutes with the action, $[\Omega_\pi,\pi(x)]=0$, so it is a $\mathrm{G}$-module endomorphism. It therefore preserves every submodule and descends to every quotient, and on an irreducible module it is a scalar, namely $(\lambda,\lambda+2\rho)$ for $V(\lambda)$. Because the eigenvalues of distinct highest weights are distinct, the eigenspaces of $\Omega_\pi$ on a completely reducible module are exactly the isotypic components, so the Casimir operator separates them and its eigenspace projections are the isotypic projections.
+The **Casimir operator** of a representation $\pi$ of a semisimple Lie algebra is the operator $\Omega_\pi=\pi(\Omega)=\sum_i\pi(x_i)\pi(x^i)$ attached to the Casimir element $\Omega$ of $U(\mathrm{G})$; it is independent of the choice of basis, and it commutes with the action, $[\Omega_\pi,\pi(x)]=0$, so it is a $\mathrm{G}$-module endomorphism. It therefore preserves every submodule and descends to every quotient, and on an irreducible module it is a scalar, namely $(\lambda,\lambda+2\rho)$ for $V(\lambda)$. Because the eigenvalues of distinct highest weights are distinct, the eigenspaces of $\Omega_\pi$ on a completely reducible module are exactly the isotypic components, so the Casimir operator separates them and its eigenspace projections are the isotypic projections.
 
-The Casimir element is the image of the invariant tensor $\theta=\sum_ix_i\otimes x^i$, which corresponds to the identity operator under the identification $\mathrm G\otimes\mathrm G\cong\operatorname{End}_K(\mathrm G)$; consistently, the Casimir operator of the adjoint module is the identity. On a tensor product it is the sum of the two Casimir operators and a mixed term, $\Omega_{V\otimes W}=\Omega_V\otimes1+1\otimes\Omega_W+2\sum_i\pi_V(x_i)\otimes\pi_W(x^i)$. In the regular representation it is left multiplication by $C$, hence an element of $\operatorname{End}_{U(\mathrm{G})}(U(\mathrm{G}))$, and it is the quadratic generator of the centre of $U(\mathrm{G})$. For $\mathrm{SL}(2,K)$ the dual basis of $(e,h,f)$ is $(f/4,e/4,h/8)$, the Casimir element is $\tfrac14(ef+fe)+\tfrac18h^2$, its operator is $\tfrac38\mathrm{id}$ on the two-dimensional module and $\mathrm{id}$ on the adjoint module, and on $V_n$ it is the strictly increasing scalar $\tfrac18n(n+2)$.
+The Casimir element is the image of the invariant tensor $\theta=\sum_ix_i\otimes x^i$, which corresponds to the identity operator under the identification $\mathrm G\otimes\mathrm G\cong\operatorname{End}_K(\mathrm G)$; consistently, the Casimir operator of the adjoint module is the identity. On a tensor product it is the sum of the two Casimir operators and a mixed term, $\Omega_{V\otimes W}=\Omega_V\otimes1+1\otimes\Omega_W+2\sum_i\pi_V(x_i)\otimes\pi_W(x^i)$. In the regular representation it is left multiplication by $\Omega$, hence an element of $\operatorname{End}_{U(\mathrm{G})}(U(\mathrm{G}))$, and it is the quadratic generator of the centre of $U(\mathrm{G})$. For $\mathrm{SL}(2,K)$ the dual basis of $(e,h,f)$ is $(f/4,e/4,h/8)$, the Casimir element is $\tfrac14(ef+fe)+\tfrac18h^2$, its operator is $\tfrac38\mathrm{id}$ on the two-dimensional module and $\mathrm{id}$ on the adjoint module, and on $V_n$ it is the strictly increasing scalar $\tfrac18n(n+2)$.
 
 ## Summary of Notation
 
@@ -160,9 +160,9 @@ The Casimir element is the image of the invariant tensor $\theta=\sum_ix_i\otime
 | $\mathrm{G}$ | finite-dimensional semisimple Lie algebra over $K$ |
 | $\kappa$ | the Killing form |
 | $x_i,x^i$ | a basis and its $\kappa$-dual basis |
-| $C=\sum_ix_ix^i$ | the Casimir element of $U(\mathrm{G})$ |
+| $\Omega=\sum_ix_ix^i$ | the Casimir element of $U(\mathrm{G})$ |
 | $\pi$ | a representation of $\mathrm{G}$ |
-| $\Omega_\pi=\pi(C)$ | the Casimir operator of $\pi$ |
+| $\Omega_\pi=\pi(\Omega)$ | the Casimir operator of $\pi$ |
 | $\operatorname{End}_{\mathrm{G}}(V)$ | the $\mathrm{G}$-module endomorphisms of $V$ |
 | $V(\lambda)$, $(\lambda,\lambda+2\rho)$ | irreducible module and its Casimir eigenvalue |
 | $\rho$ | the half-sum of the positive roots |

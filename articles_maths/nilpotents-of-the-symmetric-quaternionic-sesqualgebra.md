@@ -21,7 +21,7 @@ $\tilde Q\star\tilde Q$ is *The Non-Central Diagonal and the Two Halves of the S
 Sesqualgebra*; the zero divisors are *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*; the roots
 of the central value $0$ are read in *Square Roots of Minus One, Zero and Plus One in the Symmetric
 Quaternionic Sesqualgebra*; the nilpotents of the plain product are *Nilpotents of the General Plain
-Algebra*; and the square-zero sets of the four general products are *The Square-Zero Elements of the Twelve Structures*.
+Algebra*; and the square-zero sets of the four general products are *The Zero Divisors and the Twelve Structures*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
@@ -125,10 +125,10 @@ $\tilde P\star\tilde P=K(\tilde P,\tilde P)e_0=-\lVert\mathbf x\rVert^2e_0$, whi
 $\mathbf x=\mathbf 0$. If $\alpha\neq0$, the diagonal is central exactly when
 $\alpha\overline{\mathbf x}\in i\mathbb{R}^3$; write $\alpha\overline{x_k}=-ic_k$ with $c_k\in\mathbb{R}$,
 so $x_k=i c_k/\overline{\alpha}=i\alpha c_k/|\alpha|^2$ and
-$\lVert\mathbf x\rVert^2=\lVert\mathbf c\rVert^2/|\alpha|^2$. Then
+$\lVert\mathbf x\rVert^2=\lVert\mathbf C\rVert^2/|\alpha|^2$. Then
 $\tilde P\star\tilde P=K(\tilde P,\tilde P)e_0$ with
 $K(\tilde P,\tilde P)=|\alpha|^2-\lVert\mathbf x\rVert^2$, which vanishes exactly when
-$\lVert\mathbf c\rVert^2=|\alpha|^4$. Writing $\mathbf c=|\alpha|^2\boldsymbol\mu$ with
+$\lVert\mathbf C\rVert^2=|\alpha|^4$. Writing $\mathbf C=|\alpha|^2\boldsymbol\mu$ with
 $\boldsymbol\mu\in\mathbb{R}^3$ a unit vector, the element is
 $\tilde P=\alpha e_0+i\alpha\boldsymbol\mu=\alpha(e_0+i\boldsymbol\mu)$, and every such element has
 $K=|\alpha|^2(1-\lVert\boldsymbol\mu\rVert^2)=0$ and vanishing vector part.
@@ -153,19 +153,19 @@ on either side; both factors are nonzero by hypothesis. The two-sidedness is
 
 **Theorem (the nilpotents are non-pure zero divisors).** A nilpotent
 $\tilde\Upsilon=\alpha(e_0+i\boldsymbol\mu)$ has scalar part $\alpha\neq0$ and central square
-$c(\tilde\Upsilon)=\alpha^2(1-\lVert\boldsymbol\mu\rVert^2)=0$; so it is a zero divisor of the block by the
+$C(\tilde\Upsilon)=\alpha^2(1-\lVert\boldsymbol\mu\rVert^2)=0$; so it is a zero divisor of the block by the
 non-pure criterion, and it is not in the pure family.
 
 *Proof.* $c(\alpha(e_0+i\boldsymbol\mu))=\alpha^2\bigl(1+\lVert i\boldsymbol\mu\rVert^2\bigr)=\alpha^2(1-\lVert\boldsymbol\mu\rVert^2)=0$ because $\lVert\boldsymbol\mu\rVert=1$.
 
-The inclusion is strict: $c$ vanishes on the whole non-pure family $\{Q_0\neq0,\ c(\tilde Q)=0\}$, and the
+The inclusion is strict: $C$ vanishes on the whole non-pure family $\{Q_0\neq0,\ C(\tilde Q)=0\}$, and the
 element
 
 $$
 e_0+e_1+i\sqrt2\,e_2
 $$
 
-has $Q_0=1$ and $c=1+1-2=0$, so it is a non-pure zero divisor, yet its square is $-2e_0-2e_1\neq0$;
+has $Q_0=1$ and $C=1+1-2=0$, so it is a non-pure zero divisor, yet its square is $-2e_0-2e_1\neq0$;
 equivalently it annihilates the nonzero $e_0-e_1+i\sqrt2\,e_2$ without being square-zero. So the
 square-zero cone is a *proper* subset of the non-pure family, and the two must not be identified.
 
@@ -182,7 +182,7 @@ and an idempotent.
 
 This is the two-family statement of the block. The zero-divisor set splits into the nilpotents
 $\alpha(e_0+i\boldsymbol\mu)$, whose square vanishes, and the remaining elements of the non-pure family,
-$Q_0\neq0$, $c(\tilde Q)=0$, whose square does not vanish (the witness $e_0+e_1+i\sqrt2\,e_2$); while the idempotents
+$Q_0\neq0$, $C(\tilde Q)=0$, whose square does not vanish (the witness $e_0+e_1+i\sqrt2\,e_2$); while the idempotents
 $-\tfrac12e_0+\boldsymbol\mu$ are regular and lie outside the zero-divisor set altogether. The contrast
 with the plain product is exact: there the nontrivial idempotents are zero divisors and the nilpotents are
 the pure family, while here the nilpotents are non-pure and the idempotents are regular.
@@ -246,14 +246,14 @@ conjugations permute the cone, the star conjugating the coefficient and fixing t
 | $\tilde\Upsilon$ | a nilpotent of the block; index two, hence square-zero |
 | $\tilde P\star(\tilde P\star\tilde P)=0\Leftrightarrow\tilde P\star\tilde P=0$ | the index-two theorem |
 | $\alpha(e_0+i\boldsymbol\mu)$ | the nonzero nilpotents, a real cone of dimension four |
-| $c(\tilde\Upsilon)=\sum_\mu\Upsilon_\mu^2=0$ | the central square, vanishing on the nilpotents |
+| $C(\tilde\Upsilon)=\sum_\mu\Upsilon_\mu^2=0$ | the central square, vanishing on the nilpotents |
 | $\{\tilde Q\neq0:Q_0=0\}$ | the pure zero divisors, containing no nonzero nilpotent |
 | $K(\tilde Q,\tilde Q)=|Q_0|^2-\lVert\mathbf Q\rVert^2$ | the scalar part of the diagonal |
 
 ## Further Reading
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Nilpotent* and §*Powers, the Square and the Roots*, for the definition, the index and the left-nested power of a non-associative product.
-- *The Square-Zero Elements of the Twelve Structures* (`articles_maths/the-square-zero-elements-of-the-twelve-structures.md`), for the square-zero set of the product whose symmetric part is the block.
+- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the square-zero set of the product whose symmetric part is the block.
 - *Nilpotents of the General Plain Algebra* (`articles_maths/nilpotents-of-the-general-plain-algebra.md`), for the pure nilpotent cone of the plain product.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion and the two families that the nilpotents sit inside.
 - *Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the class disjoint from the nilpotents.

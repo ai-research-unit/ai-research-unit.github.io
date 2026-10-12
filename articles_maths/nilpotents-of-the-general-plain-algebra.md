@@ -6,12 +6,12 @@ The general plain bilinear product $\tilde P\tilde Q$ is the one of the four gen
 
 The class is small and rigid. A nilpotent has vanishing scalar part, so it is a *pure* biquaternion; its vector part is isotropic for the complex bilinear form $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$; and those two conditions together are equivalent to the vanishing of the square. Nothing of the kind happens at index three: an element whose cube vanishes already has vanishing square, so the algebra carries no nilpotent of higher index. Each nonzero nilpotent annihilates itself, $\tilde\Upsilon\tilde\Upsilon=0$, and is therefore a zero divisor of a particularly simple kind — it is its own two-sided annihilating partner. The nilpotents are exactly the *pure* family of the zero divisors of *Zero Divisors of the General Plain Algebra*, the other family being the complex multiples of the nontrivial idempotents.
 
-The two neighbouring element theories are elsewhere. The zero divisors of the algebra, both families and the criterion $c(\tilde P)=0$ on the central square, are the subject of *Zero Divisors of the General Plain Algebra*, and the same criterion read against the four general products is *The Zero Divisors and the Twelve Structures*. The idempotents, the second family and its classification, are *Idempotents of the General Plain Algebra*. The nilpotents appear in the classification of the three central values as the nonzero roots of $0$ in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; they generate the minimal ideals in *Ideals and Peirce Decomposition of the General Plain Algebra*; and they are the square-zero elements of the plain product in the four-product comparison of *The Square-Zero Elements of the Twelve Structures* and *Comparison Between the Four General Products*. The model used here is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the position of the class in the remarkable subspaces is *Introduction to the Remarkable Subspaces*.
+The two neighbouring element theories are elsewhere. The zero divisors of the algebra, both families and the criterion $C(\tilde P)=0$ on the central square, are the subject of *Zero Divisors of the General Plain Algebra*, and the same criterion read against the four general products is *The Zero Divisors and the Twelve Structures*. The idempotents, the second family and its classification, are *Idempotents of the General Plain Algebra*. The nilpotents appear in the classification of the three central values as the nonzero roots of $0$ in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; they generate the minimal ideals in *Ideals and Peirce Decomposition of the General Plain Algebra*; and they are the square-zero elements of the plain product in the four-product comparison of *The Zero Divisors and the Twelve Structures* and *Comparison Between the Four General Products*. The model used here is *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the position of the class in the remarkable subspaces is *Introduction to the Remarkable Subspaces*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\mathbf Q$ with $Q_0\in\mathbb{C}$ and $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$ and the star is $\tilde Q^{*}=\overline{Q_0}-\overline{\mathbf Q}$. The unit is written $e_0$ and is fixed by both conjugations. The **central square** is
 
 $$
-\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=c(\tilde Q)e_0,\qquad c(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2},
+\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_0,\qquad C(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2},
 $$
 
 and $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$ is the general plain bilinear form of the two vector parts. A nilpotent is written $\tilde\Upsilon$ (§*The nilpotent convention* of *Conventions in Mathematics*), a generic element $\tilde P$ or $\tilde Q$, and an idempotent $\tilde\Pi$.
@@ -44,9 +44,9 @@ $$
 \tilde Q^{2}=\bigl[Q_0^{2}-(\mathbf Q,\mathbf Q)\bigr]e_0+2Q_0\mathbf Q .
 $$
 
-**Theorem (the criterion for a nilpotent).** For $\tilde P\in\mathbb{B}$ the following are equivalent: $\tilde P^{2}=0$; $\tilde P$ is pure, $P_0=0$, and its vector part is isotropic, $(\mathbf P,\mathbf P)=0$; and $P_0=0$ and $c(\tilde P)=0$.
+**Theorem (the criterion for a nilpotent).** For $\tilde P\in\mathbb{B}$ the following are equivalent: $\tilde P^{2}=0$; $\tilde P$ is pure, $P_0=0$, and its vector part is isotropic, $(\mathbf P,\mathbf P)=0$; and $P_0=0$ and $C(\tilde P)=0$.
 
-**Proof.** The displayed formula expands the square. If $P_0\neq0$ then the vector part $2P_0\mathbf P$ vanishes only for $\mathbf P=0$, and then the scalar part is $P_0^{2}\neq0$; so a nilpotent is pure. For a pure $\tilde P$ the formula reads $\tilde P^{2}=-(\mathbf P,\mathbf P)e_0$, a central element, which vanishes exactly when $(\mathbf P,\mathbf P)=0$. Finally, for pure $\tilde P$ the central square is $c(\tilde P)=P_0^{2}+(\mathbf P,\mathbf P)=(\mathbf P,\mathbf P)$, so the two conditions agree.
+**Proof.** The displayed formula expands the square. If $P_0\neq0$ then the vector part $2P_0\mathbf P$ vanishes only for $\mathbf P=0$, and then the scalar part is $P_0^{2}\neq0$; so a nilpotent is pure. For a pure $\tilde P$ the formula reads $\tilde P^{2}=-(\mathbf P,\mathbf P)e_0$, a central element, which vanishes exactly when $(\mathbf P,\mathbf P)=0$. Finally, for pure $\tilde P$ the central square is $C(\tilde P)=P_0^{2}+(\mathbf P,\mathbf P)=(\mathbf P,\mathbf P)$, so the two conditions agree.
 
 **Corollary.** Every nilpotent is pure, and every nonzero nilpotent is a zero divisor. Its only nonzero power relation is $\tilde\Upsilon^{2}=0$, the central zero, so its powers stop at the second.
 
@@ -145,9 +145,9 @@ The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\mathb
 
 In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the criterion becomes the linear algebra of a trace-free singular matrix.
 
-**Theorem.** Under the isomorphism $\mathsf{M}_2$ with $\mathsf{M}_2(\tilde P)=P_0\mathrm{I}_2-iP_1\sigma_1-iP_2\sigma_2-iP_3\sigma_3$ the following coincide: $\tilde P$ is a nilpotent; $\mathsf{M}_2(\tilde P)$ is a nonzero nilpotent matrix; $\mathsf{M}_2(\tilde P)$ is trace-free, $\mathrm{tr}\,\mathsf{M}_2(\tilde P)=2P_0=0$, and singular, $\det\mathsf{M}_2(\tilde P)=c(\tilde P)=0$.
+**Theorem.** Under the isomorphism $\mathsf{M}_2$ with $\mathsf{M}_2(\tilde P)=P_0\mathrm{I}_2-iP_1\sigma_1-iP_2\sigma_2-iP_3\sigma_3$ the following coincide: $\tilde P$ is a nilpotent; $\mathsf{M}_2(\tilde P)$ is a nonzero nilpotent matrix; $\mathsf{M}_2(\tilde P)$ is trace-free, $\mathrm{tr}\,\mathsf{M}_2(\tilde P)=2P_0=0$, and singular, $\det\mathsf{M}_2(\tilde P)=C(\tilde P)=0$.
 
-**Proof.** The trace is $2P_0$ and the determinant is $c(\tilde P)$; the criterion is $P_0=0$ and $c(\tilde P)=0$, which is the stated pair. A nonzero two-by-two complex matrix that is singular and trace-free has only the eigenvalue $0$ and is nilpotent, and conversely a nilpotent matrix is singular and trace-free.
+**Proof.** The trace is $2P_0$ and the determinant is $C(\tilde P)$; the criterion is $P_0=0$ and $C(\tilde P)=0$, which is the stated pair. A nonzero two-by-two complex matrix that is singular and trace-free has only the eigenvalue $0$ and is nilpotent, and conversely a nilpotent matrix is singular and trace-free.
 
 So the nilpotents are the nonzero rank-one trace-free complex matrices, that is the matrices conjugate to the single Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, the strictly triangular form. The two standard nilpotents are the off-diagonal Peirce units
 
@@ -195,7 +195,7 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 | $\tilde\Upsilon$ | a nilpotent, $\tilde\Upsilon^{2}=0$ (§*The nilpotent convention*) |
 | $\tilde\Upsilon_1,\tilde\Upsilon_2$ | the two off-diagonal Peirce units $\tfrac{ie_1-e_2}{2}$, $\tfrac{ie_1+e_2}{2}$ |
 | $\tilde\Pi$ | an idempotent |
-| $c(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, $\det\mathsf{M}_2(\tilde P)$ |
+| $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, $\det\mathsf{M}_2(\tilde P)$ |
 | $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ | the general plain bilinear form of the vector parts |
 | $\{\tilde\Upsilon\}$ | the nilpotent cone, $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$ |
 | $\mathbf p,\mathbf p'$ | the two real vector parts of a nilpotent, $\tilde\Upsilon=\mathbf p+i\mathbf p'$ with $P_k=p_k+ip'_k$, of equal length and orthogonal |
@@ -210,5 +210,5 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 - *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the second family, the idempotents, and the disjointness of the two classes.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.
 - *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the isomorphism $\mathsf{M}_2$, the trace and determinant and the triangular Jordan form.
-- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`) and *The Square-Zero Elements of the Twelve Structures* (`articles_maths/the-square-zero-elements-of-the-twelve-structures.md`), for the same class read against the four general products, where only the plain product has this square-zero set.
+- *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`) and *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the same class read against the four general products, where only the plain product has this square-zero set.
 - *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), §*The nilpotent convention*, for the symbol $\tilde\Upsilon$.

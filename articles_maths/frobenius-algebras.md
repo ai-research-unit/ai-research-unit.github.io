@@ -99,18 +99,18 @@ The functional of a symmetric algebra is what is usually called a **trace**, and
 **Definition.** Let $\lambda$ be a Frobenius functional with Nakayama automorphism $\nu$, and let $\{a_i\}$ be a $k$-basis of $A$ with dual basis $\{a^i\}$ defined by $\lambda(a_i a^j) = \delta_i^j$. The **Casimir element** of $(A,\lambda)$ is
 
 $$
-C = \sum_i a_i \otimes a^i \in A \otimes_k A .
+\Omega = \sum_i a_i \otimes a^i \in A \otimes_k A .
 $$
 
 **Proposition.** Let $\{a_i\}$ be a $k$-basis of $A$ and let $\{a^i\}$ be the basis dual to it with respect to the Frobenius pairing, $\lambda(a_i a^j) = \delta_i^j$.
 
-1. $\lambda\bigl(\mu(C)\bigr) = \dim_k A$, where $\mu$ is the multiplication of $A$.
+1. $\lambda\bigl(\mu(\Omega)\bigr) = \dim_k A$, where $\mu$ is the multiplication of $A$.
 2. For every $a \in A$ the trace of the left multiplication $L_a$ is
 $$
 \operatorname{Tr}(L_a) \;=\; \lambda\Bigl(\sum_i a\,a_i\,a^i\Bigr),
 $$
 so the trace is computed by contracting the Casimir element with $a$ in the first tensor factor.
-3. If $A$ is symmetric, then $C$ is fixed by the flip $\tau(x\otimes y) = y\otimes x$; if $A$ is Frobenius but not symmetric then $C$ is not flip-fixed, and the failure is measured by $\nu$.
+3. If $A$ is symmetric, then $\Omega$ is fixed by the flip $\tau(x\otimes y) = y\otimes x$; if $A$ is Frobenius but not symmetric then $\Omega$ is not flip-fixed, and the failure is measured by $\nu$.
 
 *Proof.* 1: $\lambda\bigl(\sum_i a_i a^i\bigr) = \sum_i \lambda(a_i a^i) = \sum_i \delta_i^i = \dim_k A$. For 2, let $c_{ij}$ be the matrix of $L_a$ in the basis $\{a_i\}$, so that $a\,a_i = \sum_j c_{ij}a_j$. Multiplying on the right by $a^i$ and applying $\lambda$ gives, by associativity and $\lambda(a_k a^i) = \delta_{ki}$,
 
@@ -118,7 +118,7 @@ $$
 \lambda\bigl(a\,a_i\,a^i\bigr) = \sum_j c_{ij}\lambda\bigl(a_j a^i\bigr) = c_{ii},
 $$
 
-and summing over $i$ gives $\lambda\bigl(\sum_i a\,a_i\,a^i\bigr) = \sum_i c_{ii} = \operatorname{Tr}(L_a)$. For 3, the flip sends $C$ to $\sum_i a^i\otimes a_i$; when $\lambda(ab) = \lambda(ba)$ the pairing is invariant under the flip and the metric-dual bases may be interchanged, so the two sums agree, while for a general $\nu$ they differ, the defect being the twist $\nu$ of the pairing.
+and summing over $i$ gives $\lambda\bigl(\sum_i a\,a_i\,a^i\bigr) = \sum_i c_{ii} = \operatorname{Tr}(L_a)$. For 3, the flip sends $\Omega$ to $\sum_i a^i\otimes a_i$; when $\lambda(ab) = \lambda(ba)$ the pairing is invariant under the flip and the metric-dual bases may be interchanged, so the two sums agree, while for a general $\nu$ they differ, the defect being the twist $\nu$ of the pairing.
 
 ### Examples
 
@@ -199,7 +199,7 @@ The connection with the symmetric algebra is that $k[x_1,\dots,x_n]/(f_1,\dots,f
 
 ## Summary
 
-A finite-dimensional $k$-algebra $A$ is **Frobenius** when it carries a linear functional $\lambda$ whose associated pairing $(a,b) \mapsto \lambda(ab)$ is non-degenerate; equivalently $A \cong A^*$ as left (or right) $A$-modules, equivalently the regular module is injective. The **Nakayama automorphism** $\nu$ of $(A,\lambda)$ is defined by $\lambda(ab) = \lambda(b\nu(a))$, it is an algebra automorphism, and it is determined up to inner automorphisms. The algebra is **symmetric** when $\nu = \mathrm{id}$, that is, when $\lambda(ab) = \lambda(ba)$, and then $\lambda$ is a trace; matrix algebras with the trace, group algebras with the coefficient functional, truncated polynomial algebras $k[x]/(x^n)$, and all finite-dimensional semisimple algebras are symmetric, while the exterior algebra $\Lambda(V)$ is Frobenius with Nakayama automorphism the parity automorphism when $\dim V$ is even. Frobenius algebras are self-injective and quasi-Frobenius, so projectivity and injectivity of modules coincide over them; the **Casimir element** $C = \sum_i a_i\otimes a^i$ built from a basis and its $\lambda$-dual satisfies $\mu(C)=1$ and is invariant under the twisted diagonal action, and its contraction with an element gives the trace of left multiplication.
+A finite-dimensional $k$-algebra $A$ is **Frobenius** when it carries a linear functional $\lambda$ whose associated pairing $(a,b) \mapsto \lambda(ab)$ is non-degenerate; equivalently $A \cong A^*$ as left (or right) $A$-modules, equivalently the regular module is injective. The **Nakayama automorphism** $\nu$ of $(A,\lambda)$ is defined by $\lambda(ab) = \lambda(b\nu(a))$, it is an algebra automorphism, and it is determined up to inner automorphisms. The algebra is **symmetric** when $\nu = \mathrm{id}$, that is, when $\lambda(ab) = \lambda(ba)$, and then $\lambda$ is a trace; matrix algebras with the trace, group algebras with the coefficient functional, truncated polynomial algebras $k[x]/(x^n)$, and all finite-dimensional semisimple algebras are symmetric, while the exterior algebra $\Lambda(V)$ is Frobenius with Nakayama automorphism the parity automorphism when $\dim V$ is even. Frobenius algebras are self-injective and quasi-Frobenius, so projectivity and injectivity of modules coincide over them; the **Casimir element** $\Omega = \sum_i a_i\otimes a^i$ built from a basis and its $\lambda$-dual satisfies $\mu(\Omega)=1$ and is invariant under the twisted diagonal action, and its contraction with an element gives the trace of left multiplication.
 
 A Frobenius algebra is at once an algebra and a coalgebra, with comultiplication the transpose of the multiplication transported across $A \cong A^*$ and counit $\lambda$; the Nakayama automorphism measures the twist needed to make the two structures compatible, and this is the point of departure, where the existence of an integral makes every finite-dimensional Hopf algebra Frobenius. The Frobenius property is closed under products and tensor products, and the finite-dimensional quotients of the symmetric algebra by a regular sequence are Frobenius complete intersections, with the hypersurface $k[x]/(f)$ as the basic example; the symmetric algebra itself is not Frobenius because it is infinite-dimensional. The topological statement that a Frobenius algebra models, Poincaré duality, and the form theory that a non-degenerate pairing evokes belong to Part II.
 
@@ -215,7 +215,7 @@ A Frobenius algebra is at once an algebra and a coalgebra, with comultiplication
 | $(a,b)\mapsto\lambda(ab)$ | Frobenius pairing, non-degenerate |
 | $\nu$ | Nakayama automorphism, $\lambda(ab)=\lambda(b\nu(a))$ |
 | symmetric | Frobenius with $\nu=\mathrm{id}$, $\lambda(ab)=\lambda(ba)$ |
-| $C = \sum_i a_i\otimes a^i$ | Casimir element, $\lambda(a_i a^j)=\delta_i^j$ |
+| $\Omega = \sum_i a_i\otimes a^i$ | Casimir element, $\lambda(a_i a^j)=\delta_i^j$ |
 | $\mu : A\otimes_k A \to A$ | multiplication |
 | $\Delta$, $\varepsilon = \lambda$ | comultiplication and counit of the dual coalgebra |
 | $\iota_u(x) = uxu^{-1}$ | inner automorphism |

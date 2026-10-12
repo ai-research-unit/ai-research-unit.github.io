@@ -10,13 +10,13 @@ $$
 
 the antisymmetric half of the general plain sesquilinear product of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*.
 
-The answer is extreme and it is the point of the article. **Every nonzero element of the block is a zero divisor, on both sides.** The set of the zero divisors of the block is therefore the whole space with the origin removed, and the block is separated from the four general products of the space, whose four zero-divisor sets coincide in the cone $\{c(\tilde Q)=0\}\setminus\{0\}$ of the central square. The block's set is strictly larger, and the enlargement is not a computation left undone but a theorem: the product is the projection of the parent onto the vector subspace, and the projection has a kernel.
+The answer is extreme and it is the point of the article. **Every nonzero element of the block is a zero divisor, on both sides.** The set of the zero divisors of the block is therefore the whole space with the origin removed, and the block is separated from the four general products of the space, whose four zero-divisor sets coincide in the cone $\{C(\tilde Q)=0\}\setminus\{0\}$ of the central square. The block's set is strictly larger, and the enlargement is not a computation left undone but a theorem: the product is the projection of the parent onto the vector subspace, and the projection has a kernel.
 
 The annihilators repay the uniformity of the set. Each nonzero element annihilates a **complex line** of elements, with one exception: the elements that are zero divisors of the plain product annihilate a **complex plane**. So the block distinguishes its elements even though it declares them all zero divisors, and the distinction is the invertibility of the parent.
 
-The zero divisors are defined by a product, and the definition is stated once in *Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor and the Annihilator*; throughout this article the product is $\diamond$ and, unqualified, **zero divisor** means zero divisor of $\diamond$. The plain product's cone, its two families and its criterion $c(\tilde Q)=0$ are *Zero Divisors of the General Plain Algebra*; the four general products' common set is *The Zero Divisors and the Twelve Structures*; the annihilators of one element in the four general products are *The Annihilating Elements of the Twelve Structures*. The classes that the zero divisors of the block are not are its idempotents, *Idempotents of the Antisymmetric Plain Sesqualgebra*, and its nilpotents, *Nilpotents of the Antisymmetric Plain Sesqualgebra*; the square-zero elements and the quadric of the diagonal are *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
+The zero divisors are defined by a product, and the definition is stated once in *Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor and the Annihilator*; throughout this article the product is $\diamond$ and, unqualified, **zero divisor** means zero divisor of $\diamond$. The plain product's cone, its two families and its criterion $C(\tilde Q)=0$ are *Zero Divisors of the General Plain Algebra*; the four general products' common set is *The Zero Divisors and the Twelve Structures*; the annihilators of one element in the four general products are *The Zero Divisors and the Twelve Structures*. The classes that the zero divisors of the block are not are its idempotents, *Idempotents of the Antisymmetric Plain Sesqualgebra*, and its nilpotents, *Nilpotents of the Antisymmetric Plain Sesqualgebra*; the square-zero elements and the quadric of the diagonal are *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$; an element is $\tilde Q=Q_0e_0+\mathbf{Q}$, with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The conjugations are ${}^{\natural}$, the coefficientwise $\bar{\cdot}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the plain product is written $\tilde P\tilde Q$ and the parent sesquilinear product $\tilde P\tilde Q^{*}$. The projection $\operatorname{Vect}$ removes the scalar part, its kernel is the centre $\mathbb{C}_{\mathbb{B}}$, and its image is the vector subspace $\operatorname{Vect}(\mathbb{B})$. The central square of the plain product is $c(\tilde Q)e_0=\tilde Q\tilde Q^{\natural}$ with $c(\tilde Q)=\sum_\mu Q_\mu^{2}$, and the element $\tilde Q$ is invertible in the plain product exactly when $c(\tilde Q)\neq0$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$; an element is $\tilde Q=Q_0e_0+\mathbf{Q}$, with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The conjugations are ${}^{\natural}$, the coefficientwise $\bar{\cdot}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the plain product is written $\tilde P\tilde Q$ and the parent sesquilinear product $\tilde P\tilde Q^{*}$. The projection $\operatorname{Vect}$ removes the scalar part, its kernel is the centre $\mathbb{C}_{\mathbb{B}}$, and its image is the vector subspace $\operatorname{Vect}(\mathbb{B})$. The central square of the plain product is $C(\tilde Q)e_0=\tilde Q\tilde Q^{\natural}$ with $C(\tilde Q)=\sum_\mu Q_\mu^{2}$, and the element $\tilde Q$ is invertible in the plain product exactly when $C(\tilde Q)\neq0$.
 
 ## The Definition
 
@@ -79,7 +79,7 @@ The annihilator therefore measures the parent invertibility: the block's zero di
 
 ## The Criterion
 
-For the plain product the zero divisors are selected by the single condition $c(\tilde Q)=0$, and the criterion is a statement of that product (*Zero Divisors of the General Plain Algebra*). The block has a criterion too, and it is empty.
+For the plain product the zero divisors are selected by the single condition $C(\tilde Q)=0$, and the criterion is a statement of that product (*Zero Divisors of the General Plain Algebra*). The block has a criterion too, and it is empty.
 
 **Theorem (the criterion of the block).** A nonzero element $\tilde Q$ is a zero divisor of the block if and only if $\tilde Q\neq0$. Equivalently, the zero-divisor set of the block is
 
@@ -99,7 +99,7 @@ and every element of it is a two-sided zero divisor.
 
 The set $\mathcal{Z}_\diamond=\mathbb{B}\setminus\{0\}$ is stable under every nonzero complex scaling, because the equation is linear in the value and the projection is $\mathbb{C}$-linear: if $\tilde Q\diamond\tilde R=0$ then $(\alpha\tilde Q)\diamond\tilde R=\alpha(\tilde Q\diamond\tilde R)=0$. It is stable under the star and under the natural conjugation: each is a bijection of the space fixing the origin, and the star of a value is the value of the reversed pair, $(\tilde Q\diamond\tilde R)^{*}=\tilde R\diamond\tilde Q$, so a vanishing pair is carried to a vanishing pair. It is not the complement of a computed set: the block has no invertible elements to remove.
 
-**Remark (the difference from the plain algebra is the point).** For the plain product the zero-divisor set is a complex hypersurface of $\mathbb{C}^{4}$, the cone $c(\tilde Q)=0$ with the origin removed; it has complex dimension three, and the elements outside it are invertible. For the block the set is the complement of the single point, of complex dimension four, and there is nothing outside it. The move is from a hypersurface to the complement of a point, and the reason is the move from an associative unital product to a projected non-unital one.
+**Remark (the difference from the plain algebra is the point).** For the plain product the zero-divisor set is a complex hypersurface of $\mathbb{C}^{4}$, the cone $C(\tilde Q)=0$ with the origin removed; it has complex dimension three, and the elements outside it are invertible. For the block the set is the complement of the single point, of complex dimension four, and there is nothing outside it. The move is from a hypersurface to the complement of a point, and the reason is the move from an associative unital product to a projected non-unital one.
 
 ### The Contrast with the Four General Products
 
@@ -108,12 +108,12 @@ The four general products of the space have **four different definitions and one
 **Theorem (the four sets coincide; cited).** For the four general products $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$ the zero-divisor set is the same, the cone
 
 $$
-\{\tilde Q\neq0:\ c(\tilde Q)=0\},\qquad c(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}.
+\{\tilde Q\neq0:\ C(\tilde Q)=0\},\qquad C(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}.
 $$
 
 This is *The Zero Divisors and the Twelve Structures*, §*The Four Zero-Divisor Sets Coincide*, and it is not restated here.
 
-The block is not one of the four general products, and its set does not coincide with theirs: the cone $\{c=0\}\setminus\{0\}$ is a proper subset of $\mathbb{B}\setminus\{0\}$, since the element $e_0$ has $c(e_0)=1\neq0$ and yet is a zero divisor of the block, $e_0\diamond e_0=0$. **The enlargement is exactly the complement of the cone**, and it is the contribution of the projection. The contrast is the expected one for a sesquilinear block: the parent product is not unital, and the projection removes the central part, so the barrier of the criterion cannot survive.
+The block is not one of the four general products, and its set does not coincide with theirs: the cone $\mathcal{C}\setminus\{0\}$ is a proper subset of $\mathbb{B}\setminus\{0\}$, since the element $e_0$ has $c(e_0)=1\neq0$ and yet is a zero divisor of the block, $e_0\diamond e_0=0$. **The enlargement is exactly the complement of the cone**, and it is the contribution of the projection. The contrast is the expected one for a sesquilinear block: the parent product is not unital, and the projection removes the central part, so the barrier of the criterion cannot survive.
 
 ## The Zero Divisors and the Other Classes
 
@@ -129,7 +129,7 @@ The zero divisors of the block are defined by the equation $\tilde Q\diamond\til
 
 The annihilators are a complex line for every element that is invertible in the plain product and a complex plane for every element that is not, and the right annihilator equals the left one, by conjugate-alternation. The set is a complex cone of complex dimension four, the origin removed, against the complex dimension three of the plain cone.
 
-The four general products of the space share the cone $\{c=0\}\setminus\{0\}$ as their zero-divisor set, a theorem of *The Zero Divisors and the Twelve Structures*; the block's set is strictly larger, and the enlargement is exactly the complement of that cone. The zero divisors of the block carry no information about the other classes: the unique idempotent is the origin and the nilpotents are a proper subcone, so an element is a zero divisor unconditionally and a nilpotent only rarely.
+The four general products of the space share the cone $\mathcal{C}\setminus\{0\}$ as their zero-divisor set, a theorem of *The Zero Divisors and the Twelve Structures*; the block's set is strictly larger, and the enlargement is exactly the complement of that cone. The zero divisors of the block carry no information about the other classes: the unique idempotent is the origin and the nilpotents are a proper subcone, so an element is a zero divisor unconditionally and a nilpotent only rarely.
 
 ## Summary of Notation
 
@@ -139,14 +139,13 @@ The four general products of the space share the cone $\{c=0\}\setminus\{0\}$ as
 | $\tilde Q\diamond\tilde R=0$ | the zero-divisor equation of the block, equivalent to $\tilde Q\tilde R^{*}\in\mathbb{C}_{\mathbb{B}}$ |
 | $A_\diamond(\tilde Q)$, $B_\diamond(\tilde Q)$ | the left and the right annihilator, the kernels of the two one-sided multiplications |
 | $\mathcal{Z}_\diamond=\mathbb{B}\setminus\{0\}$ | the zero-divisor set of the block, the whole space without the origin |
-| $c(\tilde Q)=\sum_\mu Q_\mu^{2}$ | the central square of the plain product, whose vanishing selects the plain zero divisors |
+| $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ | the central square of the plain product, whose vanishing selects the plain zero divisors |
 | $(\tilde Q^{-1})^{*}$ | the annihilating partner of an element invertible in the plain product |
 | $\operatorname{Vect}$, $\mathbb{C}_{\mathbb{B}}$ | the projection and its kernel, the centre |
 
 ## Further Reading
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Zero Divisor and the Annihilator*, for the definition and the annihilator.
-- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the plain cone, its two families and the criterion $c(\tilde Q)=0$.
+- *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the plain cone, its two families and the criterion $C(\tilde Q)=0$.
 - *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the coincidence of the four sets and the one-sided inverse equations.
-- *The Annihilating Elements of the Twelve Structures* (`articles_maths/the-annihilating-elements-of-the-twelve-structures.md`), for the annihilators in the four general products.
 - *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.md`), for the product, its projection and its image.

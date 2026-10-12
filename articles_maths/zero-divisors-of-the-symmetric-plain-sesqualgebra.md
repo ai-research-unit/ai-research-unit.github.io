@@ -87,7 +87,7 @@ The plain product splits its zero divisors into two disjoint families, the pure 
 
 ## The Comparison with the Four General Products
 
-The four general products of the space, $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, select one common zero-divisor set, the nonzero elements of the isotropic cone $\{c(\tilde P) = \sum_\mu P_\mu^{2} = 0\}$, and the coincidence is a theorem of the space (*The Zero Divisors and the Twelve Structures*). The block is a part of one of them, the general plain sesquilinear product, and its set is strictly larger.
+The four general products of the space, $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, select one common zero-divisor set, the nonzero elements of the isotropic cone $\{C(\tilde P) = \sum_\mu P_\mu^{2} = 0\}$, and the coincidence is a theorem of the space (*The Zero Divisors and the Twelve Structures*). The block is a part of one of them, the general plain sesquilinear product, and its set is strictly larger.
 
 **Theorem (the block's set contains the common set, strictly).** Every zero divisor of the four general products is a zero divisor of the block, and there are block zero divisors that are not zero divisors of any general product.
 
@@ -101,7 +101,7 @@ The four general products of the space, $\tilde P\tilde Q$, $\tilde P^{\natural}
 
 *Proof.* The zero-divisor set is the complement of the origin, so its intersection with $W$ is $W\setminus\{0\}$.
 
-**Remark (the question is emptied).** In the plain product the question "which remarkable subspaces contain zero divisors" is answered by the vanishing of the polynomial $c$ on each, and the answer varies from subspace to subspace (*Zero Divisors of the General Plain Algebra*). In the block the answer is the same for all of them, because the condition is not a polynomial in the element but the non-vanishing of the element itself. The block therefore has no preferred subspace for its zero divisors, and its subspaces are distinguished by other invariants, the closure or non-closure under the product, the images and the annihilators of their elements.
+**Remark (the question is emptied).** In the plain product the question "which remarkable subspaces contain zero divisors" is answered by the vanishing of the polynomial $C$ on each, and the answer varies from subspace to subspace (*Zero Divisors of the General Plain Algebra*). In the block the answer is the same for all of them, because the condition is not a polynomial in the element but the non-vanishing of the element itself. The block therefore has no preferred subspace for its zero divisors, and its subspaces are distinguished by other invariants, the closure or non-closure under the product, the images and the annihilators of their elements.
 
 ## Summary
 
@@ -117,14 +117,13 @@ The zero divisors of the symmetric plain sesqualgebra obey one criterion, $\tild
 | $\tilde P\star\tilde R = 0\Leftrightarrow H(\tilde P,\tilde R) = 0$ | the criterion of the block |
 | $A_\star(\tilde P) = B_\star(\tilde P) = \tilde P^{\perp}$ | the left and the right annihilators, equal |
 | $\mathcal{Z}_\star = \mathbb{B}\setminus\{0\}$ | the zero-divisor set, the punctured space |
-| $\{c = 0\}\setminus\{0\}$ | the common set of the four general products, strictly smaller |
+| $\mathcal{C}\setminus\{0\}$ | the common set of the four general products, strictly smaller |
 
 ## Further Reading
 
 - *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md`), for the product, its class and its table.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the relative definition of the zero divisor and the left, right and two-sided vocabulary.
 - *The Zero Divisors and the Twelve Structures* (`articles_maths/the-zero-divisors-and-the-twelve-structures.md`), for the common set of the four general products and the theorem that the four agree.
-- *The Annihilating Elements of the Twelve Structures* (`articles_maths/the-annihilating-elements-of-the-twelve-structures.md`), for the annihilators read product by product.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the two families of the parent and their criteria.
 - *Norm and Invertibility in the Symmetric Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.md`), for the definiteness and the absence of an invertible element.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces the set meets.
