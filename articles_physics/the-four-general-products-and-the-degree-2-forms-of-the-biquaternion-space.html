@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four General Products and the Degree-2 Forms of the Biquaternion Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-general-products-and-the-degree-2-forms-of-the-biquaternion-space"><strong>The Four General Products and the Degree-2 Forms of the Biquaternion Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four multiplications on its underlying complex vector space, the <strong>four general products</strong>, and each of them carries a <strong>degree-two form</strong>, its scalar part. This article is the first of the three reader articles that introduce the band <em>Focus on the 12 Algebraic Structures of Biquaternions over $\mathbb{C}$</em>: it reads the four general products and the four scalar forms they carry, while the second reads the twelve products the four split into and the third reads the four forms and the four algebraic norms on the remarkable subspaces and under the change of scalars.</p>
+<p>The four general products are the source of the whole band. The twelve products of <em>The Twelve Products and the Twelve Algebraic Structures</em> are the four general products together with their eight parts, and the four forms are the scalar parts of the four general products. Nothing here is proved anew. The products are the matter of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>, <em>Relations Between the Four General Products</em>, <em>Comparison Between the Four General Products</em> and <em>The Four General Products and Operators</em>; the forms are the matter of <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>, their diagonals of <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>, and the two on the subspaces of <em>Remarkable Subspaces and the Four General Products</em> and <em>Remarkable Subspaces and the Four Forms</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, the relations $e_k^{2}=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central scalar imaginary $i$ with $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\mathbf Q$, with complex coefficients $Q_\mu$ and vector part $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation ${}^{\natural}$ fixes $i$ and negates $e_1,e_2,e_3$; the coefficientwise conjugation $\bar{\cdot}$ conjugates the four coefficients; the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so that $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ with $\varepsilon=(1,-1,-1,-1)$. The scalar part is $\mathrm{Sc}(\tilde X)=X_0$ and the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$. The complex bilinear dot product and cross product of the vector parts are $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$, and $\overline{\mathbf Q}$ is the coefficientwise conjugate of the vector part. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$, $\mathbb{M}_-$. All conventions, including the reading of the four pairings with one bracket, are those of <em>Conventions in the Biquaternion Universe</em>.</p>
+<h2 id="the-four-general-products">The Four General Products</h2>
+<p><strong>Definition (the four general products).</strong> The four general products are the four rules</p>
+<p>$$
+\tilde P\tilde Q , \qquad \tilde P^{\natural}\tilde Q , \qquad \tilde P\tilde Q^{*} , \qquad \tilde P^{\natural}\tilde Q^{*} ,
+$$</p>
+<p>the <strong>general plain bilinear</strong>, the <strong>general quaternionic bilinear</strong>, the <strong>general plain sesquilinear</strong> and the <strong>general quaternionic sesquilinear</strong> product.</p>
+<p><strong>One multiplication table, two insertions.</strong> The four rules multiply the coordinates of the two elements on the same products $e_\mu e_\nu$ of the basis, and they differ in one point alone: whether the first element is read as it stands or through ${}^{\natural}$, and whether the second is read as it stands or through ${}^{*}$, the two choices made independently. The four are therefore the orbit</p>
+<p>$$
+\tilde P\star\tilde Q=K_1(\tilde P)\,K_2(\tilde Q),\qquad K_1\in\{\mathrm{id},{}^{\natural}\},\quad K_2\in\{\mathrm{id},{}^{*}\},
+$$</p>
+<p>of one rule under the insertion of a conjugation into a slot. Nothing else varies, and ${}^{*}$ is never put in the first slot nor ${}^{\natural}$ in the second.</p>
+<p><strong>The scalar–vector forms.</strong> Written on the coordinates of the two elements,</p>
+<p>$$
+\tilde P\tilde Q=\bigl[P_0Q_0-(\mathbf P,\mathbf Q)\bigr]+P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q,
+$$</p>
+<p>$$
+\tilde P^{\natural}\tilde Q=\bigl[P_0Q_0+(\mathbf P,\mathbf Q)\bigr]+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q,
+$$</p>
+<p>$$
+\tilde P\tilde Q^{*}=\bigl[P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q},
+$$</p>
+<p>$$
+\tilde P^{\natural}\tilde Q^{*}=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P+\mathbf P\times\overline{\mathbf Q}.
+$$</p>
+<p>The first two are $\mathbb{C}$-bilinear in both slots; the last two are $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. No two of the four agree on every pair.</p>
+<p><strong>The two slot rules.</strong> The <strong>second slot</strong> decides whether the operation is a <strong>composition</strong> or a <strong>pairing</strong>. Read without a conjugation it is $\mathbb{C}$-bilinear and can be iterated, which is the two <strong>general algebras</strong> over $\mathbb{C}$; read with the star it is sesquilinear over $(\mathbb{C},\bar{\cdot})$ and can only be evaluated, which is the two <strong>general sesqualgebras</strong>. The <strong>first slot</strong> decides whether the scalar form is definite on each sector or carries a signature: the natural conjugation ${}^{\natural}$ toggles the coefficient $\varepsilon_\mu$ of the scalar form, so the plain rows carry the form $\sum_\mu P_\mu Q_\mu$ or $\sum_\mu P_\mu\overline{Q_\mu}$, and the quaternionic rows the twisted form $\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ or $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$. It is the first slot that turns a definite form into a signed one, and the first slot that decides which of the four carries a metric.</p>
+<h2 id="relations-between-the-four">Relations Between the Four</h2>
+<p>The four general products are not four unrelated rules: the two insertions are independent, and every link between the four is a consequence of that single distinction. The two conjugations separate the scalar part of a factor from its vector part, by the splitting identities</p>
+<p>$$
+\tilde P\tilde Q\pm\tilde P^{\natural}\tilde Q=2P_0\tilde Q \ \text{and}\ 2\mathbf P\tilde Q,
+\qquad
+\tilde P\tilde Q^{*}\pm\tilde P^{\natural}\tilde Q^{*}=2P_0\tilde Q^{*}\ \text{and}\ 2\mathbf P\tilde Q^{*},
+$$</p>
+<p>and the same two identities hold with the two vector parts in place of the scalar parts. The ${}^{\natural}$ of the quaternionic product and the ${}^{*}$ of the sesquilinear product return a product with the slots exchanged, which is why the scalar parts of the two are symmetric and conjugate-symmetric respectively, while no one of the four general products is commutative. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde P}\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})$ and $\mathrm{Sc}(\tilde P\bar{\tilde Q})=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.</p>
+<p><strong>Comparison.</strong> Of the four, exactly one is <strong>associative</strong>: the general plain bilinear product. The unit $e_0$ is two-sided for the general plain bilinear product, <strong>left</strong> for the general quaternionic bilinear product, <strong>right</strong> for the general plain sesquilinear product, and <strong>absent</strong> for the general quaternionic sesquilinear product. No one of the four is commutative, and none has a two-sided unit other than the plain one. The four differ in the class of the operation — the two algebras over $\mathbb{C}$ against the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$ — and in the pairing they carry, not in the multiplication table of the units, which is the same in all four.</p>
+<h2 id="the-degree-2-forms-the-four-products-carry">The Degree-2 Forms the Four Products Carry</h2>
+<p>The scalar part of a general product is a form of degree two in the pair of its arguments, and the four scalar parts are the four <strong>forms</strong> of the algebra. With the one bracket of <em>Conventions in the Biquaternion Universe</em> whose subscript names the inserted conjugation,</p>
+<p>$$
+B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu,
+\qquad
+N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu,
+$$</p>
+<p>$$
+H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\textstyle\sum_\mu P_\mu\overline{Q_\mu},
+\qquad
+K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}.
+$$</p>
+<p>They are named the <strong>general plain bilinear</strong> form $B$, the <strong>general quaternionic bilinear</strong> form $N$, the <strong>general plain sesquilinear</strong> or <strong>Hermitian</strong> form $H$, and the <strong>general quaternionic sesquilinear</strong> or <strong>Krein</strong> form $K$; their values are the jobs of composition, causality, probability and gauge. The four are <strong>one bilinear form read through the two involutions</strong>,</p>
+<p>$$
+N(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q),\qquad
+H(\tilde P,\tilde Q)=B(\tilde P,\tilde Q^{*}),\qquad
+K(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q^{*}),
+$$</p>
+<p>so that the four forms are not four computations but one computation in the four insertions of the grid. The first two are symmetric and $\mathbb{C}$-bilinear, the last two conjugate-symmetric and sesquilinear: $H(\tilde P,\tilde Q)=\overline{H(\tilde Q,\tilde P)}$ and $K(\tilde P,\tilde Q)=\overline{K(\tilde Q,\tilde P)}$.</p>
+<p><strong>The four algebraic norms.</strong> The <strong>algebraic norm</strong> of a form is its diagonal, the degree-two function of one element,</p>
+<p>$$
+B(\tilde Q)=Q_0^{2}-\textstyle\sum_kQ_k^{2},\qquad
+N(\tilde Q)=Q_0^{2}+\textstyle\sum_kQ_k^{2},\qquad
+H(\tilde Q)=\textstyle\sum_\mu\lvert Q_\mu\rvert^{2},\qquad
+K(\tilde Q)=\lvert Q_0\rvert^{2}-\textstyle\sum_k\lvert Q_k\rvert^{2}.
+$$</p>
+<p>Two of the four have a sense the others lack, and the two senses are not the same sense. <strong>$N$ is multiplicative</strong>: on the general quaternionic bilinear product,</p>
+<p>$$
+N(\tilde P^{\natural}\tilde Q)=N(\tilde P)\,N(\tilde Q),
+$$</p>
+<p>so the units and the zero divisors of that product are closed under it, and the norm behaves as a charge of the composition rather than as a length; the norm is those of no other row. <strong>$H$ is positive definite</strong>: $H(\tilde Q)>0$ for $\tilde Q\neq0$, it is real on every element, and it is the unique topological norm of the space, its square root being the Euclidean norm. $H$ is the only one of the four that is definite on each of the remarkable subspaces; the other three are indefinite on the whole algebra, $B$ and $N$ as complex bilinear forms of rank four and $K$ as an indefinite Hermitian form. This is the separation of the <strong>multiplicative</strong> sense of a norm from the <strong>positive definite</strong> sense, and it is one of the things the remarkable subspaces measure.</p>
+<h2 id="the-four-general-products-and-their-operators">The Four General Products and Their Operators</h2>
+<p>Each general product gives its elements two families of operators, the left and the right multiplications, and the four products give four such families. The passage from the product to its operators is the passage from a pairing to an adjoint, and it is worth stating what the product does and does not decide. It <strong>decides the pairing</strong>, hence the adjoint, hence the name of the family: the plain bilinear product gives the association family, the general quaternionic bilinear product the signed inner conjugation family, the general plain sesquilinear product the Hermitian adjoint family, and the general quaternionic sesquilinear product the Krein form, which carries its own indefinite theory rather than a family of the four-adjoint kind. It does <strong>not</strong> decide the action: whether an element acts as a rotation or as a reflection is decided by the element and by the inserted sign, and the inserted sign is a choice among the involutions the algebra already carries. The qualification is that the choice is not arbitrary: on the vector subspace the plain product cannot produce a reflection, only its negative, so one insertion is forced by the algebra and not merely preferred.</p>
+<p>The left multiplications of the four are the general plain bilinear ones read through the conjugations,</p>
+<p>$$
+L^{\natural}_{\tilde P}=L_{\tilde P^{\natural}},\qquad
+L^{*}_{\tilde P}=(\cdot)^{*}\circ R_{\tilde P^{*}},\qquad
+L^{\natural*}_{\tilde P}=(\cdot)^{*}\circ R_{\bar{\tilde P}},
+$$</p>
+<p>so that the general plain bilinear and the general quaternionic bilinear products have a monoid of left multiplications, and the two sesquilinear products do not. The adjoint of a multiplication for the trace form is the multiplication by the star-conjugate, $(L_{\tilde A})^{\dagger}=L_{\tilde A^{*}}$, the trace form being $\mathrm{Tr}(\tilde P\tilde Q)=2\,\mathrm{Sc}(\tilde P\tilde Q)$. The reading of the operators of the four products is <em>The Four General Products and Operators</em>, and the family names are read in <em>The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples</em>.</p>
+<h2 id="the-four-products-on-the-remarkable-subspaces">The Four Products on the Remarkable Subspaces</h2>
+<p>The four general products do not behave alike on the six remarkable subspaces, and the two facts that matter for the band are the <strong>closure</strong> and the <strong>part that lands in a subspace</strong>.</p>
+<p><strong>Closure.</strong> All four general products keep a subspace inside itself for exactly <strong>two</strong> of the six: the centre $\mathbb{C}_{\mathbb{B}}$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. On the centre the four give the field $\mathbb{C}$; on the quaternion subspace the general plain product gives a copy of the real quaternion algebra, whose symmetrisation is a Jordan algebra. On the other four subspaces — the vector subspace, the antiquaternion subspace and the two sectors — no one of the four keeps the subspace inside itself. The two complex subspaces, the centre and the vector subspace, are the ones multiplication by $i$ preserves; the four real-type subspaces, the quaternion and antiquaternion subspaces and the two sectors, are the ones it exchanges in pairs, and the exchange is what moves a product out of its subspace.</p>
+<p><strong>The parts and the subspaces.</strong> The two halves of a product land in the remarkable subspaces, and the pattern is the same for all four general products: the <strong>symmetrisation</strong> of every one of the four stays inside exactly the centre, the quaternion subspace and the Hermitian subspace, and the <strong>bracket</strong> of every one of the four stays inside exactly the centre and the quaternion subspace, the two bilinear brackets also staying inside the vector subspace and the general plain sesquilinear bracket also inside the anti-Hermitian subspace. Whether the closed operation then satisfies its identity decides the algebra. <strong>Three subspaces are Jordan algebras</strong>: the centre, for the general plain and the general quaternionic bilinear product, which coincide there and give the field $\mathbb{C}$; the quaternion subspace, for the general plain product, giving the symmetrised real quaternion algebra; and the Hermitian subspace, for the general plain bilinear and the general plain sesquilinear product, which coincide there, giving the Hermitian Jordan algebra of degree two. <strong>Four are Lie algebras</strong>: the centre, for all four products, abelian for the two bilinear and the two-dimensional non-abelian algebra for the two sesquilinear; the vector subspace, for the two bilinear brackets, the complex Lie algebra $\mathfrak{sl}(2,\mathbb{C})$; the quaternion subspace, for the general plain bilinear and the general quaternionic sesquilinear bracket, giving $\mathbb{R}e_0\oplus\mathfrak{su}(2)$; and the anti-Hermitian subspace, for the two brackets that reproduce the commutator up to sign, giving $\mathfrak{u}(2)$. The quaternion subspace is the one four-dimensional subspace carrying both a Jordan and a Lie algebra, the Hermitian subspace a Jordan algebra alone, the anti-Hermitian subspace a Lie algebra alone, and the anti-quaternion subspace neither. The classification is <em>Remarkable Subspaces and the Four General Products</em>.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<p>The four general products are the four jobs a relativistic quantum theory needs, and the four forms are the four quantities the jobs measure. The readings are the framework's naming of a proved algebra and are labelled as readings. <strong>Composition</strong>: the general plain bilinear product $\tilde P\tilde Q$ is the composition of two operations, associative, with the two-sided unit and the non-commutativity that reads as order, and its scalar part $B$ is the <strong>sector sign</strong>, definite of signature $(0,4)$ on the material sector and $(4,0)$ on the informational one. <strong>Causality</strong>: the general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ squares to the interval, $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_0$, so that the mass shell is a level set of the multiplicative norm $N$ and the light cone its zero set. <strong>Probability</strong>: the general plain sesquilinear product $\tilde P\tilde Q^{*}$ carries the positive definite form $H$, the Born pairing of a state and an observable, and the unitary evolution built on it. <strong>Gauge</strong>: the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ carries the indefinite Krein form $K$, real on the diagonal and unable to normalise a state, the form a gauge fixing uses rather than a probability.</p>
+<p>Two statements bind the readings to the slots. The <strong>second slot</strong> divides the four into the two that can be iterated and the two that can only be evaluated: a composition and a causality may be composed, a probability and a gauge calibration may only be measured, and this is the algebra's own distinction between a dynamics and a pairing. The <strong>first slot</strong> divides the four into the two whose form is definite on each sector and the two whose form carries a signature: the sector sign $B$ and the Born form $H$ measure, the interval $N$ and the Krein form $K$ carry a metric with a light cone. On the material sector $\mathbb{M}_-$ the four forms are real: the interval $N$ is the metric of signature $(3,1)$, $K$ is its negative, $H$ is the Euclidean square and $B$ its negative. The full reading of the four forms on the remarkable subspaces is <em>Remarkable Subspaces and the Four Forms</em>, and the four readings are collected in <em>The Four General Products and Their Physical Readings</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion complex space carries four general products, the four insertions of a conjugation into a slot of one multiplication: the general plain bilinear $\tilde P\tilde Q$, the general quaternionic bilinear $\tilde P^{\natural}\tilde Q$, the general plain sesquilinear $\tilde P\tilde Q^{*}$ and the general quaternionic sesquilinear $\tilde P^{\natural}\tilde Q^{*}$. The two bilinear products are $\mathbb{C}$-bilinear and can be iterated, the two sesquilinear ones are conjugate-linear in the second slot and can only be evaluated; no two of the four agree on every pair, and exactly one, the general plain product, is associative.</p>
+<p>The scalar part of each product is a degree-two form, and the four forms are one bilinear form $B$ read through the two involutions, $N=B(\tilde P^{\natural},\tilde Q)$, $H=B(\tilde P,\tilde Q^{*})$ and $K=B(\tilde P^{\natural},\tilde Q^{*})$. Their diagonals are the four algebraic norms, of which $N$ is multiplicative and $H$ is positive definite; $N$ is those of no other row and $H$ is the only one definite on each remarkable subspace. The four general products preserve a remarkable subspace for exactly two subspaces, the centre and the quaternion subspace, and it is there, with the Hermitian subspace, that a Jordan or a Lie structure forms.</p>
+<p>The four products are read physically as composition, causality, probability and gauge, and the four forms as the sector sign, the interval, the Born pairing and the Krein calibration; the second slot decides whether the job is a composition or a pairing, and the first slot whether its form measures or carries a metric. The products are the source of the band: the twelve products are the four together with their parts, and the twelve structures are the algebraic structures of those twelve operations.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra, basis $e_0,e_1,e_2,e_3$, central imaginary $i$</td>
+</tr>
+<tr>
+<td>$\tilde P=P_0e_0+\mathbf P$</td>
+<td>a biquaternion, its scalar part and vector part</td>
+</tr>
+<tr>
+<td>${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$</td>
+<td>the natural, the coefficientwise and the Hermitian conjugation</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>the four general products</td>
+</tr>
+<tr>
+<td>$K_1(\tilde P)K_2(\tilde Q)$</td>
+<td>the general product as one multiplication with two inserted conjugations</td>
+</tr>
+<tr>
+<td>$B$, $N$, $H$, $K$</td>
+<td>the four forms: general plain bilinear, general quaternionic bilinear, general plain sesquilinear, general quaternionic sesquilinear</td>
+</tr>
+<tr>
+<td>$N(\tilde P^{\natural}\tilde Q)=N(\tilde P)N(\tilde Q)$</td>
+<td>the multiplicativity of the quaternionic norm</td>
+</tr>
+<tr>
+<td>$H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>the positive definite Hermitian norm, the unique topological norm</td>
+</tr>
+<tr>
+<td>$L^{\star}_{\tilde P}$, $R^{\star}_{\tilde P}$</td>
+<td>the left and right multiplication in a product, and $(L_{\tilde A})^{\dagger}=L_{\tilde A^{*}}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>the six remarkable subspaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-four-general-products-of-the-biquaternion-c-space.md</code>), for the four products in coordinates and their scalar–vector forms.</li>
+<li><em>Relations Between the Four General Products</em> (<code>articles_maths/relations-between-the-four-general-products.md</code>), for the splitting identities, the conjugate of a product and the four scalar parts.</li>
+<li><em>Comparison Between the Four General Products</em> (<code>articles_maths/comparison-between-the-four-general-products.md</code>), for the property table: associativity, the units and the commutativity of the four.</li>
+<li><em>The Four General Products and Operators</em> (<code>articles_maths/the-four-general-products-and-operators.md</code>), for the division of labour between the product, the pairing and the inserted sign.</li>
+<li><em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-forms-over-the-biquaternion-c-space.md</code>) and <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md</code>), for the four forms, their count and their diagonals.</li>
+<li><em>Remarkable Subspaces and the Four General Products</em> (<code>articles_maths/remarkable-subspaces-and-the-four-general-products.md</code>) and <em>Remarkable Subspaces and the Four Forms</em> (<code>articles_maths/remarkable-subspaces-and-the-four-forms.md</code>), for the four products and the four forms on the six subspaces.</li>
+<li><em>Conventions in the Biquaternion Universe</em> (<code>articles_physics/conventions-in-the-biquaternion-universe.md</code>), for the conventions of the algebra, the conjugations and the remarkable subspaces.</li>
+<li><em>The Four General Products and Their Physical Readings</em> (<code>articles_physics/the-four-general-products-and-their-physical-readings.md</code>), for the four physical readings of the four products and the four forms.</li>
+<li>Companion articles <em>The Twelve Products and the Twelve Algebraic Structures</em> (<code>articles_physics/the-twelve-products-and-the-twelve-algebraic-structures.md</code>) and <em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em> (<code>articles_physics/the-four-forms-the-four-algebraic-norms-and-the-change-of-scalars.md</code>).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
