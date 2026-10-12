@@ -52,32 +52,88 @@
       <div class="article-body">
         <h1 id="idempotents"><strong>Idempotents</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>An idempotent of a structure is an element equal to its own square. The quaternion space carries six structures, and the idempotent set is read here for all six. The answer is a two-point set for four of them and the single origin for the two cross products, and the comparison with the biquaternion case explains why the answer is so coarse. The six structures are <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, the products are <em>The 6 Products of the Quaternion Real Space</em>, and the general definitions are <em>Definitions for the Study of the 6 Algebraic Structures</em>, all above this article in this category.</p>
-<h2 id="the-idempotents-of-a-structure">The Idempotents of a Structure</h2>
-<p><strong>Definition.</strong> For a product $\star$ on $\mathbb{H}$ an <strong>idempotent</strong> is an element $\tilde\pi$ with
-$$
-\tilde\pi\star\tilde\pi=\tilde\pi ,
-$$
-and a <strong>nontrivial</strong> idempotent is one different from the origin. The origin is an idempotent of every structure, because the product is linear and the zero element absorbs. An idempotent of a structure without a unit has no reason to be connected with the unit of the algebra $\mathbb{H}$, and the two cross products show that it need not be.</p>
-<p>The idempotent equation is an equation on the <strong>square operator</strong> $\tilde x\mapsto\tilde x\star\tilde x$, so the idempotents of the six structures are read from their six squares. The six squares are two, repeated:
-$$
-\tilde x\tilde x=\tilde x\bullet\tilde x=(x_0^2-|\mathbf x|^2)e_0+2x_0\mathbf x ,\qquad
-\tilde x^{\natural}\tilde x=N(\tilde x)e_0=N(\tilde x,\tilde x)e_0 ,
-$$
-$$
-\tilde x\wedge\tilde x=0 ,\qquad
-\tilde x\wedge^{\natural}\tilde x=0 ,
-$$
-the first line because the Jordan product agrees with the plain product on the diagonal, and the quaternionic structure by the definition of the norm and of the form.</p>
-<h2 id="the-four-structures-with-the-two-point-set">The Four Structures with the Two-Point Set</h2>
-<p><strong>Theorem (the plain and quaternionic structures).</strong> The idempotents of the general plain structure are $\{0,e_0\}$; those of the symmetric plain structure are $\{0,e_0\}$; those of the general quaternionic structure are $\{0,e_0\}$; and those of the symmetric quaternionic structure are $\{0,e_0\}$. No structure of the four has a nontrivial idempotent besides the unit element $e_0$ of $\mathbb{H}$.</p>
-<p><em>Proof.</em> For the general plain structure, $\tilde x^2=\tilde x$ reads $\tilde x(\tilde x-e_0)=0$; the plain algebra is a division algebra, so $\tilde x=0$ or $\tilde x=e_0$. For the general quaternionic structure, $\tilde x^{\natural}\tilde x=N(\tilde x)e_0=\tilde x$ puts $\tilde x$ in the scalar line, and the scalar equation $s^2=s$ gives $s\in\{0,1\}$. The symmetric plain structure has the plain square on the diagonal, $\tilde x\bullet\tilde x=\tilde x^2$, so its equation is the same as the general plain one and its set is the same. The symmetric quaternionic structure has the square $N(\tilde x)e_0$, so its equation is the same as the general quaternionic one.</p>
-<p><strong>Remark (the sign of the square).</strong> The two-point set is the set of idempotents of the scalar field $\mathbb{R}$, embedded as the scalar line; the four structures inherit it because their square operator either is the plain square, whose only solutions are $0$ and $e_0$, or is the definite scalar $N(\tilde x)e_0$, whose only solutions are the same two. The pure elements, which are the zero divisors of the Jordan structure, have the square $-\mathbf u\cdot\mathbf u\,e_0=-|\mathbf u|^2e_0$, the negative of what a nontrivial idempotent would need: the construction $\tfrac12(e_0+\mathbf u)$ closes only if $\mathbf u$ is a root of $+e_0$, and no nonzero pure element is. So the zero divisors of the block carry no idempotent with them.</p>
-<h2 id="the-two-alternating-structures">The Two Alternating Structures</h2>
-<p><strong>Theorem (the cross products).</strong> The idempotents of the plain cross product and of the quaternionic cross product are both the single origin, $\{0\}$.</p>
-<p><em>Proof.</em> Both products are alternating, so $\tilde x\wedge\tilde x=0$ and $\tilde x\wedge^{\natural}\tilde x=0$ for every element; the idempotent equation therefore reads $\tilde x=0$. The origin is an idempotent of every structure, and it is the only one here.</p>
-<p>The two cross products are the only structures of the six with a one-point idempotent set, and they are also the only ones whose product is alternating, so the square vanishes identically and nothing survives the equation. The four others carry the extra point because their square operator returns $e_0$ on the unit, $\tilde e_0^2=e_0$ for the plain square and $N(e_0)e_0=e_0$ for the scalar one; the two cross products, whose square vanishes, do not even have that point: $e_0\wedge e_0=0\neq e_0$.</p>
-<h2 id="the-six-idempotent-sets-side-by-side">The Six Idempotent Sets Side by Side</h2>
+<p>An <strong>idempotent</strong> of a product $\star$ on the quaternion space $\mathbb{H}$ is an element $\tilde x$ with</p>
+<p>$$
+\tilde x\star\tilde x=\tilde x ,
+$$</p>
+<p>the equation read in that product, and the <strong>idempotent set</strong> of the structure is the set of its solutions. The equation is the algebraic form of a projection, and it names a product, so the six structures of the space answer it six times. The answer is coarse: a two-point set for four of them and the single origin for the two cross products, and the coarseness comes from the real field itself, which has no scalar imaginary and no isotropic direction, so that the two-parameter and four-parameter families of the biquaternion plain product collapse to the trivial pair.</p>
+<p><strong>The six names.</strong> The space carries six products, so the generic definition poses six questions; this article answers them once for all six. Each product has a three-letter code: the first letter is the operation, $\mathrm G$ the general product and $\mathrm S$, $\mathrm A$ its symmetric and antisymmetric parts; the second is the product of the family, $\mathrm P$ the plain one and $\mathrm Q$ the quaternionic one, whose first slot is read through the natural conjugation; and the third letter is the same one for the six, $\mathrm A$ the algebra over $\mathbb{R}$. The six are read in the two families of <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the family</th>
+<th>general</th>
+<th>symmetric</th>
+<th>antisymmetric</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain algebra</td>
+<td>$\mathrm{GPA}$</td>
+<td>$\mathrm{SPA}$</td>
+<td>$\mathrm{APA}$</td>
+</tr>
+<tr>
+<td>the quaternionic algebra</td>
+<td>$\mathrm{GQA}$</td>
+<td>$\mathrm{SQA}$</td>
+<td>$\mathrm{AQA}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and every table of the article follows this order, family by family and, inside a family, general then symmetric then antisymmetric.</p>
+<p><strong>Scope and owners.</strong> This article owns the comparison of the six idempotent sets and the reading of the collapse against the biquaternion case. The sets themselves stay owned by the six articles <em>Idempotents of the …</em>, cited one by one in §<em>The Six Structures and the Idempotents</em>. The products are <em>The 6 Products of the Quaternion Real Space</em> and the structures <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, whose codes are used throughout; the vocabulary, the idempotent stated once for a general product, is <em>Definitions for the Study of the 6 Algebraic Structures</em>; the division property is <em>Norm and Invertibility in the General Plain Algebra</em>; the square-zero sets are <em>Nilpotents</em>; the root problems are <em>Square Roots of Minus One, Zero and Plus One</em> and <em>Square Roots of a General Element</em>; and the biquaternion case that §<em>The Contrast with the Biquaternion Case</em> reads is <em>Idempotents</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_0=1$; a general element is $\tilde x=x_0e_0+\mathbf x$ with $x_0\in\mathbb{R}$ and $\mathbf x=\sum_kx_ke_k$; the natural conjugation is $\tilde x^{\natural}=x_0-\mathbf x$; the <strong>plain square</strong> is $\tilde x^{2}=(x_0^{2}-\lvert\mathbf x\rvert^{2})e_0+2x_0\mathbf x$, of scalar part the plain form $B(\tilde x)=x_0^{2}-\lvert\mathbf x\rvert^{2}$; and the <strong>quaternionic square</strong> is $\tilde x^{\natural}\tilde x=N(\tilde x)e_0$, of the definite quaternion form $N(\tilde x)=x_0^{2}+\lvert\mathbf x\rvert^{2}$. The plain product is $\tilde x\tilde y$, the Jordan product is $\tilde x\bullet\tilde y=\tfrac12(\tilde x\tilde y+\tilde y\tilde x)$, the plain cross product is $\tilde x\wedge\tilde y=\tfrac12(\tilde x\tilde y-\tilde y\tilde x)=\mathbf x\times\mathbf y$, and the quaternionic cross product is $\tilde x\wedge^{\natural}\tilde y=\tfrac12(\tilde x^{\natural}\tilde y-\tilde y^{\natural}\tilde x)$.</p>
+<h2 id="the-six-structures-and-the-idempotents">The Six Structures and the Idempotents</h2>
+<p>The idempotent equation is an equation on the <strong>square operator</strong> $\tilde x\mapsto\tilde x\star\tilde x$, so the six idempotent sets are read from the six squares, and the six squares are three:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the square</th>
+<th>the structures</th>
+<th>at the two equal arguments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain square</td>
+<td>$\mathrm{GPA}$, $\mathrm{SPA}$</td>
+<td>$(x_0^{2}-\lvert\mathbf x\rvert^{2})e_0+2x_0\mathbf x$</td>
+</tr>
+<tr>
+<td>the central square</td>
+<td>$\mathrm{GQA}$, $\mathrm{SQA}$</td>
+<td>$N(\tilde x)e_0$</td>
+</tr>
+<tr>
+<td>the vanishing square</td>
+<td>$\mathrm{APA}$, $\mathrm{AQA}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The origin is an idempotent of every structure, the product being linear and the zero element absorbing; the unit $e_0$ is an idempotent of the four structures that are not alternating, and it fails for the two cross products, whose square vanishes at the two equal arguments.</p>
+<p><strong>Theorem (the six idempotent sets; quoted).</strong> Among the six structures of the quaternion real space the idempotents are $\{0,e_0\}$ for $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$ and $\mathrm{SQA}$, and $\{0\}$ for $\mathrm{APA}$ and $\mathrm{AQA}$. Only two idempotent sets occur, the origin belongs to both, and no nontrivial idempotent exists except the unit $e_0$ of the four non-alternating structures.</p>
+<p><em>Proof.</em> For the general plain structure, $\tilde x^{2}=\tilde x$ reads $\tilde x(\tilde x-e_0)=0$; the plain algebra is a division algebra, so $\tilde x=0$ or $\tilde x=e_0$. For the general quaternionic structure, $\tilde x^{\natural}\tilde x=N(\tilde x)e_0=\tilde x$ puts $\tilde x$ in the scalar line, and the scalar equation $s^{2}=s$ gives $s\in\{0,1\}$. The symmetric plain structure has the plain square on the diagonal, $\tilde x\bullet\tilde x=\tilde x^{2}$, so its equation is the same as the general plain one and its set is the same; the symmetric quaternionic structure has the square $N(\tilde x)e_0$, so its equation is the same as the general quaternionic one. The two cross products are alternating, so $\tilde x\wedge\tilde x=0$ and $\tilde x\wedge^{\natural}\tilde x=0$ for every element, and the idempotent equation reads $\tilde x=0$.</p>
+<p>The classification is sharp, and it reads the two ways a square operator can be too coarse to have a nontrivial solution. The <strong>alternating</strong> square vanishes identically, so it destroys the equation entirely and leaves the origin; the <strong>definite scalar</strong> square and the <strong>plain</strong> square vanish only at the origin, so the only solutions are the two idempotents of the scalar field, $0$ and $1$, read on the scalar line. The unit enters the equation because the square of $e_0$ is $e_0$ in the four structures that are not alternating, and it does not for the two cross products: $e_0\wedge e_0=0\neq e_0$.</p>
+<p>The six are read one by one below; each names the product, its square and its idempotent set, and cites the article that owns them.</p>
+<h3 id="math72-the-general-plain-algebra">$\mathrm{GPA}$, the general plain algebra</h3>
+<p>The product is $\tilde x\tilde y$, and its square is the plain square, of scalar part $B(\tilde x)=x_0^{2}-\lvert\mathbf x\rvert^{2}$ and vector part $2x_0\mathbf x$. The idempotents are $0$ and $e_0$ alone: the equation $\tilde x(\tilde x-e_0)=0$ meets the division property of the plain algebra, and no isotropic direction of the plain form is real. The article is <em>Idempotents of the General Plain Algebra</em>.</p>
+<h3 id="math79-the-symmetric-plain-algebra">$\mathrm{SPA}$, the symmetric plain algebra</h3>
+<p>The product is the Jordan product $\tilde x\bullet\tilde y$, and its square is the plain square, $\tilde x\bullet\tilde x=\tilde x^{2}$; the idempotent set is $\{0,e_0\}$, element for element that of $\mathrm{GPA}$, although the Jordan structure is not associative. The article is <em>Idempotents of the Symmetric Plain Algebra</em>.</p>
+<h3 id="math84-the-antisymmetric-plain-algebra">$\mathrm{APA}$, the antisymmetric plain algebra</h3>
+<p>The product is the plain cross product $\tilde x\wedge\tilde y=\mathbf x\times\mathbf y$, alternating, so its square vanishes identically. The idempotent set is the origin alone, and $e_0$ is not an idempotent here. The article is <em>Idempotents of the Antisymmetric Plain Algebra</em>.</p>
+<h3 id="math87-the-general-quaternionic-algebra">$\mathrm{GQA}$, the general quaternionic algebra</h3>
+<p>The product is $\tilde x^{\natural}\tilde y$, and its square is the central element $N(\tilde x)e_0$; an idempotent is therefore central, $\tilde x=se_0$, and the equation on the centre, $s^{2}=s$, leaves $s\in\{0,1\}$. The idempotent set is the trivial pair. The article is <em>Idempotents of the General Quaternionic Algebra</em>.</p>
+<h3 id="math93-the-symmetric-quaternionic-algebra">$\mathrm{SQA}$, the symmetric quaternionic algebra</h3>
+<p>The product is $N(\tilde x,\tilde y)e_0$, the quaternion form read as a product, and its square is the definite form, $\tilde x\star\tilde x=N(\tilde x)e_0$; the idempotent set is $\{0,e_0\}$, as for $\mathrm{GQA}$. The article is <em>Idempotents of the Symmetric Quaternionic Algebra</em>.</p>
+<h3 id="math98-the-antisymmetric-quaternionic-algebra">$\mathrm{AQA}$, the antisymmetric quaternionic algebra</h3>
+<p>The product is the quaternionic cross product $\tilde x\wedge^{\natural}\tilde y$, alternating, so its square vanishes identically. The idempotent set is the origin alone. The article is <em>Idempotents of the Antisymmetric Quaternionic Algebra</em>.</p>
+<p><strong>Remark (the sign of the square).</strong> The two-point set is the set of idempotents of the scalar field $\mathbb{R}$, read on the scalar line, and the four structures inherit it because their square operator is the plain square or the definite scalar $N(\tilde x)e_0$, and neither has a real solution beyond the two. The pure elements, which are the zero divisors of the Jordan structure, have the square $-\lvert\mathbf x\rvert^{2}e_0$, of the wrong sign for a nontrivial idempotent: the construction $\tfrac12(e_0+\mathbf u)$ closes only if $\mathbf u$ is a root of $+e_0$, and a pure vector squares to $-\lvert\mathbf u\rvert^{2}e_0$, which is $+e_0$ for no real $\mathbf u$. So the zero divisors of the Jordan structure carry no idempotent with them.</p>
+<h2 id="results">Results</h2>
+<p>The six idempotent sets are collected below, and the collapse against the biquaternion case is read last.</p>
+<h3 id="the-six-idempotent-sets">The Six Idempotent Sets</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -91,13 +147,13 @@ the first line because the Jordan product agrees with the plain product on the d
 <tr>
 <td>$\mathrm{GPA}$</td>
 <td>$\tilde x\tilde x$</td>
-<td>$(x_0^2-\lvert\mathbf x\rvert^2)e_0+2x_0\mathbf x$</td>
+<td>$(x_0^{2}-\lvert\mathbf x\rvert^{2})e_0+2x_0\mathbf x$</td>
 <td>$\{0,e_0\}$</td>
 </tr>
 <tr>
 <td>$\mathrm{SPA}$</td>
 <td>$\tilde x\bullet\tilde x$</td>
-<td>$(x_0^2-\lvert\mathbf x\rvert^2)e_0+2x_0\mathbf x$</td>
+<td>$(x_0^{2}-\lvert\mathbf x\rvert^{2})e_0+2x_0\mathbf x$</td>
 <td>$\{0,e_0\}$</td>
 </tr>
 <tr>
@@ -126,11 +182,34 @@ the first line because the Jordan product agrees with the plain product on the d
 </tr>
 </tbody>
 </table></div>
-<p><strong>Theorem (the six idempotent sets).</strong> Among the six structures the idempotents are $\{0,e_0\}$ for $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$ and $\mathrm{SQA}$, and $\{0\}$ for $\mathrm{APA}$ and $\mathrm{AQA}$. Only two idempotent sets occur, and the origin belongs to both.</p>
-<p><em>Proof.</em> The four structures of the first group are the theorem of the plain and quaternionic structures, and the two of the second group are the theorem of the cross products; the origin is an idempotent of every structure, so the two sets contain it and the second set is a subset of the first.</p>
-<p><strong>Remark (the contrast with the biquaternion case).</strong> The idempotent theory is coarser over $\mathbb{R}$ than over $\mathbb{C}$ because the real field has no scalar imaginary and the plain form is anisotropic. In the biquaternion chapter the plain product has infinitely many idempotents, of the form $\tfrac12(e_0+\Xi i)$ with $\Xi$ a root of $-e_0$ and $i$ the central imaginary of the coefficients, and the plain square therefore acquires a nontrivial idempotent for every isotropic direction; over $\mathbb{R}$ the central imaginary is absent and no isotropic direction exists, so the equation $\tilde x^2=\tilde x$ has only its central solutions, $0$ and $e_0$, and the four-parameter family of the biquaternion plain structure collapses to the two-point set. The collapse is the same one the chapter records for the roots of a central value, in <em>Square Roots of a General Element</em>, above this article in this category.</p>
+<p>Read down the last column, only two sets occur: the trivial pair $\{0,e_0\}$ for the four structures whose square is the plain square or the definite scalar, and the origin alone $\{0\}$ for the two whose square vanishes identically. The origin is the common member, and the unit $e_0$ is an idempotent of the four and of no other. The symmetric structure of each family repeats the row of its general partner, the two squares agreeing on the diagonal.</p>
+<h3 id="the-contrast-with-the-biquaternion-case">The Contrast with the Biquaternion Case</h3>
+<p>The idempotent theory is coarser over $\mathbb{R}$ than over $\mathbb{C}$ because the real field has no scalar imaginary and the plain form is anisotropic.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the biquaternion space $\mathbb{B}$</th>
+<th>the quaternion space $\mathbb{H}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain product</td>
+<td>$0$, $e_0$, $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-e_0$: a two-parameter family and a four-parameter family</td>
+<td>$0$ and $e_0$ alone</td>
+</tr>
+<tr>
+<td>the two cross products</td>
+<td>$0$ alone</td>
+<td>$0$ alone</td>
+</tr>
+</tbody>
+</table></div>
+<p>In the biquaternion space the plain product has the family $\tfrac12(e_0+\tilde\Xi i)$, where $\tilde\Xi$ runs over the roots of $-e_0$ and $i$ is the central imaginary of the coefficients, and the plain square therefore acquires a nontrivial idempotent for every isotropic direction; over $\mathbb{R}$ the central imaginary is absent and no isotropic direction exists, so the equation $\tilde x^{2}=\tilde x$ has only its central solutions, $0$ and $e_0$, and the family of the biquaternion plain structure collapses to the two-point set. The collapse is the same one the chapter records for the roots of a central value, in <em>Square Roots of a General Element</em>, above this article in this category, where the four-parameter root sets of the biquaternion sesqualgebras fall to the origin alone over $\mathbb{R}$.</p>
 <h2 id="summary">Summary</h2>
-<p>The idempotent of a structure is an element equal to its square, read from the square operator. The four structures whose square is the plain square or the definite scalar $N(\tilde x)e_0$ — the general plain, the symmetric plain, the general quaternionic and the symmetric quaternionic — have the two-point idempotent set $\{0,e_0\}$, exactly the idempotents of the scalar field; the two cross products, whose square vanishes identically, have the one-point set $\{0\}$, and the unit element $e_0$ is not idempotent for them. So only two idempotent sets occur among the six, the origin belongs to both, and no nontrivial idempotent is attached to a zero divisor of the Jordan structure, whose pure elements have the negative scalar square $-|\mathbf u|^2e_0$. Over $\mathbb{C}$ the plain square would acquire a nontrivial idempotent along every isotropic direction; over $\mathbb{R}$ there is no isotropic direction and no central imaginary, and the theory collapses to the two-point set.</p>
+<p>The idempotent of a structure is the element equal to its own square, and the six structures of the quaternion real space answer the equation with two sets alone. The general plain structure has the two-point set $\{0,e_0\}$, by the division property of the plain algebra; the symmetric plain structure keeps the same two points, the Jordan square being the plain square; the general quaternionic structure has the two-point set $\{0,e_0\}$, its square being the definite scalar $N(\tilde x)e_0$, whose only zeros are the two central ones; the symmetric quaternionic structure keeps the same two points, its square being the same definite scalar; and the two cross products have the origin alone, their square vanishing identically, so that $e_0$ is not an idempotent for them.</p>
+<p>Only two idempotent sets occur among the six, the origin belongs to both, and no nontrivial idempotent exists except the unit $e_0$ of the four non-alternating structures. The theory is coarser than over the biquaternion complex space because the real field has no scalar imaginary and the plain form has no real isotropic direction: the biquaternion plain product carries a two-parameter family and a four-parameter family of nontrivial idempotents, and the quaternion plain product carries neither, though both have the same two cross products with the origin alone.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -141,40 +220,41 @@ the first line because the Jordan product agrees with the plain product on the d
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\pi\star\tilde\pi=\tilde\pi$</td>
+<td>$\tilde x\star\tilde x=\tilde x$</td>
 <td>the idempotent equation of the structure $\star$</td>
 </tr>
 <tr>
 <td>$\{0,e_0\}$</td>
-<td>the idempotents of GPA, SPA, GQA and SQA</td>
+<td>the idempotents of $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$ and $\mathrm{SQA}$</td>
 </tr>
 <tr>
 <td>$\{0\}$</td>
-<td>the idempotents of APA and AQA</td>
+<td>the idempotents of $\mathrm{APA}$ and $\mathrm{AQA}$</td>
 </tr>
 <tr>
-<td>$(x_0^2-\lvert\mathbf x\rvert^2)e_0+2x_0\mathbf x$</td>
-<td>the plain square, the square of GPA and SPA</td>
+<td>$(x_0^{2}-\lvert\mathbf x\rvert^{2})e_0+2x_0\mathbf x$</td>
+<td>the plain square, the square of $\mathrm{GPA}$ and $\mathrm{SPA}$</td>
 </tr>
 <tr>
 <td>$N(\tilde x)e_0$</td>
-<td>the quaternionic square, the square of GQA and SQA</td>
+<td>the quaternionic square, the square of $\mathrm{GQA}$ and $\mathrm{SQA}$</td>
 </tr>
 <tr>
 <td>$0$</td>
-<td>the alternating square, the square of APA and AQA</td>
+<td>the alternating square, the square of $\mathrm{APA}$ and $\mathrm{AQA}$</td>
 </tr>
 <tr>
 <td>$\tfrac12(e_0+\mathbf u)$</td>
-<td>the non-idempotent attached to a pure zero divisor $\mathbf u$</td>
+<td>the construction that would give a pure idempotent, and that closes for no real $\mathbf u$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><em>The Specificities of the General Plain Algebra</em> (<code>articles_maths/the-specificities-of-the-general-plain-algebra-of-quaternions.md</code>), for the idempotents of the plain product, folded into the block of the general plain algebra.</li>
-<li><em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em> (<code>articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra-of-quaternions.md</code>), for the idempotents of the Jordan structure.</li>
-<li><em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em> (<code>articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md</code>), for the six structures and their laws.</li>
+<li>The six owners, for the idempotent set of each structure: <em>Idempotents of the General Plain Algebra</em> (<code>articles_maths/idempotents-of-the-general-plain-algebra-of-quaternions.md</code>), <em>Idempotents of the Symmetric Plain Algebra</em> (<code>articles_maths/idempotents-of-the-symmetric-plain-algebra-of-quaternions.md</code>) and <em>Idempotents of the Antisymmetric Plain Algebra</em> (<code>articles_maths/idempotents-of-the-antisymmetric-plain-algebra-of-quaternions.md</code>); <em>Idempotents of the General Quaternionic Algebra</em> (<code>articles_maths/idempotents-of-the-general-quaternionic-algebra-of-quaternions.md</code>), <em>Idempotents of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/idempotents-of-the-symmetric-quaternionic-algebra-of-quaternions.md</code>) and <em>Idempotents of the Antisymmetric Quaternionic Algebra</em> (<code>articles_maths/idempotents-of-the-antisymmetric-quaternionic-algebra-of-quaternions.md</code>).</li>
+<li><em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em> (<code>articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md</code>) and <em>The 6 Products of the Quaternion Real Space</em> (<code>articles_maths/the-6-products-of-the-quaternion-real-space.md</code>), for the six structures, the six products and their laws.</li>
+<li><em>Norm and Invertibility in the General Plain Algebra of Quaternions</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md</code>), for the division property that leaves the plain idempotents at $0$ and $e_0$.</li>
+<li><em>Idempotents</em> (<code>articles_maths/idempotents.md</code>), the biquaternion comparison, for the two-parameter and four-parameter families that collapse here.</li>
 <li><em>Nilpotents</em> (<code>articles_maths/quaternion-nilpotents.md</code>), below this article in this category, for the elements whose square vanishes.</li>
 <li><em>Square Roots of a General Element</em> (<code>articles_maths/quaternion-square-roots-of-a-general-element.md</code>), above this article in this category, for the root equation at a general central value, and <em>Square Roots of Minus One, Zero and Plus One</em> (<code>articles_maths/quaternion-square-roots-of-minus-one-zero-and-plus-one.md</code>), above this article in this category, for the three named values.</li>
 </ul>
