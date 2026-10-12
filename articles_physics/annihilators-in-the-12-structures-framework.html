@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annihilators in the 12 Structures Framework — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="annihilators-in-the-12-structures-framework"><strong>Annihilators in the 12 Structures Framework</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The annihilator of an element in a product is the set of partners that the element kills. It is the kernel
+of the operation "multiply by it", so it is the kernel of a process, and the physical reading of the
+kernel is direct: a process is invertible exactly when its kernel is trivial, and the size of the kernel is
+the amount of information the process destroys. The twelve products of the biquaternion complex space
+define twelve annihilators for one element, and this article reads them physically. It is the second
+physics companion of the mathematics comparison group, after <em>Zero Divisors in the 12 Structures
+Framework</em>, and the mathematics companion is <em>Annihilators</em> (<code>articles_maths/annihilators.md</code>).</p>
+<p>The mathematics companion computes the annihilator of a general element in each of the twelve structures
+and proves two theorems. The first: the two one-sided annihilators, the left one ${\tilde X:\tilde P\star
+\tilde X=0}$ and the right one ${\tilde X:\tilde X\star\tilde P=0}$, are equal in ten of the twelve
+structures and differ in exactly two, the plain product $\tilde P\tilde Q$ and the general quaternionic
+sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$, and there only at an element of vanishing
+biquaternion norm. The second: the four planes of a cone element in the four general products are one
+plain plane read through the two conjugations. The physical thesis of this article is that these two
+theorems are statements about operators: a symmetric or one-slot product has one kernel, the plain
+composite and the gauge coupling have two, and the difference between the two sides is the chirality of an
+operation against its adjoint.</p>
+<p>Four physical objects of the annihilator table organise the article. The <strong>invertible operation</strong> is the
+element whose annihilator is the origin alone. The <strong>lightlike operation</strong> is the cone element, whose
+annihilator is a plane of other lightlike directions, so that a null direction can be killed only along
+null directions. The <strong>scalar-valued coupling</strong> is the symmetrisation that returns a number; its
+annihilator is a hyperplane, and the hyperplane is the set of partners with which the coupling gives zero,
+the physical form of orthogonal amplitudes. The <strong>bracket</strong> is the antisymmetrisation; its annihilator is
+the centraliser of the element, and at a central element, which is a global phase, the bracket kills the
+whole algebra.</p>
+<p>The article proceeds as follows. It first fixes the annihilator as the kernel of an operation and reads
+invertibility as trivial kernel. It then reads the two-sided theorem as chirality, the four general planes
+as the lightlike kernel, the hyperplane rows as zero overlap, and the bracket rows as the centraliser. It
+then reads the kernel in the quantum corpus and again in the corpus's cohomology, its constraint equations,
+its polarisation operator and its information channels. A table collects the twelve annihilators with one
+physical clause each, and the closing sections are the
+ledger, the interpretation, the summary, the notation table and the literature. The other articles of the
+section own the objects that the table touches: <em>Zero Divisors in the 12 Structures Framework</em> the
+degeneracy itself, <em>Square Roots of Minus One, Zero and Plus One in the 12 Structures Framework</em> and
+<em>Square Roots of a General Element in the 12 Structures Framework</em> the radicands, <em>Idempotents in the 12
+Structures Framework</em> the projectors, and <em>Nilpotents in the 12 Structures Framework</em> the square-zero
+elements.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles unchanged. The algebra is
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$ and
+$e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is the central scalar imaginary. The conjugations are
+${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The biquaternion norm is
+$N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$, whose vanishing locus is the cone; the trace
+is $\mathrm{Tr}=2\,\mathrm{Sc}$; the material coordinate is $\tilde Q=ict\,e_0+\mathbf x$. The twelve
+structures are cited by their three-letter names, and the left and right annihilators are written
+$A_\star(\tilde P)$ and $B_\star(\tilde P)$ as in the mathematics companion.</p>
+<h2 id="the-annihilator-as-the-kernel-of-an-operation">The Annihilator as the Kernel of an Operation</h2>
+<p><strong>Definition and kernel.</strong> For a product $\star$ and an element $\tilde P$, the left and right
+annihilators are</p>
+<p>$$
+A_\star(\tilde P)=\{\tilde X:\tilde P\star\tilde X=0\},\qquad
+B_\star(\tilde P)=\{\tilde X:\tilde X\star\tilde P=0\},
+$$</p>
+<p>which are the kernels of the left and right multiplications $L_{\tilde P}$ and $R_{\tilde P}$. Each is a
+complex subspace, and its dimension is the number of free complex parameters left by one equation. Read as
+an operation, an element is the map "multiply by it" (<em>The Monoid of Acting Maps: the Process Is the
+Multiplication, the State Is the Idempotent</em>), and the annihilator is the kernel of that map.</p>
+<p><strong>Invertibility is trivial kernel.</strong> An element has a two-sided plain inverse exactly when
+$N(\tilde P)\neq0$, the inverse being $\tilde P^{\natural}/N(\tilde P)$, and then multiplying by
+$\tilde P$ is a bijection, so its annihilator is the origin alone. On the cone the multiplication drops
+rank and the annihilator is a nonzero subspace. The physical statement is the usual one for maps: a
+process is reversible if and only if it loses nothing, and the dimension of the annihilator is the number
+of independent inputs the process sends to zero. The corpus's operator articles read the rank of the
+multiplications directly, in <em>The Operators of the Ordinary Product: One-Sided, Two-Sided and the
+Sandwich</em> and <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>.</p>
+<p><strong>The annihilator lies in the zero-divisor set.</strong> When $\tilde P\neq0$ kills $\tilde X\neq0$, the element
+$\tilde X$ is itself a zero divisor of the same product with witness $\tilde P$. Every nonzero element of
+an annihilator is therefore a zero divisor, and for the four general products, whose zero-divisor set is
+the cone, the whole annihilator lies on the cone. The physics is the sharp statement that the killers of a
+lightlike element are lightlike: a null direction annihilates only along null directions. In the derived
+structures the zero-divisor set is larger and the annihilator can leave the cone, the unit $e_1$ being
+annihilated in the symmetrised products while off the cone, as <em>Zero Divisors in the 12 Structures
+Framework</em> records.</p>
+<h2 id="the-two-sides-chirality-of-an-operation">The Two Sides: Chirality of an Operation</h2>
+<p>The two annihilators are the kernels of the left and right multiplications, and "left" and "right" are the
+two ways an operation can act. When the two coincide, the operation has a single kernel; when they differ,
+the operation kills different things depending on the side.</p>
+<p>The mathematics companion proves that they differ in exactly two structures, the plain product
+$\tilde P\tilde Q$ and the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$,
+and only at a cone element. The physical reading is a chirality. The plain product is the composition of
+two material operations, which is not commutative, and the gauge coupling is its conjugate; in both, the
+element and its conjugate play different roles on the two sides, so the left multiplication and the right
+one are different maps with different kernels. In the other ten structures the product is commutative, or
+conjugate-commutative, or alternating, and the exchange of the two factors does not change whether the
+product vanishes, so the two kernels coincide. The corpus has already named the operator face of this
+chirality: the internal action is one-sided, only the right multiplication by a unitary being an isometry
+of the fourth product's form, in <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>.
+The two-sided theorem is the annihilator face of the same chirality.</p>
+<p>At the non-pure cone element $e_0+ie_1$ the two plain planes are</p>
+<p>$$
+A_{\text{plain}}(e_0+ie_1)=\mathbb{C}\{e_0-ie_1,\ e_3+ie_2\},\qquad
+B_{\text{plain}}(e_0+ie_1)=\mathbb{C}\{e_0-ie_1,\ e_3-ie_2\}.
+$$</p>
+<p>The two planes share the line of the natural conjugate $\tilde P^{\natural}=e_0-ie_1$ and differ in their
+second generator, so the two-sided annihilator is the line of the conjugate and the operation kills the
+conjugate on both sides but only one more direction on each side. The shared line is the physical residue
+of the symmetry: $\tilde P\tilde P^{\natural}=N(\tilde P)e_0=0$ on the cone, so a lightlike element always
+kills its own conjugate, whichever side the multiplication is taken.</p>
+<h2 id="the-four-general-products-the-lightlike-kernel">The Four General Products: the Lightlike Kernel</h2>
+<p>Fix a nonzero cone element, $N(\tilde P)=0$. Each of the four general products gives it a plane, and the
+mathematics companion proves that the four planes are the plain plane read through the two conjugations,</p>
+<p>$$
+A_{\natural}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural}),\qquad
+A_{*}(\tilde P)=A_{\text{plain}}(\tilde P)^{*},\qquad
+A_{\natural*}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural})^{*}.
+$$</p>
+<p>At $e_0+ie_1$ the four left planes are the plain plane
+$\mathbb{C}\{e_0-ie_1,e_3+ie_2\}$, the natural plane $\mathbb{C}\{e_0+ie_1,e_2+ie_3\}$, the plain
+sesquilinear plane $\mathbb{C}\{e_1+ie_0,e_2+ie_3\}$ and the general quaternionic sesquilinear plane
+$\mathbb{C}\{e_0+ie_1,e_2-ie_3\}$.</p>
+<p>The physical reading has two parts. First, the four planes are not four independent objects: they are one
+plane and its two conjugates, so the four bands differ by which conjugation is applied to the kernel, not
+by the kernel itself. The plain plane contains the lightlike directions that the composition sends to
+zero, and the other three are its images, so the composition band determines the kernel of the pairing and
+of the gauge band. Second, the plane is made of cone elements: the killers of a null momentum are null.
+This is the algebraic form of the statement that a lightlike signal can be annihilated only by another
+lightlike signal, and it is the reason the cone is closed under the annihilator operation on the four
+general rows. The rank of the multiplications and the collapse of the congruences on the cone are read in
+<em>The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions</em> and in <em>The Cone and
+the Massless Particles in the 12 Structures Framework</em>.</p>
+<p>At the pure cone element $e_1+ie_2$ the plain planes are</p>
+<p>$$
+A_{\text{plain}}(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_0+ie_3\},\qquad
+B_{\text{plain}}(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_0-ie_3\},
+$$</p>
+<p>so a lightlike element lies in its own annihilator, as it must: $\tilde P^{2}=0$ for a pure cone element,
+and the square is the product of the element with itself. The self-annihilation of a lightlike
+displacement is the elementary physical case, and <em>Nilpotents in the 12 Structures Framework</em> reads it as
+the square-zero class.</p>
+<h2 id="the-hyperplane-of-a-scalar-valued-coupling">The Hyperplane of a Scalar-Valued Coupling</h2>
+<p>Two structures collapse their product to a form: the symmetric quaternionic algebra
+$\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$,
+and the symmetric plain sesqualgebra $\tilde P\star\tilde Q=H(\tilde P,\tilde Q)e_0$ with
+$H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$. For each, the annihilator of
+any nonzero element is the hyperplane cut by the form,</p>
+<p>$$
+P_0X_0+(\mathbf P,\mathbf X)=0\quad\text{(SQA)},\qquad
+P_0\overline{X_0}+(\mathbf P,\overline{\mathbf X})=0\quad\text{(SPS)} .
+$$</p>
+<p>The physical object is a coupling that returns a number. A number has no slot in which to act, so the
+operation "couple with $\tilde P$" is not an invertible map; it is a scalar functional, and its kernel is
+a hyperplane. The reading of the hyperplane is orthogonality: the partners the coupling sends to zero are
+the partners orthogonal to $\tilde P$ in the corresponding form. For the symmetric plain sesqualgebra the
+form $H$ is the Born pairing, so its hyperplane is the set of amplitudes whose overlap with $\tilde P$ is
+zero, that is, the amplitudes with which $\tilde P$ has zero transition amplitude. Orthogonal states
+interfere to nothing, and the hyperplane is the algebraic home of that fact. For the symmetric
+quaternionic algebra the form is $N$, the interval form at the two equal arguments, and the hyperplane is
+its polar: the partners at zero interval with $\tilde P$.</p>
+<p>The kernel of a scalar coupling is a hyperplane for every nonzero element, so in these two rows every
+element destroys exactly one complex dimension of information. This is the largest annihilator a nonzero
+element can have without killing the whole space, and it is the algebraic reason these two structures are
+couplings and not compositions. The physical caveat is that the coupling is not invertible in any case;
+its kernel is nonzero because a number cannot act, not because the element is lightlike. The owner articles
+of the two rows are the symmetric structures of the coupling band, and the form $H$ and its cone are read
+in <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em>.</p>
+<h2 id="the-bracket-and-the-centre-the-centraliser">The Bracket and the Centre: the Centraliser</h2>
+<p>The four antisymmetric structures are the brackets of the algebra, and their annihilators are the sets of
+partners with which the bracket vanishes, that is, the <strong>centralisers</strong> of the element in the three cases
+where the bracket is a commutator and its analogue. The clean physical case is the plain commutator
+$\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$, whose annihilator is
+$\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$: the partners the bracket sends to zero are the centre and the
+element's own direction. Two facts follow, and both are physical.</p>
+<ul>
+<li><strong>An element lies in its own annihilator.</strong> The bracket of an element with itself is zero, because a
+  commutator is alternating, so every element is in its own centraliser. The physical statement is that
+  the bracket measures non-commutativity, and an element commutes with itself.</li>
+<li><strong>A central element kills everything.</strong> At $\tilde P=qe_0$ the vector part is zero and the bracket
+  vanishes for every partner, so the annihilator is the whole algebra. A central element is a global
+  phase: it commutes with every operation, and the bracket, which measures the failure to commute, does
+  nothing to it. The centre is the kernel of the adjoint action, and the two rows of the table where some
+  nonzero element has the whole space as its annihilator are exactly the two antisymmetrisations
+  $\mathrm{APA}$ and $\mathrm{AQS}$.</li>
+</ul>
+<p>The general quaternionic antisymmetrisation separates the two cases of the cone by the size of the
+annihilator: at an element of nonzero norm the annihilator is the line of the element itself, and at a
+cone element it is a plane containing that line. The reading is the same as for the plain bracket, with
+the norm deciding whether the centraliser grows from a line to a plane. The conjugate-alternating rows
+$\mathrm{APS}$ and $\mathrm{AQS}$ act on the conjugate direction, and the rows whose bracket is
+conjugate-alternating annihilate their own conjugate rather than themselves in the generic case.</p>
+<h2 id="the-twelve-annihilators-and-their-physical-readings">The Twelve Annihilators and Their Physical Readings</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>product</th>
+<th>annihilator of a general $\tilde P$</th>
+<th>physical reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPA</td>
+<td>$\tilde P\tilde Q$</td>
+<td>$\{0\}$ off the cone; two distinct planes through $\mathbb{C}\tilde P^{\natural}$ on the cone</td>
+<td>an invertible composition has trivial kernel; a lightlike one is chiral, killing different directions on the two sides</td>
+</tr>
+<tr>
+<td>SPA</td>
+<td>$\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</td>
+<td>$\{0\}$ off the cone with $P_0\neq0$; the line $\mathbb{C}\tilde P^{\natural}$ on the cone; the plane $\{X_0=0,(\mathbf P,\mathbf X)=0\}$ for $P_0=0$</td>
+<td>the symmetric composition has one kernel; a pure operation kills the plane orthogonal to it</td>
+</tr>
+<tr>
+<td>APA</td>
+<td>$\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$</td>
+<td>the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$ for $\mathbf P\neq0$; the whole space for a central element</td>
+<td>the bracket's centraliser is the centre and the element's own direction; a global phase is annihilated by everything</td>
+</tr>
+<tr>
+<td>GQA</td>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>$\{0\}$ off the cone; one plane containing $\mathbb{C}\tilde P$ on the cone</td>
+<td>the natural product has one kernel, and a lightlike element lies in it</td>
+</tr>
+<tr>
+<td>SQA</td>
+<td>$N(\tilde P,\tilde Q)e_0$</td>
+<td>the hyperplane $N(\tilde P,\tilde X)=0$</td>
+<td>a scalar coupling kills the orthogonal hyperplane; a number cannot act</td>
+</tr>
+<tr>
+<td>AQA</td>
+<td>the antisymmetrisation</td>
+<td>a line or a plane through $\mathbb{C}\tilde P$; the centre for a central element</td>
+<td>the quaternionic bracket's centraliser, with the norm deciding line against plane</td>
+</tr>
+<tr>
+<td>GPS</td>
+<td>$\tilde P\tilde Q^{*}$</td>
+<td>$\{0\}$ off the cone; the star-image of the plain plane on the cone</td>
+<td>the pairing's kernel is the conjugate image of the composition kernel</td>
+</tr>
+<tr>
+<td>SPS</td>
+<td>$H(\tilde P,\tilde Q)e_0$</td>
+<td>the hyperplane $H(\tilde P,\tilde X)=0$</td>
+<td>the Born pairing kills the amplitudes orthogonal to $\tilde P$: zero overlap</td>
+</tr>
+<tr>
+<td>APS</td>
+<td>the antisymmetrisation</td>
+<td>$\{0\}$ off the cone; the line $\mathbb{C}\overline{\tilde P}$ at nonzero norm; the star-image of the plain plane on the cone</td>
+<td>the conjugate bracket reads the conjugate direction</td>
+</tr>
+<tr>
+<td>GQS</td>
+<td>$\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>$\{0\}$ off the cone; two distinct planes through $\mathbb{C}\tilde P^{*}$ on the cone</td>
+<td>the gauge coupling is chiral, like the plain composition</td>
+</tr>
+<tr>
+<td>SQS</td>
+<td>the symmetrisation</td>
+<td>$\{0\}$ off the cone with $P_0\neq0$; the line $\mathbb{C}\tilde P^{*}$ on the cone; the plane $\{X_0=0,K(\tilde P,\tilde X)=0\}$ for $P_0=0$</td>
+<td>the symmetric gauge coupling has one kernel, a plane at a pure element against a line at a non-pure one</td>
+</tr>
+<tr>
+<td>AQS</td>
+<td>the antisymmetrisation</td>
+<td>the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf P}$ for $\mathbf P\neq0$; the whole space for a central element</td>
+<td>the conjugate bracket's centraliser; a global phase is annihilated by everything</td>
+</tr>
+</tbody>
+</table></div>
+<p>Four facts of the table are physical statements, and the mathematics companion states all four.</p>
+<ul>
+<li><strong>The two sides differ in two rows, the plain composition and the gauge coupling.</strong> Left multiplication
+  and right multiplication by a lightlike element are different operations with different kernels. This is
+  the chirality of the composition, the same chirality that makes the internal action one-sided.</li>
+<li><strong>In two rows some element kills the whole algebra, and the elements are the scalars.</strong> The two rows are
+  the plain and the conjugate plain brackets, and a central element is a global phase. The bracket, the
+  measure of non-commutativity, is blind to the centre.</li>
+<li><strong>In two rows every nonzero element has a hyperplane as its annihilator.</strong> The two rows are the
+  scalar-valued symmetrisations; every coupling destroys one complex dimension, because a number cannot
+  act.</li>
+<li><strong>In the six remaining rows the annihilator is the origin off the cone and a line or a plane on it.</strong>
+  The physical content is the cone itself: off the cone the operation is injective, on the cone it is not,
+  and the dimension of the kernel is the rank drop read by <em>Mass, Rank and the Positivity of the Dagger</em>.</li>
+</ul>
+<h2 id="what-the-annihilator-decides">What the Annihilator Decides</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>source</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the annihilator is the kernel of the left or right multiplication</td>
+<td>mathematics companion; operator articles</td>
+<td>cited</td>
+</tr>
+<tr>
+<td>an element off the cone has trivial annihilator in the four general products</td>
+<td>mathematics companion; recomputed (no non-null sample has an annihilator)</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>the killers of a cone element in the four general products lie on the cone</td>
+<td><em>Zero Divisors in the 12 Structures Framework</em>; mathematics companion</td>
+<td>cited</td>
+</tr>
+<tr>
+<td>the two sides differ exactly for GPA and GQS, and only on the cone</td>
+<td>mathematics companion, theorem; recomputed planes at $e_0+ie_1$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>the plain planes at $e_0+ie_1$ share $\mathbb{C}(e_0-ie_1)$ and differ in the second generator</td>
+<td>mathematics companion, example; recomputed</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>the four general planes are one plane read through the two conjugations</td>
+<td>mathematics companion, theorem; recomputed at $e_0+ie_1$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>SQA and SPS annihilators are hyperplanes; the APA and AQS annihilator is the whole space at a central element</td>
+<td>mathematics companion; recomputed for SQA at $e_0$ and APA at $e_1$, AQS at $e_0$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>the SQS annihilator is a plane at a pure element and a line at a non-pure cone element</td>
+<td>mathematics companion; recomputed at $e_1+ie_2$ and $e_0+ie_1$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>the physical readings (chirality, zero overlap, centraliser, lightlike kernel, zero-mode count, GNS null space, no-cloning)</td>
+<td>this article; owners cited in the text</td>
+<td>interpretation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-kernel-in-the-quantum-corpus-zero-modes-null-spaces-and-no-cloning">The Kernel in the Quantum Corpus: Zero Modes, Null Spaces and No-Cloning</h2>
+<p>The annihilator is the kernel of a multiplication, and the quantum corpus already gives the kernel three
+further jobs. Setting them beside the table makes the annihilator's physical content more than a
+bookkeeping of rank drops.</p>
+<p><strong>The zero-mode count.</strong> The dimension of the annihilator is the number of independent inputs the operation
+sends to zero, which is the elementary form of the count an index theorem performs. <em>The Index Theorem and
+the Zero-Mode Count in Biquaternionic Form</em> counts the zero modes of a Dirac operator and equates their
+chiral difference to a topological charge, the framework supplying the operator and the density and not the
+counting. The annihilator of the multiplication by $\tilde P$ is the kernel whose dimension that theorem
+counts in the field case: a nonzero kernel is a zero mode of the elementary operation, and the trivial
+kernel of a unit is the absence of zero modes. The differential operator sits one level above the
+multiplication, but the word "count" means the same dimension in both places.</p>
+<p><strong>The GNS null space.</strong> <em>The GNS Construction in the Biquaternion Framework</em> builds the Hilbert space of a
+state as the quotient of the algebra by the state's null space,
+$\mathcal N_\omega=\{\tilde A:\omega(\tilde A^{*}\tilde A)=0\}$, and finds that for the vacuum the null
+space is the left ideal the annihilation operator lies in; the GNS space is then the minimal left ideal, of
+complex dimension two, and the representation is irreducible. A state with a nontrivial null space is not
+faithful, and its GNS space is smaller than the regular one. The annihilator of an element is the same
+object for a single multiplication: a one-sided ideal the element kills, whose size measures how much of
+the algebra the element overlooks. The vacuum's annihilator and the vacuum's GNS null space are two names
+for one left ideal.</p>
+<p><strong>The no-cloning obstruction.</strong> <em>No-Cloning and the Algebraic Obstruction in Biquaternionic Form</em> locates
+the obstruction in the trace pairing of two idempotents: a cloning map would have to preserve the pairing
+and replace it by its square, and no linear map does both. The annihilator gives the obstruction in its
+crudest form. An operation that kills a nonzero input is not invertible; an operation that is not
+invertible has no inverse process; and the existence of a nonzero kernel is the failure of reversibility on
+which every no-go theorem rests. The universal cloner of that article is a sum of conjugations and not a
+unit, exactly as the irreversible channels of <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>
+are sums rather than a single conjugation.</p>
+<p><strong>Zero overlap and the centraliser.</strong> The hyperplane and centraliser rows of the table are the two ways the
+kernel becomes a physical relation. In the probability band the annihilator of $\tilde P$ is the set of
+$\tilde X$ with $\langle\tilde P,\tilde X\rangle=0$, the set of amplitudes of zero overlap with
+$\tilde P$; the annihilator of an amplitude is its orthogonal complement in the Born pairing, and
+orthogonality of states is the standard physical instance of a nontrivial kernel. In the bracket rows the
+annihilator is the centraliser, the set of partners that commute with the element; at a central element the
+bracket kills the whole algebra, which is the operator form of the statement that the centre carries no
+bracket and no gauge charge. <em>The Centre of the Biquaternion Algebra as the Classical Sector</em> reads the
+centre as the gauge-blind part of the algebra, and the whole-space annihilator is that blindness written as
+a kernel. <em>Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</em> reads the same
+kernel as the redundancy of a gauge orbit: the directions a bracket annihilates are the directions that
+carry no gauge-invariant information.</p>
+<h2 id="the-kernel-in-cohomology-constraints-polarisation-and-channels">The Kernel in Cohomology, Constraints, Polarisation and Channels</h2>
+<p>Four further jobs of the kernel are already written in the corpus, and each sharpens the annihilator
+reading of the table by naming a different use of the same set.</p>
+<p><strong>Cohomology: the kernel with the image removed.</strong> <em>BRST Symmetry in Biquaternionic Form</em> constructs a
+Grassmann-odd derivation $s$ with $s^{2}=0$ and identifies the physical states with its cohomology,
+$\mathcal{H}_{\mathrm{phys}}=\ker s/\mathrm{im}\,s$. The annihilator of the nilpotent $s$ is the kernel
+$\ker s$, and the cohomology is that kernel quotiented by the image. The reading is a sharpening of the
+invertibility criterion: the kernel of an operation is the set it sends to zero, and when the operation is
+a nilpotent differential the kernel contains the image as a subspace, so the physical content is the
+kernel with the reachable part discarded. In the language of this article, the annihilator is the set of
+states the differential does not reach, and the cohomology removes the states that are themselves reached
+by it. The cohomology is the object the nilpotent article owns, read there as the odd nilpotent, and the
+two companions meet at it.</p>
+<p><strong>Constraints: the kernel of a divergence.</strong> <em>The Schwinger–Dyson Equations and the Ward–Takahashi
+Identities in Biquaternionic Form</em> derives, as the quantum Noether theorem, the statement that the Noether
+current of the central phase is conserved inside correlation functions,
+$\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=0$. A conserved current is a current in the kernel of the
+divergence: the conservation equation says that the four-divergence of the current annihilates it, so the
+physical currents are the annihilator of the divergence operator, and a current that fails conservation is
+not in that kernel. The same article reads the abelian Ward identity as the vanishing of the longitudinal
+part of the photon vacuum polarisation, $Z_1=Z_2$: the physical polarisations are the ones the transverse
+projector leaves, so the longitudinal sector is what that projector kills. <em>Noether's Theorem in
+Biquaternionic Form</em> locates the current in the material sector, so the constraint that defines the
+physical current is a kernel in the same sector as the lightlike displacements of the zero-divisor
+article.</p>
+<p><strong>Polarisation: the kernel of the skew operator.</strong> <em>The Operators of the Antisymmetric Quaternionic
+Sesquilinear Product and the Polarisation</em> computes the left multiplication of the row that this article
+reads through the table, and finds</p>
+<p>$$
+\ker L^{\diamond}_{\tilde A}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\mathbf A},\qquad
+\operatorname{im}L^{\diamond}_{\tilde A}=\{(\mathbf A,\cdot)=0\}.
+$$</p>
+<p>The kernel is the centre together with the conjugate direction of the parameter, and the image is the
+plane perpendicular to it: the operator of that band maps the whole module into one direction and kills
+the rest, which is why the article reads the band under the job word <strong>polarisation</strong>. The annihilator
+rows of the two antisymmetric sesquilinear structures, which the table records as the identity lying in
+its own kernel, are the algebraic statement of that image: an operator with a large kernel cannot be
+inverted, and the physical content it keeps is the single direction it selects.</p>
+<p><strong>Channels and the information the kernel destroys.</strong> The dimension of the kernel is the information an
+operation loses, and the corpus prices the loss. <em>The Holevo Bound and Accessible Information in
+Biquaternionic Form</em> bounds the classical information recoverable from an ensemble by the Holevo
+quantity. A measurement cannot separate two states exactly when every one of its positive operators
+annihilates the difference of the two state elements under the trace pairing, so that both states give the
+same outcome statistics and the distinction between them is inaccessible; the annihilator of the difference
+is the kernel that holds the lost information. <em>Confinement and the Loss of Partonic Information in
+Biquaternionic Form</em> supplies the sharpest case: the colour labels of an asymptotic state are not
+redundant descriptions held in a kernel that a gauge choice could recover, they are absent from the
+observable algebra, and the article distinguishes that loss from the gauge redundancy of <em>Gauge Redundancy
+and the Information in the Gauge Orbit in Biquaternionic Form</em>, where the kernel is a redundancy. A kernel
+therefore has two opposite readings, and the corpus keeps them apart: a gauge kernel hides a description, a
+confinement kernel has destroyed one.</p>
+<h2 id="physical-interpretation">Physical Interpretation</h2>
+<ul>
+<li>The annihilator of an element is the kernel of the operation "multiply by it". A process is invertible
+  exactly when its kernel is trivial, and the dimension of the kernel is the amount of information it
+  destroys.</li>
+<li>The killers of a lightlike element are lightlike. The annihilator of a cone element lies on the cone, and
+  a null direction annihilates only along null directions.</li>
+<li>The two one-sided annihilators coincide in ten structures and differ in two, the plain composition and
+  the gauge coupling. The difference is a chirality: an operation and its conjugate play different roles
+  on the two sides, and at a lightlike element the left and right kernels are distinct planes.</li>
+<li>The four planes of a cone element in the four general products are one plain plane and its two conjugate
+  images. The composition band determines the kernels of the pairing and of the gauge band.</li>
+<li>A scalar-valued coupling has a hyperplane as its annihilator. The hyperplane is the set of partners with
+  which the coupling gives zero, which for the Born pairing is the set of amplitudes orthogonal to the
+  element, that is, of zero overlap.</li>
+<li>A bracket has the centraliser as its annihilator. Every element lies in its own centraliser, and a
+  central element, a global phase, is annihilated by every partner, so the bracket is blind to the centre.</li>
+<li>The annihilator is the zero-divisor condition with its witnesses displayed. It is the entry to the
+  section's later articles: the square roots of zero are the elements that annihilate themselves, and the
+  idempotents are the projectors whose kernel is a full half of the space.</li>
+<li>The kernel is also the zero-mode space of <em>The Index Theorem and the Zero-Mode Count in Biquaternionic
+  Form</em>, the GNS null space of <em>The GNS Construction in the Biquaternion Framework</em>, and the algebraic
+  obstruction behind <em>No-Cloning and the Algebraic Obstruction in Biquaternionic Form</em>: one object, and
+  four physical names for it.</li>
+<li>The same kernel is the BRST cohomology $\ker s/\mathrm{im}\,s$ of the physical state space, the kernel of
+  the divergence that defines a conserved current, and the polarisation kernel
+  $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\tilde A}$ of the antisymmetric sesquilinear operator.</li>
+<li>A kernel has two opposite readings. A gauge kernel hides a description that a gauge choice can recover;
+  a confinement kernel has destroyed a description that the observable algebra does not contain.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The annihilator of an element in one of the twelve products is the kernel of the corresponding
+multiplication, and the mathematics companion computes it for all twelve, with the case split and the
+generators. Read physically, it is the set of inputs a process sends to zero, and it carries three
+statements. First, a process is invertible exactly when its kernel is trivial; off the cone the four
+general products have trivial kernel, and on the cone the kernel is a plane of other lightlike
+directions, so lightlike elements are killed along lightlike directions. Second, the two one-sided kernels
+coincide in ten structures and differ in the plain composition and the gauge coupling, which is the
+chirality of an operation against its adjoint, and at a cone element the two kernels are distinct planes
+sharing the line of the conjugate. Third, the shape of the kernel names the kind of structure: a
+scalar-valued coupling has a hyperplane, the set of partners of zero overlap, and a bracket has the
+centraliser, the whole algebra at a central element, because the central element is a global phase that
+commutes with everything. The four planes of a cone element in the four general products are one plain
+plane and its two conjugate images, so the composition band fixes the kernels of the other three. The
+annihilator is thus the zero-divisor condition with its witnesses displayed, and it is the natural entry to
+the roots of zero, the idempotents and the nilpotents of the rest of the section.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$.</li>
+<li>$A_\star(\tilde P)=\{\tilde X:\tilde P\star\tilde X=0\}$ the left annihilator, $B_\star(\tilde P)=\{\tilde X:\tilde X\star\tilde P=0\}$ the right one, the kernels of $L_{\tilde P}$ and $R_{\tilde P}$.</li>
+<li>$N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm; the cone is $\{N=0\}$; $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ and $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ the two forms of the scalar-valued structures.</li>
+<li>${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; $\mathrm{Tr}=2\,\mathrm{Sc}$; $\mathbb{C}\{u,v\}$ a complex plane, $\mathbb{C}u$ a complex line.</li>
+<li>The twelve structures: GPA, GQA, GPS, GQS general; SPA, SQA, SPS, SQS symmetric; APA, AQA, APS, AQS antisymmetric.</li>
+<li>$\mathbb{M}_\pm$ the sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ the centre.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The mathematics companion: <em>Annihilators</em> (<code>articles_maths/annihilators.md</code>), for the twelve computations, the two-sided theorem and the four general planes.</li>
+<li>The zero-divisor context: <em>Zero Divisors in the 12 Structures Framework</em>; <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>.</li>
+<li>The operators and the kernels: <em>The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich</em>; <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>; <em>The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent</em>; <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>; <em>The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions</em>.</li>
+<li>The scalar-valued and bracket rows: <em>Why a Central Product Cannot Compose: the Radical and the Isotropic Elements</em>; <em>The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations</em>; <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em>; <em>The States the Indefinite Metric Cannot Normalise</em>.</li>
+<li>The kernel in the quantum corpus: <em>The Index Theorem and the Zero-Mode Count in Biquaternionic Form</em>; <em>The GNS Construction in the Biquaternion Framework</em>; <em>No-Cloning and the Algebraic Obstruction in Biquaternionic Form</em>; <em>The Born Rule as a Trace Formula — Derivation and Comparison</em>; <em>The Centre of the Biquaternion Algebra as the Classical Sector</em>; <em>Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</em>.</li>
+<li>The kernel in cohomology, constraints and channels: <em>BRST Symmetry in Biquaternionic Form</em>; <em>The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</em>; <em>Noether's Theorem in Biquaternionic Form</em>; <em>The Operators of the Antisymmetric Quaternionic Sesquilinear Product and the Polarisation</em>; <em>The Holevo Bound and Accessible Information in Biquaternionic Form</em>; <em>Confinement and the Loss of Partonic Information in Biquaternionic Form</em>.</li>
+<li>The general products and the cone: <em>Composition and Probability: the General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared</em>; <em>The Cone and the Massless Particles in the 12 Structures Framework</em>; <em>Mass, Rank and the Positivity of the Dagger</em>.</li>
+<li>The grid: <em>The 12 Products of the Biquaternion Complex Space</em>; <em>The Twelve Structures Compared: Product, Law and Form</em>; <em>The Four General Products and Their Physical Readings</em>.</li>
+<li>The conventions of the series: <em>Conventions in the Biquaternion Universe</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idempotents in the 12 Structures Framework — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="idempotents-in-the-12-structures-framework"><strong>Idempotents in the 12 Structures Framework</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An idempotent of a product is an element equal to its own square, $\tilde\Pi\star\tilde\Pi=\tilde\Pi$.
+The equation is the algebraic form of a <strong>projection</strong>, and in this framework a projection is a <strong>state</strong>:
+an operation that, performed twice, gives the same result as once. The reading is the corpus's own and it is
+stated in <em>The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent</em>: a
+process is a multiplication and a determinate state is an idempotent. The idempotent sets of the twelve
+structures are therefore the state sets of the twelve bands, and the twelve answers differ in a way that
+matters physically. This article is the fifth physics companion of the mathematics comparison group, and
+its mathematics companion is <em>Idempotents</em> (<code>articles_maths/idempotents.md</code>).</p>
+<p>The mathematics companion proves that only five of the twelve structures carry an idempotent other than
+$0$ and $e_0$: the general plain structure $\mathrm{GPA}$, its symmetrisation $\mathrm{SPA}$, the general
+plain sesquilinear structure $\mathrm{GPS}$, and the general and symmetric quaternionic sesquilinear
+structures $\mathrm{GQS}$ and $\mathrm{SQS}$. It proves further that the idempotents of $\mathrm{GPA}$ are
+$\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, a four-parameter family; that the
+idempotents of $\mathrm{GPS}$ are the Hermitian subfamily $\tfrac12(e_0+i\hat\mu)$ over the real unit
+vectors; and that the idempotents of $\mathrm{GQS}$ and $\mathrm{SQS}$ are the family $-\tfrac12e_0+\mu$
+over the real vectors $\mu$ with $(\mu,\mu)=\tfrac34$. It proves finally that the central square separates
+the families: it vanishes on the plain and the Hermitian idempotents, so those are zero divisors of the
+algebra, and it equals $e_0$ on the family of the fourth product, so those are units.</p>
+<p>Those three facts are three physical statements, and the article reads them.</p>
+<ul>
+<li>The <strong>plain family</strong> is the state family of the composition: every local complex structure, every phase,
+  gives a projector. Its Hermitian subfamily is the family of pure states, and its complementation pairs
+  the two outcomes of a complete measurement.</li>
+<li>The <strong>Hermitian family</strong> is the pure-state family of the probability band. Its projectors are exactly
+  the density matrices of the Bloch ball, in <em>The Bloch Ball as the Trace-One Slice of the Future Light
+  Cone</em>, and <em>The Biquaternion Vacuum as a Minimal Idempotent</em> reads the vacuum as a minimal member.</li>
+<li>The <strong>fourth family</strong> is the one family of idempotents that are units. The states of the probability
+  band are null for the composition, and the states of the gauge band are invertible: the contrast is the
+  physical content of the central-square theorem, and the owner is <em>Why Probability Values Are Central:
+  the Symmetric Sesquilinear Product and Its Cone</em> together with <em>The Fourth Product and Its Indefinite
+  Metric</em>.</li>
+</ul>
+<p><strong>Conventions.</strong> We use those of the companion articles unchanged. The algebra is
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_k^{2}=-e_0$;
+$i$ is central with $i^{2}=-1$. The conjugations are ${}^{\natural}$, $\bar{\cdot}$ and
+${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The <strong>central square</strong> is $C(\tilde\Pi)e_0=\tilde\Pi^{\natural}
+\tilde\Pi$ with $C(\tilde\Pi)=\sum_\mu\Pi_\mu^{2}$, and the criterion of invertibility is $C\neq0$. The
+remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace
+$\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and
+$i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ (informational
+sector) and $\mathbb{M}_-$ (material sector). A <strong>minimal idempotent</strong> is one that is nonzero and cannot
+be written as the sum of two nonzero orthogonal idempotents.</p>
+<h2 id="the-idempotent-as-a-state">The Idempotent as a State</h2>
+<p><strong>The equation and the projection.</strong> An idempotent satisfies $\tilde\Pi^{2}=\tilde\Pi$ in the plain
+product, and in a general product the same equation is read in that product. The three invariants of an
+idempotent are its central square, which decides whether it is a unit or a zero divisor; its
+complement $e_0-\tilde\Pi$, which is idempotent whenever the family is closed under the map and which is
+orthogonal to it, $\tilde\Pi(e_0-\tilde\Pi)=0$; and the subspace in which it lies.</p>
+<p><strong>The physical reading.</strong> A projection is a yes-no measurement, and an idempotent is the outcome of that
+measurement: performing the measurement twice gives the same outcome as performing it once. The equation
+$\tilde\Pi^{2}=\tilde\Pi$ is therefore the algebraic form of a <strong>determinate state</strong>, and the nontrivial
+idempotents are the determinate states beside the two trivial ones. The reading is the corpus's, and it is
+the reason the idempotents are the objects that connect the algebra to the state space: the processes are
+the multiplications and the states are the idempotents, in <em>The Monoid of Acting Maps: the Process Is the
+Multiplication, the State Is the Idempotent</em>.</p>
+<p><strong>The trivial pair.</strong> The origin is an idempotent of every structure, the product being linear, and the
+unit $e_0$ is an idempotent of the eight structures that are not antisymmetric. Physically $0$ is the
+impossible outcome and $e_0$ is the trivial measurement, the one that keeps every state; the pair is the
+degenerate end of the state set.</p>
+<h2 id="the-plain-family-every-phase-gives-a-state">The Plain Family: Every Phase Gives a State</h2>
+<p><strong>The bijection.</strong> The idempotents of the plain product are $0$, $e_0$ and the elements
+$\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, and the map
+$\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi i)$ is a bijection from the roots of $-1$ onto the idempotents.
+The classification of the roots, read in <em>Square Roots of Minus One, Zero and Plus One in the 12
+Structures Framework</em>, splits the family in three: the trivial pair from $\pm i$, the <strong>Hermitian</strong> family
+$\tfrac12(e_0+i\hat\mu)$ over the real unit vectors, and the four-parameter <strong>non-trivial</strong> family from the
+complex roots, which lies in none of the four four-dimensional subspaces.</p>
+<p><strong>The physical reading.</strong> A local complex structure is a phase, and the bijection says that every phase
+gives a state. The state family of the composition is therefore as large as the family of phases: the four
+parameters of the non-trivial idempotents are the four real parameters of the complex root, and the
+Hermitian subfamily is the part of the family the probability band keeps. The plain idempotents are the
+idempotents of the algebra, and they are the states that the composition can prepare; the owner of the
+algebra's idempotents and of their parametrisation is <em>The Biquaternion Vacuum as a Minimal Idempotent</em>,
+and the corpus reads the associated splitting of the algebra in <em>Ideals and Peirce Decomposition of the
+General Plain Algebra</em> (mathematics). A Peirce decomposition of the algebra by an idempotent is a splitting
+of the states into two orthogonal families, and it requires associativity; this is the algebraic reason the
+plain product is the band whose states build the whole algebra.</p>
+<p><strong>The symmetrisation keeps the family.</strong> The symmetric plain algebra has the plain square,
+$\tilde\Pi\bullet\tilde\Pi=\tilde\Pi^{2}$, so its idempotent set is the plain one element for element. The
+physical reading is that the symmetric composition prepares the same states as the composition; the
+symmetrisation changes the process, not the states. The pure members of the family are zero divisors of the
+symmetrised block, because the vector subspace is its zero-divisor set, so a state that the symmetrisation
+prepares is a state the symmetrisation cannot invert: the owner is <em>The Cone and the Massless Particles in
+the 12 Structures Framework</em>.</p>
+<h2 id="the-hermitian-family-the-pure-states-and-the-bloch-ball">The Hermitian Family: the Pure States and the Bloch Ball</h2>
+<p><strong>The family.</strong> The idempotents of the general plain sesquilinear product are $0$, $e_0$ and the Hermitian
+family $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$, a two-parameter family lying in the
+informational sector $\mathbb{M}_+$. The owner is <em>Idempotents of the General Plain Sesqualgebra</em>, and the
+physics is <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em>.</p>
+<p><strong>The physical reading.</strong> The Hermitian idempotents are the <strong>pure states</strong> of the probability band. The
+element $\tfrac12(e_0+i\hat\mu)$ has a real scalar part and a purely imaginary vector part, which is the
+coefficient condition of the informational sector, and the map $\hat\mu\mapsto\tfrac12(e_0+i\hat\mu)$ sends
+the real unit sphere onto the family. The corpus reads the family as the extremal points of the positive
+cone of the sesquilgebra: the idempotents sit on the boundary of the cone and are the states the pairing
+cannot write as a mixture of two others. The Bloch ball, the trace-one slice of the future light cone, is
+the convex body they generate, and its extremal points are exactly this family; the owner is <em>The Bloch
+Ball as the Trace-One Slice of the Future Light Cone</em>. The vacuum is the minimal member, and a pure state
+is minimal because it has no orthogonal part: the complementation $\hat\mu\mapsto-\hat\mu$ pairs it with
+the state of the opposite direction, and the pair is a complete two-outcome measurement.</p>
+<p><strong>The symmetry of the band keeps the pair.</strong> The symmetric plain sesquilinear product has a scalar-valued
+square, so its only idempotents are $0$ and $e_0$: the symmetrisation of the probability form loses all
+the nontrivial pure states. The physical reading is that the symmetrised pairing forgets the direction of
+the state and keeps only its normalisation, the reduction the companion article records for the root of
+$+1$. The pure state exists in the general pairing and not in its symmetrisation.</p>
+<h2 id="the-gauge-family-the-invertible-states">The Gauge Family: the Invertible States</h2>
+<p><strong>The family.</strong> The idempotents of the general quaternionic sesquilinear product are $0$, $e_0$ and the
+family $-\tfrac12e_0+\mu$ over the real vectors $\mu$ with $(\mu,\mu)=\tfrac34$, a two-parameter family
+lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$. The symmetric quaternionic sesquilinear
+structure has the same family. The owner is <em>Idempotents of the General Quaternionic Sesqualgebra</em>.</p>
+<p><strong>The physical reading.</strong> The family is the state family of the gauge band, and it is the only nontrivial
+family of the twelve whose members are <strong>units</strong> of the algebra. The element $-\tfrac12e_0+\mu$ has a real
+scalar part $-\tfrac12$ and a real vector part of squared length $\tfrac34$, so its central square is
+$\tfrac14+\tfrac34=e_0$ and it is invertible: the state can be undone. The contrast with the probability
+band is exact and is the physics of the central-square theorem. The pure state $\tfrac12(e_0+i\hat\mu)$ has
+central square $0$ and is a zero divisor: the state of the band that measures probability is <strong>null</strong> for
+the composition. The gauge state $-\tfrac12e_0+\mu$ has central square $e_0$ and is a unit: the state of
+the band whose value is an interval is <strong>invertible</strong>. The reading is that a determinate outcome of a
+measurement is not a reversible process, while a determinate state of the gauge band is; the owner of the
+indefinite metric is <em>The Fourth Product and Its Indefinite Metric</em>, and the null states beside it are
+<em>The States the Indefinite Metric Cannot Normalise</em>.</p>
+<p><strong>The complementation fails.</strong> For the gauge family the map $\mu\mapsto-\mu$ sends $-\tfrac12e_0+\mu$ to
+$\tfrac12e_0-\mu$, which is not a member, so the family is not closed under the complementation
+$e_0-\tilde\Pi$ and the two-outcome measurement of the plain family has no analogue there. The
+two-parameter family of the gauge band has a centre offset from the origin, while the Hermitian family is
+centred at $\tfrac12e_0$: the two families are two spheres of different centre and different radius. The
+mathematics companion reads the difference, and the physical reading is that the gauge band's state set is
+not a convex mixture body of the probability kind; its members are invertible four-vectors of a fixed
+length.</p>
+<h2 id="which-structures-carry-a-nontrivial-state">Which Structures Carry a Nontrivial State</h2>
+<p>Five of the twelve structures carry an idempotent other than $0$ and $e_0$, and each absence is a physical
+statement.</p>
+<ul>
+<li><strong>The four antisymmetric structures have the origin alone.</strong> The two bilinear brackets have an
+  identically vanishing square, and the two sesquilinear brackets have a purely imaginary pure vector for a
+  square, which forces the origin. Physically a bracket is an infinitesimal transformation, and an
+  infinitesimal transformation has no determinate state: the bracket of an element with itself vanishes,
+  so it can never equal the element. The owner is <em>The Operators of the Twelve Structures: Multiplication,
+  Adjoint and Bracket</em>, and the complex witness of the same absence is <em>A Bracket Invisible on the Real
+  Forms: the Complex Witness of the Jacobi Failure</em>.</li>
+<li><strong>The natural product and its symmetrisation have the trivial pair alone.</strong> Their square is the central
+  square, so an idempotent is central and the equation leaves $0$ and $e_0$. Physically the band whose
+  square is the interval produces no determinate state beyond the trivial ones: a state is not an
+  interval.</li>
+<li><strong>The symmetric quaternionic algebra has the trivial pair alone</strong>, for the same reason, its product
+  being central-valued.</li>
+<li><strong>The five structures with a nontrivial state</strong> are the two plain ones, the general plain sesquilinear
+  one, and the two quaternionic sesquilinear ones. Physically the states live in the composition band and
+  in the two bands of the pairing, and the band of the interval produces none.</li>
+</ul>
+<h2 id="the-twelve-structures-at-the-idempotents">The Twelve Structures at the Idempotents</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>square</th>
+<th>idempotents</th>
+<th>central square of the nontrivial family</th>
+<th>physical reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPA</td>
+<td>$\tilde\Pi^{2}$</td>
+<td>$0$, $e_0$, $\tfrac12(e_0+\tilde\Xi i)$</td>
+<td>$0$ (zero divisors)</td>
+<td>every phase gives a state; the state family of the composition</td>
+</tr>
+<tr>
+<td>SPA</td>
+<td>$\tilde\Pi^{2}$</td>
+<td>the set of GPA</td>
+<td>$0$</td>
+<td>the symmetric composition prepares the same states</td>
+</tr>
+<tr>
+<td>APA</td>
+<td>$0$</td>
+<td>$0$ alone</td>
+<td>—</td>
+<td>an infinitesimal transformation has no state</td>
+</tr>
+<tr>
+<td>GQA</td>
+<td>$C(\tilde\Pi)e_0$</td>
+<td>$0$, $e_0$</td>
+<td>—</td>
+<td>the band of the interval has no nontrivial state</td>
+</tr>
+<tr>
+<td>SQA</td>
+<td>$C(\tilde\Pi)e_0$</td>
+<td>$0$, $e_0$</td>
+<td>—</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>AQA</td>
+<td>$0$</td>
+<td>$0$ alone</td>
+<td>—</td>
+<td>an infinitesimal transformation has no state</td>
+</tr>
+<tr>
+<td>GPS</td>
+<td>$\tilde\Pi\tilde\Pi^{*}$</td>
+<td>$0$, $e_0$, $\tfrac12(e_0+i\hat\mu)$</td>
+<td>$0$ (zero divisors)</td>
+<td>the pure states, on the boundary of the positive cone and in the Bloch ball</td>
+</tr>
+<tr>
+<td>SPS</td>
+<td>$\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$</td>
+<td>$0$, $e_0$</td>
+<td>—</td>
+<td>the symmetrised pairing keeps only the trivial states</td>
+</tr>
+<tr>
+<td>APS</td>
+<td>the pure part</td>
+<td>$0$ alone</td>
+<td>—</td>
+<td>an infinitesimal transformation has no state</td>
+</tr>
+<tr>
+<td>GQS</td>
+<td>$\tilde\Pi^{\natural}\tilde\Pi^{*}$</td>
+<td>$0$, $e_0$, $-\tfrac12e_0+\mu$</td>
+<td>$e_0$ (units)</td>
+<td>the invertible states of the gauge band</td>
+</tr>
+<tr>
+<td>SQS</td>
+<td>the real part</td>
+<td>$0$, $e_0$, $-\tfrac12e_0+\mu$</td>
+<td>$e_0$ (units)</td>
+<td>the same family as the general partner</td>
+</tr>
+<tr>
+<td>AQS</td>
+<td>the pure part</td>
+<td>$0$ alone</td>
+<td>—</td>
+<td>an infinitesimal transformation has no state</td>
+</tr>
+</tbody>
+</table></div>
+<p>Read by column, the table has three kinds of entry: the origin, present in all twelve rows; the unit,
+present in the eight rows that are not antisymmetric; and the families, present in the five rows the
+mathematics companion classifies. The four families are the plain one, four parameters and all, the
+Hermitian one, and the two rows that share the family $-\tfrac12e_0+\mu$. The physics of the table is the
+distribution of the states over the bands: the composition carries the largest family, the probability
+band carries the pure states, the gauge band carries the invertible states, the interval band and the
+brackets carry none.</p>
+<h2 id="the-complementation-and-the-complete-measurement">The Complementation and the Complete Measurement</h2>
+<p>For the plain product the map $\tilde\Pi\mapsto e_0-\tilde\Pi$ is the <strong>complementation</strong>: the complement
+is idempotent, the two are orthogonal, $\tilde\Pi(e_0-\tilde\Pi)=0$, and they sum to $e_0$. The map is the
+antipode of the parameter set, $\tilde\Xi\mapsto-\tilde\Xi$ for the plain family and
+$\hat\mu\mapsto-\hat\mu$ for the Hermitian subfamily. The physical reading is a <strong>complete measurement</strong>:
+the pair $\{\tilde\Pi,e_0-\tilde\Pi\}$ is a two-outcome measurement whose outcomes exhaust the identity,
+and the orthogonality is the statement that the two outcomes are mutually exclusive. The spectral
+decomposition of an idempotent is the Peirce splitting $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus
+\mathbb{B}(e_0-\tilde\Pi)$, and the physical reading is the splitting of the state space into the two
+outcome eigenspaces. For the plain band the complementation pairs the whole family, the four-parameter
+part included; for the probability band it pairs the Hermitian family; it fails for the gauge family,
+which is not closed under it, and is the exchange of the trivial pair for the natural product.</p>
+<p>The pairing of the Hermitian family under $\hat\mu\mapsto-\hat\mu$ is the corpus's antipodal pure state,
+and it is the algebraic form of the two outcomes of a spin measurement along a direction: the two states
+$\tfrac12(e_0+i\hat\mu)$ and $\tfrac12(e_0-i\hat\mu)$ are the two eigenstates, and the operator that
+separates them is the direction $\hat\mu$ itself, a root of $-1$ read as an observable. The owner of the
+observable face is <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>, and the
+complement is the same statement read on the identity.</p>
+<h2 id="what-the-idempotent-decides">What the Idempotent Decides</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>source</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>only five structures carry a nontrivial idempotent</td>
+<td>mathematics companion, theorem; recomputed that the Hermitian projector is idempotent in GPA and not in GQS</td>
+<td>cited</td>
+</tr>
+<tr>
+<td>the plain idempotents are $\tfrac12(e_0+\tilde\Xi i)$ over the roots of $-1$</td>
+<td>mathematics companion; recomputed $\tfrac12(e_0+ie_1)^{2}=\tfrac12(e_0+ie_1)$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>the Hermitian idempotents have central square $0$ and are zero divisors</td>
+<td>mathematics companion; recomputed $C(\tfrac12(e_0+ie_1))=0$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>the fourth family $-\tfrac12e_0+\mu$ has central square $e_0$ and is a family of units</td>
+<td>mathematics companion; recomputed with $(\mu,\mu)=\tfrac34$</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>the complementation $e_0-\tilde\Pi$ is idempotent, orthogonal and sums to the identity</td>
+<td>mathematics companion; recomputed for the Hermitian idempotent</td>
+<td>verified</td>
+</tr>
+<tr>
+<td>the families lie in the centre, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and no remarkable subspace</td>
+<td>mathematics companion; the coefficient conditions are read in the text</td>
+<td>cited</td>
+</tr>
+<tr>
+<td>the physical readings (state, pure state, Bloch ball, gauge state, two-outcome measurement, decoherence, Bell basis, vacuum, entropy, coarse-graining, polarisation)</td>
+<td>this article; owners cited in the text</td>
+<td>interpretation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-states-in-the-physics-corpus">The States in the Physics Corpus</h2>
+<p>The idempotents are the states, and the corpus has already written the biography of a state: it is a point
+of a ball, it is deformed by decoherence, it is the outcome of a measurement, it is a vector of a GNS
+space, and one of its minimal members is the vacuum. The readings below are those articles, restated for
+the idempotent table.</p>
+<p><strong>A state is a point of the Bloch ball.</strong> <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>
+identifies the state space with the trace-one slice of the cone, a ball whose sphere is the pure states,
+and the idempotent condition is the boundary condition $\lvert\mathbf r\rvert=1$. <em>The Generalized Bloch
+Ball for Spin 1 in the Biquaternion Framework</em> extends the picture and marks the ceiling of the framework;
+the lesson for the idempotent table is that each structure cuts a convex body of states, and the Hermitian
+family is the one whose body has been named.</p>
+<p><strong>Decoherence moves a state off the idempotent family.</strong> <em>Decoherence as Idempotent Projection</em> shows that
+a pure state is an idempotent and that the dephasing channel deforms it into a positive trace-one element
+that is not idempotent, the deviation being the scalar $(\lvert\mathbf r\rvert^{2}-1)/4$. The idempotent
+family is therefore the <em>pure</em> end of the state family, and an idempotent is a state that has not
+decohered. The Jordan idempotent is the algebra's name for the undivided state, and the mixed states of the
+ball are exactly the states that are not idempotents.</p>
+<p><strong>A measurement has idempotents for outcomes.</strong> <em>The Measurement Problem in Algebraic Form</em> and <em>Quantum
+Channels and the Reversible/Irreversible Dichotomy</em> read the sandwich
+$\tilde\rho\mapsto\tilde P\tilde\rho\tilde P$ as the projective measurement, with the idempotent
+$\tilde P$ one outcome and the complement $e_0-\tilde P$ the other. The complementation of this article is
+the algebra's two-outcome event: the pair $(\tilde P,e_0-\tilde P)$ is a complete measurement, and the
+failure of the complementation for the gauge family says that a gauge idempotent does not by itself define
+a two-outcome test. <em>POVMs and the Positive Cone in Biquaternionic Form</em> places the idempotents at the
+extreme points of the positive cone, so the projective measurement is the sharp end of the general
+measurement.</p>
+<p><strong>An idempotent is also a basis vector of a composite.</strong> <em>The Bell Basis as the Idempotent Basis of
+$\mathbb{B}\otimes\mathbb{B}$</em> uses the idempotents of the tensor square as a basis of the two-qubit space:
+the four Bell projectors are idempotent, orthogonal and complete, and they diagonalise the maximally
+entangled states. The idempotent therefore does two jobs at once, as a pure state of one system and as a
+basis element of the correlations of two, and the tensor-product article is where the two jobs are visibly
+the same.</p>
+<p><strong>The vacuum is a minimal idempotent.</strong> <em>The Biquaternion Vacuum as a Minimal Idempotent</em> identifies the
+one-mode vacuum with the minimal idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, of trace one, which generates
+the minimal left ideal that is the one-particle module. Three properties of the table meet in it: it is a
+state, so it is Hermitian; it is minimal, so it is an extreme point of the state set; and it is a zero
+divisor, so it is in the non-pure family of the cone. The vacuum-manifold observation of that article —
+every unit vector $\hat\mu$ gives a vacuum and the algebra singles none out — is the statement that the
+table has a sphere of vacua and no preferred point, which is the framework's standing disclaimer about
+selection. <em>The GNS Construction in the Biquaternion Framework</em> recovers the same idempotent from the
+state's null space, so the minimal idempotent, the vacuum vector and the one-particle module are three
+descriptions of one object.</p>
+<h2 id="entropy-coarse-graining-and-the-vacuum-energy">Entropy, Coarse-Graining and the Vacuum Energy</h2>
+<p>The idempotents are the pure states, and the corpus has a second, quantitative way of saying what that
+means: the idempotents are exactly the states of zero entropy, and every other state lies at a definite
+distance from them. The same section collects the further objects the pure states carry: the vacuum energy,
+the coarse-graining maps and the polarisation sphere.</p>
+<p><strong>The deviation from idempotency is the entropy coordinate.</strong> <em>Von Neumann Entropy and the Biquaternion
+Norm</em> and <em>Coarse-Graining and the Biquaternion Entropy Functional</em> compute the deviation from idempotency
+of a state $\tilde\rho=\tfrac12(e_0+i\mathbf r)$ and find it to be a single scalar,</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde\rho^{2}-\tilde\rho\bigr)=\tfrac14\bigl(\lvert\mathbf r\rvert^{2}-1\bigr)
+=-N(\tilde\rho),
+$$</p>
+<p>so that purity, idempotency and the vanishing of the biquaternion norm are three interpretations of one
+number. The entropy is a strictly monotone function of that number: it <strong>vanishes on the idempotents</strong>,
+is maximal at the centre of the ball, and leaves the idempotent family with infinite slope, because the
+logarithm of a state is singular exactly where the state is idempotent. The idempotent family is therefore
+the <strong>zero-entropy boundary</strong> of the state space, and the entropy is the coordinate that measures the
+distance from it. This is the sharpest statement of what an idempotent is physically: a determinate state
+is a state of no missing information, and it is an idempotent because repeating a determinate measurement
+changes nothing.</p>
+<p><strong>A coarse-graining is itself an idempotent map.</strong> The coarse-grainings of <em>Coarse-Graining and the
+Biquaternion Entropy Functional</em> are the trace-preserving, completely positive, <strong>idempotent</strong> maps
+$\Phi$ with $\Phi^{2}=\Phi$ onto a commutative subalgebra, of which the fully dephasing channel is the
+example. Idempotency therefore appears twice in the framework, at two levels: an idempotent <strong>element</strong> is
+a pure state, and an idempotent <strong>map</strong> is a coarse-graining. Both satisfy the same equation $\Pi^{2}=\Pi$,
+and the two are related by the fact that a coarse-graining contracts the Bloch ball toward its centre,
+moving every state off the idempotent family and increasing the entropy. The second law of the sector is
+the statement that the image of a state under a coarse-graining is never closer to the idempotent family
+than the state itself.</p>
+<p><strong>The idempotents contain the perfectly distinguishable pairs.</strong> <em>Relative Entropy and the Biquaternion
+Framework</em> develops the Umegaki quantity $S(\rho\|\sigma)$ and its monotonicity under every physical
+process. Two <strong>orthogonal</strong> idempotents are separated with certainty by a single projective measurement,
+and their relative entropy diverges, because neither lies in the support of the other; two non-orthogonal
+idempotents are separated only probabilistically, and a pair in which at least one member is mixed is
+separated no better. The idempotent family therefore contains the pairs a single measurement can tell
+apart, and the ball around it is where the distinction is only statistical.</p>
+<p><strong>The vacuum idempotent carries the zero-point energy.</strong> <em>The Vacuum State and the Casimir Effect in
+Biquaternionic Form</em> identifies the vacuum with the one-mode state of no particles, which is the minimal
+idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ of <em>The Biquaternion Vacuum as a Minimal Idempotent</em>, and
+records that the state costs half a quantum of energy per mode. The idempotent is the state of the field
+when nothing is excited, and the normal-ordering prescription removes the absolute sum while leaving the
+<strong>difference</strong> produced by boundary conditions: the Casimir energy. The idempotent therefore carries a
+physical energy that is not read off its own algebra — the half-quantum per mode and the cutoff are
+standard-theory data — and the framework's role is to house the state and the indefinite metric that fixes
+the count of modes.</p>
+<p><strong>The sphere of pure states.</strong> The idempotents of the probability band are the boundary sphere of the
+Bloch ball, and <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em> reads the same
+sphere as the polarisation sphere: a fully polarised wave is a point of the sphere, and a partially
+polarised one is a point of the ball. <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>
+completes the pair of readings, so one object — the sphere of idempotents of $\mathbb{M}_+$ — is at once
+the sphere of pure qubit states, the sphere of pure polarisations and the boundary of the state cone.
+Idempotency is the algebraic name of the sphere.</p>
+<h2 id="physical-interpretation">Physical Interpretation</h2>
+<ul>
+<li>An idempotent is a projection, and a projection is a determinate state: measuring twice gives the same
+  result as measuring once. The idempotent sets are the state sets of the twelve bands.</li>
+<li>The plain product carries the largest family, one state per local complex structure, so every phase
+  gives a state. The trivial pair is the impossible outcome and the trivial measurement.</li>
+<li>The Hermitian idempotents are the pure states of the probability band, on the boundary of the positive
+  cone, and the Bloch ball is the convex body they generate. The vacuum is a minimal member.</li>
+<li>The gauge family is the only nontrivial family of idempotents that are units. The pure state of the
+  probability band is null for the composition; the gauge state is invertible. A determinate outcome of a
+  measurement is not a reversible process; a determinate state of the gauge band is.</li>
+<li>The complementation pairs a state with its orthogonal complement, and the pair is a complete
+  two-outcome measurement. It pairs the plain family and the Hermitian family and fails for the gauge
+  family.</li>
+<li>The brackets and the interval band carry no nontrivial state: an infinitesimal transformation has no
+  determinate state, and a state is not an interval.</li>
+<li>The idempotent is the state of <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>, the
+  outcome of the measurement of <em>The Measurement Problem in Algebraic Form</em>, the basis element of <em>The
+  Bell Basis as the Idempotent Basis of B⊗B</em>, and the minimal vacuum of <em>The Biquaternion Vacuum as a
+  Minimal Idempotent</em>; decoherence, read in <em>Decoherence as Idempotent Projection</em>, is the passage off the
+  idempotent family.</li>
+<li>The idempotents are the zero-entropy states: the deviation
+  $\mathrm{Sc}(\tilde\rho^{2}-\tilde\rho)=\tfrac14(\lvert\mathbf r\rvert^{2}-1)$ is minus the biquaternion
+  norm, and the entropy is a monotone function of it that vanishes exactly on the idempotents. The sphere
+  of idempotents of $\mathbb{M}_+$ is at once the pure-qubit sphere, the polarisation sphere and the
+  boundary of the state cone.</li>
+<li>Idempotency occurs at two levels. An idempotent element is a pure state; an idempotent map $\Phi^{2}=\Phi$
+  is a coarse-graining, and a coarse-graining increases the entropy by moving every state off the
+  idempotent family.</li>
+<li>The vacuum idempotent carries the zero-point energy: half a quantum per mode, with the Casimir energy the
+  boundary-condition-dependent difference that normal ordering leaves behind.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>An idempotent is an element equal to its own square, the algebraic form of a projection and, in this
+framework, of a determinate state. The mathematics companion proves that only five of the twelve
+structures carry a nontrivial idempotent: the general plain structure and its symmetrisation, with the
+family $\tfrac12(e_0+\tilde\Xi i)$ over the roots of $-1$, one state per phase; the general plain
+sesquilinear structure, with the Hermitian family $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors, the
+pure states of the probability band, on the boundary of the positive cone and the extremal points of the
+Bloch ball; and the two quaternionic sesquilinear structures, with the family $-\tfrac12e_0+\mu$ over the
+real vectors of squared length $\tfrac34$, the states of the gauge band. The central square separates the
+families: it vanishes on the plain and the Hermitian idempotents, which are therefore zero divisors, and
+it equals $e_0$ on the gauge family, which is therefore a family of units. The physics of that separation
+is the contrast between the band that measures a probability, whose determinate states are null and cannot
+be composed, and the band whose value is an interval, whose determinate states are invertible. The
+complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$ pairs a state with its orthogonal complement and makes a
+complete two-outcome measurement; it pairs the plain family and the Hermitian family and fails for the
+gauge family. The four brackets carry the origin alone, because an infinitesimal transformation has no
+determinate state, and the interval band carries only the trivial pair, because a state is not an
+interval.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<ul>
+<li>$\tilde\Pi$ an idempotent, $\tilde\Pi\star\tilde\Pi=\tilde\Pi$; the trivial pair $0$ and $e_0$.</li>
+<li>$C(\tilde\Pi)e_0=\tilde\Pi^{\natural}\tilde\Pi$ the central square; $C\neq0$ is the criterion of invertibility.</li>
+<li>$\tilde\Xi$ a root of $-1$; $\hat\mu$ a real unit vector; the families $\tfrac12(e_0+\tilde\Xi i)$, $\tfrac12(e_0+i\hat\mu)$ and $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$.</li>
+<li>The complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$, with $\tilde\Pi(e_0-\tilde\Pi)=0$; the Peirce splitting $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_0-\tilde\Pi)$.</li>
+<li>The remarkable subspaces: the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian ones $\mathbb{M}_+$, $\mathbb{M}_-$.</li>
+<li>The twelve structures: GPA, GQA, GPS, GQS general; SPA, SQA, SPS, SQS symmetric; APA, AQA, APS, AQS antisymmetric.</li>
+</ul>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The mathematics companion: <em>Idempotents</em> (<code>articles_maths/idempotents.md</code>), for the twelve sets, the central-square theorem and the complementation.</li>
+<li>The state reading of a process: <em>The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent</em>; <em>The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich</em>; <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>.</li>
+<li>The plain family and the algebra's idempotents: <em>The Biquaternion Vacuum as a Minimal Idempotent</em>; <em>Ideals and Peirce Decomposition of the General Plain Algebra</em> (mathematics).</li>
+<li>The pure states and the Bloch ball: <em>Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone</em>; <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>; <em>The Hermitian Subspace M₊ as the Informational Sector</em>; <em>The Anti-Hermitian Subspace M₋ as the Material Sector</em>.</li>
+<li>The gauge family and the indefinite metric: <em>The Fourth Product and Its Indefinite Metric</em>; <em>The States the Indefinite Metric Cannot Normalise</em>; <em>Idempotents of the General Quaternionic Sesqualgebra</em> (mathematics).</li>
+<li>The observable face: <em>Observables, Gauge Generators and the Chirality of the Internal Action</em>.</li>
+<li>The states in the physics corpus: <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>; <em>The Generalized Bloch Ball for Spin 1 in the Biquaternion Framework</em>; <em>Decoherence as Idempotent Projection</em>; <em>The Measurement Problem in Algebraic Form</em>; <em>POVMs and the Positive Cone in Biquaternionic Form</em>; <em>The Bell Basis as the Idempotent Basis of B⊗B</em>; <em>The GNS Construction in the Biquaternion Framework</em>; <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>.</li>
+<li>The roots that parametrise the plain family: <em>Square Roots of Minus One, Zero and Plus One in the 12 Structures Framework</em>; <em>Idempotents of the General Plain Algebra</em> (mathematics).</li>
+<li>The entropy, the coarse-graining and the vacuum energy: <em>Von Neumann Entropy and the Biquaternion Norm</em>; <em>Coarse-Graining and the Biquaternion Entropy Functional</em>; <em>Relative Entropy and the Biquaternion Framework</em>; <em>The Vacuum State and the Casimir Effect in Biquaternionic Form</em>; <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em>; <em>Entanglement Entropy and the Replica Trick in Biquaternionic Form</em>.</li>
+<li>The brackets: <em>A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure</em>; <em>A Higher Structure for the Jacobi Failure</em>.</li>
+<li>The grid and the definitions: <em>The 12 Products of the Biquaternion Complex Space</em> (mathematics); <em>The Twelve Structures Compared: Product, Law and Form</em>; <em>Definitions for the Study of the 12 Algebraic Structures</em> (mathematics); <em>Conventions in the Biquaternion Universe</em>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
