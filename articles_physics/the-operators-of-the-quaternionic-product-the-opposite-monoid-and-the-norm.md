@@ -44,7 +44,7 @@ $$
 Every type criterion of the band is therefore a criterion on **one** parameter. This is the sharp contrast with the
 general plain algebra, whose form is the scalar part of its own product, whose adjoint is the transpose, and whose
 transpose **swaps the two sides**, so that its one-sided criterion is a criterion on one parameter while its two-sided
-criteria are criteria on the **product** of two (*The Operators of the Ordinary Product: One-Sided, Two-Sided and the
+criteria are criteria on the **product** of two (*The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the
 Sandwich*). The
 consequences multiply. The self-adjoint and the skew-adjoint one-sided operators are cut out by the sign character of
 the natural conjugation, so both sectors are populated — the centre and the vector subspace — where the plain row has a
@@ -663,4 +663,4 @@ Lorentz transformations, and the division of the parameters by the sign of the n
 - *The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions*, for the groups cut out by the norm, and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, for the form, and *The Four General Products and Operators*, §*The Products Decide the Four Adjoints*, for its adjoint.
 - The band articles: *The Interval as the Square and the Charge of the Material Composition*, for the interval, the mass shell and the closed causal cone, and *Why the Material Composition Is Oriented and Cannot Measure*, for the orientation, the one-sided unit and the opposite monoid read physically.
 - *The Spinor Space as a Module and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*, for the state space the operators act on.
-- *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*, the sibling operator article of the composition band, and *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*, the crossing reader of the twelve.
+- *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*, the sibling operator article of the composition band, and *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*, the crossing reader of the twelve.

@@ -608,7 +608,7 @@ idempotent.
 place among the twelve structures.
 - Physics article *The Symmetrised Material Composition and the Jordan Identity*
 (`articles_physics/the-symmetrised-material-composition-and-the-jordan-identity.md`), the framing article of the
-band, for the split of the ordinary product, the operation and the Jordan identity.
+band, for the split of the general plain bilinear product, the operation and the Jordan identity.
 - Physics article *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*
 (`articles_physics/observables-as-a-jordan-algebra-the-symmetric-plain-product-and-the-classical-composition.md`),
 for the closure of the Hermitian sector, the observables and the classical composition, which are the band's own

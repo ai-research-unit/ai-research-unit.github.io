@@ -3,14 +3,14 @@
 ## Introduction
 
 The GPS band reads the plain sesquilinear product as the probability structure of the framework. The product is
-$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, the ordinary product with its second slot read through the Hermitian
+$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, the general plain bilinear product with its second slot read through the Hermitian
 conjugation, and its scalar part is $\sum_{\mu}P_{\mu}\overline{Q_{\mu}}$, positive definite. This article carries
 the operator layer of the band: the multiplication operators of this product, the form they are adjoint for, and
 the consequences of that adjoint. It answers the question the twelve bands ask, and for this band the answer is the
 mirror image of the composition band: the adjoint is taken for the **positive definite** Hermitian form, and it
 **conjugates the parameter and keeps the side**, where the adjoint of the composition band swaps the sides.
 
-The article is the sibling of *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*, the
+The article is the sibling of *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*, the
 operator article of the GPA band, and it carries a layer that article explicitly defers to this band. The composition
 band reads its own indefinite plain form and states that self-adjointness for that form is not physical hermiticity;
 the observables and the gauge generators of the framework are the self-adjoint and the skew-adjoint operators of the
@@ -220,7 +220,7 @@ the product at the level of the adjoint.
 **Corollary (the contrast with the composition band).** The adjoint of this band is a **Hermitian adjoint** for a
 positive definite form: it conjugates the parameter and keeps the side. The adjoint of the composition band is a
 **transpose** for the indefinite plain bilinear form: it keeps the parameter and swaps the sides,
-$(L_{\tilde A})^{\approx}=R_{\tilde A}$, of *The Operators of the Ordinary Product*. The type criteria are on
+$(L_{\tilde A})^{\approx}=R_{\tilde A}$, of *The Operators of the General Plain Bilinear Product*. The type criteria are on
 **one parameter** here and on the **product of two parameters** there, and the block-by-block comparison is the
 crossing reader *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*, which is not one of
 the twelve.
@@ -671,8 +671,8 @@ Hermitian adjoint that keeps them. What is proved is the algebra; what is propos
 - *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*
   (`articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.md`), for the
   positive form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ and its structures.
-- *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*
-  (`articles_physics/the-operators-of-the-ordinary-product-one-sided-two-sided-and-the-sandwich.md`), the
+- *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*
+  (`articles_physics/the-operators-of-the-general-plain-bilinear-product-one-sided-two-sided-and-the-sandwich.md`), the
   composition band sibling, for the adjoint that swaps the sides and the deferral of the physical adjoint to this
   band.
 - *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra* and *The Complementary Space of the Spinor

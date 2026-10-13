@@ -482,7 +482,7 @@ This is what makes each combination close on itself with the same structure cons
 The conventions of the construction are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the sector structure.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric at its three levels.
+- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*).
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Lie algebra, the real forms and the representation theory.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module and the action of the group on it.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the cone preserved by the automorphisms.

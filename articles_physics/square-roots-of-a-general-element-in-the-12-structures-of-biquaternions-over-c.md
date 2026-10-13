@@ -12,7 +12,7 @@ group, and its mathematics companion is *Square Roots of a General Element in th
 (`articles_maths/square-roots-of-a-general-element-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`).
 
 The physics is already present in the corpus under a different scope. *Square Roots: the Local Complex
-Structure, the Light Cone and the Mass Shell* reads the general equation for the ordinary product and
+Structure, the Light Cone and the Mass Shell* reads the general equation for the general plain bilinear product and
 draws the three physical objects from the three named values. *Biquaternion Norm and Invertibility* owns
 the interval and the criterion of invertibility. The present article adds the structural reading that the
 mathematics companion supplies: the four general products have four different root sets at every value,

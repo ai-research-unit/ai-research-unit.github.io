@@ -53,7 +53,7 @@ decides the composition and the first the form, is the Table of the Slots of *Co
 General Products*. The signature table of the four scalar forms on the remarkable subspaces,
 which is where the effect of the first slot on the form is quantified, compares the four blocks with one
 another and so belongs to this article rather than to any of them; it is in §*Remarkable Subspaces*. The
-field of $B$ alone is *The Ordinary Product on the Biquaternion Space*, the entry article of the block of
+field of $B$ alone is *The General Plain Bilinear Product on the Biquaternion Space*, the entry article of the block of
 the algebra over $\mathbb{C}$, where the restriction of $B$ to the remarkable subspaces is read.
 
 **This article is also the place where the four are compared with one another.** Each block reads one
@@ -320,7 +320,7 @@ $+\mathrm{I}_4$ on $\mathbb{M}_+$, so it is definite on each sector and carries 
 within each sector it has no null cone, so it carries no Lorentzian metric. The **physical interpretation** is that
 this is the product of **composition**: it is associative, so it can be iterated without ambiguity, and
 its identity $e_0$ is the identity operation. The algebra it defines is the algebra of material
-operations, and the first physics block reads it: the ordinary product and the sector sign of its form,
+operations, and the first physics block reads it: the general plain bilinear product and the sector sign of its form,
 the reference state and the absence of a material idempotent, the composition of material operations on
 both sides, and the square roots of an element. The decomposition structure the algebra also carries —
 the Peirce decomposition, the minimal left ideals and the bi-module — is mathematics, read in
@@ -590,7 +590,7 @@ dynamics, and the caution of that article carries over.
 **Caution.** The identities are form-level and are read on the sectors, with both arguments taken there;
 they do not say that the four general products agree. Off the sectors the four forms are four. In particular
 $K=N$ on $\mathbb{M}_+$ does not make the general quaternionic sesquilinear product a bilinear one there, and
-$H=-B$ on $\mathbb{M}_-$ does not make the ordinary product a pairing.
+$H=-B$ on $\mathbb{M}_-$ does not make the general plain bilinear product a pairing.
 
 ### Named Readings of the Grid
 
@@ -837,7 +837,7 @@ four objects this article maps, and they are placed in the order of the corpus's
 The division of labour among the four is fixed, and the corpus keeps to it.
 
 - **The block of the algebra over $\mathbb{C}$** carries the algebra of operations and its sector: the
-ordinary product, its associativity and its unit, the sector sign of its form, the reference state and
+general plain bilinear product, its associativity and its unit, the sector sign of its form, the reference state and
 the absence of a material idempotent, the composing multiplications, and the square roots of elements.
 The ideals, the Peirce decomposition and the enveloping algebra of the algebra are mathematics, and
 the block cites them instead of reproducing them.
@@ -923,6 +923,8 @@ The algebra fixes the grid and the signs; it does not fix the names.
 
 Three transversal interpretations can be added to the map. The sector exchange sorts the four products into two classes, the two bilinear products moving with the Wick exchange and the two sesquilinear products not, and a change of the local complex structure does the same, so the sorting itself is the framework's invariant criterion (*Conventions in the Biquaternion Universe*). And the exchange read as a clock adds an interpretation of the temporal product: the quarter turn of the complex time sector is the tick, whose reference and period are supplied and whose arrow and rate are not (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). A third interpretation is the exchange-invariant tensor square: because a tensor square of a bilinear form carries no sign of the sector, the framework's correlations are **between** the rows and not inside one of them, entanglement is not a fifth job, and the partial trace of a subsystem lives on the tensor square rather than on a row.
 
+A fourth transversal interpretation is the sorting of the four forms by **causal content** into a cone-carrying pair and an achronal pair. The pair a form falls in is decided by its inertia on the material sector: the two indefinite forms, $N$ and $K$, carry the light cone, and the two definite forms, $B$ and $H$, carry none. Within the achronal pair $B$ is the negative definite member and $H$ the positive definite one, the two signs of the Euclidean square of the material sector, $B=-H$ there — the sign the central imaginary reverses on the bilinear forms and leaves alone on the sesquilinear ones. Read $B$ as the **achronal form**: on it no two distinct material events are null-separated, so it carries no signal and defines no cone. Boundary: $B$ is negative definite and is therefore not a state space, the probability living on $H$; the owner of $B$ as a positive interpretation is *Why the Material Composition Is Oriented and Cannot Measure*.
+
 ## Summary
 
 The biquaternion space carries four general products, obtained by inserting the involutions of the algebra into
@@ -998,7 +1000,7 @@ matrices and their signatures.
 - Mathematics article *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*
 (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the
 sign of the square on the two sectors, $\tilde Q\star\tilde Q=\pm N(\tilde Q)e_0$.
-- Companion article *The Ordinary Product on the Biquaternion Space*, for the form $B$ alone on the remarkable subspaces.
+- Companion article *The General Plain Bilinear Product on the Biquaternion Space*, for the form $B$ alone on the remarkable subspaces.
 - Companion articles *The Interval as the Square and the Charge of the Material Composition*, *Mass, Rank and the Positivity of the Dagger* and *The Fourth Product and Its Indefinite Metric*, for $N$, $H$ and $K$ on the remarkable subspaces, and for the interval identity and the physical
 interpretation of the quaternionic product.
 - Companion article *The Biquaternion Mathematics Corpus*, whose Algebra block this article

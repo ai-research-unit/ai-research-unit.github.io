@@ -44,7 +44,7 @@ four-vector is a null vector of the probability form.
 
 **Placement and boundaries.** This article is the material-sector companion of the probability band,
 *Focus on the General Plain Sesqualgebra (GPS) of Biquaternions — Probability*, and the mirror of *The
-Ordinary Product on the Material Sector* in the composition band. The product, its two halves and the
+General Plain Bilinear Product on the Material Sector* in the composition band. The product, its two halves and the
 form $H$ on the whole algebra are the band's framing articles; the reality of $H$ on the informational
 side is *The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*, whose
 section on the state side is the announcement of the companion article and not of this one; the positivity
@@ -109,7 +109,7 @@ material sector but one product read with two signs, and the sign is what the se
 ## The Product of Two Material Elements
 
 Write a material element in its own coordinates, $\tilde T=ict\,e_0+\mathbf x$. The product on the sector
-is the general plain bilinear one, $-1$ times, so its structure is the structure of *The Ordinary Product
+is the general plain bilinear one, $-1$ times, so its structure is the structure of *The General Plain Bilinear Product
 on the Material Sector* and only its reading changes. For two material elements,
 
 $$
@@ -436,7 +436,7 @@ restricted to $\mathbb{M}_-$, what is proposed is the naming.
   for the symmetric half of the product and the positivity on the whole algebra.
 - Companion article *The General Plain Sesquilinear Product on the Informational Sector*, for the mirror
   reading on $\mathbb{M}_+$.
-- Companion article *The Ordinary Product on the Material Sector*, for the composition product on the same
+- Companion article *The General Plain Bilinear Product on the Material Sector*, for the composition product on the same
   sector.
 - Companion article *The Operators of the Plain Sesquilinear Product and the Born Pairing*, for the
   operators, the adjoint and the worked element.

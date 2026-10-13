@@ -24,7 +24,7 @@ the configuration–momentum product of §*The Product $\tilde q\tilde p$ in the
 
 The companion articles used below are:
 
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra, the conjugations, the three levels of "metric", the d'Alembertian convention, and the presentation rules this article follows.
+- Companion article *Conventions in the Biquaternion Universe*, for the algebra, the conjugations, the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*), the d'Alembertian convention, and the presentation rules this article follows.
 - Companion article *The Local Complex Structure and the Speed of Light*, for the sense in which the complex structure carries a scale $c$, and for the two routes that fix it.
 - Companion article *The Empirical Status of the Biquaternion Framework*, for the standing position that the algebra is dimensionless and makes no distinguishing prediction.
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the configuration quaternion, the conjugate momentum, and the product $\tilde q\tilde p$.
@@ -112,7 +112,7 @@ $$
 
 the same operator in both writings. In the length coordinate the four coefficients of $\tilde{\nabla}$ are inverse lengths; in the time coordinate the temporal coefficient is $c^{-1}\partial_t$, an inverse length through the explicit $c^{-1}$. The scale is the same in both, and it is the same $c^2$ that appears as the metric coefficient $-c^2$ of the interval: the $c^{-2}$ of $\Box$ is not a choice of units, it is the metric coefficient seen from the inverse side.
 
-The same reasoning constrains the mass parameter of a first-order equation. The companion article *Conventions in the Biquaternion Universe* writes the massive Dirac pair as
+The same reasoning constrains the mass parameter of a first-order equation. The companion article *The Dirac Equation in Biquaternionic Form* writes the massive Dirac pair as
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R .

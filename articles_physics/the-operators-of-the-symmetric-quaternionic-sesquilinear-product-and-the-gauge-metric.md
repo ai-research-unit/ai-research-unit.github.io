@@ -34,7 +34,7 @@ commutative; the gauge band is not that band. The second fact is that neither fa
 algebra**: the left defect is the associator, and the left family is conjugate-linear, so its composite is linear and can never be a left
 multiplication off the zero operator.
 
-The article is the quaternionic-sesquilinear sibling of *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*, of
+The article is the quaternionic-sesquilinear sibling of *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*, of
 *The Operators of the Plain Sesquilinear Product and the Born Pairing* and of *The Operators of the Symmetrised Plain Product: Jordan
 Commutativity*, and it states the gauge row of the grid whose comparison is *The Operators of the Twelve Structures: Multiplication, Adjoint
 and Bracket*, not one of the twelve. The product and its laws are *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*;

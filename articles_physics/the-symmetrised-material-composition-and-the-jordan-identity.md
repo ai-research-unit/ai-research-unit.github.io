@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The ordinary product of the biquaternion algebra splits into two halves, and the split is the whole
+The general plain bilinear product of the biquaternion algebra splits into two halves, and the split is the whole
 subject of this block. The plain interchange of the two arguments leaves one half unchanged and reverses
 the sign of the other:
 
@@ -49,9 +49,9 @@ informational sector is the Hermitian subspace $\mathbb{M}_+=\{\tilde Q:\tilde Q
 real basis $\{e_0,ie_1,ie_2,ie_3\}$. The star is the Hermitian conjugation,
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$.
 
-## The Split of the Ordinary Product
+## The Split of the General Plain Bilinear Product
 
-The ordinary product is $\mathbb{C}$-bilinear in both slots, so the exchange of the two arguments is a
+The general plain bilinear product is $\mathbb{C}$-bilinear in both slots, so the exchange of the two arguments is a
 plain interchange and the algebra of the exchange is $\mathbb{Z}/2$. Every $\mathbb{C}$-bilinear operation
 $f$ decomposes uniquely into an exchange-fixed part and an exchange-reversed part,
 
@@ -67,7 +67,7 @@ The general theory of the splitting, its two projections, the uniqueness of the 
 admissibility conditions are *The Symmetric and Antisymmetric Parts of an Algebra Product*; the split is
 used here and not re-derived.
 
-Applied to the ordinary product the split gives the two operations of the block. The symmetric part is
+Applied to the general plain bilinear product the split gives the two operations of the block. The symmetric part is
 the **symmetrised plain product**
 
 $$
@@ -80,7 +80,7 @@ $$
 \tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q} .
 $$
 
-The ordinary product is recovered from the two halves,
+The general plain bilinear product is recovered from the two halves,
 $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$, and neither half determines the
 other: the symmetric half is one operation of the twelve, and the antisymmetric half is another. The
 pairing of the two halves is the pairing of the two bands of this family, and the comparison of the four general
@@ -95,9 +95,9 @@ $$
 \tilde P\bullet\tilde Q=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P},
 $$
 
-which is the ordinary product with the cross term $\mathbf{P}\times\mathbf{Q}$ removed.
+which is the general plain bilinear product with the cross term $\mathbf{P}\times\mathbf{Q}$ removed.
 
-*Proof.* The scalar part of the ordinary product is symmetric,
+*Proof.* The scalar part of the general plain bilinear product is symmetric,
 $\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})=\mathrm{Sc}(\tilde Q\tilde P)$, so it
 cancels nothing in the half-sum and remains.
 The vector part is $P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$ in the one order and
@@ -131,7 +131,7 @@ bracketings of the witness are how much weaker.
 **Remark (the table of the operation).** The sixteen products of the basis are the quaternion table of
 the plain product with the off-diagonal vector entries $e_3,-e_3,e_2,-e_2,e_1,-e_1$ replaced by $0$; the
 first row and column and the algebraic norm $e_0,-e_0,-e_0,-e_0$ are unchanged. The operation differs from the
-ordinary product only where the ordinary product is skew. This is *Introduction to the Symmetric Plain
+general plain bilinear product only where the general plain bilinear product is skew. This is *Introduction to the Symmetric Plain
 Algebra of Biquaternions*.
 
 **Proposed interpretation, labelled as such.** On the three vector units, $i,j\in\{1,2,3\}$, the table of the
@@ -163,7 +163,7 @@ $$
 
 and it is the standard polarisation of a commutative bilinear operation. Its consequence is the one
 sentence of this section: **the square map determines the operation and sees only the symmetric half.**
-The ordinary product and its opposite have the same square and the same symmetric half, and they differ
+The general plain bilinear product and its opposite have the same square and the same symmetric half, and they differ
 exactly in the sign of the antisymmetric half. The square, the idempotents and the Jordan inverse of the
 block are *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
@@ -229,7 +229,7 @@ algebraic law alone does not establish it.
 The operation is defined on the whole algebra, and its **physical interpretation** is about the material sector.
 Take two material operations, $\tilde P,\tilde Q\in\mathbb{M}_-$, so
 $\tilde P^{*}=-\tilde P$ and $\tilde Q^{*}=-\tilde Q$. Because the star is an anti-automorphism,
-$(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}=\tilde Q\tilde P$, and the ordinary product splits by
+$(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}=\tilde Q\tilde P$, and the general plain bilinear product splits by
 sector,
 
 $$
@@ -242,7 +242,7 @@ $$
 $$
 
 The first term is fixed by the star and the second is anti-fixed, by the same computation as
-*The Ordinary Product on the Material Sector*, §*The Product of Two Material Operations*.
+*The General Plain Bilinear Product on the Material Sector*, §*The Product of Two Material Operations*.
 The two terms are exactly the two halves of the block:
 
 $$
@@ -262,7 +262,7 @@ $ie_0\bullet ie_0=(ie_0)^{2}=-e_0$ of *Remarkable Subspaces under the Symmetric 
 Biquaternions*.
 
 **Proposed interpretation, labelled as such.** The symmetrised plain product is read as the **order-free
-composition of two material operations**. The ordinary product of two material elements is the full
+composition of two material operations**. The general plain bilinear product of two material elements is the full
 composition; written in its two halves it separates the part that does not depend on the order,
 $\tfrac12\{\tilde P,\tilde Q\}$, from the part that does, $\tfrac12[\tilde P,\tilde Q]$. The symmetrised
 product keeps the first and drops the second. Since the second is the cross product of the two vector
@@ -274,7 +274,7 @@ Two consequences of the split are worth stating plainly. First, the order-free p
 composition is informational: symmetrising two material operations returns an element of $\mathbb{M}_+$,
 not of $\mathbb{M}_-$. Second, the order is carried entirely by the material half, so a material
 composite is material exactly when the two operations **anticommute** and informational exactly when they
-**commute**, which is the sector rule of *The Ordinary Product on the Material Sector*. The interpretation of
+**commute**, which is the sector rule of *The General Plain Bilinear Product on the Material Sector*. The interpretation of
 the operation as the composition with the orientation dropped is developed in *Observables as a Jordan
 Algebra: the Symmetric Plain Product and the Classical Composition*.
 
@@ -300,7 +300,7 @@ sides, and it is not associative, with the witness $(e_1\bullet e_1)\bullet e_2=
 $e_1\bullet(e_1\bullet e_2)=0$; its square is the ordinary square
 $\tilde Q^{2}=[Q_0^{2}-(\mathbf{Q},\mathbf{Q})]+2Q_0\mathbf{Q}$ and its product is the polarisation of
 that square; it satisfies the Jordan identity, and it is the only Jordan product among the twelve; the
-ordinary product is reconstructed as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$; and on two material
+general plain bilinear product is reconstructed as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$; and on two material
 elements the symmetric half is the Hermitian anticommutator and the antisymmetric half the anti-Hermitian
 commutator, so the material sector is not closed under the symmetrised product.
 
@@ -320,7 +320,7 @@ The symmetrised product reads as what two material observations share when their
 
 ## Summary
 
-The ordinary product of $\mathbb{B}$ splits under the exchange of its arguments into the **symmetrised
+The general plain bilinear product of $\mathbb{B}$ splits under the exchange of its arguments into the **symmetrised
 plain product**
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=[P_0Q_0-(\mathbf{P},\mathbf{Q})]+P_0\mathbf{Q}+Q_0\mathbf{P}$
 and the antisymmetric plain product $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$, with
@@ -343,7 +343,7 @@ order. The Jordan identity is a law of the algebra and not a statement about mea
 | $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | The symmetrised plain product, the operation $\mathrm{SPA}$ |
 | $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ | The antisymmetric plain product, the operation $\mathrm{APA}$ |
 | $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$ | The reconstruction $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ |
-| $[P_0Q_0-(\mathbf{P},\mathbf{Q})]+P_0\mathbf{Q}+Q_0\mathbf{P}$ | The coordinate form; the ordinary product with the cross term dropped |
+| $[P_0Q_0-(\mathbf{P},\mathbf{Q})]+P_0\mathbf{Q}+Q_0\mathbf{P}$ | The coordinate form; the general plain bilinear product with the cross term dropped |
 | $\tilde Q\bullet\tilde Q=\tilde Q^{2}$ | The square, equal to the ordinary square |
 | $(\tilde P\bullet\tilde Q)\bullet(\tilde P\bullet\tilde P)=\tilde P\bullet(\tilde Q\bullet(\tilde P\bullet\tilde P))$ | The Jordan identity |
 | $\tfrac12\{\tilde P,\tilde Q\}$, $\tfrac12[\tilde P,\tilde Q]$ | Anticommutator and commutator of two material elements |
@@ -364,8 +364,8 @@ Algebra*, for the square, the quadratic identity, the idempotents and the norm o
 identity, the symmetrisation of an associative algebra and the special class.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space*, for the
 twelve operations and the uniqueness of the Jordan and Jacobi laws.
-- Companion articles *The Ordinary Product on the Biquaternion Space*, for the ordinary product and its
-scalar form, and *The Ordinary Product on the Material Sector*, for the sector structure of a material composite.
+- Companion articles *The General Plain Bilinear Product on the Biquaternion Space*, for the general plain bilinear product and its
+scalar form, and *The General Plain Bilinear Product on the Material Sector*, for the sector structure of a material composite.
 - Companion article *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical
 Composition*, for the reading of the block on the Hermitian sector.
 - Companion article *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*, for the

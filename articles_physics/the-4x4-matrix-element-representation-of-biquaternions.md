@@ -352,7 +352,7 @@ $$
 \tilde\Upsilon_1 = \tfrac{1}{2}(ie_1 - e_2) \longmapsto E_{12},
 $$
 
-whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second, so that $\tilde\Pi_1\tilde\Upsilon_1 = \tilde\Upsilon_1$ while $\tilde\Pi_2\tilde\Upsilon_1 = 0$, and the algebra product is nilpotent, $\tilde\Upsilon_1^2 = 0$. The pair $\tilde\Upsilon_1$, $\tilde\Upsilon_2 = \tfrac12(ie_1 + e_2)$ satisfies $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$. In the notation of the spinor-module articles these are the truncated ladder elements $x$ and $y$. The consequence is recorded in *Conventions in the Biquaternion Universe*: the biquaternionic Dirac equation is linear and chirality-off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, and the Dirac field is carried by the spinor module and not by the whole algebra. The regular matrix is where one sees that this is forced by the algebra and not chosen: the left action has no off-diagonal blocks.
+whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second, so that $\tilde\Pi_1\tilde\Upsilon_1 = \tilde\Upsilon_1$ while $\tilde\Pi_2\tilde\Upsilon_1 = 0$, and the algebra product is nilpotent, $\tilde\Upsilon_1^2 = 0$. The pair $\tilde\Upsilon_1$, $\tilde\Upsilon_2 = \tfrac12(ie_1 + e_2)$ satisfies $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$. In the notation of the spinor-module articles these are the truncated ladder elements $x$ and $y$. The consequence is recorded in *The Dirac Equation in Biquaternionic Form*: the biquaternionic Dirac equation is linear and chirality-off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, and the Dirac field is carried by the spinor module and not by the whole algebra. The regular matrix is where one sees that this is forced by the algebra and not chosen: the left action has no off-diagonal blocks.
 
 ## The Determinant and the Trace
 
@@ -437,7 +437,7 @@ $$
 \det\mathsf{M}_4^{L}(\tilde{\nabla}) = \Box^2 ,
 $$
 
-because the two chiral blocks are similar and each carries one factor. This is the algebraic content of the square root: a first-order matrix acting on the spinor module has the second-order d'Alembertian as determinant, and the doubling of the regular module is where the two chiral copies of the first-order matrix come from. The conventions of the mass term are those of *Conventions in the Biquaternion Universe*, and the wave equations built on it are the subject of the wave-mechanics articles.
+because the two chiral blocks are similar and each carries one factor. This is the algebraic content of the square root: a first-order matrix acting on the spinor module has the second-order d'Alembertian as determinant, and the doubling of the regular module is where the two chiral copies of the first-order matrix come from. The conventions of the mass term are those of *The Dirac Equation in Biquaternionic Form*, and the wave equations built on it are the subject of the wave-mechanics articles.
 
 ## Remarkable Subspaces
 

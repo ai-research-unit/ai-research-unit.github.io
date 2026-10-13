@@ -1,8 +1,8 @@
-# __The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich__
+# __The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich__
 
 ## Introduction
 
-This article is the operator article of the general plain algebra, the algebra of *The Ordinary Product on the Biquaternion Space*. Its product is the ordinary product $\tilde P\tilde Q$, and the operators of the block are the maps
+This article is the operator article of the general plain algebra, the algebra of *The General Plain Bilinear Product on the Biquaternion Space*. Its product is the general plain bilinear product $\tilde P\tilde Q$, and the operators of the block are the maps
 that attach an element to an argument:
 
 $$
@@ -215,7 +215,7 @@ Two cautions belong here. First, self-adjointness for $B$ is **not** physical he
 and the observables of the framework are the self-adjoint operators for the Hermitian form of the sesquilinear block,
 which is *Observables, Gauge Generators and the Chirality of the Internal Action* and not this article. What is proved
 here is a statement about the transpose of the plain form. Second, the skew sector of the two-sided family is trivial,
-so **the ordinary product supplies no generator at all**; the infinitesimal structure of the framework is the bracket
+so **the general plain bilinear product supplies no generator at all**; the infinitesimal structure of the framework is the bracket
 of the antisymmetric band, and its operators are read in the antisymmetric block.
 
 ## The Symmetries of the Form and of the Product
@@ -521,11 +521,10 @@ labelled as such.
 
 ## Physical Readings
 
-The operators of the ordinary product read as the two ways of attaching a material operation to an element and as the
+The operators of the general plain bilinear product read as the two ways of attaching a material operation to an element and as the
 composition on both sides that the framework calls the sandwich. Three further readings follow from the adjoint. The
 adjoint being the swap, the pairing $B$ is read as a relation that does not distinguish left from right, which is the
-operator content of its symmetry; the absence of generators in the block is read as the statement that the ordinary
-product composes processes but does not infinitesimally generate them, the generation being the bracket of the
+operator content of its symmetry; the absence of generators in the block is read as the statement that the general plain bilinear product composes processes but does not infinitesimally generate them, the generation being the bracket of the
 antisymmetric band; and the type criteria being criteria on the product of the two parameters is read as the statement
 that the two-sided operations are **pairs**, not parameters, so only the relative data of the two slots is physical.
 Read on the state space, the left actions are the matrices of the algebra and the right actions by the nilpotents are
@@ -546,7 +545,7 @@ type criterion follows: a one-sided operator is self-adjoint exactly for a centr
 zero, a two-sided one exactly when its two parameters are proportional, and the sandwich
 $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ exactly when the parameter lies in a sector — so the measurement
 update and the material conjugation are symmetric for the sector sign and a generic Lorentz parameter is not. The
-skew sector is trivial, so the ordinary product supplies **no generator**; the symmetries of the form are the inner
+skew sector is trivial, so the general plain bilinear product supplies **no generator**; the symmetries of the form are the inner
 automorphisms and their negatives, never a genuine one-sided operation; the operators preserving composition are the
 inner automorphisms, with the central-product partial law and no norm anywhere. On the spinor space the left
 multiplications are the matrix units, so the algebra is the full algebra of the state space, the right multiplications
@@ -601,8 +600,8 @@ operators as the decomposable tensors.
 - Mathematics article *Modules over the General Plain Algebra of Biquaternions*
 (`articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.md`), for the simple module, its
 endomorphism ring and the decomposition of the left regular module.
-- Physics article *The Ordinary Product on the Biquaternion Space*
-(`articles_physics/the-ordinary-product-on-the-biquaternion-space.md`), the framing article of this group, for $B$, the
+- Physics article *The General Plain Bilinear Product on the Biquaternion Space*
+(`articles_physics/the-general-plain-bilinear-product-on-the-biquaternion-space.md`), the framing article of this group, for $B$, the
 sector sign and the boundary of the block.
 - Physics article *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*
 (`articles_physics/the-monoid-of-acting-maps-the-process-is-the-multiplication-the-state-is-the-idempotent.md`), for

@@ -28,7 +28,7 @@ interpretation is *Observables, Gauge Generators and the Chirality of the Intern
 Composition*: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^{2}=-e_0$, $e_1e_2=e_3$; an element $\tilde Q=Q_0e_0+\mathbf Q$; the natural conjugation
 $\tilde Q^{\natural}=Q_0-\mathbf Q$, the Hermitian one $\tilde Q^{*}$, the coefficientwise bar; the
-sectors $\mathbb{M}_\pm$; the ordinary product $\tilde P\tilde Q$, the quaternionic product
+sectors $\mathbb{M}_\pm$; the general plain bilinear product $\tilde P\tilde Q$, the quaternionic product
 $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, the biquaternion norm $N(\tilde Q)=\sum_\mu Q_\mu^{2}$;
 the real quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$
 and its imaginary multiple $i\mathbb{H}_{\mathbb{B}}$; the material coordinate $ict\,e_0+\mathbf x$.
@@ -155,7 +155,7 @@ $$
 \tilde\Pi=\tfrac12\bigl(e_0+i\hat{\boldsymbol\mu}\bigr)
 $$
 
-satisfies $\tilde\Pi^{2}=\tilde\Pi$ for the ordinary product, $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ for the
+satisfies $\tilde\Pi^{2}=\tilde\Pi$ for the general plain bilinear product, $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ for the
 sesquilinear pairing, $\mathrm{Tr}\,\tilde\Pi=1$, and
 
 $$

@@ -108,7 +108,7 @@ the factor $2$ being the number of Majorana fields in the Dirac field. In the fr
 
 The framework's mass convention is used here rather than merely cited, because it is where the framework's structure meets the dictionary.
 
-**The series mass term.** As *Conventions in the Biquaternion Universe* fixes, the Dirac mass is linear and chirality-off-diagonal,
+**The series mass term.** As *The Dirac Equation in Biquaternionic Form* fixes, the Dirac mass is linear and chirality-off-diagonal,
 $$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L ,
 \qquad

@@ -329,7 +329,7 @@ The moral is the one the whole article has developed. An exchange of information
 The conventions and the results taken over from the relativity series are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric at its three levels.
+- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*).
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-vector, the interval and the proper-time parametrization.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector and its distinct informational interpretation.
 - Companion article *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*, for the causal order, the relative-velocity bound and the cone as the characteristic cone of the wave operator.

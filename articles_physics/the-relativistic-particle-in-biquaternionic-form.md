@@ -304,7 +304,7 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 The conventions of the construction are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the sector structure.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric at its three levels.
+- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*).
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and the transformation of the four-vector.
 - Companion article *The Lorentz Force in Biquaternion Form*, for the equation of motion in an external field.
 - Companion article *The Relativistic Particle in an External Field, in Biquaternionic Form*, for the coupled particle–field system.

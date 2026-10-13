@@ -15,11 +15,11 @@ The owners are, in order, *Biquaternion Norm and Invertibility* for the norm and
 imaginary, *Mass, Rank and the Positivity of the Dagger* for the rank and the positive cone, *Particle
 Types, Discrete Charge and Three-Particle Couplings* for the compact slice and the discrete charge, and
 *The Polar Element Representation of Biquaternions* for the polar scale, with the dilation interpretation in
-*Conformal Invariance and the Massless Limit in Biquaternionic Form*. The fourth-product and sesquilinear
-forms are *Conventions in the Biquaternion Universe*.
+*Conformal Invariance and the Massless Limit in Biquaternionic Form*. The four forms and the sesquilinear
+product are *Conventions in the Biquaternion Universe*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_0,e_1,e_2,e_3$, units
-$e_k^2=-e_0$; materials $\mathbb{M}_-$ with the four-position
+$e_k^2=-e_0$; the material sector $\mathbb{M}_-$ with the four-position
 $\tilde{Q}=ict\,e_0+\mathbf{x}$; the Hermitian square $\tilde{Q}\tilde{Q}^{*}$ and the rank taken in the
 matrix model $\mathsf{M}_2$.
 
@@ -31,7 +31,7 @@ $-c^2t^2+\mathbf{x}^2$. Read as mass, its sign is the mass-shell sign: the shell
 hyperboloid and the light cone is $N=0$. The interpretation is **value**: which level set the element lies on.
 
 **The rank.** The Hermitian square $\tilde{Q}\tilde{Q}^{*}$ is positive semidefinite, of rank two when
-$N(\tilde{Q})\neq0$ and rank one exactly on the cone. Read as mass, the rank is the **count of
+$N(\tilde{Q})\neq0$ and of rank at most one on the cone. Read as mass, the rank is the **count of
 polarisations**: two for the massive type and one for the massless type. The interpretation is **count**: how many
 independent rank-one terms the square needs.
 
@@ -39,30 +39,41 @@ independent rank-one terms the square needs.
 finite-dimensional unitary representations of a compact group are labelled by discrete data. Read as mass,
 this is the **other internal label**: the charge is the discrete label of a representation of the compact
 internal group, and it is discrete because the group is compact and for no other reason. The interpretation is
-**label**: which irreducible representation the element transforms in.
+**label**: which irreducible representation the element transforms in. The slice lies inside the invertible
+elements and the cone is its complement, so no null element is in the slice and no element of the cone carries
+one of these labels.
 
 **The scale.** The polar representation writes an element as a polar factor times a phase and a unit
 element, and the modulus $r$ is the polar scale. The norm is reversed by the central imaginary,
 $N(i\tilde{Q})=-N(\tilde{Q})$, and its logarithm $\log\lvert N\rvert$ is read as a dilation potential. Read
 as mass, the scale is the **unit**: a change of $r$ is a change of the unit of length, and the conformal
-rescaling acts on it. The interpretation is **unit**: how the element scales, not what level set it lies on.
+rescaling acts on it. The interpretation is **unit**: how the element scales, not what level set it lies on. The
+polar representation is stated only for $N(\tilde{Q})\neq0$, so the cone is the boundary of its domain and not a
+locus it detects.
 
-## Where the Four Agree
+## Where the Norm and the Rank Agree
 
-The four interpretations agree on one locus, and it is exact: **all four detect the zero-divisor cone, and only the
-massless elements are detected by all four at once.** The norm vanishes there, the rank drops to one, the
-compact label is the one the null element carries, and the polar scale collapses. This is what justifies
-calling the four interpretations one word: on the massless locus they are four descriptions of one element, and the
-dictionary of the corpus — massless, rank one, null, on the cone — is the agreement stated four times.
+Two of the four interpretations agree on one locus, and they agree exactly: **the norm vanishes on the
+zero-divisor cone and the rank of the Hermitian square drops there, while the charge and the scale are defined
+only off it.** The norm vanishes there; the rank drops to at most one; the other two readings do not reach the
+cone at all, the compact label because the unitary slice is the complement of the cone and the polar scale
+because its representation requires $N\neq0$. Only the massless elements are detected by the norm and the rank
+together, and the agreement is a statement about that pair, not about the four. This is what justifies
+calling the norm and the rank two readings of one word: on the massless locus they are two descriptions of one
+element, and the dictionary of the corpus — massless, rank one, null, on the cone — is the agreement stated
+twice.
 
-$100$ of $100$, that is, $N(\tilde{Q})=0$ exactly when the rank of $\tilde{Q}\tilde{Q}^{*}$ is one.
+$N(\tilde{Q})=0$ exactly when the rank of $\tilde{Q}\tilde{Q}^{*}$ is at most one, with rank zero only at
+$\tilde{Q}=0$; off the cone the rank is two. The two directions were recomputed on $100$ of $100$ random
+non-null elements each way, and every constructed nonzero null element has rank one.
 
 Off the cone the agreement stops, and it stops in a stated way. A rank-two element may have $N>0$ or $N<0$;
 on the material sector those are the spacelike and the timelike regions, so **rank two does not say which
 sign**, and the mass label "massive" covers both the timelike and the spacelike elements. The corpus's own
-caution is *No Ghosts, No Tachyons*: no element of the algebra has a negative sesquilinear norm, and the
-spacelike elements lie outside the state cone rather than inside it, so the rank-two spacelike elements are
-massive in the rank sense and are not states in the probability sense.
+caution is *Mass, Rank and the Positivity of the Dagger*, §*No Ghosts, No Tachyons*: no element of the
+algebra has a negative sesquilinear norm, and the spacelike elements lie outside the state cone rather than
+inside it, so the rank-two spacelike elements are massive in the rank sense and are not states in the
+probability sense.
 
 ## The Pole
 
@@ -86,31 +97,40 @@ algebra and not a legitimate state.
 
 | interpretation | the object | what it says | where it fails |
 |---|---|---|---|
-| norm | $N(\tilde{Q})=\sum_\mu Q_\mu^2$ | the value and its sign; the mass shell the level set | detects no polarisation count and no label |
+| norm | $N(\tilde{Q})=\sum_\mu Q_\mu^2$ | the value and its sign; the mass shell as a level set | detects no polarisation count and no label |
 | rank | $\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the count of polarisations, two or one | does not fix the sign of $N$ |
 | charge | the compact slice $U(2)\cong(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$ | the discrete internal label | says nothing about the cone |
 | scale | the polar modulus $r$ | the unit of length, the dilation potential | is a unit and not a level set |
 
 The dictionary is the answer the article offers: the four interpretations are four questions asked of one element,
-they coincide on the cone, and each one is silent where the others speak. **They are not four kinds of
+the norm and the rank coincide on the cone, the charge and the scale are defined only off it, and each one is
+silent where the others speak. **They are not four kinds of
 mass**, and the article does not claim they are one kind either; the claim is that the corpus's four uses of
 the word are the four rows of the table, and that a reader who meets the word should ask which row is meant.
 
 ## The Fifth Reading, Named and Left Out
 
-A fifth interpretation exists and is deliberately not one of the four. The **left-regular eigenvalue problem**
-$L_{\tilde{Q}}\tilde{R}=\lambda\tilde{R}$ has its spectrum read as a mass spectrum in *The
-$\lambda$-Representation and the Left-Regular Eigenvalue Problem of Biquaternions*, and a spectrum is not a
-label. It is named here because it is the interpretation a reader may expect to find in this list, and it is left
+A fifth interpretation exists and is deliberately not one of the four. The **left-regular eigenvalue
+problem** $L_{\tilde{Q}}\tilde{R}=\lambda\tilde{R}$ has the spectrum of the operator,
+$\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\mathsf{M}_2(\tilde{Q}))$ with each eigenvalue twice, and a
+spectrum is not a label. The operator spectrum is owned by *The Spectra of the Operators on the Biquaternion
+Algebra with Hermitian Adjoint*, and the element spectrum it is built on by *Biquaternion Spectral Theory*.
+It is named here because it is the interpretation a reader may expect to find in this list, and it is left
 out because it answers a different question: it asks what the element does as an operator, not what the
-element is. The relation between the operator spectrum and the four interpretations is not stateable in the
-present corpus, and the article records that as a gap rather than assuming a connection.
+element is. No article of the present corpus reads that spectrum as a mass spectrum, and the gap is recorded
+rather than a connection assumed.
+
+**A second sense left out, at the equation level.** The corpus also uses the word for the **Dirac** and
+**Majorana** masses of *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*: the two
+pairings of a field equation with a conjugate of the field, indexed by the conjugation. That is a property
+of an equation and not of an element, so it is not a fifth row of the dictionary — the four rows are
+readings of one element, and this pair is a reading of one term.
 
 ## Physical Readings
 
-- **The word mass has four referents and one locus.** The interpretation is that the framework's "mass" is well
-defined only together with its row, and that the massless locus — the cone — is the one place where all
-four rows agree. Boundary: a statement about usage, and it adds no identity between the four.
+- **The word mass has four referents and one shared locus.** The interpretation is that the framework's "mass"
+is well defined only together with its row, and that the massless locus — the cone — is the one place where
+the norm and the rank rows agree. Boundary: a statement about usage, and it adds no identity between the four.
 - **Discreteness of charge is compactness.** The interpretation of the charge row is that charge is discrete
 because the internal group is compact, which is the same mechanism as the quantisation of angular
 momentum and not a separate postulate.
@@ -123,18 +143,19 @@ of the Biquaternion Universe*.
 
 The corpus uses the word mass of four objects: the norm $N$ (a value and its level set), the rank of the
 Hermitian square (a count of polarisations), the compact-slice label (a discrete internal charge) and the
-polar scale $r$ (a unit of length). The four agree on the zero-divisor cone and nowhere else; the norm and
+polar scale $r$ (a unit of length). The norm and the rank agree on the zero-divisor cone and nowhere else; the
+charge and the scale are silent about the cone because both are defined only off it. Off the cone the rank
 does not fix the sign of the norm, so "massive" covers the timelike and the spacelike alike. The rank-one
 condition that reads as massless on the material sector reads as pure state on the informational sector, and
 the article keeps the two apart. A fifth interpretation — the operator spectrum of $L_{\tilde{Q}}$ — is named and
-left out.
+left out, and the Dirac and Majorana pair is placed at the equation level, outside the four rows.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm, the interval, the cardinality of the value interpretation |
-| $\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the rank of the Hermitian square, two off the cone and one on it |
+| $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm, the interval, the value and its level set |
+| $\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the rank of the Hermitian square, two off the cone and at most one on it |
 | $U(2)$ | the unitary slice, compact, the internal group whose labels are the discrete charge |
 | $r$ | the polar scale, the modulus of the polar factor, the unit of the scale reading |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the material and informational sectors, on which the rank-one condition reads as massless and as a pure state respectively |
@@ -149,3 +170,6 @@ no-ghost and no-tachyon statements.
 charge, and for the continuous rapidity of the non-compact directions.
 - *The Polar Element Representation of Biquaternions* and *Conformal Invariance and the Massless Limit in
 Biquaternionic Form*, for the polar scale and its dilation reading.
+- *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* and *Biquaternion
+Spectral Theory*, for the operator spectrum named and left out above, and *Antilinear Structure and the Two
+Kinds of Mass in Biquaternionic Form*, for the Dirac and Majorana pair placed at the equation level.

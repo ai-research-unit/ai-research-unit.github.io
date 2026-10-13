@@ -96,7 +96,7 @@ does exactly one thing with it.
 In the **composition**, the cone is the boundary of invertibility. A nonzero element $\tilde Q$ has a
 two-sided plain inverse precisely when $N(\tilde Q)\neq0$, the inverse being
 $\tilde Q^{\natural}/N(\tilde Q)$, and it has none when $N(\tilde Q)=0$. The plain product is the
-operation that composes transformations and iterates a process (*The Ordinary Product on the Biquaternion Space*), so the cone is the set of elements that cannot be composed further, and the physics of that
+operation that composes transformations and iterates a process (*The General Plain Bilinear Product on the Biquaternion Space*), so the cone is the set of elements that cannot be composed further, and the physics of that
 failure is propagation, taken up in its own section below.
 
 In the **probability**, the cone is a rank drop. The plain sesquilinear product gives no element a
@@ -487,7 +487,7 @@ $$
 which is not the norm: the vector part enters with the opposite sign. On the material sector, where
 $Q_0=ict$ and the $Q_k$ are real, the sector sign is $-c^{2}t^{2}-\mathbf{x}^{2}$, a negative definite
 form, so the material sector contains no real direction on which $B$ vanishes. The light cone is not the
-null cone of the sector sign. *The Ordinary Product on the Material Sector* states the same separation
+null cone of the sector sign. *The General Plain Bilinear Product on the Material Sector* states the same separation
 from the other side, that the sector sign is definite on each sector and has no cone there, so that the
 causal structure belongs to the interval.
 
@@ -1027,8 +1027,9 @@ displacement is null**, and because a null displacement is a zero divisor the ch
 pass is the cone itself; the cone forbids the spacelike separations and carries the null ones
 (*The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form*,
 *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*). The **Rindler horizon is
-the zero-divisor cone** of the material sector, so the modular flow of the Unruh construction is read as the
-biquaternionic boost flow and its horizon as the algebraic null cone
+the zero-divisor cone** of the material sector, and the modular flow of the Unruh construction is read as the
+biquaternionic boost flow and its horizon as the algebraic null cone; the identification of the flow with the
+boost is the imported Bisognano–Wichmann theorem, not a consequence of the horizon being the cone
 (*The Unruh Effect in Biquaternionic Form*). At a **black-hole horizon** the local light cone at each point
 is the zero-divisor cone of that point's copy of $\mathbb{M}_-$ — the local statement — while the horizon as
 a whole is a global object the pointwise algebra does not see (*Hawking Radiation in Biquaternionic Form*).
@@ -1046,17 +1047,18 @@ null cone below cutoff (*The Effective Optical Metric of the Local Complex Struc
 *The Local Complex Structure and the Speed of Light*).
 
 **The physical interpretation** is that every causal notion of the corpus — signal, horizon, characteristic,
-absolute, inversion, medium — is the one cone, read in the vocabulary of the situation. The global objects
-that sit on it, a horizon or an event, are the objects the pointwise algebra cannot itself carry.
+absolute, inversion, medium — is the one cone, read in the vocabulary of the situation. The global object
+that sits on it, the horizon, is the object the pointwise algebra cannot itself carry.
 
 ### The cone in the rest of the physics
 
 Several further physical readings have sense under the twelve structures, and they are gathered here.
 
-**Mass has four readings, and all four detect the cone.** The norm vanishes on it, the rank of the Hermitian
-square drops to one on it, the compact label is the one the null element carries, and the polar scale
-collapses; only the massless elements are detected by all four at once (*The Four Readings of Mass: Norm,
-Rank, Charge and Scale*). The **Krein form** is the indefinite partner of the Born pairing and carries the
+**Mass has four readings, and two of them detect the cone.** The norm vanishes on it and the rank of the
+Hermitian square drops there, while the charge and the scale are defined only off it — the compact label
+because the unitary slice is the complement of the cone, the polar scale because its representation requires
+a nonzero norm; only the massless elements are detected by the norm and the rank together (*The Four
+Readings of Mass: Norm, Rank, Charge and Scale*). The **Krein form** is the indefinite partner of the Born pairing and carries the
 **Krein cone**, the set of elements of non-negative Krein norm with respect to which the framework's
 indefinite-sector positivity is stated; its inertia is $(1,3,0)$ on the complexified Hermitian subspace and
 $(2,6,0)$ over $\mathbb{R}$ (*Inertia and the Witt Invariant: What a Signature Allows a Spectrum to Carry*).
@@ -1172,7 +1174,7 @@ The ledger of the article, in the comparative form of the pair of bands.
 | The cone is the absolute of velocity space and the boundary at infinity | Theorem | *Velocity Space as Hyperbolic Geometry in Biquaternionic Form* |
 | Conformal inversion is undefined on the cone, and the four conformal families preserve it | Theorem | *The Conformal Group in Biquaternionic Form* |
 | In a medium the algebraic null cone is the optical cone, aperture $c$ against $1/n$ | Theorem | *The Effective Optical Metric of the Local Complex Structure* |
-| All four readings of mass detect the cone, and only the massless elements are detected by all four at once | Interpretation | *The Four Readings of Mass: Norm, Rank, Charge and Scale* |
+| The norm and the rank readings of mass detect the cone, and only the massless elements are detected by both at once | Interpretation | *The Four Readings of Mass: Norm, Rank, Charge and Scale* |
 | The vacuum is a minimal idempotent on the cone, the unit decomposing along two null directions | Interpretation | *The Biquaternion Vacuum as a Minimal Idempotent* |
 | The projective null cone is a cone over the Segre quadric, while the twistor form's null set is the real conformal cone | Theorem | *Twistor Theory and Biquaternions* |
 | The cone is the mark of the four general products and is contained in the zero-divisor set of all twelve | Theorem | *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
@@ -1331,7 +1333,7 @@ non-invertible without being lightlike.
 - The cone in the propagators: *The Biquaternion D'Alembertian and Its Green's Functions*; *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*; *Exercise: The Retarded Potentials and the Green's Function*; *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation* (the support of the causal kernels, the light-cone delta and its Jacobian, the Bessel tail inside the cone).
 - The cone as the boundary of the positive cone and of the state cone: *POVMs and the Positive Cone in Biquaternionic Form*; *Von Neumann Entropy and the Biquaternion Norm*; *The Double-Slit Experiment in Biquaternionic Form*; *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*; *The Generalized Bloch Ball for Spin 1 in the Biquaternion Framework* (the future light cone of the norm, self-duality, the infinite-slope entropy, the contrast bound and the Poincaré sphere, and the qutrit as the limit of the cone picture).
 - The cone as the causal and informational boundary: *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form*; *The Unruh Effect in Biquaternionic Form*; *Hawking Radiation in Biquaternionic Form*; *Shock Electromagnetic Waves*; *Velocity Space as Hyperbolic Geometry in Biquaternionic Form*; *The Conformal Group in Biquaternionic Form*; *The Effective Optical Metric of the Local Complex Structure*; *The Local Complex Structure and the Speed of Light* (the null channel, the Rindler horizon, the pointwise horizon cone, the characteristic cone, the absolute, the conformal invariant, the optical aperture).
-- The cone in the rest of the physics: *The Four Readings of Mass: Norm, Rank, Charge and Scale* (all four detect the cone); *Inertia and the Witt Invariant: What a Signature Allows a Spectrum to Carry* (the Krein cone); *The Biquaternion Vacuum as a Minimal Idempotent*; *The Lorentz Group as Biquaternion Norm Automorphisms*; *Twistor Theory and Biquaternions*; *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form* (the vacuum on the cone, the norm automorphisms, the projective quadric, the emergent cones).
+- The cone in the rest of the physics: *The Four Readings of Mass: Norm, Rank, Charge and Scale* (the norm and the rank detect the cone); *Inertia and the Witt Invariant: What a Signature Allows a Spectrum to Carry* (the Krein cone); *The Biquaternion Vacuum as a Minimal Idempotent*; *The Lorentz Group as Biquaternion Norm Automorphisms*; *Twistor Theory and Biquaternions*; *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form* (the vacuum on the cone, the norm automorphisms, the projective quadric, the emergent cones).
 - The cone in the twelve-structure mathematics: *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (the theorem and its corollary); *The Four Forms, the Four Algebraic Norms and the Change of Scalars* (which forms carry the cone); *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (the Krein cone).
 - The cone among the four null sets: *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; *Remarkable Subspaces and the Four Forms*; *The Krein Level Sets and the Hyperbolic Structure* (the four null sets and the dimensions they drop to on the remarkable subspaces, the Krein cone and the real hyperboloids whose boundary the cone is).
 - The cone as the critical set of the square: *The Zero Divisors and the Singular Julia Sets*; *The Biquaternion Quadratic Map and Its Julia Sets* (the affine action of the square on the cone, the critical set and the idempotents on the Julia set of the parameter zero); *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (the natural square as the largest nontrivial vanishing set, against the sesquilinear square that vanishes only at the origin).

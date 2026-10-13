@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The four general products of the biquaternion complex space carry four **forms**, their scalar parts, and each form carries an **algebraic norm**, its algebraic norm. This article is the third of the three reader articles that introduce the band *Focus on the 12 Algebraic Structures of Biquaternions over $\mathbb{C}$*: the first reads the four general products and the four forms they carry, the second reads the twelve products the four split into and the structures they define, and this one reads the four forms and the four algebraic norms on the six remarkable subspaces, and then reads the same objects after the change of scalars from $\mathbb{C}$ to $\mathbb{R}$ — the **realification**, which doubles the dimension, moves the twelve products and the four forms into the real forms, and carries its own trap in the counting of the structures.
+The four general products of the biquaternion complex space carry four **forms**, their scalar parts, and each form carries an **algebraic norm**, its algebraic norm. This article is the third of the three reader articles that introduce the band *Focus on the 12 Algebraic Structures of Biquaternions over $\mathbb{C}$*: the first reads the four general products and the four forms they carry, the second reads the twelve products the four split into and the structures they define, and this one reads the four forms and the four algebraic norms on the six remarkable subspaces, and then reads the same objects after the change of scalars from $\mathbb{C}$ to $\mathbb{R}$ — the **realification**, which doubles the dimension, moves the twelve products and the four forms into the real forms, and carries its own trap in the counting of the structures. It also carries the ruling on the three levels of the word *metric* (§*The Metric: Three Levels*): the biquaternion norm, the two real sectors with their $ict$ metric, and the Clifford tool.
 
-The article owns nothing. The forms, their count and their symmetry are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; their algebraic norms, the multiplicativity and the definiteness are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the two on the subspaces are *Remarkable Subspaces and the Four Forms* and *Remarkable Subspaces and the Four Algebraic Norms*; and the realification is *The Realification and the Effect of the Change of Scalars*, whose two-dimensional prototype is *The Realification and the Effect of the Change of Scalars on the Complex Numbers*.
+The article owns nothing but the ruling of §*The Metric: Three Levels*, which belongs here because it disambiguates the forms compared below. The forms, their count and their symmetry are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; their algebraic norms, the multiplicativity and the definiteness are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the two on the subspaces are *Remarkable Subspaces and the Four Forms* and *Remarkable Subspaces and the Four Algebraic Norms*; and the realification is *The Realification and the Effect of the Change of Scalars*, whose two-dimensional prototype is *The Realification and the Effect of the Change of Scalars on the Complex Numbers*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, the relations $e_k^{2}=-e_0$, $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central $i$ with $i^{2}=-1$; a general element is $\tilde Q=Q_0e_0+\mathbf Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$, with complex coefficients and vector part $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$. The conjugations are the natural ${}^{\natural}$, fixing $i$ and negating the $e_k$; the coefficientwise $\bar{\cdot}$, conjugating the coefficients; and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. $\mathrm{Sc}$ is the scalar part, $\mathrm{Tr}=2\,\mathrm{Sc}$ the trace, and $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$ the complex bilinear dot and cross products of the vector parts. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, and the two sectors $\mathbb{M}_+$, $\mathbb{M}_-$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, the relations $e_k^{2}=-e_0$, $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central $i$ with $i^{2}=-1$; a general element is $\tilde Q=Q_0e_0+\mathbf Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$, with complex coefficients and vector part $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$. The conjugations are the natural ${}^{\natural}$, fixing $i$ and negating the $e_k$; the coefficientwise $\bar{\cdot}$, conjugating the coefficients; and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. $\mathrm{Sc}$ is the scalar part, $\mathrm{Tr}=2\,\mathrm{Sc}$ the trace, and $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$ the complex bilinear dot and cross products of the vector parts. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, and the two sectors $\mathbb{M}_+$, $\mathbb{M}_-$. All conventions are those of *Conventions in the Biquaternion Universe*, except the ruling on the three levels of the word *metric* stated below.
 
 ## The Four Forms
 
@@ -121,6 +121,71 @@ all four indefinite over the reals except $H$, which stays positive definite and
 
 **What the change of scalars is not.** The realification of $\mathbb{B}$ is $\mathbb{B}$ read over the reals, and not the algebra of pairs of quaternions: the multiplication of the realification is the multiplication of the complex algebra with the scalars restricted, and the complex structure $J$ is what makes the two readings differ. The centre of $\mathbb{B}$ stays the complex line $\mathbb{C}e_0$, the field $\mathbb{C}$ read over $\mathbb{R}$ and not a split algebra; and every object read from the ring alone — the centre, the ideals, the idempotents, the zero divisors, the nilpotents, the units — is unchanged by the passage, because $i$ is an element of the algebra and not an external scalar. The change of scalars is a change of the field of a module and of the dimension, not of the ring.
 
+## The Metric: Three Levels
+
+The word "metric" appears at three distinct levels in the series, and most of the disagreements below are the result of the levels being conflated. They are separated here in order of priority, because the first is the convention of the framework and the third is only a convention of translation.
+
+**Level 1 — the biquaternion norm on $\mathbb{B}$.** The algebra carries the complex-linear biquaternion norm
+
+$$
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+$$
+
+and with all four coefficients $Q_\mu$ complex its Gram matrix is the **identity**:
+
+$$
+\mathrm{diag}(+1,+1,+1,+1).
+$$
+
+This is the metric of the biquaternion universe, and it is the framework's primary convention. It is a metric **on $\mathbb{C}$** — a $\mathbb{C}$-bilinear form — and read that way every one of its four entries is positive: on $\mathbb{B}$ there is no minus sign in the form itself, and none is needed. That is precisely what the complex coefficients buy. A *real* direction has to be labelled positive or negative in advance, and that labelling becomes a convention that can be chosen wrongly; a complex coefficient carries its own sign in the coefficient, so all four directions can start out on an equal footing and no such commitment is required. Two cautions about it. It is not positive definite and it is not a norm in the analytic sense — it vanishes on the nonzero zero divisors, which is why $\mathbb{B}$ is not a normed division algebra. And the Hermitian form $\lvert Q_0\rvert^2 + \lvert Q_1\rvert^2 + \lvert Q_2\rvert^2 + \lvert Q_3\rvert^2$ is a *different* object: real-valued, positive definite, and $\mathbb{C}$-antilinear in its first argument. It is used only where a positive-definite inner product on a complex vector space is needed, and it is not the biquaternion norm of the algebra. The forms of the algebra, with the involution that produces each, are classified in *Conventions in the Biquaternion Universe*, §*The Involutions and the Four Forms*.
+
+**Level 2 — the real sectors.** A minus appears only once a *real* coordinate is placed on a direction whose coefficient carries a factor of $i$. The two four-dimensional real sectors are exactly such choices, and the same level-1 form reads off differently on each:
+
+| Sector | Basis | The norm on the basis | Signature |
+|---|---|---|---|
+| $\mathbb{M}_-$ (material) | $ie_0,\ e_1,\ e_2,\ e_3$ | $-1,+1,+1,+1$ | $(-,+,+,+)$ |
+| $\mathbb{M}_+$ (informational) | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $+1,-1,-1,-1$ | $(+,-,-,-)$ |
+
+Throughout the series a signature is written $(p,q)$ with the **positive** directions counted first, so that the two rows above are $(3,1)$ for $\mathbb{M}_-$ and $(1,3)$ for $\mathbb{M}_+$. The parenthetical count and the $(\pm)$ string are two writings of one fact, $(3,1) = (-,+,+,+)$ and $(1,3) = (+,-,-,-)$, and are never to be read against one another. A group name is not ordered this way, since $\mathrm{O}(3,1)$ and $\mathrm{O}(1,3)$ are two names of one group; the series accordingly writes the Lorentz group indifferently as $\mathrm{SO}(3,1)$ or $\mathrm{SO}^+(1,3)$.
+
+Read as a statement about **objects** rather than directions: an element of $\mathbb{M}_-$ carries the metric $(-,+,+,+)$, and an element of $\mathbb{M}_+$ carries $(+,-,-,-)$. This is not a separate choice made sector by sector — it is the one level-1 form read on two different real bases, and the two are mirror images of one another through the identity below.
+
+The Minkowski interval is not postulated at this level either. It is the level-1 form read on the material sector with the time coordinate written $ict$: the four-position is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, whose scalar coefficient $ict$ is imaginary, and
+
+$$
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = (ict)^2 + x^2 + y^2 + z^2 = -c^2t^2 + \mathbf{x}^2 ,
+$$
+
+with the minus arising from $i^2 = -1$ alone. Multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+ = \mathbb{M}_-$, and reverses the sign of the form, $\langle i\tilde{Q},i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$; the mirror relation between the two signatures is that identity. The Lorentzian signature is therefore an *output* of the biquaternion conventions, not an input to them.
+
+For contractions of four-vectors in the $ict$ coordinate the series writes this level-2 form as
+
+$$
+\eta = \mathrm{diag}(-1,+1,+1,+1),
+$$
+
+and at this level the series is uniform: the $ict$ metric is $(-,+,+,+)$ throughout. The two articles outside the relativistic core that carry a symbol $g = \mathrm{diag}(-1,+1,+1,+1)$ — the companion articles on the Higgs mechanism and on the Newman–Penrose formalism — mean **this** object, the $ict$-coordinate metric for index contractions, and not a Clifford metric, as their own notation tables state. They are not part of the level-3 disagreement below.
+
+**Level 3 — the Clifford metric of the $\gamma^\mu$.** When the series writes gamma matrices it needs a further symbol $g$, defined by $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$. This is a property of the chosen generators and not of the biquaternion algebra, and it is best regarded as a **tool** rather than a convention: it can be used or not, depending on the situation, and where it is used it should not dictate any convention of the framework. The biquaternion formulation requires no gamma matrices; they are a translation into the language of the standard Dirac literature, convenient when comparing with that literature or borrowing a standard result, and dispensable otherwise. The freedom this level carries is exactly the freedom the framework treats as presentation: replacing every generator by $i\gamma^\mu$ takes $g$ to $-g$ and leaves the biquaternion algebra, the biquaternion norm, the sector split, the chirality operator and the whole of levels 1 and 2 invariant.
+
+The value the series now uses is the standard **mostly-minus**
+
+$$
+g = \mathrm{diag}(+1,-1,-1,-1),
+$$
+
+so that $(\gamma^0)^2 = +I_4$ and $(\gamma^k)^2 = -I_4$. Two reasons fix it. First, **it is the form of the objects the tool represents**: the Clifford vectors correspond to the *Hermitian* subspace $\mathbb{M}_+$ — the dictionary's own identification is $x_\mu\gamma^\mu = \gamma^0\mathsf{M}_2(w)$ with $w \in \mathbb{M}_+$ — and $(+,-,-,-)$ is the $\mathbb{M}_+$ form, so the square of a Clifford vector agrees with the biquaternion norm of the biquaternion it represents with **no relative sign**. Second, it is the standard particle-physics convention, so articles transcribing standard results inherit the standard sign without adjustment, and the name $\mathrm{Cl}_{1,3}$ is correct in the usual counting, $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$.
+
+The opposite sign, $g = \mathrm{diag}(-1,+1,+1,+1)$, is **not in use**. It pairs the generators with the material sector, which is a real form they do not belong to; the price is a relative minus sign between the square of a Clifford vector and the biquaternion norm of the biquaternion it represents, a mixed sign pattern in the timelike bivectors, and a non-standard naming of the algebra. It is recorded here only because the series used it previously, in the article that defines the gamma matrices and the Dirac equation, in the Dirac-algebra dictionary, and in the corresponding mathematics article on the Clifford realization of the algebra; those have been aligned to the value above.
+
+A difference at this level would **not** be an error at level 1 or level 2, and half the reason for separating the levels is to stop it being read as one: the biquaternion norm, the $ict$ metric and the sector structure are the same for either sign. The sign decides only which *real* Clifford form the generators generate — $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$ for $(+,-,-,-)$, $\mathrm{Cl}_{3,1} \cong M_4(\mathbb{R})$ for $(-,+,+,+)$ — and the even subalgebra, which is $\mathbb{B}$ itself, is the same for both, so no dictionary entry and no biquaternion identity depends on it.
+
+The order of authority is therefore one-way. The algebra and its level-1 and level-2 conventions are the framework; the gamma matrices and their metric are a translation of it, adopted per article for whatever the article is doing. The tool serves the framework and not the reverse: a Clifford computation is never a reason to change a biquaternion convention, and where the two appear to disagree, the disagreement is in the translation and is resolved by adjusting the generators, the adjoint, or the explicit factors of $i$ — never by altering the biquaternion norm, the $ict$ assignment, or the sector split.
+
+One consequence does reach the physics, and it is the only place where a level-3 choice is not free. The Dirac adjoint is $\bar{\psi} = \psi^\dagger\gamma^0$, so it carries $\gamma^0$ and changes with the convention. With the mostly-minus generators $\bar{\psi}\gamma^0\psi = +\psi^\dagger\psi$, the positive number density; with the mostly-plus generators the same expression gives $-\psi^\dagger\psi$. A spinor bilinear written as $\bar{\psi}\Gamma\psi$ therefore requires the adjoint to be defined consistently with the generators in use. No article in the series currently writes a spinor bilinear in the mostly-plus convention, so no statement in the series is in error on this count; the point is recorded so that one is not introduced. This sign is not part of the freedom that $\gamma^\mu \mapsto i\gamma^\mu$ leaves behind.
+
+**The levels are also distinguished by the law the form obeys.** Beyond their sign, the levels differ in what they do under a product. The level-1 norm is **multiplicative**, $N(\tilde{P}\tilde{Q})=N(\tilde{P})N(\tilde{Q})$, so its level sets multiply and the unit-norm elements form a group; the level-2 interval inherits this multiplicativity on the material sector, which is why a Lorentz transformation preserves the interval and why the rotors are exactly the unit-norm elements. The level-2 Euclidean square and the level-3 Clifford metric are **not** multiplicative, and the positivity of the Hermitian form is what replaces multiplicativity on the state side: the Born weight is not a product of weights but the trace of a product, a pairing rather than a homomorphism. A form that multiplies gives a group of isometries; a form that does not gives a pairing and a Born rule.
+
 ## Physical Readings
 
 The four forms are the four quantities a relativistic quantum theory evaluates, and the change of scalars is the passage between the complex formulation and the real one. The readings are the framework's naming of a proved algebra and are labelled as readings.
@@ -160,4 +225,6 @@ The change of scalars from $\mathbb{C}$ to $\mathbb{R}$ is the realification: th
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md`), for the construction, the two rules and the dictionary of the complex and the real statements.
 - *The Realification and the Effect of the Change of Scalars on the Complex Numbers* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars-on-the-complex-numbers.md`), for the two-dimensional prototype.
 - *Conventions in the Biquaternion Universe* (`articles_physics/conventions-in-the-biquaternion-universe.md`), for the conventions of the algebra and the remarkable subspaces.
+- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard particle-physics metric and gamma-matrix conventions.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the metric and normalisation conventions of quantum field theory, and the consequences of changing them.
 - Companion articles *The Four General Products and the Degree-2 Forms of the Biquaternion Space* (`articles_physics/the-four-general-products-and-the-degree-2-forms-of-the-biquaternion-space.md`) and *The Twelve Products and the Twelve Algebraic Structures* (`articles_physics/the-twelve-products-and-the-twelve-algebraic-structures.md`).

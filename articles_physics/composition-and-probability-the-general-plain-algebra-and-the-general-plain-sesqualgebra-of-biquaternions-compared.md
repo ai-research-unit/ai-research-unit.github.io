@@ -57,7 +57,7 @@ Its closest thing to an identity is therefore the dagger, and it admits no two-s
 The **physical interpretation** is the division of the two verbs of the framework. A composition needs an identity
 operation, because a sequence of operations must be able to do nothing; a pairing needs none, because a
 probability amplitude is evaluated and not repeated. The GPA is the band of the process, and the GPS is
-the band of the state. The owner of the composition interpretation is *The Ordinary Product on the Biquaternion Space*, where the product composes operations and its scalar part composes operations rather than
+the band of the state. The owner of the composition interpretation is *The General Plain Bilinear Product on the Biquaternion Space*, where the product composes operations and its scalar part composes operations rather than
 values, which is why the Born pairing must be the sesquilinear product and not this one. The owner of
 the probability interpretation is *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra*,
 where the amplitude is the scalar part of the plain sesquilinear product and the probability is its
@@ -81,8 +81,8 @@ the orientation of a material process.
 
 The **physical interpretation** is that a chain of operations is well defined while a chain of amplitudes is not.
 A composition can be iterated, so the acting maps form a monoid and the composition of two material
-operations is again a material operation (*The Ordinary Product on the Material Sector*, and the
-composition laws of *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*).
+operations is again a material operation (*The General Plain Bilinear Product on the Material Sector*, and the
+composition laws of *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*).
 A pairing can only be evaluated: the Born rule squares one amplitude into one probability, and there is
 no third slot in which a probability could be paired again. The failure of the star product to compose
 is the operator form of that fact, and it is the parity asymmetry of *The Operators of the Plain
@@ -216,7 +216,7 @@ Complementary Space of the Spinor Space in the General Plain Algebra* (the secon
 second copy of the state space); the owner of the metric interpretation is *The Complementary Space of the
 Spinor Space in the General Plain Sesqualgebra*, where the second copy is the orthogonal complement for
 the form. That the material sector carries no idempotent is the statement that no material operation is
-a projection onto the material sector, and it is read in *The Ordinary Product on the Material Sector*.
+a projection onto the material sector, and it is read in *The General Plain Bilinear Product on the Material Sector*.
 
 ## Square Roots: the Clock, the Cone and the Positivity
 
@@ -255,7 +255,7 @@ carried by two different forms, and neither is the other.
 The **physical interpretation** is that the passage from the GPA to the GPS is the passage from a form that
 **sorts** to a form that **weights**. The plain form is the sector sign: it is negative on a material
 element and positive on an informational one, it is definite on each sector and therefore carries no
-cone, and it is not the metric of spacetime (*The Ordinary Product on the Material Sector*, where the
+cone, and it is not the metric of spacetime (*The General Plain Bilinear Product on the Material Sector*, where the
 interval is kept apart from the sector sign). The Hermitian form is the probability weight: it is the
 Gram form of the state space and the Born pairing, positive on every subspace (*The Spinor Space as a
 Hilbert Space of the General Plain Sesqualgebra*, and *Mass, Rank and the Positivity of the Dagger*,
@@ -302,8 +302,8 @@ internal unitary group; the sandwich $\tilde Q\tilde P\tilde Q^{*}$ is an action
 either kind (*Observables, Gauge Generators and the Chirality of the Internal Action*, with the
 operator layer in *The Operators of the Plain Sesquilinear Product and the Born Pairing*). The plain
 adjoint is a relation that cannot tell a left attachment from a right one, and its consequence is that
-the ordinary product composes processes but does not infinitesimally generate them, the generation
-being the bracket of the antisymmetric band (*The Operators of the Ordinary Product: One-Sided,
+the general plain bilinear product composes processes but does not infinitesimally generate them, the generation
+being the bracket of the antisymmetric band (*The Operators of the General Plain Bilinear Product: One-Sided,
 Two-Sided and the Sandwich*). The compactness that makes the internal charge discrete, and the
 non-compactness that leaves the rapidity continuous, are read off the same operator layer in *Particle
 Types, Discrete Charge and Three-Particle Couplings*. The two adjoints are the two physical questions:
@@ -414,7 +414,7 @@ the Born rule live, and the step between them is the framework's quantisation.
 
 - The mathematics companion: *The General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*.
 - The map of the four general products: *The Four General Products and Their Physical Readings*.
-- The GPA band: *The Ordinary Product on the Biquaternion Space*; *The Ordinary Product on the Material Sector*; *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*; *The Spinor Space as a Module of the General Plain Algebra*; *The Complementary Space of the Spinor Space in the General Plain Algebra*; *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*.
+- The GPA band: *The General Plain Bilinear Product on the Biquaternion Space*; *The General Plain Bilinear Product on the Material Sector*; *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*; *The Spinor Space as a Module of the General Plain Algebra*; *The Complementary Space of the Spinor Space in the General Plain Algebra*; *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*.
 - The GPS band: *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra*; *The Complementary Space of the Spinor Space in the General Plain Sesqualgebra*; *Mass, Rank and the Positivity of the Dagger*; *Observables, Gauge Generators and the Chirality of the Internal Action*; *Particle Types, Discrete Charge and Three-Particle Couplings*; *The Operators of the Plain Sesquilinear Product and the Born Pairing*; *The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*.
 - The fused interpretation of the module and the form: *The Spinor Space as a Module and as a Hilbert Space*.
 - The built massless case: *The Null Four-Momentum: What the Cone Derives and What It Does Not*.

@@ -40,7 +40,7 @@ signature table, are *Comparison Between the Four General Products* and
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$; an
 element is $\tilde Q=Q_0e_0+\mathbf Q$; the natural conjugation is ${}^{\natural}$, the Hermitian star
-${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the sectors are $\mathbb{M}_\pm$. The ordinary product is
+${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the sectors are $\mathbb{M}_\pm$. The general plain bilinear product is
 $\tilde P\tilde Q$, the quaternionic product is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, and
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is its
 symmetrisation. The symmetrisation symbol $\bullet$ is **row-relative** in this chapter: the plain row
@@ -364,7 +364,7 @@ Operations*; and the two forms are *Comparison Between the Four General Products
   passage from the form to the product.
 - Companion article *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*,
   for the operation, the centrality, the commutativity and the interval.
-- Companion article *The Ordinary Product on the Biquaternion Space*, for the form $B$ and the plain row.
+- Companion article *The General Plain Bilinear Product on the Biquaternion Space*, for the form $B$ and the plain row.
 - Companion article *The Symmetrised Material Composition and the Jordan Identity*, for the symmetrised
   plain product (SPA), the Jordan-product contrast of this operation.
 - Companion article *Conventions in the Biquaternion Universe*, for the general quaternionic bilinear form

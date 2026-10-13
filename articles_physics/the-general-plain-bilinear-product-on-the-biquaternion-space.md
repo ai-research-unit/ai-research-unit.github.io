@@ -1,8 +1,8 @@
-# __The Ordinary Product on the Biquaternion Space__
+# __The General Plain Bilinear Product on the Biquaternion Space__
 
 ## Introduction
 
-The ordinary product $\tilde P\tilde Q$ is the multiplication of the biquaternion algebra
+The general plain bilinear product $\tilde P\tilde Q$ is the multiplication of the biquaternion algebra
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and it acts on the whole algebra: every element,
 in either sector and in every remarkable subspace, is multiplied by it. Of the four general products of
 the space it is the only one that is associative and two-sidedly unital, so it is the product that makes
@@ -24,13 +24,13 @@ $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, the general quaternionic bilinear fo
 $(-,+,+,+)$ on the material sector, and it belongs to the companion quaternionic block and to
 *Biquaternion Norm and Invertibility*. The two forms sit on the same algebra with opposite types, $B$
 definite on each sector where the interval is indefinite, and the place where that opposition is read
-physically is the material sector, in the companion article *The Ordinary Product on the Material Sector*.
+physically is the material sector, in the companion article *The General Plain Bilinear Product on the Material Sector*.
 
 **Placement and boundaries.** This article opens the band *Focus on the General Plain Algebra (GPA) of
 Biquaternions — Composition*. It states the product and its scalar form on the whole algebra; the
 restriction of the pair to the material sector, the sector sign and the absence of a material idempotent
-are *The Ordinary Product on the Material Sector*; the multiplication operators, one-sided and two-sided,
-and the sandwich are *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*; the
+are *The General Plain Bilinear Product on the Material Sector*; the multiplication operators, one-sided and two-sided,
+and the sandwich are *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*; the
 invertibility criterion, the group of units and the cone are the mathematics of *The Group of Units of the
 General Plain Algebra and the Complement of the Zero-Divisor Cone* and the physical level data of
 *Biquaternion Norm and Invertibility*, which own the norm, the interval, the light cone and the mass
@@ -51,7 +51,7 @@ real basis $\{e_0,ie_1,ie_2,ie_3\}$.
 
 ## The Product and Its Laws
 
-The **ordinary product** $\tilde P\tilde Q$ is the multiplication of the algebra. Of the four general
+The **general plain bilinear product** $\tilde P\tilde Q$ is the multiplication of the algebra. Of the four general
 products it is the only one that is associative and two-sidedly unital, so it is the product that makes
 $\mathbb{B}$ an associative unital algebra over $\mathbb{C}$; the others are built from it and from the
 conjugations. Its scalar part is the **general plain bilinear form** of this block,
@@ -66,7 +66,7 @@ $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis. It is the scala
 the two underlying quaternions, and those three properties are cited from the mathematics articles named
 in the introduction.
 
-**Proposed interpretation, labelled as such.** The ordinary product is read as the **composition of two
+**Proposed interpretation, labelled as such.** The general plain bilinear product is read as the **composition of two
 operations**: $\tilde P\tilde Q$ is "the operation $\tilde P$, then the operation $\tilde Q$", the
 written order of the factors being the order of the operations, as in the polar word $e^{i\alpha}B\hat q$
 of *The Polar Element Representation of Biquaternions* (*The Twisted Spinor Operator Representation of
@@ -81,14 +81,14 @@ $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P$ measures the failure.
 What is proved is the associativity, the unit and the non-commutativity; what is proposed is that they be
 read as the composition, the identity and the order of operations. The operation acts on the whole
 algebra and not on one sector; which subspace it moves is read sector by sector in the companion
-articles — on the material one by *The Ordinary Product on the Material Sector*, and on the compact and
-unitary slices by *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich* and
+articles — on the material one by *The General Plain Bilinear Product on the Material Sector*, and on the compact and
+unitary slices by *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich* and
 *Observables, Gauge Generators and the Chirality of the Internal Action*.
 
 **The product and the two involutions.** The two conjugations act on a composite by reversing the order,
 $(\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$ and
 $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}$, so the Hermitian conjugation is an anti-automorphism of
-the ordinary product, and an element and its conjugate give the same scalar
+the general plain bilinear product, and an element and its conjugate give the same scalar
 $B(\tilde P^{*},\tilde Q^{*})=B(\tilde P,\tilde Q)$, the scalar part being cyclically invariant and each
 conjugation reversing the order. The two identities are algebra and are used throughout the block; the
 second is the reason a product inherits the sector of its factors in the way the material article reads.
@@ -99,7 +99,7 @@ The algebra carries four forms and no more, the scalar parts of the four general
 bilinear $B$ and $N$ and the two sesquilinear $H$ and $K$ (*The 4 Forms over the Biquaternion
 $\mathbb{C}$ Space*). $B$ and $N$ are complex-valued, $H$ is positive definite and $K$ is indefinite, and
 of the four only $N$ is multiplicative. $B$'s defining property among them is that it is the scalar part
-of the ordinary product itself and the **plain** pairing, while $N$ is the same product with the natural
+of the general plain bilinear product itself and the **plain** pairing, while $N$ is the same product with the natural
 conjugation inserted in the first slot, $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.
 The two differ by twice the coefficient square of the vector part,
 
@@ -146,7 +146,7 @@ the General Plain Algebra of Biquaternions*.
 
 ## The Norm, the Units and the Cone
 
-An element of the ordinary product is invertible, and the criterion is not the product's own scalar form
+An element of the general plain bilinear product is invertible, and the criterion is not the product's own scalar form
 $B$. The form $B$ is not multiplicative and supplies no criterion: two elements of non-vanishing $B$ can
 multiply to an element of vanishing $B$, so $B$ decides no inverse. The criterion is the norm of the
 quaternionic bilinear form, which is multiplicative,
@@ -171,8 +171,7 @@ being the same in every remarkable subspace, and the interior of the group being
 
 **Proposed interpretation, labelled as such.** *Invertible* reads **reversible**: the inverse is the
 operation that undoes the operation, the group of units is the set of the reversible operations, and the
-cone is the wall of the reversible region. The reading is stated on its own sector in *The Ordinary
-Product on the Material Sector*, where the cone is the light cone, the group is the set of the
+cone is the wall of the reversible region. The reading is stated on its own sector in *The General Plain Bilinear Product on the Material Sector*, where the cone is the light cone, the group is the set of the
 off-light-cone four-vectors and the mass shell $N=-m^{2}c^{2}$ lies inside the group.
 
 ## Composition on Both Sides
@@ -199,7 +198,7 @@ as such.** The commutation of the two multiplications is read as the independenc
 operation to the left of an argument and attaching one to its right, and the sandwich as the composition
 in which the parameter is attached on both sides, conjugate on the two. What is proved is the commutation
 and the placement of the sandwich; the interpretation is a naming. The operators, their composition laws,
-their adjoints and their symmetries are *The Operators of the Ordinary Product: One-Sided, Two-Sided and
+their adjoints and their symmetries are *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and
 the Sandwich*; the adjoint of the sandwich and its two kinds of operator are *Observables, Gauge
 Generators and the Chirality of the Internal Action*, and the Lorentz action is *Biquaternion Rotations
 and Lorentz Transformations*.
@@ -227,13 +226,12 @@ positivity is blind to the sector.
 four four-dimensional subspaces and so does not separate them.
 
 **What the framework does not claim.** The interpretation does not say which physical operation an element
-represents, does not derive the Lorentz transformation or the measurement update from the ordinary
-product, and does not claim that every physical process is a product. The Lorentz action is the sandwich
+represents, does not derive the Lorentz transformation or the measurement update from the general plain bilinear product, and does not claim that every physical process is a product. The Lorentz action is the sandwich
 of the section above, and the measurement update is an idempotent projection; neither is re-derived here.
 
 ## The Ledger
 
-**Proved.** The ordinary product is associative and two-sidedly unital, and its scalar part
+**Proved.** The general plain bilinear product is associative and two-sidedly unital, and its scalar part
 $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$ is a symmetric
 non-degenerate $\mathbb{C}$-bilinear form with Gram matrix $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$; the
 form $B$ restricts to $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on
@@ -241,12 +239,12 @@ $\mathbb{H}_{\mathbb{B}}$, $(3,1)$ on $i\mathbb{H}_{\mathbb{B}}$, $(4,0)$ on $\m
 $\mathbb{M}_-$, and its null set is a complex cone of real dimension six; the Hermitian conjugation is an
 anti-automorphism of the product, $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}$; the algebraic norm
 $N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ is multiplicative, its
-non-vanishing set $\mathbb{B}^{\times}$ is the group of invertible elements of the ordinary product with
+non-vanishing set $\mathbb{B}^{\times}$ is the group of invertible elements of the general plain bilinear product with
 the inverse $\tilde Q^{\natural}/N(\tilde Q)$, its vanishing set is the zero-divisor cone, and the algebra
 is their disjoint union; and the left and right multiplications commute, so the sandwich is their
 composition.
 
-**Interpretations.** That the ordinary product is the **composition of operations**, with associativity
+**Interpretations.** That the general plain bilinear product is the **composition of operations**, with associativity
 read as composability, $e_0$ as the identity and non-commutativity as order dependence; that $B$ is the
 **plain** form that measures and $N$ the form that carries the metric; and that *invertible* reads
 **reversible**, the group of units being the reversible operations and the cone the wall of the reversible
@@ -254,7 +252,7 @@ region. Each is the framework's naming of a proved algebraic fact and is labelle
 
 ## Summary
 
-The ordinary product $\tilde P\tilde Q$ — the only one of the four general products that is associative
+The general plain bilinear product $\tilde P\tilde Q$ — the only one of the four general products that is associative
 and two-sidedly unital — acts on the whole biquaternion algebra $\mathbb{B}$, and this article reads it
 there. Its law is associativity, the unit $e_0$ and non-commutativity, read as the composition of
 operations with the written order of the factors the order of the operations. Its scalar part, the
@@ -266,14 +264,14 @@ quaternionic pair, and definite on the sectors. Being definite there it has no l
 the metric; the metric is the interval, the general quaternionic bilinear form $N$ of the companion
 quaternionic block, indefinite of signature $(-,+,+,+)$ on the material sector. The two forms differ by
 twice the coefficient square of the vector part and agree only when the vector part is isotropic. The
-invertibility of the ordinary product is decided by the multiplicative norm $N$ and not by $B$: the
+invertibility of the general plain bilinear product is decided by the multiplicative norm $N$ and not by $B$: the
 invertible elements are the elements of non-vanishing norm, forming the group $\mathbb{B}^{\times}$ with
 the inverse $\tilde Q^{\natural}/N(\tilde Q)$ and bounded by the zero-divisor cone, and the Hermitian
 conjugation is an anti-automorphism of the product. The left and right multiplications commute, so the
 sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$ is the composition on both sides. The
 distinctions are labelled throughout: what is proved is the algebra on the whole space, and the reading of
 the sector sign, of the sector of a composite and of the reversibility on the material sector is the
-companion article *The Ordinary Product on the Material Sector*; what is proposed is the naming.
+companion article *The General Plain Bilinear Product on the Material Sector*; what is proposed is the naming.
 
 ## Summary of Notation
 
@@ -285,14 +283,14 @@ companion article *The Ordinary Product on the Material Sector*; what is propose
 | $\bar{\cdot},{\natural},{}^{*}=\bar{\cdot}\circ{\natural}$ | Complex, natural and Hermitian conjugations |
 | $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_0,e_1,e_2,e_3\}$ |
 | $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_0,ie_1,ie_2,ie_3\}$ |
-| $\tilde P\tilde Q$ | Ordinary product; associative, unital, non-commutative; acts on all of $\mathbb{B}$ |
+| $\tilde P\tilde Q$ | General plain bilinear product; associative, unital, non-commutative; acts on all of $\mathbb{B}$ |
 | $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
 | $B\big|_{\mathbb{M}_-}=(0,4)$, $B\big|_{\mathbb{M}_+}=(4,0)$ | The sector sign carried by $B$; the reading is the companion material article |
 | $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
 | $B(\tilde Q,\tilde Q)=N(\tilde Q,\tilde Q)-2\,\mathbf Q\!\cdot\!\mathbf Q$ | The relation between the two forms; they agree only on the isotropic vector part |
-| $N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ | Algebraic norm of the ordinary product; multiplicative |
-| $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units of the ordinary product; zero-divisor cone |
-| $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | Inverse in the ordinary product |
+| $N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ | Algebraic norm of the general plain bilinear product; multiplicative |
+| $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone |
+| $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | Inverse in the general plain bilinear product |
 | $L_{\tilde Q},R_{\tilde P},\ \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | Left and right multiplications and the sandwich |
 | $(p,q)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
@@ -314,11 +312,11 @@ restriction of $B$ to the remarkable subspaces.
 Zero-Divisor Cone*
 (`articles_maths/the-group-of-units-of-the-general-plain-algebra-and-the-complement-of-the-zero-divisor-cone.md`),
 for the group of units, the multiplicativity of the norm and the cone as the boundary of invertibility.
-- Companion article *The Ordinary Product on the Material Sector*, for the sector sign, the sector of a
+- Companion article *The General Plain Bilinear Product on the Material Sector*, for the sector sign, the sector of a
 composite and the reversibility read on $\mathbb{M}_-$.
 - Companion article *Biquaternion Norm and Invertibility*, for the interval, the light cone, the mass
 shell and the units.
-- Companion article *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*, for
+- Companion article *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*, for
 the multiplication operators, the sandwich and the adjoint.
 - Companion article *The Four General Products and Their Physical Readings*, for the comparison of the
 four general products and the full restriction table.

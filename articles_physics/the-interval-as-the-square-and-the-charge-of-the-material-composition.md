@@ -16,7 +16,7 @@ $$
 \tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q ,
 $$
 
-the ordinary multiplication with the natural conjugation inserted in the first slot, and the claim of the
+the general plain bilinear product with the natural conjugation inserted in the first slot, and the claim of the
 article is the identity
 
 $$
@@ -114,7 +114,7 @@ $$
 \mathrm{Sc}(\tilde Q\tilde Q)=Q_0^{2}-(\mathbf Q,\mathbf Q)=B(\tilde Q,\tilde Q) ,
 $$
 
-the algebraic norm value of the general plain bilinear form $B$ of *The Ordinary Product on the Biquaternion Space*.
+the algebraic norm value of the general plain bilinear form $B$ of *The General Plain Bilinear Product on the Biquaternion Space*.
 
 **Proof.** Distribute the product and use $\mathbf Q^{2}=-(\mathbf Q,\mathbf Q)$ for a vector part.
 
@@ -133,7 +133,7 @@ $$
 
 the first the negative of the Euclidean length of the event, the second the interval. On this sector $B$
 is negative definite and has no null element beyond the origin, so it has no cone; $N$ is indefinite, and
-its vanishing set is the light cone. The pass from the ordinary product to the quaternionic one is
+its vanishing set is the light cone. The pass from the general plain bilinear product to the quaternionic one is
 therefore, on the material sector, the pass from a Euclidean square to the interval, and it is done by
 inserting one conjugation in the first slot.
 
@@ -154,7 +154,7 @@ N(\tilde P\star\tilde Q)=N(\tilde P)\,N(\tilde Q) .
 $$
 
 **Proof.** $N(\tilde P\star\tilde Q)=N(\tilde P^{\natural}\tilde Q)=N(\tilde P^{\natural})N(\tilde Q)$ by
-the multiplicativity of $N$ under the ordinary product, and $N(\tilde P^{\natural})=N(\tilde P)$ because
+the multiplicativity of $N$ under the general plain bilinear product, and $N(\tilde P^{\natural})=N(\tilde P)$ because
 the natural conjugation is an anti-automorphism that preserves the norm.
 
 The interval therefore turns the material composition into multiplication of numbers. That is the
@@ -338,7 +338,7 @@ and the interval of a material operation is an informational scalar.
 complex only on an element that mixes them; the imaginary part is the overlap of the material and
 informational contents.
 - **The interval-one operations are the interval-preserving operations.** They form a group **under the
-ordinary product**, the group $\{\tilde U:N(\tilde U)=1\}$, of complex dimension three, which is the
+general plain bilinear product**, the group $\{\tilde U:N(\tilde U)=1\}$, of complex dimension three, which is the
 two-fold cover of the restricted Lorentz group. The group statement belongs to the associative product
 and not to the material one, for the reason given below.
 - **The multiplicative law is an additive law in the logarithm.** The proved identity
@@ -431,11 +431,11 @@ The square map is read as the **Born/measurement arrow**: the square $\tilde{Q}\
 
 ## Summary
 
-The quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is the ordinary product with
+The quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is the general plain bilinear product with
 the natural conjugation inserted in the first slot, and the insertion reverses the sign of the product of
 the vector parts. Its square is central, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$, so **the interval of a
 material element is its square**, and on the material coordinate $ict\,e_0+\mathbf x$ the square is
-$-c^{2}t^{2}+\mathbf x^{2}$. The ordinary product squares to something else,
+$-c^{2}t^{2}+\mathbf x^{2}$. The general plain bilinear product squares to something else,
 $\tilde Q\tilde Q=(Q_0^{2}-(\mathbf Q,\mathbf Q))e_0+2Q_0\mathbf Q$, whose scalar value
 $B(\tilde Q,\tilde Q)$ is negative definite on the material sector and has no cone: the two products differ
 by the sign of the vector pairing, and that sign is the difference between a Euclidean square and the
@@ -473,10 +473,10 @@ Automorphisms*; and the comparison of the four general products by *The Four Gen
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the quaternionic product |
 | $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ | the square identity; the interval as the square |
 | $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ | the biquaternion norm |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ | the general plain bilinear form of the ordinary product |
+| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ | the general plain bilinear form of the general plain bilinear product |
 | $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$ | multiplicativity; the interval as a charge |
 | $\mathcal N=\{N=0\}$ | the null set; the light cone on the material sector |
-| $\{N=1\}$ | the interval-one operations; a group under the ordinary product |
+| $\{N=1\}$ | the interval-one operations; a group under the general plain bilinear product |
 | $ict\,e_0+\mathbf x$ | the material coordinate |
 
 ## Further Reading
@@ -492,8 +492,8 @@ square.
 (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
 associator and the failure of the weaker identities.
 - Companion article *Biquaternion Norm and Invertibility*, for the interval, the multiplicativity under the
-ordinary product, the invertibility criterion, the four-velocity and the mass shell.
-- Companion article *The Ordinary Product on the Biquaternion Space*, for the ordinary product, the form $B$
+general plain bilinear product, the invertibility criterion, the four-velocity and the mass shell.
+- Companion article *The General Plain Bilinear Product on the Biquaternion Space*, for the general plain bilinear product, the form $B$
 and the Euclidean square.
 - Companion article *Why the Material Composition Is Oriented and Cannot Measure*, for the orientation of
 the two slots, the left unit and the absence of a material projection.

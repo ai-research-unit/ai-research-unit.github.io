@@ -21,16 +21,6 @@ The cone is the complement of the unit group
 
 
 
-Mass has four readings, and all four detect the cone.
-The norm vanishes on it, the rank of the Hermitian square drops to one on it, the compact label is the one the null element carries, and the polar scale collapses; only the massless elements are detected by all four at once (The Four Readings of Mass: Norm, Rank, Charge and Scale).
-The Krein form is the indefinite partner of the Born pairing and carries the Krein cone, the set of elements of non-negative Krein norm with respect to which the framework's indefinite-sector positivity is stated; its inertia is (1,3,0) on the complexified Hermitian subspace and (2,6,0) over R (Inertia and the Witt Invariant: What a Signature Allows a Spectrum to Carry).
-The vacuum lies on the cone: the minimal idempotent Π̃(μ̂) is null for every unit μ̂, so e0 = Π̃(μ̂) + Π̃(−μ̂) decomposes the unit along two null directions — the algebraic shape of a light-cone frame — and the cone is the union of the rays that the projectors single out (The Biquaternion Vacuum as a Minimal Idempotent).
-The Lorentz group is the group of norm automorphisms whose nonzero null vectors are the zero divisors, and the construction realises the closed forward cone only, with no spacelike region and no past cone (The Lorentz Group as Biquaternion Norm Automorphisms).
-Under twistors the null cone of B is a cone over the Segre quadric P1 × P1, its two rulings the two families of chiral spinor lines, and the comparison is sharp: the biquaternion norm is a general plain bilinear form whose null cone is a complex quadric, while the twistor form is Hermitian of signature (2,2) whose null set is the real cone that defines the conformal structure (Twistor Theory and Biquaternions).
-In Dirac matter the emergent cones of condensed matter — the Dirac cones of graphene at the Fermi level, the surface Dirac cone of a topological insulator protected by time-reversal symmetry — are the same shape in a different substrate, the massless linear dispersion appearing where a lattice symmetry forbids a gap (Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form).
-
-
-
 
 
 
@@ -112,7 +102,7 @@ The 12 Products of the Biquaternion Complex Space
 
 
 Focus on the General Plain Algebra (GPA) of Biquaternions — Composition
-The Ordinary Product and the Material Sector
+The General Plain Bilinear Product on the Material Sector
 Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell
 Focus on the Symmetric Plain Algebra (SPA) of Biquaternions — Anticommutation
 The Symmetrised Material Composition and the Jordan Identity

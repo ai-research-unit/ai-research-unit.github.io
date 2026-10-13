@@ -1,4 +1,4 @@
-# __The Ordinary Product on the Material Sector__
+# __The General Plain Bilinear Product on the Material Sector__
 
 ## Introduction
 
@@ -11,8 +11,8 @@ $$
 
 an imaginary time and three real space directions, and the operations of a relativistic system act on
 such elements. This article reads the restriction to that sector of the one product by which they compose
-— the **ordinary product** $\tilde P\tilde Q$, the multiplication of the algebra itself — and asks what
-its scalar part measures there. The product on the whole algebra is *The Ordinary Product on the
+— the **general plain bilinear product** $\tilde P\tilde Q$, the multiplication of the algebra itself — and asks what
+its scalar part measures there. The product on the whole algebra is *The General Plain Bilinear Product on the
 Biquaternion Space*; this article is its material-sector companion, the reading of the same product on
 $\mathbb{M}_-$ alone.
 
@@ -34,7 +34,7 @@ definite form has no light cone, so $B$ cannot decide which events can influence
 is the sign that separates the material sector from the informational one, and that sign is the whole of
 its physical content.
 
-**Placement and boundaries.** This article is the material-sector companion of *The Ordinary Product on
+**Placement and boundaries.** This article is the material-sector companion of *The General Plain Bilinear Product on
 the Biquaternion Space*, which opens the band *Focus on the General Plain Algebra (GPA) of Biquaternions
 — Composition* and states the product, its law, its scalar form $B$ on the whole algebra and the
 restriction table. Here the same product is read on $\mathbb{M}_-$ alone: the sector sign, the sector of a
@@ -42,7 +42,7 @@ composite of two material operations, the light cone as the wall of the reversib
 absence of a material projection. The product's invertibility criterion, its group of units and its cone
 are the mathematics of *The Group of Units of the General Plain Algebra and the Complement of the
 Zero-Divisor Cone* and the physical level data of *Biquaternion Norm and Invertibility*; the operators and
-the sandwich are *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*; the
+the sandwich are *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*; the
 sector itself, its coordinate dictionary and its superselection interpretation are *The Anti-Hermitian
 Subspace $\mathbb{M}_-$ as the Material Sector*; and the comparison of the four general products is *The
 Four General Products and Their Physical Readings*. None of those is reproved here.
@@ -87,8 +87,8 @@ rest of the article is about the one that does not carry the interval.
 
 ## The Product of Two Material Operations
 
-The ordinary product $\tilde P\tilde Q$ is the multiplication of the algebra, read in full in *The
-Ordinary Product on the Biquaternion Space*. The material sector is not closed under it, and the way it
+The general plain bilinear product $\tilde P\tilde Q$ is the multiplication of the algebra, read in full in *The
+General Plain Bilinear Product on the Biquaternion Space*. The material sector is not closed under it, and the way it
 fails is the sharpest consequence of the anti-fixedness $\tilde Q^{*}=-\tilde Q$. The Hermitian
 conjugation is an anti-automorphism, $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}$, so for two
 material operations it returns the reversed product,
@@ -147,7 +147,7 @@ $$
 **Remark (verified).** The form $B$ is real and strictly negative on every material element and real and
 strictly positive on every informational one; the Gram matrices on the two bases are exactly
 $-\mathrm{I}_4$ and $+\mathrm{I}_4$. The full restriction table of $B$ over the six remarkable subspaces
-is in *The Ordinary Product on the Biquaternion Space*.
+is in *The General Plain Bilinear Product on the Biquaternion Space*.
 
 **Proposed interpretation, labelled as such.** $B$ is read as the **sector sign**: to say "this element is
 material" and to say "$B$ is negative on it" are the same statement. The sign of $B(\tilde Q,\tilde Q)$ is the same for every element of a sector, so it is invisible to a
@@ -172,14 +172,14 @@ imaginary part is the mark of a composition of a material operation with an info
 
 ## The Light Cone as the Wall of the Reversible Operations
 
-The ordinary product composes material operations, and the first thing a composition asks of its factors
+The general plain bilinear product composes material operations, and the first thing a composition asks of its factors
 is which of them can be undone. On the material sector the answer is the light cone. The algebraic
-criterion, the partition of the algebra and the group structure are *The Ordinary Product on the
+criterion, the partition of the algebra and the group structure are *The General Plain Bilinear Product on the
 Biquaternion Space*, *The Group of Units of the General Plain Algebra and the Complement of the
 Zero-Divisor Cone* and *Biquaternion Norm and Invertibility*; what is read here is the form they take on
 $\mathbb{M}_-$.
 
-**The units and the cone.** The invertibility of the ordinary product is decided by the multiplicative
+**The units and the cone.** The invertibility of the general plain bilinear product is decided by the multiplicative
 norm $N$, not by the sector sign $B$,
 
 $$
@@ -325,9 +325,8 @@ an algebra.
 material field comes from $\mathbb{M}_+$.
 
 **What the framework does not claim.** The interpretation does not say which physical operation an element
-represents, does not derive the Lorentz transformation or the measurement update from the ordinary
-product, and does not claim that every physical process is a product. The Lorentz action is the sandwich
-of *The Ordinary Product on the Biquaternion Space*, and the measurement update is an idempotent
+represents, does not derive the Lorentz transformation or the measurement update from the general plain bilinear product, and does not claim that every physical process is a product. The Lorentz action is the sandwich
+of *The General Plain Bilinear Product on the Biquaternion Space*, and the measurement update is an idempotent
 projection; neither is re-derived here.
 
 ## The Ledger
@@ -344,7 +343,7 @@ $N=-m^{2}c^{2}$, $m\neq0$, lies inside the group of units and the massless shell
 
 **Interpretations.** That $B$ carries the **sector sign** and the interval carries the metric; that the
 material geometry belongs to this block and to its quaternionic companion and not to the sesqualgebra;
-that the ordinary product is the **composition of material operations**; that a material field is split
+that the general plain bilinear product is the **composition of material operations**; that a material field is split
 against a **reference state** rather than a material background; that the imaginary part of the
 composition marks a material operation paired with an informational state; that in the material sector
 time is the central direction and space the vector directions; that the group of units is the set of the
@@ -356,7 +355,7 @@ algebraic fact and is labelled as such.
 
 ## Physical Readings
 
-The ordinary product reads as the process on the material sector, and the article's own interpretation is
+The general plain bilinear product reads as the process on the material sector, and the article's own interpretation is
 the composition of two operations. Two further readings follow from its two failings. The product is not
 commutative, which is the orientation of a material process and the reason the two slots are not
 interchangeable; and its scalar part composes operations rather than values, which is why the Born pairing
@@ -367,8 +366,8 @@ for the central phase, which is the exchange's business and not the vector part'
 ## Summary
 
 The material sector $\mathbb{M}_-$ carries the four-vectors, an event being
-$\tilde T=ict\,e_0+x e_1+y e_2+z e_3$, and this article reads on it the ordinary product $\tilde P\tilde Q$
-whose full theory on the whole algebra is *The Ordinary Product on the Biquaternion Space*. Its scalar
+$\tilde T=ict\,e_0+x e_1+y e_2+z e_3$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$
+whose full theory on the whole algebra is *The General Plain Bilinear Product on the Biquaternion Space*. Its scalar
 part $B=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$, the quaternion scalar product of the two elements, is
 negative definite on $\mathbb{M}_-$ with signature $(0,4)$ and positive definite on $\mathbb{M}_+$ with
 signature $(4,0)$: opposite definite signs on the two sectors, so $B$ carries the **sector sign**. Being
@@ -376,7 +375,7 @@ definite, $B$ has no light cone at all and cannot be the metric; the metric is t
 quaternionic bilinear form of the companion quaternionic block, of signature $(-,+,+,+)$ on the material
 sector. The composition of two material operations is material exactly when the two anticommute, its
 informational part being the anticommutator and its order dependence the commutator. The reversibility of
-the ordinary product is carried by the norm $N$ and not by $B$: the invertible elements are the elements
+the general plain bilinear product is carried by the norm $N$ and not by $B$: the invertible elements are the elements
 of non-vanishing norm, forming the group $\mathbb{B}^{\times}$ with the inverse
 $\tilde Q^{\natural}/N(\tilde Q)$ and bounded by the zero-divisor cone, so on the material sector the
 light cone is the wall of the reversible operations and the mass shell $N=-m^{2}c^{2}$ lies inside the
@@ -396,14 +395,14 @@ $\mathbb{M}_-$, what is proposed is the naming.
 | $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_0,e_1,e_2,e_3\}$ |
 | $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_0,ie_1,ie_2,ie_3\}$ |
 | $\tilde T=ict\,e_0+\mathbf x$ | A material event; imaginary time, real space |
-| $\tilde P\tilde Q$ | Ordinary product; associative, unital, non-commutative |
+| $\tilde P\tilde Q$ | General plain bilinear product; associative, unital, non-commutative |
 | $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
 | $B\big|_{\mathbb{M}_-}=-\mathrm{I}_4$, $B\big|_{\mathbb{M}_+}=+\mathrm{I}_4$ | The sector sign carried by $B$ |
 | $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
 | $\tfrac12(\tilde P\tilde Q\pm\tilde Q\tilde P)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
-| $N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ | Algebraic norm of the ordinary product; the interval at equal arguments; multiplicative |
-| $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units of the ordinary product; zero-divisor cone; the light cone on $\mathbb{M}_-$ |
-| $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | Inverse in the ordinary product |
+| $N(\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ | Algebraic norm of the general plain bilinear product; the interval at equal arguments; multiplicative |
+| $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone; the light cone on $\mathbb{M}_-$ |
+| $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | Inverse in the general plain bilinear product |
 | $\tilde\Pi^{2}=\tilde\Pi$ | A projection; none nonzero in $\mathbb{M}_-$ |
 | $(p,q)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
@@ -417,7 +416,7 @@ on the biquaternion algebra and the sectors of the Hermitian conjugation.
 metric of signature $(-,+,+,+)$ and its contrast with a definite form.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw–Hill, 1980), for the four-vector,
 the interval and the mass shell of the material sector.
-- Companion article *The Ordinary Product on the Biquaternion Space*, for the product and the form $B$ on
+- Companion article *The General Plain Bilinear Product on the Biquaternion Space*, for the product and the form $B$ on
 the whole algebra and the restriction table over the remarkable subspaces.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material
 sector and its own physics.

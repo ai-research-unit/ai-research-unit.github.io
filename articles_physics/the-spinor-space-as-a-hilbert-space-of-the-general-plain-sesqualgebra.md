@@ -81,7 +81,7 @@ $$
 B(\tilde P,\tilde Q)=\operatorname{Sc}(\tilde P\tilde Q)
 $$
 
-is $\mathbb{C}$-bilinear, and its algebraic norm $B(\tilde Q,\tilde Q)$ is not a sum of squared moduli; on the real space $B$ is **indefinite**, of signature $(4,4)$, positive on the informational sector $\mathbb{M}_+$ and negative on the material sector $\mathbb{M}_-$ (*The Ordinary Product on the Biquaternion Space*). Its restriction to the carrier is even degenerate, $B_S=\operatorname{diag}(\tfrac12,0)$, with radical $\mathbb{C}\tilde\Upsilon_2$ (companion article). So the plain product cannot supply a norm on $S$.
+is $\mathbb{C}$-bilinear, and its algebraic norm $B(\tilde Q,\tilde Q)$ is not a sum of squared moduli; on the real space $B$ is **indefinite**, of signature $(4,4)$, positive on the informational sector $\mathbb{M}_+$ and negative on the material sector $\mathbb{M}_-$ (*The General Plain Bilinear Product on the Biquaternion Space*). Its restriction to the carrier is even degenerate, $B_S=\operatorname{diag}(\tfrac12,0)$, with radical $\mathbb{C}\tilde\Upsilon_2$ (companion article). So the plain product cannot supply a norm on $S$.
 
 The inner product needs the **second slot read through ${}^{*}$**. The conjugation is conjugate-linear, and it turns the algebraic norm of the product into a sum of squared moduli:
 

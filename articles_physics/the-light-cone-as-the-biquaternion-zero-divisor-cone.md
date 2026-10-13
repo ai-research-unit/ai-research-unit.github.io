@@ -278,7 +278,7 @@ The **physical interpretation** of this algebraic boundary is the content of the
 The conventions of the construction are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric at its three levels.
+- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*).
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the real quaternion slice and the four-vector representation.
 - Companion article *The Relativistic Particle in Biquaternionic Form*, for the particle's four-momentum, mass shell and causal classification.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field strength on the null cone and its invariants.

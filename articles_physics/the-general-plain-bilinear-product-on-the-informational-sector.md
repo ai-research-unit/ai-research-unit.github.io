@@ -13,8 +13,8 @@ $$
 a **real** scalar part and three **imaginary** vector parts. This article reads the restriction to that
 sector of the one product by which informational operations compose — the **general plain bilinear
 product** $(\mathrm{GPA})$, written $\tilde P\tilde Q$, the multiplication of the algebra itself — and asks
-what its scalar part measures there. It is the informational companion of *The Ordinary Product on the
-Material Sector*; the product on the whole algebra is *The Ordinary Product on the Biquaternion Space*,
+what its scalar part measures there. It is the informational companion of *The General Plain Bilinear Product on the
+Material Sector*; the product on the whole algebra is *The General Plain Bilinear Product on the Biquaternion Space*,
 and the sector itself, its coordinate dictionary and its operator identification are *The Hermitian
 Subspace $\mathbb{M}_+$ as the Informational Sector*.
 
@@ -34,9 +34,9 @@ nonzero idempotents of the algebra lie in $\mathbb{M}_+$ alone, and they lie **o
 — so on this side of the algebra the cone is not a mass shell but the **purity boundary of the state
 space**, the set of the pure states.
 
-**Placement and boundaries.** This article is the informational-sector companion of *The Ordinary Product
+**Placement and boundaries.** This article is the informational-sector companion of *The General Plain Bilinear Product
 on the Biquaternion Space*, in the band *Focus on the General Plain Algebra (GPA) of Biquaternions —
-Composition*, and the second of the two sector companions, the first being *The Ordinary Product on the
+Composition*, and the second of the two sector companions, the first being *The General Plain Bilinear Product on the
 Material Sector*. Here the same product is read on $\mathbb{M}_+$ alone: the sector sign on the
 informational side, the sector structure of an informational composite, the square as a map into the
 sector, the idempotents and the purity boundary, and the units of the sector. The symmetrised product and
@@ -46,7 +46,7 @@ criterion, the group of units and the cone are the mathematics of *The Group of 
 Algebra and the Complement of the Zero-Divisor Cone* and the level data of *Biquaternion Norm and
 Invertibility*; the idempotents and the Peirce decomposition are *Idempotents of the General Plain
 Algebra* and *Ideals and Peirce Decomposition of the General Plain Algebra*; the operators and the
-sandwich are *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*; the exchange
+sandwich are *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*; the exchange
 of the two sectors is *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time* and the
 maps between them *Cross-Sector Coupling in the Biquaternion Framework: a Catalogue of the Maps Between
 the Sectors*. None of those is reproved here.
@@ -380,7 +380,7 @@ boundary of what it must declare is the boundary of the sector.
 **What the framework does not claim.** The interpretation does not say which physical operation an
 informational element represents, does not derive the measurement update from the general plain bilinear product, and
 does not claim that every informational process is a composition. The Lorentz action is the sandwich of
-*The Ordinary Product on the Biquaternion Space*, and the measurement update is an idempotent projection;
+*The General Plain Bilinear Product on the Biquaternion Space*, and the measurement update is an idempotent projection;
 neither is re-derived here.
 
 ## The Ledger
@@ -426,7 +426,7 @@ the Sector Exchange as Relational Time*), and the product is the one operation t
 
 The informational sector $\mathbb{M}_+$ carries the Hermitian elements, an element being
 $\tilde Q=(ct')e_0+i\mathbf x'$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$ whose
-full theory on the whole algebra is *The Ordinary Product on the Biquaternion Space*. Its scalar part
+full theory on the whole algebra is *The General Plain Bilinear Product on the Biquaternion Space*. Its scalar part
 $B=p_0q_0+\mathbf p'\!\cdot\!\mathbf q'$, the Euclidean inner product of the informational coordinates, is
 positive definite on $\mathbb{M}_+$ with signature $(4,0)$ and negative definite on $\mathbb{M}_-$ with
 signature $(0,4)$: opposite definite signs on the two sectors, so $B$ carries the **sector sign**. Being
@@ -478,9 +478,9 @@ algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
   2000), for the state space, the Bloch ball and the purity of a state.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw–Hill, 1980), for the role of
   the indefinite metric and its separation from the positive probability form.
-- Companion article *The Ordinary Product on the Biquaternion Space*, for the product and the form $B$ on
+- Companion article *The General Plain Bilinear Product on the Biquaternion Space*, for the product and the form $B$ on
   the whole algebra and the restriction table over the remarkable subspaces.
-- Companion article *The Ordinary Product on the Material Sector*, for the mirror reading on
+- Companion article *The General Plain Bilinear Product on the Material Sector*, for the mirror reading on
   $\mathbb{M}_-$.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the sector,
   its coordinate dictionary and its operator identification.

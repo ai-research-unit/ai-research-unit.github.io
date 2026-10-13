@@ -11,7 +11,7 @@ product satisfies the Jordan identity. That is the algebraic content of the arti
 
 Three interpretations follow, and each is offered and labelled as an interpretation rather than proved. The first is
 that the symmetrised product is the **classical composition** of two observables, the composition on
-which the order does not act; the order-bearing part of the ordinary product leaves the sector altogether
+which the order does not act; the order-bearing part of the general plain bilinear product leaves the sector altogether
 and becomes a generator, in the companion band $\mathrm{APA}$. The second is that the observables are a
 **Jordan algebra** in the precise sense: a commutative algebra whose product satisfies the Jordan identity
 in place of associativity. The third is that the **trace form** of the operation is invariant, and that
@@ -67,14 +67,14 @@ An **observable** of the frame is a Hermitian element, $\tilde Q\in\mathbb{M}_+$
 Hermitian positive element of trace one; the dictionary is that of *The Hermitian Subspace $\mathbb{M}_+$
 as the Informational Sector*. The first consequence of the closure is that two observables compose:
 
-**Proposition.** The symmetrised product of two observables is an observable. The ordinary product is not:
+**Proposition.** The symmetrised product of two observables is an observable. The general plain bilinear product is not:
 it has one Hermitian and one anti-Hermitian part, and only the Hermitian part stays in the sector.
 
-*Proof.* The closure is the first proposition. For the ordinary product take the Hermitian pair
+*Proof.* The closure is the first proposition. For the general plain bilinear product take the Hermitian pair
 $\tilde P=ie_1$, $\tilde Q=ie_2$: then
 $\tilde P\tilde Q=(ie_1)(ie_2)=-e_1e_2=-e_3$, which is anti-Hermitian and not an observable, while the
 two parts of the split read $\tilde P\bullet\tilde Q=\tfrac12(-e_3+e_3)=0$ and
-$\tilde P\wedge\tilde Q=\tfrac12(-e_3-e_3)=-e_3$. So the ordinary product of two observables need not be
+$\tilde P\wedge\tilde Q=\tfrac12(-e_3-e_3)=-e_3$. So the general plain bilinear product of two observables need not be
 an observable, and the antisymmetric part is where it leaves the sector.
 
 The observables therefore form a commutative unital algebra over $\mathbb{R}$ of real dimension four,
@@ -82,9 +82,9 @@ with the unit $e_0$, and it satisfies the Jordan identity because the ambient op
 is **special**, being the symmetrisation of the associative algebra $\mathbb{B}$ restricted to
 $\mathbb{M}_+$; the special class is *Special and Exceptional Jordan Algebras*.
 
-**Remark (the observables are not a subalgebra of the ordinary product).** The closure is a statement
-about $\bullet$ and not about the ordinary product: $\mathbb{M}_+$ is closed under the order-free
-composition and under nothing else. The ordinary product of two observables leaves the sector, which is
+**Remark (the observables are not a subalgebra of the general plain bilinear product).** The closure is a statement
+about $\bullet$ and not about the general plain bilinear product: $\mathbb{M}_+$ is closed under the order-free
+composition and under nothing else. The general plain bilinear product of two observables leaves the sector, which is
 the asymmetry that makes the sector "the states" under one product and "the generators" under another.
 
 ## The Square of an Observable and Its Positivity
@@ -154,7 +154,7 @@ $$
 
 It is $\mathbb{C}$-bilinear, symmetric and non-degenerate on $\mathbb{B}$, and on the informational sector
 it is **positive definite**. This is the trace form of *The Trace Form and the Invariance of the Symmetric
-Plain Algebra*, and it is the same form as the general plain bilinear form $B$ of *The Ordinary Product on the Biquaternion Space*, read here as the form of the operation.
+Plain Algebra*, and it is the same form as the general plain bilinear form $B$ of *The General Plain Bilinear Product on the Biquaternion Space*, read here as the form of the operation.
 
 **Proposition (invariance).** The trace form is **invariant**:
 
@@ -166,7 +166,7 @@ $$
 *Proof.* Expanding the symmetrised product in one slot, the left side is
 $\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde R)+\mathrm{Sc}(\tilde Q\tilde P\tilde R)\bigr)$ and
 the right side $\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde R)+\mathrm{Sc}(\tilde P\tilde R\tilde Q)\bigr)$.
-The first terms agree, and the second terms agree because the scalar part of the ordinary product is
+The first terms agree, and the second terms agree because the scalar part of the general plain bilinear product is
 invariant under a cyclic permutation,
 $\mathrm{Sc}(\tilde Q\tilde P\tilde R)=\mathrm{Sc}(\tilde P\tilde R\tilde Q)$. The invariance is *The Trace Form and the Invariance of the Symmetric Plain
 Algebra*.
@@ -199,7 +199,7 @@ differ by sign, and the comparison is *The Four General Products and Their Physi
 
 **Proposed interpretation, labelled as such.** The symmetrised plain product on the observables is the
 **classical composition**: the composition of two observables that does not depend on their order. The
-ordinary product of two observables splits into the order-free composition and the order-bearing part,
+general plain bilinear product of two observables splits into the order-free composition and the order-bearing part,
 
 $$
 \tilde P\tilde Q=\underbrace{\tilde P\bullet\tilde Q}_{\text{observable}}+\underbrace{\tilde
@@ -286,7 +286,7 @@ The Jordan algebra reads as the algebra of what can be measured, and the article
 
 The symmetrised plain product
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ closes the Hermitian sector: the
-product of two observables is an observable, whereas the ordinary product splits into an observable part
+product of two observables is an observable, whereas the general plain bilinear product splits into an observable part
 and a generator part. The observables form a commutative unital **special Jordan algebra** over
 $\mathbb{R}$ of real dimension four, with the unit $e_0$, the Jordan identity in place of associativity,
 and the square as the algebraic norm of the operation. The square of an observable is a positive observable,

@@ -22,7 +22,7 @@ Third, the genuinely biquaternionic kernel. The second-order operator $\Box$ has
 
 The article is organised as follows. The gradient and the d'Alembertian are established first, with the composition, the symbol, the central scalar, and the adjoint. The defining equation for the Green's function, the invariant kernel, and the causal kernels follow, with the light-cone Jacobian and the boundary condition that selects the retarded solution. The massive operator and the first-order kernel are treated next, together with the shifted gradient — central and non-central — and the Kirchhoff and Kirchhoff–Green representations the shift carries, and the article closes with the sector structure of the kernels and the table of results.
 
-- Companion article *Conventions in the Biquaternion Universe*, for the series d'Alembertian, the three levels of the metric, and the d'Alembertian convention.
+- Companion article *Conventions in the Biquaternion Universe*, for the series d'Alembertian, the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*), and the d'Alembertian convention.
 - Companion article *Exercise: The Retarded Potentials and the Green's Function*, for the retarded kernel and boundary condition specialised to the electromagnetic potential.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the second-order equation the operator carries.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the first-order equation built from the gradient and the spinor on which it acts.
@@ -291,7 +291,7 @@ $$
 $$
 in contrast with $G_\Box$. The scalar kernel may be moved through any algebraic factor; the first-order kernel may not, and its order relative to a field is part of the equation.
 
-**The massless first-order equation is the conjugation-invariant one.** The homogeneous first-order equation $\tilde{\nabla}\tilde{\Phi} = 0$ is the massless Dirac equation on the spinor module and the source-free Maxwell equation on the field strength, and its kernel theory is the theory of the functions annihilated by $\tilde{\nabla}^{\natural}$. The massive first-order operator requires the chirality-off-diagonal mass term of the companion *Conventions in the Biquaternion Universe* and is treated in the spin-$1/2$ articles; the massless kernel above is the common structure those articles specialise.
+**The massless first-order equation is the conjugation-invariant one.** The homogeneous first-order equation $\tilde{\nabla}\tilde{\Phi} = 0$ is the massless Dirac equation on the spinor module and the source-free Maxwell equation on the field strength, and its kernel theory is the theory of the functions annihilated by $\tilde{\nabla}^{\natural}$. The massive first-order operator requires the chirality-off-diagonal mass term of the companion *The Dirac Equation in Biquaternionic Form* and is treated in the spin-$1/2$ articles; the massless kernel above is the common structure those articles specialise.
 
 ## The Shifted Gradient and the Generalized Maxwell–Dirac Equation
 

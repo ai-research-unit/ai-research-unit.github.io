@@ -44,7 +44,7 @@ article.
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$. An element
 is $\tilde Q=Q_0e_0+\mathbf Q$; the natural conjugation is ${}^{\natural}$, the Hermitian star
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$,
-the material one $\mathbb{M}_-$. The ordinary product is juxtaposition $\tilde P\tilde Q$, the quaternionic
+the material one $\mathbb{M}_-$. The general plain bilinear product is juxtaposition $\tilde P\tilde Q$, the quaternionic
 product is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, and the **general quaternionic bilinear form** is
 $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, which is also the coefficient of this block; the
 **general plain bilinear form** is $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$,

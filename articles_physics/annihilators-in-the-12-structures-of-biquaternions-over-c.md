@@ -74,7 +74,7 @@ $\tilde P$ is a bijection, so its annihilator is the origin alone. On the cone t
 rank and the annihilator is a nonzero subspace. The physical statement is the usual one for maps: a
 process is reversible if and only if it loses nothing, and the dimension of the annihilator is the number
 of independent inputs the process sends to zero. The corpus's operator articles read the rank of the
-multiplications directly, in *The Operators of the Ordinary Product: One-Sided, Two-Sided and the
+multiplications directly, in *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the
 Sandwich* and *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*.
 
 **The annihilator lies in the zero-divisor set.** When $\tilde P\neq0$ kills $\tilde X\neq0$, the element
@@ -228,7 +228,7 @@ invertible. On the cone each kernel is a complex plane; the two planes share the
 $\mathbb{C}\tilde P^{\natural}$ and differ in their second generator, so left and right composition by a
 lightlike element kill different directions. That is the chirality of the composition, the same one-sided
 action the internal symmetry carries. *Annihilators of the General Plain Algebra* owns the planes, and
-*The Operators of the Ordinary Product* the operator.
+*The Operators of the General Plain Bilinear Product* the operator.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
 
@@ -688,7 +688,7 @@ the roots of zero, the idempotents and the nilpotents of the rest of the section
 
 - The mathematics companion: *Annihilators in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve computations, the two-sided theorem and the four general planes.
 - The zero-divisor context: *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*; *The Light Cone as the Biquaternion Zero-Divisor Cone*.
-- The operators and the kernels: *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*; *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*; *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; *Observables, Gauge Generators and the Chirality of the Internal Action*; *The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions*.
+- The operators and the kernels: *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*; *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*; *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; *Observables, Gauge Generators and the Chirality of the Internal Action*; *The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions*.
 - The scalar-valued and bracket rows: *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*; *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*; *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The States the Indefinite Metric Cannot Normalise*.
 - The kernel in the quantum corpus: *The Index Theorem and the Zero-Mode Count in Biquaternionic Form*; *The GNS Construction in the Biquaternion Framework*; *No-Cloning and the Algebraic Obstruction in Biquaternionic Form*; *The Born Rule as a Trace Formula — Derivation and Comparison*; *The Centre of the Biquaternion Algebra as the Classical Sector*; *Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form*.
 - The kernel as a structural identity: *Gauge Curvature and the Bianchi Identity in Biquaternionic Form*, for the Bianchi identity as the operator Jacobi identity and the annihilating role of associativity; *The Skyrme Model and the Topological Baryon in Biquaternionic Form*, for the topological current conserved identically by antisymmetry and Maurer–Cartan flatness, the off-shell kernel whose charge is a degree.

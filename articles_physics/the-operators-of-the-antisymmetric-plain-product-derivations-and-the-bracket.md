@@ -9,7 +9,7 @@ $$
 \tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q,
 $$
 
-the antisymmetrisation of the ordinary product, of scalar part zero and values in the vector subspace
+the antisymmetrisation of the general plain bilinear product, of scalar part zero and values in the vector subspace
 $\mathrm{Vect}(\mathbb{B})$, and the operators of the block are the maps that attach an element to an argument:
 
 $$
@@ -162,7 +162,7 @@ the Gram matrix, the radical and the signature are its first section, and the in
 $\kappa(\operatorname{ad}_{\tilde P}\tilde X,\tilde Q)+\kappa(\tilde X,\operatorname{ad}_{\tilde P}\tilde Q)=0$ is
 its invariance theorem.
 
-**Read as a physical statement.** The band carries its own bilinear form, not imported from the ordinary product: the
+**Read as a physical statement.** The band carries its own bilinear form, not imported from the general plain bilinear product: the
 invariant pairing of a Lie algebra is the trace of two adjoint actions, here the complex Euclidean form on the vector
 subspace, negative on the real directions and positive on the imaginary ones. The sign as the compact-non-compact
 split is *Angular Momentum and the Lie Algebra of the Material Sector*; this article uses the form only as the pairing

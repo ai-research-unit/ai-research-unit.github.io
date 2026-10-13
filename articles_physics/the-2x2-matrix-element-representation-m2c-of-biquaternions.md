@@ -498,6 +498,8 @@ The determinant is read as a **volume**: $\det \mathsf{M}_2(\tilde{Q})=N(\tilde{
 
 Read as a **phase fibre**, the unit spinors of the representation are the three-sphere over the Bloch sphere, and the $U(1)$ that fixes a state's ray is the central phase, so the phase of the framework is a fibre over the state space and its holonomy is the geometric phase. Boundary: the bundle, the invariant and the phase are owned by *The Hopf Fibration and the Biquaternion Gauge Bundle* and by *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*; the interpretation records the smallest matrix image of the fibre and adds no topology.
 
+The trace factor is the count of the two chiralities. The factor $\mathrm{Tr}(e_0)=2$ of the trace convention is the count of the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$, that is, of the two matrix columns $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, and therefore of the two chiralities, so every pairing of the series carries the two-slot structure as a factor of two. Boundary: the factor is a property of the isomorphism $\mathsf{M}_2$, and the count is of ideals and not of particles.
+
 ## Summary
 
 The matrix representation of the biquaternion algebra is the isomorphism $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ given by $\mathsf{M}_2(e_0) = I_2$ and the three basis matrices asserted above, with $\mathsf{M}_2(i) = i\,\mathsf{M}_2(e_0)$ on the central scalar. The images of the Hermitian units, $\mathsf{M}_2(ie_k) = i\,\mathsf{M}_2(e_k)$, are the three Hermitian basis matrices named in the remark above.
