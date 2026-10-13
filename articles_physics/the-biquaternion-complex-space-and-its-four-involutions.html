@@ -169,23 +169,60 @@ $$</p>
 <p><strong>The local complex structure.</strong> The identification of which direction is the scalar imaginary is not rigid. In a material medium the map from physical time to the imaginary scalar direction carries the local scale $c = 1/\sqrt{\epsilon\mu}$, so the complex structure, and with it the dictionary above, varies from point to point, in the same spirit as the metric of general relativity; the vacuum, $c = c_0$, is the limiting member of the family and the case read here. The owner is <em>The Local Complex Structure and the Speed of Light</em>.</p>
 <p><strong>The anti-Hermitian convention.</strong> The material sector is the <strong>anti-Hermitian</strong> subspace, fixed by the reversal of the involution list below, where the more familiar convention takes the Hermitian subspace as the real one. The two differ by the central factor $i$ and there is no mathematical error either way; the corpus fixes the anti-Hermitian one because the material sector is the fixed space of the algebra's real structure and carries the four-positions and the four-vectors. A reader who restores the Hermitian convention will find the whole corpus inverted.</p>
 <h2 id="the-four-involutions">The Four Involutions</h2>
-<p>The algebraic content of the article is the four conjugations. The <strong>quaternion conjugation</strong> ${}^{\natural}$, the <strong>complex conjugation</strong> $\bar{\cdot}$, the <strong>Hermitian conjugation</strong> ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the <strong>anti-Hermitian conjugation</strong> ${}^{\flat} = -{}^{*}$ act on the coordinates by</p>
-<p>$$
-\tilde Q^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3,
-$$</p>
-<p>$$
-\bar{\tilde Q} = \bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3,
-$$</p>
-<p>$$
-\tilde Q^{*} = \bar Q_0 e_0 - \bar Q_1 e_1 - \bar Q_2 e_2 - \bar Q_3 e_3,
-$$</p>
-<p>$$
-\tilde Q^{\flat} = -\bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3 .
-$$</p>
-<p>The natural conjugation keeps the scalar coordinate and negates the three vector ones; the bar conjugates the four complex coefficients and touches no basis element; the star does both; the flat is the negative of the star. Three of the four are written with one <strong>sign vector</strong> and the fourth with its negative,</p>
-<p>$$
-\varepsilon = (1, -1, -1, -1), \qquad (\tilde Q^{\natural})_\mu = \varepsilon_\mu Q_\mu, \qquad (\tilde Q^{*})_\mu = \varepsilon_\mu \bar Q_\mu, \qquad (\bar{\tilde Q})_\mu = \bar Q_\mu .
-$$</p>
+<p>The algebraic content of the article is the four conjugations. The <strong>complex conjugation</strong> $\bar{\cdot}$, the <strong>quaternion conjugation</strong> ${}^{\natural}$, the <strong>Hermitian conjugation</strong> ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the <strong>anti-Hermitian conjugation</strong> ${}^{\flat} = -{}^{*}$ act on the coordinates $\tilde Q = \sum_\mu Q_\mu e_\mu$ by the following table. Write $\varepsilon = (1, -1, -1, -1)$ for the <strong>sign vector</strong> that keeps the scalar direction and negates the three vector ones.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Involution</th>
+<th>Symbol</th>
+<th>Conjugate Element</th>
+<th>Sign-Vector Rule</th>
+<th>$\mathbb{C}$-Linear</th>
+<th>$\mathbb{C}$-Antilinear</th>
+<th>$\mathbb{R}$-Linear</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complex Conjugation</td>
+<td>$\bar{\cdot}$</td>
+<td>$\bar{\tilde Q} = \bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3$</td>
+<td>$(\bar{\tilde Q})_\mu = \bar Q_\mu$</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Quaternion Conjugation</td>
+<td>${}^{\natural}$</td>
+<td>$\tilde Q^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$</td>
+<td>$(\tilde Q^{\natural})_\mu = \varepsilon_\mu Q_\mu$</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Hermitian Conjugation</td>
+<td>${}^{*} = \bar{\cdot}\circ{}^{\natural}$</td>
+<td>$\tilde Q^{*} = \bar Q_0 e_0 - \bar Q_1 e_1 - \bar Q_2 e_2 - \bar Q_3 e_3$</td>
+<td>$(\tilde Q^{*})_\mu = \varepsilon_\mu \bar Q_\mu$</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Anti-Hermitian Conjugation</td>
+<td>${}^{\flat} = -{}^{*}$</td>
+<td>$\tilde Q^{\flat} = -\bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3$</td>
+<td>$(\tilde Q^{\flat})_\mu = -\varepsilon_\mu \bar Q_\mu$</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three linearity properties are collected in the last columns of the table above: the quaternion conjugation is the only $\mathbb{C}$-<strong>linear</strong> one of the four, the other three are $\mathbb{C}$-<strong>antilinear</strong>, and all four are $\mathbb{R}$-linear, since conjugating a complex coefficient is an $\mathbb{R}$-linear operation.</p>
+<p>The natural conjugation keeps the scalar coordinate and negates the three vector ones; the bar conjugates the four complex coefficients and touches no basis element; the star does both; the flat is the negative of the star. In sign-vector form, the natural conjugation and the star carry $+\varepsilon$, the anti-Hermitian conjugation carries $-\varepsilon$, and the bar carries no sign vector at all, since it touches no basis element.</p>
 <p><strong>Each is an involution.</strong> Applying any one of the four twice returns the element, so each cuts the algebra into a fixed space and an anti-fixed space, and each of the two is a real vector subspace.</p>
 <p><strong>One is linear, three are antilinear.</strong> The natural conjugation is $\mathbb{C}$-<strong>linear</strong>, the natural conjugate of $\lambda\tilde Q$ being $\lambda\tilde Q^{\natural}$ for every complex scalar $\lambda$; the bar, the star and the flat are $\mathbb{C}$-<strong>antilinear</strong>. Which factor of the tensor product a map touches decides it: the natural conjugation touches the quaternion factor and leaves the complex scalars alone, the bar touches the scalars and leaves the units alone, and the star touches both. The linearity or antilinearity of each is what the real reading <em>Biquaternions as a Vector Space over $\mathbb{R}$</em> records, and the two classes are used throughout the corpus.</p>
 <p><strong>The group.</strong> The identity, the natural, the bar and the star close into a group of order four,</p>
@@ -202,7 +239,7 @@ $$</p>
 \mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+, \qquad \mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\}, \qquad \mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = +\tilde Q\},
 $$</p>
 <p>the eigenspace split of the Hermitian conjugation, and it is also the split into the fixed and anti-fixed spaces of the reversal, which is the star with the central sign. The <strong>material sector</strong> $\mathbb{M}_-$ is the anti-Hermitian one, where the scalar coefficient is imaginary and the three vector coefficients are real; it carries the four-position $i c t\, e_0 + \mathbf{x}$ and the four-vectors, and it is the fixed space of the algebra's real structure. The <strong>informational sector</strong> $\mathbb{M}_+$ is the Hermitian one, where the scalar coefficient is real and the three vector coefficients are imaginary; it carries the states and the observables, and it is the fixed space of the star. Every one of the four involutions preserves both sectors, which is why the two can carry two different physical readings without a cross-term; the maps that do cross between them are built from the central unit and are <em>Cross-Sector Coupling in the Biquaternion Framework</em>.</p>
-<p>On the physical dictionary the sectors read as the two ends of the table above: the material sector has three real spatial directions and one imaginary temporal one, $\mathbb{M}_-\ni i c t\, e_0 + \mathbf{x}$, and the informational sector three imaginary spatial directions and one real temporal one, $\mathbb{M}_+\ni c t'\, e_0 + i\mathbf{x}'$. The physics of the material sector is <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, the physics of the informational sector <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, and the sector split in the framework <em>Introduction to the Biquaternion Universe</em>.</p>
+<p>On the physical dictionary the sectors read as the two ends of the table above: the material sector has three real spatial directions and one imaginary temporal one, $\mathbb{M}_-\ni i c t\, e_0 + \mathbf{x}$, and the informational sector three imaginary spatial directions and one real temporal one, $\mathbb{M}_+\ni c t'\, e_0 + i\mathbf{x}'$. The physics of the material sector is <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, the physics of the informational sector <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, and the sector split in the framework <em>Introduction to the Biquaternion Universe</em>. The informational sector is written in quantum physics with the letter of an operator, $\mathbb{M}_+ \ni \tilde{H} = h_0e_0 + ih_1e_1 + ih_2e_2 + ih_3e_3$ with real $h_\mu$: the same element as $ct'\,e_0 + i\mathbf{x}'$, under coefficient names that record its role as a Hermitian operator, and the Pauli expansion $h_0I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$ under the module dictionary of <em>The Native Qubit and the Defining Module of the Biquaternion Algebra</em>.</p>
 <h2 id="physical-readings">Physical Readings</h2>
 <p>Two readings of the space and of the involutions belong to this article: the sector split is the eigenspace split of one involution, and the four involutions are the algebra's own discrete structure.</p>
 <p><strong>The sectors are the eigenspaces of the star.</strong> The split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ is exactly the split into the eigenspaces of the Hermitian conjugation for the eigenvalues $-1$ and $+1$, so the corpus's two sectors are the two halves of one involution and not two spaces placed side by side. The material sector is at the same time the fixed space of the reversal, the star with the central sign, which is the algebra's real structure; that is the algebra's reason for carrying the four-positions and the four-vectors, and it is why the corpus's convention is the anti-Hermitian one and not the Hermitian one.</p>

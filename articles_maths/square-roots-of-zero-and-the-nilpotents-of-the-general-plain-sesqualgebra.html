@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-zero-and-the-nilpotents-of-the-general-plain-sesqualgebra"><strong>Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The general plain sesqualgebra is the operation $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ on the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ (<em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>, <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>). This article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi$ with</p>
+<p>$$
+\tilde\Xi\star\tilde\Xi=0 ,
+$$</p>
+<p>the square-zero elements, and the second is the <strong>nilpotents</strong> of the block, the nonzero elements $\tilde\Upsilon$ with a vanishing power,</p>
+<p>$$
+\tilde\Upsilon^{\star k}=0\quad\text{for some }k\geq1,
+$$</p>
+<p>the power being the left-nested reading of <em>Definitions for the Study of the 12 Algebraic Structures</em>, $\tilde X^{\star k}=\bigl(\cdots(\tilde X\star\tilde X)\star\tilde X\cdots\bigr)$, which for the block is $\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$. The two subjects are one subject: a root of $0$ is a square-zero element, that is a nilpotent of <strong>index two</strong>, and the nilpotents of the block are exactly the roots of $0$ that the emptiness of the root set pushes to the <strong>next index</strong>.</p>
+<p>The answer is not the parent's. The block has <strong>no nonzero square-zero element</strong>, so the root set of $0$ is empty and no nilpotent has index two; but it <strong>has</strong> nilpotents, of index three, and they are exactly the parent's <strong>pure zero divisors</strong>, the elements with vanishing scalar coordinate and isotropic vector part. The block therefore keeps the parent's nilpotent <strong>set</strong> — the pure cone $\{\Upsilon_0=0,\ (\boldsymbol\Upsilon,\boldsymbol\Upsilon)=0\}$ — and changes its <strong>index</strong>, from two to three, because its square is the Hermitian square $\tilde X\tilde X^{*}$ instead of the plain square $\tilde X^{2}$. The non-pure zero divisors of the parent are zero divisors of the block and are <strong>not</strong> nilpotents of it, so the implication of the parent, "the pure family is the nilpotent family", holds here in a transmuted form: the pure family is the nilpotent family and the index is three.</p>
+<p><strong>The results.</strong> The left-nested powers of the block are conjugate-linear iterations, $\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$, so the index is a property of the pair $(\mathsf{M}_2(\tilde X),\mathsf{M}_2(\tilde X)^{\dagger})$ and can exceed two. The scalar part of the square is $\sum_\mu\lvert X_\mu\rvert^{2}$, which vanishes only at the origin, so the root set of $0$ is empty and there is no nonzero square-zero element; the nonzero nilpotents are exactly the parent's pure zero divisors, the elements $\Upsilon_0=0$ with $C(\tilde\Upsilon)=(\boldsymbol\Upsilon,\boldsymbol\Upsilon)=0$, of index exactly three, $\tilde\Upsilon^{\star2}\neq0$ and $\tilde\Upsilon^{\star3}=0$. The nilpotent set is the nonzero pure isotropic cone, of complex dimension two, and it is the parent's set with the index changed from two to three; the non-pure zero divisors are not nilpotent.</p>
+<p><strong>Placement.</strong> The article is the sixth entry of the <em>Common Theory</em> section of the block, after the roots of one and the idempotents and before the general value. It uses the product and the class of the introduction, the square and its scalar part from <em>Norm and Invertibility in the General Plain Sesqualgebra</em>, the reduction of the square from <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em>, the zero-divisor criterion from <em>Zero Divisors of the General Plain Sesqualgebra</em>, and the matrix model.</p>
+<p><strong>Boundaries.</strong> The product, its class and its placement are <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>; the relative definition of the power, the square-zero element, the nilpotent and the index of nilpotency is <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>The Nilpotent</em>. The square-zero set of the block and of the four general products is <em>Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>; the nilpotents and the two families of the parent are <em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em> and <em>Zero Divisors of the General Plain Algebra</em>; the matrix model that carries the powers is <em>The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>; the idempotents that the roots of $+1$ produce are <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em>. Nothing topological and nothing metric appears.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$ and $Q_\mu\in\mathbb{C}$; the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_0}-\overline{\mathbf Q}$. The product is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, and the <strong>central square</strong> is $C(\tilde Q)=\sum_\mu Q_\mu^{2}=Q_0^{2}+(\mathbf Q,\mathbf Q)$. An element is <strong>pure</strong> when $Q_0=0$, that is when it lies in the vector part $\mathbb{C}\otimes\mathbb{R}^{3}$. A nilpotent is written $\tilde\Upsilon$ (§<em>The Nilpotent Convention</em> of <em>Conventions in Mathematics</em>), with $\tilde\Upsilon=\Upsilon_0e_0+\boldsymbol\Upsilon$; a general element whose powers are at stake keeps the letter $\tilde X$.</p>
+<p>The equations name a product, so the powers, the square-zero elements and the nilpotents are relative to it. Throughout this article the product is the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; the general definition of the nilpotent is §<em>The Nilpotent</em> of <em>Definitions for the Study of the 12 Algebraic Structures</em>. The origin is a nilpotent, the <strong>trivial</strong> one, and the article is concerned with the nonzero ones.</p>
+<h2 id="the-roots-of-zero">The Roots of Zero</h2>
+<p><strong>The block has no root of $0$: the equation $\tilde\Xi\star\tilde\Xi=0$ has the single solution $\tilde\Xi=0$, so the root set of $0$ is empty and there is no nonzero square-zero element; the nilpotents of the block are at the next index, and they are the pure zero divisors.</strong></p>
+<p>A <strong>root of $0$</strong> is a nonzero element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi\star\tilde\Xi=0$, that is a nonzero square-zero element; the equation is the block's, the Hermitian square $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}$.</p>
+<p><strong>Theorem (no root of $0$; no nonzero square-zero element).</strong> The equation $\tilde\Xi\star\tilde\Xi=0$ has the single solution $\tilde\Xi=0$, so the block has no nonzero square-zero element, no nilpotent of index two, and the root set of $0$ is empty.</p>
+<p><em>Proof.</em> The scalar part of the square is $\mathrm{Sc}(\tilde\Xi\star\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ by the reduction of <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em>, §<em>The Reduction</em>, and it vanishes only when every coordinate vanishes. A root is required to be nonzero, so the root set is empty; the same computation is the statement that the square-zero set is $\{0\}$. In the matrix model the square is $AA^{\dagger}$, positive semidefinite, whose vanishing forces $A=0$; the same statement is <em>Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, where the square-zero set of the general plain sesquilinear product is the origin alone.</p>
+<p><strong>Remark (square-zero and nilpotent are not the same here).</strong> The block has no square-zero element, so it has no nilpotent of <strong>index two</strong>; its nilpotents have index <strong>three</strong>, and they are exactly the pure zero divisors, the elements with $\Upsilon_0=0$ and $(\boldsymbol\Upsilon,\boldsymbol\Upsilon)=0$. The empty root set of $0$ is therefore not the empty nilpotent set: the root of $0$ is the square-zero element, and the block has none, while the block has plenty of nilpotents at the next index. The distinction between <em>square-zero</em> and <em>nilpotent</em> is thus live in the block and not a coincidence of definitions.</p>
+<p><strong>Remark (the pure zero divisors are not square-zero).</strong> The parent's pure zero divisors, $\Xi_0=0$ with $(\mathbf\Xi,\mathbf\Xi)=0$, are its nonzero nilpotents of index two; the block's square does not vanish on them, $\tilde\Xi\star\tilde\Xi=H(\tilde\Xi)e_0+\mathrm{Vect}(\tilde\Xi\tilde\Xi^{*})\neq0$, as <em>Zero Divisors of the General Plain Sesqualgebra</em> records, and the block's nilpotency index is raised to three. The root set of $0$ is empty although the zero-divisor set is not, and although the nilpotent set is not: the three classes of the block are distinct and they must not be conflated.</p>
+<p><strong>Remark (the parent, the block and the sibling).</strong> The parent has square-zero elements, the pure isotropic cone; the block has none but the origin, and its square-zero set is the origin alone. This is the one clause on which the block and the parent separate at the level of the square, and it is the reason the block's index is three: a pure isotropic element, square-zero for the parent, has a non-vanishing Hermitian square for the block and vanishes only at the third power. The sibling symmetric plain sesqualgebra also has no <strong>nonzero</strong> square-zero element, and it has index-three nilpotents whose square is the nonzero central element $\bigl(\sum_\mu\lvert\Upsilon_\mu\rvert^{2}\bigr)e_0$ (written $H(\tilde\Upsilon)e_0$ in that block, where $H$ is the algebraic norm of the block); the block's index-three nilpotents have a <strong>non-central</strong> square $\tilde\Upsilon\tilde\Upsilon^{*}$, and that is the difference between the two siblings.</p>
+<h2 id="the-powers-of-the-block">The Powers of the Block</h2>
+<p>The left-nested powers of the block are conjugate-linear iterations, $\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$, so the index is a property of the pair $(\mathsf{M}_2(\tilde X),\mathsf{M}_2(\tilde X)^{\dagger})$ and not of the plain square, and it can be larger than two.</p>
+<p><strong>Proposition (the powers are conjugate-linear iterations).</strong> For every $\tilde X$ and every $k\geq1$,</p>
+<p>$$
+\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1},
+$$</p>
+<p>so $\tilde X^{\star2}=\tilde X\tilde X^{*}$, $\tilde X^{\star3}=\tilde X\tilde X^{*}\tilde X^{*}$, and in the matrix model $\mathsf{M}_2(\tilde X^{\star k})=\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde X)^{\dagger(k-1)}$.</p>
+<p><em>Proof.</em> By induction on the left-nested reading: $\tilde X^{\star(k+1)}=\tilde X^{\star k}\star\tilde X=\tilde X^{\star k}\tilde X^{*}=\tilde X(\tilde X^{*})^{k-1}\tilde X^{*}=\tilde X(\tilde X^{*})^{k}$. The matrix display is the multiplicativity $\mathsf{M}_2(\tilde P\star\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ and $\mathsf{M}_2(\tilde X^{*})=\mathsf{M}_2(\tilde X)^{\dagger}$.</p>
+<p><strong>Remark (why the index can be larger than two).</strong> The square of the block is $\tilde X\tilde X^{*}$, the Hermitian square, and the iterated powers are the products of $\tilde X$ with the successive powers of the conjugate transpose. The index is therefore a property of the pair $(\mathsf{M}_2(\tilde X),\mathsf{M}_2(\tilde X)^{\dagger})$ and not of the plain square, and it can be larger than two even when the plain element is a square-zero element of index two.</p>
+<h2 id="the-criterion-of-the-nilpotent">The Criterion of the Nilpotent</h2>
+<p><strong>For a nonzero element the following are equivalent: it is a nilpotent of the block, $\tilde\Upsilon^{\star3}=0$, it is pure with vanishing central square ($\Upsilon_0=0$, $C(\tilde\Upsilon)=0$), and it is a pure zero divisor of the plain product; the index is then exactly three, $\tilde\Upsilon^{\star2}\neq0$.</strong></p>
+<p><strong>Theorem (the nilpotents are the pure zero divisors, of index three).</strong> For $\tilde\Upsilon\neq0$ the following are equivalent:</p>
+<ol>
+<li>$\tilde\Upsilon$ is a nilpotent of the block;</li>
+<li>$\tilde\Upsilon^{\star3}=0$;</li>
+<li>$\tilde\Upsilon$ is pure and of vanishing central square: $\Upsilon_0=0$ and $C(\tilde\Upsilon)=0$;</li>
+<li>$\tilde\Upsilon$ is a pure zero divisor of the plain product.</li>
+</ol>
+<p>When they hold, the index of nilpotency is exactly three: $\tilde\Upsilon^{\star2}\neq0$.</p>
+<p><em>Proof.</em> Write $A=\mathsf{M}_2(\tilde\Upsilon)$, so that $\tilde\Upsilon^{\star k}=0$ is $A(A^{\dagger})^{k-1}=0$ and $\det A=C(\tilde\Upsilon)$, $\operatorname{Tr}A=2\Upsilon_0$. First, if $A$ is invertible then $\det\bigl(A(A^{\dagger})^{m}\bigr)=(\det A)\,\overline{(\det A)}^{m}$ has modulus $\lvert\det A\rvert^{m+1}\neq0$, so no nilpotent is regular and $\operatorname{rank}A\leq1$, that is $\det A=0$; with $\tilde\Upsilon\neq0$ this is $\operatorname{rank}A=1$. Write $A=\sigma\,\mathbf u\mathbf v^{\dagger}$ with $\sigma>0$ and $\mathbf u,\mathbf v$ unit; then $A(A^{\dagger})^{m}=\sigma^{m+1}(\mathbf u^{\dagger}\mathbf v)^{m-1}\mathbf u\mathbf u^{\dagger}$, whose vanishing for some $m$ is $\mathbf u^{\dagger}\mathbf v=0$, and $\operatorname{Tr}A=\sigma\mathbf v^{\dagger}\mathbf u=\sigma\overline{\mathbf u^{\dagger}\mathbf v}$. Hence $A(A^{\dagger})^{m}=0$ for some $m$ if and only if $\operatorname{Tr}A=0$, and then $m=2$ already gives $A(A^{\dagger})^{2}=0$, that is $\tilde\Upsilon^{\star3}=0$; the case $m=1$ is impossible because $AA^{\dagger}=\sigma^{2}\mathbf u\mathbf u^{\dagger}\neq0$. Now $\operatorname{Tr}A=0$ is $\Upsilon_0=0$, and $\operatorname{rank}A=1$ is $C(\tilde\Upsilon)=0$; the equivalence of the first three statements follows, and the fourth is the description of the pure family of the parent. Finally $\tilde\Upsilon^{\star2}=\tilde\Upsilon\tilde\Upsilon^{*}$ has matrix $AA^{\dagger}$, of rank one, so it is nonzero: the index is three and not two.</p>
+<p><strong>Direct proof of the pure case.</strong> When $\Upsilon_0=0$ the element is $\tilde\Upsilon=\sum_{k=1}^{3}\Upsilon_ke_k$, its conjugate transpose is $\tilde\Upsilon^{*}=-\overline{\tilde\Upsilon}$, and the plain square of a pure element is $\tilde\Upsilon^{2}=-C(\tilde\Upsilon)e_0$; so if in addition $C(\tilde\Upsilon)=0$ then $\tilde\Upsilon^{2}=0$ and $\overline{\tilde\Upsilon}^{2}=\overline{\tilde\Upsilon^{2}}=0$, whence $\tilde\Upsilon^{\star3}=\tilde\Upsilon(\tilde\Upsilon^{*})^{2}=\tilde\Upsilon\overline{\tilde\Upsilon}^{2}=0$. The witness $\tilde\Upsilon=e_1+ie_2$ has $\Upsilon_0=0$, $C(\tilde\Upsilon)=1+i^{2}=0$ and $\tilde\Upsilon^{\star3}=0$, while $\tilde\Upsilon^{\star2}=2e_0+2ie_3\neq0$.</p>
+<p><strong>Remark (the square of an index-three nilpotent).</strong> The sibling symmetric plain sesqualgebra has index-three nilpotents whose square is the nonzero central element $H(\tilde\Upsilon)e_0$, where $H$ is its algebraic norm; the block's index-three nilpotents have the <strong>non-central</strong> square $\tilde\Upsilon\tilde\Upsilon^{*}$, whose scalar part is $H(\tilde\Upsilon)$, and that is the difference between the two siblings on the same set.</p>
+<h2 id="the-nilpotent-set">The Nilpotent Set</h2>
+<p><strong>The nilpotent set of the block is the nonzero pure isotropic cone $\{\tilde\Upsilon\neq0:\Upsilon_0=0,\ (\boldsymbol\Upsilon,\boldsymbol\Upsilon)=0\}$, of complex dimension two; every nilpotent is a two-sided zero divisor, and the non-pure zero divisors are not nilpotent.</strong></p>
+<p><strong>Corollary (the set).</strong> The nilpotent set of the block is</p>
+<p>$$
+\mathcal{N}_\star=\{\tilde\Upsilon\neq0:\ \Upsilon_0=0,\ (\boldsymbol\Upsilon,\boldsymbol\Upsilon)=0\},
+$$</p>
+<p>the nonzero elements of the <strong>pure isotropic cone</strong>, of complex dimension two, which is the pure zero-divisor cone of the parent. Every nilpotent is a two-sided zero divisor, and the non-pure zero divisors, the nonzero complex multiples of the nontrivial idempotents with $\Upsilon_0\neq0$, are <strong>not</strong> nilpotent.</p>
+<p><em>Proof.</em> The first display is the criterion. The set is the isotropic quadric of the two-complex-dimensional vector part, of complex dimension two, and it is a subset of the zero-divisor set $\mathcal{C}\setminus\{0\}$ of <em>Zero Divisors of the General Plain Sesqualgebra</em>. A non-pure zero divisor has $\Upsilon_0\neq0$, so it fails the criterion and is not nilpotent.</p>
+<p><strong>Remark (the two families of the parent, re-read).</strong> The parent partitions its zero divisors into the pure family, which is its nilpotent family of index two, and the non-pure family, which is not nilpotent. The block inherits the partition and moves the nilpotent family from the index two to the index three: the partition is the same, the criterion $\Upsilon_0=0$ is the same, the index is not. The <strong>index of nilpotency is therefore a product-relative notion</strong> even on the same set, and the block is the clean illustration: the same elements, the same cone, the same partition, and the index changed by one. The non-pure zero divisors are the nonzero complex multiples of the nontrivial idempotents, which are the roots of $+1$ of the block read through the halving map of <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em>.</p>
+<h2 id="the-comparison-with-the-parent-and-with-the-sibling">The Comparison with the Parent and with the Sibling</h2>
+<p><strong>The block keeps the parent's nilpotent set, the pure isotropic cone, and changes the index from two to three; the parent's square-zero set is that cone and the block's is $\{0\}$ alone, and the block's index-three nilpotents have a non-central square where the symmetric sibling's have a central one.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>clause</th>
+<th>general plain algebra</th>
+<th>general plain sesqualgebra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>square</td>
+<td>$\tilde X^{2}$, bilinear, central</td>
+<td>$\tilde X\star\tilde X=\tilde X\tilde X^{*}$, Hermitian</td>
+</tr>
+<tr>
+<td>square-zero set</td>
+<td>the pure isotropic cone</td>
+<td>$\{0\}$ alone</td>
+</tr>
+<tr>
+<td>nilpotent set</td>
+<td>the pure isotropic cone, index two</td>
+<td>the pure isotropic cone, index three</td>
+</tr>
+<tr>
+<td>index</td>
+<td>two, always</td>
+<td>three, always</td>
+</tr>
+<tr>
+<td>nilpotent implies zero divisor</td>
+<td>yes</td>
+<td>yes, and every nilpotent is in the pure family</td>
+</tr>
+<tr>
+<td>non-pure zero divisors</td>
+<td>not nilpotent</td>
+<td>not nilpotent</td>
+</tr>
+</tbody>
+</table></div>
+<p>The parent's <strong>set</strong> is kept and the parent's <strong>index</strong> is not: this is the whole content of the article, and it is the sharpest illustration in the corpus of the sentence of <em>Definitions for the Study of the 12 Algebraic Structures</em> that the index of nilpotency is a property of the product and not of the element.</p>
+<h2 id="summary">Summary</h2>
+<p>The powers of the general plain sesqualgebra are $\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$, and the block has <strong>no nonzero square-zero element</strong>: the Hermitian square $\tilde X\star\tilde X=\tilde X\tilde X^{*}$ has scalar part $\sum_\mu\lvert X_\mu\rvert^{2}$, which vanishes only at the origin, so no nilpotent has index two and the root set of $0$ is empty. The origin is the <strong>trivial</strong> nilpotent, and the nonzero nilpotents are exactly the parent's <strong>pure zero divisors</strong>: with $\tilde\Upsilon$ a nilpotent, $\Upsilon_0=0$ and $C(\tilde\Upsilon)=(\boldsymbol\Upsilon,\boldsymbol\Upsilon)=0$, so the nilpotent set is the pure isotropic cone $\{\Upsilon_0=0,\ (\boldsymbol\Upsilon,\boldsymbol\Upsilon)=0\}$, of complex dimension two. The index is <strong>exactly three</strong>: $\tilde\Upsilon^{\star2}=\tilde\Upsilon\tilde\Upsilon^{*}\neq0$ and $\tilde\Upsilon^{\star3}=0$, proved directly for the pure elements and proved in the $2\times2$ matrix model, where the nilpotents are the rank-one traceless matrices and the condition is $\operatorname{Tr}=0$, that is $\Upsilon_0=0$. The non-pure zero divisors of the parent are zero divisors of the block and not nilpotents of it; the nilpotent set, the zero-divisor partition and the criterion $\Upsilon_0=0$ are inherited, and the index is changed from two to three.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$</td>
+<td>the product of the block</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon=\Upsilon_0e_0+\boldsymbol\Upsilon$</td>
+<td>a nilpotent of the block</td>
+</tr>
+<tr>
+<td>$\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$</td>
+<td>the left-nested power</td>
+</tr>
+<tr>
+<td>$\tilde X\star\tilde X=\tilde X\tilde X^{*}$</td>
+<td>the Hermitian square</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde X\star\tilde X)=\sum_\mu\lvert X_\mu\rvert^{2}$</td>
+<td>the scalar part, definite: no nonzero square-zero element</td>
+</tr>
+<tr>
+<td>$\mathcal{R}(0)=\varnothing$</td>
+<td>no root of $0$</td>
+</tr>
+<tr>
+<td>$C(\tilde X)=\sum_\mu X_\mu^{2}=X_0^{2}+(\mathbf X,\mathbf X)$</td>
+<td>the central square</td>
+</tr>
+<tr>
+<td>$\Upsilon_0=0,\ (\boldsymbol\Upsilon,\boldsymbol\Upsilon)=0$</td>
+<td>the criterion of the nilpotent, the pure isotropic cone</td>
+</tr>
+<tr>
+<td>$\mathcal{N}_\star$</td>
+<td>the nilpotent set, the nonzero pure isotropic cone, complex dimension two</td>
+</tr>
+<tr>
+<td>index three</td>
+<td>$\tilde\Upsilon^{\star2}\neq0$, $\tilde\Upsilon^{\star3}=0$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde X^{\star k})=\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde X)^{\dagger(k-1)}$</td>
+<td>the powers in the matrix model, rank-one traceless for the nilpotents</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the General Plain Sesqualgebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md</code>), for the product, its class and the involution in the second slot.</li>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), for the relative definition of the power, the square-zero element, the nilpotent and the index of nilpotency.</li>
+<li><em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-sesqualgebra.md</code>), for the reduction of the square whose scalar part excludes the roots of $0$, and for the idempotents that the non-pure zero divisors are the multiples of.</li>
+<li><em>Norm and Invertibility in the General Plain Sesqualgebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-plain-sesqualgebra.md</code>), for the square and the definiteness of its scalar part.</li>
+<li><em>Zero Divisors of the General Plain Sesqualgebra</em> (<code>articles_maths/zero-divisors-of-the-general-plain-sesqualgebra.md</code>), for the zero-divisor set and the pure and non-pure families that the nilpotents refine.</li>
+<li><em>Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the square-zero set of the block, the origin alone.</li>
+<li><em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em> (<code>articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md</code>), for the parent's nilpotents, the pure isotropic cone of index two.</li>
+<li><em>The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> (<code>articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md</code>), for the model in which the nilpotents are the rank-one traceless matrices.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

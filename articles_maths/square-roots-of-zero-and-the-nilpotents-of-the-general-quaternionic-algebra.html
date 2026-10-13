@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra"><strong>Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article classifies the square roots of the central value $0$ in the general quaternionic bilinear product, and then the <strong>nilpotents</strong> of that product, the elements some power of which vanishes in the same product.</p>
+<p>Both notions name a product, and throughout this article the product is the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ of the general quaternionic algebra, the $\mathrm{GQA}$ of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>; the square of the article is the square of $\star$, and an unqualified <em>nilpotent</em> is a nilpotent of $\star$. The general definition of the square and of the roots of a central value is <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>Powers, the Square and the Roots</em>, and the general definition of a nilpotent is §<em>The Nilpotent</em> of the same article.</p>
+<p>The whole article is settled by one computation, the square of every element being the central element $N(\tilde Q)e_0$. The root equation of the value $0$ therefore reads $N(\tilde Q)=0$, which is the criterion for a zero divisor, and the nilpotent equation is decided by the same scalar: a vanishing cube already forces a vanishing square, so the only index is two. The roots of $0$ and the nilpotents are the same set, the <strong>zero-divisor cone</strong>, and they are the largest of the four general products.</p>
+<p><strong>The results.</strong> The roots of $0$ in the general quaternionic product are the elements of the zero-divisor cone $C=\{N(\tilde\Xi)=0\}$, a real cone of real dimension six, consisting of the origin, the pure isotropic elements $\boldsymbol\rho+i\boldsymbol\rho'$ with $\boldsymbol\rho\perp\boldsymbol\rho'$ and $\lvert\boldsymbol\rho\rvert=\lvert\boldsymbol\rho'\rvert$, and the non-pure elements $2\Xi_0\tilde\Pi$ over the nontrivial plain idempotents. A nonzero element is a nilpotent of the product exactly when it is a zero divisor, $N(\tilde\Upsilon)=0$ and $\tilde\Upsilon\star\tilde\Upsilon=0$, so the nilpotent set is the whole zero-divisor cone and not a proper part of it. The index of nilpotency is two and only two: the powers run $\tilde\Upsilon^{\star2}=Ne_0$, $\tilde\Upsilon^{\star3}=N\tilde\Upsilon$, $\tilde\Upsilon^{\star4}=N^{2}e_0,\dots$ with $N=N(\tilde\Upsilon)$, so a vanishing cube already forces a vanishing square. Every nilpotent annihilates itself, no idempotent of $\star$ is a nilpotent except the origin, and the nontrivial idempotents of the plain product are nilpotents of this one. The cone is stable under the product and preserved by all four conjugations; in the matrix model the nilpotents are the singular matrices, of which the plain nilpotents are the trace-free ones; in the ideal theory the $\star$-left ideal generated by a nilpotent and its $\star$-annihilator are distinct planes meeting in the line $\mathbb{C}\tilde\Upsilon$; and among the remarkable subspaces the vector, the Hermitian and the anti-Hermitian carry nilpotents while the centre, the quaternion and the anti-quaternion carry none, the element $e_0+ie_1+e_2+ie_3$ lying outside all six.</p>
+<p><strong>Boundaries.</strong> The root equation and the reduction are <em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em>, whose roots of $+1$ and idempotents are the other half of the classification; the plain nilpotents, their cone and their index are <em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em>; the zero divisors and their two families are <em>Zero Divisors of the General Quaternionic Algebra</em>; the algebraic norm is <em>Norm and Invertibility in the General Quaternionic Algebra</em>; the idempotents of the product and the displacement are <em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em>; and the square-zero elements of the four general products side by side are <em>Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, which owns the comparison. The matrix representation is <em>The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, and the ideals and the operator theory are <em>Ideals and Peirce Decomposition of the General Plain Algebra</em> and <em>The Specificities of the General Quaternionic Algebra</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$, the <strong>algebraic norm</strong> is $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts. An element is <strong>pure</strong> when $Q_0=0$, and $\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ is the Hermitian idempotent over a real unit vector $\hat\mu$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$.</p>
+<h2 id="the-roots-of-zero">The Roots of Zero</h2>
+<p><strong>The roots of $0$ are exactly the zero-divisor cone $C=\{N(\tilde\Xi)=0\}$, a real cone of real dimension six, consisting of the origin, the pure isotropic elements $\boldsymbol\rho+i\boldsymbol\rho'$ with $\boldsymbol\rho\perp\boldsymbol\rho'$ and $\lvert\boldsymbol\rho\rvert=\lvert\boldsymbol\rho'\rvert$, and the non-pure elements $2\Xi_0\tilde\Pi$ over the nontrivial plain idempotents.</strong></p>
+<h3 id="the-root-set">The Root Set</h3>
+<p><strong>Theorem.</strong> The roots of $0$ in the general quaternionic product are the elements of the <strong>zero-divisor cone</strong>,</p>
+<p>$$
+\{\tilde\Xi:\tilde\Xi\star\tilde\Xi=0\}=\{\tilde\Xi:N(\tilde\Xi)=0\}=C ,
+$$</p>
+<p>a real cone of real dimension six.</p>
+<p><strong>Proof.</strong> The criterion is the reduction of §<em>The Root Equation and Its Reduction</em> of <em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em>, which reads the root equation of the value $\lambda$ as the single complex equation $N(\tilde\Xi)=\lambda$; at $\lambda=0$ this is $N=0$. The shape and the two families are <em>Zero Divisors of the General Quaternionic Algebra</em>, §<em>The Zero Divisor Set</em> and §<em>The Two Families of Zero Divisors</em>.</p>
+<p>The roots of $0$ are the zero divisors of the algebra together with the origin: for a nonzero $\tilde\Xi$, the equation $\tilde\Xi\star\tilde\Xi=0$ is exactly $N(\tilde\Xi)=0$, which is the criterion for $\tilde\Xi$ to be a zero divisor (<em>Zero Divisors of the General Quaternionic Algebra</em>). The root set of $0$ is the whole nilpotent cone of §<em>The Nilpotent Cone</em>, the largest of the four general products, and it contains the root set of $0$ of the plain product, which is the pure isotropic cone of real dimension four (<em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em>).</p>
+<h3 id="the-two-families">The Two Families</h3>
+<p>The cone splits into the origin and two families of nonzero elements.</p>
+<ul>
+<li><strong>The pure family.</strong> The <strong>pure isotropic</strong> elements, the elements $\boldsymbol\rho+i\boldsymbol\rho'$ with $Q_0=0$, $\boldsymbol\rho,\boldsymbol\rho'$ real vectors, $\boldsymbol\rho\perp\boldsymbol\rho'$ and $|\boldsymbol\rho|=|\boldsymbol\rho'|$. It is the isotropic cone of the vector subspace and has real dimension four.</li>
+<li><strong>The non-pure family.</strong> The elements $2\Xi_0\tilde\Pi$ over the nontrivial idempotents $\tilde\Pi$ of the plain product. It is the part of the cone with non-vanishing scalar part and fills the rest.</li>
+</ul>
+<p>The two standard roots are $e_1+ie_2$, which is pure, and $e_0+ie_1$, which is not; the second is twice the Hermitian idempotent, whose plain square is itself. The first statement is the parametrisation of the isotropic vectors of the vector subspace, and the second is the displacement of the Hermitian idempotents of <em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em> into the cone.</p>
+<h3 id="the-comparison-with-the-plain-product">The Comparison with the Plain Product</h3>
+<p>The same level set is read side by side with the plain product, and the whole of the difference is the cancellation of the scalar term by the conjugation in the first slot.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>value</th>
+<th>the general quaternionic product</th>
+<th>the general plain product</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$N=0$, the whole zero-divisor cone of real dimension $6$</td>
+<td>the pure isotropic cone of real dimension $4$, together with $0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The quaternionic column is this article; the plain column is quoted from <em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em>. The values $-1$ and $+1$ are the subject of <em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em>, where the same comparison is completed and the case-by-case comparison of the four general products, with the criterion by which the roots of a non-zero value are units, is <em>Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<p>Two structural differences are worth naming. The plain root set of $0$ is stratified by the vanishing of the scalar part, being the pure isotropic cone alone; the quaternionic root set is the whole zero-divisor cone, the pure family and the non-pure family together. And the plain roots of $0$ carry only the nilpotents, whereas here the roots of $0$ carry the whole zero-divisor set, nilpotents and idempotent multiples together — which is the subject of the rest of this article.</p>
+<h2 id="the-definition-and-the-criterion">The Definition and the Criterion</h2>
+<p><strong>For a nonzero $\tilde\Upsilon$, being a nilpotent of $\star$, having $N(\tilde\Upsilon)=0$, satisfying $\tilde\Upsilon\star\tilde\Upsilon=0$, and being a zero divisor of the algebra are equivalent; the nilpotents are the whole zero-divisor set and not a proper part of it.</strong></p>
+<p><strong>Definition.</strong> Let $\star$ be a product on $\mathbb{B}$ and let $\tilde\Upsilon\in\mathbb{B}$. The element $\tilde\Upsilon$ is <strong>nilpotent of $\star$</strong> when some power of it vanishes,</p>
+<p>$$
+\tilde\Upsilon^{\star k}=0 \quad\text{for some } k\geq1 ,
+$$</p>
+<p>the powers being read with the left-nested bracketing $\tilde\Upsilon^{\star1}=\tilde\Upsilon$ and $\tilde\Upsilon^{\star(k+1)}=\tilde\Upsilon^{\star k}\star\tilde\Upsilon$. The least such $k$ is the <strong>index of nilpotency</strong>; an element of index two, $\tilde\Upsilon\star\tilde\Upsilon=0$ with $\tilde\Upsilon\neq0$, is a <strong>square-zero element of $\star$</strong>. The definition is <em>Definitions for the Study of the 12 Algebraic Structures</em>, §<em>The Nilpotent</em>, and the origin is the trivial nilpotent.</p>
+<p>Throughout this article the product is $\star$. For this product the bracketing in the definition does not matter, because the square is central and absorbs every partial product; §<em>Index Two</em> computes the string and shows that the index is two whenever it is finite.</p>
+<p><strong>Theorem (the criterion).</strong> For a nonzero $\tilde\Upsilon\in\mathbb{B}$ the following are equivalent:</p>
+<ol>
+<li>$\tilde\Upsilon$ is a nilpotent of $\star$;</li>
+<li>$N(\tilde\Upsilon)=0$;</li>
+<li>$\tilde\Upsilon\star\tilde\Upsilon=0$;</li>
+<li>$\tilde\Upsilon$ is a zero divisor of the algebra.</li>
+</ol>
+<p><strong>Proof.</strong> The equivalence of (2), (3) and (4) is the criterion of <em>Zero Divisors of the General Quaternionic Algebra</em>, the square of the product being $N(\tilde\Upsilon)e_0$. For (3) implies (1) the index is two, so the element is nilpotent. For (1) implies (2), suppose $\tilde\Upsilon^{\star k}=0$ for some $k$. If $N=N(\tilde\Upsilon)$ vanished the statement (2) would hold; if $N\neq0$ then every partial product of a string of copies of $\tilde\Upsilon$ is a nonzero multiple of $e_0$ or of $\tilde\Upsilon$, by the computation of §<em>Index Two</em>, so no power vanishes, a contradiction. Hence $N=0$.</p>
+<p>The criterion says that the nilpotents of the quaternionic product are <strong>the whole zero-divisor set of the algebra</strong>, and not a proper part of it. This is the sharpest difference from the plain product, whose nilpotents are the pure isotropic elements and form a proper subset of its zero divisors (<em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em>).</p>
+<h2 id="the-nilpotent-cone">The Nilpotent Cone</h2>
+<p><strong>The nilpotent cone $C=\{\tilde\Upsilon\star\tilde\Upsilon=0\}=\{N=0\}$ is a real cone of real dimension $6$ that is not a subspace and is stable under the product; it is the union of the pure isotropic cone of real dimension four and the non-pure family of the plain-idempotent multiples.</strong></p>
+<p><strong>Definition.</strong> The <strong>nilpotent cone</strong> of the quaternionic product is the set of its nilpotents together with the origin,</p>
+<p>$$
+C=\{\tilde\Upsilon\in\mathbb{B}:\tilde\Upsilon\star\tilde\Upsilon=0\}=\{\tilde Q:N(\tilde Q)=0\} .
+$$</p>
+<p><strong>Proposition (shape).</strong> The set $C$ is a real cone of real dimension $6$ in the real eight-dimensional space $\mathbb{B}$, and it is not a real subspace.</p>
+<p><strong>Proof.</strong> The set is the vanishing set of the quadratic form $N$, one complex equation, hence two independent real equations off the origin, homogeneous of degree two; the dimension is $8-2=6$. The elements $e_1+ie_2$ and $e_1-ie_2$ lie in $C$ and their sum $2e_1$ does not, so $C$ is not a subspace.</p>
+<p><strong>Corollary.</strong> The cone is a multiplicative set: for every $\tilde P$ and every $\tilde\Upsilon$ with $N(\tilde\Upsilon)=0$, the products $\tilde P\star\tilde\Upsilon$ and $\tilde\Upsilon\star\tilde P$ lie in $C$.</p>
+<p><strong>Proof.</strong> The multiplicativity of the algebraic norm, $N(\tilde P\star\tilde\Upsilon)=N(\tilde P)N(\tilde\Upsilon)=0$, and the same in the other order.</p>
+<p>The cone is the same set as the zero-divisor cone of <em>Zero Divisors of the General Quaternionic Algebra</em>, and it is the union of the pure family, the isotropic cone of the vector subspace of real dimension four, and the non-pure family, the complex multiples of the nontrivial plain idempotents, which fills the rest. The two families are §<em>The Two Families</em>.</p>
+<h2 id="index-two">Index Two</h2>
+<p><strong>The powers of a nilpotent run $\tilde\Upsilon^{\star2}=Ne_0$, $\tilde\Upsilon^{\star3}=N\tilde\Upsilon$, $\tilde\Upsilon^{\star4}=N^{2}e_0,\dots$ with $N=N(\tilde\Upsilon)$, and the only index of nilpotency is two, so $\tilde\Upsilon^{\star k}=0$ forces $k=2$ and $\tilde\Upsilon\star\tilde\Upsilon=0$.</strong></p>
+<p><strong>Theorem (the power string).</strong> Let $\tilde\Upsilon\in\mathbb{B}$ and put $N=N(\tilde\Upsilon)$. Then</p>
+<p>$$
+\tilde\Upsilon^{\star2}=N\,e_0 , \qquad
+\tilde\Upsilon^{\star3}=N\,\tilde\Upsilon , \qquad
+\tilde\Upsilon^{\star4}=N^{2}\,e_0 , \qquad
+\tilde\Upsilon^{\star5}=N^{2}\,\tilde\Upsilon , \qquad \dots ,
+$$</p>
+<p>so the powers alternate between a central multiple of $e_0$ and a central multiple of $\tilde\Upsilon$.</p>
+<p><strong>Proof.</strong> The square is $\tilde\Upsilon^{\star2}=N(\tilde\Upsilon)e_0$ by the definition of the product. Multiplying on the right by $\tilde\Upsilon$, the left unit $e_0$ gives $\tilde\Upsilon^{\star3}=Ne_0\star\tilde\Upsilon=N\tilde\Upsilon$; multiplying again, $\tilde\Upsilon^{\star4}=(N\tilde\Upsilon)\star\tilde\Upsilon=N(\tilde\Upsilon\star\tilde\Upsilon)=N\cdot Ne_0=N^2e_0$; and the pattern repeats. The bracketing is immaterial because every partial product is one of the two forms displayed, by the same induction.</p>
+<p><strong>Theorem (the index).</strong> The only index of nilpotency in the general quaternionic product is two. If $\tilde\Upsilon^{\star k}=0$ for some $k\geq1$ and $\tilde\Upsilon\neq0$, then $k=2$ and $\tilde\Upsilon\star\tilde\Upsilon=0$.</p>
+<p><strong>Proof.</strong> By the power string, if $N\neq0$ and $\tilde\Upsilon\neq0$ then every power $\tilde\Upsilon^{\star k}$ with $k\geq2$ is a nonzero multiple of $e_0$ or of $\tilde\Upsilon$, so none vanishes; and if $N=0$ then $\tilde\Upsilon^{\star2}=0$, so the least index is two. The origin has index one.</p>
+<p>The quaternionic product therefore has the same bounded index as the plain product, and the two differ in the <strong>extent</strong> of the index-two set: here it is the whole cone, there the pure isotropic cone alone.</p>
+<h2 id="the-nilpotents-and-the-zero-divisors">The Nilpotents and the Zero Divisors</h2>
+<p><strong>Every nonzero nilpotent is a two-sided zero divisor that annihilates itself, and conversely every zero divisor of $\star$ is a nilpotent, so the two classes coincide at the nonzero level.</strong></p>
+<p><strong>Theorem.</strong> A nonzero nilpotent $\tilde\Upsilon$ satisfies $\tilde\Upsilon\star\tilde\Upsilon=0$ on both sides, so it lies in its own left annihilator and in its own right annihilator; it is a two-sided zero divisor of $\star$.</p>
+<p><strong>Proof.</strong> The relation $\tilde\Upsilon\star\tilde\Upsilon=0$ is the product of $\tilde\Upsilon$ with itself, and $\mathrm{Ann}_\ell(\tilde\Upsilon)=\mathrm{Ann}_r(\tilde\Upsilon)$ contains the elements that annihilate it on either side (<em>Zero Divisors of the General Quaternionic Algebra</em>).</p>
+<p><strong>Theorem (the converse, which the plain product does not have).</strong> Every zero divisor of $\star$ is a nilpotent of $\star$.</p>
+<p><strong>Proof.</strong> A zero divisor of $\star$ is a nonzero element with $N=0$, by the criterion of <em>Zero Divisors of the General Quaternionic Algebra</em>; the criterion above makes it a nilpotent.</p>
+<p>This double statement is the displacement that organises the article. In the plain product the inclusion runs one way: every nilpotent is a zero divisor, but a non-pure zero divisor, being a multiple of a nontrivial idempotent, has a nonzero square and is not nilpotent. The quaternionic product removes the obstruction, because the conjugation in the first slot cancels the scalar term of the square; the two classes therefore coincide, at the nonzero level, and the nilpotent cone is the whole zero-divisor cone.</p>
+<h2 id="the-nilpotents-and-the-idempotents">The Nilpotents and the Idempotents</h2>
+<p><strong>An idempotent of $\star$ and a nilpotent of $\star$ meet only at the origin, while the nontrivial plain idempotents are nilpotents of $\star$.</strong></p>
+<p><strong>Theorem (the two classes meet at the origin).</strong> Let $\tilde\Pi$ be an idempotent of $\star$, $\tilde\Pi\star\tilde\Pi=\tilde\Pi$, and let $\tilde\Upsilon$ be a nilpotent of $\star$. If $\tilde\Pi=\tilde\Upsilon$ then $\tilde\Pi=0$.</p>
+<p><strong>Proof.</strong> The idempotents of $\star$ are $0$ and $e_0$ (<em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em>), and $e_0\star e_0=e_0\neq0$, so $e_0$ is not a nilpotent; hence an element which is both is $0$.</p>
+<p><strong>Remark (the plain idempotents are nilpotents here).</strong> The disjointness is a statement about the idempotents <strong>of this product</strong>, and it does not extend to the idempotents of the algebra. A nontrivial plain idempotent $\tilde\Pi$ is a zero divisor of the plain product, so $N(\tilde\Pi)=0$, and therefore</p>
+<p>$$
+\tilde\Pi\star\tilde\Pi=N(\tilde\Pi)e_0=0 .
+$$</p>
+<p>The plain idempotents are thus nilpotents of the quaternionic product; the proof that they are square-zero is §<em>The Standard Idempotents of the Algebra</em> of <em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em>, and the plain product's theorem that an idempotent and a nonzero nilpotent never coincide (<em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em>) has no analogue here. The only element that is both an idempotent of $\star$ and a nilpotent of $\star$ is the origin.</p>
+<h2 id="the-conjugations">The Conjugations</h2>
+<p><strong>All four conjugations preserve the nilpotent cone $C$: the natural, the coefficientwise and the Hermitian conjugation preserve the algebraic norm up to complex conjugation, and the complex structure sends $N$ to $-N$.</strong></p>
+<p>The four conjugations of the algebra act on the nilpotent cone, and their action is read from the algebraic norm.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>conjugation</th>
+<th>effect on the algebraic norm</th>
+<th>effect on the cone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>natural, ${}^{\natural}$</td>
+<td>$N(\tilde Q^{\natural})=N(\tilde Q)$</td>
+<td>preserves $C$</td>
+</tr>
+<tr>
+<td>coefficientwise, $\bar{\cdot}$</td>
+<td>$N(\overline{\tilde Q})=\overline{N(\tilde Q)}$</td>
+<td>preserves $C$</td>
+</tr>
+<tr>
+<td>Hermitian, the composite of the two</td>
+<td>$N$ is sent to its complex conjugate</td>
+<td>preserves $C$</td>
+</tr>
+<tr>
+<td>complex structure, $\tilde Q\mapsto i\tilde Q$</td>
+<td>$N(i\tilde Q)=-N(\tilde Q)$</td>
+<td>preserves $C$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The natural conjugation is a plain anti-automorphism and an involution, so $N(\tilde Q^{\natural})=\tilde Q^{\natural}(\tilde Q^{\natural})^{\natural}=\tilde Q^{\natural}\tilde Q=N(\tilde Q)$. The coefficientwise conjugation conjugates every coefficient, hence the sum of their squares. The Hermitian conjugation is the composite of the two, so it sends $N$ to its complex conjugate, and the complex structure multiplies the algebraic norm by $i^2=-1$. In each case the vanishing set is preserved.</p>
+<p><strong>Remark.</strong> The complex structure sends a pure element to a pure element and exchanges no family, while the natural conjugation fixes the scalar part and negates the vector part, so it fixes the pure family and sends a non-pure nilpotent to a non-pure nilpotent. The two Hermitian subspaces $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ are exchanged by the natural conjugation, which is why the nilpotents they carry are parametrised in the same way; the coefficientwise conjugation fixes $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ and fixes no nonzero nilpotent of the vector subspace.</p>
+<h2 id="the-matrix-model">The Matrix Model</h2>
+<p><strong>Under the isomorphism $\mathsf{M}_2$ the nilpotents of $\star$ are exactly the singular matrices, $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)=0$, and the plain nilpotents are their trace-free part.</strong></p>
+<p>In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of <em>The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>, the criterion becomes the singularity of a two-by-two complex matrix.</p>
+<p><strong>Theorem.</strong> Under the isomorphism $\mathsf{M}_2$ of the algebra the following coincide: $\tilde Q$ is a nilpotent of $\star$; $\mathsf{M}_2(\tilde Q)$ is singular, $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)=0$; and $\mathsf{M}_2(\tilde Q)$ is not invertible.</p>
+<p><strong>Proof.</strong> The determinant of the matrix model is the algebraic norm of the element (<em>The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>), and the criterion is $N=0$.</p>
+<p><strong>Corollary.</strong> The nilpotents of $\star$ are the <strong>singular</strong> matrices; the nilpotents of the plain product are the singular matrices that are also <strong>trace-free</strong>, of trace $2Q_0$ and determinant $N(\tilde Q)$, since the criterion of the plain product is $Q_0=0$ together with $N(\tilde Q)=0$ (<em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em>). The plain nilpotents are therefore the trace-free part of the nilpotents of $\star$, and the augmentation is the non-pure family, the matrices with non-zero trace that are singular.</p>
+<h2 id="the-nilpotents-and-the-ideals">The Nilpotents and the Ideals</h2>
+<p><strong>For a nonzero nilpotent the $\star$-left ideal $\mathbb{B}\tilde\Upsilon$ and the $\star$-left annihilator $\tilde\Upsilon\mathbb{B}$ are distinct planes of complex dimension two meeting in the line $\mathbb{C}\tilde\Upsilon$; the plain ideal and the plain annihilator coincide exactly when the nilpotent is pure.</strong></p>
+<p>Since $\star$ is not associative, the ideal theory of the product is the left-module theory of the plain product, and the nilpotents enter it through the plain families.</p>
+<p><strong>Theorem.</strong> Let $\tilde\Upsilon\neq0$ be a nilpotent of $\star$ and let $I_{\tilde\Upsilon}=\{\tilde X:\tilde X\tilde\Upsilon=0\}$ and $J_{\tilde\Upsilon}=\{\tilde X:\tilde\Upsilon\tilde X=0\}$ be its plain left and right annihilators. The $\star$-left ideal generated by $\tilde\Upsilon$ is the plain left ideal $\mathbb{B}\tilde\Upsilon$, and the $\star$-left annihilator is $\mathrm{Ann}_\ell(\tilde\Upsilon)=\{\tilde X:\tilde\Upsilon^{\natural}\tilde X=0\}$, the plain right annihilator $J_{\tilde\Upsilon^{\natural}}$ of the conjugated element, which is the plain right ideal $\tilde\Upsilon\mathbb{B}$; both are of complex dimension two. The plain left ideal and the plain left annihilator of $\tilde\Upsilon$ coincide, $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$, exactly when $\tilde\Upsilon$ is <strong>pure</strong>, and they are complementary planes when it is not; the same dichotomy holds on the right, $\tilde\Upsilon\mathbb{B}=J_{\tilde\Upsilon}$ exactly when $\tilde\Upsilon$ is pure. The $\star$-left ideal $\mathbb{B}\tilde\Upsilon$ and the $\star$-annihilator $\tilde\Upsilon\mathbb{B}$ are <strong>distinct</strong> planes, and they meet in the line $\mathbb{C}\tilde\Upsilon$.</p>
+<p><strong>Proof.</strong> $\mathbb{B}\star\tilde\Upsilon=\{\tilde X^{\natural}\tilde\Upsilon:\tilde X\in\mathbb{B}\}=\mathbb{B}\tilde\Upsilon$, because $\natural$ is a bijection, and this is the plain left ideal. For the annihilator, $\tilde X^{\natural}\tilde\Upsilon=0$ if and only if its conjugate $\tilde\Upsilon^{\natural}\tilde X$ vanishes, so $\mathrm{Ann}_\ell(\tilde\Upsilon)=\{\tilde X:\tilde\Upsilon^{\natural}\tilde X=0\}=J_{\tilde\Upsilon^{\natural}}$, of complex dimension two like $I_{\tilde\Upsilon}$. This annihilator contains the plain right ideal $\tilde\Upsilon\mathbb{B}$, because $\tilde\Upsilon^{\natural}(\tilde\Upsilon\tilde X)=(\tilde\Upsilon^{\natural}\tilde\Upsilon)\tilde X=0$; the right ideal is also of complex dimension two, so $\mathrm{Ann}_\ell(\tilde\Upsilon)=\tilde\Upsilon\mathbb{B}$. The element $\tilde\Upsilon$ lies in both spaces, since $\tilde\Upsilon^{\natural}\tilde\Upsilon=N(\tilde\Upsilon)e_0=0$, so the line $\mathbb{C}\tilde\Upsilon$ lies in their intersection. The two planes are distinct: were they equal, their common value would be at once a left ideal and a right ideal of the plain product, hence a two-sided ideal, nonzero because it contains $\tilde\Upsilon$ and proper because its dimension is two; but the plain algebra is the simple matrix algebra $M_2(\mathbb{C})$, which has no such ideal. The intersection is therefore exactly the line $\mathbb{C}\tilde\Upsilon$. For a pure $\tilde\Upsilon$ the plain nilpotent identities $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$ and $\tilde\Upsilon\mathbb{B}=J_{\tilde\Upsilon}$ hold (<em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em>); for a non-pure $\tilde\Upsilon$, a multiple of a plain idempotent, the plain ideal and the plain annihilator are distinct complementary planes on each side (<em>Ideals and Peirce Decomposition of the General Plain Algebra</em>).</p>
+<p>The nilpotents therefore split, in the ideal theory, exactly as the zero divisors split: the pure ones behave as the plain nilpotents do, with the plain ideal equal to the plain annihilator, and the non-pure ones behave as the idempotent multiples do, with the plain ideal and the plain annihilator complementary.</p>
+<h2 id="the-nilpotents-and-the-remarkable-subspaces">The Nilpotents and the Remarkable Subspaces</h2>
+<p><strong>The vector subspace carries the pure nilpotents as an isotropic cone of real dimension four, the Hermitian and anti-Hermitian subspaces carry isotropic cones of real dimension three, and the centre, the quaternion and the anti-quaternion subspaces carry none; the nilpotents are not confined to the six remarkable subspaces.</strong></p>
+<p>The nilpotents are the elements of algebraic norm zero, so their distribution among the remarkable subspaces is the distribution of the zeros of $N$, whose signatures are <em>Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>remarkable subspace</th>
+<th>nilpotents of $\star$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, the centre</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, the quaternion subspace</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$, the vector subspace</td>
+<td>the pure nilpotents, an isotropic cone of real dimension four</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{+}$, the Hermitian subspace</td>
+<td>the isotropic cone of $\mathbb{M}_{+}$, of real dimension three, all of it non-pure</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{-}$, the anti-Hermitian subspace</td>
+<td>the isotropic cone of $\mathbb{M}_{-}$, of real dimension three, all of it non-pure</td>
+</tr>
+</tbody>
+</table></div>
+<p>The entries are forced by the definiteness of the algebraic norm: it is positive definite on the quaternion subspace and negative definite on the anti-quaternion subspace, so neither carries a nonzero nilpotent, and it vanishes on the centre only at the origin. The vector subspace carries the whole pure family, and the two Hermitian subspaces carry the non-pure nilpotents whose scalar and vector contributions cancel, the elements $e_0\pm ie_1$ in $\mathbb{M}_{+}$ and the elements $e_1\pm ie_0$ in $\mathbb{M}_{-}$ being the standard witnesses.</p>
+<p><strong>Remark (the nilpotents outside the six subspaces).</strong> Unlike the plain nilpotents, which all lie in the vector subspace, the nilpotents of $\star$ are not confined to the six remarkable subspaces. The elements $e_1+ie_2$ and $e_0+ie_1$ lie in the vector and in the Hermitian subspace respectively, but the element $\tilde Q=e_0+ie_1+e_2+ie_3$ has $N=1-1+1-1=0$ and is neither pure, its scalar part being $1$, nor Hermitian, its vector part having the real coordinate $1$ in the second place, nor anti-Hermitian, its scalar part being real; so it lies in none of the six. The cone is strictly larger than the union of its traces on the remarkable subspaces, and the plain picture, in which the vector subspace contains the cone, does not extend.</p>
+<h2 id="summary">Summary</h2>
+<p>In the general quaternionic bilinear product the square is the central element $N(\tilde Q)e_0$, so the roots of $0$ are the elements of the whole zero-divisor cone, and a nonzero element is nilpotent exactly when its algebraic norm vanishes. The nilpotent set is that cone: a real cone of dimension six that is not a subspace and is stable under the product, the union of the pure isotropic cone of real dimension four and the non-pure family of the plain-idempotent multiples. The index of nilpotency is two and only two, the powers running $\tilde\Upsilon,\tilde\Upsilon^{\star2}=Ne_0,\tilde\Upsilon^{\star3}=N\tilde\Upsilon,\dots$ with $N=N(\tilde\Upsilon)$, so a vanishing cube already forces a vanishing square. Every nilpotent annihilates itself, and, in contrast to the plain product, every zero divisor is a nilpotent; the plain idempotents are nilpotents of this product, and the only element that is both an idempotent of the product and a nilpotent is the origin. The natural, the coefficientwise and the Hermitian conjugations preserve the cone, and the complex structure does too, multiplying the algebraic norm by $-1$; in the matrix model the nilpotents are the singular matrices, of which the plain nilpotents are the trace-free ones; in the ideal theory the pure nilpotents have their plain ideal equal to their plain annihilator and the non-pure ones do not, while in the product the $\star$-left ideal generated by a nilpotent and its $\star$-annihilator are distinct planes meeting in the line $\mathbb{C}\tilde\Upsilon$; and among the remarkable subspaces the vector, the Hermitian and the anti-Hermitian carry nilpotents while the centre, the quaternion and the anti-quaternion carry none, the element $e_0+ie_1+e_2+ie_3$ lying outside all six.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$</td>
+<td>the general quaternionic bilinear product</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon$</td>
+<td>a nilpotent of the product, a root of $0$</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\sum_\mu Q_\mu^2$</td>
+<td>the algebraic norm, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$</td>
+</tr>
+<tr>
+<td>$\tilde Q^{\star k}$</td>
+<td>the $k$-th power, left-nested; the index is two</td>
+</tr>
+<tr>
+<td>$C=\{N=0\}$</td>
+<td>the nilpotent cone, the zero-divisor cone, real dimension six</td>
+</tr>
+<tr>
+<td>$\boldsymbol\rho+i\boldsymbol\rho'$</td>
+<td>a pure isotropic element, $|\boldsymbol\rho|=|\boldsymbol\rho'|$, $\boldsymbol\rho\perp\boldsymbol\rho'$</td>
+</tr>
+<tr>
+<td>$2\Xi_0\tilde\Pi$</td>
+<td>a non-pure root of $0$ over a nontrivial plain idempotent $\tilde\Pi$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$</td>
+<td>the Hermitian idempotent, a nilpotent of $\star$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde Q)$</td>
+<td>the two-by-two matrix model, with $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{+},\mathbb{M}_{-}$</td>
+<td>the Hermitian and the anti-Hermitian subspaces, each carrying an isotropic cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard D. Schafer, <em>An Introduction to Nonassociative Algebras</em> (Academic Press, 1966), for the index of nilpotency and the square-zero elements of a non-associative algebra.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the isotropic vectors and the quadratic form $\sum_\mu Q_\mu^2$ of the complex quaternion algebra.</li>
+<li><em>Definitions for the Study of the 12 Algebraic Structures</em> (<code>articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md</code>), §<em>Powers, the Square and the Roots</em> and §<em>The Nilpotent</em>, for the general definition of a root of a central value, of a nilpotent and of its index.</li>
+<li>Kevin McCrimmon, <em>A Taste of Jordan Algebras</em> (Springer, 2004), for isotopes and the way a change of product moves the nilpotents.</li>
+<li><em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.md</code>), for the reduction, the roots of $+1$ and the idempotents of the product.</li>
+<li><em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em> (<code>articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md</code>), for the plain nilpotents, the pure isotropic cone of real dimension four, the index two and the plain roots of $0$.</li>
+<li><em>Zero Divisors of the General Quaternionic Algebra</em> (<code>articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md</code>), for the criterion, the two families and the annihilators.</li>
+<li><em>Norm and Invertibility in the General Quaternionic Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md</code>), for the algebraic norm, its multiplicativity and the criterion.</li>
+<li><em>Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md</code>), for the square-zero sets of the four general products side by side.</li>
+<li><em>The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em> (<code>articles_maths/the-general-quaternionic-algebra-in-the-2x2-matrix-element-representation.md</code>), for the isomorphism $\mathsf{M}_2$ and its determinant.</li>
+<li><em>The Specificities of the General Quaternionic Algebra</em> (<code>articles_maths/the-specificities-of-the-general-quaternionic-algebra.md</code>), for the left ideals of the product and the operator theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
