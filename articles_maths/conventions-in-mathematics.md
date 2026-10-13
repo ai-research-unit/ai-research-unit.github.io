@@ -2,46 +2,46 @@
 
 ## Introduction
 
-This article gathers the conventions the mathematical articles assume: the symbols, the arithmetic conventions, the shape of a generic element and its coefficients, the marks reserved for the conjugations of an algebra with an involution and for the adjoint of an operator, the typographic rules of the source, and the working conventions of the corpus itself — the menu, the groups inside a category, the article files and the skeleton.
+This article gathers the conventions the mathematical articles assume: the symbols, the arithmetic conventions, the shape of a generic element and its coefficients, the marks reserved for the conjugations of an algebra with an involution and for the adjoint of an operator, the convention of the form and the norm, the typographic rules of the source, and the working conventions of the corpus itself — the menu, the groups inside a category, the article files and the skeleton.
 
 They are stated once, here, so that no other article need repeat them. How the articles are organised into the six parts and their categories is the subject of the companion article *Introduction to Mathematics*; this one is the reference for the elements, the marks, the glyphs and the layout.
 
 ## Notational Conventions
 
-The conventions below are those used throughout the corpus. They are stated once, here, so that the other articles need not repeat them.
+The conventions below are those used throughout the corpus.
 
 ### Symbols
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ | the naturals, integers, rationals, reals, complex numbers |
-| $\mathbb{D}$ | the split-complex numbers, $\mathbb{R}[x]/(x^2-1)$ |
-| $\mathbb{D}'$ | the dual numbers, $\mathbb{R}[x]/(x^2)$ |
-| $\mathbb{H}$ | the real quaternions |
-| $\mathbb{H}_{\mathrm{s}}$ | the split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ |
-| $\mathbb{B}$ | the biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $\mathbb{H}_{\mathbb{D}}$ | the split-biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $\mathbb{O}$ | the octonions |
-| $G$ | a group; $R$ a ring; $k$, $F$ a field; $V$ a vector space; $M$ a module; $A$ an algebra |
+| $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$ | The naturals, integers, rationals, reals, complex numbers |
+| $\mathbb{D}$ | The split-complex numbers, $\mathbb{R}[x]/(x^2-1)$ |
+| $\mathbb{D}'$ | The dual numbers, $\mathbb{R}[x]/(x^2)$ |
+| $\mathbb{H}$ | The real quaternions |
+| $\mathbb{H}_{\mathrm{s}}$ | The split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ |
+| $\mathbb{B}$ | The biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{H}_{\mathbb{D}}$ | The split-biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{O}$ | The octonions |
+| $G$ | A group; $R$ a ring; $k$, $F$ a field; $V$ a vector space; $M$ a module; $A$ an algebra |
 | $\mathrm{G}, \mathrm{H}, \mathrm{SL}_n$ | Lie algebras |
-| $\mathrm{M}, \mathrm{P}$ | ideals and prime ideals |
-| $\operatorname{Sym}(X), \operatorname{Aut}(X)$ | symmetric group of a set; automorphism group of a structure |
-| $\operatorname{End}(V), \operatorname{Der}(A), \operatorname{Inn}(A), \operatorname{Out}(A)$ | endomorphisms, derivations, inner and outer automorphisms |
-| $GL, SL, PGL, O, SO, U, SU, Sp$ | the classical groups |
-| $T(V), S(V), \Lambda(V), Cl(V,Q)$ | tensor, symmetric, exterior and Clifford algebras |
-| $V^{\otimes n}, S^n V, \Lambda^n V$ | tensor, symmetric and exterior powers |
-| $B(v,w), Q(v), N(x)$ | bilinear form, quadratic form, norm |
-| $\bullet$ | the symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$; the circle $\circ$ is reserved for the composition of maps |
-| $\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | the conjugations of an algebra with an involution, and the adjoint of an operator; *The conjugations and the adjoint* below fixes their meanings |
-| $\tilde\Pi$, $\tilde\pi$, $\Pi$ | an idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$ (§*The idempotent convention*) |
-| $\tilde\Xi$, $\tilde\xi$, $\Xi$ | a root of $-1$: the biquaternion layer writes $\tilde\Xi$, the quaternion layer $\tilde\xi$, and the tilde-free layers $\Xi$ (§*The root convention*) |
-| $\tilde P, \tilde q, \tilde Q$ | a generic element of the algebra: the quaternion, split-quaternion, biquaternion or split-biquaternion one |
+| $\mathrm{M}, \mathrm{P}$ | Ideals and prime ideals |
+| $\operatorname{Sym}(X), \operatorname{Aut}(X)$ | Symmetric group of a set; automorphism group of a structure |
+| $\operatorname{End}(V), \operatorname{Der}(A), \operatorname{Inn}(A), \operatorname{Out}(A)$ | Endomorphisms, derivations, inner and outer automorphisms |
+| $GL, SL, PGL, O, SO, U, SU, Sp$ | The classical groups |
+| $T(V), S(V), \Lambda(V), Cl(V,Q)$ | Tensor, symmetric, exterior and Clifford algebras |
+| $V^{\otimes n}, S^n V, \Lambda^n V$ | Tensor, symmetric and exterior powers |
+| $B(v,w), Q(v), N(x)$ | Bilinear form, quadratic form, norm |
+| $\bullet$ | The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$; the circle $\circ$ is reserved for the composition of maps |
+| $\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$ | The conjugations of an algebra with an involution, and the adjoint of an operator; *The Conjugations and the Adjoint* below fixes their meanings |
+| $\tilde\Pi$, $\tilde\pi$, $\Pi$ | An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$ (§*The Idempotent Convention*) |
+| $\tilde\Xi$, $\tilde\xi$, $\Xi$ | A root of $-1$: the biquaternion layer writes $\tilde\Xi$, the quaternion layer $\tilde\xi$, and the tilde-free layers $\Xi$ (§*The Root Convention*) |
+| $\tilde P, \tilde q, \tilde Q$ | A generic element of the algebra: the quaternion, split-quaternion, biquaternion or split-biquaternion one |
 
-### Groups, rings and operations
+### Groups, Rings and Operations
 
 A group is written multiplicatively by default, with unit $e$ and inverse $x^{-1}$, and additively when it is the underlying group of a ring, with zero $0$ and inverse $-x$. A ring is a triple $(R, +, \cdot)$; a ring need not be commutative and need not have a unit, and the article that introduces it says which conventions it adopts. A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. A module is written with its scalars on the left unless the article says otherwise, and the side matters as soon as the ring is non-commutative. Products are written by juxtaposition: $ab$ for the product in a group or an algebra, $fv$ for the action of a scalar on a vector. The **symmetrised (Jordan) product** is written with a bullet, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and the circle $\circ$ is kept for the **composition of maps**, as in $\mathrm{H}_{\tilde Q}\circ\mathrm{H}_{\tilde R}$.
 
-### LaTeX and typesetting
+### LaTeX and Typesetting
 
 The articles are rendered with KaTeX on the page, and the following rules are observed in the source.
 
@@ -65,25 +65,25 @@ The conventions below fix how the elements themselves are written: the case and 
 algebra, the shape of a generic element and the letters of its coefficients, the marks reserved for the
 conjugations, and the symbol of the idempotents.
 
-### The element and its coefficients
+### The Element and Its Coefficients
 
 The case and the tilde of the glyph are fixed first, and the element is written after. A generic element is preferably written so that the glyph alone identifies its algebra, two features being read together: the **case** separates a real scalar from a complex one, and a **tilde** marks the quaternionic factor.
 
 | System | Name | Generic element | Scalar–vector decomposition | Coefficients |
 |---|---|---|---|---|
-| $\mathbb{2}$ | Booleans | $\alpha, \beta, \dots$ | — | — |
-| $\mathbb{N}$ | naturals | $n, m, \dots$ | — | — |
-| $\mathbb{Z}$ | integers | $n, m, \dots$ | — | — |
-| $\mathbb{Q}$ | rationals | $a, b, c, \dots$ | — | — |
-| $\mathbb{R}$ | reals | $a, b, c$ | — | — |
-| $\mathbb{C}$ | complex numbers | $A = a + ia'$, $B = b + ib'$ | scalar $a$, vector $ia'$ | real, $a, a'$ |
-| $\mathbb{D}$ | split-complex numbers | $A = a + ja'$, $B = b + jb'$ | scalar $a$, vector $ja'$ | real, $a, a'$ |
-| $\mathbb{D}'$ | dual numbers | $A = a + \varepsilon a'$, $B = b + \varepsilon b'$ | scalar $a$, vector $\varepsilon a'$ | real, $a, a'$ |
-| $\mathbb{H}$ | quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | real |
-| $\mathbb{H}_{\mathrm{s}}$ | split-quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | real |
-| $\mathbb{B}$ | biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{C}$ | complex, $Q_\mu = q_\mu + iq'_\mu$ |
-| $\mathbb{H}_{\mathbb{D}}$ | split-biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{D}$ | split-complex, $Q_\mu = q_\mu + jq'_\mu$ |
-| $\mathbb{O}$ | octonions | $\tilde o = o_0e_0 + o_1e_1 + \cdots + o_7e_7$ | $o_0e_0 + \mathbf o$, $\mathbf o = o_1e_1 + \cdots + o_7e_7$ | real |
+| $\mathbf{2}$ | Booleans | $\alpha, \beta, \dots$ | — | — |
+| $\mathbb{N}$ | Naturals | $n, m, \dots$ | — | — |
+| $\mathbb{Z}$ | Integers | $n, m, \dots$ | — | — |
+| $\mathbb{Q}$ | Rationals | $a, b, c, \dots$ | — | — |
+| $\mathbb{R}$ | Reals | $a, b, c$ | — | — |
+| $\mathbb{C}$ | Complex numbers | $A = a + ia'$, $B = b + ib'$ | Scalar $a$, vector $ia'$ | Real, $a, a'$ |
+| $\mathbb{D}$ | Split-complex numbers | $A = a + ja'$, $B = b + jb'$ | Scalar $a$, vector $ja'$ | Real, $a, a'$ |
+| $\mathbb{D}'$ | Dual numbers | $A = a + \varepsilon a'$, $B = b + \varepsilon b'$ | Scalar $a$, vector $\varepsilon a'$ | Real, $a, a'$ |
+| $\mathbb{H}$ | Quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | Real |
+| $\mathbb{H}_{\mathrm{s}}$ | Split-quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | Real |
+| $\mathbb{B}$ | Biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{C}$ | Complex, $Q_\mu = q_\mu + iq'_\mu$ |
+| $\mathbb{H}_{\mathbb{D}}$ | Split-biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{D}$ | Split-complex, $Q_\mu = q_\mu + jq'_\mu$ |
+| $\mathbb{O}$ | Octonions | $\tilde o = o_0e_0 + o_1e_1 + \cdots + o_7e_7$ | $o_0e_0 + \mathbf o$, $\mathbf o = o_1e_1 + \cdots + o_7e_7$ | Real |
 
 Five rules are read off the table. **A complex element carries a majuscule**, $A$ or $B$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $A = a + ia'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers. **The four quaternionic elements carry a tilde**: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. And **the arithmetic systems and the reals carry a letter that is theirs alone**: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $a, b, c$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations. Finally, **the element is a scalar part plus a vector part**: the scalar part is carried by the unit — $1$ in the commutative two-parameter systems, $e_0$ in the quaternionic and octonionic ones — and the vector part by the remaining basis directions, assembled in the bold letter $\mathbf q$, $\mathbf Q$ or $\mathbf o$, so that $\tilde Q = Q_0e_0 + \mathbf Q$ is written in the coefficients according to the system; the two are the fixed and the anti-fixed spaces of the intrinsic conjugate, and the arithmetic systems, which are not written as linear combinations, have no vector part.
 
@@ -103,17 +103,17 @@ The case and the tilde are read independently, and the glyph of a generic elemen
 
 This is a **preferred convention** — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{q}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, structure constants, and the individual elements an article defines keep the symbols that article gives them. Where the constructions that share a glyph must be told apart — the complex from the split-complex and the dual, the quaternion from the split-quaternion, the biquaternion from the split-biquaternion — the glyph is qualified by a subscript, as in $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{H}_{\mathbb{D}}$.
 
-### The conjugations and the adjoint
+### The Conjugations and the Adjoint
 
 The biquaternion algebra carries four natural involutions, all of them used in the series, together with the adjoint of an operator, which belongs to the operators and not to the algebra:
 
 | Map | Mark | What it is |
 |---|---|---|
-| complex conjugation | $\bar{\cdot}$ | the involution of the base, extended to the element |
-| quaternion conjugation | ${}^{\natural}$ | the intrinsic conjugate: it fixes the scalars and negates the vectors |
-| Hermitian conjugation | ${}^{*}$ | the involution of the algebra, $\bar{\cdot}\circ{}^{\natural}$ |
-| anti-Hermitian conjugation | ${}^{\flat} = -{}^{*}$ | the negative of the star |
-| operator adjoint | ${}^{\dagger}$ | the general adjoint of an operator, $(L_a)^{\dagger} = L_{a^{*}}$; where the adjoint is obviously the one of the positive definite form the two marks are written together, the dagger first, $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ |
+| Complex conjugation | $\bar{\cdot}$ | The involution of the base, extended to the element |
+| Quaternion conjugation | ${}^{\natural}$ | The intrinsic conjugate: it fixes the scalars and negates the vectors |
+| Hermitian conjugation | ${}^{*}$ | The involution of the algebra, $\bar{\cdot}\circ{}^{\natural}$ |
+| Anti-Hermitian conjugation | ${}^{\flat} = -{}^{*}$ | The negative of the star |
+| Operator adjoint | ${}^{\dagger}$ | The general adjoint of an operator, $(L_a)^{\dagger} = L_{a^{*}}$ |
 
 Which of the marks has a sense depends on the system, since a mark degenerates wherever the structure it conjugates is absent. The four examples below fix it system by system.
 
@@ -147,27 +147,27 @@ $$
 
 The dagger is the **general adjoint**: it acts on an operator and not on an element, and it is the same in every system. It is the general mark under which the several adjoints of the corpus fall — one for each form, one for each sandwich — and where the adjoint in view is obviously the one of the positive definite form the text writes the two marks together, the dagger first and the star second, so that the coincidence is apparent: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ and $(\Theta_{\tilde{Q}})^{\dagger}=(\Theta_{\tilde{Q}})^{*}=\Theta_{\tilde{Q}^{*}}$.
 
-### The form convention and the norm convention
+### The Form Convention and the Norm Convention
 
-The corpus writes a **generic form** and a **generic norm**, the norm being the form read at the two equal arguments:
+The corpus writes a **generic form** and a **generic norm**, the norm being the form read at its two equal arguments:
 
 $$
-\mathrm{Form}(\tilde P,\tilde Q) , \qquad \mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q) .
+\mathrm{Form}(\tilde P,\tilde Q) , \qquad \mathrm{Norm}(\tilde Q) = \mathrm{Form}(\tilde Q,\tilde Q) .
 $$
 
-The convention is one of **notation, not of substance**: the generic form and the generic norm are the form and the norm of the statement at hand, and the four forms and the four norms of the algebra are the instances of the pair.
+**One letter, two arities.** A letter names a **form** when it carries two arguments and its **algebraic norm** when it carries one. The convention is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand. The two definitions — the form of an operation as its scalar part read in two arguments, bilinear or sesquilinear by its second slot, and the algebraic norm as that form at its two equal arguments — and the four instances $B$, $N$, $H$ and $K$ are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*.
 
-### The root convention
+### The Root Convention
 
-The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The idempotent convention*) and the nilpotent $\tilde\nu$ (§*The nilpotent convention*): the **xi**, in the two cases.
+The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The Idempotent Convention*) and the nilpotent $\tilde\nu$ (§*The Nilpotent Convention*): the **xi**, in the two cases.
 
 A **root of $-1$** of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2 = -1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde\Xi^2 = \lambda e_0$; the roots of the three central values $-1, 0, +1$ are determined in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general problem is *Square Roots of a General Element in the General Plain Algebra*.
 
-**The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents: the class is relative to the product, and the roots of a value are read product by product in *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Since the value is real, the bar and the star carry a root to a root, $(\tilde\Xi^{*})^2 = (\tilde\Xi^2)^{*} = \tilde\Xi^2$, so the star permutes the roots of $-1$ and fixes none of the non-central ones.
+**The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents: the class is relative to the product, and the roots of a value are read product by product in *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 **The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Xi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\xi$; and those of the complex, split-complex and dual layers carry the plain capital, $\Xi$, no tilde being written where there is no quaternionic factor — the only tilde-free layer with a root of $-1$ being $\mathbb{C}$, whose two roots are the central $\pm i$.
 
-**The coordinates carry the letter of the root**, as for a general element: in $\mathbb{B}$ the root is $\tilde\Xi = \Xi_0e_0 + \Xi_1e_1 + \Xi_2e_2 + \Xi_3e_3$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_0$ and its vector part $\boldsymbol\Xi = \boldsymbol\xi + i\boldsymbol\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_0e_0 + \xi_1e_1 + \xi_2e_2 + \xi_3e_3$ with real $\xi_\mu$. The equation splits into a scalar equation and a vector equation, and the solutions are the classification of the article that owns the roots.
+**The coordinates carry the letter of the root**, as for a general element: in $\mathbb{B}$ the root is $\tilde\Xi = \Xi_0e_0 + \Xi_1e_1 + \Xi_2e_2 + \Xi_3e_3$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_0$ and its vector part $\boldsymbol\Xi = \boldsymbol\xi + i\boldsymbol\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_0e_0 + \xi_1e_1 + \xi_2e_2 + \xi_3e_3$ with real $\xi_\mu$.
 
 **The subscript of a root is always numeric** where more than one occurs, as for the idempotents and the nilpotents, and a sign is never written as a subscript.
 
@@ -175,21 +175,21 @@ The root glyph is therefore **split by the case rule**, and the split is the rea
 
 | Symbol | Role |
 |---|---|
-| $\tilde\Xi$ | a root of $-1$ of the biquaternion or split-biquaternion layer |
-| $\tilde\xi$ | a root of $-1$ of the quaternion or split-quaternion layer |
-| $\Xi$ | a root of $-1$ of the complex, split-complex or dual layer, where no tilde is written |
+| $\tilde\Xi$ | A root of $-1$ of the biquaternion or split-biquaternion layer |
+| $\tilde\xi$ | A root of $-1$ of the quaternion or split-quaternion layer |
+| $\Xi$ | A root of $-1$ of the complex, split-complex or dual layer, where no tilde is written |
 
 The convention is one of **notation, not of substance**: an element written $\tilde\Xi$ is not a different kind of object from one written $\tilde Q$, only an element known to be a root of $-1$.
 
-### The idempotent convention
+### The Idempotent Convention
 
-The convention of *The element and its coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the corpus uses it throughout.
+The convention of *The Element and Its Coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the corpus uses it throughout.
 
 An **idempotent** of the algebra is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$, and a **projector** is an idempotent operator, $p^2 = p$, that is an idempotent of the morphism space, not an element of the algebra; the two are different objects, and an idempotent element corresponds to a projector when its multiplication operator is idempotent. An idempotent fixed by the star, $\tilde\Pi^{*} = \tilde\Pi$, is a **Hermitian idempotent**, and the rank-one Hermitian idempotents of $\mathbb{M}_+$, the Hermitian subspace, are the **pure states**.
 
 **The case rule splits the glyph, as it does for the elements.** The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Pi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\pi$; and those of the complex, split-complex and dual layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The same splitting of the identity is written $\tilde\pi_{1,2}$ in $\mathbb{H}_{\mathrm{s}}$ (*Split-Quaternion Idempotents and Projections*) and $\Pi_{1,2}$ in $\mathbb{D}$ (*Split-Complex Idempotents and Projections*), and the idempotents of the split-biquaternion layer are the $\tilde\Pi_{1,2}$ of *Split-Biquaternion Idempotents and Projections*; the layer fixes the glyph.
 
-The involution here is the star on the elements, as *The conjugations and the adjoint* fixes it, and *Conventions in the Biquaternion Universe* writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.
+The involution here is the star on the elements, as *The Conjugations and the Adjoint* fixes it, and *Conventions in the Biquaternion Universe* writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.
 
 **The subscript of an idempotent is always numeric**: a pair is $\tilde\Pi_1, \tilde\Pi_2$; a second pair occurring in the same statement takes the next numbers, $\tilde\Pi_3, \tilde\Pi_4$; and the sign $\pm$ is never written as a subscript, so a family indexed by a direction is written with its argument, $\tilde\Pi_{1,2}(\hat\mu)$, and never with the sign. The lower-case letters $p, q$ for a minimal idempotent are retired: a minimal left ideal of $\mathbb{B}$ is written $\mathbb{B}\tilde\Pi$ and never $\mathbb{B}p$, and one of $\mathbb{H}_{\mathrm{s}}$ is written $\mathbb{H}_{\mathrm{s}}\tilde\pi$.
 
@@ -199,15 +199,15 @@ The idempotent glyph is therefore **split by the case rule**, and the split is t
 
 | Symbol | Role |
 |---|---|
-| $\tilde\Pi$ | an idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates |
-| $\tilde\pi$ | an idempotent of the quaternion or split-quaternion layer |
-| $\Pi$ | an idempotent of the complex, split-complex or dual layer, where no tilde is written |
+| $\tilde\Pi$ | An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates |
+| $\tilde\pi$ | An idempotent of the quaternion or split-quaternion layer |
+| $\Pi$ | An idempotent of the complex, split-complex or dual layer, where no tilde is written |
 
 The convention is one of **notation, not of substance**: an element written $\tilde\Pi$ is not a different kind of object from one written $\tilde Q$, only an element known to be idempotent, and the glyph records that knowledge at the point of use; a passage that needs a generic idempotent variable writes $\tilde\Pi$.
 
-### The nilpotent convention
+### The Nilpotent Convention
 
-The nilpotents carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The idempotent convention*): the lower-case $\tilde\nu$ of the quaternion and split-quaternion layers and the upper-case $\tilde\Upsilon$ of the biquaternion and split-biquaternion layers, as the case rule requires. **The capital is an upsilon and not a $Y$.**
+The nilpotents carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The Idempotent Convention*): the lower-case $\tilde\nu$ of the quaternion and split-quaternion layers and the upper-case $\tilde\Upsilon$ of the biquaternion and split-biquaternion layers, as the case rule requires. **The capital is an upsilon and not a $Y$.**
 
 A **nilpotent** of the algebra is an element $\tilde\nu$ whose square vanishes,
 
@@ -215,7 +215,7 @@ $$
 \tilde\nu^2 = 0 .
 $$
 
-**The square is read in a named product**, the algebra product unless the statement names another: the corpus writes nilpotents in the four general products of *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* as well, and the class is relative to the product — an element square-zero in the plain product need not be square-zero in the general plain sesquilinear one, and in the plain antisymmetric block every central element is square-zero, the unit among them. The star preserves the class, $(\tilde\nu^{*})^2 = (\tilde\nu^2)^{*} = 0$, so the star pairs the nilpotents two by two and fixes none of them. **No nilpotent is a Hermitian idempotent**, a Hermitian nilpotent being zero, so no nilpotent is a pure state; it is nevertheless the partner of the idempotent in a minimal left ideal — for the standard pair $\mathbb{B}\tilde\Upsilon_2 = \mathbb{B}\tilde\Pi_1$ — and its products with its star are Hermitian idempotents of that ideal.
+**The square is read in a named product**, the algebra product unless the statement names another: the corpus writes nilpotents in the four general products of *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* as well, and the class is relative to the product — an element square-zero in the plain product need not be square-zero in the general plain sesquilinear one, and in the plain antisymmetric block every central element is square-zero, the unit among them. **No nilpotent is a Hermitian idempotent**, a Hermitian nilpotent being zero, so no nilpotent is a pure state; it is nevertheless the partner of the idempotent in a minimal left ideal — for the standard pair $\mathbb{B}\tilde\Upsilon_2 = \mathbb{B}\tilde\Pi_1$ — and its products with its star are Hermitian idempotents of that ideal.
 
 **The subscript of a nilpotent is always numeric**, as for the idempotents: a pair is $\tilde\nu_1, \tilde\nu_2$, a second pair in the same statement takes the next numbers, and a sign is never written as a subscript.
 
@@ -225,9 +225,9 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 
 | Symbol | Role |
 |---|---|
-| $\tilde\Upsilon$ | a nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates |
-| $\tilde\nu$ | a nilpotent of the quaternion or split-quaternion layer |
-| $\Upsilon$ | a nilpotent of the complex, split-complex or dual layer, where no tilde is written |
+| $\tilde\Upsilon$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates |
+| $\tilde\nu$ | A nilpotent of the quaternion or split-quaternion layer |
+| $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
 
 The convention is one of **notation, not of substance**: an element written $\tilde\nu$ is not a different kind of object from one written $\tilde Q$, only an element known to be nilpotent.
 
@@ -259,7 +259,7 @@ The conventions are of two kinds: the mathematical notation, and the working con
 
 A generic element of a number system is written as a linear combination of the basis with its coefficients in
 the scalar sector of the system, the biquaternion element being $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$
-with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter of its own: $\alpha, \beta$ for the Booleans, $n, m$ for the naturals and the integers, $a, b, c$ for the rationals and the reals, and $A = a + ia'$, $B = b + ib'$ for the commutative two-parameter systems. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a **natural sign**. The involution of the base extends to the coefficients and is written with a **bar**. Their composite is the Hermitian anti-automorphism that makes the algebra a Hilbert algebra, written with a **star**; its negative is the **anti-Hermitian** conjugation, written **flat**; and the **dagger** is the adjoint of an operator, written on operators and never on the elements. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.
+with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter of its own: $\alpha, \beta$ for the Booleans, $n, m$ for the naturals and the integers, $a, b, c$ for the rationals and the reals, and $A = a + ia'$, $B = b + ib'$ for the commutative two-parameter systems. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a **natural sign**. The involution of the base extends to the coefficients and is written with a **bar**. Their composite is the Hermitian anti-automorphism, written with a **star**; its negative is the **anti-Hermitian** conjugation, written **flat**; and the **dagger** is the adjoint of an operator, written on operators and never on the elements. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. The corpus writes a **form** with two arguments and its **algebraic norm** with one, the generic pair $\mathrm{Form}(\tilde P,\tilde Q)$ and $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.
 
 On the number systems the **case** records whether the commuting scalar sector is larger than the reals and the **tilde** records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $A$ complex or split-complex or dual, $\tilde q$ quaternion or split-quaternion, and $\tilde Q$ biquaternion or split-biquaternion. The **idempotents**, the **nilpotents** and the **roots** carry symbols of their own, split by the same case rule: $\tilde\Pi$ is an idempotent or a pure state of the biquaternion and split-biquaternion layers, and the minimal left ideal it generates, $\tilde\pi$ the same in the quaternion and split-quaternion layers, and $\Pi$ in the complex, split-complex and dual layers where no tilde is written; $\tilde\nu$ is a nilpotent of the quaternion or split-quaternion layer and $\tilde\Upsilon$ a nilpotent of the biquaternion or split-biquaternion layer; $\tilde\Xi$ is a root of $-1$ of the biquaternion and split-biquaternion layers and $\tilde\xi$ the same in the quaternion and split-quaternion layers; while $\tilde P$ is the generic element of a statement that holds for every element. The upper-case tilde carries four roles — the idempotent, the nilpotent, the root and the generic element — and the split is deliberate.
 
@@ -269,31 +269,31 @@ The working conventions are the corpus's own. Every article is registered in exa
 
 | Symbol | Meaning |
 |---|---|
-| $\bar{\cdot}$ | complex conjugation: the involution of the base, extended to the element |
-| ${}^{\natural}$ | quaternion conjugation: the intrinsic conjugate of the algebra |
+| $\bar{\cdot}$ | Complex conjugation: the involution of the base, extended to the element |
+| ${}^{\natural}$ | Quaternion conjugation: the intrinsic conjugate of the algebra |
 | ${}^{*}$ | Hermitian conjugation, the composite of the bar and the natural sign |
-| ${}^{\flat} = -{}^{*}$ | anti-Hermitian conjugation |
-| ${}^{\dagger}$ | the general adjoint of an operator, of which the star is the instance in the positive definite form; written on operators and never on elements |
-| $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}, \mathbb{O}$ | the number systems of the corpus, in the order the corpus reaches them |
-| lower case, upper case | the scalar sector is the reals, or larger than the reals |
-| tilde | the presence of the quaternionic factor |
-| $\alpha, \beta$; $n, m$; $a, b, c$ | the generic elements of the Booleans, the naturals and the integers, and the rationals and the reals |
-| $A = a + ia'$, $B = b + ib'$ | the generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime |
-| $\tilde\Xi$ | a root of $-1$ of the biquaternion or split-biquaternion layer |
-| $\tilde\xi$ | a root of $-1$ of the quaternion or split-quaternion layer |
-| $\Xi$ | a root of $-1$ of the complex, split-complex or dual layer |
-| $\tilde\Pi$ | an idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal it generates |
-| $\tilde\pi$ | an idempotent of the quaternion or split-quaternion layer |
-| $\Pi$ | an idempotent of the complex, split-complex or dual layer |
-| $\tilde\nu$ | a nilpotent of the quaternion or split-quaternion layer |
-| $\tilde\Upsilon$ | a nilpotent of the biquaternion or split-biquaternion layer |
-| $\tilde P$ | the generic element of the algebra, in a statement that holds for every element |
-| $\mathrm{Form}(\tilde P,\tilde Q)$, $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$ | the generic form and the generic norm (§*The form convention and the norm convention*) |
-| `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | the four groups of a category, in that order |
-| `- Applications` | the group that closes a category with the concrete instances of its structure |
-| `+` | a planned article, registered in the menu and not yet written |
-| `articles_maths/<slug>.md` | the file of a mathematical article; the slug is the title in lower case with hyphens |
-| Introduction, thematic sections, Summary, Summary of Notation, Further Reading | the skeleton of every article |
+| ${}^{\flat} = -{}^{*}$ | Anti-Hermitian conjugation |
+| ${}^{\dagger}$ | The general adjoint of an operator, of which the star is the instance in the positive definite form; written on operators and never on elements |
+| $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}, \mathbb{O}$ | The number systems of the corpus, in the order the corpus reaches them |
+| Lower case, upper case | The scalar sector is the reals, or larger than the reals |
+| Tilde | The presence of the quaternionic factor |
+| $\alpha, \beta$; $n, m$; $a, b, c$ | The generic elements of the Booleans, the naturals and the integers, and the rationals and the reals |
+| $A = a + ia'$, $B = b + ib'$ | The generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime |
+| $\tilde\Xi$ | A root of $-1$ of the biquaternion or split-biquaternion layer |
+| $\tilde\xi$ | A root of $-1$ of the quaternion or split-quaternion layer |
+| $\Xi$ | A root of $-1$ of the complex, split-complex or dual layer |
+| $\tilde\Pi$ | An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal it generates |
+| $\tilde\pi$ | An idempotent of the quaternion or split-quaternion layer |
+| $\Pi$ | An idempotent of the complex, split-complex or dual layer |
+| $\tilde\nu$ | A nilpotent of the quaternion or split-quaternion layer |
+| $\tilde\Upsilon$ | A nilpotent of the biquaternion or split-biquaternion layer |
+| $\tilde P$ | The generic element of the algebra, in a statement that holds for every element |
+| $\mathrm{Form}(\tilde P,\tilde Q)$, $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$ | The generic form and the generic norm (§*The Form Convention and the Norm Convention*) |
+| `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | The four groups of a category, in that order |
+| `- Applications` | The group that closes a category with the concrete instances of its structure |
+| `+` | A planned article, registered in the menu and not yet written |
+| `articles_maths/<slug>.md` | The file of a mathematical article; the slug is the title in lower case with hyphens |
+| Introduction, thematic sections, Summary, Summary of Notation, Further Reading | The skeleton of every article |
 
 ## Further Reading
 

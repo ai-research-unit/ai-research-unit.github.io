@@ -415,8 +415,8 @@ step whose thermodynamic price the Landauer article owns.
 
 **The rank and the mass label.** In the probability band the cone is where the sesquilinear square drops
 rank, from two to one, and the rank is read as a mass label in *Mass, Rank and the Positivity of the
-Dagger*. *The Four Readings of Mass: Norm, Rank, Charge and Scale* separates the senses of the word mass,
-and the cone owns one of them cleanly and another only as a value. The cone is exactly the rank-one locus,
+Dagger*. *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale* marks which of the four readings
+is the mass, and the cone owns that one cleanly and the rank only as a value. The cone is exactly the rank-one locus,
 so "on the cone" and "one polarisation" are the same statement; the norm reads the same set as the level
 set $N=0$, and a level set is a value and not a count. The cone is therefore not the mass itself. It is
 the boundary at which the count of polarisations falls, and the shells $N=-m^2c^2$ around it are what the

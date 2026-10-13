@@ -1,15 +1,16 @@
-# __The Four Readings of Mass: Norm, Rank, Charge and Scale__
+# __The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale__
 
 ## Introduction
 
-The word **mass** is used in the corpus at four places, and it is used each time of a different object. The
-biquaternion norm $N$ is the interval and carries the mass shell; the rank of the Hermitian square is the
-count of polarisations and is read as a mass label; the compact part of the algebra is what makes the
-internal charge discrete, and the charge is read beside the mass as the other internal label; and the
-**polar scale** $r$ of the polar representation multiplies the element and is read as a change of unit. Four
-interpretations, one word, and no article states whether they are one object or four. This article is that
-statement. It owns no new theorem: it collects the four interpretations, states on which elements they agree, and
-states exactly where they part company.
+The algebra is read four ways in the corpus, and the four are read off one element. The biquaternion norm $N$
+is the interval and carries the mass shell: of the four, this is the one the word **mass** names. The rank of
+the Hermitian square is the count of polarisations, and it reads only whether the mass vanishes, never how
+much. The compact part of the algebra is what makes the internal charge discrete: this is the internal charge
+label, read beside the mass and not a reading of it. The **polar scale** $r$ of the polar representation
+multiplies the element and is read as a change of unit: it is the unit the mass is measured in and not a value
+of it. Four readings, one element, and no article states on which elements they agree. This article is that
+statement. It owns no new theorem: it collects the four readings, marks which of them the word mass names,
+states on which elements they agree, and states exactly where they part company.
 
 The owners are, in order, *Biquaternion Norm and Invertibility* for the norm and its reversal by the central
 imaginary, *Mass, Rank and the Positivity of the Dagger* for the rank and the positive cone, *Particle
@@ -31,12 +32,12 @@ $-c^2t^2+\mathbf{x}^2$. Read as mass, its sign is the mass-shell sign: the shell
 hyperboloid and the light cone is $N=0$. The interpretation is **value**: which level set the element lies on.
 
 **The rank.** The Hermitian square $\tilde{Q}\tilde{Q}^{*}$ is positive semidefinite, of rank two when
-$N(\tilde{Q})\neq0$ and of rank at most one on the cone. Read as mass, the rank is the **count of
+$N(\tilde{Q})\neq0$ and of rank at most one on the cone. Beside the mass, the rank gives the **count of
 polarisations**: two for the massive type and one for the massless type. The interpretation is **count**: how many
 independent rank-one terms the square needs.
 
 **The charge.** The unitary slice $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$ is compact, and the
-finite-dimensional unitary representations of a compact group are labelled by discrete data. Read as mass,
+finite-dimensional unitary representations of a compact group are labelled by discrete data. Beside the mass,
 this is the **other internal label**: the charge is the discrete label of a representation of the compact
 internal group, and it is discrete because the group is compact and for no other reason. The interpretation is
 **label**: which irreducible representation the element transforms in. The slice lies inside the invertible
@@ -45,15 +46,15 @@ one of these labels.
 
 **The scale.** The polar representation writes an element as a polar factor times a phase and a unit
 element, and the modulus $r$ is the polar scale. The norm is reversed by the central imaginary,
-$N(i\tilde{Q})=-N(\tilde{Q})$, and its logarithm $\log\lvert N\rvert$ is read as a dilation potential. Read
-as mass, the scale is the **unit**: a change of $r$ is a change of the unit of length, and the conformal
+$N(i\tilde{Q})=-N(\tilde{Q})$, and its logarithm $\log\lvert N\rvert$ is read as a dilation potential. Beside
+the mass, the scale is the **unit**: a change of $r$ is a change of the unit of length, and the conformal
 rescaling acts on it. The interpretation is **unit**: how the element scales, not what level set it lies on. The
 polar representation is stated only for $N(\tilde{Q})\neq0$, so the cone is the boundary of its domain and not a
 locus it detects.
 
 ## Where the Norm and the Rank Agree
 
-Two of the four interpretations agree on one locus, and they agree exactly: **the norm vanishes on the
+Two of the four readings agree on one locus, and they agree exactly: **the norm vanishes on the
 zero-divisor cone and the rank of the Hermitian square drops there, while the charge and the scale are defined
 only off it.** The norm vanishes there; the rank drops to at most one; the other two readings do not reach the
 cone at all, the compact label because the unitary slice is the complement of the cone and the polar scale
@@ -95,18 +96,19 @@ algebra and not a legitimate state.
 
 ## The Dictionary
 
-| interpretation | the object | what it says | where it fails |
-|---|---|---|---|
-| norm | $N(\tilde{Q})=\sum_\mu Q_\mu^2$ | the value and its sign; the mass shell as a level set | detects no polarisation count and no label |
-| rank | $\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the count of polarisations, two or one | does not fix the sign of $N$ |
-| charge | the compact slice $U(2)\cong(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$ | the discrete internal label | says nothing about the cone |
-| scale | the polar modulus $r$ | the unit of length, the dilation potential | is a unit and not a level set |
+| reading | the object | what it says | and the mass | where it fails |
+|---|---|---|---|---|
+| norm | $N(\tilde{Q})=\sum_\mu Q_\mu^2$ | the value and its sign; the mass shell as a level set | is the mass: $N=-m^2c^2$ on shell | detects no polarisation count and no label |
+| rank | $\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the count of polarisations, two or one | whether $m$ vanishes, never its value | does not fix the sign of $N$ |
+| charge | the compact slice $U(2)\cong(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$ | the discrete internal label | nothing; $m$ is not a charge | says nothing about the cone |
+| scale | the polar modulus $r$ | the unit of length, the dilation potential | the unit of $m$: $r=mc$ for the four-momentum | is a unit and not a level set |
 
-The dictionary is the answer the article offers: the four interpretations are four questions asked of one element,
+The dictionary is the answer the article offers: the four readings are four questions asked of one element,
 the norm and the rank coincide on the cone, the charge and the scale are defined only off it, and each one is
 silent where the others speak. **They are not four kinds of
-mass**, and the article does not claim they are one kind either; the claim is that the corpus's four uses of
-the word are the four rows of the table, and that a reader who meets the word should ask which row is meant.
+mass**, and the article does not claim they are one kind either; the claim is that the four readings of the
+element are the four rows of the table and that only the first of them is the mass, so that a reader who meets
+the word should ask which reading is meant.
 
 ## The Fifth Reading, Named and Left Out
 
@@ -128,24 +130,26 @@ readings of one element, and this pair is a reading of one term.
 
 ## Physical Readings
 
-- **The word mass has four referents and one shared locus.** The interpretation is that the framework's "mass"
-is well defined only together with its row, and that the massless locus — the cone — is the one place where
-the norm and the rank rows agree. Boundary: a statement about usage, and it adds no identity between the four.
+- **One of the four readings is the mass; the other three are read beside it.** The interpretation is that the
+framework's mass is the norm's level set, $N=-m^2c^2$ on shell, and that the rank, the charge and the scale are
+separate labels the word mass does not name. The massless locus — the cone — is the one place where the norm
+and the rank agree. Boundary: a statement about usage, and it adds no identity between the four.
 - **Discreteness of charge is compactness.** The interpretation of the charge row is that charge is discrete
 because the internal group is compact, which is the same mechanism as the quantisation of angular
 momentum and not a separate postulate.
-- **The scale is the odd row.** The interpretation of the scale row is that it is the one interpretation that is not a
+- **The scale is the odd row.** The interpretation of the scale row is that it is the one reading that is not a
 property of the element alone: $r$ is a unit and moves under a conformal rescaling, so it is the row where
 the framework's mass meets its choice of units, which is the subject of *Action, Units, and the Constants
 of the Biquaternion Universe*.
 
 ## Summary
 
-The corpus uses the word mass of four objects: the norm $N$ (a value and its level set), the rank of the
-Hermitian square (a count of polarisations), the compact-slice label (a discrete internal charge) and the
-polar scale $r$ (a unit of length). The norm and the rank agree on the zero-divisor cone and nowhere else; the
-charge and the scale are silent about the cone because both are defined only off it. Off the cone the rank
-does not fix the sign of the norm, so "massive" covers the timelike and the spacelike alike. The rank-one
+The algebra is read four ways, all off one element: the norm $N$ (a value and its level set, and the one
+reading the word mass names), the rank of the Hermitian square (a count of polarisations, reading only whether
+the mass vanishes), the compact-slice label (a discrete internal charge, not a mass) and the polar scale $r$
+(a unit of length, the unit the mass is measured in). The norm and the rank agree on the zero-divisor cone and
+nowhere else; the charge and the scale are silent about the cone because both are defined only off it. Off the
+cone the rank does not fix the sign of the norm, so "massive" covers the timelike and the spacelike alike. The rank-one
 condition that reads as massless on the material sector reads as pure state on the informational sector, and
 the article keeps the two apart. A fifth interpretation — the operator spectrum of $L_{\tilde{Q}}$ — is named and
 left out, and the Dirac and Majorana pair is placed at the equation level, outside the four rows.

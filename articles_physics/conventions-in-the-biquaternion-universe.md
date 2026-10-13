@@ -64,9 +64,9 @@ The case and the tilde of the glyph are fixed first, and the element is written 
 
 | System | Name | Generic element | Scalar–vector decomposition | Coefficients |
 |---|---|---|---|---|
-| $\mathbb{C}$ | complex numbers | $A = a + ia'$ | scalar $a$, vector $ia'$ | real, $a, a'$ |
-| $\mathbb{H}$ | quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | real |
-| $\mathbb{B}$ | biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{C}$ | complex, $Q_\mu = q_\mu + iq'_\mu$ |
+| $\mathbb{C}$ | Complex numbers | $A = a + ia'$ | Scalar $a$, vector $ia'$ | Real, $a, a'$ |
+| $\mathbb{H}$ | Quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | Real |
+| $\mathbb{B}$ | Biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{C}$ | Complex, $Q_\mu = q_\mu + iq'_\mu$ |
 
 Four rules are read off the table. **A complex element carries a majuscule**, $A$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $A = a + ia'$. And **the quaternionic elements carry a tilde**: lower case for the quaternions, $\tilde q$, and upper case for the biquaternions, $\tilde Q$. Finally, **the element is a scalar part plus a vector part**: the scalar part is carried by the unit — $1$ in $\mathbb{C}$, $e_0$ in $\mathbb{H}$ and $\mathbb{B}$ — and the vector part by the remaining basis directions, assembled in the bold letter $\mathbf q$ or $\mathbf Q$, so that $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$ and $Q_\mu = q_\mu + iq'_\mu$.
 
@@ -82,7 +82,7 @@ $$
 
 gives $q_\mu$ as the coefficient of $e_\mu$ and $q'_\mu$ as the coefficient of $ie_\mu$ — the same rule for every $\mu$:
 
-| coefficient | real part | attached to | imaginary part | attached to |
+| Coefficient | Real part | Attached to | Imaginary part | Attached to |
 |---|---|---|---|---|
 | $Q_0$ | $q_0$ | $e_0$ | $q'_0$ | $ie_0$ |
 | $Q_1$ | $q_1$ | $e_1$ | $q'_1$ | $ie_1$ |
@@ -181,14 +181,14 @@ $$
 
 with $\mathbf{x} = x e_1 + y e_2 + z e_3$ the real spatial vector and $i\mathbf{x}' = i x' e_1 + i y' e_2 + i z' e_3$ its imaginary counterpart. The **material coordinate** $\tilde{Q} = ict\,e_0 + \mathbf{x}$ and the **informational coordinate** $\tilde{Q} = ct'\,e_0 + i\mathbf{x}'$ are the two ends of it, and each subspace keeps whichever part of the dictionary its defining condition leaves free.
 
-| subspace | algebraic name | physical name | defining condition | basis | real parameters | physical coordinates |
-|---|---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | the centre | complex time sector | $\tilde{Q}^{\natural} = \tilde{Q}$ | $e_0,\ ie_0$ | $q_0,\ q'_0$ | $ct',\ ict$ |
-| $\mathrm{Vect}(\mathbb{B})$ | vector | complex space sector | $\tilde{Q}^{\natural} = -\tilde{Q}$ | $e_1,\ e_2,\ e_3,\ ie_1,\ ie_2,\ ie_3$ | $q_1,\ q_2,\ q_3,\ q'_1,\ q'_2,\ q'_3$ | $x,\ y,\ z,\ ix',\ iy',\ iz'$ |
-| $\mathbb{H}_{\mathbb{B}}$ | quaternion | real sector | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0,\ e_1,\ e_2,\ e_3$ | $q_0,\ q_1,\ q_2,\ q_3$ | $ct',\ x,\ y,\ z$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | antiquaternion | imaginary sector | $\bar{\tilde{Q}} = -\tilde{Q}$ | $ie_0,\ ie_1,\ ie_2,\ ie_3$ | $q'_0,\ q'_1,\ q'_2,\ q'_3$ | $ict,\ ix',\ iy',\ iz'$ |
-| $\mathbb{M}_+$ | Hermitian | informational sector | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $q_0,\ q'_1,\ q'_2,\ q'_3$ | $ct',\ ix',\ iy',\ iz'$ |
-| $\mathbb{M}_-$ | anti-Hermitian | material sector | $\tilde{Q}^{\flat} = \tilde{Q}$ | $ie_0,\ e_1,\ e_2,\ e_3$ | $q'_0,\ q_1,\ q_2,\ q_3$ | $ict,\ x,\ y,\ z$ |
+| Subspace | Algebraic name | Physical name | Basis | Real parameters | Physical coordinates |
+|---|---|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | The centre | Complex time sector | $e_0,\ ie_0$ | $q_0,\ q'_0$ | $ct',\ ict$ |
+| $\mathrm{Vect}(\mathbb{B})$ | Vector | Complex space sector | $e_1,\ e_2,\ e_3,\ ie_1,\ ie_2,\ ie_3$ | $q_1,\ q_2,\ q_3,\ q'_1,\ q'_2,\ q'_3$ | $x,\ y,\ z,\ ix',\ iy',\ iz'$ |
+| $\mathbb{H}_{\mathbb{B}}$ | Quaternion | Real sector | $e_0,\ e_1,\ e_2,\ e_3$ | $q_0,\ q_1,\ q_2,\ q_3$ | $ct',\ x,\ y,\ z$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | Antiquaternion | Imaginary sector | $ie_0,\ ie_1,\ ie_2,\ ie_3$ | $q'_0,\ q'_1,\ q'_2,\ q'_3$ | $ict,\ ix',\ iy',\ iz'$ |
+| $\mathbb{M}_+$ | Hermitian | Informational sector | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $q_0,\ q'_1,\ q'_2,\ q'_3$ | $ct',\ ix',\ iy',\ iz'$ |
+| $\mathbb{M}_-$ | Anti-Hermitian | Material sector | $ie_0,\ e_1,\ e_2,\ e_3$ | $q'_0,\ q_1,\ q_2,\ q_3$ | $ict,\ x,\ y,\ z$ |
 
 Each subspace carries an **algebraic name**, taken from the involution that defines it, and a **physical name**, taken from the role it plays; the companion articles are titled by the physical name.
 
@@ -218,12 +218,12 @@ pairs the two sectors — in this series' usage, *the sectors*, without qualific
 
 The algebra carries **four general products** — one to each of the four choices of the two slots, the first factor read as it stands or through ${}^{\natural}$ and the second as it stands or through ${}^{*}$ — and each of the four splits into a **symmetric part** and an **antisymmetric part**, so that the complex space carries **twelve products** in all. The names are these, with the three-letter code the band articles write them by:
 
-| the general product | its symmetric part | its antisymmetric part |
+| The general product | Its symmetric part | Its antisymmetric part |
 |---|---|---|
-| the general plain bilinear product ($\mathrm{GPA}$) | the symmetric plain bilinear product ($\mathrm{SPA}$) | the antisymmetric plain bilinear product ($\mathrm{APA}$) |
-| the general quaternionic bilinear product ($\mathrm{GQA}$) | the symmetric quaternionic bilinear product ($\mathrm{SQA}$) | the antisymmetric quaternionic bilinear product ($\mathrm{AQA}$) |
-| the general plain sesquilinear product ($\mathrm{GPS}$) | the symmetric plain sesquilinear product ($\mathrm{SPS}$) | the antisymmetric plain sesquilinear product ($\mathrm{APS}$) |
-| the general quaternionic sesquilinear product ($\mathrm{GQS}$) | the symmetric quaternionic sesquilinear product ($\mathrm{SQS}$) | the antisymmetric quaternionic sesquilinear product ($\mathrm{AQS}$) |
+| The general plain bilinear product ($\mathrm{GPA}$) | The symmetric plain bilinear product ($\mathrm{SPA}$) | The antisymmetric plain bilinear product ($\mathrm{APA}$) |
+| The general quaternionic bilinear product ($\mathrm{GQA}$) | The symmetric quaternionic bilinear product ($\mathrm{SQA}$) | The antisymmetric quaternionic bilinear product ($\mathrm{AQA}$) |
+| The general plain sesquilinear product ($\mathrm{GPS}$) | The symmetric plain sesquilinear product ($\mathrm{SPS}$) | The antisymmetric plain sesquilinear product ($\mathrm{APS}$) |
+| The general quaternionic sesquilinear product ($\mathrm{GQS}$) | The symmetric quaternionic sesquilinear product ($\mathrm{SQS}$) | The antisymmetric quaternionic sesquilinear product ($\mathrm{AQS}$) |
 
 **The code is read letter by letter.** The first letter says which of the three operations of a row — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one, whose first slot is read as it stands, and $\mathrm Q$ the quaternionic one, whose first slot carries ${}^{\natural}$; and the third says the family — $\mathrm A$ the **algebra** over $\mathbb{C}$, whose three products are $\mathbb{C}$-bilinear, and $\mathrm S$ the **sesqualgebra** over $(\mathbb{C},\bar{\cdot})$, whose three products are sesquilinear. The four general products are the multiplications of the four general structures of the band; the eight parts are the symmetric and antisymmetric products beside them; and the twelve codes together name the twelve algebraic structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
@@ -278,14 +278,6 @@ Throughout the series a signature is written $(p,q)$ with the **positive** direc
 
 **Where the four are proved and named.** The classification of the four, their Gram matrices, their signatures, their isometry groups, their Witt classes, and their reading as Hermitian forms over the algebra with respect to their own involutions are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, with its twin *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*.
 
-**The interval.** The row of $N$ read on the material sector, with $\tilde{T} = ict\,e_0 + \mathbf{x}$, is the **Minkowski interval**,
-
-$$
-\langle\tilde{T},\tilde{T}\rangle_{\natural} = -c^2t^2 + x^2 + y^2 + z^2,
-$$
-
-of signature $(3,1)$. It is level 2 of the three levels of the word *metric*, and the $ict$ convention of §*The Coordinate Dictionary and the Sector Names* is what puts the metric into the coefficient. The other three rows are its companions — the interval and its negative, the Euclidean square and its negative — as the four forms read on the material sector of *The Four Forms, the Four Algebraic Norms and the Change of Scalars*.
-
 **What is forced and what is chosen.** The two bilinear forms are $\mathbb{C}$-bilinear in both slots and the two sesquilinear forms are linear in the first slot and sesquilinear in the second. That is not a choice but a consequence of the $\mathbb{C}$-linearity of the natural sign together with the centrality of $\mathbb{C}$ in $\mathbb{B}$; its verification is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*. Multiplication by $i$ reverses the sign of the two bilinear forms and leaves the two sesquilinear forms unchanged, since the centrality of $i$ puts either a factor $i^2 = -1$ on both slots or on neither.
 
 ## The Four Algebraic Norms
@@ -298,7 +290,7 @@ $$
 
 and the convention is one of **notation, not of substance**: the pair is the form and the norm of the statement at hand, and the four forms above and the four norms below are its instances.
 
-**The four algebraic norms.** The **algebraic norm** of a form is that form read at its two equal arguments, so the four algebraic norms are the diagonals of the four forms. **One letter, two arities:** a letter names the form when it carries two arguments and the algebraic norm when it carries one, so $B$ is the form $B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q})$ and the norm $B(\tilde{Q}) = B(\tilde{Q},\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle$, and the same holds for $N$, $H$ and $K$. Read with one argument, the value lies in $\mathbb{C}$ for the two bilinear norms and in $\mathbb{R}$ for the two sesquilinear norms, because a sesquilinear form has a real diagonal. The four names are those of the four forms with *algebraic norm* in place of *form*:
+**The four algebraic norms.** Each pair gives one norm, the diagonal of its form. **One letter, two arities:** a letter names the form when it carries two arguments and the algebraic norm when it carries one, so $B$ is the form $B(\tilde{P},\tilde{Q}) = \mathrm{Sc}(\tilde{P}\tilde{Q})$ and the norm $B(\tilde{Q}) = B(\tilde{Q},\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle$, and the same holds for $N$, $H$ and $K$. Read with one argument, the value lies in $\mathbb{C}$ for the two bilinear norms and in $\mathbb{R}$ for the two sesquilinear norms, because a sesquilinear form has a real diagonal. The four names are those of the four forms with *algebraic norm* in place of *form*:
 
 | Norm | Pair $(a,b)$ | Definition | Value | Value in |
 |---|---|---|---|---|
@@ -309,26 +301,18 @@ and the convention is one of **notation, not of substance**: the pair is the for
 
 The third is also called the Hermitian algebraic norm and the fourth the Krein algebraic norm, and the four letters are the short names. The other sense of the word, the **topological norm**, is the square root of the definite one, $\lVert\tilde{Q}\rVert_E = \bigl(H(\tilde{Q})\bigr)^{1/2}$, and it is *The Norm Defined by a Form*.
 
-**The tool serves the framework, never the reverse.** Where a Clifford computation and a biquaternion convention appear to disagree, the disagreement is in the translation and is resolved by adjusting the generators, the adjoint or the explicit factors of $i$ — never by altering the biquaternion norm, the $ict$ assignment or the sector split. The three levels of the word *metric* — the biquaternion norm, the two real sectors with their $ict$ metric, and the Clifford tool — are set out in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*.
-
 ## The Central Map and Its Restrictions
 
-The scalar imaginary $i$ is central, so multiplication by it is **one** $\mathbb{C}$-linear map of the algebra, and the movements the series reads in four places are its restrictions to the subspaces. The generator satisfies $(ie_0)^2=-e_0$, so its powers close on four values and the group $e^{i\theta}e_0$ of the centre interpolates between them, of order four; and it reverses the norm,
-
-$$
-N(i\tilde{Q}) = -N(\tilde{Q}),
-$$
-
-so on a real subspace it sends the interval to its negative: it is a sign flip of the form and not an isometry of it. The remarkable subspaces carry the restrictions.
+The scalar imaginary $i$ is central, so multiplication by it is **one** $\mathbb{C}$-linear map of the algebra, and the movements the series reads in four places are its restrictions to the subspaces. The generator satisfies $(ie_0)^2=-e_0$, so its powers close on four values and the group $e^{i\theta}e_0$ of the centre interpolates between them. The remarkable subspaces carry the restrictions.
 
 | Subspace | $i\,\cdot$ | The name |
 |---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$, the complex time sector | itself | the global phase |
-| $\mathrm{Vect}(\mathbb{B})$, the complex space sector | itself | the duality rotation |
-| $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ | each other | the Wick rotation |
-| $\mathbb{M}_-$ and $\mathbb{M}_+$ | each other | the material–informational exchange |
+| $\mathbb{C}_{\mathbb{B}}$, the complex time sector | Itself | The global phase |
+| $\mathrm{Vect}(\mathbb{B})$, the complex space sector | Itself | The duality rotation |
+| $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ | Each other | The Wick rotation |
+| $\mathbb{M}_-$ and $\mathbb{M}_+$ | Each other | The material–informational exchange |
 
-The rule that ties the names is a rule about the generator and not about the subspaces: the map is central, so it acts the same way in every subspace. Centrality is what makes the four restrictions one element rather than four, since a non-central generator would give one rotation per carrier. The map is limited in three ways. The generator is a rotation, invertible and of order four, so it is not a projection, a collapse or a measurement — a loss of information is a non-invertible map and belongs to *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*. It reverses the norm, so the phase is not an isometry of the interval. And it is a scalar that acts through the centre and never through the quaternion directions.
+The rule that ties the names is a rule about the generator and not about the subspaces: the map is central, so it acts the same way in every subspace, and it is a scalar that acts through the centre and never through the quaternion directions; a non-central generator would give one rotation per carrier. It is a rotation and not a projection, a collapse or a measurement — a loss of information is a non-invertible map and belongs to *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*.
 
 **The relation to the Wick rotation.** The coordinate continuation $t \mapsto -i\tau$ of *Interpretation of the Wick Rotation in the Biquaternion Universe*, and the two senses in which the series uses the phrase *Wick rotation* — the exchange of the real and imaginary sectors, on the whole element, and the continuation of the time coordinate, a relabeling of one coordinate — are set out there. The two share one generator and one temporal sign flip, and they are not the same map.
 
@@ -354,9 +338,9 @@ The root glyph is therefore **split by the case rule**, and the split is the rea
 
 | Symbol | Role |
 |---|---|
-| $\tilde{\Xi}$ | a root of $-1$ of the biquaternion or split-biquaternion layer |
-| $\tilde{\xi}$ | a root of $-1$ of the quaternion or split-quaternion layer |
-| $\Xi$ | a root of $-1$ of the complex, split-complex or dual layer, where no tilde is written |
+| $\tilde{\Xi}$ | A root of $-1$ of the biquaternion or split-biquaternion layer |
+| $\tilde{\xi}$ | A root of $-1$ of the quaternion or split-quaternion layer |
+| $\Xi$ | A root of $-1$ of the complex, split-complex or dual layer, where no tilde is written |
 
 The convention is one of **notation, not of substance**: an element written $\tilde{\Xi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be a root of $-1$.
 
@@ -376,9 +360,9 @@ The idempotent glyph is therefore **split by the case rule**, and the split is t
 
 | Symbol | Role |
 |---|---|
-| $\tilde{\Pi}$ | an idempotent, a projector or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates |
-| $\tilde{\pi}$ | an idempotent of the quaternion or split-quaternion layer, in the mathematical corpus |
-| $\Pi$ | an idempotent of the complex, split-complex or dual layer, in the mathematical corpus |
+| $\tilde{\Pi}$ | An idempotent, a projector or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates |
+| $\tilde{\pi}$ | An idempotent of the quaternion or split-quaternion layer, in the mathematical corpus |
+| $\Pi$ | An idempotent of the complex, split-complex or dual layer, in the mathematical corpus |
 
 The convention is one of **notation, not of substance**: an element written $\tilde{\Pi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be idempotent, and the glyph records that knowledge at the point of use; a passage that needs a generic idempotent variable writes $\tilde{\Pi}$.
 
@@ -392,7 +376,7 @@ $$
 \tilde{\nu}^2 = 0 .
 $$
 
-**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (§*The nilpotent convention* of *Conventions in Mathematics*), and the class is relative to the product. A nilpotent is never a projector, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\tilde{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
+**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (§*The Nilpotent Convention* of *Conventions in Mathematics*), and the class is relative to the product. A nilpotent is never a projector, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\tilde{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
 
 **The subscript of a nilpotent is always numeric**, as for the idempotents: a pair is $\tilde{\nu}_1, \tilde{\nu}_2$, a second pair in the same statement takes the next numbers, and a sign is never written as a subscript.
 
@@ -402,9 +386,9 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 
 | Symbol | Role |
 |---|---|
-| $\tilde{\Upsilon}$ | a nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Upsilon}$ it generates |
-| $\tilde{\nu}$ | a nilpotent of the quaternion or split-quaternion layer |
-| $\Upsilon$ | a nilpotent of the complex, split-complex or dual layer, where no tilde is written |
+| $\tilde{\Upsilon}$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Upsilon}$ it generates |
+| $\tilde{\nu}$ | A nilpotent of the quaternion or split-quaternion layer |
+| $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
 
 The convention is one of **notation, not of substance**: an element written $\tilde{\nu}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be nilpotent.
 
@@ -533,26 +517,15 @@ $$
 \tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\overline{\tilde{\Psi}^{\natural}}
 $$
 
-is the **anti-Hermitian conjugation**. It is not merely a sign variant of ${}^{*}$; it has its own algebraic character:
-
-- it is a $\mathbb{C}$-**antilinear** involution, $(\alpha\tilde{A} + \beta\tilde{B})^\flat = \bar{\alpha}\tilde{A}^\flat + \bar{\beta}\tilde{B}^\flat$;
-- it is **order-reversing with a twist**, $(\tilde{A}\tilde{B})^\flat = -\tilde{B}^\flat\tilde{A}^\flat$, the sign being the only difference from an ordinary anti-automorphism;
-- it acts by a **sign on the two sectors**,
-$$
-\tilde{\Psi}^\flat = +\tilde{\Psi}\ \ (\tilde{\Psi} \in \mathbb{M}_-), \qquad
-\tilde{\Psi}^\flat = -\tilde{\Psi}\ \ (\tilde{\Psi} \in \mathbb{M}_+);
-$$
-- consequently its **fixed space is the anti-Hermitian sector $\mathbb{M}_-$**.
-
-The map $\flat$ is the algebra's **real structure**, and its shape is that of a charge-conjugation (Majorana) pairing: it relates a field to its own conjugate. The sign convention on the two sectors is what makes $\mathbb{M}_-$ the fixed space, and hence what makes $\mathbb{M}_-$ the material sector — the two conventions are the same convention seen twice.
+is the **anti-Hermitian conjugation**, the negative of the star, and the algebra's **real structure** (§*The Conjugations and the Adjoint*). The sign convention on the two sectors is what makes $\mathbb{M}_-$ the material sector, and $\flat$'s fixed space is that sector (§*The Remarkable Subspaces*).
 
 ### What $\flat$ Is For
 
-$\flat$ is retained for conjugation and for the definition of the $\mathbb{M}_\pm$ split itself, for the trace and the bilinear pairings, and for the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino and the CPT theorem develop. In every case the coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\Psi}^\flat$, and because $\flat$ is antilinear such a coupling is **not invariant under the continuous central phase** — which is why $\flat$ cannot serve as the mass term of the Dirac equation.
+$\flat$ is retained for conjugation and for the definition of the $\mathbb{M}_\pm$ split itself, for the trace and the bilinear pairings, and for the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino and the CPT theorem develop. In every case the coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\Psi}^\flat$.
 
 ### What $\flat$ Is Not
 
-$\flat$ is **not** the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention of *The Dirac Equation in Biquaternionic Form*. A reader who finds $\flat$ in an article should expect conjugation, a Majorana pairing, a bilinear, or the sector split — never a Dirac mass.
+$\flat$ is **not** the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention of *The Dirac Equation in Biquaternionic Form*. A reader who finds $\flat$ in an article should expect conjugation, a bilinear, or the sector split — never a mass.
 
 $\flat$ is **not** the charge conjugation either. It has the **shape** of a charge-conjugation pairing — it pairs an element with its own conjugate — but the operation called charge conjugation is the conjugate-linear pseudoautomorphism $\bar A=\Pi A^{*}\Pi^{-1}$, whose module form is $C[\psi]=i\gamma^{2}\psi^{*}$, and the operation is owned by *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*. The four levels of the name — the algebra's real structure $\flat$, the Clifford pseudoautomorphism, the module operation $C$, and the module real structure $\bar{\cdot}$ — are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*.
 
