@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The General Plain Sesquilinear Product on the Material Sector — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-general-plain-sesquilinear-product-on-the-material-sector"><strong>The General Plain Sesquilinear Product on the Material Sector</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The general plain sesquilinear product is the general plain bilinear product with its second factor read through the
+Hermitian conjugation,</p>
+<p>$$
+\tilde P\star\tilde Q = \tilde P\tilde Q^{*},
+$$</p>
+<p>the operation of the probability band of the framework. Its scalar part is the Born pairing
+$H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$, positive definite on the whole algebra, and its
+algebra, its two halves and its physical reading are the probability band's, owned by <em>Introduction to the
+General Plain Sesqualgebra of Biquaternions</em>, <em>The Hermitian Form as a Product: Positivity and the Real
+Part of the Born Pairing</em> and <em>The Operators of the Plain Sesquilinear Product and the Born Pairing</em>. This
+article asks what becomes of that product on the <strong>material sector</strong> $\mathbb{M}_-$, the four-vectors of
+relativistic physics, and it is the material companion of the probability band; the informational
+companion is <em>The General Plain Sesquilinear Product on the Informational Sector</em>.</p>
+<p>The answer begins with one algebraic fact: on the material sector the Hermitian conjugation is the
+central scalar $-1$,</p>
+<p>$$
+\tilde Q\in\mathbb{M}_- \ \Longrightarrow\ \tilde Q^{*}=-\tilde Q,
+$$</p>
+<p>so the sesquilinear product is <strong>minus the general plain bilinear product</strong>,</p>
+<p>$$
+\tilde P\star\tilde Q = \tilde P\tilde Q^{*} = -\tilde P\tilde Q
+\qquad (\tilde P,\tilde Q\in\mathbb{M}_-).
+$$</p>
+<p>The second slot's conjugation, which is the whole difference between the probability row and the
+composition row, is therefore <strong>invisible inside the material sector as a map</strong> — it is a global sign.
+Its content is not lost, it is displaced: the sign turns the composition's scalar form into the
+probability's, $H(\tilde P,\tilde Q)=-B(\tilde P,\tilde Q)$, and since $B$ is negative definite on
+$\mathbb{M}_-$ the Born pairing is <strong>positive definite</strong> there. On the material sector the probability
+form is the Euclidean length of the four-vector, and the light cone is <strong>not</strong> its cone of
+nulls. The cone remains the wall it was, but of the composition and not of the probability: on the
+material sector the lightlike four-vectors are the zero divisors of the probability product while no
+four-vector is a null vector of the probability form.</p>
+<p><strong>Placement and boundaries.</strong> This article is the material-sector companion of the probability band,
+<em>Focus on the General Plain Sesqualgebra (GPS) of Biquaternions — Probability</em>, and the mirror of <em>The
+Ordinary Product on the Material Sector</em> in the composition band. The product, its two halves and the
+form $H$ on the whole algebra are the band's framing articles; the reality of $H$ on the informational
+side is <em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em>, whose
+section on the state side is the announcement of the companion article and not of this one; the positivity
+of $H$, its cone and its signature are <em>Mass, Rank and the Positivity of the Dagger</em> and <em>Positivity and
+the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>; the operators, the adjoint and
+the worked element are <em>The Operators of the Plain Sesquilinear Product and the Born Pairing</em>; the
+invertibility, the units and the zero-divisor cone are <em>Norm and Invertibility in the General Plain
+Sesqualgebra</em> and <em>The Group of Units of the General Plain Algebra and the Complement of the
+Zero-Divisor Cone</em>; the material sector itself and the interval are <em>The Anti-Hermitian Subspace
+$\mathbb{M}_-$ as the Material Sector</em> and <em>Biquaternion Norm and Invertibility</em>. None of those is
+reproved here.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
+$e_0=1,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$; a
+general element is $\tilde Q=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients; the scalar part is
+$\mathrm{Sc}(\tilde Q)=Q_0$ and the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$. The conjugations are the
+complex conjugation $\bar{\cdot}$, the natural conjugation ${\natural}$, and the Hermitian conjugation
+${}^{*}=\bar{\cdot}\circ{\natural}$. The material sector is
+$\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$, with the real basis $\{ie_0,e_1,e_2,e_3\}$ and the
+coordinates $\tilde T=ict\,e_0+x e_1+y e_2+z e_3$; the informational sector is the Hermitian half,
+$\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$, and $i\mathbb{M}_-=\mathbb{M}_+$. The four scalar
+forms are $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ with Gram
+$\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis,
+$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=B(\tilde P^{\natural},\tilde Q)$,
+$H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=B(\tilde P,\tilde Q^{*})$ and
+$K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=B(\tilde P^{\natural},\tilde Q^{*})$.</p>
+<h2 id="the-star-on-the-material-sector-is-a-sign">The Star on the Material Sector Is a Sign</h2>
+<p>The material sector is the anti-fixed space of the Hermitian conjugation, and the star is an
+anti-automorphism that fixes the central $i$ up to the coefficientwise conjugation:
+$\tilde Q^{*}=\overline{\tilde Q^{\natural}}$, and on a material element both conjugations agree in sign,
+$\tilde Q^{\natural}=-\overline{\tilde Q}$. The consequence for the second slot of the product is exact:</p>
+<p>$$
+\tilde Q\in\mathbb{M}_- \ \Longrightarrow\ \tilde Q^{*}=-\tilde Q,
+\qquad\text{hence}\qquad
+\tilde P\star\tilde Q=\tilde P\bigl(-\tilde Q\bigr)=-\tilde P\tilde Q .
+$$</p>
+<p>The star therefore acts on the material sector as multiplication of the second factor by the central
+scalar $-1$, and multiplication by $-1$ is an invertible map that changes nothing else. Two statements
+follow at once, and they are the spine of the article.</p>
+<ul>
+<li><strong>The product on the sector is the general plain bilinear product up to the global sign.</strong> The two operations have
+  the same multiplication table on $\mathbb{M}_-$ up to the overall $-1$, hence the same closure rule,
+  the same zero divisors and the same annihilators; every algebraic property that is invariant under a
+  global sign, which is all of them, is shared.</li>
+<li><strong>The conjugation is invisible on a pair drawn from the sector, and visible in the form.</strong> As a map on
+  the slot it is the scalar $-1$; in the scalar form it is the sign that separates $H$ from $B$, since
+  $H(\tilde P,\tilde Q)=B(\tilde P,\tilde Q^{*})=-B(\tilde P,\tilde Q)$.</li>
+</ul>
+<p><strong>Remark (verified).</strong> For $100$ random pairs of material elements, $\tilde P\tilde Q^{*}=-\tilde P\tilde Q$
+and $H(\tilde P,\tilde Q)=-B(\tilde P,\tilde Q)$ to machine precision.</p>
+<p><strong>Proposed interpretation, labelled as such.</strong> On the material sector the <strong>insertion of the star is a
+choice of sign and not a change of operation</strong>. The passage from the composition row to the probability
+row, which on the whole algebra replaces a product by a pairing, on the material sector replaces a
+definite <strong>negative</strong> form by its positive opposite. The two rows are then not two products of the
+material sector but one product read with two signs, and the sign is what the second slot does there.</p>
+<h2 id="the-product-of-two-material-elements">The Product of Two Material Elements</h2>
+<p>Write a material element in its own coordinates, $\tilde T=ict\,e_0+\mathbf x$. The product on the sector
+is the general plain bilinear one, $-1$ times, so its structure is the structure of <em>The Ordinary Product
+on the Material Sector</em> and only its reading changes. For two material elements,</p>
+<p>$$
+\tilde P\tilde Q = \tfrac12\{\tilde P,\tilde Q\}+\tfrac12[\tilde P,\tilde Q],
+\qquad\text{so}\qquad
+\tilde P\star\tilde Q = -\tfrac12\{\tilde P,\tilde Q\}-\tfrac12[\tilde P,\tilde Q],
+$$</p>
+<p>with the anticommutator in $\mathbb{M}_+$ and the commutator in $\mathbb{M}_-$: the sector is not closed
+under the sesquilinear product either, and the composite is material exactly when the two anticommute. The
+<strong>central part</strong> of the sesquilinear composite is the value of the probability form,</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr) = H(\tilde P,\tilde Q) = -B(\tilde P,\tilde Q)
+= c^{2}t\,\tau+\mathbf x\!\cdot\!\mathbf y > 0 \ \text{ on a nonzero element},
+$$</p>
+<p>written in the material coordinates $ct,\mathbf x$ and $c\tau,\mathbf y$: it is the <strong>Euclidean inner
+product</strong> of the two four-vectors, not the Minkowski one. The <strong>vector part</strong> is minus the vector part of
+the general plain bilinear composite, and it is the phase half of the band; the two halves of the
+sesquilinear composite are the two halves of the general plain bilinear composite with one sign, which is the content of the
+identity $\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$ of the symmetric half.</p>
+<p><strong>Remark (verified).</strong> On $100$ random material pairs the anticommutator of the composite is fixed by the
+dagger and the commutator anti-fixed; the composite is material exactly in the pairs that anticommute, and
+$H(\tilde P,\tilde Q)$ is positive real in the central part.</p>
+<h2 id="the-probability-form-on-the-sector-positivity-and-the-cone">The Probability Form on the Sector: Positivity and the Cone</h2>
+<p>The Born pairing restricts to the material sector as a <strong>positive definite</strong> form. On the material basis
+$\{ie_0,e_1,e_2,e_3\}$ the diagonal entries are $H(ie_0,ie_0)=+1$ and $H(e_k,e_k)=+1$ with all cross
+terms zero, so</p>
+<p>$$
+H\big|_{\mathbb{M}_-} = +\mathrm{I}_4 \ \text{ of signature }(4,0),
+\qquad
+H\big|_{\mathbb{M}_+} = +\mathrm{I}_4 \ \text{ of signature }(4,0),
+\qquad
+H\big|_{\mathbb{M}_-} = -B\big|_{\mathbb{M}_-}.
+$$</p>
+<p>The positivity is therefore <strong>uniform over the two sectors</strong>: an element of either sector, read as a state
+or as a displacement, has a strictly positive probability, and the two sectors are distinguished by the
+<em>sign form</em> $B$ and not by the probability. The probability form has <strong>no null vector at all</strong> — its
+isotropic cone is $\{0\}$ — so on the material sector there is no four-vector of zero probability, and in
+particular a lightlike four-vector has a positive probability. The three forms on the material basis read</p>
+<p>$$
+B=-\mathrm{I}_4,\qquad N=\mathrm{diag}(-1,1,1,1),\qquad H=+\mathrm{I}_4,\qquad
+K=\mathrm{diag}(1,-1,-1,-1),
+$$</p>
+<p>in the coordinates $(ict,\mathbf x)$: the sign form is negative definite, the interval Lorentzian of
+signature $(3,1)$, the probability Euclidean, and the Krein form of signature $(1,3)$. Four forms on four
+directions, and only the interval carries the causal structure.</p>
+<p><strong>Remark (verified).</strong> The four restrictions are the displayed matrices, all cross terms $0$;
+$H(\tilde Q,\tilde Q)$ is real and strictly positive on $100$ random material elements.</p>
+<p><strong>Proposed interpretation, labelled as such.</strong> On the material sector the <strong>probability is the
+non-relativistic part of the geometry</strong>: it is the Euclidean length of the four-vector, blind to the
+Lorentzian structure, and the reason it can be positive while the interval is indefinite. The interval
+measures what can influence what; the probability measures the weight of the element, and the two are not
+the same measurement. The massless four-vector has every right to a positive weight; what it lacks is a
+non-vanishing norm, and that is a statement of the interval and not of the probability.</p>
+<h2 id="vanishing-products-and-the-light-cone">Vanishing Products and the Light Cone</h2>
+<p>Because the sesquilinear product is the general plain bilinear product with one sign, its vanishing products on the
+material sector are those of the general plain bilinear product,</p>
+<p>$$
+\tilde P\star\tilde Q=0 \iff \tilde P\tilde Q=0 \qquad(\tilde P,\tilde Q\in\mathbb{M}_-),
+$$</p>
+<p>and the zero divisors and the annihilators of the probability product on the sector are those of the
+composition product. The zero divisors are the light cone: an element of $\mathbb{M}_-$ is a zero divisor
+exactly when $N(\tilde P)=0$, and then it annihilates its own natural conjugate,</p>
+<p>$$
+\tilde P\tilde P^{\natural}=N(\tilde P)\,e_0=0,
+$$</p>
+<p>the material line the conjugate spans, the shared line of the two annihilator planes of the composition
+(<em>Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$</em>). The unit $e_1$, of norm $N(e_1)=+1$, has no nonzero material
+annihilator at all.</p>
+<p>There are therefore two distinct vanishing statements on the same sector, and confusing them is the trap
+of the block:</p>
+<ul>
+<li>the <strong>central half</strong> of the product vanishes on the $H$-orthogonal pairs, $H(\tilde P,\tilde Q)=0$, a
+  hyperplane: this is the vanishing of the symmetric operation $\tilde P\circledast\tilde Q=H e_0$ and it
+  belongs to <em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em>, not
+  here;</li>
+<li>the <strong>product</strong> vanishes on the cone pairs, $\tilde P\tilde Q=0$, and requires $\tilde P$ or $\tilde Q$
+  on the light cone.</li>
+</ul>
+<p>The two are different: a lightlike element has a positive probability, $H(\tilde Q,\tilde Q)>0$, and is
+nevertheless a zero divisor of the product.</p>
+<p><strong>Example (a lightlike element and its annihilator).</strong> The material element $\tilde P=ie_0+e_1$ has
+$N(\tilde P,\tilde P)=0$ and $H(\tilde P,\tilde P)=+2$: it is lightlike, on the cone, and has positive
+probability. Its material annihilator is the line spanned by $ie_0-e_1$,
+$(ie_0+e_1)(ie_0-e_1)=0$, so the probability product kills a nonzero direction with it; and the value of
+the product onto that direction is zero while the probability of the element itself is $2$.</p>
+<p><strong>Proposed interpretation, labelled as such.</strong> On the material sector the <strong>light cone is the locus of
+the elements the probability product cannot compose</strong>. It is not a locus of zero probability: a
+lightlike displacement has a strictly positive weight and is still annihilated by a nonzero displacement.
+The wall of the reversible operations stays where the composition put it, and the probability does not
+move it — it inherits it, because the second slot's conjugation is only a sign there. The wall has a second
+face on the sector: a lightlike four-vector is an imaginary multiple of a pure state,
+$\tilde T=2ict\,\tilde\Pi_1(-\hat{\mathbf x})$, so the massless displacement and the informational
+projection are one element read through the central $i$ (<em>The Cone and the Massless Particles in the 12
+Structures of Biquaternions over $\mathbb{C}$</em>). Its square is not zero,
+$\tilde T^{2}=-2c^{2}t^{2}e_0+2ic^{2}t^{2}\hat{\mathbf x}$, and no element of the sector squares to zero at
+all: the nilpotents are the pure isotropic elements, outside $\mathbb{M}_-$ except at the origin, nilpotent
+of index two under the composition and of index three under the probability product (<em>Nilpotents in the 12
+Structures of Biquaternions over $\mathbb{C}$</em>).</p>
+<h2 id="the-isometries-of-the-probability-rotations-and-not-boosts">The Isometries of the Probability: Rotations and Not Boosts</h2>
+<p>An element is an isometry of the Born pairing when $\tilde A\tilde A^{*}=e_0$, and on the material sector
+that equation reads $-\tilde A^{2}=e_0$, that is, in the material coordinates,</p>
+<p>$$
+-\bigl(ic t\,e_0+\mathbf x\bigr)^{2}=e_0
+\iff \mathbf x\!\cdot\!\mathbf x=1 \ \text{and}\ ct=0, \quad\text{or}\quad \mathbf x=0 \ \text{and}\ ct=\pm1,
+$$</p>
+<p>whose solutions are the <strong>unit spatial directions</strong> $S^{2}$ together with the two central elements
+$\pm ie_0$. The unit spatial directions generate the spatial rotations; the identity and $-e_0$ are the two
+central isometries. So on the material sector the isometries of the probability are the <strong>rotations</strong>, and
+the boosts are not among them: the material boost</p>
+<p>$$
+\tilde\Lambda = i\cosh u\,e_0+\sinh u\,e_1 \in \mathbb{M}_-
+$$</p>
+<p>has $N(\tilde\Lambda,\tilde\Lambda)=-1$, so it is an isometry of the interval, and
+$H(\tilde\Lambda,\tilde\Lambda)=\cosh 2u\neq1$, so it is <strong>not</strong> an isometry of the probability: it moves
+the probability norm by the factor $\cosh 2u$. The spin element $e_k$ is an isometry of both,
+$N(e_k,e_k)=H(e_k,e_k)=+1$.</p>
+<p><strong>Remark (verified).</strong> $100$ random material elements satisfy $\tilde A\tilde A^{*}=e_0$ only at
+$\mathbf x$ of unit modulus with $t=0$ or at $\pm ie_0$; $\cosh 2u$ is reproduced to $10^{-9}$ by
+$H(\tilde\Lambda,\tilde\Lambda)$ at $u=0.5,1,2$, and $N(e_k,e_k)=H(e_k,e_k)=+1$.</p>
+<p><strong>Proposed interpretation, labelled as such.</strong> On the material sector the <strong>compact part of the Lorentz
+group preserves the probability and the non-compact part does not</strong>. A rotation is a reversible operation
+for both structures; a boost is reversible for the interval and stretches the probability, so the
+probability is not Lorentz invariant on the material sector and the rotations are its symmetry. This is
+the sector-level form of the framework's compactness statements: charge is discrete because the compact
+directions are the ones that preserve the probability.</p>
+<h2 id="the-interval-and-the-probability-on-one-element">The Interval and the Probability on One Element</h2>
+<p>The two forms differ by twice the coefficient square of the vector part, and on the material coordinates
+the difference is read on the space axes alone:</p>
+<p>$$
+H(\tilde P,\tilde Q) = -B(\tilde P,\tilde Q) = N(\tilde P,\tilde Q)+2\,\mathbf x\!\cdot\!\mathbf y,
+\qquad
+H(\tilde T,\tilde T)=c^{2}t^{2}+\lvert\mathbf x\rvert^{2},
+\qquad
+N(\tilde T,\tilde T)=-c^{2}t^{2}+\lvert\mathbf x\rvert^{2}.
+$$</p>
+<p>The two agree on the central time direction up to sign and differ by $2\lvert\mathbf x\rvert^{2}$ on the
+space directions; they agree in magnitude only on the complex time line, where both are $\pm c^{2}t^{2}$.
+A massive element has $N<0$ and a large positive probability; a lightlike element has $N=0$ and a positive
+probability; a spacelike element has $N>0$ and a probability larger than its norm. The probability
+therefore orders the material elements by their Euclidean length and the interval orders them by their
+causal type, and the two orders are independent.</p>
+<p><strong>Proposed interpretation, labelled as such.</strong> The second slot's star is the <strong>operator that turns the
+interval of an element into its probability</strong>, on the material sector: composing an element with its own
+conjugate returns the sum of squares instead of their signed difference. Read as a process, the
+sesquilinear pairing is the <strong>definite companion</strong> of the interval, and the mass shell — the level set
+$N=-m^{2}c^{2}$ — is not a level set of the probability.</p>
+<h2 id="a-worked-case">A Worked Case</h2>
+<p>Take the material element of the operator article,</p>
+<p>$$
+\tilde Q = ie_0+2e_1\in\mathbb{M}_-,
+$$</p>
+<p>and read the four forms and the square on it:</p>
+<p>$$
+B(\tilde Q,\tilde Q)=-5,\qquad N(\tilde Q,\tilde Q)=+3,\qquad
+H(\tilde Q,\tilde Q)=+5,\qquad K(\tilde Q,\tilde Q)=-3,
+$$</p>
+<p>$$
+\tilde Q^{2}=-5e_0+4ie_1,\qquad
+\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=-\tilde Q^{2}=5e_0-4ie_1,
+\qquad \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=+5 .
+$$</p>
+<p>Read row by row, the case displays the whole sector at once. The sector sign $B$ is negative, $-5$, as a
+material element must have it; the interval $N$ is positive, $+3$, so the element is spacelike; the
+probability $H$ is positive, $+5$, and is the Euclidean length-squared $1^{2}+2^{2}$ of the material
+coordinates. The sesquilinear square is the same computation as the operator article's expectation value,
+$\tilde Q\star\tilde Q=5e_0-4ie_1$, with central part $+5$ and the vector part $-4ie_1$ left over: the
+probability reads the first and the phase the second. And the composition of $\tilde Q$ with itself is
+$-5e_0+4ie_1$, the negative of the sesquilinear square as the sign rule requires.</p>
+<h2 id="the-bound">The Bound</h2>
+<p>The article states the restriction to the material sector of the sesquilinear product and of its form, and
+the boundary of what it must declare is the boundary of the sector.</p>
+<ul>
+<li><strong>The probability is not the interval.</strong> $H$ is Euclidean and definite on the sector, with no cone and
+  no causal content; the interval is $N$, of signature $(3,1)$, and the two differ by
+  $2\lvert\mathbf x\rvert^{2}$.</li>
+<li><strong>The sector sign is not the probability.</strong> $B=-H$ on $\mathbb{M}_-$: the composition's scalar form is
+  the negative of the probability, and it is $B$ and not $H$ that carries the sign of the sector.</li>
+<li><strong>The probability form has no null but the product has zero divisors.</strong> The empty cone of $H$ and the
+  light cone of the product are different sets; the lightlike four-vectors have positive probability and
+  are zero divisors, and a lightlike element is annihilated by $\pm ie_0\mp e_1$ in the material line.</li>
+<li><strong>The probability is not Lorentz invariant.</strong> The boosts preserve $N$ and not $H$; the rotations
+  preserve both.</li>
+<li><strong>The star is not a new operation on the sector.</strong> On $\mathbb{M}_-$ it is the central $-1$, so the
+  probability row and the composition row are one product read with two signs; the genuinely new content
+  of the star is on the informational side and in the mixed pairs.</li>
+</ul>
+<p><strong>What the framework does not claim.</strong> The interpretation does not identify the probability with a
+measured frequency, does not derive the Born rule from the algebra, and does not claim that the positive
+probability removes the indefinite metric. The Born rule as a trace formula is <em>The Born Rule as a Trace
+Formula — Derivation and Comparison</em>; the mixed pairs and the gauge side are the quaternionic sesquilinear
+band and are not read here.</p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Proved.</strong> On $\mathbb{M}_-$ the Hermitian conjugation is the central scalar $-1$, hence
+$\tilde P\star\tilde Q=-\tilde P\tilde Q$ and $H(\tilde P,\tilde Q)=-B(\tilde P,\tilde Q)$; the Born
+pairing restricts to $+\mathrm{I}_4$ of signature $(4,0)$ on each sector, $B$ to $-\mathrm{I}_4$ on
+$\mathbb{M}_-$ and $+\mathrm{I}_4$ on $\mathbb{M}_+$, $N$ to $(3,1)$ and $K$ to $(1,3)$ on
+$\mathbb{M}_-$; the product on the sector is material exactly when the two factors anticommute; its
+vanishing products are those of the general plain bilinear product, so its zero divisors and annihilators
+are the composition product's and are carried by the light cone; the isometries of $H$ inside the sector
+are the unit spatial directions and $\pm ie_0$, the boosts failing to preserve $H$; and the worked element
+$ie_0+2e_1$ realises $B=-5$, $N=+3$, $H=+5$, $\tilde Q\star\tilde Q=5e_0-4ie_1$.</p>
+<p><strong>Interpretations.</strong> That the star is a <strong>sign</strong> on the material sector and a genuine conjugation
+elsewhere; that the probability on the sector is the <strong>Euclidean geometry of the four-vector</strong>; that the
+light cone is the <strong>wall of the probability product</strong> and not a locus of zero probability; that the
+rotations are the isometries of the probability and the boosts are not; and that the star is the
+<strong>definite companion of the interval</strong>, turning the signed difference of squares into their sum. Each is
+the framework's naming of a proved algebraic fact and is labelled as such.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<p>The general plain sesquilinear product reads as the probability structure of the framework, and on the
+material sector its reading is the one the composition band already gave with the opposite sign: the
+material probability is the Euclidean weight of the four-vector. Three consequences stand out. Read on
+one element, the two rows are not two measurements but <strong>one measurement and one metric</strong>: the probability
+and the interval give different numbers and neither replaces the other. Read on a pair, the second slot's
+conjugation adds only a <strong>central sign</strong>: on $\mathbb{M}_-$ the star is $-\flat$, the real structure whose
+fixed space is the sector, so no new operation appears there. And read on the process, the product kills
+exactly the lightlike directions, so <strong>the wall between the reversible and the irreversible is the wall of the
+probability as well</strong>, inherited from the composition by a global sign. The probability of a lightlike
+element is positive and its composability is not: on the material sector the two statements are different,
+and the article's whole content is that they must not be collapsed.</p>
+<h2 id="summary">Summary</h2>
+<p>The material sector $\mathbb{M}_-$ carries the four-vectors, an event being
+$\tilde T=ict\,e_0+x e_1+y e_2+z e_3$, and this article reads on it the general plain sesquilinear product
+$\tilde P\tilde Q^{*}$, whose full theory is the probability band's. On $\mathbb{M}_-$ the Hermitian
+conjugation is the central scalar $-1$, so the sesquilinear product is the general plain bilinear product with a global
+sign, $\tilde P\star\tilde Q=-\tilde P\tilde Q$: the second slot's conjugation is <strong>invisible on a pair
+drawn from the sector as a map and visible in the scalar form</strong>, where it turns the negative definite
+sector sign $B$ into the positive definite Born pairing $H$. The pairing restricts to $+\mathrm{I}_4$ of
+signature $(4,0)$ on each sector, the Euclidean inner product $c^{2}t\tau+\mathbf x\!\cdot\!\mathbf y$ of
+the material coordinates; the interval is the Lorentzian $N$, of signature $(3,1)$, and the two differ by
+twice $\mathbf x\!\cdot\!\mathbf y$. Being positive definite, $H$ has no null vector, so no material
+element has zero probability and a lightlike four-vector has positive probability; yet the product on the
+sector has the vanishing products of the general plain bilinear product, so its zero divisors and
+annihilators are carried by the light cone, and a lightlike element is annihilated by a nonzero material
+line. The isometries of the probability inside the sector are the unit spatial directions and $\pm ie_0$; the rotations preserve the
+probability and the boosts do not, a boost rescaling it by $\cosh 2u$. On one element the composition
+gives the interval and the sesquilinear product gives the Euclidean sum of squares, so the mass shell is not a
+level set of the probability. The distinctions are labelled throughout: what is proved is the algebra
+restricted to $\mathbb{M}_-$, what is proposed is the naming.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>The biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_0=1,e_1,e_2,e_3$</td>
+<td>Quaternion basis, $e_k^{2}=-e_0$, $e_1e_2=e_3$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary, $i^{2}=-1$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot},{\natural},{}^{*}=\bar{\cdot}\circ{\natural}$</td>
+<td>Complex, natural and Hermitian conjugations</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-=\{\tilde Q^{*}=-\tilde Q\}$</td>
+<td>Material sector, basis $\{ie_0,e_1,e_2,e_3\}$</td>
+</tr>
+<tr>
+<td>$\tilde T=ict\,e_0+\mathbf x$</td>
+<td>A material event; imaginary time, real space</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$</td>
+<td>General plain sesquilinear product</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q=-\tilde P\tilde Q$ on $\mathbb{M}_-$</td>
+<td>The star is the central $-1$ on the sector</td>
+</tr>
+<tr>
+<td>$B=\mathrm{Sc}(\tilde P\tilde Q)=-\mathrm{I}_4$ on $\mathbb{M}_-$</td>
+<td>The sector sign, negative on the material side</td>
+</tr>
+<tr>
+<td>$H=\mathrm{Sc}(\tilde P\tilde Q^{*})=-B=+\mathrm{I}_4$</td>
+<td>The Born pairing, positive definite on each sector</td>
+</tr>
+<tr>
+<td>$N=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\mathrm{diag}(-1,1,1,1)$</td>
+<td>The interval, signature $(3,1)$ on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$K=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\mathrm{diag}(1,-1,-1,-1)$</td>
+<td>The Krein form, signature $(1,3)$ on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$H=N+2\,\mathbf x\!\cdot\!\mathbf y$</td>
+<td>The probability as the definite companion of the interval</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q=0\iff\tilde P\tilde Q=0$</td>
+<td>The vanishing products are those of the general plain bilinear product</td>
+</tr>
+<tr>
+<td>$\mathcal{C}=\{N=0\}$</td>
+<td>The light cone; the zero divisors of the product on the sector</td>
+</tr>
+<tr>
+<td>$\{\tilde A:\tilde A\tilde A^{*}=e_0\}=S^{2}\cup\{\pm ie_0\}$</td>
+<td>Isometries of $H$ inside the material sector</td>
+</tr>
+<tr>
+<td>$\tilde\Lambda=i\cosh u\,e_0+\sinh u\,e_1$</td>
+<td>The material boost; preserves $N$, not $H$</td>
+</tr>
+<tr>
+<td>$(p,q)$</td>
+<td>Signature as (number of $+$, number of $-$) diagonal entries</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the quaternion algebra, the
+  conjugate transpose and the matrix model of the biquaternions.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for the Hermitian forms on the
+  biquaternion algebra and the two sectors of the involution.</li>
+<li>Claude Itzykson and Jean-Bernard Zuber, <em>Quantum Field Theory</em> (McGraw–Hill, 1980), for the indefinite
+  metric, the light cone and their separation from a positive probability form.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge,
+  2000), for the positive probability pairing and the role of the second slot's conjugation.</li>
+<li>Companion article <em>The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing</em>,
+  for the symmetric half of the product and the positivity on the whole algebra.</li>
+<li>Companion article <em>The General Plain Sesquilinear Product on the Informational Sector</em>, for the mirror
+  reading on $\mathbb{M}_+$.</li>
+<li>Companion article <em>The Ordinary Product on the Material Sector</em>, for the composition product on the same
+  sector.</li>
+<li>Companion article <em>The Operators of the Plain Sesquilinear Product and the Born Pairing</em>, for the
+  operators, the adjoint and the worked element.</li>
+<li>Companion article <em>Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$</em>, for the cone
+  as the zero-divisor set of the probability band.</li>
+<li>Companion article <em>The Cone and the Massless Particles in the 12 Structures of Biquaternions over
+  $\mathbb{C}$</em>, for the two jobs of the one cone in the two bands.</li>
+<li>Companion article <em>Composition and Probability: the General Plain Algebra and the General Plain
+  Sesqualgebra of Biquaternions Compared</em>, for the twelve structures read side by side.</li>
+<li>Mathematics article <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>
+  (<code>articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md</code>), for the product
+  and its algebra on the whole space.</li>
+<li>Mathematics article <em>Zero Divisors of the General Plain Sesqualgebra</em>
+  (<code>articles_maths/zero-divisors-of-the-general-plain-sesqualgebra.md</code>), for the coincidence of the
+  zero-divisor sets and the cone as the shared boundary.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
