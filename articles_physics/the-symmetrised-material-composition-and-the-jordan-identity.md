@@ -242,7 +242,7 @@ $$
 $$
 
 The first term is fixed by the star and the second is anti-fixed, by the same computation as
-*The Ordinary Product and the Material Sector*, §*The Commutator of Two Material Operations Is Material*.
+*The Ordinary Product on the Material Sector*, §*The Product of Two Material Operations*.
 The two terms are exactly the two halves of the block:
 
 $$
@@ -274,7 +274,7 @@ Two consequences of the split are worth stating plainly. First, the order-free p
 composition is informational: symmetrising two material operations returns an element of $\mathbb{M}_+$,
 not of $\mathbb{M}_-$. Second, the order is carried entirely by the material half, so a material
 composite is material exactly when the two operations **anticommute** and informational exactly when they
-**commute**, which is the sector rule of *The Ordinary Product and the Material Sector*. The interpretation of
+**commute**, which is the sector rule of *The Ordinary Product on the Material Sector*. The interpretation of
 the operation as the composition with the orientation dropped is developed in *Observables as a Jordan
 Algebra: the Symmetric Plain Product and the Classical Composition*.
 
@@ -364,8 +364,8 @@ Algebra*, for the square, the quadratic identity, the idempotents and the norm o
 identity, the symmetrisation of an associative algebra and the special class.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space*, for the
 twelve operations and the uniqueness of the Jordan and Jacobi laws.
-- Companion article *The Ordinary Product and the Material Sector*, for the ordinary product, its scalar
-form and the sector structure of a material composite.
+- Companion articles *The Ordinary Product on the Biquaternion Space*, for the ordinary product and its
+scalar form, and *The Ordinary Product on the Material Sector*, for the sector structure of a material composite.
 - Companion article *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical
 Composition*, for the reading of the block on the Hermitian sector.
 - Companion article *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*, for the

@@ -117,5 +117,5 @@ The element $\tilde A$ is a square if and only if $A_0$ is real, $\mathbf R$ is 
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the plain problem and its quadratic, against which this criterion is set.
 - *Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the square-zero family and the element $e_0+ie_1$.
 - *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$ and the Krein form.
-- *Square Roots of a General Element* (`articles_maths/square-roots-of-a-general-element.md`), for the four-way comparison of the root sets.
+- *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the four-way comparison of the root sets.
 - *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), for the notation and the article format.

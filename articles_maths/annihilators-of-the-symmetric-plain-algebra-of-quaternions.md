@@ -27,7 +27,7 @@ origin alone annihilates the whole space. The article owns that reading, the ope
 and its determinant, and the shape of the annihilator on the remarkable subspaces; the zero-divisor
 set and its criterion are the cited article's.
 
-**The distinction from the structure-level article.** The chapter also carries *Annihilators*
+**The distinction from the structure-level article.** The chapter also carries *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*
 (*Comparison of the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*), where the
 object is the set of elements that kill the whole space for a fixed product, that is the radical;
 the present article instead fixes the element and reads the set it kills, which is the finer
@@ -213,5 +213,5 @@ which does not contain the element.
 - *Zero Divisors of the Symmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-symmetric-plain-algebra-of-quaternions.md`), above this article in this category, for the criterion $p_0=0$, the zero-divisor set and the partner plane.
 - *The Multiplication Operators of the Symmetric Plain Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra-of-quaternions.md`), below this article in this category, for the operator, its composition, its kernel and its determinant.
 - *Norm and Invertibility in the Symmetric Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-algebra-of-quaternions.md`), for the invertibility criterion and the Jordan inverse of the regular elements.
-- *Annihilators* (`articles_maths/quaternion-annihilators.md`), the structure-level article, for the annihilating set of a product, which is the radical and not the annihilator of a fixed element.
+- *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), the structure-level article, for the annihilating set of a product, which is the radical and not the annihilator of a fixed element.
 - *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the scalar line, the vector subspace and the orthogonality.

@@ -1,8 +1,8 @@
-# __The Photon as a Null Element: What the Cone Derives and What It Does Not__
+# __The Null Four-Momentum: What the Cone Derives and What It Does Not__
 
 ## Introduction
 
-The photon is the massless quantum of the electromagnetic field, and "massless" has a precise algebraic interpretation in the biquaternion framework: the four-momentum of a photon is a **null element**, an element of the material sector whose biquaternion norm vanishes. That interpretation is a statement about the zero-divisor cone, and the cone is the one object in this series that carries a long list of derived results. It is therefore worth asking, carefully, how much of the photon's characterization the cone actually delivers.
+A massless particle carries a four-momentum of vanishing biquaternion norm: a **null four-momentum**, an element of the material sector that lies on the zero-divisor cone. The photon is the leading case, and every massless field of the framework shares the same null shell; the roster is *The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*'s. The identification is a statement about the zero-divisor cone, and the cone is the one object in this series that carries a long list of derived results. It is therefore worth asking, carefully, how much of the massless characterization the cone actually delivers.
 
 The question is not idle. The companion article *The Photon in Biquaternionic Form* records, in its accounting of what is derived and what is imported, the row **masslessness $m=0$: represented, an input**. Nothing in that article connects the row to the cone results, and the cone article does not draw the verdict either. The two facts sit in different files. This article joins them and separates them: the cone **marks** the massless case, and the marking is exact and non-trivial, but the cone does not **choose** it.
 
@@ -23,7 +23,7 @@ What the cone does not derive:
 - the physical selection of the massless branch over the massive one;
 - the reduction from four polarization directions to two.
 
-The distinction between the first list and the second is the distinction between a structure and a value. The cone is a structure; the photon's masslessness is a value that the structure distinguishes but does not supply.
+The distinction between the first list and the second is the distinction between a structure and a value. The cone is a structure; the masslessness of a particle is a value that the structure distinguishes but does not supply.
 
 ## The Four-Momentum and the Shell
 
@@ -141,9 +141,9 @@ The honest statement is therefore a conditional. *If* the field is massless, *th
 
 ### The reduction to two polarizations
 
-A separate input, often blurred with masslessness, is the transversality of the physical modes. The cone says nothing about it. The photon article establishes that the algebra *owns* the space in which the reduction happens — the four polarization directions of $\mathbb{M}_-$ with the indefinite metric $\zeta=(-1,+1,+1,+1)$ — and *does not own* the principle by which the reduction is made: the subsidiary gauge condition is imported, and the helicity-zero longitudinal mode has to be removed by a rule the algebra does not supply. Masslessness is what makes the removal natural, since it is what makes helicity Lorentz invariant, but natural is not the same as derived, and the removal is not performed by the cone.
+A separate input, often blurred with masslessness, is the transversality of the physical modes. The cone says nothing about it, and the reduction itself belongs to *The Photon in Biquaternionic Form*, which owns both the space in which it happens — the four polarization directions of $\mathbb{M}_-$ with the indefinite metric $\zeta=(-1,+1,+1,+1)$ — and the gauge gap by which it is made. This article records only the status of the reduction for the null element: it is imported, and it is not a consequence of the cone. Masslessness is what makes the removal natural, since it is what makes helicity Lorentz invariant, but natural is not the same as derived.
 
-## The Photon as the Canonical Zero Divisor
+## The Null Four-Momentum as the Canonical Zero Divisor
 
 ### The null momentum is an idempotent multiple
 
@@ -187,9 +187,17 @@ The division of the article, in one table. Each row is a statement about the pho
 | The reduction to two transverse polarizations | Inserted | the subsidiary gauge condition |
 | Quantization, the ladder, the number operator | Outside | the photon article's accounting, not revisited here |
 
+## Boundaries
+
+- **The subject is one element.** This article owns the null four-momentum as an object: the shell as the norm condition $N=-m^2c^2$, mass as the value of the invariant, the null momentum as a scaled idempotent of $\mathbb{M}_+$, the absence of a rest frame, the frame-independence of $c$ from the multiplicativity of the norm, the scale-invariance argument, and the verdict that the cone marks but does not choose masslessness.
+- **The cone as a set is *The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*'s to define.** The cone's two jobs in the two bands, the rank across the twelve rows, the nilpotent index and the roster of massless particles are stated there, and this article states them where its argument needs them; it takes the cone's boundary of invertibility from that article and from *The Light Cone as the Biquaternion Zero-Divisor Cone*.
+- **The quantum photon is *The Photon in Biquaternionic Form*'s to define.** The polarisation space, circular polarisation, the helicity operator, the self-dual split, the ladder and the gauge are stated there; this article states the reduction to two polarisations only as far as it needs it, to record that the reduction is not a consequence of the cone.
+- **The flagpole identity is elsewhere.** That the null direction and the projector are two faces of one object is *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*.
+- **Not claimed.** No dynamics: the projector describes a momentum, not an equation of motion. No derivation of $m=0$, of any mass scale, or of the choice of the null branch. The speed $c$ is taken from the cone article's $\Box$ computation.
+
 ## Summary
 
-The photon's four-momentum is $\tilde{P}=i(E/c)e_0+\mathbf{p}$, an element of the material sector whose biquaternion norm is $-m^2c^2$; mass is the value of the invariant, and the massless shell is the level set $N=0$, which is the zero-divisor cone. The cone derives, without further input, that the massless shell is the only level set that is a cone, that the propagation speed is $c$ and is the same in every frame by the multiplicativity of the norm, that a null four-momentum has no rest frame, and that a massless particle moves at $c$ for every momentum. The null four-momentum is moreover a scaled idempotent of the informational sector, so the cone of the material sector is the scaled image of the projector sphere, and the lightlike momentum and a rank-one pure state are one element read in two sectors.
+The four-momentum of a massless particle is $\tilde{P}=i(E/c)e_0+\mathbf{p}$, an element of the material sector whose biquaternion norm is $-m^2c^2$; mass is the value of the invariant, and the massless shell is the level set $N=0$, which is the zero-divisor cone. The cone derives, without further input, that the massless shell is the only level set that is a cone, that the propagation speed is $c$ and is the same in every frame by the multiplicativity of the norm, that a null four-momentum has no rest frame, and that a massless particle moves at $c$ for every momentum. The null four-momentum is moreover a scaled idempotent of the informational sector, so the cone of the material sector is the scaled image of the projector sphere, and the lightlike momentum and a rank-one pure state are one element read in two sectors.
 
 The cone does not derive masslessness. The mass enters as a single free real scale on the four-velocity, $\tilde{P}=m\tilde{U}$, and the algebra treats every value alike; there is a structural reason, namely that the norm is homogeneous and the cone is scale-invariant, so the algebra contains no preferred scale and cannot manufacture one. The mass term is a term in the dynamics, and the massless and massive cases are the Maxwell and Proca alternatives, equally writable. The cone **marks** the massless case — sharply, uniquely, and non-trivially — and does not **choose** it. The correct statement is a conditional whose antecedent is empirical: if the field is massless, then the cone is its shell and all the derived consequences follow.
 

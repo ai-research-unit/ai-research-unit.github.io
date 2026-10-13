@@ -56,7 +56,7 @@ $$
 N(\tilde{P},\tilde{Q})=\tfrac{1}{2}\bigl(N(\tilde{P}+\tilde{Q})-N(\tilde{P})-N(\tilde{Q})\bigr)=\sum_{\mu=0}^{3} P_\mu Q_\mu,
 $$
 
-the complex bilinear dot product, the **general quaternionic bilinear form**, written $\langle\tilde P,\tilde Q\rangle_{\natural}$ elsewhere in the corpus. It is not the general plain bilinear form $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ of *The Ordinary Product and the Material Sector*, from which it differs by the sign of the vector part; and in the mathematical chapter the same polar form carries the letter $B$. It is symmetric and non-degenerate, and the quaternion units are orthonormal,
+the complex bilinear dot product, the **general quaternionic bilinear form**, written $\langle\tilde P,\tilde Q\rangle_{\natural}$ elsewhere in the corpus. It is not the general plain bilinear form $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ of *The Ordinary Product on the Biquaternion Space*, from which it differs by the sign of the vector part; and in the mathematical chapter the same polar form carries the letter $B$. It is symmetric and non-degenerate, and the quaternion units are orthonormal,
 
 $$
 N(e_\mu,e_\nu)=\delta_{\mu\nu}.

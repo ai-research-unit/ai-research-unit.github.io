@@ -53,7 +53,7 @@ decides the composition and the first the form, is the Table of the Slots of *Co
 General Products*. The signature table of the four scalar forms on the remarkable subspaces,
 which is where the effect of the first slot on the form is quantified, compares the four blocks with one
 another and so belongs to this article rather than to any of them; it is in §*Remarkable Subspaces*. The
-field of $B$ alone is *The Ordinary Product and the Material Sector*, the entry article of the block of
+field of $B$ alone is *The Ordinary Product on the Biquaternion Space*, the entry article of the block of
 the algebra over $\mathbb{C}$, where the restriction of $B$ to the remarkable subspaces is read.
 
 **This article is also the place where the four are compared with one another.** Each block reads one
@@ -998,7 +998,7 @@ matrices and their signatures.
 - Mathematics article *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*
 (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the
 sign of the square on the two sectors, $\tilde Q\star\tilde Q=\pm N(\tilde Q)e_0$.
-- Companion article *The Ordinary Product and the Material Sector*, for the form $B$ alone on the remarkable subspaces.
+- Companion article *The Ordinary Product on the Biquaternion Space*, for the form $B$ alone on the remarkable subspaces.
 - Companion articles *The Interval as the Square and the Charge of the Material Composition*, *Mass, Rank and the Positivity of the Dagger* and *The Fourth Product and Its Indefinite Metric*, for $N$, $H$ and $K$ on the remarkable subspaces, and for the interval identity and the physical
 interpretation of the quaternionic product.
 - Companion article *The Biquaternion Mathematics Corpus*, whose Algebra block this article

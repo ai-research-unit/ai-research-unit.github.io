@@ -37,7 +37,7 @@ Throughout this article the product is the antisymmetric plain multiplication $\
 unqualified, *idempotent* means an idempotent of $\times$. The idempotent is the root of $+1$ in the
 scaled sense of the definitions article, and the block's roots of $+1$ are treated in *Square Roots
 of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra*; the idempotent sets of the six
-structures, and the table that compares them, are *Idempotents*.
+structures, and the table that compares them, are *Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 ## The Criterion
 
@@ -102,7 +102,7 @@ constructions belong to the plain product and to its blocks.
 **Remark (the parent idempotents).** The parent general plain bilinear product is associative and
 unital, and its idempotents are the two-point set $\{0,e_0\}$: the equation $\tilde x^2=\tilde x$
 reads $\tilde x(\tilde x-e_0)=0$, and the parent is a division product, so $\tilde x=0$ or
-$\tilde x=e_0$ (*The Specificities of the General Plain Algebra*; *Idempotents*). The block is the
+$\tilde x=e_0$ (*The Specificities of the General Plain Algebra*; *Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*). The block is the
 antisymmetric half of that product, and the comparison is the comparison of a one-point set with a
 two-point set: the block keeps the trivial idempotent and loses $e_0$, and it loses with it the
 entire idempotent calculus. The count is the point of the article — one idempotent for the block
@@ -112,7 +112,7 @@ $e_0$ in the parent and $0$ in the block.
 **Remark (the contrast with the biquaternion chapter).** Over $\mathbb{C}$ the same parent product
 carries the idempotent family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, of real
 dimension four, and the four general products of the biquaternion space carry four idempotent sets
-whose sizes range from the trivial pair to the continuum (*Idempotents*). The real block is poorer
+whose sizes range from the trivial pair to the continuum (*Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*). The real block is poorer
 than any of them: it has the origin alone, and the complexification does not enlarge its idempotent
 set, the equation $0=\tilde\pi$ being independent of the field.
 
@@ -143,8 +143,8 @@ belongs to the parent and not to the block.
 - *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the idempotent of a general product, the relativity of the definition and the criterion for an empty class
 - *Introduction to the Antisymmetric Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-quaternions.md`), for the operation, its alternation and its table
 - *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra-of-quaternions.md`), for the two-point idempotent set of the parent division product
-- *Idempotents* (`articles_maths/quaternion-idempotents.md`), for the idempotent sets of the six structures side by side
-- *Idempotents* (`articles_maths/idempotents.md`), for the four idempotent sets of the biquaternion chapter, against which the real block's origin alone is read
+- *Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/idempotents-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the idempotent sets of the six structures side by side
+- *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/idempotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the four idempotent sets of the biquaternion chapter, against which the real block's origin alone is read
 - *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-algebra-of-quaternions.md`), for the roots of $+1$, which are the idempotents in the scaled sense
 - *Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/nilpotents-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for the other face of the same vanishing square
 - *The Specificities of the Antisymmetric Plain Algebra* (`articles_maths/the-specificities-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for the folded reading of the idempotent set of the block

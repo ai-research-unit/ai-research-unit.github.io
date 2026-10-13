@@ -1,4 +1,4 @@
-# __Square Roots of Minus One, Zero and Plus One in the 12 Structures Framework__
+# __Square Roots of Minus One, Zero and Plus One in the 12 Structures of Biquaternions over $\mathbb{C}$__
 
 ## Introduction
 
@@ -9,12 +9,12 @@ fixed. The roots of $-1$ are the **local complex structures**, the algebraic for
 clock that the corpus reads in *The Local Complex Structure and the Speed of Light* and in *Square Roots:
 the Local Complex Structure, the Light Cone and the Mass Shell*. The roots of $0$ are the **nilpotents**,
 the lightlike displacements, the algebraic form of propagation without mass, read in *The Light Cone as
-the Biquaternion Zero-Divisor Cone* and in *Nilpotents in the 12 Structures Framework*. The roots of $+1$
+the Biquaternion Zero-Divisor Cone* and in *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*. The roots of $+1$
 are the **involutions**, the reality conditions and the reflections, and the reversible transformations
 of the state space when the structure is the pairing; their operator face is *Observables, Gauge
 Generators and the Chirality of the Internal Action*. This article is the third physics companion of the
 mathematics comparison group, and its mathematics companion is *Square Roots of Minus One, Zero and Plus
-One* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one.md`).
+One* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`).
 
 The mathematics companion proves three facts that organise the physics. First, the root set of $0$ is a
 complex cone with the origin as its apex, while the root sets of $-1$ and $+1$ are affine level sets and
@@ -28,10 +28,11 @@ root of $-1$ in the second, and a zero divisor of the algebra in both.
 
 The physical thesis of the article is that the three named values classify the element by what it does:
 $-1$ gives a phase, $0$ gives a propagation, $+1$ gives a reflection or a symmetry, and the twelve
-structures differ in which of the three they can produce. Four structures produce all three, two refuse
-$-1$ because their square is positive, four produce none of the signed values because their square
-vanishes or is pure, and two produce the signed values but not the rigidity that would make them units.
-The companion article *Square Roots of a General Element in the 12 Structures Framework* owns the general
+structures differ in which of the three they can produce. Six structures produce all three, two refuse
+$-1$ because their square is positive, and four produce none of the signed values because their square
+vanishes or is pure; and two of the twelve, the symmetric sesquilinear structures $\mathrm{SPS}$ and
+$\mathrm{SQS}$, produce a signed root that need not be a unit.
+The companion article *Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$* owns the general
 radicand, the four existence classes and the mass shell; this article reads the three named values.
 
 **Conventions.** We use those of the companion articles unchanged. The algebra is
@@ -68,7 +69,7 @@ built, and the mapping to physics is fixed by the owners.
   displacement; a pure root is a null direction of the vector subspace, and its square vanishing is the
   algebraic statement that two successive displacements along a null direction compose to nothing more
   than the displacement. The physical locus is the light cone, and the reading is *The Light Cone as the
-  Biquaternion Zero-Divisor Cone*; the class is *Nilpotents in the 12 Structures Framework*.
+  Biquaternion Zero-Divisor Cone*; the class is *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*.
 - **The roots of $+1$ are the involutions.** A root with $\tilde\Xi^{2}=+e_0$ is a reflection, a reality
   condition or a discrete symmetry, and its central pair $\pm e_0$ is the trivial one. When the structure
   is the pairing, the roots of $+1$ are the transformations that leave the probability form invariant,
@@ -94,7 +95,7 @@ The physical reading is the corpus's own: a root of $-1$ is a local complex stru
 unit vectors are the ones the material sector uses. Each real unit vector $\hat\mu$ gives the complex
 structure $\hat\mu$ and the idempotent $\tfrac12(e_0+i\hat\mu)$ of the informational sector, so the phase
 of the plain product and the states of the pairing are the same family read through the halving map; the
-owner of the map and of the idempotents is *Idempotents in the 12 Structures Framework*.
+owner of the map and of the idempotents is *Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$*.
 
 **In the symmetric plain algebra.** The Jordan square equals the plain square,
 $\tilde\Xi\bullet\tilde\Xi=\tilde\Xi^{2}$, so $\mathrm{SPA}$ has exactly the roots of $\mathrm{GPA}$. The
@@ -146,7 +147,7 @@ consists of the square-zero elements of the indefinite bands and carries the lig
 $c(\hat\mu\pm i)$ of the gauge sesquilinear structure. The elementary physical case is a pure nilpotent
 $\tilde\Upsilon$ with $\tilde\Upsilon^{2}=0$: a translation along a null direction, whose iteration adds
 nothing quadratic. The corpus's nilpotent convention and the class are owned by *Nilpotents in the 12
-Structures Framework*, and the square-zero condition of the fourth product belongs to *The Square of the
+Structures of Biquaternions over $\mathbb{C}$*, and the square-zero condition of the fourth product belongs to *The Square of the
 General Quaternionic Sesquilinear Product and the Two Halves*.
 
 **The physical reading of the failure.** A root of $0$ is a zero divisor, so the value $0$ is the
@@ -192,6 +193,115 @@ element of interval $+1$, that is a spacelike unit element of the material secto
 the gauge sesquilinear structure are its three causal classes.
 
 ## The Twelve Structures at the Three Values
+
+The square of a structure is its operation read at the two equal arguments, and the three named values
+$-1$, $0$ and $+1$ are the phase, the lightlike displacement and the reflection. The twelve are read one
+by one below, each naming its product, its square and its three root sets, before the table collects the
+three values over the twelve in one place.
+
+### $\mathrm{GPA}$, the general plain algebra — composition
+
+The product is the plain product $\tilde P\tilde Q$ and its square is the plain square, whose scalar and
+vector parts $\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)$ and $2\Xi_0\mathbf\Xi$ read the three values. The roots
+of $-1$ are the central pair $\pm i$, the pure real unit directions and the complex quadric
+$(\mathbf\Xi,\mathbf\Xi)=1$, of real dimension four: the local complex structures of the composition. The
+roots of $0$ are the origin together with the nilpotent cone, the lightlike displacements. The roots of
+$+1$ are the images of the roots of $-1$ by the central $i$, the reflections. The reading is *Square
+Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
+
+### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
+
+The product is the Jordan product, and its square is the plain square, so the three root sets are those of
+$\mathrm{GPA}$ element for element. One reading belongs to the block: the pure signed roots lie in the
+vector subspace, which is the zero-divisor set of the structure, so a root can be a unit of the algebra
+and a zero divisor of the symmetrised product at once. The pure roots of $+1$ are in bijection with the
+idempotents by $\mathbf u\mapsto\tfrac12(e_0+\mathbf u)$. The reading is *Observables as a Jordan Algebra:
+the Symmetric Plain Product and the Classical Composition*.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
+
+The product is the commutator, an alternating product, so its square vanishes identically and the three
+equations read $0=-e_0$, $0=0$ and $0=+e_0$. There is no root of $-1$ and none of $+1$, and the roots of
+$0$ are the whole space. A bracket has neither a phase nor a reflection, only the trivial value. The
+reading is *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*.
+
+### $\mathrm{GQA}$, the general quaternionic algebra — causality
+
+The product is $\tilde\Xi^{\natural}\tilde Q$ and its square is the central interval $C(\tilde\Xi)e_0$, so
+the three root problems are the three level sets of the interval. The roots of $-1$, $0$ and $+1$ are the
+quadric $C=-1$, the cone $C=0$ and the quadric $C=+1$, of real dimension six, and physically they are the
+three shells of the interval. The reading is *The Interval as the Square and the Charge of the Material
+Composition*.
+
+### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
+
+The product is the scalar-valued symmetrisation and its square is the central square, so the three root
+sets are the same three level sets $C=-1$, $C=0$ and $C=+1$ as for $\mathrm{GQA}$. Two features belong to
+the block: the root set of $0$ is the isotropic cone of the coupling, which is the zero-divisor set of the
+parent algebra and not the block's own, and the three sets are pairwise disjoint and scale with
+$\tilde\Xi\mapsto\mu\tilde\Xi$ by $\lambda\mapsto\mu^{2}\lambda$. The reading is *The Quaternion Form as a
+Product: the Scalar Coupling of Two Material Operations*.
+
+### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
+
+The product is the antisymmetrisation, alternating, so its square vanishes identically: there is no root
+of $-1$ and none of $+1$, and the roots of $0$ are the whole space. The bracket has no phase and no
+reflection, only the value $0$, and the failure of the signed values is the algebraic face of the
+obstruction. The reading is *Boosts, Mixed Terms and the Missing Lie Structure*.
+
+### $\mathrm{GPS}$, the general plain sesqualgebra — probability
+
+The product is the pairing and its square is the Hermitian square, whose scalar part $H$ is non-negative.
+There is no root of $-1$, because a probability cannot be negative, and the root of $0$ is the origin
+alone, so the band has no lightlike displacement. The roots of $+1$ are the unitary family
+$\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_0\}$, the group $U(2)$ of real dimension four. Physically the band
+has reversibility and normalisation but no clock of its own. The reading is *Mass, Rank and the Positivity
+of the Dagger* and *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra*.
+
+### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
+
+The product is the scalar-valued symmetrisation and its square is $H(\tilde\Xi)e_0$, so the root problem is
+the single real equation $H=\lambda$. There is no root of $-1$, the root of $0$ is the origin alone, and
+the roots of $+1$ are the sphere $\sum_\mu\lvert\Xi_\mu\rvert^{2}=1$ of real dimension seven. The
+symmetrisation keeps the existence class of its general partner and replaces unitarity by normalisation.
+The reading is *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*.
+
+### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
+
+The product is the antisymmetrisation and its values are pure vectors, so the square never takes a central
+value: there is no root of $-1$ and none of $+1$. The roots of $0$ are the nonzero elements whose square
+is central, a cone on the unit sphere of the quaternion subspace, of real dimension five. The obstruction
+is a parity of the value and not the vanishing of the square. The reading is *The Imaginary Part of the
+Born Pairing: the Antisymmetric Sesquilinear Product*.
+
+### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
+
+The product is the fourth product and its square has the Krein value $\Delta(\tilde\Xi)$ as scalar part,
+real for every element, so every real value has a root. The roots of $-1$, $0$ and $+1$ are the three
+ranges of the slope, $\lvert t\rvert<1$, $\lvert t\rvert=1$ and $\lvert t\rvert>1$, beside the central
+circle for $+1$. Physically the three values are the timelike, lightlike and spacelike classes of the
+indefinite metric. The reading is *The Fourth Product and Its Indefinite Metric*.
+
+### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra — metric
+
+The product is the symmetrisation and its square is the Hermitian part of the unsplit square. The roots of
+$-1$ are the disjoint union of the pure unit sphere and the family $\mathcal R_{-1}$; the roots of $0$ are
+the nilpotent cone $\alpha(e_0+i\hat\mu)$; and the roots of $+1$ are the family $\mathcal R_{+1}$ with
+$\lvert\alpha\rvert\geq1$. A signed root exists in the band but need not be a unit, which is the
+distinction from the four bilateral structures. The reading is *The Gauge Metric as a Product: the
+Symmetric Quaternionic Sesquilinear Product*.
+
+### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
+
+The product is the antisymmetrisation and its square lies in the real three-dimensional subspace
+$i\mathbb{R}^{3}$, so its intersection with the central line is the origin. There is no root of $-1$ and
+none of $+1$, and the roots of $0$ are the cone of the real directions, of real dimension six. The band
+has a parity of the value, not a value. The reading is *The Cross Product of a Vector with Its Conjugate:
+the Antisymmetric Gauge Product*.
+
+### The Three Values in One Table
+
+The table collects the square of each structure and its three root sets at $-1$, $0$ and $+1$.
 
 | structure | square | roots of $-1$ | roots of $0$ | roots of $+1$ | physical reading |
 |---|---|---|---|---|---|
@@ -251,7 +361,7 @@ must be stated for the general products and not for all twelve.
 | claim | source | status |
 |---|---|---|
 | the root set of $0$ is a cone and the root sets of $\pm1$ carry no apex | mathematics companion; recomputed via the scaling law on samples | cited |
-| a root of $-1$ or $+1$ is a unit and a nonzero root of $0$ is a zero divisor | mathematics companion; *Square Roots of a General Element* | cited |
+| a root of $-1$ or $+1$ is a unit and a nonzero root of $0$ is a zero divisor | mathematics companion; *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* | cited |
 | GPA: roots of $-1$ are $\pm i$, the pure real unit vectors and the complex quadric; roots of $0$ the nilpotent cone; roots of $+1$ the images by $i$ | mathematics companion; recomputed $\pm i$, $e_1$ roots of $-1$ and $ie_1$ a root of $+1$ | verified |
 | GQA/SQA: the roots are the quadrics $C=\lambda$ of real dimension six | mathematics companion; recomputed $ie_1$ a root of $-1$, $e_1$ and $e_0$ roots of $+1$, $e_0+ie_1$ a root of $0$ | verified |
 | GPS has no root of $-1$, the origin alone as root of $0$, and $U(2)$ as root of $+1$ | mathematics companion; recomputed absence of $-1$ on 60 samples and $e^{i\theta}e_0$ a root of $+1$ | verified |
@@ -259,6 +369,10 @@ must be stated for the general products and not for all twelve.
 | GQS: the three named values are the three ranges of the slope | mathematics companion; recomputed $e_1$ a root of $-1$, $e_0$ a root of $+1$, $e_0+ie_1$ a root of $0$ | verified |
 | the four antisymmetric structures have no root of either signed value | mathematics companion; recomputed for APS and AQS on 60 samples | verified |
 | the physical readings (phase, lightlike displacement, involution, unitary, normalisation, clock, half-turn, discrete symmetry, celestial sphere, helicity phase) | this article; owners cited in the text | interpretation |
+| the central $i$ passes between the sectors; the anomaly is placed in the $\mathbb{M}_+$ (spin) sector, not derived | *The Anomalous Magnetic Moment in Biquaternionic Form* | cited |
+| the holonomy is a central phase times a rotor; the two signed values are two factors of one element | *Geometric Phases of Non-Relativistic Spin in Biquaternionic Form* | cited |
+| the square of time reversal is a signed root, $R(2\pi)=(-1)^{2s}e_0$; Kramers degeneracy is its $-$ sign | *Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form* | cited |
+| the sign of the real structure's square fixes the KO-dimension; the framework's $\flat$ has $J^{2}=+e_0$ | *The Spectral Triple of the Biquaternion Algebra* | cited |
 
 ## The Three Objects in the Physics Corpus
 
@@ -318,7 +432,7 @@ This is the sense in which the three values organise the element theory: $0$ is 
 sign, and $-1$ is a rotation.
 
 **The root of $0$ is the photon.** The nonzero root of $0$ is the lightlike displacement, and the particle
-the corpus attaches to it is the photon, read in *The Photon as a Null Element: What the Cone Derives and
+the corpus attaches to it is the photon, read in *The Null Four-Momentum: What the Cone Derives and
 What It Does Not*. That article's division is the sharpest statement of what the value $0$ supplies: the
 cone derives the propagation speed, the absence of a rest frame and the motion at $c$ for every momentum,
 and does not derive the value $m=0$, the existence of a mass scale or the reduction to two polarisations. A
@@ -348,8 +462,10 @@ three clock readings: a tick, a synchronisation, a thermal period.
 **The root of $-1$ is also the generator of the state's own time.** *Thermal Time and the Modular Flow in the
 Biquaternion Framework* writes the modular flow of a faithful state as
 $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}=e^{-it\tilde K}\tilde A\,e^{it\tilde K}$ with
-$\tilde K=-\log\Delta$ the modular Hamiltonian. The root of $-1$ is exactly the $i$ that turns the
-Hermitian modular Hamiltonian into that flow: the generator is $i\tilde K$. The **thermal time hypothesis**
+$\tilde K=-\log\Delta$ the modular Hamiltonian. The root of $-1$ is exactly the $i$ in the exponent: the
+generator the article names is the modular Hamiltonian $\tilde K$, lying in the informational sector
+$\mathbb{M}_+$, and the flow is $\sigma_t(\tilde A)=e^{-it\tilde K}\tilde A\,e^{it\tilde K}$, so it is the
+central $i$ that turns a Hermitian operator into a one-parameter group of automorphisms. The **thermal time hypothesis**
 of Connes and Rovelli goes further and proposes that this flow *is* time, so that the state, not a
 Hamiltonian, specifies time — and then the root of $-1$ is not merely a clock's phase but the object that
 converts a state into its time. The corpus keeps the proposal's radical part apart from the framework's
@@ -357,13 +473,18 @@ share: the biquaternion algebra is a finite-dimensional type I factor, so its mo
 periodic and the generator lies in the informational sector $\mathbb{M}_+$, whereas the outer flow that the
 hypothesis needs belongs to an infinite-dimensional algebra and is absent here.
 
-**The root of $-1$ is also the precession.** *Magnetic Resonance and Rabi Oscillations in Biquaternionic
-Form* drives a spin-$\tfrac12$ in a static field, and the spin precesses at the Larmor frequency — a
-rotation generated by a root of $-1$ — until a transverse drive at the same frequency interrupts it and the
-Rabi oscillation moves the state between its two eigenstates. Resonance is the **matching of two roots of
-$-1$**: the drive's generator and the precession's generator, tuned to one another. This is the same
-quarter-turn generator read as a frequency, and it makes the clock reading operational, since a frequency
-is what a clock is compared against.
+**The root of $-1$ is also the Larmor generator, and the root is what makes it a rotation.** *Magnetic
+Resonance and Rabi Oscillations in Biquaternionic Form* supplies the operational reading. The Larmor
+precession is generated by the unit real quaternion $\tilde U_R(t)=\exp(-\tfrac{\omega t}{2}e_3)$, the same
+one-parameter rotor the spin-precession exercise uses, and its generator is the real quaternion $e_3$ with
+$e_3^{2}=-e_0$: the generator **is** a root of $-1$. The article states the root's role exactly — the
+Hermitian observable is $ie_3$, and "the imaginary unit that makes the observable Hermitian is the same one
+that converts its exponential into a rotation rather than a boost". The root of $-1$ is therefore what
+distinguishes a rotation from a boost, in the precession as in the modular flow. Resonance itself the article
+states as the **vanishing of the longitudinal component**: at $\omega=\omega_0$ the rotating-frame rotor
+corotates with the drive, the effective field is purely transverse, and the effective Hamiltonian is
+$\propto ie_1$. This is the clock reading made operational, since a frequency is what a clock is compared
+against.
 
 **The root of $0$ is a point of the sky together with a phase.** *The Celestial Sphere of the Null Cone:
 Null Directions, Chirality and the Phase* states the reading of a massless element in one sentence: **a
@@ -395,6 +516,126 @@ $\flat$ is the involution of that kind, and *Antilinear Structure and the Two Ki
 Biquaternionic Form* is where it is owned. So the value $+1$ is the reality condition that selects the
 physical diagonal out of the two chiral skies. Here the reading is an identification rather than a quoted
 sentence, and it is stated as such.
+
+**The root of $-1$ is also the complex structure of the state-space geometry.** The local complex structure
+of the root is not only a kinematic datum of the algebra; it is the $J$ of the geometry the state space
+carries. *The Fubini–Study Geometry and the Biquaternion Norm* exhibits the metric of the pure states as
+**Kähler**, with complex structure the central scalar imaginary $i$ acting on the state module and symplectic
+form, up to a factor, the trace of the algebra commutator; the metric itself is the biquaternion norm's
+second variation on the null boundary. The root of $-1$ is therefore also the object that makes the state
+space a complex manifold, and it does so on exactly the boundary on which the algebra's quadratic form
+vanishes. The article attaches a caution the reading needs: this complex structure lives on the **module**
+$\mathbb{B}\tilde\Pi_1$ and not on the state space $\mathbb{M}_+$, because multiplication by $i$ exchanges
+the two sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so the projective structure of the rays descends to the
+boundary of the ball while the operator $i$ does not act on the ball itself.
+
+**The root of $+1$ is realised by the $S$-matrix.** The unitary root of $+1$ is not only a formal group; it
+is the physical scattering operator. *The $S$-Matrix in Biquaternionic Form* finds that the $S$-matrix of a
+single fermionic mode is **matrix-unitary**, $\tilde S\tilde S^{*}=e_0$, which is the root-of-$+1$ condition
+of the group $U(2)$ and not the unit-norm condition $N(\tilde S)=e_0$ of the Lorentz rotors. The article
+insists on the distinction because the two conditions cut out different groups, $U(2)$ and $SL(2,\mathbb C)$,
+meeting in the spin rotations $SU(2)$: a Lorentz rotor of unit norm that is not a pure rotation is not
+matrix-unitary, and a physical $S$-matrix is in general not a unit-norm biquaternion. The value $+1$ thus has
+a physical carrier at least as sharp as the photon's for the value $0$: it is the probability-preserving
+condition an $S$-matrix satisfies.
+
+**The root of $-1$ pairs two real directions into a ladder.** *Landau Levels in Biquaternionic Form* builds
+the quantised motion of a charged particle from one commutation relation with a root of $-1$ in it,
+$[\tilde\pi_{x},\tilde\pi_{y}]=i\hbar qB/c\,e_0$, and the ladder's raising operator is the complex combination
+$\tilde\pi_{x}\pm i\tilde\pi_{y}$ that the same $i$ makes out of two *real* momenta. The spectrum is a ladder
+of central values spaced by the cyclotron quantum $\hbar\omega_{c}$, itself built from the central scalars
+$q,B,m,c$, with a zero-point floor $\tfrac12\hbar\omega_{c}$; the level count is read from a second central
+commutator whose value is $i$ times an area. Two features belong to the root-of-$-1$ reading. The $i$ that
+appears is the algebra's central imaginary, so the pairing of two real directions into one ladder state is a
+root of $-1$ acting inside a commutator. And the module is a spectator: the article's own phrase is that the
+magnetic field "reshapes the envelope without touching the module", so the local complex structure reshapes
+the *central* algebra of operators and leaves the state space on which it acts unchanged.
+
+**The root of $+1$ is an observable's own square.** The traceless Hermitian elements of $\mathbb{M}_+$ — the
+framework's observables — are roots of positive values, and that makes the root of $+1$ concrete. Write such
+an element as $\tilde H=i\mathbf h$ with $\mathbf h$ a real vector: its square is
+$\tilde H^{2}=\lvert\mathbf h\rvert^{2}e_0$, a *positive* central value, so the normalised observable
+$\tilde H/\lvert\mathbf h\rvert$ is a root of $+1$, an involution of the two-level space. *The Zeeman and
+Stark Effects in Biquaternionic Form* reads this element as the physics of a two-level atom: the Zeeman
+coupling is the traceless Hermitian $-\tfrac{\hbar\omega_L}{2}ie_3$, its two eigenvalues
+$\pm\tfrac{\hbar\omega_L}{2}$ are the split levels, and the article records that the splitting $\hbar\omega_L$
+is linear in the field and depends on its magnitude alone, the field direction selecting the eigenbasis and
+not the eigenvalues. The reading is then sharp: the involution is not imposed from outside but is the
+observable's own square, and the two signs of the split are the two eigenvalues of that involution. The
+article is equally clear about what the algebra does not supply: the value of the gyromagnetic ratio
+$\gamma$ is external data, the algebra giving the two-dimensional spectral structure and its isotropy.
+
+**The root of $-1$ generates the compact phase.** *The Discrete Lattice and the Thermal Circle* shows what
+the root-of-$-1$ clock does geometrically. The central phase $i\theta\mapsto e^{i\theta}$ is the compact
+group $U(1)$ the root of $-1$ generates, and the article's governing principle is Pontryagin duality,
+"Every discreteness in the corpus is the Pontryagin dual of a compactness": a discrete abelian group is the
+character group of a compact one. The article reads the $U(1)$ twice, and the two readings give the two
+discrete spectra the framework has. The phase's dual is its **integer winding**, which the corpus reads as
+the discrete charge label. At finite temperature the same central phase is the **thermal circle** — the
+imaginary-time direction compactified with circumference $\beta=\hbar/(k_BT)$ — and the dual of that circle
+is the discrete set of **Matsubara frequencies** $\omega_n=2\pi n/\beta$. The root of $-1$ is thus the
+generator of the phase whose compactness makes the spectrum discrete: the winding on one reading, the
+thermal ladder on the other. What the algebra supplies is the compact phase and hence the discreteness; the
+temperature sets the circumference, and the value of $\beta$ is external data.
+
+**The root of $+1$ is the superselection charge.** *The Material-Informational Split as a Superselection
+Structure in Biquaternionic Form* tests the framework's sector split against the algebraic notion of a
+superselection structure, and the root of $+1$ is what the split is built on. The split is the **eigenspace
+decomposition of an involutive charge**: no operation of the conjugation type maps $\mathbb{M}_+$ into
+$\mathbb{M}_-$ and the relative phase between the two summands is unobservable, which is the operational
+content of a superselection rule. The article is equally exact about what is *absent*: the framework is
+central simple, its only central idempotents are $0$ and $e_0$, so there is no central-projection
+superselection structure of the standard kind. The surviving structure is a grading carried by the algebra's
+antilinear **real structure** $\flat=-{}^{*}$ rather than by its centre. Here the reading must be exact about
+the sense in which $+1$ occurs: $\flat$ is an **involution** — $\flat^{2}=\mathrm{id}$ — but it is antilinear
+and, as the article states, "not an element of the algebra", so it is not an algebraic root of $+1$ in the
+sense of this companion, an element $\tilde\Xi$ with $\tilde\Xi^{2}=+e_0$, and it cannot be added to the
+algebra's list of observables. The root of $+1$ in this reading is therefore a **structure** on the algebra
+rather than an element of it: the charge is a conjugation, and the sector eigenvalue is its fixed-space
+decomposition. So the value $+1$ is not only the reality condition on the two skies and the unitary of the
+pairing; on the two-level state space it labels the two signs of an involutive conjugation whose eigenspaces
+are the material and informational sectors and whose relative phase no measurement can see.
+
+**Positivity selects the degenerate roots.** *The Bochner Theorem for the Biquaternion Transform: the
+Hermitian Form and the Root* turns the root of $-1$ into a two-class object. The transform's kernel is an
+exponential of a root of $-1$, and the classical theorem — that the transform of a positive measure is a
+positive-definite function — is a positivity statement, so it selects which roots can carry a probability.
+Its finding is exact: with the **Hermitian form** $H=\mathrm{Sc}(\tilde P\tilde Q^{*})$, the form the corpus
+uses for probability, the theorem **holds for the degenerate roots** — the central imaginary $\pm i$ and the
+unit pure real quaternions $\pm\mu$ — and **fails for the non-degenerate roots** $b\mu+d\nu i$ with
+$b^2-d^2=1$. The non-degenerate roots are genuine roots of $-1$ — they satisfy $\rho^2=-e_0$ — yet no
+positive spectral measure is their transform, so they do not belong to the probability band. The article is
+also careful about a different statement that the corpus records at the central element $i$: that failure
+tests the **biquaternion norm** $N$, it is independent of the root, and it belongs to the metric rather than
+to the probability, so it must not be read as a restriction on $i$. The reading for this companion is a
+refinement of the root-of-$-1$ family: the three families are not interchangeable carriers of phase, and the
+one that carries probability is the **degenerate** one, the same family that supplies the framework's local
+complex structures.
+
+**The phase of the oscillator is the sector exchange.** *The Classical Harmonic Oscillator and the
+Two-Sector Structure in Biquaternionic Form* gives the root of $-1$ a mechanical realisation. In the
+normalization that makes the motion a rigid rotation, the oscillator's state is the complex amplitude $a$,
+which embeds as a **central** element; its two real directions $e_0$ and $ie_0$ lie **one in each sector**
+($e_0$ Hermitian in $\mathbb{M}_+$, $ie_0$ anti-Hermitian in $\mathbb{M}_-$). The article's identification is
+then exact: "the oscillator's phase advance is the sector exchange restricted to the centre — the rotation
+that multiplication by $i$ performs". So the root of $-1$ is not only the abstract phase of a state but the
+generator of the oscillator's rigid rotation, and the two conjugate quadratures are the two sectors
+themselves. The energy is the **Hermitian form** $\tfrac12m\omega^2|a|^2$, positive definite, in contrast
+with the indefinite norm, so this reading selects the same probability-side form that the positivity reading
+above did. The companion's ledger gains a first mechanical instance: $-1$ runs the oscillator's clock, and
+the two sectors are its quadratures.
+
+**The nontrivial root of $+1$ is the double cover.** *The Two-Sheeted Cover and the Topology of Boosts in
+Biquaternionic Form* gives the root of $+1$ a topological role. The rotor
+$R(\theta)=\cos(\theta/2)+\sin(\theta/2)\hat{\mathbf n}$ returns $R(2\pi)=-e_0$, not $e_0$: the $2\pi$
+rotation is the **nontrivial central root of $+1$**, and it is the element that makes the covering
+two-to-one, while a $4\pi$ rotation returns $e_0$ and is contractible. So the difference between single- and
+double-valuedness is carried by the two roots of $+1$ in the centre, $\pm e_0$. The **boosts**, by contrast,
+are topologically trivial: they form a manifold diffeomorphic to $\mathbb{R}^3$, every loop in it is
+contractible, and the obstruction to closing two boosts into a boost is the **Thomas–Wigner rotation** their
+product contains. The reading pairs the two named values: $-1$ generates the phase, $+1$ carries the sign
+that distinguishes the two sheets, and the two-to-one cover is the statement that a rotor is periodic in
+$4\pi$ while its rotation is periodic in $2\pi$.
 
 ## Physical Interpretation
 
@@ -430,8 +671,78 @@ sentence, and it is stated as such.
 - The root of $-1$ is the tick of a relational clock: the sector exchange is a quarter turn, the period is
   a full central rotation, and the algebra supplies neither the arrow nor the rate.
 - The same root is the generator of a state's own time (the $i$ in the modular flow $e^{-it\tilde K}$, whose
-  flow the thermal time hypothesis identifies with time) and the generator of Larmor precession, so
-  resonance is the matching of two roots of $-1$.
+  flow the thermal time hypothesis identifies with time) and the Larmor generator of a spin in a field,
+  where $e_3^{2}=-e_0$ and the central $i$ is what converts the Hermitian observable $ie_3$ into a rotation.
+  Resonance is the vanishing of the longitudinal component of the effective field.
+- The root of $-1$ is also the complex structure of the state-space geometry. The complex structure of the
+  Kähler metric of the pure states is the central $i$ acting on the state module, and the metric is the
+  biquaternion norm's second variation on the null boundary. The structure lives on the module, since
+  $i\mathbb{M}_+=\mathbb{M}_-$: the projective geometry descends to the boundary of the ball, but the
+  operator $i$ does not act on the ball itself.
+- The root of $+1$ has a sharp physical carrier: the $S$-matrix of a single mode is matrix-unitary,
+  $\tilde S\tilde S^{*}=e_0$, which is the $U(2)$ root-of-$+1$ condition and not the unit-norm Lorentz
+  condition $N(\tilde S)=e_0$.
+- The root of $-1$ pairs two real directions into a ladder. The Landau levels of *Landau Levels in
+  Biquaternionic Form* come from the central commutator $[\tilde\pi_x,\tilde\pi_y]=i\hbar qB/c\,e_0$; the
+  raising operator is $\tilde\pi_x\pm i\tilde\pi_y$, and the field reshapes the central algebra of operators
+  without touching the module.
+- The root of $+1$ is also an observable's own square. A traceless Hermitian element $\tilde H=i\mathbf h$
+  squares to the positive value $\lvert\mathbf h\rvert^{2}e_0$, so $\tilde H/\lvert\mathbf h\rvert$ is an
+  involution, and its two eigenvalues are the split levels of *The Zeeman and Stark Effects in Biquaternionic
+  Form*. The algebra gives the structure and the isotropy of the splitting, not the gyromagnetic ratio.
+- The root of $-1$ generates the compact phase, and compactness is the source of the discrete spectra. The
+  central phase $U(1)$ has dual the integer winding — the discrete charge label — and at finite temperature
+  it is the thermal circle of circumference $\beta=\hbar/(k_BT)$, whose dual is the Matsubara ladder (*The
+  Discrete Lattice and the Thermal Circle*). The temperature is external data; the compact phase is not.
+- The root of $+1$ is the superselection charge — as a structure, not an element. The material–informational
+  split is the eigenspace decomposition of the antilinear real structure $\flat=-{}^{*}$, which is an
+  involution but, being antilinear, is not an element of the algebra and so not an algebraic root of $+1$
+  (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*). Its relative
+  phase is unobservable, and there is no central projection, the algebra being central simple.
+- Positivity splits the roots of $-1$. *The Bochner Theorem for the Biquaternion Transform: the Hermitian
+  Form and the Root* shows that with the Hermitian form $H$ the transform of a positive measure is
+  positive-definite exactly for the **degenerate** roots ($\pm i$, unit pure real quaternions) and fails for
+  the **non-degenerate** roots $b\mu+d\nu i$ with $b^2-d^2=1$: those are roots of $-1$ that no positive
+  spectral measure comes from. The failure the corpus records at $i$ is a separate statement about the norm
+  $N$, not about positivity.
+- The root of $-1$ runs the classical clock. In *The Classical Harmonic Oscillator and the Two-Sector
+  Structure in Biquaternionic Form* the oscillator's phase advance is the sector exchange restricted to the
+  centre, the rotation that multiplication by $i$ performs, and its two conjugate quadratures ($e_0$, $ie_0$)
+  are the two sectors; the energy is the positive Hermitian form, not the indefinite norm.
+- The root of $+1$ carries the double cover. In *The Two-Sheeted Cover and the Topology of Boosts in
+  Biquaternionic Form* the rotor $R(2\pi)=-e_0$ is the nontrivial central root of $+1$, while the boost
+  manifold is contractible and the closure failure of two boosts is the Thomas–Wigner rotation.
+- The root of $-1$ is the element that passes between the **two sectors**. In *The Anomalous Magnetic
+  Moment in Biquaternionic Form* multiplication by the central $i$ "is exactly the element that exchanges
+  the sectors": it carries the anti-Hermitian boost generator $\tfrac12 n\cdot e\in\mathbb{M}_-$ to the
+  Hermitian rotation generator $\tfrac12 i\,n\cdot e\in\mathbb{M}_+$. The article uses that split only to
+  place the two Lorentz structures of the vertex: the convection term is central (the metric part), the
+  magnetic term is a rotation-type $\mathbb{M}_+$ structure, and the anomaly — a correction to the magnetic
+  term — is "an $\mathbb{M}_+$ effect — the same sector as the observable the anomaly corrects." The article
+  is explicit that this is bookkeeping, not derivation: the tree-level $g=2$ is "taken as settled elsewhere,"
+  and the algebra "does not produce $\alpha$."
+- The two signed values are the **two factors of one holonomy**. In *Geometric Phases of Non-Relativistic
+  Spin in Biquaternionic Form* the accumulated spin evolution over a closed loop "is the product of a central
+  phase and conjugation by a unit real quaternion", and "the central phase and the rotation are the two faces
+  of the same element of $\mathbb{B}$". Both factors are units, of unit norm, so both lie in the same unit
+  group as the roots of $\pm1$; the $2\pi$ rotor is $-e_0$, the nontrivial root of $+1$. The state is an
+  idempotent and carries no phase, so neither factor is visible to it: the geometric phase — minus half the
+  oriented solid angle for a spin-$\tfrac12$ — lives on the spinor, and the spinor's double-valuedness sits
+  inside the same holonomy.
+- The square of a **time reversal** is one of the two signed values, and the sign is the spin. In *Kramers
+  Degeneracy and Antiunitary Symmetry in Biquaternionic Form* the antilinear time-reversal operator of the
+  spinor module has $\mathcal T^{2}=U^{2}=R(2\pi)=(-1)^{2s}e_0$: it is $-1$ for half-integer spin and $+1$
+  for integer spin, "the same element that the spin–statistics companion identifies as the rotation through
+  $2\pi$." Kramers degeneracy is that $-$ sign read on the spectrum — every $\mathcal T$-invariant
+  Hamiltonian with $\mathcal T^{2}=-1$ has an even-degenerate spectrum — so the root of $-1$ is a real
+  structure whose sign doubles the levels, and the single $2\pi$ sign is the covering sign seen in two places.
+- The two signed values are also the **KO-dimension sign** of a real structure. In *The Spectral Triple of the
+  Biquaternion Algebra* an antilinear involution $J$ with $J^{2}=\pm e_0$, together with the signs of its
+  commutation with the Dirac operator, fixes the triple's KO-dimension modulo eight; the framework's own
+  conjugation $\flat=-{}^{*}$ was verified to have $J^{2}=+e_0$ — the root of $+1$ — whereas four-dimensional
+  Euclidean spin geometry's charge conjugation has $J^{2}=-e_0$, the root of $-1$. The root of $-1$ is not the
+  algebra's own; obtaining it needs the module's quaternionic right structure, which is the framework's
+  statement that the Clifford algebra is $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$.
 
 ## Summary
 
@@ -464,14 +775,20 @@ because a bracket is an infinitesimal transformation, and their only named value
 
 ## Further Reading
 
-- The mathematics companion: *Square Roots of Minus One, Zero and Plus One* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one.md`), for the classification of the three values in the twelve structures.
-- The general radicand and the mass shell: *Square Roots of a General Element in the 12 Structures Framework*; *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
-- The roots of $-1$ as the phase: *The Local Complex Structure and the Speed of Light*; *Electromagnetism in Media — The Local Complex Structure at Work*; *Idempotents in the 12 Structures Framework*.
-- The roots of $0$ as the lightlike displacement: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Nilpotents in the 12 Structures Framework*; *The Photon as a Null Element: What the Cone Derives and What It Does Not*.
+- The mathematics companion: *Square Roots of Minus One, Zero and Plus One in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the classification of the three values in the twelve structures.
+- The general radicand and the mass shell: *Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
+- The roots of $-1$ as the phase: *The Local Complex Structure and the Speed of Light*; *Electromagnetism in Media — The Local Complex Structure at Work*; *Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$*.
+- The roots of $0$ as the lightlike displacement: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; *The Null Four-Momentum: What the Cone Derives and What It Does Not*.
+- The roots in the geometry and the $S$-matrix: *The Fubini–Study Geometry and the Biquaternion Norm*, for the central $i$ as the complex structure of the Kähler metric of the pure states; *The $S$-Matrix in Biquaternionic Form*, for matrix unitarity as the $U(2)$ root of $+1$ realised by a physical $S$-matrix.
+- The roots in the two-level and the ladder: *Landau Levels in Biquaternionic Form*, for the root of $-1$ inside the field-strength commutator and the ladder it generates; *The Zeeman and Stark Effects in Biquaternionic Form*, for the traceless Hermitian observable as a root of a positive value, normalised to the root of $+1$ whose eigenvalues are the split levels.
+- The roots in the thermal and the superselection structure: *The Discrete Lattice and the Thermal Circle*, for the central phase as the compact generator whose two duals are the discrete charge winding and, at finite temperature, the Matsubara ladder; *The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, for the split as the eigenspace decomposition of an antilinear involutive structure.
 - The roots of $+1$ as the involution and the unitary: *Observables, Gauge Generators and the Chirality of the Internal Action*; *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*; *The Unitary Group of the Biquaternion Algebra* (mathematics).
 - The three objects in the physics corpus: *The Local Complex Structure and the Speed of Light*; *Electromagnetism in Media — The Local Complex Structure at Work*; *The Effective Optical Metric of the Local Complex Structure*; *The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral*; *Interpretation of the Wick Rotation in the Biquaternion Universe*; *The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time*; *Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form*; *The Berry Phase and Geometric Phases in Biquaternionic Form*; *The CPT Theorem in Biquaternionic Form*; *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*; *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*; *Particle Types, Discrete Charge and Three-Particle Couplings*.
 - The clock, the sky and the phase: *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*; *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form*; *The KMS Condition and the Biquaternion Framework*; *Thermal Time and the Modular Flow in the Biquaternion Framework*, for the state's own time; *Magnetic Resonance and Rabi Oscillations in Biquaternionic Form*, for precession and resonance; *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*; *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*; *The Hopf Fibration and the Biquaternion Gauge Bundle*.
-- The probability band and its positivity: *Mass, Rank and the Positivity of the Dagger*; *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (mathematics).
+- The roots in classical and topological form: *The Classical Harmonic Oscillator and the Two-Sector Structure in Biquaternionic Form*, for the phase as the sector exchange and the quadratures as the two sectors; *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for $R(2\pi)=-e_0$ as the nontrivial root of $+1$, the contractible boost manifold and the Thomas–Wigner rotation.
+- The roots in the spin dynamics and the holonomy: *The Anomalous Magnetic Moment in Biquaternionic Form*, for the central $i$ as the operator that turns a boost generator into a rotation generator and the tree-level $g=2$ identity it states; *Geometric Phases of Non-Relativistic Spin in Biquaternionic Form*, for the accumulated holonomy as a central phase times a rotor and the double-valued spinor.
+- The square of a real structure: *Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form*, for $\mathcal T^{2}=R(2\pi)=(-1)^{2s}e_0$, the Kramers sign and the quaternionic structure of the state space; *The Spectral Triple of the Biquaternion Algebra*, for the two signs of $J^{2}$, the KO-dimension, and the framework's $\flat$ as the root of $+1$ where spin geometry asks for the root of $-1$.
+- The probability band and its positivity: *Mass, Rank and the Positivity of the Dagger*; *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (mathematics); *The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*, for positivity as the criterion that selects the degenerate roots and rejects the non-degenerate ones.
 - The indefinite metric and its null states: *The Fourth Product and Its Indefinite Metric*; *The States the Indefinite Metric Cannot Normalise*.
-- The comparison of the four general products: *Composition and Probability: the General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*; *The Cone and the Massless Particles in the 12 Structures Framework*.
+- The comparison of the four general products: *Composition and Probability: the General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*; *The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*.
 - The grid and the definitions: *The 12 Products of the Biquaternion Complex Space*; *The Twelve Structures Compared: Product, Law and Form*; *Definitions for the Study of the 12 Algebraic Structures*; *Conventions in the Biquaternion Universe*.

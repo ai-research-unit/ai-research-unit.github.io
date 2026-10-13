@@ -102,4 +102,4 @@ Each general product splits under the interchange of its slots into a symmetric 
 - *The Two General Products of the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-two-general-products-of-the-quaternion-r-space.md`), for the two products in coordinates.
 - *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`), for the split and the four halves on the coordinates.
 - *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six names and the law table.
-- *Annihilators* (`articles_maths/quaternion-annihilators.md`), below this article in this category, for the first of the element theories read across the six.
+- *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), below this article in this category, for the first of the element theories read across the six.

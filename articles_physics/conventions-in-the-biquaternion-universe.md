@@ -266,26 +266,30 @@ pairs the two sectors — in this series' usage, *the sectors*, without qualific
 
 **The choice of which subspace is "real".** The convention that has to be flagged is that $\mathbb{M}_-$ is the *anti*-Hermitian subspace, so that the framework's "real" part is the part built on $i$ times a Hermitian element. The more familiar convention takes the Hermitian part as real. The two differ only by the central factor $i$, and there is no mathematical error either way: an anti-Hermitian generator is the standard choice for the Lie algebra of a unitary group, and it is $\mathbb{M}_-$ that carries that role here. What is unusual is that the convention is applied to the **field** rather than to the generators. Once it is, $\mathbb{M}_-$ is fixed by $\flat$ and $\mathbb{M}_+$ is not, and that is what makes $\mathbb{M}_-$ the framework's material subspace. A reader who "restores" the Hermitian convention will find the whole series inverted. Do not.
 
+### The Twelve Products and Their Names
+
+The algebra carries **four general products** — one to each of the four choices of the two slots, the first factor read as it stands or through ${}^{\natural}$ and the second as it stands or through ${}^{*}$ — and each of the four splits into a **symmetric part** and an **antisymmetric part**, so that the complex space carries **twelve products** in all. The names are these, with the three-letter code the band articles write them by:
+
+| the general product | its symmetric part | its antisymmetric part |
+|---|---|---|
+| the general plain bilinear product ($\mathrm{GPA}$) | the symmetric plain bilinear product ($\mathrm{SPA}$) | the antisymmetric plain bilinear product ($\mathrm{APA}$) |
+| the general quaternionic bilinear product ($\mathrm{GQA}$) | the symmetric quaternionic bilinear product ($\mathrm{SQA}$) | the antisymmetric quaternionic bilinear product ($\mathrm{AQA}$) |
+| the general plain sesquilinear product ($\mathrm{GPS}$) | the symmetric plain sesquilinear product ($\mathrm{SPS}$) | the antisymmetric plain sesquilinear product ($\mathrm{APS}$) |
+| the general quaternionic sesquilinear product ($\mathrm{GQS}$) | the symmetric quaternionic sesquilinear product ($\mathrm{SQS}$) | the antisymmetric quaternionic sesquilinear product ($\mathrm{AQS}$) |
+
+**The code is read letter by letter.** The first letter says which of the three operations of a row — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one, whose first slot is read as it stands, and $\mathrm Q$ the quaternionic one, whose first slot carries ${}^{\natural}$; and the third says the family — $\mathrm A$ the **algebra** over $\mathbb{C}$, whose three products are $\mathbb{C}$-bilinear, and $\mathrm S$ the **sesqualgebra** over $(\mathbb{C},\bar{\cdot})$, whose three products are sesquilinear. The four general products are the multiplications of the four general structures of the band; the eight parts are the symmetric and antisymmetric products beside them; and the twelve codes together name the twelve algebraic structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+
+The products themselves — their coordinates, their laws, their units and their images — are *The 12 Products of the Biquaternion Complex Space*, and the grid of the four general products is *The Four General Products and the Degree-2 Forms of the Biquaternion Space*.
+
 ### The Form Convention and the Norm Convention
 
-The series carries four forms and their four diagonals, the four norms, one form and one norm to a product (§*The Involutions and the Four Forms*). Beside the four letters it writes a **generic form** and a **generic norm**:
+The series writes a **generic form** and a **generic norm**, the norm being the form read at the two equal arguments, beside the four forms and the four norms of §*The Involutions and the Four Forms*:
 
 $$
-\mathrm{Form}(\tilde{Q},\tilde{P}) , \qquad \mathrm{Norm}(\tilde{Q})=\mathrm{Form}(\tilde{Q},\tilde{Q}) .
+\mathrm{Form}(\tilde{P},\tilde{Q}) , \qquad \mathrm{Norm}(\tilde{Q})=\mathrm{Form}(\tilde{Q},\tilde{Q}) .
 $$
 
-The four instantiate the pair, one form and one norm to a product:
-
-| product | form | norm |
-|---|---|---|
-| the plain product | $\langle\tilde{P},\tilde{Q}\rangle=\mathrm{Sc}(\tilde{P}\tilde{Q})$ | $B(\tilde{Q})$ |
-| the natural product | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$ | $N(\tilde{Q})$ |
-| the general plain sesquilinear product | $\langle\tilde{P},\tilde{Q}\rangle_{*}=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ | $H(\tilde{Q})$ |
-| the general quaternionic sesquilinear product | $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}^{*})$ | $K(\tilde{Q})$ |
-
-**$\mathrm{Form}$ and $\mathrm{Norm}$ are generic, $B$, $N$, $H$, $K$ are particular.** A statement that holds for the forms or the norms generally is written with $\mathrm{Form}$ and $\mathrm{Norm}$, and never with one of the four letters; the letter $N$ in particular names the general quaternionic bilinear algebraic norm, the biquaternion norm of §*The Metric: Three Levels*, and not the norm in general.
-
-The convention is one of **notation, not of substance**: $\mathrm{Norm}(\tilde{Q})$ is not a fifth norm, only the four read at once. The mathematical corpus states the same convention, and the two agree on the two names.
+The convention is one of **notation, not of substance**: the generic form and the generic norm are the form and the norm of the statement at hand, and the four forms and the four norms of the series are the instances of the pair. The mathematical corpus states the same convention, and the two agree on the two names.
 
 ### The Root Convention
 
@@ -293,7 +297,7 @@ The roots carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*T
 
 A **root of $-1$** of the algebra is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2 = -1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{\Xi}^2 = \lambda e_0$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *Square Roots of a General Element in the General Plain Algebra*; the roots the series uses are the roots of $-1$, which parametrise the idempotents and the complex structures of the framework.
 
-**The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents (§*The Nilpotent Convention*), and the class is relative to the product; the roots of a value in the four general products are those of *Square Roots of a General Element*. Since the value is real, the bar and the star carry a root to a root, $(\tilde{\Xi}^{*})^2 = (\tilde{\Xi}^2)^{*} = -1$ for the roots of $-1$, so the star permutes the roots of $-1$ and fixes none of the non-central ones.
+**The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents (§*The Nilpotent Convention*), and the class is relative to the product; the roots of a value in the four general products are those of *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Since the value is real, the bar and the star carry a root to a root, $(\tilde{\Xi}^{*})^2 = (\tilde{\Xi}^2)^{*} = -1$ for the roots of $-1$, so the star permutes the roots of $-1$ and fixes none of the non-central ones.
 
 **The case rule splits the glyph, as it does in the mathematical corpus.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Xi}$, the glyph the series uses; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\xi}$; and those of the complex, split-complex and dual layers carry the plain capital, $\Xi$, no tilde being written where there is no quaternionic factor — the only tilde-free layer with a root of $-1$ being $\mathbb{C}$, whose two roots are the central $\pm i$. The series works in $\mathbb{B}$ and writes $\tilde{\Xi}$ throughout; the other two glyphs are the mathematical corpus's, and the layer fixes the glyph.
 
@@ -837,7 +841,8 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | The material coordinate, $\mathbf{x} = x e_1 + y e_2 + z e_3$ |
 | $(ct')\,e_0 + i\mathbf{x}'$ | The informational coordinate, $\mathbf{x}' = x' e_1 + y' e_2 + z' e_3$; the temporal coefficient $ct'$ is real and the spatial ones imaginary, the mirror of the material coordinate |
 | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ | Biquaternion norm; identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$ (level 1), signature $(3,1)$ on $\mathbb{M}_-$ (level 2) and $(1,3)$ on $\mathbb{M}_+$ |
-| $\mathrm{Form}(\tilde{P},\tilde{Q})$, $\mathrm{Norm}(\tilde{Q})=\mathrm{Form}(\tilde{Q},\tilde{Q})$ | The generic form and the generic norm, instantiated one to a product by the four forms and the four norms $B$, $N$, $H$, $K$ below (§*The Form Convention and the Norm Convention*) |
+| $\mathrm{Form}(\tilde{P},\tilde{Q})$, $\mathrm{Norm}(\tilde{Q})=\mathrm{Form}(\tilde{Q},\tilde{Q})$ | The generic form and the generic norm, instantiated one to a general product by the four forms and the four norms $B$, $N$, $H$, $K$ below (§*The Form Convention and the Norm Convention*, §*The Involutions and the Four Forms*) |
+| $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ | The twelve products, the four general products and their symmetric and antisymmetric parts (§*The Twelve Products and Their Names*) |
 | $B = \langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q}) = P_0Q_0 - P_1Q_1 - P_2Q_2 - P_3Q_3$ | The general plain bilinear form, the form of the plain product and of the identity conjugation; Gram matrix $\mathrm{E}$; signature $(4,4)$ on $\mathbb{B}$ and $(0,4)$ on $\mathbb{M}_-$ |
 | $N = \langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}) = P_0Q_0 + P_1Q_1 + P_2Q_2 + P_3Q_3$ | The general quaternionic bilinear form, the form of the norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$; unit group $\mathrm{SL}(2,\mathbb{C})$ |
 | $H = \langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = P_0\bar{Q}_0 + P_1\bar{Q}_1 + P_2\bar{Q}_2 + P_3\bar{Q}_3$ | The general plain sesquilinear form, the positive-definite Hermitian form of the star, signature $(8,0)$ on $\mathbb{B}$ and $(4,0)$ on $\mathbb{M}_-$; unit group $U(2)$; the internal Hilbert-space structure |

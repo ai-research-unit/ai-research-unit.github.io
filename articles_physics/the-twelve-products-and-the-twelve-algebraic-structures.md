@@ -36,33 +36,33 @@ $$
 
 Each of the four general products is read with its two parts, the general product first and its symmetric and antisymmetric part after it. The two $\mathbb{C}$-bilinear families come first, then the two sesquilinear ones.
 
-| code | product | scalar part | vector part |
-|---|---|---|---|
-| $\mathrm{GPA}$ | $\tilde P\tilde Q$ | $P_0Q_0-(\mathbf P,\mathbf Q)$ | $+P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q$ |
-| $\mathrm{SPA}$ | $\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)$ | $P_0Q_0-(\mathbf P,\mathbf Q)$ | $+P_0\mathbf Q+Q_0\mathbf P$ |
-| $\mathrm{APA}$ | $\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)$ | $0$ | $\mathbf P\times\mathbf Q$ |
-| $\mathrm{GQA}$ | $\tilde P^{\natural}\tilde Q$ | $P_0Q_0+(\mathbf P,\mathbf Q)$ | $+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ |
-| $\mathrm{SQA}$ | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)$ | $P_0Q_0+(\mathbf P,\mathbf Q)$ | $0$ |
-| $\mathrm{AQA}$ | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)$ | $0$ | $P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ |
-| $\mathrm{GPS}$ | $\tilde P\tilde Q^{*}$ | $P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ | $-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$ |
-| $\mathrm{SPS}$ | $\tfrac12\bigl(\tilde P\tilde Q^{*}+\overline{\tilde Q}\tilde P^{\natural}\bigr)$ | $P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ | $0$ |
-| $\mathrm{APS}$ | $\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q}\tilde P^{\natural}\bigr)$ | $0$ | $-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$ |
-| $\mathrm{GQS}$ | $\tilde P^{\natural}\tilde Q^{*}$ | $P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$ | $-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P+\mathbf P\times\overline{\mathbf Q}$ |
-| $\mathrm{SQS}$ | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)$ | $P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$ | $-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P$ |
-| $\mathrm{AQS}$ | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)$ | $0$ | $\mathbf P\times\overline{\mathbf Q}$ |
+| code | name | product | scalar part | vector part |
+|---|---|---|---|---|
+| $\mathrm{GPA}$ | the general plain bilinear product | $\tilde P\tilde Q$ | $P_0Q_0-(\mathbf P,\mathbf Q)$ | $+P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q$ |
+| $\mathrm{SPA}$ | the symmetric plain bilinear product | $\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)$ | $P_0Q_0-(\mathbf P,\mathbf Q)$ | $+P_0\mathbf Q+Q_0\mathbf P$ |
+| $\mathrm{APA}$ | the antisymmetric plain bilinear product | $\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)$ | $0$ | $\mathbf P\times\mathbf Q$ |
+| $\mathrm{GQA}$ | the general quaternionic bilinear product | $\tilde P^{\natural}\tilde Q$ | $P_0Q_0+(\mathbf P,\mathbf Q)$ | $+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ |
+| $\mathrm{SQA}$ | the symmetric quaternionic bilinear product | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)$ | $P_0Q_0+(\mathbf P,\mathbf Q)$ | $0$ |
+| $\mathrm{AQA}$ | the antisymmetric quaternionic bilinear product | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)$ | $0$ | $P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ |
+| $\mathrm{GPS}$ | the general plain sesquilinear product | $\tilde P\tilde Q^{*}$ | $P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ | $-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$ |
+| $\mathrm{SPS}$ | the symmetric plain sesquilinear product | $\tfrac12\bigl(\tilde P\tilde Q^{*}+\overline{\tilde Q}\tilde P^{\natural}\bigr)$ | $P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ | $0$ |
+| $\mathrm{APS}$ | the antisymmetric plain sesquilinear product | $\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q}\tilde P^{\natural}\bigr)$ | $0$ | $-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$ |
+| $\mathrm{GQS}$ | the general quaternionic sesquilinear product | $\tilde P^{\natural}\tilde Q^{*}$ | $P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$ | $-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P+\mathbf P\times\overline{\mathbf Q}$ |
+| $\mathrm{SQS}$ | the symmetric quaternionic sesquilinear product | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)$ | $P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$ | $-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P$ |
+| $\mathrm{AQS}$ | the antisymmetric quaternionic sesquilinear product | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)$ | $0$ | $\mathbf P\times\overline{\mathbf Q}$ |
 
 Two remarks fix the table. The **symmetrisation keeps the scalar part** of the general product unchanged and the **antisymmetrisation keeps the vector part**: for each family the general product and its symmetric part share one scalar part, and the general product and its antisymmetric part share one vector part. In the **plain sesquilinear** family the conjugate transpose of the value is its natural conjugate, so the antisymmetric part is the vector part of the single value $f(\tilde P,\tilde Q)$; in the **quaternionic sesquilinear** family the two orders are not conjugate values and the two parts are the half-sum and the half-difference of the two orders, which is why the values of $\mathrm{SQS}$ lie in no remarkable subspace.
 
 ## The Twelve Algebraic Structures
 
-Every one of the twelve products equips the complex space with an algebraic structure, and the structure is read off the laws of the operation. The general product of a family is the multiplication of the **algebra** or the **sesqualgebra** of that family, and the symmetric part of each product is the multiplication of a commutative structure and its antisymmetric part the multiplication of an alternating one, the symmetry being up to the coefficientwise conjugation in the two sesquilinear families. The name has three letters: the first says which of the three operations of the family — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one and $\mathrm Q$ the quaternionic one; the third says the family — $\mathrm A$ the algebra over $\mathbb{C}$ and $\mathrm S$ the sesqualgebra over $(\mathbb{C},\bar{\cdot})$.
+Every one of the twelve products equips the complex space with an algebraic structure, and the structure is read off the laws of the operation. The general product of a family is the multiplication of the **algebra** or the **sesqualgebra** of that family, and the symmetric part of each product is the multiplication of a commutative structure and its antisymmetric part the multiplication of an alternating one, the symmetry being up to the coefficientwise conjugation in the two sesquilinear families. The code has three letters and the structure carries a name beside it: the first letter of the code says which of the three operations of the family — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one and $\mathrm Q$ the quaternionic one; the third says the family — $\mathrm A$ the algebra over $\mathbb{C}$ and $\mathrm S$ the sesqualgebra over $(\mathbb{C},\bar{\cdot})$. The names are these, the operation — *general*, *symmetric* or *antisymmetric* — put in front of the name of the family.
 
 | the family | general | symmetric | antisymmetric |
 |---|---|---|---|
-| the plain algebra | $\mathrm{GPA}$ | $\mathrm{SPA}$ | $\mathrm{APA}$ |
-| the quaternionic algebra | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
-| the plain sesqualgebra | $\mathrm{GPS}$ | $\mathrm{SPS}$ | $\mathrm{APS}$ |
-| the quaternionic sesqualgebra | $\mathrm{GQS}$ | $\mathrm{SQS}$ | $\mathrm{AQS}$ |
+| the plain algebra | the general plain algebra ($\mathrm{GPA}$) | the symmetric plain algebra ($\mathrm{SPA}$) | the antisymmetric plain algebra ($\mathrm{APA}$) |
+| the quaternionic algebra | the general quaternionic algebra ($\mathrm{GQA}$) | the symmetric quaternionic algebra ($\mathrm{SQA}$) | the antisymmetric quaternionic algebra ($\mathrm{AQA}$) |
+| the plain sesqualgebra | the general plain sesqualgebra ($\mathrm{GPS}$) | the symmetric plain sesqualgebra ($\mathrm{SPS}$) | the antisymmetric plain sesqualgebra ($\mathrm{APS}$) |
+| the quaternionic sesqualgebra | the general quaternionic sesqualgebra ($\mathrm{GQS}$) | the symmetric quaternionic sesqualgebra ($\mathrm{SQS}$) | the antisymmetric quaternionic sesqualgebra ($\mathrm{AQS}$) |
 
 Only the six structures whose code ends in $\mathrm A$ are algebras over $\mathbb{C}$: the three operations of the plain row and the three of the quaternionic row are $\mathbb{C}$-bilinear, so each is an algebra multiplication in the broad sense. The six whose code ends in $\mathrm S$ are the six operations of the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$, and their four parts are sesquilinear again because the exchange that splits them carries the conjugation of the value. The four codes that begin with $\mathrm G$ name the four structures the corpus already names apart; the other eight are their symmetrisations and antisymmetrisations.
 

@@ -26,7 +26,7 @@ punctured space, and yet the annihilator of every nonzero element is a **hyperpl
 a nonzero annihilator can be. The article owns that reading, the operator with its rank, and the
 shape of the annihilator on the remarkable subspaces; the zero-divisor set is the cited article's.
 
-A second article, *Annihilators*, asks a different question: it fixes the product and collects the
+A second article, *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, asks a different question: it fixes the product and collects the
 elements that kill the whole space, the radical of the product, whereas this article fixes the
 element and collects the partners it kills.
 
@@ -180,5 +180,5 @@ themselves.
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the operator, its rank and its composition law.
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the form, its Gram matrix and its positive definiteness.
 - *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the scalar line and the vector subspace on which the annihilator is read.
-- *Annihilators* (`articles_maths/quaternion-annihilators.md`), for the structure-level annihilating set of an element that kills the whole space for a fixed product, which is the radical and not the annihilator of a fixed element.
+- *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the structure-level annihilating set of an element that kills the whole space for a fixed product, which is the radical and not the annihilator of a fixed element.
 - *Annihilators of the Symmetric Quaternionic Algebra* (`articles_maths/annihilators-of-the-symmetric-quaternionic-algebra.md`), the biquaternion twin, whose isotropic cone is nontrivial and whose isotropic elements lie in their own annihilator.

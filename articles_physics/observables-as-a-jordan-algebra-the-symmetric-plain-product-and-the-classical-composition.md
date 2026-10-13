@@ -154,8 +154,7 @@ $$
 
 It is $\mathbb{C}$-bilinear, symmetric and non-degenerate on $\mathbb{B}$, and on the informational sector
 it is **positive definite**. This is the trace form of *The Trace Form and the Invariance of the Symmetric
-Plain Algebra*, and it is the same form as the general plain bilinear form $B$ of *The Ordinary Product
-and the Material Sector*, read here as the form of the operation.
+Plain Algebra*, and it is the same form as the general plain bilinear form $B$ of *The Ordinary Product on the Biquaternion Space*, read here as the form of the operation.
 
 **Proposition (invariance).** The trace form is **invariant**:
 

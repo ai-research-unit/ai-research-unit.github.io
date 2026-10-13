@@ -13,11 +13,42 @@ The algebra case has no antisymmetric diagonal, the sesqualgebra case has one an
 
 
 
+invertible region ?
 
-CONSEQUENCES BOCHNER 
+
+Decomposition between the cone and its complement, the unit ? 
+The cone is the complement of the unit group
 
 
-Replace Wick
+
+Mass has four readings, and all four detect the cone.
+The norm vanishes on it, the rank of the Hermitian square drops to one on it, the compact label is the one the null element carries, and the polar scale collapses; only the massless elements are detected by all four at once (The Four Readings of Mass: Norm, Rank, Charge and Scale).
+The Krein form is the indefinite partner of the Born pairing and carries the Krein cone, the set of elements of non-negative Krein norm with respect to which the framework's indefinite-sector positivity is stated; its inertia is (1,3,0) on the complexified Hermitian subspace and (2,6,0) over R (Inertia and the Witt Invariant: What a Signature Allows a Spectrum to Carry).
+The vacuum lies on the cone: the minimal idempotent Π̃(μ̂) is null for every unit μ̂, so e0 = Π̃(μ̂) + Π̃(−μ̂) decomposes the unit along two null directions — the algebraic shape of a light-cone frame — and the cone is the union of the rays that the projectors single out (The Biquaternion Vacuum as a Minimal Idempotent).
+The Lorentz group is the group of norm automorphisms whose nonzero null vectors are the zero divisors, and the construction realises the closed forward cone only, with no spacelike region and no past cone (The Lorentz Group as Biquaternion Norm Automorphisms).
+Under twistors the null cone of B is a cone over the Segre quadric P1 × P1, its two rulings the two families of chiral spinor lines, and the comparison is sharp: the biquaternion norm is a general plain bilinear form whose null cone is a complex quadric, while the twistor form is Hermitian of signature (2,2) whose null set is the real cone that defines the conformal structure (Twistor Theory and Biquaternions).
+In Dirac matter the emergent cones of condensed matter — the Dirac cones of graphene at the Fermi level, the surface Dirac cone of a topological insulator protected by time-reversal symmetry — are the same shape in a different substrate, the massless linear dispersion appearing where a lattice symmetry forbids a gap (Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form).
+
+
+
+
+
+
+The cone as the causal and informational boundary
+The material band reads the cone as the line between the possible and the impossible, and the corpus states that reading in several physical settings.
+
+An exchange of information between two events along a light signal is possible exactly when their displacement is null, and because a null displacement is a zero divisor the channel through which signals pass is the cone itself; the cone forbids the spacelike separations and carries the null ones (The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form, Causality and the Light Cone as an Information Barrier in Biquaternionic Form). The Rindler horizon is the zero-divisor cone of the material sector, so the modular flow of the Unruh construction is read as the biquaternionic boost flow and its horizon as the algebraic null cone (The Unruh Effect in Biquaternionic Form). At a black-hole horizon the local light cone at each point is the zero-divisor cone of that point's copy of M−
+​
+  — the local statement — while the horizon as a whole is a global object the pointwise algebra does not see (Hawking Radiation in Biquaternionic Form). The characteristic surfaces of the wave operator are the light cones, and a discontinuity on the cone is not a shock: it stays on the cone and does not steepen (Shock Electromagnetic Waves). In velocity space the cone is the absolute of the hyperbolic geometry and the boundary at infinity: it is at infinite geodesic distance from every velocity, and its ideal points are exactly the lightlike elements, the ones the algebra cannot invert (Velocity Space as Hyperbolic Geometry in Biquaternionic Form). Under the conformal group the inversion is undefined precisely on the cone, and all four families of the group preserve it, so the cone is the invariant object of conformal geometry and is native to the algebra (The Conformal Group in Biquaternionic Form). In a medium the algebraic null cone is the optical metric's cone: the framework's cone has aperture c and the optical cone aperture 
+1/n, so the light cone of the corpus's zero-divisor reading is the light cone of the medium's optical geometry, and there is no real null cone below cutoff (The Effective Optical Metric of the Local Complex Structure, The Local Complex Structure and the Speed of Light).
+
+The physical interpretation is that every causal notion of the corpus — signal, horizon, characteristic, absolute, inversion, medium — is the one cone, read in the vocabulary of the situation. The global objects that sit on it, a horizon or an event, are the objects the pointwise algebra cannot itself carry.
+
+
+
+
+
+The Photon in Biquaternionic Form
 
 
 

@@ -1,4 +1,4 @@
-# __Annihilators__
+# __Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space__
 
 ## Introduction
 
@@ -130,7 +130,7 @@ Five of the six structures are faithful in the sense that no nonzero element kil
 $$
 \ell(\star)\subseteq\{0\}\cup\{\text{zero divisors of }\star\} ,
 $$
-with equality exactly for the two general products, whose zero-divisor set is empty and whose annihilating set is the origin alone. The inclusion is strict for the four structures that have a zero divisor, and the gap is the subject of *Zero Divisors*, below this article in this category. The two extremes are the general plain product, where both sets are as small as possible, and the cross products, where the zero-divisor set is the whole punctured space while the annihilating set is a line or a point.
+with equality exactly for the two general products, whose zero-divisor set is empty and whose annihilating set is the origin alone. The inclusion is strict for the four structures that have a zero divisor, and the gap is the subject of *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category. The two extremes are the general plain product, where both sets are as small as possible, and the cross products, where the zero-divisor set is the whole punctured space while the annihilating set is a line or a point.
 
 **Consequence for the forms.** A product that vanishes for every second argument has zero scalar part, so the annihilating set of the product is contained in the radical of the associated form,
 $$
@@ -161,14 +161,14 @@ Three facts summarize the six structures.
 
 ## Further Reading
 
-- *Zero Divisors* (`articles_maths/quaternion-zero-divisors.md`), above this article in this category, for the companion question of the zero divisors and the six zero-divisor sets.
+- *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/zero-divisors-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), above this article in this category, for the companion question of the zero divisors and the six zero-divisor sets.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the annihilator and the zero divisor stated once for a general product.
 - *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six structures and their names.
 - *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`), for the six products and their laws.
 - *The Two General Products of the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-two-general-products-of-the-quaternion-r-space.md`), for the two general products and the class-preserving exchange.
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), above this article in this category, for the radicals of the two forms.
 - *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-algebraic-norms-over-the-quaternion-r-space.md`), for the two algebraic norms, the multiplicativity and the invertibility criteria.
-- *Annihilators* (`articles_maths/annihilators.md`), for the companion reading of the twelve structures of the biquaternion space, where an element of the cone carries two planes.
+- *Annihilators in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the companion reading of the twelve structures of the biquaternion space, where an element of the cone carries two planes.
 
 The six owners of the subsections, in the order of the table, are:
 

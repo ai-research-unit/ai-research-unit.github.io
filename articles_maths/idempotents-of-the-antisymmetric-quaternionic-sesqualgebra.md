@@ -12,7 +12,7 @@ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions
 
 The consequence is the absence of the whole projector calculus of the corpus. The idempotent is the carrier of the orthogonal families, of the primitive idempotents and of the Peirce decomposition, of the pure states and of the sandwich; the block carries none of them, and it carries none of them for one reason, which is the vanishing of the diagonal on the centre and its concentration on a cone. The absence is not an accident of the class either: among the twelve, the idempotent set is reduced to the origin for exactly the four antisymmetric parts, and the block is one of the four.
 
-The article states the definition for a general product, then the idempotent set of the block with its proof, then the witnesses of the absence, then the consequences and the comparison. The definition and the classes it carries are *Definitions for the Study of the 12 Algebraic Structures*, §*The Idempotent, the Projection and the Peirce Decomposition*; the idempotent sets of the four general products are *Idempotents*, §*The Four Sets*; the transfer from the roots of $+1$ that is unavailable here is *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*; the operators that would carry a projector are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*; and the law that governs the vanishing of the diagonal is the criterion of *The Specificities of the Antisymmetric Quaternionic Sesqualgebra*.
+The article states the definition for a general product, then the idempotent set of the block with its proof, then the witnesses of the absence, then the consequences and the comparison. The definition and the classes it carries are *Definitions for the Study of the 12 Algebraic Structures*, §*The Idempotent, the Projection and the Peirce Decomposition*; the idempotent sets of the four general products are *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four Sets*; the transfer from the roots of $+1$ that is unavailable here is *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*; the operators that would carry a projector are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*; and the law that governs the vanishing of the diagonal is the criterion of *The Specificities of the Antisymmetric Quaternionic Sesqualgebra*.
 
 **Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$ and $e_k^2=-e_0$, a generic element $\tilde Q=Q_0e_0+\mathbf{Q}$, and the product $\diamond$ for the block. The value of the block is written $\mathbf{P}\times\overline{\mathbf{Q}}$ and the square $\tilde Q\diamond\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}}$; the subspace of the purely imaginary real vectors is $\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$, of real dimension three.
 
@@ -76,7 +76,7 @@ The idempotent sets of the four general products are known and are recorded in t
 
 | product | idempotent set | the source |
 |---|---|---|
-| $\tilde P\tilde Q$ | the plain family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, and the trivial ones | *Zero Divisors* |
+| $\tilde P\tilde Q$ | the plain family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, and the trivial ones | *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 | $\tilde P^{\natural}\tilde Q$ | the trivial idempotents alone | the same |
 | $\tilde P\tilde Q^{*}$ | the Hermitian idempotents | the same |
 | $\tilde P^{\natural}\tilde Q^{*}$ | the family $-\tfrac12e_0+\mu$ | the same |
@@ -106,7 +106,7 @@ The idempotent set of the block is the origin alone: the block has no nontrivial
 
 - *Definitions for the Study of the 12 Algebraic Structures*, §*The Idempotent, the Projection and the Peirce Decomposition*, for the idempotent, the orthogonal families, the primitive idempotent and the Peirce decomposition, for a general product.
 - *Idempotents of the General Plain Algebra*, for the model block, where the idempotents are the halves of the roots of $+1$.
-- *Idempotents*, for the idempotent sets of the four general products and their comparison.
+- *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the idempotent sets of the four general products and their comparison.
 - *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*, for the absent halving map and the empty roots of $+1$.
 - *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*, for the cone on which the square vanishes and for the parent unit as a nilpotent.
 - *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, for the left multiplications and their conjugate-linearity.

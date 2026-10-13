@@ -114,7 +114,7 @@ $$
 \mathrm{Sc}(\tilde Q\tilde Q)=Q_0^{2}-(\mathbf Q,\mathbf Q)=B(\tilde Q,\tilde Q) ,
 $$
 
-the algebraic norm value of the general plain bilinear form $B$ of *The Ordinary Product and the Material Sector*.
+the algebraic norm value of the general plain bilinear form $B$ of *The Ordinary Product on the Biquaternion Space*.
 
 **Proof.** Distribute the product and use $\mathbf Q^{2}=-(\mathbf Q,\mathbf Q)$ for a vector part.
 
@@ -493,7 +493,7 @@ square.
 associator and the failure of the weaker identities.
 - Companion article *Biquaternion Norm and Invertibility*, for the interval, the multiplicativity under the
 ordinary product, the invertibility criterion, the four-velocity and the mass shell.
-- Companion article *The Ordinary Product and the Material Sector*, for the ordinary product, the form $B$
+- Companion article *The Ordinary Product on the Biquaternion Space*, for the ordinary product, the form $B$
 and the Euclidean square.
 - Companion article *Why the Material Composition Is Oriented and Cannot Measure*, for the orientation of
 the two slots, the left unit and the absence of a material projection.

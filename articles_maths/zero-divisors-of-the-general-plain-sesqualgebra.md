@@ -13,7 +13,7 @@ bijection of $\mathbb{B}$, the vanishing of $\tilde Q\star\tilde R=\tilde Q\tild
 vanishing of the plain product $\tilde Q\tilde R^{*}$, and $\tilde R^{*}$ ranges over all of
 $\mathbb{B}$ as $\tilde R$ does, so the block's zero-divisor set is exactly the plain one, the
 nonzero elements of the zero-divisor cone $\{C(\tilde Q)=\sum_\mu Q_\mu^{2}=0\}$, which is also the
-common set of the four general products (*Zero Divisors*). The **set** is
+common set of the four general products (*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The **set** is
 therefore inherited unchanged; what is not inherited is the **internal structure** the parent reads
 on it. The parent reads a square, and its pure family is the nonzero nilpotents of index two; the
 block reads its own square, the Hermitian element $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$, on
@@ -31,10 +31,10 @@ common zero-divisor set of the four general products.
 **Boundaries.** The product, its class and its placement are *Introduction to the General Plain
 Sesqualgebra of Biquaternions*; the relative definitions of the zero divisor, the annihilator and
 the regular element are *Definitions for the Study of the 12 Algebraic Structures*; the common set
-of the four general products and the theorem that the four coincide are **Zero Divisors**, and the same set read on the plain product with its two families and their geometry is *Zero
+of the four general products and the theorem that the four coincide are **Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**, and the same set read on the plain product with its two families and their geometry is *Zero
 Divisors of the General Plain Algebra*, *Idempotents of the General Plain Algebra* and *Nilpotents
 of the General Plain Algebra*. The algebraic norm and the invertibility criterion are *Norm and
-Invertibility in the General Plain Sesqualgebra*; the square-zero set of the block is *Nilpotents*. Nothing topological and nothing metric appears.
+Invertibility in the General Plain Sesqualgebra*; the square-zero set of the block is *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Nothing topological and nothing metric appears.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$
 with $e_1e_2=e_3$ and central scalar imaginary $i$. A general element is
@@ -76,7 +76,7 @@ general products.
 
 *Proof.* The criterion gives the set, and the equivalence of the one-sided statements makes every
 member two-sided. The cone is the zero set of a non-degenerate quadratic form on $\mathbb{C}^{4}$,
-hence of complex dimension three, and it is the common set by *Zero Divisors*,
+hence of complex dimension three, and it is the common set by *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Four General Products Coincide*.
 
 **Remark (the criterion of the block is one element, like the parent's).** Unlike the symmetric
@@ -160,7 +160,7 @@ a zero divisor, of the non-pure family. The unit $e_0$ is not a zero divisor, $c
 | annihilator of a zero divisor | the plain annihilator $K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$, of dimension two; the two sides are generally different | the same space carried through the involution, of dimension two, equal on the two sides |
 
 The block's set is the common set of the four general products, and the coincidence is a theorem of
-the space and not a property of the block (*Zero Divisors*). What the block adds
+the space and not a property of the block (*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). What the block adds
 is the reading of the set through its own square: the scalar-coordinate partition is inherited,
 because it is a partition of the elements, and the **index** attached to the pure family is read
 from the square in force, so it becomes three in place of two. The four general products share the
@@ -207,7 +207,7 @@ annihilators, and changes the index.
 
 - *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md`), for the product, the class and the involution in the second slot.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the relative definitions of the zero divisor and the annihilator.
-- *Zero Divisors* (`articles_maths/zero-divisors.md`), for the theorem that the four zero-divisor sets coincide and for the one-sided inverse equations.
+- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the theorem that the four zero-divisor sets coincide and for the one-sided inverse equations.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion $C(\tilde Q)=0$, the pure and the non-pure families and their geometry.
 - *Norm and Invertibility in the General Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-sesqualgebra.md`), for the algebraic norm, the invertibility criterion and the definiteness of the scalar form.
 - *Idempotents of the General Plain Sesqualgebra* (`articles_maths/idempotents-of-the-general-plain-sesqualgebra.md`), for the Hermitian idempotents that are the block idempotents among the non-pure zero divisors.

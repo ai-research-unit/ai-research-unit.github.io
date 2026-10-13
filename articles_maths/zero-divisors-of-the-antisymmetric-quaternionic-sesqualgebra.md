@@ -29,7 +29,7 @@ $\tilde A\diamond\tilde R=\tilde W$ has a solution exactly on one complex plane 
 solution is determined modulo a plane; for a central element both annihilators are the whole space.
 The definition and the annihilators are *Definitions for the Study of the 12 Algebraic Structures*,
 §*The Zero Divisor and the Annihilator*; the comparison with the four general products, whose
-zero-divisor sets coincide with one another and are proper subsets of the space, is *Zero Divisors*; the annihilation pair of an element with
+zero-divisor sets coincide with one another and are proper subsets of the space, is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the annihilation pair of an element with
 its conjugate is the operator content of *The Adjoint Operators of the Antisymmetric Quaternionic
 Sesqualgebra*; and the cone of the diagonal, which is a proper part of the set, is *The Conjugate
 Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*.
@@ -132,7 +132,7 @@ $$
 $$
 
 a set of real dimension six in the eight dimensional space, and the coincidence of the four sets is
-a theorem of the corpus, *Zero Divisors*, §*The Four General Products Coincide*.
+a theorem of the corpus, *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*.
 The comparison with the block is therefore a comparison of two sets on the same space, and the
 block's set contains the general one strictly: the elements of the general set are zero divisors of
 the block, and so is every other nonzero element, including the unit $e_0$ and the whole of the
@@ -143,13 +143,13 @@ general products.
 products are complex planes of complex dimension two, the kernels of a rank-one matrix, and they
 depend on the product: the four pairs are related by the two conjugations, and the two sides
 coincide for the natural and the general plain sesquilinear products and differ for the plain and
-the general quaternionic sesquilinear ones, as *Zero Divisors* proves. The
+the general quaternionic sesquilinear ones, as *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* proves. The
 annihilators of the block are complex planes of complex dimension two as well, for every
 non-central element, and the whole space for the central ones, so the dimension does not separate
 the block from the four general products; what separates them is the set, the cone of the four
 against the whole space of the block, and the shape of the plane, the kernel of a rank-one matrix
 for the four and the plane spanned by the centre and the conjugate of the vector part for the
-block. The comparison, product by product and annihilator by annihilator, is *Zero Divisors* and *Annihilators*; the reading for the block is the one above.
+block. The comparison, product by product and annihilator by annihilator, is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Annihilators in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the reading for the block is the one above.
 
 | product | the zero-divisor set | the annihilator of a non-degenerate zero divisor |
 |---|---|---|
@@ -222,8 +222,8 @@ proper part of the set, the origin is outside it, and no idempotent of the block
 
 - *Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor and the Annihilator*, for the left, right and two-sided zero divisor, the annihilators, the regular element and the product-relative reading.
 - *Zero Divisors of the General Plain Algebra*, for the model block, where the zero divisors are the elements of vanishing central square.
-- *Zero Divisors*, for the four sets, their coincidence and the one-sided inverse equations.
-- *Zero Divisors*, for the annihilators of the four general products and their comparison.
+- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the four sets, their coincidence and the one-sided inverse equations.
+- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the annihilators of the four general products and their comparison.
 - *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the cone of the diagonal, which is the self-annihilation part of the set.
 - *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra* and *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*, for the two classes that sit inside and outside the set.
 - *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, for the left multiplication, its kernel and its image.

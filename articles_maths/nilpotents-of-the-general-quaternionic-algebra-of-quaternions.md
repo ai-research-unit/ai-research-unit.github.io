@@ -28,8 +28,8 @@ Quaternionic Algebra* and *Square Roots of Minus One, Zero and Plus One in the G
 Algebra*; the element vocabulary is *Definitions for the Study of the 6 Algebraic Structures*; the
 zero divisors are *Zero Divisors of the General Quaternionic Algebra* and the idempotents
 *Idempotents of the General Quaternionic Algebra*, both above this article in this category; the
-structure-level comparison of the six square-zero sets is *Nilpotents*, of the real chapter, and
-*Nilpotents* of the complex chapter, whose ordering of the sets is quoted; the definiteness of the
+structure-level comparison of the six square-zero sets is *Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, of the real chapter, and
+*Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* of the complex chapter, whose ordering of the sets is quoted; the definiteness of the
 form is *The Isotropic Structure of the General Quaternionic Algebra*; and the complex sibling is
 *Nilpotents of the General Quaternionic Algebra*.
 
@@ -211,7 +211,7 @@ so no pure element is square-zero, and no central element is either.
 
 ## The Nilpotents and the Other Structures of the Space
 
-The comparison of the six square-zero sets is *Nilpotents*, the structure-level article of the real
+The comparison of the six square-zero sets is *Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, the structure-level article of the real
 chapter, and its verdict for the block is the origin alone.
 
 **Theorem (the six square-zero sets).** Among the six structures of the quaternion real space the
@@ -220,14 +220,14 @@ quaternionic algebra and the symmetric quaternionic algebra, and it is the whole
 $\mathbb{H}$ for the two antisymmetric structures. Only two square-zero sets occur, and the general
 quaternionic structure is one of the four with the origin alone.
 
-**Proof.** The four rows are the theorem of *Nilpotents*, §*The Six Structures and the Square-Zero
+**Proof.** The four rows are the theorem of *Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Six Structures and the Square-Zero
 Sets*, where the plain square is anisotropic and the quaternionic square is the definite norm; the
 two alternating rows are the same theorem, the products being alternating. The
 four structures with the origin alone are exactly those whose square is the plain square or the
 central element $N(\tilde x)e_0$, neither of which vanishes off the origin over $\mathbb{R}$.
 
 **Remark (the complex ordering and the real collapse).** The complex chapter carries twelve
-structures and its comparison article *Nilpotents* orders the square-zero sets through the cone,
+structures and its comparison article *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* orders the square-zero sets through the cone,
 $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$ and $Z_3\subsetneq Z_4\subsetneq Z_2$ for the four general
 products, and it places the general quaternionic and the symmetric quaternionic structures at the
 whole cone. Over $\mathbb{R}$ the cone has become a point, so the general quaternionic set drops from
@@ -278,5 +278,5 @@ point.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternions.md`), for the definite norm and the one-sided equations.
 - *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-quaternionic-algebra-of-quaternions.md`), for the three root sets and the norm-one sphere.
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra-of-quaternions.md`) and *Idempotents of the General Quaternionic Algebra* (`articles_maths/idempotents-of-the-general-quaternionic-algebra-of-quaternions.md`), for the empty zero-divisor set and the two trivial idempotents.
-- *Nilpotents* (`articles_maths/quaternion-nilpotents.md`), the comparison of the six square-zero sets of the real chapter, whose general quaternionic row is the origin.
+- *Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/nilpotents-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), the comparison of the six square-zero sets of the real chapter, whose general quaternionic row is the origin.
 - *Nilpotents of the General Quaternionic Algebra* (`articles_maths/nilpotents-of-the-general-quaternionic-algebra.md`), the complex sibling, whose square-zero set is the whole cone that the passage to $\mathbb{R}$ collapses.

@@ -364,7 +364,7 @@ Operations*; and the two forms are *Comparison Between the Four General Products
   passage from the form to the product.
 - Companion article *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*,
   for the operation, the centrality, the commutativity and the interval.
-- Companion article *The Ordinary Product and the Material Sector*, for the form $B$ and the plain row.
+- Companion article *The Ordinary Product on the Biquaternion Space*, for the form $B$ and the plain row.
 - Companion article *The Symmetrised Material Composition and the Jordan Identity*, for the symmetrised
   plain product (SPA), the Jordan-product contrast of this operation.
 - Companion article *Conventions in the Biquaternion Universe*, for the general quaternionic bilinear form

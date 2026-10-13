@@ -2,8 +2,7 @@
 
 ## Introduction
 
-This article is the operator article of the general plain algebra, the algebra of *The Ordinary Product and the
-Material Sector*. Its product is the ordinary product $\tilde P\tilde Q$, and the operators of the block are the maps
+This article is the operator article of the general plain algebra, the algebra of *The Ordinary Product on the Biquaternion Space*. Its product is the ordinary product $\tilde P\tilde Q$, and the operators of the block are the maps
 that attach an element to an argument:
 
 $$
@@ -602,8 +601,8 @@ operators as the decomposable tensors.
 - Mathematics article *Modules over the General Plain Algebra of Biquaternions*
 (`articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.md`), for the simple module, its
 endomorphism ring and the decomposition of the left regular module.
-- Physics article *The Ordinary Product and the Material Sector*
-(`articles_physics/the-ordinary-product-and-the-material-sector.md`), the framing article of this group, for $B$, the
+- Physics article *The Ordinary Product on the Biquaternion Space*
+(`articles_physics/the-ordinary-product-on-the-biquaternion-space.md`), the framing article of this group, for $B$, the
 sector sign and the boundary of the block.
 - Physics article *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*
 (`articles_physics/the-monoid-of-acting-maps-the-process-is-the-multiplication-the-state-is-the-idempotent.md`), for

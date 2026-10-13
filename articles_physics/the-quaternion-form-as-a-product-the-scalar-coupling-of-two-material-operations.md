@@ -54,7 +54,7 @@ $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ with the material one $\m
 (plain) product is juxtaposition $\tilde P\tilde Q$, the quaternionic product is
 $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$. The **general plain bilinear form** is
 $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$, the scalar part of the
-plain product (*The Ordinary Product and the Material Sector*), and the **general quaternionic bilinear
+plain product (*The Ordinary Product on the Biquaternion Space*), and the **general quaternionic bilinear
 form** is $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$,
 the scalar part of the quaternionic product (*Conventions in the Biquaternion Universe*). The two differ
 by the sign of the vector part alone. The symmetrisation symbol $\bullet$ is **row-relative** in this
@@ -456,7 +456,7 @@ operators $L^{\bullet}_{\tilde A}$ and the adjoint with respect to the form.
 construction of the two parts and the reconstruction.
 - Companion article *The Interval as the Square and the Charge of the Material Composition*, for the
 square identity, the interval and the multiplicativity of the norm.
-- Companion article *The Ordinary Product and the Material Sector*, for the form $B$ and the plain row.
+- Companion article *The Ordinary Product on the Biquaternion Space*, for the form $B$ and the plain row.
 - Companion article *The Symmetrised Material Composition and the Jordan Identity*, for the symmetrised
 plain product (SPA), the Jordan-product contrast of this operation.
 - Companion article *The Four General Products and Their Physical Readings*, for the transversal comparison and the signature table.

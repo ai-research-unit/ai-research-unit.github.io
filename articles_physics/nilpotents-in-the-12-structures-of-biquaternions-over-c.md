@@ -1,4 +1,4 @@
-# __Nilpotents in the 12 Structures Framework__
+# __Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$__
 
 ## Introduction
 
@@ -9,16 +9,17 @@ a structure is the solution set of the equation, the origin included. A square-z
 that **annihilates itself**, so the square-zero set is the self-annihilation part of the zero-divisor
 theory, and its physical object is the **lightlike displacement**: the algebraic form of an infinitesimal
 object, of which two successive applications give nothing beyond the first. The photon is the physical
-member, and the reading is *The Photon as a Null Element: What the Cone Derives and What It Does Not*
+member, and the reading is *The Null Four-Momentum: What the Cone Derives and What It Does Not*
 together with *The Light Cone as the Biquaternion Zero-Divisor Cone*. This article is the sixth and last
-physics companion of the mathematics comparison group, and its mathematics companion is *Nilpotents*
-(`articles_maths/nilpotents.md`).
+physics companion of the mathematics comparison group, and its mathematics companion is *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
+(`articles_maths/nilpotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`).
 
 The mathematics companion proves two facts that organise the physics. First, the square-zero sets of the
 twelve structures are ordered by the cone: the general plain sesquilinear structures have the origin
 alone, the plain structures have the pure isotropic cone, the quaternionic bilinear structures have the
-whole cone, and the two alternating structures have the whole space, while the two antisymmetric
-sesquilinear structures have a subfamily **outside** the cone that contains the unit. Second, the
+whole cone, the quaternionic sesquilinear structures have a proper subfamily of the cone, and the two
+alternating structures have the whole space, while the two antisymmetric sesquilinear structures have a
+subfamily **outside** the cone that contains the unit. Second, the
 square-zero set is the self-annihilation part of the zero-divisor set: it lies inside the zero-divisor set
 of its structure and the cone lies in every one of them, but the converse fails for nine of the twelve
 structures, and it fails there because of a property of the structure and not of the element.
@@ -29,8 +30,8 @@ directions, the interval band has all the lightlike elements, and the brackets h
 notion at all. The gap between the square-zero set and the zero-divisor set is the statement that **a
 state is not a lightlike displacement**: in the composition band a state is a zero divisor that is not
 square-zero, and the two notions must be kept apart. The companion article *Zero Divisors in the 12
-Structures Framework* owns the degeneracy, the companion article *Idempotents in the 12 Structures
-Framework* owns the states, and the present article owns the lightlike displacements.
+Structures of Biquaternions over $\mathbb{C}$* owns the degeneracy, the companion article *Idempotents in the 12 Structures
+of Biquaternions over $\mathbb{C}$* owns the states, and the present article owns the lightlike displacements.
 
 **Conventions.** We use those of the companion articles unchanged. The algebra is
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_k^{2}=-e_0$;
@@ -45,14 +46,14 @@ The twelve structures are cited by their three-letter names.
 
 **The equation and the self-annihilation.** The equation $\tilde\Upsilon\star\tilde\Upsilon=0$ has a
 direct reading: the element **kills itself**. In the language of the companion article *Annihilators in
-the 12 Structures Framework* the square-zero set is the set of elements lying in their own annihilator,
+the 12 Structures of Biquaternions over $\mathbb{C}$* the square-zero set is the set of elements lying in their own annihilator,
 $\tilde\Upsilon\star\tilde\Upsilon=0$ exactly when $\tilde\Upsilon\in A_\star(\tilde\Upsilon)$ and
 $\tilde\Upsilon\in B_\star(\tilde\Upsilon)$, the annihilator being read in the same product.
 
 **The physical reading.** A nonzero element whose square vanishes is an **infinitesimal** object: applied
 once it moves, applied twice it gives nothing beyond the first order, and that is the defining property of
 a first-order (infinitesimal) generator. The physical members are the lightlike displacement and the
-photon, read in *The Photon as a Null Element: What the Cone Derives and What It Does Not* and *The Light
+photon, read in *The Null Four-Momentum: What the Cone Derives and What It Does Not* and *The Light
 Cone as the Biquaternion Zero-Divisor Cone*. The same square-zero algebra appears a second time, as the
 algebra of the Grassmann generators of the corpus, read in *Grassmann Coherent States in Biquaternionic
 Form*; the two occurrences are distinct, and the closing section of this article separates them. The
@@ -96,11 +97,103 @@ The mathematics companion computes the four square-zero sets of the four general
 $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$ and $Z_1\cap Z_4=\{0\}$. The
 physical reading is the ranking of the bands by their lightlike content: the probability band has none,
 the composition band has the pure ones, the interval band has all of them, and the plain and the gauge
-square-zero sets are complementary inside the cone, meeting only at the origin. A lightlike element that
+square-zero sets are incomparable inside the cone, meeting only at the origin. A lightlike element that
 is square-zero in the composition band is not square-zero in the gauge band, and conversely: the two bands
 read two different kinds of lightlike object.
 
 ## The Twelve Structures and the Square-Zero Sets
+
+The equation $\tilde P\star\tilde P=0$ is written in the operation of the structure, so each of the twelve
+carries a square-zero set of its own. The twelve are read one by one below, each naming its product, its
+square-zero set and the reason, before the table collects the twelve in one place.
+
+### $\mathrm{GPA}$, the general plain algebra — composition
+
+The product is the plain product and its square is the plain square. The square-zero set is the pure
+isotropic cone $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$, of real dimension four, one component of the
+zero-divisor cone: the lightlike displacements that are their own annihilating partner. It is a proper
+subfamily of the cone, because a non-pure cone element is a multiple of a projector and not square-zero.
+The reading is *The Cone and the Massless Particles in the 12 Structures of Biquaternions over
+$\mathbb{C}$*.
+
+### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
+
+The product is the Jordan product and its square is the plain square, so the square-zero set is the pure
+isotropic cone, element for element that of $\mathrm{GPA}$. The same displacements are square-zero, and
+they are zero divisors of the symmetrised block in addition. The reading is *The Symmetrised Material
+Composition and the Jordan Identity*.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
+
+The product is the commutator $\mathbf P\times\mathbf Q$, alternating, so its square vanishes identically.
+The square-zero set is the whole space: every element is square-zero, an infinitesimal rotation. The
+reading is *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*.
+
+### $\mathrm{GQA}$, the general quaternionic algebra — causality
+
+The product is the natural product and its square is the central element $C(\tilde P)e_0$; the equation is
+the vanishing of the norm, so the square-zero set is the whole cone $\mathcal{C}$. Every lightlike element
+is self-annihilating, and the set coincides with the zero-divisor set, origin included. The reading is *The
+Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*.
+
+### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
+
+The product is the scalar-valued symmetrisation and its square is $C(\tilde P)e_0$, so the square-zero set
+is the whole cone, as for $\mathrm{GQA}$. The same lightlike family is self-annihilating. The reading is
+*The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*.
+
+### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
+
+The product is the antisymmetrisation, alternating, so its square vanishes identically and the square-zero
+set is the whole space. The reading is *The Operators of the Twelve Structures: Multiplication, Adjoint
+and Bracket* and *Boosts, Mixed Terms and the Missing Lie Structure*.
+
+### $\mathrm{GPS}$, the general plain sesqualgebra — probability
+
+The product is the pairing and its square is the Hermitian square, of scalar part
+$\sum_\mu\lvert P_\mu\rvert^{2}$; the equation forces the origin. The square-zero set is $\{0\}$ alone:
+the probability band has no lightlike element. The reading is *Mass, Rank and the Positivity of the
+Dagger*.
+
+### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
+
+The product is the scalar-valued symmetrisation and its square is $\mathrm{Sc}(\tilde P\tilde P^{*})e_0$,
+so the square-zero set is $\{0\}$ alone, for the same definiteness. The reading is *Why Probability Values
+Are Central: the Symmetric Sesquilinear Product and Its Cone*.
+
+### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
+
+The product is the antisymmetrisation and its square is half the difference between the Hermitian square
+and its conjugate, so the equation is equivalent to $\tilde P\tilde P^{*}$ being central. The square-zero
+set is that subfamily; it lies outside the cone and contains the unit $e_0$, whose conjugate-bracket
+square vanishes. The reading is *Zero Divisors as a Physical Locus in Biquaternionic Form*.
+
+### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
+
+The product is the fourth product and its square is $\tilde P^{\natural}\tilde P^{*}$, equivalent to
+$\overline{\tilde P}\tilde P$. The square-zero set is the subfamily $\{\overline{\tilde P}\tilde P=0\}$, a
+proper subfamily of the cone containing $e_0+ie_1$: a proper part of the lightlike family. The reading is
+*The Fourth Product and Its Indefinite Metric*.
+
+### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra — metric
+
+The product is the symmetric part of the fourth product and its square is the coefficientwise real part of
+$\tilde P^{\natural}\tilde P^{*}$; the equation is the same as for $\mathrm{GQS}$, so the square-zero set
+is the subfamily $\{\overline{\tilde P}\tilde P=0\}$, the same as for its general partner. The reading is
+*The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*.
+
+### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
+
+The product is the antisymmetric part of the fourth product and its square is half the difference between
+$\tilde P^{\natural}\tilde P^{*}$ and its conjugate, so the equation is equivalent to
+$\tilde P^{\natural}\tilde P^{*}$ being fixed by the coefficientwise conjugation. The square-zero set is
+that subfamily, which lies outside the cone and contains the unit $e_0$. The reading is *The Cross Product
+of a Vector with Its Conjugate: the Antisymmetric Gauge Product* and *A Bracket Invisible on the Real
+Forms: the Complex Witness of the Jacobi Failure*.
+
+### The Twelve Square-Zero Sets in One Table
+
+The table collects the square of each structure, its square-zero set and the physical interpretation.
 
 | structure | square | square-zero set | physical reading |
 |---|---|---|---|
@@ -117,7 +210,7 @@ read two different kinds of lightlike object.
 | SQS | the real part | the subfamily $\overline{\tilde P}\tilde P=0$ | the same as the general partner |
 | AQS | the pure part | the subfamily fixed by the conjugation | the unit is square-zero for the conjugate bracket |
 
-Three kinds of row occur, and each is a physical statement.
+Four kinds of row occur, and each is a physical statement.
 
 - **The whole space, for the two alternating structures.** The square of the plain and the quaternionic
   bracket vanishes identically, so every element is square-zero. The physical reading is the antisymmetry
@@ -153,10 +246,10 @@ therefore a zero divisor that is **not** square-zero: it cannot be composed, but
 displacement, and it is idempotent, $\tilde\Pi^{2}=\tilde\Pi$, rather than nilpotent,
 $\tilde\Upsilon^{2}=0$. The two equations are the two extreme quadratic equations of the algebra, and the
 two objects they define are the two physical objects of the pair of companion articles: the state in
-*Idempotents in the 12 Structures Framework* and the lightlike displacement here. The owner of the
+*Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$* and the lightlike displacement here. The owner of the
 physical locus of the zero divisors is *Zero Divisors as a Physical Locus in Biquaternionic Form*, and the
 reading of the cone as the massless locus is *The Cone and the Massless Particles in the 12 Structures
-Framework*.
+of Biquaternions over $\mathbb{C}$*.
 
 The physical statement is that **the set of the non-invertible operations is strictly larger than the set
 of the lightlike ones**, and the difference is made of the states. In the probability band the gap is
@@ -170,7 +263,7 @@ probability and not because it is lightlike.
 | claim | source | status |
 |---|---|---|
 | the four square-zero sets are the pure cone, the whole cone, the origin and the subfamily $\overline{\tilde P}\tilde P=0$ | mathematics companion | cited |
-| a square-zero element lies in its own annihilator | mathematics companion; *Annihilators in the 12 Structures Framework* | cited |
+| a square-zero element lies in its own annihilator | mathematics companion; *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$* | cited |
 | the order $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ | mathematics companion; recomputed $e_1+ie_2\in Z_1\setminus Z_4$ and $e_0+ie_1\in Z_4\setminus Z_1$ | verified |
 | $e_1+ie_2$ is square-zero in GPA and GQA and lies on the cone | mathematics companion; recomputed | verified |
 | $e_0+ie_1$ is square-zero in GQS and $ie_0+e_1+e_2+ie_3$ is not | mathematics companion; recomputed | verified |
@@ -180,6 +273,8 @@ probability and not because it is lightlike.
 | the physical readings (lightlike displacement, absence in the probability band, gap made of states, the one-mode fermionic ladder, the odd nilpotents) | this article; owners cited in the text | interpretation |
 | the BRST charge $Q$ is nilpotent because the gauge-algebra Jacobi identity follows from associativity | *BRST Symmetry in Biquaternionic Form* | cited |
 | the supercharge has $Q^{2}=0$ and $\{Q,Q^{\dagger}\}=H$, realised by the biquaternion first-order Dirac operator | *Supersymmetric Quantum Physics in the Biquaternion Framework* | cited |
+| the nilpotent direction of the complex order is a discrete lightlike direction; the light cone is a lattice cone | *Lattice Gauge Theory and the Biquaternion Path Integral*; *Biquaternion Orders and Finite Groups of Units* | cited |
+| the square-zero variable is not an element of $\mathbb{B}$; the odd generator is a minimal extension the algebra does not contain | *Grassmann Coherent States in Biquaternionic Form* | cited |
 
 ## The Fermionic Ladder: Nilpotency as Statistics
 
@@ -190,7 +285,7 @@ content of this section.
 
 **The lightlike displacement.** The material pure nilpotents $Q_0=0$, $(\mathbf Q,\mathbf Q)=0$ are the
 lightlike directions, and the natural product squares every cone element to zero. The physical particle is
-the photon, and *The Photon as a Null Element: What the Cone Derives and What It Does Not* fixes how far
+the photon, and *The Null Four-Momentum: What the Cone Derives and What It Does Not* fixes how far
 the identification goes. A nilpotent has a direction and no magnitude; its square vanishing is the
 algebra's statement that a null displacement is not accumulated, which is the vanishing of the interval of
 a null vector.
@@ -263,7 +358,7 @@ gauge algebra, and in the framework that Jacobi identity is a consequence of the
 quaternion multiplication. The associativity of the parent product is therefore what makes a nilpotent
 differential available, and the cohomology is then the annihilator of the nilpotent quotiented by its
 image: the physical states are exactly the states a nilpotent operator does not reach, with the reachable
-ones removed. This is the annihilator reading of *Annihilators in the 12 Structures Framework* sharpened
+ones removed. This is the annihilator reading of *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$* sharpened
 by one more structure, and the three brackets of the corpus that fail the Jacobi identity — read in *A
 Higher Structure for the Jacobi Failure* — are precisely the ones that cannot carry such a differential.
 A bracket that does not close is a symmetry without a cohomology.
@@ -311,10 +406,9 @@ expectation values in a large space: because the mode operators are square-zero,
 $\tilde\Upsilon_1^{2}=\tilde\Upsilon_2^{2}=0$, every product of more than two mode operators collapses, so
 the four-point and six-point contractions reduce to products of the single two-point contraction with the
 fermionic signs. The identity is then an **exact operator identity** in a four-real-dimensional subalgebra,
-proved by exhibiting both sides. Nilpotency is therefore what makes the fermionic perturbation series
-**terminate**: the collapse of every product beyond the second is the algebraic reason the contractions are
-finite in number, and the graph expansion of a fermionic theory has no infinite series to resum at the
-level of one mode.
+proved by exhibiting both sides. Nilpotency is therefore what makes the fermionic contraction **terminate**:
+the collapse of every product beyond the second is the algebraic reason the contractions are finite in number,
+and the one-mode graph expansion has no infinite series to resum.
 
 **The single statement.** A vanishing square is the algebra's widest structural equation: the same
 equation that makes a lightlike displacement an infinitesimal makes a BRST charge a cohomological
@@ -323,11 +417,88 @@ grading of the carrier. The even carrier is a displacement inside the algebra; t
 derivative of an extension; and both are read by the square because the square is the one operation that
 tests whether a second application adds anything.
 
+**The hole is not a nilpotent, but the sea's inertness is.** *The Dirac Sea, Hole Theory and Antimatter in
+Biquaternionic Form* draws the boundary of the nilpotent reading in the theory of the vacuum. In Dirac's
+hole theory the negative-energy states are all occupied, and a **hole** is the absence of one of them: its
+charge, momentum and energy follow by subtraction from the filled sea, and it is a positron. A hole is
+therefore not an element with a vanishing square; it is a state difference from the sea, and the article's
+conclusion is that the framework sits on the modern **reinterpretation** side, where the vacuum is empty and
+the negative-frequency modes are antiparticle creation operators, so that there is no sea at all — the
+filled sea survives only as a heuristic and as a real object in condensed matter, where an empty valence-
+band state is a hole. What the exclusion principle does supply is the **inertness** of the sea — the reason
+a positive-energy electron cannot descend into a filled negative-energy state — and that inertness is the
+algebra's nilpotency, since two applications of a mode operator vanish. The reading to keep is therefore
+sharp: nilpotency is what a mode operator does, not what a hole is.
+
+**The nilpotent mode is native, and the transformation to it is an identity.** *The Jordan–Wigner
+Transformation in Biquaternionic Form* relates a spin-$\tfrac12$ chain to a chain of fermionic modes, and its
+framework finding is that at one site there is nothing to transform. The spin ladder and the fermionic mode
+are the **same element** of $\mathbb{B}$: the parents' operators
+$\tilde a=\tfrac12(ie_1-e_2)$, $\tilde a^\dagger=\tfrac12(ie_1+e_2)$ satisfy $\tilde a^{2}=0$ and
+$\{\tilde a,\tilde a^\dagger\}=e_0$ inside the algebra, so the square-zero mode is not adjoined but found.
+The Jordan–Wigner string — the product of the other sites' fermion parities — has an empty product at one
+site, and the article states the consequence exactly: the transformation is the **choice of a square root of
+the spin algebra**, and the string is its branch cut. The reading is that nilpotency is the algebra's native
+one-site fact, and the spin–fermion map is the extension of that fact over sites; the string, and with it the
+grading that the map fails to preserve, appears only when a second site exists.
+
+**The eikonal avoids the cone.** *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic
+Form* gives a sharp negative result, and it is worth recording because it bounds the nilpotent's reach. In
+the semiclassical limit the phase is a central element $e^{iS/\hbar}$ and the momentum is the real quaternion
+$\nabla S=\sum_k(\partial_kS)e_k$; the Hamilton–Jacobi equation is the **biquaternion norm** of that momentum
+equated to the kinetic energy, $N(\nabla S)=2m(E-V)$. The article's own statement is then exact: "the null
+(zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy
+defect and vanishes only where the classical particle stops". So the semiclassical momentum is never a
+**nonzero** nilpotent: its norm is pinned to the energy defect, and the only way it vanishes is the trivial
+one, $\nabla S=0$ at the turning point. The lightlike element is the eikonal's asymptotic boundary, not a
+value the approximation attains, which is the same distinction the corpus draws between the null direction
+and the null vector.
+
+**The ladder stops at two levels.** *The Qutrit Problem: Three-Level Systems Outside the Biquaternion
+Algebra* turns the square-zero identity into a ceiling. Since $\mathbb{B}\cong M_2(\mathbb{C})$, a nilpotent
+element has square zero, so the algebra's own raising operator **cannot climb more than one step**: the
+spectrum it generates has exactly two levels, and there is no unital three-dimensional module. Two further
+faces of the same fact are stated there: the identity splits into at most two orthogonal idempotents, so the
+algebra cannot host a three-outcome projective measurement, and the three-dimensional adjoint space carries
+an action of the Lie algebra $\mathfrak{su}(2)$ but not of the algebra, because the adjoint action is a
+derivation and not a multiplication. The sentence that belongs in this companion's ledger is the article's:
+**the algebra has two levels, and the third is not inside it.** A three-level ladder is therefore not a
+module of $\mathbb{B}$; a qutrit exists only in the tensor square $\mathbb{B}\otimes\mathbb{B}$, whose four
+levels split three-plus-one, at the price of an extra level to be projected out. The reading is a boundary
+rather than a coincidence: nilpotency is not only the mechanism of the ladder, it is the reason the ladder
+has length two, and the same square-zero identity that creates the raising operator forbids a third rung.
+
+**The null direction makes the unit group infinite.** *Biquaternion Orders and Finite Groups of Units* shows
+the same vanishing square doing arithmetic. For a null element $P$ (so $N(P)=0$, hence $P^2=0$), the element
+$e_0+P$ is a **unit**, with inverse $e_0-P$, and $(e_0+P)^n=e_0+nP$: a nilpotent direction generates an
+infinite cyclic subgroup of the unit group. The article's own reading is exact and is the one to keep: the
+real orders have finite unit groups, the complex order does not, and the difference is the **light cone** —
+the null direction is the nilpotent one, it lies on $c^2t^2=\mathbf{x}^2$, and it generates a
+translation-like one-parameter group without bound, while the finite unit groups sit in the real sector,
+where the norm is definite and no null direction exists. So the zero of the norm is what makes a unit group
+infinite, and the algebraic statement of the light cone's presence is the infinite unit group of the complex
+order.
+
+**Nilpotency is the endpoint of a contraction.** *Squeezing Beyond the Biquaternion Algebra* shows where
+the nilpotent comes from as a limit. A **contraction** rescales generators so that some commutators and some
+norms go to zero; for $E_2=\epsilon e_2$, $E_3=\epsilon e_3$ the article verifies numerically that
+$[E_2,E_3]=2\epsilon^2E_1$ and $N(E_2)=\epsilon^2e_0$ **vanish together** as $\epsilon\to0$ (at
+$\epsilon=1,0.1,0.01$ the values are $2,2\times10^{-2},2\times10^{-4}$ and $1,10^{-2},10^{-4}$). The limit
+is an algebra in which $E_2$ and $E_3$ are nilpotent and mutually annihilating, and the article states the
+mechanism exactly: "zero divisors are what survive when a quadratic structure is squeezed until its metric
+collapses", with the zero-divisor cone as the limiting locus of that degeneration. The reading is a third
+home for square zero, beside the lightlike displacement and the fermionic mode: **the nilpotent is what an
+invertible element becomes when the norm degenerates**, so the square-zero set is also the singular limit of
+a nondegenerate quadratic structure. The article's other boundary fixes what the algebra cannot absorb —
+q-deformations, octonionic doublings and dissipative completions lie outside $\mathbb{B}$, each for a
+definite structural reason — so the contraction limit is the one degeneration that stays inside.
+
 ## Physical Interpretation
 
 - A square-zero element kills itself: it is an element of its own annihilator. Physically it is an
   infinitesimal object, of which two successive applications give nothing, and the lightlike displacement
-  is the member; the photon is the physical particle.
+  is the member; the photon's null four-momentum is the physical carrier, and the cone **marks** the
+  massless case rather than choosing it.
 - The plain composition band has the pure isotropic cone as its square-zero set, of real dimension four:
   the pure lightlike directions. The non-pure cone elements are the states, and they are not square-zero.
 - The interval band has the whole cone: every lightlike element is self-annihilating there, and that band
@@ -354,6 +525,25 @@ tests whether a second application adds anything.
 - A nilpotent differential exists only where the bracket closes: the associativity of quaternion
   multiplication is what makes the BRST charge nilpotent, and the three corpus brackets that fail the
   Jacobi identity are the ones that cannot carry a cohomology.
+- The hole of Dirac's hole theory is not a nilpotent. A hole is the absence of a filled negative-energy
+  state, a difference from the sea, and the framework sits on the modern reinterpretation side, where the
+  vacuum is empty and the negative-frequency modes create antiparticles. What the exclusion principle supplies
+  is the sea's inertness, and exclusion is the physics of the anticommuting (square-zero) mode; the hole
+  itself is a difference from the sea, not a nilpotent.
+- The nilpotent mode is **native**, and the map to it is an identity at one site. *The Jordan–Wigner
+  Transformation in Biquaternionic Form* finds that the one-site spin ladder is the fermionic mode itself,
+  $\tilde a^{2}=0$, so the transformation is the choice of a square root of the spin algebra and the string
+  is its branch cut. Nilpotency is the algebra's one-site fact; the string appears only with a second site.
+- Nilpotency at the level of a **graded extension** is where the algebra stops. In *Grassmann Coherent States
+  in Biquaternionic Form* the coherent-state labels generate a Grassmann algebra by one odd variable per mode,
+  and it is "the minimal odd extension of $\mathbb{B}$ — the odd generator that the field's grading requires
+  and that the algebra does not contain by itself": the even part of the extension is the algebra one started
+  with, and every physical state is even. The square-zero variable $\theta$ with $\theta^{2}=0$ is therefore
+  not an element of $\mathbb{B}$ but the smallest odd addition that lets the fermionic grading be written.
+- The eikonal avoids the cone. In *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic
+  Form* the leading-order momentum $\nabla S$ has biquaternion norm fixed by the energy defect, so the phase
+  gradient is never a nonzero nilpotent; the cone is its asymptotic boundary, reached in the trivial sense
+  only where the particle stops, $\nabla S=0$.
 - The Dirac point of graphene and of a topological-insulator surface is a lightlike momentum,
   $\tilde k\tilde k^{\natural}=0$: the nilpotent is the algebraic form of the linear, gapless branch.
 - On a lattice the null points of the momentum symbol are counted by topology: the index sum is the Euler
@@ -362,6 +552,25 @@ tests whether a second application adds anything.
 - Nilpotency makes the fermionic Wick theorem an exact operator identity rather than an approximation: the
   collapse of products beyond the second leaves only the two-point contraction, so the graph expansion of a
   single mode has no infinite series to resum.
+- Nilpotency caps the ladder at two rungs. In *The Qutrit Problem: Three-Level Systems Outside the
+  Biquaternion Algebra* the square-zero property means the algebra's own raising operator climbs one step,
+  the identity splits into at most two orthogonal idempotents, and no three-level module exists: the algebra
+  has two levels, and the third is not inside it.
+- Nilpotency is what makes a unit group infinite. In *Biquaternion Orders and Finite Groups of Units* a null
+  element $P$ gives the unit $e_0+P$, with inverse $e_0-P$ and $(e_0+P)^n=e_0+nP$, so a null direction
+  generates an unbounded cyclic subgroup: the infinite unit group of the complex order is the arithmetic
+  statement that the light cone is present.
+- Nilpotency is not a continuum artefact: the algebra's own **discrete lattice** already contains the cone.
+  *Lattice Gauge Theory and the Biquaternion Path Integral* reads the integral structures — the Lipschitz and
+  Hurwitz orders and the integral biquaternions — as a discrete spacetime lattice: "the real sector is a
+  Euclidean lattice, because the biquaternion norm is definite there, and the nilpotent direction of the
+  complex order is a discrete lightlike direction", so "the light cone is a lattice cone" (*Biquaternion
+  Orders and Finite Groups of Units*). The article labels this as its interpretation and states that the
+  orders carry no coupling and no dynamics; the structural point is that the null direction survives
+  discretisation.
+- Nilpotency is the endpoint of a contraction. *Squeezing Beyond the Biquaternion Algebra* degenerates the
+  norm by rescaling generators, $[E_2,E_3]=2\epsilon^2E_1$ and $N(E_2)=\epsilon^2e_0$ vanishing together, so
+  invertible elements become nilpotent zero divisors and the cone is the limiting locus of that degeneration.
 
 ## Summary
 
@@ -394,13 +603,17 @@ element theory of the algebra.
 
 ## Further Reading
 
-- The mathematics companion: *Nilpotents* (`articles_maths/nilpotents.md`), for the twelve square-zero sets, the order theorem and the gap with the zero-divisor sets.
-- The other companions of the section: *Zero Divisors in the 12 Structures Framework*; *Annihilators in the 12 Structures Framework*; *Square Roots of Minus One, Zero and Plus One in the 12 Structures Framework*; *Square Roots of a General Element in the 12 Structures Framework*; *Idempotents in the 12 Structures Framework*.
-- The lightlike displacement and the photon: *The Photon as a Null Element: What the Cone Derives and What It Does Not*; *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *The Cone and the Massless Particles in the 12 Structures Framework*.
-- The Grassmann reading of square-zero variables: *Grassmann Coherent States in Biquaternionic Form*; *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*.
-- The fermionic ladder: *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; *The Spin–Statistics Theorem in Biquaternionic Form*; *The Biquaternion Vacuum as a Minimal Idempotent*; *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*; *The Wick Theorem in Biquaternionic Form*, for the exact collapse of the contractions.
+- The mathematics companion: *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/nilpotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve square-zero sets, the order theorem and the gap with the zero-divisor sets.
+- The other companions of the section: *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Square Roots of Minus One, Zero and Plus One in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$*.
+- The lightlike displacement and the photon: *The Null Four-Momentum: What the Cone Derives and What It Does Not*; *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*.
+- The Grassmann reading of square-zero variables: *Grassmann Coherent States in Biquaternionic Form*, for the coherent-state labels as the minimal odd extension whose even part is the algebra itself and whose square-zero variable is not an element of $\mathbb{B}$; *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*.
+- The ceiling of the ladder and the unit group: *The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra*, for the square-zero raising operator that stops at two levels and the absent three-level module; *Biquaternion Orders and Finite Groups of Units*, for the null direction whose powers make the unit group of the complex order infinite, the arithmetic statement of the light cone.
+- The discrete lattice: *Lattice Gauge Theory and the Biquaternion Path Integral*, for the algebra's integral structures read as a discrete spacetime lattice whose Euclidean part is definite and whose null direction is a discrete lightlike direction, so that the light cone is a lattice cone.
+- The contraction limit: *Squeezing Beyond the Biquaternion Algebra*, for nilpotents as the endpoint of a contraction that degenerates the norm, and for the deformations, enlargements and completions the algebra cannot absorb.
+- The fermionic ladder: *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; *The Spin–Statistics Theorem in Biquaternionic Form*; *The Biquaternion Vacuum as a Minimal Idempotent*; *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*; *The Wick Theorem in Biquaternionic Form*, for the exact collapse of the contractions; *The Jordan–Wigner Transformation in Biquaternionic Form*, for the one-site identity between the spin ladder and the nilpotent fermionic mode.
 - The odd nilpotents and the cohomology: *BRST Symmetry in Biquaternionic Form*; *Supersymmetric Quantum Physics in the Biquaternion Framework*; *The Superalgebra Reading and the Odd Extension with Signed Inner Conjugation in Biquaternionic Form*; *A Higher Structure for the Jacobi Failure*.
 - The Dirac cone and the null momentum: *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form*; *Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form*, for the topological pairing of the null points; *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*.
+- The semiclassical limit: *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, for the phase gradient whose norm is the energy defect and never vanishes on a nonzero nilpotent.
 - The probability band and its positivity: *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *Mass, Rank and the Positivity of the Dagger*; *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (mathematics).
 - The gauge band: *The Fourth Product and Its Indefinite Metric*; *The States the Indefinite Metric Cannot Normalise*; *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (mathematics).
 - The brackets: *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*; *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*.

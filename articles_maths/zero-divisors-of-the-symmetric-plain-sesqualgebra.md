@@ -29,7 +29,7 @@ non-degeneracy are *Norm and Invertibility in the General Plain Algebra* and *Th
 a Product on the Symmetric Plain Sesqualgebra*. The relative definition of the zero divisor and the
 vocabulary of the left, the right and the two-sided are *Definitions for the Study of the 12
 Algebraic Structures*; the common set of the four general products and the theorem that the four
-agree are *Zero Divisors*, and the same set read on the plain product with its two
+agree are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the same set read on the plain product with its two
 families is *Zero Divisors of the General Plain Algebra*, *Idempotents of the General Plain
 Algebra* and *Nilpotents of the General Plain Algebra*. Nothing topological and nothing metric
 appears.
@@ -151,7 +151,7 @@ Algebra*.
 The four general products of the space, $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$,
 $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, select one common zero-divisor set,
 the nonzero elements of the isotropic cone $\{C(\tilde P) = \sum_\mu P_\mu^{2} = 0\}$, and the
-coincidence is a theorem of the space (*Zero Divisors*). The block is a part of
+coincidence is a theorem of the space (*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The block is a part of
 one of them, the general plain sesquilinear product, and its set is strictly larger.
 
 **Theorem (the block's set contains the common set, strictly).** Every zero divisor of the four
@@ -222,7 +222,7 @@ meets the set in its punctured self, so no subspace is preferred.
 
 - *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md`), for the product, its class and its table.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the relative definition of the zero divisor and the left, right and two-sided vocabulary.
-- *Zero Divisors* (`articles_maths/zero-divisors.md`), for the common set of the four general products and the theorem that the four agree.
+- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the common set of the four general products and the theorem that the four agree.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the two families of the parent and their criteria.
 - *Norm and Invertibility in the Symmetric Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.md`), for the definiteness and the absence of an invertible element.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces the set meets.

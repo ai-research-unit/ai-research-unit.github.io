@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A massless element of the framework is an element of zero biquaternion norm, and its **direction** is the only datum its norm does not remove. The set of those directions is an object with a name and a long history in the relativity of the null cone: the **celestial sphere**. This article gathers the sphere, describes the two chiralities it carries, and records the interpretation that a massless element is a **point of the celestial sphere together with a phase**. It is deliberately short, because most of the machinery it uses is owned elsewhere: the Hopf bundle and its winding numbers belong to *The Hopf Fibration and the Biquaternion Gauge Bundle*, the metric geometry of the sphere to *The Fubini–Study Geometry and the Biquaternion Norm*, the little group and the helicity weights to *The Spinor-Helicity Formalism and Biquaternions*, and the photon's nullity to *The Photon as a Null Element: What the Cone Derives and What It Does Not*. What this article owns is the **sphere of directions of the null cone** — its definition inside the algebra, its two chiralities, and the sentence that says what a massless element physically is.
+A massless element of the framework is an element of zero biquaternion norm, and its **direction** is the only datum its norm does not remove. The set of those directions is an object with a name and a long history in the relativity of the null cone: the **celestial sphere**. This article gathers the sphere, describes the two chiralities it carries, and records the interpretation that a massless element is a **point of the celestial sphere together with a phase**. It is deliberately short, because most of the machinery it uses is owned elsewhere: the Hopf bundle and its winding numbers belong to *The Hopf Fibration and the Biquaternion Gauge Bundle*, the metric geometry of the sphere to *The Fubini–Study Geometry and the Biquaternion Norm*, the little group and the helicity weights to *The Spinor-Helicity Formalism and Biquaternions*, and the photon's nullity to *The Null Four-Momentum: What the Cone Derives and What It Does Not*. What this article owns is the **sphere of directions of the null cone** — its definition inside the algebra, its two chiralities, and the sentence that says what a massless element physically is.
 
 ## The Null Cone of the Algebra
 
@@ -81,7 +81,7 @@ The interpretation also fixes the boundary of the object. The sphere is the set 
 ## What the Reading Does Not Claim
 
 - It does **not** claim that the celestial sphere is something the biquaternion algebra adds to relativity. The sphere of lightlike directions is standard, and it is met by every four-dimensional treatment of the null cone; the article records its place in the algebra and not a new result.
-- It does **not** claim that the sphere derives the massless condition. The cone marks the massless shell and does not choose it, as *The Photon as a Null Element: What the Cone Derives and What It Does Not* records; the sphere is the geometry of the marking, not a derivation of it.
+- It does **not** claim that the sphere derives the massless condition. The cone marks the massless shell and does not choose it, as *The Null Four-Momentum: What the Cone Derives and What It Does Not* records; the sphere is the geometry of the marking, not a derivation of it.
 - It does **not** own the metric, the bundle or the little group. The Fubini–Study line element, the Hopf fibration with its winding numbers, and the helicity weights are delegated by name in the text.
 - It does **not** claim that the direction datum and the phase are independent in every representation. The spinor presentation ties them — the direction is the ray and the phase is the remaining freedom of the representative — and the article states the tie rather than a product decomposition.
 
@@ -107,7 +107,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 - *The Spinor-Helicity Formalism and Biquaternions* — the massless momentum as a zero divisor, rank one as factorisability, the little group and the helicity weights.
 - *The Hopf Fibration and the Biquaternion Gauge Bundle* — the unit spinors over the sphere, the Hopf map and its winding numbers.
 - *The Fubini–Study Geometry and the Biquaternion Norm* — the metric of the projective line and the transition probability of the pure states.
-- *The Photon as a Null Element: What the Cone Derives and What It Does Not* — the massless shell as the zero-divisor cone and the limits of the derivation.
+- *The Null Four-Momentum: What the Cone Derives and What It Does Not* — the massless shell as the zero-divisor cone and the limits of the derivation.
 - *Conventions in the Biquaternion Universe* — the central imaginary that carries a material element to the informational sector, where the rank-one Hermitian element lives.
 - *Twistor Theory and Biquaternions* — the projective null cone, the Segre quadric and the comparison with twistor space.
 - *The Null Quadric and Its Projective Geometry* (mathematics) — the Segre embedding, the quadric $\mathbb{P}^1\times\mathbb{P}^1$, the two rulings and the automorphism group.

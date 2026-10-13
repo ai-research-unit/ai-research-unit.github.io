@@ -1,15 +1,15 @@
-# __Square Roots of a General Element in the 12 Structures Framework__
+# __Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$__
 
 ## Introduction
 
 The root problem of a general central value asks which elements square to a given value in each of the
 twelve products: for a value $\lambda e_0$ with a general complex $\lambda$, the solutions of
 $\tilde\Xi\star\tilde\Xi=\lambda e_0$. The three named values $-1$, $0$ and $+1$ are read in the preceding
-companion, *Square Roots of Minus One, Zero and Plus One in the 12 Structures Framework*; here the value
+companion, *Square Roots of Minus One, Zero and Plus One in the 12 Structures of Biquaternions over $\mathbb{C}$*; here the value
 stays general, and the question is the one a general value asks: for which $\lambda$ does a root exist,
 and what is the root set. This article is the fourth physics companion of the mathematics comparison
-group, and its mathematics companion is *Square Roots of a General Element*
-(`articles_maths/square-roots-of-a-general-element.md`).
+group, and its mathematics companion is *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
+(`articles_maths/square-roots-of-a-general-element-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`).
 
 The physics is already present in the corpus under a different scope. *Square Roots: the Local Complex
 Structure, the Light Cone and the Mass Shell* reads the general equation for the ordinary product and
@@ -78,7 +78,7 @@ Sector*, *The Hermitian Subspace M₊ as the Informational Sector* and *The Inte
 Charge of the Material Composition*. At $\lambda=0$ the two central
 roots collapse to the origin and the vector family becomes the pure null cone: the only operation that
 squares to nothing is a lightlike displacement, and the value $0$ is the one value that has no scalar
-process beside it. The physical object is the photon, read in *The Photon as a Null Element: What the Cone
+process beside it. The physical object is the photon, read in *The Null Four-Momentum: What the Cone
 Derives and What It Does Not*.
 
 ## The Natural Product: the Root Is the Shell of the Interval
@@ -98,7 +98,7 @@ is a fixed scalar, and the natural product is the product whose square makes the
 rather than an equation. Because the natural product is bilateral, every complex value has a shell, and
 the shells of the real values are the timelike and spacelike shells of the material sector; the shell of
 $0$ is the light cone itself, the largest square-zero set of the four products and the same set that the
-companion article *Zero Divisors in the 12 Structures Framework* reads as the degeneracy of the four
+companion article *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$* reads as the degeneracy of the four
 general products.
 
 ## The Two Sesquilinear Products: Probability and Interval
@@ -176,10 +176,116 @@ $C=\lambda$ answers in the natural product; the origin alone or the family $e^{i
 third; and the family of the slope answers in the fourth. At the value $0$ the four root sets are the
 nilpotent cone of real dimension four, the cone $C=0$ of real dimension six, the origin alone and the
 square-zero family, four different sets, while the zero-divisor set is one cone in all four. The owner of
-the shared cone is *Zero Divisors in the 12 Structures Framework*, and the owner of the mass shell is
+the shared cone is *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*, and the owner of the mass shell is
 *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
 
 ## The Twelve Structures at a General Value
+
+The square of a structure is its operation read at the two equal arguments, and the equation
+$\tilde\Xi\star\tilde\Xi=\lambda e_0$ is written in that operation, so each of the twelve carries a root
+problem of its own. The twelve are read one by one below, each naming its product, its square and its root
+set, before the table collects the twelve against the sign of the value.
+
+### $\mathrm{GPA}$, the general plain algebra — composition
+
+The product is the plain product and its square is the plain square, of scalar part
+$\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)$ and vector part $2\Xi_0\mathbf\Xi$. A root of $\lambda$ exists for
+every complex value: the two central roots $\pm\sqrt\lambda\,e_0$ together with the pure quadric
+$(\mathbf\Xi,\mathbf\Xi)=-\lambda$, a four-real-parameter family; at $\lambda=0$ the two central roots
+meet at the origin and the quadric is the pure null cone. The composition band realises every value, and
+the value is read as a scale together with a phase. The reading is *Square Roots: the Local Complex
+Structure, the Light Cone and the Mass Shell*.
+
+### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
+
+The product is the Jordan product, which is commutative, and its square is the plain square, so the root
+set of every value is the set of $\mathrm{GPA}$ element for element. The symmetrisation prepares the same
+objects as the composition it symmetrises. The reading is *Observables as a Jordan Algebra: the Symmetric
+Plain Product and the Classical Composition*.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
+
+The product is the antisymmetrisation, which is alternating, so its square vanishes identically and the
+equation reads $0=\lambda e_0$. The root of $0$ is every element of the space, and no other value has a
+root. A bracket has only the trivial value. The reading is *The Cross Product as a Lie Bracket: Rotations
+and the Jacobi Identity*.
+
+### $\mathrm{GQA}$, the general quaternionic algebra — causality
+
+The product is $\tilde\Xi^{\natural}\tilde Q$ and its square is the central element $C(\tilde\Xi)e_0$, so
+the equation is the single complex equation $C(\tilde\Xi)=\lambda$. A root exists for every $\lambda$, and
+the root set is the level set $C=\lambda$: the cone of real dimension six at $\lambda=0$ and the
+nondegenerate quadric of the same real dimension at a nonzero value. Physically the level set is the mass
+shell, and the sign of a real value is the causal class. The reading is *The Interval as the Square and
+the Charge of the Material Composition*.
+
+### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
+
+The product is the symmetrisation and its square is the central square, so the root set of every value is
+the same level set $C=\lambda$, non-empty for every value. The symmetrisation keeps the existence class of
+its general partner, and the value is a weight of the scalar coupling. The reading is *The Quaternion Form
+as a Product: the Scalar Coupling of Two Material Operations*.
+
+### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
+
+The product is the antisymmetrisation and its square vanishes identically, so the equation reads
+$0=\lambda e_0$. The root of $0$ is every element of the space, and no other value has a root: every
+element is square-zero, a zero divisor of the block and its own annihilating partner. The reading is
+*Boosts, Mixed Terms and the Missing Lie Structure*.
+
+### $\mathrm{GPS}$, the general plain sesqualgebra — probability
+
+The product is the pairing and its square is Hermitian with scalar part the non-negative $H$, so a root
+exists exactly for a real $\lambda\geq0$. The root set is the origin alone at $\lambda=0$ and the family
+$e^{i\theta}w$ of real dimension four at $\lambda>0$, the group $U(2)$ at $\lambda=1$. The band refuses a
+negative or non-real value because its form is positive definite. The reading is *Mass, Rank and the
+Positivity of the Dagger*.
+
+### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
+
+The product is the scalar-valued symmetrisation and its square keeps only the scalar part of the Hermitian
+square, so the equation is the single real equation $H(\tilde\Xi)=\lambda$. A root exists exactly for a
+real $\lambda\geq0$: the origin alone at $\lambda=0$, and the quadric $H=\lambda$ of real dimension
+seven, the sphere of $\mathbb{C}^{4}$, at $\lambda>0$. The symmetrisation replaces unitarity by
+normalisation. The reading is *Why Probability Values Are Central: the Symmetric Sesquilinear Product and
+Its Cone*.
+
+### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
+
+The product is the antisymmetrisation, whose square is the pure part of the Hermitian square, of vanishing
+scalar part, so no nonzero central value is reached. The only central value with a root is $0$, and its
+root set is the square-zero cone of real dimension five, containing the origin and the nonzero nilpotents
+of the block. The reading is *The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear
+Product*.
+
+### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
+
+The product is the fourth product, and the scalar part of its square is the Krein value, real for every
+element, so a root exists exactly for a real $\lambda$ and every real value has one. The root set is the
+family $c(\hat\mu+it)$ with $(t^{2}-1)\lvert c\rvert^{2}=\lambda$, of real dimension four, together with
+the central circle at a positive value. The slope ranges are the three causal classes. The reading is *The
+Fourth Product and Its Indefinite Metric*.
+
+### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra — metric
+
+The product is the symmetrisation and its square is the Hermitian part of the unsplit square, a real
+quaternion, so a root exists exactly for a real value and exists for every one of them: the fibre over a
+real value is empty for no value. The root set is the pure family, present only for $\lambda\leq0$,
+together with the non-pure family $\mathcal R_\lambda$ of real dimension four. The reading is *The Gauge
+Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*.
+
+### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
+
+The product is the antisymmetrisation, whose square takes its values in the real three-dimensional
+subspace $i\mathbb{R}^{3}$, so its intersection with the central line is the origin and no nonzero central
+value is reached. The only central value with a root is $0$, and its root set is the cone of the diagonal,
+of real dimension six. The reading is *The Cross Product of a Vector with Its Conjugate: the Antisymmetric
+Gauge Product*.
+
+### The General Value in One Table
+
+The table collects the square of each structure and its root set against the sign and the reality of
+$\lambda$.
 
 | structure | square | $\lambda$ non-real | $\lambda<0$ | $\lambda=0$ | $\lambda>0$ |
 |---|---|---|---|---|---|
@@ -200,7 +306,7 @@ The table is the physical classification of the bands. Four structures read ever
 real values, two read the non-negative values and refuse both the non-real and the negative reals, and
 four read nothing but the value $0$. The value $0$ is the only value read by all twelve: every structure
 has a square, and the value $0$ is the vanishing of that square. The physical content of the row of $0$
-is *Nilpotents in the 12 Structures Framework*, and the physical content of the mass shell, the level set
+is *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*, and the physical content of the mass shell, the level set
 $C=\lambda$ of the natural product, is *Square Roots: the Local Complex Structure, the Light Cone and the
 Mass Shell*.
 
@@ -214,10 +320,14 @@ Mass Shell*.
 | the plain sesquilinear product has a root exactly for $\lambda\geq0$, and the origin alone at $0$ | mathematics companion; recomputed absence of a root of $-1$ and of $-3$ on samples | verified |
 | the quaternionic sesquilinear product has a root for every real $\lambda$ | mathematics companion; recomputed the family $c(\hat\mu+it)$ at a positive and a negative value | verified |
 | the four existence classes | mathematics companion, theorem; the failure cases recomputed on samples | cited |
-| a root of a nonzero value is a unit and a nonzero root of $0$ is a zero divisor | mathematics companion; *Zero Divisors in the 12 Structures Framework* | cited |
+| a root of a nonzero value is a unit and a nonzero root of $0$ is a zero divisor | mathematics companion; *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$* | cited |
 | the physical readings (shell, positivity, reality of the interval, bracket, mass, weight, scale, causal class, tachyon) | this article; owners cited in the text | interpretation |
 | the sign of the interval separates the timelike, null and spacelike shells | *Biquaternion Norm and Invertibility*; *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell* | cited |
 | the retired single-field mass equation places its solutions on the spacelike shell | *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, which recomputes the nullity of the central-phase waves | cited |
+| a root of a general value need not be unique: one first-order parent has two second-order squares | *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields* | cited |
+| the square of a curved Dirac operator carries a curvature term; the value the root realises is not central | *Curved Spacetime and the Biquaternion Framework* | cited |
+| the Kustaanheimo–Stiefel map is a square root of the position, $r=N(u)$, two-to-one | *The Coulomb Path Integral and the Duru–Kleinert Transformation in Biquaternionic Form* | cited |
+| the value can be generated by the vacuum: a chiral condensate realises the mass pair, $m=-2G\langle\bar\Psi\Psi\rangle$ | *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form* | cited |
 
 ## The Value in the Physics Corpus: Mass, Weight and Interval
 
@@ -294,18 +404,21 @@ number, is what chooses between the two kinds of mass. The value $\lambda$ of th
 is the scalar face of that choice: the sign of $\lambda$ says which shell a solution occupies, and the
 conjugation says which equation puts it there.
 
-**The polar phase names the causal class.** The value a root realises is not a bare sign; it is a modulus
-and a phase. *The Polar Element Representation of Biquaternions* writes every non-null element as
-$\tilde Q=r\,e^{i\alpha}B\hat q$ and identifies the polar modulus with the square root of the biquaternion
-norm, $\rho=re^{i\alpha}=\sqrt{N(\tilde Q)}$, so the modulus is exactly the object this article squares to
-the value $\lambda$. The article computes the material sector explicitly: for a timelike displacement
-$N=-c^2t^2(1-\beta^2)$ is negative, so $\rho=i\,ct\sqrt{1-\beta^2}$, that is $r=c\tau$ with phase
-$\alpha=\pi/2$; for a spacelike displacement $N$ is positive and the modulus is real, $\alpha=0$. The
-**phase of the polar modulus is therefore the causal class**: real modulus for spacelike, imaginary for
-timelike. Two corollaries sharpen the reading. The representation is available exactly on the nonzero
-elements off the cone, $N(\tilde Q)\neq0$, which is the invertibility theorem of *Biquaternion Norm and
-Invertibility* in polar dress; and the central value is the square of the modulus, $\lambda=\rho^2$, so the
-sign of $\lambda$ is the sign of $N$ and the phase of $\rho^2$ is twice the phase of $\rho$.
+**The polar phase names the causal class, on the material sector.** The value a root realises is not a bare
+sign; it is a modulus and a phase. *The Polar Element Representation of Biquaternions* writes every non-null
+element as $\tilde Q=r\,e^{i\alpha}B\hat q$ and identifies the modulus $\rho=re^{i\alpha}$ with the square
+root of the biquaternion norm, $\rho^{2}=N(\tilde Q)$; the representation is available exactly on the
+nonzero elements off the cone, which is the invertibility theorem of *Biquaternion Norm and Invertibility*
+in polar dress. On the **material sector** the article computes the phase explicitly: a timelike
+displacement has $N=-c^{2}t^{2}(1-\beta^{2})<0$, so $\rho=i\,ct\sqrt{1-\beta^{2}}$, that is $r=c\tau$ with
+$\alpha=\pi/2$, while a spacelike displacement has $N>0$ and a real modulus, $\alpha=0$. *On the material
+sector* the phase of the polar modulus **is** the causal class — imaginary for timelike, real for spacelike;
+for a general element $\alpha$ is the continuous angle that carries the complex-conjugation imbalance, so the
+two-valued statement is a statement about four-vectors and not about all elements. Where this article's
+natural band is used the connection is exact, because there an element's square is its interval,
+$\tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0$: the value a root realises is then the square of its own polar
+modulus, $\lambda=\rho(\tilde\Xi)^{2}$, whose sign is the sign of the interval and whose phase is twice the
+phase of $\rho$.
 
 **The complex value: a decaying state has no shell.** The three shells are the three signs of a *real*
 $\lambda$, and the framework has a value with no sign at all. *The Unstable State and the Complex Energy
@@ -330,6 +443,75 @@ $\lambda^{2}$, and a mass shell of interval $-m^{2}c^{2}$ is the unit shell scal
 dilation, with the massless cone as the scale-free limit. The general value is thus one number whose
 magnitude sets the size of the shell and whose sign sets its causal class, and the band that reads it —
 interval, weight, gauge interval or polar scale — selects which of the two aspects is the physical one.
+
+**The shell is a pole of the propagator.** The value a root realises is not only a level of the dispersion;
+it is a singularity of the field's two-point function. *The Feynman Propagator in Biquaternionic Form*
+computes the propagator whose momentum-space amplitude has its poles exactly on the mass shell,
+$\tilde k\tilde k^{\natural}+m^{2}=0$: the shell of the value $-m^{2}$ is the pole of the propagation, and
+the two frequency branches $E=\pm E_{\mathbf p}$ are the particle and antiparticle poles. The Feynman
+prescription is a deformation of that shell, $m^{2}\mapsto m^{2}-i\epsilon$, and the article's own finding
+is precise about the split of labour: the algebra supplies the complex plane in which the contour is drawn
+and a natural home for the $\epsilon$ — the imaginary part lies along the $ict$ direction of the material
+sector — but it does not select the contour, whose orientation is a boundary condition that distinguishes
+the Feynman propagator from the retarded and advanced ones. Read through the root problem, the value is the
+**propagation pole**: the shell of a mass is where the field propagates on shell, and the three propagators
+of the corpus are three choices of how the complex deformation of one shell is closed, and the value's
+imaginary part is the width the article reads as half the decay rate.
+
+**The value's phase doubles in the interference.** The sign of a value is the causal class of its roots, and
+*Zitterbewegung in Biquaternionic Form* exhibits the same doubling of the value's phase on the field itself.
+The article finds that the rest-energy phase rotates the two sectors into one another at the rate
+$mc^{2}/\hbar$, and that the trembling of the Dirac position is the **square** of that rotation: its frequency
+is $2E/\hbar$, twice the rest scale, and its amplitude is half the reduced Compton wavelength. This is the
+field's image of the algebraic fact that the phase of $\tilde\Xi^{2}$ is twice the phase of $\tilde\Xi$. The
+article also isolates the piece of the root problem that the field makes explicit: the mass term acts as a
+**diagonal action with opposite signs on the two sectors**, so the two mass-shell roots of one value are the
+two signs the value imposes, and the trembling is their beat. The article is careful where the corpus has to
+be: it records that the energy-sign split and the sector split are generated by different operations and does
+not identify them, while the mass fixes the scale of both.
+
+**The value can be a field.** *The Petiau System and the Quantisation of Mass in Biquaternionic Form*
+generalises the root problem in a way that article states plainly. The Lanczos feedback
+$\tilde\nabla\tilde A=m\tilde B$, $\tilde\nabla\tilde B=m\tilde A$ turns a massive field equation into a
+self-sourcing pair, and promoting the scalar $m$ to a biquaternion field $\tilde E$ makes the second-order
+equations **eigenvalue equations for the mass**, whose two eigenvalues are those of $\tilde E\tilde E^{*}$.
+The radicand of this companion's root problem is therefore not always a fixed central number: in this line it
+is a **field**, and the physical masses are the eigenvalues the field's own square supplies. The article
+keeps the ledger honest, and the reading must keep it too: the algebra is scale-free and derives no mass
+value, so the promotion of $\lambda$ from a number to a field changes *what carries the value*, not whether
+the framework fixes it. The root problem "which elements square to a given central value" becomes, in this
+line, "which values a field's own square realises".
+
+**The wave operator's square root is spinor-valued, not scalar.** *Klein–Gordon from the Dirac Square in
+Biquaternionic Form* is the physical instance of the existence question this article settles abstractly. The
+second-order operator $\Box-m^2c^2/\hbar^2$ has **no first-order scalar square root** in $\mathbb{B}$: the
+simplest attempt $(\tilde\nabla^{\natural}+\mu)(\tilde\nabla-\mu)$ leaves the first-order residual
+$2\mu\boldsymbol{\nabla}$, and no choice of constant biquaternion coefficients cancels it, because
+cancellation would need an element anticommuting with all three $e_j$, and none exists. Yet the physical
+theory does have a first-order equation whose square is Klein–Gordon, and the article locates the resolution:
+the square root is **not scalar**, it is the gradient acting on the **spinor module**, and the mass term is
+the off-diagonal pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$
+that mixes the two chiral halves. Read against this companion, the point is sharp: the root of a given
+element need not be an element of the same algebra; it may be a **module-valued operator**, a map between
+the two summands the element acts on, and the obstruction to a scalar root — the residual that cannot be
+cancelled — is exactly the evidence that the root must be off-diagonal. The mass is then the root's
+off-diagonal entry, and $\Box\tilde\Psi=m^2\tilde\Psi$ is recovered by squaring the pair rather than by solving
+$\tilde\Xi^2=\lambda e_0$ inside the algebra. This is the concrete face of the existence classes: the
+classes that fail to admit a scalar root are not idle, they are the ones whose root lives on a module.
+
+**The massless limit is the branch point.** *Conformal Invariance and the Massless Limit in Biquaternionic
+Form* locates the boundary case $\lambda=0$ of the root problem, and its statement is algebraic. The mass
+enters the wave equation as the single scale in $\Box-\mu^2$, and the article finds that, algebraically, at
+$\mu=0$ "the on-shell symbol becomes a **zero divisor** of the algebra, left multiplication by the on-shell
+momentum dropping from rank four to rank two". Read here, that is the
+**branch point of the square root**. For $\lambda\neq0$ the root problem $\tilde\Xi^2=\lambda e_0$ has two
+roots $\pm\sqrt\lambda$ and the element is **invertible**, splitting the two mass shells; at $\lambda=0$ the
+two roots merge at $0$ — a nilpotent — and the on-shell element is a **zero divisor**. The three named
+radicands are thus not three unrelated cases but one picture read along a line: $-1$ the phase, $+1$ the
+involution, and $0$ the **branch point** at which a nonzero root collapses to a nilpotent and an invertible
+element collapses to a zero divisor. The article's second statement completes the picture: the trace of the
+improved stress–energy tensor is $\propto\mu^2$ and vanishes exactly at $\lambda=0$, so the loss of the
+root's splitting and the restoration of the conformal symmetry are one event.
 
 ## Physical Interpretation
 
@@ -363,15 +545,69 @@ interval, weight, gauge interval or polar scale — selects which of the two asp
 - A shell of a given sign is generated from the unit shell by scaling, the interval being quadratic in
   the scale: the mass shell is the unit shell scaled by $mc$, and the cone is the scale-free limit of the
   family.
-- The value is a modulus and a phase, and the phase is the causal class: the polar modulus $\rho=\sqrt N$ is
-  real for a spacelike root (positive value) and imaginary for a timelike one (negative value), and the
-  representation exists exactly off the cone. The sign of $\lambda$ is the sign of the interval, the phase
-  of $\rho^{2}$ twice the phase of $\rho$.
+- The value is a modulus and a phase. On the material sector the phase is the causal class: the polar modulus
+  $\rho=\sqrt N$ is real for a spacelike element and imaginary for a timelike one, and the representation
+  exists exactly off the cone. For a general element the phase is a continuous angle. In the natural band the
+  value a root realises is the square of its own polar modulus, and the sign of $\lambda$ is the sign of the
+  interval.
 - A complex value has no causal class. The unstable state is a complex central pole whose real part is the
   energy and whose imaginary part is half the width, so a decaying state has a lifetime instead of a shell.
   Only the plain band realises such a value — by the scalar process $\sqrt\lambda\,e_0$; the natural and
   sesquilinear bands produce an interval and are real by construction, so a complex pole is never one of
   their shells.
+- The shell of a value is a pole of the propagator. The two-point function's poles sit on the mass shell
+  $\tilde k\tilde k^{\natural}+m^{2}=0$, and the Feynman prescription $m^{2}\mapsto m^{2}-i\epsilon$ deforms
+  that shell. The algebra supplies the complex plane and a home for the $\epsilon$ along $ict$; it does not
+  select the contour, which is the boundary condition separating the Feynman, retarded and advanced
+  propagators.
+- The value's phase doubles in an interference: the Zitterbewegung of *Zitterbewegung in Biquaternionic Form*
+  is the square of the rest-energy sector rotation, so its frequency is $2E/\hbar$, twice the value's scale,
+  and the mass term acts with opposite signs on the two sectors, the two mass-shell roots of one value.
+- The value can be a field. In *The Petiau System and the Quantisation of Mass in Biquaternionic Form* the
+  scalar mass is promoted to a biquaternion field $\tilde E$, and the equations become eigenvalue equations
+  whose two masses are the eigenvalues of $\tilde E\tilde E^{*}$. The framework still derives no value; what
+  changes is that the radicand is carried by a field rather than by a fixed central number.
+- The value can be **generated by the vacuum**. In *The Chiral Condensate and Dynamical Symmetry Breaking in
+  Biquaternionic Form* the massless equation carries both the vector and the axial phase; a nonzero fermion
+  bilinear $\langle\bar\Psi\Psi\rangle$ breaks the axial one spontaneously and reproduces the linear chiral
+  pair, with $m=-2G\langle\bar\Psi\Psi\rangle$, so the value the root problem sets as a constant is instead
+  the coefficient of a condensate. The article is explicit about the division: the framework supplies the
+  carrier, the broken-symmetry pattern and the sector placement of the order parameter — a central scalar —
+  and the coupling, the cutoff, the scale and the numerical value are empirical input it cannot derive.
+- A root may live on a module rather than in the algebra. *Klein–Gordon from the Dirac Square in
+  Biquaternionic Form* proves that the second-order operator has no first-order **scalar** root — the residual
+  $2\mu\boldsymbol{\nabla}$ cannot be cancelled, since no element anticommutes with all three $e_j$ — yet the
+  physical theory has one, spinor-valued, with the mass as the off-diagonal entry that mixes the two chiral
+  halves and $\Box\tilde\Psi=m^2\tilde\Psi$ recovered by squaring the pair. The classes that fail to admit a
+  scalar root are the ones whose root is off-diagonal on the module.
+- The radicand $0$ is the **branch point**. In *Conformal Invariance and the Massless Limit in
+  Biquaternionic Form* the massless limit $\mu\to0$ is the limit in which the on-shell element becomes a zero
+  divisor and left multiplication by it drops from rank four to rank two: the two mass-shell roots merge at
+  the nilpotent, the element loses invertibility, and the trace of the stress tensor, $\propto\mu^2$,
+  vanishes — the conformal symmetry is restored exactly where the root's splitting is lost.
+- The root can live on a **curved background**, and then the value it realises is not a constant.
+  In *Curved Spacetime and the Biquaternion Framework* squaring the one-sided Dirac operator
+  $\tilde{\not D}=\tilde E^\mu D_\mu$ gives the **Lichnerowicz** form
+  $\tilde{\not D}^{2}=\Box_g-\tfrac14R$: the wave operator minus a quarter of the Ricci scalar, so that a
+  Dirac field obeys a Klein–Gordon-type equation with the $-R/4$ coupling even with no source. "The square
+  of a first-order operator is second order" is the flat statement; off the flat case the radicand carries
+  the curvature, and the alternative first-order operator whose square is exactly the Laplacian — the
+  Dirac–Kähler equation — buys that constancy at the price of the fourfold split.
+- The root of a general value is **not unique**, and a duality can be the statement of that. In *Dual
+  Equivalence of the Dirac and Topologically Massive Gauge Fields* a single first-order (parent) action
+  carries both a massive spin-$\tfrac12$ field and a topologically massive spin-$1$ field: eliminating one
+  field gives the Dirac Lagrangian, eliminating the other gives the Maxwell-plus-topological-mass
+  Lagrangian, and the two describe the same propagating modes. Read through this companion's problem, the
+  parent is one first-order root with two second-order squares — a chirality-off-diagonal (spinor) reduction
+  and an antisymmetric (vector) reduction; the coefficient displays are the source's, and the corpus records
+  the divergence identity rather than recomputing it here.
+- The root of a central value can be an explicit **geometric map**. In *The Coulomb Path Integral and the
+  Duru–Kleinert Transformation in Biquaternionic Form* the Kustaanheimo–Stiefel map is a genuine square
+  root of the position in the algebra: $r=N(u)$, the Euclidean radius is the biquaternion norm of $u$, the
+  Coulomb singularity $1/r$ is the reciprocal of the norm, and the map is two-to-one away from the origin,
+  two values of $u$ for each position. That two-valuedness is the two roots of a central value. The
+  transformation, the pseudo-time and the reduction to the oscillator are standard; the algebra supplies the
+  reading, and it neither causes nor cures the analytic failure of the time-sliced kernel.
 
 ## Summary
 
@@ -402,13 +638,14 @@ different root sets, so degeneracy is universal while factorisation is band-spec
 
 ## Further Reading
 
-- The mathematics companion: *Square Roots of a General Element* (`articles_maths/square-roots-of-a-general-element.md`), for the four reductions, the unit theorem and the four existence classes.
-- The three named values: *Square Roots of Minus One, Zero and Plus One in the 12 Structures Framework*; *Square Roots of Minus One, Zero and Plus One* (mathematics).
-- The mass shell and the interval: *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*; *Biquaternion Norm and Invertibility*; *The Interval as the Square and the Charge of the Material Composition*.
-- The value in the physics corpus: *The Four Readings of Mass: Norm, Rank, Charge and Scale*; *The Symplectic Form and the Biquaternion Norm Cone*; *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The Born Rule as a Trace Formula — Derivation and Comparison*; *The Polar Element Representation of Biquaternions*; *Conformal Invariance and the Massless Limit in Biquaternionic Form*; *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, for a value with no sign.
-- The light cone and the nilpotents: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Nilpotents in the 12 Structures Framework*; *The Photon as a Null Element: What the Cone Derives and What It Does Not*; *Zero Divisors as a Physical Locus in Biquaternionic Form*.
+- The mathematics companion: *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the four reductions, the unit theorem and the four existence classes.
+- The three named values: *Square Roots of Minus One, Zero and Plus One in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Square Roots of Minus One, Zero and Plus One in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (mathematics).
+- The mass shell and the interval: *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*; *Biquaternion Norm and Invertibility*; *The Interval as the Square and the Charge of the Material Composition*; *Klein–Gordon from the Dirac Square in Biquaternionic Form*, for the second-order operator with no scalar root and its spinor-valued first-order square, with the mass as the off-diagonal entry.
+- The root on a curved background, the non-uniqueness of the root, and an explicit geometric square root: *Curved Spacetime and the Biquaternion Framework*, for the Lichnerowicz square and the curvature term the value then carries; *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*, for one first-order parent with two second-order squares; *The Coulomb Path Integral and the Duru–Kleinert Transformation in Biquaternionic Form*, for the Kustaanheimo–Stiefel map as a square root of the position.
+- The value in the physics corpus: *The Four Readings of Mass: Norm, Rank, Charge and Scale*; *The Symplectic Form and the Biquaternion Norm Cone*; *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The Born Rule as a Trace Formula — Derivation and Comparison*; *The Polar Element Representation of Biquaternions*; *Conformal Invariance and the Massless Limit in Biquaternionic Form*, for the massless limit as the case in which the on-shell element becomes a zero divisor and left multiplication drops from rank four to rank two; *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form*, for the massless equation that carries the axial phase, the condensate that breaks it, and $m=-2G\langle\bar\Psi\Psi\rangle$; *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, for a value with no sign; *The Feynman Propagator in Biquaternionic Form*, for the shell as a pole of the two-point function; *Zitterbewegung in Biquaternionic Form*, for the doubled phase of the value in the trembling; *The Petiau System and the Quantisation of Mass in Biquaternionic Form*, for the mass as a field and the eigenvalue equation it makes of the root problem.
+- The light cone and the nilpotents: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; *The Null Four-Momentum: What the Cone Derives and What It Does Not*; *Zero Divisors as a Physical Locus in Biquaternionic Form*.
 - The probability band and its positivity: *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *Mass, Rank and the Positivity of the Dagger*; *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (mathematics).
 - The indefinite metric: *The Fourth Product and Its Indefinite Metric*; *The States the Indefinite Metric Cannot Normalise*; *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (mathematics).
 - The brackets: *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*; *A Higher Structure for the Jacobi Failure*; *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*.
-- The four general products and the cone: *Composition and Probability: the General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*; *Zero Divisors in the 12 Structures Framework*; *The Cone and the Massless Particles in the 12 Structures Framework*.
+- The four general products and the cone: *Composition and Probability: the General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*; *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*; *The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*.
 - The grid and the definitions: *The 12 Products of the Biquaternion Complex Space*; *The Twelve Structures Compared: Product, Law and Form*; *The Anti-Hermitian Subspace M₋ as the Material Sector*; *The Hermitian Subspace M₊ as the Informational Sector*; *Conventions in the Biquaternion Universe*.

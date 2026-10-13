@@ -505,12 +505,12 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 #### Comparison of the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space
 
-- [Zero Divisors](../articles_maths/zero-divisors.html)
-- [Annihilators](../articles_maths/annihilators.html)
-- [Square Roots of Minus One, Zero and Plus One](../articles_maths/square-roots-of-minus-one-zero-and-plus-one.html)
-- [Square Roots of a General Element](../articles_maths/square-roots-of-a-general-element.html)
-- [Idempotents](../articles_maths/idempotents.html)
-- [Nilpotents](../articles_maths/nilpotents.html)
+- [Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.html)
+- [Annihilators in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/annihilators-in-the-12-algebraic-structures-over-the-biquaternion-c-space.html)
+- [Square Roots of Minus One, Zero and Plus One in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-12-algebraic-structures-over-the-biquaternion-c-space.html)
+- [Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-12-algebraic-structures-over-the-biquaternion-c-space.html)
+- [Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/idempotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.html)
+- [Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/nilpotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.html)
 - [The General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared](../articles_maths/the-general-plain-algebra-and-the-general-plain-sesqualgebra-of-biquaternions-compared.html)
 
 #### Element Representations

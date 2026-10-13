@@ -34,7 +34,7 @@ the General Quaternionic Algebra*; the roots of the three central values are *Sq
 One, Zero and Plus One in the General Quaternionic Algebra*; the zero divisors are *Zero Divisors of
 the General Quaternionic Algebra*, above this article in this category, and the nilpotents are
 *Nilpotents of the General Quaternionic Algebra*, below it; the structure-level comparison of the six
-idempotent sets is *Idempotents*; the projectors and the operator theory are *The Left
+idempotent sets is *Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the projectors and the operator theory are *The Left
 Multiplications of the Quaternionic Product and the Opposite Monoid* and *The Specificities of the
 General Quaternionic Algebra*, both below this article in this category; and the complex sibling is
 *Idempotents of the General Quaternionic Algebra*.

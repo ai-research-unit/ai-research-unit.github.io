@@ -1,4 +1,4 @@
-# __Square Roots of Minus One, Zero and Plus One__
+# __Square Roots of Minus One, Zero and Plus One in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space__
 
 ## Introduction
 
@@ -19,7 +19,7 @@ and the **root set** of the value is the set of its roots. The value is real bec
 
 and every table of the article follows this order, family by family and, inside a family, general then symmetric then antisymmetric.
 
-**Scope and owners.** The general value $\lambda$ and the six root sets at a general value are *Square Roots of a General Element*, the companion of this article, which states the root equation, the six squares and the six-row table once; the article cites them and applies them at the three named values. The root sets of each structure stay owned by their articles, cited one by one in §*The Six Structures and the Three Values*. The products are *The 6 Products of the Quaternion Real Space* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the vocabulary, the root, the unit, the inverse, the zero divisor and the square root of a central value stated once for a general product, is *Definitions for the Study of the 6 Algebraic Structures*; the idempotents are *Idempotents*; the square-zero sets are *Nilpotents*; the zero-divisor sets are *Zero Divisors*; and the two forms are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*.
+**Scope and owners.** The general value $\lambda$ and the six root sets at a general value are *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, the companion of this article, which states the root equation, the six squares and the six-row table once; the article cites them and applies them at the three named values. The root sets of each structure stay owned by their articles, cited one by one in §*The Six Structures and the Three Values*. The products are *The 6 Products of the Quaternion Real Space* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the vocabulary, the root, the unit, the inverse, the zero divisor and the square root of a central value stated once for a general product, is *Definitions for the Study of the 6 Algebraic Structures*; the idempotents are *Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the square-zero sets are *Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the zero-divisor sets are *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; and the two forms are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*.
 
 **Conventions.** $\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, a general element is $\tilde\xi=\xi_0e_0+\boldsymbol\xi$ with $\xi_0\in\mathbb{R}$ and $\boldsymbol\xi=\sum_k\xi_ke_k$, the natural conjugation is $\tilde\xi^{\natural}=\xi_0-\boldsymbol\xi$, the **plain form** is $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{2})$, and the **quaternion form** is $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{\natural}\tilde\xi)$. The vector subspace $\mathrm{Vect}(\mathbb{H})$ is written $\boldsymbol\xi$ for its element. The **square root of a central value** is defined in *Definitions for the Study of the 6 Algebraic Structures* as an element $\tilde\xi$ with $\tilde\xi^{2}=c$ for a central $c$, the class of them being the set of its solutions; the origin is therefore counted with the roots of $0$ wherever it solves the equation, and the places where an owner counts the non-zero roots alone are read as the origin alone.
 
@@ -43,7 +43,7 @@ The quaternion form decides the nature of every root, because the norm of a squa
 
 **Theorem (a root of a signed value is a unit; a non-zero root of $0$ is a square-zero element).** Let $\tilde\xi$ be a root of $-1$ or of $+1$ in one of the six structures. Then $N(\tilde\xi)=1$, the element is a unit of the algebra, and its inverse is $\tilde\xi^{-1}=\tilde\xi^{\natural}/N(\tilde\xi)$. A non-zero root of $0$ is a square-zero element, at once a zero divisor of its structure and its own annihilating partner.
 
-*Proof.* The square of the root is $\lambda e_0$ with $\lambda=\pm1$, and the norm is multiplicative, $N(\tilde\xi^{2})=N(\tilde\xi)^{2}$, so $N(\tilde\xi)^{2}=N(\lambda e_0)=1$ and $N(\tilde\xi)=1$. The criterion of invertibility of the algebra is $N\neq0$ and the two-sided inverse is $\tilde\xi^{\natural}/N(\tilde\xi)$ (*Zero Divisors*). A root of $0$ has vanishing square, hence is a square-zero element, and a non-zero square-zero element annihilates itself on both sides and is a zero divisor of its structure (*Nilpotents*, *Annihilators*).
+*Proof.* The square of the root is $\lambda e_0$ with $\lambda=\pm1$, and the norm is multiplicative, $N(\tilde\xi^{2})=N(\tilde\xi)^{2}$, so $N(\tilde\xi)^{2}=N(\lambda e_0)=1$ and $N(\tilde\xi)=1$. The criterion of invertibility of the algebra is $N\neq0$ and the two-sided inverse is $\tilde\xi^{\natural}/N(\tilde\xi)$ (*Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*). A root of $0$ has vanishing square, hence is a square-zero element, and a non-zero square-zero element annihilates itself on both sides and is a zero divisor of its structure (*Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*).
 
 The algebra is a division algebra, so it decomposes as
 
@@ -55,7 +55,7 @@ with no zero-divisor term: the plain product has no zero divisor at all, and the
 
 ## The Six Structures and the Three Values
 
-The square of a structure is its operation read at the two equal arguments, so each of the six carries a root problem of its own, and the problem is decided by the sweep of that square. The six squares are the table of *Square Roots of a General Element* §*The Two Squares and the Two Forms*; at the three named values they read as follows.
+The square of a structure is its operation read at the two equal arguments, so each of the six carries a root problem of its own, and the problem is decided by the sweep of that square. The six squares are the table of *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* §*The Two Squares and the Two Forms*; at the three named values they read as follows.
 
 **Theorem (the classes of the six structures at the three values; quoted).** Among the six structures of the quaternion real space the value $-1$ has roots in the two plain structures alone and the value $+1$ in the four other structures; the value $0$ has the origin alone as its root set in the four structures whose square vanishes only at the origin, and the whole space in the two antisymmetric structures.
 
@@ -142,7 +142,7 @@ Four structures reduce the root set of $0$ to the origin alone, and the failure 
 
 *Proof.* The two squares are $B$ read with the vector equation and $N$, and the two forms differ by the sign of the vector part; at the value $0$ the plain pair forces the origin and the equation $N=0$ has the origin for its only solution; at the values $\pm1$ the plain product reads the pure branch, which the plain form reaches at the negative value alone, while the natural product reads the definite level set, which is non-empty at the positive value alone.
 
-**The word is *differ*, not *coincide*.** The zero-divisor sets of *Zero Divisors* are one set read twice — the empty set, because the algebra is a division algebra — while the root sets are two different sets at each of the two signed values. The reason is the one on which the whole chapter turns: the two general products read the same norm, and the zero-divisor criterion is the norm, but their squares are $B$ and $N$ on the vector subspace and the two differ by a sign, so the values at which the squares vanish or reach the unit are not the same values.
+**The word is *differ*, not *coincide*.** The zero-divisor sets of *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* are one set read twice — the empty set, because the algebra is a division algebra — while the root sets are two different sets at each of the two signed values. The reason is the one on which the whole chapter turns: the two general products read the same norm, and the zero-divisor criterion is the norm, but their squares are $B$ and $N$ on the vector subspace and the two differ by a sign, so the values at which the squares vanish or reach the unit are not the same values.
 
 ### The Three Values in Coordinates and the Roots of Zero
 
@@ -180,7 +180,7 @@ The two signed values are separated by the cut: the sphere of the roots of $-1$ 
 
 ## The Inverse Equations
 
-At the three values the inverse equations are read on the roots. Of the two general products the plain one has the two-sided unit $e_0$, so the classical equivalence *a root of a signed value if and only if a unit* is available for it; the natural product has no two-sided unit, and the substitute is the one-sided criterion, whose table of solutions is *Zero Divisors* §*The One-Sided Inverse Equations*, quoted and not restated.
+At the three values the inverse equations are read on the roots. Of the two general products the plain one has the two-sided unit $e_0$, so the classical equivalence *a root of a signed value if and only if a unit* is available for it; the natural product has no two-sided unit, and the substitute is the one-sided criterion, whose table of solutions is *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* §*The One-Sided Inverse Equations*, quoted and not restated.
 
 **Theorem (the inverse equations at the three values).** Let $\star$ be one of the two general products and let $\tilde\xi$ be a root of $-1$ or of $+1$. Then each of the two equations
 
@@ -190,7 +190,7 @@ $$
 
 has a solution: the two-sided inverse $\tilde\xi^{-1}=\tilde\xi^{\natural}/N(\tilde\xi)$ for the plain product and the one-sided solution $(\tilde\xi^{-1})^{\natural}$ for the natural product. A non-zero root of $0$ has no solution on either side, and it is its own annihilator.
 
-*Proof.* A root of a signed value has $N=1$ by §*The Roots of $\pm1$ Are Units and the Non-Zero Roots of $0$ Are Zero Divisors*, and the criterion of invertibility is $N\neq0$; the two solutions are those of the table of *Zero Divisors*. A non-zero root of $0$ has vanishing square and $N=0$, and an element of vanishing norm annihilates itself on both sides.
+*Proof.* A root of a signed value has $N=1$ by §*The Roots of $\pm1$ Are Units and the Non-Zero Roots of $0$ Are Zero Divisors*, and the criterion of invertibility is $N\neq0$; the two solutions are those of the table of *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. A non-zero root of $0$ has vanishing square and $N=0$, and an element of vanishing norm annihilates itself on both sides.
 
 The two signed values are therefore the values at which the roots are units, and the value $0$ the value at which the roots are the square-zero elements; and of the two the plain family inverts on both sides, the quaternionic family on one side alone.
 
@@ -217,13 +217,13 @@ The two general products therefore give two different answers at the two signed 
 
 ## Further Reading
 
-- *Square Roots of a General Element* (`articles_maths/quaternion-square-roots-of-a-general-element.md`), the companion of this article, for the root equation at a general central value, the six squares and the six-row table.
+- *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), the companion of this article, for the root equation at a general central value, the six squares and the six-row table.
 - *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six names, the class of each and the two laws of the table.
 - *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`), for the six products and their coordinates.
 - *The Two General Products of the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-two-general-products-of-the-quaternion-r-space.md`), for the plain product and the natural product, whose signs the three values read.
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), for the plain form $B$ of signature $(1,3)$ and the definite quaternion form $N$.
-- *Zero Divisors* (`articles_maths/quaternion-zero-divisors.md`), for the empty zero-divisor set of the two general products, the inverse criterion $N\neq0$, and the table of the one-sided inverse equations.
-- *Nilpotents* (`articles_maths/quaternion-nilpotents.md`), for the square-zero sets, which are the roots of $0$.
-- *Idempotents* (`articles_maths/quaternion-idempotents.md`), for the two idempotents $0$ and $e_0$ and the reading of the roots of $+1$.
+- *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/zero-divisors-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the empty zero-divisor set of the two general products, the inverse criterion $N\neq0$, and the table of the one-sided inverse equations.
+- *Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/nilpotents-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the square-zero sets, which are the roots of $0$.
+- *Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/idempotents-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the two idempotents $0$ and $e_0$ and the reading of the roots of $+1$.
 - *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra-of-quaternions.md`), for the sphere of the roots of $-1$ and the two roots of $+1$.
 - *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-quaternionic-algebra-of-quaternions.md`), for the empty root set of $-1$ and the sphere of the roots of $+1$.

@@ -42,7 +42,7 @@ nilpotent (*Definitions for the Study of the 6 Algebraic Structures*, §*The Ele
 Throughout this article the product is the antisymmetric plain multiplication $\times$, and
 unqualified, *nilpotent* and *class* are read in $\times$. The nilpotent is the root of $0$ in the
 sense of the definitions article, and the nilpotent classes of the six structures, against which the
-block is read, are *Nilpotents*.
+block is read, are *Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 ## The Criterion
 
@@ -183,9 +183,9 @@ zero, so the condition is satisfied by every element.
 origin alone for the general plain, the symmetric plain, the general quaternionic and the symmetric
 quaternionic structures, and it is the whole space for the antisymmetric plain and the antisymmetric
 quaternionic structures; only two sets occur, and no structure of the six has an intermediate one
-(*Nilpotents*). The block is one of the two structures whose square vanishes identically, and among
+(*Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*). The block is one of the two structures whose square vanishes identically, and among
 the six it is the only one whose nilpotents all have index two. In the biquaternion chapter the class
-of the two antisymmetric biquaternion structures is likewise the whole space (*Nilpotents*), so the
+of the two antisymmetric biquaternion structures is likewise the whole space (*Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*), so the
 totality for an antisymmetric block is not an artefact of the real field.
 
 ## Summary
@@ -222,7 +222,7 @@ enlargement being the removal of the scalar part from the square.
 - *Annihilators of the Antisymmetric Plain Algebra* (`articles_maths/annihilators-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for the annihilator of an element and the self-annihilation
 - *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-algebra-of-quaternions.md`), for the roots of $0$, which are the nilpotents
 - *Nilpotents of the General Plain Algebra* (`articles_maths/nilpotents-of-the-general-plain-algebra-of-quaternions.md`), for the division property that empties the parent's class
-- *Nilpotents* (`articles_maths/quaternion-nilpotents.md`), for the nilpotent classes of the six structures side by side
+- *Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/nilpotents-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the nilpotent classes of the six structures side by side
 - *Comparison of the Remarkable Subspaces of the Quaternions* (`articles_maths/comparison-of-the-remarkable-subspaces-of-the-quaternions.md`), for the subspaces on which the class is read
 - Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for nilpotents, the index of nilpotency and the nilradical.
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for the nilpotent elements of a Lie algebra and the Engel theorem.

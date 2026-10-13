@@ -22,7 +22,7 @@ image is the origin alone and its kernel is the whole space. The special case of
 side, the roots of $-1$, of $0$ and of $+1$, is *Square Roots of Minus One, Zero and Plus One in the
 Antisymmetric Plain Algebra*; the square-zero elements, which are the square roots of the origin,
 are *Nilpotents of the Antisymmetric Plain Algebra*; the centred reading of the six structures is
-*Square Roots of a General Element*; and the theory of the general plain product, to which the block
+*Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; and the theory of the general plain product, to which the block
 is compared, is *Square Roots of a General Element in the General Plain Algebra*.
 
 ## The Notion and Its Product
@@ -121,7 +121,7 @@ element does not, and no higher power is needed.
 
 **Remark (the parent square roots).** The parent general plain bilinear product is associative and
 unital, and its square-root equation $\tilde\xi^2=\tilde a$ is a genuine classification
-(*Square Roots of a General Element in the General Plain Algebra*; *Square Roots of a General Element*).
+(*Square Roots of a General Element in the General Plain Algebra*; *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*).
 The block is the antisymmetric half of that product, and the comparison is the comparison of a square
 map that is zero with a square map that is not. The parent's square is
 $\tilde\xi^2=2\xi_0\tilde\xi-\bigl[\xi_0^2+\lvert\boldsymbol\xi\rvert^2\bigr]e_0$, whose image and
@@ -129,7 +129,7 @@ kernel are proper; the block's square map is the zero map, whose image is the or
 is the whole space. Over $\mathbb{R}$ the parent's square roots of the origin are the origin alone,
 the plain product being a division product, while the block's are the whole space; and the parent's
 roots of a negative value form the two-sphere of the vector subspace, whose block counterpart is
-empty. In the centred comparison *Square Roots of a General Element* the same fact is one row of the
+empty. In the centred comparison *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* the same fact is one row of the
 six-structure table: the two antisymmetric structures have the whole space as their root set of $0$
 and no root of any other central value.
 
@@ -172,7 +172,7 @@ the parent's two-point and two-sphere families have no counterpart in the block.
 - *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-algebra-of-quaternions.md`), for the special case of a central right side
 - *Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/nilpotents-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for the square-zero elements, which are the square roots of the origin
 - *Zero Divisors of the Antisymmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for the coincidence of the square-zero set, the root set of $0$ and the zero-divisor set
-- *Square Roots of a General Element* (`articles_maths/quaternion-square-roots-of-a-general-element.md`), for the centred reading of the six structures, against which the zero square map of the block is placed
+- *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the centred reading of the six structures, against which the zero square map of the block is placed
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra-of-quaternions.md`), for the classification of the parent product
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the square of a product and its split into the two halves
 - Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for the square roots, the idempotents and the nilpotents of an algebra.

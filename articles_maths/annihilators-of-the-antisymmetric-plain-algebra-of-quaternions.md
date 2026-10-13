@@ -31,7 +31,7 @@ polynomial, the rank table, the dichotomy by the vector part, and the shape of t
 the two remarkable subspaces. The zero-divisor set itself and the comparison with the other five
 structures are the cited article's.
 
-The annihilator of this article is not the object of *Annihilators*, the structure-level article of
+The annihilator of this article is not the object of *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, the structure-level article of
 the comparison group: that article fixes the product and asks which elements kill the **whole**
 space, the radical, and finds the scalar line for the cross product alone; here the element is
 fixed and the partners vary.
@@ -248,7 +248,7 @@ sibling article reads the same plane, of complex dimension two.
 - *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), §*The Element Vocabulary*, for the zero divisor, the radical and the regular element of a general product.
 - *Introduction to the Antisymmetric Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-quaternions.md`), for the operation, its alternation and its table.
 - *Zero Divisors of the Antisymmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-plain-algebra-of-quaternions.md`), above this article in this category, the companion article, for the zero-divisor set, the criterion and the parallelism of the vector parts.
-- *Annihilators* (`articles_maths/quaternion-annihilators.md`), for the structure-level annihilating set, the elements that kill the whole space for a fixed product.
+- *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the structure-level annihilating set, the elements that kill the whole space for a fixed product.
 - *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra* (`articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra-of-quaternions.md`), below this article in this category, for the operator's kernel and image and the derivations.
 - *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the scalar line and the vector subspace.
 - *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), the sibling alternating block, whose zero-divisor set is the same punctured space.

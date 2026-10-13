@@ -180,6 +180,6 @@ the cone and the plane and modify the coincidence of the two sides by an involut
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
 - *Introduction to the General Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-biquaternions.md`), for the operation, its associativity and its table.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), above this article in this category, for the cone, the two families and the rank-one matrix reading.
-- *Zero Divisors* (`articles_maths/zero-divisors.md`), for the coincidence of the four zero-divisor sets on the cone and the one-sided inverse equations.
+- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the coincidence of the four zero-divisor sets on the cone and the one-sided inverse equations.
 - *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra.md`), the sibling whose anti-automorphism makes the two annihilators coincide.
 - *Annihilators of the General Plain Sesqualgebra* (`articles_maths/annihilators-of-the-general-plain-sesqualgebra.md`), the sibling whose conjugate-linear star identifies the two sides.

@@ -21,7 +21,7 @@ $$
 
 a group under multiplication with identity $e_0$, the inverse of a unit being a rational function of its coefficients (*Norm and Invertibility in the General Plain Algebra*, §*The Inverse Formula*).
 
-**Dimension.** $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the elements that are not zero divisors.
+**Dimension.** $\mathbb{B}^\times$ has complex dimension $4$ and real dimension $8$; the units are exactly the elements off the singular cone, so the elements that are not zero divisors are the units together with the origin, and the cone is exactly the complement of the group.
 
 **Proposition (the units are open and dense).** The group $\mathbb{B}^\times$ is the complement of the **singular cone** $\mathcal N$ of the non-units, so it is open, the cone being a zero set of a polynomial, and dense, the cone being a proper closed subset of the algebra.
 
@@ -81,7 +81,7 @@ The subgroups and the real forms of the algebra are *Biquaternion Lie Group and 
 
 **Two spheres, and only one of them is a group.** The Euclidean sphere $\|\tilde{Q}\|_E=1$ of the topological norm is a genuine sphere $S^7$ but is not a group, since that norm is not multiplicative and the sphere contains zero divisors (*The Euclidean Topology of the Biquaternion Algebra*, §*The Euclidean Unit Sphere*). The sphere that carries a group structure is $S^3$, the compact subgroup of the determinant-one group, and it is not the Euclidean one.
 
-**The units on the remarkable subspaces.** The units inside a remarkable subspace are the elements of that subspace that are not zero divisors. On the **centre** they are the nonzero scalars $\mathbb{C}^\times e_0$; on the **quaternion** and **anti-quaternion** subspaces they are all the nonzero elements; on the **vector** subspace they are the complement of the complex cone $\sum_kQ_k^2=0$, of real codimension two; and on the two **real forms** they are the complement of the light cone, of real codimension one in the subspace. The distribution of the units over the remarkable subspaces is *Norm and Invertibility in the General Plain Algebra*, §*Distribution of the Invertible Elements*, and is not repeated here.
+**The units on the remarkable subspaces.** The units inside a remarkable subspace are the elements of that subspace that lie off the singular cone, so the non-zero-divisors of the subspace are its units together with the origin. On the **centre** they are the nonzero scalars $\mathbb{C}^\times e_0$; on the **quaternion** and **anti-quaternion** subspaces they are all the nonzero elements; on the **vector** subspace they are the complement of the complex cone $\sum_kQ_k^2=0$, of real codimension two; and on the two **real forms** they are the complement of the light cone, of real codimension one in the subspace. The distribution of the units over the remarkable subspaces is *Norm and Invertibility in the General Plain Algebra*, §*Distribution of the Invertible Elements*, and is not repeated here.
 
 ## The Topology of the Group
 

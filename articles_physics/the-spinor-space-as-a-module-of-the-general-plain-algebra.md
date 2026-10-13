@@ -143,7 +143,7 @@ $$
 B(\tilde P,\tilde Q)=\operatorname{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q),
 $$
 
-symmetric, $\mathbb{C}$-bilinear and non-degenerate on $\mathbb{B}$; on the real space it is indefinite of signature $(4,4)$, positive definite on the informational sector $\mathbb{M}_+$ and negative definite on the material sector $\mathbb{M}_-$. It is the form of the GPA band (*The Ordinary Product and the Material Sector*), and it is not the metric: it carries the sector sign and no positivity off the sectors.
+symmetric, $\mathbb{C}$-bilinear and non-degenerate on $\mathbb{B}$; on the real space it is indefinite of signature $(4,4)$, positive definite on the informational sector $\mathbb{M}_+$ and negative definite on the material sector $\mathbb{M}_-$. It is the form of the GPA band (*The Ordinary Product on the Biquaternion Space*), and it is not the metric: it carries the sector sign and no positivity off the sectors.
 
 Restricted to the carrier it degenerates. On the basis $(\tilde\Pi_1,\tilde\Upsilon_2)$ its Gram matrix is
 
@@ -196,7 +196,7 @@ The claims are recomputed on the basis $(\tilde\Pi_1,\tilde\Upsilon_2,\tilde\Ups
 
 ## Boundaries
 
-- **Cited rather than re-derived.** The plain product and the twelve structures are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *The 12 Products of the Biquaternion Complex Space* and *The Specificities of the General Plain Algebra*; the ideals, the Peirce decomposition and the off-diagonal nilpotency are *Ideals and Peirce Decomposition of the General Plain Algebra*; the module theory is *Modules over the General Plain Algebra of Biquaternions*; the operator algebra is *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*; the spinor module, its action and its pairings are *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; the algebra's form is *The Ordinary Product and the Material Sector*.
+- **Cited rather than re-derived.** The plain product and the twelve structures are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *The 12 Products of the Biquaternion Complex Space* and *The Specificities of the General Plain Algebra*; the ideals, the Peirce decomposition and the off-diagonal nilpotency are *Ideals and Peirce Decomposition of the General Plain Algebra*; the module theory is *Modules over the General Plain Algebra of Biquaternions*; the operator algebra is *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*; the spinor module, its action and its pairings are *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; the algebra's form is *The Ordinary Product on the Biquaternion Space*.
 - **Not claimed.** The article adds no measurement postulate, identifies no probability with a frequency, and does not identify the spinor index with the qubit's two levels. It states the GPA structure of one carrier, not a new structure of the algebra, and it does not claim that the module structure is the whole of the spinor space.
 - **The module and the metric are two structures.** The article deliberately does not develop the positive definite form, the Born rule or the conjugate module; those are the sibling articles *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra*, *The Complementary Space of the Spinor Space in the General Plain Algebra* and *The Complementary Space of the Spinor Space in the General Plain Sesqualgebra*, together with the transversal companion.
 
@@ -240,7 +240,7 @@ The module carries the invariant symplectic form $\varepsilon(\psi,\phi)=\psi^{T
 
 - The focused companions of the pair: *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra*, *The Complementary Space of the Spinor Space in the General Plain Algebra*, *The Complementary Space of the Spinor Space in the General Plain Sesqualgebra*.
 - The transversal companion: *The Spinor Space as a Module and as a Hilbert Space*.
-- The other articles of the GPA band and their siblings: *The Ordinary Product and the Material Sector*, *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*, *The Specificities of the General Plain Algebra*.
+- The other articles of the GPA band and their siblings: *The Ordinary Product on the Biquaternion Space*, *The Ordinary Product on the Material Sector*, *The Operators of the Ordinary Product: One-Sided, Two-Sided and the Sandwich*, *The Specificities of the General Plain Algebra*.
 - The mathematics articles: *Ideals and Peirce Decomposition of the General Plain Algebra*, *Modules over the General Plain Algebra of Biquaternions*, *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the modules of $M_2(\mathbb{C})$, Schur's lemma and the simple module.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for idempotents, the Peirce decomposition and the structure of matrix algebras.

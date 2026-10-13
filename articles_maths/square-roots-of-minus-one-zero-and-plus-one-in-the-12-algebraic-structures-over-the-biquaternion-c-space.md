@@ -1,4 +1,4 @@
-# __Square Roots of Minus One, Zero and Plus One__
+# __Square Roots of Minus One, Zero and Plus One in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space__
 
 ## Introduction
 
@@ -21,7 +21,7 @@ and the **root set** of the value is the set of its roots. Three values carry a 
 
 and every table of the article follows this order, family by family and, inside a family, general then symmetric then antisymmetric.
 
-**Scope and owners.** The general value $\lambda$, the four existence classes of the twelve structures and the criterion that a root of a non-zero value is a unit are *Square Roots of a General Element*, the companion of this article, which states them once; the article cites them and applies them at the three named values. The root sets of each of the twelve structures stay owned by their articles, cited one by one in §*The Twelve Structures and the Three Values*, and the classification of the three values for the plain product, which is the one quoted here, is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*. The general vocabulary, the root, the central value, the idempotent and the nilpotent stated once for a general product, is *Definitions for the Study of the 12 Algebraic Structures*. The idempotent sets are *Idempotents* and the parameter set of the roots of $-1$ is *Idempotents of the General Plain Algebra*; the square-zero sets are *Nilpotents*; the cone and the zero-divisor sets are *Zero Divisors*; and the unitary group of the third product is *The Unitary Group of the Biquaternion Algebra*.
+**Scope and owners.** The general value $\lambda$, the four existence classes of the twelve structures and the criterion that a root of a non-zero value is a unit are *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the companion of this article, which states them once; the article cites them and applies them at the three named values. The root sets of each of the twelve structures stay owned by their articles, cited one by one in §*The Twelve Structures and the Three Values*, and the classification of the three values for the plain product, which is the one quoted here, is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*. The general vocabulary, the root, the central value, the idempotent and the nilpotent stated once for a general product, is *Definitions for the Study of the 12 Algebraic Structures*. The idempotent sets are *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and the parameter set of the roots of $-1$ is *Idempotents of the General Plain Algebra*; the square-zero sets are *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the cone and the zero-divisor sets are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; and the unitary group of the third product is *The Unitary Group of the Biquaternion Algebra*.
 
 **Conventions.** $\mathbb{B}$ has basis $e_0,e_1,e_2,e_3$, central scalar imaginary $i$ with $i^2=-1$, and a general element is $\tilde\Xi=\Xi_0e_0+\mathbf\Xi$ with $\Xi_0\in\mathbb{C}$ and $\mathbf\Xi=\sum_k\Xi_ke_k$. The natural conjugation is $\tilde\Xi^{\natural}=\Xi_0-\mathbf\Xi$, the star is $\tilde\Xi^{*}=\overline{\tilde\Xi^{\natural}}$, the **central square** is $C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$, the **Hermitian square** is $H(\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$, and the **Krein value** is $\Delta(\tilde\Xi)=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$. A **central value** is an element $\lambda e_0$ with $\lambda\in\mathbb{C}$. The root is defined in *Definitions for the Study of the 12 Algebraic Structures* §*Powers, the Square and the Roots* as a **non-zero** element with $\tilde\Xi\star\tilde\Xi=\lambda e_0$; a root set is read here as a solution set, so the origin is counted with the roots of $0$, and the places where an owner counts the non-zero roots alone are read as the origin alone.
 
@@ -43,9 +43,9 @@ and the three **named values** are $\lambda=-1$, $\lambda=0$ and $\lambda=+1$.
 
 The central square decides the nature of every root, and it decides it the same way for all four general products.
 
-**Theorem (a root of a non-zero central value is a unit; quoted).** Let $\tilde\Xi$ be a root of the central value $\lambda$ in one of the four general products. Then $C(\tilde\Xi\star\tilde\Xi)=C(\tilde\Xi)^{2}$ for the two bilinear products and $C(\tilde\Xi\star\tilde\Xi)=\lvert C(\tilde\Xi)\rvert^{2}$ for the two sesquilinear ones, so that $C(\tilde\Xi)\neq0$ exactly when $\lambda\neq0$; consequently a root of a non-zero central value is a unit of the algebra and a non-zero root of $0$ is a zero divisor (*Square Roots of a General Element* §*The Roots Are Units, or Zero Divisors*).
+**Theorem (a root of a non-zero central value is a unit; quoted).** Let $\tilde\Xi$ be a root of the central value $\lambda$ in one of the four general products. Then $C(\tilde\Xi\star\tilde\Xi)=C(\tilde\Xi)^{2}$ for the two bilinear products and $C(\tilde\Xi\star\tilde\Xi)=\lvert C(\tilde\Xi)\rvert^{2}$ for the two sesquilinear ones, so that $C(\tilde\Xi)\neq0$ exactly when $\lambda\neq0$; consequently a root of a non-zero central value is a unit of the algebra and a non-zero root of $0$ is a zero divisor (*Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Roots Are Units, or Zero Divisors*).
 
-The invertibility criterion of the algebra is the non-vanishing of the central square (*Norm and Invertibility in the General Plain Algebra*), and the zero-divisor set of the four general products is the punctured cone $\mathcal{C}\setminus\{0\}$ with $\mathcal{C}=\{C=0\}$ (*Zero Divisors*). At the three values the theorem therefore reads, for the four general products,
+The invertibility criterion of the algebra is the non-vanishing of the central square (*Norm and Invertibility in the General Plain Algebra*), and the zero-divisor set of the four general products is the punctured cone $\mathcal{C}\setminus\{0\}$ with $\mathcal{C}=\{C=0\}$ (*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). At the three values the theorem therefore reads, for the four general products,
 
 $$
 \mathcal R_{-1}\cup\mathcal R_{+1}\subseteq\mathbb{B}^{\times} , \qquad \mathcal R_{0}\setminus\{0\}\subseteq\mathcal{C} , \qquad \mathbb{B}=\mathbb{B}^{\times}\sqcup\mathcal{C} ,
@@ -57,7 +57,7 @@ the last relation being the partition of the algebra by the central square and t
 
 ## The Twelve Structures and the Three Values
 
-The square of a structure is its operation read at the two equal arguments, so each of the twelve carries a root problem of its own, and the problem is decided by the sweep of that square. The four existence classes are the theorem of *Square Roots of a General Element*; at the three named values they read as follows.
+The square of a structure is its operation read at the two equal arguments, so each of the twelve carries a root problem of its own, and the problem is decided by the sweep of that square. The four existence classes are the theorem of *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; at the three named values they read as follows.
 
 **Theorem (the four existence classes of the twelve structures; quoted).** Among the twelve structures of the biquaternion complex space, a root of $-1$ and a root of $+1$ exist for the four bilateral structures $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$, $\mathrm{SQA}$ and for the two indefinite sesquilinear structures $\mathrm{GQS}$, $\mathrm{SQS}$, none exists for the two definite sesquilinear structures $\mathrm{GPS}$, $\mathrm{SPS}$ at $-1$ and none for the four antisymmetric structures $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$ at either signed value; and a root of $0$ exists for every one of the twelve.
 
@@ -77,7 +77,7 @@ The product is $\tilde\Xi\tilde Q$, and its square is the plain square $\tilde\X
 
 **The roots of $+1$** are the images $\tilde\Xi i$ of the roots of $-1$; they are the central pair $\pm e_0$ and the pure elements with $(\mathbf\Xi,\mathbf\Xi)=-1$.
 
-The classification is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the roots of $0$ are *Nilpotents*.
+The classification is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the roots of $0$ are *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
@@ -231,7 +231,7 @@ Two structures reduce the root set of $0$ to the origin alone, the two definite 
 | $\mathrm{GPS}$, $\tilde\Xi\tilde Q^{*}$ | none | the origin alone | the unitary group $U(2)$ |
 | $\mathrm{GQS}$, $\tilde\Xi^{\natural}\tilde Q^{*}$ | the family at $\lvert t\rvert<1$ | the family at $\lvert t\rvert=1$ | the family at $\lvert t\rvert>1$ and the central circle |
 
-The four rows are four different answers, and that is the theorem. **The word is *differ*, not *coincide*.** The zero-divisor sets of §*The Four General Products Coincide* of *Zero Divisors* are one set read four times, because the four general products read the same norm; the root sets are not, because the square of a product is not the norm of a product. The four squares are the plain square, the central square, the Hermitian square and the Krein square, and they differ in the sign of the vector part and in the presence of the conjugation; the three named values are exactly the values at which the four differences are visible, the sign showing at $-1$ and $+1$ and the conjugation showing at $0$.
+The four rows are four different answers, and that is the theorem. **The word is *differ*, not *coincide*.** The zero-divisor sets of §*The Four General Products Coincide* of *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* are one set read four times, because the four general products read the same norm; the root sets are not, because the square of a product is not the norm of a product. The four squares are the plain square, the central square, the Hermitian square and the Krein square, and they differ in the sign of the vector part and in the presence of the conjugation; the three named values are exactly the values at which the four differences are visible, the sign showing at $-1$ and $+1$ and the conjugation showing at $0$.
 
 ### The Three Values in Coordinates and the Roots of Zero
 
@@ -271,7 +271,7 @@ The non-zero roots of $0$ lie in the pure family alone, and the roots of the two
 
 ## The Inverse Equations
 
-At the three values the inverse equations are read on the roots. Of the two general products only the plain one has a two-sided unit, so the classical equivalence *a root of a non-zero value if and only if a unit* is available for it alone, and there it is exact; the substitute for the other three is the one-sided criterion, whose four tables of solutions are *Zero Divisors* §*The One-Sided Inverse Equations*, quoted and not restated. The three named values then read as follows.
+At the three values the inverse equations are read on the roots. Of the two general products only the plain one has a two-sided unit, so the classical equivalence *a root of a non-zero value if and only if a unit* is available for it alone, and there it is exact; the substitute for the other three is the one-sided criterion, whose four tables of solutions are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The One-Sided Inverse Equations*, quoted and not restated. The three named values then read as follows.
 
 **Theorem (the inverse equations at the three values).** Let $\star$ be one of the four general products. A root of $-1$ or of $+1$ has a solution of each of the two equations
 
@@ -281,7 +281,7 @@ $$
 
 the solution being the inverse $\tilde\Xi^{-1}=\tilde\Xi^{\natural}/C(\tilde\Xi)$ for the plain product and one of the conjugated inverses of the table for the other three. A root of $0$ has no solution on either side, the non-zero one because it lies on the cone and the origin because the left member vanishes there.
 
-*Proof.* A root of a non-zero central value has $C(\tilde\Xi)\neq0$ by §*The Roots of $\pm1$ Are Units and the Non-Zero Roots of $0$ Are Zero Divisors*, and the criterion of invertibility is the non-vanishing of the central square; the solutions are those of the table. A non-zero root of $0$ has $C=0$ and lies in the cone, and the elements of the cone are exactly the elements that admit an annihilating factor on one side (*Zero Divisors*). The origin has no solution either, the equation $\tilde\Xi\star\tilde X=e_0$ reading $0=e_0$ there.
+*Proof.* A root of a non-zero central value has $C(\tilde\Xi)\neq0$ by §*The Roots of $\pm1$ Are Units and the Non-Zero Roots of $0$ Are Zero Divisors*, and the criterion of invertibility is the non-vanishing of the central square; the solutions are those of the table. A non-zero root of $0$ has $C=0$ and lies in the cone, and the elements of the cone are exactly the elements that admit an annihilating factor on one side (*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The origin has no solution either, the equation $\tilde\Xi\star\tilde X=e_0$ reading $0=e_0$ there.
 
 So the two signed values are the values at which the roots are units, and the value $0$ is the value at which the roots are the zero divisors: for the four general products the three named values are the two ends of the invertibility criterion of the algebra, read on the square, with the two exceptions of §*The Roots of $\pm1$ Are Units and the Non-Zero Roots of $0$ Are Zero Divisors* outside them.
 
@@ -309,11 +309,11 @@ Among the twelve structures the four bilateral ones $\mathrm{GPA}$, $\mathrm{SPA
 
 ## Further Reading
 
-- *Square Roots of a General Element* (`articles_maths/square-roots-of-a-general-element.md`), the companion of this article, for the root problem at a general central value, the four existence classes of the twelve structures and the theorem that a root of a non-zero value is a unit.
+- *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), the companion of this article, for the root problem at a general central value, the four existence classes of the twelve structures and the theorem that a root of a non-zero value is a unit.
 - *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md`), for the classification of the three values in the plain product, quoted here.
-- *Idempotents* (`articles_maths/idempotents.md`) and *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents, which are the roots of $-1$ read through the halving map.
-- *Nilpotents* (`articles_maths/nilpotents.md`), for the square-zero sets, which are the roots of $0$.
-- *Zero Divisors* (`articles_maths/zero-divisors.md`), for the cone, which is the root set of $0$ of the natural product and whose non-zero part is the zero-divisor set of the four general products, and for the table of the one-sided inverse equations.
+- *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/idempotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`) and *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents, which are the roots of $-1$ read through the halving map.
+- *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/nilpotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero sets, which are the roots of $0$.
+- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the cone, which is the root set of $0$ of the natural product and whose non-zero part is the zero-divisor set of the four general products, and for the table of the one-sided inverse equations.
 - *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve names, the three letters of each and the class of each.
 - *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the four general products and their eight symmetric and antisymmetric parts.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the tabulation of the four root problems and the four squares.

@@ -61,7 +61,7 @@ Each example is recomputed from the closed form $\tilde\xi \star \tilde\xi = N(\
 
 **Corollary (the specialisation).** Substituting $\lambda = -1, 0, +1$ recovers the three root sets of *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra*: the empty set, the single element $0$, and the norm-one level set. The general problem therefore contains the distinguished ones, and the comparison made there against the plain product applies verbatim to the positive central values.
 
-*Proof.* The classification above at the three values gives the three root sets, which are those of the quoted article; the general theory of the root of a central value across the products is *Square Roots of a General Element*, below this article in this category.
+*Proof.* The classification above at the three values gives the three root sets, which are those of the quoted article; the general theory of the root of a central value across the products is *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
 
 **Remark.** The reduction has a second reading, as a statement about the multiplication operators of the block. The square map is the diagonal of the symmetrised product, and its collapse onto the scalar line is the statement that the symmetrisation of the quaternionic product is scalar-valued; the obstruction to solving the general square-root problem is therefore the same obstruction that makes the symmetrised product unfit to be the multiplication of an algebra, and it is read in *The Symmetrised Quaternionic Product and the Hermitian Subspace*, below this article in this category.
 

@@ -14,7 +14,7 @@ A divisor is relative to a product. The definition is stated once for a general 
 *Definitions for the Study of the 12 Algebraic Structures* and read on the products of the space;
 the unqualified "zero divisor" means "zero divisor of the general plain bilinear product", the
 multiplication of the general plain algebra, and every other product is named. The four general
-products and their common zero-divisor set are *Zero Divisors*.
+products and their common zero-divisor set are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 Every claim is proved or stated as a definition, no physics is invoked and no examples are given.
 The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, its four conjugations and
@@ -69,7 +69,7 @@ $\tilde R\tilde Q = 0$, the classical pair; on $\tilde P^{\natural}\tilde Q$ the
 $\tilde Q^{\natural}\tilde R = 0$ and $\tilde R^{\natural}\tilde Q = 0$; and the outer product has
 every nonzero element as a zero divisor, since $\tilde Q\wedge\tilde Q = 0$. The four general
 products, four different equations, happen to select the one cone $\mathcal{C}\setminus\{0\}$
-described here, a coincidence of this algebra proved in *Zero Divisors*.
+described here, a coincidence of this algebra proved in *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 Throughout the rest of this article, unqualified, the product is the general plain bilinear
 product.
 
@@ -77,7 +77,7 @@ product.
 
 The criterion is a statement of the plain product, and it is labelled as such. The criterion for
 the other three general products, and the reason the three have no criterion of the ring-theoretic
-form, are in *Zero Divisors*.
+form, are in *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 **Theorem (the criterion for the general plain bilinear product).** For the plain product, a
 nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if the product
@@ -405,7 +405,7 @@ the pure family is *Nilpotents of the General Plain Algebra*.
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the product-relative definition of the zero divisor and the dictionary of the classes against the four general products.
 - *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`) and *Nilpotents of the General Plain Algebra* (`articles_maths/nilpotents-of-the-general-plain-algebra.md`), for the two families of the zero-divisor set, the non-pure and the pure.
-- *Zero Divisors* (`articles_maths/zero-divisors.md`) and *Zero Divisors* (`articles_maths/zero-divisors.md`), for the same set read against the four general products and the annihilators.
+- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`) and *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the same set read against the four general products and the annihilators.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.
 - William Rowan Hamilton, "On the Geometrical Interpretation of some Results obtained by calculation with Biquaternions," *Proceedings of the Royal Irish Academy* **5** (1853) 388–390, for the bivectors, the null-square bivectors $i + hj$ and $j + hk$, and the simplification $(1 + j + hk)^a = 1 + a(j + hk)$.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the classification of the zero divisors.
