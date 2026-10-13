@@ -28,6 +28,8 @@ classification is a dichotomy of the **annihilator**, read from the vector part,
 of elements bracket to zero is owned by the remarkable-subspaces article of the block, and the
 alternation itself by the introduction; both are cited.
 
+**The results.** The zero divisor of the antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ is total: because the block is alternating, every nonzero element is a two-sided zero divisor with itself as annihilating partner, and the zero-divisor set is the punctured space $\mathbb{B}\setminus\{0\}$. It strictly contains the zero-divisor set $\{C(\tilde Q)=0\}\setminus\{0\}$ common to the four general products, the witness being $e_0$; among the twelve structures the punctured space is attained by exactly six. The pure and non-pure classification of the parent does not exist for the block, the criterion being met by both families alike, and what replaces it is the annihilator's dichotomy by the vector part.
+
 ## The Notion and Its Product
 
 **Definition (zero divisor of a product).** Let $\star$ be a product on $\mathbb{B}$ and let
@@ -49,6 +51,8 @@ General Plain Algebra*; the two sets are compared at §*The Set and the Comparis
 
 ## The Criterion
 
+**Every nonzero element of $\mathbb{B}$ is a two-sided zero divisor of the block, so the zero-divisor set is the punctured space $\mathbb{B}\setminus\{0\}$.**
+
 **Theorem (the criterion for the block).** Every nonzero element of $\mathbb{B}$ is a two-sided
 zero divisor of the antisymmetric plain multiplication; equivalently, the zero-divisor set of the
 block is the punctured space
@@ -69,6 +73,8 @@ met by **every** nonzero element. The element $\tilde Q$ is its own annihilating
 line $\mathbb{C}\tilde Q$ always lies in its annihilator on both sides.
 
 ## The Classification Collapses
+
+**The pure and non-pure classification of the parent does not exist for the block: both the elements with a nonzero scalar part and the pure elements are zero divisors.**
 
 The general plain product comes with a classification of its zero divisors into two families, the
 pure and the non-pure, split by the vanishing of the scalar part $Q_0$ (*Zero Divisors of the
@@ -94,6 +100,8 @@ scalar part (*Annihilators of the Antisymmetric Plain Algebra*, §*The Dichotomy
 Part*).
 
 ## The Set and the Comparison
+
+**The zero-divisor set of the block, the punctured space, strictly contains the zero-divisor set $\{\tilde Q\neq0:C(\tilde Q)=0\}$ of each of the four general products, and among the twelve structures the punctured space is attained by exactly six.**
 
 The four general products give four definitions of the zero divisor, and for the biquaternion space
 the four definitions select one and the same set,
@@ -138,6 +146,8 @@ of the block: the block is not a product whose square is central, and the zero-d
 the algebra is not its criterion.
 
 ## The Relation to the Remarkable Subspaces
+
+**On each remarkable subspace the restriction of the block is again alternating, so every nonzero element of the subspace is a zero divisor with itself as partner.**
 
 **Proposition (the restriction).** On each of the remarkable subspaces the block restricts to an
 operation whose zero-divisor class is the same relative class: the nonzero elements of the centre

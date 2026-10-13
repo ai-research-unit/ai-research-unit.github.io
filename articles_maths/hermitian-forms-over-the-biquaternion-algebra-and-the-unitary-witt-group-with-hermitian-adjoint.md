@@ -28,7 +28,7 @@ and the map $H\mapsto h_{H}$ is an isomorphism of the Hermitian elements onto th
 
 **Example (the unit form).** $H=e_{0}$ gives $h_{e_{0}}(\tilde R,\tilde P)=\tilde{R}^{*}\tilde P$, of scalar part $\mathrm{Sc}(\tilde{R}^{*}\tilde P)=\sum_{\mu}R_{\mu}^{*}P_{\mu}$: the **unit form**, positive definite, the form of the Hermitian structure of the algebra and the trace form of the dagger. Its matrix in the basis $e_{\mu}$ is the identity.
 
-**Example (the norm form, and why it is not here).** The quaternion norm $\langle\tilde R,\tilde R\rangle_{\natural}=\sum_{\mu}R_{\mu}^{2}$ is a quadratic form of the algebra but it is **not** Hermitian for the dagger: $N$ is complex-valued, indefinite and isotropic on the null cone. It is a form of the general plain bilinear type, not a form of the dagger, and the two must not be placed in the same classification (*Norm and Invertibility in the General Plain Algebra*).
+**Example (the norm form, and why it is not here).** The quaternion norm $\langle\tilde R,\tilde R\rangle_{\natural}=\sum_{\mu}R_{\mu}^{2}$ is a quadratic form of the algebra but it is **not** Hermitian for the dagger: $N$ is complex-valued, indefinite and isotropic on the null cone. It is a form of the general plain bilinear type, not a form of the dagger, and the two must not be placed in the same classification (*Norm and Invertibility in the General Quaternionic Algebra*).
 
 ## Congruence and the Automorphism Group
 
@@ -154,6 +154,6 @@ A Hermitian form on the rank-one module over the biquaternion algebra is a Hermi
 - *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the congruence as an operator, its invariants and its degenerate cases.
 - *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.md`), for the positive cone in which the signature lives.
 - *The Unitary Slice and the Compact Real Form with Hermitian Adjoint* (`articles_maths/the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.md`), for the automorphism group of the unit form.
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm, its isotropy and the group of units.
+- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm, its isotropy and the group of units.
 - *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the automorphism group of the norm and the contrast with the slice.
 - *Mixed Inner Conjugation and Hermitian Adjoint* (`articles_maths/mixed-inner-conjugation-and-hermitian-adjoint.md`), for the four two-sided operators and the signed congruence.

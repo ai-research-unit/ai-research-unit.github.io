@@ -161,7 +161,7 @@ which is the off-sector interpretation of *The General Plain Bilinear Product on
 not a map, and it produces no element of either sector. The **imaginary part of the norm** is the same
 phenomenon from the other side: the cross terms of $N$ couple the material and informational parameters
 of one element, and that is the interpretation the introduction records for the imaginary part of $N$, owned by
-*Biquaternion Norm and Invertibility*.
+*Norm and Invertibility in the General Quaternionic Algebra*.
 
 ## The Couplings of Time and of Thermodynamics
 
@@ -210,7 +210,7 @@ Biquaternionic Form*.
 | central multiplication $\tilde{Q}\mapsto i\tilde{Q}$ | map | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | *Conventions in the Biquaternion Universe* | invertible, order four; no arrow by itself |
 | rotor action $\tilde{T}\mapsto\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
 | off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The General Plain Bilinear Product on the Material Sector* | a pairing, produces no element |
-| imaginary part of $N$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Biquaternion Norm and Invertibility* | an interpretation of one element's own cross terms |
+| imaginary part of $N$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Norm and Invertibility in the General Quaternionic Algebra* | an interpretation of one element's own cross terms |
 | Matsubara continuation | continuation | imaginary time $=$ informational time | *The KMS Condition and the Biquaternion Framework*, *The Matsubara Thermal Formalism in Biquaternionic Form* | a continuation, not a new coupling |
 | Landauer exchange | process | material $\to$ informational | *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* | thermodynamic face; arrow from the acting monoid |
 | superselection | **non-coupling** | observables preserve each sector | *The Material-Informational Split as a Superselection Structure in Biquaternionic Form* | about observables, not about maps |

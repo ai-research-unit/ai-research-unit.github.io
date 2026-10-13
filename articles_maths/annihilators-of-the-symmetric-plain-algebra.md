@@ -28,7 +28,11 @@ part annihilates a line. The article owns that reading, the operator with its ra
 of the annihilator on the remarkable subspaces; the zero-divisor set and its criterion are the
 cited article's.
 
+**The results.** The annihilator of an element is the set of partners that it kills; the block is commutative, so the left and the right annihilator coincide and are the kernel of the one multiplication operator $L_{\tilde P}$. For the block the operator has trace $4P_0$ and determinant $P_0^{2}C(\tilde P)$: the annihilator is trivial off the zero-divisor set, a complex plane $\{\tilde X:X_0=0,\ (\mathbf P,\mathbf X)=0\}$ for a non-zero pure element, and the complex line $\mathbb{C}\tilde Q^{\natural}$ for an element with $Q_0\neq0$ and $C(\tilde Q)=0$.
+
 ## The Annihilator of a Product
+
+**The annihilator of an element is the set of partners that it kills; the left annihilator and the right annihilator are the kernels of the left and the right multiplication, and they are non-zero exactly when the element is a zero divisor of the corresponding side.**
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
@@ -52,6 +56,8 @@ and the block is its own twin, the **general plain bilinear product**, whose ann
 
 ## The Two Annihilators Coincide
 
+**The block is commutative, so the two annihilators of an element coincide: $B_\bullet(\tilde P)=A_\bullet(\tilde P)=\ker L_{\tilde P}$ for every $\tilde P$.**
+
 **Proposition (the two annihilators coincide).** For every $\tilde P$,
 $$
 B_\bullet(\tilde P)=A_\bullet(\tilde P)=\ker L_{\tilde P}.
@@ -63,6 +69,8 @@ therefore one set, and it is the kernel of the one operator of the block,
 $L_{\tilde P}=R_{\tilde P}$.
 
 ## The Multiplication Operator and the Rank
+
+**In the basis $e_0,e_1,e_2,e_3$ the operator $L_{\tilde P}$ has trace $4P_0$ and determinant $\det L_{\tilde P}=P_0^{2}C(\tilde P)$: it is invertible off the zero-divisor set, of rank two with a two-dimensional kernel on the pure family, and of rank three with a one-dimensional kernel on the scalar family.**
 
 **Proposition (the operator and its characteristic polynomial).** In the basis $e_0,e_1,e_2,e_3$
 the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has matrix
@@ -83,7 +91,7 @@ $$
 entries, $4P_0$; the determinant is the product of the three eigenvalues $P_0$ of the vector part
 with the Schur complement $P_0-(\mathbf P,\mathbf P)/P_0$, namely
 $P_0^{3}\bigl(P_0-(\mathbf P,\mathbf P)/P_0\bigr)=P_0^{2}\bigl(P_0^{2}-(\mathbf P,\mathbf P)\bigr)=P_0^{2}C(\tilde P)$
-when $P_0\neq0$, and by continuity in general.
+when $P_0\neq0$; and when $P_0=0$ both sides vanish, the image of $L_{\tilde P}=L_{\mathbf P}$ being contained in $\mathrm{span}\{e_0\}+\mathbb{C}\mathbf P$, of dimension at most two. Hence $\det L_{\tilde P}=P_0^{2}C(\tilde P)$ for every $\tilde P$.
 
 **Corollary (the rank and the annihilator).** The rank of $L_{\tilde P}$ and the annihilator of
 $\tilde P$ are
@@ -104,6 +112,8 @@ At $C(\tilde P)=0$ the fourth column lies in the span of the three, and the rank
 case is the origin.
 
 ## The Annihilator of an Element
+
+**A non-zero pure element has the pure plane annihilator $\{\tilde X:X_0=0,\ (\mathbf Q,\mathbf X)=0\}$, of complex dimension two; a non-zero element with $Q_0\neq0$ and $C(\tilde Q)=0$ has the line annihilator $\mathbb{C}\tilde Q^{\natural}$; and an element that is neither has annihilator $\{0\}$.**
 
 The criterion of the block is the pair of clauses $P_0=0$ or $C(\tilde P)=0$ (*Zero Divisors of the
 Symmetric Plain Algebra*, §*The Two Families*). Each clause has its own annihilator.
@@ -138,6 +148,8 @@ pure nor of the vanishing central square the annihilator is $\{0\}$: the element
 
 ## The Dichotomy
 
+**The annihilator separates the two families the criterion joins: a pure element annihilates a plane and an element of the cone with non-zero scalar part annihilates a line, the plane being the kernel of a rank-two operator and the line the kernel of a rank-three operator.**
+
 The zero-divisor set of the block is the union of the two families, and the criterion is a single
 union that does not separate them. The annihilator does: a pure element annihilates a plane and an
 element of the cone annihilates a line, so the dimension of the annihilator reads the family where
@@ -145,9 +157,11 @@ the criterion does not. The two families are also the two ends of the operator: 
 kernel of a rank-two operator and the line is the kernel of a rank-three operator, and the jump
 from $2$ to $3$ in the rank is the jump from the rank-two family to the rank-three family. The line
 is the sharpest case: it is $\mathbb{C}\tilde Q^{\natural}$, and up to the scalar it is the set of
-the idempotents of the block (*Idempotents of the Symmetric Plain Algebra*).
+the idempotents of the block (*Square Roots of One and the Idempotents of the Symmetric Plain Algebra*).
 
 ## The Annihilator on the Remarkable Subspaces
+
+**A non-zero central element annihilates nothing; a non-zero pure element, whose annihilator in the ambient space is a plane, has it fall to the line $\mathbb{C}\mathbf P$ inside the vector subspace; and on the Hermitian subspace the annihilator of a non-zero pure Hermitian element is again a pure plane containing the real line of the element.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has $C(\lambda e_0)=\lambda^{2}$
 and $\mathbf P=0$, so it is regular and its annihilator is $\{0\}$: the centre annihilates nothing.
@@ -194,5 +208,5 @@ the line through the element inside the vector subspace, and the centre annihila
 - *Introduction to the Symmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-algebra-of-biquaternions.md`), for the Jordan product, its commutativity and its table.
 - *Zero Divisors of the Symmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-symmetric-plain-algebra.md`), above this article in this category, for the criterion and the two families of the zero-divisor set.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), the parent product, whose annihilator is a plane of the cone and vanishes off the cone.
-- *Idempotents of the Symmetric Plain Algebra* (`articles_maths/idempotents-of-the-symmetric-plain-algebra.md`), for the identification of the line $\mathbb{C}\tilde Q^{\natural}$ with the idempotents of the block.
-- *Nilpotents of the Symmetric Plain Algebra* (`articles_maths/nilpotents-of-the-symmetric-plain-algebra.md`), for the square-zero elements, the pure isotropic cone of the block.
+- *Square Roots of One and the Idempotents of the Symmetric Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-plain-algebra.md`), for the identification of the line $\mathbb{C}\tilde Q^{\natural}$ with the idempotents of the block.
+- *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-plain-algebra.md`), for the square-zero elements, the pure isotropic cone of the block.

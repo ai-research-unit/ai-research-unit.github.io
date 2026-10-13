@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The square roots of the three distinguished central values are solved in *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra*. This article solves the general problem of the block: for a given element $\tilde q$ of $\mathbb{H}$, find the elements $\tilde\xi$ with
+The square roots of the three distinguished central values are solved in *Square Roots of One and the Idempotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*. This article solves the general problem of the block: for a given element $\tilde q$ of $\mathbb{H}$, find the elements $\tilde\xi$ with
 
 $$
 \tilde\xi \star \tilde\xi = \tilde q ,
@@ -59,7 +59,7 @@ Each example is recomputed from the closed form $\tilde\xi \star \tilde\xi = N(\
 
 ## The Central Values
 
-**Corollary (the specialisation).** Substituting $\lambda = -1, 0, +1$ recovers the three root sets of *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra*: the empty set, the single element $0$, and the norm-one level set. The general problem therefore contains the distinguished ones, and the comparison made there against the plain product applies verbatim to the positive central values.
+**Corollary (the specialisation).** Substituting $\lambda = -1, 0, +1$ recovers the three root sets of *Square Roots of One and the Idempotents of the General Quaternionic Algebra* (the signed values) and *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (the value $0$): the empty set, the single element $0$, and the norm-one level set. The general problem therefore contains the distinguished ones, and the comparison made there against the plain product applies verbatim to the positive central values.
 
 *Proof.* The classification above at the three values gives the three root sets, which are those of the quoted article; the general theory of the root of a central value across the products is *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
 

@@ -42,6 +42,8 @@ $\overline{\mathbf{Q}}$ is the vector whose coordinates are $\overline{Q_k}$. Th
 of an element $\tilde A$ are written $A_\diamond(\tilde A)=\{\tilde R:\tilde A\diamond\tilde R=0\}$
 and $B_\diamond(\tilde A)=\{\tilde R:\tilde R\diamond\tilde A=0\}$, the left and the right one.
 
+**The results.** Every nonzero element of the block is a two-sided zero divisor, so the zero-divisor set of the block is the whole space with the origin removed, $\mathbb{B}\setminus\{0\}$; no zero-divisor set of the twelve can be larger, and the four general products, whose sets coincide with the vanishing of the central square $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ and form a cone of real dimension six, are proper subsets of it. The set splits into the central family $\lambda e_0$, whose elements annihilate the whole space on both sides, and the non-central family, whose elements are paired with their conjugates by a mutual annihilation. For a non-central element the two annihilators coincide in the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$, of real dimension four, and the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on the plane of the values orthogonal to $\mathbf{A}$; for a central element both annihilators are the whole space. The cone of the square-zero elements is a strict part of the set, and no idempotent of the block is a zero divisor.
+
 ## The Definition, Relative to a Product
 
 **Definition (zero divisor and annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
@@ -67,6 +69,8 @@ vocabulary of regularity is unavailable to it and the only reading of the elemen
 pair of annihilators.
 
 ## The Criterion
+
+**Every nonzero element of the block is a two-sided zero divisor, since $\tilde A\diamond\overline{\tilde A}=0$ and $\overline{\tilde A}\diamond\tilde A=0$; the zero-divisor set is $\mathbb{B}\setminus\{0\}$, split into the central family and the non-central family.**
 
 **Theorem (every nonzero element is a two-sided zero divisor).** Let $\tilde A\neq0$ be a
 biquaternion. Then $\tilde A\diamond\overline{\tilde A}=0$ and
@@ -116,6 +120,8 @@ annihilator of the element is a nonzero subspace. The loss is quantified in the 
 
 ## The Annihilators
 
+**The two annihilators of a non-central element coincide, and the common annihilator is the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ spanned by the centre and the conjugate of the vector part, of real dimension four; for a central element both annihilators are the whole space.**
+
 The annihilator of an element is the kernel of the left or the right multiplication, the two
 coinciding because the block is conjugate-alternating; for a non-central element it is the plane
 spanned by the centre and the conjugate of the vector part, and for a central element it is the
@@ -123,6 +129,8 @@ whole space. The annihilators, the operator and the rank are the companion artic
 the Antisymmetric Quaternionic Sesqualgebra*, below this article in this category.
 
 ## The Comparison with the Other Products
+
+**The zero-divisor set of the block, the whole space with the origin removed, contains strictly the zero-divisor set of the four general products, which is the one cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$ of real dimension six; the annihilators are complex planes of complex dimension two on both sides, and what separates the block from the four is the set and the shape of the plane.**
 
 **The four general products.** The zero-divisor set of each of the four general products is the
 same set,
@@ -164,6 +172,8 @@ reading, with the behaviour of the block on each, is *Remarkable Subspaces under
 Quaternionic Sesqualgebra of Biquaternions*.
 
 ## The Relation to the Square-Zero Elements and to the Idempotents
+
+**The cone of the square-zero elements is a strict part of the zero-divisor set, the idempotent set of the block is the origin alone and meets the set nowhere, and both nilpotent classes sit inside the set.**
 
 **The cone of the diagonal is a proper part of the set.** The elements whose square vanishes are
 those whose vector part is a complex multiple of a real vector, a cone of real dimension six, and
@@ -223,7 +233,7 @@ proper part of the set, the origin is outside it, and no idempotent of the block
 - *Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor and the Annihilator*, for the left, right and two-sided zero divisor, the annihilators, the regular element and the product-relative reading.
 - *Zero Divisors of the General Plain Algebra*, for the model block, where the zero divisors are the elements of vanishing central square.
 - *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the four sets, their coincidence and the one-sided inverse equations.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the annihilators of the four general products and their comparison.
+- *Annihilators in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the annihilators of the four general products and their comparison.
 - *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the cone of the diagonal, which is the self-annihilation part of the set.
 - *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra* and *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*, for the two classes that sit inside and outside the set.
 - *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, for the left multiplication, its kernel and its image.

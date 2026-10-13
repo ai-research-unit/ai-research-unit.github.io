@@ -48,6 +48,8 @@ the **plain** product and $\star$ the block, $\tilde P\star\tilde Q=\tilde P\til
 $(\mathbf Q,\mathbf Q)=Q_1^{2}+Q_2^{2}+Q_3^{2}$, and its vanishing set, the origin removed, is the
 common zero-divisor cone.
 
+**The results.** A nonzero biquaternion is a zero divisor of the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ exactly when its central square vanishes, $C(\tilde Q)=Q_0^{2}+(\mathbf Q,\mathbf Q)=0$; the block's zero-divisor set is therefore the parent's, the nonzero complex cone of complex dimension three, and it is the common set of the four general products. Every zero divisor of the block is two-sided, and the two annihilators coincide, each a complex plane of complex dimension two on the cone and $\{0\}$ off it. The parent's partition by the scalar coordinate survives: the pure family ($Q_0=0$, isotropic) is the block's nilpotent family, of index three, and the non-pure family ($Q_0\neq0$) consists of the complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_0+i\hat\mu)$ are idempotents of the block.
+
 ## The Criterion
 
 **Theorem (the criterion of the block).** For nonzero $\tilde Q$, the following are equivalent:
@@ -96,6 +98,8 @@ Sesqualgebra*, below this article in this category.
 
 ## The Two Families, and What the Block Does to Them
 
+**The parent's partition by the scalar coordinate survives: the pure family ($Q_0=0$, isotropic) is the block's nilpotent family, of index three rather than two, and the non-pure family ($Q_0\neq0$) is the nonzero complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_0+i\hat\mu)$ are idempotents of the block.**
+
 The plain product partitions its zero divisors by the scalar coordinate (*Zero Divisors of the
 General Plain Algebra*): the **pure family** has $Q_0=0$ and $(\mathbf Q,\mathbf Q)=0$, and its
 nonzero members are the nilpotents, $\tilde Q^{2}=0$; the **non-pure family** has $Q_0\neq0$, and
@@ -122,7 +126,7 @@ has $\tilde Q\star\tilde Q=2e_0+2ie_3$.
 **Remark (the index of the pure family is raised).** The parent calls the pure family the nonzero
 **nilpotents** of index two; the block calls the same family its nonzero **nilpotents** of index
 three, because the block-square of a pure zero divisor does not vanish and the third power does
-(*Nilpotents of the General Plain Sesqualgebra*). The pure zero divisors are therefore a family of
+(*Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*). The pure zero divisors are therefore a family of
 zero divisors that **are** nilpotents of the block, with the index raised from two to three, and
 the non-pure zero divisors are the family that is **not** nilpotent. The partition of the parent is
 kept, and the index attached to each family is read from the square of the product in force.
@@ -149,6 +153,8 @@ $C\bigl(\tfrac12(e_0+i\hat\mu)\bigr)=\tfrac14(1-(\hat\mu,\hat\mu))=0$, so every 
 a zero divisor, of the non-pure family. The unit $e_0$ is not a zero divisor, $c(e_0)=1$.
 
 ## The Comparison with the Parent and with the Four General Products
+
+**The block shares the criterion $C(\tilde Q)=0$, the nonzero cone, the two-sidedness and the pure family with the parent and with the four general products, and it changes only the square-theoretic index of the pure family, from two to three.**
 
 | clause | general plain algebra | general plain sesqualgebra |
 |---|---|---|
@@ -210,6 +216,6 @@ annihilators, and changes the index.
 - *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the theorem that the four zero-divisor sets coincide and for the one-sided inverse equations.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion $C(\tilde Q)=0$, the pure and the non-pure families and their geometry.
 - *Norm and Invertibility in the General Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-sesqualgebra.md`), for the algebraic norm, the invertibility criterion and the definiteness of the scalar form.
-- *Idempotents of the General Plain Sesqualgebra* (`articles_maths/idempotents-of-the-general-plain-sesqualgebra.md`), for the Hermitian idempotents that are the block idempotents among the non-pure zero divisors.
-- *Nilpotents of the General Plain Sesqualgebra* (`articles_maths/nilpotents-of-the-general-plain-sesqualgebra.md`), for the pure family read as the nilpotent family, of index three.
+- *Square Roots of One and the Idempotents of the General Plain Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-sesqualgebra.md`), for the Hermitian idempotents that are the block idempotents among the non-pure zero divisors.
+- *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-sesqualgebra.md`), for the pure family read as the nilpotent family, of index three.
 - *Annihilators of the General Plain Sesqualgebra* (`articles_maths/annihilators-of-the-general-plain-sesqualgebra.md`), below this article in this category, the companion article, for the coincident annihilators and the reading of the plain annihilator

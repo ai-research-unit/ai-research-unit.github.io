@@ -6,7 +6,9 @@ The symmetric plain algebra $\mathbb{B}^{\bullet}$ is the complex space $\mathbb
 
 The equation names a product, and throughout this article the square is the one of the symmetric plain product. Because the square of the block is the **plain square**, the equation $\tilde\Xi\bullet\tilde\Xi=\tilde Q$ is the equation $\tilde\Xi^2=\tilde Q$ of the algebra, and the whole classification of *Square Roots of a General Element in the General Plain Algebra* transfers verbatim. What this article adds is the block's notation: the **conjugate scalar** that decides the reduced quadratic is the block's **central square** $C(\tilde Q)=\tilde Q\tilde Q^{\natural}$, so the degeneracy of the root problem is the vanishing of that square, that is the isotropy of $\tilde Q$; the block's zero divisors and invertible elements then read the classification.
 
-A root is defined relative to a product, and the definition is stated once for a general product in *Definitions for the Study of the 12 Algebraic Structures*, §*The Root*; throughout this article the product is $\bullet$ and, unqualified, **root** means root of $\bullet$. The general root problem of the algebra is *Square Roots of a General Element in the General Plain Algebra*; the three central values are *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Algebra*; and the degenerate radicands are *Zero Divisors of the Symmetric Plain Algebra*.
+A root is defined relative to a product, and the definition is stated once for a general product in *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*; throughout this article the product is $\bullet$ and, unqualified, **root** means root of $\bullet$. The general root problem of the algebra is *Square Roots of a General Element in the General Plain Algebra*; the roots of $+1$, the roots of $-1$ and the idempotents are *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*; the roots of $0$ and the nilpotents are *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*; and the degenerate radicands are *Zero Divisors of the Symmetric Plain Algebra*.
+
+**The results.** The block's equation $\tilde\Xi\bullet\tilde\Xi=\tilde Q$ is the plain equation $\tilde\Xi^2=\tilde Q$, so the root sets of the block and of the general plain product coincide. For a radicand with non-vanishing vector part the roots come in pairs $\pm\tilde\Xi$: there are **four** generically, **two** in the two degenerate rows, and **none** for the rootless row $\mathbf{Q}\neq0$, $Q_0=0$, $C(\tilde Q)=0$; the degeneracy is governed by the central square, whose vanishing is the isotropy of $\tilde Q$. For a complex scalar radicand $\tilde Q=Q_0e_0$ the roots are the two scalars $\pm\sqrt{Q_0}e_0$ together with a **four-parameter family** of pure $\mathbf\Xi$ with $(\mathbf\Xi,\mathbf\Xi)=-Q_0$, and the three central values recover the three sets of the companion articles. Each case below states its answer first and then proves it.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$. An element is $\tilde\Xi=\Xi_0e_0+\mathbf\Xi$ with $\mathbf\Xi=\sum_k\Xi_ke_k$, and $(\mathbf\Xi,\mathbf\Xi)=\sum_k\Xi_k^2$. The product with the mark is $\tilde\Xi\bullet\tilde Q=\tfrac12(\tilde\Xi\tilde Q+\tilde Q\tilde\Xi)$; the central square is $C(\tilde Q)=Q_0^2+(\mathbf{Q},\mathbf{Q})=\tilde Q\tilde Q^{\natural}$.
 
@@ -38,9 +40,11 @@ $$
 (\mathbf{Q},\mathbf{Q})=Q_1^2+Q_2^2+Q_3^2,\qquad C=C(\tilde Q)=Q_0^2+(\mathbf{Q},\mathbf{Q})=\tilde Q\tilde Q^{\natural},
 $$
 
-and $C$ is the **central square** of the block, not a length: it is an element of $\mathbb{C}$, and it is the conjugate scalar of the algebra article. Its vanishing is the condition of isotropy of $\tilde Q$.
+and $C$ is the **central square** of the block, an element of $\mathbb{C}$ and not a real number: it is the conjugate scalar of the algebra article. Its vanishing is the condition of isotropy of $\tilde Q$.
 
 ## The Roots with Non-Vanishing Vector Part
+
+**For a radicand with non-vanishing vector part a root has $\Xi_0\neq0$ and $\mathbf\Xi=\mathbf{Q}/(2\Xi_0)$, where $x=\Xi_0^2$ solves the reduced quadratic $4x^2-4Q_0x-(\mathbf{Q},\mathbf{Q})=0$, of discriminant $16C(\tilde Q)$; the discriminant vanishes exactly when the radicand is isotropic.**
 
 **Proposition.** Let $\mathbf{Q}\neq0$. Then a root has $\Xi_0\neq0$ and $\mathbf\Xi=\mathbf{Q}/(2\Xi_0)$, and the scalar part $\Xi_0$ satisfies the reduced quadratic
 
@@ -59,6 +63,8 @@ So the root problem of the block degenerates exactly on the isotropic cone of th
 
 ## The Roots of a Complex Scalar
 
+**A complex scalar radicand $\tilde Q=Q_0e_0$ has the two scalar roots $\pm\sqrt{Q_0}e_0$ and the four-real-parameter family of pure roots $\mathbf\Xi$ with $(\mathbf\Xi,\mathbf\Xi)=-Q_0$.**
+
 **Proposition.** Let $\tilde Q=Q_0e_0$ be a complex scalar. Then a root is either a complex scalar or pure: the scalars give the two elements $\pm\sqrt{Q_0}e_0$, and the pure roots are the four-real-parameter family of pure $\mathbf\Xi$ with
 
 $$
@@ -67,9 +73,11 @@ $$
 
 *Proof.* With $\mathbf{Q}=0$ the vector equation is $2\Xi_0\mathbf\Xi=0$, so $\mathbf\Xi=0$ or $\Xi_0=0$; the first case gives $\Xi_0^2=Q_0$, the second $(\mathbf\Xi,\mathbf\Xi)=-Q_0$.
 
-The three central values of the companion article are the cases $Q_0=-1,0,+1$ of this proposition, and they reproduce the three classifications.
+The three central values of the companion articles are the cases $Q_0=-1,0,+1$ of this proposition, and they reproduce the three classifications of those articles.
 
 ## The Classification
+
+**The number of roots is read from the radicand: four when $\mathbf{Q}\neq0$, $(\mathbf{Q},\mathbf{Q})\neq0$ and $C\neq0$; two in the two rows with $\mathbf{Q}\neq0$ and either $(\mathbf{Q},\mathbf{Q})\neq0$, $C=0$ or $(\mathbf{Q},\mathbf{Q})=0$, $Q_0\neq0$; none when $\mathbf{Q}\neq0$, $Q_0=0$ and $C=0$; and a four-parameter family when $\mathbf{Q}=0$.**
 
 Collecting the two cases, every $\tilde Q$ falls into exactly one of the following rows, and the table is the classification of the block.
 
@@ -85,7 +93,7 @@ Collecting the two cases, every $\tilde Q$ falls into exactly one of the followi
 
 **The roots in each row.**
 
-**No roots.** If $\mathbf{Q}\neq0$, $C=0$ and $Q_0=0$, then $\tilde Q$ has no square root of the block and the root set is empty; the radicand is then a pure non-zero isotropic element, that is a **nilpotent** of the block (*Nilpotents of the Symmetric Plain Algebra*).
+**No roots.** If $\mathbf{Q}\neq0$, $C=0$ and $Q_0=0$, then $\tilde Q$ has no square root of the block and the root set is empty; the radicand is then a pure non-zero isotropic element, that is a **nilpotent** of the block (*Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*).
 
 **Two roots.** If $\mathbf{Q}\neq0$ and either $(\mathbf{Q},\mathbf{Q})\neq0$ with $C=0$, or $(\mathbf{Q},\mathbf{Q})=0$ with $Q_0\neq0$, the root set is a single pair $\tilde\Xi=\pm\bigl(\sqrt{x}\,e_0+\mathbf{Q}/(2\sqrt{x})\bigr)$, with $x=Q_0/2$ in the first instance and $x=Q_0$ in the second.
 
@@ -102,7 +110,9 @@ $$
 
 ## The Three Central Values
 
-The classification specialises to $\tilde Q=-e_0,0,+e_0$ and reproduces the three sets of *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Algebra*; the agreement is the check that the two computations are the same computation.
+**At the three central values the classification reproduces the three sets of the companion articles: the roots of $-e_0$ are the central $\pm ie_0$ with pure quadric $(\mathbf\Xi,\mathbf\Xi)=1$, the roots of $0$ are the origin with the nilpotent cone, and the roots of $+e_0$ are the central $\pm e_0$ with the pure quadric $(\mathbf\Xi,\mathbf\Xi)=-1$ that indexes the idempotents.**
+
+The classification specialises to $\tilde Q=-e_0,0,+e_0$ and reproduces the roots of $+1$ and of $-1$ of *Square Roots of One and the Idempotents of the Symmetric Plain Algebra* and the roots of $0$ of *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*; the agreement is the check that the computations are the same computation.
 
 | central value | scalar roots | the pure family |
 |---|---|---|
@@ -114,6 +124,8 @@ The classification specialises to $\tilde Q=-e_0,0,+e_0$ and reproduces the thre
 
 ## The Coincidence with the General Plain Algebra
 
+**For every $\tilde Q$ the root set of $\tilde Q$ of the block equals the root set of $\tilde Q$ of the general plain product, the coincidence being the identity of the two squares.**
+
 **Theorem.** For every $\tilde Q$ the root set of $\tilde Q$ of the block equals the root set of $\tilde Q$ of the general plain product, and the coincidence is the identity of the two squares.
 
 *Proof.* The equation of the block is $\tilde\Xi^2=\tilde Q$ by the reduction, which is the equation of the algebra.
@@ -122,7 +134,7 @@ So the general root theory of the block is the general root theory of the algebr
 
 ## Summary
 
-The equation $\tilde\Xi\bullet\tilde\Xi=\tilde Q$ of the block is the plain equation $\tilde\Xi^2=\tilde Q$, so the classification of the general plain algebra transfers verbatim and the root sets coincide. In coordinates the equation is the pair $2\Xi_0\mathbf\Xi=\mathbf{Q}$ and $\Xi_0^2-(\mathbf\Xi,\mathbf\Xi)=Q_0$; when the vector part of the radicand is non-zero a root is fixed by its scalar part $\Xi_0$, whose square solves the reduced quadratic $4x^2-4Q_0x-(\mathbf{Q},\mathbf{Q})=0$ in $x=\Xi_0^2$, of discriminant $16C(\tilde Q)$; when the radicand is a complex scalar the root is a complex scalar or pure, and the pure roots form the family $(\mathbf\Xi,\mathbf\Xi)=-Q_0$. The number of roots is four, two or none according to the signs and the vanishing of $(\mathbf{Q},\mathbf{Q})$ and of the central square $C=C(\tilde Q)$; the degenerate rows with $C=0$ are the isotropic radicands, the row with no root is the nilpotent radicand, and the four-root row is the invertible radicand. The three central values reproduce the three sets of the companion article.
+The equation $\tilde\Xi\bullet\tilde\Xi=\tilde Q$ of the block is the plain equation $\tilde\Xi^2=\tilde Q$, so the classification of the general plain algebra transfers verbatim and the root sets coincide. In coordinates the equation is the pair $2\Xi_0\mathbf\Xi=\mathbf{Q}$ and $\Xi_0^2-(\mathbf\Xi,\mathbf\Xi)=Q_0$; when the vector part of the radicand is non-zero a root is fixed by its scalar part $\Xi_0$, whose square solves the reduced quadratic $4x^2-4Q_0x-(\mathbf{Q},\mathbf{Q})=0$ in $x=\Xi_0^2$, of discriminant $16C(\tilde Q)$; when the radicand is a complex scalar the root is a complex scalar or pure, and the pure roots form the family $(\mathbf\Xi,\mathbf\Xi)=-Q_0$. The number of roots is four, two or none according to the signs and the vanishing of $(\mathbf{Q},\mathbf{Q})$ and of the central square $C=C(\tilde Q)$; the degenerate rows with $C=0$ are the isotropic radicands, the row with no root is the nilpotent radicand, and the four-root row is the invertible radicand. The three central values reproduce the three sets of the companion articles.
 
 ## Summary of Notation
 
@@ -132,13 +144,14 @@ The equation $\tilde\Xi\bullet\tilde\Xi=\tilde Q$ of the block is the plain equa
 | $\tilde\Xi\bullet\tilde\Xi=\tilde Q$ | the root equation, the plain equation $\tilde\Xi^2=\tilde Q$ |
 | $(\mathbf{Q},\mathbf{Q})=Q_1^2+Q_2^2+Q_3^2$ | the complex square of the vector part |
 | $C=C(\tilde Q)=Q_0^2+(\mathbf{Q},\mathbf{Q})$ | the central square, the conjugate scalar |
-| $4x^2-4Q_0x-(\mathbf{Q},\mathbf{Q})=0$, $x=\Xi_0^2$ | the reduced quadratic, of discriminant $16n$ |
+| $4x^2-4Q_0x-(\mathbf{Q},\mathbf{Q})=0$, $x=\Xi_0^2$ | the reduced quadratic, of discriminant $16C(\tilde Q)$ |
 | $(\mathbf\Xi,\mathbf\Xi)=-Q_0$ | the pure roots of a complex scalar |
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures*, §*The Root*, for the product-relative definition.
+- *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*, for the product-relative definition.
 - *Square Roots of a General Element in the General Plain Algebra*, for the classification the block restates.
-- *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Algebra*, for the three central values.
+- *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*, for the roots of $+1$ and the roots of $-1$, the first two central values.
+- *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*, for the roots of $0$, the third central value.
 - *Norm and Invertibility in the Symmetric Plain Algebra*, for the invertible elements, the four-root row of the classification.
-- *Nilpotents of the Symmetric Plain Algebra* and *Zero Divisors of the Symmetric Plain Algebra*, for the radicands with no root and with two roots.
+- *Zero Divisors of the Symmetric Plain Algebra*, for the radicands with no root and with two roots.

@@ -27,6 +27,8 @@ dimension drops on the isotropic cone of the parent form, and that drop is the s
 the article. The vanishing of the product on pairs is owned by the remarkable-subspaces article of
 the block, and the alternating centre is owned by the Jacobi article; both are cited.
 
+**The results.** For the antisymmetric quaternionic multiplication every nonzero element of $\mathbb{B}$ is a two-sided zero divisor, with itself as the annihilating partner, because the block is alternating and its square vanishes identically; the zero-divisor set is therefore the whole punctured space $\mathbb{B}\setminus\{0\}$. It strictly contains the common zero-divisor set $\{\tilde Q\neq0:C(\tilde Q)=0\}$ of the four general products, and it is the largest a zero-divisor set can be, attained by six of the twelve structures. The classification into a pure and a non-pure family degenerates: the criterion is met by every element, so the two families merge.
+
 ## The Notion and Its Product
 
 **Definition (zero divisor of a product).** Let $\star$ be a product on $\mathbb{B}$ and let
@@ -47,10 +49,12 @@ Throughout this article the product is the **antisymmetric quaternionic multipli
 $\diamond$, and unqualified, *zero divisor* and *annihilator* mean the zero divisor and the
 annihilator of $\diamond$. The product is the antisymmetric half of the general quaternionic
 product $\tilde P^{\natural}\tilde Q$ (*The Symmetric and Antisymmetric Parts of an Algebra
-Product*), and the zero divisors of the parent are *The Nilpotents and the Zero Divisors of the
-Quaternionic Product*; the two sets are compared at §*The Set and the Comparison*.
+Product*), and the zero divisors of the parent are *Zero Divisors of the General Quaternionic
+Algebra*; the two sets are compared at §*The Set and the Comparison*.
 
 ## The Criterion
+
+**Every nonzero element of $\mathbb{B}$ is a two-sided zero divisor of the block, so the zero-divisor set is the punctured space $\mathbb{B}\setminus\{0\}$.**
 
 **Theorem (the criterion for the block).** Every nonzero element of $\mathbb{B}$ is a two-sided
 zero divisor of the antisymmetric quaternionic multiplication; equivalently, the zero-divisor set
@@ -73,6 +77,8 @@ line $\mathbb{C}\tilde Q$ always lies in the annihilator of $\tilde Q$ on both s
 
 ## The Annihilator and the Rank
 
+**The two annihilators of an element coincide and are the kernel of the left multiplication, the annihilator always contains the line $\mathbb{C}\tilde P$, and the operator has the rank table of the block.**
+
 The annihilator of an element is the kernel of the left multiplication, the two sides coinciding
 because the block is alternating; it contains the line $\mathbb{C}\tilde P$, and the operator has
 the rank table of the block. The annihilator, the operator with its characteristic polynomial, the
@@ -80,6 +86,8 @@ rank table and the reading on the remarkable subspaces are the companion article
 the Antisymmetric Quaternionic Algebra*, below this article in this category.
 
 ## The Two Families Degenerate
+
+**The classification into a pure and a non-pure family collapses for the block: the criterion is met on the whole punctured space, both the pure and the non-pure elements are zero divisors, and the only subclass separated is the isotropic one, $C(\tilde P)=0$, which separates the shape of the annihilator and not the zero-divisor class.**
 
 The general products come with a classification of the zero divisors into two families, the pure
 and the non-pure, and the classification is made by the vanishing of the central square (*Zero
@@ -106,6 +114,8 @@ the equation of the zero divisor is satisfied identically and the classification
 is gone.
 
 ## The Set and the Comparison
+
+**The zero-divisor set of the block is the punctured space $\mathbb{B}\setminus\{0\}$, which strictly contains the common zero-divisor set $\{\tilde Q\neq0:C(\tilde Q)=0\}$ of the four general products; among the twelve structures the punctured space occurs exactly for the six whose product pairs every nonzero element with a nonzero annihilating partner.**
 
 The four general products give four definitions of the zero divisor, and for the biquaternion space
 the four definitions select one and the same set,
@@ -150,6 +160,8 @@ of the block: the block is not a product whose square is central, and the zero-d
 the algebra is not its criterion.
 
 ## The Relation to the Remarkable Subspaces
+
+**On each of the remarkable subspaces the block restricts to an operation whose zero-divisor class is the same relative class: the nonzero elements of the subspace are zero divisors with themselves as partners.**
 
 **Proposition (the restriction).** On each of the remarkable subspaces the block restricts to an
 operation whose zero-divisor class is the same relative class: the nonzero elements of the centre

@@ -18,7 +18,7 @@ The construction is a duality of the form and not enveloping algebra. The form i
 
 The form is used here, not developed. Its definition, its coefficient Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, its determinant $\det D=-1$, its inertia $(1,3)$, its realified signature $(4,4)$ and its restriction to the remarkable subspaces are the matter of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*. The two facts this article needs are that the form is $\mathbb{C}$-bilinear, symmetric and non-degenerate, and that its Gram matrix in the coefficient basis is $D$; both are read from that article.
 
-**Remark (association uses the plain product, not the norm).** The pairing here is the scalar part of the plain product, of Gram matrix $D$. The companion **general quaternionic bilinear form** $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$ of *Norm and Invertibility in the General Plain Algebra* is the polarisation of the norm, of Gram matrix $\mathrm{I}_4$, and it gives a second transpose, different off the operators that fix the scalar unit and preserve the vector part. The distinction of $D$ and $\mathrm{I}_4$ is the whole of the difference, as *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* records.
+**Remark (association uses the plain product, not the norm).** The pairing here is the scalar part of the plain product, of Gram matrix $D$. The companion **general quaternionic bilinear form** $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$ of *Norm and Invertibility in the General Quaternionic Algebra* is the polarisation of the norm, of Gram matrix $\mathrm{I}_4$, and it gives a second transpose, different off the operators that fix the scalar unit and preserve the vector part. The distinction of $D$ and $\mathrm{I}_4$ is the whole of the difference, as *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* records.
 
 ## Association
 
@@ -92,7 +92,7 @@ for $M^{\mathsf T}$ the plain transpose.
 
 ## Association and the Hermitian Adjoint
 
-**Proposition (coefficient conjugation).** Let $\bar F$ be the map obtained from $F$ by conjugating every coefficient, and let $F^{*}$ be the adjoint of $F$ with respect to the positive definite Hermitian form $(\tilde R,\tilde S)=\mathrm{Sc}(\tilde R^{*}\tilde S)=\sum_\mu R_{\bar\mu}S_\mu$ of *Norm and Invertibility in the General Plain Algebra*, so that $(F\tilde R,\tilde S)=(\tilde R,F^{*}\tilde S)$. Then
+**Proposition (coefficient conjugation).** Let $\bar F$ be the map obtained from $F$ by conjugating every coefficient, and let $F^{*}$ be the adjoint of $F$ with respect to the positive definite Hermitian form $(\tilde R,\tilde S)=\mathrm{Sc}(\tilde R^{*}\tilde S)=\sum_\mu R_{\bar\mu}S_\mu$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, so that $(F\tilde R,\tilde S)=(\tilde R,F^{*}\tilde S)$. Then
 
 $$
 \bar F^{\approx}=D\,F^{*}D.
@@ -137,7 +137,7 @@ The **associate** $F^{\approx}$ of a $\mathbb{C}$-linear map of the biquaternion
 - *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the associate $\approx$ side by side with the three other adjoints of the other three forms, on explicit matrices
 - *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-operator-algebra-of-the-general-plain-algebra-and-the-bi-module-structure.md`), for the Conway operator basis, the regular representations and the bi-module structure
 - *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the positive definite adjoint the dagger names
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the positive definite form the adjoint uses
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the positive definite form the adjoint uses
 - *Bilinear Forms* (`articles_maths/bilinear-forms.md`), §*Isometries*, and *Quadratic Forms and Polarisation* (`articles_maths/quadratic-forms-and-polarisation.md`), §*Isometry of Forms*, for the general transpose of a bilinear form
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form whose duality association is, and the four Gram matrices of the algebra, and the companion general quaternionic bilinear form of Gram matrix $\mathrm{I}_4$
 - *Biquaternion Lie Group and Exponential Structure* (`articles_maths/biquaternion-lie-group-and-exponential-structure.md`), for the unitary elements on which the source's three involutions agree.

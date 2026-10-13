@@ -27,7 +27,11 @@ article owns that reading, the operator with its rank, and the shape of the anni
 remarkable subspaces; the zero-divisor set and its comparison with the parent and the four general
 products are the cited article's.
 
+**The results.** The left and the right multiplications of the block, $L_{\tilde P}\tilde X=\tilde P\tilde X^{*}$ and $R_{\tilde P}\tilde X=\tilde X\tilde P^{*}$, are conjugate-linear, and the two annihilators coincide, $A_\star(\tilde Q)=B_\star(\tilde Q)=K(\tilde Q)^{*}$, the conjugate of the plain annihilator $K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$. Off the cone every annihilator is $\{0\}$ and the operator has complex rank four; on the cone each is a complex plane of complex dimension two and the operator has complex rank two. The block is the one of the general products for which the two annihilators are equal rather than merely two.
+
 ## The Annihilator of a Product
+
+**The annihilator of an element is the set of partners that it kills, the left and the right annihilator being the kernels of the left multiplication $\tilde P\tilde X^{*}$ and the right multiplication $\tilde X\tilde P^{*}$, and each is nonzero exactly when the element is a zero divisor of the corresponding side.**
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
@@ -51,6 +55,8 @@ is the sibling of the general plain algebra, whose annihilators are *Annihilator
 Plain Algebra*.
 
 ## The Two Annihilators Coincide
+
+**The two annihilators are equal and are the conjugate of the plain annihilator, $B_\star(\tilde Q)=A_\star(\tilde Q)=K(\tilde Q)^{*}$ with $K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$: off the cone both are $\{0\}$ and the element is a unit of the plain product, and on the cone each is a complex plane of complex dimension two.**
 
 **Theorem (the two annihilators are equal, and they are the conjugate of the plain annihilator).**
 For every $\tilde Q$,
@@ -78,6 +84,8 @@ $$
 
 ## The Multiplication Operator and the Rank
 
+**The conjugate-linear operator $L_{\tilde P}$ has complex rank four and kernel $\{0\}$ off the cone, complex rank two and kernel of complex dimension two on the cone, and rank $0$ with kernel of dimension four at $\tilde P=0$.**
+
 The two one-sided multiplications are conjugate-linear, so they have no determinant in the complex
 sense; what is read is the rank, the complex dimension of the image, which is half the real rank of
 the underlying real-linear map.
@@ -97,6 +105,8 @@ nonzero zero divisor; the kernel dimension is $4$ minus the rank.
 
 ## The Dichotomy by the Cone
 
+**The annihilator reads the cone twice, trivially off it and as a complex plane on it, and the star makes the two sides coincide, where the parent's two annihilators are distinct.**
+
 The zero-divisor set of the block is the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, the same
 cone as the parent. The annihilator reads the cone twice, as in the parent: off the cone both
 annihilators are $\{0\}$ and the element is a unit of the plain product, and on the cone each is a
@@ -107,6 +117,8 @@ work, and it is the sibling of the antipodal *Annihilators of the General Quater
 Sesqualgebra*, whose two sides are again distinct.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**On every remarkable subspace the annihilator is the ambient one intersected with the subspace: $\{0\}$ off the cone, and the conjugate of the plain annihilator, a complex plane, inside the subspace on the cone.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
 $L_{\lambda e_0}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with

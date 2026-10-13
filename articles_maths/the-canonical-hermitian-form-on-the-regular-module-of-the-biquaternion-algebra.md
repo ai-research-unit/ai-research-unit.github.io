@@ -16,7 +16,7 @@ $$
 
 with values in $\mathbb{B}$, of which the scalar Hermitian form of the layer is the scalar part, $h(\tilde P,\tilde R)$ having scalar part $\mathrm{Sc}(\tilde P \tilde R^{*})=\langle\tilde P,\tilde R\rangle_{*}$. The automorphisms of $h$ that are $\mathbb{B}$-linear are the right multiplications $R_{\tilde U}$ by the unitary elements $\tilde U\tilde U^{*}=e_0$, that is by the unitary group of *The Unitary Group of the Biquaternion Algebra*; a left multiplication $L_{\tilde U}$ is a form-preserving map only for a central unitary element, which here means a complex scalar of modulus one.
 
-The form takes its values in $\mathbb{B}$ and carries no definite form of its own; the scalar form of the layer is *Norm and Invertibility in the General Plain Algebra*, whose value on a pair is the scalar part of the form here. The article assumes the general construction of *The Regular Bimodule over an Involutive Ring* for the twist, the swap and the canonical form, *Modules over an Involutive Ring* for the twist of a general module, *Involutive Rings* for the definitions of an involution and of the unitary elements, *Modules over the General Plain Algebra of Biquaternions* for the module object and its endomorphisms, and *The Group of Involutions* for the four conjugations of the algebra. The positivity of the form and the operator theory that needs a norm are Part II and the following articles of this layer; no positivity and no norm is used here.
+The form takes its values in $\mathbb{B}$ and carries no definite form of its own; the scalar form of the layer is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, whose value on a pair is the scalar part of the form here. The article assumes the general construction of *The Regular Bimodule over an Involutive Ring* for the twist, the swap and the canonical form, *Modules over an Involutive Ring* for the twist of a general module, *Involutive Rings* for the definitions of an involution and of the unitary elements, *Modules over the General Plain Algebra of Biquaternions* for the module object and its endomorphisms, and *The Group of Involutions* for the four conjugations of the algebra. The positivity of the form and the operator theory that needs a norm are Part II and the following articles of this layer; no positivity and no norm is used here.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra with complex basis $e_0,e_1,e_2,e_3$, a generic element is $\tilde Q$, an idempotent is $\tilde\Pi$, the scalar part is $\mathrm{Sc}$, the two one-sided multiplications are $L_{\tilde Q}(\tilde P)=\tilde Q\tilde P$ and $R_{\tilde Q}(\tilde P)=\tilde P\tilde Q$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, the composite of the coefficient conjugation and the quaternion conjugation.
 
@@ -117,7 +117,7 @@ $$
 \mathrm{Sc}\,h(\tilde P,\tilde R)=\mathrm{Sc}(\tilde P\tilde R^{*})=\mathrm{Sc}(\tilde R^{*}\tilde P)=\langle\tilde P,\tilde R\rangle_{*},
 $$
 
-the inner product of *Norm and Invertibility in the General Plain Algebra*, and the diagonal value
+the inner product of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and the diagonal value
 
 $$
 \mathrm{Sc}\,h(\tilde P,\tilde P)=\mathrm{Sc}(\tilde P\tilde P^{*})=\sum_{\mu=0}^{3}|P_\mu|^{2}
@@ -127,7 +127,7 @@ is the positive definite scalar part of the layer. The form $h$ is thus the modu
 
 ### The associated quadratic form
 
-**Definition.** The **associated quadratic form** of $h$ is $q(\tilde P)=h(\tilde P,\tilde P)=\tilde P\tilde P^{*}$, the Hermitian form of *Norm and Invertibility in the General Plain Algebra*.
+**Definition.** The **associated quadratic form** of $h$ is $q(\tilde P)=h(\tilde P,\tilde P)=\tilde P\tilde P^{*}$, the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
 **Proposition.** The quadratic form satisfies $q(\tilde A\tilde P)=\tilde A\,q(\tilde P)\tilde A^{*}$, so it is not $\mathbb{C}$-linear but equivariant; it takes its values in the Hermitian subspace $\mathbb{M}_+$, since $q(\tilde P)^{*}=q(\tilde P)$; it vanishes only at $\tilde P=0$, its scalar part being the sum of the squared moduli; and it determines $h$ by the polarisation identity
 
@@ -137,7 +137,7 @@ $$
 
 so that $h(\tilde P,\tilde R)=\tfrac12\bigl(q(\tilde P+\tilde R)-q(\tilde P)-q(\tilde R)\bigr)$.
 
-**Proof.** The equivariance is $q(\tilde A\tilde P)=\tilde A\tilde P(\tilde A\tilde P)^{*}=\tilde A\tilde P\tilde P^{*}\tilde A^{*}=\tilde A q(\tilde P)\tilde A^{*}$. Hermitianity of the values is $(\tilde P\tilde P^{*})^{*}=\tilde P\tilde P^{*}$, which is the statement that the general plain sesquilinear form of an element lies in $\mathbb{M}_+$. Vanishing only at zero and the scalar part are computed in *Norm and Invertibility in the General Plain Algebra*. For the polarisation, expanding $q(\tilde P+\tilde R)$ gives $q(\tilde P)+q(\tilde R)+\tilde P\tilde R^{*}+\tilde R\tilde P^{*}$; the last two terms are $h(\tilde P,\tilde R)$ and $h(\tilde P,\tilde R)^{*}$, so their sum is $2h(\tilde P,\tilde R)$ by Hermitianity, and $2$ is invertible in $\mathbb{B}$.
+**Proof.** The equivariance is $q(\tilde A\tilde P)=\tilde A\tilde P(\tilde A\tilde P)^{*}=\tilde A\tilde P\tilde P^{*}\tilde A^{*}=\tilde A q(\tilde P)\tilde A^{*}$. Hermitianity of the values is $(\tilde P\tilde P^{*})^{*}=\tilde P\tilde P^{*}$, which is the statement that the general plain sesquilinear form of an element lies in $\mathbb{M}_+$. Vanishing only at zero and the scalar part are computed in *Norm and Invertibility in the General Quaternionic Algebra*. For the polarisation, expanding $q(\tilde P+\tilde R)$ gives $q(\tilde P)+q(\tilde R)+\tilde P\tilde R^{*}+\tilde R\tilde P^{*}$; the last two terms are $h(\tilde P,\tilde R)$ and $h(\tilde P,\tilde R)^{*}$, so their sum is $2h(\tilde P,\tilde R)$ by Hermitianity, and $2$ is invertible in $\mathbb{B}$.
 
 ## The Automorphisms Are the Unitary Elements
 
@@ -153,7 +153,7 @@ so $R_{\tilde B}$ preserves $h$ for all $\tilde P,\tilde R$ exactly when $\tilde
 
 **Corollary (the two readings of one element).** A unitary element that is not central acts as a form-preserving map through $R_{\tilde U}$ and not through $L_{\tilde U}$, so the two one-sided readings of the same element differ as soon as the element is non-central. The right regular representation carries the unitary group $U_{{}^{*}}(\mathbb{B})\cong U(2)$ into the automorphism group of $h$, and the left regular representation carries only its centre, the circle $U(1)$ of complex scalars of modulus one. This is the one-sided distinction of *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* read on the form rather than on the operators.
 
-**Remark (the parallel bilinear case).** The same construction with the natural sign gives the canonical form $h_{{}^{\natural}}(\tilde P,\tilde R)=\tilde P\tilde R^{\natural}$, whose scalar part is the general quaternionic bilinear form $\mathrm{Sc}(\tilde P\tilde R^{\natural})$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and whose $\mathbb{B}$-linear automorphisms are the right multiplications by the elements $\tilde U\tilde U^{\natural}=e_0$. The Hermitian case here and the bilinear case there are the two readings of one theorem, taken with the two involutions of the algebra; the form of the first is sesquilinear and positive on the diagonal, the form of the second is bilinear and indefinite, and the two agree on the quaternion subspace and differ by a sign on the anti-quaternion subspace, which is the comparison table of *Norm and Invertibility in the General Plain Algebra*.
+**Remark (the parallel bilinear case).** The same construction with the natural sign gives the canonical form $h_{{}^{\natural}}(\tilde P,\tilde R)=\tilde P\tilde R^{\natural}$, whose scalar part is the general quaternionic bilinear form $\mathrm{Sc}(\tilde P\tilde R^{\natural})$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and whose $\mathbb{B}$-linear automorphisms are the right multiplications by the elements $\tilde U\tilde U^{\natural}=e_0$. The Hermitian case here and the bilinear case there are the two readings of one theorem, taken with the two involutions of the algebra; the form of the first is sesquilinear and positive on the diagonal, the form of the second is bilinear and indefinite, and the two agree on the quaternion subspace and differ by a sign on the anti-quaternion subspace, which is the comparison table of *Norm and Invertibility in the General Quaternionic Algebra*.
 
 ## Summary
 

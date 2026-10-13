@@ -103,7 +103,7 @@ $$
 \{\tilde p:N(\tilde p)=0\}=\{0\},
 $$
 
-which is not a nilpotent, the nilpotents being the nonzero pure elements of *Nilpotents of the Symmetric Quaternionic Algebra*, and which is the sole square-zero element of the block.
+which is not a nilpotent, the nilpotents being the nonzero pure elements of *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*, and which is the sole square-zero element of the block.
 
 ## The Conjugation
 

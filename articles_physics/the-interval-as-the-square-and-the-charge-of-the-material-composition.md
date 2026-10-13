@@ -32,8 +32,7 @@ elements**, so the null cone is closed under the material composition. The inter
 absorbing value is $0$.
 
 The article keeps to the material sector and to the one product that squares to the interval. It defers
-the expression of the interval itself, the mass shell, the four-velocity and the inverse to *Biquaternion
-Norm and Invertibility*; the identification of the vanishing set of $N$ with the light cone to *The Light
+the expression of the interval itself, the mass shell, the four-velocity and the inverse to *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale*; the identification of the vanishing set of $N$ with the light cone to *The Light
 Cone as the Biquaternion Zero-Divisor Cone* and to *Zero Divisors as a Physical Locus in Biquaternionic
 Form*; the interval-one group to *The Lorentz Group as Biquaternion Norm Automorphisms*; and the
 comparison of this product's scalar form with the other three to *The Four General Products and Their Physical Readings*. Every result read below is proved in the
@@ -283,6 +282,12 @@ minimal instance: the *square* couples them, even though the *product* of two ma
 since it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$ and so lies in
 neither sector.
 
+**Read as observation, the square bridges the two senses of the word.** The **material element**
+$A\in\mathbb{M}_-$ is what is observed, its square lands on the real scalar line in $\mathbb{M}_+$, and its
+**observable**, the Hermitian representative $iA$, is the operator whose eigenvalues are the readings. The
+map $\mathbb{M}_-\to\mathbb{M}_+$ is the algebraic form of the passage from the object observed to the
+number read.
+
 **Caution.** The statement is about the square of one element and not about the product of two. It does
 not say that a product of material elements is informational, and it does not by itself supply a dynamics
 between the sectors. What it supplies is one algebraic map $\mathbb{M}_-\to\mathbb{M}_+$, the norm, with
@@ -319,8 +324,7 @@ composition**. Each clause below names a proved identity, and each is labelled a
 
 - **The interval of a material operation is its square.** On the material coordinate
 $\tilde Q=ict\,e_0+\mathbf x$ the square is $(-c^{2}t^{2}+\mathbf x^{2})e_0$, the Minkowski interval.
-The interval, the four-velocity, the four-momentum and the rotor inverse are worked out in *Biquaternion
-Norm and Invertibility* and are cited, not repeated.
+The interval, the four-velocity, the four-momentum and the rotor inverse are worked out in *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale* and are cited, not repeated.
 - **The massless shell is the vanishing of the square, and the mass shell a level set of it.** A
 four-momentum on shell has square $N(\tilde P)=-m^{2}c^{2}$, so the mass shell is
 $\{N=-m^{2}c^{2}\}$, interpolating between the null cone at $m=0$ and the timelike interior.
@@ -455,8 +459,7 @@ not closed matters as much: neither sector survives
 the product, since the square of a material element is a central number, and the causal set is not closed,
 since the sign of the interval multiplies. Because the product is not associative, the closure is a
 closure under the two-element product, and a word of three operations has no bracketing-free value. The
-interval, the mass shell, the four-velocity and the inverse are owned by *Biquaternion Norm and
-Invertibility*; the cone by *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Zero Divisors as a
+interval, the mass shell, the four-velocity and the inverse are owned by *Norm and Invertibility in the General Quaternionic Algebra*; the cone by *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Zero Divisors as a
 Physical Locus in Biquaternionic Form*; the interval-one group by *The Lorentz Group as Biquaternion Norm
 Automorphisms*; and the comparison of the four general products by *The Four General Products and Their Physical Readings*.
 
@@ -491,7 +494,7 @@ square.
 - Mathematics article *The Associator and the Ternary Product of the Quaternionic Product*
 (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the
 associator and the failure of the weaker identities.
-- Companion article *Biquaternion Norm and Invertibility*, for the interval, the multiplicativity under the
+- Companion article *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, for the interval, the multiplicativity under the
 general plain bilinear product, the invertibility criterion, the four-velocity and the mass shell.
 - Companion article *The General Plain Bilinear Product on the Biquaternion Space*, for the general plain bilinear product, the form $B$
 and the Euclidean square.

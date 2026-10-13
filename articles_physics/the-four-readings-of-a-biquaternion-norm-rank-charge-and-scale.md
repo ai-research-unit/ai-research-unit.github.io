@@ -12,7 +12,7 @@ of it. Four readings, one element, and no article states on which elements they 
 statement. It owns no new theorem: it collects the four readings, marks which of them the word mass names,
 states on which elements they agree, and states exactly where they part company.
 
-The owners are, in order, *Biquaternion Norm and Invertibility* for the norm and its reversal by the central
+The owners are, in order, *The Four Forms, the Four Algebraic Norms and the Change of Scalars* for the norm and its reversal by the central
 imaginary, *Mass, Rank and the Positivity of the Dagger* for the rank and the positive cone, *Particle
 Types, Discrete Charge and Three-Particle Couplings* for the compact slice and the discrete charge, and
 *The Polar Element Representation of Biquaternions* for the polar scale, with the dilation interpretation in
@@ -166,7 +166,7 @@ left out, and the Dirac and Majorana pair is placed at the equation level, outsi
 
 ## Further Reading
 
-- *Biquaternion Norm and Invertibility*, for the norm, its multiplicativity and its reversal by the central
+- *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, for the norm, its multiplicativity and its reversal by the central
 imaginary.
 - *Mass, Rank and the Positivity of the Dagger*, for the rank criterion, the positive cone and the
 no-ghost and no-tachyon statements.

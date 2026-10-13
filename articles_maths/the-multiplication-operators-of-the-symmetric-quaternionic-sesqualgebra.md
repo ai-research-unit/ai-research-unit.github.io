@@ -225,5 +225,5 @@ The operators of the block are $L^{\star}_{\tilde A}(\tilde X)=\tilde A\star\til
 - *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.md`), for the form $K$ and the adjoint relation in the form setting.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product and its parity.
 - *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the remarkable subspaces and the vector subspace carrying the four-dimensional image.
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm $N$ entering the rank table.
+- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm $N$ entering the rank table.
 - *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the comparison of the operators of the twelve operations.

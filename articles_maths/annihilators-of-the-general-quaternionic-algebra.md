@@ -29,7 +29,11 @@ article owns that reading, the operator with its rank, and the shape of the anni
 remarkable subspaces; the zero-divisor set and its comparison with the other three general products
 are the cited article's.
 
+**The results.** The left and the right annihilator of an element coincide for **every** element of $\mathbb{B}$, unit or zero divisor alike, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of order two; the quaternionic product is the one general product whose annihilators are not exchanged but equal. The multiplication operator $L_{\tilde P}$ has trace $4P_0$ and determinant $C(\tilde P)^{2}$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$: it is invertible off the zero-divisor cone, while on the cone it has rank two and a kernel of complex dimension two. The common annihilator is therefore $\{0\}$ off the cone and a complex plane on it, and the plane contains the element itself. Each section below states its result first and then proves it.
+
 ## The Annihilator of a Product
+
+**The annihilator of an element is the set of partners that it kills; the left annihilator is the kernel of the left multiplication and the right annihilator the kernel of the right multiplication, and both are nonzero exactly when the element is a zero divisor of the corresponding side.**
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
@@ -54,6 +58,8 @@ the cone and its plane but differ in the coincidence of the two sides.
 
 ## The Two Annihilators Coincide
 
+**For every $\tilde Q\in\mathbb{B}$, unit or zero divisor alike, the two annihilators coincide, $B_\star(\tilde Q)=A_\star(\tilde Q)$, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of order two.**
+
 **Theorem (the coincidence).** For **every** $\tilde Q\in\mathbb{B}$, unit or zero divisor alike,
 $$
 B_\star(\tilde Q)=A_\star(\tilde Q).
@@ -72,6 +78,8 @@ without changing the annihilation. The general plain algebra has no such involut
 annihilators are generally distinct.
 
 ## The Multiplication Operator and the Rank
+
+**The operator $L_{\tilde P}$ has trace $4P_0$ and determinant $C(\tilde P)^{2}$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$; it is invertible with trivial kernel when $C(\tilde P)\neq0$, and of rank two with kernel of complex dimension two when $\tilde P\neq0$ and $C(\tilde P)=0$.**
 
 **Proposition (the operator and its determinant).** In the basis $e_0,e_1,e_2,e_3$ the operator
 $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has the matrix of multiplication by
@@ -103,6 +111,8 @@ whence the kernel is of complex dimension two. The origin gives the zero operato
 
 ## The Annihilator of an Element
 
+**A plain unit has trivial annihilator, while a nonzero zero divisor has a common annihilator of complex dimension two that contains the element itself.**
+
 **Theorem (the dimension of the annihilator).** Let $\tilde Q\in\mathbb{B}$.
 
 - If $\tilde Q$ is a unit of the plain product, $C(\tilde Q)\neq0$, then
@@ -128,6 +138,8 @@ In both cases the element lies in its own annihilator and the annihilator is a c
 
 ## The Dichotomy by the Cone
 
+**The annihilator reads the cone twice: off the cone it is $\{0\}$ and the element is a plain unit, on the cone it is a complex plane and the element is a rank-one matrix.**
+
 The zero-divisor set of the block is the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, a single
 equation, and the annihilator is the finer reading of the same equation: off the cone the
 annihilator is $\{0\}$ and the element is a unit of the plain product, and on the cone the
@@ -138,6 +150,8 @@ coincidence of the two sides but its annihilator is a hyperplane for every nonze
 than a plane on a cone. The annihilator is the invariant that separates the three.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**On a nonzero central element the annihilator is $\{0\}$; on the vector subspace it is $\{0\}$ unless the vector part is isotropic, and a complex plane on the isotropic locus; and on the Hermitian and anti-Hermitian subspaces it is again a complex plane for a nonzero zero divisor.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
 $L_{\lambda e_0}\tilde X=\lambda\tilde X$, the scalar operator, so it is a unit of the plain

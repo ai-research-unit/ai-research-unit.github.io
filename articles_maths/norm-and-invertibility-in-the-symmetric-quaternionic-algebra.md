@@ -18,6 +18,8 @@ The invertibility is where the article records an **absence**. The block has **n
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$, and $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$. The **symmetric quaternionic multiplication** is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=\mathrm{Sc}(\tilde P\star\tilde Q)\,e_0$, with $\mathrm{Sc}(\tilde P\star\tilde Q)=N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$; it is written $\bullet$ in the Specific Theory and Operators entries of the block. Its diagonal is the algebraic norm of the block, $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$.
 
+**The results.** The block carries exactly one algebraic norm, the diagonal of its scalar-part form, $N(\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}$, complex-valued, indefinite, of Gram matrix the identity on $e_0,e_1,e_2,e_3$ and radical $\{0\}$. It is the multiplicative form of the plain product, $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ with $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$, but it is **not** multiplicative for the block, where $N(\tilde P\star\tilde Q)=N(\tilde P,\tilde Q)^2$. The block has no left unit, no right unit and no two-sided unit, hence no inverse and no group of units. The non-isotropic class $N\neq0$ is exactly the group of units of the plain product, with the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$.
+
 ## The General Definitions
 
 The two notions are relative to a product, and the general statements are those of the definitions article.
@@ -29,6 +31,8 @@ The two notions are relative to a product, and the general statements are those 
 Throughout this article the product is the **symmetric quaternionic product** of the block, and the unit, the inverse and the group of units are the notions of that product.
 
 ## The Algebraic Norm of the Block
+
+**The block carries one algebraic norm, the diagonal of its scalar-part form $N(\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}$; it is complex-valued and indefinite, of Gram matrix the identity on $e_0,e_1,e_2,e_3$ and radical $\{0\}$, it is the multiplicative form of the plain product, $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ with $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$, and it is **not** multiplicative for the block, where $N(\tilde P\star\tilde Q)=N(\tilde P,\tilde Q)^2$; the three conjugations preserve the product, and $N(\tilde Q^{\natural})=N(\tilde Q)$ while $N(\tilde Q^{*})=\overline{N(\tilde Q)}$.**
 
 **Definition.** The **algebraic norm of the block** is the diagonal of the scalar-part form of the product,
 
@@ -88,6 +92,8 @@ The natural conjugation, an anti-automorphism of the plain product, is an **auto
 
 ## The Absence of a Unit and of an Inverse
 
+**The symmetric quaternionic product has no left unit, no right unit and no two-sided unit, so no element is left-invertible, right-invertible or invertible of the block, the set of invertible elements is empty and the block has no group of units.**
+
 **Theorem (the block is not unital).** The symmetric quaternionic product has no left unit, no right unit and no two-sided unit. For every element $\tilde A$,
 
 $$
@@ -106,6 +112,8 @@ The absence is total and is not repaired by a change of element: it is the absen
 
 ## The Non-Isotropic Class
 
+**The non-isotropic class $N\neq0$ is exactly the group of units of the plain product, with the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$; it is stable under the plain product and not under the product of the block, its subset $N=1$ is a quadric of complex dimension three that is the analogue of a norm-one group without being one, and the group-theoretic substitute inside the block is the group of $\mathbb{C}$-linear maps preserving the form $N$, of matrices $\mathsf M$ with $\mathsf M^{\mathsf T}\mathsf M=I_4$.**
+
 **Definition.** An element $\tilde Q$ of $\mathbb{B}$ is **non-isotropic** for the block when $N(\tilde Q)\neq0$, and **isotropic** when $N(\tilde Q)=0$. The non-isotropic class is the complement of the isotropic cone, and it is the analogue of a group of units without being one.
 
 **Theorem (the non-isotropic class is the unit class of the plain product).** The non-isotropic elements of the block are precisely the invertible elements of the **plain** product: $\tilde Q$ is a unit of the plain product exactly when $N(\tilde Q)\neq0$, and its inverse of that product is
@@ -118,7 +126,7 @@ $$
 
 **Remark (the block owns the form, not the group).** The non-isotropic class is stable under the plain product by the multiplicativity $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$, and it is **not** stable under the product of the block: $N(\tilde P\star\tilde Q)=N(\tilde P,\tilde Q)^2$ can vanish for non-isotropic factors, as at $e_1,e_2$. The invertibility of the plain product is therefore read on the algebraic norm of the block, and the product of the block has no invertibility to read.
 
-**Remark (the algebraic norm-one slice).** The set $N(\tilde Q)=1$ is a quadric of complex dimension three, containing the four basis elements $e_0,e_1,e_2,e_3$; the three level sets $N=-1$, $N=0$, $N=1$ are the three root sets of the block (*Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra*). The slice is the analogue of the norm-one group of an associative unital product, and it is not a group here, because the block has no unit to be the identity of it.
+**Remark (the algebraic norm-one slice).** The set $N(\tilde Q)=1$ is a quadric of complex dimension three, containing the four basis elements $e_0,e_1,e_2,e_3$; the three level sets $N=-1$, $N=0$, $N=1$ are the root sets of the block, read in *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* for $N=-1$ and $N=1$ and in *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra* for $N=0$. The slice is the analogue of the norm-one group of an associative unital product, and it is not a group here, because the block has no unit to be the identity of it.
 
 **Remark (the group of linear maps preserving the form).** The group-theoretic substitute inside the block is not a group of elements but a group of operators: the group of $\mathbb{C}$-linear maps of $\mathbb{B}$ preserving the form $N$, whose membership condition on a matrix $\mathsf M$ is $\mathsf M^{\mathsf T}\mathsf M=I_4$ because the Gram matrix is the identity. That group, its Lie algebra and the question of which elements of the block act by maps of it are *The Multiplication Operators of the Symmetric Quaternionic Algebra*; the block itself contributes no unit and hence no such group of elements.
 
@@ -156,4 +164,5 @@ complex-valued, indefinite, the coefficient of the block-square and the multipli
 - *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the square of the block and the absence of a unit.
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the form of the block, its Gram matrix and its real forms.
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the group of linear maps preserving the form and its Lie algebra.
-- *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-quaternionic-algebra.md`), for the three level sets of the algebraic norm.
+- *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-algebra.md`), for the level sets $N=-1$ and $N=1$ of the algebraic norm.
+- *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-algebra.md`), for the level set $N=0$.

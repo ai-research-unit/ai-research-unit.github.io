@@ -14,11 +14,15 @@ one of the four algebraic norms of the space and not one of the other three. The
 
 The invertibility is where the article records an **absence**. The plain product is associative and unital, so its invertible elements and its group of units are defined; but the algebraic norm of the product does **not** decide them. The element $e_0+e_1$ is invertible and satisfies $B(e_0+e_1)=0$, and the element $e_0+ie_1$ is a zero divisor and satisfies $B(e_0+ie_1)=2$: the non-vanishing of the algebraic norm is neither necessary nor sufficient for invertibility, and the article states that absence rather than a criterion. The criterion of the plain product is furnished by a different quadratic form, which is not the algebraic norm of the plain product and is not studied here; the zero divisors are *Zero Divisors of the General Plain Algebra*.
 
+**The results.** The plain product carries one algebraic norm, the diagonal of its scalar-part form, $B(\tilde Q)=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2}$, complex-valued and indefinite, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, with the complex cone as its vanishing set. It is **not multiplicative**. It does **not** decide invertibility: $B(\tilde Q)=0$ does not force $\tilde Q$ non-invertible, and $B(\tilde Q)\neq0$ does not force $\tilde Q$ invertible. Each section below states its result first and then proves it.
+
 **Boundaries.** The three other algebraic norms of the space are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, and they are not read here: the general quaternionic algebraic norm $N$ is that of the quaternionic algebra, the general plain sesquilinear algebraic norm $H$ is that of the general plain sesqualgebra, and the general quaternionic sesquilinear algebraic norm $K$ is that of the general quaternionic sesqualgebra. The product and its element theory are *Introduction to the General Plain Algebra of Biquaternions*; the conjugations and the remarkable subspaces are the basic algebra article; the unit tables of the four products are *Comparison Between the Four General Products*; the definitions of the unit, the inverse and the group of units are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, with $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$. The scalar part is $\mathrm{Sc}$, the natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$ is the complex bilinear dot product of the vector parts. Throughout this article the product is the general plain bilinear product, written by juxtaposition, $\tilde P\tilde Q$.
 
 ## The Algebraic Norm of the Plain Product
+
+**The general plain bilinear product carries exactly one algebraic norm**, the diagonal of its scalar-part form, $B(\tilde Q)=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2}$; it is complex-valued and indefinite, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, and its vanishing set is the complex cone.
 
 **Definition.** The **algebraic norm of the plain product** is the diagonal of the scalar-part form of the product,
 
@@ -50,6 +54,8 @@ $$
 
 ## The Algebraic Norm Is Not Multiplicative
 
+**The algebraic norm of the plain product is not multiplicative:** $B(\tilde P\tilde Q)\neq B(\tilde P)B(\tilde Q)$ in general, the pair $(e_1,e_2)$ separating the two sides.
+
 **Proposition.** The algebraic norm of the plain product is **not** multiplicative:
 
 $$
@@ -62,11 +68,15 @@ $$
 
 ## The Unit and the Group of Units
 
+**The plain product is associative and unital, with the two-sided unit $e_0$, and its invertible elements form the group of units $\mathbb{B}^{\times}$, a proper subset of $\mathbb{B}\setminus\{0\}$ because the product has zero divisors.**
+
 The unit of the plain product is $e_0$: it is a two-sided unit, $\tilde Q e_0=e_0\tilde Q=\tilde Q$, and it is the only one (*Introduction to the General Plain Algebra of Biquaternions*; *Comparison Between the Four General Products*). The product is associative, so the inverse of an element is unique when it exists and the invertible elements form the **group of units** of the plain product, a genuine group (*Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*).
 
 The plain product has zero divisors: the identity $(e_0+ie_1)(e_0-ie_1)=e_0^{2}-(ie_1)^{2}=e_0-e_0=0$ exhibits a product of two nonzero elements that is zero. The plain algebra is therefore not a division algebra, and the group of units is a proper subset of $\mathbb{B}\setminus\{0\}$. The zero divisors, their families and their geometry are *Zero Divisors of the General Plain Algebra*, and they are cited here, not read.
 
 ## The Absence of a Criterion from the Algebraic Norm
+
+**The algebraic norm does not decide invertibility:** $B(\tilde Q)=0$ does not force $\tilde Q$ non-invertible, and $B(\tilde Q)\neq0$ does not force $\tilde Q$ invertible.
 
 The algebraic norm of a product would decide invertibility if the invertible elements were exactly the elements of non-vanishing algebraic norm. For the plain product that statement is **false in both directions**, and the article records the absence rather than a criterion.
 

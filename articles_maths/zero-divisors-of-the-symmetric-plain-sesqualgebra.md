@@ -25,7 +25,7 @@ common zero-divisor set of the four general products.
 
 **Boundaries.** The product, its class and its placement among the twelve structures are
 *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*; the form $H$ and its
-non-degeneracy are *Norm and Invertibility in the General Plain Algebra* and *The Hermitian Form as
+non-degeneracy are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and *The Hermitian Form as
 a Product on the Symmetric Plain Sesqualgebra*. The relative definition of the zero divisor and the
 vocabulary of the left, the right and the two-sided are *Definitions for the Study of the 12
 Algebraic Structures*; the common set of the four general products and the theorem that the four
@@ -56,7 +56,11 @@ $$
 and it does not depend on whether $H$ is read in the first or the second argument, because
 $H(\tilde X,\tilde P) = \overline{H(\tilde P,\tilde X)}$.
 
+**The results.** A nonzero element is a zero divisor of the block exactly when it has a nonzero annihilating partner, and the criterion is the single equation $\tilde P\star\tilde R = 0$ if and only if $H(\tilde P,\tilde R) = 0$; equivalently every nonzero element is a two-sided zero divisor. The zero-divisor set is therefore the whole punctured space $\mathcal{Z}_\star = \mathbb{B}\setminus\{0\}$, of complex dimension four and real dimension eight, and it is not a cone. The annihilator of every nonzero element is the Hermitian orthogonal hyperplane $\tilde P^{\perp}$, of complex dimension three and the same on the left and on the right, while the block has none of the two families of the plain product. Its set strictly contains the common zero-divisor set of the four general products and meets every remarkable subspace in that subspace with the origin removed.
+
 ## The Criterion
+
+**For nonzero $\tilde P$ and $\tilde R$ the criterion is the single bilinear equation $\tilde P\star\tilde R = 0$ if and only if $H(\tilde P,\tilde R) = 0$, so the annihilating partners of a nonzero $\tilde P$ are the nonzero elements of its orthogonal hyperplane $\tilde P^{\perp}$, on either side.**
 
 **Theorem (the criterion of the block).** For nonzero $\tilde P$ and $\tilde R$,
 
@@ -81,6 +85,8 @@ statement, and the block has no equation in one element that decides its zero di
 the set below is not a cone.
 
 ## The Zero Divisor Set
+
+**Every nonzero element of the block is a two-sided zero divisor, so the zero-divisor set is $\mathcal{Z}_\star = \mathbb{B}\setminus\{0\}$, the punctured space of complex dimension four (real dimension eight), which is not a cone.**
 
 **Theorem (every nonzero element is a two-sided zero divisor).** An element of $\mathbb{B}$ is a
 zero divisor of the block if and only if it is nonzero.
@@ -124,6 +130,8 @@ hyperplane reading, the rank and the reading on the remarkable subspaces are the
 
 ## The Families
 
+**The block has no family split: its criterion is bilinear and not quadratic, it separates the elements by no elementwise condition, and the set is homogeneous over the whole punctured space.**
+
 The plain product splits its zero divisors into two disjoint families, the pure and the non-pure,
 and the split is the criterion read on the scalar coordinate: the pure family has $P_0 = 0$ and is
 the nonzero nilpotents, and the non-pure family has $P_0\neq0$ and is the nonzero complex multiples
@@ -147,6 +155,8 @@ parent is left to *Idempotents of the General Plain Algebra* and *Nilpotents of 
 Algebra*.
 
 ## The Comparison with the Four General Products
+
+**The block's zero-divisor set strictly contains the common set of the four general products, the nonzero isotropic cone $\{C(\tilde P) = 0\}$, the element $e_0$ being a block zero divisor and not a general-product one.**
 
 The four general products of the space, $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$,
 $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, select one common zero-divisor set,
@@ -173,6 +183,8 @@ non-degenerate form; the sibling is read in *The Radical and the Isotropic Eleme
 Symmetric Quaternionic Algebra*.
 
 ## The Zero Divisors and the Remarkable Subspaces
+
+**The set meets every subspace in its punctured self: the zero divisors of the block inside a subspace $W$ are exactly the nonzero elements of $W$, so every remarkable subspace contributes its nonzero elements and none is preferred.**
 
 **Proposition (the set meets every subspace in its punctured self).** For every subspace $W$ of
 $\mathbb{B}$, the zero divisors of the block that lie in $W$ are the nonzero elements of $W$; in

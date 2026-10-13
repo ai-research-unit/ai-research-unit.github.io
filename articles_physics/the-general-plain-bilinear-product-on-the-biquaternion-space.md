@@ -22,7 +22,7 @@ symmetric and non-degenerate, with Gram matrix $\mathrm{E}=\mathrm{diag}(1,-1,-1
 basis. It is neither the metric of spacetime nor the interval: the metric is the interval,
 $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, the general quaternionic bilinear form of signature
 $(-,+,+,+)$ on the material sector, and it belongs to the companion quaternionic block and to
-*Biquaternion Norm and Invertibility*. The two forms sit on the same algebra with opposite types, $B$
+*The Interval as the Square and the Charge of the Material Composition*. The two forms sit on the same algebra with opposite types, $B$
 definite on each sector where the interval is indefinite, and the place where that opposition is read
 physically is the material sector, in the companion article *The General Plain Bilinear Product on the Material Sector*.
 
@@ -33,7 +33,7 @@ are *The General Plain Bilinear Product on the Material Sector*; the multiplicat
 and the sandwich are *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*; the
 invertibility criterion, the group of units and the cone are the mathematics of *The Group of Units of the
 General Plain Algebra and the Complement of the Zero-Divisor Cone* and the physical level data of
-*Biquaternion Norm and Invertibility*, which own the norm, the interval, the light cone and the mass
+*The Four Forms, the Four Algebraic Norms and the Change of Scalars* and *The Interval as the Square and the Charge of the Material Composition*, which own the norm, the interval, the light cone and the mass
 shell; the properties of $B$ — its symmetry, its non-degeneracy, its Gram matrix and its restriction to
 the remarkable subspaces — are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and *Remarkable
 Subspaces under the General Plain Algebra of Biquaternions*; and the comparison of the four general
@@ -165,8 +165,7 @@ and the non-invertible ones are the elements of the **zero-divisor cone** $\math
 algebra is the disjoint union of the units and the cone, the origin lying in the cone and being the one
 element that is neither a unit nor a zero divisor, a zero divisor being required to be nonzero. The norm,
 the group, the cone and the partition are the mathematics of *The Group of Units of the General Plain
-Algebra and the Complement of the Zero-Divisor Cone* and the physical level data of *Biquaternion Norm
-and Invertibility*; what is read here is that they are read on the whole algebra at once, the criterion
+Algebra and the Complement of the Zero-Divisor Cone* and the physical level data of *Norm and Invertibility in the General Quaternionic Algebra*; what is read here is that they are read on the whole algebra at once, the criterion
 being the same in every remarkable subspace, and the interior of the group being the off-cone part.
 
 **Proposed interpretation, labelled as such.** *Invertible* reads **reversible**: the inverse is the
@@ -211,7 +210,7 @@ declare is the same as the boundary of the form.
 - **$B$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
 causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\mathbb{M}_-$.
 - **$B$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
-level data of the general quaternionic bilinear form, owned by *Biquaternion Norm and Invertibility*; the
+level data of the general quaternionic bilinear form, owned by *The Interval as the Square and the Charge of the Material Composition*; the
 worked case of the companion material article shows the two forms giving different numbers on the same
 element.
 - **$B$ is not the reversibility.** The criterion of invertibility is the norm $N$ and not the scalar form
@@ -314,7 +313,7 @@ Zero-Divisor Cone*
 for the group of units, the multiplicativity of the norm and the cone as the boundary of invertibility.
 - Companion article *The General Plain Bilinear Product on the Material Sector*, for the sector sign, the sector of a
 composite and the reversibility read on $\mathbb{M}_-$.
-- Companion article *Biquaternion Norm and Invertibility*, for the interval, the light cone, the mass
+- Companion article *The Interval as the Square and the Charge of the Material Composition*, for the interval, the light cone, the mass
 shell and the units.
 - Companion article *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*, for
 the multiplication operators, the sandwich and the adjoint.

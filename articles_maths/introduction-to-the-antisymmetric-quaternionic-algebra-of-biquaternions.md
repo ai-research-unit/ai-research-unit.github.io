@@ -19,7 +19,7 @@ information about the operation; the identity of the operation with half the qua
 commutator; the failure of the Jacobi identity, with the witness on which the corpus reads it;
 and the placement of the block among the twelve operations of the catalogue. The element theory
 that the vanishing square forces — the nilpotents, the zero divisors, the idempotents and the
-roots — is the subject of six companion articles of the Common Theory, and the failure, the
+roots — is the subject of five companion articles of the Common Theory, and the failure, the
 invariant forms, the remarkable subspaces, the operators and the two matrix models are the
 subjects of the articles that follow; none of them is developed here.
 
@@ -136,14 +136,16 @@ central value $N(\tilde P)e_0$, the symmetric half keeps the scalar part and the
 rest, and with the scalar part removed the square is lost.
 
 **Remark (the element theory that follows).** The vanishing square is the single fact on which
-the element theory of the block rests, and the six companion articles of the form read it. Every
-element is a nilpotent, of index two away from the origin (*Nilpotents of the Antisymmetric
-Quaternionic Algebra*); every nonzero element is a two-sided zero divisor, with itself as the
-annihilating partner (*Zero Divisors of the Antisymmetric Quaternionic Algebra*); the origin is
-the only idempotent (*Idempotents of the Antisymmetric Quaternionic Algebra*); and the block has
-no root of $-1$ and no root of $+1$, while its roots of $0$ are all the nonzero elements
-(*Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra*,
-*Square Roots of a General Element in the Antisymmetric Quaternionic Algebra*). Each of the six
+the element theory of the block rests, and the five companion articles of the form read it. Every
+element is a nilpotent, of index two away from the origin (*Square Roots of Zero and the
+Nilpotents of the Antisymmetric Quaternionic Algebra*); every nonzero element is a two-sided zero
+divisor, with itself as the annihilating partner (*Zero Divisors of the Antisymmetric
+Quaternionic Algebra*); the origin is the only idempotent (*Square Roots of One and the
+Idempotents of the Antisymmetric Quaternionic Algebra*); and the block has no root of $-1$ and no
+root of $+1$, while its roots of $0$ are all the nonzero elements
+(*Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra*,
+*Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra* and
+*Square Roots of a General Element in the Antisymmetric Quaternionic Algebra*). Each of the five
 is a reading of the display $\tilde X\diamond\tilde X=0$.
 
 ## The Commutator and the Two Halves
@@ -215,7 +217,7 @@ The antisymmetric quaternionic multiplication is the antisymmetric part of the g
 - *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the other half of the split and the same reconstruction from its own side
 - *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the parent product, its left unit and its operators
 - *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the placement of the block among the twelve operations
-- *Norm and Invertibility in the Antisymmetric Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-antisymmetric-quaternionic-algebra.md`), *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md`), *Nilpotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/nilpotents-of-the-antisymmetric-quaternionic-algebra.md`), *Idempotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/idempotents-of-the-antisymmetric-quaternionic-algebra.md`), *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-quaternionic-algebra.md`) and *Square Roots of a General Element in the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-quaternionic-algebra.md`), for the element theory that the vanishing square forces
+- *Norm and Invertibility in the Antisymmetric Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-antisymmetric-quaternionic-algebra.md`), *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md`), *Annihilators of the Antisymmetric Quaternionic Algebra* (`articles_maths/annihilators-of-the-antisymmetric-quaternionic-algebra.md`), *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-quaternionic-algebra.md`), *Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-quaternionic-algebra.md`) and *Square Roots of a General Element in the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-quaternionic-algebra.md`), for the element theory that the vanishing square forces
 - *The Specificities of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-antisymmetric-quaternionic-algebra.md`), for the criterion of the block, the projector class and the comparison of the twelve in one table
 - *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.md`), for the cyclic sum, its explicit formula and the associator criterion
 - *The Associator and the Ternary Product of the Quaternionic Product* (`articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.md`), for the associator of the parent product, the defect of the block

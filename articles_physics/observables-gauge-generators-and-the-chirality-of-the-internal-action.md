@@ -13,6 +13,9 @@ multiplication as an operator algebra. Finally the internal symmetry acts on the
 multiplication and not through left: only the right action preserves the algebra-valued canonical form, and
 the one-sidedness of that form is the framework's interpretation of a **chirality** in the internal action.
 
+The two sectors name two roles: a **material element** $A\in\mathbb{M}_-$ is the object observed, and its
+**observable** is the Hermitian representative $iA\in\mathbb{M}_+$ whose eigenvalues are the readings.
+
 The article keeps to the operator structure. It defers the positivity of the dagger and the positive cone
 to *Mass, Rank and the Positivity of the Dagger*; the internal group and its compactness to *Particle Types, Discrete Charge and Three-Particle Couplings*; the group ceiling to *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*; the states to *The States the Indefinite Metric Cannot Normalise* and *Decoherence as Idempotent Projection*;
 and the mathematics of the adjoints and the sandwiches to the mathematics articles *The Adjoints of the
@@ -50,6 +53,11 @@ $\mathbb{M}_-$" has this exact content. Two further facts fix the **physical int
 operators exponentiate to the unitaries of the module, $e^{L_{\tilde S}}=L_{e^{\tilde S}}$, and the
 resulting group is the internal $U(2)$; and multiplication by the central $i$ exchanges the two kinds,
 $L_{i\tilde H}=iL_{\tilde H}$, so the generator of a unitary is one sector away from the observable.
+
+Read with the dictionary of *Conventions in the Biquaternion Universe*, the Hermitian parameter
+$\tilde H=iA$ is the representative of a **material element** $A\in\mathbb{M}_-$, which is the object
+observed; the self-adjoint operator is its reading, and the skew-adjoint generator $L_A$ is the flow of an
+object in the same sector.
 
 ## The Sandwich: Self-Adjoint, Never Skew-Adjoint
 

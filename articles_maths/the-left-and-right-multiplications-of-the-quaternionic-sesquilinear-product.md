@@ -245,9 +245,9 @@ $$
 L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi , \qquad L_{\tilde\Pi}\bigl(\tilde\Pi^{\natural}\bigr) = N(\tilde\Pi)\,e_0 . 
 $$
 
-**Proof.** The first is the idempotent equation, $L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi \star \tilde\Pi = \tilde\Pi$. For the second, the nontrivial idempotents have real coordinates (*Idempotents of the General Quaternionic Sesqualgebra*), so $\overline{\tilde\Pi} = \tilde\Pi$ and $(\tilde\Pi^{\natural})^{*} = \overline{\tilde\Pi} = \tilde\Pi$; hence $L_{\tilde\Pi}(\tilde\Pi^{\natural}) = \tilde\Pi^{\natural}(\tilde\Pi^{\natural})^{*} = \tilde\Pi^{\natural}\tilde\Pi = N(\tilde\Pi)e_0$, the plain product of an element with its natural conjugate being the norm times the identity.
+**Proof.** The first is the idempotent equation, $L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi \star \tilde\Pi = \tilde\Pi$. For the second, the nontrivial idempotents have real coordinates (*Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*), so $\overline{\tilde\Pi} = \tilde\Pi$ and $(\tilde\Pi^{\natural})^{*} = \overline{\tilde\Pi} = \tilde\Pi$; hence $L_{\tilde\Pi}(\tilde\Pi^{\natural}) = \tilde\Pi^{\natural}(\tilde\Pi^{\natural})^{*} = \tilde\Pi^{\natural}\tilde\Pi = N(\tilde\Pi)e_0$, the plain product of an element with its natural conjugate being the norm times the identity.
 
-**Remark.** With $N(\tilde\Pi) = 1$ for the nontrivial idempotents of *Idempotents of the General Quaternionic Sesqualgebra*, the second value is $e_0$, and the two values together show that the left multiplication by an idempotent fixes the idempotent and sends its natural conjugate to the identity. This is the operator reading of the two-sided nature of an idempotent, and it is the closest the operator theory comes to the unit that the multiplication does not have.
+**Remark.** With $N(\tilde\Pi) = 1$ for the nontrivial idempotents of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, the second value is $e_0$, and the two values together show that the left multiplication by an idempotent fixes the idempotent and sends its natural conjugate to the identity. This is the operator reading of the two-sided nature of an idempotent, and it is the closest the operator theory comes to the unit that the multiplication does not have.
 
 ## Summary
 

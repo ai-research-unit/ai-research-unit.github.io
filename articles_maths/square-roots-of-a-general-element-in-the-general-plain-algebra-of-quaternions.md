@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article solves the equation $\tilde p^2=\tilde q$ in $\mathbb{H}$ for an arbitrary $\tilde q$. It is the general case of which *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, above this article in this category, treats the three central values; the method is the split of a quaternion into its scalar and its vector part and the resulting pair of a quadratic and a linear equation, and it uses neither Clifford algebras nor forms. The result is a classification by the vanishing of the vector part of $\tilde q$: away from the scalar line there are exactly two roots, and on the scalar line the count is two roots, one root or a sphere of roots according as the scalar is positive, zero or negative. The quaternion norm and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*, above this article in this category, and they are neither used nor needed.
+This article solves the equation $\tilde p^2=\tilde q$ in $\mathbb{H}$ for an arbitrary $\tilde q$. It is the general case of which *Square Roots of One and the Idempotents of the General Plain Algebra* and *Square Roots of Zero and the Nilpotents of the General Plain Algebra*, above this article in this category, treat the three central values; the method is the split of a quaternion into its scalar and its vector part and the resulting pair of a quadratic and a linear equation, and it uses neither Clifford algebras nor forms. The result is a classification by the vanishing of the vector part of $\tilde q$: away from the scalar line there are exactly two roots, and on the scalar line the count is two roots, one root or a sphere of roots according as the scalar is positive, zero or negative. The quaternion norm and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*, above this article in this category, and they are neither used nor needed.
 
 ## The Reduction
 
@@ -68,7 +68,7 @@ The minus root of the reduced quadratic is what the positive-definiteness of the
 
 ## The Specialisation to the Central Values
 
-The three central equations of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, above this article in this category, are the cases $\mathbf Q=0$, $q_0=-1,0,1$ of the classification:
+The three central equations of *Square Roots of One and the Idempotents of the General Plain Algebra* and *Square Roots of Zero and the Nilpotents of the General Plain Algebra*, above this article in this category, are the cases $\mathbf Q=0$, $q_0=-1,0,1$ of the classification:
 
 - $q_0=-1$: the sphere $\{\mathbf P\in V : |\mathbf P|^2=1\}$, the unit sphere of the vector subspace, matching the roots of $-1$;
 - $q_0=0$: the single root $0$, matching the root set of $0$;
@@ -104,6 +104,9 @@ Writing $\tilde q=q_0+\mathbf Q$ and $\tilde p=p_0+\mathbf P$, the square is $\t
 
 ## Further Reading
 
+- *Introduction to the General Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-quaternions.md`), for the product, the unit and the square.
+- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-quaternions.md`), above this article in this category, for the central values $+1$ and $-1$ and the idempotents.
+- *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra-of-quaternions.md`), above this article in this category, for the central value $0$ and the empty nilpotent class.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the square of a quaternion and the vector-part computation.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the square and the square-root problem on the quaternion sphere.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the square roots of quaternions and the role of the vector part.

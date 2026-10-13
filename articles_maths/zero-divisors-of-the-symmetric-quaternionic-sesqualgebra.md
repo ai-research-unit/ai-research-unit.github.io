@@ -40,6 +40,8 @@ $C(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\math
 of the plain bilinear product with the natural conjugation, as in *Zero Divisors of the General
 Plain Algebra*. Throughout this article the product is the block, written $\star$.
 
+**The results.** A nonzero biquaternion is a zero divisor of the block exactly when $Q_0=0$ or $C(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q)=0$, so the zero-divisor set is the enlarged set $(\{Q_0=0\}\cup\{C(\tilde Q)=0\})\setminus\{0\}$. It splits into the pure family $\{Q_0=0\}$, the nonzero elements of the vector subspace, and the non-pure family $\{Q_0\neq0,\ C(\tilde Q)=0\}$, whose members have the central square of the plain zero divisors. The block's set strictly contains the single zero-divisor set $\{\tilde Q\neq0:C(\tilde Q)=0\}$ of the four general products, the difference being the pure non-isotropic vectors such as $e_1$. The left and the right zero divisors coincide, and the regular elements are those with $Q_0\neq0$ and $C(\tilde Q)\neq0$.
+
 ## Definition
 
 The word names a product, so the definition is stated for a general product and then read on the
@@ -78,6 +80,8 @@ $$
 Unqualified, the product is the block for the rest of the article.
 
 ## The Criterion
+
+**A nonzero biquaternion $\tilde Q$ is a zero divisor of the block exactly when $Q_0=0$ or $C(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q)=0$, so the zero-divisor set is the disjoint union of the pure family $\{Q_0=0,\ \tilde Q\neq0\}$ and the non-pure family $\{Q_0\neq0,\ C(\tilde Q)=0\}$.**
 
 **Theorem (the criterion of the block).** A nonzero biquaternion $\tilde Q$ is a zero divisor of
 the block if and only if
@@ -128,6 +132,8 @@ since $C(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q)=0$ would force $(\mathbf Q,\mathb
 
 ## The Two Sides and the Annihilators
 
+**The block is conjugate-commutative, so the left and the right zero divisors coincide and the two annihilators of an element are one set; the annihilator is a complex plane in the pure case and a complex line in the non-pure case.**
+
 The annihilator of an element is the kernel of the left or the right multiplication, the two
 coinciding because the block is conjugate-commutative; it is a complex plane in the pure case and a
 complex line in the non-pure case, so it separates the two families the criterion joins. The
@@ -135,6 +141,8 @@ annihilators, the rank table and the reading on the remarkable subspaces are the
 *Annihilators of the Symmetric Quaternionic Sesqualgebra*, below this article in this category.
 
 ## Comparison with the Four General Products
+
+**Every zero divisor of a general product is a zero divisor of the block, and the inclusion is strict: the block's set adds the pure non-isotropic vectors, such as $e_1$, whose central square is $1$.**
 
 The four general products of $\mathbb{B}$ have one zero-divisor set,
 $\{\tilde Q\neq0:C(\tilde Q)=0\}$, where $C$ is the central square (**Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**). The block's set contains it, and it contains more.
@@ -165,6 +173,8 @@ Sesqualgebra of Biquaternions*). The cancellation removes one complex condition 
 equations of a pure pair, and one condition is the whole difference between the two rows.
 
 ## The Complement: the Regular Elements
+
+**An element of the block is the origin, a zero divisor, or regular, and $\tilde Q$ is regular exactly when $Q_0\neq0$ and $C(\tilde Q)\neq0$; the regular elements replace the invertible ones that the absence of a unit leaves empty.**
 
 **Definition.** A nonzero element of the block that is neither a left nor a right zero divisor is
 **regular**. The origin is the only element excluded from both classes: an element is either the

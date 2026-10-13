@@ -29,7 +29,11 @@ the two sides carry two **distinct** planes. The article owns that reading, the 
 their ranks, and the shape of the annihilator on the remarkable subspaces; the zero-divisor set is
 the cited article's.
 
+**The results.** The annihilator of an element is the set of partners that it kills. For the general plain product the two multiplication operators have trace $4P_0$ and determinant $C(\tilde P)^{2}$; both annihilators are trivial off the cone, and each is a complex plane on the cone. The two planes are distinct, and they share the line $\mathbb{C}\tilde Q^{\natural}$.
+
 ## The Annihilator of a Product
+
+**The annihilator of an element is the set of partners that it kills; the left annihilator is the kernel of the left multiplication and the right annihilator is the kernel of the right multiplication, and both are nonzero exactly when the element is a zero divisor of the corresponding side.**
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
@@ -55,6 +59,8 @@ Quaternionic Algebra*, *Annihilators of the General Plain Sesqualgebra* and *Ann
 General Quaternionic Sesqualgebra* each have an involution that modifies the reading.
 
 ## The Multiplication Operators and Their Ranks
+
+**Both multiplication operators have trace $4P_0$ and determinant $C(\tilde P)^{2}$; they are invertible off the cone, and on the cone each is of rank two with a kernel of complex dimension two.**
 
 **Proposition (the operators and their determinants).** In the basis $e_0,e_1,e_2,e_3$ the
 operators $L_{\tilde P}$ and $R_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ have trace
@@ -85,6 +91,8 @@ multiplication by a rank-one matrix have rank two as operators on the four-dimen
 space; the kernels are therefore of complex dimension two. The origin gives the zero operator.
 
 ## The Annihilator of an Element
+
+**Off the cone both annihilators are $\{0\}$; on the cone each is a complex plane containing $\tilde Q^{\natural}$; and on the cone the two planes are distinct, sharing only the line $\mathbb{C}\tilde Q^{\natural}$.**
 
 **Theorem (the dimension of the annihilators).** Let $\tilde Q\in\mathbb{B}$.
 
@@ -126,6 +134,8 @@ second generator.
 
 ## The Dichotomy by the Cone
 
+**The annihilator reads the cone twice: off the cone it is trivial and the element is invertible, on the cone it is a complex plane; the block is the one of the general products for which the two sides are genuinely two.**
+
 The zero-divisor set of the block is the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, a single
 equation. The annihilator reads the cone twice: off the cone both annihilators are $\{0\}$ and the
 element is invertible, and on the cone each annihilator is a complex plane. The block is the parent
@@ -136,6 +146,8 @@ the plane and modify the coincidence of the two sides by their involution. The g
 algebra is the one for which the two sides are genuinely two.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**On every remarkable subspace the annihilator is the intersection of the ambient annihilator with the subspace: trivial off the cone, and a complex plane inside the subspace on the cone.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
 $L_{\lambda e_0}\tilde X=\lambda\tilde X$, the scalar operator, so it is a unit of the plain

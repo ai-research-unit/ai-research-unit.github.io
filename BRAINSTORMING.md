@@ -16,24 +16,55 @@ The algebra case has no antisymmetric diagonal, the sesqualgebra case has one an
 invertible region ?
 
 
-Decomposition between the cone and its complement, the unit ? 
-The cone is the complement of the unit group
+
+so there are stable projections we cannot measure, and observables we can mesure and who give access to projections states ?
 
 
 
-
-
-
-The cone as the causal and informational boundary
-The material band reads the cone as the line between the possible and the impossible, and the corpus states that reading in several physical settings.
-
-An exchange of information between two events along a light signal is possible exactly when their displacement is null, and because a null displacement is a zero divisor the channel through which signals pass is the cone itself; the cone forbids the spacelike separations and carries the null ones (The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form, Causality and the Light Cone as an Information Barrier in Biquaternionic Form). The Rindler horizon is the zero-divisor cone of the material sector, so the modular flow of the Unruh construction is read as the biquaternionic boost flow and its horizon as the algebraic null cone (The Unruh Effect in Biquaternionic Form). At a black-hole horizon the local light cone at each point is the zero-divisor cone of that point's copy of M−
+Quantum physics is the quest for the idempotents (pure states) of an algebraic space.
 ​
-  — the local statement — while the horizon as a whole is a global object the pointwise algebra does not see (Hawking Radiation in Biquaternionic Form). The characteristic surfaces of the wave operator are the light cones, and a discontinuity on the cone is not a shock: it stays on the cone and does not steepen (Shock Electromagnetic Waves). In velocity space the cone is the absolute of the hyperbolic geometry and the boundary at infinity: it is at infinite geodesic distance from every velocity, and its ideal points are exactly the lightlike elements, the ones the algebra cannot invert (Velocity Space as Hyperbolic Geometry in Biquaternionic Form). Under the conformal group the inversion is undefined precisely on the cone, and all four families of the group preserve it, so the cone is the invariant object of conformal geometry and is native to the algebra (The Conformal Group in Biquaternionic Form). In a medium the algebraic null cone is the optical metric's cone: the framework's cone has aperture c and the optical cone aperture 
-1/n, so the light cone of the corpus's zero-divisor reading is the light cone of the medium's optical geometry, and there is no real null cone below cutoff (The Effective Optical Metric of the Local Complex Structure, The Local Complex Structure and the Speed of Light).
 
-The physical interpretation is that every causal notion of the corpus — signal, horizon, characteristic, absolute, inversion, medium — is the one cone, read in the vocabulary of the situation. The global objects that sit on it, a horizon or an event, are the objects the pointwise algebra cannot itself carry.
+Exponentials for states and roots : exp(θ Ξ~ )
 
+
+
+
+Geometry of the idempotents. Every non-invertible idempotent is a null element, N(Π~) = 0; the unit e0 is idempotent and not null, so the unit is excluded. So the pure states — the trace-one idempotents of M^+ — are trace-one points of the zero-divisor cone, whose material part is the light cone of M^-. The Bloch ball is the trace-one slice of the future light cone; the pure states are its boundary. The causal boundary and the list of pure states are one algebraic locus read twice. This is where the probability form (Hermitian, positive, the Born weight) and the causal form (the norm, vanishing on the cone) meet.
+
+Relativity sits on the same cone. The idempotents of M^+ lie on the null cone of the algebra, which is not the light cone of the material sector but contains it as the material part. The unitary group is exactly the set of automorphisms preserving the trace pairing; the Lorentz group preserves the cone by congruence but moves states off the trace-one slice. A boost is a Hermitian element on the norm-one hyperboloid (N = 1), not on the cone. It is Hermitian and therefore not matrix-unitary, Λ~Λ~* = Λ~^2 ≠ e0, so its conjugation preserves neither the trace nor the trace pairing — the algebraic reason a boost is not a quantum operation. Two boosts compose to a boost times a unitary factor, the Wigner rotation.
+
+
+
+
+
+
+
+
+
+I'd like the observables to be noted
+\tilde P=(ct')e_0+(ix')e_1+(iy')e_2+(iz')e_3
+rather than
+\tilde H=h_0 e_0+i h
+but we can keep the 2 notations because the second is usual
+
+
+
+
+
+A pure state of a qubit is a unit vector
+|ψ⟩=α|0⟩+β|1⟩, |α|^2+|β|^2=1,
+where {|0⟩,|1⟩} is an orthonormal basis. The coefficients α,β are complex numbers, determined up to a global phase.
+
+
+
+DECOMPOSITION Polaire
+
+
+Polar, intepretations 
+
+
+
+related decomp in nilpotents ?
 
 
 
@@ -6879,8 +6910,383 @@ How far to trust the count. All 12 are distinct operations, so "12 products" is 
 
 
 
+Corrected passage (edits marked only where needed; everything else is your text unchanged):
+
+```
+The idea, in one paragraph
+Take the biquaternion algebra B = C ⊗_R H ≅ M_2(C). Its Hermitian subspace M^+ is the "algebraic space", four real dimensional. An element of M^+ has the form H~ = h_0 e_0 + i h, with h_0 real and h a real 3-vector. The theory says that this one subspace holds both the states and the observables, and that a state (a trace-one positive Hermitian element) is pure exactly when it is idempotent, ρ~^2 = ρ~. So the search for pure states becomes a search for idempotents of M^+ — an algebraic, not a Hilbert-space, problem.
+
+
+How the idea is built
+1. Idempotents replace state vectors. The idempotents are
+Π~_{1,2}(μ^) = 1/2 (e_0 ± i μ^), μ^ a real unit vector.
+Each is Hermitian, idempotent, of trace one, and the two are complementary (Π~_1 + Π~_2 = e_0, Π~_1 Π~_2 = 0). They are parametrised by the direction μ^ on S^2. That sphere is the boundary of the Bloch ball. In standard quantum theory a pure state is a ray in a Hilbert space (a vector outside the algebra); here it is an element of the algebra itself.
+
+
+2. Purity becomes a scalar. For a general state ρ~ = 1/2 (e_0 + i r),
+ρ~^2 − ρ~ = 1/4 (|r|^2 − 1) e_0.
+Purity (|r| = 1) is precisely idempotency. All mixedness is one number. Decoherence is therefore the deformation of an idempotent into a non-idempotent element, and only the fully decohered channel is itself a projection.
+
+
+3. Geometry of the idempotents. Every non-invertible idempotent is a null element, N(Π~) = 0; the unit e_0 is idempotent and not null, so it is excluded. So the pure states — the trace-one Hermitian points of the zero-divisor cone — are trace-one points of that cone, whose material part is the light cone of the material sector. The Bloch ball is the trace-one slice of the future light cone; the pure states are its boundary. The causal boundary and the list of pure states are one algebraic locus read twice. This is where the probability form (Hermitian, positive, the Born weight) and the causal form (the norm, vanishing on the cone) meet.
+
+
+4. Observables and measurement. Every Hermitian element has a spectral decomposition in idempotents, H~ = λ_+ Π~_1 + λ_− Π~_2. The Born rule is the trace pairing, p_± = Tr(Π~_± ρ~). Collapse is the sandwich ρ~ ↦ Π~ ρ~ Π~ = p Π~ with p = Tr(Π~ ρ~), which normalises to Π~. Measurement is the action of an idempotent. Reversible versus irreversible is then algebraic: unitary elements satisfy U~ U~* = e_0, non-trivial idempotents satisfy Π~ Π~* = Π~ ≠ e_0. The idempotent is the algebraic signature of irreversibility.
+
+
+5. The roots behind the idempotents. The idempotent is built from the involution i μ^, a square root of +1: Π~ = 1/2 (e_0 + i μ^). It is itself a null element, N(Π~) = 0, though not a root of 0 — its square is Π~, not 0. So it sits at the crossing of two of the three named values: it is the half-sum of the unit and a root of +1, and it lies on the cone of the roots of 0. The roots of −1 are complex structures, of 0 nilpotents (on the null cone), of +1 involutions; the idempotent couples the +1 family with the cone.
+
+
+6. Vacuum and modules. The one-fermion-mode vacuum is literally the minimal idempotent 1/2 (e_0 + i e_3). Minimality means rank one, equivalently a one-dimensional Peirce corner, equivalently that the left ideal B Π~ ≅ C^2 is the defining (spinor, one-particle) module of the algebra. The idempotent selects the module on which the field lives. For a pure state the GNS representation is irreducible for exactly this reason. The family of vacua is again S^2, on which SU(2) acts transitively.
+
+
+7. Entanglement and many qubits. The Bell states form a canonical idempotent basis of B ⊗ B ≅ M_4(C): pairwise orthogonal minimal idempotents summing to the identity, the diagonal of a matrix-unit basis (a Cartan subalgebra). The quest generalises to B^{⊗ n} ≅ M_{2^n}(C).
+
+
+8. Relativity sits on the same cone. The idempotents of M^+ lie on the null cone of the algebra, whose material part is the light cone of M^-. The unitary group is exactly the set of automorphisms preserving the trace pairing; the Lorentz group preserves the cone by congruence but moves states off the trace-one slice. A boost is a Hermitian element on the norm-one hyperboloid (N = 1), not on the cone. It is Hermitian and therefore not matrix-unitary, Λ~Λ~* = Λ~^2 ≠ e_0, so its conjugation preserves neither the trace nor the trace pairing — the algebraic reason a boost is not a quantum operation. Two boosts compose to a boost times a unitary factor, the Wigner rotation.
+
+
+Where the idea is disciplined
+Three boundaries keep the slogan honest.
+
+
+Not every null element is a pure state. The cone is strictly larger than the idempotent set.
+The algebra has no bosonic ladder. Because a commutator has zero trace while Tr(e_0) = 2, no commutator a~ a~† − a~† a~ = e_0 exists in B. So a field vacuum is a state in a module, not an idempotent. The idempotent picture is exact for one fermionic mode, the largest truncation the algebra supports.
+Not every product yields states. The values of the symmetric gauge product lie in no remarkable subspace, so its idempotents are not state-like.
+And one genuine gap remains: the algebra produces the list of idempotents and the rule for their probabilities, but it does not select which one a measurement realises. The quest for idempotents is exact; the choice among them is still the measurement problem, now written in algebraic form (The Measurement Problem in Algebraic Form).
+
+
+Reading in the corpus
+The arc is in Introduction to the Biquaternion Universe, Quantum Physics in Biquaternionic Form, The Bloch Ball as the Trace-One Slice of the Future Light Cone, The Biquaternion Vacuum as a Minimal Idempotent, The GNS Construction in the Biquaternion Framework, Decoherence as Idempotent Projection, The Bell Basis as the Idempotent Basis of B ⊗ B, and Values in No Subspace.
+```
+
+Comments, six edits:
+
+1. **Headline:** "i h" now says h is a real 3-vector, and "state" is spelled out as trace-one positive Hermitian. The unit is not a state, so the purity rule needs that restriction.
+
+2. **Step 1:** μ̂ is now called a real unit vector. "That sphere is the Bloch sphere" became "the boundary of the Bloch ball" — the ball is the slice, the sphere is its pure boundary.
+
+3. **Step 3:** same two fixes as before. "Every idempotent is a null element" now excludes the unit ($N(e_0)=1$). The idempotents' cone is now the null cone of the algebra, whose material part is the light cone — not the light cone itself.
+
+4. **Step 4:** the collapse line was wrong. $\tilde\Pi\tilde\rho\tilde\Pi=p\tilde\Pi$ with $p=\mathrm{Tr}(\tilde\Pi\tilde\rho)$, which normalises to $\tilde\Pi$; it does not equal $\tilde\Pi$ outright. This is exactly what your own *Quantum Physics in Biquaternionic Form* writes. Also "non-trivial" added to the idempotent trace line, since $e_0$ is idempotent and gives $\tilde\Pi\tilde\Pi^{*}=e_0$.
+
+5. **Step 5:** "a root of 0" was wrong. In your corpus the roots of 0 are the nilpotents, square-zero. The idempotent has $\tilde\Pi^2=\tilde\Pi\neq0$, so it is null but not a root of 0. Rewritten as the half-sum of $e_0$ and a root of +1, lying on the cone. Also "(the light cone)" became "(on the null cone)" — nilpotents are on the zero-divisor cone, and the light cone is the material part.
+
+6. **Step 8:** same three fixes as the earlier paragraph — null cone not light cone, Hermitian defect instead of non-idempotency, and "a boost times a unitary" instead of "a unitary".
+
+Checked and left unchanged: the $\tilde\rho^2-\tilde\rho$ formula (correct, $=\tfrac14(|\mathbf r|^2-1)e_0$), the complementarity of $\tilde\Pi_{1,2}$, the spectral decomposition, the Born trace pairing, the no-bosonic-ladder argument ($\mathrm{Tr}\,e_0=2$), the Bell basis as the diagonal of a matrix-unit basis with its Cartan subalgebra, the GNS irreducibility of a pure state, and all eight cited titles (they exist).
 
 
 
 
 
+
+
+
+
+
+
+
+
+can you make a careful evaluation, check the corpus, the conceptual logic, the established physics :
+
+# Evaluation Brief: Should the Observables Be Taken in $\mathbb{M}_-$ Rather Than $\mathbb{M}_+$?
+
+## Purpose of This Document
+
+This document states one option for an evaluator — a human or an AI — to assess. It does not advocate
+the option and does not assume it is correct. It supplies the setting, the option, the current position,
+and the questions to be answered. The evaluator's task is to decide whether the option is coherent,
+whether its consequences are acceptable, and what it costs.
+
+## Setting
+
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the complexified quaternions, with
+basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$ with $i^2=-1$, and a general element
+$\tilde Q = Q_0e_0+\mathbf{Q}$ with complex coefficients $Q_\mu$.
+
+Hermitian conjugation is ${}^{*}=\overline{\,\cdot\,}\circ{}^{\natural}$: the quaternion conjugate
+(negate $e_1,e_2,e_3$, fix $e_0$) followed by complex conjugation of the coefficients. It is an
+involution. Its two eigenspaces are
+
+$$
+\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+,\qquad
+\mathbb{M}_\pm=\{\tilde Q : \tilde Q^{*}=\pm\tilde Q\}.
+$$
+
+Each sector is four-real-dimensional, the two meet only at $0$, and every element is the sum of its two
+projections. The sectors are named:
+
+- $\mathbb{M}_+$, the **Hermitian** sector: scalar part real, vector part purely imaginary. It contains
+  $e_0$ and the $ie_k$. Basis $\{e_0,ie_1,ie_2,ie_3\}$.
+- $\mathbb{M}_-$, the **anti-Hermitian** sector: scalar part purely imaginary, vector part real. Basis
+  $\{ie_0,e_1,e_2,e_3\}$. Its elements are the four-vectors of physics: $ict\,e_0+x\,e_1+y\,e_2+z\,e_3$.
+
+The central unit $i$ commutes with everything, is invertible and of order four, and exchanges the
+sectors: $i\,\mathbb{M}_-=\mathbb{M}_+$ and $i\,\mathbb{M}_+=\mathbb{M}_-$. It reverses the biquaternion
+norm: $N(i\tilde Q)=-N(\tilde Q)$.
+
+Two facts are used repeatedly and can be checked directly.
+
+1. An element of $\mathbb{M}_-$ maps to an anti-Hermitian matrix and has **purely imaginary**
+   eigenvalues. Multiplying it by $i$ gives a Hermitian matrix with **real** eigenvalues.
+2. $\mathbb{M}_-$ is closed under the **commutator** and is not closed under the **symmetric product**
+   $\tfrac12(AB+BA)$, whose value lies in $\mathbb{M}_+$ whenever the two factors do not commute.
+
+## The Option Under Evaluation
+
+**The observables are taken to be the elements of $\mathbb{M}_-$, not the elements of $\mathbb{M}_+$.**
+The factor $i$ is applied when a Hermitian representative or a real numerical value is needed, and not
+otherwise.
+
+An observable is therefore an element $A\in\mathbb{M}_-$, a four-vector or a field: the material object
+that is observed. Its Hermitian representative is $iA\in\mathbb{M}_+$, and the real numbers a measurement
+returns are the eigenvalues of $iA$, or equivalently the readings of the self-adjoint operator
+$L_{iA}=i\,L_A$.
+
+## The Current Position, for Comparison
+
+The corpus presently places the **observables in $\mathbb{M}_+$** and the **generators in
+$\mathbb{M}_-$**, and gives these reasons.
+
+1. **Real spectra.** A Hermitian element is Hermitian as a matrix and has real eigenvalues. The measured
+   values must be real.
+2. **Self-adjointness.** In the framework an observable is the left multiplication $L_{\tilde H}$, and
+   $(L_{\tilde H})^{\dagger}=L_{\tilde H^{*}}$. It is self-adjoint exactly when $\tilde H\in\mathbb{M}_+$,
+   and skew-adjoint when $\tilde H\in\mathbb{M}_-$, where skew-adjoint operators are read as the gauge
+   generators.
+3. **Positivity.** The framework's positive-definite form is
+   $H(\tilde P,\tilde R)=\mathrm{Sc}(\tilde P\tilde R^{*})=\sum_\mu P_\mu\overline{R_\mu}$. States are
+   the positive trace-one elements, and they live on the positive cone of the sector.
+4. **Closure under the observable product.** $\mathbb{M}_+$ is closed under the symmetric product, so
+   two observables compose without leaving the sector; the result is a commutative algebra satisfying the
+   Jordan identity.
+
+## The Questions to Be Answered
+
+The evaluator should answer each of the following, with reasons and, where possible, computation.
+
+1. **Is the option coherent?** Can "the observable is $A\in\mathbb{M}_-$" be stated without contradiction?
+   In particular, is there any statement of the present corpus that becomes false, as opposed to
+   reworded?
+2. **Does the option require more than a change of dictionary?** If the observable is the element $A$ and
+   $iA$ is only its representative, has anything changed beyond which of two writings is called the
+   observable? If not, the option and the present position are two descriptions of one correspondence,
+   and the question becomes one of convenience and interpretation.
+3. **What must be imported?** An element of $\mathbb{M}_-$ has imaginary eigenvalues, so a real number
+   requires the factor $i$. Is the positivity of the form $H$ still available inside $\mathbb{M}_-$ on
+   its own, or must the complex structure $i$ be named explicitly to state it? The evaluator should
+   decide whether "positivity must be imported through $i$" is a genuine cost or a harmless restatement.
+4. **What product do the observables carry if they live in $\mathbb{M}_-$?** $\mathbb{M}_-$ is not closed
+   under the symmetric product. Either the observable product is transported, $A\odot B=i(A\bullet B)$,
+   which stays in $\mathbb{M}_-$ and is commutative; or the observables carry only the commutator, which
+   makes them the generators as well as the observables. Which is intended, and is the transported product
+   an acceptable price or evidence against the option?
+5. **What happens to the sector/role division?** The present framework separates the two kinds of
+   element by sector: observables in one, generators in the other. If the generators remain in
+   $\mathbb{M}_-$ and the observables also live in $\mathbb{M}_-$, the two are no longer told apart by
+   the sector. Do they remain distinguishable by another means? Is that a loss?
+6. **What happens to the superselection statement?** The split is presently read as a superselection
+   structure: no observable operation crosses it, and the invisible coherence is the one generated by
+   $i$. If the observables move to $\mathbb{M}_-$ while the states stay in $\mathbb{M}_+$, is the
+   superselection statement unchanged, weakened or broken?
+7. **Does the option change any prediction?** $i$ is central and invertible, so $A$ and $iA$ generate the
+   same numbers. The evaluator must state explicitly whether the option is an equivalent formulation or
+   a physically distinct theory, and justify the answer.
+
+## Criteria for the Verdict
+
+- **Coherence.** The option contradicts no established algebraic fact.
+- **Completeness.** Every role the present dictionary gives to $\mathbb{M}_+$ is either reassigned or
+  shown to be unaffected.
+- **Honesty about cost.** Changes of dictionary, changes of product, imported positivity and lost
+  role-division must be named, not hidden.
+- **Decisiveness.** The verdict must state which of these two it is: (a) an equivalent formulation,
+  preferable on interpretive grounds; or (b) a distinct theory with consequences.
+
+## Required Output
+
+1. A verdict: accept the option, reject it, or accept with stated modifications.
+2. The reasons, each tied to one of the questions above.
+3. The list of statements in the present corpus that would have to be rewritten, and the list that stay.
+4. The cost, stated plainly, and the gain, stated plainly.
+5. Any claim the evaluator verified by computation, with the method and the result; and any claim not
+   verified, marked as unverified.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Two senses of "observable"
+
+The word carries two meanings, and the proposal switches from one to the other.
+
+The modern sense is quantum-mechanical. An observable is a self-adjoint
+operator on a Hilbert space. Its real eigenvalues are the possible outcomes
+of a measurement. The object observed is not the operator; the operator is
+the bookkeeping device that produces the numbers.
+
+The older sense is classical. An observable is a real function on phase
+space. It is the physical quantity itself — position, energy, momentum —
+and a measurement reads its value at a point.
+
+
+
+
+
+
+
+
+
+
+
+
+The trace part of the Hamiltonian does not affect the state. Since 
+e
+−
+i
+h
+0
+t
+/
+ℏ
+e 
+−ih 
+0
+​
+ t/ℏ
+  is a central complex scalar, and since the conjugation
+
+U
+~
+(
+t
+)
+P
+~
+U
+~
+(
+t
+)
+∗
+=
+e
+−
+i
+h
+0
+t
+/
+ℏ
+R
+P
+~
+e
++
+i
+h
+0
+t
+/
+ℏ
+R
+∗
+=
+R
+P
+~
+R
+∗
+U
+~
+ (t) 
+P
+~
+  
+U
+~
+ (t) 
+∗
+ =e 
+−ih 
+0
+​
+ t/ℏ
+ R 
+P
+~
+ e 
++ih 
+0
+​
+ t/ℏ
+ R 
+∗
+ =R 
+P
+~
+ R 
+∗
+ 
+
+(with 
+R
+=
+cos
+⁡
+(
+∣
+h
+∣
+t
+/
+ℏ
+)
+e
+0
++
+sin
+⁡
+(
+∣
+h
+∣
+t
+/
+ℏ
+)
+h
+^
+R=cos(∣h∣t/ℏ)e 
+0
+​
+ +sin(∣h∣t/ℏ) 
+h
+^
+  a unit real quaternion), the phase 
+e
+−
+i
+h
+0
+t
+/
+ℏ
+e 
+−ih 
+0
+​
+ t/ℏ
+  cancels out. So only the traceless part 
+h
+h of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.

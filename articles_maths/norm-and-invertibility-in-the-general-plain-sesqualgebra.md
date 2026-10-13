@@ -30,6 +30,8 @@ $$
 
 with the form $H(\tilde P,\tilde Q)=\sum_\mu P_\mu\overline{Q_\mu}$.
 
+**The results.** The block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ has the right unit $e_0$ and no left unit, hence no two-sided unit and no group of units, and its one-sided inverse equations are decided by a form that is not the algebraic norm. Its algebraic norm is the diagonal of the scalar-part form, $H(\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}$, real and positive definite of signature $(8,0)$ and Gram matrix the identity, one of the four algebraic norms of the space. It is **not** multiplicative but submultiplicative, $H(\tilde P\star\tilde Q)=\lvert H(\tilde P,\tilde Q)\rvert^{2}$, so $H(\tilde P)H(\tilde Q)-H(\tilde P\star\tilde Q)\geq0$, and the absence of a criterion is the definiteness, $H(\tilde Q)=0$ exactly at $\tilde Q=0$.
+
 ## The Relative Notions
 
 The word *unit*, the word *inverse* and the word *group of units* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*.
@@ -39,6 +41,8 @@ The word *unit*, the word *inverse* and the word *group of units* name a product
 Throughout this article the product is the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$.
 
 ## The Right Unit and the Absence of the Left One
+
+**The block has the right unit $e_0$, since $\tilde Q\star e_0=\tilde Q$, and no left unit, since $e_0\star\tilde Q=\tilde Q^{*}$ is the involution; consequently it has no two-sided unit and no group of units.**
 
 **Theorem (the block has a right unit and no left unit).** For every $\tilde Q$,
 
@@ -58,6 +62,8 @@ Consequently $e_0$ is a **right unit** of $\star$, it is **not** a left unit, an
 
 ## The One-Sided Inverse Equations
 
+**The block carries no two-sided invertibility; its one-sided inverse equations are solved on a set decided by a quadratic form that is not the algebraic norm of the block, so the algebraic norm does not decide the one-sided question.**
+
 The one-sided equations are those of *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*, and in the block they read
 
 $$
@@ -67,6 +73,8 @@ $$
 with $e_0$ the right unit of the block on the right-hand side. The equations have a solution for a set of elements that is decided by a quadratic form; that form is **not** the algebraic norm of the block, it is not one of the four algebraic norms of this space, and it is not studied here. What the article records is that the block carries **no two-sided invertibility** and that its own algebraic norm does not decide the one-sided question, read in §*The Absence of a Criterion from the Algebraic Norm*.
 
 ## The Algebraic Norm of the Block
+
+**The block carries one algebraic norm, the diagonal of its scalar-part form, $H(\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}$, real and positive definite of signature $(8,0)$ with Gram matrix the identity, and the block-square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is Hermitian with that scalar part and is not the plain square.**
 
 **Definition.** The **algebraic norm of the block** is the diagonal of the scalar-part form of the product,
 
@@ -105,6 +113,8 @@ which vanishes only at $\tilde Q=0$. The block-square is **not** the plain squar
 
 ## The Failure of Multiplicativity
 
+**The algebraic norm of the block is not multiplicative but submultiplicative: $H(\tilde P\star\tilde Q)=\lvert H(\tilde P,\tilde Q)\rvert^{2}$, so $H(\tilde P\star\tilde Q)=H(\tilde P)H(\tilde Q)$ exactly on linearly dependent pairs, and the defect $H(\tilde P)H(\tilde Q)-\lvert H(\tilde P,\tilde Q)\rvert^{2}\geq0$.**
+
 **Theorem (the algebraic norm of a product).** For all $\tilde P,\tilde Q$,
 
 $$
@@ -127,6 +137,8 @@ with equality exactly on linearly dependent pairs. The algebraic norm is **submu
 
 ## The Polarisation of the Algebraic Norm
 
+**The polar form of the algebraic norm is twice the real part of the sesquilinear form, $H(\tilde P+\tilde Q)-H(\tilde P)-H(\tilde Q)=2\Re H(\tilde P,\tilde Q)$, and the full Hermitian form is recovered by $H(\tilde P,\tilde Q)=\tfrac{1}{4}\sum_{k=0}^{3}i^{k}H(\tilde P+i^{k}\tilde Q)$.**
+
 **Theorem (the polarisation).** The polar form of the algebraic norm is twice the real part of the sesquilinear form,
 
 $$
@@ -145,6 +157,8 @@ $$
 
 ## The Absence of a Criterion from the Algebraic Norm
 
+**The block has no two-sided invertible element, and its algebraic norm has no nonzero zero, $H(\tilde Q)=0\Leftrightarrow\tilde Q=0$; the definiteness is the absence of a criterion, the one-sided equations' solvability being decided by a different form.**
+
 **Theorem (the algebraic norm does not decide invertibility).** The block has no two-sided invertible element, so no criterion can name one; and its algebraic norm has no nonzero zero:
 
 $$
@@ -158,6 +172,8 @@ $$
 **Corollary (no substitute group).** The block has no group of units and no subgroup of its own elements to play that role; what it does have is the set on which the one-sided equations are solvable, defined by a form not read here. The group that does exist is the group of the linear maps of $\mathbb{B}$ that preserve the algebraic norm $H$, read in *The Multiplication Operators of the General Plain Sesqualgebra* where the block has such an article.
 
 ## The Comparison with the General Plain Algebra
+
+**The block and the parent carry different algebraic norms, $H$ real and definite against $B$ complex and indefinite, and neither algebraic norm decides invertibility; the block keeps a right unit and loses the left unit, the two-sided unit, the two-sided invertible elements and the group of units.**
 
 | clause | general plain algebra | general plain sesqualgebra |
 |---|---|---|

@@ -20,6 +20,8 @@ Both notions of the title are therefore **absences**. The block has no two-sided
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf{Q}$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general plain sesquilinear product is $\tilde P\tilde Q^{*}$, and the product of the block is $\diamond$.
 
+**The results.** The block has **no algebraic norm**: its scalar part vanishes identically, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$, so the diagonal is the zero function and, by the convention that a vanishing quadratic form is not an algebraic norm, the block is counted with no algebraic norm rather than a zero one. It has **no unit** on either side, hence **no invertible element** and an **empty group of units**, and the one-sided inverse equations $\tilde Q\diamond\tilde R=e_0$ and $\tilde R\diamond\tilde Q=e_0$ have **no solution**, because every value of the block is a pure vector. The invertibility criterion of the parent is **not transferred**: the form $H$ is not the algebraic norm of the block and is not read here. What replaces the inverse is the operator reading, in which the multiplication by a non-central $\tilde A$ has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf A}$ as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\mathbf{A}$.
+
 ## The Relative Definitions
 
 The word *unit* and the word *inverse* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*.
@@ -31,6 +33,8 @@ The word *unit* and the word *inverse* name a product, so the definitions are st
 Throughout this article the product is the block $\diamond$, and, unqualified, *unit* and *inverse* are read in $\diamond$.
 
 ## The Absence of a Unit
+
+**The block has neither a left unit nor a right unit:** there is no element $\tilde u$ with $\tilde u\diamond\tilde X=\tilde X$ for every $\tilde X$, and none with $\tilde X\diamond\tilde u=\tilde X$ for every $\tilde X$, because every value of the block is a pure vector of scalar part zero while $e_0$ has scalar part one.
 
 **Theorem (no unit).** The block has neither a left unit nor a right unit. There is no element $\tilde u$ with $\tilde u\diamond\tilde X=\tilde X$ for every $\tilde X$, and none with $\tilde X\diamond\tilde u=\tilde X$ for every $\tilde X$.
 
@@ -45,6 +49,8 @@ the first being $\operatorname{Vect}(\tilde P)$ and the second $\operatorname{Ve
 The obstruction is the projection: every value of the block is a pure vector, so its scalar part vanishes, while the unit $e_0$ has scalar part one. The block cannot see the unit of the space on either side, and the two displays above are the two one-sided actions that replace it. The parent product $\tilde P\tilde Q^{*}$ has the right unit $e_0$, and the block destroys it: the right-unit equation survives on the vector subspace alone and fails at every element with a non-zero scalar part.
 
 ## The Absence of an Inverse
+
+**No element of the block is invertible and the group of units is empty**, and the one-sided inverse equations $\tilde Q\diamond\tilde R=e_0$ and $\tilde R\diamond\tilde Q=e_0$ have no solution, because each left member is a pure vector and $e_0$ is not.
 
 **Corollary (no inverse, no group of units).** No element of $\mathbb{B}$ is invertible of the block, and the group of units of $\diamond$ is empty.
 
@@ -61,6 +67,8 @@ have no solution $\tilde R$.
 *Proof.* Each left member is a value of the block, hence a pure vector of scalar part zero; the right member $e_0$ has scalar part one. A pure vector is never $e_0$, so neither equation holds.
 
 ## The Algebraic Norm of the Block
+
+**The algebraic norm of the block is the zero function**, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ for all $\tilde P,\tilde Q$ and $\varphi_{\diamond}(\tilde Q)=0$ for all $\tilde Q$, and by the convention that a vanishing quadratic form is not an algebraic norm the block carries **no algebraic norm**.
 
 **Definition (the algebraic norm of the operation).** Let $f$ be an operation on $\mathbb{B}$ with scalar-part form $\varphi(\tilde P,\tilde Q)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$. The **algebraic norm of $f$** is the diagonal of that form,
 
@@ -92,6 +100,8 @@ the vector part of the Hermitian square $\tilde Q\tilde Q^{*}$; it is central ex
 
 ## The Relative Inverse
 
+**The multiplication by a non-central element $\tilde A$ has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf A}$ as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\mathbf{A}$ in the complex bilinear dot**, the relative inverse that replaces the missing inverse.
+
 The block has no inverse, but the one-sided multiplication by an element is an operator with a kernel and an image, and its invertibility on a quotient is the substitute the article records.
 
 **Proposition (the kernel of the multiplication).** For the block, the one-sided multiplication by a non-central element $\tilde A$,
@@ -107,6 +117,8 @@ has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ of co
 So the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
 
 ## The Invertibility Criterion Is Not Transferred
+
+**The invertibility criterion of the parent is not transferred to the block:** the form $H$ of the parent general plain sesquilinear product is not the algebraic norm of the block and is not read here, and the block loses the parent's one-sided equations at once, their place taken by the relative inverse.
 
 **Remark (the criterion of the parent is not read here).** The parent general plain sesquilinear product $\tilde P\tilde Q^{*}$ has the right unit $e_0$, and its one-sided inverse equations are decided by a quadratic form that is the algebraic norm $H$ of a different product, the diagonal of $\mathrm{Sc}(\tilde P\tilde Q^{*})$ (*Norm and Invertibility in the General Plain Sesqualgebra*). That form is not the algebraic norm of the block and is not read here. The block loses the parent's one-sided equations at once, because the value has been moved into a subspace that meets the centre only at the origin, and the place of the criterion is taken by the relative inverse above.
 

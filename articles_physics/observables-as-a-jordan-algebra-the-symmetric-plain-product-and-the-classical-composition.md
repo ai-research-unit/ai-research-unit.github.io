@@ -65,7 +65,11 @@ ordinary one closes neither.
 
 An **observable** of the frame is a Hermitian element, $\tilde Q\in\mathbb{M}_+$, and a **state** is a
 Hermitian positive element of trace one; the dictionary is that of *The Hermitian Subspace $\mathbb{M}_+$
-as the Informational Sector*. The first consequence of the closure is that two observables compose:
+as the Informational Sector*. Each observable is the Hermitian representative $iA$ of a **material element**
+$A\in\mathbb{M}_-$; the material element is what is observed, the representative is its reading operator,
+and the Jordan algebra below is the algebra of the representatives — equivalently, of the states and
+effects — and not of the objects observed. The first consequence of the closure is that two observables
+compose:
 
 **Proposition.** The symmetrised product of two observables is an observable. The general plain bilinear product is not:
 it has one Hermitian and one anti-Hermitian part, and only the Hermitian part stays in the sector.
@@ -140,8 +144,7 @@ $h_{0,i}=\mathbf{h}_i=0$. The cone and the positive definiteness of the trace fo
 **Remark (the square does not order the sector by the norm).** Positivity of the square is a statement
 about the **spectrum**, and it is not the sign of the biquaternion norm: a Hermitian element has
 $N(\tilde Q)=h_0^{2}-(\mathbf{h},\mathbf{h})$, which is indefinite, and an element of the positive cone
-can have negative norm. The two are kept apart wherever they appear; the norm is *Biquaternion Norm and
-Invertibility*.
+can have negative norm. The two are kept apart wherever they appear; the norm is *Norm and Invertibility in the General Quaternionic Algebra*.
 
 ## The Trace Form and the Invariance
 

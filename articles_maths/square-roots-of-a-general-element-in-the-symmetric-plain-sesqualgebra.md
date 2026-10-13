@@ -6,9 +6,9 @@ The symmetric plain sesqualgebra is the operation $\tilde\Xi\star\tilde Q = H(\t
 
 The whole classification follows from one structural fact. The square of an element is always in the **centre**: $\tilde\Xi\star\tilde\Xi = H(\tilde\Xi)e_0$ with $H(\tilde\Xi) = \sum_\mu\lvert \Xi_\mu\rvert^{2}$ a real non-negative number (*Norm and Invertibility in the Symmetric Plain Sesqualgebra*). The equation $\tilde\Xi\star\tilde\Xi = \tilde A$ therefore has no solution unless $\tilde A$ is central, and when $\tilde A = \lambda e_0$ the equation is the scalar one $H(\tilde\Xi) = \lambda$, solvable exactly when $\lambda$ is a non-negative real. The **image of the square map** is the real ray $\mathbb{R}_{\geq0}e_0$, and the square roots of a point of that ray form the algebraic-norm quadric at the corresponding value. Non-central elements have no square root, the negative reals have none, and the non-real complex numbers have none.
 
-**Placement.** The article is the fifth entry of the *Common Theory* section of the block, after the three central values and before the idempotents. It uses the product and the class of the introduction, the algebraic norm and the square map of *Norm and Invertibility in the Symmetric Plain Sesqualgebra*, and the three central values of *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*.
+**Placement.** The article is the seventh and closing entry of the *Common Theory* section of the block, after the roots of one and the idempotents and after the roots of zero and the nilpotents. It uses the product and the class of the introduction, the algebraic norm and the square map of *Norm and Invertibility in the Symmetric Plain Sesqualgebra*, and the root sets of *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Plain Sesqualgebra*.
 
-**Boundaries.** The product, its class and its placement are *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*; the relative definition of the square root and the general reduction are *Definitions for the Study of the 12 Algebraic Structures* and *Square Roots of a General Element in the General Plain Algebra*. The three central values of the block are *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*, and those of the parent are the article of the same title in the general plain algebra. Nothing topological and nothing metric appears.
+**Boundaries.** The product, its class and its placement are *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*; the relative definition of the square root and the general reduction are *Definitions for the Study of the 12 Algebraic Structures* and *Square Roots of a General Element in the General Plain Algebra*. The root sets of the block are *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Plain Sesqualgebra*, and those of the parent are the article of the same title in the general plain algebra. Nothing topological and nothing metric appears.
 
 **Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu\varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu\overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is
 
@@ -18,9 +18,13 @@ $$
 
 and the algebraic norm is $H(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$. The **centre** of $\mathbb{B}$ is the line $\mathbb{C}e_0 = \mathbb{C}_{\mathbb{B}}$.
 
+**The results.** The square of every element is central, $\tilde\Xi\star\tilde\Xi = H(\tilde\Xi)e_0$ with $H(\tilde\Xi) = \sum_\mu\lvert \Xi_\mu\rvert^{2}\geq0$, so the image of the square map is exactly the real ray $\mathbb{R}_{\geq0}e_0$. An element $\tilde A$ has a square root in the block exactly when it is central with a real non-negative coefficient, $\tilde A = \lambda e_0$ with $\lambda\in\mathbb{R}$, $\lambda\geq0$, and then the roots are the level set $\{\tilde\Xi : H(\tilde\Xi) = \lambda\}$: empty for $\lambda\notin\mathbb{R}$ and for $\lambda<0$, the single point $\{0\}$ for $\lambda = 0$, and a real quadric of real dimension seven for $\lambda>0$. An element that is not central has no square root, and the origin is a square root of itself but not a root of $0$.
+
 ## The Reduction
 
-**Definition (recalled).** A **square root** of $\tilde A\in\mathbb{B}$ in the block is an element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \tilde A$. The definition is that of *Definitions for the Study of the 12 Algebraic Structures*, read on the product $\star$; a square root of a central element is also a **root** when it is required to be nonzero, the distinction being the one of the article on the three central values.
+**The square of every element is central, $\tilde\Xi\star\tilde\Xi = H(\tilde\Xi)e_0$ with $H(\tilde\Xi) = \sum_\mu\lvert \Xi_\mu\rvert^{2}\geq0$, so the square map has its image in the real ray $\mathbb{R}_{\geq0}e_0$ and the equation $\tilde\Xi\star\tilde\Xi = \tilde A$ is solvable only for $\tilde A$ in that ray.**
+
+**Definition (recalled).** A **square root** of $\tilde A\in\mathbb{B}$ in the block is an element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \tilde A$. The definition is that of *Definitions for the Study of the 12 Algebraic Structures*, read on the product $\star$; a square root of a central element is also a **root** when it is required to be nonzero, the distinction being the one of *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Plain Sesqualgebra*.
 
 **Theorem (the square is central).** For every $\tilde\Xi\in\mathbb{B}$,
 
@@ -36,6 +40,8 @@ Consequently the square map $\tilde\Xi\mapsto\tilde\Xi\star\tilde\Xi$ has its im
 
 ## The Image of the Square Map
 
+**The image of the square map is exactly the set of central elements with a real non-negative coefficient, $\mathbb{R}_{\geq0}e_0$, the fibres being the level sets $\{H = \lambda\}$: the single point $\{0\}$ at $\lambda = 0$ and a quadric of real dimension seven at each $\lambda>0$.**
+
 **Theorem (the image is the real ray).** The image of the square map of the block is exactly the set of the central elements with a real non-negative coefficient,
 
 $$
@@ -48,19 +54,23 @@ $$
 
 ## The Roots of a Central Value
 
+**The square roots of a central value $\tilde A = \lambda e_0$ are the elements of algebraic norm $\lambda$: empty for $\lambda\notin\mathbb{R}$ and for $\lambda<0$, the single point $\{0\}$ for $\lambda = 0$, and a real quadric of real dimension seven for $\lambda>0$.**
+
 **Theorem (the square roots of a central value).** Let $\lambda\in\mathbb{C}$ and let $\tilde A = \lambda e_0$. The square roots of $\tilde A$ in the block are the elements of algebraic norm $\lambda$,
 
 $$
 \{\tilde\Xi\in\mathbb{B} : H(\tilde\Xi) = \lambda\},
 $$
 
-and the set is as follows: empty for $\lambda\notin\mathbb{R}$ and for $\lambda<0$; the single point $\{0\}$ for $\lambda = 0$; and the real quadric of real dimension seven for $\lambda>0$. Passing to the roots of the article on the three central values, the nonzero elements of the last set are the roots of $\lambda$, and the point $0$ is a square root of $0$ but not a root of $0$.
+and the set is as follows: empty for $\lambda\notin\mathbb{R}$ and for $\lambda<0$; the single point $\{0\}$ for $\lambda = 0$; and the real quadric of real dimension seven for $\lambda>0$. Passing to the roots of the block, the nonzero elements of the last set are the roots of $\lambda$, and the point $0$ is a square root of $0$ but not a root of $0$.
 
-*Proof.* The reduction turns the equation into $H(\tilde\Xi) = \lambda$, and the discussion of the three cases is the corollary of the reduction in *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*. The dimension is that of a positive level set of a definite quadratic form on an eight-real-dimensional space.
+*Proof.* The reduction turns the equation into $H(\tilde\Xi) = \lambda$, and the discussion of the cases is the corollary of the reduction in *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra*, which owns the values $-1$ and $+1$, and in *Square Roots of Zero and the Nilpotents of the Symmetric Plain Sesqualgebra*, which owns the value $0$. The dimension is that of a positive level set of a definite quadratic form on an eight-real-dimensional space.
 
-**Corollary (the three central values).** At $\lambda = -1$, $0$ and $+1$ the theorem reproduces the three sets of the article on the central values: the empty set, the empty set of roots (the point $0$ being excluded), and the algebraic-norm-one quadric. The present article extends the trichotomy to every central value.
+**Corollary (the three central values).** At $\lambda = -1$, $0$ and $+1$ the theorem reproduces the root sets of the block: the empty set at $-1$, the empty root set at $0$ (the point $0$ being a square root and excluded from the roots), and the algebraic-norm-one quadric at $+1$. The present article extends the trichotomy to every central value.
 
 ## The Classification
+
+**An element $\tilde A$ has a square root exactly when it is central with a real non-negative coefficient, so the table has two nonempty rows: the origin, with the single square root $0$, and a positive central value, with the algebraic-norm quadric of real dimension seven.**
 
 The square roots of a general element $\tilde A$ are collected in one table.
 
@@ -72,7 +82,7 @@ The square roots of a general element $\tilde A$ are collected in one table.
 | the origin, $\tilde A = 0$ | $\{0\}$ | one point |
 | central with positive coefficient, $\tilde A = \lambda e_0$, $\lambda>0$ | $\{H = \lambda\}$ | real dimension seven |
 
-Only one row carries a genuine family, and the family is the orbit of any one of its elements under the group of the linear maps that preserve $H$; the roots of the central values of the previous article are the nonzero entries of the last row.
+Only one row carries a genuine family, and the family is the orbit of any one of its elements under the group of the linear maps that preserve $H$; the roots of the central values of the block are the nonzero entries of the last row.
 
 **Corollary (the criterion for the existence of a square root).** An element $\tilde A$ has a square root in the block exactly when it is a central element with a real non-negative coefficient, that is exactly when $\tilde A$ lies in the ray $\mathbb{R}_{\geq0}e_0$.
 
@@ -88,15 +98,17 @@ Only one row carries a genuine family, and the family is the orbit of any one of
 
 ## The Relation to the Idempotents and to the Other Central Values
 
-The **idempotents** of the block are $0$ and $e_0$ (*Idempotents of the Symmetric Plain Sesqualgebra*). They are square roots of themselves: $0$ is the square root of $0$ at the origin, and $e_0$ is the square root of $e_0$ at the value $\lambda = 1$. No other element of the algebraic-norm-one quadric is idempotent, so the idempotents are a two-point subset of the union of the fibres of the square map, and the fibre at $1$ is the quadric of the roots of $+1$.
+**The idempotents $0$ and $e_0$ are square roots of themselves, no other element of the algebraic-norm-one quadric is idempotent, and the central values treated by the articles of the roots are the special cases of the present classification.**
 
-The **three central values** $\lambda = -1, 0, +1$ are the entries of the article *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra*, and the present article is its extension to all values: the root sets there are the nonzero elements of the fibres here, and the fibre at the origin is the point $0$ that the root set of $0$ excludes.
+The **idempotents** of the block are $0$ and $e_0$ (*Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra*). They are square roots of themselves: $0$ is the square root of $0$ at the origin, and $e_0$ is the square root of $e_0$ at the value $\lambda = 1$. No other element of the algebraic-norm-one quadric is idempotent, so the idempotents are a two-point subset of the union of the fibres of the square map, and the fibre at $1$ is the quadric of the roots of $+1$.
+
+The **three central values** $\lambda = -1, 0, +1$ are treated in *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra*, which owns the values $-1$ and $+1$, and in *Square Roots of Zero and the Nilpotents of the Symmetric Plain Sesqualgebra*, which owns the value $0$; the present article is their extension to all values: the root sets there are the nonzero elements of the fibres here, and the fibre at the origin is the point $0$ that the root set of $0$ excludes.
 
 The **parent** is *Square Roots of a General Element in the General Plain Algebra*: there the reduction is not a single scalar equation but a system, and the square map has a rich image. The block's reduction is the collapse of that system to the algebraic norm, and the collapse is the reason the block's classification is a single row of a quadric.
 
 ## Summary
 
-The square of an element of the symmetric plain sesqualgebra is central, $\tilde\Xi\star\tilde\Xi = H(\tilde\Xi)e_0$ with $H(\tilde\Xi) = \sum_\mu\lvert \Xi_\mu\rvert^{2}\geq0$, so the equation of the square root $\tilde\Xi\star\tilde\Xi = \tilde A$ is solvable exactly when $\tilde A$ is a central element with a **real non-negative** coefficient, and then it reduces to the scalar equation $H(\tilde\Xi) = \lambda$. The **image of the square map** is the real ray $\mathbb{R}_{\geq0}e_0$. The square roots of $\tilde A = \lambda e_0$ are empty for $\lambda\notin\mathbb{R}$ and for $\lambda<0$, the single point $\{0\}$ for $\lambda = 0$, and the algebraic-norm quadric $\{H = \lambda\}$, a real quadric of real dimension seven, for $\lambda>0$. Non-central $\tilde A$ has no square root. The three central values of the previous article are the special cases $\lambda = -1$, $0$, $+1$; the idempotents $0$ and $e_0$ are the square roots of themselves; and the parent's classification, a system, collapses here to a single scalar equation.
+The square of an element of the symmetric plain sesqualgebra is central, $\tilde\Xi\star\tilde\Xi = H(\tilde\Xi)e_0$ with $H(\tilde\Xi) = \sum_\mu\lvert \Xi_\mu\rvert^{2}\geq0$, so the equation of the square root $\tilde\Xi\star\tilde\Xi = \tilde A$ is solvable exactly when $\tilde A$ is a central element with a **real non-negative** coefficient, and then it reduces to the scalar equation $H(\tilde\Xi) = \lambda$. The **image of the square map** is the real ray $\mathbb{R}_{\geq0}e_0$. The square roots of $\tilde A = \lambda e_0$ are empty for $\lambda\notin\mathbb{R}$ and for $\lambda<0$, the single point $\{0\}$ for $\lambda = 0$, and the algebraic-norm quadric $\{H = \lambda\}$, a real quadric of real dimension seven, for $\lambda>0$. Non-central $\tilde A$ has no square root. The three central values treated by *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Plain Sesqualgebra* are the special cases $\lambda = -1$, $0$, $+1$; the idempotents $0$ and $e_0$ are the square roots of themselves; and the parent's classification, a system, collapses here to a single scalar equation.
 
 ## Summary of Notation
 
@@ -116,6 +128,6 @@ The square of an element of the symmetric plain sesqualgebra is central, $\tilde
 - *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md`), for the product, its class and its placement.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the relative definition of the square root and the root.
 - *Norm and Invertibility in the Symmetric Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.md`), for the algebraic norm and the square map.
-- *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-plain-sesqualgebra.md`), for the three central values, which are the special cases of the present classification.
+- *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.md`), for the root set of $+1$, the emptiness of the root set of $-1$ and the idempotents, which are square roots of themselves.
+- *Square Roots of Zero and the Nilpotents of the Symmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-plain-sesqualgebra.md`), for the emptiness of the root set of $0$ and the index-three nilpotents beyond it.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the classification of the parent, which is a system and not a scalar equation.
-- *Idempotents of the Symmetric Plain Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-plain-sesqualgebra.md`), for the idempotents, which are square roots of themselves.

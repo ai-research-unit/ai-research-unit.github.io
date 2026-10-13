@@ -187,7 +187,7 @@ its **sign** separates the timelike from the spacelike element, since $N$ is ind
 sector; and its **vanishing set** is the light cone, $\{N(\tilde Q)=0\}$, the set of the zero divisors of
 the algebra. The square of a material element being central, the interval is a number carried by the
 element and not a component of it. The interval itself, the mass shell and the group of its automorphisms
-are *Biquaternion Norm and Invertibility*; the cone is *The Light Cone as the Biquaternion Zero-Divisor
+are *The Interval as the Square and the Charge of the Material Composition*; the cone is *The Light Cone as the Biquaternion Zero-Divisor
 Cone* and *Zero Divisors as a Physical Locus in Biquaternionic Form*; the reading of the interval as the
 square of a composition is *The Interval as the Square and the Charge of the Material Composition*, and
 none of the three is redone here.

@@ -4,7 +4,7 @@
 
 This article treats the biquaternions as a **real vector space**: the same set as *Biquaternions as a Vector Space over $\mathbb{C}$* with the scalars cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$, the complex structure the complex reading rests on, the separation of the real-linear self-maps into the $\mathbb{C}$-linear and the antilinear ones, and the real forms from which the complex reading is recovered by extension of scalars. Restriction of scalars doubles the dimension, from four over $\mathbb{C}$ to eight over $\mathbb{R}$. The elements, the basis, the coordinate systems and the four conjugation formulas are those of the complex article and are cited, not restated: what is added here is the scalar reading itself, the operator that carries the gap between the two readings, and the linear algebra that the doubled dimension makes visible.
 
-No form appears in this article: the Hermitian form and the inner product are *Norm and Invertibility in the General Plain Algebra*. The product read over the real scalars is *The Realification of the General Plain Algebra*; the four general products themselves are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
+No form appears in this article: the Hermitian form and the inner product are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The product read over the real scalars is *The Realification of the General Plain Algebra*; the four general products themselves are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Real Scalars
 

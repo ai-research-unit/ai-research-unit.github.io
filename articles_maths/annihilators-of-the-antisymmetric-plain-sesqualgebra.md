@@ -20,14 +20,18 @@ $$
 $$
 the vector part of the sesquilinear plain product (*Introduction to the Antisymmetric Plain
 Sesqualgebra of Biquaternions*). It is conjugate-alternating, so the two annihilators of an element
-are one set. Its zero divisors are the elements of the cone $C(\tilde P)=0$ (*Zero Divisors of the
+are one set. Its zero-divisor set is the whole punctured space (*Zero Divisors of the
 Antisymmetric Plain Sesqualgebra*, above this article in this category), and it is the block for
 which the annihilator is read through the parent invertibility: a **line** when the element is a
 unit of the plain product and a **plane** when it is not. The article owns that reading, the
 operator with its rank, and the shape of the annihilator on the remarkable subspaces; the
 zero-divisor set and the contrast with the four general products are the cited article's.
 
+**The results.** The annihilator of an element is the set of partners that it kills. The block is conjugate-alternating, so the two annihilators of an element coincide, $B_\diamond(\tilde Q)=A_\diamond(\tilde Q)$; for a nonzero $\tilde Q$ the common annihilator is the star of the central-carrying set, $A_\diamond(\tilde Q)=\{\tilde Z^{*}:\tilde Q\tilde Z\in\mathbb{C}_{\mathbb{B}}\}$. It is a **complex line** when $\tilde Q$ is invertible in the plain product and a **complex plane** when it is not, so the annihilator measures the parent invertibility. The operator $L_{\tilde Q}$ has complex rank three on the plain units, two on the plain zero divisors and zero at the origin.
+
 ## The Annihilator of a Product
+
+**The annihilator of an element is the set of partners that it kills; the left annihilator is the kernel of the left multiplication and the right annihilator is the kernel of the right multiplication, and each is nonzero exactly when the element is a zero divisor of the corresponding side.**
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
@@ -52,6 +56,8 @@ Plain Sesqualgebra*.
 
 ## The Two Annihilators Coincide
 
+**For every element the right annihilator equals the left one, $B_\diamond(\tilde Q)=A_\diamond(\tilde Q)$, because the block is conjugate-alternating, so the block has one annihilator per element and not two.**
+
 **Corollary (the right annihilator equals the left one).** For every $\tilde Q$,
 $$
 B_\diamond(\tilde Q)=A_\diamond(\tilde Q),
@@ -63,6 +69,8 @@ $\tilde R\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde R}$; a vector part i
 its conjugate is, so the two products vanish together and the two annihilators are one set.
 
 ## The Annihilator of an Element
+
+**For a nonzero element the common annihilator is the star of the set of the $\tilde Z$ with $\tilde Q\tilde Z$ central, $A_\diamond(\tilde Q)=\{\tilde Z^{*}:\tilde Q\tilde Z\in\mathbb{C}_{\mathbb{B}}\}$, a complex line when $\tilde Q$ is invertible in the plain product and a complex plane when it is not.**
 
 **Theorem (the annihilator is the star of the central-carrying set).** For a nonzero $\tilde Q$ the
 common annihilator is the star of the set of the $\tilde Z$ with $\tilde Q\tilde Z$ central,
@@ -95,6 +103,8 @@ $$
 
 ## The Multiplication Operator and the Rank
 
+**The operator $L_{\tilde Q}$ has the annihilator $A_\diamond(\tilde Q)$ as its kernel, so it has complex rank three on the plain units, rank two on the nonzero plain zero divisors and rank zero at the origin.**
+
 **Corollary (the rank).** The operator $L_{\tilde Q}$ has kernel $A_\diamond(\tilde Q)$, so as an
 endomorphism of $\mathbb{B}$ it has complex rank three when $\tilde Q$ is a unit of the plain
 product, rank two when it is a nonzero zero divisor, and rank zero at the origin.
@@ -104,16 +114,21 @@ the three cases, and the rank is four minus the dimension.
 
 ## The Dichotomy
 
-The zero-divisor set of the block is the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, one
-equation, and the annihilator is the invariant that ties the block to its parent: the annihilator
-measures the **parent invertibility**, because it is a line exactly for the elements invertible in
-the plain product and a plane exactly for the plain zero divisors. Every zero divisor of the block
+**The annihilator measures the parent invertibility: it is a complex line exactly for the elements invertible in the plain product and a complex plane exactly for the plain zero divisors**, and the block's zero-divisor set is the whole punctured space.
+
+The zero-divisor set of the block is the whole punctured space, the punctured cone
+$\{\tilde Q\neq0:C(\tilde Q)=0\}$ being the parent's, and the annihilator is the invariant that ties
+the block to its parent: the annihilator measures the **parent invertibility**, because it is a line
+exactly for the elements invertible in the plain product and a plane exactly for the plain zero
+divisors. Every zero divisor of the block
 exists, since the block is conjugate-alternating and never regular; what the annihilator separates
 is not the zero-divisor class but the class of the parent. The block is the sibling of the
 antisymmetric quaternionic sesqualgebra, which shares the line-or-plane dichotomy, and the sibling
 of the general plain sesqualgebra, which has the plane but not the line.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**On each remarkable subspace the annihilator of a nonzero element is again a line or a plane, according to the parent invertibility, cut out by the same centrality equation**, the central elements annihilating the centre alone.
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
 $L_{\lambda e_0}\tilde X=\operatorname{Vect}(\lambda\tilde X^{*})$, whose kernel is the set of the

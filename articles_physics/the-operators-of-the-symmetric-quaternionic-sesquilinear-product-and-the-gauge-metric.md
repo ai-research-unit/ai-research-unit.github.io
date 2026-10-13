@@ -639,8 +639,8 @@ remarkable subspaces.
 - Mathematics article *The Krein Gram Matrix and the Restrictions of the Form*
   (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form, its Gram data and its restrictions to the
   remarkable subspaces.
-- Mathematics article *Norm and Invertibility in the General Plain Algebra*
-  (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm $N$ entering the rank table and the determinant.
+- Mathematics article *Norm and Invertibility in the General Quaternionic Algebra*
+  (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm $N$ entering the rank table and the determinant.
 - Physics article *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*
   (`articles_physics/the-gauge-metric-as-a-product-the-symmetric-quaternionic-sesquilinear-product.md`), the framing article of the band, for
   the value, the conjugate-commutativity, the absence of a unit, the failure of the Jordan identity and the metric word.

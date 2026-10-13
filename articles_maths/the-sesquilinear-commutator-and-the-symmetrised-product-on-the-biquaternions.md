@@ -17,7 +17,7 @@ Neither half is an algebra in the naive sense over $\mathbb{C}$. The two operati
 
 The article is the eighth of the batch and reads the two general articles *The Sesquilinear Commutator* and *The Sesquilinear Symmetrised Product*, whose antisymmetry, scalar theorems, half-theorems and failure witnesses are quoted; the two bilinear operations that the sesquilinear ones are compared with are *The 12 Products of the Biquaternion Complex Space*, and the Lie and the Jordan structures of the sesqualgebra are *Lie Algebras of Sesqualgebras* and *Jordan Algebras of Sesqualgebras*. The ternary product that repairs the associativity is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*, and the operator forms of the two halves are *The Left and Right Multiplications of the Biquaternion Sesqualgebra*.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are $\tilde Q=Q_0e_0+\mathbf Q$, and the Hermitian form is $\langle\tilde P,\tilde Q\rangle_*=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *Norm and Invertibility in the General Plain Algebra*.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are $\tilde Q=Q_0e_0+\mathbf Q$, and the Hermitian form is $\langle\tilde P,\tilde Q\rangle_*=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Split of the Multiplication
 
@@ -133,7 +133,7 @@ $$
 [[\tilde P,\tilde Q]_\varsigma,\tilde H]_\varsigma+[[\tilde Q,\tilde H]_\varsigma,\tilde P]_\varsigma+[[\tilde H,\tilde P]_\varsigma,\tilde Q]_\varsigma=2e_2\neq0 .
 $$
 
-**Proof.** The three elements are Hermitian: the two projections by *Idempotents of the General Plain Sesqualgebra*, and $\tilde H=ie_1$ because $e_1^{*}=-e_1$. The inner brackets are ordinary commutators by the half-theorem. The first vanishes, $[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q-\tilde Q\tilde P=0$, because $\tilde P\tilde Q=\tfrac14(e_0+ie_3)(e_0-ie_3)=\tfrac14(e_0-e_0)=0$ and likewise in the other order. The other two are
+**Proof.** The three elements are Hermitian: the two projections by *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, and $\tilde H=ie_1$ because $e_1^{*}=-e_1$. The inner brackets are ordinary commutators by the half-theorem. The first vanishes, $[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q-\tilde Q\tilde P=0$, because $\tilde P\tilde Q=\tfrac14(e_0+ie_3)(e_0-ie_3)=\tfrac14(e_0-e_0)=0$ and likewise in the other order. The other two are
 
 $$
 [\tilde Q,\tilde H]_\varsigma=\tilde Q\tilde H-\tilde H\tilde Q=\tfrac12\bigl(e_2+ie_1\bigr)-\tfrac12\bigl(ie_1-e_2\bigr)=e_2 , \qquad

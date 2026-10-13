@@ -12,8 +12,10 @@ Structures*.
 The block is the **only** product of the six that is at once alternating and Jacobi; the two
 properties together make it the Lie product of the space. It has no unit, hence no inverse and no
 group of units, and no algebraic norm in the sense of the block. Its idempotents reduce to $0$, and
-its nilpotents are the whole space.
-chapter gave separate articles, are folded here.
+its nilpotents are the whole space; the two classes, to which the biquaternion chapter gave
+separate articles and which the real block gives the companion articles *Square Roots of One and the
+Idempotents of the Antisymmetric Plain Algebra* and *Square Roots of Zero and the Nilpotents of the
+Antisymmetric Plain Algebra*, are folded here.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real scalars,
 but $\times$ is a different multiplication, alternating and without a unit. Throughout, the natural
@@ -24,8 +26,9 @@ The operation and its table are *Introduction to the Antisymmetric Plain Algebra
 Lie structure, the form and the operators are *The Lie Algebra of the Antisymmetric Plain Algebra*,
 *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations
 of the Antisymmetric Plain Algebra*, and the element theory is *Zero Divisors of the Antisymmetric
-Plain Algebra* and *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain
-Algebra*, all below this article in this category. The law vocabulary is *Definitions for the Study of
+Plain Algebra*, *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* and
+*Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra*, all below this article
+in this category. The law vocabulary is *Definitions for the Study of
 the 6 Algebraic Structures* and the law table *The 6 Algebraic Structures over the Quaternion
 $\mathbb{R}$ Space*.
 
@@ -116,8 +119,9 @@ $$
 \tilde\pi\times\tilde\pi=\tilde\pi\iff\tilde\pi=0 .
 $$
 
-*Proof.* The square is zero for every element, so the equation is $\tilde\pi=0$. The idempotent
-folded into this article.
+*Proof.* The square is zero for every element, so the equation is $\tilde\pi=0$. The idempotent set
+is the origin alone; its own article is *Square Roots of One and the Idempotents of the
+Antisymmetric Plain Algebra*, below this article in this category, and the class is folded here.
 
 ### The Nilpotents
 
@@ -130,7 +134,7 @@ $$
 $$
 
 The nonzero nilpotents are the punctured space, and the class coincides with the zero-divisor set and
-with the root set of $0$ (*Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain
+with the root set of $0$ (*Square Roots of Zero and the Nilpotents of the Antisymmetric Plain
 Algebra* and *Zero Divisors of the Antisymmetric Plain Algebra*, both below this article in this
 category).
 
@@ -204,5 +208,5 @@ the Jacobi identity is the whole of the difference between them.
 - *Introduction to the Antisymmetric Plain Algebra of Quaternions*, for the operation, its table and the absence of a unit.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the Lie structure.
 - *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this category, for the form and the derivations.
-- *Zero Divisors of the Antisymmetric Plain Algebra* and *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra*, both below this article in this category, for the element classes folded here.
+- *Zero Divisors of the Antisymmetric Plain Algebra*, *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* and *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra*, all below this article in this category, for the element classes folded here.
 - *Definitions for the Study of the 6 Algebraic Structures* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the law vocabulary and the law table.

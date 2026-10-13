@@ -41,7 +41,7 @@ that bridge them:
 | the central phase $U(1)$ | the integer phase winding | the discrete charge label (*Particle Types*) |
 | the internal group $U(2)$, compact | its irreducible labels | internal quantum numbers, the discrete charge |
 | the thermal circle, circumference $\beta$ | the Matsubara frequencies $\omega_n=2\pi n/\beta$ | the thermal spectrum (*The Matsubara Formalism*) |
-| the unit sphere $Sp(1)\cong SU(2)$, compact | its finite subgroups and the orders above them | the finite unit groups and the discrete lattice (*Biquaternion Orders*) |
+| the unit sphere $Sp(1)\cong SU(2)$, compact | its finite subgroups and the orders above them | the finite unit groups and the discrete lattice (*Biquaternion Orders and Finite Groups of Units*) |
 
 The first two rows are the same mechanism read at two sizes: the compactness of the phase is why angular
 momentum and charge are discrete, and the internal group being compact is why its labels are discrete. The

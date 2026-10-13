@@ -111,7 +111,7 @@ on either side.
 
 *Proof.* $\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$ vanishes exactly when $N(\tilde Q)=0$; the
 identification of the vanishing set of $N$ with the zero divisors and, on the material sector, with the
-light cone, and its closure under the parent product, are *Biquaternion Norm and Invertibility* and
+light cone, and its closure under the parent product, are *The Interval as the Square and the Charge of the Material Composition* and
 *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 
 The isotropic elements are the one set on which the coupling **does** fail to separate an element from
@@ -244,7 +244,7 @@ and vector rows are read as the real part of the coefficient, the two coefficien
   of the values, the absence of a unit and the failure of the Jordan identity. Read together they say that
   the interval this row attaches to a material operation is a **multiplicative label of the unit group**,
   the group homomorphism — the character $N:(\mathbb{B}^{\times},\cdot)\to(\mathbb{C}^{\times},\cdot)$ of
-  the **ordinary** product, its multiplicativity proved in *Biquaternion Norm and Invertibility* — and that
+  the **ordinary** product, its multiplicativity proved in *Norm and Invertibility in the General Quaternionic Algebra* — and that
   it **cannot** be read as an eigenvalue of a material operator: an eigenvalue needs an algebra with a
   unit and a spectral theory, and the preceding
   section proves that neither exists in this row. Offered as an interpretation, a mass spectrum built on this row

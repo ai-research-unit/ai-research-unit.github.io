@@ -51,8 +51,7 @@ B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mat
 $$
 
 the **sector sign** of the block; the interval is $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, of
-signature $(-,+,+,+)$ on the material sector $\mathbb{M}_-$, and it is cited, never re-proved (*Biquaternion Norm and
-Invertibility*). The sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$, the conjugations are the
+signature $(-,+,+,+)$ on the material sector $\mathbb{M}_-$, and it is cited, never re-proved (*Norm and Invertibility in the General Quaternionic Algebra*). The sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$, the conjugations are the
 complex $\bar{\cdot}$, the natural ${\natural}$ and the Hermitian ${}^{*}=\bar{\cdot}\circ{\natural}$, and the sandwich
 is the one action form of the framework: the Lorentz action for a unit-norm parameter, the unitary evolution for a
 unitary one, the measurement update for a Hermitian idempotent.
@@ -487,7 +486,7 @@ article's adjoint is a **transpose**, and its fixed points are the central multi
 Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*, which is not one of the twelve; this article
 declares only the plain column.
 - **The sector sign is not the metric.** $B$ carries the sector sign; the interval, the mass shell and the metric are
-*Biquaternion Norm and Invertibility* and the companion block, and the worked case gives the two values on one element.
+*The Interval as the Square and the Charge of the Material Composition* and the companion block, and the worked case gives the two values on one element.
 
 **What the framework does not claim.** The interpretation does not derive the Lorentz transformation, the unitary evolution or
 the measurement update from the operator calculus; it reads the three parametrisations that the corpus already uses. It
@@ -624,7 +623,7 @@ for the Hermitian form and not for the plain one.
 - Physics article *Biquaternion Rotations and Lorentz Transformations*
 (`articles_physics/biquaternion-rotations-and-lorentz-transformations.md`), for the sandwich as the Lorentz action, the
 double cover and the rotor.
-- Physics article *Biquaternion Norm and Invertibility* (`articles_physics/biquaternion-norm-and-invertibility.md`), for
+- Physics article *The Interval as the Square and the Charge of the Material Composition* (`articles_physics/the-interval-as-the-square-and-the-charge-of-the-material-composition.md`), for
 the interval, the mass shell and the metric, which are the quaternionic level data and not $B$.
 - Physics article *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*
 (`articles_physics/the-operators-of-the-twelve-structures-multiplication-adjoint-and-bracket.md`), the crossing reader

@@ -18,6 +18,8 @@ The invertibility is where the article records an **absence**. The block is **no
 
 **Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu \varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3}P_\mu\overline{Q_\mu}$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$; the **algebraic norm of the block** is its diagonal $H(\tilde{Q}) = H(\tilde{Q},\tilde{Q}) = \sum_\mu\lvert Q_\mu\rvert^{2}$.
 
+**The results.** Every value of the product $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ is central, so the block has no unit, no inverse and no group of units, and no element is invertible. The block carries one algebraic norm, $H(\tilde{Q}) = \sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}$, real, non-negative and positive definite of signature $(8,0)$ on the real space underlying $\mathbb{B}$, vanishing only at $\tilde{Q} = 0$, with image of its square map the real ray $\mathbb{R}_{\geq0}e_0$. The algebraic norm is not multiplicative: $H(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2}$, with defect the discriminant $H(\tilde P)H(\tilde Q) - \lvert H(\tilde P,\tilde Q)\rvert^{2}\geq0$ vanishing exactly on linearly dependent pairs, and it polarises to the Hermitian form. The definiteness is why it cannot decide invertibility: $H(\tilde{Q}) = 0$ exactly at the origin, so the block has no nonzero isotropic vector and its element classification is two-way.
+
 ## The Relative Notions
 
 The word *unit*, the word *inverse* and the word *group of units* name a product, so the definitions are stated once for a general product and then read on the products of this space; they are in *Definitions for the Study of the 12 Algebraic Structures*.
@@ -28,6 +30,8 @@ Throughout this article the product is the symmetric plain sesqualgebra $\star$,
 
 ## The Absence of a Unit
 
+**The block has no unit of any kind: there is no left, no right and no two-sided unit $e$, because every value of the product is central and the block has non-central elements.**
+
 **Theorem (the block has no unit).** The block has no left unit and no right unit: there is no element $e$ with $e\star\tilde{Q} = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, and none with $\tilde{Q}\star e = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$. Hence there is no two-sided unit either.
 
 *Proof.* Every value of the product is central, $e\star\tilde{Q} = H(e,\tilde{Q})e_0 \in \mathbb{C}e_0$. The element $e_1$ is not central, so $e\star e_1 \neq e_1$ for every $e$, and $e_1\star e \neq e_1$ for every $e$; there is therefore no left unit, no right unit and no two-sided unit. In particular the idempotent $e_0$ is not a unit: $e_0\star e_1 = H(e_0,e_1)e_0 = 0$, since the basis is orthonormal for $H$.
@@ -36,6 +40,8 @@ Throughout this article the product is the symmetric plain sesqualgebra $\star$,
 
 ## The Absence of an Inverse and of the Group of Units
 
+**No element of the block is invertible of $\star$, and the group of units of $\star$ is not defined, both notions being empty for want of a two-sided unit.**
+
 **Theorem (no element is invertible, and there is no group of units).** No element of $\mathbb{B}$ is invertible of $\star$, and the group of units of $\star$ is not defined.
 
 *Proof.* The notions of §*The Relative Notions* presuppose a two-sided unit, and §*The Absence of a Unit* shows that the block has none; the definition is therefore empty. There is no invertible element and no inverse formula.
@@ -43,6 +49,8 @@ Throughout this article the product is the symmetric plain sesqualgebra $\star$,
 **Remark (what the block does not have).** The block has no unit, no inverse, no group of units, no division structure and no three-way classification of the elements into the zero, the invertible and the zero divisors; its element classification is two-way and is read in §*The Absence of a Criterion from the Algebraic Norm*. The block neither inherits the invertible elements of another product nor carries a substitute group of its own elements.
 
 ## The Algebraic Norm of the Block
+
+**The block carries one algebraic norm, $H(\tilde{Q}) = \mathrm{Sc}(\tilde Q\star\tilde Q) = \sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}$, real, non-negative and positive definite; its Gram matrix is the identity on the basis $e_0,e_1,e_2,e_3$ and its square map has image the real ray $\mathbb{R}_{\geq0}e_0$.**
 
 **Definition.** The **algebraic norm of the block** is the diagonal of the scalar-part form of the product,
 
@@ -71,6 +79,8 @@ The equation names the product $\star$: the algebraic norm is relative to the pr
 *Proof.* The Gram statement is $H(e_\mu,e_\nu) = \sum_\sigma (e_\mu)_\sigma\overline{(e_\nu)_\sigma} = \delta_{\mu\nu}$, and the square display gives the image. The ray is attained since $\tilde{Q} = \sqrt{\lambda}e_0$ gives $H(\tilde{Q}) = \lambda$ for $\lambda\geq 0$.
 
 ## The Failure of Multiplicativity
+
+**The algebraic norm of the block is not multiplicative: $H(\tilde P\star\tilde Q) = \lvert H(\tilde P,\tilde Q)\rvert^{2}$, the defect $H(\tilde P)H(\tilde Q) - \lvert H(\tilde P,\tilde Q)\rvert^{2}\geq0$ vanishes exactly on linearly dependent pairs, and multiplicativity holds on the centre alone.**
 
 **Theorem (the algebraic norm of a product).** For all $\tilde P,\tilde Q$,
 
@@ -102,6 +112,8 @@ and dually $H(\tilde R,\tilde P\star\tilde Q) = H(\tilde R,e_0)\overline{H(\tild
 
 ## The Polarisation of the Algebraic Norm
 
+**The polar form of $H$ is twice the real part of the sesquilinear form, $H(\tilde P + \tilde Q) - H(\tilde P) - H(\tilde Q) = 2\Re H(\tilde P,\tilde Q)$, and the full Hermitian form is recovered from the algebraic norm by the four-term polarisation $H(\tilde P,\tilde Q) = \tfrac{1}{4}\sum_{k=0}^{3}i^{k}H(\tilde P + i^{k}\tilde Q)$.**
+
 **Theorem (the polarisation).** The polar form of the quadratic map $H$ is twice the real part of the sesquilinear form,
 
 $$
@@ -120,6 +132,8 @@ $$
 
 ## The Absence of a Criterion from the Algebraic Norm
 
+**The block has no invertible element, so no criterion can name one, and its algebraic norm decides nothing: $H(\tilde{Q}) = 0$ holds exactly at $\tilde{Q} = 0$, so the block has no nonzero element of zero algebraic norm and no nonzero isotropic vector.**
+
 **Theorem (the algebraic norm does not decide invertibility).** The block has no invertible element, so no criterion can name one; and its algebraic norm has no nonzero zero:
 
 $$
@@ -133,6 +147,8 @@ $$
 **Corollary (the substitute for the group of units).** The block has no group of units; the set that replaces it is the group of the linear maps of $\mathbb{B}$ that preserve the form $H$, together with its algebra, and it is read in *The Multiplication Operators of the Symmetric Plain Sesqualgebra*. The block carries no subgroup of its own elements to play that role, since it has no invertible element.
 
 ## The Comparison with the General Plain Algebra
+
+**The parent is unital and the block is not; the two products carry different algebraic norms $B$ and $H$; neither algebraic norm decides invertibility, the block having no invertible element at all; and the block's zero divisors are every nonzero element while the parent's are a proper subset.**
 
 | clause | general plain algebra | symmetric plain sesqualgebra |
 |---|---|---|

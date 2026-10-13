@@ -171,7 +171,7 @@ the real time $ct'$ together with the three imaginary spatial coordinates $ix', 
 
 - The **idempotents** in $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.
 - The **positive trace-one elements** in $\mathbb{M}_+$, of the form $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, are the mixed states, parametrizing the Bloch ball.
-- The **elements** of $\mathbb{M}_+$, of the form $\tilde{H} = h_0 e_0 + i\mathbf{h}$, are the observables (they are automatically Hermitian by definition of $\mathbb{M}_+$), with spectral decomposition in terms of idempotents.
+- The **elements** of $\mathbb{M}_+$, of the form $\tilde{H} = h_0 e_0 + i\mathbf{h}$ — equivalently written $\tilde{H} = h_0e_0 + ih_1e_1 + ih_2e_2 + ih_3e_3$ with $h_0, h_1, h_2, h_3 \in \mathbb{R}$, which is the usual writing of quantum physics — are the observables (they are automatically Hermitian by definition of $\mathbb{M}_+$), with spectral decomposition in terms of idempotents.
 - The **trace pairing** $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ gives the Born rule, as a consequence of the algebra rather than an independent postulate.
 - The **sandwich operation** $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}/\mathrm{Tr}(\tilde{P}\tilde{\rho}\tilde{P})$ gives the projective measurement and state update (the trace in the denominator normalizes the post-measurement state).
 - The **unitary elements** of $\mathbb{B}$, and their conjugation action $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^{*}$, give the reversible evolution.

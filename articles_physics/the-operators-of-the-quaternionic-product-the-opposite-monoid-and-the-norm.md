@@ -64,7 +64,7 @@ coefficientwise $\bar{\cdot}$, the natural ${\natural}$ fixing $i$ and negating 
 ${}^{*}=\bar{\cdot}\circ{\natural}$; the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$. The product
 of the band is written $\star$, and it is read through the natural conjugation alone. The form is the one displayed
 above, of Gram matrix $I_4$; it is cited, never re-proved, and on the material sector $\mathbb{M}_-$ it is the interval
-$-c^{2}t^{2}+\mathbf x^{2}$, of signature $(3,1)$ (*Biquaternion Norm and Invertibility*). Its algebraic norm is the
+$-c^{2}t^{2}+\mathbf x^{2}$, of signature $(3,1)$ (*The Interval as the Square and the Charge of the Material Composition*). Its algebraic norm is the
 **biquaternion norm**
 
 $$
@@ -528,7 +528,7 @@ declare.
   of the Twelve Structures: Multiplication, Adjoint and Bracket*, which is not one of the twelve; this article declares
   only the quaternionic column.
 - **The metric, the mass shell and the invertibility are the companion articles' business.** The interval and the
-  biquaternion norm, the units and the zero divisors are *Biquaternion Norm and Invertibility*; the mass shell, the rank
+  biquaternion norm, the units and the zero divisors are *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone*; the mass shell, the rank
   and the positivity of the dagger are *Mass, Rank and the Positivity of the Dagger*; the interval read as the square of
   the material composition is *The Interval as the Square and the Charge of the Material Composition*, and the
   orientation of the composition is *Why the Material Composition Is Oriented and Cannot Measure*. This article owns

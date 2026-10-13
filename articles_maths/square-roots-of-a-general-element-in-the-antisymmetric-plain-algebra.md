@@ -18,11 +18,13 @@ square of every element is zero, $\tilde\Xi\wedge\tilde\Xi=0$, so the equation r
 It has a solution exactly when $\tilde A=0$, and then **every** element of $\mathbb{B}$ is a square
 root; for every nonzero $\tilde A$ it has no solution. **The square map of the block is the zero
 map**: its image is the origin alone and its kernel is the whole space. The special case of a
-central right side, the roots of $-1$, of $0$ and of $+1$, is *Square Roots of Minus One, Zero and
-Plus One in the Antisymmetric Plain Algebra*; the square-zero elements, which are the square roots
-of the origin, are *Nilpotents of the Antisymmetric Plain Algebra*; and the theory of the general
-plain product, to which the block is compared, is *Square Roots of a General Element in the
-General Plain Algebra*.
+central right side, the roots of $-1$, of $0$ and of $+1$, and the square-zero elements, which are
+the square roots of the origin, are *Square Roots of One and the Idempotents of the Antisymmetric
+Plain Algebra* and *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra*;
+and the theory of the general plain product, to which the block is compared, is *Square Roots of a
+General Element in the General Plain Algebra*.
+
+**The results.** The square map of the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\mathbf\Xi\times\mathbf{Q}$ is the zero map: $\mathrm{sq}(\tilde\Xi)=\tilde\Xi\wedge\tilde\Xi=0$, so the equation $\tilde\Xi\wedge\tilde\Xi=\tilde A$ reads $0=\tilde A$. It has a solution exactly when $\tilde A=0$, and then **every** element of $\mathbb{B}$ is a square root; for every nonzero $\tilde A$ it has no solution. The image of the square map is the origin $\{0\}$ and its kernel is the whole space $\mathbb{B}$, so it is neither injective nor surjective.
 
 ## The Notion and Its Product
 
@@ -64,6 +66,8 @@ unknown $\tilde\Xi$: it constrains the right side alone.
 
 ## The Square Roots of the Origin
 
+**The square roots of the origin are all the elements of the space, $\{\tilde\Xi:\mathrm{sq}(\tilde\Xi)=0\}=\mathbb{B}$; this set is the kernel of the square map.**
+
 **Theorem (the square roots of $0$).** The square roots of the origin are all the elements of the
 space,
 $$
@@ -75,11 +79,13 @@ square root of the origin, and the set is the whole space.
 
 The set is the kernel of the square map, and it is the whole space; it contains the origin, which
 is a square root of itself. Its nonzero elements are the square-zero elements of the block, which
-are the nilpotents of *Nilpotents of the Antisymmetric Plain Algebra* and the zero divisors of
+are the nilpotents of *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* and the zero divisors of
 *Zero Divisors of the Antisymmetric Plain Algebra*. The origin is the only value of which the
 block has square roots at all, and it has as many as the space allows.
 
 ## The Square Roots of the Nonzero Elements
+
+**For every $\tilde A\neq0$ the equation $\tilde\Xi\wedge\tilde\Xi=\tilde A$ has no solution: no nonzero element has a square root in the block.**
 
 **Theorem (the square roots of a nonzero element).** Let $\tilde A\neq0$. The equation
 $\tilde\Xi\wedge\tilde\Xi=\tilde A$ has no solution; equivalently, no nonzero element of
@@ -95,6 +101,8 @@ whose scalar part the block discards. The two nonzero central values $-1$ and $+
 roots either, as the central case records, and neither has any other element of the space.
 
 ## The Image and the Kernel of the Square Map
+
+**The square map is the zero map, $\mathrm{sq}=0$, of image the origin $\{0\}$ and kernel the whole space $\mathbb{B}$; it is neither injective nor surjective, and every nonzero element is nilpotent of index two.**
 
 **Proposition (the square map).** The square map of the block is the zero map:
 $$
@@ -115,11 +123,14 @@ vanishes and the element does not, and no higher power is needed.
 
 ## The Comparison with the Parent Product
 
+**The parent's square map is proper, with proper image and kernel, while the block's is the zero map; the only right side with square roots is the origin, and there the block has more than the parent: the whole space against the origin together with the pure isotropic cone.**
+
 **Remark (the parent square roots).** The parent general plain bilinear product is associative and
 unital, and its square-root equation $\tilde\Xi^{2}=\tilde A$ is a genuine classification, whose
 central case has three proper families
-(*Square Roots of a General Element in the General Plain Algebra*; *Square Roots of Minus One,
-Zero and Plus One in the General Plain Algebra*). The block is the antisymmetric half of that
+(*Square Roots of a General Element in the General Plain Algebra*; *Square Roots of One and the
+Idempotents of the General Plain Algebra*; *Square Roots of Zero and the Nilpotents of the General
+Plain Algebra*). The block is the antisymmetric half of that
 product, and the comparison is the comparison of a square map that is zero with a square map that
 is not: the parent's square map is the identity-block combination
 $\tilde\Xi^{2}=2\Xi_0\tilde\Xi-\bigl[\Xi_0^{2}+(\mathbf\Xi,\mathbf\Xi)\bigr]e_0$, whose image and kernel
@@ -158,13 +169,14 @@ have no counterpart in the block.
 | $\tilde\Xi\wedge\tilde\Xi=\tilde A$ | the square-root equation, equivalent to $0=\tilde A$ |
 | $\mathbb{B}$ | the square roots of the origin, the kernel of the square map |
 | $\{0\}$ | the image of the square map, the only right side with square roots |
+| $(\mathbf P,\mathbf Q)=P_1Q_1+P_2Q_2+P_3Q_3$ | the complex bilinear form on the vector parts |
 | $N(\tilde\Xi)=\Xi_0^{2}+(\mathbf\Xi,\mathbf\Xi)$ | the algebraic norm of the parent product, the central part of $\tilde\Xi\tilde\Xi^{\natural}$; the parent square's own central part is $\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)$ |
 
 ## Further Reading
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the square root of an element, the root of a central value and the relativity of the definitions to the product
 - *Introduction to the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md`), for the operation, its alternation and its table
-- *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-algebra.md`), for the special case of a central right side
-- *Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/nilpotents-of-the-antisymmetric-plain-algebra.md`), for the square-zero elements, which are the square roots of the origin
+- *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-plain-algebra.md`), for the central right sides $-1$ and $+1$, which are squareless, and for the idempotents
+- *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-plain-algebra.md`), for the central right side $0$ and the square-zero elements, which are the square roots of the origin
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the classification of the parent product, against which the zero square map is read
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the square of a product and its split into the two halves

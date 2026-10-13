@@ -13,7 +13,7 @@ the rank as a mass label and the interval as the metric gives the framework's ac
 exists and where the mass shells sit.
 
 The article keeps to the algebra. It defers the interval, the four-momentum and the mass shell to
-*Biquaternion Norm and Invertibility*; the light cone and its causal interpretation to *The Light Cone as the
+*The Interval as the Square and the Charge of the Material Composition*; the light cone and its causal interpretation to *The Light Cone as the
 Biquaternion Zero-Divisor Cone* and *Causality and the Light Cone as an Information Barrier in
 Biquaternionic Form*; the states and the Bloch ball to *The States the Indefinite Metric Cannot Normalise* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; the
 measurement cone to *POVMs and the Positive Cone in Biquaternionic Form*; and the comparison of the four
@@ -299,7 +299,7 @@ spacelike element, $\lvert t\rvert<\lvert\mathbf u\rvert$, lies
 outside it, so nothing the algebra produces as a square is spacelike. The positivity of the dagger is what
 makes the internal symmetry group compact and the charges discrete (*Particle Types, Discrete Charge and
 Three-Particle Couplings*); the states and their isotropy belong to *The States the Indefinite Metric Cannot Normalise*; the
-interval and the mass shell to *Biquaternion Norm and Invertibility*; and the cone in physics to *The
+interval and the mass shell to *The Interval as the Square and the Charge of the Material Composition*; and the cone in physics to *The
 Light Cone as the Biquaternion Zero-Divisor Cone*, *POVMs and the Positive Cone in Biquaternionic Form*
 and *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*.
 
@@ -322,7 +322,7 @@ and *Causality and the Light Cone as an Information Barrier in Biquaternionic Fo
 
 - *The Biquaternion Mathematics Corpus*, the physics entry point to the mathematical study under
   which this block sits.
-- Companion article *Biquaternion Norm and Invertibility*, for the interval, the invertibility criterion,
+- Companion articles *The Interval as the Square and the Charge of the Material Composition* and *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone*, for the interval, the invertibility criterion,
   the four-velocity and the mass shell.
 - Companion article *The States the Indefinite Metric Cannot Normalise* and *The
   Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the states and the state cone.

@@ -20,8 +20,7 @@ Square Roots of a General Element*, found from the vector–scalar split and fre
 structure; they are cited and read here, not re-proved. The three interpretations in physics are owned by *The
 Local Complex Structure and the Speed of Light*, *The Light Cone as the Biquaternion Zero-Divisor Cone*,
 *Zero Divisors as a Physical Locus in Biquaternionic Form* and *Antilinear Structure and the Two Kinds of
-Mass in Biquaternionic Form*; the mass shell and the interval are owned by *Biquaternion Norm and
-Invertibility*.
+Mass in Biquaternionic Form*; the mass shell and the interval are owned by *Norm and Invertibility in the General Quaternionic Algebra*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$,
 $e_1e_2=e_3$, $e_k^{2}=-e_0$, central imaginary $i$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$
@@ -366,7 +365,7 @@ conditions of §*Square Roots of a General Element*; an element has no square ro
 $\mathbb{M}_-$ contains no nonzero nilpotent. The mass shell is a slice of the square map: the natural
 square $\nu(\tilde P)=\tilde P\tilde P^{\natural}=N(\tilde P)e_0$ always lands in the centre, and the mass
 shell is the fibre over the scalar $-m^{2}c^{2}$, whose level set on $\mathbb{M}_-$ is the mass shell of
-*Biquaternion Norm and Invertibility*. The interpretation of a material quantity as **realised by the algebra**
+*The Interval as the Square and the Charge of the Material Composition*. The interpretation of a material quantity as **realised by the algebra**
 exactly when it has a square root, and of the mass shell as the slice on which the square is a prescribed
 scalar, is **partly speculative and labelled as such**; the identification of the criterion with a
 physical condition is a proposal and not a result, and the standing weakness of the interpretation is the
@@ -404,16 +403,16 @@ nilpotent cone and the idempotents.
 and the complex structures of the quaternion algebra.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw–Hill, 1980), for the mass shell,
 the interval and the positive-frequency cone.
-- Mathematics article *Biquaternion Square Roots of Minus One, Zero and Plus One*
+- Mathematics article *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*
 (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra.md`), for the three
 classifications proved directly.
-- Mathematics article *Biquaternion Square Roots of a General Element*
+- Mathematics article *Square Roots of a General Element in the General Plain Algebra*
 (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the general classification and
 the reduced quadratic.
-- Mathematics article *Biquaternion Norm and Invertibility*
-(`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm, the zero-divisor cone, the
+- Mathematics article *Norm and Invertibility in the General Quaternionic Algebra*
+(`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm, the zero-divisor cone, the
 interval and the mass shell.
-- Companion article *Biquaternion Norm and Invertibility*, for the mass shell and the interval owned in
+- Companion article *The Interval as the Square and the Charge of the Material Composition*, for the mass shell and the interval owned in
 physics.
 - Companion article *The Local Complex Structure and the Speed of Light*, for the root of $-1$ as a local
 complex structure and its propagation interpretation.

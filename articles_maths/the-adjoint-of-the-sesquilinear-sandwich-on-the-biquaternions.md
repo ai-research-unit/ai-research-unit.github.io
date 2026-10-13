@@ -9,7 +9,7 @@ $$
 \varphi(\tilde X,\tilde Y)=\mathrm{Sc}(\tilde X\tilde Y^{*})=\sum_\mu X_\mu\overline{Y_\mu}=\tfrac12\,\mathrm{tr}\bigl(\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde Y)^{\dagger}\bigr)
 $$
 
-of *Norm and Invertibility in the General Plain Algebra* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde P,\tilde Q}^{\dagger}$ characterised by
+of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde P,\tilde Q}^{\dagger}$ characterised by
 
 $$
 \varphi\bigl(S_{\tilde P,\tilde Q}\tilde X,\tilde Y\bigr)=\overline{\varphi\bigl(\tilde X,S_{\tilde P,\tilde Q}^{\dagger}\tilde Y\bigr)} .
@@ -31,7 +31,7 @@ The setting is that of *Introduction to the General Plain Sesqualgebra of Biquat
 
 ### The Form
 
-**Recall.** The Hermitian form of *Norm and Invertibility in the General Plain Algebra* is
+**Recall.** The Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* is
 
 $$
 \varphi(\tilde X,\tilde Y)=\mathrm{Sc}\bigl(\tilde X\tilde Y^{*}\bigr)=\sum_{\mu=0}^{3}X_\mu\overline{Y_\mu} ,

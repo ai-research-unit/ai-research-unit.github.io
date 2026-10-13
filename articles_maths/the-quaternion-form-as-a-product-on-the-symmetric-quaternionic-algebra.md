@@ -10,12 +10,11 @@ as the **form that the block carries**: it identifies it, computes its Gram matr
 realification and its signature, its invariance under the product and the failure of that invariance, its
 restriction to the remarkable subspaces, and its relation to the Hermitian form $H$ of the algebra.
 
-The form $N$ is the quaternion form named in the catalogue *The 12 Products of the Biquaternion Complex Space*, and it is the general quaternionic bilinear one of the four pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; its diagonal is the norm of *Biquaternion
-Norm and Invertibility*, and on the remarkable subspaces its restrictions and their signatures are
+The form $N$ is the quaternion form named in the catalogue *The 12 Products of the Biquaternion Complex Space*, and it is the general quaternionic bilinear one of the four pairings of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; its diagonal is the norm of *Norm and Invertibility in the General Quaternionic Algebra*, and on the remarkable subspaces its restrictions and their signatures are
 *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*, whose table is quoted here and
 not recomputed. The article therefore owns the reading of the form **as the form of the product** — the Gram
 data, the invariance question and the coincidence with $H$ — and cites the norm article and the remarkable-subspace
-article for the form itself. The Hermitian form $H$ is *Norm and Invertibility in the General Plain Algebra*; the invariance
+article for the form itself. The Hermitian form $H$ is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the invariance
 question for a symmetric product is *Jordan Algebras*; the matrix reading of the same form is
 *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Symmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*.
 
@@ -189,9 +188,9 @@ any of the remarkable subspaces, since it has none on the whole algebra.
 
 ## The Coincidence with the Hermitian Form on the Real Part
 
-**Proposition (the coincidence on the real elements).** On two elements with real coefficients, drawn from
-the quaternion subspace, the form $N$ coincides with the Hermitian form of *Norm and Invertibility in the
-General Plain Algebra*,
+**Proposition (the coincidence on the real elements).** On two elements with real coefficients,
+drawn from the quaternion subspace, the form $N$ coincides with the Hermitian form of *The 4 Forms
+over the Biquaternion $\mathbb{C}$ Space*,
 
 $$
 \tilde P,\tilde Q\in\mathbb{H}_{\mathbb{B}} \quad\Longrightarrow\quad
@@ -251,7 +250,7 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the quaternion form among the four pairings
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the quaternion form beside the other three coefficients
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the norm, the polarisation and the Hermitian form
+- *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm, the polarisation and the Hermitian form
 - *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restriction Gram matrices and the signatures
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the radical and the isotropic elements
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the adjoint with respect to $N$ and the groups preserving it

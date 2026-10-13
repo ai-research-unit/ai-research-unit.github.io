@@ -31,6 +31,8 @@ $$
 
 The four-position biquaternion lives in the **anti-Hermitian subspace** $\mathbb{M}_-$ (imaginary scalar part, real vector part), matching the structure of the four-vector $x^\mu = (ict, \mathbf{x})$ in the $ict$ convention.
 
+It is a **material element**; it is what is observed. Its **observable** is the Hermitian representative $i\tilde Q\in\mathbb{M}_+$, whose eigenvalues are the readings.
+
 ## The Invariant Interval
 
 The **invariant interval** between two nearby events in spacetime is the **biquaternion norm** of the displacement biquaternion $d\tilde{Q} \in \mathbb{M}_-$:
@@ -40,6 +42,8 @@ ds^2 = d\tilde{Q}\,\overline{d\tilde{Q}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^
 $$
 
 Here $\overline{d\tilde{Q}} = ic\,dt\,e_0 - d\mathbf{x}$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
+
+The displacement $d\tilde Q$ is a **material element**, and the interval is its norm; a spacelike distance is read from that norm.
 
 **The biquaternion norm on $\mathbb{M}_-$.** For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 = i q'_0$ imaginary and $\mathbf{Q} = q_1 e_1 + q_2 e_2 + q_3 e_3$ real, the biquaternion norm is
 

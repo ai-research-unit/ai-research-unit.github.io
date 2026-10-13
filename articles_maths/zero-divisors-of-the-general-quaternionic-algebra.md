@@ -21,13 +21,15 @@ annihilators **coincide for every element**, unit or zero divisor alike, because
 conjugation is a $\mathbb{C}$-linear anti-automorphism of order two; the quaternionic product is
 the one product of the block whose annihilators are not exchanged by the conjugation.
 
+**The results.** A nonzero biquaternion is a zero divisor of the general quaternionic product exactly when its algebraic norm vanishes, $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)=0$, so the zero divisors are the nonzero points of the **zero-divisor cone** $C=\{N=0\}$, a real cone of real dimension $6$ that is not a subspace and is stable under the product. The cone splits into the **pure** family, the plain nilpotents with $Q_0=0$ and $(\mathbf Q,\mathbf Q)=0$ forming an isotropic cone of real dimension $4$, and the **non-pure** family, the complex multiples $\tilde Q=2Q_0\tilde\Pi$ of the nontrivial plain idempotents, on which $\tilde Q\star\tilde Q=0$ while the plain square is the nonzero multiple $2Q_0\tilde Q$. The two annihilators of an element coincide, are $\{0\}$ off the cone and a complex plane on it, and the four general products select one and the same zero-divisor set. Each section below states its result first and then proves it.
+
 **Boundaries.** The zero divisors of the algebra, the two families, the criterion in the plain
 product and the structure of the cone are *Zero Divisors of the General Plain Algebra*; the plain
 nilpotents are *Nilpotents of the General Plain Algebra*, and the plain idempotents *Idempotents of
 the General Plain Algebra*. The fact that the four general products select one and the same
 zero-divisor set, with its proof, and the one-sided inverse equations, are **Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**; the article quotes that coincidence and does not reprove it. The algebraic norm and the
 one-sided equations of this product are *Norm and Invertibility in the General Quaternionic
-Algebra*; the nilpotents of the product are *Nilpotents of the General Quaternionic Algebra*; and
+Algebra*; the nilpotents of the product are *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*; and
 the form on the remarkable subspaces is *Remarkable Subspaces under the General Quaternionic
 Algebra of Biquaternions*.
 
@@ -70,6 +72,8 @@ which are plain-product equations in the conjugated first factor.
 
 ## The Criterion
 
+**A nonzero $\tilde Q$ is a zero divisor of $\star$ if and only if its algebraic norm vanishes, $N(\tilde Q)=\sum_\mu Q_\mu^2=0$.**
+
 **Theorem (the criterion for the general quaternionic product).** For a nonzero
 $\tilde Q\in\mathbb{B}$, $\tilde Q$ is a zero divisor of $\star$ if and only if
 
@@ -98,6 +102,8 @@ conjugated one-sided solution here.
 
 ## The Three-Way Classification
 
+**Every element of $\mathbb{B}$ is exactly one of three: a unit of the plain product with $N(\tilde Q)\neq0$, the zero element, or a zero divisor of $\star$ with $N(\tilde Q)=0$ and $\tilde Q\neq0$.**
+
 Combining the criterion with the invertibility theory of the algebraic norm, the elements of
 $\mathbb{B}$ are partitioned into three classes, and the classification is the one of *Zero
 Divisors of the General Plain Algebra* with the inverse column read for this product.
@@ -114,6 +120,8 @@ not describe them under the other products.
 
 ## The Algebra Is Not a Division Algebra
 
+**The biquaternion algebra is not a division algebra, because it has zero divisors; the statement does not depend on the product, the same elements being the zero divisors of both.**
+
 A **division algebra** is an algebra in which every nonzero element is invertible; for a
 finite-dimensional algebra this is equivalent to the absence of zero divisors. The biquaternion
 algebra contains zero divisors, so it is **not** a division algebra. The statement is the one of
@@ -122,6 +130,8 @@ elements are the zero divisors of both products, by the criterion above and the 
 below.
 
 ## The Two Families of Zero Divisors
+
+**The zero divisors split into the pure ones, $Q_0=0$ with $(\mathbf Q,\mathbf Q)=0$, and the non-pure ones, $Q_0\neq0$ with $(\mathbf Q,\mathbf Q)=-Q_0^2$, and the split does not depend on the product.**
 
 The zero divisors split into two families according to the value of the scalar part, and the split
 does not depend on the product, because $N(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q)$ separates the two
@@ -133,6 +143,8 @@ this product they are separated not by the square, which vanishes on both, but b
 as the two sections below compute.
 
 ## Pure Zero Divisors
+
+**A nonzero pure element is a zero divisor of $\star$ exactly when $(\mathbf Q,\mathbf Q)=0$, and then it is a nilpotent of the plain product, $\tilde Q\tilde Q=0$; these are the isotropic bivectors $\boldsymbol\rho+i\boldsymbol\rho'$ with $\boldsymbol\rho\perp\boldsymbol\rho'$ and $\lvert\boldsymbol\rho\rvert=\lvert\boldsymbol\rho'\rvert$.**
 
 **Proposition (the square of a pure element).** Let $\tilde Q=\mathbf Q$ be a pure element. Then
 
@@ -162,6 +174,8 @@ $|\boldsymbol\rho|=|\boldsymbol\rho'|$, the parameterisation of *Zero Divisors o
 Algebra*, §*The Bivector Form*.
 
 ## Non-Pure Zero Divisors
+
+**A zero divisor with $Q_0\neq0$ has $N(\tilde Q)=0$ and $\tilde Q\star\tilde Q=0$ while its plain square is the nonzero element $\tilde Q\tilde Q=2Q_0\tilde Q$, and it is a complex multiple $\tilde Q=2Q_0\tilde\Pi$ of a nontrivial plain idempotent.**
 
 **Proposition (the square of a non-pure element).** Let $\tilde Q=Q_0e_0+\mathbf Q$ with $Q_0\neq0$
 and $N(\tilde Q)=0$. Then
@@ -201,9 +215,11 @@ $$
 $$
 
 so the two products see the same element as an idempotent and as a square-zero element. This
-displacement is the subject of *Idempotents of the General Quaternionic Algebra*.
+displacement is the subject of *Square Roots of One and the Idempotents of the General Quaternionic Algebra*.
 
 ## The Zero Divisor Set
+
+**The zero-divisor cone $C=\{\tilde Q\star\tilde Q=0\}=\{N(\tilde Q)=0\}$ is a real cone of real dimension $6$ that is not a subspace and is stable under the product; it is the union of the origin, the pure family and the non-pure family.**
 
 **Definition.** The **zero-divisor cone** of the quaternionic product is the vanishing set of the
 algebraic norm,
@@ -251,6 +267,8 @@ General Quaternionic Algebra*, below this article in this category.
 
 ## The Zero Divisors and the Four General Products
 
+**The four general products give four zero-divisor equations but one and the same zero-divisor set, $\{\tilde Q\neq0:N(\tilde Q)=0\}$; what the product changes is the equation and the annihilator, not the set.**
+
 The four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*
 give four definitions of a zero divisor, hence four zero-divisor sets. For the biquaternion algebra
 the four sets are one and the same set,
@@ -269,6 +287,8 @@ and their solutions for the four products are the same article's §*The One-Side
 Equations*, and the plain reading of the criterion is *Zero Divisors of the General Plain Algebra*.
 
 ## The Zero Divisors and the Remarkable Subspaces
+
+**The centre, the quaternion subspace and the anti-quaternion subspace carry no zero divisor; the vector subspace carries the whole pure family as an isotropic cone of real dimension $4$, the two Hermitian subspaces carry the non-pure family in the star-fixed form, and a general non-pure zero divisor lies in neither.**
 
 Since the zero divisors are the nonzero elements of algebraic norm zero, their distribution among
 the remarkable subspaces is the distribution of the zeros of the quadratic form $N$, and the
@@ -333,7 +353,7 @@ symmetric here where the sesquilinear products make it conjugate-symmetric.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the two families, the criterion in the plain product and the structure of the cone.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the algebraic norm, its multiplicativity and the one-sided equations.
 - *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the coincidence of the four zero-divisor sets and the dependence of the annihilators on the product.
-- *Nilpotents of the General Quaternionic Algebra* (`articles_maths/nilpotents-of-the-general-quaternionic-algebra.md`), for the square-zero elements of the product and the index of nilpotency.
-- *Idempotents of the General Quaternionic Algebra* (`articles_maths/idempotents-of-the-general-quaternionic-algebra.md`), for the displacement of the plain idempotents into the nilpotents of the product.
+- *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.md`), for the square-zero elements of the product and the index of nilpotency.
+- *Square Roots of One and the Idempotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.md`), for the displacement of the plain idempotents into the nilpotents of the product.
 - *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the signatures of the algebraic norm on the six subspaces.
 - *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra.md`), below this article in this category, the companion article, for the coincident annihilators, the operator and the rank table

@@ -28,7 +28,7 @@ spacetime.
 
 Keeping those two apart is the whole of the article. The metric is the interval,
 $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, of signature $(-,+,+,+)$ on the material sector; it belongs
-to the companion quaternionic block and to *Biquaternion Norm and Invertibility*, and it is cited here,
+to the companion quaternionic block and to *Norm and Invertibility in the General Quaternionic Algebra*, and it is cited here,
 never re-proved. The point about $B$ is that it is **definite** where the interval is indefinite. A
 definite form has no light cone, so $B$ cannot decide which events can influence which. What it carries
 is the sign that separates the material sector from the informational one, and that sign is the whole of
@@ -41,7 +41,7 @@ restriction table. Here the same product is read on $\mathbb{M}_-$ alone: the se
 composite of two material operations, the light cone as the wall of the reversible operations, and the
 absence of a material projection. The product's invertibility criterion, its group of units and its cone
 are the mathematics of *The Group of Units of the General Plain Algebra and the Complement of the
-Zero-Divisor Cone* and the physical level data of *Biquaternion Norm and Invertibility*; the operators and
+Zero-Divisor Cone* and the physical level data of *The Interval as the Square and the Charge of the Material Composition*; the operators and
 the sandwich are *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*; the
 sector itself, its coordinate dictionary and its superselection interpretation are *The Anti-Hermitian
 Subspace $\mathbb{M}_-$ as the Material Sector*; and the comparison of the four general products is *The
@@ -80,7 +80,7 @@ N(\tilde T,\tilde T) = \mathrm{Sc}\!\left(\tilde T^{\natural}\tilde T\right) = -
 $$
 
 of signature $(-,+,+,+)$ on $\mathbb{M}_-$; its zero set is the light cone, its level set
-$N=-m^{2}c^{2}$ is the mass shell, and both are owned by *Biquaternion Norm and Invertibility*. The
+$N=-m^{2}c^{2}$ is the mass shell, and both are owned by *The Interval as the Square and the Charge of the Material Composition*. The
 interval is the **general quaternionic bilinear form**, the scalar part of the second of the four general products, and it
 is quoted here only to be kept apart from $B$. Two forms of opposite type sit on the same sector, and the
 rest of the article is about the one that does not carry the interval.
@@ -176,7 +176,7 @@ The general plain bilinear product composes material operations, and the first t
 is which of them can be undone. On the material sector the answer is the light cone. The algebraic
 criterion, the partition of the algebra and the group structure are *The General Plain Bilinear Product on the
 Biquaternion Space*, *The Group of Units of the General Plain Algebra and the Complement of the
-Zero-Divisor Cone* and *Biquaternion Norm and Invertibility*; what is read here is the form they take on
+Zero-Divisor Cone* and *The Interval as the Square and the Charge of the Material Composition*; what is read here is the form they take on
 $\mathbb{M}_-$.
 
 **The units and the cone.** The invertibility of the general plain bilinear product is decided by the multiplicative
@@ -314,7 +314,7 @@ boundary of what it must declare is the boundary of the sector.
 - **$B$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
 causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\mathbb{M}_-$.
 - **$B$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
-level data of the general quaternionic bilinear form, owned by *Biquaternion Norm and Invertibility*; the
+level data of the general quaternionic bilinear form, owned by *The Interval as the Square and the Charge of the Material Composition*; the
 worked case shows the two forms giving different numbers on the same element.
 - **$B$ is not the reversibility.** The criterion of invertibility is the norm $N$ and not the scalar form
 $B$: the element $e_0+e_1$ is a unit with $B=0$ and the element $e_0+ie_1$ is a zero divisor with $B=2$.
@@ -420,7 +420,7 @@ the interval and the mass shell of the material sector.
 the whole algebra and the restriction table over the remarkable subspaces.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material
 sector and its own physics.
-- Companion article *Biquaternion Norm and Invertibility*, for the interval, the light cone, the mass
+- Companion article *The Interval as the Square and the Charge of the Material Composition*, for the interval, the light cone, the mass
 shell and the units.
 - Mathematics article *The Group of Units of the General Plain Algebra and the Complement of the
 Zero-Divisor Cone*

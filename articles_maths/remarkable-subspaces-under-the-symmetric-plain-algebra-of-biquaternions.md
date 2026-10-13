@@ -4,7 +4,7 @@
 
 The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra of Biquaternions*. The algebra carries remarkable real subspaces, and this article reads the product on each of them: whether it stays inside, and the rule it follows where it does; the units and the idempotents it contains; and its isotropic elements. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*, with their natural real bases.
 
-The reading follows the pattern of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, and the subspaces themselves, their bases and their relations are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The products of the four general products on the same remarkable subspaces are *Remarkable Subspaces and the Four General Products*; the isotropic set of the block is the isotropic cone of *Norm and Invertibility in the General Plain Algebra*; and the idempotents are those of *Idempotents of the General Plain Algebra*. This article owns the product $\bullet$ on the remarkable subspaces and the table that gathers the readings.
+The reading follows the pattern of *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, and the subspaces themselves, their bases and their relations are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The products of the four general products on the same remarkable subspaces are *Remarkable Subspaces and the Four General Products*; the isotropic set of the block is the isotropic cone of *Norm and Invertibility in the General Quaternionic Algebra*; and the idempotents are those of *Idempotents of the General Plain Algebra*. This article owns the product $\bullet$ on the remarkable subspaces and the table that gathers the readings.
 
 **Conventions and the criterion.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, and the product is $\bullet$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$. The remarkable subspaces are real and their natural real bases are the ones of *Introduction to the Remarkable Subspaces*:
 
@@ -36,7 +36,7 @@ The rule is the multiplication of the complex numbers, restricted to the scalar 
 
 ### Units, Idempotents and Isotropic Elements
 
-The generic norm of a central element is $N(Ae_0)=A^2$, so the **units** of the centre are the non-zero scalars, $A\neq0$, and the element $Ae_0$ with $A\neq0$ is invertible in the block with inverse $A^{-1}e_0$. The **idempotents** of the centre are the solutions of $A^2=A$, namely $0$ and $e_0$; these are the two trivial idempotents of the block, and no non-trivial idempotent is central, because a non-trivial idempotent $\tfrac12(e_0+\tilde\Xi i)$ has the non-central element $\tilde\Xi i$ in its vector part. The **isotropic** elements are the solutions of $A^2=0$, namely $0$ alone: the centre contains no non-zero isotropic element.
+The generic norm of a central element is $N(Ae_0)=A^2$, so the **units** of the centre are the non-zero scalars, $A\neq0$, and the element $Ae_0$ with $A\neq0$ is invertible in the block with inverse $A^{-1}e_0$. The **idempotents** of the centre are the solutions of $A^2=A$, namely $0$ and $e_0$; these are the two trivial idempotents of the block, and no non-trivial idempotent is central, because a non-trivial idempotent is $\tfrac12(e_0+\mathbf u)$ with $\mathbf u$ a non-zero pure root of $+1$, whose vector part $\tfrac12\mathbf u$ is non-central. The **isotropic** elements are the solutions of $A^2=0$, namely $0$ alone: the centre contains no non-zero isotropic element.
 
 ## The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 
@@ -194,7 +194,7 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 
 - *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*, for the remarkable subspaces, their bases and their relations.
 - *Remarkable Subspaces under the General Plain Algebra of Biquaternions*, for the same remarkable subspaces under the general plain bilinear form, and *Remarkable Subspaces and the Four General Products*, for the readings of the four general products.
-- *Norm and Invertibility in the General Plain Algebra*, for the generic norm, the units and the isotropic cone.
+- *Norm and Invertibility in the General Quaternionic Algebra*, for the generic norm, the units and the isotropic cone.
 - *Idempotents of the General Plain Algebra*, for the idempotents and the pure states.
 - *The 12 Products of the Biquaternion Complex Space*, for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, for the isotropic cone of the block and the elements of square zero.

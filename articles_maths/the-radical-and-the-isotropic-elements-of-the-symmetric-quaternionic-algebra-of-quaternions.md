@@ -4,7 +4,7 @@
 
 The symmetric quaternionic product is the pairing $N$ placed on the scalar line. This article reads the block through the two notions that read a pairing on its kernel: the **radical**, the set of elements annihilated by every element, and the **isotropic elements**, those annihilated by themselves.
 
-**Placement.** This is the Specific Theory entry of the block. Its companion is *The Specificities of the Symmetric Quaternionic Algebra*, above this article in this category; the Common Theory slots it cites rather than restates are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, *Zero Divisors of the Symmetric Quaternionic Algebra* and *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra*, all above this article in this category; its Operators companion is *The Multiplication Operators of the Symmetric Quaternionic Algebra*, below this article in this category.
+**Placement.** This is the Specific Theory entry of the block. Its companion is *The Specificities of the Symmetric Quaternionic Algebra*, above this article in this category; the Common Theory slots it cites rather than restates are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, *Zero Divisors of the Symmetric Quaternionic Algebra*, *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*, all above this article in this category; its Operators companion is *The Multiplication Operators of the Symmetric Quaternionic Algebra*, below this article in this category.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.
 
@@ -58,7 +58,7 @@ and the set of values $\tilde x\star\tilde x$ as $\tilde x$ ranges over the bloc
 
 **Corollary (no element is negative, and the shadow is one).** No element squares to a negative multiple of $e_0$; in particular $\tilde x\star\tilde x=-e_0$ has no solution. The block has no negative direction, and the diagonal of the multiplication is the half-line.
 
-*Proof.* Immediate from the theorem; the emptiness of the root set of $-e_0$ is *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra*.
+*Proof.* Immediate from the theorem; the emptiness of the root set of $-e_0$ is *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*.
 
 ## The Square Root of a Positive Element
 
@@ -68,7 +68,7 @@ and the set of values $\tilde x\star\tilde x$ as $\tilde x$ ranges over the bloc
 - for $\lambda=0$ it is the square of $0$ alone;
 - for $\lambda<0$ it is not a square.
 
-*Proof.* The equation $\tilde x\star\tilde x=\lambda e_0$ is $N(\tilde x)=\lambda$, and the three cases are the sign of $\lambda$ read on the sum of squares; the orbit description is *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra*.
+*Proof.* The equation $\tilde x\star\tilde x=\lambda e_0$ is $N(\tilde x)=\lambda$, and the three cases are the sign of $\lambda$ read on the sum of squares; the orbit description is *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*.
 
 **Remark (the square root of an element and the square root of a value).** Every element $\tilde x$ is a square root of the *positive central element* $\tilde x\star\tilde x=N(\tilde x)e_0$. The square roots of a noncentral argument are not posed in this block: the block's root theory is the theory of the central values, and a noncentral right-hand side is not a value of the product except when it is scalar, by the scalar law.
 
@@ -92,4 +92,4 @@ The symmetric quaternionic block is non-degenerate and anisotropic: its coeffici
 - *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the radical and the isotropic element
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), for the Gram data, the signature and the isotropy of the two forms
 - *Zero Divisors of the Symmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the maximal zero-divisor set that contrasts with the trivial isotropic set
-- *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the root sets of the central values
+- *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-algebra-of-quaternions.md`) and *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the root sets of the central values

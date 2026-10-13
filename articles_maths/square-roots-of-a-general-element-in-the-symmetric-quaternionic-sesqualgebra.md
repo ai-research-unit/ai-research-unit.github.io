@@ -6,10 +6,10 @@ This article solves the equation $\tilde\Xi\star\tilde\Xi=\tilde R$ in the block
 sesquilinear product
 $\tilde\Xi\star\tilde Q=\tfrac12(\tilde\Xi^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde\Xi^{\natural})$ of
 *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*, for an arbitrary biquaternion
-$\tilde R$. It follows *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic
-Sesqualgebra*, which treats the three central values, and completes the element theory of the block opened
-by *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*, *Idempotents of the Symmetric Quaternionic
-Sesqualgebra* and *Nilpotents of the Symmetric Quaternionic Sesqualgebra*.
+$\tilde R$. It follows *Square Roots of One and the Idempotents of the Symmetric Quaternionic
+Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Sesqualgebra*, which
+treat the two central values, and completes the element theory of the block opened
+by *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
 The root is relative to a product, and the product is part of the definition: it is stated once for a
 general product in *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the
@@ -20,8 +20,9 @@ existence theorem with an explicit root, and the fibre over a general value.
 
 The product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*; the diagonal is
 *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the roots of the
-three central values are *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic
-Sesqualgebra*; the zero divisors are *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*; the real
+two central values are *Square Roots of One and the Idempotents of the Symmetric Quaternionic Sesqualgebra* and
+*Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Sesqualgebra*; the zero divisors are
+*Zero Divisors of the Symmetric Quaternionic Sesqualgebra*; the real
 quaternion subspace and its structure are *Introduction to the Remarkable Subspaces*; and the same equation
 in the plain product is *Square Roots of a General Element in the General Plain Algebra*.
 
@@ -36,6 +37,8 @@ $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline
 $K(\tilde Q,\tilde Q)=|Q_0|^2-\sum_k|Q_k|^2$. Throughout this article the product is the block and
 $\varphi(\tilde\Xi)=\tilde\Xi\star\tilde\Xi$ is its square map.
 
+**The results.** The square map $\varphi(\tilde\Xi)=\tilde\Xi\star\tilde\Xi$ lands in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and fills it, so $\tilde\Xi\star\tilde\Xi=\tilde R$ is solvable exactly for a real quaternion $\tilde R$. An explicit root of $\tilde R=\rho e_0+\mathbf r$ is $\tilde\Xi=\sqrt t\,e_0-\tfrac{1}{2\sqrt t}\mathbf r$ with $t=\tfrac{\rho+\sqrt{\rho^2+\lVert\mathbf r\rVert^2}}{2}$. Over a central value the roots are the pure family, present for $\lambda\leq0$, together with the non-pure family $\mathcal R_\lambda$; over a value with non-vanishing vector part the fibre is a parametrised family, a real manifold of dimension four. A value with a non-real coefficient has no root.
+
 ## Definition
 
 **Definition (square root of an element in a product).** Let $\star$ be a product on $\mathbb{B}$ and let
@@ -49,10 +52,13 @@ The set of the square roots of $\tilde R$ is its **fibre** $\varphi^{-1}(\tilde 
 
 This is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*.
 Unqualified, the product is the block and the square map is $\varphi$. The central values
-$\tilde R=\lambda e_0$ are the subject of *Square Roots of Minus One, Zero and Plus One in the Symmetric
-Quaternionic Sesqualgebra* and of the §*The Roots of a Complex Scalar* below.
+$\tilde R=\lambda e_0$ are the subject of *Square Roots of One and the Idempotents of the Symmetric
+Quaternionic Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic
+Sesqualgebra* and of the §*The Roots of a Complex Scalar* below.
 
 ## The Image of the Square Map
+
+**The square of every element is a real quaternion, with real scalar part $K(\tilde\Xi,\tilde\Xi)$ and real vector part $-2\,\mathrm{Re}(\Xi_0\overline{\mathbf\Xi})$, so the equation $\tilde\Xi\star\tilde\Xi=\tilde R$ has a solution only if $\tilde R$ is a real quaternion.**
 
 **Theorem (the square is a real quaternion).** For every $\tilde\Xi$ the element $\tilde\Xi\star\tilde\Xi$ is a
 real quaternion: its scalar part is the real number $K(\tilde\Xi,\tilde\Xi)$ and its vector part is the real
@@ -71,6 +77,8 @@ $\tilde R$ is a real quaternion.
 coefficient is not attained.
 
 ## Existence
+
+**The image of the square map is exactly the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$; an explicit root of $\tilde R=\rho e_0+\mathbf r$ is $\tilde\Xi=\sqrt t\,e_0-\tfrac{1}{2\sqrt t}\mathbf r$ with $t=\tfrac{\rho+\sqrt{\rho^2+\lVert\mathbf r\rVert^2}}{2}$, and every real quaternion has a root.**
 
 **Theorem (the image is the real quaternion subspace).** Every real quaternion has a square root in the
 block, and the image of the square map is exactly $\mathbb{H}_{\mathbb{B}}$. An explicit root of
@@ -104,8 +112,11 @@ whole family of non-real ones. The existence is a statement about the value and 
 
 ## The Roots of a Complex Scalar
 
-For a central value the fibre is the root set computed in *Square Roots of Minus One, Zero and Plus One in
-the Symmetric Quaternionic Sesqualgebra* and, for a general real $\lambda$, it is the union of the pure
+**Over a central value $\lambda$ the roots are the pure family, present only for $\lambda\leq0$, together with the non-pure family $\mathcal R_\lambda=\{\alpha e_0+\tfrac{i\alpha}{|\alpha|^2}\mathbf c:\alpha\in\mathbb{C}^{\times},\ \lVert\mathbf c\rVert^2=|\alpha|^2(|\alpha|^2-\lambda)\}$ over the punctured $\alpha$-plane.**
+
+For a central value the fibre is the root set computed in *Square Roots of One and the Idempotents of the
+Symmetric Quaternionic Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Symmetric
+Quaternionic Sesqualgebra* and, for a general real $\lambda$, it is the union of the pure
 family, present only for $\lambda\leq0$, and the non-pure family
 
 $$
@@ -123,6 +134,8 @@ is absent and the non-pure family requires $|\alpha|\geq1$; for $\lambda=0$ the 
 nilpotent cone and the pure family reduces to the origin.
 
 ## The Fibres over a General Value
+
+**Over a real quaternion $\tilde R=\rho e_0+\mathbf r$ with $\mathbf r=\mathbf 0$ the roots are the pure vectors with $\lVert\mathbf\Xi\rVert^2=-\rho$, present when $\rho\leq0$, together with the non-pure family $\mathcal R_\rho$; when $\mathbf r\neq\mathbf 0$ every root has non-vanishing scalar part and the fibre is a parametrised family, a real manifold of dimension four.**
 
 **Theorem (the fibre).** Let $\tilde R=\rho e_0+\mathbf r$ be a real quaternion with
 $\rho\in\mathbb{R}$ and $\mathbf r\in\mathbb{R}^3$.
@@ -208,7 +221,8 @@ manifold of dimension four. A value with a non-real coefficient has no root.
 ## Further Reading
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*Powers, the Square and the Roots*, for the definitions of the square and of a root relative to a general product.
-- *Square Roots of Minus One, Zero and Plus One in the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-quaternionic-sesqualgebra.md`), for the three central values and the families $\mathcal R_\lambda$.
+- *Square Roots of One and the Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the central value $+1$, the roots of $-1$ and the idempotents, with the families $\mathcal R_\lambda$.
+- *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the central value $0$ and the nilpotents, with the families $\mathcal R_\lambda$.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the same equation in the plain product, where the image is the whole space.
 - *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal formula that gives the image.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the real quaternion subspace among the remarkable subspaces.

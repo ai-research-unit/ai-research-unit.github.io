@@ -54,13 +54,13 @@ $$
 
 ## The Idempotents
 
-**Theorem (the non-trivial idempotents).** The non-trivial idempotents of the block have rank-one **projectors** as their matrices, and for a root $\xi$ of $-1$,
+**Theorem (the non-trivial idempotents).** The non-trivial idempotents of the block have rank-one **projectors** as their matrices, and for a pure root $\tilde\Xi$ of $+1$,
 
 $$
-\mathsf{M}_2\bigl(\tfrac12(e_0+\xi i)\bigr)=\tfrac12\bigl(I+J\bigr),\qquad J=i\mathsf{M}_2(\xi),\qquad J^2=I .
+\mathsf{M}_2\bigl(\tfrac12(e_0+\tilde\Xi)\bigr)=\tfrac12\bigl(I+J\bigr),\qquad J=\mathsf{M}_2(\tilde\Xi),\qquad J^2=I .
 $$
 
-*Proof.* $\mathsf{M}_2(\xi)^2=\mathsf{M}_2(\xi^2)=\mathsf{M}_2(-e_0)=-I$, so $J^2=i^2\mathsf{M}_2(\xi)^2=(-1)(-I)=I$; hence $\mathsf{M}_2(\tilde\Pi)^2=\tfrac14(I+J)^2=\tfrac14(2I+2J)=\tfrac12(I+J)=\mathsf{M}_2(\tilde\Pi)$, so the image is idempotent with eigenvalues $1,0$, that is a projector of rank one, of trace $\operatorname{Tr}\mathsf{M}_2(\tilde\Pi)=2\Pi_0=1$.
+*Proof.* $\mathsf{M}_2(\tilde\Xi)^2=\mathsf{M}_2(\tilde\Xi^2)=\mathsf{M}_2(e_0)=I$, so $J^2=I$; hence $\mathsf{M}_2(\tilde\Pi)^2=\tfrac14(I+J)^2=\tfrac14(2I+2J)=\tfrac12(I+J)=\mathsf{M}_2(\tilde\Pi)$, so the image is idempotent with eigenvalues $1,0$, that is a projector of rank one, of trace $\operatorname{Tr}\mathsf{M}_2(\tilde\Pi)=2\Pi_0=1$.
 
 **Theorem (the Hermitian idempotents).** The Hermitian idempotents have **Hermitian projectors** as their matrices: for a unit real vector $\hat\mu$ in $\mathbb{R}^3$,
 
@@ -72,7 +72,7 @@ is a self-adjoint projector of the model, of kernel the complementary minimal le
 
 *Proof.* The Hermitian conjugation satisfies $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ in the model, so a Hermitian element has a Hermitian matrix; a Hermitian idempotent therefore has a Hermitian projector with $\mathsf{M}_2(\tilde\Pi)^2=\mathsf{M}_2(\tilde\Pi)$ and $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi)$. The kernel and the image are the two minimal left ideals of the Peirce decomposition of *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
-**Remark (the model separates the families).** The trivial idempotents are the scalar projectors $0$ and $I$; the Hermitian idempotents are the rank-one projectors $\tfrac12(I+J)$ with $J$ a Hermitian involution of trace $0$; and the non-Hermitian idempotents are the rank-one projectors $\tfrac12(I+J)$ with $J=i\mathsf{M}_2(\xi)$ for a non-real root $\xi$, whose involution is not Hermitian. **The three families of idempotents are the three families of rank-one projectors of $M_2(\mathbb{C})$ cut by the involution.**
+**Remark (the model separates the families).** The trivial idempotents are the scalar projectors $0$ and $I$; the Hermitian idempotents are the rank-one projectors $\tfrac12(I+J)$ with $J$ a Hermitian involution of trace $0$; and the non-Hermitian idempotents are the rank-one projectors $\tfrac12(I+J)$ with $J=\mathsf{M}_2(\tilde\Xi)$ for a pure root $\tilde\Xi$ of $+1$ with non-vanishing real part, whose involution is not Hermitian. **The three families of idempotents are the three families of rank-one projectors of $M_2(\mathbb{C})$ cut by the involution.**
 
 ## The Isotropic Cone
 
@@ -207,7 +207,7 @@ of trace one, the projector onto the line spanned by $(1,1)^{\mathsf T}$; at $e_
 
 ## Summary
 
-In the $2\times2$ model the block's product becomes the symmetrisation of the matrix product, $\mathsf{M}_2(\tilde P\bullet\tilde Q)=\tfrac12(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P))$, the square becomes the matrix square, and the quadratic identity becomes the Cayley–Hamilton identity $\mathsf{M}_2(\tilde Q)^2-2Q_0\mathsf{M}_2(\tilde Q)+N(\tilde Q)I=0$. The idempotents are the rank-one projectors $\tfrac12(I+i\mathsf{M}_2(\xi))$ over the roots of $-1$, Hermitian for the real roots and not Hermitian otherwise. The generic norm is the determinant, $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, so the isotropic cone is the set of singular matrices and the elements of square zero are the nilpotent matrices; the isotropic cone is the nilpotent matrices together with the singular matrices of non-zero trace, the witnesses being $e_1+ie_2$ and $e_0+ie_1$. The trace form is the half trace of the matrix product, $\tau(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, the multiplication operator is the averaged one-sided matrix multiplication of trace $2\operatorname{Tr}\mathsf{M}_2(\tilde A)=4A_0$ and determinant $A_0^2N(\tilde A)$, the derivations are the commutators with the trace-zero matrices, and the automorphisms are the conjugations together with the adjugate-conjugate of the natural conjugation.
+In the $2\times2$ model the block's product becomes the symmetrisation of the matrix product, $\mathsf{M}_2(\tilde P\bullet\tilde Q)=\tfrac12(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P))$, the square becomes the matrix square, and the quadratic identity becomes the Cayley–Hamilton identity $\mathsf{M}_2(\tilde Q)^2-2Q_0\mathsf{M}_2(\tilde Q)+N(\tilde Q)I=0$. The idempotents are the rank-one projectors $\tfrac12(I+\mathsf{M}_2(\tilde\Xi))$ over the pure roots of $+1$, Hermitian for the purely imaginary roots and not Hermitian otherwise. The generic norm is the determinant, $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, so the isotropic cone is the set of singular matrices and the elements of square zero are the nilpotent matrices; the isotropic cone is the nilpotent matrices together with the singular matrices of non-zero trace, the witnesses being $e_1+ie_2$ and $e_0+ie_1$. The trace form is the half trace of the matrix product, $\tau(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, the multiplication operator is the averaged one-sided matrix multiplication of trace $2\operatorname{Tr}\mathsf{M}_2(\tilde A)=4A_0$ and determinant $A_0^2N(\tilde A)$, the derivations are the commutators with the trace-zero matrices, and the automorphisms are the conjugations together with the adjugate-conjugate of the natural conjugation.
 
 ## Summary of Notation
 
@@ -216,7 +216,7 @@ In the $2\times2$ model the block's product becomes the symmetrisation of the ma
 | $\mathsf{M}_2(e_0)=I$, $\mathsf{M}_2(e_k)=-i\sigma_k$ | the $2\times2$ realization, an algebra isomorphism |
 | $\mathsf{M}_2(\tilde P\bullet\tilde Q)=\tfrac12(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)+\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde P))$ | the block's product in the model |
 | $\mathsf{M}_2(\tilde Q)^2-2Q_0\mathsf{M}_2(\tilde Q)+N(\tilde Q)I=0$ | the Cayley–Hamilton identity |
-| $\mathsf{M}_2(\tfrac12(e_0+\xi i))=\tfrac12(I+i\mathsf{M}_2(\xi))$ | the idempotents as projectors |
+| $\mathsf{M}_2(\tfrac12(e_0+\tilde\Xi))=\tfrac12(I+\mathsf{M}_2(\tilde\Xi))$ | the idempotents as projectors |
 | $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ | the generic norm as a determinant |
 | $\tau(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$ | the trace form as a matrix trace |
 | $\tfrac14\operatorname{ad}_{\tilde C}\leftrightarrow\tfrac14[\mathsf{M}_2(\tilde C),\cdot]$ | the inner derivations as commutators |

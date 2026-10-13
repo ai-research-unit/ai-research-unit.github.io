@@ -268,7 +268,7 @@ $$
 \mathrm{SPS} = \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\overline{\tilde{Q}\tilde{P}^{*}}\bigr) = \mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr) = P_0\overline{Q_0} + (\mathbf{P},\overline{\mathbf{Q}}), \qquad
 \mathrm{APS} = \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}-\overline{\tilde{Q}\tilde{P}^{*}}\bigr) = \mathrm{Vect}\bigl(\tilde{P}\tilde{Q}^{*}\bigr) = -P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}},
 $$
-respectively **central** and **pure vector**. The symmetric part is the Hermitian form $H = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ of *Norm and Invertibility in the General Plain Algebra* read as a product, and the antisymmetric part is the whole vector part $-P_0\overline{\mathbf{Q}} + \overline{Q_0}\mathbf{P} - \mathbf{P}\times\overline{\mathbf{Q}}$.
+respectively **central** and **pure vector**. The symmetric part is the Hermitian form $H = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* read as a product, and the antisymmetric part is the whole vector part $-P_0\overline{\mathbf{Q}} + \overline{Q_0}\mathbf{P} - \mathbf{P}\times\overline{\mathbf{Q}}$.
 - For the **general quaternionic sesquilinear product** the exchange is not a conjugation of the value, and the two parts are the symmetrisation and half the commutator of two elements in the plain product,
 $$
 \mathrm{SQS} = \tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*} + \tilde{Q}^{*}\tilde{P}^{\natural}\bigr), \qquad

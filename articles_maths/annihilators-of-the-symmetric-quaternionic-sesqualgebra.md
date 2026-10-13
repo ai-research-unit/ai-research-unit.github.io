@@ -20,14 +20,19 @@ $$
 $$
 the Hermitian symmetrisation of the sesquilinear product (*Introduction to the Symmetric
 Quaternionic Sesqualgebra of Biquaternions*). It is conjugate-commutative, so the two annihilators
-of an element are one set, and its zero divisors are the elements of the cone $C(\tilde P)=0$
-(*Zero Divisors of the Symmetric Quaternionic Sesqualgebra*, above this article in this category).
+of an element are one set, and its zero divisors are the nonzero pure elements together with the
+elements of the cone $C(\tilde P)=0$ (*Zero Divisors of the Symmetric Quaternionic Sesqualgebra*, above
+this article in this category).
 The annihilator is a complex plane in the pure case and a complex line in the non-pure case, so it
 separates the two families where the criterion only joins them. The article owns that reading, the
 operator with its rank, and the shape of the annihilator on the remarkable subspaces; the
 zero-divisor set and the comparison with the four general products are the cited article's.
 
+**The results.** The annihilator of an element is the set of partners it kills, and the block is conjugate-commutative, so its left and right annihilators are one set. Off the cone the annihilator is $\{0\}$; a pure zero divisor annihilates a complex plane, of complex dimension two, and a non-pure zero divisor annihilates the complex line $\mathbb{C}\tilde Q^{\natural}$, of complex dimension one. The left multiplication therefore has complex rank four on the regular elements, three on the non-pure family and two on the pure family, and rank zero at the origin.
+
 ## The Annihilator of a Product
+
+**The annihilator of an element in a product is the set of partners that it kills, the left annihilator being the kernel of the left multiplication and the right annihilator the kernel of the right multiplication; both are nonzero exactly when the element is a zero divisor of the corresponding side.**
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
@@ -52,6 +57,8 @@ Quaternionic Algebra* and *Annihilators of the Symmetric Plain Sesqualgebra*.
 
 ## The Two Annihilators Coincide
 
+**The block is conjugate-commutative, so an element is a left zero divisor exactly when it is a right zero divisor, and the two annihilators of every element coincide, $A_\star(\tilde Q)=B_\star(\tilde Q)$.**
+
 **Theorem (the two sides coincide).** $\tilde Q$ is a left zero divisor of the block if and only if
 it is a right zero divisor, and $A_\star(\tilde Q)=B_\star(\tilde Q)$ for every $\tilde Q$.
 
@@ -61,6 +68,8 @@ $\tilde R\star\tilde Q=\overline{\tilde Q\star\tilde R}$, so $\tilde R\star\tild
 exactly when $\tilde Q\star\tilde R=0$; the defining sets are equal.
 
 ## The Annihilator of an Element
+
+**A pure zero divisor annihilates the complex plane $\{\tilde R:R_0=0,\ \sum_kQ_k\overline{R_k}=0\}$ and a non-pure zero divisor annihilates the complex line $\mathbb{C}\tilde Q^{\natural}$; off the cone the annihilator is $\{0\}$.**
 
 **Theorem (the annihilators).** The annihilator of a zero divisor $\tilde Q$ of the block is
 $$
@@ -101,16 +110,21 @@ $$
 
 ## The Dichotomy
 
-The zero-divisor set of the block is the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, one
-equation, and the annihilator reads its two families apart: the pure family annihilates a complex
-plane and the non-pure family a complex line, and the operator has rank two on the first and three
-on the second. The block is the conjugation-free twin of the antisymmetric plain sesqualgebra,
-whose annihilator is likewise a plane in one case and a line in the other; the difference is that
+**The annihilator separates the two families that the criterion joins: it is a complex plane on the pure family and a complex line on the non-pure family, and the left multiplication has complex rank two on the first and three on the second.**
+
+The zero-divisor set of the block is the enlarged set of the pure family $\{\tilde Q\neq0:Q_0=0\}$ and
+the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, and the annihilator reads its two families
+apart: the pure family annihilates a complex plane and the non-pure family a complex line, and the
+operator has rank two on the first and three on the second. The block is the conjugation-free twin
+of the antisymmetric plain sesqualgebra, whose annihilator is likewise a plane in one case and a line
+in the other; the difference is that
 the antisymmetric block reads the second case as a plane in the non-degenerate direction, while
 here the second case is the line $\mathbb{C}\tilde Q^{\natural}$ of the isotropic element, exactly
 as in the symmetric plain algebra. The three blocks carry the same pair of annihilator shapes.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**The centre annihilates nothing; a nonzero pure element annihilates a complex plane in the ambient block and a complex line inside the vector subspace; and on the conjugate-changed subspaces the annihilator is again a plane read off the same equation.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has central square
 $\lambda^{2}\neq0$, so it is regular and its annihilator is $\{0\}$: the centre annihilates
@@ -130,11 +144,12 @@ the conjugate plane read off the same equation.
 The annihilator of an element in a product is the set of partners the element kills, the left and
 the right annihilator being the kernels of the left and the right multiplication. The symmetric
 quaternionic sesquimultiplication is conjugate-commutative, so the two annihilators of an element
-coincide. The zero divisors of the block are the elements of the cone $C(\tilde Q)=0$: a pure zero
-divisor annihilates the complex plane $\{\tilde R:R_0=0,\ \sum_kQ_k\overline{R_k}=0\}$ and a
-non-pure zero divisor annihilates the complex line $\mathbb{C}\tilde Q^{\natural}$, and an element
-off the cone is regular. The annihilator separates the two families that the criterion joins, and
-the operator has rank two on the pure family and three on the non-pure family.
+coincide. The zero divisors of the block are the nonzero pure elements together with the elements of
+the cone $C(\tilde Q)=0$: a pure zero divisor annihilates the complex plane
+$\{\tilde R:R_0=0,\ \sum_kQ_k\overline{R_k}=0\}$ and a non-pure zero divisor annihilates the complex line
+$\mathbb{C}\tilde Q^{\natural}$, and the elements outside the two families are regular. The annihilator
+separates the two families that the criterion joins, and the operator has rank two on the pure family
+and three on the non-pure family.
 
 ## Summary of Notation
 

@@ -19,10 +19,10 @@ of every element vanishes, $\tilde\xi\times\tilde\xi=0$, so the equation reads $
 solution exactly when $\tilde a=0$, and then **every** element of $\mathbb{H}$ is a square root; for
 every nonzero $\tilde a$ it has no solution. **The square map of the block is the zero map**: its
 image is the origin alone and its kernel is the whole space. The special case of a central right
-side, the roots of $-1$, of $0$ and of $+1$, is *Square Roots of Minus One, Zero and Plus One in the
-Antisymmetric Plain Algebra*; the square-zero elements, which are the square roots of the origin,
-are *Nilpotents of the Antisymmetric Plain Algebra*; the centred reading of the six structures is
-*Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; and the theory of the general plain product, to which the block
+side, the roots of $-1$, of $+1$ and of $0$, together with the idempotents and the nilpotents of the
+block, is *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* and *Square
+Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra*; the centred reading of the six
+structures is *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; and the theory of the general plain product, to which the block
 is compared, is *Square Roots of a General Element in the General Plain Algebra*.
 
 ## The Notion and Its Product
@@ -77,8 +77,8 @@ square root of the origin and the set is the whole space.
 
 The set is the kernel of the square map, and it is the whole space; it contains the origin, which is
 a square root of itself. Its nonzero elements are the square-zero elements of the block, which are
-the nilpotents of *Nilpotents of the Antisymmetric Plain Algebra* and the zero divisors of *Zero
-Divisors of the Antisymmetric Plain Algebra*. The origin is the only value of which the block has
+the nilpotents of *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* and
+the zero divisors of *Zero Divisors of the Antisymmetric Plain Algebra*. The origin is the only value of which the block has
 square roots at all, and it has as many as the space allows.
 
 ## The Square Roots of a Nonzero Element
@@ -169,8 +169,8 @@ the parent's two-point and two-sphere families have no counterpart in the block.
 
 - *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the square root of an element, the root of a central value and the relativity of the definitions to the product
 - *Introduction to the Antisymmetric Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-quaternions.md`), for the operation, its alternation and its table
-- *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-algebra-of-quaternions.md`), for the special case of a central right side
-- *Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/nilpotents-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for the square-zero elements, which are the square roots of the origin
+- *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for the roots of $+1$ and of $-1$, which are empty, and for the idempotents, which are the origin alone
+- *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for the roots of $0$ and the nilpotents, which are the square-zero elements, the square roots of the origin
 - *Zero Divisors of the Antisymmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for the coincidence of the square-zero set, the root set of $0$ and the zero-divisor set
 - *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the centred reading of the six structures, against which the zero square map of the block is placed
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra-of-quaternions.md`), for the classification of the parent product

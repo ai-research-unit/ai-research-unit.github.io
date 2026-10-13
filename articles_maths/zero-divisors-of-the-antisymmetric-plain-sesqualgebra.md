@@ -46,6 +46,8 @@ subspace $\operatorname{Vect}(\mathbb{B})$. The central square of the plain prod
 $C(\tilde Q)e_0=\tilde Q\tilde Q^{\natural}$ with $C(\tilde Q)=\sum_\mu Q_\mu^{2}$, and the element
 $\tilde Q$ is invertible in the plain product exactly when $C(\tilde Q)\neq0$.
 
+**The results.** Every nonzero element of the block is a **two-sided zero divisor**: a nonzero $\tilde Q$ is a zero divisor exactly when $\tilde Q\neq0$, so the zero-divisor set is the whole space with the origin removed, $\mathcal{Z}_\diamond=\mathbb{B}\setminus\{0\}$, of complex dimension four. The zero-divisor equation is the centrality of a plain product, $\tilde Q\diamond\tilde R=0\iff\tilde Q\tilde R^{*}\in\mathbb{C}_{\mathbb{B}}$, and the annihilator is a **complex line** for the elements invertible in the plain product and a **complex plane** for the others. The set is strictly larger than the cone $\mathcal{C}\setminus\{0\}$ shared by the four general products, and the enlargement is exactly the complement of that cone. The block has one idempotent, the origin, and its nilpotents are a thin proper subcone, so an element is a zero divisor unconditionally.
+
 ## The Definition
 
 **Definition (zero divisor, annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
@@ -78,6 +80,8 @@ divisor** means a zero divisor of $\diamond$ and **annihilator** means an annihi
 $\diamond$. The zero-divisor sets of the other products are named with their product throughout.
 
 ## The Equations of the Block
+
+**The zero-divisor equation of the block is the centrality of the parent product:** $\tilde Q\diamond\tilde R=0\iff\tilde Q\tilde R^{*}\in\mathbb{C}_{\mathbb{B}}\iff\operatorname{Vect}(\tilde Q\tilde R^{*})=0$, and dually $\tilde R\diamond\tilde Q=0$ exactly when $\tilde R\tilde Q^{*}$ is central.
 
 ### The Block Equation in Coordinates
 
@@ -118,6 +122,8 @@ Sesqualgebra*, below this article in this category.
 
 ## The Criterion
 
+**The criterion of the block is empty: a nonzero element $\tilde Q$ is a zero divisor if and only if $\tilde Q\neq0$**, so the zero-divisor set is $\mathcal{Z}_\diamond=\mathbb{B}\setminus\{0\}$ and every element of it is a two-sided zero divisor.
+
 For the plain product the zero divisors are selected by the single condition $C(\tilde Q)=0$, and
 the criterion is a statement of that product (*Zero Divisors of the General Plain Algebra*). The
 block has a criterion too, and it is empty.
@@ -152,6 +158,8 @@ thin because the plain product can be noncentral for every partner; the block's 
 the projection discards the central part of any product at all.
 
 ## The Zero Divisor Set
+
+**The zero-divisor set is the whole space with the origin removed, $\mathcal{Z}_\diamond=\mathbb{B}\setminus\{0\}$, of complex dimension four**, stable under every nonzero complex scaling and under the star and the natural conjugation, and it is strictly larger than the cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$ shared by the four general products, the enlargement being exactly the complement of that cone.
 
 ### The Set and the Elementary Properties
 
@@ -190,13 +198,15 @@ restated here.
 
 The block is not one of the four general products, and its set does not coincide with theirs: the
 cone $\mathcal{C}\setminus\{0\}$ is a proper subset of $\mathbb{B}\setminus\{0\}$, since the
-element $e_0$ has $c(e_0)=1\neq0$ and yet is a zero divisor of the block, $e_0\diamond e_0=0$.
+element $e_0$ has $C(e_0)=1\neq0$ and yet is a zero divisor of the block, $e_0\diamond e_0=0$.
 **The enlargement is exactly the complement of the cone**, and it is the contribution of the
 projection. The contrast is the expected one for a sesquilinear block: the parent product is not
 unital, and the projection removes the central part, so the barrier of the criterion cannot
 survive.
 
 ## The Zero Divisors and the Other Classes
+
+**The block has one idempotent, the origin, and its nilpotents form a thin proper subcone, so an inclusion in the zero-divisor set carries no information**: every nonzero element, of every remarkable subspace, is a zero divisor.
 
 The block is not a unital product, and the vocabulary that the plain algebra builds on its zero
 divisors does not transfer. The two families of the plain zero divisors, the pure nilpotents and

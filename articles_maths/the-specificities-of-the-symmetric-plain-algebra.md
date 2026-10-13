@@ -12,7 +12,7 @@ the multiplication of *Introduction to the Symmetric Plain Algebra of Biquaterni
 
 The block is exact in the opposite sense as well. The Jordan law is weaker than associativity, so the block does not inherit the parent's operator calculus: no non-trivial idempotent gives a projector, a square-zero element gives an operator of index three rather than a square-zero operator, the Peirce decomposition is cubic rather than quadratic, and the invertible elements form no group. Those absences are stated with the theorems they accompany, and §*The Isolation among the Twelve* names the one law from which the theorems and the absences both follow.
 
-**Placement.** The article closes the *Specific Theory* section of the block, after *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, whose element theory it reads as a consequence of the law, and after the Common Theory articles *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors of the Symmetric Plain Algebra*, *Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Algebra*, *Square Roots of a General Element in the Symmetric Plain Algebra*, *Idempotents of the Symmetric Plain Algebra* and *Nilpotents of the Symmetric Plain Algebra*. The trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, its operators are *The Multiplication Operators of the Symmetric Plain Algebra*, and the plain product it symmetrises is *Introduction to the General Plain Algebra of Biquaternions*.
+**Placement.** The article closes the *Specific Theory* section of the block, after *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, whose element theory it reads as a consequence of the law, and after the Common Theory articles *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors of the Symmetric Plain Algebra*, *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*, *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra* and *Square Roots of a General Element in the Symmetric Plain Algebra*. The trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, its operators are *The Multiplication Operators of the Symmetric Plain Algebra*, and the plain product it symmetrises is *Introduction to the General Plain Algebra of Biquaternions*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\mathbf{Q},\mathbf{Q})=\sum_kQ_k^2$. The plain product is juxtaposition $\tilde P\tilde Q$; the product of the block is $\bullet$, the symmetrisation above, and $\tilde X^{\bullet2}=\tilde X\bullet\tilde X$. The natural conjugation is $\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, and the biquaternion norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$. The **left multiplication** of the block is $L^{\bullet}_{\tilde X}:\tilde Y\mapsto\tilde X\bullet\tilde Y$, and $L_{\tilde X},R_{\tilde X}$ without a mark are the plain left and right multiplications. An **idempotent** is an element equal to its square, a **projector** an idempotent operator.
 
@@ -92,7 +92,7 @@ $$
 
 **Proposition (a square-zero element gives an operator of index three).** For a pure isotropic $\tilde\Upsilon$, that is $Q_0=0$ and $(\mathbf{Q},\mathbf{Q})=0$, the operator $L^{\bullet}_{\tilde\Upsilon}$ satisfies $L^{\bullet}_{\tilde\Upsilon}{}^{2}\neq0$ and $L^{\bullet}_{\tilde\Upsilon}{}^{3}=0$, with image not contained in the kernel; the witness is $\tilde\Upsilon=e_1+ie_2$.
 
-*Proof.* *Nilpotents of the Symmetric Plain Algebra*: the elements of square zero are exactly the pure isotropic vectors, and their left multiplication has the stated index, the image $\mathrm{span}\{e_0,\tilde\Upsilon\}$ not lying in the kernel.
+*Proof.* *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*: the elements of square zero are exactly the pure isotropic vectors, and their left multiplication has the stated index, the image $\mathrm{span}\{e_0,\tilde\Upsilon\}$ not lying in the kernel.
 
 So the block has neither of the two operator constructions of the parent: an idempotent produces no projector and a square-zero element produces no flag. Both failures are the failure of left alternativity, and neither is repaired by any choice of element.
 
@@ -104,9 +104,9 @@ $$
 \tilde\Pi=\tfrac12(e_0+\mathbf u),\qquad \mathbf u\ \text{pure},\ \mathbf u^2=e_0,
 $$
 
-equivalently $\tilde\Pi=\tfrac12(e_0+\boldsymbol{\xi}i)$ with $\boldsymbol{\xi}$ a pure root of $-1$; they are read off the quadratic identity at integral trace, $(T,N)=(0,0)$, $(2,1)$ and $(1,0)$, so that the non-trivial idempotents are exactly the isotropic ones.
+They are read off the quadratic identity at integral trace, $(T,N)=(0,0)$, $(2,1)$ and $(1,0)$, so that the non-trivial idempotents are exactly the isotropic ones.
 
-*Proof.* The square of the block is the plain square, so the equation is $\tilde\Pi^2=\tilde\Pi$, classified in *Idempotents of the Symmetric Plain Algebra*; the quadratic identity of §*The Degree-Two Structure* is then evaluated at the three traces.
+*Proof.* The square of the block is the plain square, so the equation is $\tilde\Pi^2=\tilde\Pi$, classified in *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*; the quadratic identity of §*The Degree-Two Structure* is then evaluated at the three traces.
 
 **Corollary (the cubic Peirce identity).** For every idempotent $\tilde\Pi$,
 
@@ -116,7 +116,7 @@ $$
 
 equivalently $2L^{\bullet}_{\tilde\Pi}{}^{3}-3L^{\bullet}_{\tilde\Pi}{}^{2}+L^{\bullet}_{\tilde\Pi}=0$; the eigenvalues of $L^{\bullet}_{\tilde\Pi}$ lie in $\{0,\tfrac12,1\}$.
 
-*Proof.* *Idempotents of the Symmetric Plain Algebra*, verified at the witness $\tilde\Pi=\tfrac12(e_0+ie_1)$, whose operator has the eigenvalues $0$, $\tfrac12$ and $1$.
+*Proof.* *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*, verified at the witness $\tilde\Pi=\tfrac12(e_0+ie_1)$, whose operator has the eigenvalues $0$, $\tfrac12$ and $1$.
 
 **Corollary (the Jordan Peirce decomposition).** For a non-trivial idempotent,
 
@@ -127,7 +127,7 @@ $$
 
 with $\mathbb{B}_1=\mathbb{C}\tilde\Pi$ of dimension one, $\mathbb{B}_0=\mathbb{C}(e_0-\tilde\Pi)$ of dimension one and $\dim\mathbb{B}_{1/2}=2$. At $\tilde\Pi=\tfrac12(e_0+ie_1)$ the three dimensions are $1,2,1$.
 
-*Proof.* *Idempotents of the Symmetric Plain Algebra*; the dimensions are the multiplicities computed there.
+*Proof.* *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*; the dimensions are the multiplicities computed there.
 
 This is the Peirce theory of the block, and it is **cubic**: the decomposition is into one middle space, not into a pair of off-diagonal corners. There are no corner subalgebras, the complementary idempotent $e_0-\tilde\Pi$ contributes the line $\mathbb{B}_0$ and not a second central piece, and the middle space is a single two-dimensional space carrying no product of its own. The quadratic Peirce calculus is the parent's, and it is not available here.
 
@@ -158,7 +158,7 @@ $$
 
 which is the inverse of the algebra; the invertibility criterion is $N(\tilde Q)\neq0$.
 
-*Proof.* Dividing the quadratic identity by $N(\tilde Q)$ exhibits $(T(\tilde Q)e_0-\tilde Q)/N(\tilde Q)$ as a Jordan inverse, and $T(\tilde Q)e_0-\tilde Q=2Q_0e_0-\tilde Q=\tilde Q^{\natural}$; the formula of the associative inverse is *Norm and Invertibility in the General Plain Algebra*.
+*Proof.* Dividing the quadratic identity by $N(\tilde Q)$ exhibits $(T(\tilde Q)e_0-\tilde Q)/N(\tilde Q)$ as a Jordan inverse, and $T(\tilde Q)e_0-\tilde Q=2Q_0e_0-\tilde Q=\tilde Q^{\natural}$; the formula of the associative inverse is *Norm and Invertibility in the General Quaternionic Algebra*.
 
 **Theorem (the quadratic representation).** For $U_{\tilde P}\tilde Q=2(\tilde P\bullet\tilde Q)\bullet\tilde P-\tilde P^{\bullet2}\bullet\tilde Q$,
 

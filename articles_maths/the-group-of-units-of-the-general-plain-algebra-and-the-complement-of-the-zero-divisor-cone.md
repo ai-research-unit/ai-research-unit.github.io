@@ -32,10 +32,10 @@ products. The topology of the group — the polar decomposition, the retractions
 subgroups, the homotopy groups and the universal cover — is proved in *The Biquaternion Unit Group
 as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*; the ambient topology of
 the cone is *The Topology of the Zero-Divisor Cone*; the distribution of the units over the
-remarkable subspaces is *Norm and Invertibility in the General Plain Algebra*, §*Distribution of the
-Invertible Elements*; the invertibility of the symmetrised product is *Norm and Invertibility in the
-Symmetric Plain Algebra*; and the classification of the twelve is *The 12 Algebraic Structures over
-the Biquaternion $\mathbb{C}$ Space*. None of those is reproved here.
+remarkable subspaces is *Norm and Invertibility in the General Quaternionic Algebra*, §*The
+Algebraic Norm on the Remarkable Subspaces*; the invertibility of the symmetrised product is *Norm
+and Invertibility in the Symmetric Plain Algebra*; and the classification of the twelve is *The 12
+Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. None of those is reproved here.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$
 with $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$; a general element is $\tilde
@@ -109,7 +109,7 @@ group.
 
 *Proof.* By the criterion the units are the elements of non-vanishing norm, so the two sets are
 complementary; they are disjoint because a complex number is either zero or not. The group structure
-is *Norm and Invertibility in the General Plain Algebra*, §*The Unit and the Group of Units*.
+is *Norm and Invertibility in the General Quaternionic Algebra*.
 Verified by recomputation on a mixed sample of $100$ elements: the $93$ random elements off the cone
 are units, the $6$ cone elements are zero divisors and the origin is neither.
 
@@ -213,7 +213,7 @@ $$
 
 of Gram matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$; it is not multiplicative, its vanishing
 set is a complex cone of real dimension six, and it is neither the light cone nor the zero-divisor
-cone (*Norm and Invertibility in the General Plain Algebra*). The two cones are different objects,
+cone (*Norm and Invertibility in the General Quaternionic Algebra*). The two cones are different objects,
 and the difference is the boundary of the group.
 
 **Theorem (neither cone decides invertibility through the other).** The two implications fail in
@@ -299,8 +299,8 @@ Biquaternion Unit Group as a Topological Group*.
 
 The criterion restricts to the remarkable subspaces, where the cone cuts a slice of lower dimension
 and the group is the complement of that slice. The distribution is *Norm and Invertibility in the
-General Plain Algebra*, §*Distribution of the Invertible Elements*, and is tabulated here in the
-form the boundary takes.
+General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*, and is tabulated
+here in the form the boundary takes.
 
 | subspace | $\dim_{\mathbb{R}}$ | cone slice | units |
 | --- | --- | --- | --- |
@@ -459,7 +459,7 @@ element at all.
 
 ## Further Reading
 
-- *Norm and Invertibility in the General Plain Algebra*
+- *Norm and Invertibility in the General Quaternionic Algebra*
   (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the algebraic norm
   of the plain product, its non-multiplicativity and the absence of a criterion, and for the
   distribution of the invertible elements over the remarkable subspaces.

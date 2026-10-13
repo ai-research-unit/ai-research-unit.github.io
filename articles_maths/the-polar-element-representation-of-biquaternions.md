@@ -343,7 +343,7 @@ $$
 \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0 ,
 $$
 
-that is, if and only if $\tilde{Q}$ lies outside the null cone; equivalently, by the determinant criterion of *Norm and Invertibility in the General Plain Algebra*, if and only if $\tilde{Q}$ is invertible. The excluded elements are exactly the zero divisors, and no excluded element is reached as a limit of admissible ones: along a path to the cone the modulus $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ tends to zero, while the norm-one part $\tilde{Q}/\rho$ has no limit in the algebra.
+that is, if and only if $\tilde{Q}$ lies outside the null cone; equivalently, by the determinant criterion of *Norm and Invertibility in the General Quaternionic Algebra*, if and only if $\tilde{Q}$ is invertible. The excluded elements are exactly the zero divisors, and no excluded element is reached as a limit of admissible ones: along a path to the cone the modulus $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ tends to zero, while the norm-one part $\tilde{Q}/\rho$ has no limit in the algebra.
 
 **The cone is thin in the algebra.** The condition $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ is one complex equation, hence two real equations, $\mathrm{Re}\,N = 0$ and $\mathrm{Im}\,N = 0$, and their gradients are independent away from the origin, so the cone has real codimension two. Counting real dimensions,
 

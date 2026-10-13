@@ -8,9 +8,11 @@ $$
 \tilde\Xi^2 = \tilde Q .
 $$
 
-The method needs no Clifford algebra, no norm and no form. It is the same vector–scalar split that solves the three central cases $\tilde\Xi^2=-1,0,+1$ in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, carried one step further: the split turns the equation into one vector equation and one scalar equation, and the scalar equation is a quadratic in the square $x=\Xi_0^2$ of the scalar part of a root. The roots are then read off the solutions of that quadratic, and the answer is a finite set — generically four elements, falling to two — or a four-parameter family, or empty.
+The method needs no Clifford algebra, no norm and no form. It is the same vector–scalar split that solves the three central cases $\tilde\Xi^2=-1,0,+1$ in *Square Roots of One and the Idempotents of the General Plain Algebra* and *Square Roots of Zero and the Nilpotents of the General Plain Algebra*, carried one step further: the split turns the equation into one vector equation and one scalar equation, and the scalar equation is a quadratic in the square $x=\Xi_0^2$ of the scalar part of a root. The roots are then read off the solutions of that quadratic, and the answer is a finite set — generically four elements, falling to two — or a four-parameter family, or empty.
 
-The article is algebraic. The biquaternion algebra also carries a Clifford structure, treated in *The Realification of the General Plain Algebra*; that structure is not used here. The three central values of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* are recovered as the case of a complex scalar $\tilde Q$, in §*The Three Central Values*, which checks this method against the direct computation of that article. The zero-divisor cone, of which the nonzero roots of $0$ are a part, is *Zero Divisors of the General Plain Algebra*, named here only where the classification touches it. The polar and exponential decompositions that the answer must be consistent with are *The Polar Element Representation of Biquaternions*.
+**The results.** For a radicand with non-vanishing vector part the roots come in pairs $\pm\tilde\Xi$: there are **four roots** generically, **two** in the two degenerate rows, and **none** for the rootless row $(\boldsymbol{Q},\boldsymbol{Q}) = 0$, $n = 0$, $Q_0 = 0$. For a complex scalar radicand $\tilde Q = Q_0 e_0$ the roots are the two scalars $\pm\sqrt{Q_0}\,e_0$ together with a **four-parameter family** of pure $\boldsymbol\Xi$ with $(\boldsymbol\Xi,\boldsymbol\Xi) = -Q_0$. The three central values recover the three sets of *Square Roots of One and the Idempotents of the General Plain Algebra* and *Square Roots of Zero and the Nilpotents of the General Plain Algebra*. Each case below states its answer first and then proves it.
+
+The article is algebraic. The biquaternion algebra also carries a Clifford structure, treated in *The Realification of the General Plain Algebra*; that structure is not used here. The three central values of *Square Roots of One and the Idempotents of the General Plain Algebra* and *Square Roots of Zero and the Nilpotents of the General Plain Algebra* are recovered as the case of a complex scalar $\tilde Q$, in §*The Three Central Values*, which checks this method against the direct computations of those articles. The zero-divisor cone, of which the nonzero roots of $0$ are a part, is *Zero Divisors of the General Plain Algebra*, named here only where the classification touches it. The polar and exponential decompositions that the answer must be consistent with are *The Polar Element Representation of Biquaternions*.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked.
 
@@ -74,6 +76,8 @@ in which $\tilde Q^{\natural}$ is the quaternion conjugate. This uses only the p
 
 ## The Roots with Non-Vanishing Vector Part
 
+**For a radicand with non-vanishing vector part the roots come in opposite pairs $\pm\tilde\Xi$: four roots when $(\boldsymbol{Q},\boldsymbol{Q})\neq0$ and $n\neq0$, two roots in the two degenerate rows, and none when $(\boldsymbol{Q},\boldsymbol{Q})=0$, $n=0$ and $Q_0=0$.**
+
 Assume $\boldsymbol{Q}\neq0$. Then $2\Xi_0\boldsymbol\Xi=\boldsymbol{Q}$ forces $\Xi_0\neq0$, and the vector equation determines the vector part of every root,
 
 $$
@@ -126,6 +130,8 @@ is a square root of $\tilde Q$, and every square root of $\tilde Q$ with $\bolds
 
 ## The Roots of a Complex Scalar
 
+**For a complex scalar radicand $\tilde Q = Q_0 e_0$ the roots are the two scalars $\pm\sqrt{Q_0}\,e_0$ together with the four-parameter family of pure $\boldsymbol\Xi$ with $(\boldsymbol\Xi,\boldsymbol\Xi) = -Q_0$.**
+
 Assume $\boldsymbol{Q}=0$, so that $\tilde Q=Q_0e_0$ lies in the centre $\mathbb{C}e_0$. The vector equation is $2\Xi_0\boldsymbol\Xi=0$, and since $\mathbb{C}$ is a field this forces $\boldsymbol\Xi=0$ or $\Xi_0=0$. The two sub-cases are disjoint and exhaustive.
 
 **Sub-case 1 — the root is a complex scalar ($\boldsymbol\Xi=0$).** Then $\tilde\Xi=\Xi_0e_0$ and the scalar equation reduces to $\Xi_0^2=Q_0$. **The roots in this case are the two elements**
@@ -145,7 +151,7 @@ $$
 **The roots in this case are the pure biquaternions of complex square $-Q_0$.** Writing $\Xi_k=\xi_k+i\xi'_k$ with $\xi_k,\xi'_k\in\mathbb{R}$, the condition is the pair of real equations
 
 $$
-\xi_1^2+\xi_2^2+\xi_3^2-\xi'^2_1-\xi'^2_2-\xi'^2_3 = -\operatorname{Re}Q_0, \qquad \xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3 = -\tfrac12\operatorname{Im}Q_0,
+\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2 = -\operatorname{Re}Q_0, \qquad \xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3 = -\tfrac12\operatorname{Im}Q_0,
 $$
 
 six real coefficients carrying two constraints, hence a **four-real-parameter family**. For $Q_0\neq0$ the family is nonempty: taking $\Xi_2=\Xi_3=0$ leaves $\Xi_1^2=-Q_0$, which is solved by $\Xi_1=\sqrt{-Q_0}$. For $Q_0=0$ the family is the **pure null cone** $(\boldsymbol\Xi,\boldsymbol\Xi)=0$, whose nonzero elements are the nilpotents.
@@ -153,6 +159,8 @@ six real coefficients carrying two constraints, hence a **four-real-parameter fa
 So when $\boldsymbol{Q}=0$ the root set is the two complex scalars $\pm\sqrt{Q_0}e_0$ — one element when $Q_0=0$ — together with this four-real-parameter family.
 
 ## The Classification
+
+**Every radicand falls into exactly one of the rows below: four roots generically, two roots in the two degenerate rows, no roots for the rootless row, and a four-parameter family for a complex scalar.**
 
 Collecting the two cases, every $\tilde Q\in\mathbb{B}$ falls into exactly one of the following rows.
 
@@ -182,13 +190,15 @@ $$
 
 ## The Three Central Values
 
-The classification specialises to the three central values $\tilde Q=-1,0,+1$ of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and reproduces them; the agreement is the check that this method and the direct computation of that article are the same computation.
+**The three central values reproduce the three sets of the companion articles: the roots of $-1$ and of $+1$ in the first, the roots of $0$ in the second.**
 
-**$\tilde Q=-e_0$ ($Q_0=-1$, $\boldsymbol{Q}=0$).** A complex scalar, so the complex-scalar case. The scalar roots are $\pm\sqrt{-1}\,e_0=\pm ie_0$, the trivial roots of the companion article. The family is $(\boldsymbol\Xi,\boldsymbol\Xi)=1$, that is $\xi_1^2+\xi_2^2+\xi_3^2-\xi'^2_1-\xi'^2_2-\xi'^2_3=1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$, which is exactly the pure roots of $-1$: the real roots are the members with $\boldsymbol{\xi}'=0$, and the non-trivial roots are the members with $\boldsymbol{\xi}'\neq0$.
+The classification specialises to the three central values $\tilde Q=-1,0,+1$ of the companion articles *Square Roots of One and the Idempotents of the General Plain Algebra* and *Square Roots of Zero and the Nilpotents of the General Plain Algebra*, and reproduces them; the agreement is the check that this method and the direct computations of those articles are the same computation.
+
+**$\tilde Q=-e_0$ ($Q_0=-1$, $\boldsymbol{Q}=0$).** A complex scalar, so the complex-scalar case. The scalar roots are $\pm\sqrt{-1}\,e_0=\pm ie_0$, the trivial roots of the companion articles. The family is $(\boldsymbol\Xi,\boldsymbol\Xi)=1$, that is $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$, which is exactly the pure roots of $-1$: the real roots are the members with $\boldsymbol{\xi}'=0$, and the non-trivial roots are the members with $\boldsymbol{\xi}'\neq0$.
 
 **$\tilde Q=0$ ($Q_0=0$, $\boldsymbol{Q}=0$).** The scalar roots are the single element $\tilde\Xi=0$. The family is the pure null cone $(\boldsymbol\Xi,\boldsymbol\Xi)=0$, whose nonzero elements are the nilpotents of the algebra; its structure is *Zero Divisors of the General Plain Algebra*.
 
-**$\tilde Q=+e_0$ ($Q_0=+1$, $\boldsymbol{Q}=0$).** The scalar roots are $\pm e_0$. The family is $(\boldsymbol\Xi,\boldsymbol\Xi)=-1$: in the notation of the companion article a member is $\boldsymbol\Xi=\boldsymbol{\xi}i-\boldsymbol{\xi}'$, and its two real conditions, $\xi_1^2+\xi_2^2+\xi_3^2-\xi'^2_1-\xi'^2_2-\xi'^2_3=1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$, are exactly the conditions on the corresponding root of $-1$. These are the non-trivial roots of $+1$.
+**$\tilde Q=+e_0$ ($Q_0=+1$, $\boldsymbol{Q}=0$).** The scalar roots are $\pm e_0$. The family is $(\boldsymbol\Xi,\boldsymbol\Xi)=-1$: in the notation of the companion articles a member is $\boldsymbol\Xi=\boldsymbol{\xi}i-\boldsymbol{\xi}'$, and its two real conditions, $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$, are exactly the conditions on the corresponding root of $-1$. These are the non-trivial roots of $+1$.
 
 The three sets are therefore the degenerate data of the general classification, and this article is where the four-root and two-root cases live.
 
@@ -216,7 +226,7 @@ $$
 \tilde\Xi = \pm\Bigl(\sqrt{\tfrac{\sqrt2-1}{2}} + i\sqrt{\tfrac{\sqrt2+1}{2}}\Bigr)e_0,
 $$
 
-and the family is $(\boldsymbol\Xi,\boldsymbol\Xi)=1-i$, that is $\xi_1^2+\xi_2^2+\xi_3^2-\xi'^2_1-\xi'^2_2-\xi'^2_3=1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=-\tfrac12$. Squaring the displayed root gives $-1+i$.
+and the family is $(\boldsymbol\Xi,\boldsymbol\Xi)=1-i$, that is $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=-\tfrac12$. Squaring the displayed root gives $-1+i$.
 
 **A rootless element.** For $\tilde Q=e_1-ie_3$ (that is $i-Ik$) the vector part is $\boldsymbol{Q}=e_1-ie_3$, with $(\boldsymbol{Q},\boldsymbol{Q})=1+(-i)^2=0$ and $n=0$. The row is the rootless one, and $\tilde Q$ has no square root. The element is itself a nilpotent,
 

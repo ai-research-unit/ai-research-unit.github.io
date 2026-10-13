@@ -80,7 +80,7 @@ The inverse is defined by an equation in $\star$, so it is relative to the produ
 
 The table is verified on the identity equations and it is the unit table of *Comparison Between the Four General Products*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*.
 
-The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde P$ invertible exactly when the central square $C(\tilde P)=\sum_\mu P_\mu^{2}$ is nonzero, is *Norm and Invertibility in the General Plain Algebra*.
+The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde P$ invertible exactly when the central square $C(\tilde P)=\sum_\mu P_\mu^{2}$ is nonzero, is *Norm and Invertibility in the General Quaternionic Algebra*.
 
 ---
 

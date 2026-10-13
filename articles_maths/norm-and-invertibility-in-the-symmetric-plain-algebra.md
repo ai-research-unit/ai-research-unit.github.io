@@ -14,11 +14,15 @@ complex-valued, indefinite and **not** multiplicative. The article defines it, r
 
 The invertibility is where the article records an **absence**. The block is commutative and unital, with the unit $e_0$, but it is not associative, and its invertibility is governed by a quadratic form that is **not** its algebraic norm. The element $e_0+e_1$ is invertible and satisfies $B(e_0+e_1)=0$, and the element $e_0+ie_1$ is a zero divisor and satisfies $B(e_0+ie_1)=2$: the non-vanishing of the algebraic norm is neither necessary nor sufficient for invertibility, and the article states that absence rather than a criterion. The invertibility the block does have is the invertibility of the Jordan theory, carried by a different quadratic form and studied in *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
+**The results.** The block carries one algebraic norm, the diagonal of its scalar-part form, $B(\tilde Q)=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2}$, complex-valued and indefinite, of Gram matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, with the complex cone as its vanishing set. It is **not multiplicative**, the pair $(e_1,e_2)$ separating the two sides. It does **not** decide invertibility: the unit $e_0+e_1$ has $B=0$ and the zero divisor $e_0+ie_1$ has $B=2$, so the non-vanishing of the algebraic norm is neither necessary nor sufficient; the invertibility the block does have is that of the Jordan theory, carried by a different quadratic form. Each section below states its result first and then proves it.
+
 **Boundaries.** The algebraic norm of the general plain bilinear product is *Norm and Invertibility in the General Plain Algebra*, and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; none of the four is read here beyond $B$. The product, its unit and its non-associativity are *Introduction to the Symmetric Plain Algebra of Biquaternions*; the trace form the algebraic norm polarises is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the square and the quadratic identity are *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*; the zero divisors are *Zero Divisors of the Symmetric Plain Algebra*; the definitions of the unit and the inverse are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$; $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. Juxtaposition is the plain product and $\bullet$ is the product of the block, $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$.
 
 ## The Algebraic Norm of the Block
+
+**The block carries exactly one algebraic norm**, the diagonal of its scalar-part form, $B(\tilde Q)=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2}$; it is complex-valued and indefinite, of Gram matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, and its vanishing set is the complex cone.
 
 **Definition.** The **algebraic norm of the block** is the diagonal of the scalar-part form of the product,
 
@@ -44,6 +48,8 @@ which is the general plain bilinear form of *The 4 Forms over the Biquaternion $
 
 ## The Algebraic Norm Is Not Multiplicative
 
+**The algebraic norm of the block is not multiplicative:** $B(\tilde P\bullet\tilde Q)\neq B(\tilde P)B(\tilde Q)$ in general, the pair $(e_1,e_2)$ separating the two sides.
+
 **Proposition.** The algebraic norm of the block is **not** multiplicative:
 
 $$
@@ -56,9 +62,13 @@ $$
 
 ## The Unit and the Degeneracy of the Naive Inverse
 
+**The block is commutative and unital with unit $e_0$, but it is not associative, and its naive inverse equation $\tilde Q\bullet\tilde R=e_0$ is degenerate: the element $\tilde\Upsilon=e_1+ie_2$ satisfies it for a two-dimensional affine family of $\tilde R$.**
+
 The unit of the block is $e_0$: the product is commutative, so its one-sided inverse equations coincide, and $e_0$ is the two-sided unit (*Introduction to the Symmetric Plain Algebra of Biquaternions*). The block is **not associative**: $(\tilde P\bullet\tilde Q)\bullet\tilde R\neq\tilde P\bullet(\tilde Q\bullet\tilde R)$ in general, and the single equation $\tilde Q\bullet\tilde R=e_0$ is **degenerate**: the element $\tilde\Upsilon=e_1+ie_2$ satisfies $\tilde\Upsilon\bullet\tilde R=e_0$ for a two-dimensional affine family of $\tilde R$, because its left multiplication has a two-dimensional kernel. The naive inverse equation therefore does not define an inverse, and the block is treated with the inverse of the Jordan theory in *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
 ## The Absence of a Criterion from the Algebraic Norm
+
+**The algebraic norm does not decide invertibility:** $B(\tilde Q)=0$ does not force $\tilde Q$ non-invertible, and $B(\tilde Q)\neq0$ does not force $\tilde Q$ invertible.
 
 The algebraic norm of a product would decide invertibility if the invertible elements were exactly the elements of non-vanishing algebraic norm. For the block that statement is **false in both directions**, and the article records the absence rather than a criterion.
 

@@ -19,7 +19,7 @@ inherit the zero-divisor theory of the algebra, and the difference is a theorem 
 not a defect.
 
 The zero divisors are the elements that fail to be regular, and they are not the same as the
-elements that fail to be invertible: the element $e_1$ is invertible, with $c(e_1)=1$, and it
+elements that fail to be invertible: the element $e_1$ is invertible, with $C(e_1)=1$, and it
 annihilates $e_2$. The careful separation of the two notions is *Norm and Invertibility in the
 Symmetric Plain Algebra*; this article owns the annihilating elements.
 
@@ -29,8 +29,9 @@ throughout this article the product is $\bullet$ and, unqualified, **zero diviso
 divisor of $\bullet$. The zero divisors of the algebra, their criterion and their set are *Zero
 Divisors of the General Plain Algebra*; the annihilators and the determinant of the left
 multiplication are *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the two
-families are named by *Idempotents of the Symmetric Plain Algebra* and *Nilpotents of the Symmetric
-Plain Algebra*.
+families are named by *Square Roots of One and the Idempotents of the Symmetric Plain Algebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*.
+
+**The results.** A non-zero element of the block is a zero divisor exactly when $Q_0=0$ or $C(\tilde Q)=0$, so the zero-divisor set is the union of the vector subspace minus the origin and the isotropic cone $\mathcal C=\{C(\tilde Q)=0\}$ minus the origin. It splits into the pure family, the whole vector subspace minus the origin, each member annihilating a complex plane, and the scalar family, the elements with $Q_0\neq0$ and $C(\tilde Q)=0$, each annihilating the complex line $\mathbb{C}\tilde Q^{\natural}$ and equal up to scalar to a non-trivial idempotent. The set is strictly larger than the zero-divisor set of the algebra and of the four general products, which is the isotropic cone alone, the witness of the difference being $e_1$.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis
 $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$. An
@@ -64,6 +65,8 @@ The zero divisors of the four general products and the theorem of the four coinc
 *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Criterion
+
+**An element of the block is a zero divisor if and only if it is non-zero and $Q_0=0$ or $C(\tilde Q)=0$.**
 
 The determinant of the left multiplication is known from the form:
 $\det(L^{\bullet}_{\tilde Q})=Q_0^2C(\tilde Q)$ (*The Trace Form and the Invariance of the
@@ -107,6 +110,8 @@ different.
 
 ## The Two Families
 
+**The criterion splits the zero-divisor set into two families: the pure family, every non-zero pure element, and the scalar family, the elements with $Q_0\neq0$ and $C(\tilde Q)=0$.**
+
 The criterion splits the zero-divisor set into two families, and each family has its own
 annihilator.
 
@@ -121,7 +126,7 @@ two-dimensional solution space.
 
 The family is parametrised by the vector subspace without the origin, a set of complex dimension
 three, and each member annihilates a complex plane. **No pure element of the block is regular**,
-whatever the value of its central square: $e_1$ is a zero divisor and $c(e_1)=1$, and the whole
+whatever the value of its central square: $e_1$ is a zero divisor and $C(e_1)=1$, and the whole
 pure isotropic cone, whose members have $C=0$, sits inside the same family. The annihilator itself,
 of complex dimension two, and the operator with its rank are *Annihilators of the Symmetric Plain
 Algebra*, below this article in this category.
@@ -138,7 +143,7 @@ determinant vanishing through the factor $C(\tilde Q)$.
 The family is the set $\{\tilde Q:Q_0\neq0,\ C(\tilde Q)=0\}$, of complex dimension three, and up
 to the scalar it is the set of the **idempotents** of the block: the non-zero non-trivial
 idempotents are $\tfrac12(e_0+\mathbf{u})$ with $\mathbf{u}^2=e_0$ pure, and
-$c(\tfrac12(e_0+\mathbf{u}))=0$. The exact correspondence is *Idempotents of the Symmetric Plain
+$C(\tfrac12(e_0+\mathbf{u}))=0$. The exact correspondence is *Idempotents of the Symmetric Plain
 Algebra*, and the annihilator of the family, the complex line $\mathbb{C}\tilde Q^{\natural}$, is
 *Annihilators of the Symmetric Plain Algebra*.
 
@@ -161,10 +166,12 @@ $$
 
 *Proof.* The algebra's set is $\mathcal{C}\setminus\{0\}$ (*Zero Divisors of the General Plain
 Algebra*), and every one of its elements satisfies $C=0$ and is in $\mathcal Z(\bullet)$. The
-inclusion is strict: $e_1$ has $c(e_1)=1\neq0$ and $Q_0=0$, hence is in $\mathcal Z(\bullet)$ and
+inclusion is strict: $e_1$ has $C(e_1)=1\neq0$ and $Q_0=0$, hence is in $\mathcal Z(\bullet)$ and
 not in the algebra's set.
 
 ## The Comparison with the Four General Products
+
+**The zero-divisor sets of the four general products coincide with each other and with the isotropic cone of the central square, and the zero-divisor set of the block is strictly larger than all four.**
 
 **Theorem.** The zero-divisor sets of the four general products coincide with each other and with
 the isotropic cone of the central square, and the zero-divisor set of the block is strictly larger
@@ -191,11 +198,13 @@ subspace with its isotropic cone removed.
 
 ## The Relation to the Other Notions
 
+**The pure roots of $\pm1$ are zero divisors whatever their central square, the non-zero roots of $0$ are the nilpotents, and the scalar family is exactly the non-zero scalar multiples of the non-trivial idempotents, every idempotent other than $0$ and $e_0$ being a zero divisor.**
+
 **Zero divisors and the roots.** A root of $-1$ or of $+1$ that is pure is a zero divisor whatever
 its central square, so the block has invertible roots of the central values that are not regular;
 this does not occur in the algebra, whose pure roots of $-1$ are units. The root theory is *Square
-Roots of Minus One, Zero and Plus One in the Symmetric Plain Algebra*; the roots of $0$ are the
-pure isotropic elements, the nilpotents of *Nilpotents of the Symmetric Plain Algebra*.
+Roots of One and the Idempotents of the Symmetric Plain Algebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*; the roots of $0$ are the
+pure isotropic elements, the nilpotents of *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*.
 
 **Zero divisors and the idempotents.** The scalar family is the set of the non-zero scalar
 multiples of the non-trivial idempotents, and every idempotent other than $0$ and $e_0$ is a zero
@@ -213,7 +222,7 @@ $\mathbb{C}\tilde Q^{\natural}$ and which are the non-zero scalar multiples of t
 idempotents. The zero-divisor set is the union of the vector subspace and the isotropic cone, and
 it strictly contains the zero-divisor set of the algebra and the common set of the four general
 products, which is the isotropic cone alone; the witness of the difference is $e_1$, a zero divisor
-of the block with $c(e_1)=1$. An element of the block can be invertible and a zero divisor, and the
+of the block with $C(e_1)=1$. An element of the block can be invertible and a zero divisor, and the
 invertible elements are exactly the complement of the isotropic cone.
 
 ## Summary of Notation
@@ -233,6 +242,6 @@ invertible elements are exactly the complement of the isotropic cone.
 - *Zero Divisors of the General Plain Algebra*, for the zero divisors of the algebra, their criterion and their set.
 - *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the four coinciding sets, against which the block's set is compared.
 - *Norm and Invertibility in the Symmetric Plain Algebra*, for the invertible elements and the distinction with the regular ones.
-- *Idempotents of the Symmetric Plain Algebra* and *Nilpotents of the Symmetric Plain Algebra*, for the two families named by the block.
+- *Square Roots of One and the Idempotents of the Symmetric Plain Algebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*, for the two families named by the block.
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the determinant $\det L^{\bullet}_{\tilde Q}=Q_0^2C(\tilde Q)$.
 - *Annihilators of the Symmetric Plain Algebra* (`articles_maths/annihilators-of-the-symmetric-plain-algebra.md`), below this article in this category, the companion article, for the annihilator of an element, the operator and its features, the rank table and the dichotomy by the families

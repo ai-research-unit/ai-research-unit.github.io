@@ -50,6 +50,8 @@ $\varepsilon=(1,-1,-1,-1)$; the square of an element is
 $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$.
 Throughout this article the product is the block.
 
+**The results.** The block has no unit, so no element has an inverse and the group of units is empty. It carries one algebraic norm, the Krein form $K(\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$, real and indefinite of signature $(2,6)$, which is **not multiplicative** and does **not** detect the zero divisors: $K(e_0+e_1)=0$ on a regular element and $K(e_1)=-1$ on a pure zero divisor. Invertibility is replaced by regularity, $Q_0\neq0$ and $C(\tilde Q)\neq0$, where the left multiplication is injective with rank eight, six and four on the regular, non-pure and pure classes and rank zero at the origin.
+
 ## Definition
 
 **Definition (unit and inverse of a product).** Let $\star$ be a product on $\mathbb{B}$. An element
@@ -64,6 +66,8 @@ This is *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit 
 the product is the block.
 
 ## The Absence of a Unit and of an Inverse
+
+**The block has no unit, so no element has an inverse and the group of units is empty; the unit candidate $e_0$ is not a unit and acts by the two conjugations, $e_0\star\tilde X=\tilde X^{*}$ and $\tilde X\star e_0=\tilde X^{\natural}$.**
 
 **Theorem (the block has no unit).** The block has no left unit and no right unit; in particular it has no
 unit.
@@ -91,6 +95,8 @@ exactly for the real ones; on $e_0+e_1$, $e_0\star(e_0+e_1)=e_0-e_1$, so the uni
 first witness. The two actions are *The Two One-Sided Actions and the Absence of a Unit*.
 
 ## The Algebraic Norm of the Block
+
+**The block carries one algebraic norm, the diagonal of its scalar-part form, $K(\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_0\rvert^{2}-\lvert Q_1\rvert^{2}-\lvert Q_2\rvert^{2}-\lvert Q_3\rvert^{2}$, real and indefinite of signature $(2,6)$, with the $K$-isotropic cone as its vanishing set.**
 
 **Definition.** The **algebraic norm of the block** is the diagonal of the scalar-part form of the product,
 
@@ -135,6 +141,8 @@ of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternio
 
 ## The Algebraic Norm Is Not Multiplicative
 
+**Neither the algebraic norm nor the square map is multiplicative: $K(\tilde P\star\tilde Q)\neq K(\tilde P)K(\tilde Q)$ and $(\tilde P\star\tilde Q)\star(\tilde P\star\tilde Q)\neq(\tilde P\star\tilde P)\star(\tilde Q\star\tilde Q)$ in general, the pair $e_3,e_2$ separating both.**
+
 **Theorem (neither the algebraic norm nor the square is multiplicative).** For the block,
 
 $$
@@ -151,6 +159,8 @@ $(e_3\star e_3)\star(e_2\star e_2)=(-e_0)\star(-e_0)=e_0$. The values use
 $e_3\star e_2=0$ and $e_k\star e_k=-e_0$ of the table.
 
 ## Regularity in the Place of Invertibility
+
+**Invertibility is replaced by regularity: the left multiplication $L^{\star}_{\tilde Q}$ is injective exactly when $\tilde Q$ is regular, $Q_0\neq0$ and $C(\tilde Q)\neq0$, and it then has rank eight, six and four on the regular, non-pure zero-divisor and pure zero-divisor classes and rank zero at the origin.**
 
 The absence of a unit does not leave the block without an invertibility notion; it replaces the invertibility
 of the element by the injectivity of its multiplication operator.
@@ -177,6 +187,8 @@ which the operator calculus of *The Multiplication Operators of the Symmetric Qu
 group-like structure without being a group.
 
 ## The Absence of a Criterion from the Algebraic Norm
+
+**The algebraic norm does not detect the zero divisors: $K(\tilde Q)=0$ does not force $\tilde Q$ to be a zero divisor, and a zero divisor need not have $K(\tilde Q)=0$, the witnesses being the regular $e_0+e_1$ with $K=0$ and the pure zero divisor $e_1$ with $K=-1$.**
 
 **Theorem (the algebraic norm does not detect the zero divisors).** The block has no invertible element, so
 no criterion can name one; and the algebraic norm does not decide the zero-divisor class either, the two

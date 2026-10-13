@@ -85,29 +85,18 @@ the **material coordinate**, with the temporal direction imaginary and the three
 
 ## The Four Involutions
 
-The algebraic content of the article is the four conjugations. The **quaternion conjugation** ${}^{\natural}$, the **complex conjugation** $\bar{\cdot}$, the **Hermitian conjugation** ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the **anti-Hermitian conjugation** ${}^{\flat} = -{}^{*}$ act on the coordinates by
+The algebraic content of the article is the four conjugations. The **complex conjugation** $\bar{\cdot}$, the **quaternion conjugation** ${}^{\natural}$, the **Hermitian conjugation** ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the **anti-Hermitian conjugation** ${}^{\flat} = -{}^{*}$ act on the coordinates $\tilde Q = \sum_\mu Q_\mu e_\mu$ by the following table. Write $\varepsilon = (1, -1, -1, -1)$ for the **sign vector** that keeps the scalar direction and negates the three vector ones.
 
-$$
-\tilde Q^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3,
-$$
+| Involution | Symbol | Conjugate Element | Sign-Vector Rule | $\mathbb{C}$-Linear | $\mathbb{C}$-Antilinear | $\mathbb{R}$-Linear |
+|---|---|---|---|---|---|---|
+| Complex Conjugation | $\bar{\cdot}$ | $\bar{\tilde Q} = \bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3$ | $(\bar{\tilde Q})_\mu = \bar Q_\mu$ | No | Yes | Yes |
+| Quaternion Conjugation | ${}^{\natural}$ | $\tilde Q^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$ | $(\tilde Q^{\natural})_\mu = \varepsilon_\mu Q_\mu$ | Yes | No | Yes |
+| Hermitian Conjugation | ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ | $\tilde Q^{*} = \bar Q_0 e_0 - \bar Q_1 e_1 - \bar Q_2 e_2 - \bar Q_3 e_3$ | $(\tilde Q^{*})_\mu = \varepsilon_\mu \bar Q_\mu$ | No | Yes | Yes |
+| Anti-Hermitian Conjugation | ${}^{\flat} = -{}^{*}$ | $\tilde Q^{\flat} = -\bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3$ | $(\tilde Q^{\flat})_\mu = -\varepsilon_\mu \bar Q_\mu$ | No | Yes | Yes |
 
-$$
-\bar{\tilde Q} = \bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3,
-$$
+The three linearity properties are collected in the last columns of the table above: the quaternion conjugation is the only $\mathbb{C}$-**linear** one of the four, the other three are $\mathbb{C}$-**antilinear**, and all four are $\mathbb{R}$-linear, since conjugating a complex coefficient is an $\mathbb{R}$-linear operation.
 
-$$
-\tilde Q^{*} = \bar Q_0 e_0 - \bar Q_1 e_1 - \bar Q_2 e_2 - \bar Q_3 e_3,
-$$
-
-$$
-\tilde Q^{\flat} = -\bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3 .
-$$
-
-The natural conjugation keeps the scalar coordinate and negates the three vector ones; the bar conjugates the four complex coefficients and touches no basis element; the star does both; the flat is the negative of the star. Three of the four are written with one **sign vector** and the fourth with its negative,
-
-$$
-\varepsilon = (1, -1, -1, -1), \qquad (\tilde Q^{\natural})_\mu = \varepsilon_\mu Q_\mu, \qquad (\tilde Q^{*})_\mu = \varepsilon_\mu \bar Q_\mu, \qquad (\bar{\tilde Q})_\mu = \bar Q_\mu .
-$$
+The natural conjugation keeps the scalar coordinate and negates the three vector ones; the bar conjugates the four complex coefficients and touches no basis element; the star does both; the flat is the negative of the star. In sign-vector form, the natural conjugation and the star carry $+\varepsilon$, the anti-Hermitian conjugation carries $-\varepsilon$, and the bar carries no sign vector at all, since it touches no basis element.
 
 **Each is an involution.** Applying any one of the four twice returns the element, so each cuts the algebra into a fixed space and an anti-fixed space, and each of the two is a real vector subspace.
 
@@ -137,7 +126,7 @@ $$
 
 the eigenspace split of the Hermitian conjugation, and it is also the split into the fixed and anti-fixed spaces of the reversal, which is the star with the central sign. The **material sector** $\mathbb{M}_-$ is the anti-Hermitian one, where the scalar coefficient is imaginary and the three vector coefficients are real; it carries the four-position $i c t\, e_0 + \mathbf{x}$ and the four-vectors, and it is the fixed space of the algebra's real structure. The **informational sector** $\mathbb{M}_+$ is the Hermitian one, where the scalar coefficient is real and the three vector coefficients are imaginary; it carries the states and the observables, and it is the fixed space of the star. Every one of the four involutions preserves both sectors, which is why the two can carry two different physical readings without a cross-term; the maps that do cross between them are built from the central unit and are *Cross-Sector Coupling in the Biquaternion Framework*.
 
-On the physical dictionary the sectors read as the two ends of the table above: the material sector has three real spatial directions and one imaginary temporal one, $\mathbb{M}_-\ni i c t\, e_0 + \mathbf{x}$, and the informational sector three imaginary spatial directions and one real temporal one, $\mathbb{M}_+\ni c t'\, e_0 + i\mathbf{x}'$. The physics of the material sector is *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, the physics of the informational sector *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the sector split in the framework *Introduction to the Biquaternion Universe*.
+On the physical dictionary the sectors read as the two ends of the table above: the material sector has three real spatial directions and one imaginary temporal one, $\mathbb{M}_-\ni i c t\, e_0 + \mathbf{x}$, and the informational sector three imaginary spatial directions and one real temporal one, $\mathbb{M}_+\ni c t'\, e_0 + i\mathbf{x}'$. The physics of the material sector is *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, the physics of the informational sector *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the sector split in the framework *Introduction to the Biquaternion Universe*. The informational sector is written in quantum physics with the letter of an operator, $\mathbb{M}_+ \ni \tilde{H} = h_0e_0 + ih_1e_1 + ih_2e_2 + ih_3e_3$ with real $h_\mu$: the same element as $ct'\,e_0 + i\mathbf{x}'$, under coefficient names that record its role as a Hermitian operator, and the Pauli expansion $h_0I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$ under the module dictionary of *The Native Qubit and the Defining Module of the Biquaternion Algebra*.
 
 ## Physical Readings
 

@@ -18,11 +18,15 @@ $$
 
 the general quaternionic sesquilinear algebraic norm of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, real, **indefinite**, of signature $(2,6)$, and **not** multiplicative. The article states the absence of the inverse, defines $K$, proves the failure of multiplicativity, and records the **absence of a criterion**: $K$ does not decide invertibility, and the block has no invertibility of its own to decide.
 
-**Boundaries.** The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; none of the other three is read here. The absence of the unit and the two one-sided families are *The Two One-Sided Actions and the Absence of a Unit*; the form $K$, its Gram matrix and its restrictions are *The Krein Gram Matrix and the Restrictions of the Form*; the element classes of the block, read without a unit, are *Idempotents of the General Quaternionic Sesqualgebra*, *Nilpotents of the General Quaternionic Sesqualgebra* and *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Sesqualgebra*.
+**Boundaries.** The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; none of the other three is read here. The absence of the unit and the two one-sided families are *The Two One-Sided Actions and the Absence of a Unit*; the form $K$, its Gram matrix and its restrictions are *The Krein Gram Matrix and the Restrictions of the Form*; the element classes of the block, read without a unit, are *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* and *Square Roots of a General Element in the General Quaternionic Sesqualgebra*.
 
 **Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. An element is $\tilde Q = Q_0e_0+\mathbf Q$. The conjugations are $\tilde Q^{\natural} = Q_0-\mathbf Q$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The product is $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second; juxtaposition is the general plain bilinear product. The sign vector is $\varepsilon = (1,-1,-1,-1)$.
 
+**The results.** The general quaternionic sesquilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ has **no unit, no inverse and no invertible element**: the two actions of $e_0$ are the star and the natural conjugation, so no element is a two-sided unit. It carries one algebraic norm, the general quaternionic sesquilinear algebraic norm $K(\tilde Q)=\lvert Q_0\rvert^{2}-\lvert Q_1\rvert^{2}-\lvert Q_2\rvert^{2}-\lvert Q_3\rvert^{2}$, real, indefinite of signature $(2,6)$, with the $K$-isotropic cone as its vanishing set, and $K$ is **not multiplicative**. Because the block has no invertible element, $K$ has no invertibility of the block to decide, and it does not decide the invertibility of the plain product either: the plain unit $e_0+e_1$ has $K=0$ and the plain zero divisor $e_1+ie_2$ has $K=-2$. Each section below states its result first and then proves it.
+
 ## The Double Absence
+
+**The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ has no left unit, no right unit and no two-sided unit, so no element has an inverse and the set of invertible elements is empty.**
 
 **Proposition (the two one-sided actions of $e_0$).** For every $\tilde Q$,
 
@@ -38,11 +42,13 @@ so the left action of $e_0$ is the star and the right action is the natural conj
 
 **Proof.** A left unit $\tilde E$ would satisfy $\tilde E\star\tilde Q = \tilde Q$ for every $\tilde Q$, and at $\tilde Q = e_0$ this reads $\tilde E\star e_0 = e_0$, that is $\tilde E^{\natural} = e_0$ by the proposition, so $\tilde E = e_0$; but $e_0\star\tilde Q = \tilde Q^{*}$ is not $\tilde Q$ for every $\tilde Q$, for instance at $\tilde Q = e_1$, so there is no left unit. The same computation at $\tilde Q = e_0$ for a right unit gives $\tilde E^{*} = e_0$, hence $\tilde E = e_0$, and $e_0$ is not a right unit because $\tilde Q\star e_0 = \tilde Q^{\natural}$ is not $\tilde Q$ at $\tilde Q = e_1$. A two-sided unit would be both, so there is none. An inverse requires a unit in its definition, so no inverse exists, and the set of invertible elements is empty. The same statements, with the monoid and the one-sided families, are *The Two One-Sided Actions and the Absence of a Unit*, where the left and the right multiplications of the block are computed as well.
 
-**Corollary (the absence and the element classes).** The concepts of *Nilpotents of the General Quaternionic Sesqualgebra*, *Idempotents of the General Quaternionic Sesqualgebra* and the roots of a central value of the block are read **without** a unit: an idempotent is an element equal to its square and not a projection onto the unit, a nilpotent is an element of vanishing square and not a multiple of a unit, and a root of $\lambda$ is an element of square $\lambda e_0$ and not the product of a unit with a root of $\lambda$ in the plain algebra.
+**Corollary (the absence and the element classes).** The concepts of *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*, *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* and the roots of a central value of the block are read **without** a unit: an idempotent is an element equal to its square and not a projection onto the unit, a nilpotent is an element of vanishing square and not a multiple of a unit, and a root of $\lambda$ is an element of square $\lambda e_0$ and not the product of a unit with a root of $\lambda$ in the plain algebra.
 
 **Proof.** Each definition names only the product and $e_0$, and none of them names a unit; the corollary is the reading of *Definitions for the Study of the 12 Algebraic Structures* with the theorem above.
 
 ## The Algebraic Norm of the Block
+
+**The block carries exactly one algebraic norm, the diagonal of its scalar-part form, $K(\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_0\rvert^{2}-\lvert Q_1\rvert^{2}-\lvert Q_2\rvert^{2}-\lvert Q_3\rvert^{2}$, real and indefinite of signature $(2,6)$, with the nonzero $K$-isotropic cone as its vanishing set.**
 
 **Definition.** The **algebraic norm of the block** is the diagonal of the scalar-part form of the product,
 
@@ -67,6 +73,8 @@ the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternion
 
 ## The Algebraic Norm Is Not Multiplicative
 
+**The algebraic norm of the block is not multiplicative, $K(\tilde P\star\tilde Q)\neq K(\tilde P)K(\tilde Q)$ in general, the pair $\tilde P=\tilde Q=e_0+e_1$ separating the two sides.**
+
 **Proposition.** The algebraic norm of the block is **not** multiplicative:
 
 $$
@@ -78,6 +86,8 @@ $$
 **Remark (the failure belongs to the block).** The block, whose two slots carry the two conjugations, does not respect its own algebraic norm $K$ under its product.
 
 ## The Absence of a Criterion from the Algebraic Norm
+
+**The algebraic norm does not decide invertibility: the set of invertible elements of the block is empty, so $K$ has nothing to decide for the block, and $K=0$ does not force a plain non-unit while $K\neq0$ does not force a plain unit.**
 
 The algebraic norm of a product would decide invertibility if the invertible elements were exactly the elements of non-vanishing algebraic norm. For the block that statement has no content in one direction and fails in the other, and the article records the absence rather than a criterion.
 
@@ -128,6 +138,6 @@ real, indefinite of signature $(2,6)$, with the $K$-isotropic cone as its vanish
 - *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the proof of the absence and the two one-sided families of the block.
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for $K$, its Gram matrix and its signatures.
 
-- *Idempotents of the General Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-general-quaternionic-sesqualgebra.md`), for the nontrivial idempotents of the block.
-- *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-quaternionic-sesqualgebra.md`), for the roots of the block.
+- *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.md`), for the nontrivial idempotents of the block.
+- *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.md`) and *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the roots of the block.
 - *Conventions in Mathematics* (`articles_maths/conventions-in-mathematics.md`), for the notation and the article format.

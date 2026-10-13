@@ -142,7 +142,7 @@ The **physical interpretation** is that invertibility means two different things
 norm is the interval: a composite process has the product of the intervals of its factors, the unit-norm
 slice is the group of motions, and the level set of the norm is the mass shell. In the GPS the norm law
 returns a modulus and not a value, there is no unit, and what takes the place of invertibility is
-positivity and rank. The owner of the first interpretation is *Biquaternion Norm and Invertibility*, with the
+positivity and rank. The owner of the first interpretation is *The Interval as the Square and the Charge of the Material Composition*, with the
 interval and the mass shell; the owner of the second is *Mass, Rank and the Positivity of the Dagger*,
 where the rank of the sesquilinear square is the framework's mass label and its positivity is the state
 condition, and where the two squares of one element are shown to be the same number read in two ledgers.

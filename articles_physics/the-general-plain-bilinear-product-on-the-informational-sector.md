@@ -43,8 +43,7 @@ sector, the idempotents and the purity boundary, and the units of the sector. Th
 the Jordan identity are *The Symmetrised Material Composition and the Jordan Identity* and *Observables
 as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*; the invertibility
 criterion, the group of units and the cone are the mathematics of *The Group of Units of the General Plain
-Algebra and the Complement of the Zero-Divisor Cone* and the level data of *Biquaternion Norm and
-Invertibility*; the idempotents and the Peirce decomposition are *Idempotents of the General Plain
+Algebra and the Complement of the Zero-Divisor Cone* and the level data of *Norm and Invertibility in the General Quaternionic Algebra*; the idempotents and the Peirce decomposition are *Idempotents of the General Plain
 Algebra* and *Ideals and Peirce Decomposition of the General Plain Algebra*; the operators and the
 sandwich are *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*; the exchange
 of the two sectors is *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time* and the
@@ -163,7 +162,7 @@ the **Euclidean inner product** of the informational coordinate, whereas the int
 same coordinate. The informational sector therefore carries **two metrics of opposite type on the same
 four directions**: a Riemannian one, the sector sign, and a Lorentzian one, the interval. The first is
 what the general plain bilinear product measures; the second is the metric, and it belongs to the companion
-quaternionic block and to *Biquaternion Norm and Invertibility*, and it is cited here, never re-proved.
+quaternionic block and to *Norm and Invertibility in the General Quaternionic Algebra*, and it is cited here, never re-proved.
 
 **Remark (verified).** On the sector bases $B$ restricts to $\pm\mathrm{I}_4$ with all cross terms $0$;
 $B(\tilde Q,\tilde Q)$ is real and strictly positive on $100$ random $\mathbb{M}_+$ elements and real and
@@ -362,7 +361,7 @@ boundary of what it must declare is the boundary of the sector.
 - **$B$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
   causal structure. The metric is the interval, of signature $(1,3)$ on $\mathbb{M}_+$.
 - **$B$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
-  level data of the general quaternionic bilinear form, owned by *Biquaternion Norm and Invertibility*;
+  level data of the general quaternionic bilinear form, owned by *The Interval as the Square and the Charge of the Material Composition*;
   the worked case shows the two forms giving different numbers on the same element.
 - **The informational sector is not closed under the product.** A composite of two informational
   elements is informational exactly when the two commute and material exactly when they anticommute; the

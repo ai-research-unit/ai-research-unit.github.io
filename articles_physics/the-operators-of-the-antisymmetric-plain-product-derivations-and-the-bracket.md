@@ -569,7 +569,7 @@ declare.
 **What the framework does not claim.** The interpretation does not derive the rotation group or the Lorentz group from the
 operator calculus; the correspondence between the derivations and the finite rotations is cited, not constructed
 here. It does not identify $\kappa$ with a physical metric; the interval and the metric are the quaternionic-level
-data of *Biquaternion Norm and Invertibility*. It does not claim that the inner and outer derivations together form
+data of *The Interval as the Square and the Charge of the Material Composition*. It does not claim that the inner and outer derivations together form
 the algebra of a physical gauge group; the obstruction to enlarging the gauge group is *Grand Unification and the Biquaternion Algebra Ceiling*. And it does
 not claim that the operator calculus of the twelve rows is one calculus: each row has its own form and its own
 adjoint, and the antisymmetric-plain row is the one whose multiplication operators are its inner derivations.

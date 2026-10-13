@@ -12,9 +12,11 @@ for the product $\tilde\Xi\diamond\tilde Q=\operatorname{Vect}(\tilde\Xi\tilde Q
 
 The method is the scalar–vector split, carried by the real structure of the coefficients. The split writes each element as a real quaternion plus $i$ times a real quaternion, and the diagonal of the block then closes in a single expression in the eight real data of the root; the expression exhibits the diagonal as $2i$ times a **real** vector, and that is the whole classification. Every value of the diagonal is of that form, and the square-root equation is solvable exactly for the radicands of that form: the block has **no root of a radicand outside the Hermitian pure vectors**, and for a radicand inside them the roots form a real five-parameter family. The squaring map is thus a map whose image is a real three-dimensional space and each of whose fibres is a real five-dimensional family, and the discrepancy is the non-associativity and the non-injectivity of the projection.
 
-The article is algebraic. No norm enters and no form is needed beyond the description of the image. The three central values $\tilde\Xi\diamond\tilde\Xi=-e_0,0,+e_0$ are the degenerate data of the classification and are *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*; the criterion for the diagonal to vanish and the quadric it traces are *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*; the square-zero class is *Nilpotents of the Antisymmetric Plain Sesqualgebra*. The general definition of the square root is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*; the model of the method is *Square Roots of a General Element in the General Plain Algebra*; and the two models of the block, which read the same classification through the matrix and the regular representation, are *The Antisymmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Antisymmetric Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*.
+The article is algebraic. No norm enters and no form is needed beyond the description of the image. The three central values $\tilde\Xi\diamond\tilde\Xi=-e_0,0,+e_0$ are the degenerate data of the classification and are *Square Roots of One and the Idempotents of the Antisymmetric Plain Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra*; the criterion for the diagonal to vanish and the quadric it traces are *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*; the square-zero class is *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra*. The general definition of the square root is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*; the model of the method is *Square Roots of a General Element in the General Plain Algebra*; and the two models of the block, which read the same classification through the matrix and the regular representation, are *The Antisymmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Antisymmetric Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*.
 
 Throughout, the square is the square of $\diamond$ and the root is the root in $\diamond$, unqualified. $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$ with $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$; the projection $\operatorname{Vect}$ removes the scalar part, its kernel is the centre $\mathbb{C}_{\mathbb{B}}$, the Hermitian subspace is $\mathbb{M}_+$ and the vector subspace $\operatorname{Vect}(\mathbb{B})$. The conjugations are ${}^{\natural}$, the coefficientwise $\bar{\cdot}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$.
+
+**The results.** In the real splitting $\tilde\Xi=\tilde\xi+i\tilde\xi'$ the diagonal is $2i$ times a real vector, $\tilde\Xi\diamond\tilde\Xi=2i(\xi_0\boldsymbol{\xi}'-\xi'_0\boldsymbol{\xi}-\boldsymbol{\xi}'\times\boldsymbol{\xi})$, so its image is the space $i\mathbb{R}^{3}=\mathbb{M}_+\cap\operatorname{Vect}(\mathbb{B})$ of the Hermitian pure vectors, of real dimension three. The block has **no root of a radicand outside $i\mathbb{R}^{3}$**, and for a nonzero Hermitian pure vector the roots form a **real five-parameter family** in bijection with $(\mathbb{R}^{4}\setminus\{0\})\times\mathbb{R}$, with $\tilde\Xi=e_0+\tfrac12\tilde Q$ a canonical member. For $\tilde Q=0$ the root set is the square-zero cone, of real dimension five, and the three central values recover the parity of the companion articles: no root of $\pm1$ and the cone for $0$.
 
 ## The Reduction
 
@@ -46,6 +48,8 @@ so the diagonal is $2i$ times a real vector.
 The expression is the reason for everything that follows. It says three things at once: the diagonal is **real-vector-valued**, $2i$ times a vector of $\mathbb{R}^{3}$; it depends on the eight real data of the root through only three real components, so it cannot be injective; and it is the map of the real eight-dimensional space of roots onto the real three-dimensional target.
 
 ## The Existence
+
+**The diagonal takes exactly the values $i\mathbb{R}^{3}=\mathbb{M}_+\cap\operatorname{Vect}(\mathbb{B})$, the Hermitian pure vectors, and every such value is attained:** the equation $\tilde\Xi\diamond\tilde\Xi=\tilde Q$ has no solution unless $\tilde Q$ is a pure vector with purely imaginary coefficients, and for every such $\tilde Q$ the canonical root $\tilde\Xi=e_0+\tfrac12\tilde Q$ solves it.
 
 ### The Necessary Condition
 
@@ -91,6 +95,8 @@ The map $\tilde Q\mapsto e_0+\tfrac12\tilde Q$ is a real-linear section of the d
 
 ## The Root Set
 
+**For a nonzero Hermitian pure vector $\tilde Q=2i\mathbf g$ the root set is in bijection with $(\mathbb{R}^{4}\setminus\{0\})\times\mathbb{R}$, a real five-parameter family**, the parameter $\boldsymbol{\xi}'$ being the unique solution of $\xi_0\boldsymbol{\xi}'-\xi'_0\boldsymbol{\xi}-\boldsymbol{\xi}'\times\boldsymbol{\xi}=\mathbf g$; for $\tilde Q=0$ the root set is the square-zero cone of real dimension five.
+
 ### The Equation in Real Coordinates
 
 Let $\tilde Q$ be a Hermitian pure vector and write $\tilde Q=2i\mathbf g$ with $\mathbf g\in\mathbb{R}^{3}$. The equation $\tilde\Xi\diamond\tilde\Xi=\tilde Q$ reads, in the real coordinates of the root,
@@ -106,7 +112,7 @@ $$
 **Theorem (the root set).** Let $\tilde Q$ be a Hermitian pure vector.
 
 - If $\tilde Q\neq0$, the root set of $\tilde Q$ is in bijection with $(\mathbb{R}^{4}\setminus\{0\})\times\mathbb{R}$: the parameters are $(\xi_0,\boldsymbol{\xi})\neq0$ and $\xi'_0$, and $\boldsymbol{\xi}'$ is determined by the proposition. The roots form a **real five-parameter family**.
-- If $\tilde Q=0$, the root set is the square-zero cone, the criterion $\tilde\Xi\tilde\Xi^{*}$ central with $\tilde\Xi$ nonzero, of real dimension five (*Nilpotents of the Antisymmetric Plain Sesqualgebra*).
+- If $\tilde Q=0$, the root set is the square-zero cone, the criterion $\tilde\Xi\tilde\Xi^{*}$ central with $\tilde\Xi$ nonzero, of real dimension five (*Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra*).
 
 *Proof.* The equation is the proposition, and a root with $(\xi_0,\boldsymbol{\xi})=(0,0)$ satisfies it only when $\mathbf g=0$; hence for $\tilde Q\neq0$ every root has $(\xi_0,\boldsymbol{\xi})\neq0$ and the parametrisation is a bijection, of real dimension $4+1=5$. For $\tilde Q=0$ the equation is $\tilde\Xi\diamond\tilde\Xi=0$, which is the square-zero condition, and its set is the cone of *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
 
@@ -126,9 +132,11 @@ The generic radicand with a root is a nonzero Hermitian pure vector, and its roo
 
 ## The Central Values
 
-The classification specialises to the three central values of *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*, and the agreement is the check that the two methods are the same.
+**The classification specialises to the three central values: the block has the roots of $0$ and no root of $-1$ or $+1$**, since a central value $\lambda e_0$ is a Hermitian pure vector exactly when $\lambda=0$.
 
-A central value $\lambda e_0$ is a Hermitian pure vector exactly when $\lambda=0$, since $i\mathbb{R}^{3}$ has vanishing scalar part. Hence the row of the classification is the third for $\lambda=0$ and the first for $\lambda=\pm1$: **the block has the roots of $0$ and no root of $-1$ or $+1$**. This is the parity obstruction of the companion article, recovered here as the statement that $\pm e_0\notin i\mathbb{R}^{3}$, and it is a special case of the necessary condition and not a new computation.
+The classification specialises to the three central values of *Square Roots of One and the Idempotents of the Antisymmetric Plain Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra*, and the agreement is the check that the two methods are the same.
+
+A central value $\lambda e_0$ is a Hermitian pure vector exactly when $\lambda=0$, since $i\mathbb{R}^{3}$ has vanishing scalar part. Hence the row of the classification is the third for $\lambda=0$ and the first for $\lambda=\pm1$: **the block has the roots of $0$ and no root of $-1$ or $+1$**. This is the parity obstruction of the companion articles, recovered here as the statement that $\pm e_0\notin i\mathbb{R}^{3}$, and it is a special case of the necessary condition and not a new computation.
 
 ## Worked Examples
 
@@ -170,6 +178,7 @@ The three central values are the degenerate data: $\pm e_0$ are outside $i\mathb
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*Powers, the Square and the Roots*, for the square root and the root of a central value.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the model of the scalar–vector reduction.
-- *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-plain-sesqualgebra.md`), for the three central values.
+- *Square Roots of One and the Idempotents of the Antisymmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-plain-sesqualgebra.md`), for the roots of $+1$ and the idempotents.
+- *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-plain-sesqualgebra.md`), for the roots of $0$ and the nilpotents.
 - *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.md`), for the criterion for the diagonal to vanish.
 - *The Antisymmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-antisymmetric-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the rank of a value.

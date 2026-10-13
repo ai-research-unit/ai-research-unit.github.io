@@ -34,12 +34,12 @@ which fails the Jacobi identity; it is *The Jacobi Failure and the Associator De
 Antisymmetric Quaternionic Algebra*, and it is stated here only as the boundary of the criterion.
 
 **Placement.** The article is the closing entry of the *Specific Theory* section of the block, after
-*The Lie Algebra of the Antisymmetric Plain Algebra* and after the seven Common Theory articles
+*The Lie Algebra of the Antisymmetric Plain Algebra* and after the six Common Theory articles
 *Introduction to the Antisymmetric Plain Algebra of Biquaternions*, *Norm and Invertibility in the
 Antisymmetric Plain Algebra*, *Zero Divisors of the Antisymmetric Plain Algebra*, *Square Roots of
-Minus One, Zero and Plus One in the Antisymmetric Plain Algebra*, *Square Roots of a General Element
-in the Antisymmetric Plain Algebra*, *Idempotents of the Antisymmetric Plain Algebra* and *Nilpotents
-of the Antisymmetric Plain Algebra*, whose results it reads back as consequences of one law. It is
+One and the Idempotents of the Antisymmetric Plain Algebra*, *Square Roots of Zero and the
+Nilpotents of the Antisymmetric Plain Algebra* and *Square Roots of a General Element in the
+Antisymmetric Plain Algebra*, whose results it reads back as consequences of one law. It is
 the twin of *The Specificities of the Symmetric Plain Algebra*, which states commutativity with the
 Jordan identity as the criterion of the other half of the plain product and proves that the
 symmetric plain product alone satisfies it; the two halves of the plain product are the two unique

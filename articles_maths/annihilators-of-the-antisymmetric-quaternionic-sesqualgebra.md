@@ -28,7 +28,11 @@ the **plane** spanned by the centre and the conjugate of the vector part, for ev
 element. The article owns that reading, the operator with its rank, and the shape of the
 annihilator on the remarkable subspaces; the zero-divisor set is the cited article's.
 
+**The results.** The antisymmetric quaternionic sesquimultiplication $\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}$ is conjugate-alternating, so the two annihilators of an element coincide, $B_\diamond(\tilde P)=A_\diamond(\tilde P)=\ker L_{\tilde P}$. For a non-central element the common annihilator is the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{Q}}$ spanned by the centre and the conjugate of the vector part, and it depends on the complex line of the vector part alone; for a central element the operator is zero and the annihilator is the whole space. The left multiplication $L_{\tilde Q}$ has that plane as its kernel and the vector subspace $\operatorname{Vect}(\mathbb{B})$ as its image, of complex rank two for every non-central element and rank zero at the centre. The block has no case distinction except the degenerate centre, and its zero-divisor set is the whole punctured space.
+
 ## The Annihilator of a Product
+
+**The annihilator of an element is the set of partners it kills; the left annihilator is the kernel of the left multiplication and the right annihilator is the kernel of the right multiplication, and both are nonzero exactly when the element is a zero divisor of the corresponding side.**
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
@@ -53,6 +57,8 @@ Quaternionic Algebra*.
 
 ## The Two Annihilators Coincide
 
+**For every element the two annihilators coincide with the kernel of the left multiplication, $B_\diamond(\tilde P)=A_\diamond(\tilde P)=\ker L_{\tilde P}$, because the block is conjugate-alternating.**
+
 **Theorem (the two annihilators coincide).** For every $\tilde P$,
 $$
 B_\diamond(\tilde P)=A_\diamond(\tilde P)=\ker L_{\tilde P}.
@@ -63,6 +69,8 @@ $\tilde X\diamond\tilde P=-\overline{\tilde P\diamond\tilde X}$; a vector part i
 its conjugate is, so the two products vanish together and the two annihilators are one set.
 
 ## The Annihilator of an Element
+
+**For a non-central element $\tilde Q$ the annihilator is the complex plane $A_\diamond(\tilde Q)=B_\diamond(\tilde Q)=\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{Q}}$, which depends on the complex line of the conjugate of the vector part alone, and the example $e_1+ie_2$ gives the plane $\mathbb{C}\{e_0,e_1-ie_2\}$; for a central element the operator is zero and both annihilators are all of $\mathbb{B}$.**
 
 **Theorem (the annihilator is the centre together with the conjugate of the vector part).** For a
 non-central element $\tilde Q$, of vector part $\mathbf Q\neq0$,
@@ -93,6 +101,8 @@ $$
 
 ## The Multiplication Operator and the Rank
 
+**The operator $L_{\tilde Q}$ has kernel $A_\diamond(\tilde Q)$, image the vector subspace $\operatorname{Vect}(\mathbb{B})$, and complex rank two for every non-central element and rank zero at the centre.**
+
 **Corollary (the rank).** The operator $L_{\tilde Q}$ has kernel $A_\diamond(\tilde Q)$, image the
 vector subspace $\operatorname{Vect}(\mathbb{B})$, and complex rank two for every non-central
 element and rank zero at the centre.
@@ -101,6 +111,8 @@ element and rank zero at the centre.
 element and four at the centre; the rank is four minus the dimension.
 
 ## The Dichotomy
+
+**The block has no case distinction except the degenerate centre: the annihilator is the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{Q}}$ for every non-central element, against the line or plane of the antisymmetric quaternionic algebra and the line or plane of the antisymmetric plain sesqualgebra.**
 
 The zero-divisor set of the block is the whole punctured space, so it separates nothing, and the
 block is the extreme of the twelve for the simplicity of the annihilator: it is
@@ -112,6 +124,8 @@ plane according to the parent invertibility; here there is no case distinction a
 degenerate centre.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**The centre is contained in every annihilator and annihilates every element on both sides; on the vector subspace the annihilator of a nonzero pure element meets it in the complex line $\mathbb{C}\overline{\mathbf{P}}$; and on the conjugate-changed subspaces the conjugation in the second slot gives the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf Q$ on the Hermitian subspace and the same plane with the conjugate line on the anti-Hermitian one.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has $L_{\lambda e_0}=0$, so its
 annihilator is all of $\mathbb{B}$: the centre annihilates every element on both sides, and the

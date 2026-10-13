@@ -32,7 +32,7 @@ Invertibility in the General Quaternionic Algebra*; the element vocabulary is *D
 Study of the 6 Algebraic Structures*; the annihilators and their coincidence are *Annihilators of
 the General Quaternionic Algebra*; the definiteness of the form and the emptiness of the isotropic
 structure are *The Isotropic Structure of the General Quaternionic Algebra*; the nilpotents of the
-product are *Nilpotents of the General Quaternionic Algebra* and the idempotents *Idempotents of the
+product are *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* and the idempotents *Square Roots of One and the Idempotents of the
 General Quaternionic Algebra*, both below this article in this category; the structure-level
 comparison of the six zero-divisor sets is *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; and the complex sibling, which carries
 the cone and the two families, is *Zero Divisors of the General Quaternionic Algebra*.
@@ -184,7 +184,7 @@ is empty.
 left multiplication by the plain inverse $\tilde p^{-1}$ gives $\tilde p=e_0$. The Hermitian family
 $\tfrac12(e_0+i\hat\mu)$ that carries the complex family does not exist over $\mathbb{R}$, there
 being no central imaginary unit; the idempotents of the block and the contrast with the complex
-counterpart are *Idempotents of the General Quaternionic Algebra*, below this article in this
+counterpart are *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, below this article in this
 category.
 
 ## Every Nonzero Element Is Regular
@@ -355,5 +355,5 @@ one-sided here and two-sided there.
 - *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra-of-quaternions.md`), for the coincidence of the two annihilators and their size.
 - *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/zero-divisors-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six zero-divisor sets of the space and the two division structures.
 - *The Isotropic Structure of the General Quaternionic Algebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-algebra-of-quaternions.md`), for the definiteness of the quaternionic form and the emptiness of the isotropic structure.
-- *Nilpotents of the General Quaternionic Algebra* (`articles_maths/nilpotents-of-the-general-quaternionic-algebra-of-quaternions.md`) and *Idempotents of the General Quaternionic Algebra* (`articles_maths/idempotents-of-the-general-quaternionic-algebra-of-quaternions.md`), below this article in this category, for the square-zero elements and the idempotents of the block.
+- *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra-of-quaternions.md`) and *Square Roots of One and the Idempotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra-of-quaternions.md`), below this article in this category, for the square-zero elements and the idempotents of the block.
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), the complex sibling, whose zero-divisor set is the punctured cone that the passage to $\mathbb{R}$ removes.

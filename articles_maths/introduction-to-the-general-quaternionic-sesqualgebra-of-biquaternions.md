@@ -248,7 +248,7 @@ $$
 (e_0+ie_1)\star(e_0+ie_1)=(e_0-ie_1)(e_0+ie_1)=e_0-(ie_1)^2=e_0-i^2e_1^2=e_0-e_0=0 ,
 $$
 
-so $e_0+ie_1$ is a nonzero nilpotent of index two, hence a zero divisor, and the product has no division. It has no unit and no inverse either, the two one-sided actions of $e_0$ being the two conjugations; the substitute of the block for invertibility is the group of units of the **plain** algebra, and it is *Norm and Invertibility in the General Quaternionic Sesqualgebra*. The zero divisors and the nilpotents are *Zero Divisors of the General Quaternionic Sesqualgebra* and *Nilpotents of the General Quaternionic Sesqualgebra*.
+so $e_0+ie_1$ is a nonzero nilpotent of index two, hence a zero divisor, and the product has no division. It has no unit and no inverse either, the two one-sided actions of $e_0$ being the two conjugations; the substitute of the block for invertibility is the group of units of the **plain** algebra, and it is *Norm and Invertibility in the General Quaternionic Sesqualgebra*. The zero divisors and the nilpotents are *Zero Divisors of the General Quaternionic Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 ## Generators and the Presentation
 

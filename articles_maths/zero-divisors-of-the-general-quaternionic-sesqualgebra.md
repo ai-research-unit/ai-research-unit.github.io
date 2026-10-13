@@ -46,6 +46,8 @@ with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^
 the juxtaposition $\tilde P\tilde Q$ is the general plain bilinear product, the multiplication of
 the algebra.
 
+**The results.** A nonzero element $\tilde Q$ is a zero divisor of the general quaternionic sesquilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ if and only if its central square vanishes, $C(\tilde Q)=\sum_\mu Q_\mu^{2}=0$; the left and the right reading give the same condition, and the four general products share this one set. The set is the complex cone $\{C(\tilde Q)=0\}$ of complex dimension three and real dimension six, the same subset the plain product cuts out. It splits by the scalar part into the pure family $Q_0=0$ with $\sum_k Q_k^{2}=0$ and the non-pure family $Q_0\neq0$ with $\sum_k Q_k^{2}=-Q_0^{2}$, and the square-zero elements, of real dimension four, lie in the **non-pure** family, so the split by the square and the split by the scalar part cut across each other. Each section below states its result first and then proves it.
+
 ## The Definition
 
 **Definition (zero divisor of a product).** Let $\star$ be a product on $\mathbb{B}$. A nonzero
@@ -62,6 +64,8 @@ $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, and, unqualified, **z
 theorem that the four coincide, are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Criterion
+
+**A nonzero element $\tilde Q$ is a zero divisor of $\star$ exactly when its central square vanishes, $C(\tilde Q)=\sum_\mu Q_\mu^{2}=0$, the same equation as for the plain product.**
 
 **Theorem (the criterion).** A nonzero element $\tilde Q$ is a zero divisor of $\star$ if and only
 if
@@ -109,6 +113,8 @@ Sesqualgebra*).
 
 ## The Two Families
 
+**The zero-divisor set splits by the scalar part into the disjoint pure family $Q_0=0$ with $\sum_k Q_k^{2}=0$ and non-pure family $Q_0\neq0$ with $\sum_k Q_k^{2}=-Q_0^{2}\neq0$, whose union with the origin is the whole set, and the square-zero elements lie in the non-pure family, so the split by the square cuts across the split by the scalar part.**
+
 The zero-divisor set splits by the scalar part, as it does for the plain product, and the split is
 named.
 
@@ -150,6 +156,8 @@ cone.
 
 ## The Set
 
+**The zero-divisor set is the punctured complex cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, of complex dimension three and real dimension six, the zero set of the non-degenerate complex quadratic form $C$ on $\mathbb{C}^4$, containing the pure vector-subspace part of complex dimension two and the non-pure part of complex dimension three.**
+
 **Theorem (the set).** The zero-divisor set of $\star$ is
 
 $$
@@ -173,6 +181,8 @@ cones are the same subset of $\mathbb{B}$.
 
 ## The Coincidence with the Other Three Products
 
+**The four general products have the same zero-divisor set $\{\tilde Q\neq0:C(\tilde Q)=0\}$, a quoted theorem that holds for the left and the right reading separately; the predicate coincides but the square does not, the square-zero set of $\star$ being of real dimension four while that of the plain product is the pure isotropic cone.**
+
 **Theorem (the four products have one zero-divisor set, quoted).** The four general products of
 *The Four General Products of the Biquaternion $\mathbb{C}$ Space* have the same zero-divisor set,
 namely $\{\tilde Q \neq 0 : C(\tilde Q) = 0\}$. The theorem is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
@@ -194,6 +204,8 @@ the General Quaternionic Sesqualgebra*. The predicate coincides, the square does
 
 ## The Zero Divisors and the Square-Zero Elements
 
+**Every nonzero element with $\tilde Q\star\tilde Q=0$ is a zero divisor of $\star$, and the square-zero elements form a proper subfamily of the zero-divisor set, of real dimension four, lying in the non-pure family; in the plain algebra the square-zero elements are instead the pure zero divisors.**
+
 The relation between the two families of this article and the nilpotents of the block is the one
 place where the GQS zero-divisor theory says something the plain theory does not.
 
@@ -203,7 +215,7 @@ proper subfamily of the zero-divisor set, of real dimension four, lying in the n
 
 **Proof.** If $\tilde Q\star\tilde Q = 0$ then $\tilde Q$ is a zero divisor with
 $\tilde R = \tilde Q$. The identification with the family $c(\hat\mu + i)$, its dimension and its
-non-purity are *Nilpotents of the General Quaternionic Sesqualgebra*.
+non-purity are *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 **Corollary (the contrast with the plain product).** In the plain algebra the square-zero elements
 are the pure zero divisors and the non-pure zero divisors have non-vanishing square; in the GQS the
@@ -255,7 +267,7 @@ and the element $e_0 + ie_1$ is a non-pure zero divisor whose square vanishes.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the definition of the zero divisor relative to a product and the two-sided reading.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion of the plain product, the two families and the element theory of the cone.
 - *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the theorem that the four general products have one zero-divisor set, which this article quotes.
-- *Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the square-zero family $c(\hat\mu+i)$, its real dimension and its non-purity.
+- *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the square-zero family $c(\hat\mu+i)$, its real dimension and its non-purity.
 - *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, its table and its axioms.
 - *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$ used in the examples.
 - *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the position of the cone in the remarkable subspaces.

@@ -27,6 +27,8 @@ reduction of *Square Roots of a General Element in the General Plain Algebra*, w
 quadratic in the scalar part supplies up to four roots. The central values are read off as a
 special case, and their article is cited.
 
+**The results.** The square of every element of the block vanishes identically, so the equation $\tilde\Xi\diamond\tilde\Xi=a$ is the equation $0=a$: the origin is the only element with square roots, every element of the space is a square root of it, and no nonzero element has a square root. The classification is the two rows $a=0$ and $a\neq0$, with the whole space in the first row and the empty set in the second. For the central values there are no roots of $-1$ or of $+1$, and the roots of $0$ in the narrower sense are the square roots of the origin other than the origin itself.
+
 ## The Notion and Its Product
 
 **Definition (square root of an element).** Let $\star$ be a product on $\mathbb{B}$ and let
@@ -39,10 +41,13 @@ The roots of a central value are the special case $a=\lambda e_0$.
 Throughout this article the product is the **antisymmetric quaternionic multiplication**
 $\diamond$, and unqualified, *square root* means a square root of the block. The general
 reduction of the equation in the plain product, and the square it uses, are *Square Roots of a
-General Element in the General Plain Algebra*; the special case of the three central values is
-*Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra*.
+General Element in the General Plain Algebra*; the special cases of the roots of $-1$, of $0$ and
+of $+1$ are *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra*
+and *Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra*.
 
 ## The Reduction
+
+**For every element $\tilde\Xi$ the square vanishes, so the equation $\tilde\Xi\diamond\tilde\Xi=a$ is equivalent to the equation $0=a$: it is solved by the whole space when $a=0$ and by no element when $a\neq0$.**
 
 **Proposition (the reduction).** For every element $\tilde\Xi$ the square vanishes,
 $$
@@ -62,6 +67,8 @@ to compute and no branching of the solution set; the whole of the answer is the 
 
 ## The Square Roots of the Origin
 
+**The square roots of $0$ are all the elements of the space, $\{\tilde\Xi:\tilde\Xi\diamond\tilde\Xi=0\}=\mathbb{B}$.**
+
 **Theorem (the origin has every square root).** The square roots of $0$ in the block are all the
 elements of the space,
 $$
@@ -79,6 +86,8 @@ and that value is the origin.
 
 ## The Square Roots of a Nonzero Element
 
+**No nonzero element of $\mathbb{B}$ has a square root in the block: the equation $\tilde\Xi\diamond\tilde\Xi=a$ has no solution for $a\neq0$.**
+
 **Theorem (nothing else has a square root).** No nonzero element of $\mathbb{B}$ has a square
 root in the block; equivalently, the equation $\tilde\Xi\diamond\tilde\Xi=a$ has no solution for
 $a\neq0$.
@@ -93,6 +102,8 @@ value from a pair of equal arguments.
 
 ## The Classification
 
+**The classification has two rows: the origin, whose square roots are the whole space, and every nonzero element, which has none.**
+
 | the element $a$ | the equation | the square roots of the block |
 |---|---|---|
 | $0$ | $\tilde\Xi\diamond\tilde\Xi=0$ | the whole space $\mathbb{B}$ |
@@ -106,12 +117,16 @@ allows; every other element has none.
 
 ## The Central Values
 
+**At the central values $a=\lambda e_0$ the square roots of $0$ include the origin, and there are no roots of $-1$ or of $+1$.**
+
 **Remark (the three central values).** The central values are the case $a=\lambda e_0$. At
 $\lambda=0$ the square roots of $\lambda e_0$ in the sense of this article are all the elements,
 and the roots of $\lambda=0$ in the sense of the root article, which are required to be nonzero,
 are the punctured space; at $\lambda=-1$ and at $\lambda=+1$ the equation
 $\tilde\Xi\diamond\tilde\Xi=\lambda e_0$ has no solution, as the reduction shows and as
-*Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra* records.
+*Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra* records; and
+the value $\lambda=0$, whose roots are the punctured space in the narrower sense, is the subject
+of *Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra*.
 The central case of the classification therefore adds one distinction and no new computation:
 the square roots of $0$ include the origin, which is not a root of $0$ in the narrower sense.
 
@@ -171,5 +186,6 @@ $+1$. The square roots of the origin are the zero divisors of the block together
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the square root of an element, the power and the square, and for the relativity of the definitions to the product
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its alternation and its table
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the reduction and the four-fold classification against which the collapsed classification of the block is read
-- *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-quaternionic-algebra.md`), for the central case and the three root sets
+- *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-quaternionic-algebra.md`), for the signed central values and for the reduction of the vanishing square
+- *Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-quaternionic-algebra.md`), for the central value $0$ and for the root set of $0$, which is the punctured space
 - *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md`), for the coincidence of the square-zero set with the zero-divisor set

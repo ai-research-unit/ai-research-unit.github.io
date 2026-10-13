@@ -148,7 +148,7 @@ $$
 N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 ,
 $$
 
-used throughout the series and read on the four forms and their norms in §*The Involutions and the Four Forms* and §*The Four Algebraic Norms* below. It is **multiplicative** and complex-valued in general, and it is not an analytic norm; its unit group and its invertibility reading are *Biquaternion Norm and Invertibility*.
+used throughout the series and read on the four forms and their norms in §*The Involutions and the Four Forms* and §*The Four Algebraic Norms* below. It is **multiplicative** and complex-valued in general, and it is not an analytic norm; its unit group and its invertibility reading are *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone*.
 
 Each of the four involutions has a fixed space, and each of these is one of the **remarkable subspaces** of the algebra. Which involution defines which subspace, and which of them are anti-fixed, is recorded with the subspaces themselves, in *The Remarkable Subspaces* below.
 
@@ -192,6 +192,14 @@ with $\mathbf{x} = x e_1 + y e_2 + z e_3$ the real spatial vector and $i\mathbf{
 
 Each subspace carries an **algebraic name**, taken from the involution that defines it, and a **physical name**, taken from the role it plays; the companion articles are titled by the physical name.
 
+**The informational coordinate under operator names.** Quantum physics writes the informational coordinate in the letters of an operator rather than of a coordinate: its four real parameters are named $h_0, h_1, h_2, h_3$ in place of $q_0, q'_1, q'_2, q'_3$, and the element is
+
+$$
+\tilde{H} = h_0e_0 + ih_1e_1 + ih_2e_2 + ih_3e_3, \qquad h_0, h_1, h_2, h_3 \in \mathbb{R},
+$$
+
+with $h_0 = ct'$ and $h_k = x'_k$. This is the informational coordinate $ct'\,e_0 + i\mathbf{x}'$ of the table under the coefficient names of an operator, and its matrix image, under the unit images of §*The 2×2 Matrix Representation* ($\mathsf{M}_2(e_0) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), is the general Hermitian $2\times2$ matrix $h_0I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$ of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. The tilde is required, because $H$ without it is the Hermitian form of §*The Involutions and the Four Forms*, and $h$ without a subscript is the Planck constant.
+
 **The collective names.** Two of the three decompositions of the algebra pair up the subspaces and give the pairs a name of their own. The first needs none beyond the names of its two members:
 
 $$
@@ -213,6 +221,8 @@ $$
 pairs the two sectors — in this series' usage, *the sectors*, without qualification, are these two, and it is the split the relativistic articles are written in terms of. The two pairings cross: no sector is a half, and each sector draws its scalar slot from one half and its vector slots from the other, as *The Element and Its Coefficients* above records.
 
 **The choice of which subspace is "real".** The convention that has to be flagged is that $\mathbb{M}_-$ is the *anti*-Hermitian subspace, so that the framework's "real" part is the part built on $i$ times a Hermitian element, where the more familiar convention takes the Hermitian part as real. The two differ only by the central factor $i$, and there is no mathematical error either way. What is unusual is that the convention is applied to the **field** rather than to the generators. Once it is, $\mathbb{M}_-$ is fixed by $\flat$ and $\mathbb{M}_+$ is not, and that is what makes $\mathbb{M}_-$ the framework's material subspace. A reader who "restores" the Hermitian convention will find the whole series inverted. Do not.
+
+**The observed and its reading.** A **material element** is an element of $\mathbb{M}_-$; it is what is observed. Its **observable** is the Hermitian representative $iA\in\mathbb{M}_+$, whose eigenvalues are the real readings. The two are one quantity in two writings, and the central $i$ is the exchange between them.
 
 ## The Twelve Products and Their Names
 
@@ -491,7 +501,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \frac{\partial^2}{\partial Q_0^2} + \Delta_Q ,
 $$
 
-the whole of it **scalar**: it multiplies by $e_0$ and acts coefficient by coefficient, $\Box\tilde{F} = \sum_\mu(\Box F_\mu)e_\mu$, and it is the norm of the gradient, $\Box = \langle\tilde{\nabla},\tilde{\nabla}\rangle_{\natural}$ (*Biquaternion Norm and Invertibility*). The operator is $\partial^2/\partial Q_0^2 + \Delta_Q$ on the whole algebra; its signature is not a property of the operator but of the **slice** it is read on, since on a named subspace some of the $Q_\mu$ are purely imaginary. On the material sector $\mathbb{M}_-$, where $Q_0 = ict$ and $Q_k = q_k$, the derivative $\partial^2/\partial Q_0^2 = -c^{-2}\partial_t^2$ and the same operator reads
+the whole of it **scalar**: it multiplies by $e_0$ and acts coefficient by coefficient, $\Box\tilde{F} = \sum_\mu(\Box F_\mu)e_\mu$, and it is the norm of the gradient, $\Box = \langle\tilde{\nabla},\tilde{\nabla}\rangle_{\natural}$ (*The Four Forms, the Four Algebraic Norms and the Change of Scalars*). The operator is $\partial^2/\partial Q_0^2 + \Delta_Q$ on the whole algebra; its signature is not a property of the operator but of the **slice** it is read on, since on a named subspace some of the $Q_\mu$ are purely imaginary. On the material sector $\mathbb{M}_-$, where $Q_0 = ict$ and $Q_k = q_k$, the derivative $\partial^2/\partial Q_0^2 = -c^{-2}\partial_t^2$ and the same operator reads
 
 $$
 \Box\big|_{\mathbb{M}_-} = \Delta - c^{-2}\partial_t^2 = \partial_{ict}^2 + \Delta ,

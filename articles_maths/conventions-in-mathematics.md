@@ -219,7 +219,7 @@ $$
 
 **The subscript of a nilpotent is always numeric**, as for the idempotents: a pair is $\tilde\nu_1, \tilde\nu_2$, a second pair in the same statement takes the next numbers, and a sign is never written as a subscript.
 
-The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Nilpotents of the General Quaternionic Algebra*, *Idempotents of the General Plain Algebra* and *Ideals and Peirce Decomposition of the General Plain Algebra*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\tilde\Upsilon_1$ and $\tilde\Upsilon_2$, exchanged by the star.
+The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, *Square Roots of One and the Idempotents of the General Plain Algebra* and *Ideals and Peirce Decomposition of the General Plain Algebra*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\tilde\Upsilon_1$ and $\tilde\Upsilon_2$, exchanged by the star.
 
 The nilpotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 

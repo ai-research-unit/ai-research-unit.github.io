@@ -304,7 +304,7 @@ ${}^{\natural}$ and whose second slot is trivial.**
 That is the precise sense in which the quaternionic product is the product of the *interval*: it is the
 unique product of the four under which the square of an element is a scalar, and the scalar it returns
 is the biquaternion norm. The interval, the mass shell, the four-velocity and the inverse are owned by
-*Biquaternion Norm and Invertibility* and are not restated here; what this article records is that the
+*The Interval as the Square and the Charge of the Material Composition* and are not restated here; what this article records is that the
 interval is read off a product rather than attached to the space, and that the product is selected by
 its slots.
 

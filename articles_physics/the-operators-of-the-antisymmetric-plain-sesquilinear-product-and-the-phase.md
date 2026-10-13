@@ -191,7 +191,7 @@ The block has a positive definite form, its scalar part before the projection, a
 $$
 H(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)=\sum_{\mu=0}^{3}P_{\mu}\overline{Q_{\mu}},
 $$
-$\mathbb{C}$-linear in the first argument and conjugate-linear in the second, of Gram matrix the identity in the basis $e_0,e_1,e_2,e_3$, and **positive definite**. It is the form of the probability band, the canonical Hermitian form of the regular module, *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*, and it is the same form as $\varphi=\mathrm{Sc}(\tilde X\tilde Y^{*})$ of *Norm and Invertibility in the General Plain Algebra*.
+$\mathbb{C}$-linear in the first argument and conjugate-linear in the second, of Gram matrix the identity in the basis $e_0,e_1,e_2,e_3$, and **positive definite**. It is the form of the probability band, the canonical Hermitian form of the regular module, *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*, and it is the same form as $\varphi=\mathrm{Sc}(\tilde X\tilde Y^{*})$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
 **Definition (the adjoint).** For a $\mathbb{C}$-linear operator $T$ the **adjoint** is defined by $H(T\tilde P,\tilde Q)=H(\tilde P,T^{\dagger}\tilde Q)$ for all $\tilde P,\tilde Q$. For a conjugate-linear operator $S$ the linear rule has no solution, and the **twisted adjoint** is used instead,
 $$

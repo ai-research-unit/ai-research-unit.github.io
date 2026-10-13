@@ -82,7 +82,7 @@ a **central** element whose coefficient is a sum of squares of moduli; it is rea
 **Consequences, and where they are owned.**
 - **No isotropic vector, no square-zero element.** $H(\tilde Q,\tilde Q)=0$ forces $\tilde Q=0$, and $\tilde Q\circledast\tilde Q=0$ forces $\tilde Q=0$; the isotropic cone of the operation is $\{0\}$.
 - **The absence of nulls is unitarity.** A form with no nonzero null vector is a form on which every nonzero state has strictly positive weight. The absence of an isotropic vector and the absence of a zero-weight state are one statement, and it is the statement that the form defines a genuine inner product: **unitarity written as an absence of nulls** rather than as a sign convention. On this form, and only on this form, a nonzero state is never annihilated.
-- **The positivity is inherited, not built.** The algebraic norm is positive because $H$ is the definite form of the algebra, of signature $(8,0)$ on $\mathbb{B}\cong\mathbb{R}^{8}$; that positivity, its cone, its signature and its restriction to the remarkable subspaces are *Mass, Rank and the Positivity of the Dagger*, *Biquaternion Norm and Invertibility* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, and this article cites them and does not re-prove them.
+- **The positivity is inherited, not built.** The algebraic norm is positive because $H$ is the definite form of the algebra, of signature $(8,0)$ on $\mathbb{B}\cong\mathbb{R}^{8}$; that positivity, its cone, its signature and its restriction to the remarkable subspaces are *Mass, Rank and the Positivity of the Dagger*, *Norm and Invertibility in the General Quaternionic Algebra* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, and this article cites them and does not re-prove them.
 
 **Remark (what the positivity is not).** The positivity is the positivity of the **algebraic norm of the form**, and the operation is conjugate-commutative and not commutative: it is not the positivity of a real-valued symmetric form, and it is not the positivity of the biquaternion norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$, which is indefinite and carries the interval. The statement $H\succ0$ is a statement about $H$ alone.
 
@@ -118,8 +118,7 @@ vector half is the argument: it is the direction the value carries, and it is th
 operation discards, so an operation that keeps only the modulus cannot recover the argument and a
 probability cannot be inverted to a phase. This is the modulus and the argument of an **amplitude**, and
 the two bands of the block own one each. It is not the polar decomposition of an element — the corpus's
-polar decomposition writes a unit as $\tilde Q=\lVert\tilde Q\rVert\tilde U$ and is owned by *Biquaternion
-Norm and Invertibility* — but the polar reading of the two halves of one value, this band's contribution
+polar decomposition writes a unit as $\tilde Q=\lVert\tilde Q\rVert\tilde U$ and is owned by *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale* — but the polar reading of the two halves of one value, this band's contribution
 to it.
 
 ### The Born Pairing

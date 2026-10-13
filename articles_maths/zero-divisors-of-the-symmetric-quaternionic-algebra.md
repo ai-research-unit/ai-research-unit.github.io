@@ -22,7 +22,7 @@ article.
 element is *Definitions for the Study of the 12 Algebraic Structures* §*The Zero Divisor and the
 Annihilator*; the zero-divisor sets of the four general products are *Zero Divisors of the General
 Plain Algebra* and *Comparison Between the Four General Products*; the square-zero elements are
-*Nilpotents of the Symmetric Quaternionic Algebra*; the isotropic cone and its two families are
+*Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*; the isotropic cone and its two families are
 *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the subspaces are
 *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*.
 
@@ -36,6 +36,8 @@ $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2$; the operation is als
 $\bullet$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the vector subspace
 $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$, and the Hermitian subspaces
 are $\mathbb{M}_+$ and $\mathbb{M}_-$.
+
+**The results.** Relative to the symmetric quaternionic product every nonzero element is a zero divisor, so the zero-divisor set is the whole punctured space $\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\}$ and the block has no regular element apart from $0$. The annihilator of a nonzero element is the orthogonal hyperplane $\tilde Q^{\perp}$ for $N$, of complex dimension three, while the annihilator of the product is $\{0\}$ because the form is non-degenerate. The block separates its elements into the isotropic family $N=0$, whose elements are square-zero, and the non-isotropic family $N\neq0$. The four general products share the proper set $\{N=0\}\setminus\{0\}$, which the block's set strictly contains, the witness being the parent's unit $e_0$.
 
 ## The General Definition
 
@@ -53,6 +55,8 @@ divisor of the block is two-sided; the words are kept nonetheless, because the c
 parent uses them.
 
 ## The Criterion
+
+**The zero-divisor set of the block is the whole punctured space, $\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\}$: every nonzero element is a zero divisor, the block has no regular element apart from $0$, and the blocked multiplication is a perfect pairing with image the central line and radical $\{0\}$.**
 
 **Theorem (everything nonzero is a zero divisor).** The zero-divisor set of the block is the whole
 punctured space,
@@ -92,6 +96,8 @@ the central line, and its left radical and right radical are both $\{0\}$.
 
 ## The Two Families
 
+**The block splits its elements into the isotropic family $\{N=0,\ \tilde Q\neq0\}$, whose elements annihilate themselves and are square-zero of index two, and the non-isotropic family $\{N\neq0\}$, whose elements are annihilated exactly by the hyperplane orthogonal to them and whose square is the nonzero central element $N(\tilde Q)e_0$.**
+
 The set is the whole punctured space, and the block classifies its elements by the two families of
 the isotropic structure.
 
@@ -104,7 +110,7 @@ the **non-isotropic family** is its complement in the set, $\{\tilde Q: N(\tilde
 | non-isotropic | $N(\tilde Q)\neq0$ | a hyperplane not through $\tilde Q$ | $\tilde Q\star\tilde Q\neq0$, central |
 
 The two families behave differently in the product: an isotropic element annihilates itself and is
-a nilpotent of index two (*Nilpotents of the Symmetric Quaternionic Algebra*), while a
+a nilpotent of index two (*Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*), while a
 non-isotropic element is annihilated by the hyperplane orthogonal to it and by nothing outside it,
 and its square is the nonzero central element $N(\tilde Q)e_0$.
 
@@ -118,6 +124,8 @@ square is a nonzero central element. The pure family is therefore not the nilpot
 block, and the identification of the two, valid in the parent, fails here.
 
 ## The Set and the Remarkable Subspaces
+
+**The zero-divisor set is of complex dimension four and real dimension eight, its isotropic part is the punctured cone of complex dimension three and real dimension six, the assignment $\tilde Q\mapsto\tilde Q^{\perp}$ maps the punctured space onto the hyperplanes with fibres the punctured complex lines, and a nonzero central element annihilates the whole vector subspace.**
 
 **Proposition (the set and its size).** The zero-divisor set
 $\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\}$ is of complex dimension four and real dimension
@@ -146,6 +154,8 @@ not merely as a subset but as its most degenerate part. The subspaces and their 
 to the Remarkable Subspaces*.
 
 ## The Comparison with the Other Products
+
+**The four general products share the proper zero-divisor set $\{N=0\}\setminus\{0\}$, which the block's set $\mathbb{B}\setminus\{0\}$ strictly contains, the witness of the strictness being the parent's unit $e_0$, which is a zero divisor of the block.**
 
 **Theorem (the four general products share a proper set).** The four general products of the space
 have one and the same zero-divisor set, the set of elements of vanishing constant term of the
@@ -219,7 +229,7 @@ and $\mathrm{AQS}$ being maximal too, and the symmetric plain product is not amo
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the zero-divisor set of the parent and its two families.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the coincidence of the four sets.
 - *Norm and Invertibility in the Symmetric Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-quaternionic-algebra.md`), for the form, its non-degeneracy and the non-isotropic class.
-- *Nilpotents of the Symmetric Quaternionic Algebra* (`articles_maths/nilpotents-of-the-symmetric-quaternionic-algebra.md`), for the isotropic family as the square-zero elements.
+- *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-algebra.md`), for the isotropic family as the square-zero elements.
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the radical of the product and the isotropic cone.
 - *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the isotropic elements of the subspaces.
 - *Annihilators of the Symmetric Quaternionic Algebra* (`articles_maths/annihilators-of-the-symmetric-quaternionic-algebra.md`), below this article in this category, the companion article, for the annihilator of an element, which is the hyperplane orthogonal to it, and the rank table

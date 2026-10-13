@@ -144,7 +144,7 @@ The sandwich of the two matrix articles is the composition of a left action with
 
 - *The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions* — the sandwich as the congruence $X\mapsto M X M^{\dagger}$, the completely positive form, and the rank-one collapse.
 - *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions* — the sandwich as $L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$ and the regular matrices.
-- *Biquaternion Norm and Invertibility* — the units, the zero divisors, the inverse $\tilde{Q}^{\natural}/N(\tilde{Q})$ and the light cone.
+- *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone* and *The Interval as the Square and the Charge of the Material Composition* — the units, the zero divisors, the inverse $\tilde{Q}^{\natural}/N(\tilde{Q})$ and the light cone.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *Ideals and Peirce Decomposition of the General Plain Algebra* — the idempotents, the minimal idempotents and the rank-one projections.
 - *Why the Material Composition Is Oriented and Cannot Measure* — the order of the material composition and the absence of a projection in $\mathbb{M}_-$.
 - *Decoherence as Idempotent Projection* — the framework's interpretation of the collapse as an idempotent.

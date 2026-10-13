@@ -28,6 +28,8 @@ $C(\tilde P)=0$ of the parent product. The article owns that reading, the operat
 characteristic polynomial, and the shape of the annihilator on the remarkable subspaces; the
 zero-divisor set and the comparison with the other eleven structures are the cited article's.
 
+**The results.** For the antisymmetric quaternionic multiplication the two annihilators of an element coincide and are the kernel of the left multiplication $L_{\tilde P}$. The operator $L_{\tilde P}$ has trace $3P_0$, determinant $0$ and characteristic polynomial $t(t-P_0)(t^{2}-2P_0t+C(\tilde P))$. Off the zero-divisor cone $C(\tilde P)=0$ of the parent product the annihilator is the line $\mathbb{C}\tilde P$, and on the cone it is the larger plane that contains the line; at $e_0$ the annihilator is the centre $\mathbb{C}e_0$.
+
 ## The Annihilator of a Product
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
@@ -52,6 +54,8 @@ twins are the two Lie and near-Lie brackets of the twelve.
 
 ## The Two Annihilators Coincide
 
+**For every $\tilde P$ the two annihilators coincide, $B_\diamond(\tilde P)=A_\diamond(\tilde P)=\ker L_{\tilde P}$.**
+
 **Proposition (the two annihilators coincide).** For every $\tilde P$,
 $$
 B_\diamond(\tilde P)=A_\diamond(\tilde P)=\ker L_{\tilde P}.
@@ -62,6 +66,8 @@ $\tilde X\diamond\tilde P=0$ exactly when $\tilde P\diamond\tilde X=0$; the two 
 therefore one set, the kernel of $L_{\tilde P}$.
 
 ## The Multiplication Operator and the Characteristic Polynomial
+
+**In the basis $e_0,e_1,e_2,e_3$ the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has trace $3P_0$, determinant $0$ and characteristic polynomial $t(t-P_0)(t^{2}-2P_0t+C(\tilde P))$.**
 
 **Proposition (the operator and its characteristic polynomial).** In the basis $e_0,e_1,e_2,e_3$
 the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has matrix
@@ -87,6 +93,8 @@ $t^{2}-2P_0t+C(\tilde P)$; the extra eigenvalue $0$ is the first column, and the
 the sum of the four eigenvalues. The determinant is the constant term, which is zero.
 
 ## The Rank and the Annihilator
+
+**The rank of $L_{\tilde P}$ is three and the annihilator the line $\mathbb{C}\tilde P$ when $C(\tilde P)\neq0$, and on the cone $C(\tilde P)=0$ the rank drops to two and the annihilator grows to a plane; the line $\mathbb{C}\tilde P$ always lies in the annihilator.**
 
 **Corollary (the rank and the annihilator).** The rank of $L_{\tilde P}$ and the annihilator of
 $\tilde P$ are
@@ -126,6 +134,8 @@ $$
 
 ## The Dichotomy by the Cone
 
+**The annihilator separates the elements by the zero-divisor cone $C(\tilde P)=0$ of the parent product: off the cone it is the line $\mathbb{C}\tilde P$, on the cone the larger plane that contains it.**
+
 The zero-divisor set of the block is the whole punctured space, so it separates nothing. The
 annihilator separates the elements by the **zero-divisor cone of the parent product**, the locus
 $C(\tilde P)=0$: off the cone the annihilator is the line $\mathbb{C}\tilde P$, on the cone it is
@@ -138,6 +148,8 @@ whereas here the generic annihilator is the line $\mathbb{C}\tilde P$ and the ju
 on the cone.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**On every remarkable subspace the annihilator is the intersection of the ambient annihilator with the subspace: at a nonzero central element it is the centre $\mathbb{C}e_0$, on the vector subspace it meets the subspace in the line $\mathbb{C}\mathbf P$, the ambient annihilator being the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$ when the pure element is isotropic and the line $\mathbb{C}\mathbf P$ alone when it is not, and every nonzero element of a Hermitian or anti-Hermitian subspace has the nonzero partner it has in the ambient block.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
 $L_{\lambda e_0}\tilde X=\lambda\mathbf X$, the scalar multiple of the projection onto the vector

@@ -429,7 +429,7 @@ because quaternion conjugation reverses products and $\overline{\tilde{Q}^{-1}} 
 
 ### The Region of Convergence
 
-Two norms describe the size of a biquaternion, and the choice between them is the whole difficulty of the convergence question. The **Euclidean norm** $\lVert\tilde{Q}\rVert = \left(\sum_\mu \lvert Q_\mu\rvert^2\right)^{1/2}$ is the norm of the metric structure of *Biquaternion Analysis*; the **multiplicative real norm** $r(\tilde{Q}) = \sqrt{\lvert N(\tilde{Q})\rvert}$ is the unique real norm that is multiplicative and normalised on the real scalars, by *Norm and Invertibility in the General Plain Algebra*. Only the second reduces the question to scalars, because only the second is multiplicative:
+Two norms describe the size of a biquaternion, and the choice between them is the whole difficulty of the convergence question. The **Euclidean norm** $\lVert\tilde{Q}\rVert = \left(\sum_\mu \lvert Q_\mu\rvert^2\right)^{1/2}$ is the norm of the metric structure of *Biquaternion Analysis*; the **multiplicative real norm** $r(\tilde{Q}) = \sqrt{\lvert N(\tilde{Q})\rvert}$ is the unique real norm that is multiplicative and normalised on the real scalars, by *Norm and Invertibility in the General Quaternionic Algebra*. Only the second reduces the question to scalars, because only the second is multiplicative:
 
 $$
 r(f_n \tilde{Q}^{-n}) = r(f_n)\,r(\tilde{Q})^{-n}.

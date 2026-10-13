@@ -38,6 +38,8 @@ $$
 
 The left-hand writing is in the sector's own parameters and is the one used for algebraic statements; the right-hand one is in the coordinates of physics. The prime marks the coefficient that carries the $i$, which in $\mathbb{M}_-$ is the **scalar** $q'_0$ — the time. The four parameters are the real and imaginary parts of the four complex coefficients of a general biquaternion, $Q_\mu = q_\mu + iq'_\mu$, read off in the pattern that defines this sector: scalar imaginary, vector real.
 
+This element is a **material element**, the object observed; the interval is its norm and a spacelike distance is that norm. Its **observable** is the Hermitian representative $i\tilde{Q}\in\mathbb{M}_+$, whose eigenvalues are the real readings.
+
 A natural basis of $\mathbb{M}_-$ is
 
 $$

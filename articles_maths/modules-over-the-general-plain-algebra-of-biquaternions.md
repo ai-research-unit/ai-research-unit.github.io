@@ -13,7 +13,7 @@ $$
 L_{\tilde Q}(\tilde R)=\tilde Q\tilde R,\qquad R_{\tilde Q}(\tilde R)=\tilde R\tilde Q .
 $$
 
-Two ownership notes fix the boundaries of the article. The norm $N(\tilde Q)=\tilde Q\tilde{Q}^{\natural}$, its vanishing, the invertibility criterion $N(\tilde Q)\neq0$, the group of units $\mathbb{B}^\times$ and the zero divisors are the content of *Norm and Invertibility in the General Plain Algebra* and are cited here rather than restated; they are used only in the one place where they bear on the module category, the degeneration of torsion. The group-theoretic side — Schur's lemma for group representations, the defining representation and the half-spin representations, the Clebsch–Gordan rule — is *Biquaternion Rotations and Lorentz Transformations*; this article is about the modules, and it does not carry the group theory.
+Two ownership notes fix the boundaries of the article. The norm $N(\tilde Q)=\tilde Q\tilde{Q}^{\natural}$, its vanishing, the invertibility criterion $N(\tilde Q)\neq0$, the group of units $\mathbb{B}^\times$ and the zero divisors are the content of *Norm and Invertibility in the General Quaternionic Algebra* and are cited here rather than restated; they are used only in the one place where they bear on the module category, the degeneration of torsion. The group-theoretic side — Schur's lemma for group representations, the defining representation and the half-spin representations, the Clebsch–Gordan rule — is *Biquaternion Rotations and Lorentz Transformations*; this article is about the modules, and it does not carry the group theory.
 
 ## The Three Regular Modules
 
@@ -271,7 +271,7 @@ Every statement that can be made about $\mathbb{B}$-modules is a statement about
 
 The naive notion of torsion does not survive the passage from a commutative domain to $\mathbb{B}$, and it is worth recording why, since the failure is a feature of the module category rather than a defect.
 
-Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors — this is the vanishing of the norm, treated in *Zero Divisors of the General Plain Algebra* and *Norm and Invertibility in the General Plain Algebra* — and for every nonzero $s\in S$ the annihilator
+Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors — this is the vanishing of the norm, treated in *Zero Divisors of the General Plain Algebra* and *Norm and Invertibility in the General Quaternionic Algebra* — and for every nonzero $s\in S$ the annihilator
 
 $$
 \operatorname{Ann}_\mathbb{B}(s)=\{b\in\mathbb{B}:bs=0\}

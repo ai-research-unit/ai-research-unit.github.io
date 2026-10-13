@@ -6,7 +6,9 @@ This article solves the square-root equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ 
 
 The equation names a product, and throughout this article the square is the one of the general quaternionic product; the plain square of the same element is a different equation, and its solution is *Square Roots of a General Element in the General Plain Algebra*. The quaternionic square is the central element $N(\tilde\Xi)e_0$ for every $\tilde\Xi$, so the equation can be solved only when the right-hand side is a central value, and this is the first statement of the article: **an element which is not a central value has no square root in this product**, and the absence is stated and not filled. For a central radicand $\tilde Q=\lambda e_0$ the equation reduces to the single complex equation $N(\tilde\Xi)=\lambda$, and the root set is a nondegenerate complex quadric, of complex dimension three when $\lambda\neq0$ and the zero-divisor cone when $\lambda=0$. Every central value has roots, and the root set of $\lambda$ is a scaled copy of the root set of $1$ or of $-1$.
 
-**Boundaries.** The plain square-root problem, its vector–scalar reduction and its two branches are *Square Roots of a General Element in the General Plain Algebra*; the three special values in the plain product are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*. The four central-value problems of the four general products side by side are *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, which owns the comparison; this article owns the block reading and the existence criterion for an arbitrary radicand. The algebraic norm is *Norm and Invertibility in the General Quaternionic Algebra*, the cone and the zero divisors are *Zero Divisors of the General Quaternionic Algebra*, and the three special values are *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra*.
+**The results.** The quaternionic square is always central, $\tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0$, so the equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ has a solution if and only if $\tilde Q$ is a central value: **an element with nonzero vector part has no square root** in this product. For a central radicand $\tilde Q=\lambda e_0$ the root set is $R(\lambda)=\{\tilde\Xi:N(\tilde\Xi)=\lambda\}$, which is a nondegenerate complex quadric of complex dimension $3$ and real dimension $6$ when $\lambda\neq0$, and the zero-divisor cone of real dimension $6$ when $\lambda=0$, and it is never empty. The sets are not new: $R(\lambda)=\alpha R(1)=(i\alpha)R(-1)$ for $\alpha^2=\lambda\neq0$, so the three central values generate every value, and a root of a nonzero value is a unit of the algebra while a nonzero root of $0$ is a zero divisor. Each section below states its result first and then proves it.
+
+**Boundaries.** The plain square-root problem, its vector–scalar reduction and its two branches are *Square Roots of a General Element in the General Plain Algebra*; the roots of $+1$ and of $-1$ in the plain product with its idempotents are *Square Roots of One and the Idempotents of the General Plain Algebra*, and the roots of $0$ with its nilpotents are *Square Roots of Zero and the Nilpotents of the General Plain Algebra*. The four central-value problems of the four general products side by side are *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, which owns the comparison; this article owns the block reading and the existence criterion for an arbitrary radicand. The algebraic norm is *Norm and Invertibility in the General Quaternionic Algebra*, the cone and the zero divisors are *Zero Divisors of the General Quaternionic Algebra*, the roots of $+1$ and of $-1$ with the idempotents of the product are *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, and the roots of $0$ with the nilpotents are *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde\Xi\star\tilde Q=\tilde\Xi^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$. An element is $\tilde\Xi=\Xi_0e_0+\mathbf\Xi$ with $\mathbf\Xi=\sum_{k=1}^{3}\Xi_ke_k$, the **algebraic norm** is $N(\tilde\Xi)=\sum_\mu \Xi_\mu^2=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$, and a **central value** is an element $\lambda e_0$ with $\lambda\in\mathbb{C}$; the scalar line $\mathbb{C}e_0$ is denoted $\mathbb{C}_{\mathbb{B}}$.
 
@@ -40,6 +42,8 @@ $$
 
 ## The Roots of a Central Value
 
+**For a central radicand $\tilde Q=\lambda e_0$ the root set is $R(\lambda)=\{\tilde\Xi:N(\tilde\Xi)=\lambda\}$: a nondegenerate complex quadric of real dimension six when $\lambda\neq0$, the zero-divisor cone of real dimension six when $\lambda=0$, and never empty.**
+
 **Theorem (the root set of a central value).** Let $\lambda\in\mathbb{C}$ and let $\tilde Q=\lambda e_0$. The root set of $\tilde Q$ is
 
 $$
@@ -50,11 +54,13 @@ $$
 - If $\lambda=0$, $R(0)$ is the zero-divisor cone, a real cone of real dimension six.
 - The set is never empty: the element $\tilde\Xi=\sqrt\lambda\,e_0$ is a root, where $\sqrt\lambda$ is either square root of $\lambda$ in $\mathbb{C}$.
 
-**Proof.** The identification with the level set is the reduction. With $\Xi_\mu=p_\mu+ip'_\mu$, the equation $N=\sum_\mu(p_\mu^2-p'^2_\mu)+2i\sum_\mu p_\mu p'_\mu=\lambda$ is a pair of real equations, the gradient of $N$ does not vanish off the origin, and the level set has real dimension $8-2=6$ in the two cases; for $\lambda=0$ it is a cone because $N$ is homogeneous. The displayed central element has $N(\sqrt\lambda\,e_0)=(\sqrt\lambda)^2=\lambda$.
+**Proof.** The identification with the level set is the reduction. With $\Xi_\mu=p_\mu+ip'_\mu$, the equation $N=\sum_\mu(p_\mu^2-(p'_\mu)^2)+2i\sum_\mu p_\mu p'_\mu=\lambda$ is a pair of real equations, the gradient of $N$ does not vanish off the origin, and the level set has real dimension $8-2=6$ in the two cases; for $\lambda=0$ it is a cone because $N$ is homogeneous. The displayed central element has $N(\sqrt\lambda\,e_0)=(\sqrt\lambda)^2=\lambda$.
 
 **Corollary (the central roots).** The root set of every central value contains the two central roots $\pm\sqrt\lambda\,e_0$, and they coincide exactly when $\lambda=0$; for $\lambda\neq0$ the two are distinct and lie in the scalar line $\mathbb{C}_{\mathbb{B}}$.
 
 ## The Scaling of the Root Set
+
+**For $\lambda\neq0$ and $\alpha^2=\lambda$ the root set of $\lambda$ is the scaled root set of $1$ and equally of $-1$, $R(\lambda)=\alpha R(1)=(i\alpha)R(-1)$.**
 
 **Theorem.** Let $\lambda\neq0$ and let $\alpha\in\mathbb{C}$ satisfy $\alpha^2=\lambda$. Then multiplication by $\alpha$ is a bijection of the roots of $1$ onto the roots of $\lambda$, and multiplication by $i\alpha$ is a bijection of the roots of $-1$ onto the roots of $\lambda$:
 
@@ -64,9 +70,11 @@ $$
 
 **Proof.** The algebraic norm is homogeneous of degree two and $\mathbb{C}$-linear in the scaling, $N(\alpha\tilde E)=\alpha^2N(\tilde E)$, so $\alpha$ carries the level set $N=1$ onto the level set $N=\alpha^2=\lambda$; the scaling is a bijection of $\mathbb{B}$ because $\alpha\neq0$. For the second display, $(i\alpha)^2=-\alpha^2=-\lambda$, so $i\alpha$ carries the level set $N=-1$ onto the level set $N=(-1)(-\lambda)=\lambda$.
 
-The root set of a general central value is therefore not a new object: it is the root set of $1$, or equivalently that of $-1$, scaled by a square root of the value. The three special values of *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra* generate every other central value, and the cone is the remaining case.
+The root set of a general central value is therefore not a new object: it is the root set of $1$, or equivalently that of $-1$, scaled by a square root of the value. The three special values of *Square Roots of One and the Idempotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* generate every other central value, and the cone is the remaining case.
 
 ## The Classification
+
+**Every element falls into exactly one row: a non-central radicand has an empty root set, a nonzero central value has the quadric $N=\lambda$ of real dimension six, and the central value $0$ has the zero-divisor cone of real dimension six.**
 
 | radicand $\tilde Q$ | condition | root set |
 |---|---|---|
@@ -78,7 +86,9 @@ The classification covers every element; the two non-empty rows differ in whethe
 
 ## The Three Central Values
 
-The values $\lambda=-1$, $0$ and $+1$ are the subject of the companion article, and they are the seeds of the classification:
+**The values $-1$, $0$ and $+1$ are the seeds of the classification: $R(-1)$ is the quadric $N=-1$, $R(+1)$ the quadric $N=1$, and $R(0)$ the zero-divisor cone, and every other central value is a scaling of the first or the third.**
+
+The values $\lambda=-1$, $0$ and $+1$ are the subject of the companion articles *Square Roots of One and the Idempotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, and they are the seeds of the classification:
 
 - $R(-1)=\{N=-1\}$, a quadric of real dimension six containing the central roots $\pm i$ and the imaginary vector roots $i\hat\mu$ over the real unit vectors $\hat\mu$;
 - $R(0)=\{N=0\}=C$, the zero-divisor cone, containing the origin, the pure isotropic elements and the complex multiples of the nontrivial plain idempotents;
@@ -95,6 +105,8 @@ By the scaling theorem, $R(\lambda)$ for a general value is the image of one of 
 - **A non-central radicand.** The element $e_1$ has no root: its square-root equation would force the central element $N(\tilde\Xi)e_0$ to equal $e_1$. The statement is the absence of §*The Reduction*, and it is the sharpest difference from the plain product, where $e_1$ has the four roots $\pm\tfrac{1}{\sqrt2}(e_0+e_1)$ and $\pm\tfrac{i}{\sqrt2}(e_0-e_1)$ (*Square Roots of a General Element in the General Plain Algebra*).
 
 ## The Roots Which Are Units, and the Roots Which Are Zero Divisors
+
+**A root of a nonzero central value has $N\neq0$ and is a unit of the plain product satisfying the two one-sided equations of $\star$, while a nonzero root of $0$ has $N=0$ and is a zero divisor with neither equation soluble.**
 
 The algebraic norm decides the nature of every root, and it decides it the same way as in the other products. A root of a non-zero central value has $N(\tilde\Xi)=\lambda\neq0$, so it is a unit of the plain product and satisfies the two one-sided equations of $\star$; a non-zero root of $0$ has $N(\tilde\Xi)=0$, so it is a zero divisor of the algebra, and neither one-sided equation is soluble for it (*Norm and Invertibility in the General Quaternionic Algebra*). The statement is the block reading of the general theorem of *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Roots Are Units, or Zero Divisors*. In particular the roots of $-1$ and of $+1$ are never zero divisors, and the roots of $0$ other than the origin are always zero divisors; the origin is neither.
 
@@ -121,7 +133,8 @@ The square-root equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ of the general quate
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for the square roots of an element in an algebra with a multiplicative quadratic form.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the squaring map of a non-associative algebra and its image.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the plain problem, its vector–scalar reduction and its two branches.
-- *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-quaternionic-algebra.md`), for the three special values and the families inside them.
+- *Square Roots of One and the Idempotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.md`), for the roots of $+1$ and of $-1$, the idempotents and the displaced plain idempotents.
+- *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.md`), for the roots of $0$ and the nilpotent cone.
 - *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the four root problems side by side.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the algebraic norm, the one-sided equations and the set $\mathbb{B}^{\times}$.
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), for the cone and its two families.

@@ -26,7 +26,8 @@ The article owns the operation as a multiplication: the rule, the class, the law
 products of the basis, the image, the absence of a unit and the reconstruction of the plain product
 from its two halves. The element theory of the block is the companion articles of the same section,
 all below this article in this category — *Zero Divisors of the Antisymmetric Plain Algebra*,
-*Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra* and *The
+*Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra*, *Square Roots of Zero
+and the Nilpotents of the Antisymmetric Plain Algebra* and *The
 Specificities of the Antisymmetric Plain Algebra*; the Lie theory is
 *The Lie Algebra of the Antisymmetric Plain Algebra*, *The Killing Form of the Antisymmetric Plain
 Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, and
@@ -232,4 +233,4 @@ and is the neighbouring block.
 - *Introduction to the Symmetric Plain Algebra of Quaternions*, for the symmetric half of the same product.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the structure of the Lie algebra.
 - *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this category, for the form and the operators.
-- *Zero Divisors of the Antisymmetric Plain Algebra*, *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra* and *The Specificities of the Antisymmetric Plain Algebra*, all below this article in this category, for the element theory.
+- *Zero Divisors of the Antisymmetric Plain Algebra*, *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra*, *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* and *The Specificities of the Antisymmetric Plain Algebra*, all below this article in this category, for the element theory.

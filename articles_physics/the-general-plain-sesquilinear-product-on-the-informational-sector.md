@@ -40,7 +40,7 @@ half. The positivity, the cone and the signature are *Mass, Rank and the Positiv
 of the product are *Idempotents of the General Plain Sesqualgebra*; the adjoint and the operators are *The
 Operators of the Plain Sesquilinear Product and the Born Pairing* and *Observables, Gauge Generators and
 the Chirality of the Internal Action*; the material sector itself and the interval are *The Anti-Hermitian
-Subspace $\mathbb{M}_-$ as the Material Sector* and *Biquaternion Norm and Invertibility*. None of those
+Subspace $\mathbb{M}_-$ as the Material Sector* and *The Interval as the Square and the Charge of the Material Composition*. None of those
 is reproved here.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis

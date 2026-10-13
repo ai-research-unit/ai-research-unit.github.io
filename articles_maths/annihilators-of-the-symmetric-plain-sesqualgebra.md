@@ -26,7 +26,11 @@ zero-divisor set is the whole punctured space and the annihilator of every nonze
 reading, the operator with its rank, and the shape of the annihilator on the remarkable subspaces;
 the zero-divisor set is the cited article's.
 
+**The results.** The block is conjugate-commutative and central valued, so the left and the right annihilators of every element coincide, $A_\star(\tilde P) = B_\star(\tilde P) = \ker L_{\tilde P}$. For every nonzero $\tilde P$ this common annihilator is the Hermitian orthogonal hyperplane $\tilde P^{\perp} = \{\tilde X : H(\tilde P,\tilde X) = 0\}$, of complex dimension three and real dimension six, and the multiplication operator $L_{\tilde P}$ has image the central line $\mathbb{C}e_0$ and rank one. The element lies in its own annihilator exactly on the isotropic locus, which for the definite form $H$ is the origin alone, and the annihilator of the product is $\{0\}$.
+
 ## The Annihilator of a Product
+
+**The annihilator of an element is the set of partners it kills, the left and the right annihilator being the kernels of the left and the right multiplication, and here the two multiplications coincide, $R_{\tilde P} = L_{\tilde P}$, with image the central line and kernel a complex subspace.**
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
@@ -50,6 +54,8 @@ annihilators are *Annihilators of the Symmetric Quaternionic Algebra*.
 
 ## The Two Annihilators Coincide
 
+**The block is conjugate-commutative, so the two annihilators of every element are one set, $B_\star(\tilde P) = A_\star(\tilde P) = \ker L_{\tilde P}$.**
+
 **Proposition (the two annihilators coincide).** For every $\tilde P$,
 $$
 B_\star(\tilde P)=A_\star(\tilde P)=\ker L_{\tilde P}.
@@ -61,6 +67,8 @@ conjugate is, so the two products vanish together and the two annihilators are o
 of the one operator of the block.
 
 ## The Annihilator of an Element
+
+**For every nonzero $\tilde P$ the common annihilator is the Hermitian orthogonal hyperplane $\tilde P^{\perp}$, of complex dimension three, while at $\tilde P = 0$ it is all of $\mathbb{B}$ and the annihilator of the product is $\{0\}$.**
 
 **Theorem (the annihilator is the orthogonal hyperplane).** For $\tilde P\neq0$,
 $$
@@ -76,7 +84,7 @@ is zero.
 
 *Proof.* The annihilator is the kernel of the nonzero functional
 $\tilde X\mapsto H(\tilde P,\tilde X)$, a hyperplane. The element lies in its own annihilator
-exactly when $H(\tilde P,\tilde P)=N(\tilde P)=0$, the isotropic locus. The annihilator of the
+exactly when $H(\tilde P,\tilde P)=0$, the isotropic locus. The annihilator of the
 product is the radical of the form, which is $\{0\}$ because $H$ is non-degenerate.
 
 **Corollary (the operator and its rank).** The operator $L_{\tilde P}$ has image the central line
@@ -84,6 +92,8 @@ $\mathbb{C}e_0$ for every $\tilde P\neq0$, and kernel $\tilde P^{\perp}$, of com
 three. At $\tilde P=0$ the operator is zero and the kernel is the whole space.
 
 ## The Dichotomy
+
+**The zero-divisor set of the block separates nothing, being the whole punctured space, while the annihilator separates everything: it is the hyperplane $\tilde P^{\perp}$ for every nonzero element, and the isotropic locus is the set where the element lies in its own annihilator.**
 
 The zero-divisor set of the block is the whole punctured space, so it separates nothing. The
 annihilator separates everything: it is the Hermitian orthogonal $\tilde P^{\perp}$, a hyperplane,
@@ -94,6 +104,8 @@ $H=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ in the other. The isotrop
 where the element lies in its own annihilator, and the block has no other separation.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**On the remarkable subspaces the annihilator is read as follows: a nonzero central element has the vector subspace as its annihilator, a nonzero pure element has a hyperplane as its annihilator, and on the Hermitian and anti-Hermitian subspaces the annihilator of a nonzero element meets the subspace in a hyperplane of it.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
 $H(\lambda e_0,\tilde X)=\lambda\overline{X_0}$, so its annihilator is $\{X_0=0\}$, the vector
@@ -132,7 +144,7 @@ quaternionic algebra, and the two differ only in the form.
 | $A_\star(\tilde P),B_\star(\tilde P)$ | the left and the right annihilator, equal because the block is conjugate-commutative |
 | $L_{\tilde P}$ | the left multiplication operator, $L_{\tilde P}\tilde X=H(\tilde P,\tilde X)e_0$, of rank one for $\tilde P\neq0$ |
 | $\tilde P^{\perp}=\{\tilde X:H(\tilde P,\tilde X)=0\}$ | the annihilator of a nonzero element, a complex hyperplane of dimension three |
-| $H(\tilde P,\tilde P)=N(\tilde P)$ | the norm, vanishing exactly when the element lies in its own annihilator |
+| $H(\tilde P,\tilde P)$ | the norm, vanishing exactly when the element lies in its own annihilator |
 
 ## Further Reading
 

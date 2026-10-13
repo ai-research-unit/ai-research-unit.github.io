@@ -322,10 +322,9 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Norm and Invertibility in the Symmetric Plain Sesqualgebra](../articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.html)
 - [Zero Divisors of the Symmetric Plain Sesqualgebra](../articles_maths/zero-divisors-of-the-symmetric-plain-sesqualgebra.html)
 - [Annihilators of the Symmetric Plain Sesqualgebra](../articles_maths/annihilators-of-the-symmetric-plain-sesqualgebra.html)
-- [Square Roots of Minus One, Zero and Plus One in the Symmetric Plain Sesqualgebra](../articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-symmetric-plain-sesqualgebra.html)
+- [Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.html)
+- [Square Roots of Zero and the Nilpotents of the Symmetric Plain Sesqualgebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-plain-sesqualgebra.html)
 - [Square Roots of a General Element in the Symmetric Plain Sesqualgebra](../articles_maths/square-roots-of-a-general-element-in-the-symmetric-plain-sesqualgebra.html)
-- [Idempotents of the Symmetric Plain Sesqualgebra](../articles_maths/idempotents-of-the-symmetric-plain-sesqualgebra.html)
-- [Nilpotents of the Symmetric Plain Sesqualgebra](../articles_maths/nilpotents-of-the-symmetric-plain-sesqualgebra.html)
 
 ###### Specific Theory
 

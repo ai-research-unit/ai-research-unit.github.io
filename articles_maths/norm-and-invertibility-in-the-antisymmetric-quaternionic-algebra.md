@@ -19,6 +19,8 @@ The invertibility is a second and independent absence. The block has **no left u
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$; an element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and $\tilde P^{\natural}\tilde Q$ is the general quaternionic bilinear product. The product of the block is $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$, and unqualified, *unit* and *inverse* mean the unit and the inverse of $\diamond$.
 
+**The results.** The antisymmetric quaternionic multiplication has no left unit, no right unit and no two-sided unit, hence no inverse and an empty group of units, and the inverse equation $\tilde X\diamond\tilde Y=e_0$ has no solution because every value of the block is a pure vector. Its scalar part vanishes identically, so its algebraic norm is the zero function and the block carries no algebraic norm rather than a zero one. Its square vanishes identically, $\tilde X\diamond\tilde X=0$, and its conjugated square is the pure vector $\tilde X\diamond\tilde X^{\natural}=-2X_0\mathbf X$, so neither canonical quadratic is central-valued. The invertibility criterion $N\neq0$ of the parent quaternionic product is not transferred.
+
 ## The Relative Definitions
 
 The word *unit* and the word *inverse* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*.
@@ -31,6 +33,8 @@ Throughout this article the product is the antisymmetric quaternionic multiplica
 
 ## The Absence of a Unit
 
+**The operation $\diamond$ has no unit on either side: there is no left unit, no right unit and no two-sided unit.**
+
 **Theorem (no unit).** The operation $\diamond$ has no left unit and no right unit; there is no $\tilde E$ with $\tilde E\diamond\tilde X=\tilde X$ for every $\tilde X$, and none with $\tilde X\diamond\tilde E=\tilde X$ for every $\tilde X$. Hence there is no two-sided unit.
 
 *Proof.* A left unit $\tilde E$ gives at $\tilde X=e_0$ the value $\tilde E\diamond e_0=-\mathbf{E}$, which would have to equal $e_0$; a right unit gives at $\tilde X=e_0$ the value $e_0\diamond\tilde E=\mathbf{E}$, which would have to equal $e_0$; and neither $-\mathbf{E}$ nor $\mathbf{E}$ is central for a nonzero value of $\mathbf{E}$, while $\mathbf{E}=0$ gives the value $0$.
@@ -38,6 +42,8 @@ Throughout this article the product is the antisymmetric quaternionic multiplica
 The absence is structural: the value of the block is a pure vector for every pair of arguments, and the equations that would name a unit require the central element $e_0$ on one side. The block has, however, a one-sided identity on its own image: the element $e_0$ satisfies $e_0\diamond\tilde X=\mathbf{X}$ and $\tilde X\diamond e_0=-\mathbf{X}$, the two one-sided actions on the vector part; the operation itself remains without a two-sided unit.
 
 ## The Absence of an Inverse
+
+**No element of $\mathbb{B}$ is invertible of the block and the group of units is empty; the inverse equation $\tilde X\diamond\tilde Y=e_0$ has no solution.**
 
 **Corollary (no inverse, no group of units).** No element of $\mathbb{B}$ is invertible of the block, and the group of units of $\diamond$ is empty.
 
@@ -52,6 +58,8 @@ $$
 has no solution in $\mathbb{B}$, because the left side has zero scalar part for every pair $\tilde X,\tilde Y$ and the right side has scalar part one. The block cannot produce a central value at all, so the equation that defines an inverse is unsolvable even before the two-sided character of the unit is required.
 
 ## The Algebraic Norm of the Block
+
+**The scalar part of the block vanishes identically, so the algebraic norm of the operation is the zero function and the block carries no algebraic norm rather than a zero one; its square vanishes identically and its conjugated square is the pure vector $\tilde X\diamond\tilde X^{\natural}=-2X_0\mathbf X$.**
 
 **Definition (the algebraic norm of the operation).** Let $f$ be an operation on $\mathbb{B}$ with scalar-part form $\varphi(\tilde P,\tilde Q)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$. The **algebraic norm of $f$** is the diagonal of that form,
 
@@ -82,6 +90,8 @@ $$
 The square is the zero map, and the conjugated square is central exactly on the vector subspace and on the centre, not everywhere; neither takes its values in the centre at every element, so no central-valued quadratic map is built from the product. The parent product $\tilde P^{\natural}\tilde Q$ removes its scalar part in the block, and with the scalar part removed from a square the central quadratic form is gone.
 
 ## The Invertibility Criterion Is Not Transferred
+
+**The algebraic norm $N$ of the parent quaternionic product is a different form and does not decide anything for the block: no element is invertible and the group of units is empty, so no invertibility criterion is transferred.**
 
 **Remark (the criterion of the parent is not read here).** The general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ is left-unital with left unit $e_0$, and its invertibility is decided by the non-vanishing of its algebraic norm $N$, the diagonal of $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf{P},\mathbf{Q})$ (*Norm and Invertibility in the General Quaternionic Algebra*). That form is a different algebraic norm, it is not the algebraic norm of the block, and it is not read here. The block has no unit against which to invert and no algebraic norm to decide anything: no element is invertible, and the empty group of units is the sharp form of the statement.
 

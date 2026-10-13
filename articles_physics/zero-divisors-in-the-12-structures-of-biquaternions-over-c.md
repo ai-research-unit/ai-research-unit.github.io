@@ -59,7 +59,7 @@ and every nonzero element of that cone annihilates its own conjugate,
 $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0=0$. The criterion is exact. A nonzero $\tilde Q$ is invertible
 if and only if $N(\tilde Q)\neq0$, and the inverse is then the two-sided plain inverse
 $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$; on the cone the inverse does not exist. This is the
-plain-row criterion of *Biquaternion Norm and Invertibility*, and it is the one criterion of the four
+plain-row criterion of *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone*, and it is the one criterion of the four
 general products: each of them is the plain product read in a different slot, so each has the same
 invertibility criterion and the same zero-divisor set.
 
@@ -160,7 +160,7 @@ $L_{\tilde P}:\tilde X\mapsto\tilde P\tilde X$ is invertible, with the two-sided
 $\tilde P^{\natural}/N(\tilde P)$; on the cone the map drops rank and destroys its argument. The physical
 statement is that the composition of operations degenerates exactly on the light cone, so the cone is at
 once the locus of lightlike propagation and the boundary between the reversible and the irreversible
-processes. *Biquaternion Norm and Invertibility* and *Zero Divisors as a Physical Locus in
+processes. *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone* and *Zero Divisors as a Physical Locus in
 Biquaternionic Form* own the reading.
 
 The units are the elements off the cone, and they form the group $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$ with $\pi_1\cong\mathbb{Z}$ (*The Biquaternion Unit Group as a Topological Group*); the cone is the complement of that group, so the reversible operations are exactly the off-cone ones and the light cone is the wall of the reversible region.
@@ -360,7 +360,7 @@ says so.
 | claim | source | status |
 |---|---|---|
 | the zero-divisor set of the four general products is the punctured cone | mathematics companion, theorem; recomputed on 25 random cone points and on the witnesses $e_0+ie_1$, $e_1+ie_2$ | verified |
-| the norm criterion is $N(\tilde Q)=0$, with inverse $\tilde Q^{\natural}/N(\tilde Q)$ | *Biquaternion Norm and Invertibility* | cited |
+| the norm criterion is $N(\tilde Q)=0$, with inverse $\tilde Q^{\natural}/N(\tilde Q)$ | *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone* | cited |
 | a pure cone element has $\tilde Q^{2}=0$ and a non-pure one gives the idempotent $\tilde Q/(2Q_0)$ | mathematics companion; recomputed | verified |
 | $\mathrm{SPA}$ and $\mathrm{SQS}$ have the enlarged set $(\{Q_0=0\}\cup\mathcal{C})\setminus\{0\}$ | mathematics companion; witness $e_1\bullet e_2=0$ with $N(e_1)=1$ recomputed | verified |
 | the six derived structures have the whole punctured space | mathematics companion; random annihilators found for $\mathrm{SQA}$ and $\mathrm{SPS}$, alternating squares vanish | verified |
@@ -368,7 +368,7 @@ says so.
 | the material cone is the light cone $|\mathbf x|=c|t|$ | *The Light Cone as the Biquaternion Zero-Divisor Cone* | cited |
 | the rank drop of the sesquilinear square is the mass label | *Mass, Rank and the Positivity of the Dagger* | cited |
 | the cone is the information barrier, the home of the erasure's target and the rank-one mass boundary | *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*; *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*; *Mass, Rank and the Positivity of the Dagger* | interpretation |
-| the complement of the cone is the invertible region; a spacelike element is a unit | *Biquaternion Norm and Invertibility*; *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum*; recomputed that a random spacelike element has $N>0$ and an inverse | verified |
+| the complement of the cone is the invertible region; a spacelike element is a unit | *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone*; *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum*; recomputed that a random spacelike element has $N>0$ and an inverse | verified |
 | the horizon is a null surface of the same cone | *Black Hole Thermodynamics in Biquaternionic Form* | cited |
 | the cone is pointwise; a curved background replaces it by a field of local cones | *Curved Spacetime and the Biquaternion Framework* | cited |
 | the null cone is a cone over its directions; the projectivisation is the celestial sphere, and the complex cone's is the Segre quadric | *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase* | cited |
@@ -460,16 +460,15 @@ attractor**: a unit and a central phase preserve it, so an invertible element ne
 under the flow, and the locus bounds where the algebra is a division algebra, where the semiclassical
 approximation holds and where the non-relativistic description is self-consistent — and it does not bound
 propagation. The algebra's Hermitian forms carry a second invariant, and it should be named without being confused
-with the cone. *Inertia and the Witt Invariant: What a Signature Allows a Spectrum to Carry* classifies those
-forms by the inertia $(p,q,r)$ of positive, negative and null directions, fixed in every basis by Sylvester's
-law, and reads the signature $p-q$ as a **capacity**: the net number of positive modes a form can bind, a
-bound on the net state content of a spectrum. The unit form is the algebra's Hilbert form, and its indefinite
-companion is the Krein form, whose cone is the Krein cone. That taxonomy belongs to the *Hermitian* forms and
-its further reading as a conserved net index is, in the article's own words, labelled speculation; the
-zero-divisor cone of this article is the isotropic cone of the *bilinear* biquaternion norm, and the two are
-companion quadratic structures of one complex structure rather than one object.
+with the cone. *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian
+Adjoint* classifies those forms by the inertia $(p,q,r)$ of positive, negative and null directions, fixed in
+every basis by Sylvester's law, with the signature $p-q$ the invariant of a non-degenerate form. The unit form
+is the algebra's Hilbert form, and its indefinite companion is the Krein form, whose cone is the Krein cone.
+That taxonomy belongs to the *Hermitian* forms; the zero-divisor cone of this article is the isotropic cone of
+the *bilinear* biquaternion norm, and the two are companion quadratic structures of one complex structure
+rather than one object.
 
-**The complement is the invertible region.** The theorem of *Biquaternion Norm and Invertibility* is an
+**The complement is the invertible region.** The theorem of *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone* is an
 equivalence: $\tilde Q$ is invertible if and only if $N(\tilde Q)\neq0$. On the material sector this
 partitions the four-vectors exactly as physics does. The **null** four-vectors are the zero divisors, and
 the **timelike** and **spacelike** ones are units. The partition has a consequence the word "zero divisor"
@@ -700,7 +699,7 @@ edge of the state space, the critical set of the square and the complement of th
 ## Further Reading
 
 - The mathematics companion: *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the theorem on the twelve sets, the two families and the twelve block criteria.
-- The cone in the algebra: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *Biquaternion Norm and Invertibility*.
+- The cone in the algebra: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone*.
 - The boundary of a description: *The Klein Paradox in Biquaternionic Form*, for the central potential shift, the mass gap and the exchange of the two mass-shell roots past it.
 - The obstruction that is topological rather than algebraic: *The Magnetic Monopole in Biquaternionic Form*, for the patchwise potential and the Dirac string, the winding as the magnetic charge, the sector split of the electric and magnetic fields, and the quantisation condition that imports $\hbar$.
 - The cone as a geometric boundary: *Velocity Space as Hyperbolic Geometry in Biquaternionic Form*, for the light cone as the ideal boundary of hyperbolic velocity space and the ideal points as the non-invertible lightlike elements.
@@ -709,8 +708,8 @@ edge of the state space, the critical set of the square and the complement of th
 - The state and the rank drop: *Mass, Rank and the Positivity of the Dagger*; *The States the Indefinite Metric Cannot Normalise*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
 - The metric on the cone: *The Fubini–Study Geometry and the Biquaternion Norm*, for the Fubini–Study metric as the second variation of the biquaternion norm on the null boundary, and the limit that the interior metric is the Bures metric, which the algebra does not supply.
 - The information and thermodynamics of the cone: *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*; *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*; *Quantum Channels and the Reversible/Irreversible Dichotomy*; *Decoherence as Idempotent Projection*.
-- Where the cone sits: *Zero Divisors as a Physical Locus in Biquaternionic Form*, for the momentum-space, configuration-space and state-space images; *Inertia and the Witt Invariant: What a Signature Allows a Spectrum to Carry*, for the inertia of the Hermitian forms and the signature as a capacity; *The Symplectic Form and the Biquaternion Norm Cone*, for the cone as the isotropy of the holomorphic norm and the characteristic cone of the d'Alembertian, and for the cone as the degenerate zero-level coadjoint orbit whose complex structure is the central $i$.
-- The complement, the horizon and the destroyed description: *Biquaternion Norm and Invertibility*; *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum*; *Black Hole Thermodynamics in Biquaternionic Form*; *Confinement and the Loss of Partonic Information in Biquaternionic Form*; *Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form*.
+- Where the cone sits: *Zero Divisors as a Physical Locus in Biquaternionic Form*, for the momentum-space, configuration-space and state-space images; *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*, for the inertia of the Hermitian forms; *The Symplectic Form and the Biquaternion Norm Cone*, for the cone as the isotropy of the holomorphic norm and the characteristic cone of the d'Alembertian, and for the cone as the degenerate zero-level coadjoint orbit whose complex structure is the central $i$.
+- The complement, the horizon and the destroyed description: *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone*; *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum*; *Black Hole Thermodynamics in Biquaternionic Form*; *Confinement and the Loss of Partonic Information in Biquaternionic Form*; *Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form*.
 - The pointwise cone on a curved background: *Curved Spacetime and the Biquaternion Framework*, for the flat, pointwise character of the norm, the rotor action and the light cone, and the field of local cones a curved metric puts in place of the single global one.
 - The cone over its directions: *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*, for the projectivisation of the null cone as the celestial sphere, the transitive Lorentz action, and the Segre quadric of the complexified cone with its two chiral rulings.
 - The operators and the units: *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*; *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*.

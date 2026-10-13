@@ -5,10 +5,13 @@
 This article studies the zero divisors of the biquaternion algebra $\mathbb{B}$. It follows *Norm
 and Invertibility in the General Plain Algebra*, which established the criterion for invertibility
 and the three-way classification of the elements of $\mathbb{B}$, and it opens the element theory
-of the block: the two families it separates are developed in *Idempotents of the General Plain
-Algebra* and *Nilpotents of the General Plain Algebra*, and its vocabulary of pure and non-pure is
-used throughout. The goal here is to characterize the zero divisors **of the general plain bilinear
-product**, to split them into two families, and to describe their structure.
+of the block: the two families it separates are developed in *Square Roots of One and the
+Idempotents of the General Plain Algebra* and *Square Roots of Zero and the Nilpotents of the
+General Plain Algebra*, and its vocabulary of pure and non-pure is used throughout. The goal here
+is to characterize the zero divisors **of the general plain bilinear product**, to split them into
+two families, and to describe their structure.
+
+**The results.** A nonzero biquaternion is a zero divisor of the plain product exactly when its central square vanishes, $\tilde{Q}\tilde{Q}^{\natural} = 0$; the elements therefore fall into the three classes invertible, zero and zero divisor. The zero divisors split into two disjoint families: the **pure** ones, exactly the nonzero nilpotents with $\tilde{Q}^2 = 0$ and $Q_1^2 + Q_2^2 + Q_3^2 = 0$, forming a cone of real dimension $4$; and the **non-pure** ones, exactly the complex multiples of the nontrivial idempotents, with $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ and $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$, forming the rest of the cone. The zero-divisor set is a complex cone of complex dimension $3$ and real dimension $6$.
 
 A divisor is relative to a product. The definition is stated once for a general product in
 *Definitions for the Study of the 12 Algebraic Structures* and read on the products of the space;
@@ -21,8 +24,8 @@ The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, its four 
 its remarkable subspaces are assumed from *Biquaternions as a Vector Space over $\mathbb{C}$* and
 *Introduction to the Remarkable Subspaces*, and the invertibility criterion from *Norm and
 Invertibility in the General Plain Algebra*. The idempotents that the non-pure family produces are
-*Idempotents of the General Plain Algebra*, and the nilpotents of the pure family are *Nilpotents
-of the General Plain Algebra*.
+*Square Roots of One and the Idempotents of the General Plain Algebra*, and the nilpotents of the
+pure family are *Square Roots of Zero and the Nilpotents of the General Plain Algebra*.
 
 Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar
 imaginary is written $i$, so that it does not collide with the quaternion units. A general
@@ -75,6 +78,8 @@ product.
 
 ## The Criterion
 
+**The criterion is the vanishing of the central square: a nonzero biquaternion $\tilde{Q}$ is a zero divisor of the plain product if and only if $\tilde{Q}\tilde{Q}^{\natural} = 0$.**
+
 The criterion is a statement of the plain product, and it is labelled as such. The criterion for
 the other three general products, and the reason the three have no criterion of the ring-theoretic
 form, are in *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
@@ -105,6 +110,8 @@ is why the criterion is a plain-product criterion and not a general one.
 
 ## The Three-Way Classification
 
+**Every element of the plain algebra is exactly one of three: invertible, the zero element, or a zero divisor.**
+
 Combining the criterion for invertibility from the preceding article with the criterion for zero
 divisors, the elements of $\mathbb{B}$ are partitioned into three classes: those invertible in the
 plain product, the zero element, and the plain-product zero divisors.
@@ -121,6 +128,8 @@ in the plain product, and it does not describe them under the other products.
 
 ## The Algebra Is Not a Division Algebra
 
+**The plain algebra is not a division algebra: it has zero divisors.**
+
 By definition, a **division algebra** is an algebra in which every nonzero element is invertible.
 For the finite-dimensional algebra $\mathbb{B}$, this is equivalent to containing no zero divisors:
 if every nonzero element is invertible, then no nonzero element can annihilate another; and
@@ -132,6 +141,8 @@ This is in contrast to the Frobenius theorem, which states that the only finite-
 associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$.
 
 ## The Two Families of Zero Divisors
+
+**The zero divisors split into two disjoint families: the pure ones ($Q_0 = 0$), which are the nilpotents, and the non-pure ones ($Q_0 \neq 0$), which are the complex multiples of the idempotents.**
 
 The zero divisors split into two families according to the value of the scalar part $Q_0$. A
 biquaternion is **pure** when $Q_0 = 0$,
@@ -153,6 +164,8 @@ nilpotent in the pure case, a complex multiple of an idempotent in the non-pure 
 sections below compute.
 
 ## Pure Zero Divisors
+
+**A nonzero pure biquaternion is a zero divisor exactly when $Q_1^2 + Q_2^2 + Q_3^2 = 0$, and then it is a nilpotent with $\tilde{Q}^2 = 0$.**
 
 ### The Square of a Pure Biquaternion
 
@@ -254,6 +267,8 @@ its origin turns on (*A Brief History of Biquaternions in Physics*).
 
 ## Non-Pure Zero Divisors
 
+**A zero divisor with nonzero scalar part satisfies $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$ and $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$, and it is a complex multiple of the nontrivial idempotent $\tilde\Pi = \tilde{Q}/(2 Q_0)$.**
+
 ### The Square of a Non-Pure Biquaternion
 
 Let $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 \in \mathbb{C}$, $Q_0 \neq 0$, and
@@ -306,7 +321,27 @@ $$
 so $\tilde\Pi$ is an **idempotent** and $\tilde{Q}$ is recovered from it by
 $\tilde{Q} = 2 Q_0 \tilde\Pi$: every non-pure zero divisor is a complex multiple of an idempotent.
 The idempotents themselves — their classification and the dimension of the set they form — are the
-subject of *Idempotents of the General Plain Algebra*.
+subject of *Square Roots of One and the Idempotents of the General Plain Algebra*.
+
+**A non-pure zero divisor is a complex scalar times a product of two nilpotents.** The idempotent
+$\tilde\Pi = \tilde{Q}/(2Q_0)$ attached to a non-pure zero divisor is nontrivial, and every
+nontrivial idempotent of $\mathbb{B}$ is a product of two nilpotents (*Ideals and Peirce
+Decomposition of the General Plain Algebra*, §*Systems of Matrix Units*). Its Peirce decomposition
+supplies two mixed units $u \in \tilde\Pi\mathbb{B}(e_0-\tilde\Pi)$ and
+$w \in (e_0-\tilde\Pi)\mathbb{B}\tilde\Pi$, normalised so that $uw = \tilde\Pi$; both are
+square-zero, $u^2 = w^2 = 0$, hence nilpotent. So
+
+$$
+\tilde{Q} = 2 Q_0\, u w, \qquad u^2 = w^2 = 0 .
+$$
+
+For the standard idempotents the factorisation is the multiplication table of the Peirce
+decomposition, $\tilde\Pi_1 = \tilde\Upsilon_1\tilde\Upsilon_2$ and
+$\tilde\Pi_2 = \tilde\Upsilon_2\tilde\Upsilon_1$ with $\tilde\Upsilon_1^2 = \tilde\Upsilon_2^2 = 0$,
+so the corresponding non-pure zero divisors are $2 Q_0 \tilde\Upsilon_1\tilde\Upsilon_2$ and
+$2 Q_0 \tilde\Upsilon_2\tilde\Upsilon_1$. The trivial idempotent $e_0$ is not a product of two
+nilpotents, since a product equal to $e_0$ would make a factor a unit; the trivial idempotent $0$
+is one, $0 = 0 \cdot 0$.
 
 ### Properties
 
@@ -319,6 +354,8 @@ $$
 $$
 
 ## Structure of the Zero Divisors
+
+**The two families are disjoint, they are separated by the vanishing of the scalar part, and their union is the whole zero-divisor set.**
 
 The two cases are distinct in their structure.
 
@@ -339,6 +376,8 @@ $\mathcal{Z}$, has complex dimension $3$ and real dimension $6$.
 
 ## The Zero Divisor Set
 
+**The zero-divisor set is the punctured complex cone $\mathcal{Z} = \{\tilde{Q} \neq 0 : \tilde{Q}\tilde{Q}^{\natural} = 0\}$, of complex dimension $3$ and real dimension $6$, the complement of the units among the nonzero elements.**
+
 The zero divisor set $\mathcal{Z} \subset \mathbb{B}$ is
 
 $$
@@ -355,6 +394,8 @@ complex hypersurface of $\mathbb{C}^4$, so $\mathcal{Z}$ has complex dimension $
 dimension $6$.
 
 ## The Zero Divisors and the Remarkable Subspaces
+
+**The centre, the quaternion subspace and the anti-quaternion subspace contain no zero divisor; the vector subspace contains the nilpotent cone; the two Hermitian subspaces contain a null cone; and a generic zero divisor lies in none of the remarkable subspaces.**
 
 A zero divisor is an element on which $\tilde{Q}\tilde{Q}^{\natural}$ vanishes, so which subspaces
 contain zero divisors is the question of where that polynomial vanishes. Of the remarkable
@@ -382,8 +423,9 @@ $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B
 $\mathrm{Vect}(\mathbb{B})$ contains the nilpotent cone, and $\mathbb{M}_+$ and $\mathbb{M}_-$
 contain a null cone; a generic zero divisor lies in none of them.
 
-The non-pure family is read on the idempotents in *Idempotents of the General Plain Algebra*, and
-the pure family is *Nilpotents of the General Plain Algebra*.
+The non-pure family is read on the idempotents in *Square Roots of One and the Idempotents of the
+General Plain Algebra*, and the pure family is *Square Roots of Zero and the Nilpotents of the
+General Plain Algebra*.
 
 ## Summary of Notation
 
@@ -404,8 +446,8 @@ the pure family is *Nilpotents of the General Plain Algebra*.
 ## Further Reading
 
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the product-relative definition of the zero divisor and the dictionary of the classes against the four general products.
-- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`) and *Nilpotents of the General Plain Algebra* (`articles_maths/nilpotents-of-the-general-plain-algebra.md`), for the two families of the zero-divisor set, the non-pure and the pure.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`) and *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the same set read against the four general products and the annihilators.
+- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`) and *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md`), for the two families of the zero-divisor set, the non-pure and the pure, and for the Peirce factorisation $\tilde{Q} = 2 Q_0\,uw$ of the non-pure family.
+- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the same set read against the four general products and the annihilators.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.
 - William Rowan Hamilton, "On the Geometrical Interpretation of some Results obtained by calculation with Biquaternions," *Proceedings of the Royal Irish Academy* **5** (1853) 388–390, for the bivectors, the null-square bivectors $i + hj$ and $j + hk$, and the simplification $(1 + j + hk)^a = 1 + a(j + hk)$.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the classification of the zero divisors.

@@ -28,7 +28,11 @@ the two annihilators of an element are two distinct planes. The article owns tha
 operator with its rank, and the shape of the annihilator on the remarkable subspaces; the
 zero-divisor set and its coincidence with the other three general products are the cited article's.
 
+**The results.** The annihilator of an element is the set of partners that it kills, the left and the right annihilator being the kernels of the two one-sided multiplications. For the general quaternionic sesquimultiplication $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ both annihilators are $\{0\}$ off the cone and a complex plane on the cone $C(\tilde P)=0$; the left annihilator is the star of the plain annihilator of $\tilde P^{\natural}$, and the operator is conjugate-linear, of complex rank four off the cone and two on it. The block carries both involution signs, so the two planes are **distinct**. Each section below states its result first and then proves it.
+
 ## The Annihilator of a Product
+
+**The annihilator of an element is the set of partners that it kills; the left annihilator is the kernel of the left multiplication and the right annihilator is the kernel of the right multiplication, and they are nonzero exactly when the element is a zero divisor of the corresponding side.**
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
@@ -53,6 +57,8 @@ the general plain sesqualgebra and of the general quaternionic algebra, whose an
 Algebra*.
 
 ## The Two Annihilators, and the Conjugate of the Plain Annihilator
+
+**The left annihilator of $\tilde Q$ is the star of the plain left annihilator of $\tilde Q^{\natural}$, of complex dimension two on the cone and $\{0\}$ off it, and on the cone the two annihilators $A_\star(\tilde Q)$ and $B_\star(\tilde Q)$ are distinct complex planes.**
 
 **Theorem (the left annihilator and the plain annihilator).** For every $\tilde Q$,
 $$
@@ -88,6 +94,8 @@ two distinct planes sharing the line $\mathbb{C}\tilde Q$.
 
 ## The Multiplication Operator and the Rank
 
+**The conjugate-linear operator $L_{\tilde P}$ is of complex rank four with trivial kernel for a nonzero element off the cone, of rank two with a two-dimensional kernel for a nonzero element on the cone, and the zero operator at the origin.**
+
 The two one-sided multiplications are conjugate-linear, so what is read is the rank, the complex
 dimension of the image.
 
@@ -106,6 +114,8 @@ whose rank is four for a unit of the plain product and two for a nonzero zero di
 
 ## The Dichotomy by the Cone
 
+**The annihilator reads the cone twice: off the cone both annihilators are $\{0\}$ and the element is a unit of the plain product, and on the cone each annihilator is a complex plane; the block carries both involution signs, so the two sides are distinct, unlike its two siblings, whose single involution identifies them.**
+
 The zero-divisor set of the block is the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, one
 equation, and the annihilator reads the cone twice: off the cone both annihilators are $\{0\}$ and
 the element is a unit of the plain product, and on the cone each is a complex plane. The block
@@ -114,6 +124,8 @@ general plain sesqualgebra and from the general quaternionic algebra, each of wh
 two sides by its single involution. In the meeting of the two signs the coincidence is lost.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**On the centre the annihilator is $\{0\}$; on the vector subspace a nonzero element has a complex-plane annihilator exactly when its vector part is isotropic; and on the Hermitian and anti-Hermitian subspaces the two annihilators meet in the conjugate of the plain annihilator, the distinction of the sides being read off the anti-Hermitian directions.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
 $L_{\lambda e_0}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with

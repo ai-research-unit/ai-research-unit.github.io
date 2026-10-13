@@ -8,7 +8,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*}
 $$
 
-is the fourth of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and it is the least classical of them: it has no unit, no centre, no associativity, and its element classes are the ones of *Idempotents of the General Quaternionic Sesqualgebra*, *Nilpotents of the General Quaternionic Sesqualgebra*, *Zero Divisors of the General Quaternionic Sesqualgebra* and *Square Roots of Minus One, Zero and Plus One in the General Quaternionic Sesqualgebra*. As an **operator-theoretic** object it is poorer still: the left multiplication is conjugate-linear, the right multiplication is linear, the composite of two left multiplications is the linear sandwich, and the parity obstruction excludes projectors and square-zero operators in both families altogether.
+is the fourth of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and it is the least classical of them: it has no unit, no centre, no associativity, and its element classes are the ones of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*, *Zero Divisors of the General Quaternionic Sesqualgebra* and *Square Roots of a General Element in the General Quaternionic Sesqualgebra*. As an **operator-theoretic** object it is poorer still: the left multiplication is conjugate-linear, the right multiplication is linear, the composite of two left multiplications is the linear sandwich, and the parity obstruction excludes projectors and square-zero operators in both families altogether.
 
 The reason the block is separated from the other eleven structures is a single law. The two actions of the central element $e_0$ are the natural conjugation on the right and the star on the left,
 
@@ -105,7 +105,7 @@ $$
 \tilde P\star\tilde P = \bigl(\overline{\tilde P}\tilde P\bigr)^{\natural} , \qquad \mathrm{Sc}\bigl(\tilde P\star\tilde P\bigr) = \sum_\mu\varepsilon_\mu\lvert P_\mu\rvert^2 , \qquad \varepsilon = (1,-1,-1,-1) ,
 $$
 
-so the scalar part of the square is the **Krein form**, of signature $(2,6)$, and the square of an element is zero exactly on the origin and the family $c(\hat\mu+i)$ of *Nilpotents of the General Quaternionic Sesqualgebra*.
+so the scalar part of the square is the **Krein form**, of signature $(2,6)$, and the square of an element is zero exactly on the origin and the family $c(\hat\mu+i)$ of *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 **Proof.** The identity is *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*, the scalar part is the Krein form $K$ of *The Krein Gram Matrix and the Restrictions of the Form*, and the square-zero family is the classification of the cited article.
 
@@ -117,7 +117,7 @@ $$
 
 and every one of them has central square $C(\tilde\Pi) = 1$; so the nontrivial idempotents of the block are **units of the plain algebra**, and the block has no unit in which they could be units of the block.
 
-**Proof.** The parametrization is *Idempotents of the General Quaternionic Sesqualgebra*, where the idempotent equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ is reduced to the equation on $\mu$; the central square of $-\tfrac12e_0+\mu$ is $\tfrac14+\sum_k\mu_k^2 = \tfrac14+\tfrac34 = 1$. The block has no unit by *The Two One-Sided Actions and the Absence of a Unit*, so the invertibility of the idempotents is the invertibility of the plain algebra.
+**Proof.** The parametrization is *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, where the idempotent equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ is reduced to the equation on $\mu$; the central square of $-\tfrac12e_0+\mu$ is $\tfrac14+\sum_k\mu_k^2 = \tfrac14+\tfrac34 = 1$. The block has no unit by *The Two One-Sided Actions and the Absence of a Unit*, so the invertibility of the idempotents is the invertibility of the plain algebra.
 
 The corollary is the second specificity: the **nontrivial** idempotents of the block are the only nontrivial idempotents among the four general products that are units of the plain algebra, the trivial idempotent $e_0$ being a unit for all four. The nontrivial idempotents of the plain product and of the general plain sesquilinear product have vanishing central square and are zero divisors, and the natural product has no nontrivial idempotent at all, so the family $-\tfrac12e_0+\mu$ is alone in the unit locus. The block pays for its idempotents with its operator theory, and the comparison is the one of *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 

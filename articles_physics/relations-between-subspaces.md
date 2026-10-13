@@ -195,6 +195,8 @@ The dictionary between the two writings is the one of the conventions article: $
 
 A reader who has followed the articles on the two sectors will recognize the four terms here — $ct'\,e_0$, $i x' e_k$, $ict\,e_0$, $x e_k$ — as exactly the four pieces those articles assemble into $\mathbb{M}_+$ and $\mathbb{M}_-$. The present article assembles the same four pieces the other way.
 
+**The operator naming of the informational line.** The $\mathbb{M}_+$ line has a second naming, the one standard in quantum physics, in which the coefficient letters are those of an operator: $\tilde{H} = h_0e_0 + ih_1e_1 + ih_2e_2 + ih_3e_3$ with real $h_\mu$ — the same element, with $h_0 = q_0 = ct'$ and $h_k = q'_k = x'_k$. Under the module dictionary $e_0 \leftrightarrow I_2$, $ie_k \leftrightarrow \sigma_k$ it is the Pauli expansion $h_0I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$. The tilde distinguishes the element from the Hermitian form $H$, which is defined in *Conventions in the Biquaternion Universe*.
+
 ## The Involutions as Sign Patterns
 
 Because every involution acts by $\pm 1$ on each block, each one is a sign pattern on the four blocks, and its fixed space is the sum of the blocks it leaves alone:

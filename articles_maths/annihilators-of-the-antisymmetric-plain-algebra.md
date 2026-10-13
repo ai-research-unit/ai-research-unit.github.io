@@ -32,6 +32,8 @@ zero-divisor set itself and the comparison with the other eleven structures are 
 article's, and the pairs of elements whose bracket vanishes are *Remarkable Subspaces under the
 Antisymmetric Plain Algebra of Biquaternions*.
 
+**The results.** The two annihilators of the antisymmetric plain multiplication coincide, $B_\wedge(\tilde P)=A_\wedge(\tilde P)=\ker L_{\tilde P}$, because the block is alternating. The operator $L_{\tilde P}$ has matrix $\operatorname{diag}(0,C_{\mathbf P})$, trace $0$, determinant $0$ and characteristic polynomial $t^{2}(t^{2}+(\mathbf P,\mathbf P))$; its rank is $2$ off the centre, where the annihilator is the plane $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\mathbf P$ of complex dimension $2$, and $0$ on the centre, whose nonzero elements annihilate the whole space. The dichotomy is therefore by the vector part, where the parent plain product's is by the scalar part.
+
 ## The Annihilator of a Product
 
 **Definition (annihilator).** Let $\star$ be a product on $\mathbb{B}$ and let
@@ -56,6 +58,8 @@ so that $A_\wedge(\tilde P)=\ker L_{\tilde P}$.
 
 ## The Two Annihilators Coincide
 
+**For every $\tilde P$ the left and the right annihilator of the block coincide, $B_\wedge(\tilde P)=A_\wedge(\tilde P)=\ker L_{\tilde P}$.**
+
 **Proposition (the two annihilators coincide).** For every $\tilde P$,
 $$
 B_\wedge(\tilde P)=A_\wedge(\tilde P)=\ker L_{\tilde P}.
@@ -72,6 +76,8 @@ version. For the block the distinction is empty, and a zero divisor of the block
 the same reason that the two annihilators coincide.
 
 ## The Multiplication Operator
+
+**The operator $L_{\tilde P}$ has matrix $\operatorname{diag}(0,C_{\mathbf P})$, trace $0$, determinant $0$ and characteristic polynomial $\chi_{L_{\tilde P}}(t)=t^{2}(t^{2}+(\mathbf P,\mathbf P))$, with eigenvalues $0$ doubled and the two roots of $t^{2}+(\mathbf P,\mathbf P)$.**
 
 **Proposition (the operator in the standard basis).** In the basis $e_0,e_1,e_2,e_3$ the operator
 $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has matrix
@@ -114,6 +120,8 @@ and the annihilator reads it as follows.
 
 ## The Rank and the Annihilator
 
+**The rank of $L_{\tilde P}$ and the annihilator depend only on the vector part: the rank is $0$ at $\mathbf P=0$, where the annihilator is the whole space $\mathbb{B}$, and $2$ at $\mathbf P\neq0$, where the annihilator is the plane $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\mathbf P$ of complex dimension $2$.**
+
 The annihilator of $\tilde P$ is the kernel of $L_{\tilde P}$, so its size is the nullity of a
 $4\times4$ matrix, and the rank of that matrix is all that has to be computed.
 
@@ -151,6 +159,8 @@ $\tilde X$.
 
 ## The Dichotomy by the Vector Part
 
+**The annihilator's dichotomy is by the vector part: an element with $\mathbf P=0$ has annihilator $\mathbb{B}$, and an element with $\mathbf P\neq0$ has annihilator the plane $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\mathbf P$; the block's dichotomy is the parent's, read from the vector part instead of the scalar part.**
+
 The parent plain product classifies its zero divisors into a pure and a non-pure family, split by
 the vanishing of the scalar part $Q_0$ (*Zero Divisors of the General Plain Algebra*, §*The Two
 Families of Zero Divisors*), and that classification collapses for the block, the criterion being
@@ -173,6 +183,8 @@ the parent's families survives. The classification does not merely merge; it is 
 annihilator's dichotomy by the vector part is what the block retains at this level.
 
 ## The Annihilator on the Remarkable Subspaces
+
+**On each remarkable subspace the restriction is alternating, with the annihilator collapsing to the whole space on the centre and reading as the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$ on the vector subspace.**
 
 **Proposition (the restriction is alternating).** On each of the remarkable subspaces the block
 restricts to an operation whose zero-divisor class is the relative class: the nonzero elements of
