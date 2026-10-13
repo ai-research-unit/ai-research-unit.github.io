@@ -230,7 +230,7 @@ pairings side by side.
 definite form and its cone.
 - Companion article *Other Remarkable Subspaces*, for the sign patterns of the involutions on
 the form.
-- Companion article *The Mathematical Study of Biquaternions*, the physics entry point to the
+- Companion article *The Biquaternion Mathematics Corpus*, the physics entry point to the
 mathematical study under which this block sits; its *Biquaternions as a Sesqualgebra over
 $\mathbb{C}$* sub-menu is the menu of the mathematics articles cited here.
 - Companion article *Conventions in the Biquaternion Universe*, for the conjugations and the forms.

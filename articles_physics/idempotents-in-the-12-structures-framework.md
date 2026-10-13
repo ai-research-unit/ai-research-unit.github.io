@@ -321,6 +321,24 @@ idempotents are separated only probabilistically, and a pair in which at least o
 separated no better. The idempotent family therefore contains the pairs a single measurement can tell
 apart, and the ball around it is where the distinction is only statistical.
 
+**The idempotents are the perfectly resolvable states.** The entropy says how much information a state
+lacks; *Fisher Information and the Biquaternion Norm* says how sharply a state can be told from its
+neighbours, and the two readings agree through a **reciprocity**. The classical Fisher information of the
+state's spectral family, with respect to the Bloch radius, is the reciprocal of the biquaternion norm,
+
+$$
+g_{rr}=\frac{1}{1-|\mathbf{r}|^{2}}=\frac{1}{4\,\mathrm{Sc}\,N(\tilde\rho)} .
+$$
+
+It is minimal at the maximally mixed state, where the norm is largest, and it **diverges on the
+boundary**, where the norm vanishes. By the Cramér–Rao bound a divergent information means asymptotic
+exactness, so the idempotents are exactly the states a displacement of which can be detected with
+arbitrarily high precision. The Fisher article names the coincidence: the analytic singularity of the
+logarithm, the vanishing of the biquaternion norm and the divergence of the Fisher information are three
+descriptions of the same locus. The idempotent is therefore overdetermined in the corpus — the pure state,
+the zero-entropy state, the zero-divisor state and the perfectly resolvable state are four names for one
+element.
+
 **The vacuum idempotent carries the zero-point energy.** *The Vacuum State and the Casimir Effect in
 Biquaternionic Form* identifies the vacuum with the one-mode state of no particles, which is the minimal
 idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ of *The Biquaternion Vacuum as a Minimal Idempotent*, and
@@ -330,6 +348,20 @@ when nothing is excited, and the normal-ordering prescription removes the absolu
 physical energy that is not read off its own algebra — the half-quantum per mode and the cutoff are
 standard-theory data — and the framework's role is to house the state and the indefinite metric that fixes
 the count of modes.
+
+**Idempotent states are spin-$\tfrac12$, and a scalar escapes them.** The idempotent-as-state reading has a
+scope, and *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module* fixes it. The
+framework's states are elements of the module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, which carries the
+defining two-dimensional representation, so they are **spinor-like by construction**; a spin-$0$ field, being
+a single component transforming in the trivial representation, has no place in it. The article gives the
+reason and it is a module-theoretic one: the state module is the defining module of the matrix algebra
+$M_2(\mathbb{C})$, a simple algebra has only one kind of module, and every finite-dimensional module is a
+direct sum of copies of $\mathbb{C}^2$, so no one-dimensional module exists for the trivial representation
+to occupy. The scalar lives instead in the **centre** $\mathbb{C}_{\mathbb{B}}=\{Q_0e_0\}$, which is not a
+module at all but the rotationally invariant subalgebra, the fixed space of the rotation subgroup. The
+idempotents of this article are therefore states of the spin-$\tfrac12$ module only: the Bloch sphere, the
+polarisation sphere and the state cone are the same object because the state is spinorial, and a scalar
+field is described by the centre's complex line rather than by any idempotent of $\mathbb{M}_+$.
 
 **The sphere of pure states.** The idempotents of the probability band are the boundary sphere of the
 Bloch ball, and *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form* reads the same
@@ -370,6 +402,17 @@ Idempotency is the algebraic name of the sphere.
   idempotent family.
 - The vacuum idempotent carries the zero-point energy: half a quantum per mode, with the Casimir energy the
   boundary-condition-dependent difference that normal ordering leaves behind.
+- The idempotents are also the perfectly resolvable states: the Fisher information of the state with
+  respect to the Bloch radius is the reciprocal of the biquaternion norm, so it diverges exactly on the
+  idempotents. The pure state, the zero-entropy state, the zero-divisor state and the perfectly resolvable
+  state are four names for one element.
+- Only the sesquilinear product supplies the cone, and with it the state space. *Why the Fourth Product Is a
+  Gauge Structure and Not a State Space* shows that the fourth product's ternary structure fails the
+  Jordan triple identity, so no cone and no pure states can be rebuilt from it; the idempotents-as-states
+  are the gift of the positive pairing alone.
+- The state is spinorial, so the idempotent-as-state reading is a spin-$\tfrac12$ reading: a spin-$0$ scalar
+  lives in the centre and escapes the state module, because a simple matrix algebra has no
+  one-dimensional module for the trivial representation.
 
 ## Summary
 
@@ -408,8 +451,9 @@ interval.
 - The pure states and the Bloch ball: *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; *The Hermitian Subspace M₊ as the Informational Sector*; *The Anti-Hermitian Subspace M₋ as the Material Sector*.
 - The gauge family and the indefinite metric: *The Fourth Product and Its Indefinite Metric*; *The States the Indefinite Metric Cannot Normalise*; *Idempotents of the General Quaternionic Sesqualgebra* (mathematics).
 - The observable face: *Observables, Gauge Generators and the Chirality of the Internal Action*.
-- The states in the physics corpus: *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; *The Generalized Bloch Ball for Spin 1 in the Biquaternion Framework*; *Decoherence as Idempotent Projection*; *The Measurement Problem in Algebraic Form*; *POVMs and the Positive Cone in Biquaternionic Form*; *The Bell Basis as the Idempotent Basis of B⊗B*; *The GNS Construction in the Biquaternion Framework*; *Quantum Channels and the Reversible/Irreversible Dichotomy*.
+- The states in the physics corpus: *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; *The Generalized Bloch Ball for Spin 1 in the Biquaternion Framework*; *Decoherence as Idempotent Projection*; *The Measurement Problem in Algebraic Form*; *POVMs and the Positive Cone in Biquaternionic Form*; *The Bell Basis as the Idempotent Basis of B⊗B*; *The GNS Construction in the Biquaternion Framework*; *Quantum Channels and the Reversible/Irreversible Dichotomy*; *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, for the spinor scope of the state.
 - The roots that parametrise the plain family: *Square Roots of Minus One, Zero and Plus One in the 12 Structures Framework*; *Idempotents of the General Plain Algebra* (mathematics).
-- The entropy, the coarse-graining and the vacuum energy: *Von Neumann Entropy and the Biquaternion Norm*; *Coarse-Graining and the Biquaternion Entropy Functional*; *Relative Entropy and the Biquaternion Framework*; *The Vacuum State and the Casimir Effect in Biquaternionic Form*; *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*; *Entanglement Entropy and the Replica Trick in Biquaternionic Form*.
+- The entropy, the coarse-graining and the vacuum energy: *Von Neumann Entropy and the Biquaternion Norm*; *Coarse-Graining and the Biquaternion Entropy Functional*; *Relative Entropy and the Biquaternion Framework*; *Fisher Information and the Biquaternion Norm*, for the resolution floor on the state; *The Vacuum State and the Casimir Effect in Biquaternionic Form*; *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*; *Entanglement Entropy and the Replica Trick in Biquaternionic Form*.
+- Why the state space needs the sesquilinear product: *Why the Fourth Product Is a Gauge Structure and Not a State Space*; *Values in No Subspace: Why the Symmetric Gauge Product Is Not a State*.
 - The brackets: *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*; *A Higher Structure for the Jacobi Failure*.
 - The grid and the definitions: *The 12 Products of the Biquaternion Complex Space* (mathematics); *The Twelve Structures Compared: Product, Law and Form*; *Definitions for the Study of the 12 Algebraic Structures* (mathematics); *Conventions in the Biquaternion Universe*.

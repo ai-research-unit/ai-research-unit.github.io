@@ -345,7 +345,7 @@ Operations*; and the two forms are *Comparison Between the Four General Products
 
 ## Further Reading
 
-- *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
+- *The Biquaternion Mathematics Corpus*, the physics entry point to the mathematical study under
   which this block sits.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space*
   (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve

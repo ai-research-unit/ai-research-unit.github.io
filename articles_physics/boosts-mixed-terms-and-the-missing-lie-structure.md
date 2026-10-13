@@ -380,7 +380,7 @@ are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*; th
 
 ## Further Reading
 
-- *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
+- *The Biquaternion Mathematics Corpus*, the physics entry point to the mathematical study under
 which this block sits.
 - Mathematics article *The 12 Products of the Biquaternion Complex Space*
 (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the twelve

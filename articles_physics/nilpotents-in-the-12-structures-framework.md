@@ -294,6 +294,28 @@ k^{\natural}=0$, the algebraic form of the linear branch. The article's caution 
 framework transcribes the low-energy equation, and the lattice, the Fermi velocity and the topological
 invariant are material data and not algebraic output.
 
+**The null points come in pairs.** A null direction of the momentum symbol is a **zero** of the symbol,
+and on a lattice the zeros are counted by topology. *Fermion Doubling and the Nielsen–Ninomiya Theorem in
+Biquaternionic Form* states the count: the Fourier transform of the inverse propagator is a continuous
+vector field on the Brillouin zone, its isolated zeros are the particle species, and the index of the field
+at each zero is $\pm1$, the two signs being the two handednesses. Poincaré–Hopf makes the sum of the
+indices the Euler characteristic of the Brillouin zone, which for a four-torus is zero, so the null points
+cannot be removed one at a time: they appear in left–right pairs. The article's caution belongs to the
+reading — the biquaternion algebra is not a lattice and does not supply one — so the statement is about
+the discretised symbol, and what it says is that the square-zero set of a lattice symbol is
+**topologically paired** and not the property of a single isolated mode.
+
+**Nilpotency is why the Wick theorem is exact.** *The Wick Theorem in Biquaternionic Form* observes that
+for a **single fermionic mode** the theorem is not an approximation or a statement about vacuum
+expectation values in a large space: because the mode operators are square-zero,
+$\tilde\Upsilon_1^{2}=\tilde\Upsilon_2^{2}=0$, every product of more than two mode operators collapses, so
+the four-point and six-point contractions reduce to products of the single two-point contraction with the
+fermionic signs. The identity is then an **exact operator identity** in a four-real-dimensional subalgebra,
+proved by exhibiting both sides. Nilpotency is therefore what makes the fermionic perturbation series
+**terminate**: the collapse of every product beyond the second is the algebraic reason the contractions are
+finite in number, and the graph expansion of a fermionic theory has no infinite series to resum at the
+level of one mode.
+
 **The single statement.** A vanishing square is the algebra's widest structural equation: the same
 equation that makes a lightlike displacement an infinitesimal makes a BRST charge a cohomological
 differential and a supercharge a supersymmetry generator. What differs is not the equation but the
@@ -334,6 +356,12 @@ tests whether a second application adds anything.
   Jacobi identity are the ones that cannot carry a cohomology.
 - The Dirac point of graphene and of a topological-insulator surface is a lightlike momentum,
   $\tilde k\tilde k^{\natural}=0$: the nilpotent is the algebraic form of the linear, gapless branch.
+- On a lattice the null points of the momentum symbol are counted by topology: the index sum is the Euler
+  characteristic of the Brillouin zone, so they come in left–right pairs and cannot be removed one at a
+  time (Nielsen–Ninomiya). Nilpotency of the discretised symbol is a paired, topological property.
+- Nilpotency makes the fermionic Wick theorem an exact operator identity rather than an approximation: the
+  collapse of products beyond the second leaves only the two-point contraction, so the graph expansion of a
+  single mode has no infinite series to resum.
 
 ## Summary
 
@@ -370,9 +398,9 @@ element theory of the algebra.
 - The other companions of the section: *Zero Divisors in the 12 Structures Framework*; *Annihilators in the 12 Structures Framework*; *Square Roots of Minus One, Zero and Plus One in the 12 Structures Framework*; *Square Roots of a General Element in the 12 Structures Framework*; *Idempotents in the 12 Structures Framework*.
 - The lightlike displacement and the photon: *The Photon as a Null Element: What the Cone Derives and What It Does Not*; *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *The Cone and the Massless Particles in the 12 Structures Framework*.
 - The Grassmann reading of square-zero variables: *Grassmann Coherent States in Biquaternionic Form*; *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*.
-- The fermionic ladder: *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; *The Spin–Statistics Theorem in Biquaternionic Form*; *The Biquaternion Vacuum as a Minimal Idempotent*; *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*.
+- The fermionic ladder: *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; *The Spin–Statistics Theorem in Biquaternionic Form*; *The Biquaternion Vacuum as a Minimal Idempotent*; *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*; *The Wick Theorem in Biquaternionic Form*, for the exact collapse of the contractions.
 - The odd nilpotents and the cohomology: *BRST Symmetry in Biquaternionic Form*; *Supersymmetric Quantum Physics in the Biquaternion Framework*; *The Superalgebra Reading and the Odd Extension with Signed Inner Conjugation in Biquaternionic Form*; *A Higher Structure for the Jacobi Failure*.
-- The Dirac cone and the null momentum: *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form*; *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*.
+- The Dirac cone and the null momentum: *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form*; *Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form*, for the topological pairing of the null points; *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*.
 - The probability band and its positivity: *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *Mass, Rank and the Positivity of the Dagger*; *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (mathematics).
 - The gauge band: *The Fourth Product and Its Indefinite Metric*; *The States the Indefinite Metric Cannot Normalise*; *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (mathematics).
 - The brackets: *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*; *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*.

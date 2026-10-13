@@ -460,7 +460,7 @@ Positivity of the Dagger* and *Observables, Gauge Generators and the Chirality o
 
 ## Further Reading
 
-- *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
+- *The Biquaternion Mathematics Corpus*, the physics entry point to the mathematical study under
   which this block sits.
 - Companion articles *Mass, Rank and the Positivity of the Dagger* and *Observables, Gauge Generators and
   the Chirality of the Internal Action*, the other two articles of this block.

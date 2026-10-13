@@ -37,7 +37,7 @@ Norm and Invertibility*; the identification of the vanishing set of $N$ with the
 Cone as the Biquaternion Zero-Divisor Cone* and to *Zero Divisors as a Physical Locus in Biquaternionic
 Form*; the interval-one group to *The Lorentz Group as Biquaternion Norm Automorphisms*; and the
 comparison of this product's scalar form with the other three to *The Four General Products and Their Physical Readings*. Every result read below is proved in the
-mathematics study whose entry point is *The Mathematical Study of Biquaternions*, and is cited there
+mathematics study whose entry point is *The Biquaternion Mathematics Corpus*, and is cited there
 rather than re-derived.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
@@ -481,7 +481,7 @@ Automorphisms*; and the comparison of the four general products by *The Four Gen
 
 ## Further Reading
 
-- *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
+- *The Biquaternion Mathematics Corpus*, the physics entry point to the mathematical study under
 which this block sits.
 - Mathematics article *Introduction to the General Quaternionic Algebra of Biquaternions*
 (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product, its table and its

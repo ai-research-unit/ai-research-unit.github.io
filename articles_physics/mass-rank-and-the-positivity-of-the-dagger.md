@@ -320,7 +320,7 @@ and *Causality and the Light Cone as an Information Barrier in Biquaternionic Fo
 
 ## Further Reading
 
-- *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
+- *The Biquaternion Mathematics Corpus*, the physics entry point to the mathematical study under
   which this block sits.
 - Companion article *Biquaternion Norm and Invertibility*, for the interval, the invertibility criterion,
   the four-velocity and the mass shell.

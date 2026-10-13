@@ -333,7 +333,7 @@ their monoid by *The Left Multiplications of the Quaternionic Product and the Op
 
 ## Further Reading
 
-- *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
+- *The Biquaternion Mathematics Corpus*, the physics entry point to the mathematical study under
 which this block sits.
 - Companion article *The Interval as the Square and the Charge of the Material Composition*, for the square
 identity, the interval and the multiplicativity used throughout.

@@ -294,6 +294,35 @@ number, is what chooses between the two kinds of mass. The value $\lambda$ of th
 is the scalar face of that choice: the sign of $\lambda$ says which shell a solution occupies, and the
 conjugation says which equation puts it there.
 
+**The polar phase names the causal class.** The value a root realises is not a bare sign; it is a modulus
+and a phase. *The Polar Element Representation of Biquaternions* writes every non-null element as
+$\tilde Q=r\,e^{i\alpha}B\hat q$ and identifies the polar modulus with the square root of the biquaternion
+norm, $\rho=re^{i\alpha}=\sqrt{N(\tilde Q)}$, so the modulus is exactly the object this article squares to
+the value $\lambda$. The article computes the material sector explicitly: for a timelike displacement
+$N=-c^2t^2(1-\beta^2)$ is negative, so $\rho=i\,ct\sqrt{1-\beta^2}$, that is $r=c\tau$ with phase
+$\alpha=\pi/2$; for a spacelike displacement $N$ is positive and the modulus is real, $\alpha=0$. The
+**phase of the polar modulus is therefore the causal class**: real modulus for spacelike, imaginary for
+timelike. Two corollaries sharpen the reading. The representation is available exactly on the nonzero
+elements off the cone, $N(\tilde Q)\neq0$, which is the invertibility theorem of *Biquaternion Norm and
+Invertibility* in polar dress; and the central value is the square of the modulus, $\lambda=\rho^2$, so the
+sign of $\lambda$ is the sign of $N$ and the phase of $\rho^2$ is twice the phase of $\rho$.
+
+**The complex value: a decaying state has no shell.** The three shells are the three signs of a *real*
+$\lambda$, and the framework has a value with no sign at all. *The Unstable State and the Complex Energy
+Pole in Biquaternionic Form* proves that an unstable state is described by a **complex** value of the
+centre, $z_\star=E-\tfrac{i}{2}\Gamma$: the real part is the energy, that is the position of the shell, and
+the imaginary part is half the width, that is the decay rate. The pole is central — a complex number of
+$\mathbb{C}_{\mathbb{B}}$ — *whatever* non-central coupling is present, so the value is not a property of
+the frame. Read through this article's root problem, a complex value has **no causal class**: the shell is
+an object a real value defines, and the decaying state has no sharp mass shell. Two details keep the
+reading honest. First, only the **plain** band realises such a value: it contains the scalar process
+$\sqrt\lambda\,e_0$ for any central $\lambda$, whereas the natural band's square is the interval and the
+sesquilinear bands produce an interval, so those bands are real by construction and a complex pole is never
+one of their shells. Second, what the value supplies is two numbers of one complex number, a real part that
+names the shell the state is near and an imaginary part that names how long it stays there. This is the
+sharpest statement of why the sign, and not the magnitude, is the causal datum: a value off the real axis
+has no sign, hence no class, and the state it describes has a lifetime rather than a mass.
+
 **One shell generates the others.** The positive shells at different magnitudes are related by scaling:
 the biquaternion norm is quadratic, so scaling an element by $\lambda$ scales its interval by
 $\lambda^{2}$, and a mass shell of interval $-m^{2}c^{2}$ is the unit shell scaled by $mc$.
@@ -331,8 +360,18 @@ interval, weight, gauge interval or polar scale — selects which of the two asp
 - The sign is why the retired single-field mass equation fails: its solutions lie on the spacelike shell,
   while a physical mass term must place them on the timelike one, and the conjugation rather than a number
   is what makes the choice.
-- One shell generates the rest by scaling: a mass shell is a unit shell multiplied by $m$, and the cone is
-  the scale-free limit of the family.
+- A shell of a given sign is generated from the unit shell by scaling, the interval being quadratic in
+  the scale: the mass shell is the unit shell scaled by $mc$, and the cone is the scale-free limit of the
+  family.
+- The value is a modulus and a phase, and the phase is the causal class: the polar modulus $\rho=\sqrt N$ is
+  real for a spacelike root (positive value) and imaginary for a timelike one (negative value), and the
+  representation exists exactly off the cone. The sign of $\lambda$ is the sign of the interval, the phase
+  of $\rho^{2}$ twice the phase of $\rho$.
+- A complex value has no causal class. The unstable state is a complex central pole whose real part is the
+  energy and whose imaginary part is half the width, so a decaying state has a lifetime instead of a shell.
+  Only the plain band realises such a value — by the scalar process $\sqrt\lambda\,e_0$; the natural and
+  sesquilinear bands produce an interval and are real by construction, so a complex pole is never one of
+  their shells.
 
 ## Summary
 
@@ -366,7 +405,7 @@ different root sets, so degeneracy is universal while factorisation is band-spec
 - The mathematics companion: *Square Roots of a General Element* (`articles_maths/square-roots-of-a-general-element.md`), for the four reductions, the unit theorem and the four existence classes.
 - The three named values: *Square Roots of Minus One, Zero and Plus One in the 12 Structures Framework*; *Square Roots of Minus One, Zero and Plus One* (mathematics).
 - The mass shell and the interval: *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*; *Biquaternion Norm and Invertibility*; *The Interval as the Square and the Charge of the Material Composition*.
-- The value in the physics corpus: *The Four Readings of Mass: Norm, Rank, Charge and Scale*; *The Symplectic Form and the Biquaternion Norm Cone*; *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The Born Rule as a Trace Formula — Derivation and Comparison*; *The Polar Element Representation of Biquaternions*; *Conformal Invariance and the Massless Limit in Biquaternionic Form*.
+- The value in the physics corpus: *The Four Readings of Mass: Norm, Rank, Charge and Scale*; *The Symplectic Form and the Biquaternion Norm Cone*; *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The Born Rule as a Trace Formula — Derivation and Comparison*; *The Polar Element Representation of Biquaternions*; *Conformal Invariance and the Massless Limit in Biquaternionic Form*; *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, for a value with no sign.
 - The light cone and the nilpotents: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Nilpotents in the 12 Structures Framework*; *The Photon as a Null Element: What the Cone Derives and What It Does Not*; *Zero Divisors as a Physical Locus in Biquaternionic Form*.
 - The probability band and its positivity: *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *Mass, Rank and the Positivity of the Dagger*; *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (mathematics).
 - The indefinite metric: *The Fourth Product and Its Indefinite Metric*; *The States the Indefinite Metric Cannot Normalise*; *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (mathematics).

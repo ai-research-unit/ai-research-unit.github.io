@@ -62,7 +62,7 @@ comparisons that cross the grid are collected here, in §*The Four Forms Compare
 Interpretations*. The four scalar forms turn out to be one bilinear form read through the two involutions, and
 the two sectors collapse the four to two.
 
-This article is the prose companion of *The Mathematical Study of Biquaternions*, which carries the
+This article is the prose companion of *The Biquaternion Mathematics Corpus*, which carries the
 entries of the mathematics menu, and it is the map of the four physics blocks that follow.
 
 **Conventions.** Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis
@@ -1001,5 +1001,5 @@ sign of the square on the two sectors, $\tilde Q\star\tilde Q=\pm N(\tilde Q)e_0
 - Companion article *The Ordinary Product and the Material Sector*, for the form $B$ alone on the remarkable subspaces.
 - Companion articles *The Interval as the Square and the Charge of the Material Composition*, *Mass, Rank and the Positivity of the Dagger* and *The Fourth Product and Its Indefinite Metric*, for $N$, $H$ and $K$ on the remarkable subspaces, and for the interval identity and the physical
 interpretation of the quaternionic product.
-- Companion article *The Mathematical Study of Biquaternions*, whose Algebra block this article
+- Companion article *The Biquaternion Mathematics Corpus*, whose Algebra block this article
 accompanies and whose entries carry the mathematics menu.

@@ -360,7 +360,7 @@ structures by *Jordan Algebras of Sesqualgebras*.
 
 ## Further Reading
 
-- *The Mathematical Study of Biquaternions*, the physics entry point to the mathematical study under
+- *The Biquaternion Mathematics Corpus*, the physics entry point to the mathematical study under
   which this block sits.
 - Companion article *Mass, Rank and the Positivity of the Dagger*, for the positive form, the cone and the
   positivity.
