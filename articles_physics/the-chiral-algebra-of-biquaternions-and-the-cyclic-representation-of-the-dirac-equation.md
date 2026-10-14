@@ -423,12 +423,12 @@ ordinary matrix multiplication on the left and the **diagonal** product on the r
 Under (33) the spin-projection operators become the Pauli matrices. The author writes them as biquaternions acting by the diagonal product on the left,
 
 $$
-\hat{S}_x = -(\vec q^* + N), \qquad \hat{S}_y = i(\vec q^* - N), \qquad
-\hat{S}_z = \vec q - \bar{N}, \qquad \hat{S}_t = \vec q + \bar{N},
+S_x^{\mathrm{fop}} = -(\vec q^* + N), \qquad S_y^{\mathrm{fop}} = i(\vec q^* - N), \qquad
+S_z^{\mathrm{fop}} = \vec q - \bar{N}, \qquad S_t^{\mathrm{fop}} = \vec q + \bar{N},
 \tag{34}
 $$
 
-whose images under (32) are $\sigma_x$, $\sigma_y$, $\sigma_z$ and the identity, with $\hat{S}_t$ the unit of the diagonal product. Two bars are lost in the extraction, which prints $\hat{S}_z = \vec q - N$ and $\hat{S}_t = \vec q + N$, forms that do not map to $\sigma_z$ and the identity; (34) is the bar-restored version, and with it the images are exactly the Pauli matrices. The eigenstates are
+whose images under (32) are $\sigma_x$, $\sigma_y$, $\sigma_z$ and the identity, with $S_t^{\mathrm{fop}}$ the unit of the diagonal product. Two bars are lost in the extraction, which prints $S_z^{\mathrm{fop}} = \vec q - N$ and $S_t^{\mathrm{fop}} = \vec q + N$, forms that do not map to $\sigma_z$ and the identity; (34) is the bar-restored version, and with it the images are exactly the Pauli matrices. The eigenstates are
 
 $$
 \begin{aligned}
@@ -445,7 +445,7 @@ $$
 with the eigenvalue relations
 
 $$
-\hat{S}_j \times F_{j\uparrow} = F_{j\uparrow}, \qquad \hat{S}_j \times F_{j\downarrow} = -F_{j\downarrow}
+S_j^{\mathrm{fop}} \times F_{j\uparrow} = F_{j\uparrow}, \qquad S_j^{\mathrm{fop}} \times F_{j\downarrow} = -F_{j\downarrow}
 \tag{36}
 $$
 
@@ -543,7 +543,7 @@ The source builds a purpose-made **chiral algebra** of biquaternions and writes 
 | $\Phi = \epsilon t - \vec k\cdot\vec r$ | Lorentz-invariant phase of the plane wave |
 | $A, B$ | Positive- and negative-frequency amplitudes of the plane wave |
 | $L = Ne^{\theta} + \bar{N}e^{-\theta},\ \breve{L}$ | Longitudinal and transverse Lorentz (boost) operators |
-| $\hat{S}_x, \hat{S}_y, \hat{S}_z, \hat{S}_t$ | Spin-projection operators; the Pauli matrices under the diagonal isomorphism |
+| $S_x^{\mathrm{fop}}, S_y^{\mathrm{fop}}, S_z^{\mathrm{fop}}, S_t^{\mathrm{fop}}$ | Spin-projection operators; the Pauli matrices under the diagonal isomorphism |
 | $F_{j\uparrow}, F_{j\downarrow}$ | Spin eigenstates along $j = x, y, z$ |
 | $D = (\partial_t, \nabla),\ \bar{D}$ | 4-gradient and its vector conjugate, in the paper's real-time convention |
 | $D_s = \tfrac12 D$ | Spin 4-gradient, $D_s = (\partial_t, \boldsymbol{\sigma}\cdot\nabla)$ |

@@ -48,7 +48,7 @@ $$
 a subalgebra of dimension $(\dim\mathrm{Cl})^2$; equivalently, the map
 
 $$
-\mathrm{Cl}(V,q)\otimes_F \mathrm{Cl}(V,q)^{\mathrm{op}} \longrightarrow \mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr), \qquad a\otimes b\longmapsto L_aR_b ,
+\mathrm{Cl}(V,q)\otimes_F \mathrm{Cl}(V,q)^{\mathrm{opp}} \longrightarrow \mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr), \qquad a\otimes b\longmapsto L_aR_b ,
 $$
 
 is an isomorphism of $F$-algebras.
@@ -71,7 +71,7 @@ $$
 
 When $q$ is non-degenerate the two are equal for $\dim V$ even, and the inclusion is proper for $\dim V$ odd over a base where the centre splits.
 
-**Proof.** Containment is the commutation. Equality in even dimension is the form of the double centraliser theorem: for a finite-dimensional algebra $A$ acting faithfully on a module, the commutant of the image is the image of the opposite algebra when $A$ is central simple, and in even dimension the Clifford algebra is central simple by *Clifford Algebras in Finite Dimensions*; the right family is a faithful image of $A^{\mathrm{op}}$ and equals the commutant by the dimension count read from the tensor-product isomorphism above. In odd dimension the centre is $F\oplus F\omega$, the algebra is not simple, and the commutant contains the extra operators induced by the two central idempotents, so the inclusion is proper.
+**Proof.** Containment is the commutation. Equality in even dimension is the form of the double centraliser theorem: for a finite-dimensional algebra $A$ acting faithfully on a module, the commutant of the image is the image of the opposite algebra when $A$ is central simple, and in even dimension the Clifford algebra is central simple by *Clifford Algebras in Finite Dimensions*; the right family is a faithful image of $A^{\mathrm{opp}}$ and equals the commutant by the dimension count read from the tensor-product isomorphism above. In odd dimension the centre is $F\oplus F\omega$, the algebra is not simple, and the commutant contains the extra operators induced by the two central idempotents, so the inclusion is proper.
 
 **Remark.** The properness in odd dimension is the operator form of the splitting of the algebra into two simple factors: the central idempotents of the centre act by projections commuting with both families, and they are the operators that project onto the two simple summands. This is the same fact as the two simple modules of the odd case in *Left Multiplication and the Clifford Module Structure*.
 
@@ -81,7 +81,7 @@ When $q$ is non-degenerate the two are equal for $\dim V$ even, and the inclusio
 
 **Proof.** The submodule conditions are the ideal conditions; the statement about a minimal left ideal $I=\mathrm{Cl}\pi$ with $\pi$ a primitive idempotent is that $I\pi=I$ and $I$ is closed under right multiplication by $\pi$, so it is a bimodule over the subalgebra $\pi\mathrm{Cl}\pi=F\pi$, which is the unitised field. The construction and the module theory are *Left Multiplication and the Clifford Module Structure*.
 
-**Remark (the spin representation).** The irreducible spinor module of even dimension is the left action of the algebra on a minimal left ideal, and the right action of the commutant $A^{\mathrm{op}}$ on the same ideal is the opposite representation. The pair $(L,R)$ therefore provides the module and its commutant in one construction, and the geometry of the spinor bundle of *Spin Geometry* is the bundle of these ideals, with the left action the Clifford multiplication and the right action the reduction to the structure group.
+**Remark (the spin representation).** The irreducible spinor module of even dimension is the left action of the algebra on a minimal left ideal, and the right action of the commutant $A^{\mathrm{opp}}$ on the same ideal is the opposite representation. The pair $(L,R)$ therefore provides the module and its commutant in one construction, and the geometry of the spinor bundle of *Spin Geometry* is the bundle of these ideals, with the left action the Clifford multiplication and the right action the reduction to the structure group.
 
 ## The Form and the Operators
 
@@ -105,7 +105,7 @@ For $V$ of dimension three with $q$ negative definite, $\mathrm{Cl}(V,q)\cong\ma
 
 ## Summary
 
-The **left multiplication** $L_a(x)=ax$ and the **right multiplication** $R_a(x)=xa$ are the two ways the Clifford algebra acts on itself; $L_aL_c=L_{ac}$ and $R_aR_c=R_{ca}$, both families are faithful and of parity $|a|$, and they commute, $L_aR_b=R_bL_a$. Together they generate the whole endomorphism algebra of the underlying space, and the map $a\otimes b\mapsto L_aR_b$ is an isomorphism $\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{op}}\to\mathrm{End}_F(\mathrm{Cl})$: the two families are the two factors of the algebra of operators on the regular bimodule. The commutant of the left family contains the right family, and **equals** it when the algebra is central simple, that is for $\dim V$ even; in odd dimension the central idempotents of the centre lie in the commutant and the inclusion is proper. The regular bimodule's submodules are the left and right ideals, a minimal left ideal is the irreducible spinor module carrying the left action and the opposite action of the commutant, and the quadratic form enters through the Clifford relations satisfied by each family. The one-sided calculus is *One-Sided Operators on a Clifford Algebra*, the module theory is *Left Multiplication and the Clifford Module Structure*, and the signs and twists are *The Graded Multiplication Operators* and *The Signed Left Multiplication on a Clifford Algebra*.
+The **left multiplication** $L_a(x)=ax$ and the **right multiplication** $R_a(x)=xa$ are the two ways the Clifford algebra acts on itself; $L_aL_c=L_{ac}$ and $R_aR_c=R_{ca}$, both families are faithful and of parity $|a|$, and they commute, $L_aR_b=R_bL_a$. Together they generate the whole endomorphism algebra of the underlying space, and the map $a\otimes b\mapsto L_aR_b$ is an isomorphism $\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{opp}}\to\mathrm{End}_F(\mathrm{Cl})$: the two families are the two factors of the algebra of operators on the regular bimodule. The commutant of the left family contains the right family, and **equals** it when the algebra is central simple, that is for $\dim V$ even; in odd dimension the central idempotents of the centre lie in the commutant and the inclusion is proper. The regular bimodule's submodules are the left and right ideals, a minimal left ideal is the irreducible spinor module carrying the left action and the opposite action of the commutant, and the quadratic form enters through the Clifford relations satisfied by each family. The one-sided calculus is *One-Sided Operators on a Clifford Algebra*, the module theory is *Left Multiplication and the Clifford Module Structure*, and the signs and twists are *The Graded Multiplication Operators* and *The Signed Left Multiplication on a Clifford Algebra*.
 
 ## Summary of Notation
 
@@ -115,7 +115,7 @@ The **left multiplication** $L_a(x)=ax$ and the **right multiplication** $R_a(x)
 | $L_aL_c=L_{ac}$, $R_aR_c=R_{ca}$ | Multiplicativity and anti-multiplicativity |
 | $L_aR_b=R_bL_a=L_{ab}$ | The two families commute |
 | $\lvert L_a\rvert=\lvert R_a\rvert=\lvert a\rvert$ | Parity of the two operators |
-| $\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{op}}\cong\mathrm{End}_F(\mathrm{Cl})$ | Generation of the endomorphism algebra |
+| $\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{opp}}\cong\mathrm{End}_F(\mathrm{Cl})$ | Generation of the endomorphism algebra |
 | $\{L_a\}'$ | Commutant of the left family; contains $R$ |
 | central simple (even $\dim V$) | Case in which $\{L_a\}'=\{R_b\}$ |
 | $\omega$, $\frac12(1\pm\omega)$ | Volume element and central idempotents of the odd case |

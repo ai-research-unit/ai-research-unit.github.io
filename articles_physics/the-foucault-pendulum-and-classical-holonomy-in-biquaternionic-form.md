@@ -16,7 +16,7 @@ $$
 \vec a\vec b = -\vec a\cdot\vec b\,e_0 + \vec a\times\vec b, \qquad [\vec a,\vec b] = 2\,\vec a\times\vec b .
 $$
 
-A rotation by angle $\theta$ about the unit axis $\hat n$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat n$, acting by $\vec a \mapsto R\vec aR^{-1}$.
+A rotation by angle $\theta$ about the unit axis $\hat u_{\mathrm r}$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat u_{\mathrm r}$, acting by $\vec a \mapsto R\vec aR^{-1}$.
 
 ## Inertial and Rotating Frames
 

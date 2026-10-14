@@ -23,10 +23,10 @@ $$
 is an isomorphism of $k$-algebras from $kQ$ onto the opposite algebra of $kQ^{\mathrm{rev}}$,
 
 $$
-kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{op}} ,
+kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{opp}} ,
 $$
 
-and it is the identification by which the reversal of the arrows computes the opposite algebra of a path algebra. In particular $kQ^{\mathrm{op}} \cong kQ^{\mathrm{rev}}$, and $kQ$ carries an involution induced by the reversal exactly when the quiver is isomorphic to its reversal.
+and it is the identification by which the reversal of the arrows computes the opposite algebra of a path algebra. In particular $kQ^{\mathrm{opp}} \cong kQ^{\mathrm{rev}}$, and $kQ$ carries an involution induced by the reversal exactly when the quiver is isomorphic to its reversal.
 
 *Proof.* A reversal of a path is a path of the reversed quiver: if $t(a_i) = s(a_{i+1})$, then $t(a_{i+1}^{\mathrm{rev}}) = s(a_{i+1}) = t(a_i) = s(a_i^{\mathrm{rev}})$, so the reversed arrows concatenate. The map reverses the order in a product, $\rho(pq) = \rho(q)\rho(p)$, and is bijective with inverse the reversal back; hence it is an anti-isomorphism, which is an isomorphism onto the opposite algebra. The final statement follows by composing with the identification $\iota_{kQ^{\mathrm{rev}}}$ of *Opposite Algebras and Anti-Isomorphisms*.
 
@@ -84,7 +84,7 @@ extended linearly. It is a graded involution for the length grading, it permutes
 
 ## Summary
 
-A path algebra $kQ$ carries two families of order-two anti-maps. The **path reversal** $\rho(a_1\cdots a_n) = a_n^{\mathrm{rev}}\cdots a_1^{\mathrm{rev}}$ is an isomorphism $kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{op}}$, so $kQ^{\mathrm{op}} \cong kQ^{\mathrm{rev}}$ and the reversal is an involution of $kQ$ exactly when $Q$ is isomorphic to its reversal. A **quiver involution** $\tau = (\tau_0,\tau_1)$ is a pair of bijections with $\tau_0^2 = \tau_1^2 = \mathrm{id}$ and $s(\tau_1(a)) = \tau_0(t(a))$, $t(\tau_1(a)) = \tau_0(s(a))$; it induces the **relabelling involution** $\sigma_\tau$ with $\sigma_\tau(e_i) = e_{\tau_0(i)}$ and $\sigma_\tau(a) = \tau_1(a)$ on the generators, extended anti-multiplicatively to the paths, and every length-preserving involution of $kQ$ that permutes the trivial paths and the arrows comes from a quiver involution. An admissible ideal $I$ stable under $\sigma_\tau$ admits the descent, and the bound quiver algebra $kQ/I$ then carries the descended involution of order two; the involutions of the bound quiver algebras are exactly the involutions of the path algebras that preserve the relations. The examples are the identity involution and the automorphism $x \mapsto -x$ on the polynomial algebra, the involution of the preprojective algebra of the Kronecker quiver pairing the two orientations, the reflection $X \mapsto JX^{\mathsf{T}}J$ of the lower triangular matrices, which is the relabelling involution that moves the arrow by the permutation of its ends, and the inversion of the group algebra. The quivers and the path algebras are *Quiver Representations and Representation Type*; the opposite algebra is *Opposite Algebras and Anti-Isomorphisms*; the reversal of words is *Involutions of a Free Algebra*; and the general involution on the elements is *Involutive Algebras*.
+A path algebra $kQ$ carries two families of order-two anti-maps. The **path reversal** $\rho(a_1\cdots a_n) = a_n^{\mathrm{rev}}\cdots a_1^{\mathrm{rev}}$ is an isomorphism $kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{opp}}$, so $kQ^{\mathrm{opp}} \cong kQ^{\mathrm{rev}}$ and the reversal is an involution of $kQ$ exactly when $Q$ is isomorphic to its reversal. A **quiver involution** $\tau = (\tau_0,\tau_1)$ is a pair of bijections with $\tau_0^2 = \tau_1^2 = \mathrm{id}$ and $s(\tau_1(a)) = \tau_0(t(a))$, $t(\tau_1(a)) = \tau_0(s(a))$; it induces the **relabelling involution** $\sigma_\tau$ with $\sigma_\tau(e_i) = e_{\tau_0(i)}$ and $\sigma_\tau(a) = \tau_1(a)$ on the generators, extended anti-multiplicatively to the paths, and every length-preserving involution of $kQ$ that permutes the trivial paths and the arrows comes from a quiver involution. An admissible ideal $I$ stable under $\sigma_\tau$ admits the descent, and the bound quiver algebra $kQ/I$ then carries the descended involution of order two; the involutions of the bound quiver algebras are exactly the involutions of the path algebras that preserve the relations. The examples are the identity involution and the automorphism $x \mapsto -x$ on the polynomial algebra, the involution of the preprojective algebra of the Kronecker quiver pairing the two orientations, the reflection $X \mapsto JX^{\mathsf{T}}J$ of the lower triangular matrices, which is the relabelling involution that moves the arrow by the permutation of its ends, and the inversion of the group algebra. The quivers and the path algebras are *Quiver Representations and Representation Type*; the opposite algebra is *Opposite Algebras and Anti-Isomorphisms*; the reversal of words is *Involutions of a Free Algebra*; and the general involution on the elements is *Involutive Algebras*.
 
 ## Summary of Notation
 
@@ -93,7 +93,7 @@ A path algebra $kQ$ carries two families of order-two anti-maps. The **path reve
 | $Q = (Q_0,Q_1,s,t)$ | the quiver, with vertices, arrows, source and target |
 | $kQ$ | the path algebra, the concatenation product |
 | $Q^{\mathrm{rev}}$ | the reversed quiver, every arrow reversed |
-| $\rho$ | the path reversal, an isomorphism $kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{op}}$ |
+| $\rho$ | the path reversal, an isomorphism $kQ \cong (kQ^{\mathrm{rev}})^{\mathrm{opp}}$ |
 | $\tau = (\tau_0,\tau_1)$ | a quiver involution |
 | $\sigma_\tau$ | the relabelling involution of $kQ$ |
 | $I$ | an admissible ideal of relations |

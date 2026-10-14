@@ -8,7 +8,7 @@ $$
 \sigma(ab) = \sigma(b)\sigma(a), \qquad \sigma(1) = 1, \qquad \sigma \circ \sigma = \mathrm{id} :
 $$
 
-an anti-automorphism of order two. The definition presupposes no commutativity. An involution is the same datum as a bijection $A \to A^{\mathrm{op}}$ of order two onto the ring with the reversed multiplication, so a ring that carries an involution is a ring isomorphic to its opposite ring, and the involution is the certificate of that isomorphism.
+an anti-automorphism of order two. The definition presupposes no commutativity. An involution is the same datum as a bijection $A \to A^{\mathrm{opp}}$ of order two onto the ring with the reversed multiplication, so a ring that carries an involution is a ring isomorphic to its opposite ring, and the involution is the certificate of that isomorphism.
 
 In the commutative case the opposite ring is the ring itself, no reversal is visible, and the anti-multiplicativity of the definition becomes ordinary multiplicativity: an involution of a commutative ring is simply an automorphism of order dividing two. What remains from the involution is then the fixed subring, the two conjugates $x$ and $\sigma(x)$ of an element, and the monic quadratic that every element satisfies over the fixed subring; when the ring is a field the pair is a Galois extension of degree two. The commutative case is therefore not a specialisation of the general theory but a second theory of the same datum, and the two are kept apart below.
 
@@ -40,17 +40,17 @@ and its elements are the **symmetric** elements; an element with $\sigma(a) = -a
 
 ### The Opposite Ring
 
-**Definition.** The **opposite ring** $A^{\mathrm{op}}$ has the same additive group as $A$ and the multiplication $a \cdot b = ba$.
+**Definition.** The **opposite ring** $A^{\mathrm{opp}}$ has the same additive group as $A$ and the multiplication $a \cdot b = ba$.
 
-**Theorem.** The involutions of $A$ are exactly the bijections $\sigma : A \to A$ of order two that are ring isomorphisms $A \to A^{\mathrm{op}}$; in particular a ring that carries an involution is isomorphic to its opposite ring.
+**Theorem.** The involutions of $A$ are exactly the bijections $\sigma : A \to A$ of order two that are ring isomorphisms $A \to A^{\mathrm{opp}}$; in particular a ring that carries an involution is isomorphic to its opposite ring.
 
-**Proof.** An involution is additive and bijective with $\sigma^2 = \mathrm{id}$, and $\sigma(ab) = \sigma(b)\sigma(a)$ says exactly that $\sigma$ is multiplicative as a map into $A^{\mathrm{op}}$. Conversely an isomorphism $\sigma : A \to A^{\mathrm{op}}$ that is a bijection of order two is additive, carries $1$ to $1$, satisfies $\sigma^2 = \mathrm{id}$, and its multiplicativity with respect to the reversed product is the anti-multiplicativity of the definition.
+**Proof.** An involution is additive and bijective with $\sigma^2 = \mathrm{id}$, and $\sigma(ab) = \sigma(b)\sigma(a)$ says exactly that $\sigma$ is multiplicative as a map into $A^{\mathrm{opp}}$. Conversely an isomorphism $\sigma : A \to A^{\mathrm{opp}}$ that is a bijection of order two is additive, carries $1$ to $1$, satisfies $\sigma^2 = \mathrm{id}$, and its multiplicativity with respect to the reversed product is the anti-multiplicativity of the definition.
 
-**Corollary.** A ring $A$ is commutative exactly when the identity map is an isomorphism $A \to A^{\mathrm{op}}$. In that case the involutions of $A$ and of $A^{\mathrm{op}}$ are the same maps, and they are the automorphisms of $A$ of order dividing two.
+**Corollary.** A ring $A$ is commutative exactly when the identity map is an isomorphism $A \to A^{\mathrm{opp}}$. In that case the involutions of $A$ and of $A^{\mathrm{opp}}$ are the same maps, and they are the automorphisms of $A$ of order dividing two.
 
-**Proof.** $A = A^{\mathrm{op}}$ means $ab = ba$ for all $a, b$; and when $A$ is commutative the opposite ring is the same ring with the same multiplication, so an isomorphism onto it is an automorphism, and the order-two condition is the only one left.
+**Proof.** $A = A^{\mathrm{opp}}$ means $ab = ba$ for all $a, b$; and when $A$ is commutative the opposite ring is the same ring with the same multiplication, so an isomorphism onto it is an automorphism, and the order-two condition is the only one left.
 
-**Remark.** A ring that carries an involution is isomorphic to its opposite ring, by the theorem. The converse implication is a finer question: an isomorphism $A \to A^{\mathrm{op}}$ need not be of order two, and whether its existence forces the existence of an involution is not automatic. Nothing below depends on that question, and every ring in the examples carries an explicit involution.
+**Remark.** A ring that carries an involution is isomorphic to its opposite ring, by the theorem. The converse implication is a finer question: an isomorphism $A \to A^{\mathrm{opp}}$ need not be of order two, and whether its existence forces the existence of an involution is not automatic. Nothing below depends on that question, and every ring in the examples carries an explicit involution.
 
 ### Elementary Properties
 
@@ -70,7 +70,7 @@ and its elements are the **symmetric** elements; an element with $\sigma(a) = -a
 
 **(g)** The fixed set $A^\sigma$ is an additive subgroup containing $1$ and is closed under $\sigma$; it is closed under multiplication exactly when its elements commute pairwise, and hence it is a subring in the commutative case.
 
-**Proof.** (a) As for a ring homomorphism, with sums in place of products. (b) $\sigma^2 = \mathrm{id}$ makes $\sigma$ its own inverse, and multiplicativity iterates: $\sigma(a^{n}) = \sigma(a)^n$. (c) From $uv = 1$ one gets $\sigma(u)\sigma(v) = \sigma(1) = 1$ and $\sigma(v)\sigma(u) = 1$. (d) $\sigma$ is an isomorphism $A \to A^{\mathrm{op}}$; as such it carries left ideals of $A$ to left ideals of $A^{\mathrm{op}}$, which are the right ideals of $A$, and it is an inclusion-preserving bijection on two-sided ideals. The product formula is $\sigma(IJ) = \sigma(J)\sigma(I)$, because $\sigma$ reverses the order of every product; the formulas for the sum and the intersection are the two instances of $\sigma$ being an isomorphism of the additive lattice, and the radical formula holds because $x^n \in I$ exactly when $\sigma(x)^n \in \sigma(I)$. (e) A ring isomorphism carries primes to primes and preserves inclusion. (f) $\sigma(e)^2 = \sigma(e)$ for an idempotent, $\sigma(x)^n = \sigma(x^n) = 0$ for a nilpotent, and $ab = 0$ gives $\sigma(a)\sigma(b) = 0$. (g) For $x, y \in A^\sigma$ one has $\sigma(xy) = yx$, so $xy$ is fixed exactly when $xy = yx$; in the commutative case that always holds, and in the general case it fails as the symmetric matrices of the next section show.
+**Proof.** (a) As for a ring homomorphism, with sums in place of products. (b) $\sigma^2 = \mathrm{id}$ makes $\sigma$ its own inverse, and multiplicativity iterates: $\sigma(a^{n}) = \sigma(a)^n$. (c) From $uv = 1$ one gets $\sigma(u)\sigma(v) = \sigma(1) = 1$ and $\sigma(v)\sigma(u) = 1$. (d) $\sigma$ is an isomorphism $A \to A^{\mathrm{opp}}$; as such it carries left ideals of $A$ to left ideals of $A^{\mathrm{opp}}$, which are the right ideals of $A$, and it is an inclusion-preserving bijection on two-sided ideals. The product formula is $\sigma(IJ) = \sigma(J)\sigma(I)$, because $\sigma$ reverses the order of every product; the formulas for the sum and the intersection are the two instances of $\sigma$ being an isomorphism of the additive lattice, and the radical formula holds because $x^n \in I$ exactly when $\sigma(x)^n \in \sigma(I)$. (e) A ring isomorphism carries primes to primes and preserves inclusion. (f) $\sigma(e)^2 = \sigma(e)$ for an idempotent, $\sigma(x)^n = \sigma(x^n) = 0$ for a nilpotent, and $ab = 0$ gives $\sigma(a)\sigma(b) = 0$. (g) For $x, y \in A^\sigma$ one has $\sigma(xy) = yx$, so $xy$ is fixed exactly when $xy = yx$; in the commutative case that always holds, and in the general case it fails as the symmetric matrices of the next section show.
 
 ### Examples
 
@@ -232,7 +232,7 @@ The **correspondence** of ideals is equivariant: the $\sigma$-ideals of $A$ cont
 
 ### Involutions as Automorphisms
 
-From here $R$ is a **commutative ring with identity** $1 \neq 0$ and $\sigma$ is an involution. Because $R = R^{\mathrm{op}}$, the anti-multiplicativity of the definition is the equation $\sigma(ab) = \sigma(a)\sigma(b)$ itself, so $\sigma$ is an automorphism of $R$ of order dividing two, the fixed set $R^\sigma$ is a **subring**, and the grading of the next section is available. Everything in the general part applies: $\mathrm{Sym}(R,\sigma) = R^\sigma$ and $\mathrm{Skew}(R,\sigma) = R^-$.
+From here $R$ is a **commutative ring with identity** $1 \neq 0$ and $\sigma$ is an involution. Because $R = R^{\mathrm{opp}}$, the anti-multiplicativity of the definition is the equation $\sigma(ab) = \sigma(a)\sigma(b)$ itself, so $\sigma$ is an automorphism of $R$ of order dividing two, the fixed set $R^\sigma$ is a **subring**, and the grading of the next section is available. Everything in the general part applies: $\mathrm{Sym}(R,\sigma) = R^\sigma$ and $\mathrm{Skew}(R,\sigma) = R^-$.
 
 ### The Fixed Subring and the Symmetric–Skew Decomposition
 
@@ -447,7 +447,7 @@ Each item is a statement of the general part that fails without commutativity, w
 
 ## Summary
 
-An involution is an anti-automorphism of order two; the definition needs no commutativity, and it is the same datum as a bijection $A \to A^{\mathrm{op}}$ of order two, so a ring with an involution is isomorphic to its opposite ring. The opposite ring of a commutative ring is the ring itself, and there the involution is an automorphism of order dividing two, so the commutative case is a second theory of the same datum and not a specialisation of the general one.
+An involution is an anti-automorphism of order two; the definition needs no commutativity, and it is the same datum as a bijection $A \to A^{\mathrm{opp}}$ of order two, so a ring with an involution is isomorphic to its opposite ring. The opposite ring of a commutative ring is the ring itself, and there the involution is an automorphism of order dividing two, so the commutative case is a second theory of the same datum and not a specialisation of the general one.
 
 In general the fixed set $A^\sigma$ is an additive subgroup containing $1$ and closed under the involution, and it is a subring exactly when its elements commute pairwise; the symmetric and skew elements are the eigenspaces of $\sigma$ when $2$ is invertible, with $A = \mathrm{Sym} \oplus \mathrm{Skew}$, but the product of two skew elements need not be symmetric, and in $M_3$ with the transpose it is neither symmetric nor skew. The conjugate products $x\sigma(x)$ and $\sigma(x)x$ are symmetric but differ in general, the multiplicative law is $(xy)\sigma(xy) = x\,(y\sigma(y))\,\sigma(x)$, the conjugate sum satisfies $xy+\sigma(y)\sigma(x)$ with no symmetry, and the quadratic relation $a^2-(a+\sigma(a))a+\sigma(a)a = 0$ has coefficients in $A^\sigma$ but gives no integrality because $A^\sigma$ need not be central. A $\sigma$-ideal is an ideal with $\sigma(I) = I$; the $\sigma$-prime ideals are those for which a product of $\sigma$-ideals inside forces a factor inside, every prime $\sigma$-ideal is $\sigma$-prime, the condition $aAb^{*} \neq 0$ is a sufficient elementwise criterion for $\sigma$-primality but not a characterisation, and the converse of the ideal-theoretic implication fails: $M_n(F) \times M_n(F)$ with the swap involution is $\sigma$-prime and not prime, and $(x^2+1)$ in $\mathbb{C}[x]$ with the coefficientwise conjugation is a $\sigma$-prime ideal that is not prime. An involution passes to a quotient by a $\sigma$-ideal, where the fixed set of the quotient can be strictly larger than the image of the fixed set, and to a product, where the swap makes the $\sigma$-ideals the $I \times I$.
 
@@ -458,7 +458,7 @@ In the commutative case the fixed set is the subring $R^\sigma$, the ring is $\m
 | Symbol | Meaning |
 |---|---|
 | $(A,\sigma)$ | Involutive ring; $A$ a ring with $1 \neq 0$, $\sigma$ an involution |
-| $A^{\mathrm{op}}$ | Opposite ring, same additive group with $a \cdot b = ba$ |
+| $A^{\mathrm{opp}}$ | Opposite ring, same additive group with $a \cdot b = ba$ |
 | $A^\sigma$ | Fixed set $\{a : \sigma(a) = a\}$; a subring in the commutative case |
 | $\mathrm{Sym}(A,\sigma)$, $\mathrm{Skew}(A,\sigma)$ | Symmetric and skew elements, the eigenspaces of $\sigma$ |
 | $a_+, a_-$ | $\tfrac12(a+\sigma(a))$ and $\tfrac12(a-\sigma(a))$ |

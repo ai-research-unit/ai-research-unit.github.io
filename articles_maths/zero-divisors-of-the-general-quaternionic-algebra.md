@@ -207,11 +207,11 @@ and $Q_0\neq0$; the converse is the statement of *Idempotents of the General Pla
 **Remark (the displacement).** The non-pure zero divisor has vanishing quaternionic square, so it
 is a **nilpotent of the quaternionic product**, while it is the opposite of a nilpotent in the
 plain product: its plain square is the nonzero element $2Q_0\tilde Q$. In particular the Hermitian
-idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\hat n$
+idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\hat u$
 satisfy
 
 $$
-\tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=N(\tilde\Pi_+(\tilde\Xi))e_0=\tfrac14\bigl(1-(\hat n,\hat n)\bigr)e_0=0 , \qquad \tilde\Pi_+(\tilde\Xi)\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(\tilde\Xi) ,
+\tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=N(\tilde\Pi_+(\tilde\Xi))e_0=\tfrac14\bigl(1-(\hat u,\hat u)\bigr)e_0=0 , \qquad \tilde\Pi_+(\tilde\Xi)\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(\tilde\Xi) ,
 $$
 
 so the two products see the same element as an idempotent and as a square-zero element. This
@@ -339,7 +339,7 @@ symmetric here where the sesquilinear products make it conjugate-symmetric.
 | $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the algebraic norm, vanishing exactly on the zero-divisor cone |
 | $C=\{N=0\}$ | the zero-divisor cone, the square-zero set of the product |
 | pure, non-pure | $Q_0=0$; $Q_0\neq0$ |
-| $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ | the Hermitian idempotent over a real unit vector $\hat n$ |
+| $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ | the Hermitian idempotent over a real unit vector $\hat u$ |
 | $\mathrm{Ann}_\ell(\tilde Q),\mathrm{Ann}_r(\tilde Q)$ | the left and the right annihilator of $\tilde Q$ for $\star$ |
 | $\mathrm{Ann}(\tilde Q)$ | their common value, of complex dimension two for a zero divisor |
 

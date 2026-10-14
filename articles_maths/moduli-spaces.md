@@ -14,7 +14,7 @@ Two boundaries are respected throughout. The formal deformation theory — the d
 **Definition.** Let $S$ be a scheme and let $\mathcal{C}$ be a class of objects over $S$-schemes (schemes, sheaves, morphisms) with a notion of base change. The associated **moduli functor** is the contravariant functor
 
 $$
-\mathcal{M} : (\mathbf{Sch}/S)^{\mathrm{op}}\to\mathbf{Sets}, \qquad \mathcal{M}(T) = \{\text{objects over } T \text{ of the given kind}\}\big/\cong,
+\mathcal{M} : (\mathbf{Sch}/S)^{\mathrm{opp}}\to\mathbf{Sets}, \qquad \mathcal{M}(T) = \{\text{objects over } T \text{ of the given kind}\}\big/\cong,
 $$
 
 or, in the more refined form that keeps the automorphisms, the functor to groupoids $T\mapsto$ the groupoid of such objects and their isomorphisms. A **fine moduli space** is a scheme $M$ over $S$ with an isomorphism $\mathcal{M}\cong h_M = \operatorname{Hom}_S(-,M)$; by Yoneda's lemma the functor is then represented by $M$, the identity of $M$ corresponds to a **universal family** $\mathcal{U}\to M$ with $\mathcal{M}(T) = \{$pullbacks of $\mathcal{U}\}$ for every $T$, and $M$ is unique up to unique isomorphism. A **coarse moduli space** is a scheme $M$ with a natural transformation $\mathcal{M}\to h_M$ such that (i) for every scheme $N$ and natural transformation $\mathcal{M}\to h_N$ there is a unique morphism $M\to N$ through which it factors, and (ii) the map on geometric points $\mathcal{M}(\operatorname{Spec}\bar k)\to M(\bar k)$ is a bijection.

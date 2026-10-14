@@ -81,7 +81,7 @@ The symmetric part of an involutive algebra with this Jordan product is treated 
 
 ### The matrix description
 
-**Proposition.** Let $M=A^n$ with the standard sesquilinear pairing and identify $E=\operatorname{End}_A(A^n)\cong M_n(A^{\mathrm{op}})$. Then the involution is the transpose-entrywise map
+**Proposition.** Let $M=A^n$ with the standard sesquilinear pairing and identify $E=\operatorname{End}_A(A^n)\cong M_n(A^{\mathrm{opp}})$. Then the involution is the transpose-entrywise map
 
 $$
 \Theta(X)_{ij}=\sigma(X_{ji}),
@@ -151,7 +151,7 @@ For the standard pairing on $A^n$ the centre is $Z(A)$ acting by scalars, and th
 
 ### Relation to the involution of the algebra
 
-**Proposition.** Under the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ of *The Endomorphism Algebra of a Module*, the involution ${}^{*}$ induced by the regular pairing is $\sigma$, so the involutive algebra $(E,{}^{*})$ of the regular module is $(A^{\mathrm{op}},\sigma)$.
+**Proposition.** Under the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{opp}}$ of *The Endomorphism Algebra of a Module*, the involution ${}^{*}$ induced by the regular pairing is $\sigma$, so the involutive algebra $(E,{}^{*})$ of the regular module is $(A^{\mathrm{opp}},\sigma)$.
 
 *Proof.* The endomorphisms of the regular module are the right multiplications $R_a$, the adjoint of $R_a$ with respect to the regular pairing is $R_{\sigma(a)}$ by *The Adjoint of a Module Homomorphism*, and the identification sends $R_a$ to $a$.
 
@@ -189,9 +189,9 @@ The classification of the involutions a module's endomorphism ring can carry, an
 
 **(c) The symplectic group.** For $M=R^{2n}$ with the alternating pairing $\langle x,y\rangle=\sum_i(x_iy_{i+n}-x_{i+n}y_i)$, the involution is $(f^{*})^{*}=f$ with $f^{*}=J^{-1}f^{\mathsf{T}}J$, and $U(M)=Sp(2n)$.
 
-**(d) The regular module of a division ring.** For $M=A=D$ a division ring with $\langle a,b\rangle=\sigma(a)b$, the involution on $\operatorname{End}_D(D)\cong D^{\mathrm{op}}$ is $\sigma$, the self-adjoint elements are the symmetric elements of $D$, and $U(D)=\{u : \sigma(u)u=1\}$ is the unitary group of $D$.
+**(d) The regular module of a division ring.** For $M=A=D$ a division ring with $\langle a,b\rangle=\sigma(a)b$, the involution on $\operatorname{End}_D(D)\cong D^{\mathrm{opp}}$ is $\sigma$, the self-adjoint elements are the symmetric elements of $D$, and $U(D)=\{u : \sigma(u)u=1\}$ is the unitary group of $D$.
 
-**(e) A matrix algebra.** For $A=M_n(\mathbb{C})$ with the conjugate transpose involution and $M=A$ as the regular module, the involution on $E\cong A^{\mathrm{op}}$ is the conjugate transpose, the self-adjoint elements are the hermitian matrices, and the unitary group is the classical $U(n)$ acting by right multiplication.
+**(e) A matrix algebra.** For $A=M_n(\mathbb{C})$ with the conjugate transpose involution and $M=A$ as the regular module, the involution on $E\cong A^{\mathrm{opp}}$ is the conjugate transpose, the self-adjoint elements are the hermitian matrices, and the unitary group is the classical $U(n)$ acting by right multiplication.
 
 ## Summary
 

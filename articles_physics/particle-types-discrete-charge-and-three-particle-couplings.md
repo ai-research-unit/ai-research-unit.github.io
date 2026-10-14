@@ -132,13 +132,13 @@ no larger.
 The units of the algebra — the invertible elements, the complement of the zero-divisor cone — form the
 non-compact $GL_2(\mathbb{C})$, of real dimension $8$. Inside them sits the compact slice of Euclidean-unit
 elements, and the remaining directions are the **boosts**. A boost along a unit imaginary direction
-$\hat n$ is
+$\hat u$ is
 
 $$
-\tilde B(\varphi)=e^{\varphi\, i\hat n}=\cosh\varphi\, e_0+\sinh\varphi\, i\hat n ,
+\tilde B(\varphi)=e^{\varphi\, i\hat u}=\cosh\varphi\, e_0+\sinh\varphi\, i\hat u ,
 $$
 
-Hermitian, with hyperbolic exponential because $(i\hat n)^{2}=+1$. Its **Euclidean** norm grows without
+Hermitian, with hyperbolic exponential because $(i\hat u)^{2}=+1$. Its **Euclidean** norm grows without
 bound while its biquaternion norm stays fixed:
 
 $$
@@ -446,7 +446,7 @@ Positivity of the Dagger* and *Observables, Gauge Generators and the Chirality o
 |---|---|
 | $U=\{\tilde U:\tilde U\tilde U^{*}=e_0\}\cong U(2)$ | the unitary slice; compact; inside $S^{7}$ |
 | $SU$ | its determinant-one part, $SU(2)$ |
-| $\tilde B(\varphi)=e^{\varphi i\hat n}$ | a boost; Hermitian, $N=1$, $\lVert\tilde B\rVert_E^{2}=\cosh2\varphi$ |
+| $\tilde B(\varphi)=e^{\varphi i\hat u}$ | a boost; Hermitian, $N=1$, $\lVert\tilde B\rVert_E^{2}=\cosh2\varphi$ |
 | $\varphi$ | the rapidity; $\varphi\in\mathbb{R}$, no quantum |
 | $GL_2(\mathbb{C})=U\cdot\exp(\mathbb{M}_+)$ | the Cartan decomposition of the units |
 | $J(s)=X\bar s$ | the antilinear reality structure, $J^{2}=\pm1$ |

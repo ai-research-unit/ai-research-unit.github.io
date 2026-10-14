@@ -338,13 +338,13 @@ and the associator is $w - (-v) = v + w \neq 0$. Something more than the two adm
 
 ## The Opposite Algebra and the Relatives of a Product
 
-**Definition.** The **opposite** algebra $A^{\mathrm{op}}$ is the same $k$-module with the reversed product $x \cdot^{\mathrm{op}} y = yx$, as in *Opposite Algebras and Anti-Isomorphisms*. More generally, for $\lambda \in k$ let $A_\lambda$ be the same module with the product
+**Definition.** The **opposite** algebra $A^{\mathrm{opp}}$ is the same $k$-module with the reversed product $x \cdot^{\mathrm{opp}} y = yx$, as in *Opposite Algebras and Anti-Isomorphisms*. More generally, for $\lambda \in k$ let $A_\lambda$ be the same module with the product
 
 $$
 x \cdot_\lambda y = x \bullet y + \lambda\,(x \wedge y) = \tfrac{1}{2}(1+\lambda)\,xy + \tfrac{1}{2}(1-\lambda)\,yx .
 $$
 
-The algebra $A_1$ is $A$, the algebra $A_{-1}$ is $A^{\mathrm{op}}$, and $A_0$ is the commutative algebra $A^{\bullet}$.
+The algebra $A_1$ is $A$, the algebra $A_{-1}$ is $A^{\mathrm{opp}}$, and $A_0$ is the commutative algebra $A^{\bullet}$.
 
 **Proposition.** For every $\lambda \in k$ the symmetrisation of $A_\lambda$ is that of $A$, and the antisymmetrisation is the multiple by $\lambda$:
 
@@ -354,7 +354,7 @@ $$
 
 *Proof.* The symmetrisation of $x \cdot_\lambda y$ is computed from the two definitions: adding $x \cdot_\lambda y$ and $y \cdot_\lambda x$ cancels the two occurrences of $\wedge$ and leaves $2(x \bullet y)$, and subtracting them cancels the two occurrences of $\bullet$ and leaves $2\lambda(x \wedge y)$.
 
-**Corollary.** The passage to the opposite algebra leaves the symmetric half fixed and reverses the sign of the antisymmetric half. Lie-admissibility and Jordan-admissibility are properties of $A$ and of $A^{\mathrm{op}}$ together: an algebra is Lie-admissible if and only if its opposite is, because the Jacobi identity is homogeneous and a reversal of sign does not affect its vanishing, and it is Jordan-admissible if and only if its opposite is, because the symmetric half is unchanged.
+**Corollary.** The passage to the opposite algebra leaves the symmetric half fixed and reverses the sign of the antisymmetric half. Lie-admissibility and Jordan-admissibility are properties of $A$ and of $A^{\mathrm{opp}}$ together: an algebra is Lie-admissible if and only if its opposite is, because the Jacobi identity is homogeneous and a reversal of sign does not affect its vanishing, and it is Jordan-admissible if and only if its opposite is, because the symmetric half is unchanged.
 
 **Remark.** The family $A_\lambda$ is the full family of algebras on the module with the prescribed symmetric half and an antisymmetric half proportional to the given one, so it shows exactly which features of $A$ the antisymmetric half can change. **The symmetric half is untouched by $\lambda$, so Jordan-admissibility is the same for every member of the family; and the antisymmetric half is a nonzero multiple of that of $A$ for $\lambda \neq 0$ and vanishes at $\lambda = 0$ alone, so the algebras $A_\lambda$ with $\lambda \neq 0$ are Lie-admissible exactly when $A$ is, and $A_0$ is Lie-admissible always, its antisymmetrisation being zero.** The vanishing of the antisymmetric half is the only qualitative change the parameter can make.
 
@@ -442,7 +442,7 @@ The passage to the opposite algebra leaves the symmetric half fixed and reverses
 | $[x,y,z] = (xy)z - x(yz)$ | The associator, a ternary bracket, as in *Non-Associative Algebras and the Property Ladder* |
 | $A^{\bullet}$, $A^{\wedge}$ | The symmetrised and the antisymmetrised algebra of $A$ |
 | $A^{+}$, $A^{(-)}$, $A^-$ | The same two algebras in the notation of the corpus: $A^{+}$ for the symmetrised one (*Jordan Algebras*), $A^{(-)}$ (*The Commutator Operator*) and $A^-$ (*Associative Algebras*) for the antisymmetrised one |
-| $A^{\mathrm{op}}$, $A_\lambda$ | The opposite algebra, and the algebra with product $x \bullet y + \lambda(x \wedge y)$; $A_{-1} = A^{\mathrm{op}}$, $A_0 = A^{\bullet}$ |
+| $A^{\mathrm{opp}}$, $A_\lambda$ | The opposite algebra, and the algebra with product $x \bullet y + \lambda(x \wedge y)$; $A_{-1} = A^{\mathrm{opp}}$, $A_0 = A^{\bullet}$ |
 | $S^2 A$, $\Lambda^2 A$, $\tau$ | The symmetric and exterior squares, the fixed and anti-fixed parts of the exchange $\tau(x \otimes y) = y \otimes x$ |
 | $c^k{}_{ij}$ | The structure constants, $e_i e_j = \sum_k c^k{}_{ij} e_k$ |
 | $p$, $q$ | The projections of a product onto its symmetric and its antisymmetric part, $p^2 = p$, $q^2 = q$, $pq = 0$, $p + q = \mathrm{id}$ |

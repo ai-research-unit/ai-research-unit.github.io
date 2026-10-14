@@ -138,7 +138,7 @@ $$
 \tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} .
 $$
 
-These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). None of these identifications was known to Hamilton.
+These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\hat u)$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). None of these identifications was known to Hamilton.
 
 ## Clifford's Rotors: Position, Lines, and Screws
 
@@ -316,7 +316,7 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position â€
 | $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\mathsf{M}_2(e_k) = -i\sigma_k$ |
 | $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}$ | Unit-norm biquaternions; Lorentz double cover |
 | $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation on $\mathbb{M}_{-}$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\hat u)$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\vec E + ic\vec B$ | Riemannâ€“Silberstein vector (Silberstein, 1907) |
 | $j$ | Split-complex unit, $j^{2} = +1$ (Clifford's twist $\omega$) |

@@ -16,7 +16,7 @@ $$
 x \cdot a = \sigma(a)\,x \qquad (x \in M^{\sigma},\ a \in A) .
 $$
 
-**Proposition.** $M^{\sigma}$ is a right $A$-module; the assignment $M \mapsto M^{\sigma}$ is an additive, exact, contravariant equivalence between the categories of left and of right $A$-modules, with inverse the same construction applied to the involution $\sigma$ of $A^{\mathrm{op}}$.
+**Proposition.** $M^{\sigma}$ is a right $A$-module; the assignment $M \mapsto M^{\sigma}$ is an additive, exact, contravariant equivalence between the categories of left and of right $A$-modules, with inverse the same construction applied to the involution $\sigma$ of $A^{\mathrm{opp}}$.
 
 **Proof.** For the right-module axioms, $(x\cdot a)\cdot b = \sigma(b)(\sigma(a)x) = (\sigma(b)\sigma(a))x = \sigma(ab)x = x\cdot(ab)$, using $\sigma(ab)=\sigma(b)\sigma(a)$; and $x\cdot 1 = \sigma(1)x = x$. Additivity in $x$ and exactness are inherited from $M$, because the underlying additive group and the underlying maps are unchanged. Applying the construction twice returns the original left action, $x\cdot a\cdot b = \sigma(b)\sigma(a)x$, which is the associativity of $M$. The construction is the identity on morphisms, so it is an equivalence.
 

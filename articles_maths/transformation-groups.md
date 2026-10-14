@@ -47,7 +47,7 @@ That $\operatorname{Sym}(X)$ is a group is the content of the propositions above
 
 ### Right Actions and the Opposite Group
 
-Composition is written on the left, so that $g \circ f$ means "first $f$, then $g$". With this convention a transformation group acts on the left of $X$. If instead one writes functions on the right, $x f$ for $f(x)$, then $(x f) g = x (f \circ g)$, and the multiplication is read in the opposite order. This is the difference between a **left action** and a **right action**, and it is a convention rather than a mathematical distinction: the **opposite group** $G^{\mathrm{op}}$ has the same underlying set as $G$ and multiplication $a \cdot b = b a$, and a right action of $G$ is a left action of $G^{\mathrm{op}}$. All actions in this article are left actions, and all products are read from left to right in the usual group notation.
+Composition is written on the left, so that $g \circ f$ means "first $f$, then $g$". With this convention a transformation group acts on the left of $X$. If instead one writes functions on the right, $x f$ for $f(x)$, then $(x f) g = x (f \circ g)$, and the multiplication is read in the opposite order. This is the difference between a **left action** and a **right action**, and it is a convention rather than a mathematical distinction: the **opposite group** $G^{\mathrm{opp}}$ has the same underlying set as $G$ and multiplication $a \cdot b = b a$, and a right action of $G$ is a left action of $G^{\mathrm{opp}}$. All actions in this article are left actions, and all products are read from left to right in the usual group notation.
 
 ## Automorphisms of a Structure
 
@@ -197,7 +197,7 @@ Cayley's theorem, that $G$ embeds in $\operatorname{Sym}(G)$ by the left regular
 | $\mathrm{id}_X$ | Identity transformation of $X$ |
 | $\operatorname{Sym}(X)$ | Symmetric group of all bijections $X \to X$ |
 | $S_n$ | $\operatorname{Sym}(\{1, \ldots, n\})$; order $n!$ |
-| $G^{\mathrm{op}}$ | Opposite group, multiplication $a \cdot b = b a$ |
+| $G^{\mathrm{opp}}$ | Opposite group, multiplication $a \cdot b = b a$ |
 | $\operatorname{Aut}(X)$ | Group of automorphisms of a structure on $X$ |
 | $\operatorname{End}(X)$ | Monoid of endomorphisms; $\operatorname{Aut}(X) = \operatorname{End}(X)^\times$ |
 | $\operatorname{Aut}(G)$, $\operatorname{Inn}(G)$ | Group automorphisms, inner automorphisms; $\operatorname{Inn}(G) \cong G/Z(G)$ |

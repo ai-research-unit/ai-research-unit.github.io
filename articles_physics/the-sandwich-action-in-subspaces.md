@@ -14,7 +14,7 @@ The question is a physical one, and it has a physical answer. The Lorentz transf
 
 Three results organise the answer. The first is a **central invariance**: multiplying the acting element by a central scalar multiplies the sandwich by the squared modulus of that scalar. Because the scalar imaginary $i$ is central, the remarkable subspaces collapse to four **operator classes**: the centre, the vector subspace, the two halves together, and the two sectors together; an antiquaternion acts exactly as its real quaternion, and an element of the material sector acts exactly as the corresponding informational element. The second is that the operator's **type** is decided by the subspace in a sharp way: the centre gives the dilations, the vector subspace gives the similarities, the rotations by $\pi$ among them, the two halves give the rotations, and the two sectors give the similarities, which on the unit-norm slice are the Lorentz transformations: the boosts, and the boosts composed with a rotation by $\pi$ on the negative-norm branch. The third is the answer to the question the series puts to the Hermitian subspace: **the Lorentz transformation of the corpus is the sandwich of a unit-norm element of $\mathbb{M}_+$**, so the informational sector is the home of the boosts, and the material sector reaches the same family through the central imaginary.
 
-The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{U}\tilde{U}^{\natural} = e_0$ and $\tilde{U}^{*} = \overline{\tilde{U}^{\natural}}$; $\hat{q}$ is a unit real quaternion; and the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.
+The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{U}\tilde{U}^{\natural} = e_0$ and $\tilde{U}^{*} = \overline{\tilde{U}^{\natural}}$; $\tilde u$ is a unit real quaternion; and the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
 ## The Central Factor Leaves the Operator Alone
 
@@ -172,7 +172,7 @@ For $\vec v$ in the vector subspace the element $i\vec v$ is again in the vector
 Let $\tilde{R}$ be a real quaternion, $\tilde{R} = a_0e_0 + a_1e_1+a_2e_2+a_3e_3$ with real coefficients. Its Hermitian conjugate is its quaternion conjugate, $\tilde{R}^{*} = \tilde{R}^{\natural} = |\tilde{R}|^2\tilde{R}^{-1}$, with $N(\tilde{R}) = \langle\tilde{R},\tilde{R}\rangle_{\natural} = |\tilde{R}|^2$ a positive real, so the central rule gives
 
 $$
-\operatorname{H}_{\tilde{R}}(\tilde S) = \tilde{R}\,\tilde S\,\tilde{R}^{\natural} = |\tilde{R}|^2\,\operatorname{H}_{\hat{R}}(\tilde S) , \qquad \hat{R} = \tilde{R}/|\tilde{R}| .
+\operatorname{H}_{\tilde{R}}(\tilde S) = \tilde{R}\,\tilde S\,\tilde{R}^{\natural} = |\tilde{R}|^2\,\operatorname{H}_{\tilde u}(\tilde S) , \qquad \tilde u = \tilde{R}/|\tilde{R}| .
 $$
 
 A real quaternion therefore acts as the dilation by its squared modulus composed with the rotation of the unit quaternion of the same direction, and on the unit-norm slice it is the familiar rotation. Writing $\tilde{R} = |\tilde{R}|(\cos\theta + \sin\theta\,\hat u)$ with $\hat u$ a real unit vector,
@@ -184,7 +184,7 @@ $$
 which is the rotation of the real vector part through $2\theta$ about $\hat u$, scaled by $|\tilde{R}|^2$. The operator preserves all remarkable subspaces, and the kernel on the unit-norm slice is $\{\pm e_0\}$, so the map
 
 $$
-\mathrm{Sp}(1)\longrightarrow SO(3) , \qquad \hat{q}\longmapsto\operatorname{H}_{\hat{q}} ,
+\mathrm{Sp}(1)\longrightarrow SO(3) , \qquad \tilde u\longmapsto\operatorname{H}_{\tilde u} ,
 $$
 
 is the two-fold cover of the rotation group. The doubling of the angle is the doubling recorded in *Biquaternion Rotations and Lorentz Transformations*; what the subspace adds is that on $\mathbb{H}_{\mathbb{B}}$ the sandwich acts as a rotation of the whole algebra, leaving the centre, the vector subspace and the two sectors in place.
@@ -295,17 +295,17 @@ The remarkable subspaces, the operator each produces, and the subspace's own int
 
 ## Comparison with the Polar Representation in Subspaces
 
-The two articles restrict the same remarkable subspaces, and the comparison is a dictionary between the two restrictions. The polar article asks which of the four factors $r$, $e^{i\alpha}$, $B$ and $\hat{q}$ a subspace can carry; this article asks which operator an element of the subspace produces. The answers pair up: the centre is the home of the scale and the phase, and its operator is trivial; the vector subspace is the only one that carries the phase freely together with a nontrivial boost and rotor, and its conjugation operator is the involution; the two halves carry the rotor alone, and their operator is the rotation; the two sectors carry the boost, and their sandwich is the boost on the unit-norm slice and a similarity off it. In each case the factor that a subspace is able to carry is the factor that turns into the operator: the rotor into the rotation, the boost into the boost, and the scale and the phase into nothing at all, since they lie in the centre and the centre is the kernel.
+The two articles restrict the same remarkable subspaces, and the comparison is a dictionary between the two restrictions. The polar article asks which of the four factors $r$, $e^{i\alpha}$, $B$ and $\tilde u$ a subspace can carry; this article asks which operator an element of the subspace produces. The answers pair up: the centre is the home of the scale and the phase, and its operator is trivial; the vector subspace is the only one that carries the phase freely together with a nontrivial boost and rotor, and its conjugation operator is the involution; the two halves carry the rotor alone, and their operator is the rotation; the two sectors carry the boost, and their sandwich is the boost on the unit-norm slice and a similarity off it. In each case the factor that a subspace is able to carry is the factor that turns into the operator: the rotor into the rotation, the boost into the boost, and the scale and the phase into nothing at all, since they lie in the centre and the centre is the kernel.
 
 The comparison also explains an asymmetry of this article. The polar representation loses factors when the element is restricted, and the loss is one-sided: a subspace is unable to carry a factor. The operator interpretation loses **operators** when the acting element is restricted, and the loss goes the other way: the remarkable subspaces produce only four operator classes, and inside a class they produce the same operator element by element. The two directions of restriction are the two halves of the same statement about the algebra, and the central circle, which is the kernel of the operator, is what makes them differ.
 
-**The operator factorises through the boost and the rotor, and doubles their parameters.** With the polar word $\tilde{Q} = re^{i\alpha}B\hat{q}$ and $\tilde{U} = B\hat{q}$ of unit norm,
+**The operator factorises through the boost and the rotor, and doubles their parameters.** With the polar word $\tilde{Q} = re^{i\alpha}B\tilde u$ and $\tilde{U} = B\tilde u$ of unit norm,
 
 $$
 \operatorname{H}_{\tilde{Q}} = r^{2}\,\operatorname{H}_{\tilde{U}},
 $$
 
-because the Hermitian conjugates of the four factors are $\hat{q}^{*} = \hat{q}^{-1}$, $B^{*} = B$, $r^{*} = r$ and $(e^{i\alpha})^{*} = e^{-i\alpha}$, so the two central factors cancel against their inverses. A non-central factor occurs once on each side, so its parameter is deposited twice: the rotor of angle $\theta$ acts by the doubled angle, and the boost of rapidity $\psi$ acts by the doubled rapidity, as the diagonal case $\mathsf{M}_2(B) = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ shows explicitly, the operator storing the half-rapidity and producing the rapidity. The four factors and their range are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*.
+because the Hermitian conjugates of the four factors are $\tilde u^{*} = \tilde u^{-1}$, $B^{*} = B$, $r^{*} = r$ and $(e^{i\alpha})^{*} = e^{-i\alpha}$, so the two central factors cancel against their inverses. A non-central factor occurs once on each side, so its parameter is deposited twice: the rotor of angle $\theta$ acts by the doubled angle, and the boost of rapidity $\psi$ acts by the doubled rapidity, as the diagonal case $\mathsf{M}_2(B) = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ shows explicitly, the operator storing the half-rapidity and producing the rapidity. The four factors and their range are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*.
 
 ## Worked Examples
 
@@ -367,7 +367,7 @@ The type of the operator is therefore decided by the class of the acting element
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and antiquaternion subspaces |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors |
 | $\tilde{U} = \cosh\frac{\psi}{2}e_0 + i\sinh\frac{\psi}{2}\hat u$ | the boost rotor, Hermitian and of unit norm |
-| $\hat{q} = \cos\theta+\sin\theta\,\hat u$ | the rotation rotor, a unit real quaternion |
+| $\tilde u = \cos\theta+\sin\theta\,\hat u$ | the rotation rotor, a unit real quaternion |
 | $\tilde{Q} = \sinh\varphi\,e_0 + i\cosh\varphi\,\hat u$, $N = -1$ | the negative-norm branch of the informational sector, $= i\tilde{U}\hat u$ |
 | $SO^+(1,3)$, $SO(3)$ | the Lorentz group and the rotation group reached by the sandwich |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |

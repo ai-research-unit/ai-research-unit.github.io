@@ -162,7 +162,7 @@ and it contains $\beta = \gamma^0$. But $\gamma^0$ is an **odd** element of the 
 **The natural dictionary the corpus supplies points the other way.** For a normalized two-component spinor the parent identifies the rank-one Hermitian form
 
 $$
-\psi\psi^\dagger \;\longmapsto\; \tfrac12\big(e_0 + i\hat n\big) \in \mathbb{M}_+,
+\psi\psi^\dagger \;\longmapsto\; \tfrac12\big(e_0 + i\hat u\big) \in \mathbb{M}_+,
 $$
 
 the idempotent of the informational sector, independent of energy sign. Both rest-frame branches of the parent — $u^{(r)}(0)\propto(\xi^{(r)},0)$ and $v^{(r)}(0)\propto(0,\eta^{(r)})$ in the Dirac basis — reduce to a single two-component spinor and therefore to an $\mathbb{M}_+$ object. The sector $\mathbb{M}_-$ is where the *current* lives, $\tilde J = ic\,j^0e_0 + \vec j \in \mathbb{M}_-$, not where the negative-energy component lives. So on the dictionary actually available, the sector split tracks the operator–vector (state–current) distinction, not the energy sign, and both energy signs land in the same sector.

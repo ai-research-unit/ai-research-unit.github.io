@@ -68,9 +68,9 @@ Seven ideas. Six are numbered against one difficulty each — ideas 3 and 4 both
 
 **The idea.** Make the objects of the quantum description elements of one four-dimensional real space instead of two different kinds of object.
 
-**The mechanism.** In standard quantum mechanics a state is a positive trace-one operator and an observable is a Hermitian operator; they are different kinds of object, paired by the Born rule. In the framework both are elements of the Hermitian subspace $\mathbb{M}_+$: a state is a positive trace-one element $\tilde{\rho}$, an observable a general Hermitian element $\tilde{H}$, and the pairing is the trace form $\mathrm{Tr}(\tilde{\rho}\tilde{H})=2\,\mathrm{Sc}(\tilde{\rho}\tilde{H})$. A pure state is an idempotent $\tilde\Pi_{1,2}(\hat n)=\tfrac12(e_0\pm i\hat n)$ along a unit axis $\hat n$, and a mixed state is a general positive trace-one element $\tilde{\rho}=\tfrac12(e_0+i\vec r)$; within the positive trace-one class, the two are distinguished by idempotence, and the mixed states fill the interior of the Bloch ball. The space on which both are read is the spinor module $S=\mathbb{B}\tilde{\Pi}_1=\mathbb{C}^{2}$, spanned by one idempotent and one nilpotent, and its Born pairing has Gram matrix $\tfrac12 I_2$: the module is a genuine two-dimensional Hilbert space, whose two amplitudes are the two coefficients of the basis. The quantum half of the description therefore has a positive definite inner product before any interpretation is offered — the alternative, an isotropic module of the kind a general Clifford algebra can present, would leave the Born pairing without a norm to be a probability of.
+**The mechanism.** In standard quantum mechanics a state is a positive trace-one operator and an observable is a Hermitian operator; they are different kinds of object, paired by the Born rule. In the framework both are elements of the Hermitian subspace $\mathbb{M}_+$: a state is a positive trace-one element $\tilde{\rho}$, an observable a general Hermitian element $\tilde{H}$, and the pairing is the trace form $\mathrm{Tr}(\tilde{\rho}\tilde{H})=2\,\mathrm{Sc}(\tilde{\rho}\tilde{H})$. A pure state is an idempotent $\tilde\Pi_{1,2}(\hat u)=\tfrac12(e_0\pm i\hat u)$ along a unit axis $\hat u$, and a mixed state is a general positive trace-one element $\tilde{\rho}=\tfrac12(e_0+i\vec r)$; within the positive trace-one class, the two are distinguished by idempotence, and the mixed states fill the interior of the Bloch ball. The space on which both are read is the spinor module $S=\mathbb{B}\tilde{\Pi}_1=\mathbb{C}^{2}$, spanned by one idempotent and one nilpotent, and its Born pairing has Gram matrix $\tfrac12 I_2$: the module is a genuine two-dimensional Hilbert space, whose two amplitudes are the two coefficients of the basis. The quantum half of the description therefore has a positive definite inner product before any interpretation is offered — the alternative, an isotropic module of the kind a general Clifford algebra can present, would leave the Born pairing without a norm to be a probability of.
 
-**The edge.** What the trace form gives is the probability **formula**: for an idempotent and a state the pairing is $p_\pm=\mathrm{Tr}(\tilde{\Pi}_{1,2}\tilde{\rho})=\tfrac12(1\pm\hat n\cdot\vec r)$. What it does not give is the identification of those numbers with physical frequencies. The framework relocates the Born rule from a postulate to a property of the pairing; it does not remove the interpretive step. The idea answers difficulty 2 in the structural sense and not in the operational sense, and the separation is stated in *The Born Rule as a Trace Formula — Derivation and Comparison*.
+**The edge.** What the trace form gives is the probability **formula**: for an idempotent and a state the pairing is $p_\pm=\mathrm{Tr}(\tilde{\Pi}_{1,2}\tilde{\rho})=\tfrac12(1\pm\hat u\cdot\vec r)$. What it does not give is the identification of those numbers with physical frequencies. The framework relocates the Born rule from a postulate to a property of the pairing; it does not remove the interpretive step. The idea answers difficulty 2 in the structural sense and not in the operational sense, and the separation is stated in *The Born Rule as a Trace Formula — Derivation and Comparison*.
 
 ### 2. Let the symmetries and the operators live in the same biquaternion space
 
@@ -138,7 +138,7 @@ The ideas, collected by difficulty.
 |---|---|---|
 | 1 Time a parameter | 3, the signature from $i^2=-1$ | $N(\tilde{Q})=\sum_\mu Q_\mu^2$ with $Q_0=ict$ |
 | 1 Problem of time | 4, the time as a coordinate | $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the exchange as an internal clock |
-| 2 Born rule an axiom | 1, states and observables in one subspace | $\mathrm{Tr}(\tilde{\Pi}\tilde{\rho})=\tfrac12(1+\hat n\cdot\vec r)$ |
+| 2 Born rule an axiom | 1, states and observables in one subspace | $\mathrm{Tr}(\tilde{\Pi}\tilde{\rho})=\tfrac12(1+\hat u\cdot\vec r)$ |
 | 3 Spin–statistics | 6, two classes of representation | $-e_0$ acts as $\pm\mathrm{id}$ by module |
 | 4 Two evolutions | 5, two classes of acting element | Unitary and idempotent elements of one biquaternion space |
 | 5 Quantisation a recipe | no numbered idea; see Programme 3 | $\mathfrak{sl}(2,\mathbb{C})$ as the natural bracket algebra |
@@ -230,10 +230,10 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ | The central element exchanges the sectors |
 | $\mathrm{Tr}(\tilde{H})=2\,\mathrm{Sc}(\tilde{H})$ | Trace; $\mathrm{Tr}(e_0)=2$ |
 | $\tilde{H}=h_0e_0+i\vec h$ | Hermitian element (observable), vector part $\vec h$ |
-| $\hat n$ | Unit vector, the axis of an idempotent |
+| $\hat u$ | Unit vector, the axis of an idempotent |
 | $\tilde{\rho}=\tfrac12(e_0+i\vec r)$, $\lvert\vec r\rvert\leq1$ | State (Bloch ball), Bloch vector $\vec r$ |
-| $\tilde\Pi_{1,2}(\hat n)=\tfrac12(e_0\pm i\hat n)$ | Idempotent (pure state) |
-| $\mathrm{Tr}(\tilde{\Pi}_{1,2}\tilde{\rho})=\tfrac12(1\pm\hat n\cdot\vec r)$ | Born rule as a trace formula |
+| $\tilde\Pi_{1,2}(\hat u)=\tfrac12(e_0\pm i\hat u)$ | Idempotent (pure state) |
+| $\mathrm{Tr}(\tilde{\Pi}_{1,2}\tilde{\rho})=\tfrac12(1\pm\hat u\cdot\vec r)$ | Born rule as a trace formula |
 | $N(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^{2}$ | Biquaternion norm; indefinite, complex in general; $-c^2t^2+\vec x^2$ on $\mathbb{M}_-$ |
 | $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | Sesquilinear form; real, positive definite; the Hilbert structure |
 | $N(\tilde{H})=h_0^2-\lvert\vec h\rvert^2$ | Biquaternion norm on a Hermitian element $\tilde{H}=h_0e_0+i\vec h$ |

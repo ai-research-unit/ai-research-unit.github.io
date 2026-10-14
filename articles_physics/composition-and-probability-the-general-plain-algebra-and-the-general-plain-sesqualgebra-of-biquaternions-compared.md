@@ -175,7 +175,7 @@ the zero divisors.
 
 The **physical interpretation** is that the light cone is a boundary of the **composition** and not of the
 probability. A massless four-momentum is a zero divisor: it is not invertible for the composition, and
-that is what propagation at the speed of light means algebraically (*Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element: the Mass Shell*, where the roots of $0$ are the nilpotents of the cone).
+that is what propagation at the speed of light means algebraically (*Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element in the General Plain Algebra: the Realisation*, where the roots of $0$ are the nilpotents of the cone).
 Its probability, however, is not zero. The Hermitian square of a zero divisor is a nonzero Hermitian
 element on the boundary of the positive cone, of rank one, so a massless element carries a well-defined
 boundary state and not a null state; the probability pairing is definite and never sees the cone as a
@@ -200,10 +200,10 @@ $$
 $$
 
 computed on samples of the family: each is a zero divisor, and each generates a minimal left ideal. The
-Hermitian members of the family, $\eta=i\hat\mu$ with $\hat\mu$ a real unit vector, are the pure states.
+Hermitian members of the family, $\eta=i\hat u$ with $\hat u$ a real unit vector, are the pure states.
 The material sector contains no nonzero idempotent at all, verified on random anti-Hermitian elements.
 The *sesquilinear* idempotents of the star product are exactly the Hermitian idempotents, the two-sphere
-$\tfrac12(e_0+i\hat\mu)$, which are the orthogonal projections of the matrix model.
+$\tfrac12(e_0+i\hat u)$, which are the orthogonal projections of the matrix model.
 
 The **physical interpretation** separates the two kinds of projection the framework uses. A **vacuum** is an
 algebraic idempotent: it is a generator of a minimal left ideal, it is a module datum, and it is chosen
@@ -233,7 +233,7 @@ The **physical interpretation** is that the clock belongs to the composition and
 root of $-e_0$ is the quarter turn that carries the clock, and it is present in the algebra and absent
 from the state space: the phase of quantum theory is the phase of the **amplitude**, not a complex
 structure of the state. The interpretation of the three distinguished radicands as the three physical cases
-(the local complex structure, the light cone and the mass shell) is *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element: the Mass Shell*. The roots of $+e_0$ are the reversible operations, and
+(the local complex structure, the light cone and the mass shell) is *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element in the General Plain Algebra: the Realisation*. The roots of $+e_0$ are the reversible operations, and
 their identification with the unitary slice is the operator face of *Observables, Gauge Generators and
 the Chirality of the Internal Action*. The Hermitian cone that replaces the root ladder on the state
 side is *Mass, Rank and the Positivity of the Dagger*, and the reality-condition trichotomy of the
@@ -350,7 +350,7 @@ operations and the positive pairing of states, and the difference between them i
 | norm law | $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$ | $N(\tilde P\star\tilde Q)=N(\tilde P)\overline{N(\tilde Q)}$ |
 | invertibility | $\tilde Q^{\natural}/N(\tilde Q)$ at $N\neq0$ | one-sided inverse $\bar{\tilde X}/\overline{N(\tilde X)}$ |
 | nilpotents | index two, the pure isotropic cone | none square-zero, index three |
-| idempotents | $\tfrac12(e_0+\eta)$, $\eta^{2}=e_0$, $N=0$ | Hermitian idempotents $\tfrac12(e_0+i\hat\mu)$ |
+| idempotents | $\tfrac12(e_0+\eta)$, $\eta^{2}=e_0$, $N=0$ | Hermitian idempotents $\tfrac12(e_0+i\hat u)$ |
 | square roots of $-e_0$ | the local complex structures | none |
 | square roots of $+e_0$ | the involutions | the unitary group $U(2)$ |
 | form | $B$, signature $(4,4)$, the sector sign | $H$, signature $(8,0)$, the probability weight |
@@ -369,7 +369,7 @@ forms and leave the sesquilinear ones fixed, so the pair of bands is itself sort
 *Conventions in the Biquaternion Universe*. Second, the dial is where the **clock** enters: the quarter
 turn of the local complex structure lives in the composition and is absent from the pairing, so the
 phase of the framework is the phase of an amplitude and the state carries no clock of its own (*Each
-Sector Is the Other's Clock: the Sector Exchange as Relational Time*, *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element: the Mass Shell*). Third, the dial is where **positivity** enters, and it
+Sector Is the Other's Clock: the Sector Exchange as Relational Time*, *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element in the General Plain Algebra: the Realisation*). Third, the dial is where **positivity** enters, and it
 enters once: the probability form is the same form whose algebraic norm is the squared modulus, whose trace is
 the Born rule and whose cone is the state cone, so the Bochner positivity of the transform and the
 Hilbert structure of the state space are one fact (*The Bochner Theorem for the Biquaternion Transform:
@@ -411,7 +411,7 @@ the Born rule live, and the step between them is the framework's quantisation.
 
 - The mathematics companion: *The General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*.
 - The map of the four general products: *The Four General Products and Their Physical Readings*.
-- The GPA band: *The General Plain Bilinear Product on the Biquaternion Space*; *The General Plain Bilinear Product on the Material Sector*; *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element: the Mass Shell*; *The Spinor Space as a Module of the General Plain Algebra*; *The Complementary Space of the Spinor Space in the General Plain Algebra*; *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*.
+- The GPA band: *The General Plain Bilinear Product on the Biquaternion Space*; *The General Plain Bilinear Product on the Material Sector*; *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element in the General Plain Algebra: the Realisation*; *The Spinor Space as a Module of the General Plain Algebra*; *The Complementary Space of the Spinor Space in the General Plain Algebra*; *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*.
 - The GPS band: *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra*; *The Complementary Space of the Spinor Space in the General Plain Sesqualgebra*; *Mass, Rank and the Positivity of the Dagger*; *Observables, Gauge Generators and the Chirality of the Internal Action*; *Particle Types, Discrete Charge and Three-Particle Couplings*; *The Operators of the Plain Sesquilinear Product and the Born Pairing*; *The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*.
 - The fused interpretation of the module and the form: *The Spinor Space as a Module and as a Hilbert Space*.
 - The built massless case: *The Null Four-Momentum: What the Cone Derives and What It Does Not*.

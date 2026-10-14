@@ -28,7 +28,7 @@ with maximal ideal $\mathrm{P}A_{\mathrm{P}}$ and residue field $\kappa(\mathrm{
 **Theorem (the contravariant equivalence for affine schemes).** The functor $A\mapsto\operatorname{Spec} A$ extends to an equivalence of categories
 
 $$
-\{\text{commutative rings with } 1\}^{\mathrm{op}}\ \xrightarrow{\ \sim\ }\ \{\text{affine schemes}\},
+\{\text{commutative rings with } 1\}^{\mathrm{opp}}\ \xrightarrow{\ \sim\ }\ \{\text{affine schemes}\},
 $$
 
 under which a ring homomorphism $\varphi : A\to B$ corresponds to the morphism $\operatorname{Spec}\varphi = {}^{a}\varphi : \operatorname{Spec} B\to\operatorname{Spec} A$ with ${}^{a}\varphi(\mathrm{Q}) = \varphi^{-1}(\mathrm{Q})$ and the map on structure sheaves induced by $A_f\to B_{\varphi(f)}$. For every ring $B$ one has

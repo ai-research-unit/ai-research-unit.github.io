@@ -43,10 +43,10 @@ $$
 The quadrupole contributes to the potential of the source at the order $r^{-3}$,
 
 $$
-\Phi(\vec x) = \frac{1}{4\pi\epsilon_0}\left[\frac{q}{r} + \frac{\vec p\cdot\hat n}{r^2} + \frac{1}{2r^3}Q_{ij}\hat{n}_i\hat{n}_j + \ldots\right],
+\Phi(\vec x) = \frac{1}{4\pi\epsilon_0}\left[\frac{q}{r} + \frac{\vec p\cdot\hat u}{r^2} + \frac{1}{2r^3}Q_{ij}\hat u_i\hat u_j + \ldots\right],
 $$
 
-with $\hat n = \vec x/r$, $q$ the total charge and $\vec p = \int\rho\,\vec x'\,d^3x'$ the dipole moment. The term displayed is the exact quadrupole term of the Cartesian expansion, and it is a solid harmonic of degree two: it is $r'^{\,2}P_2(\cos\gamma)$ continued to the field point.
+with $\hat u = \vec x/r$, $q$ the total charge and $\vec p = \int\rho\,\vec x'\,d^3x'$ the dipole moment. The term displayed is the exact quadrupole term of the Cartesian expansion, and it is a solid harmonic of degree two: it is $r'^{\,2}P_2(\cos\gamma)$ continued to the field point.
 
 ### Why the Moment Is Not an Algebra Element
 
@@ -83,15 +83,15 @@ with $\tilde{J} = ic\rho\,e_0 + \vec J\in\mathbb{M}_-$ the four-current and the 
 For a source with a single frequency $\omega$, the current is $\vec J(\vec x',t) = \vec J(\vec x')e^{-i\omega t}$, and in the far zone $r = |\vec x|\to\infty$ the retarded integral reduces to
 
 $$
-\vec A(\vec x,t) = \frac{\mu_0}{4\pi}\,\frac{e^{i(kr-\omega t)}}{r}\,\vec F(\hat n) ,
+\vec A(\vec x,t) = \frac{\mu_0}{4\pi}\,\frac{e^{i(kr-\omega t)}}{r}\,\vec F(\hat u) ,
 \qquad
-\vec F(\hat n) = \int \vec J(\vec x')\,e^{-ik\hat n\cdot\vec x'}\,d^3x' ,
+\vec F(\hat u) = \int \vec J(\vec x')\,e^{-ik\hat u\cdot\vec x'}\,d^3x' ,
 $$
 
-with the wavenumber $k = \omega/c$ and $\hat n = \vec x/r$. The whole angular and multipole content of the radiation is carried by the **radiation vector** $\vec F(\hat n)$, and the multipole expansion is the expansion of the phase factor in powers of $k\hat n\cdot\vec x'$:
+with the wavenumber $k = \omega/c$ and $\hat u = \vec x/r$. The whole angular and multipole content of the radiation is carried by the **radiation vector** $\vec F(\hat u)$, and the multipole expansion is the expansion of the phase factor in powers of $k\hat u\cdot\vec x'$:
 
 $$
-\vec F(\hat n) = \int\vec J - ik\int(\hat n\cdot\vec x')\vec J - \frac{k^2}{2}\int(\hat n\cdot\vec x')^2\vec J + \ldots
+\vec F(\hat u) = \int\vec J - ik\int(\hat u\cdot\vec x')\vec J - \frac{k^2}{2}\int(\hat u\cdot\vec x')^2\vec J + \ldots
 $$
 
 Each successive term adds one order of $kr'$ and one unit of angular momentum. The four-vector potential $\tilde{A}$ and the field-strength biquaternion $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ inherit this expansion term by term.
@@ -123,19 +123,19 @@ $$
 are the second moment of the charge and the magnetic dipole moment. The first identity follows from $\int\partial_k'(x_i'x_j'J_k)\,d^3x' = 0$, which gives $\int(x_i'J_j + x_j'J_i) = -i\omega\int x_i'x_j'\rho$, and the second is the definition of $\vec m$. Hence
 
 $$
-\int(\hat n\cdot\vec x')\vec J\,d^3x' = -\hat n\times\vec m - \frac{i\omega}{2}\,\vec D(\hat n) ,
+\int(\hat u\cdot\vec x')\vec J\,d^3x' = -\hat u\times\vec m - \frac{i\omega}{2}\,\vec D(\hat u) ,
 \qquad
-[\vec D(\hat n)]_i = D_{ij}n_j .
+[\vec D(\hat u)]_i = D_{ij}n_j .
 $$
 
 The antisymmetric part is the **magnetic dipole**; the symmetric part is the **electric quadrupole**. Writing the traceless quadrupole as $Q_{ij} = 3D_{ij} - r'^{\,2}\delta_{ij}\int\rho$ and dropping the trace, which is radial and radiates nothing, the two contributions to the radiation vector at first order are
 
 $$
-\vec F_{M1}(\hat n) = ik\,\hat n\times\vec m ,
+\vec F_{M1}(\hat u) = ik\,\hat u\times\vec m ,
 \qquad
-\vec F_{E2}(\hat n) = -\frac{k\omega}{6}\,\vec Q(\hat n) ,
+\vec F_{E2}(\hat u) = -\frac{k\omega}{6}\,\vec Q(\hat u) ,
 \qquad
-[\vec Q(\hat n)]_i = Q_{ij}n_j .
+[\vec Q(\hat u)]_i = Q_{ij}n_j .
 $$
 
 The electric quadrupole and the magnetic dipole appear together at the same order in $k$, and this pairing is the reason the quadrupole is a relativistic subject. A boost that converts an electric dipole into a magnetic dipole converts an electric quadrupole into a magnetic quadrupole, so that the electric and magnetic types of a given order are tied together by the boost even though they enter the radiation vector at different orders.
@@ -237,29 +237,29 @@ In the near zone the quadrupole field is the gradient of the quadrupole potentia
 $$
 \vec E_{quad}(\vec x) = -\vec\nabla\Phi_{quad} ,
 \qquad
-\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}Q_{ij}\hat{n}_i\hat{n}_j .
+\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}Q_{ij}\hat u_i\hat u_j .
 $$
 
 This field is not a radiation field: it has no $r^{-1}$ part, and its Poynting flux integrates to zero over a large sphere. It is the static, or quasi-static, quadrupole field, the relativistic correction to the near field of a slowly moving source.
 
 ### The Electric Quadrupole Radiation
 
-In the far zone the electric quadrupole produces a genuine radiation field. From the radiation vector computed above, $\vec F_{E2} = -\tfrac{k\omega}{6}\vec Q(\hat n)$, and $\vec B = ik\,\hat n\times\vec A$ in the radiation zone, one obtains
+In the far zone the electric quadrupole produces a genuine radiation field. From the radiation vector computed above, $\vec F_{E2} = -\tfrac{k\omega}{6}\vec Q(\hat u)$, and $\vec B = ik\,\hat u\times\vec A$ in the radiation zone, one obtains
 
 $$
-\vec B_{E2}(\vec x,t) = -\frac{\mu_0}{4\pi}\,\frac{e^{i(kr-\omega t)}}{r}\,\frac{ik^2\omega}{6}\,\hat n\times\vec Q(\hat n) .
+\vec B_{E2}(\vec x,t) = -\frac{\mu_0}{4\pi}\,\frac{e^{i(kr-\omega t)}}{r}\,\frac{ik^2\omega}{6}\,\hat u\times\vec Q(\hat u) .
 $$
 
-The field is transverse, falls off as $r^{-1}$, and carries the angular dependence of degree two through the vector $\vec Q(\hat n)$. The time-averaged angular distribution follows from the Poynting vector $\langle\vec S\rangle = \tfrac{r^2c}{2\mu_0}|\vec B|^2\hat n$:
+The field is transverse, falls off as $r^{-1}$, and carries the angular dependence of degree two through the vector $\vec Q(\hat u)$. The time-averaged angular distribution follows from the Poynting vector $\langle\vec S\rangle = \tfrac{r^2c}{2\mu_0}|\vec B|^2\hat u$:
 
 $$
-\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\,\omega^6}{1152\,\pi^2c^3}\,\left|\hat n\times\vec Q(\hat n)\right|^2 .
+\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\,\omega^6}{1152\,\pi^2c^3}\,\left|\hat u\times\vec Q(\hat u)\right|^2 .
 $$
 
 The angular integral of the numerator is a fixed multiple of the invariant $Q_{ij}Q_{ij}$,
 
 $$
-\oint\left|\hat n\times\vec Q(\hat n)\right|^2d\Omega = \frac{4\pi}{5}\,Q_{ij}Q_{ij} ,
+\oint\left|\hat u\times\vec Q(\hat u)\right|^2d\Omega = \frac{4\pi}{5}\,Q_{ij}Q_{ij} ,
 $$
 
 a consequence of the tracelessness of $Q$ and of the elementary angular averages $\oint n_in_j\,d\Omega = \tfrac{4\pi}{3}\delta_{ij}$ and $\oint n_in_jn_kn_l\,d\Omega = \tfrac{4\pi}{15}(\delta_{ij}\delta_{kl}+\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk})$. The total radiated power is therefore
@@ -363,10 +363,10 @@ $$
 
 with $Q_{yy}$ following from the trace condition. A rest-frame sphere acquires the oblate contraction quadrupole $Q_{zz} = -\tfrac{2}{3}\beta^2T'$, $Q_{xx} = Q_{yy} = +\tfrac{1}{3}\beta^2T'$, proportional to the mean-square radius $T' = \int\rho'r'^{\,2}d^3x'$.
 
-In the radiation problem the electric quadrupole appears at first order in $k$ together with the magnetic dipole, and the two are the symmetric and antisymmetric parts of one current moment. The quadrupole radiation vector is $\vec F_{E2} = -\tfrac{k\omega}{6}\vec Q(\hat n)$; the far field is transverse and falls off as $r^{-1}$; the angular distribution is
+In the radiation problem the electric quadrupole appears at first order in $k$ together with the magnetic dipole, and the two are the symmetric and antisymmetric parts of one current moment. The quadrupole radiation vector is $\vec F_{E2} = -\tfrac{k\omega}{6}\vec Q(\hat u)$; the far field is transverse and falls off as $r^{-1}$; the angular distribution is
 
 $$
-\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\omega^6}{1152\pi^2c^3}\left|\hat n\times\vec Q(\hat n)\right|^2 ,
+\frac{dP_{E2}}{d\Omega} = \frac{\mu_0\omega^6}{1152\pi^2c^3}\left|\hat u\times\vec Q(\hat u)\right|^2 ,
 $$
 
 and the total power is $P_{E2} = \tfrac{\mu_0\omega^6}{1440\pi c^3}Q_{ij}Q_{ij} = \tfrac{1}{4\pi\epsilon_0}\tfrac{1}{180c^5}\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$, the standard result, scaling as the sixth power of the frequency.
@@ -393,13 +393,13 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $D_{ij} = \int\rho\,x_ix_j\,d^3x$ | Second moment of the charge |
 | $Q_{ij} = \int\rho(3x_ix_j-r^2\delta_{ij})d^3x$ | Quadrupole tensor (symmetric traceless) |
 | $T' = \int\rho'\,r'^{\,2}d^3x'$ | Trace of the rest-frame second moment |
-| $\vec D(\hat n)$, $\vec Q(\hat n)$ | $D_{ij}n_j$, $Q_{ij}n_j$ |
+| $\vec D(\hat u)$, $\vec Q(\hat u)$ | $D_{ij}n_j$, $Q_{ij}n_j$ |
 | $\Phi_{quad}$ | Quadrupole potential |
-| $\vec F(\hat n) = \int\vec J\,e^{-ik\hat n\cdot\vec x'}d^3x'$ | Radiation vector |
+| $\vec F(\hat u) = \int\vec J\,e^{-ik\hat u\cdot\vec x'}d^3x'$ | Radiation vector |
 | $E_l$, $M_l$ | Electric and magnetic multipoles of order $l$ |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ |
 | $k = \omega/c$ | Wavenumber |
-| $\hat n = \vec x/r$ | Unit radial vector |
+| $\hat u = \vec x/r$ | Unit radial vector |
 | $\gamma$, $\beta = |\vec v|/c$ | Lorentz factor and speed ratio |
 | $\tilde{U}\in\mathbb{M}_+$ | Boost biquaternion, $\tilde{F}' = \tilde{U}^{\natural}\tilde{F}\tilde{U}$ |
 | $\star$ | Hodge dual, $\star(\vec E,\vec B) = (c\vec B,-\vec E/c)$ |

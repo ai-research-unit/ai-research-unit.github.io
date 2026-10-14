@@ -124,7 +124,7 @@ Let $A = k[G]$ with the involution $g^* = g^{-1}$. Then the self-adjoint part is
 
 ### The Exchange Involution
 
-Let $A = B \times B^{\mathrm{op}}$ with the exchange involution $(b,c)^* = (c,b)$. The self-adjoint part is the diagonal $\{(b,b)\} \cong B$, and the skew part is the antidiagonal $\{(b,-b)\} \cong B$; the symmetrised product on the diagonal is the product of $B$, so $H(A) \cong B$ as an algebra, and the skew part is the Lie algebra $B$ under the commutator.
+Let $A = B \times B^{\mathrm{opp}}$ with the exchange involution $(b,c)^* = (c,b)$. The self-adjoint part is the diagonal $\{(b,b)\} \cong B$, and the skew part is the antidiagonal $\{(b,-b)\} \cong B$; the symmetrised product on the diagonal is the product of $B$, so $H(A) \cong B$ as an algebra, and the skew part is the Lie algebra $B$ under the commutator.
 
 ## Summary
 

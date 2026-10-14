@@ -5,7 +5,7 @@
 
 This article develops the polar representation of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$. It follows *Dual-Numbers Algebra* for the conventions, *Dual-Numbers Norm and Invertibility* for the norm and the real size function on the units, *Shears and Parabolic Rotations* for the group of units and the shear, and *Dual-Numbers Exponential and Lie Group Structure* for the exponential. The comparison throughout is with the complex polar representation, whose phase factor is the unit circle.
 
-The polar representation of the dual numbers is the **third and last row of the exponential trichotomy** and the **missing link of the polar series**. The trichotomy is the classification of a generator $\nu$ of a one-parameter group by the sign of $\nu^2$: for $\nu^2 = -1$ the exponential winds, giving the elliptic case; for $\nu^2 = +1$ it boosts, giving the hyperbolic case; for $\nu^2 = 0$ it shears, giving the parabolic case. The dual-number generator $\varepsilon$ has $\varepsilon^2 = 0$, and its row of the trichotomy is the parabolic one. The polar series of the family of number systems — complex, split complex, dual — is completed by this row; the dual case is the only one whose polar form has a nilpotent factor and no compact phase.
+The polar representation of the dual numbers is the **third and last case of the exponential rule** and the **missing link of the polar series**. The rule is the classification of a generator $\nu$ of a one-parameter group by the sign of $\nu^2$: for $\nu^2 = -1$ the exponential winds, giving the elliptic case; for $\nu^2 = +1$ it boosts, giving the hyperbolic case; for $\nu^2 = 0$ it shears, giving the parabolic case. The dual-number generator $\varepsilon$ has $\varepsilon^2 = 0$, and its case of the rule is the parabolic one. The polar series of the family of number systems — complex, split complex, dual — is completed by this row; the dual case is the only one whose polar form has a nilpotent factor and no compact phase.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the field specialisation $R = k$ is flagged, and the ordered and geometric specialisation is $R = \mathbb{R}$, in which case the algebra is written $\mathbb{D}'$. A general dual number is
 
@@ -13,7 +13,7 @@ $$
 A = a + \varepsilon a', \qquad a, a' \in R,
 $$
 
-with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $N(A) = A\bar A = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.
+The conventions and the symbols are those of *Dual-Numbers Algebra* and of the corpus (*Conventions in Mathematics*); the symbols this article uses are collected in §*Summary of Notation*.
 
 ## Why a Single Scale and a Single Nilpotent Factor
 
@@ -37,13 +37,13 @@ So there is one positive scale, one discrete sign, and one real angle, and the a
 
 ### The Absence of a Compact Phase
 
-In the complex case the unit group contains the circle $U(1)$, whose parameter is an angle modulo $2\pi$; in the split-complex case it contains a hyperbola, whose parameter is an unbounded rapidity; in the dual case the non-scalar factor is the shear group $1 + \mathrm{M} \cong (\mathbb{R}, +)$, a line. There is no compact one-parameter subgroup of $(\mathbb{D}')^\times$ other than the central $\{\pm 1\}$, so the polar form has no angle modulo anything: it has a single real parabolic angle, globally defined and without period. This is why *the exponential trichotomy ends in a straight line rather than a circle*.
+In the complex case the unit group contains the circle $U(1)$, whose parameter is an angle modulo $2\pi$; in the split-complex case it contains a hyperbola, whose parameter is an unbounded rapidity; in the dual case the non-scalar factor is the shear group $1 + \mathrm{M} \cong (\mathbb{R}, +)$, a line. There is no compact one-parameter subgroup of $(\mathbb{D}')^\times$ other than the central $\{\pm 1\}$, so the polar form has no angle modulo anything: it has a single real parabolic angle, globally defined and without period. This is why *the exponential rule ends in a straight line rather than a circle*.
 
 ### The Centrality of the Nilpotent
 
 Because $\mathbb{D}'_R$ is commutative, every element is central, and in particular the nilpotent $\varepsilon$ is central and the shear factor $\exp(s\varepsilon) = 1 + s\varepsilon$ is central. The phase-like factor is central but *nilpotent*, so it cannot be extracted by a logarithm taking values in a torus. The centrality is what makes the order of the factors in the polar form immaterial here.
 
-## The Trichotomy of the Exponential
+## The Exponential Form
 
 ### The Word as Exponentials
 
@@ -53,15 +53,13 @@ $$
 A = \exp(\ln\lvert a\rvert)\cdot u\cdot\exp(s\varepsilon) , \qquad u = \pm 1 , \qquad s = \frac{a'}{a} .
 $$
 
-The exponent of the scale is the real number $\ln\lvert a\rvert$, whose root is $1$ of square $+1$, the hyperbolic row below; the exponent of the shear is the parabolic angle $s$, whose root is the nilpotent $\varepsilon$ of square $0$, the parabolic row, and its exponential truncates, $\exp(s\varepsilon) = 1 + s\varepsilon$. The sign $u$ is discrete and is not an exponential. The algebra is commutative, so the three factors commute, the order is free, and the two exponents **amalgamate into one**, $A = \exp(\ln\lvert a\rvert + s\varepsilon)$, for an element of positive real part; the sign is the one component the exponential does not reach.
+| # | factor | name | real dimension | exponential | case | closed form | parameter and range | unit axis |
+|---|---|---|---|---|---|---|---|---|
+| 1 | $r$ | scale | $1$ | $\exp(\ln\lvert a\rvert)$ | hyperbolic | $\lvert a\rvert$ | $\lvert a\rvert > 0$ | — |
+| 2 | $u$ | sign | $0$ | — | discrete | $\pm1$ | $u = \pm1$ | — |
+| 3 | $\exp(s\varepsilon)$ | shear | $1$ | $\exp(s\varepsilon)$ | parabolic | $1 + s\varepsilon$ | $s = a'/a \in \mathbb{R}$ | $\varepsilon$ |
 
-Let $\nu$ be an element of a real associative algebra and consider the one-parameter group $t \mapsto \exp(t\nu)$. The behaviour of the group is governed by $\nu^2$.
-
-- **Elliptic** ($\nu^2 = -\mathrm{id}$ up to scale): the exponential is periodic, the group is compact, and it is conjugate to the circle $U(1)$. This is the complex case, with the phase angle modulo $2\pi$.
-- **Hyperbolic** ($\nu^2 = +\mathrm{id}$ up to scale): the exponential is unbounded and its graph is a hyperbola, the group is non-compact, and the parameter is a rapidity defined up to no period. This is the split-complex case.
-- **Parabolic** ($\nu^2 = 0$): the exponential is polynomial, its image is a line of unipotent elements, and the group is non-compact and torsion-free. This is the dual case.
-
-The trichotomy is exhaustive for a generator of square $\sigma\,\mathrm{id}$ with $\sigma$ real, since $\sigma$ is negative, positive or zero. The dual-number polar representation is the parabolic row, and it is the only row in which the exponential is algebraic rather than transcendental.
+The exponent follows the rule of the series: the character of the exponential is trigonometric, hyperbolic or parabolic according to the square of the root of the exponent, the trigonometric case for a root of $-1$, the hyperbolic for a root of $+1$, and the parabolic for a nilpotent root, where the series truncates to the unit plus the exponent. The dual numbers have no root of $-1$ and none of $+1$, so the trigonometric and hyperbolic rows are empty and the parabolic row is the only one occupied; the shear is the exponential $\exp(s\varepsilon) = 1 + s\varepsilon$ of the nilpotent $\varepsilon$. The sign $u$ is discrete and is not an exponential. The algebra is commutative, so the three factors commute, the order is free, and the two exponents **amalgamate into one**, $A = \exp(\ln\lvert a\rvert + s\varepsilon)$, for an element of positive real part; the sign is the one component the exponential does not reach.
 
 ## The Modulus
 
@@ -236,7 +234,7 @@ The polar representations of the number systems of the corpus form a series, of 
 | $\mathbb{D} = \mathbb{R}[j]$ | $a^2 - a'^2$ | $\sqrt{|a^2-a'^2|}$ | $e^{\psi j}$ | hyperbolic |
 | $\mathbb{D}'$ | $a^2$ | $|a|$ | $1 + s\varepsilon$ | parabolic |
 
-The dual row is the missing link between the two two-dimensional cases: it is the case whose norm is degenerate, and it is the only member of the series whose polar phase factor is nilpotent. Reading down the column of phase factors, one passes from a compact circle, to a hyperbola, to a line; the dual line is the unique entry with no compact part and no period, and the series is exhaustive for the two-dimensional algebras in the same way that the trichotomy is exhaustive for a generator of a one-parameter group.
+The dual row is the missing link between the two two-dimensional cases: it is the case whose norm is degenerate, and it is the only member of the series whose polar phase factor is nilpotent. Reading down the column of phase factors, one passes from a compact circle, to a hyperbola, to a line; the dual line is the unique entry with no compact part and no period, and the series is exhaustive for the two-dimensional algebras in the same way that the rule is exhaustive for a generator of a one-parameter group.
 
 ## Summary
 
@@ -246,7 +244,7 @@ $$
 A = r\,u\,\exp(s\varepsilon), \qquad r = |a| > 0, \quad u = \operatorname{sgn}(a) \in \{\pm 1\}, \quad s = \frac{a'}{a},
 $$
 
-for every dual number $A = a + \varepsilon a'$ with $a \neq 0$. It has a single positive scale $r = |a|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $e^{s\varepsilon} = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = a'/a$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of units and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last row of the exponential trichotomy — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series.
+for every dual number $A = a + \varepsilon a'$ with $a \neq 0$. It has a single positive scale $r = |a|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $e^{s\varepsilon} = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = a'/a$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of units and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last case of the exponential rule — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series.
 
 ## Summary of Notation
 

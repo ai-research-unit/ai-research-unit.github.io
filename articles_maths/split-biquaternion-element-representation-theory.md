@@ -55,10 +55,10 @@ The two minimal two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}$, viewed as left $\m
 **Theorem (Schur).** For simple $\mathbb{H}_{\mathbb{D}}$-modules $S, T$, every nonzero homomorphism $S \to T$ is an isomorphism, and $\operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S)$ is a division ring. Here
 
 $$
-\operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_+, S_-) = \operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_-, S_+) = 0 , \qquad \operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}^{\mathrm{op}} \cong \mathbb{H} .
+\operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_+, S_-) = \operatorname{Hom}_{\mathbb{H}_{\mathbb{D}}}(S_-, S_+) = 0 , \qquad \operatorname{End}_{\mathbb{H}_{\mathbb{D}}}(S_\pm) \cong \mathbb{H}^{\mathrm{opp}} \cong \mathbb{H} .
 $$
 
-**Proof.** Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_1 T$ to $\tilde\Pi_1 T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}^{\mathrm{op}}$.
+**Proof.** Schur's lemma is standard. Because a homomorphism preserves the action of the central idempotents, it must carry $\tilde\Pi_1 T$ to $\tilde\Pi_1 T$ and vanishes on the other summand; hence a homomorphism $S_+ \to S_-$ vanishes, and one $S_+ \to S_+$ is an $\mathbb{H}$-linear endomorphism of the free rank-one module $\mathbb{H}$, that is right multiplication by a quaternion, which is $\mathbb{H}^{\mathrm{opp}}$.
 
 The division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$ is the analogue of the field $\mathbb{C}$ appearing in the biquaternion case through $\mathbb{B} \cong M_2(\mathbb{C})$. The non-isomorphism of the two simple modules is the module-theoretic expression of the fact that $\tilde\Pi_1 \mathbb{H}_{\mathbb{D}} \tilde\Pi_2 = 0$.
 

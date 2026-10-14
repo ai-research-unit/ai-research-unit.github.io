@@ -7,7 +7,11 @@ This article is about the **polar representation** of a real number: the stateme
 
 The subject is elementary, and its place in this blog is that of the base case. The polar representation is developed here for the one-dimensional algebra $\mathbb{R}$, in the companion article *Complex Polar Element Representation* for the two-dimensional definite algebra $\mathbb{C}$, and in the companion articles on the polar representations of the split-complex and the other algebras of the family. The family decomposes every element of every one of these algebras into the same four **slots** — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{R}$ exactly two slots are occupied, the scale and the compact slot, the latter filled by the discrete sign group, and the algebra is the smallest case of the pattern: no branch choice, no boost, no zero divisors, no boundary, and only one continuous parameter.
 
-The plan is as follows. The modulus and the sign factor are defined, and existence and uniqueness are proved. The sign factor is then described through the exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{R}$ and in $\mathbb{C}$. The two factors are then identified with two rows of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of *Real Algebra*: the basis is $e_0 = 1$, the sole involution is the identity, and the norm is $N(a) = a\,a = a^2$. Every numerical value displayed below is exact.
+The plan is as follows. The modulus and the sign factor are defined, and existence and uniqueness are proved. The sign factor is then described through the exponential, and the exponential is organised by the rule $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{R}$ and in $\mathbb{C}$. The two factors are then identified with two rows of that rule, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article.
+
+The conventions and the symbols are those of *Real Algebra* and of the corpus (*Conventions in Mathematics*); the symbols this article uses are collected in §*Summary of Notation*.
+
+Every numerical value displayed below is exact.
 
 ## The Modulus and the Sign Factor
 
@@ -81,33 +85,16 @@ $$
 a = \exp(\ln\lvert a\rvert)\cdot s , \qquad s \in \{\pm e_0\} .
 $$
 
-The exponent of the scale is the real number $\ln\lvert a\rvert$, whose root is $e_0$ of square $+e_0$, the hyperbolic row of the trichotomy below. The sign is the one factor of the whole series that no exponential produces, since the exponential of $\mathbb{R}$ is the positive half-line $\mathbb{R}_{>0}$ and $-1$ lies outside it; the sign group $\{\pm e_0\}$ is the discrete boundary of the exponential reading, and it is the whole of the compact slot in $\mathbb{R}$. The two factors commute, so the order is free. The word is nevertheless **not** a single exponential, because the sign is not an exponential at all: no element of $\mathbb{R}$ has an exponential equal to a negative number, and the two signs are exactly the two components lost by the exponential.
+| # | factor | name | real dimension | exponential | case | closed form | parameter and range | unit axis |
+|---|---|---|---|---|---|---|---|---|
+| 1 | $r$ | scale | $1$ | $\exp(\ln r)$ | hyperbolic | $r$ | $\ln r \in \mathbb{R}$, $r > 0$ | — |
+| 2 | $s$ | sign | $0$ | — | discrete | $\pm e_0$ | $s = \operatorname{sgn} a$ | — |
 
-### The Trichotomy of the Exponential
-
-Every algebra of the family contains elements $\nu$ of three kinds, classified by the square:
-
-$$
-\nu^2 = -e_0 \qquad\text{(roots of }-1\text{)}, \qquad \nu^2 = 0 \qquad\text{(nilpotent)}, \qquad \nu^2 = +e_0 \qquad\text{(roots of }+1\text{)},
-$$
-
-and the exponential of $\nu\theta$ is trigonometric, parabolic or hyperbolic accordingly. This is one computation with three cases, and it is the rule that the whole family follows.
-
-**Proposition.** Let $\nu$ be an element of a real algebra of the family and let $\theta \in \mathbb{R}$. Then the exponential of $\nu\theta$ is given by the case
-
-| case | $\nu^2$ | $\exp(\nu\theta)$ | the summands |
-|---|---|---|---|
-| trigonometric | $-e_0$ | $\cos\theta\,e_0 + \nu\sin\theta$ | a cosine and a sine |
-| parabolic | $0$ | $e_0 + \nu\theta$ (the series truncates) | $1$ and a linear term |
-| hyperbolic | $+e_0$ | $\cosh\theta\,e_0 + \nu\sinh\theta$ | a hyperbolic cosine and a hyperbolic sine |
-
-*Proof.* The exponential is the series $\exp(\nu\theta) = \sum_{n\ge0}\nu^n\theta^n/n!$, and the hypothesis on $\nu^2$ makes the powers periodic, truncated or monotone. For $\nu^2 = -e_0$ the even powers alternate as $(-1)^k e_0$ and the odd powers as $(-1)^k\nu$, and the two partial series are the cosine and the sine. For $\nu^2 = 0$ every power from the second onward vanishes and the series is its first two terms. For $\nu^2 = +e_0$ the even powers are $e_0$ and the odd powers are $\nu$ without alternation, and the two series are the hyperbolic cosine and the hyperbolic sine.
-
-The trichotomy is a statement about the *sign of the square of the exponent*, not about the algebra. Which of the three rows are non-empty is a statement about the algebra, and the answer is what distinguishes the members of the family from one another.
+The exponent follows the rule of the series: the character of the exponential is trigonometric, hyperbolic or parabolic according to the square of the root of the exponent, the trigonometric case for a root of $-e_0$, the hyperbolic for a root of $+e_0$, and the parabolic for a nilpotent root, where the series truncates to the unit plus the exponent. The sign is the one factor of the series that no exponential produces, since $\exp(\mathbb{R}) = \mathbb{R}_{>0}$ and $-1$ lies outside it; the sign group $\{\pm e_0\}$ is the discrete boundary of the exponential reading and the whole of the compact slot in $\mathbb{R}$. The two factors commute, so the order is free, and the word is nevertheless **not** a single exponential, because no element of $\mathbb{R}$ has an exponential equal to a negative number.
 
 ### The Roots of $\pm1$ in $\mathbb{R}$
 
-| equation | solutions in $\mathbb{R}$ | count | row of the trichotomy |
+| equation | solutions in $\mathbb{R}$ | count | row of the rule |
 |---|---|---|---|
 | $\nu^2 = -e_0$ | none | $0$ | trigonometric: empty |
 | $\nu^2 = 0$ | $\nu = 0$ only | $1$ | parabolic: degenerate, $\exp = e_0$ |
@@ -262,13 +249,13 @@ so its kernel is $\{0\}$ and the continuous coordinate of a positive element is 
 | $\mathbb{C}$ | $u^2+v^2$, definite | $\sqrt{N}$, positive real | $e^{i\theta}$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | connected, $\mathbb{R}_{>0}\times U(1)$ |
 | $\mathbb{D}$ | $u^2-v^2$, indefinite | $\sqrt{\lvert N\rvert}$, positive real | $e^{\phi j}$ or $je^{\phi j}$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
 
-The progression is the progression of the trichotomy. In $\mathbb{R}$ only the hyperbolic row is occupied, and it produces the scale; the trigonometric row is empty and the second factor is the discrete sign group, the compact slot in its discrete form. In $\mathbb{C}$ the trigonometric row is occupied by the unit factor for the first time, and the unit factor is a connected circle. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The one-dimensional algebra $\mathbb{R}$ is the case in which none of that can happen, which is why it is treated first.
+The progression is the progression of the rule. In $\mathbb{R}$ only the hyperbolic row is occupied, and it produces the scale; the trigonometric row is empty and the second factor is the discrete sign group, the compact slot in its discrete form. In $\mathbb{C}$ the trigonometric row is occupied by the unit factor for the first time, and the unit factor is a connected circle. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The one-dimensional algebra $\mathbb{R}$ is the case in which none of that can happen, which is why it is treated first.
 
 ## Summary
 
 Every nonzero real number has exactly one polar representation $a = r\sigma$, with modulus $r = \sqrt{N(a)} = |a| > 0$ and sign $\sigma = a/|a| \in \{\pm1\}$. The modulus is fixed and of signature $+1$ and carries one parameter; the sign is fixed, discrete and carries none; the counts add to the real dimension one. The sign group is $O(1) \cong \mathbb{Z}/2$, the orthogonal group of the line, and its two elements are the two components of $\mathbb{R}^\times = \mathbb{R}_{>0}\times\{\pm1\}$, which is why the real unit group is disconnected while the complex one is connected.
 
-The exponential of the real algebra is governed by the trichotomy $\nu^2 = -1, 0, +1$: the trigonometric row is empty, so there is no continuous rotor and no continuous phase; the parabolic row contains only $\nu = 0$, so it is degenerate; and the hyperbolic row contains $\nu = \pm1$, whose exponentials are the positive ray $\exp(\mathbb{R}) = \mathbb{R}_{>0}$. The nontrivial sign $\sigma = -1$ is therefore not an exponential, and the exponential form of the representation reads $a = \exp(t)\sigma$ with $t = \ln|a|$ and $\sigma \in O(1)$; the kernel of the exponential is trivial. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, the scale and the compact slot, and the second is discrete. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the splitting of the signed similarity $[a]$ into the scalar $[r]$ and the reflection $[\sigma]$.
+The exponential of the real algebra is governed by the rule $\nu^2 = -1, 0, +1$: the trigonometric row is empty, so there is no continuous rotor and no continuous phase; the parabolic row contains only $\nu = 0$, so it is degenerate; and the hyperbolic row contains $\nu = \pm1$, whose exponentials are the positive ray $\exp(\mathbb{R}) = \mathbb{R}_{>0}$. The nontrivial sign $\sigma = -1$ is therefore not an exponential, and the exponential form of the representation reads $a = \exp(t)\sigma$ with $t = \ln|a|$ and $\sigma \in O(1)$; the kernel of the exponential is trivial. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, the scale and the compact slot, and the second is discrete. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the splitting of the signed similarity $[a]$ into the scalar $[r]$ and the reflection $[\sigma]$.
 
 ## Summary of Notation
 

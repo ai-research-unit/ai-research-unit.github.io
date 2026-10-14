@@ -199,7 +199,7 @@ $$
 \vec\mu(t) = \mathcal{R}\!\left(-\gamma B t,\;\hat B\right)\vec\mu(0),
 $$
 
-where $\mathcal{R}(\theta,\hat n)$ is the right-handed rotation through $\theta$ about $\hat n$. For a moment initially making an angle $\alpha$ with the field, the component along the field is constant, $\mu_\parallel = \mu\cos\alpha$, and the transverse component rotates uniformly,
+where $\mathcal{R}(\theta,\hat u)$ is the right-handed rotation through $\theta$ about $\hat u$. For a moment initially making an angle $\alpha$ with the field, the component along the field is constant, $\mu_\parallel = \mu\cos\alpha$, and the transverse component rotates uniformly,
 
 $$
 \mu_\perp(t) = \mu\sin\alpha\left(\cos\gamma B t,\;-\sin\gamma B t\right)
@@ -211,11 +211,11 @@ in a right-handed basis whose third axis is $\hat B$. The signed rate $\gamma B$
 
 ### The Rotation Rotor
 
-The rotor algebra is stated here explicitly, because the precession solution and the reciprocal effects of the following article are both written in it. A rotation through angle $\theta$ about the unit real axis $\hat n$ is produced by the **unit real quaternion**
+The rotor algebra is stated here explicitly, because the precession solution and the reciprocal effects of the following article are both written in it. A rotation through angle $\theta$ about the unit real axis $\hat u$ is produced by the **unit real quaternion**
 
 $$
-\tilde{R}(\theta,\hat n) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\;\hat{n}_k e_k
-= \exp\!\left(\frac{\theta}{2}\,\hat{n}_k e_k\right),
+\tilde{R}(\theta,\hat u) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\;\hat u_k e_k
+= \exp\!\left(\frac{\theta}{2}\,\hat u_k e_k\right),
 $$
 
 acting on a pure real vector by **rotor conjugation**,
@@ -226,7 +226,7 @@ $$
 \tilde{R}\,\tilde{R}^{*} = e_0 .
 $$
 
-The conjugation rotates $\vec v$ through the angle $\theta$ about $\hat n$ in the right-handed sense. Two elementary properties are used repeatedly. First, the rotor is normalized, $N(\tilde{R}) = \tilde{R}\tilde{R}^{\natural} = e_0$, so the conjugation preserves the biquaternion norm of every vector it acts on. Second, the half-angle makes the rotor a **double cover** of the rotation: $\tilde{R}(\theta + 2\pi,\hat n) = -\tilde{R}(\theta,\hat n)$, and the two rotors $\pm\tilde{R}$ produce the same rotation. The rotation group is therefore $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\}$, with $\mathbb{H}_{\mathbb{B}}^1$ the group of unit real quaternions, which is $SU(2)$.
+The conjugation rotates $\vec v$ through the angle $\theta$ about $\hat u$ in the right-handed sense. Two elementary properties are used repeatedly. First, the rotor is normalized, $N(\tilde{R}) = \tilde{R}\tilde{R}^{\natural} = e_0$, so the conjugation preserves the biquaternion norm of every vector it acts on. Second, the half-angle makes the rotor a **double cover** of the rotation: $\tilde{R}(\theta + 2\pi,\hat u) = -\tilde{R}(\theta,\hat u)$, and the two rotors $\pm\tilde{R}$ produce the same rotation. The rotation group is therefore $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\}$, with $\mathbb{H}_{\mathbb{B}}^1$ the group of unit real quaternions, which is $SU(2)$.
 
 
 ### The Precession as a Rotor
@@ -328,7 +328,7 @@ For a rigid rotor with proportional charge and mass densities, the moment and th
 
 ## Relation to the Quantum Treatment
 
-The precession of a spin-$\tfrac{1}{2}$ in a magnetic field is treated in the sibling quantum category, in the companion articles *Spin-1/2 Quantum Physics in Biquaternionic Form* and *Exercise: Spin Precession in a Magnetic Field*. There the state is an idempotent $P = \tfrac{1}{2}(e_0 + i\hat n)$ of $\mathbb{M}_+$, the Hamiltonian is the Hermitian element $\tilde{H} = -\gamma B_0\tilde{S}_z$ with $\tilde{S}_z = \tfrac{\hbar}{2}ie_3$, the evolution is the rotor conjugation $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$ with $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$, and the expectation value is the trace pairing $\langle\tilde{S}_x\rangle = \mathrm{Tr}(\tilde{\rho}\tilde{S}_x)$. The evolved Bloch vector is $\vec r(t) = \cos(\gamma B t)e_1 - \sin(\gamma B t)e_2$, which is the precession derived here, with the same frequency and the same sense.
+The precession of a spin-$\tfrac{1}{2}$ in a magnetic field is treated in the sibling quantum category, in the companion articles *Spin-1/2 Quantum Physics in Biquaternionic Form* and *Exercise: Spin Precession in a Magnetic Field*. There the state is an idempotent $P = \tfrac{1}{2}(e_0 + i\hat u)$ of $\mathbb{M}_+$, the Hamiltonian is the Hermitian element $\tilde{H} = -\gamma B_0\tilde{S}_z$ with $\tilde{S}_z = \tfrac{\hbar}{2}ie_3$, the evolution is the rotor conjugation $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$ with $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$, and the expectation value is the trace pairing $\langle\tilde{S}_x\rangle = \mathrm{Tr}(\tilde{\rho}\tilde{S}_x)$. The evolved Bloch vector is $\vec r(t) = \cos(\gamma B t)e_1 - \sin(\gamma B t)e_2$, which is the precession derived here, with the same frequency and the same sense.
 
 The two treatments agree because they are the same rotor. The classical moment of this article lives in $\mathbb{H}_{\mathbb{B}}$ as a real pure quaternion and is rotated by $\tilde{R}_L(t) = \exp(-\tfrac{1}{2}\gamma B t\,\hat{B}_k e_k)$; the quantum state lives in $\mathbb{M}_+$ and is rotated by $\tilde{U}(t)$, whose vector part is the same unit real quaternion. The factor $i$ that separates the two representatives is the sector exchange, not a physical difference. What the quantum treatment adds is the Born rule and the state; what this article adds is that the precession needs neither, because the moment of a classical current distribution obeys the same Larmor equation as the mean spin. The two are different derivations of one motion, and the classical one is the subject of this subcategory.
 
@@ -389,8 +389,8 @@ The gyromagnetic ratio is $\gamma = g\,q/2m$, with $g = 1$ for a convective mome
 | $\vec\omega_L = -\gamma\vec B$ | Larmor angular velocity |
 | $\omega_L = |\gamma|B$ | Larmor frequency |
 | $\tilde{\vec\omega}_L = \gamma\vec B$ | Larmor biquaternion (Larmor equation) |
-| $\tilde{R}(\theta,\hat n) = \cos\tfrac{\theta}{2}e_0 + \sin\tfrac{\theta}{2}\hat{n}_ke_k$ | Rotation rotor (unit real quaternion) |
-| $\mathcal{R}(\theta,\hat n)$ | Three-vector rotation through $\theta$ about $\hat n$ |
+| $\tilde{R}(\theta,\hat u) = \cos\tfrac{\theta}{2}e_0 + \sin\tfrac{\theta}{2}\hat u_ke_k$ | Rotation rotor (unit real quaternion) |
+| $\mathcal{R}(\theta,\hat u)$ | Three-vector rotation through $\theta$ about $\hat u$ |
 | $\tilde{\vec\mu}(t) = \tilde{R}_L\tilde{\vec\mu}(0)\tilde{R}_L^{*}$ | Precession as rotor conjugation |
 | $U = -\vec\mu\cdot\vec B = \mathrm{Sc}(\tilde{\vec\mu}\vec B)$ | Magnetic energy |
 | $\vec\tau = \vec\mu\times\vec B = \mathrm{Vect}(\tilde{\vec\mu}\vec B)$ | Magnetic torque |

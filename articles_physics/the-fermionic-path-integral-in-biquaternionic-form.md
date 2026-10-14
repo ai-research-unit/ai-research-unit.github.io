@@ -207,10 +207,10 @@ whose logarithm is the free energy of the fermion gas. The identity is the stand
 The measure carries the parity, and the two fermion-parity sectors appear as a **relative sign**, not as two integrands. An integral of an odd element vanishes, so the integrand of a Gaussian — the even element $\exp(-\bar\psi M\psi)$ — has no odd part to remove; what distinguishes the sectors is the *boundary condition* in imaginary time. The two basic traces are
 
 $$
-\mathrm{Tr}\,e^{-\beta\hat H}
+\mathrm{Tr}\,e^{-\beta H^{\mathrm{fop}}}
 =\int_{\text{antiperiodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;e^{-S_{\mathrm{E}}} ,
 \qquad
-\mathrm{Tr}\,(-1)^{\hat F}e^{-\beta\hat H}
+\mathrm{Tr}\,(-1)^{F^{\mathrm{fop}}}e^{-\beta H^{\mathrm{fop}}}
 =\int_{\text{periodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;e^{-S_{\mathrm{E}}} ,
 $$
 

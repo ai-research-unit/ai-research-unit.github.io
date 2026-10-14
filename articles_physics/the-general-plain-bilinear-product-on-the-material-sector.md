@@ -260,7 +260,7 @@ zero.
 
 The same argument in reverse says what does carry the projections: an idempotent that is a sector element
 is Hermitian, and the nontrivial ones are the minimal projections
-$\tilde\Pi=\tfrac12(e_0\pm i\hat\mu)$ with $\hat\mu$ a real unit vector, a two-sphere's worth, of which
+$\tilde\Pi=\tfrac12(e_0\pm i\hat u)$ with $\hat u$ a real unit vector, a two-sphere's worth, of which
 the six the coordinate basis displays are $\tfrac12(e_0\pm ie_k)$. These are the pure states of the
 informational sector. The classification of the idempotents is the mathematics of *Idempotents of the
 General Plain Algebra*.

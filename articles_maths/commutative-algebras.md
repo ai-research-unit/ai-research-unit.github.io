@@ -201,7 +201,7 @@ $$
 which is well defined because the preimage of a prime ideal is prime, and continuous because $(\phi^*)^{-1}V(\mathrm{A}) = V(B\phi(\mathrm{A}))$. The assignment is contravariant: $(\psi \circ \phi)^* = \phi^* \circ \psi^*$, and $(\mathrm{id})^* = \mathrm{id}$. Thus
 
 $$
-\operatorname{Spec} : \mathsf{CAlg}_R^{\mathrm{op}} \longrightarrow \mathsf{Top}
+\operatorname{Spec} : \mathsf{CAlg}_R^{\mathrm{opp}} \longrightarrow \mathsf{Top}
 $$
 
 is a functor from the opposite category of commutative $R$-algebras to topological spaces.
@@ -244,7 +244,7 @@ It follows that $\operatorname{Spec} A$ is disconnected if and only if $A$ has a
 
 ## Summary
 
-A **commutative $R$-algebra** is an associative, commutative, unital $R$-algebra, and the category $\mathsf{CAlg}_R$ has the polynomial algebras as its free objects: $R[x_s : s \in X]$ is free on $X$, and every algebra is a quotient of a polynomial algebra. The symmetric algebra of a module is the free commutative algebra on that module, so the polynomial algebra and the symmetric algebra are the same construction. The **tensor product** $A\otimes_R B$ with the product $(a\otimes b)(a'\otimes b') = aa'\otimes bb'$ is the **coproduct** in $\mathsf{CAlg}_R$; it is the universal algebra receiving both $A$ and $B$, and the proof uses the commutativity of the target. Without commutativity the tensor product is not a coproduct, and the coproduct is the free product instead. The **prime spectrum** $\operatorname{Spec} A$ with the Zariski topology is the set of prime ideals, functorial and contravariant, $\operatorname{Spec} : \mathsf{CAlg}_R^{\mathrm{op}}\to\mathsf{Top}$; the closed points are the maximal ideals, and the closed sets detect radical ideals, the nilradical being the intersection of the primes. The coproduct theorem reads geometrically as the statement that the spectrum of a tensor product of finitely presented algebras is the fibre product of the spectra over $\operatorname{Spec} R$.
+A **commutative $R$-algebra** is an associative, commutative, unital $R$-algebra, and the category $\mathsf{CAlg}_R$ has the polynomial algebras as its free objects: $R[x_s : s \in X]$ is free on $X$, and every algebra is a quotient of a polynomial algebra. The symmetric algebra of a module is the free commutative algebra on that module, so the polynomial algebra and the symmetric algebra are the same construction. The **tensor product** $A\otimes_R B$ with the product $(a\otimes b)(a'\otimes b') = aa'\otimes bb'$ is the **coproduct** in $\mathsf{CAlg}_R$; it is the universal algebra receiving both $A$ and $B$, and the proof uses the commutativity of the target. Without commutativity the tensor product is not a coproduct, and the coproduct is the free product instead. The **prime spectrum** $\operatorname{Spec} A$ with the Zariski topology is the set of prime ideals, functorial and contravariant, $\operatorname{Spec} : \mathsf{CAlg}_R^{\mathrm{opp}}\to\mathsf{Top}$; the closed points are the maximal ideals, and the closed sets detect radical ideals, the nilradical being the intersection of the primes. The coproduct theorem reads geometrically as the statement that the spectrum of a tensor product of finitely presented algebras is the fibre product of the spectra over $\operatorname{Spec} R$.
 
 ## Summary of Notation
 

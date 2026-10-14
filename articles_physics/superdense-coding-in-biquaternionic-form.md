@@ -41,7 +41,7 @@ The state $P_{\Phi^+}$ has the following properties, all used in the protocol:
 
 - it is **pure**, $P_{\Phi^+}^2 = P_{\Phi^+}$, and positive, with trace one;
 - it is **maximally entangled**: its partial traces are both maximally mixed, $\mathrm{Tr}_B P_{\Phi^+} = \mathrm{Tr}_A P_{\Phi^+} = \tfrac12 e_0$;
-- it is a **maximal-uncertainty** state with respect to every local basis: the reduced state of either qubit alone carries no information, $\mathrm{Tr}(\tilde\Pi(\hat{n})\,\mathrm{Tr}_B P_{\Phi^+}) = \tfrac12$ for every direction $\hat{n}$.
+- it is a **maximal-uncertainty** state with respect to every local basis: the reduced state of either qubit alone carries no information, $\mathrm{Tr}(\tilde\Pi(\hat u)\,\mathrm{Tr}_B P_{\Phi^+}) = \tfrac12$ for every direction $\hat u$.
 
 The last property is what makes the protocol worth performing: **Alice's half, on its own, contains no information about anything**, so all the transmitted information must be created by her local operation and revealed only by Bob's joint measurement. This is the operational meaning of maximal entanglement in the algebra.
 

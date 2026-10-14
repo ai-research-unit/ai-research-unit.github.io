@@ -23,7 +23,7 @@ $$
 
 with the two classes represented by $\mathbb{R}$ and by $\mathbb{H}$. The class of $\mathbb{C}$ is not defined, because $\mathbb{C}$ is not central over $\mathbb{R}$.
 
-**Proof.** Associativity and the unit are those of the tensor product; the inverse of the class of $A=M_n(D)$ is the class of the opposite algebra $A^{\mathrm{op}}$, since $A\otimes A^{\mathrm{op}}\cong M_{n^2}(F)$ is Morita trivial. The classification over $\mathbb{R}$ is the Frobenius–Wedderburn theorem: the finite-dimensional real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and only $\mathbb{R}$ and $\mathbb{H}$ are central over $\mathbb{R}$.
+**Proof.** Associativity and the unit are those of the tensor product; the inverse of the class of $A=M_n(D)$ is the class of the opposite algebra $A^{\mathrm{opp}}$, since $A\otimes A^{\mathrm{opp}}\cong M_{n^2}(F)$ is Morita trivial. The classification over $\mathbb{R}$ is the Frobenius–Wedderburn theorem: the finite-dimensional real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, and only $\mathbb{R}$ and $\mathbb{H}$ are central over $\mathbb{R}$.
 
 The Brauer group is the right home for the *ungraded* Clifford algebra: an even-dimensional non-degenerate Clifford algebra is central simple, and its Morita class depends on the discriminant and the Hasse invariant of the form. But it discards the $\mathbb{Z}/2$-grading, and the grading is what the spin representations use. Refining the Brauer group by the grading is therefore necessary.
 
@@ -152,7 +152,7 @@ Over $\mathbb{R}$ the Brauer–Wall group is cyclic of order eight, $\mathrm{BW}
 |---|---|
 | $F$ | Field of characteristic not $2$ |
 | $\mathrm{Br}(F)$ | Brauer group of central simple $F$-algebras up to Morita equivalence; $\mathrm{Br}(\mathbb{R})=\mathbb{Z}/2$ |
-| $A^{\mathrm{op}}$ | Opposite algebra, inverse of the class of $A$ in $\mathrm{Br}(F)$ |
+| $A^{\mathrm{opp}}$ | Opposite algebra, inverse of the class of $A$ in $\mathrm{Br}(F)$ |
 | $A=A^0\oplus A^1$ | Grading of a graded algebra |
 | $\hat\otimes$ | Graded tensor product, $(a\otimes b)(a'\otimes b')=(-1)^{|b||a'|}(aa'\otimes bb')$ |
 | $\mathrm{BW}(F)$ | Brauer–Wall group of graded central simple algebras up to graded Morita equivalence |

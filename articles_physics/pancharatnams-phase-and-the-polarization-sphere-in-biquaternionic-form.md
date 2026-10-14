@@ -13,7 +13,7 @@ The Poincaré sphere is a level set of the biquaternion norm of the biquaternion
 
 The article is classical optics in the algebra. The "state" of a beam is its classical coherence matrix, the connection lives on the classical ray space, and the interference is classical. The companion article on the Berry phase develops the quantum two-level system, which shares the geometry; here the physics is a light beam, two polarizers, and an interferometer.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; ${}^{*}$ is Hermitian conjugation; $\mathbb{M}_+$ is the Hermitian sector, $\mathbb{M}_-$ the anti-Hermitian one; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. The Poincaré sphere is parametrised by the unit Stokes vector $\hat n=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central, $i^2=-1$; ${}^{*}$ is Hermitian conjugation; $\mathbb{M}_+$ is the Hermitian sector, $\mathbb{M}_-$ the anti-Hermitian one; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. The Poincaré sphere is parametrised by the unit Stokes vector $\hat u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$.
 
 The companion articles are:
 - Companion article *The Symplectic Form and the Biquaternion Norm Cone*, for the biquaternion-norm cone and its role as a level set.
@@ -50,7 +50,7 @@ $$
 P=\frac{\sqrt{S_1^2+S_2^2+S_3^2}}{S_0},
 $$
 
-$P=1$ for a fully polarized beam and $P=0$ for an unpolarized one. For a fully polarized beam the normalised Stokes vector $\hat n=\vec S/S_0$ is a unit vector, and the map $\vec J\mapsto\hat n$ sends rays to points of the unit sphere: the **Poincaré sphere**. Right and left circular polarizations are the poles, linear polarizations form the equator, and the antipode of a polarization is the orthogonal one.
+$P=1$ for a fully polarized beam and $P=0$ for an unpolarized one. For a fully polarized beam the normalised Stokes vector $\hat u=\vec S/S_0$ is a unit vector, and the map $\vec J\mapsto\hat u$ sends rays to points of the unit sphere: the **Poincaré sphere**. Right and left circular polarizations are the poles, linear polarizations form the equator, and the antipode of a polarization is the orthogonal one.
 
 The quantity $\langle A|B\rangle=\vec J_A^\dagger\vec J_B$ is the overlap of two Jones vectors; its modulus is $\sqrt{S_0^AS_0^B}$ times the cosine of half the angle between the Poincaré points of the two beams, and it sets the visibility of the interference between them.
 
@@ -110,34 +110,34 @@ for the beam, and the same cone is the Hermitian idempotent sphere of the sector
 
 The two elementary optical elements, the polarizer and the phase shifter, are in the algebra a **projector** and a **rotor**, and the contrast between the two is the content of this section.
 
-**The polarizer.** A polarizer that transmits the polarization $\hat n$ is the rank-one projector of $\mathbb{M}_+$
+**The polarizer.** A polarizer that transmits the polarization $\hat u$ is the rank-one projector of $\mathbb{M}_+$
 
 $$
-\tilde\Pi_{\hat n} = \tfrac12\left(e_0 + i\hat n\right),
+\tilde\Pi_{\hat u} = \tfrac12\left(e_0 + i\hat u\right),
 \qquad
-\tilde\Pi_{\hat n}^2 = \tilde\Pi_{\hat n},
+\tilde\Pi_{\hat u}^2 = \tilde\Pi_{\hat u},
 \qquad
-\tilde\Pi_{\hat n}^{\dagger} = \tilde\Pi_{\hat n},
+\tilde\Pi_{\hat u}^{\dagger} = \tilde\Pi_{\hat u},
 $$
 
 the same element that the wave article identifies as the flagpole of a circular polarization. Its action on the coherence biquaternion is the rank-one projection
 
 $$
-\tilde\rho \;\longmapsto\; \tilde\Pi_{\hat n}\,\tilde\rho\,\tilde\Pi_{\hat n} = \mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\hat n}\right)\tilde\Pi_{\hat n},
+\tilde\rho \;\longmapsto\; \tilde\Pi_{\hat u}\,\tilde\rho\,\tilde\Pi_{\hat u} = \mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\hat u}\right)\tilde\Pi_{\hat u},
 $$
 
 which holds because a rank-one projector satisfies $\tilde\Pi\tilde\rho\tilde\Pi = \mathrm{Tr}(\tilde\rho\tilde\Pi)\tilde\Pi$. The trace is Malus' law,
 
 $$
-\mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\hat n}\right) = \tfrac12\left(S_0 + \hat n\cdot\vec S\right),
+\mathrm{Tr}\!\left(\tilde\rho\,\tilde\Pi_{\hat u}\right) = \tfrac12\left(S_0 + \hat u\cdot\vec S\right),
 $$
 
 so the transmitted intensity follows the cosine of the angle between the polarizer axis and the Stokes vector. The two opposite axes give complementary projectors,
 
 $$
-\tilde\Pi_{\hat n} + \tilde\Pi_{-\hat n} = e_0,
+\tilde\Pi_{\hat u} + \tilde\Pi_{-\hat u} = e_0,
 \qquad
-\tilde\Pi_{-\hat n}\,\tilde\Pi_{\hat n} = 0 ,
+\tilde\Pi_{-\hat u}\,\tilde\Pi_{\hat u} = 0 ,
 $$
 
 which is the algebraic statement that two orthogonal polarizations are mutually exclusive: the projector onto one annihilates the other. This orthogonality is what makes the Stokes sphere a sphere of states rather than of directions.
@@ -145,10 +145,10 @@ which is the algebraic statement that two orthogonal polarizations are mutually 
 **The phase shifter.** A phase shifter that retards one circular component relative to the other is the rotor
 
 $$
-\tilde U_{\hat n}(\alpha) = e^{\alpha\hat n/2} = \cos\tfrac{\alpha}{2}\,e_0 + \sin\tfrac{\alpha}{2}\,\hat n \in \mathbb{H}_{\mathbb{B}},
+\tilde U_{\hat u}(\alpha) = e^{\alpha\hat u/2} = \cos\tfrac{\alpha}{2}\,e_0 + \sin\tfrac{\alpha}{2}\,\hat u \in \mathbb{H}_{\mathbb{B}},
 $$
 
-acting by $\tilde\rho \mapsto \tilde U\tilde\rho\,\tilde U^{*}$ with $\tilde U^{*} = \tilde U_{\hat n}(-\alpha) = \tilde U_{\hat n}^{-1}$. It fixes $S_0$ and the component $\hat n\cdot\vec S$, and rotates the transverse part of $\vec S$ about $\hat n$ by the angle $\alpha$: the phase shifter is a **rotation of the Poincaré sphere**. This is the Faraday effect, with $\hat n$ the propagation direction and $\alpha$ proportional to the Verdet constant and the path; in a birefringent medium the same rotor has $\hat n$ the optic axis and $\alpha$ the retardation.
+acting by $\tilde\rho \mapsto \tilde U\tilde\rho\,\tilde U^{*}$ with $\tilde U^{*} = \tilde U_{\hat u}(-\alpha) = \tilde U_{\hat u}^{-1}$. It fixes $S_0$ and the component $\hat u\cdot\vec S$, and rotates the transverse part of $\vec S$ about $\hat u$ by the angle $\alpha$: the phase shifter is a **rotation of the Poincaré sphere**. This is the Faraday effect, with $\hat u$ the propagation direction and $\alpha$ proportional to the Verdet constant and the path; in a birefringent medium the same rotor has $\hat u$ the optic axis and $\alpha$ the retardation.
 
 **Two kinds of operation.** The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general lossless optical element is a product of the two — a rotor for the retardation and a projector for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$.
 
@@ -193,7 +193,7 @@ $$
 (E_R,E_L)=\left(\cos\tfrac{\theta}{2},\ \sin\tfrac{\theta}{2}\,e^{i\phi}\right),
 $$
 
-normalised to $S_0=1$; the phase of the first component is a choice of gauge, and the second is the relative phase. The circular basis is the one in which the axes of the parametrisation are the axes of the sphere: the polar component of the Stokes vector is the difference of the two intensities and the equatorial pair is carried by their relative phase, so that, with the two circular senses named in the sign convention of $S_3$, the amplitude above carries exactly the Stokes vector $\hat n=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$. Differentiating,
+normalised to $S_0=1$; the phase of the first component is a choice of gauge, and the second is the relative phase. The circular basis is the one in which the axes of the parametrisation are the axes of the sphere: the polar component of the Stokes vector is the difference of the two intensities and the equatorial pair is carried by their relative phase, so that, with the two circular senses named in the sign convention of $S_3$, the amplitude above carries exactly the Stokes vector $\hat u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$. Differentiating,
 
 $$
 \langle J|\partial_\theta J\rangle=0,\qquad
@@ -323,7 +323,7 @@ The phase is classical: it is measured by the shift of interference fringes of a
 | $\tilde\rho=\frac12(S_0e_0+i\vec S\cdot\tilde e)\in\mathbb{M}_+$ | Coherence biquaternion |
 | $N(\tilde\rho)=\frac14(S_0^2-\vec S^2)$ | Biquaternion norm; indefinite on $\mathbb{M}_+$ |
 | $N(\tilde\rho)=0$ | Cone: fully polarized states = Poincaré sphere = idempotents |
-| $\hat n=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$ | Unit Stokes vector on the Poincaré sphere |
+| $\hat u=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$ | Unit Stokes vector on the Poincaré sphere |
 | $\vec J(\theta,\phi)=(\cos\frac\theta2,\sin\frac\theta2e^{i\phi})$ | Normalised Jones vector |
 | $\mathcal A=-\frac12(1-\cos\theta)d\phi$ | Pancharatnam connection |
 | $\mathcal F=-\frac12\sin\theta\,d\theta\wedge d\phi$ | Curvature, half the area form |
@@ -342,4 +342,4 @@ The phase is classical: it is measured by the shift of interference fringes of a
 - M. Born and E. Wolf, *Principles of Optics* (Cambridge, 1999), for the Stokes parameters, the Poincaré sphere, and the coherence matrix.
 - G. B. Airy, "On the composition and resolution of streams of polarized light from different sources," *Transactions of the Cambridge Philosophical Society* **9** (1852) 399, for the early interference of polarized beams.
 - J. H. Hannay, "Angle variable holonomy in adiabatic excursion of an integrable Hamiltonian," *Journal of Physics A* **18** (1985) 221–230, for the dynamical counterpart of the same geometry.
-- William E. Baylis, *Geometry of Paravector Space, with Applications to Relativistic Physics* (University of Windsor lecture, 2003), for the polarizer as the idempotent projector $\tfrac12(1+\hat n)$ and the phase shifter as the Stokes-space rotation $e^{i\hat n\alpha/2}$ — the two operations transcribed into the series' conventions in *Polarizers and Phase Shifters as Algebra Elements* above.
+- William E. Baylis, *Geometry of Paravector Space, with Applications to Relativistic Physics* (University of Windsor lecture, 2003), for the polarizer as the idempotent projector $\tfrac12(1+\hat u)$ and the phase shifter as the Stokes-space rotation $e^{i\hat u\alpha/2}$ — the two operations transcribed into the series' conventions in *Polarizers and Phase Shifters as Algebra Elements* above.

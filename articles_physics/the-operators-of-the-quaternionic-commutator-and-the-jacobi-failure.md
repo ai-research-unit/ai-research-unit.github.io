@@ -372,7 +372,7 @@ obstruction.
 
 ## The Operators Acting on the State Space
 
-The state space is $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$, the minimal
+The state space is $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$, the minimal
 left ideal of *The Spinor Space as a Module and as a Hilbert Space*, with the complementary ideal
 $\mathbb{B}\tilde\Pi_-$ of *The Complementary Space of the Spinor Space and Its Physical Meaning*.
 

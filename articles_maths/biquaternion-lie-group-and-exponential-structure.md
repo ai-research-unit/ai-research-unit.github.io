@@ -18,7 +18,7 @@ $$
 S^3 = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : N(\tilde q) = 1\},
 $$
 
-a compact, connected, simply connected real Lie group of real dimension $3$. Every such $\tilde q$ is $\cos\theta\, e_0 + \sin\theta\, \hat{n}$ with $\hat{n}$ a real unit vector part, the quaternion exponential.
+a compact, connected, simply connected real Lie group of real dimension $3$. Every such $\tilde q$ is $\cos\theta\, e_0 + \sin\theta\, \hat u$ with $\hat u$ a real unit vector part, the quaternion exponential.
 
 Complexifying the coefficients turns $N(\tilde q) = 1$ into the same equation over $\mathbb{C}$, giving the **unit-norm subgroup**
 
@@ -134,7 +134,7 @@ the source's rule, which is the statement of *Association and the Transpose on t
 
 The exponential of the full unit group is surjective (*Biquaternion Elementary Functions*, §*The Logarithm*), but the two distinguished subgroups behave differently.
 
-**The compact subgroup: surjective.** Every unit quaternion is $\cos\theta\, e_0 + \sin\theta\,\hat{n} = \exp(\theta\hat{n})$, so $\exp : \mathrm{K} \to S^3$ is surjective; this is the general fact that a connected compact Lie group has a surjective exponential map.
+**The compact subgroup: surjective.** Every unit quaternion is $\cos\theta\, e_0 + \sin\theta\,\hat u = \exp(\theta\hat u)$, so $\exp : \mathrm{K} \to S^3$ is surjective; this is the general fact that a connected compact Lie group has a surjective exponential map.
 
 **The full group: not surjective.** The exponential $\exp : \mathrm{B}_0 \to \mathbb{B}^\times_1$ is **not** surjective: $\mathbb{B}^\times_1$ is not exponential. The element of $\mathbb{B}^\times_1$ with scalar part $-1$ and non-semi-simple behaviour, corresponding to the non-diagonalizable norm-one element with the repeated eigenvalue $-1$, is
 

@@ -403,7 +403,7 @@ $t$. The pure isotropic cone is therefore the square-zero locus, and its nilpote
 first power is nonzero and the second vanishes.
 
 The square-zero locus is a proper part of the cone. An idempotent multiple, for instance the Hermitian
-idempotent $\tilde\Pi=\tfrac12(e_0+i\hat\mu)$ with
+idempotent $\tilde\Pi=\tfrac12(e_0+i\hat u)$ with
 $\tilde\Pi^{2}=\tilde\Pi$, has vanishing norm and a nonzero square, so the cone is the disjoint union of
 the square-zero elements and the elements whose square is not zero.
 
@@ -689,11 +689,11 @@ $$
 
 so the massless condition $N(\tilde P)=0$ is $\lvert\vec p\rvert=E/c$, and the four-momentum is a zero
 divisor. The lightlike momentum has a second face. With
-$\hat n=\vec p/\lvert\vec p\rvert$ and
-$\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$, it is the imaginary multiple
+$\hat u=\vec p/\lvert\vec p\rvert$ and
+$\tilde\Pi(\hat u)=\tfrac12(e_0+i\hat u)$, it is the imaginary multiple
 
 $$
-\tilde P=2i\frac{E}{c}\,\tilde\Pi(-\hat n)
+\tilde P=2i\frac{E}{c}\,\tilde\Pi(-\hat u)
 $$
 
 of a rank-one Hermitian idempotent, so it is not merely non-invertible but a scaled projector. That
@@ -704,7 +704,7 @@ and What It Does Not*; the comparison uses them and does not re-derive them.
 The probability band completes the picture. The sesquilinear square of the same momentum is
 
 $$
-\tilde P\star\tilde P=4\frac{E^{2}}{c^{2}}\,\tilde\Pi(-\hat n),
+\tilde P\star\tilde P=4\frac{E^{2}}{c^{2}}\,\tilde\Pi(-\hat u),
 $$
 
 a positive multiple of the **same** projector. The **interpretation**, and it is this article's, is that
@@ -1060,8 +1060,8 @@ Readings of a Biquaternion: Norm, Rank, Charge and Scale*). The **Krein form** i
 **Krein cone**, the set of elements of non-negative Krein norm with respect to which the framework's
 indefinite-sector positivity is stated; its inertia is $(1,3,0)$ on the complexified Hermitian subspace and
 $(2,6,0)$ over $\mathbb{R}$ (*Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*).
-The **vacuum** lies on the cone: the minimal idempotent $\tilde\Pi(\hat\mu)$ is null for every
-unit $\hat\mu$, so $e_0=\tilde\Pi(\hat\mu)+\tilde\Pi(-\hat\mu)$
+The **vacuum** lies on the cone: the minimal idempotent $\tilde\Pi(\hat u)$ is null for every
+unit $\hat u$, so $e_0=\tilde\Pi(\hat u)+\tilde\Pi(-\hat u)$
 decomposes the unit along two null directions — the algebraic shape of a light-cone frame — and the cone is
 the union of the rays that the projectors single out (*The Biquaternion Vacuum as a Minimal Idempotent*).
 The **Lorentz group is the group of norm automorphisms** whose nonzero null vectors are the zero divisors,
@@ -1113,7 +1113,7 @@ made with the **Krein cone** of the negative of the interval
 
 Two further grid statements belong here. The cone's **isotropic lines are its Peirce lines**: the doubly null
 lines, the isotropic lines that lie in the norm cone as well, are exactly the Peirce lines
-$\mathbb{C}(e_0\pm i\hat\mu)$ spanned by the rank-one Hermitian idempotents, each generating a
+$\mathbb{C}(e_0\pm i\hat u)$ spanned by the rank-one Hermitian idempotents, each generating a
 minimal left and a minimal right ideal of complex dimension two all of whose elements are zero divisors, and
 the intersection of the cone with the Krein null set is the union of those lines, a cone of real dimension
 four (*The Isotropic Structure of the General Quaternionic Sesqualgebra*, *Ideals and Peirce Decomposition of
@@ -1310,7 +1310,7 @@ non-invertible without being lightlike.
 - "The cone" without qualification is the zero-divisor cone; the state cone is the future cone of $\mathbb{M}_+$, and the cone of an operation is the ray $\mathbb{R}_{\ge0}e_0$. The gauge metric has its own null set $\{K=0\}$.
 - The twelve rows: GPA, GQA, GPS, GQS the four general products; SPA, SQA, SPS, SQS the symmetric parts; APA, AQA, APS, AQS the antisymmetric parts; $L_{\tilde P}$ the left multiplication of the row, of rank read on the eight real parameters; $\Theta_{\tilde Q}$ the sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$.
 - $\mathbb{M}_\pm$ the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ the centre.
-- $\tilde\Pi$ a plain idempotent, $\tilde\Pi^{2}=\tilde\Pi$; $\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$.
+- $\tilde\Pi$ a plain idempotent, $\tilde\Pi^{2}=\tilde\Pi$; $\tilde\Pi(\hat u)=\tfrac12(e_0+i\hat u)$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$.
 - $\mathsf{M}_2$ the $2\times2$ matrix model, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$; $\mathrm{ISO}(2)$ the massless little group.
 
 ## Further Reading

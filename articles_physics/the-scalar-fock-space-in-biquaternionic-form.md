@@ -80,7 +80,7 @@ $$
 \hat a(\vec p):\ \mathrm{Sym}^n\to\mathrm{Sym}^{n-1},
 $$
 
-and the **occupation basis** $|n_{\vec p_1},n_{\vec p_2},\dots\rangle$, with finitely many nonzero occupations, diagonalizes the single-family number operator $\hat n=\int\frac{d^3p}{(2\pi)^3}\hat a^\dagger_{\vec p}\hat a_{\vec p}$, whose eigenvalues are the total occupation of the particle modes; the total number operator of the complex field, below, adds the antiparticle family. The basis vectors are obtained from the vacuum by
+and the **occupation basis** $|n_{\vec p_1},n_{\vec p_2},\dots\rangle$, with finitely many nonzero occupations, diagonalizes the single-family number operator $\hat u=\int\frac{d^3p}{(2\pi)^3}\hat a^\dagger_{\vec p}\hat a_{\vec p}$, whose eigenvalues are the total occupation of the particle modes; the total number operator of the complex field, below, adds the antiparticle family. The basis vectors are obtained from the vacuum by
 
 $$
 |n_{\vec p_1},n_{\vec p_2},\dots\rangle
@@ -172,9 +172,9 @@ $$
 the density in which every creation operator stands to the left of every annihilation operator. The first two terms are the particle and antiparticle number densities and the last two are the crossed particle–antiparticle terms; all four terms of $\hat\phi^\dagger\hat\phi$ appear, the antiparticle density displayed second being the one term whose operators are reversed relative to the unordered product $\hat\phi^{(-){}^{*}}\hat\phi^{(-)}$. The normal-ordered density has vanishing vacuum expectation by construction, whereas the unordered product carries the c-number commutator $[\hat\phi^{(-){}^{*}},\hat\phi^{(-)}]$; this is why the vacuum energy of the companion quantization is a contact term. Integrating the normal-ordered density over space and projecting onto a mode gives the mode number,
 
 $$
-\hat n_{\vec p}=\hat a_{\vec p}^\dagger\hat a_{\vec p} ,
+\hat u_{\vec p}=\hat a_{\vec p}^\dagger\hat a_{\vec p} ,
 \qquad
-\langle\psi|\hat n_{\vec p}|\psi\rangle
+\langle\psi|\hat u_{\vec p}|\psi\rangle
 =\big\|\hat a_{\vec p}\psi\big\|^2\ge0 ,
 $$
 

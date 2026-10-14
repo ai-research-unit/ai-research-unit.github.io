@@ -105,7 +105,7 @@ $$
 S(ab) = S(b)S(a), \qquad S(1) = 1, \qquad \Delta(S(h)) = S(h_{(2)})\otimes S(h_{(1)}), \qquad \varepsilon(S(h)) = \varepsilon(h) .
 $$
 
-*Proof.* 1: if $S'$ is another convolution inverse of $\mathrm{id}$ then $S = S * \eta\varepsilon = S * (\mathrm{id} * S') = (S*\mathrm{id})*S' = \eta\varepsilon * S' = S'$. 2: consider the convolution algebra $\operatorname{Hom}_k(H\otimes_k H, H)$ and the elements $\alpha = \mu\circ(S\otimes S)\circ\tau$ and $\beta = S\circ\mu$, where $\tau$ is the transposition. Both are convolution-inverses of $\mu$ in $\operatorname{Hom}_k(H\otimes_k H,H)$, since $S$ is a convolution inverse of $\mathrm{id}$ and convolution is compatible with the tensor algebra structure; by uniqueness of inverses in an associative algebra $\alpha = \beta$. The coalgebra statements are proved by the dual argument, or by applying the algebra statement to $H^{\mathrm{op}}$ and $H^{\mathrm{cop}}$.
+*Proof.* 1: if $S'$ is another convolution inverse of $\mathrm{id}$ then $S = S * \eta\varepsilon = S * (\mathrm{id} * S') = (S*\mathrm{id})*S' = \eta\varepsilon * S' = S'$. 2: consider the convolution algebra $\operatorname{Hom}_k(H\otimes_k H, H)$ and the elements $\alpha = \mu\circ(S\otimes S)\circ\tau$ and $\beta = S\circ\mu$, where $\tau$ is the transposition. Both are convolution-inverses of $\mu$ in $\operatorname{Hom}_k(H\otimes_k H,H)$, since $S$ is a convolution inverse of $\mathrm{id}$ and convolution is compatible with the tensor algebra structure; by uniqueness of inverses in an associative algebra $\alpha = \beta$. The coalgebra statements are proved by the dual argument, or by applying the algebra statement to $H^{\mathrm{opp}}$ and $H^{\mathrm{cop}}$.
 
 ### Group-like and primitive elements
 

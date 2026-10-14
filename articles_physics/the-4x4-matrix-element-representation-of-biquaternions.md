@@ -174,7 +174,7 @@ $$
 \mathsf{M}_4^{R}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{R}) = \mathsf{M}_4^{R}(\tilde{R}\tilde{Q}).
 $$
 
-Hence the assignment $\tilde{Q} \mapsto \mathsf{M}_4^{R}(\tilde{Q})$ is an algebra **anti**-homomorphism, and the right regular matrices are the regular representation of the opposite algebra $\mathbb{B}^{\mathrm{op}}$, not a second representation of $\mathbb{B}$.
+Hence the assignment $\tilde{Q} \mapsto \mathsf{M}_4^{R}(\tilde{Q})$ is an algebra **anti**-homomorphism, and the right regular matrices are the regular representation of the opposite algebra $\mathbb{B}^{\mathrm{opp}}$, not a second representation of $\mathbb{B}$.
 
 **Proof.** For every $\tilde{S}$, the column rule and associativity give
 
@@ -351,10 +351,10 @@ The square is the algebraic shadow of the factor $2$ between the dimensions of t
 The block form is a statement about physics as much as about matrices. Left multiplication preserves each minimal left ideal, so no element of $\mathbb{B}$ acting on the left can carry a field in one chirality into the other: the block diagonal form *is* that statement. A term that couples the two chiralities has to act on the **right**, and the corpus's mass term does exactly that. In the matrix realization the element that performs it is
 
 $$
-\tilde\Upsilon_1 = \tfrac{1}{2}(ie_1 - e_2) \longmapsto E_{12},
+\hat\Upsilon_1 = \tfrac{1}{2}(ie_1 - e_2) \longmapsto E_{12},
 $$
 
-whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second, so that $\tilde\Pi_+\tilde\Upsilon_1 = \tilde\Upsilon_1$ while $\tilde\Pi_-\tilde\Upsilon_1 = 0$, and the algebra product is nilpotent, $\tilde\Upsilon_1^2 = 0$. The pair $\tilde\Upsilon_1$, $\tilde\Upsilon_2 = \tfrac12(ie_1 + e_2)$ satisfies $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_+$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_-$. In the notation of the spinor-module articles these are the truncated ladder elements $x$ and $y$. The consequence is recorded in *The Dirac Equation in Biquaternionic Form*: the biquaternionic Dirac equation is linear and chirality-off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, and the Dirac field is carried by the spinor module and not by the whole algebra. The regular matrix is where one sees that this is forced by the algebra and not chosen: the left action has no off-diagonal blocks.
+whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second, so that $\tilde\Pi_+\hat\Upsilon_1 = \hat\Upsilon_1$ while $\tilde\Pi_-\hat\Upsilon_1 = 0$, and the algebra product is nilpotent, $\hat\Upsilon_1^2 = 0$. The pair $\hat\Upsilon_1$, $\hat\Upsilon_2 = \tfrac12(ie_1 + e_2)$ satisfies $\hat\Upsilon_1\hat\Upsilon_2 = \tilde\Pi_+$ and $\hat\Upsilon_2\hat\Upsilon_1 = \tilde\Pi_-$. In the notation of the spinor-module articles these are the truncated ladder elements $x$ and $y$. The consequence is recorded in *The Dirac Equation in Biquaternionic Form*: the biquaternionic Dirac equation is linear and chirality-off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, and the Dirac field is carried by the spinor module and not by the whole algebra. The regular matrix is where one sees that this is forced by the algebra and not chosen: the left action has no off-diagonal blocks.
 
 ## The Determinant and the Trace
 
@@ -625,10 +625,10 @@ The rotors split into two families, distinguished by which conjugation fixes the
 **Rotation rotors** have real coefficients, so they lie in the real quaternion subalgebra $\mathbb{H}_{\mathbb{B}}$, and complex conjugation fixes them:
 
 $$
-\tilde{R}(\theta, \hat n) = \cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,\hat n\cdot e, \qquad N(\tilde{R}) = \cos^2\tfrac{\theta}{2} + \sin^2\tfrac{\theta}{2} = e_0, \qquad \tilde{R}^{*} = \tilde{R}^{\natural} .
+\tilde{R}(\theta, \hat u) = \cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,\hat u\cdot e, \qquad N(\tilde{R}) = \cos^2\tfrac{\theta}{2} + \sin^2\tfrac{\theta}{2} = e_0, \qquad \tilde{R}^{*} = \tilde{R}^{\natural} .
 $$
 
-Here $\hat n\cdot e = n_1e_1 + n_2e_2 + n_3e_3$ with $\hat n$ a real unit vector. Because $\tilde{R}^{*} = \tilde{R}^{\natural}$, the action is the quaternion conjugation $\tilde{Q}\mapsto\tilde{R}\tilde{Q}\tilde{R}^{\natural}$, which is the spatial rotation. Taking $\cos\tfrac{\theta}{2} = \tfrac35$ and $\sin\tfrac{\theta}{2} = \tfrac45$ about the axis $e_1$, so that $\cos\theta = -\tfrac{7}{25}$ and $\sin\theta = \tfrac{24}{25}$,
+Here $\hat u\cdot e = n_1e_1 + n_2e_2 + n_3e_3$ with $\hat u$ a real unit vector. Because $\tilde{R}^{*} = \tilde{R}^{\natural}$, the action is the quaternion conjugation $\tilde{Q}\mapsto\tilde{R}\tilde{Q}\tilde{R}^{\natural}$, which is the spatial rotation. Taking $\cos\tfrac{\theta}{2} = \tfrac35$ and $\sin\tfrac{\theta}{2} = \tfrac45$ about the axis $e_1$, so that $\cos\theta = -\tfrac{7}{25}$ and $\sin\theta = \tfrac{24}{25}$,
 
 $$
 e_2 \longmapsto \cos\theta\,e_2 + \sin\theta\,e_3 = -\tfrac{7}{25}e_2 + \tfrac{24}{25}e_3, \qquad e_3 \longmapsto -\sin\theta\,e_2 + \cos\theta\,e_3,
@@ -639,7 +639,7 @@ while $e_1$ and the time direction $ict\,e_0$ are fixed. The rotor carries the *
 **Boost rotors** have a real scalar part and purely imaginary vector part, so they are Hermitian and complex conjugation negates their vector part:
 
 $$
-\tilde{B}(s, \hat n) = \cosh s\,e_0 + i\sinh s\,\hat n\cdot e, \qquad N(\tilde{B}) = \cosh^2 s - \sinh^2 s = e_0, \qquad \tilde{B}^{*} = \tilde{B} .
+\tilde{B}(s, \hat u) = \cosh s\,e_0 + i\sinh s\,\hat u\cdot e, \qquad N(\tilde{B}) = \cosh^2 s - \sinh^2 s = e_0, \qquad \tilde{B}^{*} = \tilde{B} .
 $$
 
 Because $\tilde{B}^{*} = \tilde{B}$, the action is $\tilde{Q}\mapsto\tilde{B}\tilde{Q}\tilde{B}$, and it is a boost with **rapidity** $2s$. Taking $\cosh s = \tfrac53$ and $\sinh s = \tfrac43$, so that $\cosh 2s = \tfrac{41}{9}$ and $\sinh 2s = \tfrac{40}{9}$, a boost along $e_1$ acts on the four-position by
@@ -674,7 +674,7 @@ The regular matrix reads as the algebra acting on itself, and its interpretation
 
 The left regular matrix $\mathsf{M}_4^{L}(\tilde{Q})$ is the left multiplication of the algebra on itself written in the basis $e_0, e_1, e_2, e_3$, and it is the Cayley matrix of quaternion multiplication, each entry of which is a single coefficient of $\tilde{Q}$ carrying a sign and none of which is a sum of coefficients. It is multiplicative, its transpose is the left matrix of the quaternion conjugate, $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$, its determinant is the square of the biquaternion norm, $\det\mathsf{M}_4^{L}(\tilde{Q}) = N(\tilde{Q})^2$, and its trace is $4Q_0$. The right regular matrix $\mathsf{M}_4^{R}(\tilde{Q})$, whose $m$-th column is the column of $e_m\tilde{Q}$, is anti-multiplicative and is the regular representation of the opposite algebra; the naive identity $\mathsf{M}_4^{R}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}^{\natural}$ is the same statement, since $\mathsf{M}_4^{L}(\tilde{Q}^{\natural})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q})$ — while what holds is $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D = D\mathsf{M}_4^{L}(\tilde{Q}^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1) = \eta$, the $ict$ metric.
 
-The regular module is $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ with $\tilde\Pi_\pm = \tfrac12(e_0 \pm ie_3)$, the two chiralities; in the adapted basis $\tilde\Pi_+, e_1\tilde\Pi_+, \tilde\Pi_-, e_1\tilde\Pi_-$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\mathsf{M}_4(\tilde{Q})$ and each a copy of the simple module $S$. So $\mathsf{M}_4^{L} \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_0\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2)$. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_0)$, hence traceless on a material four-vector.
+The regular module is $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ with $\tilde\Pi_\pm = \tfrac12(e_0 \pm ie_3)$, the two chiralities; in the adapted basis $\tilde\Pi_+, e_1\tilde\Pi_+, \tilde\Pi_-, e_1\tilde\Pi_-$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\mathsf{M}_4(\tilde{Q})$ and each a copy of the simple module $S$. So $\mathsf{M}_4^{L} \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_0\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\hat\Upsilon_1 = \tfrac12(ie_1 - e_2)$. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_0)$, hence traceless on a material four-vector.
 
 Read on the material sector, the regular matrix of a four-vector is the matrix displayed in the first section, with trace $4iq'_0$ and determinant the square of the interval; the four-position has determinant $(-c^2t^2 + \vec x^2)^2$, the four-velocity $c^4$, the on-shell four-momentum $m^4c^4$, and the massless four-momentum zero. The gradient's regular matrix is the first-order $4 \times 4$ matrix whose chiral block has determinant $\Box$ and whose determinant is $\Box^2$. Finally, the rotor group $\{\tilde{U} : N(\tilde{U}) = e_0\} \cong SL(2,\mathbb{C})$ acts on $\mathbb{M}_-$ and $\mathbb{M}_+$ by $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}$, which is $\mathsf{M}_4^{L}(\tilde{U})\mathsf{M}_4^{R}(\tilde{U}^{*})$ acting on the four-vector — the Lorentz transformation as left times right — preserving the interval, with rotation rotors the unit real quaternions, boost rotors the Hermitian unit elements, and the covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ two-to-one with kernel $\{\pm e_0\}$.
 
@@ -688,7 +688,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | Developed form, $Q_\mu \in \mathbb{C}$ |
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | Four-vector; $Q^0 = Q_0$, $(Q^1,Q^2,Q^3) = (Q_1,Q_2,Q_3)$ |
 | $\mathsf{M}_4^{L}(\tilde{Q})$ | Matrix of left multiplication, the Cayley matrix; a homomorphism |
-| $\mathsf{M}_4^{R}(\tilde{Q})$ | Matrix of right multiplication; an anti-homomorphism, the regular representation of $\mathbb{B}^{\mathrm{op}}$ |
+| $\mathsf{M}_4^{R}(\tilde{Q})$ | Matrix of right multiplication; an anti-homomorphism, the regular representation of $\mathbb{B}^{\mathrm{opp}}$ |
 | $D = \operatorname{diag}(-1,1,1,1) = \eta$ | Fixed sign matrix; $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D$; equals the $ict$ metric |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
 | $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ | Biquaternion norm; $\det\mathsf{M}_4^{L} = N^2$, $\det\mathsf{M}_4 = N$ |
@@ -699,7 +699,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The two minimal left ideals, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ |
 | $A_+(\tilde{Q}), A_-(\tilde{Q})$ | The two $2 \times 2$ blocks of $\mathsf{M}_4^{L}$ in the adapted basis; $\operatorname{Tr} = 2Q_0$, $\det = N$ |
 | $u_+ = e_0 + e_3$, $u_- = e_1 + e_2$ | Conjugating elements, $A_\pm(\tilde{Q}) = \mathsf{M}_4(u_\pm)\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(u_\pm)^{-1}$ |
-| $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Truncated ladder element (the convention's $\tilde\Upsilon_1$); right multiplication carries $\mathbb{B}\tilde\Pi_+$ onto $\mathbb{B}\tilde\Pi_-$ |
+| $\hat\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Truncated ladder element (the convention's $\hat\Upsilon_1$); right multiplication carries $\mathbb{B}\tilde\Pi_+$ onto $\mathbb{B}\tilde\Pi_-$ |
 | $S = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, the spinor module; $\mathsf{M}_4^{L} \cong S \oplus S$ |
 | $\mathsf{M}_4(\tilde{Q})$ | The $2 \times 2$ matrix realization of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* |
 | $\{C : C\mathsf{M}_4^{L}(\tilde{R}) = \mathsf{M}_4^{L}(\tilde{R})C \ \forall \tilde{R}\} = \mathsf{M}_4^{R}(\mathbb{B})$ | The centralizer of the left copy in $M_4(\mathbb{C})$ is the right copy, of complex dimension $4$: the double centralizer statement |
@@ -710,7 +710,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \operatorname{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\tilde{U}$, $N(\tilde{U}) = e_0$ | Rotor; the rotor group $\cong SL(2,\mathbb{C})$ |
-| $\tilde{R}(\theta,\hat n)$, $\tilde{B}(s,\hat n)$ | Rotation rotor (real, $\tilde{R}^{*} = \tilde{R}^{\natural}$) and boost rotor (Hermitian, $\tilde{B}^{*} = \tilde{B}$) |
+| $\tilde{R}(\theta,\hat u)$, $\tilde{B}(s,\hat u)$ | Rotation rotor (real, $\tilde{R}^{*} = \tilde{R}^{\natural}$) and boost rotor (Hermitian, $\tilde{B}^{*} = \tilde{B}$) |
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Covering homomorphism, kernel $\{\pm e_0\}$ |
 | $c$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$ |
 | $ict$, $\vec x$; $ct'$, $i\vec x'$ | Material coordinate; informational coordinate |

@@ -33,7 +33,7 @@ $$
 R_{a+b} = R_a + R_b , \quad R_{\lambda a} = \lambda R_a , \quad R_{ab} = R_bR_a .
 $$
 
-Hence $a \mapsto L_a$ is a unital algebra homomorphism $A \to B(A)$, the **left regular representation**, while $a \mapsto R_a$ is a unital algebra homomorphism $A^{\mathrm{op}} \to B(A)$, equivalently an anti-homomorphism $A \to B(A)$.
+Hence $a \mapsto L_a$ is a unital algebra homomorphism $A \to B(A)$, the **left regular representation**, while $a \mapsto R_a$ is a unital algebra homomorphism $A^{\mathrm{opp}} \to B(A)$, equivalently an anti-homomorphism $A \to B(A)$.
 
 **Proof.** Additivity and homogeneity in the parameter are the distributive laws. For the composition, $L_a(L_bx) = a(bx) = (ab)x = L_{ab}x$, while $R_a(R_bx) = (xb)a = x(ba) = R_{ba}x$, which is the reversal.
 
@@ -153,7 +153,7 @@ $$
 
 ## The Banach Interpretation and Examples
 
-**Proposition (the representations are continuous and their images are closed).** The maps $\lambda : A \to B(A)$ and $\rho : A \to B(A)$ are continuous algebra homomorphisms for the norm topology; on a unital algebra they are isometric embeddings and their images are closed subalgebras, complete and hence Banach algebras isometric to $A$ and to $A^{\mathrm{op}}$. On a non-unital algebra $\lambda$ and $\rho$ are contractions with $\lVert\lambda\rVert \leq 1$, and $\lambda(A)$ is complete, hence closed, whenever $A$ is complete and $\lambda$ preserves the norm; otherwise the closure of $\lambda(A)$ is the completion of the image.
+**Proposition (the representations are continuous and their images are closed).** The maps $\lambda : A \to B(A)$ and $\rho : A \to B(A)$ are continuous algebra homomorphisms for the norm topology; on a unital algebra they are isometric embeddings and their images are closed subalgebras, complete and hence Banach algebras isometric to $A$ and to $A^{\mathrm{opp}}$. On a non-unital algebra $\lambda$ and $\rho$ are contractions with $\lVert\lambda\rVert \leq 1$, and $\lambda(A)$ is complete, hence closed, whenever $A$ is complete and $\lambda$ preserves the norm; otherwise the closure of $\lambda(A)$ is the completion of the image.
 
 **Proof.** Continuity is boundedness of the linear maps, with norm at most $1$; isometry on a unital algebra and completeness of the image are the theorem of the previous two sections. The non-unital statement is the completion of the image in the complete space $B(A)$.
 

@@ -91,14 +91,14 @@ and for a left $R$-module $N$ a natural isomorphism ${}_RR \otimes_R N \cong N$,
 **Proposition.** There are ring isomorphisms
 
 $$
-\operatorname{End}_R(R_R) \cong R, \qquad \operatorname{End}_R({}_RR) \cong R^{\mathrm{op}} ,
+\operatorname{End}_R(R_R) \cong R, \qquad \operatorname{End}_R({}_RR) \cong R^{\mathrm{opp}} ,
 $$
 
 the first given by the left multiplications $b \mapsto L_b$ and the second by the right multiplications $b \mapsto R_b$, where $L_b(x) = bx$ and $R_b(x) = xb$.
 
-**Proof.** Let $T : R_R \to R_R$ be right $R$-linear, $T(xr) = T(x)r$. With $x = 1$ and the right action $1 \cdot r = r$, one has $T(r) = T(1)r = L_{T(1)}(r)$, so $T = L_b$ with $b = T(1)$; conversely $L_b(xr) = b(xr) = (bx)r = L_b(x)r$, so $L_b$ is right $R$-linear. The assignment $b \mapsto L_b$ is additive and satisfies $L_{bc} = L_b L_c$, hence is a ring isomorphism onto $\operatorname{End}_R(R_R)$, injective because $L_b(1) = b$. The left-module case is the mirror: a left $R$-linear $T$ has $T(r) = T(r \cdot 1) = rT(1) = R_{T(1)}(r)$, and $b \mapsto R_b$ is additive with $R_{bc} = R_cR_b$, hence a ring isomorphism $R^{\mathrm{op}} \to \operatorname{End}_R({}_RR)$.
+**Proof.** Let $T : R_R \to R_R$ be right $R$-linear, $T(xr) = T(x)r$. With $x = 1$ and the right action $1 \cdot r = r$, one has $T(r) = T(1)r = L_{T(1)}(r)$, so $T = L_b$ with $b = T(1)$; conversely $L_b(xr) = b(xr) = (bx)r = L_b(x)r$, so $L_b$ is right $R$-linear. The assignment $b \mapsto L_b$ is additive and satisfies $L_{bc} = L_b L_c$, hence is a ring isomorphism onto $\operatorname{End}_R(R_R)$, injective because $L_b(1) = b$. The left-module case is the mirror: a left $R$-linear $T$ has $T(r) = T(r \cdot 1) = rT(1) = R_{T(1)}(r)$, and $b \mapsto R_b$ is additive with $R_{bc} = R_cR_b$, hence a ring isomorphism $R^{\mathrm{opp}} \to \operatorname{End}_R({}_RR)$.
 
-**Corollary.** The endomorphism ring of the regular module is the ring itself, read on the same side for the representation and on the opposite side for the anti-representation: the left multiplications are the endomorphisms of the right regular module and reproduce $R$, the right multiplications are the endomorphisms of the left regular module and reproduce $R^{\mathrm{op}}$. This is the module-level form of the composition law $L_aL_b = L_{ab}$, $R_aR_b = R_{ba}$ of *Left and Right Multiplication in a Ring*.
+**Corollary.** The endomorphism ring of the regular module is the ring itself, read on the same side for the representation and on the opposite side for the anti-representation: the left multiplications are the endomorphisms of the right regular module and reproduce $R$, the right multiplications are the endomorphisms of the left regular module and reproduce $R^{\mathrm{opp}}$. This is the module-level form of the composition law $L_aL_b = L_{ab}$, $R_aR_b = R_{ba}$ of *Left and Right Multiplication in a Ring*.
 
 ### The bimodule endomorphisms are the centre
 
@@ -150,7 +150,7 @@ the direct sum running over the simple modules $S_i$ up to isomorphism, each occ
 
 ## Summary
 
-A ring $R$ acts on its own additive group by multiplication, giving the left regular module ${}_RR$, the right regular module $R_R$, and the regular bimodule ${}_RR_R$ whose two actions commute. The submodules of these three objects are exactly the left, the right and the two-sided ideals of $R$, so the lattice of ideals is the lattice of submodules of the regular object. The regular module is cyclic on the unit, faithful, free of rank one, a generator, and the identity of the tensor product, $M \otimes_R {}_RR \cong M$ and ${}_RR \otimes_R N \cong N$; every module is a quotient of a direct sum of copies of it. Its endomorphism ring is the ring itself in the two one-sided readings, $\operatorname{End}_R(R_R) \cong R$ and $\operatorname{End}_R({}_RR) \cong R^{\mathrm{op}}$, and its bimodule endomorphism ring is the centre, $\operatorname{End}_{R\text{-}R}(R) \cong Z(R)$. The examples range from the field, where the regular module is the trivial case of linear algebra, and the integers, where it is not semisimple, through the product of rings, where the idempotents split it, to the matrix ring, where it is simple as a bimodule and a direct sum of copies of the simple module as a left module, and to the group algebra, where it is the direct sum of the irreducibles with multiplicity the dimension.
+A ring $R$ acts on its own additive group by multiplication, giving the left regular module ${}_RR$, the right regular module $R_R$, and the regular bimodule ${}_RR_R$ whose two actions commute. The submodules of these three objects are exactly the left, the right and the two-sided ideals of $R$, so the lattice of ideals is the lattice of submodules of the regular object. The regular module is cyclic on the unit, faithful, free of rank one, a generator, and the identity of the tensor product, $M \otimes_R {}_RR \cong M$ and ${}_RR \otimes_R N \cong N$; every module is a quotient of a direct sum of copies of it. Its endomorphism ring is the ring itself in the two one-sided readings, $\operatorname{End}_R(R_R) \cong R$ and $\operatorname{End}_R({}_RR) \cong R^{\mathrm{opp}}$, and its bimodule endomorphism ring is the centre, $\operatorname{End}_{R\text{-}R}(R) \cong Z(R)$. The examples range from the field, where the regular module is the trivial case of linear algebra, and the integers, where it is not semisimple, through the product of rings, where the idempotents split it, to the matrix ring, where it is simple as a bimodule and a direct sum of copies of the simple module as a left module, and to the group algebra, where it is the direct sum of the irreducibles with multiplicity the dimension.
 
 ## Summary of Notation
 
@@ -166,7 +166,7 @@ A ring $R$ acts on its own additive group by multiplication, giving the left reg
 | $\{1\}$ | the basis, of rank one |
 | $M \otimes_R {}_RR \cong M$, ${}_RR \otimes_R N \cong N$ | the regular bimodule is the tensor unit |
 | $\operatorname{End}_R(R_R) \cong R$, $b \mapsto L_b$ | left multiplications |
-| $\operatorname{End}_R({}_RR) \cong R^{\mathrm{op}}$, $b \mapsto R_b$ | right multiplications |
+| $\operatorname{End}_R({}_RR) \cong R^{\mathrm{opp}}$, $b \mapsto R_b$ | right multiplications |
 | $\operatorname{End}_{R\text{-}R}(R) \cong Z(R)$ | the bimodule endomorphisms are the centre |
 
 ## Further Reading

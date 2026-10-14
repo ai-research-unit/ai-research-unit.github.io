@@ -21,7 +21,7 @@ as small as they can be, the two trivial ones $0$ and $e_0$.
 
 **The results.** The roots of $+1$ in the general quaternionic product are the elements of the norm-one
 level set $\mathrm{Sp}(1)$, the unit sphere of the quaternion algebra, of real dimension three; they contain
-the central pair $\pm e_0$ and the pure unit vectors $\hat\mu$. The idempotents of the product are $0$ and
+the central pair $\pm e_0$ and the pure unit vectors $\hat u$. The idempotents of the product are $0$ and
 $e_0$ alone, and the product has no nontrivial idempotent. The two sets are not related by the halving map
 that carries the roots of $+1$ onto the idempotents of the plain product: the map
 $\tilde\xi\mapsto\tfrac12(e_0+\tilde\xi)$ produces an idempotent of $\star$ only at $\tilde\xi=\pm e_0$, and
@@ -56,7 +56,7 @@ N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+\lvert\vec p\rvert^2=\sum_{\mu=0}^
 $$
 
 positive definite, with polar form $\beta(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$. A **central
-value** is an element $\lambda e_0$ with $\lambda\in\mathbb{R}$, and $\hat\mu$ denotes a real unit vector of
+value** is an element $\lambda e_0$ with $\lambda\in\mathbb{R}$, and $\hat u$ denotes a real unit vector of
 $\mathbb{R}^3$. The centre is the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace
 is $\mathrm{Vect}(\mathbb{H})=\{\vec p\}$; the two are supplementary and orthogonal for the norm. A root
 of a central value carries the lower-case xi $\tilde\xi$ of the quaternion layer, and an idempotent the
@@ -100,7 +100,7 @@ Algebra*.
 
 **The roots of $+1$ are exactly the solutions of $N(\tilde\xi)=\xi_0^2+\lvert\vec\xi\rvert^2=1$, the
 unit sphere $\mathrm{Sp}(1)$ of the quaternion algebra, of real dimension three, containing the central pair
-$\pm e_0$ and the pure unit vectors $\hat\mu$.**
+$\pm e_0$ and the pure unit vectors $\hat u$.**
 
 ### Statement and Dimension
 
@@ -111,11 +111,11 @@ N(\tilde\xi)=\xi_0^2+\lvert\vec\xi\rvert^2=1 ,
 $$
 
 the unit sphere $\mathrm{Sp}(1)$ of real dimension three. It contains the two central roots $\pm e_0$ and the
-pure unit vectors $\hat\mu$.
+pure unit vectors $\hat u$.
 
 **Proof.** The criterion is the reduction. The norm is positive definite and nondegenerate, and its level set
 at the value $1$ is a nondegenerate quadric in the four real coordinates, of real dimension $4-1=3$. The
-elements $\pm e_0$ have $N=1$; a pure unit vector $\hat\mu$ has $\xi_0=0$ and
+elements $\pm e_0$ have $N=1$; a pure unit vector $\hat u$ has $\xi_0=0$ and
 $\lvert\vec\xi\rvert^2=1$, and satisfies the equation.
 
 **Corollary (the count).** The root set of $+1$ is never a finite set; its cardinality is that of the
@@ -252,8 +252,8 @@ map sends the two central roots onto $e_0$ and $0$, and every other root of the 
 of the idempotent set; the idempotents are read from the squaring map directly, in §*The Classification*.
 
 **Remark (the absent complex correspondence).** In the complex chapter the plain idempotents are the
-Hermitian family $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$, and there the halving map is
-a bijection of the plain roots of $+1$, the elements $i\hat\mu$ with $(i\hat\mu)^2=e_0$, onto them. Over
+Hermitian family $\tfrac12(e_0+i\hat u)$ over the real unit vectors $\hat u$, and there the halving map is
+a bijection of the plain roots of $+1$, the elements $i\hat u$ with $(i\hat u)^2=e_0$, onto them. Over
 $\mathbb{R}$ the centre is the field $\mathbb{R}$ itself, with no central imaginary unit, so the imaginary
 unit vectors do not exist, the Hermitian family has no real counterpart, and the map
 $\tilde\pi\mapsto2\tilde\pi-e_0$ followed by the division by the central imaginary has no analogue
@@ -348,7 +348,7 @@ In the general quaternionic bilinear product the square of every element is the 
 $N(\tilde p)e_0$, so the root equation of a central value reduces to the single real equation
 $N(\tilde p)=\lambda$ and the idempotent equation forces centrality. The roots of $+1$ are the solutions of
 $N=1$, the unit sphere $\mathrm{Sp}(1)$ of real dimension three; they contain the central pair $\pm e_0$ and
-the pure unit vectors $\hat\mu$, and they are exactly the units of the plain algebra. The roots of $-1$ are
+the pure unit vectors $\hat u$, and they are exactly the units of the plain algebra. The roots of $-1$ are
 empty, because no central scalar can flip the sign of a square over $\mathbb{R}$ and the norm is definite;
 they are quoted in one paragraph and used nowhere. The idempotents of the product are $0$ and $e_0$ alone,
 and the product has no nontrivial idempotent; the two form a family of orthogonal idempotents whose only

@@ -20,7 +20,7 @@ A central simple $F$-algebra is central when its centre is the scalar copy $F \c
 | Central simple algebra | central and simple; finite-dimensional over $F$ | *Central Simple Algebras and the Brauer Group* |
 | The degree $\deg(A) = \sqrt{\dim_F A}$ | the square root of the dimension; the dimension of a central simple algebra is always a perfect square | *Central Simple Algebras and the Brauer Group* |
 | The tensor product $A \otimes_F B$ | central simple of degree $\deg(A)\deg(B)$ and dimension $(\dim_F A)(\dim_F B)$ | *Central Simple Algebras and the Brauer Group* |
-| The opposite algebra $A^{\mathrm{op}}$ | central simple; $A \otimes_F A^{\mathrm{op}} \cong M_{d^2}(F)$ | *Central Simple Algebras and the Brauer Group* |
+| The opposite algebra $A^{\mathrm{opp}}$ | central simple; $A \otimes_F A^{\mathrm{opp}} \cong M_{d^2}(F)$ | *Central Simple Algebras and the Brauer Group* |
 | Skolem–Noether | every $F$-algebra automorphism of $A$ is inner, and $\operatorname{Aut}_F(A) \cong A^\times/F^\times$ | *Central Simple Algebras and the Brauer Group* |
 | The centralizer $C_A(B)$ and the double centralizer | $C_A(B)$ has dimension $\dim_F A / \dim_F B$ for a simple subalgebra $B$ | *Central Simple Algebras and the Brauer Group* |
 | The reduced trace and norm $\operatorname{Trd}, \operatorname{Nrd}$ | the degree-$d$ analogues of the trace and determinant, becoming them over a splitting field $L$ with $A \otimes_F L \cong M_d(L)$ | *Central Simple Algebras and the Brauer Group* |
@@ -78,7 +78,7 @@ The similarity classes of central simple algebras form an abelian group under th
 |---|---|---|
 | Similarity $A \sim B$ | $A \otimes_F M_m(F) \cong B \otimes_F M_n(F)$ for some $m, n$; equivalent to $D_A \cong D_B$ | *Central Simple Algebras and the Brauer Group* |
 | The division algebra representative of $[A]$ | the unique representative of the class that is a division algebra, up to isomorphism | *Central Simple Algebras and the Brauer Group* |
-| The Brauer group $\operatorname{Br}(F)$ | similarity classes under $\otimes_F$, identity $[F]$, inverse $[A^{\mathrm{op}}]$; abelian | *Central Simple Algebras and the Brauer Group* |
+| The Brauer group $\operatorname{Br}(F)$ | similarity classes under $\otimes_F$, identity $[F]$, inverse $[A^{\mathrm{opp}}]$; abelian | *Central Simple Algebras and the Brauer Group* |
 | The relative Brauer group $\operatorname{Br}(L/F)$ | the classes split by $L$, isomorphic to $H^2(G, L^\times)$ for $G = \operatorname{Gal}(L/F)$ | *Central Simple Algebras and the Brauer Group* |
 | A crossed product | the central simple algebra attached to a factor set of a finite Galois extension | *Central Simple Algebras and the Brauer Group* |
 | The cyclic algebra $(\chi,a) = (L/F,\sigma,a)$ | $z^n = a$, $z\ell = \sigma(\ell)z$; the explicit crossed product over a cyclic extension | *Central Simple Algebras and the Brauer Group* |
@@ -144,7 +144,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $F \cdot 1_A$, $Z(A)$ | the scalar copy of the field and the centre of $A$ |
 | $\deg(A)$, $\operatorname{ind}(A)$, $\exp(A)$ | degree, index and exponent |
 | $\operatorname{Br}(F)$, $\operatorname{Br}(L/F)$, $\operatorname{inv}_v$ | Brauer group, relative Brauer group, Hasse invariant |
-| $A \sim B$, $[A]$, $A^{\mathrm{op}}$ | similarity, a class in $\operatorname{Br}(F)$, the opposite algebra |
+| $A \sim B$, $[A]$, $A^{\mathrm{opp}}$ | similarity, a class in $\operatorname{Br}(F)$, the opposite algebra |
 | $A \otimes_F B$ | tensor product, the group law of $\operatorname{Br}(F)$ |
 | $(a,b)_F$, $(\chi,a)$, $(L/F,\sigma,a)$ | quaternion algebra, cyclic algebra and crossed product |
 | $\operatorname{Trd}$, $\operatorname{Nrd}$, $C_A(B)$ | reduced trace, reduced norm, centralizer |

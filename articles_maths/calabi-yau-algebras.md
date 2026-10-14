@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A **Calabi–Yau algebra** of dimension $d$ is an algebra whose diagonal bimodule is self-dual with a shift: writing $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{op}}$ for the enveloping algebra, the condition is
+A **Calabi–Yau algebra** of dimension $d$ is an algebra whose diagonal bimodule is self-dual with a shift: writing $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{opp}}$ for the enveloping algebra, the condition is
 
 $$
 \operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}}) \;\cong\; A[-d]
@@ -17,7 +17,7 @@ The article is the twelfth and last of the theory of the category. It follows *K
 
 The article is algebraic. The words *smooth* and *proper* are used below in their **homological** senses: an algebra is **homologically smooth** if it has a finite resolution by finitely generated projective bimodules, and **proper** if its homology is finite-dimensional in each degree. These are algebraic conditions on resolutions and dimensions, not topological or geometric ones, and no manifold, no form, no distance and no topology is used anywhere in the article.
 
-Throughout, $k$ is a field (the definition works over a commutative ring, with flatness hypotheses); $A$ is a $k$-algebra, graded or differential graded; $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{op}}$ is the enveloping algebra of *Separable Algebras*; $D(A^{\mathrm{e}})$ is the derived category of DG $A^{\mathrm{e}}$-modules of *Differential Graded Categories*; and $HH_\bullet(A)$, $HH^\bullet(A)$ are the Hochschild homology and cohomology of *Deformation Quantization*.
+Throughout, $k$ is a field (the definition works over a commutative ring, with flatness hypotheses); $A$ is a $k$-algebra, graded or differential graded; $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{opp}}$ is the enveloping algebra of *Separable Algebras*; $D(A^{\mathrm{e}})$ is the derived category of DG $A^{\mathrm{e}}$-modules of *Differential Graded Categories*; and $HH_\bullet(A)$, $HH^\bullet(A)$ are the Hochschild homology and cohomology of *Deformation Quantization*.
 
 ## The Definition of a Calabi–Yau Algebra
 
@@ -136,7 +136,7 @@ This is the form in which the Calabi–Yau condition is a condition on the deriv
 
 ## Summary
 
-A $k$-algebra $A$ is **homologically smooth** if the diagonal bimodule $A$ is compact over the enveloping algebra $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{op}}$, and **proper** if its homology is finite-dimensional in each degree. It is **Calabi–Yau of dimension $d$**, or $d$-CY, if there is an isomorphism $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})\cong A[-d]$ in $D(A^{\mathrm{e}})$, with the convention on the shift fixed so that the polynomial algebra in $n$ variables has dimension $n$. The class is closed under grading shifts (with $d$ increased by the shift), tensor products (with $d$ the sum of the dimensions) and matrix algebras, and it is invariant under derived Morita equivalence. Equivalently, a homologically smooth $A$ is $d$-CY if and only if its Hochschild cohomology is dual to its Hochschild homology with complementary degrees, $HH^i(A,A)\cong(HH_{d-i}(A,A))^*$; this is the **Hochschild Poincaré duality**, and for the polynomial algebra it reduces to the identity $\binom{n}{i} = \binom{n}{n-i}$ between polyvector fields and algebraic differential forms. Equivalently again, a homologically smooth proper graded algebra with finite-dimensional pieces is $d$-CY if and only if it carries a **Calabi–Yau trace** $\operatorname{tr}$ of degree $-d$, vanishing on graded commutators, whose associated pairing $\langle a,b\rangle = \operatorname{tr}(ab)$ is nondegenerate.
+A $k$-algebra $A$ is **homologically smooth** if the diagonal bimodule $A$ is compact over the enveloping algebra $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{opp}}$, and **proper** if its homology is finite-dimensional in each degree. It is **Calabi–Yau of dimension $d$**, or $d$-CY, if there is an isomorphism $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})\cong A[-d]$ in $D(A^{\mathrm{e}})$, with the convention on the shift fixed so that the polynomial algebra in $n$ variables has dimension $n$. The class is closed under grading shifts (with $d$ increased by the shift), tensor products (with $d$ the sum of the dimensions) and matrix algebras, and it is invariant under derived Morita equivalence. Equivalently, a homologically smooth $A$ is $d$-CY if and only if its Hochschild cohomology is dual to its Hochschild homology with complementary degrees, $HH^i(A,A)\cong(HH_{d-i}(A,A))^*$; this is the **Hochschild Poincaré duality**, and for the polynomial algebra it reduces to the identity $\binom{n}{i} = \binom{n}{n-i}$ between polyvector fields and algebraic differential forms. Equivalently again, a homologically smooth proper graded algebra with finite-dimensional pieces is $d$-CY if and only if it carries a **Calabi–Yau trace** $\operatorname{tr}$ of degree $-d$, vanishing on graded commutators, whose associated pairing $\langle a,b\rangle = \operatorname{tr}(ab)$ is nondegenerate.
 
 The standard examples are: $k$ in dimension $0$; the polynomial algebra and the exterior algebra in $n$ variables in dimension $n$, the two being exchanged by Koszul duality; the $d$-th Weyl algebra in dimension $2d$; the preprojective algebra of a non-Dynkin quiver in dimension $2$ , for a Dynkin quiver, not at all; and the Jacobian algebra of a quiver with potential in dimension $3$. The Calabi–Yau condition transfers along Koszul duality: a Koszul algebra is $d$-CY if and only if its Koszul dual is $d$-CY. Finally, the condition on an algebra is equivalent to the condition on its compact DG modules that the shift $[d]$ be a **Serre functor**, so that $H^0(\mathrm{perf}(A))$ is a Calabi–Yau category of dimension $d$; this is the form in which the notion belongs to the language of *Differential Graded Categories* and *A-Infinity and L-Infinity Algebras*. The **Calabi–Yau manifold** of Part II is a different object — a complex manifold with trivial canonical bundle — whose derived category is expected to be Calabi–Yau; that geometric statement belongs to Part II, and treats it.
 
@@ -145,7 +145,7 @@ The standard examples are: $k$ in dimension $0$; the polynomial algebra and the 
 | Symbol | Meaning |
 |---|---|
 | $k$, $A$ | field, $k$-algebra (graded or differential graded) |
-| $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{op}}$ | enveloping algebra |
+| $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{opp}}$ | enveloping algebra |
 | $\operatorname{RHom}_{A^{\mathrm{e}}}(A,A^{\mathrm{e}})\cong A[-d]$ | Calabi–Yau condition of dimension $d$ |
 | $D(A^{\mathrm{e}})$ | derived category of DG $A^{\mathrm{e}}$-modules |
 | $d$-CY | Calabi–Yau of dimension $d$ |

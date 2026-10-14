@@ -44,13 +44,13 @@ $$
 $$
 is what makes the product of rotors compose Lorentz transformations, and it is the homogeneous half of the group law derived below.
 
-Three families of rotors are distinguished by the subspace they occupy. A pure boost along the unit direction $\hat u\in\mathbb{H}_{\mathbb{B}}$ with rapidity $\psi$,
+Three families of rotors are distinguished by the subspace they occupy. A pure boost along the unit direction $\hat u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ with rapidity $\psi$,
 $$
-\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\hat u,
+\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b},
 $$
-is Hermitian, hence lies in $\mathbb{M}_+$, and is unit-norm. A pure spatial rotation about $\hat n\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$,
+is Hermitian, hence lies in $\mathbb{M}_+$, and is unit-norm. A pure spatial rotation about $\hat u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$,
 $$
-\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\hat n,
+\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\hat u_{\mathrm r},
 $$
 is a unit real quaternion, lying in $\mathbb{H}_{\mathbb{B}}$. A general rotor has the Cartan decomposition $\tilde{\Lambda}=\tilde{B}\tilde{R}$ into a boost and a rotation. The boosts are closed under inverse but not under multiplication: the product of two non-collinear boosts is a boost times a rotation, the Thomas–Wigner rotation, whose angle and axis are derived in the parent article. What matters here is only that all of these transformations are algebraic in the rotor and linear in the four-vector they act on.
 
@@ -242,8 +242,8 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\tilde{\Lambda}\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |
-| $\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
-| $\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat n$ | Rotation rotor (unit real quaternion) |
+| $\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat u_{\mathrm r}$ | Rotation rotor (unit real quaternion) |
 | $\tilde{V}=\gamma(ic\,e_0+\vec v)$, $\tilde{\Lambda}=\sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$ | Four-velocity and its frame rotor |
 | $\tilde{a}\in\mathbb{M}_-$ | Translation (displacement) |
 | $(\tilde{\Lambda},\tilde{a})$ | Poincaré transformation, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}+\tilde{a}$ |

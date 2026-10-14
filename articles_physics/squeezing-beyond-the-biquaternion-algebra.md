@@ -108,7 +108,7 @@ The whole squeezing construction lives in the centre. The generator is $\tfrac12
 
 ### Composition and two-mode squeezing
 
-Squeezes compose by adding their rapidities in the same direction: $S(r_1\hat n)S(r_2\hat n)=S((r_1+r_2)\hat n)$ for a fixed squeezing axis $\hat n$, because the one-parameter subgroups of the corresponding central generators add. The composition was checked at the level of the variances: squeezing twice by $r_1=0.3$ and $r_2=0.4$ gives the same width $e^{-(r_1+r_2)}=e^{-0.7}$ as a single squeeze of $r=0.7$, which is the width already tabulated. Squeezes along different axes do not commute, because their generators do not: the resulting group is the metaplectic group acting on the envelope, and its whole action is central.
+Squeezes compose by adding their rapidities in the same direction: $S(r_1\hat u)S(r_2\hat u)=S((r_1+r_2)\hat u)$ for a fixed squeezing axis $\hat u$, because the one-parameter subgroups of the corresponding central generators add. The composition was checked at the level of the variances: squeezing twice by $r_1=0.3$ and $r_2=0.4$ gives the same width $e^{-(r_1+r_2)}=e^{-0.7}$ as a single squeeze of $r=0.7$, which is the width already tabulated. Squeezes along different axes do not commute, because their generators do not: the resulting group is the metaplectic group acting on the envelope, and its whole action is central.
 
 A two-mode version is also inside the algebra and is worth recording because it is the strongest central correlation available. For two oscillator modes $a_1,a_2$ the two-mode squeeze operator
 

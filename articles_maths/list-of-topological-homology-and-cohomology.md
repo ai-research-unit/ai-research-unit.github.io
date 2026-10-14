@@ -75,7 +75,7 @@ These theories attach a graded module to an algebraic object, and the coefficien
 | Galois cohomology $H^n(K,A)$ | a Galois module $A$: $\mu_n$, $\overline K^\times$, $\mathbb{Z}/n$, with the action of $G_K$ | *Galois Cohomology* |
 | the Brauer group as a second cohomology | $H^2(K,\overline K^\times)$; the $n$-torsion ${}_n\operatorname{Br}(K)$ | *Galois Cohomology*; *Central Simple Algebras and the Brauer Group* |
 | Lie algebra cohomology $H^\bullet(\mathrm{G};M)$ | a $\mathrm{G}$-module $M$, equivalently a module over $U(\mathrm{G})$; the Chevalley–Eilenberg complex | *Lie Algebra Cohomology* |
-| Hochschild homology and cohomology $HH_\bullet(A,M)$ | an $A$-bimodule $M$, equivalently a module over $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{op}}$ | *Hochschild Homology* |
+| Hochschild homology and cohomology $HH_\bullet(A,M)$ | an $A$-bimodule $M$, equivalently a module over $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{opp}}$ | *Hochschild Homology* |
 | Hochschild–Kostant–Rosenberg | the identification of $HH_\bullet(A)$ with the Kähler differential forms for a smooth commutative algebra | *Hochschild Homology* |
 | cyclic homology $HC_\bullet(A)$ | an algebra $A$ over a commutative ring, with a cyclic structure on the Hochschild complex | *Cyclic Homology* |
 | cyclic cohomology $HC^\bullet(A)$ | an algebra over a field of characteristic zero; the dual complex, pairing with the $K$-theory | *Cyclic Cohomology* |
@@ -170,7 +170,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $H^i_c$ | cohomology with compact supports |
 | $R$, $G$, $M$, $A$ | a commutative coefficient ring with $1 \neq 0$; an $R$-module; a module of coefficients; a coefficient group or algebra |
 | $\mathbb{Z}[G]$ | the group ring of $G$ |
-| $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{op}}$ | the enveloping algebra of an algebra $A$ |
+| $A^{\mathrm{e}} = A\otimes_kA^{\mathrm{opp}}$ | the enveloping algebra of an algebra $A$ |
 | $U(\mathrm{G})$ | the universal enveloping algebra of a Lie algebra |
 | $H^n(G,M)$, $H^n(K,A)$, $H^\bullet(\mathrm{G};M)$, $HH_\bullet(A,M)$ | group, Galois, Lie algebra and Hochschild theories |
 | $HC_\bullet(A)$, $HC^\bullet(A)$ | cyclic homology and cyclic cohomology |

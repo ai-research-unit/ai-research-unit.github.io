@@ -124,18 +124,18 @@ i.e. $E^2 = \vec p^2c^2 + m^2c^4$.
 Recall the two distinguished unit-norm biquaternions and their images under $\mathsf{M}_2$:
 
 $$
-\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u
+\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b}
 \;\longmapsto\;
-\mathsf{M}_2(\tilde{U}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\hat u\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde{U}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\hat u_{\mathrm b}\cdot\boldsymbol{\sigma},
 $$
 
 $$
-\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat n
+\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat u_{\mathrm r}
 \;\longmapsto\;
-\mathsf{M}_2(\tilde{u}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\hat n\cdot\boldsymbol{\sigma}.
+\mathsf{M}_2(\tilde{u}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\hat u_{\mathrm r}\cdot\boldsymbol{\sigma}.
 $$
 
-For $\hat u = \hat n = \hat{e}_3$ these are diagonal:
+For $\hat u_{\mathrm b} = \hat u_{\mathrm r} = \hat{e}_3$ these are diagonal:
 
 $$
 g_{\text{boost}} = \operatorname{diag}\!\left(e^{\psi/2}, e^{-\psi/2}\right), \qquad
@@ -144,10 +144,10 @@ $$
 
 The left-handed spinor transforms by $\psi_L\mapsto g\psi_L$, the right-handed one by $\psi_R\mapsto\mathsf{M}_2(\tilde{U}^{*})\psi_R$.
 
-**Boost.** A boost rotor has a real scalar part and an imaginary vector part, so conjugating its coefficients negates the vector part: $\tilde{U}^{*} = \tilde{U}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat u$. Hence
+**Boost.** A boost rotor has a real scalar part and an imaginary vector part, so conjugating its coefficients negates the vector part: $\tilde{U}^{*} = \tilde{U}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$. Hence
 
 $$
-\mathsf{M}_2(\tilde{U}^{*}) = \cosh\frac{\psi}{2}\,I_2 - \sinh\frac{\psi}{2}\,\hat u\cdot\boldsymbol{\sigma}
+\mathsf{M}_2(\tilde{U}^{*}) = \cosh\frac{\psi}{2}\,I_2 - \sinh\frac{\psi}{2}\,\hat u_{\mathrm b}\cdot\boldsymbol{\sigma}
 = \operatorname{diag}\!\left(e^{-\psi/2}, e^{\psi/2}\right) = g_{\text{boost}}^{-1}.
 $$
 
@@ -257,7 +257,7 @@ with components $(q_0,q_1,q_2,q_3) = (\tfrac12,0,0,-\tfrac12)$ in the basis $\{i
 
 ## Problem 6: The Double Cover on a Concrete Rotation
 
-Take a rotation about $\hat n = \hat{e}_3$ by angle $\theta$,
+Take a rotation about $\hat u_{\mathrm r} = \hat{e}_3$ by angle $\theta$,
 
 $$
 \tilde{u}(\theta) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat{e}_3,
@@ -300,7 +300,7 @@ $$
 SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\},
 $$
 
-and $SL(2,\mathbb{C})$ is the double cover. Numerically, for $\hat n = \hat{e}_3$ and $\theta = 2\pi$, the residual of $\mathsf{M}_2(\tilde{u}(2\pi))+I_2$ is $<10^{-15}$, and that of the four-vector conjugation against the identity is $<10^{-12}$.
+and $SL(2,\mathbb{C})$ is the double cover. Numerically, for $\hat u_{\mathrm r} = \hat{e}_3$ and $\theta = 2\pi$, the residual of $\mathsf{M}_2(\tilde{u}(2\pi))+I_2$ is $<10^{-15}$, and that of the four-vector conjugation against the identity is $<10^{-12}$.
 
 ## Problem 7: The Spinor Action and Rotor Conjugation
 
@@ -378,8 +378,8 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma
 | $\gamma_5 = \operatorname{diag}(-I_2,I_2)$ | Chirality operator on $\Delta$ |
 | $P_L = \tfrac12(I_4-\gamma_5),\; P_R = \tfrac12(I_4+\gamma_5)$ | Chiral projectors |
 | $\psi_L\in S$, $\psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
-| $\tilde{U} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u$ | Boost rotor ($\mathbb{M}_+$) |
-| $\tilde{u} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat n$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |
+| $\tilde{U} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |
+| $\tilde{u} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat u_{\mathrm r}$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |
 | $g = \mathsf{M}_2(\tilde{U})$ | Defining (left-handed) action matrix |
 | $\mathsf{M}_2(\tilde{U}^{*}) = \epsilon^{-1}\bar{g}\epsilon$ | Right-handed action matrix |
 | $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ | Invariant symplectic pairing on $S$ |

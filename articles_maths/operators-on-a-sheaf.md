@@ -19,7 +19,7 @@ The assumptions are those of *Presheaves and Sheaves*, which fixes the category 
 
 **Notation.** The product is written by juxtaposition, $ST=S\circ T$, so that $S$ acts after $T$ and the order of the factors is read from right to left. The opposite convention $S\cdot T = T\circ S$ is not used.
 
-**Proposition (the opposite ring and the bimodule).** The **opposite ring** $\operatorname{End}(\mathcal{F})^{\mathrm{op}}$ has the same underlying abelian group and the product $S\cdot_{\mathrm{op}}T=TS$. The identity map on the underlying sets is an anti-isomorphism $\operatorname{End}(\mathcal{F})\to\operatorname{End}(\mathcal{F})^{\mathrm{op}}$. The group $\Gamma(X,\mathcal{F})$ of global sections is a left $\operatorname{End}(\mathcal{F})$-module by $T\cdot s=T(s)$ and a right $\operatorname{End}(\mathcal{F})^{\mathrm{op}}$-module by $s\cdot T=T(s)$.
+**Proposition (the opposite ring and the bimodule).** The **opposite ring** $\operatorname{End}(\mathcal{F})^{\mathrm{opp}}$ has the same underlying abelian group and the product $S\cdot_{\mathrm{op}}T=TS$. The identity map on the underlying sets is an anti-isomorphism $\operatorname{End}(\mathcal{F})\to\operatorname{End}(\mathcal{F})^{\mathrm{opp}}$. The group $\Gamma(X,\mathcal{F})$ of global sections is a left $\operatorname{End}(\mathcal{F})$-module by $T\cdot s=T(s)$ and a right $\operatorname{End}(\mathcal{F})^{\mathrm{opp}}$-module by $s\cdot T=T(s)$.
 
 *Proof.* Reversing the order of the factors in the ring axioms gives the opposite ring, and the identity map reverses products by construction. The module axioms are the associativity of composition applied to sections, $S\cdot(T\cdot s)=(ST)(s)$, and the linearity of a morphism of sheaves.
 
@@ -29,7 +29,7 @@ $$
 L_a(T)=aT,\qquad R_a(T)=Ta .
 $$
 
-**Proposition (commutation and the sandwich).** $L_aR_b=R_bL_a$ for all $a,b\in\operatorname{End}(\mathcal{F})$, so $L$ and $R$ are commuting representations of $\operatorname{End}(\mathcal{F})$ and of $\operatorname{End}(\mathcal{F})^{\mathrm{op}}$ on $\operatorname{End}(\mathcal{F})$. If $u\in\operatorname{Aut}(\mathcal{F})$ then the **sandwich**
+**Proposition (commutation and the sandwich).** $L_aR_b=R_bL_a$ for all $a,b\in\operatorname{End}(\mathcal{F})$, so $L$ and $R$ are commuting representations of $\operatorname{End}(\mathcal{F})$ and of $\operatorname{End}(\mathcal{F})^{\mathrm{opp}}$ on $\operatorname{End}(\mathcal{F})$. If $u\in\operatorname{Aut}(\mathcal{F})$ then the **sandwich**
 
 $$
 \Sigma_u(T)=uTu^{-1}
@@ -142,7 +142,7 @@ The sheaf of operators is a sheaf of rings, or of $\mathcal{O}_X$-algebras, whos
 | $\operatorname{End}(\mathcal{F})=\operatorname{Hom}(\mathcal{F},\mathcal{F})$ | ring of operators on $\mathcal{F}$ |
 | $ST=S\circ T$ | composition of operators; the factor on the right acts first |
 | $\operatorname{Aut}(\mathcal{F})$ | group of invertible operators, the units of $\operatorname{End}(\mathcal{F})$ |
-| $\operatorname{End}(\mathcal{F})^{\mathrm{op}}$ | opposite ring, product $S\cdot_{\mathrm{op}}T=TS$ |
+| $\operatorname{End}(\mathcal{F})^{\mathrm{opp}}$ | opposite ring, product $S\cdot_{\mathrm{op}}T=TS$ |
 | $L_a$, $R_a$ | left and right multiplication by $a$; $L_aR_b=R_bL_a$ |
 | $\Sigma_u(T)=uTu^{-1}$ | sandwich by a unit $u$; an automorphism of $\operatorname{End}(\mathcal{F})$ |
 | $m_a$ | multiplication by a scalar $a\in\mathcal{O}_X(X)$, in the centre |

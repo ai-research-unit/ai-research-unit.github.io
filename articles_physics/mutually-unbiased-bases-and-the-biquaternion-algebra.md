@@ -31,29 +31,29 @@ $$
 \tilde{P}^2 = \tilde{P}, \qquad \mathrm{Tr}(\tilde{P}) = 1, \qquad \tilde{P}\geq0 .
 $$
 
-Up to a phase it is $\tilde\Pi_1(\hat{\mu}) = \tfrac12(e_0 + i\hat{\mu})$ for a unit vector $\hat{\mu}\in\mathbb{R}^3$, and its orthogonal complement is $\tilde\Pi_2(\hat{\mu}) = \tfrac12(e_0-i\hat{\mu})$. The pair satisfies
+Up to a phase it is $\tilde\Pi_1(\hat u) = \tfrac12(e_0 + i\hat u)$ for a unit vector $\hat u\in\mathbb{R}^3$, and its orthogonal complement is $\tilde\Pi_2(\hat u) = \tfrac12(e_0-i\hat u)$. The pair satisfies
 
 $$
 \tilde\Pi_1\tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0 ,
 $$
 
-so $\{\tilde\Pi_1(\hat{\mu}),\tilde\Pi_2(\hat{\mu})\}$ is a complete orthogonal family: an **idempotent basis** of the defining module. Every basis of the module arises this way, one basis for each direction $\hat{\mu}$ on the Bloch sphere; a basis is a pair of antipodal pure states.
+so $\{\tilde\Pi_1(\hat u),\tilde\Pi_2(\hat u)\}$ is a complete orthogonal family: an **idempotent basis** of the defining module. Every basis of the module arises this way, one basis for each direction $\hat u$ on the Bloch sphere; a basis is a pair of antipodal pure states.
 
 ### The trace pairing between idempotents
 
-For two directions $\hat{\mu},\hat{\nu}$ the trace pairing of the positive idempotents is
+For two directions $\hat u,\hat{\nu}$ the trace pairing of the positive idempotents is
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi_1(\hat{\mu})\tilde\Pi_1(\hat{\nu})\bigr)
-= \tfrac{1}{4}\mathrm{Tr}\bigl((e_0+i\hat{\mu})(e_0+i\hat{\nu})\bigr)
-= \tfrac{1}{4}\bigl(2 - 2\,\hat{\mu}\cdot\hat{\nu}\bigr)
-= \tfrac{1}{2}\bigl(1 - \hat{\mu}\cdot\hat{\nu}\bigr),
+\mathrm{Tr}\bigl(\tilde\Pi_1(\hat u)\tilde\Pi_1(\hat{\nu})\bigr)
+= \tfrac{1}{4}\mathrm{Tr}\bigl((e_0+i\hat u)(e_0+i\hat{\nu})\bigr)
+= \tfrac{1}{4}\bigl(2 - 2\,\hat u\cdot\hat{\nu}\bigr)
+= \tfrac{1}{2}\bigl(1 - \hat u\cdot\hat{\nu}\bigr),
 $$
 
 using $\mathrm{Tr}(e_0)=2$, $\mathrm{Tr}(ie_k)=0$ and $\mathrm{Tr}((ie_j)(ie_k)) = 2\delta_{jk}$. In Hilbert-space terms this is the squared overlap
 
 $$
-\bigl|\langle \psi(\hat{\mu})|\psi(\hat{\nu})\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\hat{\mu}\cdot\hat{\nu}\bigr),
+\bigl|\langle \psi(\hat u)|\psi(\hat{\nu})\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\hat u\cdot\hat{\nu}\bigr),
 $$
 
 which vanishes for antipodal directions and equals one for coincident directions. The trace pairing is thus a measure of the distinguishability of two rays, and it is the object that the mutual-unbiasedness condition constrains.
@@ -119,7 +119,7 @@ The two cases are exactly the normalization and orthogonality of the basis. Thus
 
 ### Maximality
 
-For the qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and the three coordinate bases attain it. No fourth basis can be unbiased with all three: a fourth direction $\hat{\mu}$ would need $\hat{\mu}\cdot\hat{e}_k = 0$ for $k=1,2,3$, which is impossible for a unit vector in $\mathbb{R}^3$. The algebra thus supplies a **complete** set of mutually unbiased bases, and it does so through the three pairwise orthogonal directions singled out by the imaginary units. The completeness is not merely a counting statement; it is what makes the three coordinate measurements tomographically sufficient.
+For the qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and the three coordinate bases attain it. No fourth basis can be unbiased with all three: a fourth direction $\hat u$ would need $\hat u\cdot\hat{e}_k = 0$ for $k=1,2,3$, which is impossible for a unit vector in $\mathbb{R}^3$. The algebra thus supplies a **complete** set of mutually unbiased bases, and it does so through the three pairwise orthogonal directions singled out by the imaginary units. The completeness is not merely a counting statement; it is what makes the three coordinate measurements tomographically sufficient.
 
 ### The overlap matrix
 
@@ -275,7 +275,7 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 | $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary |
-| $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Rank-one idempotents along $\hat{\mu}$ |
+| $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0\pm i\hat u)$ | Rank-one idempotents along $\hat u$ |
 | $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$, $\sum_i\tilde\Pi_i = e_0$ | Idempotent basis |
 | $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$ | Trace pairing (overlap) |
 | $\mathrm{Tr}(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b')}) = 1/d$ for $b\neq b'$ | Mutual unbiasedness |

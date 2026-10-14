@@ -160,7 +160,7 @@ $$
 \mathbb{C}_\nu = \operatorname{span}\{e_0,\nu\} = \{a+b\nu : a,b \in \mathbb{R}\} .
 $$
 
-**Proposition.** For each $\nu \in S^2$ the plane $\mathbb{C}_\nu$ is a subalgebra of $\mathbb{H}$ isomorphic to $\mathbb{C}$, and the planes are permuted transitively by the automorphism group; every quaternion lies in at least one of them, and a quaternion with nonzero vector part lies in exactly one, namely $\mathbb{C}_{\hat q}$ with $\hat q=\vec q/|\vec q|$.
+**Proposition.** For each $\nu \in S^2$ the plane $\mathbb{C}_\nu$ is a subalgebra of $\mathbb{H}$ isomorphic to $\mathbb{C}$, and the planes are permuted transitively by the automorphism group; every quaternion lies in at least one of them, and a quaternion with nonzero vector part lies in exactly one, namely $\mathbb{C}_{\hat u_{\mathrm d}}$ with $\hat u_{\mathrm d}=\vec q/|\vec q|$.
 
 *Proof.* Since $\nu^2=-e_0$, the span of $e_0$ and $\nu$ is closed under multiplication and is a two-dimensional real division algebra, hence isomorphic to $\mathbb{C}$ by the Frobenius classification quoted in *Quaternion Algebra*. The automorphism $\operatorname{Ad}_u$ carries $\nu$ to the rotation of $\nu$ by $u$; the group $SO(3)$ acts transitively on $S^2$, hence on the planes. A quaternion $a+\vec q$ with $\vec q\ne0$ lies in $\mathbb{C}_\nu$ exactly when $\vec q \in \mathbb{R}\nu$, so the axis is determined; a real quaternion lies in every plane.
 
@@ -223,6 +223,7 @@ The automorphism group of $\mathbb{H}$ is the inner automorphism group $SO(3)=S^
 | $\operatorname{Ad}_u(\tilde q)=u\tilde q u^{-1}$ | Inner automorphism, $u \in S^3/\{\pm1\}=SO(3)$ |
 | $G_c$ | Stabiliser of $c$; $SO(3)$ if $c$ real, $SO(2)$ otherwise |
 | $S^3$, $S^2$ | Unit quaternions; unit imaginary quaternions |
+| $\hat u_{\mathrm d}=\vec q/\lvert\vec q\rvert$ | The unit pure quaternion of the vector part; exact axis of the plane $\mathbb{C}_{\hat u_{\mathrm d}}$ |
 | $\mathbb{C}_\nu=\operatorname{span}\{e_0,\nu\}$ | Complex plane of the axis $\nu$, $\cong \mathbb{C}$ |
 | $\mathbb{C}_c$ | The invariant plane of the parameter, carrying the critical orbit |
 

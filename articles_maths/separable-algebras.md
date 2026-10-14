@@ -12,7 +12,7 @@ The article is algebraic throughout. The trace form of a field extension, the di
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is a unital associative $R$-algebra that is finitely generated and projective as an $R$-module where stated. We write
 
 $$
-A^{\mathrm{e}} = A \otimes_R A^{\mathrm{op}}
+A^{\mathrm{e}} = A \otimes_R A^{\mathrm{opp}}
 $$
 
 for the **enveloping algebra** of $A$, and $\mu : A^{\mathrm{e}} \to A$ for the multiplication, $\mu(a \otimes b) = ab$. The algebra $A^{\mathrm{e}}$ is an $R$-algebra and every $A$-bimodule is a left $A^{\mathrm{e}}$-module, with $(a\otimes b)\cdot m = amb$.
@@ -78,7 +78,7 @@ The element $e$ is the **separability idempotent**; condition 3 is the explicit 
 
 *Proof (equivalences).* The equivalence of 2 and 3 is the observation just made. For $2 \Rightarrow 1$, suppose $\mu$ splits and let $M$ be any $A$-bimodule. Applying $\operatorname{Hom}_{A^{\mathrm{e}}}(-, M)$ to a split exact sequence preserves exactness, so every $A^{\mathrm{e}}$-linear map out of $A$ extends; taking $M = A$ shows that $A$ is projective as an $A^{\mathrm{e}}$-module. Projectivity of $A$ over $A^{\mathrm{e}}$ is equivalent to semisimplicity of $A$ when $A$ is finite-dimensional over $F$, by the Wedderburn–Artin description of $A^{\mathrm{e}}$-modules; and the argument applies after every base change, giving separability. For $1 \Rightarrow 2$, if $A$ is semisimple, then $A^{\mathrm{e}}$ is semisimple, $A$ is a projective $A^{\mathrm{e}}$-module, and $\mu$ splits.
 
-**Example.** For $A = M_n(F)$ the separability idempotent is built from the matrix units: with $A^{\mathrm{e}} = M_n(F)\otimes_F M_n(F)^{\mathrm{op}}$,
+**Example.** For $A = M_n(F)$ the separability idempotent is built from the matrix units: with $A^{\mathrm{e}} = M_n(F)\otimes_F M_n(F)^{\mathrm{opp}}$,
 
 $$
 e = \sum_{i,j=1}^n E_{ij} \otimes E_{ji}, \qquad \mu(e) = \sum_{i,j} E_{ij}E_{ji} = \sum_j E_{jj} = I_n ,
@@ -113,9 +113,9 @@ holds; equivalently $A$ is a projective left $A^{\mathrm{e}}$-module.
 
 *Proof.* The separability idempotent $e \in A^{\mathrm{e}}$ base-changes to an element $e \otimes 1 \in (A\otimes_R S)^{\mathrm{e}} \cong A^{\mathrm{e}}\otimes_R S$ with $\mu(e\otimes1) = 1$ and $(a\otimes1)(e\otimes1) = (e\otimes1)(a\otimes1)$.
 
-**Example (matrix algebras).** For every $n \geq 1$ and every commutative ring $R$, the algebra $M_n(R)$ is separable over $R$, with the idempotent $e = \sum_{i,j} E_{ij}\otimes E_{ji}$ of the field case, which is an element of $M_n(R)\otimes_R M_n(R)^{\mathrm{op}}$ with no denominators.
+**Example (matrix algebras).** For every $n \geq 1$ and every commutative ring $R$, the algebra $M_n(R)$ is separable over $R$, with the idempotent $e = \sum_{i,j} E_{ij}\otimes E_{ji}$ of the field case, which is an element of $M_n(R)\otimes_R M_n(R)^{\mathrm{opp}}$ with no denominators.
 
-**Example (products).** If $A$ and $B$ are separable over $R$, then $A \times B$ is separable over $R$, with separability idempotent $e_A + e_B$ under the identification $(A\times B)^{\mathrm{e}} \cong A^{\mathrm{e}} \times B^{\mathrm{e}} \times (A\otimes_R B^{\mathrm{op}}) \times (B\otimes_R A^{\mathrm{op}})$ restricted to the two diagonal blocks; in particular $R \times R$ is separable over $R$.
+**Example (products).** If $A$ and $B$ are separable over $R$, then $A \times B$ is separable over $R$, with separability idempotent $e_A + e_B$ under the identification $(A\times B)^{\mathrm{e}} \cong A^{\mathrm{e}} \times B^{\mathrm{e}} \times (A\otimes_R B^{\mathrm{opp}}) \times (B\otimes_R A^{\mathrm{opp}})$ restricted to the two diagonal blocks; in particular $R \times R$ is separable over $R$.
 
 **Example (polynomial quotients and the resultant criterion).** Let $f \in R[x]$ be monic of degree $n$ and let $A = R[x]/(f)$. Then $A$ is a free $R$-module of rank $n$ and
 
@@ -131,7 +131,7 @@ $$
 e = \frac{1}{\lvert G\rvert}\sum_{g\in G} g \otimes g^{-1} ,
 $$
 
-which lies in $F[G]\otimes_F F[G]^{\mathrm{op}}$ exactly when $\lvert G\rvert$ is invertible, and it satisfies $\mu(e) = 1$ and the bimodule condition. This is the algebra-level form of Maschke's theorem, and it is developed .
+which lies in $F[G]\otimes_F F[G]^{\mathrm{opp}}$ exactly when $\lvert G\rvert$ is invertible, and it satisfies $\mu(e) = 1$ and the bimodule condition. This is the algebra-level form of Maschke's theorem, and it is developed .
 
 ## Central Separable Algebras and Azumaya Algebras
 
@@ -142,7 +142,7 @@ which lies in $F[G]\otimes_F F[G]^{\mathrm{op}}$ exactly when $\lvert G\rvert$ i
 The central element of the definition is the isomorphism
 
 $$
-A \otimes_R A^{\mathrm{op}} \longrightarrow \operatorname{End}_R(A), \qquad a \otimes b \longmapsto (x \mapsto axb),
+A \otimes_R A^{\mathrm{opp}} \longrightarrow \operatorname{End}_R(A), \qquad a \otimes b \longmapsto (x \mapsto axb),
 $$
 
 which is always an $R$-algebra homomorphism and is an isomorphism exactly for the Azumaya algebras among the finitely generated projective faithful ones; this is the **Azumaya property**, and it is the algebraic form of the statement that $A$ is an invertible $A^{\mathrm{e}}$-module. Over a field an Azumaya algebra is precisely a central simple algebra: centrality is the centre condition and separability is simplicity together with the corresponding centre condition, so *Central Simple Algebras and the Brauer Group* treats exactly the field case of the present theory.
@@ -161,7 +161,7 @@ $$
 
 and the set of similarity classes, with the product induced by $\otimes_R$, is the **Brauer group** $\operatorname{Br}(R)$.
 
-That the product is well defined and gives a group rests on the same facts as over a field: the tensor product of two Azumaya algebras is Azumaya, the class of $M_n(R)$ is the identity, and the opposite algebra is inverse, with $A\otimes_R A^{\mathrm{op}} \cong \operatorname{End}_R(A) \cong M_n(R)$ when $A$ has rank $n$ as a projective $R$-module. The verification is word for word that of the field case once the module-theoretic statements are made, and the group is the natural home of the Azumaya algebras. For $R = F$ a field it reduces to the Brauer group of *Central Simple Algebras and the Brauer Group*.
+That the product is well defined and gives a group rests on the same facts as over a field: the tensor product of two Azumaya algebras is Azumaya, the class of $M_n(R)$ is the identity, and the opposite algebra is inverse, with $A\otimes_R A^{\mathrm{opp}} \cong \operatorname{End}_R(A) \cong M_n(R)$ when $A$ has rank $n$ as a projective $R$-module. The verification is word for word that of the field case once the module-theoretic statements are made, and the group is the natural home of the Azumaya algebras. For $R = F$ a field it reduces to the Brauer group of *Central Simple Algebras and the Brauer Group*.
 
 **Theorem (standard).** For a commutative ring $R$ the Azumaya Brauer group sits in a natural exact sequence
 
@@ -191,7 +191,7 @@ is an isomorphism of $S$-algebras. Equivalently, $S$ is a $G$-Galois algebra ove
 
 ## Summary
 
-A finite algebraic field extension $L/F$ is **separable** when every element has a minimal polynomial with distinct roots, equivalently when $L$ has $[L:F]$ distinct embeddings into an algebraic closure; fields of characteristic $0$ and finite fields are perfect, and $\mathbb{F}_p(t^{1/p})/\mathbb{F}_p(t)$ is the standard non-separable extension. A finite-dimensional $F$-algebra $A$ is **separable** when $A \otimes_F L$ is semisimple for every field extension $L$; equivalently $A \cong \prod_i M_{n_i}(D_i)$ with each division algebra $D_i$ having separable centre, so over a perfect field separability is exactly semisimplicity, and every central simple algebra is separable. The characterisation that works over a ring is the splitting of the multiplication map: $A$ is separable over $R$ when $\mu : A^{\mathrm{e}} = A \otimes_R A^{\mathrm{op}} \to A$ splits as an $A^{\mathrm{e}}$-module map, equivalently when $A$ is projective over $A^{\mathrm{e}}$, equivalently when the **separability idempotent** $e = \sum_i x_i\otimes y_i$ with $\mu(e)=1$ and $ae=ea$ exists. Separability is preserved by base change; $M_n(R)$ and $R\times R$ are separable; $R[x]/(f)$ is separable for monic $f$ exactly when $(f,f') = R[x]$, that is, when the resultant $\operatorname{Res}(f,f')$ is a unit; and $F[G]$ is separable exactly when $\lvert G\rvert$ is invertible in $F$, the algebra form of Maschke's theorem.
+A finite algebraic field extension $L/F$ is **separable** when every element has a minimal polynomial with distinct roots, equivalently when $L$ has $[L:F]$ distinct embeddings into an algebraic closure; fields of characteristic $0$ and finite fields are perfect, and $\mathbb{F}_p(t^{1/p})/\mathbb{F}_p(t)$ is the standard non-separable extension. A finite-dimensional $F$-algebra $A$ is **separable** when $A \otimes_F L$ is semisimple for every field extension $L$; equivalently $A \cong \prod_i M_{n_i}(D_i)$ with each division algebra $D_i$ having separable centre, so over a perfect field separability is exactly semisimplicity, and every central simple algebra is separable. The characterisation that works over a ring is the splitting of the multiplication map: $A$ is separable over $R$ when $\mu : A^{\mathrm{e}} = A \otimes_R A^{\mathrm{opp}} \to A$ splits as an $A^{\mathrm{e}}$-module map, equivalently when $A$ is projective over $A^{\mathrm{e}}$, equivalently when the **separability idempotent** $e = \sum_i x_i\otimes y_i$ with $\mu(e)=1$ and $ae=ea$ exists. Separability is preserved by base change; $M_n(R)$ and $R\times R$ are separable; $R[x]/(f)$ is separable for monic $f$ exactly when $(f,f') = R[x]$, that is, when the resultant $\operatorname{Res}(f,f')$ is a unit; and $F[G]$ is separable exactly when $\lvert G\rvert$ is invertible in $F$, the algebra form of Maschke's theorem.
 
 An **Azumaya algebra** is a central separable algebra over a commutative ring; over a field these are exactly the central simple algebras, and the Azumaya algebras up to similarity form the Brauer group $\operatorname{Br}(R)$ of the ring, which reduces to the Brauer group of the field when $R$ is a field. The commutative separable algebras are the **étale algebras**, the algebras that are locally Galois; they include $\mathbb{Z}\times\mathbb{Z}$ and $\mathbb{Z}[\tfrac12][x]/(x^2+1)$, while $\mathbb{Z}[i]$ is not étale over $\mathbb{Z}$. The sheaf-theoretic comparison of the Azumaya and the cohomological Brauer groups, and the étale topology that names them, belong to a later Part.
 
@@ -202,7 +202,7 @@ An **Azumaya algebra** is a central separable algebra over a commutative ring; o
 | $R$ | commutative ring with identity $1 \neq 0$ |
 | $F$, $L$ | fields; $L/F$ a field extension |
 | $A$ | unital associative $R$-algebra, finitely generated projective where stated |
-| $A^{\mathrm{e}} = A \otimes_R A^{\mathrm{op}}$ | enveloping algebra; $A$-bimodules are $A^{\mathrm{e}}$-modules |
+| $A^{\mathrm{e}} = A \otimes_R A^{\mathrm{opp}}$ | enveloping algebra; $A$-bimodules are $A^{\mathrm{e}}$-modules |
 | $\mu : A^{\mathrm{e}} \to A$ | multiplication map, $\mu(a\otimes b) = ab$ |
 | $e = \sum_i x_i \otimes y_i$ | separability idempotent, $\mu(e)=1$, $ae=ea$ |
 | $f_\alpha$, $f'$ | minimal polynomial and formal derivative |
@@ -211,7 +211,7 @@ An **Azumaya algebra** is a central separable algebra over a commutative ring; o
 | $A \sim B$ | similarity of Azumaya algebras |
 | $\operatorname{Br}(R)$ | Brauer group of a commutative ring (Azumaya classes) |
 | $\operatorname{Pic}(R)$ | Picard group of invertible rank-one modules |
-| Azumaya algebra | central separable $R$-algebra, $A\otimes_R A^{\mathrm{op}} \cong \operatorname{End}_R(A)$ |
+| Azumaya algebra | central separable $R$-algebra, $A\otimes_R A^{\mathrm{opp}} \cong \operatorname{End}_R(A)$ |
 | étale algebra | commutative separable $R$-algebra |
 | $F[G]$ | group algebra; separable iff $\lvert G\rvert \in F^\times$ |
 | perfect field | every algebraic extension is separable |

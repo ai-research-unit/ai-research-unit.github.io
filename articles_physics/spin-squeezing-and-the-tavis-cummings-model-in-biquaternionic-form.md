@@ -13,7 +13,7 @@ The article establishes:
 3. **Spin squeezing.** The Wineland parameter $\xi_R^2 = N(\Delta J_\perp)^2/|\langle\vec J\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\chi}{\hbar}\tilde{J}_3^2$ drives $\xi_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\xi^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
 4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are trace pairings, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0\pm i\hat u)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the collective spin, the ladder operators and the Dicke states.
@@ -59,7 +59,7 @@ $$
 |\theta,\phi\rangle = \bigotimes_{i=1}^N \left(\cos\frac{\theta}{2}|{+}\rangle_i + \sin\frac{\theta}{2}e^{i\phi}|{-}\rangle_i\right),
 $$
 
-which equals the highest-weight state of the collective spin rotated to the direction $(\theta,\phi)$. Its mean spin is $\langle\vec J\rangle = \tfrac{N\hbar}{2}\hat{n}(\theta,\phi)$, and its transverse variance is isotropic,
+which equals the highest-weight state of the collective spin rotated to the direction $(\theta,\phi)$. Its mean spin is $\langle\vec J\rangle = \tfrac{N\hbar}{2}\hat u(\theta,\phi)$, and its transverse variance is isotropic,
 
 $$
 \langle J_\perp^2\rangle = \frac{N\hbar^2}{4},
@@ -242,7 +242,7 @@ The interaction term $g(a^\dagger\tilde{J}_- + a\tilde{J}_+)$ is an $\mathbb{M}_
 
 ## Summary
 
-For $N$ spin-1/2 particles the collective operators $\tilde{J}_\alpha = \sum_i\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{M}_+$ obeying the same $su(2)$ algebra with $j = N/2$. The symmetric states are the Dicke states $|j,m\rangle$, and the collective coherent state is the product of $N$ identical coherent states with mean spin $\tfrac{\hbar N}{2}\hat{n}$ and transverse variance $\tfrac{\hbar^2N}{4}$ — the standard quantum limit.
+For $N$ spin-1/2 particles the collective operators $\tilde{J}_\alpha = \sum_i\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{M}_+$ obeying the same $su(2)$ algebra with $j = N/2$. The symmetric states are the Dicke states $|j,m\rangle$, and the collective coherent state is the product of $N$ identical coherent states with mean spin $\tfrac{\hbar N}{2}\hat u$ and transverse variance $\tfrac{\hbar^2N}{4}$ — the standard quantum limit.
 
 The **Tavis–Cummings model**,
 
@@ -281,7 +281,7 @@ In the algebra the mean spin is a linear trace pairing $\mathrm{Tr}(\tilde{\rho}
 | $\tilde{J}_\alpha = \sum_i\tilde{S}_\alpha^{(i)}$ | Collective spin |
 | $\tilde{J}_\pm = \tilde{J}_1\pm i\tilde{J}_2$ | Collective raising/lowering operators |
 | $|j,m\rangle$, $j = N/2$ | Dicke states |
-| $\hat{n}(\theta,\phi)$ | Direction of the collective mean spin |
+| $\hat u(\theta,\phi)$ | Direction of the collective mean spin |
 | $a, a^\dagger$ | Bosonic mode operators |
 | $g$ | Single-spin coupling to the mode |
 | $\tilde{H} = \hbar\omega_c a^\dagger a + \omega_a\tilde{J}_3 + g(a^\dagger\tilde{J}_-+a\tilde{J}_+)$ | Tavis–Cummings Hamiltonian |

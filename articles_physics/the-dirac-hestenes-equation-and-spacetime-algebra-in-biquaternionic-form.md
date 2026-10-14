@@ -115,11 +115,11 @@ a **right** multiplication by the phase rotor, accompanied by the gauge transfor
 The parity, charge-conjugation and time-reversal transformations act on the STA spinor as
 
 $$
-\hat P:\;\psi \mapsto \gamma_0\,\psi(\gamma_0x\gamma_0)\,\gamma_0,
+P^{\mathrm{fop}}:\;\psi \mapsto \gamma_0\,\psi(\gamma_0x\gamma_0)\,\gamma_0,
 \qquad
-\hat C:\;\psi \mapsto \psi\sigma_1,
+C^{\mathrm{fop}}:\;\psi \mapsto \psi\sigma_1,
 \qquad
-\hat T:\;\psi \mapsto I\gamma_0\,\psi(\gamma_0x\gamma_0)\,\gamma_1 .
+T^{\mathrm{fop}}:\;\psi \mapsto I\gamma_0\,\psi(\gamma_0x\gamma_0)\,\gamma_1 .
 $$
 
 Charge conjugation is the simplest: a right multiplication by the fixed bivector $\sigma_1$. Each transform is an involution built from fixed Clifford elements, and each is visibly a conjugation or a fixed sandwich — the same class of operations the framework's conjugation articles use.

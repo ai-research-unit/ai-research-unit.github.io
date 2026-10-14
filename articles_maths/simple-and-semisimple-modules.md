@@ -31,7 +31,7 @@ $$
 \operatorname{End}_A(S)=D \text{ is a division ring}, \qquad \operatorname{Aut}_A(S)=D^{\times}.
 $$
 
-The lemma is proved in *Automorphisms of Modules over an Algebra*; it is recalled here because it governs the whole theory of semisimple modules. The division ring $D$ may be strictly larger than the base field, and its size is a genuine invariant of $S$: for $A=M_n(F)$ the simple module has $D=F$, while for a division algebra $D$ over $F$ the regular module is simple with endomorphism ring $D^{\mathrm{op}}$, so a noncommutative division algebra is itself the division ring attached to a simple module. Over an algebraically closed field every finite-dimensional simple module over a finite-dimensional algebra has $D=F$, which is why the representation theory of such algebras has no further arithmetic content.
+The lemma is proved in *Automorphisms of Modules over an Algebra*; it is recalled here because it governs the whole theory of semisimple modules. The division ring $D$ may be strictly larger than the base field, and its size is a genuine invariant of $S$: for $A=M_n(F)$ the simple module has $D=F$, while for a division algebra $D$ over $F$ the regular module is simple with endomorphism ring $D^{\mathrm{opp}}$, so a noncommutative division algebra is itself the division ring attached to a simple module. Over an algebraically closed field every finite-dimensional simple module over a finite-dimensional algebra has $D=F$, which is why the representation theory of such algebras has no further arithmetic content.
 
 ### Examples
 
@@ -41,7 +41,7 @@ The lemma is proved in *Automorphisms of Modules over an Algebra*; it is recalle
 
 **(c)** Over the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, again there is exactly one simple module up to isomorphism, the defining module $S=\mathbb{C}^2$, with $\operatorname{End}_{\mathbb{B}}(S)\cong\mathbb{C}$.
 
-**(d)** Over a division ring $D$, the regular module ${}_D D$ is simple: a nonzero left ideal of $D$ contains an invertible element and is therefore all of $D$. So a division ring has exactly one simple module, its regular module, with endomorphism ring $D^{\mathrm{op}}$.
+**(d)** Over a division ring $D$, the regular module ${}_D D$ is simple: a nonzero left ideal of $D$ contains an invertible element and is therefore all of $D$. So a division ring has exactly one simple module, its regular module, with endomorphism ring $D^{\mathrm{opp}}$.
 
 **(e)** Over the polynomial algebra $F[x]$, the simple modules are the quotients $F[x]/(p)$ for irreducible $p$, one for each maximal ideal $(p)$; the zero ideal is prime but not maximal, so the field of fractions $F(x)=F[x]_{(0)}$ is an $F[x]$-module that is not simple. Over an algebraically closed field the irreducible polynomials are the linear ones, so the finite-dimensional simple modules are the one-dimensional modules $F[x]/(x-\lambda)$, $\lambda \in F$.
 
@@ -90,7 +90,7 @@ $$
 
 a product of matrix rings over division rings. In particular the endomorphism ring of a semisimple module of finite length is semisimple, by the criterion of the next section, and its centre is the product of the centres of the division rings $\operatorname{End}_A(S_i)$.
 
-For the rest of the article $D_i$ denotes the division ring of the $i$-th factor of a Wedderburn decomposition, so that $D_i\cong\operatorname{End}_A(S_i)^{\mathrm{op}}$: for a division ring $D_0$ the defining module of $M_n(D_0)$ has endomorphism ring $D_0^{\mathrm{op}}$, the $A$-linear endomorphisms of $D_0^n$ being the right multiplications by scalars. The two division rings agree whenever $D_i\cong D_i^{\mathrm{op}}$, which is the case for every division ring occurring in this corpus.
+For the rest of the article $D_i$ denotes the division ring of the $i$-th factor of a Wedderburn decomposition, so that $D_i\cong\operatorname{End}_A(S_i)^{\mathrm{opp}}$: for a division ring $D_0$ the defining module of $M_n(D_0)$ has endomorphism ring $D_0^{\mathrm{opp}}$, the $A$-linear endomorphisms of $D_0^n$ being the right multiplications by scalars. The two division rings agree whenever $D_i\cong D_i^{\mathrm{opp}}$, which is the case for every division ring occurring in this corpus.
 
 ## Semisimple Algebras and Wedderburn–Artin
 
@@ -114,18 +114,18 @@ $$
 
 for division rings $D_1,\dots,D_r$ and positive integers $n_1,\dots,n_r$. The number $r$, the integers $n_i$ and the division rings $D_i$ are determined by $A$ up to permutation of the factors.
 
-*Proof sketch.* Write ${}_A A=\bigoplus_i S_i^{\oplus n_i}$ with $S_i$ pairwise non-isomorphic simple. By the endomorphism computation of §Isotypic decomposition, $\operatorname{End}_A({}_A A)\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$. But $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ by the theorem on the regular module of *Modules over an Algebra*, so $A^{\mathrm{op}}\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$ and, taking opposites, $A\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i)^{\mathrm{op}})$. This is a product of matrix rings over the division rings $\operatorname{End}_A(S_i)^{\mathrm{op}}$, which is the stated form with $D_i=\operatorname{End}_A(S_i)^{\mathrm{op}}$. The uniqueness of the factors is the Jordan–Hölder theorem applied to the regular module together with the division-ring form of Schur's lemma.
+*Proof sketch.* Write ${}_A A=\bigoplus_i S_i^{\oplus n_i}$ with $S_i$ pairwise non-isomorphic simple. By the endomorphism computation of §Isotypic decomposition, $\operatorname{End}_A({}_A A)\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$. But $\operatorname{End}_A({}_A A)\cong A^{\mathrm{opp}}$ by the theorem on the regular module of *Modules over an Algebra*, so $A^{\mathrm{opp}}\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i))$ and, taking opposites, $A\cong\prod_i M_{n_i}(\operatorname{End}_A(S_i)^{\mathrm{opp}})$. This is a product of matrix rings over the division rings $\operatorname{End}_A(S_i)^{\mathrm{opp}}$, which is the stated form with $D_i=\operatorname{End}_A(S_i)^{\mathrm{opp}}$. The uniqueness of the factors is the Jordan–Hölder theorem applied to the regular module together with the division-ring form of Schur's lemma.
 
 Several consequences are immediate.
 
-- The simple left $A$-modules are, up to isomorphism, exactly one $S_i$ for each factor $M_{n_i}(D_i)$: the defining module $D_i^{n_i}$ of column vectors, with $\operatorname{End}_A(S_i)\cong D_i^{\mathrm{op}}$.
+- The simple left $A$-modules are, up to isomorphism, exactly one $S_i$ for each factor $M_{n_i}(D_i)$: the defining module $D_i^{n_i}$ of column vectors, with $\operatorname{End}_A(S_i)\cong D_i^{\mathrm{opp}}$.
 - The centre of $A$ is $\prod_i Z(D_i)$, so $A$ is central simple over its centre exactly when $r=1$, and central simple over the base field $F$ exactly when $r=1$ and $Z(D_1)=F$.
 - A ring is a **division ring** exactly when it is semisimple with $r=n_1=1$, so that $A=D_1$.
 - A ring is a **matrix ring over a division ring** exactly when it is semisimple and simple in the sense of having no nontrivial two-sided ideals; this is the simple Artinian case.
 
 ### The density form
 
-Combining the Wedderburn–Artin theorem with the density theorem of *Automorphisms of Modules over an Algebra* gives a description of any finite-dimensional algebra in terms of its simple modules. If $A$ is finite-dimensional over a field and $S_1,\dots,S_r$ are its simple modules with $D_i=\operatorname{End}_A(S_i)^{\mathrm{op}}$, then
+Combining the Wedderburn–Artin theorem with the density theorem of *Automorphisms of Modules over an Algebra* gives a description of any finite-dimensional algebra in terms of its simple modules. If $A$ is finite-dimensional over a field and $S_1,\dots,S_r$ are its simple modules with $D_i=\operatorname{End}_A(S_i)^{\mathrm{opp}}$, then
 
 $$
 A/J(A) \cong \prod_{i=1}^{r} M_{n_i}(D_i), \qquad n_i=\dim_{D_i} S_i,
@@ -273,7 +273,7 @@ The obstruction to semisimplicity is the Jacobson radical $J(A)$, the intersecti
 | $S$, $T$ | simple left $A$-modules |
 | $A/\mathrm{m}$ | simple module from a maximal left ideal $\mathrm{m}$ |
 | $D=\operatorname{End}_A(S)$ | division ring of a simple module |
-| $D_i=\operatorname{End}_A(S_i)^{\mathrm{op}}$ | division ring of the $i$-th Wedderburn factor, $M_{n_i}(D_i)$ |
+| $D_i=\operatorname{End}_A(S_i)^{\mathrm{opp}}$ | division ring of the $i$-th Wedderburn factor, $M_{n_i}(D_i)$ |
 | $\operatorname{End}_A(M)$ | endomorphism ring of $M$ |
 | $\operatorname{Aut}_A(M)$ | automorphism group of $M$ |
 | $\operatorname{soc}(M)$ | socle, the sum of the simple submodules |

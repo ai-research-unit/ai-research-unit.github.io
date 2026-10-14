@@ -55,7 +55,7 @@ $$
 a(mb)=(am)b \qquad (a \in A,\ b \in B,\ m \in M).
 $$
 
-Every left $A$-module is a right $A^{\mathrm{op}}$-module and conversely, where $A^{\mathrm{op}}$ is the **opposite algebra**, the $R$-module $A$ with the reversed product $a \cdot_{\mathrm{op}} b = ba$. Thus the theory of right modules is the theory of left modules over the opposite algebra, and it suffices to develop one side. The left regular module ${}_A A$ is an $(A,A)$-bimodule, with left action by multiplication and right action also by multiplication, the two commuting by associativity.
+Every left $A$-module is a right $A^{\mathrm{opp}}$-module and conversely, where $A^{\mathrm{opp}}$ is the **opposite algebra**, the $R$-module $A$ with the reversed product $a \cdot_{\mathrm{op}} b = ba$. Thus the theory of right modules is the theory of left modules over the opposite algebra, and it suffices to develop one side. The left regular module ${}_A A$ is an $(A,A)$-bimodule, with left action by multiplication and right action also by multiplication, the two commuting by associativity.
 
 ### The action as a homomorphism
 
@@ -67,7 +67,7 @@ $$
 
 where $\operatorname{End}_{\mathbb{Z}}(M)$ is the endomorphism ring of the abelian group $M$. The axiom $(ab)m=a(bm)$ says $\rho(ab)=\rho(a)\rho(b)$ and $1_Am=m$ says $\rho(1_A)=\mathrm{id}$. Because $\rho$ is a ring homomorphism and $M$ is an $R$-module through the structural map, the image of $R$ acts by $R$-scalars; equivalently $\rho$ is a homomorphism of $R$-algebras when $\operatorname{End}_{\mathbb{Z}}(M)$ is regarded as an $R$-algebra through the structural map of $M$. This is the precise sense in which a module is a **representation** of the algebra: the algebra is realized by endomorphisms of an abelian group. The kernel of $\rho$ is a two-sided ideal, and $M$ is **faithful** if $\rho$ is injective.
 
-For a right $A$-module the same statement holds with $\operatorname{End}_{\mathbb{Z}}(M)^{\mathrm{op}}$, or equivalently with an anti-homomorphism $A \to \operatorname{End}_{\mathbb{Z}}(M)$.
+For a right $A$-module the same statement holds with $\operatorname{End}_{\mathbb{Z}}(M)^{\mathrm{opp}}$, or equivalently with an anti-homomorphism $A \to \operatorname{End}_{\mathbb{Z}}(M)$.
 
 ## Elementary Identities
 
@@ -168,12 +168,12 @@ The endomorphism ring of the regular module has a description dual to the preced
 **Theorem.** Multiplication on the right gives a ring isomorphism
 
 $$
-A^{\mathrm{op}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto (b \mapsto b a).
+A^{\mathrm{opp}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto (b \mapsto b a).
 $$
 
-*Proof.* For $a \in A$, the map $R_a(b)=ba$ is $A$-linear because $R_a(c b)=(c b)a=c(ba)=c R_a(b)$. It is additive, and $R_a \circ R_{a'}=R_{a'a}$, so $a \mapsto R_a$ is a ring homomorphism $A^{\mathrm{op}}\to\operatorname{End}_A(A)$. It is injective, since $R_a(1_A)=a$; and it is surjective, since for any $f \in \operatorname{End}_A(A)$ and $b \in A$ one has $f(b)=f(b 1_A)=b f(1_A)=R_{f(1_A)}(b)$.
+*Proof.* For $a \in A$, the map $R_a(b)=ba$ is $A$-linear because $R_a(c b)=(c b)a=c(ba)=c R_a(b)$. It is additive, and $R_a \circ R_{a'}=R_{a'a}$, so $a \mapsto R_a$ is a ring homomorphism $A^{\mathrm{opp}}\to\operatorname{End}_A(A)$. It is injective, since $R_a(1_A)=a$; and it is surjective, since for any $f \in \operatorname{End}_A(A)$ and $b \in A$ one has $f(b)=f(b 1_A)=b f(1_A)=R_{f(1_A)}(b)$.
 
-Taking units gives $\operatorname{Aut}_A({}_A A) \cong (A^{\mathrm{op}})^{\times} \cong A^{\times}$, the group of units of $A$, under the same map; the inverse of $R_a$ is $R_{a^{-1}}$. Thus the automorphisms of the left regular module are exactly the right multiplications by units, a fact that is invisible over a commutative base ring and is the first sign of the asymmetry of the noncommutative case.
+Taking units gives $\operatorname{Aut}_A({}_A A) \cong (A^{\mathrm{opp}})^{\times} \cong A^{\times}$, the group of units of $A$, under the same map; the inverse of $R_a$ is $R_{a^{-1}}$. Thus the automorphisms of the left regular module are exactly the right multiplications by units, a fact that is invisible over a commutative base ring and is the first sign of the asymmetry of the noncommutative case.
 
 ## Annihilators, Cyclic Modules and Simple Modules
 
@@ -259,9 +259,9 @@ Two algebras $A$ and $B$ are **Morita equivalent** when their module categories 
 
 ## Summary
 
-Fix a commutative ring $R$ and a unital associative $R$-algebra $A$. A left $A$-module is an abelian group with an action of $A$ satisfying the four axioms, equivalently a unital ring homomorphism $A \to \operatorname{End}_{\mathbb{Z}}(M)$; a left module is automatically an $R$-module because $R$ acts through the unit. Left, right and bimodules are distinguished when $A$ is noncommutative, and passing to $A^{\mathrm{op}}$ converts one side into the other. Submodules, quotient modules and $A$-linear maps are defined by the same clauses as for a commutative ring, and the three isomorphism theorems hold; the submodules of the regular module ${}_A A$ are the left ideals, so cyclic modules are the quotients $A/L$, and simple modules are the quotients $A/\mathrm{M}$ by maximal left ideals.
+Fix a commutative ring $R$ and a unital associative $R$-algebra $A$. A left $A$-module is an abelian group with an action of $A$ satisfying the four axioms, equivalently a unital ring homomorphism $A \to \operatorname{End}_{\mathbb{Z}}(M)$; a left module is automatically an $R$-module because $R$ acts through the unit. Left, right and bimodules are distinguished when $A$ is noncommutative, and passing to $A^{\mathrm{opp}}$ converts one side into the other. Submodules, quotient modules and $A$-linear maps are defined by the same clauses as for a commutative ring, and the three isomorphism theorems hold; the submodules of the regular module ${}_A A$ are the left ideals, so cyclic modules are the quotients $A/L$, and simple modules are the quotients $A/\mathrm{M}$ by maximal left ideals.
 
-The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in general an $A$-module, only a module over the centre; the regular module has $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ and $\operatorname{Aut}_A({}_A A)\cong A^{\times}$ by right multiplication. Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for a simple $S$. Free modules are direct sums of ${}_A A$, projective modules are their direct summands, and the idempotents of $A$ produce projective modules $Ae$; over a division algebra every module is free, while over the matrix algebra $M_n(F)$ the simple module $S=F^n$ is projective and not free. Nakayama's lemma holds over noncommutative rings for ideals inside the Jacobson radical. The modules form an abelian $R$-linear category $\operatorname{Mod}(A)$, and the guiding equivalence relation on algebras is Morita equivalence, under which $A$ and $M_n(A)$ have the same module theory.
+The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in general an $A$-module, only a module over the centre; the regular module has $\operatorname{End}_A({}_A A)\cong A^{\mathrm{opp}}$ and $\operatorname{Aut}_A({}_A A)\cong A^{\times}$ by right multiplication. Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for a simple $S$. Free modules are direct sums of ${}_A A$, projective modules are their direct summands, and the idempotents of $A$ produce projective modules $Ae$; over a division algebra every module is free, while over the matrix algebra $M_n(F)$ the simple module $S=F^n$ is projective and not free. Nakayama's lemma holds over noncommutative rings for ideals inside the Jacobson radical. The modules form an abelian $R$-linear category $\operatorname{Mod}(A)$, and the guiding equivalence relation on algebras is Morita equivalence, under which $A$ and $M_n(A)$ have the same module theory.
 
 ## Summary of Notation
 
@@ -270,7 +270,7 @@ The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in gen
 | $R$ | commutative ring with identity $1 \neq 0$ |
 | $F$, $K$ | fields |
 | $A$ | unital associative $R$-algebra, generally noncommutative |
-| $A^{\mathrm{op}}$ | opposite algebra, product $a \cdot_{\mathrm{op}} b = ba$ |
+| $A^{\mathrm{opp}}$ | opposite algebra, product $a \cdot_{\mathrm{op}} b = ba$ |
 | $A^{\times}$ | group of units of $A$ |
 | $Z(A)$ | centre of $A$ |
 | $1_A$ | unit of $A$ |

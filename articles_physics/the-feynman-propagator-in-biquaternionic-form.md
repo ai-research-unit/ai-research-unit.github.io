@@ -7,7 +7,7 @@ The companion article *Canonical Quantization of the Biquaternion Dirac Field* q
 This article is about the next object in that construction: the **two-point function** of the quantized field, the Feynman propagator
 
 $$
-S_F(x-y) \;=\; \langle 0|\,T\,\hat{\psi}(x)\,\bar{\hat{\psi}}(y)\,|0\rangle ,
+S_F(x-y) \;=\; \langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle ,
 $$
 
 with $T$ the fermionic time-ordering operator. The two-point function is where the boundary condition of the theory is stored. Its momentum-space amplitude is not a function but a distribution, and what makes it the *Feynman* amplitude rather than the retarded or advanced one is a contour prescription in the complex energy plane — the $i\epsilon$.
@@ -23,16 +23,16 @@ We answer this on a concrete case, by computing the pole structure and the conto
 The quantized field of the companion article is
 
 $$
-\hat{\psi}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[\hat a_r(\vec p)\,u^{(r)}(\vec p)\,e^{-ip\cdot x}
-+\hat b_r^\dagger(\vec p)\,v^{(r)}(\vec p)\,e^{+ip\cdot x}\Big],
+\psi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[a_r^{\mathrm{fop}}(\vec p)\,u^{(r)}(\vec p)\,e^{-ip\cdot x}
++b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\,e^{+ip\cdot x}\Big],
 $$
 
 with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and its adjoint is obtained by Hermitian conjugation and multiplication by $\gamma^0$. The mode operators obey
 
 $$
-\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}
-=\{\hat b_r(\vec p),\hat b_s^\dagger(\vec q)\}
+\{a_r^{\mathrm{fop}}(\vec p),a_s^{\mathrm{fop}\dagger}(\vec q)\}
+=\{b_r^{\mathrm{fop}}(\vec p),b_s^{\mathrm{fop}\dagger}(\vec q)\}
 =(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q),
 $$
 
@@ -48,18 +48,18 @@ $$
 Contracting the mode operators against the vacuum gives the two elementary two-point functions. The **positive-frequency** piece is
 
 $$
-W_+(x-y)\;=\;\langle 0|\,\hat\psi(x)\,\bar{\hat\psi}(y)\,|0\rangle
+W_+(x-y)\;=\;\langle 0|\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p+m\big)\,e^{-ip\cdot(x-y)},
 $$
 
-in which only the $\hat a\hat a^\dagger$ contraction survives, and the **negative-frequency** piece is
+in which only the $a^{\mathrm{fop}} a^{\mathrm{fop}\dagger}$ contraction survives, and the **negative-frequency** piece is
 
 $$
-W_-(x-y)\;=\;\langle 0|\,\bar{\hat\psi}(y)\,\hat\psi(x)\,|0\rangle
+W_-(x-y)\;=\;\langle 0|\,\bar{\psi^{\mathrm{fop}}}(y)\,\psi^{\mathrm{fop}}(x)\,|0\rangle
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p-m\big)\,e^{+ip\cdot(x-y)},
 $$
 
-in which only $\hat b\hat b^\dagger$ survives. In both expressions $\not p$ is **on shell**, $\not p=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$, because the spatial integral retains only the mass-shell modes. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
+in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expressions $\not p$ is **on shell**, $\not p=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$, because the spatial integral retains only the mass-shell modes. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
 
 Time ordering for a fermion field carries the anticommutation sign:
 
@@ -177,7 +177,7 @@ This is the sharpest way to see why the question "does the algebra supply the $i
 
 ## Relation to the Thermal Two-Point Function
 
-One further structure is worth recording, because it is the place where the framework's complex time does carry a genuinely analytic condition. The companion article *The KMS Condition and the Biquaternion Framework* characterizes thermal equilibrium by the analyticity of the correlation function $F_{\hat A\hat B}(t)=\omega_\beta(\hat A\,\alpha_t(\hat B))$ in the strip $0<\mathrm{Im}(t)<\beta$, with boundary relation $F_{\hat A\hat B}(t+i\beta)=F_{\hat B\hat A}(-t)$; the imaginary-time direction is intrinsic to the material sector $\mathbb{M}_-$, and the companion quantization article shows that the anticommutator turns the boundary relation into the Fermi–Dirac distribution and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$.
+One further structure is worth recording, because it is the place where the framework's complex time does carry a genuinely analytic condition. The companion article *The KMS Condition and the Biquaternion Framework* characterizes thermal equilibrium by the analyticity of the correlation function $F_{AB}(t)=\omega_\beta(A\,\alpha_t(B))$ in the strip $0<\mathrm{Im}(t)<\beta$, with boundary relation $F_{AB}(t+i\beta)=F_{BA}(-t)$; the imaginary-time direction is intrinsic to the material sector $\mathbb{M}_-$, and the companion quantization article shows that the anticommutator turns the boundary relation into the Fermi–Dirac distribution and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$.
 
 At finite temperature the time-ordered two-point function is not given by a vacuum contour integral but by the discrete Matsubara sum over the compact imaginary-time circle; the real-time retarded and advanced propagators still carry their own $\epsilon$ prescriptions, and they are obtained from the Matsubara sum by analytic continuation, not by an algebraic operation. The imaginary-time complexification that the algebra carries is a real feature of the thermal state — it is where the KMS analyticity lives — but it does not select the vacuum contour either. It is a consistency: the same imaginary direction that makes the mass shell algebraic is the direction in which the thermal correlation functions are analytic, and the vacuum contour is recovered as the $\beta\to\infty$ limit rather than derived from the algebra.
 
@@ -198,7 +198,7 @@ The honest summary of the algebra's role is the one we gave in the introduction.
 
 ## Summary
 
-The Feynman propagator of the biquaternion Dirac field is the time-ordered two-point function $S_F(x-y)=\langle 0|T\hat\psi(x)\bar{\hat\psi}(y)|0\rangle$. Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
+The Feynman propagator of the biquaternion Dirac field is the time-ordered two-point function $S_F(x-y)=\langle 0|T \psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$. Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
 
 $$
 S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,e^{-ip\cdot(x-y)}\frac{\not p+m}{p^2-m^2+i\epsilon}.
@@ -231,17 +231,17 @@ and the prescription is a deformation of the mass-shell scalar. The deformation 
 | $\gamma^\mu$, $g=\mathrm{diag}(+1,-1,-1,-1)$ | Gamma matrices and Clifford metric |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | Spacetime metric of the $ict$ gradient |
 | $p^\mu=(E,\vec p)$, $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and Feynman slash |
-| $\hat\psi$, $\hat a_r(\vec p)$, $\hat b_r(\vec p)$ | Quantized field; particle and antiparticle modes |
+| $\psi^{\mathrm{fop}}$, $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Quantized field; particle and antiparticle modes |
 | $u^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency plane-wave spinors |
 | $\bar u u=2m$, $\bar v v=-2m$, $\sum_r u\bar u=\not p+m$, $\sum_r v\bar v=\not p-m$ | Parent article's normalizations and spin sums |
 | $W_\pm(x-y)$ | Positive- and negative-frequency two-point functions |
-| $S_F(x-y)=\langle 0|T\hat\psi(x)\bar{\hat\psi}(y)|0\rangle$ | Feynman propagator |
+| $S_F(x-y)=\langle 0|T \psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$ | Feynman propagator |
 | $\tilde{k}=iE\,e_0+\vec p$ | Wave biquaternion, $\tilde{k}\tilde{k}^{\natural}=-p^2$ |
 | $\tilde{k}\tilde{k}^{\natural}=-m^2$ | Biquaternion mass-shell condition |
 | $\mathcal{M}(\tilde{k})=\tilde{k}\tilde{k}^{\natural}+m^2$ | Mass-shell operator; Feynman shift $\mathcal{M}(\tilde{k})-i\epsilon$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing |
 | $\beta=\hbar/(k_BT)$, $\omega_\beta$, $\alpha_t$ | Inverse temperature, thermal state, Heisenberg evolution |
-| $F_{\hat A\hat B}(t+i\beta)=F_{\hat B\hat A}(-t)$ | KMS condition |
+| $F_{AB}(t+i\beta)=F_{BA}(-t)$ | KMS condition |
 | $\omega_n=(2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |
 
 ## Further Reading

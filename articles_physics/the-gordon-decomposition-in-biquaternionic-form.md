@@ -200,11 +200,11 @@ $$
 with $\boldsymbol\gamma = (\gamma^1,\gamma^2,\gamma^3)$ and
 
 $$
-\vec S = \psi^\dagger\hat S\psi,
+\vec S = \psi^\dagger S^{\mathrm{fop}}\psi,
 \qquad
-\left(\hat S_x,\hat S_y,\hat S_z\right) = \left(\Sigma^{23},\Sigma^{31},\Sigma^{12}\right),
+\left(S_x^{\mathrm{fop}},S_y^{\mathrm{fop}},S_z^{\mathrm{fop}}\right) = \left(\Sigma^{23},\Sigma^{31},\Sigma^{12}\right),
 \qquad
-\hat S = \frac12\begin{pmatrix}\boldsymbol\sigma & 0\\ 0 & \boldsymbol\sigma\end{pmatrix}.
+S^{\mathrm{fop}} = \frac12\begin{pmatrix}\boldsymbol\sigma & 0\\ 0 & \boldsymbol\sigma\end{pmatrix}.
 $$
 
 The first term is the **free current**: for a near plane wave of finite extent it is $e\rho\,\vec k/E = e\rho\,\vec v$ with $\rho = \psi^\dagger\psi$ and $\vec v = \vec k/E$, which is the transport of charge at the group velocity. The second is the **bound spin current** $(e/E)\nabla\times\vec S$.
@@ -337,7 +337,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | $j^\mu = \bar\psi\gamma^\mu\psi$ | Conserved number current |
 | $p$, $p'$, $q = p'-p$, $P = \frac12(p+p')$ | Momenta, transfer and average |
 | $\bar u'\gamma^\mu u = \bar u'[(p+p')^\mu + i\sigma^{\mu\nu}q_\nu]u/2m$ | Momentum-space Gordon identity |
-| $\vec S = \psi^\dagger\hat S\psi$, $\hat S = \frac12\mathrm{diag}(\boldsymbol\sigma,\boldsymbol\sigma)$ | Spin density and spin matrix |
+| $\vec S = \psi^\dagger S^{\mathrm{fop}}\psi$, $S^{\mathrm{fop}} = \frac12\mathrm{diag}(\boldsymbol\sigma,\boldsymbol\sigma)$ | Spin density and spin matrix |
 | $T^{\mu\nu}_{\rm BR}$, $T^{\mu\nu}_{\rm canonical}$ | Belinfante–Rosenfeld and canonical stress tensors |
 | $\frac{e\hbar}{2mc}\cdot\frac12 F_{\mu\nu}\bar\psi\sigma^{\mu\nu}\psi$ | Effective Pauli moment term ($g = 2$) |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational and material sectors; bivector magnetic and boost parts |

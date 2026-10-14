@@ -7,7 +7,7 @@ A **dagger category**, also called an involutive category, is a category togethe
 assigns to each morphism $f : A \to B$ a morphism $f^{\dagger} : B \to A$, the **adjoint** of $f$, in a
 way that is an **involution on the morphisms**: $f^{\dagger\dagger} = f$, the identities are fixed,
 and the adjoint of a composite reverses the factors, $(g \circ f)^{\dagger} = f^{\dagger} \circ
-g^{\dagger}$. The rule is a contravariant functor ${}^{\dagger} : \mathcal{C}^{\mathrm{op}} \to
+g^{\dagger}$. The rule is a contravariant functor ${}^{\dagger} : \mathcal{C}^{\mathrm{opp}} \to
 \mathcal{C}$, the **dagger functor**, which is the identity on objects and is its own inverse. The
 morphisms fixed by the involution are the **self-adjoint** morphisms, and the morphisms invertible
 with inverse their adjoint are the **unitary** ones. This article develops that involution on the
@@ -31,8 +31,8 @@ and its fixed part are treated.
 ### The Dagger Functor
 
 **Definition.** A **dagger category** is a category $\mathcal{C}$ together with a functor ${}^{\dagger}
-: \mathcal{C}^{\mathrm{op}} \to \mathcal{C}$ that is the identity on objects and satisfies
-$({}^{\dagger}) \circ ({}^{\dagger})^{\mathrm{op}} = \mathrm{id}_{\mathcal{C}}$; equivalently, a rule
+: \mathcal{C}^{\mathrm{opp}} \to \mathcal{C}$ that is the identity on objects and satisfies
+$({}^{\dagger}) \circ ({}^{\dagger})^{\mathrm{opp}} = \mathrm{id}_{\mathcal{C}}$; equivalently, a rule
 $f \mapsto f^{\dagger}$ with
 
 $$
@@ -43,15 +43,15 @@ $$
 for all objects $A$ and all composable morphisms $f, g$. The morphism $f^{\dagger}$ is the **adjoint**
 of $f$, and ${}^{\dagger}$ is the **dagger functor**.
 
-A contravariant functor out of $\mathcal{C}^{\mathrm{op}}$ into $\mathcal{C}$ is a covariant functor
+A contravariant functor out of $\mathcal{C}^{\mathrm{opp}}$ into $\mathcal{C}$ is a covariant functor
 out of $\mathcal{C}$, so a dagger functor is equivalently a covariant functor ${}^{\dagger} :
 \mathcal{C} \to \mathcal{C}$ that is the identity on objects, is the identity on the assignment
 $A \mapsto A$, and satisfies $g \circ f \mapsto f^{\dagger} \circ g^{\dagger}$; the two descriptions
 differ only in which way the composition is read, and the article uses the contravariant one.
 
 **Proposition.** The dagger functor is an isomorphism of categories
-$\mathcal{C}^{\mathrm{op}} \to \mathcal{C}$ whose inverse is the same functor read as
-$\mathcal{C} \to \mathcal{C}^{\mathrm{op}}$; it is an involution of the category, and it carries every
+$\mathcal{C}^{\mathrm{opp}} \to \mathcal{C}$ whose inverse is the same functor read as
+$\mathcal{C} \to \mathcal{C}^{\mathrm{opp}}$; it is an involution of the category, and it carries every
 morphism $f : A \to B$ to a morphism $B \to A$.
 
 **Proof.** The two identities $f^{\dagger\dagger} = f$ and $(g \circ f)^{\dagger} = f^{\dagger} \circ
@@ -139,7 +139,7 @@ morphisms.
 
 A dagger category is a category with a contravariant involution on its morphisms: $f^{\dagger\dagger} =
 f$, identities fixed, $(g \circ f)^{\dagger} = f^{\dagger} \circ g^{\dagger}$. The rule is the **dagger
-functor**, an isomorphism $\mathcal{C}^{\mathrm{op}} \to \mathcal{C}$ that is its own inverse; it is the
+functor**, an isomorphism $\mathcal{C}^{\mathrm{opp}} \to \mathcal{C}$ that is its own inverse; it is the
 formal counterpart on the morphisms of the converse of a relation and of the inversion in a groupoid.
 
 The **unitary** morphisms, those with $f^{\dagger} = f^{-1}$, form a groupoid with the same objects;

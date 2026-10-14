@@ -61,15 +61,15 @@ Therefore the Witt index is at most $\min(p,q)$, and the bound is attained.
 
 **Definition.** A **doubly null line** is an isotropic line that lies in the norm cone as well: a complex line $\mathbb{C}\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$.
 
-**Theorem (the Peirce lines).** For every real unit vector $\hat n\in\mathbb{V}_{\mathbb{B}}$ the element
+**Theorem (the Peirce lines).** For every real unit vector $\hat u\in\mathbb{V}_{\mathbb{B}}$ the element
 
 $$
 \tilde\Pi_\pm(\tilde\Xi)=\tfrac12\bigl(e_0\pm \tilde\Xi\bigr)
 $$
 
-is a rank-one Hermitian idempotent, $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*}=\tilde\Pi_{1,2}$, with $N(\tilde\Pi_{1,2})=0$ and $\langle\tilde\Pi_{1,2},\tilde\Pi_{1,2}\rangle_{\natural*}=0$. The line $\mathbb{C}\tilde\Pi_\pm(\tilde\Xi)$ is therefore a maximal totally isotropic complex subspace and a doubly null line; it is a **Peirce line** of the algebra, generating the minimal left ideal $\mathbb{B}\tilde\Pi_\pm(\tilde\Xi)$ and the minimal right ideal $\tilde\Pi_\pm(\tilde\Xi)\mathbb{B}$, of complex dimension two, every element of which is a zero divisor. The two diagonal members $\hat n=e_1$ give the lines $\mathbb{C}(e_0\pm ie_1)$, the two distinguished doubly null lines.
+is a rank-one Hermitian idempotent, $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*}=\tilde\Pi_{1,2}$, with $N(\tilde\Pi_{1,2})=0$ and $\langle\tilde\Pi_{1,2},\tilde\Pi_{1,2}\rangle_{\natural*}=0$. The line $\mathbb{C}\tilde\Pi_\pm(\tilde\Xi)$ is therefore a maximal totally isotropic complex subspace and a doubly null line; it is a **Peirce line** of the algebra, generating the minimal left ideal $\mathbb{B}\tilde\Pi_\pm(\tilde\Xi)$ and the minimal right ideal $\tilde\Pi_\pm(\tilde\Xi)\mathbb{B}$, of complex dimension two, every element of which is a zero divisor. The two diagonal members $\hat u=e_1$ give the lines $\mathbb{C}(e_0\pm ie_1)$, the two distinguished doubly null lines.
 
-**Proof.** A real unit vector has $\hat n^2=-e_0$, so $(\tilde\Xi)^2=e_0$ and $(e_0\pm \tilde\Xi)^2=1\pm2\tilde\Xi+(\tilde\Xi)^2=2(e_0\pm \tilde\Xi)$, whence $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$; $\tilde\Pi_{1,2}$ is Hermitian because $(\tilde\Xi)^{*}=\tilde\Xi$. For the two squares, $N(e_0\pm \tilde\Xi)=1+N(\tilde\Xi)=1-\|\hat n\|_E^2=0$ and $\langle e_0\pm \tilde\Xi,e_0\pm \tilde\Xi\rangle_{\natural*}=1-\|\tilde\Xi\|_E^2=0$. The minimal ideals are the standard ones of the algebra, of complex dimension two, and their elements $X\tilde\Pi_{1,2}$ satisfy $N(X\tilde\Pi_{1,2})=N(X)N(\tilde\Pi_{1,2})=0$.
+**Proof.** A real unit vector has $\hat u^2=-e_0$, so $(\tilde\Xi)^2=e_0$ and $(e_0\pm \tilde\Xi)^2=1\pm2\tilde\Xi+(\tilde\Xi)^2=2(e_0\pm \tilde\Xi)$, whence $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$; $\tilde\Pi_{1,2}$ is Hermitian because $(\tilde\Xi)^{*}=\tilde\Xi$. For the two squares, $N(e_0\pm \tilde\Xi)=1+N(\tilde\Xi)=1-\|\hat u\|_E^2=0$ and $\langle e_0\pm \tilde\Xi,e_0\pm \tilde\Xi\rangle_{\natural*}=1-\|\tilde\Xi\|_E^2=0$. The minimal ideals are the standard ones of the algebra, of complex dimension two, and their elements $X\tilde\Pi_{1,2}$ satisfy $N(X\tilde\Pi_{1,2})=N(X)N(\tilde\Pi_{1,2})=0$.
 
 **Corollary (the two descriptions agree on the norm cone).** The Peirce lines are exactly the doubly null lines. Writing $\tilde R=\tilde S+i\tilde W$ with $\tilde S,\tilde W\in\mathbb{V}_{\mathbb{B}}$ real, the conditions $\|\tilde R\|_E=1$ and $N(\tilde R)=-1$ read
 
@@ -101,7 +101,7 @@ The isotropic lines are exactly the lines $\mathbb{C}(e_0+\tilde{R})$ with $\|\t
 
 **A maximal isotropic plane.** $\mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_0+e_1,\ i(e_0+e_1)\}$: real dimension $2$, over $\mathbb{C}$ it is the single line $\mathbb{C}(e_0+e_1)$, and it is maximal because the Witt index over $\mathbb{R}$ is $2$.
 
-**A Peirce line.** $\hat n=e_2$: $\tilde\Pi_1=\tfrac12(e_0+ie_2)$ is a rank-one Hermitian idempotent with $N=0$ and $\langle\tilde\Pi_1,\tilde\Pi_1\rangle_{\natural*}=0$, so the line $\mathbb{C}(e_0+ie_2)=\mathbb{C}\tilde\Pi_1$ is a doubly null maximal isotropic line, a Peirce line.
+**A Peirce line.** $\hat u=e_2$: $\tilde\Pi_1=\tfrac12(e_0+ie_2)$ is a rank-one Hermitian idempotent with $N=0$ and $\langle\tilde\Pi_1,\tilde\Pi_1\rangle_{\natural*}=0$, so the line $\mathbb{C}(e_0+ie_2)=\mathbb{C}\tilde\Pi_1$ is a doubly null maximal isotropic line, a Peirce line.
 
 **A maximal isotropic line that is not Peirce.** $\mathbb{C}(e_0+e_1)$: the generator has $N=2$, so the line is isotropic and not doubly null; it is the complexification of the diagonal light line of the real form $\mathbb{H}_{\mathbb{B}}$, and it exhausts the index over $\mathbb{C}$ without lying in the norm cone.
 

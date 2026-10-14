@@ -93,33 +93,33 @@ $$
 The nonzero complex multiples of idempotents are therefore exactly the non-pure zero divisors. The standard idempotent is
 
 $$
-\tilde\Pi(\hat\mu) = \tfrac12\left(e_0 + i\hat\mu\right),
+\tilde\Pi(\hat u) = \tfrac12\left(e_0 + i\hat u\right),
 \qquad
-\hat\mu = \mu_1e_1 + \mu_2e_2 + \mu_3e_3,\quad \hat\mu\cdot\hat\mu = 1 ,
+\hat u = u_1e_1 + u_2e_2 + u_3e_3,\quad \hat u\cdot\hat u = 1 ,
 $$
 
-for which $N(\tilde{P}) = \tfrac14(1 - (i\hat\mu)^2) = \tfrac14(1 - \hat\mu\cdot\hat\mu) = 0$ and $\tilde{P}^2 = \tilde{P}$, using $(i\hat\mu)^2 = +\hat\mu\cdot\hat\mu$ and $\hat\mu\cdot\hat\mu=1$. The verification is one line in explicit quaternion arithmetic:
+for which $N(\tilde{P}) = \tfrac14(1 - (i\hat u)^2) = \tfrac14(1 - \hat u\cdot\hat u) = 0$ and $\tilde{P}^2 = \tilde{P}$, using $(i\hat u)^2 = +\hat u\cdot\hat u$ and $\hat u\cdot\hat u=1$. The verification is one line in explicit quaternion arithmetic:
 
 $$
-\tilde{P}^2 = \tfrac14\left(e_0 + 2i\hat\mu + (i\hat\mu)^2\right)
-= \tfrac14\left(e_0 + 2i\hat\mu - \hat\mu\hat\mu\right)
-= \tfrac14\left(e_0 + 2i\hat\mu + e_0\right)
+\tilde{P}^2 = \tfrac14\left(e_0 + 2i\hat u + (i\hat u)^2\right)
+= \tfrac14\left(e_0 + 2i\hat u - \hat u\hat u\right)
+= \tfrac14\left(e_0 + 2i\hat u + e_0\right)
 = \tilde{P} .
 $$
 
 The two families are disjoint, because the vanishing of the scalar part is what separates them, and they exhaust the zero divisors. The set $\mathcal{Z}$ is the union of the nilpotent cone and the cone of idempotent multiples — a single complex cone of complex dimension three, stratified by the vanishing of $Q_0$.
 
-**The pacwoman property.** A null element of the non-pure family carries a one-line multiplication rule that is used whenever a transformation is applied to a lightlike object. With $\hat\mu$ a real unit vector, the element $e_0 + i\hat\mu$ is **gobbled** by its own vector part:
+**The pacwoman property.** A null element of the non-pure family carries a one-line multiplication rule that is used whenever a transformation is applied to a lightlike object. With $\hat u$ a real unit vector, the element $e_0 + i\hat u$ is **gobbled** by its own vector part:
 
 $$
-\left(i\hat\mu\right)\left(e_0 + i\hat\mu\right)
+\left(i\hat u\right)\left(e_0 + i\hat u\right)
 \;=\;
-\left(e_0 + i\hat\mu\right)\left(i\hat\mu\right)
+\left(e_0 + i\hat u\right)\left(i\hat u\right)
 \;=\;
-e_0 + i\hat\mu ,
+e_0 + i\hat u ,
 $$
 
-since $(i\hat\mu)^2 = +\hat\mu\cdot\hat\mu = +e_0$. In the material sector the same statement reads, for the null four-wavevector direction $\hat k$ of a real unit vector,
+since $(i\hat u)^2 = +\hat u\cdot\hat u = +e_0$. In the material sector the same statement reads, for the null four-wavevector direction $\hat k$ of a real unit vector,
 
 $$
 \hat k\left(i + \hat k\right) \;=\; i\left(i + \hat k\right) \;=\; \left(i + \hat k\right)\hat k,
@@ -310,7 +310,7 @@ The light cone is the set on which the biquaternion algebra ceases to be inverti
 | $\mathbb{C}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}$ | Division subalgebras: complex scalar line (centre); real quaternions |
 | $\tilde{Q} = ict\,e_0 + \vec x$ | Material coordinate, $\mathbb{M}_-$ |
 | $N(\tilde{Q}) = -c^2t^2 + \vec x^2$ | Interval; zero set is the light cone |
-| $\tilde\Pi(\hat\mu) = \tfrac12(e_0 + i\hat\mu)$ | Idempotent; $N=0$, $\tilde{P}^2=\tilde{P}$ |
+| $\tilde\Pi(\hat u) = \tfrac12(e_0 + i\hat u)$ | Idempotent; $N=0$, $\tilde{P}^2=\tilde{P}$ |
 | $\tilde{Q}^2 = 2Q_0\tilde{Q}$ | Non-pure zero-divisor identity |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
 | $\tilde{K} = i\frac{\omega}{c}e_0 + \vec k$ | Four-wavevector, $\mathbb{M}_-$ |

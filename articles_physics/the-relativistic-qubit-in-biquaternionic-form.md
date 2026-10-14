@@ -37,7 +37,7 @@ $$
 $$
 so the state space is the Bloch ball $|\vec r|\leq1$, and the pure states are its boundary. The pure-state idempotents are
 $$
-\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad |\hat{\mu}| = 1,
+\tilde\Pi_{1,2}(\hat u) = \tfrac12\bigl(e_0 \pm i\hat u\bigr), \qquad |\hat u| = 1,
 $$
 and the Born pairing is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
 
@@ -51,8 +51,8 @@ The word *native* is exact and is worth one paragraph, because it is what makes 
 
 A biquaternion of unit norm,
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u \quad(\text{boost}), \qquad
-\tilde{R} = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat n \quad(\text{rotation}),
+\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b} \quad(\text{boost}), \qquad
+\tilde{R} = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat u_{\mathrm r} \quad(\text{rotation}),
 $$
 satisfies $N(\tilde{\Lambda}) = 1$, hence $\tilde{\Lambda}^{-1} = \tilde{\Lambda}^{\natural}$, and the unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. The same element acts on the two sectors by different formulas:
 
@@ -88,9 +88,9 @@ which is the unitarity condition. Among the unit-norm elements, $\tilde{\Lambda}
 $$
 \text{the spinor norm is preserved by } SU(2) \text{ and by no other subgroup of } SL(2,\mathbb{C}).
 $$
-A boost fails the condition maximally: for $\tilde{\Lambda}$ Hermitian one has $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = e_0 + i\sinh\psi\,\hat u$, so
+A boost fails the condition maximally: for $\tilde{\Lambda}$ Hermitian one has $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = e_0 + i\sinh\psi\,\hat u_{\mathrm b}$, so
 $$
-\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat u|u\rangle \neq \langle u|u\rangle .
+\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat u_{\mathrm b}|u\rangle \neq \langle u|u\rangle .
 $$
 The norm is scaled by a positive factor rather than rotated, so the ray is preserved but the normalization is not.
 
@@ -197,7 +197,7 @@ $$
 $$
 and after normalizing, the centre of the Bloch ball is carried to the point
 $$
-\vec r = \tanh\psi\ \hat u,
+\vec r = \tanh\psi\ \hat u_{\mathrm b},
 $$
 not to itself. A transformation that moves the maximally mixed state while scaling the trace is not a channel, and the reason is structural: the congruence by a non-unitary element is a map on the *algebra*, not an operation on the *state space*, and the companion quantum-mechanical article records the same fact from the group side — the trace pairing, on which the Born rule rests, is preserved exactly by the unitary group and by no larger one.
 
@@ -296,7 +296,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $S = \mathbb{C}^2$ | Defining (spinor) module, the qubit carrier |
 | $|u\rangle\in S$ | State vector (spinor) |
 | $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\leq1$ |
-| $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Pure-state idempotent |
+| $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0\pm i\hat u)$ | Pure-state idempotent |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = 1$ | Unit-norm biquaternion, element of $SL(2,\mathbb{C})$ |
 | $SU(2)$ | Unit real quaternions, unitary subgroup |
 | $z = u_1/u_0$ | Möbius coordinate on the pure-state sphere $\mathbb{CP}^1$ |

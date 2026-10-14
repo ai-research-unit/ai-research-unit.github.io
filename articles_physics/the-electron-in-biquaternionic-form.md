@@ -42,7 +42,7 @@ The electron field carries the electron's data in the following objects.
 | Free equation | $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$ |
 | Mass | the coefficient $m_e$ of the linear, chirality-off-diagonal mass pair |
 | Charge | the coupling $q=-e$ inserted in the gradient (see below) |
-| Spin state | an idempotent $\tilde\Pi_1(\hat n) = \tfrac{1}{2}(e_0 + i\hat n)\in\mathbb{M}_+$ |
+| Spin state | an idempotent $\tilde\Pi_1(\hat u) = \tfrac{1}{2}(e_0 + i\hat u)\in\mathbb{M}_+$ |
 | Spin observables | Hermitian elements $\tilde{H} = i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$ |
 | Conserved current | $\tilde{J} = ic\,j^0 e_0 + \vec j\in\mathbb{M}_-$ |
 | Chiral halves | the left- and right-handed Weyl spinors of the spinor module |
@@ -81,7 +81,7 @@ with $e_0\in\mathbb{M}_+$ and $ie_0\in\mathbb{M}_-$ (an imaginary scalar is anti
 
 ## Charge: A Coupling Constant in the Gradient
 
-The free biquaternion Dirac equation contains no charge. Charge enters only through the coupling of the field to the four-potential $\tilde{A} = i\phi/c\,e_0 + \vec A\in\mathbb{M}_-$. In the spinor-module form this is the minimal substitution $\hat p\to\hat p - q\vec A$, with $q$ the particle's charge; for the electron $q = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$ and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.
+The free biquaternion Dirac equation contains no charge. Charge enters only through the coupling of the field to the four-potential $\tilde{A} = i\phi/c\,e_0 + \vec A\in\mathbb{M}_-$. In the spinor-module form this is the minimal substitution $p^{\mathrm{fop}}\to p^{\mathrm{fop}} - q\vec A$, with $q$ the particle's charge; for the electron $q = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$ and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.
 
 Four statements are worth separating.
 
@@ -111,9 +111,9 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 **Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible module, of complex dimension two, and group of unit-norm biquaternions $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A field placed in that module transforms in the spinor representation $(\tfrac12,0)$: its spin is $\tfrac{1}{2}$, and a rotation by $2\pi$ acts as $-e_0$ on the spinor module while acting as $+e_0$ on the four-vectors of $\mathbb{M}_-$. The twofold, double-valued character of electron spin is therefore a representation-theoretic consequence of where the field lives, not an independent postulate. The spin rotations are the unit-norm biquaternions with real vector part, forming $SU(2)$.
 
-**Derived: the state and observable structure.** On the dictionary used in the companion articles, the electron's spin state along a unit direction $\hat n$ is represented by the idempotent $\tilde\Pi_1(\hat n) = \tfrac{1}{2}(e_0 + i\hat n)\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k e_k$ and $\tilde{P} = \tfrac{1}{2}(e_0 + i n_j e_j)$ one has $2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = n_jh_j$; in particular $2\,\mathrm{Sc}\big(\tilde\Pi_1(e_3)(ie_3)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde\Pi_1(e_3)(ie_1)\big) = 0$, the correct values for the spin along $z$ and $x$.
+**Derived: the state and observable structure.** On the dictionary used in the companion articles, the electron's spin state along a unit direction $\hat u$ is represented by the idempotent $\tilde\Pi_1(\hat u) = \tfrac{1}{2}(e_0 + i\hat u)\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k e_k$ and $\tilde{P} = \tfrac{1}{2}(e_0 + i n_j e_j)$ one has $2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = n_jh_j$; in particular $2\,\mathrm{Sc}\big(\tilde\Pi_1(e_3)(ie_3)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde\Pi_1(e_3)(ie_1)\big) = 0$, the correct values for the spin along $z$ and $x$.
 
-**Inserted: the magnitude.** The spin operator is $\hat{S}_k = \tfrac{\hbar}{2}\sigma_k$, corresponding to $\tfrac{\hbar}{2}ie_k$. The factor $\hbar/2$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\hbar$ is physics inserted from outside.
+**Inserted: the magnitude.** The spin operator is $S_k^{\mathrm{fop}} = \tfrac{\hbar}{2}\sigma_k$, corresponding to $\tfrac{\hbar}{2}ie_k$. The factor $\hbar/2$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\hbar$ is physics inserted from outside.
 
 ## The Dirac Description of the Electron
 
@@ -201,7 +201,7 @@ Two structural points and two cautions.
 |---|---|---|
 | Spin-$\tfrac{1}{2}$ representation content | Derived | $\mathbb{B}\cong M_2(\mathbb{C})$, unique irreducible module; $SL(2,\mathbb{C})$ double cover |
 | Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ |
-| Spin magnitude $\hbar/2$ | Represented | normalisation of $\hat{S}_k = \tfrac{\hbar}{2}\sigma_k$ |
+| Spin magnitude $\hbar/2$ | Represented | normalisation of $S_k^{\mathrm{fop}} = \tfrac{\hbar}{2}\sigma_k$ |
 | Tree-level $g=2$, $\vec\mu_e = -(e/m_e)\vec S$ | Derived (conditional) | $1/2m$ coefficient from the mass term plus minimal coupling |
 | Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j^\mu = \bar{\psi}\gamma^\mu\psi$, $\partial_\mu j^\mu = 0$ |
 | Coulomb field $\tilde{F}\in\mathbb{M}_+$ | Derived (from Maxwell) | point-charge solution; purely imaginary vector |
@@ -239,7 +239,7 @@ The electron is not an element of either sector: state-like and field-strength-l
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\Psi}$, $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
-| $\tilde\Pi_1(\hat n) = \tfrac{1}{2}(e_0 + i\hat n)$ | Spin-state idempotent in $\mathbb{M}_+$ |
+| $\tilde\Pi_1(\hat u) = \tfrac{1}{2}(e_0 + i\hat u)$ | Spin-state idempotent in $\mathbb{M}_+$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\tilde{J} = ic\,j^0 e_0 + \vec j$ | Conserved four-current, in $\mathbb{M}_-$ |
 | $\tilde{F} = iq\hat x/(4\pi\sqrt{\epsilon}\|\vec x\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$ |

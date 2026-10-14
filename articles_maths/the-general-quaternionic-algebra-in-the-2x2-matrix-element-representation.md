@@ -61,7 +61,7 @@ $$
 \mathsf{M}_2(\tilde{Q}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})=\det \mathsf{M}_2(\tilde{Q})\,I=N(\tilde{Q})\,I ,
 $$
 
-so the idempotents of the quaternionic product are exactly $0$ and $e_0$, and the zero divisors of the product are exactly the singular matrices. No nontrivial projection of $M_2(\mathbb{C})$ survives as an idempotent: the Hermitian projections $\tfrac12\bigl(I+i\sum_kn_k\mathsf{M}_2(e_k)\bigr)$ over the real unit vectors $\hat n=(n_1,n_2,n_3)$ are idempotent for the ordinary matrix product and are not idempotent here, becoming square-zero instead, $\operatorname{adj}(B)B=0$.
+so the idempotents of the quaternionic product are exactly $0$ and $e_0$, and the zero divisors of the product are exactly the singular matrices. No nontrivial projection of $M_2(\mathbb{C})$ survives as an idempotent: the Hermitian projections $\tfrac12\bigl(I+i\sum_kn_k\mathsf{M}_2(e_k)\bigr)$ over the real unit vectors $\hat u=(n_1,n_2,n_3)$ are idempotent for the ordinary matrix product and are not idempotent here, becoming square-zero instead, $\operatorname{adj}(B)B=0$.
 
 **The units and the norm.** The product has a unit exactly when the determinant does not vanish: the units of the algebra are the matrices of $GL_2(\mathbb{C})$, the elements with $N(\tilde{Q})\neq0$, and the norm-one group is $SL_2(\mathbb{C})$.
 

@@ -50,7 +50,7 @@ using the associativity of the plain product in the middle step and the fact tha
 **Theorem (the monoid of left multiplications).** The set $M_L = \{L_{\tilde P} : \tilde P \in \mathbb{B}\}$ is closed under composition and contains the identity $L_{e_0} = \mathrm{id}_{\mathbb{B}}$. The map $\tilde P\mapsto L_{\tilde P}$ is an injective anti-homomorphism of monoids from the multiplicative monoid of $\mathbb{B}$ onto $M_L$, so
 
 $$
-M_L \cong \mathbb{B}^{\mathrm{op}} ,
+M_L \cong \mathbb{B}^{\mathrm{opp}} ,
 $$
 
 the opposite of the multiplicative monoid of $\mathbb{B}$.
@@ -87,7 +87,7 @@ the **direct** law, and $M_R = \{\varrho_{\tilde P}\}$ is a monoid containing $\
 
 **Proof.** $\varrho_{\tilde P}(\varrho_{\tilde R}(\tilde X)) = \tilde X\tilde R^{\natural}\tilde P^{\natural} = \tilde X(\tilde P\tilde R)^{\natural} = \varrho_{\tilde P\tilde R}(\tilde X)$, by the associativity of the plain product and the anti-automorphism property; the identity is $\varrho_{e_0}(\tilde X) = \tilde X e_0^{\natural} = \tilde X$, and injectivity is read at $e_0$ as before.
 
-**Remark (why the two laws are opposite).** The asymmetry is the asymmetry of the product itself: in $\tilde P\star\tilde X = \tilde P^{\natural}\tilde X$ the conjugation sits on the **first** slot, so the left multiplication is the plain left multiplication by $\tilde P^{\natural}$ and the right multiplication of the product is not the plain right multiplication by anything. Writing both operators with the conjugation attached to the multiplier restores the mirror symmetry: the left family is $M_L = \{L^{\mathrm{plain}}_{\tilde P^{\natural}}\}$ and the right family is $M_R = \{R^{\mathrm{plain}}_{\tilde P^{\natural}}\}$, with $M_L\cong\mathbb{B}^{\mathrm{op}}$ and $M_R\cong\mathbb{B}$. The pair of laws $L_{\tilde P}L_{\tilde R} = L_{\tilde R\tilde P}$ and $\varrho_{\tilde P}\varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$ is the exact form in which the two-sidedness of the plain product survives the twisting of a single slot.
+**Remark (why the two laws are opposite).** The asymmetry is the asymmetry of the product itself: in $\tilde P\star\tilde X = \tilde P^{\natural}\tilde X$ the conjugation sits on the **first** slot, so the left multiplication is the plain left multiplication by $\tilde P^{\natural}$ and the right multiplication of the product is not the plain right multiplication by anything. Writing both operators with the conjugation attached to the multiplier restores the mirror symmetry: the left family is $M_L = \{L^{\mathrm{plain}}_{\tilde P^{\natural}}\}$ and the right family is $M_R = \{R^{\mathrm{plain}}_{\tilde P^{\natural}}\}$, with $M_L\cong\mathbb{B}^{\mathrm{opp}}$ and $M_R\cong\mathbb{B}$. The pair of laws $L_{\tilde P}L_{\tilde R} = L_{\tilde R\tilde P}$ and $\varrho_{\tilde P}\varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$ is the exact form in which the two-sidedness of the plain product survives the twisting of a single slot.
 
 ## The Mixed Compositions
 
@@ -124,7 +124,7 @@ The two bilinear columns are the two this article has just settled: for the asso
 
 ## Summary
 
-The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde X) = \tilde P^{\natural}\tilde X$, and they compose by the reversed law $L_{\tilde P}\circ L_{\tilde R} = L_{\tilde R\tilde P}$, the product on the right being the plain product of the algebra; the set $M_L$ is a monoid with identity $L_{e_0}$, and $\tilde P\mapsto L_{\tilde P}$ is an isomorphism $M_L\cong\mathbb{B}^{\mathrm{op}}$ onto the opposite of the multiplicative monoid, although $\star$ is not associative. The right multiplications of $\star$ do not close, their composite being $\tilde Q^{\natural}\tilde X\tilde P$; the closed family is the twisted one $\varrho_{\tilde P}(\tilde X) = \tilde X\tilde P^{\natural}$, with the direct law $\varrho_{\tilde P}\varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$ and $M_R\cong\mathbb{B}$. The mixed composites commute, $L_{\tilde P}\varrho_{\tilde Q} = \varrho_{\tilde Q}L_{\tilde P}$, are closed under composition, and span the whole endomorphism algebra, of dimension sixteen. This is the row of the property table on the left multiplications, where the two bilinear products read yes and the two sesquilinear ones read no; it is the batch's one positive structure theorem, and its content is that the associativity of the plain product, read through the anti-automorphism ${}^{\natural}$, is exactly what survives as the composition law of the operators.
+The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde X) = \tilde P^{\natural}\tilde X$, and they compose by the reversed law $L_{\tilde P}\circ L_{\tilde R} = L_{\tilde R\tilde P}$, the product on the right being the plain product of the algebra; the set $M_L$ is a monoid with identity $L_{e_0}$, and $\tilde P\mapsto L_{\tilde P}$ is an isomorphism $M_L\cong\mathbb{B}^{\mathrm{opp}}$ onto the opposite of the multiplicative monoid, although $\star$ is not associative. The right multiplications of $\star$ do not close, their composite being $\tilde Q^{\natural}\tilde X\tilde P$; the closed family is the twisted one $\varrho_{\tilde P}(\tilde X) = \tilde X\tilde P^{\natural}$, with the direct law $\varrho_{\tilde P}\varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$ and $M_R\cong\mathbb{B}$. The mixed composites commute, $L_{\tilde P}\varrho_{\tilde Q} = \varrho_{\tilde Q}L_{\tilde P}$, are closed under composition, and span the whole endomorphism algebra, of dimension sixteen. This is the row of the property table on the left multiplications, where the two bilinear products read yes and the two sesquilinear ones read no; it is the batch's one positive structure theorem, and its content is that the associativity of the plain product, read through the anti-automorphism ${}^{\natural}$, is exactly what survives as the composition law of the operators.
 
 ## Summary of Notation
 
@@ -140,7 +140,7 @@ The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde X)
 | $R_{\tilde P}$ | the right multiplication of the product, $\tilde X\mapsto\tilde X\star\tilde P = \tilde X^{\natural}\tilde P$ |
 | $\varrho_{\tilde P}$ | the twisted right multiplication $\tilde X\mapsto\tilde X\tilde P^{\natural}$ |
 | $M_L$, $M_R$ | the monoids of left and of twisted right multiplications |
-| $M_L \cong \mathbb{B}^{\mathrm{op}}$, $M_R \cong \mathbb{B}$ | the two isomorphism statements |
+| $M_L \cong \mathbb{B}^{\mathrm{opp}}$, $M_R \cong \mathbb{B}$ | the two isomorphism statements |
 | $N(\tilde P)$ | the norm, so that $\tilde P$ is a unit exactly when $N(\tilde P)\neq0$ |
 
 ## Further Reading

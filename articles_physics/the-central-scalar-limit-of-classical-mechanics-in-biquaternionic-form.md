@@ -208,7 +208,7 @@ with the general solution $u = 1/p + C\cos(\theta - \theta_0)$, hence $r = p/(1 
 
 ### Rotations
 
-The rotations of the real three-space are the adjoint actions of the unit real quaternions $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat n$, acting by $\vec a \mapsto R\vec aR^{-1}$. The group is $SU(2)$, the double cover of $SO(3)$, and its Lie algebra is the three-dimensional real space $\operatorname{span}\{e_1, e_2, e_3\}$ closed under the commutator, since
+The rotations of the real three-space are the adjoint actions of the unit real quaternions $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat u$, acting by $\vec a \mapsto R\vec aR^{-1}$. The group is $SU(2)$, the double cover of $SO(3)$, and its Lie algebra is the three-dimensional real space $\operatorname{span}\{e_1, e_2, e_3\}$ closed under the commutator, since
 
 $$
 [e_j, e_k] = 2\epsilon_{jkl}e_l .
@@ -230,7 +230,7 @@ It is important not to conflate two algebras that the notation makes look alike.
 
 ### Numerical Checks
 
-Several identities used above were verified by explicit computation with complex-coefficient quaternions and with numerical differentiation of phase-space functions. The quaternion product of two real vectors was confirmed to be $\vec a\vec b = -\vec a\cdot\vec b\,e_0 + \vec a\times\vec b$ and the commutator to be $[\vec a,\vec b] = 2\,\vec a\times\vec b$; the vector part of $\vec r\vec p$ was confirmed to equal $\vec r\times\vec p$; the central-force criterion $[\vec r,\vec F] = 0$ was confirmed to hold exactly when $\vec r\times\vec F = 0$; and the bracket $\{L_i, L_j\} = \epsilon_{ijk}L_k$ was confirmed by central-difference evaluation of the Poisson bracket at several representative phase-space points, with a maximum deviation of order $10^{-11}$. The rotation-rotor identity $R\vec aR^{-1}$ for $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat n$ was confirmed to rotate a vector by the angle $\theta$ about $\hat n$ while preserving the biquaternion norm.
+Several identities used above were verified by explicit computation with complex-coefficient quaternions and with numerical differentiation of phase-space functions. The quaternion product of two real vectors was confirmed to be $\vec a\vec b = -\vec a\cdot\vec b\,e_0 + \vec a\times\vec b$ and the commutator to be $[\vec a,\vec b] = 2\,\vec a\times\vec b$; the vector part of $\vec r\vec p$ was confirmed to equal $\vec r\times\vec p$; the central-force criterion $[\vec r,\vec F] = 0$ was confirmed to hold exactly when $\vec r\times\vec F = 0$; and the bracket $\{L_i, L_j\} = \epsilon_{ijk}L_k$ was confirmed by central-difference evaluation of the Poisson bracket at several representative phase-space points, with a maximum deviation of order $10^{-11}$. The rotation-rotor identity $R\vec aR^{-1}$ for $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat u$ was confirmed to rotate a vector by the angle $\theta$ about $\hat u$ while preserving the biquaternion norm.
 
 ## What the Limit Excludes
 
@@ -294,7 +294,7 @@ The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{
 | $V_{\text{eff}} = V(r) + L^2/(2mr^2)$ | Effective potential |
 | $u = 1/r$ | Binet variable |
 | $u'' + u = -F(1/u)/(mh^2u^2)$ | Binet's equation for a central force |
-| $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat n$ | Rotation rotor; $\vec a\mapsto R\vec aR^{-1}$ |
+| $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat u$ | Rotation rotor; $\vec a\mapsto R\vec aR^{-1}$ |
 | $[e_j,e_k] = 2\epsilon_{jkl}e_l$ | Rotation algebra in the real three-space |
 | $\{L_i,L_j\} = \epsilon_{ijk}L_k$ | Poisson-bracket angular-momentum algebra |
 | $\{x_i,p_j\} = \delta_{ij}$ | Canonical Poisson brackets |

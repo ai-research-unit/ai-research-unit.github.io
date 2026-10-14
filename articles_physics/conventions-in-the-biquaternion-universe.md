@@ -136,6 +136,8 @@ Three rules are read off the table. **A pure element is the vector part of an el
 
 **The pure glyphs.** The hat is laid on the glyph of a special element on the same case rule that governs the layer: the pure root is $\hat\Xi$ in the biquaternion layer and $\hat\xi$ in the quaternion layer, and the pure nilpotent is $\hat\Upsilon$ in the biquaternion layer and $\hat\nu$ in the quaternion layer.
 
+**The hat has priority over the tilde.** Where an element is pure, the hat is written whatever else the element is, and the tilde of a special glyph is dropped: a pure root is $\hat\Xi$ and a pure nilpotent is $\hat\Upsilon$ (or $\hat\xi$ and $\hat\nu$ in the quaternion layer), never $\tilde\Xi$ or $\tilde\Upsilon$. The tilde belongs to the general element, read with its scalar part beside its vector part, and a pure element has no scalar part to be read against; purity therefore decides the mark. The special conventions that write the root $\tilde\Xi$ or the nilpotent $\tilde\Upsilon$ name the **general** element of that class, which need not be pure, and an element that is at once special and pure is written with the hat and only the hat.
+
 A pure glyph is given from the quaternions to the biquaternions only, the layers this convention reaches. The octonion layer is outside the series, and the commutative layers carry their imaginary part in a single coefficient, $A = a + ia'$.
 
 ## The Conjugations and the Adjoint
@@ -470,7 +472,7 @@ A non-zero idempotent $\tilde{\Pi}$ generates the **minimal left ideal** $\mathb
 
 **The coordinates carry the letter of the idempotent**, as for a general element: in $\mathbb{B}$ the idempotent is $\tilde{\Pi} = \Pi_0e_0 + \Pi_1e_1 + \Pi_2e_2 + \Pi_3e_3$ with $\Pi_\mu = \pi_\mu + i\pi'_\mu$, its scalar part $\Pi_0$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$; in $\mathbb{H}$ it is $\tilde\pi = \pi_0e_0 + \pi_1e_1 + \pi_2e_2 + \pi_3e_3$ with real $\pi_\mu$.
 
-**The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.** A pair is $\tilde{\Pi}_1, \tilde{\Pi}_2$; a second pair in the same statement takes the next numbers, $\tilde{\Pi}_3, \tilde{\Pi}_4$; and a family indexed by a direction is written with its argument, $\tilde{\Pi}_{1,2}(\hat{\mu})$. When a pair is **complete**, $\tilde{\Pi}_+ + \tilde{\Pi}_- = e_0$, its two members may be written $\tilde{\Pi}_+$ and $\tilde{\Pi}_-$: the subscript $+$ names the member attached to $+1$ and the subscript $-$ the member attached to $-1$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element.
+**The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.** A pair is $\tilde{\Pi}_1, \tilde{\Pi}_2$; a second pair in the same statement takes the next numbers, $\tilde{\Pi}_3, \tilde{\Pi}_4$; and a family indexed by a direction is written with its argument, $\tilde{\Pi}_{1,2}(\hat u)$. When a pair is **complete**, $\tilde{\Pi}_+ + \tilde{\Pi}_- = e_0$, its two members may be written $\tilde{\Pi}_+$ and $\tilde{\Pi}_-$: the subscript $+$ names the member attached to $+1$ and the subscript $-$ the member attached to $-1$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element.
 
 The idempotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
@@ -492,7 +494,7 @@ $$
 \tilde{\nu}^2 = 0 .
 $$
 
-**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (§*The Nilpotent Convention* of *Conventions in Mathematics*), and the class is relative to the product. A nilpotent is never a projector, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\tilde{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
+**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (§*The Nilpotent Convention* of *Conventions in Mathematics*), and the class is relative to the product. A nilpotent is never a projector, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\hat{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
 
 **The coordinates carry the letter of the nilpotent**, as for a general element: in $\mathbb{B}$ the nilpotent is $\tilde{\Upsilon} = \Upsilon_0e_0 + \Upsilon_1e_1 + \Upsilon_2e_2 + \Upsilon_3e_3$ with $\Upsilon_\mu = \nu_\mu + i\nu'_\mu$, its scalar part $\Upsilon_0$ and its vector part $\vec\Upsilon = \vec\nu + i\vec\nu'$; in $\mathbb{H}$ it is $\tilde\nu = \nu_0e_0 + \nu_1e_1 + \nu_2e_2 + \nu_3e_3$ with real $\nu_\mu$.
 
@@ -506,11 +508,14 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 |---|---|
 | $\tilde{\Upsilon}$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Upsilon}$ it generates |
 | $\tilde{\nu}$ | A nilpotent of the quaternion or split-quaternion layer |
+| $\hat{\Upsilon}$, $\hat{\nu}$ | A pure nilpotent, written with the hat and without the tilde by the priority rule of §*Pure Elements and their Coefficients* |
 | $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
 
 The convention is one of **notation, not of substance**: an element written $\tilde{\nu}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be nilpotent.
 
-The standard pair of nilpotents is $\tilde{\Upsilon}_1$ and $\tilde{\Upsilon}_2$, the off-diagonal Peirce units of *Ideals and Peirce Decomposition of the General Plain Algebra* exchanged by the star. The truncated ladder of *The Biquaternion Vacuum as a Minimal Idempotent* and of the Fock, vacuum and matrix-representation articles is this pair: those articles write it $\tilde{\Upsilon}_1$ and $\tilde{\Upsilon}_2$ wherever the algebra element is meant, and keep the ladder letters for the abstract operators.
+The standard pair of nilpotents is $\hat{\Upsilon}_1$ and $\hat{\Upsilon}_2$, the off-diagonal Peirce units of *Ideals and Peirce Decomposition of the General Plain Algebra* exchanged by the star. The truncated ladder of *The Biquaternion Vacuum as a Minimal Idempotent* and of the Fock, vacuum and matrix-representation articles is this pair: those articles write it $\hat{\Upsilon}_1$ and $\hat{\Upsilon}_2$ wherever the algebra element is meant, and keep the ladder letters for the abstract operators.
+
+**The standard pair carries the hat, not the tilde.** The two Peirce units are pure, $\hat{\Upsilon}_1 = \tfrac12(ie_1 - e_2)$ and $\hat{\Upsilon}_2 = \tfrac12(ie_1 + e_2)$, with no scalar part, so by §*Pure Elements and their Coefficients* the hat takes priority over the tilde and the tilde is dropped; the pair is written $\hat{\Upsilon}_1, \hat{\Upsilon}_2$ and never $\tilde{\Upsilon}_1, \tilde{\Upsilon}_2$. The tilde is kept for the general nilpotent $\tilde{\Upsilon}$, which may carry a scalar part and is not pure.
 
 ## The Four-Vector Representation
 
@@ -649,6 +654,29 @@ $\flat$ is **not** the charge conjugation either. It has the **shape** of a char
 
 **$\flat$ and the Klein four.** The four involutions $\{1,\bar{\cdot},{}^{\natural},{}^{*}\}$ form a **Klein four group** under composition, and $\flat=-{}^{*}$ is the **fourth character** and not a fourth element: it is minus the star, and its fixed space is the material sector. A reviewer must not treat $\flat$ as an independent involution. The Klein four and the four block characters are *Relations Between Subspaces*; the two $\mathbb{Z}_2$ decompositions that cannot be aligned are *The Centre of the Biquaternion Algebra as the Classical Sector*.
 
+## The Superscripts
+
+Two superscript tokens run beside the marks of the elements and the marks of the conjugations, and neither is to be read for the other:
+
+| Token | Written on | Meaning |
+|---|---|---|
+| $^{\mathrm{fop}}$ | an operator glyph | an operator on a state space, the Fock-operator mark |
+| $^{\mathrm{opp}}$ | an algebra name | the opposite algebra, the algebra with the reversed product |
+
+The hat, the tilde and the arrow are marks of the **elements**: the hat a pure element, the tilde the quaternionic factor, the arrow the vector part of a named element. None of them says that a glyph is an operator, and the quantized articles need a mark that does, because they write operators on a state space whose letters are also letters of the algebra: $a$ and $b$ the ladder operators against $a$, $b$ coefficients and directions, $H$ the Hamiltonian against $h$ a field direction, $N$ the number operator, $S$ the spin operator, $p$ the momentum operator, $\psi$ the field operator, $F$ the fermion number, $Q$ the charge.
+
+**The mark.** An operator that acts on a **state space** and is not an element of the algebra carries the upright superscript $\mathrm{fop}$, set on the glyph and read as part of it:
+
+$$
+a^{\mathrm{fop}},\quad b^{\mathrm{fop}},\quad \psi^{\mathrm{fop}},\quad H^{\mathrm{fop}},\quad N^{\mathrm{fop}},\quad S^{\mathrm{fop}},\quad F^{\mathrm{fop}},\quad Q^{\mathrm{fop}} .
+$$
+
+**When it is written.** The rule is **collision, not layer**. The mark is written where the operator's letter would otherwise be read as an element of the algebra — the ladders $a^{\mathrm{fop}}$, $b^{\mathrm{fop}}$, the field $\psi^{\mathrm{fop}}$, the Hamiltonian $H^{\mathrm{fop}}$, the number $N^{\mathrm{fop}}$, the spin $S^{\mathrm{fop}}$, the momentum $p^{\mathrm{fop}}$, the fermion number $F^{\mathrm{fop}}$, the charge $Q^{\mathrm{fop}}$ — and it is left off where no such reading is possible. The structural operators on the algebra carry glyphs of their own and no superscript: the left and right multiplications $L_{\tilde Q}$ and $R_{\tilde Q}$, the sandwich $\operatorname{H}_{\tilde Q}$, the derivations, the automorphisms, and the rotation rotor $\tilde u$, which is an element of $Sp(1)$ and an operator only through its action.
+
+**It combines with the dagger, operator first.** The dagger is the general adjoint (§*The Conjugations and the Adjoint*); the superscript marks the operator. Where both are written on the same glyph, the operator mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$. The dagger alone never says that its glyph is an operator, and the superscript alone never says that the operator is self-adjoint; the two are read together, so that $a^{\mathrm{fop}\dagger}$ is the adjoint of the ladder and $N^{\mathrm{fop}}$ the number operator written without an adjoint because it is self-adjoint.
+
+**The opposite algebra carries a different token.** The reversed-product algebra is written with the superscript $\mathrm{opp}$, $\mathbb{B}^{\mathrm{opp}}$, $A^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$, on an **algebra name**, where the operator mark is written on an **operator glyph**. The two tokens are distinct and neither is read for the other: $a^{\mathrm{fop}}$ is never an opposite algebra, and $\mathbb{B}^{\mathrm{opp}}$ is never an operator.
+
 ## Summary
 
 The conventions of the series are one object read in order, from the object itself to the two clauses a field equation inherits.
@@ -689,6 +717,7 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $\tilde{Q}^{\natural} \mapsto \epsilon M^{\mathsf T}\epsilon^{-1}$, $\bar{\tilde{Q}} \mapsto \epsilon\overline{M}\epsilon^{-1}$ | The two conjugations dressed by the antisymmetric form; $\epsilon = \mathsf{M}_2(-e_2)$ |
 | $\tilde{Q}^{*} \mapsto M^\dagger$, $\tilde{Q}^\flat \mapsto -M^\dagger$ | The two undressed ones. Entrywise conjugation of $M$ alone is not the image of any involution |
 | $\flat = -{}^{*}$ | The anti-Hermitian conjugation, the algebra's real structure |
+| $L^{\mathrm{fop}}$ | An operator of the quantized layer, an operator on a state space and not an element of the algebra — the ladders $a^{\mathrm{fop}}, b^{\mathrm{fop}}$, the field $\psi^{\mathrm{fop}}$, the number $N^{\mathrm{fop}}$, the Hamiltonian $H^{\mathrm{fop}}$ (see §*The Superscripts*). The opposite algebra uses the separate token $A^{\mathrm{opp}}$ |
 | $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$ | Centre subspace, fixed points of quaternion conjugation; the centre of $\mathbb{B}$ and the complex time sector; parameters $q_0, q'_0$ with $q_0 = ct'$ and $q'_0 = ct$ |
 | $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\}$ | The vector subspace, i.e. the complex space sector: anti-fixed points of quaternion conjugation, real dimension six; parameters $q_k, q'_k$ with $(q_k) = (x,y,z)$ and $(q'_k) = (x',y',z')$. The pure elements are these, written $\hat{Q}$ (§*Pure Elements and their Coefficients*). |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, i.e. the real sector (the real half): fixed points of complex conjugation, all four coefficients real |

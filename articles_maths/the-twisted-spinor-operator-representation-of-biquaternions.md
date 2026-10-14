@@ -31,10 +31,10 @@ Three claims organize the article. First, the general operator's module is the s
 
 ## The Four Factors as Exponentials
 
-The polar word is an ordered product of four exponentials, and the operator reading of this article is read off the exponents. With the rapidity $\psi$ of the boost and its unit axis $\hat n$, and the stored half-angle $\theta$ of the rotor and its unit axis $\hat u$,
+The polar word is an ordered product of four exponentials, and the operator reading of this article is read off the exponents. With the rapidity $\psi$ of the boost and its unit axis $\hat u_{\mathrm b}$, and the stored half-angle $\theta$ of the rotor and its unit axis $\hat u_{\mathrm r}$,
 
 $$
-\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\hat n\Bigr)\,\exp(\theta\hat u) .
+\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\Bigr)\,\exp(\theta\hat u_{\mathrm r}) .
 $$
 
 Each exponent is a parameter times a **root** of the algebra, and the sign of the square of that root decides the character of the exponential. For an element $\nu$ and a real $\theta'$, the series $\exp(\nu\theta') = \sum_{n\ge0}\nu^n\theta'^n/n!$ collapses to
@@ -48,7 +48,7 @@ e_0 + \nu\theta' , & \nu^2 = 0 , \\
 \end{cases}
 $$
 
-the powers repeating with period four, truncating at the second term, and repeating with period two respectively. The phase and the rotor are the trigonometric case, at $\nu = i$ (central) and at $\nu = \hat u$ (a unit real pure quaternion); the scale and the boost are the hyperbolic case, at $\nu = e_0$ and at $\nu = i\hat n$ (Hermitian); the parabolic case carries no factor of the word. The exponent of the boost lies in $\mathbb{M}_+$ and is traceless, and the exponent of the rotor lies in the real pure quaternions; the boost and the rotor carry the **half** parameters $\frac{\psi}{2}$ and $\theta$, and the doubling that the sandwich deposits back is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$.
+the powers repeating with period four, truncating at the second term, and repeating with period two respectively. The phase and the rotor are the trigonometric case, at $\nu = i$ (central) and at $\nu = \hat u_{\mathrm r}$ (a unit real pure quaternion); the scale and the boost are the hyperbolic case, at $\nu = e_0$ and at $\nu = i\hat u_{\mathrm b}$ (Hermitian); the parabolic case carries no factor of the word. The exponent of the boost lies in $\mathbb{M}_+$ and is traceless, and the exponent of the rotor lies in the real pure quaternions; the boost and the rotor carry the **half** parameters $\frac{\psi}{2}$ and $\theta$, and the doubling that the sandwich deposits back is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$.
 
 The operator reading is the exponent read on the module. The first two exponentials are central, so they act on the module by the single complex number $\rho = re^{i\alpha}$, which is the twist; the last two are non-central, and they are the norm-one element $\tilde U = B\tilde q$, which is the spinor representation of the Lorentz group. The four exponents do not all commute, because the two non-central ones fail to, so the word is ordered, and the order is the order of the four operators, as the next section states.
 
@@ -177,7 +177,7 @@ $$
 \tilde R\;\longmapsto\;\tilde{U}\,\tilde R\,\tilde{U}^{*}=B\bigl(\tilde q\,\tilde R\,\tilde q^{-1}\bigr)B ,
 $$
 
-a rotation followed by a boost, both with **doubled** parameters. The rotor $\tilde q$ stores a half-angle, $e^{\vec u/2}$ with rotation angle $\lvert\vec u\rvert=\theta$, and the conjugation $\tilde q\,\tilde R\,\tilde q^{-1}$ is the rotation by the full angle. The boost factor $B$ stores a half-rapidity, $\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\hat n$, and the conjugation $B\,\tilde R\,B$ is the Lorentz boost of the full rapidity. On the boost axis $e_3$ both are diagonal and exact:
+a rotation followed by a boost, both with **doubled** parameters. The rotor $\tilde q$ stores a half-angle, $e^{\vec u/2}$ with rotation angle $\lvert\vec u\rvert=\theta$, and the conjugation $\tilde q\,\tilde R\,\tilde q^{-1}$ is the rotation by the full angle. The boost factor $B$ stores a half-rapidity, $\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\hat u_{\mathrm b}$, and the conjugation $B\,\tilde R\,B$ is the Lorentz boost of the full rapidity. On the boost axis $e_3$ both are diagonal and exact:
 
 $$
 \mathsf{M}_2(B)=\mathrm{diag}\bigl(e^{\psi/2},e^{-\psi/2}\bigr),
@@ -221,7 +221,7 @@ The exponential form is the polar form with $r=1$, $\alpha=0$: the pure quaterni
 **The module.** The action $\psi\mapsto\mathsf{M}_2(\tilde{U})\psi$ is the spinor representation proper. It is irreducible, because $\mathbb{B}$ is simple; it is faithful, because $\mathsf{M}_2(-e_0)=-I_2$, so a rotation by $2\pi$ sends a spinor to its negative and only a rotation by $4\pi$ restores it; and it is non-unitary, because every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so $\rho(ie_k)=i\rho(e_k)$ is Hermitian while skew-adjointness would force it to vanish, killing the boosts and the whole algebra. On the module the obstruction is the identity
 
 $$
-\tilde{U}^{*}\tilde{U}=\tilde{U}^{2}=\cosh\psi+i\sinh\psi\,\hat u\neq e_0 ,
+\tilde{U}^{*}\tilde{U}=\tilde{U}^{2}=\cosh\psi+i\sinh\psi\,\hat u_{\mathrm b}\neq e_0 ,
 $$
 
 which is the "sub-case $r=1$" of the double-dilatation statement: for a norm-one element the two copies collapse to the identity in norm but not in value.

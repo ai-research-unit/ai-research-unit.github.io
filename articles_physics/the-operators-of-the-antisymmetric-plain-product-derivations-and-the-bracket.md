@@ -351,7 +351,7 @@ scaling automorphism: the one internal transformation the adjoint representation
 
 ## The Operators Acting on the State Space
 
-Let $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$ be the spinor space of *The Spinor Space
+Let $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\hat\Upsilon_2\}$ be the spinor space of *The Spinor Space
 as a Module and as a Hilbert Space*, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, a complex two-dimensional left module of the
 algebra and the carrier of the state space; on it the algebra acts by the matrix representation
 $\mathsf{M}_2(e_k)=-i\sigma_k$, and on the algebra itself the derivation $L^{\wedge}_{\tilde A}$ is the matrix commutator

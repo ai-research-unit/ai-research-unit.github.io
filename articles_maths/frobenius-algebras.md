@@ -9,7 +9,7 @@ The article is the first of the representation-theoretic layer of the category. 
 
 The article is algebraic. The language of a non-degenerate pairing is used only as a device for expressing a duality between an algebra and its dual; the theory of bilinear and quadratic forms — symmetry and skew-symmetry as a classification, diagonalisation, orthogonal groups, and the geometric reading of a pairing — belongs to Part II, and the topological Poincaré duality that a Frobenius algebra models belongs there as well. Everything asserted here is an isomorphism of modules or an identity between elements.
 
-Throughout, $k$ is a field, $A$ is a finite-dimensional unital associative $k$-algebra, and $A^* = \operatorname{Hom}_k(A,k)$ is its linear dual. We write $A^{\mathrm{op}}$ for the opposite algebra and $\operatorname{soc}(A)$ for the socle of the regular module.
+Throughout, $k$ is a field, $A$ is a finite-dimensional unital associative $k$-algebra, and $A^* = \operatorname{Hom}_k(A,k)$ is its linear dual. We write $A^{\mathrm{opp}}$ for the opposite algebra and $\operatorname{soc}(A)$ for the socle of the regular module.
 
 ## The Frobenius Functional
 
@@ -48,7 +48,7 @@ where the left $A$-module structure on $A^*$ is $(a\cdot f)(b) = f(ba)$; so a Fr
 
 **Corollary (self-injectivity).** A Frobenius algebra $A$ is **quasi-Frobenius**: every projective left $A$-module is injective, and every injective left $A$-module is projective, so a left $A$-module is projective if and only if it is injective.
 
-*Proof.* The dual $A^*$ of the regular module is injective as a left $A$-module, since $A^* = \operatorname{Hom}_k(A,k)$ is the injective cogenerator of the category of $k$-vector spaces, and $A \cong A^*$ by the theorem; hence ${}_AA$ is injective. A direct summand of an injective module is injective and a direct sum of injectives is injective, so every projective module is injective. Applying the same argument to $A^{\mathrm{op}}$ and dualising gives the converse.
+*Proof.* The dual $A^*$ of the regular module is injective as a left $A$-module, since $A^* = \operatorname{Hom}_k(A,k)$ is the injective cogenerator of the category of $k$-vector spaces, and $A \cong A^*$ by the theorem; hence ${}_AA$ is injective. A direct summand of an injective module is injective and a direct sum of injectives is injective, so every projective module is injective. Applying the same argument to $A^{\mathrm{opp}}$ and dualising gives the converse.
 
 The converse of the corollary fails in general: a self-injective algebra need not satisfy $A \cong A^*$ as modules on either side, and such algebras are precisely the quasi-Frobenius non-Frobenius algebras. The extra condition that upgrades quasi-Frobenius to Frobenius is that the left socle and the right socle of the regular module coincide, a condition of Nakayama's.
 
@@ -78,7 +78,7 @@ An algebra is called **symmetric** if it admits a Frobenius functional with $\nu
 
 **Corollary.** A Frobenius algebra $A$ is self-injective: every projective left $A$-module is injective, and every injective left $A$-module is projective. Consequently a left $A$-module is projective if and only if it is injective, and the projective indecomposable modules are the injective indecomposable modules.
 
-*Proof.* The regular module is injective by the theorem, and a direct summand of an injective module is injective, so every projective module, being a summand of a free module, is injective. The converse is the dual statement, obtained by applying the same argument to the opposite algebra and using that a module is injective over $A$ exactly when its dual is projective over $A^{\mathrm{op}}$.
+*Proof.* The regular module is injective by the theorem, and a direct summand of an injective module is injective, so every projective module, being a summand of a free module, is injective. The converse is the dual statement, obtained by applying the same argument to the opposite algebra and using that a module is injective over $A$ exactly when its dual is projective over $A^{\mathrm{opp}}$.
 
 **Corollary.** For a Frobenius algebra $A$ the socle of the left regular module is isomorphic to the dual of the top, $\operatorname{soc}({}_AA) \cong (A/J(A))^*$, and in particular $\operatorname{soc}({}_AA)$ is simple exactly when $A$ is a local algebra, that is, exactly when $A$ has a unique simple module up to isomorphism. Every finite-dimensional semisimple $k$-algebra is Frobenius, and a local Frobenius algebra is the basic example with a simple socle.
 

@@ -16,7 +16,7 @@ The conventions are those of the companion articles: the quaternion basis $e_0 =
 
 ## The State Space and the Trace Pairing
 
-A state of the informational sector is an element $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ of $\mathbb{M}_+$ with $\vec r \in \mathbb{R}^3$, positive if and only if $|\vec r| \leq 1$. The states form the Bloch ball, whose boundary is the set of pure states; these are exactly the idempotents $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$, with $\hat{\mu}$ a unit pure real quaternion. Every state has trace one, $\mathrm{Tr}(\tilde{\rho}) = 2\,\mathrm{Sc}(\tilde{\rho}) = 1$.
+A state of the informational sector is an element $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ of $\mathbb{M}_+$ with $\vec r \in \mathbb{R}^3$, positive if and only if $|\vec r| \leq 1$. The states form the Bloch ball, whose boundary is the set of pure states; these are exactly the idempotents $\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}(e_0 \pm i\hat u)$, with $\hat u$ a unit pure real quaternion. Every state has trace one, $\mathrm{Tr}(\tilde{\rho}) = 2\,\mathrm{Sc}(\tilde{\rho}) = 1$.
 
 An observable is a general Hermitian element $\tilde{H} = h_0 e_0 + i\vec h$, and the **trace pairing**
 
@@ -165,7 +165,7 @@ with $\tilde{H} \in \mathbb{M}_+$ Hermitian, $\tilde{L}_k \in \mathbb{B}$ arbitr
 
 ### Definition and Kraus Form
 
-Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\hat n$ be a unit pure real quaternion and $\tilde\Pi_1(\hat n) = \tfrac{1}{2}(e_0 + i\hat n)$, $\tilde\Pi_2(\hat n) = \tfrac{1}{2}(e_0 - i\hat n)$ the complementary idempotents along $\hat n$. For $p \in [0,1]$, the **dephasing channel** along $\hat n$ is
+Dephasing destroys the phase coherence between the two eigenstates of a chosen direction without changing their populations. Let $\hat u$ be a unit pure real quaternion and $\tilde\Pi_1(\hat u) = \tfrac{1}{2}(e_0 + i\hat u)$, $\tilde\Pi_2(\hat u) = \tfrac{1}{2}(e_0 - i\hat u)$ the complementary idempotents along $\hat u$. For $p \in [0,1]$, the **dephasing channel** along $\hat u$ is
 
 $$
 \Phi^{\mathrm{deph}}_p(\tilde{\rho})
@@ -173,46 +173,46 @@ $$
 + p\left(\tilde\Pi_1\,\tilde{\rho}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{\rho}\,\tilde\Pi_2\right).
 $$
 
-It is completely positive and trace preserving with the three Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_0$, $\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\hat n)$, $\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\hat n)$: because the idempotents are Hermitian, $\tilde{K}_1^{*}\tilde{K}_1 + \tilde{K}_2^{*}\tilde{K}_2 = p(\tilde\Pi_1 + \tilde\Pi_2) = p\,e_0$, and the normalization sums to $(1-p)e_0 + p\,e_0 = e_0$.
+It is completely positive and trace preserving with the three Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_0$, $\tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\hat u)$, $\tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\hat u)$: because the idempotents are Hermitian, $\tilde{K}_1^{*}\tilde{K}_1 + \tilde{K}_2^{*}\tilde{K}_2 = p(\tilde\Pi_1 + \tilde\Pi_2) = p\,e_0$, and the normalization sums to $(1-p)e_0 + p\,e_0 = e_0$.
 
 ### The Bloch Vector Formula
 
-Put $\alpha = i\hat n$, so that $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \alpha)$ with $\alpha^\dagger = \alpha$ and $\alpha^2 = e_0$. A direct expansion gives
+Put $\alpha = i\hat u$, so that $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \alpha)$ with $\alpha^\dagger = \alpha$ and $\alpha^2 = e_0$. A direct expansion gives
 
 $$
 \tilde\Pi_1\,\tilde{Q}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Q}\,\tilde\Pi_2 = \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
 $$
 
-since the cross terms cancel between the two projectors. For a state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$, the elementary products are $\alpha\,e_0\,\alpha = \alpha^2 = e_0$ and $\alpha\,(i\vec r)\,\alpha = -i\,\hat n\,\vec r\,\hat n = -i(\vec r - 2(\hat n\cdot\vec r)\hat n)$, using $\hat n\,\vec r\,\hat n = \vec r - 2(\hat n\cdot\vec r)\hat n$. Combining,
+since the cross terms cancel between the two projectors. For a state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$, the elementary products are $\alpha\,e_0\,\alpha = \alpha^2 = e_0$ and $\alpha\,(i\vec r)\,\alpha = -i\,\hat u\,\vec r\,\hat u = -i(\vec r - 2(\hat u\cdot\vec r)\hat u)$, using $\hat u\,\vec r\,\hat u = \vec r - 2(\hat u\cdot\vec r)\hat u$. Combining,
 
 $$
 \tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2
-= \tfrac{1}{2}\left(e_0 + i(\hat n\cdot\vec r)\,\hat n\right),
+= \tfrac{1}{2}\left(e_0 + i(\hat u\cdot\vec r)\,\hat u\right),
 $$
 
-so the fully dephasing map *projects the Bloch vector onto the $\hat n$ axis*. Including the mixture with weight $1-p$,
+so the fully dephasing map *projects the Bloch vector onto the $\hat u$ axis*. Including the mixture with weight $1-p$,
 
 $$
 \boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{\rho}) = \tfrac{1}{2}\left(e_0 + i\,\vec r'\right),
 \qquad
-\vec r' = (1-p)\,\vec r + p\,(\hat n\cdot\vec r)\,\hat n.\;}
+\vec r' = (1-p)\,\vec r + p\,(\hat u\cdot\vec r)\,\hat u.\;}
 $$
 
-The transverse components of the Bloch vector are multiplied by $1-p$, while the longitudinal component is untouched. In the eigenbasis of $\hat n$, the off-diagonal entries of the density matrix — the **coherences** — are scaled by $1-p$, while the diagonal entries — the **populations** — are unchanged. This is the standard phase-damping channel, expressed entirely in the objects of $\mathbb{M}_+$.
+The transverse components of the Bloch vector are multiplied by $1-p$, while the longitudinal component is untouched. In the eigenbasis of $\hat u$, the off-diagonal entries of the density matrix — the **coherences** — are scaled by $1-p$, while the diagonal entries — the **populations** — are unchanged. This is the standard phase-damping channel, expressed entirely in the objects of $\mathbb{M}_+$.
 
 ### Limiting Cases, Measurement, and Irreversibility
 
-At $p = 0$ the channel is the identity, a reversible unitary evolution. At $p = 1$ it is **full dephasing**, $\Phi^{\mathrm{deph}}_1(\tilde{\rho}) = \tfrac{1}{2}(e_0 + i(\hat n\cdot\vec r)\hat n)$, whose image is the diameter of the Bloch ball along $\hat n$; it is idempotent, $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$, and non-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\hat n$ and discarding the outcome leaves the average state
+At $p = 0$ the channel is the identity, a reversible unitary evolution. At $p = 1$ it is **full dephasing**, $\Phi^{\mathrm{deph}}_1(\tilde{\rho}) = \tfrac{1}{2}(e_0 + i(\hat u\cdot\vec r)\hat u)$, whose image is the diameter of the Bloch ball along $\hat u$; it is idempotent, $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$, and non-unitary. Full dephasing is **measure-and-forget**: measuring $\alpha = i\hat u$ and discarding the outcome leaves the average state
 
 $$
 p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = \Phi^{\mathrm{deph}}_1(\tilde{\rho}),
 \qquad
-p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho}) = \tfrac{1}{2}\left(1 \pm \hat n\cdot\vec r\right),
+p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho}) = \tfrac{1}{2}\left(1 \pm \hat u\cdot\vec r\right),
 $$
 
 as a direct computation confirms. The three-Kraus form shows that $\Phi^{\mathrm{deph}}_p$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.
 
-Write $r_\parallel = \hat n\cdot\vec r$ and $r_\perp^2 = |\vec r|^2 - r_\parallel^2$. Under dephasing,
+Write $r_\parallel = \hat u\cdot\vec r$ and $r_\perp^2 = |\vec r|^2 - r_\parallel^2$. Under dephasing,
 
 $$
 |\vec r'|^2 = (1-p)^2\,r_\perp^2 + r_\parallel^2 \leq |\vec r|^2 ,
@@ -226,7 +226,7 @@ S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-,
 \lambda_\pm = \tfrac{1}{2}\left(1 \pm |\vec r|\right),
 $$
 
-strictly increases, since $S$ is a decreasing function of $|\vec r|$. A pure state on the equator is driven into the interior of the Bloch ball; only the two pure states on the $\hat n$ axis are fixed. No channel can restore the lost coherence, because the inverse map is not completely positive. Unitary evolution, by contrast, preserves $|\vec r|$ exactly, and with it the purity and the spectrum of every state.
+strictly increases, since $S$ is a decreasing function of $|\vec r|$. A pure state on the equator is driven into the interior of the Bloch ball; only the two pure states on the $\hat u$ axis are fixed. No channel can restore the lost coherence, because the inverse map is not completely positive. Unitary evolution, by contrast, preserves $|\vec r|$ exactly, and with it the purity and the spectrum of every state.
 
 ## The Dichotomy, the Two Subspaces, and the Informational Sector
 
@@ -273,7 +273,7 @@ The dichotomy of this article is the dichotomy of **Kraus rank**: a channel is r
 
 **4. Entropy and the environment.** The increase of entropy under dephasing is proved state by state; is there a monotonicity theorem for a general biquaternion channel, in the form of data-processing inequalities for a suitable entropy functional on $\mathbb{M}_+$? And is there a dynamics of the "informational environment" of Stinespring dilation, or is it purely formal?
 
-**5. The relation to measurement.** Dephasing is measure-and-forget for the observable $i\hat n$; more generally every channel is a generalized measurement followed by a state transformation. Whether this unification has consequences beyond the standard one is open.
+**5. The relation to measurement.** Dephasing is measure-and-forget for the observable $i\hat u$; more generally every channel is a generalized measurement followed by a state transformation. Whether this unification has consequences beyond the standard one is open.
 
 ## Summary
 
@@ -281,7 +281,7 @@ A general state map on the informational sector is a linear map on $\mathbb{M}_+
 
 The reversible/irreversible dichotomy is the dichotomy of Kraus rank. A channel is reversible if and only if it has Kraus rank one, which happens if and only if it is conjugation by a unitary biquaternion, $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_0$. This is exactly the class of inner automorphisms of the algebra, and exactly the class of channels that preserve purity. The one-parameter subgroups are generated by Hamiltonians $\tilde{H} \in \mathbb{M}_+$ through $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$, whose generators $-i\tilde{H}/\hbar$ lie in the complementary subspace $\mathbb{M}_-$. A channel is irreversible if and only if its Kraus rank is at least two; the general irreversible channel is a sum of conjugations, and by Stinespring dilation it is the reduction of a reversible evolution on a larger system with the environment discarded.
 
-Dephasing is the canonical irreversible channel. Along a direction $\hat n$, it maps the Bloch vector by $\vec r \mapsto (1-p)\vec r + p(\hat n\cdot\vec r)\hat n$, scaling the coherences by $1-p$ and leaving the populations fixed. At $p=1$ it is the idempotent "measure-and-forget" channel of the observable $i\hat n$, whose image is the diameter of the Bloch ball. It strictly decreases purity and strictly increases entropy for off-axis states, and it cannot be inverted by any channel.
+Dephasing is the canonical irreversible channel. Along a direction $\hat u$, it maps the Bloch vector by $\vec r \mapsto (1-p)\vec r + p(\hat u\cdot\vec r)\hat u$, scaling the coherences by $1-p$ and leaving the populations fixed. At $p=1$ it is the idempotent "measure-and-forget" channel of the observable $i\hat u$, whose image is the diameter of the Bloch ball. It strictly decreases purity and strictly increases entropy for off-axis states, and it cannot be inverted by any channel.
 
 The relation of the split to the two subspaces is asymmetric. States and observables live in $\mathbb{M}_+$; the generators of reversible evolution live in $\mathbb{M}_-$; and the irreversible maps are those that are not inner automorphisms, requiring Kraus operators that are general elements of $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The dichotomy is thus an algebraic fact about the space of maps on the biquaternion algebra rather than an additional postulate — but, as the companion articles emphasize, it is a reformulation of standard quantum theory, not a new physical theory.
 
@@ -298,15 +298,15 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ | State of the informational sector |
 | $\tilde{H} = h_0 e_0 + i\vec h$ | Observable / Hamiltonian |
-| $\tilde\Pi_{1,2}(\hat n) = \tfrac{1}{2}(e_0 \pm i\hat n)$ | Idempotents (pure states) |
+| $\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}(e_0 \pm i\hat u)$ | Idempotents (pure states) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^{*}$ | Kraus representation of a channel |
 | $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_0$ | Trace-preservation condition |
 | $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*}\tilde{H}\tilde{K}_l$ | Dual (Heisenberg-picture) map |
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | One-parameter unitary group |
 | $-i\tilde{H}/\hbar \in \mathbb{M}_-$ | Generator of reversible evolution |
-| $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\hat n$ |
-| $\vec r \mapsto (1-p)\vec r + p(\hat n\cdot\vec r)\hat n$ | Dephasing action on the Bloch vector |
+| $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\hat u$ |
+| $\vec r \mapsto (1-p)\vec r + p(\hat u\cdot\vec r)\hat u$ | Dephasing action on the Bloch vector |
 | $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(\Phi)$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

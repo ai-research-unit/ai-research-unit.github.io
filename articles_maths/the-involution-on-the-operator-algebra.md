@@ -37,7 +37,7 @@ $$
 (S + T)^\dagger = S^\dagger + T^\dagger , \qquad (ST)^\dagger = T^\dagger S^\dagger , \qquad (T^\dagger)^\dagger = T , \qquad (\lambda T)^\dagger = \bar\lambda\,T^\dagger .
 $$
 
-Hence the adjoint is an anti-automorphism of the algebra $\mathcal{A}(A)$ of order two, an isomorphism $\mathcal{A}(A) \to \mathcal{A}(A)^{\mathrm{op}}$, and the adjointable operators form a subalgebra of $B(A)$.
+Hence the adjoint is an anti-automorphism of the algebra $\mathcal{A}(A)$ of order two, an isomorphism $\mathcal{A}(A) \to \mathcal{A}(A)^{\mathrm{opp}}$, and the adjointable operators form a subalgebra of $B(A)$.
 
 **Proof.** Uniqueness and additivity are the nondegeneracy of the form: $\{x,(S+T)^\dagger y\} = \{(S+T)x,y\} = \{Sx,y\} + \{Tx,y\} = \{x,S^\dagger y\} + \{x,T^\dagger y\}$, and the form is conjugate-linear in the second argument. For the product, $\{x,(ST)^\dagger y\} = \{STx,y\} = \{Tx,S^\dagger y\} = \{x,T^\dagger S^\dagger y\}$. The order two is $\{x,Ty\} = \{T^\dagger x,y\} = \{x,(T^\dagger)^\dagger y\}$, and the compatibility with the scalars is the conjugation.
 

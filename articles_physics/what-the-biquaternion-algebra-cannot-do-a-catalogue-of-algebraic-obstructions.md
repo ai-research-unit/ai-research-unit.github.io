@@ -22,7 +22,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 Each item below is given in the form **statement — proof — consequence — remedy**, and each is verified either by explicit computation or by a standard theorem cited as standard.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, with $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, with $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$; pure states are $\tilde\Pi(\hat u)=\tfrac12(e_0+i\hat u)$; the state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 ## How an Obstruction Is Certified
 
@@ -42,7 +42,7 @@ The catalogue is deliberately non-relativistic and structural. Obstructions that
 
 **Statement.** There is no maximal commutative subalgebra $\mathbb{A}\subset\mathbb{B}$ that is invariant under the full symmetry group of the algebra. Equivalently, no classical bit is singled out by the algebra's own structure.
 
-**Proof.** The maximal commutative subalgebras are the $\mathbb{A}_{\hat{n}}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\hat{n}),e_0-\tilde\Pi(\hat{n})\}$ for unit $\hat{n}\in\mathbb{R}^3$; the family is parametrized by $\mathbb{RP}^2$ and is permuted transitively by the adjoint action of $U(2)$. A subalgebra invariant under all of $U(2)$ would have to be fixed by a transitive group action on a space with more than one point, which is impossible. The only commutative subalgebra invariant under the whole adjoint action is the centre, which is not maximal.
+**Proof.** The maximal commutative subalgebras are the $\mathbb{A}_{\hat u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\hat u),e_0-\tilde\Pi(\hat u)\}$ for unit $\hat u\in\mathbb{R}^3$; the family is parametrized by $\mathbb{RP}^2$ and is permuted transitively by the adjoint action of $U(2)$. A subalgebra invariant under all of $U(2)$ would have to be fixed by a transitive group action on a space with more than one point, which is impossible. The only commutative subalgebra invariant under the whole adjoint action is the centre, which is not maximal.
 
 **Consequence.** The framework has no preferred pointer basis and no canonical classical bit. Every classical interpretation of the algebra requires a choice of axis, and the choice is not derivable from the algebra.
 
@@ -98,11 +98,11 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Statement.** The radical of the biquaternion norm is non-trivial: there are non-zero $\tilde{Q}$ with $N(\tilde{Q})=0$, and every null element is orthogonal to itself in the associated bilinear form. In particular the whole pure-state boundary is null.
 
-**Proof.** For the pure-state projector, $\tilde{P}^{\natural}(\hat{\mu})=e_0-\tilde\Pi(\hat{\mu})$ and hence
+**Proof.** For the pure-state projector, $\tilde{P}^{\natural}(\hat u)=e_0-\tilde\Pi(\hat u)$ and hence
 $$
-N\bigl(\tilde\Pi(\hat{\mu})\bigr)=\tilde\Pi(\hat{\mu})\,\tilde{P}^{\natural}(\hat{\mu})=\tilde\Pi(\hat{\mu})\bigl(e_0-\tilde\Pi(\hat{\mu})\bigr)=0
+N\bigl(\tilde\Pi(\hat u)\bigr)=\tilde\Pi(\hat u)\,\tilde{P}^{\natural}(\hat u)=\tilde\Pi(\hat u)\bigl(e_0-\tilde\Pi(\hat u)\bigr)=0
 $$
-for every $\hat{\mu}$ while $\tilde\Pi(\hat{\mu})\neq0$; indeed the defining property $\tilde{P}^2=\tilde{P}$ together with $\tilde{P}\tilde{P}^{\natural}=0$ characterises the boundary of the state space. Likewise $e_0\pm ie_k$ are null non-zero vectors, since $N(e_0\pm ie_k)=(1-1)e_0=0$.
+for every $\hat u$ while $\tilde\Pi(\hat u)\neq0$; indeed the defining property $\tilde{P}^2=\tilde{P}$ together with $\tilde{P}\tilde{P}^{\natural}=0$ characterises the boundary of the state space. Likewise $e_0\pm ie_k$ are null non-zero vectors, since $N(e_0\pm ie_k)=(1-1)e_0=0$.
 
 **Consequence.** The state space is the boundary of the cone of a degenerate quadratic form. One cannot speak of the "length" of a state; the metric must be obtained as the second variation on the null boundary, and not from the form's value at a point.
 
@@ -156,9 +156,9 @@ for every $\hat{\mu}$ while $\tilde\Pi(\hat{\mu})\neq0$; indeed the defining pro
 
 **Proof.** The complementary pure-state projectors satisfy
 $$
-\tilde\Pi(\hat{\mu})\,\bigl(e_0-\tilde\Pi(\hat{\mu})\bigr)=0
+\tilde\Pi(\hat u)\,\bigl(e_0-\tilde\Pi(\hat u)\bigr)=0
 $$
-for every unit $\hat{\mu}$, with both factors non-zero. In the matrix model this is the statement that rank-one matrices of orthogonal ranges multiply to zero; an element is invertible exactly when $\det M(\tilde{Q})=N(\tilde{Q})\neq0$, and the zero divisors are the elements of vanishing norm.
+for every unit $\hat u$, with both factors non-zero. In the matrix model this is the statement that rank-one matrices of orthogonal ranges multiply to zero; an element is invertible exactly when $\det M(\tilde{Q})=N(\tilde{Q})\neq0$, and the zero divisors are the elements of vanishing norm.
 
 **Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde{P}$ is idempotent with $N(\tilde{P})=0$, hence a zero divisor, while a mixed state $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|<1$ has $N(\tilde{\rho})=\tfrac14(1-r^2)e_0\neq0$ and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{N\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
 
@@ -297,7 +297,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** No maximal commutative subalgebra is invariant under a generic unitary evolution. Consequently no pointer basis is preserved by the dynamics.
 
-**Proof.** Conjugation by a unitary element implements a rotation of the Bloch sphere; a generic rotation maps a given axis $\hat{n}$ to a different axis, and hence maps $\mathbb{A}_{\hat{n}}$ to $\mathbb{A}_{\hat{n}'}$ with $\mathbb{A}_{\hat{n}'}\neq\mathbb{A}_{\hat{n}}$ by O1. A subalgebra is invariant under a one-parameter unitary group only if its axis is fixed by the corresponding rotation, i.e. only if the axis is an eigenvector of the Hermitian generator, a non-generic condition.
+**Proof.** Conjugation by a unitary element implements a rotation of the Bloch sphere; a generic rotation maps a given axis $\hat u$ to a different axis, and hence maps $\mathbb{A}_{\hat u}$ to $\mathbb{A}_{\hat u'}$ with $\mathbb{A}_{\hat u'}\neq\mathbb{A}_{\hat u}$ by O1. A subalgebra is invariant under a one-parameter unitary group only if its axis is fixed by the corresponding rotation, i.e. only if the axis is an eigenvector of the Hermitian generator, a non-generic condition.
 
 **Consequence.** Classicality in this framework cannot be a permanent algebraic property of a subsystem; it must be emergent, contextual, or maintained by a mechanism external to the closed unitary evolution.
 
@@ -379,7 +379,7 @@ Read as a whole, the catalogue is the framework's **ledger of forbidden structur
 - **Canonical-versus-positive interpretation.** The three quadratic obstructions O5–O7 are one trade-off: the form the algebra fixes canonically, the norm, is indefinite and vanishes on non-zero elements, while the positive form is trace-relative and canonical only up to its scale. Read physically, the canonical form of a relativistic element is indefinite — the norm is the interval, of signature $(3,1)$ on the material sector — so a positive probability cannot be read from the algebra's own form and must be added, which is the algebraic shape of why a relativistic one-particle description needs an added positive structure rather than an available one. Boundary: the obstructions and the trace-relative repair are proved above and in *Conventions in the Biquaternion Universe*; the indefinite inner product of a quantised gauge field is imported, and whether its identification with the norm on $\mathbb{M}_-$ has content beyond the coincidence of signatures is asked and not settled in *Canonical Quantization of the Biquaternion Maxwell Field*; the interpretation adds no derivation.
 - **One-mode interpretation.** O12 and O13 read together say that the algebra carries one mode and no internal composition: it has no canonical commutation relation and no internal tensor factorisation, while the two-mode arena is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. Read physically, the biquaternion algebra is intrinsically a **one-mode (one-qubit) theory**: the single-mode truncation is exact, the many-mode theory is the tensor tower built over it, and the framework's finite content is exactly one fermionic mode (*Fock Space and Creation/Annihilation Operators in Biquaternionic Form*). Boundary: the interpretation names the mode count and does not supply a field algebra, whose brackets are imported (O12).
 - **Basis-freedom interpretation.** O1, O16 and O17 are one statement read on the states: the algebra has no canonical maximal commutative subalgebra, the Hermitian sector no intrinsic complex structure, and the state module no canonical idempotent, so no basis is singled out. Read physically, the framework has no preferred classical frame and no pointer basis of its own — the basis of a measurement is a choice and not a datum of the algebra — which is the algebraic form of the basis-independence of quantum mechanics and the reason the classical sector is a limit rather than a subspace (*The Centre of the Biquaternion Algebra as the Classical Sector*). Boundary: basis-independence is shared with ordinary quantum mechanics; the interpretation states its algebraic origin and does not address the selection rule (O19).
-- **Mass is a breaking, not a product.** O22 read forwards: since a multiplication acts identically on the two chiral components and cannot couple them, a mass term is not a product of the algebra but a breaking, which the conventions realise as the right multiplication by $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
+- **Mass is a breaking, not a product.** O22 read forwards: since a multiplication acts identically on the two chiral components and cannot couple them, a mass term is not a product of the algebra but a breaking, which the conventions realise as the right multiplication by $\hat\Upsilon_1=\tfrac12(ie_1-e_2)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
 
 ## Summary
 
@@ -400,8 +400,8 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
 | $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\mathbb{B}^{\times}=\{N\neq0\}$ |
 | $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$ | Hermitian form |
-| $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state, null under $N$ |
-| $\mathbb{A}_{\hat{n}}$ | Maximal commutative subalgebra |
+| $\tilde\Pi(\hat u)=\tfrac12(e_0+i\hat u)$ | Pure state, null under $N$ |
+| $\mathbb{A}_{\hat u}$ | Maximal commutative subalgebra |
 | $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
 | $U(2)$ | Norm-preserving (unitary) group |

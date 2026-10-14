@@ -4,7 +4,7 @@
 
 A subalgebra of $\operatorname{End}_F(V)$ is a linear space of operators closed under composition, and the smallest such spaces are the scalars, the block-diagonal algebras and the triangular algebras. Two of them can have the same commutant, and the whole structure of a subalgebra is governed by the pair it forms with the set of operators commuting with it. This article develops the subalgebras of the endomorphism algebra, their **commutants**, the **bicommutant**, and the **double centraliser theorem** that identifies the subalgebras which are recovered from their commutant: precisely those for which $V$ is a semisimple module over the subalgebra.
 
-The endomorphism algebra $E = \operatorname{End}_F(V)$, its units, its centre and its simplicity are *Endomorphisms of a Linear Space*; the transpose and the anti-isomorphism $E \cong E^{\mathrm{op}}$ are *The Transpose of a Linear Map*; Schur's lemma, the simple and semisimple modules, the isotypic decomposition and the Wedderburn–Artin theorem are *Simple and Semisimple Modules*, and none of them is reproved here. What is established here is the correspondence between the subalgebras of $E$ and the module structures on $V$, the centraliser anti-isomorphism, the bicommutant, and the double centraliser theorem in the form used by the operator layer.
+The endomorphism algebra $E = \operatorname{End}_F(V)$, its units, its centre and its simplicity are *Endomorphisms of a Linear Space*; the transpose and the anti-isomorphism $E \cong E^{\mathrm{opp}}$ are *The Transpose of a Linear Map*; Schur's lemma, the simple and semisimple modules, the isotypic decomposition and the Wedderburn–Artin theorem are *Simple and Semisimple Modules*, and none of them is reproved here. What is established here is the correspondence between the subalgebras of $E$ and the module structures on $V$, the centraliser anti-isomorphism, the bicommutant, and the double centraliser theorem in the form used by the operator layer.
 
 The article assumes a field $F$, a finite-dimensional $F$-linear space $V$, the endomorphism algebra $E$, and the module theory of *Simple and Semisimple Modules*: the notions of a simple module, a semisimple module, the isotypic decomposition, and Schur's lemma. It uses no form, no norm and no distance, and no topology. The density theorem and Burnside's theorem are *Module Endomorphisms*, in the category Linear Spaces over Algebras, and are named here only as the non-finite-dimensional and non-semisimple completions of the double centraliser theorem.
 
@@ -91,7 +91,7 @@ Equivalently, a subalgebra of $\operatorname{End}_F(V)$ over which $V$ is semisi
 **Corollary (the commutant of a semisimple algebra is its opposite over the division algebra).** For a semisimple $A$ acting faithfully on $V$ with $V \cong \bigoplus_i S_i^{m_i}$ and $D_i = \operatorname{End}_A(S_i)$,
 
 $$
-A' \cong \prod_i M_{m_i}(D_i^{\mathrm{op}}) ,
+A' \cong \prod_i M_{m_i}(D_i^{\mathrm{opp}}) ,
 $$
 
 which is the double centraliser identity read from the other side.

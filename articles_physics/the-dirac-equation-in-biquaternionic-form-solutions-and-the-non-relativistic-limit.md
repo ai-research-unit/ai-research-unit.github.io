@@ -280,10 +280,10 @@ $$
 Because $\vec n$ satisfies $|\vec n| = \psi^\dagger\psi = 1$ (the standard Pauli identity), $\rho$ is a rank-one Hermitian projector: $\rho^2 = \rho$, $\mathrm{Tr}\,\rho = 1$. Under the isomorphism $\sigma_k \leftrightarrow i e_k$, this maps to
 
 $$
-\rho \;\longmapsto\; \tfrac{1}{2}\left(e_0 + i\,\hat n\right), \qquad \hat n = n_1 e_1 + n_2 e_2 + n_3 e_3,
+\rho \;\longmapsto\; \tfrac{1}{2}\left(e_0 + i\,\hat u\right), \qquad \hat u = n_1 e_1 + n_2 e_2 + n_3 e_3,
 $$
 
-which is exactly the idempotent $\tilde\Pi_1(\hat n)$ of the informational sector $\mathbb{M}_+$ in the companion quantum article. The unit vector $\vec n$ is the Bloch vector, and its normalization is a consequence of the algebra rather than an added condition. So a normalized two-component spinor is, in the biquaternion framework, precisely a pure state of $\mathbb{M}_+$, and the spinor bilinear $\psi\psi^\dagger$ is its representative idempotent. This is the sharpest sense in which the Dirac spinor structure and the informational sector are the same algebraic object, and it is the bridge between the present article and the qubit formalism.
+which is exactly the idempotent $\tilde\Pi_1(\hat u)$ of the informational sector $\mathbb{M}_+$ in the companion quantum article. The unit vector $\vec n$ is the Bloch vector, and its normalization is a consequence of the algebra rather than an added condition. So a normalized two-component spinor is, in the biquaternion framework, precisely a pure state of $\mathbb{M}_+$, and the spinor bilinear $\psi\psi^\dagger$ is its representative idempotent. This is the sharpest sense in which the Dirac spinor structure and the informational sector are the same algebraic object, and it is the bridge between the present article and the qubit formalism.
 
 ### The Gordon decomposition
 
@@ -305,10 +305,10 @@ $$
 \hat p \;\longrightarrow\; \hat p - q\vec A, \qquad i\partial_t \;\longrightarrow\; i\partial_t - q\Phi
 $$
 
-in natural units. The Dirac equation becomes $i\partial_t\psi = \hat{H}\psi$ with
+in natural units. The Dirac equation becomes $i\partial_t\psi = H^{\mathrm{fop}}\psi$ with
 
 $$
-\hat{H} = \boldsymbol{\alpha}\cdot(\hat p - q\vec A) + \beta m + q\Phi, \qquad
+H^{\mathrm{fop}} = \boldsymbol{\alpha}\cdot(\hat p - q\vec A) + \beta m + q\Phi, \qquad
 \boldsymbol{\alpha}^k = \gamma^0\gamma^k = \begin{pmatrix} 0 & \sigma_k \\ \sigma_k & 0 \end{pmatrix}.
 $$
 
@@ -413,10 +413,10 @@ The spin–magnetic coupling is therefore an observable of the informational sec
 The Pauli spinor $\tilde{\phi}$ is a two-component object, and its associated spin state is the idempotent
 
 $$
-\tilde{\rho}_\phi = \frac{\tilde{\phi}\,\tilde{\phi}^{*}}{\tilde{\phi}^{*}\tilde{\phi}} = \tfrac{1}{2}\left(e_0 + i\,\hat n\right) \in \mathbb{M}_+ ,
+\tilde{\rho}_\phi = \frac{\tilde{\phi}\,\tilde{\phi}^{*}}{\tilde{\phi}^{*}\tilde{\phi}} = \tfrac{1}{2}\left(e_0 + i\,\hat u\right) \in \mathbb{M}_+ ,
 $$
 
-with $\hat n$ the Bloch vector of the spin. The Pauli Hamiltonian is a Hermitian element $\tilde{H}_P = \frac{(\hat p-q\vec A)^2}{2m} + q\Phi - \frac{q\hbar}{2m} i\vec B \in \mathbb{M}_+$, and the spin precesses by the corresponding rotor conjugation. For a uniform magnetic field, only the last term contributes to the spin motion, and the precession frequency is the Larmor frequency $\omega_L = qB/m$ (natural units), or $\omega_L = g\,qB/2m$ in the g-form; up to the sign of $q$ this is the familiar spin precession. The two-component spinor description, the Pauli equation, and the precession are thus all consequences of the single biquaternionic Dirac equation.
+with $\hat u$ the Bloch vector of the spin. The Pauli Hamiltonian is a Hermitian element $\tilde{H}_P = \frac{(\hat p-q\vec A)^2}{2m} + q\Phi - \frac{q\hbar}{2m} i\vec B \in \mathbb{M}_+$, and the spin precesses by the corresponding rotor conjugation. For a uniform magnetic field, only the last term contributes to the spin motion, and the precession frequency is the Larmor frequency $\omega_L = qB/m$ (natural units), or $\omega_L = g\,qB/2m$ in the g-form; up to the sign of $q$ this is the familiar spin precession. The two-component spinor description, the Pauli equation, and the precession are thus all consequences of the single biquaternionic Dirac equation.
 
 ## Massless case: the Weyl equations and chirality
 
@@ -439,7 +439,7 @@ select the two components, and the biquaternion algebra contains their algebraic
 
 The biquaternionic Dirac equation, in its spinor-module form $(i\gamma^\mu\partial_\mu - m)\psi = 0$, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $u^{(r)}(\vec p)e^{-i(Et-\vec p\cdot\vec x)}$ and the negative-frequency branch by $v^{(r)}(\vec p)e^{+i(Et-\vec p\cdot\vec x)}$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde{k}\tilde{k}^{\natural} = -m^2c^2/\hbar^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{u}u = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{u}v = 0$, and the spin sums $\sum_r u\bar{u} = \not{p}+m$, $\sum_r v\bar{v} = \not{p}-m$.
 
-The spinor bilinears have a clean biquaternion interpretation. The conserved vector current is the four-vector $\tilde{J} = ic\,j^0e_0 + \vec j$ in the material sector $\mathbb{M}_-$, while the rank-one Hermitian form built from a single two-component spinor is exactly the idempotent $\tfrac{1}{2}(e_0 + i\hat n)$ of the informational sector $\mathbb{M}_+$, so a Weyl spinor is a pure state of the informational sector. The scalar and pseudoscalar bilinears are the real and imaginary parts of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$.
+The spinor bilinears have a clean biquaternion interpretation. The conserved vector current is the four-vector $\tilde{J} = ic\,j^0e_0 + \vec j$ in the material sector $\mathbb{M}_-$, while the rank-one Hermitian form built from a single two-component spinor is exactly the idempotent $\tfrac{1}{2}(e_0 + i\hat u)$ of the informational sector $\mathbb{M}_+$, so a Weyl spinor is a pure state of the informational sector. The scalar and pseudoscalar bilinears are the real and imaginary parts of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$.
 
 In the non-relativistic limit, factoring out the rest energy and eliminating the small component reduces the four-component equation to the Pauli equation
 
@@ -473,7 +473,7 @@ whose spin term is the Hermitian observable $-\frac{q\hbar}{2m} i\vec B \in \mat
 | $p^\mu = (E,\vec p)$, $\not{p} = \gamma^0E - \boldsymbol{\gamma}\cdot\vec p$ | Four-momentum and Feynman slash |
 | $j^\mu = \bar{\psi}\gamma^\mu\psi$ | Conserved Dirac current |
 | $\tilde{J} = ic\,j^0e_0 + \vec j \in \mathbb{M}_-$ | Current as a material-sector biquaternion |
-| $\rho = \psi\psi^\dagger \mapsto \tfrac{1}{2}(e_0 + i\hat n)$ | Spin bilinear as an $\mathbb{M}_+$ idempotent |
+| $\rho = \psi\psi^\dagger \mapsto \tfrac{1}{2}(e_0 + i\hat u)$ | Spin bilinear as an $\mathbb{M}_+$ idempotent |
 | $q$ | Charge of the field under minimal coupling |
 | $\vec S = \tfrac{\hbar}{2}\boldsymbol{\sigma}$, $\vec\mu = g\frac{q}{2m}\vec S$ | Spin and magnetic moment |
 | $g = 2$ | Gyromagnetic factor in the non-relativistic limit |

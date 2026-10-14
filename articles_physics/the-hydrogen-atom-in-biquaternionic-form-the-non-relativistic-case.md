@@ -16,7 +16,7 @@ The honest summary can be stated before the derivation, and it is simple. The no
 
 The title covers the non-relativistic case only. The relativistic case begins from the biquaternion Dirac equation with the Coulomb potential, where the Hamiltonian is no longer central, the spin is no longer a spectator, and the $l$-degeneracy is lifted; it is left to its own article and is described only qualitatively at the end.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The isomorphism is $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(ie_k)=\sigma_k$. The states are spinors in a minimal left ideal $\mathbb{B}\tilde P$, and the idempotents are $\tilde{\tilde\Pi}(\pm\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_\mathbb{R}\{e_0,ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The isomorphism is $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(ie_k)=\sigma_k$. The states are spinors in a minimal left ideal $\mathbb{B}\tilde P$, and the idempotents are $\tilde{\tilde\Pi}(\pm\hat u)=\tfrac12(e_0\pm i\hat u)$.
 
 ## The Coulomb Hamiltonian in $\mathbb{M}_+$
 
@@ -126,20 +126,20 @@ $$
 \tilde L^2\,Y_l^m = \hbar^2 l(l+1)\,Y_l^m, \qquad \tilde L_z\,Y_l^m = \hbar m\,Y_l^m ,
 $$
 
-with $Y_l^m$ the spherical harmonics. The spin operators satisfy $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$, which is $s(s+1)\hbar^2$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\hat n$ has the two eigenspaces
+with $Y_l^m$ the spherical harmonics. The spin operators satisfy $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$, which is $s(s+1)\hbar^2$ with $s=\tfrac12$, and their eigenstates are the idempotents: the projection of the spin along a unit direction $\hat u$ has the two eigenspaces
 
 $$
-\hat n_k\tilde S_k\,\tilde{\tilde\Pi}(\pm\hat n) = \pm\tfrac{\hbar}{2}\,\tilde{\tilde\Pi}(\pm\hat n),
+\hat u_k\tilde S_k\,\tilde{\tilde\Pi}(\pm\hat u) = \pm\tfrac{\hbar}{2}\,\tilde{\tilde\Pi}(\pm\hat u),
 \qquad
-\tilde{\tilde\Pi}(\pm\hat n)=\tfrac12(e_0\pm i\hat n),
+\tilde{\tilde\Pi}(\pm\hat u)=\tfrac12(e_0\pm i\hat u),
 $$
 
-and for the axis $\hat n=e_3$ the two idempotents $\tilde{\tilde\Pi}(\pm e_3)=\tfrac12(e_0\pm ie_3)$ are the spin-up and spin-down states.
+and for the axis $\hat u=e_3$ the two idempotents $\tilde{\tilde\Pi}(\pm e_3)=\tfrac12(e_0\pm ie_3)$ are the spin-up and spin-down states.
 
-The framework's Born rule for the spin factor is the trace formula. For the observable $\tilde S_k$ in the pure state $\tilde{\tilde\Pi}(\hat n)=\tfrac12(e_0+i\hat n)$,
+The framework's Born rule for the spin factor is the trace formula. For the observable $\tilde S_k$ in the pure state $\tilde{\tilde\Pi}(\hat u)=\tfrac12(e_0+i\hat u)$,
 
 $$
-\mathrm{Tr}\bigl(\tilde{\tilde\Pi}(\hat n)\,\tilde S_k\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{\tilde\Pi}(\hat n)\,\tilde S_k\bigr) = \frac{\hbar}{2}\hat n_k ,
+\mathrm{Tr}\bigl(\tilde{\tilde\Pi}(\hat u)\,\tilde S_k\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{\tilde\Pi}(\hat u)\,\tilde S_k\bigr) = \frac{\hbar}{2}\hat u_k ,
 $$
 
 which is the standard spin-1/2 expectation value, written as the trace pairing of $\mathbb{M}_+$.
@@ -330,7 +330,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\tilde S_k=\tfrac{\hbar}{2}ie_k$, $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$ | Spin operators, vector slots |
 | $\tilde J_k=\tilde L_k+\tilde S_k$ | Total angular momentum (needed only relativistically) |
 | $\mathbb{B}\tilde P\cong\mathbb{C}^2$ | State module of spinors $\psi$ |
-| $\tilde{\tilde\Pi}(\pm\hat n)=\tfrac12(e_0\pm i\hat n)$ | Spin eigenstates (idempotents) |
+| $\tilde{\tilde\Pi}(\pm\hat u)=\tfrac12(e_0\pm i\hat u)$ | Spin eigenstates (idempotents) |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (Born rule) |
 | $E_n=-\frac{m\kappa^2}{2\hbar^2n^2}$ | Bound-state spectrum, $n=n_r+l+1$ |
 

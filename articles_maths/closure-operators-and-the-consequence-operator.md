@@ -58,7 +58,7 @@ $$
 
 The elements with $i(x) = x$ are the **open** elements. The two notions are exchanged by passing to
 the opposite order: $i$ is an interior operator on $P$ exactly when $i$ is a closure operator on
-$P^{\mathrm{op}}$. The article states everything for closure operators and leaves the dual to the
+$P^{\mathrm{opp}}$. The article states everything for closure operators and leaves the dual to the
 duality principle of *Order Theory and Lattices*.
 
 **Proposition.** Let $c$ be monotone and idempotent. Then $c$ is a closure operator if and only if

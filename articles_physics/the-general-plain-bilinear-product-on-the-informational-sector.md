@@ -216,9 +216,9 @@ idempotent equation gives $-\tilde\Pi=(\tilde\Pi^{*})^{2}=(-\tilde\Pi)^{2}=\tild
 whence $\tilde\Pi=0$. Every nonzero projection is therefore Hermitian, and the family is
 
 $$
-\tilde\Pi_1(\hat\mu) = \tfrac12\bigl(e_0+i\hat\mu\bigr),
+\tilde\Pi_1(\hat u) = \tfrac12\bigl(e_0+i\hat u\bigr),
 \qquad
-\hat\mu\in\mathbb{R}^{3},\quad \lvert\hat\mu\rvert=1,
+\hat u\in\mathbb{R}^{3},\quad \lvert\hat u\rvert=1,
 $$
 
 the **pure states** of the corpus, indexed by the unit sphere and forming the Bloch sphere. The material
@@ -232,7 +232,7 @@ One in the 12 Structures of Biquaternions over $\mathbb{C}$*).
 The idempotent sits **on the zero-divisor cone**. Its interval vanishes,
 
 $$
-N(\tilde\Pi,\tilde\Pi) = \tfrac14\bigl(1-\lvert\hat\mu\rvert^{2}\bigr) = 0,
+N(\tilde\Pi,\tilde\Pi) = \tfrac14\bigl(1-\lvert\hat u\rvert^{2}\bigr) = 0,
 $$
 
 so a pure state is a zero divisor of the general plain bilinear product: it is not invertible, it is annihilated by a
@@ -389,7 +389,7 @@ signature $(4,0)$ on $\mathbb{M}_+$ and to $-\mathrm{I}_4$ of signature $(0,4)$ 
 product of two informational elements splits into an informational anticommutator and a material
 commutator and is informational exactly when the two commute; the square of an element of either sector
 is informational, with scalar part equal to the sector sign; the sector contains the nonzero idempotents
-of the algebra and they form the unit sphere $\tilde\Pi_1(\hat\mu)$, all of them on the
+of the algebra and they form the unit sphere $\tilde\Pi_1(\hat u)$, all of them on the
 zero-divisor cone; on the unit-trace slice the interval is $\frac14(1-\lvert\vec r\rvert^{2})$ and the
 sector sign $\frac14(1+\lvert\vec r\rvert^{2})$, so the cone is the purity boundary and the mixed
 states are the interior units; the inverse of an informational unit is informational, and the norm
@@ -460,7 +460,7 @@ algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
 | $B-N=2\,\vec Q\!\cdot\!\vec Q$ | The two forms differ by twice the coefficient square |
 | $\tfrac12(\tilde P\tilde Q\pm\tilde Q\tilde P)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
 | $\tilde Q^{2}\in\mathbb{M}_+$ | The square is informational for an element of either sector |
-| $\tilde\Pi_1(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ | The nonzero idempotents; the Bloch sphere; on the cone |
+| $\tilde\Pi_1(\hat u)=\tfrac12(e_0+i\hat u)$ | The nonzero idempotents; the Bloch sphere; on the cone |
 | $\tilde\rho=\tfrac12(e_0+i\vec r)$, $\lvert\vec r\rvert\le1$ | Unit-trace element; the Bloch ball |
 | $N(\tilde\rho,\tilde\rho)=\frac14(1-\lvert\vec r\rvert^{2})$ | The cone as the purity boundary |
 | $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units; zero-divisor cone |

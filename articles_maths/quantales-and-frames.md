@@ -7,7 +7,7 @@ This is the fifth article of the Boolean system in Part V, and it occupies the *
 
 The boundary against the general theory is deliberate. Topological spaces, open sets, continuity, compactness and sobriety are the subject of *Topological Spaces*, and the open-set lattice is used here as the standard example rather than constructed. The finitary Heyting structure was developed in *Heyting Algebras and Intuitionistic Logic*; the present article completes it. The Boolean case — Stone duality, the prime ideal space, the compact totally disconnected spaces — is not covered here, the topological slot of this category, and it is cited rather than repeated. The operator-algebraic and measure-theoretic quantales are not developed; only the algebraic theory and the pointfree topology are given.
 
-Throughout, a frame is written $L$ and a quantale $Q$; a locale is a frame read in the opposite category and is also written $L$. The two-element frame is $\mathbf{2} = \{0,1\}$, and the open-set frame of a topological space $X$ is $\mathcal{O}(X)$. The category of frames, with frame homomorphisms, is **Frm**, and the category of locales is its opposite $\mathbf{Loc} = \mathbf{Frm}^{\mathrm{op}}$. The name *frame* is used for the algebra and *locale* for the same object when it is being used as a space; this dual usage is standard and is stated once here.
+Throughout, a frame is written $L$ and a quantale $Q$; a locale is a frame read in the opposite category and is also written $L$. The two-element frame is $\mathbf{2} = \{0,1\}$, and the open-set frame of a topological space $X$ is $\mathcal{O}(X)$. The category of frames, with frame homomorphisms, is **Frm**, and the category of locales is its opposite $\mathbf{Loc} = \mathbf{Frm}^{\mathrm{opp}}$. The name *frame* is used for the algebra and *locale* for the same object when it is being used as a space; this dual usage is standard and is stated once here.
 
 ## Frames
 
@@ -194,7 +194,7 @@ A quantale is a complete lattice with an associative multiplication distributing
 | $j$ | Nucleus; $L_j$ its frame of fixed points |
 | $\mathbf{2}$ | Two-element frame |
 | $\operatorname{pt}(L)$ | Points of a locale, the frame homomorphisms $L \to \mathbf{2}$ |
-| $\mathbf{Frm}, \mathbf{Loc}$ | Categories of frames and of locales, $\mathbf{Loc} = \mathbf{Frm}^{\mathrm{op}}$ |
+| $\mathbf{Frm}, \mathbf{Loc}$ | Categories of frames and of locales, $\mathbf{Loc} = \mathbf{Frm}^{\mathrm{opp}}$ |
 | $\cdot$ | Multiplication of a quantale |
 | $e$ | Unit of a unital quantale |
 | ${}^{*}$ | Involution of an involutive quantale |

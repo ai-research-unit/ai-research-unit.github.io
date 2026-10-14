@@ -7,7 +7,11 @@ This article is about the **polar representation** of a complex number: the stat
 
 The subject is elementary, and its place in this blog is that of the base case. The polar representation is developed here for the two-dimensional definite algebra $\mathbb{C}$ and in the companion article *Split-Complex Polar Element Representation* for the two-dimensional indefinite algebra $\mathbb{D}$. The family decomposes every element of every algebra of the family into the same four **slots** — a scale, a central phase, a boost and a rotor — and which slots are occupied is a property of the algebra. In $\mathbb{C}$ exactly two slots are occupied, and one of them does double duty, so the algebra is the smallest case in which the pattern is already visible without any of the difficulties that come later: no branch choice, no boost, no zero divisors, no boundary.
 
-The plan is as follows. The modulus and the unit factor are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the trichotomy $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{C}$ and in $\mathbb{D}$. The two factors are then identified with the two halves of that trichotomy, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article. The conventions are those of *Complex Algebra*: the basis is $1$, $i$, the multiplication is $i^2 = -1$, the conjugate is $\bar{A} = a - i a'$, and the norm is $N(A) = A\bar{A} = a^2 + a'^2$. Every numerical value displayed below was recomputed in double precision.
+The plan is as follows. The modulus and the unit factor are defined, and existence and uniqueness are proved. The unit factor is then described as an exponential, and the exponential is organised by the rule $\nu^2 = -1$, $0$, $+1$ that governs every algebra of the family: the sign of the square of the exponent determines whether the exponential is trigonometric, parabolic or hyperbolic, and it is the same rule in $\mathbb{C}$ and in $\mathbb{D}$. The two factors are then identified with the two halves of that rule, the absent slots are accounted for, and the group of units, the matrix picture and worked examples close the article.
+
+The conventions and the symbols are those of *Complex Algebra* and of the corpus (*Conventions in Mathematics*); the symbols this article uses are collected in §*Summary of Notation*.
+
+Every numerical value displayed below was recomputed in double precision.
 
 ## The Modulus and the Unit Factor
 
@@ -79,35 +83,16 @@ $$
 A = \exp(\ln r)\,\exp(i\theta) , \qquad r = \lvert A\rvert > 0 .
 $$
 
-The exponent of the scale is the real number $\ln r$, whose root is $1$ of square $+1$, the hyperbolic row of the trichotomy below; the exponent of the unit factor is the angle $\theta$, whose root is $i$, of square $-1$, the trigonometric row. The unit factor is the exponential of the angle only as a class, since $\exp(i\theta)$ has period $2\pi$, so the exponent is a class in $\mathbb{R}/2\pi\mathbb{Z}$. The two exponents commute, because $\ln r$ is a real scalar of the centre, so the order is free and the two exponentials **amalgamate into one**: $A = \exp(\ln r + i\theta)$. The word is one exponential here because there is no second non-central direction to obstruct the sum, and the freedom that remains is the period of the angle.
+| # | factor | name | real dimension | exponential | case | closed form | parameter and range | unit axis |
+|---|---|---|---|---|---|---|---|---|
+| 1 | $r$ | scale | $1$ | $\exp(\ln r)$ | hyperbolic | $r$ | $r = \lvert A\rvert > 0$ | — |
+| 2 | $u$ | unit factor | $1$ | $\exp(i\theta)$ | trigonometric | $\cos\theta + i\sin\theta$ | $\theta \in (-\pi,\pi]$, modulo $2\pi$ | $i$ |
 
-### The Trichotomy of the Exponential
-
-Every algebra of the family contains elements $\nu$ of three kinds, classified by the square:
-
-$$
-\nu^2 = -1 \qquad\text{(roots of }-1\text{)}, \qquad \nu^2 = 0 \qquad\text{(nilpotent)}, \qquad \nu^2 = +1 \qquad\text{(roots of }+1\text{)},
-$$
-
-and the exponential of $\nu\theta$ is trigonometric, parabolic or hyperbolic accordingly. This is one computation with three cases, and it is the rule that the whole family follows.
-
-**The $\nu$ of this section is a direction, not a nilpotent glyph.** It is written bare because it ranges over the two-dimensional algebras.
-
-**Proposition.** Let $\nu$ be an element of a real algebra of the family and let $\theta \in \mathbb{R}$. Then the exponential of $\nu\theta$ is given by the case
-
-| case | $\nu^2$ | $\exp(\nu\theta)$ | the summands |
-|---|---|---|---|
-| trigonometric | $-1$ | $\cos\theta\,1 + \nu\sin\theta$ | a cosine and a sine |
-| parabolic | $0$ | $1 + \nu\theta$ (the series truncates) | $1$ and a linear term |
-| hyperbolic | $+1$ | $\cosh\theta\,1 + \nu\sinh\theta$ | a hyperbolic cosine and a hyperbolic sine |
-
-**Proof.** The exponential is the series $\exp(\nu\theta) = \sum_{n\ge0}\nu^n\theta^n/n!$, and the hypothesis on $\nu^2$ makes the powers periodic, truncated or monotone. For $\nu^2 = -1$ the even powers alternate as $(-1)^k$ and the odd powers as $(-1)^k\nu$, and the two partial series are the cosine and the sine. For $\nu^2 = 0$ every power from the second onward vanishes and the series is its first two terms. For $\nu^2 = +1$ the even powers are $1$ and the odd powers are $\nu$ without alternation, and the two series are the hyperbolic cosine and the hyperbolic sine.
-
-The trichotomy is a statement about the *sign of the square of the exponent*, not about the algebra. Which of the three rows are non-empty is a statement about the algebra, and the answer is what distinguishes the members of the family from one another.
+The exponent follows the rule of the series: the character of the exponential is trigonometric, hyperbolic or parabolic according to the square of the root of the exponent, the trigonometric case for a root of $-1$, the hyperbolic for a root of $+1$, and the parabolic for a nilpotent root, where the series truncates. The two exponents commute, because $\ln r$ is a real scalar of the centre, so the order is free and the two exponentials **amalgamate into one**, $A = \exp(\ln r + i\theta)$. The word is one exponential here because there is no second non-central direction to obstruct the sum; the freedom that remains is the period $2\pi$ of the angle.
 
 ### The Roots of $\pm 1$ in $\mathbb{C}$
 
-| equation | solutions in $\mathbb{C}$ | count | row of the trichotomy |
+| equation | solutions in $\mathbb{C}$ | count | row of the rule |
 |---|---|---|---|
 | $\nu^2 = -1$ | $\nu = \pm i$ | $2$ | trigonometric: the circle |
 | $\nu^2 = 0$ | $\nu = 0$ only | $1$ | parabolic: degenerate, $\exp = 1$ |
@@ -194,7 +179,7 @@ $$
 M_A = \begin{pmatrix} a & -a' \\ a' & a \end{pmatrix} = a\,I + a'\,J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I .
 $$
 
-The matrix $J$ is the **complex structure**: multiplication by $i$ is $J$, and $J^2 = -I$ is the matrix form of $i^2 = -1$, so the trigonometric row of the trichotomy is the row $J^2 = -I$ of the matrix picture. The determinant and the trace are
+The matrix $J$ is the **complex structure**: multiplication by $i$ is $J$, and $J^2 = -I$ is the matrix form of $i^2 = -1$, so the trigonometric row of the rule is the row $J^2 = -I$ of the matrix picture. The determinant and the trace are
 
 $$
 \det M_A = a^2 + a'^2 = N(A), \qquad \operatorname{tr}M_A = 2a,
@@ -257,14 +242,14 @@ so the reconstruction from an angle is stable to machine precision and the angle
 |---|---|---|---|---|---|
 | $\mathbb{C}$ | $a^2+a'^2$, definite | $\sqrt{N}$, positive real | $e^{i\theta}$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | compact, $\mathbb{R}/2\pi\mathbb{Z}$ |
 | $\mathbb{D}$ | $a^2-a'^2$, indefinite | $\sqrt{|N|}$, positive real | $e^{\phi j}$ or $je^{\phi j}$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
-| $\mathbb{H}$ | sum of four squares | $\sqrt{N}$, positive real | $Sp(1)=S^3$ rotor | scale, rotor | compact |
+| $\mathbb{H}$ | sum of four squares | $\sqrt{N}$, positive real | $Sp(1)$ rotor | scale, rotor | compact |
 | $\mathbb{H}_{\mathrm{s}}$ | indefinite, signature $(2,2)$ | $\sqrt{|N|}$ with two regimes | two-component unit group | scale, rotor, boost | non-compact |
 
-The progression is the progression of the trichotomy. In $\mathbb{C}$ only the trigonometric row is occupied by the unit factor, and it is compact. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The two-dimensional algebra $\mathbb{C}$ is the case in which neither of the difficulties of the higher-dimensional members can happen, which is why it is treated first.
+The progression is the progression of the rule. In $\mathbb{C}$ only the trigonometric row is occupied by the unit factor, and it is compact. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The two-dimensional algebra $\mathbb{C}$ is the case in which neither of the difficulties of the higher-dimensional members can happen, which is why it is treated first.
 
 ## Summary
 
-Every nonzero complex number has exactly one polar representation $A = ru$, with modulus $r = \sqrt{N(A)} > 0$ and unit factor $u = A/r$ on the circle. The modulus is central and Hermitian of signature $+1$ and carries one parameter; the unit factor is central and anti-Hermitian of signature $-1$ and carries one parameter; the counts add to the real dimension two. The unit factor is the exponential $u = \exp(i\theta)$ of an anti-Hermitian element of signature $-1$, which is the trigonometric row of the trichotomy $\nu^2 = -1, 0, +1$, and its coordinate $\theta$ is a class modulo $2\pi$, the kernel of the exponential. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, and because $\mathbb{C}$ is commutative the circle serves as both the rotation factor and the central phase. The hyperbolic row of the trichotomy contains only the central elements $\pm1$ and so produces the scale rather than a boost, and the parabolic row contains only $\nu = 0$ and so produces nothing. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the polar decomposition of a conformal matrix into a scalar and a rotation.
+Every nonzero complex number has exactly one polar representation $A = ru$, with modulus $r = \sqrt{N(A)} > 0$ and unit factor $u = A/r$ on the circle. The modulus is central and Hermitian of signature $+1$ and carries one parameter; the unit factor is central and anti-Hermitian of signature $-1$ and carries one parameter; the counts add to the real dimension two. The unit factor is the exponential $u = \exp(i\theta)$ of an anti-Hermitian element of signature $-1$, which is the trigonometric row of the rule $\nu^2 = -1, 0, +1$, and its coordinate $\theta$ is a class modulo $2\pi$, the kernel of the exponential. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, and because $\mathbb{C}$ is commutative the circle serves as both the rotation factor and the central phase. The hyperbolic row of the rule contains only the central elements $\pm1$ and so produces the scale rather than a boost, and the parabolic row contains only $\nu = 0$ and so produces nothing. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the polar decomposition of a conformal matrix into a scalar and a rotation.
 
 ## Summary of Notation
 

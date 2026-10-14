@@ -46,10 +46,10 @@ The centrality of the scalar line is what makes $N(\tilde q)$ a scalar and what 
 **Theorem.** For the tensor product of $\mathbb{H}$ with its own opposite algebra,
 
 $$
-\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}\cong \operatorname{End}_\mathbb{R}(\mathbb{H})\cong M_4(\mathbb{R}).
+\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}\cong \operatorname{End}_\mathbb{R}(\mathbb{H})\cong M_4(\mathbb{R}).
 $$
 
-*Proof.* The sandwich map $\tilde p\otimes\tilde q^{\mathrm{op}}\mapsto(\tilde r\mapsto\tilde p\tilde r\tilde q)$ is an $\mathbb{R}$-algebra homomorphism of a $16$-dimensional algebra onto $\operatorname{End}_\mathbb{R}(\mathbb{H})$, of dimension $16$; it is injective because $\mathbb{H}$ is central simple over $\mathbb{R}$, and the enveloping algebra and the operator basis are *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, below this article in this category.
+*Proof.* The sandwich map $\tilde p\otimes\tilde q^{\mathrm{opp}}\mapsto(\tilde r\mapsto\tilde p\tilde r\tilde q)$ is an $\mathbb{R}$-algebra homomorphism of a $16$-dimensional algebra onto $\operatorname{End}_\mathbb{R}(\mathbb{H})$, of dimension $16$; it is injective because $\mathbb{H}$ is central simple over $\mathbb{R}$, and the enveloping algebra and the operator basis are *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, below this article in this category.
 
 Thus the algebra is a division algebra over $\mathbb{R}$ and its enveloping tensor product is the full endomorphism algebra.
 
@@ -89,8 +89,8 @@ The plain product is the only one of the six products of the quaternion space th
 | $\mathbb{H}$ | The quaternion algebra, the block's division algebra |
 | $e_0$ | Two-sided unit |
 | $V=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ | Vector subspace |
-| $\mathbb{H}^{\mathrm{op}}$ | Opposite algebra |
-| $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}$ | Enveloping algebra, $\cong M_4(\mathbb{R})$ |
+| $\mathbb{H}^{\mathrm{opp}}$ | Opposite algebra |
+| $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$ | Enveloping algebra, $\cong M_4(\mathbb{R})$ |
 
 ## Further Reading
 

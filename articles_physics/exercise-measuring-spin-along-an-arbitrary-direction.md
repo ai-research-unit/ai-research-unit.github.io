@@ -12,7 +12,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 
 ## The Exercise
 
-A spin-$\tfrac{1}{2}$ particle is prepared in the **spin-up state along the $z$-axis**. We measure the spin along a direction $\hat{n}$ that makes an angle $\theta$ with the $z$-axis, in the $xz$-plane. What is the probability of finding the particle spin-up along $\hat{n}$?
+A spin-$\tfrac{1}{2}$ particle is prepared in the **spin-up state along the $z$-axis**. We measure the spin along a direction $\hat u_1$ that makes an angle $\theta$ with the $z$-axis, in the $xz$-plane. What is the probability of finding the particle spin-up along $\hat u_1$?
 
 This is the canonical "rotate the Stern–Gerlach apparatus" exercise. It involves states, observables, and the Born rule, but no dynamics and no interactions.
 
@@ -31,20 +31,20 @@ $$
 The measurement is along the direction
 
 $$
-\hat{n} = (\sin\theta,\, 0,\, \cos\theta).
+\hat u_1 = (\sin\theta,\, 0,\, \cos\theta).
 $$
 
-The measurement operator is the spin projection along $\hat{n}$:
+The measurement operator is the spin projection along $\hat u_1$:
 
 $$
-\hat{n}\cdot\vec S = \frac{\hbar}{2}\,\hat{n}\cdot\boldsymbol{\sigma} = \frac{\hbar}{2}\begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix},
+\hat u_1\cdot\vec S = \frac{\hbar}{2}\,\hat u_1\cdot\boldsymbol{\sigma} = \frac{\hbar}{2}\begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix},
 $$
 
 where $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices.
 
 ### Step 3: The eigenstate for the outcome
 
-The eigenvector of $\hat{n}\cdot\vec S$ with eigenvalue $+\hbar/2$ (equivalently, the $+1$ eigenvector of $\hat{n}\cdot\boldsymbol{\sigma}$), up to a global phase, is
+The eigenvector of $\hat u_1\cdot\vec S$ with eigenvalue $+\hbar/2$ (equivalently, the $+1$ eigenvector of $\hat u_1\cdot\boldsymbol{\sigma}$), up to a global phase, is
 
 $$
 |+n\rangle = \begin{pmatrix} \cos(\theta/2) \\ \sin(\theta/2) \end{pmatrix}.
@@ -52,7 +52,7 @@ $$
 
 ### Step 4: The probability
 
-The probability of finding the particle spin-up along $\hat{n}$, given that it was prepared spin-up along $z$, is given by the Born rule:
+The probability of finding the particle spin-up along $\hat u_1$, given that it was prepared spin-up along $z$, is given by the Born rule:
 
 $$
 p_+ = \bigl|\langle +n \mid +z\rangle\bigr|^2.
@@ -77,10 +77,10 @@ $$
 In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{M}_+$, of the form
 
 $$
-P(\hat{m}) = \tfrac{1}{2}\left(e_0 + i\hat{m}\right),
+P(\hat u_2) = \tfrac{1}{2}\left(e_0 + i\hat u_2\right),
 $$
 
-where $\hat{m}$ is a unit pure real quaternion (a unit vector in $\mathbb{R}^3$). The spin-up state along $z$ corresponds to
+where $\hat u_2$ is a unit pure real quaternion (a unit vector in $\mathbb{R}^3$). The spin-up state along $z$ corresponds to
 
 $$
 P_z = \tfrac{1}{2}\left(e_0 + i e_3\right).
@@ -88,23 +88,23 @@ $$
 
 ### Step 2: The measurement operator
 
-The same measurement direction $\hat{n} = \sin\theta\, e_1 + \cos\theta\, e_3$ is now written as a unit pure real quaternion. The measurement operator is the Hermitian element of $\mathbb{M}_+$ corresponding to the spin projection along $\hat{n}$:
+The same measurement direction $\hat u_1 = \sin\theta\, e_1 + \cos\theta\, e_3$ is now written as a unit pure real quaternion. The measurement operator is the Hermitian element of $\mathbb{M}_+$ corresponding to the spin projection along $\hat u_1$:
 
 $$
-\tilde{H} = \frac{\hbar}{2}\, i\hat{n}.
+\tilde{H} = \frac{\hbar}{2}\, i\hat u_1.
 $$
 
 ### Step 3: The projector for the outcome
 
-The projector onto the eigenstate of $\tilde{H} = \frac{\hbar}{2}i\hat{n}$ with eigenvalue $+\hbar/2$ is the idempotent
+The projector onto the eigenstate of $\tilde{H} = \frac{\hbar}{2}i\hat u_1$ with eigenvalue $+\hbar/2$ is the idempotent
 
 $$
-P_n = \tfrac{1}{2}\left(e_0 + i\hat{n}\right).
+P_n = \tfrac{1}{2}\left(e_0 + i\hat u_1\right).
 $$
 
 ### Step 4: The probability
 
-The probability of finding the particle spin-up along $\hat{n}$, given that it was prepared spin-up along $z$, is given by the **trace formula**:
+The probability of finding the particle spin-up along $\hat u_1$, given that it was prepared spin-up along $z$, is given by the **trace formula**:
 
 $$
 p_+ = \mathrm{Tr}\!\left(P_n \circ P_z\right) = 2\,\mathrm{Sc}\!\left(P_n \circ P_z\right),
@@ -115,22 +115,22 @@ where $\circ$ is the biquaternion product.
 Computing the product:
 
 $$
-P_n \circ P_z = \tfrac{1}{4}\left(e_0 + i\hat{n}\right)\left(e_0 + i e_3\right) = \tfrac{1}{4}\left[e_0 + i e_3 + i\hat{n} - \hat{n}\,e_3\right].
+P_n \circ P_z = \tfrac{1}{4}\left(e_0 + i\hat u_1\right)\left(e_0 + i e_3\right) = \tfrac{1}{4}\left[e_0 + i e_3 + i\hat u_1 - \hat u_1\,e_3\right].
 $$
 
-Evaluating $\hat{n}\,e_3$, using $\hat{n} = \sin\theta\, e_1 + \cos\theta\, e_3$ and the quaternion product rules $e_1 e_3 = -e_2$, $e_3 e_3 = -e_0$:
+Evaluating $\hat u_1\,e_3$, using $\hat u_1 = \sin\theta\, e_1 + \cos\theta\, e_3$ and the quaternion product rules $e_1 e_3 = -e_2$, $e_3 e_3 = -e_0$:
 
 $$
-\hat{n}\,e_3 = \sin\theta\, e_1 e_3 + \cos\theta\, e_3 e_3 = -\sin\theta\, e_2 - \cos\theta\, e_0.
+\hat u_1\,e_3 = \sin\theta\, e_1 e_3 + \cos\theta\, e_3 e_3 = -\sin\theta\, e_2 - \cos\theta\, e_0.
 $$
 
 Substituting:
 
 $$
-P_n \circ P_z = \tfrac{1}{4}\left[e_0 + i e_3 + i\hat{n} + \sin\theta\, e_2 + \cos\theta\, e_0\right].
+P_n \circ P_z = \tfrac{1}{4}\left[e_0 + i e_3 + i\hat u_1 + \sin\theta\, e_2 + \cos\theta\, e_0\right].
 $$
 
-The scalar part (coefficient of $e_0$) is $\tfrac{1}{4}\left(1 + \cos\theta\right)$; the other terms $i e_3$, $i\hat{n}$, and $\sin\theta\, e_2$ are vector terms with vanishing coefficient of $e_0$.
+The scalar part (coefficient of $e_0$) is $\tfrac{1}{4}\left(1 + \cos\theta\right)$; the other terms $i e_3$, $i\hat u_1$, and $\sin\theta\, e_2$ are vector terms with vanishing coefficient of $e_0$.
 
 Applying the trace formula:
 
@@ -156,23 +156,23 @@ These agree with the physical expectation.
 
 **3. No complex vectors are needed.** In the standard solution, the calculation involves complex column vectors and their inner product. In the biquaternion solution, it involves only the algebra of $\mathbb{B}$: products of quaternion units, extraction of the scalar part, application of the trace formula. The complex structure is absorbed into the scalar imaginary $i$ of the algebra.
 
-**4. The geometry enters through the algebra.** The angle $\theta$ enters through the unit vector $\hat{n} = \sin\theta\, e_1 + \cos\theta\, e_3$ that parametrizes the measurement direction. The result depends on $\theta$ only through the scalar product $\hat{n}\cdot e_3 = \cos\theta$, which appears in the trace formula through the product $\hat{n}\,e_3$. The geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.
+**4. The geometry enters through the algebra.** The angle $\theta$ enters through the unit vector $\hat u_1 = \sin\theta\, e_1 + \cos\theta\, e_3$ that parametrizes the measurement direction. The result depends on $\theta$ only through the scalar product $\hat u_1\cdot e_3 = \cos\theta$, which appears in the trace formula through the product $\hat u_1\,e_3$. The geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.
 
-**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the idempotent $P(\hat{n}) = \tfrac{1}{2}(e_0 + i\hat{n})$ corresponds exactly to the rank-one projector $\tfrac{1}{2}(I + \hat{n}\cdot\boldsymbol{\sigma})$. But seeing the same result emerge from the algebra is a useful sanity check on the biquaternion framework.
+**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the idempotent $P(\hat u_1) = \tfrac{1}{2}(e_0 + i\hat u_1)$ corresponds exactly to the rank-one projector $\tfrac{1}{2}(I + \hat u_1\cdot\boldsymbol{\sigma})$. But seeing the same result emerge from the algebra is a useful sanity check on the biquaternion framework.
 
 ## Extension: The Expectation Value of the Spin
 
-The same pattern applies to the calculation of the **expectation value of the spin along $\hat{n}$** in the state $|+z\rangle$. The two formulations are again strictly parallel.
+The same pattern applies to the calculation of the **expectation value of the spin along $\hat u_1$** in the state $|+z\rangle$. The two formulations are again strictly parallel.
 
 ### Standard formulation
 
 $$
-\langle \hat{n}\cdot\vec S\rangle_{+z} = \langle +z|\hat{n}\cdot\vec S|+z\rangle = \frac{\hbar}{2}\cos\theta.
+\langle \hat u_1\cdot\vec S\rangle_{+z} = \langle +z|\hat u_1\cdot\vec S|+z\rangle = \frac{\hbar}{2}\cos\theta.
 $$
 
 ### Biquaternion formulation
 
-The observable is $\tilde{H} = \tfrac{\hbar}{2} i\hat{n}$ and the state is $P_z = \tfrac{1}{2}(e_0 + i e_3)$. The expectation value is given by the trace formula:
+The observable is $\tilde{H} = \tfrac{\hbar}{2} i\hat u_1$ and the state is $P_z = \tfrac{1}{2}(e_0 + i e_3)$. The expectation value is given by the trace formula:
 
 $$
 \langle \tilde{H}\rangle_{P_z} = \mathrm{Tr}(P_z \circ \tilde{H}) = 2\,\mathrm{Sc}(P_z \circ \tilde{H}).
@@ -181,19 +181,19 @@ $$
 Computing the product:
 
 $$
-P_z \circ \tilde{H} = \tfrac{1}{2}(e_0 + i e_3)\cdot\tfrac{\hbar}{2} i\hat{n} = \tfrac{\hbar}{4}\left(i\hat{n} - e_3 \hat{n}\right).
+P_z \circ \tilde{H} = \tfrac{1}{2}(e_0 + i e_3)\cdot\tfrac{\hbar}{2} i\hat u_1 = \tfrac{\hbar}{4}\left(i\hat u_1 - e_3 \hat u_1\right).
 $$
 
-Evaluating $e_3 \hat{n}$, using $e_3 e_1 = e_2$ and $e_3 e_3 = -e_0$:
+Evaluating $e_3 \hat u_1$, using $e_3 e_1 = e_2$ and $e_3 e_3 = -e_0$:
 
 $$
-e_3 \hat{n} = e_3(\sin\theta\, e_1 + \cos\theta\, e_3) = \sin\theta\, e_2 - \cos\theta\, e_0.
+e_3 \hat u_1 = e_3(\sin\theta\, e_1 + \cos\theta\, e_3) = \sin\theta\, e_2 - \cos\theta\, e_0.
 $$
 
 Substituting:
 
 $$
-P_z \circ \tilde{H} = \tfrac{\hbar}{4}\left(i\hat{n} - \sin\theta\, e_2 + \cos\theta\, e_0\right).
+P_z \circ \tilde{H} = \tfrac{\hbar}{4}\left(i\hat u_1 - \sin\theta\, e_2 + \cos\theta\, e_0\right).
 $$
 
 The scalar part is $\tfrac{\hbar}{4}\cos\theta$. Therefore
@@ -224,7 +224,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
-| $P(\hat{m}) = \tfrac{1}{2}(e_0 + i\hat{m})$ | Pure-state idempotent |
+| $P(\hat u_2) = \tfrac{1}{2}(e_0 + i\hat u_2)$ | Pure-state idempotent |
 | $\tilde{H} = h_0 e_0 + i\vec h$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$ | Trace of an element of $\mathbb{M}_+$ |
 | $p_+ = \mathrm{Tr}(P_n \circ P_z)$ | Born rule in biquaternion form |

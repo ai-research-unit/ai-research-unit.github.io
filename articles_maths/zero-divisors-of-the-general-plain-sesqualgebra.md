@@ -134,14 +134,14 @@ kept, and the index attached to each family is read from the square of the produ
 **Proposition (the non-pure family and the idempotents of the block).** The non-pure zero divisors
 are the nonzero complex multiples of the nontrivial idempotents of the plain product, and among
 them exactly the **Hermitian idempotents** $\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors
-$\hat n$ are idempotents of the block; the others are zero divisors of the block and not
+$\hat u$ are idempotents of the block; the others are zero divisors of the block and not
 idempotents of it.
 
 *Proof.* The plain description is *Zero Divisors of the General Plain Algebra*. An idempotent of
 the block is a Hermitian idempotent of the plain product (*Idempotents of the General Plain
 Sesqualgebra*), and a Hermitian idempotent $\tilde\Pi$ has
 $\tilde\Pi\star\tilde\Pi=\tilde\Pi\tilde\Pi^{*}=\tilde\Pi^{2}=\tilde\Pi$; the Hermitian ones are
-those with a real root $\tilde\Xi=\pm\hat n$, that is the family $\tfrac12(e_0+\tilde\Xi)$. A
+those with a real root $\tilde\Xi=\pm\hat u$, that is the family $\tfrac12(e_0+\tilde\Xi)$. A
 multiple $\lambda\tilde\Pi$ with $\lambda\neq1$ is a zero divisor but is idempotent for neither
 product unless $\lambda=1$.
 
@@ -149,7 +149,7 @@ product unless $\lambda=1$.
 $\tfrac12(e_0+\tilde\Xi)$ have scalar part $\tfrac12$, which is the positive value the algebraic
 norm $H(\tilde\Pi)=\mathrm{Sc}(\tilde\Pi\star\tilde\Pi)=\sum_\mu\lvert\Pi_\mu\rvert^{2}$ forces on
 any idempotent of the block; in particular
-$C\bigl(\tfrac12(e_0+\tilde\Xi)\bigr)=\tfrac14(1-(\hat n,\hat n))=0$, so every block idempotent is
+$C\bigl(\tfrac12(e_0+\tilde\Xi)\bigr)=\tfrac14(1-(\hat u,\hat u))=0$, so every block idempotent is
 a zero divisor, of the non-pure family. The unit $e_0$ is not a zero divisor, $c(e_0)=1$.
 
 ## The Comparison with the Parent and with the Four General Products

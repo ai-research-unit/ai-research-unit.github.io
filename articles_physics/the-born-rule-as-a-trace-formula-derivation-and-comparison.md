@@ -46,7 +46,7 @@ $$
 
 of signature $(1,3)$, whose future light cone is the positivity cone. The state space is the trace-one slice of that cone; the Born rule is a statement about the trace pairing. Positivity of a state is a biquaternion-norm condition, while Born probabilities are trace-pairing quantities. The Born rule therefore does not follow from the light-cone structure of $\mathbb{M}_+$; it follows from the Euclidean trace pairing, a different form on the same space.
 
-The two forms are complementary, and the idempotents show it clearly. For $\tilde\Pi_{1,2}(\hat\mu)$ one has $h_0=\tfrac12$ and $|\vec h|=\tfrac12$, so the biquaternion norm vanishes,
+The two forms are complementary, and the idempotents show it clearly. For $\tilde\Pi_{1,2}(\hat u)$ one has $h_0=\tfrac12$ and $|\vec h|=\tfrac12$, so the biquaternion norm vanishes,
 $$
 N(\tilde\Pi_{1,2})=\tilde\Pi_{1,2}\tilde{P}^{\natural}_\pm=(h_0^2-|\vec h|^2)e_0=0,
 $$
@@ -71,16 +71,16 @@ $$
 The idempotents of $\mathbb{M}_+$,
 
 $$
-\tilde\Pi_{1,2}(\hat\mu)=\tfrac{1}{2}(e_0\pm i\hat\mu),\qquad|\hat\mu|=1,
+\tilde\Pi_{1,2}(\hat u)=\tfrac{1}{2}(e_0\pm i\hat u),\qquad|\hat u|=1,
 $$
 
-satisfy $\varphi(\tilde\Pi_1(\hat\mu))=\tfrac{1}{2}(I_2+\hat\mu\cdot\boldsymbol{\sigma})$ because $\varphi(i\hat\mu)=\hat\mu\cdot\boldsymbol{\sigma}$. This is the standard spin-up projector; it has eigenvalues $1$ and $0$, so the biquaternion idempotent **is** a rank-one projection, and every rank-one projection arises this way. The usual identities hold: $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*}=\tilde\Pi_{1,2}$, $\mathrm{Tr}(\tilde\Pi_{1,2})=1$, $\tilde\Pi_1+\tilde\Pi_2=e_0$, $\tilde\Pi_1\tilde\Pi_2=0$.
+satisfy $\varphi(\tilde\Pi_1(\hat u))=\tfrac{1}{2}(I_2+\hat u\cdot\boldsymbol{\sigma})$ because $\varphi(i\hat u)=\hat u\cdot\boldsymbol{\sigma}$. This is the standard spin-up projector; it has eigenvalues $1$ and $0$, so the biquaternion idempotent **is** a rank-one projection, and every rank-one projection arises this way. The usual identities hold: $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*}=\tilde\Pi_{1,2}$, $\mathrm{Tr}(\tilde\Pi_{1,2})=1$, $\tilde\Pi_1+\tilde\Pi_2=e_0$, $\tilde\Pi_1\tilde\Pi_2=0$.
 
-The idempotent property can be checked directly, without invoking the isomorphism. For unit $\hat\mu$,
+The idempotent property can be checked directly, without invoking the isomorphism. For unit $\hat u$,
 $$
-\tilde\Pi_1^2=\tfrac14\bigl(e_0+i\hat\mu\bigr)^2=\tfrac14\bigl(e_0+2i\hat\mu+(i\hat\mu)(i\hat\mu)\bigr),
+\tilde\Pi_1^2=\tfrac14\bigl(e_0+i\hat u\bigr)^2=\tfrac14\bigl(e_0+2i\hat u+(i\hat u)(i\hat u)\bigr),
 $$
-and $(i\hat\mu)(i\hat\mu)=(\hat\mu\cdot\hat\mu)e_0-\hat\mu\times\hat\mu=e_0$, so $\tilde\Pi_1^2=\tfrac12(e_0+i\hat\mu)=\tilde\Pi_1$; similarly $\tilde\Pi_2^2=\tilde\Pi_2$ and $\tilde\Pi_1\tilde\Pi_2=\tfrac14(e_0-|\hat\mu|^2e_0)=0$. Conversely, every rank-one projector in $M_2(\mathbb{C})$ has the form $\tfrac12(I_2+\hat\mu\cdot\boldsymbol{\sigma})$, so the map $\hat\mu\mapsto\tilde\Pi_1(\hat\mu)$ is a bijection between the Bloch sphere and the rank-one projections of the algebra.
+and $(i\hat u)(i\hat u)=(\hat u\cdot\hat u)e_0-\hat u\times\hat u=e_0$, so $\tilde\Pi_1^2=\tfrac12(e_0+i\hat u)=\tilde\Pi_1$; similarly $\tilde\Pi_2^2=\tilde\Pi_2$ and $\tilde\Pi_1\tilde\Pi_2=\tfrac14(e_0-|\hat u|^2e_0)=0$. Conversely, every rank-one projector in $M_2(\mathbb{C})$ has the form $\tfrac12(I_2+\hat u\cdot\boldsymbol{\sigma})$, so the map $\hat u\mapsto\tilde\Pi_1(\hat u)$ is a bijection between the Bloch sphere and the rank-one projections of the algebra.
 
 A **state** is a positive trace-one element
 
@@ -134,10 +134,10 @@ $$
 p_++p_-=\mathrm{Tr}\bigl((\tilde\Pi_1+\tilde\Pi_2)\tilde{\rho}\bigr)=\mathrm{Tr}(e_0\tilde{\rho})=\mathrm{Tr}(\tilde{\rho})=1.
 $$
 
-What is derived is the **form** of the rule: a canonical positive pairing, a complete orthogonal family of idempotents, real numbers in $[0,1]$ summing to one. With a pure state $\tilde\Pi(\hat\nu)$ in place of $\tilde{\rho}$, the same computation gives the **transition probability**
+What is derived is the **form** of the rule: a canonical positive pairing, a complete orthogonal family of idempotents, real numbers in $[0,1]$ summing to one. With a pure state $\tilde\Pi(\hat u_2)$ in place of $\tilde{\rho}$, the same computation gives the **transition probability**
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\hat\mu)\tilde\Pi(\hat\nu)\bigr)=\tfrac{1}{2}(1+\hat\mu\cdot\hat\nu)=\cos^2\frac{\theta}{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\hat u_1)\tilde\Pi(\hat u_2)\bigr)=\tfrac{1}{2}(1+\hat u_1\cdot\hat u_2)=\cos^2\frac{\theta}{2},
 $$
 
 manifestly symmetric because the trace pairing is symmetric.
@@ -162,19 +162,19 @@ $$
 
 where $\tilde{E}_i=a_ie_0+i\vec w_i$, and $\sum_ia_i=1$, $\sum_i\vec w_i=0$ are exactly $\sum_i\tilde{E}_i=e_0$. Reality, positivity, and normalization ($\sum_ip_i=\mathrm{Tr}(e_0\tilde{\rho})=1$) follow from the algebra; projective measurements are the case of orthogonal idempotents.
 
-Two examples make the non-projective case concrete. The **unsharp measurement** with $0\leq\eta\leq1$ and unit $\hat n$ is $\tilde{E}_\pm=\tfrac12(e_0\pm i\eta\hat n)$, a POVM since $a=\tfrac12$ and $|\vec w|=\eta/2\leq\tfrac12$, with $p_\pm=\tfrac12(1\pm\eta\hat n\cdot\vec r)$; it is projective only at $\eta=1$, because
+Two examples make the non-projective case concrete. The **unsharp measurement** with $0\leq\eta\leq1$ and unit $\hat u$ is $\tilde{E}_\pm=\tfrac12(e_0\pm i\eta\hat u)$, a POVM since $a=\tfrac12$ and $|\vec w|=\eta/2\leq\tfrac12$, with $p_\pm=\tfrac12(1\pm\eta\hat u\cdot\vec r)$; it is projective only at $\eta=1$, because
 
 $$
 \tilde{E}_+^2-\tilde{E}_+=\tfrac14(\eta^2-1)e_0 .
 $$
 
-The **trine measurement**, with three unit vectors $\hat n_k$ at $120^\circ$ (so $\sum_k\hat n_k=0$), is
+The **trine measurement**, with three unit vectors $\hat u_k$ at $120^\circ$ (so $\sum_k\hat u_k=0$), is
 
 $$
-\tilde{E}_k=\tfrac13(e_0+i\hat n_k)=\tfrac23\tilde\Pi_1(\hat n_k),\qquad k=0,1,2 .
+\tilde{E}_k=\tfrac13(e_0+i\hat u_k)=\tfrac23\tilde\Pi_1(\hat u_k),\qquad k=0,1,2 .
 $$
 
-Each is an effect, they sum to $e_0$, and no two are orthogonal; the probabilities are $p_k=\tfrac13(1+\hat n_k\cdot\vec r)$ with $\sum_kp_k=1$. The trace formula thus covers general measurement statistics unchanged. Non-projective measurements are not exotic: they are needed for tasks such as unambiguous discrimination of non-orthogonal states, and the effect formalism is the algebraic home of that possibility.
+Each is an effect, they sum to $e_0$, and no two are orthogonal; the probabilities are $p_k=\tfrac13(1+\hat u_k\cdot\vec r)$ with $\sum_kp_k=1$. The trace formula thus covers general measurement statistics unchanged. Non-projective measurements are not exotic: they are needed for tasks such as unambiguous discrimination of non-orthogonal states, and the effect formalism is the algebraic home of that possibility.
 
 The trace formula gives measurement **statistics**, not the post-measurement state; the update requires Kraus operators $\tilde{K}_i$ with $\sum_i\tilde{K}_i^{*}\tilde{K}_i=e_0$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.
 
@@ -184,10 +184,10 @@ In standard quantum physics a state is a density operator $\rho$, an observable 
 
 $$
 \mathrm{Tr}(\tilde{P}\tilde{\rho})=\mathrm{tr}\bigl(\varphi(\tilde{P})\varphi(\tilde{\rho})\bigr),\qquad
-\mathrm{Tr}\bigl(\tilde\Pi(\hat\mu)\tilde\Pi(\hat\nu)\bigr)=\tfrac12(1+\hat\mu\cdot\hat\nu)=\cos^2\frac{\theta}{2}=\bigl|\langle\hat\mu+|\hat\nu+\rangle\bigr|^2,
+\mathrm{Tr}\bigl(\tilde\Pi(\hat u_1)\tilde\Pi(\hat u_2)\bigr)=\tfrac12(1+\hat u_1\cdot\hat u_2)=\cos^2\frac{\theta}{2}=\bigl|\langle\hat u_1+|\hat u_2+\rangle\bigr|^2,
 $$
 
-and the general Hilbert-space statement $p=\mathrm{Tr}(E\rho)$ coincides with the POVM form above. Concretely, the correspondences are: (i) idempotent $\leftrightarrow$ rank-one projector; (ii) state $\leftrightarrow$ density matrix; (iii) trace pairing $\leftrightarrow$ Hilbert–Schmidt inner product; (iv) $\mathrm{Tr}(\tilde\Pi(\hat\mu)\tilde\Pi(\hat\nu))=\cos^2(\theta/2)$ $\leftrightarrow$ $|\langle\hat\mu+|\hat\nu+\rangle|^2$; (v) POVM in effects $\leftrightarrow$ POVM in operators. Each is an identity under $\varphi$, not an approximation. The agreement is not a coincidence to be tested but an identity of notations, because $\mathbb{B}$ and $M_2(\mathbb{C})$ are the same algebra; any derivation in $\mathbb{B}$ is a derivation about $2\times2$ matrices.
+and the general Hilbert-space statement $p=\mathrm{Tr}(E\rho)$ coincides with the POVM form above. Concretely, the correspondences are: (i) idempotent $\leftrightarrow$ rank-one projector; (ii) state $\leftrightarrow$ density matrix; (iii) trace pairing $\leftrightarrow$ Hilbert–Schmidt inner product; (iv) $\mathrm{Tr}(\tilde\Pi(\hat u_1)\tilde\Pi(\hat u_2))=\cos^2(\theta/2)$ $\leftrightarrow$ $|\langle\hat u_1+|\hat u_2+\rangle|^2$; (v) POVM in effects $\leftrightarrow$ POVM in operators. Each is an identity under $\varphi$, not an approximation. The agreement is not a coincidence to be tested but an identity of notations, because $\mathbb{B}$ and $M_2(\mathbb{C})$ are the same algebra; any derivation in $\mathbb{B}$ is a derivation about $2\times2$ matrices.
 
 The formulations differ in what they take as primitive. In the standard formalism a state is a vector and an observable an operator on vectors — different kinds of object; here both are elements of the single four-dimensional real space $\mathbb{M}_+$, paired symmetrically. The statement $|\langle\phi|\psi\rangle|^2$ is quadratic in amplitudes, while $\mathrm{Tr}(\tilde{P}\tilde{Q})$ is bilinear in projectors, so the symmetry of the transition probability is manifest rather than implicit. Writing $|\langle\phi|\psi\rangle|^2$ requires choosing a Hilbert space and an inner product; the biquaternion pairing is supplied by the algebra's own product — it is the trace, singled out by traciality. This is the substance of the claim that the Born rule is a consequence of the algebra: the form of the pairing is not chosen, it is read off. The vector statement covers only pure states, whereas the trace formula covers pure and mixed states and POVMs alike; it is a generalization of the vector statement, though a restatement of the general statement $p=\mathrm{Tr}(E\rho)$.
 
@@ -245,12 +245,12 @@ The comparison with the standard statement is exact, because $\mathbb{B}\cong M_
 | $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0k_0 + \vec h\cdot\vec k)$ | Trace pairing, signature $(4,0)$ |
 | $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\vec h|^2)e_0$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$, $|\vec r|\leq 1$ | State; Bloch vector $\vec r$ |
-| $\tilde\Pi_{1,2}(\hat\mu) = \tfrac{1}{2}(e_0 \pm i\hat\mu)$, $|\hat\mu|=1$ | Idempotent (pure state, rank-one projector) |
+| $\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}(e_0 \pm i\hat u)$, $|\hat u|=1$ | Idempotent (pure state, rank-one projector) |
 | $\tilde{E} = a e_0 + i\vec w$, $|\vec w|\leq\min(a,1-a)$ | Effect |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\mathrm{Tr}(\tilde\Pi_1(\hat h)\tilde{\rho}) = \tfrac{1}{2}(1+\hat h\cdot\vec r)$ | Born probability, projective |
 | $\mathrm{Tr}(\tilde{E}_i\tilde{\rho}) = a_i + \vec w_i\cdot\vec r$ | Born probability, POVM |
-| $\mathrm{Tr}(\tilde\Pi(\hat\mu)\tilde\Pi(\hat\nu)) = \tfrac{1}{2}(1+\hat\mu\cdot\hat\nu) = \cos^2(\theta/2)$ | Transition probability |
+| $\mathrm{Tr}(\tilde\Pi(\hat u_1)\tilde\Pi(\hat u_2)) = \tfrac{1}{2}(1+\hat u_1\cdot\hat u_2) = \cos^2(\theta/2)$ | Transition probability |
 | $\varphi: e_0\mapsto I_2$, $e_j\mapsto -i\sigma_j$ | Isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |
 | $\mathrm{tr}\circ\varphi = \mathrm{Tr}$ | Trace correspondence |
 | $\tilde{K}_i$, $\sum_i\tilde{K}_i^{*}\tilde{K}_i = e_0$ | Kraus operators (measurement update) |

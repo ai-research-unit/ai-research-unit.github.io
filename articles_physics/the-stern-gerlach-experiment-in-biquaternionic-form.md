@@ -14,7 +14,7 @@ The findings are stated here in advance, so that the reader can hold them agains
 4. **The measurement destroys the transverse coherence.** The Stern–Gerlach apparatus entangles the spin with the centre-of-mass coordinate; tracing the position out leaves the spin state with its off-diagonal (transverse) Bloch components erased, $\vec r = (0,0,r_3)$. The coherence that survives is exactly the component along the field, and the lost components are the ones the apparatus cannot read.
 5. **A rotated apparatus gives the $\cos^2(\theta/2)$ law**, and the rotation that carries one analyser direction into another is a rotor in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ acting by conjugation.
 
-The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$, the observables are $\tilde{H} = h_0 e_0 + i\vec h \in \mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ for a unit pure real quaternion $\hat{\mu}$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ with $\mathrm{Tr}(e_0) = 2$.
+The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$, the observables are $\tilde{H} = h_0 e_0 + i\vec h \in \mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0 \pm i\hat u)$ for a unit pure real quaternion $\hat u$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ with $\mathrm{Tr}(e_0) = 2$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators, the idempotents and the Born rule.
@@ -201,16 +201,16 @@ where the last equality uses $\tilde\Pi_1\tilde{\rho}\tilde\Pi_1 = p_+\tilde\Pi_
 Turn the analysing magnet so that its field lies in the $xz$-plane at an angle $\theta$ from the $z$-axis:
 
 $$
-\hat{n} = \sin\theta\, e_1 + \cos\theta\, e_3 .
+\hat u = \sin\theta\, e_1 + \cos\theta\, e_3 .
 $$
 
-The observable measured by the rotated analyser is $\tilde{S}(\hat{n}) = \hat{n}_k\tilde{S}_k = \tfrac{\hbar}{2} i\hat{n}$, whose eigenstates are the idempotents $\tilde\Pi_{1,2}(\hat{n}) = \tfrac12(e_0 \pm i\hat{n})$:
+The observable measured by the rotated analyser is $\tilde{S}(\hat u) = \hat u_k\tilde{S}_k = \tfrac{\hbar}{2} i\hat u$, whose eigenstates are the idempotents $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0 \pm i\hat u)$:
 
 $$
-\tilde{S}(\hat{n})\,\tilde\Pi_{1,2}(\hat{n}) = \pm\frac{\hbar}{2}\,\tilde\Pi_{1,2}(\hat{n}).
+\tilde{S}(\hat u)\,\tilde\Pi_{1,2}(\hat u) = \pm\frac{\hbar}{2}\,\tilde\Pi_{1,2}(\hat u).
 $$
 
-The rotation that carries the $z$-direction into $\hat{n}$ is the real-quaternion rotor
+The rotation that carries the $z$-direction into $\hat u$ is the real-quaternion rotor
 
 $$
 \tilde{R}(\theta) = \exp\!\left(\frac{\theta}{2}e_2\right) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,e_2 \in \mathbb{H}_{\mathbb{B}},
@@ -221,27 +221,27 @@ and it acts on the observables by conjugation. Direct multiplication gives
 $$
 \tilde{R}(\theta)\,\tilde{S}_3\,\tilde{R}(\theta)^{*}
 = \frac{\hbar}{2}\,i\left(\sin\theta\, e_1 + \cos\theta\, e_3\right)
-= \tilde{S}(\hat{n}),
+= \tilde{S}(\hat u),
 $$
 
-and correspondingly $\tilde{R}\tilde\Pi_1(\hat{z})\tilde{R}^{*} = \tilde\Pi_1(\hat{n})$. So the rotation of the analyser is an $SU(2)$ rotor conjugation, and the space of analyser directions is the sphere of unit vectors $\hat{n}\in S^2$, which is the Bloch sphere of the idempotents.
+and correspondingly $\tilde{R}\tilde\Pi_1(\hat{z})\tilde{R}^{*} = \tilde\Pi_1(\hat u)$. So the rotation of the analyser is an $SU(2)$ rotor conjugation, and the space of analyser directions is the sphere of unit vectors $\hat u\in S^2$, which is the Bloch sphere of the idempotents.
 
 ### The $\cos^2(\theta/2)$ Law
 
-An atom prepared spin-up along $z$ and passed through an analyser at angle $\theta$ is found spin-up along $\hat{n}$ with probability
+An atom prepared spin-up along $z$ and passed through an analyser at angle $\theta$ is found spin-up along $\hat u$ with probability
 
 $$
-p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\hat{n})\,\tilde\Pi_1(\hat{z})\right)
-= 2\,\mathrm{Sc}\!\left(\tilde\Pi_1(\hat{n})\,\tilde\Pi_1(\hat{z})\right).
+p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\hat u)\,\tilde\Pi_1(\hat{z})\right)
+= 2\,\mathrm{Sc}\!\left(\tilde\Pi_1(\hat u)\,\tilde\Pi_1(\hat{z})\right).
 $$
 
-Computing the product with $\hat{n} = \sin\theta\, e_1 + \cos\theta\, e_3$, $e_1e_3 = -e_2$, $e_3^2 = -e_0$,
+Computing the product with $\hat u = \sin\theta\, e_1 + \cos\theta\, e_3$, $e_1e_3 = -e_2$, $e_3^2 = -e_0$,
 
 $$
-\tilde\Pi_1(\hat{n})\,\tilde\Pi_1(\hat{z})
-= \tfrac14\left(e_0 + i\hat{n}\right)\left(e_0 + ie_3\right)
-= \tfrac14\left[e_0 + ie_3 + i\hat{n} - \hat{n}e_3\right]
-= \tfrac14\left[(1+\cos\theta)e_0 + ie_3 + i\hat{n} + \sin\theta\, e_2\right],
+\tilde\Pi_1(\hat u)\,\tilde\Pi_1(\hat{z})
+= \tfrac14\left(e_0 + i\hat u\right)\left(e_0 + ie_3\right)
+= \tfrac14\left[e_0 + ie_3 + i\hat u - \hat u e_3\right]
+= \tfrac14\left[(1+\cos\theta)e_0 + ie_3 + i\hat u + \sin\theta\, e_2\right],
 $$
 
 whose scalar part is $\tfrac14(1+\cos\theta)$. Hence
@@ -250,7 +250,7 @@ $$
 p_+ = \tfrac12\left(1+\cos\theta\right) = \cos^2\frac{\theta}{2},
 $$
 
-in agreement with the companion exercise *Exercise: Measuring Spin Along an Arbitrary Direction*. The result depends on the analyser direction only through $\hat{n}\cdot e_3 = \cos\theta$, which is the geometric content: the probability is a function of the angle between the preparation axis and the analysis axis, and of nothing else.
+in agreement with the companion exercise *Exercise: Measuring Spin Along an Arbitrary Direction*. The result depends on the analyser direction only through $\hat u\cdot e_3 = \cos\theta$, which is the geometric content: the probability is a function of the angle between the preparation axis and the analysis axis, and of nothing else.
 
 ### Three Analysers and the Role of the Intermediate Measurement
 
@@ -272,7 +272,7 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 - **A single home for the field coupling and the measurement.** The Hamiltonian, the force operator, and the observable that the apparatus reads are all elements of the same subspace $\mathbb{M}_+$; the states are the idempotents of that subspace; and the outcome probabilities are the trace pairing. The experiment does not require an object outside the algebra, except for the centre-of-mass coordinate that carries the deflection and the mass $m$ that enters the deflection formula.
 - **Space quantisation as a spectral decomposition.** The finite number of beams is the finite number of terms in the spectral decomposition of the observable, and the deflection of each beam is the corresponding eigenvalue. In the algebra this is a statement about the rank-one idempotents of $\mathbb{M}_+$, which are automatically complete and orthogonal.
 - **Decoherence as a partial trace with orthogonal labels.** The loss of the transverse Bloch components is the vanishing of the cross terms between two orthogonal spatial wavepackets. The algebra makes it visible that what is destroyed is exactly the coherence term $\tfrac12 i(r_1e_1+r_2e_2)$, and that the surviving component is the one along the field.
-- **The rotation of the apparatus is a rotor.** The analyser direction is the axis $\hat{n}$ of the idempotent, and the passage from one axis to another is conjugation by a unit real quaternion. The analyser's parameter space is the Bloch sphere, the same sphere on which the states live.
+- **The rotation of the apparatus is a rotor.** The analyser direction is the axis $\hat u$ of the idempotent, and the passage from one axis to another is conjugation by a unit real quaternion. The analyser's parameter space is the Bloch sphere, the same sphere on which the states live.
 
 **What the algebra does not provide.** The deflection formula contains the mass $m$, the beam speed $v$ and the field length $L$; these are properties of the centre-of-mass motion in the material sector and of the apparatus, not of the informational sector. The framework labels the material coordinate in which the deflection is measured but does not supply the deflection itself. Similarly, the scale $\hbar$ of the observable $\tilde{S}_3$ is supplied to the framework from outside; the algebra fixes the form of the observable but not the value of the quantum of action. The Stern–Gerlach experiment, like the rest of non-relativistic quantum physics in this series, is a transcription into the algebra and not a new prediction.
 
@@ -302,7 +302,7 @@ The deflection of each beam is the corresponding eigenvalue, $\pm\hbar\gamma B'L
 
 The apparatus entangles the spin with the centre-of-mass coordinate, which lives in the material sector. When the position is traced out, the orthogonal spatial wavepackets erase the cross terms and the reduced spin state is $\tfrac12(e_0 + ir_3e_3)$: the transverse Bloch components are lost, and only the component along the field survives. The coherence that is destroyed is the term $\tfrac12 i(r_1e_1 + r_2e_2)$; the biquaternion form of the measurement shows this without an additional decoherence postulate.
 
-A rotated analyser measures $\tilde{S}(\hat{n}) = \tfrac{\hbar}{2}i\hat{n}$ for $\hat{n} = \sin\theta\,e_1 + \cos\theta\,e_3$, and the rotation from the $z$-axis to $\hat{n}$ is the real-quaternion rotor $\tilde{R}(\theta) = e^{\theta e_2/2}$ acting by conjugation, $\tilde{R}\tilde{S}_3\tilde{R}^{*} = \tilde{S}(\hat{n})$. The single-beam probability is $\cos^2(\theta/2)$, and the intermediate measurement in the $z$–$x$–$z$ sequence destroys the coherence and reduces the joint probability to $1/4$, whereas a rotation without an intermediate measurement leaves it at $1$. The experiment is a physical realisation of the two primitive operations of the algebraic formalism: projective measurement onto an idempotent, and reversible evolution by a rotor.
+A rotated analyser measures $\tilde{S}(\hat u) = \tfrac{\hbar}{2}i\hat u$ for $\hat u = \sin\theta\,e_1 + \cos\theta\,e_3$, and the rotation from the $z$-axis to $\hat u$ is the real-quaternion rotor $\tilde{R}(\theta) = e^{\theta e_2/2}$ acting by conjugation, $\tilde{R}\tilde{S}_3\tilde{R}^{*} = \tilde{S}(\hat u)$. The single-beam probability is $\cos^2(\theta/2)$, and the intermediate measurement in the $z$–$x$–$z$ sequence destroys the coherence and reduces the joint probability to $1/4$, whereas a rotation without an intermediate measurement leaves it at $1$. The experiment is a physical realisation of the two primitive operations of the algebraic formalism: projective measurement onto an idempotent, and reversible evolution by a rotor.
 
 ## Summary of Notation
 
@@ -317,12 +317,12 @@ A rotated analyser measures $\tilde{S}(\hat{n}) = \tfrac{\hbar}{2}i\hat{n}$ for 
 | $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ | Spin observable along $\hat{k}$ |
 | $\tilde{H} = -\gamma B(z)\tilde{S}_3$ | Magnetic Hamiltonian in the field $\vec B = B\hat{z}$ |
 | $\tilde{F}_3 = \gamma B'\tilde{S}_3$ | Stern–Gerlach force operator |
-| $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ | Pure-state idempotent |
+| $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0 \pm i\hat u)$ | Pure-state idempotent |
 | $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ | General (mixed) spin state; $\vec r$ the Bloch vector |
 | $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\hat{z})\tilde{\rho}) = \tfrac12(1\pm r_3)$ | Beam intensities (Born rule) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula |
-| $\hat{n} = \sin\theta\,e_1 + \cos\theta\,e_3$ | Rotated analyser direction |
-| $\tilde{R}(\theta) = \exp(\tfrac{\theta}{2}e_2)$ | Rotor carrying $\hat{z}$ to $\hat{n}$ |
+| $\hat u = \sin\theta\,e_1 + \cos\theta\,e_3$ | Rotated analyser direction |
+| $\tilde{R}(\theta) = \exp(\tfrac{\theta}{2}e_2)$ | Rotor carrying $\hat{z}$ to $\hat u$ |
 | $\Delta z_\pm = \pm\hbar\gamma B'L^2/(4mv^2)$ | Deflections of the two beams |
 | $\cos^2(\theta/2)$ | Probability of "up" at the rotated analyser |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

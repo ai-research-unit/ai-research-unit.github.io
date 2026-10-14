@@ -194,7 +194,7 @@ $$
 L_aL_b = L_{ab}, \qquad R_aR_b = R_{ba}, \qquad L_aR_b = R_bL_a,
 $$
 
-so $a \mapsto L_a$ is multiplicative but its values are $\varsigma$-semilinear, while $a \mapsto R_a$ is multiplicative up to the reversal of the order — a representation of the opposite algebra $A^{\mathrm{op}}$ — with $R$-linear values.
+so $a \mapsto L_a$ is multiplicative but its values are $\varsigma$-semilinear, while $a \mapsto R_a$ is multiplicative up to the reversal of the order — a representation of the opposite algebra $A^{\mathrm{opp}}$ — with $R$-linear values.
 
 **Proof.** For $L_a$, $L_a(\lambda x) = a(\lambda x) = \varsigma(\lambda)(ax) = \varsigma(\lambda)L_a(x)$ by the second rule, so $L_a$ is $\varsigma$-semilinear, and it is $R$-linear exactly when $\lambda ax = \varsigma(\lambda) ax$ for every $\lambda$ and $x$. For $R_a$, $R_a(\lambda x) = (\lambda x)a = \lambda(xa) = \lambda R_a(x)$ by the first rule, so $R_a$ is $R$-linear. The composition identities are the associative law read in the three possible orders; the second shows that the right multiplications compose in the order opposite to the multiplication of the parameters, which is why $a \mapsto R_a$ is an anti-homomorphism.
 
@@ -202,9 +202,9 @@ so $a \mapsto L_a$ is multiplicative but its values are $\varsigma$-semilinear, 
 
 ### The Opposite Algebra
 
-**Definition.** Let $A$ be a sesqualgebra. The **opposite algebra** $A^{\mathrm{op}}$ has the same additive group and the same scalars as $A$ and the product $x \cdot y = yx$.
+**Definition.** Let $A$ be a sesqualgebra. The **opposite algebra** $A^{\mathrm{opp}}$ has the same additive group and the same scalars as $A$ and the product $x \cdot y = yx$.
 
-**Proposition.** The product of $A^{\mathrm{op}}$ is $\varsigma$-semilinear in the first variable and $R$-linear in the second: the parity of the two slots is exchanged, so $A^{\mathrm{op}}$ is the mirror of $A$ in the sense of the remark that the two sides are not interchangeable. It is a sesqualgebra in the standard sense exactly when $\varsigma = \mathrm{id}$; in general it is the $R$-bilinear map $A^{\varsigma} \times A \to A$, $(u,y) \mapsto yu$, with the conjugate module in the first factor rather than the second, just as the product of $A$ is the bilinear map $A \times A^{\varsigma} \to A$. The identity is an isomorphism $A \to A^{\mathrm{op}}$ exactly when $A$ is commutative, and the product of $A^{\mathrm{op}}$ is $R$-bilinear in both slots exactly when $\varsigma = \mathrm{id}$.
+**Proposition.** The product of $A^{\mathrm{opp}}$ is $\varsigma$-semilinear in the first variable and $R$-linear in the second: the parity of the two slots is exchanged, so $A^{\mathrm{opp}}$ is the mirror of $A$ in the sense of the remark that the two sides are not interchangeable. It is a sesqualgebra in the standard sense exactly when $\varsigma = \mathrm{id}$; in general it is the $R$-bilinear map $A^{\varsigma} \times A \to A$, $(u,y) \mapsto yu$, with the conjugate module in the first factor rather than the second, just as the product of $A$ is the bilinear map $A \times A^{\varsigma} \to A$. The identity is an isomorphism $A \to A^{\mathrm{opp}}$ exactly when $A$ is commutative, and the product of $A^{\mathrm{opp}}$ is $R$-bilinear in both slots exactly when $\varsigma = \mathrm{id}$.
 
 **Proof.** $(\lambda x) \cdot y = y(\lambda x) = \varsigma(\lambda)(yx) = \varsigma(\lambda)(x \cdot y)$ and $x \cdot (\lambda y) = (\lambda y)x = \lambda(yx) = \lambda(x \cdot y)$ by the two rules of the product of $A$; the same two evaluations show that $(u,y) \mapsto yu$ is additive and $R$-linear in each variable on $A^{\varsigma} \times A$. The remaining clauses are the definitions.
 
@@ -252,7 +252,7 @@ The standard example is the derived operation $x \star y = xy^{*}$ of an associa
 | $\{x,y,z\}$ | the triple product $xy^{*}z$ |
 | $L_a$, $R_a$ | the left and the right multiplication, $L_a(x) = ax$ and $R_a(x) = xa$ |
 | $(xy)^{*}$ | the involution applied to a product, equal to $y^{*}x^{*}$ |
-| $A^{\mathrm{op}}$ | the opposite algebra, $x \cdot y = yx$ |
+| $A^{\mathrm{opp}}$ | the opposite algebra, $x \cdot y = yx$ |
 | $A \cdot A$ | the products of pairs, whose generated submodule is assumed to be $A$ in the collapse theorems |
 | $\operatorname{ann}_R(A)$ | the annihilator $\{r \in R : rA = 0\}$ of $A$ in $R$ |
 | $A$ of full type | faithful over $R$, with products generating $A$ and no nonzero left annihilator |

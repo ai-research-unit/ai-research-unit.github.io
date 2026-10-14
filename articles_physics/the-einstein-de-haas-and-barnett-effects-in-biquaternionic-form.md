@@ -83,24 +83,24 @@ $$
 \vec x(t) = \tilde{u}(t)\,\vec x(0)\,\tilde{u}(t)^{*} .
 $$
 
-For a rotation at constant rate about a fixed unit axis $\hat n$, the rotor is
+For a rotation at constant rate about a fixed unit axis $\hat u$, the rotor is
 
 $$
-\tilde{u}(t) = \exp\!\left(\frac{\omega t}{2}\,\hat{n}_ke_k\right)
-= \cos\frac{\omega t}{2}\,e_0 + \sin\frac{\omega t}{2}\,\hat{n}_ke_k ,
+\tilde{u}(t) = \exp\!\left(\frac{\omega t}{2}\,\hat u_ke_k\right)
+= \cos\frac{\omega t}{2}\,e_0 + \sin\frac{\omega t}{2}\,\hat u_ke_k ,
 $$
 
-and it rotates every body vector through the angle $\omega t$ about $\hat n$ in the right-handed sense. The rotor is normalized, $N(\tilde{u}) = \langle\tilde{u},\tilde{u}\rangle_{\natural} = \tilde{u}\tilde{u}^{\natural} = e_0$, and it is a **double cover** of the rotation: $\tilde{u}(\theta + 2\pi,\hat n) = -\tilde{u}(\theta,\hat n)$, so that $\pm\tilde{u}$ describe the same orientation and the group of orientations is $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$.
+and it rotates every body vector through the angle $\omega t$ about $\hat u$ in the right-handed sense. The rotor is normalized, $N(\tilde{u}) = \langle\tilde{u},\tilde{u}\rangle_{\natural} = \tilde{u}\tilde{u}^{\natural} = e_0$, and it is a **double cover** of the rotation: $\tilde{u}(\theta + 2\pi,\hat u) = -\tilde{u}(\theta,\hat u)$, so that $\pm\tilde{u}$ describe the same orientation and the group of orientations is $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$.
 
 ### The Angular Velocity
 
 Differentiating the rotor gives the angular velocity. For the fixed-axis rotor above,
 
 $$
-\dot{\tilde{u}} = \frac{\omega}{2}\,\hat{n}_ke_k\,\tilde{u}
+\dot{\tilde{u}} = \frac{\omega}{2}\,\hat u_ke_k\,\tilde{u}
 = \frac{1}{2}\,\tilde{\boldsymbol{\omega}}\,\tilde{u},
 \qquad
-\tilde{\boldsymbol{\omega}} = \omega\,\hat{n}_ke_k .
+\tilde{\boldsymbol{\omega}} = \omega\,\hat u_ke_k .
 $$
 
 For a general time-dependent rotor the same relation defines the angular velocity, $\tilde{\boldsymbol{\omega}} = 2\,\dot{\tilde{u}}\,\tilde{u}^{*}$, which is a pure real quaternion because $\tilde{u}\tilde{u}^{*} = e_0$ implies $\dot{\tilde{u}}\tilde{u}^{*} + \tilde{u}\dot{\tilde{u}}^{*} = 0$. The equation $\dot{\tilde{u}} = \tfrac{1}{2}\tilde{\boldsymbol{\omega}}\tilde{u}$ is the biquaternion form of the rigid-body kinematics, and it is the same relation that the Larmor precession uses with $\tilde{\boldsymbol{\omega}}_L = \gamma\vec B$.
@@ -149,7 +149,7 @@ The angular velocity of the body is proportional to the rate of change of its ma
 $$
 \Delta\tilde{\boldsymbol{\omega}} = -\,\frac{1}{\gamma I}\,\Delta\tilde{\boldsymbol{\mu}},
 \qquad
-\Delta\tilde{u} = \exp\!\left(\frac{\Delta\theta}{2}\,\hat{\mu}_ke_k\right),
+\Delta\tilde{u} = \exp\!\left(\frac{\Delta\theta}{2}\,\hat{u}_ke_k\right),
 \qquad
 \Delta\theta \propto -\,\frac{\Delta\mu}{\gamma I},
 $$
@@ -295,7 +295,7 @@ The two effects are **reciprocal**, being the two derivatives of the single spin
 | $\vec J = \vec S + \vec L$ | Total angular momentum |
 | $\gamma = g\,q/2m$ | Gyromagnetic ratio |
 | $g$ | Gyromagnetic factor |
-| $\tilde{u}(\theta,\hat n)$ | Orientation rotor, unit real quaternion |
+| $\tilde{u}(\theta,\hat u)$ | Orientation rotor, unit real quaternion |
 | $\vec x(t) = \tilde{u}\vec x(0)\tilde{u}^{*}$ | Rotor conjugation (body vector into the lab) |
 | $\vec\omega = \omega_ke_k$ | Angular velocity (pure real quaternion) |
 | $\tilde{\boldsymbol{\omega}} = 2\dot{\tilde{u}}\tilde{u}^{*}$ | Angular velocity biquaternion |

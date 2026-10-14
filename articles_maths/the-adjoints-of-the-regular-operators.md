@@ -108,7 +108,7 @@ so the commutant $L(A)' = R(A)$ is the conjugate of the representation, and it i
 
 **Proof.** $\sigma L_{a^{*}}\sigma(x) = \sigma(a^{*}\sigma(x)) = \sigma(\sigma(x))\,\sigma(a^{*}) = x a$, which is $R_a$, using $\sigma^2 = \mathrm{id}$ and $\sigma(a^{*}) = a$. Since $L(A)$ and $R(A)$ are each carried into themselves by ${}^{\dagger}$, and since the operator $T \mapsto T^{\dagger}$ is an involution, an operator commuting with all of $L(A)$ has an adjoint commuting with all of $L(A)$, so the commutant is stable as well.
 
-**Remark (the representation is self-adjoint in the commutant).** The left regular representation has commutant the conjugate of the right one, $L(A)' = R(A) = \sigma L(A)\sigma$, so the two halves of the regular bimodule are exchanged by the involution. Without the involution the two halves are the opposite algebras $A$ and $A^{\mathrm{op}}$; with it they become isomorphic and the representation and its commutant are the same algebra up to $\sigma$, which is the operator-level form of $A \cong A^{\mathrm{op}}$ in *Involutive Rings*.
+**Remark (the representation is self-adjoint in the commutant).** The left regular representation has commutant the conjugate of the right one, $L(A)' = R(A) = \sigma L(A)\sigma$, so the two halves of the regular bimodule are exchanged by the involution. Without the involution the two halves are the opposite algebras $A$ and $A^{\mathrm{opp}}$; with it they become isomorphic and the representation and its commutant are the same algebra up to $\sigma$, which is the operator-level form of $A \cong A^{\mathrm{opp}}$ in *Involutive Rings*.
 
 ### The star-closure of the image
 

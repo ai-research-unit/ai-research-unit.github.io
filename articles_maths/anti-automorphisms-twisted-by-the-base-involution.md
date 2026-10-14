@@ -20,7 +20,7 @@ $$
 f(\lambda x) = \varsigma(\lambda) f(x) , \qquad f(xy) = f(y)f(x) .
 $$
 
-The set of them is written $\operatorname{Tw}_{\varsigma}(A)$, or $\operatorname{Tw}(A,A^{\mathrm{op}})$ when it is read as the isomorphisms to the opposite algebra. The **twist** of $f$ is the involution $\varsigma$ that appears in the first rule.
+The set of them is written $\operatorname{Tw}_{\varsigma}(A)$, or $\operatorname{Tw}(A,A^{\mathrm{opp}})$ when it is read as the isomorphisms to the opposite algebra. The **twist** of $f$ is the involution $\varsigma$ that appears in the first rule.
 
 **Lemma (the twist is unique).** Let $R$ be a domain and $A$ a nonzero unital $R$-algebra. A bijective map $f$ has at most one twist: if $f(\lambda x) = \varsigma(\lambda)f(x)$ and $f(\lambda x) = \varsigma'(\lambda)f(x)$ for all $\lambda \in R$, $x \in A$, then $\varsigma = \varsigma'$.
 
@@ -114,11 +114,11 @@ so that $\operatorname{Tw}_{\varsigma}(A) = f_{0}\operatorname{Aut}_{R}(A)$ is a
 
 ### The Interpretation as the Anti-Isomorphisms to the Opposite
 
-**Proposition.** Let $A^{\mathrm{op}}$ be the opposite algebra of *Opposite Algebras and Anti-Isomorphisms*. Then $\operatorname{Tw}_{\varsigma}(A)$ is exactly the set of the $\varsigma$-semilinear isomorphisms $A \to A^{\mathrm{op}}$, and the coset theorem reads: the $\varsigma$-semilinear isomorphisms from $A$ to its opposite form a coset of the group $\operatorname{Aut}_{R}(A)$.
+**Proposition.** Let $A^{\mathrm{opp}}$ be the opposite algebra of *Opposite Algebras and Anti-Isomorphisms*. Then $\operatorname{Tw}_{\varsigma}(A)$ is exactly the set of the $\varsigma$-semilinear isomorphisms $A \to A^{\mathrm{opp}}$, and the coset theorem reads: the $\varsigma$-semilinear isomorphisms from $A$ to its opposite form a coset of the group $\operatorname{Aut}_{R}(A)$.
 
-**Proof.** A bijective anti-multiplicative map $A \to A$ is a multiplicative map $A \to A^{\mathrm{op}}$, by the definition of the product of the opposite algebra; the additivity and the $\varsigma$-semilinearity are the same on the two sides.
+**Proof.** A bijective anti-multiplicative map $A \to A$ is a multiplicative map $A \to A^{\mathrm{opp}}$, by the definition of the product of the opposite algebra; the additivity and the $\varsigma$-semilinearity are the same on the two sides.
 
-**Remark.** The reading identifies the twisted anti-automorphisms with the isomorphisms of $A$ with its own opposite, and it makes the order-two case the statement that an involution is an isomorphism of $A$ with $A^{\mathrm{op}}$ whose composite with itself is the identity; that case is *The Involutions of a Sesqualgebra*. The proposition is the reason the symbols $\operatorname{Tw}(A,A^{\mathrm{op}})$ and $\operatorname{Tw}_{\varsigma}(A)$ name the same set.
+**Remark.** The reading identifies the twisted anti-automorphisms with the isomorphisms of $A$ with its own opposite, and it makes the order-two case the statement that an involution is an isomorphism of $A$ with $A^{\mathrm{opp}}$ whose composite with itself is the identity; that case is *The Involutions of a Sesqualgebra*. The proposition is the reason the symbols $\operatorname{Tw}(A,A^{\mathrm{opp}})$ and $\operatorname{Tw}_{\varsigma}(A)$ name the same set.
 
 ## The Classical Case
 
@@ -177,7 +177,7 @@ The $k$-th power of a twisted map has twist $\varsigma^{k}$, so a twisted map of
 | $P/\operatorname{Aut}_{R}(A) \cong \mathbb{Z}/2 \times \mathbb{Z}/2$ | the Klein quotient of the four classes |
 | $f^{k}$ has twist $\varsigma^{k}$ | the parity of the order |
 | $\operatorname{Tw}_{\varsigma}(A) = f_{0}\operatorname{Aut}_{R}(A)$ | the coset of the twisted anti-automorphisms |
-| $A^{\mathrm{op}}$ | the opposite algebra, the target of an anti-automorphism |
+| $A^{\mathrm{opp}}$ | the opposite algebra, the target of an anti-automorphism |
 
 ## Further Reading
 

@@ -9,7 +9,7 @@ The article is the seventh of the category. It follows *Quantum Groups*, whose q
 
 The article is algebraic. A **Poisson structure** here is a bilinear bracket on an algebra satisfying the Leibniz rule and the Jacobi identity; the geometric Poisson structure on a manifold, the symplectic form, the Hamiltonian vector field and the Poisson tensor in coordinates are objects of Part II, where the notion of a manifold and of a form is available, and they are deferred. Likewise the analytic questions of convergence of a star product belong to a later Part; here a star product is a formal series in a parameter and no question of convergence is raised. The operadic machinery used by the formality theorem is the algebra of operads, which is introduced in the menu above this article; the model-category and higher-category formulations are Part II's and are not used.
 
-Throughout, $k$ is a field of characteristic $0$ unless stated otherwise, $A$ is an associative $k$-algebra, $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{op}}$ is the enveloping algebra of *Separable Algebras*, and $k[[h]]$ is the algebra of formal power series in one variable, the completion of the polynomial algebra. All tensor products are over $k$.
+Throughout, $k$ is a field of characteristic $0$ unless stated otherwise, $A$ is an associative $k$-algebra, $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{opp}}$ is the enveloping algebra of *Separable Algebras*, and $k[[h]]$ is the algebra of formal power series in one variable, the completion of the polynomial algebra. All tensor products are over $k$.
 
 ## Formal Deformations of an Algebra
 
@@ -235,7 +235,7 @@ A **Poisson algebra** is a commutative associative algebra with a Lie bracket th
 | $k[[h]]$ | algebra of formal power series in $h$ |
 | $a*_h b = ab + \sum_{n\geq1}h^n\mu_n(a,b)$ | deformed multiplication |
 | $\mu_n$ | $n$-th order term of the deformation |
-| $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{op}}$ | enveloping algebra |
+| $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{opp}}$ | enveloping algebra |
 | $C^n(A,A) = \operatorname{Hom}_k(A^{\otimes n},A)$ | Hochschild cochains |
 | $\delta$ | Hochschild differential |
 | $HH^n(A,A)$ | Hochschild cohomology |

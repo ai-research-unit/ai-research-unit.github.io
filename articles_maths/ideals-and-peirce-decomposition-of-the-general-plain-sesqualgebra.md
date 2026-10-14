@@ -16,7 +16,7 @@ $$
 \tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_0+\tilde\Xi\bigr),\qquad \tilde\Pi_-(\tilde\Xi)=e_0-\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_0-\tilde\Xi\bigr),
 $$
 
-with $\tilde\Xi=i\hat n$, where $\hat n$ is a real vector of the vector subspace with $(\hat n,\hat n)=1$. The pair $\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi)$ is the **complementary pair** of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, and it is the pair $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$ of the Hermitian root $\tilde\Xi=i\hat n$, the notation of that article's §*The Two Idempotents of a Root*. The matrix model $\mathsf{M}_2$ is the algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, with $\mathsf{M}_2(e_0)=\mathrm{I}_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ on the three quaternion units.
+with $\tilde\Xi=i\hat u$, where $\hat u$ is a real vector of the vector subspace with $(\hat u,\hat u)=1$. The pair $\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi)$ is the **complementary pair** of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, and it is the pair $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$ of the Hermitian root $\tilde\Xi=i\hat u$, the notation of that article's §*The Two Idempotents of a Root*. The matrix model $\mathsf{M}_2$ is the algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, with $\mathsf{M}_2(e_0)=\mathrm{I}_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ on the three quaternion units.
 
 ## The Ideals
 
@@ -97,19 +97,19 @@ with complex one-dimensional summands
 
 $$
 \tilde\Pi\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi,\quad
-\tilde\Pi\mathbb{B}\tilde\Pi^{\perp}=\mathbb{C}\tilde\Upsilon_1(\hat n),\quad
-\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Upsilon_2(\hat n),\quad
+\tilde\Pi\mathbb{B}\tilde\Pi^{\perp}=\mathbb{C}\hat\Upsilon_1(\hat u),\quad
+\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi=\mathbb{C}\hat\Upsilon_2(\hat u),\quad
 \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi^{\perp}=\mathbb{C}\tilde\Pi^{\perp},
 $$
 
-where $\tilde\Upsilon_1(\hat n)$ is any nonzero element of the first mixed space and $\tilde\Upsilon_2(\hat n)=\tilde\Upsilon_1(\hat n)^{*}$ is its conjugate in the second. Each summand has real dimension two and the total is eight.
+where $\hat\Upsilon_1(\hat u)$ is any nonzero element of the first mixed space and $\hat\Upsilon_2(\hat u)=\hat\Upsilon_1(\hat u)^{*}$ is its conjugate in the second. Each summand has real dimension two and the total is eight.
 
 **Proof.** The decomposition, the one-dimensionality of the four summands and the identification of the two mixed spaces as conjugate are *Ideals and Peirce Decomposition of the General Plain Algebra*, §*The Biquaternion Case* and §*From One Idempotent to Its Complement*, transported to the pair $(\tilde\Pi,\tilde\Pi^{\perp})$, a complete orthogonal family by *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Complement and the Pairing of the Directions*.
 
-**Example (the standard pair as coordinates).** At the axis $\hat n=\hat e_3$ the projection is the standard idempotent $\tilde\Pi_1(\hat e_3)=\tfrac12(e_0+ie_3)$, its complement is $\tilde\Pi_2(\hat e_3)=\tfrac12(e_0-ie_3)$, and the matrix model sends the four lines to the four matrix units,
+**Example (the standard pair as coordinates).** At the axis $\hat u=\hat e_3$ the projection is the standard idempotent $\tilde\Pi_1(\hat e_3)=\tfrac12(e_0+ie_3)$, its complement is $\tilde\Pi_2(\hat e_3)=\tfrac12(e_0-ie_3)$, and the matrix model sends the four lines to the four matrix units,
 
 $$
-\tilde\Pi\longleftrightarrow E_{11},\qquad \tilde\Upsilon_1(\hat e_3)\longleftrightarrow E_{12},\qquad \tilde\Upsilon_2(\hat e_3)\longleftrightarrow E_{21},\qquad \tilde\Pi^{\perp}\longleftrightarrow E_{22},
+\tilde\Pi\longleftrightarrow E_{11},\qquad \hat\Upsilon_1(\hat e_3)\longleftrightarrow E_{12},\qquad \hat\Upsilon_2(\hat e_3)\longleftrightarrow E_{21},\qquad \tilde\Pi^{\perp}\longleftrightarrow E_{22},
 $$
 
 as the transport of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* records; the Peirce coordinates of an element are therefore the four entries of its matrix, grouped by the projection instead of by the basis.
@@ -144,7 +144,7 @@ so $\mathbb{B}_{st}$ is the joint eigenspace of the operators of left and right 
 
 **The bijection.** A complete orthogonal pair of the block is a pair of orthogonal idempotents summing to $e_0$, and the idempotents of the block are the Hermitian idempotents of the algebra, so $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$ is Hermitian and has square $\tilde\Xi^2=\tilde\Pi_+^2-\tilde\Pi_+\tilde\Pi_--\tilde\Pi_-\tilde\Pi_++\tilde\Pi_-^2=\tilde\Pi_++\tilde\Pi_-=e_0$: a Hermitian root of $+1$, whose pair the given pair is. Conversely a Hermitian root gives its pair, and the root is read back, $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$, so a complete orthogonal pair determines the root up to the interchange of its two members. That interchange is exactly the replacement of the root by its opposite, $\tilde\Pi_+(-\tilde\Xi)=\tilde\Pi_-(\tilde\Xi)$ and $\tilde\Pi_-(-\tilde\Xi)=\tilde\Pi_+(\tilde\Xi)$. So the classes $\{\tilde\Xi,-\tilde\Xi\}$ of Hermitian roots of $+1$, the complete orthogonal pairs of the block and the Peirce decompositions of the block correspond one to one.
 
-**The count.** The Hermitian roots of $+1$ are $\pm e_0$ and the roots $\tilde\Xi=i\hat n$ over the real unit vectors $\hat n$ (*Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Hermitian Roots of One*). The class $\{\pm e_0\}$ gives the pair $(e_0,0)$ and the **degenerate decomposition**, whose corners are $\mathbb{B}$ and $0$ rather than four lines. A class $\{\tilde\Xi,-\tilde\Xi\}$ gives the pair $(\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi))$ of §*The Biquaternion Cases*, and the change $\hat n\mapsto-\hat n$ leaves the pair unchanged, two antipodal directions giving the same decomposition; the classes of the non-trivial Hermitian roots are therefore the points of the **real projective plane** of the directions, the same projective plane as the right lattice of §*The Complementary Pairs and the Peirce Decompositions*. So the Peirce decompositions of the block are one degenerate decomposition and a real projective plane of decompositions.
+**The count.** The Hermitian roots of $+1$ are $\pm e_0$ and the roots $\tilde\Xi=i\hat u$ over the real unit vectors $\hat u$ (*Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Hermitian Roots of One*). The class $\{\pm e_0\}$ gives the pair $(e_0,0)$ and the **degenerate decomposition**, whose corners are $\mathbb{B}$ and $0$ rather than four lines. A class $\{\tilde\Xi,-\tilde\Xi\}$ gives the pair $(\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi))$ of §*The Biquaternion Cases*, and the change $\hat u\mapsto-\hat u$ leaves the pair unchanged, two antipodal directions giving the same decomposition; the classes of the non-trivial Hermitian roots are therefore the points of the **real projective plane** of the directions, the same projective plane as the right lattice of §*The Complementary Pairs and the Peirce Decompositions*. So the Peirce decompositions of the block are one degenerate decomposition and a real projective plane of decompositions.
 
 **Remark (the contrast with the algebra, and why).** The parent's decompositions are as many as its roots of $+1$ modulo the sign, in three families: the trivial one, the purely imaginary one and a four-real-parameter one. Here the four-parameter family does not descend, because only the Hermitian roots carry idempotents, the idempotents of the block being exactly the Hermitian idempotents of the algebra: an oblique pair $(e,e_0-e)$ of §*The Complementary Pairs and the Peirce Decompositions*, whose idempotents are not Hermitian, still splits $\mathbb{B}$ and still carries the algebra's table, but it is not a pair of the multiplication and its class is not among the ones counted here. The count is the Peirce reading of the halving map of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*: the map takes the Hermitian roots onto the idempotents, and the idempotents index the decompositions of the block.
 
@@ -153,31 +153,31 @@ so $\mathbb{B}_{st}$ is the joint eigenspace of the operators of left and right 
 The four lines of the standard pair are written below by the symbol of their generating element,
 
 $$
-\tilde\Pi,\qquad \tilde\Upsilon_1,\qquad \tilde\Upsilon_2,\qquad \tilde\Pi^{\perp},
+\tilde\Pi,\qquad \hat\Upsilon_1,\qquad \hat\Upsilon_2,\qquad \tilde\Pi^{\perp},
 $$
 
 and each denotes its own complex line. On these four lines the multiplication is the multiplication of the matrix units at the model of §*The Biquaternion Cases*, $E_{ij}\star E_{kl}=E_{ij}E_{lk}=\delta_{jl}E_{ik}$, which is exactly the rule $\delta_{jl}\mathbb{B}_{ik}$.
 
 **Proposition (the table of the standard pair).** The products of the four lines are
 
-| $\star$ | $\tilde\Pi$ | $\tilde\Upsilon_1$ | $\tilde\Upsilon_2$ | $\tilde\Pi^{\perp}$ |
+| $\star$ | $\tilde\Pi$ | $\hat\Upsilon_1$ | $\hat\Upsilon_2$ | $\tilde\Pi^{\perp}$ |
 |---|---|---|---|---|
-| $\tilde\Pi$ | $\tilde\Pi$ | $0$ | $\tilde\Upsilon_1$ | $0$ |
-| $\tilde\Upsilon_1$ | $0$ | $\tilde\Pi$ | $0$ | $\tilde\Upsilon_1$ |
-| $\tilde\Upsilon_2$ | $\tilde\Upsilon_2$ | $0$ | $\tilde\Pi^{\perp}$ | $0$ |
-| $\tilde\Pi^{\perp}$ | $0$ | $\tilde\Upsilon_2$ | $0$ | $\tilde\Pi^{\perp}$ |
+| $\tilde\Pi$ | $\tilde\Pi$ | $0$ | $\hat\Upsilon_1$ | $0$ |
+| $\hat\Upsilon_1$ | $0$ | $\tilde\Pi$ | $0$ | $\hat\Upsilon_1$ |
+| $\hat\Upsilon_2$ | $\hat\Upsilon_2$ | $0$ | $\tilde\Pi^{\perp}$ | $0$ |
+| $\tilde\Pi^{\perp}$ | $0$ | $\hat\Upsilon_2$ | $0$ | $\tilde\Pi^{\perp}$ |
 
 each entry being the line named, and $0$ where the two second indices disagree.
 
-**Proof.** The rule $\delta_{jl}\mathbb{B}_{ik}$ is read on the four values of the pair of indices: the line $\mathbb{B}_{ij}$ has first index $i\in\{1,2\}$ and second index $j$, with $\mathbb{B}_{11}=\mathbb{C}\tilde\Pi$, $\mathbb{B}_{12}=\mathbb{C}\tilde\Upsilon_1$, $\mathbb{B}_{21}=\mathbb{C}\tilde\Upsilon_2$, $\mathbb{B}_{22}=\mathbb{C}\tilde\Pi^{\perp}$, and the product lies in $\mathbb{B}_{ik}$ when $j=l$ and vanishes otherwise. The matrix form is the same computation on the units, using $E_{ij}^{\dagger}=E_{ji}$ and $E_{ij}E_{kl}=\delta_{jk}E_{il}$.
+**Proof.** The rule $\delta_{jl}\mathbb{B}_{ik}$ is read on the four values of the pair of indices: the line $\mathbb{B}_{ij}$ has first index $i\in\{1,2\}$ and second index $j$, with $\mathbb{B}_{11}=\mathbb{C}\tilde\Pi$, $\mathbb{B}_{12}=\mathbb{C}\hat\Upsilon_1$, $\mathbb{B}_{21}=\mathbb{C}\hat\Upsilon_2$, $\mathbb{B}_{22}=\mathbb{C}\tilde\Pi^{\perp}$, and the product lies in $\mathbb{B}_{ik}$ when $j=l$ and vanishes otherwise. The matrix form is the same computation on the units, using $E_{ij}^{\dagger}=E_{ji}$ and $E_{ij}E_{kl}=\delta_{jk}E_{il}$.
 
-**Remark (against the algebra table).** On the same four lines the algebra table reads $\delta_{jk}\mathbb{B}_{il}$ and gives a different pattern, for instance $\tilde\Upsilon_1\tilde\Upsilon_2\subseteq\mathbb{C}\tilde\Pi$ and $\tilde\Upsilon_1\tilde\Upsilon_1=0$, whereas the multiplication gives $\tilde\Upsilon_1\star\tilde\Upsilon_2=0$ and $\tilde\Upsilon_1\star\tilde\Upsilon_1\subseteq\mathbb{C}\tilde\Pi$. The two mixed lines are the place where the two tables are most visibly exchanged, and this is the biquaternion instance of the observation of *Hermitian Idempotents and the Peirce Decomposition*, §*The Products of the Derived Table*, that the ordinary product of the two mixed spaces is the corner while the derived product vanishes.
+**Remark (against the algebra table).** On the same four lines the algebra table reads $\delta_{jk}\mathbb{B}_{il}$ and gives a different pattern, for instance $\hat\Upsilon_1\hat\Upsilon_2\subseteq\mathbb{C}\tilde\Pi$ and $\hat\Upsilon_1\hat\Upsilon_1=0$, whereas the multiplication gives $\hat\Upsilon_1\star\hat\Upsilon_2=0$ and $\hat\Upsilon_1\star\hat\Upsilon_1\subseteq\mathbb{C}\tilde\Pi$. The two mixed lines are the place where the two tables are most visibly exchanged, and this is the biquaternion instance of the observation of *Hermitian Idempotents and the Peirce Decomposition*, §*The Products of the Derived Table*, that the ordinary product of the two mixed spaces is the corner while the derived product vanishes.
 
 ### The Involution on the Peirce Spaces
 
 **Theorem (the exchange).** Let $\tilde\Pi$ be a projection. The involution exchanges the two indices of each Peirce space, $(\mathbb{B}_{ij})^{*}=\mathbb{B}_{ji}$; it fixes each diagonal corner and exchanges the two mixed lines, and in the standard pair it carries the first mixed line to the second and back.
 
-**Proof.** $(\tilde e_ia\tilde e_j)^{*}=\tilde e_j^{*}a^{*}\tilde e_i^{*}=\tilde e_ja^{*}\tilde e_i\in\mathbb{B}_{ji}$ because the two projections are Hermitian, and ${}^{*}$ is an involution, so the inclusion is an equality. The standard-pair statement is the definition $\tilde\Upsilon_2(\hat n)=\tilde\Upsilon_1(\hat n)^{*}$.
+**Proof.** $(\tilde e_ia\tilde e_j)^{*}=\tilde e_j^{*}a^{*}\tilde e_i^{*}=\tilde e_ja^{*}\tilde e_i\in\mathbb{B}_{ji}$ because the two projections are Hermitian, and ${}^{*}$ is an involution, so the inclusion is an equality. The standard-pair statement is the definition $\hat\Upsilon_2(\hat u)=\hat\Upsilon_1(\hat u)^{*}$.
 
 **Corollary (the table is transpose-Hermitian).** The involution acts on the block's product by reversing the two factors, $(\tilde X\star\tilde Y)^{*}=\tilde Y\star\tilde X$, an identity of *Introduction to the General Plain Sesqualgebra of Biquaternions*. So the entry $\mathbb{B}_{ij}\star\mathbb{B}_{jl}\subseteq\mathbb{B}_{il}$ is carried to $\mathbb{B}_{lj}\star\mathbb{B}_{ji}\subseteq\mathbb{B}_{li}$, and on the standard pair, where the involution fixes the two corners and exchanges the two mixed lines, the conjugate of the entry in the row $\tilde A$ and the column $\tilde B$ is the entry in the row $\tilde B$ and the column $\tilde A$. The table is therefore **transpose-Hermitian**, and the display above is invariant under the transposition of its rows and columns combined with the exchange of the labels of the two mixed lines.
 
@@ -212,10 +212,10 @@ $$
 **Theorem.** Let $\tilde\Pi$ be a projection with complement $\tilde\Pi^{\perp}$. Then
 
 $$
-\mathbb{A}_{11}=\mathbb{R}\,\tilde\Pi,\qquad \mathbb{A}_{00}=\mathbb{C}\tilde\Upsilon_1\oplus\mathbb{C}\tilde\Pi^{\perp},\qquad \mathbb{A}_{10}=\mathbb{A}_{01}=\{0\},
+\mathbb{A}_{11}=\mathbb{R}\,\tilde\Pi,\qquad \mathbb{A}_{00}=\mathbb{C}\hat\Upsilon_1\oplus\mathbb{C}\tilde\Pi^{\perp},\qquad \mathbb{A}_{10}=\mathbb{A}_{01}=\{0\},
 $$
 
-in the notation of the four lines; the four pieces span a real subspace of dimension five and do not decompose $\mathbb{B}$; and every nonzero element of the second mixed line $\mathbb{C}\tilde\Upsilon_2$ lies in none of the four.
+in the notation of the four lines; the four pieces span a real subspace of dimension five and do not decompose $\mathbb{B}$; and every nonzero element of the second mixed line $\mathbb{C}\hat\Upsilon_2$ lies in none of the four.
 
 **Proof.** Work at the standard pair in the matrix model, so that $\tilde\Pi=E_{11}$ and the multiplication is $\tilde X\mapsto E_{11}\tilde X^{\dagger}$. The condition $\tilde X\star\tilde\Pi=\tilde X$ reads $\tilde XE_{11}=\tilde X$, that is, $\tilde X$ is supported in the first line of columns, $\tilde X=\bigl(\begin{smallmatrix}a&0\\ b&0\end{smallmatrix}\bigr)$, and the condition $\tilde\Pi\star\tilde X=\tilde X$ reads $E_{11}\tilde X^{\dagger}=\tilde X$, that is, $\bigl(\begin{smallmatrix}\overline a&\overline b\\ 0&0\end{smallmatrix}\bigr)=\bigl(\begin{smallmatrix}a&0\\ b&0\end{smallmatrix}\bigr)$, which forces $b=0$ and $a$ real; hence $\mathbb{A}_{11}=\mathbb{R}E_{11}$. The condition $\tilde X\star\tilde\Pi=0$ reads $\tilde XE_{11}=0$, that is, $\tilde X=\bigl(\begin{smallmatrix}0&a\\ 0&b\end{smallmatrix}\bigr)$, the matrices with vanishing first column, and for such a matrix the product $E_{11}\tilde X^{\dagger}$ has vanishing second column, so it vanishes identically; hence $\mathbb{A}_{00}$ is that whole space, $\mathbb{C}E_{12}\oplus\mathbb{C}E_{22}$. Each of the two remaining pieces asks one of the products to vanish and the other to reproduce the element, which the two displays show to be impossible away from zero, so both are $\{0\}$. The mixed element $E_{21}$ has $E_{11}\star E_{21}=E_{11}E_{12}=E_{12}$, which is neither $0$ nor $E_{21}$, so it satisfies none of the four conditions; and the span of $\mathbb{R}E_{11}$, $\mathbb{C}E_{12}$, $\mathbb{C}E_{22}$ has real dimension $1+2+2=5$, less than $\dim_{\mathbb{R}}\mathbb{B}=8$, an element of $\mathbb{C}E_{21}$ completing it, so the pieces do not decompose.
 
@@ -333,7 +333,7 @@ The claims of the article were recomputed on the matrix model $\mathsf{M}_2$ at 
 - **The two tables.** For the standard pair the sixteen inclusions $\mathbb{B}_{ij}\star\mathbb{B}_{kl}\subseteq\delta_{jl}\mathbb{B}_{ik}$ were checked on the four lines with residual zero, and the entry $\mathbb{B}_{12}\star\mathbb{B}_{21}$ vanishes identically against $\mathbb{B}_{12}\mathbb{B}_{21}=\mathbb{B}_{11}$ for the algebra; the algebra inclusions $\mathbb{B}_{ij}\mathbb{B}_{kl}\subseteq\delta_{jk}\mathbb{B}_{il}$ were checked at the same time.
 - **The Peirce splitting.** For a hundred random elements the four-fold sum $\tilde\Pi\tilde X\tilde\Pi+\tilde\Pi\tilde X\tilde\Pi^{\perp}+\tilde\Pi^{\perp}\tilde X\tilde\Pi+\tilde\Pi^{\perp}\tilde X\tilde\Pi^{\perp}$ reproduces $\tilde X$ with zero residual, and each summand lies in the line named.
 - **The exchange.** The involution carries each mixed line to the other on a hundred elements and fixes each diagonal corner.
-- **The $\star$-Peirce pieces.** At the standard pair, $\mathbb{R}\tilde\Pi$ satisfies the four conditions of $\mathbb{A}_{11}$ on a hundred real samples while $i\tilde\Pi$ fails them; $\tilde\Pi^{\perp}$, $\tilde\Upsilon_1$ and $i\tilde\Upsilon_1$ lie in $\mathbb{A}_{00}$; $\tilde\Upsilon_2$ lies in none of the four; and the four pieces span real dimension five.
+- **The $\star$-Peirce pieces.** At the standard pair, $\mathbb{R}\tilde\Pi$ satisfies the four conditions of $\mathbb{A}_{11}$ on a hundred real samples while $i\tilde\Pi$ fails them; $\tilde\Pi^{\perp}$, $\hat\Upsilon_1$ and $i\hat\Upsilon_1$ lie in $\mathbb{A}_{00}$; $\hat\Upsilon_2$ lies in none of the four; and the four pieces span real dimension five.
 - **The corners and the mixed squares.** The closures $\mathbb{B}_{11}\star\mathbb{B}_{11}\subseteq\mathbb{B}_{11}$ and $\mathbb{B}_{22}\star\mathbb{B}_{22}\subseteq\mathbb{B}_{22}$, the annihilation $\mathbb{B}_{12}\star\mathbb{B}_{21}=0=\mathbb{B}_{21}\star\mathbb{B}_{12}$, and the off-diagonal squares $\mathbb{B}_{12}\star\mathbb{B}_{12}=\mathbb{B}_{11}$, $\mathbb{B}_{21}\star\mathbb{B}_{21}=\mathbb{B}_{22}$ were each verified with zero residual, and the corner product $\lambda\tilde\Pi\star\mu\tilde\Pi=\lambda\overline\mu\tilde\Pi$ was checked on a hundred pairs of complex scalars.
 - **The right ideals and their complements.** For the pairs of forms $(1,0),(0,1)$, $(1,0),(1,1)$ and $(1,2),(3,1)$ the intersection $R_w\cap R_{w'}$ was found of complex dimension zero and the sum of dimension four; the idempotent $\tilde e_{w,w'}$ was idempotent with $\tilde e+\tilde e^{\perp}=\mathrm{I}_2$, $\tilde e\mathbb{B}=R_w$ and $\tilde e^{\perp}\mathbb{B}=R_{w'}$ on a hundred samples each; and it was Hermitian exactly for the orthogonal pair $(1,0),(0,1)$, the oblique pairs giving non-Hermitian idempotents.
 - **The two tables on the pairs.** On the Hermitian pair the transposed sesquilinear inclusions hold on the four lines with zero residual, while on the oblique pair the mixed products violate them on every sample whereas the algebra inclusions hold for both pairs.
@@ -361,7 +361,7 @@ The proper right $\star$-ideals are the sets $R_w=\{\tilde X:w\tilde X=0\}$, one
 | $\mathbb{B}_{ij}=\tilde e_i\mathbb{B}\tilde e_j$ | the four Peirce spaces of the complementary pair |
 | $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$, $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the pair of a Hermitian root of $+1$ and the corners it indexes, $s,t\in\{+,-\}$ |
 | $\mathbb{B}\tilde\Pi$, $\tilde\Pi\mathbb{B}$ | the minimal left and right ideals of the algebra; the right one is a right $\star$-ideal, the left one is not a left $\star$-ideal |
-| $\mathbb{C}\tilde\Upsilon_1$, $\mathbb{C}\tilde\Upsilon_2$ | the two mixed Peirce lines, mutually conjugate |
+| $\mathbb{C}\hat\Upsilon_1$, $\mathbb{C}\hat\Upsilon_2$ | the two mixed Peirce lines, mutually conjugate |
 | $\mathbb{A}_{ij}$ | the four $\star$-Peirce pieces of the two-sided conditions |
 | $R_w=\{\tilde X:w\tilde X=0\}$ | the proper right $\star$-ideals, one for each point of the projective line; $R_w=\tilde\Pi\mathbb{B}$ |
 | $\tilde e_{w,w'}=uw'/(w'u)$ | the idempotent of an ordered pair of distinct right ideals, Hermitian exactly when $w\perp w'$ |

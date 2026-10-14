@@ -34,7 +34,7 @@ The vanishing of the operator is the two-sided condition $S_{a,b} = 0 \iff aAb =
 
 ### The generated operators
 
-The unsigned sandwiches are exactly the products of one left and one right multiplication, and the composition law $S_{a,b}S_{c,d} = S_{ac,db}$ exhibits them as a monoid isomorphic to $A \times A^{\mathrm{op}}$ acting on $A$.
+The unsigned sandwiches are exactly the products of one left and one right multiplication, and the composition law $S_{a,b}S_{c,d} = S_{ac,db}$ exhibits them as a monoid isomorphic to $A \times A^{\mathrm{opp}}$ acting on $A$.
 
 **Proposition.** The sandwiches form a submonoid of $\operatorname{End}(A)$ under composition, with identity $S_{1,1} = \mathrm{id}$, and $S_{a,b}$ is invertible exactly when $a$ and $b$ are units, in which case
 

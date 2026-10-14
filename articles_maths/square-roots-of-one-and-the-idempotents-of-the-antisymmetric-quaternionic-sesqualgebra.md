@@ -134,7 +134,7 @@ The idempotent sets of the four general products are known and are recorded in t
 |---|---|---|
 | $\tilde P\tilde Q$ | the plain family $\tfrac12(e_0+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ | *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 | $\tilde P^{\natural}\tilde Q$ | none beyond the trivial ones | the same |
-| $\tilde P\tilde Q^{*}$ | the Hermitian family $\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\hat n$ | the same |
+| $\tilde P\tilde Q^{*}$ | the Hermitian family $\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\hat u$ | the same |
 | $\tilde P^{\natural}\tilde Q^{*}$ | the family $-\tfrac12e_0+\vec n$ over the real vectors $\vec n$ with $(\vec n,\vec n)=\tfrac34$ | the same |
 | the block $\vec P\times\overline{\vec Q}$ | the origin alone | above |
 

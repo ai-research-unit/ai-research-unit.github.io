@@ -108,9 +108,9 @@ $$
 (A B)^{\mathsf{T}} = B^{\mathsf{T}} A^{\mathsf{T}} , \qquad (\mathrm{id}_V)^{\mathsf{T}} = \mathrm{id}_V , \qquad (A + \lambda B)^{\mathsf{T}} = A^{\mathsf{T}} + \lambda B^{\mathsf{T}} .
 $$
 
-Under the identification of $E$ with $\operatorname{End}_F(V^{*})$ it is an isomorphism $E \to E^{\mathrm{op}}$, whence $E \cong E^{\mathrm{op}}$ as $F$-algebras.
+Under the identification of $E$ with $\operatorname{End}_F(V^{*})$ it is an isomorphism $E \to E^{\mathrm{opp}}$, whence $E \cong E^{\mathrm{opp}}$ as $F$-algebras.
 
-**Proof.** The identifications are those of the double-dual corollary, applied to $W=V$; the laws are the elementary laws applied to composites of endomorphisms, the associativity of composition giving the reversal. That $E \cong E^{\mathrm{op}}$ follows by composing the anti-isomorphism with the identity of the underlying linear space, which is an isomorphism $E^{\mathrm{op}} \to E$ of algebras; this discharges the deferred statement of *Endomorphisms of a Linear Space*.
+**Proof.** The identifications are those of the double-dual corollary, applied to $W=V$; the laws are the elementary laws applied to composites of endomorphisms, the associativity of composition giving the reversal. That $E \cong E^{\mathrm{opp}}$ follows by composing the anti-isomorphism with the identity of the underlying linear space, which is an isomorphism $E^{\mathrm{opp}} \to E$ of algebras; this discharges the deferred statement of *Endomorphisms of a Linear Space*.
 
 **Corollary.** The transpose of a matrix is an anti-automorphism of $M_n(F)$; the transpose of an endomorphism has the same rank, trace and determinant, and the same characteristic polynomial, so the transposition acts as the identity on the spectrum of an endomorphism.
 
@@ -145,7 +145,7 @@ The transpose of a linear map $T : V \to W$ is the linear map $T^{\mathsf{T}} : 
 | $T^{\mathsf{TT}}$ | the double transpose, equal to $T$ under $\mathrm{ev}$ |
 | $A^{\mathsf{T}}$ | the transpose of a matrix |
 | $E = \operatorname{End}_F(V)$ | the endomorphism algebra |
-| $E^{\mathrm{op}}$ | the opposite algebra, reached by the transpose anti-isomorphism |
+| $E^{\mathrm{opp}}$ | the opposite algebra, reached by the transpose anti-isomorphism |
 
 ## Further Reading
 

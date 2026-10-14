@@ -174,22 +174,22 @@ The comparison of the two measures is meaningful only in a stated normalization,
 
 ### The Measurement Family
 
-A complementary family is obtained by fixing a measurement axis $\hat n$ and varying the state along an arbitrary path $\vec r(\theta)$. The outcome distribution is
+A complementary family is obtained by fixing a measurement axis $\hat u$ and varying the state along an arbitrary path $\vec r(\theta)$. The outcome distribution is
 
 $$
-p_\pm(\theta) = \tfrac{1}{2}\left(1 \pm \hat n\cdot\vec r(\theta)\right),
+p_\pm(\theta) = \tfrac{1}{2}\left(1 \pm \hat u\cdot\vec r(\theta)\right),
 $$
 
 and the chain rule gives
 
 $$
 F(\theta) = \sum_\pm \frac{\left(\partial_\theta p_\pm\right)^2}{p_\pm}
-= \frac{\left(\hat n\cdot\dot{\vec r}\right)^2}{1-\left(\hat n\cdot\vec r\right)^2} ,
+= \frac{\left(\hat u\cdot\dot{\vec r}\right)^2}{1-\left(\hat u\cdot\vec r\right)^2} ,
 $$
 
-which is the general classical Fisher information of a binary measurement on a qubit state. Two specialisations are worth recording. If the path is radial and the measurement is along the state, so that $\hat n = \hat r$, the result reduces to $F = \dot{r}^2/(1-r^2)$, whose metric coefficient is the rank-one result above. If the measurement axis is orthogonal to the state and to its velocity, the information vanishes: the outcome distribution is uniform, and no parameter can be read from it.
+which is the general classical Fisher information of a binary measurement on a qubit state. Two specialisations are worth recording. If the path is radial and the measurement is along the state, so that $\hat u = \hat r$, the result reduces to $F = \dot{r}^2/(1-r^2)$, whose metric coefficient is the rank-one result above. If the measurement axis is orthogonal to the state and to its velocity, the information vanishes: the outcome distribution is uniform, and no parameter can be read from it.
 
-The measurement family also makes the divergence at the boundary transparent. As $\hat n\cdot\vec r\to\pm1$ the outcome distribution becomes deterministic, and the information diverges whenever the parameter keeps moving the outcome probabilities, $\partial_\theta(\hat n\cdot\vec r)\neq0$; a state at the boundary of the ball is a pure state, a zero divisor, and the corresponding classical distribution has one outcome of probability one. A deterministic distribution distinguishes a parameter by its vanishing probability of the other outcome, and that is a signal of unbounded precision per sample. The qualification is not idle. A path that arrives at the boundary tangentially in the direction of the measurement axis, so that $\partial_\theta(\hat n\cdot\vec r)\to0$ at the same rate as $1-(\hat n\cdot\vec r)^2\to0$, keeps the information finite there: on the interior path $\vec r(\theta) = (1-\theta^2)(\cos\theta\,e_1 + \sin\theta\,e_2)$ read along $\hat n = e_1$ one has $\hat n\cdot\vec r = (1-\theta^2)\cos\theta$, and the information tends to $3$ as $\theta\to0$ even though the state tends to a pure state.
+The measurement family also makes the divergence at the boundary transparent. As $\hat u\cdot\vec r\to\pm1$ the outcome distribution becomes deterministic, and the information diverges whenever the parameter keeps moving the outcome probabilities, $\partial_\theta(\hat u\cdot\vec r)\neq0$; a state at the boundary of the ball is a pure state, a zero divisor, and the corresponding classical distribution has one outcome of probability one. A deterministic distribution distinguishes a parameter by its vanishing probability of the other outcome, and that is a signal of unbounded precision per sample. The qualification is not idle. A path that arrives at the boundary tangentially in the direction of the measurement axis, so that $\partial_\theta(\hat u\cdot\vec r)\to0$ at the same rate as $1-(\hat u\cdot\vec r)^2\to0$, keeps the information finite there: on the interior path $\vec r(\theta) = (1-\theta^2)(\cos\theta\,e_1 + \sin\theta\,e_2)$ read along $\hat u = e_1$ one has $\hat u\cdot\vec r = (1-\theta^2)\cos\theta$, and the information tends to $3$ as $\theta\to0$ even though the state tends to a pure state.
 
 ## The Reciprocity and Its Meaning
 
@@ -296,7 +296,7 @@ g_{ij} = \frac{\hat{r}_i\hat{r}_j}{1-|\vec r|^2}
 = \frac{\hat{r}_i\hat{r}_j}{4\,\mathrm{Sc}\,N(\tilde{\rho})},
 $$
 
-whose single nonzero eigenvalue is the reciprocity above. For a measurement along a fixed axis $\hat n$ and a family $\vec r(\theta)$, the classical information is $F(\theta) = (\hat n\cdot\dot{\vec r})^2/(1-(\hat n\cdot\vec r)^2)$.
+whose single nonzero eigenvalue is the reciprocity above. For a measurement along a fixed axis $\hat u$ and a family $\vec r(\theta)$, the classical information is $F(\theta) = (\hat u\cdot\dot{\vec r})^2/(1-(\hat u\cdot\vec r)^2)$.
 
 The reciprocity is the sector's version of the identification of information with geometry. The biquaternion norm is maximal at the maximally mixed state, where the Fisher information is minimal, and it vanishes on the zero-divisor cone, where the Fisher information diverges; the entropy of the companion article *Coarse-Graining and the Biquaternion Entropy Functional* is a third monotone interpretation of the same invariant. The Fisher information is also the Hessian of the relative entropy, $g_{ij} = \partial_i\partial_j D(\tilde{\rho}(\vec\theta)\|\tilde{\rho}(\vec\theta_0))$, so the biquaternion norm and the curvature of the divergence are inverses. The Fisher–Rao distance from the maximally mixed state to the pure sphere is $\pi/2$, finite even though the information diverges at the boundary.
 
@@ -323,7 +323,7 @@ The classical metric is the radial shadow of the full quantum Fisher information
 | $g_{ij}(\vec\theta)$ | Fisher information matrix (metric) |
 | $F_r = 1/(1-|\vec r|^2) = 1/(4\,\mathrm{Sc}\,N(\tilde{\rho}))$ | Reciprocity of Fisher information and biquaternion norm |
 | $g_{ij} = \hat{r}_i\hat{r}_j/(1-|\vec r|^2)$ | Rank-one information metric of the spectral family |
-| $F(\theta) = (\hat n\cdot\dot{\vec r})^2/(1-(\hat n\cdot\vec r)^2)$ | Measurement-family information |
+| $F(\theta) = (\hat u\cdot\dot{\vec r})^2/(1-(\hat u\cdot\vec r)^2)$ | Measurement-family information |
 | $D(\tilde{\rho}\|\tilde{\sigma}) = 2\,\mathrm{Sc}(\tilde{\rho}(\log\tilde{\rho}-\log\tilde{\sigma}))$ | Relative entropy |
 | $g_{ij} = \partial_i\partial_j D$ | Fisher information as the Hessian of the relative entropy |
 | $d_{\rm FR}(r) = \arcsin r$ | Fisher–Rao distance from the maximally mixed state |

@@ -78,7 +78,7 @@ $$
 \tilde S^2=\tfrac{3\hbar^2}{4}e_0 ,
 $$
 
-the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\hat n)=\tfrac12(e_0\pm i\hat n)$, on which $\hat n_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.
+the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\hat u)=\tfrac12(e_0\pm i\hat u)$, on which $\hat u_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.
 
 The material point for what follows is that the fundamental module of $\mathbb{B}$ is two-dimensional, so the operators above are the only spin operators the algebra carries internally. Composite angular momenta require more than one factor of the algebra.
 
@@ -128,8 +128,8 @@ $$
 so that $\mathrm{Tr}(e_0\otimes e_0)=4$. A product state is represented by the idempotent
 
 $$
-P_{\hat m}\otimes P_{\hat n}
-=\tfrac14\left(e_0\otimes e_0+i\hat m_ke_k\otimes e_0+i e_0\otimes\hat n_le_l-\hat m_k\hat n_l\,e_k\otimes e_l\right),
+P_{\hat m}\otimes P_{\hat u}
+=\tfrac14\left(e_0\otimes e_0+i\hat m_ke_k\otimes e_0+i e_0\otimes\hat u_le_l-\hat m_k\hat u_l\,e_k\otimes e_l\right),
 $$
 
 which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $\tilde\Pi(\pm\hat z)\otimes \tilde\Pi(\pm\hat z)$.

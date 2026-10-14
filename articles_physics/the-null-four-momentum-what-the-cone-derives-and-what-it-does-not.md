@@ -147,12 +147,12 @@ A separate input, often blurred with masslessness, is the transversality of the 
 
 ### The null momentum is an idempotent multiple
 
-The null element has a second face, and it is the one that connects the material and informational sectors. For a null four-momentum $\tilde{P}=i(E/c)e_0+\vec p$ with $\hat n=\vec p/|\vec p|$,
+The null element has a second face, and it is the one that connects the material and informational sectors. For a null four-momentum $\tilde{P}=i(E/c)e_0+\vec p$ with $\hat u=\vec p/|\vec p|$,
 
 $$
-\tilde{P} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\hat n),
+\tilde{P} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\hat u),
 \qquad
-\tilde\Pi(\hat\mu) \;=\; \tfrac{1}{2}\left(e_0 + i\hat\mu\right),
+\tilde\Pi(\hat u) \;=\; \tfrac{1}{2}\left(e_0 + i\hat u\right),
 $$
 
 an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a **rank-one projector**.
@@ -221,8 +221,8 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 | $\tilde{K}=i\frac{\omega}{c}e_0+\vec k$ | Four-wavevector; $N(\tilde{K})=0\Leftrightarrow\omega=c\lvert\vec k\rvert$ |
 | $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation; $N$ invariant, so the cone and $c$ are frame-independent |
-| $\tilde\Pi(\hat\mu)=\tfrac{1}{2}(e_0+i\hat\mu)$ | Idempotent of $\mathbb{M}_+$; $\tilde\Pi^2=\tilde\Pi$, $N(\tilde\Pi)=0$ |
-| $\tilde{P}=2i\frac{E}{c}\tilde\Pi(-\hat n)$, $\hat n=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled projector |
+| $\tilde\Pi(\hat u)=\tfrac{1}{2}(e_0+i\hat u)$ | Idempotent of $\mathbb{M}_+$; $\tilde\Pi^2=\tilde\Pi$, $N(\tilde\Pi)=0$ |
+| $\tilde{P}=2i\frac{E}{c}\tilde\Pi(-\hat u)$, $\hat u=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled projector |
 | $N(\lambda\tilde{Q})=\lambda^2N(\tilde{Q})$ | Homogeneity; the cone is scale-invariant, so no mass scale is native |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathcal{Z}=\{\tilde{Q}\neq0 : N(\tilde{Q})=0\}$ | Zero-divisor set |

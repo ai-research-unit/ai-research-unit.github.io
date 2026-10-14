@@ -282,7 +282,7 @@ isomorphic to $\mathbb{R}^{3}$ with the cross product; it is the Lie algebra of 
 
 The operators act on the state side, and there the block's value is the coherence of a state.
 
-**The state space.** The state side is the **Hermitian subspace** $\mathbb{M}_{+}$, whose generic element is $\tilde\rho=\tfrac12(e_0+i\vec r)$ with $\vec r$ real, of $H(\tilde\rho,\tilde\rho)=\tfrac14(1+\lvert\vec r\rvert^{2})$, on the trace-one slice the **Bloch ball**; its pure elements are the idempotents $\tilde\Pi_{\pm}(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$, the states of *The Bloch Ball as the Trace-One Slice of the Future Light Cone* and *Mass, Rank and the Positivity of the Dagger*. The spinor module on which the algebra acts is $S=\mathbb{B}\tilde\Pi_+$, *The Spinor Space as a Module and as a Hilbert Space*.
+**The state space.** The state side is the **Hermitian subspace** $\mathbb{M}_{+}$, whose generic element is $\tilde\rho=\tfrac12(e_0+i\vec r)$ with $\vec r$ real, of $H(\tilde\rho,\tilde\rho)=\tfrac14(1+\lvert\vec r\rvert^{2})$, on the trace-one slice the **Bloch ball**; its pure elements are the idempotents $\tilde\Pi_{\pm}(\hat u)=\tfrac12(e_0\pm i\hat u)$, the states of *The Bloch Ball as the Trace-One Slice of the Future Light Cone* and *Mass, Rank and the Positivity of the Dagger*. The spinor module on which the algebra acts is $S=\mathbb{B}\tilde\Pi_+$, *The Spinor Space as a Module and as a Hilbert Space*.
 
 **Proposition (the algebraic norm is the Bloch vector).** For a state $\tilde\rho=\tfrac12(e_0+i\vec r)$ on the state side, $\tilde\rho^{*}=\tilde\rho$, and the block's value at the two equal arguments is
 $$

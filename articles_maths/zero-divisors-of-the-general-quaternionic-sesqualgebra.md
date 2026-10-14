@@ -214,7 +214,7 @@ $\tilde Q\star\tilde Q = 0$ is a zero divisor of $\star$, and the square-zero el
 proper subfamily of the zero-divisor set, of real dimension four, lying in the non-pure family.
 
 **Proof.** If $\tilde Q\star\tilde Q = 0$ then $\tilde Q$ is a zero divisor with
-$\tilde R = \tilde Q$. The identification with the family $c(\hat n + i)$, its dimension and its
+$\tilde R = \tilde Q$. The identification with the family $c(\hat u + i)$, its dimension and its
 non-purity are *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 **Corollary (the contrast with the plain product).** In the plain algebra the square-zero elements
@@ -267,7 +267,7 @@ and the element $e_0 + ie_1$ is a non-pure zero divisor whose square vanishes.
 - *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the definition of the zero divisor relative to a product and the two-sided reading.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion of the plain product, the two families and the element theory of the cone.
 - *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the theorem that the four general products have one zero-divisor set, which this article quotes.
-- *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the square-zero family $c(\hat n+i)$, its real dimension and its non-purity.
+- *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the square-zero family $c(\hat u+i)$, its real dimension and its non-purity.
 - *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, its table and its axioms.
 - *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$ used in the examples.
 - *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the position of the cone in the remarkable subspaces.

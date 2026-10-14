@@ -21,7 +21,7 @@ Of the twelve structures the complex space carries, the plain product $\tilde P\
 Let
 
 $$
-\tilde\Pi_+=\tfrac12(e_0+ie_3),\qquad \tilde\Pi_-=\tfrac12(e_0-ie_3),\qquad \tilde\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \tilde\Upsilon_2=\tfrac12(ie_1+e_2).
+\tilde\Pi_+=\tfrac12(e_0+ie_3),\qquad \tilde\Pi_-=\tfrac12(e_0-ie_3),\qquad \hat\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \hat\Upsilon_2=\tfrac12(ie_1+e_2).
 $$
 
 Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
@@ -35,21 +35,21 @@ $$
 and each generates a minimal left ideal. The spinor space is the first of them,
 
 $$
-S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\},
+S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\},
 $$
 
-of complex dimension two, the defining module of $\mathbb{B}$. The four elements $\tilde\Pi_+,\tilde\Upsilon_2,\tilde\Upsilon_1,\tilde\Pi_-$ are a $\mathbb{C}$-basis of $\mathbb{B}$ whose products are the matrix units $E_{11},E_{21},E_{12},E_{22}$ of the matrix model $\mathsf{M}_2$:
+of complex dimension two, the defining module of $\mathbb{B}$. The four elements $\tilde\Pi_+,\hat\Upsilon_2,\hat\Upsilon_1,\tilde\Pi_-$ are a $\mathbb{C}$-basis of $\mathbb{B}$ whose products are the matrix units $E_{11},E_{21},E_{12},E_{22}$ of the matrix model $\mathsf{M}_2$:
 
-| $\cdot$ | $\tilde\Pi_+$ | $\tilde\Pi_-$ | $\tilde\Upsilon_1$ | $\tilde\Upsilon_2$ |
+| $\cdot$ | $\tilde\Pi_+$ | $\tilde\Pi_-$ | $\hat\Upsilon_1$ | $\hat\Upsilon_2$ |
 |---|---|---|---|---|
-| $\tilde\Pi_+$ | $\tilde\Pi_+$ | $0$ | $\tilde\Upsilon_1$ | $0$ |
-| $\tilde\Pi_-$ | $0$ | $\tilde\Pi_-$ | $0$ | $\tilde\Upsilon_2$ |
-| $\tilde\Upsilon_1$ | $0$ | $\tilde\Upsilon_1$ | $0$ | $\tilde\Pi_+$ |
-| $\tilde\Upsilon_2$ | $\tilde\Upsilon_2$ | $0$ | $\tilde\Pi_-$ | $0$ |
+| $\tilde\Pi_+$ | $\tilde\Pi_+$ | $0$ | $\hat\Upsilon_1$ | $0$ |
+| $\tilde\Pi_-$ | $0$ | $\tilde\Pi_-$ | $0$ | $\hat\Upsilon_2$ |
+| $\hat\Upsilon_1$ | $0$ | $\hat\Upsilon_1$ | $0$ | $\tilde\Pi_+$ |
+| $\hat\Upsilon_2$ | $\hat\Upsilon_2$ | $0$ | $\tilde\Pi_-$ | $0$ |
 
 ### Why the Basis Is One Idempotent and One Nilpotent
 
-The basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ of $S$ is not a choice. Because $\tilde\Pi_++\tilde\Pi_-=e_0$, every element of the left ideal expands as
+The basis $(\tilde\Pi_+,\hat\Upsilon_2)$ of $S$ is not a choice. Because $\tilde\Pi_++\tilde\Pi_-=e_0$, every element of the left ideal expands as
 
 $$
 \mathbb{B}\tilde\Pi_+=(\tilde\Pi_++\tilde\Pi_-)\mathbb{B}\tilde\Pi_+=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+,
@@ -58,10 +58,10 @@ $$
 the sum of the $(1,1)$ corner and the $(2,1)$ corner of the Peirce decomposition of $\mathbb{B}$. In the matrix model of a central simple algebra of rank two each corner is one-dimensional over $\mathbb{C}$, so the ideal, of complex dimension two, holds exactly one basis element per corner:
 
 $$
-\tilde\Pi_+\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+,\qquad \tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Upsilon_2 .
+\tilde\Pi_+\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+,\qquad \tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\hat\Upsilon_2 .
 $$
 
-The **diagonal** corner contains the idempotent $\tilde\Pi_+$, the identity of that corner; the **off-diagonal** corner contains $\tilde\Upsilon_2$, which is square-zero. The nilpotency is not particular to $\tilde\Upsilon_2$: for orthogonal idempotents $e,f$, every element $x=fae$ of an off-diagonal corner satisfies
+The **diagonal** corner contains the idempotent $\tilde\Pi_+$, the identity of that corner; the **off-diagonal** corner contains $\hat\Upsilon_2$, which is square-zero. The nilpotency is not particular to $\hat\Upsilon_2$: for orthogonal idempotents $e,f$, every element $x=fae$ of an off-diagonal corner satisfies
 
 $$
 x^2=(fae)(fae)=fa(ef)ae=0,
@@ -73,19 +73,19 @@ so **every** off-diagonal corner consists of square-zero elements, and the off-d
 
 ### The Left Action
 
-The plain product makes $S$ a left $\mathbb{B}$-module: for $\tilde Q\in\mathbb{B}$ and $\tilde\psi\in S$ the product $\tilde Q\tilde\psi$ lies again in $S$, and the action is compatible with the product, $\tilde Q(\tilde R\tilde\psi)=(\tilde Q\tilde R)\tilde\psi$. On the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ the left multiplications by the four basis elements are
+The plain product makes $S$ a left $\mathbb{B}$-module: for $\tilde Q\in\mathbb{B}$ and $\tilde\psi\in S$ the product $\tilde Q\tilde\psi$ lies again in $S$, and the action is compatible with the product, $\tilde Q(\tilde R\tilde\psi)=(\tilde Q\tilde R)\tilde\psi$. On the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ the left multiplications by the four basis elements are
 
 $$
 L_{\tilde\Pi_+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
 L_{\tilde\Pi_-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
-L_{\tilde\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
-L_{\tilde\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
+L_{\hat\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+L_{\hat\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
 $$
 
 These are the matrices of the matrix model $\mathsf{M}_2$ with $\mathsf{M}_2(e_k)=-i\sigma_k$, so the module is literally the column space $\mathbb{C}^2$ on which the algebra acts by matrix multiplication. The coordinate map
 
 $$
-\tilde\psi=\psi_1\tilde\Pi_++\psi_2\tilde\Upsilon_2\ \longleftrightarrow\ \begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}
+\tilde\psi=\psi_1\tilde\Pi_++\psi_2\hat\Upsilon_2\ \longleftrightarrow\ \begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}
 $$
 
 is an isomorphism of left $\mathbb{B}$-modules, because the product distributes over the two basis elements and the left multiplication is $\mathbb{C}$-linear.
@@ -147,20 +147,20 @@ $$
 
 symmetric, $\mathbb{C}$-bilinear and non-degenerate on $\mathbb{B}$; on the real space it is indefinite of signature $(4,4)$, positive definite on the informational sector $\mathbb{M}_+$ and negative definite on the material sector $\mathbb{M}_-$. It is the form of the GPA band (*The General Plain Bilinear Product on the Biquaternion Space*), and it is not the metric: it carries the sector sign and no positivity off the sectors.
 
-Restricted to the carrier it degenerates. On the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ its Gram matrix is
+Restricted to the carrier it degenerates. On the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ its Gram matrix is
 
 $$
-B_S=\begin{pmatrix}B(\tilde\Pi_+,\tilde\Pi_+)&B(\tilde\Pi_+,\tilde\Upsilon_2)\\[2pt]B(\tilde\Upsilon_2,\tilde\Pi_+)&B(\tilde\Upsilon_2,\tilde\Upsilon_2)\end{pmatrix}
+B_S=\begin{pmatrix}B(\tilde\Pi_+,\tilde\Pi_+)&B(\tilde\Pi_+,\hat\Upsilon_2)\\[2pt]B(\hat\Upsilon_2,\tilde\Pi_+)&B(\hat\Upsilon_2,\hat\Upsilon_2)\end{pmatrix}
 =\begin{pmatrix}\tfrac12&0\\[2pt]0&0\end{pmatrix},
 $$
 
 of rank one, with radical
 
 $$
-\operatorname{rad}B_S=\mathbb{C}\tilde\Upsilon_2 .
+\operatorname{rad}B_S=\mathbb{C}\hat\Upsilon_2 .
 $$
 
-The nilpotent is invisible to $B$. It has zero scalar part and squares to zero, so $\tilde\Upsilon_2$ is orthogonal to both basis spinors, $B(\tilde\Upsilon_2,\tilde\Pi_+)=\operatorname{Sc}(\tilde\Upsilon_2)=0$ and $B(\tilde\Upsilon_2,\tilde\Upsilon_2)=\operatorname{Sc}(\tilde\Upsilon_2^2)=0$, hence to every element of $S$. The algebra's own form therefore cannot separate the two basis spinors and cannot produce a norm on the carrier. Positivity is not a property of the plain product at all; it needs the second slot read through the Hermitian conjugation ${}^{*}$, which is the structure of the sibling article. This is the sharpest way to see that the module structure and the metric are two structures and not two views of one object: the form the module's own product carries is degenerate on the module.
+The nilpotent is invisible to $B$. It has zero scalar part and squares to zero, so $\hat\Upsilon_2$ is orthogonal to both basis spinors, $B(\hat\Upsilon_2,\tilde\Pi_+)=\operatorname{Sc}(\hat\Upsilon_2)=0$ and $B(\hat\Upsilon_2,\hat\Upsilon_2)=\operatorname{Sc}(\hat\Upsilon_2^2)=0$, hence to every element of $S$. The algebra's own form therefore cannot separate the two basis spinors and cannot produce a norm on the carrier. Positivity is not a property of the plain product at all; it needs the second slot read through the Hermitian conjugation ${}^{*}$, which is the structure of the sibling article. This is the sharpest way to see that the module structure and the metric are two structures and not two views of one object: the form the module's own product carries is degenerate on the module.
 
 ## The Lorentz Action and the Spin
 
@@ -187,14 +187,14 @@ The module structure supplies the representation, the ideals, the Peirce decompo
 
 ## Worked Verification
 
-The claims are recomputed on the basis $(\tilde\Pi_+,\tilde\Upsilon_2,\tilde\Upsilon_1,\tilde\Pi_-)$ and on the four matrix units.
+The claims are recomputed on the basis $(\tilde\Pi_+,\hat\Upsilon_2,\hat\Upsilon_1,\tilde\Pi_-)$ and on the four matrix units.
 
-- **The plain products.** $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Upsilon_1^2=\tilde\Upsilon_2^2=0$, $\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_+$, $\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$, $\tilde\Pi_++\tilde\Pi_-=e_0$, all in the plain product.
-- **Closure of the carrier.** Every left multiplication maps $\{\tilde\Pi_+,\tilde\Upsilon_2\}$ into $\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$, with the matrices displayed in §*The Left Action*.
-- **One idempotent and one nilpotent.** $\mathbb{B}\tilde\Pi_+=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Upsilon_2$, each corner one-dimensional, and $(\tilde\Pi_-a\tilde\Pi_+)^2=0$ for a generic $a$.
-- **The algebra's form.** $B(\tilde\Pi_+,\tilde\Pi_+)=\tfrac12$, $B(\tilde\Pi_+,\tilde\Upsilon_2)=B(\tilde\Upsilon_2,\tilde\Pi_+)=B(\tilde\Upsilon_2,\tilde\Upsilon_2)=0$, so $B_S=\operatorname{diag}(\tfrac12,0)$ and $\operatorname{rad}B_S=\mathbb{C}\tilde\Upsilon_2$; also $B(\tilde\Upsilon_2,\tilde\Upsilon_1)=\tfrac12$, so $B$ does not separate the two columns.
+- **The plain products.** $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\hat\Upsilon_1^2=\hat\Upsilon_2^2=0$, $\hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+$, $\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$, $\tilde\Pi_++\tilde\Pi_-=e_0$, all in the plain product.
+- **Closure of the carrier.** Every left multiplication maps $\{\tilde\Pi_+,\hat\Upsilon_2\}$ into $\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$, with the matrices displayed in §*The Left Action*.
+- **One idempotent and one nilpotent.** $\mathbb{B}\tilde\Pi_+=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\hat\Upsilon_2$, each corner one-dimensional, and $(\tilde\Pi_-a\tilde\Pi_+)^2=0$ for a generic $a$.
+- **The algebra's form.** $B(\tilde\Pi_+,\tilde\Pi_+)=\tfrac12$, $B(\tilde\Pi_+,\hat\Upsilon_2)=B(\hat\Upsilon_2,\tilde\Pi_+)=B(\hat\Upsilon_2,\hat\Upsilon_2)=0$, so $B_S=\operatorname{diag}(\tfrac12,0)$ and $\operatorname{rad}B_S=\mathbb{C}\hat\Upsilon_2$; also $B(\hat\Upsilon_2,\hat\Upsilon_1)=\tfrac12$, so $B$ does not separate the two columns.
 - **The symplectic form.** $g^{T}\epsilon g=\epsilon$ for $\det g=1$ (verified on random unimodular $g$, error below $10^{-9}$), so $\varepsilon$ is invariant and non-degenerate.
-- **The matrix model.** $\mathsf{M}_2(e_k)=-i\sigma_k$ gives $\tilde\Pi_+\mapsto E_{11}$, $\tilde\Upsilon_2\mapsto E_{21}$, $\tilde\Upsilon_1\mapsto E_{12}$, $\tilde\Pi_-\mapsto E_{22}$, and the left multiplications match the column action of $M_2(\mathbb{C})$.
+- **The matrix model.** $\mathsf{M}_2(e_k)=-i\sigma_k$ gives $\tilde\Pi_+\mapsto E_{11}$, $\hat\Upsilon_2\mapsto E_{21}$, $\hat\Upsilon_1\mapsto E_{12}$, $\tilde\Pi_-\mapsto E_{22}$, and the left multiplications match the column action of $M_2(\mathbb{C})$.
 
 ## Boundaries
 
@@ -211,9 +211,9 @@ The claims are recomputed on the basis $(\tilde\Pi_+,\tilde\Upsilon_2,\tilde\Ups
 
 ## Summary
 
-The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ is a **left module of the general plain algebra**, the algebra of the plain bilinear product $\tilde P\tilde Q$. The plain product is the only associative unital law among the twelve structures of the complex space, and its exact threshold is left alternativity; from that law follow the Peirce decomposition, the ideal lattice and the module theory. The module is a minimal left ideal of $\mathbb{B}\cong M_2(\mathbb{C})$, its basis is forced to be one idempotent and one nilpotent because a minimal left ideal is one column of the matrix model and a column is one diagonal corner plus one off-diagonal corner, and it is the unique simple module, of endomorphism ring $\mathbb{C}$, with $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$.
+The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ is a **left module of the general plain algebra**, the algebra of the plain bilinear product $\tilde P\tilde Q$. The plain product is the only associative unital law among the twelve structures of the complex space, and its exact threshold is left alternativity; from that law follow the Peirce decomposition, the ideal lattice and the module theory. The module is a minimal left ideal of $\mathbb{B}\cong M_2(\mathbb{C})$, its basis is forced to be one idempotent and one nilpotent because a minimal left ideal is one column of the matrix model and a column is one diagonal corner plus one off-diagonal corner, and it is the unique simple module, of endomorphism ring $\mathbb{C}$, with $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$.
 
-The module carries the invariant symplectic form $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$, non-degenerate and invariant because $\det g=1$, which identifies $S$ with its linear dual. The algebra's own symmetric form $B(\tilde P,\tilde Q)=\operatorname{Sc}(\tilde P\tilde Q)$ is non-degenerate on $\mathbb{B}$ and indefinite of signature $(4,4)$ on the real space, but its restriction to the carrier is $\operatorname{diag}(\tfrac12,0)$ of rank one, with radical $\mathbb{C}\tilde\Upsilon_2$. The nilpotent is invisible to the algebra's form, so positivity is not a property of the plain product and the metric of the space is a second structure, belonging to the general plain sesqualgebra and to the sibling article. The physical action carried by the module is the Lorentz action $\psi\mapsto\tilde U\psi$, one-sided, faithful and a genuine representation of the double cover; spin-$\tfrac12$ is a module datum, and the module supplies no norm, no probability and no measurement.
+The module carries the invariant symplectic form $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$, non-degenerate and invariant because $\det g=1$, which identifies $S$ with its linear dual. The algebra's own symmetric form $B(\tilde P,\tilde Q)=\operatorname{Sc}(\tilde P\tilde Q)$ is non-degenerate on $\mathbb{B}$ and indefinite of signature $(4,4)$ on the real space, but its restriction to the carrier is $\operatorname{diag}(\tfrac12,0)$ of rank one, with radical $\mathbb{C}\hat\Upsilon_2$. The nilpotent is invisible to the algebra's form, so positivity is not a property of the plain product and the metric of the space is a second structure, belonging to the general plain sesqualgebra and to the sibling article. The physical action carried by the module is the Lorentz action $\psi\mapsto\tilde U\psi$, one-sided, faithful and a genuine representation of the double cover; spin-$\tfrac12$ is a module datum, and the module supplies no norm, no probability and no measurement.
 
 ## Summary of Notation
 
@@ -225,14 +225,14 @@ The module carries the invariant symplectic form $\varepsilon(\psi,\phi)=\psi^{T
 | $\tilde P\tilde Q$ | The general plain bilinear product (GPA, composition) |
 | $\tilde Q^{\natural},\ \tilde Q^{*},\ \bar{\tilde Q}$ | Natural, Hermitian and coefficient conjugations |
 | $\tilde\Pi_+=\tfrac12(e_0+ie_3),\ \tilde\Pi_-=\tfrac12(e_0-ie_3)$ | Orthogonal complete idempotents of the plain product |
-| $\tilde\Upsilon_1=\tfrac12(ie_1-e_2),\ \tilde\Upsilon_2=\tfrac12(ie_1+e_2)$ | The nilpotent matrix units of the plain product |
-| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ | The spinor space, a minimal left ideal, $\dim_{\mathbb{C}}S=2$ |
-| $\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Upsilon_2$ | The ideal as its two Peirce corners: one idempotent, one nilpotent |
+| $\hat\Upsilon_1=\tfrac12(ie_1-e_2),\ \hat\Upsilon_2=\tfrac12(ie_1+e_2)$ | The nilpotent matrix units of the plain product |
+| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ | The spinor space, a minimal left ideal, $\dim_{\mathbb{C}}S=2$ |
+| $\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\hat\Upsilon_2$ | The ideal as its two Peirce corners: one idempotent, one nilpotent |
 | $L_{\tilde Q}(\tilde\psi)=\tilde Q\tilde\psi$ | The left multiplication; the module action |
 | $\mathbb{B}\cong S\oplus S\cong\operatorname{End}_{\mathbb{C}}(S)$ | The regular module and the algebra as the endomorphisms |
 | $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ | Schur's lemma; the module is of complex type |
 | $B(\tilde P,\tilde Q)=\operatorname{Sc}(\tilde P\tilde Q)$ | The algebra's symmetric bilinear form; signature $(4,4)$ |
-| $B_S=\operatorname{diag}(\tfrac12,0)$ | The restriction to $S$; rank one, radical $\mathbb{C}\tilde\Upsilon_2$ |
+| $B_S=\operatorname{diag}(\tfrac12,0)$ | The restriction to $S$; rank one, radical $\mathbb{C}\hat\Upsilon_2$ |
 | $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$ | The invariant symplectic pairing of the module; $S\cong S^{\vee}$ |
 | $\psi\mapsto\tilde U\psi$ | The Lorentz action on the module |
 | $SL(2,\mathbb{C})=\{\tilde U:\tilde U\tilde U^{\natural}=e_0\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |

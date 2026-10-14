@@ -71,13 +71,13 @@ M(\tilde{H}) = \begin{pmatrix} h_0 + h_3 & h_1 - ih_2 \\ h_1 + ih_2 & h_0 - h_3 
 = h_0 I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3 .
 $$
 
-Acting on $|u\rangle = (u_1, u_2)^{\mathsf T}\in S$, this is the ordinary Hermitian operator of the two-level system. The rank-one idempotent along the unit direction $\hat{\mu}$ maps to
+Acting on $|u\rangle = (u_1, u_2)^{\mathsf T}\in S$, this is the ordinary Hermitian operator of the two-level system. The rank-one idempotent along the unit direction $\hat u$ maps to
 
 $$
-M\bigl(\tilde\Pi_1(\hat{\mu})\bigr) = \tfrac12\begin{pmatrix} 1+\mu_3 & \mu_1 - i\mu_2 \\ \mu_1 + i\mu_2 & 1-\mu_3 \end{pmatrix},
+M\bigl(\tilde\Pi_1(\hat u)\bigr) = \tfrac12\begin{pmatrix} 1+\mu_3 & \mu_1 - i\mu_2 \\ \mu_1 + i\mu_2 & 1-\mu_3 \end{pmatrix},
 $$
 
-whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, e^{i\varphi}\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\hat{\mu} = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_0 + i\hat{\mu})$ is recovered. The two descriptions carry exactly the same data.
+whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, e^{i\varphi}\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\hat u = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_0 + i\hat u)$ is recovered. The two descriptions carry exactly the same data.
 
 ### The Hermitian subspace
 
@@ -144,10 +144,10 @@ is a bijection. This is the biquaternion form of the standard correspondence bet
 In the basis of the algebra the pure states are the elements
 
 $$
-\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac{1}{2}\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad \hat{\mu}\in\mathbb{R}^3,\ |\hat{\mu}|=1 ,
+\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}\bigl(e_0 \pm i\hat u\bigr), \qquad \hat u\in\mathbb{R}^3,\ |\hat u|=1 ,
 $$
 
-the two antipodal idempotents of the direction $\hat{\mu}$. Each satisfies $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\mathrm{Tr}(\tilde\Pi_{1,2})=1$, and the matrix image is $\tfrac12(I_2 \pm \hat{\mu}\cdot\boldsymbol{\sigma})$. The family of rays is therefore parametrized by the unit sphere $S^2$, and the two idempotents of a direction are the antipodal points of the Bloch sphere.
+the two antipodal idempotents of the direction $\hat u$. Each satisfies $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\mathrm{Tr}(\tilde\Pi_{1,2})=1$, and the matrix image is $\tfrac12(I_2 \pm \hat u\cdot\boldsymbol{\sigma})$. The family of rays is therefore parametrized by the unit sphere $S^2$, and the two idempotents of a direction are the antipodal points of the Bloch sphere.
 
 ### The general state and the trace pairing
 
@@ -255,7 +255,7 @@ the three pairs of outcome probabilities determine $\vec r$ and hence the state.
 
 The elementary informational unit of the biquaternion framework is the defining module of the algebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a simple finite-dimensional complex algebra, it has a unique simple left module $S=\mathbb{C}^2$, the column space, and every irreducible representation is equivalent to the action on $S$. The qubit is therefore native to the algebra: it is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it.
 
-On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|\hat{H}|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_0+i\vec r)$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $N(\tilde{\rho}) = \tfrac14(1-|\vec r|^2)e_0$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
+On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0\pm i\hat u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|\hat{H}|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_0+i\vec r)$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $N(\tilde{\rho}) = \tfrac14(1-|\vec r|^2)e_0$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
 
 What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive.
 
@@ -273,7 +273,7 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}^{*}$ | Hermitian conjugate (anti-linear involution) |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Rank-one idempotents (pure states) |
+| $\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0\pm i\hat u)$ | Rank-one idempotents (pure states) |
 | $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = \langle u|\hat{H}|u\rangle$ | Trace pairing (Born rule) |
 | $r_k = \mathrm{Tr}(\tilde{\rho}\,ie_k)$ | Bloch components (tomography) |

@@ -26,9 +26,9 @@ The notion presupposes no commutativity. Unlike a ring, a group always carries o
 
 ### The Opposite Group and Inversion
 
-**Definition.** The **opposite group** $G^{\mathrm{op}}$ has the same underlying set as $G$ and the product $a \cdot^{\mathrm{op}} b = ba$.
+**Definition.** The **opposite group** $G^{\mathrm{opp}}$ has the same underlying set as $G$ and the product $a \cdot^{\mathrm{opp}} b = ba$.
 
-An involution of $G$ is exactly an isomorphism $G \to G^{\mathrm{op}}$ of order two, and the inversion $\iota(g) = g^{-1}$ is such an isomorphism: $\iota(ab) = (ab)^{-1} = b^{-1}a^{-1} = \iota(a)\cdot^{\mathrm{op}}\iota(b)$. The map $\iota$ is an involution of $G$, and it exhibits the isomorphism $G \cong G^{\mathrm{op}}$ explicitly by a formula that needs no choice.
+An involution of $G$ is exactly an isomorphism $G \to G^{\mathrm{opp}}$ of order two, and the inversion $\iota(g) = g^{-1}$ is such an isomorphism: $\iota(ab) = (ab)^{-1} = b^{-1}a^{-1} = \iota(a)\cdot^{\mathrm{opp}}\iota(b)$. The map $\iota$ is an involution of $G$, and it exhibits the isomorphism $G \cong G^{\mathrm{opp}}$ explicitly by a formula that needs no choice.
 
 **Remark.** The contrast with rings is sharp. For a ring the existence of an anti-automorphism is a genuine condition, and the involution is the certificate that the ring is isomorphic to its opposite ring; for a group the inversion supplies the certificate for every group at once. What is informative in the group case is the set of involutions and the structure each of them defines, not the bare existence.
 
@@ -306,7 +306,7 @@ An involution of a group is an anti-automorphism of order two. Every group has t
 |---|---|
 | $\sigma$ | an involution of a group, that is an anti-automorphism of order two |
 | $\iota$ | the inversion $\iota(g) = g^{-1}$, the canonical involution of every group |
-| $G^{\mathrm{op}}$ | the opposite group, with $a \cdot^{\mathrm{op}} b = ba$ |
+| $G^{\mathrm{opp}}$ | the opposite group, with $a \cdot^{\mathrm{opp}} b = ba$ |
 | $\operatorname{Anti}(G)$ | the set of anti-automorphisms of $G$; a coset of $\operatorname{Aut}(G)$ in $\operatorname{Aut}^*(G)$ |
 | $\operatorname{Aut}^*(G)$ | $\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$, a subgroup of $\operatorname{Sym}(G)$ |
 | $\alpha = \sigma\iota$ | the involutive automorphism associated with $\sigma$ |

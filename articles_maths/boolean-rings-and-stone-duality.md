@@ -94,12 +94,12 @@ is an isomorphism of Boolean rings from $R$ onto the ring of clopen subsets of $
 
 ### The Category of Stone Spaces
 
-**Definition.** The category **Stone** has as objects the compact Hausdorff totally disconnected spaces, equivalently the compact Hausdorff spaces with a basis of clopens, and as morphisms the continuous maps. The **clopen-set functor** is $\operatorname{Clop} : \mathbf{Stone}^{\mathrm{op}} \to \mathbf{Bool}$, assigning to $X$ the Boolean algebra $\operatorname{Clop}(X)$ and to a continuous map $f : X \to Y$ the inverse image $f^{-1} : \operatorname{Clop}(Y) \to \operatorname{Clop}(X)$, which preserves unions, intersections and complements.
+**Definition.** The category **Stone** has as objects the compact Hausdorff totally disconnected spaces, equivalently the compact Hausdorff spaces with a basis of clopens, and as morphisms the continuous maps. The **clopen-set functor** is $\operatorname{Clop} : \mathbf{Stone}^{\mathrm{opp}} \to \mathbf{Bool}$, assigning to $X$ the Boolean algebra $\operatorname{Clop}(X)$ and to a continuous map $f : X \to Y$ the inverse image $f^{-1} : \operatorname{Clop}(Y) \to \operatorname{Clop}(X)$, which preserves unions, intersections and complements.
 
 **Theorem (Stone duality).** The functors
 
 $$
-\mathbf{Bool}^{\mathrm{op}} \longrightarrow \mathbf{Stone}, \qquad B \mapsto S(B), \qquad \mathbf{Stone}^{\mathrm{op}} \longrightarrow \mathbf{Bool}, \qquad X \mapsto \operatorname{Clop}(X)
+\mathbf{Bool}^{\mathrm{opp}} \longrightarrow \mathbf{Stone}, \qquad B \mapsto S(B), \qquad \mathbf{Stone}^{\mathrm{opp}} \longrightarrow \mathbf{Bool}, \qquad X \mapsto \operatorname{Clop}(X)
 $$
 
 are inverse equivalences of categories. In particular, for Boolean algebras $B, C$ the continuous maps $S(B) \to S(C)$ correspond bijectively to the homomorphisms $C \to B$.

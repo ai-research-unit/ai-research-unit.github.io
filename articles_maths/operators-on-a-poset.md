@@ -148,22 +148,22 @@ this category. Here only its place in the parity monoid is recorded.
 
 ### Reduction to the Opposite Poset
 
-Let $P^{\mathrm{op}}$ denote $P$ with the opposite order, in which $x \leq^{\mathrm{op}} y$ means $y
+Let $P^{\mathrm{opp}}$ denote $P$ with the opposite order, in which $x \leq^{\mathrm{opp}} y$ means $y
 \leq x$.
 
 **Proposition.** A map $f : P \to Q$ is antitone if and only if it is monotone as a map $P \to
-Q^{\mathrm{op}}$, equivalently as a map $P^{\mathrm{op}} \to Q$. Hence the antitone maps are the
+Q^{\mathrm{opp}}$, equivalently as a map $P^{\mathrm{opp}} \to Q$. Hence the antitone maps are the
 monotone maps of the opposite order, and an antitone bijection $P \to P$ is an order isomorphism $P
-\to P^{\mathrm{op}}$, that is, an isomorphism of $P$ with its opposite poset.
+\to P^{\mathrm{opp}}$, that is, an isomorphism of $P$ with its opposite poset.
 
 **Proof.** The condition $x \leq y \Rightarrow f(y) \leq f(x)$ is exactly $x \leq y \Rightarrow
-f(x) \leq^{\mathrm{op}} f(y)$. The statements about bijections are the definition of an isomorphism of
+f(x) \leq^{\mathrm{opp}} f(y)$. The statements about bijections are the definition of an isomorphism of
 posets.
 
 So nothing new is needed for the antitone maps beyond the duality principle of *Order Theory and
 Lattices*: their theory is the theory of the monotone maps of the opposite order. In particular
-$\operatorname{Anti}(P) \cong \operatorname{End}(P^{\mathrm{op}})$ as sets, and the parity monoid of
-the previous subsection is the set of monotone maps of $P$ and of $P^{\mathrm{op}}$ together.
+$\operatorname{Anti}(P) \cong \operatorname{End}(P^{\mathrm{opp}})$ as sets, and the parity monoid of
+the previous subsection is the set of monotone maps of $P$ and of $P^{\mathrm{opp}}$ together.
 
 ## Residuated Maps and Galois Connections
 
@@ -229,7 +229,7 @@ source of residuated pairs: a relation $R \subseteq X \times Y$ gives the antito
 A^{\uparrow}$ and $B \mapsto B^{\downarrow}$, and the induced maps $A \mapsto A^{\uparrow\downarrow}$
 and $B \mapsto B^{\downarrow\uparrow}$ are closure operators. In the language of this article the two
 maps are the residuals of each other for the opposite orders, and the polarities are the residuated
-pairs between $\mathcal{P}(X)^{\mathrm{op}}$ and $\mathcal{P}(Y)^{\mathrm{op}}$.
+pairs between $\mathcal{P}(X)^{\mathrm{opp}}$ and $\mathcal{P}(Y)^{\mathrm{opp}}$.
 
 ### The Residuated Maps of a Power Set
 
@@ -284,7 +284,7 @@ relation, and its residual is the map sending a set to the points all of whose r
 | $\kappa_k$ | Constant map $x \mapsto k$ |
 | $\operatorname{Anti}(P)$ | Set of antitone self-maps of $P$ |
 | $\operatorname{End}(P) \cup \operatorname{Anti}(P)$ | Parity monoid: monotone and antitone maps |
-| $P^{\mathrm{op}}$ | $P$ with the opposite order |
+| $P^{\mathrm{opp}}$ | $P$ with the opposite order |
 | $f \dashv g$ | Galois connection: $f$ left adjoint (residuated), $g$ right adjoint (residual) |
 | $f^{\sharp}$ | Residual of a residuated map $f$ |
 | $R[A]$ | Direct image of $A$ under the relation $R$ |

@@ -30,7 +30,7 @@ For the **vacuum** state $\tilde\rho = \tilde\Pi_+$ the GNS space is the minimal
 
 The article proceeds as follows. The next section recalls the GNS theorem. The section after that fixes the states of $\mathbb{B}$ as density matrices. Two sections then construct the GNS data explicitly and compute the dimension in the pure, mixed, and trace cases. A section states the modular structure. A section examines the trace state and the algebra's canonical state. A section records the second description of a state, as the Fourier transform of a measure, and locates the point at which the biquaternion algebra's norm fails to supply it. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the centre. The isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Tr}(e_0)=2$. The biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The minimal idempotents are $\tilde\Pi(\pm\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$, the vacuum projector being $\tilde\Pi_+$, and the single-mode ladder is $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent*.
+**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the centre. The isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Tr}(e_0)=2$. The biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The minimal idempotents are $\tilde\Pi(\pm\hat u)=\tfrac12(e_0\pm i\hat u)$, the vacuum projector being $\tilde\Pi_+$, and the single-mode ladder is $\hat\Upsilon_1=\tfrac12(ie_1-e_2)$, $\hat\Upsilon_2=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 ## The GNS Theorem
 
@@ -147,13 +147,13 @@ Three structural consequences follow, and they are the content of the constructi
 
 **The annihilation operator is in the radical.** For the vacuum state,
 $$
-\omega_0\big(\tilde\Upsilon_2 \tilde\Upsilon_1\big) = \mathrm{Tr}\big(\tilde\Pi_+\tilde N_{\mathrm{tr}}\big) = 0
+\omega_0\big(\hat\Upsilon_2 \hat\Upsilon_1\big) = \mathrm{Tr}\big(\tilde\Pi_+\tilde N_{\mathrm{tr}}\big) = 0
 \quad\Longrightarrow\quad
-\pi_0(\tilde\Upsilon_1)\,\Omega_0 = [\tilde\Upsilon_1] = 0 ,
+\pi_0(\hat\Upsilon_1)\,\Omega_0 = [\hat\Upsilon_1] = 0 ,
 $$
-so the reconstructed vacuum vector is annihilated by the ladder operator, as it must be. The element $\tilde\Upsilon_1$ is *not zero in $\mathbb{B}$*; it is a nonzero element whose class is the zero vector of $\mathcal{H}_{\tilde\rho}$. The distinction is exactly the quotient by the radical, and it is why the GNS construction, not the algebra alone, is the right language for "the vacuum is annihilated".
+so the reconstructed vacuum vector is annihilated by the ladder operator, as it must be. The element $\hat\Upsilon_1$ is *not zero in $\mathbb{B}$*; it is a nonzero element whose class is the zero vector of $\mathcal{H}_{\tilde\rho}$. The distinction is exactly the quotient by the radical, and it is why the GNS construction, not the algebra alone, is the right language for "the vacuum is annihilated".
 
-The check that $\omega(\tilde A)=\langle\Omega|\pi(\tilde A)|\Omega\rangle$ is the cyclic-vector property, $\mathrm{Tr}(\tilde\rho\tilde A)=\mathrm{Tr}(\tilde\rho\, e_0^\dagger \tilde A e_0)$; it holds identically because $e_0$ is the unit and the inner product places $\tilde\rho$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ and $\tilde\Upsilon_1$ of the chosen basis. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_0(e_0)=1$ and $\omega_0(ie_k)=r_k$ with $\vec r=(0,0,1)$, so the vacuum is unpolarized in the $e_1$ and $e_2$ directions and fully polarized along $e_3$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_0(e_3)=-i$ and $\omega_0(ie_0)=i$, together with $\omega_0(e_1)=\omega_0(e_2)=\omega_0(\tilde\Upsilon_1)=0$. The polarization $\omega_0(ie_k)=r_k$ is the Bloch vector of the state, $\vec r=\hat\mu$, and it is the same information the deterministic statement $\tilde\rho\tilde\rho=\tilde\rho$ carries.
+The check that $\omega(\tilde A)=\langle\Omega|\pi(\tilde A)|\Omega\rangle$ is the cyclic-vector property, $\mathrm{Tr}(\tilde\rho\tilde A)=\mathrm{Tr}(\tilde\rho\, e_0^\dagger \tilde A e_0)$; it holds identically because $e_0$ is the unit and the inner product places $\tilde\rho$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ and $\hat\Upsilon_1$ of the chosen basis. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_0(e_0)=1$ and $\omega_0(ie_k)=r_k$ with $\vec r=(0,0,1)$, so the vacuum is unpolarized in the $e_1$ and $e_2$ directions and fully polarized along $e_3$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_0(e_3)=-i$ and $\omega_0(ie_0)=i$, together with $\omega_0(e_1)=\omega_0(e_2)=\omega_0(\hat\Upsilon_1)=0$. The polarization $\omega_0(ie_k)=r_k$ is the Bloch vector of the state, $\vec r=\hat u$, and it is the same information the deterministic statement $\tilde\rho\tilde\rho=\tilde\rho$ carries.
 
 ## Modular Structure
 
@@ -200,7 +200,7 @@ so every element of the algebra appears as a "state" in the reconstruction. The 
 
 The trace state plays for $\mathbb{B}$ the role that the vacuum plays for a field algebra: it is the reference state relative to which the algebra's own structure is displayed. Its two differences from the vacuum are worth naming. It is **mixed**, so its representation is reducible, and it is **not null**, so its modular operator exists. The two reference states are thus at opposite corners of the state space:
 $$
-\tilde\rho_{\text{vac}} = \tilde\Pi(\hat\mu) \ \ (\text{pure, null, irreducible GNS}),
+\tilde\rho_{\text{vac}} = \tilde\Pi(\hat u) \ \ (\text{pure, null, irreducible GNS}),
 \qquad
 \tilde\rho_{\text{tr}} = \tfrac12 e_0 \ \ (\text{mixed, invertible, regular GNS}).
 $$
@@ -289,7 +289,7 @@ The GNS construction supplies the bridge from the vacuum state of *The Biquatern
 | $\omega(\tilde A)$ | State: positive normalized linear functional |
 | $\varphi$, $\mu$ | Continuous normalised positive-definite function on an abelian group, and the probability measure of Bochner's theorem with $\varphi=\int\chi\,d\mu$; the state $\omega_\varphi(f)=\int f\varphi$ on the convolution algebra has GNS space $L^2(\mu)$ |
 | $\tilde\rho=\tfrac12(e_0+i\vec r)$ | Density matrix of a state; $|\vec r|\le1$ |
-| $\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ | Pure state (minimal idempotent, Bloch sphere) |
+| $\tilde\Pi(\hat u)=\tfrac12(e_0+i\hat u)$ | Pure state (minimal idempotent, Bloch sphere) |
 | $\tau(\tilde A)=\tfrac12\mathrm{Tr}(\tilde A)$ | Trace state; unique tracial state; Bloch centre |
 | $\langle\tilde A,\tilde B\rangle_\omega=\omega(\tilde A^{*}\tilde B)$ | GNS inner product |
 | $\mathcal{N}_\omega=\{\tilde A:\omega(\tilde A^{*}\tilde A)=0\}$ | Radical of the state |
@@ -300,7 +300,7 @@ The GNS construction supplies the bridge from the vacuum state of *The Biquatern
 | $\Delta_{\tilde\rho}(\tilde A)=\tilde\rho\tilde A\tilde\rho^{-1}$ | Modular operator |
 | $J(\tilde A)=\tilde A^{*}$ | Modular conjugation, $J\Delta J^{-1}=\Delta^{-1}$ |
 | $K=-\log\tilde\rho\in\mathbb{M}_+$ | Modular Hamiltonian |
-| $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$ | Single-mode annihilation operator (in the radical of the vacuum state) |
+| $\hat\Upsilon_1=\tfrac12(ie_1-e_2)$ | Single-mode annihilation operator (in the radical of the vacuum state) |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |

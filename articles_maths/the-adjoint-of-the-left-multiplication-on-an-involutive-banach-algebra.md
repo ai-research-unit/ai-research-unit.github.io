@@ -75,7 +75,7 @@ $$
 \{T \in \mathcal{A}(A) : TL_a = L_aT \ \text{for all } a\} = \{R_b : b \in A\} ,
 $$
 
-so the commutant of $\{L_a\}$ is the algebra of the right multiplications, isomorphic to $A^{\mathrm{op}}$; symmetrically the commutant of the right multiplications is the algebra of the left multiplications, and the bicommutant of the regular representation is the whole adjointable algebra.
+so the commutant of $\{L_a\}$ is the algebra of the right multiplications, isomorphic to $A^{\mathrm{opp}}$; symmetrically the commutant of the right multiplications is the algebra of the left multiplications, and the bicommutant of the regular representation is the whole adjointable algebra.
 
 **Proof.** If $T$ commutes with every $L_a$ then $T(x) = T(L_x1) = L_xT(1) = x\,T(1) = R_{T(1)}(x)$, so $T = R_b$ with $b = T(1)$; conversely every right multiplication commutes with every left multiplication by associativity. The symmetric statement is the mirror image, and the bicommutant follows by applying the first statement twice.
 

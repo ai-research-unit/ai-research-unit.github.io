@@ -6,17 +6,17 @@ This is one of the exercises in the relativity series. It applies the apparatus 
 
 **What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part), the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of the rotation rotors. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, the Hermitian conjugate $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ belongs to the shared notation; no object of the informational sector arises below, so it is recorded but not used. The four-velocity $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ with $N(\tilde{V}) = -c^2$ and $\gamma = (1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P} = m\tilde{V} = iE/c\,e_0 + \vec p$, and the boost biquaternion
 $$
-\tilde{\Lambda}_{\vec u} = \cosh\frac{\psi_u}{2} + i\sinh\frac{\psi_u}{2}\hat u,
+\tilde{\Lambda}_{\vec u} = \cosh\frac{\psi_u}{2} + i\sinh\frac{\psi_u}{2}\hat u_1,
 \qquad
 \tanh\psi_u = \frac{u}{c},
 $$
-which is Hermitian ($\tilde{\Lambda}_{\vec u}^{*} = \tilde{\Lambda}_{\vec u}$), lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is a particle velocity, and $\hat u, \hat n$ are unit frame or boost directions. The components of a biquaternion are taken in the basis $(e_0,e_1,e_2,e_3)$.
+which is Hermitian ($\tilde{\Lambda}_{\vec u}^{*} = \tilde{\Lambda}_{\vec u}$), lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is a particle velocity, and $\hat u_1, \hat u_2$ are unit frame or boost directions. The components of a biquaternion are taken in the basis $(e_0,e_1,e_2,e_3)$.
 
 **What is to be shown.** Problem 1 computes $\tilde{\Lambda}_{\vec u}\tilde{V}\tilde{\Lambda}_{\vec u}^{*}$ for arbitrary $\vec u,\vec v$ and shows that it is again a four-velocity of $\mathbb{M}_-$ with the standard components. Problem 2 composes two collinear boost rotors and derives rapidity addition and the velocity-addition formula. Problem 3 composes two non-collinear boosts, shows that the product is no longer a pure boost, and extracts the boost part, the total rapidity, and the Thomas–Wigner angle. Problem 4 verifies the parent's relation $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, determines the direction of the transformation it generates, and identifies what the four-velocity does and does not determine. The problems are solved in full; the reader is asked in the final section to extend them.
 
 ## Problem 1: The Boost of a General Four-Velocity
 
-**Statement.** Let $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ be the four-velocity of a particle, and let $\tilde{\Lambda}_{\vec u} = \cosh\frac{\psi_u}{2} + i\sinh\frac{\psi_u}{2}\hat u$, with $\tanh\psi_u = u/c$, be a boost biquaternion. Compute $\tilde{V}' = \tilde{\Lambda}_{\vec u}\tilde{V}\tilde{\Lambda}_{\vec u}^{*}$ and show that:
+**Statement.** Let $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ be the four-velocity of a particle, and let $\tilde{\Lambda}_{\vec u} = \cosh\frac{\psi_u}{2} + i\sinh\frac{\psi_u}{2}\hat u_1$, with $\tanh\psi_u = u/c$, be a boost biquaternion. Compute $\tilde{V}' = \tilde{\Lambda}_{\vec u}\tilde{V}\tilde{\Lambda}_{\vec u}^{*}$ and show that:
 
 **(a)** $\tilde{V}'$ lies in $\mathbb{M}_-$ and has $N(\tilde{V}') = -c^2$;
 
@@ -26,7 +26,7 @@ which is Hermitian ($\tilde{\Lambda}_{\vec u}^{*} = \tilde{\Lambda}_{\vec u}$), 
 
 **(d)** in the collinear case $\vec v\parallel\vec u$ the induced velocity is $v' = (v-u)/(1-uv/c^2)$, i.e. the rapidities subtract.
 
-**Solution.** Because a pure-boost rotor is Hermitian, $\tilde{\Lambda}_{\vec u}^{*} = \tilde{\Lambda}_{\vec u}$, and the transformation is the two-sided product $\tilde{\Lambda}_{\vec u}\tilde{V}\tilde{\Lambda}_{\vec u}$. Write $a = \cosh\frac{\psi_u}{2}$, $b = \sinh\frac{\psi_u}{2}$, and $J = \hat u$, a real unit pure quaternion with $J^2 = -e_0$. Split the velocity into parts parallel and perpendicular to $J$,
+**Solution.** Because a pure-boost rotor is Hermitian, $\tilde{\Lambda}_{\vec u}^{*} = \tilde{\Lambda}_{\vec u}$, and the transformation is the two-sided product $\tilde{\Lambda}_{\vec u}\tilde{V}\tilde{\Lambda}_{\vec u}$. Write $a = \cosh\frac{\psi_u}{2}$, $b = \sinh\frac{\psi_u}{2}$, and $J = \hat u_1$, a real unit pure quaternion with $J^2 = -e_0$. Split the velocity into parts parallel and perpendicular to $J$,
 $$
 \vec v = \vec v_\parallel + \vec v_\perp, \qquad \vec v_\parallel = v_\parallel J, \qquad J\,\vec v_\parallel = -v_\parallel, \qquad J\,\vec v_\perp = J\times\vec v_\perp, \qquad \vec v_\perp J = -J\times\vec v_\perp .
 $$
@@ -60,7 +60,7 @@ $$
 $$
 which is the standard transformation. The second equality uses $\vec v_\parallel = \frac{\vec u\cdot\vec v}{u^2}\vec u$ and the rearrangement $\vec v + (\gamma_u-1)\vec v_\parallel - \gamma_u\vec u = \vec v_\perp + \gamma_u(\vec v_\parallel-\vec u)$.
 
-**(d)** If $\vec v = v\hat u$ then $\vec v_\perp = 0$ and (2) reduces to
+**(d)** If $\vec v = v\hat u_1$ then $\vec v_\perp = 0$ and (2) reduces to
 $$
 v' = \frac{v-u}{1-uv/c^2},
 $$
@@ -75,15 +75,15 @@ The norm is preserved: $N(\tilde{V}') = -1$ in units $c=1$. The transverse compo
 
 ## Problem 2: Collinear Boosts and Rapidity Addition
 
-**Statement.** Let $\tilde{\Lambda}_1 = \cosh\frac{\psi_1}{2} + i\sinh\frac{\psi_1}{2}\hat n$ and $\tilde{\Lambda}_2 = \cosh\frac{\psi_2}{2} + i\sinh\frac{\psi_2}{2}\hat n$ be two boost rotors along the same direction $\hat n$.
+**Statement.** Let $\tilde{\Lambda}_1 = \cosh\frac{\psi_1}{2} + i\sinh\frac{\psi_1}{2}\hat u_2$ and $\tilde{\Lambda}_2 = \cosh\frac{\psi_2}{2} + i\sinh\frac{\psi_2}{2}\hat u_2$ be two boost rotors along the same direction $\hat u_2$.
 
-**(a)** Show that $\tilde{\Lambda}_2\tilde{\Lambda}_1$ is itself a pure boost along $\hat n$, of rapidity $\psi_1+\psi_2$.
+**(a)** Show that $\tilde{\Lambda}_2\tilde{\Lambda}_1$ is itself a pure boost along $\hat u_2$, of rapidity $\psi_1+\psi_2$.
 
 **(b)** Deduce the velocity-addition formula $w = \dfrac{u_1+u_2}{1+u_1u_2/c^2}$.
 
 **(c)** Reconcile the addition here with the subtraction found in Problem 1.
 
-**Solution. (a)** Put $J = \hat n$, $c_i = \cosh\frac{\psi_i}{2}$, $s_i = \sinh\frac{\psi_i}{2}$. Since $J^2 = -e_0$, the product of the two scalar-imaginary vector parts is
+**Solution. (a)** Put $J = \hat u_2$, $c_i = \cosh\frac{\psi_i}{2}$, $s_i = \sinh\frac{\psi_i}{2}$. Since $J^2 = -e_0$, the product of the two scalar-imaginary vector parts is
 $$
 (iJ)(iJ) = i^2J^2 = (-1)(-1) = +e_0,
 $$
@@ -91,11 +91,11 @@ so the two boosts in the same direction multiply hyperbolically:
 $$
 \tilde{\Lambda}_2\tilde{\Lambda}_1
 = \left(c_1c_2 + s_1s_2\right) + i\left(c_1s_2 + s_1c_2\right)J
-= \cosh\frac{\psi_1+\psi_2}{2} + i\sinh\frac{\psi_1+\psi_2}{2}\hat n
+= \cosh\frac{\psi_1+\psi_2}{2} + i\sinh\frac{\psi_1+\psi_2}{2}\hat u_2
 = \tilde{\Lambda}(\psi_1+\psi_2).
 \tag{3}
 $$
-The cross terms combine by the addition formulas for $\cosh$ and $\sinh$. The product is Hermitian, lies in $\mathbb{M}_+$, and has unit norm, so it is a pure boost along $\hat n$: **boosts in a common direction form a one-parameter subgroup**, and their rapidities add.
+The cross terms combine by the addition formulas for $\cosh$ and $\sinh$. The product is Hermitian, lies in $\mathbb{M}_+$, and has unit norm, so it is a pure boost along $\hat u_2$: **boosts in a common direction form a one-parameter subgroup**, and their rapidities add.
 
 **(b)** The product rotor has rapidity $\psi_1+\psi_2$, and the velocity it represents is $w = c\tanh(\psi_1+\psi_2)$. Using $\tanh\psi_i = u_i/c$,
 $$
@@ -109,7 +109,7 @@ For $u_1 = 0.5c$, $u_2 = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, which is 
 
 ## Problem 3: Non-Collinear Boosts and the Thomas–Wigner Rotation
 
-**Statement.** Let $\tilde{\Lambda}_1$ have rapidity $\psi_1$ along $\hat n_1$ and $\tilde{\Lambda}_2$ rapidity $\psi_2$ along $\hat n_2$, with $\hat n_1\cdot\hat n_2 = \cos\phi$ and $0<\phi<\pi$.
+**Statement.** Let $\tilde{\Lambda}_1$ have rapidity $\psi_1$ along $\hat u_2$ and $\tilde{\Lambda}_2$ rapidity $\psi_2$ along $\hat u_3$, with $\hat u_2\cdot\hat u_3 = \cos\phi$ and $0<\phi<\pi$.
 
 **(a)** Compute the product $P = \tilde{\Lambda}_2\tilde{\Lambda}_1$ and show that it is Hermitian if and only if $\phi\in\{0,\pi\}$; for $0<\phi<\pi$ it is not a pure boost.
 
@@ -117,7 +117,7 @@ For $u_1 = 0.5c$, $u_2 = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, which is 
 
 **(c)** Verify the special case of equal orthogonal rapidities, and compute a numerical instance.
 
-**Solution. (a)** With $c_i = \cosh\frac{\psi_i}{2}$, $s_i = \sinh\frac{\psi_i}{2}$, $J_i = \hat n_i$, and the quaternion product identity $J_2J_1 = -J_2\cdot J_1 + J_2\times J_1$ for unit pure quaternions,
+**Solution. (a)** With $c_i = \cosh\frac{\psi_i}{2}$, $s_i = \sinh\frac{\psi_i}{2}$, $J_i = \hat u_2_i$, and the quaternion product identity $J_2J_1 = -J_2\cdot J_1 + J_2\times J_1$ for unit pure quaternions,
 $$
 (iJ_2)(iJ_1) = -J_2J_1 = \cos\phi + J_1\times J_2 .
 $$
@@ -125,11 +125,11 @@ Hence
 $$
 P = \tilde{\Lambda}_2\tilde{\Lambda}_1
 = \underbrace{\left(c_1c_2 + s_1s_2\cos\phi\right)}_{a}
-+ \underbrace{s_1s_2\,\hat n_1\times\hat n_2}_{\vec q}
-+ i\underbrace{\left(c_2s_1\hat n_1 + c_1s_2\hat n_2\right)}_{\vec w},
++ \underbrace{s_1s_2\,\hat u_2\times\hat u_3}_{\vec q}
++ i\underbrace{\left(c_2s_1\hat u_2 + c_1s_2\hat u_3\right)}_{\vec w},
 \tag{5}
 $$
-where $a$ is a real scalar, $\vec q$ is a real vector of magnitude $s_1s_2\sin\phi$, and $i\vec w$ is an imaginary vector. The real vector part $\vec q$ is orthogonal to $\vec w$, because $\vec n_1\times\vec n_2$ is orthogonal to both $\hat n_1$ and $\hat n_2$. The element $P$ is Hermitian exactly when its real vector part vanishes, i.e. when $s_1s_2\sin\phi = 0$. For nonzero rapidities this means $\sin\phi = 0$, so a product of two boosts is a pure boost only when the two directions are parallel or antiparallel. Otherwise it is a boost together with a rotation: the product has left $\mathbb{M}_+$.
+where $a$ is a real scalar, $\vec q$ is a real vector of magnitude $s_1s_2\sin\phi$, and $i\vec w$ is an imaginary vector. The real vector part $\vec q$ is orthogonal to $\vec w$, because $\vec u_2\times\vec u_3$ is orthogonal to both $\hat u_2$ and $\hat u_3$. The element $P$ is Hermitian exactly when its real vector part vanishes, i.e. when $s_1s_2\sin\phi = 0$. For nonzero rapidities this means $\sin\phi = 0$, so a product of two boosts is a pure boost only when the two directions are parallel or antiparallel. Otherwise it is a boost together with a rotation: the product has left $\mathbb{M}_+$.
 
 **(b)** Write $P = a + \vec q + i\vec w$. Its biquaternion norm is, using $\vec q\cdot\vec w=0$,
 $$
@@ -148,9 +148,9 @@ P P^\dagger = \left(a^2 + |\vec q|^2 + |\vec w|^2\right) + 2i\left(a\vec w + \ve
 $$
 The element $PP^\dagger$ is Hermitian and positive (it is $\tilde{H}^2$ for the required boost), so it has a unique positive Hermitian square root
 $$
-\tilde{H} = \sqrt{PP^\dagger} = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\hat m,
+\tilde{H} = \sqrt{PP^\dagger} = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\hat u_4,
 \qquad
-\cosh\Psi = \Sigma, \quad \sinh\Psi\,\hat m = \vec T.
+\cosh\Psi = \Sigma, \quad \sinh\Psi\,\hat u_4 = \vec T.
 $$
 Expanding $\Sigma = a^2 + |\vec q|^2 + |\vec w|^2$ with the definitions (5) and simplifying gives the standard total rapidity
 $$
@@ -160,13 +160,13 @@ $$
 The residual element
 $$
 \tilde{R} = \tilde{H}^{-1}P = \tilde{H}^{\natural}P
-= \left(\cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\hat m\right)\left(a + \vec q + i\vec w\right)
+= \left(\cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\hat u_4\right)\left(a + \vec q + i\vec w\right)
 $$
 is the unitary factor of the polar decomposition of $P$ (equivalently $N(\tilde{R}) = N(\tilde{H})^{-1}N(P) = 1$ and $\tilde{R}\tilde{R}^{\natural} = e_0$ with $\tilde{R}$ a unit real quaternion). Its scalar part is
 $$
-\mathrm{Sc}(\tilde{R}) = a\cosh\frac{\Psi}{2} - \sinh\frac{\Psi}{2}\left(\hat m\cdot\vec w\right),
+\mathrm{Sc}(\tilde{R}) = a\cosh\frac{\Psi}{2} - \sinh\frac{\Psi}{2}\left(\hat u_4\cdot\vec w\right),
 $$
-where the minus sign comes from the $-\vec A\cdot\vec B$ term of the quaternion product, and the term involving $\vec q$ vanishes because $\hat m\perp\vec q$. Now $\hat m\cdot\vec w = \vec T\cdot\vec w/\sinh\Psi = 2a|\vec w|^2/\sinh\Psi$, so
+where the minus sign comes from the $-\vec A\cdot\vec B$ term of the quaternion product, and the term involving $\vec q$ vanishes because $\hat u_4\perp\vec q$. Now $\hat u_4\cdot\vec w = \vec T\cdot\vec w/\sinh\Psi = 2a|\vec w|^2/\sinh\Psi$, so
 $$
 \mathrm{Sc}(\tilde{R}) = a\cosh\frac{\Psi}{2} - \frac{a|\vec w|^2}{\cosh\frac{\Psi}{2}}
 = \frac{a\left(\cosh^2\frac{\Psi}{2} - |\vec w|^2\right)}{\cosh\frac{\Psi}{2}} .
@@ -175,7 +175,7 @@ From (6) and $\Sigma$ one has $\cosh^2\frac{\Psi}{2} = \frac{1+\Sigma}{2} = a^2 
 $$
 \mathrm{Sc}(\tilde{R}) = \frac{a}{\cosh\frac{\Psi}{2}}.
 $$
-Because $\tilde{R}$ is a unit real quaternion — a spatial rotation rotor — it has the form $\tilde{R} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\hat k$ with $\hat k$ its axis. Comparing scalar parts identifies the **Thomas–Wigner angle** $\theta_W$:
+Because $\tilde{R}$ is a unit real quaternion — a spatial rotation rotor — it has the form $\tilde{R} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\hat u_{\mathrm r}$ with $\hat u_{\mathrm r}$ its axis. Comparing scalar parts identifies the **Thomas–Wigner angle** $\theta_W$:
 $$
 \cos\frac{\theta_W}{2} = \frac{a}{\cosh\frac{\Psi}{2}}
 = \frac{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} + \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}{\cosh\frac{\Psi}{2}},
@@ -189,16 +189,16 @@ $$
 $$
 The numerator is non-negative for $0<\phi<\pi$ and the denominator $a$ is positive for every $\phi$, since $a\ge\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} - \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2} = \cosh\frac{\psi_1-\psi_2}{2}>0$. Hence $0\le\theta_W<\pi$. The rotation axis is the normal to the plane of the two boost directions,
 $$
-\hat k = \widehat{\vec n_1\times\vec n_2},
+\hat u_{\mathrm r} = \widehat{\vec u_2\times\vec u_3},
 \tag{11}
 $$
 which we verified numerically in several non-coplanar configurations; it is the direction of the antisymmetric, real-vector part $\vec q$ of $P$ in (5). With this, the decomposition is
 $$
 \tilde{\Lambda}_2\tilde{\Lambda}_1 = \tilde{H}\tilde{R},
 \qquad
-\tilde{H} = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\hat m,
+\tilde{H} = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\hat u_4,
 \qquad
-\tilde{R} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\widehat{\vec n_1\times\vec n_2}.
+\tilde{R} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\widehat{\vec u_2\times\vec u_3}.
 \tag{12}
 $$
 The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde{R}\tilde{H}'$ with $\tilde{H}' = \tilde{R}^{-1}\tilde{H}\tilde{R}$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\Psi$ but a different axis; only $\Psi$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
@@ -210,7 +210,7 @@ $$
 $$
 This is exact; it was checked numerically for $\psi = 0.5, 1, 1.5, 2, 3$ to $10^{-12}$.
 
-**Numerical instance.** Take $\psi_1 = \psi_2 = \operatorname{atanh}0.6 = 0.6931472$ along $\hat n_1 = \hat{e}_1$ and $\hat n_2 = \hat{e}_2$, so that each boost has speed $0.6c$. Then (5) gives, in the basis $(e_0,e_1,e_2,e_3)$,
+**Numerical instance.** Take $\psi_1 = \psi_2 = \operatorname{atanh}0.6 = 0.6931472$ along $\hat u_2 = \hat{e}_1$ and $\hat u_3 = \hat{e}_2$, so that each boost has speed $0.6c$. Then (5) gives, in the basis $(e_0,e_1,e_2,e_3)$,
 $$
 P = \tilde{\Lambda}_2\tilde{\Lambda}_1 = 1.125 + 0.375\,i\,e_1 + 0.375\,i\,e_2 + 0.125\,e_3,
 $$
@@ -218,7 +218,7 @@ which is not Hermitian: the real $e_3$ term $s_1s_2 = 0.125$ is the antisymmetri
 $$
 \tilde{R} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\hat{e}_3 = 0.9938837 + 0.1104315\,\hat{e}_3 .
 $$
-The frame reached by $P$ has, in the lab, the four-velocity $ic\,P^{-1}(P^{-1})^{*} = 1.5625i\,e_0 + 0.9375\,e_1 + 0.75\,e_2$, i.e. velocity $(0.6, 0.48, 0)c$: magnitude $0.7683749c$ and direction $38.66^{\circ}$ from $\hat{e}_1$. The boost part $\tilde{H}$ has axis $\hat m = (0.6246950, 0.7808688, 0)$ at $51.34^{\circ}$, which is the velocity direction rotated by the Wigner angle, $\hat m = \tilde{R}\hat V\tilde{R}^{-1}$. The two orderings do not agree: $\tilde{\Lambda}_1\tilde{\Lambda}_2$ is a different rotor, with the opposite sense of Wigner rotation, so the two boost directions do not merely "add".
+The frame reached by $P$ has, in the lab, the four-velocity $ic\,P^{-1}(P^{-1})^{*} = 1.5625i\,e_0 + 0.9375\,e_1 + 0.75\,e_2$, i.e. velocity $(0.6, 0.48, 0)c$: magnitude $0.7683749c$ and direction $38.66^{\circ}$ from $\hat{e}_1$. The boost part $\tilde{H}$ has axis $\hat u_4 = (0.6246950, 0.7808688, 0)$ at $51.34^{\circ}$, which is the velocity direction rotated by the Wigner angle, $\hat u_4 = \tilde{R}\hat u_5\tilde{R}^{-1}$. The two orderings do not agree: $\tilde{\Lambda}_1\tilde{\Lambda}_2$ is a different rotor, with the opposite sense of Wigner rotation, so the two boost directions do not merely "add".
 
 ## Problem 4: The Parent's Square-Root Relation and the Direction of the Boost
 
@@ -244,30 +244,30 @@ $$
 $$
 Writing $\gamma = \cosh\psi$, $\gamma v/c = \sinh\psi$, this is
 $$
--\frac{i}{c}\tilde{V}^{\natural} = \cosh\psi + i\sinh\psi\,\hat v
-= \exp\!\left(\psi\,i\hat v\right),
+-\frac{i}{c}\tilde{V}^{\natural} = \cosh\psi + i\sinh\psi\,\hat u_6
+= \exp\!\left(\psi\,i\hat u_6\right),
 $$
-where the exponential is hyperbolic because $(i\hat v)^2 = i^2\hat v^2 = (-1)(-1) = +e_0$. Its positive Hermitian square root is
+where the exponential is hyperbolic because $(i\hat u_6)^2 = i^2\hat u_6^2 = (-1)(-1) = +e_0$. Its positive Hermitian square root is
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat v,
+\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_6,
 $$
-which is precisely the boost biquaternion of *The Lorentz Transformation as a Biquaternionic Rotation* with $\hat u = \hat v$ and rapidity $\psi = \operatorname{atanh}(v/c)$. It is Hermitian and of unit norm. The element $-\tfrac{i}{c}\tilde{V}^{\natural}$ has eigenvalues $e^{\pm\psi}>0$ in the matrix representation, so its two square roots are $\pm\tilde{\Lambda}$; the choice $\mathrm{Sc}>0$ selects $+\tilde{\Lambda}$. Note that the quaternion conjugate $\tilde{\Lambda}^{\natural}$, the boost of rapidity $-\psi$, is **not** a square root of $-\tfrac{i}{c}\tilde{V}^{\natural}$: it squares to $\cosh\psi - i\sinh\psi\hat v$. The two square roots differ by the kernel element $-1$ of $SL(2,\mathbb{C})\to SO^+(1,3)$ and generate the same Lorentz transformation; the conjugate is a different transformation.
+which is precisely the boost biquaternion of *The Lorentz Transformation as a Biquaternionic Rotation* with $\hat u_1 = \hat u_6$ and rapidity $\psi = \operatorname{atanh}(v/c)$. It is Hermitian and of unit norm. The element $-\tfrac{i}{c}\tilde{V}^{\natural}$ has eigenvalues $e^{\pm\psi}>0$ in the matrix representation, so its two square roots are $\pm\tilde{\Lambda}$; the choice $\mathrm{Sc}>0$ selects $+\tilde{\Lambda}$. Note that the quaternion conjugate $\tilde{\Lambda}^{\natural}$, the boost of rapidity $-\psi$, is **not** a square root of $-\tfrac{i}{c}\tilde{V}^{\natural}$: it squares to $\cosh\psi - i\sinh\psi\hat u_6$. The two square roots differ by the kernel element $-1$ of $SL(2,\mathbb{C})\to SO^+(1,3)$ and generate the same Lorentz transformation; the conjugate is a different transformation.
 
 **(b)** Since $\tilde{\Lambda}$ is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and $P\,\tilde{V}\,P^\dagger$ for the pure boost reduces to a computation already made in Problem 1 with $\vec u = \vec v$ and $\psi_u = \psi_v$; by part (d) there, the rapidities subtract, $\psi_v-\psi_v = 0$, giving
 $$
 \tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} = ic\,e_0 .
 $$
-Equivalently, directly: $\tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} = ic\gamma\tilde{\Lambda}^2 + \gamma v\,\tilde{\Lambda}\hat v\tilde{\Lambda}$, and since $\tilde{\Lambda}$ commutes with $\hat v$, $\tilde{\Lambda}\hat v\tilde{\Lambda} = \hat v\tilde{\Lambda}^2 = \cosh\psi\,\hat v - i\sinh\psi$. Hence the vector part is $\gamma v\cosh\psi - c\gamma\sinh\psi = c\gamma\sinh\psi - c\gamma\sinh\psi = 0$ and the scalar part is $ic\gamma(\cosh\psi - \tanh\psi\sinh\psi) = ic$. So (14) is the rotor of the transformation *lab $\to$ rest*.
+Equivalently, directly: $\tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} = ic\gamma\tilde{\Lambda}^2 + \gamma v\,\tilde{\Lambda}\hat u_6\tilde{\Lambda}$, and since $\tilde{\Lambda}$ commutes with $\hat u_6$, $\tilde{\Lambda}\hat u_6\tilde{\Lambda} = \hat u_6\tilde{\Lambda}^2 = \cosh\psi\,\hat u_6 - i\sinh\psi$. Hence the vector part is $\gamma v\cosh\psi - c\gamma\sinh\psi = c\gamma\sinh\psi - c\gamma\sinh\psi = 0$ and the scalar part is $ic\gamma(\cosh\psi - \tanh\psi\sinh\psi) = ic$. So (14) is the rotor of the transformation *lab $\to$ rest*.
 
 **(c)** Conjugating the rest four-velocity by $\tilde{\Lambda}$ instead gives
 $$
 \tilde{\Lambda}(ic\,e_0)\tilde{\Lambda}^{*} = ic\,\tilde{\Lambda}^2
-= ic\left(\cosh\psi + i\sinh\psi\,\hat v\right)
-= ic\cosh\psi\,e_0 - c\sinh\psi\,\hat v,
+= ic\left(\cosh\psi + i\sinh\psi\,\hat u_6\right)
+= ic\cosh\psi\,e_0 - c\sinh\psi\,\hat u_6,
 $$
-whose induced velocity is $-c\tanh\psi\,\hat v = -\vec v$. Thus the rotor built from $\tilde{V}$ carries the lab to the rest frame and, applied in the opposite direction, produces the *negative* of the particle's velocity. The rotor that carries the rest frame to $\tilde{V}$ is the inverse, i.e. the quaternion conjugate:
+whose induced velocity is $-c\tanh\psi\,\hat u_6 = -\vec v$. Thus the rotor built from $\tilde{V}$ carries the lab to the rest frame and, applied in the opposite direction, produces the *negative* of the particle's velocity. The rotor that carries the rest frame to $\tilde{V}$ is the inverse, i.e. the quaternion conjugate:
 $$
-\tilde{\Lambda}^{\natural}\,(ic\,e_0)\,\overline{\tilde{\Lambda}} = ic\,(\tilde{\Lambda}^{\natural})^2 = ic\cosh\psi\,e_0 + c\sinh\psi\,\hat v,
+\tilde{\Lambda}^{\natural}\,(ic\,e_0)\,\overline{\tilde{\Lambda}} = ic\,(\tilde{\Lambda}^{\natural})^2 = ic\cosh\psi\,e_0 + c\sinh\psi\,\hat u_6,
 \qquad \text{velocity} = +\vec v.
 $$
 The sign is therefore fixed entirely by whether one uses $\tilde{V}^{\natural}$ (as the parent does) or $\tilde{V}$ in (14): the conjugate in the formula is what makes (14) the lab-to-rest rotor. The parent writes the formula but does not state the direction; a reader who reads "the boost biquaternion associated with $\tilde{V}$" as the rotor that *produces* $\tilde{V}$ will use $\tilde{\Lambda}$ where $\tilde{\Lambda}^{\natural}$ is required and obtain $-\vec v$ instead of $+\vec v$. This is a genuine gap in the parent's statement, although the formula itself is correct and its displayed verification (the four-potential transformation with $\vec u$ the boost velocity) is in the consistent direction.
@@ -278,10 +278,10 @@ The sign is therefore fixed entirely by whether one uses $\tilde{V}^{\natural}$ 
 
 **Statement.** Let the boost parameter vary along a scalar parameter $\tau$ instead of being fixed, and let the material coordinate of the moving frame's origin be
 $$
-\tilde{Q}(\tau) = ic\,\tau\cosh\chi(\tau)\,e_0 + c\,\tau\sinh\chi(\tau)\,\hat n,
+\tilde{Q}(\tau) = ic\,\tau\cosh\chi(\tau)\,e_0 + c\,\tau\sinh\chi(\tau)\,\hat u_2,
 \qquad \chi = \chi(\tau),
 $$
-so that $t = \tau\cosh\chi$ and the displacement along $\hat n$ is $x_1 = c\tau\sinh\chi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dt$.
+so that $t = \tau\cosh\chi$ and the displacement along $\hat u_2$ is $x_1 = c\tau\sinh\chi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dt$.
 
 **(a)** Show that
 $$
@@ -333,9 +333,9 @@ The following are left to the reader; they extend the same tools and use the sam
 
 1. **Boosting a four-momentum.** Starting from $\tilde{P} = m\tilde{V}$ and Problem 1, show that $\tilde{\Lambda}_{\vec u}\tilde{P}\tilde{\Lambda}_{\vec u}^{*} = iE'/c\,e_0 + \vec p'$ with $E' = \gamma_u(E-\vec u\cdot\vec p)$ and $\vec p' = \vec p + (\gamma_u-1)\frac{\vec u\cdot\vec p}{u^2}\vec u - \gamma_u\frac{E}{c^2}\vec u$. Verify the mass shell $\tilde{P}'{\tilde{P}^{\natural}}' = -m^2c^2$ and recover the aberration of light by setting $m=0$.
 
-2. **Antiparallel boosts.** For $\hat n_2 = -\hat n_1$, show that $\tilde{\Lambda}_2\tilde{\Lambda}_1$ is a pure boost of rapidity $|\psi_1-\psi_2|$ (with the sign determined by which rapidity is larger) and that the Wigner angle (10) vanishes. Deduce the subtraction formula $w = |u_1-u_2|/(1-u_1u_2/c^2)$ and compare with Problem 1(d).
+2. **Antiparallel boosts.** For $\hat u_3 = -\hat u_2$, show that $\tilde{\Lambda}_2\tilde{\Lambda}_1$ is a pure boost of rapidity $|\psi_1-\psi_2|$ (with the sign determined by which rapidity is larger) and that the Wigner angle (10) vanishes. Deduce the subtraction formula $w = |u_1-u_2|/(1-u_1u_2/c^2)$ and compare with Problem 1(d).
 
-3. **The two orderings.** Show that $\tilde{\Lambda}_1\tilde{\Lambda}_2$ and $\tilde{\Lambda}_2\tilde{\Lambda}_1$ are related by conjugation with a unit quaternion, and determine the relative rotation. For equal projected rapidities show that the relative rotation is by $2\theta_W$ about $\widehat{\vec n_1\times\vec n_2}$.
+3. **The two orderings.** Show that $\tilde{\Lambda}_1\tilde{\Lambda}_2$ and $\tilde{\Lambda}_2\tilde{\Lambda}_1$ are related by conjugation with a unit quaternion, and determine the relative rotation. For equal projected rapidities show that the relative rotation is by $2\theta_W$ about $\widehat{\vec u_2\times\vec u_3}$.
 
 4. **The non-relativistic limit.** Expand (8) and (10) for $u_i/c\ll 1$. Show that the composed velocity tends to $\vec u_1+\vec u_2$ and that $\theta_W = O(u_1u_2/c^2)$, giving the leading correction to Galilean velocity addition. Identify which term in (5) is responsible for the Wigner rotation in this limit.
 
@@ -347,13 +347,13 @@ The following are left to the reader; they extend the same tools and use the sam
 
 We have applied the boost biquaternion and the rotor conjugation to four-velocities and to the composition of boosts.
 
-1. **Boosting a four-velocity.** For $\tilde{V} = \gamma(ic\,e_0+\vec v)$ and $\tilde{\Lambda}_{\vec u} = \cosh\frac{\psi_u}{2}+i\sinh\frac{\psi_u}{2}\hat u$, the rotor conjugation gives (1): a four-velocity in $\mathbb{M}_-$ with $N = -c^2$, scalar part $ic\gamma_u\gamma(1-\vec u\cdot\vec v/c^2)$, and vector part $\gamma[\vec v+(\gamma_u-1)\frac{\vec u\cdot\vec v}{u^2}\vec u-\gamma_u\vec u]$. The induced velocity is the standard parallel–perpendicular transformation (2); in the collinear case it is the rapidity subtraction $v' = (v-u)/(1-uv/c^2)$.
+1. **Boosting a four-velocity.** For $\tilde{V} = \gamma(ic\,e_0+\vec v)$ and $\tilde{\Lambda}_{\vec u} = \cosh\frac{\psi_u}{2}+i\sinh\frac{\psi_u}{2}\hat u_1$, the rotor conjugation gives (1): a four-velocity in $\mathbb{M}_-$ with $N = -c^2$, scalar part $ic\gamma_u\gamma(1-\vec u\cdot\vec v/c^2)$, and vector part $\gamma[\vec v+(\gamma_u-1)\frac{\vec u\cdot\vec v}{u^2}\vec u-\gamma_u\vec u]$. The induced velocity is the standard parallel–perpendicular transformation (2); in the collinear case it is the rapidity subtraction $v' = (v-u)/(1-uv/c^2)$.
 
 2. **Collinear composition.** Two boosts along one direction multiply to a pure boost of summed rapidity, (3), giving rapidity addition and the velocity-addition formula $w = (u_1+u_2)/(1+u_1u_2/c^2)$.
 
-3. **Non-collinear composition.** The product $P = \tilde{\Lambda}_2\tilde{\Lambda}_1$ is Hermitian only for parallel or antiparallel directions; otherwise it is a boost times a rotation, with total rapidity (8) and Thomas–Wigner angle (9)–(10), $\tan\frac{\theta_W}{2} = \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\phi}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}$, about the axis $\widehat{\vec n_1\times\vec n_2}$ (11). For equal orthogonal rapidities $\tan\frac{\theta_W}{2} = \tanh^2\frac{\psi}{2}$ exactly. The numerical instance $\psi_1=\psi_2=\operatorname{atanh}0.6$, orthogonal, has composed speed $0.7683749c$ and Wigner angle $12.68038^{\circ}$.
+3. **Non-collinear composition.** The product $P = \tilde{\Lambda}_2\tilde{\Lambda}_1$ is Hermitian only for parallel or antiparallel directions; otherwise it is a boost times a rotation, with total rapidity (8) and Thomas–Wigner angle (9)–(10), $\tan\frac{\theta_W}{2} = \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\phi}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}$, about the axis $\widehat{\vec u_2\times\vec u_3}$ (11). For equal orthogonal rapidities $\tan\frac{\theta_W}{2} = \tanh^2\frac{\psi}{2}$ exactly. The numerical instance $\psi_1=\psi_2=\operatorname{atanh}0.6$, orthogonal, has composed speed $0.7683749c$ and Wigner angle $12.68038^{\circ}$.
 
-4. **The parent's square-root relation.** $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat v$ is correct, with the branch $\mathrm{Sc}>0$; it is the **lab-to-rest** rotor, since $\tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} = ic\,e_0$ and $\tilde{\Lambda}(ic\,e_0)\tilde{\Lambda}^{*}$ has velocity $-\vec v$. The rest-to-lab rotor is the conjugate $\tilde{\Lambda}^{\natural}$. The four-velocity determines the rotor only up to a rotation of the rest frame; (14) selects the Hermitian representative.
+4. **The parent's square-root relation.** $\tilde{\Lambda} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_6$ is correct, with the branch $\mathrm{Sc}>0$; it is the **lab-to-rest** rotor, since $\tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} = ic\,e_0$ and $\tilde{\Lambda}(ic\,e_0)\tilde{\Lambda}^{*}$ has velocity $-\vec v$. The rest-to-lab rotor is the conjugate $\tilde{\Lambda}^{\natural}$. The four-velocity determines the rotor only up to a rotation of the rest frame; (14) selects the Hermitian representative.
 
 5. **A varying rapidity.** When the boost parameter is a function $\chi(\tau)$ of a scalar trajectory parameter, the coordinate velocity (Problem 5) is $\beta = (\tanh\chi + \tau\chi')/(1 + \tau\chi'\tanh\chi)$, the same rational form as the addition law with $\tau\chi'$ replacing a second rapidity, and the worldline is timelike exactly while $|\tau\chi'| < 1$. For $\chi = \alpha\tau$ the velocity reaches $1$ at $\alpha\tau = 1$ and peaks at $\beta = 1.02049$ at $\alpha\tau = \sqrt{2}$. This is not a counterexample to Problem 2: it composes a *varying* rotor, not two fixed rapidities, and past $|\tau\chi'| = 1$ the worldline is no longer timelike.
 
@@ -374,17 +374,17 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 | $\tilde{V} = \gamma(ic\,e_0+\vec v)$ | Four-velocity, $N(\tilde{V})=-c^2$ |
 | $\tilde{P} = m\tilde{V} = iE/c\,e_0+\vec p$ | Four-momentum |
 | $\gamma = (1-\vec v^2/c^2)^{-1/2}$, $\gamma_u$ | Lorentz factors |
-| $\tilde{\Lambda}_{\vec u} = \cosh\frac{\psi_u}{2}+i\sinh\frac{\psi_u}{2}\hat u$ | Boost biquaternion, $\tanh\psi_u = u/c$ |
+| $\tilde{\Lambda}_{\vec u} = \cosh\frac{\psi_u}{2}+i\sinh\frac{\psi_u}{2}\hat u_1$ | Boost biquaternion, $\tanh\psi_u = u/c$ |
 | $\psi_v$, $\psi_1$, $\psi_2$ | Rapidities |
-| $\vec u$, $\hat n_i$ | Boost velocity, boost directions |
-| $\phi$ | Angle between $\hat n_1$ and $\hat n_2$ |
+| $\vec u$, $\hat u_2_i$ | Boost velocity, boost directions |
+| $\phi$ | Angle between $\hat u_2$ and $\hat u_3$ |
 | $P = \tilde{\Lambda}_2\tilde{\Lambda}_1$ | Product of two boost rotors |
 | $a$, $\vec q$, $\vec w$ | Real scalar, real vector, real vector in $P = a+\vec q+i\vec w$ |
 | $\tilde{H}$, $\tilde{R}$ | Boost part and rotation part of $P = \tilde{H}\tilde{R}$ |
 | $\Psi$ | Total rapidity, $\cosh\Psi = \cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\phi$ |
 | $\theta_W$ | Thomas–Wigner angle |
-| $\hat m$ | Axis of the boost part $\tilde{H}$ |
-| $\hat k = \widehat{\vec n_1\times\vec n_2}$ | Axis of the Wigner rotation |
+| $\hat u_4$ | Axis of the boost part $\tilde{H}$ |
+| $\hat u_{\mathrm r} = \widehat{\vec u_2\times\vec u_3}$ | Axis of the Wigner rotation |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ |
 
 ## Further Reading

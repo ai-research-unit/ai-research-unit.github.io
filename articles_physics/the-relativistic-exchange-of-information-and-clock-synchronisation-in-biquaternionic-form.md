@@ -8,7 +8,7 @@ The two themes are one. A signal is a null displacement, and a null displacement
 
 The article develops the following.
 
-- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\hat n$, the null condition is $\Delta\vec x = \pm c\,\Delta t\,\hat n$, and the retarded and advanced combinations $u = t - \hat n\cdot\vec x/c$, $v = t + \hat n\cdot\vec x/c$ are constant along the outgoing and incoming rays.
+- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\hat u_{\mathrm s}$, the null condition is $\Delta\vec x = \pm c\,\Delta t\,\hat u_{\mathrm s}$, and the retarded and advanced combinations $u = t - \hat u_{\mathrm s}\cdot\vec x/c$, $v = t + \hat u_{\mathrm s}\cdot\vec x/c$ are constant along the outgoing and incoming rays.
 - **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-N(d\tilde{Q})}/c$, and the clock four-velocity is $\tilde{V} = d\tilde{Q}/d\tau$ with $N(\tilde{V}) = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $t_2 = (t_1+t_3)/2$, and the distance is $L = c(t_3-t_1)/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
@@ -41,33 +41,33 @@ $$
 
 **an exchange of information between two events along a light signal is possible exactly when their displacement is null.** Because a null displacement is a zero divisor of $\mathbb{B}$ (companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*), the channel through which signals pass is the algebra's degenerate locus. The barrier of the companion article and the channel of this one are the same set; the cone forbids the spacelike separations and carries the null ones.
 
-Writing the propagation direction as the real unit vector $\hat n$, the null condition becomes the vector equation
+Writing the propagation direction as the real unit vector $\hat u_{\mathrm s}$, the null condition becomes the vector equation
 
 $$
-\Delta\vec x = \pm c\,\Delta t\,\hat n,
+\Delta\vec x = \pm c\,\Delta t\,\hat u_{\mathrm s},
 $$
 
-the sign selecting whether the signal travels from $A$ to $B$ along $+\hat n$ or along $-\hat n$. The two directional solutions are the two sheets of the local cone, and the sign is the time orientation: with $\Delta t > 0$ the displacement is future-directed.
+the sign selecting whether the signal travels from $A$ to $B$ along $+\hat u_{\mathrm s}$ or along $-\hat u_{\mathrm s}$. The two directional solutions are the two sheets of the local cone, and the sign is the time orientation: with $\Delta t > 0$ the displacement is future-directed.
 
 ### Retarded and Advanced Coordinates
 
 It is useful to package the two directions into the retarded and advanced coordinates
 
 $$
-u = t - \frac{\hat n\cdot\vec x}{c},
+u = t - \frac{\hat u_{\mathrm s}\cdot\vec x}{c},
 \qquad
-v = t + \frac{\hat n\cdot\vec x}{c}.
+v = t + \frac{\hat u_{\mathrm s}\cdot\vec x}{c}.
 $$
 
-Along an outgoing signal propagating in the $+\hat n$ direction the coordinate $u$ is constant, and along an incoming signal propagating in the $-\hat n$ direction the coordinate $v$ is constant. The verification is one line: if $\vec x(t) = \vec x_0 + c(t-t_0)\hat n$ then
+Along an outgoing signal propagating in the $+\hat u_{\mathrm s}$ direction the coordinate $u$ is constant, and along an incoming signal propagating in the $-\hat u_{\mathrm s}$ direction the coordinate $v$ is constant. The verification is one line: if $\vec x(t) = \vec x_0 + c(t-t_0)\hat u_{\mathrm s}$ then
 
 $$
-u(t) = t - \frac{\hat n\cdot\vec x_0}{c} - (t-t_0) = t_0 - \frac{\hat n\cdot\vec x_0}{c},
+u(t) = t - \frac{\hat u_{\mathrm s}\cdot\vec x_0}{c} - (t-t_0) = t_0 - \frac{\hat u_{\mathrm s}\cdot\vec x_0}{c},
 $$
 
 independent of $t$, while $v$ increases at rate $2$; and conversely for the incoming ray.
 
-For a displacement whose spatial part is collinear with $\hat n$ — which is the case for a signal along $\hat n$ — the biquaternion norm factorizes in these coordinates:
+For a displacement whose spatial part is collinear with $\hat u_{\mathrm s}$ — which is the case for a signal along $\hat u_{\mathrm s}$ — the biquaternion norm factorizes in these coordinates:
 
 $$
 N(\tilde{Q}_{BA}) = -c^2\,\Delta u\,\Delta v .
@@ -258,7 +258,7 @@ a = \gamma\left(a' + \beta A'_\parallel\right),
 A'_\parallel = \hat e_1\cdot\vec A',
 $$
 
-the inverse of the relations $a' = \gamma(a-\beta A_\parallel)$, $A'_\parallel = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\psi}{2}\hat u$ carries $S$ to the frame moving with $+\vec u$, and the inverse relation above carries $S'$ back to $S$.
+the inverse of the relations $a' = \gamma(a-\beta A_\parallel)$, $A'_\parallel = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ carries $S$ to the frame moving with $+\vec u$, and the inverse relation above carries $S'$ back to $S$.
 
 Now apply this to two events that are simultaneous in $S'$ and separated along the boost direction by $\Delta x'$. Then $a' = c\,\Delta t' = 0$ and $A'_\parallel = \Delta x'$, so
 
@@ -320,7 +320,7 @@ $$
 = \frac{4\,\vec\Omega\cdot\vec A}{c^2},
 $$
 
-where $\vec A = \pi R^2\,\hat n$ is the vector area of the loop. For $R = 1\,\mathrm{m}$ and $\Omega = 1\,\mathrm{rad\,s^{-1}}$ direct evaluation gives $\Delta t \approx 1.398\times10^{-16}\,\mathrm{s}$, corresponding to an optical phase $2\pi c\,\Delta t/\lambda \approx 0.416\,\mathrm{rad}$ at $\lambda = 632.8\,\mathrm{nm}$; the first-order formula reproduces the exact round-trip difference to better than one part in $10^{7}$, the residual being floating-point cancellation in the difference of the two nearly equal times.
+where $\vec A = \pi R^2\,\hat u_{\mathrm s}$ is the vector area of the loop. For $R = 1\,\mathrm{m}$ and $\Omega = 1\,\mathrm{rad\,s^{-1}}$ direct evaluation gives $\Delta t \approx 1.398\times10^{-16}\,\mathrm{s}$, corresponding to an optical phase $2\pi c\,\Delta t/\lambda \approx 0.416\,\mathrm{rad}$ at $\lambda = 632.8\,\mathrm{nm}$; the first-order formula reproduces the exact round-trip difference to better than one part in $10^{7}$, the residual being floating-point cancellation in the difference of the two nearly equal times.
 
 The consequence for clock synchronisation is immediate. Take a ring of clocks around the loop and synchronise each neighbouring pair by the Einstein rule, going once around in one direction; then the closure of the chain disagrees with the initial clock by $\Delta t$, and synchronising in the opposite direction gives the opposite disagreement. There is no assignment of clock readings that is Einstein-synchronised around both directions at once, so **Einstein synchronisation on a rotating platform is not transitive**. The exchange of information is perfectly well defined for every pair, and the round-trip times are measurable; what fails is the global conversion of the round-trip data into a single-valued time coordinate. On a rotating platform the failure is physical and not merely a convention, because the two directions are physically distinguishable by the interference of the two beams. The effect is the standard Sagnac effect, and its relativistic treatment is cited below.
 
@@ -343,7 +343,7 @@ The conventions and the results taken over from the relativity series are those 
 
 The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the biquaternion norm along worldlines.
 
-1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta\vec x| = c\,\Delta t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta\vec x = \pm c\,\Delta t\,\hat n$, and the retarded coordinate $u = t-\hat n\cdot\vec x/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega u$.
+1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta\vec x| = c\,\Delta t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta\vec x = \pm c\,\Delta t\,\hat u_{\mathrm s}$, and the retarded coordinate $u = t-\hat u_{\mathrm s}\cdot\vec x/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega u$.
 
 2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-N(d\tilde{Q})}/c = \int\sqrt{1-\vec v^2/c^2}\,dt$, and the clock four-velocity is $\tilde{V} = d\tilde{Q}/d\tau = \gamma(ic\,e_0+\vec v)$ with $N(\tilde{V}) = -c^2$.
 
@@ -372,14 +372,14 @@ The exchange of information and the synchronisation of clocks are built from the
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric |
 | $\mathrm{Sc}$ | Scalar projection |
-| $\hat n$ | Propagation direction |
-| $u = t-\hat n\cdot\vec x/c$, $v = t+\hat n\cdot\vec x/c$ | Retarded and advanced radar coordinates |
+| $\hat u_{\mathrm s}$ | Propagation direction |
+| $u = t-\hat u_{\mathrm s}\cdot\vec x/c$, $v = t+\hat u_{\mathrm s}\cdot\vec x/c$ | Retarded and advanced radar coordinates |
 | $\tilde{K} = i\omega/c\,e_0+\vec k$ | Four-wavevector |
 | $\Phi = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega u$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{V} = \gamma(ic\,e_0+\vec v)$, $N(\tilde{V})=-c^2$ | Clock four-velocity |
 | $\beta = u/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
-| $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u$ | Boost rotor, $\tanh\psi=\beta$ |
+| $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ | Boost rotor, $\tanh\psi=\beta$ |
 | $t_1,t_2,t_3$ | Emission, reflection and reception times of the radar round trip |
 | $\varepsilon$ | Reichenbach synchronisation parameter, $t_2=t_1+\varepsilon(t_3-t_1)$ |
 | $k = \sqrt{(1+\beta)/(1-\beta)}$ | Bondi k-factor |

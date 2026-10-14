@@ -2,11 +2,11 @@
 
 ## Introduction
 
-A graded action of the graded algebra $B(H)$ on a graded Hilbert space $M$ is a bounded homomorphism $\rho:B(H)\to B(M)$ that raises the degree, $\rho(B(H)^i)M^j\subseteq M^{i+j}$. Its **adjoint action** is the map $\rho^\vee(T)=\rho(T)^*$ obtained by taking the Hilbert adjoint of each acting operator, and the two facts that organise its theory are that the adjoint reverses the product and that it preserves the degree. The first makes $\rho^\vee$ a homomorphism not of $B(H)$ but of the opposite algebra $B(H)^{\mathrm{op}}$, with the opposite multiplication $S\cdot T=TS$; the second makes it a *graded* action of that opposite algebra, so the sign rule of the graded commutator is inherited with the reversed order, and the sign that appears is the sign of the opposite grading. When the graded action is a $*$-representation, that is, when it intertwines the involution of $B(H)$ with the adjoint of $B(M)$, the adjoint action is the action itself composed with the involution; this agreement is the point at which the involution on the elements and the adjoint on the operators coincide, and it is proved here rather than assumed. The article is the module-level reading of the adjoint of the signed operators: the adjoint of the signed left multiplication is a signed left multiplication, the adjoint of the signed sandwich is a signed sandwich, and the adjoint of the graded action is a graded action of the opposite algebra.
+A graded action of the graded algebra $B(H)$ on a graded Hilbert space $M$ is a bounded homomorphism $\rho:B(H)\to B(M)$ that raises the degree, $\rho(B(H)^i)M^j\subseteq M^{i+j}$. Its **adjoint action** is the map $\rho^\vee(T)=\rho(T)^*$ obtained by taking the Hilbert adjoint of each acting operator, and the two facts that organise its theory are that the adjoint reverses the product and that it preserves the degree. The first makes $\rho^\vee$ a homomorphism not of $B(H)$ but of the opposite algebra $B(H)^{\mathrm{opp}}$, with the opposite multiplication $S\cdot T=TS$; the second makes it a *graded* action of that opposite algebra, so the sign rule of the graded commutator is inherited with the reversed order, and the sign that appears is the sign of the opposite grading. When the graded action is a $*$-representation, that is, when it intertwines the involution of $B(H)$ with the adjoint of $B(M)$, the adjoint action is the action itself composed with the involution; this agreement is the point at which the involution on the elements and the adjoint on the operators coincide, and it is proved here rather than assumed. The article is the module-level reading of the adjoint of the signed operators: the adjoint of the signed left multiplication is a signed left multiplication, the adjoint of the signed sandwich is a signed sandwich, and the adjoint of the graded action is a graded action of the opposite algebra.
 
 This article fixes the graded action and its adjoint, the adjoint action of the opposite graded algebra, the sign reversal of the graded commutator, the compatibility of the adjoint action with the grading and the parity operators, and the $*$-representation case in which the two actions agree. The graded action, the graded module and the sign rule are *The Graded Action on a Module over a Hilbert Space*; the adjoint of the one-sided and two-sided signed operators is *The Adjoint of the Left Multiplication on a Hilbert Space*, *The Signed Adjoint of the Left Multiplication on a Hilbert Space* and *The Signed Adjoint Sandwich on a Hilbert Space*; the abstract graded module and its opposite are *The Graded Action on a Module over a Graded Algebra* (Part II); the $*$-representations of $B(H)$ are *Bounded Operators on a Hilbert Space*.
 
-Throughout, $H=H^0\oplus H^1$ and $M=M^0\oplus M^1$ are graded Hilbert spaces over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with parity operators $\Gamma_H$ and $\Gamma_M$, the graded algebra is $B(H)=B(H)^0\oplus B(H)^1$ with grade involution $\alpha(T)=\Gamma_HT\Gamma_H$, and $\rho:B(H)\to B(M)$ is a bounded graded action. The **adjoint action** is $\rho^\vee(T)=\rho(T)^*$, $A^{\mathrm{op}}$ is the algebra with the reversed product $S\cdot T=TS$, and $|T|\in\mathbb{Z}/2$ is the degree.
+Throughout, $H=H^0\oplus H^1$ and $M=M^0\oplus M^1$ are graded Hilbert spaces over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$ with parity operators $\Gamma_H$ and $\Gamma_M$, the graded algebra is $B(H)=B(H)^0\oplus B(H)^1$ with grade involution $\alpha(T)=\Gamma_HT\Gamma_H$, and $\rho:B(H)\to B(M)$ is a bounded graded action. The **adjoint action** is $\rho^\vee(T)=\rho(T)^*$, $A^{\mathrm{opp}}$ is the algebra with the reversed product $S\cdot T=TS$, and $|T|\in\mathbb{Z}/2$ is the degree.
 
 ## The Graded Action and Its Adjoint
 
@@ -16,7 +16,7 @@ $$
 \rho^\vee(S\cdot T)=\rho^\vee(S)\rho^\vee(T),\qquad\text{that is}\qquad \rho(ST)^*=\rho(T)^*\rho(S)^* ,
 $$
 
-so $\rho^\vee$ is a representation of the opposite algebra $B(H)^{\mathrm{op}}$, not of $B(H)$; it is injective exactly when $\rho$ is, and it is isometric with $\|\rho^\vee(T)\|=\|\rho(T)\|$.
+so $\rho^\vee$ is a representation of the opposite algebra $B(H)^{\mathrm{opp}}$, not of $B(H)$; it is injective exactly when $\rho$ is, and it is isometric with $\|\rho^\vee(T)\|=\|\rho(T)\|$.
 
 *Proof.* The adjoint is conjugate-linear over $\mathbb{C}$, hence $\mathbb{R}$-linear, and $(\rho(ST))^*=(\rho(S)\rho(T))^*=\rho(T)^*\rho(S)^*$ is the reversal of the product; the norm identity is $\|T^*\|=\|T\|$; unitality is $\rho(I)^*=\mathrm{id}_M^*=\mathrm{id}_M$.
 
@@ -45,7 +45,7 @@ so the even part of the adjoint action preserves each graded piece and its odd p
 **Definition.** For homogeneous $S,T$ of the opposite algebra the **opposite graded commutator** is
 
 $$
-[S,T]^{\mathrm{op}}_{\mathrm{gr}}=S\cdot T-(-1)^{|S||T|}T\cdot S=TS-(-1)^{|S||T|}ST=[T,S]_{\mathrm{gr}} ,
+[S,T]^{\mathrm{opp}}_{\mathrm{gr}}=S\cdot T-(-1)^{|S||T|}T\cdot S=TS-(-1)^{|S||T|}ST=[T,S]_{\mathrm{gr}} ,
 $$
 
 so the graded commutator of the opposite algebra is the graded commutator of the algebra with the two arguments exchanged.
@@ -53,7 +53,7 @@ so the graded commutator of the opposite algebra is the graded commutator of the
 **Theorem (the adjoint action preserves the opposite sign rule).** Let $\rho$ be a graded action. Then for homogeneous $S,T$,
 
 $$
-\rho^\vee\bigl([S,T]^{\mathrm{op}}_{\mathrm{gr}}\bigr)=[\rho^\vee(S),\rho^\vee(T)]_{\mathrm{gr}},
+\rho^\vee\bigl([S,T]^{\mathrm{opp}}_{\mathrm{gr}}\bigr)=[\rho^\vee(S),\rho^\vee(T)]_{\mathrm{gr}},
 $$
 
 equivalently
@@ -64,11 +64,11 @@ $$
 
 So the adjoint action is a graded action of the opposite algebra, and the exchange of the arguments is the reversal of the product read through the grading.
 
-*Proof.* Using $[S,T]^{\mathrm{op}}_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$, $\rho([T,S]_{\mathrm{gr}})^*=\rho(TS-(-1)^{ij}ST)^*=\rho(S)^*\rho(T)^*-(-1)^{ij}\rho(T)^*\rho(S)^*=[\rho(S)^*,\rho(T)^*]_{\mathrm{gr}}$, which is the display.
+*Proof.* Using $[S,T]^{\mathrm{opp}}_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$, $\rho([T,S]_{\mathrm{gr}})^*=\rho(TS-(-1)^{ij}ST)^*=\rho(S)^*\rho(T)^*-(-1)^{ij}\rho(T)^*\rho(S)^*=[\rho(S)^*,\rho(T)^*]_{\mathrm{gr}}$, which is the display.
 
-**Corollary (the two sign rules differ by the order).** The action $\rho$ preserves the graded commutator of $B(H)$, while its adjoint $\rho^\vee$ preserves the graded commutator of $B(H)^{\mathrm{op}}$, which is the graded commutator with the arguments exchanged; the two sign rules therefore agree exactly on the pairs for which the graded commutator is symmetric, $[S,T]_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$, and the difference is the reversal of the order rather than a new structure.
+**Corollary (the two sign rules differ by the order).** The action $\rho$ preserves the graded commutator of $B(H)$, while its adjoint $\rho^\vee$ preserves the graded commutator of $B(H)^{\mathrm{opp}}$, which is the graded commutator with the arguments exchanged; the two sign rules therefore agree exactly on the pairs for which the graded commutator is symmetric, $[S,T]_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$, and the difference is the reversal of the order rather than a new structure.
 
-*Proof.* The action's rule is the theorem of *The Graded Action on a Module over a Hilbert Space*, the adjoint's rule is the theorem above, and the comparison is the identity $[S,T]^{\mathrm{op}}_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$.
+*Proof.* The action's rule is the theorem of *The Graded Action on a Module over a Hilbert Space*, the adjoint's rule is the theorem above, and the comparison is the identity $[S,T]^{\mathrm{opp}}_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$.
 
 ## The $*$-Action and the Agreement of the Two Structures
 
@@ -86,7 +86,7 @@ $$
 \rho^\vee(T)=\rho(T^*),
 $$
 
-if and only if $\rho$ is a $*$-action. In a $*$-action the adjoint action is a graded action of $B(H)$ (not only of $B(H)^{\mathrm{op}}$), its sign rule is the graded commutator rule of $B(H)$, and the involution of $B(H)$ is an automorphism of the representation.
+if and only if $\rho$ is a $*$-action. In a $*$-action the adjoint action is a graded action of $B(H)$ (not only of $B(H)^{\mathrm{opp}}$), its sign rule is the graded commutator rule of $B(H)$, and the involution of $B(H)$ is an automorphism of the representation.
 
 *Proof.* The identity is the definition of the $*$-action read backwards; if it holds then $\rho(T^*)=\rho(T)^*=\rho^\vee(T)$, which is the $*$-action, and conversely. For a $*$-action, $\rho^\vee=\rho\circ(\ )^*$ and the involution is an anti-automorphism of $B(H)$ that is a homomorphism on the graded parts with the sign $(-1)^{ij}$ of the degree, so the opposite multiplication is transported back to the ordinary one.
 
@@ -118,7 +118,7 @@ for the block decomposition $\rho(T)=\begin{pmatrix}\rho(T)_{00}&\rho(T)_{01}\\ 
 
 ## Summary
 
-The adjoint action of a graded action $\rho$ of $B(H)$ on a graded Hilbert space is the map $\rho^\vee(T)=\rho(T)^*$; it is a bounded unital representation of the opposite algebra $B(H)^{\mathrm{op}}$, since the adjoint reverses the product, and it is a graded action of that opposite algebra, since the adjoint preserves the degree and intertwines the parity operators in the same way as the action. Its sign rule is the rule of the opposite graded commutator, $[S,T]^{\mathrm{op}}_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$, so the adjoint action preserves the graded commutator up to the exchange of the two arguments, and the two sign rules differ by the order of the factors rather than by a new structure. When the graded action is a $*$-action, that is, when $\rho(T^*)=\rho(T)^*$, the adjoint action is the action composed with the involution, it is then a representation of $B(H)$ itself with the ordinary graded commutator rule, and the parity operator of the module is the image of the parity operator of the algebra; the agreement of the involution on the elements with the adjoint on the operators is a proved consequence of the $*$-condition, not an assumption, and it fails for a graded action that is not a $*$-action.
+The adjoint action of a graded action $\rho$ of $B(H)$ on a graded Hilbert space is the map $\rho^\vee(T)=\rho(T)^*$; it is a bounded unital representation of the opposite algebra $B(H)^{\mathrm{opp}}$, since the adjoint reverses the product, and it is a graded action of that opposite algebra, since the adjoint preserves the degree and intertwines the parity operators in the same way as the action. Its sign rule is the rule of the opposite graded commutator, $[S,T]^{\mathrm{opp}}_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$, so the adjoint action preserves the graded commutator up to the exchange of the two arguments, and the two sign rules differ by the order of the factors rather than by a new structure. When the graded action is a $*$-action, that is, when $\rho(T^*)=\rho(T)^*$, the adjoint action is the action composed with the involution, it is then a representation of $B(H)$ itself with the ordinary graded commutator rule, and the parity operator of the module is the image of the parity operator of the algebra; the agreement of the involution on the elements with the adjoint on the operators is a proved consequence of the $*$-condition, not an assumption, and it fails for a graded action that is not a $*$-action.
 
 ## Summary of Notation
 
@@ -129,7 +129,7 @@ The adjoint action of a graded action $\rho$ of $B(H)$ on a graded Hilbert space
 | $\rho^\vee(T)=\rho(T)^*$ | the adjoint action |
 | $\rho(ST)^*=\rho(T)^*\rho(S)^*$ | reversal of the product |
 | $S\cdot T=TS$ | the opposite multiplication |
-| $[S,T]^{\mathrm{op}}_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$ | the opposite sign rule |
+| $[S,T]^{\mathrm{opp}}_{\mathrm{gr}}=[T,S]_{\mathrm{gr}}$ | the opposite sign rule |
 | $[\rho(S)^*,\rho(T)^*]_{\mathrm{gr}}=\rho([T,S]_{\mathrm{gr}})^*$ | the sign exchange |
 | $\rho(T^*)=\rho(T)^*$ | the $*$-action condition |
 | $\rho(\Gamma_H)=\Gamma_M$ | parity operators agree for a $*$-action |

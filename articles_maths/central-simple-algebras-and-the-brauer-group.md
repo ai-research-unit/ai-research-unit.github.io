@@ -57,9 +57,9 @@ The integer $d$ is the **degree** of $A$, written $\deg(A)$. It is a numerical i
 
 ### Wedderburn's structure theorem
 
-**Theorem (Wedderburn, standard).** Every finite-dimensional central simple $F$-algebra $A$ is isomorphic to a matrix algebra $M_n(D)$ over a central $F$-division algebra $D$, with $n \geq 1$ and $D$ determined up to isomorphism. Equivalently, writing $A = \operatorname{End}_D(V)$ for the unique simple $A$-module $V = D^n$, the division algebra is $D = \operatorname{End}_A(V)^{\mathrm{op}}$.
+**Theorem (Wedderburn, standard).** Every finite-dimensional central simple $F$-algebra $A$ is isomorphic to a matrix algebra $M_n(D)$ over a central $F$-division algebra $D$, with $n \geq 1$ and $D$ determined up to isomorphism. Equivalently, writing $A = \operatorname{End}_D(V)$ for the unique simple $A$-module $V = D^n$, the division algebra is $D = \operatorname{End}_A(V)^{\mathrm{opp}}$.
 
-*Pro.* The algebra $A$ is simple and finite-dimensional, so by the Wedderburn–Artin theorem it is $M_n(D)$ for a division algebra $D$; the centre of $M_n(D)$ is the centre of $D$, computed, so centrality of $A$ makes $D$ central over $F$. Uniqueness follows because $D$ is recovered as $\operatorname{End}_A(V)^{\mathrm{op}}$ for the unique simple module $V$, and the simple module is unique because $A$ is simple.
+*Pro.* The algebra $A$ is simple and finite-dimensional, so by the Wedderburn–Artin theorem it is $M_n(D)$ for a division algebra $D$; the centre of $M_n(D)$ is the centre of $D$, computed, so centrality of $A$ makes $D$ central over $F$. Uniqueness follows because $D$ is recovered as $\operatorname{End}_A(V)^{\mathrm{opp}}$ for the unique simple module $V$, and the simple module is unique because $A$ is simple.
 
 The theorem reduces the classification of central simple algebras to the classification of central division algebras together with the integer $n$. The division algebra $D$ is called the **division algebra part** of $A$, and
 
@@ -105,12 +105,12 @@ $$
 \operatorname{Trd} : A \to F, \qquad \operatorname{Nrd} : A \to F
 $$
 
-so that after base change they become the matrix trace and determinant. Both take values in $F$ and are independent of the splitting field chosen; the reduced trace is $F$-linear, $\operatorname{Trd}(ab) = \operatorname{Trd}(ba)$, and the reduced determinant is multiplicative, $\operatorname{Nrd}(ab) = \operatorname{Nrd}(a)\operatorname{Nrd}(b)$. The **opposite algebra** $A^{\mathrm{op}}$ has the same underlying $F$-vector space and product $a \cdot_{\mathrm{op}} b = ba$. It is central simple, of the same degree as $A$, and it is anti-isomorphic to $A$; the transpose map on a matrix algebra identifies $M_n(F)^{\mathrm{op}} \cong M_n(F)$, and quaternion conjugation identifies $\mathbb{H}^{\mathrm{op}} \cong \mathbb{H}$.
+so that after base change they become the matrix trace and determinant. Both take values in $F$ and are independent of the splitting field chosen; the reduced trace is $F$-linear, $\operatorname{Trd}(ab) = \operatorname{Trd}(ba)$, and the reduced determinant is multiplicative, $\operatorname{Nrd}(ab) = \operatorname{Nrd}(a)\operatorname{Nrd}(b)$. The **opposite algebra** $A^{\mathrm{opp}}$ has the same underlying $F$-vector space and product $a \cdot_{\mathrm{op}} b = ba$. It is central simple, of the same degree as $A$, and it is anti-isomorphic to $A$; the transpose map on a matrix algebra identifies $M_n(F)^{\mathrm{opp}} \cong M_n(F)$, and quaternion conjugation identifies $\mathbb{H}^{\mathrm{opp}} \cong \mathbb{H}$.
 
 The opposite algebra is the reason the Brauer group has inverses. For every central simple $A$ of degree $d$ there is an isomorphism
 
 $$
-A \otimes_F A^{\mathrm{op}} \;\cong\; \operatorname{End}_F(A) \;\cong\; M_{d^2}(F),
+A \otimes_F A^{\mathrm{opp}} \;\cong\; \operatorname{End}_F(A) \;\cong\; M_{d^2}(F),
 $$
 
 the first map being $a \otimes b \mapsto (x \mapsto axb)$, which is an injective algebra homomorphism because the tensor product is simple, and hence an isomorphism by the dimension count $d^2 \cdot d^2 = (d^2)^2$. So the tensor product of a central simple algebra with its opposite is split.
@@ -151,9 +151,9 @@ $$
 [A] \cdot [B] := [A \otimes_F B]
 $$
 
-and identity the class of $F$, is an abelian group, the **Brauer group** $\operatorname{Br}(F)$. The inverse of $[A]$ is $[A^{\mathrm{op}}]$, and every element has finite order.
+and identity the class of $F$, is an abelian group, the **Brauer group** $\operatorname{Br}(F)$. The inverse of $[A]$ is $[A^{\mathrm{opp}}]$, and every element has finite order.
 
-*Proof.* The product is well defined by the lemma, associative and commutative because the tensor product of algebras is associative and commutative up to canonical isomorphism, and unital because $A \otimes_F F \cong A$. The class of $A^{\mathrm{op}}$ is inverse to that of $A$ by the isomorphism $A \otimes_F A^{\mathrm{op}} \cong M_{d^2}(F)$ above. Finiteness of the order is the theorem of the next subsection: the order of $[A]$ is the exponent, and it divides the index, which is finite.
+*Proof.* The product is well defined by the lemma, associative and commutative because the tensor product of algebras is associative and commutative up to canonical isomorphism, and unital because $A \otimes_F F \cong A$. The class of $A^{\mathrm{opp}}$ is inverse to that of $A$ by the isomorphism $A \otimes_F A^{\mathrm{opp}} \cong M_{d^2}(F)$ above. Finiteness of the order is the theorem of the next subsection: the order of $[A]$ is the exponent, and it divides the index, which is finite.
 
 The group is abelian but generally not finite: over $\mathbb{Q}$ and over every number field it is infinite, by the theorem of Hasse, Brauer and Noether recalled below.
 
@@ -291,7 +291,7 @@ This is the reciprocity law of class field theory, and it belongs to the article
 
 ## Summary
 
-A **central simple algebra** over a field $F$ is a finite-dimensional $F$-algebra with centre $F$ and no nontrivial two-sided ideal. Its dimension is a perfect square $d^2$, it is a matrix algebra $M_n(D)$ over a central $F$-division algebra $D$ by Wedderburn's structure theorem, and its **index** $\operatorname{ind}(A) = \sqrt{\dim_F D}$ divides its degree $d$ and equals the degree of every maximal subfield of $D$. The **Skolem–Noether theorem** makes every $F$-algebra automorphism of a central simple algebra inner, so $\operatorname{Aut}_F(A) \cong A^\times/F^\times$, and the double centralizer theorem computes the centralizer of a simple subalgebra. The tensor product of two central simple algebras is central simple, so the similarity classes of central simple algebras form an abelian group under the tensor product, the **Brauer group** $\operatorname{Br}(F)$, with identity the class of $F$ and inverse the class of the opposite algebra, since $A \otimes_F A^{\mathrm{op}} \cong M_{d^2}(F)$.
+A **central simple algebra** over a field $F$ is a finite-dimensional $F$-algebra with centre $F$ and no nontrivial two-sided ideal. Its dimension is a perfect square $d^2$, it is a matrix algebra $M_n(D)$ over a central $F$-division algebra $D$ by Wedderburn's structure theorem, and its **index** $\operatorname{ind}(A) = \sqrt{\dim_F D}$ divides its degree $d$ and equals the degree of every maximal subfield of $D$. The **Skolem–Noether theorem** makes every $F$-algebra automorphism of a central simple algebra inner, so $\operatorname{Aut}_F(A) \cong A^\times/F^\times$, and the double centralizer theorem computes the centralizer of a simple subalgebra. The tensor product of two central simple algebras is central simple, so the similarity classes of central simple algebras form an abelian group under the tensor product, the **Brauer group** $\operatorname{Br}(F)$, with identity the class of $F$ and inverse the class of the opposite algebra, since $A \otimes_F A^{\mathrm{opp}} \cong M_{d^2}(F)$.
 
 A splitting field of $A$ is a field extension $L/F$ with $A \otimes_F L \cong M_d(L)$; a splitting field of degree $\operatorname{ind}(A)$ always exists, and the **exponent** of $A$, its order in $\operatorname{Br}(F)$, divides its index. For a finite Galois extension $L/F$ with group $G$, every central simple algebra split by $L$ is a crossed product, and the relative Brauer group is $\operatorname{Br}(L/F) \cong H^2(G, L^\times)$, so the Brauer group is the cohomological home of the factor-set classification; the cyclic algebras $(L/F, \sigma, a)$ are the explicit case. The computations are $\operatorname{Br}(F) = 0$ for algebraically closed and for finite $F$, $\operatorname{Br}(\mathbb{R}) \cong \mathbb{Z}/2$ generated by $[\mathbb{H}]$ with $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{H} \cong M_4(\mathbb{R})$, $\operatorname{Br}(F) \cong \mathbb{Q}/\mathbb{Z}$ for a non-Archimedean local field, and for a number field the Hasse–Brauer–Noether isomorphism onto the families of local invariants with zero sum, which belongs to *Class Field Theory*.
 
@@ -303,7 +303,7 @@ The **$2$-torsion** of the Brauer group is generated by the quaternion algebras:
 |---|---|
 | $F$, $L$ | fields; $L/F$ a field extension |
 | $A$, $B$ | central simple $F$-algebras |
-| $A^{\mathrm{op}}$ | opposite algebra, $a \cdot_{\mathrm{op}} b = ba$ |
+| $A^{\mathrm{opp}}$ | opposite algebra, $a \cdot_{\mathrm{op}} b = ba$ |
 | $M_n(F)$ | matrix algebra, central simple of dimension $n^2$ |
 | $D$ | central $F$-division algebra, the division algebra part of $A$ |
 | $(a,b)_F$ | quaternion algebra, $u^2 = a$, $v^2 = b$, $uv = -vu$ |

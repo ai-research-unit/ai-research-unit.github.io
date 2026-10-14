@@ -85,7 +85,7 @@ The left multiplications are not the whole of the operators that respect the mod
 **Proposition.** An operator $M \in \operatorname{End}_k(A)$ commutes with every left multiplication, $M L(a) = L(a) M$ for all $a$, if and only if $M$ is a right multiplication, and the correspondence is a $k$-linear isomorphism
 
 $$
-\{M : ML(a) = L(a)M \text{ for all } a\} = R(A) \cong A^{\mathrm{op}} .
+\{M : ML(a) = L(a)M \text{ for all } a\} = R(A) \cong A^{\mathrm{opp}} .
 $$
 
 *Proof.* This is the theorem of *The Operators on an Algebra* that the centraliser of $L(A)$ in $\operatorname{End}_k(A)$ is exactly $R(A)$, together with the identification of $R(A)$ with the opposite algebra given below.
@@ -105,24 +105,24 @@ $$
 Hence $R$ is an anti-homomorphism of unital algebras, and it is an isomorphism of algebras
 
 $$
-R : A^{\mathrm{op}} \longrightarrow R(A), \qquad a \longmapsto R(a),
+R : A^{\mathrm{opp}} \longrightarrow R(A), \qquad a \longmapsto R(a),
 $$
 
 from the opposite algebra of $A$ onto the subalgebra $R(A)$ of $\operatorname{End}_k(A)$.
 
-*Proof.* $R(a)R(b)(x) = R(a)(xb) = (xb)a = x(ba) = R(ba)(x)$, the middle equality being associativity. The order of the factors is reversed, which is exactly the definition of a homomorphism on the opposite algebra; the map is bijective onto its image and preserves products in the reversed order, hence is an isomorphism $A^{\mathrm{op}} \to R(A)$.
+*Proof.* $R(a)R(b)(x) = R(a)(xb) = (xb)a = x(ba) = R(ba)(x)$, the middle equality being associativity. The order of the factors is reversed, which is exactly the definition of a homomorphism on the opposite algebra; the map is bijective onto its image and preserves products in the reversed order, hence is an isomorphism $A^{\mathrm{opp}} \to R(A)$.
 
-The contrast with the left case is the whole content of the right regular representation: $L$ is a copy of $A$ and $R$ is a copy of $A^{\mathrm{op}}$. The two copies are isomorphic as algebras exactly when $A$ is commutative, and in general they are the two opposite algebras, which is the reason the right module theory of $A$ is the left module theory of $A^{\mathrm{op}}$.
+The contrast with the left case is the whole content of the right regular representation: $L$ is a copy of $A$ and $R$ is a copy of $A^{\mathrm{opp}}$. The two copies are isomorphic as algebras exactly when $A$ is commutative, and in general they are the two opposite algebras, which is the reason the right module theory of $A$ is the left module theory of $A^{\mathrm{opp}}$.
 
 ### The Two Regular Representations
 
 **Corollary.** The pair $(L, R)$ gives a homomorphism of algebras
 
 $$
-A \otimes_k A^{\mathrm{op}} \longrightarrow \operatorname{End}_k(A), \qquad a \otimes b \longmapsto L(a)R(b) = T_{a,b},
+A \otimes_k A^{\mathrm{opp}} \longrightarrow \operatorname{End}_k(A), \qquad a \otimes b \longmapsto L(a)R(b) = T_{a,b},
 $$
 
-whose image is the sandwich space $\mathcal{S}(A)$ of *The Sandwich Operator on an Algebra*; equivalently, the regular bimodule ${}_A A_A$ carries a left action of $A$ and a commuting right action of $A$, and the pair of these actions is a left action of the enveloping algebra $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{op}}$.
+whose image is the sandwich space $\mathcal{S}(A)$ of *The Sandwich Operator on an Algebra*; equivalently, the regular bimodule ${}_A A_A$ carries a left action of $A$ and a commuting right action of $A$, and the pair of these actions is a left action of the enveloping algebra $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{opp}}$.
 
 *Proof.* The left multiplications and the right multiplications commute by the two-sided product proposition, so the assignments $a \mapsto L(a)$ and $b \mapsto R(b)$ combine into a homomorphism on the tensor product, with the second factor read in the opposite order; the image is spanned by the products $L(a)R(b) = T_{a,b}$. The bimodule statement is the definition of a bimodule over $A$, and a left $A$-action commuting with a right $A$-action is a left $A^{\mathrm{e}}$-action by $(a \otimes b) \cdot x = a x b$.
 
@@ -174,7 +174,7 @@ The identity has three consequences, and they are the reason the associator is s
 
 **Corollary.** The associators span the commutator space $[L(A), R(A)]$, which is the image of the operator $A_{(\cdot,\cdot)}$ and is a subspace of $\operatorname{End}_k(A)$ vanishing exactly when $A$ is associative; hence the deviation of $A$ from associativity is measured by the failure of the two one-sided multiplication algebras to commute.
 
-**Corollary.** The map $A \otimes_k A^{\mathrm{op}} \to \operatorname{End}_k(A)$ of the two regular representations is an isomorphism onto the sandwich space exactly when that space is the whole of $\operatorname{End}_k(A)$, that is when $\dim_k \mathcal{S}(A) = n^2$; this holds for a central simple algebra, by *Central Simple Algebras and the Brauer Group*.
+**Corollary.** The map $A \otimes_k A^{\mathrm{opp}} \to \operatorname{End}_k(A)$ of the two regular representations is an isomorphism onto the sandwich space exactly when that space is the whole of $\operatorname{End}_k(A)$, that is when $\dim_k \mathcal{S}(A) = n^2$; this holds for a central simple algebra, by *Central Simple Algebras and the Brauer Group*.
 
 The three corollaries are the operator form of the statement that associativity is not a property of the product alone but of the way the two sides of the product commute. The left and the right multiplications each know only one side; the associator is what happens when the two sides are brought together.
 
@@ -194,13 +194,13 @@ Let $A = \mathbb{H}$ over $\mathbb{R}$, of dimension $4$; the centre is $\mathbb
 
 ## Summary
 
-The left multiplication $L(a)$ and the right multiplication $R(a)$ are the two $k$-linear operators $x \mapsto ax$ and $x \mapsto xa$ on $A$; they are injective when $A$ is unital, and their images $L(A)$ and $R(A)$ are subspaces of $\operatorname{End}_k(A)$ of dimension $n$ each. The left multiplications compose as $L(a)L(b) = L(ab)$, so $L : A \to \operatorname{End}_k(A)$ is an algebra isomorphism onto $L(A)$; the right multiplications compose as $R(a)R(b) = R(ba)$, so $R$ is an anti-homomorphism, and $R : A^{\mathrm{op}} \to R(A)$ is an algebra isomorphism from the opposite algebra. The two families commute, $L(a)R(b) = R(b)L(a) = T_{a,b}$, exactly when the product is associative, and the obstruction is the associator,
+The left multiplication $L(a)$ and the right multiplication $R(a)$ are the two $k$-linear operators $x \mapsto ax$ and $x \mapsto xa$ on $A$; they are injective when $A$ is unital, and their images $L(A)$ and $R(A)$ are subspaces of $\operatorname{End}_k(A)$ of dimension $n$ each. The left multiplications compose as $L(a)L(b) = L(ab)$, so $L : A \to \operatorname{End}_k(A)$ is an algebra isomorphism onto $L(A)$; the right multiplications compose as $R(a)R(b) = R(ba)$, so $R$ is an anti-homomorphism, and $R : A^{\mathrm{opp}} \to R(A)$ is an algebra isomorphism from the opposite algebra. The two families commute, $L(a)R(b) = R(b)L(a) = T_{a,b}$, exactly when the product is associative, and the obstruction is the associator,
 
 $$
 L(a)R(b) - R(b)L(a) = -A_{a,b}, \qquad A_{a,b}(x) = (ax)b - a(xb);
 $$
 
-equivalently $A$ is associative exactly when every left multiplication commutes with every right multiplication. The pair $(L,R)$ is a homomorphism $A \otimes_k A^{\mathrm{op}} \to \operatorname{End}_k(A)$ with image the sandwich space, and the regular module is the bimodule it makes of $A$. The two spaces meet in the multiplications by the centre, $L(A) \cap R(A) = L(Z(A))$, so their sum has dimension $2n - \dim_k Z(A)$; and the centraliser of $L(A)$ in $\operatorname{End}_k(A)$ is exactly $R(A)$. For $M_n(k)$ the left and the right multiplications meet in the scalars and their sum has dimension $2n^2 - 1$; for a commutative algebra the two sides coincide; and the two-sided product with the associator is the subject of *The Sandwich Operator on an Algebra*.
+equivalently $A$ is associative exactly when every left multiplication commutes with every right multiplication. The pair $(L,R)$ is a homomorphism $A \otimes_k A^{\mathrm{opp}} \to \operatorname{End}_k(A)$ with image the sandwich space, and the regular module is the bimodule it makes of $A$. The two spaces meet in the multiplications by the centre, $L(A) \cap R(A) = L(Z(A))$, so their sum has dimension $2n - \dim_k Z(A)$; and the centraliser of $L(A)$ in $\operatorname{End}_k(A)$ is exactly $R(A)$. For $M_n(k)$ the left and the right multiplications meet in the scalars and their sum has dimension $2n^2 - 1$; for a commutative algebra the two sides coincide; and the two-sided product with the associator is the subject of *The Sandwich Operator on an Algebra*.
 
 ## Summary of Notation
 
@@ -212,8 +212,8 @@ equivalently $A$ is associative exactly when every left multiplication commutes 
 | $L(a)$, $L(a)(x) = ax$ | the left multiplication by $a$ |
 | $R(a)$, $R(a)(x) = xa$ | the right multiplication by $a$ |
 | $L(A)$, $R(A)$ | the spaces of left and right multiplications |
-| $A^{\mathrm{op}}$ | the opposite algebra, isomorphic to $R(A)$ |
-| $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{op}}$ | the enveloping algebra |
+| $A^{\mathrm{opp}}$ | the opposite algebra, isomorphic to $R(A)$ |
+| $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{opp}}$ | the enveloping algebra |
 | $T_{a,b} = L(a)R(b) = R(b)L(a)$ | the sandwich, the product of the two sides |
 | $(a,x,b) = (ax)b - a(xb)$ | the associator |
 | $Z(A)$ | the centre, with $L(A) \cap R(A) = L(Z(A))$ |

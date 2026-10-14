@@ -86,7 +86,7 @@ $$
 L : A \longrightarrow \operatorname{End}_k(A), \qquad R : A \longrightarrow \operatorname{End}_k(A),
 $$
 
-and their images are subspaces of dimension $n$. The map $L$ is an algebra homomorphism, $L(a)L(b) = L(ab)$, while $R$ reverses the order, $R(a)R(b) = R(ba)$; the image of $L$ is the **regular representation** of $A$, and the image of $R$ is a copy of the opposite algebra $A^{\mathrm{op}}$.
+and their images are subspaces of dimension $n$. The map $L$ is an algebra homomorphism, $L(a)L(b) = L(ab)$, while $R$ reverses the order, $R(a)R(b) = R(ba)$; the image of $L$ is the **regular representation** of $A$, and the image of $R$ is a copy of the opposite algebra $A^{\mathrm{opp}}$.
 
 The asymmetry between $L$ and $R$ is the whole difficulty of the noncommutative case. As a transformation of $A$, a left multiplication by a noncentral element is not $A$-linear; it is the action itself rather than a map commuting with the action.
 
@@ -105,7 +105,7 @@ The two agree on their first two rows and differ in the sign of the last two, an
 
 This is an intertwining condition, hence linear in $M$, and the $A$-linear operators are exactly the **centralizer** of $L(A)$ in $\operatorname{End}_k(A)$.
 
-**Theorem.** $\operatorname{End}_A(A) = R(A) \cong A^{\mathrm{op}}$, of dimension $n$.
+**Theorem.** $\operatorname{End}_A(A) = R(A) \cong A^{\mathrm{opp}}$, of dimension $n$.
 
 The theorem is proved in *Automorphisms of Modules over an Algebra*, where it is the base case of the theory of endomorphism rings. It says that requiring an operator to commute with all left multiplications forces it to be a right multiplication, and no more: the centralizer is exactly $R(A)$ and not merely of the same dimension.
 

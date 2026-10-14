@@ -5,7 +5,7 @@
 
 This article develops Fueter theory in the split biquaternion setting: the Fueter operator, the functions it defines, the construction that produces them from holomorphic functions of one complex variable, and the relation to the biquaternion and split quaternion theories. It follows *Split-Biquaternion Analysis* and *Split-Biquaternion Regular Functions*, where the Cauchy–Riemann operator $\tilde{\nabla}$ and its conjugate $\tilde{\nabla}^{\natural}$ were constructed, and it uses the algebra and the zero divisors of *Split-Biquaternion Algebra* and *Split-Biquaternion Zero Divisors*.
 
-The treatment is purely mathematical, and no theorem is asserted beyond its hypotheses. Throughout the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_1^2 = e_2^2 = e_3^2 = -e_0$, the central split complex unit is $j$ with $j^2 = +e_0$, and a split biquaternion is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$. On the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ the coordinates are real, $\tilde{Q} = \sum_\mu q_\mu e_\mu$, with $\vec q = q_1e_1+q_2e_2+q_3e_3$, $\rho = \|\vec q\|_E$, $\hat q = \vec q/\rho$, and $\partial_\mu = \partial/\partial q_\mu$.
+The treatment is purely mathematical, and no theorem is asserted beyond its hypotheses. Throughout the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_1^2 = e_2^2 = e_3^2 = -e_0$, the central split complex unit is $j$ with $j^2 = +e_0$, and a split biquaternion is $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$. On the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ the coordinates are real, $\tilde{Q} = \sum_\mu q_\mu e_\mu$, with $\vec q = q_1e_1+q_2e_2+q_3e_3$, $\rho = \|\vec q\|_E$, $\hat u_{\mathrm d} = \vec q/\rho$, and $\partial_\mu = \partial/\partial q_\mu$.
 
 ## The Fueter Operator
 
@@ -78,22 +78,22 @@ with the ordinary measures on $\mathbb{R}^4$, the property following from the fa
 Let $f_0$ be holomorphic on the disc $D(0,R) \subseteq \mathbb{C}$, written $f_0(C) = u(c,c') + iv(c,c')$ with $C = c+ic'$ and $u,v$ real-valued, so that $u,v$ are harmonic and satisfy $u_c = v_{c'}$, $u_{c'} = -v_c$. The **axial extension** of $f_0$ is
 
 $$
-\tilde{f}_0(\tilde{Q}) = u(q_0,\rho) + \hat q\,v(q_0,\rho) ,
+\tilde{f}_0(\tilde{Q}) = u(q_0,\rho) + \hat u_{\mathrm d}\,v(q_0,\rho) ,
 $$
 
-defined for $\rho > 0$ by replacing $c$ by $q_0$, $c'$ by $\rho$, and the complex imaginary unit $i$ by $\hat q$; the replacement is legitimate because $\hat q^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $\tilde{f}_0(\tilde{Q}) = \sum_{n\ge0}a_n\tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity.
+defined for $\rho > 0$ by replacing $c$ by $q_0$, $c'$ by $\rho$, and the complex imaginary unit $i$ by $\hat u_{\mathrm d}$; the replacement is legitimate because $\hat u_{\mathrm d}^2 = -1$. When $f_0$ has real Taylor coefficients, $v(q_0,0) = 0$, the extension is continuous at $\rho = 0$ with value $f_0(q_0)$, and $\tilde{f}_0(\tilde{Q}) = \sum_{n\ge0}a_n\tilde{Q}^n$ on $B(0,R)$. Complex coefficients are handled by $\mathbb{C}$-linearity.
 
 ### Fueter's Theorem
 
 **Theorem (Fueter's construction).** Let $f_0$ be holomorphic on $D(0,R)$ with axial extension $\tilde{f}_0$. Then
 
 $$
-\tilde{F}(\tilde{Q}) = \Delta_4\tilde{f}_0(\tilde{Q}) = \frac{2\partial_\rho u(q_0,\rho)}{\rho} + \hat q\left(\frac{2\partial_\rho v(q_0,\rho)}{\rho} - \frac{2v(q_0,\rho)}{\rho^2}\right)
+\tilde{F}(\tilde{Q}) = \Delta_4\tilde{f}_0(\tilde{Q}) = \frac{2\partial_\rho u(q_0,\rho)}{\rho} + \hat u_{\mathrm d}\left(\frac{2\partial_\rho v(q_0,\rho)}{\rho} - \frac{2v(q_0,\rho)}{\rho^2}\right)
 $$
 
 is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.
 
-**Proof.** For $g = A(q_0,\rho) + \hat qB(q_0,\rho)$ one has $\tilde{\nabla}g = g\tilde{\nabla} = (\partial_0A - \partial_\rho B - 2B/\rho) + \hat q(\partial_0B + \partial_\rho A)$, using $\hat q^2 = -1$ and $\sum_{j,k}(\partial_{q_k}\hat{q}_j)e_ke_j = (-3-\hat q^2)/\rho = -2/\rho$; so $g$ is left-regular exactly when it is right-regular, and this holds when $\partial_0A = \partial_\rho B + 2B/\rho$ and $\partial_0B = -\partial_\rho A$. Applying $\Delta_4$ to the axial extension and using the radial Laplacian identity gives the two scalar coefficients $2u_\rho/\rho$ and $2(\rho v_\rho - v)/\rho^2$, whose Cauchy–Riemann relations are exactly the two conditions.
+**Proof.** For $g = A(q_0,\rho) + \hat u_{\mathrm d}B(q_0,\rho)$ one has $\tilde{\nabla}g = g\tilde{\nabla} = (\partial_0A - \partial_\rho B - 2B/\rho) + \hat u_{\mathrm d}(\partial_0B + \partial_\rho A)$, using $\hat u_{\mathrm d}^2 = -1$ and $\sum_{j,k}(\partial_{q_k}(\hat u_{\mathrm d})_j)e_ke_j = (-3-\hat u_{\mathrm d}^2)/\rho = -2/\rho$; so $g$ is left-regular exactly when it is right-regular, and this holds when $\partial_0A = \partial_\rho B + 2B/\rho$ and $\partial_0B = -\partial_\rho A$. Applying $\Delta_4$ to the axial extension and using the radial Laplacian identity gives the two scalar coefficients $2u_\rho/\rho$ and $2(\rho v_\rho - v)/\rho^2$, whose Cauchy–Riemann relations are exactly the two conditions.
 
 ### The Kernel and Injectivity
 
@@ -113,7 +113,7 @@ On the full algebra the roots of $-1$ are, by *Split-Biquaternion Roots of Minus
 
 ### Axially Symmetric Functions and the Axial Coefficients
 
-A function is **axially symmetric** if $\tilde{F}(q_0 + \hat q\rho)$ depends on the direction $\hat q$ only through $\hat q$. Such a function has the axial representation $\tilde{F}(\tilde{Q}) = A(q_0,\rho) + \hat qB(q_0,\rho)$ over the basis $\{1,\hat q\}$ of the slice, with **axial coefficients** $A, B$. For such a function the left- and right-regularity conditions coincide and reduce to
+A function is **axially symmetric** if $\tilde{F}(q_0 + \hat u_{\mathrm d}\rho)$ depends on the direction $\hat u_{\mathrm d}$ only through $\hat u_{\mathrm d}$. Such a function has the axial representation $\tilde{F}(\tilde{Q}) = A(q_0,\rho) + \hat u_{\mathrm d}B(q_0,\rho)$ over the basis $\{1,\hat u_{\mathrm d}\}$ of the slice, with **axial coefficients** $A, B$. For such a function the left- and right-regularity conditions coincide and reduce to
 
 $$
 \partial_0A = \partial_\rho B + \frac{2B}{\rho} , \qquad \partial_0B = -\partial_\rho A ;
@@ -153,7 +153,7 @@ The split quaternion theory, by contrast, is the four-dimensional algebra $\math
 
 ## Summary
 
-The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4e_0$, and left-regularity $\tilde{\nabla}\tilde{F} = 0$ and right-regularity $\tilde{F}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise system, coinciding for axially symmetric functions; every regular function is harmonic, hence real-analytic on the quaternion subspace, and satisfies the mean value property. On the full algebra regularity is the pair of quaternionic regularities of the two idempotent components, a splitting with no counterpart in the simple biquaternion algebra. The Fueter construction sends a holomorphic $f_0$ to the induced function $\Delta_4\tilde{f}_0 = 2u_\rho/\rho + \hat q(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two, and the Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. The imaginary units of the full algebra form the four-dimensional manifold $S^2\times S^2$ rather than a sphere, so the slice approach must select one root at a time. On the quaternion subspace the origin is the only singularity; on the full algebra the coefficient ring is the split complex algebra and the singular set is the union of the two ideals, a union of two linear four-spaces rather than a quadric, this being the exact difference from the biquaternion theory, whose singular set is the six-dimensional null quadric and whose operator loses ellipticity over $\mathbb{C}$.
+The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4e_0$, and left-regularity $\tilde{\nabla}\tilde{F} = 0$ and right-regularity $\tilde{F}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise system, coinciding for axially symmetric functions; every regular function is harmonic, hence real-analytic on the quaternion subspace, and satisfies the mean value property. On the full algebra regularity is the pair of quaternionic regularities of the two idempotent components, a splitting with no counterpart in the simple biquaternion algebra. The Fueter construction sends a holomorphic $f_0$ to the induced function $\Delta_4\tilde{f}_0 = 2u_\rho/\rho + \hat u_{\mathrm d}(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two, and the Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. The imaginary units of the full algebra form the four-dimensional manifold $S^2\times S^2$ rather than a sphere, so the slice approach must select one root at a time. On the quaternion subspace the origin is the only singularity; on the full algebra the coefficient ring is the split complex algebra and the singular set is the union of the two ideals, a union of two linear four-spaces rather than a quadric, this being the exact difference from the biquaternion theory, whose singular set is the six-dimensional null quadric and whose operator loses ellipticity over $\mathbb{C}$.
 
 ## Summary of Notation
 
@@ -162,13 +162,13 @@ The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ and its conjug
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | Split biquaternion algebra |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace, the domain of Fueter theory |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $Q_\mu \in \mathbb{D}$ | Split biquaternion; real coefficients on the quaternion subspace |
-| $\vec q = \sum_k q_ke_k$, $\rho = \|\vec q\|_E$, $\hat q = \vec q/\rho$ | Vector part, its modulus, its direction |
+| $\vec q = \sum_k q_ke_k$, $\rho = \|\vec q\|_E$, $\hat u_{\mathrm d} = \vec q/\rho$ | Vector part, its modulus, its direction |
 | $\tilde{\nabla} = \partial_0 + \vec D$, $\vec D = \sum_k e_k\partial_k$ | Fueter operator, acting on the left |
 | $\tilde{\nabla}^{\natural} = \partial_0 - \vec D$ | Conjugate Fueter operator |
 | $\Delta_4 = \sum_\mu\partial_\mu^2$ | Four-dimensional Laplacian, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4e_0$ |
 | $\tilde{F}$ left-regular / right-regular | $\tilde{\nabla}\tilde{F} = 0$ / $\tilde{F}\tilde{\nabla} = 0$ |
 | $I$, $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | Imaginary unit, $I^2 = -1$; slice |
-| $A, B$ | Axial coefficients, $\tilde{F} = A(q_0,\rho) + \hat qB(q_0,\rho)$ |
+| $A, B$ | Axial coefficients, $\tilde{F} = A(q_0,\rho) + \hat u_{\mathrm d}B(q_0,\rho)$ |
 | $\tilde{f}_0$, $\Delta_4\tilde{f}_0$ | Axial extension of $f_0$ and its Fueter-induced function |
 | $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$ | Zero divisor locus of the full algebra |
 | $\mathrm{Cl}_{0,n}$, $\mathrm{Cl}_{0,3}^{+}$ | Clifford algebras; $\mathbb{H}$ is $\mathrm{Cl}_{0,3}^{+}$ |

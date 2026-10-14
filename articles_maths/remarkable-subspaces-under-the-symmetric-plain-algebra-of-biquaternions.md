@@ -131,7 +131,7 @@ and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalge
 A Hermitian element has $N(\tilde P)=P_0^2-\sum_k(P'_k)^2$, so the **units** are the Hermitian elements with $P_0^2\neq\sum_k(P'_k)^2$, and the **isotropic** elements are those with $P_0^2=\sum_k(P'_k)^2$. The isotropic set is non-empty: the element $e_0+ie_1$ is Hermitian and $N(e_0+ie_1)=1+i^2=0$. The **idempotents** are the Hermitian idempotents of *Idempotents of the General Plain Algebra*,
 
 $$
-\tilde\Pi=\tfrac12(e_0\pm \tilde\Xi),\qquad \hat n\in\mathbb{R}^3,\ |\hat n|=1,
+\tilde\Pi=\tfrac12(e_0\pm \tilde\Xi),\qquad \hat u\in\mathbb{R}^3,\ |\hat u|=1,
 $$
 
 the pure states, together with the trivial $0$ and $e_0$.
@@ -188,7 +188,7 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 | $i\mathbb{H}_{\mathbb{B}}\bullet i\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}}$ | the product of two anti-quaternion elements |
 | $(\tilde P\bullet\tilde Q)^{*}=\tilde P\bullet\tilde Q$ | the closure of the Hermitian and the failure for the anti-Hermitian |
 | $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the generic norm, deciding units and isotropic elements |
-| $\tfrac12(e_0\pm \tilde\Xi)$, $|\hat n|=1$ | the Hermitian idempotents, in $\mathbb{M}_+$ |
+| $\tfrac12(e_0\pm \tilde\Xi)$, $|\hat u|=1$ | the Hermitian idempotents, in $\mathbb{M}_+$ |
 
 ## Further Reading
 

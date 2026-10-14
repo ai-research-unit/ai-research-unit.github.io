@@ -96,7 +96,7 @@ and the same statements hold with $\mathbb{A}^n_k$ replaced by an affine variety
 **Theorem (the contravariant equivalence).** The assignment $X\mapsto k[X]$ extends to an equivalence of categories
 
 $$
-\{\text{affine varieties over } k\}^{\mathrm{op}}\ \xrightarrow{\ \sim\ }\ \{\text{finitely generated reduced } k\text{-algebras}\},
+\{\text{affine varieties over } k\}^{\mathrm{opp}}\ \xrightarrow{\ \sim\ }\ \{\text{finitely generated reduced } k\text{-algebras}\},
 $$
 
 under which a morphism $\varphi : X\to Y$ corresponds to the $k$-algebra homomorphism $\varphi^* : k[Y]\to k[X]$, $\varphi^*(g) = g\circ\varphi$. In particular $\varphi$ is an isomorphism if and only if $\varphi^*$ is, and the assignment is fully faithful.

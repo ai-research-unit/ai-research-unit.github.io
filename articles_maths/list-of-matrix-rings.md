@@ -92,7 +92,7 @@ A matrix ring over a division ring is the general simple finite-dimensional alge
 | Object | The property it has | Introduced in |
 |---|---|---|
 | $M_n(D)$ over a division ring $D$ | simple and Artinian; $\dim_D M_n(D) = n^2$, and its simple module is $D^n$ | *Simple and Semisimple Modules* |
-| The simple module $D^n$ | the unique simple left $M_n(D)$-module, of endomorphism ring $D^{\mathrm{op}}$ | *Simple and Semisimple Modules* |
+| The simple module $D^n$ | the unique simple left $M_n(D)$-module, of endomorphism ring $D^{\mathrm{opp}}$ | *Simple and Semisimple Modules* |
 | Wedderburn–Artin, the simple case | a ring is a matrix ring over a division ring exactly when it is simple Artinian; this is a theorem, not a definition | *Simple and Semisimple Modules* |
 | The division rings as the boundary case | the case $r = n_1 = 1$ of Wedderburn–Artin: a ring is a division ring exactly when it is semisimple with one factor, of size one | *Simple and Semisimple Modules* |
 | $\mathbb{H}$ as a matrix ring | a division ring, so the case of a single factor of size one; a matrix ring over a division ring | *Quaternion Algebra*; *Simple and Semisimple Modules* |

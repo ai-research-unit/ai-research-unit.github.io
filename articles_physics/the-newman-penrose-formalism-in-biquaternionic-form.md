@@ -89,7 +89,7 @@ where $E_{ij}$ has $1$ in position $(i,j)$ and $0$ elsewhere. Each image has ran
 Equation (3) is the precise sense in which the null tetrad is native to the algebra. Up to the common factor $\sqrt2\,i$, the Newman–Penrose tetrad **is** the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$. The spinor-module article already names that basis:
 
 $$
-p = \tfrac12(e_0+ie_3), \quad q = \tfrac12(e_0-ie_3), \quad \tilde\Upsilon_1 = \tfrac12(ie_1-e_2), \quad \tilde\Upsilon_2 = \tfrac12(ie_1+e_2),
+p = \tfrac12(e_0+ie_3), \quad q = \tfrac12(e_0-ie_3), \quad \hat\Upsilon_1 = \tfrac12(ie_1-e_2), \quad \hat\Upsilon_2 = \tfrac12(ie_1+e_2),
 $$
 
 with $\mathsf{M}_2(p)=E_{11}$, $\mathsf{M}_2(q)=E_{22}$, $\mathsf{M}_2(x)=E_{12}$, $\mathsf{M}_2(y)=E_{21}$, and with $p,q$ the primitive orthogonal idempotents: $p^2=p$, $q^2=q$, $pq=qp=0$. Therefore
@@ -107,10 +107,10 @@ $$
 \langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(p\,\bar q) = -2\,\mathrm{Sc}(p^2) = -1 ,
 $$
 
-and because $\bar{\tilde\Upsilon_2} = -\tilde\Upsilon_2$ and $\tilde\Upsilon_1\tilde\Upsilon_2 = p$ in the matrix-unit relations,
+and because $\bar{\hat\Upsilon_2} = -\hat\Upsilon_2$ and $\hat\Upsilon_1\hat\Upsilon_2 = p$ in the matrix-unit relations,
 
 $$
-\langle m,\bar m\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(\tilde\Upsilon_1\,\bar{\tilde\Upsilon_2}) = 2\,\mathrm{Sc}(\tilde\Upsilon_1\tilde\Upsilon_2) = 2\,\mathrm{Sc}(p) = +1 .
+\langle m,\bar m\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(\hat\Upsilon_1\,\bar{\hat\Upsilon_2}) = 2\,\mathrm{Sc}(\hat\Upsilon_1\hat\Upsilon_2) = 2\,\mathrm{Sc}(p) = +1 .
 $$
 
 The mixed products vanish because the off-diagonal units have vanishing scalar part, $\mathrm{Sc}(x)=\mathrm{Sc}(y)=0$, and the relevant products are off-diagonal matrix units. All ten inner products were recomputed from (4); the result is the off-diagonal tetrad metric
@@ -336,7 +336,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{Sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |
 | $o,\iota$ | normalized spinor dyad, $\varepsilon(o,\iota)=1$ |
-| $p,q,\tilde\Upsilon_1,\tilde\Upsilon_2$ | matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$ |
+| $p,q,\hat\Upsilon_1,\hat\Upsilon_2$ | matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$ |
 | $E_{ij}$ | matrix with $1$ in position $(i,j)$ |
 | $l,n,m,\bar m$ | null tetrad legs; $l,n$ real, $m,\bar m$ complex |
 | $\eta_{ab}$ | tetrad metric, off-diagonal, (5) |

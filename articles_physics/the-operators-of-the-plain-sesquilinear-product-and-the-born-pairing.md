@@ -342,13 +342,13 @@ the two-sided inner action.
 The operators act on the simple module, and there the pairing is the norm.
 
 **The state space.** The **spinor module** is the minimal left ideal
-$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$, the unique simple left $\mathbb{B}$-module, of
+$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$, the unique simple left $\mathbb{B}$-module, of
 complex dimension two, of *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra* and *The
 Complementary Space of the Spinor Space in the General Plain Sesqualgebra* (its second basis element is written
 $\tilde W$ in the companion maths article *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions*).
 The algebra acts on it by the left multiplication $L_{\tilde A}s=\tilde A s$, the action is onto the endomorphisms,
 and the module form is $\langle t,s\rangle_{*}=\mathrm{Sc}(t s^{*})$, positive definite with Gram matrix
-$\tfrac12 I_2$ in the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ of *Hermitian Modules over the Biquaternion Algebra with
+$\tfrac12 I_2$ in the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ of *Hermitian Modules over the Biquaternion Algebra with
 Hermitian Adjoint*.
 
 **Proposition (the Born pairing is the scalar part of the product).** For all $\tilde P,\tilde Q$,
@@ -374,14 +374,14 @@ algebra.
 **Proposition (the product pairs the carrier and does not act on it).** The product's left multiplication keeps the
 carrier on its first basis element, $L^{\star}_{\tilde Q}(\tilde\Pi_+)=\tilde Q\tilde\Pi_+\in S$ for every
 $\tilde Q$, and carries the second out of it for generic $\tilde Q$,
-$L^{\star}_{\tilde Q}(\tilde\Upsilon_2)=\tilde Q\tilde\Upsilon_1\notin S$, since
-$\tilde\Upsilon_2^{*}=\tilde\Upsilon_1$ lies in the complementary ideal $\mathbb{B}\tilde\Pi_-$. The product
+$L^{\star}_{\tilde Q}(\hat\Upsilon_2)=\tilde Q\hat\Upsilon_1\notin S$, since
+$\hat\Upsilon_2^{*}=\hat\Upsilon_1$ lies in the complementary ideal $\mathbb{B}\tilde\Pi_-$. The product
 therefore **pairs** the state space, taking two states to a scalar, and does not act on it; the acting structure is
 the ordinary left multiplication of the paragraph above.
 
 *Proof.* $\tilde\Pi_+^{*}=\tilde\Pi_+$, so the first image is $\tilde Q\tilde\Pi_+$, which lies in the left ideal
-$S$; $\tilde\Upsilon_2^{*}=\tilde\Upsilon_1\in\mathbb{B}\tilde\Pi_-$, so the second image has components along
-$\tilde\Upsilon_1$ and $\tilde\Pi_-$ for generic $\tilde Q$ and lies outside $S$. The two computations are the
+$S$; $\hat\Upsilon_2^{*}=\hat\Upsilon_1\in\mathbb{B}\tilde\Pi_-$, so the second image has components along
+$\hat\Upsilon_1$ and $\tilde\Pi_-$ for generic $\tilde Q$ and lies outside $S$. The two computations are the
 state-space siblings' (*The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra* and *The
 Complementary Space of the Spinor Space in the General Plain Sesqualgebra*).
 
@@ -502,7 +502,7 @@ $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\tilde Q^{*}}$; the twisted adjoint of $L
 $\tilde X\mapsto\tilde X^{*}\tilde A$; the type criteria hold on random, Hermitian, anti-Hermitian and unitary
 parameters; the sandwich criterion holds exactly for the parameters Hermitian up to a phase; the form-preserving
 criterion holds exactly at $\tilde A\in U$; the multiplicativity criteria hold exactly at central parameters and at
-the slice; the product's left multiplication keeps $\tilde\Pi_+$ in the carrier and carries $\tilde\Upsilon_2$ out of
+the slice; the product's left multiplication keeps $\tilde\Pi_+$ in the carrier and carries $\hat\Upsilon_2$ out of
 it; and the worked case was checked coefficient by coefficient.
 
 ## The Bound

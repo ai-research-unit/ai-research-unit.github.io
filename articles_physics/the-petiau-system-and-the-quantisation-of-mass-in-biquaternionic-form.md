@@ -244,7 +244,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\tilde{E}\tilde{E}^{*},\ \tilde{E}^{*}\tilde{E}$ | Mass-squared operators of $\tilde{A}$ and $\tilde{B}$ |
 | $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|N(\tilde{E})|^2$ | Determinant identity; vanishing forces a massless mode |
 | $\sigma=\tfrac12(e_0+i\hat{\nu})$ | Idempotent (nullquat), $\sigma^2=\sigma$, $N(\sigma)=0$ |
-| $\Pi_{1,2}(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
+| $\Pi_{1,2}(\hat u)=\tfrac12(e_0\pm i\hat u)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
 | $e_1+ie_2$ | Singular mass field; mass-squareds $4,0$ |
 | $\mathrm{sn}(z,k),\ \mathrm{cn}(z,k)$ | Jacobi elliptic functions of modulus $k$ |
 | $k\in[0,1]$ | Modulus; $k=0$ de Broglie, $k=1$ soliton |

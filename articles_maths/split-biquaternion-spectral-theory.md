@@ -158,10 +158,10 @@ The contrast with the biquaternion case is sharp: there $\rho(\tilde{Q}) = 0$ fo
 
 ## The Exponential and the Logarithm
 
-The exponential $\exp(\tilde{Q}) = \sum_n\tilde{Q}^n/n!$ is entire, acts componentwise, $\exp(\tilde{Q}) = (\exp\tilde{Q}_+)\tilde\Pi_1 + (\exp\tilde{Q}_-)\tilde\Pi_2$, and is the value of $e^{\lambda}$ at the reduced spectrum. Componentwise, for a quaternion $\tilde q = q_0 + \hat{q}\theta$ with $|\hat q| = 1$,
+The exponential $\exp(\tilde{Q}) = \sum_n\tilde{Q}^n/n!$ is entire, acts componentwise, $\exp(\tilde{Q}) = (\exp\tilde{Q}_+)\tilde\Pi_1 + (\exp\tilde{Q}_-)\tilde\Pi_2$, and is the value of $e^{\lambda}$ at the reduced spectrum. Componentwise, for a quaternion $\tilde q = q_0 + \hat u\theta$ with $|\hat u| = 1$,
 
 $$
-\exp\tilde q = e^{q_0}\left(\cos\theta\,e_0 + \sin\theta\,\hat q\right) ,
+\exp\tilde q = e^{q_0}\left(\cos\theta\,e_0 + \sin\theta\,\hat u\right) ,
 $$
 
 so the eigenvalues of $L_{\exp\tilde{Q}}$ are $e^{q_0^\pm}(\cos|\vec Q_\pm| \pm i\sin|\vec Q_\pm|) = e^{q_0^\pm \pm i|\vec Q_\pm|}$, as expected from the spectrum.

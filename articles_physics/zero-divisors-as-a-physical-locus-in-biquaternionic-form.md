@@ -52,14 +52,14 @@ For the material coordinate $\tilde{Q}=ict\,e_0+\vec x$ the imaginary scalar par
 A fact that reverses the naive expectation that zero divisors are simply "unphysical": the idempotent that generates the state module is itself on the locus. The standard idempotent is
 
 $$
-\tilde P=\tfrac12(e_0+i\hat\mu)\ \ \text{for a unit vector}\ \hat\mu,
+\tilde P=\tfrac12(e_0+i\hat u)\ \ \text{for a unit vector}\ \hat u,
 \qquad
 \tilde P^2=\tilde P,
 \qquad
 N(\tilde P) = \langle\tilde P,\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}=0 ,
 $$
 
-so $\tilde P$ is a non-pure zero divisor and a **right** zero divisor with annihilator $\tilde P^{\natural}$, and $\tilde P^{\natural}$ is a left zero divisor with annihilator $\tilde P$. These identities were verified exactly for $\hat\mu=\hat e_1$: $\tilde P^2=\tilde P$, $N(\tilde P)=0$, and both products $\tilde P\tilde P^{\natural}$ and $\tilde P^{\natural}\tilde P$ vanish in explicit quaternion arithmetic. The physical state space is the left module $\mathbb{B}\tilde P$, and its generator is a null element of the algebra. The zero divisor locus is therefore not only the boundary of the state space; it is its origin. The idempotents that project onto the two-component module, and hence the module itself, are supplied by the cone.
+so $\tilde P$ is a non-pure zero divisor and a **right** zero divisor with annihilator $\tilde P^{\natural}$, and $\tilde P^{\natural}$ is a left zero divisor with annihilator $\tilde P$. These identities were verified exactly for $\hat u=\hat e_1$: $\tilde P^2=\tilde P$, $N(\tilde P)=0$, and both products $\tilde P\tilde P^{\natural}$ and $\tilde P^{\natural}\tilde P$ vanish in explicit quaternion arithmetic. The physical state space is the left module $\mathbb{B}\tilde P$, and its generator is a null element of the algebra. The zero divisor locus is therefore not only the boundary of the state space; it is its origin. The idempotents that project onto the two-component module, and hence the module itself, are supplied by the cone.
 
 ## The Locus in Momentum Space
 
@@ -93,7 +93,7 @@ $$
 
 which is the threshold at which the non-relativistic kinetic description meets the relativistic energy scale. In this precise sense the locus is the momentum-space boundary of the non-relativistic theory: the theory is consistent on the spacelike side and touches the cone exactly where it is about to fail.
 
-It is worth recording what the locus is **not**. A classically forbidden region has an imaginary momentum, $\vec p=i\kappa\hat n$ with $\kappa$ real and $E$ real, and the on-shell element has
+It is worth recording what the locus is **not**. A classically forbidden region has an imaginary momentum, $\vec p=i\kappa\hat u$ with $\kappa$ real and $E$ real, and the on-shell element has
 
 $$
 N(\tilde{\mathcal P})=-\frac{E^2}{c^2}+(i\kappa)^2=-\frac{E^2}{c^2}-\kappa^2<0 ,
@@ -272,7 +272,7 @@ The locus is kinematically inert: $N(\tilde\Lambda\tilde Q)=N(\tilde Q)$ for a u
 | $\tilde{Q}=ict\,e_0+\vec x$ | Material coordinate; $\mathbb{M}_-$ cone is the light cone |
 | $\tilde{\mathcal P}=\frac{E}{ic}e_0+\vec p$ | Momentum biquaternion |
 | $N(\tilde{\mathcal P})=p^2-\frac{p^4}{4m^2c^2}$ | Non-relativistic on-shell biquaternion norm; null at $p=2mc$ |
-| $\tilde P=\tfrac12(e_0+i\hat\mu)$, $N(\tilde P)=0$ | Idempotent generating the state module; a zero divisor |
+| $\tilde P=\tfrac12(e_0+i\hat u)$, $N(\tilde P)=0$ | Idempotent generating the state module; a zero divisor |
 | $\sum_\mu\lvert Q_\mu\rvert^2$ | Hermitian form (positive definite); the probability form, distinct from $N$ |
 | $\psi=u\tilde Q$, $N(\psi)=0$ | Null solution of the free equation for a nilpotent $\tilde Q$ |
 | $E=V(x)$ | Turning surface; $p(x)=0$ |

@@ -731,28 +731,28 @@ the line integral along the three axis-parallel legs from a fixed base point to 
 
 ## Boundary Conditions at an Interface
 
-At a surface separating two media, the fields are matched by the integral form of Maxwell's equations. Let $\hat n$ be the unit normal pointing from medium $1$ to medium $2$. With no free surface charge and no free surface current,
+At a surface separating two media, the fields are matched by the integral form of Maxwell's equations. Let $\hat u$ be the unit normal pointing from medium $1$ to medium $2$. With no free surface charge and no free surface current,
 $$
-\hat n\cdot(\vec D_2-\vec D_1)=0,
+\hat u\cdot(\vec D_2-\vec D_1)=0,
 \qquad
-\hat n\cdot(\vec B_2-\vec B_1)=0,
+\hat u\cdot(\vec B_2-\vec B_1)=0,
 $$
 $$
-\hat n\times(\vec E_2-\vec E_1)=0,
+\hat u\times(\vec E_2-\vec E_1)=0,
 \qquad
-\hat n\times(\vec H_2-\vec H_1)=0 .
+\hat u\times(\vec H_2-\vec H_1)=0 .
 $$
-With a surface charge density $\sigma_s$ and a surface current density $\vec K_s$ the first and last become $\hat n\cdot(\vec D_2-\vec D_1)=\sigma_s$ and $\hat n\times(\vec H_2-\vec H_1)=\vec K_s$. In words: the normal component of $\vec D$ and the normal component of $\vec B$ are continuous up to surface sources, and the tangential components of $\vec E$ and $\vec H$ are continuous.
+With a surface charge density $\sigma_s$ and a surface current density $\vec K_s$ the first and last become $\hat u\cdot(\vec D_2-\vec D_1)=\sigma_s$ and $\hat u\times(\vec H_2-\vec H_1)=\vec K_s$. In words: the normal component of $\vec D$ and the normal component of $\vec B$ are continuous up to surface sources, and the tangential components of $\vec E$ and $\vec H$ are continuous.
 
-The biquaternionic field strength is assembled from the local values of $\epsilon$ and $\mu$, so it is **discontinuous** at an interface even though the physical fields obey the conditions above. Splitting off the tangential part, with unit normal $\hat n$,
+The biquaternionic field strength is assembled from the local values of $\epsilon$ and $\mu$, so it is **discontinuous** at an interface even though the physical fields obey the conditions above. Splitting off the tangential part, with unit normal $\hat u$,
 $$
-\hat n\times\tilde{F}
-=i\sqrt{\epsilon}\,\left(\hat n\times\vec E\right)
--\sqrt{\mu}\,\left(\hat n\times\vec H\right).
+\hat u\times\tilde{F}
+=i\sqrt{\epsilon}\,\left(\hat u\times\vec E\right)
+-\sqrt{\mu}\,\left(\hat u\times\vec H\right).
 $$
-The tangential combinations $\hat n\times\vec E$ and $\hat n\times\vec H$ are continuous across the interface, but the coefficients $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are not, so the left-hand side jumps. Similarly, for the normal part,
+The tangential combinations $\hat u\times\vec E$ and $\hat u\times\vec H$ are continuous across the interface, but the coefficients $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are not, so the left-hand side jumps. Similarly, for the normal part,
 $$
-\hat n\cdot\tilde{F}
+\hat u\cdot\tilde{F}
 =i\sqrt{\epsilon}\,E_n-\sqrt{\mu}\,H_n
 =\frac{i}{\sqrt{\epsilon}}\,D_n-\frac{1}{\sqrt{\mu}}\,B_n,
 $$

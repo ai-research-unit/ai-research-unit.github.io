@@ -37,7 +37,7 @@ six, and the product-preserving ones their subgroup fixing $e_0$, of complex dim
 rank-one family; and the two-sided operators are rank one and never invertible, so the group of invertible
 two-sided operators — the home of the spin group — has no instance in the band. The contrast with the general
 quaternionic row, whose two families are distinct and whose left family is the opposite monoid
-$\mathbb{B}^{\mathrm{op}}$, and with the ordinary row, whose association swaps the two sides, is the spine of the
+$\mathbb{B}^{\mathrm{opp}}$, and with the ordinary row, whose association swaps the two sides, is the spine of the
 article.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis
@@ -77,7 +77,7 @@ L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A},
 $$
 
 so the band carries one family and not two, and the contrast with the general quaternionic row, whose two families
-are distinct and whose left family is the opposite monoid $\mathbb{B}^{\mathrm{op}}$, is the whole operator content of
+are distinct and whose left family is the opposite monoid $\mathbb{B}^{\mathrm{opp}}$, is the whole operator content of
 the job word **coupling**.
 
 *Proof.* $\tilde A\bullet\tilde R=\tilde R\bullet\tilde A$ by the commutativity of the product. Commutativity is
@@ -377,9 +377,9 @@ $\mathfrak{so}(3,\mathbb{C})$, whose own double cover is the spin group of the p
 ideal, the **state space**
 
 $$
-S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\},
+S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\},
 \qquad
-\tilde\Pi_+=\tfrac12(e_0+ie_3),\quad \tilde\Upsilon_2=\tfrac12(ie_1+e_2),
+\tilde\Pi_+=\tfrac12(e_0+ie_3),\quad \hat\Upsilon_2=\tfrac12(ie_1+e_2),
 $$
 
 Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
@@ -387,7 +387,7 @@ Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_
 the multiplication acts by $L^{\bullet}_{\tilde A}s=N(\tilde A,s)e_0$ for $s\in S$; its image therefore lies in
 the central line $\mathbb{C}e_0$, which meets $S$ only at zero, so a non-zero multiplication is **not** an
 endomorphism of the state space. On the basis it is the rank-one functional
-$L^{\bullet}_{\tilde A}|_S=\bigl(N(\tilde A,\tilde\Pi_+),N(\tilde A,\tilde\Upsilon_2)\bigr)\otimes e_0$, with
+$L^{\bullet}_{\tilde A}|_S=\bigl(N(\tilde A,\tilde\Pi_+),N(\tilde A,\hat\Upsilon_2)\bigr)\otimes e_0$, with
 kernel a line of $S$ for a parameter that is not $N$-orthogonal to $S$. A **central** parameter acts by
 $L^{\bullet}_{\lambda e_0}s=\lambda\,\mathrm{Sc}(s)e_0$, the scalar projection onto the central value. On the
 **material** sector the coupling of two material operations is real,
@@ -500,7 +500,7 @@ Take finally the **central** parameter $\tilde C=ie_0$, whose operator $L^{\bull
 matrix $i\,\mathrm{diag}(1,0,0,0)$ and is self-adjoint for $N$: the scalar multiples of $E$ are exactly the
 symmetric couplings, and $\tilde C\bullet\tilde X=iX_0e_0$ returns the scalar coordinate scaled by $i$. On the
 state basis the first parameter acts by $L^{\bullet}_{\tilde A}\tilde\Pi_+=\tfrac12 e_0$ and
-$L^{\bullet}_{\tilde A}\tilde\Upsilon_2=ie_0$, both central and in neither summand of $S$: the image of the state
+$L^{\bullet}_{\tilde A}\hat\Upsilon_2=ie_0$, both central and in neither summand of $S$: the image of the state
 space is the central line. The three parameters — a material projector, an isotropic vector and a central scalar
 — display the two type criteria, the two rank-one operators, the collapse of the sandwich and the functional
 action on the state space.
@@ -517,7 +517,7 @@ square-zero classifications $X_0=1$ and $X_0=0$; the multiplicativity criterion 
 form-isometry in the family; the realified signature $(4,4)$ of $N$; the reality of the coupling on the material
 sector; the derivation space $\{De_0=0,\ D^{\mathsf T}+D=0\}$ of dimension three, with all its elements
 derivations and with the eight diagonal sign maps product-preserving; and the three worked parameters, including
-$L^{\bullet}_{\tilde A}\tilde\Pi_+=\tfrac12e_0$ and $L^{\bullet}_{\tilde A}\tilde\Upsilon_2=ie_0$. All were
+$L^{\bullet}_{\tilde A}\tilde\Pi_+=\tfrac12e_0$ and $L^{\bullet}_{\tilde A}\hat\Upsilon_2=ie_0$. All were
 confirmed on every sample, and the associativity and Jordan witnesses were recomputed element by element.
 
 ## The Bound
@@ -576,7 +576,7 @@ the framework's naming of a proved algebraic fact and is labelled as such.
 ## Physical Readings
 
 The operators of the symmetric quaternionic product read as one family, and the interpretation of the collapse is the
-band's job word. Where the parent row has a left family that is the opposite monoid $\mathbb{B}^{\mathrm{op}}$ and
+band's job word. Where the parent row has a left family that is the opposite monoid $\mathbb{B}^{\mathrm{opp}}$ and
 a right family that does not close, here the commutativity of the operation makes the two one, and the interpretation is that the
 **scalar coupling carries no side**: a comparison of two material operations attaches the same operator from
 either slot, and the operator content of the order is gone. The comparison itself is read on the operators as a
@@ -630,7 +630,7 @@ The operators of the symmetric quaternionic product are one family, because the 
 | $\Theta^{\bullet}_{\tilde A}=L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde A}=A_0L^{\bullet}_{\tilde A}$ | The sandwich, a scaled projection |
 | $\mathrm{Ad}_{\tilde A}=L_{\tilde A}R_{\tilde A^{-1}}$, $\mathrm{Ad}_{\tilde A}\tilde X=\tilde A\tilde X\tilde A^{-1}$ | The inner automorphism of the plain product, cited |
 | $T_{a,b}$ of the parent Clifford structure | The invertible sandwiches and the spin group, cited |
-| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ | The state space; $L^{\bullet}_{\tilde A}s=N(\tilde A,s)e_0$ |
+| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ | The state space; $L^{\bullet}_{\tilde A}s=N(\tilde A,s)e_0$ |
 
 ## Further Reading
 
@@ -638,10 +638,10 @@ The operators of the symmetric quaternionic product are one family, because the 
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the form, its Gram matrix, its realification, its signature and the failure of its invariance.
 - *The Four Forms, the Four Algebraic Norms and the Change of Scalars* (`articles_physics/the-four-forms-the-four-algebraic-norms-and-the-change-of-scalars.md`), for the realified signature, and *The Interval as the Square and the Charge of the Material Composition* (`articles_physics/the-interval-as-the-square-and-the-charge-of-the-material-composition.md`), for the interval signature $(-,+,+,+)$ of the form on the material sector, cited and not re-proved.
 - *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md`), for the scalar law that isolates the block among the twelve, the operator identity $L^{\bullet2}_{\tilde X}=X_0L^{\bullet}_{\tilde X}$ and the classification of the projectors and square-zero operators by the scalar coordinate.
-- *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for the parent row, the reversed composition law and the opposite monoid $\mathbb{B}^{\mathrm{op}}$ that the symmetrisation destroys.
+- *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for the parent row, the reversed composition law and the opposite monoid $\mathbb{B}^{\mathrm{opp}}$ that the symmetrisation destroys.
 - *The Two-Sided Operators and the Spin Group* (`articles_maths/the-two-sided-operators-and-the-spin-group.md`), for the group of invertible two-sided operators, its kernel and the spin group as a group of invertible sandwiches, cited and not re-proved.
 - *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations* (`articles_physics/the-quaternion-form-as-a-product-the-scalar-coupling-of-two-material-operations.md`), the framing article of the band, for the operation, its centrality and the scalar-coupling interpretation.
 - *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements* (`articles_physics/why-a-central-product-cannot-compose-the-radical-and-the-isotropic-elements.md`), for the radical, the isotropic elements, the absence of a unit and the Jordan witness, which are the band's own physics and not this article's.
-- *The Spinor Space as a Module and as a Hilbert Space* (`articles_physics/the-spinor-space-as-a-module-and-as-a-hilbert-space.md`), for the minimal left ideal, its corner basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ and the nilpotent, which are the state space of the band.
+- *The Spinor Space as a Module and as a Hilbert Space* (`articles_physics/the-spinor-space-as-a-module-and-as-a-hilbert-space.md`), for the minimal left ideal, its corner basis $(\tilde\Pi_+,\hat\Upsilon_2)$ and the nilpotent, which are the state space of the band.
 - *Observables, Gauge Generators and the Chirality of the Internal Action* (`articles_physics/observables-gauge-generators-and-the-chirality-of-the-internal-action.md`) and *Mass, Rank and the Positivity of the Dagger* (`articles_physics/mass-rank-and-the-positivity-of-the-dagger.md`), for the physical adjoint, the observables and generators, and the positivity of the Hermitian form that the quaternion form lacks.
 - *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket* (`articles_physics/the-operators-of-the-twelve-structures-multiplication-adjoint-and-bracket.md`), the crossing reader of the twelve operator rows, for the comparison of the twelve adjoints.

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Tilting theory is the study of the modules that behave like the free module of rank one but are allowed to have a projective resolution of length one and to compute the whole module category by a change of the algebra. A **tilting module** $T$ over a finite-dimensional algebra $A$ is a module with projective dimension at most one, with $\operatorname{Ext}^1_A(T,T)=0$, and with an exact sequence $0\to A\to T_0\to T_1\to0$ in which $T_0,T_1$ are direct sums of summands of $T$. The endomorphism algebra $B=\operatorname{End}_A(T)^{\mathrm{op}}$ is the **tilted algebra**, and the functor
+Tilting theory is the study of the modules that behave like the free module of rank one but are allowed to have a projective resolution of length one and to compute the whole module category by a change of the algebra. A **tilting module** $T$ over a finite-dimensional algebra $A$ is a module with projective dimension at most one, with $\operatorname{Ext}^1_A(T,T)=0$, and with an exact sequence $0\to A\to T_0\to T_1\to0$ in which $T_0,T_1$ are direct sums of summands of $T$. The endomorphism algebra $B=\operatorname{End}_A(T)^{\mathrm{opp}}$ is the **tilted algebra**, and the functor
 $$
 \operatorname{RHom}_A(T,-):D^b(A)\to D^b(B)
 $$
@@ -26,14 +26,14 @@ Throughout, $k$ is a field, $A$ and $B$ are finite-dimensional $k$-algebras, mod
 
 A module satisfying only the first two conditions is **partial tilting**; a partial tilting module with $n$ pairwise non-isomorphic indecomposable summands, where $n$ is the rank of $K_0(A)$, is automatically tilting when $A$ is finite-dimensional.
 
-**Proposition.** Let $T$ be a tilting $A$-module and let $B=\operatorname{End}_A(T)^{\mathrm{op}}$ act on $T$ on the right. Then:
+**Proposition.** Let $T$ be a tilting $A$-module and let $B=\operatorname{End}_A(T)^{\mathrm{opp}}$ act on $T$ on the right. Then:
 - the functor $\operatorname{Hom}_A(T,-):\mathrm{Mod}\,A\to\mathrm{Mod}\,B$ is left exact, and its right derived functor $\operatorname{RHom}_A(T,-)$ is an equivalence $D^b(A)\to D^b(B)$;
 - $T$ is a projective generator of the category of $B$-modules under the equivalence, and the inverse equivalence is $-\otimes^{\mathbf L}_BT$;
 - the functors induce mutually inverse isomorphisms $\operatorname{Ext}^i_A(M,N)\to\operatorname{Ext}^i_B(\operatorname{RHom}_A(T,M),\operatorname{RHom}_A(T,N))$ for all $i$ and all modules in the derived categories.
 
 *Proof (in outline).* The module $T$ is a generator (condition 3) with a length-one projective resolution by condition 1, so the functor $\operatorname{Hom}_A(T,-)$ is exact on the subcategory of $\operatorname{add}T$ and the adjunction with $-\otimes_BT$ is an equivalence on that subcategory; conditions 1 and 2 propagate along the resolution and show that $\operatorname{RHom}_A(T,-)$ kills only the complexes that are already zero in the derived category, and that its right adjoint $-\otimes^{\mathbf L}_BT$ is its inverse.
 
-**Definition.** With the notation of the proposition, $B=\operatorname{End}_A(T)^{\mathrm{op}}$ is the **tilted algebra** of $T$, and the tilting module $T$ is a **bimodule** $_{B}T_{A}$; two algebras $A$ and $B$ related by a tilting module are **derived equivalent**, and the equivalence of the proposition is a **tilting equivalence**.
+**Definition.** With the notation of the proposition, $B=\operatorname{End}_A(T)^{\mathrm{opp}}$ is the **tilted algebra** of $T$, and the tilting module $T$ is a **bimodule** $_{B}T_{A}$; two algebras $A$ and $B$ related by a tilting module are **derived equivalent**, and the equivalence of the proposition is a **tilting equivalence**.
 
 **Example.** The free module $A$ is a tilting module with $T_0=A$, $T_1=0$, and the tilted algebra is $A$ itself. Direct sums of copies of $A$ give trivial tilting modules.
 
@@ -43,7 +43,7 @@ A module satisfying only the first two conditions is **partial tilting**; a part
 
 **Definition.** A **torsion pair** in $\mathrm{mod}\,A$ is a pair $(\mathcal{T},\mathcal{F})$ of full subcategories such that $\operatorname{Hom}_A(\mathcal{T},\mathcal{F})=0$, every module $M$ sits in a short exact sequence $0\to tM\to M\to M/tM\to0$ with $tM\in\mathcal{T}$ and $M/tM\in\mathcal{F}$, and $\mathcal{T}$ is closed under quotients and extensions; the module $tM$ is the **torsion part** of $M$. A **torsion-free class** is the second member of a torsion pair.
 
-**Theorem (Brenner–Butler).** Let $T$ be a tilting $A$-module and $B=\operatorname{End}_A(T)^{\mathrm{op}}$. Let $\mathcal{T}$ be the full subcategory of the $A$-modules $M$ with $\operatorname{Ext}^1_A(T,M)=0$, and let $\mathcal{Y}$ be the full subcategory of the $B$-modules $N$ with $\operatorname{Tor}_1^B(N,T)=0$. Then $\mathcal{T}$ is a torsion class in $\mathrm{mod}\,A$, with torsion-free class the $A$-modules $M$ with $\operatorname{Hom}_A(T,M)=0$, and $\mathcal{Y}$ is a torsion-free class in $\mathrm{mod}\,B$, with torsion class the $B$-modules $N$ with $N\otimes_BT=0$; the functor $\operatorname{Hom}_A(T,-)$ restricts to an equivalence $\mathcal{T}\to\mathcal{Y}$ with inverse $-\otimes_BT$, and it induces isomorphisms
+**Theorem (Brenner–Butler).** Let $T$ be a tilting $A$-module and $B=\operatorname{End}_A(T)^{\mathrm{opp}}$. Let $\mathcal{T}$ be the full subcategory of the $A$-modules $M$ with $\operatorname{Ext}^1_A(T,M)=0$, and let $\mathcal{Y}$ be the full subcategory of the $B$-modules $N$ with $\operatorname{Tor}_1^B(N,T)=0$. Then $\mathcal{T}$ is a torsion class in $\mathrm{mod}\,A$, with torsion-free class the $A$-modules $M$ with $\operatorname{Hom}_A(T,M)=0$, and $\mathcal{Y}$ is a torsion-free class in $\mathrm{mod}\,B$, with torsion class the $B$-modules $N$ with $N\otimes_BT=0$; the functor $\operatorname{Hom}_A(T,-)$ restricts to an equivalence $\mathcal{T}\to\mathcal{Y}$ with inverse $-\otimes_BT$, and it induces isomorphisms
 $$
 K_0(\mathcal{T})\cong K_0(\mathcal{Y}),\qquad K_0(A)\cong K_0(B),
 $$
@@ -61,7 +61,7 @@ on the Grothendieck groups, so that the derived equivalence preserves the number
 
 **Theorem (APR).** Let $Q$ be a finite acyclic quiver, $A=kQ$, and $i$ a sink or a source. Then there is a tilting $A$-module $T_i$, obtained by applying the inverse reflection functor at $i$ to the indecomposable projective $P_i$ of the reflected algebra $k(s_iQ)$, with the following properties:
 - $T_i$ has $n$ pairwise non-isomorphic indecomposable summands, one for each vertex of $Q$;
-- $\operatorname{Ext}^1_A(T_i,T_i)=0$, and $\operatorname{End}_A(T_i)^{\mathrm{op}}\cong k(s_iQ)$, the path algebra of the quiver reflected at $i$;
+- $\operatorname{Ext}^1_A(T_i,T_i)=0$, and $\operatorname{End}_A(T_i)^{\mathrm{opp}}\cong k(s_iQ)$, the path algebra of the quiver reflected at $i$;
 - the functor $\operatorname{RHom}_A(T_i,-)$ is an equivalence $D^b(kQ)\cong D^b(k(s_iQ))$.
 
 The summands are the images of the indecomposable modules of the reflected algebra under the inverse reflection functor, and they are not in general the projectives $P_j$, $j\neq i$: the summand replacing $P_i$ is a module at the opposite end of the Auslander–Reiten quiver, an indecomposable which is projective only in the trivial cases. For the quiver $1\to2$ the sink $2$ gives $P_2$ injective, so the inverse reflection leaves $P_2$ alone and the tilt is the regular module $P_1\oplus P_2$, with endomorphism algebra $k(1\leftarrow2)\cong k(1\to2)$; here $P_1=S_1$, and the simple at the source is not an independent summand. For $1\to2\to3$ the tilt at the sink $3$ has three pairwise non-isomorphic summands and endomorphism algebra of dimension $5$, namely $P_1\oplus P_2\oplus I_2$ with $I_2=[1,2]$, and the tilt at the source $1$, computed in the opposite algebra where $1$ is a sink, has endomorphism algebra $k(1\leftarrow2\to3)$, of the same dimension.
@@ -72,7 +72,7 @@ Consequently two acyclic quivers with the same underlying graph have derived equ
 
 **Corollary.** Two acyclic quivers with the same underlying graph have path algebras with equivalent derived categories, and the equivalence is realised by a composite of APR tilts. The number of indecomposable summands of every tilting module is the number of vertices, and the Grothendieck group is free of that rank.
 
-**Example.** For the quiver $1\to2$ the reflection at the sink $2$ produces the quiver $1\leftarrow2$; the two path algebras are isomorphic (both have basis $e_1,e_2,a$ with $a^2=0$), and the regular module $T=P_1\oplus P_2$ has endomorphism algebra $k(1\leftarrow2)\cong k(1\to2)$, so the derived equivalence is the identity on the isomorphism classes. For the quiver $1\to2\to3$ the reflection at the sink $3$ produces $1\to2\leftarrow3$, and the APR tilting module has three pairwise non-isomorphic indecomposable summands: the module $T=P_1\oplus P_2\oplus I_2$, with $I_2=[1,2]$ the injective envelope of $S_2$, satisfies $\operatorname{Ext}^1_{kQ}(T,T)=0$ and has $\operatorname{End}_{kQ}(T)$ of dimension $5$ with radical-quotient quiver $1\to2\leftarrow3$, so that $\operatorname{End}_{kQ}(T)^{\mathrm{op}}\cong k(1\to2\leftarrow3)$; the derived categories of the two orientations are equivalent, although the two algebras are not isomorphic (their dimensions are $6$ and $5$).
+**Example.** For the quiver $1\to2$ the reflection at the sink $2$ produces the quiver $1\leftarrow2$; the two path algebras are isomorphic (both have basis $e_1,e_2,a$ with $a^2=0$), and the regular module $T=P_1\oplus P_2$ has endomorphism algebra $k(1\leftarrow2)\cong k(1\to2)$, so the derived equivalence is the identity on the isomorphism classes. For the quiver $1\to2\to3$ the reflection at the sink $3$ produces $1\to2\leftarrow3$, and the APR tilting module has three pairwise non-isomorphic indecomposable summands: the module $T=P_1\oplus P_2\oplus I_2$, with $I_2=[1,2]$ the injective envelope of $S_2$, satisfies $\operatorname{Ext}^1_{kQ}(T,T)=0$ and has $\operatorname{End}_{kQ}(T)$ of dimension $5$ with radical-quotient quiver $1\to2\leftarrow3$, so that $\operatorname{End}_{kQ}(T)^{\mathrm{opp}}\cong k(1\to2\leftarrow3)$; the derived categories of the two orientations are equivalent, although the two algebras are not isomorphic (their dimensions are $6$ and $5$).
 
 ### The Ext-Algebra and the Torsion Pairs
 
@@ -116,7 +116,7 @@ Tilting theory is the bridge between the representation theory of *Quiver Repres
 |---|---|
 | $T$ | tilting module |
 | $\operatorname{add}T$ | direct summands of finite direct sums of $T$ |
-| $B=\operatorname{End}_A(T)^{\mathrm{op}}$ | tilted algebra |
+| $B=\operatorname{End}_A(T)^{\mathrm{opp}}$ | tilted algebra |
 | $\operatorname{RHom}_A(T,-)$, $-\otimes^{\mathbf L}_BT$ | the derived equivalence and its inverse |
 | $(\mathcal{T},\mathcal{F})$ | torsion pair, torsion and torsion-free classes |
 | $\mathcal{Y}$ | $B$-modules $N$ with $\operatorname{Tor}_1^B(N,T)=0$ |

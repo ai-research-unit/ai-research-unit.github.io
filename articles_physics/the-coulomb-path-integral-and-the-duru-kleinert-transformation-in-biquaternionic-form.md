@@ -77,9 +77,9 @@ r=|\vec x|=u_1^2+u_2^2+u_3^2+u_4^2=|\vec u|^2=N(u),
 $$
 where $u=u_1e_1+u_2e_2+u_3e_3+u_4e_0\in\mathbb{H}$ and $N(u)=\bar uu$ is the quaternion (hence the biquaternion, with real coefficients) norm. The identity was checked numerically on random $u$ and holds to machine precision. Its differential companion is the statement that the map is a Riemannian submersion with one gauge direction: the Jacobian $J=\partial\vec x/\partial u$ satisfies
 $$
-J^{\mathsf T}J=4N(u)\big(I-\hat n\hat n^{\mathsf T}\big),
+J^{\mathsf T}J=4N(u)\big(I-\hat u\hat u^{\mathsf T}\big),
 \qquad
-\hat n\propto(u_2,-u_1,-u_4,u_3),
+\hat u\propto(u_2,-u_1,-u_4,u_3),
 $$
 with three eigenvalues equal to $4N(u)$ and one null direction. The null direction is the gauge direction of the two-to-one map — the **KS constraint** is $u_2\,du_1-u_1\,du_2-u_4\,du_3+u_3\,du_4=0$ — and on the constraint surface the induced metric of the physical three-space is conformal,
 $$
@@ -103,7 +103,7 @@ S\;\longrightarrow\;\int ds\;\Big[\,2m\Big|\frac{du}{ds}\Big|^2-E\,N(u)-\kappa\,
 $$
 which is the action of an **isotropic harmonic oscillator in four dimensions**, with the energy-dependent coefficient of $N(u)=|u|^2$ playing the role of the oscillator's restoring term. That the transformed action is harmonic, and that the fixed-energy problem is thereby exactly integrable, is the content of the Duru–Kleinert transformation.
 
-**The reduction is standard, and is transcribed here.** The transformation, the choice $dt=r\,ds$, the KS map, the reduction to the four-dimensional oscillator, and the conclusion that the Coulomb Green's function is obtained from the oscillator's Mehler kernel are the standard results of Duru and Kleinert and of Kleinert's treatise; they are not re-derived. What is recomputed here is only the algebra of the reduction: the norm identity $r=N(u)$, its differential companion $J^{\mathsf T}J=4N(u)(I-\hat n\hat n^{\mathsf T})$ with the constraint direction $\hat n\propto(u_2,-u_1,-u_4,u_3)$ (both checked numerically), and the cancellation of the inverse norm between the kinetic term and the pseudo-time Jacobian. The full kernel — the energy spectrum, the degeneracy $n^2$, and the wave functions — is the subject of the hydrogen articles, which obtain it on the operator side, and the value of the path-integral route is that it reaches the same spectrum through the oscillator, whose kernel the corpus owns in *The Harmonic Oscillator in Biquaternionic Form*.
+**The reduction is standard, and is transcribed here.** The transformation, the choice $dt=r\,ds$, the KS map, the reduction to the four-dimensional oscillator, and the conclusion that the Coulomb Green's function is obtained from the oscillator's Mehler kernel are the standard results of Duru and Kleinert and of Kleinert's treatise; they are not re-derived. What is recomputed here is only the algebra of the reduction: the norm identity $r=N(u)$, its differential companion $J^{\mathsf T}J=4N(u)(I-\hat u\hat u^{\mathsf T})$ with the constraint direction $\hat u\propto(u_2,-u_1,-u_4,u_3)$ (both checked numerically), and the cancellation of the inverse norm between the kinetic term and the pseudo-time Jacobian. The full kernel — the energy spectrum, the degeneracy $n^2$, and the wave functions — is the subject of the hydrogen articles, which obtain it on the operator side, and the value of the path-integral route is that it reaches the same spectrum through the oscillator, whose kernel the corpus owns in *The Harmonic Oscillator in Biquaternionic Form*.
 
 **Why the harmonic form is the point.** The oscillator is the one nontrivial kernel that is exactly known and exactly integrable, and the transformation arranges that the singular problem be equivalent to it. In the algebra's interpretation the two facts line up: the pseudotime makes the potential constant because the potential was the inverse norm, and the coordinate transformation makes the kinetic term the norm's quadratic form because the transformation is the square root. The harmonic oscillator's centrality in the catalogue — the harmonic form is the one the algebra's own $SU(2)$ and rotor structure generates — is what makes the reduction natural, though the reduction is not derived from the algebra.
 
@@ -137,7 +137,7 @@ dt=r\,ds ,
 $$
 which makes the potential term constant, $\int V\,dt=-\kappa\int ds$, and leaves the kinetic term carrying an inverse radius, $\tfrac{m}{2}\int|\dot{\vec x}|^2dt=\tfrac{m}{2}\int|d\vec x/ds|^2(1/r)\,ds$. Second, the position is carried by the Kustaanheimo–Stiefel coordinates $u\in\mathbb{R}^4$, under which
 $$
-r=|\vec x|=N(u),\qquad J^{\mathsf T}J=4N(u)\big(I-\hat n\hat n^{\mathsf T}\big),
+r=|\vec x|=N(u),\qquad J^{\mathsf T}J=4N(u)\big(I-\hat u\hat u^{\mathsf T}\big),
 $$
 so that on the KS constraint $\big|d\vec x\big|^2=4N(u)\big|du\big|^2$ and the inverse norm cancels. With the fixed-energy term $-\int E\,dt=-E\int N(u)\,ds$ the transformed action is
 $$
@@ -162,7 +162,7 @@ The algebra's contribution is an interpretation. The Coulomb potential is a **ce
 | $u=u_1e_1+u_2e_2+u_3e_3+u_4e_0\in\mathbb{H}$ | The quaternion carried by $u$ |
 | $N(u)=\bar uu=\lvert\vec u\rvert^2$ | Quaternion norm; equals $r$ |
 | $x_1,x_2,x_3$ in terms of $u$ | The Kustaanheimo–Stiefel map; $u\mapsto\vec x$ |
-| $J^{\mathsf T}J=4N(u)(I-\hat n\hat n^{\mathsf T})$, $\hat n\propto(u_2,-u_1,-u_4,u_3)$ | Riemannian submersion; one gauge direction |
+| $J^{\mathsf T}J=4N(u)(I-\hat u\hat u^{\mathsf T})$, $\hat u\propto(u_2,-u_1,-u_4,u_3)$ | Riemannian submersion; one gauge direction |
 | $u_2\,du_1-u_1\,du_2-u_4\,du_3+u_3\,du_4=0$ | KS constraint; the null (gauge) direction of the submersion |
 | $S\to\int ds\,[\,2m\lvert du/ds\rvert^2-E N(u)-\kappa\,]$ | Transformed action; four-dimensional isotropic oscillator |
 | $\mathcal{D}\vec x$, $r\,ds$ | Measures; the transformation's Jacobian is not supplied by the algebra |

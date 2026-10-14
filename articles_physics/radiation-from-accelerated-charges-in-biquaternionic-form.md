@@ -209,18 +209,18 @@ one spinor square and two invariants.
 **The retarded separation as a spinor product.** With the primitive idempotent
 
 $$
-\sigma = \tfrac12\left(e_0 + i\,\hat n\right),
+\sigma = \tfrac12\left(e_0 + i\,\hat u\right),
 \qquad
 \sigma^2 = \sigma, \qquad N(\sigma) = 0,
 $$
 
-whose unit vector $\hat n$ is the line of sight in the charge's rest frame, taken from the observation point towards the charge,
+whose unit vector $\hat u$ is the line of sight in the charge's rest frame, taken from the observation point towards the charge,
 
 $$
 \tilde{\mathcal{R}} = 2i\xi\,\tilde{B}\,\sigma\,\tilde{B}^+ .
 $$
 
-This is the source's displayed relation for its separation $X - Z$. The product exhibits the two facts established separately in the retarded-null section: the separation is a zero divisor because it is built from the idempotent $\sigma$ and the invertible spinor $\tilde{B}$, and its magnitude is the invariant retarded distance $\xi$, not the coordinate distance $R$. The source takes its direction vector $\vec\nu$ from the charge to the observation point, which reverses the overall sign of the relation as printed; the corpus fixes the sign by the direction of $\hat n$ stated above, so that the coefficient of the idempotent is $+2i\xi$.
+This is the source's displayed relation for its separation $X - Z$. The product exhibits the two facts established separately in the retarded-null section: the separation is a zero divisor because it is built from the idempotent $\sigma$ and the invertible spinor $\tilde{B}$, and its magnitude is the invariant retarded distance $\xi$, not the coordinate distance $R$. The source takes its direction vector $\vec\nu$ from the charge to the observation point, which reverses the overall sign of the relation as printed; the corpus fixes the sign by the direction of $\hat u$ stated above, so that the coefficient of the idempotent is $+2i\xi$.
 
 **The four-acceleration.** In the same variables the four-acceleration of the charge is the boost conjugate of its value in the instantaneous rest frame,
 
@@ -532,7 +532,7 @@ $$
 \tilde{A} = \frac{\mu q}{4\pi\xi}\,\tilde{V} = \frac{i\mu q c}{4\pi\xi}\,\tilde{B}^2,
 $$
 
-and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_0 + i\hat n)$ as $\tilde{\mathcal{R}} = 2i\xi\,\tilde{B}\sigma\tilde{B}^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = \tilde{B}\tilde{a}\tilde{B}^+$.
+and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_0 + i\hat u)$ as $\tilde{\mathcal{R}} = 2i\xi\,\tilde{B}\sigma\tilde{B}^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = \tilde{B}\tilde{a}\tilde{B}^+$.
 
 The field strength splits into a velocity part and an acceleration part, $\tilde{F} = \tilde{F}_v + \tilde{F}_a$. The velocity field $\tilde{F}_v$ falls as $1/R^2$, has vanishing second invariant and positive first invariant, $I_{1,v} = (\hat R\cdot\vec E_v)^2 > 0$, and is of electric type; it is the field of a uniformly moving charge and is not radiation. The acceleration field $\tilde{F}_a$ falls as $1/R$, is transverse, and is **null**:
 
@@ -581,7 +581,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\xi = \gamma D = -i\,\mathrm{Sc}(\tilde{u}\bar{\tilde{\mathcal{R}}})$ | Invariant retarded distance (the source's $\xi$) |
 | $\tilde{u} = \tilde{V}/(ic)$ | Four-velocity at unit biquaternion norm, $\tilde{u} = \gamma(e_0 - i\vec\beta)$ |
 | $\tilde{B}$, $\tilde{B}^2 = \tilde{V}/(ic)$, $\tilde{B}^+ = \tilde{B}$ | Bireal spinor square root of the four-velocity |
-| $\sigma = \tfrac12(e_0 + i\hat n)$ | Primitive idempotent; $\hat n$ the line of sight in the charge's rest frame |
+| $\sigma = \tfrac12(e_0 + i\hat u)$ | Primitive idempotent; $\hat u$ the line of sight in the charge's rest frame |
 | $\tilde{a} = a_1e_1 + a_2e_2 + a_3e_3$ | Rest-frame acceleration biquaternion, $d\tilde{V}/d\tau = \tilde{B}\tilde{a}\tilde{B}^+$ |
 | $\dot{\vec\beta} = d\vec\beta/dt_r$ | Retarded-time acceleration (dot = $d/dt_r$ in the field formulas) |
 | $\vec E_v, \vec B_v, \vec H_v$ | Velocity-part fields |

@@ -88,7 +88,7 @@ for all $x, y \in L$. An **ortholattice** is a bounded lattice together with an 
 **orthoposet** is a poset with an order-reversing involution, no meet or join being required.
 
 The first two conditions say that ${}^{\perp}$ is an **order-reversing involution**, equivalently an
-order isomorphism $L \to L^{\mathrm{op}}$ of order two, in the sense of *Operators on a Poset*; the
+order isomorphism $L \to L^{\mathrm{opp}}$ of order two, in the sense of *Operators on a Poset*; the
 last two say that it is a complement.
 
 **Proposition.** An orthocomplement is unique when it exists. It satisfies $0^{\perp} = 1$ and

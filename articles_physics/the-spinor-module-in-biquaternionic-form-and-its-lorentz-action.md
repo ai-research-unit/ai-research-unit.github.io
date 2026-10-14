@@ -115,27 +115,27 @@ $$
 The off-diagonal matrix units are recovered in biquaternion coordinates: with
 
 $$
-\tilde\Upsilon_1 = \frac{i e_1 - e_2}{2}, \qquad \tilde\Upsilon_2 = \frac{i e_1 + e_2}{2},
+\hat\Upsilon_1 = \frac{i e_1 - e_2}{2}, \qquad \hat\Upsilon_2 = \frac{i e_1 + e_2}{2},
 $$
 
-the set $\{\tilde\Pi_+,\tilde\Upsilon_1,\tilde\Upsilon_2,\tilde\Pi_-\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ with the matrix-unit relations
+the set $\{\tilde\Pi_+,\hat\Upsilon_1,\hat\Upsilon_2,\tilde\Pi_-\}$ is a $\mathbb{C}$-basis of $\mathbb{B}$ with the matrix-unit relations
 
 $$
 E_{11} = \tilde\Pi_+,\quad E_{12} = x,\quad E_{21} = y,\quad E_{22} = \tilde\Pi_-,
 \qquad
-\tilde\Pi_+\tilde\Upsilon_1 = \tilde\Upsilon_1 = \tilde\Upsilon_1 \tilde\Pi_-,\quad \tilde\Pi_-\tilde\Upsilon_2 = \tilde\Upsilon_2 = \tilde\Upsilon_2 \tilde\Pi_+,\quad \tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_+,\quad \tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_-.
+\tilde\Pi_+\hat\Upsilon_1 = \hat\Upsilon_1 = \hat\Upsilon_1 \tilde\Pi_-,\quad \tilde\Pi_-\hat\Upsilon_2 = \hat\Upsilon_2 = \hat\Upsilon_2 \tilde\Pi_+,\quad \hat\Upsilon_1\hat\Upsilon_2 = \tilde\Pi_+,\quad \hat\Upsilon_2\hat\Upsilon_1 = \tilde\Pi_-.
 $$
 
 Under $\mathsf{M}_2$, $\tilde\Pi_+$ and $\tilde\Pi_-$ are the diagonal matrix units and $\mathbb{B}\tilde\Pi_+$ is the space of matrices whose only nonzero column is the first. A convenient basis of the left ideal is
 
 $$
-\{\tilde\Pi_+,\; \tilde\Upsilon_2\}, \qquad \tilde\Upsilon_2 = e_2 \tilde\Pi_+ = \frac{i e_1 + e_2}{2},
+\{\tilde\Pi_+,\; \hat\Upsilon_2\}, \qquad \hat\Upsilon_2 = e_2 \tilde\Pi_+ = \frac{i e_1 + e_2}{2},
 $$
 
 and a general spinor in $\mathbb{B}\tilde\Pi_+$ is
 
 $$
-\tilde{\psi} = \psi_1\, \tilde\Pi_+ + \psi_2\, \tilde\Upsilon_2, \qquad \psi_1,\psi_2 \in \mathbb{C}.
+\tilde{\psi} = \psi_1\, \tilde\Pi_+ + \psi_2\, \hat\Upsilon_2, \qquad \psi_1,\psi_2 \in \mathbb{C}.
 $$
 
 The coordinate map $\tilde{\psi}\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of $\mathbb{B}$-modules: for every $\tilde{Q}\in\mathbb{B}$,
@@ -144,7 +144,7 @@ $$
 \tilde{Q}\tilde{\psi} = \psi_1(\tilde{Q}\tilde\Pi_+) + \psi_2(\tilde{Q}y) \;\longleftrightarrow\; \mathsf{M}_2(\tilde{Q})\begin{pmatrix}\psi_1\\ \psi_2\end{pmatrix}.
 $$
 
-For example $e_3 \tilde\Pi_+ = -i \tilde\Pi_+$ and $e_3 \tilde\Upsilon_2 = i \tilde\Upsilon_2$, matching $\mathsf{M}_2(e_3) = \operatorname{diag}(-i,i)$; and $e_1 \tilde\Pi_+ = -i \tilde\Upsilon_2$, matching the first column of $\mathsf{M}_2(e_1)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
+For example $e_3 \tilde\Pi_+ = -i \tilde\Pi_+$ and $e_3 \hat\Upsilon_2 = i \hat\Upsilon_2$, matching $\mathsf{M}_2(e_3) = \operatorname{diag}(-i,i)$; and $e_1 \tilde\Pi_+ = -i \hat\Upsilon_2$, matching the first column of $\mathsf{M}_2(e_1)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
 
 This ideal model is the precise sense in which "the spinor module lies inside $\mathbb{B}$": a spinor is an element of the algebra that lies in the minimal left ideal $\mathbb{B}\tilde\Pi_+$, and the algebra acts on it by left multiplication. It is not an arbitrary biquaternion.
 
@@ -208,8 +208,8 @@ The subgroups relevant to the series sit inside it as follows:
 
 | Element | Characterization | Subspace |
 |---|---|---|
-| Pure boost $\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$ | Hermitian, unit norm | $\mathbb{M}_+$ |
-| Pure rotation $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat n$ | Real quaternion, unit norm | $\mathbb{H}_{\mathbb{B}}$ |
+| Pure boost $\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ | Hermitian, unit norm | $\mathbb{M}_+$ |
+| Pure rotation $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat u_{\mathrm r}$ | Real quaternion, unit norm | $\mathbb{H}_{\mathbb{B}}$ |
 | General $\tilde{U}$ | Unit norm | $\mathbb{B}$ |
 
 Pure boosts satisfy $\tilde{U}^{*} = \tilde{U}$; they do not form a subgroup (the product of two non-collinear boosts is a boost plus a rotation). Pure rotations form the subgroup $SU(2) = SL(2,\mathbb{C})\cap U(2)$.
@@ -264,16 +264,16 @@ No conjugation appears. This is the defining feature of the spinor representatio
 
 ### Boosts and Rotations Explicitly
 
-For a boost along $\hat u$ with rapidity $\psi$,
+For a boost along $\hat u_{\mathrm b}$ with rapidity $\psi$,
 
 $$
-\mathsf{M}_2(\tilde{U}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\hat u\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde{U}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\hat u_{\mathrm b}\cdot\boldsymbol{\sigma},
 $$
 
-as follows from $\mathsf{M}_2(i\hat u) = \hat u\cdot\boldsymbol{\sigma}$. For $\hat u = \hat e_3$ this is the diagonal matrix $\operatorname{diag}(e^{\psi/2},e^{-\psi/2})$, which stretches one spinor component and contracts the other. For a rotation about $\hat n$ by angle $\theta$,
+as follows from $\mathsf{M}_2(i\hat u_{\mathrm b}) = \hat u_{\mathrm b}\cdot\boldsymbol{\sigma}$. For $\hat u_{\mathrm b} = \hat e_3$ this is the diagonal matrix $\operatorname{diag}(e^{\psi/2},e^{-\psi/2})$, which stretches one spinor component and contracts the other. For a rotation about $\hat u_{\mathrm r}$ by angle $\theta$,
 
 $$
-\mathsf{M}_2(\tilde{R}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\hat n\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde{R}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\hat u_{\mathrm r}\cdot\boldsymbol{\sigma},
 $$
 
 the standard $SU(2)$ rotation matrix. A rotation by $2\pi$ sends $\mathsf{M}_2(\tilde{R})$ to $-I_2$: it is the identity in the four-vector representation but not on the spinor module. A rotation by $4\pi$ is the identity on both.
@@ -531,10 +531,10 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $\bar{S} = \overline{V_1} = (0,\tfrac12)$ | Right-handed Weyl (conjugate) representation |
 | $\Delta = S\oplus\bar{S}$ | Dirac spinor module, $\dim_{\mathbb{C}}\Delta=4$ |
 | $\tilde\Pi_+ = \tfrac12(e_0+ie_3),\ \tilde\Pi_-=\tfrac12(e_0-ie_3)$ | Primitive orthogonal idempotents, $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ |
-| $\tilde\Upsilon_1 = \tfrac12(ie_1-e_2),\ \tilde\Upsilon_2=\tfrac12(ie_1+e_2)=e_2\tilde\Pi_+$ | Matrix units $E_{12},E_{21}$; basis $\{\tilde\Pi_+,\tilde\Upsilon_2\}$ of $S$ |
+| $\hat\Upsilon_1 = \tfrac12(ie_1-e_2),\ \hat\Upsilon_2=\tfrac12(ie_1+e_2)=e_2\tilde\Pi_+$ | Matrix units $E_{12},E_{21}$; basis $\{\tilde\Pi_+,\hat\Upsilon_2\}$ of $S$ |
 | $SL(2,\mathbb{C}) = \{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_0\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |
-| $\tilde{U} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
-| $\tilde{R} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat n$ | Rotation rotor (in $\mathbb{H}_{\mathbb{B}}$) |
+| $\tilde{U} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde{R} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat u_{\mathrm r}$ | Rotation rotor (in $\mathbb{H}_{\mathbb{B}}$) |
 | $\psi\mapsto\tilde{U}\psi$ | Lorentz action on the spinor module |
 | $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$ | Invariant symplectic pairing on $S$ |
 | $h(\psi,\phi)=\psi^{\dagger}\phi$ | Hermitian form (invariant on $SU(2)$) |

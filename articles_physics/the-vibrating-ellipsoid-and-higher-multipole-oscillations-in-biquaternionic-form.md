@@ -22,16 +22,16 @@ The rotor algebra used below is stated explicitly, from first principles.
 
 ### Rotors
 
-A rotation of three-dimensional space by an angle $\theta$ about a unit axis $\hat n = n_1e_1 + n_2e_2 + n_3e_3$, with $\hat n^2 = -e_0$, is represented by the **rotor**
+A rotation of three-dimensional space by an angle $\theta$ about a unit axis $\hat u = n_1e_1 + n_2e_2 + n_3e_3$, with $\hat u^2 = -e_0$, is represented by the **rotor**
 
 $$
-\tilde{\Lambda}(\theta,\hat n) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat n \in \mathbb{H}_{\mathbb{B}} ,
+\tilde{\Lambda}(\theta,\hat u) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat u \in \mathbb{H}_{\mathbb{B}} ,
 $$
 
 a real quaternion of unit norm,
 
 $$
-\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2}\,\hat n^2 = e_0 .
+\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2}\,\hat u^2 = e_0 .
 $$
 
 Because $\tilde{\Lambda}$ is a real quaternion, its Hermitian conjugate is its quaternion conjugate, $\tilde{\Lambda}^{*} = \tilde{\Lambda}^{\natural}$. The rotor acts on a vector by conjugation,
@@ -46,11 +46,11 @@ $$
 \tilde{\Lambda}_2\tilde{\Lambda}_1 \;\longleftrightarrow\; R_2R_1 ,
 $$
 
-so the rotors form a group, and the map is two-to-one: $\tilde{\Lambda}(\theta + 2\pi,\hat n) = -\tilde{\Lambda}(\theta,\hat n)$, with $+2\pi$ and $4\pi$ giving respectively $-e_0$ and $+e_0$. This has been checked directly. The two rotors $\pm\tilde{\Lambda}$ produce the **same** rotation of vectors, which is the familiar two-sheeted cover of the rotation group by its spin group.
+so the rotors form a group, and the map is two-to-one: $\tilde{\Lambda}(\theta + 2\pi,\hat u) = -\tilde{\Lambda}(\theta,\hat u)$, with $+2\pi$ and $4\pi$ giving respectively $-e_0$ and $+e_0$. This has been checked directly. The two rotors $\pm\tilde{\Lambda}$ produce the **same** rotation of vectors, which is the familiar two-sheeted cover of the rotation group by its spin group.
 
 ### Angular Velocity
 
-Let the axis be fixed and the angle vary, $\theta = \theta(t)$, and write $\tilde{\omega} = \dot\theta\,\hat n$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity
+Let the axis be fixed and the angle vary, $\theta = \theta(t)$, and write $\tilde{\omega} = \dot\theta\,\hat u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity
 
 $$
 \dot{\tilde{\Lambda}} = \tfrac12\,\tilde{\Lambda}\,\tilde{\omega} .
@@ -306,10 +306,10 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |
-| $\tilde{\Lambda} = \cos(\theta/2) + \sin(\theta/2)\hat n$ | Rotation rotor, a real unit quaternion |
+| $\tilde{\Lambda} = \cos(\theta/2) + \sin(\theta/2)\hat u$ | Rotation rotor, a real unit quaternion |
 | $\vec v' = \tilde{\Lambda}\vec v\tilde{\Lambda}^{\natural}$ | Rotor action on a vector |
-| $R(\theta,\hat n)$ | Rotation matrix in $SO(3)$, the image of $\tilde{\Lambda}$ (distinct from the radius $R_0$) |
-| $\tilde{\omega} = \dot\theta\,\hat n$ | Angular velocity (body-frame vector) |
+| $R(\theta,\hat u)$ | Rotation matrix in $SO(3)$, the image of $\tilde{\Lambda}$ (distinct from the radius $R_0$) |
+| $\tilde{\omega} = \dot\theta\,\hat u$ | Angular velocity (body-frame vector) |
 | $\dot{\tilde{\Lambda}} = \tfrac12\tilde{\Lambda}\tilde{\omega}$ | Rotor kinematic identity |
 | $Y_l^m$ | Spherical harmonics |
 | $r(\theta,\phi,t) = R_0[1+\sum a_{lm}Y_l^m]$ | Shape function of the deformed body |

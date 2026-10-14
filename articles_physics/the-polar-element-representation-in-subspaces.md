@@ -15,27 +15,68 @@ The restriction is not a cosmetic exercise, because each subspace is the fixed s
 | subspace | real dim | biquaternion norm | phase | boost | rotor |
 |---|---|---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ — centre | 2 | complex, anisotropic | free | $e_0$ | $\pm e_0$ |
-| $\mathrm{Vect}(\mathbb{B})$ — vector subspace | 6 | complex, indefinite | free | boost about $\vec v\times\vec w$ | unit vector in the plane of $\vec v$ and $\vec w$ |
+| $\mathrm{Vect}(\mathbb{B})$ — vector subspace | 6 | complex, indefinite | free | boost about $\vec q\times\vec q'$ | unit vector in the plane of $\vec q$ and $\vec q'$ |
 | $\mathbb{H}_{\mathbb{B}}$ — quaternions | 4 | positive definite | $0$ | $e_0$ | free in $\mathrm{Sp}(1)$ |
 | $i\mathbb{H}_{\mathbb{B}}$ — antiquaternions | 4 | negative definite | $\pi/2$ | $e_0$ | free in $\mathrm{Sp}(1)$ |
 | $\mathbb{M}_+$ — informational sector | 4 | real, indefinite | $0$ or $\pi/2$ | the boost, explicit | $\pm e_0$ or a direction |
 | $\mathbb{M}_-$ — material sector | 4 | real, indefinite | $0$ or $\pi/2$ | the boost, explicit | $\pm e_0$ or a direction |
 
-The conventions are those of *Conventions in the Biquaternion Universe*: the basis is $e_0 = 1$ the algebra unit and $e_1,e_2,e_3$ the quaternion units with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, so an element is written $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with coefficients $Q_\mu \in \mathbb{C}$, and $i$ is the central scalar imaginary with $i^2 = -1$; $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2(e_0) = I$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathrm{Vect}(\mathbb{B})$ is the kernel of the scalar part; $\mathbb{H}_{\mathbb{B}}$ is the fixed space of complex conjugation, the home of the rotations, whose unit sphere is $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : \tilde q\tilde q^{\natural} = 1\}$, the group of unit real quaternions; $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, its imaginary half; $\mathbb{M}_+$ is the fixed space of Hermitian conjugation, the home of the boosts; and $\mathbb{M}_-$ is the anti-fixed space of Hermitian conjugation, with $Q_0 = iq'_0$ and $Q_k$ real, the home of the four-vectors. Every numerical value below was recomputed in double precision; the residuals of the identities quoted are below $2\times10^{-12}$. An element is **unitary** when it preserves the form, $\tilde{Q}\tilde{Q}^{*}=e_0$, and the unitary elements form the group $U(\mathbb{B})\cong U(2)$; the condition is narrower than norm one, the norm-one group being $\mathbb{B}^{\times}_1=\{N=e_0\}\cong SL(2,\mathbb{C})$ (*Conventions in the Biquaternion Universe*, §*The Unitary Convention*).
+The conventions are those of *Conventions in the Biquaternion Universe*.
+
+- **The basis.** $e_0 = 1$ the algebra unit and $e_1,e_2,e_3$ the quaternion units with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, so an element is written $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with coefficients $Q_\mu \in \mathbb{C}$.
+- **The scalar imaginary.** $i$, central, with $i^2 = -1$.
+- **The norm.** $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2(e_0) = I$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI$.
+- **The subspaces.**
+    - $\mathbb{C}_{\mathbb{B}}$, the centre;
+    - $\mathrm{Vect}(\mathbb{B})$, the kernel of the scalar part;
+    - $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation, the home of the rotations, whose unit sphere is $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : \tilde q\tilde q^{\natural} = 1\}$, the group of unit real quaternions;
+    - $i\mathbb{H}_{\mathbb{B}}$, the anti-fixed space of complex conjugation, its imaginary half;
+    - $\mathbb{M}_+$, the fixed space of Hermitian conjugation, the home of the boosts;
+    - $\mathbb{M}_-$, the anti-fixed space of Hermitian conjugation, with $Q_0 = iq'_0$ and $Q_k$ real, the home of the four-vectors.
+
+Every numerical value below was recomputed in double precision; the residuals of the identities quoted are below $2\times10^{-12}$. An element is **unitary** when it preserves the form, $\tilde{Q}\tilde{Q}^{*}=e_0$, and the unitary elements form the group $U(\mathbb{B})\cong U(2)$; the condition is narrower than norm one, the norm-one group being $\mathbb{B}^{\times}_1=\{N=e_0\}\cong SL(2,\mathbb{C})$ (*Conventions in the Biquaternion Universe*, §*The Unitary Convention*).
 
 The restrictions are taken one at a time in the sections that follow, in the order in which the framework names the subspaces — centre, vector, quaternion, antiquaternion, informational, material — and each part is built the same way: it opens with the element and its biquaternion norm, states which of the four factors survive, gives the surviving factors explicitly, and closes with worked examples. Where a subspace's defining condition needs a computation of its own — the boost axis and the orthogonality of the rotor in the vector subspace, the two branches of each sector — that computation is a subsection of the part. Three further sections close the article, each a comparison across all six: the biquaternion norm as the single object that decides the phase, the count of the dimensions each factor accounts for, and the four coordinate blocks, on which the restrictions have to agree element by element.
 
 ## The Exponentials of the Four Factors
 
-The word restricted in this article is the ordered product of four exponentials. In the physics normalisation of *The Polar Element Representation of Biquaternions*, with the rapidity $\psi \in \mathbb{R}$, $\psi \ge 0$, the boost direction $\hat u \in S^2$ (a unit pure real quaternion, $\hat u = \vec v/|\vec v|$), and the stored half-angle $\theta \in [0,\pi]$ of the rotation about the unit axis $\hat w \in S^2$,
+The word restricted in this article is the ordered product of four exponentials. In the physics normalisation of *The Polar Element Representation of Biquaternions*, with the rapidity $\psi \in \mathbb{R}$, $\psi \ge 0$, the boost direction $\hat u_{\mathrm b} \in \mathcal{A}$ (a unit pure real quaternion, $\hat u_{\mathrm b} = \vec v/|\vec v|$), and the rotation angle $\theta \in [0,2\pi]$ about the unit axis $\hat u_{\mathrm r} \in \mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$),
 
 $$
-\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp(-i\psi\hat u)\,\exp(\theta\hat w) .
+\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp(-i\psi\hat u_{\mathrm b})\,\exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) .
 $$
 
-Each exponent is a real parameter times a **root** of the algebra, and the square of that root decides the character of the exponential: for a root $\nu \in \mathbb{B}$ and a real $t \in \mathbb{R}$, the trigonometric case $\nu^2 = -e_0$ gives $\cos t\,e_0 + \nu\sin t$, the parabolic case $\nu^2 = 0$ gives the truncation $e_0 + \nu t$, and the hyperbolic case $\nu^2 = +e_0$ gives $\cosh t\,e_0 + \nu\sinh t$. The scale exponent $\ln r$ ($r \in \mathbb{R}$, $r>0$) is the real root $e_0$ of $+e_0$; the phase exponent $i\alpha$ ($\alpha \in \mathbb{R}$) is the central root $i$ of $-e_0$; the boost exponent $-i\psi\hat u$ is the Hermitian root $-i\hat u$ of $+e_0$; the rotor exponent $\theta\hat w$ is the real pure root $\hat w$ of $-e_0$. The first two exponents are central, and the last two are not, so the word is ordered.
+| # | factor | name | real dimension | exponential | case | closed form | parameter and range | unit axis |
+|---|---|---|---|---|---|---|---|---|
+| 1 | $r$ | scale | $1$ | $\exp(\ln r)$ | hyperbolic | $r$ | $\ln r \in \mathbb{R}$, $r > 0$ | $\mathbb{R}e_0$ |
+| 2 | $e^{i\alpha}$ | central phase | $1$ | $\exp(i\alpha)$ | trigonometric | $\cos\alpha\,e_0 + i\sin\alpha$ | $\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$ | $i\mathbb{R}$ |
+| 3 | $B$ | boost factor | $3$ | $\exp(-i\psi\hat u_{\mathrm b})$ | hyperbolic | $\cosh\psi\,e_0 - i\sinh\psi\,\hat u_{\mathrm b}$ | rapidity $\psi \in \mathbb{R}$, $\psi \ge 0$ | $\hat u_{\mathrm b} \in \mathcal{A}$ |
+| 4 | $\tilde q$ | rotor | $3$ | $\exp\bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\bigr)$ | trigonometric | $\cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,\hat u_{\mathrm r}$ | rotation angle $\theta \in [0,2\pi]$ | $\hat u_{\mathrm r} \in \mathcal{A}$ |
 
-A remarkable subspace is a condition on the element, and the condition reads as a constraint on the four exponents: it forces one or two of the parameters to a value, or freezes one of the roots. The table of the Introduction records the result of each restriction, and the sections below compute it. On the centre the two non-central exponents are absent, the boost exponent being $0$ and the rotor exponent a discrete $\{0,\pi\}$; on the quaternion subspace the phase and the boost exponents vanish, leaving the free rotor exponent; on the antiquaternion subspace the phase exponent is frozen at $i\pi/2$; on the vector subspace the boost and the rotor exponents are tied to the same two directions; and on the two sectors the phase exponent is frozen and the boost exponent is the explicit one of the element. In every case the restriction is the statement that a subspace carries a subset of the four rows of the exponential rule, and the exponential rule is what the restriction acts on.
+Each exponent is a real parameter times a **root** of the algebra, and the square of that root decides the character of the exponential. For a root $\nu \in \mathbb{B}$ and a real $t \in \mathbb{R}$,
+
+- the trigonometric case $\nu^2 = -e_0$ gives $\cos t\,e_0 + \nu\sin t$;
+- the parabolic case $\nu^2 = 0$ gives the truncation $e_0 + \nu t$;
+- the hyperbolic case $\nu^2 = +e_0$ gives $\cosh t\,e_0 + \nu\sinh t$.
+
+The four exponents are
+
+- the scale exponent $\ln r$ ($r \in \mathbb{R}$, $r>0$), the real root $e_0$ of $+e_0$;
+- the phase exponent $i\alpha$ ($\alpha \in (-\tfrac{\pi}{2},\tfrac{\pi}{2}]$), the central root $i$ of $-e_0$;
+- the boost exponent $-i\psi\hat u_{\mathrm b}$, the Hermitian root $-i\hat u_{\mathrm b}$ of $+e_0$;
+- the rotor exponent $\tfrac{\theta}{2}\hat u_{\mathrm r}$, the real pure root $\hat u_{\mathrm r}$ of $-e_0$.
+
+The first two exponents are central, and the last two are not, so the word is ordered.
+
+A remarkable subspace is a condition on the element, and the condition reads as a constraint on the four exponents: it forces one or two of the parameters to a value, or freezes one of the roots. The table of the Introduction records the result of each restriction, and the sections below compute it.
+
+- **Centre.** The two non-central exponents are absent, the boost exponent being $0$ and the rotor exponent a discrete $\{0,\pi\}$.
+- **Quaternion subspace.** The phase and the boost exponents vanish, leaving the free rotor exponent.
+- **Antiquaternion subspace.** The phase exponent is frozen at $i\pi/2$.
+- **Vector subspace.** The boost and the rotor exponents are tied to the same two directions.
+- **The two sectors.** The phase exponent is frozen and the boost exponent is the explicit one of the element.
+
+In every case the restriction is the statement that a subspace carries a subset of the four rows of the exponential rule, and the exponential rule is what the restriction acts on.
 
 **The restriction does not repair the non-commutativity.** The boost exponent and the rotor exponent do not commute in general, so on a subspace that carries both non-trivially — the vector subspace above all — the order of the two exponents is part of the word and the two may not be fused into one. The restriction acts on the exponents, not on the commutation of the algebra, and the subspace whose defining condition makes the two axes parallel is exactly the subspace on which the two exponents do commute.
 
@@ -92,7 +133,7 @@ The two counts are the ones the section *Where the Dimensions Go* distributes ov
 
 The two classes are not the same kind of object. $\mathcal{U}$ is closed under multiplication and under inversion, since a product of two positive multiples of unitary elements is again one, so it is a group — $\mathbb{R}_{>0}\times U(2)$, with the central phase as its circle and the rotor group as its three-sphere. $\mathcal{H}$ is not closed: $\mathsf{M}_2(\tilde{Q}_1\tilde{Q}_2)$ is a product of two Hermitian positive definite matrices, and such a product is Hermitian exactly when the two factors commute, so two boosts about different axes leave the class as soon as they are composed, and only co-axial ones stay in it.
 
-Read on the remarkable subspaces, the membership follows from the same two products. The centre lies in both classes. The quaternion and antiquaternion subspaces lie inside $\mathcal{U}$ and meet $\mathcal{H}$ only in the centre, since every element of those halves has a real biquaternion norm and hence a trivial boost factor, and a nontrivial rotor. The vector subspace lies inside $\mathcal{U}$ exactly on the parallel pairs $\vec v\parallel\vec w$ and never inside $\mathcal{H}$ away from the centre. And a sector lies inside $\mathcal{H}$ exactly on its definite branch, the branch on which the rotor is the discrete sign, and inside $\mathcal{U}$ only on the centre and on the line $a = 0$, the line on which its Hermitian product degenerates to a scalar.
+Read on the remarkable subspaces, the membership follows from the same two products. The centre lies in both classes. The quaternion and antiquaternion subspaces lie inside $\mathcal{U}$ and meet $\mathcal{H}$ only in the centre, since every element of those halves has a real biquaternion norm and hence a trivial boost factor, and a nontrivial rotor. The vector subspace lies inside $\mathcal{U}$ exactly on the parallel pairs $\vec q\parallel\vec q'$ and never inside $\mathcal{H}$ away from the centre. And a sector lies inside $\mathcal{H}$ exactly on its definite branch, the branch on which the rotor is the discrete sign, and inside $\mathcal{U}$ only on the centre and on the line $a = 0$, the line on which its Hermitian product degenerates to a scalar.
 
 ### The Two Classes Meet in the Centre
 
@@ -169,53 +210,53 @@ In the first row $\rho = 1+i$, the principal square root of $2i$, and $\alpha = 
 The vector subspace is the kernel of the scalar part, of real dimension six. Written with two real vectors, the element and its biquaternion norm are
 
 $$
-\tilde{Q} = \vec v + i\,\vec w , \qquad \vec v,\vec w\in\mathbb{R}^3 , \qquad N(\tilde{Q}) = |\vec v|^2 - |\vec w|^2 + 2i\,\vec v\cdot\vec w , \qquad \operatorname{Sc}(\tilde{Q}) = 0 .
+\tilde{Q} = \vec q + i\,\vec q' , \qquad \vec q,\vec q'\in\mathbb{R}^3 , \qquad N(\tilde{Q}) = |\vec q|^2 - |\vec q'|^2 + 2i\,\vec q\cdot\vec q' , \qquad \operatorname{Sc}(\tilde{Q}) = 0 .
 $$
 
-The biquaternion norm is complex and indefinite, so the phase is free here exactly as it is on the centre; it vanishes on the four-dimensional complex null cone $|\vec v| = |\vec w|$, $\vec v\cdot\vec w = 0$, and the representation is defined on the complement of that cone. In the matrix picture the subspace is the traceless class, $\mathsf{M}_2(\tilde{Q}) = \left(w_k - iv_k\right)\sigma_k$.
+The biquaternion norm is complex and indefinite, so the phase is free here exactly as it is on the centre; it vanishes on the four-dimensional complex null cone $|\vec q| = |\vec q'|$, $\vec q\cdot\vec q' = 0$, and the representation is defined on the complement of that cone. In the matrix picture the subspace is the traceless class, $\mathsf{M}_2(\tilde{Q}) = \left(w_k - iv_k\right)\sigma_k$.
 
 ### Which Factors Survive
 
 Neither criterion applies automatically, and both factors are genuinely present:
 
 $$
-\tilde{Q}\tilde{Q}^{*} = \left(|\vec v|^2 + |\vec w|^2\right)e_0 + 2i\left(\vec v\times\vec w\right) ,
+\tilde{Q}\tilde{Q}^{*} = \left(|\vec q|^2 + |\vec q'|^2\right)e_0 + 2i\left(\vec q\times\vec q'\right) ,
 $$
 
-which is a positive scalar only when $\vec v\times\vec w = 0$. Hence the boost factor is trivial **exactly when the two vectors are parallel**, and in that case $\tilde{Q} = z\hat v$ with $z = |\vec v|\pm i|\vec w|$ according to the relative sign, so the element is a complex multiple of a single real direction, $N(\tilde{Q}) = z^2$, and on the line $\mathbb{R}\{\vec v\}$ the representation is the representation of the centre. When the two vectors are not parallel the boost factor is
+which is a positive scalar only when $\vec q\times\vec q' = 0$. Hence the boost factor is trivial **exactly when the two vectors are parallel**, and in that case $\tilde{Q} = z\hat q$ with $z = |\vec q|\pm i|\vec q'|$ according to the relative sign, so the element is a complex multiple of a single real direction, $N(\tilde{Q}) = z^2$, and on the line $\mathbb{R}\{\vec q\}$ the representation is the representation of the centre. When the two vectors are not parallel the boost factor is
 
 $$
-B = \frac{\sqrt{\left(|\vec v|^2+|\vec w|^2\right)e_0 + 2i\left(\vec v\times\vec w\right)}}{\sqrt{|N(\tilde{Q})|}} = \cosh\varphi\,e_0 + i\sinh\varphi\,\frac{\vec v\times\vec w}{|\vec v\times\vec w|} ,
+B = \frac{\sqrt{\left(|\vec q|^2+|\vec q'|^2\right)e_0 + 2i\left(\vec q\times\vec q'\right)}}{\sqrt{|N(\tilde{Q})|}} = \cosh\varphi\,e_0 + i\sinh\varphi\,\frac{\vec q\times\vec q'}{|\vec q\times\vec q'|} ,
 $$
 
-a boost about the axis $\vec v\times\vec w$, with the rapidity fixed by
+a boost about the axis $\vec q\times\vec q'$, with the rapidity fixed by
 
 $$
-\cosh 2\varphi = \frac{|\vec v|^2+|\vec w|^2}{\left|N(\tilde{Q})\right|} , \qquad \sinh 2\varphi = \frac{2\left|\vec v\times\vec w\right|}{\left|N(\tilde{Q})\right|} , \qquad \cosh^2 2\varphi - \sinh^2 2\varphi = 1 ,
+\cosh 2\varphi = \frac{|\vec q|^2+|\vec q'|^2}{\left|N(\tilde{Q})\right|} , \qquad \sinh 2\varphi = \frac{2\left|\vec q\times\vec q'\right|}{\left|N(\tilde{Q})\right|} , \qquad \cosh^2 2\varphi - \sinh^2 2\varphi = 1 ,
 $$
 
-the last identity being the Lagrange identity $\left(|\vec v|^2+|\vec w|^2\right)^2 - 4\left|\vec v\times\vec w\right|^2 = |N(\tilde{Q})|^2$, which is what makes the argument of the square root positive definite.
+the last identity being the Lagrange identity $\left(|\vec q|^2+|\vec q'|^2\right)^2 - 4\left|\vec q\times\vec q'\right|^2 = |N(\tilde{Q})|^2$, which is what makes the argument of the square root positive definite.
 
 ### The Rotor Is Orthogonal to the Boost Axis
 
 The defining condition $\operatorname{Sc}(\tilde{Q}) = 0$ is a condition on the two factors. Write $\tilde{Q}^{\natural} = -\tilde{Q}$ and use the anti-automorphism property of quaternion conjugation, $\overline{AB} = \bar{B}\bar{A}$:
 
 $$
-\overline{\rho B\tilde q} = \bar{\tilde q}\,\bar{B}\,\rho = (-\tilde q)\left(\cosh\varphi\,e_0 - i\sinh\varphi\,\hat u\right)\rho = -\rho\,\tilde q\left(\cosh\varphi\,e_0 - i\sinh\varphi\,\hat u\right) ,
+\overline{\rho B\tilde q} = \bar{\tilde q}\,\bar{B}\,\rho = (-\tilde q)\left(\cosh\varphi\,e_0 - i\sinh\varphi\,\hat u_{\mathrm b}\right)\rho = -\rho\,\tilde q\left(\cosh\varphi\,e_0 - i\sinh\varphi\,\hat u_{\mathrm b}\right) ,
 $$
 
-and equating this to $-\rho\left(\cosh\varphi + i\sinh\varphi\,\hat u\right)\tilde q$ gives
+and equating this to $-\rho\left(\cosh\varphi + i\sinh\varphi\,\hat u_{\mathrm b}\right)\tilde q$ gives
 
 $$
-\tilde q\,\hat u = -\hat u\,\tilde q \quad\Longleftrightarrow\quad -2\,\tilde q\cdot\hat u = 0 \quad\Longleftrightarrow\quad \tilde q\perp\hat u ,
+\tilde q\,\hat u_{\mathrm b} = -\hat u_{\mathrm b}\,\tilde q \quad\Longleftrightarrow\quad -2\,\tilde q\cdot\hat u_{\mathrm b} = 0 \quad\Longleftrightarrow\quad \tilde q\perp\hat u_{\mathrm b} ,
 $$
 
-where $\hat u = \vec v\times\vec w/|\vec v\times\vec w|$ is the boost axis. A pure unit vector orthogonal to $\hat u$ lies in the plane orthogonal to $\hat u$, and that plane is $\operatorname{span}(\vec v,\vec w)$, because $\vec v\cdot(\vec v\times\vec w) = 0$ and $\vec w\cdot(\vec v\times\vec w) = 0$. The rotor is therefore a unit vector **in the plane spanned by $\vec v$ and $\vec w$**, perpendicular to the boost axis. The two conditions are equivalent: the vanishing of the scalar part is the orthogonality of the rotor to the boost axis, and conversely. This is the exact sense in which the vector subspace exhibits the rotor relative to the boost rather than the rotor alone.
+where $\hat u_{\mathrm b} = \vec q\times\vec q'/|\vec q\times\vec q'|$ is the boost axis. A pure unit vector orthogonal to $\hat u_{\mathrm b}$ lies in the plane orthogonal to $\hat u_{\mathrm b}$, and that plane is $\operatorname{span}(\vec q,\vec q')$, because $\vec q\cdot(\vec q\times\vec q') = 0$ and $\vec q'\cdot(\vec q\times\vec q') = 0$. The rotor is therefore a unit vector **in the plane spanned by $\vec q$ and $\vec q'$**, perpendicular to the boost axis. The two conditions are equivalent: the vanishing of the scalar part is the orthogonality of the rotor to the boost axis, and conversely. This is the exact sense in which the vector subspace exhibits the rotor relative to the boost rather than the rotor alone.
 
 The count of the six dimensions of the subspace is then complete:
 
 $$
-\underbrace{2}_{r,\ \alpha} + \underbrace{3}_{B:\ \text{axis}\ (2) + \text{rapidity}\ (1)} + \underbrace{2}_{\tilde q} - \underbrace{1}_{\tilde q\perp\hat u} = 6 ,
+\underbrace{2}_{r,\ \alpha} + \underbrace{3}_{B:\ \text{axis}\ (2) + \text{rapidity}\ (1)} + \underbrace{2}_{\tilde q} - \underbrace{1}_{\tilde q\perp\hat u_{\mathrm b}} = 6 ,
 $$
 
 or, in the plane, $2$ for the modulus, $2$ for the axis, $1$ for the rapidity and $1$ for the angle of the rotor in the plane.
@@ -227,7 +268,7 @@ or, in the plane, $2$ for the modulus, $2$ for the axis, $1$ for the rapidity an
 | $\tilde{Q} = e_1+i\left(e_2+e_3\right)$ | $-1$ | $1$ | $1.570796327$ | $1.414213562\,e_0 - 0.707106781\,ie_2 + 0.707106781\,ie_3$ | $0.707106781\,e_2 + 0.707106781\,e_3$ |
 | $\tilde{Q} = e_1+2ie_1$ | $-3+4i$ | $2.236067977$ | $1.107148718$ | $e_0$ | $e_1$ |
 
-In the first row $\vec v\times\vec w = e_3-e_2$, the boost axis is $(e_3-e_2)/\sqrt2$, the rapidity satisfies $\cosh 2\varphi = 3$, and the rotor is $(e_2+e_3)/\sqrt2$, which is orthogonal to the axis by construction. In the second row the two vectors are parallel, the boost factor is $e_0$, the element is $z e_1$ with $z = 1+2i$, the modulus is $\rho = 1+2i$ and the phase is $\arg(1+2i) = 1.107148718$.
+In the first row $\vec q\times\vec q' = e_3-e_2$, the boost axis is $(e_3-e_2)/\sqrt2$, the rapidity satisfies $\cosh 2\varphi = 3$, and the rotor is $(e_2+e_3)/\sqrt2$, which is orthogonal to the axis by construction. In the second row the two vectors are parallel, the boost factor is $e_0$, the element is $z e_1$ with $z = 1+2i$, the modulus is $\rho = 1+2i$ and the phase is $\arg(1+2i) = 1.107148718$.
 
 ## The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$: the Rotor Alone
 
@@ -255,7 +296,7 @@ $$
 \tilde{Q} = r\,\tilde q , \qquad r = |\tilde{Q}| > 0 , \qquad \tilde q\in\mathrm{Sp}(1) ,
 $$
 
-which is the classical polar form of a quaternion, with the boost factor absent: **the real quaternion subspace is the subspace on which the representation carries a rotor and no boost**. Writing $\tilde q = \cos\theta + \sin\theta\,\hat u$ with $\hat u$ a unit real vector, the rotor is a rotation of angle $2\theta$ about the axis $\hat u$, and the four real parameters of the subspace are $r$ and the three parameters of $\hat u$ and $\theta$.
+which is the classical polar form of a quaternion, with the boost factor absent: **the real quaternion subspace is the subspace on which the representation carries a rotor and no boost**. Writing $\tilde q = \cos\tfrac{\theta}{2} + \sin\tfrac{\theta}{2}\,\hat u_{\mathrm r}$ with $\hat u_{\mathrm r}$ a unit real vector, the rotor is a rotation of angle $\theta$ about the axis $\hat u_{\mathrm r}$, and the four real parameters of the subspace are $r$ and the three parameters of $\hat u_{\mathrm r}$ and $\theta$.
 
 The matrix image explains the absence of the boost factor: a quaternionic matrix has the form $\begin{pmatrix} a & b \\ -\bar{b} & \bar{a}\end{pmatrix}$, and for every such matrix
 
@@ -314,7 +355,7 @@ Both rows have the trivial boost and the phase frozen at $\pi/2$: the first is t
 Let $\tilde{Q}\in\mathbb{M}_+$, written as
 
 $$
-\tilde{Q} = a\,e_0 + i\,\vec w , \qquad a\in\mathbb{R}, \quad \vec w\in\mathbb{R}^3, \quad s = |\vec w| , \qquad N(\tilde{Q}) = a^2 - s^2 \in\mathbb{R} .
+\tilde{Q} = a\,e_0 + i\,\vec q' , \qquad a\in\mathbb{R}, \quad \vec q'\in\mathbb{R}^3, \quad s = |\vec q'| , \qquad N(\tilde{Q}) = a^2 - s^2 \in\mathbb{R} .
 $$
 
 The sector is the fixed space of Hermitian conjugation, of real dimension four; its biquaternion norm is the real indefinite form $a^2-s^2$, vanishing on the cone $|a| = s$, and the representation is defined off that cone. The element is Hermitian, $\tilde{Q}^{*} = \tilde{Q}$, and in the matrix picture it is the Hermitian class, $\mathsf{M}_2(\tilde{Q}) = aI + w_k\sigma_k$.
@@ -340,10 +381,10 @@ and no third possibility exists: the Hermitian condition permits exactly two bra
 The boost factor is
 
 $$
-B = \frac{1}{r}\left(M\,e_0 + i\,\operatorname{sign}(a)\,m\,\hat w\right) , \qquad M = \max(|a|,s), \quad m = \min(|a|,s) , \qquad \hat w = \frac{\vec w}{s} ,
+B = \frac{1}{r}\left(M\,e_0 + i\,\operatorname{sign}(a)\,m\,\hat q'\right) , \qquad M = \max(|a|,s), \quad m = \min(|a|,s) , \qquad \hat q' = \frac{\vec q'}{s} ,
 $$
 
-which squares to $\left((a^2+s^2)e_0 + 2ia\vec w\right)/r^2 = \tilde{Q}\tilde{Q}^{*}/r^2$ because $\tilde{Q}\tilde{Q}^{*} = (a^2+s^2)e_0 + 2ia\vec w$; the sign in front of the vector part is opposite to that of the material sector, and the two formulas are consistent under the map $\tilde{Q}\mapsto i\tilde{Q}$ from $\mathbb{M}_+$ to $\mathbb{M}_-$, which sends the pair $(a,\vec w)$ to $(a,-\vec w)$ and therefore flips the vector part: the material formula with $\vec v = -\vec w$ returns the informational formula.
+which squares to $\left((a^2+s^2)e_0 + 2ia\vec q'\right)/r^2 = \tilde{Q}\tilde{Q}^{*}/r^2$ because $\tilde{Q}\tilde{Q}^{*} = (a^2+s^2)e_0 + 2ia\vec q'$; the sign in front of the vector part is opposite to that of the material sector, and the two formulas are consistent under the map $\tilde{Q}\mapsto i\tilde{Q}$ from $\mathbb{M}_+$ to $\mathbb{M}_-$, which sends the pair $(a,\vec q')$ to $(a,-\vec q')$ and therefore flips the vector part: the material formula with $\vec q = -\vec q'$ returns the informational formula.
 
 ### Worked Examples
 
@@ -353,7 +394,7 @@ which squares to $\left((a^2+s^2)e_0 + 2ia\vec w\right)/r^2 = \tilde{Q}\tilde{Q}
 | $\tilde{Q} = -2e_0+ie_1$ | $3$ | $1.732050808$ | $0$ | $1.154700538\,e_0 - 0.577350269\,ie_1$ | $-e_0$ |
 | $\tilde{Q} = e_0+2ie_1$ | $-3$ | $1.732050808$ | $1.570796327$ | $1.154700538\,e_0 + 0.577350269\,ie_1$ | $e_1$ |
 
-All three rows have the same scale, and the pattern of the two branches is complete. The first and second rows are the definite branch: the same boost factor in magnitude, the same phase $0$, and rotors of opposite sign, which is the sign of $a$ absorbed by the fourth factor. The first and third rows have the same boost factor and the same scale and differ in the phase and in the rotor, the definite branch against the indefinite one, and it is the third row that exhibits the direction $\hat w = e_1$. The third and fourth factors are therefore never both continuous here: either the rotor is the discrete sign $\pm e_0$ and the boost is a general boost of axis $\hat w$ and rapidity $\operatorname{arctanh}(s/|a|)$, or the rotor is the direction $\hat w$ itself and the boost is reduced to a rapidity about that same direction.
+All three rows have the same scale, and the pattern of the two branches is complete. The first and second rows are the definite branch: the same boost factor in magnitude, the same phase $0$, and rotors of opposite sign, which is the sign of $a$ absorbed by the fourth factor. The first and third rows have the same boost factor and the same scale and differ in the phase and in the rotor, the definite branch against the indefinite one, and it is the third row that exhibits the direction $\hat q' = e_1$. The third and fourth factors are therefore never both continuous here: either the rotor is the discrete sign $\pm e_0$ and the boost is a general boost of axis $\hat q'$ and rapidity $\operatorname{arctanh}(s/|a|)$, or the rotor is the direction $\hat q'$ itself and the boost is reduced to a rapidity about that same direction.
 
 ## The Material Sector $\mathbb{M}_-$: the Boost of a Four-Vector
 
@@ -362,7 +403,7 @@ All three rows have the same scale, and the pattern of the two branches is compl
 Let $\tilde{Q}\in\mathbb{M}_-$, written in the physics coordinates as
 
 $$
-\tilde{Q} = i\,a\,e_0 + \vec v , \qquad a = ct\in\mathbb{R}, \quad \vec v\in\mathbb{R}^3, \quad s = |\vec v| , \qquad N(\tilde{Q}) = s^2 - a^2 \in\mathbb{R} .
+\tilde{Q} = i\,a\,e_0 + \vec q , \qquad a = ct\in\mathbb{R}, \quad \vec q\in\mathbb{R}^3, \quad s = |\vec q| , \qquad N(\tilde{Q}) = s^2 - a^2 \in\mathbb{R} .
 $$
 
 The sector is the fixed space of the anti-Hermitian conjugation $\flat$ and the $-1$ eigenspace of Hermitian conjugation, of real dimension four; its biquaternion norm is the real indefinite form $s^2-a^2$, vanishing on the light cone $s = |a|$, and the representation is defined off that cone. In the matrix picture it is $i$ times the Hermitian class, $\mathsf{M}_2(\tilde{Q}) = i\left(aI - v_k\sigma_k\right)$. The biquaternion norm is real, so the phase takes one of the two values compatible with a real biquaternion norm, and the element is anti-Hermitian, $\tilde{Q}^{*} = -\tilde{Q}$. That single condition fixes the shape of the representation.
@@ -385,16 +426,16 @@ and no third possibility exists. Since $N = r^2e^{2i\alpha}$, the first branch i
 
 ### The Boost Factor
 
-From $\tilde{Q}\tilde{Q}^{*} = (a^2+s^2)e_0 - 2ia\vec v$ and $r^2 = |N|$ one gets the explicit factor
+From $\tilde{Q}\tilde{Q}^{*} = (a^2+s^2)e_0 - 2ia\vec q$ and $r^2 = |N|$ one gets the explicit factor
 
 $$
-B = \frac{1}{r}\left(M\,e_0 - i\,\operatorname{sign}(a)\,m\,\hat v\right) , \qquad M = \max(|a|,s), \quad m = \min(|a|,s) , \qquad \hat v = \frac{\vec v}{s} ,
+B = \frac{1}{r}\left(M\,e_0 - i\,\operatorname{sign}(a)\,m\,\hat q\right) , \qquad M = \max(|a|,s), \quad m = \min(|a|,s) , \qquad \hat q = \frac{\vec q}{s} ,
 $$
 
-which is a boost rotor $B = \cosh\varphi\,e_0 - i\operatorname{sign}(a)\sinh\varphi\,\hat v$ of rapidity $2\varphi$ with $\tanh\varphi = m/M$. Squaring it uses $Mm = |a|s$ and gives $B^2 = \left((a^2+s^2)e_0 - 2ia\vec v\right)/r^2 = \tilde{Q}\tilde{Q}^{*}/r^2$, so the closed form is verified by squaring. In the timelike case with $a = ct > 0$ it is the four-velocity identity of the companion article,
+which is a boost rotor $B = \cosh\varphi\,e_0 - i\operatorname{sign}(a)\sinh\varphi\,\hat q$ of rapidity $2\varphi$ with $\tanh\varphi = m/M$. Squaring it uses $Mm = |a|s$ and gives $B^2 = \left((a^2+s^2)e_0 - 2ia\vec q\right)/r^2 = \tilde{Q}\tilde{Q}^{*}/r^2$, so the closed form is verified by squaring. In the timelike case with $a = ct > 0$ it is the four-velocity identity of the companion article,
 
 $$
-B = \frac{ct\,e_0 - i\vec x}{c\tau} = \gamma\left(e_0 - i\frac{\vec v}{c}\right) = -\frac{i}{c}\tilde{V} , \qquad \gamma = \frac{ct}{c\tau} = \frac{1}{\sqrt{1-\beta^2}} ,
+B = \frac{ct\,e_0 - i\vec x}{c\tau} = \gamma\left(e_0 - i\frac{\vec q}{c}\right) = -\frac{i}{c}\tilde{V} , \qquad \gamma = \frac{ct}{c\tau} = \frac{1}{\sqrt{1-\beta^2}} ,
 $$
 
 with $\beta = s/(ct)$; the scale is the proper length $r = c\tau = ct\sqrt{1-\beta^2}$ and the rotor is the central sign.
@@ -403,14 +444,14 @@ with $\beta = s/(ct)$; the scale is the proper length $r = c\tau = ct\sqrt{1-\be
 
 | branch | $N$ | $r$ | $\alpha$ | $B$ | $\tilde q$ |
 |---|---|---|---|---|---|
-| timelike, $|a| > s$ | $< 0$ | $\sqrt{a^2-s^2}$ | $\pi/2$ | $\cosh\varphi\,e_0 - i\operatorname{sign}(a)\sinh\varphi\,\hat v$ | $\operatorname{sign}(a)e_0$ |
-| spacelike, $s > |a|$ | $> 0$ | $\sqrt{s^2-a^2}$ | $0$ | $\cosh\varphi\,e_0 - i\operatorname{sign}(a)\sinh\varphi\,\hat v$ | $\hat v$ |
+| timelike, $|a| > s$ | $< 0$ | $\sqrt{a^2-s^2}$ | $\pi/2$ | $\cosh\varphi\,e_0 - i\operatorname{sign}(a)\sinh\varphi\,\hat q$ | $\operatorname{sign}(a)e_0$ |
+| spacelike, $s > |a|$ | $> 0$ | $\sqrt{s^2-a^2}$ | $0$ | $\cosh\varphi\,e_0 - i\operatorname{sign}(a)\sinh\varphi\,\hat q$ | $\hat q$ |
 | pure time, $s = 0$ | $< 0$ | $|a|$ | $\pi/2$ | $e_0$ | $\operatorname{sign}(a)e_0$ |
-| pure space, $a = 0$ | $> 0$ | $s$ | $0$ | $e_0$ | $\hat v$ |
+| pure space, $a = 0$ | $> 0$ | $s$ | $0$ | $e_0$ | $\hat q$ |
 
 On the **timelike** branch the rotor is a central sign, so the continuous data of the four-vector are the scale and the boost alone: $1 + 3 = 4$, the dimension of the sector. The boost factor is the four-velocity in the Hermitian normalisation, which is the identification of the companion article; the phase is the constant $\pi/2$; and the rotor is the discrete sign $\operatorname{sign}(a)$. This is the precise sense in which the physics of the corpus uses two of the four factors.
 
-On the **spacelike** branch the rotor is the pure unit vector $\hat v$, a point of $S^2$, and the boost is a boost about the same line: with $\tanh\varphi = m/M$ and $m/M = |a|/s < 1$, its axis is $-\operatorname{sign}(a)\hat v$, opposite to the direction the rotor carries when $a$ is positive. The four parameters of a spacelike displacement are therefore the scale $r$, the direction $\hat v$ carried by the rotor, and the remaining number $m/M$ carried by the rapidity of the boost. The direction of the displacement is a property of the rotor and not of the boost, and the boost measures how far the displacement is tilted out of the spatial slice: it is the unit, $m = 0$, exactly for a displacement in the spatial slice, $a = 0$.
+On the **spacelike** branch the rotor is the pure unit vector $\hat q$, a point of $\mathcal{A}$, and the boost is a boost about the same line: with $\tanh\varphi = m/M$ and $m/M = |a|/s < 1$, its axis is $-\operatorname{sign}(a)\hat q$, opposite to the direction the rotor carries when $a$ is positive. The four parameters of a spacelike displacement are therefore the scale $r$, the direction $\hat q$ carried by the rotor, and the remaining number $m/M$ carried by the rapidity of the boost. The direction of the displacement is a property of the rotor and not of the boost, and the boost measures how far the displacement is tilted out of the spatial slice: it is the unit, $m = 0$, exactly for a displacement in the spatial slice, $a = 0$.
 
 ### Worked Examples
 
@@ -428,7 +469,7 @@ The phase is $\alpha = \tfrac12\arg N(\tilde{Q})$, so the phase is constant on a
 | subspace | $N(\tilde{Q})$ | argument of the biquaternion norm | phase |
 |---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $z^2$, complex anisotropic | $2\arg z$ | $\arg z$ mod $\pi$, free |
-| $\mathrm{Vect}(\mathbb{B})$ | $|\vec v|^2-|\vec w|^2+2i\,\vec v\cdot\vec w$, complex indefinite | free | free |
+| $\mathrm{Vect}(\mathbb{B})$ | $|\vec q|^2-|\vec q'|^2+2i\,\vec q\cdot\vec q'$, complex indefinite | free | free |
 | $\mathbb{H}_{\mathbb{B}}$ | $\sum q_\mu^2$, positive definite | $0$ | $0$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | $-\sum q_\mu^2$, negative definite | $\pi$ | $\pi/2$ |
 | $\mathbb{M}_+$ | $a^2-s^2$, real indefinite | $0$ or $\pi$ | $0$ or $\pi/2$ |
@@ -441,12 +482,12 @@ The same table decides where the representation fails. The biquaternion norm van
 | subspace | zeros of $N$ | representation |
 |---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $z = 0$ (anisotropic) | defined on $\mathbb{C}_{\mathbb{B}}\setminus\{0\}$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $|\vec v| = |\vec w|$ and $\vec v\cdot\vec w = 0$ | fails on the complex null cone |
+| $\mathrm{Vect}(\mathbb{B})$ | $|\vec q| = |\vec q'|$ and $\vec q\cdot\vec q' = 0$ | fails on the complex null cone |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | $\tilde{Q} = 0$ (definite) | defined on the whole subspace except $0$ |
 | $\mathbb{M}_+$ | the cone $|a| = s$ | fails on the cone |
 | $\mathbb{M}_-$ | the light cone $s = |a|$ | fails on the light cone |
 
-The two halves and the centre carry no zero divisors other than the origin, which is the corpus's statement that the degeneracy of the algebra lies in the sectors and in the vector subspace. The null cones are the boundaries between the two branches of the phase in the sectors: crossing the light cone in $\mathbb{M}_-$ is crossing from $\alpha = 0$ to $\alpha = \pi/2$, and the representation fails exactly at the crossing because the two branches meet at $r = 0$. In the vector subspace the null cone is the four-dimensional cone $|\vec v| = |\vec w|$, $\vec v\cdot\vec w = 0$, on which the two vectors are the real and imaginary parts of a null complex vector; there the boost factor and the rotor both blow up, and the element is a zero divisor, as in the sectors.
+The two halves and the centre carry no zero divisors other than the origin, which is the corpus's statement that the degeneracy of the algebra lies in the sectors and in the vector subspace. The null cones are the boundaries between the two branches of the phase in the sectors: crossing the light cone in $\mathbb{M}_-$ is crossing from $\alpha = 0$ to $\alpha = \pi/2$, and the representation fails exactly at the crossing because the two branches meet at $r = 0$. In the vector subspace the null cone is the four-dimensional cone $|\vec q| = |\vec q'|$, $\vec q\cdot\vec q' = 0$, on which the two vectors are the real and imaginary parts of a null complex vector; there the boost factor and the rotor both blow up, and the element is a zero divisor, as in the sectors.
 
 ## Where the Dimensions Go
 
@@ -455,7 +496,7 @@ Each row below is the count of the real dimensions of the subspace, distributed 
 | subspace | dim | $r$ | $e^{i\alpha}$ | $B$ | $\tilde q$ |
 |---|---|---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $2$ | $1$ | $1$ | $0$ | $0$ (discrete $\pm e_0$) |
-| $\mathrm{Vect}(\mathbb{B})$ | $6$ | $1$ | $1$ | $3$ | $2$, less $1$ for $\tilde q\perp\hat u$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $6$ | $1$ | $1$ | $3$ | $2$, less $1$ for $\tilde q\perp\hat u_{\mathrm b}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $4$ | $1$ | $0$ (fixed $0$) | $0$ | $3$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $1$ | $0$ (fixed $\pi/2$) | $0$ | $3$ |
 | $\mathbb{M}_+$, $N>0$ | $4$ | $1$ | $0$ (fixed $0$) | $3$ | $0$ (discrete $\pm e_0$) |
@@ -480,9 +521,9 @@ are the intersections of the remarkable subspaces, and each block lies in three 
 | $T_{\mathrm{i}}$ | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | $t\,e_0$ | $|t|$ | $0$ | $e_0$ | $\operatorname{sign}(t)e_0$ |
 | $T_{\mathrm{m}}$ | $\mathbb{C}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ | $it\,e_0$ | $|t|$ | $\pi/2$ | $e_0$ | $\operatorname{sign}(t)e_0$ |
 | $X_{\mathrm{m}}$ | $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ | $\vec x$ | $|\vec x|$ | $0$ | $e_0$ | $\hat x$ |
-| $X_{\mathrm{i}}$ | $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | $i\vec w$ | $|\vec w|$ | $\pi/2$ | $e_0$ | $\hat w$ |
+| $X_{\mathrm{i}}$ | $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | $i\vec q'$ | $|\vec q'|$ | $\pi/2$ | $e_0$ | $\hat q'$ |
 
-Every entry satisfies the restrictions of each subspace that contains it. On $T_{\mathrm{i}}$ the centre gives $\tilde q = \pm e_0$, the quaternion subspace gives $\tilde q = \tilde{Q}/|\tilde{Q}| = \pm e_0$, and the informational sector with $s = 0$ gives $m = 0$, hence $B = e_0$ and $\tilde q = \operatorname{sign}(a)e_0$; the three interpretations are the same. On $X_{\mathrm{m}}$ the vector subspace interpretation has $\vec w = 0$, which is the degenerate case $\vec v\times\vec w = 0$, hence $B = e_0$; the quaternion interpretation gives the rotor $\hat x$; and the material-sector interpretation with $a = 0$ gives the spacelike rotor $\hat v = \hat x$ with the trivial boost $B = e_0$; the three interpretations are the same. On $X_{\mathrm{i}}$ the vector, antiquaternion and informational interpretations agree the same way, with the phase $\pi/2$ and the rotor $\hat w$ in all three. The blocks are therefore the elements on which all the applicable simplifications hold at once, and the table is a consistency check of the six sections above rather than a new computation.
+Every entry satisfies the restrictions of each subspace that contains it. On $T_{\mathrm{i}}$ the centre gives $\tilde q = \pm e_0$, the quaternion subspace gives $\tilde q = \tilde{Q}/|\tilde{Q}| = \pm e_0$, and the informational sector with $s = 0$ gives $m = 0$, hence $B = e_0$ and $\tilde q = \operatorname{sign}(a)e_0$; the three interpretations are the same. On $X_{\mathrm{m}}$ the vector subspace interpretation has $\vec q' = 0$, which is the degenerate case $\vec q\times\vec q' = 0$, hence $B = e_0$; the quaternion interpretation gives the rotor $\hat x$; and the material-sector interpretation with $a = 0$ gives the spacelike rotor $\hat q = \hat x$ with the trivial boost $B = e_0$; the three interpretations are the same. On $X_{\mathrm{i}}$ the vector, antiquaternion and informational interpretations agree the same way, with the phase $\pi/2$ and the rotor $\hat q'$ in all three. The blocks are therefore the elements on which all the applicable simplifications hold at once, and the table is a consistency check of the six sections above rather than a new computation.
 
 ## Physical Readings
 
@@ -490,7 +531,13 @@ The two criteria read as the framework's tests of positivity and of Hermiticity:
 
 ## Summary
 
-Restricted to the remarkable subspaces, the polar representation $\tilde{Q} = re^{i\alpha}B\tilde q$ loses one or more of its factors, and the loss is computable from the involution that defines the subspace. The scale is always the square root of the absolute value of the determinant, and it never degenerates except on the null cones. The phase is half the argument of the biquaternion norm: it is a free coordinate on the centre and on the vector subspace, where the biquaternion norm is complex; it is frozen at $0$ on the real quaternion subspace and at $\pi/2$ on the antiquaternion subspace, where the biquaternion norm is definite; and it is a two-valued label of the causal character of the element on the two sectors, where the biquaternion norm is real indefinite. The boost factor is trivial exactly on the subspaces and on the elements for which $\tilde{Q}\tilde{Q}^{*}$ is a positive scalar: that is every element of the centre, every parallel pair $\vec v\parallel\vec w$ in the vector subspace, and every element of the two halves; it is the exceptional case of a vanishing time coordinate, $a = 0$, or a vanishing vector part, in the sectors. The rotor is a central sign exactly when $\tilde{Q}/\rho$ is Hermitian: that is the centre, and one branch of each sector — the definite branch of the informational sector and the timelike branch of the material sector — while on the other branch it is a pure unit vector, the direction of the element. The vector subspace exhibits the rotor relative to the boost, with the scalar part vanishing exactly when the two axes are orthogonal; on the two halves the rotor is free and the boost is absent, so the halves exhibit the rotor alone; and the sectors exhibit the boost alone and reduce the rotor to a sign or to a direction. The restrictions together exhaust the ways in which the four factors can depend on one another, and the biquaternion norm — positive definite, negative definite, real indefinite, complex anisotropic, complex indefinite — is what decides which way each subspace goes. Read over the whole algebra rather than on one subspace, the two criteria cut two classes out of the nonzero elements: the boost-free elements, which are the positive multiples of the unitary elements and form a group, and the rotor-free elements, which are the complex multiples of the Hermitian definite ones and do not. Each class has five real dimensions, and they meet exactly in the centre, the count $5+5-8 = 2$ closing against the eight real dimensions of the group of units; on the unit-norm slice they become the rotor group and the boosts with a discrete sign, the two halves of the Cartan decomposition.
+Restricted to the remarkable subspaces, the polar representation $\tilde{Q} = re^{i\alpha}B\tilde q$ loses one or more of its factors, and the loss is computable from the involution that defines the subspace. The scale is always the square root of the absolute value of the determinant, and it never degenerates except on the null cones.
+
+The phase is half the argument of the biquaternion norm: it is a free coordinate on the centre and on the vector subspace, where the biquaternion norm is complex; it is frozen at $0$ on the real quaternion subspace and at $\pi/2$ on the antiquaternion subspace, where the biquaternion norm is definite; and it is a two-valued label of the causal character of the element on the two sectors, where the biquaternion norm is real indefinite.
+
+The boost factor is trivial exactly on the subspaces and on the elements for which $\tilde{Q}\tilde{Q}^{*}$ is a positive scalar: that is every element of the centre, every parallel pair $\vec q\parallel\vec q'$ in the vector subspace, and every element of the two halves; it is the exceptional case of a vanishing time coordinate, $a = 0$, or a vanishing vector part, in the sectors. The rotor is a central sign exactly when $\tilde{Q}/\rho$ is Hermitian: that is the centre, and one branch of each sector — the definite branch of the informational sector and the timelike branch of the material sector — while on the other branch it is a pure unit vector, the direction of the element. The vector subspace exhibits the rotor relative to the boost, with the scalar part vanishing exactly when the two axes are orthogonal; on the two halves the rotor is free and the boost is absent, so the halves exhibit the rotor alone; and the sectors exhibit the boost alone and reduce the rotor to a sign or to a direction.
+
+The restrictions together exhaust the ways in which the four factors can depend on one another, and the biquaternion norm — positive definite, negative definite, real indefinite, complex anisotropic, complex indefinite — is what decides which way each subspace goes. Read over the whole algebra rather than on one subspace, the two criteria cut two classes out of the nonzero elements: the boost-free elements, which are the positive multiples of the unitary elements and form a group, and the rotor-free elements, which are the complex multiples of the Hermitian definite ones and do not. Each class has five real dimensions, and they meet exactly in the centre, the count $5+5-8 = 2$ closing against the eight real dimensions of the group of units; on the unit-norm slice they become the rotor group and the boosts with a discrete sign, the two halves of the Cartan decomposition.
 
 ## Summary of Notation
 
@@ -508,10 +555,10 @@ Restricted to the remarkable subspaces, the polar representation $\tilde{Q} = re
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, $\operatorname{Sc}(\tilde{Q}) = 0$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | real quaternion subspace, antiquaternion subspace |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | informational and material sectors |
-| $\tilde{Q} = iae_0+\vec v$, $s = |\vec v|$ | element of the material sector; $a = ct$ for a four-position |
-| $\tilde{Q} = ae_0+i\vec w$, $s = |\vec w|$ | element of the informational sector |
-| $\tilde{Q} = \vec v+i\vec w$ | element of the vector subspace |
-| $\varphi$ | the half-rapidity of $B$: $B = \cosh\varphi\,e_0 + i\sinh\varphi\,\hat u$, rapidity $2\varphi$ |
+| $\tilde{Q} = iae_0+\vec q$, $s = |\vec q|$ | element of the material sector; $a = ct$ for a four-position |
+| $\tilde{Q} = ae_0+i\vec q'$, $s = |\vec q'|$ | element of the informational sector |
+| $\tilde{Q} = \vec q+i\vec q'$ | element of the vector subspace |
+| $\varphi$ | the half-rapidity of $B$: $B = \cosh\varphi\,e_0 + i\sinh\varphi\,\hat u_{\mathrm b}$, rapidity $2\varphi$ |
 | $M = \max(|a|,s)$, $m = \min(|a|,s)$ | the two numbers that fix the rapidity of the sector boost |
 | $T_{\mathrm{m}}, T_{\mathrm{i}}, X_{\mathrm{m}}, X_{\mathrm{i}}$ | the four coordinate blocks |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |

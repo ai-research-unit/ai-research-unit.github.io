@@ -15,7 +15,7 @@ Throughout, $R$ is a ring; where a statement needs commutativity that hypothesis
 
 **Definition.** A **category** $\mathcal{C}$ consists of a class of **objects**, a set $\mathcal{C}(A,B)$ of **morphisms** for each ordered pair of objects, a **composition** map $\mathcal{C}(B,C)\times\mathcal{C}(A,B)\to\mathcal{C}(A,C)$, $(g,f)\mapsto g\circ f$, and an **identity** $\operatorname{id}_A \in \mathcal{C}(A,A)$ for each object $A$, such that composition is associative and the identities are two-sided units.
 
-**Definition.** The **opposite category** $\mathcal{C}^{\mathrm{op}}$ has the same objects, morphism sets $\mathcal{C}^{\mathrm{op}}(A,B)=\mathcal{C}(B,A)$, and composition $f\circ^{\mathrm{op}}g=g\circ f$. A statement about $\mathcal{C}$ dualises by being read in $\mathcal{C}^{\mathrm{op}}$.
+**Definition.** The **opposite category** $\mathcal{C}^{\mathrm{opp}}$ has the same objects, morphism sets $\mathcal{C}^{\mathrm{opp}}(A,B)=\mathcal{C}(B,A)$, and composition $f\circ^{\mathrm{opp}}g=g\circ f$. A statement about $\mathcal{C}$ dualises by being read in $\mathcal{C}^{\mathrm{opp}}$.
 
 **Definition.** A morphism $f:A\to B$ is a **monomorphism** if $fg=fh$ implies $g=h$, an **epimorphism** if $gf=hf$ implies $g=h$, and an **isomorphism** if it has a two-sided inverse. In $R\text{-}\mathbf{Mod}$ the monomorphisms are exactly the injective maps and the epimorphisms exactly the surjective maps.
 
@@ -59,7 +59,7 @@ For commutative $R$ the set $\operatorname{Hom}_R(M,N)$ is again an $R$-module, 
 
 ### The Hom Bifunctor
 
-The assignment $(M,N)\mapsto\operatorname{Hom}_R(M,N)$ is a functor of two variables, a **bifunctor** $R\text{-}\mathbf{Mod}^{\mathrm{op}}\times R\text{-}\mathbf{Mod}\to\mathbf{Ab}$, contravariant in the first variable and covariant in the second: a map $f:M'\to M$ induces $f^*:\operatorname{Hom}_R(M,N)\to\operatorname{Hom}_R(M',N)$ by precomposition, and a map $g:N\to N'$ induces $g_*:\operatorname{Hom}_R(M,N)\to\operatorname{Hom}_R(M,N')$ by postcomposition. These two actions commute, $(g_*)\circ(f^*)=(f^*)\circ(g_*)$, which is the statement that the bifunctor is well defined.
+The assignment $(M,N)\mapsto\operatorname{Hom}_R(M,N)$ is a functor of two variables, a **bifunctor** $R\text{-}\mathbf{Mod}^{\mathrm{opp}}\times R\text{-}\mathbf{Mod}\to\mathbf{Ab}$, contravariant in the first variable and covariant in the second: a map $f:M'\to M$ induces $f^*:\operatorname{Hom}_R(M,N)\to\operatorname{Hom}_R(M',N)$ by precomposition, and a map $g:N\to N'$ induces $g_*:\operatorname{Hom}_R(M,N)\to\operatorname{Hom}_R(M,N')$ by postcomposition. These two actions commute, $(g_*)\circ(f^*)=(f^*)\circ(g_*)$, which is the statement that the bifunctor is well defined.
 
 ### Zero Object, Products and Coproducts
 
@@ -159,9 +159,9 @@ The regular module is the object through which the ring is recovered from its ca
 
 ### Representable Functors and the Yoneda Lemma
 
-**Definition.** A functor $F:\mathcal{C}^{\mathrm{op}}\to\mathbf{Set}$ is **representable** if there is an object $A$ and a natural isomorphism $F\cong\mathcal{C}(-,A)$; dually a covariant functor is representable if it is naturally isomorphic to $\mathcal{C}(A,-)$.
+**Definition.** A functor $F:\mathcal{C}^{\mathrm{opp}}\to\mathbf{Set}$ is **representable** if there is an object $A$ and a natural isomorphism $F\cong\mathcal{C}(-,A)$; dually a covariant functor is representable if it is naturally isomorphic to $\mathcal{C}(A,-)$.
 
-**Lemma (Yoneda).** For every functor $F:\mathcal{C}^{\mathrm{op}}\to\mathbf{Set}$ and every object $A$ there is a bijection $\operatorname{Nat}(\mathcal{C}(-,A),F)\cong F(A)$; consequently the functor $A\mapsto\mathcal{C}(-,A)$ is a full embedding $\mathcal{C}^{\mathrm{op}}\hookrightarrow[\mathcal{C},\mathbf{Set}]$.
+**Lemma (Yoneda).** For every functor $F:\mathcal{C}^{\mathrm{opp}}\to\mathbf{Set}$ and every object $A$ there is a bijection $\operatorname{Nat}(\mathcal{C}(-,A),F)\cong F(A)$; consequently the functor $A\mapsto\mathcal{C}(-,A)$ is a full embedding $\mathcal{C}^{\mathrm{opp}}\hookrightarrow[\mathcal{C},\mathbf{Set}]$.
 
 *Proof.* A natural transformation $\eta:\mathcal{C}(-,A)\to F$ is determined by $\eta_A(\operatorname{id}_A)\in F(A)$, by naturality applied to the maps into $A$; conversely an element $u\in F(A)$ defines $\eta$ by $\eta_B(f)=F(f)(u)$. The two assignments are inverse. Fullness and faithfulness follow by applying the bijection to representable functors.
 
@@ -179,7 +179,7 @@ The regular module is the object through which the ring is recovered from its ca
 
 *Proof.* This is the Eilenberg–Watts theorem. The forward direction is the construction of the bimodule $P=F(R)$ and the natural isomorphism $F(M)\cong F(R)\otimes_RM$ for a right exact additive functor preserving direct sums. The converse is the Morita theorem, which identifies the inverse as $\operatorname{Hom}_S(P,-)$.
 
-**Example.** The matrix ring $M_n(R)$ is Morita equivalent to $R$: the functor $R\text{-}\mathbf{Mod}\to M_n(R)\text{-}\mathbf{Mod}$ sending a module $M$ to the column module $M^n$, with $M_n(R)$ acting on the left by matrix multiplication, is an equivalence, with inverse $N\mapsto e_{11}N$; the progenerator is the left module $R^n$, and $\operatorname{End}_R(R^n)\cong M_n(R)$. Two rings $R$ and $S$ are Morita equivalent if and only if $S\cong\operatorname{End}_R(P)^{\mathrm{op}}$ for a finitely generated projective generator $P$ of $R\text{-}\mathbf{Mod}$; for a right $R$-module progenerator the anti-isomorphism is not needed and $S\cong\operatorname{End}_R(P)$, which is the form in which the Eilenberg–Watts theorem above produces it.
+**Example.** The matrix ring $M_n(R)$ is Morita equivalent to $R$: the functor $R\text{-}\mathbf{Mod}\to M_n(R)\text{-}\mathbf{Mod}$ sending a module $M$ to the column module $M^n$, with $M_n(R)$ acting on the left by matrix multiplication, is an equivalence, with inverse $N\mapsto e_{11}N$; the progenerator is the left module $R^n$, and $\operatorname{End}_R(R^n)\cong M_n(R)$. Two rings $R$ and $S$ are Morita equivalent if and only if $S\cong\operatorname{End}_R(P)^{\mathrm{opp}}$ for a finitely generated projective generator $P$ of $R\text{-}\mathbf{Mod}$; for a right $R$-module progenerator the anti-isomorphism is not needed and $S\cong\operatorname{End}_R(P)$, which is the form in which the Eilenberg–Watts theorem above produces it.
 
 **Remark.** Morita equivalence preserves the categorical properties of modules — projectivity, injectivity, flatness, exactness, the existence of projective covers — but it does not preserve the ring: $R$ and $M_n(R)$ have isomorphic module categories while being different rings, and the centre is preserved up to isomorphism. The precise statement, the construction of the bimodule and the classification of equivalences belong to of the category *Linear Spaces over Algebras*; here only the definition and the prototypical example are needed, to record that a module category is an invariant of the ring strictly coarser than the ring itself.
 
@@ -191,7 +191,7 @@ The regular module is the object through which the ring is recovered from its ca
 
 ### Left and Right Modules
 
-For a ring $R$ the categories $R\text{-}\mathbf{Mod}$ and $\mathbf{Mod}\text{-}R$ are equivalent when $R$ is commutative, and in general $R\text{-}\mathbf{Mod}$ is equivalent to $\mathbf{Mod}\text{-}R^{\mathrm{op}}$. The bimodule ${}_S P_R$ is the natural home of the tensor product $P\otimes_R-$ giving a functor from right $R$-modules to left $S$-modules. These side conventions are the reason the corpus states the side of the modules whenever the ring is not commutative, and they are the reason the balanced product is stated for a right and a left module.
+For a ring $R$ the categories $R\text{-}\mathbf{Mod}$ and $\mathbf{Mod}\text{-}R$ are equivalent when $R$ is commutative, and in general $R\text{-}\mathbf{Mod}$ is equivalent to $\mathbf{Mod}\text{-}R^{\mathrm{opp}}$. The bimodule ${}_S P_R$ is the natural home of the tensor product $P\otimes_R-$ giving a functor from right $R$-modules to left $S$-modules. These side conventions are the reason the corpus states the side of the modules whenever the ring is not commutative, and they are the reason the balanced product is stated for a right and a left module.
 
 ## Standard Constructions as Limits and Colimits
 
@@ -227,7 +227,7 @@ Two rings are Morita equivalent when their module categories are equivalent; mat
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal{C}$, $\mathcal{D}$ | categories; $\mathcal{C}^{\mathrm{op}}$ the opposite category |
+| $\mathcal{C}$, $\mathcal{D}$ | categories; $\mathcal{C}^{\mathrm{opp}}$ the opposite category |
 | $\mathcal{C}(A,B)$, $\operatorname{Hom}_{\mathcal{C}}(A,B)$ | morphisms from $A$ to $B$ |
 | $\operatorname{id}_A$ | identity morphism of $A$ |
 | $F:\mathcal{C}\to\mathcal{D}$ | functor; faithful, full, essentially surjective, equivalence |

@@ -112,7 +112,7 @@ $$
 
 The subspace $\mathbb{M}_-$ has the following algebraic properties, established in the basic algebra article.
 
-**Quadratic form.** The biquaternion **biquaternion norm** restricts to a real quadratic form on $\mathbb{M}_-$:
+**Quadratic form.** The **biquaternion norm** restricts to a real quadratic form on $\mathbb{M}_-$:
 
 $$
 N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = (iq'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + x^2 + y^2 + z^2.

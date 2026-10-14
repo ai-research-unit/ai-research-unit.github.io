@@ -97,10 +97,10 @@ For Bell-diagonal states the quantum mutual information is thus a function of th
 
 ### Measurement on one subsystem
 
-To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\hat{n}$ has idempotents
+To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\hat u$ has idempotents
 
 $$
-\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_0 \pm i\hat{n}\cdot\hat e\bigr) \quad\text{on }B,
+\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_0 \pm i\hat u\cdot\hat e\bigr) \quad\text{on }B,
 \qquad
  e_0\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
 $$
@@ -114,13 +114,13 @@ $$
 The conditional entropy of $A$ given the measurement is $S(A|\{\tilde{\Pi}\}) = \sum_\pm p_\pm S(\tilde{\rho}_{A|\pm})$, and the **classical mutual information** extractable by that measurement is
 
 $$
-J(A|B)_{\hat{n}} = S(\tilde{\rho}_A) - S\bigl(A|\{\tilde{\Pi}\}\bigr),
+J(A|B)_{\hat u} = S(\tilde{\rho}_A) - S\bigl(A|\{\tilde{\Pi}\}\bigr),
 $$
 
 the information about $A$ gained by measuring $B$. The **quantum discord** is
 
 $$
-D(A|B) = I(A:B) - \max_{\hat{n}} J(A|B)_{\hat{n}} .
+D(A|B) = I(A:B) - \max_{\hat u} J(A|B)_{\hat u} .
 $$
 
 By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the **quantum-classical states** $\tilde{\rho}_{AB} = \sum_k p_k\,\tilde{\rho}_A^{(k)}\otimes\tilde{\Pi}_k$.
@@ -242,11 +242,11 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 The quantum discord of a bipartite state is the difference between the quantum mutual information and the classical mutual information extractable by a local measurement:
 
 $$
-D(A|B) = I(A:B) - \max_{\hat{n}} J(A|B)_{\hat{n}},
+D(A|B) = I(A:B) - \max_{\hat u} J(A|B)_{\hat u},
 \qquad
 I(A:B) = S(\tilde{\rho}_A)+S(\tilde{\rho}_B)-S(\tilde{\rho}_{AB}),
 \qquad
-J(A|B)_{\hat{n}} = S(\tilde{\rho}_A) - S\bigl(A\,|\,\{\tilde{\Pi}\}\bigr).
+J(A|B)_{\hat u} = S(\tilde{\rho}_A) - S\bigl(A\,|\,\{\tilde{\Pi}\}\bigr).
 $$
 
 In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{\rho}_{AB} = \sum_\epsilon p_\epsilon P_\epsilon$ are parametrized by the three trace pairings
@@ -270,7 +270,7 @@ with marginals $\tilde{\rho}_A = \tilde{\rho}_B = \tfrac12 e_0$ and entropy a fu
 | $\tilde{\rho}_A = \mathrm{Tr}_B\tilde{\rho}_{AB}$, $\tilde{\rho}_B = \mathrm{Tr}_A\tilde{\rho}_{AB}$ | Marginal states |
 | $S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log_2\tilde{\rho})$ | Von Neumann entropy (bits) |
 | $I(A:B) = S(\tilde{\rho}_A)+S(\tilde{\rho}_B)-S(\tilde{\rho}_{AB})$ | Quantum mutual information |
-| $\tilde{\Pi}_{1,2} = \tfrac12(e_0\pm i\hat{n}\cdot\hat e)$ | Projective measurement on $B$ |
+| $\tilde{\Pi}_{1,2} = \tfrac12(e_0\pm i\hat u\cdot\hat e)$ | Projective measurement on $B$ |
 | $J(A|B) = S(\tilde{\rho}_A)-S(A|\{\tilde{\Pi}\})$ | Classical mutual information |
 | $D(A|B) = I(A:B)-\max J(A|B)$ | Quantum discord |
 | $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ | Correlation coefficients |

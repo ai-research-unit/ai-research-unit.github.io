@@ -97,7 +97,7 @@ $$
 = 0.995308\,e_0 + 0.096756\,\hat y,
 \qquad \alpha = 0.193815\ \text{rad} = 11.1048^\circ ,
 $$
-a rotation about $\hat y\propto\hat z\times\hat u$, as the geometry requires. Starting from $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, the spin state is rotated by $\tilde{W}_A\otimes e_0$ and its concurrence is $1.00000000$; the reduced state of $A$ is the maximally mixed state carried to a rotated maximally mixed state, hence unchanged, and the reduced entropy remains $\log 2$. This is the theorem in one instance: at sharp momentum the boost is a local unitary and every entanglement measure is invariant.
+a rotation about $\hat y\propto\hat z\times\hat u_{\mathrm b}$, as the geometry requires. Starting from $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, the spin state is rotated by $\tilde{W}_A\otimes e_0$ and its concurrence is $1.00000000$; the reduced state of $A$ is the maximally mixed state carried to a rotated maximally mixed state, hence unchanged, and the reduced entropy remains $\log 2$. This is the theorem in one instance: at sharp momentum the boost is a local unitary and every entanglement measure is invariant.
 
 ## Momentum Superposition and the Frame Dependence
 
@@ -128,18 +128,18 @@ First, the channel is unitary — hence entanglement-preserving — if and only 
 
 The simplest instance is sharp enough to be worked in closed form. Let particle $A$ have a momentum in a symmetric superposition of two directions making angles $\pm\theta$ with the boost axis in a common plane, and let particle $B$ have a sharp momentum parallel to the boost axis, so that $\tilde{W}_B = e_0$ and the boost acts on $A$ alone. By the symmetry, the two branch rotations are
 $$
-\tilde{W}_{A,\pm} = \cos\frac{\alpha}{2}\,e_0 \pm \sin\frac{\alpha}{2}\,\hat n,
+\tilde{W}_{A,\pm} = \cos\frac{\alpha}{2}\,e_0 \pm \sin\frac{\alpha}{2}\,\hat u_{\mathrm r},
 \qquad \alpha = \alpha(\psi,\theta),
 $$
-rotations about a common axis $\hat n$ by opposite angles, and the channel is
+rotations about a common axis $\hat u_{\mathrm r}$ by opposite angles, and the channel is
 $$
 \tilde{\rho}_A \ \longmapsto\ \tfrac12\bigl(\tilde{W}_{A,+}\tilde{\rho}_A\tilde{W}_{A,+}^{*} + \tilde{W}_{A,-}\tilde{\rho}_A\tilde{W}_{A,-}^{*}\bigr).
 $$
-Writing the Bloch vector of $\tilde{\rho}_A$ as $\vec r = r_\parallel\hat n + \vec r_\perp$, the two rotated copies differ only in the sign of the rotation and their average is
+Writing the Bloch vector of $\tilde{\rho}_A$ as $\vec r = r_\parallel\hat u_{\mathrm r} + \vec r_\perp$, the two rotated copies differ only in the sign of the rotation and their average is
 $$
 r_\parallel \ \longmapsto\ r_\parallel, \qquad \vec r_\perp \ \longmapsto\ \cos\alpha\ \vec r_\perp ,
 $$
-so the channel is the **dephasing about the Wigner axis**: the Bloch component along $\hat n$ survives and the transverse components are damped by $\cos\alpha$. The Bloch radius of a pure initial state becomes $r' = \sqrt{\cos^2\alpha\,\sin^2\Theta + \cos^2\Theta}$, where $\Theta$ is the angle between $\vec r$ and $\hat n$; for $\vec r\perp\hat n$ it is exactly $\cos\alpha$, and for $\vec r\parallel\hat n$ it is $1$ and the state is unchanged. The von Neumann entropy of the dephased single-qubit state is the binary entropy of the reduced radius,
+so the channel is the **dephasing about the Wigner axis**: the Bloch component along $\hat u_{\mathrm r}$ survives and the transverse components are damped by $\cos\alpha$. The Bloch radius of a pure initial state becomes $r' = \sqrt{\cos^2\alpha\,\sin^2\Theta + \cos^2\Theta}$, where $\Theta$ is the angle between $\vec r$ and $\hat u_{\mathrm r}$; for $\vec r\perp\hat u_{\mathrm r}$ it is exactly $\cos\alpha$, and for $\vec r\parallel\hat u_{\mathrm r}$ it is $1$ and the state is unchanged. The von Neumann entropy of the dephased single-qubit state is the binary entropy of the reduced radius,
 $$
 S(\tilde{\rho}_A') = h\!\left(\frac{1+r'}{2}\right), \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
 $$
@@ -202,11 +202,11 @@ The channel above is controlled by one number per branch, the Wigner angle, and 
 
 **Definition.** An element of $SU(2)$ is a unit real quaternion, and every such element is a rotation,
 $$
-\tilde{W} = \cos\frac{\alpha}{2}\,e_0 + \sin\frac{\alpha}{2}\,\hat n, \qquad |\hat n| = 1 ,
+\tilde{W} = \cos\frac{\alpha}{2}\,e_0 + \sin\frac{\alpha}{2}\,\hat u_{\mathrm r}, \qquad |\hat u_{\mathrm r}| = 1 ,
 $$
-with $\alpha$ the **Wigner angle** and $\hat n$ the rotation axis. For a boost of rapidity $\psi$ along $\hat z$ and a particle of rapidity $\chi$ along a direction making angle $\theta$ with the boost axis, the axis is perpendicular to both,
+with $\alpha$ the **Wigner angle** and $\hat u_{\mathrm r}$ the rotation axis. For a boost of rapidity $\psi$ along $\hat z$ and a particle of rapidity $\chi$ along a direction making angle $\theta$ with the boost axis, the axis is perpendicular to both,
 $$
-\hat n \propto \hat z\times\hat u,
+\hat u_{\mathrm r} \propto \hat z\times\hat u_{\mathrm b},
 $$
 and the angle depends on $\theta$ in a way that the following checks determine.
 
@@ -271,7 +271,7 @@ The invariant behind the computation is the spinor symplectic concurrence $\math
 | $\tilde{W}_{j,i}$ | Wigner rotation of particle $j$ in momentum branch $i$ |
 | $q_i$ | Momentum-branch probabilities, $\sum_iq_i = 1$ |
 | $\alpha$ | Wigner angle of a branch |
-| $\hat n$ | Wigner rotation axis |
+| $\hat u_{\mathrm r}$ | Wigner rotation axis |
 | $h(p) = -p\log p-(1-p)\log(1-p)$ | Binary entropy |
 | $\epsilon = \begin{pmatrix}0&1\\-1&0\end{pmatrix}$ | Symplectic form, $\tilde{\Lambda}^{\mathsf T}\epsilon\tilde{\Lambda} = \det(\tilde{\Lambda})\epsilon$ |
 | $\mathcal{C}(\psi) = \|\psi^{\mathsf T}(\epsilon\otimes\epsilon)\psi\|$ | Symplectic (unnormalized) concurrence |

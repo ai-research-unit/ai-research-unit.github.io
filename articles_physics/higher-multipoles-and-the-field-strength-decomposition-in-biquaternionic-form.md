@@ -50,12 +50,12 @@ the electric moments, together with the magnetic moments built from the current.
 For radiation the cleanest bookkeeping is through the **radiation vector** of the electromagnetic series,
 
 $$
-\vec F(\hat n) = \int \vec J(\vec x')\,e^{-ik\hat n\cdot\vec x'}\,d^3x' ,
+\vec F(\hat u) = \int \vec J(\vec x')\,e^{-ik\hat u\cdot\vec x'}\,d^3x' ,
 \qquad
 k = \frac{\omega}{c} ,
 $$
 
-whose expansion in powers of $k\hat n\cdot\vec x'$ is the multipole series in the long-wavelength limit. The term of order $k^n$ contributes the two types of multipole of neighbouring orders,
+whose expansion in powers of $k\hat u\cdot\vec x'$ is the multipole series in the long-wavelength limit. The term of order $k^n$ contributes the two types of multipole of neighbouring orders,
 
 $$
 k^0:\ E_1 ,
@@ -242,7 +242,7 @@ $$
 
 The field-strength biquaternion of a radiation field is a **zero divisor**: a radiation field is null, whether it is an electric or a magnetic multipole, and the null property is shared by the whole far-zone tower.
 
-A further simplification occurs for definite helicity. With the corpus's $e^{-i\omega t}$ convention, for which a positive-frequency plane wave has $\vec B = \hat n\times\vec E/c$, a circularly polarised wave of one handedness satisfies $\vec B = -i\,\vec E/c$ as a complex amplitude and the other handedness satisfies $\vec B = +i\,\vec E/c$. For the first,
+A further simplification occurs for definite helicity. With the corpus's $e^{-i\omega t}$ convention, for which a positive-frequency plane wave has $\vec B = \hat u\times\vec E/c$, a circularly polarised wave of one handedness satisfies $\vec B = -i\,\vec E/c$ as a complex amplitude and the other handedness satisfies $\vec B = +i\,\vec E/c$. For the first,
 
 $$
 \vec V^* = \vec E - ic\,\vec B = 0 ,
@@ -317,7 +317,7 @@ What survives is the algebra of the value. The field-strength biquaternion, its 
 Two different pairings of electric and magnetic multiplets appear in the subject, and it is important not to conflate them.
 
 - The **covariant pairing** combines the electric and magnetic moments of a given rank into the covariant multipole tensor of that rank, so that neither is separately Lorentz-covariant; a boost rotates the two types into one another. This pairing is a statement about the **source moments**, which are frame-dependent.
-- The **long-wavelength pairing** pairs $E_{l+1}$ with $M_l$ at the same order in $k$ in the radiation vector, because the expansion of the phase $e^{-ik\hat n\cdot\vec x'}$ couples the rank-$(n+1)$ symmetric moment to the rank-$n$ antisymmetric moment. This pairing is a statement about the **field** in a fixed frame.
+- The **long-wavelength pairing** pairs $E_{l+1}$ with $M_l$ at the same order in $k$ in the radiation vector, because the expansion of the phase $e^{-ik\hat u\cdot\vec x'}$ couples the rank-$(n+1)$ symmetric moment to the rank-$n$ antisymmetric moment. This pairing is a statement about the **field** in a fixed frame.
 
 Both are standard, and they answer different questions. The first says that the electric and magnetic moments of an order are not separately covariant; the second says which multipoles dominate at a given order in the long-wavelength expansion. The quadrupole illustrates both: it is paired with the magnetic quadrupole by covariance, and with the magnetic dipole by the order counting.
 
@@ -334,7 +334,7 @@ The dipole is the first order with two multiplet types. In a static or stationar
 $$
 \vec F_{E1} = -i\omega\,\vec p ,
 \qquad
-\vec F_{M1} = ik\,\hat n\times\vec m ,
+\vec F_{M1} = ik\,\hat u\times\vec m ,
 $$
 
 and the far fields are the transverse dipole patterns. The two moments combine into the antisymmetric rank-two tensor whose time–space entries are the electric dipole components and whose space–space entries are the magnetic ones; it is this six-component object, not the electric or the magnetic dipole separately, that transforms in a representation of the Lorentz group. A boost rotates $\vec p$ into $\vec m$ within this block, and the electric and magnetic dipole labels are frame-dependent.
@@ -344,9 +344,9 @@ and the far fields are the transverse dipole patterns. The two moments combine i
 The quadrupole is the first order whose moment is not an algebra element. Its electric part is the symmetric traceless tensor $Q_{ij}$, five components, and its magnetic part a rank-two structure built from the current, the magnetic quadrupole moment $M_{ij}$, also five components; they are the two $D^{(2)}$ multiplets of the order, of opposite parity. In the radiation vector the electric quadrupole appears at order $k$ with the magnetic dipole,
 
 $$
-\vec F_{E2} = -\frac{k\omega}{6}\,\vec Q(\hat n) ,
+\vec F_{E2} = -\frac{k\omega}{6}\,\vec Q(\hat u) ,
 \qquad
-[\vec Q(\hat n)]_i = Q_{ij}n_j ,
+[\vec Q(\hat u)]_i = Q_{ij}n_j ,
 $$
 
 and the magnetic quadrupole appears at the next order with the electric octupole. Both quadrupole types radiate with power $\propto\omega^6$, both have the degree-two angular pattern, and they have opposite parity, $(-1)^2 = +1$ for the electric and $(-1)^3 = -1$ for the magnetic. In the radiation field the two types are the parity-even and parity-odd combinations of the two helicity amplitudes of the order, and a boost rotates them into one another while preserving the helicities.
@@ -407,7 +407,7 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $q_{lm}$ | Electric multipole moment of the source |
 | $\vec Q_{lm} = \vec LY_{lm}/\sqrt{l(l+1)}$ | Vector spherical harmonic (magnetic family) |
 | $\hat r\times\vec Q_{lm}$ | Electric family of vector spherical harmonics |
-| $\vec F(\hat n) = \int\vec J\,e^{-ik\hat n\cdot\vec x'}d^3x'$ | Radiation vector |
+| $\vec F(\hat u) = \int\vec J\,e^{-ik\hat u\cdot\vec x'}d^3x'$ | Radiation vector |
 | $k = \omega/c$ | Wavenumber |
 | $\vec p$, $\vec m$ | Electric and magnetic dipole moments |
 | $Q_{ij}$, $M_{ij}$ | Electric and magnetic quadrupole moments |

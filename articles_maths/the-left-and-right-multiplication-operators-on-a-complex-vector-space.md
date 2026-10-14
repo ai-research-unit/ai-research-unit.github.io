@@ -25,17 +25,17 @@ The left and right multiplication maps are $L : E \to \operatorname{End}(E)$, $A
 $$
 L_A L_B = L_{AB}, \qquad R_A R_B = R_{AB}, \qquad L_A R_B = R_B L_A , \qquad L_A + R_B = R_B + L_A .
 $$
-In particular $L$ is a representation of the algebra $E$ on itself, $R$ is a representation of the opposite algebra $E^{\mathrm{op}}$, and the left and right images commute; the composite action $A \otimes B \mapsto L_A R_B$ is a representation of $E \otimes_{\mathbb C} E^{\mathrm{op}}$.
+In particular $L$ is a representation of the algebra $E$ on itself, $R$ is a representation of the opposite algebra $E^{\mathrm{opp}}$, and the left and right images commute; the composite action $A \otimes B \mapsto L_A R_B$ is a representation of $E \otimes_{\mathbb C} E^{\mathrm{opp}}$.
 
 **Proof.** $L_AL_B(X) = A(BX) = (AB)X = L_{AB}(X)$ by the associativity of composition; $R_AR_B(X) = (XB)A = X(BA) = R_{BA}(X)$, which is the representation of the opposite product; and $L_AR_B(X) = A(XB) = (AX)B = R_BL_A(X)$ by associativity. The last assertion is the associativity of the action.
 
-**Proposition (the images are the two copies).** The maps $L$ and $R$ are injective, $\ker L = \ker R = 0$, and $L(E)$ and $R(E)$ are subalgebras of $\operatorname{End}(E)$ isomorphic to $E$ and $E^{\mathrm{op}}$.
+**Proposition (the images are the two copies).** The maps $L$ and $R$ are injective, $\ker L = \ker R = 0$, and $L(E)$ and $R(E)$ are subalgebras of $\operatorname{End}(E)$ isomorphic to $E$ and $E^{\mathrm{opp}}$.
 
 **Proof.** $L_A = 0$ forces $AX = 0$ for all $X$; taking $X = \mathrm{id}$ gives $A = 0$. The image $L(E)$ is closed under composition and contains $L_{\mathrm{id}} = \mathrm{id}$, hence is a subalgebra isomorphic to $E$ by injectivity; the same holds for $R$.
 
 **Theorem (the double centraliser).** The commutant of $L(E)$ in $\operatorname{End}(E)$ is $R(E)$, and the commutant of $R(E)$ is $L(E)$; moreover
 $$
-\operatorname{End}(E) = L(E)\,R(E) \cong E \otimes_{\mathbb C} E^{\mathrm{op}} ,
+\operatorname{End}(E) = L(E)\,R(E) \cong E \otimes_{\mathbb C} E^{\mathrm{opp}} ,
 $$
 so every $\mathbb{C}$-linear operator on $E$ is a sum of two-sided multiplications.
 
@@ -87,7 +87,7 @@ the complex structure of $E$ is thus the one-sided multiplication by the central
 
 ## Summary
 
-On the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ of a complex vector space the left and right multiplications $L_A(X) = AX$ and $R_B(X) = XB$ satisfy $L_AL_B = L_{AB}$, $R_AR_B = R_{AB}$ and $L_AR_B = R_BL_A$, so $L$ is a representation of $E$ and $R$ of the opposite algebra $E^{\mathrm{op}}$ with commuting images, and the double centraliser theorem gives $\operatorname{End}(E) = L(E)R(E)\cong E\otimes E^{\mathrm{op}}$ with the commutant of $L(E)$ equal to $R(E)$ and conversely. The complex structure of $E$ is the central one-sided multiplication $J_E = L_i = R_i$, which commutes with every one-sided multiplication, whereas the complex structure of $V$ is the skew-adjoint unitary element $J \in E$; a real-linear operator on $E$ is complex-linear exactly when it commutes with $J_E$. When $h$ is a chosen Hermitian form on $V$, the operator algebra carries the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^\dagger Y)$, positive definite, and the one-sided multiplications $L_U, R_U$ by a unitary $U$ are commuting isometries of it, so the unitary group acts on $E$ through two commuting unitary representations. The adjoints of the one-sided multiplications for the trace form, the signed variants and the module-level graded action are the companion articles of this group.
+On the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ of a complex vector space the left and right multiplications $L_A(X) = AX$ and $R_B(X) = XB$ satisfy $L_AL_B = L_{AB}$, $R_AR_B = R_{AB}$ and $L_AR_B = R_BL_A$, so $L$ is a representation of $E$ and $R$ of the opposite algebra $E^{\mathrm{opp}}$ with commuting images, and the double centraliser theorem gives $\operatorname{End}(E) = L(E)R(E)\cong E\otimes E^{\mathrm{opp}}$ with the commutant of $L(E)$ equal to $R(E)$ and conversely. The complex structure of $E$ is the central one-sided multiplication $J_E = L_i = R_i$, which commutes with every one-sided multiplication, whereas the complex structure of $V$ is the skew-adjoint unitary element $J \in E$; a real-linear operator on $E$ is complex-linear exactly when it commutes with $J_E$. When $h$ is a chosen Hermitian form on $V$, the operator algebra carries the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^\dagger Y)$, positive definite, and the one-sided multiplications $L_U, R_U$ by a unitary $U$ are commuting isometries of it, so the unitary group acts on $E$ through two commuting unitary representations. The adjoints of the one-sided multiplications for the trace form, the signed variants and the module-level graded action are the companion articles of this group.
 
 ## Summary of Notation
 

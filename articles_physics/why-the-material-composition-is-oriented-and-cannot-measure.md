@@ -148,11 +148,11 @@ ones.
 The projections the framework uses are elements of the informational sector, and they are not idempotent
 for $\star$ at all.
 
-**Proposition (the informational projectors).** For every real unit vector $\hat\mu$ the
+**Proposition (the informational projectors).** For every real unit vector $\hat u$ the
 element
 
 $$
-\tilde\Pi=\tfrac12\bigl(e_0+i\hat\mu\bigr)
+\tilde\Pi=\tfrac12\bigl(e_0+i\hat u\bigr)
 $$
 
 satisfies $\tilde\Pi^{2}=\tilde\Pi$ for the general plain bilinear product, $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ for the
@@ -162,8 +162,8 @@ $$
 N(\tilde\Pi)=0 , \qquad \tilde\Pi\star\tilde\Pi=N(\tilde\Pi)e_0=0 .
 $$
 
-**Proof.** The first two are the standard projector identities for $\tfrac12(e_0+i\hat\mu)$
-with $\hat\mu^{2}=-e_0$; the trace is the definition, and the last is the square identity of
+**Proof.** The first two are the standard projector identities for $\tfrac12(e_0+i\hat u)$
+with $\hat u^{2}=-e_0$; the trace is the definition, and the last is the square identity of
 the companion article applied to $\tilde\Pi$, whose norm vanishes because
 $N(\tilde\Pi)=\tfrac14(1-1)=0$.
 
@@ -270,7 +270,7 @@ and no right one; the non-commutativity; the rule $L_{\tilde A}\circ L_{\tilde B
 so that the operations compose associatively though the elements do not. The split of a composite into a
 central half and a vector half, with the central half the order-independent part. The idempotents of
 $\star$ are exactly $0$ and $e_0$. The informational projectors
-$\tfrac12(e_0+i\hat\mu)$ are idempotent for the ordinary and the sesquilinear products, have
+$\tfrac12(e_0+i\hat u)$ are idempotent for the ordinary and the sesquilinear products, have
 $N=0$, and are **null** for $\star$. The four inclusions of the real–imaginary split, and the non-closure
 of the spatial part of the material sector, with the witness $e_1\star e_1=e_0$.
 
@@ -305,7 +305,7 @@ and satisfy $Q_0^{2}=Q_0$, so the material multiplication resolves no state agai
 composite of two material operations splits into a central number — the order-independent pairing — and a
 direction; on the material sector the square is a number, so the sector is not closed, the witness being
 $e_1\star e_1=e_0$. The projections the framework uses belong to the informational sector, where
-$\tilde\Pi=\tfrac12(e_0+i\hat\mu)$ is idempotent for the ordinary and the sesquilinear products
+$\tilde\Pi=\tfrac12(e_0+i\hat u)$ is idempotent for the ordinary and the sesquilinear products
 and is **null** for the material composition. The material composition therefore respects one internal
 split — the real quaternion subspace is closed, and a real value composes to a real value — but the even
 part of the material sector is not closed, since a product of two spatial elements may land on the unit.
@@ -326,7 +326,7 @@ their monoid by *The Left Multiplications of the Quaternionic Product and the Op
 | $L_{\tilde A}$ | the left multiplication $\tilde X\mapsto\tilde A\star\tilde X$ |
 | $2P_0\vec Q-2Q_0\vec P-2\vec P\times\vec Q$ | the commutator of $\star$ |
 | $P_0Q_0+(\vec P,\vec Q)$ | the central, order-independent half of a composite |
-| $\tilde\Pi=\tfrac12(e_0+i\hat\mu)$ | the informational projector; null for $\star$ |
+| $\tilde\Pi=\tfrac12(e_0+i\hat u)$ | the informational projector; null for $\star$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the real quaternion subspace and its imaginary multiple |
 | $\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ | the spatial part of the material sector; not closed under $\star$ |
 | $\mathbb{M}_\pm$ | the material and informational sectors |

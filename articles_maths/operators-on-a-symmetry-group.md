@@ -111,7 +111,7 @@ $$
 \Psi_{a,b} \circ \Psi_{c,d} = \Psi_{c a,\, b d},
 $$
 
-they satisfy $\Psi_{a,b}^{-1} = \Psi_{a^{-1}, b^{-1}}$, and the assignment $(a, b) \mapsto \Psi_{a,b}$ is a homomorphism $G \times G^{\mathrm{op}} \to GL(\mathcal{F}(G))$. The sandwich with $b = a^{-1}$ is the **inner conjugation** $\Psi_{a, a^{-1}} f(x) = f(a\,x\,a^{-1})$.
+they satisfy $\Psi_{a,b}^{-1} = \Psi_{a^{-1}, b^{-1}}$, and the assignment $(a, b) \mapsto \Psi_{a,b}$ is a homomorphism $G \times G^{\mathrm{opp}} \to GL(\mathcal{F}(G))$. The sandwich with $b = a^{-1}$ is the **inner conjugation** $\Psi_{a, a^{-1}} f(x) = f(a\,x\,a^{-1})$.
 
 **Proof.** For the composition, $\Psi_{a,b}\bigl(\Psi_{c,d}f\bigr)(x) = \Psi_{c,d}f(axb) = f(c\,a x b\,d) = \Psi_{ca,bd}f(x)$; the inverse is the sandwich with the inverses, and the composition law is that of the direct product with the opposite group in the second factor.
 

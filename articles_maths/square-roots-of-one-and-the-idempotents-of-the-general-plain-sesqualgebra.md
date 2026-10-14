@@ -18,7 +18,7 @@ is a bijection from the **Hermitian** roots of $+1$ onto the idempotents, with i
 
 The article is algebraic. The roots of the general quadratic $\tilde\Xi\star\tilde\Xi=\tilde a$ are the companion article *Square Roots of a General Element in the General Plain Sesqualgebra*; the roots of $0$ and the nilpotents are *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*; the zero-divisor set is *Zero Divisors of the General Plain Sesqualgebra*; and the ideals the projections generate, with the Peirce decomposition the pair of a root indexes, are *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*. The roots of $-1$ are a short remark at the end of the roots part, they are used nowhere, and they open nothing.
 
-**The results.** The block-square is the Hermitian element $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}=(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2})e_0+2i(q_{r0}\vec v-q_{i0}\vec u+\vec u\times\vec v)$ in the real halves $\tilde\Xi=q_r+iq_i$, whose scalar part is the definite $\sum_\mu\lvert\Xi_\mu\rvert^{2}\geq0$. The scalar part decides the roots of $+1$: a central value has a root only when it is a non-negative real, the value $0$ forcing the origin, and the roots of $+1$ are exactly the single family $\tilde\Xi=Aw$ over the unit complex scalars $A$ and the real unit quaternions $w$, that is $U(1)\cdot S^{3}$, of real dimension four, containing $e_0$, $-e_0$ and the pure imaginary unit vectors $\tilde\Xi$. The **Hermitian** roots of $+1$ are $\pm e_0$ and the roots $\tilde\Xi=i\hat n$, and the halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from them onto the idempotents of the block, which are $0$, $e_0$ and the $\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\hat n$: a real two-parameter family of rank-one Hermitian projections. Each Hermitian root carries the complete pair $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$, the two members orthogonal in the block and in the algebra at once, summing to $e_0$, differing by the root, and their two subscripts the two eigenvalues of multiplication by the root.
+**The results.** The block-square is the Hermitian element $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}=(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2})e_0+2i(q_{r0}\vec v-q_{i0}\vec u+\vec u\times\vec v)$ in the real halves $\tilde\Xi=q_r+iq_i$, whose scalar part is the definite $\sum_\mu\lvert\Xi_\mu\rvert^{2}\geq0$. The scalar part decides the roots of $+1$: a central value has a root only when it is a non-negative real, the value $0$ forcing the origin, and the roots of $+1$ are exactly the single family $\tilde\Xi=Aw$ over the unit complex scalars $A$ and the real unit quaternions $w$, that is $U(1)\cdot S^{3}$, of real dimension four, containing $e_0$, $-e_0$ and the pure imaginary unit vectors $\tilde\Xi$. The **Hermitian** roots of $+1$ are $\pm e_0$ and the roots $\tilde\Xi=i\hat u$, and the halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from them onto the idempotents of the block, which are $0$, $e_0$ and the $\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\hat u$: a real two-parameter family of rank-one Hermitian projections. Each Hermitian root carries the complete pair $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$, the two members orthogonal in the block and in the algebra at once, summing to $e_0$, differing by the root, and their two subscripts the two eigenvalues of multiplication by the root.
 
 **Placement.** The article is the fifth entry of the *Common Theory* section of the block, after the zero divisors and the annihilators, and before the roots of zero and the nilpotents and before the general value. It uses the product and the class of the introduction, the algebraic norm and the scalar part of the square from *Norm and Invertibility in the General Plain Sesqualgebra* and *The Squares and the Positive Cone of the Biquaternion Sesqualgebra*, and the Hermitian subspace and the positive cone from *Hermitian and Skew-Hermitian Elements* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; it feeds the general-value article and the nilpotent article.
 
@@ -72,14 +72,14 @@ $$
 \tilde\Xi=Aw,\qquad A\in\mathbb{C}\ \text{with}\ \lvert A\rvert=1,\ w\in\mathbb{H}\ \text{real with}\ \lvert w\rvert=1,
 $$
 
-that is, the family $\{Aw\}=U(1)\cdot S^{3}$, of real dimension four, containing $e_0$, $-e_0$ and the pure imaginary unit vectors, the roots $\tilde\Xi=i\hat n$ over the real unit vectors $\hat n$.
+that is, the family $\{Aw\}=U(1)\cdot S^{3}$, of real dimension four, containing $e_0$, $-e_0$ and the pure imaginary unit vectors, the roots $\tilde\Xi=i\hat u$ over the real unit vectors $\hat u$.
 
-*Proof.* By the reduction the square is $e_0$ exactly when $\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}=1$ and $q_{r0}\vec v-q_{i0}\vec u+\vec u\times\vec v=0$. Dot the vector equation with $\vec u\times\vec v$: the first two terms are orthogonal to $\vec u\times\vec v$ and the third is $\lvert\vec u\times\vec v\rvert^{2}$, so $\vec u\times\vec v=0$; hence $\vec u$ and $\vec v$ are parallel, and the vector equation reads $q_{r0}\vec v=q_{i0}\vec u$. If $\vec u\neq0$ then $\vec v=\lambda\vec u$ for a real $\lambda$, the equation gives $q_{i0}=\lambda q_{r0}$ and therefore $q_i=q_{i0}+\vec v=\lambda(q_{r0}+\vec u)=\lambda q_r$: the halves are parallel as full quaternions, $\tilde\Xi=q_r+iq_i=(1+i\lambda)q_r$, and writing $A=(1+i\lambda)/\lvert 1+i\lambda\rvert$, a unit complex scalar, and $w=\lvert 1+i\lambda\rvert\,q_r$, a real quaternion since $q_r$ is one, gives $\tilde\Xi=Aw$ with $\lvert w\rvert=1$ from the scalar equation. If $\vec u=0$ then $q_r=q_{r0}$ is a real scalar and the equation reads $q_{r0}\vec v=0$: either $\vec v=0$, and $\tilde\Xi=(q_{r0}+iq_{i0})e_0=Ae_0$ with $A=q_{r0}+iq_{i0}$, a unit complex scalar because $q_{r0}^{2}+q_{i0}^{2}=1$, is already of the required form with $w=e_0$, or $q_{r0}=0$, and $\tilde\Xi=iq_i=i(q_{i0}+\vec v)$ is of the required form with the unit complex scalar $A=i$ and the real unit $w=q_{i0}+\vec v$. In both cases $\tilde\Xi=Aw$ with $A$ a unit complex scalar and $w$ a real unit quaternion. Conversely every $Aw$ with $A$ a unit complex scalar and $w$ real unit has $q_r=(\mathrm{Re}A)w$, $q_i=(\mathrm{Im}A)w$, hence $\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}=\lvert A\rvert^{2}\lvert w\rvert^{2}=1$ and $q_{r0}\vec v-q_{i0}\vec u+\vec u\times\vec v=\mathrm{Re}A\,\mathrm{Im}A\,\vec w\times\vec w=0$, the first two terms cancelling and the cross product of a vector with itself vanishing, so it is a root. The parametrisation $(A,w)\mapsto Aw$ has kernel $\{(1,e_0),(-1,-e_0)\}$, of order two, so the root set is a single real four-dimensional family, and the named elements are the cases $A=1$, $A=-1$ and $A=i$ with $w=\hat n$.
+*Proof.* By the reduction the square is $e_0$ exactly when $\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}=1$ and $q_{r0}\vec v-q_{i0}\vec u+\vec u\times\vec v=0$. Dot the vector equation with $\vec u\times\vec v$: the first two terms are orthogonal to $\vec u\times\vec v$ and the third is $\lvert\vec u\times\vec v\rvert^{2}$, so $\vec u\times\vec v=0$; hence $\vec u$ and $\vec v$ are parallel, and the vector equation reads $q_{r0}\vec v=q_{i0}\vec u$. If $\vec u\neq0$ then $\vec v=\lambda\vec u$ for a real $\lambda$, the equation gives $q_{i0}=\lambda q_{r0}$ and therefore $q_i=q_{i0}+\vec v=\lambda(q_{r0}+\vec u)=\lambda q_r$: the halves are parallel as full quaternions, $\tilde\Xi=q_r+iq_i=(1+i\lambda)q_r$, and writing $A=(1+i\lambda)/\lvert 1+i\lambda\rvert$, a unit complex scalar, and $w=\lvert 1+i\lambda\rvert\,q_r$, a real quaternion since $q_r$ is one, gives $\tilde\Xi=Aw$ with $\lvert w\rvert=1$ from the scalar equation. If $\vec u=0$ then $q_r=q_{r0}$ is a real scalar and the equation reads $q_{r0}\vec v=0$: either $\vec v=0$, and $\tilde\Xi=(q_{r0}+iq_{i0})e_0=Ae_0$ with $A=q_{r0}+iq_{i0}$, a unit complex scalar because $q_{r0}^{2}+q_{i0}^{2}=1$, is already of the required form with $w=e_0$, or $q_{r0}=0$, and $\tilde\Xi=iq_i=i(q_{i0}+\vec v)$ is of the required form with the unit complex scalar $A=i$ and the real unit $w=q_{i0}+\vec v$. In both cases $\tilde\Xi=Aw$ with $A$ a unit complex scalar and $w$ a real unit quaternion. Conversely every $Aw$ with $A$ a unit complex scalar and $w$ real unit has $q_r=(\mathrm{Re}A)w$, $q_i=(\mathrm{Im}A)w$, hence $\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}=\lvert A\rvert^{2}\lvert w\rvert^{2}=1$ and $q_{r0}\vec v-q_{i0}\vec u+\vec u\times\vec v=\mathrm{Re}A\,\mathrm{Im}A\,\vec w\times\vec w=0$, the first two terms cancelling and the cross product of a vector with itself vanishing, so it is a root. The parametrisation $(A,w)\mapsto Aw$ has kernel $\{(1,e_0),(-1,-e_0)\}$, of order two, so the root set is a single real four-dimensional family, and the named elements are the cases $A=1$, $A=-1$ and $A=i$ with $w=\hat u$.
 
 **Corollary (the roots of $+1$ are never zero divisors).** Every root of $+1$ has $\mathrm{Sc}(\tilde\Xi\star\tilde\Xi)=1$, hence $H(\tilde\Xi)=1$, and its central square is a complex number of modulus one,
 
 $$
-C(Aw)=A^{2},\qquad\text{in particular}\qquad C(\pm e_0)=1,\qquad C(i\hat n)=-1 .
+C(Aw)=A^{2},\qquad\text{in particular}\qquad C(\pm e_0)=1,\qquad C(i\hat u)=-1 .
 $$
 
 Every root of $+1$ is therefore one-sidedly invertible, and the root set of $+1$ is **disjoint** from the zero-divisor cone.
@@ -92,11 +92,11 @@ Every root of $+1$ is therefore one-sidedly invertible, and the root set of $+1$
 
 **Definition (the Hermitian roots of $+1$).** A root of $+1$ is **Hermitian** when $\tilde\Xi^{*}=\tilde\Xi$.
 
-**Theorem (the Hermitian roots of $+1$).** The Hermitian roots of $+1$ are the two central scalars $\pm e_0$ together with the pure imaginary unit vectors, the roots $\tilde\Xi=i\hat n$ over the real unit vectors $\hat n$, a real two-parameter family.
+**Theorem (the Hermitian roots of $+1$).** The Hermitian roots of $+1$ are the two central scalars $\pm e_0$ together with the pure imaginary unit vectors, the roots $\tilde\Xi=i\hat u$ over the real unit vectors $\hat u$, a real two-parameter family.
 
 *Proof.* A Hermitian element is $\xi_0e_0+i\vec\xi'$ with $\xi_0\in\mathbb{R}$ and $\vec\xi'$ a real vector, and its square in the algebra is $\xi_0^{2}e_0+\lvert\vec\xi'\rvert^{2}e_0+2\xi_0i\vec\xi'$ (since $(i\vec\xi')^{2}=-(\vec\xi')^{2}=\lvert\vec\xi'\rvert^{2}e_0$). Since the element is Hermitian its block-square is its algebra square, and the equation is $(\xi_0^{2}+\lvert\vec\xi'\rvert^{2})e_0+2\xi_0i\vec\xi'=e_0$, whose solution is $\xi_0=\pm1$ with $\vec\xi'=0$, or $\xi_0=0$ with $\lvert\vec\xi'\rvert=1$. The last is $\tilde\Xi$.
 
-**Remark (the Hermitian roots are the involutions of the block).** A Hermitian root of $+1$ is the element form of an involution of the Hermitian subspace, and the three kinds are the two central involutions $\pm e_0$ and the family $\tilde\Xi=i\hat n$ over the real unit vectors $\hat n$. These are exactly the roots that the halving map turns into idempotents, and the non-Hermitian roots of $+1$ are dropped by the idempotent theory.
+**Remark (the Hermitian roots are the involutions of the block).** A Hermitian root of $+1$ is the element form of an involution of the Hermitian subspace, and the three kinds are the two central involutions $\pm e_0$ and the family $\tilde\Xi=i\hat u$ over the real unit vectors $\hat u$. These are exactly the roots that the halving map turns into idempotents, and the non-Hermitian roots of $+1$ are dropped by the idempotent theory.
 
 **The roots of minus one.** In a product that is two-sidedly linear the central imaginary carries the roots of $+1$ to the roots of $-1$, because $(i\tilde\Xi)\star(i\tilde\Xi)=i^{2}(\tilde\Xi\star\tilde\Xi)=-\tilde\Xi\star\tilde\Xi$; the mechanism is not universal. The block is sesquilinear, so the second slot conjugates and $(i\tilde\Xi)\star(i\tilde\Xi)=i\,\tilde\Xi\star\tilde\Xi\,\overline{i}=\tilde\Xi\star\tilde\Xi$: the scalar multiplication changes nothing, the roots of $-1$ are not read off the roots of $+1$ by such a map, and the root set of $-1$ is **empty**, as §*The Reduction* already shows.
 
@@ -161,10 +161,10 @@ a real number, and it is nonzero unless $\tilde\Pi=0$.
 **Theorem (the idempotents of the block).** The idempotents of the sesquilinear multiplication $\star$ are $0$, $e_0$ and the elements
 
 $$
-\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_0+\tilde\Xi\bigr) , \qquad \tilde\Xi=i\hat n , \qquad \hat n\in\mathbb{R}^{3},\ (\hat n,\hat n)=1 ,
+\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_0+\tilde\Xi\bigr) , \qquad \tilde\Xi=i\hat u , \qquad \hat u\in\mathbb{R}^{3},\ (\hat u,\hat u)=1 ,
 $$
 
-where $\hat n=\sum_{k=1}^{3}n_ke_k$ ranges over the real vectors of the vector subspace with $(\hat n,\hat n)=\sum_kn_k^{2}=1$. There are no others.
+where $\hat u=\sum_{k=1}^{3}n_ke_k$ ranges over the real vectors of the vector subspace with $(\hat u,\hat u)=\sum_kn_k^{2}=1$. There are no others.
 
 *Proof.* By the reduction the idempotents of the block are the Hermitian elements with $\tilde\Pi^{2}=\tilde\Pi$. A Hermitian element is $\tilde\Pi=\alpha e_0+i\vec w$ with $\alpha\in\mathbb{R}$ and $\vec w$ a real vector, and its square in the algebra is
 
@@ -172,19 +172,19 @@ $$
 \tilde\Pi^{2}=\alpha^{2}e_0+2\alpha\,i\vec w+(i\vec w)^{2}=\bigl(\alpha^{2}+\lvert\vec w\rvert^{2}\bigr)e_0+2\alpha\,i\vec w ,
 $$
 
-since $\vec w^{2}=-\lvert\vec w\rvert^{2}e_0$ and $(i\vec w)^{2}=i^{2}\vec w^{2}=\lvert\vec w\rvert^{2}e_0$. Equating this to $\tilde\Pi=\alpha e_0+i\vec w$ splits the equation into the vector part $(2\alpha-1)\vec w=0$ and the scalar part $\alpha^{2}+\lvert\vec w\rvert^{2}=\alpha$. If $\vec w=0$ the scalar equation is $\alpha^{2}=\alpha$, so $\alpha=0$ or $\alpha=1$, giving the trivial idempotents $0$ and $e_0$. If $\vec w\neq0$ then $\alpha=\tfrac12$, the scalar equation gives $\lvert\vec w\rvert^{2}=\tfrac14$, and writing $\vec w=\tfrac12\hat n$ with $(\hat n,\hat n)=1$ gives $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$. No other case occurs, and every listed element is a Hermitian idempotent of the algebra and therefore an idempotent of the block.
+since $\vec w^{2}=-\lvert\vec w\rvert^{2}e_0$ and $(i\vec w)^{2}=i^{2}\vec w^{2}=\lvert\vec w\rvert^{2}e_0$. Equating this to $\tilde\Pi=\alpha e_0+i\vec w$ splits the equation into the vector part $(2\alpha-1)\vec w=0$ and the scalar part $\alpha^{2}+\lvert\vec w\rvert^{2}=\alpha$. If $\vec w=0$ the scalar equation is $\alpha^{2}=\alpha$, so $\alpha=0$ or $\alpha=1$, giving the trivial idempotents $0$ and $e_0$. If $\vec w\neq0$ then $\alpha=\tfrac12$, the scalar equation gives $\lvert\vec w\rvert^{2}=\tfrac14$, and writing $\vec w=\tfrac12\hat u$ with $(\hat u,\hat u)=1$ gives $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$. No other case occurs, and every listed element is a Hermitian idempotent of the algebra and therefore an idempotent of the block.
 
 **Remark.** The word **projection** is used for a Hermitian idempotent of the algebra and for nothing else, and the idempotents of the block are exactly the projections of $\mathbb{B}$; the name *pure state* of *Idempotents of the General Plain Algebra* is the same element read in the Hermitian subspace. The two families of algebra idempotents that are not Hermitian are the ones the block discards, and they are treated in §*The Contrast With the Algebra*.
 
 ### The Coordinates
 
-**Proposition (the coordinate form).** For a real vector $\hat n$ with $(\hat n,\hat n)=1$ and coordinates $n_k\in\mathbb{R}$,
+**Proposition (the coordinate form).** For a real vector $\hat u$ with $(\hat u,\hat u)=1$ and coordinates $n_k\in\mathbb{R}$,
 
 $$
 \tilde\Pi_+(\tilde\Xi)=\tfrac12e_0+\tfrac{i}{2}\sum_{k=1}^{3}n_ke_k ,
 $$
 
-so its scalar part is $\tfrac12$, its vector part is $\tfrac{i}{2}\hat n$, and its four coordinates are $\bigl(\tfrac12,\tfrac{i}{2}n_1,\tfrac{i}{2}n_2,\tfrac{i}{2}n_3\bigr)$. Its scalar part is the sum of the modulus squares of its coordinates,
+so its scalar part is $\tfrac12$, its vector part is $\tfrac{i}{2}\hat u$, and its four coordinates are $\bigl(\tfrac12,\tfrac{i}{2}n_1,\tfrac{i}{2}n_2,\tfrac{i}{2}n_3\bigr)$. Its scalar part is the sum of the modulus squares of its coordinates,
 
 $$
 \tfrac12=\tfrac14+\tfrac14\sum_kn_k^{2},
@@ -194,7 +194,7 @@ which is the scalar-part identity of the reduction read on this family.
 
 *Proof.* The coordinates are read from the display, and $\sum_kn_k^{2}=1$ gives the scalar-part identity $\Pi_0=\sum_\mu\lvert\Pi_\mu\rvert^{2}$.
 
-**Remark.** The scalar part $\tfrac12$ is forced by the normalisation $(\hat n,\hat n)=1$ and is the same for the whole family; the family is the whole set of the projections and not a proper subfamily of it.
+**Remark.** The scalar part $\tfrac12$ is forced by the normalisation $(\hat u,\hat u)=1$ and is the same for the whole family; the family is the whole set of the projections and not a proper subfamily of it.
 
 ### The Complement and the Pairing of the Directions
 
@@ -218,19 +218,19 @@ $$
 
 and the sum is immediate. The pair $\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi)$ is the pair of the Hermitian root $\tilde\Xi$ in the sense of §*The Two Idempotents of a Root*.
 
-**Proposition (when two projections are orthogonal).** For two non-central Hermitian roots $\tilde\Xi_1,\tilde\Xi_2$ of $+1$, of axes the real unit vectors $\hat n$ and $\hat m$,
+**Proposition (when two projections are orthogonal).** For two non-central Hermitian roots $\tilde\Xi_1,\tilde\Xi_2$ of $+1$, of axes the real unit vectors $\hat u$ and $\hat m$,
 
 $$
 \tilde\Pi_+(\tilde\Xi_1)\tilde\Pi_+(\tilde\Xi_2)=0 \quad\Longleftrightarrow\quad \tilde\Xi_2=-\tilde\Xi_1 .
 $$
 
-*Proof.* Multiplying out and using $\hat n\hat m=-(\hat n,\hat m)e_0+\hat n\times\hat m$ for the product of two pure real vectors gives
+*Proof.* Multiplying out and using $\hat u\hat m=-(\hat u,\hat m)e_0+\hat u\times\hat m$ for the product of two pure real vectors gives
 
 $$
-\tilde\Pi_+(\tilde\Xi_1)\tilde\Pi_+(\tilde\Xi_2)=\tfrac14\Bigl(\bigl(1+(\hat n,\hat m)\bigr)e_0-\hat n\times\hat m+i\bigl(\hat n+\hat m\bigr)\Bigr).
+\tilde\Pi_+(\tilde\Xi_1)\tilde\Pi_+(\tilde\Xi_2)=\tfrac14\Bigl(\bigl(1+(\hat u,\hat m)\bigr)e_0-\hat u\times\hat m+i\bigl(\hat u+\hat m\bigr)\Bigr).
 $$
 
-The scalar part vanishes when $(\hat n,\hat m)=-1$, and for two real unit vectors this forces $\hat m=-\hat n$, that is $\tilde\Xi_2=-\tilde\Xi_1$, because then $(\hat n+\hat m,\hat n+\hat m)=(\hat n,\hat n)+2(\hat n,\hat m)+(\hat m,\hat m)=0$ and a real vector whose square vanishes is zero. With $\hat m=-\hat n$ the vector part is $-\hat n\times(-\hat n)+i(\hat n-\hat n)=0$ as well. Conversely $\hat m=-\hat n$ gives $0$ by the previous proposition.
+The scalar part vanishes when $(\hat u,\hat m)=-1$, and for two real unit vectors this forces $\hat m=-\hat u$, that is $\tilde\Xi_2=-\tilde\Xi_1$, because then $(\hat u+\hat m,\hat u+\hat m)=(\hat u,\hat u)+2(\hat u,\hat m)+(\hat m,\hat m)=0$ and a real vector whose square vanishes is zero. With $\hat m=-\hat u$ the vector part is $-\hat u\times(-\hat u)+i(\hat u-\hat u)=0$ as well. Conversely $\hat m=-\hat u$ gives $0$ by the previous proposition.
 
 **Remark.** Orthogonality is therefore as sparse as it can be: a projection is orthogonal, as an algebra idempotent, to one other projection of the family and to no third one, so the family is a family of complementary pairs and not an orthogonal set. The Peirce decomposition of the algebra relative to the standard pair is *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*.
 
@@ -340,12 +340,12 @@ and on the right $\tilde\Pi_+\star\tilde\Xi=\tilde\Pi_+$ and $\tilde\Pi_-\star\t
 **Theorem (the idempotents of the block are the halved Hermitian roots of $+1$).** The map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from the Hermitian roots of $+1$ onto the idempotents of the block, with inverse $\tilde\Xi=2\tilde\Pi-e_0$,
 
 $$
-0=\tfrac12(e_0-e_0),\qquad e_0=\tfrac12(e_0+e_0),\qquad \tfrac12(e_0+\tilde\Xi),\ \ \tilde\Xi=i\hat n,\ \ \hat n\in\mathbb{R}^{3},\ (\hat n,\hat n)=1 .
+0=\tfrac12(e_0-e_0),\qquad e_0=\tfrac12(e_0+e_0),\qquad \tfrac12(e_0+\tilde\Xi),\ \ \tilde\Xi=i\hat u,\ \ \hat u\in\mathbb{R}^{3},\ (\hat u,\hat u)=1 .
 $$
 
 *Proof.* A Hermitian root $\tilde\Xi$ of $+1$ satisfies $\tilde\Xi^{*}=\tilde\Xi$ and $\tilde\Xi^{2}=\tilde\Xi\tilde\Xi^{*}=e_0$, so $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ is Hermitian and has square $\tfrac14(e_0+2\tilde\Xi+\tilde\Xi^{2})=\tfrac14(2e_0+2\tilde\Xi)=\tilde\Pi$: it is a Hermitian idempotent of the algebra, hence an idempotent of the block by the reduction. Conversely an idempotent $\tilde\Pi$ of the block is a Hermitian idempotent of the algebra, and $\tilde\Xi=2\tilde\Pi-e_0$ is Hermitian with square $(2\tilde\Pi-e_0)^{2}=4\tilde\Pi-4\tilde\Pi+e_0=e_0$, a Hermitian root of $+1$. The two maps are inverse, and the list is the classification of §*The Hermitian Roots of One* and §*The Classification*.
 
-**Remark (the family and the pair).** The halving map carries the two trivial Hermitian roots $\pm e_0$ to the trivial idempotents $e_0$ and $0$, and the family $\tilde\Xi=i\hat n$ to the projections; the pair $\{\tilde\Xi,-\tilde\Xi\}$ of Hermitian roots becomes the complementary pair $\{\tilde\Pi,e_0-\tilde\Pi\}$ of idempotents, which is the pair of the root of §*The Two Idempotents of a Root*, read on the projections of §*The Complement and the Pairing of the Directions*. The Hermitian roots of $+1$ are the spine of the idempotent theory.
+**Remark (the family and the pair).** The halving map carries the two trivial Hermitian roots $\pm e_0$ to the trivial idempotents $e_0$ and $0$, and the family $\tilde\Xi=i\hat u$ to the projections; the pair $\{\tilde\Xi,-\tilde\Xi\}$ of Hermitian roots becomes the complementary pair $\{\tilde\Pi,e_0-\tilde\Pi\}$ of idempotents, which is the pair of the root of §*The Two Idempotents of a Root*, read on the projections of §*The Complement and the Pairing of the Directions*. The Hermitian roots of $+1$ are the spine of the idempotent theory.
 
 ### The Contrast With the Algebra
 
@@ -383,19 +383,19 @@ by the multiplication of the basis, so the sum is $\tfrac14(4e_0+2\sqrt2\,ie_1+2
 
 ### The Matrix Model
 
-**Under the isomorphism $\mathsf{M}_2$ the projections are the rank-one Hermitian idempotents of $M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde\Pi_+(\tilde\Xi))=\tfrac12(I+i\mathsf{M}_2(\hat n))$, and the family is exactly the set of those idempotents.**
+**Under the isomorphism $\mathsf{M}_2$ the projections are the rank-one Hermitian idempotents of $M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde\Pi_+(\tilde\Xi))=\tfrac12(I+i\mathsf{M}_2(\hat u))$, and the family is exactly the set of those idempotents.**
 
 **Proposition.** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, which satisfies $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ and $\mathsf{M}_2(\tilde P\tilde Q^{*})=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$, the projections are the rank-one Hermitian idempotents of the matrix algebra,
 
 $$
-\mathsf{M}_2\bigl(\tilde\Pi_+(\tilde\Xi)\bigr)=\tfrac12\bigl(I+i\mathsf{M}_2(\hat n)\bigr),
+\mathsf{M}_2\bigl(\tilde\Pi_+(\tilde\Xi)\bigr)=\tfrac12\bigl(I+i\mathsf{M}_2(\hat u)\bigr),
 $$
 
 and the family is the set of the rank-one Hermitian idempotents of $M_2(\mathbb{C})$.
 
-*Proof.* The image of a Hermitian idempotent is Hermitian, $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi^{*})=\mathsf{M}_2(\tilde\Pi)$, and idempotent, $\mathsf{M}_2(\tilde\Pi)^{2}=\mathsf{M}_2(\tilde\Pi^{2})=\mathsf{M}_2(\tilde\Pi)$. The image of $\tilde\Pi_+(\tilde\Xi)$ is computed from $\mathsf{M}_2(\tilde Q)=\sum_\mu Q_\mu\mathsf{M}_2(e_\mu)$ on the coordinates of §*The Coordinates*, and $\mathsf{M}_2(\tilde\Xi)=i\mathsf{M}_2(\hat n)$ because $\mathsf{M}_2$ is $\mathbb{C}$-linear. The matrices $i\mathsf{M}_2(e_1),i\mathsf{M}_2(e_2),i\mathsf{M}_2(e_3)$ are Hermitian, traceless and $i\mathsf{M}_2(e_k)^{2}=I$, and they form a real basis of the traceless Hermitian matrices; hence $i\mathsf{M}_2(\hat n)=\sum_kn_k\,i\mathsf{M}_2(e_k)$ is traceless Hermitian with square $(\hat n,\hat n)I$, and for $(\hat n,\hat n)=1$ the element $\tfrac12(I+i\mathsf{M}_2(\hat n))$ is a Hermitian idempotent of rank one because its trace is one. Conversely every rank-one Hermitian idempotent of $M_2(\mathbb{C})$ is $\tfrac12(I+H)$ with $H$ traceless Hermitian and $H^{2}=I$, and every such $H$ is $i\mathsf{M}_2(\hat n)$ for a real vector $\hat n$ with $(\hat n,\hat n)=1$.
+*Proof.* The image of a Hermitian idempotent is Hermitian, $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi^{*})=\mathsf{M}_2(\tilde\Pi)$, and idempotent, $\mathsf{M}_2(\tilde\Pi)^{2}=\mathsf{M}_2(\tilde\Pi^{2})=\mathsf{M}_2(\tilde\Pi)$. The image of $\tilde\Pi_+(\tilde\Xi)$ is computed from $\mathsf{M}_2(\tilde Q)=\sum_\mu Q_\mu\mathsf{M}_2(e_\mu)$ on the coordinates of §*The Coordinates*, and $\mathsf{M}_2(\tilde\Xi)=i\mathsf{M}_2(\hat u)$ because $\mathsf{M}_2$ is $\mathbb{C}$-linear. The matrices $i\mathsf{M}_2(e_1),i\mathsf{M}_2(e_2),i\mathsf{M}_2(e_3)$ are Hermitian, traceless and $i\mathsf{M}_2(e_k)^{2}=I$, and they form a real basis of the traceless Hermitian matrices; hence $i\mathsf{M}_2(\hat u)=\sum_kn_k\,i\mathsf{M}_2(e_k)$ is traceless Hermitian with square $(\hat u,\hat u)I$, and for $(\hat u,\hat u)=1$ the element $\tfrac12(I+i\mathsf{M}_2(\hat u))$ is a Hermitian idempotent of rank one because its trace is one. Conversely every rank-one Hermitian idempotent of $M_2(\mathbb{C})$ is $\tfrac12(I+H)$ with $H$ traceless Hermitian and $H^{2}=I$, and every such $H$ is $i\mathsf{M}_2(\hat u)$ for a real vector $\hat u$ with $(\hat u,\hat u)=1$.
 
-**Remark.** The matrix image is the standard rank-one projection of a two-dimensional space, and the parametrisation by the real unit vectors $\hat n$ is the parametrisation of those projections by the traceless Hermitian involutions. The standard pair is $\mathsf{M}_2(\tilde\Pi_+)=E_{11}$ and $\mathsf{M}_2(\tilde\Pi_-)=E_{22}$.
+**Remark.** The matrix image is the standard rank-one projection of a two-dimensional space, and the parametrisation by the real unit vectors $\hat u$ is the parametrisation of those projections by the traceless Hermitian involutions. The standard pair is $\mathsf{M}_2(\tilde\Pi_+)=E_{11}$ and $\mathsf{M}_2(\tilde\Pi_-)=E_{22}$.
 
 ### The Operator Interpretation
 
@@ -411,7 +411,7 @@ The idempotents of the block are a class of **elements**, and they must not be c
 
 ## Summary
 
-The square of an element of the general plain sesqualgebra is the Hermitian element $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}=(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2})e_0+2i(q_{r0}\vec v-q_{i0}\vec u+\vec u\times\vec v)$ in the real halves $\tilde\Xi=q_r+iq_i$, whose scalar part is the definite quantity $\sum_\mu\lvert\Xi_\mu\rvert^{2}$. The scalar part decides the central values: no negative real or non-real scalar has a root, the scalar part being non-negative, and **plus one has a root**, the root set being exactly the family $Aw$ over the unit complex scalars $A$ and the real unit quaternions $w$, that is $U(1)\cdot S^{3}$, a single real four-parameter family containing $e_0$, $-e_0$ and the pure imaginary unit vectors $\tilde\Xi$. The **Hermitian** roots of $+1$ are $\pm e_0$ and the roots $\tilde\Xi=i\hat n$, and the halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from them onto the idempotents of the block, which are $0$, $e_0$ and the $\tfrac12(e_0+\tilde\Xi)$: an element is idempotent for the block exactly when it is a Hermitian idempotent of the algebra, each Hermitian root carries the complete orthogonal pair $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$, whose sum is $e_0$, whose difference is the root, whose two members multiply to $0$ in the block and in the algebra at once, and whose subscripts are the two eigenvalues of multiplication by the root, the complement of a projection is the projection $\tilde\Pi_-(\tilde\Xi)=\tilde\Pi_+(-\tilde\Xi)$ at the antipodal direction, and under the matrix model the family is the set of the rank-one Hermitian idempotents.
+The square of an element of the general plain sesqualgebra is the Hermitian element $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}=(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2})e_0+2i(q_{r0}\vec v-q_{i0}\vec u+\vec u\times\vec v)$ in the real halves $\tilde\Xi=q_r+iq_i$, whose scalar part is the definite quantity $\sum_\mu\lvert\Xi_\mu\rvert^{2}$. The scalar part decides the central values: no negative real or non-real scalar has a root, the scalar part being non-negative, and **plus one has a root**, the root set being exactly the family $Aw$ over the unit complex scalars $A$ and the real unit quaternions $w$, that is $U(1)\cdot S^{3}$, a single real four-parameter family containing $e_0$, $-e_0$ and the pure imaginary unit vectors $\tilde\Xi$. The **Hermitian** roots of $+1$ are $\pm e_0$ and the roots $\tilde\Xi=i\hat u$, and the halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from them onto the idempotents of the block, which are $0$, $e_0$ and the $\tfrac12(e_0+\tilde\Xi)$: an element is idempotent for the block exactly when it is a Hermitian idempotent of the algebra, each Hermitian root carries the complete orthogonal pair $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$, whose sum is $e_0$, whose difference is the root, whose two members multiply to $0$ in the block and in the algebra at once, and whose subscripts are the two eigenvalues of multiplication by the root, the complement of a projection is the projection $\tilde\Pi_-(\tilde\Xi)=\tilde\Pi_+(-\tilde\Xi)$ at the antipodal direction, and under the matrix model the family is the set of the rank-one Hermitian idempotents.
 
 ## Summary of Notation
 
@@ -429,7 +429,7 @@ The square of an element of the general plain sesqualgebra is the Hermitian elem
 | $U(1)\cdot S^{3}=\{Aw\}$ | the roots of $+1$, the products of the unit complex scalars and the real unit quaternions, real dimension four |
 | $\pm e_0,\ \tilde\Xi$ | the Hermitian roots of $+1$ |
 | $\tilde\Pi$ | an idempotent, a Hermitian idempotent of the algebra |
-| $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$, $\tilde\Pi_-(\tilde\Xi)=e_0-\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(-\tilde\Xi)$ | the projections, the roots $\tilde\Xi=i\hat n$ over the real unit vectors $\hat n$, and the complementary pairing |
+| $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$, $\tilde\Pi_-(\tilde\Xi)=e_0-\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(-\tilde\Xi)$ | the projections, the roots $\tilde\Xi=i\hat u$ over the real unit vectors $\hat u$, and the complementary pairing |
 | $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$ | the two idempotents of a Hermitian root $\tilde\Xi$ of $+1$, a complete orthogonal pair |
 | $\tfrac12(e_0+\tilde\Xi)$, $\tilde\Xi=2\tilde\Pi-e_0$ | the halving map and its inverse |
 | $\tilde\Sigma^{2}=e_0$ | a root of $+1$ of the algebra |

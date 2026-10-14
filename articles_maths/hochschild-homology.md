@@ -7,7 +7,7 @@ An algebra $A$ over a commutative ring $k$ has a multiplication $A\otimes_kA\to 
 
 This article develops the Hochschild complex and the bar resolution, the identification of Hochschild homology and cohomology as derived functors over the enveloping algebra, the low-dimensional interpretations and the relation to Kähler differentials and derivations, the Hochschild–Kostant–Rosenberg theorem identifying the Hochschild homology of a smooth commutative algebra with its differential forms, the cup and bracket products making the cohomology a Gerstenhaber algebra, and the Morita invariance of the theory. It follows *Homological Algebra*, *Derived Functors*, *Ext and Tor* and *Derived Categories*, and it prepares.
 
-Throughout, $k$ is a commutative ring with $1\neq0$, $A$ is an associative $k$-algebra with unit, not necessarily commutative, and $M$ is an $A$-bimodule; the enveloping algebra is $A^{\mathrm{e}}=A\otimes_kA^{\mathrm{op}}$, so that $A$-bimodules are left $A^{\mathrm{e}}$-modules. The tensor products are over $k$ unless a subscript names another ring, and $\otimes$ without a subscript in a Hochschild complex means $\otimes_k$. No distance, norm, open set or completion occurs; the word *smooth* is used in its algebraic sense of formal smoothness and the word *limit* only in the algebraic sense of a filtered direct limit of modules. The **cyclic cohomology** of Part III is a different invariant constructed from the same cyclic object, and is not treated here; this article supplies its input.
+Throughout, $k$ is a commutative ring with $1\neq0$, $A$ is an associative $k$-algebra with unit, not necessarily commutative, and $M$ is an $A$-bimodule; the enveloping algebra is $A^{\mathrm{e}}=A\otimes_kA^{\mathrm{opp}}$, so that $A$-bimodules are left $A^{\mathrm{e}}$-modules. The tensor products are over $k$ unless a subscript names another ring, and $\otimes$ without a subscript in a Hochschild complex means $\otimes_k$. No distance, norm, open set or completion occurs; the word *smooth* is used in its algebraic sense of formal smoothness and the word *limit* only in the algebraic sense of a filtered direct limit of modules. The **cyclic cohomology** of Part III is a different invariant constructed from the same cyclic object, and is not treated here; this article supplies its input.
 
 ## The Hochschild Complex
 
@@ -29,7 +29,7 @@ The augmentation $B_0(A)=A\otimes_kA\to A$, $a\otimes a'\mapsto aa'$, is a morph
 
 **Proposition.** The bar resolution is a resolution: the augmented complex $B_\bullet(A)\to A\to0$ is exact as a complex of $A$-bimodules, and each $B_n(A)$ is a free $A^{\mathrm{e}}$-module.
 
-*Proof.* The module $B_n(A)=A\otimes_kA^{\otimes n}\otimes_kA\cong A^{\mathrm{e}}\otimes_kA^{\otimes n}$ is free over $A^{\mathrm{e}}=A\otimes_kA^{\mathrm{op}}$; the isomorphism sends $a_0\otimes\cdots\otimes a_{n+1}$ to $(a_0\otimes a_{n+1})\otimes(a_1\otimes\cdots\otimes a_n)$. For exactness, the maps $s:B_n(A)\to B_{n+1}(A)$, $s(a_0\otimes\cdots\otimes a_{n+1})=1\otimes a_0\otimes\cdots\otimes a_{n+1}$, satisfy $bs+sb=\operatorname{id}$ on positive degrees and $bs=1-\eta\varepsilon$ with $\eta$ the unit and $\varepsilon$ the augmentation; hence the augmented complex is contractible as a complex of $k$-modules and therefore exact.
+*Proof.* The module $B_n(A)=A\otimes_kA^{\otimes n}\otimes_kA\cong A^{\mathrm{e}}\otimes_kA^{\otimes n}$ is free over $A^{\mathrm{e}}=A\otimes_kA^{\mathrm{opp}}$; the isomorphism sends $a_0\otimes\cdots\otimes a_{n+1}$ to $(a_0\otimes a_{n+1})\otimes(a_1\otimes\cdots\otimes a_n)$. For exactness, the maps $s:B_n(A)\to B_{n+1}(A)$, $s(a_0\otimes\cdots\otimes a_{n+1})=1\otimes a_0\otimes\cdots\otimes a_{n+1}$, satisfy $bs+sb=\operatorname{id}$ on positive degrees and $bs=1-\eta\varepsilon$ with $\eta$ the unit and $\varepsilon$ the augmentation; hence the augmented complex is contractible as a complex of $k$-modules and therefore exact.
 
 ### Homology and Cohomology
 
@@ -196,7 +196,7 @@ The bracket is defined on the whole Hochschild cochain complex, not only on the 
 
 ## Summary
 
-The bar resolution is a free resolution of a $k$-algebra $A$ over its enveloping algebra $A^{\mathrm{e}}=A\otimes_kA^{\mathrm{op}}$, and applying a bimodule $M$ gives the Hochschild complexes: the Hom complex computes the Hochschild cohomology $HH^{\bullet}(A,M)$ and the tensor complex computes the Hochschild homology $HH_{\bullet}(A,M)$. These are the derived functors of the invariants and the coinvariants, and they agree with $\operatorname{Ext}$ and $\operatorname{Tor}$ over the enveloping algebra. In low degrees the invariant takes its classical form: $HH_0(A,A)=A/[A,A]$, $HH^0(A,A)=Z(A)$, $HH^1(A,A)$ is the derivations modulo the inner derivations, $HH_1(A,A)$ is the module of Kähler differentials and its tensor products, and $HH^2(A,M)$ classifies the square-zero extensions of $A$ by $M$.
+The bar resolution is a free resolution of a $k$-algebra $A$ over its enveloping algebra $A^{\mathrm{e}}=A\otimes_kA^{\mathrm{opp}}$, and applying a bimodule $M$ gives the Hochschild complexes: the Hom complex computes the Hochschild cohomology $HH^{\bullet}(A,M)$ and the tensor complex computes the Hochschild homology $HH_{\bullet}(A,M)$. These are the derived functors of the invariants and the coinvariants, and they agree with $\operatorname{Ext}$ and $\operatorname{Tor}$ over the enveloping algebra. In low degrees the invariant takes its classical form: $HH_0(A,A)=A/[A,A]$, $HH^0(A,A)=Z(A)$, $HH^1(A,A)$ is the derivations modulo the inner derivations, $HH_1(A,A)$ is the module of Kähler differentials and its tensor products, and $HH^2(A,M)$ classifies the square-zero extensions of $A$ by $M$.
 
 For a smooth commutative algebra the Hochschild–Kostant–Rosenberg theorem identifies the homology with the differential forms, $HH_n(A,A)\cong\Omega^n_{A/k}$, and the cohomology with the direct sum of the exterior powers of the differentials tensored with the exterior powers of the derivations; this makes the theory the algebraic substitute for the de Rham complex, with the Hochschild boundary playing the role of the de Rham differential. The Hochschild cohomology carries the cup product and the Gerstenhaber bracket, which make it a Gerstenhaber algebra whose degree-one part acts on the centre, and the resulting differential graded Lie algebra controls the deformation theory of the algebra. The theory is Morita invariant and commutes with flat base change.
 
@@ -208,7 +208,7 @@ Cyclic homology, treated of this category, is built from the same cyclic object 
 |---|---|
 | $k$ | commutative ground ring with $1\neq0$ |
 | $A$ | associative $k$-algebra with unit, not necessarily commutative |
-| $A^{\mathrm{e}}=A\otimes_kA^{\mathrm{op}}$ | enveloping algebra, so $A$-bimodules are $A^{\mathrm{e}}$-modules |
+| $A^{\mathrm{e}}=A\otimes_kA^{\mathrm{opp}}$ | enveloping algebra, so $A$-bimodules are $A^{\mathrm{e}}$-modules |
 | $M$ | an $A$-bimodule of coefficients |
 | $B_n(A)=A^{\otimes(n+2)}$ | bar resolution, free over $A^{\mathrm{e}}$ |
 | $b$ | Hochschild boundary |

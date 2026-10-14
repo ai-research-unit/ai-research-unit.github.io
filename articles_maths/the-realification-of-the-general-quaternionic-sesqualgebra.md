@@ -112,7 +112,7 @@ The rest of the block's body is unchanged, and the reason is the dictionary: the
 $$
 \tilde\Pi(\vec n)=-\tfrac12e_0+\vec n,\qquad(\vec n,\vec n)=\tfrac34\ \text{in the real vector subspace};
 $$
-the square-zero family is $\lambda(\hat n+i)$, equivalently $\lambda(e_0+\tilde\Xi)$, with $\lambda\in\mathbb{C}$ and $\hat n$ a real unit vector, of which $e_0+ie_1$ is the witness; and the plain invertibility criterion $C(\tilde Q)\neq0$ is the same in the two readings. The count of the ring-theoretic objects of the block does not change with the scalars.
+the square-zero family is $\lambda(\hat u+i)$, equivalently $\lambda(e_0+\tilde\Xi)$, with $\lambda\in\mathbb{C}$ and $\hat u$ a real unit vector, of which $e_0+ie_1$ is the witness; and the plain invertibility criterion $C(\tilde Q)\neq0$ is the same in the two readings. The count of the ring-theoretic objects of the block does not change with the scalars.
 
 ## Summary
 

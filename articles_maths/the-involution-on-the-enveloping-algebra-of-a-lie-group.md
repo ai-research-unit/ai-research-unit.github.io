@@ -23,7 +23,7 @@ and the **star** of an element is written $u^{\star} = \sigma(u)$.
 
 **Theorem.** The principal anti-automorphism exists and is unique; it is an involutive anti-automorphism of $U(\mathrm{G})$, $\sigma^2 = \mathrm{id}$, and it is the unique anti-automorphism of $U(\mathrm{G})$ that is $-\mathrm{id}$ on $\mathrm{G}$.
 
-*Proof.* The map $X\mapsto -X$ is a homomorphism from the Lie algebra $\mathrm{G}$ to the opposite Lie algebra $U(\mathrm{G})^{\mathrm{op}}$: it is linear, and $[-X,-Y] = [X,Y]$ equals the opposite bracket. By the universal property of $U(\mathrm{G})$ applied to $U(\mathrm{G})^{\mathrm{op}}$ it extends to an algebra homomorphism from $U(\mathrm{G})$ to $U(\mathrm{G})^{\mathrm{op}}$, that is to an anti-automorphism of $U(\mathrm{G})$; it is involutive because its square is an endomorphism of $U(\mathrm{G})$ equal to the identity on $\mathrm{G}$ and hence on the whole algebra; uniqueness is the uniqueness in the universal property.
+*Proof.* The map $X\mapsto -X$ is a homomorphism from the Lie algebra $\mathrm{G}$ to the opposite Lie algebra $U(\mathrm{G})^{\mathrm{opp}}$: it is linear, and $[-X,-Y] = [X,Y]$ equals the opposite bracket. By the universal property of $U(\mathrm{G})$ applied to $U(\mathrm{G})^{\mathrm{opp}}$ it extends to an algebra homomorphism from $U(\mathrm{G})$ to $U(\mathrm{G})^{\mathrm{opp}}$, that is to an anti-automorphism of $U(\mathrm{G})$; it is involutive because its square is an endomorphism of $U(\mathrm{G})$ equal to the identity on $\mathrm{G}$ and hence on the whole algebra; uniqueness is the uniqueness in the universal property.
 
 ### The Properties
 

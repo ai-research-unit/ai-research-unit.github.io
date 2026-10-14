@@ -13,8 +13,8 @@ The conventions are those of the block. The algebra is $\mathbb{B}=\mathbb{C}\ot
 The carrier is unchanged,
 
 $$
-S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\},\qquad
-\tilde\Pi_+=\tfrac12(e_0+ie_3),\quad \tilde\Upsilon_2=\tfrac12(ie_1+e_2),
+S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\},\qquad
+\tilde\Pi_+=\tfrac12(e_0+ie_3),\quad \hat\Upsilon_2=\tfrac12(ie_1+e_2),
 $$
 
 Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. It is of complex dimension two, whose basis is one idempotent and one nilpotent by the Peirce argument of the companion article. The structure this article studies is the scalar part of the plain sesquilinear product, the **general plain sesquilinear form**
@@ -37,24 +37,24 @@ $$
 \langle\tilde Q,\tilde Q\rangle_*=\operatorname{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^2>0\qquad(\tilde Q\neq0),
 $$
 
-the Euclidean square of the coefficient vector. Restricted to the carrier, and evaluated on the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$, its Gram matrix is
+the Euclidean square of the coefficient vector. Restricted to the carrier, and evaluated on the basis $(\tilde\Pi_+,\hat\Upsilon_2)$, its Gram matrix is
 
 $$
-G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*&\langle\tilde\Pi_+,\tilde\Upsilon_2\rangle_*\\[2pt]\langle\tilde\Upsilon_2,\tilde\Pi_+\rangle_*&\langle\tilde\Upsilon_2,\tilde\Upsilon_2\rangle_*\end{pmatrix}
+G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*&\langle\tilde\Pi_+,\hat\Upsilon_2\rangle_*\\[2pt]\langle\hat\Upsilon_2,\tilde\Pi_+\rangle_*&\langle\hat\Upsilon_2,\hat\Upsilon_2\rangle_*\end{pmatrix}
 =\tfrac12 I_2,
 $$
 
 so the two basis spinors are orthogonal and of equal length,
 
 $$
-\langle\tilde\Pi_+,\tilde\Upsilon_2\rangle_*=0,\qquad \langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\tilde\Upsilon_2,\tilde\Upsilon_2\rangle_*=\tfrac12 .
+\langle\tilde\Pi_+,\hat\Upsilon_2\rangle_*=0,\qquad \langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\hat\Upsilon_2,\hat\Upsilon_2\rangle_*=\tfrac12 .
 $$
 
 The restriction is therefore a positive definite inner product. This is the statement of the menu label: **the carrier is a Hilbert space**, and its Hilbert structure is the restriction of the sesquilinear form.
 
 ### The Amplitudes and the Norm
 
-A general spinor is $\tilde\psi=\psi_1\tilde\Pi_++\psi_2\tilde\Upsilon_2$ with $\psi_1,\psi_2\in\mathbb{C}$, and the metric reads
+A general spinor is $\tilde\psi=\psi_1\tilde\Pi_++\psi_2\hat\Upsilon_2$ with $\psi_1,\psi_2\in\mathbb{C}$, and the metric reads
 
 $$
 \langle\tilde\psi,\tilde\psi\rangle_*=\tfrac12\bigl(|\psi_1|^2+|\psi_2|^2\bigr),
@@ -81,7 +81,7 @@ $$
 B(\tilde P,\tilde Q)=\operatorname{Sc}(\tilde P\tilde Q)
 $$
 
-is $\mathbb{C}$-bilinear, and its algebraic norm $B(\tilde Q,\tilde Q)$ is not a sum of squared moduli; on the real space $B$ is **indefinite**, of signature $(4,4)$, positive on the informational sector $\mathbb{M}_+$ and negative on the material sector $\mathbb{M}_-$ (*The General Plain Bilinear Product on the Biquaternion Space*). Its restriction to the carrier is even degenerate, $B_S=\operatorname{diag}(\tfrac12,0)$, with radical $\mathbb{C}\tilde\Upsilon_2$ (companion article). So the plain product cannot supply a norm on $S$.
+is $\mathbb{C}$-bilinear, and its algebraic norm $B(\tilde Q,\tilde Q)$ is not a sum of squared moduli; on the real space $B$ is **indefinite**, of signature $(4,4)$, positive on the informational sector $\mathbb{M}_+$ and negative on the material sector $\mathbb{M}_-$ (*The General Plain Bilinear Product on the Biquaternion Space*). Its restriction to the carrier is even degenerate, $B_S=\operatorname{diag}(\tfrac12,0)$, with radical $\mathbb{C}\hat\Upsilon_2$ (companion article). So the plain product cannot supply a norm on $S$.
 
 The inner product needs the **second slot read through ${}^{*}$**. The conjugation is conjugate-linear, and it turns the algebraic norm of the product into a sum of squared moduli:
 
@@ -105,10 +105,10 @@ The right multiplication is $\mathbb{C}$-linear in the vector and the left one i
 
 $$
 \tilde Q\tilde\Pi_+^{*}=\tilde Q\tilde\Pi_+\in S,\qquad
-\tilde Q\tilde\Upsilon_2^{*}=\tilde Q\tilde\Upsilon_1\notin S\quad\text{for generic }\tilde Q ,
+\tilde Q\hat\Upsilon_2^{*}=\tilde Q\hat\Upsilon_1\notin S\quad\text{for generic }\tilde Q ,
 $$
 
-because $\tilde\Pi_+^{*}=\tilde\Pi_+$ and $\tilde\Upsilon_2^{*}=\tilde\Upsilon_1$, and $\tilde\Upsilon_1$ lies in the complementary ideal. So the sesquilinear product sends a basis spinor out of the carrier as soon as the second component is present, and there is no sesquilinear left action of $\mathbb{B}$ on $S$. The product **pairs** the carrier — it takes two states to a scalar — and it does not act on it. The asymmetry is the parity asymmetry of the block: the left family of multiplications is conjugate-linear, the right family is complex-linear, and the two have opposite parity in the variable and in the parameter at once (*The Operators of the Plain Sesquilinear Product and the Born Pairing*). It is also why the block has a right unit and no left unit: $e_0$ is a right unit for $\star$, $(\tilde X\star e_0=\tilde X)$, and not a left one ($e_0\star\tilde X=\tilde X^{*}\neq\tilde X$ in general).
+because $\tilde\Pi_+^{*}=\tilde\Pi_+$ and $\hat\Upsilon_2^{*}=\hat\Upsilon_1$, and $\hat\Upsilon_1$ lies in the complementary ideal. So the sesquilinear product sends a basis spinor out of the carrier as soon as the second component is present, and there is no sesquilinear left action of $\mathbb{B}$ on $S$. The product **pairs** the carrier — it takes two states to a scalar — and it does not act on it. The asymmetry is the parity asymmetry of the block: the left family of multiplications is conjugate-linear, the right family is complex-linear, and the two have opposite parity in the variable and in the parameter at once (*The Operators of the Plain Sesquilinear Product and the Born Pairing*). It is also why the block has a right unit and no left unit: $e_0$ is a right unit for $\star$, $(\tilde X\star e_0=\tilde X)$, and not a left one ($e_0\star\tilde X=\tilde X^{*}\neq\tilde X$ in general).
 
 For the positive definite form the situation is different and the article's metric is well defined: the form is a **pairing**, $\mathbb{B}\times\mathbb{B}\to\mathbb{C}$, and it restricts to $S$ whether or not the product does.
 
@@ -120,7 +120,7 @@ $$
 h(\tilde P,\tilde R)=\tilde P\tilde R^{*},
 $$
 
-of which $\langle\cdot,\cdot\rangle_*$ is the scalar part, and it is the Hermitian module structure of *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra* and *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*. The restriction to the ideal $S$ is the module form computed in the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ and gives the same Gram matrix $\tfrac12 I_2$. The form is invariant under the left action of the unitary slice,
+of which $\langle\cdot,\cdot\rangle_*$ is the scalar part, and it is the Hermitian module structure of *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra* and *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*. The restriction to the ideal $S$ is the module form computed in the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ and gives the same Gram matrix $\tfrac12 I_2$. The form is invariant under the left action of the unitary slice,
 
 $$
 \langle \tilde U u,\tilde U v\rangle_*=\langle u,v\rangle_*,\qquad \tilde U\in U(2)=\{\tilde U:\tilde U\tilde U^{*}=e_0\},
@@ -165,12 +165,12 @@ The Hilbert structure supplies the form, the norm, the normalisation and the Bor
 
 ## Worked Verification
 
-The claims are recomputed on the basis $(\tilde\Pi_+,\tilde\Upsilon_2,\tilde\Upsilon_1,\tilde\Pi_-)$ and on the matrix units.
+The claims are recomputed on the basis $(\tilde\Pi_+,\hat\Upsilon_2,\hat\Upsilon_1,\tilde\Pi_-)$ and on the matrix units.
 
 - **Positivity.** $\langle\tilde Q,\tilde Q\rangle_*=\sum_\mu|Q_\mu|^2>0$ for nonzero $\tilde Q$; verified on the basis and on random elements.
-- **Gram matrix.** $\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\tilde\Upsilon_2,\tilde\Upsilon_2\rangle_*=\tfrac12$ and $\langle\tilde\Pi_+,\tilde\Upsilon_2\rangle_*=0$, hence $G=\tfrac12 I_2$; the four matrix units are mutually orthogonal of norm $\tfrac12$.
-- **Hermiticity.** $\langle\tilde\Pi_+,\tilde\Upsilon_2\rangle_*=\overline{\langle\tilde\Upsilon_2,\tilde\Pi_+\rangle_*}=0$.
-- **The carrier is not preserved.** For a generic $\tilde Q$, $\tilde Q\tilde\Upsilon_2^{*}=\tilde Q\tilde\Upsilon_1$ has nonzero components along $\tilde\Upsilon_1$ and $\tilde\Pi_-$ and so lies outside $S$; $\tilde Q\tilde\Pi_+^{*}=\tilde Q\tilde\Pi_+$ stays in $S$.
+- **Gram matrix.** $\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\hat\Upsilon_2,\hat\Upsilon_2\rangle_*=\tfrac12$ and $\langle\tilde\Pi_+,\hat\Upsilon_2\rangle_*=0$, hence $G=\tfrac12 I_2$; the four matrix units are mutually orthogonal of norm $\tfrac12$.
+- **Hermiticity.** $\langle\tilde\Pi_+,\hat\Upsilon_2\rangle_*=\overline{\langle\hat\Upsilon_2,\tilde\Pi_+\rangle_*}=0$.
+- **The carrier is not preserved.** For a generic $\tilde Q$, $\tilde Q\hat\Upsilon_2^{*}=\tilde Q\hat\Upsilon_1$ has nonzero components along $\hat\Upsilon_1$ and $\tilde\Pi_-$ and so lies outside $S$; $\tilde Q\tilde\Pi_+^{*}=\tilde Q\tilde\Pi_+$ stays in $S$.
 - **The plain form for comparison.** $B(\tilde Q,\tilde Q)=\operatorname{Sc}(\tilde Q\tilde Q)$ is indefinite and $B_S=\operatorname{diag}(\tfrac12,0)$, so positivity cannot come from $B$.
 
 ## Boundaries
@@ -190,7 +190,7 @@ The claims are recomputed on the basis $(\tilde\Pi_+,\tilde\Upsilon_2,\tilde\Ups
 
 ## Summary
 
-The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ is a **Hilbert space of the general plain sesqualgebra**, the structure of the plain sesquilinear product $\tilde P\tilde Q^{*}$, whose menu label is probability. The Hilbert structure is the general plain sesquilinear form $\langle u,v\rangle_*=\operatorname{Sc}(uv^{*})$, linear in the first argument and conjugate-linear in the second, Hermitian, and positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_*=\sum_\mu|Q_\mu|^2$. Restricted to the carrier it has the Gram matrix $G=\tfrac12 I_2$, so the two basis spinors are orthogonal and of equal length and the norm is $\langle\tilde\psi,\tilde\psi\rangle_*=\tfrac12(|\psi_1|^2+|\psi_2|^2)$; the state space reads as $\mathbb{C}^2$ with its standard inner product for an algebraic reason.
+The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ is a **Hilbert space of the general plain sesqualgebra**, the structure of the plain sesquilinear product $\tilde P\tilde Q^{*}$, whose menu label is probability. The Hilbert structure is the general plain sesquilinear form $\langle u,v\rangle_*=\operatorname{Sc}(uv^{*})$, linear in the first argument and conjugate-linear in the second, Hermitian, and positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_*=\sum_\mu|Q_\mu|^2$. Restricted to the carrier it has the Gram matrix $G=\tfrac12 I_2$, so the two basis spinors are orthogonal and of equal length and the norm is $\langle\tilde\psi,\tilde\psi\rangle_*=\tfrac12(|\psi_1|^2+|\psi_2|^2)$; the state space reads as $\mathbb{C}^2$ with its standard inner product for an algebraic reason.
 
 Positivity is a fact about the sesquilinear product alone. The algebra's own bilinear form $B$ is indefinite of signature $(4,4)$ and degenerate on the carrier, and its algebraic norm is not a sum of squared moduli; the inner product needs the second slot read through the conjugate-linear ${}^{*}$. The productive asymmetry of the block is that it **pairs and does not act**: the sesquilinear left multiplication is conjugate-linear in the vector and sends a generic basis spinor out of the carrier, so there is no sesquilinear left action of $\mathbb{B}$ on $S$, and the block has a right unit and no left unit.
 
@@ -204,9 +204,9 @@ The Born rule is the scalar part of the plain sesquilinear product — a trace p
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | The general plain sesquilinear product (GPS, probability) |
 | $\tilde Q^{*},\ \tilde Q^{\natural},\ \bar{\tilde Q}$ | Hermitian, natural and coefficient conjugations |
-| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ | The spinor space, the carrier |
+| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ | The spinor space, the carrier |
 | $\langle u,v\rangle_*=\operatorname{Sc}(uv^{*})=\sum_\mu u_\mu\overline{v_\mu}$ | The general plain sesquilinear form; the metric |
-| $G=\tfrac12 I_2$ | The Gram matrix of $(\tilde\Pi_+,\tilde\Upsilon_2)$ |
+| $G=\tfrac12 I_2$ | The Gram matrix of $(\tilde\Pi_+,\hat\Upsilon_2)$ |
 | $\langle\tilde\psi,\tilde\psi\rangle_*=\tfrac12(|\psi_1|^2+|\psi_2|^2)$ | The norm; a sum of squared moduli |
 | $h(\tilde P,\tilde R)=\tilde P\tilde R^{*}$ | The canonical Hermitian form of the regular module |
 | $L^{\star}_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}$ | The sesquilinear left multiplication; conjugate-linear in the vector |

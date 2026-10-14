@@ -17,7 +17,7 @@ $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. Throughout, $c$ denotes the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum speed of light. The symbol $\vec u$ (or $\hat u$) denotes a boost direction and $\psi$ a rapidity.
+and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. Throughout, $c$ denotes the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum speed of light. The symbol $\vec u$ (or $\hat u_{\mathrm b}$) denotes a boost direction and $\psi$ a rapidity.
 
 ## Rotors, Boosts, and Rotations
 
@@ -38,18 +38,18 @@ because the biquaternion norm is the determinant, $N(\tilde{Q}) = \langle\tilde{
 
 Two families of rotors have a direct geometric meaning.
 
-A **pure boost** along the unit direction $\hat u\in\mathbb{H}_{\mathbb{B}}$ (a pure real unit quaternion, $\hat u^2=-e_0$) with **rapidity** $\psi$ is
+A **pure boost** along the unit direction $\hat u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ (a pure real unit quaternion, $\hat u_{\mathrm b}^2=-e_0$) with **rapidity** $\psi$ is
 $$
-\tilde{\Lambda}=\exp\!\left(\frac{\psi}{2}\,i\hat u\right)
-=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\hat u,
+\tilde{\Lambda}=\exp\!\left(\frac{\psi}{2}\,i\hat u_{\mathrm b}\right)
+=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b},
 \qquad \tanh\psi=\frac{u}{c},
 $$
-where $u=|\vec u|$ is the speed of the boosted frame. It is Hermitian, $\tilde{\Lambda}^{*}=\tilde{\Lambda}$, hence lies in $\mathbb{M}_+$, and it has unit norm. A **pure spatial rotation** about $\hat n\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$ is
+where $u=|\vec u|$ is the speed of the boosted frame. It is Hermitian, $\tilde{\Lambda}^{*}=\tilde{\Lambda}$, hence lies in $\mathbb{M}_+$, and it has unit norm. A **pure spatial rotation** about $\hat u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$ is
 $$
-\tilde{R}=\exp\!\left(\frac{\theta}{2}\,\hat n\right)
-=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\hat n,
+\tilde{R}=\exp\!\left(\frac{\theta}{2}\,\hat u_{\mathrm r}\right)
+=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\hat u_{\mathrm r},
 $$
-a real quaternion of unit norm, lying in $\mathbb{H}_{\mathbb{B}}$. The distinction between the two is exactly the factor of $i$ in the vector part: $(\hat n)^2=-e_0$ for a rotation, $(i\hat u)^2=+e_0$ for a boost.
+a real quaternion of unit norm, lying in $\mathbb{H}_{\mathbb{B}}$. The distinction between the two is exactly the factor of $i$ in the vector part: $(\hat u_{\mathrm r})^2=-e_0$ for a rotation, $(i\hat u_{\mathrm b})^2=+e_0$ for a boost.
 
 The group $\mathsf{M}_2^{-1}(SU(2))=SL(2,\mathbb{C})\cap\mathbb{H}_{\mathbb{B}}$ of unit real quaternions is the group of rotations; it is the double cover of $SO(3)$. The sets
 $$
@@ -71,7 +71,7 @@ The identity is $e_0$, and the inverse is the quaternion conjugate,
 $$
 \tilde{\Lambda}^{-1}=\tilde{\Lambda}^{\natural},
 $$
-since $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=\tilde{\Lambda}^{\natural}\tilde{\Lambda}=N(\tilde{\Lambda})=e_0$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde{\Lambda}(\hat u,\psi)^{-1}=\tilde{\Lambda}(\hat u,-\psi)=\tilde{\Lambda}^{\natural}$, and for a rotation $\tilde{R}(\hat n,\theta)^{-1}=\tilde{R}(\hat n,-\theta)$.
+since $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=\tilde{\Lambda}^{\natural}\tilde{\Lambda}=N(\tilde{\Lambda})=e_0$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde{\Lambda}(\hat u_{\mathrm b},\psi)^{-1}=\tilde{\Lambda}(\hat u_{\mathrm b},-\psi)=\tilde{\Lambda}^{\natural}$, and for a rotation $\tilde{R}(\hat u_{\mathrm r},\theta)^{-1}=\tilde{R}(\hat u_{\mathrm r},-\theta)$.
 
 **Dimension and topology.** As a real Lie group, $SL(2,\mathbb{C})$ has real dimension $6$ (complex dimension $3$); its maximal compact subgroup is $SU(2)$, the rotation group. It is connected and simply connected. These facts belong to the companion articles on the exponential and on biquaternion topology; the relevant consequence is used below.
 
@@ -150,9 +150,9 @@ $$
 {\cosh\frac{\psi_1}{2}\,\cosh\frac{\psi_2}{2}
 +\sinh\frac{\psi_1}{2}\,\sinh\frac{\psi_2}{2}\,\cos\theta}\ }
 $$
-and the rotation axis is the line through $\hat u_1\times\hat u_2$. With the rotation rotor written as $\tilde{R}=\cos(\delta/2)+\sin(\delta/2)\hat n$, the axis for the product $\tilde{\Lambda}_1\tilde{\Lambda}_2$ in the order written is
+and the rotation axis is the line through $\hat u_1\times\hat u_2$. With the rotation rotor written as $\tilde{R}=\cos(\delta/2)+\sin(\delta/2)\hat u_{\mathrm r}$, the axis for the product $\tilde{\Lambda}_1\tilde{\Lambda}_2$ in the order written is
 $$
-\hat n=-\frac{\hat u_1\times\hat u_2}{|\hat u_1\times\hat u_2|};
+\hat u_{\mathrm r}=-\frac{\hat u_1\times\hat u_2}{|\hat u_1\times\hat u_2|};
 $$
 reversing the order of the two boosts reverses the sense of the rotation, while leaving the angle $\delta$ unchanged.
 
@@ -444,8 +444,8 @@ The group that carries the transformations is represented as follows. The group 
 | $\tilde\Lambda\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |
-| $\tilde\Lambda=\cosh\frac\psi2+i\sinh\frac\psi2\hat u$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
-| $\tilde R=\cos\frac\theta2+\sin\frac\theta2\hat n$ | Rotation rotor (unit real quaternion, in $SU(2)$) |
+| $\tilde\Lambda=\cosh\frac\psi2+i\sinh\frac\psi2\hat u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde R=\cos\frac\theta2+\sin\frac\theta2\hat u_{\mathrm r}$ | Rotation rotor (unit real quaternion, in $SU(2)$) |
 | $\psi$ | Rapidity, $\tanh\psi=u/c$ |
 | $\delta$ | Thomas–Wigner rotation angle |
 | $\tilde\Lambda=\tilde B\tilde R$ | Cartan (polar) decomposition: boost times rotation |

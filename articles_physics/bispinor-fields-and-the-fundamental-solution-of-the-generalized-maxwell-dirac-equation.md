@@ -232,10 +232,10 @@ and the prefactor was verified: its norm is $\sqrt2|\vec\xi|$, it is **null**, a
 $$
 \tfrac{1}{2}\bigl(i + \hat\xi\bigr) = i\,\tilde{\Pi}_2(\hat\xi) ,
 \qquad
-\tilde{\Pi}_{1,2}(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr) ,
+\tilde{\Pi}_{1,2}(\hat u) = \tfrac12\bigl(e_0 \pm i\hat u\bigr) ,
 $$
 
-where $\tilde{\Pi}_{1,2}(\hat{\mu})$ is the corpus's rank-one projector, the **pure state** of the informational sector, and $\hat{\mu}$ runs over the unit sphere. The verification is a one-line computation and it was done: $\tilde{\Pi}_2^2 = \tilde{\Pi}_2$; $\tilde{\Pi}_1 + \tilde{\Pi}_2 = e_0$; $\tilde{\Pi}_1\tilde{\Pi}_2 = 0$; and $\tfrac12(i + \hat\xi) = i\tilde{\Pi}_2(\hat\xi)$ to machine precision for thirty random directions. Five statements follow, and the corpus records them as the algebra's contribution to the programme's "harmonic particles".
+where $\tilde{\Pi}_{1,2}(\hat u)$ is the corpus's rank-one projector, the **pure state** of the informational sector, and $\hat u$ runs over the unit sphere. The verification is a one-line computation and it was done: $\tilde{\Pi}_2^2 = \tilde{\Pi}_2$; $\tilde{\Pi}_1 + \tilde{\Pi}_2 = e_0$; $\tilde{\Pi}_1\tilde{\Pi}_2 = 0$; and $\tfrac12(i + \hat\xi) = i\tilde{\Pi}_2(\hat\xi)$ to machine precision for thirty random directions. Five statements follow, and the corpus records them as the algebra's contribution to the programme's "harmonic particles".
 
 1. **The harmonic bispinor lies in a minimal left ideal.** Since $S = i\tilde{\Pi}_2(\hat\xi)\varphi$ and the phase $i\varphi$ is central, $S \in \mathbb{B}\tilde{\Pi}_2(\hat\xi)$: checked as $S\tilde{\Pi}_2 = S$. The programme's bispinors are not generic elements of the algebra; their amplitude direction is fixed by a pure state of the corpus's informational sector.
 2. **The amplitude is in the material sector.** $\tilde{\Pi}_2$ is Hermitian, $\tilde{\Pi}_2^{*} = \tilde{\Pi}_2$, hence in $\mathbb{M}_+$; and $S$ is anti-Hermitian, $S^{*} = -S$, hence in $\mathbb{M}_-$, the material sector — which is the statement $i\mathbb{M}_+ = \mathbb{M}_-$ the conventions article records. So the programme's harmonic bispinor is the material-sector image of a pure state, and the corpus's sector language carries the whole of the source's "particle" vocabulary for these objects.
@@ -306,7 +306,7 @@ The bispinors carry the algebra's own content. The amplitude of a plane-wave bis
 | $\Psi_\rho = (\nabla^\mp + i\rho)\psi_\rho$ | Bispinor of the scalar potential $\psi_\rho$ (monogenic completion) |
 | $\omega = \rho \pm\lvert\vec\xi\rvert$ | Exact linear dispersion of the plane-wave family; unit group velocity |
 | $S^{\pm}_{\vec\xi} = \tfrac12(i+\hat\xi)\varphi^{\pm}_{\vec\xi} = i\tilde{\Pi}_2(\hat\xi)\varphi^{\pm}_{\vec\xi}$ | Harmonic bispinor; null, in the minimal left ideal, in $\mathbb{M}_-$ |
-| $\tilde{\Pi}_{1,2}(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ | The corpus's idempotents: pure states, Hermitian, null |
+| $\tilde{\Pi}_{1,2}(\hat u) = \tfrac12(e_0 \pm i\hat u)$ | The corpus's idempotents: pure states, Hermitian, null |
 | $D_j$, $j=0,\dots,3$ | The source's $4\times4$ matrices: $D_0=I$, $D_j$ the matrix of left multiplication by $ie_j$; $D_j^2=I$ |
 | $\nabla^\pm_\omega = \omega \pm \nabla$, $k = \omega+\rho$ | Stationary (monochromatic) operators and wave number |
 

@@ -15,7 +15,7 @@ $$
 A = A(V,R) = T(V)/(R), \qquad A_n = V^{\otimes n}\big/\sum_{i+j+2=n}V^{\otimes i}\otimes R\otimes V^{\otimes j} .
 $$
 
-A quadratic algebra is graded, $A = \bigoplus_{n\geq0}A_n$, with $A_0 = k$, $A_1 = V$, and generated in degree $1$ with relations in degree $2$. We write $A^!$ for the Koszul dual, $A^{\mathrm{op}}$ for the opposite algebra and $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{op}}$ for the enveloping algebra.
+A quadratic algebra is graded, $A = \bigoplus_{n\geq0}A_n$, with $A_0 = k$, $A_1 = V$, and generated in degree $1$ with relations in degree $2$. We write $A^!$ for the Koszul dual, $A^{\mathrm{opp}}$ for the opposite algebra and $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{opp}}$ for the enveloping algebra.
 
 ## Quadratic Algebras and Their Duals
 
@@ -152,12 +152,12 @@ with $n = \dim V$, and the exactness of this complex — the statement that the 
 **Theorem (BGG–Koszul duality, standard).** Let $A$ be a Koszul algebra with Koszul dual $A^!$. Then there is an equivalence of triangulated categories
 
 $$
-D^{\mathrm{b}}(\operatorname{grmod}A) \;\simeq\; D^{\mathrm{b}}(\operatorname{grmod}A^!)^{\mathrm{op}}
+D^{\mathrm{b}}(\operatorname{grmod}A) \;\simeq\; D^{\mathrm{b}}(\operatorname{grmod}A^!)^{\mathrm{opp}}
 $$
 
 implemented by the functors $\operatorname{RHom}_A(-,k)$ and $\operatorname{RHom}_{A^!}(-,-,k)$; equivalently, the Koszul complex $K(A)$ is a tilting object of the derived category of graded $A$-modules, and its endomorphism algebra is $A^!$. Under the equivalence the free module $A$ corresponds to $k$ (with a degree shift) and the simple module $k$ corresponds to $A^!$.
 
-*Proof (outline).* The Koszul complex $K(A)$ is a compact object of $D^{\mathrm{b}}(\operatorname{grmod}A)$ when $A$ is Koszul, and the natural map $A^! \to \operatorname{End}_{D(A)}(K(A))^{\mathrm{op}}$ is an isomorphism: this is the content of the resolution criterion, read in the derived category. Every finitely generated graded $A$-module has a finite resolution by direct sums of the $A$-modules underlying the terms of $K(A)$, because $K(A)$ generates the derived category as $k$ does; the general tilting theory then states that $\operatorname{RHom}(K(A),-)$ is an equivalence onto the derived category of modules over $\operatorname{End}(K(A))^{\mathrm{op}} = A^!$, with the opposite handedness recorded by the $\mathrm{op}$ in the statement.
+*Proof (outline).* The Koszul complex $K(A)$ is a compact object of $D^{\mathrm{b}}(\operatorname{grmod}A)$ when $A$ is Koszul, and the natural map $A^! \to \operatorname{End}_{D(A)}(K(A))^{\mathrm{opp}}$ is an isomorphism: this is the content of the resolution criterion, read in the derived category. Every finitely generated graded $A$-module has a finite resolution by direct sums of the $A$-modules underlying the terms of $K(A)$, because $K(A)$ generates the derived category as $k$ does; the general tilting theory then states that $\operatorname{RHom}(K(A),-)$ is an equivalence onto the derived category of modules over $\operatorname{End}(K(A))^{\mathrm{opp}} = A^!$, with the opposite handedness recorded by the $\mathrm{op}$ in the statement.
 
 **Corollary.** For a Koszul algebra the algebra $A$ is determined up to isomorphism by $A^!$ and conversely; in particular Koszul duality is an involution on the class of Koszul algebras.
 

@@ -75,7 +75,7 @@ $$
 
 The four elements $E_{11},E_{12},E_{21},E_{22}$ form a $\mathbb{C}$-basis of $\mathbb{B}$ that behaves exactly as the matrix units of $M_2(\mathbb{C})$; the mixed spaces are one-dimensional, and this is the sharp contrast with a Jordan algebra, whose Peirce theory has a single middle space and no corners.
 
-**The enveloping algebra and the modules.** The left and the right multiplications generate the **enveloping operator algebra** $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{op}}$, and *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure* proves $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_\mathbb{C}(\mathbb{B})\cong M_4(\mathbb{C})$: the sandwich action $(\tilde x\otimes\tilde y^{\mathrm{op}})\cdot\tilde z=\tilde x\tilde z\tilde y$ is faithful and exhausts the $\mathbb{C}$-linear operators on the four-dimensional space. It is in this sense that the block has an operator algebra and not merely a collection of operators, and the same identifies its bi-module $\mathbb{B}$ with the regular bi-module $_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$. Because $\mathbb{B}$ is simple and finite-dimensional, every module is semisimple and the finitely generated modules are the finite powers of the simple module, the content of *Modules over the General Plain Algebra of Biquaternions*: the block is Morita-trivial, its module category equivalent to that of $\mathbb{C}$.
+**The enveloping algebra and the modules.** The left and the right multiplications generate the **enveloping operator algebra** $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{opp}}$, and *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure* proves $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_\mathbb{C}(\mathbb{B})\cong M_4(\mathbb{C})$: the sandwich action $(\tilde x\otimes\tilde y^{\mathrm{opp}})\cdot\tilde z=\tilde x\tilde z\tilde y$ is faithful and exhausts the $\mathbb{C}$-linear operators on the four-dimensional space. It is in this sense that the block has an operator algebra and not merely a collection of operators, and the same identifies its bi-module $\mathbb{B}$ with the regular bi-module $_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$. Because $\mathbb{B}$ is simple and finite-dimensional, every module is semisimple and the finitely generated modules are the finite powers of the simple module, the content of *Modules over the General Plain Algebra of Biquaternions*: the block is Morita-trivial, its module category equivalent to that of $\mathbb{C}$.
 
 ## What the Criterion Delivers
 
@@ -131,7 +131,7 @@ Of the twelve structures on $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}
 | $E_{ij}E_{kl}=\delta_{jk}E_{il}$ | the matrix units of the corners |
 | $\mathbb{B}\tilde\Upsilon=\mathrm{ann}(\tilde\Upsilon)$ | the ideal of a square-zero element, equal to its annihilator |
 | $Z(\mathbb{B})=\mathbb{C}e_0$ | the centre |
-| $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{op}}\cong M_4(\mathbb{C})$ | the enveloping operator algebra |
+| $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$ | the enveloping operator algebra |
 
 ## Further Reading
 

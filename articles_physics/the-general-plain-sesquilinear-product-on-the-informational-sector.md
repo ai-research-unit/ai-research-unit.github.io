@@ -221,8 +221,8 @@ square is Hermitian for every element, and applying the involution forces $\tild
 idempotents are therefore exactly the Hermitian projections of the algebra,
 
 $$
-0, \qquad e_0, \qquad \tilde\Pi_1(\hat\mu)=\tfrac12\bigl(e_0+i\hat\mu\bigr),
-\qquad \hat\mu\in\mathbb{R}^{3},\ \lvert\hat\mu\rvert=1,
+0, \qquad e_0, \qquad \tilde\Pi_1(\hat u)=\tfrac12\bigl(e_0+i\hat u\bigr),
+\qquad \hat u\in\mathbb{R}^{3},\ \lvert\hat u\rvert=1,
 $$
 
 and **all of them lie in the informational sector**: the product has no material idempotent, and its
@@ -261,7 +261,7 @@ $\mathbb{M}_+$ are $S^{2}$ in the imaginary directions together with $\pm e_0$.
 
 **Remark (verified).** On the sector the left multiplication by a Hermitian parameter is self-adjoint for
 $H$ and by an anti-Hermitian one skew-adjoint, to machine precision; the only informational elements
-$\tilde A$ with $\tilde A\tilde A^{*}=e_0$ are $\pm e_0$ and the unit imaginary directions $i\hat\mu$.
+$\tilde A$ with $\tilde A\tilde A^{*}=e_0$ are $\pm e_0$ and the unit imaginary directions $i\hat u$.
 
 ## The Two Rows Agree on the State Side
 
@@ -425,10 +425,10 @@ $\mathbb{M}_+$, what is proposed is the naming.
 | $B-N=2\lvert\vec x'\rvert^{2}$ | The probability as the sum of squares against their difference |
 | $\tilde\rho=\frac12(e_0+i\vec r)$, $\lvert\vec r\rvert\le1$ | Unit-trace element; the Bloch ball |
 | $N=\frac14(1-\lvert\vec r\rvert^{2})$, $H=\frac14(1+\lvert\vec r\rvert^{2})$ | The cone as the purity boundary; the purity as the gap |
-| $\tilde\Pi_1(\hat\mu)=\frac12(e_0+i\hat\mu)$ | The idempotents of the product; the pure states; on the cone |
+| $\tilde\Pi_1(\hat u)=\frac12(e_0+i\hat u)$ | The idempotents of the product; the pure states; on the cone |
 | $B e_0$, $\mathrm{Vect}(\tilde P\tilde Q)$ | The symmetric and antisymmetric halves of the value |
 | $(L_{\tilde A})^{\dagger}=L_{\tilde A^{*}}$ | Self-adjoint for $\tilde A\in\mathbb{M}_+$, skew-adjoint for $\tilde A\in\mathbb{M}_-$ |
-| $\{i\hat\mu\}\cup\{\pm e_0\}$ | The isometries of $H$ inside the informational sector |
+| $\{i\hat u\}\cup\{\pm e_0\}$ | The isometries of $H$ inside the informational sector |
 | $(p,q)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
 ## Further Reading

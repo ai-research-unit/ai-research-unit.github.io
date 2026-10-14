@@ -44,12 +44,12 @@ with the intrinsic moment's informational-sector representative $\mu_k\,ie_k\in\
 Two couplings must be compared. The electromagnetic coupling is through the central phase: an element of the algebra of charge $q$ transforms as $\tilde{\Psi}\to e^{i\alpha}\tilde{\Psi}$ under a gauge phase, and the phase lives in the centre of the algebra, shared by both sectors. The rotational coupling is through the rotor: an element transforms by left multiplication by a unit real quaternion,
 
 $$
-\tilde{\Psi} \;\longmapsto\; \tilde{R}(\theta,\hat n)\,\tilde{\Psi},
+\tilde{\Psi} \;\longmapsto\; \tilde{R}(\theta,\hat u)\,\tilde{\Psi},
 \qquad
-\tilde{R}(\theta,\hat n) = \exp\!\left(\frac{\theta}{2}\,\hat{n}_ke_k\right),
+\tilde{R}(\theta,\hat u) = \exp\!\left(\frac{\theta}{2}\,\hat u_ke_k\right),
 $$
 
-and the generator of the rotation is the half-unit $+\tfrac{1}{2}\hat{n}_ke_k$ rather than the unit $\hat{n}_ke_k$. The factor of two between these two generators is the origin of the factor two in $g$, and the rest of the article makes that statement precise.
+and the generator of the rotation is the half-unit $+\tfrac{1}{2}\hat u_ke_k$ rather than the unit $\hat u_ke_k$. The factor of two between these two generators is the origin of the factor two in $g$, and the rest of the article makes that statement precise.
 
 ### The Two Contributions to the Moment
 
@@ -156,7 +156,7 @@ g_k = -\,\frac{1}{2}\,e_k \in \mathbb{H}_{\mathbb{B}},
 [\,g_i, g_j\,] = -\,\epsilon_{ijk}\,g_k .
 $$
 
-A rotation through the angle $\theta$ about $\hat n$ is the exponential $\tilde{R} = \exp(\tfrac{\theta}{2}\hat{n}_ke_k) = \exp(-\theta\,\hat{n}_kg_k)$, in which the coefficient of the rotation generator $\tfrac{1}{2}\hat{n}_ke_k$ is $\theta/2$ while the *rotation angle* is $\theta$. The observable intrinsic angular momentum is obtained from the generator by the same central $i$ that exchanges the sectors,
+A rotation through the angle $\theta$ about $\hat u$ is the exponential $\tilde{R} = \exp(\tfrac{\theta}{2}\hat u_ke_k) = \exp(-\theta\,\hat u_kg_k)$, in which the coefficient of the rotation generator $\tfrac{1}{2}\hat u_ke_k$ is $\theta/2$ while the *rotation angle* is $\theta$. The observable intrinsic angular momentum is obtained from the generator by the same central $i$ that exchanges the sectors,
 
 $$
 \tilde{S}_k = -\,i\hbar\,g_k = \frac{\hbar}{2}\,i e_k \in \mathbb{M}_+ ,
@@ -172,15 +172,15 @@ and its eigenvalues are $\pm\hbar/2$. The half in the angular-momentum generator
 The half in the generator is visible in the rotor as the **double cover**. The rotation rotor
 
 $$
-\tilde{R}(\theta,\hat n) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat{n}_ke_k
+\tilde{R}(\theta,\hat u) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat u_ke_k
 $$
 
 returns to its starting value only after $\theta$ has advanced by $4\pi$:
 
 $$
-\tilde{R}(\theta + 2\pi,\hat n) = -\,\tilde{R}(\theta,\hat n),
+\tilde{R}(\theta + 2\pi,\hat u) = -\,\tilde{R}(\theta,\hat u),
 \qquad
-\tilde{R}(\theta + 4\pi,\hat n) = \tilde{R}(\theta,\hat n).
+\tilde{R}(\theta + 4\pi,\hat u) = \tilde{R}(\theta,\hat u).
 $$
 
 A material vector is rotated by conjugation, $\vec x\mapsto\tilde{R}\vec x\tilde{R}^{*}$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{\Psi}\mapsto\tilde{R}\tilde{\Psi}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
@@ -292,7 +292,7 @@ g_k = -\frac{1}{2}\,e_k,
 [\,g_i,g_j\,] = -\epsilon_{ijk}\,g_k,
 $$
 
-with observable $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}ie_k$, and the rotation rotor $\tilde{R} = \exp(\tfrac{\theta}{2}\hat{n}_ke_k)$ is a double cover, $\tilde{R}(\theta+2\pi) = -\tilde{R}(\theta)$. A material vector transforms with weight one under the rotation and returns after $2\pi$; an intrinsic state transforms with weight one half and returns only after $4\pi$. The electromagnetic coupling is the central $U(1)$ phase and acts with weight one on both. The gyromagnetic ratio is the ratio of the two weights,
+with observable $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}ie_k$, and the rotation rotor $\tilde{R} = \exp(\tfrac{\theta}{2}\hat u_ke_k)$ is a double cover, $\tilde{R}(\theta+2\pi) = -\tilde{R}(\theta)$. A material vector transforms with weight one under the rotation and returns after $2\pi$; an intrinsic state transforms with weight one half and returns only after $4\pi$. The electromagnetic coupling is the central $U(1)$ phase and acts with weight one on both. The gyromagnetic ratio is the ratio of the two weights,
 
 $$
 \frac{\mu}{S} = \frac{q}{2m}\cdot\frac{w_{U(1)}}{w_{\rm rot}},
@@ -318,12 +318,12 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 | $\hat{\mathcal{M}}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
 | $\hat{I}_{ij} = \int\rho_m(r^2\delta_{ij}-r_ir_j)$ | Mass inertia tensor |
 | $\rho_c$, $\rho_m$ | Charge and mass densities |
-| $\tfrac{1}{2}\hat{n}_ke_k$ | Rotation generator; the rotor $\tilde{R}$ is its exponential |
+| $\tfrac{1}{2}\hat u_ke_k$ | Rotation generator; the rotor $\tilde{R}$ is its exponential |
 | $g_k = -\tfrac{1}{2}e_k$ | Intrinsic angular-momentum generator (half-unit) |
 | $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}ie_k$ | Spin observable in $\mathbb{M}_+$ |
 | $[g_i,g_j] = -\epsilon_{ijk}g_k$ | Generator algebra |
 | $[\tilde{S}_i,\tilde{S}_j] = i\hbar\epsilon_{ijk}\tilde{S}_k$ | Spin algebra |
-| $\tilde{R}(\theta,\hat n) = \cos\tfrac{\theta}{2}e_0 + \sin\tfrac{\theta}{2}\hat{n}_ke_k$ | Rotation rotor (unit real quaternion) |
+| $\tilde{R}(\theta,\hat u) = \cos\tfrac{\theta}{2}e_0 + \sin\tfrac{\theta}{2}\hat u_ke_k$ | Rotation rotor (unit real quaternion) |
 | $\tilde{R}(\theta+2\pi) = -\tilde{R}(\theta)$ | Double cover |
 | $w_{U(1)}$, $w_{\rm rot}$ | Central phase weight (one); rotation weight (one or one half) |
 | $\mu/L = (q/2m)\,w_{U(1)}/w_{\rm rot}$ | Ratio of the two weights |

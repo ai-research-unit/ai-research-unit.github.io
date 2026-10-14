@@ -229,7 +229,7 @@ The tensor product has one structural property, the reason for the name of this 
 
 *Proof (sketch).* The centre is computed by the proposition on centres: extending scalars to an algebraic closure, where $A$ and $B$ become matrix algebras, the tensor product becomes a matrix algebra and is central simple. Descent along the finite Galois extension then gives the result in general.
 
-So the tensor product makes the similarity classes of central simple algebras into an abelian group, the **Brauer group** $\mathrm{Br}(F)$, with identity the class of $F$ and inverse the class of the opposite algebra. For a quaternion algebra the opposite algebra is isomorphic to it, by the map that fixes $i$ and negates $j$: it sends the defining relations $i^2 = a$, $j^2 = b$, $ji = -ij$ to $i^2 = a$, $(-j)^2 = b$, $(-j)i = -ji = ij$, so the class of $(a,b)_F$ has order dividing $2$ and $(a,b)_F \otimes_F (a,b)_F \cong (a,b)_F \otimes_F (a,b)_F^{\mathrm{op}} \cong M_4(F)$. Wedderburn's structure theorem, the index and the exponent, and the Clifford invariant that identifies the $2$-torsion of the Brauer group with the quadratic forms, are the subject of *Central Simple Algebras and the Brauer Group*, and are not developed further here.
+So the tensor product makes the similarity classes of central simple algebras into an abelian group, the **Brauer group** $\mathrm{Br}(F)$, with identity the class of $F$ and inverse the class of the opposite algebra. For a quaternion algebra the opposite algebra is isomorphic to it, by the map that fixes $i$ and negates $j$: it sends the defining relations $i^2 = a$, $j^2 = b$, $ji = -ij$ to $i^2 = a$, $(-j)^2 = b$, $(-j)i = -ji = ij$, so the class of $(a,b)_F$ has order dividing $2$ and $(a,b)_F \otimes_F (a,b)_F \cong (a,b)_F \otimes_F (a,b)_F^{\mathrm{opp}} \cong M_4(F)$. Wedderburn's structure theorem, the index and the exponent, and the Clifford invariant that identifies the $2$-torsion of the Brauer group with the quadratic forms, are the subject of *Central Simple Algebras and the Brauer Group*, and are not developed further here.
 
 ## Tensor Powers of an Algebra
 
@@ -284,7 +284,7 @@ The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \math
 | $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ | Biquaternions |
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_\mathbb{R} \mathbb{H}$ | Split biquaternions |
 | $(a,b)_F$ | Quaternion algebra over $F$ |
-| $A^{\mathrm{op}}$ | Opposite algebra |
+| $A^{\mathrm{opp}}$ | Opposite algebra |
 | $\mathrm{Br}(F)$ | Brauer group of $F$ |
 | $A^{\otimes n}$ | $n$-th tensor power of the algebra $A$ |
 | $S_n$ | Symmetric group acting by permutations of factors |

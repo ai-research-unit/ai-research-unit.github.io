@@ -6,9 +6,9 @@ This article describes the left, right and two-sided modules over the quaternion
 
 ## The Regular Bimodule
 
-**Definition.** The **regular left module** ${}_\mathbb{H}\mathbb{H}$ is the group $(\mathbb{H},+)$ with the action of $\mathbb{H}$ by left multiplication; the **regular right module** $\mathbb{H}_\mathbb{H}$ uses right multiplication by the opposite algebra $\mathbb{H}^{\mathrm{op}}$; the **regular bimodule** ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries both actions.
+**Definition.** The **regular left module** ${}_\mathbb{H}\mathbb{H}$ is the group $(\mathbb{H},+)$ with the action of $\mathbb{H}$ by left multiplication; the **regular right module** $\mathbb{H}_\mathbb{H}$ uses right multiplication by the opposite algebra $\mathbb{H}^{\mathrm{opp}}$; the **regular bimodule** ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries both actions.
 
-**Proposition.** The two actions commute, so ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ is a bimodule, equivalently a left module over the enveloping algebra $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}$ under $(\tilde p\otimes\tilde q^{\mathrm{op}})\cdot\tilde r=\tilde p\tilde r\tilde q$.
+**Proposition.** The two actions commute, so ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ is a bimodule, equivalently a left module over the enveloping algebra $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$ under $(\tilde p\otimes\tilde q^{\mathrm{opp}})\cdot\tilde r=\tilde p\tilde r\tilde q$.
 
 *Proof.* Associativity: $\tilde p(\tilde r\tilde q)=(\tilde p\tilde r)\tilde q$. The enveloping-algebra statements are *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, below this article in this category.
 
@@ -46,13 +46,13 @@ This article describes the left, right and two-sided modules over the quaternion
 
 ## The Endomorphism Rings
 
-**Theorem.** $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{H}^{\mathrm{op}}}(\mathbb{H})\cong\mathbb{H}$ as rings, while the bimodule endomorphisms are the scalars, $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$.
+**Theorem.** $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{opp}}$ and $\operatorname{End}_{\mathbb{H}^{\mathrm{opp}}}(\mathbb{H})\cong\mathbb{H}$ as rings, while the bimodule endomorphisms are the scalars, $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$.
 
-*Proof.* An $\mathbb{H}$-linear endomorphism of ${}_\mathbb{H}\mathbb{H}$ is determined by the image of $e_0$, and $F(\tilde r)=F(\tilde r\,e_0)=\tilde r\,F(e_0)$, so $F$ is right multiplication by $F(e_0)$; the assignment $F\mapsto F(e_0)$ is an anti-isomorphism, whence $\mathbb{H}^{\mathrm{op}}$. The right-sided case is the mirror, and an endomorphism that is linear on both sides is multiplication by a central element, that is by a real scalar.
+*Proof.* An $\mathbb{H}$-linear endomorphism of ${}_\mathbb{H}\mathbb{H}$ is determined by the image of $e_0$, and $F(\tilde r)=F(\tilde r\,e_0)=\tilde r\,F(e_0)$, so $F$ is right multiplication by $F(e_0)$; the assignment $F\mapsto F(e_0)$ is an anti-isomorphism, whence $\mathbb{H}^{\mathrm{opp}}$. The right-sided case is the mirror, and an endomorphism that is linear on both sides is multiplication by a central element, that is by a real scalar.
 
-**Corollary.** $\operatorname{End}_\mathbb{H}(\mathbb{H}^n)\cong M_n(\mathbb{H}^{\mathrm{op}})$. The matrix algebra of the regular module acts by left multiplication on $\mathbb{H}^n$.
+**Corollary.** $\operatorname{End}_\mathbb{H}(\mathbb{H}^n)\cong M_n(\mathbb{H}^{\mathrm{opp}})$. The matrix algebra of the regular module acts by left multiplication on $\mathbb{H}^n$.
 
-*Proof.* An endomorphism of $\mathbb{H}^n$ is an $n\times n$ matrix of endomorphisms of $\mathbb{H}$, the diagonal ones being the elements of $\mathbb{H}^{\mathrm{op}}$.
+*Proof.* An endomorphism of $\mathbb{H}^n$ is an $n\times n$ matrix of endomorphisms of $\mathbb{H}$, the diagonal ones being the elements of $\mathbb{H}^{\mathrm{opp}}$.
 
 ## Semisimplicity and Torsion
 
@@ -68,7 +68,7 @@ This article describes the left, right and two-sided modules over the quaternion
 
 ## Summary
 
-The regular bimodule ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries the two commuting actions of $\mathbb{H}$ and $\mathbb{H}^{\mathrm{op}}$ and is the standard bimodule; every left or right $\mathbb{H}$-module is free, by the transfinite construction that discards each generator already in the span of the earlier ones, and the rank of a free module is well defined because $\mathbb{H}^n$ has composition length $n$ with all factors the simple module ${}_\mathbb{H}\mathbb{H}$. The submodules of the regular module are the ideals, hence $0$ and $\mathbb{H}$ alone; the endomorphism rings are $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}$ and $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$. The category is semisimple, the naive torsion vanishes, every module is a direct sum of copies of the unique simple module, and every submodule is a summand.
+The regular bimodule ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries the two commuting actions of $\mathbb{H}$ and $\mathbb{H}^{\mathrm{opp}}$ and is the standard bimodule; every left or right $\mathbb{H}$-module is free, by the transfinite construction that discards each generator already in the span of the earlier ones, and the rank of a free module is well defined because $\mathbb{H}^n$ has composition length $n$ with all factors the simple module ${}_\mathbb{H}\mathbb{H}$. The submodules of the regular module are the ideals, hence $0$ and $\mathbb{H}$ alone; the endomorphism rings are $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{opp}}$ and $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$. The category is semisimple, the naive torsion vanishes, every module is a direct sum of copies of the unique simple module, and every submodule is a summand.
 
 ## Summary of Notation
 
@@ -76,8 +76,8 @@ The regular bimodule ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries the two commut
 |---|---|
 | ${}_\mathbb{H}\mathbb{H}$, $\mathbb{H}_\mathbb{H}$ | Regular left and right modules |
 | ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ | Regular bimodule |
-| $\mathbb{H}^{\mathrm{op}}$ | Opposite algebra |
-| $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{op}}$ | Enveloping algebra |
+| $\mathbb{H}^{\mathrm{opp}}$ | Opposite algebra |
+| $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$ | Enveloping algebra |
 | $T(M)$ | Naive torsion submodule |
 | $E_{ij}$ | Matrix units of $M_2(\mathbb{C})$ |
 

@@ -80,11 +80,11 @@ Bi-module Structure*.
 **Proposition (the one-sided operators span the two-sided ones).** The sixteen operators
 $e_n[\,]e_m=L_{e_n}R_{e_m}$, $n,m=0,\dots,3$, are linearly independent and span $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$,
 of complex dimension sixteen; the two-sided operators are the images of the decomposable tensors of
-$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{op}}$, and a sum of two-sided operators need not be two-sided.
+$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, and a sum of two-sided operators need not be two-sided.
 
 *Proof.* The independence of the sixteen basis operators is the independence of the matrix units in the two-sided
 regular representation; the tensor statement is the isomorphism
-$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{op}}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})$. That a sum of
+$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})$. That a sum of
 decomposable tensors need not be decomposable is the example of *Two-Sided Operators on the General Plain Algebra of
 Biquaternions*, §*Worked Examples*.
 
@@ -284,19 +284,19 @@ because there the twist absorbs a norm and here there is no twist to absorb one.
 ## The Operators Acting on the Spinor Space
 
 The operators of the block act on the state space, and the action is the content of the two other articles of this
-group. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ be the minimal left ideal of *The
+group. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ be the minimal left ideal of *The
 Spinor Space as a Module of the General Plain Algebra*, with $\tilde\Pi_-=e_0-\tilde\Pi_+$ and the complement
-$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\tilde\Upsilon_1\}$ of *The Complementary Space of the Spinor Space in
+$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\hat\Upsilon_1\}$ of *The Complementary Space of the Spinor Space in
 the General Plain Algebra*.
 
-**Proposition (the left actions are the matrices of the module).** On the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ the
+**Proposition (the left actions are the matrices of the module).** On the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ the
 four left multiplications by the basis elements are the matrix units
 
 $$
 L_{\tilde\Pi_+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
 L_{\tilde\Pi_-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
-L_{\tilde\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
-L_{\tilde\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
+L_{\hat\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+L_{\hat\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
 $$
 
 so $L$ restricted to $S$ is the map $\tilde Q\mapsto\mathsf{M}_2(\tilde Q)$ of the algebra onto $M_2(\mathbb{C})$, and
@@ -308,8 +308,8 @@ simple module.
 
 **Proposition (the right actions move the state space to its complement).** A right multiplication commutes with every
 left one, so it is a $\mathbb{B}$-linear map of $S$ into itself or into the complement; right multiplication by the
-nilpotent $\tilde\Upsilon_1$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and is an isomorphism of modules, and right
-multiplication by $\tilde\Upsilon_2$ carries the complement onto $S$. A central element, by contrast, has equal left and
+nilpotent $\hat\Upsilon_1$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and is an isomorphism of modules, and right
+multiplication by $\hat\Upsilon_2$ carries the complement onto $S$. A central element, by contrast, has equal left and
 right actions and can move nothing.
 
 *Proof.* The commutation is the third composition law, which makes every $R_{\tilde B}$ a module map; the two nilpotent
@@ -594,7 +594,7 @@ skew sector, the form-preserving and multiplicative criteria and the partial law
 basis rule $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$ and the reversal $(FG)^{\approx}=G^{\approx}F^{\approx}$.
 - Mathematics article *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*
 (`articles_maths/the-enveloping-operator-algebra-of-the-general-plain-algebra-and-the-bi-module-structure.md`), for
-$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{op}}\cong\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ and the two-sided
+$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ and the two-sided
 operators as the decomposable tensors.
 - Mathematics article *Modules over the General Plain Algebra of Biquaternions*
 (`articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.md`), for the simple module, its

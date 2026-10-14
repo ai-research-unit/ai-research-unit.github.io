@@ -149,7 +149,7 @@ the plain, the quaternionic, the Hermitian and the Krein form; the factor is $\t
 
 ## The Peirce Spaces in the Representation
 
-The four elements $\tilde\Pi_1, \tilde\Upsilon_1, \tilde\Upsilon_2, \tilde\Pi_2$ of *Ideals and Peirce Decomposition of the General Plain Algebra* carry the Peirce decomposition, and their regular matrices are
+The four elements $\tilde\Pi_1, \hat\Upsilon_1, \hat\Upsilon_2, \tilde\Pi_2$ of *Ideals and Peirce Decomposition of the General Plain Algebra* carry the Peirce decomposition, and their regular matrices are
 
 $$
 \mathsf{M}_4(\tilde\Pi_1)=\tfrac12\begin{pmatrix}1&0&0&-i\\0&1&-i&0\\0&i&1&0\\i&0&0&1\end{pmatrix},\qquad
@@ -157,26 +157,26 @@ $$
 $$
 
 $$
-\mathsf{M}_4(\tilde\Upsilon_1)=\tfrac12\begin{pmatrix}0&-i&1&0\\i&0&0&-1\\-1&0&0&-i\\0&1&i&0\end{pmatrix},\qquad
-\mathsf{M}_4(\tilde\Upsilon_2)=\tfrac12\begin{pmatrix}0&-i&-1&0\\i&0&0&1\\1&0&0&-i\\0&-1&i&0\end{pmatrix}.
+\mathsf{M}_4(\hat\Upsilon_1)=\tfrac12\begin{pmatrix}0&-i&1&0\\i&0&0&-1\\-1&0&0&-i\\0&1&i&0\end{pmatrix},\qquad
+\mathsf{M}_4(\hat\Upsilon_2)=\tfrac12\begin{pmatrix}0&-i&-1&0\\i&0&0&1\\1&0&0&-i\\0&-1&i&0\end{pmatrix}.
 $$
 
-The two idempotents are orthogonal projectors, $\mathsf{M}_4(\tilde\Pi_1)\mathsf{M}_4(\tilde\Pi_2)=0$ and $\mathsf{M}_4(\tilde\Pi_1)+\mathsf{M}_4(\tilde\Pi_2)=I_4$, each of trace $2$ and rank $2$; the two nilpotents are square-zero, $\mathsf{M}_4(\tilde\Upsilon_1)^2=\mathsf{M}_4(\tilde\Upsilon_2)^2=0$, with
+The two idempotents are orthogonal projectors, $\mathsf{M}_4(\tilde\Pi_1)\mathsf{M}_4(\tilde\Pi_2)=0$ and $\mathsf{M}_4(\tilde\Pi_1)+\mathsf{M}_4(\tilde\Pi_2)=I_4$, each of trace $2$ and rank $2$; the two nilpotents are square-zero, $\mathsf{M}_4(\hat\Upsilon_1)^2=\mathsf{M}_4(\hat\Upsilon_2)^2=0$, with
 
 $$
-\mathsf{M}_4(\tilde\Upsilon_1)\mathsf{M}_4(\tilde\Upsilon_2)=\mathsf{M}_4(\tilde\Pi_1),\qquad \mathsf{M}_4(\tilde\Upsilon_2)\mathsf{M}_4(\tilde\Upsilon_1)=\mathsf{M}_4(\tilde\Pi_2).
+\mathsf{M}_4(\hat\Upsilon_1)\mathsf{M}_4(\hat\Upsilon_2)=\mathsf{M}_4(\tilde\Pi_1),\qquad \mathsf{M}_4(\hat\Upsilon_2)\mathsf{M}_4(\hat\Upsilon_1)=\mathsf{M}_4(\tilde\Pi_2).
 $$
 
 The four therefore form a system of $2\times2$ matrix units inside $M_4(\mathbb{C})$, of diagonal rank $2$ where the units of $M_2(\mathbb{C})$ have rank $1$, and the Peirce decomposition of the algebra is the decomposition of the four-dimensional image $\mathsf{M}_4(\mathbb{B})$ into the four complex lines
 
 $$
-\mathsf{M}_4(\mathbb{B}) = \mathbb{C}\mathsf{M}_4(\tilde\Pi_1)\oplus\mathbb{C}\mathsf{M}_4(\tilde\Upsilon_1)\oplus\mathbb{C}\mathsf{M}_4(\tilde\Upsilon_2)\oplus\mathbb{C}\mathsf{M}_4(\tilde\Pi_2).
+\mathsf{M}_4(\mathbb{B}) = \mathbb{C}\mathsf{M}_4(\tilde\Pi_1)\oplus\mathbb{C}\mathsf{M}_4(\hat\Upsilon_1)\oplus\mathbb{C}\mathsf{M}_4(\hat\Upsilon_2)\oplus\mathbb{C}\mathsf{M}_4(\tilde\Pi_2).
 $$
 
 An element has the same Peirce coordinates in this model as in the $2\times2$ model, because they are its coordinates in the same four-element basis of the algebra:
 
 $$
-\mathsf{M}_4(\tilde Q)=a_{11}\mathsf{M}_4(\tilde\Pi_1)+a_{12}\mathsf{M}_4(\tilde\Upsilon_1)+a_{21}\mathsf{M}_4(\tilde\Upsilon_2)+a_{22}\mathsf{M}_4(\tilde\Pi_2),
+\mathsf{M}_4(\tilde Q)=a_{11}\mathsf{M}_4(\tilde\Pi_1)+a_{12}\mathsf{M}_4(\hat\Upsilon_1)+a_{21}\mathsf{M}_4(\hat\Upsilon_2)+a_{22}\mathsf{M}_4(\tilde\Pi_2),
 $$
 
 with $a_{11}=Q_0-iQ_3$, $a_{12}=-iQ_1-Q_2$, $a_{21}=-iQ_1+Q_2$, $a_{22}=Q_0+iQ_3$ (*Ideals and Peirce Decomposition of the General Plain Algebra*, §*The Peirce Coordinates*). A corner of the Peirce decomposition is the two-sided compression of the regular matrix by the corresponding projectors,
@@ -185,13 +185,13 @@ $$
 \mathsf{M}_4(\tilde\Pi_i\mathbb{B}\tilde\Pi_j)=\mathsf{M}_4(\tilde\Pi_i)\,\mathsf{M}_4(\mathbb{B})\,\mathsf{M}_4(\tilde\Pi_j),
 $$
 
-and it is the line spanned by the corresponding regular matrix; for instance the $(1,2)$ corner is $\mathsf{M}_4(\tilde\Pi_1\tilde Q\tilde\Pi_2)=a_{12}\mathsf{M}_4(\tilde\Upsilon_1)$.
+and it is the line spanned by the corresponding regular matrix; for instance the $(1,2)$ corner is $\mathsf{M}_4(\tilde\Pi_1\tilde Q\tilde\Pi_2)=a_{12}\mathsf{M}_4(\hat\Upsilon_1)$.
 
 **The two models compared.** In the $2\times2$ model the four Peirce matrices are the four matrix units, a basis of the whole of $M_2(\mathbb{C})$, because the realization is a bijection. In the regular model they are four matrices of $M_4(\mathbb{C})$ spanning only the four-dimensional image $\mathsf{M}_4(\mathbb{B})$, a subspace of the sixteen-dimensional $M_4(\mathbb{C})$; they are the images of the same four elements of the algebra, so the two readings differ in the carrier and not in the coordinates. The two rank-two projectors are the left multiplications by $\tilde\Pi_1$ and $\tilde\Pi_2$, with images the two minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ of the splitting $\mathbb{B}=I_1\oplus I_2$ of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## Summary
 
-The left regular representation turns the plain product of the algebra into the product of the regular matrices, $\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q})$, and carries the two commuting copies $\mathsf{M}_4(\mathbb{B})$ and $\mathsf{M}_4^{R}(\mathbb{B})$ of the algebra, related by the transposition identities $\mathsf{M}_4^{R}(\tilde{Q})=E\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}E$ and $\mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}$. The general plain bilinear form of the group is the plain trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q}))=2\langle\tilde{P},\tilde{Q}\rangle$, with the coefficient Gram matrix $E$, of real signature $(4,4)$, with the isotropic cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$ as null set, and with automorphism group $O_4(\mathbb{C})$ on the coefficients and $O(4,4)$ on the realification. The invariants of the regular matrix are the trace $4Q_0$ and the determinant $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}^2$, the square of the determinant of the element because the regular module is the direct sum of two copies of the simple module. The Peirce spaces are the four complex lines spanned by the regular matrices of $\tilde\Pi_1,\tilde\Upsilon_1,\tilde\Upsilon_2,\tilde\Pi_2$: the two idempotents give orthogonal rank-two projectors and the two nilpotents square-zero matrices, and the four together are a system of $2\times2$ matrix units inside $M_4(\mathbb{C})$ whose coordinates are the Peirce coordinates.
+The left regular representation turns the plain product of the algebra into the product of the regular matrices, $\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q})$, and carries the two commuting copies $\mathsf{M}_4(\mathbb{B})$ and $\mathsf{M}_4^{R}(\mathbb{B})$ of the algebra, related by the transposition identities $\mathsf{M}_4^{R}(\tilde{Q})=E\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}E$ and $\mathsf{M}_4(\tilde{Q}^{\natural})=\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}$. The general plain bilinear form of the group is the plain trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q}))=2\langle\tilde{P},\tilde{Q}\rangle$, with the coefficient Gram matrix $E$, of real signature $(4,4)$, with the isotropic cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$ as null set, and with automorphism group $O_4(\mathbb{C})$ on the coefficients and $O(4,4)$ on the realification. The invariants of the regular matrix are the trace $4Q_0$ and the determinant $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}^2$, the square of the determinant of the element because the regular module is the direct sum of two copies of the simple module. The Peirce spaces are the four complex lines spanned by the regular matrices of $\tilde\Pi_1,\hat\Upsilon_1,\hat\Upsilon_2,\tilde\Pi_2$: the two idempotents give orthogonal rank-two projectors and the two nilpotents square-zero matrices, and the four together are a system of $2\times2$ matrix units inside $M_4(\mathbb{C})$ whose coordinates are the Peirce coordinates.
 
 ## Summary of Notation
 
@@ -203,7 +203,7 @@ The left regular representation turns the plain product of the algebra into the 
 | $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q}))=2\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form as the trace pairing of the regular matrices |
 | $\det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}^2$ | the determinant of the regular matrix |
 | $O_4(\mathbb{C})$, $O(4,4)$ | the automorphism group and its realification |
-| $\mathsf{M}_4(\tilde\Pi_i)$, $\mathsf{M}_4(\tilde\Upsilon_k)$ | the regular matrices of the Peirce basis: orthogonal rank-two projectors and square-zero nilpotents, a system of $2\times2$ matrix units with diagonal rank $2$ |
+| $\mathsf{M}_4(\tilde\Pi_i)$, $\mathsf{M}_4(\hat\Upsilon_k)$ | the regular matrices of the Peirce basis: orthogonal rank-two projectors and square-zero nilpotents, a system of $2\times2$ matrix units with diagonal rank $2$ |
 
 ## Further Reading
 

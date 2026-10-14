@@ -96,7 +96,7 @@ the homotopy classes of morphisms between a cofibrant replacement of $X$ and a f
 
 ### Simplicial Sets
 
-**Definition.** The category $\Delta$ has as objects the finite nonempty ordered sets $[n] = \{0 < 1 < \cdots < n\}$ and as morphisms the order-preserving maps. A **simplicial set** is a functor $\Delta^{\mathrm{op}} \to \mathbf{Set}$; a **simplicial object** in a category $\mathcal{C}$ is a functor $\Delta^{\mathrm{op}}\to\mathcal{C}$. The value on $[n]$ is the set of $n$-simplices, the face maps $\partial_i$ are induced by the injections omitting $i$, and the degeneracies $s_i$ by the surjections repeating $i$.
+**Definition.** The category $\Delta$ has as objects the finite nonempty ordered sets $[n] = \{0 < 1 < \cdots < n\}$ and as morphisms the order-preserving maps. A **simplicial set** is a functor $\Delta^{\mathrm{opp}} \to \mathbf{Set}$; a **simplicial object** in a category $\mathcal{C}$ is a functor $\Delta^{\mathrm{opp}}\to\mathcal{C}$. The value on $[n]$ is the set of $n$-simplices, the face maps $\partial_i$ are induced by the injections omitting $i$, and the degeneracies $s_i$ by the surjections repeating $i$.
 
 **Theorem (geometric realisation).** There is a Quillen adjunction $|\!-\!| \dashv \operatorname{Sing}$ between simplicial sets with the Quillen model structure and topological spaces with the Quillen model structure, where $|\Delta_n|$ is the standard simplex of *Simplicial and Singular Homology* and $\operatorname{Sing}(X)_n = \operatorname{Hom}_{\mathbf{Top}}(\Delta_n, X)$. The derived functors give equivalences of homotopy categories
 

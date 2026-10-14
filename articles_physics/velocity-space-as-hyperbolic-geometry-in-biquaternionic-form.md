@@ -143,7 +143,7 @@ which is Einstein's addition law, and the statement that the additive variable i
 
 ### The composition law and the spherical representation
 
-For two boosts along different directions the composition is not a single boost, and the composed *frame* has a rapidity fixed by the same trigonometry. Let the first boost have rapidity $a$ along $\hat n_1$ and the second rapidity $b$ along $\hat n_2$, with $\theta$ the angle between the two directions. Then the rapidity $\rho$ of the frame reached satisfies
+For two boosts along different directions the composition is not a single boost, and the composed *frame* has a rapidity fixed by the same trigonometry. Let the first boost have rapidity $a$ along $\hat u_1$ and the second rapidity $b$ along $\hat u_2$, with $\theta$ the angle between the two directions. Then the rapidity $\rho$ of the frame reached satisfies
 $$
 \cosh\rho = \cosh a\cosh b+\cos\theta\,\sinh a\,\sinh b ,
 $$
@@ -159,7 +159,7 @@ Two limits fix the rule. For $\theta = 0$ the composition law reduces to $\cosh(
 
 A boost is a point of velocity space, and a path of boosts is a path in it; the statement that a closed path of boosts need not be a closed path of frames is the statement that the connection has curvature, and the Wigner rotation is its holonomy. The holonomy has a closed geometric value.
 
-**Proposition.** Let $\tilde{\Lambda}_1$ have rapidity $a$ along $\hat n_1$ and $\tilde{\Lambda}_2$ rapidity $b$ along $\hat n_2$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\alpha$ be the angle of the Wigner rotation of the product $\tilde{\Lambda}_2\tilde{\Lambda}_1$. Then, in rapidity units,
+**Proposition.** Let $\tilde{\Lambda}_1$ have rapidity $a$ along $\hat u_1$ and $\tilde{\Lambda}_2$ rapidity $b$ along $\hat u_2$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\alpha$ be the angle of the Wigner rotation of the product $\tilde{\Lambda}_2\tilde{\Lambda}_1$. Then, in rapidity units,
 $$
 \alpha = \pi-(A+B+C) ,
 $$

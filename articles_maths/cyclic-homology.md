@@ -21,7 +21,7 @@ $$
 \tau_n\delta_i=\delta_{i-1}\tau_{n-1}\ (1\le i\le n), \qquad \tau_n\delta_0=\delta_n, \qquad \tau_n\sigma_i=\sigma_{i-1}\tau_{n+1}\ (1\le i\le n), \qquad \tau_n\sigma_0=\sigma_n\tau_{n+1}^2, \qquad \tau_n^{n+1}=\operatorname{id}.
 $$
 
-A **cyclic module** is a contravariant functor from $\Lambda$ to the category of $k$-modules; a **cyclic object** in a category $\mathcal{C}$ is a covariant functor from $\Lambda^{\mathrm{op}}$ to $\mathcal{C}$. A cyclic module is thus a simplicial module, from the coface and codegeneracy data, together with the extra **cyclic operators** $t_n$ coming from $\tau_n$, and a simplicial module is cyclic exactly when it carries operators $t_n$ of order dividing $n+1$ satisfying the compatibility relations.
+A **cyclic module** is a contravariant functor from $\Lambda$ to the category of $k$-modules; a **cyclic object** in a category $\mathcal{C}$ is a covariant functor from $\Lambda^{\mathrm{opp}}$ to $\mathcal{C}$. A cyclic module is thus a simplicial module, from the coface and codegeneracy data, together with the extra **cyclic operators** $t_n$ coming from $\tau_n$, and a simplicial module is cyclic exactly when it carries operators $t_n$ of order dividing $n+1$ satisfying the compatibility relations.
 
 **Proposition (cyclic nerve).** For a $k$-algebra $A$ the assignment $[n]\mapsto A^{\otimes(n+1)}$ extends to a cyclic module, with the simplicial structure
 

@@ -29,11 +29,11 @@ The two languages of this article — modules and representations — are theref
 
 ### The regular representation
 
-The **left regular representation** of $A$ is the action on $A$ by left multiplication, $\rho_{\mathrm{reg}}(a)b=ab$. It has dimension $\dim_F A$ when $A$ is finite-dimensional, and it is faithful, because $\rho_{\mathrm{reg}}(a)=\rho_{\mathrm{reg}}(a')$ implies $a=a'$ on evaluating at $1_A$. It is the representation on the regular module ${}_A A$, and its endomorphism ring is $A^{\mathrm{op}}$ by the theorem on the regular module of *Modules over an Algebra*. Every representation is a quotient of a direct sum of copies of the regular representation, since every module is a quotient of a free module.
+The **left regular representation** of $A$ is the action on $A$ by left multiplication, $\rho_{\mathrm{reg}}(a)b=ab$. It has dimension $\dim_F A$ when $A$ is finite-dimensional, and it is faithful, because $\rho_{\mathrm{reg}}(a)=\rho_{\mathrm{reg}}(a')$ implies $a=a'$ on evaluating at $1_A$. It is the representation on the regular module ${}_A A$, and its endomorphism ring is $A^{\mathrm{opp}}$ by the theorem on the regular module of *Modules over an Algebra*. Every representation is a quotient of a direct sum of copies of the regular representation, since every module is a quotient of a free module.
 
 ### Basic operations
 
-The **direct sum** of representations $\rho$ on $V$ and $\sigma$ on $W$ is the block-diagonal action on $V\oplus W$, the **dual** (or contragredient) is the action on $V^*=\operatorname{Hom}_F(V,F)$ given by $(\rho^*(a)f)(v)=f(\rho(a)v)$, which makes $V^*$ a right $A$-module, equivalently a left $A^{\mathrm{op}}$-module, and a left $A$-module only when $A$ is commutative or when an anti-automorphism is available to convert the two sides, as the antipode $g\mapsto g^{-1}$ does for a group algebra; and the **tensor product** $\rho\otimes\sigma$ on $V\otimes_F W$ is defined only when $A$ carries a comultiplication; it is defined for group algebras by $\Delta(g)=g\otimes g$ of *Representations of Groups*, but not for a general algebra. This asymmetry between the group-algebra case and the general case is a genuine feature of the subject and not a convention.
+The **direct sum** of representations $\rho$ on $V$ and $\sigma$ on $W$ is the block-diagonal action on $V\oplus W$, the **dual** (or contragredient) is the action on $V^*=\operatorname{Hom}_F(V,F)$ given by $(\rho^*(a)f)(v)=f(\rho(a)v)$, which makes $V^*$ a right $A$-module, equivalently a left $A^{\mathrm{opp}}$-module, and a left $A$-module only when $A$ is commutative or when an anti-automorphism is available to convert the two sides, as the antipode $g\mapsto g^{-1}$ does for a group algebra; and the **tensor product** $\rho\otimes\sigma$ on $V\otimes_F W$ is defined only when $A$ carries a comultiplication; it is defined for group algebras by $\Delta(g)=g\otimes g$ of *Representations of Groups*, but not for a general algebra. This asymmetry between the group-algebra case and the general case is a genuine feature of the subject and not a convention.
 
 ## Irreducible Representations and Schur's Lemma
 
@@ -75,12 +75,12 @@ $$
 is an isomorphism of $F$-algebras. In particular, if $V$ is a finite-dimensional irreducible module with $D=\operatorname{End}_A(V)$ and $n=\dim_D V$, then
 
 $$
-A/\operatorname{Ann}_A(V) \cong \operatorname{End}_D(V) \cong M_n(D^{\mathrm{op}}).
+A/\operatorname{Ann}_A(V) \cong \operatorname{End}_D(V) \cong M_n(D^{\mathrm{opp}}).
 $$
 
-*Proof.* The density theorem gives that the image of $A$ in $\operatorname{End}_D(V)$ is dense for the finite topology; when $V$ is finite-dimensional over $D$ that topology is discrete, so the image is everything. The kernel of the map is precisely $\operatorname{Ann}_A(V)$, giving the first isomorphism; the second is the choice of a $D$-basis, and $\operatorname{End}_D(V)\cong M_n(D^{\mathrm{op}})$ for $n=\dim_D V$, the $D$-linear endomorphisms of $D^n$ being the right multiplications by matrices over $D$, as in *Automorphisms of Modules over an Algebra*.
+*Proof.* The density theorem gives that the image of $A$ in $\operatorname{End}_D(V)$ is dense for the finite topology; when $V$ is finite-dimensional over $D$ that topology is discrete, so the image is everything. The kernel of the map is precisely $\operatorname{Ann}_A(V)$, giving the first isomorphism; the second is the choice of a $D$-basis, and $\operatorname{End}_D(V)\cong M_n(D^{\mathrm{opp}})$ for $n=\dim_D V$, the $D$-linear endomorphisms of $D^n$ being the right multiplications by matrices over $D$, as in *Automorphisms of Modules over an Algebra*.
 
-The opposite in the last display is the left-module convention rather than an accident: the defining module of $M_n(D_0)$ has endomorphism ring $D_0^{\mathrm{op}}$. For the division algebras occurring here, $F$ when $F$ is algebraically closed, and $\mathbb{C}$ and $\mathbb{H}$ over $\mathbb{R}$, the opposite is isomorphic to the algebra itself, so in every example the two forms agree.
+The opposite in the last display is the left-module convention rather than an accident: the defining module of $M_n(D_0)$ has endomorphism ring $D_0^{\mathrm{opp}}$. For the division algebras occurring here, $F$ when $F$ is algebraically closed, and $\mathbb{C}$ and $\mathbb{H}$ over $\mathbb{R}$, the opposite is isomorphic to the algebra itself, so in every example the two forms agree.
 
 So an irreducible finite-dimensional representation of $A$ is not merely a quotient of $A$; it exhibits $A/\operatorname{Ann}_A(V)$ as a full matrix algebra over a division algebra. The density theorem is what converts information about the commutant into information about the algebra, and it is the engine of the Wedderburn–Artin theorem in the form used below.
 
@@ -102,7 +102,7 @@ A representation is **completely reducible** if it is a direct sum of irreducibl
 
 ### Finite-dimensional algebras
 
-Let $A$ be finite-dimensional over $F$. Then $A/J(A)$ is semisimple and every simple module is a simple $A/J(A)$-module. Writing $S_1,\dots,S_r$ for the simple modules up to isomorphism and $D_i=\operatorname{End}_A(S_i)^{\mathrm{op}}$, one has
+Let $A$ be finite-dimensional over $F$. Then $A/J(A)$ is semisimple and every simple module is a simple $A/J(A)$-module. Writing $S_1,\dots,S_r$ for the simple modules up to isomorphism and $D_i=\operatorname{End}_A(S_i)^{\mathrm{opp}}$, one has
 
 $$
 A/J(A) \cong \prod_{i=1}^{r} M_{n_i}(D_i), \qquad n_i=\dim_{D_i} S_i,
@@ -158,7 +158,7 @@ $$
 $$
 
     decomposes into indecomposable two-sided summands, the **blocks**. The irreducible representations of $F[G]$ are the irreducible representations of $F[G]/J(F[G])$, and the blocks are compared up to Morita equivalence as in *Morita Equivalence*.
-- **The regular representation.** The left regular representation of $G$ is the module ${}_{F[G]}F[G]$; in the semisimple case it decomposes as $\bigoplus_i S_i^{\oplus n_i}$, and its endomorphism algebra is $F[G]^{\mathrm{op}}\cong F[G]$.
+- **The regular representation.** The left regular representation of $G$ is the module ${}_{F[G]}F[G]$; in the semisimple case it decomposes as $\bigoplus_i S_i^{\oplus n_i}$, and its endomorphism algebra is $F[G]^{\mathrm{opp}}\cong F[G]$.
 - **Abelian groups.** If $G$ is abelian and $F$ is algebraically closed of characteristic not dividing $|G|$, then $F[G]\cong F^{|G|}$ is commutative semisimple, and every irreducible representation is one-dimensional.
 
 The structure theorem therefore reduces the representation theory of a finite group to the module theory of a product of matrix algebras over division algebras, and the division algebras are the only place where the base field enters beyond its characteristic.
@@ -227,7 +227,7 @@ The simplest illustrations are the quivers with two vertices and $n$ arrows from
 
 ## Summary
 
-A representation of a unital $F$-algebra $A$ is a unital homomorphism $A\to\operatorname{End}_F(V)$, equivalently a left $A$-module, and the two notions form equivalent categories whose morphisms are the intertwining operators. The irreducible representations are the simple modules, that is the quotients $A/\mathrm{M}$ by maximal left ideals; Schur's lemma makes the endomorphism algebra of an irreducible representation a division algebra, which is $F$ when $F$ is algebraically closed and the representation is finite-dimensional. The density theorem gives the double centralizer theorem: an irreducible finite-dimensional representation with commutant $D$ and dimension $n$ over $D$ exhibits $A/\operatorname{Ann}_A(V)$ as $M_n(D^{\mathrm{op}})$. An algebra is semisimple exactly when every representation is completely reducible, and then $A\cong\prod_i M_{n_i}(D_i)$ by Wedderburn–Artin; for a finite-dimensional algebra $A/J(A)\cong\prod_i M_{n_i}(D_i)$, with $\sum_i n_i^2\leq\dim_F A$ over an algebraically closed field and equality exactly in the semisimple case. The modules over $M_n(F)$ are the direct sums of copies of the defining representation $F^n$, the unique irreducible one, and $M_n(F)\cong S^{\oplus n}$; endomorphism and automorphism groups are those of the type $\operatorname{End}_{M_n(F)}(S)=F$, $\operatorname{Aut}_{M_n(F)}(M_n(F))=GL_n(F)$.
+A representation of a unital $F$-algebra $A$ is a unital homomorphism $A\to\operatorname{End}_F(V)$, equivalently a left $A$-module, and the two notions form equivalent categories whose morphisms are the intertwining operators. The irreducible representations are the simple modules, that is the quotients $A/\mathrm{M}$ by maximal left ideals; Schur's lemma makes the endomorphism algebra of an irreducible representation a division algebra, which is $F$ when $F$ is algebraically closed and the representation is finite-dimensional. The density theorem gives the double centralizer theorem: an irreducible finite-dimensional representation with commutant $D$ and dimension $n$ over $D$ exhibits $A/\operatorname{Ann}_A(V)$ as $M_n(D^{\mathrm{opp}})$. An algebra is semisimple exactly when every representation is completely reducible, and then $A\cong\prod_i M_{n_i}(D_i)$ by Wedderburn–Artin; for a finite-dimensional algebra $A/J(A)\cong\prod_i M_{n_i}(D_i)$, with $\sum_i n_i^2\leq\dim_F A$ over an algebraically closed field and equality exactly in the semisimple case. The modules over $M_n(F)$ are the direct sums of copies of the defining representation $F^n$, the unique irreducible one, and $M_n(F)\cong S^{\oplus n}$; endomorphism and automorphism groups are those of the type $\operatorname{End}_{M_n(F)}(S)=F$, $\operatorname{Aut}_{M_n(F)}(M_n(F))=GL_n(F)$.
 
 The structure of group algebras is the principal specialisation: over a field whose characteristic does not divide $|G|$ the group algebra is a product of matrix algebras over division algebras, with $|G|=\sum n_i^2\dim_F D_i$; over an algebraically closed field this is $\sum n_i^2=|G|$ and the number of irreducible representations is the number of conjugacy classes; in the modular case the group algebra splits into blocks. Idempotents produce the projective representations, the primitive idempotents produce the irreducible representations in the semisimple case, and the Cartan matrix records the multiplicities in the modular case. The examples — division algebras, matrix algebras, polynomial algebras with their normal forms, local algebras, group algebras, and the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ with its unique irreducible representation $S=\mathbb{C}^2$ — exhaust the range of the theory.
 
@@ -247,7 +247,7 @@ The structure of group algebras is the principal specialisation: over a field wh
 | $A/\mathrm{M}$ | irreducible representation from a maximal left ideal |
 | $J(A)$ | Jacobson radical |
 | $D=\operatorname{End}_A(S)$ | division algebra of an irreducible representation |
-| $A/\operatorname{Ann}_A(V)\cong M_n(D^{\mathrm{op}})$ | double centralizer form |
+| $A/\operatorname{Ann}_A(V)\cong M_n(D^{\mathrm{opp}})$ | double centralizer form |
 | $A\cong\prod_i M_{n_i}(D_i)$ | Wedderburn–Artin decomposition |
 | $n_i=\dim_{D_i}S_i$ | degrees, with $\sum_i n_i^2\leq\dim_F A$ |
 | $M_n(F)$, $S=F^n$ | matrix algebra and its defining representation |

@@ -239,7 +239,7 @@ a sum fixed by the complex conjugation.
 **Proposition.** An element is idempotent for the sesquilinear multiplication, $\tilde Q \star \tilde Q = \tilde Q$, if and only if it is a Hermitian idempotent of the algebra; hence the idempotents of the multiplication are $0$, $e_0$, and the **pure states**
 
 $$
-\tilde\Pi_+(\tilde\Xi) = \tfrac12\bigl(e_0 + \tilde\Xi\bigr) , \qquad \hat n \in \mathbb{R}^{3}, \ |\hat n| = 1 ,
+\tilde\Pi_+(\tilde\Xi) = \tfrac12\bigl(e_0 + \tilde\Xi\bigr) , \qquad \hat u \in \mathbb{R}^{3}, \ |\hat u| = 1 ,
 $$
 
 indexed by the real unit vectors (*Conventions in Mathematics*, *Idempotents of the General Plain Algebra*).
@@ -353,7 +353,7 @@ Among the four general products of *The Four General Products of the Biquaternio
 | $\{\tilde P,\tilde Q,\tilde R\} = \tilde P\tilde Q^{*}\tilde R$ | the ternary product, the $J^{*}$-structure |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and the anti-Hermitian halves, $H(\mathbb{B})$ and $S(\mathbb{B})$ |
 | $C(\mathbb{B})$ | the algebraic positive cone, the sums of the squares $\tilde Q \star \tilde Q$ |
-| $\tilde\Pi_+(\tilde\Xi) = \tfrac12(e_0+\tilde\Xi)$ | the idempotents of the multiplication, $\hat n$ a real unit vector |
+| $\tilde\Pi_+(\tilde\Xi) = \tfrac12(e_0+\tilde\Xi)$ | the idempotents of the multiplication, $\hat u$ a real unit vector |
 
 ## Further Reading
 

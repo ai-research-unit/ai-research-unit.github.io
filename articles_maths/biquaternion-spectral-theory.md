@@ -156,7 +156,7 @@ Finally, the resolvent satisfies $R(\lambda) - R(\mu) = (\lambda-\mu)R(\lambda)R
 
 ## The Exponential and the Logarithm
 
-The exponential $\exp(\tilde{Q}) = \sum_n \tilde{Q}^n/n!$ is entire and is the value of $e^A$ at the spectrum, in the holomorphic functional calculus on $\mathbb{C}[\tilde{Q}] = \mathrm{span}_\mathbb{C}\{e_0,\tilde{Q}\}$. The companion article gives $\exp(\tilde{Q}) = e^{Q_0}(\cos B\,e_0 + \sin B\,\hat{n})$ for $B \neq 0$ with $\hat{n} = \vec Q/B$, and $\exp(\tilde{Q}) = e^{Q_0}(e_0 + \vec Q)$ for $B = 0$; the eigenvalues are $e^{Q_0 \pm iB}$ in the first case and the repeated $e^{Q_0}$ in the second.
+The exponential $\exp(\tilde{Q}) = \sum_n \tilde{Q}^n/n!$ is entire and is the value of $e^A$ at the spectrum, in the holomorphic functional calculus on $\mathbb{C}[\tilde{Q}] = \mathrm{span}_\mathbb{C}\{e_0,\tilde{Q}\}$. The companion article gives $\exp(\tilde{Q}) = e^{Q_0}(\cos B\,e_0 + \sin B\,\hat u)$ for $B \neq 0$ with $\hat u = \vec Q/B$, and $\exp(\tilde{Q}) = e^{Q_0}(e_0 + \vec Q)$ for $B = 0$; the eigenvalues are $e^{Q_0 \pm iB}$ in the first case and the repeated $e^{Q_0}$ in the second.
 
 **Non-injectivity.** Since $2\pi i n e_0$ is central, $\exp(\tilde{Q} + 2\pi i n e_0) = \exp(\tilde{Q})$ for every integer $n$; in particular $\exp(0) = \exp(2\pi i e_0) = e_0$, although $2\pi i e_0 \neq 0$.
 

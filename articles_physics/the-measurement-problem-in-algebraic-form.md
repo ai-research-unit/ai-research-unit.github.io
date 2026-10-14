@@ -43,7 +43,7 @@ $$
 and that a pure state is an idempotent
 
 $$
-\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac{1}{2}\left(e_0 \pm i\,\hat{\mu}\right), \qquad \hat{\mu} \text{ a unit pure real quaternion},
+\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}\left(e_0 \pm i\,\hat u\right), \qquad \hat u \text{ a unit pure real quaternion},
 $$
 
 with $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, $\mathrm{Tr}(\tilde\Pi_{1,2}) = 1$, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, and $\tilde\Pi_1\tilde\Pi_2 = 0$. The Born rule is the trace formula
@@ -113,19 +113,19 @@ This is a statement about elements, and it does not by itself say that no *proce
 
 ## What Decoherence Supplies
 
-The companion article *Decoherence as Idempotent Projection* constructs the dephasing channel along a pointer axis $\hat n$ at strength $p \in [0,1]$,
+The companion article *Decoherence as Idempotent Projection* constructs the dephasing channel along a pointer axis $\hat u$ at strength $p \in [0,1]$,
 
 $$
-\Phi^{\mathrm{deph}}_p(\tilde{\rho}) = (1-p)\,\tilde{\rho} + p\left(\tilde\Pi_1(\hat n)\,\tilde{\rho}\,\tilde\Pi_1(\hat n) + \tilde\Pi_2(\hat n)\,\tilde{\rho}\,\tilde\Pi_2(\hat n)\right),
+\Phi^{\mathrm{deph}}_p(\tilde{\rho}) = (1-p)\,\tilde{\rho} + p\left(\tilde\Pi_1(\hat u)\,\tilde{\rho}\,\tilde\Pi_1(\hat u) + \tilde\Pi_2(\hat u)\,\tilde{\rho}\,\tilde\Pi_2(\hat u)\right),
 $$
 
-with Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_0$ and $\tilde{K}_{1,2} = \sqrt{p}\,\tilde\Pi_{1,2}(\hat n)$, acting on the Bloch vector by
+with Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_0$ and $\tilde{K}_{1,2} = \sqrt{p}\,\tilde\Pi_{1,2}(\hat u)$, acting on the Bloch vector by
 
 $$
-\vec r \;\longmapsto\; (1-p)\,\vec r + p\,(\hat n\cdot\vec r)\,\hat n .
+\vec r \;\longmapsto\; (1-p)\,\vec r + p\,(\hat u\cdot\vec r)\,\hat u .
 $$
 
-Two properties of its fully dephased limit ($p = 1$) matter here. In the measurement setting the pointer axis is the eigendirection of the measured observable, $\hat n = \hat h$, so that the pointer idempotents $\tilde\Pi_{1,2}(\hat n)$ coincide with the spectral idempotents $\tilde\Pi_{1,2}$ of $\tilde{H}$ and $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho})$ are the Born probabilities.
+Two properties of its fully dephased limit ($p = 1$) matter here. In the measurement setting the pointer axis is the eigendirection of the measured observable, $\hat u = \hat h$, so that the pointer idempotents $\tilde\Pi_{1,2}(\hat u)$ coincide with the spectral idempotents $\tilde\Pi_{1,2}$ of $\tilde{H}$ and $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho})$ are the Born probabilities.
 
 **First, the fully dephased element is unique given the statistics and the absence of coherence.** At $p = 1$ the channel is
 
@@ -150,9 +150,9 @@ $$
 since $\Lambda_\pm(\tilde{\rho}) = \tilde\Pi_{1,2}$ and $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho})$. The fully dephased element is exactly the convex average of the two possible outcomes with their Born weights. Two differences between $\Lambda_\pm$ and $\Phi^{\mathrm{deph}}_1$ are decisive for the problem:
 
 - **The selection channels do not preserve the Born statistics.** $\Lambda_+$ sends every state to $\tilde\Pi_1$, so it assigns probability $1$ to the outcome $+$ regardless of $\tilde{\rho}$, whereas the Born probability is $p_+$. A selection channel is a legitimate operation, but it is not a statistics-preserving description of the ensemble.
-- **The dephasing channel is a conditional expectation; the selection channels are not.** $\Phi^{\mathrm{deph}}_1$ is the trace-preserving conditional expectation onto the commutative pointer subalgebra $A = \mathbb{C}\tilde\Pi_1(\hat n) \oplus \mathbb{C}\tilde\Pi_2(\hat n)$, hence an orthogonal projection with respect to the trace pairing. The reset channels $\Lambda_\pm$ are idempotent but fail the module property $\Lambda(\tilde{A}\tilde{Q}\tilde{B}) = \tilde{A}\,\Lambda(\tilde{Q})\,\tilde{B}$ for $\tilde{A}, \tilde{B} \in A$; for example $\Lambda_+(\tilde{\rho}\,\tilde\Pi_2) = p_-\,\tilde\Pi_1$ while $\Lambda_+(\tilde{\rho})\,\tilde\Pi_2 = 0$. So "idempotent channel" does not by itself identify the statistics-preserving operation, and the two operations that the problem contrasts — the average and the selection — are both present in the algebra as channels, with different properties.
+- **The dephasing channel is a conditional expectation; the selection channels are not.** $\Phi^{\mathrm{deph}}_1$ is the trace-preserving conditional expectation onto the commutative pointer subalgebra $A = \mathbb{C}\tilde\Pi_1(\hat u) \oplus \mathbb{C}\tilde\Pi_2(\hat u)$, hence an orthogonal projection with respect to the trace pairing. The reset channels $\Lambda_\pm$ are idempotent but fail the module property $\Lambda(\tilde{A}\tilde{Q}\tilde{B}) = \tilde{A}\,\Lambda(\tilde{Q})\,\tilde{B}$ for $\tilde{A}, \tilde{B} \in A$; for example $\Lambda_+(\tilde{\rho}\,\tilde\Pi_2) = p_-\,\tilde\Pi_1$ while $\Lambda_+(\tilde{\rho})\,\tilde\Pi_2 = 0$. So "idempotent channel" does not by itself identify the statistics-preserving operation, and the two operations that the problem contrasts — the average and the selection — are both present in the algebra as channels, with different properties.
 
-Geometrically the situation is exact and easy to see. Under $\Phi^{\mathrm{deph}}_p$ the Bloch vector moves along a straight line toward the pointer axis; at $p = 1$ it lands on the pointer diameter at the interior point $(\hat n\cdot\vec r)\,\hat n$. The two outcomes are the endpoints $\pm\hat n$ of that diameter. So the passage from "the measurement has interacted with the environment" to "the measurement has an outcome" is the passage from the segment to an endpoint — a passage that the statistics-preserving channel does not make, and that the algebra does not otherwise perform. That is the sharpened algebraic statement of the "and/or" strand of the measurement problem.
+Geometrically the situation is exact and easy to see. Under $\Phi^{\mathrm{deph}}_p$ the Bloch vector moves along a straight line toward the pointer axis; at $p = 1$ it lands on the pointer diameter at the interior point $(\hat u\cdot\vec r)\,\hat u$. The two outcomes are the endpoints $\pm\hat u$ of that diameter. So the passage from "the measurement has interacted with the environment" to "the measurement has an outcome" is the passage from the segment to an endpoint — a passage that the statistics-preserving channel does not make, and that the algebra does not otherwise perform. That is the sharpened algebraic statement of the "and/or" strand of the measurement problem.
 
 ## The Selection Step
 
@@ -166,7 +166,7 @@ and its two summands are the two unnormalized branches, with traces $p_\pm$. The
 
 Three observations keep this honest.
 
-**The statistics are a function of the state; the outcome is not.** The element $\tilde{\rho}$ determines the pair $(p_+, p_-)$ — a point of the probability simplex — but not the realised index $\pm$. No element of $\mathbb{M}_+$ at the single-qubit level carries that index: the two outcomes are the endpoints $\pm\hat n$ of the pointer diameter, they exist as elements of the state space, and $\tilde{\rho}$ carries no label saying which of them occurred. This is the algebraic interpretation of the standard observation that a mixture (proper or improper) does not single out an outcome.
+**The statistics are a function of the state; the outcome is not.** The element $\tilde{\rho}$ determines the pair $(p_+, p_-)$ — a point of the probability simplex — but not the realised index $\pm$. No element of $\mathbb{M}_+$ at the single-qubit level carries that index: the two outcomes are the endpoints $\pm\hat u$ of the pointer diameter, they exist as elements of the state space, and $\tilde{\rho}$ carries no label saying which of them occurred. This is the algebraic interpretation of the standard observation that a mixture (proper or improper) does not single out an outcome.
 
 **Enlarging the algebra does not remove the demand; it relocates it.** The index can be carried by a record — an apparatus, or an environment — and in the framework a record is another element of the algebra, which means passing to a tensor product $\mathbb{B}\otimes\mathbb{B}$ (equivalently, a state in $\mathbb{M}_+^{(A)}\otimes\mathbb{M}_+^{(B)}$). The joint state can be taken pure, and its reduced states can be the mixtures $\tilde{\rho}_d$. But the same structure then reappears one level up: the joint object contains the correlations and no rule selecting a definite record value. This is the von Neumann chain in algebraic form. The framework has no algebraic fixed point that terminates it, because the operation that would terminate it — selection — is exactly what is missing.
 
@@ -174,7 +174,7 @@ Three observations keep this honest.
 
 ## The Preferred Basis and the Cut
 
-The preferred-basis strand appears in the framework in a precise and limited form. The pointer direction $\hat n$ is an input to the dephasing channel and to the observable whose idempotents figure in the measurement. The algebra supplies, once $\hat n$ is given, the pointer idempotents, the commutative pointer subalgebra $A$, its $U(1)$ phase symmetry, the fixed states, and the decaying coherences. It does not supply $\hat n$: *Decoherence as Idempotent Projection* states this limitation explicitly, and its reason is structural. The direction is fixed by the system–environment interaction, and the algebra of the operational description represents the consequence of that interaction (the channel and the subalgebra) without containing the interaction dynamics. So the preferred-basis problem is neither sharpened into a solution nor worsened: it is located, unchanged, at the point where the direction enters as data.
+The preferred-basis strand appears in the framework in a precise and limited form. The pointer direction $\hat u$ is an input to the dephasing channel and to the observable whose idempotents figure in the measurement. The algebra supplies, once $\hat u$ is given, the pointer idempotents, the commutative pointer subalgebra $A$, its $U(1)$ phase symmetry, the fixed states, and the decaying coherences. It does not supply $\hat u$: *Decoherence as Idempotent Projection* states this limitation explicitly, and its reason is structural. The direction is fixed by the system–environment interaction, and the algebra of the operational description represents the consequence of that interaction (the channel and the subalgebra) without containing the interaction dynamics. So the preferred-basis problem is neither sharpened into a solution nor worsened: it is located, unchanged, at the point where the direction enters as data.
 
 The cut strand behaves similarly. In the standard formulation the cut is a boundary between a quantum description and a classical description. In the framework the corresponding choice is the choice of acting element at each step — unitary or idempotent. That is a reformulation of the same freedom, not a derivation of it. The framework contains no condition that says when an interaction counts as a measurement; a physical measurement interaction of a system with an apparatus is, microscopically, a unitary interaction of the larger system, with the idempotent sandwich an effective description of the record. The idempotent is therefore a bookkeeping element for the outcome, not a second microscopic dynamics. That the two classes of element sit in one algebra does not say which one a given physical process realises.
 
@@ -197,7 +197,7 @@ The changes are changes in statement, not in physics, and they are worth setting
 The reformulation does not, and is not presented as, resolving the measurement problem. Explicitly, it does **not**:
 
 - **Select an outcome.** No element of $\mathbb{M}_+$ and no operation in the algebra makes the realised outcome a function of the state. The statistics are determined; the outcome is not. This is the selection problem, restated and not solved.
-- **Derive the preferred basis.** The pointer direction $\hat n$ is an input; the framework represents einselection's structure but not its dynamics.
+- **Derive the preferred basis.** The pointer direction $\hat u$ is an input; the framework represents einselection's structure but not its dynamics.
 - **Fix the cut.** The choice of acting element is the framework's form of the cut, and it is not derived.
 - **Explain probability.** The trace formula gives the numbers; it does not explain why they are frequencies or why a deterministic formalism has probabilities. This is the same division of labour as in the Born-rule article.
 - **Terminate the regress.** Enlarging to a tensor product with a record relocates the selection demand; it does not satisfy it.
@@ -226,15 +226,15 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |
 | $\tilde{H} = h_0e_0 + i\vec h$ | Hermitian observable |
-| $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state, projective outcome) |
+| $\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}(e_0 \pm i\hat u)$ | Idempotent (pure state, projective outcome) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\hat h)\tilde{\rho})$ | Outcome probabilities |
-| $\hat h = \vec h/\|\vec h\|$, $\hat n$ | Measurement and pointer directions |
+| $\hat h = \vec h/\|\vec h\|$, $\hat u$ | Measurement and pointer directions |
 | $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$ | Conjugation; unitary evolution ($\tilde{A} = \tilde{U}$) or projective sandwich ($\tilde{A} = \tilde\Pi_{1,2}$) |
 | $\tilde{U}\tilde{U}^{*} = e_0$ | Unitary element (reversible evolution) |
 | $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} = \tilde\Pi_{1,2}^{*}$ | Hermitian idempotent (orthogonal projection; irreversible) |
 | $\tilde{\rho}_d = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ | Fully dephased state (pointer-diagonal) |
-| $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\hat n$ at strength $p$ |
+| $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\hat u$ at strength $p$ |
 | $\Lambda_\pm(\tilde{Q}) = \mathrm{Tr}(\tilde{Q})\tilde\Pi_{1,2}$ | Selection (reset) channels onto the outcomes |
 | $A = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$ | Pointer (commutative) subalgebra |
 | $\mathrm{Tr}(\tilde{\rho}^2)$ | Purity; $= \tfrac{1}{2}(1 + \|\vec r\|^2)$ |

@@ -65,7 +65,7 @@ $$
 
 converges everywhere, takes values in $\mathbb{H}^\times$, is continuous, and is surjective onto $\mathbb{H}^\times$; on the pure quaternions it is $\exp(\vec v)=\cos\lvert\vec v\rvert+\dfrac{\vec v}{\lvert\vec v\rvert}\sin\lvert\vec v\rvert$, a unit quaternion. Restricted to the open band $\{\tilde q:\lvert\vec q\rvert<\pi\}$ the map $\exp$ is a homeomorphism onto $\mathbb{H}^\times$ with the negative scalar ray removed.
 
-*Proof.* The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=e^{q_0}\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_0e_0+\vec v$, $\exp(\tilde q)=e^{q_0}\exp(\vec v)$, and $\exp(\vec v)=\cos\lvert\vec v\rvert+\hat v\sin\lvert\vec v\rvert$ with $\hat v=\vec v/\lvert\vec v\rvert$; every unit quaternion is uniquely $(\cos\theta,\hat v\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_0$, so the unit part of the image misses exactly $-e_0$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_0$.
+*Proof.* The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=e^{q_0}\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_0e_0+\vec v$, $\exp(\tilde q)=e^{q_0}\exp(\vec v)$, and $\exp(\vec v)=\cos\lvert\vec v\rvert+\hat u\sin\lvert\vec v\rvert$ with $\hat u=\vec v/\lvert\vec v\rvert$; every unit quaternion is uniquely $(\cos\theta,\hat u\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_0$, so the unit part of the image misses exactly $-e_0$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_0$.
 
 **Corollary (the exponential generates the unit group).** Every unit is $\exp(\tilde q)$ for some $\tilde q$, and every unit quaternion is $\exp(\vec v)$ for a pure $\vec v$ with $\lvert\vec v\rvert\in[0,\pi]$; the exponential is a local homeomorphism at the origin, with local inverse the quaternion logarithm of *Quaternion Exponential and Lie Group Structure*.
 
@@ -83,7 +83,8 @@ The group of units of the quaternion algebra is the punctured space $\mathbb{H}^
 | $\mathbb{H}^\times\cong\mathbb{R}_{>0}\times S^3$ | the product decomposition |
 | $Sp(1)=S^3=\{N=1\}$ | the compact maximal subgroup |
 | $\{\pm e_0\}$, $Sp(1)/\{\pm e_0\}$ | the centre and the rotation quotient |
-| $\exp(\tilde q)=e^{q_0}\bigl(\cos\lvert\vec q\rvert+\hat q\sin\lvert\vec q\rvert\bigr)$ | the exponential, onto $\mathbb{H}^\times$ |
+| $\hat u=\vec q/\lvert\vec q\rvert$ | the unit pure quaternion, the direction of the vector part |
+| $\exp(\tilde q)=e^{q_0}\bigl(\cos\lvert\vec q\rvert+\hat u\sin\lvert\vec q\rvert\bigr)$ | the exponential, onto $\mathbb{H}^\times$ |
 | $\lvert\vec q\rvert<\pi$ | the band on which $\exp$ is a homeomorphism onto its image |
 
 ## Further Reading

@@ -124,11 +124,11 @@ because $(v\otimes\psi)(x) = \psi(x)v$, then $A$ sends it to $\psi(x)Av$, then $
 
 ### The Opposite Algebra
 
-**Definition.** The **opposite algebra** $E^{\mathrm{op}}$ is the same linear space $E$ with the multiplication $A \cdot^{\mathrm{op}} B = BA$.
+**Definition.** The **opposite algebra** $E^{\mathrm{opp}}$ is the same linear space $E$ with the multiplication $A \cdot^{\mathrm{opp}} B = BA$.
 
-**Proposition.** $E^{\mathrm{op}}$ is an algebra, the identity map is an anti-isomorphism $E \to E^{\mathrm{op}}$, and a map $E \to E$ that is additive and reverses products is the composite of an algebra homomorphism $E^{\mathrm{op}} \to E$ with this identification.
+**Proposition.** $E^{\mathrm{opp}}$ is an algebra, the identity map is an anti-isomorphism $E \to E^{\mathrm{opp}}$, and a map $E \to E$ that is additive and reverses products is the composite of an algebra homomorphism $E^{\mathrm{opp}} \to E$ with this identification.
 
-**Proof.** Reversing the order of a product preserves associativity: $(A\cdot^{\mathrm{op}}B)\cdot^{\mathrm{op}}C = C(BA) = (CB)A = A\cdot^{\mathrm{op}}(B\cdot^{\mathrm{op}}C)$. The rest is the definition of the opposite and of an anti-homomorphism.
+**Proof.** Reversing the order of a product preserves associativity: $(A\cdot^{\mathrm{opp}}B)\cdot^{\mathrm{opp}}C = C(BA) = (CB)A = A\cdot^{\mathrm{opp}}(B\cdot^{\mathrm{opp}}C)$. The rest is the definition of the opposite and of an anti-homomorphism.
 
 **Remark (the transpose is deferred).** The algebra $E$ is isomorphic to its opposite, and the standard anti-isomorphism witnessing it is the transpose, $A \mapsto A^{\mathsf{T}}$, taken with respect to a fixed basis; the intrinsic form of that map, the dual endomorphism on $V^{*}$, and the contravariant functor it defines are the subject of *The Transpose of a Linear Map*, the next article of this group, and they are not used here.
 
@@ -144,7 +144,7 @@ $$
 L_A : E \longrightarrow E, \quad L_A(X) = AX , \qquad R_A : E \longrightarrow E, \quad R_A(X) = XA
 $$
 
-are $F$-linear; $L_A L_B = L_{AB}$, $R_A R_B = R_{BA}$, $L_A R_B = R_B L_A$ for all $A,B \in E$, and the assignments $A \mapsto L_A$ and $A \mapsto R_{A}$ exhibit $E$ and $E^{\mathrm{op}}$ as subalgebras of $\operatorname{End}_F(E)$. Both are injective when $E$ is unital, with $L_A = 0$ forcing $A = L_A(\mathrm{id}_V) = 0$.
+are $F$-linear; $L_A L_B = L_{AB}$, $R_A R_B = R_{BA}$, $L_A R_B = R_B L_A$ for all $A,B \in E$, and the assignments $A \mapsto L_A$ and $A \mapsto R_{A}$ exhibit $E$ and $E^{\mathrm{opp}}$ as subalgebras of $\operatorname{End}_F(E)$. Both are injective when $E$ is unital, with $L_A = 0$ forcing $A = L_A(\mathrm{id}_V) = 0$.
 
 **Proof.** Linearity is the distributivity of composition over addition in $E$; the composition laws are associativity, $L_AL_B(X) = A(BX) = (AB)X = L_{AB}(X)$, and the same read in reverse for $R$; the commutation is associativity again, $L_AR_B(X) = A(XB) = (AX)B = R_BL_A(X)$.
 
@@ -152,7 +152,7 @@ are $F$-linear; $L_A L_B = L_{AB}$, $R_A R_B = R_{BA}$, $L_A R_B = R_B L_A$ for 
 
 ## Summary
 
-The endomorphisms of a finite-dimensional linear space $V$ over a field $F$ form, under addition and composition, the unital associative $F$-algebra $E = \operatorname{End}_F(V)$ of dimension $n^2$; after a basis is fixed it is the matrix algebra $M_n(F)$ with the elementary multiplication $E_{ij}E_{kl} = \delta_{jk}E_{il}$. Its units are the automorphisms, $E^{\times} = \operatorname{GL}(V)$, and every non-unit is a zero divisor. Its idempotents are exactly the projections onto a direct summand along a complement, and an idempotent has rank equal to its trace; its nilpotents are the endomorphisms with vanishing spectrum, and the three families of units, idempotents and nilpotents meet only at $0$. The centre of $E$ is the line $F\,\mathrm{id}_V$ of scalars, and $E$ is a central simple $F$-algebra: every nonzero element generates $E$ as a two-sided ideal, so $E$ has no nonzero proper two-sided ideal and no nontrivial quotient. The algebra is isomorphic to its opposite by an anti-isomorphism, whose intrinsic form is the transpose deferred to the next article. Finally, $E$ acts on itself on the left and on the right by the multiplications $L_A(X)=AX$ and $R_A(X)=XA$, which commute and make $E$ and $E^{\mathrm{op}}$ subalgebras of the strictly larger operator algebra $\operatorname{End}_F(E)$ of dimension $n^4$; this is the ambient space of the operator layer of the category.
+The endomorphisms of a finite-dimensional linear space $V$ over a field $F$ form, under addition and composition, the unital associative $F$-algebra $E = \operatorname{End}_F(V)$ of dimension $n^2$; after a basis is fixed it is the matrix algebra $M_n(F)$ with the elementary multiplication $E_{ij}E_{kl} = \delta_{jk}E_{il}$. Its units are the automorphisms, $E^{\times} = \operatorname{GL}(V)$, and every non-unit is a zero divisor. Its idempotents are exactly the projections onto a direct summand along a complement, and an idempotent has rank equal to its trace; its nilpotents are the endomorphisms with vanishing spectrum, and the three families of units, idempotents and nilpotents meet only at $0$. The centre of $E$ is the line $F\,\mathrm{id}_V$ of scalars, and $E$ is a central simple $F$-algebra: every nonzero element generates $E$ as a two-sided ideal, so $E$ has no nonzero proper two-sided ideal and no nontrivial quotient. The algebra is isomorphic to its opposite by an anti-isomorphism, whose intrinsic form is the transpose deferred to the next article. Finally, $E$ acts on itself on the left and on the right by the multiplications $L_A(X)=AX$ and $R_A(X)=XA$, which commute and make $E$ and $E^{\mathrm{opp}}$ subalgebras of the strictly larger operator algebra $\operatorname{End}_F(E)$ of dimension $n^4$; this is the ambient space of the operator layer of the category.
 
 ## Summary of Notation
 
@@ -171,7 +171,7 @@ The endomorphisms of a finite-dimensional linear space $V$ over a field $F$ form
 | $N$ | a nilpotent, $N^k=0$ |
 | $Z(E) = F\,\mathrm{id}_V$ | the centre of $E$ |
 | $I$ | a two-sided ideal, $EIE \subseteq I$ |
-| $E^{\mathrm{op}}$ | the opposite algebra, $A \cdot^{\mathrm{op}} B = BA$ |
+| $E^{\mathrm{opp}}$ | the opposite algebra, $A \cdot^{\mathrm{opp}} B = BA$ |
 | $A^{\mathsf{T}}$ | the transpose with respect to a basis, deferred to the next article |
 | $L_A$, $R_A$ | left and right multiplication by $A$ on $E$, $L_A(X)=AX$, $R_A(X)=XA$ |
 | $u \otimes \varphi$ | the rank-one endomorphism $x \mapsto \varphi(x)u$ |

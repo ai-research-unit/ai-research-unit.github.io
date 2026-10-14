@@ -192,13 +192,13 @@ $$
 and $\tilde{\rho}$ is idempotent if and only if $|\vec r| = 1$. The idempotents of trace one have the form
 
 $$
-\tilde\Pi_{1,2}(\hat\mu) = \tfrac{1}{2}\bigl(e_0 \pm i\hat\mu\bigr), \qquad |\hat\mu| = 1 ,
+\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}\bigl(e_0 \pm i\hat u\bigr), \qquad |\hat u| = 1 ,
 $$
 
-and are the rank-one projections of $\mathbb{M}_+$; under the isomorphism they are the standard spin-up and spin-down projectors along $\hat\mu$. The boundary is thus parametrized by the unit sphere $S^2 \subset \mathbb{R}^3$, with $\hat\mu$ and $-\hat\mu$ giving the complementary idempotents:
+and are the rank-one projections of $\mathbb{M}_+$; under the isomorphism they are the standard spin-up and spin-down projectors along $\hat u$. The boundary is thus parametrized by the unit sphere $S^2 \subset \mathbb{R}^3$, with $\hat u$ and $-\hat u$ giving the complementary idempotents:
 
 $$
-\tilde\Pi_1(\hat\mu) + \tilde\Pi_2(\hat\mu) = e_0, \qquad \tilde\Pi_1(\hat\mu)\tilde\Pi_2(\hat\mu) = 0 .
+\tilde\Pi_1(\hat u) + \tilde\Pi_2(\hat u) = e_0, \qquad \tilde\Pi_1(\hat u)\tilde\Pi_2(\hat u) = 0 .
 $$
 
 **Zero divisors.** On the boundary $N(\tilde{\rho}) = 0$ with $\tilde{\rho} \neq 0$, so $\tilde{\rho}$ is a zero divisor of $\mathbb{B}$. Conversely, a positive trace-one element of $\mathbb{M}_+$ that is a zero divisor has vanishing biquaternion norm, hence $|\vec r| = 1$, hence is pure. Within the trace-one hyperplane of $\mathbb{M}_+$, therefore,
@@ -214,10 +214,10 @@ This is the sense in which "the pure states are the zero divisors at trace one":
 The transition probability between two pure states is the trace pairing,
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\hat\mu)\tilde\Pi(\hat\nu)\bigr) = \tfrac{1}{2}\bigl(1 + \hat\mu\cdot\hat\nu\bigr) = \cos^2\frac{\theta}{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\hat u_1)\tilde\Pi(\hat u_2)\bigr) = \tfrac{1}{2}\bigl(1 + \hat u_1\cdot\hat u_2\bigr) = \cos^2\frac{\theta}{2},
 $$
 
-where $\theta$ is the angle between the two Bloch directions. It equals $1$ for $\hat\mu = \hat\nu$ and $0$ for $\hat\mu = -\hat\nu$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the trace pairing is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.
+where $\theta$ is the angle between the two Bloch directions. It equals $1$ for $\hat u_1 = \hat u_2$ and $0$ for $\hat u_1 = -\hat u_2$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the trace pairing is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.
 
 ## Mixed States: The Interior of the Ball
 
@@ -326,7 +326,7 @@ Because the logarithm is the spectral logarithm on the positive cone, the trace 
 For two pure states, the **transition probability** is the trace pairing computed above,
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\hat\mu)\tilde\Pi(\hat\nu)\bigr) = \tfrac{1}{2}\bigl(1 + \hat\mu\cdot\hat\nu\bigr) = \cos^2\frac{\theta}{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\hat u_1)\tilde\Pi(\hat u_2)\bigr) = \tfrac{1}{2}\bigl(1 + \hat u_1\cdot\hat u_2\bigr) = \cos^2\frac{\theta}{2},
 $$
 
 a function of the angle between the Bloch directions alone. In terms of the boundary of the ball, it is a function of the chordal separation of two points of the sphere.
@@ -477,15 +477,15 @@ h_0 \ \text{fixed},
 R \in SO(3).
 $$
 
-That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde{\Lambda} = \cosh(\phi/2)e_0 + i\sinh(\phi/2)\hat n$ has unit norm and is far from unitary, while $e^{i\theta}e_0$ is unitary with $N = e^{2i\theta}$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
+That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde{\Lambda} = \cosh(\phi/2)e_0 + i\sinh(\phi/2)\hat u$ has unit norm and is far from unitary, while $e^{i\theta}e_0$ is unitary with $N = e^{2i\theta}$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
 
-The names of the two actors are the names of the two factors of the polar word. Every element of non-vanishing norm factors as $\tilde{Q} = r\,e^{i\alpha}\tilde{B}\hat{q}$, with a positive scale, a central phase, a positive definite Hermitian factor $\tilde{B}$ and a unit real quaternion rotor $\hat{q}$ (*The Polar Element Representation in Subspaces*, *The Twisted Spinor Operator Representation of Biquaternions*). The two classes above are exactly the two ways of keeping two of those four factors:
+The names of the two actors are the names of the two factors of the polar word. Every element of non-vanishing norm factors as $\tilde{Q} = r\,e^{i\alpha}\tilde{B}\tilde{q}$, with a positive scale, a central phase, a positive definite Hermitian factor $\tilde{B}$ and a unit real quaternion rotor $\tilde{q}$ (*The Polar Element Representation in Subspaces*, *The Twisted Spinor Operator Representation of Biquaternions*). The two classes above are exactly the two ways of keeping two of those four factors:
 
 | actor | polar form | which factor is free | group |
 |---|---|---|---|
-| unit-norm rotor | $\tilde{B}\hat{q}$ | the boost factor $\tilde{B}$ | $SL(2,\mathbb{C})$ |
-| unitary | $e^{i\alpha}\hat{q}$ | the central phase $e^{i\alpha}$ | $U(2)$ |
-| both | $\hat{q}$, any | neither | $Sp(1) = SU(2)$ |
+| unit-norm rotor | $\tilde{B}\tilde{q}$ | the boost factor $\tilde{B}$ | $SL(2,\mathbb{C})$ |
+| unitary | $e^{i\alpha}\tilde{q}$ | the central phase $e^{i\alpha}$ | $U(2)$ |
+| both | $\tilde{q}$, any | neither | $Sp(1) = SU(2)$ |
 
 So it is not merely that the two groups differ: **the boost factor is what a Lorentz transformation has and a unitary does not, and the central phase is what a unitary has and a boost does not.** The polar article states the first as its criterion for a trivial boost factor — $\tilde{Q}\tilde{Q}^{*}$ is a positive real multiple of $e_0$ exactly when $\tilde{B} = e_0$ — which in the matrix picture is the statement that the element is unitary up to a scale. The second is the same statement read the other way: unit norm forces $r = 1$ and $e^{2i\alpha} = 1$, so the phase has no room and the boost factor has all of it. And the boost factor is not an outside object. It is $\tilde{B} = \sqrt{\tilde{Q}\tilde{Q}^{*}}/r$, a positive definite element of $\mathbb{M}_+$ itself, so the factor that carries a state off the trace-one slice belongs to the sector whose states they are. The twisted spinor article records the division on the other action: of the two, the unit-norm case is the Lorentz transformation on the material sector, while the unitary case is a rotation with no dilatation.
 
@@ -506,13 +506,13 @@ $$
 The unitary actor is therefore the one for which the shared formula is a symmetry of the algebra itself, an inner automorphism; the unit-norm boost actor is the one for which it is a symmetry only of the sector and of the cone. This is why the general Lorentz transformation acts on the cone of $\mathbb{M}_+$ but not on the states. The remark in *Biquaternion Rotations and Lorentz Transformations* that on the identity the conjugation returns $\tilde{Q}\tilde{Q}^{*}$, so that "the unit leaves the centre and the centre is carried into the Hermitian sector", is precisely the state-space statement: the image of the identity is
 
 $$
-\Phi_{\tilde{\Lambda}}(e_0) = \tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^{2} = \cosh\phi\,e_0 + i\sinh\phi\,\hat n,
+\Phi_{\tilde{\Lambda}}(e_0) = \tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^{2} = \cosh\phi\,e_0 + i\sinh\phi\,\hat u,
 $$
 
 which is not central. On the maximally mixed state it gives
 
 $$
-\tfrac{1}{2}e_0 \;\longmapsto\; \tfrac{1}{2}\bigl(\cosh\phi\,e_0 + i\sinh\phi\,\hat n\bigr),
+\tfrac{1}{2}e_0 \;\longmapsto\; \tfrac{1}{2}\bigl(\cosh\phi\,e_0 + i\sinh\phi\,\hat u\bigr),
 $$
 
 of trace $\cosh\phi$, a positive definite element of $\mathbb{M}_+$ that is not a state. Not fixing the centre is not preserving the trace, and not preserving the trace is leaving the slice. The Lorentz group acts on the cone of the informational sector; the group that acts on its state space is the rotation group. That a qubit carries rotations and no boost is then not an assumption imported from quantum theory: it is the statement that the trace, the normalization of a state, is not a Lorentz invariant.
@@ -563,7 +563,7 @@ $$
 
 the intersection is the closed unit ball $|\vec r| \leq 1$, the **Bloch ball**, whose boundary is the intersection with the null cone.
 
-The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_{1,2}(\hat\mu) = \tfrac{1}{2}(e_0 \pm i\hat\mu)$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\vec r|)$; the maximally mixed state is the centre $\vec r = 0$.
+The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}(e_0 \pm i\hat u)$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\vec r|)$; the maximally mixed state is the centre $\vec r = 0$.
 
 Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$, so the Bloch radius is a measure of purity, and the linear entropy is $1 - \mathrm{Tr}(\tilde{\rho}^2) = 2N(\tilde{\rho})$, twice the biquaternion norm. The von Neumann entropy depends only on $|\vec r|$, vanishing on the boundary and maximal, equal to $\log 2$, at the centre. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the trace on $\mathbb{M}_+$, without additional postulates.
 
@@ -586,7 +586,7 @@ The ball has a mirror interpretation in the material sector. The map $\tilde{H} 
 | $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \vec h\cdot\vec k)$ | Trace pairing, signature $(4,0)$ |
 | $\mathcal{S} = \{\mathrm{Sc} = \tfrac{1}{2}\}$ | Trace-one hyperplane |
 | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ | State, Bloch vector $\vec r$ |
-| $\tilde\Pi_{1,2}(\hat\mu) = \tfrac{1}{2}(e_0 \pm i\hat\mu)$ | Idempotent (pure state), $|\hat\mu| = 1$ |
+| $\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}(e_0 \pm i\hat u)$ | Idempotent (pure state), $|\hat u| = 1$ |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ | Purity |
 | $S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$ | Von Neumann entropy |
 | $T(\tilde{\rho},\tilde{\sigma}) = (\mathrm{Tr}\sqrt{\sqrt{\tilde{\rho}}\,\tilde{\sigma}\sqrt{\tilde{\rho}}})^2$ | Uhlmann transition probability |
@@ -596,9 +596,9 @@ The ball has a mirror interpretation in the material sector. The map $\tilde{H} 
 | $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | Mirror map carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$ |
 | $\mathrm{Tr}(\tilde{H}) = ct$, $N(\tilde{H}) = -\tfrac{1}{4}N(\tilde{Q})$ | Trace and norm under the mirror map |
 | $(\tilde{Q}\tilde{Y})^{*} = \tilde{Y}\tilde{Q}$ | Product rule within a sector; $[\mathbb{M}_\pm,\mathbb{M}_\pm] \subseteq \mathbb{M}_-$ |
-| $\tilde{Q} = r e^{i\alpha}\tilde{B}\hat{q}$ | Polar word: scale, central phase, boost factor, rotor |
-| $\tilde{B}$, $\hat{q}$ | Boost factor, in $\mathbb{M}_+$ positive definite; rotor, in $Sp(1)$ |
-| $\tilde{B}\hat{q}$, $e^{i\alpha}\hat{q}$ | The two actors: $SL(2,\mathbb{C})$ on the cone, $U(2)$ on the slice; both meet at $Sp(1) = SU(2)$ |
+| $\tilde{Q} = r e^{i\alpha}\tilde{B}\tilde{q}$ | Polar word: scale, central phase, boost factor, rotor |
+| $\tilde{B}$, $\tilde{q}$ | Boost factor, in $\mathbb{M}_+$ positive definite; rotor, in $Sp(1)$ |
+| $\tilde{B}\tilde{q}$, $e^{i\alpha}\tilde{q}$ | The two actors: $SL(2,\mathbb{C})$ on the cone, $U(2)$ on the slice; both meet at $Sp(1) = SU(2)$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 

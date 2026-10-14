@@ -1,4 +1,4 @@
-# __Square Roots of a General Element: the Mass Shell__
+# __Square Roots of a General Element in the General Plain Algebra: the Realisation__
 
 ## Introduction
 

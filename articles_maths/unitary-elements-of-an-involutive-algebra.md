@@ -140,10 +140,10 @@ Let $A = k[G]$ with the involution $\sigma(g) = g^{-1}$; then $(uv)^* = v^*u^*$ 
 
 ### The Exchange Involution
 
-Let $A = B \times B^{\mathrm{op}}$ with the exchange involution $(b, c)^* = (c, b)$, as in *Involutive Algebras*. An element $(b,c)$ is unitary exactly when $(c,b)(b,c) = 1$, that is when $cb = 1$ and $bc = 1$, so $c = b^{-1}$; hence
+Let $A = B \times B^{\mathrm{opp}}$ with the exchange involution $(b, c)^* = (c, b)$, as in *Involutive Algebras*. An element $(b,c)$ is unitary exactly when $(c,b)(b,c) = 1$, that is when $cb = 1$ and $bc = 1$, so $c = b^{-1}$; hence
 
 $$
-U(B \times B^{\mathrm{op}}) = \{(b, b^{-1}) : b \in B^\times\} \cong B^\times ,
+U(B \times B^{\mathrm{opp}}) = \{(b, b^{-1}) : b \in B^\times\} \cong B^\times ,
 $$
 
 and the unitary group of the exchange involution is the group of units of $B$.

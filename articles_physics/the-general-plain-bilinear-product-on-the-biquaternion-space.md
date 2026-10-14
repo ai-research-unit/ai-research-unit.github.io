@@ -68,7 +68,7 @@ in the introduction.
 
 **Proposed interpretation, labelled as such.** The general plain bilinear product is read as the **composition of two
 operations**: $\tilde P\tilde Q$ is "the operation $\tilde P$, then the operation $\tilde Q$", the
-written order of the factors being the order of the operations, as in the polar word $e^{i\alpha}B\hat q$
+written order of the factors being the order of the operations, as in the polar word $e^{i\alpha}B\tilde q$
 of *The Polar Element Representation of Biquaternions* (*The Twisted Spinor Operator Representation of
 Biquaternions*). Three of its properties then carry their physical names.
 

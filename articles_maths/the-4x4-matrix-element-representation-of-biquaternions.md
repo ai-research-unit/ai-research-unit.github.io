@@ -68,7 +68,7 @@ $$
 \mathsf{M}_4^{R}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{R}) = \mathsf{M}_4^{R}(\tilde{R}\tilde{Q}).
 $$
 
-Hence the right regular matrix is an algebra **anti**-homomorphism, and its image is the regular representation of the opposite algebra $\mathbb{B}^{\mathrm{op}}$, not a second representation of $\mathbb{B}$.
+Hence the right regular matrix is an algebra **anti**-homomorphism, and its image is the regular representation of the opposite algebra $\mathbb{B}^{\mathrm{opp}}$, not a second representation of $\mathbb{B}$.
 
 **Proof.** Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$. The defining property of the right matrix is $\mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde S) = \operatorname{col}(\tilde S\tilde{Q})$, because the $m$-th column of $\mathsf{M}_4^{R}(\tilde{Q})$ is $\operatorname{col}(e_m\tilde{Q})$ and a column is a linear combination of the $e_m$. Hence, for each $m$,
 
@@ -466,7 +466,7 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 | $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_- = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $\tilde\Pi_+ + \tilde\Pi_- = e_0$, $\tilde\Pi_+\tilde\Pi_- = 0$ |
 | $I_1 = \mathbb{B}\tilde\Pi_+$, $I_2 = \mathbb{B}\tilde\Pi_-$ | The two minimal left ideals, $\mathbb{B} = I_1 \oplus I_2$ |
 | $V = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, complex dimension $2$ |
-| $\mathbb{B}^{\mathrm{op}}$ | Opposite algebra; the right regular matrix is a homomorphism from it |
+| $\mathbb{B}^{\mathrm{opp}}$ | Opposite algebra; the right regular matrix is a homomorphism from it |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
 | $\operatorname{Res}_{\mathbb{C}/\mathbb{R}}$ | Restriction of scalars |
 | $\operatorname{cent}_{M_4(\mathbb{C})}\mathsf{M}_4^{L}(\mathbb{B}) = \mathsf{M}_4^{R}(\mathbb{B})$ | The centralizer of the left image is the right copy, of complex dimension $4$ |

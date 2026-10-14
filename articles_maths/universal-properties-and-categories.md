@@ -66,7 +66,7 @@ $$
 
 are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **natural isomorphism** if every $\eta_A$ is an isomorphism, and then $F \cong G$.
 
-**Definition.** A **functor category** $[\mathcal{C},\mathcal{D}]$ (also written $\mathcal{D}^{\mathcal{C}}$) has the functors $\mathcal{C} \to \mathcal{D}$ as objects and the natural transformations between them as morphisms, with composition defined objectwise. A **presheaf** on $\mathcal{C}$ is a functor $\mathcal{C}^{\mathrm{op}} \to \mathbf{Set}$, that is, a contravariant functor from $\mathcal{C}$ to sets.
+**Definition.** A **functor category** $[\mathcal{C},\mathcal{D}]$ (also written $\mathcal{D}^{\mathcal{C}}$) has the functors $\mathcal{C} \to \mathcal{D}$ as objects and the natural transformations between them as morphisms, with composition defined objectwise. A **presheaf** on $\mathcal{C}$ is a functor $\mathcal{C}^{\mathrm{opp}} \to \mathbf{Set}$, that is, a contravariant functor from $\mathcal{C}$ to sets.
 
 **Example (the singleton map).** Let $\mathcal{P} : \mathbf{Set} \to \mathbf{Set}$ send a set to its power set and a function $f : X \to Y$ to the image map $A \mapsto f(A)$. The assignment $x \mapsto \{x\}$ is a natural transformation $\mathrm{id}_{\mathbf{Set}} \Rightarrow \mathcal{P}$: the square commutes because $f(\{x\}) = \{f(x)\}$. It is injective on every set and surjective only on the empty set and the singletons, so it is a natural transformation that is not an isomorphism; the same transformation is the unit of the power-set monad below.
 
@@ -176,12 +176,12 @@ The unit and counit are the useful form of an adjunction: the unit is the insert
 
 ### Presheaves and Representables
 
-**Definition.** Let $\mathcal{C}$ be locally small. The **Yoneda embedding** is the functor $Y : \mathcal{C} \to [\mathcal{C}^{\mathrm{op}}, \mathbf{Set}]$ sending an object $A$ to the presheaf $\mathcal{C}(-,A)$ and a morphism $f : A \to B$ to the natural transformation $\mathcal{C}(-,A) \Rightarrow \mathcal{C}(-,B)$ given by composition with $f$. A presheaf is **representable** if it is naturally isomorphic to $\mathcal{C}(-,A)$ for some $A$, and then $A$ **represents** it.
+**Definition.** Let $\mathcal{C}$ be locally small. The **Yoneda embedding** is the functor $Y : \mathcal{C} \to [\mathcal{C}^{\mathrm{opp}}, \mathbf{Set}]$ sending an object $A$ to the presheaf $\mathcal{C}(-,A)$ and a morphism $f : A \to B$ to the natural transformation $\mathcal{C}(-,A) \Rightarrow \mathcal{C}(-,B)$ given by composition with $f$. A presheaf is **representable** if it is naturally isomorphic to $\mathcal{C}(-,A)$ for some $A$, and then $A$ **represents** it.
 
-**Theorem (Yoneda lemma).** For a locally small category $\mathcal{C}$, an object $A$ and a presheaf $F : \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}$, the map
+**Theorem (Yoneda lemma).** For a locally small category $\mathcal{C}$, an object $A$ and a presheaf $F : \mathcal{C}^{\mathrm{opp}} \to \mathbf{Set}$, the map
 
 $$
-[\mathcal{C}^{\mathrm{op}},\mathbf{Set}](\mathcal{C}(-,A), F) \longrightarrow F(A), \qquad \eta \mapsto \eta_A(\mathrm{id}_A),
+[\mathcal{C}^{\mathrm{opp}},\mathbf{Set}](\mathcal{C}(-,A), F) \longrightarrow F(A), \qquad \eta \mapsto \eta_A(\mathrm{id}_A),
 $$
 
 is a bijection, natural in $A$ and in $F$.
@@ -190,7 +190,7 @@ is a bijection, natural in $A$ and in $F$.
 
 ### Consequences
 
-**Corollary (Yoneda embedding is full and faithful).** The functor $Y$ is fully faithful: for all $A, B$ the map $\mathcal{C}(A,B) \to [\mathcal{C}^{\mathrm{op}},\mathbf{Set}](\mathcal{C}(-,A),\mathcal{C}(-,B))$ is a bijection.
+**Corollary (Yoneda embedding is full and faithful).** The functor $Y$ is fully faithful: for all $A, B$ the map $\mathcal{C}(A,B) \to [\mathcal{C}^{\mathrm{opp}},\mathbf{Set}](\mathcal{C}(-,A),\mathcal{C}(-,B))$ is a bijection.
 
 **Proof.** Apply the Yoneda lemma with $F = \mathcal{C}(-,B)$: the natural transformations $\mathcal{C}(-,A) \Rightarrow \mathcal{C}(-,B)$ correspond bijectively to the elements of $\mathcal{C}(A,B)$, and the correspondence is composition with $f$.
 

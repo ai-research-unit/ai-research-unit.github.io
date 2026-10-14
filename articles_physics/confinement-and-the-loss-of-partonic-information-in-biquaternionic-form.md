@@ -124,16 +124,16 @@ One qualification keeps the model honest. The colour symmetry of QCD is local, s
 The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let a charge generator be represented on the informational sector by an element of $\mathrm{SU}(2)\subset\mathbb{M}_+$, so that the rotation $\tilde{\rho}\mapsto U\tilde{\rho}\,U^\dagger$ with $U = \exp(i\theta\, n_a ie_a/2)$ is the charge rotation about the axis $\vec n$. The **accessible** state is the restriction of $\tilde{\rho}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,
 
 $$
-\vec r \;\longmapsto\; (\vec r\cdot\hat n)\,\hat n,
+\vec r \;\longmapsto\; (\vec r\cdot\hat u)\,\hat u,
 $$
 
 the projection of the Bloch vector onto the axis, which is the full-dephasing limit of the companion article on idempotent projection. Two states that differ by a charge rotation have **the same accessible state**:
 
 $$
-\vec r\cdot\hat n = (R_{\hat n}(\theta)\vec r)\cdot\hat n,
+\vec r\cdot\hat u = (R_{\hat u}(\theta)\vec r)\cdot\hat u,
 $$
 
-because a rotation about $\hat n$ preserves the component along $\hat n$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. This was checked on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\hat n = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{\rho}\|\tilde{\rho}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly.
+because a rotation about $\hat u$ preserves the component along $\hat u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. This was checked on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\hat u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{\rho}\|\tilde{\rho}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly.
 
 The lesson is the article's thesis in its sharpest form. A charge rotation is not a gauge transformation: it changes the state, and the full relative entropy detects the change. But the change is invisible to the accessible algebra, and the accessible algebra is the whole of what survives to asymptotic observation. The information lost is exactly the component of the state along the unobservable charge directions, and no re-description recovers it.
 
@@ -408,8 +408,8 @@ The two confinement pictures must be kept apart, and the framework houses one of
 | $_{L\times T}$, $V(L)$ | Rectangular loop; static potential; $\langle W\rangle\sim e^{-iTV(L)}$ |
 | $I(C) = -\log|\langle W(C)\rangle|$ | Information cost of the loop |
 | $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
-| $\vec r\cdot\hat n$ | Component along the charge axis; accessible content |
-| $R_{\hat n}(\theta)$, $U = e^{i\theta n_a ie_a/2}$ | Charge rotation |
+| $\vec r\cdot\hat u$ | Component along the charge axis; accessible content |
+| $R_{\hat u}(\theta)$, $U = e^{i\theta n_a ie_a/2}$ | Charge rotation |
 | $S(\tilde{\rho}\|\tilde{\sigma})$ | Relative entropy; monotone under channels |
 | $E(\tilde{Q}) = \int_G dU\, UXU^{-1}$ | Colour-singlet conditional expectation; idempotent channel |
 | $\beta_g = -(g^3/16\pi^2)b_0$, $b_0 = 11 - \tfrac{2}{3}N_f$ | One-loop running (transcribed) |

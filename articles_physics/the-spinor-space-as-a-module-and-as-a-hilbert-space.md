@@ -33,7 +33,7 @@ Among the twelve algebraic structures of the space, two are the ones the spinor 
 Let
 
 $$
-\tilde\Pi_+=\tfrac12(e_0+ie_3),\qquad \tilde\Pi_-=\tfrac12(e_0-ie_3),\qquad \tilde\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \tilde\Upsilon_2=\tfrac12(ie_1+e_2).
+\tilde\Pi_+=\tfrac12(e_0+ie_3),\qquad \tilde\Pi_-=\tfrac12(e_0-ie_3),\qquad \hat\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \hat\Upsilon_2=\tfrac12(ie_1+e_2).
 $$
 
 Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
@@ -47,21 +47,21 @@ $$
 and each of the two generates a minimal left ideal. The spinor space is the first of them,
 
 $$
-S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\},
+S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\},
 $$
 
-of complex dimension two, the defining module of $\mathbb{B}$. The elements $\tilde\Upsilon_1$ and $\tilde\Upsilon_2$ are the off-diagonal matrix units, and the four together are a $\mathbb{C}$-basis of $\mathbb{B}$ whose products are the matrix units $E_{11},E_{12},E_{21},E_{22}$ in the identification of *Ideals and Peirce Decomposition of the General Plain Algebra*:
+of complex dimension two, the defining module of $\mathbb{B}$. The elements $\hat\Upsilon_1$ and $\hat\Upsilon_2$ are the off-diagonal matrix units, and the four together are a $\mathbb{C}$-basis of $\mathbb{B}$ whose products are the matrix units $E_{11},E_{12},E_{21},E_{22}$ in the identification of *Ideals and Peirce Decomposition of the General Plain Algebra*:
 
-| $\cdot$ | $\tilde\Pi_+$ | $\tilde\Pi_-$ | $\tilde\Upsilon_1$ | $\tilde\Upsilon_2$ |
+| $\cdot$ | $\tilde\Pi_+$ | $\tilde\Pi_-$ | $\hat\Upsilon_1$ | $\hat\Upsilon_2$ |
 |---|---|---|---|---|
-| $\tilde\Pi_+$ | $\tilde\Pi_+$ | $0$ | $\tilde\Upsilon_1$ | $0$ |
-| $\tilde\Pi_-$ | $0$ | $\tilde\Pi_-$ | $0$ | $\tilde\Upsilon_2$ |
-| $\tilde\Upsilon_1$ | $0$ | $\tilde\Upsilon_1$ | $0$ | $\tilde\Pi_+$ |
-| $\tilde\Upsilon_2$ | $\tilde\Upsilon_2$ | $0$ | $\tilde\Pi_-$ | $0$ |
+| $\tilde\Pi_+$ | $\tilde\Pi_+$ | $0$ | $\hat\Upsilon_1$ | $0$ |
+| $\tilde\Pi_-$ | $0$ | $\tilde\Pi_-$ | $0$ | $\hat\Upsilon_2$ |
+| $\hat\Upsilon_1$ | $0$ | $\hat\Upsilon_1$ | $0$ | $\tilde\Pi_+$ |
+| $\hat\Upsilon_2$ | $\hat\Upsilon_2$ | $0$ | $\tilde\Pi_-$ | $0$ |
 
 ### Why the Basis Is One Idempotent and One Nilpotent
 
-The corner-adapted basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ of $S$, the basis with one element per Peirce corner, is not a choice: the Peirce decomposition forces exactly one idempotent and one nilpotent. The idempotents of $S$ are the affine family $\tilde\Pi_++c\tilde\Upsilon_2$ with $c\in\mathbb{C}$, so a basis of $S$ need not have this shape; it is the corner-adapted basis that does. Because $\tilde\Pi_++\tilde\Pi_-=e_0$, every element of the left ideal expands as
+The corner-adapted basis $(\tilde\Pi_+,\hat\Upsilon_2)$ of $S$, the basis with one element per Peirce corner, is not a choice: the Peirce decomposition forces exactly one idempotent and one nilpotent. The idempotents of $S$ are the affine family $\tilde\Pi_++c\hat\Upsilon_2$ with $c\in\mathbb{C}$, so a basis of $S$ need not have this shape; it is the corner-adapted basis that does. Because $\tilde\Pi_++\tilde\Pi_-=e_0$, every element of the left ideal expands as
 
 $$
 \mathbb{B}\tilde\Pi_+=(\tilde\Pi_++\tilde\Pi_-)\mathbb{B}\tilde\Pi_+=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+,
@@ -70,28 +70,28 @@ $$
 the sum of the $(1,1)$ corner and the $(2,1)$ corner of the Peirce decomposition of $\mathbb{B}$. Each corner is one-dimensional over $\mathbb{C}$ because $\mathbb{B}$ is a simple algebra of rank two, so the ideal, of complex dimension two, holds exactly one basis element per corner:
 
 $$
-\tilde\Pi_+\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+,\qquad \tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Upsilon_2 .
+\tilde\Pi_+\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+,\qquad \tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\hat\Upsilon_2 .
 $$
 
-The **diagonal** corner contains the idempotent $\tilde\Pi_+$, which is the identity of that corner; the **off-diagonal** corner contains the nilpotent $\tilde\Upsilon_2$. The nilpotency is not a property of $\tilde\Upsilon_2$ in particular: for orthogonal idempotents $e,f$, every element $x=fae$ of an off-diagonal corner satisfies
+The **diagonal** corner contains the idempotent $\tilde\Pi_+$, which is the identity of that corner; the **off-diagonal** corner contains the nilpotent $\hat\Upsilon_2$. The nilpotency is not a property of $\hat\Upsilon_2$ in particular: for orthogonal idempotents $e,f$, every element $x=fae$ of an off-diagonal corner satisfies
 
 $$
 x^2=(fae)(fae)=fa(ef)ae=0,
 $$
 
-so **every** off-diagonal corner consists of square-zero elements, and the off-diagonal basis element of a minimal left ideal is necessarily a nilpotent. The count is therefore structural. A minimal left ideal is one column of the matrix model; its basis holds one element from the diagonal corner, the idempotent that is the column's own projector, and one element from each off-diagonal corner of that column, and in rank two there is exactly one such corner. In the general rank-$n$ algebra $M_n(\mathbb{C})$ the same argument gives one idempotent and $n-1$ nilpotents, one per off-diagonal corner; the basis of $S$ is the case $n=2$. The general count, the normalisation of the diagonal element and the affine family of idempotents are *The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents*. The complementary ideal is the mirror case, $\mathbb{B}\tilde\Pi_-=\mathbb{C}\tilde\Upsilon_1\oplus\mathbb{C}\tilde\Pi_-$, with one nilpotent and one idempotent in the same two-corner shape.
+so **every** off-diagonal corner consists of square-zero elements, and the off-diagonal basis element of a minimal left ideal is necessarily a nilpotent. The count is therefore structural. A minimal left ideal is one column of the matrix model; its basis holds one element from the diagonal corner, the idempotent that is the column's own projector, and one element from each off-diagonal corner of that column, and in rank two there is exactly one such corner. In the general rank-$n$ algebra $M_n(\mathbb{C})$ the same argument gives one idempotent and $n-1$ nilpotents, one per off-diagonal corner; the basis of $S$ is the case $n=2$. The general count, the normalisation of the diagonal element and the affine family of idempotents are *The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents*. The complementary ideal is the mirror case, $\mathbb{B}\tilde\Pi_-=\mathbb{C}\hat\Upsilon_1\oplus\mathbb{C}\tilde\Pi_-$, with one nilpotent and one idempotent in the same two-corner shape.
 
 The point is the one the Introduction announces: the shape of the basis is a fact of the **ideals and the Peirce decomposition**, and it needs the associative unital plain product in which the idempotents and the corners are defined. Neither the quaternionic product nor either sesquilinear product has the idempotents and the corners, so neither can produce this basis.
 
 ### The Structure of the Module
 
-The plain product makes $S$ a left $\mathbb{B}$-module: for $\tilde Q\in\mathbb{B}$ and $\tilde\psi\in S$ the product $\tilde Q\tilde\psi$ lies again in $S$, and the action is compatible with the product, so that $\tilde Q(\tilde R\tilde\psi)=(\tilde Q\tilde R)\tilde\psi$. Written on the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$, the left multiplications by the four basis elements are
+The plain product makes $S$ a left $\mathbb{B}$-module: for $\tilde Q\in\mathbb{B}$ and $\tilde\psi\in S$ the product $\tilde Q\tilde\psi$ lies again in $S$, and the action is compatible with the product, so that $\tilde Q(\tilde R\tilde\psi)=(\tilde Q\tilde R)\tilde\psi$. Written on the basis $(\tilde\Pi_+,\hat\Upsilon_2)$, the left multiplications by the four basis elements are
 
 $$
 L_{\tilde\Pi_+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
 L_{\tilde\Pi_-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
-L_{\tilde\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
-L_{\tilde\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
+L_{\hat\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+L_{\hat\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
 $$
 
 These are the matrices of the matrix model $\mathsf{M}_2$ with $\mathsf{M}_2(e_k)=-i\sigma_k$, so the module is literally the column space $\mathbb{C}^2$ on which the algebra acts by matrix multiplication. The module is **simple**, its endomorphism ring is $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$ by Schur's lemma, and it is the unique simple left module; the left regular module is the direct sum $\mathbb{B}\cong S\oplus S$ of two copies. The module theory is that of *Modules over the General Plain Algebra of Biquaternions*, and the biquaternion coordinate form is that of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*.
@@ -104,10 +104,10 @@ $$
 \langle u,v\rangle_*=\mathrm{Sc}(uv^{*}),
 $$
 
-which is positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_*=\sum_\mu|Q_\mu|^2$. Restricted to the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ it has the Gram matrix
+which is positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_*=\sum_\mu|Q_\mu|^2$. Restricted to the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ it has the Gram matrix
 
 $$
-G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*&\langle\tilde\Pi_+,\tilde\Upsilon_2\rangle_*\\[2pt]\langle\tilde\Upsilon_2,\tilde\Pi_+\rangle_*&\langle\tilde\Upsilon_2,\tilde\Upsilon_2\rangle_*\end{pmatrix}=\tfrac12 I_2,
+G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*&\langle\tilde\Pi_+,\hat\Upsilon_2\rangle_*\\[2pt]\langle\hat\Upsilon_2,\tilde\Pi_+\rangle_*&\langle\hat\Upsilon_2,\hat\Upsilon_2\rangle_*\end{pmatrix}=\tfrac12 I_2,
 $$
 
 so the restriction is a positive definite inner product and $S$ is a **Hilbert space**. The pairing is complex-linear in its first argument and conjugate-linear in its second, and it is Hermitian, $\langle v,u\rangle_*=\overline{\langle u,v\rangle_*}$. It is the spinor-side form whose module-level origin is the canonical Hermitian form $h(\tilde P,\tilde R)=\tilde P\tilde R^{*}$ of the regular module (*The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*), of which $\langle\cdot,\cdot\rangle_*$ is the scalar part.
@@ -152,7 +152,7 @@ $$
 
 A complex subspace $V$ satisfies $iV\subseteq V$, so $V\subseteq\mathbb{M}_+$ would place $iV$ in both sectors and force $V\subseteq\mathbb{M}_+\cap\mathbb{M}_-=\{0\}$: the only complex subspace contained in a sector is $\{0\}$.
 
-The consequence for the spinor space is a prohibition. $S$ is a complex plane, and it **cannot** be split as $\mathbb{C}\times\mathbb{C}$ with one factor $\mathbb{M}_+$ and the other $\mathbb{M}_-$, nor can either of its two amplitudes be labelled material or informational: the sector split is **transverse** to the module and to the Hilbert structure, cutting each of them rather than coinciding with either. On the ideal $S$ the sectors are visible on the idempotent direction alone, $S\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$ and $S\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, while the nilpotent direction $\mathbb{C}\tilde\Upsilon_2$ meets neither sector; the full account is *The Complementary Space of the Spinor Space and Its Physical Meaning*, §*The Sectors Cut Across the Two Ideals*.
+The consequence for the spinor space is a prohibition. $S$ is a complex plane, and it **cannot** be split as $\mathbb{C}\times\mathbb{C}$ with one factor $\mathbb{M}_+$ and the other $\mathbb{M}_-$, nor can either of its two amplitudes be labelled material or informational: the sector split is **transverse** to the module and to the Hilbert structure, cutting each of them rather than coinciding with either. On the ideal $S$ the sectors are visible on the idempotent direction alone, $S\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$ and $S\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, while the nilpotent direction $\mathbb{C}\hat\Upsilon_2$ meets neither sector; the full account is *The Complementary Space of the Spinor Space and Its Physical Meaning*, §*The Sectors Cut Across the Two Ideals*.
 
 What **is** compatible with a module is the grading the sector split induces on the symmetrised product $\tilde Q\circ\tilde R=\tilde Q\tilde R+\tilde R\tilde Q$. The Hermitian conjugation is an automorphism of that Jordan algebra, $\mathbb{M}_+$ is its even part and $\mathbb{M}_-$ its odd part, and a homogeneous element of degree $|\tilde A|$ shifts the degree of a module element by $|\tilde A|$, the even elements acting by self-adjoint operators and the odd ones by skew-adjoint (*The Graded Action on a Module over a Jordan Algebra*, *The Graded Adjoint Action on a Module over a Jordan Algebra*). A module compatible with $\mathbb{M}_\pm$ is therefore a **graded** module, the sign rule being carried by the module's own pair of summands, and the statement is never that those summands are the two sectors. This is the corpus's material–informational structure read as a $\mathbb{Z}/2$-grading (*The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*).
 
@@ -160,7 +160,7 @@ What **is** compatible with a module is the grading the sector split induces on 
 
 For a product $\star$, an element $x$ is an **idempotent of** $\star$ when $x\star x=x$ and **square-zero of** $\star$ when $x\star x=0$. The four products give four different answers on the same four elements.
 
-| product | $\tilde\Pi_+,\tilde\Pi_-$ idempotent | $\tilde\Upsilon_1,\tilde\Upsilon_2$ square-zero | $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$ | two-sided unit | $S$ closed under $a\star\psi$ |
+| product | $\tilde\Pi_+,\tilde\Pi_-$ idempotent | $\hat\Upsilon_1,\hat\Upsilon_2$ square-zero | $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$ | two-sided unit | $S$ closed under $a\star\psi$ |
 |---|---|---|---|---|---|
 | plain bilinear, $\tilde P\tilde Q$ | yes | yes | yes | yes | yes |
 | quaternionic bilinear, $\tilde P^{\natural}\tilde Q$ | no | yes | no | no | yes |
@@ -204,10 +204,10 @@ The two structures carry two different physical jobs on one carrier.
 
 ### The Basis and the Gram Matrix
 
-A general spinor of $S$ is $\tilde\psi=\psi_1\tilde\Pi_++\psi_2\tilde\Upsilon_2$ with $\psi_1,\psi_2\in\mathbb{C}$, and the coordinate map $\tilde\psi\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of modules. The Gram matrix $G=\tfrac12 I_2$ says that the two basis spinors are orthogonal and of equal length,
+A general spinor of $S$ is $\tilde\psi=\psi_1\tilde\Pi_++\psi_2\hat\Upsilon_2$ with $\psi_1,\psi_2\in\mathbb{C}$, and the coordinate map $\tilde\psi\leftrightarrow(\psi_1,\psi_2)^{T}$ is an isomorphism of modules. The Gram matrix $G=\tfrac12 I_2$ says that the two basis spinors are orthogonal and of equal length,
 
 $$
-\langle\tilde\Pi_+,\tilde\Upsilon_2\rangle_*=0,\qquad \langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\tilde\Upsilon_2,\tilde\Upsilon_2\rangle_*=\tfrac12 .
+\langle\tilde\Pi_+,\hat\Upsilon_2\rangle_*=0,\qquad \langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\hat\Upsilon_2,\hat\Upsilon_2\rangle_*=\tfrac12 .
 $$
 
 ### The Norm and the Born Pairing
@@ -264,10 +264,10 @@ The four general products of the biquaternion space are the plain bilinear $\til
 
 ### The Traps
 
-- **The words move with the product.** *Idempotent* and *square-zero* are relative to a product: $\tilde\Pi_+$ is idempotent in the plain product and not in the quaternionic one, and $\tilde\Upsilon_2$ is square-zero in the two bilinear products and not in the two sesquilinear ones. A statement that does not name its product is read in the plain product.
+- **The words move with the product.** *Idempotent* and *square-zero* are relative to a product: $\tilde\Pi_+$ is idempotent in the plain product and not in the quaternionic one, and $\hat\Upsilon_2$ is square-zero in the two bilinear products and not in the two sesquilinear ones. A statement that does not name its product is read in the plain product.
 - **Positivity is not the plain product.** The plain bilinear form is indefinite, of signature $(4,4)$ on the real space; the positive form needs the second slot read through ${}^{*}$. The Hilbert structure must not be attributed to the general plain algebra.
 - **The sectors are real, not complex.** The split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is the eigenspace decomposition of the conjugation, and multiplication by $i$ exchanges the two sectors. It is a third structure, transverse to the module and to the Hilbert space, and it is not a $\mathbb{C}\times\mathbb{C}$ splitting of the complex carrier $S$: no nonzero complex subspace lies in a sector, so no amplitude of $S$ is material or informational by itself.
-- **Idempotent does not mean Hermitian.** Every idempotent of the framework's vacuum family $\tfrac12(e_0\pm i\hat\mu)$ is Hermitian and lies in $\mathbb{M}_+$, but that is a property of the family and not of idempotence. The idempotents of $\mathbb{B}$ are the trivial $0$ and $e_0$ and every $\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi^2=e_0$, and the roots outside the purely imaginary family give a four-real-parameter family of idempotents lying in none of the four four-dimensional remarkable subspaces, hence in neither sector (*Square Roots of One and the Idempotents of the General Plain Algebra*). Idempotence is not a sector condition: $\mathbb{M}_-$ holds no nonzero idempotent at all. Hermiticity is the extra hypothesis, and it is the one that makes a projector's Peirce complement also its orthogonal complement.
+- **Idempotent does not mean Hermitian.** Every idempotent of the framework's vacuum family $\tfrac12(e_0\pm i\hat u)$ is Hermitian and lies in $\mathbb{M}_+$, but that is a property of the family and not of idempotence. The idempotents of $\mathbb{B}$ are the trivial $0$ and $e_0$ and every $\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi^2=e_0$, and the roots outside the purely imaginary family give a four-real-parameter family of idempotents lying in none of the four four-dimensional remarkable subspaces, hence in neither sector (*Square Roots of One and the Idempotents of the General Plain Algebra*). Idempotence is not a sector condition: $\mathbb{M}_-$ holds no nonzero idempotent at all. Hermiticity is the extra hypothesis, and it is the one that makes a projector's Peirce complement also its orthogonal complement.
 - **The module and the pairing are not two normalisations of one object.** The module is closed under the plain left action and is a submodule; the sesquilinear product does not act on $S$ at all, it pairs it. A reader who replaces one by the other loses the distinction the article is about.
 - **The two minimal left ideals carry the same representation.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the **same** defining representation of $SL(2,\mathbb{C})$, so any statement that the two ideals carry different physics is a statement about a different product or a different real structure, not about the plain module. The module-level chirality of the Lorentz group (the two Weyl halves $S$ and $\bar S$) is invisible to the complex algebra and appears only through the real structure or on complexification. A **second, different** use of the word chirality occurs in the corpus: the grading operator of the spectral-triple and chirality-off-diagonal-mass interpretations, which distinguishes the two minimal left ideals (*The Spectral Triple of the Biquaternion Algebra*, *Bosonization in Biquaternionic Form*). The two conventions coexist and are not the same object; a reader should check which one an article means.
 
@@ -278,16 +278,16 @@ The four general products of the biquaternion space are the plain bilinear $\til
 
 ## Worked Verification
 
-The claims of the article are recomputed on the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ and on the four elements.
+The claims of the article are recomputed on the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ and on the four elements.
 
-- **Idempotents and nilpotents.** $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Upsilon_1^2=\tilde\Upsilon_2^2=0$ in the plain product, $\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_+$, $\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-$.
-- **Closure of the carrier.** $\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ is preserved by plain left multiplication on every basis element, and not preserved by the plain sesquilinear left multiplication.
-- **The one idempotent and one nilpotent.** $\mathbb{B}\tilde\Pi_+=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Upsilon_2$, each corner one-dimensional, and every element of the off-diagonal corner satisfies $(\tilde\Pi_- a\tilde\Pi_+)^2=0$ for a generic $a$.
-- **Gram matrix.** With $\langle u,v\rangle_*=\mathrm{Sc}(uv^{*})$ one has $\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\tilde\Upsilon_2,\tilde\Upsilon_2\rangle_*=\tfrac12$ and $\langle\tilde\Pi_+,\tilde\Upsilon_2\rangle_*=0$, so $G=\tfrac12 I_2$.
+- **Idempotents and nilpotents.** $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\hat\Upsilon_1^2=\hat\Upsilon_2^2=0$ in the plain product, $\hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+$, $\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-$.
+- **Closure of the carrier.** $\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ is preserved by plain left multiplication on every basis element, and not preserved by the plain sesquilinear left multiplication.
+- **The one idempotent and one nilpotent.** $\mathbb{B}\tilde\Pi_+=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\hat\Upsilon_2$, each corner one-dimensional, and every element of the off-diagonal corner satisfies $(\tilde\Pi_- a\tilde\Pi_+)^2=0$ for a generic $a$.
+- **Gram matrix.** With $\langle u,v\rangle_*=\mathrm{Sc}(uv^{*})$ one has $\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\hat\Upsilon_2,\hat\Upsilon_2\rangle_*=\tfrac12$ and $\langle\tilde\Pi_+,\hat\Upsilon_2\rangle_*=0$, so $G=\tfrac12 I_2$.
 - **Four-product table.** The idempotency, the square-zero property, the orthogonality, the unit and the closure are as the table of §*The Four Products Tested on the Space* records, each read in the named product.
-- **Hermiticity and the complement.** The form is Hermitian, $\langle\tilde\Pi_+,\tilde\Upsilon_2\rangle_*=\overline{\langle\tilde\Upsilon_2,\tilde\Pi_+\rangle_*}=0$, and the four matrix units $\tilde\Pi_+,\tilde\Upsilon_2,\tilde\Upsilon_1,\tilde\Pi_-$ are mutually orthogonal of norm $\tfrac12$, so the complementary ideal $\mathbb{B}\tilde\Pi_-$ is the orthogonal complement of $S$ and the form is the normalised Hilbert–Schmidt form of the matrix model.
+- **Hermiticity and the complement.** The form is Hermitian, $\langle\tilde\Pi_+,\hat\Upsilon_2\rangle_*=\overline{\langle\hat\Upsilon_2,\tilde\Pi_+\rangle_*}=0$, and the four matrix units $\tilde\Pi_+,\hat\Upsilon_2,\hat\Upsilon_1,\tilde\Pi_-$ are mutually orthogonal of norm $\tfrac12$, so the complementary ideal $\mathbb{B}\tilde\Pi_-$ is the orthogonal complement of $S$ and the form is the normalised Hilbert–Schmidt form of the matrix model.
 - **The sector split.** Multiplication by $i$ swaps the sectors on the four basis elements, $i\,\mathbb{M}_+=\mathbb{M}_-$ and $i\,\mathbb{M}_-=\mathbb{M}_+$, so no nonzero complex subspace lies in a sector; $\mathbb{M}_-$ contains no nonzero idempotent, while the Peirce complement $\tilde\Pi_-=e_0-\tilde\Pi_+$ is Hermitian and lies in $\mathbb{M}_+$. The symmetrised product grades by the sectors, $\mathbb{M}_+\circ\mathbb{M}_+\subseteq\mathbb{M}_+$, $\mathbb{M}_+\circ\mathbb{M}_-\subseteq\mathbb{M}_-$, $\mathbb{M}_-\circ\mathbb{M}_-\subseteq\mathbb{M}_+$, and ${}^{*}$ is an automorphism of it.
-- **Idempotence is not Hermiticity.** The vacuums $\tfrac12(e_0\pm i\hat\mu)$ are idempotent and Hermitian for every unit $\hat\mu$, but $\tilde\Xi=\sqrt3\,e_1+2ie_3$ satisfies $\tilde\Xi^2=e_0$ and gives an idempotent $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Pi^{*}\neq\tilde\Pi$ in neither sector; $\mathbb{M}_-$ holds no nonzero idempotent, over $2\times10^5$ random samples.
+- **Idempotence is not Hermiticity.** The vacuums $\tfrac12(e_0\pm i\hat u)$ are idempotent and Hermitian for every unit $\hat u$, but $\tilde\Xi=\sqrt3\,e_1+2ie_3$ satisfies $\tilde\Xi^2=e_0$ and gives an idempotent $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Pi^{*}\neq\tilde\Pi$ in neither sector; $\mathbb{M}_-$ holds no nonzero idempotent, over $2\times10^5$ random samples.
 
 ## Physical Readings
 
@@ -301,7 +301,7 @@ The claims of the article are recomputed on the basis $(\tilde\Pi_+,\tilde\Upsil
 
 ## Summary
 
-The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ of the biquaternion algebra carries two structures, and they belong to two different products of the space. It is a **left module of the general plain algebra**, the algebra of the plain bilinear product $\tilde P\tilde Q$: the product makes $S$ a minimal left ideal, an idempotent needs an associative product with a unit to be one, and the plain product is the only one of the four that is associative and unital, so the Peirce decomposition, the ideals and the module structure are facts about the plain product alone. It is a **Hilbert space of the general plain sesqualgebra**, the structure of the plain sesquilinear product $\tilde P\tilde Q^{*}$: the scalar form $\langle u,v\rangle_*=\mathrm{Sc}(uv^{*})$ restricts to the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ with Gram matrix $G=\tfrac12 I_2$ and is positive definite, while the plain bilinear form $B$ is indefinite on the real space, of signature $(4,4)$, so positivity needs the second slot read through ${}^{*}$ and is a fact about the sesquilinear product alone.
+The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ of the biquaternion algebra carries two structures, and they belong to two different products of the space. It is a **left module of the general plain algebra**, the algebra of the plain bilinear product $\tilde P\tilde Q$: the product makes $S$ a minimal left ideal, an idempotent needs an associative product with a unit to be one, and the plain product is the only one of the four that is associative and unital, so the Peirce decomposition, the ideals and the module structure are facts about the plain product alone. It is a **Hilbert space of the general plain sesqualgebra**, the structure of the plain sesquilinear product $\tilde P\tilde Q^{*}$: the scalar form $\langle u,v\rangle_*=\mathrm{Sc}(uv^{*})$ restricts to the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ with Gram matrix $G=\tfrac12 I_2$ and is positive definite, while the plain bilinear form $B$ is indefinite on the real space, of signature $(4,4)$, so positivity needs the second slot read through ${}^{*}$ and is a fact about the sesquilinear product alone.
 
 The two jobs are the two menu labels: the module is the group of **composition** and carries the Lorentz action and the double cover; the Hilbert space is the group of **probability** and carries the norm, the normalisation and the Born rule. On the four products tested against the four elements, only the plain product carries the whole module package, and neither sesquilinear product preserves the carrier at all, since it pairs the space rather than acting on it. This is the structural reason the module and the Hilbert space are two structures and not two views of one object.
 
@@ -321,19 +321,19 @@ A third structure cuts across the two, and it is real rather than complex: the s
 | $\tilde P\tilde Q^{*}$ | The general plain sesquilinear product |
 | $\tilde P^{\natural}\tilde Q^{*}$ | The general quaternionic sesquilinear product |
 | $\tilde\Pi_+=\tfrac12(e_0+ie_3),\ \tilde\Pi_-=\tfrac12(e_0-ie_3)$ | Orthogonal complete idempotents of the plain product |
-| $\tilde\Upsilon_1=\tfrac12(ie_1-e_2),\ \tilde\Upsilon_2=\tfrac12(ie_1+e_2)$ | The nilpotent matrix units $E_{12},E_{21}$ of the plain product |
-| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ | The spinor space, a minimal left ideal, $\dim_{\mathbb{C}}S=2$ |
+| $\hat\Upsilon_1=\tfrac12(ie_1-e_2),\ \hat\Upsilon_2=\tfrac12(ie_1+e_2)$ | The nilpotent matrix units $E_{12},E_{21}$ of the plain product |
+| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ | The spinor space, a minimal left ideal, $\dim_{\mathbb{C}}S=2$ |
 | $\mathbb{B}\tilde\Pi_+=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+$ | The ideal as its two Peirce corners: one idempotent, one nilpotent |
 | $\mathbb{B}\cong S\oplus S$ | The left regular module as two copies of the simple module |
 | $\langle u,v\rangle_*=\mathrm{Sc}(uv^{*})$ | The general plain sesquilinear form, the Hilbert metric on $S$ |
-| $G=\tfrac12 I_2$ | The Gram matrix of the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ |
+| $G=\tfrac12 I_2$ | The Gram matrix of the basis $(\tilde\Pi_+,\hat\Upsilon_2)$ |
 | $\mathsf{M}_2(e_k)=-i\sigma_k$ | The matrix model, $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\mathrm{Tr}(\tilde\rho\tilde H)=2\,\mathrm{Sc}(\tilde\rho\tilde H)$ | The Born rule as the trace pairing |
 | $SL(2,\mathbb{C})=\{\tilde\Lambda:\tilde\Lambda\tilde\Lambda^{\natural}=e_0\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |
 | $U(2)=\{\tilde U:\tilde U\tilde U^{*}=e_0\}$ | The unitary slice; the isometries of the Hermitian form, reducing to $SU(2)$ inside $SL(2,\mathbb{C})$ |
 | $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$ | The algebra is the operator algebra of the module |
 | $\tilde\Pi_+=|0\rangle\langle0|,\ \tilde\Pi_-=|1\rangle\langle1|$ | Occupation idempotents; ground and excited projectors |
-| $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\tilde\Upsilon_1\}=\bar S = S^{\perp}$ | The complement of $S$: the other Peirce summand and the orthogonal complement |
+| $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\hat\Upsilon_1\}=\bar S = S^{\perp}$ | The complement of $S$: the other Peirce summand and the orthogonal complement |
 | $\psi\mapsto\tilde\Lambda\psi$ | The Lorentz action on the module (plain left multiplication) |
 | $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$ | The invariant symplectic (bilinear) form on $S$ |
 | $h(\psi,\phi)=\psi^{\dagger}\phi$ | The Hermitian (sesquilinear) form on $S$ |

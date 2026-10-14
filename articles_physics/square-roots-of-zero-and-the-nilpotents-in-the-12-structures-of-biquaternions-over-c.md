@@ -82,7 +82,7 @@ is lightlike.
 
 **In the gauge band, a proper subfamily of the cone.** The fourth product's square vanishes on the
 subfamily $\{\overline{\tilde\Xi}\tilde\Xi=0\}$, a proper subfamily of the cone containing $e_0+ie_1$ and
-missing $ie_0+e_1+e_2+ie_3$. In the parametrisation $\tilde\Xi=c(\hat\mu+it)$ the square is the central
+missing $ie_0+e_1+e_2+ie_3$. In the parametrisation $\tilde\Xi=c(\hat u+it)$ the square is the central
 $c^{2}(t^{2}-1)e_0$, so the parametrised family meets the cone at the slopes $\lvert t\rvert=1$, while the
 full square-zero set of the structure is wider; the parametrised description and the full
 description are both recorded in the mathematics companion, which owns the set. The owner of the
@@ -104,7 +104,7 @@ Rank and the Positivity of the Dagger*.
 **pure** roots, $\Xi_0=0$ with $(\vec\Xi,\vec\Xi)=0$, are the nilpotent lightlike displacements of
 the vector subspace; the **non-pure** family, reached only in the structures whose square is not the plain
 square, consists of the square-zero elements of the indefinite bands and carries the lightlike family
-$c(\hat\mu\pm i)$ of the gauge sesquilinear structure. The elementary physical case is a pure nilpotent
+$c(\hat u\pm i)$ of the gauge sesquilinear structure. The elementary physical case is a pure nilpotent
 $\tilde\Upsilon$ with $\tilde\Upsilon^{2}=0$: a translation along a null direction, whose iteration adds
 nothing quadratic. The corpus's nilpotent convention and the class are owned by this article, and the
 square-zero condition of the fourth product belongs to *The Square of the General Quaternionic
@@ -369,16 +369,16 @@ a null vector.
 Biquaternionic Form* is the pair
 
 $$
-\tilde\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \tilde\Upsilon_2=\tfrac12(ie_1+e_2),
+\hat\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \hat\Upsilon_2=\tfrac12(ie_1+e_2),
 $$
 
 and a direct computation gives
 
 $$
-\tilde\Upsilon_1^{2}=\tilde\Upsilon_2^{2}=0,\qquad
-\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_+,\qquad
-\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-,\qquad
-\{\tilde\Upsilon_1,\tilde\Upsilon_2\}=e_0,
+\hat\Upsilon_1^{2}=\hat\Upsilon_2^{2}=0,\qquad
+\hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+,\qquad
+\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-,\qquad
+\{\hat\Upsilon_1,\hat\Upsilon_2\}=e_0,
 $$
 
 with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$ the vacuum and occupied
@@ -389,7 +389,7 @@ anticommutator $\{\tilde a,\tilde a^\dagger\}=e_0$ is the statement that a squar
 the identity. Pauli exclusion is the vanishing square: $\tilde\Upsilon^{2}=0$ says that a second
 application of the same step gives nothing, which is exactly the algebraic form of the statement that a
 mode cannot be occupied twice. The vacuum is the product of the two steps,
-$\tilde\Pi_+=\tilde\Upsilon_1\tilde\Upsilon_2$, so the state and the ladder are not independent objects:
+$\tilde\Pi_+=\hat\Upsilon_1\hat\Upsilon_2$, so the state and the ladder are not independent objects:
 the state is what the nilpotent pair creates. *The Spin–Statistics Theorem in Biquaternionic Form* fixes
 the anticommutator, and *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form* gives the
 two-projector picture of the mode, which the pair $\tilde\Pi_+,\tilde\Pi_-$ is in the algebra.
@@ -479,7 +479,7 @@ the discretised symbol, and what it says is that the square-zero set of a lattic
 **Nilpotency is why the Wick theorem is exact.** *The Wick Theorem in Biquaternionic Form* observes that
 for a **single fermionic mode** the theorem is not an approximation or a statement about vacuum
 expectation values in a large space: because the mode operators are square-zero,
-$\tilde\Upsilon_1^{2}=\tilde\Upsilon_2^{2}=0$, every product of more than two mode operators collapses, so
+$\hat\Upsilon_1^{2}=\hat\Upsilon_2^{2}=0$, every product of more than two mode operators collapses, so
 the four-point and six-point contractions reduce to products of the single two-point contraction with the
 fermionic signs. The identity is then an **exact operator identity** in a four-real-dimensional subalgebra,
 proved by exhibiting both sides. Nilpotency is therefore what makes the fermionic contraction **terminate**:
@@ -603,8 +603,8 @@ definite structural reason — so the contraction limit is the one degeneration 
   difference is made of the states. A state is a zero divisor that is idempotent, a lightlike displacement
   is a zero divisor that is nilpotent.
 - The one-mode fermionic ladder is a pair of nilpotents, with
-  $\tilde\Upsilon_1^{2}=\tilde\Upsilon_2^{2}=0$ and
-  $\{\tilde\Upsilon_1,\tilde\Upsilon_2\}=e_0$, whose product is the vacuum projector. Nilpotency is Pauli
+  $\hat\Upsilon_1^{2}=\hat\Upsilon_2^{2}=0$ and
+  $\{\hat\Upsilon_1,\hat\Upsilon_2\}=e_0$, whose product is the vacuum projector. Nilpotency is Pauli
   exclusion, and the trace obstruction is why the algebra's ladder is fermionic.
 - The same equation $Q^{2}=0$ governs the odd nilpotents of the corpus: the BRST charge, whose cohomology
   $\ker Q/\mathrm{im}\,Q$ is the physical state space, and the supercharge, whose anticommutator is the

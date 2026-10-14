@@ -225,7 +225,7 @@ $$
 A^{\uparrow} = \{y \in Y : x \mathrel{R} y \text{ for every } x \in A\}, \qquad B^{\downarrow} = \{x \in X : x \mathrel{R} y \text{ for every } y \in B\}.
 $$
 
-Both maps reverse inclusions, so they are antitone, and the pair $(\uparrow, \downarrow)$ is a Galois connection between $(\mathcal{P}(X), \subseteq^{\mathrm{op}})$ and $(\mathcal{P}(Y), \subseteq^{\mathrm{op}})$; equivalently, the induced maps $A \mapsto A^{\uparrow\downarrow}$ and $B \mapsto B^{\downarrow\uparrow}$ are closure operators.
+Both maps reverse inclusions, so they are antitone, and the pair $(\uparrow, \downarrow)$ is a Galois connection between $(\mathcal{P}(X), \subseteq^{\mathrm{opp}})$ and $(\mathcal{P}(Y), \subseteq^{\mathrm{opp}})$; equivalently, the induced maps $A \mapsto A^{\uparrow\downarrow}$ and $B \mapsto B^{\downarrow\uparrow}$ are closure operators.
 
 **Proposition.** For all $A \subseteq X$ and $B \subseteq Y$ one has $A \subseteq A^{\uparrow\downarrow}$ and $B \subseteq B^{\downarrow\uparrow}$, and the maps $A \mapsto A^{\uparrow\downarrow}$ and $B \mapsto B^{\downarrow\uparrow}$ are idempotent and monotone; moreover $A \subseteq B^{\downarrow}$ if and only if $B \subseteq A^{\uparrow}$.
 

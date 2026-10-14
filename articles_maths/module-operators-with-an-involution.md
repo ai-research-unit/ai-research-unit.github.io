@@ -145,7 +145,7 @@ This is how a module with two pairings carries two involutions on one ring, as *
 
 **(c) The symplectic case.** For $M=R^{2n}$ with the alternating pairing, the self-adjoint operators form the symplectic Lie algebra and $U(M)=Sp(2n)$; the congruence $f \mapsto g^{*}fg$ is the symplectic change of basis.
 
-**(d) The regular module of a division ring.** For $M=A=D$ with the regular pairing $\langle a,b\rangle=\sigma(a)b$, the self-adjoint operators under $\operatorname{End}_D(D)\cong D^{\mathrm{op}}$ are the symmetric elements of $D$, the skew-adjoint the antisymmetric elements, and $U(M)$ the unitary group of $D$.
+**(d) The regular module of a division ring.** For $M=A=D$ with the regular pairing $\langle a,b\rangle=\sigma(a)b$, the self-adjoint operators under $\operatorname{End}_D(D)\cong D^{\mathrm{opp}}$ are the symmetric elements of $D$, the skew-adjoint the antisymmetric elements, and $U(M)$ the unitary group of $D$.
 
 **(e) A congruence that is not unitary.** For $M=R^2$ with the standard pairing and $g=\operatorname{diag}(2,1)$, the congruence $f \mapsto g^{*}fg=g f g$ preserves self-adjointness but is not conjugation by a unitary element; it changes the operator's "shape" while keeping it symmetric.
 

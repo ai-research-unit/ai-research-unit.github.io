@@ -214,7 +214,7 @@ $$
 
 the vector part being $\vec n$.
 
-**Remark.** The example is the one the idempotents of the family supply. Along the three coordinate axes the idempotents are $\tilde\Pi = -\tfrac12 e_0 + \tfrac{\sqrt3}{2}\hat n$ with $\hat n \in \{\pm e_1, \pm e_2, \pm e_3\}$, and each has plain square $\tilde\Pi^{\natural} = -\tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat n$ and square in the multiplication $\tilde\Pi$ itself. The scalar part of the square is $\lvert-\tfrac12\rvert^{2} - \tfrac34 = -\tfrac12$, the scalar coordinate of the idempotent, in agreement with the scalar-part formula, and it is negative, which is why the family of idempotents is not the positive cone of the sibling product.
+**Remark.** The example is the one the idempotents of the family supply. Along the three coordinate axes the idempotents are $\tilde\Pi = -\tfrac12 e_0 + \tfrac{\sqrt3}{2}\hat u$ with $\hat u \in \{\pm e_1, \pm e_2, \pm e_3\}$, and each has plain square $\tilde\Pi^{\natural} = -\tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat u$ and square in the multiplication $\tilde\Pi$ itself. The scalar part of the square is $\lvert-\tfrac12\rvert^{2} - \tfrac34 = -\tfrac12$, the scalar coordinate of the idempotent, in agreement with the scalar-part formula, and it is negative, which is why the family of idempotents is not the positive cone of the sibling product.
 
 ## Summary
 

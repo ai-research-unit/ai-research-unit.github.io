@@ -31,7 +31,7 @@ This sign is not a convention of convenience: it is forced by the requirement th
 
 **Example.** The exterior algebra $\Lambda(V)$ on a finite-dimensional space, with the generators in degree $1$, is graded-commutative by the sign rule, since $vw = (-1)^{\lvert v\rvert\lvert w\rvert}wv = -wv$ for odd $v,w$. The symmetric algebra $\operatorname{Sym}(V)$ with generators of even degree is graded-commutative; a polynomial algebra with generators in odd degrees is not, and the graded-commutative version of it is the exterior algebra in those generators. The two algebras andare therefore the even and the odd incarnations of one construction, and the sign rule is what distinguishes them.
 
-**Proposition.** Let $A$ be a graded algebra. Then the tensor product $A\otimes_k A^{\mathrm{op}}$ with the multiplication $(a\otimes b)(a'\otimes b') = (-1)^{\lvert b\rvert\lvert a'\rvert}aa'\otimes bb'$ is a graded algebra, the enveloping algebra of the graded setting, and graded left $A\otimes_kA^{\mathrm{op}}$-modules are the graded $A$-bimodules.
+**Proposition.** Let $A$ be a graded algebra. Then the tensor product $A\otimes_k A^{\mathrm{opp}}$ with the multiplication $(a\otimes b)(a'\otimes b') = (-1)^{\lvert b\rvert\lvert a'\rvert}aa'\otimes bb'$ is a graded algebra, the enveloping algebra of the graded setting, and graded left $A\otimes_kA^{\mathrm{opp}}$-modules are the graded $A$-bimodules.
 
 *Proof.* The associativity is a direct computation in which each crossing of a pair of factors contributes one sign; the signs cancel in exactly the four ways needed.
 
@@ -191,7 +191,7 @@ Homotopy of DG module morphisms is defined by $f-g = d_Nh + hd_M$; the **homotop
 | $d(ab) = (da)b + (-1)^{\lvert a\rvert}a(db)$ | graded Leibniz rule |
 | $H_\bullet(A)$, $H_\bullet(M)$ | homology of a DGA, of a DG module |
 | $\tau$ | signed interchange $M\otimes_kN\to N\otimes_kM$ |
-| $A\otimes_kA^{\mathrm{op}}$ | graded enveloping algebra |
+| $A\otimes_kA^{\mathrm{opp}}$ | graded enveloping algebra |
 | $K(A)$, $D(A)$ | homotopy category, derived category of DG $A$-modules |
 | $\simeq$ | homotopy equivalence (on morphisms, homotopy) |
 | $B(A)$, $\Omega(C)$ | bar construction, cobar construction |

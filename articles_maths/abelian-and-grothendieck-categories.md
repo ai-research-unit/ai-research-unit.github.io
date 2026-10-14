@@ -127,7 +127,7 @@ The elementary results of the preceding section were proved by the same element 
 
 **Theorem (Freyd–Mitchell).** Every small abelian category $\mathcal{A}$ admits a full, faithful and exact functor into the category $R\text{-}\mathbf{Mod}$ of left modules over some ring $R$. Consequently every finite diagram in $\mathcal{A}$ can be realised in a module category, and every statement about finitely many objects and morphisms that is expressible by exactness, composition and the abelian axioms and that holds in all module categories holds in every abelian category.
 
-*Proof (in outline).* The category of additive functors from $\mathcal{A}^{\mathrm{op}}$ to $\mathbf{Ab}$ is abelian, and evaluation at an object is exact; the **Yoneda embedding** $A\mapsto\mathcal{A}(-,A)$ is full, faithful and left exact. It remains to correct the failure of exactness, and to reduce to a module category over a ring rather than a functor category. Mitchell's argument forms the ring $R=\operatorname{End}(\mathcal{P})^{\mathrm{op}}$ of endomorphisms of a suitable projective generator of the functor category and shows that the functor category has a full exact subcategory equivalent to $R\text{-}\mathbf{Mod}$ containing the image of $\mathcal{A}$.
+*Proof (in outline).* The category of additive functors from $\mathcal{A}^{\mathrm{opp}}$ to $\mathbf{Ab}$ is abelian, and evaluation at an object is exact; the **Yoneda embedding** $A\mapsto\mathcal{A}(-,A)$ is full, faithful and left exact. It remains to correct the failure of exactness, and to reduce to a module category over a ring rather than a functor category. Mitchell's argument forms the ring $R=\operatorname{End}(\mathcal{P})^{\mathrm{opp}}$ of endomorphisms of a suitable projective generator of the functor category and shows that the functor category has a full exact subcategory equivalent to $R\text{-}\mathbf{Mod}$ containing the image of $\mathcal{A}$.
 
 ### Consequences
 
@@ -155,7 +155,7 @@ Grothendieck isolated a list of exactness conditions on the coproducts of an abe
 
 **Definition.** A **Grothendieck category** is an abelian category satisfying AB5 that has a generator, equivalently — the equivalence is a theorem of Grothendieck — an abelian category satisfying AB5 with a set of generators.
 
-**Example.** The category $R\text{-}\mathbf{Mod}$ is a Grothendieck category. The category of left modules over a sheaf of rings on a site, and the category of presheaves of abelian groups on a small category, are Grothendieck categories; the first is developed, the second is the functor category $\mathbf{Ab}^{\mathcal{C}^{\mathrm{op}}}$ and is the reason the theory applies to sheaves at all.
+**Example.** The category $R\text{-}\mathbf{Mod}$ is a Grothendieck category. The category of left modules over a sheaf of rings on a site, and the category of presheaves of abelian groups on a small category, are Grothendieck categories; the first is developed, the second is the functor category $\mathbf{Ab}^{\mathcal{C}^{\mathrm{opp}}}$ and is the reason the theory applies to sheaves at all.
 
 **Theorem.** A Grothendieck category has all small colimits, is complete, has enough injectives, and has an injective cogenerator.
 
@@ -185,7 +185,7 @@ Resolutions are the input to the derived-functor theory; their existence in a Gr
 
 ### The Theorem
 
-**Theorem (Gabriel–Popescu).** Let $\mathcal{A}$ be a Grothendieck category with generator $G$, and put $R=\operatorname{End}_{\mathcal{A}}(G)^{\mathrm{op}}$, so that $\operatorname{Hom}_{\mathcal{A}}(G,A)$ is a left $R$-module by precomposition. Then:
+**Theorem (Gabriel–Popescu).** Let $\mathcal{A}$ be a Grothendieck category with generator $G$, and put $R=\operatorname{End}_{\mathcal{A}}(G)^{\mathrm{opp}}$, so that $\operatorname{Hom}_{\mathcal{A}}(G,A)$ is a left $R$-module by precomposition. Then:
 
 (i) the functor $H=\operatorname{Hom}_{\mathcal{A}}(G,-):\mathcal{A}\to R\text{-}\mathbf{Mod}$ is full and faithful, hence left exact;
 
@@ -217,7 +217,7 @@ Not every notion of module theory has an abstract analogue. The tensor product o
 
 An additive category is a preadditive category with a zero object and biproducts, and in such a category finite products and finite coproducts coincide. An abelian category is an additive category in which every morphism has a kernel and a cokernel and the canonical map $\operatorname{coim}f\to\operatorname{im}f$ is an isomorphism; the module categories $R\text{-}\mathbf{Mod}$ are the archetypes, and in every abelian category the epi–mono factorisation, the snake lemma and the five lemma hold.
 
-The Freyd–Mitchell theorem embeds every small abelian category fully, faithfully and exactly into a module category, so every diagram chase valid for modules is valid in general. A Grothendieck category is an abelian category satisfying AB5 with a generator; it is complete and cocomplete, has filtered colimits exact, and has enough injectives as well as an injective cogenerator, so every object has an injective resolution. The Gabriel–Popescu theorem embeds a Grothendieck category with generator $G$ fully and faithfully, by $\operatorname{Hom}_{\mathcal{A}}(G,-)$, into the category of modules over $R=\operatorname{End}_{\mathcal{A}}(G)^{\mathrm{op}}$, and exhibits it as the quotient of that module category by a localising subcategory; when the subcategory is a hereditary torsion class the quotient is a category of modules with a Gabriel topology.
+The Freyd–Mitchell theorem embeds every small abelian category fully, faithfully and exactly into a module category, so every diagram chase valid for modules is valid in general. A Grothendieck category is an abelian category satisfying AB5 with a generator; it is complete and cocomplete, has filtered colimits exact, and has enough injectives as well as an injective cogenerator, so every object has an injective resolution. The Gabriel–Popescu theorem embeds a Grothendieck category with generator $G$ fully and faithfully, by $\operatorname{Hom}_{\mathcal{A}}(G,-)$, into the category of modules over $R=\operatorname{End}_{\mathcal{A}}(G)^{\mathrm{opp}}$, and exhibits it as the quotient of that module category by a localising subcategory; when the subcategory is a hereditary torsion class the quotient is a category of modules with a Gabriel topology.
 
 The abstraction abstracts the additive part of module theory only. The tensor product, flatness, $\operatorname{Tor}$ and the determinant need a monoidal or a duality structure that an abelian category does not carry, and they remain where this part put them, in the module and algebra categories.
 
@@ -234,7 +234,7 @@ The abstraction abstracts the additive part of module theory only. The tensor pr
 | $\partial$ | connecting morphism of the snake lemma |
 | AB3, AB4, AB5 | existence and exactness of small coproducts, filtered colimits |
 | $G$ | a generator; $\operatorname{Hom}(G,-)$ faithful |
-| $R=\operatorname{End}_{\mathcal{A}}(G)^{\mathrm{op}}$ | endomorphism ring of a generator, acting on $\operatorname{Hom}_{\mathcal{A}}(G,-)$ on the left |
+| $R=\operatorname{End}_{\mathcal{A}}(G)^{\mathrm{opp}}$ | endomorphism ring of a generator, acting on $\operatorname{Hom}_{\mathcal{A}}(G,-)$ on the left |
 | $\mathcal{A}/\mathcal{S}$ | quotient by a Serre or localising subcategory |
 | $T=-\otimes_RG$ | left adjoint of $\operatorname{Hom}_{\mathcal{A}}(G,-)$ in the Gabriel–Popescu theorem |
 | $I^\bullet$, $P_\bullet$ | injective and projective resolutions |

@@ -116,7 +116,7 @@ assignment $\tilde P\mapsto L_{\tilde P}$ is an **injective anti-isomorphism of 
 of the plain algebra onto $M_L$,
 
 $$
-M_L\cong\mathbb{B}^{\mathrm{op}},
+M_L\cong\mathbb{B}^{\mathrm{opp}},
 $$
 
 the opposite monoid. The set $M_R=\{\varrho_{\tilde P}\}$ is a monoid with identity $\varrho_{e_0}=\mathrm{id}$ and
@@ -167,7 +167,7 @@ is *The Left Multiplications of the Quaternionic Product and the Opposite Monoid
 sixteen operators $L_{e_m}\varrho_{e_n}$ are the products of the two bases $\{L_{e_m}\}$ and $\{\varrho_{e_n}\}$ of the
 left and the right regular representation and are linearly independent, so they already span all of
 $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The two-sided family itself is the image of the decomposable tensors of
-$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{op}}$, the linearisation of the pair $(\tilde P,\tilde Q)$; a sum of
+$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, the linearisation of the pair $(\tilde P,\tilde Q)$; a sum of
 two-sided operators is two-sided only when the corresponding tensor is decomposable, and a general endomorphism of the
 frame is such a sum and not a single two-sided product.
 
@@ -343,9 +343,9 @@ the only obstruction to a two-sided operation being an automorphism. The interpr
 ## The Operators Acting on the State Space
 
 The operators of the band act on the state space of the corpus, and since $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$
-their action is the plain action with the parameter conjugated. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$
+their action is the plain action with the parameter conjugated. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$
 be the minimal left ideal, with $\tilde\Pi_-=e_0-\tilde\Pi_+$ the complementary idempotent and
-$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\tilde\Upsilon_1\}$ the complement, as in *The Spinor Space as a Module
+$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\hat\Upsilon_1\}$ the complement, as in *The Spinor Space as a Module
 and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*.
 
 **Proposition (the left actions exhaust the operators of the state space).** The map
@@ -547,7 +547,7 @@ operator calculus of the twelve rows is one calculus: the swap of the sides belo
 
 **Proved.** The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde X)=\tilde P^{\natural}\tilde X$,
 the plain left multiplications by the conjugated parameter, and they compose by the **reversed** law
-$L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$, so that $M_L\cong\mathbb{B}^{\mathrm{op}}$ is a monoid
+$L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$, so that $M_L\cong\mathbb{B}^{\mathrm{opp}}$ is a monoid
 anti-isomorphic to the plain multiplicative monoid, the anti-isomorphism lying in the natural conjugation; the twisted
 right multiplications $\varrho_{\tilde P}(\tilde X)=\tilde X\tilde P^{\natural}$ compose by the **direct** law and are a
 monoid isomorphic to $\mathbb{B}$; the right multiplications of the product do not close; the product has a left unit
@@ -610,7 +610,7 @@ multiplication $L_{\tilde P}(\tilde X)=\tilde P^{\natural}\tilde X$, the right m
 $R_{\tilde P}(\tilde X)=\tilde X^{\natural}\tilde P$ and the twisted right multiplication
 $\varrho_{\tilde P}(\tilde X)=\tilde X\tilde P^{\natural}$, with the two-sided operators $L_{\tilde P}\varrho_{\tilde Q}$.
 The left family composes by the **reversed** law $L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$, so it is a monoid
-$M_L\cong\mathbb{B}^{\mathrm{op}}$ anti-isomorphic to the plain multiplicative monoid, the anti-isomorphism lying in the
+$M_L\cong\mathbb{B}^{\mathrm{opp}}$ anti-isomorphic to the plain multiplicative monoid, the anti-isomorphism lying in the
 natural conjugation; the twisted right family composes by the **direct** law and is a monoid isomorphic to
 $\mathbb{B}$; the right multiplication of the product does not close; the product has a left unit and no right unit, so
 no two-sided unit; and the mixed composites commute and span the whole endomorphism algebra of complex dimension
@@ -643,7 +643,7 @@ Lorentz transformations, and the division of the parameters by the sign of the n
 | $L_{\tilde P}(\tilde X)=\tilde P\star\tilde X=\tilde P^{\natural}\tilde X$ | the left multiplication; the plain left multiplication by $\tilde P^{\natural}$ |
 | $R_{\tilde P}(\tilde X)=\tilde X\star\tilde P=\tilde X^{\natural}\tilde P$ | the right multiplication of the product; it does not close |
 | $\varrho_{\tilde P}(\tilde X)=\tilde X\tilde P^{\natural}$ | the twisted right multiplication, the closed mirror |
-| $L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$ | the reversed composition law; $M_L\cong\mathbb{B}^{\mathrm{op}}$ |
+| $L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$ | the reversed composition law; $M_L\cong\mathbb{B}^{\mathrm{opp}}$ |
 | $\varrho_{\tilde P}\varrho_{\tilde R}=\varrho_{\tilde P\tilde R}$ | the direct composition law; $M_R\cong\mathbb{B}$ |
 | $L_{\tilde P}\varrho_{\tilde Q}(\tilde X)=\tilde P^{\natural}\tilde X\tilde Q^{\natural}$ | the two-sided operators; span $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, dimension sixteen |
 | $N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | the general quaternionic bilinear form, Gram $I_4$; the interval on $\mathbb{M}_-$ |

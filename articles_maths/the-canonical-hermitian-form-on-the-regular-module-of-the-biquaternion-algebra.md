@@ -61,7 +61,7 @@ so the twist of the left regular module is the right regular module up to the co
 
 **Proof.** The map $\sigma$ is bijective, being an involution, hence of order two; for the right actions, $\sigma(\tilde P\cdot\tilde Q)=\sigma(\sigma(\tilde Q)\tilde P)=\sigma(\tilde P)\sigma(\sigma(\tilde Q))=\sigma(\tilde P)\tilde Q$, which is the ordinary right action on $\sigma(\tilde P)$; and additivity is the additivity of $\sigma$.
 
-**Corollary (the two cases).** Through the star the twist of ${}_{\mathbb{B}}\mathbb{B}$ is the right regular module $\mathbb{B}_{\mathbb{B}}$ under the antilinear comparison $\tilde P\mapsto\tilde P^{*}$; through the natural sign it is the same statement under a $\mathbb{C}$-linear comparison. The two one-sided regular modules, which the module theory of *Modules over the General Plain Algebra of Biquaternions* keeps apart as $\mathbb{B}$ and $\mathbb{B}^{\mathrm{op}}$, are interchangeable through an involution, and the statement $\mathbb{B}\cong\mathbb{B}^{\mathrm{op}}$ of the module theory is the twist read backwards.
+**Corollary (the two cases).** Through the star the twist of ${}_{\mathbb{B}}\mathbb{B}$ is the right regular module $\mathbb{B}_{\mathbb{B}}$ under the antilinear comparison $\tilde P\mapsto\tilde P^{*}$; through the natural sign it is the same statement under a $\mathbb{C}$-linear comparison. The two one-sided regular modules, which the module theory of *Modules over the General Plain Algebra of Biquaternions* keeps apart as $\mathbb{B}$ and $\mathbb{B}^{\mathrm{opp}}$, are interchangeable through an involution, and the statement $\mathbb{B}\cong\mathbb{B}^{\mathrm{opp}}$ of the module theory is the twist read backwards.
 
 ## The Involution Is the Symmetry of the Bimodule
 
@@ -143,7 +143,7 @@ so that $h(\tilde P,\tilde R)=\tfrac12\bigl(q(\tilde P+\tilde R)-q(\tilde P)-q(\
 
 **Proposition.** The $\mathbb{B}$-linear automorphisms of $h$ are exactly the right multiplications $R_{\tilde U}$ by the unitary elements $\tilde U\in U_{{}^{*}}(\mathbb{B})$, and they form a group isomorphic to $U_{{}^{*}}(\mathbb{B})$. A left multiplication $L_{\tilde U}$ is a form-preserving map exactly when $\tilde U$ is a central unitary element, that is $\tilde U=\lambda e_0$ with $|\lambda|=1$.
 
-**Proof.** The $\mathbb{B}$-linear endomorphisms of ${}_{\mathbb{B}}\mathbb{B}$ are the right multiplications $R_{\tilde B}$, $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$, by *Modules over the General Plain Algebra of Biquaternions*. Now
+**Proof.** The $\mathbb{B}$-linear endomorphisms of ${}_{\mathbb{B}}\mathbb{B}$ are the right multiplications $R_{\tilde B}$, $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{opp}}$, by *Modules over the General Plain Algebra of Biquaternions*. Now
 
 $$
 h(\tilde P\tilde B,\tilde R\tilde B)=\tilde P\tilde B(\tilde R\tilde B)^{*}=\tilde P\tilde B\tilde B^{*}\tilde R^{*}=\tilde P\,(\tilde B\tilde B^{*})\,\tilde R^{*},

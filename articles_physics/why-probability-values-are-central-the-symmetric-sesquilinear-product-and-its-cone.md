@@ -105,23 +105,23 @@ the two trivial ones (*The Conjugate-Commutative Law and the Idempotents of the 
 
 ### A Projector Is Not an Idempotent of the Operation
 
-The corpus's pure states are the idempotents of the algebra, $\tilde\Pi_{1,2}(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$ with $\lvert\hat\mu\rvert=1$; they are the rank-one projections and the boundary of the Bloch ball (*The Born Rule as a Trace Formula — Derivation and Comparison*, *Decoherence as Idempotent Projection*). Under the operation of this block,
+The corpus's pure states are the idempotents of the algebra, $\tilde\Pi_{1,2}(\hat u)=\tfrac12(e_0\pm i\hat u)$ with $\lvert\hat u\rvert=1$; they are the rank-one projections and the boundary of the Bloch ball (*The Born Rule as a Trace Formula — Derivation and Comparison*, *Decoherence as Idempotent Projection*). Under the operation of this block,
 
 $$
 \tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=H(\tilde\Pi_{1,2},\tilde\Pi_{1,2})e_0=\tfrac12\,e_0 ,
 $$
 
-for **every** unit direction $\hat\mu$. A pure state is therefore **not an idempotent** of the operation, and, sharper still, all pure states have the same **self-pairing** $\tfrac12 e_0$: the algebraic norm of the block on the pure states is constant and carries no orientation, which is why the operation's idempotent equation finds only $0$ and $e_0$. What the operation does see is the **relative** direction of two elements, because on $\mathbb{M}_{+}$ the form is positive definite of rank four and
+for **every** unit direction $\hat u$. A pure state is therefore **not an idempotent** of the operation, and, sharper still, all pure states have the same **self-pairing** $\tfrac12 e_0$: the algebraic norm of the block on the pure states is constant and carries no orientation, which is why the operation's idempotent equation finds only $0$ and $e_0$. What the operation does see is the **relative** direction of two elements, because on $\mathbb{M}_{+}$ the form is positive definite of rank four and
 
 $$
-H\bigl(\tilde\Pi_{1,2}(\hat\mu),\tilde\Pi_{1,2}(\hat\nu)\bigr)=\tfrac12\cos^{2}\frac{\theta}{2},\qquad \hat\mu\cdot\hat\nu=\cos\theta,
+H\bigl(\tilde\Pi_{1,2}(\hat u),\tilde\Pi_{1,2}(\hat\nu)\bigr)=\tfrac12\cos^{2}\frac{\theta}{2},\qquad \hat u\cdot\hat\nu=\cos\theta,
 $$
 
 so two states of different direction are separated by the pairing even though each has the same algebraic norm. The value $\tfrac12 e_0$ is one half of the trace pairing of a projector with itself — the halved certainty $\mathrm{Tr}(\tilde\Pi^{2})=1$ — and it is the algebraic norm of a state and not a measurement of one.
 
-**Interpretation (the overlap, and where the factor of two sits).** The value $H(\tilde\Pi(\hat\mu),\tilde\Pi(\hat\nu))=\tfrac12\cos^{2}(\theta/2)$ is **one half of the Born overlap** of the two states; twice it, $\cos^{2}(\theta/2)$, is the **transition probability** that a state prepared in the direction $\hat\mu$ passes a test prepared in the direction $\hat\nu$, maximal at $\theta=0$ and vanishing at $\theta=\pi$. The constant self-pairing $\tfrac12 e_0$ and the varying relative pairing are the two faces of one fact: a state has no orientation against itself and a full one against another, so the **algebraic norm of the operation is uninformative and its off-diagonal carries the relative amplitude**. The one half is the same one half that makes the operation one half of the Born trace pairing, and it must be carried in the comparison, not dropped.
+**Interpretation (the overlap, and where the factor of two sits).** The value $H(\tilde\Pi(\hat u),\tilde\Pi(\hat\nu))=\tfrac12\cos^{2}(\theta/2)$ is **one half of the Born overlap** of the two states; twice it, $\cos^{2}(\theta/2)$, is the **transition probability** that a state prepared in the direction $\hat u$ passes a test prepared in the direction $\hat\nu$, maximal at $\theta=0$ and vanishing at $\theta=\pi$. The constant self-pairing $\tfrac12 e_0$ and the varying relative pairing are the two faces of one fact: a state has no orientation against itself and a full one against another, so the **algebraic norm of the operation is uninformative and its off-diagonal carries the relative amplitude**. The one half is the same one half that makes the operation one half of the Born trace pairing, and it must be carried in the comparison, not dropped.
 
-**Remark (verified).** $H(\tilde\Pi_{1,2},\tilde\Pi_{1,2})=\tfrac12$ for every projector of the corpus, so $\tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=\tfrac12e_0$, and $H(\tilde\Pi(\hat\mu),\tilde\Pi(\hat\nu))=\tfrac12\cos^{2}(\theta/2)$; the two directions are separated by the pairing, showing that the block is not blind to orientation even though its algebraic norm is constant. No nontrivial idempotent of the operation exists, the idempotent equation reducing on the centre to $\lvert\lambda\rvert^{2}=\lambda$.
+**Remark (verified).** $H(\tilde\Pi_{1,2},\tilde\Pi_{1,2})=\tfrac12$ for every projector of the corpus, so $\tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=\tfrac12e_0$, and $H(\tilde\Pi(\hat u),\tilde\Pi(\hat\nu))=\tfrac12\cos^{2}(\theta/2)$; the two directions are separated by the pairing, showing that the block is not blind to orientation even though its algebraic norm is constant. No nontrivial idempotent of the operation exists, the idempotent equation reducing on the centre to $\lvert\lambda\rvert^{2}=\lambda$.
 
 ### The Operation Selects No State
 
@@ -167,7 +167,7 @@ an indefinite scalar part together with a real vector part; the restriction of t
 - A probability value is a **central number**, unpacked from the algebra and not chosen.
 - The law is conjugate-commutative, and the natural conjugation is an automorphism while the star is the reversal.
 - The algebraic norm of a state is its **purity**, one half of $\mathrm{Tr}(\tilde\rho^{2})$.
-- The relative pairing is **one half of the Born overlap**: $2H(\tilde\Pi(\hat\mu),\tilde\Pi(\hat\nu))=\cos^{2}(\theta/2)$ is the transition probability, the algebraic norm being uninformative and the off-diagonal carrying the relative amplitude.
+- The relative pairing is **one half of the Born overlap**: $2H(\tilde\Pi(\hat u),\tilde\Pi(\hat\nu))=\cos^{2}(\theta/2)$ is the transition probability, the algebraic norm being uninformative and the off-diagonal carrying the relative amplitude.
 
 **What it does not give.**
 - It gives no orientation: every pure state has the same self-pairing $\tfrac12 e_0$, and its idempotents are only $0$ and $e_0$. The orientation is carried by the antisymmetric algebraic norm and by the relative pairing of two distinct elements.
@@ -192,7 +192,7 @@ The values of the symmetric plain sesquilinear product are the **centre** of the
 | $\tilde\rho\circledast\tilde\rho=\tfrac12\mathrm{Tr}(\tilde\rho^{2})e_0$ | the algebraic norm of a state is its purity |
 | $\{\tilde Q\circledast\tilde Q\}=\mathbb{R}_{\ge0}e_0$ | the one-dimensional cone of the operation |
 | $\{0,e_0\}$ | the idempotents of the operation |
-| $\tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=\tfrac12 e_0$ | a projector is not an idempotent of the operation; $H(\tilde\Pi(\hat\mu),\tilde\Pi(\hat\nu))=\tfrac12\cos^{2}(\theta/2)$ |
+| $\tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=\tfrac12 e_0$ | a projector is not an idempotent of the operation; $H(\tilde\Pi(\hat u),\tilde\Pi(\hat\nu))=\tfrac12\cos^{2}(\theta/2)$ |
 | $\mathrm{SQS}(\tilde P,\tilde Q)=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ | the symmetric quaternionic sesquilinear product |
 | $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ | the indefinite Krein form of the quaternionic row |
 | $\mathbb{M}_{+}$ | the state side, carried by the plain row alone |

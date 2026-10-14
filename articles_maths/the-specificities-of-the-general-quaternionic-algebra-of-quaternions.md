@@ -48,7 +48,7 @@ nonzero at $[e_1,e_0,e_0] = 2e_1$ and at $24$ of the $64$ basis triples. The pro
 
 ## The Two One-Sided Actions
 
-**Theorem (the left action).** The left multiplications $L_{\tilde p}(\tilde x) = \tilde p \star \tilde x = \tilde p^{\natural}\tilde x$ satisfy $L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p}$, so the family $\{L_{\tilde p}\}$ is closed under composition and is a monoid isomorphic to the opposite algebra $\mathbb{H}^{\mathrm{op}}$; the assignment $\tilde p \mapsto L_{\tilde p}$ is injective.
+**Theorem (the left action).** The left multiplications $L_{\tilde p}(\tilde x) = \tilde p \star \tilde x = \tilde p^{\natural}\tilde x$ satisfy $L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p}$, so the family $\{L_{\tilde p}\}$ is closed under composition and is a monoid isomorphic to the opposite algebra $\mathbb{H}^{\mathrm{opp}}$; the assignment $\tilde p \mapsto L_{\tilde p}$ is injective.
 
 **Theorem (the right side).** The honest right multiplications $\tilde x \mapsto \tilde x \star \tilde p$ do **not** close under composition. The twisted right multiplications $\varrho_{\tilde p}(\tilde x) = \tilde x\tilde p^{\natural}$ do close, with the direct law $\varrho_{\tilde p}\varrho_{\tilde q} = \varrho_{\tilde p\tilde q}$, so that $\{\varrho_{\tilde p}\} \cong \mathbb{H}$ on the right; the two families do not commute in general.
 

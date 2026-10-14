@@ -21,13 +21,13 @@ $$
 Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
 
 $$
-\partial_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\hat\mu} - \psi_{n-\hat\mu}}{2a}.
+\partial_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\hat u} - \psi_{n-\hat u}}{2a}.
 $$
 
 The naive action is then
 
 $$
-S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}\gamma_\mu\frac{\psi_{n+\hat\mu}-\psi_{n-\hat\mu}}{2a} + m\psi_n\right),
+S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}\gamma_\mu\frac{\psi_{n+\hat u}-\psi_{n-\hat u}}{2a} + m\psi_n\right),
 $$
 
 which reduces to the continuum action as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
@@ -154,7 +154,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 
 | Symbol | Meaning |
 |---|---|
-| $a$, $n$, $\hat\mu$ | Lattice spacing, site index, unit lattice vector |
+| $a$, $n$, $\hat u$ | Lattice spacing, site index, unit lattice vector |
 | $S_F^L$ | Naive lattice fermion action |
 | $\pi_A$ | The sixteen sign patterns with entries $0$ or $\pi$ |
 | $S_\nu = i\gamma_5\gamma_\nu$ | Taste-exchange generators, $S_A$ the corresponding products |

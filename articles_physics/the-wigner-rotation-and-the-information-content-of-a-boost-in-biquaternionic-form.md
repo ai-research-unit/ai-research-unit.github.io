@@ -16,9 +16,9 @@ The findings are stated in advance.
 
 The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$ with $e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$. The boost rotor is
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u = e^{(\psi/2)\,i\hat u}, \qquad N(\tilde{\Lambda}) = 1 ,
+\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b} = e^{(\psi/2)\,i\hat u_{\mathrm b}}, \qquad N(\tilde{\Lambda}) = 1 ,
 $$
-with $\psi$ the rapidity and $\hat u$ the boost direction; the four-velocity of a particle boosted from rest is $\tilde{U} = ic\,\tilde{\Lambda}^{-1}\tilde{\Lambda}^{-1{}^{*}}$. The Wigner rotation is $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$ with $\tilde{U}' = \tilde{\Lambda}\tilde{U}\tilde{\Lambda}^{*}$.
+with $\psi$ the rapidity and $\hat u_{\mathrm b}$ the boost direction; the four-velocity of a particle boosted from rest is $\tilde{U} = ic\,\tilde{\Lambda}^{-1}\tilde{\Lambda}^{-1{}^{*}}$. The Wigner rotation is $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$ with $\tilde{U}' = \tilde{\Lambda}\tilde{U}\tilde{\Lambda}^{*}$.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the little group, the Wigner rotation, and the two actions of the unit-norm group.
@@ -40,8 +40,8 @@ $$
 $$
 The first bracket closes the rotation subalgebra, the second says that the boosts form a representation of the rotations, and the third — the decisive one — says that the **boosts do not close**: the commutator of two boosts is a rotation. This is the algebraic origin of everything that follows. A boost is the image of the generator $\tilde{K}$ under the exponential map,
 $$
-\tilde{\Lambda} = \exp\!\bigl(\psi\,\hat u\cdot i\mathbf{e}/2\bigr)
-= \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u ,
+\tilde{\Lambda} = \exp\!\bigl(\psi\,\hat u_{\mathrm b}\cdot i\mathbf{e}/2\bigr)
+= \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b} ,
 $$
 which is Hermitian because $\tilde{K}$ is Hermitian and $i\tilde{K}$ is anti-Hermitian. The set of pure boosts is therefore the exponential of a three-dimensional real subspace of Hermitian generators, and it is a symmetric space rather than a group: the product of two boosts is a boost times a rotation, by the third bracket.
 
@@ -59,7 +59,7 @@ $$
 $$
 which preserves the biquaternion norm because $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}) = N(\tilde{\Lambda})N(\tilde{Q})N(\tilde{\Lambda}^{*}) = N(\tilde{Q})$: the interval, the mass shell, and the light cone are all invariant. On the informational sector it acts on the spinor by left multiplication, and that action is not unitary: $\tilde{\Lambda}^{*}\tilde{\Lambda} = e_0$ fails for a boost, so the spinor norm is scaled,
 $$
-\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|\tilde{\Lambda}^{*}\tilde{\Lambda}|u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat u|u\rangle .
+\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|\tilde{\Lambda}^{*}\tilde{\Lambda}|u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat u_{\mathrm b}|u\rangle .
 $$
 A boost therefore has a trivial action on four-vectors and a non-trivial, non-unitary action on spinors. The physically unitary spin operation is neither of these; it is the little-group part extracted below.
 
@@ -81,14 +81,14 @@ $$
 $$
 satisfies $\tilde{W}(ic\,e_0)\tilde{W}^{*} = ic\,e_0$, hence lies in the stabilizer; being unit-norm it is a unit real quaternion,
 $$
-\tilde{W}\in SU(2), \qquad \tilde{W} = \cos\frac{\alpha}{2}e_0 + \sin\frac{\alpha}{2}\hat n .
+\tilde{W}\in SU(2), \qquad \tilde{W} = \cos\frac{\alpha}{2}e_0 + \sin\frac{\alpha}{2}\hat u_{\mathrm r} .
 $$
 This is the Wigner rotation, and it is the **unique** correction in the decomposition: any other choice differs by a little-group element that is already included in $\tilde{W}$.
 
 **A worked composition.** Take $\tilde{\Lambda}_1$ a boost along $x$ with rapidity $1$ and $\tilde{\Lambda}_2$ a boost along $y$ with rapidity $0.5$. Their product factors as a pure boost to the net four-velocity times the rotation
 $$
 \tilde{W} = 0.99366\,e_0 + 0.11246\,e_3 ,
-\qquad \alpha = 12.9146^\circ , \qquad \hat n = \hat z ,
+\qquad \alpha = 12.9146^\circ , \qquad \hat u_{\mathrm r} = \hat z ,
 $$
 a rotation about the axis normal to the plane of the two boost directions, by an angle that grows with both rapidities. The rotation is compact, unitary, and has determinant one: it is the same kind of object as an ordinary spatial rotation, and it is the only part of the composed boost that acts on the spin as a quantum operation.
 
@@ -223,7 +223,7 @@ $$
 $$
 while the rotation it generates lies in the traceless **material** sector,
 $$
-\tilde{W} = \cos\frac{\alpha}{2}e_0 + \sin\frac{\alpha}{2}\hat n, \qquad \hat n\cdot\mathbf{e}\in\mathbb{M}_-^{0} .
+\tilde{W} = \cos\frac{\alpha}{2}e_0 + \sin\frac{\alpha}{2}\hat u_{\mathrm r}, \qquad \hat u_{\mathrm r}\cdot\mathbf{e}\in\mathbb{M}_-^{0} .
 $$
 A boost is therefore an informational generator whose observable residue is a material rotation, and the map between them is the bracket $[\tilde{K},\tilde{K}] = \tilde{J}$ that carries the informational sector into the material one. The information content of a boost, read this way, is the material image of an informational operation: the rapidity, which is the parameter of an element of the informational sector, appears to an observer as an angle in the material sector, and it does so through a map that is a cocycle rather than a homomorphism. The same structure appeared in the relativistic-qubit article as the null-vector map, which carries an informational state to a material light direction; here it appears at the level of the generators, and the compact, material character of the image is what makes it observable as a rotation rather than as a boost.
 
@@ -231,7 +231,7 @@ Three algebraic facts about a boost are therefore three faces of one statement. 
 
 ## Summary
 
-A boost is the Hermitian unit-norm biquaternion $\tilde{\Lambda} = \cosh(\psi/2)e_0 + i\sinh(\psi/2)\hat u$. It acts on four-vectors by congruence, preserving the biquaternion norm, and on spinors by a non-unitary left multiplication. Its product with another boost is not a boost: the Cartan decomposition writes
+A boost is the Hermitian unit-norm biquaternion $\tilde{\Lambda} = \cosh(\psi/2)e_0 + i\sinh(\psi/2)\hat u_{\mathrm b}$. It acts on four-vectors by congruence, preserving the biquaternion norm, and on spinors by a non-unitary left multiplication. Its product with another boost is not a boost: the Cartan decomposition writes
 $$
 \tilde{\Lambda}_2\tilde{\Lambda}_1 = \tilde{\Lambda}_{\mathrm{boost}}\,\tilde{W}, \qquad \tilde{W}\in SU(2),
 $$
@@ -249,16 +249,16 @@ Because the boost parameter space is curved, a closed path of boosts that return
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{\Lambda} = \cosh\frac{\psi}{2}e_0 + i\sinh\frac{\psi}{2}\hat u$ | Boost rotor, $N(\tilde{\Lambda}) = 1$, Hermitian |
+| $\tilde{\Lambda} = \cosh\frac{\psi}{2}e_0 + i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ | Boost rotor, $N(\tilde{\Lambda}) = 1$, Hermitian |
 | $\psi$ | Rapidity |
-| $\hat u$ | Boost direction |
+| $\hat u_{\mathrm b}$ | Boost direction |
 | $\chi = \mathrm{atanh}(v/c)$ | Particle rapidity |
 | $\tilde{K}_k = \tfrac12 ie_k\in\mathbb{M}_+^{0}$ | Boost generators (informational) |
 | $\tilde{J}_k = \tfrac12 e_k\in\mathbb{M}_-^{0}$ | Rotation generators (material, compact) |
 | $[\tilde{K}_j,\tilde{K}_k] = \epsilon_{jkl}\tilde{J}_l$ | Non-closure of the boosts |
 | $SL(2,\mathbb{C}) = SU(2)\cdot\exp(p)$ | Cartan decomposition |
 | $\tilde{W}(\tilde{\Lambda},\tilde{U})$ | Wigner rotation, $\in SU(2)$ |
-| $\alpha$, $\hat n$ | Wigner angle and axis, $\hat n\perp\hat u,\hat p$ |
+| $\alpha$, $\hat u_{\mathrm r}$ | Wigner angle and axis, $\hat u_{\mathrm r}\perp\hat u_{\mathrm b},\hat p$ |
 | $\tilde{W}(\tilde{\Lambda}_2\tilde{\Lambda}_1,\tilde{U}) = \tilde{W}(\tilde{\Lambda}_2,\tilde{\Lambda}_1\tilde{U})\tilde{W}(\tilde{\Lambda}_1,\tilde{U})$ | Cocycle condition |
 | $\sum_i|p_i'\rangle\langle p_i|\otimes\tilde{W}_i$ | Boost as a controlled rotation |
 | $\tan\alpha = \sinh\psi\sinh\chi/(\cosh\psi+\cosh\chi)$ | Exact angle at $\theta = \pi/2$ |

@@ -90,15 +90,15 @@ The classification covers every element; the two non-empty rows differ in whethe
 
 The values $\lambda=-1$, $0$ and $+1$ are the subject of the companion articles *Square Roots of One and the Idempotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, and they are the seeds of the classification:
 
-- $R(-1)=\{N=-1\}$, a quadric of real dimension six containing the central roots $\pm i$ and the imaginary vector roots $\tilde\Xi$ over the real unit vectors $\hat n$;
+- $R(-1)=\{N=-1\}$, a quadric of real dimension six containing the central roots $\pm i$ and the imaginary vector roots $\tilde\Xi$ over the real unit vectors $\hat u$;
 - $R(0)=\{N=0\}=C$, the zero-divisor cone, containing the origin, the pure isotropic elements and the complex multiples of the nontrivial plain idempotents;
-- $R(+1)=\{N=1\}$, a quadric of real dimension six containing the central roots $\pm e_0$ and the real vector roots $\hat n$.
+- $R(+1)=\{N=1\}$, a quadric of real dimension six containing the central roots $\pm e_0$ and the real vector roots $\hat u$.
 
 By the scaling theorem, $R(\lambda)$ for a general value is the image of one of the first and the third under multiplication by a square root of $\lambda$, and the second is the cone, which is fixed by every non-zero scaling.
 
 ## Worked Examples
 
-- **Roots of $1$.** The central roots are $\pm e_0$. The element $e_1$ is a root, since $N(e_1)=1$; more generally every real unit vector $\hat n$ is a root, and the elements $i\vec u$ with $(\vec u,\vec u)=-1$ are roots as well. The element $e_0+e_1$ is not a root, since $N(e_0+e_1)=1+1=2$.
+- **Roots of $1$.** The central roots are $\pm e_0$. The element $e_1$ is a root, since $N(e_1)=1$; more generally every real unit vector $\hat u$ is a root, and the elements $i\vec u$ with $(\vec u,\vec u)=-1$ are roots as well. The element $e_0+e_1$ is not a root, since $N(e_0+e_1)=1+1=2$.
 - **Roots of $-1$.** The central roots are $\pm i$, and the elements $\tilde\Xi$ over the real unit vectors are roots. The element $e_1$ is not a root of $-1$; it is a root of $+1$. This is the sign that the quaternionic product removes from the pure square.
 - **Roots of $0$.** The origin, the pure isotropic element $e_1+ie_2$, and the non-pure element $e_0+ie_1$ are roots; the first is the trivial one, the second is a nilpotent of the plain product, and the third is twice a Hermitian idempotent. The root set is the whole cone, and its members are the zero divisors of the algebra.
 - **Roots of a complex value.** For $\lambda=4$ the element $2e_0$ is a root, and so is $2e_1$; for $\lambda=i$ the element $\alpha e_0$ with $\alpha^2=i$, for instance $\alpha=(1+i)/\sqrt2$, is a root, and the whole root set is the image of $R(1)$ under multiplication by $\alpha$.
@@ -112,7 +112,7 @@ The algebraic norm decides the nature of every root, and it decides it the same 
 
 ## Summary
 
-The square-root equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ of the general quaternionic product has a solution exactly when $\tilde Q$ is a central value; an element with non-zero vector part has no root, because the quaternionic square is always central. For a central radicand the equation reduces to the single complex equation $N(\tilde\Xi)=\lambda$, the square of the equation being the algebraic norm, and the root set is the nondegenerate complex quadric $N=\lambda$ of real dimension six when $\lambda\neq0$, and the zero-divisor cone of real dimension six when $\lambda=0$. Every central value has roots, among them the central root $\sqrt\lambda\,e_0$, and the root set of $\lambda$ is the root set of $1$, or of $-1$, scaled by a square root of the value. The three special values generate the classification: $R(-1)$ contains the imaginary vector roots $\tilde\Xi$, $R(+1)$ the real vector roots $\hat n$, and $R(0)$ the whole nilpotent cone of the product. The roots of a non-zero value are units of the algebra, the non-zero roots of $0$ are its zero divisors, and the absence of a root for a non-central radicand is stated and not filled.
+The square-root equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ of the general quaternionic product has a solution exactly when $\tilde Q$ is a central value; an element with non-zero vector part has no root, because the quaternionic square is always central. For a central radicand the equation reduces to the single complex equation $N(\tilde\Xi)=\lambda$, the square of the equation being the algebraic norm, and the root set is the nondegenerate complex quadric $N=\lambda$ of real dimension six when $\lambda\neq0$, and the zero-divisor cone of real dimension six when $\lambda=0$. Every central value has roots, among them the central root $\sqrt\lambda\,e_0$, and the root set of $\lambda$ is the root set of $1$, or of $-1$, scaled by a square root of the value. The three special values generate the classification: $R(-1)$ contains the imaginary vector roots $\tilde\Xi$, $R(+1)$ the real vector roots $\hat u$, and $R(0)$ the whole nilpotent cone of the product. The roots of a non-zero value are units of the algebra, the non-zero roots of $0$ are its zero divisors, and the absence of a root for a non-central radicand is stated and not filled.
 
 ## Summary of Notation
 

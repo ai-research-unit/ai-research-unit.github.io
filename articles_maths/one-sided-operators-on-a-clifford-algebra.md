@@ -5,7 +5,7 @@
 
 Every two-sided operator of *Two-Sided Operators on a Clifford Algebra* is a product of two factors, one multiplying on the left and one on the right. This article treats the factors themselves, in the general theory in which no involution of the base is assumed. A **one-sided operator** is a left multiplication $y\mapsto \theta(x)\,y$, attached to an automorphism $\theta$, or a right multiplication $y\mapsto y\,c(x)$, attached to an anti-automorphism $c$. The one-sided operators are the elementary operators out of which the two-sided family is built, they are the operators that carry the regular representations of the algebra and of its opposite, and their images are the ideals of the algebra, so they are where the module theory of the Clifford algebra begins.
 
-Two facts organise the theory. The first is that the left family and the twisted right family are separately **multiplicative in the same order**, while the plain right multiplication is **anti-multiplicative**: the reversal inside an anti-automorphism cancels the reversal of the order of composition, but the identity that gives the plain right multiplication does not, and $x\mapsto R_x$ is a representation of the opposite algebra. The second is that the left and the right multiplications are **mutual commutants**, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, which is the double centraliser theorem read on the regular bimodule. What the two families generate together is the image of the enveloping algebra $A\otimes_F A^{\mathrm{op}}$ in $\mathrm{End}_F(A)$; it is all of $\mathrm{End}_F(A)$ exactly when $A=\mathrm{Cl}(V,q)$ is central simple over $F$, and it is a proper subalgebra otherwise.
+Two facts organise the theory. The first is that the left family and the twisted right family are separately **multiplicative in the same order**, while the plain right multiplication is **anti-multiplicative**: the reversal inside an anti-automorphism cancels the reversal of the order of composition, but the identity that gives the plain right multiplication does not, and $x\mapsto R_x$ is a representation of the opposite algebra. The second is that the left and the right multiplications are **mutual commutants**, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, which is the double centraliser theorem read on the regular bimodule. What the two families generate together is the image of the enveloping algebra $A\otimes_F A^{\mathrm{opp}}$ in $\mathrm{End}_F(A)$; it is all of $\mathrm{End}_F(A)$ exactly when $A=\mathrm{Cl}(V,q)$ is central simple over $F$, and it is a proper subalgebra otherwise.
 
 The last structural point is the reason two-sided operators exist at all. A left multiplication by a non-scalar never carries the subspace $V$ of vectors into itself, and the only one-sided operators that preserve $V$ are the scalars. Preservation of the quadratic space, which is what turns an operator into a geometric transformation, therefore requires the pairing of a left factor with a right factor, and it is the two-sided operators, not the one-sided ones, that act on $V$ by isometries.
 
@@ -39,7 +39,7 @@ $$
 R_{xz}=R_z\circ R_x ,
 $$
 
-so $x\mapsto R_x$ is a homomorphism from the **opposite algebra** $\mathrm{Cl}(V,q)^{\mathrm{op}}$ and an anti-homomorphism from $\mathrm{Cl}(V,q)$.
+so $x\mapsto R_x$ is a homomorphism from the **opposite algebra** $\mathrm{Cl}(V,q)^{\mathrm{opp}}$ and an anti-homomorphism from $\mathrm{Cl}(V,q)$.
 
 **Proof.** $R_x(R_z(y))=(y z)x=y(z x)=R_{zx}(y)$.
 
@@ -138,7 +138,7 @@ $$
 **Proposition.** The left and the right multiplications together generate the image of the enveloping algebra under
 
 $$
-\mathrm{Cl}(V,q)\otimes_F\mathrm{Cl}(V,q)^{\mathrm{op}}\longrightarrow\mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr), \qquad a\otimes b\mapsto\bigl(y\mapsto a\,y\,b\bigr),
+\mathrm{Cl}(V,q)\otimes_F\mathrm{Cl}(V,q)^{\mathrm{opp}}\longrightarrow\mathrm{End}_F\bigl(\mathrm{Cl}(V,q)\bigr), \qquad a\otimes b\mapsto\bigl(y\mapsto a\,y\,b\bigr),
 $$
 
 an algebra homomorphism. The image is all of $\mathrm{End}_F(\mathrm{Cl}(V,q))$, of dimension $(\dim\mathrm{Cl})^2$, exactly when $\mathrm{Cl}(V,q)$ is **central simple** over $F$; otherwise it is a proper subalgebra.
@@ -206,7 +206,7 @@ In $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ the maps $L_aR
 
 A **one-sided operator** on a Clifford algebra is a left multiplication $\Lambda^{\theta}_x(y)=\theta(x)\,y$, attached to an automorphism $\theta$, or a right multiplication $\mathrm P^{c}_x(y)=y\,c(x)$, attached to an anti-automorphism $c$. The two families **commute**, and the two-sided operator of *Two-Sided Operators on a Clifford Algebra* is their product, $\Phi^{\theta,c}_x=\Lambda^{\theta}_x\mathrm P^{c}_x$, so the composition law of the two-sided family is inherited from its factors. The left family and the twisted right family are **multiplicative in the same order**, because the reversal inside $c$ cancels the reversal of the order of composition; the **plain right multiplication is anti-multiplicative**, $R_{xz}=R_zR_x$, so $x\mapsto R_x$ is a representation of the opposite algebra. The members are separated by their value at the unit, $L_x(1)=R_x(1)=x$ and $L_{\alpha(x)}(1)=\alpha(x)$, $R_{x^{r}}(1)=x^{r}$, $R_{x^{\natural}}(1)=x^{\natural}$; a one-sided operator preserves the parity when its element is even and interchanges the two components when it is odd.
 
-The graded and twisted members are the conjugates of the plain multiplications by the intrinsic anti-involutions, $L_{\alpha(x)}=\alpha L_x\alpha$, $R_{x^{r}}=rL_xr$, $R_{x^{\natural}}=\bar\cdot\,L_x\,\bar\cdot$ and $L_{x^{r}}=rR_xr$. The maps $a\mapsto L_a$ and $a\mapsto R_a$ are injective, their kernels are the annihilators $\ell(a)$ and $r(a)$, and their images are the right ideal $a\cdot\mathrm{Cl}$ and the left ideal $\mathrm{Cl}\cdot a$; the spinor module is the image of $R_\pi$ for a primitive idempotent $\pi$. The left and right multiplications are **mutual commutants**, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, and together they generate the image of the enveloping algebra $\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{op}}$, which is all of $\mathrm{End}_F(\mathrm{Cl})$ exactly when the Clifford algebra is **central simple** and is a proper subalgebra otherwise, of dimension half of $(\dim\mathrm{Cl})^2$ for $\mathrm{Cl}_{0,3}(\mathbb{R})$. Finally, the only left multiplications preserving the space of vectors are the scalars, so the geometry of $V$ requires the pairing of the two factors; the one-sided operators are the ones that act on the module, and their Hermitian adjoints belong to the Hermitian group.
+The graded and twisted members are the conjugates of the plain multiplications by the intrinsic anti-involutions, $L_{\alpha(x)}=\alpha L_x\alpha$, $R_{x^{r}}=rL_xr$, $R_{x^{\natural}}=\bar\cdot\,L_x\,\bar\cdot$ and $L_{x^{r}}=rR_xr$. The maps $a\mapsto L_a$ and $a\mapsto R_a$ are injective, their kernels are the annihilators $\ell(a)$ and $r(a)$, and their images are the right ideal $a\cdot\mathrm{Cl}$ and the left ideal $\mathrm{Cl}\cdot a$; the spinor module is the image of $R_\pi$ for a primitive idempotent $\pi$. The left and right multiplications are **mutual commutants**, $\{L_a\}'=\{R_b\}$ and $\{R_b\}'=\{L_a\}$, and together they generate the image of the enveloping algebra $\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{opp}}$, which is all of $\mathrm{End}_F(\mathrm{Cl})$ exactly when the Clifford algebra is **central simple** and is a proper subalgebra otherwise, of dimension half of $(\dim\mathrm{Cl})^2$ for $\mathrm{Cl}_{0,3}(\mathbb{R})$. Finally, the only left multiplications preserving the space of vectors are the scalars, so the geometry of $V$ requires the pairing of the two factors; the one-sided operators are the ones that act on the module, and their Hermitian adjoints belong to the Hermitian group.
 
 ## Summary of Notation
 
@@ -223,7 +223,7 @@ The graded and twisted members are the conjugates of the plain multiplications b
 | $\ell(a)$, $r(a)$ | Left and right annihilator, the kernels of $L_a$ and $R_a$ |
 | $a\cdot\mathrm{Cl}$, $\mathrm{Cl}\cdot a$ | Right and left ideals, the images of $L_a$ and $R_a$ |
 | $\{L_a\}'=\{R_b\}$, $\{R_b\}'=\{L_a\}$ | The mutual commutants |
-| $\langle L_a,R_b\rangle=\mathrm{Im}\bigl(\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{op}}\bigr)$ | The generated algebra; $=\mathrm{End}_F(\mathrm{Cl})$ iff central simple |
+| $\langle L_a,R_b\rangle=\mathrm{Im}\bigl(\mathrm{Cl}\otimes\mathrm{Cl}^{\mathrm{opp}}\bigr)$ | The generated algebra; $=\mathrm{End}_F(\mathrm{Cl})$ iff central simple |
 | $\{x:L_x(V)\subseteq V\}=F\cdot1$ | Only the scalars preserve the space of vectors |
 
 ## Further Reading
@@ -232,5 +232,5 @@ The graded and twisted members are the conjugates of the plain multiplications b
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford action, its structure and the ideals that carry the spinor modules.
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (American Mathematical Society, 1956), for the double centraliser theorem, the mutual commutants of the regular representations and the enveloping algebra.
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the left and right regular representations, the annihilators and the structure of a finite-dimensional algebra.
-- Tsi-Yuen Lam, *A First Course in Noncommutative Rings*, Graduate Texts in Mathematics 131 (Springer, 2nd ed. 2001), for the central simple algebras and the isomorphism $A\otimes_FA^{\mathrm{op}}\cong\mathrm{End}_F(A)$.
+- Tsi-Yuen Lam, *A First Course in Noncommutative Rings*, Graduate Texts in Mathematics 131 (Springer, 2nd ed. 2001), for the central simple algebras and the isomorphism $A\otimes_FA^{\mathrm{opp}}\cong\mathrm{End}_F(A)$.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the algebras with involution acting on themselves and the intrinsic anti-involutions of a Clifford algebra.

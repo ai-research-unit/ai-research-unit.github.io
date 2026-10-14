@@ -151,11 +151,11 @@ The general question — which involutions of an endomorphism ring are adjointab
 
 **(a) The matrix algebra.** On $E=M_n(F)$ over a field, the transpose is the pairing involution of the standard symmetric form, with fixed part of dimension $n(n+1)/2$, while the symplectic involution of the standard alternating form has fixed part of dimension $1$ for $n=2$; the two fixed parts have different dimensions for $n \geq 2$, so the corresponding involutions are non-isomorphic.
 
-**(b) The regular module.** For $M={}_A A$ the pairing involution is $\sigma$ on $E\cong A^{\mathrm{op}}$, of the second kind exactly when $\sigma$ moves $Z(A)$.
+**(b) The regular module.** For $M={}_A A$ the pairing involution is $\sigma$ on $E\cong A^{\mathrm{opp}}$, of the second kind exactly when $\sigma$ moves $Z(A)$.
 
 **(c) A commutative endomorphism ring.** For $E=F\times F$ the identity and the exchange are two non-isomorphic involutions: the identity has fixed part of dimension $2$ and is of the first kind, while the exchange has fixed part of dimension $1$ and is of the second kind, since it swaps the two central idempotents.
 
-**(d) The quaternions.** For $E=\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$ with the conjugation involution, the fixed part is $\mathbb{R}$, the involution is of the first kind, and the unitary group is the three-sphere of unit quaternions.
+**(d) The quaternions.** For $E=\mathbb{H}^{\mathrm{opp}}\cong\mathbb{H}$ with the conjugation involution, the fixed part is $\mathbb{R}$, the involution is of the first kind, and the unitary group is the three-sphere of unit quaternions.
 
 ## Summary
 

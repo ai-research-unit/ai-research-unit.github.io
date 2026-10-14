@@ -117,11 +117,11 @@ $$
 L_h\circ L_g = L_{gh} ,
 $$
 
-and the monoid $\{L_h : h \in \mathbb{H}_{\mathbb{B}}\}$ is isomorphic to the **opposite** of the quaternion algebra, $\mathbb{H}^{\mathrm{op}}$.
+and the monoid $\{L_h : h \in \mathbb{H}_{\mathbb{B}}\}$ is isomorphic to the **opposite** of the quaternion algebra, $\mathbb{H}^{\mathrm{opp}}$.
 
-**Proof.** $L_h(L_g(k)) = \bar h(\bar g k) = (\bar h\bar g)k = \overline{gh}\,k = L_{gh}(k)$ by the associativity of the quaternion product and the anti-automorphism property $\bar h\bar g = \overline{gh}$. The monoid is therefore the quaternion algebra with its product reversed, and $\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$ as an abstract algebra because the conjugation is an isomorphism onto the opposite.
+**Proof.** $L_h(L_g(k)) = \bar h(\bar g k) = (\bar h\bar g)k = \overline{gh}\,k = L_{gh}(k)$ by the associativity of the quaternion product and the anti-automorphism property $\bar h\bar g = \overline{gh}$. The monoid is therefore the quaternion algebra with its product reversed, and $\mathbb{H}^{\mathrm{opp}}\cong\mathbb{H}$ as an abstract algebra because the conjugation is an isomorphism onto the opposite.
 
-**Remark (the precise sense in which the opposite algebra appears).** The restricted product **is not** the opposite quaternion algebra — the opposite of the quaternion algebra is associative, and the restricted product is not. What coincides with the opposite quaternion algebra is its family of left multiplications: the monoid they form is $\mathbb{H}^{\mathrm{op}}$, by the theorem just proved and by the general theorem of the previous article, $M_L\cong\mathbb{B}^{\mathrm{op}}$, restricted to the real quaternions. Equivalently, the restricted product $\bar hg$ is the isotope of the quaternion algebra by the conjugation; the conjugation is an isomorphism of the quaternion algebra onto its opposite, since $\bar h\bar g = \overline{gh}$, so the isotope sits in the isotopy class of the opposite algebra. Isotopy and not isomorphism is the exact relation: an isomorphism with the opposite quaternion algebra would carry its associativity back to the restricted product, and the restricted product is not associative (*A Taste of Jordan Algebras* §*Isotopes and Homotopes*).
+**Remark (the precise sense in which the opposite algebra appears).** The restricted product **is not** the opposite quaternion algebra — the opposite of the quaternion algebra is associative, and the restricted product is not. What coincides with the opposite quaternion algebra is its family of left multiplications: the monoid they form is $\mathbb{H}^{\mathrm{opp}}$, by the theorem just proved and by the general theorem of the previous article, $M_L\cong\mathbb{B}^{\mathrm{opp}}$, restricted to the real quaternions. Equivalently, the restricted product $\bar hg$ is the isotope of the quaternion algebra by the conjugation; the conjugation is an isomorphism of the quaternion algebra onto its opposite, since $\bar h\bar g = \overline{gh}$, so the isotope sits in the isotopy class of the opposite algebra. Isotopy and not isomorphism is the exact relation: an isomorphism with the opposite quaternion algebra would carry its associativity back to the restricted product, and the restricted product is not associative (*A Taste of Jordan Algebras* §*Isotopes and Homotopes*).
 
 ## The Algebra It Is Not
 
@@ -160,7 +160,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, of real dimension four, is th
 | $\tilde P\tilde Q$ | the plain (associative) product of the algebra |
 | $N(h) = \bar hh = |h|^2$ | the reduced norm of a real quaternion |
 | $L_h$ | the left multiplication of the product, $L_h(g) = \bar hg$ |
-| $\mathbb{H}^{\mathrm{op}}$ | the opposite quaternion algebra, the monoid of the left multiplications |
+| $\mathbb{H}^{\mathrm{opp}}$ | the opposite quaternion algebra, the monoid of the left multiplications |
 | $\langle h,g\rangle$ | the definite inner product of the four real coordinates |
 
 ## Further Reading

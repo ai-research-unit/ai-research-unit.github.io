@@ -7,11 +7,11 @@ An involution of a Banach algebra is an **adjoint** operation on the elements: i
 
 The article assumes the involutive Banach algebra, the $\mathrm{C}^*$-identity, the isometry of the involution, the Gelfand–Naimark theorem and the contractivity of the $*$-homomorphisms from *Involutive Banach Algebras and the Gelfand–Naimark Theorem*; the self-adjoint elements, the positive cone and the order from *Hermitian and Self-Adjoint Elements of a Banach Algebra*; the spectrum, the spectral radius and the functional calculus from *The Spectrum of a Self-Adjoint Element* and *The Functional Calculus of a Self-Adjoint Element*; the abstract involution, the opposite algebra and the unitary elements from *Involutive Algebras* and *Unitary Elements of an Involutive Algebra*; and the operator adjoint from *Operator Algebras*. The grade involution $\alpha$ of the signed block is not used.
 
-Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with an involution $a \mapsto a^*$, continuous when a norm statement is made and isometric in the $\mathrm{C}^*$-case; $A^+ = \{a : a^* = a\}$, $A^- = \{a : a^* = -a\}$; an element is **unitary** when $u^*u = uu^* = 1$, **normal** when $a^*a = aa^*$, and **involutive** when $a^2 = 1$ and $a^* = a$; $U(A)$ is the **unitary group** of the involution; and the **opposite algebra** is $A^{\mathrm{op}}$ with the reversed product.
+Throughout, $A$ is a unital Banach algebra over $\mathbb{C}$ with an involution $a \mapsto a^*$, continuous when a norm statement is made and isometric in the $\mathrm{C}^*$-case; $A^+ = \{a : a^* = a\}$, $A^- = \{a : a^* = -a\}$; an element is **unitary** when $u^*u = uu^* = 1$, **normal** when $a^*a = aa^*$, and **involutive** when $a^2 = 1$ and $a^* = a$; $U(A)$ is the **unitary group** of the involution; and the **opposite algebra** is $A^{\mathrm{opp}}$ with the reversed product.
 
 ## The Adjoint Operation
 
-**Definition.** The **adjoint** of the involutive Banach algebra $(A,\cdot\,{}^*)$ is the map $a \mapsto a^*$; it is an anti-automorphism of the algebra of order two and a topological isomorphism of $A$ onto $A^{\mathrm{op}}$ when it is continuous.
+**Definition.** The **adjoint** of the involutive Banach algebra $(A,\cdot\,{}^*)$ is the map $a \mapsto a^*$; it is an anti-automorphism of the algebra of order two and a topological isomorphism of $A$ onto $A^{\mathrm{opp}}$ when it is continuous.
 
 **Proposition (the calculus of the adjoint).** For all $a,b \in A$,
 
@@ -23,7 +23,7 @@ and, for $a$ invertible, $(a^{-1})^* = (a^*)^{-1}$, so the adjoint preserves inv
 
 **Proof.** The first four identities are the definition of the involution; $(a^{-1})^*(a^*) = (a a^{-1})^* = 1$ and $(a^*)(a^{-1})^* = 1$ give the inverse formula; the power formula is induction on the anti-multiplicativity; the exponential is the norm-convergent series, and a continuous conjugate-linear map commutes with its limits, giving $(e^a)^* = \sum a^{*n}/n! = e^{a^*}$.
 
-**Theorem (the adjoint exhibits the opposite algebra).** The adjoint is an order-two anti-automorphism of $A$; it is an algebra isomorphism $A \to A^{\mathrm{op}}$ with $a \mapsto a^*$, and it is the certificate that $A$ is isomorphic to its opposite algebra. In particular the involution provides an isomorphism of $A$ with $A^{\mathrm{op}}$ exactly when it is defined, and no algebra carries two essentially different such certificates beyond the automorphisms of $A$.
+**Theorem (the adjoint exhibits the opposite algebra).** The adjoint is an order-two anti-automorphism of $A$; it is an algebra isomorphism $A \to A^{\mathrm{opp}}$ with $a \mapsto a^*$, and it is the certificate that $A$ is isomorphic to its opposite algebra. In particular the involution provides an isomorphism of $A$ with $A^{\mathrm{opp}}$ exactly when it is defined, and no algebra carries two essentially different such certificates beyond the automorphisms of $A$.
 
 **Proof.** The anti-multiplicativity is the isomorphism onto the opposite algebra, and the order two is $a^{**} = a$; the converse uniqueness is the standard statement that two isomorphisms onto the opposite algebra differ by an automorphism.
 

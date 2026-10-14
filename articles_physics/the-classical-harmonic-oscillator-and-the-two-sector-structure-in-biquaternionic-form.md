@@ -43,10 +43,10 @@ $$
 
 and the equation of motion is a statement about its vector part alone. The scalar direction $ie_0$ is untouched: the restoring force acts on the spatial displacement and not on the time. This is the same split that the free particle exhibits, now with a nontrivial vector equation.
 
-For the present article it is enough to take the motion one-dimensional along a fixed direction $\hat n$, so that
+For the present article it is enough to take the motion one-dimensional along a fixed direction $\hat u$, so that
 
 $$
-\vec x(t) = \xi(t)\,\hat n, \qquad \xi(t) = A\cos(\omega t + \varphi),
+\vec x(t) = \xi(t)\,\hat u, \qquad \xi(t) = A\cos(\omega t + \varphi),
 $$
 
 with amplitude $A$ and phase $\varphi$. The general motion is a superposition of three such one-dimensional motions, or a single one after the orientation of the axes is chosen; nothing in the sector structure depends on the number of dimensions, and the one-dimensional case carries all of it.
@@ -118,7 +118,7 @@ Two remarks fix the interpretation. First, the assignment of $x$ to the Hermitia
 
 ### Contrast with the Quantum Oscillator
 
-The classical decomposition above should be compared carefully with the quantum treatment, because the two statements look similar and are not. In the quantum oscillator the quadratures are **operators** $\hat{x}$ and $\hat{p}$, both of which are observables and both of which therefore lie in $\mathbb{M}_+$; the canonical commutator is $[\hat{x}, \hat{p}] = i\hbar\,e_0$, whose right-hand side lies in $\mathbb{M}_-$. The companion article *The Harmonic Oscillator in Biquaternionic Form* shows that this equation cannot be satisfied by two elements of $\mathbb{M}_+$: the commutator of two Hermitian biquaternions is a pure real quaternion with a vanishing scalar part, whereas $i\hbar\,e_0$ is a purely imaginary scalar. The quantum oscillator's phase space is not a pair of elements of the two sectors.
+The classical decomposition above should be compared carefully with the quantum treatment, because the two statements look similar and are not. In the quantum oscillator the quadratures are **operators** $x^{\mathrm{fop}}$ and $p^{\mathrm{fop}}$, both of which are observables and both of which therefore lie in $\mathbb{M}_+$; the canonical commutator is $[x^{\mathrm{fop}}, p^{\mathrm{fop}}] = i\hbar\,e_0$, whose right-hand side lies in $\mathbb{M}_-$. The companion article *The Harmonic Oscillator in Biquaternionic Form* shows that this equation cannot be satisfied by two elements of $\mathbb{M}_+$: the commutator of two Hermitian biquaternions is a pure real quaternion with a vanishing scalar part, whereas $i\hbar\,e_0$ is a purely imaginary scalar. The quantum oscillator's phase space is not a pair of elements of the two sectors.
 
 The classical oscillator is different because a classical number is not an operator. The real number $\varpi$ has no Hermiticity of its own; one may place it along $e_0$, along $ie_0$, or anywhere else, and the physically meaningful placement is the one dictated by the complex structure of the amplitude. Placing $x$ along $e_0$ and $\varpi$ along $ie_0$ makes the flow a rotation, and that is the placement used here. The quantum and classical statements agree on the **role of the phase** — it is the sector exchange — and disagree on the carrier of the quadratures, because the operator and the classical number are different kinds of object. The quantum companion puts its side of the contrast sharply: in any representation inside $\mathbb{B}$ each quadrature would be an observable, observables are Hermitian, so both quadratures lie in $\mathbb{M}_+$, and the sectors separate the observable content of the amplitude from its generator content rather than the amplitude's two real degrees of freedom. Nothing in the classical construction contradicts that. A classical real number carries no Hermiticity, and placing $x$ along $e_0$ and $\varpi$ along $ie_0$ is the embedding of $\mathbb{C}$ into the centre under which the flow is a rotation; the constraint that forces both quantum quadratures into one sector is simply absent here, and the placement along the two central directions is available. Neither statement is a deformation of the other; they are about different algebras of observables.
 

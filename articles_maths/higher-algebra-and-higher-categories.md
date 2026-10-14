@@ -29,7 +29,7 @@ Throughout, $\infty$-category means $(\infty,1)$-category: all $k$-morphisms for
 
 ### Complete Segal Spaces
 
-**Definition.** A **Segal space** is a simplicial space $X : \Delta^{\mathrm{op}} \to \mathbf{sSet}$, $[n]\mapsto X_n$, such that the **Segal maps**
+**Definition.** A **Segal space** is a simplicial space $X : \Delta^{\mathrm{opp}} \to \mathbf{sSet}$, $[n]\mapsto X_n$, such that the **Segal maps**
 
 $$
 X_n \longrightarrow X_1 \times_{X_0} X_1 \times_{X_0} \cdots \times_{X_0} X_1 \qquad (n \text{ factors})
@@ -79,7 +79,7 @@ are weak equivalences of simplicial sets for $n \geq 2$, the fibre products bein
 
 ### Monoidal Structures
 
-**Definition.** A **monoidal $\infty$-category** is a coCartesian fibration $\mathcal{C}^\otimes \to \Delta^{\mathrm{op}}$ satisfying the Segal conditions, whose fibre over $[1]$ is $\mathcal{C}$ and over $[0]$ a point; this packages the tensor product, its unit, associativity and the coherence data of the associator, unitors and higher coherences of Mac Lane. A **symmetric monoidal** structure replaces $\Delta^{\mathrm{op}}$ by the category $\mathbf{Fin}_*$ of finite pointed sets.
+**Definition.** A **monoidal $\infty$-category** is a coCartesian fibration $\mathcal{C}^\otimes \to \Delta^{\mathrm{opp}}$ satisfying the Segal conditions, whose fibre over $[1]$ is $\mathcal{C}$ and over $[0]$ a point; this packages the tensor product, its unit, associativity and the coherence data of the associator, unitors and higher coherences of Mac Lane. A **symmetric monoidal** structure replaces $\Delta^{\mathrm{opp}}$ by the category $\mathbf{Fin}_*$ of finite pointed sets.
 
 **Example.** The $\infty$-category of spectra with the smash product is symmetric monoidal; so is the $\infty$-category of chain complexes with the tensor product, and the $\infty$-category of spaces with the cartesian product. The homotopy category of a symmetric monoidal $\infty$-category is a symmetric monoidal category in the ordinary sense, but the converse fails: symmetric monoidal structures do not in general lift from homotopy categories, and the obstruction is the higher coherence.
 

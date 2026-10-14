@@ -39,7 +39,7 @@ $$
 \Phi(\vec x) = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(\vec x')}{|\vec x - \vec x'|}\,d^3x' .
 $$
 
-The kernel is expanded by the standard Legendre expansion. Writing $r = |\vec x|$, $r' = |\vec x'|$, $\hat n = \vec x/r$, $\hat n' = \vec x'/r'$, and $\cos\gamma = \hat n\cdot\hat n'$, the expansion is
+The kernel is expanded by the standard Legendre expansion. Writing $r = |\vec x|$, $r' = |\vec x'|$, $\hat u = \vec x/r$, $\hat u' = \vec x'/r'$, and $\cos\gamma = \hat u\cdot\hat u'$, the expansion is
 
 $$
 \frac{1}{|\vec x - \vec x'|} = \sum_{l=0}^{\infty}\frac{r_<^{\,l}}{r_>^{\,l+1}}\,P_l(\cos\gamma),
@@ -84,7 +84,7 @@ $$
 and the dipole potential is
 
 $$
-\Phi_{dip}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{\vec p\cdot\hat n}{r^2}.
+\Phi_{dip}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{\vec p\cdot\hat u}{r^2}.
 $$
 
 **Quadrupole ($l = 2$).** The five independent moments are those of the **quadrupole tensor**
@@ -96,10 +96,10 @@ $$
 which is symmetric, $Q_{ij} = Q_{ji}$, and traceless, $Q_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The quadrupole potential is
 
 $$
-\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,Q_{ij}\,\hat{n}_i\hat{n}_j .
+\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,Q_{ij}\,\hat u_i\hat u_j .
 $$
 
-The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $Q_{ij}$ would contribute $\hat{n}_i\hat{n}_i = 1$ and hence a monopole-like $1/r$ tail, which is already accounted for by $q$; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}Q_{ij}\hat{n}_i\hat{n}_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r'^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.
+The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $Q_{ij}$ would contribute $\hat u_i\hat u_i = 1$ and hence a monopole-like $1/r$ tail, which is already accounted for by $q$; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}Q_{ij}\hat u_i\hat u_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r'^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.
 
 ### The Tower and Its Ordering
 
@@ -200,13 +200,13 @@ $$
 
 a pure real quaternion with $\tilde{p}^{\natural} = -\tilde{p}$. Its representative lies in the vector part, which is exactly the $D^{(1)}$ representation, so the dipole is the first non-trivial multipole that is an **element of the algebra**. Two consequences follow.
 
-**The dipole potential.** With the unit radial quaternion $\hat n = (x_1e_1 + x_2e_2 + x_3e_3)/r$, satisfying $\hat n^2 = -e_0$, the dipole potential is
+**The dipole potential.** With the unit radial quaternion $\hat u = (x_1e_1 + x_2e_2 + x_3e_3)/r$, satisfying $\hat u^2 = -e_0$, the dipole potential is
 
 $$
-\Phi_{dip} = -\frac{1}{4\pi\epsilon_0}\,\frac{\mathrm{Sc}\!\left(\tilde{p}\,\hat n\right)}{r^2},
+\Phi_{dip} = -\frac{1}{4\pi\epsilon_0}\,\frac{\mathrm{Sc}\!\left(\tilde{p}\,\hat u\right)}{r^2},
 $$
 
-because $\mathrm{Sc}(\tilde{p}\hat n) = -\vec p\cdot\hat n$ for pure real vectors.
+because $\mathrm{Sc}(\tilde{p}\hat u) = -\vec p\cdot\hat u$ for pure real vectors.
 
 **The dipole interaction.** The energy of a dipole in an external electric field is $-\vec p\cdot\vec E$, and this is an algebraic pairing of two vector elements. For pure real vectors $\tilde{p}, \tilde{\vec E}$ one has $\tilde{p}\tilde{\vec E} = -\vec p\cdot\vec E + \vec p\times\vec E$, so
 
@@ -228,14 +228,14 @@ $$
 Q_{ij} = Q_{ji}, \qquad Q_{ii} = 0, \qquad i,j = 1,2,3 ,
 $$
 
-with five independent components. It is the representation $D^{(2)}$ of the rotation group. Equivalently, it is a harmonic homogeneous polynomial of degree two in the direction cosines, $Q(\hat n) = Q_{ij}\hat{n}_i\hat{n}_j$, or a linear combination of the five spherical harmonics $Y_2^m$. The three descriptions are the same object in three notations.
+with five independent components. It is the representation $D^{(2)}$ of the rotation group. Equivalently, it is a harmonic homogeneous polynomial of degree two in the direction cosines, $Q(\hat u) = Q_{ij}\hat u_i\hat u_j$, or a linear combination of the five spherical harmonics $Y_2^m$. The three descriptions are the same object in three notations.
 
 ### The Quadrupole Potential
 
 The potential of a quadrupole is the $l = 2$ term of the expansion,
 
 $$
-\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,Q_{ij}\,\hat{n}_i\hat{n}_j ,
+\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,Q_{ij}\,\hat u_i\hat u_j ,
 $$
 
 and it agrees exactly with the $l = 2$ Legendre term of the Coulomb kernel, as noted above. The fall-off is $r^{-3}$, one power faster than the dipole and two faster than the monopole.
@@ -367,7 +367,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian (series convention) |
 | $\tilde{A} = i\phi/c\,e_0 + \vec A$ | Four-potential, an element of $\mathbb{M}_-$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
-| $\hat n = \vec x/r$ | Unit radial quaternion, $\hat n^2 = -e_0$ |
+| $\hat u = \vec x/r$ | Unit radial quaternion, $\hat u^2 = -e_0$ |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |
 | $\Phi$, $\Phi_{ext}$ | Scalar potential of the source, and an external potential; $\Phi_{mon}, \Phi_{dip}, \Phi_{quad}$ its multipole parts |
 | $\rho$ | Charge density, the corpus convention for the bare $\rho$ |

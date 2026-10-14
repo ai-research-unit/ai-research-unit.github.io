@@ -109,7 +109,7 @@ The one-sided operators of the block are the plain left and right multiplication
 | symbol | meaning |
 |---|---|
 | $L_{\tilde a}(\tilde x) = \tilde a\tilde x$, $R_{\tilde b}(\tilde x) = \tilde x\tilde b$ | the one-sided operators of the block |
-| $\mathcal L$, $\mathcal R$ | the two four-dimensional families, $\mathcal L \cong \mathbb{H}$, $\mathcal R \cong \mathbb{H}^{\mathrm{op}}$ |
+| $\mathcal L$, $\mathcal R$ | the two four-dimensional families, $\mathcal L \cong \mathbb{H}$, $\mathcal R \cong \mathbb{H}^{\mathrm{opp}}$ |
 | $L_{\tilde a}L_{\tilde c} = L_{\tilde a\tilde c}$, $R_{\tilde b}R_{\tilde d} = R_{\tilde d\tilde b}$ | the composition laws, direct on the left and reversed on the right |
 | $L_{\tilde a}^{\sim} = R_{\tilde a}$, $R_{\tilde b}^{\sim} = L_{\tilde b}$ | the adjoints for the plain form $\mathrm B$ |
 | $L_{\tilde a}^{N} = L_{\tilde a^{\natural}}$, $R_{\tilde b}^{N} = R_{\tilde b^{\natural}}$ | the adjoints for the quaternionic form $N$ |

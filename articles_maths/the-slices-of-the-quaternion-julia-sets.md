@@ -10,9 +10,9 @@ Throughout, $\mathbb{C}_\nu=\operatorname{span}\{e_0,\nu\}$ for $\nu \in S^2=\{\
 
 ## The Complex Planes Through the Origin
 
-**Proposition (the family of planes).** The assignment $\nu \mapsto \mathbb{C}_\nu$ is a bijection from $S^2$ onto the set of two-dimensional subalgebras of $\mathbb{H}$ that contain $e_0$, and it is equivariant for the orthogonal action: $\operatorname{Ad}_u(\mathbb{C}_\nu)=\mathbb{C}_{\operatorname{Ad}_u\nu}$ for $u \in S^3$, with $\operatorname{Ad}_u$ acting on $S^2$ by the rotation group. Every quaternion lies in at least one plane, and a quaternion with nonzero vector part lies in exactly one, namely $\mathbb{C}_{\hat q}$ with $\hat q=\vec q/|\vec q|$.
+**Proposition (the family of planes).** The assignment $\nu \mapsto \mathbb{C}_\nu$ is a bijection from $S^2$ onto the set of two-dimensional subalgebras of $\mathbb{H}$ that contain $e_0$, and it is equivariant for the orthogonal action: $\operatorname{Ad}_u(\mathbb{C}_\nu)=\mathbb{C}_{\operatorname{Ad}_u\nu}$ for $u \in S^3$, with $\operatorname{Ad}_u$ acting on $S^2$ by the rotation group. Every quaternion lies in at least one plane, and a quaternion with nonzero vector part lies in exactly one, namely $\mathbb{C}_{\hat u_{\mathrm d}}$ with $\hat u_{\mathrm d}=\vec q/|\vec q|$.
 
-*Proof.* Each $\mathbb{C}_\nu$ is a two-dimensional real subalgebra and is a copy of $\mathbb{C}$ with $\nu$ as a square root of $-e_0$; conversely a two-dimensional subalgebra containing $e_0$ is spanned by $e_0$ and an element $\tilde\xi$ with $\tilde\xi^2=-e_0$, and the elements with square $-e_0$ are exactly the unit imaginary quaternions, which form $S^2$ by *Quaternion Roots of Minus One*. The equivariance is the fact that an automorphism carries the plane of an axis to the plane of the image of the axis. The last statement is proved in *The Quaternion Quadratic Map and Its Julia Sets*.
+*Proof.* Each $\mathbb{C}_\nu$ is a two-dimensional real subalgebra and is a copy of $\mathbb{C}$ with $\nu$ as a square root of $-e_0$; conversely a two-dimensional subalgebra containing $e_0$ is spanned by $e_0$ and an element $\hat\xi$ with $\hat\xi^2=-e_0$, and the elements with square $-e_0$ are exactly the unit imaginary quaternions, which form $S^2$ by *Quaternion Roots of Minus One*. The equivariance is the fact that an automorphism carries the plane of an axis to the plane of the image of the axis. The last statement is proved in *The Quaternion Quadratic Map and Its Julia Sets*.
 
 **Definition.** A **slice of the Julia set** $J_c$ is an intersection $J_c \cap \mathbb{C}_\nu$. The slice is **invariant** if $\mathbb{C}_\nu$ is $\mathbb{C}_c$, the plane of the parameter.
 
@@ -117,6 +117,7 @@ The slices of a quaternion Julia set are its intersections with the complex plan
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}_\nu=\operatorname{span}\{e_0,\nu\}$ | Complex plane of the axis $\nu$, $\nu\in S^2$, $\cong\mathbb{C}$ |
+| $\hat u_{\mathrm d}=\vec q/\lvert\vec q\rvert$ | The unit pure quaternion of the vector part; the exact axis $\mathbb{C}_{\hat u_{\mathrm d}}$ |
 | $\mathbb{C}_c$ | The plane of the parameter, the invariant slice |
 | $\kappa(c)=c_0+i\lvert\vec c\rvert$ | The complex parameter of the invariant slice |
 | $\varphi_c$ | The isomorphism $\mathbb{C}_c\to\mathbb{C}$, $e_0\mapsto1$, $c\mapsto\kappa(c)$ |

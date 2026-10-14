@@ -55,10 +55,10 @@ So the split biquaternion Bessel function is the pair of the quaternion Bessel f
 
 ### The Pure Oscillatory Regime
 
-For a component $\tilde{Q}_\pm = \theta_\pm \hat{n}_\pm$ with $\theta_\pm \neq 0$ and $\hat{n}_\pm^2 = -e_0$, the quaternion Bessel function is
+For a component $\tilde{Q}_\pm = \theta_\pm \hat u_\pm$ with $\theta_\pm \neq 0$ and $\hat u_\pm^2 = -e_0$, the quaternion Bessel function is
 
 $$
-J_n(\theta_\pm \hat{n}_\pm) = I_n(\theta_\pm) \, \hat{n}_\pm^n = \begin{cases} (-1)^{n/2} I_n(\theta_\pm) \, e_0 & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta_\pm) \, \hat{n}_\pm & \text{if } n \text{ is odd}, \end{cases}
+J_n(\theta_\pm \hat u_\pm) = I_n(\theta_\pm) \, \hat u_\pm^n = \begin{cases} (-1)^{n/2} I_n(\theta_\pm) \, e_0 & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta_\pm) \, \hat u_\pm & \text{if } n \text{ is odd}, \end{cases}
 $$
 
 where $I_n(\theta_\pm)$ on the right is the ordinary complex **modified** Bessel function evaluated at the real (or complex) number $\theta_\pm$. The two signs $(-1)^m$ in the defining series cancel, which is why the modified function appears in place of $J_n$.
@@ -107,7 +107,7 @@ $$
 P_n(\tilde{Q}) = P_n(\tilde{Q}_+) \tilde\Pi_1 + P_n(\tilde{Q}_-) \tilde\Pi_2,
 $$
 
-where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion Legendre polynomial of the component. In the pure oscillatory regime the quaternion Legendre polynomial does **not** reduce to the ordinary Legendre polynomial at the same argument: for a component $\tilde{Q}_\pm = \theta\hat{n}$ with $\hat{n}^2 = -e_0$ one has $P_n(\theta\hat{n}) = P_n(i\theta)$ with $i$ replaced by $\hat{n}$, since the generator $\hat{n}$ plays the role of the imaginary unit. For instance $P_2(\theta\hat{n}) = -(3\theta^2+1)/2$, whereas the ordinary $P_2$ gives $(3\theta^2-1)/2$: only the even part of $P_n$ survives on $e_0$ and only the odd part on $\hat{n}$. The analogous statement is discussed in the biquaternion higher special functions article.
+where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion Legendre polynomial of the component. In the pure oscillatory regime the quaternion Legendre polynomial does **not** reduce to the ordinary Legendre polynomial at the same argument: for a component $\tilde{Q}_\pm = \theta\hat u$ with $\hat u^2 = -e_0$ one has $P_n(\theta\hat u) = P_n(i\theta)$ with $i$ replaced by $\hat u$, since the generator $\hat u$ plays the role of the imaginary unit. For instance $P_2(\theta\hat u) = -(3\theta^2+1)/2$, whereas the ordinary $P_2$ gives $(3\theta^2-1)/2$: only the even part of $P_n$ survives on $e_0$ and only the odd part on $\hat u$. The analogous statement is discussed in the biquaternion higher special functions article.
 
 ### Chebyshev Polynomials
 
@@ -147,7 +147,7 @@ $$
 P_n(\tilde{Q}) = P_n(\tilde{Q}_+) \tilde\Pi_1 + P_n(\tilde{Q}_-) \tilde\Pi_2,
 $$
 
-where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion polynomial of the component. In the pure oscillatory regime the quaternion polynomial is obtained from the ordinary polynomial by replacing $i$ with $\hat{n}$ (as for the Legendre polynomials above), not by evaluating the ordinary polynomial at the same argument.
+where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion polynomial of the component. In the pure oscillatory regime the quaternion polynomial is obtained from the ordinary polynomial by replacing $i$ with $\hat u$ (as for the Legendre polynomials above), not by evaluating the ordinary polynomial at the same argument.
 
 The general case (with both scalar and vector parts nonzero, and with a general split complex norm) reduces to the quaternion case in each idempotent component, which is the standard theory of quaternion orthogonal polynomials.
 
@@ -173,10 +173,10 @@ $$
 
 where $a_\pm, b_\pm, c_\pm$ are the idempotent components of the parameters, and ${}_2F_1(a_\pm, b_\pm; c_\pm; \tilde{Q}_\pm)$ is the ordinary quaternion hypergeometric function of the component.
 
-In the pure oscillatory regime the quaternion hypergeometric function does **not** reduce to the ordinary complex hypergeometric function: for a component $\tilde{Q}_\pm = \theta\hat{n}$ with $\hat{n}^2 = -e_0$ one has
+In the pure oscillatory regime the quaternion hypergeometric function does **not** reduce to the ordinary complex hypergeometric function: for a component $\tilde{Q}_\pm = \theta\hat u$ with $\hat u^2 = -e_0$ one has
 
 $$
-{}_2F_1(a, b; c; \theta\hat{n}) = \Big[\sum_k \frac{(a)_{2k}(b)_{2k}}{(c)_{2k}} \frac{(-1)^k \theta^{2k}}{(2k)!}\Big] e_0 + \Big[\sum_k \frac{(a)_{2k+1}(b)_{2k+1}}{(c)_{2k+1}} \frac{(-1)^k \theta^{2k+1}}{(2k+1)!}\Big] \hat{n},
+{}_2F_1(a, b; c; \theta\hat u) = \Big[\sum_k \frac{(a)_{2k}(b)_{2k}}{(c)_{2k}} \frac{(-1)^k \theta^{2k}}{(2k)!}\Big] e_0 + \Big[\sum_k \frac{(a)_{2k+1}(b)_{2k+1}}{(c)_{2k+1}} \frac{(-1)^k \theta^{2k+1}}{(2k+1)!}\Big] \hat u,
 $$
 
 the Pochhammer symbols sitting at $2k$ and $2k+1$ rather than at $k$, which is the even/odd decomposition stated for the biquaternion case.
@@ -347,7 +347,7 @@ Its construction is standard from the fundamental solution, and it decomposes in
 
 The higher special functions of a split biquaternion variable fall into two classes.
 
-**Power-series functions.** These are defined by a power series in $\tilde{Q}$, and the series decomposes in the idempotent basis into two copies of the corresponding quaternion function. The Bessel functions, the orthogonal polynomials, and the hypergeometric function belong to this class. The quaternion functions, in turn, reduce in the pure oscillatory regime to the corresponding ordinary complex functions evaluated with $i$ replaced by the generator $\hat{n}$ of the component (for the Bessel function this is the modified function $I_n$, for the orthogonal polynomials and the hypergeometric function the argument $i\theta$).
+**Power-series functions.** These are defined by a power series in $\tilde{Q}$, and the series decomposes in the idempotent basis into two copies of the corresponding quaternion function. The Bessel functions, the orthogonal polynomials, and the hypergeometric function belong to this class. The quaternion functions, in turn, reduce in the pure oscillatory regime to the corresponding ordinary complex functions evaluated with $i$ replaced by the generator $\hat u$ of the component (for the Bessel function this is the modified function $I_n$, for the orthogonal polynomials and the hypergeometric function the argument $i\theta$).
 
 **Integral-defined functions.** These are defined by an integral over a real or complex parameter, and the extension to split biquaternions requires a notion of the integrand for split biquaternion arguments. The gamma function and the zeta function belong to this class. The convergence and analyticity of the integral are not automatic, and the theory is largely open.
 
@@ -375,7 +375,7 @@ The common thread is the **idempotent decomposition**: the split biquaternion al
 
 The higher special functions of a split biquaternion variable fall into three classes.
 
-**Power-series functions.** The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series decompose in the idempotent basis into two copies of the corresponding quaternion function. In the pure oscillatory regime the quaternion functions are the ordinary complex functions with $i$ replaced by the generator $\hat{n}$ of the component, as in the Bessel, Legendre and hypergeometric cases above. This is the cleanest and most fully developed part of the theory.
+**Power-series functions.** The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series decompose in the idempotent basis into two copies of the corresponding quaternion function. In the pure oscillatory regime the quaternion functions are the ordinary complex functions with $i$ replaced by the generator $\hat u$ of the component, as in the Bessel, Legendre and hypergeometric cases above. This is the cleanest and most fully developed part of the theory.
 
 **Integral-defined functions.** The gamma function and the zeta function are defined by integrals or series that require a notion of the split biquaternion power for real arguments. The convergence and analyticity are established only in special cases, and the functional equations are open.
 

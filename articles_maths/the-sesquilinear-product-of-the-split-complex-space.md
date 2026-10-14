@@ -157,7 +157,7 @@ $$
 R_A \circ R_C = R_{CA},
 $$
 
-and $\{R_A : A \in \mathbb{D}\}$ is a monoid isomorphic to the opposite monoid $(\mathbb{D},\cdot)^{\mathrm{op}}$ via $A \mapsto R_A$, with identity $R_1$.
+and $\{R_A : A \in \mathbb{D}\}$ is a monoid isomorphic to the opposite monoid $(\mathbb{D},\cdot)^{\mathrm{opp}}$ via $A \mapsto R_A$, with identity $R_1$.
 
 **Proof.** $R_A(R_C X) = (X\bar C)\bar A = X\bar C\bar A = X\overline{AC} = R_{CA}(X)$, using the multiplicativity of the conjugation; the map $A \mapsto R_A$ is then an anti-homomorphism with $A=1$ giving the identity.
 

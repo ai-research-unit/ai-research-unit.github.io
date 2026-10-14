@@ -164,7 +164,7 @@ in the trace convention $\mathrm{Tr} = 2\,\mathrm{Sc}$. Note what this says: pro
 
 4. **The state space is not added: it is the positive cone of the sector.** The pure states are the algebra's own idempotents,
 $$
-\tilde{\Pi} = \tfrac12(e_0 \pm i\hat n), \qquad \tilde{\Pi}^2 = \tilde{\Pi}, \qquad \tilde{\Pi}^{*} = \tilde{\Pi}, \qquad \mathrm{Tr}(\tilde{\Pi}) = 1, \qquad N(\tilde{\Pi}) = 0,
+\tilde{\Pi} = \tfrac12(e_0 \pm i\hat u_{\mathrm r}), \qquad \tilde{\Pi}^2 = \tilde{\Pi}, \qquad \tilde{\Pi}^{*} = \tilde{\Pi}, \qquad \mathrm{Tr}(\tilde{\Pi}) = 1, \qquad N(\tilde{\Pi}) = 0,
 $$
 parametrised by the unit sphere — the Bloch sphere — and the mixed states are the trace-one positive elements
 $$
@@ -194,7 +194,7 @@ with $\det\mathsf{M}_2(\tilde{\rho}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the 
 | The light cone | $N(\tilde{Q}) = 0$ is the light cone; its nonzero points are the zero divisors of $\mathbb{B}$ |
 | The state module | Left ideal $\mathbb{B}\tilde{\Pi}$ with basis $\{\tilde{\Pi},\tilde{T}\}$, Gram matrix $\tfrac12I_2$, amplitudes add |
 | The oscillator obstruction | $[\tilde{Q},\tilde{P}] = i\hbar\,e_0$ **has no solution** with $\tilde{Q},\tilde{P}\in\mathbb{M}_+$: the commutator of two Hermitian elements is a pure real quaternion of zero scalar part, while $i\hbar\,e_0$ is purely scalar. The algebra therefore carries no oscillator beyond the two-level one, and the canonical commutator must be imported |
-| The congruence is not a channel | $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^{*}$ **preserves the biquaternion norm and not the trace**, so it is not a state transformation: a channel cannot rescale the trace, and a unital channel cannot raise the purity of a state. After normalisation it raises the Bloch radius, carrying the maximally mixed state to $\vec r = \tanh\psi\,\hat u$, with $\psi$ the rapidity |
+| The congruence is not a channel | $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^{*}$ **preserves the biquaternion norm and not the trace**, so it is not a state transformation: a channel cannot rescale the trace, and a unital channel cannot raise the purity of a state. After normalisation it raises the Bloch radius, carrying the maximally mixed state to $\vec r = \tanh\psi\,\hat u_{\mathrm b}$, with $\psi$ the rapidity |
 | The entropy is the norm | $N(\tilde{\rho}) = \tfrac14(1-\lvert\vec r\rvert^2)$, so the von Neumann entropy is a function of the norm alone, $S = h\!\left(\tfrac{1+\sqrt{1-4N(\tilde{\rho})}}{2}\right)$, with $h$ the binary entropy; it is constant on every orbit of the unitary group that acts on states, and it is a complete invariant of that orbit |
 | Spin one is the adjoint action | The inner derivations of $\mathbb{B}$, the maps $X\mapsto[\tilde{Q},X]$, acting on the vector part of $\mathbb{M}_-$ span the three-dimensional spin-one representation, with quadratic Casimir $2 = j(j+1)$ at $j = 1$, and its weight basis is the polarisation triad of a massive vector; the identification with polarisation is an interpretation, not a theorem |
 | The invariant and the normalised concurrence | The antisymmetric bilinear pairing of two spinors is exactly invariant under a boost, because the boost acts on each spinor with unit determinant. The frame dependence of entanglement enters only through the normalisation, so it appears only when the momentum is spread: the boost changes the norm that normalises the state, and not the invariant pairing |
@@ -307,7 +307,7 @@ Most of the corpus restates known physics in the biquaternion language, which co
 | $\mathsf{M}_2$ | The matrix element representation $\mathbb{B}\to M_2(\mathbb{C})$: $\mathsf{M}_2(e_0) = I_2$, and the three images of $e_1,e_2,e_3$ are $-i$ times the Pauli matrices |
 | $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$ | One action form: Lorentz transformation, evolution, measurement |
 | $\tilde{U}\tilde{U}^{\natural} = e_0$ | Unit-norm element; $SL(2,\mathbb{C})$, the Lorentz double cover |
-| $\tilde{\Pi} = \tfrac12(e_0+i\hat n)$ | Pure state: idempotent, Hermitian, null, trace one |
+| $\tilde{\Pi} = \tfrac12(e_0+i\hat u_{\mathrm r})$ | Pure state: idempotent, Hermitian, null, trace one |
 | $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, $\lvert\vec r\rvert\le1$ | State: positive, trace one; the Bloch ball |
 | $\tilde{H} = h_0e_0+i\vec h\cdot\mathbf e$ | Observable: Hermitian, real spectrum $h_0\pm\lvert\vec h\rvert$ |
 | $\tilde{T} = \tfrac12(ie_1+e_2)$ | Nilpotent partner of the idempotent $\tilde{\Pi}$ in the state module |

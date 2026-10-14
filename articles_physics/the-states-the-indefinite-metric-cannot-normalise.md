@@ -25,33 +25,33 @@ The article defers the positivity of the probability form and the absence of gho
 The informational sector $\mathbb{M}_+$ is the Hermitian subspace, of basis $\{e_0,ie_1,ie_2,ie_3\}$; its elements are the observables of the qubit, its positive trace-one elements are the states, and its rank-one projectors are the **pure** states. A pure state is written
 
 $$
-\tilde\Pi=\tfrac12\bigl(e_0+i\hat\mu\bigr),\qquad
-\hat\mu=\mu_1e_1+\mu_2e_2+\mu_3e_3,\qquad
-(\hat\mu,\hat\mu)=\mu_1^{2}+\mu_2^{2}+\mu_3^{2}=1,
+\tilde\Pi=\tfrac12\bigl(e_0+i\hat u\bigr),\qquad
+\hat u=u_1e_1+u_2e_2+u_3e_3,\qquad
+(\hat u,\hat u)=u_1^{2}+u_2^{2}+u_3^{2}=1,
 $$
 
-with $\hat\mu$ a **real** unit vector. Its four real parameters are $(q_0,q'_1,q'_2,q'_3)=(\tfrac12,\tfrac12\mu_1,\tfrac12\mu_2,\tfrac12\mu_3)$: a real scalar part and an imaginary vector part. The condition $(\hat\mu,\hat\mu)=1$ makes the family a **two-sphere**, the Bloch sphere of the state space; every element of the family is a rank-one projection, $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi\star_s\tilde\Pi=\tilde\Pi$, the complementary element $\tfrac12(e_0-i\hat\mu)$ is the antipodal pure state, and the two resolve the identity.
+with $\hat u$ a **real** unit vector. Its four real parameters are $(q_0,q'_1,q'_2,q'_3)=(\tfrac12,\tfrac12u_1,\tfrac12u_2,\tfrac12u_3)$: a real scalar part and an imaginary vector part. The condition $(\hat u,\hat u)=1$ makes the family a **two-sphere**, the Bloch sphere of the state space; every element of the family is a rank-one projection, $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi\star_s\tilde\Pi=\tilde\Pi$, the complementary element $\tfrac12(e_0-i\hat u)$ is the antipodal pure state, and the two resolve the identity.
 
 ### One Computation, Three Nullities
 
-The content of the article is a two-line computation on the coefficients $(\tfrac12,\tfrac i2\mu_1,\tfrac i2\mu_2,\tfrac i2\mu_3)$, and it is exact.
+The content of the article is a two-line computation on the coefficients $(\tfrac12,\tfrac i2u_1,\tfrac i2u_2,\tfrac i2u_3)$, and it is exact.
 
-**The gauge metric vanishes.** With $Q_0=\tfrac12$ and $Q_k=\tfrac i2\mu_k$ real-multiplied, the Krein invariant is
+**The gauge metric vanishes.** With $Q_0=\tfrac12$ and $Q_k=\tfrac i2u_k$ real-multiplied, the Krein invariant is
 
 $$
 K(\tilde\Pi,\tilde\Pi)=\lvert Q_0\rvert^{2}-\sum_{k=1}^{3}\lvert Q_k\rvert^{2}
-=\tfrac14-\tfrac14\sum_{k=1}^{3}\mu_k^{2}
+=\tfrac14-\tfrac14\sum_{k=1}^{3}u_k^{2}
 =\tfrac14-\tfrac14\cdot1=0,
 $$
 
-because $\hat\mu$ is a unit vector. **Every pure state is null for the gauge metric.**
+because $\hat u$ is a unit vector. **Every pure state is null for the gauge metric.**
 
 **The interval vanishes.** The same coefficients give the biquaternion norm
 
 $$
 N(\tilde\Pi)=\sum_{\mu=0}^{3}Q_\mu^{2}
-=\tfrac14+\sum_{k=1}^{3}\Bigl(\tfrac i2\mu_k\Bigr)^{2}
-=\tfrac14-\tfrac14\sum_{k=1}^{3}\mu_k^{2}=0,
+=\tfrac14+\sum_{k=1}^{3}\Bigl(\tfrac i2u_k\Bigr)^{2}
+=\tfrac14-\tfrac14\sum_{k=1}^{3}u_k^{2}=0,
 $$
 
 so every pure state is a **zero divisor**, $\det\mathsf{M}_2(\tilde\Pi)=0$, and lies on the light cone $\mathcal{N}=\{N=0\}$ of the framework.
@@ -60,11 +60,11 @@ so every pure state is a **zero divisor**, $\det\mathsf{M}_2(\tilde\Pi)=0$, and 
 
 $$
 \tilde\Pi\star\tilde\Pi=\tilde\Pi^{\natural}\tilde\Pi^{*}
-=\tfrac12\bigl(e_0-i\hat\mu\bigr)\cdot\tfrac12\bigl(e_0+i\hat\mu\bigr)
+=\tfrac12\bigl(e_0-i\hat u\bigr)\cdot\tfrac12\bigl(e_0+i\hat u\bigr)
 =\tfrac14\bigl(e_0-e_0\bigr)=0,
 $$
 
-using $\tilde\Pi^{*}=\tilde\Pi$, $\tilde\Pi^{\natural}=\tfrac12(e_0-i\hat\mu)$ and $\hat\mu^{2}=-e_0$ for a real unit vector. In the matrix model the same statement is immediate: a rank-one projector has $\operatorname{adj}\mathsf{M}_2(\tilde\Pi)\,\mathsf{M}_2(\tilde\Pi)=\det\mathsf{M}_2(\tilde\Pi)\,I=0$ and $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi)$, so $\mathsf{M}_2(\tilde\Pi\star\tilde\Pi)=0$.
+using $\tilde\Pi^{*}=\tilde\Pi$, $\tilde\Pi^{\natural}=\tfrac12(e_0-i\hat u)$ and $\hat u^{2}=-e_0$ for a real unit vector. In the matrix model the same statement is immediate: a rank-one projector has $\operatorname{adj}\mathsf{M}_2(\tilde\Pi)\,\mathsf{M}_2(\tilde\Pi)=\det\mathsf{M}_2(\tilde\Pi)\,I=0$ and $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi)$, so $\mathsf{M}_2(\tilde\Pi\star\tilde\Pi)=0$.
 
 **One computation, three statements.** The pure state of the quantum theory is at once isotropic for the gauge metric, a zero divisor of the interval, and a square-zero element of the fourth product. The three are one computation read three ways, and their coincidence is the structural point: the states are precisely the elements that the indefinite metric cannot normalise, and they are so on the light cone of the framework, at the intersection of the $K$-null set, the zero-divisor cone and the trace-one slice.
 
@@ -120,7 +120,7 @@ so in the $2\times2$ model its matrix is the unitary conjugate of $\operatorname
 
 ## A Worked Case: The Qubit on the Bloch Sphere
 
-Take the pure state with Bloch vector $\hat\mu=e_1$, that is $\tilde\Pi=\tfrac12(e_0+ie_1)$, so that the coefficients are $Q_0=\tfrac12$, $Q_1=\tfrac i2$, $Q_2=Q_3=0$.
+Take the pure state with Bloch vector $\hat u=e_1$, that is $\tilde\Pi=\tfrac12(e_0+ie_1)$, so that the coefficients are $Q_0=\tfrac12$, $Q_1=\tfrac i2$, $Q_2=Q_3=0$.
 
 | quantity | value |
 |---|---|
@@ -152,7 +152,7 @@ Four further readings of the same computation are recorded here, each under a na
 
 ## The Ledger
 
-**Proved, and recomputed.** Every pure state $\tilde\Pi=\tfrac12(e_0+i\hat\mu)$, $\hat\mu$ a real unit vector, satisfies $K(\tilde\Pi,\tilde\Pi)=0$, $N(\tilde\Pi)=0$ and $\tilde\Pi\star\tilde\Pi=0$; the three are one computation on the coefficients $(\tfrac12,\tfrac i2\mu_1,\tfrac i2\mu_2,\tfrac i2\mu_3)$, and the last is also the matrix identity $\operatorname{adj}\mathsf{M}_2(\tilde\Pi)\mathsf{M}_2(\tilde\Pi)^{\dagger}=0$. The pure states are trace one, $\mathrm{Tr}\,\tilde\Pi=1$; they are positive for the probability form, $H(\tilde\Pi,\tilde\Pi)=\tfrac12$; and they are the projectors of the sesquilinear product, $\tilde\Pi\star_s\tilde\Pi=\tilde\Pi$. The family is the two-sphere of Bloch vectors. The projections of the fourth product are $0$, $e_0$ and the two-sphere $\tilde\Pi(\mu)=-\tfrac12e_0+\mu$ with $\mu$ real and $(\mu,\mu)=\tfrac34$; each satisfies $N(\tilde\Pi(\mu))=1$, $\tilde\Pi(\mu)^{3}=e_0$, $\mathrm{Tr}\,\tilde\Pi(\mu)=-1$, $\tilde\Pi(\mu)^{-1}=\tilde\Pi(\mu)^{\natural}=-\tfrac12e_0-\mu$ and $K=-\tfrac12$.
+**Proved, and recomputed.** Every pure state $\tilde\Pi=\tfrac12(e_0+i\hat u)$, $\hat u$ a real unit vector, satisfies $K(\tilde\Pi,\tilde\Pi)=0$, $N(\tilde\Pi)=0$ and $\tilde\Pi\star\tilde\Pi=0$; the three are one computation on the coefficients $(\tfrac12,\tfrac i2u_1,\tfrac i2u_2,\tfrac i2u_3)$, and the last is also the matrix identity $\operatorname{adj}\mathsf{M}_2(\tilde\Pi)\mathsf{M}_2(\tilde\Pi)^{\dagger}=0$. The pure states are trace one, $\mathrm{Tr}\,\tilde\Pi=1$; they are positive for the probability form, $H(\tilde\Pi,\tilde\Pi)=\tfrac12$; and they are the projectors of the sesquilinear product, $\tilde\Pi\star_s\tilde\Pi=\tilde\Pi$. The family is the two-sphere of Bloch vectors. The projections of the fourth product are $0$, $e_0$ and the two-sphere $\tilde\Pi(\mu)=-\tfrac12e_0+\mu$ with $\mu$ real and $(\mu,\mu)=\tfrac34$; each satisfies $N(\tilde\Pi(\mu))=1$, $\tilde\Pi(\mu)^{3}=e_0$, $\mathrm{Tr}\,\tilde\Pi(\mu)=-1$, $\tilde\Pi(\mu)^{-1}=\tilde\Pi(\mu)^{\natural}=-\tfrac12e_0-\mu$ and $K=-\tfrac12$.
 
 **Interpretation.** That the states are the elements the indefinite metric cannot normalise; that they sit on the light cone of the framework; that the two projections — normalisable for $H$, null for $K$ — are the state side and the metric side of the same row; and that the two meters $K$ and $N$ agree on the informational sector, where the gauge invariant of a state is its mixedness, $K(\tilde\varrho,\tilde\varrho)=N(\tilde\varrho)=\tfrac14(1-\lvert\vec r\rvert^{2})$, so that the two forms part only off the state cone. Four further readings, named in §*Named Readings of the Null States*: **null-state bridge**, **gauge length of a state**, **physical-sector boundary**, and the **three-valued label of the fourth product**.
 
@@ -166,14 +166,14 @@ The article's interpretation is the boundary of the state space: a state must be
 
 ## Summary
 
-A state must be normalisable, and normalisation is the work of the positive definite probability form $H$, whose positivity is what keeps the framework free of ghosts. The indefinite metric of the fourth product cannot do that work: **every pure state of the informational sector is null for it**. The pure states are the rank-one projectors $\tilde\Pi=\tfrac12(e_0+i\hat\mu)$ with $\hat\mu$ a real unit vector, the two-sphere of Bloch vectors; on the coefficients $(\tfrac12,\tfrac i2\mu_1,\tfrac i2\mu_2,\tfrac i2\mu_3)$ one computation gives three statements at once, the gauge invariant $K(\tilde\Pi,\tilde\Pi)=\tfrac14-\tfrac14=0$, the biquaternion norm $N(\tilde\Pi)=0$ and the fourth-product square $\tilde\Pi\star\tilde\Pi=0$. The states are therefore simultaneously **isotropic** for the gauge metric, **lightlike** on the zero-divisor cone, and **null** for the gauge product, while remaining positive and trace one for the probability form and its Born pairing: normalised by $H$, annihilated by $K$. The fourth product has projections of its own, the two-sphere $\tilde\Pi(\mu)=-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$, each a unit of the algebra of order three in the plain product, $N=1$ and $\tilde\Pi^{3}=e_0$, whose matrix is the unitary conjugate of $\operatorname{diag}(\omega,\omega^{2})$; they are not states, and the interpretation of them as an internal three-valued label is offered as a **speculation** and labelled, with the caution that $\mathbb{Z}/3$ is ubiquitous and that the framework supplies no three-valued process. The interpretation of the null states as the boundary between a physical and an unphysical sector is a hypothesis, and the caution is that isotropy is a statement about one form and does not by itself make a state unphysical. The positivity of the probability form is *Mass, Rank and the Positivity of the Dagger*; the gauge metric is *The Fourth Product and Its Indefinite Metric*; the vacuum is *The Biquaternion Vacuum as a Minimal Idempotent*; the state cone is *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; the two-valued measurement is *Decoherence as Idempotent Projection*; and the gauge interpretation of the fourth product is *Why the Fourth Product Is a Gauge Structure and Not a State Space*.
+A state must be normalisable, and normalisation is the work of the positive definite probability form $H$, whose positivity is what keeps the framework free of ghosts. The indefinite metric of the fourth product cannot do that work: **every pure state of the informational sector is null for it**. The pure states are the rank-one projectors $\tilde\Pi=\tfrac12(e_0+i\hat u)$ with $\hat u$ a real unit vector, the two-sphere of Bloch vectors; on the coefficients $(\tfrac12,\tfrac i2u_1,\tfrac i2u_2,\tfrac i2u_3)$ one computation gives three statements at once, the gauge invariant $K(\tilde\Pi,\tilde\Pi)=\tfrac14-\tfrac14=0$, the biquaternion norm $N(\tilde\Pi)=0$ and the fourth-product square $\tilde\Pi\star\tilde\Pi=0$. The states are therefore simultaneously **isotropic** for the gauge metric, **lightlike** on the zero-divisor cone, and **null** for the gauge product, while remaining positive and trace one for the probability form and its Born pairing: normalised by $H$, annihilated by $K$. The fourth product has projections of its own, the two-sphere $\tilde\Pi(\mu)=-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$, each a unit of the algebra of order three in the plain product, $N=1$ and $\tilde\Pi^{3}=e_0$, whose matrix is the unitary conjugate of $\operatorname{diag}(\omega,\omega^{2})$; they are not states, and the interpretation of them as an internal three-valued label is offered as a **speculation** and labelled, with the caution that $\mathbb{Z}/3$ is ubiquitous and that the framework supplies no three-valued process. The interpretation of the null states as the boundary between a physical and an unphysical sector is a hypothesis, and the caution is that isotropy is a statement about one form and does not by itself make a state unphysical. The positivity of the probability form is *Mass, Rank and the Positivity of the Dagger*; the gauge metric is *The Fourth Product and Its Indefinite Metric*; the vacuum is *The Biquaternion Vacuum as a Minimal Idempotent*; the state cone is *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; the two-valued measurement is *Decoherence as Idempotent Projection*; and the gauge interpretation of the fourth product is *Why the Fourth Product Is a Gauge Structure and Not a State Space*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Pi=\tfrac12(e_0+i\hat\mu)$ | a pure state; $\hat\mu$ a real unit vector |
-| $\hat\mu$ on $S^{2}$ | the Bloch vector; the Bloch sphere |
+| $\tilde\Pi=\tfrac12(e_0+i\hat u)$ | a pure state; $\hat u$ a real unit vector |
+| $\hat u$ on $S^{2}$ | the Bloch vector; the Bloch sphere |
 | $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$ | the positive definite probability form; $\mathrm{Tr}\,\tilde\Pi=1$ |
 | $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the indefinite gauge metric; $K(\tilde\Pi,\tilde\Pi)=0$ |
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ | the biquaternion norm; $N(\tilde\Pi)=0$ |

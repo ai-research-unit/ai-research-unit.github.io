@@ -113,7 +113,7 @@ $$
 
 so the multiplication algebra is the commutant of each one-sided family. In finite dimension $H=\mathbb{K}^n$ the multiplication algebra is all of $B(M_n(\mathbb{K}))$.
 
-*Proof.* A multiplication $\sum_iL_{A_i}R_{B_i}$ commutes with every $L_C$, and conversely an operator on $S_2(H)$ commuting with every left multiplication is a right multiplication in the following sense: it is determined by its value on a single rank-one operator and is the sum of finitely many two-sided multiplications. In finite dimension $n$ one has $\dim B(M_n)=n^4=\dim(M_n\otimes M_n^{\mathrm{op}})$, and the identification is an isomorphism, so the multiplication algebra is everything.
+*Proof.* A multiplication $\sum_iL_{A_i}R_{B_i}$ commutes with every $L_C$, and conversely an operator on $S_2(H)$ commuting with every left multiplication is a right multiplication in the following sense: it is determined by its value on a single rank-one operator and is the sum of finitely many two-sided multiplications. In finite dimension $n$ one has $\dim B(M_n)=n^4=\dim(M_n\otimes M_n^{\mathrm{opp}})$, and the identification is an isomorphism, so the multiplication algebra is everything.
 
 **Example (finite dimension).** For $H=\mathbb{K}^n$ identify $S_2(H)$ with $M_n(\mathbb{K})$ and the Hilbert–Schmidt form with $\langle S,T\rangle=\operatorname{tr}(ST^*)$. Then $L_A$ is the operator $T\mapsto AT$ and $R_B$ is $T\mapsto TB$, the left multiplications are the matrices $A\otimes I$ under the identification $M_n\cong\mathbb{K}^n\otimes\mathbb{K}^n$, the right multiplications are $I\otimes B^{\mathrm t}$, and the multiplications satisfy $L_A^*=L_{A^*}$, $R_B^*=R_{B^*}$ with the conjugate transpose.
 

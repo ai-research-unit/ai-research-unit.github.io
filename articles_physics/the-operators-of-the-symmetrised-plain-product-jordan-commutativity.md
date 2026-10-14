@@ -325,7 +325,7 @@ two-valued projection is absent, because a non-trivial idempotent gives no proje
 classical composition are the siblings' business, and this article supplies only the operator behind them.
 
 **Proposition (the spinor space).** On the minimal left ideal
-$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, the
+$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, the
 operator is half the matrix action of the module and half a module endomorphism of the complement,
 $L^{\bullet}_{\tilde A}s=\tfrac12(\tilde A s+s\tilde A)$ for $s\in S$; a **central** parameter has equal halves
 and acts as a scalar, $L^{\bullet}_{\lambda e_0}=\lambda\,\mathrm{id}$. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.

@@ -71,7 +71,7 @@ $$
 F[G] \cong \prod_{i=1}^{r} M_{n_i}(D_i),
 $$
 
-where $D_i$ is a finite-dimensional division algebra over $F$, the simple $F[G]$-modules are $S_1,\dots,S_r$ up to isomorphism, and $n_i=\dim_{D_i}S_i$. The number $r$ is the number of isomorphism classes of simple $F[G]$-modules, and $\operatorname{End}_{F[G]}(S_i)\cong D_i^{\mathrm{op}}$. Taking dimensions,
+where $D_i$ is a finite-dimensional division algebra over $F$, the simple $F[G]$-modules are $S_1,\dots,S_r$ up to isomorphism, and $n_i=\dim_{D_i}S_i$. The number $r$ is the number of isomorphism classes of simple $F[G]$-modules, and $\operatorname{End}_{F[G]}(S_i)\cong D_i^{\mathrm{opp}}$. Taking dimensions,
 
 $$
 |G|=\dim_F F[G]=\sum_{i=1}^{r} n_i^2 \dim_F D_i.
@@ -175,7 +175,7 @@ $$
 F[G] \cong \bigoplus_{i=1}^{r} V_i^{\oplus d_i}, \qquad \chi_{\mathrm{reg}}=\sum_{i=1}^{r} d_i\chi_i.
 $$
 
-Evaluating at $1$ gives the dimension identity $\sum_i d_i^2=|G|$ of §Complete Reducibility. The regular representation therefore contains every irreducible exactly as many times as its degree, and it is the representation-theoretic embodiment of the group algebra; its endomorphism ring is $(F[G])^{\mathrm{op}}\cong F[G]$, by the theorem on the regular module of *Modules over an Algebra*, and the Wedderburn decomposition of the group algebra is read off from the isotypic decomposition of the regular module.
+Evaluating at $1$ gives the dimension identity $\sum_i d_i^2=|G|$ of §Complete Reducibility. The regular representation therefore contains every irreducible exactly as many times as its degree, and it is the representation-theoretic embodiment of the group algebra; its endomorphism ring is $(F[G])^{\mathrm{opp}}\cong F[G]$, by the theorem on the regular module of *Modules over an Algebra*, and the Wedderburn decomposition of the group algebra is read off from the isotypic decomposition of the regular module.
 
 ## Tensor Products and Clebsch–Gordan
 

@@ -292,10 +292,10 @@ In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *The 2×2 Matrix Element Repre
 So the nilpotents are the nonzero rank-one trace-free complex matrices, that is the matrices conjugate to the single Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, the strictly triangular form. The two standard nilpotents are the off-diagonal Peirce units
 
 $$
-\tilde\Upsilon_1=\frac{ie_1-e_2}{2},\qquad \tilde\Upsilon_2=\frac{ie_1+e_2}{2},
+\hat\Upsilon_1=\frac{ie_1-e_2}{2},\qquad \hat\Upsilon_2=\frac{ie_1+e_2}{2},
 $$
 
-with $\tilde\Upsilon_1^2=\tilde\Upsilon_2^2=0$, which are exchanged by the star and which, together with the two primitive idempotents $\tilde\Pi_+,\tilde\Pi_-$, form a $\mathbb{C}$-basis of $\mathbb{B}$ with the multiplication table $\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_+$ and $\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-$ (*Ideals and Peirce Decomposition of the General Plain Algebra*). Every nilpotent is a complex multiple of a conjugate of one of these two, and the cone is the orbit of $\tilde\Upsilon_1$ under the group of invertible elements.
+with $\hat\Upsilon_1^2=\hat\Upsilon_2^2=0$, which are exchanged by the star and which, together with the two primitive idempotents $\tilde\Pi_+,\tilde\Pi_-$, form a $\mathbb{C}$-basis of $\mathbb{B}$ with the multiplication table $\hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+$ and $\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-$ (*Ideals and Peirce Decomposition of the General Plain Algebra*). Every nilpotent is a complex multiple of a conjugate of one of these two, and the cone is the orbit of $\hat\Upsilon_1$ under the group of invertible elements.
 
 ### The Nilpotents and the Ideals
 
@@ -307,7 +307,7 @@ The nilpotents are the elements on which the ideal theory of the algebra is simp
 
 **Proof.** If $\tilde\Upsilon^2=0$ then $(\tilde X\tilde\Upsilon)\tilde\Upsilon=\tilde X\tilde\Upsilon^2=0$ for every $\tilde X$, so $\mathbb{B}\tilde\Upsilon\subseteq I_{\tilde\Upsilon}$; both are nonzero proper left ideals and both are minimal of real dimension four, hence equal. The right statement is the mirror image. The converse, that coincidence forces nilpotency, is the statement for the other class in *Introduction to the Remarkable Subspaces*.
 
-The deeper ideal theory, the Peirce decomposition, the minimal left and right ideals $\mathbb{B}\tilde\Pi_+,\mathbb{B}\tilde\Pi_-$ and the module structure of the algebra over itself, is *Ideals and Peirce Decomposition of the General Plain Algebra* and *Modules over the General Plain Algebra of Biquaternions*; the nilpotents enter it as the off-diagonal units $\tilde\Upsilon_1,\tilde\Upsilon_2$.
+The deeper ideal theory, the Peirce decomposition, the minimal left and right ideals $\mathbb{B}\tilde\Pi_+,\mathbb{B}\tilde\Pi_-$ and the module structure of the algebra over itself, is *Ideals and Peirce Decomposition of the General Plain Algebra* and *Modules over the General Plain Algebra of Biquaternions*; the nilpotents enter it as the off-diagonal units $\hat\Upsilon_1,\hat\Upsilon_2$.
 
 ### The Nilpotents and the Remarkable Subspaces
 
@@ -346,7 +346,7 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 | $(\vec P,\vec Q)=\sum_kP_kQ_k$ | General plain bilinear form of two vector parts |
 | $C(\tilde P)=\sum_\mu P_\mu^2$ | The central square, $\tilde P\tilde P^{\natural}=C(\tilde P)e_0$ |
 | $\tilde\Upsilon$ | A nilpotent, $\tilde\Upsilon^2=0$ |
-| $\tilde\Upsilon_1,\tilde\Upsilon_2$ | The two off-diagonal Peirce units $\tfrac{ie_1-e_2}{2}$, $\tfrac{ie_1+e_2}{2}$ |
+| $\hat\Upsilon_1,\hat\Upsilon_2$ | The two off-diagonal Peirce units $\tfrac{ie_1-e_2}{2}$, $\tfrac{ie_1+e_2}{2}$ |
 | $\{\tilde\Upsilon\}$ | The nilpotent cone, $\{P_0=0,\ (\vec P,\vec P)=0\}$ |
 | $\vec p,\vec p'$ | The two real vector parts of a nilpotent, $\tilde\Upsilon=\vec p+i\vec p'$, orthogonal and of equal sum of squares |
 | $r(\hat p+i\hat p')$ | The parametrisation of the cone over orthonormal real unit pairs |
@@ -358,7 +358,7 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 - *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`), for the roots of $+1$ and the idempotents, the other two central element classes.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $0$ here are one case.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the two families of the zero-divisor set, the pure family being exactly these nilpotents.
-- *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the off-diagonal units $\tilde\Upsilon_1,\tilde\Upsilon_2$, the minimal ideals they generate and the Peirce basis.
+- *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the off-diagonal units $\hat\Upsilon_1,\hat\Upsilon_2$, the minimal ideals they generate and the Peirce basis.
 - *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the isomorphism $\mathsf M_2$, the trace and determinant, and the triangular Jordan form.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.
 - *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the same class read against the four general products, where only the plain product has this square-zero set.

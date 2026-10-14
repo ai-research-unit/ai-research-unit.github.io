@@ -97,7 +97,7 @@ In particular the product of two signed sandwiches is an unsigned sandwich, and 
 **Corollary.** The map
 
 $$
-a \otimes b \longmapsto S_{a,b}, \qquad A \otimes_k A^{\mathrm{op}} \longrightarrow \operatorname{End}_k(A)
+a \otimes b \longmapsto S_{a,b}, \qquad A \otimes_k A^{\mathrm{opp}} \longrightarrow \operatorname{End}_k(A)
 $$
 
 is $k$-linear onto the signed sandwich space, and its products obey the table above; when $\alpha = \mathrm{id}$ it is the sandwich homomorphism of *The Sandwich Operator on an Algebra* and the three rules collapse to $T_{a,b}T_{c,d} = T_{ac,db}$.

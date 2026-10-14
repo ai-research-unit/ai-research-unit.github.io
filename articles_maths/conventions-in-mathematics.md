@@ -125,6 +125,8 @@ Three rules are read off the table. **A pure element is the vector part of an el
 
 **The pure glyphs.** The hat is laid on the glyph of a special element on the same case rule that governs the layer: the pure root is $\hat\Xi$ in the biquaternion and split-biquaternion layers and $\hat\xi$ in the quaternion and split-quaternion ones, and the pure nilpotent is $\hat\Upsilon$ in the biquaternion and split-biquaternion layers and $\hat\nu$ in the quaternion and split-quaternion ones.
 
+**The hat has priority over the tilde.** Where an element is pure, the hat is written whatever else the element is, and the tilde of a special glyph is dropped: a pure root is $\hat\Xi$ and a pure nilpotent is $\hat\Upsilon$ (or $\hat\xi$ and $\hat\nu$ in the quaternion layers), never $\tilde\Xi$ or $\tilde\Upsilon$. The tilde belongs to the general element, read with its scalar part beside its vector part, and a pure element has no scalar part to be read against; purity therefore decides the mark. The special conventions that write the root $\tilde\Xi$ or the nilpotent $\tilde\Upsilon$ name the **general** element of that class, which need not be pure, and an element that is at once special and pure is written with the hat and only the hat.
+
 A pure glyph is given from the quaternions to the biquaternions only. The layers with no quaternionic factor have no intrinsic conjugate to take a vector part against, and the commutative two-parameter systems carry their imaginary part in a single coefficient, $A = a + ia'$; the pure elements of the octonion layer are deferred with the layer.
 
 ## The Conjugations and the Adjoint
@@ -233,13 +235,13 @@ $$
 \tilde\nu^2 = 0 .
 $$
 
-**The square is read in a named product**, the algebra product unless the statement names another: the corpus writes nilpotents in the four general products of *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* as well, and the class is relative to the product — an element square-zero in the plain product need not be square-zero in the general plain sesquilinear one, and in the plain antisymmetric block every central element is square-zero, the unit among them. **No nilpotent is a Hermitian idempotent**, a Hermitian nilpotent being zero, so no nilpotent is a pure state; it is nevertheless the partner of the idempotent in a minimal left ideal — for the standard pair $\mathbb{B}\tilde\Upsilon_2 = \mathbb{B}\tilde\Pi_1$ — and its products with its star are Hermitian idempotents of that ideal.
+**The square is read in a named product**, the algebra product unless the statement names another: the corpus writes nilpotents in the four general products of *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* as well, and the class is relative to the product — an element square-zero in the plain product need not be square-zero in the general plain sesquilinear one, and in the plain antisymmetric block every central element is square-zero, the unit among them. **No nilpotent is a Hermitian idempotent**, a Hermitian nilpotent being zero, so no nilpotent is a pure state; it is nevertheless the partner of the idempotent in a minimal left ideal — for the standard pair $\mathbb{B}\hat\Upsilon_2 = \mathbb{B}\tilde\Pi_1$ — and its products with its star are Hermitian idempotents of that ideal.
 
 **The coordinates carry the letter of the nilpotent**, as for a general element: in $\mathbb{B}$ the nilpotent is $\tilde\Upsilon = \Upsilon_0e_0 + \Upsilon_1e_1 + \Upsilon_2e_2 + \Upsilon_3e_3$ with $\Upsilon_\mu = \nu_\mu + i\nu'_\mu$, its scalar part $\Upsilon_0$ and its vector part $\vec\Upsilon = \vec\nu + i\vec\nu'$; in $\mathbb{H}$ it is $\tilde\nu = \nu_0e_0 + \nu_1e_1 + \nu_2e_2 + \nu_3e_3$ with real $\nu_\mu$.
 
 **The subscript of a nilpotent is numeric when it counts and a role label when it names**, as for the idempotents apart from their complete sign pair: where more than one occurs a pair is $\tilde\nu_1, \tilde\nu_2$, a second pair in the same statement takes the next numbers, and where a nilpotent plays a named role it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
-The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Nilpotents of the General Quaternionic Algebra*, *Idempotents of the General Plain Algebra* and *Ideals and Peirce Decomposition of the General Plain Algebra*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\tilde\Upsilon_1$ and $\tilde\Upsilon_2$, exchanged by the star.
+The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Nilpotents of the General Quaternionic Algebra*, *Idempotents of the General Plain Algebra* and *Ideals and Peirce Decomposition of the General Plain Algebra*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\hat\Upsilon_1$ and $\hat\Upsilon_2$, exchanged by the star.
 
 The nilpotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
@@ -247,9 +249,12 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 |---|---|
 | $\tilde\Upsilon$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates |
 | $\tilde\nu$ | A nilpotent of the quaternion or split-quaternion layer |
+| $\hat\Upsilon$, $\hat\nu$ | A pure nilpotent, written with the hat and without the tilde by the priority rule of §*Pure Elements and their Coefficients* |
 | $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
 
 The convention is one of **notation, not of substance**: an element written $\tilde\nu$ is not a different kind of object from one written $\tilde Q$, only an element known to be nilpotent.
+
+**The standard pair carries the hat, not the tilde.** The two off-diagonal Peirce units are pure, $\hat\Upsilon_1 = \tfrac12(ie_1 - e_2)$ and $\hat\Upsilon_2 = \tfrac12(ie_1 + e_2)$, with no scalar part, so by §*Pure Elements and their Coefficients* the hat takes priority over the tilde and the tilde is dropped; the pair is written $\hat\Upsilon_1, \hat\Upsilon_2$ and never $\tilde\Upsilon_1, \tilde\Upsilon_2$. The tilde is kept for the general nilpotent $\tilde\Upsilon$, which may carry a scalar part and is not pure.
 
 ## The Form Convention, the Norm Convention and the Unitary Convention
 
@@ -344,6 +349,29 @@ The corpus has a small number of working conventions that are not mathematical.
 
 **The word "interval".** Two different objects share the word, and the corpus keeps them apart. In the mathematical corpus an **interval** is an order-theoretic or lattice object: a convex subset of a linearly ordered set, the interval $[a,b]=\{x:a\le x\le b\}$ of a lattice or of a poset of effects, defined by the order and not by a form. In the physical corpus the **interval** is the value of the quadratic form, $N(\tilde Q)=(ic\,t)^2+\vec x^2=\vec x^2-c^2t^2$ on the material sector, defined by the form and not by an order. A statement about the sign of the interval is therefore never a statement about a lattice interval, and a lattice interval is never the line element; where the two senses could meet, the corpus writes *the form value* or *the quadratic form* for the physical one.
 
+## The Superscripts
+
+Two superscript tokens run beside the marks of the elements and the marks of the conjugations, and neither is to be read for the other:
+
+| Token | Written on | Meaning |
+|---|---|---|
+| $^{\mathrm{fop}}$ | an operator glyph | an operator on a state space, the Fock-operator mark |
+| $^{\mathrm{opp}}$ | an algebra name | the opposite algebra, the algebra with the reversed product |
+
+The marks of the elements — the case, the prime, the tilde, the arrow and the hat — say what a glyph **is**, not that a glyph is an **operator**. An operator on a structure is written with a glyph of its own, and the corpus keeps the two layers apart by that glyph rather than by a mark: the left and right multiplications $L_a$ and $R_a$, the sandwich $\Theta_{\tilde Q}$, a derivation, an automorphism or a module endomorphism is named as an operator, and its letter is not the letter of an element that could be mistaken for it.
+
+**The mark, where a letter is shared.** Where an operator's glyph **is** the letter of an element — the case of the quantized layer of the physical corpus, whose ladders, field, number, Hamiltonian and spin operators reuse the letters $a$, $b$, $\psi$, $N$, $H$, $S$ of the elements — the operator carries the upright superscript $\mathrm{fop}$, set on the glyph:
+
+$$
+a^{\mathrm{fop}},\quad b^{\mathrm{fop}},\quad \psi^{\mathrm{fop}},\quad N^{\mathrm{fop}},\quad H^{\mathrm{fop}},\quad S^{\mathrm{fop}} .
+$$
+
+The rule is **collision, not layer**: the mark is written exactly where the bare glyph would otherwise be read as an element, and left off where it would not. An operator whose glyph is already its own — $L_a$, $R_a$, $\Theta_{\tilde Q}$ — carries no superscript.
+
+**It combines with the dagger, operator first.** The dagger is the general adjoint (§*The Conjugations and the Adjoint*). Where both marks fall on one glyph the operator mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.
+
+**The opposite algebra carries a different token.** The **opposite algebra**, whose multiplication is reversed, $a\cdot b=ba$, carries the superscript $\mathrm{opp}$ — $A^{\mathrm{opp}}$, $\mathbb{B}^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$ — and it is the **algebra name** that takes the mark; the operator token $\mathrm{fop}$ marks an operator glyph. The two meanings are separated by the token itself and not by context.
+
 ## Summary
 
 The conventions are of two kinds: the mathematical notation, and the working conventions of the corpus.
@@ -387,6 +415,7 @@ The working conventions are the corpus's own. Every article is registered in exa
 | $U$ | A unit element of the complex, split-complex or dual layer, a modulus-one scalar |
 | $\hat q$ | A pure element of the quaternion or split-quaternion layer, an element with no scalar part |
 | $\hat Q$ | A pure element of the biquaternion or split-biquaternion layer |
+| $L^{\mathrm{fop}}$ | An operator on a state space, whose bare letter would otherwise be read as an element — $a^{\mathrm{fop}}$, $N^{\mathrm{fop}}$, $H^{\mathrm{fop}}$ (§*The Superscripts*). The opposite algebra uses the separate token $A^{\mathrm{opp}}$ |
 | $\tilde P$ | The generic element of the algebra, in a statement that holds for every element |
 | $\mathrm{Form}(\tilde P,\tilde Q)$, $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$ | The generic form and the generic norm (§*The Form Convention, the Norm Convention and the Unitary Convention*) |
 | `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | The four groups of a category, in that order |

@@ -61,7 +61,7 @@ A nontrivial idempotent $e$ satisfies $e(1-e) = 0$, so $R = Re \oplus R(1-e)$ is
 | $R \times S$ | $(1,0)$, $(0,1)$ | the two components | *Examples of Rings and Fields* |
 | a group algebra $k[G]$ | the idempotents of the group | $k[G] = \bigoplus e_i k[G] e_i \oplus \text{off-diagonal}$ | *Group Algebras* |
 
-The Peirce decomposition relative to a complete orthogonal family of idempotents $e_1 + \cdots + e_n = 1$ writes a module as $M = \bigoplus_i e_i M$ and an algebra as the direct sum of the corner algebras $e_i A e_j$. The biquaternion case is the corpus's worked example: with $p = E_{11}$ and $q = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\tilde\Upsilon_1$ and $\tilde\Upsilon_2$, as recorded in *Ideals and Peirce Decomposition of the General Plain Algebra*.
+The Peirce decomposition relative to a complete orthogonal family of idempotents $e_1 + \cdots + e_n = 1$ writes a module as $M = \bigoplus_i e_i M$ and an algebra as the direct sum of the corner algebras $e_i A e_j$. The biquaternion case is the corpus's worked example: with $p = E_{11}$ and $q = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\hat\Upsilon_1$ and $\hat\Upsilon_2$, as recorded in *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
 ## The von Neumann Regular Rings
 

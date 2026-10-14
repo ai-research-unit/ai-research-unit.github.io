@@ -146,7 +146,7 @@ $$
 \tilde R\;\longmapsto\;\tilde{U}\,\tilde R\,\tilde{U}^{*}=B\bigl(\tilde q\,\tilde R\,\tilde q^{-1}\bigr)B ,
 $$
 
-a rotation followed by a boost, both with **doubled** parameters. The rotor $\tilde q$ stores a half-angle, $e^{\vec u/2}$ with rotation angle $\lvert\vec u\rvert=\theta$, and the conjugation $\tilde q\,\tilde R\,\tilde q^{-1}$ is the rotation by the full angle; the same half-angle is what makes a spinor change sign under a rotation by $2\pi$. The boost factor $B$ stores a half-rapidity, $\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\hat n$, and the conjugation $B\,\tilde R\,B$ is the Lorentz boost of the full rapidity. On the boost axis $e_3$ both are diagonal and exact:
+a rotation followed by a boost, both with **doubled** parameters. The rotor $\tilde q$ stores a half-angle, $e^{\vec u/2}$ with rotation angle $\lvert\vec u\rvert=\theta$, and the conjugation $\tilde q\,\tilde R\,\tilde q^{-1}$ is the rotation by the full angle; the same half-angle is what makes a spinor change sign under a rotation by $2\pi$. The boost factor $B$ stores a half-rapidity, $\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\hat u_{\mathrm b}$, and the conjugation $B\,\tilde R\,B$ is the Lorentz boost of the full rapidity. On the boost axis $e_3$ both are diagonal and exact:
 
 $$
 \mathsf{M}_2(B)=\mathrm{diag}\bigl(e^{\psi/2},e^{-\psi/2}\bigr),
@@ -190,7 +190,7 @@ The exponential form is the polar form with $r=1$, $\alpha=0$: the pure quaterni
 **The module.** The action $\psi\mapsto\mathsf{M}_2(\tilde{U})\psi$ is the spinor representation proper. It is irreducible, because $\mathbb{B}$ is simple; it is faithful, because $\mathsf{M}_2(-e_0)=-I_2$, so the operator distinguishes $\tilde{U}$ from $-\tilde{U}$ and the representation does not descend to the quotient $\mathbb{B}^{\times}_1/\{\pm e_0\}$; and it is non-unitary, because every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so $\rho(ie_k)=i\rho(e_k)$ is Hermitian while skew-adjointness would force it to vanish, killing the boosts and the whole algebra. On the module the obstruction is the identity
 
 $$
-\tilde{U}^{*}\tilde{U}=\tilde{U}^{2}=\cosh\psi+i\sinh\psi\,\hat u\neq e_0 ,
+\tilde{U}^{*}\tilde{U}=\tilde{U}^{2}=\cosh\psi+i\sinh\psi\,\hat u_{\mathrm b}\neq e_0 ,
 $$
 
 which is the "sub-case $r=1$" of the double-dilatation statement. Physically it is the absence of an invariant probability on a finite-component object: a boost scales the two components of the spinor in opposite senses, one up and one down, and there is no finite-dimensional unitary representation of the group other than the trivial one. That is why the unitary representations are the infinite-dimensional fields.
@@ -226,13 +226,13 @@ The norm-one row and the unitary row are the two the framework uses most, and wh
 **The norm-one actor does not.** Let $\tilde{U} = B\tilde q$ with a nontrivial boost factor. On the identity the sandwich returns the square of the element,
 
 $$
-\mathrm{H}_{\tilde{U}}(e_0) = \tilde{U}\tilde{U}^{*} = \tilde{U}^{2} = \cosh\psi + i\sinh\psi\,\hat u , \qquad \mathrm{Tr}\left(\mathrm{H}_{\tilde{U}}(e_0)\right) = 2\cosh\psi ,
+\mathrm{H}_{\tilde{U}}(e_0) = \tilde{U}\tilde{U}^{*} = \tilde{U}^{2} = \cosh\psi + i\sinh\psi\,\hat u_{\mathrm b} , \qquad \mathrm{Tr}\left(\mathrm{H}_{\tilde{U}}(e_0)\right) = 2\cosh\psi ,
 $$
 
 which is $2$ only when the boost is absent, and on a Hermitian element $\tilde{H} = h_0e_0 + i\vec h$ it returns a boosted time,
 
 $$
-\mathrm{Tr}\left(\mathrm{H}_{\tilde{U}}(\tilde{H})\right) = 2\left(h_0\cosh\psi + \left(\hat u\cdot\vec h\right)\sinh\psi\right) .
+\mathrm{Tr}\left(\mathrm{H}_{\tilde{U}}(\tilde{H})\right) = 2\left(h_0\cosh\psi + \left(\hat u_{\mathrm b}\cdot\vec h\right)\sinh\psi\right) .
 $$
 
 The trace of the sandwich is therefore a time coordinate, and a boost cannot leave it alone: the trace-one hyperplane of the informational sector is carried off itself, which is the trace-side interpretation of the absence of an invariant probability recorded above.

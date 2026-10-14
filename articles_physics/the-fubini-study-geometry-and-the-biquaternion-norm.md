@@ -6,18 +6,18 @@ The state space of the qubit is a ball, and the geometry of its boundary is the 
 
 The result is a division of labour between the two forms, and it is worth stating before any algebra is written.
 
-- The **trace pairing** fixes the *transition probability*. On pure states it gives $\mathrm{Tr}(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})) = \tfrac12(1+\hat{\mu}\cdot\hat{\nu}) = \cos^2(\theta/2)$, the squared overlap of the corresponding rays.
+- The **trace pairing** fixes the *transition probability*. On pure states it gives $\mathrm{Tr}(\tilde\Pi(\hat{u}_1)\tilde\Pi(\hat{u}_2)) = \tfrac12(1+\hat{u}_1\cdot\hat{u}_2) = \cos^2(\theta/2)$, the squared overlap of the corresponding rays.
 - The **biquaternion norm** fixes the *metric*. It vanishes identically on the pure states, so it cannot itself be a metric there; what it gives is the line element at second order, and the result is
 
 $$
-ds^2_{\mathrm{FS}} \;=\; -\,N\!\left(\delta\tilde{P}\right)\Big|_{\text{tangential}} \;=\; \tfrac14\,\bigl|d\hat{\mu}\bigr|^2 \;=\; \tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
+ds^2_{\mathrm{FS}} \;=\; -\,N\!\left(\delta\tilde{P}\right)\Big|_{\text{tangential}} \;=\; \tfrac14\,\bigl|d\hat{u}\bigr|^2 \;=\; \tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
 $$
 
 the Fubini–Study line element of $\mathbb{P}^1(\mathbb{C})$, equal to one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the spinorial factor: it is the square of the ratio between the angle on the ray space and the angle on the Bloch sphere, that ratio being the half-angle $\tfrac12$ of the double cover $SU(2)\to SO(3)$.
 
 Three further results complete the picture. The Fubini–Study metric is **Kähler**: its complex structure is the central scalar imaginary $i$ acting on the state module, and its symplectic form is, up to a factor, the trace of the algebra commutator,
 $$
-\omega \;=\; -\tfrac12\, i\,\mathrm{Tr}\!\left(\tilde{P}\,[\delta_1\tilde{P},\delta_2\tilde{P}]\right) \;=\; \tfrac14\,\hat{\mu}\cdot(\delta_1\hat{\mu}\times\delta_2\hat{\mu}).
+\omega \;=\; -\tfrac12\, i\,\mathrm{Tr}\!\left(\tilde{P}\,[\delta_1\tilde{P},\delta_2\tilde{P}]\right) \;=\; \tfrac14\,\hat{u}\cdot(\delta_1\hat{u}\times\delta_2\hat{u}).
 $$
 The **geodesic distance** is $d_{\mathrm{FS}}(\tilde{P},\tilde{Q}) = \arccos\lvert\langle\psi|\phi\rangle\rvert = \theta/2$, so that the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is the sine of the Fubini–Study distance, $D = \sin d_{\mathrm{FS}}$. And on the interior the metric is the **Bures metric**, whose boundary restriction is the Fubini–Study metric; the flat quadratic form $-\tfrac14|d\vec r|^2$ that the biquaternion norm also supplies is *not* that interior metric, so the biquaternion norm gives the boundary exactly and the flat geometry everywhere, but not the metrically distinguished interior.
 
@@ -33,7 +33,7 @@ with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar 
 $$
 N(\tilde{H})=\bigl(h_0^2-|\vec h|^2\bigr)e_0 .
 $$
-A state is $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, with matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$ and basis $\{\tilde\Pi_+,y\}$. The unit quaternions act on the Bloch sphere by rotations.
+A state is $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\hat{u})=\tfrac12(e_0\pm i\hat{u})$ with $\hat{u}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, with matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$ and basis $\{\tilde\Pi_+,y\}$. The unit quaternions act on the Bloch sphere by rotations.
 
 ## The State Space and Its Two Forms
 
@@ -72,9 +72,9 @@ N(\tilde{\rho})=0,\qquad \tilde{\rho}^2-\tilde{\rho}=\tfrac14\bigl(|\vec r|^2-1\
 $$
 so a boundary state is an idempotent of trace one and, in the matrix model, a rank-one projection. Writing it as
 $$
-\tilde\Pi(\hat{\mu})=\tfrac12\bigl(e_0+i\hat{\mu}\bigr),\qquad |\hat{\mu}|=1 ,
+\tilde\Pi(\hat{u})=\tfrac12\bigl(e_0+i\hat{u}\bigr),\qquad |\hat{u}|=1 ,
 $$
-the map $\hat{\mu}\mapsto\tilde\Pi(\hat{\mu})$ is a bijection from the unit sphere $S^2=\{\hat{\mu}\in\mathbb{R}^3\}$ to the pure states, and $\tilde\Pi(\hat{\mu})$ and $\tilde\Pi(-\hat{\mu})=e_0-\tilde\Pi(\hat{\mu})$ are complementary orthogonal projections.
+the map $\hat{u}\mapsto\tilde\Pi(\hat{u})$ is a bijection from the unit sphere $S^2=\{\hat{u}\in\mathbb{R}^3\}$ to the pure states, and $\tilde\Pi(\hat{u})$ and $\tilde\Pi(-\hat{u})=e_0-\tilde\Pi(\hat{u})$ are complementary orthogonal projections.
 
 The pure states have a second, independent parametrization, and the agreement of the two is what makes the projective geometry available. The **state module** is the minimal left ideal
 $$
@@ -102,26 +102,26 @@ Two remarks fix the roles. First, the complex structure used here lives on the *
 
 ## The Transition Probability from the Trace Pairing
 
-The trace pairing gives the overlap of two pure states. From the idempotent form and the quaternion product of pure real quaternions, which reads $\hat{\mu}\hat{\nu}=-\hat{\mu}\cdot\hat{\nu}+\hat{\mu}\times\hat{\nu}$,
+The trace pairing gives the overlap of two pure states. From the idempotent form and the quaternion product of pure real quaternions, which reads $\hat{u}_1\hat{u}_2=-\hat{u}_1\cdot\hat{u}_2+\hat{u}_1\times\hat{u}_2$,
 $$
-\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})
-=\tfrac14\bigl(e_0+i\hat{\mu}\bigr)\bigl(e_0+i\hat{\nu}\bigr)
-=\tfrac14\Bigl(\bigl(1+\hat{\mu}\cdot\hat{\nu}\bigr)e_0+i(\hat{\mu}+\hat{\nu})-\hat{\mu}\times\hat{\nu}\Bigr).
+\tilde\Pi(\hat{u}_1)\tilde\Pi(\hat{u}_2)
+=\tfrac14\bigl(e_0+i\hat{u}_1\bigr)\bigl(e_0+i\hat{u}_2\bigr)
+=\tfrac14\Bigl(\bigl(1+\hat{u}_1\cdot\hat{u}_2\bigr)e_0+i(\hat{u}_1+\hat{u}_2)-\hat{u}_1\times\hat{u}_2\Bigr).
 $$
 The trace keeps only the scalar part,
 $$
-\boxed{\ \mathrm{Tr}\bigl(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})\bigr)=\tfrac12\bigl(1+\hat{\mu}\cdot\hat{\nu}\bigr)=\cos^2\frac{\theta}{2},\ }
+\boxed{\ \mathrm{Tr}\bigl(\tilde\Pi(\hat{u}_1)\tilde\Pi(\hat{u}_2)\bigr)=\tfrac12\bigl(1+\hat{u}_1\cdot\hat{u}_2\bigr)=\cos^2\frac{\theta}{2},\ }
 $$
 where $\theta$ is the angle between the two Bloch vectors. This is the transition probability of the two pure states, the squared overlap $\lvert\langle\psi|\phi\rangle\rvert^2$, read as a trace of the algebra. On the matrix side it is $\lvert\langle\psi|\phi\rangle\rvert^2$ with the normalized spinors of the preceding section, and the identification is exact:
 $$
-\lvert\langle\psi(\hat{\mu})|\psi(\hat{\nu})\rangle\rvert^2=\mathrm{Tr}\bigl(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})\bigr).
+\lvert\langle\psi(\hat{u}_1)|\psi(\hat{u}_2)\rangle\rvert^2=\mathrm{Tr}\bigl(\tilde\Pi(\hat{u}_1)\tilde\Pi(\hat{u}_2)\bigr).
 $$
 
-Two checks fix the normalization. For $\hat{\nu}=\hat{\mu}$ the trace is $1$, as it must be for a probability; for $\hat{\nu}=-\hat{\mu}$ it is $0$, the orthogonal case; for $\hat{\nu}\perp\hat{\mu}$ it is $\tfrac12$, the unbiased case. The quantity is invariant under the whole unitary group, because conjugation by a unitary preserves the trace, and it is the only non-constant unitary-invariant two-point function of the boundary that is bilinear in the two projectors. It is therefore the trace pairing's contribution to the geometry, and it is a *probability*, not a distance: the distance is the angle whose cosine-square it is.
+Two checks fix the normalization. For $\hat{u}_2=\hat{u}_1$ the trace is $1$, as it must be for a probability; for $\hat{u}_2=-\hat{u}_1$ it is $0$, the orthogonal case; for $\hat{u}_2\perp\hat{u}_1$ it is $\tfrac12$, the unbiased case. The quantity is invariant under the whole unitary group, because conjugation by a unitary preserves the trace, and it is the only non-constant unitary-invariant two-point function of the boundary that is bilinear in the two projectors. It is therefore the trace pairing's contribution to the geometry, and it is a *probability*, not a distance: the distance is the angle whose cosine-square it is.
 
 The companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* records the complementary boundary identity for the trace distance,
 $$
-D\bigl(\tilde\Pi(\hat{\mu}),\tilde\Pi(\hat{\nu})\bigr)=\tfrac12\bigl|\hat{\mu}-\hat{\nu}\bigr|=\sin\frac{\theta}{2},
+D\bigl(\tilde\Pi(\hat{u}_1),\tilde\Pi(\hat{u}_2)\bigr)=\tfrac12\bigl|\hat{u}_1-\hat{u}_2\bigr|=\sin\frac{\theta}{2},
 \qquad
 D^2+\mathrm{Tr}\bigl(\tilde{P}\tilde{Q}\bigr)=1 ,
 $$
@@ -136,33 +136,33 @@ The biquaternion norm vanishes on the pure states, so it assigns them a *length*
 
 ### The projector variation
 
-Differentiate the idempotent along the boundary. Since $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$,
+Differentiate the idempotent along the boundary. Since $\tilde\Pi(\hat{u})=\tfrac12(e_0+i\hat{u})$,
 $$
-\delta\tilde{P}=\tfrac12\,i\,\delta\hat{\mu},\qquad \hat{\mu}\cdot\delta\hat{\mu}=0 ,
+\delta\tilde{P}=\tfrac12\,i\,\delta\hat{u},\qquad \hat{u}\cdot\delta\hat{u}=0 ,
 $$
-the tangency condition being the differentiation of $|\hat{\mu}|^2=1$. The displacement is Hermitian, $\delta\tilde{P}\in\mathbb{M}_+$, with vanishing scalar part. Compute the biquaternion norm of the displacement, using that $\overline{\delta\hat{\mu}}=-\delta\hat{\mu}$ for a pure real quaternion and that $(\delta\hat{\mu})^2=-|\delta\hat{\mu}|^2e_0$:
+the tangency condition being the differentiation of $|\hat{u}|^2=1$. The displacement is Hermitian, $\delta\tilde{P}\in\mathbb{M}_+$, with vanishing scalar part. Compute the biquaternion norm of the displacement, using that $\overline{\delta\hat{u}}=-\delta\hat{u}$ for a pure real quaternion and that $(\delta\hat{u})^2=-|\delta\hat{u}|^2e_0$:
 $$
 N(\delta\tilde{P})
-=\Bigl(\tfrac12 i\,\delta\hat{\mu}\Bigr)\overline{\Bigl(\tfrac12 i\,\delta\hat{\mu}\Bigr)}
-=\Bigl(\tfrac12 i\,\delta\hat{\mu}\Bigr)\Bigl(\tfrac12 i\,\overline{\delta\hat{\mu}}\Bigr)
-=\Bigl(\tfrac12 i\,\delta\hat{\mu}\Bigr)\Bigl(-\tfrac12 i\,\delta\hat{\mu}\Bigr)
-=-\tfrac14\,i^2\,(\delta\hat{\mu})^2
-=\tfrac14\,(\delta\hat{\mu})^2
-=-\tfrac14\,|\delta\hat{\mu}|^2\,e_0 .
+=\Bigl(\tfrac12 i\,\delta\hat{u}\Bigr)\overline{\Bigl(\tfrac12 i\,\delta\hat{u}\Bigr)}
+=\Bigl(\tfrac12 i\,\delta\hat{u}\Bigr)\Bigl(\tfrac12 i\,\overline{\delta\hat{u}}\Bigr)
+=\Bigl(\tfrac12 i\,\delta\hat{u}\Bigr)\Bigl(-\tfrac12 i\,\delta\hat{u}\Bigr)
+=-\tfrac14\,i^2\,(\delta\hat{u})^2
+=\tfrac14\,(\delta\hat{u})^2
+=-\tfrac14\,|\delta\hat{u}|^2\,e_0 .
 $$
 
 The scalar coefficient is **negative**, so the biquaternion norm is negative on tangential displacements; the metric is the negative of the form on those directions, and the Fubini–Study line element is
 $$
-ds^2_{\mathrm{FS}}=-\,N(\delta\tilde{P})\Big|_{\hat{\mu}\cdot\delta\hat{\mu}=0}
-=\tfrac14\,|d\hat{\mu}|^2 .
+ds^2_{\mathrm{FS}}=-\,N(\delta\tilde{P})\Big|_{\hat{u}\cdot\delta\hat{u}=0}
+=\tfrac14\,|d\hat{u}|^2 .
 $$
-With $\hat{\mu}=(\sin\theta\cos\varphi,\sin\theta\sin\varphi,\cos\theta)$ this is
+With $\hat{u}=(\sin\theta\cos\varphi,\sin\theta\sin\varphi,\cos\theta)$ this is
 $$
 \boxed{\ ds^2_{\mathrm{FS}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right).\ }
 $$
 The round metric of the unit Bloch sphere is $d\Omega^2=d\theta^2+\sin^2\theta\,d\varphi^2$, so the Fubini–Study metric of the pure states is one quarter of the round metric of the sphere on which the states are drawn. Equivalently, the pure-state manifold is a round sphere of radius $\tfrac12$ with the Fubini–Study normalization, and its total area is $\pi$.
 
-The sign convention in $-N$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $N(\delta\tilde{P})=-\tfrac14|\delta\hat{\mu}|^2e_0$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-N(\delta\tilde{P})$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
+The sign convention in $-N$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $N(\delta\tilde{P})=-\tfrac14|\delta\hat{u}|^2e_0$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-N(\delta\tilde{P})$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
 
 ### The spinor computation
 
@@ -215,25 +215,25 @@ The factor also shows why the trace normalization matters. The trace of the alge
 
 The boundary is not only a Riemannian manifold; it is a complex manifold, and the complex structure is again supplied by the algebra. This section identifies it and its symplectic companion, so that the Fubini–Study metric can be exhibited as a Kähler metric with all three of its structures read from $\mathbb{B}$.
 
-**The complex structure.** At a point $\hat{\mu}$ of the boundary, define a real-linear map on the tangent space by
+**The complex structure.** At a point $\hat{u}$ of the boundary, define a real-linear map on the tangent space by
 $$
-J_{\hat{\mu}}(v)=\hat{\mu}\times v,\qquad v\perp\hat{\mu}.
+J_{\hat{u}}(v)=\hat{u}\times v,\qquad v\perp\hat{u}.
 $$
-Since $\hat{\mu}\times(\hat{\mu}\times v)=\hat{\mu}(\hat{\mu}\cdot v)-v|\hat{\mu}|^2=-v$ for a tangent $v$, this satisfies $J^2=-1$: it is an almost-complex structure on the sphere, and it is in fact integrable, the sphere being the projective line. The algebra supplies it as the antisymmetric part of the product of pure real quaternions,
+Since $\hat{u}\times(\hat{u}\times v)=\hat{u}(\hat{u}\cdot v)-v|\hat{u}|^2=-v$ for a tangent $v$, this satisfies $J^2=-1$: it is an almost-complex structure on the sphere, and it is in fact integrable, the sphere being the projective line. The algebra supplies it as the antisymmetric part of the product of pure real quaternions,
 $$
-[\hat{\mu},v]=\hat{\mu}v-v\hat{\mu}=2\,\hat{\mu}\times v,
+[\hat{u},v]=\hat{u}v-v\hat{u}=2\,\hat{u}\times v,
 \qquad\text{so}\qquad
-J_{\hat{\mu}}(v)=\tfrac12\,[\hat{\mu},v].
+J_{\hat{u}}(v)=\tfrac12\,[\hat{u},v].
 $$
 The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables, $[\tilde{H},\tilde{K}]=-2(\vec h\times\vec k)$, restricted to the boundary.
 
-**The Kähler compatibility.** The metric $g(\delta_1,\delta_2)=\tfrac14\,\delta_1\hat{\mu}\cdot\delta_2\hat{\mu}$ is invariant under $J$, because $J$ is a rotation:
+**The Kähler compatibility.** The metric $g(\delta_1,\delta_2)=\tfrac14\,\delta_1\hat{u}\cdot\delta_2\hat{u}$ is invariant under $J$, because $J$ is a rotation:
 $$
-g(J\delta_1,J\delta_2)=\tfrac14(\hat{\mu}\times\delta_1\hat{\mu})\cdot(\hat{\mu}\times\delta_2\hat{\mu})=\tfrac14\,\delta_1\hat{\mu}\cdot\delta_2\hat{\mu}=g(\delta_1,\delta_2).
+g(J\delta_1,J\delta_2)=\tfrac14(\hat{u}\times\delta_1\hat{u})\cdot(\hat{u}\times\delta_2\hat{u})=\tfrac14\,\delta_1\hat{u}\cdot\delta_2\hat{u}=g(\delta_1,\delta_2).
 $$
 The associated symplectic form is
 $$
-\omega(\delta_1,\delta_2)=g(J\delta_1,\delta_2)=\tfrac14\,\hat{\mu}\cdot(\delta_1\hat{\mu}\times\delta_2\hat{\mu}),
+\omega(\delta_1,\delta_2)=g(J\delta_1,\delta_2)=\tfrac14\,\hat{u}\cdot(\delta_1\hat{u}\times\delta_2\hat{u}),
 $$
 which in the angles $(\theta,\varphi)$ is
 $$
@@ -245,14 +245,14 @@ $$
 $$
 the area of the sphere of radius $\tfrac12$, as stated above.
 
-**The commutator expression.** The symplectic form can be written entirely inside the algebra, without the intermediate Bloch vector. For tangential displacements $\delta_1\tilde{P}=\tfrac12 i\,\delta_1\hat{\mu}$ and $\delta_2\tilde{P}=\tfrac12 i\,\delta_2\hat{\mu}$, the commutator of the displacements is a pure real quaternion, and the trace of the projector times that commutator is purely imaginary. One computes
+**The commutator expression.** The symplectic form can be written entirely inside the algebra, without the intermediate Bloch vector. For tangential displacements $\delta_1\tilde{P}=\tfrac12 i\,\delta_1\hat{u}$ and $\delta_2\tilde{P}=\tfrac12 i\,\delta_2\hat{u}$, the commutator of the displacements is a pure real quaternion, and the trace of the projector times that commutator is purely imaginary. One computes
 $$
 \mathrm{Tr}\!\left(\tilde{P}\,[\delta_1\tilde{P},\delta_2\tilde{P}]\right)
-=\tfrac12\, i\;\hat{\mu}\cdot(\delta_1\hat{\mu}\times\delta_2\hat{\mu}),
+=\tfrac12\, i\;\hat{u}\cdot(\delta_1\hat{u}\times\delta_2\hat{u}),
 $$
 so that
 $$
-\boxed{\ \omega(\delta_1,\delta_2)=-\tfrac12\,i\,\mathrm{Tr}\!\left(\tilde{P}\,[\delta_1\tilde{P},\delta_2\tilde{P}]\right)=\tfrac14\,\hat{\mu}\cdot(\delta_1\hat{\mu}\times\delta_2\hat{\mu}).\ }
+\boxed{\ \omega(\delta_1,\delta_2)=-\tfrac12\,i\,\mathrm{Tr}\!\left(\tilde{P}\,[\delta_1\tilde{P},\delta_2\tilde{P}]\right)=\tfrac14\,\hat{u}\cdot(\delta_1\hat{u}\times\delta_2\hat{u}).\ }
 $$
 This is the algebraic face of the Kähler form: it is built from the trace pairing, the product, and the Hermitian conjugation, with no metric input beyond the trace normalization. The imaginary unit $i$ appears because the commutator of two Hermitian displacements is anti-Hermitian, so its trace is imaginary; the factor $i$ converts it to the real two-form.
 
@@ -272,15 +272,15 @@ The metric determines distances, and the distances carry the same information as
 
 **The geodesic distance.** The geodesics of the round sphere of radius $\tfrac12$ are its great circles, so the Fubini–Study geodesic distance between two pure states is the arc length along the shorter great circle,
 $$
-d_{\mathrm{FS}}\bigl(\tilde\Pi(\hat{\mu}),\tilde\Pi(\hat{\nu})\bigr)=\tfrac12\,\theta=\arccos\lvert\langle\psi|\phi\rangle\rvert ,
+d_{\mathrm{FS}}\bigl(\tilde\Pi(\hat{u}_1),\tilde\Pi(\hat{u}_2)\bigr)=\tfrac12\,\theta=\arccos\lvert\langle\psi|\phi\rangle\rvert ,
 $$
-where $\theta$ is the angle between $\hat{\mu}$ and $\hat{\nu}$ and $\lvert\langle\psi|\phi\rangle\rvert=\cos(\theta/2)$ is the overlap of the normalized spinors of the two rays. Three checks: for coincident rays, $\theta=0$ and $d_{\mathrm{FS}}=0$; for orthogonal rays, $\theta=\pi$ and $d_{\mathrm{FS}}=\pi/2$, the **maximal** distance; and the diameter of the pure-state manifold is $\pi/2$, not $\pi$, because the antipodal point of $\hat{\mu}$ corresponds to the orthogonal complement of the ray, not to the same ray with reversed phase.
+where $\theta$ is the angle between $\hat{u}_1$ and $\hat{u}_2$ and $\lvert\langle\psi|\phi\rangle\rvert=\cos(\theta/2)$ is the overlap of the normalized spinors of the two rays. Three checks: for coincident rays, $\theta=0$ and $d_{\mathrm{FS}}=0$; for orthogonal rays, $\theta=\pi$ and $d_{\mathrm{FS}}=\pi/2$, the **maximal** distance; and the diameter of the pure-state manifold is $\pi/2$, not $\pi$, because the antipodal point of $\hat{u}_1$ corresponds to the orthogonal complement of the ray, not to the same ray with reversed phase.
 
 **The equivalent data on the boundary.** The three boundary quantities are monotone functions of one another, and the identities relating them are the content of the geometry:
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu})\bigr)=\cos^2 d_{\mathrm{FS}},
+\mathrm{Tr}\bigl(\tilde\Pi(\hat{u}_1)\tilde\Pi(\hat{u}_2)\bigr)=\cos^2 d_{\mathrm{FS}},
 \qquad
-D\bigl(\tilde\Pi(\hat{\mu}),\tilde\Pi(\hat{\nu})\bigr)=\sin d_{\mathrm{FS}},
+D\bigl(\tilde\Pi(\hat{u}_1),\tilde\Pi(\hat{u}_2)\bigr)=\sin d_{\mathrm{FS}},
 \qquad
 d_{\mathrm{FS}}=\arccos\sqrt{\mathrm{Tr}\bigl(\tilde{P}\tilde{Q}\bigr)}=\arcsin D .
 $$
@@ -288,7 +288,7 @@ The first is the trace pairing, the second the trace distance of the companion a
 
 **Uniqueness and invariance.** The unitary group $U(2)$ acts transitively on the rays, and its image $SO(3)$ acts transitively on the boundary sphere. Any metric on the boundary that is invariant under this action is a multiple of the round metric, so the algebra's own symmetry group fixes the Fubini–Study metric **up to scale**. The scale is then fixed by the trace pairing, through the identification of the transition probability with $\cos^2 d_{\mathrm{FS}}$; equivalently, by the requirement that the line element be $-N(\delta\tilde{P})$, whose normalization is the trace normalization. This is a two-step determination worth naming: the symmetry fixes the metric up to a constant, and the trace fixes the constant. Neither step imports a geometric posit beyond the algebra's two forms.
 
-**Units.** The line element has been written so that $\hat{\mu}$ is a unit vector, i.e. the Bloch vector is measured in units in which the ball has radius one. If the physical Bloch vector is measured with a radius $r_0$ — for instance $r_0=\hbar/2$ for a spin — then the metric is multiplied by $r_0^2$ and the distance by $r_0$; the dimensionless statements above are the ones fixed by the algebra, and the physical conversion is a separate posit, like the identification of $\hat{\mu}$ with a direction in space.
+**Units.** The line element has been written so that $\hat{u}$ is a unit vector, i.e. the Bloch vector is measured in units in which the ball has radius one. If the physical Bloch vector is measured with a radius $r_0$ — for instance $r_0=\hbar/2$ for a spin — then the metric is multiplied by $r_0^2$ and the distance by $r_0$; the dimensionless statements above are the ones fixed by the algebra, and the physical conversion is a separate posit, like the identification of $\hat{u}$ with a direction in space.
 
 ## The Ball: the Bures Metric and What the Biquaternion Norm Does Not Give
 
@@ -330,13 +330,13 @@ Five statements summarize the result, and two of them are limitations that a rea
 
 ## Summary
 
-The state space of the biquaternion framework is the trace-one slice of the future cone of the biquaternion norm, and its geometry is determined by the framework's two forms. The trace pairing fixes the transition probability of two pure states, $\mathrm{Tr}(\tilde\Pi(\hat{\mu})\tilde\Pi(\hat{\nu}))=\cos^2(\theta/2)$. The biquaternion norm, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,
+The state space of the biquaternion framework is the trace-one slice of the future cone of the biquaternion norm, and its geometry is determined by the framework's two forms. The trace pairing fixes the transition probability of two pure states, $\mathrm{Tr}(\tilde\Pi(\hat{u}_1)\tilde\Pi(\hat{u}_2))=\cos^2(\theta/2)$. The biquaternion norm, though it vanishes on the pure states, fixes the metric through its second variation there, and the resulting line element is the Fubini–Study metric,
 
 $$
 ds^2_{\mathrm{FS}}=-N(\delta\tilde{P})\Big|_{\text{tangential}}=\tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
 $$
 
-one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\hat{\mu}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\tfrac12 i\,\mathrm{Tr}(\tilde{P}[\delta_1\tilde{P},\delta_2\tilde{P}])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\psi|\phi\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is $\sin d_{\mathrm{FS}}$.
+one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\hat{u}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\tfrac12 i\,\mathrm{Tr}(\tilde{P}[\delta_1\tilde{P},\delta_2\tilde{P}])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\psi|\phi\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is $\sin d_{\mathrm{FS}}$.
 
 The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-N(\delta\tilde{\rho})=\tfrac14|d\vec r|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a trace-fixed scale — it determines completely; what it does not determine it leaves named.
 
@@ -353,14 +353,14 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
 | $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ | State, $|\vec r|\leq1$ |
-| $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state (idempotent), $|\hat{\mu}|=1$ |
+| $\tilde\Pi(\hat{u})=\tfrac12(e_0+i\hat{u})$ | Pure state (idempotent), $|\hat{u}|=1$ |
 | $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ | State module, $\cong\mathbb{C}^2$ |
 | $\psi$, $\lvert\psi\rangle$ | Spinor in the state module |
 | $\mathrm{Tr}(\tilde{P}\tilde{Q})$ | Transition probability of two pure states |
-| $\theta$ | Angle between $\hat{\mu}$ and $\hat{\nu}$ |
+| $\theta$ | Angle between $\hat{u}_1$ and $\hat{u}_2$ |
 | $d_{\mathrm{FS}}=\theta/2$ | Fubini–Study distance |
 | $ds^2_{\mathrm{FS}}=\tfrac14(d\theta^2+\sin^2\theta\,d\varphi^2)$ | Fubini–Study line element |
-| $J(v)=\hat{\mu}\times v$ | Complex structure on the boundary |
+| $J(v)=\hat{u}\times v$ | Complex structure on the boundary |
 | $\omega=\tfrac14\sin\theta\,d\theta\wedge d\varphi$ | Symplectic (Kähler) form |
 | $w=\tan(\theta/2)e^{i\varphi}$ | Stereographic (affine) coordinate |
 | $K=\log(1+|w|^2)$ | Kähler potential; $ds^2=g_{w\bar{w}}\,dw\,d\bar{w}$, $g_{w\bar{w}}=1/(1+|w|^2)^2$ |

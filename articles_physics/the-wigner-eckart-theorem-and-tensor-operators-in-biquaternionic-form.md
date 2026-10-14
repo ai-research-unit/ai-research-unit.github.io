@@ -25,7 +25,7 @@ $$
 \tilde U(R)\,\tilde T^{(k)}_q\,\tilde U(R)^\dagger
 =\sum_{q'=-k}^{k}\mathcal{D}^{(k)}_{q'q}(R)\,\tilde T^{(k)}_{q'},
 \qquad
-\tilde U(R)=\exp\!\left(-\tfrac{i}{\hbar}\theta\,\hat n_k\tilde J_k\right),
+\tilde U(R)=\exp\!\left(-\tfrac{i}{\hbar}\theta\,\hat u_k\tilde J_k\right),
 $$
 
 where $\mathcal{D}^{(k)}$ is the $(2k+1)$-dimensional rotation matrix of spin $k$. A **scalar operator** is a rank-$0$ tensor operator, $[\tilde J_k,\tilde T^{(0)}]=0$; a **vector operator** is a rank-$1$ tensor operator, with $[\tilde T_i,\tilde J_j]=i\hbar\epsilon_{ijk}\tilde T_k$ as its defining relation.
@@ -234,10 +234,10 @@ $$
 =\tfrac{1}{\sqrt6}\left(3\tilde S_3^2-\tilde S^2\right),
 $$
 
-using $\tilde S_{+1}\tilde S_{-1}+\tilde S_{-1}\tilde S_{+1}=-(\tilde S_1^2+\tilde S_2^2)$ and $\tilde S_1^2+\tilde S_2^2=\tilde S^2-\tilde S_3^2$, where $\tilde S_q$ denotes the spherical component of order $q$ and $\tilde S_k$ the Cartesian component along axis $k$. On a coherent state pointing at polar angle $\theta$ — an eigenstate of the adjoint rotation with $\langle\vec S\rangle=\hat n$ — its expectation is
+using $\tilde S_{+1}\tilde S_{-1}+\tilde S_{-1}\tilde S_{+1}=-(\tilde S_1^2+\tilde S_2^2)$ and $\tilde S_1^2+\tilde S_2^2=\tilde S^2-\tilde S_3^2$, where $\tilde S_q$ denotes the spherical component of order $q$ and $\tilde S_k$ the Cartesian component along axis $k$. On a coherent state pointing at polar angle $\theta$ — an eigenstate of the adjoint rotation with $\langle\vec S\rangle=\hat u$ — its expectation is
 
 $$
-\langle \hat n|\,\tfrac{1}{\sqrt6}\left(3\tilde S_3^2-\tilde S^2\right)|\hat n\rangle
+\langle \hat u|\,\tfrac{1}{\sqrt6}\left(3\tilde S_3^2-\tilde S^2\right)|\hat u\rangle
 =\tfrac{1}{\sqrt6}\,P_2(\cos\theta),\qquad
 P_2(x)=\tfrac12\left(3x^2-1\right),
 $$

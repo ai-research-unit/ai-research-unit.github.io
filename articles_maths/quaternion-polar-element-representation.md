@@ -7,7 +7,11 @@ This article is about the **polar representation** of a quaternion: the statemen
 
 The subject is elementary, and that is the point. In each algebra an element is written as a scale, possibly a central phase, possibly a hyperbolic factor, and a rotor, and the number of factors present is a property of the algebra, not a choice. In $\mathbb{H}$ exactly two of those four factors exist. Establishing that here, in the case where nothing can go wrong, fixes the vocabulary and the counting used by the three companion articles, where much can.
 
-The plan is as follows. The modulus and the unit quaternion are defined, and existence and uniqueness are proved. The exponential, or axis-angle, form of the unit factor is derived from the power series. The two degenerate cases (the real quaternions and their negatives) are separated from the generic case. The matrix counterpart of the decomposition is recorded, since the same statement in $M_2(\mathbb{C})$ is the classical polar decomposition of a matrix. Worked examples with explicit numbers close the mathematical part. The article is written under the corpus conventions of *Quaternion Algebra*: the basis is $e_0 = 1, e_1, e_2, e_3$, the multiplication is $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_{\mu} q_\mu^2$. No physics is invoked. Every numerical value displayed below was recomputed in double precision.
+The plan is as follows. The modulus and the unit quaternion are defined, and existence and uniqueness are proved. The exponential, or axis-angle, form of the unit factor is derived from the power series. The two degenerate cases (the real quaternions and their negatives) are separated from the generic case. The matrix counterpart of the decomposition is recorded, since the same statement in $M_2(\mathbb{C})$ is the classical polar decomposition of a matrix. Worked examples with explicit numbers close the mathematical part.
+
+The conventions and the symbols are those of *Quaternion Algebra* and of the corpus (*Conventions in Mathematics*); the symbols this article uses are collected in §*Summary of Notation*.
+
+No physics is invoked. Every numerical value displayed below was recomputed in double precision.
 
 ## The Modulus and the Unit Factor
 
@@ -18,14 +22,14 @@ The polar representation of a quaternion is the following statement.
 **Definition.** Let $\tilde q \in \mathbb{H}$, $\tilde q \neq 0$. The **polar representation** of $\tilde q$ is the writing
 
 $$
-\tilde q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{H}, \quad N(u) = 1,
+\tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \tilde u_{\mathrm r} \in \mathbb{H}, \quad N(\tilde u_{\mathrm r}) = 1,
 $$
 
-in which $r$ is the **modulus** of $\tilde q$ and $u$ is its **unit factor**.
+in which $r$ is the **modulus** of $\tilde q$ and $\tilde u_{\mathrm r}$ is its **unit factor**.
 
-The second factor is a **unit element**, an element of norm one for the norm in view (*Conventions in Mathematics*, §*The Unitary Convention*); the norm in view is the quaternion norm $N$, so the unit factor is the unit sphere $N(u)=1$, the group $\mathrm{Sp}(1)$. The phrase names the norm-one elements and not every invertible element: the **group of units** $\mathbb{H}^\times$ of the algebra is the wider set of nonzero quaternions, and the two senses of the word are kept apart throughout.
+The second factor is a **unit element**, an element of norm one for the norm in view (*Conventions in Mathematics*, §*The Unitary Convention*); the norm in view is the quaternion norm $N$, so the unit factor is the unit sphere $N(\tilde u_{\mathrm r})=1$, the group $\mathrm{Sp}(1)$. The phrase names the norm-one elements and not every invertible element: the **group of units** $\mathbb{H}^\times$ of the algebra is the wider set of nonzero quaternions, and the two senses of the word are kept apart throughout.
 
-The definition names the two factors before anything is proved about them, so that the two propositions below have definite objects to be about. The modulus is a real number and carries one parameter. The unit factor is a quaternion constrained by one real equation, $N(u) = 1$, so it carries three parameters out of the four of a general quaternion. The two counts add to four, which is the real dimension of the algebra, and this additivity is the first instance of a pattern the companion articles follow.
+The definition names the two factors before anything is proved about them, so that the two propositions below have definite objects to be about. The modulus is a real number and carries one parameter. The unit factor is a quaternion constrained by one real equation, $N(\tilde u_{\mathrm r}) = 1$, so it carries three parameters out of the four of a general quaternion. The two counts add to four, which is the real dimension of the algebra, and this additivity is the first instance of a pattern the companion articles follow.
 
 ### The Modulus from the Quaternion Norm
 
@@ -54,30 +58,30 @@ $$
 The unit factor is
 
 $$
-u = \frac{\tilde q}{r} = \frac{\tilde q}{\sqrt{N(\tilde q)}}.
+\tilde u_{\mathrm r} = \frac{\tilde q}{r} = \frac{\tilde q}{\sqrt{N(\tilde q)}}.
 $$
 
 It is a quaternion of norm $1$. The set of such quaternions,
 
 $$
-\mathrm{Sp}(1) = \{u \in \mathbb{H} : N(u) = uu^{\natural} = 1\},
+\mathrm{Sp}(1) = \{\tilde u_{\mathrm r} \in \mathbb{H} : N(\tilde u_{\mathrm r}) = \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1\},
 $$
 
-is the unit sphere $S^3$ of $\mathbb{H} \cong \mathbb{R}^4$, a compact three-dimensional manifold, and it is a group under multiplication: if $N(u) = N(v) = 1$ then $N(uv) = N(u)N(v) = 1$ by multiplicativity, and $u^{-1} = u^{\natural}$ has the same norm. The unit factor is a group element, which is what makes it a rotor in the sense of the companion articles: it acts on the vector part of the algebra by conjugation and preserves the quaternion norm there.
+is the unit sphere $\mathrm{Sp}(1)$ of unit real quaternions in $\mathbb{H} \cong \mathbb{R}^4$, a compact three-dimensional manifold, and it is a group under multiplication: if $N(\tilde u_{\mathrm r}) = N(\tilde v) = 1$ then $N(\tilde u_{\mathrm r}\tilde v) = N(\tilde u_{\mathrm r})N(\tilde v) = 1$ by multiplicativity, and $\tilde u_{\mathrm r}^{-1} = \tilde u_{\mathrm r}^{\natural}$ has the same norm. The unit factor is a group element, which is what makes it a rotor in the sense of the companion articles: it acts on the vector part of the algebra by conjugation and preserves the quaternion norm there.
 
 ### Existence and Uniqueness
 
 **Theorem.** Every nonzero quaternion $\tilde q$ has exactly one polar representation.
 
-*Existence.* Put $r = \sqrt{N(\tilde q)}$ and $u = \tilde q/r$. Since $N(\tilde q) > 0$, the number $r$ is a positive real, and
+*Existence.* Put $r = \sqrt{N(\tilde q)}$ and $\tilde u_{\mathrm r} = \tilde q/r$. Since $N(\tilde q) > 0$, the number $r$ is a positive real, and
 
 $$
-N(u) = N\!\left(\frac{\tilde q}{r}\right) = \frac{N(\tilde q)}{r^2} = 1
+N(\tilde u_{\mathrm r}) = N\!\left(\frac{\tilde q}{r}\right) = \frac{N(\tilde q)}{r^2} = 1
 $$
 
-because $N(\lambda \tilde q) = \lambda^2 N(\tilde q)$ for real $\lambda$. Hence $\tilde q = r u$ with $r > 0$ and $N(u) = 1$.
+because $N(\lambda \tilde q) = \lambda^2 N(\tilde q)$ for real $\lambda$. Hence $\tilde q = r \tilde u_{\mathrm r}$ with $r > 0$ and $N(\tilde u_{\mathrm r}) = 1$.
 
-*Uniqueness.* Suppose $\tilde q = r u = r' u'$ with $r, r' > 0$ and $N(u) = N(u') = 1$. Taking norms gives $r^2 = N(\tilde q) = r'^2$, so $r = r'$ because both are positive, and then $u = \tilde q/r = u'$. Hence the modulus and the unit factor are both determined by $\tilde q$.
+*Uniqueness.* Suppose $\tilde q = r \tilde u_{\mathrm r} = r' \tilde u_{\mathrm r}'$ with $r, r' > 0$ and $N(\tilde u_{\mathrm r}) = N(\tilde u_{\mathrm r}') = 1$. Taking norms gives $r^2 = N(\tilde q) = r'^2$, so $r = r'$ because both are positive, and then $\tilde u_{\mathrm r} = \tilde q/r = \tilde u_{\mathrm r}'$. Hence the modulus and the unit factor are both determined by $\tilde q$.
 
 The uniqueness holds with no sign ambiguity. Here the constraint $r > 0$ alone removes the ambiguity, because the quaternion norm is positive definite.
 
@@ -88,21 +92,28 @@ The two factors carry distinct information, and separating them is the whole con
 | factor | range | parameters | what it is |
 |---|---|---|---|
 | $r$ | $(0, \infty)$ | $1$ | the scale, rigid on the vector part under $\tilde q \mapsto \lambda \tilde q$ |
-| $u$ | $\mathrm{Sp}(1) = S^3$ | $3$ | the rotor, a group element acting by conjugation |
+| $\tilde u_{\mathrm r}$ | $\mathrm{Sp}(1)$ | $3$ | the rotor, a group element acting by conjugation |
 
-The scale commutes with everything, and it is the whole of the algebra's centre on the positive side: the centre of $\mathbb{H}$ is $\mathbb{R}$, so a real scalar is the only central object available. The rotor is the non-central part of the element, and it is compact: $S^3$ is a closed bounded manifold, with no hyperbolic direction in it. The two statements together say that a quaternion is a positive central scale times a compact rotor, and nothing else.
+The scale commutes with everything, and it is the whole of the algebra's centre on the positive side: the centre of $\mathbb{H}$ is $\mathbb{R}$, so a real scalar is the only central object available. The rotor is the non-central part of the element, and it is compact: $\mathrm{Sp}(1)$ is a closed bounded manifold, with no hyperbolic direction in it. The two statements together say that a quaternion is a positive central scale times a compact rotor, and nothing else.
 
 ## The Unit Factor and the Exponential
 
 ### The Word as Exponentials
 
-The word $\tilde q = r\,u$ is the product of two exponentials, the scale and the unit factor:
+The word $\tilde q = r\,\tilde u_{\mathrm r}$ is the product of two exponentials, the modulus and the unit factor:
 
 $$
-\tilde q = \exp(\ln\sqrt{N})\,\exp(\mu\theta) , \qquad r = \sqrt{N(\tilde q)} > 0 ,
+\tilde q = \exp(\ln\sqrt{N})\,\exp\Bigl(\mu\tfrac{\theta}{2}\Bigr) , \qquad r = \sqrt{N(\tilde q)} > 0 ,
 $$
 
-with $\mu$ a unit pure quaternion and $\theta$ the angle. The exponent of the scale is the real number $\ln\sqrt N$, whose root is $e_0$ of square $+e_0$, the hyperbolic row of the trichotomy below; the exponent of the unit factor is $\mu\theta$, whose root is the unit pure quaternion $\mu$, of square $-e_0$, the trigonometric row. The unit factor is the exponential of the angle only as a class, since $\exp(\mu\theta)$ has period $2\pi$ in $\theta$, and its axis is unique only away from the two central points $\pm e_0$. The scale exponent $\ln\sqrt N$ is a real scalar of the centre, so the two exponents commute and the word is order-free; and because there is no second non-central direction in the algebra, the two exponentials **amalgamate into one**, $\tilde q = \exp(\ln\sqrt N\,e_0 + \mu\theta)$. The obstruction to such an amalgamation is a non-central exponent that fails to commute with another, and here there is none.
+with $\mu$ a unit pure quaternion, a point of the axis sphere $\mathcal{A}$ of unit vectors of $\mathbb{R}^3$, and $\theta$ the rotation angle, twice the angle of the unit factor.
+
+| # | factor | name | real dimension | exponential | case | closed form | parameter and range | unit axis |
+|---|---|---|---|---|---|---|---|---|
+| 1 | $r$ | modulus | $1$ | $\exp(\ln\sqrt{N})$ | hyperbolic | $\sqrt{N}$ | $r = \sqrt{N(\tilde q)} > 0$ | — |
+| 2 | $\tilde u_{\mathrm r}$ | unit factor | $3$ | $\exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ | trigonometric | $\cos\tfrac{\theta}{2} + \mu\sin\tfrac{\theta}{2}$ | $\theta \in [0,2\pi]$, $\mu \in \mathcal{A}$ | $\mu$ |
+
+The modulus exponent $\ln\sqrt N$ is a real scalar of the centre, and the unit-factor exponent $\mu\tfrac{\theta}{2}$ has the unit pure quaternion $\mu$ as its root, of square $-e_0$; the first is hyperbolic and the second trigonometric. Only the trigonometric row is occupied by a non-scalar element: the roots of $+e_0$ are $\pm e_0$ alone, and there is no nilpotent, since $\mathbb{H}$ is a division algebra. A unit quaternion other than $\pm e_0$ is therefore always $\exp(\mu t)$ with $\mu$ a unit pure quaternion, never hyperbolic and never parabolic. The unit factor is the exponential of the angle only as a class, since $\exp(\mu\tfrac{\theta}{2})$ has period $4\pi$ in $\theta$, and its axis is unique only away from the two central points $\pm e_0$. The two exponents commute, so the word is order-free, and because there is no second non-central direction in the algebra, the two exponentials **amalgamate into one**, $\tilde q = \exp(\ln\sqrt N\,e_0 + \mu\tfrac{\theta}{2})$.
 
 ### The Unit Pure Quaternions
 
@@ -114,36 +125,25 @@ $$
 \vec q^2 = -\left(q_1^2+q_2^2+q_3^2\right)e_0 = -N(\vec q)\,e_0,
 $$
 
-because the products of distinct units cancel in pairs, $e_2e_3 = -e_3e_2$ and so on. In particular a pure quaternion $\mu$ with $N(\mu) = 1$ satisfies $\mu^2 = -e_0$: the unit pure quaternions are exactly the roots of $-e_0$, and they form the two-sphere $S^2$ inside $\operatorname{Im}\mathbb{H}$. This is the quaternion analogue of the single pair $\pm i$ of the complex numbers, and it is the object that the complex case replaces by a sign choice.
+because the products of distinct units cancel in pairs, $e_2e_3 = -e_3e_2$ and so on. In particular a pure quaternion $\mu$ with $N(\mu) = 1$ satisfies $\mu^2 = -e_0$: the unit pure quaternions are exactly the roots of $-e_0$, and they form the two-sphere $\mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$) inside $\operatorname{Im}\mathbb{H}$. This is the quaternion analogue of the single pair $\pm i$ of the complex numbers, and it is the object that the complex case replaces by a sign choice.
 
 ### The Exponential of a Pure Quaternion
 
-**Proposition.** Let $\mu$ be a unit pure quaternion and let $\theta \in \mathbb{R}$. Then
+**Proposition.** Let $\mu$ be a unit pure quaternion and let $t \in \mathbb{R}$. Then
 
 $$
-\exp(\mu\theta) = e_0\cos\theta + \mu\sin\theta .
+\exp(\mu t) = e_0\cos t + \mu\sin t .
 $$
 
 *Proof.* Compute the powers: $\mu^2 = -e_0$ gives $\mu^{2k} = (-1)^k e_0$ and $\mu^{2k+1} = (-1)^k\mu$. The exponential is defined by the convergent series $\exp(\tilde q) = \sum_{n\ge0}\tilde q^n/n!$, so
 
 $$
-\exp(\mu\theta) = \sum_{k\ge0}\frac{\mu^{2k}\theta^{2k}}{(2k)!} + \sum_{k\ge0}\frac{\mu^{2k+1}\theta^{2k+1}}{(2k+1)!} = e_0\sum_{k\ge0}\frac{(-1)^k\theta^{2k}}{(2k)!} + \mu\sum_{k\ge0}\frac{(-1)^k\theta^{2k+1}}{(2k+1)!},
+\exp(\mu t) = \sum_{k\ge0}\frac{\mu^{2k}t^{2k}}{(2k)!} + \sum_{k\ge0}\frac{\mu^{2k+1}t^{2k+1}}{(2k+1)!} = e_0\sum_{k\ge0}\frac{(-1)^kt^{2k}}{(2k)!} + \mu\sum_{k\ge0}\frac{(-1)^kt^{2k+1}}{(2k+1)!},
 $$
 
 and the two series are the cosine and the sine.
 
-The result is the Euler formula of the quaternions, with the same proof and one extra parameter: the role of the imaginary unit is played by any point of $S^2$.
-
-### The Trichotomy of the Exponential
-
-The formula just proved is one row of a rule that every algebra of the polar series follows. For an element $\nu$ of the algebra and a real $\theta$, the sign of $\nu^2$ decides the character of the exponential:
-
-| case | $\nu^2$ | $\exp(\nu\theta)$ | where it occurs in the series |
-|---|---|---|---|
-
-*Proof.* The three cases are the three behaviours of the powers of $\nu$ in the series $\exp(\nu\theta) = \sum_{n\ge0}\nu^n\theta^n/n!$: period four for $\nu^2 = -e_0$, period two for $\nu^2 = +e_0$, and truncation at the second term for $\nu^2 = 0$. Summing each series gives the stated form.
-
-The consequence for $\mathbb{H}$ is that only the trigonometric row is occupied by a non-scalar element. The roots of $+e_0$ are $\pm e_0$ alone, since $\tilde q^2 = e_0$ with $\tilde q = a+\vec v$ forces $a\vec v = 0$, hence $\vec v = 0$ and $a = \pm1$; the roots of $0$ are none, since $\mathbb{H}$ is a division algebra. A unit quaternion other than $\pm e_0$ is therefore always $\exp(\mu\theta)$ with $\mu$ a unit pure quaternion, the exponential is trigonometric, and the unit factor of a quaternion is never hyperbolic and never parabolic. The two empty rows are the reason this algebra has neither a hyperbolic rotation nor a central phase, and they are the two rows that the companion articles of the series occupy.
+The result is the Euler formula of the quaternions, with the same proof and one extra parameter: the role of the imaginary unit is played by any point of the axis sphere $\mathcal{A}$.
 
 ### The Quotient of Two Orthogonal Unit Quaternions
 
@@ -157,33 +157,33 @@ For example $p = e_1$ and $\tilde q = e_2$ are orthogonal and of norm one, and $
 
 Every unit quaternion is an exponential of this kind, and the exponent is read off from its parts.
 
-**Proposition.** Let $u$ be a unit quaternion with $\vec u \neq 0$, and put
+**Proposition.** Let $\tilde u_{\mathrm r}$ be a unit quaternion with $\vec u \neq 0$, and put
 
 $$
-\mu = \frac{\vec u}{|\vec u|}, \qquad \theta = \arccos(u_0) \in (0,\pi),
+\mu = \frac{\vec u}{|\vec u|}, \qquad \theta = 2\arccos(u_0) \in (0,2\pi),
 $$
 
 where $|\vec u| = \sqrt{N(\vec u)}$. Then $\mu$ is a unit pure quaternion, and
 
 $$
-u = \exp(\mu\theta).
+\tilde u_{\mathrm r} = \exp\Bigl(\mu\tfrac{\theta}{2}\Bigr).
 $$
 
-*Proof.* Since $N(u) = 1$, one has $u_0^2 + |\vec u|^2 = 1$, so $u_0 \in (-1,1)$ when $\vec u\neq0$ and $\theta$ is well defined with $\cos\theta = u_0 > -1$ and $\sin\theta = |\vec u| > 0$. Then $e_0\cos\theta+\mu\sin\theta = u_0e_0 + \vec u = u$, and the previous proposition applies.
+*Proof.* Since $N(\tilde u_{\mathrm r}) = 1$, one has $u_0^2 + |\vec u|^2 = 1$, so $u_0 \in (-1,1)$ when $\vec u\neq0$ and $\theta$ is well defined with $\cos\tfrac{\theta}{2} = u_0 > -1$ and $\sin\tfrac{\theta}{2} = |\vec u| > 0$. Then $e_0\cos\tfrac{\theta}{2}+\mu\sin\tfrac{\theta}{2} = u_0e_0 + \vec u = \tilde u_{\mathrm r}$, and the previous proposition applies.
 
-The unit vector $\mu$ is the **axis** of the unit factor and $\theta$ is its **angle**. The angle is taken in $[0,\pi]$, which is the full range of the arccosine, so no quotient is involved: the pair $(\mu,\theta)$ with $\mu\in S^2$ and $\theta\in(0,\pi)$ is in bijection with the unit quaternions of non-zero vector part.
+The unit vector $\mu$ is the **axis** of the unit factor and $\theta$ is its **rotation angle**, twice the angle of the unit factor. The angle of the unit factor is taken in $[0,\pi]$, the full range of the arccosine, and the rotation angle in $[0,2\pi]$; no quotient is involved: the pair $(\mu,\theta)$ with $\mu\in \mathcal{A}$ and $\theta\in(0,2\pi)$ is in bijection with the unit quaternions of non-zero vector part.
 
-The restriction on the angle is a property of the algebra and not a convention. Sangwine, Ell and Le Bihan state it in the quaternion polar form: the argument is confined to $[0,\pi)$ because the modulus of the vector part is always taken to be positive, there being no convenient way to define an orientation in three-dimensional space that would fix the sign of the vector part; consequently a negated angle is expressed by negating the axis, not the angle, and any numerical evaluation of the angle returns a value in $[0,\pi)$. In the notation used here the sign needs no such rescue, since $\theta = \arccos(u_0)$ carries it and ranges over $(0,\pi)$ for $\vec u\neq0$; the two endpoints $\theta = 0$ and $\theta = \pi$ are the real quaternions, where it is the axis and not the angle that degenerates.
+The restriction on the angle is a property of the algebra and not a convention. Sangwine, Ell and Le Bihan state it in the quaternion polar form: the argument is confined to $[0,\pi)$ because the modulus of the vector part is always taken to be positive, there being no convenient way to define an orientation in three-dimensional space that would fix the sign of the vector part; consequently a negated angle is expressed by negating the axis, not the angle, and any numerical evaluation of the angle returns a value in $[0,\pi)$. In the notation used here the sign needs no such rescue, since the rotation angle $\theta = 2\arccos(u_0)$ carries it and ranges over $(0,2\pi)$ for $\vec u\neq0$, the angle of the unit factor being $\theta/2$; the two endpoints $\theta = 0$ and $\theta = 2\pi$ are the real quaternions, where it is the axis and not the angle that degenerates.
 
 ### The Half-Angle and the Rotation
 
-The exponential is also written with half the angle,
+The exponential is also written with the rotation angle halved,
 
 $$
-u = \exp(\mu\theta) = \left(\exp\left(\mu\frac{\theta}{2}\right)\right)^{2},
+\tilde u_{\mathrm r} = \exp\Bigl(\mu\frac{\theta}{2}\Bigr) = \left(\exp\left(\mu\frac{\theta}{4}\right)\right)^{2},
 $$
 
-using the additivity of the exponential for commuting arguments, which $\mu\theta$ and $\mu\theta$ certainly are. The element $\exp(\mu\theta/2)$ is the half-angle rotor. Under the conjugation action $\vec q \mapsto u \vec q u^{-1}$ on the vector part, the half-angle rotor acts as the rotation of angle $\theta$ about the axis $\mu$; this is the content of the companion article *Quaternion Rotations and Reflections*, and it is the reason the unit factor is called a rotor. The half-angle form also exhibits the double cover: replacing $\theta$ by $\theta+2\pi$ changes $\exp(\mu\theta/2)$ to $-\exp(\mu\theta/2)$ while leaving $u$ unchanged, so $\mathrm{Sp}(1)$ covers the rotation group two to one.
+using the additivity of the exponential for commuting arguments, which $\mu\tfrac{\theta}{2}$ and $\mu\tfrac{\theta}{2}$ certainly are. The element $\exp(\mu\tfrac{\theta}{4})$ is the half-angle rotor, the square root of $\tilde u_{\mathrm r}$. Under the conjugation action $\vec q \mapsto \tilde u_{\mathrm r} \vec q \tilde u_{\mathrm r}^{-1}$ on the vector part, the square root acts as the rotation of angle $\tfrac{\theta}{2}$ about the axis $\mu$, so the unit factor itself acts as the rotation of angle $\theta$; this is the content of the companion article *Quaternion Rotations and Reflections*, and it is the reason the unit factor is called a rotor. The form also exhibits the double cover: the rotation angles $\theta$ and $\theta+2\pi$ are the same rotation, but they give $\exp(\mu\tfrac{\theta}{2})$ and $-\exp(\mu\tfrac{\theta}{2})$, the two opposite unit quaternions, so $\mathrm{Sp}(1)$ covers the rotation group two to one.
 
 ## The Matrix Picture
 
@@ -218,7 +218,7 @@ $$
 
 ### The Classical Polar Decomposition
 
-Under $\iota$, the quaternion polar representation $\tilde q = ru$ becomes the statement that a nonzero matrix $\iota(\tilde q)$ with $\det \neq 0$ is the product of a positive scalar and a special unitary matrix, $\iota(\tilde q) = r\,\iota(u)$ with $r = \sqrt{\det\iota(\tilde q)}$ and $\iota(u)\in SU(2)$. This is the polar decomposition of $\iota(\tilde q)$ into a positive Hermitian factor and a unitary factor, in the degenerate case where the positive Hermitian factor is a scalar multiple of the identity.
+Under $\iota$, the quaternion polar representation $\tilde q = r\tilde u_{\mathrm r}$ becomes the statement that a nonzero matrix $\iota(\tilde q)$ with $\det \neq 0$ is the product of a positive scalar and a special unitary matrix, $\iota(\tilde q) = r\,\iota(\tilde u_{\mathrm r})$ with $r = \sqrt{\det\iota(\tilde q)}$ and $\iota(\tilde u_{\mathrm r})\in SU(2)$. This is the polar decomposition of $\iota(\tilde q)$ into a positive Hermitian factor and a unitary factor, in the degenerate case where the positive Hermitian factor is a scalar multiple of the identity.
 
 For reference, in the four-dimensional real regular representation the determinant is the square of the quaternion norm and the trace is four times the scalar part, so the same representation reads $r = (\det)^{\frac14}$ there. The two matrix readings of the quaternion algebra belong to *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*, and are recalled here only to identify the classical statement.
 
@@ -241,16 +241,16 @@ $$
 and the unit factor and its parts are
 
 $$
-u = \frac{\tilde q}{\sqrt{30}} = 0.182574186\,e_0 + 0.365148372\,e_1 + 0.547722558\,e_2 + 0.730296743\,e_3,
+\tilde u_{\mathrm r} = \frac{\tilde q}{\sqrt{30}} = 0.182574186\,e_0 + 0.365148372\,e_1 + 0.547722558\,e_2 + 0.730296743\,e_3,
 $$
 
 $$
-\theta = \arccos\!\left(\frac{1}{\sqrt{30}}\right) = 1.387192317\ \text{rad} \approx 79.48^\circ,
+\theta = 2\arccos\!\left(\frac{1}{\sqrt{30}}\right) = 2.774384634\ \text{rad} \approx 158.96^\circ,
 \qquad
 \mu = \frac{2e_1+3e_2+4e_3}{\sqrt{29}} = 0.371390676\,e_1+0.557086015\,e_2+0.742781353\,e_3 .
 $$
 
-The reconstruction $u = e_0\cos\theta+\mu\sin\theta$ was checked in double precision and agrees with $u$ to $6.4\times10^{-16}$ in each of the four coefficients.
+The reconstruction $\tilde u_{\mathrm r} = e_0\cos\tfrac{\theta}{2}+\mu\sin\tfrac{\theta}{2}$ was checked in double precision and agrees with $\tilde u_{\mathrm r}$ to $6.4\times10^{-16}$ in each of the four coefficients.
 
 ### A Second Worked Element
 
@@ -263,45 +263,45 @@ $$
 the quaternion norm is $N(\tilde q) = 1+4+1+9 = 15$, so the modulus is $r = \sqrt{15}$ and the unit factor is
 
 $$
-u = \frac{\tilde q}{r} = \frac{1+2e_1-e_2+3e_3}{\sqrt{15}} .
+\tilde u_{\mathrm r} = \frac{\tilde q}{r} = \frac{1+2e_1-e_2+3e_3}{\sqrt{15}} .
 $$
 
 Its exponential form uses
 
 $$
-\cos\theta = \frac{q_0}{r} = \frac{1}{\sqrt{15}}, \qquad \sin\theta = \frac{|\vec q|}{r} = \frac{\sqrt{14}}{\sqrt{15}}, \qquad \mu = \frac{\vec q}{|\vec q|} = \frac{2e_1-e_2+3e_3}{\sqrt{14}},
+\cos\tfrac{\theta}{2} = \frac{q_0}{r} = \frac{1}{\sqrt{15}}, \qquad \sin\tfrac{\theta}{2} = \frac{|\vec q|}{r} = \frac{\sqrt{14}}{\sqrt{15}}, \qquad \mu = \frac{\vec q}{|\vec q|} = \frac{2e_1-e_2+3e_3}{\sqrt{14}},
 $$
 
-so that $u = \cos\theta+\mu\sin\theta = \exp(\mu\theta)$ with $\theta = \arccos(1/\sqrt{15})$ and $\mu$ a unit pure quaternion.
+so that $\tilde u_{\mathrm r} = \cos\tfrac{\theta}{2}+\mu\sin\tfrac{\theta}{2} = \exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ with $\theta = 2\arccos(1/\sqrt{15})$ and $\mu$ a unit pure quaternion.
 
 ### The Three Degenerate Shapes
 
-| $\tilde q$ | $N(\tilde q)$ | $r$ | $u$ | $(\mu,\theta)$ |
+| $\tilde q$ | $N(\tilde q)$ | $r$ | $\tilde u_{\mathrm r}$ | $(\mu,\theta)$ |
 |---|---|---|---|---|
 | $2e_0$ | $4$ | $2$ | $e_0$ | axis undefined, $\theta = 0$ |
-| $-3e_0$ | $9$ | $3$ | $-e_0$ | axis undefined, $\theta = \pi$ |
-| $e_1$ | $1$ | $1$ | $e_1$ | $\mu = e_1$, $\theta = \pi/2$ |
-| $e_0+e_1$ | $2$ | $\sqrt{2}$ | $(e_0+e_1)/\sqrt{2}$ | $\mu = e_1$, $\theta = \pi/4$ |
+| $-3e_0$ | $9$ | $3$ | $-e_0$ | axis undefined, $\theta = 2\pi$ |
+| $e_1$ | $1$ | $1$ | $e_1$ | $\mu = e_1$, $\theta = \pi$ |
+| $e_0+e_1$ | $2$ | $\sqrt{2}$ | $(e_0+e_1)/\sqrt{2}$ | $\mu = e_1$, $\theta = \pi/2$ |
 
-The third line is a pure quaternion of unit length: its scalar part vanishes, so $\theta = \pi/2$ exactly and the modulus is one. The fourth is the half-angle rotor of a quarter turn about $e_1$, and its square is $e_1$, which is the check $u^2 = \exp(2\mu\theta/2) = \exp(\mu\cdot2\theta)$ of the doubling rule.
+The third line is a pure quaternion of unit length: its scalar part vanishes, so $\theta = \pi$ exactly and the modulus is one. The fourth is the rotor of a quarter turn about $e_1$, and its square is $e_1$, which is the check $\tilde u_{\mathrm r}^2 = \exp(\mu\theta) = e_1$ of the doubling rule.
 
 ### Two Quaternions with the Same Rotor
 
 The decomposition separates the scale from the rotor, and the separation is exact: for real $\lambda > 0$,
 
 $$
-\lambda \tilde q = (\lambda r)\,u,
+\lambda \tilde q = (\lambda r)\,\tilde u_{\mathrm r},
 $$
 
-with the same unit factor. Conversely $\tilde q$ and $-\tilde q$ have the same modulus and opposite unit factors, $u$ and $-u$, and the two unit factors produce the same rotation of the vector part, which is the double cover of the rotation group in the form in which it appears in this algebra.
+with the same unit factor. Conversely $\tilde q$ and $-\tilde q$ have the same modulus and opposite unit factors, $\tilde u_{\mathrm r}$ and $-\tilde u_{\mathrm r}$, and the two unit factors produce the same rotation of the vector part, which is the double cover of the rotation group in the form in which it appears in this algebra.
 
 ## Degenerate Cases and the Relation to the Partial Forms
 
 ### The Real Quaternions
 
-A quaternion is real if its vector part vanishes, $\tilde q = q_0e_0$. Then $N(\tilde q) = q_0^2$, the modulus is $r = |q_0|$, and the unit factor is $u = \pm e_0$ with the sign of $q_0$.
+A quaternion is real if its vector part vanishes, $\tilde q = q_0e_0$. Then $N(\tilde q) = q_0^2$, the modulus is $r = |q_0|$, and the unit factor is $\tilde u_{\mathrm r} = \pm e_0$ with the sign of $q_0$.
 
-The polar representation is unaffected: it still exists and is still unique, because the theorem above never used the vector part. What degenerates is the exponential form. For $u = e_0$ the angle is $\theta = 0$ and for $u = -e_0$ it is $\theta = \pi$, and in both cases the axis is not determined by $u$: every unit pure quaternion $\mu$ gives $\exp(\mu\cdot0) = e_0$ and $\exp(\mu\pi) = -e_0$. The set of pairs $(\mu,\theta)$ with $\theta$ fixed at $0$ or $\pi$ and $\mu$ arbitrary therefore collapses to a single quaternion, and the exponential parametrisation is many-to-one exactly on the two real points of $\mathrm{Sp}(1)$.
+The polar representation is unaffected: it still exists and is still unique, because the theorem above never used the vector part. What degenerates is the exponential form. For $\tilde u_{\mathrm r} = e_0$ the rotation angle is $\theta = 0$ and for $\tilde u_{\mathrm r} = -e_0$ it is $\theta = 2\pi$, and in both cases the axis is not determined by $\tilde u_{\mathrm r}$: every unit pure quaternion $\mu$ gives $\exp(\mu\cdot0) = e_0$ and $\exp(\mu\pi) = -e_0$. The set of pairs $(\mu,\theta)$ with $\theta$ fixed at $0$ or $2\pi$ and $\mu$ arbitrary therefore collapses to a single quaternion, and the exponential parametrisation is many-to-one exactly on the two real points of $\mathrm{Sp}(1)$.
 
 ### The Absence of a Boost and of a Central Phase
 
@@ -319,7 +319,7 @@ This is a third polar form for a quaternion, and it is not the decomposition pro
 
 ## Summary
 
-Every nonzero quaternion $\tilde q$ has exactly one polar representation $\tilde q = r u$, with modulus $r = \sqrt{N(\tilde q)} > 0$ and unit factor $u = \tilde q/r$ of norm one. The modulus is a positive central scale and the unit factor is an element of the compact group $\mathrm{Sp}(1) = S^3$; their parameter counts, one and three, add to the real dimension four of the algebra. The unit factor is an exponential $u = \exp(\mu\theta)$ of a unit pure quaternion, the axis, times a real angle in $[0,\pi]$, and the parametrisation is unique except at $u = \pm e_0$, where the axis is undetermined. In the matrix model the statement is the polar decomposition of a matrix into a positive scalar and a special unitary factor. The central phase is absent because the centre of $\mathbb{H}$ is $\mathbb{R}$, and the hyperbolic factor is absent because $\mathbb{H}$ is a division algebra and the equation $\tilde q^2 = e_0$ has only the solutions $\pm e_0$. The modulus-and-rotor and axis-angle forms are not the only polar forms a quaternion admits: the Cayley–Dickson form carries a modulus and an argument drawn from the degenerate quaternion subalgebra $a+ia'$, and its existence is recorded in the last subsection of the degenerate cases.
+Every nonzero quaternion $\tilde q$ has exactly one polar representation $\tilde q = r \tilde u_{\mathrm r}$, with modulus $r = \sqrt{N(\tilde q)} > 0$ and unit factor $\tilde u_{\mathrm r} = \tilde q/r$ of norm one. The modulus is a positive central scale and the unit factor is an element of the compact group $\mathrm{Sp}(1)$; their parameter counts, one and three, add to the real dimension four of the algebra. The unit factor is an exponential $\tilde u_{\mathrm r} = \exp(\mu\tfrac{\theta}{2})$ of a unit pure quaternion, the axis, times a real rotation angle in $[0,2\pi]$, and the parametrisation is unique except at $\tilde u_{\mathrm r} = \pm e_0$, where the axis is undetermined. In the matrix model the statement is the polar decomposition of a matrix into a positive scalar and a special unitary factor. The central phase is absent because the centre of $\mathbb{H}$ is $\mathbb{R}$, and the hyperbolic factor is absent because $\mathbb{H}$ is a division algebra and the equation $\tilde q^2 = e_0$ has only the solutions $\pm e_0$. The modulus-and-rotor and axis-angle forms are not the only polar forms a quaternion admits: the Cayley–Dickson form carries a modulus and an argument drawn from the degenerate quaternion subalgebra $a+ia'$, and its existence is recorded in the last subsection of the degenerate cases.
 
 ## Summary of Notation
 
@@ -330,11 +330,11 @@ Every nonzero quaternion $\tilde q$ has exactly one polar representation $\tilde
 | $\tilde{q}^{\natural}$ | the quaternion conjugate, $q_0 - \vec q$ |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \sum_\mu q_\mu^2$ | the quaternion norm, strictly positive on nonzero elements |
 | $r = \sqrt{N(\tilde q)}$ | the modulus, a positive real |
-| $u = \tilde q/r$ | the unit factor, of norm one |
-| $\mathrm{Sp}(1) = S^3$ | the group of unit quaternions |
+| $\tilde u_{\mathrm r} = \tilde q/r$ | the unit factor, of norm one |
+| $\mathrm{Sp}(1)$ | the group of unit quaternions |
 | $\operatorname{Im}\mathbb{H}$ | the pure quaternions, $\operatorname{span}\{e_1,e_2,e_3\}$ |
 | $\mu$ | a unit pure quaternion, a root of $-e_0$, the axis |
-| $\theta$ | the angle, in $[0,\pi]$ |
+| $\theta$ | the rotation angle, in $[0,2\pi]$ |
 | $\iota$ | the isomorphism $\mathbb{H}\to M_2(\mathbb{C})$ on the real coefficients |
 
 ## Further Reading

@@ -126,9 +126,9 @@ The lattice path integral is the finite product of compact-group integrals,
 $$
 Z=\int\prod_{n}\prod_{\mu=0}^{3}dU_\mu(n)\;\exp\!\big(-S_W[U]\big),
 $$
-where $dU_\mu(n)$ is the Haar measure on $SU(2)$, normalized to $\int dU=1$, and the product is over all sites and all positive directions in a finite box with periodic boundary conditions. In angular coordinates, writing $U=\cos\theta\,e_0+\sin\theta\,(\hat n_1e_1+\hat n_2e_2+\hat n_3e_3)$ with $\hat n\in S^2$ and $\theta\in[0,\pi]$,
+where $dU_\mu(n)$ is the Haar measure on $SU(2)$, normalized to $\int dU=1$, and the product is over all sites and all positive directions in a finite box with periodic boundary conditions. In angular coordinates, writing $U=\cos\theta\,e_0+\sin\theta\,(\hat u_1e_1+\hat u_2e_2+\hat u_3e_3)$ with $\hat u\in S^2$ and $\theta\in[0,\pi]$,
 $$
-dU=\frac{1}{2\pi^2}\sin^2\theta\,d\theta\,d\Omega(\hat n),
+dU=\frac{1}{2\pi^2}\sin^2\theta\,d\theta\,d\Omega(\hat u),
 \qquad
 \int dU=1 ,
 $$
