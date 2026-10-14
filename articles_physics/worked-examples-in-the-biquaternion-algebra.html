@@ -57,7 +57,7 @@
 $$
 \tilde{Q}=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3,\qquad Q_\mu\in\mathbb{C},
 $$
-with the quaternion basis $e_0=1,e_1,e_2,e_3$ and the central complex unit $i$, $i^2=-1$, commuting with every $e_\mu$. The scalar part is $\mathrm{Sc}\,\tilde{Q}=Q_0$, the vector part is $\mathbf{Q}=Q_1e_1+Q_2e_2+Q_3e_3$, and the quaternion conjugate is $\tilde{Q}^{\natural}=Q_0e_0-\mathbf{Q}$. The fixed element used throughout is
+with the quaternion basis $e_0=1,e_1,e_2,e_3$ and the central complex unit $i$, $i^2=-1$, commuting with every $e_\mu$. The scalar part is $\mathrm{Sc}\,\tilde{Q}=Q_0$, the vector part is $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$, and the quaternion conjugate is $\tilde{Q}^{\natural}=Q_0e_0-\vec Q$. The fixed element used throughout is
 $$
 \tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3 .
 $$</p>
@@ -158,7 +158,7 @@ $$
 \tilde{Q}=\bigl(2e_0-ie_1+ie_3\bigr)+\bigl(ie_0+e_1+3e_2\bigr)=\tilde{Q}_++\tilde{Q}_-,
 $$
 and the two pieces are distinguished by the signs: $\tilde{Q}_+$ has real scalar part and purely imaginary vector part — the <strong>informational sector</strong> — while $\tilde{Q}_-$ has purely imaginary scalar part and real vector part — the <strong>material sector</strong>.</p>
-<p><strong>Physical interpretation.</strong> One element is read at once as four numbers: the real part of $\tilde{Q}_-$ is $3$ in the space slots together with an imaginary time slot, exactly the form $ict\,e_0+\mathbf{x}$ of a material four-position, while $\tilde{Q}_+$ is of the form $ct'\,e_0+i\mathbf{x}'$ of an informational four-position. The example therefore shows the sector exchange on a single element: it carries both a material and an informational four-vector. The norm and the inverse of the element are computed below; the time and space slots are $Q_0$ and $Q_1,Q_2,Q_3$ throughout.</p>
+<p><strong>Physical interpretation.</strong> One element is read at once as four numbers: the real part of $\tilde{Q}_-$ is $3$ in the space slots together with an imaginary time slot, exactly the form $ict\,e_0+\vec x$ of a material four-position, while $\tilde{Q}_+$ is of the form $ct'\,e_0+i\vec x'$ of an informational four-position. The example therefore shows the sector exchange on a single element: it carries both a material and an informational four-vector. The norm and the inverse of the element are computed below; the time and space slots are $Q_0$ and $Q_1,Q_2,Q_3$ throughout.</p>
 <h2 id="the-four-conjugations-on-the-concrete-element">The Four Conjugations on the Concrete Element</h2>
 <p>Applying the four conjugations to $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ gives
 $$
@@ -176,8 +176,8 @@ $$
 Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\tilde{Q}^{\natural}\bar{\cdot}=\tilde{Q}^{*{}^{\natural}}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat}=-\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give the remarkable subspaces above: for instance the Hermitian part of $\tilde{Q}$ is $\tfrac12(\tilde{Q}+\tilde{Q}^{*})=2e_0-ie_1+ie_3$, which agrees with the table.</p>
 <p><strong>Physical interpretation.</strong> The quaternion conjugation reverses the spatial part and leaves the time slot, so it is the <strong>spatial reversal</strong> of the four-vector; the complex conjugation conjugates the coefficients $Q_\mu=q_\mu+iq'_\mu$, so it exchanges the material and informational interpretations of each slot and is the <strong>sector exchange</strong>; the Hermitian conjugation is the composition, the adjoint of a four-vector, and it is the involution that selects the observables.</p>
 <h2 id="idempotents-and-the-two-minimal-left-ideals">Idempotents and the Two Minimal Left Ideals</h2>
-<p>The standard idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_2=\tfrac12(e_0-ie_3)$ satisfy $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0$ and $\tilde\Pi_1+\tilde\Pi_2=e_0$; they are primitive, and they give the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ into two minimal left ideals of real dimension $4$.</p>
-<p><strong>Physical interpretation.</strong> The two idempotents are the <strong>chiral projectors</strong> onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ is the splitting of the algebra into the two chiralities (<em>Modules over the General Plain Algebra of Biquaternions</em>).</p>
+<p>The standard idempotents $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$ satisfy $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$ and $\tilde\Pi_++\tilde\Pi_-=e_0$; they are primitive, and they give the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ into two minimal left ideals of real dimension $4$. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.</p>
+<p><strong>Physical interpretation.</strong> The two idempotents are the <strong>chiral projectors</strong> onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ is the splitting of the algebra into the two chiralities (<em>Modules over the General Plain Algebra of Biquaternions</em>).</p>
 <h2 id="the-norm-and-the-inverse-of-the-concrete-element">The Norm and the Inverse of the Concrete Element</h2>
 <p>The norm and the inverse are the two quantities every physics calculation of the framework needs, and they are worth exhibiting on the fixed element. With $N(\tilde{Q})=\sum_\mu Q_\mu^2$,</p>
 <p>$$
@@ -190,7 +190,7 @@ $$</p>
 <p>The element is neither purely material nor purely informational: its norm is complex with both parts nonzero, so it does not lie on either real sector and is not null. The material part $\tilde{Q}_-$ of the Hermitian decomposition has norm $N(\tilde{Q}_-)=\sum_\mu(Q_-)_\mu^2=(i)^2+1+9=i^2+10=9$, a spacelike interval in the $ict$ coordinate; the informational part has norm $N(\tilde{Q}_+)=4+(-i)^2+(i)^2=4-1-1=2$.</p>
 <p><strong>Physical interpretation.</strong> The norm $11+2i$ measures the element; its vanishing would be the light cone and its being real would be membership of a real sector. The example shows the generic case: a unit with a complex norm, whose material and informational halves have separately real intervals.</p>
 <h2 id="explicit-zero-divisors">Explicit Zero Divisors</h2>
-<p><strong>Example (an explicit pair).</strong> With the standard idempotents, $\tilde\Pi_1\tilde\Pi_2=0$ with both factors nonzero. In unnormalised form, set $\tilde A=e_0+ie_3$ and $\tilde B=e_0-ie_3$. Then
+<p><strong>Example (an explicit pair).</strong> With the standard idempotents, $\tilde\Pi_+\tilde\Pi_-=0$ with both factors nonzero. In unnormalised form, set $\tilde A=e_0+ie_3$ and $\tilde B=e_0-ie_3$. Then
 $$
 \tilde A\tilde B=e_0-(ie_3)^2=e_0-1=0,\qquad \tilde A\neq0,\qquad \tilde B\neq0 .
 $$
@@ -199,7 +199,7 @@ Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $
 <h2 id="physical-readings">Physical Readings</h2>
 <p>The computations read as the framework's calibration set. The multiplication table is the product law of the physical objects; the remarkable subspaces exhibited on one element are the interpretations of one four-vector; the four conjugations applied to it are the four forms; and the idempotents are the pure states. Read as a calibration, the article is where the vocabulary of the series is checked against a single element, so it is also the place where the interpretations of the other articles can be tested against one another.</p>
 <h2 id="summary">Summary</h2>
-<p>The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the remarkable subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_1,\tilde\Pi_2$ satisfy $\tilde\Pi_1\tilde\Pi_2=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.</p>
+<p>The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_0+(1-i)e_1+3e_2+ie_3$ the remarkable subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $N(\tilde{Q})=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_+,\tilde\Pi_-$ satisfy $\tilde\Pi_+\tilde\Pi_-=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ with each summand minimal; the pair $\tilde A=e_0+ie_3$, $\tilde B=e_0-ie_3$ is an explicit zero-divisor pair, both factors null.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -222,7 +222,7 @@ Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $
 <td>Central complex unit, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}\,\tilde{Q}=Q_0$, $\mathbf{Q}=\sum_{k=1}^3Q_ke_k$</td>
+<td>$\mathrm{Sc}\,\tilde{Q}=Q_0$, $\vec Q=\sum_{k=1}^3Q_ke_k$</td>
 <td>Scalar and vector parts</td>
 </tr>
 <tr>
@@ -234,7 +234,7 @@ Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $
 <td>The remarkable subspaces</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_1=\tfrac12(e_0+ie_3),\ \tilde\Pi_2=\tfrac12(e_0-ie_3)$</td>
+<td>$\tilde\Pi_+=\tfrac12(e_0+ie_3),\ \tilde\Pi_-=\tfrac12(e_0-ie_3)$</td>
 <td>Orthogonal primitive idempotents; chiral projectors</td>
 </tr>
 <tr>

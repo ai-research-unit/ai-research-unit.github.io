@@ -59,14 +59,14 @@
 <p>$$
 \tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu, \qquad q_0, q_1, q_2, q_3 \in F,
 $$</p>
-<p>with <strong>scalar part</strong> $\mathrm{Sc}(\tilde q) = q_0$ and <strong>vector part</strong> $\mathbf{q} = q_1e_1 + q_2e_2 + q_3e_3$; the <strong>conjugate</strong> is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The pure imaginary subspace is $\operatorname{Im}\mathbb{H} = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}$.</p>
+<p>with <strong>scalar part</strong> $\mathrm{Sc}(\tilde q) = q_0$ and <strong>vector part</strong> $\vec q = q_1e_1 + q_2e_2 + q_3e_3$; the <strong>conjugate</strong> is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The pure imaginary subspace is $\operatorname{Im}\mathbb{H} = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}$.</p>
 <h2 id="the-quaternion-norm">The Quaternion Norm</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> The <strong>quaternion norm</strong> of $\tilde q$ is</p>
 <p>$$
 N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = q_0^2 + q_1^2 + q_2^2 + q_3^2 .
 $$</p>
-<p>The equality of the two products is checked from the multiplication table: the vector part of $\tilde q\tilde{q}^{\natural}$ is $q_0\mathbf{q} - \mathbf{q}q_0 + \mathbf{q}\times(-\mathbf{q}) = 0$, and the scalar calculation is the sum of squares.</p>
+<p>The equality of the two products is checked from the multiplication table: the vector part of $\tilde q\tilde{q}^{\natural}$ is $q_0\vec q - \vec qq_0 + \vec q\times(-\vec q) = 0$, and the scalar calculation is the sum of squares.</p>
 <p><strong>Proposition.</strong> $N(\tilde q)$ is a central element of $\mathbb{H}$, it lies in the image of $F$, and the map $N : \mathbb{H}\to F$ is a quadratic form on the underlying vector space, with polar form $b(p,\tilde q) = \mathrm{Sc}(p\tilde{q}^{\natural})$.</p>
 <p><em>Proof.</em> The scalar part of $\tilde q\tilde{q}^{\natural}$ is $\sum_\mu q_\mu^2$, a scalar, and a scalar commutes with every quaternion; this is the centrality. The coordinate expression is homogeneous of degree two and its polarisation is $\mathrm{Sc}(p\tilde{q}^{\natural})$, as the polar form of a sum of squares.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
@@ -126,7 +126,7 @@ $$</p>
 \tilde q^{-1} = \frac{\tilde{q}^{\natural}}{N(\tilde q)} = \frac{\tilde{q}^{\natural}}{\tilde q\tilde{q}^{\natural}}.
 $$</p>
 <p><em>Proof.</em> $(\tilde q)(\tilde{q}^{\natural}/N(\tilde q)) = (\tilde q\tilde{q}^{\natural})/N(\tilde q) = N(\tilde q)/N(\tilde q) = 1$, and $(\tilde{q}^{\natural}/N(\tilde q))(\tilde q) = (\tilde{q}^{\natural} \tilde q)/N(\tilde q) = 1$ because $\tilde{q}^{\natural} \tilde q = N(\tilde q)$ is central.</p>
-<p>For a unit quaternion $N(\tilde q) = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $\mathbf{q}$ one has $\mathbf{q}^{\natural} = -\mathbf{q}$ and $\mathbf{q}^{-1} = -\mathbf{q}/N(\mathbf{q})$, so the imaginary line is closed under inversion up to the real scale.</p>
+<p>For a unit quaternion $N(\tilde q) = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $\vec q$ one has $\vec q^{\natural} = -\vec q$ and $\vec q^{-1} = -\vec q/N(\vec q)$, so the imaginary line is closed under inversion up to the real scale.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="definition_3">Definition</h3>
 <p><strong>Definition.</strong> The <strong>group of units</strong> of $\mathbb{H}$ is</p>
@@ -213,7 +213,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu$</td>
-<td>General quaternion, scalar part $q_0$, vector part $\mathbf{q}$</td>
+<td>General quaternion, scalar part $q_0$, vector part $\vec q$</td>
 </tr>
 <tr>
 <td>$\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>

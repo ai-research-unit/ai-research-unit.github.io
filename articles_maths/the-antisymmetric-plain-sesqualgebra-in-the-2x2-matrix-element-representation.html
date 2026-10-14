@@ -105,28 +105,28 @@ $$</p>
 $$</p>
 <p>the <strong>traceless</strong> matrices, of complex dimension three; the <strong>traceless skew-Hermitian</strong> matrices among them, the real three-dimensional space spanned over $\mathbb{R}$ by $-i\sigma_1,-i\sigma_2,-i\sigma_3$, are the image of the real vector triple $\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$.</p>
 <p><em>Proof.</em> The value $\tilde P\diamond\tilde Q$ is a pure vector, so its matrix is traceless; the three matrices $-i\sigma_k$ are $\mathbb{C}$-linearly independent and have zero trace, so the image is the whole traceless space, of complex dimension three, which is the complex dimension of $\mathrm{Vect}(\mathbb{B})$. Each $-i\sigma_k$ is skew-Hermitian, $(-i\sigma_k)^{\dagger}=i\sigma_k=-(-i\sigma_k)$, so a real combination of the three is skew-Hermitian; a combination with a non-real coefficient has a Hermitian part and is not, so the traceless skew-Hermitian matrices are exactly the image of the real vector triple.</p>
-<p><strong>Theorem (the invariants).</strong> For every value $\tilde V=\tilde P\diamond\tilde Q$ of the block,</p>
+<p><strong>Theorem (the invariants).</strong> For every value $\tilde S=\tilde P\diamond\tilde Q$ of the block,</p>
 <p>$$
-\operatorname{Tr}\mathsf{M}_2(\tilde V)=0,
+\operatorname{Tr}\mathsf{M}_2(\tilde S)=0,
 \qquad
-\det\mathsf{M}_2(\tilde V)=\sum_\mu V_\mu^2=N(\tilde V),
+\det\mathsf{M}_2(\tilde S)=\sum_\mu V_\mu^2=N(\tilde S),
 $$</p>
 <p>and the rank of the matrix is</p>
 <p>$$
-\operatorname{rank}\mathsf{M}_2(\tilde V)=
+\operatorname{rank}\mathsf{M}_2(\tilde S)=
 \begin{cases}
-2, & N(\tilde V)\neq0,\\
-1, & N(\tilde V)=0,\ \tilde V\neq0,\\
-0, & \tilde V=0.
+2, & N(\tilde S)\neq0,\\
+1, & N(\tilde S)=0,\ \tilde S\neq0,\\
+0, & \tilde S=0.
 \end{cases}
 $$</p>
-<p><em>Proof.</em> The trace vanishes because the value is a pure vector, by the preceding theorem; the determinant is $\det\mathsf{M}_2(\tilde X)=N(\tilde X)$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\mathsf{M}_2(\tilde V)=N(\tilde V)$, so the rank is two exactly when the determinant is nonzero; otherwise the matrix is nonzero and traceless — hence of rank one — or it is zero.</p>
+<p><em>Proof.</em> The trace vanishes because the value is a pure vector, by the preceding theorem; the determinant is $\det\mathsf{M}_2(\tilde X)=N(\tilde X)$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\mathsf{M}_2(\tilde S)=N(\tilde S)$, so the rank is two exactly when the determinant is nonzero; otherwise the matrix is nonzero and traceless — hence of rank one — or it is zero.</p>
 <p><strong>Corollary (the two forms of the value).</strong> The two forms attached to a value are read differently in the model: the <strong>positive definite</strong> form of the block is</p>
 <p>$$
-H\bigl(\tilde V,\tilde V\bigr)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde V)\mathsf{M}_2(\tilde V)^{\dagger}\bigr)
-=\tfrac12\sum_{i,j}\bigl\lvert\mathsf{M}_2(\tilde V)_{ij}\bigr\rvert^{2},
+H\bigl(\tilde S,\tilde S\bigr)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde S)\mathsf{M}_2(\tilde S)^{\dagger}\bigr)
+=\tfrac12\sum_{i,j}\bigl\lvert\mathsf{M}_2(\tilde S)_{ij}\bigr\rvert^{2},
 $$</p>
-<p>which vanishes only at $\tilde V=0$, while the <strong>complex bilinear</strong> form is the determinant $\det\mathsf{M}_2(\tilde V)=\sum_\mu V_\mu^2$, which vanishes on the isotropic cone $N(\tilde V)=0$, a quadric that contains the nonzero values, for instance $\tilde V=e_1+ie_2$. The block therefore has a value of rank one, $e_1+ie_2$, whose matrix is traceless and has zero determinant; the rank of the matrix reads the bilinear form, and the positivity of the Hilbert–Schmidt pairing reads the definite one.</p>
+<p>which vanishes only at $\tilde S=0$, while the <strong>complex bilinear</strong> form is the determinant $\det\mathsf{M}_2(\tilde S)=\sum_\mu V_\mu^2$, which vanishes on the isotropic cone $N(\tilde S)=0$, a quadric that contains the nonzero values, for instance $\tilde S=e_1+ie_2$. The block therefore has a value of rank one, $e_1+ie_2$, whose matrix is traceless and has zero determinant; the rank of the matrix reads the bilinear form, and the positivity of the Hilbert–Schmidt pairing reads the definite one.</p>
 <p><strong>Remark (the isotropic value).</strong> The value $e_1+ie_2$ has $N=1+i^2=1-1=0$, so its matrix is a nonzero traceless matrix of determinant zero, of rank one; the value $e_1+e_2$ has $N=1+1=2\neq0$, so its matrix has rank two. The determinant of the matrix of the value is therefore not a definitive test of the vanishing of the value, and the definite form $H$ is needed for that; the distinction is the same as the one of <em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The Norm and the Hermitian Form</em>.</p>
 <h2 id="the-matrix-form-of-the-pairing">The Matrix Form of the Pairing</h2>
 <p><strong>Theorem (the Hilbert–Schmidt pairing).</strong> In the model the form $H$ is the Hilbert–Schmidt pairing of the matrices,</p>
@@ -167,7 +167,7 @@ $$</p>
 $$</p>
 <p>which is $e_0\diamond e_1=\mathrm{Vect}(e_0e_1^{*})=\mathrm{Vect}(-e_1)=-e_1$; the matrix is traceless, skew-Hermitian of rank two, and its determinant is $N(-e_1)=1$.</p>
 <h2 id="summary">Summary</h2>
-<p>In the $2\times2$ model the block is the traceless part of the conjugate-transposed product, $\mathsf{M}_2(\tilde P\diamond\tilde Q)=M-\tfrac12\operatorname{Tr}(M)I=\tfrac12(M-\operatorname{adj}M)$ with $M=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$, half the difference of $M$ and its adjoint matrix; the adjoint matrix is the model of the natural conjugation, and the conjugate transpose in the model is the model of ${}^{*}$. The image is the traceless matrices, of complex dimension three, and the traceless skew-Hermitian ones, spanned by $-i\sigma_1,-i\sigma_2,-i\sigma_3$, are the image of the real vector triple; every value has trace zero and determinant $N(\tilde V)=\sum_\mu V_\mu^2$, and the rank is two, one or zero according as $N\neq0$, $N=0$ with $\tilde V\neq0$, or $\tilde V=0$; the positive definite form $H$ vanishes only on the zero value, while the determinant vanishes on the whole isotropic cone, with $e_1+ie_2$ a nonzero value of rank one. The form is the Hilbert–Schmidt pairing, $\tfrac12\operatorname{Tr}$ in this model, and the unique invariant form is the scalar-slot form $X_0\overline{Y_0}=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde X)\overline{\operatorname{Tr}\mathsf{M}_2(\tilde Y)}$, degenerate on every value.</p>
+<p>In the $2\times2$ model the block is the traceless part of the conjugate-transposed product, $\mathsf{M}_2(\tilde P\diamond\tilde Q)=M-\tfrac12\operatorname{Tr}(M)I=\tfrac12(M-\operatorname{adj}M)$ with $M=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$, half the difference of $M$ and its adjoint matrix; the adjoint matrix is the model of the natural conjugation, and the conjugate transpose in the model is the model of ${}^{*}$. The image is the traceless matrices, of complex dimension three, and the traceless skew-Hermitian ones, spanned by $-i\sigma_1,-i\sigma_2,-i\sigma_3$, are the image of the real vector triple; every value has trace zero and determinant $N(\tilde S)=\sum_\mu V_\mu^2$, and the rank is two, one or zero according as $N\neq0$, $N=0$ with $\tilde S\neq0$, or $\tilde S=0$; the positive definite form $H$ vanishes only on the zero value, while the determinant vanishes on the whole isotropic cone, with $e_1+ie_2$ a nonzero value of rank one. The form is the Hilbert–Schmidt pairing, $\tfrac12\operatorname{Tr}$ in this model, and the unique invariant form is the scalar-slot form $X_0\overline{Y_0}=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde X)\overline{\operatorname{Tr}\mathsf{M}_2(\tilde Y)}$, degenerate on every value.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

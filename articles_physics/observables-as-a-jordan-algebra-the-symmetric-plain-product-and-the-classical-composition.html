@@ -73,7 +73,7 @@ operation, <em>The Trace Form and the Invariance of the Symmetric Plain Algebra<
 algebra itself is <em>Jordan Algebras</em>, and its special class is <em>Special and Exceptional Jordan Algebras</em>.</p>
 <p>The conventions are those of the companion article. The algebra is
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$,
-$e_k^{2}=-e_0$, central scalar imaginary $i$, and general element $\tilde Q=Q_0e_0+\mathbf{Q}$. The
+$e_k^{2}=-e_0$, central scalar imaginary $i$, and general element $\tilde Q=Q_0e_0+\vec Q$. The
 material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian
 subspace $\mathbb{M}_+$, both real and four-dimensional;
 $\mathrm{Sc}(\tilde Q)=Q_0$ is the scalar part and ${}^{*}$ is the Hermitian conjugation.</p>
@@ -136,14 +136,14 @@ is the ordinary square, as in the companion article; the polarisation is the pol
 commutative bilinear operation and was recomputed on random pairs. The square and the polarisation are
 <em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>.</p>
 <p><strong>Proposition.</strong> The square of an observable is a <strong>positive</strong> observable. In coordinates, for
-$\tilde Q=h_0e_0+i\mathbf{h}$ with $h_0$ and $\mathbf{h}$ real,</p>
+$\tilde Q=h_0e_0+i\vec h$ with $h_0$ and $\vec h$ real,</p>
 <p>$$
-\tilde Q^{2}=\bigl(h_0^{2}+(\mathbf{h},\mathbf{h})\bigr)e_0+2h_0\,i\mathbf{h},
+\tilde Q^{2}=\bigl(h_0^{2}+(\vec h,\vec h)\bigr)e_0+2h_0\,i\vec h,
 $$</p>
-<p>and the positivity condition $h_0^{2}+(\mathbf{h},\mathbf{h})\geq\lvert 2h_0\rvert\,\lvert\mathbf{h}\rvert$
-is the identity $(h_0^{2}-(\mathbf{h},\mathbf{h}))^{2}\geq0$.</p>
+<p>and the positivity condition $h_0^{2}+(\vec h,\vec h)\geq\lvert 2h_0\rvert\,\lvert\vec h\rvert$
+is the identity $(h_0^{2}-(\vec h,\vec h))^{2}\geq0$.</p>
 <p><em>Proof.</em> The spectral form of a Hermitian element is
-$\tilde Q=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm=h_0\pm\lvert\mathbf{h}\rvert$ real
+$\tilde Q=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm=h_0\pm\lvert\vec h\rvert$ real
 and $\tilde\Pi_{1,2}$ orthogonal idempotents of <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational
 Sector</em>; squaring gives $\tilde Q^{2}=\lambda_+^{2}\tilde\Pi_1+\lambda_-^{2}\tilde\Pi_2$, a combination of
 the same idempotents with non-negative coefficients, hence positive. The coordinate display and the
@@ -154,22 +154,22 @@ the positive cone is closed under addition, so a sum of squares vanishes only wh
 <p><strong>Corollary.</strong> The Jordan algebra of observables is <strong>formally real</strong>: $Q_1^{2}+\cdots+Q_n^{2}=0$ implies
 $Q_1=\cdots=Q_n=0$.</p>
 <p><em>Proof.</em> Each $Q_i^{2}$ is positive by the proposition, and the sum of positive elements is positive
-because the cone $\{h_0\geq\lvert\mathbf{h}\rvert\}$ is convex. Apply the trace form to the sum against
-the unit: with $\tilde Q_i=h_{0,i}e_0+i\mathbf{h}_i$ one has
-$\tau(\tilde Q_i^{2},e_0)=h_{0,i}^{2}+(\mathbf{h}_i,\mathbf{h}_i)\geq0$ and
-$\tau(\sum_i\tilde Q_i^{2},e_0)=\sum_i\bigl(h_{0,i}^{2}+(\mathbf{h}_i,\mathbf{h}_i)\bigr)$; if the sum
+because the cone $\{h_0\geq\lvert\vec h\rvert\}$ is convex. Apply the trace form to the sum against
+the unit: with $\tilde Q_i=h_{0,i}e_0+i\vec h_i$ one has
+$\tau(\tilde Q_i^{2},e_0)=h_{0,i}^{2}+(\vec h_i,\vec h_i)\geq0$ and
+$\tau(\sum_i\tilde Q_i^{2},e_0)=\sum_i\bigl(h_{0,i}^{2}+(\vec h_i,\vec h_i)\bigr)$; if the sum
 vanishes then this trace vanishes, and the vanishing of a sum of non-negative terms forces every
-$h_{0,i}=\mathbf{h}_i=0$. The cone and the positive definiteness of the trace form are
+$h_{0,i}=\vec h_i=0$. The cone and the positive definiteness of the trace form are
 <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> and the section above.</p>
 <p><strong>Remark (the square does not order the sector by the norm).</strong> Positivity of the square is a statement
 about the <strong>spectrum</strong>, and it is not the sign of the biquaternion norm: a Hermitian element has
-$N(\tilde Q)=h_0^{2}-(\mathbf{h},\mathbf{h})$, which is indefinite, and an element of the positive cone
+$N(\tilde Q)=h_0^{2}-(\vec h,\vec h)$, which is indefinite, and an element of the positive cone
 can have negative norm. The two are kept apart wherever they appear; the norm is <em>Norm and Invertibility in the General Quaternionic Algebra</em>.</p>
 <h2 id="the-trace-form-and-the-invariance">The Trace Form and the Invariance</h2>
 <p><strong>Definition.</strong> The <strong>trace form</strong> of the block is the scalar part of the symmetrised product,</p>
 <p>$$
 \tau(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\bullet\tilde Q\bigr)
-=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=P_0Q_0-(\mathbf{P},\mathbf{Q}).
+=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=P_0Q_0-(\vec P,\vec Q).
 $$</p>
 <p>It is $\mathbb{C}$-bilinear, symmetric and non-degenerate on $\mathbb{B}$, and on the informational sector
 it is <strong>positive definite</strong>. This is the trace form of <em>The Trace Form and the Invariance of the Symmetric
@@ -187,12 +187,12 @@ invariant under a cyclic permutation,
 $\mathrm{Sc}(\tilde Q\tilde P\tilde R)=\mathrm{Sc}(\tilde P\tilde R\tilde Q)$. The invariance is <em>The Trace Form and the Invariance of the Symmetric Plain
 Algebra</em>.</p>
 <p><strong>Proposition (positivity on the observables).</strong> On $\mathbb{M}_+$ the trace form is real and strictly
-positive on non-zero elements, $\tau(\tilde Q,\tilde Q)=h_0^{2}+(\mathbf{h},\mathbf{h})>0$ for
-$\tilde Q=h_0e_0+i\mathbf{h}\neq0$, and it <strong>coincides with the Hermitian form</strong>
+positive on non-zero elements, $\tau(\tilde Q,\tilde Q)=h_0^{2}+(\vec h,\vec h)>0$ for
+$\tilde Q=h_0e_0+i\vec h\neq0$, and it <strong>coincides with the Hermitian form</strong>
 $\mathrm{Sc}(\tilde P\tilde Q^{*})$, the Born pairing of the frame.</p>
 <p><em>Proof.</em> For $\tilde Q$ Hermitian, $\tilde Q^{*}=\tilde Q$, so
 $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$; the algebraic norm
-is the sum of the squares of the four real coordinates $h_0,\mathbf{h}$.
+is the sum of the squares of the four real coordinates $h_0,\vec h$.
 The Born pairing and the Hilbert–Schmidt interpretation are <em>The Hermitian Subspace $\mathbb{M}_+$ as the
 Informational Sector</em>.</p>
 <p><strong>Proposed interpretation, labelled as such.</strong> The invariance is read as the <strong>absence of an orientation</strong>.
@@ -263,7 +263,7 @@ not, while the antisymmetric product closes the material sector and not the info
 square of an observable is the ordinary square and is a positive observable, with the polarisation
 recovering the product from the square; the observables form a commutative unital <strong>special Jordan
 algebra</strong> over $\mathbb{R}$ of real dimension four, and it is formally real; the trace form
-$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$ is
+$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ is
 symmetric, non-degenerate, invariant,
 $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, positive definite on
 $\mathbb{M}_+$, and equal there to the Hermitian form $\mathrm{Sc}(\tilde P\tilde Q^{*})$.</p>
@@ -285,7 +285,7 @@ and a generator part. The observables form a commutative unital <strong>special 
 $\mathbb{R}$ of real dimension four, with the unit $e_0$, the Jordan identity in place of associativity,
 and the square as the algebraic norm of the operation. The square of an observable is a positive observable,
 and the algebra is formally real. Its trace form
-$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$ is
+$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ is
 symmetric, invariant, positive definite on $\mathbb{M}_+$, and equal there to the Hermitian Born pairing
 $\mathrm{Sc}(\tilde P\tilde Q^{*})$. The readings offered and labelled here are that the symmetrised
 product is the <strong>classical composition</strong> of two observables, that the observables are a <strong>Jordan
@@ -325,7 +325,7 @@ are the closure, the positivity and the invariance, and none of the three interp
 <td>Polarisation of the square</td>
 </tr>
 <tr>
-<td>$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$</td>
+<td>$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$</td>
 <td>Trace form of the block</td>
 </tr>
 <tr>

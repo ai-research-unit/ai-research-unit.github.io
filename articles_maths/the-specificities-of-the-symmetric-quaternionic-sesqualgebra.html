@@ -82,13 +82,13 @@ Sesqualgebra</em>; and its operators are <em>The Multiplication Operators of the
 Sesqualgebra</em>, where the $K$-adjointness that the law delivers is computed.</p>
 <p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
-scalar imaginary $i$; $\mathbf Q=\sum_kQ_ke_k$; $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
+scalar imaginary $i$; $\vec Q=\sum_kQ_ke_k$; $(\vec P,\vec Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
 $e_1,e_2,e_3$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
 ${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathrm{Sc}(\tilde X)=X_0$ is the scalar part;
 $\varepsilon=(1,-1,-1,-1)$; and</p>
 <p>$$
 K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}
-=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})
+=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})
 $$</p>
 <p>is the Krein form. The twelve structures are the four general products
 $\mathrm{GPA},\mathrm{GQA},\mathrm{GPS},\mathrm{GQS}$, their four symmetric parts
@@ -118,11 +118,11 @@ each is invariant under the change of the product, so they can be tested one str
 <p><em>Proof.</em> The scalar–vector form of <em>Introduction to the Symmetric Quaternionic Sesqualgebra of
 Biquaternions</em> is</p>
 <p>$$
-\tilde P\star\tilde Q=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P;
+\tilde P\star\tilde Q=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P;
 $$</p>
 <p>the bracket is $K(\tilde P,\tilde Q)$ and is the scalar part, which is (C2). For (C1), conjugate the product with the arguments exchanged and use that the two
 conjugations are anti-automorphisms of the plain product: the scalar bracket is fixed because $K$ is
-Hermitian, and the vector part $-Q_0\overline{\mathbf P}-\overline{Q_0}\mathbf P$ is the same as the vector
+Hermitian, and the vector part $-Q_0\overline{\vec P}-\overline{Q_0}\vec P$ is the same as the vector
 part of $\tilde P\star\tilde Q$. So $\overline{\tilde Q\star\tilde P}=\tilde P\star\tilde Q$.</p>
 <h2 id="the-criterion">The Criterion</h2>
 <p><strong>Theorem (the specificity).</strong> Among the twelve structures of the biquaternion complex space, the block
@@ -131,7 +131,7 @@ $\mathrm{SQS}$ is the only $K$-Hermitian product.</p>
 §<em>The Isolation among the Twelve</em>, each failing at least one of the two clauses on a named pair.</p>
 <h2 id="the-isolation-among-the-twelve">The Isolation among the Twelve</h2>
 <p><strong>Theorem (the isolation).</strong> Among the twelve structures of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, the block is the only $K$-Hermitian product.</p>
-<p><em>Proof.</em> The block satisfies both clauses by §<em>The Law: Being $K$-Hermitian</em>. The other eleven each fail at least one clause. The three bilinear general products GPA and the bilinear parts SPA, SQA fail conjugate-symmetry at $(ie_1,e_1)$, where a bilinear product reverses the imaginary unit, and fail the scalar-part identity at the elements $e_1$ and $ie_1$, where the bilinear form differs from $K$; the two sesquilinear general products GPS and GQS fail conjugate-symmetry at $(e_1,e_2)$, where the two sides are opposite signs of $e_3$, GQS satisfying the scalar-part identity while GPS fails it at $e_1$; the symmetric plain sesquilinear part SPS satisfies conjugate-symmetry and fails the scalar-part identity at $e_1$, its scalar part being the definite form $|P_0|^2+\lVert\mathbf P\rVert^2$ and not $K$; and the four antisymmetric parts fail both, being skew-conjugate-symmetric — so conjugate-symmetry would force them to vanish — and having identically vanishing scalar part.</p>
+<p><em>Proof.</em> The block satisfies both clauses by §<em>The Law: Being $K$-Hermitian</em>. The other eleven each fail at least one clause. The three bilinear general products GPA and the bilinear parts SPA, SQA fail conjugate-symmetry at $(ie_1,e_1)$, where a bilinear product reverses the imaginary unit, and fail the scalar-part identity at the elements $e_1$ and $ie_1$, where the bilinear form differs from $K$; the two sesquilinear general products GPS and GQS fail conjugate-symmetry at $(e_1,e_2)$, where the two sides are opposite signs of $e_3$, GQS satisfying the scalar-part identity while GPS fails it at $e_1$; the symmetric plain sesquilinear part SPS satisfies conjugate-symmetry and fails the scalar-part identity at $e_1$, its scalar part being the definite form $|P_0|^2+\lVert\vec P\rVert^2$ and not $K$; and the four antisymmetric parts fail both, being skew-conjugate-symmetric — so conjugate-symmetry would force them to vanish — and having identically vanishing scalar part.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -190,7 +190,7 @@ $\mathrm{SQS}$ is the only $K$-Hermitian product.</p>
 <h2 id="what-the-criterion-delivers">What the Criterion Delivers</h2>
 <p><strong>The scalar part is the form, not a value.</strong> The clause (C2) makes the scalar projection of the product the
 Krein form, so the diagonal of the block is
-$\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$; the
+$\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$; the
 non-centrality of the diagonal, the shape of the idempotents and the square-zero cone all follow from that
 one formula, as in <em>The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic
 Sesqualgebra</em>, <em>Idempotents of the Symmetric Quaternionic Sesqualgebra</em> and <em>Nilpotents of the Symmetric
@@ -252,7 +252,7 @@ square.</p>
 <td>the clause (C2), the scalar-part identity</td>
 </tr>
 <tr>
-<td>$K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$</td>
+<td>$K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$</td>
 <td>the Krein form, the scalar part of the block</td>
 </tr>
 <tr>

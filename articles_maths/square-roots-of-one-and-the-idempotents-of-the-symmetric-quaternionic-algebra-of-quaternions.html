@@ -55,7 +55,7 @@
 <p>In the symmetric quaternionic block the square of an element is a scalar multiple of $e_0$, and the
 multiple is the quaternion form:</p>
 <p>$$
-\tilde x\star\tilde x=N(\tilde x)e_0=\bigl(x_0^{2}+|\mathbf x|^{2}\bigr)e_0 .
+\tilde x\star\tilde x=N(\tilde x)e_0=\bigl(x_0^{2}+|\vec x|^{2}\bigr)e_0 .
 $$</p>
 <p>This article reads the two classes of element that the squaring map of the block keeps or returns: the
 <strong>square roots of the central value $+e_0$</strong>, the elements the map sends to $e_0$, and the
@@ -73,8 +73,8 @@ Algebraic Structures</em>, §<em>The Element Vocabulary</em>; the product, its s
 its coefficient are <em>Introduction to the Symmetric Quaternionic Algebra of Quaternions</em>.</p>
 <p><strong>The results.</strong> The roots of $+e_0$ in the block are the elements of the level set $N=1$, the unit
 sphere $\mathrm{Sp}(1)$ of the quaternion algebra, of real dimension three; they contain the central
-pair $\pm e_0$, the units $e_1,e_2,e_3$ and their negatives, and every element $x_0e_0+\mathbf x$ with
-$x_0^{2}+|\mathbf x|^{2}=1$, and they are the orbit of $e_0$ under the group $\mathrm{Sp}(1)$ of the
+pair $\pm e_0$, the units $e_1,e_2,e_3$ and their negatives, and every element $x_0e_0+\vec x$ with
+$x_0^{2}+|\vec x|^{2}=1$, and they are the orbit of $e_0$ under the group $\mathrm{Sp}(1)$ of the
 parent plain product. The idempotents of the block are $0$ and $e_0$ alone, and the block has no
 non-trivial idempotent. The two sets are not related by the halving map that carries the roots of $+1$
 onto the idempotents of the parent: the map $\tilde\xi\mapsto\tfrac12(e_0+\tilde\xi)$ produces an
@@ -98,17 +98,17 @@ the Idempotents of the General Plain Algebra</em>; the twin of this article in t
 its namesake, which records the same pair $\{0,e_0\}$ for the block over $\mathbb{C}$ and locates the
 continuum in the parent.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\mathbf x$, with
-$\mathbf x=x_1e_1+x_2e_2+x_3e_3$. The <strong>quaternion conjugation</strong> is
-$\tilde x^{\natural}=x_0e_0-\mathbf x$; on $\mathbb{R}$ the bar is the identity and the star coincides
+$e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\vec x$, with
+$\vec x=x_1e_1+x_2e_2+x_3e_3$. The <strong>quaternion conjugation</strong> is
+$\tilde x^{\natural}=x_0e_0-\vec x$; on $\mathbb{R}$ the bar is the identity and the star coincides
 with the natural sign ${}^{\natural}$. The <strong>quaternion form</strong> is
-$N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$, with diagonal
-$N(\tilde x)=x_0^{2}+|\mathbf x|^{2}=(x_0,x_1,x_2,x_3)\cdot(x_0,x_1,x_2,x_3)$, and the <strong>symmetric
+$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$, with diagonal
+$N(\tilde x)=x_0^{2}+|\vec x|^{2}=(x_0,x_1,x_2,x_3)\cdot(x_0,x_1,x_2,x_3)$, and the <strong>symmetric
 quaternionic product</strong> is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The centre is the scalar line
 $\mathbb{R}e_0$ and the vector subspace is
 $\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$. A
 root of a central value carries the lower-case xi $\tilde\xi$ of the quaternion layer, an idempotent the
-lower-case pi $\tilde\pi$, and a generic element the letter $\tilde x$; the vector part of a root is written $\boldsymbol\xi$.</p>
+lower-case pi $\tilde\pi$, and a generic element the letter $\tilde x$; the vector part of a root is written $\vec\xi$.</p>
 <h2 id="the-square-and-its-reduction">The Square and Its Reduction</h2>
 <p><strong>Proposition (the square and its polarisation).</strong> For every $\tilde x$,</p>
 <p>$$
@@ -126,7 +126,7 @@ gives the stated identity.</p>
 <p><strong>Corollary (the square is nonnegative).</strong> Every square of the block is a nonnegative multiple of
 $e_0$, and the only element whose square vanishes is the origin: the map
 $\tilde x\mapsto N(\tilde x)$ is a sum of four squares.</p>
-<p><em>Proof.</em> $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}\geq0$, and a sum of squares vanishes only when every
+<p><em>Proof.</em> $N(\tilde x)=x_0^{2}+|\vec x|^{2}\geq0$, and a sum of squares vanishes only when every
 coordinate vanishes.</p>
 <p><strong>Theorem (the reduction of the root equation).</strong> Let $\lambda$ be real. The equation
 $\tilde\xi\star\tilde\xi=\lambda e_0$ has the same solutions as the single scalar equation
@@ -153,12 +153,12 @@ condition on the four coordinates, so its real dimension is the dimension of the
 minus one. The set is stable under the plain product by the multiplicativity
 $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$, so it is the group of unit quaternions.</p>
 <p><strong>Corollary (the members of the class).</strong> The root set contains the two central roots $\pm e_0$, the
-three units $e_1,e_2,e_3$ and their negatives, and every element $x_0e_0+\mathbf x$ with
-$x_0^{2}+|\mathbf x|^{2}=1$; read over the vector part, it is the two graphs
-$x_0=\pm\sqrt{1-|\mathbf x|^{2}}$ over the set $|\mathbf x|\leq1$ of the vector subspace.</p>
+three units $e_1,e_2,e_3$ and their negatives, and every element $x_0e_0+\vec x$ with
+$x_0^{2}+|\vec x|^{2}=1$; read over the vector part, it is the two graphs
+$x_0=\pm\sqrt{1-|\vec x|^{2}}$ over the set $|\vec x|\leq1$ of the vector subspace.</p>
 <p><em>Proof.</em> $N(e_0)=N(e_k)=1$ for the four units, and $N(-\tilde x)=N(\tilde x)$ for the sign; the
 displayed elements are exactly the elements with $N(\tilde x)=1$, and solving for $x_0$ gives the two
-graphs, which meet at the set $|\mathbf x|=1$ of the vector subspace.</p>
+graphs, which meet at the set $|\vec x|=1$ of the vector subspace.</p>
 <p><strong>Remark (the root set is the unit group of the parent, not a group of the block).</strong> The level set
 $\{N=1\}$ is the group $\mathrm{Sp}(1)$ of unit quaternions under the plain product of $\mathbb{H}$, of
 real dimension three; the two forms and the plain product are those of <em>The 2 Forms over the Quaternion
@@ -170,7 +170,7 @@ product $\star$.</p>
 <p><strong>Corollary (the roots of $+e_0$ as an orbit).</strong> The root set of $+e_0$ is the orbit of the canonical
 root $e_0$ under multiplication by the unit quaternions in the parent plain product: every root is
 $\tilde\xi=\tilde u$ with $\tilde u\in\mathrm{Sp}(1)$, and the three coordinates of the vector part of
-$\tilde u$, subject to $x_0^{2}+|\mathbf x|^{2}=1$, are the three free parameters of the solution.</p>
+$\tilde u$, subject to $x_0^{2}+|\vec x|^{2}=1$, are the three free parameters of the solution.</p>
 <p><em>Proof.</em> The root set is $\{N=1\}=\mathrm{Sp}(1)$, and $\tilde u\cdot e_0=\tilde u$ in the parent plain
 product, so the orbit is the whole set; the parameters are the coordinates of the vector part, with the
 scalar coordinate determined up to sign by the condition $N(\tilde\xi)=1$.</p>
@@ -203,9 +203,9 @@ no two-sided unit, so the complement and a complete orthogonal system are not av
 <p><strong>Theorem (the idempotents).</strong> An element $\tilde\pi$ satisfies
 $\tilde\pi\star\tilde\pi=\tilde\pi$ if and only if $\tilde\pi\in\{0,e_0\}$.</p>
 <p><em>Proof.</em> The square of the block is
-$\tilde\pi\star\tilde\pi=N(\tilde\pi)e_0=(x_0^{2}+|\mathbf x|^{2})e_0$, while
-$\tilde\pi=x_0e_0+\mathbf x$; the equality of the two elements forces the vector part of the right-hand
-side to vanish, hence $\mathbf x=0$, and then the scalar equation $x_0^{2}=x_0$, whose solutions are
+$\tilde\pi\star\tilde\pi=N(\tilde\pi)e_0=(x_0^{2}+|\vec x|^{2})e_0$, while
+$\tilde\pi=x_0e_0+\vec x$; the equality of the two elements forces the vector part of the right-hand
+side to vanish, hence $\vec x=0$, and then the scalar equation $x_0^{2}=x_0$, whose solutions are
 $x_0=0$ and $x_0=1$. Both values are idempotents: $0\star0=0$ and
 $e_0\star e_0=N(e_0)e_0=e_0$.</p>
 <p><strong>Corollary (no non-trivial idempotent).</strong> The block has exactly two idempotents, and both are central.
@@ -228,8 +228,8 @@ for $\tilde\xi=e_0$ and $0$ for $\tilde\xi=-e_0$.</p>
 <p><em>Proof.</em> The square is computed from the governing formula,
 $N(\tilde\pi)=\tfrac14N(e_0+\tilde\xi)=\tfrac14(1+2\xi_0+N(\tilde\xi))$, and $N(\tilde\xi)=1$ at a root;
 so $\tilde\pi\star\tilde\pi=\tfrac{1+\xi_0}{2}e_0$. But the element $\tilde\pi$ itself is
-$\tfrac{1+\xi_0}{2}e_0+\tfrac12\boldsymbol\xi$, which is a multiple of $e_0$ only when
-$\boldsymbol\xi=0$; then $N(\tilde\xi)=\xi_0^{2}=1$, so $\xi_0=\pm1$, and the two values give
+$\tfrac{1+\xi_0}{2}e_0+\tfrac12\vec\xi$, which is a multiple of $e_0$ only when
+$\vec\xi=0$; then $N(\tilde\xi)=\xi_0^{2}=1$, so $\xi_0=\pm1$, and the two values give
 $\tilde\pi=e_0$ and $\tilde\pi=0$. The identity $\tilde\pi\star\tilde\pi=\tilde\pi$ therefore holds
 exactly at $\tilde\xi=\pm e_0$.</p>
 <p><strong>Corollary (the failure of the bijection).</strong> The halving map is a map from the roots of $+e_0$ onto
@@ -333,7 +333,7 @@ orthogonality that the parent's theory uses require the unit that the block does
 <td>the square of the block, always central</td>
 </tr>
 <tr>
-<td>$N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$</td>
+<td>$N(\tilde x)=x_0^{2}+|\vec x|^{2}$</td>
 <td>the definite quaternion form, the coefficient of the square</td>
 </tr>
 <tr>

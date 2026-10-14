@@ -73,7 +73,7 @@ $$</p>
 <p>$$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 ,
 $$</p>
-<p>the series convention. The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = q/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.</p>
+<p>the series convention. The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = q/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.</p>
 <h2 id="the-gauge-orbit-as-a-torsor">The Gauge Orbit as a Torsor</h2>
 <p>The set $\mathcal{O}(\tilde{A})$ is the image of the map</p>
 <p>$$
@@ -133,7 +133,7 @@ $$</p>
 <p>because $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma\,e_0$ is a pure scalar and has no vector part. The orbit is thus the fibre of the map $\tilde{A}\mapsto\tilde{F}$: on any one orbit, the curvature is constant, and along the orbit nothing but the pure-gauge scalar changes.</p>
 <p>The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the gauge scalar</p>
 <p>$$
-S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A},
+S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\vec A,
 \qquad
 S' = S - \Box\Gamma ,
 $$</p>
@@ -145,7 +145,7 @@ $$</p>
 $$</p>
 <p>was checked against the direct evaluation of $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ on a generic connection and wavevector, agreeing to $5\times10^{-16}$. A connection on the orbit through zero, $\tilde{A} = -\tilde{\nabla}\Gamma$, is flat in the same sense: its vector part came out zero to $2\times10^{-16}$, while its scalar part equalled $-\Box\Gamma$ to $2\times10^{-16}$, which is the shift law's requirement for the member of the orbit that satisfies $S = 0$. For $\tilde{A} = +\tilde{\nabla}\Gamma$ the scalar part is $+\Box\Gamma$; the sign is carried by the direction of the shift, and the orbit's definition $\tilde{A}' = \tilde{A}-\tilde{\nabla}\Gamma$ fixes it.</p>
 <h3 id="local-triviality-and-the-degree-of-freedom-count">Local Triviality and the Degree-of-Freedom Count</h3>
-<p>Any connection can be removed at a single point. Fix a point $\tilde{Q}_0$ and let $A_\mu$ be the components of $\tilde{A}(\tilde{Q}_0)$, with $A_0$ imaginary and $\mathbf{A}$ real. Define</p>
+<p>Any connection can be removed at a single point. Fix a point $\tilde{Q}_0$ and let $A_\mu$ be the components of $\tilde{A}(\tilde{Q}_0)$, with $A_0$ imaginary and $\vec A$ real. Define</p>
 <p>$$
 \Gamma(\tilde{Q}) = \sum_{\mu=0}^{3} A_\mu\,(x_\mu - x_{0\mu}),
 $$</p>
@@ -174,7 +174,7 @@ $$</p>
 <p>$$
 S(\tilde{\rho}_{\tilde{A}'}\,\|\,\tilde{\sigma}_{\tilde{B}'}) = S(\tilde{\rho}_{\tilde{A}}\,\|\,\tilde{\sigma}_{\tilde{B}}) .
 $$</p>
-<p>This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(U\rho U^\dagger\|U\sigma U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\mathbf{r} = (0.35,-0.55,0.28)$ and $\mathbf{s} = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.</p>
+<p>This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(U\rho U^\dagger\|U\sigma U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.</p>
 <p>Three consequences of the invariance spell out the redundancy.</p>
 <p><strong>No information measure can detect the orbit.</strong> Relative entropy is the sharpest distinguishability measure of the theory, and it is constant along the orbit. Whatever else the orbit is, it is not a difference of states.</p>
 <p><strong>The invariance is not confined to the relative entropy.</strong> Every functional of the state that is invariant under unitary conjugation inherits it: the spectrum of $\tilde{\rho}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.</p>
@@ -331,7 +331,7 @@ $$</p>
 <td>d'Alembertian, series convention</td>
 </tr>
 <tr>
-<td>$\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$</td>
+<td>$\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$</td>
 <td>Connection, a material-sector one-form</td>
 </tr>
 <tr>
@@ -359,7 +359,7 @@ $$</p>
 <td>Wavevector biquaternion of the mode $k = (k_0,k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$</td>
 </tr>
 <tr>
-<td>$S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A}$</td>
+<td>$S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = \partial_{ict}A_0 + \mathrm{div}\,\vec A$</td>
 <td>Gauge scalar, pure gauge: $S' = S - \Box\Gamma$</td>
 </tr>
 <tr>
@@ -379,7 +379,7 @@ $$</p>
 <td>Wilson loop; two-sector bilinear</td>
 </tr>
 <tr>
-<td>$\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq1$</td>
+<td>$\tilde{\rho} = \tfrac12(e_0 + i\vec r)$, $|\vec r|\leq1$</td>
 <td>State of the informational sector (Bloch ball)</td>
 </tr>
 <tr>

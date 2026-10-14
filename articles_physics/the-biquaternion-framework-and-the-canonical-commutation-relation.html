@@ -83,7 +83,7 @@ $$
 $$
 so that $\mathbb{M}_+$ is the set of Hermitian elements, $\mathbb{M}_-$ the set of anti-Hermitian ones, and $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_0)=2$.</p>
 <p><strong>Theorem.</strong> There are no $\tilde{Q},\tilde{P}\in\mathbb{M}_+$ and no non-zero central real $\lambda$ with $[\tilde{Q},\tilde{P}]=\lambda\,i\,e_0$.</p>
-<p><strong>Proof.</strong> Write $\tilde{Q}=h_0e_0+i\mathbf{h}\cdot\mathbf{e}$ and $\tilde{P}=k_0e_0+i\mathbf{k}\cdot\mathbf{e}$ with $h_0,k_0\in\mathbb{R}$ and $\mathbf{h},\mathbf{k}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{Q}\tilde{P})=h_0k_0+\mathbf{h}\cdot\mathbf{k}$; the cross terms $i e_j\cdot i e_k$ contribute the symmetric $\mathbf{e}\cdot\mathbf{e}$-part and the antisymmetric part of the product is traceless. The same computation with $\tilde{Q}$ and $\tilde{P}$ exchanged gives the identical scalar part, so
+<p><strong>Proof.</strong> Write $\tilde{Q}=h_0e_0+i\vec h\cdot\mathbf{e}$ and $\tilde{P}=k_0e_0+i\vec k\cdot\mathbf{e}$ with $h_0,k_0\in\mathbb{R}$ and $\vec h,\vec k\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{Q}\tilde{P})=h_0k_0+\vec h\cdot\vec k$; the cross terms $i e_j\cdot i e_k$ contribute the symmetric $\mathbf{e}\cdot\mathbf{e}$-part and the antisymmetric part of the product is traceless. The same computation with $\tilde{Q}$ and $\tilde{P}$ exchanged gives the identical scalar part, so
 $$
 \mathrm{Sc}\bigl([\tilde{Q},\tilde{P}]\bigr)=0 .
 $$
@@ -92,7 +92,7 @@ The commutator is anti-Hermitian and lies in the vector part of $\mathbb{M}_-$, 
 <p><strong>The scope of the theorem.</strong> The same argument applies in every finite-dimensional module of $\mathbb{B}$, since the trace there is cyclic as well. The obstruction is therefore not a quirk of the algebra's particular dimension. It is a statement about every finite-dimensional carrier: the relation cannot be assembled from finitely many levels.</p>
 <h2 id="the-framework-has-no-position-operator">The Framework Has No Position Operator</h2>
 <p>Why the framework is not in the business of satisfying the relation is a matter of what its observable algebra is.</p>
-<p><strong>What $\mathbb{M}_+$ is.</strong> The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_0$ and the three directions $ie_1,ie_2,ie_3$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$. Its states are the elements $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$, the Bloch ball, with the pure states on the boundary.</p>
+<p><strong>What $\mathbb{M}_+$ is.</strong> The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_0$ and the three directions $ie_1,ie_2,ie_3$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$. Its states are the elements $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$, the Bloch ball, with the pure states on the boundary.</p>
 <p><strong>An internal algebra.</strong> The algebra describes <strong>internal</strong> degrees of freedom: a two-valued label, its superpositions, its phases and its rotations. An observable of the algebra is an internal observable. Position is not an internal observable, and it is not obtainable from the internal ones, because the algebra has no element whose spectrum is a continuum and no element that fails to commute with a translation in a configuration variable.</p>
 <p><strong>The spin analogy, stated exactly.</strong> In ordinary quantum mechanics the spin operators are finite-dimensional matrices, and they satisfy $[S_i,S_j]=i\hbar\sum_k\epsilon_{ijk}S_k$ but not the canonical relation. Nobody describes spin as failing the canonical relation, because spin is not a position variable and the relation is not about spin. The framework is in the position of the spin algebra rather than in the position of a failed oscillator. Its $\mathbb{M}_+$ is the same kind of object: a finite-dimensional observable algebra attached to a system the configuration space of which is described elsewhere, or not at all.</p>
 <p><strong>What the framework does have.</strong> It has the rotation bracket, the state space, the Born pairing, the unitary dynamics on its state module, and the Fourier transform. None of these is a position operator, and none of them requires one. That is the whole content of the word <em>internal</em>.</p>
@@ -271,8 +271,8 @@ The commutator is an <strong>operator</strong>, not a scalar: this is the Weyl (
 <td>Trace, $\mathrm{Tr}(e_0)=2$</td>
 </tr>
 <tr>
-<td>$\tilde{Q}=h_0e_0+i\mathbf{h}\cdot\mathbf{e}$</td>
-<td>General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{Q}\tilde{P})=h_0k_0+\mathbf{h}\cdot\mathbf{k}$</td>
+<td>$\tilde{Q}=h_0e_0+i\vec h\cdot\mathbf{e}$</td>
+<td>General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{Q}\tilde{P})=h_0k_0+\vec h\cdot\vec k$</td>
 </tr>
 <tr>
 <td>$[Q,P]=i\hbar I$</td>
@@ -311,7 +311,7 @@ The commutator is an <strong>operator</strong>, not a scalar: this is the Weyl (
 <td>Matrix model of $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$</td>
+<td>$\tilde{\rho}=\tfrac12(e_0+i\vec r)$, $|\vec r|\leq1$</td>
 <td>State, the Bloch ball</td>
 </tr>
 </tbody>

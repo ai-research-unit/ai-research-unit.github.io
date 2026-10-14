@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article collects the properties that single the symmetric quaternionic algebra out among the six structures of <em>The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>: the centrality of its values, its commutativity, the definiteness of its coefficient, the absence of a unit and hence of an inverse, its idempotents, its nilpotents, and its isolation. The properties are not new computations; each is the governing formula $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$ of <em>Introduction to the Symmetric Quaternionic Algebra of Quaternions</em> read for one class of element, and each class is defined in <em>Definitions for the Study of the 6 Algebraic Structures</em>. The article is the Common Theory companion of <em>The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra</em>, below this article in this category, which reads the same formula through the radical and the isotropic elements.</p>
 <p><strong>Boundaries.</strong> The product and its laws are <em>Introduction to the Symmetric Quaternionic Algebra of Quaternions</em>; the zero divisors are <em>Zero Divisors of the Symmetric Quaternionic Algebra</em>, above this article in this category; the roots of a central value are <em>Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra</em> and <em>Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra</em>, above this article in this category; the definitions are <em>Definitions for the Study of the 6 Algebraic Structures</em>; the form and its definiteness are <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\mathbf x$ with $\mathbf x=\sum_kx_ke_k$. The <strong>quaternion conjugation</strong> is $\tilde x^{\natural}=x_0e_0-\mathbf x$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The <strong>quaternion form</strong> is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and $N(\tilde x)=N(\tilde x,\tilde x)=x_0^{2}+|\mathbf x|^{2}$; the <strong>symmetric quaternionic product</strong> is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\vec x$ with $\vec x=\sum_kx_ke_k$. The <strong>quaternion conjugation</strong> is $\tilde x^{\natural}=x_0e_0-\vec x$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The <strong>quaternion form</strong> is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ and $N(\tilde x)=N(\tilde x,\tilde x)=x_0^{2}+|\vec x|^{2}$; the <strong>symmetric quaternionic product</strong> is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.</p>
 <h2 id="the-scalar-law">The Scalar Law</h2>
 <p><strong>Theorem (the values are central and the block is commutative).</strong> Every value of the block lies in the scalar line $\mathbb{R}e_0$, the operation is commutative and $\mathbb{R}$-bilinear, and it satisfies</p>
 <p>$$
@@ -66,7 +66,7 @@ $$</p>
 <h2 id="the-definite-character">The Definite Character</h2>
 <p><strong>Theorem (definiteness).</strong> The coefficient of the block is positive definite:</p>
 <p>$$
-N(\tilde x,\tilde x)=x_0^{2}+|\mathbf x|^{2}\geq0,\qquad N(\tilde x,\tilde x)=0\iff\tilde x=0 .
+N(\tilde x,\tilde x)=x_0^{2}+|\vec x|^{2}\geq0,\qquad N(\tilde x,\tilde x)=0\iff\tilde x=0 .
 $$</p>
 <p>Equivalently, the form is anisotropic: it has no nonzero isotropic element, and its radical is $\{0\}$.</p>
 <p><em>Proof.</em> The form is a sum of four squares, which is nonnegative and vanishes only when every coordinate does; an element with $N(\tilde x,\tilde x)=0$ is therefore $0$, and the radical, being contained in the isotropic set, is $\{0\}$.</p>
@@ -79,8 +79,8 @@ $$</p>
 <p><strong>Remark (the contrast with the symmetric plain block).</strong> The other commutative structure, the symmetric plain algebra, is unital with unit $e_0$: $e_0\bullet\tilde q=\tilde q$. The two blocks differ exactly at the unit, and this is why the zero divisors and the inverses behave oppositely in them; the zero-divisor comparison is <em>Zero Divisors of the Symmetric Quaternionic Algebra</em>, above this article in this category.</p>
 <h2 id="the-idempotents">The Idempotents</h2>
 <p><strong>Theorem (the idempotents).</strong> An element $\tilde x$ satisfies $\tilde x\star\tilde x=\tilde x$ if and only if $\tilde x\in\{0,e_0\}$.</p>
-<p><em>Proof.</em> The square is $N(\tilde x)e_0=(x_0^{2}+|\mathbf x|^{2})e_0$, while $\tilde x=x_0e_0+\mathbf x$; equality forces the vector part of $\tilde x$ to vanish, $\mathbf x=0$, and then $x_0^{2}=x_0$, whose solutions are $x_0=0$ and $x_0=1$. So the idempotents are $0$ and $e_0$.</p>
-<p><strong>Remark (the idempotents are the central ones, and only those).</strong> The block has no idempotent in the vector subspace and none off the centre; the reduction $\mathbf x=0$ in the proof is the entire restriction of the block to the diagonal of the quaternionic row. The companion plain block has the same two idempotents but reaches them with a different computation (<em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>).</p>
+<p><em>Proof.</em> The square is $N(\tilde x)e_0=(x_0^{2}+|\vec x|^{2})e_0$, while $\tilde x=x_0e_0+\vec x$; equality forces the vector part of $\tilde x$ to vanish, $\vec x=0$, and then $x_0^{2}=x_0$, whose solutions are $x_0=0$ and $x_0=1$. So the idempotents are $0$ and $e_0$.</p>
+<p><strong>Remark (the idempotents are the central ones, and only those).</strong> The block has no idempotent in the vector subspace and none off the centre; the reduction $\vec x=0$ in the proof is the entire restriction of the block to the diagonal of the quaternionic row. The companion plain block has the same two idempotents but reaches them with a different computation (<em>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra</em>).</p>
 <h2 id="the-nilpotents-and-the-square-zero-elements">The Nilpotents and the Square-Zero Elements</h2>
 <p>A <strong>nilpotent</strong> of the block is an element some left-nested power of which vanishes, and a <strong>square-zero</strong> element is one of index two (<em>Definitions for the Study of the 6 Algebraic Structures</em>). The powers of the block are governed by one formula.</p>
 <p><strong>Theorem (the powers).</strong> For every $\tilde x$ and every $k\geq2$,</p>
@@ -89,7 +89,7 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> For $k=2$ this is the square. If it holds at $k$, then $\tilde x^{\star(k+1)}=\tilde x^{\star k}\star\tilde x=N(\tilde x)x_0^{k-2}e_0\star\tilde x=N(\tilde x)x_0^{k-2}\cdot x_0e_0=N(\tilde x)x_0^{k-1}e_0$, the formula at $k+1$.</p>
 <p><strong>Theorem (the nilpotents and their index).</strong> An element $\tilde x$ is a nilpotent of the block if and only if $\tilde x$ is pure, that is $x_0=0$; and every nonzero pure element has index three. The only element whose square vanishes is $0$.</p>
-<p><em>Proof.</em> By the powers formula, $\tilde x^{\star3}=N(\tilde x)x_0e_0$. If $x_0=0$ then the cube vanishes; a pure nonzero element has $N(\tilde x)=|\mathbf x|^{2}\neq0$, so its square is $N(\tilde x)e_0\neq0$ and it is not square-zero, and its index is exactly three. If $x_0\neq0$, then $N(\tilde x)x_0\neq0$, because $N(\tilde x)\geq|x_0|^{2}>0$, so the cube is nonzero and, by the formula, every higher power is nonzero; the element is not nilpotent. The square vanishes only when $N(\tilde x)=0$, that is only at $\tilde x=0$, by definiteness.</p>
+<p><em>Proof.</em> By the powers formula, $\tilde x^{\star3}=N(\tilde x)x_0e_0$. If $x_0=0$ then the cube vanishes; a pure nonzero element has $N(\tilde x)=|\vec x|^{2}\neq0$, so its square is $N(\tilde x)e_0\neq0$ and it is not square-zero, and its index is exactly three. If $x_0\neq0$, then $N(\tilde x)x_0\neq0$, because $N(\tilde x)\geq|x_0|^{2}>0$, so the cube is nonzero and, by the formula, every higher power is nonzero; the element is not nilpotent. The square vanishes only when $N(\tilde x)=0$, that is only at $\tilde x=0$, by definiteness.</p>
 <p><strong>Corollary (the two classes).</strong> The nilpotent set of the block is the vector subspace,</p>
 <p>$$
 \{\text{nilpotents}\}=\{\tilde x:x_0=0\}=\operatorname{Im}\mathbb{H}=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3,
@@ -118,7 +118,7 @@ $$</p>
 <td>the product; values in the scalar line</td>
 </tr>
 <tr>
-<td>$N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$</td>
+<td>$N(\tilde x)=x_0^{2}+|\vec x|^{2}$</td>
 <td>the definite coefficient; anisotropic, radical $\{0\}$</td>
 </tr>
 <tr>

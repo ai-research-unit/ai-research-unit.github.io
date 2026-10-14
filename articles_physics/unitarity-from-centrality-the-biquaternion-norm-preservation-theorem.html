@@ -76,7 +76,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$, the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_0e_0+i\mathbf{h}$ one has $N(\tilde{H})=(h_0^2-|\mathbf{h}|^2)e_0$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A root of $-e_0$ is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2=-e_0$. The roots that can serve as the unit of a norm-preserving dynamics are the <strong>anti-Hermitian</strong> ones, $\tilde{\Xi}^{*}=-\tilde{\Xi}$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_0$ need not be anti-Hermitian, as $\tilde{\Xi}=e_1+ie_2-e_3$ shows, and the condition of norm preservation at $\tilde{H}=e_0$ is what forces $\tilde{\Xi}^{*}=-\tilde{\Xi}$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.</p>
+The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$, the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_0e_0+i\vec h$ one has $N(\tilde{H})=(h_0^2-|\vec h|^2)e_0$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A root of $-e_0$ is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2=-e_0$. The roots that can serve as the unit of a norm-preserving dynamics are the <strong>anti-Hermitian</strong> ones, $\tilde{\Xi}^{*}=-\tilde{\Xi}$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_0$ need not be anti-Hermitian, as $\tilde{\Xi}=e_1+ie_2-e_3$ shows, and the condition of norm preservation at $\tilde{H}=e_0$ is what forces $\tilde{\Xi}^{*}=-\tilde{\Xi}$. A state is $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.</p>
 <h2 id="the-two-norms">The Two Norms</h2>
 <p>The word "norm" carries two distinct objects in this framework, and the whole article turns on not confusing them.</p>
 <p><strong>The Hermitian norm.</strong> For $\tilde{Q},\tilde{Y}\in\mathbb{B}$ define
@@ -99,7 +99,7 @@ a quadratic form with values in the <strong>centre</strong>, not in $\mathbb{R}$
 $$
 N(\tilde{Q}\tilde{Y})=N(\tilde{Q})N(\tilde{Y}),
 $$
-and it is indefinite on $\mathbb{M}_+$: for $\tilde{H}=h_0e_0+i\mathbf{h}$ one has $N(\tilde{H})=(h_0^2-|\mathbf{h}|^2)e_0$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.</p>
+and it is indefinite on $\mathbb{M}_+$: for $\tilde{H}=h_0e_0+i\vec h$ one has $N(\tilde{H})=(h_0^2-|\vec h|^2)e_0$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.</p>
 <p>The two norms differ in every structural respect that matters here. The Hermitian norm is real-valued and positive definite; the biquaternion norm is centre-valued and indefinite. The Hermitian norm is preserved by the left action of the unitaries on the state module; the biquaternion norm is preserved by the left action of the unit-norm elements $SL(2,\mathbb{C})$. The Hermitian norm detects the state; the biquaternion norm detects the determinant. A reader who asks "which norm does the framework use" is asking a question with two correct answers, and the answer depends on whether the object at hand is a state overlap or a determinant.</p>
 <h2 id="the-conjugation-action-and-its-defect">The Conjugation Action and Its Defect</h2>
 <p>The action studied throughout is conjugation by an invertible element,
@@ -220,9 +220,9 @@ $$
 SU(2)=U(2)\cap SL(2,\mathbb{C})\ \subset\ U(2)\ \subset\ G_N=U(1)\cdot SL(2,\mathbb{C}),
 $$
 with $SU(2)$ the elements that are simultaneously unitary and of unit norm — the quaternionic unit sphere. The chain records the whole norm-preservation structure: the smallest group is the one that preserves both norms <strong>and</strong> the algebra's multiplication; enlarging to $U(2)$ keeps the Hermitian norm and the multiplication but gives up the unit-norm condition; enlarging to $G_N$ keeps only the biquaternion norm.</p>
-<p><strong>The unitary group is not the unit sphere.</strong> The unit group of a form is the set of elements on which the form takes the value $1$; the unitary group is the isometry group of the form under the conjugation action. For the general plain sesquilinear form the second is the smaller, and the difference is a difference of equations. The defect $\tilde{U}\tilde{U}^{*}$ is Hermitian, so writing it as $z_0e_0+i\mathbf{z}$ with $z_0\in\mathbb{R}$ and $\mathbf{z}\in\mathbb{R}^3$,
+<p><strong>The unitary group is not the unit sphere.</strong> The unit group of a form is the set of elements on which the form takes the value $1$; the unitary group is the isometry group of the form under the conjugation action. For the general plain sesquilinear form the second is the smaller, and the difference is a difference of equations. The defect $\tilde{U}\tilde{U}^{*}$ is Hermitian, so writing it as $z_0e_0+i\vec z$ with $z_0\in\mathbb{R}$ and $\vec z\in\mathbb{R}^3$,
 $$
-\tilde{U}\tilde{U}^{*}=e_0\iff z_0=1\ \text{and}\ \mathbf{z}=0,
+\tilde{U}\tilde{U}^{*}=e_0\iff z_0=1\ \text{and}\ \vec z=0,
 \qquad
 \langle\tilde{U},\tilde{U}\rangle_{*}=1\iff z_0=1 ,
 $$
@@ -259,7 +259,7 @@ $$
 \Gamma_{\tilde{U}}(\tilde{Q})=\lambda_0^2\tilde{Q}.
 $$
 The biquaternion norm scales as $N(\Gamma_{\tilde{U}}\tilde{Q})=\lambda_0^4N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\bigl|\lambda_0^2\bigr|^2N(\tilde{Q})$, in agreement with Theorem 2 with $|N(\tilde{U})|=|\lambda_0^2|=\lambda_0^2$. The Hermitian norm scales by $\lambda_0^4$ and is not preserved. This example shows that <em>centrality of the defect is not enough for unitarity</em>: it removes the operator-valued part of the anomaly and leaves a scalar, and the scalar must be normalized to one. It is the precise counterpart, in the multiplicative direction, of the statement that a central root of $-e_0$ must be normalized to be $\pm i$.</p>
-<p><strong>Example 3: a non-central root of $-e_0$.</strong> Take $J=e_3$, so $J^2=-e_0$, and take the Hermitian generator $\tilde{H}=i e_1$ (i.e. $\mathbf{h}=(1,0,0)$). Then, with the flow generator $G=-\hbar^{-1}J\tilde{H}$,
+<p><strong>Example 3: a non-central root of $-e_0$.</strong> Take $J=e_3$, so $J^2=-e_0$, and take the Hermitian generator $\tilde{H}=i e_1$ (i.e. $\vec h=(1,0,0)$). Then, with the flow generator $G=-\hbar^{-1}J\tilde{H}$,
 $$
 G=-\hbar^{-1}e_3\,ie_1=-\hbar^{-1}i\,e_3e_1=-\hbar^{-1}i\,e_2 .
 $$

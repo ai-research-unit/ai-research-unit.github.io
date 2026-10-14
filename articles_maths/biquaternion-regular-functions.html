@@ -57,7 +57,7 @@
 <p>$$
 e_0 = 1, \qquad e_1^2 = e_2^2 = e_3^2 = -e_0, \qquad e_1 e_2 = e_3, \quad e_2 e_3 = e_1, \quad e_3 e_1 = e_2,
 $$</p>
-<p>and $i$ is a central scalar imaginary. We write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$, $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$.</p>
+<p>and $i$ is a central scalar imaginary. We write $\tilde{Q} = Q_0 e_0 + \vec Q$, $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$.</p>
 <h2 id="the-biquaternion-variable-and-its-two-complex-structures">The Biquaternion Variable and Its Two Complex Structures</h2>
 <p>A <strong>complex structure</strong> on a real vector space is a real-linear map $J$ with $J^2 = -\mathrm{id}$. The biquaternion algebra carries a pair of commuting complex structures,</p>
 <p>$$
@@ -88,15 +88,15 @@ $$</p>
 <p><strong>Single-plane holomorphy.</strong> Fix $A = q_0 + e_1 q_1$. A function independent of $q_2, q_3$ is holomorphic in $A$ in the classical sense precisely when $\tilde{\nabla}\tilde{F} = 2\partial_{\bar{A}}\tilde{F} = 0$. Hence every classical holomorphic function of $A$, extended by constancy in the orthogonal directions, is regular: the powers $A^n$, the inverse $(A - w)^{-1}$, and so on. Such functions use one complex structure and carry no information about $q_2, q_3$.</p>
 <p><strong>Hypercomplex regularity.</strong> The hypercomplex notion uses the full dependence on all four variables and the full Clifford structure. It is strictly larger than the single-plane class: the Cauchy kernel $\tilde{G} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is regular on $\mathbb{H}_{\mathbb{B}} \setminus \{0\}$ and is not holomorphic in any single-plane variable. The two notions coincide only in two real dimensions, where the biquaternionic operator reduces to the classical Cauchy–Riemann operator in one complex variable.</p>
 <h2 id="the-system-of-regularity-equations">The System of Regularity Equations</h2>
-<p>Writing $\tilde{F} = F_0 + \mathbf{F}$ with $\mathbf{F} = F_1 e_1 + F_2 e_2 + F_3 e_3$, the analysis article gives</p>
+<p>Writing $\tilde{F} = F_0 + \vec F$ with $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$, the analysis article gives</p>
 <p>$$
-\tilde{\nabla}\tilde{F} = \left(\partial_{Q_0}F_0 - \mathrm{div}\,\mathbf{F}\right) + \left(\partial_{Q_0}\mathbf{F} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F}\right),
+\tilde{\nabla}\tilde{F} = \left(\partial_{Q_0}F_0 - \mathrm{div}\,\vec F\right) + \left(\partial_{Q_0}\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right),
 $$</p>
-<p>with $\mathrm{div}\,\mathbf{F} = \sum_k \partial_{Q_k}F_k$, $\mathrm{grad}\,F_0 = \sum_k (\partial_{Q_k}F_0)e_k$, and $\mathrm{rot}\,\mathbf{F} = \sum_{j,k,l}\epsilon_{jkl}(\partial_{Q_j}F_k)e_l$. Therefore $\tilde{F}$ is regular if and only if</p>
+<p>with $\mathrm{div}\,\vec F = \sum_k \partial_{Q_k}F_k$, $\mathrm{grad}\,F_0 = \sum_k (\partial_{Q_k}F_0)e_k$, and $\mathrm{rot}\,\vec F = \sum_{j,k,l}\epsilon_{jkl}(\partial_{Q_j}F_k)e_l$. Therefore $\tilde{F}$ is regular if and only if</p>
 <p>$$
-\partial_{Q_0}F_0 = \mathrm{div}\,\mathbf{F}, \qquad \partial_{Q_0}\mathbf{F} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F} = 0.
+\partial_{Q_0}F_0 = \mathrm{div}\,\vec F, \qquad \partial_{Q_0}\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0.
 $$</p>
-<p>This is a <strong>system of four equations</strong> for the four coefficients, the biquaternionic <strong>Cauchy–Riemann–Fueter system</strong>. It is the precise sense in which regularity is expressed by a system of equations rather than by one complex equation, and it is the local expression of the regularity notion inherited from the Clifford algebra, coupling $F_0$ to $\mathbf{F}$ through $\mathrm{div}$, $\mathrm{grad}$, and $\mathrm{rot}$.</p>
+<p>This is a <strong>system of four equations</strong> for the four coefficients, the biquaternionic <strong>Cauchy–Riemann–Fueter system</strong>. It is the precise sense in which regularity is expressed by a system of equations rather than by one complex equation, and it is the local expression of the regularity notion inherited from the Clifford algebra, coupling $F_0$ to $\vec F$ through $\mathrm{div}$, $\mathrm{grad}$, and $\mathrm{rot}$.</p>
 <p>On $\mathbb{H}_{\mathbb{B}}$ the principal symbol $s(\xi) = \sum_\mu \xi_\mu e_\mu$ satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2 e_0$, so the system is <strong>elliptic</strong> and its solutions are smooth (indeed real-analytic). On $\mathbb{M}_-$, with $s(\xi) = -i\xi_0 e_0 + \sum_k \xi_k e_k$, one finds</p>
 <p>$$
 s(\xi)s^{\natural}(\xi) = \left(-\xi_0^2 + \xi_1^2 + \xi_2^2 + \xi_3^2\right)e_0,
@@ -224,8 +224,8 @@ $$</p>
 <td>Biquaternion algebra, $\cong \mathrm{Cl}_{1,3}^{+}$</td>
 </tr>
 <tr>
-<td>$\tilde{Q} = Q_0 e_0 + \mathbf{Q}$</td>
-<td>Biquaternion variable; $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
+<td>$\tilde{Q} = Q_0 e_0 + \vec Q$</td>
+<td>Biquaternion variable; $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
 </tr>
 <tr>
 <td>$\tilde{\nabla} = \sum_\mu e_\mu \partial_{Q_\mu}$</td>

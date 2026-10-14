@@ -96,15 +96,15 @@ $$</p>
 <p>We collect the mode operators that the parents supply, because the rest of the article asks which of them can be elements of $\mathbb{B}$.</p>
 <p><strong>Fermionic (Dirac).</strong> The field expands as</p>
 <p>$$
-\hat\psi(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum_{r=1}^{2}
-\Big[\hat a_r(\mathbf p)u^{(r)}(\mathbf p)e^{-ip\cdot x}
-+\hat b_r^\dagger(\mathbf p)v^{(r)}(\mathbf p)e^{+ip\cdot x}\Big],
+\hat\psi(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_{r=1}^{2}
+\Big[\hat a_r(\vec p)u^{(r)}(\vec p)e^{-ip\cdot x}
++\hat b_r^\dagger(\vec p)v^{(r)}(\vec p)e^{+ip\cdot x}\Big],
 $$</p>
 <p>with $\hat a_r$ annihilating particles and $\hat b_r$ annihilating antiparticles. The mode algebra is</p>
 <p>$$
-\{\hat a_r(\mathbf p),\hat a_s^\dagger(\mathbf q)\}
-=\{\hat b_r(\mathbf p),\hat b_s^\dagger(\mathbf q)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\mathbf p-\mathbf q),
+\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}
+=\{\hat b_r(\vec p),\hat b_s^\dagger(\vec q)\}
+=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q),
 $$</p>
 <p>with all other anticommutators vanishing. The particle number, antiparticle number, the total number of quanta and the electric charge are</p>
 <p>$$
@@ -113,11 +113,11 @@ $$</p>
 \hat F=\hat N_a+\hat N_b,\qquad
 \hat Q=\hat N_a-\hat N_b,
 $$</p>
-<p>and Pauli exclusion is the algebraic identity $(\hat a_r^\dagger(\mathbf p))^2=0$. Here $\hat Q=\hat N_a-\hat N_b$ is the conserved fermion number (the corpus's $U(1)$ charge), while $\hat F=\hat N_a+\hat N_b$ is the <strong>total number of quanta</strong>, whose parity is the Dirac article's fermion parity $(-1)^F$; the two agree modulo 2, which is why the parity can be written with either. The notation $\hat Q$ is the Dirac quantization article's; $\hat F$ is introduced here.</p>
+<p>and Pauli exclusion is the algebraic identity $(\hat a_r^\dagger(\vec p))^2=0$. Here $\hat Q=\hat N_a-\hat N_b$ is the conserved fermion number (the corpus's $U(1)$ charge), while $\hat F=\hat N_a+\hat N_b$ is the <strong>total number of quanta</strong>, whose parity is the Dirac article's fermion parity $(-1)^F$; the two agree modulo 2, which is why the parity can be written with either. The notation $\hat Q$ is the Dirac quantization article's; $\hat F$ is introduced here.</p>
 <p><strong>Bosonic (Maxwell).</strong> The potential expands in four polarizations with</p>
 <p>$$
-\big[\hat a_r(\mathbf k),\hat a_s^\dagger(\mathbf k')\big]
-=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\mathbf k-\mathbf k'),
+\big[\hat a_r(\vec k),\hat a_s^\dagger(\vec k')\big]
+=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k'),
 \qquad
 (\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1),
 $$</p>
@@ -183,7 +183,7 @@ $$</p>
 <p>where $|0\rangle=(1,0)^{\mathsf T}$ and $|1\rangle=(0,1)^{\mathsf T}$ in the module.</p>
 <p>Three consequences follow at once, all of them recomputed above.</p>
 <ul>
-<li><strong>The Fock space is the fundamental module.</strong> The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their projectors are the idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_2=\tfrac12(e_0-ie_3)$, and $\tilde N_{\mathrm{tr}}=\tilde\Pi_2$. The number operator of a single fermionic mode is a pure-state projector of the informational sector.</li>
+<li><strong>The Fock space is the fundamental module.</strong> The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their projectors are the idempotents $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$, the two associated with the root of $+1$ $ie_3$ since $(ie_3)^2=e_0$, and $\tilde N_{\mathrm{tr}}=\tilde\Pi_-$. The number operator of a single fermionic mode is a pure-state projector of the informational sector.</li>
 <li><strong>The grading is an element of the algebra.</strong> Fermion parity for one mode is</li>
 </ul>
 <p>$$
@@ -326,7 +326,7 @@ $$</p>
 <td>Number operator</td>
 </tr>
 <tr>
-<td>$\hat a_r(\mathbf p),\hat b_r(\mathbf p)$</td>
+<td>$\hat a_r(\vec p),\hat b_r(\vec p)$</td>
 <td>Dirac particle and antiparticle mode operators (parent's notation)</td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ $$</p>
 <td>Total number of quanta (parity $(-1)^F$), and fermion number (= electric charge)</td>
 </tr>
 <tr>
-<td>$\hat a_r(\mathbf k)$, $\zeta=(-1,+1,+1,+1)$</td>
+<td>$\hat a_r(\vec k)$, $\zeta=(-1,+1,+1,+1)$</td>
 <td>Maxwell mode operators and indefinite metric</td>
 </tr>
 <tr>

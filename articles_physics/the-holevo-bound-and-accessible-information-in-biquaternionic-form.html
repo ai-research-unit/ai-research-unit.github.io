@@ -72,19 +72,19 @@ $$</p>
 <p>$$
 \mathcal{E} = \bigl\{p_x,\ \tilde{\rho}_x\bigr\}_{x\in\mathcal{X}},
 \qquad p_x\geq0, \quad \sum_x p_x = 1, \qquad
-\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\mathbf{r}_x\bigr), \quad |\mathbf{r}_x|\leq1 .
+\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\vec r_x\bigr), \quad |\vec r_x|\leq1 .
 $$</p>
 <p>The <strong>average state</strong> is the convex combination</p>
 <p>$$
-\tilde{\rho}^{\natural} = \sum_x p_x\,\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\bar{\mathbf{r}}\bigr),
-\qquad \bar{\mathbf{r}} = \sum_x p_x\,\mathbf{r}_x ,
+\tilde{\rho}^{\natural} = \sum_x p_x\,\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\bar{\vec r}\bigr),
+\qquad \bar{\vec r} = \sum_x p_x\,\vec r_x ,
 $$</p>
-<p>which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\mathbf{r}}|^2)e_0$, a function of the mean Bloch vector. Its entropy is, for a qubit,</p>
+<p>which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\vec r}|^2)e_0$, a function of the mean Bloch vector. Its entropy is, for a qubit,</p>
 <p>$$
-S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\mathbf{r}}|}{2}\right),
+S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right),
 \qquad h(p) = -p\log p-(1-p)\log(1-p),
 $$</p>
-<p>as follows from the spectrum $\tfrac12(1\pm|\bar{\mathbf{r}}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{\rho}_x) = h\!\left(\tfrac{1+|\mathbf{r}_x|}{2}\right)$.</p>
+<p>as follows from the spectrum $\tfrac12(1\pm|\bar{\vec r}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{\rho}_x) = h\!\left(\tfrac{1+|\vec r_x|}{2}\right)$.</p>
 <h3 id="measurements-as-povms">Measurements as POVMs</h3>
 <p>A <strong>measurement</strong> with outcome label $y$ is a <strong>positive operator-valued measure</strong>: a family of Hermitian elements</p>
 <p>$$
@@ -112,7 +112,7 @@ S\!\left(\sum_x p_x\tilde{\rho}_x\right) \;\geq\; \sum_x p_x\,S(\tilde{\rho}_x),
 $$</p>
 <p>which is the statement that mixing cannot decrease information. For a pure-state ensemble each $S(\tilde{\rho}_x) = 0$, and the Holevo quantity is simply the entropy of the average state,</p>
 <p>$$
-\chi = S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\mathbf{r}}|}{2}\right)
+\chi = S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
 = H\bigl(N(\tilde{\rho}^{\natural})\bigr),
 $$</p>
 <p>a function of the biquaternion norm of the average state alone. This is the case of greatest interest, because a source of pure states is what a preparation device most naturally produces and because the maximal accessible information is achieved with pure states.</p>
@@ -179,7 +179,7 @@ $$</p>
 p_0 = p_1 = \tfrac12, \qquad
 \tilde{\rho}_0 = \tilde\Pi_1(\hat{e}_3), \qquad \tilde{\rho}_1 = \tilde\Pi_2(\hat{e}_3) .
 $$</p>
-<p>The average state is $\tilde{\rho}^{\natural} = \tfrac12 e_0$, with Bloch vector $\bar{\mathbf{r}} = 0$ and biquaternion norm $\tfrac14 e_0$, so</p>
+<p>The average state is $\tilde{\rho}^{\natural} = \tfrac12 e_0$, with Bloch vector $\bar{\vec r} = 0$ and biquaternion norm $\tfrac14 e_0$, so</p>
 <p>$$
 \chi = S(\tfrac12 e_0) = \log 2 .
 $$</p>
@@ -293,7 +293,7 @@ $$</p>
 <td>Central scalar imaginary</td>
 </tr>
 <tr>
-<td>$\tilde{\rho}_x = \tfrac12(e_0 + i\mathbf{r}_x)$</td>
+<td>$\tilde{\rho}_x = \tfrac12(e_0 + i\vec r_x)$</td>
 <td>Ensemble state</td>
 </tr>
 <tr>
@@ -317,11 +317,11 @@ $$</p>
 <td>Holevo quantity</td>
 </tr>
 <tr>
-<td>$S(\tilde{\rho}) = h\!\left(\tfrac{1+|\mathbf{r}|}{2}\right)$</td>
+<td>$S(\tilde{\rho}) = h\!\left(\tfrac{1+|\vec r|}{2}\right)$</td>
 <td>Von Neumann entropy of a qubit state</td>
 </tr>
 <tr>
-<td>$N(\tilde{\rho}^{\natural}) = \tfrac14(1-|\bar{\mathbf{r}}|^2)e_0$</td>
+<td>$N(\tilde{\rho}^{\natural}) = \tfrac14(1-|\bar{\vec r}|^2)e_0$</td>
 <td>Biquaternion norm of the average state</td>
 </tr>
 <tr>

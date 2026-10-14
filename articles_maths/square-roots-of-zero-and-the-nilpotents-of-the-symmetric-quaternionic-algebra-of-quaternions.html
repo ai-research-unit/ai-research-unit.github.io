@@ -87,12 +87,12 @@ Quaternionic Algebra</em>; the powers and the nilpotent class are also collected
 the Symmetric Quaternionic Algebra</em>; the realization $\mathsf{M}_2$, its trace and its determinant are
 <em>The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$</em>.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\mathbf x$, with
-$\mathbf x=x_1e_1+x_2e_2+x_3e_3$. The <strong>quaternion conjugation</strong> is
-$\tilde x^{\natural}=x_0e_0-\mathbf x$; on $\mathbb{R}$ the bar is the identity and the star coincides
+$e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\vec x$, with
+$\vec x=x_1e_1+x_2e_2+x_3e_3$. The <strong>quaternion conjugation</strong> is
+$\tilde x^{\natural}=x_0e_0-\vec x$; on $\mathbb{R}$ the bar is the identity and the star coincides
 with the natural sign ${}^{\natural}$. The <strong>quaternion form</strong> is
-$N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$, with diagonal
-$N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$, and the <strong>symmetric quaternionic product</strong> is
+$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$, with diagonal
+$N(\tilde x)=x_0^{2}+|\vec x|^{2}$, and the <strong>symmetric quaternionic product</strong> is
 $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The centre is the scalar line $\mathbb{R}e_0$ and the
 vector subspace is
 $\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$. The
@@ -128,7 +128,7 @@ Nilpotents</em>, and the square-zero sets of the six structures are compared in 
 Other Real Blocks</em>.</p>
 <p><strong>Remark (the collapse of the isotropic cone).</strong> In the biquaternion block the roots of $0$ form the
 punctured isotropic cone $\{N=0\}\setminus\{0\}$, of complex dimension three, with two families of
-generators; over $\mathbb{R}$ the coefficient $N(\tilde\xi)=x_0^{2}+|\mathbf x|^{2}$ is definite, the
+generators; over $\mathbb{R}$ the coefficient $N(\tilde\xi)=x_0^{2}+|\vec x|^{2}$ is definite, the
 isotropic locus $\{N=0\}$ collapses to the origin, and the punctured cone is empty. The block's
 isotropic elements are none but the origin and its radical is $\{0\}$ (<em>The Radical and the Isotropic
 Elements of the Symmetric Quaternionic Algebra</em>), so the root set of $0$ is a single point and not a
@@ -159,7 +159,7 @@ $N(\tilde x)=0$, that is at $\tilde x=0$, or when $k\geq3$ and $x_0=0$.</p>
 <p><strong>Corollary (the square-zero set).</strong> The square-zero set of the block is the singleton $\{0\}$, and the
 block has no nonzero square-zero element; equivalently, the elements whose square vanishes form the
 origin alone, as §<em>The Roots of Zero</em> states, and the root set of $0$ is that same singleton.</p>
-<p><em>Proof.</em> The square is $N(\tilde x)e_0$, and $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$ vanishes only at the
+<p><em>Proof.</em> The square is $N(\tilde x)e_0$, and $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ vanishes only at the
 origin; the origin has the vanishing square and is the only element that does.</p>
 <h2 id="the-nilpotents">The Nilpotents</h2>
 <h3 id="the-definition-and-the-criterion">The Definition and the Criterion</h3>
@@ -179,10 +179,10 @@ $$</p>
 element is a nilpotent of index exactly three.</p>
 <p><em>Proof.</em> By the power formula the cube is $\tilde x^{\star3}=N(\tilde x)x_0e_0$. If $x_0=0$ the cube
 vanishes, so the index is at most three. If $x_0\neq0$, then
-$N(\tilde x)=x_0^{2}+|\mathbf x|^{2}\geq x_0^{2}>0$, so $N(\tilde x)x_0\neq0$ and the cube is nonzero;
+$N(\tilde x)=x_0^{2}+|\vec x|^{2}\geq x_0^{2}>0$, so $N(\tilde x)x_0\neq0$ and the cube is nonzero;
 by the formula $N(\tilde x)x_0^{k-2}\neq0$ for every $k\geq2$, so no power vanishes and $\tilde x$ is
 not a nilpotent. Hence a nilpotent has $x_0=0$. Conversely a nonzero pure element has
-$N(\tilde x)=|\mathbf x|^{2}>0$, so its square is $N(\tilde x)e_0\neq0$ and its cube is $0$: its index
+$N(\tilde x)=|\vec x|^{2}>0$, so its square is $N(\tilde x)e_0\neq0$ and its cube is $0$: its index
 is exactly three, and not two.</p>
 <h3 id="the-index">The Index</h3>
 <p><strong>Corollary (the index is three, and is bounded by three).</strong> Every nilpotent of the block has index
@@ -253,7 +253,7 @@ the square-zero elements are the trace-free matrices that are also singular, whi
 reduces to the zero matrix, because a nonzero pure element has $N(\tilde x)>0$ while a singular matrix
 of the model has $N(\tilde x)=0$ and is the image of the origin.</p>
 <p><em>Proof.</em> The trace and the determinant are the invariants of the model; a pure element has $x_0=0$,
-hence a trace-free matrix, and $\det=N(\tilde x)=|\mathbf x|^{2}>0$ for a nonzero pure element, so the
+hence a trace-free matrix, and $\det=N(\tilde x)=|\vec x|^{2}>0$ for a nonzero pure element, so the
 matrix is not singular; a singular matrix of the model has $\det=N(\tilde x)=0$, hence $\tilde x=0$ by
 definiteness. The criteria of the preceding sections give the index.</p>
 <p><strong>Remark (the contrast with the complex parent).</strong> In the biquaternion chapter the same model gives the
@@ -276,7 +276,7 @@ this block and invisible in the other three: here the cube, and not the square, 
 <p>The powers of the symmetric quaternionic block obey $\tilde x^{\star k}=N(\tilde x)x_0^{k-2}e_0$ from
 the square on, so the cube vanishes exactly on the pure elements and no higher power vanishes off the
 origin. The roots of $0$ are the origin alone, since the square is the definite form
-$N(\tilde x)e_0=(x_0^{2}+|\mathbf x|^{2})e_0$ and a sum of squares vanishes only at the origin; the
+$N(\tilde x)e_0=(x_0^{2}+|\vec x|^{2})e_0$ and a sum of squares vanishes only at the origin; the
 square-zero set is the single point $\{0\}$, there is no nonzero square-zero element, and the block has
 no nilpotent of index two. The nilpotents are the nonzero pure quaternions,
 $\operatorname{Im}\mathbb{H}\setminus\{0\}$, each of index exactly three; there is no nilpotent of index
@@ -300,7 +300,7 @@ singular branch of the complex chapter collapses, and the trace-free branch alon
 <td>the square of the block, always central</td>
 </tr>
 <tr>
-<td>$N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$</td>
+<td>$N(\tilde x)=x_0^{2}+|\vec x|^{2}$</td>
 <td>the definite quaternion form, the coefficient of the square</td>
 </tr>
 <tr>

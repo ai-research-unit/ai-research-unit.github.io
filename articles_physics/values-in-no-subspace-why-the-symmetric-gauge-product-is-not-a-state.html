@@ -72,11 +72,11 @@ the Fourth Product Is a Gauge Structure and Not a State Space</em>.</p>
 <p><strong>Conventions.</strong> As in the companion articles of this block:
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$,
 $e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$,
-scalar part $\mathrm{Sc}(\tilde Q)=Q_0$, vector part $\mathbf{Q}=\sum_kQ_ke_k$; the natural conjugation
-$\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$ and the star $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$;
-$(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$; the block's product is
-$\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})=[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$;
-the Krein form is $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ with
+scalar part $\mathrm{Sc}(\tilde Q)=Q_0$, vector part $\vec Q=\sum_kQ_ke_k$; the natural conjugation
+$\tilde Q^{\natural}=Q_0e_0-\vec Q$ and the star $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$;
+$(\vec P,\vec Q)=\sum_kP_kQ_k$; the block's product is
+$\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})=[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})]-P_0\overline{\vec Q}-\overline{Q_0}\vec P$;
+the Krein form is $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ with
 $\varepsilon=(1,-1,-1,-1)$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and
 $\mathbb{M}_-=\{Q^{\flat}=Q\}$, with $\flat=-{}^{*}$. All conventions are those of <em>Conventions in the
 Biquaternion Universe</em>.</p>
@@ -121,13 +121,13 @@ three commuting involutions.</p>
 <tr>
 <td>informational $\mathbb{M}_+$</td>
 <td>$4$</td>
-<td>$Q_0$ real, $\mathbf{Q}$ purely imaginary</td>
+<td>$Q_0$ real, $\vec Q$ purely imaginary</td>
 <td>$\{e_0,ie_1,ie_2,ie_3\}$</td>
 </tr>
 <tr>
 <td>material $\mathbb{M}_-$</td>
 <td>$4$</td>
-<td>$Q_0$ purely imaginary, $\mathbf{Q}$ real</td>
+<td>$Q_0$ purely imaginary, $\vec Q$ real</td>
 <td>$\{ie_0,e_1,e_2,e_3\}$</td>
 </tr>
 </tbody>
@@ -143,14 +143,14 @@ Symmetric Quaternionic Sesqualgebra of Biquaternions</em> and is cited, not re-d
 <p><strong>Theorem (the value is in no subspace).</strong> For a general pair the value $\tilde P\bullet\tilde Q$ lies in
 none of the remarkable subspaces.</p>
 <p><em>Proof.</em> The value is
-$[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$.
+$[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})]-P_0\overline{\vec Q}-\overline{Q_0}\vec P$.
 It is not in the centre unless its vector part vanishes, and it is not in the vector subspace unless its
 scalar part vanishes; a general pair has both nonzero. Its coefficients are not all real, so it is not in
 $\mathbb{H}_{\mathbb{B}}$; not all purely imaginary, so not in $i\mathbb{H}_{\mathbb{B}}$; it does not have
 a real scalar coefficient with a purely imaginary vector part, so it is not in $\mathbb{M}_+$; and it does
 not have a purely imaginary scalar coefficient with a real vector part, so it is not in $\mathbb{M}_-$.
 Each obstruction is open, so a general pair fails all six.</p>
-<p><strong>Worked witness.</strong> Take $\tilde P=(1+i)e_0$ and $\tilde Q=e_0+e_1$. Here $P_0=1+i$, $\mathbf{P}=0$,
+<p><strong>Worked witness.</strong> Take $\tilde P=(1+i)e_0$ and $\tilde Q=e_0+e_1$. Here $P_0=1+i$, $\vec P=0$,
 $Q_0=1$, $Q_1=1$, so</p>
 <p>$$
 \tilde P\bullet\tilde Q=(1+i)e_0-(1+i)e_1=(1+i)(e_0-e_1).
@@ -168,16 +168,16 @@ claimed of any value by it.</p>
 <p>The algebraic norm carries the same obstruction in a sharper form, and it is the sharpest statement of the band.</p>
 <p><strong>Theorem (the algebraic norm).</strong> For every biquaternion,</p>
 <p>$$
-\tilde Q\bullet\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q},
+\tilde Q\bullet\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q,
 \qquad
 K(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}-\sum_{k=1}^{3}\lvert Q_k\rvert^{2},
 $$</p>
 <p>with real scalar part and real vector part $-2\sum_k\mathrm{Re}(Q_0\overline{Q_k})e_k$.</p>
 <p><em>Proof.</em> Put $\tilde P=\tilde Q$ in the value: the scalar part is $\lvert Q_0\rvert^{2}-\sum_k\lvert Q_k\rvert^{2}$,
-real, and the vector part is $-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}=-2\mathrm{Re}(Q_0\overline{\mathbf{Q}})$,
+real, and the vector part is $-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q=-2\mathrm{Re}(Q_0\overline{\vec Q})$,
 real.</p>
 <p><strong>Theorem (criterion of centrality).</strong> The algebraic norm lies in the centre exactly when
-$Q_0\overline{Q_k}\in i\mathbb{R}$ for every $k$, that is, when the vector $Q_0\overline{\mathbf{Q}}$ is
+$Q_0\overline{Q_k}\in i\mathbb{R}$ for every $k$, that is, when the vector $Q_0\overline{\vec Q}$ is
 purely imaginary; in particular on the whole vector subspace, where $Q_0=0$.</p>
 <p><em>Proof.</em> The centre is $\mathbb{C}e_0$, so the algebraic norm is central exactly when its vector part vanishes,
 and its $k$-th component is $-2\mathrm{Re}(Q_0\overline{Q_k})$.</p>
@@ -216,13 +216,13 @@ not central.</p>
 </tr>
 <tr>
 <td>value</td>
-<td>central, $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$</td>
+<td>central, $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$</td>
 <td>scalar part $K$, vector part the mixed term; in no subspace</td>
 </tr>
 <tr>
 <td>algebraic norm</td>
-<td>$H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf{Q}\rvert^{2}$, positive off zero</td>
-<td>$K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$, indefinite, not central in general</td>
+<td>$H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\vec Q\rvert^{2}$, positive off zero</td>
+<td>$K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$, indefinite, not central in general</td>
 </tr>
 <tr>
 <td>algebraic norm subspace</td>
@@ -289,10 +289,10 @@ witness $\tilde P=(1+i)e_0$, $\tilde Q=e_0+e_1$ gives $(1+i)(e_0-e_1)$ outside a
 pairs with distinct arguments gave $100$ values outside all six. The algebraic norm is an exception of a definite
 kind: it is always a real quaternion, hence always in $\mathbb{H}_{\mathbb{B}}$, and never leaves it. The
 algebraic norm is
-$K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$, central exactly when
+$K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$, central exactly when
 $Q_0\overline{Q_k}\in i\mathbb{R}$ for each $k$; at $e_1$ it is $-e_0$ and at $e_1+ie_2$ it is $-2e_0$,
 both central, and at $e_0+e_1$ it is $-2e_1$, not central. The plain symmetric sesquilinear product is
-central-valued and its algebraic norm is $H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf{Q}\rvert^{2}$,
+central-valued and its algebraic norm is $H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\vec Q\rvert^{2}$,
 positive off the origin.
 <em>Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions</em>, <em>The Non-Central
 Algebraic norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra</em> and <em>The Krein Gram Matrix and the
@@ -310,9 +310,9 @@ reconstructed from the block.</p>
 <p>The values lying in no subspace read as the framework's criterion for what can be an observable: an object whose algebraic norm is not central cannot be counted, so a symmetric gauge product is a structure and not a quantity. The article's examples are the interpretation in one line: the minimal mixing element $\tilde Q = e_0 + e_1$ has the non-central algebraic norm $-2e_1$, while a pure vector direction has a central one, so the slightest mixing is enough to leave the class of what can be measured. Read on the split, the criterion is the same one that separates the gauge side from the state side.</p>
 <h2 id="summary">Summary</h2>
 <p>The symmetric quaternionic sesquilinear product has values in <strong>no one of the remarkable subspaces</strong> of the
-algebra: its value carries the scalar part $K$ and the vector part $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$
+algebra: its value carries the scalar part $K$ and the vector part $-P_0\overline{\vec Q}-\overline{Q_0}\vec P$
 side by side, and the real span of its values is the whole algebra. Its algebraic norm
-$\tilde Q\bullet\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ is
+$\tilde Q\bullet\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$ is
 central exactly when $Q_0\overline{Q_k}\in i\mathbb{R}$ for each $k$, in particular on the whole real
 vector subspace: at $e_1$ and at $e_1+ie_2$ it is the central value $-e_0$ and $-2e_0$, and the non-central
 witness is $e_0+e_1$, whose algebraic norm is $-2e_1$. The <strong>contrast with the plain symmetric sesquilinear
@@ -341,15 +341,15 @@ never a norm.</p>
 <td>the remarkable subspaces</td>
 </tr>
 <tr>
-<td>$\tilde P\bullet\tilde Q=[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$</td>
+<td>$\tilde P\bullet\tilde Q=[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})]-P_0\overline{\vec Q}-\overline{Q_0}\vec P$</td>
 <td>the value; in no subspace</td>
 </tr>
 <tr>
-<td>$K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$</td>
+<td>$K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$</td>
 <td>the Krein form; the scalar part of the value</td>
 </tr>
 <tr>
-<td>$\tilde Q\bullet\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$</td>
+<td>$\tilde Q\bullet\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$</td>
 <td>the algebraic norm; real element</td>
 </tr>
 <tr>
@@ -369,7 +369,7 @@ never a norm.</p>
 <td>the plain symmetric sesquilinear product; central and positive</td>
 </tr>
 <tr>
-<td>$H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf{Q}\rvert^{2}$</td>
+<td>$H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\vec Q\rvert^{2}$</td>
 <td>the positive algebraic norm of the state row</td>
 </tr>
 </tbody>

@@ -61,7 +61,7 @@ $$</p>
 <p>with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\bar A = a - \varepsilon a'$, norm $N(A) = A\bar A = a^2$, maximal ideal $\mathrm{M} = (\varepsilon)$, real submodule $R_{\mathbb{D}'}$ and infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$.</p>
 <h2 id="why-a-single-scale-and-a-single-nilpotent-factor">Why a Single Scale and a Single Nilpotent Factor</h2>
 <h3 id="the-counting">The Counting</h3>
-<p>The algebra $\mathbb{D}'_{\mathbb{R}}$ has real dimension two. The group of units is, by <em>Dual-Numbers Norm and Invertibility</em>, a semidirect product that is in fact a direct product,</p>
+<p>The algebra $\mathbb{D}'_{\mathbb{R}}$ has real dimension two. In this article the word <strong>unit</strong> carries the ring sense of the corpus: a <strong>unit</strong> of the algebra is an invertible element, one with $a\neq0$, and the <strong>group of units</strong> $(\mathbb{D}')^\times$ is the set of them. It is not the corpus's <strong>unit element</strong>, which is an element of norm one for the norm in view (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>); here the unit elements $N(A)=1$ are the subgroup $\{\pm1\}\cdot(1+\mathrm{M})$, a proper subset of the group of units. The group of units is, by <em>Dual-Numbers Norm and Invertibility</em>, a semidirect product that is in fact a direct product,</p>
 <p>$$
 (\mathbb{D}')^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +),
 $$</p>
@@ -102,6 +102,12 @@ $$</p>
 <h3 id="the-centrality-of-the-nilpotent">The Centrality of the Nilpotent</h3>
 <p>Because $\mathbb{D}'_R$ is commutative, every element is central, and in particular the nilpotent $\varepsilon$ is central and the shear factor $\exp(s\varepsilon) = 1 + s\varepsilon$ is central. The phase-like factor is central but <em>nilpotent</em>, so it cannot be extracted by a logarithm taking values in a torus. The centrality is what makes the order of the factors in the polar form immaterial here.</p>
 <h2 id="the-trichotomy-of-the-exponential">The Trichotomy of the Exponential</h2>
+<h3 id="the-word-as-exponentials">The Word as Exponentials</h3>
+<p>The word $A = r\,u\,e^{s\varepsilon}$ is a product of a scale, a sign and a shear, and the scale and the shear are exponentials:</p>
+<p>$$
+A = \exp(\ln\lvert a\rvert)\cdot u\cdot\exp(s\varepsilon) , \qquad u = \pm 1 , \qquad s = \frac{a'}{a} .
+$$</p>
+<p>The exponent of the scale is the real number $\ln\lvert a\rvert$, whose root is $1$ of square $+1$, the hyperbolic row below; the exponent of the shear is the parabolic angle $s$, whose root is the nilpotent $\varepsilon$ of square $0$, the parabolic row, and its exponential truncates, $\exp(s\varepsilon) = 1 + s\varepsilon$. The sign $u$ is discrete and is not an exponential. The algebra is commutative, so the three factors commute, the order is free, and the two exponents <strong>amalgamate into one</strong>, $A = \exp(\ln\lvert a\rvert + s\varepsilon)$, for an element of positive real part; the sign is the one component the exponential does not reach.</p>
 <p>Let $\nu$ be an element of a real associative algebra and consider the one-parameter group $t \mapsto \exp(t\nu)$. The behaviour of the group is governed by $\nu^2$.</p>
 <ul>
 <li><strong>Elliptic</strong> ($\nu^2 = -\mathrm{id}$ up to scale): the exponential is periodic, the group is compact, and it is conjugate to the circle $U(1)$. This is the complex case, with the phase angle modulo $2\pi$.</li>

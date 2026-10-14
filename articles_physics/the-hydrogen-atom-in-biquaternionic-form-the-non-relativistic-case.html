@@ -75,7 +75,7 @@ $$</p>
 = -\Big(\sum_k \hat p_k^{\,2}\Big)e_0
 = -\hat p^{\,2}e_0 ,
 $$</p>
-<p>because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $\hat p^{\,2}=\hat{\mathbf p}\cdot\hat{\mathbf p}=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and</p>
+<p>because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $\hat p^{\,2}=\hat p\cdot\hat p=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and</p>
 <p>$$
 \tilde p\,\tilde p^{\natural} = N(\tilde p) = -\tilde p^{\,2} = \hat p^{\,2}e_0 = -\hbar^2\nabla^2\,e_0 .
 $$</p>
@@ -83,21 +83,21 @@ $$</p>
 <p>$$
 \boxed{\;\tilde T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\tilde p^{\natural} = \frac{\hat p^{\,2}}{2m}e_0 . \;}
 $$</p>
-<p>The explicit minus sign is not decoration. The quaternion square of a pure vector is <strong>minus</strong> its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $e_k^2=-e_0$ — that gives the biquaternion norm $N(\tilde H)=h_0^2-|\mathbf h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_0$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.</p>
+<p>The explicit minus sign is not decoration. The quaternion square of a pure vector is <strong>minus</strong> its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $e_k^2=-e_0$ — that gives the biquaternion norm $N(\tilde H)=h_0^2-|\vec h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_0$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.</p>
 <h3 id="the-potential">The potential</h3>
 <p>The Coulomb potential is the central scalar</p>
 <p>$$
-\tilde V = V(r)\,e_0, \qquad V(r) = -\frac{\kappa}{r}, \qquad \kappa = \frac{Ze^2}{4\pi\epsilon_0} .
+\tilde\Phi = V(r)\,e_0, \qquad V(r) = -\frac{\kappa}{r}, \qquad \kappa = \frac{Ze^2}{4\pi\epsilon_0} .
 $$</p>
 <p>It lies in $\mathbb{M}_+$, and in fact in the centre $\mathbb{C}_{\mathbb{B}}$. Two honest remarks belong here. First, the $1/r$ form is put in by hand: the framework's Maxwell equation does produce the field of a point charge as an imaginary vector in $\mathbb{M}_+$, but the point-charge source is input, not derived. Second, the potential is a scalar and carries no vector part, so the framework's sector structure is not used by it; a vector-valued or spin-dependent coupling would be a different problem, and none is introduced here.</p>
 <h3 id="the-hamiltonian-and-its-sector">The Hamiltonian and its sector</h3>
 <p>Adding the two terms,</p>
 <p>$$
-\tilde H = \tilde T+\tilde V
+\tilde H = \tilde T+\tilde\Phi
 = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_0
 = h_0\,e_0, \qquad h_0 = -\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}.
 $$</p>
-<p>The Hamiltonian is Hermitian and lies in $\mathbb{M}_+$, and its vector part is zero: $\mathbf h=0$ in the general form $\tilde H=h_0e_0+i\mathbf h$. It is therefore <strong>central</strong>, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.</p>
+<p>The Hamiltonian is Hermitian and lies in $\mathbb{M}_+$, and its vector part is zero: $\vec h=0$ in the general form $\tilde H=h_0e_0+i\vec h$. It is therefore <strong>central</strong>, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.</p>
 <p>The generator of the Schrödinger equation is</p>
 <p>$$
 \tilde G = -\frac{i}{\hbar}\tilde H
@@ -107,7 +107,7 @@ $$</p>
 <h2 id="the-state-module-and-the-spinor-wave-function">The State Module and the Spinor Wave Function</h2>
 <p>The framework's states are spinors in a minimal left ideal $\mathbb{B}\tilde P\cong\mathbb{C}^2$. A position-space treatment requires a spinor <strong>field</strong>,</p>
 <p>$$
-\psi(t,\mathbf x)\in\mathbb{B}\tilde P \cong \mathbb{C}^2,
+\psi(t,\vec x)\in\mathbb{B}\tilde P \cong \mathbb{C}^2,
 $$</p>
 <p>a two-component object defined on the spatial coordinates of the material sector. This is an extension of the framework's quantum formalism, which the companion articles state for a single qubit, and it should be labelled as one: the position dependence is carried by the <strong>argument</strong> of the field, not by the algebra. The algebra acts on the internal two-dimensional index; the argument is external structure that the finite-dimensional algebra does not contain.</p>
 <p>Under the isomorphism $\mathsf{M}_2$ the field $\psi$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_k=\tfrac{\hbar}{2}ie_k$ act on its two components as $\tfrac{\hbar}{2}\sigma_k$, and the orbital operators $\tilde L_k=\hat L_k e_0$ act on the argument as $\hat L_k$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the <strong>scalar</strong> slot $e_0$; the spin operators occupy the <strong>vector</strong> slots $ie_k$. Because a scalar multiple of $e_0$ is central, the two families commute:</p>
@@ -187,7 +187,7 @@ R_{21}=\frac{1}{\sqrt{24}}\,r\,e^{-r/2}.
 $$</p>
 <p>The ground state is therefore</p>
 <p>$$
-\psi_{100}(\mathbf x) = \frac{1}{\sqrt{\pi a_0^3}}\,e^{-r/a_0}\,\chi_{m_s},
+\psi_{100}(\vec x) = \frac{1}{\sqrt{\pi a_0^3}}\,e^{-r/a_0}\,\chi_{m_s},
 \qquad E_1=-\frac{\kappa}{2a_0},
 $$</p>
 <p>a spinor field whose orbital factor is the familiar exponential and whose spin factor is any of the two idempotents $\tilde{\tilde\Pi}(\pm e_3)$. A complete eigenstate is the product $R_{nl}Y_l^m\chi_{m_s}$: the radial factor solves the radial equation, the angular factor is an eigenfunction of $\tilde L^2$ and $\tilde L_z$ in the scalar slot, and the spin factor is an idempotent of the vector slot. The eigenvalue is $E_n$, independent of $l$, $m$ and $m_s$.</p>
@@ -224,7 +224,7 @@ $$</p>
 </tr>
 <tr>
 <td>Wavefunction $\psi\in L^2(\mathbb{R}^3)\otimes\mathbb{C}^2$</td>
-<td>spinor field $\psi(\mathbf x)\in\mathbb{B}\tilde P$</td>
+<td>spinor field $\psi(\vec x)\in\mathbb{B}\tilde P$</td>
 <td>module</td>
 </tr>
 <tr>

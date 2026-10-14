@@ -72,7 +72,7 @@ $$
 \mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\},\qquad
 \mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, normalised so that $\mathrm{Tr}(e_0)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the potential and field strength are $\tilde A=i\phi/c\,e_0+\mathbf{A}$ and $\tilde F=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\tilde R$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.</p>
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, normalised so that $\mathrm{Tr}(e_0)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the potential and field strength are $\tilde A=i\phi/c\,e_0+\vec A$ and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\tilde R$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.</p>
 <h2 id="the-vacuum-state-in-the-framework">The Vacuum State in the Framework</h2>
 <p>The Fock space of a field is the direct sum of the symmetric or antisymmetric tensor powers of the one-particle space, and the <strong>vacuum</strong> $|0\rangle$ spans its degree-zero term:
 $$
@@ -88,15 +88,15 @@ $$
 $$
 the number operator is the idempotent
 $$
-\tilde N_{\mathrm{tr}}=\tilde\Upsilon_2\tilde\Upsilon_1=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_2\in\mathbb{M}_+,
+\tilde N_{\mathrm{tr}}=\tilde\Upsilon_2\tilde\Upsilon_1=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_-\in\mathbb{M}_+,
 $$
 so the <strong>vacuum projector</strong> is the complementary idempotent
 $$
-\vert 0\rangle\langle 0\vert=e_0-\tilde N_{\mathrm{tr}}=\tfrac12\big(e_0+ie_3\big)=\tilde\Pi_1\in\mathbb{M}_+.
+\vert 0\rangle\langle 0\vert=e_0-\tilde N_{\mathrm{tr}}=\tfrac12\big(e_0+ie_3\big)=\tilde\Pi_+\in\mathbb{M}_+.
 $$
-The vacuum state is therefore realized, for one mode, as a pure-state projector of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_0-2\tilde N_{\mathrm{tr}}=ie_3$. A vacuum expectation value of an observable $\tilde H\in\mathbb{M}_+$ is then the trace formula
+Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state projector of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_0-2\tilde N_{\mathrm{tr}}=ie_3$. A vacuum expectation value of an observable $\tilde H\in\mathbb{M}_+$ is then the trace formula
 $$
-\langle\tilde H\rangle_{0}=\mathrm{Tr}\big(|0\rangle\langle 0|\,\tilde H\big)=2\,\mathrm{Sc}\big(\tilde\Pi_1\tilde H\big),
+\langle\tilde H\rangle_{0}=\mathrm{Tr}\big(|0\rangle\langle 0|\,\tilde H\big)=2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde H\big),
 $$
 which is the Born rule of the informational sector specialized to the vacuum. This is the one place where the framework's vacuum is genuinely algebraic rather than transcribed.</p>
 <p><strong>The field vacuum is not.</strong> For a field, the vacuum is the $n=0$ term of a Fock space built from a module, and the companion article's finding applies unchanged: the Fock space is not a subalgebra of $\mathbb{B}$, and beyond one mode not even the operator algebra is. In particular the <strong>photon vacuum is not an element of $\mathbb{B}$</strong>, because there is no bosonic mode in the algebra at all: no pair $\tilde a,\tilde a^{\dagger}\in\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$. The electromagnetic vacuum is therefore the standard Fock vacuum of the mode algebra of <em>Canonical Quantization of the Biquaternion Maxwell Field</em>; the framework contributes the module on which it is built (the transverse polarization plane in the vector part of $\mathbb{M}_-$) and the notation, but no native ladder.</p>
@@ -105,14 +105,14 @@ which is the Born rule of the informational sector specialized to the vacuum. Th
 <p><strong>From the mode expansion.</strong> The free Maxwell potential expands in four covariant polarisations,
 $$
 \hat A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
-\Big(\hat a_r(\mathbf{k})\,\epsilon^{(r)}_\mu(\mathbf{k})\,e^{-ik\cdot x}
-+\hat a_r^{\dagger}(\mathbf{k})\,\epsilon^{(r)*}_\mu(\mathbf{k})\,e^{+ik\cdot x}\Big),
+\Big(\hat a_r(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,e^{-ik\cdot x}
++\hat a_r^{\dagger}(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,e^{+ik\cdot x}\Big),
 \qquad
-\big[\hat a_r(\mathbf{k}),\hat a_s^{\dagger}(\mathbf{k}')\big]=\zeta_r\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\mathbf{k}-\mathbf{k}'),
+\big[\hat a_r(\vec k),\hat a_s^{\dagger}(\vec k')\big]=\zeta_r\,\delta_{rs}\,(2\pi)^{3}\delta^{(3)}(\vec k-\vec k'),
 $$
-with $\zeta=(-1,+1,+1,+1)$ and $\omega_k=|\mathbf{k}|$ for the massless field. The normal-ordered Hamiltonian is
+with $\zeta=(-1,+1,+1,+1)$ and $\omega_k=|\vec k|$ for the massless field. The normal-ordered Hamiltonian is
 $$
-:\!\hat H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\zeta_r\,\omega_k\,\hat a_r^{\dagger}(\mathbf{k})\hat a_r(\mathbf{k}),
+:\!\hat H\!:\,=\sum_{r=0}^{3}\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\zeta_r\,\omega_k\,\hat a_r^{\dagger}(\vec k)\hat a_r(\vec k),
 $$
 and the constant discarded in passing to the normal-ordered form is the zero-point energy.</p>
 <p><strong>Its value.</strong> Reordering the modes produces, per mode, the contribution $\sum_r\zeta_r\,\tfrac12\hbar\omega_k$. Since
@@ -122,55 +122,55 @@ $$
 the zero-point constant of the covariant field is that of <strong>two</strong> transverse modes, $\hbar\omega_k$ per mode, and the free vacuum energy is the quartically divergent integral
 $$
 E_0=\sum_{r=0}^{3}\zeta_r\sum_{\text{modes}}\tfrac12\hbar\omega_k
-=2\,V\!\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\tfrac12\hbar c\,\lvert\mathbf{k}\rvert
+=2\,V\!\int\!\frac{d^{3}k}{(2\pi)^{3}}\,\tfrac12\hbar c\,\lvert\vec k\rvert
 \;\xrightarrow[\ \Lambda\ ]{}\;
 \frac{\hbar c\,\Lambda^{4}}{8\pi^{2}}\,V .
 $$
 The coefficient is the free-space density for two polarisations; the divergence is quartic and proportional to the volume $V$. This is the biquaternion transcription of the standard fact that the electromagnetic zero-point energy diverges as the fourth power of the cutoff. The Dirac parent is the mirror case: there the normal-ordering constant is <em>negative</em>,
 $$
-E_0^{\mathrm{D}}=-\,2V\!\int\!\frac{d^{3}p}{(2\pi)^{3}}\,E_{\mathbf p},
+E_0^{\mathrm{D}}=-\,2V\!\int\!\frac{d^{3}p}{(2\pi)^{3}}\,E_{\vec p},
 $$
 also quartically divergent, as that article records. The sign difference (positive for bosons, negative for the two fermion branches) is the standard one and is not removed by the framework.</p>
 <p><strong>The zero-point energy is a central scalar.</strong> In the framework the zero-point coefficient multiplies the identity $e_0$: it is a real number, hence an element of the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde\rho\mapsto\tilde U\tilde\rho\tilde U^{*}$ with $\tilde U=e^{-i\tilde Ht/\hbar}$, contributes only a phase that cancels. This is exactly the statement of <em>The Harmonic Oscillator in Biquaternionic Form</em>: the trace part $h_0$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.</p>
 <p>This gives the framework's interpretation of the vacuum energy, and it is the reason the Casimir effect is the right place to look for it. A <strong>constant</strong> central scalar is unobservable; but if the constant depends on an external parameter — here the plate separation $a$ — its gradient is a force. The Casimir force is precisely the gradient of a central scalar, and it is observable for that reason. The algebra does not make the zero-point energy observable; it makes the <em>variation</em> of a central scalar observable, and that is all the Casimir effect requires.</p>
 <h2 id="the-parallel-plate-configuration-and-the-divergent-sum">The Parallel-Plate Configuration and the Divergent Sum</h2>
 <p><strong>The configuration.</strong> Two perfectly conducting parallel plates of area $A$, separated by a distance $a$ along $e_3$, bound a region of the vacuum. The plates are idealised: they impose $E_\parallel=0$ and $B_\perp=0$ on their surfaces, which is a boundary condition on the field, not a property of the algebra. It should be said at the outset that <strong>the framework has no native description of a boundary</strong>: the free-field algebra of the companion articles is formulated on the whole of spacetime, and the conductors are external structure. What the framework does supply is the space in which the mode structure is counted, as the next section makes precise.</p>
-<p><strong>The modes.</strong> Between the plates the longitudinal wavevector is quantized, $k_3=n\pi/a$, and the transverse wavevector $\mathbf{k}_\perp$ is continuous. The electromagnetic modes separate into
+<p><strong>The modes.</strong> Between the plates the longitudinal wavevector is quantized, $k_3=n\pi/a$, and the transverse wavevector $\vec k_\perp$ is continuous. The electromagnetic modes separate into
 $$
 \text{TE}_n:\ n=1,2,\dots,\qquad
 \text{TM}_n:\ n=1,2,\dots,\qquad
 \text{TEM}:\ n=0,
 $$
-each with frequency $\omega=c\sqrt{\mathbf{k}_\perp^{2}+(\pi n/a)^{2}}$. The TE and TM families each carry <strong>one</strong> polarization for every $n\ge1$; the single $n=0$ mode is the transverse electromagnetic (TEM) mode with $\omega=c|\mathbf{k}_\perp|$, independent of $a$. The bare zero-point energy per unit area of the plates is therefore
+each with frequency $\omega=c\sqrt{\vec k_\perp^{2}+(\pi n/a)^{2}}$. The TE and TM families each carry <strong>one</strong> polarization for every $n\ge1$; the single $n=0$ mode is the transverse electromagnetic (TEM) mode with $\omega=c|\vec k_\perp|$, independent of $a$. The bare zero-point energy per unit area of the plates is therefore
 $$
 \frac{E(a)}{A}=\frac{\hbar c}{2}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}
-\Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\mathbf{k}_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
-\;+\;|\mathbf{k}_\perp|\,\Bigg].
+\Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\vec k_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
+\;+\;|\vec k_\perp|\,\Bigg].
 $$</p>
-<p><strong>Why it diverges, and where.</strong> The factor $2$ multiplies the two polarization families; the last term is the $a$-independent TEM mode. The sum $\sum_{n\ge1}$ and the integral over $\mathbf{k}_\perp$ both diverge at large arguments, and the divergence is not a defect of the notation: a momentum cutoff $\Lambda$ on the free vacuum gives, as in the previous section, an energy density $\hbar c\,\Lambda^{4}/(8\pi^{2})$ per unit volume, so the bare zero-point energy of any region of volume $V$ diverges as $\hbar c\,\Lambda^{4}V/(8\pi^{2})$, together with surface terms of order $\Lambda^{2}$ and a possible logarithm. The quantity in the bare zero-point sum above is not a number; it is a cutoff-dependent expression.</p>
+<p><strong>Why it diverges, and where.</strong> The factor $2$ multiplies the two polarization families; the last term is the $a$-independent TEM mode. The sum $\sum_{n\ge1}$ and the integral over $\vec k_\perp$ both diverge at large arguments, and the divergence is not a defect of the notation: a momentum cutoff $\Lambda$ on the free vacuum gives, as in the previous section, an energy density $\hbar c\,\Lambda^{4}/(8\pi^{2})$ per unit volume, so the bare zero-point energy of any region of volume $V$ diverges as $\hbar c\,\Lambda^{4}V/(8\pi^{2})$, together with surface terms of order $\Lambda^{2}$ and a possible logarithm. The quantity in the bare zero-point sum above is not a number; it is a cutoff-dependent expression.</p>
 <p><strong>The physical subtraction.</strong> The Casimir energy is not the bare sum but the <em>change</em> in the zero-point energy produced by the plates. In the mode-density formulation this is
 $$
 \frac{E_{\mathrm{cas}}(a)}{A}
 =\frac{\hbar c}{2}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}
-\Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\mathbf{k}_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
-\;-\;2\,\frac{a}{\pi}\int_{0}^{\infty}dq\,\sqrt{\mathbf{k}_\perp^{2}+q^{2}}\,\Bigg],
+\Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\vec k_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
+\;-\;2\,\frac{a}{\pi}\int_{0}^{\infty}dq\,\sqrt{\vec k_\perp^{2}+q^{2}}\,\Bigg],
 $$
 in which the continuum integral $2\,\frac{a}{\pi}\int_0^\infty dq\,(\cdots)$ is the free-space zero-point energy per unit length at the same transverse momentum — the factor $a/\pi$ is the mode density of the discrete $k_3=\pi n/a$, and without it the two terms are not commensurable — and the TEM term has been dropped because it is $a$-independent and its contribution to the force vanishes. The subtraction is what the physical statement "the energy of the vacuum in the bounded region minus the energy of the same vacuum without the plates" means, and it is the subtraction that removes the volume divergence: the leading $\Lambda^{4}$ term is identical in the two configurations and cancels. What survives of the surface terms is an $a$-independent plate self-energy — a constant in $a$ — and, beyond it, a finite remainder that depends on $a$.</p>
 <p>It has to be said clearly that this subtracted expression is still not an evaluable expression term by term. The two terms separately diverge; only their difference is finite, and it must be defined by a regularisation. The rest of the article evaluates that difference by two routes, and this is where the well-known trap lies.</p>
 <p><strong>The Euler–Maclaurin route does not close the problem by itself.</strong> A natural attempt is to expand the sum in this subtracted expression by the Euler–Maclaurin formula. That expansion correctly exhibits the divergence structure — the cutoff powers $\Lambda^{4},\Lambda^{2}$ and the surface terms. But for the summand
 $$
-g(x)=\sqrt{\mathbf{k}_\perp^{2}+\Big(\frac{\pi x}{a}\Big)^{2}},
+g(x)=\sqrt{\vec k_\perp^{2}+\Big(\frac{\pi x}{a}\Big)^{2}},
 $$
 which is <strong>even</strong> in $x$ and <strong>linearly growing</strong>, the finite part produced by the naive form of Euler–Maclaurin is not the physical one. The reason is exact and worth stating: the finite remainder is sensitive to (i) the branch cut of $g$ in the complex plane and (ii) the discreteness (the floor) hidden in the mode count, neither of which the derivative-at-zero terms see. Applied naively, the odd-derivative terms all vanish and the formula returns an $a$-independent finite part — a spurious zero for the force. This is recorded here as a <strong>finding, not smoothed over</strong>: the divergence bookkeeping by Euler–Maclaurin is valid, but the finite Casimir term must be obtained from a regularisation whose continuation is controlled, which is what the next two sections do. The two routes that follow are independent of each other and agree.</p>
 <h2 id="first-route-the-spectral-zeta-function">First Route: the Spectral Zeta Function</h2>
 <p>The spectral zeta function of the Dirichlet-type problem is
 $$
 \zeta_3(s)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
-\Big(\mathbf{k}_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}\Big)^{-s},
+\Big(\vec k_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}\Big)^{-s},
 $$
 defined for $\mathrm{Re}\,s>\tfrac32$ and continued from there. The transverse integral is elementary,
 $$
-\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,\big(\mathbf{k}_\perp^{2}+m^{2}\big)^{-s}
+\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,\big(\vec k_\perp^{2}+m^{2}\big)^{-s}
 =\frac{1}{4\pi}\,\frac{\Gamma(s-1)}{\Gamma(s)}\,m^{2-2s},
 $$
 so with $m=\pi n/a$,
@@ -199,7 +199,7 @@ This is the Casimir energy per unit area of a <strong>single</strong> massless s
 <p><strong>The heat kernel.</strong> For the Dirichlet-type problem the heat kernel per unit area is
 $$
 K(t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
-e^{-t(\mathbf{k}_\perp^{2}+(\pi n/a)^{2})}
+e^{-t(\vec k_\perp^{2}+(\pi n/a)^{2})}
 =\frac{1}{4\pi t}\sum_{n=1}^{\infty}e^{-(\pi n/a)^{2}t},
 $$
 and the free-space heat kernel, which is its $a\to\infty$ limit, is
@@ -239,12 +239,12 @@ $$
 which the zeta route reproduces from $\zeta(-1)=-\tfrac1{12}$ and the heat-kernel route from $\zeta(2)$. Both the three-dimensional and the one-dimensional results were recomputed from the definitions, and the numerical value of the three-dimensional sum was confirmed against the closed form (details in the companion). The reason to check two cases is the discipline of the corpus: a formula that agrees with the case that suggested it is not thereby verified.</p>
 <h2 id="the-polarizations-and-the-factor-of-two">The Polarizations and the Factor of Two</h2>
 <p>The two routes above computed the <strong>Dirichlet-scalar</strong> energy for a single massless scalar degree of freedom. The electromagnetic Casimir energy is <strong>twice</strong> it, and this factor is where the classic error lives. It has three equivalent descriptions, and they must be kept distinct.</p>
-<p><strong>From the mode count.</strong> In the bare zero-point sum above the factor $2$ multiplies $\sum_{n\ge1}$ and stands for the TE and TM families, one polarization each, both with $n\ge1$. The single remaining mode, the $n=0$ TEM mode, has frequency $c|\mathbf{k}_\perp|$ independent of $a$ and contributes nothing to the force. The $a$-dependent part of the electromagnetic zero-point sum is therefore exactly <strong>two</strong> Dirichlet-type sums, hence
+<p><strong>From the mode count.</strong> In the bare zero-point sum above the factor $2$ multiplies $\sum_{n\ge1}$ and stands for the TE and TM families, one polarization each, both with $n\ge1$. The single remaining mode, the $n=0$ TEM mode, has frequency $c|\vec k_\perp|$ independent of $a$ and contributes nothing to the force. The $a$-dependent part of the electromagnetic zero-point sum is therefore exactly <strong>two</strong> Dirichlet-type sums, hence
 $$
 \frac{E_{\mathrm{EM}}}{A}=2\cdot\Big(-\frac{\pi^{2}\hbar c}{1440\,a^{3}}\Big)=-\frac{\pi^{2}\hbar c}{720\,a^{3}} .
 $$</p>
 <p><strong>From the indefinite metric.</strong> In the covariant mode algebra the four polarisations carry the metric $\zeta=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\zeta_r\,\tfrac12\hbar\omega=2\cdot\tfrac12\hbar\omega$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\hbar\omega$, <strong>double</strong> the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.</p>
-<p><strong>From the algebra.</strong> Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_0,e_1,e_2,e_3\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $N(\tilde{Q})=|\mathbf{q}|^{2}-q_0^{2}$ of $\mathbb{M}_-$, as <em>The Photon in Biquaternionic Form</em> establishes. The <strong>two physical polarisations</strong> are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\hat{\mathbf{k}}$, with projector $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is <strong>not</strong> native is the <strong>removal</strong> of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.</p>
+<p><strong>From the algebra.</strong> Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_0,e_1,e_2,e_3\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $N(\tilde{Q})=|\vec q|^{2}-q_0^{2}$ of $\mathbb{M}_-$, as <em>The Photon in Biquaternionic Form</em> establishes. The <strong>two physical polarisations</strong> are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\hat k$, with projector $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is <strong>not</strong> native is the <strong>removal</strong> of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.</p>
 <p>The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\zeta_r=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.</p>
 <h2 id="the-casimir-force-sign-convention-and-two-verifications">The Casimir Force: Sign Convention and Two Verifications</h2>
 <p><strong>Sign convention.</strong> Let $E(a)$ be the vacuum energy of the bounded region at separation $a$, per unit area. The force per unit area on a plate is
@@ -280,12 +280,12 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 <tr>
 <td>Vacuum state (one fermionic mode)</td>
 <td>Native</td>
-<td>idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$; trace formula</td>
+<td>idempotent $\tilde\Pi_+=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$; trace formula</td>
 </tr>
 <tr>
 <td>Vacuum expectation values (one mode)</td>
 <td>Native</td>
-<td>$\langle\tilde H\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_1\tilde H)$</td>
+<td>$\langle\tilde H\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$</td>
 </tr>
 <tr>
 <td>Fermion parity of the vacuum</td>
@@ -300,7 +300,7 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 <tr>
 <td>Two physical transverse polarisations</td>
 <td>Native</td>
-<td>$\hat{\mathbf{k}}$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$</td>
+<td>$\hat k$-orthogonal plane in $\mathrm{Vect}(\mathbb{M}_-)$</td>
 </tr>
 <tr>
 <td>Indefinite metric $\zeta=(-1,+1,+1,+1)$</td>
@@ -374,7 +374,7 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The <strong>vacuum state</strong> of the biquaternion framework is not a biquaternion. For a <strong>single fermionic mode</strong> it is genuinely algebraic: the vacuum projector is the idempotent $|0\rangle\langle 0|=\tilde\Pi_1=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_1\tilde H)$. For a <strong>field</strong> it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$.</p>
+<p>The <strong>vacuum state</strong> of the biquaternion framework is not a biquaternion. For a <strong>single fermionic mode</strong> it is genuinely algebraic: the vacuum projector is the idempotent $|0\rangle\langle 0|=\tilde\Pi_+=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$. For a <strong>field</strong> it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$.</p>
 <p>The <strong>zero-point energy</strong> of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_0$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.</p>
 <p>That remainder was obtained by two independent regularisations. The <strong>spectral zeta function</strong> route continues $\zeta_3(s)$ from $s>\tfrac32$ through the pole of $\zeta(2s-2)$ at $s=\tfrac32$ to $s=-\tfrac12$, and gives, for one Dirichlet-type scalar degree of freedom, $-{\pi^{2}\hbar c}/({1440\,a^{3}})$. The <strong>heat-kernel</strong> route uses the Jacobi modular relation to write the exact difference between the bounded and free heat kernels, isolates the Casimir part as the exponentially small "winding" sum, and integrates it to the same value using $\zeta(4)=\pi^{4}/90$. The two routes use different special values and different manipulations; they agree.</p>
 <p>The <strong>electromagnetic</strong> result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\hbar c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\zeta=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\zeta$ with the biquaternion norm of the material sector $\mathbb{M}_-$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.</p>
@@ -426,7 +426,7 @@ $$
 <td>One-mode number operator (idempotent)</td>
 </tr>
 <tr>
-<td>$\vert 0\rangle\langle 0\vert=\tilde\Pi_1=\tfrac12(e_0+ie_3)$</td>
+<td>$\vert 0\rangle\langle 0\vert=\tilde\Pi_+=\tfrac12(e_0+ie_3)$</td>
 <td>One-mode vacuum projector (idempotent in $\mathbb{M}_+$)</td>
 </tr>
 <tr>
@@ -443,10 +443,10 @@ $$
 </tr>
 <tr>
 <td>$\zeta=(-1,+1,+1,+1)$</td>
-<td>Indefinite metric; biquaternion norm $N(\tilde{Q})=\lvert\mathbf{q}\rvert^2-q_0^2$ of $\mathbb{M}_-$</td>
+<td>Indefinite metric; biquaternion norm $N(\tilde{Q})=\lvert\vec q\rvert^2-q_0^2$ of $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$\hat{\mathbf{k}}$</td>
+<td>$\hat k$</td>
 <td>Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\hat k_i\hat k_j$</td>
 </tr>
 <tr>
@@ -458,12 +458,12 @@ $$
 <td>Plate separation; mode index; quantized longitudinal wavevector</td>
 </tr>
 <tr>
-<td>$\mathbf{k}_\perp$</td>
+<td>$\vec k_\perp$</td>
 <td>Continuous transverse wavevector</td>
 </tr>
 <tr>
-<td>$\omega=c\sqrt{\mathbf{k}_\perp^2+(\pi n/a)^2}$</td>
-<td>Mode frequency; $\omega=c\lvert\mathbf{k}_\perp\rvert$ for the $n=0$ TEM mode</td>
+<td>$\omega=c\sqrt{\vec k_\perp^2+(\pi n/a)^2}$</td>
+<td>Mode frequency; $\omega=c\lvert\vec k_\perp\rvert$ for the $n=0$ TEM mode</td>
 </tr>
 <tr>
 <td>$E(a)$, $E_{\mathrm{cas}}$</td>

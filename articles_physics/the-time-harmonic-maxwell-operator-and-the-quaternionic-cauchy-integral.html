@@ -64,26 +64,26 @@
 $$</p>
 <p>which is the quantity the first Maxwell equation carries. With charges and currents present, and with the divergence equations kept explicitly as the source contains them, the time-harmonic Maxwell system is</p>
 <p>$$
-\mathrm{rot}\,\mathbf{H}=\sigma\mathbf{E}+\mathbf{j},
+\mathrm{rot}\,\vec H=\sigma\vec E+\vec j,
 \qquad
-\mathrm{rot}\,\mathbf{E}=i\omega\mu\mathbf{H},
+\mathrm{rot}\,\vec E=i\omega\mu\vec H,
 \qquad
-\mathrm{div}\,\mathbf{E}=\frac{\rho}{\epsilon},
+\mathrm{div}\,\vec E=\frac{\rho}{\epsilon},
 \qquad
-\mathrm{div}\,\mathbf{H}=0 .
+\mathrm{div}\,\vec H=0 .
 \tag{1}
 $$</p>
-<p>The fourth equation is not independent: taking the divergence of the second shows $\mathrm{div}\,\mathbf{H}=0$, and taking the divergence of the first gives the time-harmonic continuity equation</p>
+<p>The fourth equation is not independent: taking the divergence of the second shows $\mathrm{div}\,\vec H=0$, and taking the divergence of the first gives the time-harmonic continuity equation</p>
 <p>$$
-\mathrm{div}\,\mathbf{j}-i\omega\rho=0 ,
+\mathrm{div}\,\vec j-i\omega\rho=0 ,
 \tag{2}
 $$</p>
-<p>which is what fixes the sources, not the fields. Two remarks separate this system from the ones already in the series. First, no magnetoelectric coupling appears: the constitutive relations are the ordinary $\mathbf{D}=\epsilon\mathbf{E}$ and $\mathbf{B}=\mu\mathbf{H}$, and the second equation of $(1)$ has no $\mathrm{rot}\,\mathbf{H}$ term on its right. Second, the conduction is not a source but a part of the medium: absorbing $\sigma_*$ into $\sigma$ makes the medium lossy while leaving the shape of the system unchanged.</p>
+<p>which is what fixes the sources, not the fields. Two remarks separate this system from the ones already in the series. First, no magnetoelectric coupling appears: the constitutive relations are the ordinary $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$, and the second equation of $(1)$ has no $\mathrm{rot}\,\vec H$ term on its right. Second, the conduction is not a source but a part of the medium: absorbing $\sigma_*$ into $\sigma$ makes the medium lossy while leaving the shape of the system unchanged.</p>
 <p>Eliminating one field in the usual way gives the <strong>Helmholtz reduction</strong>. Applying the curl to the second equation of $(1)$ and using the first, and then using $\mathrm{rot}\,\mathrm{rot}=\mathrm{grad}\,\mathrm{div}-\Delta$, the two complex amplitudes satisfy the homogeneous Helmholtz equations wherever the sources vanish,</p>
 <p>$$
-\Delta\mathbf{E}+\lambda\mathbf{E}=0,
+\Delta\vec E+\lambda\vec E=0,
 \qquad
-\Delta\mathbf{H}+\lambda\mathbf{H}=0,
+\Delta\vec H+\lambda\vec H=0,
 \qquad
 \lambda:=i\omega\mu\sigma_*+\omega^2\mu\epsilon ,
 \tag{3}
@@ -101,12 +101,12 @@ k=\omega\sqrt{\epsilon\mu}=\frac{\omega}{c},
 c=\frac{1}{\sqrt{\epsilon\mu}} ,
 $$</p>
 <p>and $\alpha=k$ is the ordinary medium wavenumber of <em>Electromagnetism in Media — The Local Complex Structure at Work</em>. The lossy case is therefore not a new theory but the same theory with a complex wavenumber, and every statement below is written for the complex $\alpha$ with the lossless case recovered by $\alpha\to k$.</p>
-<p>One property of the sourceless system is worth recording because it is what makes the transcription into the function theory possible at all: the fields of a solution with $\mathbf{j}=0$ and $\rho=0$ are transverse,</p>
+<p>One property of the sourceless system is worth recording because it is what makes the transcription into the function theory possible at all: the fields of a solution with $\vec j=0$ and $\rho=0$ are transverse,</p>
 <p>$$
-\mathrm{div}\,\mathbf{E}=\mathrm{div}\,\mathbf{H}=0 ,
+\mathrm{div}\,\vec E=\mathrm{div}\,\vec H=0 ,
 \tag{4}
 $$</p>
-<p>so that the curl in the first two equations of $(1)$ can be replaced by the full Cauchy–Riemann operator. A remark belongs here, because the neighbouring statement is easy to make wrongly. For a single plane wave the electric and magnetic amplitudes are orthogonal as well as transverse, and orthogonality is sometimes recorded as a property of the solutions of the time-harmonic system. It is not a pointwise property of a general solution: for a superposition of two plane waves of the same wavenumber the scalar product $\langle\mathbf{E},\mathbf{H}\rangle$ is generally non-zero, because it is bilinear in the two amplitudes and vanishes only for the single-wave configurations, while $(4)$ holds for every solution. What carries the structure below is therefore the operator identity $(5)$ and the transversality $(4)$, not a pointwise relation between the two fields.</p>
+<p>so that the curl in the first two equations of $(1)$ can be replaced by the full Cauchy–Riemann operator. A remark belongs here, because the neighbouring statement is easy to make wrongly. For a single plane wave the electric and magnetic amplitudes are orthogonal as well as transverse, and orthogonality is sometimes recorded as a property of the solutions of the time-harmonic system. It is not a pointwise property of a general solution: for a superposition of two plane waves of the same wavenumber the scalar product $\langle\vec E,\vec H\rangle$ is generally non-zero, because it is bilinear in the two amplitudes and vanishes only for the single-wave configurations, while $(4)$ holds for every solution. What carries the structure below is therefore the operator identity $(5)$ and the transversality $(4)$, not a pointwise relation between the two fields.</p>
 <h2 id="the-quaternionic-maxwell-operator">The Quaternionic Maxwell Operator</h2>
 <p>The spatial operator is the Moisil–Theodoresco operator of the series,</p>
 <p>$$
@@ -114,11 +114,11 @@ D_3=e_1\partial_1+e_2\partial_2+e_3\partial_3,
 \qquad
 D_3^2=-\Delta ,
 $$</p>
-<p>and its action on a purely vectorial biquaternion is the identity that carries the whole transcription. For a pure vector $\mathbf{f}$,</p>
+<p>and its action on a purely vectorial biquaternion is the identity that carries the whole transcription. For a pure vector $\vec f$,</p>
 <p>$$
-D_3\mathbf{f}=-\mathrm{div}\,\mathbf{f}+\mathrm{rot}\,\mathbf{f},
+D_3\vec f=-\mathrm{div}\,\vec f+\mathrm{rot}\,\vec f,
 \qquad\text{so}\qquad
-D_3\mathbf{f}=\mathrm{rot}\,\mathbf{f}\quad\text{whenever }\mathrm{div}\,\mathbf{f}=0 .
+D_3\vec f=\mathrm{rot}\,\vec f\quad\text{whenever }\mathrm{div}\,\vec f=0 .
 \tag{5}
 $$</p>
 <p>The curl is therefore the restriction of the Cauchy–Riemann operator to the divergence-free vectors, and a first-order system in curls can be written as a first-order quaternionic system. This is the step that puts the time-harmonic Maxwell system inside the function theory of $D_3$.</p>
@@ -129,14 +129,14 @@ N:=\begin{pmatrix} D_3 & -i\omega\mu \\[2pt] -\sigma & D_3 \end{pmatrix},
 N:\ \mathbb{B}^2\longrightarrow\mathbb{B}^2 .
 \tag{6}
 $$</p>
-<p>Its action is transparent: on a pair $(\mathbf{E},\mathbf{H})$,</p>
+<p>Its action is transparent: on a pair $(\vec E,\vec H)$,</p>
 <p>$$
-N(\mathbf{E},\mathbf{H})
-=\bigl(D_3\mathbf{E}-i\omega\mu\mathbf{H},\ D_3\mathbf{H}-\sigma\mathbf{E}\bigr)
-=\Bigl(-\frac{\rho}{\epsilon},\ \mathbf{j}\Bigr),
+N(\vec E,\vec H)
+=\bigl(D_3\vec E-i\omega\mu\vec H,\ D_3\vec H-\sigma\vec E\bigr)
+=\Bigl(-\frac{\rho}{\epsilon},\ \vec j\Bigr),
 \tag{7}
 $$</p>
-<p>the second equality being $(5)$ applied to each component and the system $(1)$ used in the form $D_3\mathbf{E}-\mathrm{rot}\,\mathbf{E}=-\rho/\epsilon$ and $D_3\mathbf{H}-\mathrm{rot}\,\mathbf{H}=\mathbf{j}$. On the sourceless system, therefore, the time-harmonic fields are exactly the pairs annihilated by $N$. On the pairs of <strong>divergence-free</strong> vectors, $D_3$ acts as the curl, and the restriction of $N$ to those pairs is the matrix of the curl system,</p>
+<p>the second equality being $(5)$ applied to each component and the system $(1)$ used in the form $D_3\vec E-\mathrm{rot}\,\vec E=-\rho/\epsilon$ and $D_3\vec H-\mathrm{rot}\,\vec H=\vec j$. On the sourceless system, therefore, the time-harmonic fields are exactly the pairs annihilated by $N$. On the pairs of <strong>divergence-free</strong> vectors, $D_3$ acts as the curl, and the restriction of $N$ to those pairs is the matrix of the curl system,</p>
 <p>$$
 N\big|_{\mathrm{div}=0}=\begin{pmatrix} \mathrm{rot} & -i\omega\mu \\[2pt] -\sigma & \mathrm{rot} \end{pmatrix},
 $$</p>
@@ -148,7 +148,7 @@ N^{\dagger}=\begin{pmatrix} D_3 & i\omega\mu \\[2pt] \sigma & D_3 \end{pmatrix},
 \tag{8}
 $$</p>
 <p>as a direct computation with $D_3^2=-\Delta$, with the off-diagonal cross terms cancelling because the coefficients are scalars and commute with $D_3$. The square of the quaternionic Maxwell operator is thus a <strong>scalar</strong> Helmholtz operator, exactly as the square of the Dirac operator is a scalar d'Alembertian — the operator is of Dirac type, and $(8)$ is the factorisation on which the function theory rests. That factorisation is what the physical operator lacks: the vector Helmholtz operator is not the square of a first-order operator with scalar symbol, which is why no analogue of the Cauchy kernel exists for the curl system directly, and why the detour through $N$ is what makes one available.</p>
-<p>The relation between the two operators is not merely a containment. Written in matrix-vector form, the time-harmonic system is $M(\mathbf{E},\mathbf{H})=0$ on solenoidal pairs, and $N$ restricted to those pairs has the same null-set; but the restriction of $N$ to all pairs is the object with the scalar square $(8)$, and it is by working there that the integral theory is built. This is the generalisation strategy stated in the introduction: the general operator is the tool, and the physical operator is recovered as a restriction.</p>
+<p>The relation between the two operators is not merely a containment. Written in matrix-vector form, the time-harmonic system is $M(\vec E,\vec H)=0$ on solenoidal pairs, and $N$ restricted to those pairs has the same null-set; but the restriction of $N$ to all pairs is the object with the scalar square $(8)$, and it is by working there that the integral theory is built. This is the generalisation strategy stated in the introduction: the general operator is the tool, and the physical operator is recovered as a restriction.</p>
 <h2 id="the-diagonalisation-and-the-two-conjugate-function-theories">The Diagonalisation and the Two Conjugate Function Theories</h2>
 <p>The scalar square $(8)$ already says that a pair annihilated by $N$ is metaharmonic, that is, a solution of $(\Delta+\lambda)I_2$. The sharper statement is that $N$ is, by a similarity, a <strong>direct sum of two first-order operators</strong>, and that the two are conjugate. With $\alpha$ a square root of $\lambda$ and</p>
 <p>$$
@@ -157,13 +157,13 @@ b:=\frac{i\omega\mu}{\alpha},
 $$</p>
 <p>form the two combinations</p>
 <p>$$
-\Phi:=\mathbf{E}+b\,\mathbf{H},
+\Phi:=\vec E+b\,\vec H,
 \qquad
-\Psi:=\mathbf{E}-b\,\mathbf{H},
+\Psi:=\vec E-b\,\vec H,
 \qquad
-\mathbf{E}=\tfrac12(\Phi+\Psi),
+\vec E=\tfrac12(\Phi+\Psi),
 \qquad
-\mathbf{H}=\frac{1}{2b}(\Phi-\Psi).
+\vec H=\frac{1}{2b}(\Phi-\Psi).
 \tag{10}
 $$</p>
 <p>Then the change of variables $(10)$ conjugates $N$ to a diagonal operator:</p>
@@ -183,7 +183,7 @@ $$</p>
 \bigl(D_3+\alpha\bigr)\Psi=0 ,
 \tag{12}
 $$</p>
-<p>and with sources they read $(D_3-\alpha)\Phi=-\rho/\epsilon+b\,\mathbf{j}$ and $(D_3+\alpha)\Psi=-\rho/\epsilon-b\,\mathbf{j}$, the pair of scalar equations into which $(7)$ factors.</p>
+<p>and with sources they read $(D_3-\alpha)\Phi=-\rho/\epsilon+b\,\vec j$ and $(D_3+\alpha)\Psi=-\rho/\epsilon-b\,\vec j$, the pair of scalar equations into which $(7)$ factors.</p>
 <p>Each of equations $(12)$ is an equation of the shifted or <strong>$\alpha$-hyperholomorphic</strong> type — the class $\ker(D_3\mp\alpha)$ — whose function theory is the subject of <em>Biquaternion Regular Functions</em> and its physics companion. The operators $D_3-\alpha$ and $D_3+\alpha$ are the <strong>mutually conjugate</strong> Cauchy–Riemann operators of the paper, and their squares are the scalar Helmholtz operators of opposite sign,</p>
 <p>$$
 -(D_3-\alpha)(D_3+\alpha)=-(D_3+\alpha)(D_3-\alpha)=\Delta+\alpha^2 ,
@@ -198,13 +198,13 @@ $$</p>
 \tag{14}
 $$</p>
 <p>The correspondence is <strong>one-to-one</strong>, and it is this, not the mere rewriting of the curl equations, that the article records: a time-harmonic electromagnetic field in a homogeneous medium is the same object as a pair of mutually conjugate hyperholomorphic functions, and the map between the two descriptions is the explicit matrix $C$ of $(11)$. Every property of the pair — the Cauchy integral formula, the mean value property, the removable singularities — is then a property of the field, and every operation on the field has an interpretation in the function theory. The value of the quaternionic formulation is exactly this transfer, and it is why the source insists that the general operator is worth more than the physical one.</p>
-<p>The lossless normalised variables of the chiral article are the special case $\sigma_*=0$, and they are worth spelling out because they connect the present article to the rest of the series. With $\tilde{\mathbf{E}}=\mathbf{E}/\sqrt{\mu}$ and $\tilde{\mathbf{H}}=\mathbf{H}/\sqrt{\epsilon}$ and $\sigma_*=0$ one has $\alpha=k$, the coherence factor $(9)$ is $b=i\sqrt{\mu/\epsilon}=iZ$, the impedance, and $(10)$ becomes, up to the common factor $\sqrt{\mu}$,</p>
+<p>The lossless normalised variables of the chiral article are the special case $\sigma_*=0$, and they are worth spelling out because they connect the present article to the rest of the series. With $\tilde{\vec E}=\vec E/\sqrt{\mu}$ and $\tilde{\vec H}=\vec H/\sqrt{\epsilon}$ and $\sigma_*=0$ one has $\alpha=k$, the coherence factor $(9)$ is $b=i\sqrt{\mu/\epsilon}=iZ$, the impedance, and $(10)$ becomes, up to the common factor $\sqrt{\mu}$,</p>
 <p>$$
-\Phi\propto\tilde{\mathbf{E}}+i\tilde{\mathbf{H}},
+\Phi\propto\tilde{\vec E}+i\tilde{\vec H},
 \qquad
-\Psi\propto\tilde{\mathbf{E}}-i\tilde{\mathbf{H}},
+\Psi\propto\tilde{\vec E}-i\tilde{\vec H},
 $$</p>
-<p>which are precisely the two circularly polarised combinations $\Phi,\Psi$ of the chiral reduction at $\beta=0$. The Beltrami vector form follows from $(5)$: on a pure vector, $(D_3\mp\alpha)\mathbf{f}=0$ is $\mathrm{rot}\,\mathbf{f}=\pm\alpha\mathbf{f}$ together with the divergence condition, so $(12)$ is the pair of Beltrami equations of the ordinary medium, and the classical vector form is recovered from the quaternionic one. The reformulation is thus the $\beta=0$ case of the chiral reduction of the series, with the function theory attached, and it is the function theory — not the vector form — that is new.</p>
+<p>which are precisely the two circularly polarised combinations $\Phi,\Psi$ of the chiral reduction at $\beta=0$. The Beltrami vector form follows from $(5)$: on a pure vector, $(D_3\mp\alpha)\vec f=0$ is $\mathrm{rot}\,\vec f=\pm\alpha\vec f$ together with the divergence condition, so $(12)$ is the pair of Beltrami equations of the ordinary medium, and the classical vector form is recovered from the quaternionic one. The reformulation is thus the $\beta=0$ case of the chiral reduction of the series, with the function theory attached, and it is the function theory — not the vector form — that is new.</p>
 <h2 id="the-helmholtz-null-set-as-two-rotated-copies-of-the-maxwell-null-set">The Helmholtz Null-Set as Two Rotated Copies of the Maxwell Null-Set</h2>
 <p>There is a second structural theorem, which the source states for the Helmholtz null-set. Let</p>
 <p>$$
@@ -251,7 +251,7 @@ $$</p>
 (D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=\delta ,
 \tag{19}
 $$</p>
-<p>the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\Theta_\alpha=(\Delta+\alpha^2)\Theta_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-\mathbf{x}/(4\pi\lvert\mathbf{x}\rvert^3)$ of the unshifted $D_3$.</p>
+<p>the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\Theta_\alpha=(\Delta+\alpha^2)\Theta_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-\vec x/(4\pi\lvert\vec x\rvert^3)$ of the unshifted $D_3$.</p>
 <p>The kernel of the Maxwell operator is the same object carried through the rotation $(11)$. Conjugating the diagonal kernel by $C$,</p>
 <p>$$
 K_N:=C^{-1}\begin{pmatrix} \mathcal{K}_{-\alpha} & 0 \\[2pt] 0 & \mathcal{K}_{\alpha}\end{pmatrix}C ,
@@ -261,12 +261,12 @@ N\,K_N=\delta\, I_2 ,
 $$</p>
 <p>which is the fundamental solution of the quaternionic Maxwell operator recorded by the source, expressed here in the book's arrangement: it is built from the hyperholomorphic Cauchy kernels by the two rotations $A_i,B_i$ of $(15)$, and — because all the factors except $N$ are scalar — the same kernel serves the left and the right theories. From it the two integral operators of the Maxwell theory are formed in the usual way,</p>
 <p>$$
-\mathcal{K}_N[f](x)=-\int_\Gamma K_N(x-y)\,\mathbf{n}(y)\,f(y)\,d\Gamma_y ,
+\mathcal{K}_N[f](x)=-\int_\Gamma K_N(x-y)\,\vec n(y)\,f(y)\,d\Gamma_y ,
 \qquad
 \mathcal{T}_N[f](x)=\int_\Omega K_N(x-y)\,f(y)\,dy ,
 \tag{21}
 $$</p>
-<p>the <strong>Cauchy-type</strong> and <strong>Teodorescu-type</strong> operators associated with Maxwell's equations; the defining difference from the operators $\mathcal{K}_\alpha,\mathcal{T}_\alpha$ of the hyperholomorphic theory of the sibling articles is only the replacement of the kernel $\mathcal K_\alpha$ by the Maxwell kernel $K_N$, and the boundary integrals are taken over the Liapunov boundary $\Gamma=\partial\Omega$ of a bounded domain with outward normal $\mathbf{n}$. Three theorems then hold, the analogues of the three of the hyperholomorphic theory and proved from them by the same rotation.</p>
+<p>the <strong>Cauchy-type</strong> and <strong>Teodorescu-type</strong> operators associated with Maxwell's equations; the defining difference from the operators $\mathcal{K}_\alpha,\mathcal{T}_\alpha$ of the hyperholomorphic theory of the sibling articles is only the replacement of the kernel $\mathcal K_\alpha$ by the Maxwell kernel $K_N$, and the boundary integrals are taken over the Liapunov boundary $\Gamma=\partial\Omega$ of a bounded domain with outward normal $\vec n$. Three theorems then hold, the analogues of the three of the hyperholomorphic theory and proved from them by the same rotation.</p>
 <p><strong>Theorem (Borel–Pompeiu for the Maxwell operator).</strong> For a pair $f\in C^1(\Omega;\mathbb{B}^2)\cap C(\bar\Omega;\mathbb{B}^2)$,</p>
 <p>$$
 f=\mathcal{K}_N[f]+\mathcal{T}_N\,N[f]
@@ -284,35 +284,35 @@ $$</p>
 <h2 id="the-integral-representations-of-the-field">The Integral Representations of the Field</h2>
 <p>Translated back to the fields, the Cauchy formula $(23)$ becomes an integral representation, and its vector form is a classical one. The Cauchy-type operator is the boundary integral of the field and the normal against the Maxwell kernel, and the Teodorescu term is the volume integral of the current; written out in vectors and separated into the electric and magnetic parts, the boundary part of the representation is</p>
 <p>$$
-\mathbf{E}(x)=\int_\Gamma\Bigl\{\langle\mathrm{grad}_x\Theta_\alpha(x-y),\mathbf{n}(y)\rangle\tilde{\mathbf{E}}(y)
-+\bigl[[\mathrm{grad}_x\Theta_\alpha(x-y),\mathbf{n}(y)],\tilde{\mathbf{E}}(y)\bigr]
-+i\omega\,\Theta_\alpha(x-y)[\mathbf{n}(y),\tilde{\mathbf{H}}(y)]\Bigr\}d\Gamma_y
+\vec E(x)=\int_\Gamma\Bigl\{\langle\mathrm{grad}_x\Theta_\alpha(x-y),\vec n(y)\rangle\tilde{\vec E}(y)
++\bigl[[\mathrm{grad}_x\Theta_\alpha(x-y),\vec n(y)],\tilde{\vec E}(y)\bigr]
++i\omega\,\Theta_\alpha(x-y)[\vec n(y),\tilde{\vec H}(y)]\Bigr\}d\Gamma_y
 +\text{source terms},
 \tag{24}
 $$</p>
-<p>and the corresponding formula for $\mathbf{H}$, which is the <strong>Stratton–Chu formula</strong> of classical electromagnetic theory. The interpretation is the point of the reformulation: the Stratton–Chu formula is the Cauchy integral formula for the electromagnetic field, its kernel is the fundamental solution of the first-order quaternionic operator, and the "source terms" are the Teodorescu transform of the current. The survey of the programme states the interpretation in exactly these words — the Stratton–Chu integrals "in their biquaternionic representation" are "a convolution of a biquaternionic fundamental solution of the Maxwell operator with the electromagnetic field", and their meaning "as a Cauchy integral formula for the electromagnetic field becomes transparent". What the vector form does not show, and what the quaternionic form makes explicit, is that the kernel is a single function rather than a matrix and that the boundary combination is the boundary value of a holomorphic object in a four-component algebra.</p>
-<p>The same theory solves the boundary-value problem, and it is worth recording because it is where both components of the quaternionic function are used. For the Dirichlet problem — find the pair $(\mathbf{E},\mathbf{H})$ satisfying $(1)$ in the sourceless case inside $\Omega$ and $\mathbf{E}|_\Gamma=\tilde{\mathbf{e}}$, $\mathbf{H}|_\Gamma=\tilde{\mathbf{h}}$ with Hölder data — the diagonalised problem is the pair of Dirichlet problems for the two shifted operators $D_3\mp\alpha$, one for each of the combinations $(10)$. Each is solvable exactly when its Plemelj condition holds, with the projectors $P_{\pm\alpha}=\frac12(I+S_{\pm\alpha})$ of the twin articles, and when both hold the solution is the integral representation $(24)$ with the fields replaced by their boundary values. For the sourceless problem, with the diagonalised boundary data $\Phi|_\Gamma=\tilde{\mathbf{e}}+b\,\tilde{\mathbf{h}}$ and $\Psi|_\Gamma=\tilde{\mathbf{e}}-b\,\tilde{\mathbf{h}}$, the two conditions are</p>
+<p>and the corresponding formula for $\vec H$, which is the <strong>Stratton–Chu formula</strong> of classical electromagnetic theory. The interpretation is the point of the reformulation: the Stratton–Chu formula is the Cauchy integral formula for the electromagnetic field, its kernel is the fundamental solution of the first-order quaternionic operator, and the "source terms" are the Teodorescu transform of the current. The survey of the programme states the interpretation in exactly these words — the Stratton–Chu integrals "in their biquaternionic representation" are "a convolution of a biquaternionic fundamental solution of the Maxwell operator with the electromagnetic field", and their meaning "as a Cauchy integral formula for the electromagnetic field becomes transparent". What the vector form does not show, and what the quaternionic form makes explicit, is that the kernel is a single function rather than a matrix and that the boundary combination is the boundary value of a holomorphic object in a four-component algebra.</p>
+<p>The same theory solves the boundary-value problem, and it is worth recording because it is where both components of the quaternionic function are used. For the Dirichlet problem — find the pair $(\vec E,\vec H)$ satisfying $(1)$ in the sourceless case inside $\Omega$ and $\vec E|_\Gamma=\tilde{\vec e}$, $\vec H|_\Gamma=\tilde{\vec h}$ with Hölder data — the diagonalised problem is the pair of Dirichlet problems for the two shifted operators $D_3\mp\alpha$, one for each of the combinations $(10)$. Each is solvable exactly when its Plemelj condition holds, with the projectors $P_{\pm\alpha}=\frac12(I+S_{\pm\alpha})$ of the twin articles, and when both hold the solution is the integral representation $(24)$ with the fields replaced by their boundary values. For the sourceless problem, with the diagonalised boundary data $\Phi|_\Gamma=\tilde{\vec e}+b\,\tilde{\vec h}$ and $\Psi|_\Gamma=\tilde{\vec e}-b\,\tilde{\vec h}$, the two conditions are</p>
 <p>$$
-Q_{-\alpha}\bigl(\tilde{\mathbf{e}}+b\,\tilde{\mathbf{h}}\bigr)=0,
+Q_{-\alpha}\bigl(\tilde{\vec e}+b\,\tilde{\vec h}\bigr)=0,
 \qquad
-Q_{\alpha}\bigl(\tilde{\mathbf{e}}-b\,\tilde{\mathbf{h}}\bigr)=0
+Q_{\alpha}\bigl(\tilde{\vec e}-b\,\tilde{\vec h}\bigr)=0
 \qquad\text{on }\Gamma ,
 \qquad
 Q_{\pm\alpha}=I-P_{\pm\alpha},
 \tag{25}
 $$</p>
 <p>and with sources the right-hand sides are the Teodorescu transforms of the current, in the form the source writes at its equations $(3.3.7)$–$(3.3.8)$. The point of the quaternionic form is that each condition is a condition on a boundary function of <strong>four</strong> components, not three: the classical vector formulation separates only the vector part of the same quaternionic identity, and the scalar component it drops is the one that the second of the two conditions pins down.</p>
-<p>The note states the same criterion in its announced form — the boundary data are admissible exactly when they reproduce themselves under the two Cauchy-type integrals, its equations $(7)$ and $(8)$ — and records where its version differs from the vector conditions already obtained in the theory of geophysical fields: those conditions involve the divergence of the tangential field and therefore require, in addition, the differentiability of the tangential components of $\mathbf{E}$ and $\mathbf{H}$ on $\Gamma$, an extra hypothesis that the scalar components of the quaternionic identity avoid.</p>
+<p>The note states the same criterion in its announced form — the boundary data are admissible exactly when they reproduce themselves under the two Cauchy-type integrals, its equations $(7)$ and $(8)$ — and records where its version differs from the vector conditions already obtained in the theory of geophysical fields: those conditions involve the divergence of the tangential field and therefore require, in addition, the differentiability of the tangential components of $\vec E$ and $\vec H$ on $\Gamma$, an extra hypothesis that the scalar components of the quaternionic identity avoid.</p>
 <p>For the exterior problem the same representation is closed by the <strong>Silver–Müller radiation condition</strong>,</p>
 <p>$$
-\mathbf{E}\wedge\frac{\mathbf{x}}{\lvert\mathbf{x}\rvert}+W\,\mathbf{H}=o\!\left(\frac{1}{\lvert\mathbf{x}\rvert}\right),
+\vec E\wedge\frac{\vec x}{\lvert\vec x\rvert}+W\,\vec H=o\!\left(\frac{1}{\lvert\vec x\rvert}\right),
 \qquad
-\lvert\mathbf{x}\rvert\to\infty ,
+\lvert\vec x\rvert\to\infty ,
 \qquad
 W=\sqrt{\frac{\mu}{\epsilon}} ,
 \tag{26}
 $$</p>
-<p>the intrinsic impedance being the $W$ of the chiral article, and the sign convention that of the source; on a charged interface between two media the same kernel gives the familiar jump conditions, with the normal components of $\epsilon\mathbf{E}$ and $\mu\mathbf{H}$ jumping by the surface charge and the tangential components of $\mathbf{H}$ by the surface current.</p>
+<p>the intrinsic impedance being the $W$ of the chiral article, and the sign convention that of the source; on a charged interface between two media the same kernel gives the familiar jump conditions, with the normal components of $\epsilon\vec E$ and $\mu\vec H$ jumping by the surface charge and the tangential components of $\vec H$ by the surface current.</p>
 <h2 id="what-is-not-claimed">What Is Not Claimed</h2>
 <p>Four boundaries are worth stating, because the reformulation invites more than it delivers.</p>
 <p>The first is a matter of fidelity. The source's Section 3 realises the similarity $(11)$ through two pairs of matrices $A_i,B_i$, and states the projections $(15)$ and the decomposition $(16)$ in that form. The present article uses the book's equivalent arrangement — the conjugating matrix $C$ of $(11)$, whose entries follow from the diagonalisation itself — and the identity $(11)$ and the factorisations $(8)$ and $(13)$ have been recomputed symbol by symbol, one Fourier mode at a time, for the lossy and the lossless case alike. The source's own matrices are not reproduced, because the available copy of the paper is a scan whose text layer is degraded in the formulas; a reader who needs the exact matrices should consult the paper rather than this article.</p>
@@ -321,7 +321,7 @@ $$</p>
 <p>The fourth is physical. Nothing here is a new prediction. The article records a reformulation, a correspondence and a family of integral representations; the observables are those of the classical time-harmonic system, and the content is that the time-harmonic field has the structure of a pair of hyperholomorphic functions — which is what makes the boundary-value problems and the numerical methods of the programme possible. The chiral case $\beta\neq0$, where the two wavenumbers separate and the optical activity appears, is the subject of <em>Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</em>, and is not repeated here.</p>
 <h2 id="summary">Summary</h2>
 <p>The ordinary time-harmonic Maxwell system in a homogeneous isotropic medium, possibly lossy, is the system $(1)$, with the conduction absorbed into the complex conductivity $\sigma=\sigma_*-i\omega\epsilon$ and the Helmholtz reduction carried by the single complex parameter $\lambda=i\omega\mu\sigma_*+\omega^2\mu\epsilon$, whose square root $\alpha$ is the medium wavenumber. The quaternionic Maxwell operator is the $2\times2$ matrix $N$ of $(6)$; it acts on all pairs of complex-quaternionic functions, its restriction to solenoidal pairs is the physical Maxwell operator, and its square is the scalar Helmholtz operator, $NN^{\dagger}=-(\Delta+\lambda)I_2$. That scalar square is what the physical operator lacks and what makes the function theory available.</p>
-<p>The diagonalisation $(11)$ by the matrix $C$, with the coherence factor $b=i\omega\mu/\alpha$, turns $N$ into the direct sum of the two mutually conjugate Cauchy–Riemann operators $D_3\mp\alpha$, whose squares are the scalar Helmholtz operators of $(13)$. Consequently the time-harmonic fields are in one-to-one correspondence with pairs of mutually conjugate hyperholomorphic functions, $\ker N\cong\ker(D_3-\alpha)\times\ker(D_3+\alpha)$; in the lossless normalised variables the two combinations are the circularly polarised $\tilde{\mathbf{E}}\pm i\tilde{\mathbf{H}}$ of the chiral reduction at $\beta=0$; and the Helmholtz null-set itself is the direct sum of the two rotated copies of $\ker N$ of $(16)$, which is the time-harmonic analogue of the splitting of the wave operator into its two first-order factors.</p>
+<p>The diagonalisation $(11)$ by the matrix $C$, with the coherence factor $b=i\omega\mu/\alpha$, turns $N$ into the direct sum of the two mutually conjugate Cauchy–Riemann operators $D_3\mp\alpha$, whose squares are the scalar Helmholtz operators of $(13)$. Consequently the time-harmonic fields are in one-to-one correspondence with pairs of mutually conjugate hyperholomorphic functions, $\ker N\cong\ker(D_3-\alpha)\times\ker(D_3+\alpha)$; in the lossless normalised variables the two combinations are the circularly polarised $\tilde{\vec E}\pm i\tilde{\vec H}$ of the chiral reduction at $\beta=0$; and the Helmholtz null-set itself is the direct sum of the two rotated copies of $\ker N$ of $(16)$, which is the time-harmonic analogue of the splitting of the wave operator into its two first-order factors.</p>
 <p>The kernel of the theory is the outgoing Helmholtz kernel $\Theta_\alpha$ of $(18)$ and its two Cauchy–Riemann descendants $\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\Theta_\alpha$; the Maxwell kernel $K_N$ of $(20)$ is the same object carried through the diagonalising rotation, and the Cauchy-type and Teodorescu-type operators built from it satisfy the Borel–Pompeiu formula, the right-inverse formula and the Cauchy integral formula $(22,23)$. Translated back to the fields, the Cauchy formula is the integral representation $(24)$, whose vector form is the classical <strong>Stratton–Chu formula</strong>: the Stratton–Chu kernel is the fundamental solution of the first-order quaternionic Maxwell operator, and the Stratton–Chu representation is a Cauchy integral formula for the electromagnetic field. The Dirichlet problem is solved by the same theory, its solvability governed by the two Plemelj conditions $(25)$, whose quaternionic form carries the scalar component that the vector formulation drops, and the exterior problem is closed by the Silver–Müller condition $(26)$. The parametric system of the source is not specific to the electromagnetic field: at another value of its parameter it is the time-harmonic <strong>Dirac</strong> system, and the same Cauchy integral formula, the same Plemelj–Sokhotski formulas and the same boundary-value criterion then hold for the harmonic spinor field. That statement of the source's announcement, and the spinor half of the theory, are recorded in <em>The Dirac Equation in Biquaternionic Form</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -386,7 +386,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Phi,\Psi$</td>
-<td>Diagonalising combinations $\mathbf{E}\pm b\mathbf{H}$; conjugate Cauchy–Riemann solutions</td>
+<td>Diagonalising combinations $\vec E\pm b\vec H$; conjugate Cauchy–Riemann solutions</td>
 </tr>
 <tr>
 <td>$\mathcal{R}_\lambda$</td>
@@ -418,10 +418,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\Omega,\Gamma=\partial\Omega$</td>
-<td>Bounded domain and its Liapunov boundary; $\mathbf{n}$ the outward normal</td>
+<td>Bounded domain and its Liapunov boundary; $\vec n$ the outward normal</td>
 </tr>
 <tr>
-<td>$\tilde{\mathbf{e}},\tilde{\mathbf{h}}$</td>
+<td>$\tilde{\vec e},\tilde{\vec h}$</td>
 <td>Dirichlet boundary data of the field</td>
 </tr>
 <tr>

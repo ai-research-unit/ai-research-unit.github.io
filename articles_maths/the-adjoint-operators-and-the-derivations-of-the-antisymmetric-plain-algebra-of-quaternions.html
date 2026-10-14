@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The antisymmetric plain algebra of $\mathbb{H}$ is the real Lie algebra
 $\mathfrak{g}=(\mathbb{H},\times)$ with the cross product
-$\tilde p\times\tilde q=\mathbf p\times\mathbf q$ of <em>The Lie Algebra of the Antisymmetric Plain
+$\tilde p\times\tilde q=\vec p\times\vec q$ of <em>The Lie Algebra of the Antisymmetric Plain
 Algebra</em>, below this article in this category. This article reads its adjoint operators, proves that
 they are derivations, computes the whole derivation algebra and the automorphism group, and compares</p>
 <p>The two structural facts of the block give the answer at once. Alternation makes the adjoint the cross
@@ -73,8 +73,8 @@ of the Antisymmetric Plain Algebra</em>, both below this article in this categor
 counterpart is <em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em> of the</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$; the centre is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, the vector subspace is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}=\mathbb{R}^3$, and $C_{\mathbf p}$ is the cross-product matrix
-$C_{\mathbf p}\mathbf q=\mathbf p\times\mathbf q$. The bracket of two endomorphisms is
+$\mathrm{Vect}(\mathbb{H})=\{\vec q\}=\mathbb{R}^3$, and $C_{\vec p}$ is the cross-product matrix
+$C_{\vec p}\vec q=\vec p\times\vec q$. The bracket of two endomorphisms is
 $[A,B]=AB-BA$; a <strong>derivation</strong> of the block is an endomorphism $D$ with
 $D(\tilde p\times\tilde q)=D\tilde p\times\tilde q+\tilde p\times D\tilde q$.</p>
 <h2 id="the-adjoint-operators">The Adjoint Operators</h2>
@@ -85,33 +85,33 @@ $$</p>
 <h3 id="the-matrix-and-the-invariants">The Matrix and the Invariants</h3>
 <p><strong>Proposition.</strong> In the basis $(e_0,e_1,e_2,e_3)$ the adjoint is the block matrix</p>
 <p>$$
-\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\mathbf p})
+\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\vec p})
 \quad\text{on}\quad \mathbb{H}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H}),
 $$</p>
 <p>with the invariants</p>
 <p>$$
 \operatorname{Tr}\operatorname{ad}_{\tilde p}=0,\qquad
 \det\operatorname{ad}_{\tilde p}=0,\qquad
-\operatorname{rank}\operatorname{ad}_{\tilde p}=\begin{cases}2,&\mathbf p\neq0,\\0,&\mathbf p=0,\end{cases}
+\operatorname{rank}\operatorname{ad}_{\tilde p}=\begin{cases}2,&\vec p\neq0,\\0,&\vec p=0,\end{cases}
 $$</p>
-<p>and the characteristic polynomial $\chi(t)=t^2(t^2+|\mathbf p|^2)$.</p>
+<p>and the characteristic polynomial $\chi(t)=t^2(t^2+|\vec p|^2)$.</p>
 <p><em>Proof.</em> The bracket vanishes on the scalar direction and the pure part is the cross product by
-$\mathbf p$, so the matrix is $\operatorname{diag}(0,C_{\mathbf p})$; the invariants descend from
-$C_{\mathbf p}^2=\mathbf p\mathbf p^{\mathsf T}-|\mathbf p|^2\mathrm{I}_3$, of characteristic
-polynomial $t(t^2+|\mathbf p|^2)$, and from the vanishing scalar block.</p>
+$\vec p$, so the matrix is $\operatorname{diag}(0,C_{\vec p})$; the invariants descend from
+$C_{\vec p}^2=\vec p\vec p^{\mathsf T}-|\vec p|^2\mathrm{I}_3$, of characteristic
+polynomial $t(t^2+|\vec p|^2)$, and from the vanishing scalar block.</p>
 <h3 id="the-kernel-and-the-image">The Kernel and the Image</h3>
 <p><strong>Proposition.</strong> For a noncentral element the kernel and the image of the adjoint are</p>
 <p>$$
-\ker\operatorname{ad}_{\tilde p}=\mathbb{R}e_0\oplus\mathbb{R}\mathbf p,\qquad
-\operatorname{im}\operatorname{ad}_{\tilde p}=\mathbf p^{\perp}\cap\mathrm{Vect}(\mathbb{H}),
+\ker\operatorname{ad}_{\tilde p}=\mathbb{R}e_0\oplus\mathbb{R}\vec p,\qquad
+\operatorname{im}\operatorname{ad}_{\tilde p}=\vec p^{\perp}\cap\mathrm{Vect}(\mathbb{H}),
 $$</p>
 <p>the kernel being the two-dimensional plane spanned by the centre and the element, and the image the
-two-dimensional plane of the vector subspace orthogonal to $\mathbf p$. For a central element the
+two-dimensional plane of the vector subspace orthogonal to $\vec p$. For a central element the
 adjoint is zero.</p>
 <p><em>Proof.</em> The kernel is the annihilator of the element for the block, computed in <em>Zero Divisors of the
 Antisymmetric Plain Algebra</em>, below this article in this category, as the plane
-$\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$; the image is $\{\mathbf p\times\mathbf q\}$, which is the
-plane orthogonal to $\mathbf p$ when $\mathbf p\neq0$.</p>
+$\mathbb{R}e_0\oplus\mathbb{R}\vec p$; the image is $\{\vec p\times\vec q\}$, which is the
+plane orthogonal to $\vec p$ when $\vec p\neq0$.</p>
 <h2 id="the-adjoints-are-derivations">The Adjoints Are Derivations</h2>
 <p><strong>Theorem (the Jacobi identity is the derivation property).</strong> For every $\tilde p$ the adjoint
 $\operatorname{ad}_{\tilde p}$ is a derivation of the block,</p>
@@ -144,7 +144,7 @@ $$</p>
 inner derivations, isomorphic to the derived algebra $\mathrm{Vect}(\mathbb{H})$ and to
 $\mathfrak{so}(3)$, and $D_0$ is the derivation</p>
 <p>$$
-D_0(e_0)=e_0,\qquad D_0(\mathbf q)=0 ,
+D_0(e_0)=e_0,\qquad D_0(\vec q)=0 ,
 $$</p>
 <p>which scales the centre and is outer. The kernel of the adjoint representation is the centre, so
 $\operatorname{ad}(\mathfrak{g})\cong\mathfrak{g}/\mathbb{R}e_0\cong\mathfrak{so}(3)$.</p>
@@ -171,8 +171,8 @@ acts on the vector subspace by a linear map preserving the cross product.</p>
 The centre is characteristic, being the set of elements that annihilate every element on the left, so
 $T$ preserves $\mathbb{R}e_0$ and $Te_0=c e_0$ with $c\neq0$. Then $T$ preserves the vector subspace,
 which is the image of the block, and on it $A=T|_{\mathrm{Vect}(\mathbb{H})}$ satisfies
-$A(\mathbf u\times\mathbf v)=A\mathbf u\times A\mathbf v$, because the two sides are the images of
-$\mathbf u\times\mathbf v$ and of $\mathbf u,\mathbf v$. Every such $A$ is a linear map of
+$A(\vec u\times\vec v)=A\vec u\times A\vec v$, because the two sides are the images of
+$\vec u\times\vec v$ and of $\vec u,\vec v$. Every such $A$ is a linear map of
 $\mathbb{R}^3$ preserving the cross product, which is the special orthogonal group
 $\operatorname{SO}(3)$; its dimension is three, the scalar $c$ contributes one, and the two choices are
 independent and commute. The group is therefore $\mathbb{R}^{\times}\times\operatorname{SO}(3)$ of
@@ -184,9 +184,9 @@ metric statement. The Lie algebra of $\operatorname{Aut}(\mathfrak{g})$ is $\ope
 generated by the inner derivations and by $D_0$.</p>
 <h2 id="summary">Summary</h2>
 <p>The adjoint operators of the antisymmetric plain algebra are the left multiplications by the cross
-product, of matrix $\operatorname{diag}(0,C_{\mathbf p})$, trace zero, determinant zero, rank two off
-the centre, with the characteristic polynomial $t^2(t^2+|\mathbf p|^2)$ and the kernel plane
-$\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$. They are derivations, and the Jacobi identity is exactly that
+product, of matrix $\operatorname{diag}(0,C_{\vec p})$, trace zero, determinant zero, rank two off
+the centre, with the characteristic polynomial $t^2(t^2+|\vec p|^2)$ and the kernel plane
+$\mathbb{R}e_0\oplus\mathbb{R}\vec p$. They are derivations, and the Jacobi identity is exactly that
 statement, equivalently the homomorphism property of the adjoint representation. The derivation
 algebra is the inner algebra $\mathfrak{so}(3)$ together with the outer scaling of the centre, of real
 dimension four; the inner derivations are the image of the adjoint representation, whose kernel is the
@@ -207,11 +207,11 @@ same structure has $\mathfrak{sl}(2,\mathbb{C})$ and $\mathbb{C}^{\times}\times\
 <td>the adjoint operator</td>
 </tr>
 <tr>
-<td>$\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\mathbf p})$</td>
+<td>$\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\vec p})$</td>
 <td>its matrix</td>
 </tr>
 <tr>
-<td>$\ker\operatorname{ad}_{\tilde p}=\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$</td>
+<td>$\ker\operatorname{ad}_{\tilde p}=\mathbb{R}e_0\oplus\mathbb{R}\vec p$</td>
 <td>the kernel, the annihilator plane</td>
 </tr>
 <tr>

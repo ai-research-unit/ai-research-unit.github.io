@@ -57,7 +57,7 @@
 \tau(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p\bullet\tilde q\bigr),
 $$</p>
 <p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $\mathrm{Sc}$, the vector subspace is $\mathrm{Vect}(\mathbb{H})$, the norm is $N(\tilde q)=q_0^2+|\mathbf q|^2$, and the multiplication operator is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$ of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category. The plain bilinear form $(\tilde p,\tilde q)\mapsto\mathrm{Sc}(\tilde p\tilde q)$ is <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $\mathrm{Sc}$, the vector subspace is $\mathrm{Vect}(\mathbb{H})$, the norm is $N(\tilde q)=q_0^2+|\vec q|^2$, and the multiplication operator is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$ of <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category. The plain bilinear form $(\tilde p,\tilde q)\mapsto\mathrm{Sc}(\tilde p\tilde q)$ is <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>.</p>
 <h2 id="the-trace-form">The Trace Form</h2>
 <h3 id="the-definition">The Definition</h3>
 <p><strong>Definition.</strong> The <strong>trace form</strong> of the block is</p>
@@ -66,17 +66,17 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> The trace form is symmetric and bilinear, and coincides with the plain bilinear form of the same space:</p>
 <p>$$
-\tau(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q=\mathrm{Sc}\bigl(\tilde p\tilde q\bigr).
+\tau(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}\bigl(\tilde p\tilde q\bigr).
 $$</p>
-<p><em>Proof.</em> $\tilde p\bullet\tilde q$ is symmetric and bilinear, so $\tau$ is; and $\mathrm{Sc}(\tilde p\bullet\tilde q)=\mathrm{Sc}\bigl(\tfrac12(\tilde p\tilde q+\tilde q\tilde p)\bigr)=\mathrm{Sc}(\tilde p\tilde q)$ because the scalar part is invariant under reversal, $\mathrm{Sc}(\tilde p\tilde q)=\mathrm{Sc}(\tilde q\tilde p)$. Expanding the plain scalar part gives $p_0q_0-\mathbf p\cdot\mathbf q$.</p>
-<p><strong>Corollary (the polarisation).</strong> The trace form is the <strong>polarisation of the quadratic trace</strong> $\tilde p\mapsto\mathrm{Sc}(\tilde p\bullet\tilde p)=\mathrm{Sc}(\tilde p^2)=p_0^2-|\mathbf p|^2$:</p>
+<p><em>Proof.</em> $\tilde p\bullet\tilde q$ is symmetric and bilinear, so $\tau$ is; and $\mathrm{Sc}(\tilde p\bullet\tilde q)=\mathrm{Sc}\bigl(\tfrac12(\tilde p\tilde q+\tilde q\tilde p)\bigr)=\mathrm{Sc}(\tilde p\tilde q)$ because the scalar part is invariant under reversal, $\mathrm{Sc}(\tilde p\tilde q)=\mathrm{Sc}(\tilde q\tilde p)$. Expanding the plain scalar part gives $p_0q_0-\vec p\cdot\vec q$.</p>
+<p><strong>Corollary (the polarisation).</strong> The trace form is the <strong>polarisation of the quadratic trace</strong> $\tilde p\mapsto\mathrm{Sc}(\tilde p\bullet\tilde p)=\mathrm{Sc}(\tilde p^2)=p_0^2-|\vec p|^2$:</p>
 <p>$$
 \tau(\tilde p,\tilde q)=\tfrac12\Bigl(\mathrm{Sc}(\tilde p+\tilde q)^{\bullet2}-\mathrm{Sc}\,\tilde p^{\bullet2}-\mathrm{Sc}\,\tilde q^{\bullet2}\Bigr).
 $$</p>
 <h3 id="the-gram-matrix-and-the-signature">The Gram Matrix and the Signature</h3>
 <p><strong>Proposition.</strong> In the basis $(e_0,e_1,e_2,e_3)$ the Gram matrix is $\operatorname{diag}(1,-1,-1,-1)$, and the signature is $(1,3)$: the trace form is <strong>indefinite</strong> and <strong>Lorentzian</strong>.</p>
 <p><em>Proof.</em> $\tau(e_0,e_0)=\mathrm{Sc}(e_0)=1$ and $\tau(e_j,e_j)=\mathrm{Sc}(e_j\bullet e_j)=\mathrm{Sc}(-e_0)=-1$ for $j=1,2,3$; the mixed terms vanish because $e_j\bullet e_k$ is pure for $j\neq k$.</p>
-<p><strong>Remark (the trace form is not the norm).</strong> The trace form is indefinite and has the isotropic cone $p_0^2=|\mathbf p|^2$; the norm $N(\tilde p)=p_0^2+|\mathbf p|^2$ is positive definite and vanishes only at the origin. <strong>The two forms of the block must not be confused</strong>: the norm polarises to the quaternion form (signature $(4,0)$) and the quadratic trace polarises to the trace form (signature $(1,3)$), as <em>Norm and Invertibility in the Symmetric Plain Algebra</em> records. In particular the isotropic cone of the trace form is <strong>not</strong> the zero-divisor set, which is the pure set $p_0=0$ of <em>Zero Divisors of the Symmetric Plain Algebra</em>.</p>
+<p><strong>Remark (the trace form is not the norm).</strong> The trace form is indefinite and has the isotropic cone $p_0^2=|\vec p|^2$; the norm $N(\tilde p)=p_0^2+|\vec p|^2$ is positive definite and vanishes only at the origin. <strong>The two forms of the block must not be confused</strong>: the norm polarises to the quaternion form (signature $(4,0)$) and the quadratic trace polarises to the trace form (signature $(1,3)$), as <em>Norm and Invertibility in the Symmetric Plain Algebra</em> records. In particular the isotropic cone of the trace form is <strong>not</strong> the zero-divisor set, which is the pure set $p_0=0$ of <em>Zero Divisors of the Symmetric Plain Algebra</em>.</p>
 <h3 id="the-radical">The Radical</h3>
 <p><strong>Proposition.</strong> The trace form is non-degenerate and its radical is trivial:</p>
 <p>$$
@@ -103,7 +103,7 @@ $$</p>
 <p><em>Proof.</em> The trace form is associative, so for a derivation $D$, $0=D\,\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(D(\tilde p\bullet\tilde q),\tilde r)+\tau(\tilde p\bullet\tilde q,D\tilde r)$; expanding the derivation rule and using the associativity of $\tau$ twice gives $\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$. The derivations are <em>The Multiplication Operators of the Symmetric Plain Algebra</em>, below this article in this category, and the statement is the general invariance of the trace form of a Jordan algebra quoted in <em>Jordan Algebras</em>.</p>
 <p><strong>Remark (the invariance is the content of the menu).</strong> The menu comment of the block asks for "the trace form and its invariance under the operators of the Jordan product": the <strong>operators</strong> are the left multiplications $L^{\bullet}_{\tilde p}$ and the inner derivations they generate, and the invariance is the pair of identities $\tau(L^{\bullet}_{\tilde p}\tilde q,\tilde r)=\tau(\tilde q,L^{\bullet}_{\tilde p}\tilde r)$ and $\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$. <strong>The self-adjointness is what makes the form the trace form, and the skewness of the derivations is what makes it the invariant form of the block.</strong></p>
 <h2 id="summary">Summary</h2>
-<p>The trace form of the block is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$, symmetric and bilinear, equal to the plain form $p_0q_0-\mathbf p\cdot\mathbf q$ and polarising the quadratic trace $\mathrm{Sc}(\tilde p^2)=p_0^2-|\mathbf p|^2$. Its Gram matrix in the standard basis is $\operatorname{diag}(1,-1,-1,-1)$, so its signature is $(1,3)$ and it is indefinite and Lorentzian; it is non-degenerate with radical $0$, and it is the indefinite companion of the positive definite norm. It is associative, $\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$, so every multiplication operator is self-adjoint for it, and every derivation is skew for it; these two invariances are the form content of the block. Over $\mathbb{C}$ the trace form has the same matrix shape and the same invariances, the form part of the degree-two Common Theory; the field changes only the reading of the isotropy.</p>
+<p>The trace form of the block is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$, symmetric and bilinear, equal to the plain form $p_0q_0-\vec p\cdot\vec q$ and polarising the quadratic trace $\mathrm{Sc}(\tilde p^2)=p_0^2-|\vec p|^2$. Its Gram matrix in the standard basis is $\operatorname{diag}(1,-1,-1,-1)$, so its signature is $(1,3)$ and it is indefinite and Lorentzian; it is non-degenerate with radical $0$, and it is the indefinite companion of the positive definite norm. It is associative, $\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$, so every multiplication operator is self-adjoint for it, and every derivation is skew for it; these two invariances are the form content of the block. Over $\mathbb{C}$ the trace form has the same matrix shape and the same invariances, the form part of the degree-two Common Theory; the field changes only the reading of the isotropy.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -114,7 +114,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$</td>
+<td>$\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)=p_0q_0-\vec p\cdot\vec q$</td>
 <td>the trace form</td>
 </tr>
 <tr>

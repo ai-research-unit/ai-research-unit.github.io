@@ -58,9 +58,9 @@
 <h2 id="the-natural-sign">The Natural Sign</h2>
 <p>The <strong>natural conjugation</strong> (or <strong>natural sign</strong>) is
 $$
-\tilde q^{\natural}=q_0-\mathbf q , \qquad \tilde q=q_0+\mathbf q ,
+\tilde q^{\natural}=q_0-\vec q , \qquad \tilde q=q_0+\vec q ,
 $$
-in the notation of <em>The Quaternions as a Vector Space over $\mathbb{R}$</em>, with $\mathbf q=q_1e_1+q_2e_2+q_3e_3$.</p>
+in the notation of <em>The Quaternions as a Vector Space over $\mathbb{R}$</em>, with $\vec q=q_1e_1+q_2e_2+q_3e_3$.</p>
 <p><strong>Proposition.</strong> The map ${}^{\natural}$ is an anti-automorphism of $\mathbb{H}$ and an involution:
 $$
 (\tilde p\tilde q)^{\natural}=\tilde q^{\natural}\tilde p^{\natural} , \qquad (\tilde q^{\natural})^{\natural}=\tilde q .
@@ -106,7 +106,7 @@ Conversely every anti-automorphism is of this form: if $\sigma$ is one, then $\s
 $$
 \sigma_a(\sigma_a(\tilde q))=a\bigl(a \tilde q^{\natural}a^{-1}\bigr)^{\natural}a^{-1}=a\,(a^{\natural})^{-1}\tilde q\,a^{\natural}a^{-1},
 $$
-which is the inner conjugation by $c=a(a^{\natural})^{-1}=a^2/|a|^2$; since the positive real factor does not change an inner conjugation, $\sigma_a^2=\iota_{a^2}$. Now $\iota_b=\operatorname{id}$ exactly when $b$ is central, and $a^2$ is central exactly when its vector part $2a_0\mathbf a$ vanishes, that is, exactly when $a$ is real or pure. A real $a$ gives $\sigma_a={}^{\natural}$, and a pure unit $a=\nu$ gives the twist $\alpha_\nu$, which depends only on the axis line.</p>
+which is the inner conjugation by $c=a(a^{\natural})^{-1}=a^2/|a|^2$; since the positive real factor does not change an inner conjugation, $\sigma_a^2=\iota_{a^2}$. Now $\iota_b=\operatorname{id}$ exactly when $b$ is central, and $a^2$ is central exactly when its vector part $2a_0\vec a$ vanishes, that is, exactly when $a$ is real or pure. A real $a$ gives $\sigma_a={}^{\natural}$, and a pure unit $a=\nu$ gives the twist $\alpha_\nu$, which depends only on the axis line.</p>
 <p>The maps $id$ and ${}^{\natural}$, together with the pair $\iota_\nu,\alpha_\nu$ of one axis, four in all, are the involutions of the one-dimensional families; the next section collects the compositions.</p>
 <h2 id="the-composition-laws">The Composition Laws</h2>
 <p>For unit imaginaries $\nu,\mu$ the following laws hold, and they are the whole arithmetic of the family.</p>
@@ -164,7 +164,7 @@ $$
 1,\ 2,\ 4,\ 8
 $$
 according as the number of nonzero coordinates of its vector part is $0,1,2,3$. In particular the scalar line is the fixed set of $G$, and the generic element has the full orbit of eight.</p>
-<p><strong>Proof.</strong> The inner involution $\iota_{\nu_1}$ acts as the identity on $\mathbb{R}\nu_1$ and as $-1$ on $\nu_2,\nu_3$; $\iota_{\nu_2}$ as $-1$ on $\nu_1,\nu_3$; $\iota_{\nu_3}$ as $-1$ on $\nu_1,\nu_2$; and ${}^{\natural}$ as $-1$ on all three. The four together generate the three independent sign changes, so the stabiliser of $\tilde q$ is the subgroup whose sign changes preserve the support of $\mathbf q$, of order $8/2^{(\text{number of nonzero coordinates})}$, and the orbit size is the complementary power of two.</p>
+<p><strong>Proof.</strong> The inner involution $\iota_{\nu_1}$ acts as the identity on $\mathbb{R}\nu_1$ and as $-1$ on $\nu_2,\nu_3$; $\iota_{\nu_2}$ as $-1$ on $\nu_1,\nu_3$; $\iota_{\nu_3}$ as $-1$ on $\nu_1,\nu_2$; and ${}^{\natural}$ as $-1$ on all three. The four together generate the three independent sign changes, so the stabiliser of $\tilde q$ is the subgroup whose sign changes preserve the support of $\vec q$, of order $8/2^{(\text{number of nonzero coordinates})}$, and the orbit size is the complementary power of two.</p>
 <h2 id="summary">Summary</h2>
 <p>The natural sign is the one distinguished involution of $\mathbb{H}$. Each axis line of the vector subspace carries one inner involution $\iota_\nu$, fixing the axis line pointwise and negating its orthogonal complement, and one reflection $\rho_\nu=-\iota_\nu$, which is an automorphism only up to the sign. Each axis line carries also one involutive anti-automorphism beyond ${}^{\natural}$, the twist $\alpha_\nu={}^{\natural}\iota_\nu=\iota_\nu{}^{\natural}$; the involutive anti-automorphisms are exactly ${}^{\natural}$ and the $\alpha_\nu$, one per axis line. The composition laws reduce to $\iota_\nu\iota_\mu=\iota_{\nu\mu}$, $\alpha_\nu\alpha_\mu=\iota_{\nu\mu}$ and ${}^{\natural}\iota_\nu=\alpha_\nu$. On a perpendicular triple the three inner involutions form a Klein four-group, and adjoining ${}^{\natural}$ gives the abelian group $(\mathbb{Z}/2)^3$, which fixes the scalar line and acts on the vector subspace by the diagonal sign changes; its orbits have sizes $1,2,4,8$ according to the support of the vector part.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -178,7 +178,7 @@ according as the number of nonzero coordinates of its vector part is $0,1,2,3$. 
 <tbody>
 <tr>
 <td>${}^{\natural}$</td>
-<td>the natural conjugation $\tilde q\mapsto q_0-\mathbf q$, the distinguished anti-involution</td>
+<td>the natural conjugation $\tilde q\mapsto q_0-\vec q$, the distinguished anti-involution</td>
 </tr>
 <tr>
 <td>$\iota_\nu$</td>

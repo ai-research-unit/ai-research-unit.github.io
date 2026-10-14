@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The antisymmetric part of the plain product of the biquaternions, introduced in <em>Introduction to the Antisymmetric Plain Algebra of Biquaternions</em>,</p>
 <p>$$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q},
+\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q,
 $$</p>
 <p>is $\mathbb{C}$-bilinear, alternating and satisfies the Jacobi identity, so it makes the underlying complex space $\mathbb{B}$ a Lie algebra, written</p>
 <p>$$
@@ -68,12 +68,12 @@ $$</p>
 <p>$$
 \mathfrak{z}(\mathfrak{g})=\{\tilde P\in\mathbb{B}:\tilde P\wedge\tilde X=0\text{ for all }\tilde X\in\mathbb{B}\}.
 $$</p>
-<p><strong>Theorem (the centre is the centre of the algebra).</strong> For $\tilde P\in\mathbb{B}$ the following are equivalent: $\tilde P$ lies in $\mathfrak{z}(\mathfrak{g})$; its vector part is zero, $\mathbf{P}=0$; and $\tilde P$ lies in $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the centre of the biquaternion algebra. Hence</p>
+<p><strong>Theorem (the centre is the centre of the algebra).</strong> For $\tilde P\in\mathbb{B}$ the following are equivalent: $\tilde P$ lies in $\mathfrak{z}(\mathfrak{g})$; its vector part is zero, $\vec P=0$; and $\tilde P$ lies in $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the centre of the biquaternion algebra. Hence</p>
 <p>$$
 \mathfrak{z}(\mathfrak{g})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0,
 $$</p>
 <p>of complex dimension one and real dimension two.</p>
-<p><em>Proof.</em> The bracket depends only on the vector parts, $\tilde P\wedge\tilde X=\mathbf{P}\times\mathbf{X}$, so it vanishes for every $\tilde X$ exactly when $\mathbf{P}\times\mathbf{X}=0$ for every vector $\mathbf{X}$. If $\mathbf{P}\neq0$, a vector $\mathbf{X}$ that is not parallel to $\mathbf{P}$ gives a nonzero cross product, so the condition forces $\mathbf{P}=0$; conversely $\mathbf{P}=0$ gives $\tilde P\in\mathbb{C}e_0$. The centre of the biquaternion algebra is $\mathbb{C}e_0$, the complex multiples of the unit, because the quaternion units anticommute off the scalar direction; the second equivalence is that standard fact.</p>
+<p><em>Proof.</em> The bracket depends only on the vector parts, $\tilde P\wedge\tilde X=\vec P\times\vec X$, so it vanishes for every $\tilde X$ exactly when $\vec P\times\vec X=0$ for every vector $\vec X$. If $\vec P\neq0$, a vector $\vec X$ that is not parallel to $\vec P$ gives a nonzero cross product, so the condition forces $\vec P=0$; conversely $\vec P=0$ gives $\tilde P\in\mathbb{C}e_0$. The centre of the biquaternion algebra is $\mathbb{C}e_0$, the complex multiples of the unit, because the quaternion units anticommute off the scalar direction; the second equivalence is that standard fact.</p>
 <p><strong>Remark.</strong> The centre of the bracket and the centre of the algebra are therefore the same subspace, and it is the first structural coincidence of the block: <strong>the elements the bracket cannot see are exactly the central elements of the multiplication, the complex multiples of $e_0$.</strong> The centre is abelian under the bracket, and it is annihilated by the adjoint of every element.</p>
 <h3 id="the-quotient">The Quotient</h3>
 <p><strong>Proposition.</strong> The bracket induced on the quotient $\mathbb{B}/\mathbb{C}_{\mathbb{B}}$ is the cross product, and the projection $\mathbb{B}\to\mathbb{B}/\mathbb{C}_{\mathbb{B}}$ is a morphism of Lie algebras with kernel the centre.</p>
@@ -109,7 +109,7 @@ $$</p>
 <p><em>Proof.</em> The bracket of two real quaternions is the cross product of two real vectors and is therefore a real vector, so $\mathbb{H}_{\mathbb{B}}$ is stable and $[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]=\mathbf{B}_1$. The real vector triple with the cross product is the real form $\mathfrak{so}(3,\mathbb{R})\cong\mathfrak{su}(2)$ of the derived algebra, and the scalar direction is central; the sum is direct. Computed on the real basis.</p>
 <p><strong>Theorem (the anti-Hermitian subspace).</strong> On the anti-Hermitian subspace</p>
 <p>$$
-\mathbb{M}_-=\mathbb{R}(ie_0)\oplus\mathbf{B}_1=\{Q_0e_0+\mathbf{Q}:Q_0\in i\mathbb{R},\ \mathbf{Q}\in\mathbb{R}^3\},
+\mathbb{M}_-=\mathbb{R}(ie_0)\oplus\mathbf{B}_1=\{Q_0e_0+\vec Q:Q_0\in i\mathbb{R},\ \vec Q\in\mathbb{R}^3\},
 $$</p>
 <p>of real dimension four, the bracket is real, takes values in $\mathbf{B}_1$ and makes $\mathbb{M}_-$ a real Lie subalgebra,</p>
 <p>$$
@@ -124,7 +124,7 @@ $$</p>
 <p>$$
 0,\qquad \mathbb{C}_{\mathbb{B}},\qquad \mathrm{Vect}(\mathbb{B}),\qquad \mathfrak{g}.
 $$</p>
-<p><em>Proof.</em> The centre and the derived algebra are ideals, because the bracket vanishes on the centre and the derived algebra is mapped into itself. For the converse, take a nonzero ideal $\mathfrak{a}$ and an element $\tilde P\in\mathfrak{a}$. If $\mathbf{P}=0$ then $\mathfrak{a}$ contains a nonzero central element, hence the whole centre. If $\mathbf{P}\neq0$, then $[\mathfrak{g},\tilde P]$ is the span of the cross products $\mathbf{X}\times\mathbf{P}$ over all vectors $\mathbf{X}$, which is the plane orthogonal to $\mathbf{P}$; and $[\mathfrak{g},[\mathfrak{g},\tilde P]]$ is all of $\mathrm{Vect}(\mathbb{B})$, since the cross product of two vectors in that plane generates the third direction. Hence an ideal that contains an element with nonzero vector part contains $\mathrm{Vect}(\mathbb{B})$, and then either it stops at $\mathrm{Vect}(\mathbb{B})$ or, if it also contains a nonzero central element, it is $\mathfrak{g}$. Computed on the ideal generated by $e_0$, by $e_1$ and by $e_0+e_1$, of complex dimensions one, three and four.</p>
+<p><em>Proof.</em> The centre and the derived algebra are ideals, because the bracket vanishes on the centre and the derived algebra is mapped into itself. For the converse, take a nonzero ideal $\mathfrak{a}$ and an element $\tilde P\in\mathfrak{a}$. If $\vec P=0$ then $\mathfrak{a}$ contains a nonzero central element, hence the whole centre. If $\vec P\neq0$, then $[\mathfrak{g},\tilde P]$ is the span of the cross products $\vec X\times\vec P$ over all vectors $\vec X$, which is the plane orthogonal to $\vec P$; and $[\mathfrak{g},[\mathfrak{g},\tilde P]]$ is all of $\mathrm{Vect}(\mathbb{B})$, since the cross product of two vectors in that plane generates the third direction. Hence an ideal that contains an element with nonzero vector part contains $\mathrm{Vect}(\mathbb{B})$, and then either it stops at $\mathrm{Vect}(\mathbb{B})$ or, if it also contains a nonzero central element, it is $\mathfrak{g}$. Computed on the ideal generated by $e_0$, by $e_1$ and by $e_0+e_1$, of complex dimensions one, three and four.</p>
 <p><strong>Corollary (the quotients).</strong> The quotients of $\mathfrak{g}$ by its ideals are</p>
 <p>$$
 \mathfrak{g}/\mathbb{C}_{\mathbb{B}}\cong\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C}),\qquad
@@ -183,7 +183,7 @@ $$</p>
 <td>the Lie algebra of the antisymmetric plain algebra</td>
 </tr>
 <tr>
-<td>$\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$</td>
+<td>$\tilde P\wedge\tilde Q=\vec P\times\vec Q$</td>
 <td>the bracket, the cross product of the vector parts</td>
 </tr>
 <tr>

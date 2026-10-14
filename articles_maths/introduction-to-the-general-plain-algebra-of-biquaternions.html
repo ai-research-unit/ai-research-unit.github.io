@@ -56,7 +56,7 @@
 <p>The construction is short and the consequences long. The product is $\mathbb{C}$-bilinear, associative and unital, so the space becomes an associative unital $\mathbb{C}$-algebra; a bilinear product is determined by its values on a basis, so the four basis elements carry all of it; and once the algebra is in place, its scalar structure, its centre, its generators and its presentation by relations are read off in turn.</p>
 <p>Two boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>, and what the four rules are to one another is <em>Relations Between the Four General Products</em> and <em>Comparison Between the Four General Products</em>. And the question of which base rings $\mathbb{B}$ admits, together with the reading of the same product with the real scalars, is <em>The Realification of the General Plain Algebra</em>, where the two admissible bases and the failure of the quaternions are treated; the centre of $\mathbb{B}$ and the centrality criterion are §<em>The Scalars Are the Centre</em> below. What this article adds is the algebra as the product makes it.</p>
 <p>The elements, the basis and the conjugations are <em>Biquaternions as a Vector Space over $\mathbb{C}$</em>. The general theory is <em>Algebras: A General Introduction</em>, associativity is <em>Associative Algebras</em>, the identity is <em>Unital Algebras</em>, the tensor product is <em>Tensor Products of Algebras</em>, the presentation of an algebra by generators and relations is <em>Quotients of the Tensor Algebra</em>, and the anti-automorphism as an isomorphism onto the opposite algebra is <em>Opposite Algebras and Anti-Isomorphisms</em>. On the biquaternion side, the two-sided ideals and the simplicity of $\mathbb{B}$ are <em>Ideals and Peirce Decomposition of the General Plain Algebra</em>, the units and the invertibility criterion are <em>Norm and Invertibility in the General Quaternionic Algebra</em>, the zero divisors are <em>Zero Divisors of the General Plain Algebra</em>, the square of one element is <em>Square Roots of a General Element in the General Plain Algebra</em>, and the matrix model of the algebra is <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>.</p>
-<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = \sum_{k=1}^{3} Q_ke_k$, and $(\mathbf P,\mathbf Q) = \sum_k P_kQ_k$ is the complex bilinear dot product of the vector parts.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_0e_0 + \vec Q$ with $\vec Q = \sum_{k=1}^{3} Q_ke_k$, and $(\vec P,\vec Q) = \sum_k P_kQ_k$ is the complex bilinear dot product of the vector parts.</p>
 <h2 id="the-multiplication-as-a-binary-operation">The Multiplication as a Binary Operation</h2>
 <h3 id="the-rule">The Rule</h3>
 <p><strong>Definition.</strong> The <strong>multiplication</strong> of the algebra is the rule</p>
@@ -74,9 +74,9 @@ $$</p>
 <h3 id="the-scalarvector-form">The Scalar–Vector Form</h3>
 <p>Collecting the scalar part and the vector part of the two elements, the same product reads</p>
 <p>$$
-\tilde P\tilde Q = \bigl(P_0Q_0 - (\mathbf P,\mathbf Q)\bigr) + P_0\mathbf Q + Q_0\mathbf P + \mathbf P\times\mathbf Q ,
+\tilde P\tilde Q = \bigl(P_0Q_0 - (\vec P,\vec Q)\bigr) + P_0\vec Q + Q_0\vec P + \vec P\times\vec Q ,
 $$</p>
-<p>where $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$ are the complex bilinear dot and cross products of the vector parts and the display is the one of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>. Its scalar part is $\mathrm{Sc}(\tilde P\tilde Q) = \sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon = (1,-1,-1,-1)$, and its vector part is the one displayed.</p>
+<p>where $(\vec P,\vec Q)$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products of the vector parts and the display is the one of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>. Its scalar part is $\mathrm{Sc}(\tilde P\tilde Q) = \sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon = (1,-1,-1,-1)$, and its vector part is the one displayed.</p>
 <h3 id="the-multiplication-table">The Multiplication Table</h3>
 <p>A product that is linear in each argument is fixed by its values on the basis pairs, so the multiplication is fixed by the following sixteen products.</p>
 <p><strong>Proposition.</strong> The products of the basis elements are</p>
@@ -219,9 +219,9 @@ $$</p>
 <h2 id="the-subalgebra-generated-by-one-element">The Subalgebra Generated by One Element</h2>
 <p>The subalgebra $\mathbb{C}[\tilde Q] = \mathbb{C}e_0 + \mathbb{C}\tilde Q + \mathbb{C}\tilde Q^2 + \cdots$ generated by one element is commutative and at most two-dimensional:</p>
 <p>$$
-\tilde Q^2 = \bigl(Q_0^2 - (\mathbf Q,\mathbf Q)\bigr) + 2Q_0\mathbf Q \in \mathbb{C}e_0 + \mathbb{C}\tilde Q ,
+\tilde Q^2 = \bigl(Q_0^2 - (\vec Q,\vec Q)\bigr) + 2Q_0\vec Q \in \mathbb{C}e_0 + \mathbb{C}\tilde Q ,
 $$</p>
-<p>the developed square being that of <em>Square Roots of a General Element in the General Plain Algebra</em>. So $\mathbb{C}[\tilde Q] = \mathbb{C}e_0$ for central $\tilde Q$, and $\mathbb{C}[\tilde Q] = \mathbb{C}e_0 \oplus \mathbb{C}\tilde Q$ otherwise. In the second case the element $\tilde Q - Q_0e_0$ has square $-(\mathbf Q,\mathbf Q)e_0$, and the plane is read off from it: when $(\mathbf Q,\mathbf Q) \neq 0$ it is the algebra $\mathbb{C} \oplus \mathbb{C}$ of two copies of the field with coordinatewise multiplication, and when $(\mathbf Q,\mathbf Q) = 0$ it is the algebra of dual numbers $\mathbb{C}[t]/(t^2)$.</p>
+<p>the developed square being that of <em>Square Roots of a General Element in the General Plain Algebra</em>. So $\mathbb{C}[\tilde Q] = \mathbb{C}e_0$ for central $\tilde Q$, and $\mathbb{C}[\tilde Q] = \mathbb{C}e_0 \oplus \mathbb{C}\tilde Q$ otherwise. In the second case the element $\tilde Q - Q_0e_0$ has square $-(\vec Q,\vec Q)e_0$, and the plane is read off from it: when $(\vec Q,\vec Q) \neq 0$ it is the algebra $\mathbb{C} \oplus \mathbb{C}$ of two copies of the field with coordinatewise multiplication, and when $(\vec Q,\vec Q) = 0$ it is the algebra of dual numbers $\mathbb{C}[t]/(t^2)$.</p>
 <p>A unital subalgebra contains the identity $e_0$ and hence every $\mathbb{C}$-multiple of it, so it contains the centre $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_0$, the only scalar line the algebra has; a subalgebra need not be unital, and the line $\mathbb{C}(e_1 + ie_2)$ is one, its product vanishing identically because $(e_1 + ie_2)^2 = 0$. The real subalgebras of $\mathbb{B}$, among them the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and its imaginary $i\mathbb{H}_{\mathbb{B}}$, are read with the real scalars in <em>The Realification of the General Plain Algebra</em> and <em>The Realification of the General Plain Algebra</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The general plain bilinear product of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>, read as a multiplication on the underlying $\mathbb{C}$-vector space of $\mathbb{B}$, is $\mathbb{C}$-bilinear, associative and unital. It is determined by the sixteen products of the four basis elements, and the table is the quaternion table with the central imaginary allowed as a coefficient.</p>
@@ -229,7 +229,7 @@ $$</p>
 \boxed{\ \text{With the general plain bilinear product, } \mathbb{B} \text{ is an associative unital non-commutative } \mathbb{C}\text{-algebra of dimension four.}\ }
 $$</p>
 <p>Its scalars enter through the structure map $\varphi(A) = Ae_0$, whose image is the scalar line and which is central; the algebra is the complexification of $\mathbb{H}$ by the tensor product of algebras; its centre is the scalar line, so it is central, simple and hence central simple; and it is not a division algebra, the product of $e_0 + ie_1$ and $e_0 - ie_1$ being zero. Two generators suffice, and the relations $e_1^2 = e_2^2 = -e_0$ and $e_1e_2 + e_2e_1 = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.</p>
-<p>The subalgebra generated by one element is the plane spanned by $e_0$ and that element, a product of two copies of $\mathbb{C}$ when $(\mathbf Q,\mathbf Q) \neq 0$ and the dual numbers when $(\mathbf Q,\mathbf Q) = 0$, and its real counterpart is <em>The Realification of the General Plain Algebra</em>. That exactly one of the four general products is a multiplication of an associative unital $\mathbb{C}$-algebra, and why the other three are not, is <em>Comparison Between the Four General Products</em>.</p>
+<p>The subalgebra generated by one element is the plane spanned by $e_0$ and that element, a product of two copies of $\mathbb{C}$ when $(\vec Q,\vec Q) \neq 0$ and the dual numbers when $(\vec Q,\vec Q) = 0$, and its real counterpart is <em>The Realification of the General Plain Algebra</em>. That exactly one of the four general products is a multiplication of an associative unital $\mathbb{C}$-algebra, and why the other three are not, is <em>Comparison Between the Four General Products</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -252,11 +252,11 @@ $$</p>
 <td>central scalar imaginary, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$\tilde Q = Q_0e_0 + \mathbf Q$</td>
-<td>a biquaternion and its scalar–vector split, $\mathbf Q = \sum_k Q_ke_k$</td>
+<td>$\tilde Q = Q_0e_0 + \vec Q$</td>
+<td>a biquaternion and its scalar–vector split, $\vec Q = \sum_k Q_ke_k$</td>
 </tr>
 <tr>
-<td>$(\mathbf P,\mathbf Q) = \sum_k P_kQ_k$</td>
+<td>$(\vec P,\vec Q) = \sum_k P_kQ_k$</td>
 <td>complex bilinear dot product of the vector parts</td>
 </tr>
 <tr>

@@ -53,7 +53,7 @@
         <h1 id="the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra"><strong>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The antisymmetric quaternionic multiplication
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ is alternating, vector valued and without a unit,
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ is alternating, vector valued and without a unit,
 and it fails the Jacobi identity (<em>Introduction to the Antisymmetric Quaternionic Algebra of
 Quaternions</em>). This article does the failure in full: the cyclic sum and its closed form, the basis
 computation and the witnesses, the criterion that relates the defect to the associator of the parent
@@ -72,8 +72,8 @@ associator of the parent is <em>The Associator and the Ternary Product of the Qu
 comparator, whose cyclic sum vanishes, is <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>, above
 <em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</em> of the</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\mathbf q$, the <strong>vector subspace</strong> is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$ and $\mathbf p\times\mathbf q$ is the vector product. The
+$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the <strong>vector subspace</strong> is
+$\mathrm{Vect}(\mathbb{H})=\{\vec q\}$ and $\vec p\times\vec q$ is the vector product. The
 <strong>cyclic sum</strong> is the left-nested one,</p>
 <p>$$
 J(\tilde p,\tilde q,\tilde r)
@@ -88,15 +88,15 @@ $[\tilde p,\tilde q,\tilde r]=(\tilde p^{\natural}\tilde q)^{\natural}\tilde r-\
 <p><strong>Theorem (the closed form).</strong> For all $\tilde p,\tilde q,\tilde r$,</p>
 <p>$$
 J(\tilde p,\tilde q,\tilde r)
-=-p_0\,(\mathbf q\times\mathbf r)+q_0\,(\mathbf p\times\mathbf r)-r_0\,(\mathbf p\times\mathbf q).
+=-p_0\,(\vec q\times\vec r)+q_0\,(\vec p\times\vec r)-r_0\,(\vec p\times\vec q).
 $$</p>
 <p>In particular $J$ is a pure vector for every triple, the scalar part of every cyclic sum is zero, and
 $J$ is an $\mathbb{R}$-trilinear alternating map of its three arguments.</p>
-<p><em>Proof.</em> Insert the explicit form $\tilde a\diamond\tilde b=a_0\mathbf b-b_0\mathbf a-\mathbf a\times\mathbf b$
+<p><em>Proof.</em> Insert the explicit form $\tilde a\diamond\tilde b=a_0\vec b-b_0\vec a-\vec a\times\vec b$
 into the three terms. The first factor of each term is a value of the block and has zero scalar part, so
 each term is $-c_0\tilde u-\tilde u\times\tilde c$ with $\tilde u$ the bracket of the first two
 arguments; collecting the three terms, the double cross products collapse by the identity
-$\mathbf u\times(\mathbf a\times\mathbf b)=\mathbf a(\mathbf u,\mathbf b)-\mathbf b(\mathbf u,\mathbf a)$
+$\vec u\times(\vec a\times\vec b)=\vec a(\vec u,\vec b)-\vec b(\vec u,\vec a)$
 and the terms with the scalar product of vectors cancel in pairs, leaving the displayed expression.
 Alternation follows from the antisymmetry of the cross product.</p>
 <p><strong>Corollary (the vanishing condition).</strong> The cyclic sum vanishes identically in the scalar triple
@@ -200,7 +200,7 @@ block is therefore the non-associativity of the parent alone.</p>
 $\mathbb{H}\diamond\mathbb{H}=\mathrm{Vect}(\mathbb{H})$, and it is closed under the operation. On it
 the block is the negative of the cross product,</p>
 <p>$$
-\mathbf p\diamond\mathbf q=-\,\mathbf p\times\mathbf q ,
+\vec p\diamond\vec q=-\,\vec p\times\vec q ,
 $$</p>
 <p>which satisfies the Jacobi identity; the subalgebra $(\mathrm{Vect}(\mathbb{H}),\diamond)$ is therefore
 a Lie algebra, isomorphic to the antisymmetric plain block and hence to $\mathfrak{so}(3)$.</p>
@@ -212,12 +212,12 @@ it is the antisymmetric plain operation $\mathrm{APA}$ of <em>The Lie Algebra of
 Algebra</em>, above this article in this category, of structure $\mathfrak{so}(3)$.</p>
 <p><strong>Remark (the failure is the scalar–vector interaction).</strong> The block is a Lie bracket on
 $\mathrm{Vect}(\mathbb{H})$ and not on $\mathbb{H}$: the derived bracket is the cross product and is
-closed and Lie, and what the block adds to it is the two mixed terms $p_0\mathbf q-q_0\mathbf p$, which
+closed and Lie, and what the block adds to it is the two mixed terms $p_0\vec q-q_0\vec p$, which
 carry the scalar part into the vector subspace and break the identity. The failure is thus the failure
 of the extension, not of the derived bracket.</p>
 <h2 id="summary">Summary</h2>
 <p>The antisymmetric quaternionic block fails the Jacobi identity. Its cyclic sum is the pure vector
-$J(\tilde p,\tilde q,\tilde r)=-p_0(\mathbf q\times\mathbf r)+q_0(\mathbf p\times\mathbf r)-r_0(\mathbf p\times\mathbf q)$,
+$J(\tilde p,\tilde q,\tilde r)=-p_0(\vec q\times\vec r)+q_0(\vec p\times\vec r)-r_0(\vec p\times\vec q)$,
 linear in the scalar triple with the three cross products as coefficients; it vanishes identically in
 the scalar triple exactly on the pairwise parallel vector parts, and it is nonzero on $18$ of the $64$
 basis triples. The witness is $(e_0,e_1,e_2)$, of value $-e_3$, and the minimal witnesses are the three
@@ -243,7 +243,7 @@ same way and has $\mathfrak{sl}(2,\mathbb{C})$ as derived algebra.</p>
 <td>the cyclic sum</td>
 </tr>
 <tr>
-<td>$-p_0(\mathbf q\times\mathbf r)+q_0(\mathbf p\times\mathbf r)-r_0(\mathbf p\times\mathbf q)$</td>
+<td>$-p_0(\vec q\times\vec r)+q_0(\vec p\times\vec r)-r_0(\vec p\times\vec q)$</td>
 <td>the closed form</td>
 </tr>
 <tr>
@@ -263,7 +263,7 @@ same way and has $\mathfrak{sl}(2,\mathbb{C})$ as derived algebra.</p>
 <td>the criterion</td>
 </tr>
 <tr>
-<td>$\mathbf p\diamond\mathbf q=-\mathbf p\times\mathbf q$</td>
+<td>$\vec p\diamond\vec q=-\vec p\times\vec q$</td>
 <td>the derived bracket, a Lie bracket of structure $\mathfrak{so}(3)$</td>
 </tr>
 </tbody>

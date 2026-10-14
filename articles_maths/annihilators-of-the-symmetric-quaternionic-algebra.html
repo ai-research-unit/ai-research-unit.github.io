@@ -65,7 +65,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.</p>
 <p>The block of this article is the <strong>symmetric quaternionic multiplication</strong>
 $$
 \tilde P\star\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)
-=N(\tilde P,\tilde Q)\,e_0,\qquad N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q),
+=N(\tilde P,\tilde Q)\,e_0,\qquad N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q),
 $$
 the quaternion form read as a product (<em>Introduction to the Symmetric Quaternionic Algebra of
 Biquaternions</em>). It is commutative and central valued, so the two annihilators of an element are
@@ -107,7 +107,7 @@ one operator of the block.</p>
 <h2 id="the-multiplication-operator-and-the-rank">The Multiplication Operator and the Rank</h2>
 <p><strong>The operator $L_{\tilde P}$ has matrix with the single nonzero row $(P_0,P_1,P_2,P_3)$ in the basis $e_0,e_1,e_2,e_3$, trace $P_0$ and determinant $0$; it has rank one and a hyperplane kernel for $\tilde P\neq0$, and it is the zero operator with kernel all of $\mathbb{B}$ at $\tilde P=0$.</strong></p>
 <p><strong>Proposition (the operator).</strong> In the basis $e_0,e_1,e_2,e_3$ the operator $L_{\tilde P}$ of an
-element $\tilde P=P_0e_0+\mathbf P$ has matrix
+element $\tilde P=P_0e_0+\vec P$ has matrix
 $$
 \begin{pmatrix}
 P_0 & P_1 & P_2 & P_3 \\
@@ -157,15 +157,15 @@ its own annihilator. The reason is that the form is non-degenerate while the pro
 so the orthogonal of a nonzero element is a hyperplane and the radical of the form, which is the
 annihilator of the product, is zero.</p>
 <h2 id="the-annihilator-on-the-remarkable-subspaces">The Annihilator on the Remarkable Subspaces</h2>
-<p><strong>On the centre a nonzero element has the vector subspace as its annihilator, on the vector subspace a nonzero element has the hyperplane $\{\tilde X:(\mathbf P,\mathbf X)=0\}$ as its annihilator, and on the Hermitian subspace the annihilator of a nonzero element meets the subspace in a hyperplane of it.</strong></p>
+<p><strong>On the centre a nonzero element has the vector subspace as its annihilator, on the vector subspace a nonzero element has the hyperplane $\{\tilde X:(\vec P,\vec X)=0\}$ as its annihilator, and on the Hermitian subspace the annihilator of a nonzero element meets the subspace in a hyperplane of it.</strong></p>
 <p><strong>The centre.</strong> A nonzero central element $\tilde P=\lambda e_0$ has
 $N(\lambda e_0,\tilde X)=\lambda X_0$, so its annihilator is $\{X_0=0\}$, the vector subspace. The
 centre is therefore the subspace whose nonzero elements annihilate exactly the vector subspace.</p>
-<p><strong>The vector subspace.</strong> A nonzero pure element $\tilde P=\mathbf P$ has
-$N(\mathbf P,\tilde X)=(\mathbf P,\mathbf X)$, so its annihilator is the hyperplane
-$\{\tilde X:(\mathbf P,\mathbf X)=0\}$. It contains the centre and, inside the vector subspace, the
-complex line through $\mathbf P$ and the orthogonal plane of the vector form; the element
-$\mathbf P$ lies in the annihilator exactly when it is isotropic.</p>
+<p><strong>The vector subspace.</strong> A nonzero pure element $\tilde P=\vec P$ has
+$N(\vec P,\tilde X)=(\vec P,\vec X)$, so its annihilator is the hyperplane
+$\{\tilde X:(\vec P,\vec X)=0\}$. It contains the centre and, inside the vector subspace, the
+complex line through $\vec P$ and the orthogonal plane of the vector form; the element
+$\vec P$ lies in the annihilator exactly when it is isotropic.</p>
 <p><strong>The Hermitian and anti-Hermitian subspaces.</strong> On the Hermitian subspace the form $N$ is Hermitian
 and its restriction is non-degenerate; the annihilator of a nonzero Hermitian element meets the
 subspace in a hyperplane of it, and the real directions among them are self-orthogonal when their
@@ -175,7 +175,7 @@ real square is zero.</p>
 the right annihilator being the kernels of the left and the right multiplication. The symmetric
 quaternionic multiplication is commutative and central valued,
 $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with
-$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, so the two annihilators of an element
+$N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$, so the two annihilators of an element
 coincide. Every nonzero element is a zero divisor and every nonzero element has the <strong>hyperplane</strong>
 $\tilde P^{\perp}$ as annihilator, of complex dimension three; the element lies in its own
 annihilator exactly when it is isotropic, and the annihilator of the product is $\{0\}$ because the
@@ -196,7 +196,7 @@ is the hyperplane in the one and the plane or the line in the other.</p>
 <td>the symmetric quaternionic multiplication, the operation $\mathrm{SQA}$</td>
 </tr>
 <tr>
-<td>$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>$N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$</td>
 <td>the quaternion form, the scalar part of the block</td>
 </tr>
 <tr>
@@ -212,7 +212,7 @@ is the hyperplane in the one and the plane or the line in the other.</p>
 <td>the annihilator of a nonzero element, a complex hyperplane of dimension three</td>
 </tr>
 <tr>
-<td>$N(\tilde P)=P_0^{2}+(\mathbf P,\mathbf P)$</td>
+<td>$N(\tilde P)=P_0^{2}+(\vec P,\vec P)$</td>
 <td>the algebraic norm, vanishing exactly when the element lies in its own annihilator</td>
 </tr>
 </tbody>

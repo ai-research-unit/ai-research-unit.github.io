@@ -65,7 +65,7 @@
 <li><strong>Resonance is the vanishing of the longitudinal component.</strong> At $\omega = \omega_0$ the effective field is purely transverse, the effective Hamiltonian is $\propto ie_1$, and the spin precesses about the transverse axis, so the two eigenstates exchange with unit amplitude after a $\pi$-pulse.</li>
 <li><strong>The transition probability is a trace pairing</strong>, $P_\downarrow(t) = \mathrm{Tr}(\tilde\Pi_2(\hat{z})\tilde{\rho}(t))$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the trace formula.</li>
 </ol>
-<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ sends $e_0\mapsto I_2$, $ie_k\mapsto\sigma_k$.</p>
+<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ sends $e_0\mapsto I_2$, $ie_k\mapsto\sigma_k$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>, for the spin operators and the two-level Hamiltonian.
 - Companion article <em>Exercise: Spin Precession in a Magnetic Field</em>, for the Larmor precession and the evolution biquaternion.
@@ -75,9 +75,9 @@
 <h3 id="the-hamiltonian">The Hamiltonian</h3>
 <p>A spin-1/2 of gyromagnetic ratio $\gamma$ in the field</p>
 <p>$$
-\mathbf{B}(t) = B_0\,\hat{z} + B_1\left(\cos\omega t\,\hat{x} - \sin\omega t\,\hat{y}\right)
+\vec B(t) = B_0\,\hat{z} + B_1\left(\cos\omega t\,\hat{x} - \sin\omega t\,\hat{y}\right)
 $$</p>
-<p>has the Hamiltonian $H(t) = -\boldsymbol{\mu}\cdot\mathbf{B}(t)$ with $\boldsymbol{\mu} = \gamma\mathbf{S}$. In the biquaternion algebra the spin operator is $\tilde{\mathbf{S}} = \tfrac{\hbar}{2}i e_k$ along $e_k$, and the Hamiltonian is the Hermitian element</p>
+<p>has the Hamiltonian $H(t) = -\vec\mu\cdot\vec B(t)$ with $\vec\mu = \gamma\vec S$. In the biquaternion algebra the spin operator is $\tilde{\vec S} = \tfrac{\hbar}{2}i e_k$ along $e_k$, and the Hamiltonian is the Hermitian element</p>
 <p>$$
 \tilde{H}(t) = -\frac{\hbar\omega_0}{2}\,ie_3
 -\frac{\hbar\omega_1}{2}\left(ie_1\cos\omega t - ie_2\sin\omega t\right),
@@ -85,7 +85,7 @@ $$</p>
 \omega_0 = \gamma B_0, \quad \omega_1 = \gamma B_1 .
 $$</p>
 <p>Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the <strong>Rabi frequency</strong>, the rate set by the transverse amplitude. Each of the three terms lies in $\mathbb{M}_+$: the longitudinal term is a multiple of $ie_3$ and the transverse terms are multiples of $ie_1$ and $ie_2$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the biquaternion norm and the trace, as the Schrödinger article requires.</p>
-<p>The choice of the $-\hat{y}$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise <em>Exercise: Spin Precession in a Magnetic Field</em>, where the Bloch vector of a spin in a static field precesses as $\mathbf{r}(t) = (\cos\omega_0 t, -\sin\omega_0 t, 0)$ for a state initially along $+\hat{x}$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.</p>
+<p>The choice of the $-\hat{y}$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise <em>Exercise: Spin Precession in a Magnetic Field</em>, where the Bloch vector of a spin in a static field precesses as $\vec r(t) = (\cos\omega_0 t, -\sin\omega_0 t, 0)$ for a state initially along $+\hat{x}$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.</p>
 <h3 id="the-larmor-precession-as-a-rotor">The Larmor Precession as a Rotor</h3>
 <p>With $B_1 = 0$ the propagator is $\tilde{U}_0(t) = \exp(-i\tilde{H}_0t/\hbar)$ with $\tilde{H}_0 = -\tfrac{\hbar\omega_0}{2}ie_3$. Since $-i\tilde{H}_0/\hbar = \tfrac{\omega_0}{2}(i\cdot ie_3) = -\tfrac{\omega_0}{2}e_3$ and $e_3^2 = -e_0$,</p>
 <p>$$
@@ -168,7 +168,7 @@ $$</p>
 <h3 id="the-rotating-wave-approximation">The Rotating-Wave Approximation</h3>
 <p>The circularly polarised drive used above is a single rotating component. A practical magnetic-resonance experiment uses a <strong>linearly</strong> polarised field,</p>
 <p>$$
-\mathbf{B}_1(t) = 2B_1\cos\omega t\;\hat{x},
+\vec B_1(t) = 2B_1\cos\omega t\;\hat{x},
 $$</p>
 <p>which is the sum of the corotating component $B_1(\cos\omega t\,\hat{x}-\sin\omega t\,\hat{y})$ considered above and the counter-rotating component $B_1(\cos\omega t\,\hat{x}+\sin\omega t\,\hat{y})$. The corotating component is static in the rotating frame; the counter-rotating component rotates at $2\omega$ and contributes rapidly oscillating terms. The <strong>rotating-wave approximation</strong> (RWA) drops the counter-rotating terms, and it is accurate when $\omega_1\ll\omega_0$; the neglected terms produce the Bloch–Siegert shift, of order $\omega_1^2/\omega_0$. In the biquaternion algebra the split is the decomposition of the linear drive into the two circular components $ie_1\cos\omega t\mp ie_2\sin\omega t$, each a Hermitian combination; the RWA keeps the component that corotates with the Larmor rotor $\tilde{U}_0$ and discards its conjugate. The approximation is thus a statement about which rotor the drive is in phase with, and it has no special algebraic status.</p>
 <h3 id="math110-and-math111-pulses">$\pi$ and $\pi/2$ Pulses</h3>
@@ -180,13 +180,13 @@ t = \frac{\pi}{2\omega_1}:\quad P_\downarrow = \sin^2\frac{\pi}{4} = \frac12 .
 $$</p>
 <p>The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_1(\hat{z})$ to $\tilde\Pi_2(\hat{z})$ with unit probability. The second is a $\pi/2$-pulse: it prepares the equal coherent superposition. In the algebra these are the statements that the rotor $\tilde{R}(\pi/\omega_1) = -e_1$, a $\pi$-rotation about the effective axis $e_1$, exchanges the two idempotents, and that $\tilde{R}(\pi/2\omega_1)$ carries the pole of the Bloch sphere to its equator. A $\pi/2$-pulse followed by a free Larmor evolution and a second $\pi/2$-pulse is the standard Ramsey interferometer; its fringes are governed by the phase accumulated in the interval, in which a dynamical part and a geometric part can be separated.</p>
 <h2 id="the-bloch-picture">The Bloch Picture</h2>
-<p>The state at any time can be written $\tilde{\rho}(t) = \tfrac12(e_0 + i\mathbf{r}(t))$, with $\mathbf{r}(t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{H},\tilde{K}] = -2(\mathbf{h}\times\mathbf{k})$ of the companion article <em>Quantum Physics in Biquaternionic Form</em>, the Bloch vector obeys</p>
+<p>The state at any time can be written $\tilde{\rho}(t) = \tfrac12(e_0 + i\vec r(t))$, with $\vec r(t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{H},\tilde{K}] = -2(\vec h\times\vec k)$ of the companion article <em>Quantum Physics in Biquaternionic Form</em>, the Bloch vector obeys</p>
 <p>$$
-\dot{\mathbf{r}} = \boldsymbol{\omega}_{\mathrm{eff}}\times\mathbf{r},
+\dot{\vec r} = \vec\omega_{\mathrm{eff}}\times\vec r,
 \qquad
-\boldsymbol{\omega}_{\mathrm{eff}} = (-\omega_1, 0, -\Delta),
+\vec\omega_{\mathrm{eff}} = (-\omega_1, 0, -\Delta),
 $$</p>
-<p>for the effective Hamiltonian $\tilde{H}_R = -\tfrac{\hbar}{2}i(\omega_1 e_1+\Delta e_3)$. This is a rigid rotation of $\mathbf{r}$ about the fixed axis $-\hat{n}_R$ at the rate $\tilde\Omega$. Three cases are worth separating.</p>
+<p>for the effective Hamiltonian $\tilde{H}_R = -\tfrac{\hbar}{2}i(\omega_1 e_1+\Delta e_3)$. This is a rigid rotation of $\vec r$ about the fixed axis $-\hat{n}_R$ at the rate $\tilde\Omega$. Three cases are worth separating.</p>
 <ul>
 <li><strong>Resonance</strong> ($\Delta = 0$): the rotation axis is the $x$-axis, the Bloch vector rotates in the $yz$-plane, and a spin initially along $+z$ passes through the equator and reaches $-z$ after a half-period — the $\pi$-pulse.</li>
 <li><strong>Large detuning</strong> ($|\Delta|\gg\omega_1$): the axis is close to $-z$, the rotation cone is narrow, and the spin remains near its initial pole, executing small oscillations of amplitude $\sim\omega_1/|\Delta|$ — the dispersive regime.</li>
@@ -222,7 +222,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>A spin-1/2 driven by $\mathbf{B}(t) = B_0\hat{z} + B_1(\cos\omega t\,\hat{x}-\sin\omega t\,\hat{y})$ has the biquaternion Hamiltonian</p>
+<p>A spin-1/2 driven by $\vec B(t) = B_0\hat{z} + B_1(\cos\omega t\,\hat{x}-\sin\omega t\,\hat{y})$ has the biquaternion Hamiltonian</p>
 <p>$$
 \tilde{H}(t) = -\frac{\hbar\omega_0}{2}ie_3 - \frac{\hbar\omega_1}{2}\left(ie_1\cos\omega t - ie_2\sin\omega t\right) \in \mathbb{M}_+,
 $$</p>
@@ -236,7 +236,7 @@ $$</p>
 <p>$$
 P_\downarrow(t) = \frac{\omega_1^2}{\omega_1^2+\Delta^2}\,\sin^2\!\left(\frac{\tilde\Omega t}{2}\right),
 $$</p>
-<p>which reduces to $\sin^2(\omega_1t/2)$ on resonance. The $\pi$-pulse $t = \pi/\omega_1$ inverts the spin and the $\pi/2$-pulse $t = \pi/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $\dot{\mathbf{r}} = \boldsymbol{\omega}_{\mathrm{eff}}\times\mathbf{r}$ with $\boldsymbol{\omega}_{\mathrm{eff}} = (-\omega_1,0,-\Delta)$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.</p>
+<p>which reduces to $\sin^2(\omega_1t/2)$ on resonance. The $\pi$-pulse $t = \pi/\omega_1$ inverts the spin and the $\pi/2$-pulse $t = \pi/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $\dot{\vec r} = \vec\omega_{\mathrm{eff}}\times\vec r$ with $\vec\omega_{\mathrm{eff}} = (-\omega_1,0,-\Delta)$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -271,7 +271,7 @@ $$</p>
 <td>Spin observable along $\hat{k}$</td>
 </tr>
 <tr>
-<td>$\mathbf{B}(t) = B_0\hat{z}+B_1(\cos\omega t\,\hat{x}-\sin\omega t\,\hat{y})$</td>
+<td>$\vec B(t) = B_0\hat{z}+B_1(\cos\omega t\,\hat{x}-\sin\omega t\,\hat{y})$</td>
 <td>Static field plus corotating drive</td>
 </tr>
 <tr>
@@ -315,7 +315,7 @@ $$</p>
 <td>$\pi$-pulse, $\pi/2$-pulse durations</td>
 </tr>
 <tr>
-<td>$\dot{\mathbf{r}} = \boldsymbol{\omega}_{\mathrm{eff}}\times\mathbf{r}$</td>
+<td>$\dot{\vec r} = \vec\omega_{\mathrm{eff}}\times\vec r$</td>
 <td>Bloch equation in the rotating frame</td>
 </tr>
 </tbody>

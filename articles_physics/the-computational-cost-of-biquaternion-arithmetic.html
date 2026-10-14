@@ -71,11 +71,11 @@ $$</p>
 <p>A complex multiplication costs four real multiplications and two real additions in the naive scheme, and three real multiplications and five real additions under Gauss's rule. The naive count for a biquaternion product is therefore four times its coefficient count; the reduced count exploits both the algebra and the complex arithmetic. Both reductions are exact: no approximation and no special case is involved.</p>
 <p>The slice structure of <em>Conventions in the Biquaternion Universe</em> fixes what the extreme counts mean. An element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ has all four coefficients real, and an element of the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ has all four coefficients purely imaginary; these are the two cheapest cases, and they are the cases that correspond to the time-reversal symmetric and antisymmetric matrix structures of the source. A general element of $\mathbb{B}$ uses all eight parameters and is the most expensive case. Throughout, "a product with all eight components active" means a product of two general elements.</p>
 <h2 id="the-naive-count">The Naive Count</h2>
-<p>Write the two factors as scalar part plus vector part, $\tilde{P} = S_1 + \mathbf{V}_1$ and $\tilde{Q} = S_2 + \mathbf{V}_2$, with $S$ complex scalars and $\mathbf{V}$ complex vectors. The product is</p>
+<p>Write the two factors as scalar part plus vector part, $\tilde{P} = S_1 + \vec V_1$ and $\tilde{Q} = S_2 + \vec V_2$, with $S$ complex scalars and $\vec V$ complex vectors. The product is</p>
 <p>$$
-\tilde{P}\tilde{Q} = \bigl(S_1S_2 - \mathbf{V}_1\cdot\mathbf{V}_2\bigr) + \bigl(S_1\mathbf{V}_2 + S_2\mathbf{V}_1 + \mathbf{V}_1\times\mathbf{V}_2\bigr).
+\tilde{P}\tilde{Q} = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr).
 $$</p>
-<p>The sign of the cross term is the corpus's: with $e_1e_2 = e_3$ the outer product is $+\mathbf{V}_1\times\mathbf{V}_2$, so that $e_1e_2$ returns $e_3$; the source's convention reverses the order of the vector units and carries the opposite sign, which is a relabelling and changes no count.</p>
+<p>The sign of the cross term is the corpus's: with $e_1e_2 = e_3$ the outer product is $+\vec V_1\times\vec V_2$, so that $e_1e_2$ returns $e_3$; the source's convention reverses the order of the vector units and carries the opposite sign, which is a relabelling and changes no count.</p>
 <p>Counting the coefficient products that appear above, one by one:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -90,19 +90,19 @@ $$</p>
 <td>$1$</td>
 </tr>
 <tr>
-<td>$\mathbf{V}_1\cdot\mathbf{V}_2$</td>
+<td>$\vec V_1\cdot\vec V_2$</td>
 <td>$3$</td>
 </tr>
 <tr>
-<td>$S_1\mathbf{V}_2$</td>
+<td>$S_1\vec V_2$</td>
 <td>$3$</td>
 </tr>
 <tr>
-<td>$S_2\mathbf{V}_1$</td>
+<td>$S_2\vec V_1$</td>
 <td>$3$</td>
 </tr>
 <tr>
-<td>$\mathbf{V}_1\times\mathbf{V}_2$</td>
+<td>$\vec V_1\times\vec V_2$</td>
 <td>$6$</td>
 </tr>
 <tr>
@@ -151,7 +151,7 @@ $$</p>
 <h2 id="matrix-valued-biquaternions">Matrix-Valued Biquaternions</h2>
 <p>The scheme above has coefficients that are complex <em>scalars</em>, and it is bilinear over the real numbers: every output is a scalar linear combination of the eight intermediate products. <strong>Nothing in it uses the commutativity of the coefficients</strong>, so it applies unchanged when the coefficients are replaced by matrices. That is the step from a biquaternion to a <em>matrix-valued</em> biquaternion, an element of $\mathbb{B}^{n\times m}$: each of the four coefficients becomes an $n\times m$ complex matrix, and the product rule keeps exactly its scalar-vector shape,</p>
 <p>$$
-Q_1Q_2 = \bigl(S_1S_2 - \mathbf{V}_1\cdot\mathbf{V}_2\bigr) + \bigl(S_1\mathbf{V}_2 + S_2\mathbf{V}_1 + \mathbf{V}_1\times\mathbf{V}_2\bigr),
+Q_1Q_2 = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr),
 $$</p>
 <p>with the dot and cross products understood entrywise, in the order of matrix multiplication, and with the coefficients no longer commuting. The eight intermediate products are then products of matrices, evaluated with a single real matrix-multiplication kernel; the dot and cross products are absorbed into them and are never formed separately.</p>
 <p>The counts therefore repeat at matrix level, with "real multiplication" replaced by "real matrix multiplication":</p>
@@ -354,7 +354,7 @@ $$</p>
 <td>Material and informational sectors, the dagger split, crossing the halves</td>
 </tr>
 <tr>
-<td>$S_1+\mathbf{V}_1$, $S_2+\mathbf{V}_2$</td>
+<td>$S_1+\vec V_1$, $S_2+\vec V_2$</td>
 <td>Scalar and vector parts of the two factors</td>
 </tr>
 <tr>

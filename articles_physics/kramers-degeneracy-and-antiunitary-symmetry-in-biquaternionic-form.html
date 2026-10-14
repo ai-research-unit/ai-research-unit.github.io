@@ -129,7 +129,7 @@ $$</p>
 <p><strong>Antiunitarity and the sign.</strong> With $\mathcal T=i\sigma_yK$ on $\mathbb{C}^2$, the representative $U=i\sigma_y$ is real (maximum entry-wise imaginary part $0$) and satisfies $U^2=-I_2$. Applying $\mathcal T$ to the two basis vectors gives $\mathcal T^2e_b=-e_b$ for $b=1,2$, and the antiunitarity relation $\langle\mathcal Tu,\mathcal Tv\rangle=\overline{\langle u,v\rangle}$ holds to machine precision on random vectors, with maximum error $0$. The Kramers orthogonality $\langle\mathcal Tv,v\rangle=0$ holds for random $v$, with maximum modulus $0$ over five trials.</p>
 <p><strong>A degenerate pair.</strong> On $\mathbb{C}^4=\mathbb{C}^2\otimes\mathbb{C}^2$ with the antiunitary $\mathcal T=U\otimes I_2$ acting on the first factor and $H=I_2\otimes h$ with $h=\begin{pmatrix}1&2\\2&1\end{pmatrix}$ on the second, one has $[\mathcal T,H]=0$ exactly ($\|THT^{-1}-H\|=0$). The vector $v=\tfrac1{\sqrt2}(e_1\otimes(1,1))$ satisfies $Hv=3v$ with residual $0$, its partner $\mathcal Tv=\tfrac{1}{\sqrt2}(e_2\otimes(1,1))$ — up to the sign carried by $\sigma_y$ — satisfies $H(\mathcal Tv)=3(\mathcal Tv)$ with residual $0$, and $\langle v,\mathcal Tv\rangle=0$ exactly. The doublet is the theorem's conclusion, exhibited.</p>
 <p><strong>The opposite sign.</strong> For $\mathcal T^2=+1$ no degeneracy is enforced. With a random real symmetric $H$ on $\mathbb{C}^4$ — which is invariant under conjugation, the $\mathcal T^2=+1$ case — the spectrum is $\{-3.01553,-1.70328,0.12807,2.44612\}$, four distinct levels with minimum gap $1.31225$. The contrast is the theorem: the degeneracy is a consequence of the sign, not of the symmetry alone.</p>
-<p><strong>The antisymmetric form.</strong> The pairing that makes each doublet one quaternionic line is the invariant antisymmetric form of the spinor, $\varepsilon=i\sigma_y$, and its invariance was recomputed: for five random $SU(2)$ elements $U=\exp(i\theta\,\mathbf n\cdot\boldsymbol\sigma/2)$, the identity</p>
+<p><strong>The antisymmetric form.</strong> The pairing that makes each doublet one quaternionic line is the invariant antisymmetric form of the spinor, $\varepsilon=i\sigma_y$, and its invariance was recomputed: for five random $SU(2)$ elements $U=\exp(i\theta\,\vec n\cdot\boldsymbol\sigma/2)$, the identity</p>
 <p>$$
 U^{\mathsf T}\varepsilon\,U=\varepsilon
 $$</p>
@@ -202,9 +202,9 @@ $$</p>
 <h2 id="what-breaks-the-symmetry">What Breaks the Symmetry</h2>
 <p><strong>A magnetic field.</strong> The standard $\mathcal T$-odd perturbation of a spin system is a term linear in an external field,</p>
 <p>$$
-H_{\text{field}}=-\boldsymbol\mu\cdot\mathbf B ,
+H_{\text{field}}=-\vec\mu\cdot\vec B ,
 \qquad
-\boldsymbol\mu=\gamma\mathbf S ,
+\vec\mu=\gamma\vec S ,
 $$</p>
 <p>and it breaks the symmetry because the angular momentum is $\mathcal T$-odd while the field is $\mathcal T$-invariant. In the module language the perturbation is a term along a chosen axis, and the axis is one of the three imaginary directions of the algebra: the field singles out a unit $n$ and hence a particular $e_n$, and the pair $\{v,\mathcal Tv\}$ is split by an amount proportional to the field. This is the empirical signature of the classification: a Kramers pair's splitting in a field is the statement that no $\mathcal T$-invariant perturbation can lift it.</p>
 <p><strong>The linear splitting, and why it is linear.</strong> The two facts — an invariant perturbation cannot split a pair, an odd one splits it linearly — follow from the transformation of the perturbation. Under $\mathcal T$ the spin operators are odd,</p>
@@ -297,7 +297,7 @@ $$</p>
 <td>Proof identities (recomputed, error $0$)</td>
 </tr>
 <tr>
-<td>$H_{\text{field}}=-\boldsymbol\mu\cdot\mathbf B$</td>
+<td>$H_{\text{field}}=-\vec\mu\cdot\vec B$</td>
 <td>$\mathcal T$-odd perturbation; lifts the degeneracy</td>
 </tr>
 <tr>

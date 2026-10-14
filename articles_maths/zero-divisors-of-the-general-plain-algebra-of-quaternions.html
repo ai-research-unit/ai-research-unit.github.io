@@ -76,24 +76,24 @@ Plain Algebra</em>. The annihilator of an element, the two multiplication operat
 <p>Throughout this article the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, with
 $e_k^2 = -e_0$ and $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$. A general quaternion is</p>
 <p>$$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0 e_0 + \mathbf q,
-\qquad \mathbf q = q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R},
+\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0 e_0 + \vec q,
+\qquad \vec q = q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R},
 $$</p>
-<p>with <strong>scalar part</strong> $q_0 = \mathrm{Sc}(\tilde q)$ and <strong>vector part</strong> $\mathbf q$. The natural
-conjugation is $\tilde q^{\natural} = q_0 e_0 - \mathbf q$. Over $\mathbb{R}$ the bar is the identity
+<p>with <strong>scalar part</strong> $q_0 = \mathrm{Sc}(\tilde q)$ and <strong>vector part</strong> $\vec q$. The natural
+conjugation is $\tilde q^{\natural} = q_0 e_0 - \vec q$. Over $\mathbb{R}$ the bar is the identity
 and the star coincides with the natural conjugation, so the chapter has exactly two general products,
 the plain one $\tilde p\tilde q$ and the quaternionic one $\tilde p^{\natural}\tilde q$; the plain
 product is the one of this article. A product of the space is written $\star$ when the statement is
 one about an arbitrary product and only the fact that it is a product is used, as in §<em>Definition</em>.</p>
-<p>The plain form is $B(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q) = p_0q_0 - (\mathbf p,\mathbf q)$,
+<p>The plain form is $B(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q) = p_0q_0 - (\vec p,\vec q)$,
 indefinite of signature $(1,3)$; the quaternion form is
-$N(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p^{\natural}\tilde q) = p_0q_0 + (\mathbf p,\mathbf q)$,
+$N(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p^{\natural}\tilde q) = p_0q_0 + (\vec p,\vec q)$,
 positive definite. The <strong>quaternion norm</strong> is
-$N(\tilde q) = \tilde q\tilde q^{\natural} = \tilde q^{\natural}\tilde q = q_0^2 + |\mathbf q|^2$,
+$N(\tilde q) = \tilde q\tilde q^{\natural} = \tilde q^{\natural}\tilde q = q_0^2 + |\vec q|^2$,
 a positive real vanishing only at $\tilde q = 0$, and it is multiplicative,
 $N(\tilde p\tilde q) = N(\tilde p)N(\tilde q)$, by <em>Norm and Invertibility in the General Plain
 Algebra</em>, above this article in this category. The centre is the scalar line $\mathbb{R}e_0$; the
-vector subspace is $\mathrm{Vect}(\mathbb{H}) = \{\mathbf q\}$, of dimension three. The two forms are
+vector subspace is $\mathrm{Vect}(\mathbb{H}) = \{\vec q\}$, of dimension three. The two forms are
 <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>.</p>
 <h2 id="definition">Definition</h2>
 <p><strong>Definition.</strong> Let $\star$ be a product on $\mathbb{H}$ and let $\tilde q\in\mathbb{H}$. The element
@@ -206,10 +206,10 @@ General Plain Algebra</em>, below this article in this category.</p>
 <h2 id="the-two-families-of-the-complexified-block">The Two Families of the Complexified Block</h2>
 <p>The complexified block splits its zero divisors into two families according to the value of the
 scalar part $Q_0$. A biquaternion is <strong>pure</strong> when $Q_0 = 0$ and <strong>non-pure</strong> when $Q_0 \neq 0$, and
-the criterion reads differently in the two cases. Writing $\tilde Q = Q_0 e_0 + \mathbf Q$ with
-$\mathbf Q$ a complex vector part,</p>
+the criterion reads differently in the two cases. Writing $\tilde Q = Q_0 e_0 + \vec Q$ with
+$\vec Q$ a complex vector part,</p>
 <p>$$
-\tilde Q\tilde Q^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + (\mathbf Q,\mathbf Q),
+\tilde Q\tilde Q^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + (\vec Q,\vec Q),
 $$</p>
 <p>so in the pure case the scalar contribution drops out and the condition is the isotropy of the
 complex vector part, while in the non-pure case the scalar contribution can cancel the vector one.
@@ -217,25 +217,25 @@ The pure zero divisors are the nonzero nilpotents and the non-pure ones are the 
 multiples of the idempotents.</p>
 <p>Over $\mathbb{R}$ the two families inherit the split but lose their elements, and for the same reason
 in both cases: the criterion becomes the vanishing of a sum of squares of real coefficients.</p>
-<p><strong>Proposition (the pure family is empty).</strong> A pure quaternion $\mathbf p$ has
-$\mathbf p\mathbf p^{\natural} = |\mathbf p|^2 e_0$ and $\mathbf p^2 = -|\mathbf p|^2 e_0$, so</p>
+<p><strong>Proposition (the pure family is empty).</strong> A pure quaternion $\vec p$ has
+$\vec p\vec p^{\natural} = |\vec p|^2 e_0$ and $\vec p^2 = -|\vec p|^2 e_0$, so</p>
 <p>$$
-\mathbf p^2 = 0 \quad\Longleftrightarrow\quad |\mathbf p|^2 = p_1^2 + p_2^2 + p_3^2 = 0
-\quad\Longleftrightarrow\quad \mathbf p = 0 .
+\vec p^2 = 0 \quad\Longleftrightarrow\quad |\vec p|^2 = p_1^2 + p_2^2 + p_3^2 = 0
+\quad\Longleftrightarrow\quad \vec p = 0 .
 $$</p>
 <p>So there is no nonzero pure zero divisor, and the pure family of the complexified block has no real
 member.</p>
 <p><strong>Proof.</strong> For a pure quaternion the product with its conjugate is
-$\mathbf p\mathbf p^{\natural} = |\mathbf p|^2 e_0$ and the square is
-$\mathbf p^2 = -(\mathbf p,\mathbf p)e_0 = -|\mathbf p|^2 e_0$, as the coordinate rule gives directly.
-A sum of three squares of real numbers vanishes only at $\mathbf p = 0$.</p>
+$\vec p\vec p^{\natural} = |\vec p|^2 e_0$ and the square is
+$\vec p^2 = -(\vec p,\vec p)e_0 = -|\vec p|^2 e_0$, as the coordinate rule gives directly.
+A sum of three squares of real numbers vanishes only at $\vec p = 0$.</p>
 <p><strong>Proposition (the non-pure family is empty).</strong> A quaternion with $q_0 \neq 0$ has</p>
 <p>$$
-\tilde q\tilde q^{\natural} = q_0^2 + |\mathbf q|^2 \geq q_0^2 > 0 ,
+\tilde q\tilde q^{\natural} = q_0^2 + |\vec q|^2 \geq q_0^2 > 0 ,
 $$</p>
 <p>so it satisfies the criterion at no point. There is no non-pure zero divisor.</p>
 <p><strong>Proof.</strong> The scalar contribution $q_0^2$ is strictly positive and the vector contribution
-$|\mathbf q|^2$ is nonnegative; their sum cannot vanish when $q_0 \neq 0$.</p>
+$|\vec q|^2$ is nonnegative; their sum cannot vanish when $q_0 \neq 0$.</p>
 <p><strong>Corollary.</strong> Both families of the complexified block are empty over $\mathbb{R}$, and the
 zero-divisor set of the plain product is empty. The two families, read on the real algebra, are the
 classes of <em>Idempotents of the General Plain Algebra</em> and <em>Nilpotents of the General Plain Algebra</em>,
@@ -264,8 +264,8 @@ definiteness: the biquaternion norm can vanish on a nonzero element, the quatern
 <p>A zero divisor is an element on which $\tilde q\tilde q^{\natural}$ vanishes, so which subspaces
 contain zero divisors is the question of where the norm vanishes. Of the remarkable subspaces, the
 centre $\mathbb{R}e_0$ contains none: on the centre $N(s e_0) = s^2$ vanishes only at $s = 0$. The
-vector subspace $\mathrm{Vect}(\mathbb{H})$ contains none: on it $N(\mathbf q) = |\mathbf q|^2$
-vanishes only at $\mathbf q = 0$. No other subspace is any different, the norm being positive
+vector subspace $\mathrm{Vect}(\mathbb{H})$ contains none: on it $N(\vec q) = |\vec q|^2$
+vanishes only at $\vec q = 0$. No other subspace is any different, the norm being positive
 definite on the whole space. So every remarkable subspace is free of zero divisors, and the only
 element of the space on which the criterion is satisfied is the origin, which is not a zero divisor by
 the definition of §<em>Definition</em>. The reading on the two subspaces is <em>Introduction to the Remarkable
@@ -306,7 +306,7 @@ either is a zero divisor.</p>
 <td>General quaternion</td>
 </tr>
 <tr>
-<td>$\tilde q^{\natural} = q_0 e_0 - \mathbf q$</td>
+<td>$\tilde q^{\natural} = q_0 e_0 - \vec q$</td>
 <td>Natural conjugation</td>
 </tr>
 <tr>

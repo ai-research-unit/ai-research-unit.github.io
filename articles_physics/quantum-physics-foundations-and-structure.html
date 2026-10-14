@@ -157,9 +157,9 @@ $$</p>
 <p>where $\{|0\rangle, |1\rangle\}$ is an orthonormal basis. The coefficients $\alpha, \beta$ are complex numbers, determined up to a global phase.</p>
 <p>A <strong>mixed state</strong> of a qubit is a density matrix</p>
 <p>$$
-\rho = \frac{1}{2}\left(I + \mathbf{r}\cdot\boldsymbol{\sigma}\right),
+\rho = \frac{1}{2}\left(I + \vec r\cdot\boldsymbol{\sigma}\right),
 $$</p>
-<p>where $\mathbf{r} = (r_1, r_2, r_3) \in \mathbb{R}^3$ is the <strong>Bloch vector</strong>, and $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices:</p>
+<p>where $\vec r = (r_1, r_2, r_3) \in \mathbb{R}^3$ is the <strong>Bloch vector</strong>, and $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices:</p>
 <p>$$
 \sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
 \sigma_2 = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
@@ -167,43 +167,43 @@ $$</p>
 $$</p>
 <p>The <strong>positivity</strong> of $\rho$ is equivalent to the condition</p>
 <p>$$
-|\mathbf{r}| \leq 1.
+|\vec r| \leq 1.
 $$</p>
-<p>The state is <strong>pure</strong> if and only if $|\mathbf{r}| = 1$, and <strong>mixed</strong> otherwise. The <strong>maximally mixed state</strong> has $\mathbf{r} = 0$, i.e., $\rho = I/2$.</p>
+<p>The state is <strong>pure</strong> if and only if $|\vec r| = 1$, and <strong>mixed</strong> otherwise. The <strong>maximally mixed state</strong> has $\vec r = 0$, i.e., $\rho = I/2$.</p>
 <h3 id="the-bloch-sphere">The Bloch Sphere</h3>
 <p>The set of pure states of a qubit is in one-to-one correspondence with the unit sphere</p>
 <p>$$
-S^2 = \{\mathbf{r} \in \mathbb{R}^3 : |\mathbf{r}| = 1\}.
+S^2 = \{\vec r \in \mathbb{R}^3 : |\vec r| = 1\}.
 $$</p>
-<p>This is the <strong>Bloch sphere</strong>. Each point on the sphere corresponds to a unique pure state, and the vector $\mathbf{r}$ is the direction along which the spin is definite (spin-up in the direction $\mathbf{r}$).</p>
+<p>This is the <strong>Bloch sphere</strong>. Each point on the sphere corresponds to a unique pure state, and the vector $\vec r$ is the direction along which the spin is definite (spin-up in the direction $\vec r$).</p>
 <p>The set of all states (pure and mixed) is the <strong>Bloch ball</strong> of radius one:</p>
 <p>$$
-B^3 = \{\mathbf{r} \in \mathbb{R}^3 : |\mathbf{r}| \leq 1\}.
+B^3 = \{\vec r \in \mathbb{R}^3 : |\vec r| \leq 1\}.
 $$</p>
-<p>The centre $\mathbf{r} = 0$ is the maximally mixed state; the boundary sphere is the set of pure states.</p>
+<p>The centre $\vec r = 0$ is the maximally mixed state; the boundary sphere is the set of pure states.</p>
 <p>The Bloch sphere provides a geometric representation of a qubit that is both intuitive and useful. Rotations of the sphere correspond to unitary operations on the qubit (up to a sign), and the distance between two points corresponds to the distinguishability of the corresponding states.</p>
 <h3 id="pauli-matrices-and-observables">Pauli Matrices and Observables</h3>
 <p>The <strong>Pauli matrices</strong> form a basis for the traceless Hermitian operators on $\mathbb{C}^2$. Any Hermitian operator $A$ on $\mathbb{C}^2$ can be written as</p>
 <p>$$
-A = a_0\, I + \mathbf{a}\cdot\boldsymbol{\sigma},
+A = a_0\, I + \vec a\cdot\boldsymbol{\sigma},
 $$</p>
-<p>where $a_0 \in \mathbb{R}$ is the trace part and $\mathbf{a} \in \mathbb{R}^3$ is the traceless part. The eigenvalues of $A$ are $a_0 \pm |\mathbf{a}|$.</p>
-<p>The <strong>expectation value</strong> of $A$ in a state $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$ is</p>
+<p>where $a_0 \in \mathbb{R}$ is the trace part and $\vec a \in \mathbb{R}^3$ is the traceless part. The eigenvalues of $A$ are $a_0 \pm |\vec a|$.</p>
+<p>The <strong>expectation value</strong> of $A$ in a state $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$ is</p>
 <p>$$
-\langle A \rangle_\rho = \mathrm{Tr}(A\rho) = a_0 + \mathbf{a}\cdot\mathbf{r}.
+\langle A \rangle_\rho = \mathrm{Tr}(A\rho) = a_0 + \vec a\cdot\vec r.
 $$</p>
 <p>This is the standard formula for the expectation value of a qubit observable.</p>
 <h3 id="the-born-rule-for-a-qubit">The Born Rule for a Qubit</h3>
-<p>For a projective measurement of an observable $A = a_0 I + \mathbf{a}\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\mathbf{a}|$, with probabilities</p>
+<p>For a projective measurement of an observable $A = a_0 I + \vec a\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\vec a|$, with probabilities</p>
 <p>$$
-p_\pm = \frac{1}{2}\left(1 \pm \hat{\mathbf{a}}\cdot\mathbf{r}\right),
+p_\pm = \frac{1}{2}\left(1 \pm \hat a\cdot\vec r\right),
 $$</p>
-<p>where $\hat{\mathbf{a}} = \mathbf{a}/|\mathbf{a}|$. So the probability of each outcome depends only on the angle between the measurement direction $\hat{\mathbf{a}}$ and the Bloch vector $\mathbf{r}$.</p>
+<p>where $\hat a = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $\hat a$ and the Bloch vector $\vec r$.</p>
 <p>After the measurement with outcome $+$, the state collapses to the pure state</p>
 <p>$$
-\rho' = \frac{1}{2}\left(I + \hat{\mathbf{a}}\cdot\boldsymbol{\sigma}\right),
+\rho' = \frac{1}{2}\left(I + \hat a\cdot\boldsymbol{\sigma}\right),
 $$</p>
-<p>i.e., the Bloch vector becomes $\hat{\mathbf{a}}$.</p>
+<p>i.e., the Bloch vector becomes $\hat a$.</p>
 <h2 id="dynamics">Dynamics</h2>
 <h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
 <p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\psi(t)\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
@@ -379,8 +379,8 @@ $$</p>
 <td>Pauli matrices</td>
 </tr>
 <tr>
-<td>$\mathbf{r}$</td>
-<td>Bloch vector, $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$</td>
+<td>$\vec r$</td>
+<td>Bloch vector, $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$</td>
 </tr>
 <tr>
 <td>$S^2$, $B^3$</td>

@@ -70,8 +70,8 @@
 <tr>
 <td>the general plain bilinear product</td>
 <td>$\tilde{P}\tilde{Q}$</td>
-<td>$\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]$</td>
-<td>$+P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$</td>
+<td>$\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]$</td>
+<td>$+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$</td>
 <td>$\mathbb{C}$</td>
 <td>associative</td>
 <td>$e_0$, both sides</td>
@@ -80,8 +80,8 @@
 <tr>
 <td>the symmetric plain bilinear product</td>
 <td>$\tfrac12(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$</td>
-<td>$\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]$</td>
-<td>$+P_0\mathbf{Q}+Q_0\mathbf{P}$</td>
+<td>$\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]$</td>
+<td>$+P_0\vec Q+Q_0\vec P$</td>
 <td>$\mathbb{C}$</td>
 <td>commutative, <strong>Jordan</strong></td>
 <td>$e_0$, both sides</td>
@@ -91,7 +91,7 @@
 <td>the antisymmetric plain bilinear product</td>
 <td>$\tfrac12(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})$</td>
 <td>$\bigl[0\bigr]$</td>
-<td>$\mathbf{P}\times\mathbf{Q}$</td>
+<td>$\vec P\times\vec Q$</td>
 <td>$\mathbb{C}$</td>
 <td>alternating, <strong>Jacobi</strong></td>
 <td>none</td>
@@ -100,8 +100,8 @@
 <tr>
 <td>the general quaternionic bilinear product</td>
 <td>$\tilde{P}^{\natural}\tilde{Q}$</td>
-<td>$\bigl[P_0Q_0+(\mathbf{P},\mathbf{Q})\bigr]$</td>
-<td>$+P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$</td>
+<td>$\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]$</td>
+<td>$+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$</td>
 <td>$\mathbb{C}$</td>
 <td>not associative</td>
 <td>$e_0$, left only</td>
@@ -110,7 +110,7 @@
 <tr>
 <td>the symmetric quaternionic bilinear product</td>
 <td>$\tfrac12(\tilde{P}^{\natural}\tilde{Q}+\tilde{Q}^{\natural}\tilde{P})$</td>
-<td>$\bigl[P_0Q_0+(\mathbf{P},\mathbf{Q})\bigr]$</td>
+<td>$\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]$</td>
 <td>$0$</td>
 <td>$\mathbb{C}$</td>
 <td>commutative, no Jordan</td>
@@ -121,7 +121,7 @@
 <td>the antisymmetric quaternionic bilinear product</td>
 <td>$\tfrac12(\tilde{P}^{\natural}\tilde{Q}-\tilde{Q}^{\natural}\tilde{P})$</td>
 <td>$\bigl[0\bigr]$</td>
-<td>$P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$</td>
+<td>$P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$</td>
 <td>$\mathbb{C}$</td>
 <td>alternating, no Jacobi</td>
 <td>none</td>
@@ -130,8 +130,8 @@
 <tr>
 <td>the general plain sesquilinear product</td>
 <td>$\tilde{P}\tilde{Q}^{*}$</td>
-<td>$\bigl[P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})\bigr]$</td>
-<td>$-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$</td>
+<td>$\bigl[P_0\overline{Q_0}+(\vec P,\overline{\vec Q})\bigr]$</td>
+<td>$-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>not associative</td>
 <td>$e_0$, right only</td>
@@ -140,7 +140,7 @@
 <tr>
 <td>the symmetric plain sesquilinear product</td>
 <td>$\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\overline{\tilde{Q}}\tilde{P}^{\natural}\bigr)$</td>
-<td>$\bigl[P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})\bigr]$</td>
+<td>$\bigl[P_0\overline{Q_0}+(\vec P,\overline{\vec Q})\bigr]$</td>
 <td>$0$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>conjugate-commutative, no Jordan</td>
@@ -151,7 +151,7 @@
 <td>the antisymmetric plain sesquilinear product</td>
 <td>$\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}-\overline{\tilde{Q}}\tilde{P}^{\natural}\bigr)$</td>
 <td>$\bigl[0\bigr]$</td>
-<td>$-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$</td>
+<td>$-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>conjugate-alternating, no Jacobi</td>
 <td>none</td>
@@ -160,8 +160,8 @@
 <tr>
 <td>the general quaternionic sesquilinear product</td>
 <td>$\tilde{P}^{\natural}\tilde{Q}^{*}$</td>
-<td>$\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]$</td>
-<td>$-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}}$</td>
+<td>$\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]$</td>
+<td>$-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>not associative</td>
 <td>none</td>
@@ -170,8 +170,8 @@
 <tr>
 <td>the symmetric quaternionic sesquilinear product</td>
 <td>$\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*}+\tilde{Q}^{*}\tilde{P}^{\natural}\bigr)$</td>
-<td>$\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]$</td>
-<td>$-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$</td>
+<td>$\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]$</td>
+<td>$-P_0\overline{\vec Q}-\overline{Q_0}\vec P$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>conjugate-commutative, no Jordan</td>
 <td>none</td>
@@ -181,7 +181,7 @@
 <td>the antisymmetric quaternionic sesquilinear product</td>
 <td>$\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*}-\tilde{Q}^{*}\tilde{P}^{\natural}\bigr)$</td>
 <td>$\bigl[0\bigr]$</td>
-<td>$\mathbf{P}\times\overline{\mathbf{Q}}$</td>
+<td>$\vec P\times\overline{\vec Q}$</td>
 <td>$\mathbb{C},\bar{\cdot}$</td>
 <td>conjugate-alternating, no Jacobi</td>
 <td>none</td>
@@ -189,17 +189,17 @@
 </tr>
 </tbody>
 </table></div>
-<p><strong>Reading the third column.</strong> The twelve products have twelve scalar parts, and these take <strong>four values and no more</strong>. The scalar part $P_0Q_0-(\mathbf P,\mathbf Q)$ is shared by the general plain bilinear product and by its symmetrisation; the scalar part $P_0Q_0+(\mathbf P,\mathbf Q)$ by the general quaternionic bilinear product and by its symmetrisation; the scalar part $P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ by the general plain sesquilinear product and by its symmetrisation; the scalar part $P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$ by the general quaternionic sesquilinear product and by its symmetrisation. The remaining four products, the four antisymmetrisations, have the scalar part $0$. Four values, each carried by the general product of a family and by its symmetrisation; and no value is carried by products of two different families.</p>
+<p><strong>Reading the third column.</strong> The twelve products have twelve scalar parts, and these take <strong>four values and no more</strong>. The scalar part $P_0Q_0-(\vec P,\vec Q)$ is shared by the general plain bilinear product and by its symmetrisation; the scalar part $P_0Q_0+(\vec P,\vec Q)$ by the general quaternionic bilinear product and by its symmetrisation; the scalar part $P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ by the general plain sesquilinear product and by its symmetrisation; the scalar part $P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ by the general quaternionic sesquilinear product and by its symmetrisation. The remaining four products, the four antisymmetrisations, have the scalar part $0$. Four values, each carried by the general product of a family and by its symmetrisation; and no value is carried by products of two different families.</p>
 <p><strong>Definition (the four forms).</strong> The <strong>form</strong> of a product $f$ is its scalar part, $\varphi(\tilde P,\tilde Q)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$, a function of two elements. The four distinct scalar parts therefore give <strong>four forms</strong>, the scalar parts of the four general products. They are written with the one bracket of <em>Conventions in the Biquaternion Universe</em>, whose subscript records the pair $(a,b)$, the natural conjugation ${}^{\natural}$ for a non-identity first slot and the star ${}^{*}$ for a non-identity second slot:</p>
 <p>$$
-B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q),
+B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q),
 \qquad
-N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q),
+N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q),
 $$
 $$
-H(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}),
+H(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}),
 \qquad
-K(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q}),
+K(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\vec P,\overline{\vec Q}),
 $$</p>
 <p>for the four pairs $(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},{}^{*})$, $({}^{\natural},{}^{*})$ read in that order, the four pairs and no others: the <strong>general plain bilinear form</strong>, the <strong>general quaternionic bilinear form</strong>, the <strong>general plain sesquilinear form</strong>, also called the <strong>Hermitian form</strong>, and the <strong>general quaternionic sesquilinear form</strong>, also called the <strong>Krein form</strong>. The symmetrisation of a family keeps the scalar part of the general product, so it keeps the form; the antisymmetrisation kills the scalar part, so it has no form. That is the whole of the count, and §<em>From Twelve Operations to Four Forms</em> proves it.</p>
 <p>The four forms are the four pairings of the algebra, read as the scalar parts of the four general products. What is written here is the count of four, the notation, the table of the four, the groups that preserve each form and the hyperbolic structure of $B$; the group of the four involutions is <em>The Group of Involutions</em> and <em>Conventions in the Biquaternion Universe</em>, and the four null sets and the shapes of their cones are the layer articles <em>The Krein Level Sets and the Hyperbolic Structure</em>, <em>The Topology of the Zero-Divisor Cone</em> and <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>. Each form is the trace form of its own pair, up to the factor of the trace convention,</p>
@@ -210,7 +210,7 @@ $$</p>
 <p>The <strong>algebraic norm</strong> of a form is the form with its two arguments equated, $\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$, a function of one element. The four algebraic norms of the four forms are those of <em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em>: that article starts from the four forms defined here, and it owns the further structure of the four — the multiplicativity of $N$, the definiteness of the algebraic norm of $H$, the failure of any function to be both, the two senses of the word <em>norm</em> and the one topological norm of the space. The chain is therefore the table of the twelve, then the four forms of this article, then the four algebraic norms of the companion.</p>
 <p>The four forms are separated by their symmetry and by their Gram matrix, and no two of them share both. The <strong>symmetry</strong> is that of the second slot of the general product: symmetric for the two bilinear forms, conjugate-symmetric for the two sesquilinear ones. The <strong>Gram matrix</strong>, the identity $\mathrm I_4$ for $N$ and $H$ and the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ for $B$ and $K$, is that of the first slot, which enters through the natural conjugation and the sign vector $\varepsilon=(1,-1,-1,-1)$. It fixes the <strong>signature</strong> of the realification of each, and it is the first slot alone that decides whether a form is definite or indefinite where the other is not.</p>
 <h2 id="notational-conventions">Notational Conventions</h2>
-<p>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_0e_0\in\mathbb{C}_{\mathbb{B}}$ and $v=\sum_{k=1}^{3}Q_ke_k\in\mathrm{Vect}(\mathbb{B})$. The scalar part is $\mathrm{Sc}$, the coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $\mathbb{B}$ is identified with $\mathbb{C}^{4}$ by $\tilde Q\mapsto(Q_0,Q_1,Q_2,Q_3)$. The vector parts carry the complex bilinear dot product $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\mathbf P\times\mathbf Q$. The four forms are $B$, $N$, $H$ and $K$; their names, brackets and pairs are the convention of <em>Conventions in the Biquaternion Universe</em>, which reads the four on the algebra and on the material sector. $H$ is also the Hermitian form and $K$ the Krein form, and the letters $B$, $N$, $H$, $K$ are the short names of this article. A form is $\mathbb{C}$-<strong>bilinear</strong> when its second slot is read without the star, so that a scalar pulls out of it, and <strong>sesquilinear</strong> when the second slot is read with the star, so that the scalar pulls out conjugated. The Euclidean norm is $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$, the square root of the algebraic norm of $H$.</p>
+<p>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_0e_0\in\mathbb{C}_{\mathbb{B}}$ and $v=\sum_{k=1}^{3}Q_ke_k\in\mathrm{Vect}(\mathbb{B})$. The scalar part is $\mathrm{Sc}$, the coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $\mathbb{B}$ is identified with $\mathbb{C}^{4}$ by $\tilde Q\mapsto(Q_0,Q_1,Q_2,Q_3)$. The vector parts carry the complex bilinear dot product $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\vec P\times\vec Q$. The four forms are $B$, $N$, $H$ and $K$; their names, brackets and pairs are the convention of <em>Conventions in the Biquaternion Universe</em>, which reads the four on the algebra and on the material sector. $H$ is also the Hermitian form and $K$ the Krein form, and the letters $B$, $N$, $H$, $K$ are the short names of this article. A form is $\mathbb{C}$-<strong>bilinear</strong> when its second slot is read without the star, so that a scalar pulls out of it, and <strong>sesquilinear</strong> when the second slot is read with the star, so that the scalar pulls out conjugated. The Euclidean norm is $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$, the square root of the algebraic norm of $H$.</p>
 <h2 id="the-form-of-an-operation">The Form of an Operation</h2>
 <p><strong>Definition (the form of an operation).</strong> Let $f$ be an operation on $\mathbb{B}$ with scalar part $\varphi(\tilde P,\tilde Q)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$. The <strong>form of the operation $f$</strong> is $\varphi$. It is bilinear when the second slot of $f$ is read without the star, sesquilinear when it is read with the star. In both cases the value lies in $\mathbb{C}$, the conjugation of the second slot entering the value; a sesquilinear form is conjugate-symmetric, $\varphi(\tilde P,\tilde Q)=\overline{\varphi(\tilde Q,\tilde P)}$, so that its algebraic norm is real. For an operation whose scalar part vanishes identically the form is the zero form.</p>
 <p>The definition is the one of <em>Introduction to Mathematics</em>: the form is the degree-two object attached to a product, it is a function of two elements, and the algebraic norm is that form at its two equal arguments, a function of one. The four forms of the biquaternion algebra are then the four functions of the introduction, $B$, $N$, $H$ and $K$, read on the third column of the table of the twelve.</p>
@@ -229,26 +229,26 @@ $$</p>
 B=-(1+i),\qquad N=1+i,\qquad H=1-i,\qquad K=-(1-i),
 $$</p>
 <p>four different complex numbers, and no two of the four agree.</p>
-<p><strong>Remark (the zero form is not a form of the count).</strong> The four antisymmetric operations have the zero scalar part because their scalar part vanishes identically — $\mathbf P\times\mathbf Q$ for $\mathrm{APA}$ and $\mathrm{AQA}$, and the alternating forms of the two Hermitian forms for $\mathrm{APS}$ and $\mathrm{AQS}$. A vanishing scalar part is counted as no form rather than as a fifth form, so the twelve operations are counted four ways and no more.</p>
+<p><strong>Remark (the zero form is not a form of the count).</strong> The four antisymmetric operations have the zero scalar part because their scalar part vanishes identically — $\vec P\times\vec Q$ for $\mathrm{APA}$ and $\mathrm{AQA}$, and the alternating forms of the two Hermitian forms for $\mathrm{APS}$ and $\mathrm{AQS}$. A vanishing scalar part is counted as no form rather than as a fifth form, so the twelve operations are counted four ways and no more.</p>
 <h2 id="the-four-forms">The Four Forms</h2>
 <h3 id="the-general-plain-bilinear-form-math187">The General Plain Bilinear Form $B$</h3>
 <p>$$
-B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q),
+B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q),
 $$</p>
 <p>the scalar part of the general plain bilinear product. It is symmetric, $\mathbb{C}$-bilinear and complex-valued, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. It is non-degenerate. Its null set, the set of $\tilde Q$ with $B(\tilde Q,\tilde Q)=0$, is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$, of real dimension six, and it is neither the zero-divisor cone nor the light cone. In the physics of the corpus this is the form of <strong>composition</strong>: it pairs two material operations, and its algebraic norm carries the sector sign, negative on the anti-Hermitian sector and positive on the Hermitian one.</p>
 <h3 id="the-general-quaternionic-bilinear-form-math195">The General Quaternionic Bilinear Form $N$</h3>
 <p>$$
-N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q),
+N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q),
 $$</p>
 <p>the scalar part of the general quaternionic bilinear product: the same form as $B$ read through the natural conjugation of the first slot, differing from it by the sign of the vector part alone. It is symmetric, $\mathbb{C}$-bilinear and complex-valued, its Gram matrix is the identity $\mathrm I_4$, and its realification is of signature $(4,4)$. It is non-degenerate. Its null set is the zero-divisor cone $\mathcal N=\{N(\tilde Q,\tilde Q)=0\}$, of real dimension six, which is the light cone of the physics corpus. This is the form of <strong>causality</strong>: its algebraic norm is the interval, and the pair of the first slot is what makes the square of a material element land on the interval rather than on the negative Euclidean square.</p>
 <h3 id="the-general-plain-sesquilinear-form-math202-the-hermitian-form">The General Plain Sesquilinear Form $H$, the Hermitian Form</h3>
 <p>$$
-H(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}),
+H(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}),
 $$</p>
 <p>the scalar part of the general plain sesquilinear product. It is conjugate-symmetric, $H(\tilde P,\tilde Q)=\overline{H(\tilde Q,\tilde P)}$, sesquilinear in the second slot, and its algebraic norm is real and positive definite, $H(\tilde Q,\tilde Q)>0$ for $\tilde Q\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. It is non-degenerate, and its null set is the origin alone, so it has no cone. This is the form of <strong>probability</strong>: it is the Born pairing, definite, and its algebraic norm is the square of the unique topological norm of the space, $\lVert\tilde Q\rVert_E^{2}$.</p>
 <h3 id="the-general-quaternionic-sesquilinear-form-math210-the-krein-form">The General Quaternionic Sesquilinear Form $K$, the Krein Form</h3>
 <p>$$
-K(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q}),
+K(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\vec P,\overline{\vec Q}),
 $$</p>
 <p>the scalar part of the general quaternionic sesquilinear product: the same form as $H$ read through the natural conjugation of the first slot, differing from it by the sign of the vector part alone. It is conjugate-symmetric and sesquilinear, its algebraic norm is real and indefinite, its Gram matrix is the sign matrix $\mathrm E$, and its realification is of signature $(2,6)$. It is non-degenerate, and its null set is the real cone $\mathcal K$, the null cone of the Krein form. This is the form of <strong>gauge</strong>: indefinite, of mixed signature on every sector, and the form of a constraint rather than of a state space.</p>
 <h2 id="the-table-of-the-four-forms">The Table of the Four Forms</h2>
@@ -271,7 +271,7 @@ $$</p>
 <td>$B$</td>
 <td>$\langle\cdot,\cdot\rangle$</td>
 <td>$(\mathrm{id},\mathrm{id})$</td>
-<td>$P_0Q_0-(\mathbf P,\mathbf Q)$</td>
+<td>$P_0Q_0-(\vec P,\vec Q)$</td>
 <td>symmetric</td>
 <td>$\mathrm E$</td>
 <td>$(4,4)$</td>
@@ -282,7 +282,7 @@ $$</p>
 <td>$N$</td>
 <td>$\langle\cdot,\cdot\rangle_{\natural}$</td>
 <td>$({}^{\natural},\mathrm{id})$</td>
-<td>$P_0Q_0+(\mathbf P,\mathbf Q)$</td>
+<td>$P_0Q_0+(\vec P,\vec Q)$</td>
 <td>symmetric</td>
 <td>$\mathrm I_4$</td>
 <td>$(4,4)$</td>
@@ -293,7 +293,7 @@ $$</p>
 <td>$H$</td>
 <td>$\langle\cdot,\cdot\rangle_{*}$</td>
 <td>$(\mathrm{id},{}^{*})$</td>
-<td>$P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$</td>
+<td>$P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$</td>
 <td>conjugate-symmetric</td>
 <td>$\mathrm I_4$</td>
 <td>$(8,0)$</td>
@@ -304,7 +304,7 @@ $$</p>
 <td>$K$</td>
 <td>$\langle\cdot,\cdot\rangle_{\natural*}$</td>
 <td>$({}^{\natural},{}^{*})$</td>
-<td>$P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$</td>
+<td>$P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$</td>
 <td>conjugate-symmetric</td>
 <td>$\mathrm E$</td>
 <td>$(2,6)$</td>

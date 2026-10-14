@@ -57,12 +57,12 @@ $\mathrm{AQS}$ of <em>The 12 Algebraic Structures over the Biquaternion $\mathbb
 antisymmetric quaternionic sesquilinear product</p>
 <p>$$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)
-=\mathbf{P}\times\overline{\mathbf{Q}},
+=\vec P\times\overline{\vec Q},
 $$</p>
 <p>and its operators attach an element to an argument:</p>
 <p>$$
-L^{\diamond}_{\tilde A}(\tilde X)=\tilde A\diamond\tilde X=\mathbf{A}\times\overline{\mathbf{X}},\qquad
-R^{\diamond}_{\tilde A}(\tilde X)=\tilde X\diamond\tilde A=\mathbf{X}\times\overline{\mathbf{A}} .
+L^{\diamond}_{\tilde A}(\tilde X)=\tilde A\diamond\tilde X=\vec A\times\overline{\vec X},\qquad
+R^{\diamond}_{\tilde A}(\tilde X)=\tilde X\diamond\tilde A=\vec X\times\overline{\vec A} .
 $$</p>
 <p>The left family is <strong>conjugate-linear</strong> in its argument, the right family is $\mathbb{C}$-<strong>linear</strong>, and the
 band's conjugate-alternation links the two, $L^{\diamond}_{\tilde A}=-C\circ R^{\diamond}_{\tilde A}$ with
@@ -84,7 +84,7 @@ and the higher structure are <em>The Cross Product of a Vector with Its Conjugat
 Real Forms</em> and <em>A Higher Structure for the Jacobi Failure</em>, cited and not repeated.</p>
 <p><strong>Conventions.</strong> As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with
-vector part $\mathbf{Q}$, natural conjugation $\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$ and star
+vector part $\vec Q$, natural conjugation $\tilde Q^{\natural}=Q_0e_0-\vec Q$ and star
 $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$; $(\cdot,\cdot)$ and $\times$ are the bilinear dot and cross
 products; the form is $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$
 with $\varepsilon=(1,-1,-1,-1)$ and fundamental symmetry $J={}^{\natural}$. The symbol $\diamond$ is the
@@ -95,8 +95,8 @@ mathematics avoids because $\wedge$ names the plain cross product.</p>
 <p><strong>Definition (the multiplications of the product).</strong> For $\tilde A\in\mathbb{B}$ the <strong>left multiplication</strong>
 and the <strong>right multiplication</strong> of the product $\diamond$ are</p>
 <p>$$
-L^{\diamond}_{\tilde A}(\tilde X)=\tilde A\diamond\tilde X=\mathbf{A}\times\overline{\mathbf{X}},\qquad
-R^{\diamond}_{\tilde A}(\tilde X)=\tilde X\diamond\tilde A=\mathbf{X}\times\overline{\mathbf{A}} .
+L^{\diamond}_{\tilde A}(\tilde X)=\tilde A\diamond\tilde X=\vec A\times\overline{\vec X},\qquad
+R^{\diamond}_{\tilde A}(\tilde X)=\tilde X\diamond\tilde A=\vec X\times\overline{\vec A} .
 $$</p>
 <p>Their determination is <em>The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra</em>, which owns the left family, its matrix, its rank and its adjoint.</p>
 <h3 id="the-parities-and-the-link-between-the-families">The Parities and the Link Between the Families</h3>
@@ -107,8 +107,8 @@ R^{\diamond}_{\tilde A}(\lambda\tilde X)=\lambda\,R^{\diamond}_{\tilde A}(\tilde
 $$</p>
 <p>and in the parameter $L^{\diamond}_{\lambda\tilde A}=\lambda L^{\diamond}_{\tilde A}$,
 $R^{\diamond}_{\lambda\tilde A}=\overline{\lambda}R^{\diamond}_{\tilde A}$. The left multiplication depends
-on $\tilde A$ through $\mathbf{A}$ and is $\mathbb{C}$-linear in the parameter; the right multiplication
-depends on $\tilde A$ through $\overline{\mathbf{A}}$ and is conjugate-linear in the parameter.</p>
+on $\tilde A$ through $\vec A$ and is $\mathbb{C}$-linear in the parameter; the right multiplication
+depends on $\tilde A$ through $\overline{\vec A}$ and is conjugate-linear in the parameter.</p>
 <p><em>Proof.</em> The cross product is conjugate-linear in its second factor and linear in its first; the parameter
 laws are scalar multiplication of the vector part. Verified on sixty random pairs for the variable laws and
 sixty for the parameter laws. The sibling mathematics article states the opposite of the parameter parity of
@@ -133,49 +133,49 @@ the band never carries a full matrix algebra of one kind. This is an interpretat
 <h3 id="the-composition-law">The Composition Law</h3>
 <p><strong>Theorem (the composition laws).</strong> For all $\tilde A,\tilde B,\tilde X\in\mathbb{B}$,</p>
 <p>$$
-L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\tilde X=\mathbf{A}\times\bigl(\overline{\mathbf{B}}\times\mathbf{X}\bigr)
-=\overline{\mathbf{B}}\,(\mathbf{A},\mathbf{X})-(\mathbf{A},\overline{\mathbf{B}})\,\mathbf{X},
+L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\tilde X=\vec A\times\bigl(\overline{\vec B}\times\vec X\bigr)
+=\overline{\vec B}\,(\vec A,\vec X)-(\vec A,\overline{\vec B})\,\vec X,
 $$</p>
 <p>$$
-R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}\tilde X=\bigl(\mathbf{X}\times\overline{\mathbf{B}}\bigr)\times\overline{\mathbf{A}},\qquad
-L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}\tilde X=\mathbf{A}\times\bigl(\overline{\mathbf{X}}\times\mathbf{B}\bigr),\qquad
-R^{\diamond}_{\tilde B}L^{\diamond}_{\tilde A}\tilde X=\bigl(\mathbf{A}\times\overline{\mathbf{X}}\bigr)\times\overline{\mathbf{B}} .
+R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}\tilde X=\bigl(\vec X\times\overline{\vec B}\bigr)\times\overline{\vec A},\qquad
+L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}\tilde X=\vec A\times\bigl(\overline{\vec X}\times\vec B\bigr),\qquad
+R^{\diamond}_{\tilde B}L^{\diamond}_{\tilde A}\tilde X=\bigl(\vec A\times\overline{\vec X}\bigr)\times\overline{\vec B} .
 $$</p>
 <p>The first law is the <strong>composition law adopted by this article</strong>; the second form is the vector
 triple-product identity
-$\mathbf{A}\times(\mathbf{B}\times\mathbf{C})=\mathbf{B}(\mathbf{A},\mathbf{C})-\mathbf{C}(\mathbf{A},\mathbf{B})$.</p>
+$\vec A\times(\vec B\times\vec C)=\vec B(\vec A,\vec C)-\vec C(\vec A,\vec B)$.</p>
 <p><em>Proof.</em> Each law substitutes one definition into the other and cancels the two conjugations in the inner
 slot. The four laws were verified on sixty random triples each to machine precision. The left composition is
 <em>The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra</em>, §<em>The Composition and the Conjugate
 Invariants</em>.</p>
 <p><strong>Corollary (the square).</strong> Setting $\tilde B=\tilde A$, the square is
-$\bigl(L^{\diamond}_{\tilde A}\bigr)^{2}\tilde X=\overline{\mathbf A}(\mathbf A,\mathbf X)-(\mathbf A,\overline{\mathbf A})\mathbf X$,
+$\bigl(L^{\diamond}_{\tilde A}\bigr)^{2}\tilde X=\overline{\vec A}(\vec A,\vec X)-(\vec A,\overline{\vec A})\vec X$,
 a $\mathbb{C}$-linear map of the vector part, in general nonzero and vanishing on the centre. Verified on
 fifty random pairs.</p>
 <p><strong>Read as a physical statement.</strong> Two attachments on the left compose into a <strong>linear</strong> operation of the
-ordinary kind, with a rank-one part and a scalar part proportional to $(\mathbf A,\overline{\mathbf A})$: the
+ordinary kind, with a rank-one part and a scalar part proportional to $(\vec A,\overline{\vec A})$: the
 band composes its operations into objects that are not operations of the band. This is an interpretation.</p>
 <h3 id="the-failure-of-closure">The Failure of Closure</h3>
 <p><strong>Theorem (no Lie algebra of the left multiplications).</strong> The commutator of two left multiplications is</p>
 <p>$$
 \bigl[L^{\diamond}_{\tilde A},L^{\diamond}_{\tilde B}\bigr]\tilde X
-=\overline{\mathbf{B}}\,(\mathbf{A},\mathbf{X})-\overline{\mathbf{A}}\,(\mathbf{B},\mathbf{X})
--2i\,\mathrm{Im}\bigl(\mathbf{A},\overline{\mathbf{B}}\bigr)\,\mathbf{X},
+=\overline{\vec B}\,(\vec A,\vec X)-\overline{\vec A}\,(\vec B,\vec X)
+-2i\,\mathrm{Im}\bigl(\vec A,\overline{\vec B}\bigr)\,\vec X,
 $$</p>
 <p>a $\mathbb{C}$-linear operator. On the <strong>real quaternion subspace</strong> the last term vanishes and</p>
 <p>$$
-\bigl[L^{\diamond}_{\mathbf a},L^{\diamond}_{\mathbf b}\bigr]\tilde X=(\mathbf a\times\mathbf b)\times\mathbf X
-=R^{\diamond}_{-(\mathbf a\times\mathbf b)}\tilde X,
+\bigl[L^{\diamond}_{\vec a},L^{\diamond}_{\vec b}\bigr]\tilde X=(\vec a\times\vec b)\times\vec X
+=R^{\diamond}_{-(\vec a\times\vec b)}\tilde X,
 $$</p>
 <p>while on the <strong>real subspace of the arguments</strong> it is the left multiplication of the cross product,
-$[L^{\diamond}_{\mathbf a},L^{\diamond}_{\mathbf b}]=L^{\diamond}_{\mathbf a\times\mathbf b}$. Off the real
+$[L^{\diamond}_{\vec a},L^{\diamond}_{\vec b}]=L^{\diamond}_{\vec a\times\vec b}$. Off the real
 forms the last term is a nonzero multiple of the identity whenever
-$\mathrm{Im}(\mathbf A,\overline{\mathbf B})\neq0$, and no multiplication of the band has such a term: the
+$\mathrm{Im}(\vec A,\overline{\vec B})\neq0$, and no multiplication of the band has such a term: the
 commutator is then <strong>not a multiplication of the band</strong>, and the family is not closed.</p>
 <p><em>Proof.</em> The commutator is the difference of the two composites of the composition law, and the
 triple-product identity gives the displayed form. For real parameters the last term vanishes because
-$(\mathbf A,\overline{\mathbf B})$ is real, and the first two give $(\mathbf A\times\mathbf B)\times\mathbf X$;
-a multiplication of the band has no term proportional to $\mathbf X$, so the last term cannot be absorbed.
+$(\vec A,\overline{\vec B})$ is real, and the first two give $(\vec A\times\vec B)\times\vec X$;
+a multiplication of the band has no term proportional to $\vec X$, so the last term cannot be absorbed.
 Verified on sixty complex triples for the general formula, sixty real pairs for the real-form law, and sixty
 further triples for the failure count.</p>
 <p><strong>A complex witness.</strong> At $(\tilde A,\tilde B,\tilde X)=(e_1,\,ie_1,\,e_2)$,</p>
@@ -211,13 +211,13 @@ Quaternionic Sesqualgebra of Biquaternions</em>.</p>
 \bigl(R^{\diamond}_{\tilde A}\bigr)^{\dagger}=-R^{\diamond}_{\overline{\tilde A}},\qquad
 \bigl(L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}\bigr)^{\dagger}=R^{\diamond}_{\overline{\tilde B}}\,L^{\diamond}_{\tilde A}.
 $$</p>
-<p>The adjoint of the left multiplication is its <strong>negative</strong>: it reverses the parameter, $\mathbf A\mapsto-\mathbf A$,
+<p>The adjoint of the left multiplication is its <strong>negative</strong>: it reverses the parameter, $\vec A\mapsto-\vec A$,
 and <strong>keeps the side</strong>. The adjoint of the right multiplication negates and conjugates the parameter and keeps
 the side.</p>
 <p><em>Proof.</em> For the first, the left side is
-$K(L^{\diamond}_{\tilde A}\tilde R,\tilde S)=-(\mathbf A\times\overline{\mathbf R},\overline{\mathbf S})=-\det[\mathbf A,\overline{\mathbf R},\overline{\mathbf S}]$
+$K(L^{\diamond}_{\tilde A}\tilde R,\tilde S)=-(\vec A\times\overline{\vec R},\overline{\vec S})=-\det[\vec A,\overline{\vec R},\overline{\vec S}]$
 and the right side is
-$-\overline{K(\tilde R,L^{\diamond}_{\tilde A}\tilde S)}=\det[\overline{\mathbf R},\mathbf A,\overline{\mathbf S}]$,
+$-\overline{K(\tilde R,L^{\diamond}_{\tilde A}\tilde S)}=\det[\overline{\vec R},\vec A,\overline{\vec S}]$,
 the two sign interpretations of one triple product; this
 is the theorem of <em>The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra</em>. The second is the
 same triple product on the other slot, and the third is antimultiplicativity,
@@ -238,7 +238,7 @@ $\tilde A$, explicitly $R^{\diamond}_{\overline{\tilde A}}L^{\diamond}_{\tilde A
 <p><em>Proof.</em> $(\Theta^{\diamond}_{\tilde A})^{\dagger}=R^{\diamond}_{\overline{\tilde A}}L^{\diamond}_{\tilde A}$
 by the third identity, and this equals $L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde A}$ by the triple-product
 identity in the form
-$\mathbf A\times(\overline{\mathbf X}\times\mathbf A)=(\mathbf A\times\overline{\mathbf X})\times\mathbf A$.
+$\vec A\times(\overline{\vec X}\times\vec A)=(\vec A\times\overline{\vec X})\times\vec A$.
 Verified on sixty random parameters.</p>
 <p><strong>Read as a physical statement.</strong> Where the composition band's sandwich is self-adjoint exactly on the two
 sectors of its parameter, the band's sandwich is self-adjoint <strong>unconditionally</strong>: the negative of the left
@@ -253,16 +253,16 @@ L^{\diamond}_{\tilde A}\ \text{self-adjoint}\iff\tilde A\in\mathbb{C}_{\mathbb{B
 L^{\diamond}_{\tilde A}\ \text{skew-adjoint for every }\tilde A,
 $$</p>
 <p>$$
-R^{\diamond}_{\tilde A}\ \text{self-adjoint}\iff\mathbf A\in i\mathbb{R}^{3},
+R^{\diamond}_{\tilde A}\ \text{self-adjoint}\iff\vec A\in i\mathbb{R}^{3},
 \qquad
-R^{\diamond}_{\tilde A}\ \text{skew-adjoint}\iff\mathbf A\in\mathbb{R}^{3}.
+R^{\diamond}_{\tilde A}\ \text{skew-adjoint}\iff\vec A\in\mathbb{R}^{3}.
 $$</p>
 <p>A self-adjoint left multiplication is therefore the <strong>zero</strong> operator, and the generic left multiplication is
 skew-adjoint; the right multiplication separates on the reality of its vector part.</p>
 <p><em>Proof.</em> Self-adjointness of $L^{\diamond}_{\tilde A}$ is $-L^{\diamond}_{\tilde A}=L^{\diamond}_{\tilde A}$,
-hence $\mathbf A=0$, and the skew case holds for every parameter. The right multiplication is parametrised
-injectively in $\overline{\mathbf A}$, so self-adjointness is $-\overline{\mathbf A}=\mathbf A$ and
-skew-adjointness is $-\overline{\mathbf A}=-\mathbf A$. Verified on sixty random parameters for each
+hence $\vec A=0$, and the skew case holds for every parameter. The right multiplication is parametrised
+injectively in $\overline{\vec A}$, so self-adjointness is $-\overline{\vec A}=\vec A$ and
+skew-adjointness is $-\overline{\vec A}=-\vec A$. Verified on sixty random parameters for each
 criterion; the operator of the block is <em>The Adjoint Operators of the Antisymmetric Quaternionic
 Sesqualgebra</em>, §<em>The Adjoint with respect to the Form</em>.</p>
 <p><strong>Read as a physical statement.</strong> The band supplies <strong>no self-adjoint generator</strong>: its left multiplications
@@ -295,7 +295,7 @@ $$</p>
 <p>of real dimension seven, the scalar maps of the centre together with the real skew maps of the vector part;
 the group of invertible real-linear maps preserving the product contains</p>
 <p>$$
-\bigl\{\tilde Q\mapsto\lambda(Q_0)e_0+g\mathbf{Q}:\lambda\in GL_{\mathbb{R}}(\mathbb{C}),\ g\in SO(3,\mathbb{R})\bigr\}
+\bigl\{\tilde Q\mapsto\lambda(Q_0)e_0+g\vec Q:\lambda\in GL_{\mathbb{R}}(\mathbb{C}),\ g\in SO(3,\mathbb{R})\bigr\}
 \cong GL(2,\mathbb{R})\times SO(3,\mathbb{R}),
 $$</p>
 <p>of real dimension seven, whose Lie algebra is $\mathrm{Der}(\diamond)$.</p>
@@ -307,7 +307,7 @@ $\mathbb{R}^{3}$.</p>
 the product, $\overline{\tilde P\diamond\tilde Q}=\overline{\tilde P}\diamond\overline{\tilde Q}$, it is
 conjugate-linear, and it is an antiunitary map of the form,
 $K(\bar{\tilde P},\bar{\tilde Q})=\overline{K(\tilde P,\tilde Q)}$.</p>
-<p><em>Proof.</em> $\overline{\tilde P\diamond\tilde Q}=\overline{\mathbf P\times\overline{\mathbf Q}}=\overline{\mathbf P}\times\mathbf Q=\overline{\tilde P}\diamond\overline{\tilde Q}$,
+<p><em>Proof.</em> $\overline{\tilde P\diamond\tilde Q}=\overline{\vec P\times\overline{\vec Q}}=\overline{\vec P}\times\vec Q=\overline{\tilde P}\diamond\overline{\tilde Q}$,
 using that the coefficient conjugation is an involution; the form statement is the same computation on the scalar pairing.
 Verified on fifty random pairs for the product law and thirty for the form law.</p>
 <p><strong>Read as a physical statement.</strong> The symmetries of the product are an arbitrary real-linear relabelling of
@@ -319,8 +319,8 @@ structure, the form a gauge structure. This is an interpretation.</p>
 <p><strong>Theorem (the sandwich, its value and its adjoint).</strong> The algebraic norm two-sided operator of the band is</p>
 <p>$$
 \Theta^{\diamond}_{\tilde A}=L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde A},\qquad
-\Theta^{\diamond}_{\tilde A}\tilde X=\mathbf A\times\bigl(\overline{\mathbf X}\times\mathbf A\bigr)
-=(\mathbf A,\mathbf A)\,\overline{\mathbf X}-\mathbf A\,(\mathbf A,\overline{\mathbf X}),
+\Theta^{\diamond}_{\tilde A}\tilde X=\vec A\times\bigl(\overline{\vec X}\times\vec A\bigr)
+=(\vec A,\vec A)\,\overline{\vec X}-\vec A\,(\vec A,\overline{\vec X}),
 $$</p>
 <p>conjugate-linear, annihilating the centre, with
 $\bigl(\Theta^{\diamond}_{\tilde A}\bigr)^{\dagger}=\Theta^{\diamond}_{\tilde A}$; and the general
@@ -339,9 +339,9 @@ structure group,</p>
 \qquad\text{for every }g\in SO(3,\mathbb{R}),
 $$</p>
 <p>so it transforms as an axial direction under the symmetries of the product.</p>
-<p><em>Proof.</em> The sandwich depends on $\mathbf A$, and $g$ acts on the vector part by a real orthogonal matrix of
+<p><em>Proof.</em> The sandwich depends on $\vec A$, and $g$ acts on the vector part by a real orthogonal matrix of
 determinant one, commuting with the coefficient conjugation, so
-$g(\mathbf A\times(\overline{\mathbf X}\times\mathbf A))=g\mathbf A\times(\overline{g\mathbf X}\times g\mathbf A)$;
+$g(\vec A\times(\overline{\vec X}\times\vec A))=g\vec A\times(\overline{g\vec X}\times g\vec A)$;
 non-invertibility is the annihilation of the centre. Verified on thirty random parameters and rotations.</p>
 <p><strong>Read as a physical statement.</strong> In the composition band the sandwich and the inner automorphism agree
 exactly on the unitary slice; here there is no slice, because there is no inner automorphism at all. The
@@ -355,8 +355,8 @@ orthogonal direct sum $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\m
 on the centre and negative definite on the vector subspace, of realified signature $(2,6)$. For
 $\tilde A\neq0$ the left multiplication is a conjugate-linear map of real rank four with</p>
 <p>$$
-\ker L^{\diamond}_{\tilde A}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\,\overline{\mathbf A},\qquad
-\operatorname{im}L^{\diamond}_{\tilde A}=\bigl\{\mathbf V\in\mathbb{V}_{\mathbb{B}}:(\mathbf A,\mathbf V)=0\bigr\},
+\ker L^{\diamond}_{\tilde A}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\,\overline{\vec A},\qquad
+\operatorname{im}L^{\diamond}_{\tilde A}=\bigl\{\vec V\in\mathbb{V}_{\mathbb{B}}:(\vec A,\vec V)=0\bigr\},
 $$</p>
 <p>and zero trace; the right multiplication has the same real invariants, being the conjugate of the left.</p>
 <p><em>Proof.</em> The decomposition and the inertia are <em>The Krein Gram Matrix and the Restrictions of the Form</em>; the
@@ -367,15 +367,15 @@ arguments.</p>
 conjugate-pairing of their parameters,</p>
 <p>$$
 \operatorname{Tr}_{\mathbb{C}}\bigl(L^{\diamond}_{\tilde P}L^{\diamond}_{\tilde Q}\bigr)
-=-2\,(\mathbf P,\overline{\mathbf Q}),
+=-2\,(\vec P,\overline{\vec Q}),
 $$</p>
 <p>so the operator family reproduces the sesquilinear pairing of the vector parts of <em>The Sesquilinear Pairing
 of the Antisymmetric Quaternionic Sesqualgebra</em>.</p>
-<p><em>Proof.</em> The composite is $\overline{\mathbf Q}(\mathbf P,\mathbf X)-(\mathbf P,\overline{\mathbf Q})\mathbf X$;
-the rank-one part $X\mapsto\overline{\mathbf Q}(\mathbf P,\mathbf X)$ contributes
-$+(\mathbf P,\overline{\mathbf Q})$ and the second term contributes $-3(\mathbf P,\overline{\mathbf Q})$ as
+<p><em>Proof.</em> The composite is $\overline{\vec Q}(\vec P,\vec X)-(\vec P,\overline{\vec Q})\vec X$;
+the rank-one part $X\mapsto\overline{\vec Q}(\vec P,\vec X)$ contributes
+$+(\vec P,\overline{\vec Q})$ and the second term contributes $-3(\vec P,\overline{\vec Q})$ as
 the trace of the negative of the projection onto the vector subspace, for the total
-$-2(\mathbf P,\overline{\mathbf Q})$. Verified on forty random pairs.</p>
+$-2(\vec P,\overline{\vec Q})$. Verified on forty random pairs.</p>
 <p><strong>Read as a physical statement.</strong> The states of the framework are not the gauge space: they are the elements
 the indefinite metric cannot normalise, while the band's values are pure vectors. The left multiplication
 sends <strong>every</strong> element into the plane perpendicular to its parameter and kills the centre and the conjugate
@@ -387,30 +387,30 @@ Structure and Not a State Space</em>. This is a reading.</p>
 <h2 id="a-worked-case">A Worked Case</h2>
 <p><strong>An isotropic vector parameter.</strong> Take</p>
 <p>$$
-\tilde A=e_1+ie_2,\qquad \mathbf A=(1,i,0),\qquad
-(\mathbf A,\mathbf A)=0,\qquad (\mathbf A,\overline{\mathbf A})=2,\qquad K(\tilde A,\tilde A)=-2 .
+\tilde A=e_1+ie_2,\qquad \vec A=(1,i,0),\qquad
+(\vec A,\vec A)=0,\qquad (\vec A,\overline{\vec A})=2,\qquad K(\tilde A,\tilde A)=-2 .
 $$</p>
 <p>The vector part is isotropic for the bilinear dot, the case the algebraic norm of the product reads:
-$\tilde A\diamond\tilde A=\mathbf A\times\overline{\mathbf A}=-2i\,e_3$. The left multiplication is</p>
+$\tilde A\diamond\tilde A=\vec A\times\overline{\vec A}=-2i\,e_3$. The left multiplication is</p>
 <p>$$
 L^{\diamond}_{\tilde A}e_1=-i\,e_3,\qquad L^{\diamond}_{\tilde A}e_2=e_3,\qquad
 L^{\diamond}_{\tilde A}e_3=i\,e_1-e_2,\qquad L^{\diamond}_{\tilde A}(ie_3)=e_1+ie_2=\tilde A,
 $$</p>
 <p>with kernel $\mathbb{C}e_0\oplus\mathbb{C}(e_1-ie_2)$, since $L^{\diamond}_{\tilde A}(e_1-ie_2)=0$, and image
-the plane $\{(V_1,V_2,V_3):V_1+iV_2=0\}$, of real rank four. The sandwich, using $(\mathbf A,\mathbf A)=0$,
+the plane $\{(V_1,V_2,V_3):V_1+iV_2=0\}$, of real rank four. The sandwich, using $(\vec A,\vec A)=0$,
 reduces to a rank-two map onto the complex line $\mathbb{C}\tilde A$,</p>
 <p>$$
-\Theta^{\diamond}_{\tilde A}\tilde X=-\mathbf A\,(\mathbf A,\overline{\mathbf X}),\qquad
+\Theta^{\diamond}_{\tilde A}\tilde X=-\vec A\,(\vec A,\overline{\vec X}),\qquad
 \Theta^{\diamond}_{\tilde A}e_1=-\tilde A,\qquad \Theta^{\diamond}_{\tilde A}e_2=e_2-ie_1,\qquad
 \Theta^{\diamond}_{\tilde A}e_3=0,
 $$</p>
 <p>and it is self-adjoint with $K(\Theta^{\diamond}_{\tilde A}e_1,e_1)=+1$ and
 $K(\Theta^{\diamond}_{\tilde A}e_1,\Theta^{\diamond}_{\tilde A}e_1)=-2$.</p>
-<p><strong>A real parameter for contrast.</strong> Take $\tilde A=e_1$, with $(\mathbf A,\mathbf A)=1$,
+<p><strong>A real parameter for contrast.</strong> Take $\tilde A=e_1$, with $(\vec A,\vec A)=1$,
 $L^{\diamond}_{e_1}e_2=e_3$, $L^{\diamond}_{e_1}e_3=-e_2$, $L^{\diamond}_{e_1}(ie_2)=-ie_3$,
 $L^{\diamond}_{e_1}(ie_3)=ie_2$. The sandwich is the projection onto the plane perpendicular to $e_1$ followed
 by the coefficient conjugation of the vector part,
-$\Theta^{\diamond}_{e_1}\tilde X=\overline{\mathbf X}-e_1(\overline{\mathbf X},e_1)$, so
+$\Theta^{\diamond}_{e_1}\tilde X=\overline{\vec X}-e_1(\overline{\vec X},e_1)$, so
 $\Theta^{\diamond}_{e_1}e_2=e_2$, $\Theta^{\diamond}_{e_1}e_3=e_3$, $\Theta^{\diamond}_{e_1}(ie_2)=-ie_2$,
 $\Theta^{\diamond}_{e_1}(ie_3)=-ie_3$, $\Theta^{\diamond}_{e_1}e_1=0$; it is self-adjoint, and the real
 parameter is the case in which the sandwich is a conjugation on the plane.</p>
@@ -420,7 +420,7 @@ parameter is the case in which the sandwich is a conjugation on the plane.</p>
 \qquad\text{while}\qquad
 L^{\diamond}_{e_1\diamond ie_1}e_2=L^{\diamond}_{0}e_2=0,
 $$</p>
-<p>so the commutator is not a multiplication; the term $2i\mathbf X$ is the multiple of the identity that the
+<p>so the commutator is not a multiplication; the term $2i\vec X$ is the multiple of the identity that the
 conjugation produces.</p>
 <p><strong>A numerical check.</strong> Verified to machine precision: the four composition laws on sixty random triples
 each; the square law on fifty; the two variable and the two parameter parities on sixty each; the
@@ -443,19 +443,19 @@ displayed.</p>
 </ul>
 <p><strong>What the framework does not claim.</strong> The interpretation does not derive the polarisation, the spin or the self-helicity from the operator calculus; it reads structures the corpus already uses. It does not identify the skew-adjoint multiplications with gauge generators, and it does not claim that the band is a Lie algebra, a monoid or a group. It does not claim that the twelve rows are one calculus; the antisymmetric quaternionic sesquilinear row is the row in which the adjoint is a negation, and that is its own.</p>
 <h2 id="the-ledger">The Ledger</h2>
-<p><strong>Proved.</strong> The band's multiplications are $L^{\diamond}_{\tilde A}(\tilde X)=\mathbf A\times\overline{\mathbf X}$,
+<p><strong>Proved.</strong> The band's multiplications are $L^{\diamond}_{\tilde A}(\tilde X)=\vec A\times\overline{\vec X}$,
 conjugate-linear in the argument and $\mathbb{C}$-linear in the parameter, and
-$R^{\diamond}_{\tilde A}(\tilde X)=\mathbf X\times\overline{\mathbf A}$, $\mathbb{C}$-linear in the argument
+$R^{\diamond}_{\tilde A}(\tilde X)=\vec X\times\overline{\vec A}$, $\mathbb{C}$-linear in the argument
 and conjugate-linear in the parameter, with $L^{\diamond}_{\tilde A}=-C\circ R^{\diamond}_{\tilde A}$. The
-composition laws are $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\tilde X=\mathbf A\times(\overline{\mathbf B}\times\mathbf X)$,
-$R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}\tilde X=(\mathbf X\times\overline{\mathbf B})\times\overline{\mathbf A}$,
-$L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}\tilde X=\mathbf A\times(\overline{\mathbf X}\times\mathbf B)$
-and $R^{\diamond}_{\tilde B}L^{\diamond}_{\tilde A}\tilde X=(\mathbf A\times\overline{\mathbf X})\times\overline{\mathbf B}$;
+composition laws are $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\tilde X=\vec A\times(\overline{\vec B}\times\vec X)$,
+$R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}\tilde X=(\vec X\times\overline{\vec B})\times\overline{\vec A}$,
+$L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}\tilde X=\vec A\times(\overline{\vec X}\times\vec B)$
+and $R^{\diamond}_{\tilde B}L^{\diamond}_{\tilde A}\tilde X=(\vec A\times\overline{\vec X})\times\overline{\vec B}$;
 the composite of two left multiplications is $\mathbb{C}$-linear and not a multiplication, and the trace
-pairing is $\operatorname{Tr}_{\mathbb{C}}(L^{\diamond}_{\tilde P}L^{\diamond}_{\tilde Q})=-2(\mathbf P,\overline{\mathbf Q})$.
+pairing is $\operatorname{Tr}_{\mathbb{C}}(L^{\diamond}_{\tilde P}L^{\diamond}_{\tilde Q})=-2(\vec P,\overline{\vec Q})$.
 The commutator is
-$[L^{\diamond}_{\tilde A},L^{\diamond}_{\tilde B}]\tilde X=\overline{\mathbf B}(\mathbf A,\mathbf X)-\overline{\mathbf A}(\mathbf B,\mathbf X)-2i\operatorname{Im}(\mathbf A,\overline{\mathbf B})\mathbf X$;
-it is the multiplication $R^{\diamond}_{-(\mathbf a\times\mathbf b)}$ and equals $L^{\diamond}_{\mathbf a\times\mathbf b}$
+$[L^{\diamond}_{\tilde A},L^{\diamond}_{\tilde B}]\tilde X=\overline{\vec B}(\vec A,\vec X)-\overline{\vec A}(\vec B,\vec X)-2i\operatorname{Im}(\vec A,\overline{\vec B})\vec X$;
+it is the multiplication $R^{\diamond}_{-(\vec a\times\vec b)}$ and equals $L^{\diamond}_{\vec a\times\vec b}$
 on the real forms, and off them it is not a multiplication, the witness $(e_1,ie_1,e_2)$ giving $2ie_2$
 against $0$; the left family is not closed and carries no Lie algebra. The form of the band is the indefinite
 Krein form of signature $(1,3)$, and the adjoint it defines is the twisted adjoint of the conjugate-linear
@@ -464,18 +464,18 @@ $(R^{\diamond}_{\tilde A})^{\dagger}=-R^{\diamond}_{\overline{\tilde A}}$ and
 $(L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B})^{\dagger}=R^{\diamond}_{\overline{\tilde B}}L^{\diamond}_{\tilde A}$:
 the adjoint reverses the parameter and keeps the side. The types are $L^{\diamond}_{\tilde A}$ self-adjoint
 exactly for a central parameter and skew-adjoint for every parameter, and $R^{\diamond}_{\tilde A}$
-self-adjoint exactly for $\mathbf A\in i\mathbb{R}^{3}$ and skew-adjoint exactly for $\mathbf A\in\mathbb{R}^{3}$;
+self-adjoint exactly for $\vec A\in i\mathbb{R}^{3}$ and skew-adjoint exactly for $\vec A\in\mathbb{R}^{3}$;
 no nonzero operator of the band is $J$-unitary, the $J$-unitaries form $U(1,3)$, and the norm criterion
 $\lvert N\rvert=1$ belongs to the parent's plain sandwich. The derivations are
 $\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$, of real dimension
 seven, with structure group $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$, and the coefficient conjugation is an
 automorphism of the product and an antiunitary of the form. The sandwich is
-$\Theta^{\diamond}_{\tilde A}\tilde X=(\mathbf A,\mathbf A)\overline{\mathbf X}-\mathbf A(\mathbf A,\overline{\mathbf X})$,
+$\Theta^{\diamond}_{\tilde A}\tilde X=(\vec A,\vec A)\overline{\vec X}-\vec A(\vec A,\overline{\vec X})$,
 self-adjoint for $K$ for every parameter, non-invertible and $SO(3,\mathbb{R})$-equivariant; the parent's
 inner automorphism is not an operator of the band. On the gauge space, of canonical decomposition
 $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}}$ and realified signature $(2,6)$, the left
-multiplication has rank four, kernel $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\mathbf A}$, image the
-plane $(\mathbf A,\cdot)=0$ and zero trace.</p>
+multiplication has rank four, kernel $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\vec A}$, image the
+plane $(\vec A,\cdot)=0$ and zero trace.</p>
 <p><strong>Interpretations.</strong> That the adjoint of the band is taken for the <strong>indefinite</strong> form and is a <strong>negation of the
 parameter</strong> that keeps the side, where the composition band's transpose swaps the sides and the probability
 band's Hermitian adjoint conjugates the parameter; that the band supplies <strong>no self-adjoint generator</strong>, all
@@ -505,16 +505,16 @@ because the centre is annihilated, so the band belongs entirely to the vector pa
 twelve is the final interpretation: the antisymmetric quaternionic sesquilinear row is the row where the bracket
 fails, the adjoint negates, and the metric remains a gauge metric and not a state space.</p>
 <h2 id="summary">Summary</h2>
-<p>The antisymmetric quaternionic sesquilinear product is $\tilde P\diamond\tilde Q=\mathbf P\times\overline{\mathbf Q}$,
+<p>The antisymmetric quaternionic sesquilinear product is $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$,
 and its multiplication operators are the conjugate-linear left multiplication
-$L^{\diamond}_{\tilde A}(\tilde X)=\mathbf A\times\overline{\mathbf X}$ and the $\mathbb{C}$-linear right
-multiplication $R^{\diamond}_{\tilde A}(\tilde X)=\mathbf X\times\overline{\mathbf A}$, tied by the
+$L^{\diamond}_{\tilde A}(\tilde X)=\vec A\times\overline{\vec X}$ and the $\mathbb{C}$-linear right
+multiplication $R^{\diamond}_{\tilde A}(\tilde X)=\vec X\times\overline{\vec A}$, tied by the
 conjugate-alternation $L^{\diamond}_{\tilde A}=-C\circ R^{\diamond}_{\tilde A}$. The composition law adopted
-is $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\tilde X=\mathbf A\times(\overline{\mathbf B}\times\mathbf X)$;
+is $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\tilde X=\vec A\times(\overline{\vec B}\times\vec X)$;
 the four laws are displayed and were verified on sixty random triples each. The composite of two left
 multiplications is $\mathbb{C}$-linear and is not a multiplication, so the family is not closed; the
 commutator
-$\overline{\mathbf B}(\mathbf A,\mathbf X)-\overline{\mathbf A}(\mathbf B,\mathbf X)-2i\operatorname{Im}(\mathbf A,\overline{\mathbf B})\mathbf X$
+$\overline{\vec B}(\vec A,\vec X)-\overline{\vec A}(\vec B,\vec X)-2i\operatorname{Im}(\vec A,\overline{\vec B})\vec X$
 is a multiplication on the real forms and a non-multiplication off them, with the complex witness
 $(e_1,ie_1,e_2)$ giving $2ie_2$ against $0$. The band carries <strong>no Lie algebra</strong>, the failure is invisible on
 the real quaternion forms, and the positive interpretation of the same failure as a higher structure is the band's
@@ -534,10 +534,10 @@ sandwich $\Theta^{\diamond}_{\tilde A}=L^{\diamond}_{\tilde A}R^{\diamond}_{\til
 for <strong>every</strong> parameter, non-invertible and $SO(3,\mathbb{R})$-equivariant; the inner automorphism of the
 parent is not an operator of the band, so the comparison degenerates and the degeneration is the interpretation. On
 the gauge space the left multiplication has rank four, kernel
-$\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\mathbf A}$, image the plane $(\mathbf A,\cdot)=0$ and zero
-trace, and the trace pairing of two left multiplications is $-2(\mathbf P,\overline{\mathbf Q})$, the
+$\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\vec A}$, image the plane $(\vec A,\cdot)=0$ and zero
+trace, and the trace pairing of two left multiplications is $-2(\vec P,\overline{\vec Q})$, the
 sesquilinear pairing of the vector parts. The worked case gives the isotropic parameter $e_1+ie_2$ with
-$(\mathbf A,\mathbf A)=0$, $(\mathbf A,\overline{\mathbf A})=2$, $\tilde A\diamond\tilde A=-2ie_3$, the
+$(\vec A,\vec A)=0$, $(\vec A,\overline{\vec A})=2$, $\tilde A\diamond\tilde A=-2ie_3$, the
 sandwich image the line $\mathbb{C}\tilde A$, and the closure witness
 $[L^{\diamond}_{e_1},L^{\diamond}_{ie_1}]e_2=2ie_2$. Read under polarisation, the operators carry a direction
 and not a state, the adjoint reverses the parameter's sense, the front of the frame is the plane perpendicular
@@ -552,15 +552,15 @@ to the parameter, and the band does not close to an algebra.</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\mathbf P\times\overline{\mathbf Q}$</td>
+<td>$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\vec P\times\overline{\vec Q}$</td>
 <td>The antisymmetric quaternionic sesquilinear product, $\mathrm{AQS}$</td>
 </tr>
 <tr>
-<td>$L^{\diamond}_{\tilde A}(\tilde X)=\mathbf A\times\overline{\mathbf X}$</td>
+<td>$L^{\diamond}_{\tilde A}(\tilde X)=\vec A\times\overline{\vec X}$</td>
 <td>Left multiplication; conjugate-linear in the argument, $\mathbb{C}$-linear in the parameter</td>
 </tr>
 <tr>
-<td>$R^{\diamond}_{\tilde A}(\tilde X)=\mathbf X\times\overline{\mathbf A}$</td>
+<td>$R^{\diamond}_{\tilde A}(\tilde X)=\vec X\times\overline{\vec A}$</td>
 <td>Right multiplication; $\mathbb{C}$-linear in the argument, conjugate-linear in the parameter</td>
 </tr>
 <tr>
@@ -568,11 +568,11 @@ to the parameter, and the band does not close to an algebra.</p>
 <td>The antisymmetry link between the two families</td>
 </tr>
 <tr>
-<td>$L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\tilde X=\mathbf A\times(\overline{\mathbf B}\times\mathbf X)$</td>
+<td>$L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\tilde X=\vec A\times(\overline{\vec B}\times\vec X)$</td>
 <td>The composition law adopted</td>
 </tr>
 <tr>
-<td>$[L^{\diamond}_{\tilde A},L^{\diamond}_{\tilde B}]\tilde X=\overline{\mathbf B}(\mathbf A,\mathbf X)-\overline{\mathbf A}(\mathbf B,\mathbf X)-2i\operatorname{Im}(\mathbf A,\overline{\mathbf B})\mathbf X$</td>
+<td>$[L^{\diamond}_{\tilde A},L^{\diamond}_{\tilde B}]\tilde X=\overline{\vec B}(\vec A,\vec X)-\overline{\vec A}(\vec B,\vec X)-2i\operatorname{Im}(\vec A,\overline{\vec B})\vec X$</td>
 <td>The commutator; not a multiplication off the real forms</td>
 </tr>
 <tr>
@@ -588,11 +588,11 @@ to the parameter, and the band does not close to an algebra.</p>
 <td>The adjoint reverses the parameter and keeps the side</td>
 </tr>
 <tr>
-<td>$L^{\diamond}_{\tilde A}$ self-adjoint $\iff\mathbf A=0$; skew-adjoint always</td>
+<td>$L^{\diamond}_{\tilde A}$ self-adjoint $\iff\vec A=0$; skew-adjoint always</td>
 <td>The left types</td>
 </tr>
 <tr>
-<td>$R^{\diamond}_{\tilde A}$ self-adjoint $\iff\mathbf A\in i\mathbb{R}^{3}$; skew-adjoint $\iff\mathbf A\in\mathbb{R}^{3}$</td>
+<td>$R^{\diamond}_{\tilde A}$ self-adjoint $\iff\vec A\in i\mathbb{R}^{3}$; skew-adjoint $\iff\vec A\in\mathbb{R}^{3}$</td>
 <td>The right types</td>
 </tr>
 <tr>
@@ -608,7 +608,7 @@ to the parameter, and the band does not close to an algebra.</p>
 <td>The structure group of the product</td>
 </tr>
 <tr>
-<td>$\Theta^{\diamond}_{\tilde A}\tilde X=(\mathbf A,\mathbf A)\overline{\mathbf X}-\mathbf A(\mathbf A,\overline{\mathbf X})$</td>
+<td>$\Theta^{\diamond}_{\tilde A}\tilde X=(\vec A,\vec A)\overline{\vec X}-\vec A(\vec A,\overline{\vec X})$</td>
 <td>The band's sandwich; self-adjoint for every parameter</td>
 </tr>
 <tr>
@@ -616,11 +616,11 @@ to the parameter, and the band does not close to an algebra.</p>
 <td>The gauge space; centre and vector subspace</td>
 </tr>
 <tr>
-<td>$\ker L^{\diamond}_{\tilde A}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\mathbf A}$, $\operatorname{im}L^{\diamond}_{\tilde A}=\{(\mathbf A,\cdot)=0\}$</td>
+<td>$\ker L^{\diamond}_{\tilde A}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\vec A}$, $\operatorname{im}L^{\diamond}_{\tilde A}=\{(\vec A,\cdot)=0\}$</td>
 <td>The kernel and image; rank four, nullity four</td>
 </tr>
 <tr>
-<td>$\operatorname{Tr}_{\mathbb{C}}(L^{\diamond}_{\tilde P}L^{\diamond}_{\tilde Q})=-2(\mathbf P,\overline{\mathbf Q})$</td>
+<td>$\operatorname{Tr}_{\mathbb{C}}(L^{\diamond}_{\tilde P}L^{\diamond}_{\tilde Q})=-2(\vec P,\overline{\vec Q})$</td>
 <td>The trace pairing of the left family</td>
 </tr>
 </tbody>

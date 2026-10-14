@@ -59,9 +59,9 @@
 <h2 id="the-exercise">The Exercise</h2>
 <p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $x$-axis</strong>, and is then placed in a uniform magnetic field</p>
 <p>$$
-\mathbf{B} = B_0\,\hat{z}
+\vec B = B_0\,\hat{z}
 $$</p>
-<p>pointing along the $z$-axis. The magnetic moment of the particle is $\boldsymbol{\mu} = \gamma\mathbf{S}$, where $\gamma$ is the gyromagnetic ratio and $\mathbf{S}$ is the spin operator. What is the <strong>expectation value of the spin along the $x$-axis</strong> as a function of time?</p>
+<p>pointing along the $z$-axis. The magnetic moment of the particle is $\vec\mu = \gamma\vec S$, where $\gamma$ is the gyromagnetic ratio and $\vec S$ is the spin operator. What is the <strong>expectation value of the spin along the $x$-axis</strong> as a function of time?</p>
 <p>This is the classic <strong>Larmor precession</strong> exercise. It exercises the Hamiltonian, the evolution operator, and the time-dependent expectation value, in a setting where the answer is a simple harmonic function of time.</p>
 <h2 id="solution-in-the-standard-formulation">Solution in the Standard Formulation</h2>
 <h3 id="step-1-the-state">Step 1: The state</h3>
@@ -70,9 +70,9 @@ $$</p>
 |+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \end{pmatrix}.
 $$</p>
 <h3 id="step-2-the-hamiltonian">Step 2: The Hamiltonian</h3>
-<p>The Hamiltonian of a magnetic moment $\boldsymbol{\mu} = \gamma\mathbf{S}$ in a magnetic field $\mathbf{B} = B_0\hat{z}$ is</p>
+<p>The Hamiltonian of a magnetic moment $\vec\mu = \gamma\vec S$ in a magnetic field $\vec B = B_0\hat{z}$ is</p>
 <p>$$
-H = -\boldsymbol{\mu}\cdot\mathbf{B} = -\gamma B_0 S_z = -\frac{\hbar\omega_L}{2}\sigma_3,
+H = -\vec\mu\cdot\vec B = -\gamma B_0 S_z = -\frac{\hbar\omega_L}{2}\sigma_3,
 $$</p>
 <p>where</p>
 <p>$$
@@ -157,9 +157,9 @@ $$</p>
 <p><strong>1. The Hamiltonian is a Hermitian element of $\mathbb{M}_+$.</strong> The observable $\tilde{S}_z = \frac{\hbar}{2}i e_3$ is an element of $\mathbb{M}_+$, and the Hamiltonian $\tilde{H} = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a <strong>Hermitian element of the same subspace</strong> as the observables and the states.</p>
 <p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde{H}$ is proportional to $i e_3$, and the exponential of $e_3$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
 <p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^{*} = e_0$ is preserved by the exponential form.</p>
-<p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{\rho}(t) = \frac{1}{2}(e_0 + i\mathbf{r}(t))$ with</p>
+<p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{\rho}(t) = \frac{1}{2}(e_0 + i\vec r(t))$ with</p>
 <p>$$
-\mathbf{r}(t) = \cos(\omega_L t)\,e_1 - \sin(\omega_L t)\,e_2.
+\vec r(t) = \cos(\omega_L t)\,e_1 - \sin(\omega_L t)\,e_2.
 $$</p>
 <p>This is a <strong>unit vector rotating</strong> in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.</p>
 <p><strong>5. The expectation value is a trace formula.</strong> As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is</p>

@@ -65,7 +65,7 @@ Biquaternion Space</em>; this article is its material-sector companion, the read
 $\mathbb{M}_-$ alone.</p>
 <p>The answer is one sentence: the scalar part</p>
 <p>$$
-B(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q) = P_0Q_0 - \mathbf P\!\cdot\!\mathbf Q
+B(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q) = P_0Q_0 - \vec P\!\cdot\!\vec Q
 $$</p>
 <p>is <strong>negative</strong> on a material <strong>element</strong>, $B(\tilde Q,\tilde Q)<0$, and <strong>positive</strong> on an
 informational one, $B(\tilde P,\tilde P)>0$. It is the sign of the sector, and it is <strong>not</strong> the metric of
@@ -92,7 +92,7 @@ Four General Products and Their Physical Readings</em>. None of those is reprove
 <p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
 $e_0=1,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$; a
 general element is $\tilde Q=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients; the scalar part is
-$\mathrm{Sc}(\tilde Q)=Q_0$ and the vector part is $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$. The conjugations are
+$\mathrm{Sc}(\tilde Q)=Q_0$ and the vector part is $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$. The conjugations are
 the complex conjugation $\bar{\cdot}$, the natural (quaternion) conjugation ${\natural}$, and the
 Hermitian conjugation ${}^{*}=\bar{\cdot}\circ{\natural}$. The material sector is the anti-Hermitian half,
 $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$, with the real basis $\{ie_0,e_1,e_2,e_3\}$; the
@@ -158,12 +158,12 @@ B\big|_{\mathbb{M}_-}=-\mathrm{I}_4,\ \text{signature }(0,4);
 B\big|_{\mathbb{M}_+}=+\mathrm{I}_4,\ \text{signature }(4,0);
 $$</p>
 <p>the two sectors are the two definite half-spaces of one form, with opposite signs. Written out on the
-coordinates, with $\tilde Q=ib_0e_0+\mathbf q$ material ($b_0\in\mathbb{R}$, $\mathbf q$ real) and
-$\tilde Q=a_0e_0+i\mathbf p$ informational ($a_0\in\mathbb{R}$, $\mathbf p$ real),</p>
+coordinates, with $\tilde Q=ib_0e_0+\vec q$ material ($b_0\in\mathbb{R}$, $\vec q$ real) and
+$\tilde Q=a_0e_0+i\vec p$ informational ($a_0\in\mathbb{R}$, $\vec p$ real),</p>
 <p>$$
-B(\tilde Q,\tilde Q)=-b_0^{2}-\lvert\mathbf q\rvert^{2}<0,
+B(\tilde Q,\tilde Q)=-b_0^{2}-\lvert\vec q\rvert^{2}<0,
 \qquad
-B(\tilde Q,\tilde Q)=a_0^{2}+\lvert\mathbf p\rvert^{2}>0 .
+B(\tilde Q,\tilde Q)=a_0^{2}+\lvert\vec p\rvert^{2}>0 .
 $$</p>
 <p><strong>Remark (verified).</strong> The form $B$ is real and strictly negative on every material element and real and
 strictly positive on every informational one; the Gram matrices on the two bases are exactly
@@ -213,8 +213,8 @@ the group, and the boundary of the group is the massless shell $N=0$. The invers
 material, since $\tilde Q^{\natural}$ is anti-Hermitian with $\tilde Q$ and $N(\tilde Q)$ is then a real
 scalar; but the product of two material units is material only when the two anticommute, by §<em>The Product
 of Two Material Operations</em>, so the reversibility survives the composition while the sector need not. On
-the informational sector the norm is $a_0^{2}-\lvert\mathbf p\rvert^{2}$ of signature $(1,3)$, and the
-wall there is the cone $a_0^{2}=\lvert\mathbf p\rvert^{2}$; the Hermitian form $+\mathrm{I}_4$ has no
+the informational sector the norm is $a_0^{2}-\lvert\vec p\rvert^{2}$ of signature $(1,3)$, and the
+wall there is the cone $a_0^{2}=\lvert\vec p\rvert^{2}$; the Hermitian form $+\mathrm{I}_4$ has no
 cone, and the form $B$ has no cone on either sector.</p>
 <p><strong>Example (a lightlike and an off-cone material element).</strong> The lightlike material element $ie_0+e_1$,
 with $N=-1+1=0$, is a zero divisor: it squares to $-2e_0+2ie_1$ and the partner $ie_0-e_1$ annihilates it,
@@ -294,10 +294,10 @@ $$</p>
 elements, $-5$ material and $+10$ informational, so it is $B$ that carries the sector sign, and the
 values are the negative squares $-1^{2}-2^{2}$ and $3^{2}+1^{2}$ of the coordinate dictionary. The
 interval is positive on both, $+3$ and $+8$, so it does not separate the sectors. And $B$ and the interval differ by twice the complex square of the vector part,
-$B(\tilde Q,\tilde Q)=N(\tilde Q,\tilde Q)-2\,\mathbf Q\!\cdot\!\mathbf Q$ with the coefficient square
-$\mathbf Q\!\cdot\!\mathbf Q=Q_1^{2}+Q_2^{2}+Q_3^{2}$, which on the two elements reads
+$B(\tilde Q,\tilde Q)=N(\tilde Q,\tilde Q)-2\,\vec Q\!\cdot\!\vec Q$ with the coefficient square
+$\vec Q\!\cdot\!\vec Q=Q_1^{2}+Q_2^{2}+Q_3^{2}$, which on the two elements reads
 $-5=+3-2(4)$ and $+10=+8-2(-1)$: the two forms agree only when the vector part vanishes, that is on the
-scalar line, and the difference $-2\,\mathbf Q\!\cdot\!\mathbf Q$ is real of a fixed sign on each sector,
+scalar line, and the difference $-2\,\vec Q\!\cdot\!\vec Q$ is real of a fixed sign on each sector,
 negative on $\mathbb{M}_-$ and positive on $\mathbb{M}_+$.</p>
 <h2 id="the-bound">The Bound</h2>
 <p>The article states the restriction to the material sector of the product and its scalar form, and the
@@ -353,7 +353,7 @@ for the central phase, which is the exchange's business and not the vector part'
 <p>The material sector $\mathbb{M}_-$ carries the four-vectors, an event being
 $\tilde T=ict\,e_0+x e_1+y e_2+z e_3$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$
 whose full theory on the whole algebra is <em>The General Plain Bilinear Product on the Biquaternion Space</em>. Its scalar
-part $B=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$, the quaternion scalar product of the two elements, is
+part $B=P_0Q_0-\vec P\!\cdot\!\vec Q$, the quaternion scalar product of the two elements, is
 negative definite on $\mathbb{M}_-$ with signature $(0,4)$ and positive definite on $\mathbb{M}_+$ with
 signature $(4,0)$: opposite definite signs on the two sectors, so $B$ carries the <strong>sector sign</strong>. Being
 definite, $B$ has no light cone at all and cannot be the metric; the metric is the interval, the general
@@ -402,7 +402,7 @@ $\mathbb{M}_-$, what is proposed is the naming.</p>
 <td>Informational sector, basis $\{e_0,ie_1,ie_2,ie_3\}$</td>
 </tr>
 <tr>
-<td>$\tilde T=ict\,e_0+\mathbf x$</td>
+<td>$\tilde T=ict\,e_0+\vec x$</td>
 <td>A material event; imaginary time, real space</td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ $\mathbb{M}_-$, what is proposed is the naming.</p>
 <td>General plain bilinear product; associative, unital, non-commutative</td>
 </tr>
 <tr>
-<td>$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$</td>
+<td>$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$</td>
 <td>General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$</td>
 </tr>
 <tr>

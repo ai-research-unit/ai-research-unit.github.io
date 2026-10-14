@@ -74,9 +74,9 @@ $$</p>
 $$</p>
 <p>The real number $q_0$ is the <strong>scalar part</strong>, and the triple $(q_1, q_2, q_3)$ is the <strong>vector part</strong>. We also write</p>
 <p>$$
-\tilde q = q_0 + \mathbf{v}, \qquad \mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3,
+\tilde q = q_0 + \vec v, \qquad \vec v = q_1 e_1 + q_2 e_2 + q_3 e_3,
 $$</p>
-<p>and we write $\operatorname{Sc}(\tilde q) = q_0$ and $\operatorname{Vec}(\tilde q) = \mathbf{v}$ for the two components.</p>
+<p>and we write $\operatorname{Sc}(\tilde q) = q_0$ and $\operatorname{Vec}(\tilde q) = \vec v$ for the two components.</p>
 <p>The four elements $1, e_1, e_2, e_3$ are linearly independent over $\mathbb{R}$ by definition, so $\dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}} = 4$. The unit is $1$, and every element is a real linear combination of the basis elements.</p>
 <h3 id="the-multiplication-table">The Multiplication Table</h3>
 <p>The rules of the definition determine the whole multiplication table. From $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$ one computes</p>
@@ -228,15 +228,15 @@ $$</p>
 <p>$$
 Z(\mathbb{H}_{\mathrm{s}}) = \{\tilde q : \tilde q \tilde p = \tilde p\tilde q \ \text{for all} \ \tilde p\} = \mathbb{R} \cdot 1 .
 $$</p>
-<p><strong>Proof.</strong> The scalars are central. Conversely, suppose $\tilde q = q_0 + \mathbf{v}$ is central. Commuting $\tilde q$ with $e_1$ gives</p>
+<p><strong>Proof.</strong> The scalars are central. Conversely, suppose $\tilde q = q_0 + \vec v$ is central. Commuting $\tilde q$ with $e_1$ gives</p>
 <p>$$
 0 = \tilde q e_1 - e_1 \tilde q .
 $$</p>
-<p>The scalar part of $\tilde q$ commutes with everything, so the condition is $\mathbf{v} e_1 - e_1 \mathbf{v} = 0$. Writing $\mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$ and using the table,</p>
+<p>The scalar part of $\tilde q$ commutes with everything, so the condition is $\vec v e_1 - e_1 \vec v = 0$. Writing $\vec v = q_1 e_1 + q_2 e_2 + q_3 e_3$ and using the table,</p>
 <p>$$
-\mathbf{v} e_1 = -q_1 - q_2 e_3 + q_3 e_2, \qquad e_1 \mathbf{v} = -q_1 + q_2 e_3 - q_3 e_2,
+\vec v e_1 = -q_1 - q_2 e_3 + q_3 e_2, \qquad e_1 \vec v = -q_1 + q_2 e_3 - q_3 e_2,
 $$</p>
-<p>so $\mathbf{v} e_1 - e_1 \mathbf{v} = -2q_2 e_3 + 2q_3 e_2 = 0$, giving $q_2 = q_3 = 0$. Commuting with $e_2$ similarly gives $q_1 = 0$. Hence $\mathbf{v} = 0$ and $\tilde q = q_0$ is scalar.</p>
+<p>so $\vec v e_1 - e_1 \vec v = -2q_2 e_3 + 2q_3 e_2 = 0$, giving $q_2 = q_3 = 0$. Commuting with $e_2$ similarly gives $q_1 = 0$. Hence $\vec v = 0$ and $\tilde q = q_0$ is scalar.</p>
 <p><strong>Theorem (Simplicity).</strong> The split-quaternion algebra is <strong>simple</strong>: it has no two-sided ideal other than $0$ and the algebra itself.</p>
 <p><strong>Proof.</strong> Let $I \neq 0$ be a two-sided ideal and let $0 \neq \tilde q \in I$. If $\tilde q \tilde{q}^{\natural} \neq 0$ then $\tilde q$ is a unit, by the invertibility criterion of <em>Split-Quaternion Norm and Invertibility</em>, so $I = \mathbb{H}_{\mathrm{s}}$. If $\tilde q \tilde{q}^{\natural} = 0$, then for every real $\lambda$ the element $\tilde q + \lambda$ lies in $I$ and</p>
 <p>$$
@@ -387,7 +387,7 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\mathbf{v} = \operatorname{Vec}(\tilde q)$</td>
+<td>$\vec v = \operatorname{Vec}(\tilde q)$</td>
 <td>the vector part</td>
 <td>this article</td>
 </tr>

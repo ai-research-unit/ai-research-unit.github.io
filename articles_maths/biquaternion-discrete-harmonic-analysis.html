@@ -66,9 +66,9 @@ $$</p>
 $$</p>
 <p>or, more compactly, as</p>
 <p>$$
-\tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
+\tilde{Q} = Q_0 e_0 + \vec Q, \qquad \vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$</p>
-<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.</p>
+<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.</p>
 <p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.</p>
 <h2 id="the-fourier-kernel">The Fourier Kernel</h2>
 <h3 id="definition">Definition</h3>
@@ -173,9 +173,9 @@ $$</p>
 \tilde{Q} = Q_0 e_0 + Q_\rho \rho + Q_\nu \nu + Q_\xi \xi,
 $$</p>
 <p>with $Q_0, Q_\rho, Q_\nu, Q_\xi \in \mathbb{C}$.</p>
-<p>The coefficients are obtained by resolving the vector part of the biquaternion in the three complex directions defined by the new basis. If the vector part of a biquaternion is $\mathbf{v} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_1, Q_2, Q_3 \in \mathbb{C}$, then the coefficients are</p>
+<p>The coefficients are obtained by resolving the vector part of the biquaternion in the three complex directions defined by the new basis. If the vector part of a biquaternion is $\vec v = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_1, Q_2, Q_3 \in \mathbb{C}$, then the coefficients are</p>
 <p>$$
-Q_\rho = \langle \rho, \mathbf{v} \rangle, \qquad Q_\nu = \langle \nu, \mathbf{v} \rangle, \qquad Q_\xi = \langle \xi, \mathbf{v} \rangle,
+Q_\rho = \langle \rho, \vec v \rangle, \qquad Q_\nu = \langle \nu, \vec v \rangle, \qquad Q_\xi = \langle \xi, \vec v \rangle,
 $$</p>
 <p>where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>, §<em>The General Plain Bilinear Product $\tilde P\tilde Q$</em> (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_0$ is unchanged.</p>
 <h3 id="the-factorization">The Factorization</h3>
@@ -325,23 +325,23 @@ $$</p>
 r(f_n \tilde{Q}^{-n}) = r(f_n)\,r(\tilde{Q})^{-n}.
 $$</p>
 <p>So a sequence that grows at most geometrically, $r(f_n) \le \sigma_f^{\,n}$, has terms of seminorm tending to zero as soon as $r(\tilde{Q}) > \sigma_f$, and the Z-transform literature takes the <strong>region of convergence</strong> to be this set, with $\sigma_f$ the <strong>radius of convergence</strong>. Two corrections come from the vanishing of $r$ on the zero divisors.</p>
-<p><strong>Vanishing of the seminorm is not convergence.</strong> The first standard idempotent of <em>Idempotents of the General Plain Algebra</em> is</p>
+<p><strong>Vanishing of the seminorm is not convergence.</strong> The standard idempotent of <em>Idempotents of the General Plain Algebra</em> is the one attached to the root $ie_3$ of $+1$: here $(ie_3)^2 = e_0$, and the two idempotents $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_- = \tfrac12(e_0-ie_3)$ are its associated idempotents.</p>
 <p>$$
-\tilde\Pi_1 = \tfrac12(e_0 + ie_3), \qquad \tilde\Pi_1^2 = \tilde\Pi_1, \qquad N(\tilde\Pi_1) = 0, \qquad r(\tilde\Pi_1) = 0,
+\tilde\Pi_+ = \tfrac12(e_0 + ie_3), \qquad \tilde\Pi_+^2 = \tilde\Pi_+, \qquad N(\tilde\Pi_+) = 0, \qquad r(\tilde\Pi_+) = 0,
 $$</p>
-<p>and its powers are $\tilde\Pi_1^{\,k} = \tilde\Pi_1$ for $k \ge 1$. Multiplicativity of $r$ then gives</p>
+<p>and its powers are $\tilde\Pi_+^{\,k} = \tilde\Pi_+$ for $k \ge 1$. Multiplicativity of $r$ then gives</p>
 <p>$$
-r(\tilde\Pi_1^{\,k}) = r(\tilde\Pi_1)^k = 0 \qquad\text{for every } k,
+r(\tilde\Pi_+^{\,k}) = r(\tilde\Pi_+)^k = 0 \qquad\text{for every } k,
 $$</p>
-<p>so every term of the geometric series $\sum_k \tilde\Pi_1^{\,k}$ has seminorm zero, while the partial sums</p>
+<p>so every term of the geometric series $\sum_k \tilde\Pi_+^{\,k}$ has seminorm zero, while the partial sums</p>
 <p>$$
-S_K = \sum_{k=0}^{K-1} \tilde\Pi_1^{\,k} = e_0 + (K-1)\tilde\Pi_1, \qquad r(S_K) = \sqrt{K},
+S_K = \sum_{k=0}^{K-1} \tilde\Pi_+^{\,k} = e_0 + (K-1)\tilde\Pi_+, \qquad r(S_K) = \sqrt{K},
 $$</p>
 <p>are unbounded in both norms. The point lies inside the claimed region $r(\tilde{Q}) < 1$, and the geometric identity</p>
 <p>$$
 \sum_{k=0}^{\infty} \tilde{Q}^{k} = (e_0 - \tilde{Q})^{-1}
 $$</p>
-<p>fails there, because $e_0 - \tilde\Pi_1 = \tilde\Pi_2$ is the complementary idempotent and is again a zero divisor. The series converges exactly when the powers $\tilde{Q}^k$ tend to zero, equivalently, the algebra being finite-dimensional, when every eigenvalue of $\tilde{Q}$, read in the $2\times2$ complex matrix representation of <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, has modulus less than one; the sum is then $(e_0 - \tilde{Q})^{-1}$, as the identity $(e_0 - \tilde{Q})S_K = e_0 - \tilde{Q}^K$ shows. The obstruction is the summation and not the multiplication: a finite sum of products is always defined, and only the passage to the limit fails.</p>
+<p>fails there, because $e_0 - \tilde\Pi_+ = \tilde\Pi_-$ is the complementary idempotent and is again a zero divisor. The series converges exactly when the powers $\tilde{Q}^k$ tend to zero, equivalently, the algebra being finite-dimensional, when every eigenvalue of $\tilde{Q}$, read in the $2\times2$ complex matrix representation of <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, has modulus less than one; the sum is then $(e_0 - \tilde{Q})^{-1}$, as the identity $(e_0 - \tilde{Q})S_K = e_0 - \tilde{Q}^K$ shows. The obstruction is the summation and not the multiplication: a finite sum of products is always defined, and only the passage to the limit fails.</p>
 <p><strong>The seminorm radius is the geometric mean of the eigenvalues.</strong> By the same representation the eigenvalues $\lambda_1, \lambda_2$ of $\tilde{Q}$ satisfy $\lambda_1\lambda_2 = N(\tilde{Q})$, so $r(\tilde{Q}) = \sqrt{\lvert\lambda_1\lambda_2\rvert}$ is the geometric mean of their moduli. The region in which the series in $\tilde{Q}^{-1}$ actually converges is governed by the smaller of the two: for a positive real $c$ the series $\sum_k (c\tilde{Q}^{-1})^k$ converges exactly when $c < \min(\lvert\lambda_1\rvert, \lvert\lambda_2\rvert)$. The geometric mean never falls below the minimum, so the region $r(\tilde{Q}) > \sigma_f$ always <strong>contains</strong> the true region and may contain divergent points. For</p>
 <p>$$
 \tilde{Q} = 3e_0 + ie_1, \qquad N(\tilde{Q}) = 8, \qquad r(\tilde{Q}) = 2\sqrt2 \approx 2.83,
@@ -498,7 +498,7 @@ $$</p>
 <p>The transform is invertible on signals of non-vanishing norm, and it satisfies the conjugate symmetry for real quaternion signals. It factorizes into four complex Fourier transforms, which gives a fast algorithm using existing complex FFT libraries. The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel.</p>
 <p>The vanishing-norm issue is a genuinely biquaternionic feature: signals containing zero-divisor samples are not necessarily recoverable from their transform, and the precise invertibility condition is not known.</p>
 <p>The discrete transform is the discrete analogue of the continuous transform of the companion article, and it is the basis for the biquaternion signal processing applications.</p>
-<p>The infinite-sequence analogue is the <strong>biquaternion Z transform</strong>, $\mathcal{X}[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$, the discrete Laplace transform of a sequence. Its calculation rules are those of the complex Z transform, with the commutation hypotheses that the non-commutative product imposes, and its convergence is the place where the zero divisors enter a transform: the multiplicative real norm $r = \sqrt{\lvert N\rvert}$ vanishes on them, so the region $r(\tilde{Q}) > \sigma_f$ of the transform literature contains the true region of convergence and may contain divergent points, the standard idempotent $\tilde\Pi_1$ and its complement being the sharpest example. The transform solves linear recurrences with constant biquaternion coefficients by turning them into algebraic equations.</p>
+<p>The infinite-sequence analogue is the <strong>biquaternion Z transform</strong>, $\mathcal{X}[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$, the discrete Laplace transform of a sequence. Its calculation rules are those of the complex Z transform, with the commutation hypotheses that the non-commutative product imposes, and its convergence is the place where the zero divisors enter a transform: the multiplicative real norm $r = \sqrt{\lvert N\rvert}$ vanishes on them, so the region $r(\tilde{Q}) > \sigma_f$ of the transform literature contains the true region of convergence and may contain divergent points, the standard idempotent $\tilde\Pi_+$ and its complement being the sharpest example. The transform solves linear recurrences with constant biquaternion coefficients by turning them into algebraic equations.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -537,7 +537,7 @@ $$</p>
 <td>Biquaternion norm; not to be confused with the sample count $N$</td>
 </tr>
 <tr>
-<td>$\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
+<td>$\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
 <td>Vector part of a biquaternion</td>
 </tr>
 <tr>

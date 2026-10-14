@@ -297,24 +297,24 @@ where $\operatorname{symb}$ denotes the Weyl symbol, and the approach is control
 <p>The companion articles express quantum physics in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. It is worth asking what becomes of the correspondence there, because the framework's realization of it is instructive: it exhibits the resemblance exactly in one of the two checks above and not at all in the other.</p>
 <p><strong>The observables.</strong> In the framework the observables of a two-state system are the Hermitian elements
 $$
-\tilde H = h_0\,e_0 + i\,\mathbf{h}, \qquad h_0\in\mathbb{R}, \quad \mathbf{h}=(h_1,h_2,h_3)\in\mathbb{R}^3,
+\tilde H = h_0\,e_0 + i\,\vec h, \qquad h_0\in\mathbb{R}, \quad \vec h=(h_1,h_2,h_3)\in\mathbb{R}^3,
 $$
 of the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Their <strong>commutator</strong> is
 $$
-[\tilde H,\tilde K] = -2\,(\mathbf{h}\times\mathbf{k}),
+[\tilde H,\tilde K] = -2\,(\vec h\times\vec k),
 $$
 a pure real quaternion lying in $\mathbb{M}_-\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{e_1,e_2,e_3\}$. The scalar parts $h_0e_0$, $k_0e_0$ are central and drop out. This bracket is a statement of the algebra alone: <strong>it contains no $\hbar$.</strong> The quaternion product rule $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.</p>
 <p><strong>The angular-momentum resemblance, made exact.</strong> The spin observables are the Hermitian elements
 $$
 \tilde S_k = \frac{\hbar}{2}\,i\,e_k \in \mathbb{M}_+ \quad(\text{spin-}\tfrac12),
 $$
-whose matrix images under $e_k\mapsto-i\sigma_k$ are $\hat S_k=(\hbar/2)\sigma_k$. Direct computation from $[\tilde H,\tilde K]=-2(\mathbf{h}\times\mathbf{k})$ gives
+whose matrix images under $e_k\mapsto-i\sigma_k$ are $\hat S_k=(\hbar/2)\sigma_k$. Direct computation from $[\tilde H,\tilde K]=-2(\vec h\times\vec k)$ gives
 $$
 [\tilde S_i,\tilde S_j] = i\hbar\,\epsilon_{ijk}\,\tilde S_k,
 \qquad\text{so}\qquad
 \frac{1}{i\hbar}[\tilde S_i,\tilde S_j] = \epsilon_{ijk}\,\tilde S_k,
 $$
-which is term for term the operator image of the classical bracket $\{L_i,L_j\}=\epsilon_{ijk}L_k$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde H,\tilde K]=-2(\mathbf{h}\times\mathbf{k})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $ie_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)ie_k$, and the sign is fixed by the orientation of the cross product.</p>
+which is term for term the operator image of the classical bracket $\{L_i,L_j\}=\epsilon_{ijk}L_k$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde H,\tilde K]=-2(\vec h\times\vec k)$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $ie_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)ie_k$, and the sign is fixed by the orientation of the cross product.</p>
 <p><strong>Where the framework breaks the correspondence.</strong> The canonical pair cannot be realized this way. The relation
 $$
 [\tilde{Q},\tilde P] = i\hbar\,e_0
@@ -332,7 +332,7 @@ $$
 \{\{f,g\}\} = \{f,g\} + O(\hbar^2).
 $$
 The leading failure of the bracket correspondence is therefore at order $\hbar^2$ — for $f=q^3$, $g=p^3$, the classical bracket $9q^2p^2$ becomes $9q^2p^2-\tfrac32\hbar^2$ — and that residual is not small at any point of phase space; it is a constant. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.</p>
-<p>In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{M}_+$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde H,\tilde K]=-2(\mathbf{h}\times\mathbf{k})$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)ie_k$, and it cannot realize the canonical one, because the relation $[\tilde{Q},\tilde P]=i\hbar e_0$ has no solution in $\mathbb{M}_+$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.</p>
+<p>In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{M}_+$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde H,\tilde K]=-2(\vec h\times\vec k)$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)ie_k$, and it cannot realize the canonical one, because the relation $[\tilde{Q},\tilde P]=i\hbar e_0$ has no solution in $\mathbb{M}_+$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -403,11 +403,11 @@ The leading failure of the bracket correspondence is therefore at order $\hbar^2
 <td>Real-quaternion subspace</td>
 </tr>
 <tr>
-<td>$\tilde H=h_0e_0+i\mathbf{h}$</td>
+<td>$\tilde H=h_0e_0+i\vec h$</td>
 <td>Hermitian observable</td>
 </tr>
 <tr>
-<td>$[\tilde H,\tilde K]=-2(\mathbf{h}\times\mathbf{k})$</td>
+<td>$[\tilde H,\tilde K]=-2(\vec h\times\vec k)$</td>
 <td>Biquaternion commutator ($\hbar$-free)</td>
 </tr>
 <tr>
@@ -422,7 +422,7 @@ The leading failure of the bracket correspondence is therefore at order $\hbar^2
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><em>Angular Momentum and Spin in Biquaternionic Form</em> (<code>articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md</code>), for the commutator $[\tilde H,\tilde K]=-2(\mathbf{h}\times\mathbf{k})$ and the spin relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ used in the framework section.</li>
+<li><em>Angular Momentum and Spin in Biquaternionic Form</em> (<code>articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md</code>), for the commutator $[\tilde H,\tilde K]=-2(\vec h\times\vec k)$ and the spin relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ used in the framework section.</li>
 <li><em>Quantum Physics in Biquaternionic Form</em> (<code>articles_physics/quantum-physics-in-biquaternionic-form.md</code>), for the observables in $\mathbb{M}_+$, the trace formula, and the dynamics that supply the quantum side of the correspondence.</li>
 <li><em>Spin-1/2 Quantum Physics in Biquaternionic Form</em> (<code>articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.md</code>), for the identification of $\mathbb{M}_+$ with the qubit observables and the isomorphism $e_k\mapsto-i\sigma_k$ used throughout the framework section.</li>
 <li><em>The Harmonic Oscillator in Biquaternionic Form</em> (<code>articles_physics/the-harmonic-oscillator-in-biquaternionic-form.md</code>), for the proof that $[\tilde{Q},\tilde P]=i\hbar e_0$ has no solution in $\mathbb{M}_+$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.</li>

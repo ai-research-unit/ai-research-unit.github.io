@@ -68,7 +68,7 @@ U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
 \qquad
 W(C) = \mathrm{Tr}\,U(C),
 $$</p>
-<p>with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{\rho}\in\mathbb{M}_+$ with $\tilde{\rho}\geq0$, $\mathrm{Tr}\tilde{\rho} = 1$, and are parametrized by the Bloch vector, $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq1$, in the quaternion realization. The relative entropy is $S(\tilde{\rho}\|\tilde{\sigma})$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, $\mathrm{Tr}(e_0) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are <strong>standard QCD notation, not framework objects</strong>; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.</p>
+<p>with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{\rho}\in\mathbb{M}_+$ with $\tilde{\rho}\geq0$, $\mathrm{Tr}\tilde{\rho} = 1$, and are parametrized by the Bloch vector, $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$, $|\vec r|\leq1$, in the quaternion realization. The relative entropy is $S(\tilde{\rho}\|\tilde{\sigma})$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, $\mathrm{Tr}(e_0) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are <strong>standard QCD notation, not framework objects</strong>; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.</p>
 <h2 id="confinement-and-the-order-parameter">Confinement and the Order Parameter</h2>
 <h3 id="the-wilson-loop-as-the-criterion">The Wilson Loop as the Criterion</h3>
 <p>The order parameter of the gauge theory is the expectation of the Wilson loop in the gauge-field path integral,</p>
@@ -141,15 +141,15 @@ $$</p>
 <p>The distinction between the two is the distinction between a constraint and a channel, and the information-theoretic content is in the second.</p>
 <p>One qualification keeps the model honest. The colour symmetry of QCD is local, so a rigid colour rotation is a gauge transformation of the full theory, and the superselection statement above is a statement about the algebra of colour-invariant operators rather than about a group of physical rotations. What makes the restriction a loss and not a redundancy is that the partonic configurations a hadron's infrared description cannot separate are not gauge copies of one another: they differ in the momenta and the number of their constituents, which no change of description removes. The model of the next subsection uses the framework's own internal charge, realized in the informational sector, for which the rotation is non-trivial — the framework's gauge group is the abelian central phase, which acts trivially on $\mathbb{M}_+$, so the two are distinct transformations of the algebra.</p>
 <h3 id="the-restricted-state-and-the-vanishing-relative-entropy">The Restricted State and the Vanishing Relative Entropy</h3>
-<p>The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let a charge generator be represented on the informational sector by an element of $\mathrm{SU}(2)\subset\mathbb{M}_+$, so that the rotation $\tilde{\rho}\mapsto U\tilde{\rho}\,U^\dagger$ with $U = \exp(i\theta\, n_a ie_a/2)$ is the charge rotation about the axis $\mathbf{n}$. The <strong>accessible</strong> state is the restriction of $\tilde{\rho}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,</p>
+<p>The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let a charge generator be represented on the informational sector by an element of $\mathrm{SU}(2)\subset\mathbb{M}_+$, so that the rotation $\tilde{\rho}\mapsto U\tilde{\rho}\,U^\dagger$ with $U = \exp(i\theta\, n_a ie_a/2)$ is the charge rotation about the axis $\vec n$. The <strong>accessible</strong> state is the restriction of $\tilde{\rho}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,</p>
 <p>$$
-\mathbf{r} \;\longmapsto\; (\mathbf{r}\cdot\hat{\mathbf{n}})\,\hat{\mathbf{n}},
+\vec r \;\longmapsto\; (\vec r\cdot\hat n)\,\hat n,
 $$</p>
 <p>the projection of the Bloch vector onto the axis, which is the full-dephasing limit of the companion article on idempotent projection. Two states that differ by a charge rotation have <strong>the same accessible state</strong>:</p>
 <p>$$
-\mathbf{r}\cdot\hat{\mathbf{n}} = (R_{\hat{\mathbf{n}}}(\theta)\mathbf{r})\cdot\hat{\mathbf{n}},
+\vec r\cdot\hat n = (R_{\hat n}(\theta)\vec r)\cdot\hat n,
 $$</p>
-<p>because a rotation about $\hat{\mathbf{n}}$ preserves the component along $\hat{\mathbf{n}}$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. This was checked on explicit states: with $\mathbf{r} = (0.5,-0.3,0.4)$ and a charge rotation about $\hat{\mathbf{n}} = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{\rho}\|\tilde{\rho}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly.</p>
+<p>because a rotation about $\hat n$ preserves the component along $\hat n$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. This was checked on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\hat n = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{\rho}\|\tilde{\rho}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly.</p>
 <p>The lesson is the article's thesis in its sharpest form. A charge rotation is not a gauge transformation: it changes the state, and the full relative entropy detects the change. But the change is invisible to the accessible algebra, and the accessible algebra is the whole of what survives to asymptotic observation. The information lost is exactly the component of the state along the unobservable charge directions, and no re-description recovers it.</p>
 <h3 id="why-this-is-loss-and-not-redundancy">Why This Is Loss and Not Redundancy</h3>
 <p>The contrast with the companion article on gauge redundancy is now exact.</p>
@@ -223,15 +223,15 @@ $$</p>
 <h2 id="the-other-confinement-picture-a-linear-boundary-condition">The Other Confinement Picture: A Linear Boundary Condition</h2>
 <p>The negative result above concerns <strong>colour</strong> confinement, and it stands: the order parameter is a loop and the mechanism sought is a non-perturbative property of the colour gauge field, and the framework has neither. There is, however, a second and older picture of confinement, and it is a different kind of object. In the <strong>bag model</strong> the hadron is a bounded region $\Omega$ and the coloured field is required to obey a <strong>linear boundary condition</strong> on $\partial\Omega$ — a ban on the flow of the field through the surface — instead of being held by a non-perturbative loop mechanism. The bag does not derive an area law and does not derive $\mathrm{SU}(3)$; it <em>assumes</em> the confining region and asks which fields can live inside it. What it produces is a boundary-value problem, and a boundary-value problem is an object the biquaternion algebra carries natively.</p>
 <h3 id="the-linear-bag-model">The Linear Bag Model</h3>
-<p>Let $q$ be a time-harmonic Dirac bispinor, $\Phi(t,\mathbf{x}) = q(\mathbf{x})e^{i\omega t}$, obeying the massive Dirac equation</p>
+<p>Let $q$ be a time-harmonic Dirac bispinor, $\Phi(t,\vec x) = q(\vec x)e^{i\omega t}$, obeying the massive Dirac equation</p>
 <p>$$
 \left(i\omega\gamma_0 - \sum_{k=1}^{3}\gamma_k\partial_k + im\right)q = 0
 $$</p>
 <p>in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The confinement of the field to $\Omega$ is the boundary condition</p>
 <p>$$
-\sum_{k=1}^{3} n_k\gamma_k\,q(\mathbf{x}) = i\,q(\mathbf{x}) \qquad(\mathbf{x}\in\partial\Omega),
+\sum_{k=1}^{3} n_k\gamma_k\,q(\vec x) = i\,q(\vec x) \qquad(\vec x\in\partial\Omega),
 $$</p>
-<p>where $\mathbf{n}$ is the unit outward normal; the condition is what forbids the flow of the particle through the surface of the confining region. The equation and the condition together are the <strong>linear bag model</strong>, and the question they pose is a boundary-value question: for which boundary data $q$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm.</p>
+<p>where $\vec n$ is the unit outward normal; the condition is what forbids the flow of the particle through the surface of the confining region. The equation and the condition together are the <strong>linear bag model</strong>, and the question they pose is a boundary-value question: for which boundary data $q$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm.</p>
 <h3 id="the-biquaternionic-reduction">The Biquaternionic Reduction</h3>
 <p>The reduction of the model to the algebra is due to V. V. Kravchenko (1995), and its steps are worth separating, because each is a place where the framework's own objects do the work.</p>
 <p><strong>A real-linear bijection of the spinor module onto the algebra.</strong> There is a bijection $A$ from bispinors $\Phi: G\subset\mathbb{R}^4 \to \mathbb{C}^4$ onto biquaternion-valued functions $F = A[\Phi]$, under which the spatial gamma matrices act by left multiplication by the imaginary units and the timelike generator acts <strong>antilinearly</strong>, by complex conjugation:</p>
@@ -393,15 +393,15 @@ $$</p>
 <td>Information cost of the loop</td>
 </tr>
 <tr>
-<td>$\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq1$</td>
+<td>$\tilde{\rho} = \tfrac12(e_0 + i\vec r)$, $|\vec r|\leq1$</td>
 <td>State of the informational sector (Bloch ball)</td>
 </tr>
 <tr>
-<td>$\mathbf{r}\cdot\hat{\mathbf{n}}$</td>
+<td>$\vec r\cdot\hat n$</td>
 <td>Component along the charge axis; accessible content</td>
 </tr>
 <tr>
-<td>$R_{\hat{\mathbf{n}}}(\theta)$, $U = e^{i\theta n_a ie_a/2}$</td>
+<td>$R_{\hat n}(\theta)$, $U = e^{i\theta n_a ie_a/2}$</td>
 <td>Charge rotation</td>
 </tr>
 <tr>

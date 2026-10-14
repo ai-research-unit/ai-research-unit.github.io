@@ -62,10 +62,10 @@ $$</p>
 <p><strong>Definition.</strong> The <strong>symmetrised quaternionic product</strong> of $\tilde p,\tilde q \in \mathbb{H}$ is $\tilde p \bullet \tilde q = \tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p)$.</p>
 <p><strong>Theorem (the central value).</strong> For all $\tilde p,\tilde q \in \mathbb{H}$,</p>
 <p>$$
-\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)\,e_0 , \qquad \beta(\tilde p,\tilde q) = p_0q_0 + \mathbf p \cdot \mathbf q .
+\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)\,e_0 , \qquad \beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q .
 $$</p>
 <p>The product is $\mathbb{R}$-bilinear, commutative, and its values lie in the scalar line.</p>
-<p><em>Proof.</em> The two summands are $\tilde p^{\natural}\tilde q$ and $\tilde q^{\natural}\tilde p$, of vector parts $p_0\mathbf q - q_0\mathbf p - \mathbf p \times \mathbf q$ and $q_0\mathbf p - p_0\mathbf q - \mathbf q \times \mathbf p$; the cross products are opposite by antisymmetry and cancel in the half-sum, the two copies of $p_0\mathbf q - q_0\mathbf p$ cancel too, and the scalar parts add to $2\beta(\tilde p,\tilde q)$.</p>
+<p><em>Proof.</em> The two summands are $\tilde p^{\natural}\tilde q$ and $\tilde q^{\natural}\tilde p$, of vector parts $p_0\vec q - q_0\vec p - \vec p \times \vec q$ and $q_0\vec p - p_0\vec q - \vec q \times \vec p$; the cross products are opposite by antisymmetry and cancel in the half-sum, the two copies of $p_0\vec q - q_0\vec p$ cancel too, and the scalar parts add to $2\beta(\tilde p,\tilde q)$.</p>
 <p><strong>Corollary (the quaternion form).</strong> The symmetrised product is the quaternion form of the space read as a product: $\beta$ is the symmetric bilinear form whose diagonal is the quaternionic bilinear algebraic norm, $\beta(\tilde p,\tilde p) = N(\tilde p)$ (<em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>). It is positive definite and non-degenerate.</p>
 <p><strong>Proposition (no unit, not associative, not Jordan).</strong> The symmetrised product has no unit: $e_0 \bullet \tilde q = q_0e_0$, which differs from $\tilde q$ as soon as the vector part is nonzero. It is not associative: at $(\tilde p,\tilde q,\tilde r) = (e_1,e_1,e_0)$ the two readings are $(\tilde p \bullet \tilde q) \bullet \tilde r = e_0 \bullet e_0 = e_0$ and $\tilde p \bullet (\tilde q \bullet \tilde r) = e_1 \bullet 0 = 0$. It fails the Jordan identity; at $x = y = e_1$ the two sides of</p>
 <p>$$
@@ -80,14 +80,14 @@ $$</p>
 $$</p>
 <p><strong>Theorem (the two subspaces).</strong> $\mathbb{M}_+$ is the scalar line $\mathbb{R}e_0$, of real dimension one; $\mathbb{M}_-$ is the vector subspace $\mathrm{Vect}(e_1,e_2,e_3)$, of real dimension three. They are the two eigenspaces of the conjugation and they give the splitting</p>
 <p>$$
-\mathbb{H} = \mathbb{M}_+ \oplus \mathbb{M}_- , \qquad \tilde p = p_0e_0 + \mathbf p ,
+\mathbb{H} = \mathbb{M}_+ \oplus \mathbb{M}_- , \qquad \tilde p = p_0e_0 + \vec p ,
 $$</p>
 <p>the scalar part being Hermitian and the vector part anti-Hermitian.</p>
-<p><em>Proof.</em> The conjugation acts by $p_0e_0 + \mathbf p \mapsto p_0e_0 - \mathbf p$, so its fixed subspace is the scalar line and its negated one the vector subspace; an involution of a real vector space splits the space into its two eigenspaces.</p>
+<p><em>Proof.</em> The conjugation acts by $p_0e_0 + \vec p \mapsto p_0e_0 - \vec p$, so its fixed subspace is the scalar line and its negated one the vector subspace; an involution of a real vector space splits the space into its two eigenspaces.</p>
 <p>Over $\mathbb{R}$ the scalar sector has <strong>no</strong> nontrivial involution — the bar is the identity by the conventions of the corpus — so ${}^{\natural}$ is the only involution at hand, it has two eigenspaces, and the four-subspace lattice collapses to two. The subspace and its companion are therefore the scalar line and the vector subspace, and no other.</p>
 <h2 id="positivity-on-the-hermitian-subspace">Positivity on the Hermitian Subspace</h2>
-<p><strong>Theorem (positivity).</strong> The symmetrised product is positive definite: $\tilde p \bullet \tilde p = N(\tilde p)e_0$, which is a non-negative multiple of $e_0$ vanishing only at $\tilde p = 0$. On the Hermitian subspace it reads $\tilde p \bullet \tilde q = p_0q_0e_0$, positive definite there; on the anti-Hermitian subspace it reads $\tilde p \bullet \tilde q = (\mathbf p \cdot \mathbf q)e_0$, also positive definite there. The two subspaces are orthogonal for the form, $\beta(\mathbb{M}_+,\mathbb{M}_-) = 0$.</p>
-<p><em>Proof.</em> On the scalar line $\mathbf p = \mathbf q = 0$, so $\beta = p_0q_0$; on the vector subspace $p_0 = q_0 = 0$, so $\beta = \mathbf p \cdot \mathbf q$; the mixed value has $p_0 = 0$ or $q_0 = 0$ together with the corresponding vector part zero, so it vanishes.</p>
+<p><strong>Theorem (positivity).</strong> The symmetrised product is positive definite: $\tilde p \bullet \tilde p = N(\tilde p)e_0$, which is a non-negative multiple of $e_0$ vanishing only at $\tilde p = 0$. On the Hermitian subspace it reads $\tilde p \bullet \tilde q = p_0q_0e_0$, positive definite there; on the anti-Hermitian subspace it reads $\tilde p \bullet \tilde q = (\vec p \cdot \vec q)e_0$, also positive definite there. The two subspaces are orthogonal for the form, $\beta(\mathbb{M}_+,\mathbb{M}_-) = 0$.</p>
+<p><em>Proof.</em> On the scalar line $\vec p = \vec q = 0$, so $\beta = p_0q_0$; on the vector subspace $p_0 = q_0 = 0$, so $\beta = \vec p \cdot \vec q$; the mixed value has $p_0 = 0$ or $q_0 = 0$ together with the corresponding vector part zero, so it vanishes.</p>
 <p>Definiteness removes the indefinite companion, but it does not remove the zero divisors of the symmetrisation, which lie in the orthogonal pairs: $\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)e_0$ vanishes exactly on the pairs with $\beta(\tilde p,\tilde q) = 0$, and those pairs are abundant, $e_1 \bullet e_2 = 0$ for two orthogonal pure elements and $e_0 \bullet e_1 = 0$ for a scalar and a vector. What definiteness removes is the zero divisor <strong>against itself</strong>: $\tilde p \bullet \tilde p = N(\tilde p)e_0$ never vanishes for $\tilde p \neq 0$, so the symmetrisation is anisotropic even though it has zero divisors. The contrast with the quaternionic product is exact: $\star$ has no zero divisor at all, while its symmetrisation has all the orthogonal pairs (<em>The Specificities of the General Quaternionic Algebra</em>, above this article in this category).</p>
 <h2 id="summary">Summary</h2>
 <p>The symmetrised quaternionic product $\tilde p \bullet \tilde q = \tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p)$ is central-valued, $\beta(\tilde p,\tilde q)e_0$, $\mathbb{R}$-bilinear and commutative; it is the quaternion form of the space read as a product, it has no unit, it is not associative, and it fails the Jordan identity at $x = y = e_1$.</p>
@@ -105,7 +105,7 @@ $$</p>
 <td>the symmetrised quaternionic product</td>
 </tr>
 <tr>
-<td>$\beta(\tilde p,\tilde q) = p_0q_0 + \mathbf p \cdot \mathbf q$</td>
+<td>$\beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q$</td>
 <td>the quaternion form, the central coefficient</td>
 </tr>
 <tr>

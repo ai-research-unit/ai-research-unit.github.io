@@ -65,7 +65,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.</p>
 <p>The block of this article is the <strong>symmetric plain multiplication</strong>
 $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
-=\bigl[P_0Q_0-(\mathbf P,\mathbf Q)\bigr]+P_0\mathbf Q+Q_0\mathbf P,
+=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]+P_0\vec Q+Q_0\vec P,
 $$
 the Jordan product (<em>Introduction to the Symmetric Plain Algebra of Biquaternions</em>). It is
 commutative, so the left and the right multiplication by an element are one operator and the two
@@ -76,7 +76,7 @@ families apart: a pure element annihilates a plane and an element of the cone wi
 part annihilates a line. The article owns that reading, the operator with its rank, and the shape
 of the annihilator on the remarkable subspaces; the zero-divisor set and its criterion are the
 cited article's.</p>
-<p><strong>The results.</strong> The annihilator of an element is the set of partners that it kills; the block is commutative, so the left and the right annihilator coincide and are the kernel of the one multiplication operator $L_{\tilde P}$. For the block the operator has trace $4P_0$ and determinant $P_0^{2}C(\tilde P)$: the annihilator is trivial off the zero-divisor set, a complex plane $\{\tilde X:X_0=0,\ (\mathbf P,\mathbf X)=0\}$ for a non-zero pure element, and the complex line $\mathbb{C}\tilde Q^{\natural}$ for an element with $Q_0\neq0$ and $C(\tilde Q)=0$.</p>
+<p><strong>The results.</strong> The annihilator of an element is the set of partners that it kills; the block is commutative, so the left and the right annihilator coincide and are the kernel of the one multiplication operator $L_{\tilde P}$. For the block the operator has trace $4P_0$ and determinant $P_0^{2}C(\tilde P)$: the annihilator is trivial off the zero-divisor set, a complex plane $\{\tilde X:X_0=0,\ (\vec P,\vec X)=0\}$ for a non-zero pure element, and the complex line $\mathbb{C}\tilde Q^{\natural}$ for an element with $Q_0\neq0$ and $C(\tilde Q)=0$.</p>
 <h2 id="the-annihilator-of-a-product">The Annihilator of a Product</h2>
 <p><strong>The annihilator of an element is the set of partners that it kills; the left annihilator and the right annihilator are the kernels of the left and the right multiplication, and they are non-zero exactly when the element is a zero divisor of the corresponding side.</strong></p>
 <p><strong>Definition (annihilator).</strong> Let $\star$ be a product on $\mathbb{B}$ and let
@@ -110,7 +110,7 @@ $L_{\tilde P}=R_{\tilde P}$.</p>
 <h2 id="the-multiplication-operator-and-the-rank">The Multiplication Operator and the Rank</h2>
 <p><strong>In the basis $e_0,e_1,e_2,e_3$ the operator $L_{\tilde P}$ has trace $4P_0$ and determinant $\det L_{\tilde P}=P_0^{2}C(\tilde P)$: it is invertible off the zero-divisor set, of rank two with a two-dimensional kernel on the pure family, and of rank three with a one-dimensional kernel on the scalar family.</strong></p>
 <p><strong>Proposition (the operator and its characteristic polynomial).</strong> In the basis $e_0,e_1,e_2,e_3$
-the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has matrix
+the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\vec P$ has matrix
 $$
 \begin{pmatrix}
 P_0 & -P_1 & -P_2 & -P_3 \\
@@ -125,9 +125,9 @@ $$
 $$</p>
 <p><em>Proof.</em> The columns are the values $\tilde P\bullet e_j$. The trace is the sum of the diagonal
 entries, $4P_0$; the determinant is the product of the three eigenvalues $P_0$ of the vector part
-with the Schur complement $P_0-(\mathbf P,\mathbf P)/P_0$, namely
-$P_0^{3}\bigl(P_0-(\mathbf P,\mathbf P)/P_0\bigr)=P_0^{2}\bigl(P_0^{2}-(\mathbf P,\mathbf P)\bigr)=P_0^{2}C(\tilde P)$
-when $P_0\neq0$; and when $P_0=0$ both sides vanish, the image of $L_{\tilde P}=L_{\mathbf P}$ being contained in $\mathrm{span}\{e_0\}+\mathbb{C}\mathbf P$, of dimension at most two. Hence $\det L_{\tilde P}=P_0^{2}C(\tilde P)$ for every $\tilde P$.</p>
+with the Schur complement $P_0-(\vec P,\vec P)/P_0$, namely
+$P_0^{3}\bigl(P_0-(\vec P,\vec P)/P_0\bigr)=P_0^{2}\bigl(P_0^{2}-(\vec P,\vec P)\bigr)=P_0^{2}C(\tilde P)$
+when $P_0\neq0$; and when $P_0=0$ both sides vanish, the image of $L_{\tilde P}=L_{\vec P}$ being contained in $\mathrm{span}\{e_0\}+\mathbb{C}\vec P$, of dimension at most two. Hence $\det L_{\tilde P}=P_0^{2}C(\tilde P)$ for every $\tilde P$.</p>
 <p><strong>Corollary (the rank and the annihilator).</strong> The rank of $L_{\tilde P}$ and the annihilator of
 $\tilde P$ are</p>
 <div class="table-scroll"><table>
@@ -147,8 +147,8 @@ $\tilde P$ are</p>
 <td>$4$</td>
 </tr>
 <tr>
-<td>$\tilde P\neq0$, $P_0=0$, $\mathbf P\neq0$</td>
-<td>$(\mathbf P,\mathbf P)\neq0$</td>
+<td>$\tilde P\neq0$, $P_0=0$, $\vec P\neq0$</td>
+<td>$(\vec P,\vec P)\neq0$</td>
 <td>$2$</td>
 <td>$2$</td>
 </tr>
@@ -167,26 +167,26 @@ $\tilde P$ are</p>
 </tbody>
 </table></div>
 <p><em>Proof.</em> A pure element has $P_0=0$, so the matrix is the direct sum of the zero scalar block and
-the nonzero vector $\mathbf P$, of rank two, and the kernel is the plane of the pure elements
-orthogonal to $\mathbf P$, of dimension two. A non-pure element has $P_0\neq0$: the three vector
+the nonzero vector $\vec P$, of rank two, and the kernel is the plane of the pure elements
+orthogonal to $\vec P$, of dimension two. A non-pure element has $P_0\neq0$: the three vector
 columns are independent and span a three-dimensional space, and the fourth column raises the rank
-to four exactly when $P_0^{2}\neq(\mathbf P,\mathbf P)$, that is exactly when $C(\tilde P)\neq0$.
+to four exactly when $P_0^{2}\neq(\vec P,\vec P)$, that is exactly when $C(\tilde P)\neq0$.
 At $C(\tilde P)=0$ the fourth column lies in the span of the three, and the rank is three. The last
 case is the origin.</p>
 <h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
-<p><strong>A non-zero pure element has the pure plane annihilator $\{\tilde X:X_0=0,\ (\mathbf Q,\mathbf X)=0\}$, of complex dimension two; a non-zero element with $Q_0\neq0$ and $C(\tilde Q)=0$ has the line annihilator $\mathbb{C}\tilde Q^{\natural}$; and an element that is neither has annihilator $\{0\}$.</strong></p>
+<p><strong>A non-zero pure element has the pure plane annihilator $\{\tilde X:X_0=0,\ (\vec Q,\vec X)=0\}$, of complex dimension two; a non-zero element with $Q_0\neq0$ and $C(\tilde Q)=0$ has the line annihilator $\mathbb{C}\tilde Q^{\natural}$; and an element that is neither has annihilator $\{0\}$.</strong></p>
 <p>The criterion of the block is the pair of clauses $P_0=0$ or $C(\tilde P)=0$ (<em>Zero Divisors of the
 Symmetric Plain Algebra</em>, §<em>The Two Families</em>). Each clause has its own annihilator.</p>
-<p><strong>Theorem (the annihilator of a pure element).</strong> For a nonzero pure element $\tilde Q=\mathbf Q$,
+<p><strong>Theorem (the annihilator of a pure element).</strong> For a nonzero pure element $\tilde Q=\vec Q$,
 $$
 A_\bullet(\tilde Q)=B_\bullet(\tilde Q)
-=\{\tilde X=X_0e_0+\mathbf X:\ X_0=0,\ (\mathbf Q,\mathbf X)=0\},
+=\{\tilde X=X_0e_0+\vec X:\ X_0=0,\ (\vec Q,\vec X)=0\},
 $$
 the pure plane orthogonal to the vector part, of complex dimension two. The element belongs to its
 own annihilator and is a nilpotent of index two.</p>
-<p><em>Proof.</em> The product of two pure elements is $\tilde Q\bullet\tilde X=-(\mathbf Q,\mathbf X)e_0$;
+<p><em>Proof.</em> The product of two pure elements is $\tilde Q\bullet\tilde X=-(\vec Q,\vec X)e_0$;
 the kernel is the set above, and in the three-dimensional complex vector subspace the single
-equation $(\mathbf Q,\mathbf X)=0$ has a two-dimensional solution space.</p>
+equation $(\vec Q,\vec X)=0$ has a two-dimensional solution space.</p>
 <p><strong>Theorem (the annihilator of an element of the cone with nonzero scalar part).</strong> For a nonzero
 element $\tilde Q$ with $Q_0\neq0$ and $C(\tilde Q)=0$,
 $$
@@ -195,7 +195,7 @@ $$
 the complex line spanned by the natural conjugate.</p>
 <p><em>Proof.</em> The natural conjugate gives $\tilde Q\bullet\tilde Q^{\natural}=C(\tilde Q)e_0=0$, so the
 line $\mathbb{C}\tilde Q^{\natural}$ lies in the annihilator. Every element of the kernel has
-$X_0=0$ and on $\mathbf X$ the single conjugacy-free equation $Q_0\mathbf X=X_0\mathbf Q$ forced by
+$X_0=0$ and on $\vec X$ the single conjugacy-free equation $Q_0\vec X=X_0\vec Q$ forced by
 the vector part of the product, whose determinant vanishes through the factor $C(\tilde Q)$; the
 kernel is therefore exactly one-dimensional and equal to that line.</p>
 <p><strong>Corollary (the annihilator vanishes off the zero-divisor set).</strong> For an element that is neither
@@ -211,15 +211,15 @@ from $2$ to $3$ in the rank is the jump from the rank-two family to the rank-thr
 is the sharpest case: it is $\mathbb{C}\tilde Q^{\natural}$, and up to the scalar it is the set of
 the idempotents of the block (<em>Square Roots of One and the Idempotents of the Symmetric Plain Algebra</em>).</p>
 <h2 id="the-annihilator-on-the-remarkable-subspaces">The Annihilator on the Remarkable Subspaces</h2>
-<p><strong>A non-zero central element annihilates nothing; a non-zero pure element, whose annihilator in the ambient space is a plane, has it fall to the line $\mathbb{C}\mathbf P$ inside the vector subspace; and on the Hermitian subspace the annihilator of a non-zero pure Hermitian element is again a pure plane containing the real line of the element.</strong></p>
+<p><strong>A non-zero central element annihilates nothing; a non-zero pure element, whose annihilator in the ambient space is a plane, has it fall to the line $\mathbb{C}\vec P$ inside the vector subspace; and on the Hermitian subspace the annihilator of a non-zero pure Hermitian element is again a pure plane containing the real line of the element.</strong></p>
 <p><strong>The centre.</strong> A nonzero central element $\tilde P=\lambda e_0$ has $C(\lambda e_0)=\lambda^{2}$
-and $\mathbf P=0$, so it is regular and its annihilator is $\{0\}$: the centre annihilates nothing.</p>
-<p><strong>The vector subspace.</strong> A nonzero pure element $\tilde P=\mathbf P$ has the plane annihilator
-above. Inside the vector subspace the annihilator falls to the line $\mathbb{C}\mathbf P$: the
-single equation $(\mathbf P,\mathbf X)=0$ is the orthogonal plane of the ambient space, and its
-intersection with the vector subspace is the line through $\mathbf P$.</p>
+and $\vec P=0$, so it is regular and its annihilator is $\{0\}$: the centre annihilates nothing.</p>
+<p><strong>The vector subspace.</strong> A nonzero pure element $\tilde P=\vec P$ has the plane annihilator
+above. Inside the vector subspace the annihilator falls to the line $\mathbb{C}\vec P$: the
+single equation $(\vec P,\vec X)=0$ is the orthogonal plane of the ambient space, and its
+intersection with the vector subspace is the line through $\vec P$.</p>
 <p><strong>The Hermitian and anti-Hermitian subspaces.</strong> On the Hermitian subspace the coefficients satisfy
-$\overline{Q_k}=Q_k$ and the bilinear form $(\mathbf Q,\mathbf X)$ is Hermitian; the annihilator of
+$\overline{Q_k}=Q_k$ and the bilinear form $(\vec Q,\vec X)$ is Hermitian; the annihilator of
 a nonzero pure Hermitian element is again a pure plane, and it contains the real line of the
 element.</p>
 <h2 id="summary">Summary</h2>
@@ -227,10 +227,10 @@ element.</p>
 the right annihilator being the kernels of the left and the right multiplication. The symmetric
 plain multiplication is commutative, so the two annihilators of an element coincide and are the
 kernel of the one operator
-$\tilde P\bullet\tilde X=[P_0X_0-(\mathbf P,\mathbf X)]+P_0\mathbf X+X_0\mathbf P$, whose
+$\tilde P\bullet\tilde X=[P_0X_0-(\vec P,\vec X)]+P_0\vec X+X_0\vec P$, whose
 determinant is $P_0^{2}C(\tilde P)$. The annihilator keeps apart the two families that the
 zero-divisor criterion joins: a pure element annihilates the complex plane
-$\{\tilde X:X_0=0,\ (\mathbf P,\mathbf X)=0\}$ and an element with $Q_0\neq0$ and $C(\tilde Q)=0$
+$\{\tilde X:X_0=0,\ (\vec P,\vec X)=0\}$ and an element with $Q_0\neq0$ and $C(\tilde Q)=0$
 annihilates the complex line $\mathbb{C}\tilde Q^{\natural}$, and every other element is regular.
 On the remarkable subspaces the annihilator of a pure element collapses from the ambient plane to
 the line through the element inside the vector subspace, and the centre annihilates nothing.</p>
@@ -260,7 +260,7 @@ the line through the element inside the vector subspace, and the centre annihila
 <td>the determinant and the trace of the operator</td>
 </tr>
 <tr>
-<td>$\{\tilde X:X_0=0,\ (\mathbf P,\mathbf X)=0\}$</td>
+<td>$\{\tilde X:X_0=0,\ (\vec P,\vec X)=0\}$</td>
 <td>the annihilator of a nonzero pure element, a complex plane</td>
 </tr>
 <tr>

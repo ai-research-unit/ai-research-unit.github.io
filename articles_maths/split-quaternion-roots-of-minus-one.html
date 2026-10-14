@@ -55,24 +55,24 @@
 <p>This article determines the solutions of the equation $\tilde\xi^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.</p>
 <p>The split-quaternion algebra, its basis, its vector subspace $V$, its central product $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its conjugation are assumed from <em>Split-Quaternion Algebra</em>; the metrical reading of $N$ is in <em>Split-Quaternion Norm and Invertibility</em>. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Zero Divisors</em>; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in <em>Split-Quaternions and Hyperbolic Geometry</em>, and the double cover of the Lorentz group that acts on it in <em>Split-Quaternion Rotations and the Lorentz Group</em>. Nothing physical is invoked.</p>
 <h2 id="the-equation-and-the-reduction-to-the-vector-subspace">The Equation and the Reduction to the Vector Subspace</h2>
-<p><strong>Theorem (The Solutions).</strong> Let $\tilde\xi = q_0 + \mathbf{u}$ with $q_0 \in \mathbb{R}$ and $\mathbf{u} \in V$. Then $\tilde\xi^2 = -1$ if and only if</p>
+<p><strong>Theorem (The Solutions).</strong> Let $\tilde\xi = q_0 + \vec u$ with $q_0 \in \mathbb{R}$ and $\vec u \in V$. Then $\tilde\xi^2 = -1$ if and only if</p>
 <p>$$
-q_0 = 0 \quad \text{and} \quad N(\mathbf{u}) = 1 .
+q_0 = 0 \quad \text{and} \quad N(\vec u) = 1 .
 $$</p>
 <p>Hence the solution set is</p>
 <p>$$
 \mathcal{R}_{-1} = \{\tilde\xi \in V : N(\tilde\xi) = 1\} = \{b e_1 + q_2 e_2 + q_3 e_3 : q_1^2 - q_2^2 - q_3^2 = 1\},
 $$</p>
 <p>a subset of the vector subspace. No solution has a nonzero scalar part.</p>
-<p><strong>Proof.</strong> For an element of $V$ the square is $-\!N$ times the identity, by (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Split-Quaternion Norm</em>); so for $\tilde\xi = q_0 + \mathbf{u}$,</p>
+<p><strong>Proof.</strong> For an element of $V$ the square is $-\!N$ times the identity, by (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Split-Quaternion Norm</em>); so for $\tilde\xi = q_0 + \vec u$,</p>
 <p>$$
-\tilde\xi^2 = q_0^2 + 2q_0\mathbf{u} + \mathbf{u}^2 = \big(q_0^2 - N(\mathbf{u})\big) + 2q_0\mathbf{u},
+\tilde\xi^2 = q_0^2 + 2q_0\vec u + \vec u^2 = \big(q_0^2 - N(\vec u)\big) + 2q_0\vec u,
 $$</p>
 <p>where the first parenthesis is scalar and the second term is a vector. The equation $\tilde\xi^2 = -1$ splits into the two equations</p>
 <p>$$
-q_0^2 - N(\mathbf{u}) = -1, \qquad 2q_0\mathbf{u} = 0 .
+q_0^2 - N(\vec u) = -1, \qquad 2q_0\vec u = 0 .
 $$</p>
-<p>If $q_0 \neq 0$ the second equation gives $\mathbf{u} = 0$, and the first then gives $q_0^2 = -1$, which has no real solution. Hence $q_0 = 0$, and the first equation becomes $-N(\mathbf{u}) = -1$, that is $N(\mathbf{u}) = 1$. Conversely these two conditions give $\tilde\xi^2 = -N(\tilde\xi) = -1$.</p>
+<p>If $q_0 \neq 0$ the second equation gives $\vec u = 0$, and the first then gives $q_0^2 = -1$, which has no real solution. Hence $q_0 = 0$, and the first equation becomes $-N(\vec u) = -1$, that is $N(\vec u) = 1$. Conversely these two conditions give $\tilde\xi^2 = -N(\tilde\xi) = -1$.</p>
 <p><strong>Corollary (The Root Set Is the Level Set $N = 1$).</strong> The solution set is a two-dimensional subset of the three-dimensional vector space $V$, namely the level set $N = 1$ in $V$, with two components</p>
 <p>$$
 \mathcal{R}_{-1} = \{b^2 - q_2^2 - q_3^2 = 1\} = \{b \geq 1\} \cup \{b \leq -1\},
@@ -86,7 +86,7 @@ $$</p>
 \mathcal{R}_{-1} = \{\tilde\xi \in V : N(\tilde\xi) = 1\},
 $$</p>
 <p>the level set $q_1^2 - q_2^2 - q_3^2 = 1$; every solution has $\operatorname{Sc}\tilde\xi = 0$ and $N(\tilde\xi) = 1$, and conversely.</p>
-<p><strong>Proof.</strong> Write $\tilde\xi = \xi_0 + \mathbf v$ with $\xi_0 \in S$ and $\mathbf v \in V$. Then $\tilde\xi^2 = \xi_0^2 + 2\xi_0\mathbf v + \mathbf v^2 = \xi_0^2 + 2\xi_0\mathbf v - N(\mathbf v)$; this equals $-1$ exactly when the $V$-component $2\xi_0\mathbf v$ vanishes, so $\xi_0 = 0$ or $\mathbf v = 0$. If $\mathbf v = 0$ then $\xi_0^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_0 = 0$ and the $S$-component gives $-N(\mathbf v) = -1$, that is $N(\tilde\xi) = 1$. Conversely $\tilde\xi \in V$ with $N(\tilde\xi) = 1$ has $\tilde\xi^2 = -N(\tilde\xi) = -1$.</p>
+<p><strong>Proof.</strong> Write $\tilde\xi = \xi_0 + \vec v$ with $\xi_0 \in S$ and $\vec v \in V$. Then $\tilde\xi^2 = \xi_0^2 + 2\xi_0\vec v + \vec v^2 = \xi_0^2 + 2\xi_0\vec v - N(\vec v)$; this equals $-1$ exactly when the $V$-component $2\xi_0\vec v$ vanishes, so $\xi_0 = 0$ or $\vec v = 0$. If $\vec v = 0$ then $\xi_0^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_0 = 0$ and the $S$-component gives $-N(\vec v) = -1$, that is $N(\tilde\xi) = 1$. Conversely $\tilde\xi \in V$ with $N(\tilde\xi) = 1$ has $\tilde\xi^2 = -N(\tilde\xi) = -1$.</p>
 <p><strong>Corollary (The Root Set as Complex Lines).</strong> For each solution $\tilde\xi$, the subalgebra generated by $\tilde\xi$ is</p>
 <p>$$
 \mathbb{R}[\tilde\xi] = \{p + q\tilde\xi : p, q \in \mathbb{R}\} \cong \mathbb{C},
@@ -119,8 +119,8 @@ $$</p>
 <h2 id="the-relation-to-the-idempotents-and-to-the-zero-divisors">The Relation to the Idempotents and to the Zero Divisors</h2>
 <h3 id="the-roots-of-math153">The Roots of $+1$</h3>
 <p>The companion equation clarifies the role of the two signs.</p>
-<p><strong>Proposition (The Roots of $+1$).</strong> Let $\eta = q_0 + \mathbf{u}$. Then $\eta^2 = +1$ if and only if either $q_0 = \pm 1$ and $\mathbf{u} = 0$, or $q_0 = 0$ and $N(\mathbf{u}) = -1$. The non-central solutions are the vectors of the level set $N = -1$ in $V$, which has one component; the central solutions are $\pm 1$.</p>
-<p><strong>Proof.</strong> The same splitting as in the proof of the main theorem gives $q_0^2 - N(\mathbf{u}) = 1$ and $2q_0\mathbf{u} = 0$. If $\mathbf{u} = 0$ then $q_0 = \pm 1$; if $\mathbf{u} \neq 0$ then $q_0 = 0$ and $N(\mathbf{u}) = -1$.</p>
+<p><strong>Proposition (The Roots of $+1$).</strong> Let $\eta = q_0 + \vec u$. Then $\eta^2 = +1$ if and only if either $q_0 = \pm 1$ and $\vec u = 0$, or $q_0 = 0$ and $N(\vec u) = -1$. The non-central solutions are the vectors of the level set $N = -1$ in $V$, which has one component; the central solutions are $\pm 1$.</p>
+<p><strong>Proof.</strong> The same splitting as in the proof of the main theorem gives $q_0^2 - N(\vec u) = 1$ and $2q_0\vec u = 0$. If $\vec u = 0$ then $q_0 = \pm 1$; if $\vec u \neq 0$ then $q_0 = 0$ and $N(\vec u) = -1$.</p>
 <p><strong>Theorem (The Idempotents Come from the Roots of $+1$).</strong> Let $\eta \in V$ be a solution of $\eta^2 = 1$. Then</p>
 <p>$$
 p_+ = \tfrac{1}{2}(1 + \eta), \qquad p_- = \tfrac{1}{2}(1 - \eta)
@@ -187,7 +187,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The quaternion column is the standard description of the pure imaginary units with $N = 1$, recorded in <em>Quaternion Algebra</em>, §<em>Basic Properties</em>: for a pure quaternion $\mathbf{u}$ one has $\mathbf{u}^2 = -N(\mathbf{u})$, so the solutions are the elements of the level set $\{N = 1\}$ of the imaginary part. The compactness of the quaternion case and the connectivity of the two components in the split case are topological statements and belong to <em>Split-Quaternion Topology</em>; what is used here is the algebraic statement that the solutions are the complex structures of a plane, which in the quaternion case are the complex structures of the imaginary three-space and in the split case are those of a real two-space.</p>
+<p>The quaternion column is the standard description of the pure imaginary units with $N = 1$, recorded in <em>Quaternion Algebra</em>, §<em>Basic Properties</em>: for a pure quaternion $\vec u$ one has $\vec u^2 = -N(\vec u)$, so the solutions are the elements of the level set $\{N = 1\}$ of the imaginary part. The compactness of the quaternion case and the connectivity of the two components in the split case are topological statements and belong to <em>Split-Quaternion Topology</em>; what is used here is the algebraic statement that the solutions are the complex structures of a plane, which in the quaternion case are the complex structures of the imaginary three-space and in the split case are those of a real two-space.</p>
 <h3 id="the-biquaternion-case">The Biquaternion Case</h3>
 <p>The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table is a later system of Part V, treated under Biquaternions, and nothing of it is used here. One structural remark is available from the conventions alone: $\mathbb{B}$ is an algebra over the field $\mathbb{C}$, and the equation $\tilde\Xi^2 = -1$ over a complex algebra has the two central solutions $\tilde\Xi = \pm i$ in addition to whatever further solutions the embedded real structure supplies; the root set is therefore strictly larger there, and its classification belongs to the later category. The present article is complete for the algebra over $\mathbb{R}$.</p>
 <h2 id="summary">Summary</h2>

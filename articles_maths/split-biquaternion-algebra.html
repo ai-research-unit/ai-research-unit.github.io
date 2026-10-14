@@ -72,9 +72,9 @@ $$</p>
 $$</p>
 <p>We write</p>
 <p>$$
-\tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
+\tilde{Q} = Q_0 e_0 + \vec Q, \qquad \vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
 $$</p>
-<p>where $Q_0$ is the <strong>split scalar part</strong> and $\mathbf{Q}$ is the <strong>split vector part</strong>. The tilde signals that $\tilde{Q}$ is an element of the algebra $\mathbb{H}_{\mathbb{D}}$, not a quaternion.</p>
+<p>where $Q_0$ is the <strong>split scalar part</strong> and $\vec Q$ is the <strong>split vector part</strong>. The tilde signals that $\tilde{Q}$ is an element of the algebra $\mathbb{H}_{\mathbb{D}}$, not a quaternion.</p>
 <p>Each split complex coefficient is written in terms of its real and split parts:</p>
 <p>$$
 Q_\mu = q_\mu + j q'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}.
@@ -157,11 +157,11 @@ $$</p>
 $$</p>
 <p>where the products $e_\mu e_\nu$ are those of the quaternion algebra, extended split-complex-linearly. In scalar-vector notation, this becomes</p>
 <p>$$
-\tilde{Q} \bullet \tilde{R} = Q_0 R_0 - (\mathbf{Q}, \mathbf{R}) + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}],
+\tilde{Q} \bullet \tilde{R} = Q_0 R_0 - (\vec Q, \vec R) + Q_0 \vec R + R_0 \vec Q + [\vec Q, \vec R],
 $$</p>
 <p>where</p>
 <p>$$
-(\mathbf{Q}, \mathbf{R}) = \sum_{k=1}^{3} Q_k R_k, \qquad [\mathbf{Q}, \mathbf{R}] = \sum_{j,k,l=1}^{3} \epsilon_{jkl} Q_j R_k e_l.
+(\vec Q, \vec R) = \sum_{k=1}^{3} Q_k R_k, \qquad [\vec Q, \vec R] = \sum_{j,k,l=1}^{3} \epsilon_{jkl} Q_j R_k e_l.
 $$</p>
 <p>This formula has the same structure as the quaternion product: scalar part, vector part, dot product, cross product. The only difference is that the coefficients are now split complex.</p>
 <h3 id="conjugations">Conjugations</h3>
@@ -378,19 +378,19 @@ $$</p>
 <td>Split scalar part</td>
 </tr>
 <tr>
-<td>$\mathbf{Q}$</td>
+<td>$\vec Q$</td>
 <td>Split vector part</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$</td>
+<td>$\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$</td>
 <td>Quaternion conjugate</td>
 </tr>
 <tr>
-<td>$\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$</td>
+<td>$\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$</td>
 <td>Split complex conjugate</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^{*} = \bar{Q_0} e_0 - \mathbf{Q}^*$</td>
+<td>$\tilde{Q}^{*} = \bar{Q_0} e_0 - \vec Q^*$</td>
 <td>Hermitian conjugate</td>
 </tr>
 <tr>

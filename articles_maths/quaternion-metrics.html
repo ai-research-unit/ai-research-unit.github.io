@@ -60,19 +60,19 @@ $$</p>
 <p>The article turns on one identity: $Q_g = \omega\circ L_g$, where $\omega$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$. Everything follows from it. The form is non-degenerate of signature $(1,3)$ for every nonzero $g$; all the forms of the family are isometric to one another; the family is the image of the single form $\omega$ under precomposition with the left multiplications; and the isometry group of $Q_g$ is the conjugate of the Lorentz group by $L_g$. The Gram matrix of $Q_g$ is computed in closed form and its determinant is $-N(g)^4$, so the non-degeneracy is visible a second time, quantitatively.</p>
 <p>The treatment is mathematical throughout. No physical object is introduced, no state of a physical system is named, and no physical interpretation is invoked. The Lorentz group of the form $\omega$ is named and its corpus home is cited; nothing of it is re-derived here.</p>
 <p>The bilinear and quadratic-form vocabulary, the polarisation and the notion of isometry are from <em>Bilinear Forms</em> and <em>Quadratic Forms and Polarisation</em>; the algebra, the conjugate and the scalar–vector decomposition are from <em>Quaternion Algebra</em>; the norm, the inner product and the group of units are from <em>Quaternion Norm and Invertibility</em>; the forms with values in an algebra that are the norms are from <em>Quadratic Forms over Algebras and Norms</em>; the determinant of the left regular representation is pointed to in <em>Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$</em>; the split-quaternion form of signature $(2,2)$ used for contrast is from <em>Split-Quaternion Norm and Invertibility</em>.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A quaternion is $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, with <strong>scalar part</strong> $\mathrm{Sc}\,\tilde q = q_0$ and <strong>vector part</strong> $\mathbf q = \mathrm{Vect}\,\tilde q = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0e_0 - \mathbf q$, the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2$, and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$. The four real numbers $q_0,q_1,q_2,q_3$ form the coordinate vector of $\tilde q$, also written $q = (q_0,q_1,q_2,q_3)$; the meaning is clear from the context. The multiplication is written without a dot, and the scalar part is written $\mathrm{Sc}$ and the vector part $\mathrm{Vect}$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A quaternion is $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, with <strong>scalar part</strong> $\mathrm{Sc}\,\tilde q = q_0$ and <strong>vector part</strong> $\vec q = \mathrm{Vect}\,\tilde q = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0e_0 - \vec q$, the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2$, and the modulus is $|\tilde q| = \sqrt{N(\tilde q)}$. The four real numbers $q_0,q_1,q_2,q_3$ form the coordinate vector of $\tilde q$, also written $q = (q_0,q_1,q_2,q_3)$; the meaning is clear from the context. The multiplication is written without a dot, and the scalar part is written $\mathrm{Sc}$ and the vector part $\mathrm{Vect}$.</p>
 <h2 id="the-minkowski-form-of-the-algebra">The Minkowski Form of the Algebra</h2>
 <h3 id="definition-and-polar-form">Definition and Polar Form</h3>
 <p><strong>Definition.</strong> The <strong>Minkowski form</strong> of $\mathbb{H}$ is</p>
 <p>$$
 \omega(\tilde q) = \mathrm{Sc}(\tilde q^2) = q_0^2 - q_1^2 - q_2^2 - q_3^2 .
 $$</p>
-<p>The equality is the computation of a square: writing $\tilde q = q_0e_0+\mathbf q$, one has $\tilde q^2 = q_0^2e_0 + 2q_0\mathbf q + \mathbf q^2$, and $\mathbf q^2 = -\langle\mathbf q,\mathbf q\rangle e_0$ is a scalar, so the scalar part is $q_0^2 - |\mathbf q|^2$.</p>
+<p>The equality is the computation of a square: writing $\tilde q = q_0e_0+\vec q$, one has $\tilde q^2 = q_0^2e_0 + 2q_0\vec q + \vec q^2$, and $\vec q^2 = -\langle\vec q,\vec q\rangle e_0$ is a scalar, so the scalar part is $q_0^2 - |\vec q|^2$.</p>
 <p>The form $\omega$ is a quadratic form on the underlying real vector space $\mathbb{H}\cong\mathbb{R}^4$. Its <strong>polar form</strong> is the symmetric bilinear form</p>
 <p>$$
 \beta_\omega(\tilde u,\tilde v) = \tfrac12\bigl(\omega(\tilde u+\tilde v)-\omega(\tilde u)-\omega(\tilde v)\bigr) = \tfrac12\,\mathrm{Sc}(\tilde u\tilde v + \tilde v\tilde u).
 $$</p>
-<p>It is real-valued and symmetric by construction, and it is alternating on the vector subspace: for pure $\mathbf u,\mathbf v$ one has $\mathbf u\mathbf v+\mathbf v\mathbf u = -2\langle\mathbf u,\mathbf v\rangle e_0$.</p>
+<p>It is real-valued and symmetric by construction, and it is alternating on the vector subspace: for pure $\vec u,\vec v$ one has $\vec u\vec v+\vec v\vec u = -2\langle\vec u,\vec v\rangle e_0$.</p>
 <h3 id="signature-and-isometry-group">Signature and Isometry Group</h3>
 <p><strong>Proposition.</strong> The Minkowski form is non-degenerate of signature $(1,3)$. In the basis $e_0,e_1,e_2,e_3$ its Gram matrix is</p>
 <p>$$
@@ -113,7 +113,7 @@ $$</p>
 <p><em>Proof.</em> The two identities are the substitution of $-g$ and of $\lambda g$ in the defining product and the real-linearity of the product and of the scalar part.</p>
 <p><strong>Proposition.</strong> For $g\neq0$ the form $Q_g$ is a quadratic form on $\mathbb{H}$, it is not the zero form, and it is isotropic: it vanishes on a nonzero vector, and therefore on the whole line that the vector spans.</p>
 <p><em>Proof.</em> It is $\omega\circ L_g$ by the lemma, and the composition of a quadratic form with a linear map is a quadratic form. It is not zero because $\omega$ is not zero and $L_g$ is onto for $g\neq0$. For the isotropy, $Q_g(L_g^{-1}(e_0+e_1)) = \omega(e_0+e_1) = 0$, and $e_0+e_1\neq0$; the vanishing propagates along the line by homogeneity, since $Q_g(\lambda\tilde q) = \lambda^2Q_g(\tilde q)$. A nonzero vector on which the form vanishes is a <strong>null vector</strong>, and the line it spans is a <strong>null line</strong>.</p>
-<p><strong>Remark (the source's reading).</strong> The source proposes exactly this form, $Q_g(\tilde q)=\mathrm{Sc}(g\tilde qg\tilde q)$, as the way to generalise the interval $\mathrm{Sc}(\tilde q^2) = q_0^2-\mathbf q\cdot\mathbf q$ of the algebra while leaving Hamilton's rules $e_1^2=e_2^2=e_3^2=-e_0$ and $e_1e_2e_3=-e_0$ untouched; changing the multiplication rules is the Riemannian strategy, which the source sets aside. The reading is recorded as the source's; the mathematics of the form does not depend on it.</p>
+<p><strong>Remark (the source's reading).</strong> The source proposes exactly this form, $Q_g(\tilde q)=\mathrm{Sc}(g\tilde qg\tilde q)$, as the way to generalise the interval $\mathrm{Sc}(\tilde q^2) = q_0^2-\vec q\cdot\vec q$ of the algebra while leaving Hamilton's rules $e_1^2=e_2^2=e_3^2=-e_0$ and $e_1e_2e_3=-e_0$ untouched; changing the multiplication rules is the Riemannian strategy, which the source sets aside. The reading is recorded as the source's; the mathematics of the form does not depend on it.</p>
 <h2 id="the-gram-matrix">The Gram Matrix</h2>
 <h3 id="definition-of-the-gram-matrix">Definition of the Gram Matrix</h3>
 <p><strong>Definition.</strong> The <strong>Gram matrix</strong> of $Q_g$ is the $4\times4$ real matrix</p>
@@ -135,13 +135,13 @@ g_0^2-g_1^2-g_2^2-g_3^2 & -2g_0g_1 & -2g_0g_2 & -2g_0g_3 \\
 -2g_0g_3 & 2g_1g_3 & 2g_2g_3 & -g_0^2-g_1^2-g_2^2+g_3^2
 \end{pmatrix}.
 $$</p>
-<p>Its diagonal entries are $g_0^2-|\mathbf g|^2$ and $-g_0^2-|\mathbf g|^2+2g_k^2$; its off-diagonal entries are $-2g_0g_k$ against the time coordinate and $2g_jg_k$ against two space coordinates.</p>
-<p><em>Proof.</em> One evaluates the polar form on the sixteen pairs of basis elements. For the diagonal, $Q_g(e_\mu) = \mathrm{Sc}((ge_\mu)^2)$, which is $\mathrm{Sc}(g^2) = g_0^2-|\mathbf g|^2$ at $\mu=0$ and $-\mathrm{Sc}(ge_kg e_k)$ at $\mu=k$; expanding $g = g_0+\mathbf g$ in the second and using that the scalar part of a product of two pure quaternions is minus their inner product gives $-g_0^2-|\mathbf g|^2+2g_k^2$. For the pair $(0,k)$ the two products $ge_0ge_k$ and $ge_kg e_0$ are $g^2e_k$ and $ge_kg$, whose scalar parts are both $-2g_0g_k$ by the same expansion, so the polar form is $-2g_0g_k$. For a pair $(j,k)$ of distinct space indices the antisymmetry $e_je_k+e_ke_j = 0$ makes the two products equal, and the scalar part of $ge_jge_k$ is $2g_jg_k$; the polar form carries the factor $\tfrac12$ and is $2g_jg_k$. The relations used are $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, and the vanishing of the scalar part of $e_je_k$ for $j\neq k$.</p>
-<p><strong>Remark (the two block forms).</strong> With $s = g_0^2-|\mathbf g|^2$ and $c = g_0^2+|\mathbf g|^2 = N(g)$, the matrix is</p>
+<p>Its diagonal entries are $g_0^2-|\vec g|^2$ and $-g_0^2-|\vec g|^2+2g_k^2$; its off-diagonal entries are $-2g_0g_k$ against the time coordinate and $2g_jg_k$ against two space coordinates.</p>
+<p><em>Proof.</em> One evaluates the polar form on the sixteen pairs of basis elements. For the diagonal, $Q_g(e_\mu) = \mathrm{Sc}((ge_\mu)^2)$, which is $\mathrm{Sc}(g^2) = g_0^2-|\vec g|^2$ at $\mu=0$ and $-\mathrm{Sc}(ge_kg e_k)$ at $\mu=k$; expanding $g = g_0+\vec g$ in the second and using that the scalar part of a product of two pure quaternions is minus their inner product gives $-g_0^2-|\vec g|^2+2g_k^2$. For the pair $(0,k)$ the two products $ge_0ge_k$ and $ge_kg e_0$ are $g^2e_k$ and $ge_kg$, whose scalar parts are both $-2g_0g_k$ by the same expansion, so the polar form is $-2g_0g_k$. For a pair $(j,k)$ of distinct space indices the antisymmetry $e_je_k+e_ke_j = 0$ makes the two products equal, and the scalar part of $ge_jge_k$ is $2g_jg_k$; the polar form carries the factor $\tfrac12$ and is $2g_jg_k$. The relations used are $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, and the vanishing of the scalar part of $e_je_k$ for $j\neq k$.</p>
+<p><strong>Remark (the two block forms).</strong> With $s = g_0^2-|\vec g|^2$ and $c = g_0^2+|\vec g|^2 = N(g)$, the matrix is</p>
 <p>$$
-M(g) = \begin{pmatrix} s & -2g_0\,\mathbf g^{\mathsf T} \\ -2g_0\,\mathbf g & 2\,\mathbf g\mathbf g^{\mathsf T} - c\,I_3 \end{pmatrix},
+M(g) = \begin{pmatrix} s & -2g_0\,\vec g^{\mathsf T} \\ -2g_0\,\vec g & 2\,\vec g\vec g^{\mathsf T} - c\,I_3 \end{pmatrix},
 $$</p>
-<p>with $I_3$ the $3\times3$ identity and $\mathbf g$ the column of the three vector coordinates. This is the shape used for the determinant below.</p>
+<p>with $I_3$ the $3\times3$ identity and $\vec g$ the column of the three vector coordinates. This is the shape used for the determinant below.</p>
 <h3 id="examples">Examples</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -195,19 +195,19 @@ $$</p>
 \det M(g) = -N(g)^4 .
 $$</p>
 <p>In particular the form $Q_g$ is non-degenerate for every nonzero $g$, and its Gram determinant is a positive multiple of the fourth power of the quaternion norm.</p>
-<p><em>Proof.</em> Write $s = g_0^2-|\mathbf g|^2$, $c = N(g) = g_0^2+|\mathbf g|^2$, and $B = 2\mathbf g\mathbf g^{\mathsf T}-cI_3$, so that</p>
+<p><em>Proof.</em> Write $s = g_0^2-|\vec g|^2$, $c = N(g) = g_0^2+|\vec g|^2$, and $B = 2\vec g\vec g^{\mathsf T}-cI_3$, so that</p>
 <p>$$
-M(g) = \begin{pmatrix} s & -2g_0\mathbf g^{\mathsf T} \\ -2g_0\mathbf g & B \end{pmatrix}.
+M(g) = \begin{pmatrix} s & -2g_0\vec g^{\mathsf T} \\ -2g_0\vec g & B \end{pmatrix}.
 $$</p>
 <p>Suppose first that $s\neq0$, so that $B$ is invertible, and take the Schur complement of $B$:</p>
 <p>$$
-\det M(g) = \det B \cdot \Bigl(s - 4g_0^2\,\mathbf g^{\mathsf T}B^{-1}\mathbf g\Bigr).
+\det M(g) = \det B \cdot \Bigl(s - 4g_0^2\,\vec g^{\mathsf T}B^{-1}\vec g\Bigr).
 $$</p>
-<p>The eigenvalues of the rank-one matrix $\mathbf g\mathbf g^{\mathsf T}$ are $|\mathbf g|^2,0,0$, so those of $B$ are $2|\mathbf g|^2-c = -s$ and $-c$ twice; hence $\det B = (-s)(-c)^2 = -sc^2$. Moreover $B\mathbf g = 2\mathbf g|\mathbf g|^2 - c\mathbf g = (2|\mathbf g|^2-c)\mathbf g = -s\mathbf g$, so $B^{-1}\mathbf g = -\mathbf g/s$ and $\mathbf g^{\mathsf T}B^{-1}\mathbf g = -|\mathbf g|^2/s$. Therefore</p>
+<p>The eigenvalues of the rank-one matrix $\vec g\vec g^{\mathsf T}$ are $|\vec g|^2,0,0$, so those of $B$ are $2|\vec g|^2-c = -s$ and $-c$ twice; hence $\det B = (-s)(-c)^2 = -sc^2$. Moreover $B\vec g = 2\vec g|\vec g|^2 - c\vec g = (2|\vec g|^2-c)\vec g = -s\vec g$, so $B^{-1}\vec g = -\vec g/s$ and $\vec g^{\mathsf T}B^{-1}\vec g = -|\vec g|^2/s$. Therefore</p>
 <p>$$
-\det M(g) = -sc^2\cdot\Bigl(s + \frac{4g_0^2|\mathbf g|^2}{s}\Bigr) = -c^2\bigl(s^2+4g_0^2|\mathbf g|^2\bigr) = -c^2\,c^2 = -N(g)^4,
+\det M(g) = -sc^2\cdot\Bigl(s + \frac{4g_0^2|\vec g|^2}{s}\Bigr) = -c^2\bigl(s^2+4g_0^2|\vec g|^2\bigr) = -c^2\,c^2 = -N(g)^4,
 $$</p>
-<p>because $s^2+4g_0^2|\mathbf g|^2 = (g_0^2-|\mathbf g|^2)^2+4g_0^2|\mathbf g|^2 = (g_0^2+|\mathbf g|^2)^2 = c^2$.</p>
+<p>because $s^2+4g_0^2|\vec g|^2 = (g_0^2-|\vec g|^2)^2+4g_0^2|\vec g|^2 = (g_0^2+|\vec g|^2)^2 = c^2$.</p>
 <p>The entries of $M(g)$ are polynomials in $g_0,g_1,g_2,g_3$, so $\det M(g)$ is a polynomial, and $-N(g)^4$ is a polynomial; the two agree on the nonempty open set $s\neq0$, so they agree identically. The determinant is therefore $-N(g)^4$ for every $g$, and it vanishes exactly at $g=0$.</p>
 <p><strong>Remark (the same determinant, read through the regular representation).</strong> The identity is equivalent to $\det M(g) = -\det(L_g)^2$, and the statement $\det L_g = N(g)^2$ is the determinant statement of <em>Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$</em>. The proof above is nevertheless self-contained: it uses only the closed form of $M(g)$, the structure of a rank-one update of the identity and the polynomial identity argument, and it does not appeal to the regular representation.</p>
 <h2 id="the-null-cone">The Null Cone</h2>
@@ -216,10 +216,10 @@ $$</p>
 <p>$$
 \mathcal{C}_g = \{\tilde q\in\mathbb{H} : Q_g(\tilde q) = 0\} = L_g^{-1}(\mathcal C),
 $$</p>
-<p>where $\mathcal{C} = \{\tilde q : q_0^2 = |\mathbf q|^2\}$ is the null cone of $\omega$, the double cone over the unit sphere of the vector subspace.</p>
+<p>where $\mathcal{C} = \{\tilde q : q_0^2 = |\vec q|^2\}$ is the null cone of $\omega$, the double cone over the unit sphere of the vector subspace.</p>
 <p><strong>Proposition.</strong> $\mathcal{C}_g$ is a non-degenerate quadratic cone in $\mathbb{R}^4$ with apex $0$, carried by the isometry $L_g$ to the standard cone; it is not the zero-divisor set of the algebra, because $\mathbb{H}$ has none.</p>
 <p><em>Proof.</em> The cone is the inverse image under the linear isomorphism $L_g$ of the cone of a non-degenerate form, so it is a cone and it is non-degenerate in the sense that its defining form is. The only zero divisor of $\mathbb{H}$ is $0$, by the invertibility of the nonzero elements in <em>Quaternion Norm and Invertibility</em>, whereas $\mathcal{C}_g$ contains a three-dimensional family of nonzero elements; the two sets are therefore different, and the null cone is a purely form-theoretic object.</p>
-<p>The cone of $\omega$ is the set on which the interval $t^2-\mathbf q\cdot\mathbf q$ vanishes, that is the set the source calls the light cone; the subfamilies on which $Q_g$ is respectively positive, zero and negative are the timelike, null and spacelike classes of the form, and they are transported by $L_g$ from those of $\omega$.</p>
+<p>The cone of $\omega$ is the set on which the interval $t^2-\vec q\cdot\vec q$ vanishes, that is the set the source calls the light cone; the subfamilies on which $Q_g$ is respectively positive, zero and negative are the timelike, null and spacelike classes of the form, and they are transported by $L_g$ from those of $\omega$.</p>
 <h2 id="comparison-with-the-norm-and-with-the-sibling-forms">Comparison with the Norm and with the Sibling Forms</h2>
 <h3 id="the-definite-norm-is-not-in-the-family">The Definite Norm Is Not in the Family</h3>
 <p>The quaternion norm $N(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2$ of <em>Quaternion Norm and Invertibility</em> is positive definite, and every form of the present family is of signature $(1,3)$ by the isometry theorem; hence the norm is not a quaternion metric of this family, for any $g$. The two objects are of different kinds: the norm is the multiplicative form of the division algebra, while a quaternion metric is the pullback of the interval form by a left multiplication and is not multiplicative. The Gram matrix of the norm in the basis is the identity, and the family $Q_g$ contains only forms isometric to $\omega$.</p>
@@ -264,7 +264,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>A quaternion metric is the real quadratic form $Q_g(\tilde q) = \mathrm{Sc}(g\tilde qg\tilde q) = \mathrm{Sc}((g\tilde q)^2)$ determined by a nonzero quaternion $g$. The identity $Q_g = \omega\circ L_g$, where $\omega(\tilde q) = \mathrm{Sc}(\tilde q^2) = q_0^2-q_1^2-q_2^2-q_3^2$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$, is the core of the construction: it exhibits $Q_g$ as the interval form read at the left translate $g\tilde q$, and it makes $L_g$ an isometry from $(\mathbb{H},Q_g)$ onto $(\mathbb{H},\omega)$.</p>
 <p>It follows that every quaternion metric is non-degenerate of signature $(1,3)$; that any two of them are isometric, so that the family is a single isometry class; and that the isometry group of $Q_g$ is the conjugate $L_g^{-1}O(1,3)L_g$ of the Lorentz group. The form depends on $g$ only through the line $\mathbb{R}g$ up to the sign of $g$ and only up to a positive scale, so that the family is a cone over the forms of the unit sphere modulo sign, that is over $\mathbb{R}P^3$.</p>
-<p>The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g_0^2-|\mathbf g|^2$ and $-g_0^2-|\mathbf g|^2+2g_k^2$, its off-diagonal entries are $-2g_0g_k$ against the time direction and $2g_jg_k$ against two space directions, and its determinant is $-N(g)^4$, nowhere zero off the origin. The null cone of $Q_g$ is the inverse image of the standard cone under $L_g$; it is a non-degenerate quadratic cone through the origin and it is not the zero-divisor set of the algebra, which consists of the origin alone.</p>
+<p>The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g_0^2-|\vec g|^2$ and $-g_0^2-|\vec g|^2+2g_k^2$, its off-diagonal entries are $-2g_0g_k$ against the time direction and $2g_jg_k$ against two space directions, and its determinant is $-N(g)^4$, nowhere zero off the origin. The null cone of $Q_g$ is the inverse image of the standard cone under $L_g$; it is a non-degenerate quadratic cone through the origin and it is not the zero-divisor set of the algebra, which consists of the origin alone.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -283,8 +283,8 @@ $$</p>
 <td>Basis, $e_k^2=-e_0$, $e_1e_2=e_3$</td>
 </tr>
 <tr>
-<td>$\tilde q = q_0e_0+\mathbf q$</td>
-<td>Quaternion, scalar part $q_0$, vector part $\mathbf q$</td>
+<td>$\tilde q = q_0e_0+\vec q$</td>
+<td>Quaternion, scalar part $q_0$, vector part $\vec q$</td>
 </tr>
 <tr>
 <td>$\mathrm{Sc},\mathrm{Vect}$</td>
@@ -331,7 +331,7 @@ $$</p>
 <td>Gram matrix of $Q_g$</td>
 </tr>
 <tr>
-<td>$s=g_0^2-\lvert\mathbf g\rvert^2$, $c=N(g)$</td>
+<td>$s=g_0^2-\lvert\vec g\rvert^2$, $c=N(g)$</td>
 <td>The two invariants of the determinant computation</td>
 </tr>
 <tr>
@@ -346,7 +346,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the product, the conjugate and the interpretation of the scalar part of a square as $q_0^2-|\mathbf q|^2$.</li>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the product, the conjugate and the interpretation of the scalar part of a square as $q_0^2-|\vec q|^2$.</li>
 <li>Douglas B. Sweetser, <em>Doing Physics with Quaternions</em> (2005), section "A New Idea for Metrics", for the construction $Q_g(\tilde q)=\mathrm{Sc}(g\tilde qg\tilde q)$ and the proposal to generalise the interval by it rather than by a change of the multiplication rules.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd edition, 2001), for the Minkowski form, its orthogonal group and the Clifford reading of the Lorentz transformations.</li>
 <li>Serge Lang, <em>Algebra</em> (Springer, revised third edition, 2002), for the theory of quadratic forms, polarisation, non-degeneracy and the Witt decomposition used implicitly in the comparison of the signatures.</li>

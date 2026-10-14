@@ -189,22 +189,22 @@ $$</p>
 \mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H).
 $$</p>
 <p>This is the trace formula of the framework, and it is derived, not assumed.</p>
-<p><strong>The trace form on the sectors.</strong> Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde P\tilde H)$ on each sector. For $\tilde P=p_0e_0+i\mathbf p$ and $\tilde H=h_0e_0+i\mathbf h$ in $\mathbb{M}_+$,</p>
+<p><strong>The trace form on the sectors.</strong> Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde P\tilde H)$ on each sector. For $\tilde P=p_0e_0+i\vec p$ and $\tilde H=h_0e_0+i\vec h$ in $\mathbb{M}_+$,</p>
 <p>$$
-\mathrm{Tr}(\tilde P\tilde H)=2\bigl(p_0h_0+\mathbf p\cdot\mathbf h\bigr),
+\mathrm{Tr}(\tilde P\tilde H)=2\bigl(p_0h_0+\vec p\cdot\vec h\bigr),
 $$</p>
-<p>which is real and positive definite; for $\tilde P=ip_0e_0+\mathbf p$ and $\tilde H=ih_0e_0+\mathbf h$ in $\mathbb{M}_-$,</p>
+<p>which is real and positive definite; for $\tilde P=ip_0e_0+\vec p$ and $\tilde H=ih_0e_0+\vec h$ in $\mathbb{M}_-$,</p>
 <p>$$
-\mathrm{Tr}(\tilde P\tilde H)=-2\bigl(p_0h_0+\mathbf p\cdot\mathbf h\bigr),
+\mathrm{Tr}(\tilde P\tilde H)=-2\bigl(p_0h_0+\vec p\cdot\vec h\bigr),
 $$</p>
 <p>which is real and negative definite; and for one argument in each sector the value is purely imaginary. Hence the real part of the trace form is positive definite on $\mathbb{M}_+$, negative definite on $\mathbb{M}_-$, and the two sectors are orthogonal for it:</p>
 <p>$$
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-
 $$</p>
 <p>is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.</p>
-<p><strong>The expectation-value form.</strong> For a state $\tilde P=\tfrac12(e_0+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H=h_0e_0+i\mathbf h$, the trace formula gives</p>
+<p><strong>The expectation-value form.</strong> For a state $\tilde P=\tfrac12(e_0+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H=h_0e_0+i\vec h$, the trace formula gives</p>
 <p>$$
-\mathrm{Tr}(\tilde P\tilde H)=h_0+\mu\cdot\mathbf h,
+\mathrm{Tr}(\tilde P\tilde H)=h_0+\mu\cdot\vec h,
 $$</p>
 <p>the Born-rule expectation value. This is an application of the derived trace, not a new posit.</p>
 <h2 id="the-scalar-imaginary">The Scalar Imaginary</h2>
@@ -226,13 +226,13 @@ $$</p>
 <h2 id="derived-the-polar-representations">Derived: The Polar Representations</h2>
 <p>The polar representations are the last family of objects whose status is settled here, and the verdict is that they introduce no new fundamental data.</p>
 <p><strong>The inputs are already available.</strong> The exponential $\exp(\tilde Q)=\sum_{n\ge0}\tilde Q^n/n!$ converges for every biquaternion because $\mathbb{B}$ is finite-dimensional, so it is rigged from the multiplication. The roots of $-1$ used by the polar forms are the solutions of $\tilde{\Xi}^2=-e_0$; the central ones are $\pm i$ (previous section) and the non-central ones are the real and non-trivial roots classified in the companion article. Both inputs are derived.</p>
-<p><strong>The Hamilton polar form.</strong> For a biquaternion whose vector part has non-vanishing general plain bilinear square $(\mathbf Q,\mathbf Q)=B^2\ne0$, put</p>
+<p><strong>The Hamilton polar form.</strong> For a biquaternion whose vector part has non-vanishing general plain bilinear square $(\vec Q,\vec Q)=B^2\ne0$, put</p>
 <p>$$
-R=\sqrt{N(\tilde Q)},\qquad \tilde{\Xi}=\mathbf Q/B,\qquad \cos\Theta=Q_0/R,\qquad \sin\Theta=B/R,
+R=\sqrt{N(\tilde Q)},\qquad \tilde{\Xi}=\vec Q/B,\qquad \cos\Theta=Q_0/R,\qquad \sin\Theta=B/R,
 $$</p>
 <p>so that $\tilde Q=R\exp(\tilde{\Xi}\Theta)$. The construction is a sequence of operations available in the base: the biquaternion norm from the multiplication and ${}^{\natural}$, the square root and the angle functions from the exponential, and the normalization of the axis from the division by $B$. That it reconstructs $\tilde Q$ is a computation,</p>
 <p>$$
-R(\cos\Theta+\tilde{\Xi}\sin\Theta)=R\cdot\frac{Q_0}{R}+R\cdot\frac{\mathbf Q}{B}\cdot\frac{B}{R}=Q_0+\mathbf Q=\tilde Q,
+R(\cos\Theta+\tilde{\Xi}\sin\Theta)=R\cdot\frac{Q_0}{R}+R\cdot\frac{\vec Q}{B}\cdot\frac{B}{R}=Q_0+\vec Q=\tilde Q,
 $$</p>
 <p>which also shows that the construction is not merely formal. The domain condition $B\ne0$ and the uniqueness up to the correlated sign $(R,\Theta)\mapsto(-R,\Theta+\pi)$ are properties of the construction, hence derived.</p>
 <p><strong>The complex polar form.</strong> For a biquaternion with invertible real quaternion part $Q_r$, put $\tan\Psi=Q_r^{-1}Q_i$ and $Q=Q_r(\cos\Psi)^{-1}$, so that $\tilde Q=Q\exp(i\Psi)$ with $i$ the central root. Again every ingredient is derived, and the reconstruction</p>

@@ -61,9 +61,9 @@
 $$</p>
 <p>or, more compactly, as</p>
 <p>$$
-\tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
+\tilde{Q} = Q_0 e_0 + \vec Q, \qquad \vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$</p>
-<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.</p>
+<p>The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, and the biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.</p>
 <p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.</p>
 <h2 id="the-fourier-kernel">The Fourier Kernel</h2>
 <h3 id="definition">Definition</h3>
@@ -278,11 +278,11 @@ $$</p>
 $$</p>
 <p>which is a biquaternion-valued multiplier. The precise form depends on the sign convention and on the placement of the root.</p>
 <h3 id="the-convective-derivative">The Convective Derivative</h3>
-<p>The convective derivative $\tilde{D} = \tilde{U}^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion</p>
+<p>The convective derivative $\tilde{D} = \tilde{R}^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion</p>
 <p>$$
-\tilde{U}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+\tilde{R}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
 $$</p>
-<p>which depends on the velocity biquaternion $\tilde{U}$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.</p>
+<p>which depends on the velocity biquaternion $\tilde{R}$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.</p>
 <h3 id="the-general-principle">The General Principle</h3>
 <p>The general principle is that the continuous Fourier transform <strong>diagonalizes the constant-coefficient differential operators</strong> on the four-dimensional subspaces. The symbol of the operator is a biquaternion-valued function of the frequency variables, and the solutions of the operator equation are determined by the support of the transform on the zero set of the symbol.</p>
 <p>This is the same principle as in the complex and quaternion cases, and it is the reason the continuous Fourier transform is the natural tool for the analysis of the biquaternion differential operators.</p>
@@ -458,7 +458,7 @@ $$</p>
 <td>Finite positive measure and its transform; $G(0) = \mu(\mathbb{R}^n)e_0$, and $\sum_{k,l}\bar A_k A_l G(\omega_k-\omega_l) = \int N(Z) \, d\mu$ for central coefficients</td>
 </tr>
 <tr>
-<td>$\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
+<td>$\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
 <td>Vector part of a biquaternion</td>
 </tr>
 <tr>
@@ -474,8 +474,8 @@ $$</p>
 <td>d'Alembertian, the scalar part of $\tilde{\nabla}\tilde{\nabla}^{\natural}$</td>
 </tr>
 <tr>
-<td>$\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$</td>
-<td>Convective derivative with velocity $\tilde{U}$</td>
+<td>$\tilde{D} = \tilde{R}^{\natural}\tilde{\nabla}$</td>
+<td>Convective derivative with velocity $\tilde{R}$</td>
 </tr>
 </tbody>
 </table></div>

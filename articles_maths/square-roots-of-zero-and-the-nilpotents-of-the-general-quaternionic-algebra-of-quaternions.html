@@ -92,16 +92,16 @@ Quaternionic Algebra</em>.</p>
 <p><strong>Conventions.</strong> $\mathbb{H}$ is the real quaternion algebra with basis $e_0=1,e_1,e_2,e_3$, the rules
 $e_k^2=-e_0$ and $e_1e_2=e_3$. Juxtaposition is the plain product and $\star$ the general quaternionic
 bilinear product $\tilde p\star\tilde q=\tilde p^{\natural}\tilde q$, with the conjugation
-$\tilde p^{\natural}=p_0-\mathbf p$ and $\tilde p=p_0e_0+\mathbf p$,
-$\mathbf p=p_1e_1+p_2e_2+p_3e_3$. The <strong>powers</strong> are the left-nested products $\tilde p^{1}=\tilde p$ and
+$\tilde p^{\natural}=p_0-\vec p$ and $\tilde p=p_0e_0+\vec p$,
+$\vec p=p_1e_1+p_2e_2+p_3e_3$. The <strong>powers</strong> are the left-nested products $\tilde p^{1}=\tilde p$ and
 $\tilde p^{k+1}=\tilde p\star\tilde p^{k}$, and the <strong>plain powers</strong> are the same nestings in the plain
 product, written $\tilde p^{(k)}$, with $\tilde p^{(0)}=e_0$. The <strong>algebraic norm</strong> is</p>
 <p>$$
-N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+\lvert\mathbf p\rvert^2=\sum_{\mu=0}^{3}p_\mu^2 ,
+N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+\lvert\vec p\rvert^2=\sum_{\mu=0}^{3}p_\mu^2 ,
 $$</p>
-<p>positive definite, with polar form $\beta(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$. The centre is
+<p>positive definite, with polar form $\beta(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$. The centre is
 the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf p\}$.</p>
+$\mathrm{Vect}(\mathbb{H})=\{\vec p\}$.</p>
 <h2 id="the-roots-of-zero">The Roots of Zero</h2>
 <p><strong>The root of $0$ is the origin alone, and the root set is the zero set of the norm and the square-zero set
 of the product: the cone of the complex sibling has collapsed to its apex.</strong></p>
@@ -145,9 +145,9 @@ set is by definition the set $\{\tilde\xi:\tilde\xi\star\tilde\xi=0\}$, so it is
 <p><strong>Proposition.</strong> Over $\mathbb{R}$ the root set of $0$ is the origin for the quaternionic product and for the
 plain product alike; both algebras are division algebras, and neither has a square-zero element.</p>
 <p><strong>Proof.</strong> The quaternionic column is §<em>The Root Set</em>. For the plain column the plain square is
-$(\xi_0^2-\lvert\boldsymbol\xi\rvert^2)e_0+2\xi_0\boldsymbol\xi$; the equation $\tilde\xi^2=0$ is the pair
-$\xi_0^2=\lvert\boldsymbol\xi\rvert^2$ and $\xi_0\boldsymbol\xi=0$. If $\xi_0\neq0$ then $\boldsymbol\xi=0$
-and $\xi_0^2=0$, a contradiction; hence $\xi_0=0$ and then $\lvert\boldsymbol\xi\rvert^2=0$, so
+$(\xi_0^2-\lvert\vec\xi\rvert^2)e_0+2\xi_0\vec\xi$; the equation $\tilde\xi^2=0$ is the pair
+$\xi_0^2=\lvert\vec\xi\rvert^2$ and $\xi_0\vec\xi=0$. If $\xi_0\neq0$ then $\vec\xi=0$
+and $\xi_0^2=0$, a contradiction; hence $\xi_0=0$ and then $\lvert\vec\xi\rvert^2=0$, so
 $\tilde\xi=0$. The plain column is <em>Square Roots of Zero and the Nilpotents of the General Plain Algebra</em>.</p>
 <p><strong>Remark (the collapse of the complex root set).</strong> In the complex chapter the root set of $0$ of the
 quaternionic product is the whole zero-divisor cone $\{N=0\}$, of real dimension six, whose pure part is a
@@ -172,8 +172,8 @@ class taking its nonzero members. Throughout this article the product is $\star$
 N(\tilde p)=p_0^2+p_1^2+p_2^2+p_3^2 .
 $$</p>
 <p><strong>Proof.</strong> At equal arguments the vector part of the product is
-$p_0\mathbf p-p_0\mathbf p-\mathbf p\times\mathbf p=0$, so the square is the scalar part
-$p_0^2+\mathbf p\cdot\mathbf p$ times $e_0$ (<em>Introduction to the General Quaternionic Algebra of
+$p_0\vec p-p_0\vec p-\vec p\times\vec p=0$, so the square is the scalar part
+$p_0^2+\vec p\cdot\vec p$ times $e_0$ (<em>Introduction to the General Quaternionic Algebra of
 Quaternions</em>, and <em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em>).</p>
 <p><strong>Theorem (the criterion).</strong> For $\tilde p\in\mathbb{H}$, $\tilde p\star\tilde p=0$ if and only if
 $N(\tilde p)=0$, that is if and only if $\tilde p=0$. The square-zero set of the general quaternionic
@@ -245,8 +245,8 @@ of $\mathbb{H}$, the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, the ce
 $\mathrm{Vect}(\mathbb{H})$.</p>
 <p><strong>Proposition.</strong> On the centre and on the vector subspace the square vanishes only at the origin, so neither
 subspace carries a square-zero element and neither carries a nilpotent; in the centre the square is
-$A^2e_0$, and in the vector subspace it is the central element $\lvert\mathbf p\rvert^2e_0\neq0$ for every
-nonzero pure $\mathbf p$.</p>
+$A^2e_0$, and in the vector subspace it is the central element $\lvert\vec p\rvert^2e_0\neq0$ for every
+nonzero pure $\vec p$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -265,14 +265,14 @@ nonzero pure $\mathbf p$.</p>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{H})$, the vector subspace</td>
-<td>$\mathbf p$</td>
-<td>$\lvert\mathbf p\rvert^2e_0$</td>
+<td>$\vec p$</td>
+<td>$\lvert\vec p\rvert^2e_0$</td>
 <td>none</td>
 </tr>
 </tbody>
 </table></div>
 <p><strong>Proof.</strong> The square is the norm on the subspace of each row, by the lemma; $A^2$ vanishes only at $A=0$
-and $\lvert\mathbf p\rvert^2$ only at $\mathbf p=0$. A nonzero pure element has a central nonzero square, so
+and $\lvert\vec p\rvert^2$ only at $\vec p=0$. A nonzero pure element has a central nonzero square, so
 no pure element is square-zero, and no central element is either.</p>
 <h2 id="the-nilpotents-and-the-other-structures-of-the-space">The Nilpotents and the Other Structures of the Space</h2>
 <p>The comparison of the six square-zero sets is <em>Square Roots of Zero and the Nilpotents in the 6 Algebraic

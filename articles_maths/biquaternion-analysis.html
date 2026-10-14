@@ -243,13 +243,13 @@ $$</p>
 <p>$$
 \tilde{\nabla} \tilde{F} = \left(\sum_{\mu=0}^{3} e_\mu \frac{\partial}{\partial Q_\mu}\right)\left(\sum_{\nu=0}^{3} F_\nu e_\nu\right) = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} \left(\frac{\partial F_\nu}{\partial Q_\mu}\right) e_\mu e_\nu.
 $$</p>
-<p>Writing $\tilde{F} = F_0 + \mathbf{F}$ with $\mathbf{F} = F_1 e_1 + F_2 e_2 + F_3 e_3$, we can compute $\tilde{\nabla}\tilde{F}$ in scalar-vector form. Separating the cases in the double sum, we obtain</p>
+<p>Writing $\tilde{F} = F_0 + \vec F$ with $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$, we can compute $\tilde{\nabla}\tilde{F}$ in scalar-vector form. Separating the cases in the double sum, we obtain</p>
 <p>$$
-\tilde{\nabla}\tilde{F} = \left(\frac{\partial F_0}{\partial Q_0} - \mathrm{div}\,\mathbf{F}\right) + \left(\frac{\partial \mathbf{F}}{\partial Q_0} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F}\right),
+\tilde{\nabla}\tilde{F} = \left(\frac{\partial F_0}{\partial Q_0} - \mathrm{div}\,\vec F\right) + \left(\frac{\partial \vec F}{\partial Q_0} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right),
 $$</p>
 <p>where</p>
 <p>$$
-\mathrm{div}\,\mathbf{F} = \sum_{k=1}^{3} \frac{\partial F_k}{\partial Q_k}, \qquad \mathrm{grad}\,F_0 = \sum_{k=1}^{3} \left(\frac{\partial F_0}{\partial Q_k}\right) e_k, \qquad \mathrm{rot}\,\mathbf{F} = \sum_{j,k,l=1}^{3} \epsilon_{jkl} \left(\frac{\partial F_k}{\partial Q_j}\right) e_l.
+\mathrm{div}\,\vec F = \sum_{k=1}^{3} \frac{\partial F_k}{\partial Q_k}, \qquad \mathrm{grad}\,F_0 = \sum_{k=1}^{3} \left(\frac{\partial F_0}{\partial Q_k}\right) e_k, \qquad \mathrm{rot}\,\vec F = \sum_{j,k,l=1}^{3} \epsilon_{jkl} \left(\frac{\partial F_k}{\partial Q_j}\right) e_l.
 $$</p>
 <h3 id="the-quaternion-conjugate-of-the-gradient">The Quaternion Conjugate of the Gradient</h3>
 <p>The <strong>quaternion conjugate</strong> of $\tilde{\nabla}$ is obtained by negating the vector part:</p>
@@ -258,7 +258,7 @@ $$</p>
 $$</p>
 <p>The product $\tilde{\nabla}^{\natural}\tilde{F}$ is computed in the same way:</p>
 <p>$$
-\tilde{\nabla}^{\natural}\tilde{F} = \left(\frac{\partial F_0}{\partial Q_0} + \mathrm{div}\,\mathbf{F}\right) + \left(\frac{\partial \mathbf{F}}{\partial Q_0} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\mathbf{F}\right).
+\tilde{\nabla}^{\natural}\tilde{F} = \left(\frac{\partial F_0}{\partial Q_0} + \mathrm{div}\,\vec F\right) + \left(\frac{\partial \vec F}{\partial Q_0} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F\right).
 $$</p>
 <h3 id="the-dalembertian">The d'Alembertian</h3>
 <p>The <strong>d'Alembertian</strong> is the second-order operator obtained by composing the gradient with its quaternion conjugate:</p>
@@ -334,13 +334,13 @@ $$</p>
 <h3 id="the-convective-derivative">The Convective Derivative</h3>
 <p>Let</p>
 <p>$$
-\tilde{U} = \sum_{\mu=0}^{3} u_\mu e_\mu, \qquad u_\mu \in \mathbb{R},
+\tilde{S} = \sum_{\mu=0}^{3} u_\mu e_\mu, \qquad u_\mu \in \mathbb{R},
 $$</p>
 <p>be a biquaternion. The <strong>biquaternionic convective derivative</strong> is the operator</p>
 <p>$$
-\tilde{D} = \tilde{U}^{\natural} \tilde{\nabla},
+\tilde{D} = \tilde{S}^{\natural} \tilde{\nabla},
 $$</p>
-<p>where $\tilde{U}^{\natural} = u_0 e_0 - u_1 e_1 - u_2 e_2 - u_3 e_3$ is the quaternion conjugate.</p>
+<p>where $\tilde{S}^{\natural} = u_0 e_0 - u_1 e_1 - u_2 e_2 - u_3 e_3$ is the quaternion conjugate.</p>
 <p>We compute it explicitly:</p>
 <p>$$
 \tilde{D} = \left(\sum_{\mu=0}^{3} \bar{u}_\mu e_\mu\right)\left(\sum_{\nu=0}^{3} e_\nu \frac{\partial}{\partial Q_\nu}\right) = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} \bar{u}_\mu e_\mu e_\nu \frac{\partial}{\partial Q_\nu},
@@ -348,23 +348,23 @@ $$</p>
 <p>where $\bar{u}_0 = u_0$ and $\bar{u}_k = -u_k$.</p>
 <p>Separating the cases and collecting terms, we obtain</p>
 <p>$$
-\tilde{D} = \left(u_0 \frac{\partial}{\partial Q_0} + \mathbf{u}\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{Curl}(\mathbf{u}),
+\tilde{D} = \left(u_0 \frac{\partial}{\partial Q_0} + \vec u\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{Curl}(\vec u),
 $$</p>
-<p>where the scalar operator $\mathbf{u}\cdot\mathrm{grad} = \sum_k u_k \partial/\partial Q_k$ acts by multiplication by the components of $\mathbf{u}$ followed by the partial derivatives, and</p>
+<p>where the scalar operator $\vec u\cdot\mathrm{grad} = \sum_k u_k \partial/\partial Q_k$ acts by multiplication by the components of $\vec u$ followed by the partial derivatives, and</p>
 <p>$$
-\mathrm{Curl}(\mathbf{u}) = \sum_{j,k,l=1}^{3} \epsilon_{jkl} \, u_j \, \frac{\partial}{\partial Q_k} \, e_l.
+\mathrm{Curl}(\vec u) = \sum_{j,k,l=1}^{3} \epsilon_{jkl} \, u_j \, \frac{\partial}{\partial Q_k} \, e_l.
 $$</p>
-<p>Note that the operator $\mathrm{Curl}(\mathbf{u})$ is <strong>not</strong> the same as the "rot" of a biquaternion-valued function defined earlier: $\mathrm{rot}\,\mathbf{F} = \sum_{j,k,l}\epsilon_{jkl}(\partial F_k/\partial Q_j) e_l$ acts on the coefficient functions of $\mathbf{F}$, whereas $\mathrm{Curl}(\mathbf{u})$ acts on a fixed real quaternion $\mathbf{u}$ and the derivative operators fall on the function to its right. In particular, $\mathrm{Curl}(\mathbf{u})$ does <strong>not</strong> vanish when $\mathbf{u}$ is constant, unlike the classical curl of a constant vector field, because the partial derivatives are still there to act on the function.</p>
+<p>Note that the operator $\mathrm{Curl}(\vec u)$ is <strong>not</strong> the same as the "rot" of a biquaternion-valued function defined earlier: $\mathrm{rot}\,\vec F = \sum_{j,k,l}\epsilon_{jkl}(\partial F_k/\partial Q_j) e_l$ acts on the coefficient functions of $\vec F$, whereas $\mathrm{Curl}(\vec u)$ acts on a fixed real quaternion $\vec u$ and the derivative operators fall on the function to its right. In particular, $\mathrm{Curl}(\vec u)$ does <strong>not</strong> vanish when $\vec u$ is constant, unlike the classical curl of a constant vector field, because the partial derivatives are still there to act on the function.</p>
 <p>The <strong>scalar part</strong> of $\tilde{D}$ is</p>
 <p>$$
-\mathrm{Sc}(\tilde{D}) = u_0 \frac{\partial}{\partial Q_0} + \mathbf{u}\cdot\mathrm{grad}.
+\mathrm{Sc}(\tilde{D}) = u_0 \frac{\partial}{\partial Q_0} + \vec u\cdot\mathrm{grad}.
 $$</p>
-<p>This is the convective derivative in four variables. When $u_0 = 1$, it reduces to the ordinary convective derivative $\partial/\partial Q_0 + \mathbf{u}\cdot\mathrm{grad}$ for a function advected by a flow with velocity $\mathbf{u}$.</p>
+<p>This is the convective derivative in four variables. When $u_0 = 1$, it reduces to the ordinary convective derivative $\partial/\partial Q_0 + \vec u\cdot\mathrm{grad}$ for a function advected by a flow with velocity $\vec u$.</p>
 <p>The <strong>vector part</strong> of $\tilde{D}$ is</p>
 <p>$$
-\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{Curl}(\mathbf{u}).
+\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{Curl}(\vec u).
 $$</p>
-<p>This contains terms that couple the four components of $\tilde{U}$ to the partial derivatives.</p>
+<p>This contains terms that couple the four components of $\tilde{S}$ to the partial derivatives.</p>
 <h2 id="the-relation-to-fueter-and-clifford-analysis">The Relation to Fueter and Clifford Analysis</h2>
 <p>The approach in this article is the quaternionic analysis of Fueter, generalized to the biquaternion algebra. The key features are:</p>
 <ul>
@@ -403,7 +403,7 @@ $$</p>
 <p>The biquaternion algebra $\mathbb{B}$ is a real vector space of dimension 8, with a Euclidean norm and the associated metric topology. Limits and continuity are defined in the usual way, and the basic properties hold: uniqueness of limits, the sequential criterion, the algebra of limits, continuity of sums, products, and compositions, component-wise continuity, and uniform continuity on compact sets.</p>
 <p>A direct definition of differentiability with respect to the biquaternion variable is problematic, because of the ambiguity of left and right division and the presence of zero divisors. The standard approach is to restrict to a four-dimensional real subspace of $\mathbb{B}$, with four real parameters as independent variables, and to define the differential operators on this subspace.</p>
 <p>The four subspaces used here are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with all complex coefficients real; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, with all complex coefficients purely imaginary; the Hermitian subspace $\mathbb{M}_+$, with the first complex coefficient real and the three spatial complex coefficients purely imaginary; and the anti-Hermitian subspace $\mathbb{M}_-$, with the first complex coefficient purely imaginary and the three spatial complex coefficients real. In each case, the partial derivatives are taken with respect to the complex coefficients, with a factor of $-i$ when the coefficient is purely imaginary.</p>
-<p>The <strong>biquaternionic gradient</strong> $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\tilde{\nabla}^{\natural}$ is obtained by negating the vector part. The <strong>d'Alembertian</strong> $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$ is the <strong>natural second-order operator</strong>: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ it is the negative of that Laplacian; and on the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ it takes a Lorentzian form in the underlying real coordinates. The <strong>square of the gradient</strong> $\tilde{\nabla}^2 = (\partial^2/\partial Q_0^2 - \Delta_Q) + 2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$. The <strong>convective derivative</strong> $\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.</p>
+<p>The <strong>biquaternionic gradient</strong> $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\tilde{\nabla}^{\natural}$ is obtained by negating the vector part. The <strong>d'Alembertian</strong> $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$ is the <strong>natural second-order operator</strong>: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ it is the negative of that Laplacian; and on the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ it takes a Lorentzian form in the underlying real coordinates. The <strong>square of the gradient</strong> $\tilde{\nabla}^2 = (\partial^2/\partial Q_0^2 - \Delta_Q) + 2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$. The <strong>convective derivative</strong> $\tilde{D} = \tilde{S}^{\natural}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.</p>
 <p>The approach is closely related to Fueter's quaternionic analysis and to Clifford analysis. The generalization to the biquaternion algebra includes the complex coefficients and the four conjugations, which enrich the structure.</p>
 <p>The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is treated in <em>Remarkable Subspaces and the Analysis</em>, where these four are the real forms beside the two complex subspaces. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -464,7 +464,7 @@ $$</p>
 <td>Square of the gradient</td>
 </tr>
 <tr>
-<td>$\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$</td>
+<td>$\tilde{D} = \tilde{S}^{\natural}\tilde{\nabla}$</td>
 <td>Convective derivative</td>
 </tr>
 </tbody>

@@ -53,7 +53,7 @@
         <h1 id="the-lie-algebra-of-the-antisymmetric-plain-algebra"><strong>The Lie Algebra of the Antisymmetric Plain Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The antisymmetric plain algebra of $\mathbb{H}$ carries the cross product
-$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ of
+$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
 <em>Introduction to the Antisymmetric Plain Algebra of Quaternions</em>, which is alternating and satisfies
 the Jacobi identity (<em>The Specificities of the Antisymmetric Plain Algebra</em>, below this article in
 this category). By the definition of the Lie structure it is a <strong>real Lie algebra</strong> of dimension four,
@@ -74,10 +74,10 @@ elements of the structure are <em>The Killing Form of the Antisymmetric Plain Al
 Operators and the Derivations of the Antisymmetric Plain Algebra</em>, both below this article in this
 category, and the general theory of Lie algebras is <em>Structure of Lie Algebras</em>.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; the cross product of the vector parts is $\mathbf p\times\mathbf q$, with
+$e_1^2=e_2^2=e_3^2=-e_0$; the cross product of the vector parts is $\vec p\times\vec q$, with
 $e_1\times e_2=e_3$ and its cyclic images. The <strong>centre</strong> is
 $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the <strong>vector subspace</strong> is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$, identified with $\mathbb{R}^3$ as a vector space. The
+$\mathrm{Vect}(\mathbb{H})=\{\vec q\}$, identified with $\mathbb{R}^3$ as a vector space. The
 Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, with $\sigma_j\sigma_k=\delta_{jk}\mathrm{I}_2+i\sum_l\varepsilon_{jkl}\sigma_l$.</p>
 <h2 id="the-lie-algebra-and-its-centre">The Lie Algebra and Its Centre</h2>
 <p><strong>Theorem.</strong> The space $\mathfrak{g}=\mathbb{H}$ with the bracket $\tilde p\times\tilde q$ is a real
@@ -92,12 +92,12 @@ $$</p>
 <p>of real dimension one.</p>
 <p><em>Proof.</em> The bracket is bilinear and alternating and satisfies the Jacobi identity, which is the Lie
 structure. The vanishing on the scalar direction is the table; the fixed elements of the cross product
-are the multiples of the scalar direction, since $\mathbf p\times\mathbf q=0$ for every $\mathbf q$
-forces $\mathbf p=0$.</p>
+are the multiples of the scalar direction, since $\vec p\times\vec q=0$ for every $\vec q$
+forces $\vec p=0$.</p>
 <h2 id="the-derived-algebra-and-the-identifications">The Derived Algebra and the Identifications</h2>
 <p><strong>Theorem (the derived algebra).</strong> The derived algebra is the vector subspace,</p>
 <p>$$
-[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{H})=\{\mathbf q\},
+[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{H})=\{\vec q\},
 $$</p>
 <p>of real dimension three, and it is an ideal. The quotient $\mathfrak{g}/[\mathfrak{g},\mathfrak{g}]$
 is the one-dimensional abelian algebra $\mathbb{R}e_0$, so</p>
@@ -107,7 +107,7 @@ $$</p>
 <p>is the direct sum of its centre and its derived algebra, two ideals.</p>
 <p><em>Proof.</em> The bracket of two elements is pure, so $[\mathfrak{g},\mathfrak{g}]\subseteq\mathrm{Vect}(\mathbb{H})$;
 and the pure brackets generate the vector subspace, since $e_1\times e_2=e_3$ with its cyclic images
-give a basis. The pure subspace is an ideal because $[\tilde p,\mathbf q]$ is pure for every $\tilde p$.
+give a basis. The pure subspace is an ideal because $[\tilde p,\vec q]$ is pure for every $\tilde p$.
 The sum is direct because the centre meets the derived algebra at $0$, and both are ideals, so the
 bracket is the sum of the two brackets.</p>
 <h3 id="the-isomorphism-with-math34">The Isomorphism with $\mathfrak{su}(2)$</h3>
@@ -122,22 +122,22 @@ the images reproduce the structure constants of the vector product, and they are
 skew-Hermitian. The map is a Lie isomorphism onto $\mathfrak{su}(2)$.</p>
 <h3 id="the-isomorphism-with-math41">The Isomorphism with $\mathfrak{so}(3)$</h3>
 <p><strong>Theorem.</strong> The derived algebra is isomorphic to the real Lie algebra $\mathfrak{so}(3)$ of the
-skew-symmetric $3\times3$ real matrices, by $\mathbf p\mapsto C_{\mathbf p}$, the cross-product matrix
-$C_{\mathbf p}\mathbf q=\mathbf p\times\mathbf q$. Under this map the adjoint representation of
+skew-symmetric $3\times3$ real matrices, by $\vec p\mapsto C_{\vec p}$, the cross-product matrix
+$C_{\vec p}\vec q=\vec p\times\vec q$. Under this map the adjoint representation of
 $\mathfrak{g}$ on the derived algebra is</p>
 <p>$$
-\operatorname{ad}_{\tilde p}\longmapsto C_{\mathbf p},\qquad
-\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\mathbf p})\ \text{on}\ \mathbb{H}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H}) .
+\operatorname{ad}_{\tilde p}\longmapsto C_{\vec p},\qquad
+\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\vec p})\ \text{on}\ \mathbb{H}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H}) .
 $$</p>
-<p><em>Proof.</em> The cross-product matrix is skew-symmetric because $\mathbf p\times\mathbf q\perp\mathbf p$, and
-$C_{\mathbf p}\mathbf q=\mathbf p\times\mathbf q$ is the defining matrix of the cross product; the
-identification $C_{\mathbf p}\leftrightarrow\mathbf p$ carries the bracket to the commutator,
-$[C_{\mathbf p},C_{\mathbf q}]=C_{\mathbf p\times\mathbf q}$, since the cross product satisfies the
+<p><em>Proof.</em> The cross-product matrix is skew-symmetric because $\vec p\times\vec q\perp\vec p$, and
+$C_{\vec p}\vec q=\vec p\times\vec q$ is the defining matrix of the cross product; the
+identification $C_{\vec p}\leftrightarrow\vec p$ carries the bracket to the commutator,
+$[C_{\vec p},C_{\vec q}]=C_{\vec p\times\vec q}$, since the cross product satisfies the
 Jacobi identity. The adjoint vanishes on the centre and acts on the pure part by the cross product.</p>
 <p><strong>Remark (the three presentations).</strong> The three algebras $\mathbb{R}^3$ with the cross product,
 $\mathfrak{su}(2)$ and $\mathfrak{so}(3)$ are one and the same real Lie algebra of dimension three,
 the compact form of $\mathfrak{sl}(2,\mathbb{C})$; the isomorphism between the last two is
-$\mathbf p\mapsto C_{\mathbf p}$ through the vector product. This is the block's contribution to the
+$\vec p\mapsto C_{\vec p}$ through the vector product. This is the block's contribution to the
 dictionary of the chapter.</p>
 <h2 id="the-structure-constants">The Structure Constants</h2>
 <p>In the basis $(e_0,e_1,e_2,e_3)$ the bracket is</p>
