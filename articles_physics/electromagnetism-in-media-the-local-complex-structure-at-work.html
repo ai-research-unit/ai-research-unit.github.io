@@ -615,27 +615,27 @@ $$</p>
 <p><strong>Nothing in this section is three-dimensional.</strong> The quartet, the condition on the coefficients, the equation for $w$ and the inverse all hold with the quaternion algebra replaced by the Clifford algebra $Cl_{0,n}$ of $n$-dimensional Euclidean space, the operator being read as $D=\sum_{j=1}^{n}e_j\,\partial_{x_j}$ in that algebra's units. The construction is dimensional rather than quaternionic: the quartet becomes a set of $n+1$ generating functions, the coefficients $\phi_k$ remain complex scalars, and the argument is unchanged. The source states this for its whole section, and it is the reason the framework is better described as a Clifford-analytic method with a distinguished four-dimensional case than as a quaternionic device.</p>
 <p><strong>Provenance.</strong> The quartet, the condition on the coefficients, the equation for $w$, the inverse theorem and the dimensional remark are the survey's restatement of its reference $[29]$, V. V. Kravchenko, "On a factorization of second order elliptic operators and applications", <em>Journal of Physics A: Mathematical and General</em> <strong>39</strong> (2006) 12407–12425, where they are its Theorems 15–18 and Remarks 19–20. The survey's own remarks place the earlier members of the chain: the Schrödinger factorisation in the Riccati form is in Bernstein (1996) and Bernstein–Gürlebeck (1999); the reduction of the biquaternionic Riccati equation to the carrier $Df/f$ is in Kravchenko–Kravchenko–Williams (2001); and the general $(\mathrm{div}\,p\,\mathrm{grad}+q)$ factorisation, with its three consequences, is $[29]$'s and <strong>not</strong> the 2001 paper's — that paper carries the Schrödinger reduction, the Riccati condition and the closed-form fundamental solution, and stops there. The general factorisation is cited to $[29]$ in the Further Reading below.</p>
 <h2 id="boundary-conditions-at-an-interface">Boundary Conditions at an Interface</h2>
-<p>At a surface separating two media, the fields are matched by the integral form of Maxwell's equations. Let $\hat n$ be the unit normal pointing from medium $1$ to medium $2$. With no free surface charge and no free surface current,
+<p>At a surface separating two media, the fields are matched by the integral form of Maxwell's equations. Let $\hat u$ be the unit normal pointing from medium $1$ to medium $2$. With no free surface charge and no free surface current,
 $$
-\hat n\cdot(\vec D_2-\vec D_1)=0,
+\hat u\cdot(\vec D_2-\vec D_1)=0,
 \qquad
-\hat n\cdot(\vec B_2-\vec B_1)=0,
+\hat u\cdot(\vec B_2-\vec B_1)=0,
 $$
 $$
-\hat n\times(\vec E_2-\vec E_1)=0,
+\hat u\times(\vec E_2-\vec E_1)=0,
 \qquad
-\hat n\times(\vec H_2-\vec H_1)=0 .
+\hat u\times(\vec H_2-\vec H_1)=0 .
 $$
-With a surface charge density $\sigma_s$ and a surface current density $\vec K_s$ the first and last become $\hat n\cdot(\vec D_2-\vec D_1)=\sigma_s$ and $\hat n\times(\vec H_2-\vec H_1)=\vec K_s$. In words: the normal component of $\vec D$ and the normal component of $\vec B$ are continuous up to surface sources, and the tangential components of $\vec E$ and $\vec H$ are continuous.</p>
-<p>The biquaternionic field strength is assembled from the local values of $\epsilon$ and $\mu$, so it is <strong>discontinuous</strong> at an interface even though the physical fields obey the conditions above. Splitting off the tangential part, with unit normal $\hat n$,
+With a surface charge density $\sigma_s$ and a surface current density $\vec K_s$ the first and last become $\hat u\cdot(\vec D_2-\vec D_1)=\sigma_s$ and $\hat u\times(\vec H_2-\vec H_1)=\vec K_s$. In words: the normal component of $\vec D$ and the normal component of $\vec B$ are continuous up to surface sources, and the tangential components of $\vec E$ and $\vec H$ are continuous.</p>
+<p>The biquaternionic field strength is assembled from the local values of $\epsilon$ and $\mu$, so it is <strong>discontinuous</strong> at an interface even though the physical fields obey the conditions above. Splitting off the tangential part, with unit normal $\hat u$,
 $$
-\hat n\times\tilde{F}
-=i\sqrt{\epsilon}\,\left(\hat n\times\vec E\right)
--\sqrt{\mu}\,\left(\hat n\times\vec H\right).
+\hat u\times\tilde{F}
+=i\sqrt{\epsilon}\,\left(\hat u\times\vec E\right)
+-\sqrt{\mu}\,\left(\hat u\times\vec H\right).
 $$
-The tangential combinations $\hat n\times\vec E$ and $\hat n\times\vec H$ are continuous across the interface, but the coefficients $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are not, so the left-hand side jumps. Similarly, for the normal part,
+The tangential combinations $\hat u\times\vec E$ and $\hat u\times\vec H$ are continuous across the interface, but the coefficients $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are not, so the left-hand side jumps. Similarly, for the normal part,
 $$
-\hat n\cdot\tilde{F}
+\hat u\cdot\tilde{F}
 =i\sqrt{\epsilon}\,E_n-\sqrt{\mu}\,H_n
 =\frac{i}{\sqrt{\epsilon}}\,D_n-\frac{1}{\sqrt{\mu}}\,B_n,
 $$

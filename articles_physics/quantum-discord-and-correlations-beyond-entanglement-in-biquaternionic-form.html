@@ -114,9 +114,9 @@ $$</p>
 <p>For Bell-diagonal states the quantum mutual information is thus a function of the three trace pairings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the biquaternion norm.</p>
 <h2 id="classical-mutual-information-and-discord">Classical Mutual Information and Discord</h2>
 <h3 id="measurement-on-one-subsystem">Measurement on one subsystem</h3>
-<p>To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\hat{n}$ has idempotents</p>
+<p>To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\hat u$ has idempotents</p>
 <p>$$
-\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_0 \pm i\hat{n}\cdot\hat e\bigr) \quad\text{on }B,
+\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_0 \pm i\hat u\cdot\hat e\bigr) \quad\text{on }B,
 \qquad
  e_0\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
 $$</p>
@@ -126,11 +126,11 @@ $$</p>
 $$</p>
 <p>The conditional entropy of $A$ given the measurement is $S(A|\{\tilde{\Pi}\}) = \sum_\pm p_\pm S(\tilde{\rho}_{A|\pm})$, and the <strong>classical mutual information</strong> extractable by that measurement is</p>
 <p>$$
-J(A|B)_{\hat{n}} = S(\tilde{\rho}_A) - S\bigl(A|\{\tilde{\Pi}\}\bigr),
+J(A|B)_{\hat u} = S(\tilde{\rho}_A) - S\bigl(A|\{\tilde{\Pi}\}\bigr),
 $$</p>
 <p>the information about $A$ gained by measuring $B$. The <strong>quantum discord</strong> is</p>
 <p>$$
-D(A|B) = I(A:B) - \max_{\hat{n}} J(A|B)_{\hat{n}} .
+D(A|B) = I(A:B) - \max_{\hat u} J(A|B)_{\hat u} .
 $$</p>
 <p>By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the <strong>quantum-classical states</strong> $\tilde{\rho}_{AB} = \sum_k p_k\,\tilde{\rho}_A^{(k)}\otimes\tilde{\Pi}_k$.</p>
 <h3 id="asymmetry">Asymmetry</h3>
@@ -254,11 +254,11 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The quantum discord of a bipartite state is the difference between the quantum mutual information and the classical mutual information extractable by a local measurement:</p>
 <p>$$
-D(A|B) = I(A:B) - \max_{\hat{n}} J(A|B)_{\hat{n}},
+D(A|B) = I(A:B) - \max_{\hat u} J(A|B)_{\hat u},
 \qquad
 I(A:B) = S(\tilde{\rho}_A)+S(\tilde{\rho}_B)-S(\tilde{\rho}_{AB}),
 \qquad
-J(A|B)_{\hat{n}} = S(\tilde{\rho}_A) - S\bigl(A\,|\,\{\tilde{\Pi}\}\bigr).
+J(A|B)_{\hat u} = S(\tilde{\rho}_A) - S\bigl(A\,|\,\{\tilde{\Pi}\}\bigr).
 $$</p>
 <p>In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{\rho}_{AB} = \sum_\epsilon p_\epsilon P_\epsilon$ are parametrized by the three trace pairings</p>
 <p>$$
@@ -305,7 +305,7 @@ $$</p>
 <td>Quantum mutual information</td>
 </tr>
 <tr>
-<td>$\tilde{\Pi}_{1,2} = \tfrac12(e_0\pm i\hat{n}\cdot\hat e)$</td>
+<td>$\tilde{\Pi}_{1,2} = \tfrac12(e_0\pm i\hat u\cdot\hat e)$</td>
 <td>Projective measurement on $B$</td>
 </tr>
 <tr>

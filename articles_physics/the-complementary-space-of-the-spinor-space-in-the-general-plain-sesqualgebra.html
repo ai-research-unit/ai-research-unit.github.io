@@ -65,22 +65,22 @@ $$</p>
 <p>$$
 \langle u,v\rangle_*=\operatorname{Sc}(uv^{*})=\sum_\mu u_\mu\overline{v_\mu},
 $$</p>
-<p>positive definite on the whole algebra, with Gram matrix $\tfrac12 I_2$ on the carrier's basis $(\tilde\Pi_+,\tilde\Upsilon_2)$. The <strong>orthogonal complement</strong> of the carrier is</p>
+<p>positive definite on the whole algebra, with Gram matrix $\tfrac12 I_2$ on the carrier's basis $(\tilde\Pi_+,\hat\Upsilon_2)$. The <strong>orthogonal complement</strong> of the carrier is</p>
 <p>$$
 S^{\perp_*}=\{v\in\mathbb{B}:\langle u,v\rangle_*=0\ \text{for all }u\in S\}.
 $$</p>
 <h3 id="the-four-matrix-units-are-mutually-orthogonal">The Four Matrix Units Are Mutually Orthogonal</h3>
 <p>The computation is one table. On the four matrix units</p>
 <p>$$
-\tilde\Pi_+,\quad\tilde\Upsilon_2,\quad\tilde\Upsilon_1,\quad\tilde\Pi_-
+\tilde\Pi_+,\quad\hat\Upsilon_2,\quad\hat\Upsilon_1,\quad\tilde\Pi_-
 $$</p>
 <p>the form is diagonal:</p>
 <p>$$
-\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\tilde\Upsilon_2,\tilde\Upsilon_2\rangle_*=\langle\tilde\Upsilon_1,\tilde\Upsilon_1\rangle_*=\langle\tilde\Pi_-,\tilde\Pi_-\rangle_*=\tfrac12,
+\langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\hat\Upsilon_2,\hat\Upsilon_2\rangle_*=\langle\hat\Upsilon_1,\hat\Upsilon_1\rangle_*=\langle\tilde\Pi_-,\tilde\Pi_-\rangle_*=\tfrac12,
 $$</p>
-<p>and every cross term vanishes. The reason is structural: the four matrix units are the four entries $E_{ij}$ of the matrix model, the form is the normalised Hilbert–Schmidt form $\tfrac12\operatorname{Tr}(XY^{\dagger})$, and distinct matrix units are orthogonal for it. In particular the two basis elements of the carrier, $\tilde\Pi_+$ and $\tilde\Upsilon_2$, are orthogonal to the two basis elements of the complement, $\tilde\Upsilon_1$ and $\tilde\Pi_-$, so</p>
+<p>and every cross term vanishes. The reason is structural: the four matrix units are the four entries $E_{ij}$ of the matrix model, the form is the normalised Hilbert–Schmidt form $\tfrac12\operatorname{Tr}(XY^{\dagger})$, and distinct matrix units are orthogonal for it. In particular the two basis elements of the carrier, $\tilde\Pi_+$ and $\hat\Upsilon_2$, are orthogonal to the two basis elements of the complement, $\hat\Upsilon_1$ and $\tilde\Pi_-$, so</p>
 <p>$$
-S^{\perp_*}=\mathbb{C}\{\tilde\Upsilon_1,\tilde\Pi_-\}=\mathbb{B}\tilde\Pi_- .
+S^{\perp_*}=\mathbb{C}\{\hat\Upsilon_1,\tilde\Pi_-\}=\mathbb{B}\tilde\Pi_- .
 $$</p>
 <p>The orthogonal complement of the carrier is <strong>exactly the complementary ideal</strong>. The dimensions agree, two and two, and the two subspaces meet only at zero, so $\mathbb{B}=S\oplus S^{\perp_*}$ is an orthogonal decomposition.</p>
 <h3 id="why-the-two-splits-coincide-here">Why the Two Splits Coincide Here</h3>
@@ -96,14 +96,14 @@ the complementary ideal of the <strong>adjoint</strong> idempotent. The two comp
 <p>$$
 \tilde\Pi_+^{*}=\tilde\Pi_+,\qquad \tilde\Pi_-^{*}=\tilde\Pi_-,
 $$</p>
-<p>and that is the reason the module split is also the metric split. The coincidence is not special to the coordinate pair: every Hermitian idempotent $\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$, $\hat\mu$ a real unit vector, is self-adjoint, and for all of them the two complements agree. It fails as soon as the generator is not self-adjoint; the simplest example is the idempotent $\tilde\Pi_++\tilde\Upsilon_1$, whose module complement $\mathbb{B}(e_0-\tilde\Pi_+-\tilde\Upsilon_1)=\mathbb{B}(\tilde\Pi_--\tilde\Upsilon_1)$ is <strong>not</strong> its metric complement $\mathbb{B}(e_0-(\tilde\Pi_++\tilde\Upsilon_1)^{*})=\mathbb{B}(\tilde\Pi_--\tilde\Upsilon_2)$. The clean orthogonal split is the Hermitian case, and the Hermitian case is the one the vacuum and the particle content use.</p>
+<p>and that is the reason the module split is also the metric split. The coincidence is not special to the coordinate pair: every Hermitian idempotent $\tilde\Pi(\hat u)=\tfrac12(e_0+i\hat u)$, $\hat u$ a real unit vector, is self-adjoint, and for all of them the two complements agree. It fails as soon as the generator is not self-adjoint; the simplest example is the idempotent $\tilde\Pi_++\hat\Upsilon_1$, whose module complement $\mathbb{B}(e_0-\tilde\Pi_+-\hat\Upsilon_1)=\mathbb{B}(\tilde\Pi_--\hat\Upsilon_1)$ is <strong>not</strong> its metric complement $\mathbb{B}(e_0-(\tilde\Pi_++\hat\Upsilon_1)^{*})=\mathbb{B}(\tilde\Pi_--\hat\Upsilon_2)$. The clean orthogonal split is the Hermitian case, and the Hermitian case is the one the vacuum and the particle content use.</p>
 <h2 id="the-complement-as-a-hilbert-space">The Complement as a Hilbert Space</h2>
 <h3 id="the-metric-of-the-complement">The Metric of the Complement</h3>
-<p>The restriction of the form to the complement is positive definite with the same Gram matrix as the carrier. On the basis $(\tilde\Pi_-,\tilde\Upsilon_1)$,</p>
+<p>The restriction of the form to the complement is positive definite with the same Gram matrix as the carrier. On the basis $(\tilde\Pi_-,\hat\Upsilon_1)$,</p>
 <p>$$
-G'=\begin{pmatrix}\langle\tilde\Pi_-,\tilde\Pi_-\rangle_*&\langle\tilde\Pi_-,\tilde\Upsilon_1\rangle_*\\[2pt]\langle\tilde\Upsilon_1,\tilde\Pi_-\rangle_*&\langle\tilde\Upsilon_1,\tilde\Upsilon_1\rangle_*\end{pmatrix}=\tfrac12 I_2,
+G'=\begin{pmatrix}\langle\tilde\Pi_-,\tilde\Pi_-\rangle_*&\langle\tilde\Pi_-,\hat\Upsilon_1\rangle_*\\[2pt]\langle\hat\Upsilon_1,\tilde\Pi_-\rangle_*&\langle\hat\Upsilon_1,\hat\Upsilon_1\rangle_*\end{pmatrix}=\tfrac12 I_2,
 $$</p>
-<p>so for a general element $\tilde\phi=\phi_1\tilde\Pi_-+\phi_2\tilde\Upsilon_1$ of the complement,</p>
+<p>so for a general element $\tilde\phi=\phi_1\tilde\Pi_-+\phi_2\hat\Upsilon_1$ of the complement,</p>
 <p>$$
 \langle\tilde\phi,\tilde\phi\rangle_*=\tfrac12\bigl(|\phi_1|^2+|\phi_2|^2\bigr),
 $$</p>
@@ -111,7 +111,7 @@ $$</p>
 <h3 id="the-isometry-is-the-coefficient-conjugation">The Isometry Is the Coefficient Conjugation</h3>
 <p>The carrier and the complement are not only isometric; they are related by the antilinear isometry of the coefficient conjugation $\bar{\cdot}$, which fixes the four basis elements $e_\mu$ and negates $i$:</p>
 <p>$$
-\overline{\tilde\Pi_+}=\tilde\Pi_-,\qquad \overline{\tilde\Upsilon_2}=-\tilde\Upsilon_1,\qquad
+\overline{\tilde\Pi_+}=\tilde\Pi_-,\qquad \overline{\hat\Upsilon_2}=-\hat\Upsilon_1,\qquad
 \bar S=\mathbb{B}\tilde\Pi_-,
 $$</p>
 <p>and preserves the form, $\langle\bar u,\bar v\rangle_*=\overline{\langle u,v\rangle_*}$, so that $\|\bar u\|=\|u\|$. The metric complement of the carrier is thus its <strong>conjugate</strong> under the real structure of the algebra, and the two copies are exchangeable.</p>
@@ -123,9 +123,9 @@ $$</p>
 $$</p>
 <p>so the regular module is the <strong>orthogonal direct sum of two isometric copies of the state space</strong>. The complement's <strong>physical interpretation</strong> in the GPS band follows directly: the framework's state space is doubled, the two copies are orthogonal for the probability metric, and a state of one copy has no component in the other as measured by the form. The metric therefore does not mix the two copies; the interaction between them, where it exists, is not a metric effect.</p>
 <h3 id="the-mixing-is-right-multiplication-not-the-form">The Mixing Is Right Multiplication, Not the Form</h3>
-<p>The two copies do interact in the corpus, and the operator that mixes them is a <strong>right</strong> multiplication, which is $\mathbb{B}$-linear on the left and therefore maps left ideals to left ideals while exchanging them: for instance the nilpotent $\tilde\Upsilon_1$,</p>
+<p>The two copies do interact in the corpus, and the operator that mixes them is a <strong>right</strong> multiplication, which is $\mathbb{B}$-linear on the left and therefore maps left ideals to left ideals while exchanging them: for instance the nilpotent $\hat\Upsilon_1$,</p>
 <p>$$
-\tilde\Pi_+\tilde\Upsilon_1=\tilde\Upsilon_1,\qquad \tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-,
+\tilde\Pi_+\hat\Upsilon_1=\hat\Upsilon_1,\qquad \hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-,
 $$</p>
 <p>carries the carrier onto the complement and is the module isomorphism between them (the sibling article's computation). The chirality-off-diagonal mass is exactly such a right multiplication (<em>Bosonization in Biquaternionic Form</em>, <em>The Spectral Triple of the Biquaternion Algebra</em>). The interpretation is a clean division of labour: the <strong>metric</strong> keeps the two copies orthogonal, and the <strong>mass</strong> couples them by a right multiplication, which is a module and not a metric operation.</p>
 <h3 id="the-doubling-is-not-a-chirality-in-the-module-sense">The Doubling Is Not a Chirality in the Module Sense</h3>
@@ -134,11 +134,11 @@ $$</p>
 <h3 id="the-dual-is-the-right-ideal">The Dual Is the Right Ideal</h3>
 <p>The complement is a <strong>left</strong> ideal. The dual of the carrier — the space of the bras — is a <strong>right</strong> ideal, reached by the Hermitian conjugation ${}^{*}$:</p>
 <p>$$
-\tilde\Pi_+^{*}=\tilde\Pi_+,\qquad \tilde\Upsilon_2^{*}=\tilde\Upsilon_1,
+\tilde\Pi_+^{*}=\tilde\Pi_+,\qquad \hat\Upsilon_2^{*}=\hat\Upsilon_1,
 \qquad
-S^{*}=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_1\}=\tilde\Pi_+\mathbb{B},
+S^{*}=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_1\}=\tilde\Pi_+\mathbb{B},
 $$</p>
-<p>the first <strong>row</strong> of the matrix model, $\mathbb{C}\{E_{11},E_{12}\}$. The dual is not the complement, and it is not the metric complement either: $S^{*}$ contains $\tilde\Upsilon_1$ and $\tilde\Pi_+$, while $S^{\perp_*}=\mathbb{B}\tilde\Pi_-$ contains $\tilde\Upsilon_1$ and $\tilde\Pi_-$, so the two subspaces share the nilpotent $\tilde\Upsilon_1$ and differ in their idempotent, $\tilde\Pi_+$ against $\tilde\Pi_-$. This is the algebraic form of the standard caution that <strong>a bra is not an antiparticle</strong>: the dual and the conjugate copy are different subspaces, reached by different operations, and a physical argument that uses one must not be read as using the other.</p>
+<p>the first <strong>row</strong> of the matrix model, $\mathbb{C}\{E_{11},E_{12}\}$. The dual is not the complement, and it is not the metric complement either: $S^{*}$ contains $\hat\Upsilon_1$ and $\tilde\Pi_+$, while $S^{\perp_*}=\mathbb{B}\tilde\Pi_-$ contains $\hat\Upsilon_1$ and $\tilde\Pi_-$, so the two subspaces share the nilpotent $\hat\Upsilon_1$ and differ in their idempotent, $\tilde\Pi_+$ against $\tilde\Pi_-$. This is the algebraic form of the standard caution that <strong>a bra is not an antiparticle</strong>: the dual and the conjugate copy are different subspaces, reached by different operations, and a physical argument that uses one must not be read as using the other.</p>
 <h3 id="three-notions-two-of-which-coincide">Three Notions, Two of Which Coincide</h3>
 <p>For the coordinate pair the reader can keep three notions apart:</p>
 <div class="table-scroll"><table>
@@ -152,36 +152,36 @@ $$</p>
 <tbody>
 <tr>
 <td>module complement</td>
-<td>$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Upsilon_1,\tilde\Pi_-\}$</td>
-<td>Peirce, right multiplication by $\tilde\Upsilon_1$</td>
+<td>$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\hat\Upsilon_1,\tilde\Pi_-\}$</td>
+<td>Peirce, right multiplication by $\hat\Upsilon_1$</td>
 </tr>
 <tr>
 <td>metric complement</td>
-<td>$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Upsilon_1,\tilde\Pi_-\}$</td>
+<td>$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\hat\Upsilon_1,\tilde\Pi_-\}$</td>
 <td>orthogonality for $\langle\cdot,\cdot\rangle_*$</td>
 </tr>
 <tr>
 <td>conjugate copy</td>
-<td>$\bar S=\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Upsilon_1,\tilde\Pi_-\}$</td>
+<td>$\bar S=\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\hat\Upsilon_1,\tilde\Pi_-\}$</td>
 <td>coefficient conjugation $\bar{\cdot}$</td>
 </tr>
 <tr>
 <td>dual</td>
-<td>$S^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_1\}$</td>
+<td>$S^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_1\}$</td>
 <td>Hermitian conjugation ${}^{*}$</td>
 </tr>
 </tbody>
 </table></div>
 <p>The first three coincide for the coordinate idempotents; the fourth does not, and the fourth is the one that is a right module. The coincidence of the first three is a feature of the self-adjointness of the generator idempotent and not of the band, as §<em>Why the Two Splits Coincide Here</em> explains.</p>
 <h2 id="worked-verification">Worked Verification</h2>
-<p>The claims are recomputed on the basis $(\tilde\Pi_+,\tilde\Upsilon_2,\tilde\Upsilon_1,\tilde\Pi_-)$ and on the matrix units.</p>
+<p>The claims are recomputed on the basis $(\tilde\Pi_+,\hat\Upsilon_2,\hat\Upsilon_1,\tilde\Pi_-)$ and on the matrix units.</p>
 <ul>
 <li><strong>The four matrix units are orthogonal of norm $\tfrac12$.</strong> $\langle E_{ij},E_{kl}\rangle_*=\tfrac12\delta_{ik}\delta_{jl}$ in the matrix model, hence every cross term vanishes and each unit has norm $\tfrac12$.</li>
-<li><strong>The orthogonal complement.</strong> $S=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ is orthogonal to $\mathbb{C}\{\tilde\Upsilon_1,\tilde\Pi_-\}=\mathbb{B}\tilde\Pi_-$, and both are two-dimensional, so $S^{\perp_*}=\mathbb{B}\tilde\Pi_-$ and $\mathbb{B}=S\perp\mathbb{B}\tilde\Pi_-$.</li>
-<li><strong>The complement's metric.</strong> $G'=\tfrac12 I_2$ on $(\tilde\Pi_-,\tilde\Upsilon_1)$, so the complement is a Hilbert space isometric to the carrier.</li>
-<li><strong>The conjugate reaches the complement.</strong> $\overline{\tilde\Pi_+}=\tilde\Pi_-$ and $\overline{\tilde\Upsilon_2}=-\tilde\Upsilon_1$, so $\bar S=\mathbb{B}\tilde\Pi_-$, and $\langle\bar u,\bar v\rangle_*=\overline{\langle u,v\rangle_*}$.</li>
-<li><strong>The dual is different.</strong> $\tilde\Pi_+^{*}=\tilde\Pi_+$ and $\tilde\Upsilon_2^{*}=\tilde\Upsilon_1$, so $S^{*}=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_1\}=\tilde\Pi_+\mathbb{B}\neq\mathbb{B}\tilde\Pi_-=S^{\perp_*}$.</li>
-<li><strong>The mixing.</strong> $\tilde\Pi_+\tilde\Upsilon_1=\tilde\Upsilon_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-$, so the right multiplication $R_{\tilde\Upsilon_1}$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$.</li>
+<li><strong>The orthogonal complement.</strong> $S=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$ is orthogonal to $\mathbb{C}\{\hat\Upsilon_1,\tilde\Pi_-\}=\mathbb{B}\tilde\Pi_-$, and both are two-dimensional, so $S^{\perp_*}=\mathbb{B}\tilde\Pi_-$ and $\mathbb{B}=S\perp\mathbb{B}\tilde\Pi_-$.</li>
+<li><strong>The complement's metric.</strong> $G'=\tfrac12 I_2$ on $(\tilde\Pi_-,\hat\Upsilon_1)$, so the complement is a Hilbert space isometric to the carrier.</li>
+<li><strong>The conjugate reaches the complement.</strong> $\overline{\tilde\Pi_+}=\tilde\Pi_-$ and $\overline{\hat\Upsilon_2}=-\hat\Upsilon_1$, so $\bar S=\mathbb{B}\tilde\Pi_-$, and $\langle\bar u,\bar v\rangle_*=\overline{\langle u,v\rangle_*}$.</li>
+<li><strong>The dual is different.</strong> $\tilde\Pi_+^{*}=\tilde\Pi_+$ and $\hat\Upsilon_2^{*}=\hat\Upsilon_1$, so $S^{*}=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_1\}=\tilde\Pi_+\mathbb{B}\neq\mathbb{B}\tilde\Pi_-=S^{\perp_*}$.</li>
+<li><strong>The mixing.</strong> $\tilde\Pi_+\hat\Upsilon_1=\hat\Upsilon_1$ and $\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-$, so the right multiplication $R_{\hat\Upsilon_1}$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$.</li>
 </ul>
 <h2 id="boundaries">Boundaries</h2>
 <ul>
@@ -201,10 +201,10 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The complementary space of the spinor space $S=\mathbb{B}\tilde\Pi_+$ in the general plain sesqualgebra is the second minimal left ideal</p>
 <p>$$
-\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\tilde\Upsilon_1\},\qquad\tilde\Pi_-=e_0-\tilde\Pi_+,\qquad\tilde\Upsilon_1=\tfrac12(ie_1-e_2),
+\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\hat\Upsilon_1\},\qquad\tilde\Pi_-=e_0-\tilde\Pi_+,\qquad\hat\Upsilon_1=\tfrac12(ie_1-e_2),
 $$</p>
 <p>and for the positive definite sesquilinear form $\langle u,v\rangle_*=\operatorname{Sc}(uv^{*})$ it is exactly the <strong>orthogonal complement</strong> of the carrier, $S^{\perp_*}=\mathbb{B}\tilde\Pi_-$, because the four matrix units are mutually orthogonal of norm $\tfrac12$. The algebraic (Peirce) split and the metric split therefore <strong>coincide</strong>, and the regular module is the orthogonal direct sum of two isometric copies of the state space, $\mathbb{B}=S\perp\mathbb{B}\tilde\Pi_-$. The coincidence holds because the generator idempotent is self-adjoint; it holds for every Hermitian idempotent and fails for a non-Hermitian one.</p>
-<p>The complement is a second Hilbert space of complex dimension two with the same Gram matrix $\tfrac12 I_2$ and the same norm $\tfrac12(|\phi_1|^2+|\phi_2|^2)$; it is the <strong>conjugate</strong> of the carrier under the coefficient conjugation $\bar{\cdot}$, which is an antilinear isometry, and it is the image of the carrier under the $\mathbb{B}$-linear right multiplication by the nilpotent $\tilde\Upsilon_1$. It is <strong>not the dual</strong>: the dual is the right ideal $S^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_1\}$, reached by the Hermitian conjugation ${}^{*}$, which is a different subspace, so a bra is not an antiparticle. For the coordinate pair the module complement, the metric complement and the conjugate copy coincide, while the dual does not.</p>
+<p>The complement is a second Hilbert space of complex dimension two with the same Gram matrix $\tfrac12 I_2$ and the same norm $\tfrac12(|\phi_1|^2+|\phi_2|^2)$; it is the <strong>conjugate</strong> of the carrier under the coefficient conjugation $\bar{\cdot}$, which is an antilinear isometry, and it is the image of the carrier under the $\mathbb{B}$-linear right multiplication by the nilpotent $\hat\Upsilon_1$. It is <strong>not the dual</strong>: the dual is the right ideal $S^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_1\}$, reached by the Hermitian conjugation ${}^{*}$, which is a different subspace, so a bra is not an antiparticle. For the coordinate pair the module complement, the metric complement and the conjugate copy coincide, while the dual does not.</p>
 <p>Physically the complement is the second, orthogonal copy of the state space. The probability metric keeps the two copies orthogonal; the coupling between them is a right multiplication — the chirality-off-diagonal mass — which is a module operation and not a metric one. The two copies carry the same defining representation of the double cover, so the doubling is a copy and not a chirality; at the module level the two chiral halves are $S$ and its non-isomorphic conjugate module $\bar S$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -240,11 +240,11 @@ $$</p>
 <td>Complementary idempotent; $\tilde\Pi_-^{*}=\tilde\Pi_-$</td>
 </tr>
 <tr>
-<td>$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$</td>
+<td>$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\hat\Upsilon_2\}$</td>
 <td>The spinor space, the carrier</td>
 </tr>
 <tr>
-<td>$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Upsilon_1,\tilde\Pi_-\}$</td>
+<td>$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\hat\Upsilon_1,\tilde\Pi_-\}$</td>
 <td>The complementary space</td>
 </tr>
 <tr>
@@ -260,7 +260,7 @@ $$</p>
 <td>The metric of the complement</td>
 </tr>
 <tr>
-<td>$\langle\tilde\Pi_i,\tilde\Pi_i\rangle_*=\langle\tilde\Upsilon_j,\tilde\Upsilon_j\rangle_*=\tfrac12$</td>
+<td>$\langle\tilde\Pi_i,\tilde\Pi_i\rangle_*=\langle\hat\Upsilon_j,\hat\Upsilon_j\rangle_*=\tfrac12$</td>
 <td>The four matrix units: orthogonal, equal norm</td>
 </tr>
 <tr>
@@ -272,7 +272,7 @@ $$</p>
 <td>Hermitian conjugation; gives the dual $S^{*}=\tilde\Pi_+\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$S\tilde\Upsilon_1=\mathbb{B}\tilde\Pi_-$</td>
+<td>$S\hat\Upsilon_1=\mathbb{B}\tilde\Pi_-$</td>
 <td>The right multiplication mixing the two copies</td>
 </tr>
 </tbody>

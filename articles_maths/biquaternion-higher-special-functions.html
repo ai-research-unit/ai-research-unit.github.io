@@ -63,7 +63,7 @@ $$</p>
 <p>$$
 \tilde{Q} = Q_0 e_0 + \vec Q, \qquad \vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
 $$</p>
-<p>The complex norm of the vector part is $\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$, and the axis is $\hat{n} = \vec Q/\theta$ when $\theta \neq 0$.</p>
+<p>The complex norm of the vector part is $\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$, and the axis is $\hat u = \vec Q/\theta$ when $\theta \neq 0$.</p>
 <p>The higher special functions fall into two classes according to their definition:</p>
 <ul>
 <li><strong>Power-series functions.</strong> These are defined by a power series, and the same technique as for the exponential applies: the series is summed in closed form in the two regimes. The Bessel functions, the orthogonal polynomials, and the hypergeometric function belong to this class.</li>
@@ -82,28 +82,28 @@ $$</p>
 <p>However, there are two special cases in which the reduction works:</p>
 <ul>
 <li><strong>Pure biquaternions.</strong> If $Q_0 = 0$, then $\tilde{Q} = \vec Q$, and the powers of $\vec Q$ simplify as in the elementary case.</li>
-<li><strong>Biquaternions with a single direction.</strong> If $\tilde{Q} = Q_0 e_0 + \theta \hat{n}$ with $\hat{n}$ fixed, the powers of $\tilde{Q}$ can be computed by the binomial expansion, but the binomial coefficients are biquaternions in general.</li>
+<li><strong>Biquaternions with a single direction.</strong> If $\tilde{Q} = Q_0 e_0 + \theta \hat u$ with $\hat u$ fixed, the powers of $\tilde{Q}$ can be computed by the binomial expansion, but the binomial coefficients are biquaternions in general.</li>
 </ul>
 <p>We treat the pure case in detail, and we state the general case as an open problem.</p>
 <h3 id="the-pure-case-oscillatory-regime">The Pure Case, Oscillatory Regime</h3>
-<p>Let $\tilde{Q} = \vec Q = \theta \hat{n}$ with $\theta \neq 0$ and $\hat{n}^2 = -e_0$. The powers of $\vec Q$ satisfy</p>
+<p>Let $\tilde{Q} = \vec Q = \theta \hat u$ with $\theta \neq 0$ and $\hat u^2 = -e_0$. The powers of $\vec Q$ satisfy</p>
 <p>$$
-\vec Q^{2m+\nu} = \theta^{2m+\nu} \hat{n}^{2m+\nu}.
+\vec Q^{2m+\nu} = \theta^{2m+\nu} \hat u^{2m+\nu}.
 $$</p>
-<p>The powers of $\hat{n}$ alternate:</p>
+<p>The powers of $\hat u$ alternate:</p>
 <p>$$
-\hat{n}^{2k} = (-1)^k e_0, \qquad \hat{n}^{2k+1} = (-1)^k \hat{n}.
+\hat u^{2k} = (-1)^k e_0, \qquad \hat u^{2k+1} = (-1)^k \hat u.
 $$</p>
 <p>Substituting into the series and separating even and odd powers, we obtain</p>
 <p>$$
-J_\nu(\theta \hat{n}) = \left(\sum_{m=0}^{\infty} \frac{(-1)^m \theta^{2m+\nu}}{m! \, \Gamma(m+\nu+1) 2^{2m+\nu}} \hat{n}^{2m+\nu}\right).
+J_\nu(\theta \hat u) = \left(\sum_{m=0}^{\infty} \frac{(-1)^m \theta^{2m+\nu}}{m! \, \Gamma(m+\nu+1) 2^{2m+\nu}} \hat u^{2m+\nu}\right).
 $$</p>
-<p>The parity of $\hat{n}^{2m+\nu}$ depends on the parity of $\nu$. If $\nu$ is an integer, the sum splits into two cases: $\nu$ even gives only the identity $e_0$, and $\nu$ odd gives only $\hat{n}$. In general, for non-integer $\nu$, the series does not split into two separate series.</p>
+<p>The parity of $\hat u^{2m+\nu}$ depends on the parity of $\nu$. If $\nu$ is an integer, the sum splits into two cases: $\nu$ even gives only the identity $e_0$, and $\nu$ odd gives only $\hat u$. In general, for non-integer $\nu$, the series does not split into two separate series.</p>
 <p>For integer $\nu = n$, the result is</p>
 <p>$$
-J_n(\theta \hat{n}) = \begin{cases} (-1)^{n/2} I_n(\theta) \, e_0 & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta) \, \hat{n} & \text{if } n \text{ is odd}, \end{cases}
+J_n(\theta \hat u) = \begin{cases} (-1)^{n/2} I_n(\theta) \, e_0 & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta) \, \hat u & \text{if } n \text{ is odd}, \end{cases}
 $$</p>
-<p>where $I_n(\theta)$ on the right is the ordinary complex modified Bessel function. The verification is a direct substitution of the alternating powers of $\hat{n}$.</p>
+<p>where $I_n(\theta)$ on the right is the ordinary complex modified Bessel function. The verification is a direct substitution of the alternating powers of $\hat u$.</p>
 <h3 id="the-pure-case-nilpotent-regime">The Pure Case, Nilpotent Regime</h3>
 <p>Let $\tilde{Q} = \vec Q$ with $\theta = 0$ and $\vec Q \neq 0$. Then $\vec Q^2 = 0$, so $\vec Q^m = 0$ for all $m \geq 2$. The Bessel series truncates:</p>
 <p>$$
@@ -116,7 +116,7 @@ $$</p>
 <p>where for $n = 0$ the term is $e_0$ and for $n = 1$ the term is $\vec Q/2$. For non-integer $\nu$, the series reduces to the terms with $2m + \nu < 2$.</p>
 <h3 id="the-general-case">The General Case</h3>
 <p>For a general biquaternion $\tilde{Q} = Q_0 e_0 + \vec Q$ with both $Q_0 \neq 0$ and $\vec Q \neq 0$, the Bessel function does not reduce to a closed form in terms of elementary functions. The powers of $\tilde{Q}$ involve the non-commutative products of $Q_0 e_0$ and $\vec Q$, and the series is a genuine biquaternion series.</p>
-<p>The general case is open. The natural approach would be to use the Hamilton polar form $\tilde{Q} = e^{Q_0} \exp(\theta \hat{n})$ and to express $J_\nu(\tilde{Q})$ in terms of $J_\nu$ evaluated at the polar factors, but the functional equation for the Bessel function under multiplication does not hold in general, because the Bessel function is not multiplicative.</p>
+<p>The general case is open. The natural approach would be to use the Hamilton polar form $\tilde{Q} = e^{Q_0} \exp(\theta \hat u)$ and to express $J_\nu(\tilde{Q})$ in terms of $J_\nu$ evaluated at the polar factors, but the functional equation for the Bessel function under multiplication does not hold in general, because the Bessel function is not multiplicative.</p>
 <h3 id="modified-bessel-functions">Modified Bessel Functions</h3>
 <p>The <strong>modified Bessel function</strong> of the first kind is defined by</p>
 <p>$$
@@ -135,18 +135,18 @@ $$</p>
 $$</p>
 <p>with $P_0 = e_0$ and $P_1 = \tilde{Q}$.</p>
 <p>The Legendre polynomials are polynomials in $\tilde{Q}$ with real coefficients (the coefficients are the ordinary Legendre coefficients, embedded as real scalars). So they are defined for every $\tilde{Q} \in \mathbb{B}$ by the recurrence, and the recurrence involves only the multiplication and addition of biquaternions.</p>
-<p><strong>The pure oscillatory case.</strong> For $\tilde{Q} = \theta \hat{n}$ with $\theta \neq 0$ and $\hat{n}^2 = -e_0$, the recurrence gives</p>
+<p><strong>The pure oscillatory case.</strong> For $\tilde{Q} = \theta \hat u$ with $\theta \neq 0$ and $\hat u^2 = -e_0$, the recurrence gives</p>
 <p>$$
-P_n(\theta \hat{n}) = \begin{cases} P_n(i\theta) \, e_0 & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\theta) \, \hat{n} & \text{if } n \text{ is odd}, \end{cases}
+P_n(\theta \hat u) = \begin{cases} P_n(i\theta) \, e_0 & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\theta) \, \hat u & \text{if } n \text{ is odd}, \end{cases}
 $$</p>
-<p>where $P_n(i\theta)$ is the ordinary Legendre polynomial evaluated at the complex number $i\theta$. The generator $\hat{n}$ plays the role of the imaginary unit, so no reduction to $P_n(\theta)$ holds: only the even part of $P_n$ survives on $e_0$ and only the odd part on $\hat{n}$. For instance $P_2(\theta\hat{n}) = -(3\theta^2+1)/2$, whereas $P_2(\theta) = (3\theta^2-1)/2$. This follows from the recurrence and the alternating powers of $\hat{n}$.</p>
+<p>where $P_n(i\theta)$ is the ordinary Legendre polynomial evaluated at the complex number $i\theta$. The generator $\hat u$ plays the role of the imaginary unit, so no reduction to $P_n(\theta)$ holds: only the even part of $P_n$ survives on $e_0$ and only the odd part on $\hat u$. For instance $P_2(\theta\hat u) = -(3\theta^2+1)/2$, whereas $P_2(\theta) = (3\theta^2-1)/2$. This follows from the recurrence and the alternating powers of $\hat u$.</p>
 <p><strong>The pure nilpotent case.</strong> For $\tilde{Q} = \vec Q$ with $\vec Q^2 = 0$, the recurrence involves powers of $\vec Q$ that truncate. In particular, $P_n(\vec Q)$ is a polynomial in $\vec Q$ of degree at most one, because $\vec Q^2 = 0$. The explicit form is obtained from the recurrence.</p>
 <h3 id="chebyshev-polynomials">Chebyshev Polynomials</h3>
 <p>The <strong>Chebyshev polynomials of the first kind</strong> $T_n(\tilde{Q})$ are defined by the recurrence</p>
 <p>$$
 T_{n+1}(\tilde{Q}) = 2\tilde{Q} T_n(\tilde{Q}) - T_{n-1}(\tilde{Q}),
 $$</p>
-<p>with $T_0 = e_0$ and $T_1 = \tilde{Q}$. The same analysis applies: in the pure oscillatory regime, the polynomials reduce to the ordinary Chebyshev polynomials evaluated at $i\theta$ with $i$ replaced by $\hat{n}$ (so $T_n(\theta\hat{n})$ is $T_n(i\theta)e_0$ or $\frac{1}{i}T_n(i\theta)\hat{n}$ according to the parity of $n$); in the pure nilpotent regime, the polynomials truncate.</p>
+<p>with $T_0 = e_0$ and $T_1 = \tilde{Q}$. The same analysis applies: in the pure oscillatory regime, the polynomials reduce to the ordinary Chebyshev polynomials evaluated at $i\theta$ with $i$ replaced by $\hat u$ (so $T_n(\theta\hat u)$ is $T_n(i\theta)e_0$ or $\frac{1}{i}T_n(i\theta)\hat u$ according to the parity of $n$); in the pure nilpotent regime, the polynomials truncate.</p>
 <h3 id="hermite-polynomials">Hermite Polynomials</h3>
 <p>The <strong>Hermite polynomials</strong> $H_n(\tilde{Q})$ are defined by the recurrence</p>
 <p>$$
@@ -162,7 +162,7 @@ $$</p>
 <h3 id="the-general-principle-for-polynomials">The General Principle for Polynomials</h3>
 <p>The orthogonal polynomials are defined by three-term recurrences involving only the multiplication and addition of biquaternions. So they are defined for every $\tilde{Q} \in \mathbb{B}$, and they reduce to the ordinary polynomials in the two pure regimes:</p>
 <ul>
-<li>In the pure oscillatory regime, the polynomial $P_n(\theta \hat{n})$ is the ordinary polynomial evaluated at $i\theta$ with $i$ replaced by $\hat{n}$, i.e. $P_n(i\theta) e_0$ or $\frac{1}{i}P_n(i\theta)\hat{n}$ according to the parity of $n$.</li>
+<li>In the pure oscillatory regime, the polynomial $P_n(\theta \hat u)$ is the ordinary polynomial evaluated at $i\theta$ with $i$ replaced by $\hat u$, i.e. $P_n(i\theta) e_0$ or $\frac{1}{i}P_n(i\theta)\hat u$ according to the parity of $n$.</li>
 <li>In the pure nilpotent regime, the polynomial truncates to a polynomial of degree at most one in $\vec Q$.</li>
 </ul>
 <p>The general case (with both $Q_0 \neq 0$ and $\vec Q \neq 0$) does not reduce to a closed form, because the recurrence involves the non-commutative product $Q_0 \vec Q$, and the polynomial is a genuine biquaternion polynomial.</p>
@@ -174,9 +174,9 @@ $$</p>
 $$</p>
 <p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}$. The series converges for $\|\tilde{Q}\|_E < 1$.</p>
 <h3 id="the-pure-oscillatory-case">The Pure Oscillatory Case</h3>
-<p>For $\tilde{Q} = \theta \hat{n}$ with $\theta \neq 0$ and $\hat{n}^2 = -e_0$, the powers of $\tilde{Q}$ alternate. Separating even and odd powers,</p>
+<p>For $\tilde{Q} = \theta \hat u$ with $\theta \neq 0$ and $\hat u^2 = -e_0$, the powers of $\tilde{Q}$ alternate. Separating even and odd powers,</p>
 <p>$$
-{}_2F_1(a, b; c; \theta \hat{n}) = \left(\sum_{n=0}^{\infty} \frac{(a)_{2n} (b)_{2n}}{(c)_{2n}} \frac{(-1)^n \theta^{2n}}{(2n)!}\right) e_0 + \left(\sum_{n=0}^{\infty} \frac{(a)_{2n+1} (b)_{2n+1}}{(c)_{2n+1}} \frac{(-1)^n \theta^{2n+1}}{(2n+1)!}\right) \hat{n}.
+{}_2F_1(a, b; c; \theta \hat u) = \left(\sum_{n=0}^{\infty} \frac{(a)_{2n} (b)_{2n}}{(c)_{2n}} \frac{(-1)^n \theta^{2n}}{(2n)!}\right) e_0 + \left(\sum_{n=0}^{\infty} \frac{(a)_{2n+1} (b)_{2n+1}}{(c)_{2n+1}} \frac{(-1)^n \theta^{2n+1}}{(2n+1)!}\right) \hat u.
 $$</p>
 <p>The two series are not the ordinary hypergeometric function evaluated at $\theta$, because the Pochhammer symbols are evaluated at $2n$ and $2n+1$, not at $n$. They are the <strong>even and odd parts</strong> of the hypergeometric function, and they can be expressed in terms of ${}_2F_1$ with different parameters. The precise form is an open problem.</p>
 <h3 id="the-pure-nilpotent-case">The Pure Nilpotent Case</h3>
@@ -206,7 +206,7 @@ $$</p>
 <p>where $t$ is a positive real number, $t^{\tilde{Q}-1} = \exp((\tilde{Q}-1) \log t)$ is the biquaternion power, and $e^{-t}$ is the ordinary real exponential.</p>
 <h3 id="the-obstruction">The Obstruction</h3>
 <p>The integral is defined component-wise, but the integrand is a biquaternion-valued function of the real variable $t$, and the convergence of the integral depends on the growth of $t^{\tilde{Q}-1}$ as $t \to 0$ and as $t \to \infty$.</p>
-<p><strong>As $t \to 0$.</strong> The biquaternion power $t^{\tilde{Q}-1}$ involves $\log t$, which tends to $-\infty$. The behavior depends on the scalar part $Q_0$ and on the vector part $\vec Q$. In the oscillatory regime, the power is $t^{Q_0-1}(\cos((Q_0-1)\log t \cdot \hat{n}) + \cdots)$, which oscillates and may not converge. In the nilpotent regime, the power is $t^{Q_0-1}(e_0 + (Q_0-1)\log t \cdot \vec Q)$, which converges if $\operatorname{Re} Q_0 > 0$.</p>
+<p><strong>As $t \to 0$.</strong> The biquaternion power $t^{\tilde{Q}-1}$ involves $\log t$, which tends to $-\infty$. The behavior depends on the scalar part $Q_0$ and on the vector part $\vec Q$. In the oscillatory regime, the power is $t^{Q_0-1}(\cos((Q_0-1)\log t \cdot \hat u) + \cdots)$, which oscillates and may not converge. In the nilpotent regime, the power is $t^{Q_0-1}(e_0 + (Q_0-1)\log t \cdot \vec Q)$, which converges if $\operatorname{Re} Q_0 > 0$.</p>
 <p><strong>As $t \to \infty$.</strong> The factor $e^{-t}$ dominates, so the integral converges for all $\tilde{Q}$ with $\operatorname{Re} Q_0 < \infty$.</p>
 <p>So the integral converges in the nilpotent regime if $\operatorname{Re} Q_0 > 0$, and its convergence in the oscillatory regime is an open problem.</p>
 <h3 id="what-is-known">What Is Known</h3>
@@ -278,7 +278,7 @@ $$</p>
 \tilde{G}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
 $$</p>
 <p>It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.</p>
-<p>In the oscillatory regime, with $\theta$ real and $\hat{n}$ a root of $-1$, $\tilde{G}(\theta \hat{n}) = -\theta \hat{n} / (\theta^4 \|\hat{n}\|_E^4) = -\hat{n}/(\theta^3 \|\hat{n}\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\hat{n}\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.</p>
+<p>In the oscillatory regime, with $\theta$ real and $\hat u$ a root of $-1$, $\tilde{G}(\theta \hat u) = -\theta \hat u / (\theta^4 \|\hat u\|_E^4) = -\hat u/(\theta^3 \|\hat u\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\hat u\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.</p>
 <p>In the nilpotent regime, $\tilde{G}(\vec Q) = -\vec Q/\|\vec Q\|_E^4$, which is singular at the origin.</p>
 <h3 id="the-poisson-kernel">The Poisson Kernel</h3>
 <p>The <strong>Poisson kernel</strong> for the ball of radius $r$ is</p>
@@ -337,7 +337,7 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The higher special functions of a biquaternion variable fall into three classes.</p>
-<p><strong>Power-series functions.</strong> The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series can be summed in closed form in the two pure regimes. In the pure oscillatory regime, the functions are the ordinary functions evaluated at the complex argument $i\theta$ with $i$ replaced by the axis $\hat{n}$ of the component (for the Bessel function this is the modified function $I_n(\theta)$ times the parity factor $\hat{n}^n$). In the pure nilpotent regime, the series truncate to polynomials in $\vec Q$ of degree at most one. The general case is open.</p>
+<p><strong>Power-series functions.</strong> The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series can be summed in closed form in the two pure regimes. In the pure oscillatory regime, the functions are the ordinary functions evaluated at the complex argument $i\theta$ with $i$ replaced by the axis $\hat u$ of the component (for the Bessel function this is the modified function $I_n(\theta)$ times the parity factor $\hat u^n$). In the pure nilpotent regime, the series truncate to polynomials in $\vec Q$ of degree at most one. The general case is open.</p>
 <p><strong>Integral-defined functions.</strong> The gamma function and the zeta function are defined by integrals or series that require a notion of the biquaternion power for real arguments. The convergence and analyticity are established only in special cases, and the functional equations are open.</p>
 <p><strong>Functions from the analysis.</strong> The Cauchy kernel, the Poisson kernel, and the Green's function are the kernels and fundamental solutions of the differential operators of the analysis. Their construction is standard, but their explicit forms and properties in the general biquaternion case are open.</p>
 <p>The common thread is the complex norm $\theta$: the two regimes $\theta \neq 0$ and $\theta = 0$ determine the behavior of the powers of $\tilde{Q}$, and hence the behavior of every special function defined by a power series. The integral-defined functions depend on $\theta$ in a more complicated way, and their theory is less developed.</p>
@@ -364,12 +364,12 @@ $$</p>
 <td>Complex norm of the vector part</td>
 </tr>
 <tr>
-<td>$\hat{n} = \vec Q/\theta$</td>
+<td>$\hat u = \vec Q/\theta$</td>
 <td>Axis of the vector part, defined for $\theta \neq 0$</td>
 </tr>
 <tr>
 <td>Oscillatory regime</td>
-<td>$\theta \neq 0$: $Q_0 e_0 + \vec Q = Q_0 e_0 + \theta\hat{n}$, powers built on $\hat{n}^2 = -e_0$</td>
+<td>$\theta \neq 0$: $Q_0 e_0 + \vec Q = Q_0 e_0 + \theta\hat u$, powers built on $\hat u^2 = -e_0$</td>
 </tr>
 <tr>
 <td>Nilpotent regime</td>

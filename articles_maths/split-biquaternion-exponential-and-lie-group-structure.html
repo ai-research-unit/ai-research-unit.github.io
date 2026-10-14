@@ -87,7 +87,7 @@ $$</p>
 \ker\exp = \left\{ (\tilde Q_+, \tilde Q_-) : \exp\tilde Q_+ = \exp\tilde Q_- = 1 \right\} ,
 $$</p>
 <p>where for a quaternion $\tilde q$, $\exp\tilde q = 1$ if and only if $\tilde q = 0$ or $\tilde q = 2\pi k\,\hat u$ with $k \in \mathbb{Z}_{>0}$ and $\hat u$ a unit imaginary quaternion.</p>
-<p><strong>Proof.</strong> Surjectivity is componentwise: every nonzero quaternion has a polar form $\tilde q = r\hat{q}$ with $r > 0$ and $\hat q$ a unit quaternion, and $\hat q = \cos\theta + \sin\theta\,\hat u$ is $\exp(\theta\hat u)$, so $\exp(\log r + \theta\hat u) = \tilde q$; applying this in each half gives surjectivity onto the units. For the kernel, $\exp(a + \vec u) = 1$ gives $e^a\cos|\vec u| = 1$ and $e^a\sin|\vec u|\,\hat u = 0$; if $\vec u = 0$ then $e^a = 1$ and $a = 0$, while if $\vec u \neq 0$ then $\sin|\vec u| = 0$ forces $a = 0$ and $|\vec u| \in 2\pi\mathbb{Z}_{>0}$.</p>
+<p><strong>Proof.</strong> Surjectivity is componentwise: every nonzero quaternion has a polar form $\tilde q = r\tilde u$ with $r > 0$ and $\tilde u$ a unit quaternion, and $\tilde u = \cos\theta + \sin\theta\,\hat u$ is $\exp(\theta\hat u)$, so $\exp(\log r + \theta\hat u) = \tilde q$; applying this in each half gives surjectivity onto the units. For the kernel, $\exp(a + \vec u) = 1$ gives $e^a\cos|\vec u| = 1$ and $e^a\sin|\vec u|\,\hat u = 0$; if $\vec u = 0$ then $e^a = 1$ and $a = 0$, while if $\vec u \neq 0$ then $\sin|\vec u| = 0$ forces $a = 0$ and $|\vec u| \in 2\pi\mathbb{Z}_{>0}$.</p>
 <p>The kernel is therefore a union of a point and countably many two-spheres in each half, and the exponential fails to be injective in the same manner as the quaternion exponential.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Theorem.</strong> Under the splitting, the group of units is</p>
@@ -114,7 +114,7 @@ $$</p>
 <h2 id="polar-and-exponential-parametrisation">Polar and Exponential Parametrisation</h2>
 <p><strong>Theorem.</strong> Every nonzero $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$ has a componentwise polar form</p>
 <p>$$
-\tilde{Q} = r_+ \hat{q}_+ \tilde\Pi_1 + r_- \hat{q}_- \tilde\Pi_2 , \qquad r_\pm = |\tilde{Q}_\pm| > 0 , \ \ \hat{q}_\pm \in S^3 ,
+\tilde{Q} = r_+ \tilde u_+ \tilde\Pi_1 + r_- \tilde u_- \tilde\Pi_2 , \qquad r_\pm = |\tilde{Q}_\pm| > 0 , \ \ \tilde u_\pm \in S^3 ,
 $$</p>
 <p>and every unit has an exponential parametrisation $\tilde{Q} = \exp(\tilde P)$ with $\tilde P = (\tilde P_+, \tilde P_-)$ and $\tilde P_\pm$ in the quaternion logarithm of $\tilde{Q}_\pm$.</p>
 <p><strong>Proof.</strong> Apply the polar form and the logarithm of a nonzero quaternion in each half.</p>
@@ -177,7 +177,7 @@ $$</p>
 <td>Pairs of quaternions $2\pi k\hat u$</td>
 </tr>
 <tr>
-<td>$\tilde{Q} = r_+\hat{q}_+ \tilde\Pi_1 + r_-\hat{q}_- \tilde\Pi_2$</td>
+<td>$\tilde{Q} = r_+\tilde u_+ \tilde\Pi_1 + r_-\tilde u_- \tilde\Pi_2$</td>
 <td>Componentwise polar form</td>
 </tr>
 </tbody>

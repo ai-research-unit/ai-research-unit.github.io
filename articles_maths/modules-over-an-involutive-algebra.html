@@ -61,7 +61,7 @@
 \sigma^{2}=\mathrm{id}, \qquad \sigma(ab)=\sigma(b)\,\sigma(a) \qquad (a,b \in A);
 $$</p>
 <p>the pair $(A,\sigma)$ is an <strong>involutive algebra</strong>.</p>
-<p>The definition, the elementary properties and the examples are those of <em>Involutive Algebras</em>; only the following are used. The involution fixes the unit, $\sigma(1)=1$; it preserves invertibility, $\sigma(a)^{-1}=\sigma(a^{-1})$, so it acts on $A^{\times}$; and it is an involution of the opposite algebra $A^{\mathrm{op}}$ as well, since for the opposite product $a \cdot_{\mathrm{op}} b=ba$ one has $\sigma(a \cdot_{\mathrm{op}} b)=\sigma(ba)=\sigma(a)\sigma(b)=\sigma(b) \cdot_{\mathrm{op}} \sigma(a)$.</p>
+<p>The definition, the elementary properties and the examples are those of <em>Involutive Algebras</em>; only the following are used. The involution fixes the unit, $\sigma(1)=1$; it preserves invertibility, $\sigma(a)^{-1}=\sigma(a^{-1})$, so it acts on $A^{\times}$; and it is an involution of the opposite algebra $A^{\mathrm{opp}}$ as well, since for the opposite product $a \cdot_{\mathrm{op}} b=ba$ one has $\sigma(a \cdot_{\mathrm{op}} b)=\sigma(ba)=\sigma(a)\sigma(b)=\sigma(b) \cdot_{\mathrm{op}} \sigma(a)$.</p>
 <h3 id="the-twisted-module">The twisted module</h3>
 <p><strong>Definition.</strong> Let $M$ be a left $A$-module. The <strong>twisted module</strong> $M^{\sigma}$ is the same additive group $M$ with the action</p>
 <p>$$
@@ -90,25 +90,25 @@ $$</p>
 <p>So the endomorphism ring cannot distinguish a module from its twist; the twist is invisible to the operators, and this is why an involution on the endomorphisms needs an extra structure, which is a pairing, supplied in the articles that follow.</p>
 <h3 id="the-regular-module">The regular module</h3>
 <p>For the regular module the induced involution is $\sigma$ itself.</p>
-<p><strong>Proposition.</strong> Under the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ of <em>Automorphisms of Modules over an Algebra</em>, the involution $\sigma$ of $A$ is an involution of $A^{\mathrm{op}}$, and the corresponding map on $\operatorname{End}_A({}_A A)$ carries the right multiplication $R_a$ to $R_{\sigma(a)}$.</p>
-<p><em>Proof.</em> $\sigma$ is an involution of $A^{\mathrm{op}}$ by the observations above, and the isomorphism $A^{\mathrm{op}}\to\operatorname{End}_A(A)$ sends $a$ to $R_a$, so it carries $\sigma$ to $R_a \mapsto R_{\sigma(a)}$.</p>
+<p><strong>Proposition.</strong> Under the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{opp}}$ of <em>Automorphisms of Modules over an Algebra</em>, the involution $\sigma$ of $A$ is an involution of $A^{\mathrm{opp}}$, and the corresponding map on $\operatorname{End}_A({}_A A)$ carries the right multiplication $R_a$ to $R_{\sigma(a)}$.</p>
+<p><em>Proof.</em> $\sigma$ is an involution of $A^{\mathrm{opp}}$ by the observations above, and the isomorphism $A^{\mathrm{opp}}\to\operatorname{End}_A(A)$ sends $a$ to $R_a$, so it carries $\sigma$ to $R_a \mapsto R_{\sigma(a)}$.</p>
 <p>This is the base case: the involution of the algebra is the involution induced on the endomorphism ring of the regular module.</p>
 <h3 id="the-free-module">The free module</h3>
 <p>For a free module the induced involution is $\sigma$ applied entrywise and combined with transposition.</p>
-<p><strong>Theorem.</strong> Let $n \geq 1$ and identify $\operatorname{End}_A({}_A A^n)\cong M_n(A^{\mathrm{op}})$ by the right multiplication $f(v)=vX$ of <em>The Endomorphism Algebra of a Module</em>. Then the map</p>
+<p><strong>Theorem.</strong> Let $n \geq 1$ and identify $\operatorname{End}_A({}_A A^n)\cong M_n(A^{\mathrm{opp}})$ by the right multiplication $f(v)=vX$ of <em>The Endomorphism Algebra of a Module</em>. Then the map</p>
 <p>$$
-\Theta : M_n(A^{\mathrm{op}}) \to M_n(A^{\mathrm{op}}), \qquad \Theta(X)_{ij}=\sigma(X_{ji}),
+\Theta : M_n(A^{\mathrm{opp}}) \to M_n(A^{\mathrm{opp}}), \qquad \Theta(X)_{ij}=\sigma(X_{ji}),
 $$</p>
-<p>is an involution of the $R$-algebra $M_n(A^{\mathrm{op}})$, and it is the unique map that applies $\sigma$ to each entry and transposes the matrix.</p>
+<p>is an involution of the $R$-algebra $M_n(A^{\mathrm{opp}})$, and it is the unique map that applies $\sigma$ to each entry and transposes the matrix.</p>
 <p><em>Proof.</em> Additivity and $R$-linearity are entrywise. For the product, using $(XY)_{ij}=\sum_k X_{ik} \cdot_{\mathrm{op}} Y_{kj}=\sum_k Y_{kj}X_{ik}$, one has</p>
 <p>$$
 \Theta(XY)_{ij}=\sigma\!\left(\sum_k Y_{ki}X_{jk}\right)=\sum_k \sigma(X_{jk})\sigma(Y_{ki})=\sum_k \Theta(X)_{kj}\cdot_{\mathrm{op}}\Theta(Y)_{ik}=(\Theta(Y)\Theta(X))_{ij},
 $$</p>
 <p>so $\Theta(XY)=\Theta(Y)\Theta(X)$: it is an anti-automorphism. It has order two because $\Theta^{2}(X)_{ij}=\sigma(\Theta(X)_{ji})=\sigma(\sigma(X_{ij}))=X_{ij}$. Hence $\Theta$ is an involution. Uniqueness is clear from the formula.</p>
 <p><strong>Corollary.</strong> The involution of the algebra $A$ induces an involution of the endomorphism ring of every free module, and on the regular module this is $\sigma$ itself, recovering the proposition above at $n=1$.</p>
-<p><em>Proof.</em> $n=1$ gives $\Theta(X)_{11}=\sigma(X_{11})$ on $M_1(A^{\mathrm{op}})=A^{\mathrm{op}}$, which is $\sigma$.</p>
+<p><em>Proof.</em> $n=1$ gives $\Theta(X)_{11}=\sigma(X_{11})$ on $M_1(A^{\mathrm{opp}})=A^{\mathrm{opp}}$, which is $\sigma$.</p>
 <h3 id="dependence-on-the-basis">Dependence on the basis</h3>
-<p><strong>Proposition.</strong> The involution $\Theta$ of a free module depends on the chosen basis: if $P \in M_n(A^{\mathrm{op}})$ is the change-of-basis matrix from the standard basis to another basis, the induced involution for the second basis is $X \mapsto P\,\Theta(P^{-1}XP)\,P^{-1}$, an involution conjugate to $\Theta$ by the inner automorphism of $P$.</p>
+<p><strong>Proposition.</strong> The involution $\Theta$ of a free module depends on the chosen basis: if $P \in M_n(A^{\mathrm{opp}})$ is the change-of-basis matrix from the standard basis to another basis, the induced involution for the second basis is $X \mapsto P\,\Theta(P^{-1}XP)\,P^{-1}$, an involution conjugate to $\Theta$ by the inner automorphism of $P$.</p>
 <p><em>Proof.</em> Change of basis is an isomorphism of $\operatorname{End}_A(A^n)$ sending an endomorphism of matrix $X$ to $P^{-1}XP$ for a suitable $P$, and conjugation transports a map on the matrix ring; carrying $\Theta$ through gives the displayed formula, which is an involution because conjugation by $P$ is an algebra automorphism.</p>
 <p>Thus for a free module the involution induced by $\sigma$ is determined up to conjugation by a change of basis; the canonical choice is the one that applies $\sigma$ entrywise and transposes.</p>
 <h2 id="self-conjugate-modules">Self-Conjugate Modules</h2>
@@ -124,13 +124,13 @@ $$</p>
 <h3 id="what-a-pairing-will-supply">What a pairing will supply</h3>
 <p>The next article defines the <strong>adjoint</strong> of a homomorphism with respect to a pairing and uses it to build the involution on the endomorphism ring of a module; the one after that studies that involution, its self-adjoint part and its unitary group. The free-module involution $\Theta$ of this article is the model these constructions generalise, and the basis-independent description of $\Theta$ is exactly the adjoint with respect to the standard pairing on $A^n$.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>(a) The transpose involution.</strong> Let $A=M_n(R)$ with $\sigma(X)=X^{\mathrm{T}}$. For the regular module, $\operatorname{End}_A(A)\cong A^{\mathrm{op}}$, and $\sigma$ is the transpose on $A^{\mathrm{op}}$; for the free module $A^m$ the induced involution $\Theta$ is the usual transpose combined with $\sigma$ entrywise.</p>
+<p><strong>(a) The transpose involution.</strong> Let $A=M_n(R)$ with $\sigma(X)=X^{\mathrm{T}}$. For the regular module, $\operatorname{End}_A(A)\cong A^{\mathrm{opp}}$, and $\sigma$ is the transpose on $A^{\mathrm{opp}}$; for the free module $A^m$ the induced involution $\Theta$ is the usual transpose combined with $\sigma$ entrywise.</p>
 <p><strong>(b) The trivial involution.</strong> If $A$ is commutative and $\sigma=\mathrm{id}$, then $M^{\sigma}=M$ for every module and $\Theta$ is the transpose of matrices over $A$. The twisting functor is the identity.</p>
-<p><strong>(c) The quaternions.</strong> For $A=\mathbb{H}$ and $\sigma$ the quaternion conjugation, the regular module has $\operatorname{End}_A(\mathbb{H})\cong\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$ with involution $\sigma$, and the free module $\mathbb{H}^m$ has the conjugate-transpose involution on matrices over $\mathbb{H}^{\mathrm{op}}$.</p>
-<p><strong>(d) Matrix algebras with the conjugate transpose.</strong> Let $A=M_n(\mathbb{C})$ with $\sigma(X)=\overline{X}^{\mathrm{T}}$. Then $\sigma$ is an involution of $A$ and of $A^{\mathrm{op}}$; the induced involution on the endomorphism ring of the regular module is the conjugate transpose, and the unitary group of the algebra, defined in the involutive-algebra theory, is the classical unitary group $U(n)$.</p>
-<p><strong>(e) The biquaternions.</strong> For $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the involution $\sigma$ obtained from conjugation on $\mathbb{C}$ and on $\mathbb{H}$, the induced involution on $\operatorname{End}_{\mathbb{B}}(\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ is $\sigma$, and the unitary elements of $\mathbb{B}$ are the units fixed by the corresponding adjoint of the regular module.</p>
+<p><strong>(c) The quaternions.</strong> For $A=\mathbb{H}$ and $\sigma$ the quaternion conjugation, the regular module has $\operatorname{End}_A(\mathbb{H})\cong\mathbb{H}^{\mathrm{opp}}\cong\mathbb{H}$ with involution $\sigma$, and the free module $\mathbb{H}^m$ has the conjugate-transpose involution on matrices over $\mathbb{H}^{\mathrm{opp}}$.</p>
+<p><strong>(d) Matrix algebras with the conjugate transpose.</strong> Let $A=M_n(\mathbb{C})$ with $\sigma(X)=\overline{X}^{\mathrm{T}}$. Then $\sigma$ is an involution of $A$ and of $A^{\mathrm{opp}}$; the induced involution on the endomorphism ring of the regular module is the conjugate transpose, and the unitary group of the algebra, defined in the involutive-algebra theory, is the classical unitary group $U(n)$.</p>
+<p><strong>(e) The biquaternions.</strong> For $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the involution $\sigma$ obtained from conjugation on $\mathbb{C}$ and on $\mathbb{H}$, the induced involution on $\operatorname{End}_{\mathbb{B}}(\mathbb{B})\cong\mathbb{B}^{\mathrm{opp}}$ is $\sigma$, and the unitary elements of $\mathbb{B}$ are the units fixed by the corresponding adjoint of the regular module.</p>
 <h2 id="summary">Summary</h2>
-<p>An algebra with an involution $\sigma$ acts on the module category by twisting, $a \cdot_{\sigma} m=\sigma(a)m$; the twisted module $M^{\sigma}$ is a left $A$-module, twisting is an endofunctor that is an involution up to the identity, and it preserves and reflects submodules, quotients, direct sums, freeness, finite generation and simplicity. The endomorphism ring of $M$ is canonically isomorphic to that of $M^{\sigma}$ by the identity on maps, so the twisting alone does not produce an involution on the operators. The involution of the algebra is induced on the endomorphism ring of the regular module as $\sigma$ itself, under $\operatorname{End}_A(A)\cong A^{\mathrm{op}}$, and on the free module $A^n$ as the transpose-entrywise involution $\Theta(X)_{ij}=\sigma(X_{ji})$ on $M_n(A^{\mathrm{op}})$; this $\Theta$ is determined up to conjugation by a change of basis, and it is the model for the general construction. A general module carries an induced involution only when a pairing is present, and the self-conjugacy of a module produces merely an inner automorphism, which does not see the algebra involution; the pairing, the adjoint and the involution it induces on the endomorphism ring are the subjects of the two articles that follow.</p>
+<p>An algebra with an involution $\sigma$ acts on the module category by twisting, $a \cdot_{\sigma} m=\sigma(a)m$; the twisted module $M^{\sigma}$ is a left $A$-module, twisting is an endofunctor that is an involution up to the identity, and it preserves and reflects submodules, quotients, direct sums, freeness, finite generation and simplicity. The endomorphism ring of $M$ is canonically isomorphic to that of $M^{\sigma}$ by the identity on maps, so the twisting alone does not produce an involution on the operators. The involution of the algebra is induced on the endomorphism ring of the regular module as $\sigma$ itself, under $\operatorname{End}_A(A)\cong A^{\mathrm{opp}}$, and on the free module $A^n$ as the transpose-entrywise involution $\Theta(X)_{ij}=\sigma(X_{ji})$ on $M_n(A^{\mathrm{opp}})$; this $\Theta$ is determined up to conjugation by a change of basis, and it is the model for the general construction. A general module carries an induced involution only when a pairing is present, and the self-conjugacy of a module produces merely an inner automorphism, which does not see the algebra involution; the pairing, the adjoint and the involution it induces on the endomorphism ring are the subjects of the two articles that follow.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -153,7 +153,7 @@ $$</p>
 <td>involution of $A$: $\sigma^{2}=\mathrm{id}$, $\sigma(ab)=\sigma(b)\sigma(a)$</td>
 </tr>
 <tr>
-<td>$A^{\mathrm{op}}$</td>
+<td>$A^{\mathrm{opp}}$</td>
 <td>opposite algebra, product $a \cdot_{\mathrm{op}} b=ba$</td>
 </tr>
 <tr>
@@ -174,7 +174,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Theta(X)_{ij}=\sigma(X_{ji})$</td>
-<td>induced involution on $M_n(A^{\mathrm{op}})$</td>
+<td>induced involution on $M_n(A^{\mathrm{opp}})$</td>
 </tr>
 <tr>
 <td>$R_a$</td>

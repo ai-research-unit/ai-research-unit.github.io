@@ -129,19 +129,19 @@ $$</p>
 \tilde{Q} \;\longmapsto\; \tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} .
 $$</p>
 <p>The set of such rotors is the group $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group, and the action preserves $\mathbb{M}_-$ and the biquaternion norm: if $\tilde{Q} \in \mathbb{M}_-$ then $\tilde{Q}' \in \mathbb{M}_-$, and $N(\tilde{Q}') = N(\tilde{Q})$. The group lives in the full algebra $\mathbb{B}$ — neither sector is closed under multiplication — and it acts on the material sector, which is a module rather than an algebra.</p>
-<p>The different Lorentz transformations have rotors in different subspaces. A <strong>pure boost</strong> along the unit direction $\hat u$ has the rotor</p>
+<p>The different Lorentz transformations have rotors in different subspaces. A <strong>pure boost</strong> along the unit direction $\hat u_{\mathrm b}$ has the rotor</p>
 <p>$$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u \in \mathbb{M}_+ ,
+\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b} \in \mathbb{M}_+ ,
 $$</p>
-<p>which is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and hence acts by $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$. The rapidity $\psi$ is related to the frame velocity $V = V\hat u$ by</p>
+<p>which is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and hence acts by $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$. The rapidity $\psi$ is related to the frame velocity $V = V\hat u_{\mathrm b}$ by</p>
 <p>$$
 \cosh\psi = \gamma_V, \qquad \sinh\psi = \gamma_V\frac{V}{c}, \qquad \tanh\psi = \frac{V}{c}, \qquad \gamma_V = \frac{1}{\sqrt{1 - V^2/c^2}} .
 $$</p>
 <p>A <strong>pure spatial rotation</strong> has a rotor in the real-quaternion subalgebra,</p>
 <p>$$
-R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat n \in \mathbb{H}_{\mathbb{B}} ,
+R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat u_{\mathrm r} \in \mathbb{H}_{\mathbb{B}} ,
 $$</p>
-<p>which is unitary, $R^{-1} = \overline{R} = R^{*}$, and acts on the vector part by $R\vec xR^{-1}$, rotating $\vec x$ by the angle $\theta$ about the axis $\hat n$. A general Lorentz transformation has its rotor in the full algebra. The classification is that of the companion article <em>The Lorentz Transformation as a Biquaternionic Rotation</em>, and the action of the real-quaternion rotors on the vector part is the same adjoint action that the companion article <em>The Reflection and the Rotation in Biquaternionic Form</em> develops.</p>
+<p>which is unitary, $R^{-1} = \overline{R} = R^{*}$, and acts on the vector part by $R\vec xR^{-1}$, rotating $\vec x$ by the angle $\theta$ about the axis $\hat u_{\mathrm r}$. A general Lorentz transformation has its rotor in the full algebra. The classification is that of the companion article <em>The Lorentz Transformation as a Biquaternionic Rotation</em>, and the action of the real-quaternion rotors on the vector part is the same adjoint action that the companion article <em>The Reflection and the Rotation in Biquaternionic Form</em> develops.</p>
 <h3 id="the-relativity-principle">The Relativity Principle</h3>
 <p>The principle of relativity is the statement that the free-particle equation is form-invariant under the rotor action. If $\tilde{Q}(\tau)$ is a straight worldline in one inertial frame, then $\tilde{Q}'(\tau) = \tilde{\Lambda}\tilde{Q}(\tau)\tilde{\Lambda}^{*}$ is a straight worldline in another, because the action is linear and commutes with the derivative with respect to $\tau$:</p>
 <p>$$
@@ -156,21 +156,21 @@ $$</p>
 <h2 id="the-non-relativistic-limit-the-boost-becomes-a-shear">The Non-Relativistic Limit: the Boost Becomes a Shear</h2>
 <p>The free particle has a non-relativistic limit, and its transformation law has one too. The limit is instructive because the transformation does <strong>not</strong> remain a rotor conjugation.</p>
 <h3 id="expanding-the-boost-rotor">Expanding the Boost Rotor</h3>
-<p>Let the frame move with small velocity $V \ll c$ along $\hat u$, so that the rapidity is small, $\psi \approx V/c$. Expanding the boost rotor,</p>
+<p>Let the frame move with small velocity $V \ll c$ along $\hat u_{\mathrm b}$, so that the rapidity is small, $\psi \approx V/c$. Expanding the boost rotor,</p>
 <p>$$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u = e_0 + \frac{iV}{2c}\,\hat u + O\!\left(\frac{V^2}{c^2}\right) .
+\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b} = e_0 + \frac{iV}{2c}\,\hat u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
 $$</p>
 <p>To first order in $V/c$ the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so the action on a material vector is $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$, and hence</p>
 <p>$$
-\tilde{Q}' = \tilde{Q} + \frac{iV}{2c}\left(\hat u\tilde{Q} + \tilde{Q}\hat u\right) + O\!\left(\frac{V^2}{c^2}\right) .
+\tilde{Q}' = \tilde{Q} + \frac{iV}{2c}\left(\hat u_{\mathrm b}\tilde{Q} + \tilde{Q}\hat u_{\mathrm b}\right) + O\!\left(\frac{V^2}{c^2}\right) .
 $$</p>
-<p>Now let $\tilde{Q} = ic\,t\,e_0 + \vec x$. The scalar $ic\,t\,e_0$ is central, so $\hat u$ commutes with it; the real vector $\vec x$ is a pure quaternion, so $\hat u$ anticommutes with it. Therefore</p>
+<p>Now let $\tilde{Q} = ic\,t\,e_0 + \vec x$. The scalar $ic\,t\,e_0$ is central, so $\hat u_{\mathrm b}$ commutes with it; the real vector $\vec x$ is a pure quaternion, so $\hat u_{\mathrm b}$ anticommutes with it. Therefore</p>
 <p>$$
-\hat u\tilde{Q} + \tilde{Q}\hat u = 2ic\,t\,\hat u + \left(\hat u\vec x + \vec x\hat u\right) = 2ic\,t\,\hat u ,
+\hat u_{\mathrm b}\tilde{Q} + \tilde{Q}\hat u_{\mathrm b} = 2ic\,t\,\hat u_{\mathrm b} + \left(\hat u_{\mathrm b}\vec x + \vec x\hat u_{\mathrm b}\right) = 2ic\,t\,\hat u_{\mathrm b} ,
 $$</p>
 <p>and the correction is</p>
 <p>$$
-\tilde{Q}' = \tilde{Q} + \frac{iV}{2c}\cdot 2ic\,t\,\hat u = \tilde{Q} - Vt\,\hat u .
+\tilde{Q}' = \tilde{Q} + \frac{iV}{2c}\cdot 2ic\,t\,\hat u_{\mathrm b} = \tilde{Q} - Vt\,\hat u_{\mathrm b} .
 $$</p>
 <p>Reading off the components,</p>
 <p>$$
@@ -180,7 +180,7 @@ $$</p>
 <p>$$
 c\,t' = \cosh\psi\;c\,t - \sinh\psi\;x_\parallel, \qquad x_\parallel' = \cosh\psi\;x_\parallel - \sinh\psi\;c\,t, \qquad \vec x_\perp' = \vec x_\perp ,
 $$</p>
-<p>where $x_\parallel$ is the component along $\hat u$ and $\vec x_\perp$ the perpendicular part; the Galilean form is its $V/c \to 0$ limit.</p>
+<p>where $x_\parallel$ is the component along $\hat u_{\mathrm b}$ and $\vec x_\perp$ the perpendicular part; the Galilean form is its $V/c \to 0$ limit.</p>
 <h3 id="the-shear-is-not-a-rotation">The Shear Is Not a Rotation</h3>
 <p>The striking feature of the result is not the relation itself but what it is not. The Galilean boost is the limit of a family of rotor conjugations, but the limit is not a rotor conjugation, and this can be checked independently.</p>
 <p>A rotor conjugation preserves the biquaternion norm, $N(\tilde{Q}') = N(\tilde{Q})$. The Galilean shear does not:</p>
@@ -188,7 +188,7 @@ $$</p>
 N(\tilde{Q}') = (ic\,t)^2 + (\vec x - \vec Vt)^2 = N(\tilde{Q}) - 2t\,\vec V\cdot\vec x + t^2\vec V^2 .
 $$</p>
 <p>The change $2t\,\vec V\cdot\vec x - t^2\vec V^2$ is nonzero for a generic worldline, so no unit-norm biquaternion implements the map. Equivalently, the shear leaves the scalar direction $ie_0$ of the material sector untouched while changing the vector directions, which is exactly what a rotation in a Minkowski plane does not do. The Galilean boost is a <strong>shear of the material sector along its scalar direction</strong>, and the scalar direction is the one the shear fixes.</p>
-<p>This is the algebraic form of a familiar statement. The Galilean group is the <strong>contraction</strong> $c \to \infty$ of the Poincaré group, not a subgroup of it: as the invariant speed recedes, the boosts flatten into shears, the timelike and spacelike distinctions lose their sharpness, and the light cone opens into the family of simultaneity hyperplanes. In the biquaternion language the contraction is visible as the degeneration of the rotor condition: the boost rotors approach the elementary shears $e_0 + \tfrac{iV}{2c}\hat u$, which have unit norm to first order in $V/c$ but not to second, and which act on $\mathbb{M}_-$ without preserving its biquaternion norm.</p>
+<p>This is the algebraic form of a familiar statement. The Galilean group is the <strong>contraction</strong> $c \to \infty$ of the Poincaré group, not a subgroup of it: as the invariant speed recedes, the boosts flatten into shears, the timelike and spacelike distinctions lose their sharpness, and the light cone opens into the family of simultaneity hyperplanes. In the biquaternion language the contraction is visible as the degeneration of the rotor condition: the boost rotors approach the elementary shears $e_0 + \tfrac{iV}{2c}\hat u_{\mathrm b}$, which have unit norm to first order in $V/c$ but not to second, and which act on $\mathbb{M}_-$ without preserving its biquaternion norm.</p>
 <h3 id="what-survives-the-contraction">What Survives the Contraction</h3>
 <p>Three structures survive intact, and it is worth naming them because they are the ones the non-relativistic articles use.</p>
 <p><strong>The spatial rotation subgroup survives exactly.</strong> A real-quaternion rotor is unitary and rotationally acts on the real vector part alone; it is unchanged by the contraction, and it remains a genuine conjugation in the limit. The rotations are the compact part of both groups, and the contraction touches only the non-compact part.</p>
@@ -248,7 +248,7 @@ $$</p>
 </tr>
 <tr>
 <td>Boost</td>
-<td>$\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$</td>
+<td>$\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$</td>
 <td>$\mathbb{M}_+$</td>
 </tr>
 <tr>
@@ -271,7 +271,7 @@ $$</p>
 $$</p>
 <p>with four-velocity $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_0 + \vec p$, both in $\mathbb{M}_-$, and constrained by the mass-shell relation $\tilde{P}\overline{\tilde{P}} = -m^2c^2$. The free particle satisfies $\tilde{F} = d\tilde{P}/d\tau = 0$, which is Newton's first law.</p>
 <p>Inertial frames are the unit-norm biquaternions $\tilde{\Lambda} \in SL(2,\mathbb{C})$, acting on the material sector by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. The action is linear, preserves $\mathbb{M}_-$ and preserves the biquaternion norm, and it commutes with the proper-time derivative, so the free-particle equation is form-invariant: this is the relativity principle. Compositions of frames compose as rotor products.</p>
-<p>The non-relativistic limit of a boost is a <strong>shear</strong>, not a rotation. Expanding the boost rotor to first order in $V/c$ gives $\tilde{\Lambda} = e_0 + \tfrac{iV}{2c}\hat u$, and acting on $\tilde{Q} = ict\,e_0 + \vec x$ produces the Galilean transformation $\vec x' = \vec x - \vec Vt$, $t' = t$. The shear does not preserve the biquaternion norm, $N(\tilde{Q}') = N(\tilde{Q}) - 2t\,\vec V\cdot\vec x + t^2\vec V^2$, so no unit-norm biquaternion implements it. The Galilean group is therefore a contraction of the rotor group, not a subgroup: the rotations survive exactly, the time coordinate becomes an inert scalar parameter, and the centrality of $i$ is untouched.</p>
+<p>The non-relativistic limit of a boost is a <strong>shear</strong>, not a rotation. Expanding the boost rotor to first order in $V/c$ gives $\tilde{\Lambda} = e_0 + \tfrac{iV}{2c}\hat u_{\mathrm b}$, and acting on $\tilde{Q} = ict\,e_0 + \vec x$ produces the Galilean transformation $\vec x' = \vec x - \vec Vt$, $t' = t$. The shear does not preserve the biquaternion norm, $N(\tilde{Q}') = N(\tilde{Q}) - 2t\,\vec V\cdot\vec x + t^2\vec V^2$, so no unit-norm biquaternion implements it. The Galilean group is therefore a contraction of the rotor group, not a subgroup: the rotations survive exactly, the time coordinate becomes an inert scalar parameter, and the centrality of $i$ is untouched.</p>
 <p>The free particle occupies only the material sector, carries no internal vector, and is the spin-zero benchmark for the subcategory: its effects are those of a structureless point particle, with no intrinsic angular momentum and hence no intrinsic magnetism.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -339,11 +339,11 @@ $$</p>
 <td>Rotor conjugation (frame change)</td>
 </tr>
 <tr>
-<td>$\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$</td>
+<td>$\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$</td>
 <td>Boost rotor, in $\mathbb{M}_+$; $\tanh\psi = V/c$</td>
 </tr>
 <tr>
-<td>$R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat n$</td>
+<td>$R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat u_{\mathrm r}$</td>
 <td>Rotation rotor, in $\mathbb{H}_{\mathbb{B}}$</td>
 </tr>
 <tr>

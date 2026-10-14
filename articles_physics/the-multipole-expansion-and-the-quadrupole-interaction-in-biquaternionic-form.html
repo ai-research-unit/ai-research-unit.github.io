@@ -77,7 +77,7 @@ $$</p>
 <p>$$
 \Phi(\vec x) = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(\vec x')}{|\vec x - \vec x'|}\,d^3x' .
 $$</p>
-<p>The kernel is expanded by the standard Legendre expansion. Writing $r = |\vec x|$, $r' = |\vec x'|$, $\hat n = \vec x/r$, $\hat n' = \vec x'/r'$, and $\cos\gamma = \hat n\cdot\hat n'$, the expansion is</p>
+<p>The kernel is expanded by the standard Legendre expansion. Writing $r = |\vec x|$, $r' = |\vec x'|$, $\hat u = \vec x/r$, $\hat u' = \vec x'/r'$, and $\cos\gamma = \hat u\cdot\hat u'$, the expansion is</p>
 <p>$$
 \frac{1}{|\vec x - \vec x'|} = \sum_{l=0}^{\infty}\frac{r_<^{\,l}}{r_>^{\,l+1}}\,P_l(\cos\gamma),
 $$</p>
@@ -105,7 +105,7 @@ $$</p>
 $$</p>
 <p>and the dipole potential is</p>
 <p>$$
-\Phi_{dip}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{\vec p\cdot\hat n}{r^2}.
+\Phi_{dip}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{\vec p\cdot\hat u}{r^2}.
 $$</p>
 <p><strong>Quadrupole ($l = 2$).</strong> The five independent moments are those of the <strong>quadrupole tensor</strong></p>
 <p>$$
@@ -113,9 +113,9 @@ Q_{ij} = \int \rho(\vec x')\left(3x_i'x_j' - r'^{\,2}\delta_{ij}\right)d^3x' ,
 $$</p>
 <p>which is symmetric, $Q_{ij} = Q_{ji}$, and traceless, $Q_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The quadrupole potential is</p>
 <p>$$
-\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,Q_{ij}\,\hat{n}_i\hat{n}_j .
+\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,Q_{ij}\,\hat u_i\hat u_j .
 $$</p>
-<p>The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $Q_{ij}$ would contribute $\hat{n}_i\hat{n}_i = 1$ and hence a monopole-like $1/r$ tail, which is already accounted for by $q$; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}Q_{ij}\hat{n}_i\hat{n}_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r'^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.</p>
+<p>The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $Q_{ij}$ would contribute $\hat u_i\hat u_i = 1$ and hence a monopole-like $1/r$ tail, which is already accounted for by $q$; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}Q_{ij}\hat u_i\hat u_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r'^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.</p>
 <h3 id="the-tower-and-its-ordering">The Tower and Its Ordering</h3>
 <p>The series is organized by increasing $l$. The potential falls off as $r^{-(l+1)}$, so at large distances each order is smaller than the one before by a factor of the source size over the distance, and the series is an expansion in that ratio. There is no largest $l$: the tower is <strong>infinite</strong>, and its infinity is a property of the angular structure of the fields, as the final article of this sequence examines.</p>
 <h2 id="the-multipole-tower-and-the-rotation-group">The Multipole Tower and the Rotation Group</h2>
@@ -176,11 +176,11 @@ $$</p>
 \tilde{p} = p_1e_1 + p_2e_2 + p_3e_3 ,
 $$</p>
 <p>a pure real quaternion with $\tilde{p}^{\natural} = -\tilde{p}$. Its representative lies in the vector part, which is exactly the $D^{(1)}$ representation, so the dipole is the first non-trivial multipole that is an <strong>element of the algebra</strong>. Two consequences follow.</p>
-<p><strong>The dipole potential.</strong> With the unit radial quaternion $\hat n = (x_1e_1 + x_2e_2 + x_3e_3)/r$, satisfying $\hat n^2 = -e_0$, the dipole potential is</p>
+<p><strong>The dipole potential.</strong> With the unit radial quaternion $\hat u = (x_1e_1 + x_2e_2 + x_3e_3)/r$, satisfying $\hat u^2 = -e_0$, the dipole potential is</p>
 <p>$$
-\Phi_{dip} = -\frac{1}{4\pi\epsilon_0}\,\frac{\mathrm{Sc}\!\left(\tilde{p}\,\hat n\right)}{r^2},
+\Phi_{dip} = -\frac{1}{4\pi\epsilon_0}\,\frac{\mathrm{Sc}\!\left(\tilde{p}\,\hat u\right)}{r^2},
 $$</p>
-<p>because $\mathrm{Sc}(\tilde{p}\hat n) = -\vec p\cdot\hat n$ for pure real vectors.</p>
+<p>because $\mathrm{Sc}(\tilde{p}\hat u) = -\vec p\cdot\hat u$ for pure real vectors.</p>
 <p><strong>The dipole interaction.</strong> The energy of a dipole in an external electric field is $-\vec p\cdot\vec E$, and this is an algebraic pairing of two vector elements. For pure real vectors $\tilde{p}, \tilde{\vec E}$ one has $\tilde{p}\tilde{\vec E} = -\vec p\cdot\vec E + \vec p\times\vec E$, so</p>
 <p>$$
 -\vec p\cdot\vec E\,e_0 = \mathrm{Sc}\!\left(\tilde{p}\tilde{\vec E}\right)e_0 = \tfrac12\left(\tilde{p}\tilde{\vec E} + \tilde{\vec E}\tilde{p}\right).
@@ -193,11 +193,11 @@ $$</p>
 <p>$$
 Q_{ij} = Q_{ji}, \qquad Q_{ii} = 0, \qquad i,j = 1,2,3 ,
 $$</p>
-<p>with five independent components. It is the representation $D^{(2)}$ of the rotation group. Equivalently, it is a harmonic homogeneous polynomial of degree two in the direction cosines, $Q(\hat n) = Q_{ij}\hat{n}_i\hat{n}_j$, or a linear combination of the five spherical harmonics $Y_2^m$. The three descriptions are the same object in three notations.</p>
+<p>with five independent components. It is the representation $D^{(2)}$ of the rotation group. Equivalently, it is a harmonic homogeneous polynomial of degree two in the direction cosines, $Q(\hat u) = Q_{ij}\hat u_i\hat u_j$, or a linear combination of the five spherical harmonics $Y_2^m$. The three descriptions are the same object in three notations.</p>
 <h3 id="the-quadrupole-potential">The Quadrupole Potential</h3>
 <p>The potential of a quadrupole is the $l = 2$ term of the expansion,</p>
 <p>$$
-\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,Q_{ij}\,\hat{n}_i\hat{n}_j ,
+\Phi_{quad}(\vec x) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,Q_{ij}\,\hat u_i\hat u_j ,
 $$</p>
 <p>and it agrees exactly with the $l = 2$ Legendre term of the Coulomb kernel, as noted above. The fall-off is $r^{-3}$, one power faster than the dipole and two faster than the monopole.</p>
 <h3 id="the-interaction-energy">The Interaction Energy</h3>
@@ -327,8 +327,8 @@ $$</p>
 <td>Field-strength biquaternion</td>
 </tr>
 <tr>
-<td>$\hat n = \vec x/r$</td>
-<td>Unit radial quaternion, $\hat n^2 = -e_0$</td>
+<td>$\hat u = \vec x/r$</td>
+<td>Unit radial quaternion, $\hat u^2 = -e_0$</td>
 </tr>
 <tr>
 <td>$\mathrm{Sc}(\cdot)$</td>

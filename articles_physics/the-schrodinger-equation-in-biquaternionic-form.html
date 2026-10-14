@@ -75,12 +75,12 @@ $$</p>
 $$</p>
 <p>a copy of the complex line embedded as the scalar part, and it is the centre of $\mathbb{B}$. Within it the roots of $-1$ are exactly $\pm i$: the scalar imaginary is not "one root of $-1$ among many" but <em>the</em> central one.</p>
 <h3 id="the-quaternion-units-and-the-non-central-roots">The quaternion units and the non-central roots</h3>
-<p>Each quaternion unit satisfies $e_j^2 = -e_0$, but the $e_j$ do not commute: $e_1e_2 = e_3 = -e_2e_1$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{\Xi}$ with $\tilde{\Xi}^2 = -e_0$: either $\tilde{\Xi} = \pm i$ (the central roots), or $\tilde{\Xi} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_1^2 + Q_2^2 + Q_3^2 = 1$ (the non-central roots). The real members of the second family are the <strong>unit pure real quaternions</strong> $\hat{\mu} \in \mathbb{H}_{\mathbb{B}}$, with $|\hat{\mu}| = 1$, so $\hat{\mu}^2 = -e_0$ and $\hat{\mu}^\dagger = -\hat{\mu} \in \mathbb{M}_-$. They are the points of the Bloch sphere, i.e. the directions of the state. Both $\hat{\mu}$ and $i$ square to $-e_0$ and are anti-Hermitian, but $i$ is central and $\hat{\mu}$ is not.</p>
+<p>Each quaternion unit satisfies $e_j^2 = -e_0$, but the $e_j$ do not commute: $e_1e_2 = e_3 = -e_2e_1$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{\Xi}$ with $\tilde{\Xi}^2 = -e_0$: either $\tilde{\Xi} = \pm i$ (the central roots), or $\tilde{\Xi} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_1^2 + Q_2^2 + Q_3^2 = 1$ (the non-central roots). The real members of the second family are the <strong>unit pure real quaternions</strong> $\hat u \in \mathbb{H}_{\mathbb{B}}$, with $|\hat u| = 1$, so $\hat u^2 = -e_0$ and $\hat u^\dagger = -\hat u \in \mathbb{M}_-$. They are the points of the Bloch sphere, i.e. the directions of the state. Both $\hat u$ and $i$ square to $-e_0$ and are anti-Hermitian, but $i$ is central and $\hat u$ is not.</p>
 <p>The two appear side by side in the idempotent</p>
 <p>$$
-\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac{1}{2}\left(e_0 \pm i\,\hat{\mu}\right),
+\tilde\Pi_{1,2}(\hat u) = \tfrac{1}{2}\left(e_0 \pm i\,\hat u\right),
 $$</p>
-<p>and this expression is precisely where the conflation happens. The $i$ is the central scalar imaginary; the $\hat{\mu}$ is the axis of the state. One is the complex structure, the other a direction of the state, and they must be read separately.</p>
+<p>and this expression is precisely where the conflation happens. The $i$ is the central scalar imaginary; the $\hat u$ is the axis of the state. One is the complex structure, the other a direction of the state, and they must be read separately.</p>
 <h3 id="the-complex-structure-of-the-state-space">The complex structure of the state space</h3>
 <p>A Schrödinger equation presupposes a complex vector space of states. In the biquaternion framework that space is a <strong>minimal left ideal</strong> $\mathbb{B}\tilde{P} \subset \mathbb{B}$ — the module of states, defined in the next section — and its complex structure is left multiplication by the central $i$. Because $i$ is central, this action commutes with the left action of $\mathbb{B}$, so the module is genuinely complex-linear.</p>
 <p>It is important that the complex structure does <strong>not</strong> live on $\mathbb{M}_+$. Multiplication by $i$ is a real-linear isomorphism</p>
@@ -89,7 +89,7 @@ i\,\mathbb{M}_+ = \mathbb{M}_-,
 \qquad
 i\,\mathbb{M}_- = \mathbb{M}_+,
 $$</p>
-<p>so $i$ carries $\mathbb{M}_+$ out of itself; it is not an operator on $\mathbb{M}_+$. The phrase "the complex structure of $\mathbb{M}_+$", if used at all, can only mean the complex structure of the state module: as a real vector space $\mathbb{M}_+$ can be given some complex structure abstractly, but none is canonical, and multiplication by $i$ is not one. A reader is most likely to slip here, because the idempotent formula $\tfrac12(e_0 + i\hat{\mu})$ contains both an $i$ and an element of $\mathbb{M}_+$; the $i$ does not act on $\mathbb{M}_+$, it maps it to its complement.</p>
+<p>so $i$ carries $\mathbb{M}_+$ out of itself; it is not an operator on $\mathbb{M}_+$. The phrase "the complex structure of $\mathbb{M}_+$", if used at all, can only mean the complex structure of the state module: as a real vector space $\mathbb{M}_+$ can be given some complex structure abstractly, but none is canonical, and multiplication by $i$ is not one. A reader is most likely to slip here, because the idempotent formula $\tfrac12(e_0 + i\hat u)$ contains both an $i$ and an element of $\mathbb{M}_+$; the $i$ does not act on $\mathbb{M}_+$, it maps it to its complement.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -113,7 +113,7 @@ $$</p>
 <td>Rotation generators, state axes</td>
 </tr>
 <tr>
-<td>Non-central roots $\hat{\mu}$</td>
+<td>Non-central roots $\hat u$</td>
 <td>$\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$, unit sphere</td>
 <td>No</td>
 <td>Bloch-sphere axes; idempotent directions</td>
@@ -192,11 +192,11 @@ $$</p>
 \qquad\text{i.e.}\qquad
 i\hbar\,\partial_t\tilde{\rho} = [\tilde{H},\tilde{\rho}],
 $$</p>
-<p>which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ and $\tilde\Pi_1(\hat{\mu}) = \tfrac12(e_0 + i\hat{\mu})$,</p>
+<p>which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ and $\tilde\Pi_1(\hat u) = \tfrac12(e_0 + i\hat u)$,</p>
 <p>$$
-p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\hat{\mu})\,\tilde{\rho}\right) = \tfrac12\left(1 + \hat{\mu}\cdot\vec r\right).
+p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\hat u)\,\tilde{\rho}\right) = \tfrac12\left(1 + \hat u\cdot\vec r\right).
 $$</p>
-<p>For the up-state spinor $\psi = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\vec r = e_3$, and $p_+ = \tfrac12(1 + \hat{\mu}\cdot e_3)$, the standard result.</p>
+<p>For the up-state spinor $\psi = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\vec r = e_3$, and $p_+ = \tfrac12(1 + \hat u\cdot e_3)$, the standard result.</p>
 <h2 id="why-the-scalar-imaginary-and-not-a-quaternion-unit">Why the Scalar Imaginary, and Not a Quaternion Unit</h2>
 <p>It is worth making precise why the obvious alternatives to $i$ fail. Suppose a root $J$ with $J^2 = -1$ is used in place of $i$:</p>
 <p>$$
@@ -253,7 +253,7 @@ $$</p>
 <p><em>The observable/generator split is intrinsic.</em> $\mathbb{M}_+$ and $\mathbb{M}_-$ are the fixed-point subspaces of Hermitian conjugation, and $i$ is the canonical real-linear isomorphism relating them. The Schrödinger equation is exactly the map $\tilde{H} \mapsto \tilde{G} = -i\tilde{H}/\hbar$ from observables to generators. In $M_2(\mathbb{C})$ language this is the elementary statement that $\tilde{H}$ is Hermitian iff $-i\tilde{H}$ is anti-Hermitian; the biquaternion form names the two sectors that the statement relates, and places the generator in the material sector.</p>
 </li>
 <li>
-<p><em>The roots of $-1$ are separated by role.</em> The central roots $\pm i$ are the complex structure; the non-central roots $\hat{\mu}$ are state axes and rotation generators. A formulation that writes the Schrödinger equation with a quaternion unit destroys the first while leaving the second in place, and the counterexample above shows how. The biquaternion form keeps the two apart by construction.</p>
+<p><em>The roots of $-1$ are separated by role.</em> The central roots $\pm i$ are the complex structure; the non-central roots $\hat u$ are state axes and rotation generators. A formulation that writes the Schrödinger equation with a quaternion unit destroys the first while leaving the second in place, and the counterexample above shows how. The biquaternion form keeps the two apart by construction.</p>
 </li>
 </ol>
 <p><strong>Honest bottom line.</strong> For a single qubit this is a rewriting of a known equation. It is interesting because the same algebra also carries the Lorentz group and the Dirac equation, and because its two Hermitian fixed-point subspaces correspond to the physical and informational sectors of the wider proposal; but it produces no new prediction here. Whether it produces one in the many-body or relativistic setting is open.</p>
@@ -307,15 +307,15 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>Real quaternion subspace; home of the unit pure quaternions $\hat{\mu}$</td>
+<td>Real quaternion subspace; home of the unit pure quaternions $\hat u$</td>
 </tr>
 <tr>
 <td>$\tilde{H} = h_0e_0 + i\vec h$</td>
 <td>Hermitian element (Hamiltonian)</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$</td>
-<td>Idempotent (pure state); $\hat{\mu}$ the state axis</td>
+<td>$\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0 \pm i\hat u)$</td>
+<td>Idempotent (pure state); $\hat u$ the state axis</td>
 </tr>
 <tr>
 <td>$\mathbb{B}\tilde{P} \cong \mathbb{C}^2$</td>
@@ -330,7 +330,7 @@ $$</p>
 <td>Unitary evolution, $\psi(t) = \tilde{U}(t)\psi(0)$</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde\Pi_1(\hat{\mu})\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\hat{\mu})\tilde{H}) = h_0 + \hat{\mu}\cdot\vec h$</td>
+<td>$\mathrm{Tr}(\tilde\Pi_1(\hat u)\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\hat u)\tilde{H}) = h_0 + \hat u\cdot\vec h$</td>
 <td>Trace formula / Born rule</td>
 </tr>
 <tr>

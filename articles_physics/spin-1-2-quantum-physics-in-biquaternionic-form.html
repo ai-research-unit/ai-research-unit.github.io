@@ -92,9 +92,9 @@ $$</p>
 <p>$$
 \hat{S}_k = \frac{\hbar}{2}\sigma_k, \qquad k = 1, 2, 3.
 $$</p>
-<p>The state space is the spinor space $\mathbb{C}^2$, and the spin states are the eigenstates of $\vec S\cdot\hat n$ for a unit vector $\hat n$. The spin-up and spin-down projectors along the direction $\hat n$ are</p>
+<p>The state space is the spinor space $\mathbb{C}^2$, and the spin states are the eigenstates of $\vec S\cdot\hat u$ for a unit vector $\hat u$. The spin-up and spin-down projectors along the direction $\hat u$ are</p>
 <p>$$
-\tilde\Pi_{1,2}^{\hat n} = \frac{1}{2}\left(I_2 \pm \hat n\cdot\boldsymbol{\sigma}\right).
+\tilde\Pi_{1,2}^{\hat u} = \frac{1}{2}\left(I_2 \pm \hat u\cdot\boldsymbol{\sigma}\right).
 $$</p>
 <p>These are Hermitian, idempotent, and of trace 1. They are the <strong>pure-state projectors</strong> of the spin system.</p>
 <p>The group of spin rotations is $SU(2)$, which acts on the spinor space $\mathbb{C}^2$ and is the double cover of the rotation group $SO(3)$.</p>
@@ -146,9 +146,9 @@ $$</p>
 <p>The idempotents of $\mathbb{M}_+$ are the pure-state projectors of the spin-1/2 system.</p>
 <p><strong>Statement.</strong> The idempotents of $\mathbb{M}_+$ are exactly the elements</p>
 <p>$$
-\tilde\Pi_{1,2} = \tfrac{1}{2}\left(e_0 \pm \mu i\right),
+\tilde\Pi_{1,2} = \tfrac{1}{2}\left(e_0 \pm \hat u i\right),
 $$</p>
-<p>where $\mu = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quaternion, $\mu_1^2 + \mu_2^2 + \mu_3^2 = 1$.</p>
+<p>where $\hat u = u_1 e_1 + u_2 e_2 + u_3 e_3$ is a unit pure real quaternion, $u_1^2 + u_2^2 + u_3^2 = 1$.</p>
 <p><strong>Properties.</strong> Each such $\tilde\Pi_{1,2}$ satisfies:</p>
 <ol>
 <li><strong>Hermitian:</strong> $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{M}_+$.</li>
@@ -156,12 +156,12 @@ $$</p>
 <li><strong>Trace one:</strong> $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$.</li>
 <li><strong>Rank one:</strong> in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.</li>
 </ol>
-<p><strong>Proof.</strong> The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_0 \pm \tilde{\Xi} i)$ with $\tilde{\Xi}$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\tilde{\Xi} = \pm \mu$ with $\mu$ a unit pure real quaternion. The Hermitian, idempotent, trace-1 properties are direct computations (article 3).</p>
+<p><strong>Proof.</strong> The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_0 \pm \tilde{\Xi} i)$ with $\tilde{\Xi}$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\tilde{\Xi} = \pm \hat u$ with $\hat u$ a unit pure real quaternion. The Hermitian, idempotent, trace-1 properties are direct computations (article 3).</p>
 <p><strong>Identification with spin projectors.</strong> Under the isomorphism, $\tilde\Pi_{1,2}$ maps to</p>
 <p>$$
-\tilde\Pi_{1,2} \mapsto \frac{1}{2}\left(I_2 \pm \mu_1\sigma_1 \pm \mu_2\sigma_2 \pm \mu_3\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \vec\mu\cdot\boldsymbol{\sigma}\right).
+\tilde\Pi_{1,2} \mapsto \frac{1}{2}\left(I_2 \pm u_1\sigma_1 \pm u_2\sigma_2 \pm u_3\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \hat u\cdot\boldsymbol{\sigma}\right).
 $$</p>
-<p>This is exactly the spin projector $|\pm\hat\mu\rangle\langle\pm\hat\mu|$ onto the spin-up or spin-down state along the direction $\hat\mu$.</p>
+<p>This is exactly the spin projector $|\pm\hat u\rangle\langle\pm\hat u|$ onto the spin-up or spin-down state along the direction $\hat u$.</p>
 <p>So <strong>every spin-1/2 pure state corresponds to exactly one idempotent of $\mathbb{M}_+$</strong>, and vice versa.</p>
 <h2 id="the-trace-formula-as-the-born-rule">The Trace Formula as the Born Rule</h2>
 <p>The expectation value of an observable in a state is given by the trace formula.</p>
@@ -172,7 +172,7 @@ $$</p>
 <p>is <strong>real</strong> and is the <strong>Born-rule expectation value</strong> of $\tilde{H}$ in the state $P$.</p>
 <p><strong>Proof.</strong> Under the isomorphism, $P$ maps to the projector $|\psi\rangle\langle\psi|$ and $\tilde{H}$ maps to the Hermitian matrix $H$. The trace formula $\mathrm{Tr}(P\tilde{H})$ maps to $\mathrm{Tr}(|\psi\rangle\langle\psi| H) = \langle\psi|H|\psi\rangle$, which is the standard Born-rule expectation. The biquaternion trace formula $2\,\mathrm{Sc}(P\tilde{H})$ is the same quantity, expressed in biquaternion language.</p>
 <h3 id="example">Example</h3>
-<p>Take $\mu = e_3$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + e_3 i)$ corresponds to the spin-up state along the $z$ axis; the element $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_0 - e_3 i)$ are its two associated idempotents. Let $\tilde{H} = i e_1$ (the spin observable along the $x$ axis). Then</p>
+<p>Take $\hat u = e_3$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + e_3 i)$ corresponds to the spin-up state along the $z$ axis; the element $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_0 - e_3 i)$ are its two associated idempotents. Let $\tilde{H} = i e_1$ (the spin observable along the $x$ axis). Then</p>
 <p>$$
 \tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_1) = \tfrac{1}{2}(ie_1 + e_3 i \cdot i e_1) = \tfrac{1}{2}(ie_1 - e_3 e_1) = \tfrac{1}{2}(ie_1 - e_2).
 $$</p>
@@ -221,7 +221,7 @@ $$</p>
 <p>The subgroup of $U(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the <strong>spin rotation group</strong>. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{M}_-$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.</p>
 <p>So the <strong>spin rotations of a spin-1/2 particle are realized in the biquaternion framework by the $SU(2)$ subgroup of unit-norm biquaternions</strong>.</p>
 <h3 id="hermitian-biquaternions">Hermitian Biquaternions</h3>
-<p>The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the <strong>boost biquaternions</strong> $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat u$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.</p>
+<p>The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the <strong>boost biquaternions</strong> $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat u_{\mathrm b}$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.</p>
 <p>In the quantum-mechanical context, the boosts are <strong>not</strong> unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still <strong>invertible</strong>: a boost has unit norm, so it inverts to $\tilde{\Lambda}^{\natural}$, and it represents a reversible change of state — unlike the genuinely irreversible idempotent projections.</p>
 <p>The full group of unit-norm biquaternions is $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. It contains $SU(2)$ as the compact subgroup of spatial rotations, and the Hermitian elements as the non-compact set of boosts.</p>
 <p>So the biquaternion framework contains:</p>
@@ -336,7 +336,7 @@ $$</p>
 </ol>
 <p>These questions are open.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \mu i)$ for a unit pure quaternion $\mu$, correspond to the rank-1 projectors, i.e., the pure spin states. The trace formula $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ is the Born rule.</p>
+<p>The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \hat u i)$ for a unit pure quaternion $\hat u$, correspond to the rank-1 projectors, i.e., the pure spin states. The trace formula $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ is the Born rule.</p>
 <p>The spin rotation group $SU(2)$ is realized in the biquaternion framework as the group of unit-norm biquaternions with real vector part. The full Lorentz group $SL(2,\mathbb{C})$ is realized as the group of unit-norm biquaternions in general, and the Hermitian elements of $\mathbb{M}_+$ generate the boosts.</p>
 <p>The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field. The biquaternion formulation describes this field as a pair of Weyl spinors (left-handed and right-handed); the full four-component Dirac spinor is recovered by taking the direct sum of this pair with its complex conjugate. The framework contains the classical Dirac field coupled to electromagnetism, but it does not contain the quantization of the field, the extension to bosonic or higher-spin fields, or the structure of many-body systems.</p>
 <p>The identification is not an analogy. It is the same mathematics, expressed in the biquaternion algebra, and it is the deepest structural connection between the biquaternion framework and established quantum physics.</p>
@@ -374,7 +374,7 @@ $$</p>
 <td>Pauli matrices</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \mu i)$</td>
+<td>$\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \hat u i)$</td>
 <td>Idempotent (pure spin state)</td>
 </tr>
 <tr>

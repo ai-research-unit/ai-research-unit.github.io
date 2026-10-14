@@ -64,13 +64,13 @@
 <h2 id="the-rigid-body-rotor">The Rigid-Body Rotor</h2>
 <p>The rotor algebra used below is stated explicitly, from first principles.</p>
 <h3 id="rotors">Rotors</h3>
-<p>A rotation of three-dimensional space by an angle $\theta$ about a unit axis $\hat n = n_1e_1 + n_2e_2 + n_3e_3$, with $\hat n^2 = -e_0$, is represented by the <strong>rotor</strong></p>
+<p>A rotation of three-dimensional space by an angle $\theta$ about a unit axis $\hat u = n_1e_1 + n_2e_2 + n_3e_3$, with $\hat u^2 = -e_0$, is represented by the <strong>rotor</strong></p>
 <p>$$
-\tilde{\Lambda}(\theta,\hat n) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat n \in \mathbb{H}_{\mathbb{B}} ,
+\tilde{\Lambda}(\theta,\hat u) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat u \in \mathbb{H}_{\mathbb{B}} ,
 $$</p>
 <p>a real quaternion of unit norm,</p>
 <p>$$
-\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2}\,\hat n^2 = e_0 .
+\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2}\,\hat u^2 = e_0 .
 $$</p>
 <p>Because $\tilde{\Lambda}$ is a real quaternion, its Hermitian conjugate is its quaternion conjugate, $\tilde{\Lambda}^{*} = \tilde{\Lambda}^{\natural}$. The rotor acts on a vector by conjugation,</p>
 <p>$$
@@ -80,9 +80,9 @@ $$</p>
 <p>$$
 \tilde{\Lambda}_2\tilde{\Lambda}_1 \;\longleftrightarrow\; R_2R_1 ,
 $$</p>
-<p>so the rotors form a group, and the map is two-to-one: $\tilde{\Lambda}(\theta + 2\pi,\hat n) = -\tilde{\Lambda}(\theta,\hat n)$, with $+2\pi$ and $4\pi$ giving respectively $-e_0$ and $+e_0$. This has been checked directly. The two rotors $\pm\tilde{\Lambda}$ produce the <strong>same</strong> rotation of vectors, which is the familiar two-sheeted cover of the rotation group by its spin group.</p>
+<p>so the rotors form a group, and the map is two-to-one: $\tilde{\Lambda}(\theta + 2\pi,\hat u) = -\tilde{\Lambda}(\theta,\hat u)$, with $+2\pi$ and $4\pi$ giving respectively $-e_0$ and $+e_0$. This has been checked directly. The two rotors $\pm\tilde{\Lambda}$ produce the <strong>same</strong> rotation of vectors, which is the familiar two-sheeted cover of the rotation group by its spin group.</p>
 <h3 id="angular-velocity">Angular Velocity</h3>
-<p>Let the axis be fixed and the angle vary, $\theta = \theta(t)$, and write $\tilde{\omega} = \dot\theta\,\hat n$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity</p>
+<p>Let the axis be fixed and the angle vary, $\theta = \theta(t)$, and write $\tilde{\omega} = \dot\theta\,\hat u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity</p>
 <p>$$
 \dot{\tilde{\Lambda}} = \tfrac12\,\tilde{\Lambda}\,\tilde{\omega} .
 $$</p>
@@ -270,7 +270,7 @@ $$</p>
 <td>Scalar (central) part</td>
 </tr>
 <tr>
-<td>$\tilde{\Lambda} = \cos(\theta/2) + \sin(\theta/2)\hat n$</td>
+<td>$\tilde{\Lambda} = \cos(\theta/2) + \sin(\theta/2)\hat u$</td>
 <td>Rotation rotor, a real unit quaternion</td>
 </tr>
 <tr>
@@ -278,11 +278,11 @@ $$</p>
 <td>Rotor action on a vector</td>
 </tr>
 <tr>
-<td>$R(\theta,\hat n)$</td>
+<td>$R(\theta,\hat u)$</td>
 <td>Rotation matrix in $SO(3)$, the image of $\tilde{\Lambda}$ (distinct from the radius $R_0$)</td>
 </tr>
 <tr>
-<td>$\tilde{\omega} = \dot\theta\,\hat n$</td>
+<td>$\tilde{\omega} = \dot\theta\,\hat u$</td>
 <td>Angular velocity (body-frame vector)</td>
 </tr>
 <tr>

@@ -77,9 +77,9 @@ $$</p>
 <p>with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(ie_k)=\sigma_k$, and the trace is normalized by $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The <strong>spinor module</strong> is the minimal left ideal $\mathbb{B}\tilde\Pi_+$, with</p>
 <p>$$
 \tilde\Pi_+=\tfrac12(e_0+ie_3),\qquad \tilde\Pi_-=\tfrac12(e_0-ie_3),\qquad
-\tilde\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \tilde\Upsilon_2=\tfrac12(ie_1+e_2),
+\hat\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \hat\Upsilon_2=\tfrac12(ie_1+e_2),
 $$</p>
-<p>and basis $\{\tilde\Pi_+,\tilde\Upsilon_2\}$ for $\mathbb{B}\tilde\Pi_+$, where the element $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents; the matrix-unit relations $\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_+$, $\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-$, $\tilde\Upsilon_1^2=\tilde\Upsilon_2^2=0$ hold. The field expansion, the mode operators, and the Fock construction are those of the companion quantization and Fock-space articles and are not rederived here.</p>
+<p>and basis $\{\tilde\Pi_+,\hat\Upsilon_2\}$ for $\mathbb{B}\tilde\Pi_+$, where the element $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents; the matrix-unit relations $\hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+$, $\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-$, $\hat\Upsilon_1^2=\hat\Upsilon_2^2=0$ hold. The field expansion, the mode operators, and the Fock construction are those of the companion quantization and Fock-space articles and are not rederived here.</p>
 <h2 id="the-mode-function-is-a-definite-solution">The Mode Function Is a Definite Solution</h2>
 <p>The Dirac field of the companion articles expands on the spinor module as</p>
 <p>$$
@@ -103,16 +103,16 @@ $$</p>
 <p>counts the quanta, with $[\hat N,\hat a_r^\dagger]=+\hat a_r^\dagger$ and $[\hat N,\hat a_r]=-\hat a_r$. The excitation is not a solution of the wave equation and is not a mode function; it is a state in the many-particle space, and its defining datum is the integer eigenvalue of $\hat N$.</p>
 <p>For a single fermionic mode this can be reduced to an object of the finite-dimensional algebra, because $\mathbb{B}\cong M_2(\mathbb{C})$ is exactly the operator algebra of one fermionic mode. The parent Fock-space article exhibits the ladder operators in the algebra as the matrix units</p>
 <p>$$
-\tilde a=\tilde\Upsilon_1=\tfrac12(ie_1-e_2),\qquad
-\tilde a^\dagger=\tilde\Upsilon_2=\tfrac12(ie_1+e_2),
+\tilde a=\hat\Upsilon_1=\tfrac12(ie_1-e_2),\qquad
+\tilde a^\dagger=\hat\Upsilon_2=\tfrac12(ie_1+e_2),
 $$</p>
 <p>which satisfy $\{\tilde a,\tilde a^\dagger\}=e_0$ and $\tilde a^2=(\tilde a^\dagger)^2=0$. The occupation-number operator of the single mode is then</p>
 <p>$$
-\tilde N=\tilde a^\dagger\tilde a=\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-=\tfrac12(e_0-ie_3),
+\tilde N=\tilde a^\dagger\tilde a=\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-=\tfrac12(e_0-ie_3),
 $$</p>
 <p>and the vacuum projector is its complement</p>
 <p>$$
-e_0-\tilde N=\tilde a\,\tilde a^\dagger=\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_+=\tfrac12(e_0+ie_3).
+e_0-\tilde N=\tilde a\,\tilde a^\dagger=\hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+=\tfrac12(e_0+ie_3).
 $$</p>
 <p>These are the one-mode operators of the Fock-space and harmonic-oscillator articles, written in the module realization of this article.</p>
 <p>Two remarks about the operators are needed before the sector question is posed. First, the <strong>excitation operator is not Hermitian</strong>: $\tilde a^\dagger=x^{*}=y\neq\tilde a$ and $\tilde a^\dagger\neq-\tilde a$, since $\tilde a$ has the Hermitian part $\tfrac12 ie_1$ and the anti-Hermitian part $-\tfrac12 e_2$, so it lies in neither sector. Creation and annihilation operators are not observables, and no sector claim about them is being made. What lies in a sector is the number operator $\tilde N$, which is Hermitian, and the state, which is Hermitian and positive. Second, the number operator is an <strong>idempotent</strong>: $\tilde N^2=\tilde N$ and $\tilde N^{*}=\tilde N$. It is a projector, and it is the operator form of the occupation "one". The pair $\{e_0-\tilde N,\tilde N\}$ is the pair of orthogonal idempotents $\tilde\Pi_+,\tilde\Pi_-$ whose Peirce decomposition splits the spinor module into its two components.</p>
@@ -152,7 +152,7 @@ $$</p>
 <h2 id="what-is-asserted-to-lie-in-math100-and-its-verification">What Is Asserted to Lie in $\mathbb{M}_+$, and Its Verification</h2>
 <p>The assertions to be checked are now explicit.</p>
 <p><strong>A1. The occupation-number operator is in $\mathbb{M}_+$.</strong> With $\tilde N=\tfrac12(e_0-ie_3)$, compute $\tilde N^{*}=\tfrac12(e_0^\dagger+(-ie_3)^{*})=\tfrac12(e_0-ie_3)=\tilde N$, so $\tilde N\in\mathbb{M}_+$. Its square is $\tilde N^2=\tfrac14(e_0-ie_3)^2=\tfrac14(e_0^2-2ie_3+(ie_3)^2)=\tfrac14(e_0-2ie_3+e_0)=\tfrac12(e_0-ie_3)=\tilde N$, using $(ie_3)^2=e_0$. So the number operator is a Hermitian idempotent — a projector onto the occupied state — and it lies in $\mathbb{M}_+$.</p>
-<p><strong>A2. The vacuum projector is in $\mathbb{M}_+$.</strong> The complement $e_0-\tilde N=\tfrac12(e_0+ie_3)=\tilde\Pi_+$ is Hermitian and idempotent by the same computation, so $\tilde\Pi_+\in\mathbb{M}_+$. More generally $\tfrac12(e_0+i\mu)$ is Hermitian, idempotent, and of trace one for every unit pure quaternion $\mu$. These are the pure-state projectors of <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, and the single-mode occupation basis is exactly this pair.</p>
+<p><strong>A2. The vacuum projector is in $\mathbb{M}_+$.</strong> The complement $e_0-\tilde N=\tfrac12(e_0+ie_3)=\tilde\Pi_+$ is Hermitian and idempotent by the same computation, so $\tilde\Pi_+\in\mathbb{M}_+$. More generally $\tfrac12(e_0+i\hat u)$ is Hermitian, idempotent, and of trace one for every unit pure quaternion $\hat u$. These are the pure-state projectors of <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, and the single-mode occupation basis is exactly this pair.</p>
 <p><strong>A3. The density matrix of the mode is in $\mathbb{M}_+$.</strong> For $\tilde\rho=\tfrac12(e_0+i\vec r)$ with $\vec r\in\mathbb{R}^3$, the scalar part is real and the vector part is purely imaginary, so $\tilde\rho\in\mathbb{M}_+$ by the definition of the sector. Direct computation gives
 $$
 \tilde\rho^2-\tilde\rho=\tfrac14\big(|\vec r|^2-1\big)e_0,\qquad
@@ -166,8 +166,8 @@ $$
 \tilde a^\dagger=\tfrac12 ie_1+\tfrac12 e_2,
 $$
 with the first term of each in $\mathbb{M}_+$ and the second in $\mathbb{M}_-$. So the excitation operator is a sum of one element of each sector and is an element of neither. This is not a defect; it is the statement that raising and lowering are not observables.</p>
-<p><strong>A5. The canonical relation holds once, and in the fermionic form.</strong> The matrix-unit relations give $\{\tilde a,\tilde a^\dagger\}=\tilde\Upsilon_1\tilde\Upsilon_2+\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_++\tilde\Pi_-=e_0$, $\tilde a^2=\tilde\Upsilon_1^2=0$, $(\tilde a^\dagger)^2=y^2=0$, and $\tilde N=\tilde a^\dagger\tilde a=yx=\tilde\Pi_-$. The bosonic relation $[\tilde a,\tilde a^\dagger]=e_0$ cannot hold for any pair in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.</p>
-<p>Two points about the reach of A1–A3 belong immediately after them. First, the assertions are about <strong>one mode</strong>. Both $\tilde\Upsilon_1,\tilde\Upsilon_2$ and the Peirce idempotents are attached to a single pair of orthogonal idempotents and to a single mode; there is no second pair commuting with the first in the four-dimensional algebra, hence no second fermionic mode. Second, the assertions are about the <strong>density matrix</strong> and the <strong>number operator</strong>, not about the state vector. The state vector is in the module, and the module is not $\mathbb{M}_+$: the two are different subspaces of $\mathbb{B}$ that meet in a ray. The next section makes that intersection precise.</p>
+<p><strong>A5. The canonical relation holds once, and in the fermionic form.</strong> The matrix-unit relations give $\{\tilde a,\tilde a^\dagger\}=\hat\Upsilon_1\hat\Upsilon_2+\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_++\tilde\Pi_-=e_0$, $\tilde a^2=\hat\Upsilon_1^2=0$, $(\tilde a^\dagger)^2=y^2=0$, and $\tilde N=\tilde a^\dagger\tilde a=yx=\tilde\Pi_-$. The bosonic relation $[\tilde a,\tilde a^\dagger]=e_0$ cannot hold for any pair in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_0)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.</p>
+<p>Two points about the reach of A1–A3 belong immediately after them. First, the assertions are about <strong>one mode</strong>. Both $\hat\Upsilon_1,\hat\Upsilon_2$ and the Peirce idempotents are attached to a single pair of orthogonal idempotents and to a single mode; there is no second pair commuting with the first in the four-dimensional algebra, hence no second fermionic mode. Second, the assertions are about the <strong>density matrix</strong> and the <strong>number operator</strong>, not about the state vector. The state vector is in the module, and the module is not $\mathbb{M}_+$: the two are different subspaces of $\mathbb{B}$ that meet in a ray. The next section makes that intersection precise.</p>
 <h2 id="in-what-sense-math139-is-a-hilbert-space">In What Sense $\mathbb{M}_+$ Is a Hilbert Space</h2>
 <p>The phrase "the state space is $\mathbb{M}_+$" invites the interpretation that $\mathbb{M}_+$ is a Hilbert space of state vectors. That interpretation is false, and the qualifications matter.</p>
 <ul>
@@ -252,7 +252,7 @@ with the first term of each in $\mathbb{M}_+$ and the second in $\mathbb{M}_-$. 
 <p>The mismatch is a real finding and is stated as one. It does not contradict the sector hypothesis; it bounds it. The informational sector $\mathbb{M}_+$ is the home of the state of <strong>one fermionic mode</strong>, exactly, and the framework's own finite-dimensional algebra does not extend that home to a second mode or to a boson. Whether the single-mode fit is a structural selection or the smallest dimension coincidence, the Fock-space article's question, is not settled by the count; the count only shows that if it is a coincidence, it is the same coincidence seen from the state side.</p>
 <h2 id="where-the-mode-function-actually-lives">Where the Mode Function Actually Lives</h2>
 <p>The counting is only half the structural statement; the other half is the exact location of the definite solution, and it is not $\mathbb{M}_+$.</p>
-<p>The spinor module is realized inside the algebra as the minimal left ideal $\mathbb{B}\tilde\Pi_+$, with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and basis $\{\tilde\Pi_+,\tilde\Upsilon_2\}$, $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$. A general spinor is therefore $\tilde\psi=\psi_1\tilde\Pi_++\psi_2y$ with $\psi_1,\psi_2\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\tilde\psi^{*}=\overline{\psi_1}\,\tilde\Pi_++\overline{\psi_2}\,x$, using $y^{*}=x$ and $\tilde\Pi_+^\dagger=\tilde\Pi_+$. The condition $\tilde\psi^{*}=\tilde\psi$ forces, comparing coefficients in the independent directions $\tilde\Pi_+,x,y$,</p>
+<p>The spinor module is realized inside the algebra as the minimal left ideal $\mathbb{B}\tilde\Pi_+$, with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and basis $\{\tilde\Pi_+,\hat\Upsilon_2\}$, $\hat\Upsilon_2=\tfrac12(ie_1+e_2)$. A general spinor is therefore $\tilde\psi=\psi_1\tilde\Pi_++\psi_2y$ with $\psi_1,\psi_2\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\tilde\psi^{*}=\overline{\psi_1}\,\tilde\Pi_++\overline{\psi_2}\,x$, using $y^{*}=x$ and $\tilde\Pi_+^\dagger=\tilde\Pi_+$. The condition $\tilde\psi^{*}=\tilde\psi$ forces, comparing coefficients in the independent directions $\tilde\Pi_+,x,y$,</p>
 <p>$$
 \psi_2=0\qquad\text{and}\qquad \psi_1=\overline{\psi_1}\ \ (\psi_1\in\mathbb{R}).
 $$</p>
@@ -264,7 +264,7 @@ $$</p>
 <p>The Maxwell case is the same conclusion with a different home. The polarization vector of a <strong>linearly polarized</strong> mode function is a real spatial direction in $\mathrm{Vect}(\mathbb{M}_-)$ orthogonal to $\hat k$, so it is in the material sector; the helicity observable, by contrast, is the Hermitian element $i\hat k\in\mathbb{M}_+$. Once more the definite solution is material and the operator is informational. The division is consistent across the two fields: the <em>solution</em> is on the configuration side (the module, or $\mathbb{M}_-$ for vectors), and the <em>operator</em> is on the Hermitian side.</p>
 <p>There is an interpretation of the mode function that belongs here as an interpretation and not as a result. Within the two-level truncation of one mode, the occupation axis and the phase axis are not independent structures: the states with definite occupation are the poles of the Bloch ball, where the density matrix is the projector $\tilde\Pi_+$ or $\tilde\Pi_-$, and a definite-phase superposition sits on the equator, where the density matrix has a non-zero vector part — precisely the part that the partition-function article shows the trace discards. On that interpretation, the mode function's definite phase and the excitation's definite number are two complementary axes of the same qubit in $\mathbb{M}_+$. The interpretation has two caveats and is offered subject to them: it holds only in the two-level truncation, which the count above shows is the only truncation the algebra supports, and for a fermionic mode the "definite-phase solution" is a Grassmann-valued coherent state, so the identification of a classical definite solution with an ordinary quantum state is not literal. Whether the phase of a definite solution is exactly the coherent (equatorial) axis of the single-mode qubit is left open.</p>
 <h2 id="summary">Summary</h2>
-<p>An excitation and a mode function are different objects and the biquaternion framework gives them different homes. A mode function is a definite solution of the free equation, one basis vector of the one-particle solution space; for the Dirac field that space is the spinor module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, and for the Maxwell potential the polarization is a direction of the material sector $\mathbb{M}_-$. An excitation is an occupation: the state $|1_{\vec p,r}\rangle$ and the number operator $\hat N$. Its occupation-number operator $\tilde N=\tfrac12(e_0-i\mu)$ and its density matrix $\tilde\rho=\tfrac12(e_0+i\vec r)$ are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly; the excitation operator $\tilde a^\dagger=\tfrac12(ie_1+e_2)$, which is not Hermitian, lies in neither sector. "The informational sector carries the state" is therefore true of the state as a density matrix and of the observables, and false of the state vector, which lives in the module.</p>
+<p>An excitation and a mode function are different objects and the biquaternion framework gives them different homes. A mode function is a definite solution of the free equation, one basis vector of the one-particle solution space; for the Dirac field that space is the spinor module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, and for the Maxwell potential the polarization is a direction of the material sector $\mathbb{M}_-$. An excitation is an occupation: the state $|1_{\vec p,r}\rangle$ and the number operator $\hat N$. Its occupation-number operator $\tilde N=\tfrac12(e_0-i\hat u)$ and its density matrix $\tilde\rho=\tfrac12(e_0+i\vec r)$ are Hermitian elements of $\mathbb{B}$, and they lie in $\mathbb{M}_+$ exactly; the excitation operator $\tilde a^\dagger=\tfrac12(ie_1+e_2)$, which is not Hermitian, lies in neither sector. "The informational sector carries the state" is therefore true of the state as a density matrix and of the observables, and false of the state vector, which lives in the module.</p>
 <p>The mode function is not in $\mathbb{M}_+$: the solution space meets the sector in the single real ray $\mathbb{B}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\tilde\Pi_+$, so away from the projector a definite solution is not Hermitian. The definite solution is on the configuration side and the occupation is on the informational side, which is exactly the division the words express.</p>
 <p>$\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing and not a complex vector space, not an associative subalgebra, and not a Hilbert space under the biquaternion norm, which is indefinite of signature $(1,3)$. The degrees of freedom close for exactly one fermionic mode — four real dimensions of operators, three of states — and fail beyond it: two fermionic modes require sixteen dimensions and a bosonic mode infinitely many. The sector is the home of the state of one fermionic mode, precisely and verifiably, and the mismatch for more is left visible as the bound on that home rather than absorbed into the prose.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -309,8 +309,8 @@ $$</p>
 <td>Orthogonal idempotents, Peirce projectors; $ie_3$ is a root of $+1$</td>
 </tr>
 <tr>
-<td>$\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$, $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$</td>
-<td>Matrix units, $\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_+$, $\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-$, $\tilde\Upsilon_1^2=\tilde\Upsilon_2^2=0$</td>
+<td>$\hat\Upsilon_1=\tfrac12(ie_1-e_2)$, $\hat\Upsilon_2=\tfrac12(ie_1+e_2)$</td>
+<td>Matrix units, $\hat\Upsilon_1\hat\Upsilon_2=\tilde\Pi_+$, $\hat\Upsilon_2\hat\Upsilon_1=\tilde\Pi_-$, $\hat\Upsilon_1^2=\hat\Upsilon_2^2=0$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}\tilde\Pi_+=\{ \psi_1\tilde\Pi_++\psi_2y\}$</td>
@@ -329,7 +329,7 @@ $$</p>
 <td>One-mode ladder operators in $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-i\mu)$</td>
+<td>$\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-i\hat u)$</td>
 <td>Occupation-number operator (idempotent, in $\mathbb{M}_+$)</td>
 </tr>
 <tr>
@@ -354,7 +354,7 @@ $$</p>
 <li><em>The Photon in Biquaternionic Form</em>, for the identification of the polarization directions with the material sector and the helicity observable in $\mathbb{M}_+$.</li>
 <li><em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, for the idempotents, the trace formula, and the operator-algebra interpretation of the sector.</li>
 <li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the four-vectors, including the four-wavevector that labels a mode function.</li>
-<li><em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the realization of the module as the minimal left ideal $\mathbb{B}\tilde\Pi_+$ and the matrix units $\tilde\Upsilon_1,\tilde\Upsilon_2$.</li>
+<li><em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the realization of the module as the minimal left ideal $\mathbb{B}\tilde\Pi_+$ and the matrix units $\hat\Upsilon_1,\hat\Upsilon_2$.</li>
 <li><em>The Ontology of the Quantum State under the Biquaternion Framework</em>, for the state as an element of $\mathbb{M}_+$ and the limits of that interpretation.</li>
 <li><em>The Partition Function in Biquaternionic Form</em>, for the thermal state as an element of $\mathbb{M}_+$ and the coherence that the trace discards.</li>
 <li><em>The Harmonic Oscillator in Biquaternionic Form</em>, for the two-level truncation and the failure of the bosonic canonical relation.</li>

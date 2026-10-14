@@ -76,7 +76,7 @@ $$</p>
 </tr>
 <tr>
 <td>$B$</td>
-<td>the Lorentz boost rotor, in the positive-definite normalisation</td>
+<td>the boost factor of the four-vector, the <strong>square</strong> of the boost rotor $\tilde{\Lambda}^{\natural} = \exp\bigl(-i\tfrac{\psi}{2}\hat u_{\mathrm b}\bigr)$, in the positive-definite normalisation</td>
 </tr>
 <tr>
 <td>$\tilde q$</td>
@@ -85,24 +85,144 @@ $$</p>
 </tbody>
 </table></div>
 <p>Two consequences of the algebraic theorem are physical, and they frame the article. First, a Lorentz rotor of unit norm has $r = 1$ and $\alpha = 0$, so the representation reduces on the Lorentz group to the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde{R}$, which is therefore a <strong>special case</strong> of the four-factor representation and not a separate theorem. Second, the biquaternion norm is the determinant of the $2\times2$ representation, so the modulus of the representation is the square root of a determinant, and the four factors are respectively the absolute value of a determinant, an argument of a determinant, a positive Hermitian matrix, and a unitary matrix. The physics of the representation is the physics of combining four objects under one multiplication, and the algebra of the representation is the matrix polar decomposition of $GL(2,\mathbb{C})$.</p>
-<p>The conventions are those of <em>Conventions in the Biquaternion Universe</em> as used by <em>The Four-Vector Element Representation of Biquaternions</em>, <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>: the basis is $e_0 = 1$ the algebra unit and $e_1,e_2,e_3$ the quaternion units with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, so an element is written $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with coefficients $Q_\mu \in \mathbb{C}$; the scalar imaginary is $i$, central, with $i^2 = -1$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation, is the real quaternion subspace, the home of the rotations, whose unit sphere is $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : \tilde q\tilde q^{\natural} = 1\}$, the group of unit real quaternions, meeting the informational sector in $\mathbb{R}e_0$ and the material sector in the pure-vector space; the informational sector $\mathbb{M}_+$ is the Hermitian subspace, the home of the boosts; and the material sector $\mathbb{M}_-$ is the anti-fixed space of quaternion conjugation, with $Q_0 = iq'_0$ and $Q_k = q_k$ real, the home of the four-vectors, with the interval $N = -c^2t^2+\vec x^2$. An element is <strong>unitary</strong> when it preserves the form, $\tilde{Q}\tilde{Q}^{*}=e_0$, and the unitary elements form the group $U(\mathbb{B})\cong U(2)$; the condition is narrower than norm one, the norm-one group being $\mathbb{B}^{\times}_1=\{N=e_0\}\cong SL(2,\mathbb{C})$ (<em>Conventions in the Biquaternion Universe</em>, §<em>The Unitary Convention</em>), and the rotor of a Lorentz transformation is the norm-one unitary element.</p>
+<p>The conventions are those of <em>Conventions in the Biquaternion Universe</em> as used by <em>The Four-Vector Element Representation of Biquaternions</em>, <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>.</p>
+<ul>
+<li><strong>The basis.</strong> $e_0 = 1$ the algebra unit and $e_1,e_2,e_3$ the quaternion units with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, so an element is written $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with coefficients $Q_\mu \in \mathbb{C}$.</li>
+<li><strong>The scalar imaginary.</strong> $i$, central, with $i^2 = -1$.</li>
+<li><strong>The biquaternion norm.</strong> $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.</li>
+<li><strong>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.</strong> The fixed space of complex conjugation, the home of the rotations, whose unit sphere is $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : \tilde q\tilde q^{\natural} = 1\}$, the group of unit real quaternions, meeting the informational sector in $\mathbb{R}e_0$ and the material sector in the pure-vector space.</li>
+<li><strong>The informational sector $\mathbb{M}_+$.</strong> The Hermitian subspace, the home of the boosts.</li>
+<li><strong>The material sector $\mathbb{M}_-$.</strong> The anti-fixed space of quaternion conjugation, with $Q_0 = iq'_0$ and $Q_k = q_k$ real, the home of the four-vectors, with the interval $N = -c^2t^2+\vec x^2$.</li>
+</ul>
+<p>An element is <strong>unitary</strong> when it preserves the form, $\tilde{Q}\tilde{Q}^{*}=e_0$, and the unitary elements form the group $U(\mathbb{B})\cong U(2)$; the condition is narrower than norm one, the norm-one group being $\mathbb{B}^{\times}_1=\{N=e_0\}\cong SL(2,\mathbb{C})$ (<em>Conventions in the Biquaternion Universe</em>, §<em>The Unitary Convention</em>), and the rotor of a Lorentz transformation is the norm-one unitary element.</p>
 <h2 id="the-exponentials-of-the-four-factors">The Exponentials of the Four Factors</h2>
 <p>Each of the four factors is the exponential of a single element of the algebra, so the word is the ordered product of four exponentials,</p>
 <p>$$
-\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp(-i\psi\hat u)\,\exp(\theta\hat w) ,
+\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp(-i\psi\hat u_{\mathrm b})\,\exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) ,
 $$</p>
 <p>and the physics reading of the article is the reading of the four exponents. In the physics normalisation</p>
 <p>$$
-r = e^{\ln r} , \qquad e^{i\alpha} = \exp(i\alpha) , \qquad B = \bigl(\tilde{\Lambda}^{\natural}\bigr)^{2} = \exp(-i\psi\hat u) , \qquad \tilde q = \exp(\theta\hat w) ,
+r = e^{\ln r} , \qquad e^{i\alpha} = \exp(i\alpha) , \qquad B = \bigl(\tilde{\Lambda}^{\natural}\bigr)^{2} = \exp(-i\psi\hat u_{\mathrm b}) , \qquad \tilde q = \exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) ,
 $$</p>
-<p>where $\psi \in \mathbb{R}$, $\psi \ge 0$, is the rapidity of the frame, $\vec v \in \mathbb{R}^3$ is its velocity, $\hat u = \vec v/|\vec v| \in S^2$ its unit direction, and $\theta \in [0,\pi]$ is the stored half-angle of the rotation about the unit axis $\hat w \in S^2$, a pure real quaternion of norm one. The boost factor is the <strong>square</strong> of the exponential of the conjugate rotor,</p>
+<p>where $\psi \in \mathbb{R}$, $\psi \ge 0$, is the rapidity of the frame, $\vec v \in \mathbb{R}^3$ is its velocity, $\hat u_{\mathrm b} = \vec v/|\vec v| \in \mathcal{A}$ its unit direction, and $\theta \in [0,2\pi]$ is the rotation angle about the unit axis $\hat u_{\mathrm r} \in \mathcal{A}$, a pure real quaternion of norm one; $\mathcal{A}$ is the axis sphere, the set of unit vectors of $\mathbb{R}^3$. The boost factor is the <strong>square</strong> of the exponential of the conjugate rotor,</p>
 <p>$$
-\tilde{\Lambda}^{\natural} = B^{1/2} = \exp\Bigl(-i\frac{\psi}{2}\hat u\Bigr) , \qquad \tilde{\Lambda} = \exp\Bigl(i\frac{\psi}{2}\hat u\Bigr) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u ,
+\tilde{\Lambda}^{\natural} = B^{1/2} = \exp\Bigl(-i\frac{\psi}{2}\hat u_{\mathrm b}\Bigr) , \qquad \tilde{\Lambda} = \exp\Bigl(i\frac{\psi}{2}\hat u_{\mathrm b}\Bigr) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_{\mathrm b} ,
 $$</p>
 <p>which is the positive-definite square root constructed in the section <em>The Boost Factor Is a Square</em> below.</p>
-<p>The four exponents are the two diagonal rows of one rule. For an element $\nu$ and a real $t$, the series $\exp(\nu t)=\sum_{n\ge0}\nu^nt^n/n!$ collapses according to the square of $\nu$: the trigonometric case $\nu^2 = -e_0$ gives $\cos t\,e_0 + \nu\sin t$, the parabolic case $\nu^2 = 0$ gives the truncation $e_0 + \nu t$, and the hyperbolic case $\nu^2 = +e_0$ gives $\cosh t\,e_0 + \nu\sinh t$. The exponent of the boost factor is $-i\psi\hat u$, a Hermitian root of $+e_0$, so the boost is hyperbolic; the exponent of the rotor is $+\theta\hat w$, a real pure root of $-e_0$, so the rotor is trigonometric; the phase exponent $i\alpha$ is the central root of $-e_0$, trigonometric; and the scale exponent $\ln r$ is the real root of $+e_0$, hyperbolic. The parabolic row carries no factor of this representation, although the algebra has nilpotents on which it is occupied.</p>
-<p>The four factors are therefore four exponentials, and the word $e^{i\alpha}B\tilde q$ is their ordered product. The order is the physical order of the operations, because $\exp(-i\psi\hat u)$ and $\exp(\theta\hat w)$ do not commute, and the size of the failure is measured in the section on the order of the factors below.</p>
-<p><strong>The order may not be changed, and the two physical exponentials may not be fused.</strong> The exponents $-i\psi\hat u$ and $\theta\hat w$ are two non-central Hermitian and real-pure elements, and they do not commute; the product of their exponentials is not the exponential of their sum. At the level of the factors the same failure is the one the section on the order of the factors records as $\|B\tilde q - \tilde qB\| = 0.339005$: a boost followed by a rotation is not that rotation followed by that boost. Neither the interchange of the boost and the rotation nor their replacement by a single exponential is therefore available, and the order $e^{i\alpha}B\tilde q$ is the order of the physical operations and not a convention.</p>
+<p>The four exponents are the two diagonal rows of one rule. For an element $\nu$ and a real $t$, the series $\exp(\nu t)=\sum_{n\ge0}\nu^nt^n/n!$ collapses according to the square of $\nu$:</p>
+<ul>
+<li>the trigonometric case $\nu^2 = -e_0$ gives $\cos t\,e_0 + \nu\sin t$;</li>
+<li>the parabolic case $\nu^2 = 0$ gives the truncation $e_0 + \nu t$;</li>
+<li>the hyperbolic case $\nu^2 = +e_0$ gives $\cosh t\,e_0 + \nu\sinh t$.</li>
+</ul>
+<p>The four exponents distribute over these rows:</p>
+<ul>
+<li>the boost factor has exponent $-i\psi\hat u_{\mathrm b}$, a Hermitian root of $+e_0$, so the boost is hyperbolic;</li>
+<li>the rotor has exponent $+\tfrac{\theta}{2}\hat u_{\mathrm r}$, a real pure root of $-e_0$, so the rotor is trigonometric;</li>
+<li>the central phase has exponent $i\alpha$, the central root of $-e_0$, trigonometric;</li>
+<li>the scale has exponent $\ln r$, the real root of $+e_0$, hyperbolic.</li>
+</ul>
+<p>The same four data are collected in the tables below, in the physics normalisation of this article, in which the boost factor is $B = \exp(-i\psi\hat u_{\mathrm b})$ with $\psi$ the rapidity of the frame.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>factor</th>
+<th>name</th>
+<th>real dimension</th>
+<th>exponential</th>
+<th>case</th>
+<th>closed form</th>
+<th>parameter and range</th>
+<th>unit axis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$r$</td>
+<td>scale</td>
+<td>$1$</td>
+<td>$\exp(\ln r)$</td>
+<td>hyperbolic</td>
+<td>$r$</td>
+<td>$\ln r \in \mathbb{R}$, $r > 0$</td>
+<td>$\mathbb{R}e_0$, the real line</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$e^{i\alpha}$</td>
+<td>central phase</td>
+<td>$1$</td>
+<td>$\exp(i\alpha)$</td>
+<td>trigonometric</td>
+<td>$\cos\alpha\,e_0 + i\sin\alpha$</td>
+<td>$\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$</td>
+<td>$i\mathbb{R}\subset\mathbb{C}_{\mathbb{B}}$, the imaginary line</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$B$</td>
+<td>boost factor</td>
+<td>$3$</td>
+<td>$\exp(-i\psi\hat u_{\mathrm b})$</td>
+<td>hyperbolic</td>
+<td>$\cosh\psi\,e_0 - i\sinh\psi\,\hat u_{\mathrm b}$</td>
+<td>rapidity $\psi \in \mathbb{R}$, $\psi \ge 0$</td>
+<td>$\mathbb{M}_+$, traceless; $\hat u_{\mathrm b} \in \mathcal{A}$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\tilde q$</td>
+<td>rotor</td>
+<td>$3$</td>
+<td>$\exp\bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\bigr)$</td>
+<td>trigonometric</td>
+<td>$\cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,\hat u_{\mathrm r}$</td>
+<td>rotation angle $\theta \in [0,2\pi]$</td>
+<td>$\mathbb{M}_- \cap \mathrm{Vect}(\mathbb{B})$; $\hat u_{\mathrm r} \in \mathcal{A}$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>factor</th>
+<th>parameter</th>
+<th>root</th>
+<th>its square</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r$</td>
+<td>$\ln r$</td>
+<td>$e_0$</td>
+<td>$+e_0$</td>
+</tr>
+<tr>
+<td>$e^{i\alpha}$</td>
+<td>$\alpha$</td>
+<td>$i$</td>
+<td>$-e_0$</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>$\psi$</td>
+<td>$-i\hat u_{\mathrm b}$</td>
+<td>$+e_0$</td>
+</tr>
+<tr>
+<td>$\tilde q$</td>
+<td>$\tfrac{\theta}{2}$</td>
+<td>$\hat u_{\mathrm r}$</td>
+<td>$-e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The parabolic row carries no factor of this representation, although the algebra has nilpotents on which it is occupied.</p>
+<p>The four factors are therefore four exponentials, and the word $e^{i\alpha}B\tilde q$ is their ordered product. The order is the physical order of the operations, because $\exp(-i\psi\hat u_{\mathrm b})$ and $\exp\bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\bigr)$ do not commute, and the size of the failure is measured in the section on the order of the factors below.</p>
+<p><strong>The order may not be changed, and the two physical exponentials may not be fused.</strong> The exponents $-i\psi\hat u_{\mathrm b}$ and $\tfrac{\theta}{2}\hat u_{\mathrm r}$ are two non-central Hermitian and real-pure elements, and they do not commute; the product of their exponentials is not the exponential of their sum. At the level of the factors the same failure is the one the section on the order of the factors records as $\|B\tilde q - \tilde qB\| = 0.339005$: a boost followed by a rotation is not that rotation followed by that boost. Neither the interchange of the boost and the rotation nor their replacement by a single exponential is therefore available, and the order $e^{i\alpha}B\tilde q$ is the order of the physical operations and not a convention.</p>
 <p><strong>The first row of the table in exponents.</strong> The frame of velocity $0.6c$ along $e_1$ has $\psi = \operatorname{atanh}0.6 = 0.693147181$, so that</p>
 <p>$$
 \exp(-i\psi e_1) = \cosh\psi - i\sinh\psi\,e_1 = 1.25 - 0.75\,ie_1 = B , \qquad \exp\Bigl(i\frac{\psi}{2}e_1\Bigr) = 1.060660172 + 0.353553391\,ie_1 = \tilde{\Lambda} ,
@@ -137,10 +257,10 @@ $$</p>
 <h3 id="what-the-two-extra-factors-mean">What the Two Extra Factors Mean</h3>
 <p>For a general element of the algebra, and not only for a Lorentz rotor, the modulus is not the unit and cannot be discarded. The group of units of $\mathbb{B}$ is $GL(2,\mathbb{C})$, whose polar representation carries a positive scale and a unitary phase in addition to the positive Hermitian factor and the unitary factor, and the two extra factors are the two extra real dimensions $1+1$ of the modulus. In the four-vector interpretation they are the two numbers that specify a four-vector rather than a Lorentz transformation: its <strong>length</strong> and the sector in which it lives.</p>
 <h2 id="the-central-phase-and-the-two-sectors">The Central Phase and the Two Sectors</h2>
-<h3 id="the-phase-of-a-four-vector-is-the-math104">The Phase of a Four-Vector Is the $ict$</h3>
-<p>Take a four-position on a world line of velocity $\vec v = \beta c\,\hat u$, with time component $ct$. In the material sector it is</p>
+<h3 id="the-phase-of-a-four-vector-is-the-math153">The Phase of a Four-Vector Is the $ict$</h3>
+<p>Take a four-position on a world line of velocity $\vec v = \beta c\,\hat u_{\mathrm b}$, with time component $ct$. In the material sector it is</p>
 <p>$$
-\tilde{Q} = i\,ct\,e_0 + \beta c t\,\hat u ,
+\tilde{Q} = i\,ct\,e_0 + \beta c t\,\hat u_{\mathrm b} ,
 $$</p>
 <p>and its biquaternion norm is the interval</p>
 <p>$$
@@ -162,7 +282,7 @@ $$</p>
 <p>Hence $r$ and $\alpha$ are invariants of the orbit of $\tilde{Q}$ under the Lorentz group, and the phase is not a gauge artefact of the frame: two elements with different phases cannot be carried into one another by a Lorentz transformation. The phase is an invariant of the element, and it is the only one of the four factors that the algebra's own symmetry group cannot move.</p>
 <h2 id="the-boost-and-the-two-rotor-normalisations">The Boost and the Two Rotor Normalisations</h2>
 <h3 id="the-boost-factor-is-a-square">The Boost Factor Is a Square</h3>
-<p>The boost factor of the polar representation of a four-vector is the <strong>square</strong> of the boost rotor that the physics articles use, taken in the normalisation that carries the rest frame to the lab frame, and the reason is the structure of the action. A Lorentz rotor $\tilde{\Lambda}$ acts on a four-vector by conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, so the rotor appears twice. With the corpus's convention $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$, $\hat u = \vec v/|\vec v|$, the rotor carries the four-position of a particle of velocity $\vec v$ into its rest four-position,</p>
+<p>The boost factor of the polar representation of a four-vector is the <strong>square</strong> of the boost rotor that the physics articles use, taken in the normalisation that carries the rest frame to the lab frame, and the reason is the structure of the action. A Lorentz rotor $\tilde{\Lambda}$ acts on a four-vector by conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, so the rotor appears twice. With the corpus's convention $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$, $\hat u_{\mathrm b} = \vec v/|\vec v|$, the rotor carries the four-position of a particle of velocity $\vec v$ into its rest four-position,</p>
 <p>$$
 \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} = ic\tau\,e_0 ,
 \qquad\text{hence}\qquad
@@ -220,7 +340,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>In each row $B = (\tilde{\Lambda}^{\natural})^2$ to $3.3\times10^{-16}$, the scale equals $ct\sqrt{1-\beta^2}$, the phase is $\pi/2$, and the rotor $\tilde q$ is the identity to $7\times10^{-16}$. The rotor in the last column is $\tilde{\Lambda}^{\natural}$, the conjugate of the corpus's boost rotor $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$ with $\tanh\psi = \beta$ and $\hat u = \vec v/|\vec v|$; it is the rotor of the inverse boost, of rapidity $-\psi$, so the sign of its vector part is opposite to the sign of $\vec v$.</p>
+<p>In each row $B = (\tilde{\Lambda}^{\natural})^2$ to $3.3\times10^{-16}$, the scale equals $ct\sqrt{1-\beta^2}$, the phase is $\pi/2$, and the rotor $\tilde q$ is the identity to $7\times10^{-16}$. The rotor in the last column is $\tilde{\Lambda}^{\natural}$, the conjugate of the corpus's boost rotor $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ with $\tanh\psi = \beta$ and $\hat u_{\mathrm b} = \vec v/|\vec v|$; it is the rotor of the inverse boost, of rapidity $-\psi$, so the sign of its vector part is opposite to the sign of $\vec v$.</p>
 <h3 id="the-rotor-and-the-thomaswigner-rotation">The Rotor and the Thomas–Wigner Rotation</h3>
 <p>The fourth factor is the unit real quaternion, the element of $\mathrm{Sp}(1) = SU(2)$, the group of unit real quaternions, and it is the spatial rotation of the frame. It is not optional even for a pure boost, because the boosts do not close: the product of two non-collinear boost rotors has a non-hermitian part, and the Cartan decomposition of that product exhibits it as the <strong>Thomas–Wigner rotation</strong>, which is the rotor factor of the polar representation of the product. The algebraic mechanism is the non-commutativity of the boost factor with the rotor, taken up with its numbers in the section <em>The Order of the Factors</em> below. The composition law, the angle of the Wigner rotation, and the information content of the boost are the subjects of the companion articles <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>, <em>The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form</em> and <em>Exercise: The Thomas Precession</em>.</p>
 <p>The rotor of the representation of a four-vector has a direct kinematic interpretation. A four-position on a world line with velocity $\vec v$ has $B = (\tilde{\Lambda}^{\natural})^2$ and $\tilde q = e_0$ in the frame in which $\vec v$ is the velocity, as the table shows: the boost factor is the square of the rotor that carries the rest frame to the lab frame, and the rotor is trivial because a single boost needs no rotation. The rotor becomes nontrivial whenever the element is not a pure boost of a coordinate direction, and it is then the rotation that the residual frame carries.</p>
@@ -344,7 +464,9 @@ $$</p>
 </ul>
 <p><strong>Open question — is the scale a field or a gauge choice?</strong> The scale $r$ multiplies the interval without entering any of the four general products as a factor of its own, so the polar form alone does not say what the scale is. <strong>Whether it is a dynamical field, as the conformal interpretation of <em>Conformal Invariance and the Massless Limit in Biquaternionic Form</em> proposes, or a gauge choice of the local complex structure, is open</strong>, and it is the same question as whether the local complex structure is a field or a frame (<em>The Local Complex Structure and the Speed of Light</em>).</p>
 <h2 id="summary">Summary</h2>
-<p>The polar representation of a biquaternion is $r e^{i\alpha}B\tilde q$, and in the physics of the corpus its four factors are the scale, the central phase, the Lorentz boost and the spatial rotation. On the Lorentz group, where the biquaternion norm is one, the scale and the phase are trivial and the representation is the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde{R}$, with the positivity of the boost factor supplying the normalisation. The modulus is $\sqrt{\det\mathsf{M}_2(\tilde{Q})}$, the scale is its modulus and the phase is half its argument, and both are invariants of the Lorentz orbit, since the determinant is multiplicative and the rotor conjugation multiplies by $N(\tilde{\Lambda})N(\tilde{\Lambda}^{*}) = 1$. The boost factor of a four-vector is the square of the physics boost rotor in the rest-to-lab normalisation, $B = (\tilde{\Lambda}^{\natural})^2 = -(i/c)\tilde{V}$, so that rotor is the unique positive-definite square root of the representation's boost; for a four-position on a world line the scale is $c$ times the proper time and the phase is $\pi/2$, the angle that makes the time coordinate imaginary. The rotor is the Thomas–Wigner rotation when two boosts are composed, and it is the algebraic expression of the non-closure of the boosts. The representation fails exactly on the light cone, where the determinant vanishes, the element is a zero divisor, and the four-vector has no proper length.</p>
+<p>The polar representation of a biquaternion is $r e^{i\alpha}B\tilde q$, and in the physics of the corpus its four factors are the scale, the central phase, the Lorentz boost and the spatial rotation. On the Lorentz group, where the biquaternion norm is one, the scale and the phase are trivial and the representation is the Cartan decomposition $\tilde{\Lambda} = \tilde{B}\tilde{R}$, with the positivity of the boost factor supplying the normalisation.</p>
+<p>The modulus is $\sqrt{\det\mathsf{M}_2(\tilde{Q})}$, the scale is its modulus and the phase is half its argument, and both are invariants of the Lorentz orbit, since the determinant is multiplicative and the rotor conjugation multiplies by $N(\tilde{\Lambda})N(\tilde{\Lambda}^{*}) = 1$. The boost factor of a four-vector is the square of the physics boost rotor in the rest-to-lab normalisation, $B = (\tilde{\Lambda}^{\natural})^2 = -(i/c)\tilde{V}$, so that rotor is the unique positive-definite square root of the representation's boost; for a four-position on a world line the scale is $c$ times the proper time and the phase is $\pi/2$, the angle that makes the time coordinate imaginary.</p>
+<p>The rotor is the Thomas–Wigner rotation when two boosts are composed, and it is the algebraic expression of the non-closure of the boosts. The representation fails exactly on the light cone, where the determinant vanishes, the element is a zero divisor, and the four-vector has no proper length.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -387,7 +509,7 @@ $$</p>
 <td>the rotor, a unit real quaternion</td>
 </tr>
 <tr>
-<td>$\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u$, $\hat u = \vec v/|\vec v|$</td>
+<td>$\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$, $\hat u_{\mathrm b} = \vec v/|\vec v|$</td>
 <td>the physics boost rotor; for a four-position $B = (\tilde{\Lambda}^{\natural})^2 = -(i/c)\tilde{V}$</td>
 </tr>
 <tr>
@@ -413,7 +535,7 @@ $$</p>
 <li><em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em> (<code>articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md</code>), for the Cartan decomposition, the non-closure of the boosts and the Thomas–Wigner rotation.</li>
 <li><em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em> (<code>articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.md</code>), for the $\pm e_0$ kernel and the sign normalisation of the rotor.</li>
 <li><em>Spin Entropy and the Lorentz Group in Biquaternionic Form</em> (<code>articles_physics/spin-entropy-and-the-lorentz-group-in-biquaternionic-form.md</code>), for the interpretation of the central circle and the boost parameters as information.</li>
-<li><em>Complex Polar Element Representation</em> (<code>articles_maths/complex-polar-element-representation.md</code>) and <em>Split-Complex Polar Element Representation</em> (<code>articles_maths/split-complex-polar-element-representation.md</code>), for the two-dimensional members of the series, where the exponential $e^{\alpha\theta}$ of each factor is classified by the trichotomy $\nu^2 = -1, 0, +1$.</li>
+<li><em>Complex Polar Element Representation</em> (<code>articles_maths/complex-polar-element-representation.md</code>) and <em>Split-Complex Polar Element Representation</em> (<code>articles_maths/split-complex-polar-element-representation.md</code>), for the two-dimensional members of the series, where the exponential $e^{\alpha\theta}$ of each factor is classified by the rule $\nu^2 = -1, 0, +1$.</li>
 <li>S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", <em>Advances in Applied Clifford Algebras</em> (2020), DOI 10.1007/s00006-020-1048-y; technical report CES-535, University of Essex (2019), for the published two-exponential word discussed in the section on the order of the factors, whose hyperbolic factor is the boost referred to the rotor-rotated axis.</li>
 </ul>
       </div>

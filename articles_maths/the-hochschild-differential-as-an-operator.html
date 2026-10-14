@@ -54,7 +54,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>A cochain complex is a graded module with an operator of degree one whose square is zero, and the first cochain complex that an algebra produces from itself is the <strong>Hochschild complex</strong>. Its cochains are the multilinear maps on the algebra with values in a bimodule, and its operator is the <strong>Hochschild differential</strong> $b$, the alternating sum of the ways of multiplying the arguments together and acting on the value. The whole content of the complex is two properties of this single operator: it is $k$-linear of degree one, and its square is zero.</p>
 <p>This article studies the differential as an operator. It fixes the cochain module, defines $b$ on it, proves $b^2 = 0$ by a cancellation of the twelve terms, and reads the consequence — the cocycles, the coboundaries and the cohomology — as the kernel, the image and the quotient of the operator. The cohomology itself, its identification with the derived functors of the invariants, its low-dimensional interpretations and its products are the subject of <em>Hochschild Homology</em>, and the general theory of a cochain complex, its differential and its cohomology belongs to <em>Homological Algebra</em>; the present article is the operator layer of the first and cites the second for the ambient theory.</p>
-<p>Throughout, $k$ is a commutative ring with identity $1 \neq 0$, $A$ is a unital associative $k$-algebra, not necessarily commutative, and $M$ is an $A$-bimodule. The tensor powers are over $k$, and $\operatorname{Hom}$ without a subscript means $\operatorname{Hom}_k$; the enveloping algebra is $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{op}}$, so that $A$-bimodules are the left $A^{\mathrm{e}}$-modules. No norm, distance or completion occurs.</p>
+<p>Throughout, $k$ is a commutative ring with identity $1 \neq 0$, $A$ is a unital associative $k$-algebra, not necessarily commutative, and $M$ is an $A$-bimodule. The tensor powers are over $k$, and $\operatorname{Hom}$ without a subscript means $\operatorname{Hom}_k$; the enveloping algebra is $A^{\mathrm{e}} = A \otimes_k A^{\mathrm{opp}}$, so that $A$-bimodules are the left $A^{\mathrm{e}}$-modules. No norm, distance or completion occurs.</p>
 <h2 id="the-cochain-module">The Cochain Module</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> For $n \geq 0$ the module of <strong>$n$-cochains</strong> of $A$ with coefficients in $M$ is</p>
@@ -202,7 +202,7 @@ $$</p>
 <td>an $A$-bimodule</td>
 </tr>
 <tr>
-<td>$A^{\mathrm{e}} = A \otimes_k A^{\mathrm{op}}$</td>
+<td>$A^{\mathrm{e}} = A \otimes_k A^{\mathrm{opp}}$</td>
 <td>the enveloping algebra</td>
 </tr>
 <tr>

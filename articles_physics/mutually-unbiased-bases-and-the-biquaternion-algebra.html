@@ -70,22 +70,22 @@ $$</p>
 <p>$$
 \tilde{P}^2 = \tilde{P}, \qquad \mathrm{Tr}(\tilde{P}) = 1, \qquad \tilde{P}\geq0 .
 $$</p>
-<p>Up to a phase it is $\tilde\Pi_1(\hat{\mu}) = \tfrac12(e_0 + i\hat{\mu})$ for a unit vector $\hat{\mu}\in\mathbb{R}^3$, and its orthogonal complement is $\tilde\Pi_2(\hat{\mu}) = \tfrac12(e_0-i\hat{\mu})$. The pair satisfies</p>
+<p>Up to a phase it is $\tilde\Pi_1(\hat u) = \tfrac12(e_0 + i\hat u)$ for a unit vector $\hat u\in\mathbb{R}^3$, and its orthogonal complement is $\tilde\Pi_2(\hat u) = \tfrac12(e_0-i\hat u)$. The pair satisfies</p>
 <p>$$
 \tilde\Pi_1\tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0 ,
 $$</p>
-<p>so $\{\tilde\Pi_1(\hat{\mu}),\tilde\Pi_2(\hat{\mu})\}$ is a complete orthogonal family: an <strong>idempotent basis</strong> of the defining module. Every basis of the module arises this way, one basis for each direction $\hat{\mu}$ on the Bloch sphere; a basis is a pair of antipodal pure states.</p>
+<p>so $\{\tilde\Pi_1(\hat u),\tilde\Pi_2(\hat u)\}$ is a complete orthogonal family: an <strong>idempotent basis</strong> of the defining module. Every basis of the module arises this way, one basis for each direction $\hat u$ on the Bloch sphere; a basis is a pair of antipodal pure states.</p>
 <h3 id="the-trace-pairing-between-idempotents">The trace pairing between idempotents</h3>
-<p>For two directions $\hat{\mu},\hat{\nu}$ the trace pairing of the positive idempotents is</p>
+<p>For two directions $\hat u,\hat{\nu}$ the trace pairing of the positive idempotents is</p>
 <p>$$
-\mathrm{Tr}\bigl(\tilde\Pi_1(\hat{\mu})\tilde\Pi_1(\hat{\nu})\bigr)
-= \tfrac{1}{4}\mathrm{Tr}\bigl((e_0+i\hat{\mu})(e_0+i\hat{\nu})\bigr)
-= \tfrac{1}{4}\bigl(2 - 2\,\hat{\mu}\cdot\hat{\nu}\bigr)
-= \tfrac{1}{2}\bigl(1 - \hat{\mu}\cdot\hat{\nu}\bigr),
+\mathrm{Tr}\bigl(\tilde\Pi_1(\hat u)\tilde\Pi_1(\hat{\nu})\bigr)
+= \tfrac{1}{4}\mathrm{Tr}\bigl((e_0+i\hat u)(e_0+i\hat{\nu})\bigr)
+= \tfrac{1}{4}\bigl(2 - 2\,\hat u\cdot\hat{\nu}\bigr)
+= \tfrac{1}{2}\bigl(1 - \hat u\cdot\hat{\nu}\bigr),
 $$</p>
 <p>using $\mathrm{Tr}(e_0)=2$, $\mathrm{Tr}(ie_k)=0$ and $\mathrm{Tr}((ie_j)(ie_k)) = 2\delta_{jk}$. In Hilbert-space terms this is the squared overlap</p>
 <p>$$
-\bigl|\langle \psi(\hat{\mu})|\psi(\hat{\nu})\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\hat{\mu}\cdot\hat{\nu}\bigr),
+\bigl|\langle \psi(\hat u)|\psi(\hat{\nu})\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\hat u\cdot\hat{\nu}\bigr),
 $$</p>
 <p>which vanishes for antipodal directions and equals one for coincident directions. The trace pairing is thus a measure of the distinguishability of two rays, and it is the object that the mutual-unbiasedness condition constrains.</p>
 <h3 id="the-three-coordinate-bases">The three coordinate bases</h3>
@@ -129,7 +129,7 @@ $$</p>
 $$</p>
 <p>The two cases are exactly the normalization and orthogonality of the basis. Thus the same formula produces orthogonality within a basis and unbiasedness across bases, the sign of the unit's square being responsible for the difference. This is the algebraic statement that the three bases are as correlated as possible internally and as uncorrelated as possible externally.</p>
 <h3 id="maximality">Maximality</h3>
-<p>For the qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and the three coordinate bases attain it. No fourth basis can be unbiased with all three: a fourth direction $\hat{\mu}$ would need $\hat{\mu}\cdot\hat{e}_k = 0$ for $k=1,2,3$, which is impossible for a unit vector in $\mathbb{R}^3$. The algebra thus supplies a <strong>complete</strong> set of mutually unbiased bases, and it does so through the three pairwise orthogonal directions singled out by the imaginary units. The completeness is not merely a counting statement; it is what makes the three coordinate measurements tomographically sufficient.</p>
+<p>For the qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and the three coordinate bases attain it. No fourth basis can be unbiased with all three: a fourth direction $\hat u$ would need $\hat u\cdot\hat{e}_k = 0$ for $k=1,2,3$, which is impossible for a unit vector in $\mathbb{R}^3$. The algebra thus supplies a <strong>complete</strong> set of mutually unbiased bases, and it does so through the three pairwise orthogonal directions singled out by the imaginary units. The completeness is not merely a counting statement; it is what makes the three coordinate measurements tomographically sufficient.</p>
 <h3 id="the-overlap-matrix">The overlap matrix</h3>
 <p>Arrange the six pure states as columns in the order</p>
 <p>$$
@@ -248,8 +248,8 @@ $$</p>
 <td>Central scalar imaginary</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$</td>
-<td>Rank-one idempotents along $\hat{\mu}$</td>
+<td>$\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0\pm i\hat u)$</td>
+<td>Rank-one idempotents along $\hat u$</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$, $\sum_i\tilde\Pi_i = e_0$</td>

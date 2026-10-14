@@ -65,8 +65,8 @@ $$</p>
 <p><strong>Definition.</strong> An <strong>involution of a group</strong> $G$ is a bijection $\sigma : G \to G$ satisfying $\sigma(ab) = \sigma(b)\sigma(a)$ for all $a, b \in G$ and $\sigma^2 = \mathrm{id}$. An <strong>involutive group</strong> is a pair $(G, \sigma)$ consisting of a group and an involution of it.</p>
 <p><strong>Remark (determination on generators).</strong> An involution is determined by its values on a generating set, but the values alone do not tell a homomorphism from an anti-homomorphism: on a nonabelian group both exist with the same values on the generators and they differ on products. On the dihedral group $D_n = \langle r, s \rangle$ the assignment $r \mapsto r$, $s \mapsto s$ extended multiplicatively is the identity, while the same assignment extended anti-multiplicatively is the word-reversal involution, which sends $rs$ to $sr = r^{-1}s$. The two maps agree on every element represented by a palindrome, the powers of $r$ among them, and they differ already on the two-letter word $rs$, which the identity sends to $rs$ and the reversal to $sr = r^{-1}s$.</p>
 <h3 id="the-opposite-group-and-inversion">The Opposite Group and Inversion</h3>
-<p><strong>Definition.</strong> The <strong>opposite group</strong> $G^{\mathrm{op}}$ has the same underlying set as $G$ and the product $a \cdot^{\mathrm{op}} b = ba$.</p>
-<p>An involution of $G$ is exactly an isomorphism $G \to G^{\mathrm{op}}$ of order two, and the inversion $\iota(g) = g^{-1}$ is such an isomorphism: $\iota(ab) = (ab)^{-1} = b^{-1}a^{-1} = \iota(a)\cdot^{\mathrm{op}}\iota(b)$. The map $\iota$ is an involution of $G$, and it exhibits the isomorphism $G \cong G^{\mathrm{op}}$ explicitly by a formula that needs no choice.</p>
+<p><strong>Definition.</strong> The <strong>opposite group</strong> $G^{\mathrm{opp}}$ has the same underlying set as $G$ and the product $a \cdot^{\mathrm{opp}} b = ba$.</p>
+<p>An involution of $G$ is exactly an isomorphism $G \to G^{\mathrm{opp}}$ of order two, and the inversion $\iota(g) = g^{-1}$ is such an isomorphism: $\iota(ab) = (ab)^{-1} = b^{-1}a^{-1} = \iota(a)\cdot^{\mathrm{opp}}\iota(b)$. The map $\iota$ is an involution of $G$, and it exhibits the isomorphism $G \cong G^{\mathrm{opp}}$ explicitly by a formula that needs no choice.</p>
 <p><strong>Remark.</strong> The contrast with rings is sharp. For a ring the existence of an anti-automorphism is a genuine condition, and the involution is the certificate that the ring is isomorphic to its opposite ring; for a group the inversion supplies the certificate for every group at once. What is informative in the group case is the set of involutions and the structure each of them defines, not the bare existence.</p>
 <h3 id="anti-automorphisms-and-automorphisms">Anti-automorphisms and Automorphisms</h3>
 <p><strong>Proposition.</strong> The composition of two anti-automorphisms is an automorphism, and the composition of an automorphism with an anti-automorphism is an anti-automorphism. Hence $\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$ is a subgroup of $\operatorname{Sym}(G)$, written $\operatorname{Aut}^*(G)$, in which $\operatorname{Aut}(G)$ has index two and $\operatorname{Anti}(G)$ is a coset.</p>
@@ -312,8 +312,8 @@ $$</p>
 <td>the inversion $\iota(g) = g^{-1}$, the canonical involution of every group</td>
 </tr>
 <tr>
-<td>$G^{\mathrm{op}}$</td>
-<td>the opposite group, with $a \cdot^{\mathrm{op}} b = ba$</td>
+<td>$G^{\mathrm{opp}}$</td>
+<td>the opposite group, with $a \cdot^{\mathrm{opp}} b = ba$</td>
 </tr>
 <tr>
 <td>$\operatorname{Anti}(G)$</td>

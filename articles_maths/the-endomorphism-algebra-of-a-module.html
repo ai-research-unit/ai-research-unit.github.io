@@ -64,11 +64,11 @@
 <p>For a free module the endomorphism algebra is a matrix algebra, and the matrix is read in the standard basis.</p>
 <p><strong>Theorem.</strong> For $n \geq 1$ there is an isomorphism of $R$-algebras</p>
 <p>$$
-\operatorname{End}_A({}_A A^n) \xrightarrow{\ \sim\ } M_n(A^{\mathrm{op}}),
+\operatorname{End}_A({}_A A^n) \xrightarrow{\ \sim\ } M_n(A^{\mathrm{opp}}),
 $$</p>
-<p>given on the row $e_i$ of the standard basis by $f(e_j)=\sum_i e_i\,a_{ij}$, so that $f(v)=vX$ for the matrix $X=(a_{ij})$, and the product on the right is the matrix product in $A^{\mathrm{op}}$.</p>
-<p><em>Proof.</em> An $A$-linear map is determined by its values on the basis, and $A$-linearity forces $f(a e_j)=a f(e_j)$, which is the row-vector computation $f(av)=(av)X=a(vX)$ by associativity. Thus every such $f$ is right multiplication by a unique matrix $X$ with entries in $A$. Composition is $f_X \circ f_Y(v)=(vY)X=v(YX)$, so the ring of endomorphisms is the opposite of the matrix ring $M_n(A)$ with the usual product, that is $M_n(A^{\mathrm{op}})$. The $R$-linearity is entrywise.</p>
-<p>For $n=1$ this is the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{op}}$ of <em>Automorphisms of Modules over an Algebra</em>, and it is the base case of the theorem.</p>
+<p>given on the row $e_i$ of the standard basis by $f(e_j)=\sum_i e_i\,a_{ij}$, so that $f(v)=vX$ for the matrix $X=(a_{ij})$, and the product on the right is the matrix product in $A^{\mathrm{opp}}$.</p>
+<p><em>Proof.</em> An $A$-linear map is determined by its values on the basis, and $A$-linearity forces $f(a e_j)=a f(e_j)$, which is the row-vector computation $f(av)=(av)X=a(vX)$ by associativity. Thus every such $f$ is right multiplication by a unique matrix $X$ with entries in $A$. Composition is $f_X \circ f_Y(v)=(vY)X=v(YX)$, so the ring of endomorphisms is the opposite of the matrix ring $M_n(A)$ with the usual product, that is $M_n(A^{\mathrm{opp}})$. The $R$-linearity is entrywise.</p>
+<p>For $n=1$ this is the identification $\operatorname{End}_A({}_A A)\cong A^{\mathrm{opp}}$ of <em>Automorphisms of Modules over an Algebra</em>, and it is the base case of the theorem.</p>
 <h3 id="the-algebra-of-an-isotypic-module">The algebra of an isotypic module</h3>
 <p>For a sum of copies of one simple module the endomorphism algebra is a matrix algebra over a division ring, by the density theorem.</p>
 <p><strong>Proposition.</strong> Let $S$ be a simple left $A$-module, $D=\operatorname{End}_A(S)$, and $M=S^n$ a finite direct sum. Then</p>
@@ -107,11 +107,11 @@ $$</p>
 <h3 id="the-centre-of-a-free-modules-endomorphism-algebra">The centre of a free module's endomorphism algebra</h3>
 <p><strong>Corollary.</strong> For a free module ${}_A A^n$,</p>
 <p>$$
-Z(\operatorname{End}_A(A^n)) \cong Z(A^{\mathrm{op}}) = Z(A),
+Z(\operatorname{End}_A(A^n)) \cong Z(A^{\mathrm{opp}}) = Z(A),
 $$</p>
 <p>the scalar matrices with entries in the centre of the algebra.</p>
-<p><em>Proof.</em> Combine the matrix theorem with the identification $\operatorname{End}_A(A^n)\cong M_n(A^{\mathrm{op}})$ and $Z(A^{\mathrm{op}})=Z(A)$.</p>
-<p>Thus for the regular module $E=A^{\mathrm{op}}$ and $Z(E)=Z(A)$, and enlarging the rank does not enlarge the centre: the centre of the endomorphism algebra of a free module is the centre of the algebra, whatever the rank.</p>
+<p><em>Proof.</em> Combine the matrix theorem with the identification $\operatorname{End}_A(A^n)\cong M_n(A^{\mathrm{opp}})$ and $Z(A^{\mathrm{opp}})=Z(A)$.</p>
+<p>Thus for the regular module $E=A^{\mathrm{opp}}$ and $Z(E)=Z(A)$, and enlarging the rank does not enlarge the centre: the centre of the endomorphism algebra of a free module is the centre of the algebra, whatever the rank.</p>
 <h3 id="the-centre-of-an-isotypic-modules-endomorphism-algebra">The centre of an isotypic module's endomorphism algebra</h3>
 <p><strong>Corollary.</strong> With $S$ simple, $D=\operatorname{End}_A(S)$ and $M=S^n$,</p>
 <p>$$
@@ -135,14 +135,14 @@ $$</p>
 <p><strong>Proposition.</strong> If $M$ is simple then $E=\operatorname{End}_A(M)$ is a division ring and $Z(E)$ is a field.</p>
 <p><em>Proof.</em> Schur's lemma gives the division ring, and the centre of a division ring is a field.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>(a) The regular module over a commutative algebra.</strong> For $A$ commutative and $M=A$, $E=A^{\mathrm{op}}=A$ and $Z(E)=Z(A)=A$: every endomorphism is a scalar and the endomorphism algebra is the algebra itself.</p>
+<p><strong>(a) The regular module over a commutative algebra.</strong> For $A$ commutative and $M=A$, $E=A^{\mathrm{opp}}=A$ and $Z(E)=Z(A)=A$: every endomorphism is a scalar and the endomorphism algebra is the algebra itself.</p>
 <p><strong>(b) A matrix algebra on its defining module.</strong> For $A=M_n(F)$ and $M=F^n$ simple, $D=\operatorname{End}_A(F^n)=F$, so $E=F$ and $Z(E)=F$; the endomorphism algebra is one-dimensional and equal to its centre.</p>
-<p><strong>(c) A matrix algebra on itself.</strong> For $A=M_n(F)$ and $M=A$, $E=M_n(F)^{\mathrm{op}}$, and $Z(E)=F\cdot I$: the centre is the scalars, one-dimensional, and the endomorphism algebra is not commutative for $n \geq 2$.</p>
+<p><strong>(c) A matrix algebra on itself.</strong> For $A=M_n(F)$ and $M=A$, $E=M_n(F)^{\mathrm{opp}}$, and $Z(E)=F\cdot I$: the centre is the scalars, one-dimensional, and the endomorphism algebra is not commutative for $n \geq 2$.</p>
 <p><strong>(d) A free module of higher rank.</strong> For $M=A^n$ with $A$ a field $F$, $E=M_n(F)$ and $Z(E)=F$, whatever $n$ is.</p>
-<p><strong>(e) The quaternions.</strong> For $A=\mathbb{H}$ and $M=\mathbb{H}$, $E\cong\mathbb{H}^{\mathrm{op}}\cong\mathbb{H}$ and $Z(E)=\mathbb{R}$, the real scalars; the endomorphism algebra is a division ring and its centre is the base field.</p>
+<p><strong>(e) The quaternions.</strong> For $A=\mathbb{H}$ and $M=\mathbb{H}$, $E\cong\mathbb{H}^{\mathrm{opp}}\cong\mathbb{H}$ and $Z(E)=\mathbb{R}$, the real scalars; the endomorphism algebra is a division ring and its centre is the base field.</p>
 <p><strong>(f) A semisimple module with two components.</strong> For $A=F$ a field and $M=F\oplus F$, $E\cong M_2(F)$, with centre $F$; for two non-isomorphic simple modules, $A=M_n(F)\times M_m(F)$ and $M=F^n\oplus F^m$, $E\cong F\times F$ is commutative and equal to its centre.</p>
 <h2 id="summary">Summary</h2>
-<p>The endomorphism ring $E=\operatorname{End}_A(M)$ of a left $A$-module is a unital $R$-algebra, and it is the subject here together with its centre. For a free module, $E\cong M_n(A^{\mathrm{op}})$, the matrices over the opposite algebra, so for the regular module $E\cong A^{\mathrm{op}}$; for a finite isotypic module $S^n$ over a simple $S$, $E\cong M_n(D)$ with $D=\operatorname{End}_A(S)$ a division ring; and for a semisimple module of finite length $M=S_1^{n_1}\oplus\cdots\oplus S_k^{n_k}$, $E\cong\prod_i M_{n_i}(D_i)$. The centre of a matrix algebra is the scalar matrices with entries in the centre of the coefficient ring, so the centre of the endomorphism algebra of a free module of any rank is $Z(A)$, that of an isotypic module is $Z(D)$, and in the semisimple case it is $\prod_i Z(D_i)$. The centre is $E\cap E'$, the operators that are $A$-linear and commute with every $A$-linear operator, and $M$ is a module over it on which $E$ acts by $Z(E)$-linear maps. The endomorphism algebra is commutative exactly when the module is multiplicity-free with commutative division-ring endomorphisms, and it is a division ring exactly when the module is simple.</p>
+<p>The endomorphism ring $E=\operatorname{End}_A(M)$ of a left $A$-module is a unital $R$-algebra, and it is the subject here together with its centre. For a free module, $E\cong M_n(A^{\mathrm{opp}})$, the matrices over the opposite algebra, so for the regular module $E\cong A^{\mathrm{opp}}$; for a finite isotypic module $S^n$ over a simple $S$, $E\cong M_n(D)$ with $D=\operatorname{End}_A(S)$ a division ring; and for a semisimple module of finite length $M=S_1^{n_1}\oplus\cdots\oplus S_k^{n_k}$, $E\cong\prod_i M_{n_i}(D_i)$. The centre of a matrix algebra is the scalar matrices with entries in the centre of the coefficient ring, so the centre of the endomorphism algebra of a free module of any rank is $Z(A)$, that of an isotypic module is $Z(D)$, and in the semisimple case it is $\prod_i Z(D_i)$. The centre is $E\cap E'$, the operators that are $A$-linear and commute with every $A$-linear operator, and $M$ is a module over it on which $E$ acts by $Z(E)$-linear maps. The endomorphism algebra is commutative exactly when the module is multiplicity-free with commutative division-ring endomorphisms, and it is a division ring exactly when the module is simple.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -181,11 +181,11 @@ $$</p>
 <td>the centralizer of $E$ in $\operatorname{End}_R(M)$</td>
 </tr>
 <tr>
-<td>$A^{\mathrm{op}}$</td>
+<td>$A^{\mathrm{opp}}$</td>
 <td>opposite algebra, product $a \cdot_{\mathrm{op}} b = ba$</td>
 </tr>
 <tr>
-<td>$M_n(A^{\mathrm{op}})$</td>
+<td>$M_n(A^{\mathrm{opp}})$</td>
 <td>matrices over the opposite algebra, $=\operatorname{End}_A(A^n)$</td>
 </tr>
 <tr>

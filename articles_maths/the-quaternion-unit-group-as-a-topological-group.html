@@ -88,7 +88,7 @@ $$</p>
 \exp(\tilde q)=\sum_{n\geq0}\frac{\tilde q^{n}}{n!}
 $$</p>
 <p>converges everywhere, takes values in $\mathbb{H}^\times$, is continuous, and is surjective onto $\mathbb{H}^\times$; on the pure quaternions it is $\exp(\vec v)=\cos\lvert\vec v\rvert+\dfrac{\vec v}{\lvert\vec v\rvert}\sin\lvert\vec v\rvert$, a unit quaternion. Restricted to the open band $\{\tilde q:\lvert\vec q\rvert<\pi\}$ the map $\exp$ is a homeomorphism onto $\mathbb{H}^\times$ with the negative scalar ray removed.</p>
-<p><em>Proof.</em> The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=e^{q_0}\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_0e_0+\vec v$, $\exp(\tilde q)=e^{q_0}\exp(\vec v)$, and $\exp(\vec v)=\cos\lvert\vec v\rvert+\hat v\sin\lvert\vec v\rvert$ with $\hat v=\vec v/\lvert\vec v\rvert$; every unit quaternion is uniquely $(\cos\theta,\hat v\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_0$, so the unit part of the image misses exactly $-e_0$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_0$.</p>
+<p><em>Proof.</em> The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=e^{q_0}\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_0e_0+\vec v$, $\exp(\tilde q)=e^{q_0}\exp(\vec v)$, and $\exp(\vec v)=\cos\lvert\vec v\rvert+\hat u\sin\lvert\vec v\rvert$ with $\hat u=\vec v/\lvert\vec v\rvert$; every unit quaternion is uniquely $(\cos\theta,\hat u\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_0$, so the unit part of the image misses exactly $-e_0$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_0$.</p>
 <p><strong>Corollary (the exponential generates the unit group).</strong> Every unit is $\exp(\tilde q)$ for some $\tilde q$, and every unit quaternion is $\exp(\vec v)$ for a pure $\vec v$ with $\lvert\vec v\rvert\in[0,\pi]$; the exponential is a local homeomorphism at the origin, with local inverse the quaternion logarithm of <em>Quaternion Exponential and Lie Group Structure</em>.</p>
 <p><em>Proof.</em> The surjectivity onto $\mathbb{H}^\times$ is the theorem; the unit statement is the restriction to the pure part, allowing the value $\lvert\vec v\rvert=\pi$ for $-e_0$; the local statement is the inverse function theorem applied on the band, where the differential at the origin is the identity.</p>
 <h2 id="summary">Summary</h2>
@@ -119,7 +119,11 @@ $$</p>
 <td>the centre and the rotation quotient</td>
 </tr>
 <tr>
-<td>$\exp(\tilde q)=e^{q_0}\bigl(\cos\lvert\vec q\rvert+\hat q\sin\lvert\vec q\rvert\bigr)$</td>
+<td>$\hat u=\vec q/\lvert\vec q\rvert$</td>
+<td>the unit pure quaternion, the direction of the vector part</td>
+</tr>
+<tr>
+<td>$\exp(\tilde q)=e^{q_0}\bigl(\cos\lvert\vec q\rvert+\hat u\sin\lvert\vec q\rvert\bigr)$</td>
 <td>the exponential, onto $\mathbb{H}^\times$</td>
 </tr>
 <tr>

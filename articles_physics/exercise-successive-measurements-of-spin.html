@@ -57,7 +57,7 @@
 <p>The first exercise treated the Born rule for a single measurement. The second exercise treated the time evolution of a spin state. This third exercise treats <strong>successive measurements</strong>: what happens when a spin state is measured twice in a row, along different directions.</p>
 <p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.</p>
 <h2 id="the-exercise">The Exercise</h2>
-<p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $z$-axis</strong>. It is then measured along a direction $\hat{n}_1$ that makes an angle $\theta_1$ with the $z$-axis, and immediately after, it is measured along a direction $\hat{n}_2$ that makes an angle $\theta_2$ with the $z$-axis. Both directions lie in the $xz$-plane. What is the <strong>joint probability of both outcomes being spin-up</strong>?</p>
+<p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $z$-axis</strong>. It is then measured along a direction $\hat u_1$ that makes an angle $\theta_1$ with the $z$-axis, and immediately after, it is measured along a direction $\hat u_2$ that makes an angle $\theta_2$ with the $z$-axis. Both directions lie in the $xz$-plane. What is the <strong>joint probability of both outcomes being spin-up</strong>?</p>
 <p>This exercise illustrates two structural features of quantum physics: the Born rule for a single measurement (already treated in Exercise: Measuring Spin Along an Arbitrary Direction), and the fact that a measurement <strong>changes the state</strong>, so that successive measurements are not independent.</p>
 <h2 id="solution-in-the-standard-formulation">Solution in the Standard Formulation</h2>
 <h3 id="step-1-the-initial-state">Step 1: The initial state</h3>
@@ -66,7 +66,7 @@
 |+z\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
 $$</p>
 <h3 id="step-2-the-eigenstates-along-the-measurement-directions">Step 2: The eigenstates along the measurement directions</h3>
-<p>The spin-up state along a direction $\hat{n} = (\sin\theta, 0, \cos\theta)$ in the $xz$-plane is the eigenvalue-$+1$ eigenvector of $\hat{n}\cdot\boldsymbol{\sigma}$:</p>
+<p>The spin-up state along a direction $\hat u = (\sin\theta, 0, \cos\theta)$ in the $xz$-plane is the eigenvalue-$+1$ eigenvector of $\hat u\cdot\boldsymbol{\sigma}$:</p>
 <p>$$
 |+n(\theta)\rangle = \begin{pmatrix} \cos(\theta/2) \\ \sin(\theta/2) \end{pmatrix}.
 $$</p>
@@ -104,18 +104,18 @@ $$</p>
 <h3 id="step-1-the-initial-state_1">Step 1: The initial state</h3>
 <p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{M}_+$, of the form</p>
 <p>$$
-P(\hat{m}) = \tfrac{1}{2}\left(e_0 + i\hat{m}\right),
+P(\hat u) = \tfrac{1}{2}\left(e_0 + i\hat u\right),
 $$</p>
-<p>where $\hat{m}$ is a unit pure real quaternion. The spin-up state along $z$ corresponds to</p>
+<p>where $\hat u$ is a unit pure real quaternion. The spin-up state along $z$ corresponds to</p>
 <p>$$
 P_z = \tfrac{1}{2}\left(e_0 + i e_3\right).
 $$</p>
 <h3 id="step-2-the-projectors-along-the-measurement-directions">Step 2: The projectors along the measurement directions</h3>
 <p>The projectors onto the spin-up states along the two measurement directions are the idempotents</p>
 <p>$$
-P_{n_1} = \tfrac{1}{2}\left(e_0 + i\hat{n}_1\right), \qquad P_{n_2} = \tfrac{1}{2}\left(e_0 + i\hat{n}_2\right),
+P_{n_1} = \tfrac{1}{2}\left(e_0 + i\hat u_1\right), \qquad P_{n_2} = \tfrac{1}{2}\left(e_0 + i\hat u_2\right),
 $$</p>
-<p>with $\hat{n}_1 = \sin\theta_1\, e_1 + \cos\theta_1\, e_3$ and $\hat{n}_2 = \sin\theta_2\, e_1 + \cos\theta_2\, e_3$ as unit pure real quaternions.</p>
+<p>with $\hat u_1 = \sin\theta_1\, e_1 + \cos\theta_1\, e_3$ and $\hat u_2 = \sin\theta_2\, e_1 + \cos\theta_2\, e_3$ as unit pure real quaternions.</p>
 <h3 id="step-3-the-joint-probability_1">Step 3: The joint probability</h3>
 <p>The joint probability of the two measurements both yielding spin-up is the product of the two trace formulas:</p>
 <p>$$
@@ -127,17 +127,17 @@ $$</p>
 $$</p>
 <p><strong>Second factor.</strong> Computing the product $P_{n_2} \circ P_{n_1}$,</p>
 <p>$$
-P_{n_2} \circ P_{n_1} = \tfrac{1}{4}\left(e_0 + i\hat{n}_2\right)\left(e_0 + i\hat{n}_1\right) = \tfrac{1}{4}\left[e_0 + i\hat{n}_1 + i\hat{n}_2 - \hat{n}_2 \hat{n}_1\right].
+P_{n_2} \circ P_{n_1} = \tfrac{1}{4}\left(e_0 + i\hat u_2\right)\left(e_0 + i\hat u_1\right) = \tfrac{1}{4}\left[e_0 + i\hat u_1 + i\hat u_2 - \hat u_2 \hat u_1\right].
 $$</p>
-<p>For pure real quaternions, the product is $\hat{n}_2 \hat{n}_1 = -\hat{n}_2 \cdot \hat{n}_1\, e_0 + \hat{n}_2 \times \hat{n}_1$. Substituting,</p>
+<p>For pure real quaternions, the product is $\hat u_2 \hat u_1 = -\hat u_2 \cdot \hat u_1\, e_0 + \hat u_2 \times \hat u_1$. Substituting,</p>
 <p>$$
-P_{n_2} \circ P_{n_1} = \tfrac{1}{4}\left[\bigl(1 + \hat{n}_2 \cdot \hat{n}_1\bigr) e_0 + i\hat{n}_1 + i\hat{n}_2 - \hat{n}_2 \times \hat{n}_1\right].
+P_{n_2} \circ P_{n_1} = \tfrac{1}{4}\left[\bigl(1 + \hat u_2 \cdot \hat u_1\bigr) e_0 + i\hat u_1 + i\hat u_2 - \hat u_2 \times \hat u_1\right].
 $$</p>
-<p>The scalar part (coefficient of $e_0$) is $\tfrac{1}{4}(1 + \hat{n}_2 \cdot \hat{n}_1)$; the other terms $i\hat{n}_1$, $i\hat{n}_2$, and $\hat{n}_2 \times \hat{n}_1$ are vector terms with vanishing coefficient of $e_0$. Therefore</p>
+<p>The scalar part (coefficient of $e_0$) is $\tfrac{1}{4}(1 + \hat u_2 \cdot \hat u_1)$; the other terms $i\hat u_1$, $i\hat u_2$, and $\hat u_2 \times \hat u_1$ are vector terms with vanishing coefficient of $e_0$. Therefore</p>
 <p>$$
-\mathrm{Tr}\!\left(P_{n_2} \circ P_{n_1}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \hat{n}_2 \cdot \hat{n}_1\right) = \tfrac{1}{2}\left(1 + \hat{n}_2 \cdot \hat{n}_1\right).
+\mathrm{Tr}\!\left(P_{n_2} \circ P_{n_1}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \hat u_2 \cdot \hat u_1\right) = \tfrac{1}{2}\left(1 + \hat u_2 \cdot \hat u_1\right).
 $$</p>
-<p>Since both $\hat{n}_1$ and $\hat{n}_2$ lie in the $xz$-plane, the scalar product is $\hat{n}_2 \cdot \hat{n}_1 = \cos(\theta_2 - \theta_1)$, and the second factor is</p>
+<p>Since both $\hat u_1$ and $\hat u_2$ lie in the $xz$-plane, the scalar product is $\hat u_2 \cdot \hat u_1 = \cos(\theta_2 - \theta_1)$, and the second factor is</p>
 <p>$$
 \mathrm{Tr}\!\left(P_{n_2} \circ P_{n_1}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
 $$</p>
@@ -168,7 +168,7 @@ $$</p>
 p(+,+) = \cos^2(0) \cdot \cos^2(\pi/4) = 1 \cdot \frac{1}{2} = \frac{1}{2}.
 $$</p>
 <p>Measuring $z$ first leaves the state unchanged (it is already spin-up along $z$), and then measuring $x$ gives $+$ with probability $1/2$.</p>
-<p>These agree with the physical expectation: a measurement along a direction $\hat{n}$ destroys the information about the spin along any non-parallel direction, and the information about parallel directions is preserved.</p>
+<p>These agree with the physical expectation: a measurement along a direction $\hat u$ destroys the information about the spin along any non-parallel direction, and the information about parallel directions is preserved.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
 <p><strong>1. The trace formula applies to successive measurements.</strong> The joint probability of two successive measurements is a <strong>product of two trace formulas</strong>:</p>
 <p>$$
@@ -176,8 +176,8 @@ p(+,+) = \mathrm{Tr}\!\left(P_{n_1} \circ P_z\right) \cdot \mathrm{Tr}\!\left(P_
 $$</p>
 <p>The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same trace pairing on $\mathbb{M}_+$.</p>
 <p><strong>2. Measurement is a projection onto an idempotent.</strong> After the first measurement, the state is not the original $P_z$ but the new idempotent $P_{n_1}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a <strong>change of the idempotent</strong>: from $P_z$ to $P_{n_1}$.</p>
-<p><strong>3. The overlap of two idempotents is their scalar product.</strong> The trace $\mathrm{Tr}(P_{n_2} \circ P_{n_1})$ is a symmetric function of the two idempotents, equal to $\frac{1}{2}(1 + \hat{n}_2 \cdot \hat{n}_1)$, which depends only on the angle between the directions $\hat{n}_1$ and $\hat{n}_2$. This is the biquaternion expression of the transition probability between two spin states.</p>
-<p><strong>4. The geometry enters through the algebra.</strong> The angle between the measurement directions enters through the scalar product $\hat{n}_2 \cdot \hat{n}_1 = \cos(\theta_2 - \theta_1)$, which appears in the trace formula through the product $\hat{n}_2 \hat{n}_1$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.</p>
+<p><strong>3. The overlap of two idempotents is their scalar product.</strong> The trace $\mathrm{Tr}(P_{n_2} \circ P_{n_1})$ is a symmetric function of the two idempotents, equal to $\frac{1}{2}(1 + \hat u_2 \cdot \hat u_1)$, which depends only on the angle between the directions $\hat u_1$ and $\hat u_2$. This is the biquaternion expression of the transition probability between two spin states.</p>
+<p><strong>4. The geometry enters through the algebra.</strong> The angle between the measurement directions enters through the scalar product $\hat u_2 \cdot \hat u_1 = \cos(\theta_2 - \theta_1)$, which appears in the trace formula through the product $\hat u_2 \hat u_1$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.</p>
 <p><strong>5. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the trace formula corresponds exactly to $\mathrm{Tr}(P_{n_2}P_{n_1})$ for rank-one projectors. But seeing the same result emerge from the algebra is a useful sanity check on the framework.</p>
 <h2 id="comparison-with-exercises-measuring-spin-along-an-arbitrary-direction-and-spin-precession-in-a-magnetic-field">Comparison with Exercises: Measuring Spin Along an Arbitrary Direction and Spin Precession in a Magnetic Field</h2>
 <div class="table-scroll"><table>
@@ -256,11 +256,11 @@ $$</p>
 <td>Spin-up state along $z$</td>
 </tr>
 <tr>
-<td>$P_{n_k} = \tfrac{1}{2}(e_0 + i\hat{n}_k)$</td>
-<td>Projector along direction $\hat{n}_k$</td>
+<td>$P_{n_k} = \tfrac{1}{2}(e_0 + i\hat u_k)$</td>
+<td>Projector along direction $\hat u_k$</td>
 </tr>
 <tr>
-<td>$\hat{n}_k = \sin\theta_k\,e_1 + \cos\theta_k\,e_3$</td>
+<td>$\hat u_k = \sin\theta_k\,e_1 + \cos\theta_k\,e_3$</td>
 <td>Unit vector for the $k$-th direction</td>
 </tr>
 <tr>

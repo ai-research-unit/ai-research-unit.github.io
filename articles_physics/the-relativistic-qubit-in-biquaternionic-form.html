@@ -79,7 +79,7 @@ $$
 $$
 so the state space is the Bloch ball $|\vec r|\leq1$, and the pure states are its boundary. The pure-state idempotents are
 $$
-\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad |\hat{\mu}| = 1,
+\tilde\Pi_{1,2}(\hat u) = \tfrac12\bigl(e_0 \pm i\hat u\bigr), \qquad |\hat u| = 1,
 $$
 and the Born pairing is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.</p>
 <h3 id="why-the-carrier-is-forced">Why the carrier is forced</h3>
@@ -88,8 +88,8 @@ and the Born pairing is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\
 <h3 id="the-two-actions-of-the-unit-norm-group">The two actions of the unit-norm group</h3>
 <p>A biquaternion of unit norm,
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u \quad(\text{boost}), \qquad
-\tilde{R} = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat n \quad(\text{rotation}),
+\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b} \quad(\text{boost}), \qquad
+\tilde{R} = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat u_{\mathrm r} \quad(\text{rotation}),
 $$
 satisfies $N(\tilde{\Lambda}) = 1$, hence $\tilde{\Lambda}^{-1} = \tilde{\Lambda}^{\natural}$, and the unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. The same element acts on the two sectors by different formulas:</p>
 <p><strong>On the module</strong>, by left multiplication,
@@ -121,9 +121,9 @@ which is the unitarity condition. Among the unit-norm elements, $\tilde{\Lambda}
 $$
 \text{the spinor norm is preserved by } SU(2) \text{ and by no other subgroup of } SL(2,\mathbb{C}).
 $$
-A boost fails the condition maximally: for $\tilde{\Lambda}$ Hermitian one has $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = e_0 + i\sinh\psi\,\hat u$, so
+A boost fails the condition maximally: for $\tilde{\Lambda}$ Hermitian one has $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = e_0 + i\sinh\psi\,\hat u_{\mathrm b}$, so
 $$
-\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat u|u\rangle \neq \langle u|u\rangle .
+\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat u_{\mathrm b}|u\rangle \neq \langle u|u\rangle .
 $$
 The norm is scaled by a positive factor rather than rotated, so the ray is preserved but the normalization is not.</p>
 <p>The state space is the boundary of the Bloch ball, and this computation says that a boost does not preserve it: only the compact subgroup $SU(2)$ acts on the pure states as a symmetry. The Lorentz group acts on the carrier, but the carrier's Hilbert-space geometry is not Lorentz invariant. That is the first relativistic feature of the qubit, and it is the origin of the distinction between the module action and the physical spin transformation drawn below.</p>
@@ -213,7 +213,7 @@ $$
 $$
 and after normalizing, the centre of the Bloch ball is carried to the point
 $$
-\vec r = \tanh\psi\ \hat u,
+\vec r = \tanh\psi\ \hat u_{\mathrm b},
 $$
 not to itself. A transformation that moves the maximally mixed state while scaling the trace is not a channel, and the reason is structural: the congruence by a non-unitary element is a map on the <em>algebra</em>, not an operation on the <em>state space</em>, and the companion quantum-mechanical article records the same fact from the group side — the trace pairing, on which the Born rule rests, is preserved exactly by the unitary group and by no larger one.</p>
 <p>The congruence is nevertheless the correct action on the spinor ray and on the pure-state projectors considered as elements of the algebra. The resolution of the apparent conflict is to distinguish two objects that the non-relativistic formalism identifies: the <strong>spinor</strong> of a particle and the <strong>spin state</strong> of a particle at definite momentum. They transform by different formulas, and the second is the physically observable one.</p>
@@ -318,7 +318,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 <td>State, Bloch vector $\vec r$, $|\vec r|\leq1$</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$</td>
+<td>$\tilde\Pi_{1,2}(\hat u) = \tfrac12(e_0\pm i\hat u)$</td>
 <td>Pure-state idempotent</td>
 </tr>
 <tr>

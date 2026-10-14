@@ -103,14 +103,14 @@ $$</p>
 $$</p>
 <p>This is the standard <strong>anti-Hermitian</strong> convention for the generators of $SU(2)$, familiar from $\mathrm{SU}(2)$ in its matrix form $g_k \leftrightarrow \tfrac{i}{2}\sigma_k$. Exponentiating a generator gives a group element:</p>
 <p>$$
-\exp\!\left(\theta\,\hat{n}_k g_k\right) = \exp\!\left(-\tfrac{\theta}{2}\hat{n}_k e_k\right) = \cos\tfrac{\theta}{2}\,e_0 - \sin\tfrac{\theta}{2}\,\hat{n}_k e_k ,
+\exp\!\left(\theta\,\hat u_k g_k\right) = \exp\!\left(-\tfrac{\theta}{2}\hat u_k e_k\right) = \cos\tfrac{\theta}{2}\,e_0 - \sin\tfrac{\theta}{2}\,\hat u_k e_k ,
 $$</p>
-<p>where $\hat{n}$ is a unit real vector. This is a <strong>unit real quaternion</strong>: it lies in $\mathbb{H}_{\mathbb{B}}$ and has unit quaternion norm. The set of all such elements is exactly the group $SU(2)$ of unit quaternions, which is the double cover of the rotation group $SO(3)$. The exponential was computed with $\hat{n}_k e_k$ a pure real quaternion of square $-e_0$, so that the power series splits into the trigonometric series.</p>
+<p>where $\hat u$ is a unit real vector. This is a <strong>unit real quaternion</strong>: it lies in $\mathbb{H}_{\mathbb{B}}$ and has unit quaternion norm. The set of all such elements is exactly the group $SU(2)$ of unit quaternions, which is the double cover of the rotation group $SO(3)$. The exponential was computed with $\hat u_k e_k$ a pure real quaternion of square $-e_0$, so that the power series splits into the trigonometric series.</p>
 <p>The <strong>observables</strong> are obtained by multiplying the generators by $-i\hbar$:</p>
 <p>$$
 \tilde{J}_k = -i\hbar\, g_k = \tfrac{i\hbar}{2} e_k \quad(\text{for spin-}\tfrac12), \qquad [\tilde{J}_i,\tilde{J}_j] = i\hbar\,\epsilon_{ijk}\tilde{J}_k .
 $$</p>
-<p>The verification is one line: $[\tilde J_i,\tilde J_j] = (-i\hbar)^2 [g_i,g_j] = -\hbar^2(-\epsilon_{ijk}g_k) = \hbar^2\epsilon_{ijk}g_k$, while $i\hbar\epsilon_{ijk}\tilde J_k = i\hbar\epsilon_{ijk}(-i\hbar g_k) = \hbar^2\epsilon_{ijk}g_k$. The two agree. The passage between the two pictures is the standard one: the Hermitian observables $\tilde J_k$ generate the unitary rotations through $\exp(-i\theta\,\hat{n}_k\tilde J_k/\hbar)$, and the anti-Hermitian generators $g_k$ are the elements of the Lie algebra.</p>
+<p>The verification is one line: $[\tilde J_i,\tilde J_j] = (-i\hbar)^2 [g_i,g_j] = -\hbar^2(-\epsilon_{ijk}g_k) = \hbar^2\epsilon_{ijk}g_k$, while $i\hbar\epsilon_{ijk}\tilde J_k = i\hbar\epsilon_{ijk}(-i\hbar g_k) = \hbar^2\epsilon_{ijk}g_k$. The two agree. The passage between the two pictures is the standard one: the Hermitian observables $\tilde J_k$ generate the unitary rotations through $\exp(-i\theta\,\hat u_k\tilde J_k/\hbar)$, and the anti-Hermitian generators $g_k$ are the elements of the Lie algebra.</p>
 <p>A structural remark is in order. For two Hermitian elements $\tilde H = h_0 e_0 + i\vec h$ and $\tilde K = k_0 e_0 + i\vec k$ of $\mathbb{M}_+$, the companion article computes</p>
 <p>$$
 [\tilde H,\tilde K] = -2\,(\vec h\times\vec k),
@@ -193,9 +193,9 @@ $$</p>
 </tbody>
 </table></div>
 <p>Here $\sigma_\pm = \tfrac{1}{2}(\sigma_1 \pm i\sigma_2)$ are the standard raising and lowering matrices. The elements $\tilde S_k$ lie in $\mathbb{M}_+$ and are Hermitian. The ladder operators do <strong>not</strong>: $\tilde S_\pm^{*} = \tilde S_\mp$, so they are neither Hermitian nor in $\mathbb{M}_+$; they lie in the full algebra $\mathbb{B}$. They are also invariant, up to sign, under quaternion conjugation, $\tilde S^{\natural}_\pm = -\tilde S_\pm$.</p>
-<p>The pure spin states are the idempotents $\tilde\Pi(\pm\hat{n}) = \tfrac{1}{2}(e_0 \pm i\hat{n})$ with $\hat n$ a unit pure real quaternion, and they are the eigenstates of the spin along $\hat n$:</p>
+<p>The pure spin states are the idempotents $\tilde\Pi(\pm\hat u) = \tfrac{1}{2}(e_0 \pm i\hat u)$ with $\hat u$ a unit pure real quaternion, and they are the eigenstates of the spin along $\hat u$:</p>
 <p>$$
-\hat{n}_k \tilde{S}_k\, \tilde\Pi(\pm\hat{n}) = \pm\tfrac{\hbar}{2}\, \tilde\Pi(\pm\hat{n}) .
+\hat u_k \tilde{S}_k\, \tilde\Pi(\pm\hat u) = \pm\tfrac{\hbar}{2}\, \tilde\Pi(\pm\hat u) .
 $$</p>
 <p>This is the content of the parent article, expressed in the notation needed below.</p>
 <h2 id="commutation-relations-as-biquaternion-commutators">Commutation Relations as Biquaternion Commutators</h2>
@@ -301,23 +301,23 @@ $$</p>
 <p>The coefficients are pure numbers; they do not depend on the biquaternion representation of the spin factor, which enters only through the operators $\tilde S_k$ generating the suitable matrix action. In this respect the addition of angular momenta is standard quantum physics expressed in biquaternion language, with one genuinely algebraic ingredient: the spin-1/2 factor is the fundamental module of $\mathbb{B}$, so the spin operators used in the coupling are the elements $\tilde S_k$ of $\mathbb{M}_+$ constructed above.</p>
 <p>Two structural points should be stated precisely. First, the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has as irreducible modules only the trivial one and the fundamental two-dimensional one; it therefore realises, as modules, only $j=0$ and $j=\tfrac12$. The vector representation $j=1$ is present not as a $\mathbb{B}$-module but as the adjoint action of the unitary subgroup on the imaginary quaternions, and higher $j$ require tensor products or symmetric powers. Second, the orbital representation is not a biquaternion module at all (except for $l=0$); it is the standard rotation representation carried by the position dependence of the wavefunction. The biquaternion content of the coupled system is therefore confined to the spin factor, while the orbital factor and the Clebsch–Gordan coefficients are carried over unchanged from standard quantum physics.</p>
 <h2 id="the-rotor-realisation-of-rotations">The Rotor Realisation of Rotations</h2>
-<p>Rotations in the biquaternion framework are realised by <strong>rotor conjugation</strong>. A rotation through angle $\theta$ about the unit axis $\hat{n}$ is generated by the unit real quaternion</p>
+<p>Rotations in the biquaternion framework are realised by <strong>rotor conjugation</strong>. A rotation through angle $\theta$ about the unit axis $\hat u$ is generated by the unit real quaternion</p>
 <p>$$
-\tilde{R}(\theta,\hat{n}) = \cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,\hat{n}_k e_k \in \mathbb{H}_{\mathbb{B}}, \qquad \tilde{R}\,\tilde{R}^{*} = e_0 ,
+\tilde{R}(\theta,\hat u) = \cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,\hat u_k e_k \in \mathbb{H}_{\mathbb{B}}, \qquad \tilde{R}\,\tilde{R}^{*} = e_0 ,
 $$</p>
 <p>acting on states and observables by conjugation. On the observables of the informational sector, a state $\tilde\rho = \tfrac12(e_0 + i\vec r)$ transforms as</p>
 <p>$$
 \tilde\rho \;\longmapsto\; \tilde{R}\,\tilde\rho\,\tilde{R}^{*} ,
 $$</p>
-<p>which leaves the scalar part fixed and rotates the Bloch vector $\vec r$ by angle $\theta$ about $\hat{n}$. On the vectors of the material sector, $\tilde{Q} = i x_0 e_0 + \vec x$, the same conjugation rotates the spatial part while preserving the biquaternion norm. Both are the standard rotation of a three-dimensional vector, expressed through the double cover $SU(2)\to SO(3)$.</p>
-<p>The rotor is generated by the total angular momentum. Writing the rotation operator as $\exp(-i\theta\,\hat{n}_k\tilde{J}_k/\hbar)$ and using $\tilde J_k = \tilde L_k+\tilde S_k$, the orbital part acts on the position dependence while the spin part acts on the internal index. For the spin alone,</p>
+<p>which leaves the scalar part fixed and rotates the Bloch vector $\vec r$ by angle $\theta$ about $\hat u$. On the vectors of the material sector, $\tilde{Q} = i x_0 e_0 + \vec x$, the same conjugation rotates the spatial part while preserving the biquaternion norm. Both are the standard rotation of a three-dimensional vector, expressed through the double cover $SU(2)\to SO(3)$.</p>
+<p>The rotor is generated by the total angular momentum. Writing the rotation operator as $\exp(-i\theta\,\hat u_k\tilde{J}_k/\hbar)$ and using $\tilde J_k = \tilde L_k+\tilde S_k$, the orbital part acts on the position dependence while the spin part acts on the internal index. For the spin alone,</p>
 <p>$$
-\exp\!\left(-\frac{i\theta}{\hbar}\,\hat{n}_k\tilde{S}_k\right)
-= \exp\!\left(-\frac{i\theta}{\hbar}\cdot\frac{\hbar}{2}\,i\hat{n}_k e_k\right)
-= \exp\!\left(\frac{\theta}{2}\hat{n}_k e_k\right)
-= \tilde{R}(\theta,\hat{n}) ,
+\exp\!\left(-\frac{i\theta}{\hbar}\,\hat u_k\tilde{S}_k\right)
+= \exp\!\left(-\frac{i\theta}{\hbar}\cdot\frac{\hbar}{2}\,i\hat u_k e_k\right)
+= \exp\!\left(\frac{\theta}{2}\hat u_k e_k\right)
+= \tilde{R}(\theta,\hat u) ,
 $$</p>
-<p>so the abstract spin rotation operator and the unit quaternion rotor are the same element of $\mathbb{B}$. The identification reproduces the characteristic spinorial behaviour: $\tilde{R}(\theta+2\pi,\hat{n}) = -\tilde{R}(\theta,\hat{n})$, and the two rotors $\pm\tilde{R}$ produce the same rotation of $\vec r$ and of $\vec x$. The sign ambiguity is the double cover, and it is here a statement about unit real quaternions: the group of rotors is $SU(2)$, and the rotation group is its quotient by $\{\pm e_0\}$.</p>
+<p>so the abstract spin rotation operator and the unit quaternion rotor are the same element of $\mathbb{B}$. The identification reproduces the characteristic spinorial behaviour: $\tilde{R}(\theta+2\pi,\hat u) = -\tilde{R}(\theta,\hat u)$, and the two rotors $\pm\tilde{R}$ produce the same rotation of $\vec r$ and of $\vec x$. The sign ambiguity is the double cover, and it is here a statement about unit real quaternions: the group of rotors is $SU(2)$, and the rotation group is its quotient by $\{\pm e_0\}$.</p>
 <p>The rotor realisation ties the two sectors together in the way the companion articles describe: the same unit quaternion acts by conjugation on the material four-vectors of $\mathbb{M}_-$ and on the states of the informational sector $\mathbb{M}_+$. Angular momentum is the infinitesimal generator of that action, and its biquaternion form is the subject of this article.</p>
 <h2 id="what-is-standard-and-what-is-algebraic">What Is Standard and What Is Algebraic</h2>
 <p>It is useful to separate the two kinds of result that the article contains.</p>
@@ -334,7 +334,7 @@ $$</p>
 <li>The spin commutation relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ follow from the quaternion product rule $e_ie_j=\epsilon_{ijk}e_k$, the square $e_k^2=-e_0$, and $i^2=-1$; the Hermiticity of $ie_k$ is what places the observables in $\mathbb{M}_+$.</li>
 <li>The commutator of two Hermitian observables is $-2(\vec h\times\vec k)$, a pure real quaternion in $\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$: the commutator of observables is a rotation generator.</li>
 <li>The pure-spin Casimir $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$ is a central element of $\mathbb{B}$, and its value $s(s+1)\hbar^2$ with $s=\tfrac12$ follows from $(ie_k)^2=+e_0$.</li>
-<li>The spin eigenstates are the idempotents $\tilde\Pi(\pm\hat n)=\tfrac12(e_0\pm i\hat n)$, and $\hat n_k\tilde S_k$ has eigenvalues $\pm\hbar/2$ on them.</li>
+<li>The spin eigenstates are the idempotents $\tilde\Pi(\pm\hat u)=\tfrac12(e_0\pm i\hat u)$, and $\hat u_k\tilde S_k$ has eigenvalues $\pm\hbar/2$ on them.</li>
 <li>The spin ladder operators are nilpotent and null in the biquaternion norm, $\tilde S_\pm^2=0$ and $N(\tilde S_\pm)=0$: they are zero divisors of the algebra.</li>
 <li>Orbital operators occupy the central scalar slot $e_0$ and spin operators the vector slots $ie_k$, an algebraic distinction between external and internal degrees of freedom.</li>
 <li>As a module over $\mathbb{B}$, the algebra affords only $j=0$ and $j=\tfrac12$; the $j=1$ vector representation appears through the adjoint action on the imaginary quaternions, and higher spins require tensor products.</li>
@@ -349,7 +349,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Angular momentum in the biquaternion framework is organised by the isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, under which the spin operators $S_k=\tfrac{\hbar}{2}\sigma_k$ correspond to the Hermitian elements $\tilde S_k=\tfrac{\hbar}{2}ie_k\in\mathbb{M}_+$. The rotation generators lie in the Lie algebra $\mathbb{M}_-$ and, for spatial rotations, in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where they are $-\tfrac12e_k$; their exponentials are the unit real quaternions, which are the group $SU(2)$.</p>
 <p>The orbital angular momentum operator is the vector part of the quaternionic product $\tilde r\tilde p$ of position and momentum, with components $\hat L_k=-i\hbar\epsilon_{klm}x_l\partial_m$ and Hermitian representatives $\tilde L_k=\hat L_ke_0$. The spin operators generate the same algebra internally, and the commutation relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ follow directly from the quaternion multiplication rule, the square $e_k^2=-e_0$, and $i^2=-1$. The pure-spin Casimir is the central element $\tilde S^2=\tfrac{3\hbar^2}{4}e_0$; the total Casimir $\tilde J^2$ takes the value $j(j+1)\hbar^2$ on coupled states with $j=l\pm\tfrac12$.</p>
-<p>The spin ladder operators are nilpotent and null in the biquaternion norm, and hence zero divisors of the algebra. The addition of angular momenta follows the standard Clebsch–Gordan scheme, with the spin factor expressed through the elements $\tilde S_k$; for a spin-1/2 coupled to orbital $l$ the coupled states carry $j=l\pm\tfrac12$, and the spin–orbit operator takes the eigenvalue $+\tfrac{\hbar^2 l}{2}$ for $j=l+\tfrac12$ and $-\tfrac{\hbar^2(l+1)}{2}$ for $j=l-\tfrac12$. Rotations are realised by rotor conjugation with unit quaternions, and the rotor $\tilde R(\theta,\hat n)$ is identical to the exponential of the spin angular momentum. The framework thus contains the complete angular-momentum algebra, with the orbital part standard and the spin part algebraic; the operators and their spectra are those that a position-space treatment of the hydrogen atom requires.</p>
+<p>The spin ladder operators are nilpotent and null in the biquaternion norm, and hence zero divisors of the algebra. The addition of angular momenta follows the standard Clebsch–Gordan scheme, with the spin factor expressed through the elements $\tilde S_k$; for a spin-1/2 coupled to orbital $l$ the coupled states carry $j=l\pm\tfrac12$, and the spin–orbit operator takes the eigenvalue $+\tfrac{\hbar^2 l}{2}$ for $j=l+\tfrac12$ and $-\tfrac{\hbar^2(l+1)}{2}$ for $j=l-\tfrac12$. Rotations are realised by rotor conjugation with unit quaternions, and the rotor $\tilde R(\theta,\hat u)$ is identical to the exponential of the spin angular momentum. The framework thus contains the complete angular-momentum algebra, with the orbital part standard and the spin part algebraic; the operators and their spectra are those that a position-space treatment of the hydrogen atom requires.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -416,11 +416,11 @@ $$</p>
 <td>Angular-momentum algebra</td>
 </tr>
 <tr>
-<td>$\tilde{R}(\theta,\hat{n})=\cos\tfrac{\theta}{2}e_0+\sin\tfrac{\theta}{2}\hat{n}_ke_k$</td>
+<td>$\tilde{R}(\theta,\hat u)=\cos\tfrac{\theta}{2}e_0+\sin\tfrac{\theta}{2}\hat u_ke_k$</td>
 <td>Rotation rotor (unit real quaternion)</td>
 </tr>
 <tr>
-<td>$\tilde\Pi(\pm\hat{n})=\tfrac{1}{2}(e_0\pm i\hat{n})$</td>
+<td>$\tilde\Pi(\pm\hat u)=\tfrac{1}{2}(e_0\pm i\hat u)$</td>
 <td>Spin eigenstates (idempotents)</td>
 </tr>
 <tr>

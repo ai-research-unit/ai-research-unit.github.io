@@ -87,13 +87,13 @@
 <h3 id="the-reinterpretation">The reinterpretation</h3>
 <p>The reinterpretation of the negative branch is usually credited to Furry and Oppenheimer (1934), who showed that positron processes follow from the second-quantized electron field without a sea, and to Stückelberg (1941) and Feynman (1948), who made the picture systematic: a negative-frequency solution propagating forward in time is the same as a positive-frequency antiparticle propagating backward in time. The field operator is expanded as</p>
 <p>$$
-\hat\psi(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[\hat a_r(\vec p)\,u^{(r)}(\vec p)e^{-ip\cdot x} + \hat b_r^\dagger(\vec p)\,v^{(r)}(\vec p)e^{+ip\cdot x}\right],
+\psi^{\mathrm{fop}}(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[a_r^{\mathrm{fop}}(\vec p)\,u^{(r)}(\vec p)e^{-ip\cdot x} + b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)e^{+ip\cdot x}\right],
 $$</p>
-<p>in which the <strong>annihilation</strong> operator multiplies the positive-frequency spinors and the <strong>creation</strong> operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $\hat a|0\rangle = \hat b|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.</p>
+<p>in which the <strong>annihilation</strong> operator multiplies the positive-frequency spinors and the <strong>creation</strong> operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $a^{\mathrm{fop}}|0\rangle = b^{\mathrm{fop}}|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.</p>
 <h3 id="normal-ordering">Normal ordering</h3>
 <p>With the anticommutator the Hamiltonian becomes, after normal ordering,</p>
 <p>$$
-\hat H = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(\hat a_r^\dagger\hat a_r + \hat b_r^\dagger\hat b_r\right),
+H^{\mathrm{fop}} = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(a_r^{\mathrm{fop}\dagger} a_r^{\mathrm{fop}} + b_r^{\mathrm{fop}\dagger} b_r^{\mathrm{fop}}\right),
 $$</p>
 <p>a positive sum of particle and antiparticle numbers, with the divergent constant removed. The charge is equally normal-ordered, and particles and antiparticles carry opposite charge. This is the modern replacement of the filled sea, and it is the content the framework already has.</p>
 <h2 id="vacuum-polarization-where-the-seas-response-became-measurable">Vacuum Polarization: Where the Sea's Response Became Measurable</h2>
@@ -106,7 +106,7 @@ $$</p>
 <h3 id="the-two-branches-are-the-frameworks-two-mass-shell-roots">The two branches are the framework's two mass-shell roots</h3>
 <p>The framework's mass shell $\tilde k\tilde k^{\natural} = -m^2c^2/\hbar^2$ has two roots, and the same two branches appear in every component of the Dirac field. The corpus's companion articles use the two branches explicitly: the Klein article shows that a strong step exchanges them, and the canonical-quantization article expands the field in <code>positive-frequency' and</code>negative-frequency' plane waves, with the two branches the two roots of the single biquaternion mass-shell condition. Nothing in this is new to the framework; what matters for the Dirac sea is what the framework does <em>next</em>.</p>
 <h3 id="the-operator-content-is-already-the-reinterpretation">The operator content is already the reinterpretation</h3>
-<p>The framework's canonical-quantization article contains the modern resolution verbatim. It shows that if the modes commuted, the energy $H=\sum E_{\vec p}(\hat a^\dagger\hat a-\hat b^\dagger\hat b)$ would be <strong>unbounded below</strong> and no stable vacuum would exist; that the <strong>anticommutator</strong> replaces this by a positive sum plus a c-number; and that "the anticommutator is what makes the negative-frequency modes into positive-energy antiparticles. This is the operator content of the Dirac sea." The framework is therefore explicitly on the reinterpretation side: the vacuum is the state annihilated by the annihilation operators, and the negative branch is the creation operators of antiparticles. Dirac's filled sea is not implemented, and does not need to be.</p>
+<p>The framework's canonical-quantization article contains the modern resolution verbatim. It shows that if the modes commuted, the energy $H=\sum E_{\vec p}(a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger} b^{\mathrm{fop}})$ would be <strong>unbounded below</strong> and no stable vacuum would exist; that the <strong>anticommutator</strong> replaces this by a positive sum plus a c-number; and that "the anticommutator is what makes the negative-frequency modes into positive-energy antiparticles. This is the operator content of the Dirac sea." The framework is therefore explicitly on the reinterpretation side: the vacuum is the state annihilated by the annihilation operators, and the negative branch is the creation operators of antiparticles. Dirac's filled sea is not implemented, and does not need to be.</p>
 <h3 id="the-infinite-charge-is-the-normal-ordering-constant">The infinite charge is the normal-ordering constant</h3>
 <p>The framework's one-particle structure has no sea, and therefore no infinite charge of its own. The infinity appears only when the field is quantized, as the normal-ordering constant</p>
 <p>$$
@@ -171,7 +171,7 @@ $$</p>
 <td>Two branches of the Dirac dispersion</td>
 </tr>
 <tr>
-<td>$\hat a_r(\vec p)$, $\hat b_r(\vec p)$</td>
+<td>$a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$</td>
 <td>Particle and antiparticle annihilation operators</td>
 </tr>
 <tr>
@@ -179,7 +179,7 @@ $$</p>
 <td>Positive- and negative-frequency spinors</td>
 </tr>
 <tr>
-<td>$|0\rangle$, $\hat a|0\rangle=\hat b|0\rangle=0$</td>
+<td>$|0\rangle$, $a^{\mathrm{fop}}|0\rangle=b^{\mathrm{fop}}|0\rangle=0$</td>
 <td>Fock vacuum; no sea</td>
 </tr>
 <tr>
